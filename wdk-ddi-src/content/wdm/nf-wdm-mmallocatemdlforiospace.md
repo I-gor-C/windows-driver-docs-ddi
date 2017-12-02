@@ -57,19 +57,19 @@ NTSTATUS MmAllocateMdlForIoSpace(
 ## -parameters
 <dl>
 
-### -param <i>PhysicalAddressList</i> [in]
+### -param PhysicalAddressList [in]
 
 <dd>
 <p>A pointer to an array of <a href="..\wdm\ns-wdm--mm-physical-address-list.md">MM_PHYSICAL_ADDRESS_LIST</a> structures that describe the physical address ranges to include in the allocated MDL.</p>
 </dd>
 
-### -param <i>NumberOfEntries</i> [in]
+### -param NumberOfEntries [in]
 
 <dd>
 <p>The number of elements in the <b>MM_PHYSICAL_ADDRESS_LIST</b> array pointed to by <i>PhysicalAddressList</i>.</p>
 </dd>
 
-### -param <i>NewMdl</i> [out]
+### -param NewMdl [out]
 
 <dd>
 <p>A pointer to a location to which the routine writes a pointer to the newly allocated MDL.</p>

@@ -56,19 +56,19 @@ typedef enum D3D12DDI_CREATE_SHADER_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_CREATE_SHADER_FLAG_NONE"></a><a id="d3d12ddi_create_shader_flag_none"></a><b>D3D12DDI_CREATE_SHADER_FLAG_NONE</b>
+### -field D3D12DDI_CREATE_SHADER_FLAG_NONE
 
 <dd>
 <p>No flag value for shader creation.</p>
 </dd>
 
-### -field <a id="D3D12DDI_CREATE_SHADER_FLAG_ENABLE_SHADER_TRACING"></a><a id="d3d12ddi_create_shader_flag_enable_shader_tracing"></a><b>D3D12DDI_CREATE_SHADER_FLAG_ENABLE_SHADER_TRACING</b>
+### -field D3D12DDI_CREATE_SHADER_FLAG_ENABLE_SHADER_TRACING
 
 <dd>
 <p>The shader is tracing. </p>
 </dd>
 
-### -field <a id="D3D12DDI_CREATE_SHADER_FLAG_DISABLE_OPTIMIZATION"></a><a id="d3d12ddi_create_shader_flag_disable_optimization"></a><b>D3D12DDI_CREATE_SHADER_FLAG_DISABLE_OPTIMIZATION</b>
+### -field D3D12DDI_CREATE_SHADER_FLAG_DISABLE_OPTIMIZATION
 
 <dd>
 <p>The shader is compiled quickly and less optimally. </p>

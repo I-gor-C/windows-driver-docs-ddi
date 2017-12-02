@@ -56,13 +56,13 @@ HRESULT CommitAsync(
 ## -parameters
 <dl>
 
-### -param <i>pPrintTicketCommit</i> [in]
+### -param pPrintTicketCommit [in]
 
 <dd>
 <p>The print ticket to commit.</p>
 </dd>
 
-### -param <i>ppAsyncOperation</i> [out]
+### -param ppAsyncOperation [out]
 
 <dd>
 <p>The asynchronous commit operation context.</p>

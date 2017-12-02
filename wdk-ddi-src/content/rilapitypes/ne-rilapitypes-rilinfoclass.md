@@ -7,7 +7,7 @@ old-location: netvista\rilinfoclass_2.htm
 old-project: netvista
 ms.assetid: 19927cd1-8afa-4006-a882-d5222c690724
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,39 +63,39 @@ typedef enum _RILINFOCLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_INFOCLASS_VOICE"></a><a id="ril_infoclass_voice"></a><b>RIL_INFOCLASS_VOICE</b>
+### -field RIL_INFOCLASS_VOICE
 
 <dd></dd>
 
-### -field <a id="RIL_INFOCLASS_DATA"></a><a id="ril_infoclass_data"></a><b>RIL_INFOCLASS_DATA</b>
+### -field RIL_INFOCLASS_DATA
 
 <dd></dd>
 
-### -field <a id="RIL_INFOCLASS_FAX"></a><a id="ril_infoclass_fax"></a><b>RIL_INFOCLASS_FAX</b>
+### -field RIL_INFOCLASS_FAX
 
 <dd></dd>
 
-### -field <a id="RIL_INFOCLASS_SMS"></a><a id="ril_infoclass_sms"></a><b>RIL_INFOCLASS_SMS</b>
+### -field RIL_INFOCLASS_SMS
 
 <dd></dd>
 
-### -field <a id="RIL_INFOCLASS_DATACIRCUITSYNC"></a><a id="ril_infoclass_datacircuitsync"></a><b>RIL_INFOCLASS_DATACIRCUITSYNC</b>
+### -field RIL_INFOCLASS_DATACIRCUITSYNC
 
 <dd></dd>
 
-### -field <a id="RIL_INFOCLASS_DATACIRCUITASYNC"></a><a id="ril_infoclass_datacircuitasync"></a><b>RIL_INFOCLASS_DATACIRCUITASYNC</b>
+### -field RIL_INFOCLASS_DATACIRCUITASYNC
 
 <dd></dd>
 
-### -field <a id="RIL_INFOCLASS_PACKETACCESS"></a><a id="ril_infoclass_packetaccess"></a><b>RIL_INFOCLASS_PACKETACCESS</b>
+### -field RIL_INFOCLASS_PACKETACCESS
 
 <dd></dd>
 
-### -field <a id="RIL_INFOCLASS_PADACCESS"></a><a id="ril_infoclass_padaccess"></a><b>RIL_INFOCLASS_PADACCESS</b>
+### -field RIL_INFOCLASS_PADACCESS
 
 <dd></dd>
 
-### -field <a id="RIL_INFOCLASS_ALL"></a><a id="ril_infoclass_all"></a><b>RIL_INFOCLASS_ALL</b>
+### -field RIL_INFOCLASS_ALL
 
 <dd></dd>
 </dl>

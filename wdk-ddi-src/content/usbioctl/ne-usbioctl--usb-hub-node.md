@@ -56,13 +56,13 @@ typedef enum _USB_HUB_NODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UsbHub"></a><a id="usbhub"></a><a id="USBHUB"></a><b>UsbHub</b>
+### -field UsbHub
 
 <dd>
 <p>Indicates that the device is a hub.</p>
 </dd>
 
-### -field <a id="UsbMIParent"></a><a id="usbmiparent"></a><a id="USBMIPARENT"></a><b>UsbMIParent</b>
+### -field UsbMIParent
 
 <dd>
 <p>Indicates that the device is a composite device with multiple interfaces.</p>

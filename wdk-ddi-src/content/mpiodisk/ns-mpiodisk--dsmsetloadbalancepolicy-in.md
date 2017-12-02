@@ -54,7 +54,7 @@ typedef struct _DsmSetLoadBalancePolicy_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>LoadBalancePolicy</b>
+### -field LoadBalancePolicy
 
 <dd>
 <p>A structure of type DSM_Load_Balance_Policy.</p>

@@ -57,13 +57,13 @@ typedef struct _MONITOREX {
 ## -struct-fields
 <dl>
 
-### -field <b>dwMonitorSize</b>
+### -field dwMonitorSize
 
 <dd>
 <p>Specifies the size, in bytes, of the Monitor <b>member</b>.</p>
 </dd>
 
-### -field <b>Monitor</b>
+### -field Monitor
 
 <dd>
 <p>Is a <a href="..\winsplp\ns-winsplp--monitor.md">MONITOR</a> structure.</p>

@@ -60,43 +60,43 @@ typedef enum _DXGK_RENDERKM_OPERATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_GDIOP_BITBLT"></a><a id="dxgk_gdiop_bitblt"></a><b>DXGK_GDIOP_BITBLT</b>
+### -field DXGK_GDIOP_BITBLT
 
 <dd>
 <p>Indicates a bit-block transfer (bitblt).</p>
 </dd>
 
-### -field <a id="DXGK_GDIOP_COLORFILL"></a><a id="dxgk_gdiop_colorfill"></a><b>DXGK_GDIOP_COLORFILL</b>
+### -field DXGK_GDIOP_COLORFILL
 
 <dd>
 <p>Indicates a color fill.</p>
 </dd>
 
-### -field <a id="DXGK_GDIOP_ALPHABLEND"></a><a id="dxgk_gdiop_alphablend"></a><b>DXGK_GDIOP_ALPHABLEND</b>
+### -field DXGK_GDIOP_ALPHABLEND
 
 <dd>
 <p>Indicates an alpha blend.</p>
 </dd>
 
-### -field <a id="DXGK_GDIOP_STRETCHBLT"></a><a id="dxgk_gdiop_stretchblt"></a><b>DXGK_GDIOP_STRETCHBLT</b>
+### -field DXGK_GDIOP_STRETCHBLT
 
 <dd>
 <p>Indicates a stretch blt.</p>
 </dd>
 
-### -field <a id="DXGK_GDIOP_ESCAPE"></a><a id="dxgk_gdiop_escape"></a><b>DXGK_GDIOP_ESCAPE</b>
+### -field DXGK_GDIOP_ESCAPE
 
 <dd>
 <p>Reserved for future use. The driver should skip this command when setting the value of the <b>CommandSize</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-renderkm-command.md">DXGK_RENDERKM_COMMAND</a> structure.</p>
 </dd>
 
-### -field <a id="DXGK_GDIOP_TRANSPARENTBLT"></a><a id="dxgk_gdiop_transparentblt"></a><b>DXGK_GDIOP_TRANSPARENTBLT</b>
+### -field DXGK_GDIOP_TRANSPARENTBLT
 
 <dd>
 <p>Indicates a blt with transparency.</p>
 </dd>
 
-### -field <a id="DXGK_GDIOP_CLEARTYPEBLEND"></a><a id="dxgk_gdiop_cleartypeblend"></a><b>DXGK_GDIOP_CLEARTYPEBLEND</b>
+### -field DXGK_GDIOP_CLEARTYPEBLEND
 
 <dd>
 <p>Indicates a ClearType blend.</p>

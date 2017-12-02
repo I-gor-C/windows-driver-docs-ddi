@@ -55,13 +55,13 @@ typedef struct _AACS_SEND_CERTIFICATE {
 ## -struct-fields
 <dl>
 
-### -field <b>SessionId</b>
+### -field SessionId
 
 <dd>
 <p>A value of type DVD_SESSION_ID that specifies an AGID.</p>
 </dd>
 
-### -field <b>Certificate</b>
+### -field Certificate
 
 <dd>
 <p>A structure of type <a href="..\ntddcdvd\ns-ntddcdvd--aacs-certificate.md">AACS_CERTIFICATE</a> that specifies the certificate to retrieve.</p>

@@ -7,7 +7,7 @@ old-location: spb\spb_transfer_list_entry_init_mdl.htm
 old-project: SPB
 ms.assetid: FFE8761B-5769-48E5-ACE9-50009C490714
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/30/2017
 ms.keywords: SPB_TRANSFER_LIST_ENTRY_INIT_MDL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ SPB_TRANSFER_LIST_ENTRY SPB_TRANSFER_LIST_ENTRY_INIT_MDL(
 ## -parameters
 <dl>
 
-### -param <i>Direction</i> [in]
+### -param Direction [in]
 
 <dd>
 <p>The direction of the transfer. The function writes this value to the <b>Direction</b> member of the <b>SPB_TRANSFER_LIST_ENTRY</b> structure.</p>
 </dd>
 
-### -param <i>DelayInUs</i> [in]
+### -param DelayInUs [in]
 
 <dd>
 <p>An optional delay in microseconds. The function writes this value to the <b>DelayInUs</b> member of the <b>SPB_TRANSFER_LIST_ENTRY</b> structure.</p>
 </dd>
 
-### -param <i>Mdl</i> [in]
+### -param Mdl [in]
 
 <dd>
 <p>A pointer to an MDL that describes a data buffer. The function writes this value to the <b>Buffer.Mdl</b> member of the <b>SPB_TRANSFER_LIST_ENTRY</b> structure. For more information, see the description of the <b>Mdl</b> member in <a href="https://msdn.microsoft.com/library/windows/hardware/hh406215">SPB_TRANSFER_BUFFER</a>.</p>
@@ -130,4 +130,4 @@ SPB_TRANSFER_LIST_ENTRY SPB_TRANSFER_LIST_ENTRY_INIT_MDL(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_LIST_ENTRY_INIT_MDL function%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_LIST_ENTRY_INIT_MDL function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -61,31 +61,31 @@ VOID APIENTRY CreateGeometryShaderWithStreamOutput(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pCreateGeometryWithShaderOutput</i> [in]
+### -param pCreateGeometryWithShaderOutput [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-creategeometryshaderwithstreamoutput.md">D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a> structure that describes the parameters that the user-mode display driver uses to create a geometry shader with stream output. </p>
 </dd>
 
-### -param <i>hShader</i> [in]
+### -param hShader [in]
 
 <dd>
 <p> A handle to the driver's private data for the geometry shader with stream output. The driver returns the size, in bytes, of the memory region that the Microsoft Direct3D runtime must allocate for the private data from a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-calcprivategeometryshaderwithstreamoutput.md">CalcPrivateGeometryShaderWithStreamOutput(D3D11)</a>  function. The handle is  just a pointer to a region of memory, the size of which the driver requested. The driver uses this region of memory to store internal data structures that are related to its shader object. </p>
 </dd>
 
-### -param <i>hRTShader</i> [in]
+### -param hRTShader [in]
 
 <dd>
 <p> A handle to the geometry shader with stream output that the driver should use when it calls back into the Direct3D runtime. </p>
 </dd>
 
-### -param <i>pSignatures</i> [in]
+### -param pSignatures [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-stage-io-signatures.md">D3D10DDIARG_STAGE_IO_SIGNATURES</a> structure that forms the shader's signature.</p>

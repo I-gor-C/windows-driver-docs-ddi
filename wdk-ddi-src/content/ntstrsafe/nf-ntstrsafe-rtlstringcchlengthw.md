@@ -56,19 +56,19 @@ NTSTATUS RtlStringCchLength(
 ## -parameters
 <dl>
 
-### -param <i>psz</i> [in]
+### -param psz [in]
 
 <dd>
 <p>A pointer to a buffer that contains a null-terminated string, the length of which will be checked. </p>
 </dd>
 
-### -param <i>cchMax</i> [in]
+### -param cchMax [in]
 
 <dd>
 <p>The maximum number of characters allowed in the buffer pointed to by <i>psz</i>, including the terminating null character. This value cannot exceed NTSTRSAFE_MAX_CCH. </p>
 </dd>
 
-### -param <i>pcch</i> [out, optional]
+### -param pcch [out, optional]
 
 <dd>
 <p>If the caller supplies a non-<b>NULL</b> address pointer, the function loads the address with the length, in characters, of the string that is contained in the buffer. The length does not include the string's terminating null character.</p>

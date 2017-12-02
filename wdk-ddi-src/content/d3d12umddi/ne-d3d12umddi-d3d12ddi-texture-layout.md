@@ -58,31 +58,31 @@ typedef enum D3D12DDI_TEXTURE_LAYOUT {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_TL_UNDEFINED"></a><a id="d3d12ddi_tl_undefined"></a><b>D3D12DDI_TL_UNDEFINED</b>
+### -field D3D12DDI_TL_UNDEFINED
 
 <dd>
 <p>Texture layout undefined. </p>
 </dd>
 
-### -field <a id="D3D12DDI_TL_ROW_MAJOR"></a><a id="d3d12ddi_tl_row_major"></a><b>D3D12DDI_TL_ROW_MAJOR</b>
+### -field D3D12DDI_TL_ROW_MAJOR
 
 <dd>
 <p>Texture layout row major.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TL_64KB_TILE_UNDEFINED_SWIZZLE"></a><a id="d3d12ddi_tl_64kb_tile_undefined_swizzle"></a><b>D3D12DDI_TL_64KB_TILE_UNDEFINED_SWIZZLE</b>
+### -field D3D12DDI_TL_64KB_TILE_UNDEFINED_SWIZZLE
 
 <dd>
 <p>A 64 KB tile with undefined swizzle.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TL_64KB_TILE_STANDARD_SWIZZLE"></a><a id="d3d12ddi_tl_64kb_tile_standard_swizzle"></a><b>D3D12DDI_TL_64KB_TILE_STANDARD_SWIZZLE</b>
+### -field D3D12DDI_TL_64KB_TILE_STANDARD_SWIZZLE
 
 <dd>
 <p>A 64 KB tile with standard swizzle.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TL_DEVICE_DEPENDENT_SWIZZLE_0"></a><a id="d3d12ddi_tl_device_dependent_swizzle_0"></a><b>D3D12DDI_TL_DEVICE_DEPENDENT_SWIZZLE_0</b>
+### -field D3D12DDI_TL_DEVICE_DEPENDENT_SWIZZLE_0
 
 <dd>
 <p>A device dependant swizzle.</p>

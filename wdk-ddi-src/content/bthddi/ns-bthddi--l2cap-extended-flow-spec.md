@@ -59,37 +59,37 @@ typedef struct _L2CAP_EXTENDED_FLOW_SPEC {
 ## -struct-fields
 <dl>
 
-### -field <b>Identifier</b>
+### -field Identifier
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>ServiceType</b>
+### -field ServiceType
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>MaxSDUSize</b>
+### -field MaxSDUSize
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>SDUInterArrivalTime</b>
+### -field SDUInterArrivalTime
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>AccessLatency</b>
+### -field AccessLatency
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>FlushTimeout</b>
+### -field FlushTimeout
 
 <dd>
 <p>Reserved. Do not use.</p>

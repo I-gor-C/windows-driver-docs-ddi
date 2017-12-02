@@ -57,19 +57,19 @@ typedef enum _URS_ROLE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UrsRoleNone"></a><a id="ursrolenone"></a><a id="URSROLENONE"></a><b>UrsRoleNone</b>
+### -field UrsRoleNone
 
 <dd>
 <p>Internal use only. Must be 0.</p>
 </dd>
 
-### -field <a id="UrsRoleHost"></a><a id="ursrolehost"></a><a id="URSROLEHOST"></a><b>UrsRoleHost</b>
+### -field UrsRoleHost
 
 <dd>
 <p>Indicates the host role of the controller.</p>
 </dd>
 
-### -field <a id="UrsRoleFunction"></a><a id="ursrolefunction"></a><a id="URSROLEFUNCTION"></a><b>UrsRoleFunction</b>
+### -field UrsRoleFunction
 
 <dd>
 <p>Indicates the function role of the controller.</p>

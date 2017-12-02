@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_ZRANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>MinZ</b>
+### -field MinZ
 
 <dd>
 <p>[in] A FLOAT value that indicates the minimum z value for the range. </p>
 </dd>
 
-### -field <b>MaxZ</b>
+### -field MaxZ
 
 <dd>
 <p>[in] A FLOAT value that indicates the maximum z value for the range. </p>

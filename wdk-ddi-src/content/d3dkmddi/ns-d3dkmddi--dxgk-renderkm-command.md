@@ -63,7 +63,7 @@ typedef struct _DXGK_RENDERKM_COMMAND {
 ## -struct-fields
 <dl>
 
-### -field <b>OpCode</b>
+### -field OpCode
 
 <dd>
 <p>
@@ -71,7 +71,7 @@ typedef struct _DXGK_RENDERKM_COMMAND {
      </p>
 </dd>
 
-### -field <b>CommandSize</b>
+### -field CommandSize
 
 <dd>
 <p>
@@ -79,12 +79,12 @@ typedef struct _DXGK_RENDERKM_COMMAND {
      </p>
 </dd>
 
-### -field <b>Command</b>
+### -field Command
 
 <dd>
 <dl>
 
-### -field <b>BitBlt</b>
+### -field BitBlt
 
 <dd>
 <p>
@@ -92,7 +92,7 @@ typedef struct _DXGK_RENDERKM_COMMAND {
       </p>
 </dd>
 
-### -field <b>ColorFill</b>
+### -field ColorFill
 
 <dd>
 <p>
@@ -100,7 +100,7 @@ typedef struct _DXGK_RENDERKM_COMMAND {
       </p>
 </dd>
 
-### -field <b>AlphaBlend</b>
+### -field AlphaBlend
 
 <dd>
 <p>
@@ -108,7 +108,7 @@ typedef struct _DXGK_RENDERKM_COMMAND {
       </p>
 </dd>
 
-### -field <b>StretchBlt</b>
+### -field StretchBlt
 
 <dd>
 <p>
@@ -116,7 +116,7 @@ typedef struct _DXGK_RENDERKM_COMMAND {
       </p>
 </dd>
 
-### -field <b>TransparentBlt</b>
+### -field TransparentBlt
 
 <dd>
 <p>
@@ -124,7 +124,7 @@ typedef struct _DXGK_RENDERKM_COMMAND {
       </p>
 </dd>
 
-### -field <b>ClearTypeBlend</b>
+### -field ClearTypeBlend
 
 <dd>
 <p>

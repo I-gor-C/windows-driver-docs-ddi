@@ -57,7 +57,7 @@ NTSTATUS APIENTRY DxgkCbGetCaptureAddress(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>[in/out] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-getcaptureaddress.md">DXGKARGCB_GETCAPTUREADDRESS</a> structure that describes parameters for retrieving information about a capture buffer.</p>

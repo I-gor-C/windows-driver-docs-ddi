@@ -56,13 +56,13 @@ NTSTATUS ZwDeleteValueKey(
 ## -parameters
 <dl>
 
-### -param <i>KeyHandle</i> [in]
+### -param KeyHandle [in]
 
 <dd>
 <p>The handle to the registry key containing the value entry of interest. This key must have been opened with KEY_SET_VALUE set for the desired access. This handle is created by a successful call to <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> or <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>. </p>
 </dd>
 
-### -param <i>ValueName</i> [in]
+### -param ValueName [in]
 
 <dd>
 <p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the name of the value entry to delete. This parameter can be an empty string if the value entry has no name. </p>

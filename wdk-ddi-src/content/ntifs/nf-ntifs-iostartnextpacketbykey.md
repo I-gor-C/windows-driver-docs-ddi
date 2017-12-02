@@ -56,19 +56,19 @@ VOID IoStartNextPacketByKey(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object for which the IRP is to be dequeued.</p>
 </dd>
 
-### -param <i>Cancelable</i> [in]
+### -param Cancelable [in]
 
 <dd>
 <p>Specifies whether IRPs in the device queue can be canceled.</p>
 </dd>
 
-### -param <i>Key</i> [in]
+### -param Key [in]
 
 <dd>
 <p>Specifies the sort key that determines which entry to remove from the queue.</p>
@@ -153,10 +153,10 @@ VOID IoStartNextPacketByKey(
 <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iostartnextpacket.md">IoStartNextPacket</a>
+<a href="..\wdm\nf-wdm-iostartnextpacket.md">IoStartNextPacket</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iostartpacket.md">IoStartPacket</a>
+<a href="..\wdm\nf-wdm-iostartpacket.md">IoStartPacket</a>
 </dt>
 </dl>
 <p> </p>

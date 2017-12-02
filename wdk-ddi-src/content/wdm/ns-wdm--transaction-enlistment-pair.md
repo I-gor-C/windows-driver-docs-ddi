@@ -56,13 +56,13 @@ typedef struct _TRANSACTION_ENLISTMENT_PAIR {
 ## -struct-fields
 <dl>
 
-### -field <b>EnlistmentId</b>
+### -field EnlistmentId
 
 <dd>
 <p>A GUID that KTM has assigned to the enlistment.</p>
 </dd>
 
-### -field <b>ResourceManagerId</b>
+### -field ResourceManagerId
 
 <dd>
 <p>A GUID that KTM has assigned to the resource manager that created the enlistment.</p>

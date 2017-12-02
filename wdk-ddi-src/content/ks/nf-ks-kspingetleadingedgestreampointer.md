@@ -55,27 +55,27 @@ PKSSTREAM_POINTER KsPinGetLeadingEdgeStreamPointer(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure owning the queue for which the leading edge stream pointer should be acquired.</p>
 </dd>
 
-### -param <i>State</i> [in]
+### -param State [in]
 
 <dd>
 <p>This parameter specifies how to acquire the leading edge stream pointer. Can be one of the following:</p>
 <p></p>
 <dl>
 
-### -param <a id="KSSTREAM_POINTER_STATE_UNLOCKED"></a><a id="ksstream_pointer_state_unlocked"></a>KSSTREAM_POINTER_STATE_UNLOCKED
+### -param KSSTREAM_POINTER_STATE_UNLOCKED
 
 <dd>
 <p>Acquire the leading edge stream pointer regardless of whether it references a data frame or not. </p>
 <p>No attempts can be made to access any data associated with the pointer until the pointer is locked. Also note that frames associated with an unlocked stream pointer can be canceled.</p>
 </dd>
 
-### -param <a id="KSSTREAM_POINTER_STATE_LOCKED"></a><a id="ksstream_pointer_state_locked"></a>KSSTREAM_POINTER_STATE_LOCKED
+### -param KSSTREAM_POINTER_STATE_LOCKED
 
 <dd>
 <p>Acquire and lock the leading edge stream pointer. If no data frame is associated with the stream pointer, return <b>NULL</b>. If a non<b>null</b> pointer is returned, it is a locked stream pointer and has a data frame associated with it. Frames associated with a locked stream pointer <b>cannot</b> be canceled. </p>
@@ -88,7 +88,7 @@ PKSSTREAM_POINTER KsPinGetLeadingEdgeStreamPointer(
 <p><b>KsPinGetLeadingEdgeStreamPointer</b> returns a pointer to a <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure or <b>NULL</b>. A return value of <b>NULL</b> may occur because there is no queue associated with the pin, indicating that the pin does not use the standard transport mechanism. Alternatively, a return value of <b>NULL</b> may occur because an attempt to lock the leading edge failed, indicating that there is no data frame associated with the leading edge.</p>
 
 ## -remarks
-<p>Filters that implement <a href="NULL">Pin-Centric Processing</a> often call <b>KsPinGetLeadingEdgeStreamPointer</b>.</p>
+<p>Filters that implement <a href="https://msdn.microsoft.com/0b6a02c2-e672-4568-a890-491c721ec3a7">Pin-Centric Processing</a> often call <b>KsPinGetLeadingEdgeStreamPointer</b>.</p>
 
 ## -requirements
 <table>

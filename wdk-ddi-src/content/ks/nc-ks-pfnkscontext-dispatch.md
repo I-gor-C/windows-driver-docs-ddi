@@ -58,13 +58,13 @@ NTSTATUS KStrContextDispatch(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Specifies the user-supplied memory context to be passed as the <i>PowerContext</i> argument to the <a href="..\ks\nf-ks-kssetpowerdispatch.md">KsSetPowerDispatch</a> function.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the power IRP to be processed.</p>

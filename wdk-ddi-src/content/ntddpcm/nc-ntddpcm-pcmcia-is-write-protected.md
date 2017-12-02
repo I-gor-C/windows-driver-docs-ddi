@@ -57,7 +57,7 @@ BOOLEAN IsWriteProtected(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Pointer to the context for the interface routine.</p>

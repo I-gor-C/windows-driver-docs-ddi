@@ -56,7 +56,7 @@ typedef enum D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_CAPS"></a><a id="d3dwddm2_0ddi_video_capability_query_decoder_caps"></a><b>D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_CAPS</b>
+### -field D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_CAPS
 
 <dd>
 <p>Indicates that the driver should return video decoder capabilities.
@@ -66,7 +66,7 @@ typedef enum D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY {
 </p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_DOWNSAMPLING"></a><a id="d3dwddm2_0ddi_video_capability_query_decoder_downsampling"></a><b>D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_DOWNSAMPLING</b>
+### -field D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_DOWNSAMPLING
 
 <dd>
 <p>Indicates that the driver should return support for the specified down sampling parameters specified.
@@ -75,7 +75,7 @@ typedef enum D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY {
 <p>The input structure is of type <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-video-capability-decoder-downsampling.md">D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING</a>.</p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_RECOMMEND_DECODER_DOWNSAMPLING"></a><a id="d3dwddm2_0ddi_video_capability_query_recommend_decoder_downsampling"></a><b>D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_RECOMMEND_DECODER_DOWNSAMPLING</b>
+### -field D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_RECOMMEND_DECODER_DOWNSAMPLING
 
 <dd>
 <p>Indicates that the driver should recommend down sampling parameters.

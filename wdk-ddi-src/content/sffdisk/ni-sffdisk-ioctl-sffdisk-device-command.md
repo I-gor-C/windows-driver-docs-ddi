@@ -7,7 +7,7 @@ old-location: sd\ioctl_sffdisk_device_command.htm
 old-project: SD
 ms.assetid: ccf9e0a2-b891-474c-ac95-7b18112857c0
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/30/2017
 ms.keywords: SERCX_BUFFER_DESCRIPTOR,
 ms.prod: windows-hardware
 ms.technology: windows-devices

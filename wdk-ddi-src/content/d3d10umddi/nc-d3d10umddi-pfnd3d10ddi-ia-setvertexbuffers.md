@@ -62,37 +62,37 @@ VOID APIENTRY IaSetVertexBuffers(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>StartBuffer</i> [in]
+### -param StartBuffer [in]
 
 <dd>
 <p> The starting vertex buffer to set. </p>
 </dd>
 
-### -param <i>NumBuffers</i> [in]
+### -param NumBuffers [in]
 
 <dd>
 <p> The total number of buffers to set. </p>
 </dd>
 
-### -param <i>phBuffers</i> [in]
+### -param phBuffers [in]
 
 <dd>
 <p> An array of handles to the vertex buffers, beginning with the buffer that <i>StartBuffer</i> specifies.</p>
 </dd>
 
-### -param <i>pStrides</i> [in]
+### -param pStrides [in]
 
 <dd>
 <p> An array of values that indicate the sizes, in bytes, from one vertex to the next vertex for each buffer </p>
 </dd>
 
-### -param <i>pOffsets</i> [in]
+### -param pOffsets [in]
 
 <dd>
 <p> An array of values that indicate the offsets, in bytes, into each vertex buffer. </p>

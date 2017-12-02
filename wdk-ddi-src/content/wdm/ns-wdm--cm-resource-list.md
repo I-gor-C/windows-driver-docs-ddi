@@ -56,13 +56,13 @@ typedef struct _CM_RESOURCE_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>The number of full resource descriptors that are specified by this <b>CM_RESOURCE_LIST</b> structure. The <b>List</b> member is the header for the first full resource descriptor. For WDM drivers, <b>Count</b> is always 1.</p>
 </dd>
 
-### -field <b>List</b>
+### -field List
 
 <dd>
 <p>The <a href="..\wdm\ns-wdm--cm-full-resource-descriptor.md">CM_FULL_RESOURCE_DESCRIPTOR</a> structure that serves as the header for the first full resource descriptor. If the <b>CM_RESOURCE_LIST</b> structure contains more than one full resource descriptor, the second full resource descriptor immediately follows the first in memory, and so on. The size of each full resource descriptor depends on the length of the <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> array that it contains. For more information, see the following Remarks section.</p>

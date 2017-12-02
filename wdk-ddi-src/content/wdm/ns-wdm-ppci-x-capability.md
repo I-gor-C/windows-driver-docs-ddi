@@ -84,47 +84,47 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537454">PCI_CAPABILITIES_HEADER</a> that identifies the capability and provides a link to the next capability description. </p>
 </dd>
 
-### -field <b>Command</b>
+### -field Command
 
 <dd>
 <dl>
 
-### -field <b>bits</b>
+### -field bits
 
 <dd>
 <dl>
 
-### -field <b>DataParityErrorRecoveryEnable</b>
+### -field DataParityErrorRecoveryEnable
 
 <dd>
 <p>Indicates that the data parity error recovery bit is set in the device's command register, and the device will attempt to recover from data parity errors. For more information about the significance of the value in the parity error recovery bit, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>EnableRelaxedOrdering</b>
+### -field EnableRelaxedOrdering
 
 <dd>
 <p>Indicates the enable relaxed ordering bit is set in the device's command register. This leaves the device free to adopt a more relaxed transaction ordering policy. For more information about how this bit effects transaction ordering, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>MaxMemoryReadByteCount</b>
+### -field MaxMemoryReadByteCount
 
 <dd>
 <p>Reports the maximum byte count, recorded in the command register, that the device uses when initiating a burst memory read command. For more information about how this bit effects read commands, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>MaxOutstandingSplitTransactions</b>
+### -field MaxOutstandingSplitTransactions
 
 <dd>
 <p>Reports the maximum number of split transactions, recorded in the command register, that the device can initiate asynchronously. For more information about how this value effects split transactions, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. </p>
@@ -132,7 +132,7 @@ typedef struct {
 </dl>
 </dd>
 
-### -field <b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>Reports the data in the device's command register in the form of a unsigned long integer.</p>
@@ -140,83 +140,83 @@ typedef struct {
 </dl>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <dl>
 
-### -field <b>bits</b>
+### -field bits
 
 <dd>
 <dl>
 
-### -field <b>FunctionNumber</b>
+### -field FunctionNumber
 
 <dd>
 <p>Indicates the value in the function number field of an address of a type 0 configuration transaction. For more information about the meaning of this number, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>DeviceNumber</b>
+### -field DeviceNumber
 
 <dd>
 <p>Indicates the value in the device number field of the address of a type 0 configuration transaction. For more information about the meaning of this number, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>BusNumber</b>
+### -field BusNumber
 
 <dd>
 <p>Indicates the number of the bus segment on which the device is located. For more information about the meaning of this number, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>Device64Bit</b>
+### -field Device64Bit
 
 <dd>
 <p>Indicates when 1 that the bus is 64 bits wide. When 0 the bus is 32 bits wide. For more information about the meaning of the status register's device 64 bit, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>Capable133MHz</b>
+### -field Capable133MHz
 
 <dd>
 <p>Indicates when 1 that the device's maximum operating frequency is 133 MHz. Indicates when 0 that the device's maximum operating frequency is 66 MHz. For more information about the meaning of status register's capable 133 Mhz bit, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>SplitCompletionDiscarded</b>
+### -field SplitCompletionDiscarded
 
 <dd>
 <p>Indicates when 1 that the device discarded a split completion transaction because the requester rejected it. A value of 0 indicates that the device has not discarded any split completion transactions since the status register's split completion discarded bit was last cleared. For more information about the status register's split completion discarded bit, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>UnexpectedSplitCompletion</b>
+### -field UnexpectedSplitCompletion
 
 <dd>
 <p>Indicates when 1 that the device has received a split completion transaction with the device's requester ID. Indicates when 0 that the device has not received this kind of transaction. For more information about the meaning of the status register's unexpected split completion bit, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>DeviceComplexity</b>
+### -field DeviceComplexity
 
 <dd>
 <p>Indicates when 1 that the device is a bridge device. When 0 the device is not a bridge device. For more information about the meaning of the status register's device complexity bit, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>DesignedMaxMemoryReadByteCount</b>
+### -field DesignedMaxMemoryReadByteCount
 
 <dd>
 <p>Reports the maximum byte count, defined in the status register, that the device uses when it initiates a read sequence. For more information about the meaning of this value, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>DesignedMaxOutstandingSplitTransactions</b>
+### -field DesignedMaxOutstandingSplitTransactions
 
 <dd>
 <p>Reports the maximum number of split transactions, defined in the status register, that the device can permit at any one time. For more information about the meaning of this value, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>DesignedMaxCumulativeReadSize</b>
+### -field DesignedMaxCumulativeReadSize
 
 <dd>
 <p>Reports the maximum number of burst memory read transactions, defined in the status register, that the device allows at any one time. For more information about this value, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>ReceivedSplitCompletionErrorMessage</b>
+### -field ReceivedSplitCompletionErrorMessage
 
 <dd>
 <p>Indicates when 1 that the device has received a split completion error message. Indicates when 0 that the device has not received a split completion error message. </p>
@@ -224,7 +224,7 @@ typedef struct {
 </dl>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>Reports the data in the device's status register in the form of a unsigned long integer.</p>

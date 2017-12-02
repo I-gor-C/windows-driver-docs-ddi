@@ -7,7 +7,7 @@ old-location: wdf\wdffdoinitquerypropertyex.htm
 old-project: wdf
 ms.assetid: C8377EE4-A7A1-4063-A7DC-53D0D8C6E0C3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfFdoInitQueryPropertyEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ NTSTATUS WdfFdoInitQueryPropertyEx(
 ## -parameters
 <dl>
 
-### -param <i>DeviceInit</i> [in]
+### -param DeviceInit [in]
 
 <dd>
 <p>A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure that the driver obtained from its <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> callback function.</p>
 </dd>
 
-### -param <i>DeviceProperty</i> [in]
+### -param DeviceProperty [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdfdevice\ns-wdfdevice--wdf-device-property-data.md">WDF_DEVICE_PROPERTY_DATA</a> structure that identifies the device property to be retrieved.</p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>The size, in bytes, of the buffer that is pointed to by <i>PropertyBuffer</i>.</p>
 </dd>
 
-### -param <i>PropertyBuffer</i> [out]
+### -param PropertyBuffer [out]
 
 <dd>
 <p>A caller-supplied pointer to a caller-allocated buffer that receives the requested information. The pointer can be <b>NULL</b> if the <i>BufferLength</i> parameter is zero.</p>
 </dd>
 
-### -param <i>ResultLength</i> [out]
+### -param ResultLength [out]
 
 <dd>
 <p>A caller-supplied location that, on return, contains the 
@@ -95,7 +95,7 @@ NTSTATUS WdfFdoInitQueryPropertyEx(
                   buffer size.</p>
 </dd>
 
-### -param <i>Type</i> [out]
+### -param Type [out]
 
 <dd>
 <p>A pointer to a <b>DEVPROPTYPE</b> variable that, on return, contains the property type value
@@ -195,4 +195,4 @@ NTSTATUS WdfFdoInitQueryPropertyEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfFdoInitQueryPropertyEx method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfFdoInitQueryPropertyEx method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

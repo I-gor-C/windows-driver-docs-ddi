@@ -7,7 +7,7 @@ old-location: ifsk\fltqueryeafile.htm
 old-project: ifsk
 ms.assetid: 3981ab65-2d21-4188-88dc-04eb7aff0869
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltQueryEaFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,61 +63,61 @@ NTSTATUS FltQueryEaFile(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>Opaque instance pointer for the minifilter driver instance that the <i>QueryEa</i> operation is to be sent to. The instance must be attached to the volume where the file resides. </p>
 </dd>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>File object pointer for the file. </p>
 </dd>
 
-### -param <i>ReturnedEaData</i> [out]
+### -param ReturnedEaData [out]
 
 <dd>
 <p>Pointer to a caller-supplied <a href="..\wdm\ns-wdm--file-full-ea-information.md">FILE_FULL_EA_INFORMATION</a>-structured input buffer where the extended attribute values are to be returned. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Length, in bytes, of the buffer that the <i>ReturnedEaData</i> parameter points to. </p>
 </dd>
 
-### -param <i>ReturnSingleEntry</i> [in]
+### -param ReturnSingleEntry [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if <b>FltQueryEaFile</b> should return only the first entry that is found. </p>
 </dd>
 
-### -param <i>EaList</i> [in, optional]
+### -param EaList [in, optional]
 
 <dd>
 <p>Pointer to a caller-supplied <a href="..\ntifs\ns-ntifs--file-get-ea-information.md">FILE_GET_EA_INFORMATION</a>-structured input buffer specifying the extended attributes to be queried. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>EaListLength</i> [in]
+### -param EaListLength [in]
 
 <dd>
 <p>Length, in bytes, of the buffer that the <i>EaList</i> parameter points to. </p>
 </dd>
 
-### -param <i>EaIndex</i> [in, optional]
+### -param EaIndex [in, optional]
 
 <dd>
 <p>Index of the entry at which to begin scanning the file's extended-attribute list. This parameter is ignored if the <i>EaList</i> parameter points to a nonempty list. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>RestartScan</i> [in]
+### -param RestartScan [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if <b>FltQueryEaFile</b> should begin the scan at the first entry in the file's extended-attribute list. If this parameter is not set to <b>TRUE</b>, the scan is resumed from a previous call to <b>FltQueryEaFile</b>. </p>
 </dd>
 
-### -param <i>LengthReturned</i> [out, optional]
+### -param LengthReturned [out, optional]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the size, in bytes, of the information returned in the <i>ReturnedEaData</i> buffer. This parameter is optional and can be <b>NULL</b>. </p>
@@ -215,4 +215,4 @@ NTSTATUS FltQueryEaFile(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryEaFile function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryEaFile function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

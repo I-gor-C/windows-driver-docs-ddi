@@ -57,7 +57,7 @@ typedef struct _D3DHAL_DP2VERTEXSHADER {
 ## -struct-fields
 <dl>
 
-### -field <b>dwHandle</b>
+### -field dwHandle
 
 <dd>
 <dl>

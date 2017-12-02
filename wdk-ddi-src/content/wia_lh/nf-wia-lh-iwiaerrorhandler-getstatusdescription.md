@@ -7,7 +7,7 @@ old-location: image\iwiaerrorhandler_getstatusdescription.htm
 old-project: image
 ms.assetid: c3b5622d-9d51-4008-abb0-c8a60c4a6b16
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IWiaErrorHandler, GetStatusDescription, IWiaErrorHandler::GetStatusDescription
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ HRESULT GetStatusDescription(
 ## -parameters
 <dl>
 
-### -param <i>lFlags</i> [in]
+### -param lFlags [in]
 
 <dd>
 <p>Currently unused. Should be set to zero. </p>
 </dd>
 
-### -param <i>pWiaItem2</i> [in]
+### -param pWiaItem2 [in]
 
 <dd>
 <p>Pointer to the <b>IWiaItem2</b> item being transferred. <b>IWiaItem2</b> is described in the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -param <i>hrStatus</i> [in]
+### -param hrStatus [in]
 
 <dd>
 <p>HRESULT variable that contains the status code received by the WIA transfer method, for example the <b>IWiaDataCallback::BandedDataCallback</b> method (described in the Windows SDK documentation).</p>
 </dd>
 
-### -param <i>pbstrDescription</i> [out]
+### -param pbstrDescription [out]
 
 <dd>
 <p>Pointer to a BSTR that receives a description of the status or error encountered during the transfer. This parameter cannot be <b>NULL</b>. The driver must allocate the string using the <b>SysAllocString</b> function and the caller must free the string using the <b>SysFreeString</b> function. The <b>SysFreeString</b> and <b>SysAllocString </b>functions are described in the Windows SDK documentation.</p>
@@ -137,4 +137,4 @@ HRESULT GetStatusDescription(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaErrorHandler::GetStatusDescription method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaErrorHandler::GetStatusDescription method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

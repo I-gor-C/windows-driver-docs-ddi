@@ -54,7 +54,7 @@ NTSTATUS APIENTRY *DXGKCB_INDICATE_CONNECTOR_CHANGE(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>A handle that identifies the adapter.</p>

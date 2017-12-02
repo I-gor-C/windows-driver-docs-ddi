@@ -7,7 +7,7 @@ old-location: debugger\getoffset.htm
 old-project: debugger
 ms.assetid: 7da401c9-10c1-4a2b-91ea-c0f9f58fd87a
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugBreakpoint, GetOffset, IDebugBreakpoint::GetOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetOffset(
 ## -parameters
 <dl>
 
-### -param <i>Offset</i> [out]
+### -param Offset [out]
 
 <dd>
 <p>The location on the target that triggers the breakpoint.</p>
@@ -70,7 +70,7 @@ HRESULT GetOffset(
 
 <p> </p>
 
-<p>This method can also return other error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
+<p>This method can also return other error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.</p>
 
 ## -remarks
 <p>The <a href="debugger.getparameters">GetParameters</a> method also returns the location that triggers a breakpoint.</p>

@@ -57,7 +57,7 @@ typedef struct _KSCLOCK_DISPATCH {
 ## -struct-fields
 <dl>
 
-### -field <b>SetTimer</b>
+### -field SetTimer
 
 <dd>
 <p>Optionally contains a pointer to an alternate function to use in generating DPC timer callbacks based on a presentation time. If this is set, this function is used to set timers based on deltas to the current presentation time in order to generate event notifications. If an alternate function is specified to set timers, a corresponding <b>CancelTimer</b> function must also be provided. This is set to <b>NULL</b> if the default <a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a> function is used to approximate the next notification time. This would normally be set only if a <b>KeSetTimerEx</b> function was being used. The function must have the same characteristics as the default function.</p>
@@ -78,7 +78,7 @@ typedef struct _KSCLOCK_DISPATCH {
 <p>See the documentation for <b>KeSetTimerEx</b> for details on implementation of this function. Any client implementation must behave in a similar manner.</p>
 </dd>
 
-### -field <b>CancelTimer</b>
+### -field CancelTimer
 
 <dd>
 <p>Optionally contains an alternate function to use in canceling outstanding timer callbacks. If an alternate function is provided to cancel timers, a corresponding <i>SetTimer</i> function must also be provided. This is set to <b>NULL</b> if the default <b>KeCancelTimer</b> function is to be used. The function must have the same characteristics as the default function.</p>
@@ -97,7 +97,7 @@ typedef struct _KSCLOCK_DISPATCH {
 <p>See the documentation for <b>KeCancelTimer</b> for details on the implementation of this function. Any client implementation must behave in a similar manner.</p>
 </dd>
 
-### -field <b>CorrelatedTime</b>
+### -field CorrelatedTime
 
 <dd>
 <p>A pointer to a function to retrieve the current clock time and a correlated system time as an atomic operation. The function should be prototyped as follows:</p>
@@ -115,7 +115,7 @@ typedef struct _KSCLOCK_DISPATCH {
 <p>The current clock time should be returned and the current system time should be placed in <b>SystemTime</b>.</p>
 </dd>
 
-### -field <b>Resolution</b>
+### -field Resolution
 
 <dd>
 <p>A pointer to a function to specify the resolution of the clock. This corresponds to the KS property <a href="https://msdn.microsoft.com/library/windows/hardware/ff565092">KSPROPERTY_CLOCK_RESOLUTION</a>. This function should report the granularity in terms of 100-nanosecond units. For more information, see the KS documentation on KSPROPERTY_CLOCK_RESOLUTION. </p>

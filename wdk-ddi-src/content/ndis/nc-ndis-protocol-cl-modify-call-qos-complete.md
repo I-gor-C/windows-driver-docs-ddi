@@ -7,7 +7,7 @@ old-location: netvista\protocolclmodifycallqoscomplete.htm
 old-project: netvista
 ms.assetid: 0d925862-49af-4579-b877-c9a033e73be0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ VOID ProtocolClModifyCallQoSComplete(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>Specifies the final status of the client's asynchronous request to modify the call parameters for
@@ -75,34 +75,34 @@ VOID ProtocolClModifyCallQoSComplete(
 <p></p>
 <dl>
 
-### -param <a id="NDIS_STATUS_SUCCESS"></a><a id="ndis_status_success"></a>NDIS_STATUS_SUCCESS
+### -param NDIS_STATUS_SUCCESS
 
 <dd>
 <p>The QoS was modified as requested by the client.</p>
 </dd>
 
-### -param <a id="NDIS_STATUS_RESOURCES"></a><a id="ndis_status_resources"></a>NDIS_STATUS_RESOURCES
+### -param NDIS_STATUS_RESOURCES
 
 <dd>
 <p>NDIS or the call manager could not modify the QoS because one of them could not allocate
        sufficient resources dynamically.</p>
 </dd>
 
-### -param <a id="NDIS_STATUS_INVALID_DATA"></a><a id="ndis_status_invalid_data"></a>NDIS_STATUS_INVALID_DATA
+### -param NDIS_STATUS_INVALID_DATA
 
 <dd>
 <p>The call parameters that the client supplied to 
        <b>NdisClModifyCallQoS</b> were invalid.</p>
 </dd>
 
-### -param <a id="NDIS_STATUS_FAILURE"></a><a id="ndis_status_failure"></a>NDIS_STATUS_FAILURE
+### -param NDIS_STATUS_FAILURE
 
 <dd>
 <p>The call manager could not change the QoS because of a failure on the network or in another
        connection-oriented network component.</p>
 </dd>
 
-### -param <a id="NDIS_STATUS_XXX"></a><a id="ndis_status_xxx"></a>NDIS_STATUS_<i>XXX</i>
+### -param NDIS_STATUS_XXX
 
 <dd>
 <p>The call manager failed to change the QoS, and NDIS propagated the CM-determined failure status
@@ -111,7 +111,7 @@ VOID ProtocolClModifyCallQoSComplete(
 </dl>
 </dd>
 
-### -param <i>ProtocolVcContext</i> [in]
+### -param ProtocolVcContext [in]
 
 <dd>
 <p>Specifies the handle to the client's per-VC context area, which the client originally supplied to
@@ -121,7 +121,7 @@ VOID ProtocolClModifyCallQoSComplete(
      <i>ProtocolCoCreateVc</i> function if the client accepted an incoming call on this VC.</p>
 </dd>
 
-### -param <i>CallParameters</i> [in]
+### -param CallParameters [in]
 
 <dd>
 <p>Pointer to a buffered CO_CALL_PARAMETERS structure containing the client-specified QoS change it
@@ -151,13 +151,13 @@ VOID ProtocolClModifyCallQoSComplete(
     rejects a request to change the QoS and the previously established QoS has become unacceptable to the
     client.</p>
 
-<p>To define a <i>ProtocolClModifyCallQoSComplete</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define a <i>ProtocolClModifyCallQoSComplete</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define a <i>ProtocolClModifyCallQoSComplete</i> function that is named "MyClModifyCallQoSComplete", use the <b>PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE</b> type as shown in this code example:</p>
 
 <p>Then, implement your function as follows:</p>
 
-<p>The <b>PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
+<p>The <b>PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. </p>
 
@@ -221,4 +221,4 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

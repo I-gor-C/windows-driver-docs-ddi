@@ -7,7 +7,7 @@ old-location: netvista\ndis_bind_failed_notification.htm
 old-project: netvista
 ms.assetid: 5420839B-EB81-43CC-B7BD-9D1FA2560A3D
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_BIND_FAILED_NOTIFICATION, NDIS_BIND_FAILED_NOTIFICATION, *PNDIS_BIND_FAILED_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef struct _NDIS_BIND_FAILED_NOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -67,7 +67,7 @@ typedef struct _NDIS_BIND_FAILED_NOTIFICATION {
      <b>Size</b> member to <b>NDIS_SIZEOF_NDIS_BIND_FAILED_NOTIFICATION_REVISION_1</b>.</p>
 </dd>
 
-### -field <b>MiniportNetLuid</b>
+### -field MiniportNetLuid
 
 <dd>
 <p>The NDIS network interface

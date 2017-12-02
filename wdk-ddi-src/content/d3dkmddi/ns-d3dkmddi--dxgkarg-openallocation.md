@@ -63,37 +63,37 @@ typedef struct _DXGKARG_OPENALLOCATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of elements in the array that the <b>pOpenAllocation</b> member specifies, which represents the number of device-specific allocations to open.</p>
 </dd>
 
-### -field <b>pOpenAllocation</b>
+### -field pOpenAllocation
 
 <dd>
 <p>[in/out] An array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-openallocationinfo.md">DXGK_OPENALLOCATIONINFO</a> structures for the allocations to open.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in] A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver. This block of private data is the same resource-specific data that is passed in the <b>pPrivateDriverData</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createallocation.md">DXGKARG_CREATEALLOCATION</a> structure in the call to the <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function. The display miniport driver cannot modify this block of private data.</p>
 </dd>
 
-### -field <b>PrivateDriverSize</b>
+### -field PrivateDriverSize
 
 <dd>
 <p>[in] The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-openallocationflags.md">DXGK_OPENALLOCATIONFLAGS</a> structure that identifies the operation to perform for allocations.</p>
 </dd>
 
-### -field <b>SubresourceIndex</b>
+### -field SubresourceIndex
 
 <dd>
 <p>[in] Supported beginning with Windows 8.</p>
@@ -102,14 +102,14 @@ typedef struct _DXGKARG_OPENALLOCATION {
 <p>If the value of <b>SubresourceIndex</b> is greater than the number of subresources in the allocation, the display miniport driver should return an error.</p>
 </dd>
 
-### -field <b>SubresourceOffset</b>
+### -field SubresourceOffset
 
 <dd>
 <p>[out] Supported beginning with Windows 8.</p>
 <p>The offset, in bytes, from the start of the allocation to the start of the subresource.</p>
 </dd>
 
-### -field <b>Pitch</b>
+### -field Pitch
 
 <dd>
 <p>[out] Supported beginning with Windows 8.</p>

@@ -55,13 +55,13 @@ typedef struct _HDAUDIO_CODEC_TRANSFER {
 ## -struct-fields
 <dl>
 
-### -field <b>Output</b>
+### -field Output
 
 <dd>
 <p>Specifies a codec command for the HD Audio bus driver to output to a codec that is attached to the HD Audio controller. This member is a structure of type <a href="..\hdaudio\ns-hdaudio--hdaudio-codec-command.md">HDAUDIO_CODEC_COMMAND</a>. Before calling the <a href="..\hdaudio\nc-hdaudio-ptransfer-codec-verbs.md">TransferCodecVerbs</a> routine, the caller writes a codec command to this member.</p>
 </dd>
 
-### -field <b>Input</b>
+### -field Input
 
 <dd>
 <p>Specifies the response to the codec command. This member is a structure of type <a href="..\hdaudio\ns-hdaudio--hdaudio-codec-response.md">HDAUDIO_CODEC_RESPONSE</a>. The HD Audio bus driver retrieves the response to the codec command that is contained in the <b>Output</b> member and writes the response into the <b>Input</b> member.</p>

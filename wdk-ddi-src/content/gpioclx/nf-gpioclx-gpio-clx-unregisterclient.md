@@ -54,7 +54,7 @@ NTSTATUS GPIO_CLX_UnregisterClient(
 ## -parameters
 <dl>
 
-### -param <i>Driver</i> [in]
+### -param Driver [in]
 
 <dd>
 <p>A WDFDRIVER handle to the framework driver object for the GPIO controller driver.</p>

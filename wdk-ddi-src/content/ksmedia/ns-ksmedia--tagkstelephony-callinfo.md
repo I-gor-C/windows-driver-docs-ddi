@@ -55,13 +55,13 @@ typedef struct _tagKSTELEPHONY_CALLINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>CallType</b>
+### -field CallType
 
 <dd>
 <p>Specifies the type of phone call (circuit-switched, LTE packet-switched, or WLAN packet-switched).</p>
 </dd>
 
-### -field <b>CallState</b>
+### -field CallState
 
 <dd>
 <p>Specifies the state of the phone call.</p>

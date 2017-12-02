@@ -7,7 +7,7 @@ old-location: netvista\ndis_protocol_restart_parameters.htm
 old-project: netvista
 ms.assetid: 722287da-e0ee-41d5-b85a-0ec55eac41b9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PROTOCOL_RESTART_PARAMETERS, NDIS_PROTOCOL_RESTART_PARAMETERS, *PNDIS_PROTOCOL_RESTART_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ typedef struct _NDIS_PROTOCOL_RESTART_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -76,7 +76,7 @@ typedef struct _NDIS_PROTOCOL_RESTART_PARAMETERS {
      <b>Size</b> member to NDIS_SIZEOF_PROTOCOL_RESTART_PARAMETERS_REVISION_1.</p>
 </dd>
 
-### -field <b>FilterModuleNameBuffer</b>
+### -field FilterModuleNameBuffer
 
 <dd>
 <p>A list of the names of the underlying filter modules. For each name, the buffer contains a USHORT
@@ -87,14 +87,14 @@ typedef struct _NDIS_PROTOCOL_RESTART_PARAMETERS {
      <b>FilterModuleNameBufferLength</b> member.</p>
 </dd>
 
-### -field <b>FilterModuleNameBufferLength</b>
+### -field FilterModuleNameBufferLength
 
 <dd>
 <p>The length, in bytes, of the buffer in the 
      <b>FilterModuleNameBuffer</b> member.</p>
 </dd>
 
-### -field <b>RestartAttributes</b>
+### -field RestartAttributes
 
 <dd>
 <p>A pointer to the first entry in a list of 
@@ -103,7 +103,7 @@ typedef struct _NDIS_PROTOCOL_RESTART_PARAMETERS {
      <b>Next</b> member of the NDIS_RESTART_ATTRIBUTES structure to get the next structure in the list.</p>
 </dd>
 
-### -field <b>BoundIfIndex</b>
+### -field BoundIfIndex
 
 <dd>
 <p>The NDIS network interface index of the highest-level interface that is stacked on the miniport
@@ -112,7 +112,7 @@ typedef struct _NDIS_PROTOCOL_RESTART_PARAMETERS {
      <i>IfIndex</i> of the highest-level virtual miniport or filter module.</p>
 </dd>
 
-### -field <b>BoundIfNetluid</b>
+### -field BoundIfNetluid
 
 <dd>
 <p>The NDIS 
@@ -124,7 +124,7 @@ typedef struct _NDIS_PROTOCOL_RESTART_PARAMETERS {
      module.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for future use.</p>
@@ -179,4 +179,4 @@ typedef struct _NDIS_PROTOCOL_RESTART_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROTOCOL_RESTART_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROTOCOL_RESTART_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

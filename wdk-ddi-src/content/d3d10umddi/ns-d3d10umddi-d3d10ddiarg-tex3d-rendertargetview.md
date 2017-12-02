@@ -56,19 +56,19 @@ typedef struct D3D10DDIARG_TEX3D_RENDERTARGETVIEW {
 ## -struct-fields
 <dl>
 
-### -field <b>MipSlice</b>
+### -field MipSlice
 
 <dd>
 <p>[in] The identifier of the MIP-map slice. </p>
 </dd>
 
-### -field <b>FirstW</b>
+### -field FirstW
 
 <dd>
 <p>[in] The identifier of the first array slice. </p>
 </dd>
 
-### -field <b>WSize</b>
+### -field WSize
 
 <dd>
 <p>[in] The number of array slices for the texture. </p>

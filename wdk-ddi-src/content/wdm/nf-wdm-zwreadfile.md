@@ -63,49 +63,49 @@ NTSTATUS ZwReadFile(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [in]
+### -param FileHandle [in]
 
 <dd>
 <p>Handle to the file object. This handle is created by a successful call to <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> or <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>. </p>
 </dd>
 
-### -param <i>Event</i> [in, optional]
+### -param Event [in, optional]
 
 <dd>
 <p>Optionally, a handle to an event object to set to the signaled state after the read operation completes. Device and intermediate drivers should set this parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ApcRoutine</i> [in, optional]
+### -param ApcRoutine [in, optional]
 
 <dd>
 <p>This parameter is reserved. Device and intermediate drivers should set this pointer to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ApcContext</i> [in, optional]
+### -param ApcContext [in, optional]
 
 <dd>
 <p>This parameter is reserved. Device and intermediate drivers should set this pointer to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>Pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested read operation. The <b>Information</b> member receives the number of bytes actually read from the file.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that receives the data read from the file.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The size, in bytes, of the buffer pointed to by <i>Buffer</i>.</p>
 </dd>
 
-### -param <i>ByteOffset</i> [in, optional]
+### -param ByteOffset [in, optional]
 
 <dd>
 <p>Pointer to a variable that specifies the starting byte offset in the file where the read operation will begin. If an attempt is made to read beyond the end of the file, <b>ZwReadFile</b> returns an error.</p>
@@ -122,7 +122,7 @@ NTSTATUS ZwReadFile(
 <p>Even when the I/O Manager is maintaining the current file position, the caller can reset this position by passing an explicit <i>ByteOffset</i> value to <b>ZwReadFile</b>. Doing this automatically changes the current file position to that <i>ByteOffset</i> value, performs the read operation, and then updates the position according to the number of bytes actually read. This technique gives the caller atomic seek-and-read service.</p>
 </dd>
 
-### -param <i>Key</i> [in, optional]
+### -param Key [in, optional]
 
 <dd>
 <p>Device and intermediate drivers should set this pointer to <b>NULL</b>. </p>

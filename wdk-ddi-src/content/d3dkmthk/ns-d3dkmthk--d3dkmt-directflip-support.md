@@ -54,7 +54,7 @@ typedef struct _D3DKMT_DIRECTFLIP_SUPPORT {
 ## -struct-fields
 <dl>
 
-### -field <b>Supported</b>
+### -field Supported
 
 <dd>
 <p>If <b>TRUE</b>, the driver supports Direct Flip operations. Otherwise, the driver does not support Direct Flip operations.</p>

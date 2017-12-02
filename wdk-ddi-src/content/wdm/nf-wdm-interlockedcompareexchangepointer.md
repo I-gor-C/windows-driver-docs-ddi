@@ -57,19 +57,19 @@ PVOID InterlockedCompareExchangePointer(
 ## -parameters
 <dl>
 
-### -param <i>Destination </i> [in, out]
+### -param Destination  [in, out]
 
 <dd>
 <p>A pointer to a PVOID value. If (*<i>Destination</i>) = <i>Comparand</i>, then the routine sets (*<i>Destination</i>) to <i>Exchange</i>.</p>
 </dd>
 
-### -param <i>Exchange </i> [in]
+### -param Exchange  [in]
 
 <dd>
 <p>Specifies the PVOID value to set (*<i>Destination</i>) to.</p>
 </dd>
 
-### -param <i>Comparand</i> [in]
+### -param Comparand [in]
 
 <dd>
 <p>Specifies the PVOID value to compare with (*<i>Destination</i>).</p>

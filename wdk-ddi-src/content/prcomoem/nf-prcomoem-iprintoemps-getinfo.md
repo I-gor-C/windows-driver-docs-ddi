@@ -58,14 +58,14 @@ STDMETHOD GetInfo(
 ## -parameters
 <dl>
 
-### -param <i>dwMode</i> 
+### -param dwMode 
 
 <dd>
 <p>Contains one of the following caller-supplied integer constants.</p>
 <p></p>
 <dl>
 
-### -param <a id="OEMGI_GETPUBLISHERINFO"></a><a id="oemgi_getpublisherinfo"></a>OEMGI_GETPUBLISHERINFO
+### -param OEMGI_GETPUBLISHERINFO
 
 <dd>
 <p>The method must indicate whether the rendering plug-in will be using "publishing mode". The <i>pBuffer</i> parameter points to a <a href="..\printoem\ns-printoem--publisherinfo.md">PUBLISHERINFO</a> structure, to be filled in by the method. For more information, see the following Remarks section.</p>
@@ -74,7 +74,7 @@ STDMETHOD GetInfo(
 <p></p>
 <dl>
 
-### -param <a id="OEMGI_GETREQUESTEDHELPERINTERFACES"></a><a id="oemgi_getrequestedhelperinterfaces"></a>OEMGI_GETREQUESTEDHELPERINTERFACES
+### -param OEMGI_GETREQUESTEDHELPERINTERFACES
 
 <dd>
 <p>The method must write the bit flag value of OEMPUBLISH_IPRINTCOREHELPER to the buffer <i>pBuffer</i> if the <a href="print.iprintoemps_publishdriverinterface">IPrintOemPS::PublishDriverInterface</a> method should be called with parameter <i>pIUnknown</i> pointing to an object that implements the <a href="print.iprintcorehelperps_interface">IPrintCoreHelperPS Interface</a>.</p>
@@ -83,7 +83,7 @@ STDMETHOD GetInfo(
 <p></p>
 <dl>
 
-### -param <a id="OEMGI_GETSIGNATURE"></a><a id="oemgi_getsignature"></a>OEMGI_GETSIGNATURE
+### -param OEMGI_GETSIGNATURE
 
 <dd>
 <p>The method must return a unique four-byte identification signature. The plug-in must also place this signature in <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structures, as described in the description of the <a href="..\printoem\ns-printoem--oemcuipparam.md">OEMCUIPPARAM</a>. structure's <b>pOEMOptItems</b> member.</p>
@@ -92,7 +92,7 @@ STDMETHOD GetInfo(
 <p></p>
 <dl>
 
-### -param <a id="OEMGI_GETVERSION"></a><a id="oemgi_getversion"></a>OEMGI_GETVERSION
+### -param OEMGI_GETVERSION
 
 <dd>
 <p>The method must return the user interface plug-in's version number as a DWORD. The version format is developer-defined.</p>
@@ -100,19 +100,19 @@ STDMETHOD GetInfo(
 </dl>
 </dd>
 
-### -param <i>pBuffer</i> 
+### -param pBuffer 
 
 <dd>
 <p>Caller-supplied pointer to memory allocated to receive the information specified by <i>dwMode</i>.</p>
 </dd>
 
-### -param <i>cbSize</i> 
+### -param cbSize 
 
 <dd>
 <p>Caller-supplied size of the buffer pointed to by <i>pBuffer</i>.</p>
 </dd>
 
-### -param <i>pcbNeeded</i> 
+### -param pcbNeeded 
 
 <dd>
 <p>Caller-supplied pointer to a location to receive the number of bytes written into the buffer pointed to by <i>pBuffer</i>.</p>
@@ -137,7 +137,7 @@ STDMETHOD GetInfo(
 
 <p>In "publishing mode", all font information to be downloaded is placed in the job header. Each font is downloaded only once and can be used for any page, allowing the job to be page-order independent. If <i>dwMode</i> is OEMGI_GETPUBLISHERINFO but the plug-in does not support publishing mode, <code>IPrintOemPS::GetInfo</code> should return E_NOTIMPL.</p>
 
-<p>For more information about creating and installing rendering plug-ins, see <a href="NULL">Customizing Microsoft's Printer Drivers</a>.</p>
+<p>For more information about creating and installing rendering plug-ins, see <a href="https://msdn.microsoft.com/b7761209-1f6f-4288-af47-4ed855c2e629">Customizing Microsoft's Printer Drivers</a>.</p>
 
 ## -requirements
 <table>

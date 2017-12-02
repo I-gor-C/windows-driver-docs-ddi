@@ -60,37 +60,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Specifies the size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>pTitle</b>
+### -field pTitle
 
 <dd>
 <p>Pointer to a null-terminated string that is used in the title bar of the message box.</p>
 </dd>
 
-### -field <b>pMessage</b>
+### -field pMessage
 
 <dd>
 <p>Pointer to a null-terminated string that contains the message to display.</p>
 </dd>
 
-### -field <b>Style</b>
+### -field Style
 
 <dd>
 <p>Specifies the contents and behavior of the message box. For a complete list of the values to which this member can be set, see the description of the <b>MessageBox</b> function in the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -field <b>dwTimeout</b>
+### -field dwTimeout
 
 <dd>
 <p>Specifies the time, in seconds, to wait for the user's response, provided that the <b>bWait</b> member is <b>TRUE</b>.</p>
 </dd>
 
-### -field <b>bWait</b>
+### -field bWait
 
 <dd>
 <p>Specifies whether the <b>SplPromptUIInUsersSession</b> function should wait for a user's response. If <b>bWait</b> is <b>TRUE</b>, <b>SplPromptUIInUsersSession</b> does not return until either the user responds or the time-out interval elapses. If <b>dwTimeout</b> is zero, <b>SplPromptUIInUsersSession</b> does not return until the user responds. If <b>bWait</b> is <b>FALSE</b>, the function returns immediately with *<i>pResponse</i> set to IDASYNC. </p>

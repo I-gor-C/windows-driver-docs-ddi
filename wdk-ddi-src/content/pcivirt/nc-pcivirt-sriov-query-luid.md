@@ -60,7 +60,7 @@ typedef SRIOV_QUERY_LUID *PSRIOV_QUERY_LUID;
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to a driver-defined context.
@@ -68,7 +68,7 @@ typedef SRIOV_QUERY_LUID *PSRIOV_QUERY_LUID;
                 </p>
 </dd>
 
-### -param <i>Luid</i> [out]
+### -param Luid [out]
 
 <dd>
 <p>A pointer to the local unique

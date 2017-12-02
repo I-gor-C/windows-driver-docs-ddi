@@ -56,7 +56,7 @@ NTSTATUS  D3DKMTSetVidPnSourceOwner2(
 ## -parameters
 <dl>
 
-### -param <i>D3dkmt_setvidpnsourceowner2</i> [in]
+### -param D3dkmt_setvidpnsourceowner2 [in]
 
 <dd>
 <p>Indicates the source owner.</p>

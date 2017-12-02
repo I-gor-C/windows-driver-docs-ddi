@@ -58,31 +58,31 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>PresentationStart</b>
+### -field PresentationStart
 
 <dd>
 <p>Specifies the start point for the rate in presentation time units.</p>
 </dd>
 
-### -field <b>Duration</b>
+### -field Duration
 
 <dd>
 <p>Specifies the duration of the rate in presentation time units.</p>
 </dd>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>A structure of type <a href="stream.kspin_interface">KSPIN_INTERFACE</a> that specifies either the interface used in the connection this rate request is being sent to, or the interface of a related connection. This allows the time units to be interpreted by the pin.</p>
 </dd>
 
-### -field <b>Rate</b>
+### -field Rate
 
 <dd>
 <p>Specifies the rate in terms of 1/10th percentage points, where 1000 is the nominal 1.0 rate, 500 is 0.5 rate, and so on. Negative numbers indicate reverse rates.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Possible flag values are listed in the following table.</p>

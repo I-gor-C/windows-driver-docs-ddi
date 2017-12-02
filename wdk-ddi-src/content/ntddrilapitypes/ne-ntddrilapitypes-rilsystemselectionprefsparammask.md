@@ -7,7 +7,7 @@ old-location: netvista\rilsystemselectionprefsparammask.htm
 old-project: netvista
 ms.assetid: 69560c05-8a54-4a67-a441-2b3c2ec4c332
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef enum _RILSYSTEMSELECTIONPREFSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_SSP_SYSTEMTYPES"></a><a id="ril_param_ssp_systemtypes"></a><b>RIL_PARAM_SSP_SYSTEMTYPES</b>
+### -field RIL_PARAM_SSP_SYSTEMTYPES
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSP_MODE"></a><a id="ril_param_ssp_mode"></a><b>RIL_PARAM_SSP_MODE</b>
+### -field RIL_PARAM_SSP_MODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSP_PLMNINFO"></a><a id="ril_param_ssp_plmninfo"></a><b>RIL_PARAM_SSP_PLMNINFO</b>
+### -field RIL_PARAM_SSP_PLMNINFO
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSP_ROAMINGMODE"></a><a id="ril_param_ssp_roamingmode"></a><b>RIL_PARAM_SSP_ROAMINGMODE</b>
+### -field RIL_PARAM_SSP_ROAMINGMODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSP_ACQUISITIONORDERSIZE"></a><a id="ril_param_ssp_acquisitionordersize"></a><b>RIL_PARAM_SSP_ACQUISITIONORDERSIZE</b>
+### -field RIL_PARAM_SSP_ACQUISITIONORDERSIZE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSP_ACQUISITIONORDER"></a><a id="ril_param_ssp_acquisitionorder"></a><b>RIL_PARAM_SSP_ACQUISITIONORDER</b>
+### -field RIL_PARAM_SSP_ACQUISITIONORDER
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSP_ALL"></a><a id="ril_param_ssp_all"></a><b>RIL_PARAM_SSP_ALL</b>
+### -field RIL_PARAM_SSP_ALL
 
 <dd></dd>
 </dl>

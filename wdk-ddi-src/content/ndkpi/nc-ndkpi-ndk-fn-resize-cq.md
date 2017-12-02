@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_resize_cq.htm
 old-project: netvista
 ms.assetid: DFAEAA42-B1B5-43AA-A573-8434FAF3B446
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ NTSTATUS NdkResizeCq(
 ## -parameters
 <dl>
 
-### -param <i>pNdkCq</i> [in]
+### -param pNdkCq [in]
 
 <dd>
 <p>
 A pointer to an NDK completion queue (CQ) object (<a href="..\ndkpi\ns-ndkpi--ndk-cq.md">NDK_CQ</a>).</p>
 </dd>
 
-### -param <i>CqDepth</i> [in]
+### -param CqDepth [in]
 
 <dd>
 <p>
 The new number of completion entries that the CQ can hold. The CQ size must be  be less than or equal to the value that is specified in the <b>MaxCqDepth</b> member in the <a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a> structure.</p>
 </dd>
 
-### -param <i>RequestCompletion</i> [in]
+### -param RequestCompletion [in]
 
 <dd>
 <p>A pointer to an <i>NdkRequestCompletion</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-request-completion.md">NDK_FN_REQUEST_COMPLETION</a>) function.</p>
 </dd>
 
-### -param <i>RequestContext</i> [in, optional]
+### -param RequestContext [in, optional]
 
 <dd>
 <p>A context value to pass to the <i>Context</i> parameter of the  callback function that is specified in the <i>RequestCompletion</i> parameter.</p>
@@ -168,9 +168,9 @@ The new number of completion entries that the CQ can hold. The CQ size must be  
 <a href="..\ndkpi\nc-ndkpi-ndk-fn-request-completion.md">NDK_FN_REQUEST_COMPLETION</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Object Lifetime Requirements</a>
+<a href="netvista.ndkpi_object_lifetime_requirements">NDKPI Object Lifetime Requirements</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_RESIZE_CQ callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_RESIZE_CQ callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

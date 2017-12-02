@@ -59,33 +59,33 @@ typedef struct _UFS_POWER_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>Specifies the length, in bytes, of this descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorIDN</b>
+### -field bDescriptorIDN
 
 <dd>
 <p>Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_POWER_IDN</b>.</p>
 </dd>
 
-### -field <b>wActiveICCLevelsVCC</b>
+### -field wActiveICCLevelsVCC
 
 <dd>
 <p>Specifies the maximum VCC current value for
 each UFS_bActiveICCLevel, based on the index value.</p>
 </dd>
 
-### -field <b>wActiveICCLevelsVCCQ</b>
+### -field wActiveICCLevelsVCCQ
 
 <dd>
 <p>Specifies the maximum VCCQ current value for
 each UFS_bActiveICCLevel, based on the index value.</p>
 </dd>
 
-### -field <b>wActiveICCLevelsVCCQ2</b>
+### -field wActiveICCLevelsVCCQ2
 
 <dd>
 <p>Specifies the maximum VCCQ current value for

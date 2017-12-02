@@ -63,61 +63,61 @@ typedef struct _MSiSCSI_InitiatorLoginStatistics {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueAdapterId</b>
+### -field UniqueAdapterId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="..\iscsimgt\ns-iscsimgt--msiscsi-hbainformation.md">MSiSCSI_HBAInformation</a> structure.</p>
 </dd>
 
-### -field <b>LoginAcceptRsps</b>
+### -field LoginAcceptRsps
 
 <dd>
 <p>The number of login accept responses. </p>
 </dd>
 
-### -field <b>LoginOtherFailRsps</b>
+### -field LoginOtherFailRsps
 
 <dd>
 <p>The number of failed responses.</p>
 </dd>
 
-### -field <b>LoginRedirectRsps</b>
+### -field LoginRedirectRsps
 
 <dd>
 <p>The number of redirect responses.</p>
 </dd>
 
-### -field <b>LoginAuthFailRsps</b>
+### -field LoginAuthFailRsps
 
 <dd>
 <p>The number of logon responses that failed because the initiator and target did not have compatible authentication algorithms.</p>
 </dd>
 
-### -field <b>LoginAuthenticateFails</b>
+### -field LoginAuthenticateFails
 
 <dd>
 <p>The number of logons that failed because of a target authentication failure (the initiator and target did not have matching credentials).</p>
 </dd>
 
-### -field <b>LoginNegotiateFails</b>
+### -field LoginNegotiateFails
 
 <dd>
 <p>The number of logons that failed because of negotiation failures.</p>
 </dd>
 
-### -field <b>LogoutNormals</b>
+### -field LogoutNormals
 
 <dd>
 <p>The number of logoff PDUs with a reason code of 0.</p>
 </dd>
 
-### -field <b>LogoutOtherCodes</b>
+### -field LogoutOtherCodes
 
 <dd>
 <p>The number of logoff PDUs with a status code other than 0.</p>
 </dd>
 
-### -field <b>LoginFailures</b>
+### -field LoginFailures
 
 <dd>
 <p>The number of times that a logon attempt by the initiator has failed.</p>

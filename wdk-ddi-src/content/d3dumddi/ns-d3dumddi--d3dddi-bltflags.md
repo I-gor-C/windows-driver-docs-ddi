@@ -77,88 +77,88 @@ typedef struct _D3DDDI_BLTFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Point</b>
+### -field Point
 
 <dd>
 <p>A UINT value that specifies whether to use point filtering in the bit-block transfer. Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Linear</b>
+### -field Linear
 
 <dd>
 <p>A UINT value that specifies whether to use linear filtering in the bit-block transfer. Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>SrcColorKey</b>
+### -field SrcColorKey
 
 <dd>
 <p>A UINT value that specifies whether to perform source color-keying by using the value in the <b>ColorKey</b> member. That is, any pixel in the source surface that matches the color key should not be copied to the destination surface, and all of the source pixels that do not match the color key should be copied. </p>
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>DstColorKey</b>
+### -field DstColorKey
 
 <dd>
 <p>A UINT value that specifies whether to perform destination color-keying by using the value in the <b>ColorKey</b> member. That is, any pixel in the destination surface that matches the color key should be replaced with the corresponding pixel from the source surface, and all of the destination pixels that do not match the color key should not be replaced.</p>
 <p>Setting this member is equivalent to setting the fourth bit of the 32-bit <b>Value</b> member (0x00000008).</p>
 </dd>
 
-### -field <b>MirrorLeftRight</b>
+### -field MirrorLeftRight
 
 <dd>
 <p>A UINT value that specifies whether the contents of the source surface are flipped horizontally along the center axis in the bitblt to the destination surface. That is, contents on the left side of the source surface are copied to the right side of the destination surface, and vice versa.</p>
 <p>Setting this member is equivalent to setting the fifth bit of the 32-bit <b>Value</b> member (0x00000010).</p>
 </dd>
 
-### -field <b>MirrorUpDown</b>
+### -field MirrorUpDown
 
 <dd>
 <p>A UINT value that specifies whether the contents of the source surface are flipped vertically along the center axis in the bitblt to the destination surface. That is, the contents on the top of the source surface are copied to the bottom of the destination surface, and vice versa.</p>
 <p>Setting this member is equivalent to setting the sixth bit of the 32-bit <b>Value</b> member (0x00000020).</p>
 </dd>
 
-### -field <b>LinearToSrgb</b>
+### -field LinearToSrgb
 
 <dd>
 <p>A UINT value that specifies whether to convert the linear-formatted source to sRGB format during the bitblt operation. sRGB format is gamma corrected. For more information about sRGB format, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=10112">sRGB</a> website.</p>
 <p>Setting this member is equivalent to setting the seventh bit of the 32-bit <b>Value</b> member (0x00000040).</p>
 </dd>
 
-### -field <b>Rotate</b>
+### -field Rotate
 
 <dd>
 <p>A UINT value that specifies whether to rotate the source during the bitblt operation. </p>
 <p>Setting this member is equivalent to setting the eighth bit of the 32-bit <b>Value</b> member (0x00000080).</p>
 </dd>
 
-### -field <b>BeginPresentToDwm</b>
+### -field BeginPresentToDwm
 
 <dd>
 <p>A UINT value that specifies whether the Microsoft Direct3D runtime begins a DWM present operation during the bitblt operation. For more information about <b>BeginPresentToDwm</b>, see Remarks.</p>
 <p>Setting this member is equivalent to setting the ninth bit of the 32-bit <b>Value</b> member (0x00000100).</p>
 </dd>
 
-### -field <b>ContinuePresentToDwm</b>
+### -field ContinuePresentToDwm
 
 <dd>
 <p>A UINT value that specifies whether the Direct3D runtime continues a DWM present operation during the bitblt operation. For more information about <b>ContinuePresentToDwm</b>, see Remarks.</p>
 <p>Setting this member is equivalent to setting the tenth bit of the 32-bit <b>Value</b> member (0x00000200).</p>
 </dd>
 
-### -field <b>EndPresentToDwm</b>
+### -field EndPresentToDwm
 
 <dd>
 <p>A UINT value that specifies whether the Direct3D runtime ends a DWM present operation during the bitblt operation. For more information about <b>EndPresentToDwm</b>, see Remarks.</p>
 <p>Setting this member is equivalent to setting the eleventh bit of the 32-bit <b>Value</b> member (0x00000400).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 21 bits (0xFFFFF800) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Discard</b>
+### -field Discard
 
 <dd>
 <p>Indicates that the user-mode display driver can discard previous contents of the entire resource. The driver can take advantage of this capability to optimize performance and memory usage.</p>
@@ -167,7 +167,7 @@ typedef struct _D3DDDI_BLTFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>NoOverwrite</b>
+### -field NoOverwrite
 
 <dd>
 <p>Indicates that the caller guarantees that the portion of the surface that is being written to with new data is not currently being referenced or accessed by any previous render operation. The driver can take advantage of this capability to optimize performance and memory usage.</p>
@@ -176,7 +176,7 @@ typedef struct _D3DDDI_BLTFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Tileable</b>
+### -field Tileable
 
 <dd>
 <p>For tile-based deferred rendering, indicates that a copy operation can operate on only the currently processed tile in the source or destination resource, and the scene does not have to be flushed in all tiles.</p>
@@ -185,7 +185,7 @@ typedef struct _D3DDDI_BLTFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. </p>
@@ -193,7 +193,7 @@ typedef struct _D3DDDI_BLTFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that is contained in D3DDDI_BLTFLAGS that can hold one 32-bit value that identifies the type of bitblt to perform.</p>

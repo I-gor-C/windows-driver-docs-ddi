@@ -57,19 +57,19 @@ NTSTATUS ObGetObjectSecurity(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>Pointer to the object.</p>
 </dd>
 
-### -param <i>SecurityDescriptor</i> [out]
+### -param SecurityDescriptor [out]
 
 <dd>
 <p>Pointer to a caller-supplied variable that this routine sets to the address of a buffer containing the <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> for the given object. If the given object has no security descriptor, this variable is set to <b>NULL</b> on return from <b>ObGetObjectSecurity</b>.</p>
 </dd>
 
-### -param <i>MemoryAllocated</i> [out]
+### -param MemoryAllocated [out]
 
 <dd>
 <p>Pointer to a caller-supplied variable that this routine sets to <b>TRUE</b> if it allocated a buffer to contain the security descriptor. </p>

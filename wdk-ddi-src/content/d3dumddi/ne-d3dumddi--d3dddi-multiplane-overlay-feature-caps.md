@@ -61,49 +61,49 @@ typedef enum _D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_ROTATION"></a><a id="d3dddi_multiplane_overlay_feature_caps_rotation"></a><b>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_ROTATION</b>
+### -field D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_ROTATION
 
 <dd>
 <p>The overlay plane can rotate the data 90, 180, and 270 degrees.</p>
 </dd>
 
-### -field <a id="D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_VERTICAL_FLIP"></a><a id="d3dddi_multiplane_overlay_feature_caps_vertical_flip"></a><b>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_VERTICAL_FLIP</b>
+### -field D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_VERTICAL_FLIP
 
 <dd>
 <p>The overlay plane can flip the data vertically, making it appear upside-down.</p>
 </dd>
 
-### -field <a id="D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HORIZONTAL_FLIP"></a><a id="d3dddi_multiplane_overlay_feature_caps_horizontal_flip"></a><b>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HORIZONTAL_FLIP</b>
+### -field D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HORIZONTAL_FLIP
 
 <dd>
 <p>The overlay plane can flip the data horizontally, making it appear as a right-to-left mirror image.</p>
 </dd>
 
-### -field <a id="D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_DEINTERLACE"></a><a id="d3dddi_multiplane_overlay_feature_caps_deinterlace"></a><b>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_DEINTERLACE</b>
+### -field D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_DEINTERLACE
 
 <dd>
 <p>Reserved for system use. The user-mode display driver should not use this value.</p>
 </dd>
 
-### -field <a id="D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_RGB"></a><a id="d3dddi_multiplane_overlay_feature_caps_rgb"></a><b>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_RGB</b>
+### -field D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_RGB
 
 <dd>
 <p>The overlay plane supports RGB format.</p>
 </dd>
 
-### -field <a id="D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_YUV"></a><a id="d3dddi_multiplane_overlay_feature_caps_yuv"></a><b>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_YUV</b>
+### -field D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_YUV
 
 <dd>
 <p>The overlay plane supports YUV format.</p>
 </dd>
 
-### -field <a id="D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_BILINEAR_FILTER"></a><a id="d3dddi_multiplane_overlay_feature_caps_bilinear_filter"></a><b>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_BILINEAR_FILTER</b>
+### -field D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_BILINEAR_FILTER
 
 <dd>
 <p>The overlay plane supports stretching and shrinking using bilinear filtering.</p>
 </dd>
 
-### -field <a id="D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HIGH_FILTER"></a><a id="d3dddi_multiplane_overlay_feature_caps_high_filter"></a><b>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HIGH_FILTER</b>
+### -field D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HIGH_FILTER
 
 <dd>
 <p>The overlay plane supports stretching and shrinking using filtering that is better than bilinear filtering.</p>

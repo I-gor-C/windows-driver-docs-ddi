@@ -57,13 +57,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Specifies the capabilities of the TV audio device. The minidriver returns the capabilities of the TV audio device by setting this member to one or more (logically ORed) values that are defined in <i>ksmedia.h</i>:</p>
@@ -116,13 +116,13 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>InputMedium</b>
+### -field InputMedium
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>OutputMedium</b>
+### -field OutputMedium
 
 <dd>
 <p>Reserved for system use.</p>

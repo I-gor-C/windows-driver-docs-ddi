@@ -56,7 +56,7 @@ typedef struct _DXVA_ConfigAlphaLoad {
 ## -struct-fields
 <dl>
 
-### -field <b>dwFunction</b>
+### -field dwFunction
 
 <dd>
 <p>Indicates the type of query or response when using probing and locking commands. The most significant 24 bits of <b>dwFunction</b> is the <a href="https://msdn.microsoft.com/bfb1a98e-b9f0-4baa-b486-b2ff33a8bac5">DXVA_ConfigQueryOrReplyFlag</a> variable.</p>
@@ -64,13 +64,13 @@ typedef struct _DXVA_ConfigAlphaLoad {
 <p>The least significant 8 bits of <b>dwFunction</b> is the <a href="https://msdn.microsoft.com/6db9fa71-7bc2-4eb6-afcb-b16df48f7e8b">bDXVA_Func variable</a> that, in this case, is equal to 2.</p>
 </dd>
 
-### -field <b>dwReservedBits</b>
+### -field dwReservedBits
 
 <dd>
 <p>Reserved bits used for packing and alignment. These bits are zero.</p>
 </dd>
 
-### -field <b>bConfigDataType</b>
+### -field bConfigDataType
 
 <dd>
 <p>Specifies the type of alpha-blend data to be used. This member can be set to one of the following values.</p>

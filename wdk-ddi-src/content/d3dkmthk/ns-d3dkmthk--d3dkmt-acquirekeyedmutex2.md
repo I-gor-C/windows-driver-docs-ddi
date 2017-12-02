@@ -59,37 +59,37 @@ typedef struct _D3DKMT_ACQUIREKEYEDMUTEX2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hKeyedMutex</b>
+### -field hKeyedMutex
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a handle to the keyed mutex.</p>
 </dd>
 
-### -field <b>Key</b>
+### -field Key
 
 <dd>
 <p>[in] The key value to acquire.</p>
 </dd>
 
-### -field <b>pTimeout</b>
+### -field pTimeout
 
 <dd>
 <p>[in] An NT-style timeout value.</p>
 </dd>
 
-### -field <b>FenceValue</b>
+### -field FenceValue
 
 <dd>
 <p>[out] The current fence value of the GPU sync object.</p>
 </dd>
 
-### -field <b>pPrivateRuntimeData</b>
+### -field pPrivateRuntimeData
 
 <dd>
 <p>[out] A pointer to a buffer to copy private data to.</p>
 </dd>
 
-### -field <b>PrivateRuntimeDataSize</b>
+### -field PrivateRuntimeDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the <b>pPrivateRuntimeData</b> member.</p>

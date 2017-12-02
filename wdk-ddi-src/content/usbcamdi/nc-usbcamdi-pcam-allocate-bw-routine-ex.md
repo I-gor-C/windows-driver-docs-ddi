@@ -62,31 +62,31 @@ NTSTATUS CamAllocateBandwidthEx(
 ## -parameters
 <dl>
 
-### -param <i>BusDeviceObject</i> 
+### -param BusDeviceObject 
 
 <dd>
 <p>Pointer to the camera minidriver's device object created by the USB hub.</p>
 </dd>
 
-### -param <i>DeviceContext</i> 
+### -param DeviceContext 
 
 <dd>
 <p>Pointer to the camera minidriver's device context.</p>
 </dd>
 
-### -param <i>RawFrameLength</i> 
+### -param RawFrameLength 
 
 <dd>
 <p>Specifies the size, in bytes, of the raw frame data from the packet stream.</p>
 </dd>
 
-### -param <i>Format</i> 
+### -param Format 
 
 <dd>
 <p>Pointer to a <a href="stream.ks_dataformat_videoinfoheader">KS_DATAFORMAT_VIDEOINFOHEADER</a> structure associated with this stream.</p>
 </dd>
 
-### -param <i>StreamNumber</i> 
+### -param StreamNumber 
 
 <dd>
 <p>Specifies the stream number.</p>

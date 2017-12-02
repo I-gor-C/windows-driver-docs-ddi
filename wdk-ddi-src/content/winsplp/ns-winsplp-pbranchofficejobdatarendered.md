@@ -61,43 +61,43 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the 64-bit size of the job.</p>
 </dd>
 
-### -field <b>ICMMethod</b>
+### -field ICMMethod
 
 <dd>
 <p>Describes the <b>DWORD</b> type member <b>ICMMethod</b>.</p>
 </dd>
 
-### -field <b>Color</b>
+### -field Color
 
 <dd>
 <p>Describes the <b>short</b> type member <b>Color</b>.</p>
 </dd>
 
-### -field <b>PrintQuality</b>
+### -field PrintQuality
 
 <dd>
 <p>Describes the <b>short</b> type member <b>PrintQuality</b>.</p>
 </dd>
 
-### -field <b>YResolution</b>
+### -field YResolution
 
 <dd>
 <p>Describes the <b>short</b> type member <b>YResolution</b>.</p>
 </dd>
 
-### -field <b>Copies</b>
+### -field Copies
 
 <dd>
 <p>Describes the <b>short</b> type member <b>Copies</b>.</p>
 </dd>
 
-### -field <b>TTOption</b>
+### -field TTOption
 
 <dd>
 <p>Describes the <b>short</b> type member <b>TTOption</b>.</p>

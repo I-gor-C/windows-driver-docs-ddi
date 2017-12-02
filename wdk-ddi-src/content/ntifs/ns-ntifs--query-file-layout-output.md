@@ -7,7 +7,7 @@ old-location: ifsk\query_file_layout_output.htm
 old-project: ifsk
 ms.assetid: 204893BE-8B89-4BE4-BEDB-BF28DBAAACE9
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: QUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT, *PQUERY_FILE_LAYOUT_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _QUERY_FILE_LAYOUT_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>FileEntryCount</b>
+### -field FileEntryCount
 
 <dd>
 <p>The number of file entries that follow this structure.</p>
 </dd>
 
-### -field <b>FirstFileOffset</b>
+### -field FirstFileOffset
 
 <dd>
 <p>The offset in the user buffer for the first file entry.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Indicates the format of layout entries returned. Can be 0 or the following:</p>
@@ -81,7 +81,7 @@ typedef struct _QUERY_FILE_LAYOUT_OUTPUT {
 <tr>
 <td width="40%"><a id="QUERY_FILE_LAYOUT_SINGLE_INSTANCED"></a><a id="query_file_layout_single_instanced"></a><dl>
 
-### -field <b>QUERY_FILE_LAYOUT_SINGLE_INSTANCED</b>
+### -field QUERY_FILE_LAYOUT_SINGLE_INSTANCED
 
 </dl>
 </td>
@@ -93,7 +93,7 @@ typedef struct _QUERY_FILE_LAYOUT_OUTPUT {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
@@ -163,4 +163,4 @@ typedef struct _QUERY_FILE_LAYOUT_OUTPUT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20QUERY_FILE_LAYOUT_OUTPUT structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20QUERY_FILE_LAYOUT_OUTPUT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

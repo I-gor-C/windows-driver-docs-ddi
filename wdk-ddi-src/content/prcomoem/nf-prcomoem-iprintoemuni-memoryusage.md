@@ -56,13 +56,13 @@ HRESULT MemoryUsage(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pMemoryUsage</i> 
+### -param pMemoryUsage 
 
 <dd>
 <p>Caller-supplied pointer to an <a href="..\printoem\nf-printoem-oemmemoryusage.md">OEMMEMORYUSAGE</a> structure.</p>

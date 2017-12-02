@@ -76,139 +76,139 @@ typedef struct _HDAUDIO_BUS_INTERFACE_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size, in bytes, of the HDAUDIO_BUS_INTERFACE_V2 structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the baseline HD Audio DDI.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to interface-specific context information.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to a driver-supplied routine that increments the reference count for the interface.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to a driver-supplied routine that decrements the reference count for the interface.</p>
 </dd>
 
-### -field <b>TransferCodecVerbs</b>
+### -field TransferCodecVerbs
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-ptransfer-codec-verbs.md">TransferCodecVerbs</a> routine.</p>
 </dd>
 
-### -field <b>AllocateCaptureDmaEngine</b>
+### -field AllocateCaptureDmaEngine
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate-capture-dma-engine.md">AllocateCaptureDmaEngine</a> routine.</p>
 </dd>
 
-### -field <b>AllocateRenderDmaEngine</b>
+### -field AllocateRenderDmaEngine
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate-render-dma-engine.md">AllocateRenderDmaEngine</a> routine.</p>
 </dd>
 
-### -field <b>ChangeBandwidthAllocation</b>
+### -field ChangeBandwidthAllocation
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-pchange-bandwidth-allocation.md">ChangeBandwidthAllocation</a> routine.</p>
 </dd>
 
-### -field <b>AllocateDmaBuffer</b>
+### -field AllocateDmaBuffer
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate-dma-buffer.md">AllocateDmaBuffer</a> routine.</p>
 </dd>
 
-### -field <b>FreeDmaBuffer</b>
+### -field FreeDmaBuffer
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-pfree-dma-buffer.md">FreeDmaBuffer</a> routine.</p>
 </dd>
 
-### -field <b>FreeDmaEngine</b>
+### -field FreeDmaEngine
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-pfree-dma-engine.md">FreeDmaEngine</a> routine.</p>
 </dd>
 
-### -field <b>SetDmaEngineState</b>
+### -field SetDmaEngineState
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-pset-dma-engine-state.md">SetDmaEngineState</a> routine.</p>
 </dd>
 
-### -field <b>GetWallClockRegister</b>
+### -field GetWallClockRegister
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-pget-wall-clock-register.md">GetWallClockRegister</a> routine.</p>
 </dd>
 
-### -field <b>GetLinkPositionRegister</b>
+### -field GetLinkPositionRegister
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-pget-link-position-register.md">GetLinkPositionRegister</a> routine.</p>
 </dd>
 
-### -field <b>RegisterEventCallback</b>
+### -field RegisterEventCallback
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-pregister-event-callback.md">RegisterEventCallback</a> routine.</p>
 </dd>
 
-### -field <b>UnregisterEventCallback</b>
+### -field UnregisterEventCallback
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-punregister-event-callback.md">UnregisterEventCallback</a> routine.</p>
 </dd>
 
-### -field <b>GetDeviceInformation</b>
+### -field GetDeviceInformation
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-pget-device-information.md">GetDeviceInformation</a> routine.</p>
 </dd>
 
-### -field <b>GetResourceInformation</b>
+### -field GetResourceInformation
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-pget-resource-information.md">GetResourceInformation</a> routine.</p>
 </dd>
 
-### -field <b>AllocateDmaBufferWithNotification</b>
+### -field AllocateDmaBufferWithNotification
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate-dma-buffer-with-notification.md">AllocateDmaBufferWithNotification</a> routine.</p>
 </dd>
 
-### -field <b>FreeDmaBufferWithNotification</b>
+### -field FreeDmaBufferWithNotification
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-pfree-dma-buffer-with-notification.md">FreeDmaBufferWithNotification</a> routine.</p>
 </dd>
 
-### -field <b>RegisterNotificationEvent</b>
+### -field RegisterNotificationEvent
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-pregister-notification-event.md">RegisterNotificationEvent</a> routine.</p>
 </dd>
 
-### -field <b>UnregisterNotificationEvent</b>
+### -field UnregisterNotificationEvent
 
 <dd>
 <p>A function pointer to the <a href="..\hdaudio\nc-hdaudio-punregister-notification-event.md">UnregisterNotificationEvent</a> routine.</p>

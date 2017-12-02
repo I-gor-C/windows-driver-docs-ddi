@@ -55,13 +55,13 @@ typedef struct _PEP_PPM_QUERY_IDLE_STATES_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>[in] The number of elements in the <b>IdleStates</b> array. The Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) previously sent the PEP a <a href="kernel.pep_notify_ppm_query_capabilities">PEP_NOTIFY_PPM_QUERY_CAPABILITIES</a> notification to determine this number.</p>
 </dd>
 
-### -field <b>IdleStates</b>
+### -field IdleStates
 
 <dd>
 <p>[out] The first element in an array of <a href="..\pepfx\ns-pepfx--pep-processor-idle-state-v2.md">PEP_PROCESSOR_IDLE_STATE_V2</a> structures that describe the processor idle states. If this array contains more than one element, the addition array elements follow the end of the <b>PEP_PPM_QUERY_IDLE_STATES_V2</b> structure.</p>

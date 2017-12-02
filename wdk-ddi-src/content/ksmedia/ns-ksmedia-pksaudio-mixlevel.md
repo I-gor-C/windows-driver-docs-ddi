@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Mute</b>
+### -field Mute
 
 <dd>
 <p>Specifies whether the input channel is muted (not mixed) as it flows into the output channel. A value of <b>TRUE</b> indicates that the channel is muted. A value of <b>FALSE</b> indicates that the channel's mix level is specified by the <b>Level</b> member.</p>
 </dd>
 
-### -field <b>Level</b>
+### -field Level
 
 <dd>
 <p>Specifies the mix level that is applied to the input channel as it flows into the output channel. For more information, see the following Remarks section.</p>

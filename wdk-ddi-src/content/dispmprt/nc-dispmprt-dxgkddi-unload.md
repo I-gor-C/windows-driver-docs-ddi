@@ -57,7 +57,7 @@ VOID DxgkDdiUnload(
 ## -parameters
 <dl>
 
-### -param <i></i> 
+### -param  
 
 <dd>
 <p>None</p>

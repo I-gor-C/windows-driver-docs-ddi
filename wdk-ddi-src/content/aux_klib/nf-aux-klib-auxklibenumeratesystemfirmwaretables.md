@@ -57,7 +57,7 @@ NTSTATUS AuxKlibEnumerateSystemFirmwareTables(
 ## -parameters
 <dl>
 
-### -param <i>FirmwareTableProviderSignature</i> [in]
+### -param FirmwareTableProviderSignature [in]
 
 <dd>
 <p>The identifier of the firmware table provider to which the query is to be directed. This parameter can be one of the following values.</p>
@@ -94,19 +94,19 @@ NTSTATUS AuxKlibEnumerateSystemFirmwareTables(
 <p> </p>
 </dd>
 
-### -param <i>FirmwareTableBuffer</i> [out, optional]
+### -param FirmwareTableBuffer [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer to which the routine writes the list of firmware tables. If this parameter is NULL, the value written to *<i>ReturnLength</i> is the required buffer size. For more information about the contents of this buffer, see the Remarks section.</p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>The size, in bytes, of the buffer pointed to by <i>FirmwareTableBuffer</i>.</p>
 </dd>
 
-### -param <i>ReturnLength</i> [out, optional]
+### -param ReturnLength [out, optional]
 
 <dd>
 <p>A pointer to a location to which the routine writes the number of bytes of data written to the buffer pointed to by <i>FirmwareTableBuffer</i>.</p>

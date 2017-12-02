@@ -56,11 +56,11 @@ DWORD WINAPI WaitForPrinterChange(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> 
+### -param hPrinter 
 
 <dd></dd>
 
-### -param <i>Flags</i> 
+### -param Flags 
 
 <dd></dd>
 </dl>

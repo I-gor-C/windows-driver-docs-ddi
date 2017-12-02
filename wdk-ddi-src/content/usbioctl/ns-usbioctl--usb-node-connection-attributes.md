@@ -57,19 +57,19 @@ typedef struct _USB_NODE_CONNECTION_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>ConnectionIndex</b>
+### -field ConnectionIndex
 
 <dd>
 <p>On input to the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-attributes.md">IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES</a> I/O control request, this member contains the number of the port.</p>
 </dd>
 
-### -field <b>ConnectionStatus</b>
+### -field ConnectionStatus
 
 <dd>
 <p>On output from the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-attributes.md">IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES</a> I/O control request, this member contains a <a href="..\usbioctl\ne-usbioctl--usb-connection-status.md">USB_CONNECTION_STATUS</a> enumerator that indicates the connection status.</p>
 </dd>
 
-### -field <b>PortAttributes</b>
+### -field PortAttributes
 
 <dd>
 <p>On output from the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-attributes.md">IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES</a> I/O control request, this member contains the Microsoft-extended port attributes.</p>

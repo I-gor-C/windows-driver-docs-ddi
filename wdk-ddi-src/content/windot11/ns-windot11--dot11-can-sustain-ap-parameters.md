@@ -7,7 +7,7 @@ old-location: netvista\dot11_can_sustain_ap_parameters.htm
 old-project: netvista
 ms.assetid: 8d7995f3-6cc1-4f3c-a016-b31dc69ddd7f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_CAN_SUSTAIN_AP_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef struct _DOT11_CAN_SUSTAIN_AP_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_CAN_SUSTAIN_AP_PARAMETERS structure. This member is
@@ -66,19 +66,19 @@ typedef struct _DOT11_CAN_SUSTAIN_AP_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="Type"></a><a id="type"></a><a id="TYPE"></a>Type
+### -field Type
 
 <dd>
 <p>This member must be set to NDIS_OBJECT_TYPE_DEFAULT.</p>
 </dd>
 
-### -field <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a>Revision
+### -field Revision
 
 <dd>
 <p>This member must be set to DOT11_CAN_SUSTAIN_AP_PARAMETERS_REVISION_1.</p>
 </dd>
 
-### -field <a id="Size"></a><a id="size"></a><a id="SIZE"></a>Size
+### -field Size
 
 <dd>
 <p>This member must be set to 
@@ -89,7 +89,7 @@ typedef struct _DOT11_CAN_SUSTAIN_AP_PARAMETERS {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>ulReason</b>
+### -field ulReason
 
 <dd>
 <p>A ULONG value that specifies the reason why the NIC can sustain the AP. An IHV can supply the
@@ -98,13 +98,13 @@ typedef struct _DOT11_CAN_SUSTAIN_AP_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="DOT11_CAN_SUSTAIN_AP_REASON_IHV_END"></a><a id="dot11_can_sustain_ap_reason_ihv_end"></a>DOT11_CAN_SUSTAIN_AP_REASON_IHV_END
+### -field DOT11_CAN_SUSTAIN_AP_REASON_IHV_END
 
 <dd>
 <p>The end value of possible IHV-specified reasons.</p>
 </dd>
 
-### -field <a id="DOT11_CAN_SUSTAIN_AP_REASON_IHV_START"></a><a id="dot11_can_sustain_ap_reason_ihv_start"></a>DOT11_CAN_SUSTAIN_AP_REASON_IHV_START
+### -field DOT11_CAN_SUSTAIN_AP_REASON_IHV_START
 
 <dd>
 <p>The start value of possible IHV-specified reasons.</p>
@@ -157,4 +157,4 @@ typedef struct _DOT11_CAN_SUSTAIN_AP_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CAN_SUSTAIN_AP_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CAN_SUSTAIN_AP_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

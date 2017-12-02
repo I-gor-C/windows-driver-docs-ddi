@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceconfigurerequestdispatching.htm
 old-project: wdf
 ms.assetid: aba4cccd-267d-48cc-a6ff-be19802adfdc
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceConfigureRequestDispatching
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ NTSTATUS WdfDeviceConfigureRequestDispatching(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>Supplies a handle to a framework device object.</p>
 </dd>
 
-### -param <i>Queue</i> [in]
+### -param Queue [in]
 
 <dd>
 <p>Supplies a handle to a framework queue object.</p>
 </dd>
 
-### -param <i>RequestType</i> [in]
+### -param RequestType [in]
 
 <dd>
 <p>Supplies a <a href="..\wudfddi_types\ne-wudfddi-types--wdf-request-type.md">WDF_REQUEST_TYPE</a>-typed enumerator that identifies the type of request to be queued. The only valid enumerators are: </p>
@@ -195,4 +195,4 @@ NTSTATUS WdfDeviceConfigureRequestDispatching(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceConfigureRequestDispatching method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceConfigureRequestDispatching method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

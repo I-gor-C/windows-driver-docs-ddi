@@ -7,7 +7,7 @@ old-location: netvista\ipsec_offload_v2_operation.htm
 old-project: netvista
 ms.assetid: bb26c8af-1564-4cf8-ab40-b50b4811466d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _IPSEC_OFFLOAD_V2_OPERATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="IPsecOffloadV2Ah"></a><a id="ipsecoffloadv2ah"></a><a id="IPSECOFFLOADV2AH"></a><b>IPsecOffloadV2Ah</b>
+### -field IPsecOffloadV2Ah
 
 <dd>
 <p>The SA is used for authentication (integrity checking).</p>
 </dd>
 
-### -field <a id="IPsecOffloadV2Esp"></a><a id="ipsecoffloadv2esp"></a><a id="IPSECOFFLOADV2ESP"></a><b>IPsecOffloadV2Esp</b>
+### -field IPsecOffloadV2Esp
 
 <dd>
 <p>The SA is used for encryption/decryption (confidentiality).</p>
 </dd>
 
-### -field <a id="IPsecOffloadV2Max"></a><a id="ipsecoffloadv2max"></a><a id="IPSECOFFLOADV2MAX"></a><b>IPsecOffloadV2Max</b>
+### -field IPsecOffloadV2Max
 
 <dd>
 <p>Reserved for NDIS.</p>
@@ -114,4 +114,4 @@ typedef enum _IPSEC_OFFLOAD_V2_OPERATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_OPERATION enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_OPERATION enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -55,13 +55,13 @@ typedef struct _PEP_WORK_DEVICE_POWER {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>A handle that represents the registration of the device with the Windows <a href="https://msdn.microsoft.com/9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF">power management framework</a> (PoFx). A POHANDLE value that represents the registration of the device with PoFx. The platform extension plug-in (PEP) previously received this handle from PoFx during the <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification that informed the PEP that the device's driver stack registered the device with PoFx.</p>
 </dd>
 
-### -field <b>PowerRequired</b>
+### -field PowerRequired
 
 <dd>
 <p>Whether the device requires power. Set to TRUE if the device requires power and the device driver <u>must</u> bring the device back to the D0 power state. Set to FALSE if the device is not required to stay turned on and the driver is permitted to transition the device from D0 to a low-power state.</p>

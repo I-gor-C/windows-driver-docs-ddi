@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_TUNER_STRATEGY_PLL"></a><a id="ks_tuner_strategy_pll"></a><b>KS_TUNER_STRATEGY_PLL</b>
+### -field KS_TUNER_STRATEGY_PLL
 
 <dd>
 <p>The tuning accuracy for the device is measured by a phase locked loop (PLL) offset.</p>
 </dd>
 
-### -field <a id="KS_TUNER_STRATEGY_SIGNAL_STRENGTH"></a><a id="ks_tuner_strategy_signal_strength"></a><b>KS_TUNER_STRATEGY_SIGNAL_STRENGTH</b>
+### -field KS_TUNER_STRATEGY_SIGNAL_STRENGTH
 
 <dd>
 <p>The tuning accuracy for the device is measured by signal strength.</p>
 </dd>
 
-### -field <a id="KS_TUNER_STRATEGY_DRIVER_TUNES"></a><a id="ks_tuner_strategy_driver_tunes"></a><b>KS_TUNER_STRATEGY_DRIVER_TUNES</b>
+### -field KS_TUNER_STRATEGY_DRIVER_TUNES
 
 <dd>
 <p>The minidriver has total control over the fine tuning process. No fine tuning is done by <i>Kstvtune.ax</i>.</p>

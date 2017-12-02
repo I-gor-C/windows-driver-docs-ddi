@@ -59,16 +59,16 @@ NTSTATUS EvtUsbDeviceEndpointAdd(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbDevice</i> [in]
+### -param UdecxUsbDevice [in]
 
 <dd>
-<p>A handle to the UDE device object for which the client driver creates an endpoint. The driver created this object in a previous call to <a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.</p>
+<p>A handle to the UDE device object for which the client driver creates an endpoint. The driver created this object in a previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a>.</p>
 </dd>
 
-### -param <i>EndpointToCreate</i> [in]
+### -param EndpointToCreate [in]
 
 <dd>
-<p>A pointer to a <a href="buses.udecx_usb_endpoint_init_and_metadata">UDECX_USB_ENDPOINT_INIT_AND_METADATA</a>             structure that contains the endpoint descriptor.</p>
+<p>A pointer to a <a href="..\udecxusbdevice\ns-udecxusbdevice--udecx-usb-endpoint-init-and-metadata.md">UDECX_USB_ENDPOINT_INIT_AND_METADATA</a>             structure that contains the endpoint descriptor.</p>
 </dd>
 </dl>
 
@@ -76,9 +76,9 @@ NTSTATUS EvtUsbDeviceEndpointAdd(
 <p>If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE.</p>
 
 ## -remarks
-<p>The client driver registered this callback function in a previous call to <a href="buses.udecxusbdeviceinitsetstatechangecallbacks">UdecxUsbDeviceInitSetStateChangeCallbacks</a> by supplying a function pointer to its implementation.</p>
+<p>The client driver registered this callback function in a previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitsetstatechangecallbacks.md">UdecxUsbDeviceInitSetStateChangeCallbacks</a> by supplying a function pointer to its implementation.</p>
 
-<p>In the implementation, the client driver is expected to create the endpoint by calling <a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a> by using the initialization parameters (<b>UDECXUSBENDPOINT_INIT</b>) passed by the class extension in the <a href="buses.udecx_usb_endpoint_init_and_metadata">UDECX_USB_ENDPOINT_INIT_AND_METADATA</a> structure.</p>
+<p>In the implementation, the client driver is expected to create the endpoint by calling <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a> by using the initialization parameters (<b>UDECXUSBENDPOINT_INIT</b>) passed by the class extension in the <a href="..\udecxusbdevice\ns-udecxusbdevice--udecx-usb-endpoint-init-and-metadata.md">UDECX_USB_ENDPOINT_INIT_AND_METADATA</a> structure.</p>
 
 ## -requirements
 <table>
@@ -129,7 +129,7 @@ NTSTATUS EvtUsbDeviceEndpointAdd(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a>
+<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>
 </dt>
 <dt>
 <a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>

@@ -55,13 +55,13 @@ typedef struct _D3DKMT_SHAREDPRIMARYUNLOCKNOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>AdapterLuid</b>
+### -field AdapterLuid
 
 <dd>
 <p>[in] The locally unique identifier (<a href="kernel.luid">LUID</a>) of the graphics adapter on which the GDI shared primary surface exists.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology on which the GDI shared primary surface exists.</p>

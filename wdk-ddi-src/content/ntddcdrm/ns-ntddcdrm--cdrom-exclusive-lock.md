@@ -55,13 +55,13 @@ typedef struct _CDROM_EXCLUSIVE_LOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>Access</b>
+### -field Access
 
 <dd>
 <p>A <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-exclusive-access.md">CDROM_EXCLUSIVE_ACCESS</a> structure that specifies the type of exclusive access request and the flags that are associated with the request.</p>
 </dd>
 
-### -field <b>CallerName</b>
+### -field CallerName
 
 <dd>
 <p>A <b>NULL</b>-terminated string that identifies the application or system component that has a lock on the CD-ROM device. The length of the string must be less than or equal to CDROM_EXCLUSIVE_CALLER_LENGTH bytes, including the <b>NULL</b> character at the end of the string. The string must contain alphanumerics (A - Z, a - z, 0 - 9), spaces, periods, commas, colons (:), semi-colons (;), hyphens (-), and underscores (_).</p>

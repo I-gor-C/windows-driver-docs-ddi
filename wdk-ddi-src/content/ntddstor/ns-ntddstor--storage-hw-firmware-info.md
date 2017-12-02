@@ -65,31 +65,31 @@ typedef struct _STORAGE_HW_FIRMWARE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_INFO)</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure as a buffer including slot.</p>
 </dd>
 
-### -field <b>SupportUpgrade</b>
+### -field SupportUpgrade
 
 <dd>
 <p>Indicates that this firmware supports an upgrade.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>SlotCount</b>
+### -field SlotCount
 
 <dd>
 <p>The number of firmware slots on the device. This is the dimension of the Slot array.</p>
@@ -97,19 +97,19 @@ typedef struct _STORAGE_HW_FIRMWARE_INFO {
 <div> </div>
 </dd>
 
-### -field <b>ActiveSlot</b>
+### -field ActiveSlot
 
 <dd>
 <p>The firmware slot containing the currently active/running firmware image.</p>
 </dd>
 
-### -field <b>PendingActivateSlot</b>
+### -field PendingActivateSlot
 
 <dd>
 <p>The firmware slot that is pending activation.</p>
 </dd>
 
-### -field <b>FirmwareShared</b>
+### -field FirmwareShared
 
 <dd>
 <p>Indicates that the firmware applies to both the device and controller/adapter, e.g. NVMe SSD.
@@ -117,25 +117,25 @@ typedef struct _STORAGE_HW_FIRMWARE_INFO {
 </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>ImagePayloadAlignment</b>
+### -field ImagePayloadAlignment
 
 <dd>
 <p>The alignment of the image payload, in number of bytes. The maximum is PAGE_SIZE. The transfer size is a mutliple of this size. Some protocols require at least sector size. When this value is set to 0, this means that this value is invalid.</p>
 </dd>
 
-### -field <b>ImagePayloadMaxSize</b>
+### -field ImagePayloadMaxSize
 
 <dd>
 <p>The image payload maximum size, this is used for a single command.</p>
 </dd>
 
-### -field <b>Slot</b>
+### -field Slot
 
 <dd>
 <p>Contains the slot information for each slot on the device.</p>

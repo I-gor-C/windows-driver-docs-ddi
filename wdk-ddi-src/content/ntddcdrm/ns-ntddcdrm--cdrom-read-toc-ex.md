@@ -59,14 +59,14 @@ typedef struct _CDROM_READ_TOC_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>Specifies table of contents read operation, as follows:</p>
 <p></p>
 <dl>
 
-### -field <a id="CDROM_READ_TOC_EX_FORMAT_TOC"></a><a id="cdrom_read_toc_ex_format_toc"></a>CDROM_READ_TOC_EX_FORMAT_TOC
+### -field CDROM_READ_TOC_EX_FORMAT_TOC
 
 <dd>
 <p>Query the device for the table of contents for the specified session(s). The <b>SessionTrack</b> member of the structure specifies the starting track number of the session for which the data will be returned. For multisession CD-ROMs, this command will return the table of contents data for all sessions. For track number 0xAA, it returns the lead-out area of the last complete session. The output data is reported in a <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc.md">CDROM_TOC</a> structure.</p>
@@ -75,7 +75,7 @@ typedef struct _CDROM_READ_TOC_EX {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_READ_TOC_EX_FORMAT_SESSION"></a><a id="cdrom_read_toc_ex_format_session"></a>CDROM_READ_TOC_EX_FORMAT_SESSION
+### -field CDROM_READ_TOC_EX_FORMAT_SESSION
 
 <dd>
 <p>Query the device for the first complete session number, the last complete session number, and the last complete session starting address. The output data is reported in a <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-session-data.md">CDROM_TOC_SESSION_DATA</a> structure. With this format, the <b>SessionTrack</b> member is reserved and must be set to zero. This format provides the initiator with quick access to the last finalized session starting address. </p>
@@ -84,7 +84,7 @@ typedef struct _CDROM_READ_TOC_EX {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_READ_TOC_EX_FORMAT_FULL_TOC"></a><a id="cdrom_read_toc_ex_format_full_toc"></a>CDROM_READ_TOC_EX_FORMAT_FULL_TOC
+### -field CDROM_READ_TOC_EX_FORMAT_FULL_TOC
 
 <dd>
 <p>Query the device for all Q subcode data in the lead-in table of contents areas starting from the session number specified in the <b>SessionTrack</b> member. The output data is reported in a header structure, <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-full-toc-data.md">CDROM_TOC_FULL_TOC_DATA</a>, followed by a series of track descriptors defined in <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-full-toc-data-block.md">CDROM_TOC_FULL_TOC_DATA_BLOCK</a>. In this format, logical block addressing (LBA) is not defined, and the <b>Msf</b> member must be set to 1.</p>
@@ -93,7 +93,7 @@ typedef struct _CDROM_READ_TOC_EX {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_READ_TOC_EX_FORMAT_PMA"></a><a id="cdrom_read_toc_ex_format_pma"></a>CDROM_READ_TOC_EX_FORMAT_PMA
+### -field CDROM_READ_TOC_EX_FORMAT_PMA
 
 <dd>
 <p>Query the device for all Q subcode data in the <i>program memory area</i> (PMA). The output data is reported in a <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-pma-data.md">CDROM_TOC_PMA_DATA</a> structure. In this format, the <b>SessionTrack</b> member is reserved and must be set to zero. Logical block addressing (LBA) is not defined, and the <b>Msf</b> member must be set to 1.</p>
@@ -102,7 +102,7 @@ typedef struct _CDROM_READ_TOC_EX {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_READ_TOC_EX_FORMAT_ATIP"></a><a id="cdrom_read_toc_ex_format_atip"></a>CDROM_READ_TOC_EX_FORMAT_ATIP
+### -field CDROM_READ_TOC_EX_FORMAT_ATIP
 
 <dd>
 <p>Query the device for <i>absolute time in pregroove</i> (ATIP) data. The output data is reported in the <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-atip-data.md">CDROM_TOC_ATIP_DATA</a> structure. In this format, the <b>SessionTrack</b> member is reserved and must be set to zero. Logical block addressing (LBA) is not defined, and the <b>Msf</b> member must be set to 1.</p>
@@ -111,7 +111,7 @@ typedef struct _CDROM_READ_TOC_EX {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_READ_TOC_EX_FORMAT_CDTEXT"></a><a id="cdrom_read_toc_ex_format_cdtext"></a>CDROM_READ_TOC_EX_FORMAT_CDTEXT
+### -field CDROM_READ_TOC_EX_FORMAT_CDTEXT
 
 <dd>
 <p>Query the device for CD-TEXT information that is recorded in the lead-in area as R-W subchannel data. The output data is reported in a <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-cd-text-data.md">CDROM_TOC_CD_TEXT_DATA</a> structure with an appended array of <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-cd-text-data-block.md">CDROM_TOC_CD_TEXT_DATA_BLOCK</a> structures.</p>
@@ -119,31 +119,31 @@ typedef struct _CDROM_READ_TOC_EX {
 </dl>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Msf</b>
+### -field Msf
 
 <dd>
 <p>Indicates the minute-second-frame bit. When set to one, this bit indicates that minute-second-frame (MSF) addressing must be used. When zero, it indicates that logical block addressing (LBA) must be used. </p>
 </dd>
 
-### -field <b>SessionTrack</b>
+### -field SessionTrack
 
 <dd>
 <p>Specifies the starting track number for which the data will be returned, the session for which the command is targeted, or a reserved field that drivers should set to zero. Which of these values <b>SessionTrack</b> takes depends on the value of the <b>Format</b> member. </p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved</p>

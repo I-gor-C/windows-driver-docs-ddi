@@ -7,7 +7,7 @@ old-location: wdf\wdf_companion_event_callbacks.htm
 old-project: wdf
 ms.assetid: 6a9c5420-1847-4145-aea5-9e9c58d86ea1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_COMPANION_EVENT_CALLBACKS, WDF_COMPANION_EVENT_CALLBACKS, *PWDF_COMPANION_EVENT_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef struct _WDF_COMPANION_EVENT_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd></dd>
 
-### -field <b>EvtCompanionPreD0Entry</b>
+### -field EvtCompanionPreD0Entry
 
 <dd></dd>
 
-### -field <b>EvtCompanionPostD0Exit</b>
+### -field EvtCompanionPostD0Exit
 
 <dd></dd>
 
-### -field <b>EvtCompanionPrePrepareHardware</b>
+### -field EvtCompanionPrePrepareHardware
 
 <dd></dd>
 
-### -field <b>EvtCompanionPostReleaseHardware</b>
+### -field EvtCompanionPostReleaseHardware
 
 <dd></dd>
 </dl>

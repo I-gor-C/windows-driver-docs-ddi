@@ -54,7 +54,7 @@ void KsTerminateDevice(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure corresponding to the device for which to remove AVStream support.</p>

@@ -58,25 +58,25 @@ typedef enum _DEVICE_INSTALL_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="InstallStateInstalled"></a><a id="installstateinstalled"></a><a id="INSTALLSTATEINSTALLED"></a><b>InstallStateInstalled</b>
+### -field InstallStateInstalled
 
 <dd>
 <p>The device is installed.</p>
 </dd>
 
-### -field <a id="InstallStateNeedsReinstall"></a><a id="installstateneedsreinstall"></a><a id="INSTALLSTATENEEDSREINSTALL"></a><b>InstallStateNeedsReinstall</b>
+### -field InstallStateNeedsReinstall
 
 <dd>
 <p>The system will try to reinstall the device on a later enumeration.</p>
 </dd>
 
-### -field <a id="InstallStateFailedInstall"></a><a id="installstatefailedinstall"></a><a id="INSTALLSTATEFAILEDINSTALL"></a><b>InstallStateFailedInstall</b>
+### -field InstallStateFailedInstall
 
 <dd>
 <p>The device did not install properly.</p>
 </dd>
 
-### -field <a id="InstallStateFinishInstall"></a><a id="installstatefinishinstall"></a><a id="INSTALLSTATEFINISHINSTALL"></a><b>InstallStateFinishInstall</b>
+### -field InstallStateFinishInstall
 
 <dd>
 <p>The installation of this device is not yet complete. </p>

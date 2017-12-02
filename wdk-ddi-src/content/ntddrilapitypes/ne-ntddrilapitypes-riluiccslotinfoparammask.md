@@ -7,7 +7,7 @@ old-location: netvista\riluiccslotinfoparammask.htm
 old-project: netvista
 ms.assetid: f99fc76e-a569-4a7e-9f8d-3f604ccfa6a3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILUICCSLOTINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_SLOTINFO_SLOTSTATE"></a><a id="ril_param_slotinfo_slotstate"></a><b>RIL_PARAM_SLOTINFO_SLOTSTATE</b>
+### -field RIL_PARAM_SLOTINFO_SLOTSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SLOTINFO_ALL"></a><a id="ril_param_slotinfo_all"></a><b>RIL_PARAM_SLOTINFO_ALL</b>
+### -field RIL_PARAM_SLOTINFO_ALL
 
 <dd></dd>
 </dl>

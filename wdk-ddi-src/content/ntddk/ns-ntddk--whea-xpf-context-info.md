@@ -58,56 +58,56 @@ typedef struct _WHEA_XPF_CONTEXT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>RegisterContextType</b>
+### -field RegisterContextType
 
 <dd>
 <p>The type of processor context information described by the structure. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="XPF_CONTEXT_INFO_UNCLASSIFIEDDATA"></a><a id="xpf_context_info_unclassifieddata"></a>XPF_CONTEXT_INFO_UNCLASSIFIEDDATA
+### -field XPF_CONTEXT_INFO_UNCLASSIFIEDDATA
 
 <dd>
 <p>Unclassified processor context data.</p>
 </dd>
 
-### -field <a id="XPF_CONTEXT_INFO_MSRREGISTERS"></a><a id="xpf_context_info_msrregisters"></a>XPF_CONTEXT_INFO_MSRREGISTERS
+### -field XPF_CONTEXT_INFO_MSRREGISTERS
 
 <dd>
 <p>Machine check and other machine-specific registers.</p>
 </dd>
 
-### -field <a id="XPF_CONTEXT_INFO_32BITCONTEXT"></a><a id="xpf_context_info_32bitcontext"></a>XPF_CONTEXT_INFO_32BITCONTEXT
+### -field XPF_CONTEXT_INFO_32BITCONTEXT
 
 <dd>
 <p>32-bit execution context registers.</p>
 </dd>
 
-### -field <a id="XPF_CONTEXT_INFO_64BITCONTEXT"></a><a id="xpf_context_info_64bitcontext"></a>XPF_CONTEXT_INFO_64BITCONTEXT
+### -field XPF_CONTEXT_INFO_64BITCONTEXT
 
 <dd>
 <p>64-bit execution context registers.</p>
 </dd>
 
-### -field <a id="XPF_CONTEXT_INFO_FXSAVE"></a><a id="xpf_context_info_fxsave"></a>XPF_CONTEXT_INFO_FXSAVE
+### -field XPF_CONTEXT_INFO_FXSAVE
 
 <dd>
 <p>Floating point registers as saved by the FXSAVE instruction. For more information about the FXSAVE instruction, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.</p>
 </dd>
 
-### -field <a id="XPF_CONTEXT_INFO_32BITDEBUGREGS"></a><a id="xpf_context_info_32bitdebugregs"></a>XPF_CONTEXT_INFO_32BITDEBUGREGS
+### -field XPF_CONTEXT_INFO_32BITDEBUGREGS
 
 <dd>
 <p>32-bit debug registers.</p>
 </dd>
 
-### -field <a id="XPF_CONTEXT_INFO_64BITDEBUGREGS"></a><a id="xpf_context_info_64bitdebugregs"></a>XPF_CONTEXT_INFO_64BITDEBUGREGS
+### -field XPF_CONTEXT_INFO_64BITDEBUGREGS
 
 <dd>
 <p>64-bit debug registers.</p>
 </dd>
 
-### -field <a id="XPF_CONTEXT_INFO_MMREGISTERS"></a><a id="xpf_context_info_mmregisters"></a>XPF_CONTEXT_INFO_MMREGISTERS
+### -field XPF_CONTEXT_INFO_MMREGISTERS
 
 <dd>
 <p>Memory mapped registers.</p>
@@ -115,25 +115,25 @@ typedef struct _WHEA_XPF_CONTEXT_INFO {
 </dl>
 </dd>
 
-### -field <b>RegisterDataSize</b>
+### -field RegisterDataSize
 
 <dd>
 <p>The size, in bytes, of the register data that is contained in the <b>RegisterData</b> member.</p>
 </dd>
 
-### -field <b>MSRAddress</b>
+### -field MSRAddress
 
 <dd>
 <p>The starting address of the machine-specific registers. This member contains valid data only if the <b>RegisterContextType</b> member is set to either XPF_CONTEXT_INFO_UNCLASSIFIEDDATA or XPF_CONTEXT_INFO_MSRREGISTERS. For all other types of processor context information, this member should contain zero.</p>
 </dd>
 
-### -field <b>MmRegisterAddress</b>
+### -field MmRegisterAddress
 
 <dd>
 <p>The starting memory address of the memory mapped registers. This member contains valid data only if the <b>RegisterContextType</b> member is set to XPF_CONTEXT_INFO_MMREGISTERS. For all other types of processor context information, this member should contain zero.</p>
 </dd>
 
-### -field <b>RegisterData</b>
+### -field RegisterData
 
 <dd>
 <p>A variable length buffer that contains register data or raw data. The contents of the buffer depends upon the type of processor context information that is specified in the RegisterContextType member as follows:
@@ -141,7 +141,7 @@ typedef struct _WHEA_XPF_CONTEXT_INFO {
 <p></p>
 <dl>
 
-### -field <a id="XPF_CONTEXT_INFO_UNCLASSIFIEDDATA"></a><a id="xpf_context_info_unclassifieddata"></a>XPF_CONTEXT_INFO_UNCLASSIFIEDDATA
+### -field XPF_CONTEXT_INFO_UNCLASSIFIEDDATA
 
 <dd>
 <p>The buffer contains raw unformatted data. The number of bytes of data is specified in the RegisterDataSize member. 
@@ -149,7 +149,7 @@ typedef struct _WHEA_XPF_CONTEXT_INFO {
 </p>
 </dd>
 
-### -field <a id="XPF_CONTEXT_INFO_MSRREGISTERS"></a><a id="xpf_context_info_msrregisters"></a>XPF_CONTEXT_INFO_MSRREGISTERS
+### -field XPF_CONTEXT_INFO_MSRREGISTERS
 
 <dd>
 <p>The buffer contains an array of 64-bit machine check and other machine-specific registers. The number of registers in the array is determined by dividing the size specified in the RegisterDataSize member by eight. 
@@ -157,19 +157,19 @@ typedef struct _WHEA_XPF_CONTEXT_INFO {
 </p>
 </dd>
 
-### -field <a id="XPF_CONTEXT_INFO_32BITCONTEXT"></a><a id="xpf_context_info_32bitcontext"></a>XPF_CONTEXT_INFO_32BITCONTEXT
+### -field XPF_CONTEXT_INFO_32BITCONTEXT
 
 <dd>
 <p>The buffer contains a WHEA_X86_REGISTER_STATE structure.</p>
 </dd>
 
-### -field <a id="XPF_CONTEXT_INFO_64BITCONTEXT"></a><a id="xpf_context_info_64bitcontext"></a>XPF_CONTEXT_INFO_64BITCONTEXT
+### -field XPF_CONTEXT_INFO_64BITCONTEXT
 
 <dd>
 <p>The buffer contains a WHEA_X64_REGISTER_STATE structure.</p>
 </dd>
 
-### -field <a id="XPF_CONTEXT_INFO_FXSAVE"></a><a id="xpf_context_info_fxsave"></a>XPF_CONTEXT_INFO_FXSAVE
+### -field XPF_CONTEXT_INFO_FXSAVE
 
 <dd>
 <p>The buffer contains the floating point registers as saved by the FXSAVE instruction. For more information about the FXSAVE instruction, see the  <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>. 
@@ -177,19 +177,19 @@ typedef struct _WHEA_XPF_CONTEXT_INFO {
 </p>
 </dd>
 
-### -field <a id="XPF_CONTEXT_INFO_32BITDEBUGREGS"></a><a id="xpf_context_info_32bitdebugregs"></a>XPF_CONTEXT_INFO_32BITDEBUGREGS
+### -field XPF_CONTEXT_INFO_32BITDEBUGREGS
 
 <dd>
 <p>The buffer contains an array of eight 64-bit values that contain the 32-bit debug registers DR0-DR7. Each of the 32-bit debug registers are zero-extended to 64-bits.</p>
 </dd>
 
-### -field <a id="XPF_CONTEXT_INFO_64BITDEBUGREGS"></a><a id="xpf_context_info_64bitdebugregs"></a>XPF_CONTEXT_INFO_64BITDEBUGREGS
+### -field XPF_CONTEXT_INFO_64BITDEBUGREGS
 
 <dd>
 <p>The buffer contains an array of eight 64-bit values that contain the 64-bit debug registers DR0-DR7.</p>
 </dd>
 
-### -field <a id="XPF_CONTEXT_INFO_MMREGISTERS"></a><a id="xpf_context_info_mmregisters"></a>XPF_CONTEXT_INFO_MMREGISTERS
+### -field XPF_CONTEXT_INFO_MMREGISTERS
 
 <dd>
 <p>The buffer contains an array of 64-bit memory mapped registers. The number of registers in the array is determined by dividing the size specified in the RegisterDataSize member by eight.</p>

@@ -54,7 +54,7 @@ NTSTATUS ZwAllocateLocallyUniqueId(
 ## -parameters
 <dl>
 
-### -param <i>LUID</i> [out]
+### -param LUID [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer to receive a copy of the source LUID structure. The buffer must be at least <b>sizeof</b>(<i>LUID</i>). </p>

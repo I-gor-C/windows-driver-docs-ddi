@@ -7,7 +7,7 @@ old-location: debugger\getcurrentprocesssystemid.htm
 old-project: debugger
 ms.assetid: 850f2f86-af0d-414a-99d7-d081753c591f
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSystemObjects3, GetCurrentProcessSystemId, IDebugSystemObjects3::GetCurrentProcessSystemId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetCurrentProcessSystemId(
 ## -parameters
 <dl>
 
-### -param <i>SysId</i> [out]
+### -param SysId [out]
 
 <dd>
 <p>Receives the system process ID.</p>
@@ -62,7 +62,7 @@ HRESULT GetCurrentProcessSystemId(
 </dl>
 
 ## -returns
-<p>This method may also return other error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>E_NOTIMPL</b></dt>

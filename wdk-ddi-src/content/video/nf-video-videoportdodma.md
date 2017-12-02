@@ -58,19 +58,19 @@ PDMA VideoPortDoDma(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>pDma</i> [in]
+### -param pDma [in]
 
 <dd>
 <p>Specifies a non-<b>NULL</b> DMA handle. This handle was obtained from a prior call to <b>VideoPortDoDma</b> or from the <b>OutputBuffer</b> member of the <a href="..\video\ns-video--video-request-packet.md">VIDEO_REQUEST_PACKET</a> returned by <a href="..\video\nf-video-videoportlockpages.md">VideoPortLockPages</a>.</p>
 </dd>
 
-### -param <i>DmaFlags</i> [in]
+### -param DmaFlags [in]
 
 <dd>
 <p>Specifies the action to be performed. This member can be one of the following values:</p>

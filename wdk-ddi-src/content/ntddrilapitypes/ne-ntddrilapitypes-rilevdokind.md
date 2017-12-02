@@ -7,7 +7,7 @@ old-location: netvista\rilevdokind.htm
 old-project: netvista
 ms.assetid: 9887342b-85bd-4161-b9de-06ceb56014e5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILEVDOKIND {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_EVDOKIND_REVA"></a><a id="ril_evdokind_reva"></a><b>RIL_EVDOKIND_REVA</b>
+### -field RIL_EVDOKIND_REVA
 
 <dd></dd>
 
-### -field <a id="RIL_EVDOKIND_REVB"></a><a id="ril_evdokind_revb"></a><b>RIL_EVDOKIND_REVB</b>
+### -field RIL_EVDOKIND_REVB
 
 <dd></dd>
 
-### -field <a id="RIL_EVDOKIND_MAX"></a><a id="ril_evdokind_max"></a><b>RIL_EVDOKIND_MAX</b>
+### -field RIL_EVDOKIND_MAX
 
 <dd></dd>
 </dl>

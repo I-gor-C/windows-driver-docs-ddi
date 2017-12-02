@@ -7,7 +7,7 @@ old-location: netvista\ndiscosendnetbufferlists.htm
 old-project: netvista
 ms.assetid: 8284fdd4-26de-4622-b164-f33aee1d8742
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisCoSendNetBufferLists
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ VOID NdisCoSendNetBufferLists(
 ## -parameters
 <dl>
 
-### -param <i>NdisVcHandle</i> [in]
+### -param NdisVcHandle [in]
 
 <dd>
 <p>A handle to a virtual connection (VC) that identifies the target of the send request.</p>
 </dd>
 
-### -param <i>NetBufferLists</i> [in]
+### -param NetBufferLists [in]
 
 <dd>
 <p>A pointer to a linked list of 
@@ -73,7 +73,7 @@ VOID NdisCoSendNetBufferLists(
      <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structures.</p>
 </dd>
 
-### -param <i>SendFlags</i> [in]
+### -param SendFlags [in]
 
 <dd>
 <p>Flags that define attributes for the send operation. The flags can be combined with a bitwise OR
@@ -83,14 +83,14 @@ VOID NdisCoSendNetBufferLists(
 <p></p>
 <dl>
 
-### -param <a id="NDIS_SEND_FLAGS_DISPATCH_LEVEL"></a><a id="ndis_send_flags_dispatch_level"></a>NDIS_SEND_FLAGS_DISPATCH_LEVEL
+### -param NDIS_SEND_FLAGS_DISPATCH_LEVEL
 
 <dd>
 <p>The current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
-       <a href="NULL">Dispatch IRQL Tracking</a>.</p>
+       <a href="netvista.dispatch_irql_tracking">Dispatch IRQL Tracking</a>.</p>
 </dd>
 
-### -param <a id="NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK"></a><a id="ndis_send_flags_check_for_loopback"></a>NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK
+### -param NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK
 
 <dd>
 <p>NDIS should check for loopback. By default, NDIS does not loop back data to the driver that
@@ -276,4 +276,4 @@ VOID NdisCoSendNetBufferLists(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoSendNetBufferLists function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoSendNetBufferLists function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

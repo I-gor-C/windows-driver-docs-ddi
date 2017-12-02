@@ -57,25 +57,25 @@ typedef struct _KSCAMERA_PROFILE_CONCURRENCYINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ReferenceGuid</b>
+### -field ReferenceGuid
 
 <dd>
 <p>Must be set to the <b>ReferenceGuid</b> of the <b>KSFILTER_DESCRIPTOR</b> which corresponds to the other device with which this profile is concurrent.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Unused.  Must be 0.</p>
 </dd>
 
-### -field <b>ProfileCount</b>
+### -field ProfileCount
 
 <dd>
 <p>Number of profile IDs contained in the <b>Profiles</b> array.  Must be greater than 0.</p>
 </dd>
 
-### -field <b>Profiles</b>
+### -field Profiles
 
 <dd>
 <p>This is an array of <b>KSCAMERA_PROFILE_INFO</b> structures that can be simultaneously used on the other camera device specified by the <b>ReferenceGuid</b>. This field must not be <b>NULL</b>.</p>

@@ -7,7 +7,7 @@ old-location: ifsk\file_objectid_information.htm
 old-project: ifsk
 ms.assetid: bbbaf48b-78c3-4a4b-801b-2fe3c0112a68
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILE_OBJECTID_INFORMATION, FILE_OBJECTID_INFORMATION, *PFILE_OBJECTID_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,37 +63,37 @@ typedef struct _FILE_OBJECTID_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>FileReference</b>
+### -field FileReference
 
 <dd>
 <p>The 8-byte file reference number for the file. NTFS generates this number and assigns it to the file automatically when the file is created. </p>
 </dd>
 
-### -field <b>ObjectId</b>
+### -field ObjectId
 
 <dd>
 <p>The 16-byte file object ID for the file. NTFS generates this number and assigns it to the file at the request of a driver or application. File object IDs are guaranteed to be unique only within the volume where the file resides. </p>
 </dd>
 
-### -field ( <i>unnamed struct</i> )
+### -field ( unnamed struct )
 
 <dd>
 <p> </p>
 <dl>
 
-### -field <b>BirthVolumeId</b>
+### -field BirthVolumeId
 
 <dd>
 <p>The object identifier of the volume on which the file resided when the object identifier was created, or zero if the volume had no object identifier at that time. After copy operations, move operations, or other file operations, this may not be the same as the object identifier of the volume on which the object currently resides. </p>
 </dd>
 
-### -field <b>BirthObjectId</b>
+### -field BirthObjectId
 
 <dd>
 <p>The object identifier of the file at the time it was created. After copy operations, move operations, or other file operations, this may not be the same as the current value of the <b>ObjectId</b> member. </p>
 </dd>
 
-### -field <b>DomainId</b>
+### -field DomainId
 
 <dd>
 <p>Reserved; must be zero. </p>
@@ -101,7 +101,7 @@ typedef struct _FILE_OBJECTID_INFORMATION {
 </dl>
 </dd>
 
-### -field <b>ExtendedInfo</b>
+### -field ExtendedInfo
 
 <dd>
 <p>User-provided data. You can use it to contain the <b>BirthVolumeID</b>, <b>BirthObjectID</b>, and <b>DomainID</b> members, or you can define a different data structure. </p>
@@ -159,4 +159,4 @@ typedef struct _FILE_OBJECTID_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_OBJECTID_INFORMATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_OBJECTID_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

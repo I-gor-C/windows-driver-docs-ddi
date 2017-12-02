@@ -56,15 +56,15 @@ typedef enum _DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_NONE"></a><a id="dxgkmt_multiplane_overlay_stereo_flip_none"></a><b>DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_NONE</b>
+### -field DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_NONE
 
 <dd></dd>
 
-### -field <a id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME0"></a><a id="dxgkmt_multiplane_overlay_stereo_flip_frame0"></a><b>DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME0</b>
+### -field DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME0
 
 <dd></dd>
 
-### -field <a id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME1"></a><a id="dxgkmt_multiplane_overlay_stereo_flip_frame1"></a><b>DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME1</b>
+### -field DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME1
 
 <dd></dd>
 </dl>

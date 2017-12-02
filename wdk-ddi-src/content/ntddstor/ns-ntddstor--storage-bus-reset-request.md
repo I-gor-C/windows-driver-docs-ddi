@@ -54,7 +54,7 @@ typedef struct _STORAGE_BUS_RESET_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>PathId</b>
+### -field PathId
 
 <dd>
 <p>Indicates the number of the bus to be reset. </p>

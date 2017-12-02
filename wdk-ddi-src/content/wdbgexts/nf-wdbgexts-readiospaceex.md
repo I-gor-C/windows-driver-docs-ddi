@@ -7,13 +7,13 @@ old-location: debugger\readiospaceex.htm
 old-project: debugger
 ms.assetid: de0681e6-c716-4879-8e07-daacc092d18f
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: ReadIoSpaceEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -60,37 +60,37 @@ __inline VOID ReadIoSpaceEx(
 ## -parameters
 <dl>
 
-### -param <i>address</i> 
+### -param address 
 
 <dd>
 <p>Specifies the I/O address to read from.</p>
 </dd>
 
-### -param <i>data</i> 
+### -param data 
 
 <dd>
 <p>Specifies the address of a variable to hold the data read. This must be at least the number of bytes contained in <i>size</i>.</p>
 </dd>
 
-### -param <i>size</i> 
+### -param size 
 
 <dd>
 <p>Specifies the address of a variable that contains the number of bytes to read. <i>Size</i> must be 1, 2, or 4. After the data is read, <i>size</i> will contain the number of bytes actually read.</p>
 </dd>
 
-### -param <i>interfacetype</i> 
+### -param interfacetype 
 
 <dd>
 <p>Specifies the type of interface on which the extended I/O space exists. Possible values include ISA, EISA, and MCA. For more information, see ntddk.h, which is available as part of Windows Driver Kit.</p>
 </dd>
 
-### -param <i>busnumber</i> 
+### -param busnumber 
 
 <dd>
 <p>Specifies the number of the bus on which the extended I/O space exists. This is typically zero, unless there is more than one bus of a given type.</p>
 </dd>
 
-### -param <i>addressspace</i> 
+### -param addressspace 
 
 <dd>
 <p>This is typically 1.</p>
@@ -124,7 +124,7 @@ __inline VOID ReadIoSpaceEx(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

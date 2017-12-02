@@ -148,301 +148,301 @@ typedef struct _DRIVER_INITIALIZATION_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>A positive integer that indicates the version of the functional interface implemented by the display miniport driver. The display miniport driver must set this member to <b>DXGKDDI_INTERFACE_VERSION</b>, which is defined in Dispmprt.h.</p>
 </dd>
 
-### -field <b>DxgkDdiAddDevice</b>
+### -field DxgkDdiAddDevice
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiStartDevice</b>
+### -field DxgkDdiStartDevice
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiStopDevice</b>
+### -field DxgkDdiStopDevice
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddistopdevice">DxgkDdiStopDevice</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiRemoveDevice</b>
+### -field DxgkDdiRemoveDevice
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiremovedevice">DxgkDdiRemoveDevice</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiDispatchIoRequest</b>
+### -field DxgkDdiDispatchIoRequest
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddidispatchiorequest">DxgkDdiDispatchIoRequest</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiInterruptRoutine</b>
+### -field DxgkDdiInterruptRoutine
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiinterruptroutine">DxgkDdiInterruptRoutine</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiDpcRoutine</b>
+### -field DxgkDdiDpcRoutine
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddidpcroutine">DxgkDdiDpcRoutine</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiQueryChildRelations</b>
+### -field DxgkDdiQueryChildRelations
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiQueryChildStatus</b>
+### -field DxgkDdiQueryChildStatus
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiquerychildstatus">DxgkDdiQueryChildStatus</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiQueryDeviceDescriptor</b>
+### -field DxgkDdiQueryDeviceDescriptor
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiquerydevicedescriptor">DxgkDdiQueryDeviceDescriptor</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiSetPowerState</b>
+### -field DxgkDdiSetPowerState
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddisetpowerstate">DxgkDdiSetPowerState</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiNotifyAcpiEvent</b>
+### -field DxgkDdiNotifyAcpiEvent
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddinotifyacpievent">DxgkDdiNotifyAcpiEvent</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiResetDevice</b>
+### -field DxgkDdiResetDevice
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiresetdevice">DxgkDdiResetDevice</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiUnload</b>
+### -field DxgkDdiUnload
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-unload.md">DxgkDdiUnload</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiQueryInterface</b>
+### -field DxgkDdiQueryInterface
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiqueryinterface">DxgkDdiQueryInterface</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiControlEtwLogging</b>
+### -field DxgkDdiControlEtwLogging
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddicontroletwlogging">DxgkDdiControlEtwLogging</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiQueryAdapterInfo</b>
+### -field DxgkDdiQueryAdapterInfo
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiCreateDevice</b>
+### -field DxgkDdiCreateDevice
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddicreatedevice">DxgkDdiCreateDevice</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiCreateAllocation</b>
+### -field DxgkDdiCreateAllocation
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function. </p>
 </dd>
 
-### -field <b>DxgkDdiDestroyAllocation</b>
+### -field DxgkDdiDestroyAllocation
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddidestroyallocation">DxgkDdiDestroyAllocation</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiDescribeAllocation</b>
+### -field DxgkDdiDescribeAllocation
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddidescribeallocation">DxgkDdiDescribeAllocation</a> function. </p>
 </dd>
 
-### -field <b>DxgkDdiGetStandardAllocationDriverData</b>
+### -field DxgkDdiGetStandardAllocationDriverData
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddigetstandardallocationdriverdata">DxgkDdiGetStandardAllocationDriverData</a> function. </p>
 </dd>
 
-### -field <b>DxgkDdiAcquireSwizzlingRange</b>
+### -field DxgkDdiAcquireSwizzlingRange
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiacquireswizzlingrange">DxgkDdiAcquireSwizzlingRange</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiReleaseSwizzlingRange</b>
+### -field DxgkDdiReleaseSwizzlingRange
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddireleaseswizzlingrange">DxgkDdiReleaseSwizzlingRange</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiPatch</b>
+### -field DxgkDdiPatch
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddipatch">DxgkDdiPatch</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiSubmitCommand</b>
+### -field DxgkDdiSubmitCommand
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddisubmitcommand">DxgkDdiSubmitCommand</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiPreemptCommand</b>
+### -field DxgkDdiPreemptCommand
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddipreemptcommand">DxgkDdiPreemptCommand</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiBuildPagingBuffer</b>
+### -field DxgkDdiBuildPagingBuffer
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiSetPalette</b>
+### -field DxgkDdiSetPalette
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddisetpalette">DxgkDdiSetPalette</a> function that sets the palette for the display.</p>
 </dd>
 
-### -field <b>DxgkDdiSetPointerPosition</b>
+### -field DxgkDdiSetPointerPosition
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddisetpointerposition">DxgkDdiSetPointerPosition</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiSetPointerShape</b>
+### -field DxgkDdiSetPointerShape
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddisetpointershape">DxgkDdiSetPointerShape</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiResetFromTimeout</b>
+### -field DxgkDdiResetFromTimeout
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiresetfromtimeout">DxgkDdiResetFromTimeout</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiRestartFromTimeout</b>
+### -field DxgkDdiRestartFromTimeout
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddirestartfromtimeout">DxgkDdiRestartFromTimeout</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiEscape</b>
+### -field DxgkDdiEscape
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiescape">DxgkDdiEscape</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiCollectDbgInfo</b>
+### -field DxgkDdiCollectDbgInfo
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddicollectdbginfo">DxgkDdiCollectDbgInfo</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiQueryCurrentFence</b>
+### -field DxgkDdiQueryCurrentFence
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-querycurrentfence.md">DxgkDdiQueryCurrentFence</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiIsSupportedVidPn</b>
+### -field DxgkDdiIsSupportedVidPn
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiissupportedvidpn">DxgkDdiIsSupportedVidPn</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiRecommendFunctionalVidPn</b>
+### -field DxgkDdiRecommendFunctionalVidPn
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddirecommendfunctionalvidpn">DxgkDdiRecommendFunctionalVidPn</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiEnumVidPnCofuncModality</b>
+### -field DxgkDdiEnumVidPnCofuncModality
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddienumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiSetVidPnSourceAddress</b>
+### -field DxgkDdiSetVidPnSourceAddress
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddisetvidpnsourceaddress">DxgkDdiSetVidPnSourceAddress</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiSetVidPnSourceVisibility</b>
+### -field DxgkDdiSetVidPnSourceVisibility
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddisetvidpnsourcevisibility">DxgkDdiSetVidPnSourceVisibility</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiCommitVidPn</b>
+### -field DxgkDdiCommitVidPn
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddicommitvidpn">DxgkDdiCommitVidPn</a>  function.</p>
 </dd>
 
-### -field <b>DxgkDdiUpdateActiveVidPnPresentPath</b>
+### -field DxgkDdiUpdateActiveVidPnPresentPath
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiupdateactivevidpnpresentpath">DxgkDdiUpdateActiveVidPnPresentPath</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiRecommendMonitorModes</b>
+### -field DxgkDdiRecommendMonitorModes
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddirecommendmonitormodes">DxgkDdiRecommendMonitorModes</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiRecommendVidPnTopology</b>
+### -field DxgkDdiRecommendVidPnTopology
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddirecommendvidpntopology">DxgkDdiRecommendVidPnTopology</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiGetScanLine</b>
+### -field DxgkDdiGetScanLine
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddigetscanline">DxgkDdiGetScanLine</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiStopCapture</b>
+### -field DxgkDdiStopCapture
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddistopcapture">DxgkDdiStopCapture</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiControlInterrupt</b>
+### -field DxgkDdiControlInterrupt
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddicontrolinterrupt">DxgkDdiControlInterrupt</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiCreateOverlay</b>
+### -field DxgkDdiCreateOverlay
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddicreateoverlay">DxgkDdiCreateOverlay</a> function.</p>
@@ -450,31 +450,31 @@ typedef struct _DRIVER_INITIALIZATION_DATA {
 <div> </div>
 </dd>
 
-### -field <b>DxgkDdiDestroyDevice</b>
+### -field DxgkDdiDestroyDevice
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddidestroydevice">DxgkDdiDestroyDevice</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiOpenAllocation</b>
+### -field DxgkDdiOpenAllocation
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiopenallocation">DxgkDdiOpenAllocation</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiCloseAllocation</b>
+### -field DxgkDdiCloseAllocation
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddicloseallocation">DxgkDdiCloseAllocation</a> function. </p>
 </dd>
 
-### -field <b>DxgkDdiRender</b>
+### -field DxgkDdiRender
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddirender">DxgkDdiRender</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiPresent</b>
+### -field DxgkDdiPresent
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddipresent">DxgkDdiPresent</a> function.</p>
@@ -482,19 +482,19 @@ typedef struct _DRIVER_INITIALIZATION_DATA {
 <div> </div>
 </dd>
 
-### -field <b>DxgkDdiUpdateOverlay</b>
+### -field DxgkDdiUpdateOverlay
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiupdateoverlay">DxgkDdiUpdateOverlay</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiFlipOverlay</b>
+### -field DxgkDdiFlipOverlay
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiflipoverlay">DxgkDdiFlipOverlay</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiDestroyOverlay</b>
+### -field DxgkDdiDestroyOverlay
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddidestroyoverlay">DxgkDdiDestroyOverlay</a> function.</p>
@@ -502,25 +502,25 @@ typedef struct _DRIVER_INITIALIZATION_DATA {
 <div> </div>
 </dd>
 
-### -field <b>DxgkDdiCreateContext</b>
+### -field DxgkDdiCreateContext
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiDestroyContext</b>
+### -field DxgkDdiDestroyContext
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddidestroycontext">DxgkDdiDestroyContext</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiLinkDevice</b>
+### -field DxgkDdiLinkDevice
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddilinkdevice">DxgkDdiLinkDevice</a> function. Be aware that this function is specific to supporting linked graphics adapters.</p>
 </dd>
 
-### -field <b>DxgkDdiSetDisplayPrivateDriverFormat</b>
+### -field DxgkDdiSetDisplayPrivateDriverFormat
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddisetdisplayprivatedriverformat">DxgkDdiSetDisplayPrivateDriverFormat</a> function.</p>
@@ -528,7 +528,7 @@ typedef struct _DRIVER_INITIALIZATION_DATA {
 <div> </div>
 </dd>
 
-### -field <b>DxgkDdiDescribePageTable</b>
+### -field DxgkDdiDescribePageTable
 
 <dd>
 <p>
@@ -537,7 +537,7 @@ typedef struct _DRIVER_INITIALIZATION_DATA {
 <p>Available only when DXGKDDI_INTERFACE_VERSION ≥ DXGKDDI_INTERFACE_VERSION_WIN7.</p>
 </dd>
 
-### -field <b>DxgkDdiUpdatePageTable</b>
+### -field DxgkDdiUpdatePageTable
 
 <dd>
 <p>
@@ -546,7 +546,7 @@ typedef struct _DRIVER_INITIALIZATION_DATA {
 <p>Available only when DXGKDDI_INTERFACE_VERSION ≥ DXGKDDI_INTERFACE_VERSION_WIN7.</p>
 </dd>
 
-### -field <b>DxgkDdiUpdatePageDirectory</b>
+### -field DxgkDdiUpdatePageDirectory
 
 <dd>
 <p>
@@ -555,7 +555,7 @@ typedef struct _DRIVER_INITIALIZATION_DATA {
 <p>Available only when DXGKDDI_INTERFACE_VERSION ≥ DXGKDDI_INTERFACE_VERSION_WIN7.</p>
 </dd>
 
-### -field <b>DxgkDdiMovePageDirectory</b>
+### -field DxgkDdiMovePageDirectory
 
 <dd>
 <p>
@@ -564,7 +564,7 @@ typedef struct _DRIVER_INITIALIZATION_DATA {
 <p>Available only when DXGKDDI_INTERFACE_VERSION ≥ DXGKDDI_INTERFACE_VERSION_WIN7.</p>
 </dd>
 
-### -field <b>DxgkDdiSubmitRender</b>
+### -field DxgkDdiSubmitRender
 
 <dd>
 <p>
@@ -573,7 +573,7 @@ typedef struct _DRIVER_INITIALIZATION_DATA {
 <p>Available only when DXGKDDI_INTERFACE_VERSION ≥ DXGKDDI_INTERFACE_VERSION_WIN7.</p>
 </dd>
 
-### -field <b>DxgkDdiCreateAllocation2</b>
+### -field DxgkDdiCreateAllocation2
 
 <dd>
 <p>
@@ -584,7 +584,7 @@ typedef struct _DRIVER_INITIALIZATION_DATA {
 <div> </div>
 </dd>
 
-### -field <b>DxgkDdiRenderKm</b>
+### -field DxgkDdiRenderKm
 
 <dd>
 <p>
@@ -593,7 +593,7 @@ typedef struct _DRIVER_INITIALIZATION_DATA {
 <p>Available only when DXGKDDI_INTERFACE_VERSION ≥ DXGKDDI_INTERFACE_VERSION_WIN7.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>
@@ -602,7 +602,7 @@ typedef struct _DRIVER_INITIALIZATION_DATA {
 <p>Available only when DXGKDDI_INTERFACE_VERSION ≥ DXGKDDI_INTERFACE_VERSION_WIN7.</p>
 </dd>
 
-### -field <b>DxgkDdiQueryVidPnHWCapability</b>
+### -field DxgkDdiQueryVidPnHWCapability
 
 <dd>
 <p>
@@ -613,126 +613,126 @@ typedef struct _DRIVER_INITIALIZATION_DATA {
 <div> </div>
 </dd>
 
-### -field <b>DxgkDdiSetPowerComponentFState</b>
+### -field DxgkDdiSetPowerComponentFState
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddisetpowercomponentfstate">DxgkDdiSetPowerComponentFState</a> function.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DxgkDdiQueryDependentEngineGroup</b>
+### -field DxgkDdiQueryDependentEngineGroup
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiquerydependentenginegroup">DxgkDdiQueryDependentEngineGroup</a> function.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DxgkDdiQueryEngineStatus</b>
+### -field DxgkDdiQueryEngineStatus
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiqueryenginestatus">DxgkDdiQueryEngineStatus</a> function.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DxgkDdiResetEngine</b>
+### -field DxgkDdiResetEngine
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiresetengine">DxgkDdiResetEngine</a> function.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DxgkDdiStopDeviceAndReleasePostDisplayOwnership</b>
+### -field DxgkDdiStopDeviceAndReleasePostDisplayOwnership
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddireleasepostdisplayownership">DxgkDdiStopDeviceAndReleasePostDisplayOwnership</a> function.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DxgkDdiSystemDisplayEnable</b>
+### -field DxgkDdiSystemDisplayEnable
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddisystemdisplayenable">DxgkDdiSystemDisplayEnable</a> function.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DxgkDdiSystemDisplayWrite</b>
+### -field DxgkDdiSystemDisplayWrite
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddisystemdisplaywrite">DxgkDdiSystemDisplayWrite</a> function.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DxgkDdiCancelCommand</b>
+### -field DxgkDdiCancelCommand
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddicancelcommand">DxgkDdiCancelCommand</a> function.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DxgkDdiGetChildContainerId</b>
+### -field DxgkDdiGetChildContainerId
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddigetchildcontainerid">DxgkDdiGetChildContainerId</a> function.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DxgkDdiPowerRuntimeControlRequest</b>
+### -field DxgkDdiPowerRuntimeControlRequest
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddipowerruntimecontrolrequest">DxgkDdiPowerRuntimeControlRequest</a> function.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay</b>
+### -field DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddisetvidpnsourceaddresswithmultiplaneoverlay">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay</a> function.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>DxgkDdiNotifySurpriseRemoval</b>
+### -field DxgkDdiNotifySurpriseRemoval
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddinotifysurpriseremoval">DxgkDdiNotifySurpriseRemoval</a> function.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DxgkDdiGetNodeMetadata</b>
+### -field DxgkDdiGetNodeMetadata
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-getnodemetadata.md">DxgkDdiGetNodeMetadata</a> function.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>DxgkDdiSetPowerPState</b>
+### -field DxgkDdiSetPowerPState
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>DxgkDdiControlInterrupt2</b>
+### -field DxgkDdiControlInterrupt2
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-controlinterrupt2.md">DxgkDdiControlInterrupt2</a> function.</p>
 <p>Supported starting with Windows 10</p>
 </dd>
 
-### -field <b>DxgkDdiCheckMultiPlaneOverlaySupport</b>
+### -field DxgkDdiCheckMultiPlaneOverlaySupport
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-checkmultiplaneoverlaysupport.md">DxgkDdiCheckMultiPlaneOverlaySupport</a> function.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>DxgkDdiCalibrateGpuClock</b>
+### -field DxgkDdiCalibrateGpuClock
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddicalibrategpuclock">DxgkDdiCalibrateGpuClock</a> function.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>DxgkDdiFormatHistoryBuffer</b>
+### -field DxgkDdiFormatHistoryBuffer
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.dxgkddiformathistorybuffer">DxgkDdiFormatHistoryBuffer</a> function.</p>

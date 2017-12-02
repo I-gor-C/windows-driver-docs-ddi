@@ -61,31 +61,31 @@ typedef struct _PARTITION_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>StartingOffset</b>
+### -field StartingOffset
 
 <dd>
 <p>Specifies the offset in bytes on drive where the partition begins.</p>
 </dd>
 
-### -field <b>PartitionLength</b>
+### -field PartitionLength
 
 <dd>
 <p>Specifies the length in bytes of the partition. </p>
 </dd>
 
-### -field <b>HiddenSectors</b>
+### -field HiddenSectors
 
 <dd>
 <p>Specifies the number of hidden sectors. </p>
 </dd>
 
-### -field <b>PartitionNumber</b>
+### -field PartitionNumber
 
 <dd>
 <p>Specifies the number of the partition.</p>
 </dd>
 
-### -field <b>PartitionType</b>
+### -field PartitionType
 
 <dd>
 <dl>
@@ -228,19 +228,19 @@ typedef struct _PARTITION_INFORMATION {
 </dl>
 </dd>
 
-### -field <b>BootIndicator</b>
+### -field BootIndicator
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that this partition is a bootable (active) partition for this device. When <b>FALSE</b>, this partition is not bootable. This member is set according to the partition list entry boot indicator returned by <a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a>. </p>
 </dd>
 
-### -field <b>RecognizedPartition</b>
+### -field RecognizedPartition
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the system recognized the type of the partition. When <b>FALSE</b>, the system did not recognize the type of the partition. </p>
 </dd>
 
-### -field <b>RewritePartition</b>
+### -field RewritePartition
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the partition information has changed. When <b>FALSE</b>, the partition information has not changed. This member has a value of <b>TRUE</b> when the partition has changed as a result of an <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-set-drive-layout.md">IOCTL_DISK_SET_DRIVE_LAYOUT</a> IOCTL. This informs the system that the partition information needs to be rewritten.</p>

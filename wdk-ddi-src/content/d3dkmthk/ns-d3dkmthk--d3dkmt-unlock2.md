@@ -55,13 +55,13 @@ typedef struct _D3DKMT_UNLOCK2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>The handle to the device.</p>
 </dd>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>The handle to the allocation to unlock.</p>

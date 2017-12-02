@@ -54,7 +54,7 @@ HRESULT GetThumbnail(
 ## -parameters
 <dl>
 
-### -param <i>ppThumbnail</i> [out]
+### -param ppThumbnail [out]
 
 <dd>
 <p>The thumbnail object in the document.</p>

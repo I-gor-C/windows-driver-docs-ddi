@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>The IOCTL_HID_READ_REPORT request transfers an input report from a HIDClass device into the HID class driver's buffer.</p>
-<p>For general information about HIDClass devices, see <a href="NULL">HID Collections</a>. </p>
+<p>For general information about HIDClass devices, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 
 ## -ioctlparameters

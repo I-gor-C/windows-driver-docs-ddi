@@ -7,7 +7,7 @@ old-location: debugger\writephysical3.htm
 old-project: debugger
 ms.assetid: ec691a7c-a569-49dd-af13-bfbf403be297
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugDataSpaces4, WritePhysical, IDebugDataSpaces4::WritePhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ HRESULT WritePhysical(
 ## -parameters
 <dl>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the physical address of the memory to write the data to.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Specifies the data to write.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size in bytes of the buffer <i>Buffer</i>.  This is the maximum number of bytes that will be written.</p>
 </dd>
 
-### -param <i>BytesWritten</i> [out, optional]
+### -param BytesWritten [out, optional]
 
 <dd>
 <p>Receives the number of bytes written to the target's memory.  If <i>BytesWritten</i> is <b>NULL</b>, this information is not returned.</p>
@@ -89,7 +89,7 @@ HRESULT WritePhysical(
 
 <p> </p>
 
-<p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
+<p>This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p>
 
 ## -remarks
 <p>This method is only available in kernel-mode debugging.</p>

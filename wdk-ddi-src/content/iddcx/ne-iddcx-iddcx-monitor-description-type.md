@@ -58,7 +58,7 @@ typedef enum _IDDCX_MONITOR_DESCRIPTION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="IDDCX_MONITOR_DESCRIPTION_TYPE_UNINITIALIZED"></a><a id="iddcx_monitor_description_type_uninitialized"></a><b>IDDCX_MONITOR_DESCRIPTION_TYPE_UNINITIALIZED</b>
+### -field IDDCX_MONITOR_DESCRIPTION_TYPE_UNINITIALIZED
 
 <dd>
 <p>
@@ -66,7 +66,7 @@ typedef enum _IDDCX_MONITOR_DESCRIPTION_TYPE {
                     Indicates that an <b>IDDCX_MONITOR_DESCRIPTION_TYPE</b> variable has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="IDDCX_MONITOR_DESCRIPTION_TYPE_EDID"></a><a id="iddcx_monitor_description_type_edid"></a><b>IDDCX_MONITOR_DESCRIPTION_TYPE_EDID</b>
+### -field IDDCX_MONITOR_DESCRIPTION_TYPE_EDID
 
 <dd>
 <p>
@@ -74,7 +74,7 @@ typedef enum _IDDCX_MONITOR_DESCRIPTION_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_MONITOR_DESCRIPTION_TYPE_DISPLAYID"></a><a id="iddcx_monitor_description_type_displayid"></a><b>IDDCX_MONITOR_DESCRIPTION_TYPE_DISPLAYID</b>
+### -field IDDCX_MONITOR_DESCRIPTION_TYPE_DISPLAYID
 
 <dd>
 <p>

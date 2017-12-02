@@ -59,20 +59,20 @@ typedef struct _WHEA_PCIXDEVICE_ERROR_SECTION {
 ## -struct-fields
 <dl>
 
-### -field <b>ValidBits</b>
+### -field ValidBits
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-pcixdevice-error-section-validbits.md">WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.</p>
 </dd>
 
-### -field <b>ErrorStatus</b>
+### -field ErrorStatus
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-error-status.md">WHEA_ERROR_STATUS</a> structure that contains PCI or PCI-X device error status data.</p>
 <p>This member contains valid data only if the <b>ValidBits.ErrorStatus</b> bit is set.</p>
 </dd>
 
-### -field <b>IdInfo</b>
+### -field IdInfo
 
 <dd>
 <p>A WHEA_PCIXDEVICE_ID structure that contains data that identifies the PCI or PCI-X device. The WHEA_PCIXDEVICE_ID structure is defined as follows:</p>
@@ -99,55 +99,55 @@ typedef struct _WHEA_PCIXDEVICE_ERROR_SECTION {
 <p></p>
 <dl>
 
-### -field <a id="VendorId"></a><a id="vendorid"></a><a id="VENDORID"></a><b>VendorId</b>
+### -field VendorId
 
 <dd>
 <p>The vendor ID of the device.</p>
 </dd>
 
-### -field <a id="DeviceId"></a><a id="deviceid"></a><a id="DEVICEID"></a><b>DeviceId</b>
+### -field DeviceId
 
 <dd>
 <p>The device ID of the device.</p>
 </dd>
 
-### -field <a id="ClassCode"></a><a id="classcode"></a><a id="CLASSCODE"></a><b>ClassCode</b>
+### -field ClassCode
 
 <dd>
 <p>The class code of the device.</p>
 </dd>
 
-### -field <a id="FunctionNumber"></a><a id="functionnumber"></a><a id="FUNCTIONNUMBER"></a><b>FunctionNumber</b>
+### -field FunctionNumber
 
 <dd>
 <p>The function number of the device on the bus.</p>
 </dd>
 
-### -field <a id="DeviceNumber"></a><a id="devicenumber"></a><a id="DEVICENUMBER"></a><b>DeviceNumber</b>
+### -field DeviceNumber
 
 <dd>
 <p>The device number of the device on the bus.</p>
 </dd>
 
-### -field <a id="BusNumber"></a><a id="busnumber"></a><a id="BUSNUMBER"></a><b>BusNumber</b>
+### -field BusNumber
 
 <dd>
 <p>The number of the bus that contains the device.</p>
 </dd>
 
-### -field <a id="SegmentNumber"></a><a id="segmentnumber"></a><a id="SEGMENTNUMBER"></a><b>SegmentNumber</b>
+### -field SegmentNumber
 
 <dd>
 <p>The number of the bus segment that contains the device.</p>
 </dd>
 
-### -field <a id="Reserved1"></a><a id="reserved1"></a><a id="RESERVED1"></a><b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="Reserved2"></a><a id="reserved2"></a><a id="RESERVED2"></a><b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for system use.</p>
@@ -156,21 +156,21 @@ typedef struct _WHEA_PCIXDEVICE_ERROR_SECTION {
 <p>This member contains valid data only if the <b>ValidBits.IdInfo</b> bit is set.</p>
 </dd>
 
-### -field <b>MemoryNumber</b>
+### -field MemoryNumber
 
 <dd>
 <p>The number of memory mapped register address/data pair values from the PCI device that are included in the <b>RegisterDataPairs</b> member.</p>
 <p>This member contains valid data only if the <b>ValidBits.MemoryNumber</b> bit is set.</p>
 </dd>
 
-### -field <b>IoNumber</b>
+### -field IoNumber
 
 <dd>
 <p>The number of I/O mapped register address/data pair values from the PCI device that are included in the <b>RegisterDataPairs</b> member.</p>
 <p>This member contains valid data only if the <b>ValidBits.IoNumber</b> bit is set.</p>
 </dd>
 
-### -field <b>RegisterDataPairs</b>
+### -field RegisterDataPairs
 
 <dd>
 <p>An array of WHEA_PCIXDEVICE_REGISTER_PAIR structures that contains the register address/data pair values for the PCI device. The WHEA_PCIXDEVICE_REGISTER_PAIR structure is defined as follows:</p>
@@ -190,13 +190,13 @@ typedef struct _WHEA_PCIXDEVICE_ERROR_SECTION {
 <p></p>
 <dl>
 
-### -field <a id="Register"></a><a id="register"></a><a id="REGISTER"></a><b>Register</b>
+### -field Register
 
 <dd>
 <p>The address of the register.</p>
 </dd>
 
-### -field <a id="Data"></a><a id="data"></a><a id="DATA"></a><b>Data</b>
+### -field Data
 
 <dd>
 <p>The data contained in the register.</p>

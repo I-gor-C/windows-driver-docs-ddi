@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>InputChannels</b>
+### -field InputChannels
 
 <dd>
 <p>Specifies the number of input channels.</p>
 </dd>
 
-### -field <b>OutputChannels</b>
+### -field OutputChannels
 
 <dd>
 <p>Specifies the number of output channels.</p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Contains the first entry in a two-dimensional array of <a href="audio.ksaudio_mix_caps">KSAUDIO_MIX_CAPS</a> structures. Given a supermixer node with <i>m</i> input channels and <i>n</i> output channels, the array contains <i>m</i>*<i></i> elements. Each element describes the mix-level capabilities of the path from a particular input channel to a particular output channel.</p>

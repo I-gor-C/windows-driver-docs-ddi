@@ -58,13 +58,13 @@ typedef struct _DEVICEPROPERTYHEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Size, in bytes, of the DEVICEPROPERTYHEADER structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Is a set of flags that can be set to the following value: </p>
@@ -85,13 +85,13 @@ typedef struct _DEVICEPROPERTYHEADER {
 <p> </p>
 </dd>
 
-### -field <b>hPrinter</b>
+### -field hPrinter
 
 <dd>
 <p>Printer handle.</p>
 </dd>
 
-### -field <b>pszPrinterName</b>
+### -field pszPrinterName
 
 <dd>
 <p>Pointer to a NULL-terminated string representing a printer name.</p>

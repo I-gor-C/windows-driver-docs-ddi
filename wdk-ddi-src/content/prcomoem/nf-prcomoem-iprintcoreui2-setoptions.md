@@ -59,13 +59,13 @@ HRESULT SetOptions(
 ## -parameters
 <dl>
 
-### -param <i>poemuiobj</i> [in]
+### -param poemuiobj [in]
 
 <dd>
 <p>Pointer to the current context, an <a href="..\printoem\ns-printoem--oemuiobj.md">OEMUIOBJ</a> structure.</p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>Specifies whether the core driver is to resolve conflicts. This parameter must be set to one of the following values:</p>
@@ -94,19 +94,19 @@ HRESULT SetOptions(
 <p> </p>
 </dd>
 
-### -param <i>pmszFeatureOptionBuf</i> [in]
+### -param pmszFeatureOptionBuf [in]
 
 <dd>
 <p>Pointer to a caller-supplied buffer containing a list of feature/option keyword pairs in MULTI_SZ format. Each item in this list is separated from the next by a null character, and the list is terminated with two null characters.</p>
 </dd>
 
-### -param <i>cbIn</i> [in]
+### -param cbIn [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer pointed to by <i>pmszFeatureOptionBuf</i>. This size includes the last MULTI_SZ null character.</p>
 </dd>
 
-### -param <i>pdwResult</i> [out]
+### -param pdwResult [out]
 
 <dd>
 <p>Pointer to a memory location that receives one of the following values. These constants are defined in printoem.h.</p>
@@ -172,11 +172,11 @@ HRESULT SetOptions(
 
 <p>The <i>pmszFeatureOptionBuf</i> input buffer must be constructed in the same way as the output buffer of the <b>IPrintCoreUI2::GetOptions</b> method. That is, the feature/option keyword pairs must be in MULTI_SZ format, and each item in the list is separated from the next by a null character. A pair of null characters terminates the list.</p>
 
-<p>If the input buffer contains a feature keyword or its option keyword that is not recognized, or the feature is recognized but not supported in the current sticky mode (see <a href="NULL">Replacing Driver-Supplied Property Sheet Pages</a>), then the feature/option pair is ignored, and the current option for that feature continues to be in effect.</p>
+<p>If the input buffer contains a feature keyword or its option keyword that is not recognized, or the feature is recognized but not supported in the current sticky mode (see <a href="https://msdn.microsoft.com/b7f79841-f82c-4a60-9c2f-58772a65a5eb">Replacing Driver-Supplied Property Sheet Pages</a>), then the feature/option pair is ignored, and the current option for that feature continues to be in effect.</p>
 
 <p>This method is supported only for UI plug-ins that fully replace the core driver's standard UI pages, and is supported only during the UI plug-in's <a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a> and <a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a> functions, and their property sheet callback routines.</p>
 
-<p>For more information, see <a href="NULL">Using GetOptions and SetOptions</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/c8b5c235-0b74-47c8-b6ba-eba810a8467b">Using GetOptions and SetOptions</a>.</p>
 
 ## -requirements
 <table>

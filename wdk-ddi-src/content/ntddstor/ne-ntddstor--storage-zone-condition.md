@@ -64,49 +64,49 @@ typedef enum _STORAGE_ZONE_CONDITION {
 ## -enum-fields
 <dl>
 
-### -field <a id="ZoneConditionConventional"></a><a id="zoneconditionconventional"></a><a id="ZONECONDITIONCONVENTIONAL"></a><b>ZoneConditionConventional</b>
+### -field ZoneConditionConventional
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <a id="ZoneConditionEmpty"></a><a id="zoneconditionempty"></a><a id="ZONECONDITIONEMPTY"></a><b>ZoneConditionEmpty</b>
+### -field ZoneConditionEmpty
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <a id="ZoneConditionImplicitlyOpened"></a><a id="zoneconditionimplicitlyopened"></a><a id="ZONECONDITIONIMPLICITLYOPENED"></a><b>ZoneConditionImplicitlyOpened</b>
+### -field ZoneConditionImplicitlyOpened
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <a id="ZoneConditionExplicitlyOpened"></a><a id="zoneconditionexplicitlyopened"></a><a id="ZONECONDITIONEXPLICITLYOPENED"></a><b>ZoneConditionExplicitlyOpened</b>
+### -field ZoneConditionExplicitlyOpened
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <a id="ZoneConditionClosed"></a><a id="zoneconditionclosed"></a><a id="ZONECONDITIONCLOSED"></a><b>ZoneConditionClosed</b>
+### -field ZoneConditionClosed
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <a id="ZoneConditionReadOnly"></a><a id="zoneconditionreadonly"></a><a id="ZONECONDITIONREADONLY"></a><b>ZoneConditionReadOnly</b>
+### -field ZoneConditionReadOnly
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <a id="ZoneConditionFull"></a><a id="zoneconditionfull"></a><a id="ZONECONDITIONFULL"></a><b>ZoneConditionFull</b>
+### -field ZoneConditionFull
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <a id="ZoneConditionOffline"></a><a id="zoneconditionoffline"></a><a id="ZONECONDITIONOFFLINE"></a><b>ZoneConditionOffline</b>
+### -field ZoneConditionOffline
 
 <dd>
 <p>N/A</p>

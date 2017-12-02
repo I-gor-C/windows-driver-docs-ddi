@@ -56,13 +56,13 @@ VOID VideoPortWritePortUchar(
 ## -parameters
 <dl>
 
-### -param <i>Port</i> 
+### -param Port 
 
 <dd>
 <p>Pointer to the port. The given <i>Port</i> must be in a mapped I/O-space range returned by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.</p>
 </dd>
 
-### -param <i>Value</i> 
+### -param Value 
 
 <dd>
 <p>Specifies a byte to be transferred to the adapter.</p>

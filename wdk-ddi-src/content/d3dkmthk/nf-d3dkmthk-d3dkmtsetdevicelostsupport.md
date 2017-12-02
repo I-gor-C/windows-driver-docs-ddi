@@ -56,7 +56,7 @@ NTSTATUS  D3DKMTSetDeviceLostSupport(
 ## -parameters
 <dl>
 
-### -param <i>D3dkmt_setdevicelostsupport</i> [in]
+### -param D3dkmt_setdevicelostsupport [in]
 
 <dd>
 <p>Indicates that the device has lost support.</p>

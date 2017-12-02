@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the dimension (width by height) of the video port.</p>
 </dd>
 
-### -field <b>MaxPixelsPerSecond</b>
+### -field MaxPixelsPerSecond
 
 <dd>
 <p>Indicates the maximum pixel throughput for the selected image size.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Do not use.</p>

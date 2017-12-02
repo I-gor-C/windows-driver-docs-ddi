@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestimpersonate.htm
 old-project: wdf
 ms.assetid: E5267F04-D693-453B-BAD2-C61F89B07F6E
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfRequestImpersonate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ NTSTATUS WdfRequestImpersonate(
 ## -parameters
 <dl>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to the framework request object that represents the I/O request that is being completed.</p>
 </dd>
 
-### -param <i>ImpersonationLevel</i> [in]
+### -param ImpersonationLevel [in]
 
 <dd>
 <p>A <a href="..\wudfddi\ne-wudfddi--security-impersonation-level.md">SECURITY_IMPERSONATION_LEVEL</a>-typed value that identifies the level of impersonation.</p>
 </dd>
 
-### -param <i>EvtRequestImpersonate</i> [in]
+### -param EvtRequestImpersonate [in]
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-impersonate.md">EvtRequestImpersonate</a> event callback function.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>A pointer to a buffer that contains context information that is related to the impersonation call. The framework passes this context information in a call to the <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-impersonate.md">EvtRequestImpersonate</a> event callback function. This parameter is optional and can be <b>NULL</b></p>
@@ -174,4 +174,4 @@ NTSTATUS WdfRequestImpersonate(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestImpersonate method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestImpersonate method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -61,49 +61,49 @@ NTSTATUS NewMasterDmaChannel(
 ## -parameters
 <dl>
 
-### -param <i>DmaChannel</i> [out]
+### -param DmaChannel [out]
 
 <dd>
 <p>Pointer to a caller-allocated pointer variable into which the method writes a pointer to the new <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a> object. Specify a valid, non-<b>NULL</b> pointer value for this parameter.</p>
 </dd>
 
-### -param <i>OuterUnknown</i> [in]
+### -param OuterUnknown [in]
 
 <dd>
 <p>Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate the DMA-channel object. This parameter is optional. If aggregation is not required, specify this parameter as <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ResourceList</i> [in, optional]
+### -param ResourceList [in, optional]
 
 <dd>
 <p>Pointer to the miniport driver's resource list, which is an <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a> object. This parameter is optional and can be specified as <b>NULL</b>. The <code>NewMasterDmaChannel</code> method currently makes no use of this parameter.</p>
 </dd>
 
-### -param <i>MaximumLength</i> [in]
+### -param MaximumLength [in]
 
 <dd>
 <p>Maximum length in bytes of the cyclic DMA buffer that will be associated with this channel.</p>
 </dd>
 
-### -param <i>Dma32BitAddresses</i> [in]
+### -param Dma32BitAddresses [in]
 
 <dd>
 <p>Specifies the use of 32-bit addresses.</p>
 </dd>
 
-### -param <i>Dma64BitAddresses</i> [in]
+### -param Dma64BitAddresses [in]
 
 <dd>
 <p>Specifies the use of 64-bit addresses.</p>
 </dd>
 
-### -param <i>DmaWidth</i> [in]
+### -param DmaWidth [in]
 
 <dd>
 <p>Not used. Set to (DMA_WIDTH)(-1).</p>
 </dd>
 
-### -param <i>DmaSpeed</i> [in]
+### -param DmaSpeed [in]
 
 <dd>
 <p>Not used. Set to (DMA_SPEED)(-1).</p>
@@ -118,7 +118,7 @@ NTSTATUS NewMasterDmaChannel(
 
 <p>A WaveCyclic device with built-in bus-mastering DMA hardware is referred to as a <i>master device</i>. In contrast, a <i>subordinate device</i> lacks DMA hardware and has to rely on the system DMA controller to perform any data transfers that it requires. The <code>NewMasterDmaChannel</code> method creates a DMA-channel object for a master device. To create a DMA-channel object for a subordinate device, call the <a href="audio.iportwavecyclic_newslavedmachannel">IPortWaveCyclic::NewSlaveDmaChannel</a> method instead. For more information about master and subordinate devices, see <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a> and <a href="..\portcls\nn-portcls-idmachannelslave.md">IDmaChannelSlave</a>.</p>
 
-<p>The <i>DmaChannel</i>, <i>OuterUnknown</i>, and <i>ResourceList</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>DmaChannel</i>, <i>OuterUnknown</i>, and <i>ResourceList</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

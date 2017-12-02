@@ -76,43 +76,43 @@ typedef struct tagDEVCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>CanRecord</b>
+### -field CanRecord
 
 <dd>
 <p>Specifies if the external device can record.</p>
 </dd>
 
-### -field <b>CanRecordStrobe</b>
+### -field CanRecordStrobe
 
 <dd>
 <p>For multitrack devices. Specifies if the external device can record. Switches currently recording tracks off and selected nonrecording track into record.</p>
 </dd>
 
-### -field <b>HasAudio</b>
+### -field HasAudio
 
 <dd>
 <p>Specifies if the external device has audio capabilities.</p>
 </dd>
 
-### -field <b>HasVideo</b>
+### -field HasVideo
 
 <dd>
 <p>Specifies if the external device has video capabilities.</p>
 </dd>
 
-### -field <b>UsesFiles</b>
+### -field UsesFiles
 
 <dd>
 <p>Specifies if the external device uses files.</p>
 </dd>
 
-### -field <b>CanSave</b>
+### -field CanSave
 
 <dd>
 <p>Specifies if the external device can save.</p>
 </dd>
 
-### -field <b>DeviceType</b>
+### -field DeviceType
 
 <dd>
 <p>Specifies the type of the external device. See Remarks.</p>
@@ -173,91 +173,91 @@ typedef struct tagDEVCAPS {
 <p> </p>
 </dd>
 
-### -field <b>TCRead</b>
+### -field TCRead
 
 <dd>
 <p>Specifies if the external device can read timecodes.</p>
 </dd>
 
-### -field <b>TCWrite</b>
+### -field TCWrite
 
 <dd>
 <p>Specifies if the external device can write timecodes.</p>
 </dd>
 
-### -field <b>CTLRead</b>
+### -field CTLRead
 
 <dd>
 <p>Specifies if the external device can read to a control track (nontimecode) target value.</p>
 </dd>
 
-### -field <b>IndexRead</b>
+### -field IndexRead
 
 <dd>
 <p>Specifies if the external device can read to an index (nontimecode) target value.</p>
 </dd>
 
-### -field <b>Preroll</b>
+### -field Preroll
 
 <dd>
 <p>Specifies the external device's preroll time in the current time format.</p>
 </dd>
 
-### -field <b>Postroll</b>
+### -field Postroll
 
 <dd>
 <p>Specifies the external device's postroll time in the current time format.</p>
 </dd>
 
-### -field <b>SyncAcc</b>
+### -field SyncAcc
 
 <dd>
 <p>Indicates the external device's synchronization accuracy.</p>
 </dd>
 
-### -field <b>NormRate</b>
+### -field NormRate
 
 <dd>
 <p>Specifies the external device's normal frame rate.</p>
 </dd>
 
-### -field <b>CanPreview</b>
+### -field CanPreview
 
 <dd>
 <p>Specifies if the external device can preview.</p>
 </dd>
 
-### -field <b>CanMonitorSrc</b>
+### -field CanMonitorSrc
 
 <dd>
 <p>Specifies if the external device can monitor source.</p>
 </dd>
 
-### -field <b>CanTest</b>
+### -field CanTest
 
 <dd>
 <p>Indicates the implementation of the external device allows testing of methods/parameters by setting the high bit of a parameter that makes sense. This is not implemented an always returns FALSE.</p>
 </dd>
 
-### -field <b>VideoIn</b>
+### -field VideoIn
 
 <dd>
 <p>Indicates the external device accepts video as an input.</p>
 </dd>
 
-### -field <b>AudioIn</b>
+### -field AudioIn
 
 <dd>
 <p>Indicates the external device accepts audio as an input.</p>
 </dd>
 
-### -field <b>Calibrate</b>
+### -field Calibrate
 
 <dd>
 <p>Indicates if the external device requires calibrating.</p>
 </dd>
 
-### -field <b>SeekType</b>
+### -field SeekType
 
 <dd>
 <p>Specifies the type of seeking the external device is capable of. For example:</p>
@@ -294,7 +294,7 @@ typedef struct tagDEVCAPS {
 <p> </p>
 </dd>
 
-### -field <b>SimulatedHardware</b>
+### -field SimulatedHardware
 
 <dd>
 <p>Must be set to zero.</p>

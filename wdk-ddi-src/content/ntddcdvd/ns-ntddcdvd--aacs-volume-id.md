@@ -55,13 +55,13 @@ typedef struct _AACS_VOLUME_ID {
 ## -struct-fields
 <dl>
 
-### -field <b>VolumeID</b>
+### -field VolumeID
 
 <dd>
 <p>The volume identifier.</p>
 </dd>
 
-### -field <b>MAC</b>
+### -field MAC
 
 <dd>
 <p>The message authentication code (MAC) that the client uses to verify that the volume identifier is for the current AACS authentication sequence.</p>

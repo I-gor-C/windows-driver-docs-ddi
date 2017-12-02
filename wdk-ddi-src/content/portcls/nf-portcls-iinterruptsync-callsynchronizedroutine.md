@@ -55,13 +55,13 @@ NTSTATUS CallSynchronizedRoutine(
 ## -parameters
 <dl>
 
-### -param <i>Routine</i> [in]
+### -param Routine [in]
 
 <dd>
 <p>Pointer to the routine that is to be called. This routine will run exclusive of the object's ISR and all other routines that are synchronized through the object. Even on multiple-processor machines, routines that are synchronized by a given object will not run concurrently. This parameter is a function pointer of type PINTERRUPTSYNCROUTINE (see <a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>).</p>
 </dd>
 
-### -param <i>DynamicContext</i> [in]
+### -param DynamicContext [in]
 
 <dd>
 <p>A context value to be passed to the routine.</p>

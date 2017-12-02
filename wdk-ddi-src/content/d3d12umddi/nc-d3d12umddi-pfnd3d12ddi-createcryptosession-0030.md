@@ -57,25 +57,25 @@ HRESULT APIENTRY* PFND3D12DDI_CREATECRYPTOSESSION_0030(
 ## -parameters
 <dl>
 
-### -param <i>hDrvDevice</i> 
+### -param hDrvDevice 
 
 <dd>
 <p>The hardware device being processed.</p>
 </dd>
 
-### -param <i>pArgs</i> [in]
+### -param pArgs [in]
 
 <dd>
 <p>The arguments used to create a crypto session.</p>
 </dd>
 
-### -param <i>hDrvCryptoSession</i> 
+### -param hDrvCryptoSession 
 
 <dd>
 <p>Used to create a crypto session.</p>
 </dd>
 
-### -param <i>hRtProtectedSession</i> 
+### -param hRtProtectedSession 
 
 <dd>
 <p>Used to create a protected session.</p>

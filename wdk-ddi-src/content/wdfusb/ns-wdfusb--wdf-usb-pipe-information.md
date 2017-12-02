@@ -7,7 +7,7 @@ old-location: wdf\wdf_usb_pipe_information.htm
 old-project: wdf
 ms.assetid: 05cba67b-c9da-4345-bc6f-09de12a617c1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_USB_PIPE_INFORMATION, WDF_USB_PIPE_INFORMATION, *PWDF_USB_PIPE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,44 +62,44 @@ typedef struct _WDF_USB_PIPE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>MaximumPacketSize</b>
+### -field MaximumPacketSize
 
 <dd>
 <p>The maximum packet size, in bytes, that the pipe's endpoint is capable of sending or receiving.</p>
 <p>For high-speed isochronous endpoints, the received <b>MaximumPacketSize</b> value includes the number of bytes that can be transferred in additional transactions, if the endpoint supports them.</p>
 </dd>
 
-### -field <b>EndpointAddress</b>
+### -field EndpointAddress
 
 <dd>
 <p>The address of the endpoint on the USB device. For more information about endpoint addresses, see the USB specification.</p>
 </dd>
 
-### -field <b>Interval</b>
+### -field Interval
 
 <dd>
 <p>The endpoint's polling interval, if the <b>PipeType</b> member is set to <b>WdfUsbPipeTypeInterrupt</b>. For more information about polling intervals, see the USB specification.</p>
 </dd>
 
-### -field <b>SettingIndex</b>
+### -field SettingIndex
 
 <dd>
 <p>An index value that identifies the alternate setting, within an interface, that the pipe belongs to. For more information about alternate settings, see the USB specification.</p>
 </dd>
 
-### -field <b>PipeType</b>
+### -field PipeType
 
 <dd>
 <p>A <a href="..\wdfusb\ne-wdfusb--wdf-usb-pipe-type.md">WDF_USB_PIPE_TYPE</a>-typed value that specifies the type of pipe.</p>
 </dd>
 
-### -field <b>MaximumTransferSize</b>
+### -field MaximumTransferSize
 
 <dd>
 <p>This member is not used.  </p>
@@ -168,4 +168,4 @@ typedef struct _WDF_USB_PIPE_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_PIPE_INFORMATION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_PIPE_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

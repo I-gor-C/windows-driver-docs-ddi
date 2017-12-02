@@ -56,15 +56,15 @@ typedef enum _D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE_MONOCHROME"></a><a id="d3dkmt_outdupl_pointer_shape_type_monochrome"></a><b>D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE_MONOCHROME</b>
+### -field D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE_MONOCHROME
 
 <dd></dd>
 
-### -field <a id="D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE_COLOR"></a><a id="d3dkmt_outdupl_pointer_shape_type_color"></a><b>D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE_COLOR</b>
+### -field D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE_COLOR
 
 <dd></dd>
 
-### -field <a id="D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE_MASKED_COLOR"></a><a id="d3dkmt_outdupl_pointer_shape_type_masked_color"></a><b>D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE_MASKED_COLOR</b>
+### -field D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE_MASKED_COLOR
 
 <dd></dd>
 </dl>

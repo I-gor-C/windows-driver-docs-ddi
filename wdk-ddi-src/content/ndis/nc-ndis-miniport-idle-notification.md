@@ -7,7 +7,7 @@ old-location: netvista\miniportidlenotification.htm
 old-project: netvista
 ms.assetid: D679DEF0-1229-4731-8024-4DEDAE5B0185
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,13 +61,13 @@ NDIS_STATUS MiniportIdleNotification(
 ## -parameters
 <dl>
 
-### -param <i>MiniportAdapterContext</i> [in]
+### -param MiniportAdapterContext [in]
 
 <dd>
 <p>A handle to a context area that the miniport driver allocated in its <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> function. The miniport driver uses this context area to maintain state information for a network adapter.</p>
 </dd>
 
-### -param <i>ForceIdle</i> [in]
+### -param ForceIdle [in]
 
 <dd>
 <p>A <b>BOOLEAN</b> value that, when set to <b>TRUE</b>, specifies that the miniport driver must not veto the idle notification and must continue with the low-power state transition.</p>
@@ -88,13 +88,13 @@ NDIS_STATUS MiniportIdleNotification(
 <p> </p>
 
 ## -remarks
-<p>The <i>MiniportIdleNotification</i> handler function is required for miniport drivers that support the NDIS selective suspend interface. For more information about how the driver registers its selective suspend handler functions, see <a href="NULL">Registering NDIS Selective Suspend Handler Functions</a>.</p>
+<p>The <i>MiniportIdleNotification</i> handler function is required for miniport drivers that support the NDIS selective suspend interface. For more information about how the driver registers its selective suspend handler functions, see <a href="netvista.registering_ndis_selective_suspend_handler_functions">Registering NDIS Selective Suspend Handler Functions</a>.</p>
 
 <p>NDIS sets the <i>ForceIdle</i> parameter to <b>FALSE</b> when the network adapter has been inactive for longer than the idle time-out period. Therefore, NDIS <i>selectively suspends</i> only the network adapter.
 
 </p>
 
-<p>The duration of the idle time-out period is specified by the value of the <b>*SSIdleTimeout</b> INF keyword. For more information about this keyword, see <a href="NULL">Standardized INF Keywords for NDIS Selective Suspend</a>. 
+<p>The duration of the idle time-out period is specified by the value of the <b>*SSIdleTimeout</b> INF keyword. For more information about this keyword, see <a href="netvista.standardized_inf_keywords_for_ndis_selective_suspend">Standardized INF Keywords for NDIS Selective Suspend</a>. 
 
 </p>
 
@@ -117,11 +117,11 @@ Finally, the miniport driver calls <a href="..\ndis\nf-ndis-ndismidlenotificatio
 
 <p> After the network adapter is in a low-power state, the miniport driver can complete the idle notification itself in order to resume the adapter to a full-power state. The reasons for doing this are specific to the design and requirements of the driver and adapter. </p>
 
-<p>The miniport driver completes the idle notification  by calling <a href="..\ndis\nf-ndis-ndismidlenotificationcomplete.md">NdisMIdleNotificationComplete</a>. For more information about how the miniport driver completes the idle notification, see <a href="NULL">Completing the NDIS Selective Suspend Idle Notification</a>.</p>
+<p>The miniport driver completes the idle notification  by calling <a href="..\ndis\nf-ndis-ndismidlenotificationcomplete.md">NdisMIdleNotificationComplete</a>. For more information about how the miniport driver completes the idle notification, see <a href="netvista.completing_the_ndis_selective_suspend_idle_notification">Completing the NDIS Selective Suspend Idle Notification</a>.</p>
 
-<p>For more information on how to handle idle notifications for NDIS selective suspend, see <a href="NULL">Handling the NDIS Selective Suspend Idle Notification</a>.</p>
+<p>For more information on how to handle idle notifications for NDIS selective suspend, see <a href="netvista.handling_the_ndis_selective_suspend_idle_notification">Handling the NDIS Selective Suspend Idle Notification</a>.</p>
 
-<p>For guidelines on how to implement the <i>MiniportIdleNotification</i> handler function, see <a href="NULL">Implementing a MiniportIdleNotification Handler Function</a>.</p>
+<p>For guidelines on how to implement the <i>MiniportIdleNotification</i> handler function, see <a href="netvista.implementing_a_miniportidlenotification_handler_function">Implementing a MiniportIdleNotification Handler Function</a>.</p>
 
 ## -requirements
 <table>
@@ -165,4 +165,4 @@ Finally, the miniport driver calls <a href="..\ndis\nf-ndis-ndismidlenotificatio
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_IDLE_NOTIFICATION callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_IDLE_NOTIFICATION callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -55,7 +55,7 @@ PVOID MmPageEntireDriver(
 ## -parameters
 <dl>
 
-### -param <i>AddressWithinSection</i> [in]
+### -param AddressWithinSection [in]
 
 <dd>
 <p>Pointer to a virtual address within the driver (for example, the address of the <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine).</p>

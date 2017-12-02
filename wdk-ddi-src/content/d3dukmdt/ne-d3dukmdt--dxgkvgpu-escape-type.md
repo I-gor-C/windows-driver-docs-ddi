@@ -55,13 +55,13 @@ typedef enum _DXGKVGPU_ESCAPE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKVGPU_ESCAPE_TYPE_READ_PCI_CONFIG"></a><a id="dxgkvgpu_escape_type_read_pci_config"></a><b>DXGKVGPU_ESCAPE_TYPE_READ_PCI_CONFIG</b>
+### -field DXGKVGPU_ESCAPE_TYPE_READ_PCI_CONFIG
 
 <dd>
 <p>Indicates the PCI config of the escape type.</p>
 </dd>
 
-### -field <a id="DXGKVGPU_ESCAPE_TYPE_GET_VGPU_TYPE"></a><a id="dxgkvgpu_escape_type_get_vgpu_type"></a><b>DXGKVGPU_ESCAPE_TYPE_GET_VGPU_TYPE</b>
+### -field DXGKVGPU_ESCAPE_TYPE_GET_VGPU_TYPE
 
 <dd>
 <p>Indicates the VGPU type of the escape.</p>

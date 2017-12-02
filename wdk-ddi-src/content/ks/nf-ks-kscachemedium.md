@@ -56,19 +56,19 @@ NTSTATUS KsCacheMedium(
 ## -parameters
 <dl>
 
-### -param <i>SymbolicLink</i> [in]
+### -param SymbolicLink [in]
 
 <dd>
 <p>The symbolic link used to open the device interface.</p>
 </dd>
 
-### -param <i>Medium</i> [in]
+### -param Medium [in]
 
 <dd>
 <p>Points to the medium to cache.</p>
 </dd>
 
-### -param <i>PinDirection</i> [in]
+### -param PinDirection [in]
 
 <dd>
 <p>Contains the direction of the Pin.  1 is output, 0 is input.</p>

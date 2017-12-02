@@ -57,7 +57,7 @@ typedef struct _DXVAHDDDI_CUSTOM_RATE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>CustomRate</b>
+### -field CustomRate
 
 <dd>
 <p>
@@ -65,19 +65,19 @@ typedef struct _DXVAHDDDI_CUSTOM_RATE_DATA {
      </p>
 </dd>
 
-### -field <b>OutputFrames</b>
+### -field OutputFrames
 
 <dd>
 <p>[in] The number of frames that the driver outputs. </p>
 </dd>
 
-### -field <b>InputInterlaced</b>
+### -field InputInterlaced
 
 <dd>
 <p>[in] A Boolean value that specifies whether the input stream is progressive (frame) or interlaced (field). </p>
 </dd>
 
-### -field <b>InputFramesOrFields</b>
+### -field InputFramesOrFields
 
 <dd>
 <p>[in] The number of the input frames or fields. </p>

@@ -57,7 +57,7 @@ VOID APIENTRY AbandonCommandList(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>

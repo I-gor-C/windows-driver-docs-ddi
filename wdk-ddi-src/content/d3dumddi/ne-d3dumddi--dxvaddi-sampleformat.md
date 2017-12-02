@@ -61,49 +61,49 @@ typedef enum _DXVADDI_SAMPLEFORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVADDI_SampleFormatMask"></a><a id="dxvaddi_sampleformatmask"></a><a id="DXVADDI_SAMPLEFORMATMASK"></a><b>DXVADDI_SampleFormatMask</b>
+### -field DXVADDI_SampleFormatMask
 
 <dd>
 <p>The sample format mask. The first 8 (0xFF) bits of a DWORD can be used to specify input sample format.</p>
 </dd>
 
-### -field <a id="DXVADDI_SampleUnknown"></a><a id="dxvaddi_sampleunknown"></a><a id="DXVADDI_SAMPLEUNKNOWN"></a><b>DXVADDI_SampleUnknown</b>
+### -field DXVADDI_SampleUnknown
 
 <dd>
 <p>The sample format is unknown.</p>
 </dd>
 
-### -field <a id="DXVADDI_SampleProgressiveFrame"></a><a id="dxvaddi_sampleprogressiveframe"></a><a id="DXVADDI_SAMPLEPROGRESSIVEFRAME"></a><b>DXVADDI_SampleProgressiveFrame</b>
+### -field DXVADDI_SampleProgressiveFrame
 
 <dd>
 <p>The sample contains a progressive frame.</p>
 </dd>
 
-### -field <a id="DXVADDI_SampleFieldInterleavedEvenFirst"></a><a id="dxvaddi_samplefieldinterleavedevenfirst"></a><a id="DXVADDI_SAMPLEFIELDINTERLEAVEDEVENFIRST"></a><b>DXVADDI_SampleFieldInterleavedEvenFirst</b>
+### -field DXVADDI_SampleFieldInterleavedEvenFirst
 
 <dd>
 <p>The sample contains two interleaved fields; the even field is temporally first.</p>
 </dd>
 
-### -field <a id="DXVADDI_SampleFieldInterleavedOddFirst"></a><a id="dxvaddi_samplefieldinterleavedoddfirst"></a><a id="DXVADDI_SAMPLEFIELDINTERLEAVEDODDFIRST"></a><b>DXVADDI_SampleFieldInterleavedOddFirst</b>
+### -field DXVADDI_SampleFieldInterleavedOddFirst
 
 <dd>
 <p>The sample contains two interleaved fields; the odd field is temporally first.</p>
 </dd>
 
-### -field <a id="DXVADDI_SampleFieldSingleEven"></a><a id="dxvaddi_samplefieldsingleeven"></a><a id="DXVADDI_SAMPLEFIELDSINGLEEVEN"></a><b>DXVADDI_SampleFieldSingleEven</b>
+### -field DXVADDI_SampleFieldSingleEven
 
 <dd>
 <p>The sample contains an even interleaved field.</p>
 </dd>
 
-### -field <a id="DXVADDI_SampleFieldSingleOdd"></a><a id="dxvaddi_samplefieldsingleodd"></a><a id="DXVADDI_SAMPLEFIELDSINGLEODD"></a><b>DXVADDI_SampleFieldSingleOdd</b>
+### -field DXVADDI_SampleFieldSingleOdd
 
 <dd>
 <p>The sample contains an odd interleaved field.</p>
 </dd>
 
-### -field <a id="DXVADDI_SampleSubStream"></a><a id="dxvaddi_samplesubstream"></a><a id="DXVADDI_SAMPLESUBSTREAM"></a><b>DXVADDI_SampleSubStream</b>
+### -field DXVADDI_SampleSubStream
 
 <dd>
 <p>The sample contains a video substream.</p>

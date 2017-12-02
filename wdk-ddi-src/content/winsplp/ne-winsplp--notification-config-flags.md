@@ -58,19 +58,19 @@ typedef enum _NOTIFICATION_CONFIG_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="NOTIFICATION_CONFIG_CREATE_EVENT"></a><a id="notification_config_create_event"></a><b>NOTIFICATION_CONFIG_CREATE_EVENT</b>
+### -field NOTIFICATION_CONFIG_CREATE_EVENT
 
 <dd></dd>
 
-### -field <a id="NOTIFICATION_CONFIG_REGISTER_CALLBACK"></a><a id="notification_config_register_callback"></a><b>NOTIFICATION_CONFIG_REGISTER_CALLBACK</b>
+### -field NOTIFICATION_CONFIG_REGISTER_CALLBACK
 
 <dd></dd>
 
-### -field <a id="NOTIFICATION_CONFIG_EVENT_TRIGGER"></a><a id="notification_config_event_trigger"></a><b>NOTIFICATION_CONFIG_EVENT_TRIGGER</b>
+### -field NOTIFICATION_CONFIG_EVENT_TRIGGER
 
 <dd></dd>
 
-### -field <a id="NOTIFICATION_CONFIG_ASYNC_CHANNEL"></a><a id="notification_config_async_channel"></a><b>NOTIFICATION_CONFIG_ASYNC_CHANNEL</b>
+### -field NOTIFICATION_CONFIG_ASYNC_CHANNEL
 
 <dd></dd>
 </dl>

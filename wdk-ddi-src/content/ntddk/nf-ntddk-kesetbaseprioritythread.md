@@ -55,13 +55,13 @@ LONG KeSetBasePriorityThread(
 ## -parameters
 <dl>
 
-### -param <i>Thread</i> [in, out]
+### -param Thread [in, out]
 
 <dd>
 <p>Pointer to a dispatcher object of type KTHREAD. </p>
 </dd>
 
-### -param <i>Increment</i> [in]
+### -param Increment [in]
 
 <dd>
 <p>Specifies the value to be added to the base priority of the process for the <i>Thread</i>.</p>

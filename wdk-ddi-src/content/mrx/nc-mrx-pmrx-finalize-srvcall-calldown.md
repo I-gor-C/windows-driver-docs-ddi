@@ -7,7 +7,7 @@ old-location: ifsk\mrxfinalizesrvcall.htm
 old-project: ifsk
 ms.assetid: f870334a-cf39-47a2-868a-f6fd7c3aee1c
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ NTSTATUS MRxFinalizeSrvCall(
 ## -parameters
 <dl>
 
-### -param <i>pSrvCall</i> [in, out]
+### -param pSrvCall [in, out]
 
 <dd>
 <p>A pointer to the SRV_CALL structure to finalize. </p>
 </dd>
 
-### -param <i>Force</i> [in]
+### -param Force [in]
 
 <dd>
 <p>A pointer to a Boolean value that indicates if the disconnect is to be enforced immediately, ignoring the reference count on the SRV_CALL structure. The <i>Force</i> parameter is the <i>ForceFinalize</i> parameter passed to the <a href="..\fcb\nf-fcb-rxfinalizesrvcall.md">RxFinalizeSrvCall</a> routine. This action triggers a call to <i>MRxFinalizeSrvCall</i>.</p>
@@ -134,4 +134,4 @@ NTSTATUS MRxFinalizeSrvCall(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxFinalizeSrvCall routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxFinalizeSrvCall routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

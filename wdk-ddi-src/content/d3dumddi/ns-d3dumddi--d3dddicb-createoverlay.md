@@ -56,19 +56,19 @@ typedef struct _D3DDDICB_CREATEOVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology to overlay on (that is, the identifier of the primary surface to overlay on). </p>
 </dd>
 
-### -field <b>OverlayInfo</b>
+### -field OverlayInfo
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-kerneloverlayinfo.md">D3DDDI_KERNELOVERLAYINFO</a> structure that describes information about the kernel-mode overlay object.</p>
 </dd>
 
-### -field <b>hKernelOverlay</b>
+### -field hKernelOverlay
 
 <dd>
 <p>[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the kernel-mode overlay object. This overlay object represents the overlay hardware in subsequent calls by the user-mode display driver to the Microsoft Direct3D runtime.</p>

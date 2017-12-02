@@ -54,7 +54,7 @@ typedef struct _AVC_UNIQUE_ID {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceID</b>
+### -field DeviceID
 
 <dd>
 <p>A GUID representing the unit as a whole. All subunits within the same unit share the same GUID. No two units share the same GUID.</p>

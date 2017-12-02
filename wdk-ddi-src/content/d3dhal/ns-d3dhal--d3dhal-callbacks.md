@@ -88,211 +88,211 @@ typedef struct _D3DHAL_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size in bytes of this D3DHAL_CALLBACKS structure.</p>
 </dd>
 
-### -field <b>ContextCreate</b>
+### -field ContextCreate
 
 <dd>
 <p>Points to the driver-supplied <a href="..\d3dhal\nc-d3dhal-lpd3dhal-contextcreatecb.md">D3dContextCreate</a> callback. A driver must implement the callback that this member points to.</p>
 </dd>
 
-### -field <b>ContextDestroy</b>
+### -field ContextDestroy
 
 <dd>
 <p>Points to the driver-supplied <a href="..\d3dhal\nc-d3dhal-lpd3dhal-contextdestroycb.md">D3dContextDestroy</a> callback. A driver must implement the callback that this member points to.</p>
 </dd>
 
-### -field <b>ContextDestroyAll</b>
+### -field ContextDestroyAll
 
 <dd>
 <p>Must be set to <b>NULL</b> in a Windows 2000 and later driver.</p>
 </dd>
 
-### -field <b>SceneCapture</b>
+### -field SceneCapture
 
 <dd>
 <p>Must be set to <b>NULL</b> in a Windows 2000 and later driver. For DirectX 6.0, this was a pointer to the driver-supplied <b>D3dSceneCapture</b> callback. For DirectX 7.0 and later, this callback was replaced by the handling of the D3DRENDERSTATE_SCENECAPTURE render state in the <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a> function.</p>
 </dd>
 
-### -field <b>lpReserved10</b>
+### -field lpReserved10
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>lpReserved11</b>
+### -field lpReserved11
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>RenderState</b>
+### -field RenderState
 
 <dd>
 <p>Points to the driver-supplied D3DHAL_RENDERSTATEDATA callback. A driver must implement the callback that this member points to.</p>
 </dd>
 
-### -field <b>RenderPrimitive</b>
+### -field RenderPrimitive
 
 <dd>
 <p>Points to the driver-supplied D3DHAL_RENDERPRIMITIVEDATA callback. A driver must implement the callback that this member points to.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Specifies reserved fields and must be set to zero.</p>
 </dd>
 
-### -field <b>TextureCreate</b>
+### -field TextureCreate
 
 <dd>
 <p>Must be set to <b>NULL</b> in a Windows 2000 and later driver. For DirectX 6.0, this was a pointer to the driver-supplied <b>D3dTextureCreate</b> callback, or <b>NULL</b>. </p>
 </dd>
 
-### -field <b>TextureDestroy</b>
+### -field TextureDestroy
 
 <dd>
 <p>Must be set to <b>NULL</b> in a Windows 2000 and later driver. For DirectX 6.0, this was a pointer to the driver-supplied <b>D3dTextureDestroy</b> callback, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>TextureSwap</b>
+### -field TextureSwap
 
 <dd>
 <p>Must be set to <b>NULL</b> in a Windows 2000 and later driver. For DirectX 6.0, this was a pointer to the driver-supplied <b>D3dTextureSwap</b> callback, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>TextureGetSurf</b>
+### -field TextureGetSurf
 
 <dd>
 <p>Must be set to <b>NULL</b> in a Windows 2000 and later driver. For DirectX 6.0, this was a pointer to the driver-supplied <b>D3dTextureGetSurf</b> callback, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>lpReserved12</b>
+### -field lpReserved12
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>lpReserved13</b>
+### -field lpReserved13
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>lpReserved14</b>
+### -field lpReserved14
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>lpReserved15</b>
+### -field lpReserved15
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>lpReserved16</b>
+### -field lpReserved16
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>lpReserved17</b>
+### -field lpReserved17
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>lpReserved18</b>
+### -field lpReserved18
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>lpReserved19</b>
+### -field lpReserved19
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>lpReserved20</b>
+### -field lpReserved20
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>lpReserved21</b>
+### -field lpReserved21
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>GetState</b>
+### -field GetState
 
 <dd>
 <p>Points to the driver-supplied D3DHAL_GETSTATEDATA callback. A driver must implement the callback that this member points to.</p>
 </dd>
 
-### -field <b>dwReserved0</b>
+### -field dwReserved0
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>dwReserved1</b>
+### -field dwReserved1
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>dwReserved2</b>
+### -field dwReserved2
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>dwReserved3</b>
+### -field dwReserved3
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>dwReserved4</b>
+### -field dwReserved4
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>dwReserved5</b>
+### -field dwReserved5
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>dwReserved6</b>
+### -field dwReserved6
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>dwReserved7</b>
+### -field dwReserved7
 
 <dd>
 <p>Must be zero.</p>
 </dd>
 
-### -field <b>dwReserved8</b>
+### -field dwReserved8
 
 <dd>
 <p>Must be zero</p>
 </dd>
 
-### -field <b>dwReserved9</b>
+### -field dwReserved9
 
 <dd>
 <p>Must be zero.</p>

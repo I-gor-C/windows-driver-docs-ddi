@@ -56,13 +56,13 @@ PVOID IoGetDriverObjectExtension(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>Specifies the driver object with which the context area is associated.</p>
 </dd>
 
-### -param <i>ClientIdentificationAddress</i> [in]
+### -param ClientIdentificationAddress [in]
 
 <dd>
 <p>Specifies the unique identifier, provided when it was allocated, of the context area to be retrieved.</p>

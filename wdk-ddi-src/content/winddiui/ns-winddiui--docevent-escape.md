@@ -57,19 +57,19 @@ typedef struct _DOCEVENT_ESCAPE {
 ## -struct-fields
 <dl>
 
-### -field <b>iEscape</b>
+### -field iEscape
 
 <dd>
 <p>Specifies the value of the <b>ExtEscape</b> function's <i>nEscape</i> parameter.</p>
 </dd>
 
-### -field <b>cjInput</b>
+### -field cjInput
 
 <dd>
 <p>Specifies the value of the <b>ExtEscape</b> function's <i>cbInput</i> parameter.</p>
 </dd>
 
-### -field <b>pvInData</b>
+### -field pvInData
 
 <dd>
 <p>Specifies the value of the <b>ExtEscape</b> function's <i>lpszInData</i> parameter.</p>

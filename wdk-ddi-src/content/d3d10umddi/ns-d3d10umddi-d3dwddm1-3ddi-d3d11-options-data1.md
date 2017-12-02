@@ -54,7 +54,7 @@ typedef struct _D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1 {
 ## -struct-fields
 <dl>
 
-### -field <b>TiledResourcesSupportFlags</b>
+### -field TiledResourcesSupportFlags
 
 <dd>
 <p>A value from the <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm1-3ddi-tiled-resources-support-flag.md">D3DWDDM1_3DDI_TILED_RESOURCES_SUPPORT_FLAG</a> enumeration that indicates the level of support  for tiled resources.</p>

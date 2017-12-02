@@ -56,13 +56,13 @@ BOOLEAN IoIsWdmVersionAvailable(
 ## -parameters
 <dl>
 
-### -param <i>MajorVersion</i> [in]
+### -param MajorVersion [in]
 
 <dd>
 <p>Specifies the major version number of WDM that is requested.</p>
 </dd>
 
-### -param <i>MinorVersion</i> [in]
+### -param MinorVersion [in]
 
 <dd>
 <p>Specifies the minor version number of WDM that is requested.</p>

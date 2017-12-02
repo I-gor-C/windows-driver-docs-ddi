@@ -55,7 +55,7 @@ VOID VideoPortStartTimer(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension. This pointer is the input parameter to the <i>HwVidTimer</i> function.</p>

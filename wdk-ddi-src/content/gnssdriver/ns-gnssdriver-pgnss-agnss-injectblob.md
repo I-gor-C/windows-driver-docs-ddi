@@ -7,7 +7,7 @@ old-location: sensors\gnss_agnss_injectblob.htm
 old-project: sensors
 ms.assetid: DAC91C40-C9B3-433C-AA64-CE4C021CD8C5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_AGNSS_INJECTBLOB, GNSS_AGNSS_INJECTBLOB, *PGNSS_AGNSS_INJECTBLOB
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,44 +60,44 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>BlobOui</b>
+### -field BlobOui
 
 <dd>
 <p>This field indicates the 3-byte OUI of silicon vendor or device maker.</p>
 </dd>
 
-### -field <b>BlobVersion</b>
+### -field BlobVersion
 
 <dd>
 <p>Version of the blob from the same vendor.</p>
 </dd>
 
-### -field <b>AgnssFormat</b>
+### -field AgnssFormat
 
 <dd>
 <p>Data format of the blob.</p>
 <p>The formats are defined as macros (GNSS_AGNSSFORMAT_*).</p>
 </dd>
 
-### -field <b>BlobSize</b>
+### -field BlobSize
 
 <dd>
 <p>Size of the blob data in bytes.</p>
 </dd>
 
-### -field <b>BlobData[ANYSIZE_ARRAY]</b>
+### -field BlobData[ANYSIZE_ARRAY]
 
 <dd>
 <p>This field defines the start of the blob data.</p>

@@ -7,7 +7,7 @@ old-location: netvista\riluicclockcredential.htm
 old-project: netvista
 ms.assetid: 4ca8411e-2492-4832-881c-5fdb974485fc
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUICCLOCKCREDENTIAL, RILUICCLOCKCREDENTIAL, *LPRILUICCLOCKCREDENTIAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILUICCLOCKCREDENTIAL {
 ## -struct-fields
 <dl>
 
-### -field <b>rilUiccLock</b>
+### -field rilUiccLock
 
 <dd></dd>
 
-### -field <b>szPassword</b>
+### -field szPassword
 
 <dd></dd>
 </dl>

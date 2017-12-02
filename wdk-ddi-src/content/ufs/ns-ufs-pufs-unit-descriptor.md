@@ -71,37 +71,37 @@ typedef struct _UFS_UNIT_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>Specifies the length, in bytes, of this descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorIDN</b>
+### -field bDescriptorIDN
 
 <dd>
 <p>Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_UNIT_IDN</b>.</p>
 </dd>
 
-### -field <b>bUnitIndex</b>
+### -field bUnitIndex
 
 <dd>
 <p>Specifies unit index</p>
 </dd>
 
-### -field <b>bLUEnable</b>
+### -field bLUEnable
 
 <dd>
 <p>Specifies if the logic unit number (LUN) is enabled. If <b>bLUEnable</b> is equal to 0x00, the logical unit is disabled.</p>
 </dd>
 
-### -field <b>bBootLUNID</b>
+### -field bBootLUNID
 
 <dd>
 <p>Specifies the boot LUN id.</p>
 </dd>
 
-### -field <b>bLUWriteProtect</b>
+### -field bLUWriteProtect
 
 <dd>
 <p>Specifies if the logical unit is write-protected. Contains one of the following values:</p>
@@ -126,13 +126,13 @@ typedef struct _UFS_UNIT_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>bLUQueueDepth</b>
+### -field bLUQueueDepth
 
 <dd>
 <p>Specifies the logical unit queue depth. Can be any value from 0x00 to 0xff.</p>
 </dd>
 
-### -field <b>bPSASensitive</b>
+### -field bPSASensitive
 
 <dd>
 <p>Specifies if the logical unit is sensitive to soldering. Contains one of the following values:</p>
@@ -153,55 +153,55 @@ typedef struct _UFS_UNIT_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>bMemoryType</b>
+### -field bMemoryType
 
 <dd>
 <p>Specifies the desired memory type. The <b>wSupportedMemoryTypes</b> parameter in the <a href="storage.ufs_geometry_descriptor">UFS_GEOMETRY_DESCRIPTOR</a> indicates which memory types are supported by the device</p>
 </dd>
 
-### -field <b>bDataReliability</b>
+### -field bDataReliability
 
 <dd>
 <p>Specifies if the device is protected against a power failure during a write operation to the logical unit. </p>
 </dd>
 
-### -field <b> bLogicalBlockSize</b>
+### -field  bLogicalBlockSize
 
 <dd>
 <p>Specifies the logical block size of the descriptor. Set the value of this equal to the corresponding value in <b>dOptimalLogicalBlockSize</b> of <a href="storage.ufs_geometry_descriptor">UFS_GEOMETRY_DESCRIPTOR</a> for the specific logical unit memory type.</p>
 </dd>
 
-### -field <b>qLogicalBlockCount</b>
+### -field qLogicalBlockCount
 
 <dd>
 <p>Specifies the total number of addressable logical blocks in the logical unit.</p>
 </dd>
 
-### -field <b>dEraseBlockSize</b>
+### -field dEraseBlockSize
 
 <dd>
 <p>Specifies the erase block size.</p>
 </dd>
 
-### -field <b>bProvisioningType</b>
+### -field bProvisioningType
 
 <dd>
 <p>Specifies the provisioning type.</p>
 </dd>
 
-### -field <b>qPhyMemResourceCount</b>
+### -field qPhyMemResourceCount
 
 <dd>
 <p>Specifies the total physical memory resources available in the logical unit.</p>
 </dd>
 
-### -field <b>wContextCapabilities</b>
+### -field wContextCapabilities
 
 <dd>
 <p>Specifies the number of contexts to be supported in each logical unit.</p>
 </dd>
 
-### -field <b>bLargeUnitGranularity_M1</b>
+### -field bLargeUnitGranularity_M1
 
 <dd>
 <p>Specifies the Large Unit granularity, minus one.</p>

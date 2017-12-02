@@ -7,7 +7,7 @@ old-location: wdf\wdf_usb_bmrequest_recipient.htm
 old-project: wdf
 ms.assetid: 0749d03d-8174-4f6e-816e-4689594c0c84
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_TIMER_CONFIG, WDF_TIMER_CONFIG, *PWDF_TIMER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ typedef enum _WDF_USB_BMREQUEST_RECIPIENT {
 ## -enum-fields
 <dl>
 
-### -field <a id="BmRequestToDevice"></a><a id="bmrequesttodevice"></a><a id="BMREQUESTTODEVICE"></a><b>BmRequestToDevice</b>
+### -field BmRequestToDevice
 
 <dd>
 <p>The data transfer recipient is a device.</p>
 </dd>
 
-### -field <a id="BmRequestToInterface"></a><a id="bmrequesttointerface"></a><a id="BMREQUESTTOINTERFACE"></a><b>BmRequestToInterface</b>
+### -field BmRequestToInterface
 
 <dd>
 <p>The data transfer recipient is a device interface.</p>
 </dd>
 
-### -field <a id="BmRequestToEndpoint"></a><a id="bmrequesttoendpoint"></a><a id="BMREQUESTTOENDPOINT"></a><b>BmRequestToEndpoint</b>
+### -field BmRequestToEndpoint
 
 <dd>
 <p>The data transfer recipient is a pipe endpoint.</p>
 </dd>
 
-### -field <a id="BmRequestToOther"></a><a id="bmrequesttoother"></a><a id="BMREQUESTTOOTHER"></a><b>BmRequestToOther</b>
+### -field BmRequestToOther
 
 <dd>
 <p>The data transfer recipient is not a device, interface, or endpoint.</p>
@@ -127,4 +127,4 @@ typedef enum _WDF_USB_BMREQUEST_RECIPIENT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_BMREQUEST_RECIPIENT enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_BMREQUEST_RECIPIENT enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

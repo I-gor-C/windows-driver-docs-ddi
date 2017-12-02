@@ -59,13 +59,13 @@ VOID APIENTRY DispatchIndirect(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hBufferForArgs</i> [in]
+### -param hBufferForArgs [in]
 
 <dd>
 <p> A handle to a buffer that contains three UINT values that hold the sizes, in thread groups, of the X, Y, and Z dimensions of the thread-group grid. The buffer contains the following tightly packed structure:</p>
@@ -85,7 +85,7 @@ VOID APIENTRY DispatchIndirect(
 </table></span></div>
 </dd>
 
-### -param <i>AlignedByteOffsetForArgs</i> [in]
+### -param AlignedByteOffsetForArgs [in]
 
 <dd>
 <p> The offset, in bytes, into the buffer that <i>hBufferForArgs</i> specifies. <i>AlignedByteOffsetForArgs</i> must be a multiple of 4.</p>

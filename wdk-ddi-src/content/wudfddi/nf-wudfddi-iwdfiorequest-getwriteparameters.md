@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest_getwriteparameters.htm
 old-project: wdf
 ms.assetid: 0627b278-2fd5-4185-8ec9-8b306c6d85a8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFIoRequest, GetWriteParameters, IWDFIoRequest::GetWriteParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,14 +58,14 @@ void  GetWriteParameters(
 ## -parameters
 <dl>
 
-### -param <i>pSizeInBytes</i> [out]
+### -param pSizeInBytes [out]
 
 <dd>
 <p>A pointer to a variable that receives the size, in bytes, to write. To retrieve the data for writing, the driver calls the <a href="wdf.iwdfiorequest_getinputmemory">IWDFIoRequest::GetInputMemory</a> method.</p>
 <p>This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information. </p>
 </dd>
 
-### -param <i>pllOffset</i> [out]
+### -param pllOffset [out]
 
 <dd>
 <p>A pointer to a variable that receives the offset, in bytes, to begin writing to the device or the file on the device. If the device does not support absolute write addresses, <i>pllOffset</i> can be ignored. For more information, see the following Remarks section.</p>
@@ -73,7 +73,7 @@ void  GetWriteParameters(
 <p>This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information. </p>
 </dd>
 
-### -param <i>pulKey</i> [out]
+### -param pulKey [out]
 
 <dd>
 <p>A pointer to a variable that receives a key that the driver can use to sort the I/O request in a way that the driver determines. </p>
@@ -150,4 +150,4 @@ void  GetWriteParameters(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::GetWriteParameters method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::GetWriteParameters method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

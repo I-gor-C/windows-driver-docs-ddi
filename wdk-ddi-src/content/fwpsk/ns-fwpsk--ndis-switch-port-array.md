@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_port_array.htm
 old-project: netvista
 ms.assetid: f753694a-f31b-4bb5-8388-bc20d12cb423
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_SWITCH_PORT_ARRAY,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct _NDIS_SWITCH_PORT_ARRAY {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_SWITCH_PORT_ARRAY</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -66,7 +66,7 @@ typedef struct _NDIS_SWITCH_PORT_ARRAY {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_SWITCH_PORT_ARRAY_REVISION_1"></a><a id="ndis_switch_port_array_revision_1"></a>NDIS_SWITCH_PORT_ARRAY_REVISION_1
+### -field NDIS_SWITCH_PORT_ARRAY_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30 and later.</p>
@@ -75,7 +75,7 @@ typedef struct _NDIS_SWITCH_PORT_ARRAY {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserved for NDIS.
@@ -83,7 +83,7 @@ typedef struct _NDIS_SWITCH_PORT_ARRAY {
 </p>
 </dd>
 
-### -field <b>FirstElementOffset</b>
+### -field FirstElementOffset
 
 <dd>
 <p>A USHORT value that specifies the offset, in bytes, to the first element in an array of elements that follow this structure. The offset is measured from the start of the <b>NDIS_SWITCH_PORT_ARRAY</b> structure up to the beginning of the first element. Each element in the array is an <a href="..\fwpsk\ns-fwpsk--ndis-switch-port-parameters.md">NDIS_SWITCH_PORT_PARAMETERS</a> structure.
@@ -93,13 +93,13 @@ typedef struct _NDIS_SWITCH_PORT_ARRAY {
 <div> </div>
 </dd>
 
-### -field <b>NumElements</b>
+### -field NumElements
 
 <dd>
 <p>A ULONG value that specifies the number of <a href="..\fwpsk\ns-fwpsk--ndis-switch-port-parameters.md">NDIS_SWITCH_PORT_PARAMETERS</a> elements that follow the <b>NDIS_SWITCH_PORT_ARRAY</b> structure. </p>
 </dd>
 
-### -field <b>ElementSize</b>
+### -field ElementSize
 
 <dd>
 <p>A ULONG value that specifies the size, in bytes, of the <a href="..\fwpsk\ns-fwpsk--ndis-switch-port-parameters.md">NDIS_SWITCH_PORT_PARAMETERS</a> elements that follows the <b>NDIS_SWITCH_PORT_ARRAY</b> structure. </p>
@@ -151,4 +151,4 @@ typedef struct _NDIS_SWITCH_PORT_ARRAY {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_ARRAY structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_ARRAY structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

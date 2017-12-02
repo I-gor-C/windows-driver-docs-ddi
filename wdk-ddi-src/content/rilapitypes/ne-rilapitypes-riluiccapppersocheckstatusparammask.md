@@ -7,7 +7,7 @@ old-location: netvista\riluiccapppersocheckstatusparammask_2.htm
 old-project: netvista
 ms.assetid: 0d722f10-d29d-4197-a2c1-5c2a77004abf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILUICCAPPPERSOCHECKSTATUSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_UAPCS_PERSOFEATURE"></a><a id="ril_param_uapcs_persofeature"></a><b>RIL_PARAM_UAPCS_PERSOFEATURE</b>
+### -field RIL_PARAM_UAPCS_PERSOFEATURE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UAPCS_PERSOCHECKSTATE"></a><a id="ril_param_uapcs_persocheckstate"></a><b>RIL_PARAM_UAPCS_PERSOCHECKSTATE</b>
+### -field RIL_PARAM_UAPCS_PERSOCHECKSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UAPCS_ALL"></a><a id="ril_param_uapcs_all"></a><b>RIL_PARAM_UAPCS_ALL</b>
+### -field RIL_PARAM_UAPCS_ALL
 
 <dd></dd>
 </dl>

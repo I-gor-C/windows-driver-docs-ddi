@@ -56,19 +56,19 @@ typedef struct _DMA_ADAPTER {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of this structure. Version 3 of the <b>DMA_ADAPTER</b> structure is available starting with Windows 8. For versions 1 and 2 of this structure, this member is set to the value 1. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>DmaOperations</b>
+### -field DmaOperations
 
 <dd>
 <p>Pointer to a <a href="..\wdm\ns-wdm--dma-operations.md">DMA_OPERATIONS</a> structure that contains pointers to DMA adapter functions. The version of the <b>DMA_OPERATIONS</b> structure that this member points to is determined by the version of the <b>DMA_ADAPTER</b> structure. Thus, for version 1 of the <b>DMA_ADAPTER</b> structure, <i>DmaOperations</i> points to version 1 of the <b>DMA_OPERATIONS</b> structure, and so on. For more information about structure versions, see the following Remarks section.</p>

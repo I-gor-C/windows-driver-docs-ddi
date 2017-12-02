@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediaofferaction.htm
 old-project: netvista
 ms.assetid: 0a2ac234-633d-4ebc-9e13-05a12534f93a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,27 +59,27 @@ typedef enum _RILCALLMEDIAOFFERACTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLMEDIAOFFERACTION_ERROR"></a><a id="ril_callmediaofferaction_error"></a><b>RIL_CALLMEDIAOFFERACTION_ERROR</b>
+### -field RIL_CALLMEDIAOFFERACTION_ERROR
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIAOFFERACTION_REJECT"></a><a id="ril_callmediaofferaction_reject"></a><b>RIL_CALLMEDIAOFFERACTION_REJECT</b>
+### -field RIL_CALLMEDIAOFFERACTION_REJECT
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIAOFFERACTION_ASK"></a><a id="ril_callmediaofferaction_ask"></a><b>RIL_CALLMEDIAOFFERACTION_ASK</b>
+### -field RIL_CALLMEDIAOFFERACTION_ASK
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIAOFFERACTION_ACCEPT"></a><a id="ril_callmediaofferaction_accept"></a><b>RIL_CALLMEDIAOFFERACTION_ACCEPT</b>
+### -field RIL_CALLMEDIAOFFERACTION_ACCEPT
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIAOFFERACTION_CANCEL"></a><a id="ril_callmediaofferaction_cancel"></a><b>RIL_CALLMEDIAOFFERACTION_CANCEL</b>
+### -field RIL_CALLMEDIAOFFERACTION_CANCEL
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIAOFFERACTION_MAX"></a><a id="ril_callmediaofferaction_max"></a><b>RIL_CALLMEDIAOFFERACTION_MAX</b>
+### -field RIL_CALLMEDIAOFFERACTION_MAX
 
 <dd></dd>
 </dl>

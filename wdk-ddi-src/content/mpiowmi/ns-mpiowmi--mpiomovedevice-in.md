@@ -56,19 +56,19 @@ typedef struct _MPIOMoveDevice_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>DiskOrdinal</b>
+### -field DiskOrdinal
 
 <dd>
 <p>A 32-bitfield that specifies the MPIO disk ordinal value.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A 32-bitfield that specifies the flags that are associated with the device move operation.</p>
 </dd>
 
-### -field <b>PathID</b>
+### -field PathID
 
 <dd>
 <p>A 64-bitfield that specifies the path that is associated with the device.</p>

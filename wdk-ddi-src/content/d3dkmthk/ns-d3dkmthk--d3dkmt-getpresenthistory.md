@@ -58,34 +58,34 @@ typedef struct _D3DKMT_GETPRESENTHISTORY {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[in] The handle to the graphics adapter. </p>
 </dd>
 
-### -field <b>ProvidedSize</b>
+### -field ProvidedSize
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>
 <p>[in] The size, in bytes, of the provided buffer that the <b>pTokens</b> member points to. </p>
 </dd>
 
-### -field <b>WrittenSize</b>
+### -field WrittenSize
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>
 <p>[out] The size, in bytes, that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetpresenthistory.md">D3DKMTGetPresentHistory</a> function copies to the buffer that the <b>pTokens</b> member points to or the required size for first token. </p>
 </dd>
 
-### -field <b>pTokens</b>
+### -field pTokens
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>
 <p>[in/out] A pointer to the buffer that receives the tokens. Each token is described by a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a> structure. </p>
 </dd>
 
-### -field <b>NumTokens</b>
+### -field NumTokens
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>

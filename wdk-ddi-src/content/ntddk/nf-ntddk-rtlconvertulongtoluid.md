@@ -54,7 +54,7 @@ LUID RtlConvertUlongToLuid(
 ## -parameters
 <dl>
 
-### -param <i>Ulong</i> [in]
+### -param Ulong [in]
 
 <dd>
 <p>Specifies the unsigned long integer to convert. </p>

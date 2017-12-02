@@ -64,25 +64,25 @@ VP_STATUS VideoPortMapBankedMemory(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>PhysicalAddress</i> 
+### -param PhysicalAddress 
 
 <dd>
 <p>Specifies the bus-relative base address of the range to be mapped.</p>
 </dd>
 
-### -param <i>Length</i> 
+### -param Length 
 
 <dd>
 <p>Pointer to a variable specifying the total number of bytes of device memory to be mapped (regardless of bank size). <b>VideoPortMapBankedMemory</b> returns the actual size of the memory mapped, which can be rounded to a system-determined alignment boundary, in this parameter. However, the miniport and display drivers cannot access memory outside the range delimited by the input value at <i>Length</i>.</p>
 </dd>
 
-### -param <i>InIoSpace</i> 
+### -param InIoSpace 
 
 <dd>
 <p>Indicates the location of the range. This parameter can be one of the following values:</p>
@@ -135,31 +135,31 @@ VP_STATUS VideoPortMapBankedMemory(
 <p> </p>
 </dd>
 
-### -param <i>VirtualAddress</i> 
+### -param VirtualAddress 
 
 <dd>
 <p>Is a handle to the process into which the memory must be mapped, or <b>NULL</b>. <b>NULL</b> specifies that the port driver should map the logical memory range at any location in the address space of the current process. Otherwise, this handle can be a value passed in a <a href="wdkgloss.v#wdkgloss.video_request_packet__vrp_#wdkgloss.video_request_packet__vrp_"><i>VRP</i></a> by the miniport driver's corresponding display driver. On return from a successful call, <b>VideoPortMapBankedMemory</b> resets the variable to the base virtual address to which it has mapped the given <i>PhysicalAddress</i>.</p>
 </dd>
 
-### -param <i>BankLength</i> 
+### -param BankLength 
 
 <dd>
 <p>Specifies the size of a bank, in bytes.</p>
 </dd>
 
-### -param <i>ReadWriteBank</i> 
+### -param ReadWriteBank 
 
 <dd>
 <p>If set to <b>TRUE</b> the bank is Read\Write; if set to <b>FALSE</b> there are two independent read and write banks. </p>
 </dd>
 
-### -param <i>BankRoutine</i> 
+### -param BankRoutine 
 
 <dd>
 <p>Pointer to a driver-supplied <a href="display.hwvidbankedmemorycallback">HwVidBankedMemoryCallback</a> function to be called by the Memory Manager when a new bank is accessed by the display driver.</p>
 </dd>
 
-### -param <i>Context</i> 
+### -param Context 
 
 <dd>
 <p>Pointer to a miniport driver-supplied context that is passed back to the driver when the <i>BankRoutine</i> is called.</p>

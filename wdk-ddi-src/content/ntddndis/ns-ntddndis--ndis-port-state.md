@@ -7,7 +7,7 @@ old-location: netvista\ndis_port_state.htm
 old-project: netvista
 ms.assetid: 57d76d1e-4276-4dbd-b651-2bba6de898b2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PORT_STATE, NDIS_PORT_STATE, *PNDIS_PORT_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ typedef struct _NDIS_PORT_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -75,7 +75,7 @@ typedef struct _NDIS_PORT_STATE {
      <b>Size</b> member to NDIS_SIZEOF_PORT_STATE_REVISION_1.</p>
 </dd>
 
-### -field <b>MediaConnectState</b>
+### -field MediaConnectState
 
 <dd>
 <p>The media connection state of the port. This state is the same information that the 
@@ -83,21 +83,21 @@ typedef struct _NDIS_PORT_STATE {
      OID_GEN_MEDIA_CONNECT_STATUS_EX</a> OID returns.</p>
 </dd>
 
-### -field <b>XmitLinkSpeed</b>
+### -field XmitLinkSpeed
 
 <dd>
 <p>The transmit link speed of the port, in bits per second. A value of -1 in this member indicates
      that the transmit link speed is unknown.</p>
 </dd>
 
-### -field <b>RcvLinkSpeed</b>
+### -field RcvLinkSpeed
 
 <dd>
 <p>The receive link speed of the port, in bits per second. A value of -1 in this member indicates
      that the receive link speed is unknown.</p>
 </dd>
 
-### -field <b>Direction</b>
+### -field Direction
 
 <dd>
 <p>A 
@@ -105,7 +105,7 @@ typedef struct _NDIS_PORT_STATE {
      interface direction type.</p>
 </dd>
 
-### -field <b>SendControlState</b>
+### -field SendControlState
 
 <dd>
 <p>The current control state of the port for send operations. This member must contain one of the
@@ -114,20 +114,20 @@ typedef struct _NDIS_PORT_STATE {
 <p></p>
 <dl>
 
-### -field <a id="NdisPortControlStateUnknown"></a><a id="ndisportcontrolstateunknown"></a><a id="NDISPORTCONTROLSTATEUNKNOWN"></a><b>NdisPortControlStateUnknown</b>
+### -field NdisPortControlStateUnknown
 
 <dd>
 <p>The port's control state for send operations is unknown.</p>
 </dd>
 
-### -field <a id="NdisPortControlStateControlled"></a><a id="ndisportcontrolstatecontrolled"></a><a id="NDISPORTCONTROLSTATECONTROLLED"></a><b>NdisPortControlStateControlled</b>
+### -field NdisPortControlStateControlled
 
 <dd>
 <p>The port is in a controlled state for send operations. That is, the port requires
        authorization.</p>
 </dd>
 
-### -field <a id="NdisPortControlStateUncontrolled"></a><a id="ndisportcontrolstateuncontrolled"></a><a id="NDISPORTCONTROLSTATEUNCONTROLLED"></a><b>NdisPortControlStateUncontrolled</b>
+### -field NdisPortControlStateUncontrolled
 
 <dd>
 <p>The port is in an uncontrolled state for send operations. That is, the port does not require
@@ -136,7 +136,7 @@ typedef struct _NDIS_PORT_STATE {
 </dl>
 </dd>
 
-### -field <b>RcvControlState</b>
+### -field RcvControlState
 
 <dd>
 <p>The current control state of the port for receive operations. This member must contain one of the
@@ -145,20 +145,20 @@ typedef struct _NDIS_PORT_STATE {
 <p></p>
 <dl>
 
-### -field <a id="NdisPortControlStateUnknown"></a><a id="ndisportcontrolstateunknown"></a><a id="NDISPORTCONTROLSTATEUNKNOWN"></a><b>NdisPortControlStateUnknown</b>
+### -field NdisPortControlStateUnknown
 
 <dd>
 <p>The port's control state for receive operations is unknown.</p>
 </dd>
 
-### -field <a id="NdisPortControlStateControlled"></a><a id="ndisportcontrolstatecontrolled"></a><a id="NDISPORTCONTROLSTATECONTROLLED"></a><b>NdisPortControlStateControlled</b>
+### -field NdisPortControlStateControlled
 
 <dd>
 <p>The port is in a controlled state for receive operations. That is, the port requires
        authorization.</p>
 </dd>
 
-### -field <a id="NdisPortControlStateUncontrolled"></a><a id="ndisportcontrolstateuncontrolled"></a><a id="NDISPORTCONTROLSTATEUNCONTROLLED"></a><b>NdisPortControlStateUncontrolled</b>
+### -field NdisPortControlStateUncontrolled
 
 <dd>
 <p>The port is in an uncontrolled state for receive operations. That is, the port does not require
@@ -167,7 +167,7 @@ typedef struct _NDIS_PORT_STATE {
 </dl>
 </dd>
 
-### -field <b>SendAuthorizationState</b>
+### -field SendAuthorizationState
 
 <dd>
 <p>The current authorization state of the port for send operations. Ignore this member if the 
@@ -178,25 +178,25 @@ typedef struct _NDIS_PORT_STATE {
 <p></p>
 <dl>
 
-### -field <a id="NdisPortAuthorizationUnknown"></a><a id="ndisportauthorizationunknown"></a><a id="NDISPORTAUTHORIZATIONUNKNOWN"></a><b>NdisPortAuthorizationUnknown</b>
+### -field NdisPortAuthorizationUnknown
 
 <dd>
 <p>The port's authorization state for send operations is unknown.</p>
 </dd>
 
-### -field <a id="NdisPortAuthorized"></a><a id="ndisportauthorized"></a><a id="NDISPORTAUTHORIZED"></a><b>NdisPortAuthorized</b>
+### -field NdisPortAuthorized
 
 <dd>
 <p>The port is authorized for send operations.</p>
 </dd>
 
-### -field <a id="NdisPortUnauthorized"></a><a id="ndisportunauthorized"></a><a id="NDISPORTUNAUTHORIZED"></a><b>NdisPortUnauthorized</b>
+### -field NdisPortUnauthorized
 
 <dd>
 <p>The port is not authorized for send operations.</p>
 </dd>
 
-### -field <a id="NdisPortReauthorizing"></a><a id="ndisportreauthorizing"></a><a id="NDISPORTREAUTHORIZING"></a><b>NdisPortReauthorizing</b>
+### -field NdisPortReauthorizing
 
 <dd>
 <p>The port is re-authorizing for send operations.</p>
@@ -204,7 +204,7 @@ typedef struct _NDIS_PORT_STATE {
 </dl>
 </dd>
 
-### -field <b>RcvAuthorizationState</b>
+### -field RcvAuthorizationState
 
 <dd>
 <p>The current authorization state of the port for receive operations. Ignore this member if the 
@@ -215,25 +215,25 @@ typedef struct _NDIS_PORT_STATE {
 <p></p>
 <dl>
 
-### -field <a id="NdisPortAuthorizationUnknown"></a><a id="ndisportauthorizationunknown"></a><a id="NDISPORTAUTHORIZATIONUNKNOWN"></a><b>NdisPortAuthorizationUnknown</b>
+### -field NdisPortAuthorizationUnknown
 
 <dd>
 <p>The port's authorization state for receive operations is unknown.</p>
 </dd>
 
-### -field <a id="NdisPortAuthorized"></a><a id="ndisportauthorized"></a><a id="NDISPORTAUTHORIZED"></a><b>NdisPortAuthorized</b>
+### -field NdisPortAuthorized
 
 <dd>
 <p>The port is authorized for receive operations.</p>
 </dd>
 
-### -field <a id="NdisPortUnauthorized"></a><a id="ndisportunauthorized"></a><a id="NDISPORTUNAUTHORIZED"></a><b>NdisPortUnauthorized</b>
+### -field NdisPortUnauthorized
 
 <dd>
 <p>The port is not authorized for receive operations.</p>
 </dd>
 
-### -field <a id="NdisPortReauthorizing"></a><a id="ndisportreauthorizing"></a><a id="NDISPORTREAUTHORIZING"></a><b>NdisPortReauthorizing</b>
+### -field NdisPortReauthorizing
 
 <dd>
 <p>The port is re-authorizing for receive operations.</p>
@@ -241,7 +241,7 @@ typedef struct _NDIS_PORT_STATE {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for NDIS.</p>
@@ -296,4 +296,4 @@ typedef struct _NDIS_PORT_STATE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PORT_STATE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PORT_STATE structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

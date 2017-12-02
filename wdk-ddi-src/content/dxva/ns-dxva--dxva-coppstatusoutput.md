@@ -56,19 +56,19 @@ typedef struct _DXVA_COPPStatusOutput {
 ## -struct-fields
 <dl>
 
-### -field <b>macKDI</b>
+### -field macKDI
 
 <dd>
 <p>Specifies a message authentication code (MAC) GUID for the status at <b>COPPStatus</b>. The application that requested the status can use the MAC to verify that the transmission of the status was secure (that is, it was not tampered with in transit from the driver). </p>
 </dd>
 
-### -field <b>cbSizeData</b>
+### -field cbSizeData
 
 <dd>
 <p>Specifies the size, in bytes, of the status data at <b>COPPStatus</b>.</p>
 </dd>
 
-### -field <b>COPPStatus</b>
+### -field COPPStatus
 
 <dd>
 <p>Specifies an array that contains the status data. The display driver should return status data in one of the following ways, depending on the input value that was specified in the <b>guidStatusRequestID</b> member of the <a href="..\dxva\ns-dxva--dxva-coppstatusinput.md">DXVA_COPPStatusInput</a> structure: </p>

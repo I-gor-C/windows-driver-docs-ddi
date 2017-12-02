@@ -56,7 +56,7 @@ struct _BRB_ACL_GET_MODE {
 ## -struct-fields
 <dl>
 
-### -field <b>Hdr</b>
+### -field Hdr
 
 <dd>
 <p>A 
@@ -64,13 +64,13 @@ struct _BRB_ACL_GET_MODE {
      about the current BRB.</p>
 </dd>
 
-### -field <b>BtAddress</b>
+### -field BtAddress
 
 <dd>
 <p>The address of the remote device.</p>
 </dd>
 
-### -field <b>AclMode</b>
+### -field AclMode
 
 <dd>
 <p>A value from the 

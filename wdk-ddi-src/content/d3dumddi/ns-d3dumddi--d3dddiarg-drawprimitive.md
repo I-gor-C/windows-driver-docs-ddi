@@ -56,19 +56,19 @@ typedef struct _D3DDDIARG_DRAWPRIMITIVE {
 ## -struct-fields
 <dl>
 
-### -field <b>PrimitiveType</b>
+### -field PrimitiveType
 
 <dd>
 <p>[in] A D3DPRIMITIVETYPE-typed value that indicates the type of primitive to draw. This member can be one of the following values: D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP, or D3DPT_TRIANGLEFAN. For more information about D3DPRIMITIVETYPE, see the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -field <b>VStart</b>
+### -field VStart
 
 <dd>
 <p>[in] The index (into each active vertex stream) of the vertex elements to start drawing with. Vertex data should be read from the current vertex streams (those that are referenced by the current vertex shader).</p>
 </dd>
 
-### -field <b>PrimitiveCount</b>
+### -field PrimitiveCount
 
 <dd>
 <p>[in] The number of triangles, lines, or points to draw for the given primitive. </p>

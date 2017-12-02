@@ -54,7 +54,7 @@ typedef struct _D3DDDICB_DESTROYHWCONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>hHwContext</b>
+### -field hHwContext
 
 <dd>
 <p>Handle to the context to destroy.</p>

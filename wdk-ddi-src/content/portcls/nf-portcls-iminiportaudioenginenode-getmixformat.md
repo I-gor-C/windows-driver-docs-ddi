@@ -56,19 +56,19 @@ NTSTATUS GetMixFormat(
 ## -parameters
 <dl>
 
-### -param <i>ulNodeId</i> [in]
+### -param ulNodeId [in]
 
 <dd>
 <p>The ID of the mixer node.</p>
 </dd>
 
-### -param <i>pFormat</i> [out]
+### -param pFormat [out]
 
 <dd>
 <p>A structure of type <a href="audio.ksdataformat_waveformatex">KSDATAFORMAT_WAVEFORMATEX</a> that represents the audio data format.</p>
 </dd>
 
-### -param <i>ulBufferSize</i> [in]
+### -param ulBufferSize [in]
 
 <dd>
 <p>The data buffer size.</p>

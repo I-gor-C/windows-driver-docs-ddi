@@ -56,13 +56,13 @@ VOID VideoPortFreeDeviceBase(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>MappedAddress</i> 
+### -param MappedAddress 
 
 <dd>
 <p>Specifies the base address of the mapped range to be freed. This value must be the same as the value returned by a preceding call to <b>VideoPortGetDeviceBase</b>.</p>

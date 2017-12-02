@@ -63,49 +63,49 @@ typedef struct _DXGKARG_SETVIDPNSOURCEADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>An integer that identifies a video present source on the display adapter.</p>
 </dd>
 
-### -field <b>PrimarySegment</b>
+### -field PrimarySegment
 
 <dd>
 <p>The identifier of the segment that contains the source's primary surface.</p>
 </dd>
 
-### -field <b>PrimaryAddress</b>
+### -field PrimaryAddress
 
 <dd>
 <p>The address, within the segment identified by <i>PrimarySegment</i>, of the source's primary surface.</p>
 </dd>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[in] If non-NULL, a handle that the display miniport driver assigned to the allocation and returned from its call to the <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function. The driver must reprogram graphics hardware according to the specific private properties of the allocation, which include but are not limited to pitch size, swizzle format, and so on. </p>
 </dd>
 
-### -field <b>ContextCount</b>
+### -field ContextCount
 
 <dd>
 <p>[in] The number of contexts in the array that the <b>Context</b> member specifies. </p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>[in] An array of handles to the contexts that contributed to a display operation.  </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-setvidpnsourceaddress-flags.md">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a> structure that identifies the type of display operation to perform.</p>
 </dd>
 
-### -field <b>Duration</b>
+### -field Duration
 
 <dd>
 <p>The length of time, in units of 100 nanoseconds, between when the current present operation flips to the screen and the next vertical blanking interrupt occurs.</p>

@@ -7,7 +7,7 @@ old-location: netvista\dot11ext_ihv_indication_type.htm
 old-project: netvista
 ms.assetid: c4cba30d-f0ba-424b-aa05-2717fa8fcc4e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,31 +57,31 @@ typedef enum _DOT11EXT_IHV_INDICATION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="IndicationTypeNicSpecificNotification"></a><a id="indicationtypenicspecificnotification"></a><a id="INDICATIONTYPENICSPECIFICNOTIFICATION"></a><b>IndicationTypeNicSpecificNotification</b>
+### -field IndicationTypeNicSpecificNotification
 
 <dd>
 <p>Indicates a NIC-specific notification.</p>
 </dd>
 
-### -field <a id="IndicationTypePmkidCandidateList"></a><a id="indicationtypepmkidcandidatelist"></a><a id="INDICATIONTYPEPMKIDCANDIDATELIST"></a><b>IndicationTypePmkidCandidateList</b>
+### -field IndicationTypePmkidCandidateList
 
 <dd>
 <p>Indicates a PMKID candidate list.</p>
 </dd>
 
-### -field <a id="IndicationTypeTkipMicFailure"></a><a id="indicationtypetkipmicfailure"></a><a id="INDICATIONTYPETKIPMICFAILURE"></a><b>IndicationTypeTkipMicFailure</b>
+### -field IndicationTypeTkipMicFailure
 
 <dd>
 <p>Indicates a TKIP MIC failure.</p>
 </dd>
 
-### -field <a id="IndicationTypePhyStateChange"></a><a id="indicationtypephystatechange"></a><a id="INDICATIONTYPEPHYSTATECHANGE"></a><b>IndicationTypePhyStateChange</b>
+### -field IndicationTypePhyStateChange
 
 <dd>
 <p>Indicates a PHY state change.</p>
 </dd>
 
-### -field <a id="IndicationTypeLinkQuality"></a><a id="indicationtypelinkquality"></a><a id="INDICATIONTYPELINKQUALITY"></a><b>IndicationTypeLinkQuality</b>
+### -field IndicationTypeLinkQuality
 
 <dd>
 <p>Indicates link quality.</p>

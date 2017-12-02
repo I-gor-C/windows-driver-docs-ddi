@@ -55,13 +55,13 @@ typedef struct tagKS_DATARANGE_ANALOGVIDEO {
 ## -struct-fields
 <dl>
 
-### -field <b>DataRange</b>
+### -field DataRange
 
 <dd>
 <p>Specifies the major identifier for the format.</p>
 </dd>
 
-### -field <b>AnalogVideoInfo</b>
+### -field AnalogVideoInfo
 
 <dd>
 <p>Specifies the details of the analog video stream. </p>

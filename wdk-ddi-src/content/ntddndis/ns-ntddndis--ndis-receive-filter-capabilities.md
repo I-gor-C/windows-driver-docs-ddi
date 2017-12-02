@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_filter_capabilities.htm
 old-project: netvista
 ms.assetid: aecc1fe0-03f9-44be-9a38-b689eee4c5a6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_RECEIVE_FILTER_CAPABILITIES, NDIS_RECEIVE_FILTER_CAPABILITIES, *PNDIS_RECEIVE_FILTER_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,11 +43,11 @@ req.iface:
   network adapter.</p>
 <p>NDIS receive filters are used in the following NDIS interfaces:</p>
 <p>
-<a href="NULL">NDIS Packet Coalescing</a>. For more information about how to use receive filters in this interface, see <a href="NULL">Managing Packet Coalescing Receive Filters</a>.</p>
+<a href="netvista.ndis_packet_coalescing">NDIS Packet Coalescing</a>. For more information about how to use receive filters in this interface, see <a href="netvista.managing_packet_coalescing_receive_filters">Managing Packet Coalescing Receive Filters</a>.</p>
 <p>
-<a href="NULL">Single Root I/O Virtualization (SR-IOV)</a>. For more information about how to use receive filters in this interface, see <a href="NULL">Setting a Receive Filter on a Virtual Port</a>.</p>
+<a href="netvista.single_root_i_o_virtualization__sr-iov_">Single Root I/O Virtualization (SR-IOV)</a>. For more information about how to use receive filters in this interface, see <a href="netvista.setting_a_receive_filter_on_a_virtual_port">Setting a Receive Filter on a Virtual Port</a>.</p>
 <p>
-<a href="NULL">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="NULL">Setting and Clearing VMQ Filters</a>.</p>
+<a href="netvista.virtual_machine_queue__vmq__in_ndis_6_20">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="netvista.setting_and_clearing_vmq_filters">Setting and Clearing VMQ Filters</a>.</p>
 
 
 ## -syntax
@@ -84,7 +84,7 @@ typedef struct _NDIS_RECEIVE_FILTER_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -97,7 +97,7 @@ typedef struct _NDIS_RECEIVE_FILTER_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_FILTER_CAPABILITIES_REVISION_2"></a><a id="ndis_receive_filter_capabilities_revision_2"></a>NDIS_RECEIVE_FILTER_CAPABILITIES_REVISION_2
+### -field NDIS_RECEIVE_FILTER_CAPABILITIES_REVISION_2
 
 <dd>
 <p>Added  
@@ -106,7 +106,7 @@ typedef struct _NDIS_RECEIVE_FILTER_CAPABILITIES {
         <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_CAPABILITIES_REVISION_2.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_CAPABILITIES_REVISION_1"></a><a id="ndis_receive_filter_capabilities_revision_1"></a>NDIS_RECEIVE_FILTER_CAPABILITIES_REVISION_1
+### -field NDIS_RECEIVE_FILTER_CAPABILITIES_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.20.</p>
@@ -116,13 +116,13 @@ typedef struct _NDIS_RECEIVE_FILTER_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitwise OR of flags. This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>EnabledFilterTypes</b>
+### -field EnabledFilterTypes
 
 <dd>
 <p>A bitwise OR of flags that specify the types of receive filters that are enabled. The
@@ -131,7 +131,7 @@ typedef struct _NDIS_RECEIVE_FILTER_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_FILTER_VMQ_FILTERS_ENABLED"></a><a id="ndis_receive_filter_vmq_filters_enabled"></a>NDIS_RECEIVE_FILTER_VMQ_FILTERS_ENABLED
+### -field NDIS_RECEIVE_FILTER_VMQ_FILTERS_ENABLED
 
 <dd>
 <p>Specifies that VMQ filters are enabled.</p>
@@ -139,7 +139,7 @@ typedef struct _NDIS_RECEIVE_FILTER_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_PACKET_COALESCING_FILTERS_ENABLED"></a><a id="ndis_receive_filter_packet_coalescing_filters_enabled"></a>NDIS_RECEIVE_FILTER_PACKET_COALESCING_FILTERS_ENABLED
+### -field NDIS_RECEIVE_FILTER_PACKET_COALESCING_FILTERS_ENABLED
 
 <dd>
 <p>Specifies that NDIS packet coalescing receive filters are enabled.</p>
@@ -147,7 +147,7 @@ typedef struct _NDIS_RECEIVE_FILTER_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>EnabledQueueTypes</b>
+### -field EnabledQueueTypes
 
 <dd>
 <p>A bitwise OR of flags that specify the types of receive queues that are enabled. The
@@ -156,7 +156,7 @@ typedef struct _NDIS_RECEIVE_FILTER_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_FILTER_VM_QUEUES_ENABLED"></a><a id="ndis_receive_filter_vm_queues_enabled"></a>NDIS_RECEIVE_FILTER_VM_QUEUES_ENABLED
+### -field NDIS_RECEIVE_FILTER_VM_QUEUES_ENABLED
 
 <dd>
 <p>Specifies that virtual machine (VM) queues are enabled.  VM queues are used when the miniport driver is enabled to use the VMQ interface.</p>
@@ -166,7 +166,7 @@ typedef struct _NDIS_RECEIVE_FILTER_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>NumQueues</b>
+### -field NumQueues
 
 <dd>
 <p>The number of VM queues that the network adapter supports.</p>
@@ -175,7 +175,7 @@ typedef struct _NDIS_RECEIVE_FILTER_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <b>SupportedQueueProperties</b>
+### -field SupportedQueueProperties
 
 <dd>
 <p>A bitwise OR of flags that specify the VM queue properties that the network adapter supports. The
@@ -184,27 +184,27 @@ typedef struct _NDIS_RECEIVE_FILTER_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_FILTER_MSI_X_SUPPORTED"></a><a id="ndis_receive_filter_msi_x_supported"></a>NDIS_RECEIVE_FILTER_MSI_X_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_MSI_X_SUPPORTED
 
 <dd>
 <p>The network adapter uses MSI-X for receive queue interrupt generation. This flag is mandatory for miniport drivers that support the VMQ or SR-IOV interface.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_VM_QUEUE_SUPPORTED"></a><a id="ndis_receive_filter_vm_queue_supported"></a>NDIS_RECEIVE_FILTER_VM_QUEUE_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_VM_QUEUE_SUPPORTED
 
 <dd>
 <p>The network adapter provides the minimum requirements to support VM  queue packet filtering. 
 
 The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV interface.</p>
-<p>For more information about VMQ requirements for VM queue packet filtering, see <a href="NULL">Setting and Clearing VMQ Filters</a>.
+<p>For more information about VMQ requirements for VM queue packet filtering, see <a href="netvista.setting_and_clearing_vmq_filters">Setting and Clearing VMQ Filters</a>.
 
 </p>
-<p>For more information about SR-IOV requirements for VM queue packet filtering, see <a href="NULL">Setting a Receive Filter on a Virtual Port</a>.
+<p>For more information about SR-IOV requirements for VM queue packet filtering, see <a href="netvista.setting_a_receive_filter_on_a_virtual_port">Setting a Receive Filter on a Virtual Port</a>.
 
 </p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_LOOKAHEAD_SPLIT_SUPPORTED"></a><a id="ndis_receive_filter_lookahead_split_supported"></a>NDIS_RECEIVE_FILTER_LOOKAHEAD_SPLIT_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_LOOKAHEAD_SPLIT_SUPPORTED
 
 <dd>
 <p>The network adapter supports VM queues that split an incoming received packet at the lookahead
@@ -214,7 +214,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_DYNAMIC_PROCESSOR_AFFINITY_CHANGE_SUPPORTED"></a><a id="ndis_receive_filter_dynamic_processor_affinity_change_supported"></a>NDIS_RECEIVE_FILTER_DYNAMIC_PROCESSOR_AFFINITY_CHANGE_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_DYNAMIC_PROCESSOR_AFFINITY_CHANGE_SUPPORTED
 
 <dd>
 <p>The  network adapter supports the ability to dynamically change one of the following processor affinity attributes:</p>
@@ -230,7 +230,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_INTERRUPT_VECTOR_COALESCING_SUPPORTED"></a><a id="ndis_receive_filter_interrupt_vector_coalescing_supported"></a>NDIS_RECEIVE_FILTER_INTERRUPT_VECTOR_COALESCING_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_INTERRUPT_VECTOR_COALESCING_SUPPORTED
 
 <dd>
 <p>The network adapter supports interrupt coalescing for received packets on any of the following: </p>
@@ -247,19 +247,19 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_IMPLAT_MIN_OF_QUEUES_MODE"></a><a id="ndis_receive_filter_implat_min_of_queues_mode"></a>NDIS_RECEIVE_FILTER_IMPLAT_MIN_OF_QUEUES_MODE
+### -field NDIS_RECEIVE_FILTER_IMPLAT_MIN_OF_QUEUES_MODE
 
 <dd>
 <p>Indicates that the number of VM queues available  is the minimum number of queues available from any member of a Load Balancing Failover (LBFO) team. This flag applies to LBFO filters only. This flag is not set for miniports.</p>
 </dd>
 
-### -field <a id="_NDIS_RECEIVE_FILTER_IMPLAT_SUM_OF_QUEUES_MODE"></a><a id="_ndis_receive_filter_implat_sum_of_queues_mode"></a> NDIS_RECEIVE_FILTER_IMPLAT_SUM_OF_QUEUES_MODE
+### -field  NDIS_RECEIVE_FILTER_IMPLAT_SUM_OF_QUEUES_MODE
 
 <dd>
 <p>Indicates that the number of VM queues available is the sum of all the queues available from every member of an LBFO team. This flag applies to LBFO filters only. This flag is not set for miniports.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_PACKET_COALESCING_SUPPORTED_ON_DEFAULT_QUEUE"></a><a id="ndis_receive_filter_packet_coalescing_supported_on_default_queue"></a>NDIS_RECEIVE_FILTER_PACKET_COALESCING_SUPPORTED_ON_DEFAULT_QUEUE
+### -field NDIS_RECEIVE_FILTER_PACKET_COALESCING_SUPPORTED_ON_DEFAULT_QUEUE
 
 <dd>
 <p>The network adapter supports NDIS packet coalescing. Packet coalescing is only supported on the default receive queue of the network adapter. This receive queue has an identifier of NDIS_DEFAULT_RECEIVE_QUEUE_ID.
@@ -270,7 +270,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 </dl>
 </dd>
 
-### -field <b>SupportedFilterTests</b>
+### -field SupportedFilterTests
 
 <dd>
 <p>A bitwise OR of flags that specify the test operations that a miniport
@@ -279,7 +279,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_EQUAL_SUPPORTED"></a><a id="ndis_receive_filter_test_header_field_equal_supported"></a>NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_EQUAL_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_EQUAL_SUPPORTED
 
 <dd>
 <p>The network adapter supports testing the selected header field to determine whether it is equal to a
@@ -288,14 +288,14 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_MASK_EQUAL_SUPPORTED"></a><a id="ndis_receive_filter_test_header_field_mask_equal_supported"></a>NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_MASK_EQUAL_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_MASK_EQUAL_SUPPORTED
 
 <dd>
 <p>The network adapter supports masking (that is, a bitwise AND) of the selected header field to
        determine whether the result is equal to a specified value.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_NOT_EQUAL_SUPPORTED"></a><a id="ndis_receive_filter_test_header_field_not_equal_supported"></a>NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_NOT_EQUAL_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_NOT_EQUAL_SUPPORTED
 
 <dd>
 <p>The network adapter supports testing the selected header field to determine whether it is not equal to a
@@ -306,7 +306,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 </dl>
 </dd>
 
-### -field <b>SupportedHeaders</b>
+### -field SupportedHeaders
 
 <dd>
 <p>A bitwise OR of flags that specify the types of network packet headers that
@@ -315,13 +315,13 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_FILTER_MAC_HEADER_SUPPORTED"></a><a id="ndis_receive_filter_mac_header_supported"></a>NDIS_RECEIVE_FILTER_MAC_HEADER_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_MAC_HEADER_SUPPORTED
 
 <dd>
 <p>The network adapter can inspect the media access control (MAC) header of a network packet. The <b>SupportedMacHeaderFields</b> member defines the various fields from the MAC header that can be inspected.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_ARP_HEADER_SUPPORTED"></a><a id="ndis_receive_filter_arp_header_supported"></a>NDIS_RECEIVE_FILTER_ARP_HEADER_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_ARP_HEADER_SUPPORTED
 
 <dd>
 <p>The network adapter can inspect the Address Resolution Protocol (ARP) header of a network packet. The <b>SupportedArpHeaderFields</b> member defines the various fields from the ARP header that can be inspected.</p>
@@ -329,7 +329,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_IPV4_HEADER_SUPPORTED"></a><a id="ndis_receive_filter_ipv4_header_supported"></a>NDIS_RECEIVE_FILTER_IPV4_HEADER_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_IPV4_HEADER_SUPPORTED
 
 <dd>
 <p>The network adapter can inspect the IP version 4 (IPv4) header of a network packet. The <b>SupportedIPv4HeaderFields</b> member defines the various fields from the IPv4 header that can be inspected.</p>
@@ -337,7 +337,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_IPV6_HEADER_SUPPORTED"></a><a id="ndis_receive_filter_ipv6_header_supported"></a>NDIS_RECEIVE_FILTER_IPV6_HEADER_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_IPV6_HEADER_SUPPORTED
 
 <dd>
 <p>The network adapter can inspect the IP version 6 (IPv6) header of a network packet. The <b>SupportedIPv6HeaderFields</b> member defines the various fields from the IPv6 header that can be inspected.</p>
@@ -345,7 +345,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_UDP_HEADER_SUPPORTED"></a><a id="ndis_receive_filter_udp_header_supported"></a>NDIS_RECEIVE_FILTER_UDP_HEADER_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_UDP_HEADER_SUPPORTED
 
 <dd>
 <p>The network adapter can inspect the User Datagram Protocol
@@ -356,7 +356,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 </dl>
 </dd>
 
-### -field <b>SupportedMacHeaderFields</b>
+### -field SupportedMacHeaderFields
 
 <dd>
 <p>A bitwise OR of flags that specify the types of MAC header fields that a
@@ -365,7 +365,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_FILTER_MAC_HEADER_DEST_ADDR_SUPPORTED"></a><a id="ndis_receive_filter_mac_header_dest_addr_supported"></a>NDIS_RECEIVE_FILTER_MAC_HEADER_DEST_ADDR_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_MAC_HEADER_DEST_ADDR_SUPPORTED
 
 <dd>
 <p>The network adapter supports inspecting and filtering that are based on the destination MAC
@@ -374,21 +374,21 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_MAC_HEADER_SOURCE_ADDR_SUPPORTED"></a><a id="ndis_receive_filter_mac_header_source_addr_supported"></a>NDIS_RECEIVE_FILTER_MAC_HEADER_SOURCE_ADDR_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_MAC_HEADER_SOURCE_ADDR_SUPPORTED
 
 <dd>
 <p>The network adapter supports inspecting and filtering that are based on the source MAC address
        in the MAC header.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_MAC_HEADER_PROTOCOL_SUPPORTED"></a><a id="ndis_receive_filter_mac_header_protocol_supported"></a>NDIS_RECEIVE_FILTER_MAC_HEADER_PROTOCOL_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_MAC_HEADER_PROTOCOL_SUPPORTED
 
 <dd>
 <p>The network adapter supports inspecting and filtering that are based on the EtherType identifier
        in the MAC header. For example, the EtherType identifier for IPv4 packets is 0x0800.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_MAC_HEADER_VLAN_ID_SUPPORTED"></a><a id="ndis_receive_filter_mac_header_vlan_id_supported"></a>NDIS_RECEIVE_FILTER_MAC_HEADER_VLAN_ID_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_MAC_HEADER_VLAN_ID_SUPPORTED
 
 <dd>
 <p>The network adapter supports inspecting and filtering that are based on the VLAN identifier in
@@ -397,14 +397,14 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_MAC_HEADER_PRIORITY_SUPPORTED"></a><a id="ndis_receive_filter_mac_header_priority_supported"></a>NDIS_RECEIVE_FILTER_MAC_HEADER_PRIORITY_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_MAC_HEADER_PRIORITY_SUPPORTED
 
 <dd>
 <p>The network adapter supports inspecting and filtering that are based on the priority tag in the
        MAC header.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_MAC_HEADER_PACKET_TYPE_SUPPORTED"></a><a id="ndis_receive_filter_mac_header_packet_type_supported"></a>NDIS_RECEIVE_FILTER_MAC_HEADER_PACKET_TYPE_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_MAC_HEADER_PACKET_TYPE_SUPPORTED
 
 <dd>
 <p>The network adapter supports inspecting and filtering that are based on the packet type field of the IEEE 802.2 subnetwork access protocol (SNAP) header in an 802.3 MAC header.</p>
@@ -414,26 +414,26 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 </dl>
 </dd>
 
-### -field <b>MaxMacHeaderFilters</b>
+### -field MaxMacHeaderFilters
 
 <dd>
 <p>The maximum number of MAC header filters that the miniport driver
      supports.</p>
 </dd>
 
-### -field <b>MaxQueueGroups</b>
+### -field MaxQueueGroups
 
 <dd>
 <p>This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>MaxQueuesPerQueueGroup</b>
+### -field MaxQueuesPerQueueGroup
 
 <dd>
 <p>This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>MinLookaheadSplitSize</b>
+### -field MinLookaheadSplitSize
 
 <dd>
 <p>The minimum size, in bytes, that the network adapter supports for lookahead
@@ -442,7 +442,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <div> </div>
 </dd>
 
-### -field <b>MaxLookaheadSplitSize</b>
+### -field MaxLookaheadSplitSize
 
 <dd>
 <p>The maximum size, in bytes, that the network adapter supports for lookahead
@@ -451,7 +451,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <div> </div>
 </dd>
 
-### -field <b>SupportedARPHeaderFields</b>
+### -field SupportedARPHeaderFields
 
 <dd>
 <p>A bitwise OR of flags that specify the types of ARP header fields that a
@@ -460,19 +460,19 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_FILTER_ARP_HEADER_OPERATION_SUPPORTED"></a><a id="ndis_receive_filter_arp_header_operation_supported"></a>NDIS_RECEIVE_FILTER_ARP_HEADER_OPERATION_SUPPORTED
+### -field NDIS_RECEIVE_FILTER_ARP_HEADER_OPERATION_SUPPORTED
 
 <dd>
 <p>The network adapter supports receive filtering on the ARP operation field.</p>
 </dd>
 
-### -field <a id="_NDIS_RECEIVE_FILTER_ARP_HEADER_SPA_SUPPORTED"></a><a id="_ndis_receive_filter_arp_header_spa_supported"></a>	NDIS_RECEIVE_FILTER_ARP_HEADER_SPA_SUPPORTED
+### -field 	NDIS_RECEIVE_FILTER_ARP_HEADER_SPA_SUPPORTED
 
 <dd>
 <p>The network adapter supports receive filtering on the ARP source protocol address (SPA) field.</p>
 </dd>
 
-### -field <a id="_NDIS_RECEIVE_FILTER_ARP_HEADER_TPA_SUPPORTED"></a><a id="_ndis_receive_filter_arp_header_tpa_supported"></a>	NDIS_RECEIVE_FILTER_ARP_HEADER_TPA_SUPPORTED
+### -field 	NDIS_RECEIVE_FILTER_ARP_HEADER_TPA_SUPPORTED
 
 <dd>
 <p>The network adapter supports receive filtering on the ARP target protocol address (TPA) field.</p>
@@ -480,7 +480,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 </dl>
 </dd>
 
-### -field <b>SupportedIPv4HeaderFields</b>
+### -field SupportedIPv4HeaderFields
 
 <dd>
 <p>A bitwise OR of flags that specify the types of IPv4 header fields that a
@@ -489,7 +489,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <p></p>
 <dl>
 
-### -field <a id="_NDIS_RECEIVE_FILTER_IPV4_HEADER_PROTOCOL_SUPPORTED"></a><a id="_ndis_receive_filter_ipv4_header_protocol_supported"></a>	NDIS_RECEIVE_FILTER_IPV4_HEADER_PROTOCOL_SUPPORTED
+### -field 	NDIS_RECEIVE_FILTER_IPV4_HEADER_PROTOCOL_SUPPORTED
 
 <dd>
 <p>The network adapter supports receive filtering on the IPv4 protocol field.</p>
@@ -497,7 +497,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 </dl>
 </dd>
 
-### -field <b>SupportedIPv6HeaderFields</b>
+### -field SupportedIPv6HeaderFields
 
 <dd>
 <p>A bitwise OR of flags that specify the types of IPv6 header fields that a
@@ -506,7 +506,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <p></p>
 <dl>
 
-### -field <a id="_NDIS_RECEIVE_FILTER_IPV6_HEADER_PROTOCOL_SUPPORTED"></a><a id="_ndis_receive_filter_ipv6_header_protocol_supported"></a>	NDIS_RECEIVE_FILTER_IPV6_HEADER_PROTOCOL_SUPPORTED
+### -field 	NDIS_RECEIVE_FILTER_IPV6_HEADER_PROTOCOL_SUPPORTED
 
 <dd>
 <p>The network adapter supports receive filtering on the IPv6 protocol field.</p>
@@ -514,7 +514,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 </dl>
 </dd>
 
-### -field <b>SupportedUdpHeaderFields</b>
+### -field SupportedUdpHeaderFields
 
 <dd>
 <p>A bitwise OR of flags that specify the types of IPv6 header fields that a
@@ -523,7 +523,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <p></p>
 <dl>
 
-### -field <a id="_NDIS_RECEIVE_FILTER_UDP_HEADER_DEST_PORT_SUPPORTED"></a><a id="_ndis_receive_filter_udp_header_dest_port_supported"></a>	NDIS_RECEIVE_FILTER_UDP_HEADER_DEST_PORT_SUPPORTED
+### -field 	NDIS_RECEIVE_FILTER_UDP_HEADER_DEST_PORT_SUPPORTED
 
 <dd>
 <p>The network adapter supports receive filtering on the UDP destination port field.</p>
@@ -533,15 +533,15 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 </dl>
 </dd>
 
-### -field <b>MaxFieldTestsPerPacketCoalescingFilter</b>
+### -field MaxFieldTestsPerPacketCoalescingFilter
 
 <dd>
-<p>The maximum number of tests on packet header fields that can be specified for a single packet coalescing filter. For more information about packet coalescing, see <a href="NULL">NDIS Packet Coalescing</a>.</p>
+<p>The maximum number of tests on packet header fields that can be specified for a single packet coalescing filter. For more information about packet coalescing, see <a href="netvista.ndis_packet_coalescing">NDIS Packet Coalescing</a>.</p>
 <div class="alert"><b>Note</b>  Network adapters that support packet coalescing must support five or more packet header fields that can be specified for a single packet coalescing filter. If the adapter does not support packet coalescing, the miniport driver must set this value to zero.</div>
 <div> </div>
 </dd>
 
-### -field <b>MaxPacketCoalescingFilters</b>
+### -field MaxPacketCoalescingFilters
 
 <dd>
 <p>The maximum number of packet coalescing receive filters that are supported by the network adapter.</p>
@@ -549,7 +549,7 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 <div> </div>
 </dd>
 
-### -field <b>NdisReserved</b>
+### -field NdisReserved
 
 <dd>
 <p>Reserved. Set to 0.</p>
@@ -620,4 +620,4 @@ The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_CAPABILITIES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_CAPABILITIES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

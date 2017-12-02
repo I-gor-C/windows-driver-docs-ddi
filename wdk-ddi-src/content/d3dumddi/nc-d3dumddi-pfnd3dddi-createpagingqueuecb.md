@@ -58,13 +58,13 @@ HRESULT APIENTRY CALLBACK* pfnCreatePagingQueueCb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device.</p>
 </dd>
 
-### -param <i>pData</i> [out]
+### -param pData [out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicb-createpagingqueue.md">D3DDDICB_CREATEPAGINGQUEUE</a> structure that provides the details of the requested operation.

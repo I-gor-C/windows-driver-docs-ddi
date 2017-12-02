@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size in bytes of this header and the property data that follows.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Specifies the number of buffers that follow this header.</p>

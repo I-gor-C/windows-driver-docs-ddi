@@ -62,46 +62,46 @@ typedef enum D3D11DDI_3DPIPELINELEVEL {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11DDI_3DPIPELINELEVEL_10_0"></a><a id="d3d11ddi_3dpipelinelevel_10_0"></a><b>D3D11DDI_3DPIPELINELEVEL_10_0</b>
+### -field D3D11DDI_3DPIPELINELEVEL_10_0
 
 <dd>
 <p>The driver supports Direct3D version 10 pipeline. </p>
 </dd>
 
-### -field <a id="D3D11DDI_3DPIPELINELEVEL_10_1"></a><a id="d3d11ddi_3dpipelinelevel_10_1"></a><b>D3D11DDI_3DPIPELINELEVEL_10_1</b>
+### -field D3D11DDI_3DPIPELINELEVEL_10_1
 
 <dd>
 <p>The driver supports Direct3D version 10.1 pipeline. </p>
 </dd>
 
-### -field <a id="D3D11DDI_3DPIPELINELEVEL_11_0"></a><a id="d3d11ddi_3dpipelinelevel_11_0"></a><b>D3D11DDI_3DPIPELINELEVEL_11_0</b>
+### -field D3D11DDI_3DPIPELINELEVEL_11_0
 
 <dd>
 <p>The driver supports Direct3D version 11 pipeline. </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_3DPIPELINELEVEL_11_1"></a><a id="d3d11_1ddi_3dpipelinelevel_11_1"></a><b>D3D11_1DDI_3DPIPELINELEVEL_11_1</b>
+### -field D3D11_1DDI_3DPIPELINELEVEL_11_1
 
 <dd>
 <p>Supported beginning with Windows 8.</p>
 <p>The driver supports Direct3D version 11.1 pipeline.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_3DPIPELINELEVEL_9_1"></a><a id="d3d11_1ddi_3dpipelinelevel_9_1"></a><b>D3D11_1DDI_3DPIPELINELEVEL_9_1</b>
+### -field D3D11_1DDI_3DPIPELINELEVEL_9_1
 
 <dd>
 <p>Supported beginning with Windows 8.</p>
 <p>The driver supports Direct3D version 9.1 pipeline.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_3DPIPELINELEVEL_9_2_"></a><a id="d3d11_1ddi_3dpipelinelevel_9_2_"></a><b>D3D11_1DDI_3DPIPELINELEVEL_9_2 </b>
+### -field D3D11_1DDI_3DPIPELINELEVEL_9_2 
 
 <dd>
 <p>Supported beginning with Windows 8.</p>
 <p>The driver supports Direct3D version 9.2 pipeline.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_3DPIPELINELEVEL_9_3_"></a><a id="d3d11_1ddi_3dpipelinelevel_9_3_"></a><b>D3D11_1DDI_3DPIPELINELEVEL_9_3 </b>
+### -field D3D11_1DDI_3DPIPELINELEVEL_9_3 
 
 <dd>
 <p>Supported beginning with Windows 8.</p>

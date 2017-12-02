@@ -58,25 +58,25 @@ typedef enum _UDECX_USB_DEVICE_SPEED {
 ## -enum-fields
 <dl>
 
-### -field <a id="UdecxUsbLowSpeed"></a><a id="udecxusblowspeed"></a><a id="UDECXUSBLOWSPEED"></a><b>UdecxUsbLowSpeed</b>
+### -field UdecxUsbLowSpeed
 
 <dd>
 <p>Indicates a low-speed USB 1.1-compliant device.</p>
 </dd>
 
-### -field <a id="UdecxUsbFullSpeed"></a><a id="udecxusbfullspeed"></a><a id="UDECXUSBFULLSPEED"></a><b>UdecxUsbFullSpeed</b>
+### -field UdecxUsbFullSpeed
 
 <dd>
 <p>Indicates a full-speed USB 1.1-compliant device.</p>
 </dd>
 
-### -field <a id="UdecxUsbHighSpeed"></a><a id="udecxusbhighspeed"></a><a id="UDECXUSBHIGHSPEED"></a><b>UdecxUsbHighSpeed</b>
+### -field UdecxUsbHighSpeed
 
 <dd>
 <p>Indicates a high-speed USB 2.0-compliant device. </p>
 </dd>
 
-### -field <a id="UdecxUsbSuperSpeed"></a><a id="udecxusbsuperspeed"></a><a id="UDECXUSBSUPERSPEED"></a><b>UdecxUsbSuperSpeed</b>
+### -field UdecxUsbSuperSpeed
 
 <dd>
 <p>Indicates a SuperSpeed USB 3.0-compliant device. </p>
@@ -103,7 +103,7 @@ typedef enum _UDECX_USB_DEVICE_SPEED {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbdeviceinitsetspeed">UdecxUsbDeviceInitSetSpeed</a>
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitsetspeed.md">UdecxUsbDeviceInitSetSpeed</a>
 </dt>
 </dl>
 <p> </p>

@@ -58,31 +58,31 @@ typedef struct _D3D12DDIARG_CREATE_CRYPTO_SESSION_0030 {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeMask</b>
+### -field NodeMask
 
 <dd>
 <p>Represents the set of nodes.</p>
 </dd>
 
-### -field <b>DecodeProfile</b>
+### -field DecodeProfile
 
 <dd>
 <p>The decode profile.</p>
 </dd>
 
-### -field <b>ContentProtectionSystem</b>
+### -field ContentProtectionSystem
 
 <dd>
 <p>The content protection system.</p>
 </dd>
 
-### -field <b>BitstreamEncryption</b>
+### -field BitstreamEncryption
 
 <dd>
 <p>The bitstream encryption.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The crypto session flags.</p>

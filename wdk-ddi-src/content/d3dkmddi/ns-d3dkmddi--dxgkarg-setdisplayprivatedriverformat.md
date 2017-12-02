@@ -56,20 +56,20 @@ typedef struct _DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number that identifies the video present source in a path of a video present network (VidPN) topology to change the private driver format attribute of. </p>
 </dd>
 
-### -field <b>PrimaryAllocation</b>
+### -field PrimaryAllocation
 
 <dd>
 <p>[in] If nonzero, handle to the allocation for the current primary surface for the video present source that the <b>VidPnSourceId</b> member specifies. The display miniport driver returns this handle when its <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function is called to create the primary surface. This handle is returned in the <b>hAllocation</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a> structure of the primary-surface element in the <b>pAllocationInfo</b> array member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createallocation.md">DXGKARG_CREATEALLOCATION</a> structure. This handle is a pointer to a private driver data structure that contains information about the primary allocation.</p>
 <p>If <b>PrimaryAllocation</b> is set to zero, no primary surface is currently associated with the video present source. In this situation, the video present source is not visible. </p>
 </dd>
 
-### -field <b>PrivateDriverFormatAttribute</b>
+### -field PrivateDriverFormatAttribute
 
 <dd>
 <p>[in] A UINT value that specifies the private-format attribute to set for the video present source that the <b>VidPnSourceId</b> member specifies.</p>

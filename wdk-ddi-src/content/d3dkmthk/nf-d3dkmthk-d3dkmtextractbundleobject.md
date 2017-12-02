@@ -56,7 +56,7 @@ NTSTATUS  D3DKMTExtractBundleObject(
 ## -parameters
 <dl>
 
-### -param <i>D3dkmt_extractbundleobject</i> [in, out]
+### -param D3dkmt_extractbundleobject [in, out]
 
 <dd>
 <p>Holds information to extract the bundle object.</p>

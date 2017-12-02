@@ -54,7 +54,7 @@ typedef struct _BDA_ETHERNET_ADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>rgbAddress</b>
+### -field rgbAddress
 
 <dd></dd>
 </dl>

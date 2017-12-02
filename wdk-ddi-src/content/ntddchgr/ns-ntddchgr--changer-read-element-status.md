@@ -55,13 +55,13 @@ typedef struct _CHANGER_READ_ELEMENT_STATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>ElementList</b>
+### -field ElementList
 
 <dd>
 <p>Specifies the element type and the number of elements of that type for which to report status in a structure of type <a href="..\ntddchgr\ns-ntddchgr--changer-element-list.md">CHANGER_ELEMENT_LIST</a>. This member contains a list of structures of type <a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a>. The <b>ElementType</b> member of each CHANGER_ELEMENT structure in this list can be assigned a value of <b>ChangerDrive</b>, <b>ChangerSlot</b>, <b>ChangerTransport</b>, <b>ChangerIEPort</b>, or <b>AllElements</b>. </p>
 </dd>
 
-### -field <b>VolumeTagInfo</b>
+### -field VolumeTagInfo
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that volume tag information should be reported in addition to element status. When <b>FALSE</b>, it indicates that only element status should be reported. A volume tag can be a bar code or an application-defined value assigned using <a href="..\mcd\nf-mcd-changerqueryvolumetags.md">ChangerQueryVolumeTags</a>. This member is applicable only if either CHANGER_BAR_CODE_SCANNER_INSTALLED or CHANGER_VOLUME_IDENTIFICATION is set in the <b>Features0</b> member of the <a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a> structure.</p>

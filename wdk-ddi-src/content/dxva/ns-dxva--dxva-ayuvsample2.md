@@ -57,25 +57,25 @@ typedef struct _DXVA_AYUVsample2 {
 ## -struct-fields
 <dl>
 
-### -field <b>bCrValue</b>
+### -field bCrValue
 
 <dd>
 <p>Specifies a chrominance (Cr) sample value (scaled per ITU-R Rec. BT.601) as an unsigned value. Thus, the color black is nominally specified by Y=16, Cb=Cr=128, and the color white is nominally specified by Y=235, Cb=Cr=128.</p>
 </dd>
 
-### -field <b>bCbValue</b>
+### -field bCbValue
 
 <dd>
 <p>Specifies a chrominance (Cb) sample value (scaled per ITU-R Rec. BT.601) as an unsigned value. Thus, the color black is nominally specified by Y=16, Cb=Cr=128, and the color white is nominally specified by Y=235, Cb=Cr=128.</p>
 </dd>
 
-### -field <b>bY_Value</b>
+### -field bY_Value
 
 <dd>
 <p>Specifies a luminance (Y) sample value (scaled per ITU-R Rec. BT.601) as an unsigned value. Thus, the color black is nominally specified by Y=16, Cb=Cr=128, and the color white is nominally specified by Y=235, Cb=Cr=128.</p>
 </dd>
 
-### -field <b>bSampleAlpha8</b>
+### -field bSampleAlpha8
 
 <dd>
 <p>Specifies the opacity of the pixel when used as a source graphic for blending with another picture. For Windows Server 2003 SP1 and Windows XP SP2, the opacity level is not used and should be ignored by the driver.</p>

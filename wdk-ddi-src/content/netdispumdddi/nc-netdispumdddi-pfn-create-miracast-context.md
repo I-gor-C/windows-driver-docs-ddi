@@ -59,19 +59,19 @@ NTSTATUS NTAPI* CreateMiracastContext(
 ## -parameters
 <dl>
 
-### -param <i>hMiracastDeviceHandle</i> [in]
+### -param hMiracastDeviceHandle [in]
 
 <dd>
 <p>A handle to the current Miracast display device, supplied by the operating system.</p>
 </dd>
 
-### -param <i>pMiracastCallbacks</i> [in]
+### -param pMiracastCallbacks [in]
 
 <dd>
 <p>A pointer to a <a href="..\netdispumdddi\ns-netdispumdddi--miracast-callbacks.md">MIRACAST_CALLBACKS</a> structure that has pointers to callback functions, supplied by the operating system,  that the Miracast user-mode driver can call.</p>
 </dd>
 
-### -param <i>ppMiracastContext</i> [out]
+### -param ppMiracastContext [out]
 
 <dd>
 <p>A pointer to a buffer, supplied by the operating system, that holds the Miracast context that the Miracast user-mode driver returns.</p>

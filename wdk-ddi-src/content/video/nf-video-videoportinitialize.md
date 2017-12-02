@@ -58,25 +58,25 @@ ULONG VideoPortInitialize(
 ## -parameters
 <dl>
 
-### -param <i>Argument1</i> 
+### -param Argument1 
 
 <dd>
 <p>A pointer with which the operating system called <a href="display.driverentry_of_video_miniport_driver">DriverEntry of Video Miniport Driver</a>.</p>
 </dd>
 
-### -param <i>Argument2</i> 
+### -param Argument2 
 
 <dd>
 <p>A second pointer with which the operating system called <b>DriverEntry</b>.</p>
 </dd>
 
-### -param <i>HwInitializationData</i> 
+### -param HwInitializationData 
 
 <dd>
 <p>Pointer to the <a href="..\video\ns-video--video-hw-initialization-data.md">VIDEO_HW_INITIALIZATION_DATA</a> structure on the stack. The miniport driver's <b>DriverEntry</b> routine zero-initialized this structure and then filled it in with driver-specific configuration information describing a video adapter that the miniport driver can support.</p>
 </dd>
 
-### -param <i>HwContext</i> 
+### -param HwContext 
 
 <dd>
 <p>Must be <b>NULL</b>.</p>

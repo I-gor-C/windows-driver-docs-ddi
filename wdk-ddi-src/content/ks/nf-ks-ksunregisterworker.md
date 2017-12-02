@@ -54,7 +54,7 @@ VOID KsUnregisterWorker(
 ## -parameters
 <dl>
 
-### -param <i>Worker</i> [in]
+### -param Worker [in]
 
 <dd>
 <p>Specifies the previously allocated worker to be unregistered. The function will wait until any outstanding work item is completed.</p>

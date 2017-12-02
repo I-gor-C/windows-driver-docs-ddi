@@ -55,13 +55,13 @@ NTSTATUS KsQueueWorkItem(
 ## -parameters
 <dl>
 
-### -param <i>Worker</i> [in]
+### -param Worker [in]
 
 <dd>
 <p>Specifies the previously allocated worker.</p>
 </dd>
 
-### -param <i>WorkItem</i> [in]
+### -param WorkItem [in]
 
 <dd>
 <p>Specifies the initialized work item to queue. This work item is only associated with the worker as long as the worker is on a queue. The work item must have been initialized by <a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a>.</p>

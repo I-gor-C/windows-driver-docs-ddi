@@ -59,7 +59,7 @@ typedef enum _D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_GRAPHICS_PREEMPTION_NONE"></a><a id="d3dkmdt_graphics_preemption_none"></a><b>D3DKMDT_GRAPHICS_PREEMPTION_NONE</b>
+### -field D3DKMDT_GRAPHICS_PREEMPTION_NONE
 
 <dd>
 <p>The driver does not support the preemption of GPU graphics operations.</p>
@@ -67,31 +67,31 @@ typedef enum _D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY {
 <div> </div>
 </dd>
 
-### -field <a id="D3DKMDT_GRAPHICS_PREEMPTION_DMA_BUFFER_BOUNDARY"></a><a id="d3dkmdt_graphics_preemption_dma_buffer_boundary"></a><b>D3DKMDT_GRAPHICS_PREEMPTION_DMA_BUFFER_BOUNDARY</b>
+### -field D3DKMDT_GRAPHICS_PREEMPTION_DMA_BUFFER_BOUNDARY
 
 <dd>
 <p>The driver cannot stop currently running DMA buffers of a specified type but can prevent all pending DMA buffers in the hardware queue from running.</p>
 </dd>
 
-### -field <a id="D3DKMDT_GRAPHICS_PREEMPTION_PRIMITIVE_BOUNDARY"></a><a id="d3dkmdt_graphics_preemption_primitive_boundary"></a><b>D3DKMDT_GRAPHICS_PREEMPTION_PRIMITIVE_BOUNDARY</b>
+### -field D3DKMDT_GRAPHICS_PREEMPTION_PRIMITIVE_BOUNDARY
 
 <dd>
 <p>The driver cannot stop currently running primitive buffers of a specified type but can prevent all pending primitive buffers in the hardware queue from running.</p>
 </dd>
 
-### -field <a id="D3DKMDT_GRAPHICS_PREEMPTION_TRIANGLE_BOUNDARY"></a><a id="d3dkmdt_graphics_preemption_triangle_boundary"></a><b>D3DKMDT_GRAPHICS_PREEMPTION_TRIANGLE_BOUNDARY</b>
+### -field D3DKMDT_GRAPHICS_PREEMPTION_TRIANGLE_BOUNDARY
 
 <dd>
 <p>The driver cannot stop currently running triangle buffers of a specified type but can prevent all pending triangle buffers in the hardware queue from running.</p>
 </dd>
 
-### -field <a id="D3DKMDT_GRAPHICS_PREEMPTION_PIXEL_BOUNDARY"></a><a id="d3dkmdt_graphics_preemption_pixel_boundary"></a><b>D3DKMDT_GRAPHICS_PREEMPTION_PIXEL_BOUNDARY</b>
+### -field D3DKMDT_GRAPHICS_PREEMPTION_PIXEL_BOUNDARY
 
 <dd>
 <p>The driver cannot stop currently running pixel buffers of a specified type but can prevent all pending pixel buffers in the hardware queue from running.</p>
 </dd>
 
-### -field <a id="D3DKMDT_GRAPHICS_PREEMPTION_SHADER_BOUNDARY"></a><a id="d3dkmdt_graphics_preemption_shader_boundary"></a><b>D3DKMDT_GRAPHICS_PREEMPTION_SHADER_BOUNDARY</b>
+### -field D3DKMDT_GRAPHICS_PREEMPTION_SHADER_BOUNDARY
 
 <dd>
 <p>The driver cannot stop currently running shader instruction buffers of a specified type but can prevent all pending shader instruction buffers in the hardware queue from running.</p>

@@ -57,25 +57,25 @@ typedef struct D3D10_2DDIARG_GETCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>[in] The type of capabilities to retrieve. The Microsoft Direct3D runtime can supply one of the values from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-2ddicaps-type.md">D3D10_2DDICAPS_TYPE</a> enumeration, possibly along with information in the memory block that is pointed to by <b>pInfo</b>, to retrieve particular capability data in the memory block at <b>pData</b>.</p>
 </dd>
 
-### -field <b>pInfo</b>
+### -field pInfo
 
 <dd>
 <p>[in] A pointer to a memory block that contains data that specifies the specific condition on which to retrieve the capabilities of the type that is specified by the <b>Type</b> member. </p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>[out] A pointer to a memory block that is filled with capabilities of the type that is specified by the <b>Type</b> member and possibly determined by the condition that is specified in the memory block at <b>pInfo</b>. </p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>[in/out] The size, in bytes, of the memory block at <b>pData</b>. </p>

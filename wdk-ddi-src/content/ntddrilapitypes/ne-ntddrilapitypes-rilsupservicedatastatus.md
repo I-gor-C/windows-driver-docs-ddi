@@ -7,7 +7,7 @@ old-location: netvista\rilsupservicedatastatus.htm
 old-project: netvista
 ms.assetid: 60cecce7-9085-4cbd-b637-e24af51d1c22
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILSUPSERVICEDATASTATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SUPSVCDATASTATUS_FURTHERINFOREQUIRED"></a><a id="ril_supsvcdatastatus_furtherinforequired"></a><b>RIL_SUPSVCDATASTATUS_FURTHERINFOREQUIRED</b>
+### -field RIL_SUPSVCDATASTATUS_FURTHERINFOREQUIRED
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCDATASTATUS_TIMEOUT"></a><a id="ril_supsvcdatastatus_timeout"></a><b>RIL_SUPSVCDATASTATUS_TIMEOUT</b>
+### -field RIL_SUPSVCDATASTATUS_TIMEOUT
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCDATASTATUS_ERROR"></a><a id="ril_supsvcdatastatus_error"></a><b>RIL_SUPSVCDATASTATUS_ERROR</b>
+### -field RIL_SUPSVCDATASTATUS_ERROR
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCDATASTATUS_MAX"></a><a id="ril_supsvcdatastatus_max"></a><b>RIL_SUPSVCDATASTATUS_MAX</b>
+### -field RIL_SUPSVCDATASTATUS_MAX
 
 <dd></dd>
 </dl>

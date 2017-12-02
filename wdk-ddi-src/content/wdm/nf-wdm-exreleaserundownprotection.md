@@ -55,7 +55,7 @@ VOID ExReleaseRundownProtection(
 ## -parameters
 <dl>
 
-### -param <i>RunRef</i> [in, out]
+### -param RunRef [in, out]
 
 <dd>
 <p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/jj569379">EX_RUNDOWN_REF</a> structure that was initialized by a previous call to the  <a href="..\wdm\nf-wdm-exinitializerundownprotection.md">ExInitializeRundownProtection</a> routine. The run-down protection routines use this structure to track the run-down status of the associated shared object. This structure is opaque to drivers.</p>

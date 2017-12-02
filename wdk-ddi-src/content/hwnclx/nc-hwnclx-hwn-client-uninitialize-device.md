@@ -60,13 +60,13 @@ typedef HWN_CLIENT_UNINITIALIZE_DEVICE *PHWN_CLIENT_UNINITIALIZE_DEVICE;
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>Handle to the client drivers framework device object. </p>
 </dd>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to the client driver's context information. This memory space is available for use by the client driver. It is allocated as part of the framework object context space by <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. For more information, see <a href="gpiobtn.hwn_client_registration_packet">HWN_CLIENT_REGISTRATION_PACKET</a> and  <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/framework-object-context-space">Framework Object Context Space</a>. </p>

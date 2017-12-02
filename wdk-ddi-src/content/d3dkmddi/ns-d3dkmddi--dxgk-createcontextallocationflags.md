@@ -60,7 +60,7 @@ typedef struct _DXGK_CREATECONTEXTALLOCATIONFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>SharedAcrossContexts</b>
+### -field SharedAcrossContexts
 
 <dd>
 <p>[in] A UINT value that specifies the association of the context.</p>
@@ -70,14 +70,14 @@ typedef struct _DXGK_CREATECONTEXTALLOCATIONFLAGS {
                                                             </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the most significant 31 bits (0xFFFFFFFE) to zeros.
 </p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] A 32-bit value that specifies the context allocation flags.</p>

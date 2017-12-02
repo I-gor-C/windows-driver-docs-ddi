@@ -7,7 +7,7 @@ old-location: netvista\fwpsopentoken0.htm
 old-project: netvista
 ms.assetid: B6C61023-F840-4517-83C1-BC9CBDFC27B0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsOpenToken0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ NTSTATUS NTAPI NTAPI FwpsOpenToken0(
 ## -parameters
 <dl>
 
-### -param <i>engineHandle</i> [in]
+### -param engineHandle [in]
 
 <dd>
 <p>A handle for an open session to the filter engine. A callout driver calls the 
@@ -67,20 +67,20 @@ NTSTATUS NTAPI NTAPI FwpsOpenToken0(
      session to the filter engine.</p>
 </dd>
 
-### -param <i>modifiedId</i> [in]
+### -param modifiedId [in]
 
 <dd>
 <p>Specifies an <a href="netvista.luid">LUID</a> that changes each time the token is modified. An application can use this value as a test of whether a security context has changed since it was last used.</p>
 </dd>
 
-### -param <i>desiredAccess</i> [in]
+### -param desiredAccess [in]
 
 <dd>
 <p>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> structure specifying the requested types of access to the access token. These requested access types are compared with the token's discretionary access-control list (<b>DACL</b>) to determine which accesses are granted or denied.</p>
 </dd>
 
-### -param <i>accessToken</i> [out]
+### -param accessToken [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives a handle to the newly opened access token.</p>
@@ -148,4 +148,4 @@ NTSTATUS NTAPI NTAPI FwpsOpenToken0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsOpenToken0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsOpenToken0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

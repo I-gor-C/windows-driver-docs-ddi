@@ -56,19 +56,19 @@ typedef enum _PDO_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PDO_STATE_UNDEFINED"></a><a id="pdo_state_undefined"></a><b>PDO_STATE_UNDEFINED</b>
+### -field PDO_STATE_UNDEFINED
 
 <dd>
 <p>This value indicates that the PDO state is undefined.</p>
 </dd>
 
-### -field <a id="PDO_STATE_STARTED"></a><a id="pdo_state_started"></a><b>PDO_STATE_STARTED</b>
+### -field PDO_STATE_STARTED
 
 <dd>
 <p>This value indicates that the PDO is started.</p>
 </dd>
 
-### -field <a id="PDO_STATE_NOT_STARTED"></a><a id="pdo_state_not_started"></a><b>PDO_STATE_NOT_STARTED</b>
+### -field PDO_STATE_NOT_STARTED
 
 <dd>
 <p>This value indicates that the PDO is not started.</p>

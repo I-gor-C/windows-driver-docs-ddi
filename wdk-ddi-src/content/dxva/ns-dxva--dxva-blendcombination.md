@@ -63,65 +63,65 @@ typedef struct _DXVA_BlendCombination {
 ## -struct-fields
 <dl>
 
-### -field <b>wPictureSourceIndex</b>
+### -field wPictureSourceIndex
 
 <dd>
 <p>Specifies the uncompressed surface index, as defined by the contents of the DWORD pointed to by the <b>lpInputData</b> member of <a href="display.dd_beginmocompframedata">DD_BEGINMOCOMPFRAMEDATA</a> in a prior call to <a href="display.ddmocompbeginframe">DdMoCompBeginFrame</a>, of the picture to be combined with the graphic. This value is 0xFFFF if back-end hardware alpha blending is in use (when the <b>bConfigBlendType</b> member of <a href="..\dxva\ns-dxva--dxva-configalphacombine.md">DXVA_ConfigAlphaCombine</a> is 1).</p>
 </dd>
 
-### -field <b>wBlendedDestinationIndex</b>
+### -field wBlendedDestinationIndex
 
 <dd>
 <p>Specifies the uncompressed surface index, as defined by the contents of the DWORD pointed to by the <b>lpInputData</b> member of DD_BEGINMOCOMPFRAMEDATA in a prior call to <b>DdMoCompBeginFrame</b>, of the combined picture to be created. This value is 0xFFFF if back-end hardware alpha blending is in use (when the <b>bConfigBlendType</b> member of DXVA_ConfigAlphaCombine is 1). </p>
 <p>This value cannot be equal to <b>wPictureSourceIndex</b> unless back-end hardware alpha blending is in use.</p>
 </dd>
 
-### -field <b>PictureSourceRect16thPel</b>
+### -field PictureSourceRect16thPel
 
 <dd>
 <p>Specifies the area of the source picture to be combined with the graphic image as a <a href="display.rect">RECT</a> structure. Dimensions are specified in units of one-sixteenth of the distance between sample values of the luminance component. (In other words, the members in the RECT structure are fixed-point representations that have 28 bits before the binary point and 4 bits after the binary point.) This one-sixteenth sample accuracy allows <b>PictureSourceRect16thPel</b> to contain the same accuracy as the <i>frame_centre_horizontal_offset</i> and <i>frame_centre_vertical_offset</i> pan-scan variables in MPEG-2 video.</p>
 <p>If the <b>bConfigPictureResizing</b> member of DXVA_ConfigAlphaCombine is zero, all dimensions in <b>PictureSourceRect16thPel</b> must be integer multiples of 16.</p>
 </dd>
 
-### -field <b>PictureDestinationRect</b>
+### -field PictureDestinationRect
 
 <dd>
 <p>Specifies the area of the destination picture as a RECT structure. This will contain the area defined for the source picture by <b>PictureSourceRect16thPel</b>.</p>
 <p>If the <b>bConfigPictureResizing</b> member of <a href="..\dxva\ns-dxva--dxva-configalphacombine.md">DXVA_ConfigAlphaCombine</a> is zero, the area specified by <b>PictureDestinationRect</b> must have the same width and height as the area specified by <b>PictureSourceRect16thPel</b>. If <b>PictureDestinationRect</b> differs in size from <b>PictureSourceRect16thPel</b>, the resampling method to be applied is not specified, but must have a quality that is at least equivalent to that of bilinear resampling.</p>
 </dd>
 
-### -field <b>GraphicSourceRect</b>
+### -field GraphicSourceRect
 
 <dd>
 <p>Specifies the area of the source graphic image as a <a href="display.rect">RECT</a> structure. This area is combined with the part of the source picture specified by <b>PictureSourceRect16thPel</b> to create the alpha-blended picture.</p>
 </dd>
 
-### -field <b>GraphicDestinationRect</b>
+### -field GraphicDestinationRect
 
 <dd>
 <p>Specifies the area of the destination graphic image as a <a href="display.rect">RECT</a> structure.</p>
 <p>If the <b>bConfigGraphicResizing</b> member of DXVA_ConfigAlphaCombine is zero, the destination picture must have the same width and height as the area specified by <b>GraphicSourceRect</b>. If <b>GraphicDestinationRect</b> differs in size from <b>GraphicSourceRect</b>, the resampling method to be applied to the graphic image is not specified. However, the resampling method used should have a quality that is at least equivalent to a bilinear resampling of an AYUV surface that represents the blending information.</p>
 </dd>
 
-### -field <b>wBlendDelay</b>
+### -field wBlendDelay
 
 <dd>
 <p>Specifies the number of milliseconds of delay prior to the blending combination going into effect. If back-end hardware blending is in use (for example, if the <b>bConfigBlendType</b> member of <a href="..\dxva\ns-dxva--dxva-configalphacombine.md">DXVA_ConfigAlphaCombine</a> is 1), <b>wBlendDelay</b> contains the number of milliseconds of delay prior to the blending combination going into effect. If front-end blending is in use, this member has no meaning and must be zero.</p>
 </dd>
 
-### -field <b>bBlendOn</b>
+### -field bBlendOn
 
 <dd>
 <p>Specifies when a blending combination operation starts and stops. If back-end hardware blending is in use, blending is applied from the time specified in a blending combination operation (with <b>bBlendOn</b> equal to 1) until the execution time of a new blending combination (with <b>bBlendOn</b> equal to 1), or until the blending is disabled by a blending combination operation (with <b>bBlendOn</b> equal to zero). If back-end hardware blending is in use and <b>bBlendOn</b> is zero, the only other value in the alpha-blend combination buffer that has meaning is <b>wBlendDelay</b>. If front-end blending is in use, this member has no meaning and must be zero .</p>
 </dd>
 
-### -field <b>bWholePlaneAlpha</b>
+### -field bWholePlaneAlpha
 
 <dd>
 <p>Contains an opacity multiplier for the alpha channel of the graphic image. The value zero indicates that the graphic image is transparent (so that the graphic content has no effect on the resulting blended picture). The value 255 indicates that the graphic image uses its full sample opacity. If <b>bWholePlaneAlpha</b> is not equal to zero, the blend specified is to multiply the opacity of each location in the graphic content by (<b>bWholePlaneAlpha</b>+1)/256. For a zero value of <b>bWholePlaneAlpha</b>, the blend to use is the opacity specified in the graphic image without alteration. This must be equal to 255 if the <b>bConfigWholePlaneAlpha</b> member of <a href="..\dxva\ns-dxva--dxva-configalphacombine.md">DXVA_ConfigAlphaCombine</a> is zero.</p>
 </dd>
 
-### -field <b>OutsideYUVcolor</b>
+### -field OutsideYUVcolor
 
 <dd>
 <p>Indicates whether areas outside of the <b>PictureDestinationRect</b> use a constant color for blending. If so, this member specifies that color constant. The <b>OutsideYUVcolor</b> member is defined as a <a href="..\dxva\ns-dxva--dxva-ayuvsample2.md">DXVA_AYUVsample2</a> structure. See the <b>Remarks</b> section for more information.</p>

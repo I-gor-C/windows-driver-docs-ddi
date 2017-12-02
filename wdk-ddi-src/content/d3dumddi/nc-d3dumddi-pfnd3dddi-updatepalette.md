@@ -59,19 +59,19 @@ __checkReturn HRESULT APIENTRY UpdatePalette(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-updatepalette.md">D3DDDIARG_UPDATEPALETTE</a> structure that describes parameters for the palette-update operation.</p>
 </dd>
 
-### -param <i>pPaletteData</i> [in]
+### -param pPaletteData [in]
 
 <dd>
 <p> An array of PALETTEENTRY structures to update. For more information about PALETTEENTRY, see the Microsoft Windows SDK documentation.</p>

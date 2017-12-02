@@ -7,7 +7,7 @@ old-location: debugger\getcurrentthreadhandle.htm
 old-project: debugger
 ms.assetid: edbda821-8016-48db-a2f5-7f615428da0c
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSystemObjects, GetCurrentThreadHandle, IDebugSystemObjects::GetCurrentThreadHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetCurrentThreadHandle(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [out]
+### -param Handle [out]
 
 <dd>
 <p>Receives the current thread's system handle.</p>
@@ -62,7 +62,7 @@ HRESULT GetCurrentThreadHandle(
 </dl>
 
 ## -returns
-<p>This method may also return other error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

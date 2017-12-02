@@ -55,13 +55,13 @@ typedef struct _D3DKMDT_PREEMPTION_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>GraphicsPreemptionGranularity</b>
+### -field GraphicsPreemptionGranularity
 
 <dd>
 <p>A  <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-graphics-preemption-granularity.md">D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY</a> value that specifies the level of graphics requests  that the driver can preempt for GPU graphics  operations.</p>
 </dd>
 
-### -field <b>ComputePreemptionGranularity</b>
+### -field ComputePreemptionGranularity
 
 <dd>
 <p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-compute-preemption-granularity.md">D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY</a> value that specifies the level of graphics requests that the driver can preempt for GPU compute shader operations.</p>

@@ -56,19 +56,19 @@ NTSTATUS KsPinGetConnectedFilterInterface(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure. The filter to which this pin is attached is queried for the requested interface.</p>
 </dd>
 
-### -param <i>InterfaceId</i> [in]
+### -param InterfaceId [in]
 
 <dd>
 <p>A pointer to a GUID representing the interface ID for the interface to obtain. A <b>QueryInterface</b> call is automatically performed for this interface.</p>
 </dd>
 
-### -param <i>Interface</i> [out]
+### -param Interface [out]
 
 <dd>
 <p>A pointer to a PVOID. As in COM, the resulting interface pointer is deposited into <i>*Interface</i>. This interface has a corresponding reference count and <i>must</i> be released by the caller as in COM.</p>
@@ -79,9 +79,9 @@ NTSTATUS KsPinGetConnectedFilterInterface(
 <p><b>KsPinGetConnectedFilterInterface</b> returns STATUS_SUCCESS if the interface exists on the connected filter or in the AVStream thunk. If STATUS_SUCCESS is returned, the interface pointer is deposited into <i>*Interface</i>. Otherwise, it returns STATUS_NOINTERFACE. Note that this corresponds to the COM HRESULT E_NOINTERFACE.</p>
 
 ## -remarks
-<p>By default, objects support the <b>IUnknown</b> interface and the <a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a> interface. If the filter and connected pin are AVStream objects, the query and the returned interface pointer are direct calls to the other driver. However, if the connected pin and filter do not belong to an AVStream driver, a thunk is created that provides IKsControl support through synchronous calls to the driver containing the filter, using <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>.</p>
+<p>By default, objects support the <b>IUnknown</b> interface and the <a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a> interface. If the filter and connected pin are AVStream objects, the query and the returned interface pointer are direct calls to the other driver. However, if the connected pin and filter do not belong to an AVStream driver, a thunk is created that provides IKsControl support through synchronous calls to the driver containing the filter, using <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>.</p>
 
-<p>The most common usage of <b>KsPinGetConnectedFilterInterface</b> is to acquire the control interface for the filter to which <i>Pin</i> attaches. This control interface can then be used for property, method, or event calls down to the connected pin, or can query for interfaces that have been aggregated onto the connected filter. (If the connected filter is an AVStream filter; AVStream provides thunking only for <a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a> and <b>IUnknown</b> for non-AVStream filters).</p>
+<p>The most common usage of <b>KsPinGetConnectedFilterInterface</b> is to acquire the control interface for the filter to which <i>Pin</i> attaches. This control interface can then be used for property, method, or event calls down to the connected pin, or can query for interfaces that have been aggregated onto the connected filter. (If the connected filter is an AVStream filter; AVStream provides thunking only for <a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a> and <b>IUnknown</b> for non-AVStream filters).</p>
 
 <p>The thunk is created only if<i> Pin</i> is a source pin; thus, the calls only work if one or more of the following is true:</p>
 
@@ -153,7 +153,7 @@ NTSTATUS KsPinGetConnectedFilterInterface(
 <a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 </dt>
 <dt>
 <a href="..\ks\nn-ks-iksreferenceclock.md">IKsReferenceClock</a>

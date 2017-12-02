@@ -58,31 +58,31 @@ NTSTATUS PsCreateSiloContext(
 ## -parameters
 <dl>
 
-### -param <i>Silo</i> [in]
+### -param Silo [in]
 
 <dd>
 <p>A pointer to a silo.  This parameter is required and it cannot be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>The size, in bytes, of the portion of the object defined by the caller.</p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>The type of pool to allocate from. This parameter is required and must be one of the following: <b>NonPagedPoolNx</b> or <b>PagedPool</b>.</p>
 </dd>
 
-### -param <i>ContextCleanupCallback</i> [in, optional]
+### -param ContextCleanupCallback [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\ntddk\nc-ntddk-silo-context-cleanup-callback.md">SILO_CONTEXT_CLEANUP_CALLBACK</a> callback function. The function will be called when the returned object has zero references to it. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>ReturnedSiloContext</i> 
+### -param ReturnedSiloContext 
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the address of the newly created object. </p>

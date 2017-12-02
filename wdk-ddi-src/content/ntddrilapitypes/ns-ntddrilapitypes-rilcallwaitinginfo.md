@@ -7,7 +7,7 @@ old-location: netvista\rilcallwaitinginfo.htm
 old-project: netvista
 ms.assetid: 526ce708-93bb-43f2-9d78-b3e8360e01da
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLWAITINGINFO, RILCALLWAITINGINFO, *LPRILCALLWAITINGINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef struct _RILCALLWAITINGINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwCallType</b>
+### -field dwCallType
 
 <dd></dd>
 
-### -field <b>rrpiCallerInfo</b>
+### -field rrpiCallerInfo
 
 <dd></dd>
 </dl>

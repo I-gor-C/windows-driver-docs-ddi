@@ -58,31 +58,31 @@ typedef struct _D3DKMDT_MONITOR_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>An integer that identifies the monitor descriptor.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A value from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-descriptor-type.md">D3DKMDT_MONITOR_DESCRIPTOR_TYPE</a> enumeration that indicates the descriptor type.</p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>The size, in bytes, of the monitor descriptor.</p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>A pointer to the monitor descriptor.</p>
 </dd>
 
-### -field <b>Origin</b>
+### -field Origin
 
 <dd>
 <p>A value of type <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-capabilities-origin.md">D3DKMDT_MONITOR_CAPABILITIES_ORIGIN</a> that indicates the source of the mode information for the monitor. For example, the mode information could be from a default monitor profile or it could be from an override in an INF file.</p>

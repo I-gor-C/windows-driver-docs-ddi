@@ -55,11 +55,11 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSEVENT_PINCAPS_FORMATCHANGE"></a><a id="ksevent_pincaps_formatchange"></a><b>KSEVENT_PINCAPS_FORMATCHANGE</b>
+### -field KSEVENT_PINCAPS_FORMATCHANGE
 
 <dd></dd>
 
-### -field <a id="KSEVENT_PINCAPS_JACKINFOCHANGE"></a><a id="ksevent_pincaps_jackinfochange"></a><b>KSEVENT_PINCAPS_JACKINFOCHANGE</b>
+### -field KSEVENT_PINCAPS_JACKINFOCHANGE
 
 <dd></dd>
 </dl>

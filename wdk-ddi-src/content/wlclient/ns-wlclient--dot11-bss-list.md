@@ -7,7 +7,7 @@ old-location: netvista\dot11_bss_list.htm
 old-project: netvista
 ms.assetid: e5c31c4d-8c46-4af1-90de-0311cc90c6c0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_BSS_LIST, DOT11_BSS_LIST, *PDOT11_BSS_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,14 +54,14 @@ typedef struct _DOT11_BSS_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>uNumOfBytes</b>
+### -field uNumOfBytes
 
 <dd>
 <p>The length, in bytes, of the data within the buffer referenced by the 
      <b>pucBuffer</b> member.</p>
 </dd>
 
-### -field <b>pucBuffer</b>
+### -field pucBuffer
 
 <dd>
 <p>A pointer to a buffer that contains a list of 
@@ -128,4 +128,4 @@ typedef struct _DOT11_BSS_LIST {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_LIST structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_LIST structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

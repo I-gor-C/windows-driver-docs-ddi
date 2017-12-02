@@ -7,7 +7,7 @@ old-location: netvista\ril_deinitialize.htm
 old-project: netvista
 ms.assetid: 1902df2a-6325-46d5-871a-5af6f3ce7f18
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_Deinitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ HRESULT  RIL_Deinitialize(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 </dl>

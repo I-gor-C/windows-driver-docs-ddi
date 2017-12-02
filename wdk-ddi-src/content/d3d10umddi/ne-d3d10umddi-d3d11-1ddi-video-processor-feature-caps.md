@@ -67,31 +67,31 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALPHA_FILL"></a><a id="d3d11_1ddi_video_processor_feature_caps_alpha_fill"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALPHA_FILL</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALPHA_FILL
 
 <dd>
 <p>The video processor can set alpha values on the output pixels. For more information, see <a href="display.videoprocessorsetoutputalphafillmode">VideoProcessorSetOutputAlphaFillMode</a>.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_CONSTRICTION"></a><a id="d3d11_1ddi_video_processor_feature_caps_constriction"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_CONSTRICTION</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_CONSTRICTION
 
 <dd>
 <p>The video processor can downsample the video output. For more information, see <a href="display.videoprocessorsetoutputconstriction">VideoProcessorSetOutputConstriction</a>.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_LUMA_KEY"></a><a id="d3d11_1ddi_video_processor_feature_caps_luma_key"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_LUMA_KEY</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_LUMA_KEY
 
 <dd>
 <p>The video processor can perform luma keying. For more information, see <a href="display.videoprocessorsetstreamlumakey">VideoProcessorSetStreamLumaKey</a>.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALPHA_PALETTE"></a><a id="d3d11_1ddi_video_processor_feature_caps_alpha_palette"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALPHA_PALETTE</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALPHA_PALETTE
 
 <dd>
 <p>The video processor can apply alpha values from color palette entries.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_LEGACY"></a><a id="d3d11_1ddi_video_processor_feature_caps_legacy"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_LEGACY</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_LEGACY
 
 <dd>
 <p>The driver does not support the DXVA-HDDDI. If this capability flag is set, the video processor has the following limitations:</p>
@@ -106,45 +106,45 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS {
 </ul>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_STEREO"></a><a id="d3d11_1ddi_video_processor_feature_caps_stereo"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_STEREO</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_STEREO
 
 <dd>
 <p>The video processor can support 3-D stereo video. For more information, see <a href="display.videoprocessorsetstreamstereoformat">VideoProcessorSetStreamStereoFormat</a>.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ROTATION"></a><a id="d3d11_1ddi_video_processor_feature_caps_rotation"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ROTATION</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ROTATION
 
 <dd>
 <p>The video processor is capable of rotating the input stream by 90, 180, or 270 degrees (clockwise).</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALPHA_STREAM"></a><a id="d3d11_1ddi_video_processor_feature_caps_alpha_stream"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALPHA_STREAM</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALPHA_STREAM
 
 <dd>
 <p>The video processor supports blending input streams using a per-stream alpha value.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_PIXEL_ASPECT_RATIO"></a><a id="d3d11_1ddi_video_processor_feature_caps_pixel_aspect_ratio"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_PIXEL_ASPECT_RATIO</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_PIXEL_ASPECT_RATIO
 
 <dd>
 <p>The video processor supports explicit aspect ratios for the source and destination.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_MIRROR"></a><a id="d3d11_1ddi_video_processor_feature_caps_mirror"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_MIRROR</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_MIRROR
 
 <dd>
 <p>Indicates that the driver supports <a href="display.videoprocessorsetstreammirror">VideoProcessorSetStreamMirror</a>.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_PIXEL_SHADER_USAGE"></a><a id="d3d11_1ddi_video_processor_feature_caps_pixel_shader_usage"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_PIXEL_SHADER_USAGE</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_PIXEL_SHADER_USAGE
 
 <dd>
 <p>Indicates that the hardware can benefit from a hint as to whether a shader might be used to read the output of  <a href="display.videoprocessorblt">VideoProcessorBlt</a>.  This should only be set by hardware that support multi-plane overlays.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id=""></a><b></b>
+### -field 
 
 <dd></dd>
 </dl>

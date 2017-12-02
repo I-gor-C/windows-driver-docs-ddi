@@ -54,7 +54,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTGetSharedResourceAdapterLuid(
 ## -parameters
 <dl>
 
-### -param <i>pLuid</i> [in, out]
+### -param pLuid [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getsharedresourceadapterluid.md">D3DKMT_GETSHAREDRESOURCEADAPTERLUID</a> structure that describes a shared resource and the graphics adapter that the resource was created on.</p>

@@ -55,13 +55,13 @@ typedef struct _NFCRM_SET_RADIO_STATE  {
 ## -struct-fields
 <dl>
 
-### -field <b>SystemStateUpdate</b>
+### -field SystemStateUpdate
 
 <dd>
 <p>The <b>SystemStateUpdate</b>. If true, indicates that IOCTL_NFCRM_SET_RADIO_STATE is triggered by airplane mode.</p>
 </dd>
 
-### -field <b>MediaRadioOn</b>
+### -field MediaRadioOn
 
 <dd>
 <p>The <b>MediaRadioOn</b> flag either enables the system trigger (airplane mode if  <b>SystemStateUpdate</b> is true) or disables it.</p>

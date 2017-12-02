@@ -57,7 +57,7 @@ NTSTATUS IoAcquireRemoveLock(
 ## -parameters
 <dl>
 
-### -param <i>RemoveLock</i> [in]
+### -param RemoveLock [in]
 
 <dd>
 <p>Pointer to an <b>IO_REMOVE_LOCK</b> structure that the caller initialized with a 
@@ -65,7 +65,7 @@ NTSTATUS IoAcquireRemoveLock(
       <a href="..\wdm\nf-wdm-ioinitializeremovelock.md">IoInitializeRemoveLock</a>.</p>
 </dd>
 
-### -param <i>Tag</i> [in, optional]
+### -param Tag [in, optional]
 
 <dd>
 <p>Optionally points to a caller-supplied tag that identifies this instance of acquiring the remove lock. For 

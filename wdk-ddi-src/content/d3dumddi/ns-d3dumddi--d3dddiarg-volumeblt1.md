@@ -60,43 +60,43 @@ typedef struct _D3DDDIARG_VOLUMEBLT1 {
 ## -struct-fields
 <dl>
 
-### -field <b>hDstResource</b>
+### -field hDstResource
 
 <dd>
 <p>[in] A handle to the destination surface.</p>
 </dd>
 
-### -field <b>hSrcResource</b>
+### -field hSrcResource
 
 <dd>
 <p>[in] A handle to the source surface.</p>
 </dd>
 
-### -field <b>DstX</b>
+### -field DstX
 
 <dd>
 <p>[in] The width, in screen coordinates, of the destination volume in which the source volume is copied.</p>
 </dd>
 
-### -field <b>DstY</b>
+### -field DstY
 
 <dd>
 <p>[in] The height, in screen coordinates, of the destination volume in which the source volume is copied.</p>
 </dd>
 
-### -field <b>DstZ</b>
+### -field DstZ
 
 <dd>
 <p>[in] The depth, in screen coordinates, of the destination volume in which the source volume is copied.</p>
 </dd>
 
-### -field <b>SrcBox</b>
+### -field SrcBox
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddibox.md">D3DDDIBOX</a> structure that describes the source volume texture to copy to the destination.</p>
 </dd>
 
-### -field <b>CopyFlags</b>
+### -field CopyFlags
 
 <dd>
 <p>A value that specifies characteristics of a copy operation as a bitwise OR of the values in the <a href="..\d3dumddi\ne-d3dumddi-d3dddi-copy-flags.md">D3DDDI_COPY_FLAGS</a> enumeration type.</p>

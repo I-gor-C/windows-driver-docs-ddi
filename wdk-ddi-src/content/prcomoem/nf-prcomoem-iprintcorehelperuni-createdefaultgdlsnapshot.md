@@ -56,13 +56,13 @@ HRESULT CreateDefaultGDLSnapshot(
 ## -parameters
 <dl>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>This parameter is reserved and must be set to zero.</p>
 </dd>
 
-### -param <i>ppSnapshotStream</i> [out]
+### -param ppSnapshotStream [out]
 
 <dd>
 <p>A pointer to a stream that supplies the XML version of the GDL snapshot.</p>

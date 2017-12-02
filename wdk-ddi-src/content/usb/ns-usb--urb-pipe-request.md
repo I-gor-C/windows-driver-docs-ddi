@@ -57,7 +57,7 @@ struct _URB_PIPE_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>Hdr</b>
+### -field Hdr
 
 <dd>
 <p>Pointer to the <a href="buses._urb_header">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be one of the following: </p>
@@ -71,13 +71,13 @@ struct _URB_PIPE_REQUEST {
 <p> The <b>Hdr.Length</b> member must be <code>sizeof(_URB_PIPE_REQUEST)</code>.</p>
 </dd>
 
-### -field <b>PipeHandle</b>
+### -field PipeHandle
 
 <dd>
 <p>Specifies an opaque handle to the bulk or interrupt pipe. The host controller driver returns this handle when the client driver selects the device configuration with a URB of type URB_FUNCTION_SELECT_CONFIGURATION or when the client driver changes the settings for an interface with a URB of type URB_FUNCTION_SELECT_INTERFACE.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Do not use.</p>

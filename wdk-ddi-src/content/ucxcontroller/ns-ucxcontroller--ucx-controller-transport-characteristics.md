@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Stores the transport characteristics at relevant points in time. This structure is used in the   <a href="buses.evt_ucx_controller_get_transport_characteristics">EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS</a> callback function.</p>
+<p>Stores the transport characteristics at relevant points in time. This structure is used in the   <a href="..\ucxcontroller\nc-ucxcontroller-evt-ucx-controller-get-transport-characteristics.md">EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS</a> callback function.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>                    TransportCharacteristicsFlags</b>
+### -field                     TransportCharacteristicsFlags
 
 <dd>
 <p>A bitmask that indicates to the client driver the transport characteristics that are available and are returned in this structure. 
@@ -75,7 +75,7 @@ is set, <b>CurrentRoundtripLatencyInMilliSeconds</b> contains valid information.
 is set, <b>MaxPotentialBandwidth</b> contains valid information. Otherwise, it must not be used by the client driver.  </p>
 </dd>
 
-### -field <b>                    CurrentRoundtripLatencyInMilliSeconds</b>
+### -field                     CurrentRoundtripLatencyInMilliSeconds
 
 <dd>
 <p>Contains the current round-trip delay in milliseconds from the time a non-isochronous transfer is received by the USB driver stack to the time that the transfer is completed.  
@@ -84,7 +84,7 @@ For MA-USB, the underlying network could be WiFi, WiGig, Ethernet etc. The delay
 </p>
 </dd>
 
-### -field <b>                    MaxPotentialBandwidth</b>
+### -field                     MaxPotentialBandwidth
 
 <dd>
 <p>Contains the total bandwidth of the host controller’s shared transport. 
@@ -130,7 +130,7 @@ For MA-USB, the underlying network transport could be WiFi, WiGig, Ethernet etc.
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_ucx_controller_get_transport_characteristics">EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS</a>
+<a href="..\ucxcontroller\nc-ucxcontroller-evt-ucx-controller-get-transport-characteristics.md">EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS</a>
 </dt>
 </dl>
 <p> </p>

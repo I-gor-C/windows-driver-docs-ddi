@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_queue_forward_progress_policy.htm
 old-project: wdf
 ms.assetid: cee3de1f-eaee-40e9-97a9-979e75e22c0a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ typedef struct _WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The length, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>TotalForwardProgressRequests</b>
+### -field TotalForwardProgressRequests
 
 <dd>
 <p>The number of request objects that the framework will attempt to reserve for use in low-memory situations. This number must be greater than zero.</p>
 </dd>
 
-### -field <b>ForwardProgressReservedPolicy</b>
+### -field ForwardProgressReservedPolicy
 
 <dd>
 <p>A <a href="..\wdfio\ne-wdfio--wdf-io-forward-progress-reserved-policy.md">WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY</a>-typed value that specifies how the framework will allocate request objects during low-memory situations. </p>
 </dd>
 
-### -field <b>ForwardProgressReservePolicySettings</b>
+### -field ForwardProgressReservePolicySettings
 
 <dd>
 <p>A <a href="..\wdfio\ns-wdfio--wdf-io-forward-progress-reserved-policy-settings.md">WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS</a> structure that contains additional values that are specific to the policy that the <b>ForwardProgressReservedPolicy</b> member specifies. This member should be <b>NULL</b> unless the driver provides an <a href="..\wdfio\nc-wdfio-evt-wdf-io-wdm-irp-for-forward-progress.md">EvtIoWdmIrpForForwardProgress</a> callback function.</p>
 </dd>
 
-### -field <b>EvtIoAllocateResourcesForReservedRequest</b>
+### -field EvtIoAllocateResourcesForReservedRequest
 
 <dd>
 <p>A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt-wdf-io-allocate-resources-for-reserved-request.md">EvtIoAllocateResourcesForReservedRequest</a> callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtIoAllocateRequestResources</b>
+### -field EvtIoAllocateRequestResources
 
 <dd>
 <p>A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt-wdf-io-allocate-request-resources.md">EvtIoAllocateRequestResources</a> callback function, or <b>NULL</b>.</p>

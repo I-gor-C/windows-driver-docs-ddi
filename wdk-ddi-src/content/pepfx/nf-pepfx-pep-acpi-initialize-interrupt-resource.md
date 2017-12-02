@@ -61,49 +61,49 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE(
 ## -parameters
 <dl>
 
-### -param <i>ResourceUsage</i> [in]
+### -param ResourceUsage [in]
 
 <dd>
 <p>Indicates if this device is in use.</p>
 </dd>
 
-### -param <i>EdgeLevel</i> [in]
+### -param EdgeLevel [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--kinterrupt-mode.md">KINTERRUPT_MODE</a> enumeration value that identifies the interrupt type.</p>
 </dd>
 
-### -param <i>InterruptLevel</i> [in]
+### -param InterruptLevel [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--kinterrupt-polarity.md">KINTERRUPT_POLARITY</a> enumeration value that identifies how a device signals an interrupt request on an interrupt line.</p>
 </dd>
 
-### -param <i>ShareType</i> [in]
+### -param ShareType [in]
 
 <dd>
 <p>Indicates if the device can be shared.</p>
 </dd>
 
-### -param <i>Wake</i> [in]
+### -param Wake [in]
 
 <dd>
 <p>Indicates if the device can be woken from a low-power state.</p>
 </dd>
 
-### -param <i>PinTable</i> [in]
+### -param PinTable [in]
 
 <dd>
 <p>A list of pin numbers on the resource. </p>
 </dd>
 
-### -param <i>PinCount</i> [in]
+### -param PinCount [in]
 
 <dd>
 <p>The number of pins described by the <i>PinTable</i> parameter.</p>
 </dd>
 
-### -param <i>Resource</i> [out]
+### -param Resource [out]
 
 <dd>
 <p>A pointer to the resource. The structure behind the pointer is of type <a href="..\pepfx\ns-pepfx--pep-acpi-interrupt-resource.md">PEP_ACPI_INTERRUPT_RESOURCE</a>.</p>

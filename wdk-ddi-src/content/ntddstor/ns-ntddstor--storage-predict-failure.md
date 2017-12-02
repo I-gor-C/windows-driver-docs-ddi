@@ -55,13 +55,13 @@ typedef struct _STORAGE_PREDICT_FAILURE {
 ## -struct-fields
 <dl>
 
-### -field <b>PredictFailure</b>
+### -field PredictFailure
 
 <dd>
 <p>Indicates when nonzero that the device is currently predicting an imminent failure.</p>
 </dd>
 
-### -field <b>VendorSpecific</b>
+### -field VendorSpecific
 
 <dd>
 <p>Contains an array that holds 512 bytes of vendor-specific information if the device supports failure prediction. </p>

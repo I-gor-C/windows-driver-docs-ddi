@@ -7,7 +7,7 @@ old-location: ifsk\fltcloseclientport.htm
 old-project: ifsk
 ms.assetid: 7a23b8f6-688f-4aa4-9bf3-f8bda0458566
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltCloseClientPort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ VOID FltCloseClientPort(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>Opaque filter pointer for the caller. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>ClientPort</i> [out]
+### -param ClientPort [out]
 
 <dd>
 <p>Pointer to a variable that contains the opaque port handle for the client port to be closed. On return, the variable receives <b>NULL</b>. This parameter is required and cannot be <b>NULL</b> on input. </p>
@@ -149,4 +149,4 @@ VOID FltCloseClientPort(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCloseClientPort function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCloseClientPort function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

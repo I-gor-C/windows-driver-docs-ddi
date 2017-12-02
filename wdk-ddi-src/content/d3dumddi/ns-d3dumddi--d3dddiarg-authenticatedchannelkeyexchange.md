@@ -56,19 +56,19 @@ typedef struct _D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>hChannel</b>
+### -field hChannel
 
 <dd>
 <p>[in] A handle to the authenticated channel that the runtime creates when the runtime calls the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createauthenticatedchannel.md">CreateAuthenticatedChannel</a> function. </p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>[in/out] The size, in bytes, of the data that the <b>pData</b> member points to. </p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>[in/out] A pointer to a buffer that contains the session key. </p>

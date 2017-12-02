@@ -55,7 +55,7 @@ HRESULT STDMETHODCALLTYPE SetMinimalLineWidth(
 ## -parameters
 <dl>
 
-### -param <i>width</i> [in]
+### -param width [in]
 
 <dd>
 <p>The minimum thickness (in pixels) of the lines the device is capable of rendering. The value should be greater than 1.</p>

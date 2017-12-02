@@ -55,13 +55,13 @@ NTSTATUS ChangerClassDeviceControl(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object of the device. </p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to the I/O request packet (IRP) that initiated the device control operation. </p>

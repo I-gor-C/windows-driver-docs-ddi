@@ -60,19 +60,19 @@ DWORD DrvSplDeviceCaps(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> 
+### -param hPrinter 
 
 <dd>
 <p>Caller-supplied handle to the printer.</p>
 </dd>
 
-### -param <i>pwDeviceName</i> [in]
+### -param pwDeviceName [in]
 
 <dd>
 <p>Caller-supplied pointer to a Unicode string that contains the printer name.</p>
 </dd>
 
-### -param <i>DeviceCap</i> 
+### -param DeviceCap 
 
 <dd>
 <p>Caller-supplied bit flag that indicates the capability to query for. (The flags are defined in header file wingdi.h.) This function is not required to support all of the DC_<i>XXX</i> flags, but it must support those listed in the following table.</p>
@@ -105,19 +105,19 @@ DWORD DrvSplDeviceCaps(
 <p> </p>
 </dd>
 
-### -param <i>pvOutput</i> [out, optional]
+### -param pvOutput [out, optional]
 
 <dd>
 <p>Caller-supplied pointer to a buffer that receives function-supplied information. The buffer's use depends on the value of  the <i>DeviceCap</i> parameter. The caller is responsible for allocating and freeing this buffer. </p>
 </dd>
 
-### -param <i>cchBuf</i> 
+### -param cchBuf 
 
 <dd>
 <p>Caller-supplied size (in characters) of the buffer pointed to by the <i>pvOutput</i> parameter.</p>
 </dd>
 
-### -param <i>pDM</i> [in, optional]
+### -param pDM [in, optional]
 
 <dd>
 <p>Caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure that describes the current print job characteristics. If <b>NULL</b>, the function should use the driver's internal default DEVMODEW structure. </p>

@@ -39,8 +39,8 @@ req.iface:
 
 
 ## -description
-<p>The IOCTL_HID_GET_COLLECTION_INFORMATION request obtains a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="..\hidclass\ns-hidclass--hid-collection-information.md">HID_COLLECTION_INFORMATION</a> structure. This information includes the size, in bytes, of a collection's <a href="NULL">preparsed data</a>.</p>
-<p>For general information about HIDClass devices, see <a href="NULL">HID Collections</a>. </p>
+<p>The IOCTL_HID_GET_COLLECTION_INFORMATION request obtains a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="..\hidclass\ns-hidclass--hid-collection-information.md">HID_COLLECTION_INFORMATION</a> structure. This information includes the size, in bytes, of a collection's <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.</p>
+<p>For general information about HIDClass devices, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 
 ## -ioctlparameters

@@ -58,7 +58,7 @@ typedef enum _IDDCX_ADAPTER_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="IDDCX_ADAPTER_FLAGS_NONE"></a><a id="iddcx_adapter_flags_none"></a><b>IDDCX_ADAPTER_FLAGS_NONE</b>
+### -field IDDCX_ADAPTER_FLAGS_NONE
 
 <dd>
 <p>
@@ -66,7 +66,7 @@ typedef enum _IDDCX_ADAPTER_FLAGS {
                     Indicates that there are no flags set for the adapter.</p>
 </dd>
 
-### -field <a id="IDDCX_ADAPTER_FLAGS_USE_SMALLEST_MODE"></a><a id="iddcx_adapter_flags_use_smallest_mode"></a><b>IDDCX_ADAPTER_FLAGS_USE_SMALLEST_MODE</b>
+### -field IDDCX_ADAPTER_FLAGS_USE_SMALLEST_MODE
 
 <dd>
 <p>
@@ -75,7 +75,7 @@ typedef enum _IDDCX_ADAPTER_FLAGS {
 <div> </div>
 </dd>
 
-### -field <a id="IDDCX_ADAPTER_FLAGS_CAN_USE_MOVE_REGIONS"></a><a id="iddcx_adapter_flags_can_use_move_regions"></a><b>IDDCX_ADAPTER_FLAGS_CAN_USE_MOVE_REGIONS</b>
+### -field IDDCX_ADAPTER_FLAGS_CAN_USE_MOVE_REGIONS
 
 <dd>
 <p>

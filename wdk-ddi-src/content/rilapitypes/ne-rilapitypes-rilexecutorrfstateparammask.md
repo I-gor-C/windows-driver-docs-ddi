@@ -7,7 +7,7 @@ old-location: netvista\rilexecutorrfstateparammask_2.htm
 old-project: netvista
 ms.assetid: 310cd96f-ad99-4fdb-b49c-e4fee749ff78
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILEXECUTORRFSTATEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_GERFS_STATE"></a><a id="ril_param_gerfs_state"></a><b>RIL_PARAM_GERFS_STATE</b>
+### -field RIL_PARAM_GERFS_STATE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_GERFS_ALL"></a><a id="ril_param_gerfs_all"></a><b>RIL_PARAM_GERFS_ALL</b>
+### -field RIL_PARAM_GERFS_ALL
 
 <dd></dd>
 </dl>

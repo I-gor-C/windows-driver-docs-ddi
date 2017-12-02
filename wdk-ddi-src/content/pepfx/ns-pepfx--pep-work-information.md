@@ -61,43 +61,43 @@ typedef struct _PEP_WORK_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>WorkType</b>
+### -field WorkType
 
 <dd>
 <p>A <a href="..\pepfx\ne-pepfx--pep-work-type.md">PEP_WORK_TYPE</a> enumeration value. This member indicates the type of work requested by the PEP, which also determines the type of structure that is contained in the unnamed union in the <b>PEP_WORK_INFORMATION</b> structure.</p>
 </dd>
 
-### -field ( <i>unnamed union</i> )
+### -field ( unnamed union )
 
 <dd>
 <p>The data structure that is associated with the type of work specified by the <b>WorkType</b> member.</p>
 <dl>
 
-### -field <b>PowerControl</b>
+### -field PowerControl
 
 <dd>
 <p>A <a href="..\pepfx\ns-pepfx--pep-work-power-control.md">PEP_WORK_POWER_CONTROL</a> structure. This structure is used if <b>WorkType</b> = <b>PepWorkRequestPowerControl</b>.</p>
 </dd>
 
-### -field <b>CompleteIdleState</b>
+### -field CompleteIdleState
 
 <dd>
 <p>A <a href="..\pepfx\ns-pepfx--pep-work-complete-idle-state.md">PEP_WORK_COMPLETE_IDLE_STATE</a> structure. This structure is used if <b>WorkType</b> = <b>PepWorkCompleteIdleState</b>.</p>
 </dd>
 
-### -field <b>CompletePerfState</b>
+### -field CompletePerfState
 
 <dd>
 <p>A <a href="..\pepfx\ns-pepfx--pep-work-complete-perf-state.md">PEP_WORK_COMPLETE_PERF_STATE</a> structure. This structure is used if <b>WorkType</b> = <b>PepWorkCompletePerfState</b>.</p>
 </dd>
 
-### -field <b>AcpiNotify</b>
+### -field AcpiNotify
 
 <dd>
 <p>A <a href="..\pepfx\ns-pepfx--pep-work-acpi-notify.md">PEP_WORK_ACPI_NOTIFY</a> structure. This structure is used if <b>WorkType</b> = <b>PepWorkAcpiNotify</b>.</p>
 </dd>
 
-### -field <b>ControlMethodComplete</b>
+### -field ControlMethodComplete
 
 <dd>
 <p>A <a href="..\pepfx\ns-pepfx--pep-work-acpi-evaluate-control-method-complete.md">PEP_WORK_ACPI_EVALUATE_CONTROL_METHOD_COMPLETE</a> structure. This structure is used if <b>WorkType</b> = <b>PepWorkAcpiEvaluateControlMethodComplete</b>.</p>

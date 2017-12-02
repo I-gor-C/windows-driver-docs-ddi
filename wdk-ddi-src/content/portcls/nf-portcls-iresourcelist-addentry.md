@@ -55,13 +55,13 @@ NTSTATUS AddEntry(
 ## -parameters
 <dl>
 
-### -param <i>Translated</i> [in]
+### -param Translated [in]
 
 <dd>
 <p>Pointer to a translated version of the entry. This parameter points to a <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure containing the translated version of the entry to be added.</p>
 </dd>
 
-### -param <i>Untranslated</i> [in]
+### -param Untranslated [in]
 
 <dd>
 <p>Pointer to an untranslated version of the entry. This parameter points to a CM_PARTIAL_RESOURCE_DESCRIPTOR structure containing the untranslated (or "raw") version of the entry to be added.</p>

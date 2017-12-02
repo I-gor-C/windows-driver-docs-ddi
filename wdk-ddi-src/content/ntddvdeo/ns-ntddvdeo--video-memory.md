@@ -54,7 +54,7 @@ typedef struct _VIDEO_MEMORY {
 ## -struct-fields
 <dl>
 
-### -field <b>RequestedVirtualAddress</b>
+### -field RequestedVirtualAddress
 
 <dd>
 <p>Pointer to the requested virtual address for either the video memory, or the base of video memory, depending on whether <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-map-video-memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a> or <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-unmap-video-memory.md">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a> is using this structure.</p>

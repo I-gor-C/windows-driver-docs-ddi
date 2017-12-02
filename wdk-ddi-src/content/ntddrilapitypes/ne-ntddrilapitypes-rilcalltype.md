@@ -7,7 +7,7 @@ old-location: netvista\rilcalltype.htm
 old-project: netvista
 ms.assetid: bd6b9e57-f50b-4743-9c51-066940aad200
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,39 +62,39 @@ typedef enum _RILCALLTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLTYPE_VOICE"></a><a id="ril_calltype_voice"></a><b>RIL_CALLTYPE_VOICE</b>
+### -field RIL_CALLTYPE_VOICE
 
 <dd></dd>
 
-### -field <a id="RIL_CALLTYPE_DATA"></a><a id="ril_calltype_data"></a><b>RIL_CALLTYPE_DATA</b>
+### -field RIL_CALLTYPE_DATA
 
 <dd></dd>
 
-### -field <a id="RIL_CALLTYPE_FAX"></a><a id="ril_calltype_fax"></a><b>RIL_CALLTYPE_FAX</b>
+### -field RIL_CALLTYPE_FAX
 
 <dd></dd>
 
-### -field <a id="RIL_CALLTYPE_PTT"></a><a id="ril_calltype_ptt"></a><b>RIL_CALLTYPE_PTT</b>
+### -field RIL_CALLTYPE_PTT
 
 <dd></dd>
 
-### -field <a id="RIL_CALLTYPE_VT"></a><a id="ril_calltype_vt"></a><b>RIL_CALLTYPE_VT</b>
+### -field RIL_CALLTYPE_VT
 
 <dd></dd>
 
-### -field <a id="RIL_CALLTYPE_USSD"></a><a id="ril_calltype_ussd"></a><b>RIL_CALLTYPE_USSD</b>
+### -field RIL_CALLTYPE_USSD
 
 <dd></dd>
 
-### -field <a id="RIL_CALLTYPE_SUPSVC"></a><a id="ril_calltype_supsvc"></a><b>RIL_CALLTYPE_SUPSVC</b>
+### -field RIL_CALLTYPE_SUPSVC
 
 <dd></dd>
 
-### -field <a id="RIL_CALLTYPE_IMS"></a><a id="ril_calltype_ims"></a><b>RIL_CALLTYPE_IMS</b>
+### -field RIL_CALLTYPE_IMS
 
 <dd></dd>
 
-### -field <a id="RIL_CALLTYPE_MAX"></a><a id="ril_calltype_max"></a><b>RIL_CALLTYPE_MAX</b>
+### -field RIL_CALLTYPE_MAX
 
 <dd></dd>
 </dl>

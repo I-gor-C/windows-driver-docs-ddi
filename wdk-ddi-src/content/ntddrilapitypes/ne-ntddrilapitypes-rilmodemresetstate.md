@@ -7,7 +7,7 @@ old-location: netvista\rilmodemresetstate.htm
 old-project: netvista
 ms.assetid: 4069ded7-95d7-46c2-a4a7-a360482c7b7d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILMODEMRESETSTATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MODEMRESETSTATE_RECOVERED"></a><a id="ril_modemresetstate_recovered"></a><b>RIL_MODEMRESETSTATE_RECOVERED</b>
+### -field RIL_MODEMRESETSTATE_RECOVERED
 
 <dd></dd>
 
-### -field <a id="RIL_MODEMRESETSTATE_FAILED"></a><a id="ril_modemresetstate_failed"></a><b>RIL_MODEMRESETSTATE_FAILED</b>
+### -field RIL_MODEMRESETSTATE_FAILED
 
 <dd></dd>
 
-### -field <a id="RIL_MODEMRESETSTATE_MAX"></a><a id="ril_modemresetstate_max"></a><b>RIL_MODEMRESETSTATE_MAX</b>
+### -field RIL_MODEMRESETSTATE_MAX
 
 <dd></dd>
 </dl>

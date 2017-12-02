@@ -55,13 +55,13 @@ typedef struct _SendRLS_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>Contains a worldwide name for the local port through which the read link error status block (RLS) command is sent. </p>
 </dd>
 
-### -field <b>DestWWN</b>
+### -field DestWWN
 
 <dd>
 <p>Contains a worldwide name for the destination port. </p>

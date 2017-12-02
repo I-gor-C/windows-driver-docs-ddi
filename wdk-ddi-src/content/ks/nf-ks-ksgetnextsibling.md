@@ -54,7 +54,7 @@ PVOID KsGetNextSibling(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>The object for which to find the next sibling.</p>
@@ -67,7 +67,7 @@ PVOID KsGetNextSibling(
 ## -remarks
 <p>If <i>Object</i> is a filter factory, <b>KsGetNextSibling </b>returns the next filter factory belonging to the parent device, and so on. Callers must perform appropriate typecasting to and from PVOID.</p>
 
-<p>The object hierarchy is guaranteed stable only while the appropriate mutex is held, in this case the device mutex. For more information, see <a href="NULL">AVStream Overview</a> and <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>The object hierarchy is guaranteed stable only while the appropriate mutex is held, in this case the device mutex. For more information, see <a href="https://msdn.microsoft.com/305039fe-0a00-4f3e-ae1a-61c50a2f2fb3">AVStream Overview</a> and <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 <p>Minidrivers rarely call <b>KsGetNextSibling</b> directly. There are a number of functions that are inline calls to <b>KsGetNextSibling</b> and that perform the typecasting for you: <a href="..\ks\nf-ks-ksfilterfactorygetnextsiblingfilterfactory.md">KsFilterFactoryGetNextSiblingFilterFactory</a>, <a href="..\ks\nf-ks-ksfiltergetnextsiblingfilter.md">KsFilterGetNextSiblingFilter</a>, and <a href="..\ks\nf-ks-kspingetnextsiblingpin.md">KsPinGetNextSiblingPin</a>.</p>
 

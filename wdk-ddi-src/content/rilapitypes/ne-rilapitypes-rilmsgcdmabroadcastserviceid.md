@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmabroadcastserviceid_2.htm
 old-project: netvista
 ms.assetid: d991a0f6-54ba-4951-8bdb-865a537d797a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILMSGCDMABROADCASTSERVICEID {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_1xBROADCAST_CMAS_EXTREME"></a><a id="ril_1xbroadcast_cmas_extreme"></a><a id="RIL_1XBROADCAST_CMAS_EXTREME"></a><b>RIL_1xBROADCAST_CMAS_EXTREME</b>
+### -field RIL_1xBROADCAST_CMAS_EXTREME
 
 <dd></dd>
 
-### -field <a id="RIL_1xBROADCAST_CMAS_SEVERE"></a><a id="ril_1xbroadcast_cmas_severe"></a><a id="RIL_1XBROADCAST_CMAS_SEVERE"></a><b>RIL_1xBROADCAST_CMAS_SEVERE</b>
+### -field RIL_1xBROADCAST_CMAS_SEVERE
 
 <dd></dd>
 
-### -field <a id="RIL_1xBROADCAST_CMAS_AMBER"></a><a id="ril_1xbroadcast_cmas_amber"></a><a id="RIL_1XBROADCAST_CMAS_AMBER"></a><b>RIL_1xBROADCAST_CMAS_AMBER</b>
+### -field RIL_1xBROADCAST_CMAS_AMBER
 
 <dd></dd>
 
-### -field <a id="RIL_1xBROADCAST_CMAS_TEST"></a><a id="ril_1xbroadcast_cmas_test"></a><a id="RIL_1XBROADCAST_CMAS_TEST"></a><b>RIL_1xBROADCAST_CMAS_TEST</b>
+### -field RIL_1xBROADCAST_CMAS_TEST
 
 <dd></dd>
 </dl>

@@ -55,7 +55,7 @@ NTSTATUS IoDeleteSymbolicLink(
 ## -parameters
 <dl>
 
-### -param <i>SymbolicLinkName</i> [in]
+### -param SymbolicLinkName [in]
 
 <dd>
 <p>Pointer to a buffered Unicode string that is the user-visible name for the symbolic link. </p>

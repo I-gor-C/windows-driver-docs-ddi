@@ -58,31 +58,31 @@ typedef struct _DXGK_SEGMENTDESCRIPTOR2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>pMdl</b>
+### -field pMdl
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>BaseAddress</b>
+### -field BaseAddress
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>CpuTranslatedAddress</b>
+### -field CpuTranslatedAddress
 
 <dd>
 <p>Reserved for system use.</p>

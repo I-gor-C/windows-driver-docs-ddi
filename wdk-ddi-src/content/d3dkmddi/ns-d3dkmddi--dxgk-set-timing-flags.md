@@ -59,13 +59,13 @@ typedef struct _DXGK_SET_TIMING_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>UINT used to operate on the combined bit-fields.</p>

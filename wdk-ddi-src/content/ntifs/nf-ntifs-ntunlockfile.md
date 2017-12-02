@@ -58,31 +58,31 @@ NTSTATUS ZwUnlockFile(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [in]
+### -param FileHandle [in]
 
 <dd>
 <p>A handle for the file object that represents the file whose byte range is to be unlocked.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that contains the final status.</p>
 </dd>
 
-### -param <i>ByteOffset</i> [in]
+### -param ByteOffset [in]
 
 <dd>
 <p>A pointer to a variable that specifies the starting byte offset for the byte range to be unlocked.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>A pointer to a variable that specifies the length, in bytes, of the byte range to unlock.</p>
 </dd>
 
-### -param <i>Key</i> [in]
+### -param Key [in]
 
 <dd>
 <p>The caller-assigned value used to describe groups of related locks. This value should be set to zero.</p>

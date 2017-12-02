@@ -55,7 +55,7 @@ typedef struct _SRIOV_MITIGATED_RANGE_UPDATE_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>VfIndex</b>
+### -field VfIndex
 
 <dd>
 <p>Zero-based index of the virtual function from the first virtual function exposed by this physical function.</p>

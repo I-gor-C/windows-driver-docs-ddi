@@ -62,55 +62,55 @@ typedef struct _KSPROPERTY_SPHLI {
 ## -struct-fields
 <dl>
 
-### -field <b>HLISS</b>
+### -field HLISS
 
 <dd>
 <p>Indicates the highlight status of the current selection. A value of zero indicates that all highlights are invalid and the decoder should disable all highlights.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>StartPTM</b>
+### -field StartPTM
 
 <dd>
 <p>Indicates the start of presentation time.</p>
 </dd>
 
-### -field <b>EndPTM</b>
+### -field EndPTM
 
 <dd>
 <p>Indicates the end of presentation time.</p>
 </dd>
 
-### -field <b>StartX</b>
+### -field StartX
 
 <dd>
 <p>Indicates the start x-coordinate pixel of the current highlight button.</p>
 </dd>
 
-### -field <b>StartY</b>
+### -field StartY
 
 <dd>
 <p>Indicates the start y-coordinate pixel of the current highlight button.</p>
 </dd>
 
-### -field <b>StopX</b>
+### -field StopX
 
 <dd>
 <p>Indicates the ending x-coordinate pixel of the current highlight button.</p>
 </dd>
 
-### -field <b>StopY</b>
+### -field StopY
 
 <dd>
 <p>Indicates the ending y-coordinate pixel of the current highlight button.</p>
 </dd>
 
-### -field <b>ColCon</b>
+### -field ColCon
 
 <dd>
 <p>Specifies the color/contrast of the highlight rectangle.</p>

@@ -58,13 +58,13 @@ NTSTATUS APIENTRY pfnReleaseSourceModeSet(
 ## -parameters
 <dl>
 
-### -param <i>hVidPn</i> [in]
+### -param hVidPn [in]
 
 <dd>
 <p>[in] A handle to the VidPN object that contains the source mode set object. The VidPN manager previously provided this handle to the display miniport driver by calling <a href="display.dxgkddienumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>, <a href="display.dxgkddiissupportedvidpn">DxgkDdiIsSupportedVidPn</a>, or <a href="display.dxgkddirecommendfunctionalvidpn">DxgkDdiRecommendFunctionalVidPn</a>.</p>
 </dd>
 
-### -param <i>hVidPnSourceModeSet</i> [in]
+### -param hVidPnSourceModeSet [in]
 
 <dd>
 <p>[in] The handle to be released.</p>

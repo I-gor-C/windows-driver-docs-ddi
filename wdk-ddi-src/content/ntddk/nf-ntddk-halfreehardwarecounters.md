@@ -54,7 +54,7 @@ NTSTATUS HalFreeHardwareCounters(
 ## -parameters
 <dl>
 
-### -param <i>CounterSetHandle</i> [in]
+### -param CounterSetHandle [in]
 
 <dd>
 <p>A handle to the allocated counter resources. The caller acquired this handle in a previous call to <b>HalAllocateHardwareCounters</b>.</p>

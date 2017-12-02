@@ -65,73 +65,73 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_VIDEO_0030 {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnGetCaps</b>
+### -field pfnGetCaps
 
 <dd>
 <p>Get caps.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateVideoDecoderSize</b>
+### -field pfnCalcPrivateVideoDecoderSize
 
 <dd>
 <p>Calculate private video decoder size.</p>
 </dd>
 
-### -field <b>pfnCreateVideoDecoder</b>
+### -field pfnCreateVideoDecoder
 
 <dd>
 <p>Create video decoder.</p>
 </dd>
 
-### -field <b>pfnDestroyVideoDecoder</b>
+### -field pfnDestroyVideoDecoder
 
 <dd>
 <p>Destroy video decoder.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateVideoProcessorSize</b>
+### -field pfnCalcPrivateVideoProcessorSize
 
 <dd>
 <p>Calculate private video processor size.</p>
 </dd>
 
-### -field <b>pfnCreateVideoProcessor</b>
+### -field pfnCreateVideoProcessor
 
 <dd>
 <p>Create video processor.</p>
 </dd>
 
-### -field <b>pfnDestroyVideoProcessor</b>
+### -field pfnDestroyVideoProcessor
 
 <dd>
 <p>Destroy video processor.</p>
 </dd>
 
-### -field <b>pfnGetDecodeProfileCount</b>
+### -field pfnGetDecodeProfileCount
 
 <dd>
 <p>Get decode profile count.</p>
 </dd>
 
-### -field <b>pfnGetDecodeFormatCount</b>
+### -field pfnGetDecodeFormatCount
 
 <dd>
 <p>Get decode format count.</p>
 </dd>
 
-### -field <b>pfnGetBitstreamEncryptionSchemeCount</b>
+### -field pfnGetBitstreamEncryptionSchemeCount
 
 <dd>
 <p>Get bitstream encryption scheme count.</p>
 </dd>
 
-### -field <b>pfnDecoderTrimAllocations</b>
+### -field pfnDecoderTrimAllocations
 
 <dd>
 <p>Decoder trim allocations.</p>
 </dd>
 
-### -field <b>pfnProcessorTrimAllocations</b>
+### -field pfnProcessorTrimAllocations
 
 <dd>
 <p>Processor trim allocations.</p>

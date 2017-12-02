@@ -57,19 +57,19 @@ HRESULT TTDownloadMethod(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pUFObj</i> 
+### -param pUFObj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--unifontobj.md">UNIFONTOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pdwResult</i> [out]
+### -param pdwResult [out]
 
 <dd>
 <p>Receives one of the following method-supplied constant values:</p>
@@ -135,7 +135,7 @@ HRESULT TTDownloadMethod(
 
 <p>The <code>IPrintOemUni::TTDownloadMethod</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="print.iprintoemuni_getimplementedmethod">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "TTDownLoadMethod" as input.</p>
 
-<p>For additional information see <a href="NULL">Customized Font Management</a>.</p>
+<p>For additional information see <a href="https://msdn.microsoft.com/6e643703-ace1-4660-990c-3a9ca735829d">Customized Font Management</a>.</p>
 
 ## -requirements
 <table>

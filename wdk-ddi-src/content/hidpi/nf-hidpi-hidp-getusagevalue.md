@@ -61,49 +61,49 @@ NTSTATUS __stdcall HidP_GetUsageValue(
 ## -parameters
 <dl>
 
-### -param <i>ReportType</i> [in]
+### -param ReportType [in]
 
 <dd>
 <p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.</p>
 </dd>
 
-### -param <i>UsagePage</i> [in]
+### -param UsagePage [in]
 
 <dd>
 <p>Specifies the value's <a href="hid.hid_usages#usage_page#usage_page">usage page</a>.</p>
 </dd>
 
-### -param <i>LinkCollection</i> [in]
+### -param LinkCollection [in]
 
 <dd>
 <p>Specifies the <a href="https://msdn.microsoft.com/3f934661-c33c-4c08-82ac-ee2e0f519c8e">link collection</a> that contains the value. If <i>LinkCollection</i> is nonzero, the routine only searches for the usage in this link collection; otherwise, if <i>LinkCollection</i> is zero, the routine searches for the usage in the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> associated with <i>PreparsedData</i>.</p>
 </dd>
 
-### -param <i>Usage</i> [in]
+### -param Usage [in]
 
 <dd>
 <p>Specifies the usage of the value.</p>
 </dd>
 
-### -param <i>UsageValue</i> [out]
+### -param UsageValue [out]
 
 <dd>
 <p>Pointer to a buffer in which the routine returns the value data.</p>
 </dd>
 
-### -param <i>PreparsedData</i> [in]
+### -param PreparsedData [in]
 
 <dd>
-<p>Pointer to a top-level collection's <a href="NULL">preparsed data</a>.</p>
+<p>Pointer to a top-level collection's <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.</p>
 </dd>
 
-### -param <i>Report</i> [in]
+### -param Report [in]
 
 <dd>
 <p>Pointer to a report that contains values.</p>
 </dd>
 
-### -param <i>ReportLength</i> [in]
+### -param ReportLength [in]
 
 <dd>
 <p>Specifies the length, in bytes, of the report located at <i>Report</i>.</p>
@@ -132,7 +132,7 @@ NTSTATUS __stdcall HidP_GetUsageValue(
 
 <p><b>HidP_GetUsageValue</b> is designed to extract a usage value for a usage whose report count is 1. If the specified usage has a report count greater than 1, the usage is part of a <a href="hid.value_capability_arrays#usage_value_array#usage_value_array">usage value array</a>. <b>HidP_GetUsageValue</b> only returns the first data item in a usage value array. To extract all data items in a usage value array, use <a href="..\hidpi\nf-hidpi-hidp-getusagevaluearray.md">HidP_GetUsageValueArray</a>. </p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

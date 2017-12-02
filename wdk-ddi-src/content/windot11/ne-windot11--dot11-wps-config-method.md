@@ -7,7 +7,7 @@ old-location: netvista\dot11_wps_config_method.htm
 old-project: netvista
 ms.assetid: FFA5B3FF-57AF-4701-97FB-E1182CDE8F7A
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PRINTER_EVENT_ATTRIBUTES_INFO, PRINTER_EVENT_ATTRIBUTES_INFO, *PPRINTER_EVENT_ATTRIBUTES_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,25 +56,25 @@ typedef enum _DOT11_WPS_CONFIG_METHOD {
 ## -enum-fields
 <dl>
 
-### -field <a id="DOT11_WPS_CONFIG_METHOD_NULL"></a><a id="dot11_wps_config_method_null"></a><b>DOT11_WPS_CONFIG_METHOD_NULL</b>
+### -field DOT11_WPS_CONFIG_METHOD_NULL
 
 <dd>
 <p>No setup method is configured.</p>
 </dd>
 
-### -field <a id="DOT11_WPS_CONFIG_METHOD_DISPLAY"></a><a id="dot11_wps_config_method_display"></a><b>DOT11_WPS_CONFIG_METHOD_DISPLAY</b>
+### -field DOT11_WPS_CONFIG_METHOD_DISPLAY
 
 <dd>
 <p>Setup is configured by a software user interface.</p>
 </dd>
 
-### -field <a id="DOT11_WPS_CONFIG_METHOD_PUSHBUTTON"></a><a id="dot11_wps_config_method_pushbutton"></a><b>DOT11_WPS_CONFIG_METHOD_PUSHBUTTON</b>
+### -field DOT11_WPS_CONFIG_METHOD_PUSHBUTTON
 
 <dd>
 <p>Setup is configured by push button enablement.</p>
 </dd>
 
-### -field <a id="DOT11_WPS_CONFIG_METHOD_KEYPAD"></a><a id="dot11_wps_config_method_keypad"></a><b>DOT11_WPS_CONFIG_METHOD_KEYPAD</b>
+### -field DOT11_WPS_CONFIG_METHOD_KEYPAD
 
 <dd>
 <p>Setup is configured by a keypad action.</p>

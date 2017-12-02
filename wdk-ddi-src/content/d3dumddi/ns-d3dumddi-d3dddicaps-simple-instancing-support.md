@@ -54,7 +54,7 @@ typedef struct D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT {
 ## -struct-fields
 <dl>
 
-### -field <b>SimpleInstancingSupported</b>
+### -field SimpleInstancingSupported
 
 <dd>
 <p>Specifies whether the hardware and the user-mode driver support simple instancing. The Direct3D runtime sets this member to <b>TRUE</b> if the hardware and driver support simple instancing and the driver is a Direct3D Level 9 driver and supports Windows Display Driver Model (WDDM) 1.3 and later. Otherwise this member is <b>FALSE</b>.</p>

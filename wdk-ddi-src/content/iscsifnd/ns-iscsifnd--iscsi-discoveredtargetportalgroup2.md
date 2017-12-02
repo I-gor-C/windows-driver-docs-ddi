@@ -56,19 +56,19 @@ typedef struct _ISCSI_DiscoveredTargetPortalGroup2 {
 ## -struct-fields
 <dl>
 
-### -field <b>PortalCount</b>
+### -field PortalCount
 
 <dd>
 <p>The number of portals in the group. </p>
 </dd>
 
-### -field <b>Tag</b>
+### -field Tag
 
 <dd>
 <p>A tag number that identifies the portal group. </p>
 </dd>
 
-### -field <b>Portals</b>
+### -field Portals
 
 <dd>
 <p>An array of <a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtargetportal.md">ISCSI_DiscoveredTargetPortal</a> structures, which describe target portals. </p>

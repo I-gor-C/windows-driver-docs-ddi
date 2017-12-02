@@ -60,37 +60,37 @@ typedef enum _UFS_PURGE_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="UFS_PurgeStatusIdle"></a><a id="ufs_purgestatusidle"></a><a id="UFS_PURGESTATUSIDLE"></a><b>UFS_PurgeStatusIdle</b>
+### -field UFS_PurgeStatusIdle
 
 <dd>
 <p>The status of the purge operation has already been read but was not returned.</p>
 </dd>
 
-### -field <a id="UFS_PurgeStatusInProgress"></a><a id="ufs_purgestatusinprogress"></a><a id="UFS_PURGESTATUSINPROGRESS"></a><b>UFS_PurgeStatusInProgress</b>
+### -field UFS_PurgeStatusInProgress
 
 <dd>
 <p>The purge operation is currently in progress.</p>
 </dd>
 
-### -field <a id="UFS_PurgeStatusInterrupted"></a><a id="ufs_purgestatusinterrupted"></a><a id="UFS_PURGESTATUSINTERRUPTED"></a><b>UFS_PurgeStatusInterrupted</b>
+### -field UFS_PurgeStatusInterrupted
 
 <dd>
 <p>The current purge operation was interrupted.</p>
 </dd>
 
-### -field <a id="UFS_PurgeStatusSuccess"></a><a id="ufs_purgestatussuccess"></a><a id="UFS_PURGESTATUSSUCCESS"></a><b>UFS_PurgeStatusSuccess</b>
+### -field UFS_PurgeStatusSuccess
 
 <dd>
 <p>The current purge operation was successful.</p>
 </dd>
 
-### -field <a id="UFS_PurgeStatusQueueNotEmpty"></a><a id="ufs_purgestatusqueuenotempty"></a><a id="UFS_PURGESTATUSQUEUENOTEMPTY"></a><b>UFS_PurgeStatusQueueNotEmpty</b>
+### -field UFS_PurgeStatusQueueNotEmpty
 
 <dd>
 <p>The current purge operation failed due to the logical queue being not empty.</p>
 </dd>
 
-### -field <a id="UFS_PurgeStatusFailure"></a><a id="ufs_purgestatusfailure"></a><a id="UFS_PURGESTATUSFAILURE"></a><b>UFS_PurgeStatusFailure</b>
+### -field UFS_PurgeStatusFailure
 
 <dd>
 <p>The current purge operation failed.</p>

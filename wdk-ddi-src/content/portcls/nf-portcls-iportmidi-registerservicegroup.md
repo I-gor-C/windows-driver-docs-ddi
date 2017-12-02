@@ -54,7 +54,7 @@ void RegisterServiceGroup(
 ## -parameters
 <dl>
 
-### -param <i>ServiceGroup</i> [in]
+### -param ServiceGroup [in]
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> object that is being registered.</p>
@@ -65,7 +65,7 @@ void RegisterServiceGroup(
 <p><code>RegisterServiceGroup</code> returns STATUS_SUCCESS if the call was successful. Otherwise, the method returns an appropriate error code.</p>
 
 ## -remarks
-<p>The <i>ServiceGroup</i> parameter follows the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>ServiceGroup</i> parameter follows the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

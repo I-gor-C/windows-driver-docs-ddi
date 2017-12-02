@@ -61,68 +61,68 @@ typedef union _PCI_EXPRESS_CAPABILITIES_REGISTER {
 ## -struct-fields
 <dl>
 
-### -field <b>CapabilityVersion</b>
+### -field CapabilityVersion
 
 <dd>
 <p>The version number of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537460">PCI_EXPRESS_CAPABILITY</a> structure that contains the PCI_EXPRESS_CAPABILITIES_REGISTER structure.</p>
 </dd>
 
-### -field <b>DeviceType</b>
+### -field DeviceType
 
 <dd>
 <p>The type of PCIe logical device. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="PciExpressEndpoint"></a><a id="pciexpressendpoint"></a><a id="PCIEXPRESSENDPOINT"></a><b>PciExpressEndpoint</b>
+### -field PciExpressEndpoint
 
 <dd>
 <p>A PCIe endpoint device.</p>
 </dd>
 
-### -field <a id="PciExpressLegacyEndpoint"></a><a id="pciexpresslegacyendpoint"></a><a id="PCIEXPRESSLEGACYENDPOINT"></a><b>PciExpressLegacyEndpoint</b>
+### -field PciExpressLegacyEndpoint
 
 <dd>
 <p>A legacy PCIe endpoint device.</p>
 </dd>
 
-### -field <a id="PciExpressRootPort"></a><a id="pciexpressrootport"></a><a id="PCIEXPRESSROOTPORT"></a><b>PciExpressRootPort</b>
+### -field PciExpressRootPort
 
 <dd>
 <p>A root port of a PCIe root complex.</p>
 </dd>
 
-### -field <a id="PciExpressUpstreamSwitchPort"></a><a id="pciexpressupstreamswitchport"></a><a id="PCIEXPRESSUPSTREAMSWITCHPORT"></a><b>PciExpressUpstreamSwitchPort</b>
+### -field PciExpressUpstreamSwitchPort
 
 <dd>
 <p>An upstream port of a PCIe switch.</p>
 </dd>
 
-### -field <a id="PciExpressDownstreamSwitchPort"></a><a id="pciexpressdownstreamswitchport"></a><a id="PCIEXPRESSDOWNSTREAMSWITCHPORT"></a><b>PciExpressDownstreamSwitchPort</b>
+### -field PciExpressDownstreamSwitchPort
 
 <dd>
 <p>A downstream port of a PCIe switch.</p>
 </dd>
 
-### -field <a id="PciExpressToPciXBridge"></a><a id="pciexpresstopcixbridge"></a><a id="PCIEXPRESSTOPCIXBRIDGE"></a><b>PciExpressToPciXBridge</b>
+### -field PciExpressToPciXBridge
 
 <dd>
 <p>A PCIe-to-PCI or PCI-X bridge.</p>
 </dd>
 
-### -field <a id="PciXToExpressBridge"></a><a id="pcixtoexpressbridge"></a><a id="PCIXTOEXPRESSBRIDGE"></a><b>PciXToExpressBridge</b>
+### -field PciXToExpressBridge
 
 <dd>
 <p>A PCI- or PCI-X-to PCIe bridge.</p>
 </dd>
 
-### -field <a id="PciExpressRootComplexIntegratedEndpoint"></a><a id="pciexpressrootcomplexintegratedendpoint"></a><a id="PCIEXPRESSROOTCOMPLEXINTEGRATEDENDPOINT"></a><b>PciExpressRootComplexIntegratedEndpoint</b>
+### -field PciExpressRootComplexIntegratedEndpoint
 
 <dd>
 <p>A PCIe endpoint device that is integrated into the root complex.</p>
 </dd>
 
-### -field <a id="PciExpressRootComplexEventCollector"></a><a id="pciexpressrootcomplexeventcollector"></a><a id="PCIEXPRESSROOTCOMPLEXEVENTCOLLECTOR"></a><b>PciExpressRootComplexEventCollector</b>
+### -field PciExpressRootComplexEventCollector
 
 <dd>
 <p>A PCIe root complex event collector.</p>
@@ -130,25 +130,25 @@ typedef union _PCI_EXPRESS_CAPABILITIES_REGISTER {
 </dl>
 </dd>
 
-### -field <b>SlotImplemented</b>
+### -field SlotImplemented
 
 <dd>
 <p>A single bit that indicates that the PCIe link associated with this port is connected to a physical PCIe slot. This member is valid only if the <b>DeviceType</b> member is set to <b>PciExpressRootPort</b> or <b>PciExpressDownstreamSwitchPort</b>.</p>
 </dd>
 
-### -field <b>InterruptMessageNumber</b>
+### -field InterruptMessageNumber
 
 <dd>
 <p>The MSI or MSI-X vector that is used for interrupt messages that are generated in association with the status bits in either the slot status register or the root status register of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>Rsvd</b>
+### -field Rsvd
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>A USHORT representation of the contents of the PCI_EXPRESS_CAPABILITIES_REGISTER structure.</p>

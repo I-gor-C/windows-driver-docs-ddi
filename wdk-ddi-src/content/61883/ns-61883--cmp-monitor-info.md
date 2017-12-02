@@ -7,7 +7,7 @@ old-location: ieee\cmp_monitor_info.htm
 old-project: IEEE
 ms.assetid: 258bcd6f-0536-48d3-a06a-10277f8bef87
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: CMP_MONITOR_INFO, CMP_MONITOR_INFO, *PCMP_MONITOR_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,31 +57,31 @@ typedef struct _CMP_MONITOR_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>The current state of the plug.</p>
 </dd>
 
-### -field <b>PlugNum</b>
+### -field PlugNum
 
 <dd>
 <p>The number of the plug that was accessed.</p>
 </dd>
 
-### -field <b>PlugType</b>
+### -field PlugType
 
 <dd>
 <p>The type of plug, either CMP_PlugOut or CMP_PlugIn.</p>
 </dd>
 
-### -field <b>Pcr</b>
+### -field Pcr
 
 <dd>
 <p>The current contents of the plug.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Points to a caller-defined context that was registered with <a href="https://msdn.microsoft.com/library/windows/hardware/ff536987">Av61883_MonitorPlugs</a>.</p>
@@ -113,4 +113,4 @@ typedef struct _CMP_MONITOR_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CMP_MONITOR_INFO structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CMP_MONITOR_INFO structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

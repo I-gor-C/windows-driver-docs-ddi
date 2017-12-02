@@ -59,39 +59,39 @@ typedef struct _D3DDDICB_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies signal behavior.</p>
 </dd>
 
-### -field <b>BroadcastHwQueueCount</b>
+### -field BroadcastHwQueueCount
 
 <dd>
 <p>Specifies the number of hardware queues to broadcast this signal to.</p>
 </dd>
 
-### -field <b>BroadcastHwQueueArray</b>
+### -field BroadcastHwQueueArray
 
 <dd>
 <p>Specifies hardware queue handles to broadcast to.
 </p>
 </dd>
 
-### -field <b>ObjectCount</b>
+### -field ObjectCount
 
 <dd>
 <p>Number of objects to signal.
 </p>
 </dd>
 
-### -field <b>ObjectHandleArray</b>
+### -field ObjectHandleArray
 
 <dd>
 <p>Handles to monitored fence synchronization objects to signal.</p>
 </dd>
 
-### -field <b>FenceValueArray</b>
+### -field FenceValueArray
 
 <dd>
 <p>monitored fence values to signal.

@@ -58,68 +58,68 @@ NTSTATUS RtlUnicodeStringCbCopyNEx(
 ## -parameters
 <dl>
 
-### -param <i>DestinationString</i> [out]
+### -param DestinationString [out]
 
 <dd>
 <p>Optional. A pointer to a <b>UNICODE_STRING</b> structure that receives the copied string. The string that the <i>SourceString</i> parameter's <b>UNICODE_STRING</b> structure points to is copied to the buffer that the <i>DestinationString</i> parameter's <b>UNICODE_STRING</b> structure points to. The maximum number of bytes in the <i>DestinationString </i>structure's string buffer is NTSTRSAFE_UNICODE_STRING_MAX_CCH * sizeof(WCHAR). <i>DestinationString</i> can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.</p>
 </dd>
 
-### -param <i>SourceString</i> [in]
+### -param SourceString [in]
 
 <dd>
 <p>Optional. A pointer to a <b>UNICODE_STRING</b> structure that contains the string to be copied. The maximum number of bytes in the structure's string buffer is NTSTRSAFE_UNICODE_STRING_MAX_CCH * sizeof(WCHAR). <i>SourceString</i> can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.</p>
 </dd>
 
-### -param <i>cbToCopy</i> [in]
+### -param cbToCopy [in]
 
 <dd>
 <p>The number of bytes to be copied from the source to the destination. </p>
 </dd>
 
-### -param <i>RemainingString</i> [out, optional]
+### -param RemainingString [out, optional]
 
 <dd>
 <p>Optional. If the caller supplies a non-<b>NULL</b> pointer to a <b>UNICODE_STRING</b> structure, the function sets this structure's <b>Buffer</b> member to the end of the concatenated string, sets the structure's <b>Length</b> member to zero, and sets the structure's <b>MaximumLength</b> member to the number of bytes that are remaining in the destination buffer. <i>RemainingString</i> can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.</p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>One or more flags and, optionally, a fill byte. The flags are defined as follows:</p>
 <p></p>
 <dl>
 
-### -param <a id="STRSAFE_FILL_BEHIND"></a><a id="strsafe_fill_behind"></a>STRSAFE_FILL_BEHIND
+### -param STRSAFE_FILL_BEHIND
 
 <dd>
 <p>If this flag is set and the function succeeds, the low byte of <i>dwFlags</i> is used to fill the portion of the destination buffer that follows the last character in the string.</p>
 </dd>
 
-### -param <a id="STRSAFE_IGNORE_NULLS_"></a><a id="strsafe_ignore_nulls_"></a>STRSAFE_IGNORE_NULLS 
+### -param STRSAFE_IGNORE_NULLS 
 
 <dd>
 <p>If this flag is set, the source or destination pointer, or both, can be <b>NULL</b>. <b>RtlUnicodeStringCbCopyNEx</b> treats <b>NULL</b> source buffer pointers like empty strings (TEXT("")), which can be copied. <b>NULL</b> destination buffer pointers cannot receive nonempty strings.</p>
 </dd>
 
-### -param <a id="STRSAFE_FILL_ON_FAILURE_"></a><a id="strsafe_fill_on_failure_"></a>STRSAFE_FILL_ON_FAILURE 
+### -param STRSAFE_FILL_ON_FAILURE 
 
 <dd>
 <p>If this flag is set and the function fails, the low byte of <i>dwFlags</i> is used to fill the entire destination buffer. This operation overwrites any preexisting buffer contents.</p>
 </dd>
 
-### -param <a id="STRSAFE_NULL_ON_FAILURE_"></a><a id="strsafe_null_on_failure_"></a>STRSAFE_NULL_ON_FAILURE 
+### -param STRSAFE_NULL_ON_FAILURE 
 
 <dd>
 <p>If this flag is set and the function fails, the destination buffer is set to an empty string (TEXT("")). This operation overwrites any preexisting buffer contents.</p>
 </dd>
 
-### -param <a id="STRSAFE_NO_TRUNCATION_"></a><a id="strsafe_no_truncation_"></a>STRSAFE_NO_TRUNCATION 
+### -param STRSAFE_NO_TRUNCATION 
 
 <dd>
 <p>If this flag is set and the function returns STATUS_BUFFER_OVERFLOW, the contents of the destination buffer are not modified.</p>
 </dd>
 
-### -param <a id="STRSAFE_ZERO_LENGTH_ON_FAILURE"></a><a id="strsafe_zero_length_on_failure"></a>STRSAFE_ZERO_LENGTH_ON_FAILURE
+### -param STRSAFE_ZERO_LENGTH_ON_FAILURE
 
 <dd>
 <p>If this flag is set and the function returns STATUS_BUFFER_OVERFLOW, the destination string length is set to zero bytes.</p>

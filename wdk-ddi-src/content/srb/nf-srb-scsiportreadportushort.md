@@ -55,7 +55,7 @@ USHORT ScsiPortReadPortUshort(
 ## -parameters
 <dl>
 
-### -param <i>Port</i> [in]
+### -param Port [in]
 
 <dd>
 <p>Pointer to the I/O port. The given <i>Port</i> must be in a mapped I/O-space range returned by <b>ScsiPortGetDeviceBase</b>.</p>

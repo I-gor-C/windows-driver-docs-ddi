@@ -54,7 +54,7 @@ NTSTATUS D3DKMTOpenResource(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openresource.md">D3DKMT_OPENRESOURCE</a> structure that contains parameters for opening a shared resource.</p>

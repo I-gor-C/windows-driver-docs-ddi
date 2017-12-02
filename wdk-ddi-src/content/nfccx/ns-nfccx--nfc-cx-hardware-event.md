@@ -56,13 +56,13 @@ typedef struct _NFC_CX_HARDWARE_EVENT {
 ## -struct-fields
 <dl>
 
-### -field <b>HardwareStatus</b>
+### -field HardwareStatus
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS </a> value.</p>
 </dd>
 
-### -field <b>HostAction</b>
+### -field HostAction
 
 <dd>
 <p>An <a href="..\nfccx\ne-nfccx--nfc-cx-host-action.md">NFC_CX_HOST_ACTION</a>-typed enumerator.</p>

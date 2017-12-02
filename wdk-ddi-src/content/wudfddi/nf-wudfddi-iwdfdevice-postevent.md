@@ -7,7 +7,7 @@ old-location: wdf\iwdfdevice_postevent.htm
 old-project: wdf
 ms.assetid: 3df25c91-d421-48fe-958c-48bce3bc78b8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFDevice, PostEvent, IWDFDevice::PostEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ HRESULT PostEvent(
 ## -parameters
 <dl>
 
-### -param <i>EventGuid</i> [in]
+### -param EventGuid [in]
 
 <dd>
 <p>The GUID for the event. The GUID is determined by the application and the driver and is opaque to the framework.</p>
 </dd>
 
-### -param <i>EventType</i> [in]
+### -param EventType [in]
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-event-type.md">WDF_EVENT_TYPE</a>-typed value that identifies the type of event. In the current version of UMDF, the driver must set <i>EventType</i> to <b>WdfEventBroadcast</b> (1). <b>WdfEventBroadcast</b> indicates that the event is broadcast. Applications can subscribe to <b>WdfEventBroadcast</b>-type events. To receive broadcast events, the application must register for notification through the Microsoft Win32 <b>RegisterDeviceNotification</b> function. <b>WdfEventBroadcast</b>-type events are exposed as DBT_CUSTOMEVENT-type events to applications.</p>
 </dd>
 
-### -param <i>pbData</i> [in]
+### -param pbData [in]
 
 <dd>
 <p>A pointer to a buffer that contains data that is associated with the event. <b>NULL</b> is a valid value. </p>
 </dd>
 
-### -param <i>cbDataSize</i> [in]
+### -param cbDataSize [in]
 
 <dd>
 <p>The size, in bytes, of data that <i>pbData</i> points to. Zero is a valid size value if <i>pbData</i> is set to <b>NULL</b>. </p>
@@ -173,4 +173,4 @@ HRESULT PostEvent(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice::PostEvent method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice::PostEvent method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

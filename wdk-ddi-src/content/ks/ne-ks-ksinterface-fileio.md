@@ -54,7 +54,7 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSINTERFACE_FILEIO_STREAMING"></a><a id="ksinterface_fileio_streaming"></a><b>KSINTERFACE_FILEIO_STREAMING</b>
+### -field KSINTERFACE_FILEIO_STREAMING
 
 <dd></dd>
 </dl>

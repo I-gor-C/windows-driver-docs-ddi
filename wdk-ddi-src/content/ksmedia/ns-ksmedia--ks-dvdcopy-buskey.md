@@ -55,13 +55,13 @@ typedef struct _KS_DVDCOPY_BUSKEY {
 ## -struct-fields
 <dl>
 
-### -field <b>BusKey</b>
+### -field BusKey
 
 <dd>
 <p>Specifies the DVD decoder minidriver's bus key.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Do not use.</p>
@@ -71,7 +71,7 @@ typedef struct _KS_DVDCOPY_BUSKEY {
 ## -remarks
 <p>The KS_DVDCOPY_BUSKEY structure is used by both the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565145">KSPROPERTY_DVDCOPY_DVD_KEY1</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff565142">KSPROPERTY_DVDCOPY_DEC_KEY2</a> properties.</p>
 
-<p>For more information, see <a href="NULL">DVD Copyright Protection</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/ff9cf8c8-7c8f-485c-b2ab-7567a5eeb87b">DVD Copyright Protection</a>.</p>
 
 ## -requirements
 <table>

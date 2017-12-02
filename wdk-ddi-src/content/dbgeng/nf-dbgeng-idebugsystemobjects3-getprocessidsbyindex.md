@@ -7,7 +7,7 @@ old-location: debugger\getprocessidsbyindex.htm
 old-project: debugger
 ms.assetid: 2ae042c5-9c2a-4de4-817c-c9b97f979684
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSystemObjects3, GetProcessIdsByIndex, IDebugSystemObjects3::GetProcessIdsByIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ HRESULT GetProcessIdsByIndex(
 ## -parameters
 <dl>
 
-### -param <i>Start</i> [in]
+### -param Start [in]
 
 <dd>
 <p>Specifies the index of the first process whose ID is requested.</p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>Specifies the number of processes whose IDs are requested.</p>
 </dd>
 
-### -param <i>Ids</i> [out, optional]
+### -param Ids [out, optional]
 
 <dd>
 <p>Receives the engine process IDs.  If <i>Ids</i> is <b>NULL</b>, this information is not returned; otherwise, <i>Ids</i> is treated as an array of <i>Count</i> ULONG values.</p>
 </dd>
 
-### -param <i>SysIds</i> [out, optional]
+### -param SysIds [out, optional]
 
 <dd>
 <p>Receives the system process IDs.  If <i>SysIds</i> is <b>NULL</b>, this information is not returned; otherwise, <i>SysIds</i> is treated as an array of <i>Count</i> ULONG values.</p>
@@ -83,7 +83,7 @@ HRESULT GetProcessIdsByIndex(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

@@ -55,7 +55,7 @@ void USBD_GetUSBDIVersion(
 ## -parameters
 <dl>
 
-### -param <i>VersionInformation</i> [out]
+### -param VersionInformation [out]
 
 <dd>
 <p>Pointer to caller-allocated memory for a <a href="..\usb\ns-usb--usbd-version-information.md">USBD_VERSION_INFORMATION</a> structure that on return from the routine, contains version information about the HCD.</p>

@@ -55,7 +55,7 @@ VOID KeRevertToUserAffinityThreadEx(
 ## -parameters
 <dl>
 
-### -param <i>Affinity</i> [in]
+### -param Affinity [in]
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>-typed variable that specifies the new system affinity of the current thread. Set this parameter to the value that was returned by a previous call to the <a href="..\wdm\nf-wdm-kesetsystemaffinitythreadex.md">KeSetSystemAffinityThreadEx</a> routine.</p>

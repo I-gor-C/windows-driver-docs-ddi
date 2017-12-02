@@ -59,25 +59,25 @@ typedef union _timecode {
 ## -struct-fields
 <dl>
 
-### -field <b>wFrameRate</b>
+### -field wFrameRate
 
 <dd>
 <p>Specifies the frame rate.</p>
 </dd>
 
-### -field <b>wFrameFract</b>
+### -field wFrameFract
 
 <dd>
 <p>Specifies the fractional frame. The full-scale frame is 0x1000.</p>
 </dd>
 
-### -field <b>dwFrames</b>
+### -field dwFrames
 
 <dd>
 <p>Specifies a timecode value as a binary frame count.</p>
 </dd>
 
-### -field <b>qw</b>
+### -field qw
 
 <dd>
 <p>Specifies the timecode as a quad-word.</p>

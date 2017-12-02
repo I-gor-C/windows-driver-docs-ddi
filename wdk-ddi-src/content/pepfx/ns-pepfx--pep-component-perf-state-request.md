@@ -58,25 +58,25 @@ typedef struct _PEP_COMPONENT_PERF_STATE_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>Set</b>
+### -field Set
 
 <dd>
 <p>The index of the P-state set to which to assign the new performance level. If N is the number of P-state sets specified for this component, P-state set indexes range from 0 to N–1. The PEP previously specified the number of P-state sets in response to a <a href="kernel.pep_dpm_query_component_perf_capabilities">PEP_DPM_QUERY_COMPONENT_PERF_CAPABILITIES</a> notification.</p>
 </dd>
 
-### -field ( <i>unnamed union</i> )
+### -field ( unnamed union )
 
 <dd>
 <p>A value that indicates the new performance level that has been selected for this P-state set.</p>
 <dl>
 
-### -field <b>StateIndex</b>
+### -field StateIndex
 
 <dd>
 <p>The index of the discrete value to use as the new performance level. This member is used if the performance level for this P-state set is expressed as an index into an array of discrete values. The PEP previously supplied this array of discrete values in response to a <a href="kernel.pep_dpm_query_component_perf_states">PEP_DPM_QUERY_COMPONENT_PERF_STATES</a> notification.</p>
 </dd>
 
-### -field <b>StateValue</b>
+### -field StateValue
 
 <dd>
 <p>The value to use as the new performance level. This member is used if the performance level for this P-state set is expressed as a value in a continuous range of possible values. The PEP previously supplied this range in response to a <a href="kernel.pep_dpm_query_component_perf_set">PEP_DPM_QUERY_COMPONENT_PERF_SET</a> notification.</p>

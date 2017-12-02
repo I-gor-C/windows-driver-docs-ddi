@@ -62,49 +62,49 @@ typedef enum _USBFN_DEVICE_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UsbfnDeviceStateMinimum"></a><a id="usbfndevicestateminimum"></a><a id="USBFNDEVICESTATEMINIMUM"></a><b>UsbfnDeviceStateMinimum</b>
+### -field UsbfnDeviceStateMinimum
 
 <dd>
 <p>The minimum value of the enumeration.</p>
 </dd>
 
-### -field <a id="UsbfnDeviceStateAttached"></a><a id="usbfndevicestateattached"></a><a id="USBFNDEVICESTATEATTACHED"></a><b>UsbfnDeviceStateAttached</b>
+### -field UsbfnDeviceStateAttached
 
 <dd>
 <p>Device is attached to an upstream port.</p>
 </dd>
 
-### -field <a id="UsbfnDeviceStateDefault"></a><a id="usbfndevicestatedefault"></a><a id="USBFNDEVICESTATEDEFAULT"></a><b>UsbfnDeviceStateDefault</b>
+### -field UsbfnDeviceStateDefault
 
 <dd>
 <p>Device is attached and connected to an upstream port but has not been reset.</p>
 </dd>
 
-### -field <a id="UsbfnDeviceStateDetached"></a><a id="usbfndevicestatedetached"></a><a id="USBFNDEVICESTATEDETACHED"></a><b>UsbfnDeviceStateDetached</b>
+### -field UsbfnDeviceStateDetached
 
 <dd>
 <p>Device is not attached to an upstream port.</p>
 </dd>
 
-### -field <a id="UsbfnDeviceStateAddressed"></a><a id="usbfndevicestateaddressed"></a><a id="USBFNDEVICESTATEADDRESSED"></a><b>UsbfnDeviceStateAddressed</b>
+### -field UsbfnDeviceStateAddressed
 
 <dd>
 <p>Device has been assigned a non-default USB address by the host.</p>
 </dd>
 
-### -field <a id="UsbfnDeviceStateConfigured"></a><a id="usbfndevicestateconfigured"></a><a id="USBFNDEVICESTATECONFIGURED"></a><b>UsbfnDeviceStateConfigured</b>
+### -field UsbfnDeviceStateConfigured
 
 <dd>
 <p>Device has been configured by the host.</p>
 </dd>
 
-### -field <a id="UsbfnDeviceStateSuspended"></a><a id="usbfndevicestatesuspended"></a><a id="USBFNDEVICESTATESUSPENDED"></a><b>UsbfnDeviceStateSuspended</b>
+### -field UsbfnDeviceStateSuspended
 
 <dd>
 <p>Device has been suspended.</p>
 </dd>
 
-### -field <a id="UsbfnDeviceStateStateMaximum"></a><a id="usbfndevicestatestatemaximum"></a><a id="USBFNDEVICESTATESTATEMAXIMUM"></a><b>UsbfnDeviceStateStateMaximum</b>
+### -field UsbfnDeviceStateStateMaximum
 
 <dd>
 <p>The maximum value of the enumeration.</p>

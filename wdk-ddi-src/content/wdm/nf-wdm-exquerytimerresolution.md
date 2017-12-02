@@ -57,19 +57,19 @@ VOID ExQueryTimerResolution(
 ## -parameters
 <dl>
 
-### -param <i>MaximumTime</i> [out]
+### -param MaximumTime [out]
 
 <dd>
 <p>A pointer to a location to which the routine writes the maximum time interval, in 100-nanosecond units, between successive ticks of the system clock. A <i>tick</i> is an interrupt caused by the system clock timer.</p>
 </dd>
 
-### -param <i>MinimumTime</i> [out]
+### -param MinimumTime [out]
 
 <dd>
 <p>A pointer to a location to which the routine writes the minimum time interval, in 100-nanosecond units, between successive ticks of the system clock.</p>
 </dd>
 
-### -param <i>CurrentTime</i> [out]
+### -param CurrentTime [out]
 
 <dd>
 <p>A pointer to a location to which the routine writes the current time interval, in 100-nanosecond units, between successive ticks of the system clock.</p>

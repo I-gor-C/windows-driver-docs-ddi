@@ -57,25 +57,25 @@ typedef struct _PEP_QUERY_COMPONENT_PERF_STATES {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>Component</b>
+### -field Component
 
 <dd>
 <p>[in] The index that identifies the component. This member is an index into the <b>Components</b> array in the <a href="..\pepfx\ns-pepfx--pep-device-register-v2.md">PEP_DEVICE_REGISTER_V2</a> structure that the PEP previously supplied in response to the <b>PEP_DPM_REGISTER_DEVICE</b> notification for this device. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
 </dd>
 
-### -field <b>Set</b>
+### -field Set
 
 <dd>
 <p>[in] The index that identifies this P-state set. If M is the number of P-state sets for this component, P-state set indexes range from 0 to M–1. The PEP previously specified the number of P-state sets in response to a <a href="kernel.pep_dpm_query_component_perf_capabilities">PEP_DPM_QUERY_COMPONENT_PERF_CAPABILITIES</a> notification.</p>
 </dd>
 
-### -field <b>States</b>
+### -field States
 
 <dd>
 <p>[in] A pointer to an output buffer. The PEP writes an array of <a href="..\pepfx\ns-pepfx--pep-perf-state.md">PEP_PERF_STATE</a> structures to this buffer. Each array element describes one P-state in the P-state set specified by the <b>Set</b> member. The Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) allocated this buffer, which is guaranteed to be large enough to contain an array of the length that the PEP previously wrote to the <b>Discrete.Count</b> member of the <a href="..\pepfx\ns-pepfx--pep-query-component-perf-set.md">PEP_QUERY_COMPONENT_PERF_SET</a> structure in response to a <a href="kernel.pep_dpm_query_component_perf_set">PEP_DPM_QUERY_COMPONENT_PERF_SET</a> notification.</p>

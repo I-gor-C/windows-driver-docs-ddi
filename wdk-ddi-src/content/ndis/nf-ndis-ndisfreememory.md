@@ -7,7 +7,7 @@ old-location: netvista\ndisfreememory.htm
 old-project: netvista
 ms.assetid: 0096fef7-2a5a-45cd-8e54-dc1ec0e84237
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisFreeMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,20 +58,20 @@ VOID NdisFreeMemory(
 ## -parameters
 <dl>
 
-### -param <i>VirtualAddress</i> [in]
+### -param VirtualAddress [in]
 
 <dd>
 <p>A pointer to the base virtual address of the allocated memory. This address was returned by the 
      <a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">NdisAllocateMemoryWithTagPriority</a> function.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The size, in bytes, of the memory block to be released. If the memory was allocated with <a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">NdisAllocateMemoryWithTagPriority</a> or the <i>MemoryFlags</i> parameter is zero, this parameter is ignored. </p>
 </dd>
 
-### -param <i>MemoryFlags</i> [in]
+### -param MemoryFlags [in]
 
 <dd>
 <p>A set of flags that specify the type of memory to free. This value must be zero if the memory was
@@ -173,4 +173,4 @@ VOID NdisFreeMemory(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeMemory function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeMemory function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

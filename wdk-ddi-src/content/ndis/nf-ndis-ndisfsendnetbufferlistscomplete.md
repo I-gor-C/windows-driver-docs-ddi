@@ -7,7 +7,7 @@ old-location: netvista\ndisfsendnetbufferlistscomplete.htm
 old-project: netvista
 ms.assetid: 5a9008eb-86ad-4e3c-85a2-c8fd1b8fb4cb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisFSendNetBufferListsComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ VOID NdisFSendNetBufferListsComplete(
 ## -parameters
 <dl>
 
-### -param <i>NdisFilterHandle</i> [in]
+### -param NdisFilterHandle [in]
 
 <dd>
 <p>The NDIS handle that identifies this filter module. NDIS passed the handle to the filter driver in
@@ -67,7 +67,7 @@ VOID NdisFSendNetBufferListsComplete(
      <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function.</p>
 </dd>
 
-### -param <i>NetBufferLists</i> [in]
+### -param NetBufferLists [in]
 
 <dd>
 <p>A pointer to a linked list of <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures. The filter driver received the
@@ -76,25 +76,25 @@ VOID NdisFSendNetBufferListsComplete(
      FilterSendNetBufferLists</a> function.</p>
 </dd>
 
-### -param <i>SendCompleteFlags</i> [in]
+### -param SendCompleteFlags [in]
 
 <dd>
 <p>NDIS flags that can be combined with an OR operation. To clear all the flags, set this member to zero. This function supports the following flags:</p>
 <p></p>
 <dl>
 
-### -param <a id="NDIS_SEND_COMPLETE_FLAGS_DISPATCH_LEVEL"></a><a id="ndis_send_complete_flags_dispatch_level"></a>NDIS_SEND_COMPLETE_FLAGS_DISPATCH_LEVEL
+### -param NDIS_SEND_COMPLETE_FLAGS_DISPATCH_LEVEL
 
 <dd>
 <p>Specifies that the current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
-        <a href="NULL">Dispatch IRQL Tracking</a>.</p>
+        <a href="netvista.dispatch_irql_tracking">Dispatch IRQL Tracking</a>.</p>
 </dd>
 
-### -param <a id="NDIS_SEND_COMPLETE_FLAGS_SWITCH_SINGLE_SOURCE"></a><a id="ndis_send_complete_flags_switch_single_source"></a>NDIS_SEND_COMPLETE_FLAGS_SWITCH_SINGLE_SOURCE
+### -param NDIS_SEND_COMPLETE_FLAGS_SWITCH_SINGLE_SOURCE
 
 <dd>
 <p>If this flag is set, all packets in a linked list of <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures originated from the same Hyper-V extensible switch source port.</p>
-<p>For more information, see <a href="NULL">Hyper-V Extensible Switch Send and Receive Flags</a>.</p>
+<p>For more information, see <a href="netvista.hyper_v_extensible_switch_send_and_receive_flags">Hyper-V Extensible Switch Send and Receive Flags</a>.</p>
 <div class="alert"><b>Note</b>  If each packet in the linked list of <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures uses the same source port, the extension should set the <b>NDIS_SEND_FLAGS_SWITCH_SINGLE_SOURCE</b> flag in the <i>SendFlags</i> parameter of <a href="..\ndis\nf-ndis-ndisfsendnetbufferlists.md">NdisFSendNetBufferLists</a> when it sends the request.</div>
 <div> </div>
 <div class="alert"><b>Note</b>  This flag is available in NDIS 6.30 and later.</div>
@@ -199,4 +199,4 @@ VOID NdisFSendNetBufferListsComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFSendNetBufferListsComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFSendNetBufferListsComplete function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

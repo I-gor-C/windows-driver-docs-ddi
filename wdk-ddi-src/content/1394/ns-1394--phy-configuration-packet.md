@@ -7,7 +7,7 @@ old-location: ieee\phy_configuration_packet.htm
 old-project: IEEE
 ms.assetid: 5a5acd4a-ad99-4b8c-b8ea-490a7b467e14
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: PHY_CONFIGURATION_PACKET, PHY_CONFIGURATION_PACKET, *PPHY_CONFIGURATION_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,49 +60,49 @@ typedef struct _PHY_CONFIGURATION_PACKET {
 ## -struct-fields
 <dl>
 
-### -field <b>PCP_Phys_ID</b>
+### -field PCP_Phys_ID
 
 <dd>
 <p>Specifies the node address of the root. This member contains bits 0-5 of byte 0 of the packet. </p>
 </dd>
 
-### -field <b>PCP_Packet_ID</b>
+### -field PCP_Packet_ID
 
 <dd>
 <p>This member must be PHY_PACKET_ID_CONFIGURATION to indicate it is a PHY configuration packet. This member contains bits 6-7 of byte 0 of the packet. </p>
 </dd>
 
-### -field <b>PCP_Gap_Count</b>
+### -field PCP_Gap_Count
 
 <dd>
 <p>If the <b>PCP_Set_Gap_Count</b> bit is set, the PHY register gap_count field is set to this value. This member contains bits 0-5 of byte 1 of the packet. </p>
 </dd>
 
-### -field <b>PCP_Set_Gap_Count</b>
+### -field PCP_Set_Gap_Count
 
 <dd>
 <p>If this bit is set, the PHY register gap_count field is set to <b>PCP_Gap_Count</b>. This member contains bit 6 of byte 1 of the packet. </p>
 </dd>
 
-### -field <b>PCP_Force_Root</b>
+### -field PCP_Force_Root
 
 <dd>
 <p>If set, the caller becomes the root node. This member contains bit 7 of byte 1 of the packet. </p>
 </dd>
 
-### -field <b>PCP_Reserved1</b>
+### -field PCP_Reserved1
 
 <dd>
 <p>Reserved. This member contains bits 0-7 of byte 2 of the packet. </p>
 </dd>
 
-### -field <b>PCP_Reserved2</b>
+### -field PCP_Reserved2
 
 <dd>
 <p>Reserved. This member contains bits 0-7 of byte 3 of the packet. </p>
 </dd>
 
-### -field <b>PCP_Inverse</b>
+### -field PCP_Inverse
 
 <dd>
 <p>Specifies the logical inverse of the first quadlet of the packet. </p>
@@ -134,4 +134,4 @@ typedef struct _PHY_CONFIGURATION_PACKET {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20PHY_CONFIGURATION_PACKET structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20PHY_CONFIGURATION_PACKET structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

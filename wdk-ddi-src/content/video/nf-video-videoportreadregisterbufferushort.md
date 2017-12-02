@@ -57,19 +57,19 @@ VOID VideoPortReadRegisterBufferUshort(
 ## -parameters
 <dl>
 
-### -param <i>Register</i> 
+### -param Register 
 
 <dd>
 <p>Pointer to the register. The given <i>Register</i> must be in a mapped memory-space range returned by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Pointer to a buffer into which the USHORT values are written.</p>
 </dd>
 
-### -param <i>Count</i> 
+### -param Count 
 
 <dd>
 <p>Specifies the number of USHORT values to be written to the buffer.</p>

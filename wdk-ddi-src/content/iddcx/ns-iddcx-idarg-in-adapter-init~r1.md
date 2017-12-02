@@ -58,7 +58,7 @@ typedef struct IDARG_IN_ADAPTER_INIT {
 ## -struct-fields
 <dl>
 
-### -field <b>WdfDevice</b>
+### -field WdfDevice
 
 <dd>
 <p>
@@ -66,7 +66,7 @@ typedef struct IDARG_IN_ADAPTER_INIT {
                  </p>
 </dd>
 
-### -field <b>pCaps</b>
+### -field pCaps
 
 <dd>
 <p>
@@ -74,7 +74,7 @@ typedef struct IDARG_IN_ADAPTER_INIT {
                  </p>
 </dd>
 
-### -field <b>ObjectAttributes</b>
+### -field ObjectAttributes
 
 <dd>
 <p>

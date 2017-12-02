@@ -7,7 +7,7 @@ old-location: ifsk\rxindicatechangeofbufferingstateforsrvopen.htm
 old-project: ifsk
 ms.assetid: 70efd8d7-c275-440e-a4df-f41b799a63f0
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxIndicateChangeOfBufferingStateForSrvOpen
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ VOID RxIndicateChangeOfBufferingStateForSrvOpen(
 ## -parameters
 <dl>
 
-### -param <i>SrvCall</i> 
+### -param SrvCall 
 
 <dd>
 <p>A pointer to the SRV_CALL structure.</p>
 </dd>
 
-### -param <i>SrvOpen</i> 
+### -param SrvOpen 
 
 <dd>
 <p>A pointer to the SRV_OPEN structure.</p>
 </dd>
 
-### -param <i>SrvOpenKey</i> 
+### -param SrvOpenKey 
 
 <dd>
 <p>A pointer to the key for the SRV_OPEN key structure.</p>
 </dd>
 
-### -param <i>MRxContext</i> 
+### -param MRxContext 
 
 <dd>
 <p>A pointer to the context to be passed back to the network mini-redirector during callbacks for processing the request.</p>
@@ -145,4 +145,4 @@ VOID RxIndicateChangeOfBufferingStateForSrvOpen(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxIndicateChangeOfBufferingStateForSrvOpen function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxIndicateChangeOfBufferingStateForSrvOpen function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

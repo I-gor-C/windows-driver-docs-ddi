@@ -7,7 +7,7 @@ old-location: ifsk\fltallocatepoolalignedwithtag.htm
 old-project: ifsk
 ms.assetid: ffb1493f-6076-4b93-8431-b3ffd4679f96
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltAllocatePoolAlignedWithTag
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ PVOID FltAllocatePoolAlignedWithTag(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>Opaque instance pointer for a caller-owned minifilter driver instance that is attached to the volume. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>Type of pool to allocate. One of the following: </p>
@@ -74,13 +74,13 @@ PVOID FltAllocatePoolAlignedWithTag(
 <p>See <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a> for a description of the available pool memory types. </p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>Number of bytes to allocate. This parameter is required and can be zero. </p>
 </dd>
 
-### -param <i>Tag</i> [in]
+### -param Tag [in]
 
 <dd>
 <p>Specifies the pool tag for the allocated memory. Drivers normally specify the pool tag as a string of one to four 7-bit ASCII characters, delimited by single quotation marks (for example, 'abcd'). This parameter is required and cannot be zero. </p>
@@ -162,4 +162,4 @@ PVOID FltAllocatePoolAlignedWithTag(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocatePoolAlignedWithTag function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocatePoolAlignedWithTag function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

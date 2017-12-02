@@ -63,37 +63,37 @@ ULONG HwStorFindAdapter(
 ## -parameters
 <dl>
 
-### -param <i>DeviceExtension</i> 
+### -param DeviceExtension 
 
 <dd>
 <p>Supplies a per adapter storage area.</p>
 </dd>
 
-### -param <i>HwContext</i> [in]
+### -param HwContext [in]
 
 <dd>
 <p>Set to NULL.</p>
 </dd>
 
-### -param <i>BusInformation</i> [in]
+### -param BusInformation [in]
 
 <dd>
 <p>Set to NULL.</p>
 </dd>
 
-### -param <i>ArgumentString</i> [in]
+### -param ArgumentString [in]
 
 <dd>
 <p>Supplies a <b>NULL</b>-terminated string with context information about the driver.</p>
 </dd>
 
-### -param <i>ConfigInfo</i> [in, out]
+### -param ConfigInfo [in, out]
 
 <dd>
 <p>Supplies an initialized <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a> structure that the miniport driver uses during initialization.</p>
 </dd>
 
-### -param <i>Reserved3</i> [in]
+### -param Reserved3 [in]
 
 <dd>
 <p>Reserved for system use. </p>
@@ -122,7 +122,7 @@ ULONG HwStorFindAdapter(
 
 <p>In most cases StorPort calls the <b>HwStorFindAdapter</b> routine at IRQL == PASSIVE_LEVEL without acquiring any spin locks. The exception case is when the miniport does not support calling <a href="storage.hwstoradaptercontrol">HwStorAdaptorControl</a> with the <b>ScsiRestartAdapter</b> control type. In this situation, StorPort will instead reinitialize the adapter by calling both  <b>HwStorFindAdapter</b> and <a href="storage.hwstorinitialize">HwStorInitialize</a>. When this is the case, <b>HwStorFindAdapter</b> is called at IRQL == DISPATCH_LEVEL. Also, when in dump mode, <b>HwStorFindAdapter</b> is called at IRQL == HIGH_LEVEL.</p>
 
-<p>To define an <b>HwStorFindAdapter</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
+<p>To define an <b>HwStorFindAdapter</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
 
 <p> For example, to define a <b>HwStorFindAdapter</b> callback routine that is named <i>MyHwFindAdapter</i>, use the <b>HW_FIND_ADAPTER</b> type as shown in this code example:</p>
 

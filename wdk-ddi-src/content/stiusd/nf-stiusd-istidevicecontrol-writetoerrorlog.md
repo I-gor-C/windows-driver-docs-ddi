@@ -7,7 +7,7 @@ old-location: image\istidevicecontrol_writetoerrorlog.htm
 old-project: image
 ms.assetid: 22f9688e-1e61-46a6-a9f6-0244d7dd47ce
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDeviceControl, WriteToErrorLog, IStiDeviceControl::WriteToErrorLog
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ HRESULT WriteToErrorLog(
 ## -parameters
 <dl>
 
-### -param <i>dwMessageType</i> 
+### -param dwMessageType 
 
 <dd>
 <p>Caller-supplied constant value representing the message type. The following values are defined in <i>Sti.h</i>:</p>
@@ -66,13 +66,13 @@ HRESULT WriteToErrorLog(
 <p>STI_TRACE_ERROR</p>
 </dd>
 
-### -param <i>pszMessage</i> 
+### -param pszMessage 
 
 <dd>
 <p>Caller-supplied pointer to a message string to be written to the log file.</p>
 </dd>
 
-### -param <i>dwErrorCode</i> 
+### -param dwErrorCode 
 
 <dd>
 <p><i>Not used</i>.</p>

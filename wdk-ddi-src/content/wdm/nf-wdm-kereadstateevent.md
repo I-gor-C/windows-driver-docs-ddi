@@ -55,7 +55,7 @@ LONG KeReadStateEvent(
 ## -parameters
 <dl>
 
-### -param <i>Event</i> [in]
+### -param Event [in]
 
 <dd>
 <p>A pointer to an initialized event object for which the caller provides the storage.</p>

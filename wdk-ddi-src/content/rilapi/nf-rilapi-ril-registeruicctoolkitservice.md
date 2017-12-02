@@ -7,7 +7,7 @@ old-location: netvista\ril_registeruicctoolkitservice.htm
 old-project: netvista
 ms.assetid: 1f406818-b81c-4dc8-bfc7-0c977495b285
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_RegisterUiccToolkitService
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_RegisterUiccToolkitService(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwSlotIndex</i> 
+### -param dwSlotIndex 
 
 <dd></dd>
 </dl>

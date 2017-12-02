@@ -7,7 +7,7 @@ old-location: netvista\reportfilterednetbufferlists.htm
 old-project: netvista
 ms.assetid: 06E7FC94-628D-4601-8173-F118043A13FB
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,50 +68,50 @@ VOID ReportFilteredNetBufferLists(
 ## -parameters
 <dl>
 
-### -param <i>NdisSwitchContext</i> [in]
+### -param NdisSwitchContext [in]
 
 <dd>
 <p>An NDIS_SWITCH_CONTEXT value that contains the handle of the extensible switch module to which the Hyper-V extensible switch extension is attached. When the extension calls <a href="..\ndis\nf-ndis-ndisfgetoptionalswitchhandlers.md">NdisFGetOptionalSwitchHandlers</a>,  this handle is returned through the <i>NdisSwitchContext</i> parameter.</p>
 </dd>
 
-### -param <i>ExtensionGuid</i> [in]
+### -param ExtensionGuid [in]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the GUID of the extension. NDIS specifies this GUID in the <b>FilterModuleGuidName</b> member of the <a href="..\ndis\ns-ndis--ndis-filter-attach-parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a> structure. NDIS passes a pointer to this structure in the <i>AttachParameters</i> parameter when it calls the extension's <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function.</p>
 </dd>
 
-### -param <i>ExtensionFriendlyName</i> [in]
+### -param ExtensionFriendlyName [in]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the user-friendly name of the extension. This name is defined by the <b>DisplayName</b>     entry in the <a href="devinst.inf_addservice_directive">AddService Directive</a>
 of the extension's INF file.</p>
 </dd>
 
-### -param <i>PortId</i> [in]
+### -param PortId [in]
 
 <dd>
 <p>An NDIS_SWITCH_PORT_ID value that specifies an extensible switch port. For more information, see the Remarks section.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A UINT32 value. When the NDIS_SWITCH_REPORT_FILTERED_NBL_FLAGS_IS_INCOMING flag is specified, it indicates that the <b>PortId</b> member defines the source of the dropped packet. When it is not specified, the PortId member defines the destination extensible switch port. For more information, see the Remarks section.</p>
 </dd>
 
-### -param <i>NumberOfNetBufferLists</i> [in]
+### -param NumberOfNetBufferLists [in]
 
 <dd>
 <p>A UINT32 value that contains the number of <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures that is specified by the <i>NetBufferLists</i> parameter.</p>
 </dd>
 
-### -param <i>NetBufferLists</i> [in]
+### -param NetBufferLists [in]
 
 <dd>
 <p>A pointer to a linked list of <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures. </p>
 </dd>
 
-### -param <i>FilterReason</i> [in, optional]
+### -param FilterReason [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains a user-friendly description of the reason for the drop or exclusion of the packets. For more information, see the Remarks section.</p>
@@ -130,7 +130,7 @@ of the extension's INF file.</p>
 
 <p> The extension changes the destination ports for a packet. For example, the extension must call <i>ReportFilteredNetBufferLists</i> if it sets the <b>IsExcluded</b> member to <b>TRUE</b> in the  <a href="..\ndis\ns-ndis--ndis-switch-port-destination.md">NDIS_SWITCH_PORT_DESTINATION</a> structure for a destination port of the packet. </p>
 
-<p>For more information on how to exclude packet delivery to extensible switch ports, see <a href="NULL">Excluding Packet Delivery to Extensible Switch Destination Ports</a>.</p>
+<p>For more information on how to exclude packet delivery to extensible switch ports, see <a href="netvista.excluding_packet_delivery_to_extensible_switch_destination_ports">Excluding Packet Delivery to Extensible Switch Destination Ports</a>.</p>
 
 <p>The extension must follow these guidelines when it calls <i>ReportFilteredNetBufferLists</i>:</p>
 
@@ -187,7 +187,7 @@ of the extension's INF file.</p>
 <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a>
 </dt>
 <dt>
-<a href="NULL">INF AddService Directive</a>
+<a href="devinst.inf_addservice_directive">INF AddService Directive</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis--ndis-filter-attach-parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
@@ -207,4 +207,4 @@ of the extension's INF file.</p>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_REPORT_FILTERED_NET_BUFFER_LISTS callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_REPORT_FILTERED_NET_BUFFER_LISTS callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

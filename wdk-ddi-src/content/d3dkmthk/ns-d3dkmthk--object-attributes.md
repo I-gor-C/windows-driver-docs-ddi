@@ -59,25 +59,25 @@ typedef struct _OBJECT_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The number of bytes of data contained in this structure. The <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro sets this member to <b>sizeof</b>(<b>OBJECT_ATTRIBUTES</b>).</p>
 </dd>
 
-### -field <b>RootDirectory</b>
+### -field RootDirectory
 
 <dd>
 <p>Optional handle to the root object directory for the path name specified by the <b>ObjectName</b> member. If <b>RootDirectory</b> is <b>NULL</b>, <b>ObjectName</b> must point to a fully qualified object name that includes the full path to the target object. If <b>RootDirectory</b> is non-<b>NULL</b>, <b>ObjectName</b> specifies an object name relative to the <b>RootDirectory</b> directory. The <b>RootDirectory</b> handle can refer to a file system directory or an object directory in the object manager namespace.</p>
 </dd>
 
-### -field <b>ObjectName</b>
+### -field ObjectName
 
 <dd>
 <p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">Unicode string</a> that contains the name of the object for which a handle is to be opened. This must either be a fully qualified object name, or a relative path name to the directory specified by the <b>RootDirectory</b> member.</p>
 </dd>
 
-### -field <b>Attributes</b>
+### -field Attributes
 
 <dd>
 <p>Bitmask of flags that specify object handle attributes. This member can contain one or more of the flags in the following table.</p>
@@ -163,13 +163,13 @@ typedef struct _OBJECT_ATTRIBUTES {
 <p> </p>
 </dd>
 
-### -field <b>SecurityDescriptor</b>
+### -field SecurityDescriptor
 
 <dd>
 <p>Specifies a security descriptor (<a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a>) for the object when the object is created. If this member is <b>NULL</b>, the object will receive default security settings.</p>
 </dd>
 
-### -field <b>SecurityQualityOfService</b>
+### -field SecurityQualityOfService
 
 <dd>
 <p>Optional quality of service to be applied to the object when it is created. Used to indicate the security impersonation level and context tracking mode (dynamic or static). Currently, the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro sets this member to <b>NULL</b>.</p>

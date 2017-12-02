@@ -39,8 +39,8 @@ req.iface:
 
 
 ## -description
-<p>The IOCTL_HID_GET_COLLECTION_DESCRIPTOR request obtains a top-level collection's <a href="NULL">preparsed data</a>, which the HID class driver extracted from the physical device's report descriptor during device initialization.</p>
-<p>For general information about HIDClass devices, see <a href="NULL">HID Collections</a>. </p>
+<p>The IOCTL_HID_GET_COLLECTION_DESCRIPTOR request obtains a top-level collection's <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>, which the HID class driver extracted from the physical device's report descriptor during device initialization.</p>
+<p>For general information about HIDClass devices, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 
 ## -syntax
@@ -116,7 +116,7 @@ I/O Status block
 <p><b>Status</b> is set to STATUS_SUCCESS if the preparsed data was retrieved without error. Otherwise, it is set to an appropriate NTSTATUS error code. If the requester-supplied output buffer is not large enough to hold the preparsed data, then status is set to STATUS_INVALID_BUFFER_SIZE. </p>
 
 ## -remarks
-<p>The <b>_HIDP_PREPARSED_DATA</b> structure contains a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="NULL">preparsed data</a>.</p>
+<p>The <b>_HIDP_PREPARSED_DATA</b> structure contains a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.</p>
 
 <p>A user-mode application calls <a href="..\hidsdi\nf-hidsdi-hidd-getpreparseddata.md">HidD_GetPreparsedData</a> to obtain a top-level collection's preparsed data in a variable length _HIDP_PREPARSED_DATA structure.</p>
 

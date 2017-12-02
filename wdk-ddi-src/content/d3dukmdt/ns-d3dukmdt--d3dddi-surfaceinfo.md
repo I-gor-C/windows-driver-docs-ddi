@@ -59,38 +59,38 @@ typedef struct _D3DDDI_SURFACEINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>[in] The width, in pixels, of the surface or volume or the length, in pixels, of the linear resource.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[in] The height, in pixels, of the surface or volume.</p>
 </dd>
 
-### -field <b>Depth</b>
+### -field Depth
 
 <dd>
 <p>[in] The depth, in pixels, of the volume.</p>
 </dd>
 
-### -field <b>pSysMem</b>
+### -field pSysMem
 
 <dd>
 <p>[in] A pointer to a buffer that contains the contents of the resource if the resource exists in system memory and <b>NULL</b> if the resource exists in video memory.</p>
 <p>Note that this member is valid only if the <b>Pool</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt--d3dddiarg-createresource.md">D3DDDIARG_CREATERESOURCE</a> structure for creating the resource is set to the D3DDDIPOOL_SYSTEMMEM value.</p>
 </dd>
 
-### -field <b>SysMemPitch</b>
+### -field SysMemPitch
 
 <dd>
 <p>[in] The pitch, in bytes, of the surface--that is, the distance, in bytes, to the start of the next line.</p>
 </dd>
 
-### -field <b>SysMemSlicePitch</b>
+### -field SysMemSlicePitch
 
 <dd>
 <p>[in] The slice, in bytes, of the volume.</p>

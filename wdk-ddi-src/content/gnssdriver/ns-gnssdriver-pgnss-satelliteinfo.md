@@ -7,7 +7,7 @@ old-location: sensors\gnss_satelliteinfo.htm
 old-project: sensors
 ms.assetid: 27F537D8-45B2-43D9-A614-3558534C9DBA
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_SATELLITEINFO, GNSS_SATELLITEINFO, *PGNSS_SATELLITEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>SatelliteId</b>
+### -field SatelliteId
 
 <dd>
 <p>Pseudorandom noise (PRN) code or other identification for the satellite.</p>
 </dd>
 
-### -field <b>UsedInPositiong</b>
+### -field UsedInPositiong
 
 <dd>
 <p>Indicates whether this was simply a visible satellite or actually used in the positioning.</p>
 </dd>
 
-### -field <b>Elevation</b>
+### -field Elevation
 
 <dd>
 <p>Elevation value</p>
 </dd>
 
-### -field <b>Azimuth</b>
+### -field Azimuth
 
 <dd>
 <p>Azimuth value.</p>
 </dd>
 
-### -field <b>SignalToNoiseRatio</b>
+### -field SignalToNoiseRatio
 
 <dd>
 <p>Signal to noise ratio.</p>

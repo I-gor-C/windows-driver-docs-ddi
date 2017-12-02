@@ -57,7 +57,7 @@ HRESULT APIENTRY OpenAdapter10(
 ## -parameters
 <dl>
 
-### -param <i>pOpenData</i> [in, out]
+### -param pOpenData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-openadapter.md">D3D10DDIARG_OPENADAPTER</a> structure. On input, this structure contains information that the driver can use. On output, the driver specifies information that the Microsoft Direct3D runtime can use.</p>

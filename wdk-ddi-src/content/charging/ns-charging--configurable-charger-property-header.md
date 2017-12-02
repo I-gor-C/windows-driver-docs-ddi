@@ -56,19 +56,19 @@ typedef struct _CONFIGURABLE_CHARGER_PROPERTY_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of the structure.</p>
 </dd>
 
-### -field <b>ChargerId</b>
+### -field ChargerId
 
 <dd>
 <p>The charger ID.</p>
 </dd>
 
-### -field <b>PropertyId</b>
+### -field PropertyId
 
 <dd>
 <p>The ID of the property to be configured.</p>

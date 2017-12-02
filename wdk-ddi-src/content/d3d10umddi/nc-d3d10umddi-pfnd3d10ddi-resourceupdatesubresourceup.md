@@ -63,43 +63,43 @@ VOID APIENTRY DefaultConstantBufferUpdateSubresourceUP(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hDstResource</i> [in]
+### -param hDstResource [in]
 
 <dd>
 <p> A handle to the destination resource to copy to.</p>
 </dd>
 
-### -param <i>DstSubresource</i> [in]
+### -param DstSubresource [in]
 
 <dd>
 <p> An index that indicates the destination subresource to copy to. </p>
 </dd>
 
-### -param <i>pDstBox</i> [in, optional]
+### -param pDstBox [in, optional]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-box.md">D3D10_DDI_BOX</a> structure that specifies the region of the destination subresource to copy data to. If <b>pDstBox</b> is <b>NULL</b>, the driver should copy to the entire destination subresouce. </p>
 </dd>
 
-### -param <i>pSysMemUP</i> [in]
+### -param pSysMemUP [in]
 
 <dd>
 <p> A pointer to the beginning address of the source data that <i>DefaultConstantBufferUpdateSubresourceUP</i> uses to update the destination subresouce. </p>
 </dd>
 
-### -param <i>RowPitch</i> [in]
+### -param RowPitch [in]
 
 <dd>
 <p> The offset, in bytes, to move to the next row of source data. </p>
 </dd>
 
-### -param <i>DepthPitch</i> [in]
+### -param DepthPitch [in]
 
 <dd>
 <p> The offset, in bytes, to move to the next depth slice of source data.</p>

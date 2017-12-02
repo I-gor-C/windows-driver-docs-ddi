@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetdevice_retrievedescriptor.htm
 old-project: wdf
 ms.assetid: c97b399e-fb25-475a-a2a0-0cf4fb24433c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFUsbTargetDevice, RetrieveDescriptor, IWDFUsbTargetDevice::RetrieveDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ HRESULT RetrieveDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>DescriptorType</i> [in]
+### -param DescriptorType [in]
 
 <dd>
 <p>A value that specifies the type of descriptor to return. This parameter corresponds to the <b>bDescriptorType</b> field of a standard device descriptor, whose values are described in the <i>Universal Serial Bus</i> specification. (This resource may not be available in some languages 
@@ -69,7 +69,7 @@ and countries.) Some of these values are listed in the description of the Descri
 </p>
 </dd>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>The index of the descriptor, according to the <i>Universal Serial Bus</i> specification. (This resource may not be available in some languages 
@@ -77,19 +77,19 @@ and countries.) Some of these values are listed in the description of the Descri
 and countries.)</p>
 </dd>
 
-### -param <i>LanguageID</i> [in]
+### -param LanguageID [in]
 
 <dd>
 <p>The identifier of the language, if the UMDF driver requests a string descriptor; otherwise, this parameter is zero. </p>
 </dd>
 
-### -param <i>BufferLength</i> [in, out]
+### -param BufferLength [in, out]
 
 <dd>
 <p>A pointer to a variable that, on input, contains the size, in bytes, of the buffer that the <i>Buffer</i> points to. If the operation succeeds, the variable receives the number of bytes that the framework copied into the buffer.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>A pointer to a caller-supplied buffer that receives the USB descriptor. The type of buffer should match the value specified in <i>DescriptorType</i>.</p>
@@ -177,4 +177,4 @@ and countries.)</p>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetDevice::RetrieveDescriptor method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetDevice::RetrieveDescriptor method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

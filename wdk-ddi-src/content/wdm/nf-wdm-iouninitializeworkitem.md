@@ -55,7 +55,7 @@ VOID IoUninitializeWorkItem(
 ## -parameters
 <dl>
 
-### -param <i>IoWorkItem</i> [in]
+### -param IoWorkItem [in]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550679">IO_WORKITEM</a> structure to uninitialize. </p>

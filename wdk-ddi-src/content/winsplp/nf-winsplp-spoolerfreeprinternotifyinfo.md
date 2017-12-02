@@ -55,7 +55,7 @@ VOID WINAPI SpoolerFreePrinterNotifyInfo(
 ## -parameters
 <dl>
 
-### -param <i>pInfo</i> [in]
+### -param pInfo [in]
 
 <dd></dd>
 </dl>

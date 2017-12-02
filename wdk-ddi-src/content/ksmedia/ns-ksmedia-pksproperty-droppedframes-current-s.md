@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>PictureNumber</b>
+### -field PictureNumber
 
 <dd>
 <p>Specifies the current picture number provided by the minidriver. This value is the sum of the number of frames captured plus the number of frames dropped. Initialize or update this value on transition into KSSTATE_ACQUIRE.</p>
 </dd>
 
-### -field <b>DropCount</b>
+### -field DropCount
 
 <dd>
 <p>Specifies the count of dropped frames, which is provided by the minidriver. This counter increments whenever the minidriver was scheduled to capture a frame, but failed to do so, for example, because of buffer starvation. Initialize or update this value on transition into KSSTATE_ACQUIRE.</p>
 </dd>
 
-### -field <b>AverageFrameSize</b>
+### -field AverageFrameSize
 
 <dd>
 <p>Specifies the average size of frames captured. This value is provided by the minidriver.</p>
@@ -83,7 +83,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>For more information about updating <b>PictureNumber</b> and <b>DropCount</b> see <a href="NULL">Capturing Video</a>.</p>
+<p>For more information about updating <b>PictureNumber</b> and <b>DropCount</b> see <a href="https://msdn.microsoft.com/0adea8fe-1669-4daf-a858-05e014f00a72">Capturing Video</a>.</p>
 
 ## -requirements
 <table>

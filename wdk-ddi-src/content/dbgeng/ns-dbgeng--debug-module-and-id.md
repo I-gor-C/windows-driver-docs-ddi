@@ -7,7 +7,7 @@ old-location: debugger\debug_module_and_id.htm
 old-project: debugger
 ms.assetid: d65ad0fa-1dd8-42b4-866b-cb2522080cde
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: DEBUG_MODULE_AND_ID, DEBUG_MODULE_AND_ID, *PDEBUG_MODULE_AND_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ typedef struct _DEBUG_MODULE_AND_ID {
 ## -struct-fields
 <dl>
 
-### -field <b>ModuleBase</b>
+### -field ModuleBase
 
 <dd>
 <p>The location in the target's virtual address space of the module's base address.</p>
 </dd>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>The symbol ID of the symbol within the module.</p>

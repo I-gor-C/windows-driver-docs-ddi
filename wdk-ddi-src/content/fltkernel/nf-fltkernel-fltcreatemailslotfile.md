@@ -7,7 +7,7 @@ old-location: ifsk\fltcreatemailslotfile.htm
 old-project: ifsk
 ms.assetid: A727CDC1-A17A-4ABE-92AC-7CAEC11B78D1
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltCreateMailslotFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,31 +65,31 @@ NTSTATUS FltCreateMailslotFile(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>An opaque filter pointer for the caller. </p>
 </dd>
 
-### -param <i>Instance</i> [in, optional]
+### -param Instance [in, optional]
 
 <dd>
 <p>An opaque instance pointer for the minifilter driver instance that the create request is to be sent to. The instance must be attached to the volume for the mailslot file system. This parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request is sent to the device object at the top of the file system driver stack for the volume. If it is non-<b>NULL</b>, the request is sent only to minifilter driver instances that are attached below the specified instance. </p>
 </dd>
 
-### -param <i>FileHandle</i> [out]
+### -param FileHandle [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the file handle if the call to  <b>FltCreateMailslotFile</b> is successful. </p>
 </dd>
 
-### -param <i>FileObject</i> [out, optional]
+### -param FileObject [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the file object pointer if the call to <b>FltCreateMailslotFile</b> is successful. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>A bitmask of flags that specify the type of access that the caller requires to the file or directory. The set of system-defined <i>DesiredAccess</i> flags determines the following specific access rights for file objects. </p>
@@ -206,7 +206,7 @@ NTSTATUS FltCreateMailslotFile(
 <p> </p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in]
+### -param ObjectAttributes [in]
 
 <dd>
 <p>A pointer to an opaque <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that is already initialized with <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>. If the caller is running in the system process context, this parameter can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to <b>InitializeObjectAttributes</b>. Members of this structure for a file object are listed in the following table. </p>
@@ -259,7 +259,7 @@ NTSTATUS FltCreateMailslotFile(
 <p> </p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. On return from <b>FltCreateMailslotFile</b>, the <b>Information</b> member of the variable contains one of the following values:</p>
@@ -273,7 +273,7 @@ NTSTATUS FltCreateMailslotFile(
 </dl>
 </dd>
 
-### -param <i>CreateOptions</i> [in]
+### -param CreateOptions [in]
 
 <dd>
 <p>The options to be applied when creating or opening the mailslot, as a compatible combination of the following flags. </p>
@@ -310,19 +310,19 @@ NTSTATUS FltCreateMailslotFile(
 <p> </p>
 </dd>
 
-### -param <i>MailslotQuota</i> [in]
+### -param MailslotQuota [in]
 
 <dd>
 <p>The size, in bytes, of the buffer for writes to the mailslot.</p>
 </dd>
 
-### -param <i>MaximumMessageSize</i> [in]
+### -param MaximumMessageSize [in]
 
 <dd>
 <p>The maximum size, in bytes, of a message to write to the mailslot. A message of any size is specified by the value 0.</p>
 </dd>
 
-### -param <i>ReadTimeout</i> [in]
+### -param ReadTimeout [in]
 
 <dd>
 <p>The time a read operation waits for a message to be available in the mailslot. The default timeout is expressed in 100-nanosecond increments as a negative integer. For example, 250 milliseconds is specified as –10 * 1000 * 250. Additionally, the following values have special meanings.</p>
@@ -359,7 +359,7 @@ NTSTATUS FltCreateMailslotFile(
 <p> </p>
 </dd>
 
-### -param <i>DriverContext</i> [in, optional]
+### -param DriverContext [in, optional]
 
 <dd>
 <p>Optional pointer to an <a href="..\ntddk\ns-ntddk--io-driver-create-context.md">IO_DRIVER_CREATE_CONTEXT</a> structure already initialized by <a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a>.</p>
@@ -455,4 +455,4 @@ NTSTATUS FltCreateMailslotFile(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateMailslotFile function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateMailslotFile function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

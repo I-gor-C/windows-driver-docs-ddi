@@ -61,16 +61,16 @@ typedef EVT_URS_SET_ROLE PFN_URS_SET_ROLE;
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to the framework device object that the client driver retrieved in the previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.</p>
 </dd>
 
-### -param <i>Role</i> [in]
+### -param Role [in]
 
 <dd>
-<p>A <a href="buses.urs_role">URS_ROLE</a> type value that indicates the role to set for the controller device.</p>
+<p>A <a href="..\urstypes\ne-urstypes--urs-role.md">URS_ROLE</a> type value that indicates the role to set for the controller device.</p>
 </dd>
 </dl>
 
@@ -78,7 +78,7 @@ typedef EVT_URS_SET_ROLE PFN_URS_SET_ROLE;
 <p>If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it must return a status value for which NT_SUCCESS(status) equals FALSE.</p>
 
 ## -remarks
-<p> To register the client driver's implementation of the event callback the driver must set the  <b>EvtUrsSetRole</b> member of <a href="buses.urs_config">URS_CONFIG</a> to a function pointer of the implementation method and then call the <a href="buses.ursdeviceinitialize">UrsDeviceInitialize</a> method by passing the populated structure. The driver must call the method after it creates the framework device object for the controller. </p>
+<p> To register the client driver's implementation of the event callback the driver must set the  <b>EvtUrsSetRole</b> member of <a href="..\ursdevice\ns-ursdevice--urs-config.md">URS_CONFIG</a> to a function pointer of the implementation method and then call the <a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a> method by passing the populated structure. The driver must call the method after it creates the framework device object for the controller. </p>
 
 ## -requirements
 <table>
@@ -129,7 +129,7 @@ typedef EVT_URS_SET_ROLE PFN_URS_SET_ROLE;
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ursdeviceinitialize">UrsDeviceInitialize</a>
+<a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a>
 </dt>
 </dl>
 <p> </p>

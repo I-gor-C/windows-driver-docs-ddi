@@ -56,13 +56,13 @@ typedef struct _WINBIO_REGISTERED_FORMAT {
 ## -struct-fields
 <dl>
 
-### -field <b>Owner</b>
+### -field Owner
 
 <dd>
 <p>Specifies format owner.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Specifies format type.</p>

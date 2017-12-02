@@ -60,25 +60,25 @@ VOID APIENTRY CsSetConstantBuffers(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>StartBuffer</i> [in]
+### -param StartBuffer [in]
 
 <dd>
 <p> The starting constant buffer to set. </p>
 </dd>
 
-### -param <i>NumBuffers</i> [in]
+### -param NumBuffers [in]
 
 <dd>
 <p> The total number of buffers to set. </p>
 </dd>
 
-### -param <i>phBuffers</i> [in]
+### -param phBuffers [in]
 
 <dd>
 <p> An array of handles to the constant buffers, beginning with the buffer that <b>StartBuffer</b> specifies.</p>

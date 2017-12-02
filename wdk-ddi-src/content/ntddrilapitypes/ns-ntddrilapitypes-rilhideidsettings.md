@@ -7,7 +7,7 @@ old-location: netvista\rilhideidsettings.htm
 old-project: netvista
 ms.assetid: 11ca7db9-8e84-4d55-9ea9-7e2ecfa563e0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILHIDEIDSETTINGS, RILHIDEIDSETTINGS, *LPRILHIDEIDSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef struct _RILHIDEIDSETTINGS {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwStatus</b>
+### -field dwStatus
 
 <dd></dd>
 
-### -field <b>dwProvisioning</b>
+### -field dwProvisioning
 
 <dd></dd>
 </dl>

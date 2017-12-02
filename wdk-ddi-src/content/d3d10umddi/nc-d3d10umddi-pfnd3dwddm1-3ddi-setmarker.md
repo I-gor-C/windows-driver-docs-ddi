@@ -57,7 +57,7 @@ _Check_return_ HRESULT APIENTRY* SetMarker(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).</p>

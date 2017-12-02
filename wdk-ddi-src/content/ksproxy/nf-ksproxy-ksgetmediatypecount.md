@@ -56,19 +56,19 @@ HRESULT KsGetMediaTypeCount(
 ## -parameters
 <dl>
 
-### -param <i>FilterHandle</i> [in]
+### -param FilterHandle [in]
 
 <dd>
 <p>Handle to the filter that contains the pin factory to query.</p>
 </dd>
 
-### -param <i>PinFactoryId</i> [in]
+### -param PinFactoryId [in]
 
 <dd>
 <p>Identifier of the pin factory against which the number of media types is being returned.</p>
 </dd>
 
-### -param <i>MediaTypeCount</i> [out]
+### -param MediaTypeCount [out]
 
 <dd>
 <p>Pointer to a variable to receive the number of media types.</p>

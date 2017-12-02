@@ -60,31 +60,31 @@ typedef enum _UCM_CHARGING_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UcmChargingStateInvalid"></a><a id="ucmchargingstateinvalid"></a><a id="UCMCHARGINGSTATEINVALID"></a><b>UcmChargingStateInvalid</b>
+### -field UcmChargingStateInvalid
 
 <dd>
 <p>Indicates the charging state is invalid.</p>
 </dd>
 
-### -field <a id="UcmChargingStateNotCharging"></a><a id="ucmchargingstatenotcharging"></a><a id="UCMCHARGINGSTATENOTCHARGING"></a><b>UcmChargingStateNotCharging</b>
+### -field UcmChargingStateNotCharging
 
 <dd>
 <p>Indicates the port is not drawing a charge.</p>
 </dd>
 
-### -field <a id="UcmChargingStateNominalCharging"></a><a id="ucmchargingstatenominalcharging"></a><a id="UCMCHARGINGSTATENOMINALCHARGING"></a><b>UcmChargingStateNominalCharging</b>
+### -field UcmChargingStateNominalCharging
 
 <dd>
 <p>Indicates the port is drawing a nominal charge.</p>
 </dd>
 
-### -field <a id="UcmChargingStateSlowCharging"></a><a id="ucmchargingstateslowcharging"></a><a id="UCMCHARGINGSTATESLOWCHARGING"></a><b>UcmChargingStateSlowCharging</b>
+### -field UcmChargingStateSlowCharging
 
 <dd>
 <p>Indicates the port is drawing a slow charge.</p>
 </dd>
 
-### -field <a id="_________UcmChargingStateTrickleCharging"></a><a id="_________ucmchargingstatetricklecharging"></a><a id="_________UCMCHARGINGSTATETRICKLECHARGING"></a><b>    
+### -field     
     UcmChargingStateTrickleCharging</b>
 
 <dd>
@@ -144,16 +144,16 @@ typedef enum _UCM_CHARGING_STATE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucm_connector_typec_attach_params">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a>
+<a href="..\ucmmanager\ns-ucmmanager--ucm-connector-typec-attach-params.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a>
 </dt>
 <dt>
-<a href="buses.ucmconnectortypecattach">UcmConnectorTypeCAttach</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
 </dt>
 <dt>
-<a href="buses.ucm_connector_pd_conn_state_changed_params">UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS</a>
+<a href="..\ucmmanager\ns-ucmmanager--ucm-connector-pd-conn-state-changed-params.md">UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS</a>
 </dt>
 <dt>
-<a href="buses.ucmconnectorpdconnectionstatechanged">UcmConnectorPdConnectionStateChanged</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorpdconnectionstatechanged.md">UcmConnectorPdConnectionStateChanged</a>
 </dt>
 </dl>
 <p> </p>

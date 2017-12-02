@@ -7,7 +7,7 @@ old-location: ifsk\rxptrackdereference.htm
 old-project: ifsk
 ms.assetid: eaff92d2-d866-4096-8528-0672255ced60
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxpTrackDereference
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,44 +57,44 @@ BOOLEAN RxpTrackDereference(
 ## -parameters
 <dl>
 
-### -param <i>TraceType</i> [in]
+### -param TraceType [in]
 
 <dd>
 <p>The value that determines which dereference request type is tracked. This value can be one of the following macros defined in <i>fcb.h</i>:</p>
 <p></p>
 <dl>
 
-### -param <a id="RDBSS_REF_TRACK_SRVCALL"></a><a id="rdbss_ref_track_srvcall"></a>RDBSS_REF_TRACK_SRVCALL
+### -param RDBSS_REF_TRACK_SRVCALL
 
 <dd>
 <p>A dereference request on a SRV_CALL structure.</p>
 </dd>
 
-### -param <a id="RDBSS_REF_TRACK_NETROOT"></a><a id="rdbss_ref_track_netroot"></a>RDBSS_REF_TRACK_NETROOT
+### -param RDBSS_REF_TRACK_NETROOT
 
 <dd>
 <p>A dereference request on a NET_ROOT structure.</p>
 </dd>
 
-### -param <a id="RDBSS_REF_TRACK_VNETROOT"></a><a id="rdbss_ref_track_vnetroot"></a>RDBSS_REF_TRACK_VNETROOT
+### -param RDBSS_REF_TRACK_VNETROOT
 
 <dd>
 <p>A dereference request on a V_NET_ROOT structure.</p>
 </dd>
 
-### -param <a id="RDBSS_REF_TRACK_NETFOBX"></a><a id="rdbss_ref_track_netfobx"></a>RDBSS_REF_TRACK_NETFOBX
+### -param RDBSS_REF_TRACK_NETFOBX
 
 <dd>
 <p>A dereference request on an FOBX structure.</p>
 </dd>
 
-### -param <a id="RDBSS_REF_TRACK_NETFCB"></a><a id="rdbss_ref_track_netfcb"></a>RDBSS_REF_TRACK_NETFCB
+### -param RDBSS_REF_TRACK_NETFCB
 
 <dd>
 <p>A dereference request on an FCB structure.</p>
 </dd>
 
-### -param <a id="RDBSS_REF_TRACK_SRVOPEN"></a><a id="rdbss_ref_track_srvopen"></a>RDBSS_REF_TRACK_SRVOPEN
+### -param RDBSS_REF_TRACK_SRVOPEN
 
 <dd>
 <p>A dereference request on a SRV_OPEN structure.</p>
@@ -102,19 +102,19 @@ BOOLEAN RxpTrackDereference(
 </dl>
 </dd>
 
-### -param <i>FileName</i> [in]
+### -param FileName [in]
 
 <dd>
 <p>The name of the source file where this routine was called.</p>
 </dd>
 
-### -param <i>Line</i> [in]
+### -param Line [in]
 
 <dd>
 <p>The line number in the source file where this routine was called.</p>
 </dd>
 
-### -param <i>pInstance</i> [in]
+### -param pInstance [in]
 
 <dd>
 <p>A pointer to the structure to be dereferenced.</p>
@@ -188,4 +188,4 @@ BOOLEAN RxpTrackDereference(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxpTrackDereference function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxpTrackDereference function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

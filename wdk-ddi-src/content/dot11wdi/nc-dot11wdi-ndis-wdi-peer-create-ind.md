@@ -7,7 +7,7 @@ old-location: netvista\ndiswdipeercreateindication.htm
 old-project: netvista
 ms.assetid: 58B60160-FE04-4EDE-900F-244D0F76E50D
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,25 +61,25 @@ VOID NdisWdiPeerCreateIndication(
 ## -parameters
 <dl>
 
-### -param <i>NdisMiniportDataPathHandle</i> [in]
+### -param NdisMiniportDataPathHandle [in]
 
 <dd>
 <p>The NdisMiniportDataPathHandle passed to IHV miniport in <a href="..\dot11wdi\nc-dot11wdi-miniport-wdi-tal-txrx-initialize.md">MiniportWdiTalTxRxInitialize</a>.</p>
 </dd>
 
-### -param <i>PortId</i> [in]
+### -param PortId [in]
 
 <dd>
 <p>The port ID.</p>
 </dd>
 
-### -param <i>PeerId</i> [in]
+### -param PeerId [in]
 
 <dd>
 <p>The peer ID. This is used to identify the  peer in subsequent commands and indications.</p>
 </dd>
 
-### -param <i>PeerAddr</i> [in]
+### -param PeerAddr [in]
 
 <dd>
 <p>The peer MAC address.</p>
@@ -145,9 +145,9 @@ VOID NdisWdiPeerCreateIndication(
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt269099">WDI_PORT_ID</a>
 </dt>
 <dt>
-<a href="NULL">WDI general datapath interfaces</a>
+<a href="netvista.wdi_general_datapath_interfaces">WDI general datapath interfaces</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_PEER_CREATE_IND callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_PEER_CREATE_IND callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\ril_getcallforwardingsettings.htm
 old-project: netvista
 ms.assetid: f9abb454-5fd1-4680-ab83-f24897c89193
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetCallForwardingSettings
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,27 +62,27 @@ HRESULT  RIL_GetCallForwardingSettings(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>dwReason</i> 
+### -param dwReason 
 
 <dd></dd>
 
-### -param <i>fAllClasses</i> 
+### -param fAllClasses 
 
 <dd></dd>
 
-### -param <i>dwInfoClasses</i> 
+### -param dwInfoClasses 
 
 <dd></dd>
 </dl>

@@ -58,31 +58,31 @@ typedef struct tagKS_AnalogVideoInfo {
 ## -struct-fields
 <dl>
 
-### -field <b>rcSource</b>
+### -field rcSource
 
 <dd>
 <p>Specifies a clipping rectangle that selects the portion of the active video signal to use. </p>
 </dd>
 
-### -field <b>rcTarget</b>
+### -field rcTarget
 
 <dd>
 <p>Specifies a rectangle that indicates which part of the target buffer to use.</p>
 </dd>
 
-### -field <b>dwActiveWidth</b>
+### -field dwActiveWidth
 
 <dd>
 <p>Specifies the width of the active incoming video signal. For example, the value for ITUR-601 could be set to 720 active samples per line.</p>
 </dd>
 
-### -field <b>dwActiveHeight</b>
+### -field dwActiveHeight
 
 <dd>
 <p>Specifies the height of the active incoming video signal. For example, the value for NTSC could be set to 483. For PAL/SECAM, the value could be set to 575.</p>
 </dd>
 
-### -field <b>AvgTimePerFrame</b>
+### -field AvgTimePerFrame
 
 <dd>
 <p>Specifies the average time per frame, in 100-nanosecond units.</p>

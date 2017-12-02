@@ -56,13 +56,13 @@ NTSTATUS WppRecorderLogSetIdentifier(
 ## -parameters
 <dl>
 
-### -param <i>RecorderLog</i> 
+### -param RecorderLog 
 
 <dd>
 <p>A recorder log handle returned in a previous call to WppRecorderLogCreate.</p>
 </dd>
 
-### -param <i>LogIdentifier</i> 
+### -param LogIdentifier 
 
 <dd>
 <p>A string identifier to set.</p>

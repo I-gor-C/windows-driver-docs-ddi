@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_hwaccess_target_size.htm
 old-project: wdf
 ms.assetid: C675431E-6213-4FA8-86DB-65FE6EE90853
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,27 +61,27 @@ typedef enum __WDF_IO_TARGET_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfDeviceHwAccessTargetSizeInvalid"></a><a id="wdfdevicehwaccesstargetsizeinvalid"></a><a id="WDFDEVICEHWACCESSTARGETSIZEINVALID"></a><b>WdfDeviceHwAccessTargetSizeInvalid</b>
+### -field WdfDeviceHwAccessTargetSizeInvalid
 
 <dd></dd>
 
-### -field <a id="WdfDeviceHwAccessTargetSizeUchar"></a><a id="wdfdevicehwaccesstargetsizeuchar"></a><a id="WDFDEVICEHWACCESSTARGETSIZEUCHAR"></a><b>WdfDeviceHwAccessTargetSizeUchar</b>
+### -field WdfDeviceHwAccessTargetSizeUchar
 
 <dd></dd>
 
-### -field <a id="WdfDeviceHwAccessTargetSizeUshort"></a><a id="wdfdevicehwaccesstargetsizeushort"></a><a id="WDFDEVICEHWACCESSTARGETSIZEUSHORT"></a><b>WdfDeviceHwAccessTargetSizeUshort</b>
+### -field WdfDeviceHwAccessTargetSizeUshort
 
 <dd></dd>
 
-### -field <a id="WdfDeviceHwAccessTargetSizeUlong"></a><a id="wdfdevicehwaccesstargetsizeulong"></a><a id="WDFDEVICEHWACCESSTARGETSIZEULONG"></a><b>WdfDeviceHwAccessTargetSizeUlong</b>
+### -field WdfDeviceHwAccessTargetSizeUlong
 
 <dd></dd>
 
-### -field <a id="WdfDeviceHwAccessTargetSizeUlong64"></a><a id="wdfdevicehwaccesstargetsizeulong64"></a><a id="WDFDEVICEHWACCESSTARGETSIZEULONG64"></a><b>WdfDeviceHwAccessTargetSizeUlong64</b>
+### -field WdfDeviceHwAccessTargetSizeUlong64
 
 <dd></dd>
 
-### -field <a id="WdfDeviceHwAccessTargetSizeMaximum"></a><a id="wdfdevicehwaccesstargetsizemaximum"></a><a id="WDFDEVICEHWACCESSTARGETSIZEMAXIMUM"></a><b>WdfDeviceHwAccessTargetSizeMaximum</b>
+### -field WdfDeviceHwAccessTargetSizeMaximum
 
 <dd></dd>
 </dl>
@@ -120,4 +120,4 @@ typedef enum __WDF_IO_TARGET_STATE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_HWACCESS_TARGET_SIZE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_HWACCESS_TARGET_SIZE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,13 +56,13 @@ ULONG StorPortGetActiveGroupCount(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>NumberGroups</i> [out]
+### -param NumberGroups [out]
 
 <dd>
 <p>A pointer to a variable that holds the number of groups.</p>

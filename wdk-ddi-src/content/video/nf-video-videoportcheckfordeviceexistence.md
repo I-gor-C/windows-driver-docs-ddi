@@ -61,43 +61,43 @@ BOOLEAN VideoPortCheckForDeviceExistence(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>VendorId</i> [in]
+### -param VendorId [in]
 
 <dd>
 <p>Specifies the vendor ID.</p>
 </dd>
 
-### -param <i>DeviceId</i> [in]
+### -param DeviceId [in]
 
 <dd>
 <p>Specifies the device ID.</p>
 </dd>
 
-### -param <i>RevisionId</i> [in]
+### -param RevisionId [in]
 
 <dd>
 <p>Specifies the revision ID.</p>
 </dd>
 
-### -param <i>SubVendorId</i> [in]
+### -param SubVendorId [in]
 
 <dd>
 <p>Specifies the subvendor ID.</p>
 </dd>
 
-### -param <i>SubSystemId</i> [in]
+### -param SubSystemId [in]
 
 <dd>
 <p>Specifies the subsystem ID.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Is a set of flags that determine whether the <i>RevisionID</i> and <i>SubSystemID</i> parameters should be used in checking for the new device. This parameter can be the logical OR of the following values:</p>
@@ -131,7 +131,7 @@ BOOLEAN VideoPortCheckForDeviceExistence(
 <p><b>VideoPortCheckForDeviceExistence</b> returns <b>TRUE</b> if the device exists in the system, and <b>FALSE</b> otherwise.</p>
 
 ## -remarks
-<p>For more information about PCI identifiers, see <a href="NULL">Identifiers for PCI Devices</a>. </p>
+<p>For more information about PCI identifiers, see <a href="devinst.identifiers_for_pci_devices">Identifiers for PCI Devices</a>. </p>
 
 ## -requirements
 <table>

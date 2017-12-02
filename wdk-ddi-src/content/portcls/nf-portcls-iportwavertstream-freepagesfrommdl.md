@@ -54,7 +54,7 @@ VOID FreePagesFromMdl(
 ## -parameters
 <dl>
 
-### -param <i>MemoryDescriptorList</i> [in]
+### -param MemoryDescriptorList [in]
 
 <dd>
 <p>Pointer to the MDL.</p>

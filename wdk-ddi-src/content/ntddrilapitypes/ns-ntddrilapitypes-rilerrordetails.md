@@ -7,7 +7,7 @@ old-location: netvista\rilerrordetails.htm
 old-project: netvista
 ms.assetid: 9c9aaece-5c16-40c4-a039-5e32541500f7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILERRORDETAILS, RILERRORDETAILS, *LPRILERRORDETAILS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _RILERRORDETAILS {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>hResult</b>
+### -field hResult
 
 <dd></dd>
 
-### -field <b>dw3gppCause</b>
+### -field dw3gppCause
 
 <dd></dd>
 </dl>

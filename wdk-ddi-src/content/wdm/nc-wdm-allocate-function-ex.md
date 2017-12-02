@@ -61,7 +61,7 @@ PVOID LookasideListAllocateEx(
 ## -parameters
 <dl>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>Specifies the type of storage to allocate for the new lookaside-list entry. The caller sets this parameter to a valid <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a> enumeration value, and possibly bitwise ORs this value with one of the following flag bits:</p>
@@ -75,19 +75,19 @@ PVOID LookasideListAllocateEx(
 <p>If, in the <b>ExInitializeLookasideListEx</b> call, Flags = EX_LOOKASIDE_LIST_EX_FLAGS_FAIL_NO_RAISE, the <i>PoolType</i> parameter that the <i>LookasideListAllocateEx</i> routine receives is the bitwise OR of POOL_QUOTA_FAIL_INSTEAD_OF_RAISE and the <i>PoolType</i> value that was passed to <b>ExInitializeLookasideListEx</b>.  The <i>LookasideListAllocateEx</i> routine can pass its <i>PoolType</i> parameter value, without modification, to the <b>ExAllocatePoolWithQuotaTag</b> routine.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the lookaside-list entry to allocate.</p>
 </dd>
 
-### -param <i>Tag</i> [in]
+### -param Tag [in]
 
 <dd>
 <p>Specifies the four-byte pool tag to use to mark the allocated storage for the new lookaside-list entry. For more information about pool tags, see the description of the <i>Tag</i> parameter in <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>. </p>
 </dd>
 
-### -param <i>Lookaside</i> [in, out]
+### -param Lookaside [in, out]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554329">LOOKASIDE_LIST_EX</a> structure that describes the lookaside list. This structure was previously initialized by the <a href="..\wdm\nf-wdm-exinitializelookasidelistex.md">ExInitializeLookasideListEx</a> routine. </p>
@@ -112,7 +112,7 @@ PVOID LookasideListAllocateEx(
 
 <p>The <i>LookasideListAllocateEx</i> routine is called at the same IRQL as the call to <b>ExAllocateFromLookasideListEx</b> that requests the entry. For a call that requests an entry that resides in paged memory, the caller must be running IRQL &lt;= APC_LEVEL. For a call that requests an entry that resides in nonpaged memory, the caller must be running IRQL &lt;= DISPATCH_LEVEL. </p>
 
-<p>To define a <i>LookasideListAllocateEx</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define a <i>LookasideListAllocateEx</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define a <i>LookasideListAllocateEx</i> callback routine that is named <code>MyLookasideListAllocateEx</code>, use the FREE_FUNCTION_EX type as shown in this code example:</p>
 

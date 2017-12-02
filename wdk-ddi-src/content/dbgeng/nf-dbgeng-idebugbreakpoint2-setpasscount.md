@@ -7,7 +7,7 @@ old-location: debugger\setpasscount.htm
 old-project: debugger
 ms.assetid: a95f7a8d-7e0d-4971-9683-f83600030337
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugBreakpoint2, SetPassCount, IDebugBreakpoint2::SetPassCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT SetPassCount(
 ## -parameters
 <dl>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>The number of times that the target must hit the breakpoint before it is triggered.  The number of times the target must pass the breakpoint without triggering it is the value of <i>Count</i>, minus one.</p>
@@ -68,7 +68,7 @@ HRESULT SetPassCount(
 
 <p> </p>
 
-<p>This method can also return error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
+<p>This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.</p>
 
 ## -remarks
 <p>Every time that the <b>SetPassCount</b> method is called, the number of times that the target must reach the breakpoint location before the breakpoint is triggered is reset.</p>

@@ -57,19 +57,19 @@ NTSTATUS KoDriverInitialize(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>Pointer to a driver object to initialize that handles the kernel streaming interface.</p>
 </dd>
 
-### -param <i>RegistryPathName</i> [in]
+### -param RegistryPathName [in]
 
 <dd>
 <p>Pointer to the registry path that is associated with the driver object.</p>
 </dd>
 
-### -param <i>CreateObjectHandler</i> [in]
+### -param CreateObjectHandler [in]
 
 <dd>
 <p>Pointer to a function used to create new objects.</p>

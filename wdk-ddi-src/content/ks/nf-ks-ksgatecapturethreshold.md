@@ -54,7 +54,7 @@ BOOLEAN __inline KsGateCaptureThreshold(
 ## -parameters
 <dl>
 
-### -param <i>Gate</i> [in]
+### -param Gate [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksgate.md">KSGATE</a> structure representing the AND gate for which to capture an ON input synchronously.</p>

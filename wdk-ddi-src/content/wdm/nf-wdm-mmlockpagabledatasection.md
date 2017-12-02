@@ -55,7 +55,7 @@ PVOID MmLockPagableDataSection(
 ## -parameters
 <dl>
 
-### -param <i>AddressWithinSection</i> [in]
+### -param AddressWithinSection [in]
 
 <dd>
 <p>Specifies the symbolic address of one item of data within the pageable section.</p>

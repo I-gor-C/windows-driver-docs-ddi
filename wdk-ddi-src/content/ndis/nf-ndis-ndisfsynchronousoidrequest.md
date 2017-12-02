@@ -7,7 +7,7 @@ old-location: netvista\ndisfsynchronousoidrequest.htm
 old-project: netvista
 ms.assetid: 01B625EB-AB6D-496F-95F2-22845460324A
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisFSynchronousOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,13 +53,13 @@ NDIS_STATUS NdisFSynchronousOidRequest(
 ## -parameters
 <dl>
 
-### -param <i>NdisFilterModuleHandle</i> [in]
+### -param NdisFilterModuleHandle [in]
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -param <i>OidRequest</i> [in]
+### -param OidRequest [in]
 
 <dd>
 <p>Reserved.</p>

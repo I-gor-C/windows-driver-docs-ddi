@@ -56,19 +56,19 @@ typedef struct _IMAGE_INFO_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size, in bytes, of the <b>IMAGE_INFO_EX</b> structure. </p>
 </dd>
 
-### -field <b>ImageInfo</b>
+### -field ImageInfo
 
 <dd>
 <p>An <a href="..\ntddk\ns-ntddk--image-info.md">IMAGE_INFO</a> structure that specifies image information.</p>
 </dd>
 
-### -field <b>FileObject</b>
+### -field FileObject
 
 <dd>
 <p>Contains a pointer to the file object of the backing file for the image. The driver can take a reference to this object or use it for other operations.</p>

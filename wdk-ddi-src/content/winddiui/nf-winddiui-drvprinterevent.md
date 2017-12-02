@@ -58,13 +58,13 @@ BOOL DrvPrinterEvent(
 ## -parameters
 <dl>
 
-### -param <i>pPrinterName</i> [in]
+### -param pPrinterName [in]
 
 <dd>
 <p>Caller-supplied pointer to a NULL-terminated printer name string. The string format can be \\<i>Machine</i>\<i>PrinterName</i> to specify a remote printer, or <i>PrinterName</i> to specify a local printer.</p>
 </dd>
 
-### -param <i>DriverEvent</i> 
+### -param DriverEvent 
 
 <dd>
 <p>Caller-supplied event code identifying the event. The following event codes are defined:</p>
@@ -151,7 +151,7 @@ BOOL DrvPrinterEvent(
 <p> </p>
 </dd>
 
-### -param <i>Flags</i> 
+### -param Flags 
 
 <dd>
 <p>Caller-supplied bit flag, defined as follows:</p>
@@ -165,7 +165,7 @@ BOOL DrvPrinterEvent(
 <p>PRINTER_EVENT_FLAG_NO_UI</p>
 </td>
 <td>
-<p>If set, the function <b>mustnot</b> display a user interface. During the installation of a print processor, print monitor, or printer driver, the only way in which a user interface is permitted is through the use of the <b>VendorSetup</b> directive. See <a href="NULL">Printer INF File Entries</a> and <a href="NULL">Customized Printer Setup Operations</a> for more information.</p>
+<p>If set, the function <b>mustnot</b> display a user interface. During the installation of a print processor, print monitor, or printer driver, the only way in which a user interface is permitted is through the use of the <b>VendorSetup</b> directive. See <a href="https://msdn.microsoft.com/897072bb-e481-4c8d-a2bf-57b19c69ac0e">Printer INF File Entries</a> and <a href="https://msdn.microsoft.com/888125e9-a057-4e86-9df8-0086cedb368d">Customized Printer Setup Operations</a> for more information.</p>
 <div class="alert"><b>Important</b>  : Be aware that <b>VendorSetup</b> is now deprecated and should not be used by any <i>new</i> v3 or v4 drivers that you develop. This information about <b>VendorSetup</b> is provided for reference only, or for the maintenance of existing v3 drivers that already use this INF directive.</div>
 <div> </div>
 </td>
@@ -174,7 +174,7 @@ BOOL DrvPrinterEvent(
 <p> </p>
 </dd>
 
-### -param <i>lParam</i> 
+### -param lParam 
 
 <dd>
 <p>Not used unless the <i>DriverEvent</i> parameter is set to PRINTER_EVENT_ATTRIBUTES_CHANGED. In this case, <i>lParam</i> contains the address of a PRINTER_EVENT_ATTRIBUTES_INFO structure. (See the preceding description of the <i>DriverEvent</i> parameter.) For all other values of the <i>DriverEvent</i> parameter, the <i>lParam</i> parameter is <b>NULL</b>.</p>

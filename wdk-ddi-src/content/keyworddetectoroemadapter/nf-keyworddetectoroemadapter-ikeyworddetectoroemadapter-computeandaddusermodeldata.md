@@ -58,31 +58,31 @@ HRESULT ComputeAndAddUserModelData(
 ## -parameters
 <dl>
 
-### -param <i>ModelData</i> [in]
+### -param ModelData [in]
 
 <dd>
 <p>A pointer to the <b>IStream</b> object bound to model data. It is modified by this call.</p>
 </dd>
 
-### -param <i>KeywordSelector</i> [in]
+### -param KeywordSelector [in]
 
 <dd>
 <p>A <a href="audio.keywordselector">KEYWORDSELECTOR</a> struct that uniquely identifies this model.</p>
 </dd>
 
-### -param <i>KeywordEndBytePos</i> [in]
+### -param KeywordEndBytePos [in]
 
 <dd>
 <p>Indicates the end of the keyword in the UserRecording.</p>
 </dd>
 
-### -param <i>UserRecordings</i> [in]
+### -param UserRecordings [in]
 
 <dd>
 <p>A pointer to an array of pointers to the previously verified user recordings of the keyword.</p>
 </dd>
 
-### -param <i>NumUserRecordings</i> [in]
+### -param NumUserRecordings [in]
 
 <dd>
 <p>The number of recordings.</p>

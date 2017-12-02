@@ -60,19 +60,19 @@ NTSTATUS ObReferenceObjectByHandle(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Specifies an open handle for an object.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies the requested types of access to the object. The interpretation of this field is dependent on the object type. Do not use any generic access rights. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>.</p>
 </dd>
 
-### -param <i>ObjectType</i> [in, optional]
+### -param ObjectType [in, optional]
 
 <dd>
 <p>Pointer to the object type. <i>ObjectType</i> can be <b>*ExEventObjectType</b>, <b>*ExSemaphoreObjectType</b>, <b>*IoFileObjectType</b>, <b>*PsProcessType</b>, <b>*PsThreadType</b>, <b>*SeTokenObjectType</b>, <b>*TmEnlistmentObjectType</b>, <b>*TmResourceManagerObjectType</b>, <b>*TmTransactionManagerObjectType</b>, or <b>*TmTransactionObjectType</b>.</p>
@@ -81,13 +81,13 @@ NTSTATUS ObReferenceObjectByHandle(
 <p>If <i>ObjectType</i> is not <b>NULL</b>, the operating system verifies that the supplied object type matches the object type of the object that <i>Handle</i> specifies.</p>
 </dd>
 
-### -param <i>AccessMode</i> [in]
+### -param AccessMode [in]
 
 <dd>
 <p>Specifies the access mode to use for the access check. It must be either <b>UserMode</b> or <b>KernelMode</b>. Drivers should always specify <b>UserMode</b> for handles they receive from user address space.</p>
 </dd>
 
-### -param <i>Object</i> [out]
+### -param Object [out]
 
 <dd>
 <p>Pointer to a variable that receives a pointer to the object's body. The following table contains the pointer types.</p>
@@ -183,7 +183,7 @@ NTSTATUS ObReferenceObjectByHandle(
 <div> </div>
 </dd>
 
-### -param <i>HandleInformation</i> [out, optional]
+### -param HandleInformation [out, optional]
 
 <dd>
 <p>Drivers set this to <b>NULL</b>.</p>

@@ -55,7 +55,7 @@ VOID IoUnregisterContainerNotification(
 ## -parameters
 <dl>
 
-### -param <i>CallbackRegistration</i> [in]
+### -param CallbackRegistration [in]
 
 <dd>
 <p>A pointer to a callback registration object that was created by a previous call to <b>IoRegisterContainerNotification</b>.</p>

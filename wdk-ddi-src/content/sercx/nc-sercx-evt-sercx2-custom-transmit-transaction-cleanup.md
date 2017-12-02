@@ -58,7 +58,7 @@ VOID EvtSerCx2CustomTransmitTransactionCleanup(
 ## -parameters
 <dl>
 
-### -param <i>CustomTransmitTransaction</i> [in]
+### -param CustomTransmitTransaction [in]
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/dn265257">SERCX2CUSTOMTRANSMITTRANSACTION</a> handle to a custom-transmit object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2customtransmittransactioncreate.md">SerCx2CustomTransmitTransactionCreate</a> method to create this object.</p>
@@ -73,15 +73,15 @@ VOID EvtSerCx2CustomTransmitTransactionCleanup(
 
 <p>Your serial controller driver should implement an <i>EvtSerCx2CustomTransmitTransactionCleanup</i> function if it needs to clean up the serial controller state at the end of a custom-transmit transaction. SerCx2 calls this function, if it is implemented, after a custom-transmit transaction ends. In response to the <i>EvtSerCx2CustomTransmitTransactionCleanup</i> call, the serial controller driver must call the <a href="..\sercx\nf-sercx-sercx2customtransmittransactioncleanupcomplete.md">SerCx2CustomTransmitTransactionCleanupComplete</a> method to notify SerCx2 after the clean-up work is done.</p>
 
-<p>For more information, see <a href="NULL">SerCx2 Custom-Transmit Transactions</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/E72E68BC-A60A-41BE-8606-92A608648042">SerCx2 Custom-Transmit Transactions</a>.</p>
 
-<p>To define an <i>EvtSerCx2CustomTransmitTransactionCleanup</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define an <i>EvtSerCx2CustomTransmitTransactionCleanup</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define an <i>EvtSerCx2CustomTransmitTransactionCleanup</i> callback function that is named <code>MyCustomTransmitTransactionCleanup</code>, use the <b>EVT_SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CLEANUP</b> function type, as shown in this code example:</p>
 
 <p>Then, implement your callback function as follows:</p>
 
-<p>The <b>EVT_SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CLEANUP</b> function type is defined in the Sercx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CLEANUP</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.</p>
+<p>The <b>EVT_SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CLEANUP</b> function type is defined in the Sercx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CLEANUP</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.</p>
 
 ## -requirements
 <table>

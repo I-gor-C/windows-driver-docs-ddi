@@ -55,13 +55,13 @@ typedef enum _D3D12DDI_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAGS_0030 {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAG_0030_NONE"></a><a id="d3d12ddi_protected_resource_session_support_flag_0030_none"></a><b>D3D12DDI_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAG_0030_NONE</b>
+### -field D3D12DDI_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAG_0030_NONE
 
 <dd>
 <p>There are no  protected resource session support flags.</p>
 </dd>
 
-### -field <a id="D3D12DDI_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAG_0030_SUPPORTED"></a><a id="d3d12ddi_protected_resource_session_support_flag_0030_supported"></a><b>D3D12DDI_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAG_0030_SUPPORTED</b>
+### -field D3D12DDI_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAG_0030_SUPPORTED
 
 <dd>
 <p>The protected resource session support flag is supported.</p>

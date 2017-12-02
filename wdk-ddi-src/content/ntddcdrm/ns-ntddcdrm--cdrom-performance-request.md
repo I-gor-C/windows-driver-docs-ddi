@@ -58,31 +58,31 @@ typedef struct _CDROM_PERFORMANCE_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>RequestType</b>
+### -field RequestType
 
 <dd>
 <p>The <a href="..\ntddcdrm\ne-ntddcdrm--cdrom-performance-request-type.md">CDROM_PERFORMANCE_REQUEST_TYPE</a> enumeration specifies the request type, <b>CdromPerformanceRequest</b>, or <b>CdromWriteSpeedRequest</b>.</p>
 </dd>
 
-### -field <b>PerformanceType</b>
+### -field PerformanceType
 
 <dd>
 <p>The <a href="..\ntddcdrm\ne-ntddcdrm--cdrom-performance-type.md">CDROM_PERFORMANCE_TYPE</a> enumeration specifies the type of performance data.</p>
 </dd>
 
-### -field <b>Exceptions</b>
+### -field Exceptions
 
 <dd>
 <p>The <a href="..\ntddcdrm\ne-ntddcdrm--cdrom-performance-exception-type.md">CDROM_PERFORMANCE_EXCEPTION_TYPE</a>    enumeration specifies the type of exception. </p>
 </dd>
 
-### -field <b>Tolerance</b>
+### -field Tolerance
 
 <dd>
 <p>The <a href="..\ntddcdrm\ne-ntddcdrm--cdrom-performance-tolerance-type.md">CDROM_PERFORMANCE_TOLERANCE_TYPE</a> enumeration specifies the performance tolerance for the nominal performance and the time tolerance (seek delay) for the exception list.</p>
 </dd>
 
-### -field <b>StartingLba</b>
+### -field StartingLba
 
 <dd>
 <p>The starting logical block address field.</p>

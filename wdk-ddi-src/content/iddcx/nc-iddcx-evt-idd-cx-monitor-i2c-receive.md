@@ -60,7 +60,7 @@ typedef EVT_IDD_CX_MONITOR_I2C_RECEIVE PFN_IDD_CX_MONITOR_I2C_RECEIVE;
 ## -parameters
 <dl>
 
-### -param <i>MonitorObject</i> [in]
+### -param MonitorObject [in]
 
 <dd>
 <p>
@@ -68,7 +68,7 @@ typedef EVT_IDD_CX_MONITOR_I2C_RECEIVE PFN_IDD_CX_MONITOR_I2C_RECEIVE;
                 A handle used by the OS to identify the monitor to receive I2C data from.</p>
 </dd>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>

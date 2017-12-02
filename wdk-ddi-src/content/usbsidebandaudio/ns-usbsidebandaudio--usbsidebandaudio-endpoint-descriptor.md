@@ -62,43 +62,43 @@ typedef struct _USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved 0</b>
+### -field Reserved 0
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <b>Reserved 1</b>
+### -field Reserved 1
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <b>Reserved 2</b>
+### -field Reserved 2
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <b>Reserved 3</b>
+### -field Reserved 3
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <b>Reserved 4</b>
+### -field Reserved 4
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <b>Reserved 5</b>
+### -field Reserved 5
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <b>Reserved 6</b>
+### -field Reserved 6
 
 <dd>
 <p>TBD</p>

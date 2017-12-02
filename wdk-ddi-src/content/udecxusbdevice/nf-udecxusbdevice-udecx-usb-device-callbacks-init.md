@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="buses.udecx_usb_device_state_change_callbacks">UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS</a> structure before a <a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a> call.</p>
+<p>Initializes a <a href="..\udecxusbdevice\ns-udecxusbdevice--udecx-usb-device-state-change-callbacks.md">UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS</a> structure before a <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a> call.</p>
 
 
 ## -syntax
@@ -55,10 +55,10 @@ FORCEINLINE void UDECX_USB_DEVICE_CALLBACKS_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Callbacks</i> [out]
+### -param Callbacks [out]
 
 <dd>
-<p>A pointer to a <a href="buses.udecx_usb_device_state_change_callbacks">UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS</a> structure to initialize.</p>
+<p>A pointer to a <a href="..\udecxusbdevice\ns-udecxusbdevice--udecx-usb-device-state-change-callbacks.md">UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS</a> structure to initialize.</p>
 </dd>
 </dl>
 
@@ -127,7 +127,7 @@ FORCEINLINE void UDECX_USB_DEVICE_CALLBACKS_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a>
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a>
 </dt>
 </dl>
 <p> </p>

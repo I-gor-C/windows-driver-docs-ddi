@@ -58,25 +58,25 @@ NTSTATUS IoGetDeviceObjectPointer(
 ## -parameters
 <dl>
 
-### -param <i>ObjectName</i> [in]
+### -param ObjectName [in]
 
 <dd>
 <p>Pointer to a buffer that contains a Unicode string that is the name of the device object.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the desired access. Usually <i>DesiredAccess</i> is FILE_READ_DATA. Infrequently, the FILE_WRITE_DATA, or FILE_ALL_ACCESS access rights are specified.</p>
 </dd>
 
-### -param <i>FileObject</i> [out]
+### -param FileObject [out]
 
 <dd>
 <p>Pointer to the file object that represents the corresponding device object to user-mode code if the call is successful.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [out]
+### -param DeviceObject [out]
 
 <dd>
 <p>Pointer to the device object that represents the named logical, virtual, or physical device if the call is successful.</p>

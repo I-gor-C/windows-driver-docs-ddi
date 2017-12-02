@@ -59,37 +59,37 @@ HBA_STATUS HBA_API HBA_SendReportLUNs(
 ## -parameters
 <dl>
 
-### -param <i>handle</i> [in]
+### -param handle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the target port is located.</p>
 </dd>
 
-### -param <i>portWWN</i> [in]
+### -param portWWN [in]
 
 <dd>
 <p>Contains a 64-bit worldwide name (WWN) that uniquely identifies the remote target port to which the SCSI report LUNs command is sent. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
-### -param <i>pRspBuffer</i> [out]
+### -param pRspBuffer [out]
 
 <dd>
 <p>Pointer to a buffer that receives the output data of the SCSI report LUNs command.</p>
 </dd>
 
-### -param <i>RspBufferSize</i> [in]
+### -param RspBufferSize [in]
 
 <dd>
 <p>Indicates the size, in bytes, of the buffer at <i>pRspBuffer</i>.</p>
 </dd>
 
-### -param <i>pSenseBuffer</i> [out]
+### -param pSenseBuffer [out]
 
 <dd>
 <p>Pointer to a buffer that receives the SCSI sense data.</p>
 </dd>
 
-### -param <i>SenseBufferSize</i> [in]
+### -param SenseBufferSize [in]
 
 <dd>
 <p>On input, indicates the size, in bytes, of the buffer at <i>pSenseBuffer</i>. On output, this member indicates the number of bytes of sense data returned. </p>

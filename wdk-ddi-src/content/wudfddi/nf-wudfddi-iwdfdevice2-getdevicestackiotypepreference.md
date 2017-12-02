@@ -7,7 +7,7 @@ old-location: wdf\iwdfdevice2_getdevicestackiotypepreference.htm
 old-project: wdf
 ms.assetid: 3a1f6432-3f61-4502-ac98-fa984539f88e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFDevice2, GetDeviceStackIoTypePreference, IWDFDevice2::GetDeviceStackIoTypePreference
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ void GetDeviceStackIoTypePreference(
 ## -parameters
 <dl>
 
-### -param <i>ReadWritePreference</i> [out]
+### -param ReadWritePreference [out]
 
 <dd>
 <p>A pointer to a driver-allocated location that receives a <a href="..\wudfddi_types\ne-wudfddi-types--wdf-device-io-type.md">WDF_DEVICE_IO_TYPE</a>-typed value. This value identifies the buffer access method that the framework is using for a device's read and write requests.</p>
 </dd>
 
-### -param <i>IoControlPreference</i> [out]
+### -param IoControlPreference [out]
 
 <dd>
 <p>A pointer to a driver-allocated location that receives a <a href="..\wudfddi_types\ne-wudfddi-types--wdf-device-io-type.md">WDF_DEVICE_IO_TYPE</a>-typed value. This value that identifies the buffer access method that the framework is using for a device's I/O control requests.</p>
@@ -141,4 +141,4 @@ void GetDeviceStackIoTypePreference(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice2::GetDeviceStackIoTypePreference method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice2::GetDeviceStackIoTypePreference method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

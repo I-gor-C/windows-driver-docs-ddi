@@ -59,37 +59,37 @@ typedef struct _PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES {
 ## -struct-fields
 <dl>
 
-### -field <b>TranslationStatus</b>
+### -field TranslationStatus
 
 <dd>
 <p>The result code from the resource translation call.</p>
 </dd>
 
-### -field <b>InputBuffer</b>
+### -field InputBuffer
 
 <dd>
 <p>A pointer to a <a href="..\pepfx\ns-pepfx--pep-acpi-resource.md">PEP_ACPI_RESOURCE</a> containing the input buffer.</p>
 </dd>
 
-### -field <b>InputBufferSize</b>
+### -field InputBufferSize
 
 <dd>
 <p>The size of the input buffer.</p>
 </dd>
 
-### -field <b>OutputBuffer</b>
+### -field OutputBuffer
 
 <dd>
 <p>A pointer to the output buffer containing the translated structure.</p>
 </dd>
 
-### -field <b>OutputBufferSize</b>
+### -field OutputBufferSize
 
 <dd>
 <p>The size of the output buffer.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The value contained in the <a href="..\pepfx\ns-pepfx--pep-acpi-resource-flags.md">PEP_ACPI_RESOURCE_FLAGS</a> structure.</p>

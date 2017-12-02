@@ -55,7 +55,7 @@ NTSTATUS WppRecorderLogDelete(
 ## -parameters
 <dl>
 
-### -param <i>RecorderLog</i> 
+### -param RecorderLog 
 
 <dd>
 <p>Handle to the recorder log to delete.</p>

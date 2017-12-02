@@ -57,7 +57,7 @@ typedef struct IDARG_IN_GETDIRTYRECTS {
 ## -struct-fields
 <dl>
 
-### -field <b>DirtyRectInCount</b>
+### -field DirtyRectInCount
 
 <dd>
 <p>
@@ -65,7 +65,7 @@ typedef struct IDARG_IN_GETDIRTYRECTS {
                  </p>
 </dd>
 
-### -field <b>pDirtyRects</b>
+### -field pDirtyRects
 
 <dd>
 <p>

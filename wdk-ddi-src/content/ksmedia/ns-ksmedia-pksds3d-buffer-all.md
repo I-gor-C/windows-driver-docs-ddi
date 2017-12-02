@@ -62,55 +62,55 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Position</b>
+### -field Position
 
 <dd>
 <p>Specifies the x, y, and z position coordinates of the 3D sound buffer. This member is a structure of type <a href="..\ksmedia\ns-ksmedia--ds3dvector.md">DS3DVECTOR</a>.</p>
 </dd>
 
-### -field <b>Velocity</b>
+### -field Velocity
 
 <dd>
 <p>Specifies the x, y, and z velocity components of the 3D sound buffer. This member is a structure of type DS3DVECTOR.</p>
 </dd>
 
-### -field <b>InsideConeAngle</b>
+### -field InsideConeAngle
 
 <dd>
 <p>Specifies the angle in degrees of the inside sound projection cone.</p>
 </dd>
 
-### -field <b>OutsideConeAngle</b>
+### -field OutsideConeAngle
 
 <dd>
 <p>Specifies the angle in degrees of the outside sound projection cone.</p>
 </dd>
 
-### -field <b>ConeOrientation</b>
+### -field ConeOrientation
 
 <dd>
 <p>Specifies the x, y, and z components of the orientation of the 3D buffer's sound projection cone. This member is a structure of type DS3DVECTOR.</p>
 </dd>
 
-### -field <b>ConeOutsideVolume</b>
+### -field ConeOutsideVolume
 
 <dd>
 <p>Specifies the cone outside volume.</p>
 </dd>
 
-### -field <b>MinDistance</b>
+### -field MinDistance
 
 <dd>
 <p>Specifies the minimum distance between the speaker and listener. (See the discussion of minimum and maximum distances for DirectSound 3D buffers in the Microsoft Windows SDK documentation.)</p>
 </dd>
 
-### -field <b>MaxDistance</b>
+### -field MaxDistance
 
 <dd>
 <p>Specifies the maximum distance between the speaker and listener.</p>
 </dd>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>Specifies the 3D sound-processing mode. This can be one of the following values from the header file Dsound.h:</p>

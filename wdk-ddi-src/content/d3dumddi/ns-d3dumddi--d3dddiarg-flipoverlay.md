@@ -57,25 +57,25 @@ typedef struct _D3DDDIARG_FLIPOVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>hOverlay</b>
+### -field hOverlay
 
 <dd>
 <p>[in] A handle to the overlay hardware to be flipped. </p>
 </dd>
 
-### -field <b>hSource</b>
+### -field hSource
 
 <dd>
 <p>[in] A handle to the new resource to be displayed. This resource might be the same as the resource that was previously displayed if deinterlacing interleaved data.</p>
 </dd>
 
-### -field <b>SourceIndex</b>
+### -field SourceIndex
 
 <dd>
 <p>[in] The zero-based index of the subresource to be displayed.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-flipoverlayflags.md">D3DDDI_FLIPOVERLAYFLAGS</a> structure that indicates, in bit-field flags, how to flip the resource.</p>

@@ -56,19 +56,19 @@ NTSTATUS RtlUpcaseUnicodeString(
 ## -parameters
 <dl>
 
-### -param <i>DestinationString</i> [in, out]
+### -param DestinationString [in, out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer for the converted Unicode string.</p>
 </dd>
 
-### -param <i>SourceString</i> [in]
+### -param SourceString [in]
 
 <dd>
 <p>Pointer to the source Unicode string to be converted to uppercase.</p>
 </dd>
 
-### -param <i>AllocateDestinationString</i> [in]
+### -param AllocateDestinationString [in]
 
 <dd>
 <p>Specifies if <b>RtlUpcaseUnicodeString</b> is to allocate the buffer space for the <i>DestinationString</i>. If it does, the buffer must be deallocated by calling <b>RtlFreeUnicodeString</b>.</p>

@@ -56,13 +56,13 @@ BOOLEAN PshedSynchronizeExecution(
 ## -parameters
 <dl>
 
-### -param <i>ErrorSource</i> [in]
+### -param ErrorSource [in]
 
 <dd>
 <p>A pointer to a <a href="..\ntddk\ns-ntddk--whea-error-source-descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure that describes an error source.</p>
 </dd>
 
-### -param <i>SynchronizeRoutine</i> [in]
+### -param SynchronizeRoutine [in]
 
 <dd>
 <p>A pointer to a caller-supplied function whose execution is synchronized with the hardware error processing for the error source described by the <i>ErrorSource</i> parameter. A <i>SynchronizeRoutine</i> function is declared as follows:</p>
@@ -82,7 +82,7 @@ SynchronizeRoutine(
 <p></p>
 <dl>
 
-### -param <a id="SynchronizeContext"></a><a id="synchronizecontext"></a><a id="SYNCHRONIZECONTEXT"></a><i>SynchronizeContext</i>
+### -param SynchronizeContext
 
 <dd>
 <p>The context value that is passed in the <i>SynchronizeContext</i> parameter to the <b>PshedSynchronizeExecution</b> function.</p>
@@ -90,7 +90,7 @@ SynchronizeRoutine(
 </dl>
 </dd>
 
-### -param <i>SynchronizeContext</i> [in]
+### -param SynchronizeContext [in]
 
 <dd>
 <p>A pointer to a caller-supplied context area that is passed to the function pointed to by the <i>SynchronizeRoutine</i> parameter.</p>
@@ -101,7 +101,7 @@ SynchronizeRoutine(
 <p><b>PshedSynchronizeExecution</b> returns the value that is returned by the function pointed to by the <i>SynchronizeRoutine</i> parameter.</p>
 
 ## -remarks
-<p>A PSHED plug-in calls the <b>PshedSynchronizeExecution</b> function to synchronize the execution of a given function with the hardware error processing for an error source. This is required whenever a PSHED plug-in shares resources between code that executes outside of the normal hardware error processing flow and code that executes as part of the normal hardware error processing flow. For more information about the processing of hardware errors, see <a href="NULL">Error Processing</a>.</p>
+<p>A PSHED plug-in calls the <b>PshedSynchronizeExecution</b> function to synchronize the execution of a given function with the hardware error processing for an error source. This is required whenever a PSHED plug-in shares resources between code that executes outside of the normal hardware error processing flow and code that executes as part of the normal hardware error processing flow. For more information about the processing of hardware errors, see <a href="https://msdn.microsoft.com/d9cb2f62-1ccf-4ab6-b547-dc54f6d07820">Error Processing</a>.</p>
 
 <p>When this function is called, the following occurs:</p>
 

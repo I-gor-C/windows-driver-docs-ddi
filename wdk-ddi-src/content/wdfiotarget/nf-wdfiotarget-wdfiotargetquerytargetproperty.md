@@ -7,7 +7,7 @@ old-location: wdf\wdfiotargetquerytargetproperty.htm
 old-project: wdf
 ms.assetid: 00987914-9fe2-4245-b463-ef362e31679d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfIoTargetQueryTargetProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ NTSTATUS WdfIoTargetQueryTargetProperty(
 ## -parameters
 <dl>
 
-### -param <i>IoTarget</i> [in]
+### -param IoTarget [in]
 
 <dd>
 <p>A handle to a local or remote I/O target object that was obtained from a previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a> or <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>, or from a method that a specialized I/O target supplies.</p>
 </dd>
 
-### -param <i>DeviceProperty</i> [in]
+### -param DeviceProperty [in]
 
 <dd>
 <p>A <a href="kernel.device_registry_property">DEVICE_REGISTRY_PROPERTY</a>-typed value that identifies the device property to be retrieved.</p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>The size, in bytes, of the buffer that <i>PropertyBuffer</i> points to.</p>
 </dd>
 
-### -param <i>PropertyBuffer</i> [out, optional]
+### -param PropertyBuffer [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives the requested device property information. This pointer can be <b>NULL</b> if <i>BufferLength</i> is zero.</p>
 </dd>
 
-### -param <i>ResultLength</i> [out]
+### -param ResultLength [out]
 
 <dd>
 <p>A pointer to a location that, on return, contains the size, in bytes, of the information that <b>WdfIoTargetQueryTargetProperty</b> stored in the buffer that <i>PropertyBuffer</i> points to. If <b>WdfIoTargetQueryTargetProperty</b> returns STATUS_BUFFER_TOO_SMALL, this location receives the required buffer size.</p>
@@ -197,4 +197,4 @@ NTSTATUS WdfIoTargetQueryTargetProperty(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoTargetQueryTargetProperty method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoTargetQueryTargetProperty method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

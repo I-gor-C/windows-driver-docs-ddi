@@ -60,7 +60,7 @@ typedef struct _IO_DISCONNECT_INTERRUPT_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the particular operation to be performed by <b>IoDisconnectInterruptEx</b>. The value for <b>Version</b> depends on the value specified for <i>Parameters-</i>&gt;<b>Version</b> when <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> registered the interrupt handing routine, as shown in the following table.</p>
@@ -97,7 +97,7 @@ typedef struct _IO_DISCONNECT_INTERRUPT_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>ConnectionContext</b>
+### -field ConnectionContext
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a> or <a href="..\wdm\ns-wdm--io-interrupt-message-info.md">IO_INTERRUPT_MESSAGE_INFO</a> structure that was provided by <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> when the interrupt was connected. The value for <b>ConnectionContext</b> depends on the value specified for <i>Parameters</i>-&gt;<b>Version</b> when <b>IoConnectInterruptEx</b> registered the interrupt handling routine, as shown in the following table.</p>
@@ -135,19 +135,19 @@ typedef struct _IO_DISCONNECT_INTERRUPT_PARAMETERS {
 <p>To minimize casting, <b>ConnectionContext</b> is defined as a union. Use <b>ConnectionContext.Generic</b> to specify the value as a PVOID. Use <b>ConnectionContext.InterruptObject</b> and <b>ConnectionContext.InterruptMessageTable</b> to specify the value as a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a> or <a href="..\wdm\ns-wdm--io-interrupt-message-info.md">IO_INTERRUPT_MESSAGE_INFO</a> structure.</p>
 <dl>
 
-### -field <b>Generic</b>
+### -field Generic
 
 <dd>
 <p>A pointer to a data structure of unspecified type.</p>
 </dd>
 
-### -field <b>InterruptObject</b>
+### -field InterruptObject
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a> structure.</p>
 </dd>
 
-### -field <b>InterruptMessageTable</b>
+### -field InterruptMessageTable
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--io-interrupt-message-info.md">IO_INTERRUPT_MESSAGE_INFO</a> structure.</p>

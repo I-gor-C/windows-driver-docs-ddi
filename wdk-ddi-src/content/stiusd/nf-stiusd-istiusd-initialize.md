@@ -7,7 +7,7 @@ old-location: image\istiusd_initialize.htm
 old-project: image
 ms.assetid: a2aa0ce6-f63b-4df4-b1c4-a23e80cdcd6c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiUSD, Initialize, IStiUSD::Initialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ HRESULT Initialize(
 ## -parameters
 <dl>
 
-### -param <i>pDcb</i> 
+### -param pDcb 
 
 <dd>
-<p>Caller-supplied pointer to the <a href="NULL">IStiDeviceControl COM Interface</a>.</p>
+<p>Caller-supplied pointer to the <a href="https://msdn.microsoft.com/6d98f5d7-c471-4abb-8e69-dbac3d336c2f">IStiDeviceControl COM Interface</a>.</p>
 </dd>
 
-### -param <i>dwStiVersion</i> 
+### -param dwStiVersion 
 
 <dd>
 <p>Caller-supplied STI version number. This value is defined by STI_VERSION in <i>Sti.h</i>.</p>
 </dd>
 
-### -param <i>hParametersKey</i> 
+### -param hParametersKey 
 
 <dd>
 <p>Caller-supplied handle to the registry key under which device-specific information is to be stored.</p>
@@ -82,7 +82,7 @@ HRESULT Initialize(
 ## -remarks
 <p>The <b>IStiUSD::Initialize</b> method, which is exported by still image minidrivers, is the first <b>IStiUSD</b> method called after a minidriver has been loaded. The method must initialize the driver and device.</p>
 
-<p>The method should store the received <a href="NULL">IStiDeviceControl COM Interface</a> pointer, and it should call that interface's <a href="image.istidevicecontrol_addref">IStiDeviceControl::AddRef</a> method.</p>
+<p>The method should store the received <a href="https://msdn.microsoft.com/6d98f5d7-c471-4abb-8e69-dbac3d336c2f">IStiDeviceControl COM Interface</a> pointer, and it should call that interface's <a href="image.istidevicecontrol_addref">IStiDeviceControl::AddRef</a> method.</p>
 
 <p>For devices connected to dedicated ports (such as SCSI devices), the method typically creates a read/write path to the device by calling <a href="fs.createfile">CreateFile</a> (described in the Microsoft Windows SDK documentation), using a device port name obtained by calling <a href="image.istidevicecontrol_getmydeviceportname">IStiDeviceControl::GetMyDevicePortName</a>.</p>
 

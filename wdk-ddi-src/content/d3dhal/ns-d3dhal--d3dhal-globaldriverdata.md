@@ -59,37 +59,37 @@ typedef struct _D3DHAL_GLOBALDRIVERDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size in bytes of this D3DHAL_GLOBALDRIVERDATA structure.</p>
 </dd>
 
-### -field <b>hwCaps</b>
+### -field hwCaps
 
 <dd>
 <p>Specifies a <a href="..\d3dhal\ns-d3dhal--d3ddevicedesc-v1.md">D3DDEVICEDESC_V1</a> structure where the driver should return its hardware capabilities.</p>
 </dd>
 
-### -field <b>dwNumVertices</b>
+### -field dwNumVertices
 
 <dd>
 <p>Reserved for system use and should be set to zero by the driver.</p>
 </dd>
 
-### -field <b>dwNumClipVertices</b>
+### -field dwNumClipVertices
 
 <dd>
 <p>Reserved for system use and should be set to zero by the driver.</p>
 </dd>
 
-### -field <b>dwNumTextureFormats</b>
+### -field dwNumTextureFormats
 
 <dd>
 <p>Specifies the number of <a href="display.ddsurfacedesc">DDSURFACEDESC</a> structures that <b>lpTextureFormats</b> points to.</p>
 </dd>
 
-### -field <b>lpTextureFormats</b>
+### -field lpTextureFormats
 
 <dd>
 <p>Points to an array of DDSURFACEDESC structures where the driver should return the texture formats supported by the device.</p>

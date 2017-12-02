@@ -7,7 +7,7 @@ old-location: netvista\wdi_power_save_level.htm
 old-project: netvista
 ms.assetid: 3CB311C1-8FAE-44D5-896D-972F5DF1E88A
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef enum _WDI_POWER_SAVE_LEVEL {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_POWER_SAVE_LEVEL_NO_POWER_SAVE"></a><a id="wdi_power_save_level_no_power_save"></a><b>WDI_POWER_SAVE_LEVEL_NO_POWER_SAVE</b>
+### -field WDI_POWER_SAVE_LEVEL_NO_POWER_SAVE
 
 <dd>
 <p>No power saving.</p>
 </dd>
 
-### -field <a id="WDI_POWER_SAVE_LEVEL_FAST_PSP"></a><a id="wdi_power_save_level_fast_psp"></a><b>WDI_POWER_SAVE_LEVEL_FAST_PSP</b>
+### -field WDI_POWER_SAVE_LEVEL_FAST_PSP
 
 <dd>
 <p>Fast PSP.</p>
 </dd>
 
-### -field <a id="WDI_POWER_SAVE_LEVEL_MAX_PSP"></a><a id="wdi_power_save_level_max_psp"></a><b>WDI_POWER_SAVE_LEVEL_MAX_PSP</b>
+### -field WDI_POWER_SAVE_LEVEL_MAX_PSP
 
 <dd>
 <p>Maximum PSP.</p>
 </dd>
 
-### -field <a id="WDI_POWER_SAVE_LEVEL_MAXIMUM_LEVEL"></a><a id="wdi_power_save_level_maximum_level"></a><b>WDI_POWER_SAVE_LEVEL_MAXIMUM_LEVEL</b>
+### -field WDI_POWER_SAVE_LEVEL_MAXIMUM_LEVEL
 
 <dd>
 <p>Maximum power saving level.</p>

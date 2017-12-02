@@ -57,7 +57,7 @@ NTSTATUS CreateCallback(
 ## -parameters
 <dl>
 
-### -param <i>Silo</i> [in]
+### -param Silo [in]
 
 <dd>
 <p>The silo that was created.</p>

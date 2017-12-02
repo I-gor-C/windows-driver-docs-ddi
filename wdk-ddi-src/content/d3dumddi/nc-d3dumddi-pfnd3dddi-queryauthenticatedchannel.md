@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY QueryAuthenticatedChannel(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p> A pointer to a <a href="display.d3dddiarg_queryauthenticatedchannel">D3DDDIARG_QUERYAUTHENTICATEDCHANNEL</a> structure that describes authenticated-channel information to query. This structure contains an input buffer that describes the query and an output buffer to return the queried information. </p>

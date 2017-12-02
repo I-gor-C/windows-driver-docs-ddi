@@ -55,7 +55,7 @@ HRESULT GetCapabilities(
 ## -parameters
 <dl>
 
-### -param <i>ppPrintCapabilities</i> [out, retval]
+### -param ppPrintCapabilities [out, retval]
 
 <dd>
 <p>The returned <a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a> object.</p>

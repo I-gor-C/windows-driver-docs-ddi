@@ -7,7 +7,7 @@ old-location: netvista\rilunsolicitedssinfoparammask.htm
 old-project: netvista
 ms.assetid: 41cf5add-4cad-41ed-ba9c-6bfba56a9f65
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,35 +61,35 @@ typedef enum _RILUNSOLICITEDSSINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_UNSSS_ID"></a><a id="ril_param_unsss_id"></a><b>RIL_PARAM_UNSSS_ID</b>
+### -field RIL_PARAM_UNSSS_ID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UNSSS_NOTIFICATIONCODE"></a><a id="ril_param_unsss_notificationcode"></a><b>RIL_PARAM_UNSSS_NOTIFICATIONCODE</b>
+### -field RIL_PARAM_UNSSS_NOTIFICATIONCODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UNSSS_ADDRESS"></a><a id="ril_param_unsss_address"></a><b>RIL_PARAM_UNSSS_ADDRESS</b>
+### -field RIL_PARAM_UNSSS_ADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UNSSS_SUBADDR"></a><a id="ril_param_unsss_subaddr"></a><b>RIL_PARAM_UNSSS_SUBADDR</b>
+### -field RIL_PARAM_UNSSS_SUBADDR
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UNSSS_CUGINDEX"></a><a id="ril_param_unsss_cugindex"></a><b>RIL_PARAM_UNSSS_CUGINDEX</b>
+### -field RIL_PARAM_UNSSS_CUGINDEX
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UNSSS_HISTLENGTH"></a><a id="ril_param_unsss_histlength"></a><b>RIL_PARAM_UNSSS_HISTLENGTH</b>
+### -field RIL_PARAM_UNSSS_HISTLENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UNSSS_HISTINFO"></a><a id="ril_param_unsss_histinfo"></a><b>RIL_PARAM_UNSSS_HISTINFO</b>
+### -field RIL_PARAM_UNSSS_HISTINFO
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UNSSS_ALL"></a><a id="ril_param_unsss_all"></a><b>RIL_PARAM_UNSSS_ALL</b>
+### -field RIL_PARAM_UNSSS_ALL
 
 <dd></dd>
 </dl>

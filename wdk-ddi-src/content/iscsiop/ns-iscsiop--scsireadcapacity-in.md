@@ -55,13 +55,13 @@ typedef struct _ScsiReadCapacity_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueSessionId</b>
+### -field UniqueSessionId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
 </dd>
 
-### -field <b>Lun</b>
+### -field Lun
 
 <dd>
 <p>A 64-bit number that, together with the name of the target, uniquely identifies the logical unit.</p>
@@ -97,7 +97,7 @@ typedef struct _ScsiReadCapacity_IN {
 <a href="storage.scsireadcapacity">ScsiReadCapacity</a>
 </dt>
 <dt>
-<a href="..\hbapiwmi\ns-hbapiwmi--scsireadcapacity-out.md">ScsiReadCapacity_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--scsireadcapacity-out.md">ScsiReadCapacity_OUT</a>
 </dt>
 </dl>
 <p> </p>

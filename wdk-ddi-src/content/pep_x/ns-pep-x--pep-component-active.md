@@ -58,31 +58,31 @@ typedef struct _PEP_COMPONENT_ACTIVE {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>Component</b>
+### -field Component
 
 <dd>
 <p>[in] The index that identifies the component. This member is an index into the <b>Components</b> array in the <a href="..\pepfx\ns-pepfx--pep-device-register-v2.md">PEP_DEVICE_REGISTER_V2</a> structure that the PEP previously supplied in response to the <b>PEP_DPM_REGISTER_DEVICE</b> notification for this device. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
 </dd>
 
-### -field <b>Active</b>
+### -field Active
 
 <dd>
 <p>[in] Whether the component is making a transition to the active condition. If TRUE, the component is making a transition from the idle condition to the active condition. If FALSE, the component is making a transition from the active condition to the idle condition.</p>
 </dd>
 
-### -field <b>WorkInformation</b>
+### -field WorkInformation
 
 <dd>
 <p>[out] A pointer to a <a href="..\pepfx\ns-pepfx--pep-work-information.md">PEP_WORK_INFORMATION</a> structure that describes the work that the PEP requests in response to this notification. If <b>NeedWork</b> is TRUE, <b>WorkInformation</b> must point to a valid <b>PEP_WORK_INFORMATION</b> structure. If <b>NeedWork</b> is FALSE, <b>WorkInformation</b> must be NULL.</p>
 </dd>
 
-### -field <b>NeedWork</b>
+### -field NeedWork
 
 <dd>
 <p>[out] Whether the PEP has a work request to submit in response to this notification. Set to TRUE if the PEP has work to request, or to FALSE if the PEP has no work to request.</p>

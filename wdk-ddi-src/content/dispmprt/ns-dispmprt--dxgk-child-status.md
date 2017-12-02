@@ -69,24 +69,24 @@ typedef struct _DXGK_CHILD_STATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A member of the <a href="..\dispmprt\ne-dispmprt--dxgk-child-status-type.md">DXGK_CHILD_STATUS_TYPE</a> enumeration that indicates the type of status being requested.</p>
 </dd>
 
-### -field <b>ChildUid</b>
+### -field ChildUid
 
 <dd>
 <p>An integer, created previously by the display miniport driver, that identifies the child device for which status is being requested.</p>
 </dd>
 
-### -field <b>HotPlug</b>
+### -field HotPlug
 
 <dd>
 <dl>
 
-### -field <b>Connected</b>
+### -field Connected
 
 <dd>
 <p>If <b>Type</b> is equal to <a href="..\dispmprt\ne-dispmprt--dxgk-child-status-type.md">DXGK_CHILD_STATUS_TYPE</a>.<b>StatusConnection</b>, indicates whether the child device has external hardware (for example, a monitor) connected to it. A value of <b>TRUE</b> indicates that hardware is connected; <b>FALSE</b> indicates that hardware is not connected.</p>
@@ -94,12 +94,12 @@ typedef struct _DXGK_CHILD_STATUS {
 </dl>
 </dd>
 
-### -field <b>Rotation</b>
+### -field Rotation
 
 <dd>
 <dl>
 
-### -field <b>Angle</b>
+### -field Angle
 
 <dd>
 <p>If <b>Type</b> is equal to <a href="..\dispmprt\ne-dispmprt--dxgk-child-status-type.md">DXGK_CHILD_STATUS_TYPE</a>.<b>StatusRotation</b>,  indicates the angle of rotation of the display connected to the child device.</p>
@@ -107,20 +107,20 @@ typedef struct _DXGK_CHILD_STATUS {
 </dl>
 </dd>
 
-### -field <b>Miracast</b>
+### -field Miracast
 
 <dd>
 <p>Supported by WDDM 1.3 and later display miniport drivers running on Windows 8.1 and later.</p>
 <dl>
 
-### -field <b>Connected</b>
+### -field Connected
 
 <dd>
 <p>If <b>Type</b> is equal to <a href="..\dispmprt\ne-dispmprt--dxgk-child-status-type.md">DXGK_CHILD_STATUS_TYPE</a>.<b>StatusMiracast</b>, indicates whether a Miracast connected session has started. A value of <b>TRUE</b> indicates that a new monitor has been connected to the Miracast sink, or that the Miracast session has started with a monitor connected. <b>FALSE</b> indicates that the monitor that was connected to the Miracast sink has been unplugged, or that the Miracast session has been stopped.</p>
 <p>For more info, see <a href="https://msdn.microsoft.com/1645E14A-EC4A-4EB8-9AFA-6DF0466D2B1A">Wireless displays (Miracast)</a>.</p>
 </dd>
 
-### -field <b>MiracastMonitorType</b>
+### -field MiracastMonitorType
 
 <dd>
 <p>If the <b>Connected</b> member of the <b>Miracast</b> embedded structure is <b>TRUE</b>, indicates the connector type of the connection between the Miracast sink and the monitor or TV. </p>

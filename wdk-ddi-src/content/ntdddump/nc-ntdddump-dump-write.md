@@ -59,19 +59,19 @@ NTSTATUS Dump_Write(
 ## -parameters
 <dl>
 
-### -param <i>FilterExtension</i> [in]
+### -param FilterExtension [in]
 
 <dd>
 <p>A pointer to a <a href="..\ntdddump\ns-ntdddump--filter-extension.md">FILTER_EXTENSION</a> structure.</p>
 </dd>
 
-### -param <i>DiskByteOffset</i> [in, out]
+### -param DiskByteOffset [in, out]
 
 <dd>
 <p>The value, in bytes, relative to the destination partition for the crash dump or hibernation. Filter drivers should not modify this field.</p>
 </dd>
 
-### -param <i>Mdl</i> [in, out]
+### -param Mdl [in, out]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--mdl.md">MDL</a> structure that describes the data buffer. If the <b>MDL</b> is modified, the size of the write operation cannot change.</p>

@@ -7,7 +7,7 @@ old-location: netvista\dot11_incoming_assoc_completion_parameters.htm
 old-project: netvista
 ms.assetid: 8f3cfe07-5026-40fb-b832-da5ae048843e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,7 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure. This
@@ -81,19 +81,19 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="Type"></a><a id="type"></a><a id="TYPE"></a>Type
+### -field Type
 
 <dd>
 <p>This member must be set to NDIS_OBJECT_TYPE_DEFAULT.</p>
 </dd>
 
-### -field <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a>Revision
+### -field Revision
 
 <dd>
 <p>This member must be set to DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS_REVISION_1.</p>
 </dd>
 
-### -field <a id="Size"></a><a id="size"></a><a id="SIZE"></a>Size
+### -field Size
 
 <dd>
 <p>This member must be set to 
@@ -104,21 +104,21 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>PeerMacAddr</b>
+### -field PeerMacAddr
 
 <dd>
 <p>The media access control (MAC) address of the peer station that sent an association
      request.</p>
 </dd>
 
-### -field <b>uStatus</b>
+### -field uStatus
 
 <dd>
 <p>The status of the association with the peer station. If zero, the association succeeds. If
      nonzero, the association fails.</p>
 </dd>
 
-### -field <b>ucErrorSource</b>
+### -field ucErrorSource
 
 <dd>
 <p>For nonzero values of 
@@ -129,7 +129,7 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="DOT11_ASSOC_ERROR_SOURCE_OS"></a><a id="dot11_assoc_error_source_os"></a>DOT11_ASSOC_ERROR_SOURCE_OS
+### -field DOT11_ASSOC_ERROR_SOURCE_OS
 
 <dd>
 <p>The miniport driver has rejected the association procedure because of system errors, such as
@@ -138,7 +138,7 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
        system.</p>
 </dd>
 
-### -field <a id="DOT11_ASSOC_ERROR_SOURCE_REMOTE"></a><a id="dot11_assoc_error_source_remote"></a>DOT11_ASSOC_ERROR_SOURCE_REMOTE
+### -field DOT11_ASSOC_ERROR_SOURCE_REMOTE
 
 <dd>
 <p>The AP or the peer station has rejected the association procedure. In this case, 
@@ -148,7 +148,7 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
        return new values in this IEEE specification when it is amended.</p>
 </dd>
 
-### -field <a id="DOT11_ASSOC_ERROR_SOURCE_OTHER"></a><a id="dot11_assoc_error_source_other"></a>DOT11_ASSOC_ERROR_SOURCE_OTHER
+### -field DOT11_ASSOC_ERROR_SOURCE_OTHER
 
 <dd>
 <p>The association failed for an IHV-specific reason. In this case, 
@@ -157,49 +157,49 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>bReAssocReq</b>
+### -field bReAssocReq
 
 <dd>
 <p>A Boolean value that indicates whether the request from the peer station is a re-association
      request.</p>
 </dd>
 
-### -field <b>bReAssocResp</b>
+### -field bReAssocResp
 
 <dd>
 <p>A Boolean value that indicates whether the response from the NIC is a re-association
      request.</p>
 </dd>
 
-### -field <b>uAssocReqOffset</b>
+### -field uAssocReqOffset
 
 <dd>
 <p>The offset of the request frame that is used in the association operation. The frame includes
      information elements (IEs) but does not include the 802.11 MAC header.</p>
 </dd>
 
-### -field <b>uAssocReqSize</b>
+### -field uAssocReqSize
 
 <dd>
 <p>The length, in bytes, of the request frame that is used in the association operation. The frame
      includes information elements (IEs) but does not include the 802.11 MAC header.</p>
 </dd>
 
-### -field <b>uAssocRespOffset</b>
+### -field uAssocRespOffset
 
 <dd>
 <p>The offset of the response frame that is used in the association operation. The frame includes
      information elements (IEs) but does not include the 802.11 MAC header.</p>
 </dd>
 
-### -field <b>uAssocRespSize</b>
+### -field uAssocRespSize
 
 <dd>
 <p>The length of the response frame, in bytes, that is used in the association operation. The frame
      includes information elements (IEs) but does not include the 802.11 MAC header.</p>
 </dd>
 
-### -field <b>AuthAlgo</b>
+### -field AuthAlgo
 
 <dd>
 <p>The authentication algorithm that the 802.11 station resolved with the peer station during the
@@ -211,7 +211,7 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>UnicastCipher</b>
+### -field UnicastCipher
 
 <dd>
 <p>The unicast cipher algorithm that the 802.11 station resolved with the peer station during the
@@ -223,7 +223,7 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>MulticastCipher</b>
+### -field MulticastCipher
 
 <dd>
 <p>The multicast cipher algorithm that the 802.11 station resolved with the AP or peer station during
@@ -235,7 +235,7 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>uActivePhyListOffset</b>
+### -field uActivePhyListOffset
 
 <dd>
 <p>The offset of the list of PHY identifiers (IDs) that the 802.11 station uses to send or receive
@@ -268,7 +268,7 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>uActivePhyListSize</b>
+### -field uActivePhyListSize
 
 <dd>
 <p>The length, in bytes, of the active PHY list. The 
@@ -280,7 +280,7 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>uBeaconOffset</b>
+### -field uBeaconOffset
 
 <dd>
 <p>The offset, in bytes, of the last transmitted 802.11 Beacon frame.
@@ -295,7 +295,7 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>uBeaconSize</b>
+### -field uBeaconSize
 
 <dd>
 <p>The length, in bytes, of the last transmitted 802.11 Beacon frame.
@@ -366,4 +366,4 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

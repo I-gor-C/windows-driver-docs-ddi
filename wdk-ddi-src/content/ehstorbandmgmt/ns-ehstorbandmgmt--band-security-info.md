@@ -65,43 +65,43 @@ typedef struct _BAND_LOCATION_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>StructSize</b>
+### -field StructSize
 
 <dd>
 <p>The size of the structure in bytes. Set to <b>sizeof</b>(BAND_SECURITY_INFO).</p>
 </dd>
 
-### -field <b>ReadLock</b>
+### -field ReadLock
 
 <dd>
 <p>Whether the band is accessible for reading and how a read lock is affected by a power reset.</p>
 </dd>
 
-### -field <b>WriteLock</b>
+### -field WriteLock
 
 <dd>
 <p>Whether the band is accessible for writing and how a write lock is affected by a power reset.</p>
 </dd>
 
-### -field <b>CryptoAlgoIdType</b>
+### -field CryptoAlgoIdType
 
 <dd>
 <p>The type of encryption algorithm identifier used. This must be set to <b>AlgoIdTypeOidString</b>.</p>
 </dd>
 
-### -field <b>CryptoAlgoOidString</b>
+### -field CryptoAlgoOidString
 
 <dd>
 <p>The encryption algorithm used to protect the data in the band.</p>
 <dl>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>The offset from the beginning of this structure where the encryption algorithm OID string begins.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The length of the OID string identifying the encryption algorithm. This is a byte-length value including a NULL terminator for the OID string.</p>
@@ -109,13 +109,13 @@ typedef struct _BAND_LOCATION_INFO {
 </dl>
 </dd>
 
-### -field <b>CryptoAlgoNumericId</b>
+### -field CryptoAlgoNumericId
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Metadata</b>
+### -field Metadata
 
 <dd>
 <p>A metadata field available for use by a key manager.</p>

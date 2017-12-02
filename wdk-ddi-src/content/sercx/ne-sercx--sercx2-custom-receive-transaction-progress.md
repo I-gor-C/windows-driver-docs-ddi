@@ -56,13 +56,13 @@ typedef enum _SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS {
 ## -enum-fields
 <dl>
 
-### -field <a id="SERCX2_CUSTOM_RECEIVE_NO_PROGRESS"></a><a id="sercx2_custom_receive_no_progress"></a><b>SERCX2_CUSTOM_RECEIVE_NO_PROGRESS</b>
+### -field SERCX2_CUSTOM_RECEIVE_NO_PROGRESS
 
 <dd>
 <p>No progress is being made. This value indicates that no data bytes have been transferred in the current custom-receive transaction since either the previous progress report or the start of the transaction, whichever is more recent.</p>
 </dd>
 
-### -field <a id="SERCX2_CUSTOM_RECEIVE_BYTES_TRANSFERRED"></a><a id="sercx2_custom_receive_bytes_transferred"></a><b>SERCX2_CUSTOM_RECEIVE_BYTES_TRANSFERRED</b>
+### -field SERCX2_CUSTOM_RECEIVE_BYTES_TRANSFERRED
 
 <dd>
 <p>Progress is being made. This value indicates that one or more bytes of data have been transferred in the current custom-receive transaction since either the previous progress report or the start of the transaction, whichever is more recent.</p>

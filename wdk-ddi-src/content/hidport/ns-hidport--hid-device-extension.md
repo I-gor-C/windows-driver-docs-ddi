@@ -56,19 +56,19 @@ typedef struct _HID_DEVICE_EXTENSION {
 ## -struct-fields
 <dl>
 
-### -field <b>PhysicalDeviceObject</b>
+### -field PhysicalDeviceObject
 
 <dd>
 <p>Pointer to HID device's physical device object.</p>
 </dd>
 
-### -field <b>NextDeviceObject</b>
+### -field NextDeviceObject
 
 <dd>
 <p>Pointer to the device object immediately below the functional device object in the HID device's device stack.</p>
 </dd>
 
-### -field <b>MiniDeviceExtension</b>
+### -field MiniDeviceExtension
 
 <dd>
 <p>Pointer to the minidriver-specific portion of the device extension.</p>

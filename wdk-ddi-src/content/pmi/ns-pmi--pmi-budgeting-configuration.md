@@ -54,7 +54,7 @@ typedef struct _PMI_BUDGETING_CONFIGURATION {
 ## -struct-fields
 <dl>
 
-### -field <b>ConfiguredBudget</b>
+### -field ConfiguredBudget
 
 <dd>
 <p>A value, in units of milliwatts (mW), that specifies the current power budget. A value of zero indicates that the power budget is not enabled on the power meter. </p>

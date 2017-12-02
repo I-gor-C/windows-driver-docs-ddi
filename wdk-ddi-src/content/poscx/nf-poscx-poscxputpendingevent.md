@@ -64,39 +64,39 @@ NTSTATUS PosCxPutPendingEvent(
 ## -parameters
 <dl>
 
-### -param <i>device</i> [in]
+### -param device [in]
 
 <dd>
 <p>A handle to a framework device object that represents the device.</p>
 </dd>
 
-### -param <i>deviceInterfaceTag</i> [in]
+### -param deviceInterfaceTag [in]
 
 <dd>
 <p>The device interface associated with the event.  By default, only
           file objects that have the same tag will receive this event.</p>
 </dd>
 
-### -param <i>eventType</i> [in]
+### -param eventType [in]
 
 <dd>
 <p>The new event type.</p>
 </dd>
 
-### -param <i>rawEventDataSize</i> [in]
+### -param rawEventDataSize [in]
 
 <dd>
 <p>The raw event (without point-of-service header) buffer size in bytes.</p>
 </dd>
 
-### -param <i>rawEventDataPtr</i> 
+### -param rawEventDataPtr 
 
 <dd>
 <p>The pointer to the raw (without point-of-service header) event data.
           The caller may reuse/release <i>rawEventDataPtr</i> after <b>PosCxPutPendingEvent</b> returns.</p>
 </dd>
 
-### -param <i>eventAttr</i> [in]
+### -param eventAttr [in]
 
 <dd>
 <p>The event attributes.</p>

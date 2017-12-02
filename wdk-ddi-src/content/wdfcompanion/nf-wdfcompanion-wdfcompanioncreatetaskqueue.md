@@ -7,7 +7,7 @@ old-location: wdf\wdfcompanioncreatetaskqueue.htm
 old-project: wdf
 ms.assetid: 05298ffe-75e5-444e-9843-54dd063f59f5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfCompanionCreateTaskQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ NTSTATUS WdfCompanionCreateTaskQueue(
 ## -parameters
 <dl>
 
-### -param <i>Companion</i> [in]
+### -param Companion [in]
 
 <dd></dd>
 
-### -param <i>Config</i> [in]
+### -param Config [in]
 
 <dd></dd>
 
-### -param <i>QueueAttributes</i> [in, optional]
+### -param QueueAttributes [in, optional]
 
 <dd></dd>
 
-### -param <i>Queue</i> [out, optional]
+### -param Queue [out, optional]
 
 <dd></dd>
 </dl>

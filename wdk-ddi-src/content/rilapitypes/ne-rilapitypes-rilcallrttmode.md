@@ -7,7 +7,7 @@ old-location: netvista\rilcallrttmode_2.htm
 old-project: netvista
 ms.assetid: 89eaa5c2-2178-4181-bf3b-b10d179bc0eb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILCALLRTTMODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_RTTMODE_FULL"></a><a id="ril_rttmode_full"></a><b>RIL_RTTMODE_FULL</b>
+### -field RIL_RTTMODE_FULL
 
 <dd></dd>
 
-### -field <a id="RIL_RTTMODE_MAX"></a><a id="ril_rttmode_max"></a><b>RIL_RTTMODE_MAX</b>
+### -field RIL_RTTMODE_MAX
 
 <dd></dd>
 </dl>

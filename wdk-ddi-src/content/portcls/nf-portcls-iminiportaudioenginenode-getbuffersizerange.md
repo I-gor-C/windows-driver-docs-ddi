@@ -56,19 +56,19 @@ NTSTATUS GetBufferSizeRange(
 ## -parameters
 <dl>
 
-### -param <i>ulNodeId</i> [in]
+### -param ulNodeId [in]
 
 <dd>
 <p>The ID for the node that represents the audio device.</p>
 </dd>
 
-### -param <i>pKsDataFormatWfx</i> [in]
+### -param pKsDataFormatWfx [in]
 
 <dd>
 <p>A <a href="audio.ksdataformat_waveformatex">KSDATAFORMAT_WAVEFORMATEX</a> structure that represents the audio data format for the audio device.</p>
 </dd>
 
-### -param <i>pBufferSizeRange</i> [out]
+### -param pBufferSizeRange [out]
 
 <dd>
 <p>A <a href="audio.ksaudio_buffer_limits">KSAUDIOENGINE_BUFFER_SIZE_RANGE</a> structure that represents the minimum and maximum buffer size that the hardware audio engine can support at the time when it is called.</p>

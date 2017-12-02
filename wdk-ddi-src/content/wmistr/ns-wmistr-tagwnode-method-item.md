@@ -61,43 +61,43 @@ typedef struct tagWNODE_METHOD_ITEM {
 ## -struct-fields
 <dl>
 
-### -field <b>WnodeHeader</b>
+### -field WnodeHeader
 
 <dd>
 <p>Is a <a href="..\wmistr\ns-wmistr--wnode-header.md">WNODE_HEADER</a> structure that contains information common to all <b>WNODE_<i>XXX</i></b> structures, such as the buffer size, the GUID that represents a data block associated with a request, and flags that provide information about the <b>WNODE_<i>XXX</i></b> data being passed or returned.</p>
 </dd>
 
-### -field <b>OffsetInstanceName</b>
+### -field OffsetInstanceName
 
 <dd>
 <p>Indicates the offset in bytes from the beginning of this structure to the dynamic instance name of this instance, aligned on a USHORT boundary. This member is valid only if WNODE_FLAG_STATIC_INSTANCE_NAMES is clear in <b>WnodeHeader.Flags</b>. If the data block was registered with static instance names, WMI ignores <b>OffsetInstanceName</b>.</p>
 </dd>
 
-### -field <b>InstanceIndex</b>
+### -field InstanceIndex
 
 <dd>
 <p>Indicates the index of this instance into the driver's list of static instance names for this data block. This member is valid only if the data block was registered with static instance names and WNODE_FLAG_STATIC_INSTANCE_NAMES is set in <b>WnodeHeader.Flags</b>. If the data block was registered with dynamic instance names, WMI ignores <b>InstanceIndex</b>.</p>
 </dd>
 
-### -field <b>MethodId</b>
+### -field MethodId
 
 <dd>
 <p>Specifies the ID of the method to run. </p>
 </dd>
 
-### -field <b>DataBlockOffset</b>
+### -field DataBlockOffset
 
 <dd>
 <p>Indicates the offset from the beginning of an input <b>WNODE_METHOD_ITEM</b> to input data for the method, or the offset from the beginning of an output <b>WNODE_METHOD_ITEM</b> to output data from the method.</p>
 </dd>
 
-### -field <b>SizeDataBlock</b>
+### -field SizeDataBlock
 
 <dd>
 <p>Indicates the size of the input data in an input <b>WNODE_METHOD_ITEM</b>, or zero if there is no input. In an output <b>WNODE_METHOD_ITEM</b>, <b>SizeDataBlock </b>indicates the size of the output data, or zero if there is no output. </p>
 </dd>
 
-### -field <b>VariableData</b>
+### -field VariableData
 
 <dd>
 <p>Contains additional data, including the dynamic instance name if any, and the input for or output from the method aligned on an 8-byte boundary. </p>

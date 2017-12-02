@@ -77,19 +77,19 @@ typedef enum _UFS_ATTRIBUTES_DESCRIPTOR {
 ## -enum-fields
 <dl>
 
-### -field <a id="UFS_bBootLunEn"></a><a id="ufs_bbootlunen"></a><a id="UFS_BBOOTLUNEN"></a><b>UFS_bBootLunEn</b>
+### -field UFS_bBootLunEn
 
 <dd>
 <p>Indicates if the Boot Logical Unit Number(LUN) is enabled.</p>
 </dd>
 
-### -field <a id="UFS_Reserved01"></a><a id="ufs_reserved01"></a><a id="UFS_RESERVED01"></a><b>UFS_Reserved01</b>
+### -field UFS_Reserved01
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <a id="UFS_bCurrentPowerMode"></a><a id="ufs_bcurrentpowermode"></a><a id="UFS_BCURRENTPOWERMODE"></a><b>UFS_bCurrentPowerMode</b>
+### -field UFS_bCurrentPowerMode
 
 <dd>
 <p>Indicates the current power mode. Contains one of the following values:</p>
@@ -134,7 +134,7 @@ typedef enum _UFS_ATTRIBUTES_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <a id="UFS_bActiveICCLevel"></a><a id="ufs_bactiveicclevel"></a><a id="UFS_BACTIVEICCLEVEL"></a><b>UFS_bActiveICCLevel</b>
+### -field UFS_bActiveICCLevel
 
 <dd>
 <p>Specifies the maximum
@@ -142,14 +142,14 @@ current consumption allowed during
 Active Mode. Value ranges from 0x00 to 0x0F.</p>
 </dd>
 
-### -field <a id="UFS_bOutOfOrderDataEn"></a><a id="ufs_boutoforderdataen"></a><a id="UFS_BOUTOFORDERDATAEN"></a><b>UFS_bOutOfOrderDataEn</b>
+### -field UFS_bOutOfOrderDataEn
 
 <dd>
 <p>Specifies if out-of-order data transfer is
 enabled</p>
 </dd>
 
-### -field <a id="UFS_bBackgroundOpStatus"></a><a id="ufs_bbackgroundopstatus"></a><a id="UFS_BBACKGROUNDOPSTATUS"></a><b>UFS_bBackgroundOpStatus</b>
+### -field UFS_bBackgroundOpStatus
 
 <dd>
 <p>Specifies if the device has a need for background operations. Contains one of the following values:</p>
@@ -178,13 +178,13 @@ enabled</p>
 <p> </p>
 </dd>
 
-### -field <a id="UFS_bPurgeStatus"></a><a id="ufs_bpurgestatus"></a><a id="UFS_BPURGESTATUS"></a><b>UFS_bPurgeStatus</b>
+### -field UFS_bPurgeStatus
 
 <dd>
 <p>Specifies the current purge operation's status.</p>
 </dd>
 
-### -field <a id="UFS_bMaxDataInSize"></a><a id="ufs_bmaxdatainsize"></a><a id="UFS_BMAXDATAINSIZE"></a><b>UFS_bMaxDataInSize</b>
+### -field UFS_bMaxDataInSize
 
 <dd>
 <p>Specifies the maximum data size in a DATA IN UFS Protocol Information Units (UPIU). This parameter can be written by the
@@ -192,7 +192,7 @@ host only when all logical unit task queues are
 empty.</p>
 </dd>
 
-### -field <a id="UFS_bMaxDataOutSize"></a><a id="ufs_bmaxdataoutsize"></a><a id="UFS_BMAXDATAOUTSIZE"></a><b>UFS_bMaxDataOutSize</b>
+### -field UFS_bMaxDataOutSize
 
 <dd>
 <p>Specifies the maximum data-out size. This parameter can be written by the
@@ -200,13 +200,13 @@ host only when all logical unit task queues are
 empty.</p>
 </dd>
 
-### -field <a id="UFS_dDynCapNeeded"></a><a id="ufs_ddyncapneeded"></a><a id="UFS_DDYNCAPNEEDED"></a><b>UFS_dDynCapNeeded</b>
+### -field UFS_dDynCapNeeded
 
 <dd>
 <p>Specifies the dynamic capacity need.</p>
 </dd>
 
-### -field <a id="UFS_bRefClkFreq"></a><a id="ufs_brefclkfreq"></a><a id="UFS_BREFCLKFREQ"></a><b>UFS_bRefClkFreq</b>
+### -field UFS_bRefClkFreq
 
 <dd>
 <p>Specifies the reference clock frequency value.</p>
@@ -235,20 +235,20 @@ empty.</p>
 <p> </p>
 </dd>
 
-### -field <a id="UFS_bConfigDescrLock"></a><a id="ufs_bconfigdescrlock"></a><a id="UFS_BCONFIGDESCRLOCK"></a><b>UFS_bConfigDescrLock</b>
+### -field UFS_bConfigDescrLock
 
 <dd>
 <p>Specifies if the configuration descriptor is locked.</p>
 </dd>
 
-### -field <a id="UFS_bMaxNumOfRTT"></a><a id="ufs_bmaxnumofrtt"></a><a id="UFS_BMAXNUMOFRTT"></a><b>UFS_bMaxNumOfRTT</b>
+### -field UFS_bMaxNumOfRTT
 
 <dd>
 <p>Defines the current maximum number of outstanding READY TO TRANSFER UPIU’s (RTT's) that are
 allowed. This value can be set by the host.</p>
 </dd>
 
-### -field <a id="UFS_wExceptionEventControl"></a><a id="ufs_wexceptioneventcontrol"></a><a id="UFS_WEXCEPTIONEVENTCONTROL"></a><b>UFS_wExceptionEventControl</b>
+### -field UFS_wExceptionEventControl
 
 <dd>
 <p>Specifies the Exception Event Controller. <b>UFS_wExceptionEventControl</b> enables the setting of the
@@ -257,7 +257,7 @@ Information field, which is contained in
 the RESPONSE UPIU.</p>
 </dd>
 
-### -field <a id="UFS_wExceptionEventStatus"></a><a id="ufs_wexceptioneventstatus"></a><a id="UFS_WEXCEPTIONEVENTSTATUS"></a><b>UFS_wExceptionEventStatus</b>
+### -field UFS_wExceptionEventStatus
 
 <dd>
 <p>Specifies a bitmap of each exception event status.A bit will be set only if the
@@ -289,37 +289,37 @@ relevant event has occurred
 <p> </p>
 </dd>
 
-### -field <a id="UFS_dSecondsPassed"></a><a id="ufs_dsecondspassed"></a><a id="UFS_DSECONDSPASSED"></a><b>UFS_dSecondsPassed</b>
+### -field UFS_dSecondsPassed
 
 <dd>
 <p>Specifies the time passed in seconds.</p>
 </dd>
 
-### -field <a id="UFS_wContextConf"></a><a id="ufs_wcontextconf"></a><a id="UFS_WCONTEXTCONF"></a><b>UFS_wContextConf</b>
+### -field UFS_wContextConf
 
 <dd>
 <p>Specifies the context attribute.</p>
 </dd>
 
-### -field <a id="UFS_Obsolete"></a><a id="ufs_obsolete"></a><a id="UFS_OBSOLETE"></a><b>UFS_Obsolete</b>
+### -field UFS_Obsolete
 
 <dd>
 <p>Obselete</p>
 </dd>
 
-### -field <a id="UFS_Reserved02"></a><a id="ufs_reserved02"></a><a id="UFS_RESERVED02"></a><b>UFS_Reserved02</b>
+### -field UFS_Reserved02
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <a id="UFS_Reserved03"></a><a id="ufs_reserved03"></a><a id="UFS_RESERVED03"></a><b>UFS_Reserved03</b>
+### -field UFS_Reserved03
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <a id="UFS_bDeviceFFUStatus"></a><a id="ufs_bdeviceffustatus"></a><a id="UFS_BDEVICEFFUSTATUS"></a><b>UFS_bDeviceFFUStatus</b>
+### -field UFS_bDeviceFFUStatus
 
 <dd>
 <p>Specifies the Device Field Firmware Update (FFU) status.</p>
@@ -360,7 +360,7 @@ relevant event has occurred
 <p> </p>
 </dd>
 
-### -field <a id="UFS_bPSAState"></a><a id="ufs_bpsastate"></a><a id="UFS_BPSASTATE"></a><b>UFS_bPSAState</b>
+### -field UFS_bPSAState
 
 <dd>
 <p>Specifies the current Product State Awareness (PSA) State.</p>
@@ -402,7 +402,7 @@ is locked after it is in
 <p> </p>
 </dd>
 
-### -field <a id="UFS_dPSADataSize"></a><a id="ufs_dpsadatasize"></a><a id="UFS_DPSADATASIZE"></a><b>UFS_dPSADataSize</b>
+### -field UFS_dPSADataSize
 
 <dd>
 <p>Specifies the amount of data that the host plans

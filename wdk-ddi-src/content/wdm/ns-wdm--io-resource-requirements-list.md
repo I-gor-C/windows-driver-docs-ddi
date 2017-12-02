@@ -61,44 +61,44 @@ typedef struct _IO_RESOURCE_REQUIREMENTS_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>ListSize</b>
+### -field ListSize
 
 <dd>
 <p>The total number of bytes that constitute the <b>IO_RESOURCE_REQUIREMENTS_LIST</b> structure, its <a href="..\wdm\ns-wdm--io-resource-list.md">IO_RESOURCE_LIST</a> array, and the latter's <a href="..\wdm\ns-wdm--io-resource-descriptor.md">IO_RESOURCE_DESCRIPTOR</a> array.</p>
 </dd>
 
-### -field <b>InterfaceType</b>
+### -field InterfaceType
 
 <dd>
 <p>Specifies an interface type. This must be one of the types defined by <a href="..\wdm\ne-wdm--interface-type.md">INTERFACE_TYPE</a>, in Wdm.h or Ntddk.h. (Not used by WDM drivers.)</p>
 </dd>
 
-### -field <b>BusNumber</b>
+### -field BusNumber
 
 <dd>
 <p>A system-assigned, zero-based bus number. (Not used by WDM drivers.)</p>
 </dd>
 
-### -field <b>SlotNumber</b>
+### -field SlotNumber
 
 <dd>
 <p>A system slot number. (Not used by WDM drivers.)</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Not used.
                     </p>
 </dd>
 
-### -field <b>AlternativeLists</b>
+### -field AlternativeLists
 
 <dd>
 <p>The number of alternative lists (or configurations) of hardware resources that are described by this <b>IO_RESOURCE_REQUIREMENTS_LIST</b> structure. The <b>List</b> member is the header for the first alternative list.</p>
 </dd>
 
-### -field <b>List</b>
+### -field List
 
 <dd>
 <p>The <a href="..\wdm\ns-wdm--io-resource-list.md">IO_RESOURCE_LIST</a> structure that serves as the header for the first alternative list of hardware resources. If the <b>IO_RESOURCE_REQUIREMENTS_LIST</b> structure describes more than one alternative list, the second alternative list immediately follows the first alternative list in memory, and so on. The size of each alternative list depends on the length of the <a href="..\wdm\ns-wdm--io-resource-descriptor.md">IO_RESOURCE_DESCRIPTOR</a> array that it contains. For more information, see the following Remarks section.</p>

@@ -7,7 +7,7 @@ old-location: netvista\wwan_cellular_class.htm
 old-project: netvista
 ms.assetid: c49f40b8-feb4-4dfd-9a2b-c800f3b5343a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ typedef enum _WWAN_CELLULAR_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanCellularClassUnknown"></a><a id="wwancellularclassunknown"></a><a id="WWANCELLULARCLASSUNKNOWN"></a><b>WwanCellularClassUnknown</b>
+### -field WwanCellularClassUnknown
 
 <dd>
 <p>The device uses an unknown cellular technology.</p>
 </dd>
 
-### -field <a id="WwanCellularClassGsm"></a><a id="wwancellularclassgsm"></a><a id="WWANCELLULARCLASSGSM"></a><b>WwanCellularClassGsm</b>
+### -field WwanCellularClassGsm
 
 <dd>
 <p>The device uses GSM-based technology.</p>
 </dd>
 
-### -field <a id="WwanCellularClassCdma"></a><a id="wwancellularclasscdma"></a><a id="WWANCELLULARCLASSCDMA"></a><b>WwanCellularClassCdma</b>
+### -field WwanCellularClassCdma
 
 <dd>
 <p>The device uses CDMA-based technology.</p>
 </dd>
 
-### -field <a id="WwanCellularClassMax"></a><a id="wwancellularclassmax"></a><a id="WWANCELLULARCLASSMAX"></a><b>WwanCellularClassMax</b>
+### -field WwanCellularClassMax
 
 <dd>
 <p>The total number of supported cellular classes.</p>
@@ -117,4 +117,4 @@ typedef enum _WWAN_CELLULAR_CLASS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CELLULAR_CLASS enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CELLULAR_CLASS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

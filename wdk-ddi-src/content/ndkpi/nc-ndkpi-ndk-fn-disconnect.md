@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_disconnect.htm
 old-project: netvista
 ms.assetid: 40622358-F4CA-4DF2-BDA4-E93C4DDB1AF6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ NTSTATUS NdkDisconnect(
 ## -parameters
 <dl>
 
-### -param <i>pNdkConnector</i> [in]
+### -param pNdkConnector [in]
 
 <dd>
 <p>A pointer to a connector object (<a href="..\ndkpi\ns-ndkpi--ndk-connector.md">NDK_CONNECTOR</a>).</p>
 </dd>
 
-### -param <i>RequestCompletion</i> [in]
+### -param RequestCompletion [in]
 
 <dd>
 <p>A pointer to a request completion callback routine <i>NdkRequestCompletion</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-request-completion.md">NDK_FN_REQUEST_COMPLETION</a>).</p>
 </dd>
 
-### -param <i>RequestContext</i> [in, optional]
+### -param RequestContext [in, optional]
 
 <dd>
 <p>A context value to pass to the <i>Context</i> parameter of the  callback function that is specified in the <i>RequestCompletion</i> parameter.</p>
@@ -153,9 +153,9 @@ NTSTATUS NdkDisconnect(
 <a href="..\ndkpi\nc-ndkpi-ndk-fn-request-completion.md">NDK_FN_REQUEST_COMPLETION</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Object Lifetime Requirements</a>
+<a href="netvista.ndkpi_object_lifetime_requirements">NDKPI Object Lifetime Requirements</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_DISCONNECT callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_DISCONNECT callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

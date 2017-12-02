@@ -54,7 +54,7 @@ PDEVICE_OBJECT KsPinGetConnectedPinDeviceObject(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure that is the source pin for which to obtain the connected sink pin's device object.</p>

@@ -58,23 +58,23 @@ typedef struct tag_video_stream_init_parms {
 ## -struct-fields
 <dl>
 
-### -field <b>dwMicroSecPerFrame</b>
+### -field dwMicroSecPerFrame
 
 <dd></dd>
 
-### -field <b>dwCallback</b>
+### -field dwCallback
 
 <dd></dd>
 
-### -field <b>dwCallbackInst</b>
+### -field dwCallbackInst
 
 <dd></dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd></dd>
 
-### -field <b>hVideo</b>
+### -field hVideo
 
 <dd></dd>
 </dl>

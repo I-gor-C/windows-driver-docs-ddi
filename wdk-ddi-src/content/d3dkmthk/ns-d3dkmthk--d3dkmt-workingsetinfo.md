@@ -56,19 +56,19 @@ typedef struct _D3DKMT_WORKINGSETINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-workingsetflags.md">D3DKMT_WORKINGSETFLAGS</a> structure that indicates, in bit-field flags, working-set properties.</p>
 </dd>
 
-### -field <b>MinimumWorkingSetPercentile</b>
+### -field MinimumWorkingSetPercentile
 
 <dd>
 <p>[out] The minimum working-set percentile. </p>
 </dd>
 
-### -field <b>MaximumWorkingSetPercentile</b>
+### -field MaximumWorkingSetPercentile
 
 <dd>
 <p>[out] The maximum working-set percentile. </p>

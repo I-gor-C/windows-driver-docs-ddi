@@ -7,7 +7,7 @@ old-location: netvista\ndis_processor_info_ex.htm
 old-project: netvista
 ms.assetid: e4f28f30-32bc-4bbc-8e95-f87dfe80229d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PROCESSOR_INFO_EX, NDIS_PROCESSOR_INFO_EX, *PNDIS_PROCESSOR_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,13 +60,13 @@ typedef struct _NDIS_PROCESSOR_INFO_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>ProcNum</b>
+### -field ProcNum
 
 <dd>
 <p>The processor number that is assigned to the processor.</p>
 </dd>
 
-### -field <b>SocketId</b>
+### -field SocketId
 
 <dd>
 <p>The socket identifier for the processor. This is the number that is assigned to the motherboard
@@ -74,14 +74,14 @@ typedef struct _NDIS_PROCESSOR_INFO_EX {
      this member are zero to the number of sockets on the motherboard minus one.</p>
 </dd>
 
-### -field <b>CoreId</b>
+### -field CoreId
 
 <dd>
 <p>The core ID of the processor. The value is in the range from zero through the number in the 
      <b>NumCoresPerSocket</b> member of the NDIS_SYSTEM_PROCESSOR_INFO_EX structure minus one.</p>
 </dd>
 
-### -field <b>HyperThreadId</b>
+### -field HyperThreadId
 
 <dd>
 <p>The hyper-threading ID of the processor. The value is in the range from zero through the number in
@@ -90,7 +90,7 @@ typedef struct _NDIS_PROCESSOR_INFO_EX {
      one.</p>
 </dd>
 
-### -field <b>NodeId</b>
+### -field NodeId
 
 <dd>
 <p>The node identifier of the processor. This is the number of the NUMA node to which the processor
@@ -98,7 +98,7 @@ typedef struct _NDIS_PROCESSOR_INFO_EX {
      one.</p>
 </dd>
 
-### -field <b>NodeDistance</b>
+### -field NodeDistance
 
 <dd>
 <p>The node distance of the processor. If the handle at the 
@@ -152,4 +152,4 @@ typedef struct _NDIS_PROCESSOR_INFO_EX {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROCESSOR_INFO_EX structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROCESSOR_INFO_EX structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

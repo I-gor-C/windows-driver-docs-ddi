@@ -54,7 +54,7 @@ NTSTATUS SetLfxState(
 ## -parameters
 <dl>
 
-### -param <i>bEnable</i> [in]
+### -param bEnable [in]
 
 <dd>
 <p>The state to which the LFX node will be set.</p>

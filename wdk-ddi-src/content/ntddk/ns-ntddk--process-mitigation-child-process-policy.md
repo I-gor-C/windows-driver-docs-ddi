@@ -61,35 +61,35 @@ typedef struct _PROCESS_MITIGATION_CHILD_PROCESS_POLICY {
 ## -struct-fields
 <dl>
 
-### -field <b>DUMMYUNIONNAME</b>
+### -field DUMMYUNIONNAME
 
 <dd>
 <dl>
 
-### -field <b>DUMMYSTRUCTNAME</b>
+### -field DUMMYSTRUCTNAME
 
 <dd>
 <dl>
 
-### -field <b>NoChildProcessCreation</b>
+### -field NoChildProcessCreation
 
 <dd>
 <p>If set, the process cannot create child processes.</p>
 </dd>
 
-### -field <b>AuditNoChildProcessCreation</b>
+### -field AuditNoChildProcessCreation
 
 <dd>
 <p>If set, causes audit events to be generated when child processes are created by the process. If both <b>NoChildProcessCreation</b> and <b>AuditNoChildProcessCreation</b> are set, <b>NoChildProcessCreation</b> takes precedence over audit setting.</p>
 </dd>
 
-### -field <b>AllowSecureProcessCreation</b>
+### -field AllowSecureProcessCreation
 
 <dd>
 <p>Denies creation of child processes unless the child process is a secure process and if creation was previously blocked. It allows a process to spawn a child process on behalf of another process that cannot itself create child processes. See PROCESS_CREATION_CHILD_PROCESS_OVERRIDE in <a href="base.updateprocthreadattribute">UpdateProcThreadAttribute</a>.</p>
 </dd>
 
-### -field <b>ReservedFlags</b>
+### -field ReservedFlags
 
 <dd>
 <p>Reserved.</p>

@@ -57,19 +57,19 @@ NTSTATUS ClfsAllocReservedLog(
 ## -parameters
 <dl>
 
-### -param <i>pvMarshalContext</i> [in]
+### -param pvMarshalContext [in]
 
 <dd>
 <p>A pointer to an opaque context that represents a marshalling area. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.</p>
 </dd>
 
-### -param <i>cRecords</i> [in]
+### -param cRecords [in]
 
 <dd>
 <p>The number of records in the set. This value must match the value of <i>cRecords</i> previously passed to <a href="..\wdm\nf-wdm-clfsalignreservedlog.md">ClfsAlignReservedLog</a>.</p>
 </dd>
 
-### -param <i>pcbAdjustment</i> [in]
+### -param pcbAdjustment [in]
 
 <dd>
 <p>A pointer to a LONGLONG-typed variable that supplies the size, in bytes, of the reservation that will hold all the records in the set. The caller previously obtained this size by calling <a href="..\wdm\nf-wdm-clfsalignreservedlog.md">ClfsAlignReservedLog</a>.</p>

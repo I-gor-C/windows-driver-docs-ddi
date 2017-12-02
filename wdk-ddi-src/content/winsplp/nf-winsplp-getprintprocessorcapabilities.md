@@ -59,25 +59,25 @@ DWORD GetPrintProcessorCapabilities(
 ## -parameters
 <dl>
 
-### -param <i>pValueName</i> [in]
+### -param pValueName [in]
 
 <dd>
 <p>Caller-supplied pointer to a string that represents a data type that is supported by the print processor. The string pointer must be of type LPWSTR.</p>
 </dd>
 
-### -param <i>dwAttributes</i> [in]
+### -param dwAttributes [in]
 
 <dd>
 <p>Caller-supplied attributes flags. Refer to the <b>Attributes</b> member of PRINTER_INFO_<i>x</i> structures (described in the Microsoft Windows SDK documentation).</p>
 </dd>
 
-### -param <i>pData</i> [out]
+### -param pData [out]
 
 <dd>
 <p>Caller-supplied pointer to a PRINTPROCESSOR_CAPS_1 or PRINTPROCESSOR_CAPS_2 structure (described in the Windows SDK documentation).</p>
 </dd>
 
-### -param <i>nSize</i> [in]
+### -param nSize [in]
 
 <dd>
 <p>Caller-supplied value that represents the size of the buffer pointed to by <i>pData</i>.</p>
@@ -86,7 +86,7 @@ DWORD GetPrintProcessorCapabilities(
 <div> </div>
 </dd>
 
-### -param <i>pcbNeeded</i> [out]
+### -param pcbNeeded [out]
 
 <dd>
 <p>Caller-supplied pointer to a location to receive the minimum required size for the buffer pointed to by <i>pData</i>.</p>

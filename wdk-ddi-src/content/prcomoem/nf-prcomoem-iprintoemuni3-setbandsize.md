@@ -60,13 +60,13 @@ HRESULT SetBandSize(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> [in]
+### -param pdevobj [in]
 
 <dd>
 <p>A caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>iFormat</i> [in]
+### -param iFormat [in]
 
 <dd>
 <p>An integer value that specifies the format of the bitmap in terms of the number of bits of color information per pixel that are required. This parameter can be one of the following values.</p>
@@ -78,7 +78,7 @@ HRESULT SetBandSize(
 <tr>
 <td width="40%"><a id="BMF_1BPP"></a><a id="bmf_1bpp"></a><dl>
 
-### -param <b>BMF_1BPP</b>
+### -param BMF_1BPP
 
 </dl>
 </td>
@@ -89,7 +89,7 @@ HRESULT SetBandSize(
 <tr>
 <td width="40%"><a id="BMF_4BPP"></a><a id="bmf_4bpp"></a><dl>
 
-### -param <b>BMF_4BPP</b>
+### -param BMF_4BPP
 
 </dl>
 </td>
@@ -100,7 +100,7 @@ HRESULT SetBandSize(
 <tr>
 <td width="40%"><a id="BMF_8BPP"></a><a id="bmf_8bpp"></a><dl>
 
-### -param <b>BMF_8BPP</b>
+### -param BMF_8BPP
 
 </dl>
 </td>
@@ -111,7 +111,7 @@ HRESULT SetBandSize(
 <tr>
 <td width="40%"><a id="BMF_16BPP"></a><a id="bmf_16bpp"></a><dl>
 
-### -param <b>BMF_16BPP</b>
+### -param BMF_16BPP
 
 </dl>
 </td>
@@ -122,7 +122,7 @@ HRESULT SetBandSize(
 <tr>
 <td width="40%"><a id="BMF_24BPP"></a><a id="bmf_24bpp"></a><dl>
 
-### -param <b>BMF_24BPP</b>
+### -param BMF_24BPP
 
 </dl>
 </td>
@@ -133,7 +133,7 @@ HRESULT SetBandSize(
 <tr>
 <td width="40%"><a id="BMF_32BPP"></a><a id="bmf_32bpp"></a><dl>
 
-### -param <b>BMF_32BPP</b>
+### -param BMF_32BPP
 
 </dl>
 </td>
@@ -144,7 +144,7 @@ HRESULT SetBandSize(
 <tr>
 <td width="40%"><a id="BMF_4RLE"></a><a id="bmf_4rle"></a><dl>
 
-### -param <b>BMF_4RLE</b>
+### -param BMF_4RLE
 
 </dl>
 </td>
@@ -155,7 +155,7 @@ HRESULT SetBandSize(
 <tr>
 <td width="40%"><a id="BMF_8RLE"></a><a id="bmf_8rle"></a><dl>
 
-### -param <b>BMF_8RLE</b>
+### -param BMF_8RLE
 
 </dl>
 </td>
@@ -167,25 +167,25 @@ HRESULT SetBandSize(
 <p> </p>
 </dd>
 
-### -param <i>dwPageWidthBytes</i> [in]
+### -param dwPageWidthBytes [in]
 
 <dd>
 <p>A Unidrv-supplied value that specifies the width of the printing area, in bytes.</p>
 </dd>
 
-### -param <i>dwPageHeight</i> [in]
+### -param dwPageHeight [in]
 
 <dd>
 <p>A Unidrv-supplied value that specifies the height of the printing area, in pixels.</p>
 </dd>
 
-### -param <i>dwMaxHeight</i> [in]
+### -param dwMaxHeight [in]
 
 <dd>
 <p>A Unidrv-supplied value that specifies the maximum allowable height of the printing area, in pixels.</p>
 </dd>
 
-### -param <i>pdwRequiredHeight</i> [in]
+### -param pdwRequiredHeight [in]
 
 <dd>
 <p>A caller-supplied pointer to a DWORD that contains the height of the printing area, in pixels, required by the rendering plug-in.</p>
@@ -210,7 +210,7 @@ HRESULT SetBandSize(
 
 <p>You can disable banding operations by Unidrv by setting the <i>dwPageHeight</i> value to *<i>pdwRequiredHeight</i>, but you should consider the performance effect of the height value that the rendering plug-in requests. For rendering, Unidrv needs at least the amount of memory that is calculated by multiplying <i>dwPageWidthBytes</i> by *<i>pdwRequiredHeight</i>. If the rendering plug-in supports the <a href="print.iprintoemuni_driverdms">IPrintOemUni::DriverDMS</a> method and that method returns "S_OK", <code>IPrintOemUni3::SetBandSize</code> is not called.</p>
 
-<p>If this method is defined and the printer's generic printer description (GPD) file indicates that preanalysis is disabled (the GPD file includes "*<b>PreAnalysisOptions</b>: 0"), Unidrv calls this method to calculate band size. For information about the <b>PreAnalysisOptions</b> attribute, see <a href="NULL">Preanalysis Infrastructure</a>.</p>
+<p>If this method is defined and the printer's generic printer description (GPD) file indicates that preanalysis is disabled (the GPD file includes "*<b>PreAnalysisOptions</b>: 0"), Unidrv calls this method to calculate band size. For information about the <b>PreAnalysisOptions</b> attribute, see <a href="https://msdn.microsoft.com/4c07145a-9a08-4507-8bab-769617e73d77">Preanalysis Infrastructure</a>.</p>
 
 <p>If the rendering plug-in supports <a href="print.iprintoemuni_driverdms">IPrintOemUni::DriverDMS</a> and that method returns S_OK, <code>IPrintOemUni3::SetBandSize</code> is not called.</p>
 

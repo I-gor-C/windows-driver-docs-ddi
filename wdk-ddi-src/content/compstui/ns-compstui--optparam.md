@@ -60,20 +60,20 @@ typedef struct _OPTPARAM {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Size, in bytes, of the OPTPARAM structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Optional bit flags that modify the parameter's characteristics. The following flags can be set in any combination:</p>
 <p></p>
 <dl>
 
-### -field <a id="OPTPF_DISABLED"></a><a id="optpf_disabled"></a>OPTPF_DISABLED
+### -field OPTPF_DISABLED
 
 <dd>
 <p>If set, the parameter is not user-selectable. Can be used with the following option types:</p>
@@ -94,7 +94,7 @@ typedef struct _OPTPARAM {
 <p></p>
 <dl>
 
-### -field <a id="OPTPF_HIDE"></a><a id="optpf_hide"></a>OPTPF_HIDE
+### -field OPTPF_HIDE
 
 <dd>
 <p>If set, the parameter not displayed in the treeview. Can be used with the following option types:</p>
@@ -112,7 +112,7 @@ typedef struct _OPTPARAM {
 <p></p>
 <dl>
 
-### -field <a id="OPTPF_ICONID_AS_HICON"></a><a id="optpf_iconid_as_hicon"></a>OPTPF_ICONID_AS_HICON
+### -field OPTPF_ICONID_AS_HICON
 
 <dd>
 <p>If set, the <b>IconID</b> member contains an icon handle.</p>
@@ -122,7 +122,7 @@ typedef struct _OPTPARAM {
 <p></p>
 <dl>
 
-### -field <a id="OPTPF_OVERLAY_NO_ICON"></a><a id="optpf_overlay_no_icon"></a>OPTPF_OVERLAY_NO_ICON
+### -field OPTPF_OVERLAY_NO_ICON
 
 <dd>
 <p>If set, CPSUI overlays its IDI_CPSUI_NO icon onto the icon identified by the <b>IconID</b> member.</p>
@@ -131,7 +131,7 @@ typedef struct _OPTPARAM {
 <p></p>
 <dl>
 
-### -field <a id="OPTPF_OVERLAY_STOP_ICON"></a><a id="optpf_overlay_stop_icon"></a>OPTPF_OVERLAY_STOP_ICON
+### -field OPTPF_OVERLAY_STOP_ICON
 
 <dd>
 <p>If set, CPSUI overlays the IDI_CPSUI_STOP icon onto the icon identified by the <b>IconID</b> member.</p>
@@ -140,7 +140,7 @@ typedef struct _OPTPARAM {
 <p></p>
 <dl>
 
-### -field <a id="OPTPF_OVERLAY_WARNING_ICON"></a><a id="optpf_overlay_warning_icon"></a>OPTPF_OVERLAY_WARNING_ICON
+### -field OPTPF_OVERLAY_WARNING_ICON
 
 <dd>
 <p>If set, CPSUI overlays its IDI_CPSUI_WARNING icon onto the icon identified by the <b>IconID</b> member.</p>
@@ -149,7 +149,7 @@ typedef struct _OPTPARAM {
 <p></p>
 <dl>
 
-### -field <a id="OPTPF_USE_HDLGTEMPLATE"></a><a id="optpf_use_hdlgtemplate"></a>OPTPF_USE_HDLGTEMPLATE
+### -field OPTPF_USE_HDLGTEMPLATE
 
 <dd>
 <p>If set, <b>lParam</b> contains a template handle.</p>
@@ -159,31 +159,31 @@ typedef struct _OPTPARAM {
 </dl>
 </dd>
 
-### -field <b>Style</b>
+### -field Style
 
 <dd>
 <p>Push button style, used only for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562844">TVOT_PUSHBUTTON</a> option type.</p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>Pointer to the parameter's value. Use of this member is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.</p>
 </dd>
 
-### -field <b>IconID</b>
+### -field IconID
 
 <dd>
 <p>Usually identifies the icon to be associated with the option parameter, but is sometimes used for other purposes. Use of this member is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.</p>
 </dd>
 
-### -field <b>lParam</b>
+### -field lParam
 
 <dd>
 <p>Use of this member is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Reserved, must be initialized to zero.</p>

@@ -56,13 +56,13 @@ VOID ExFreeToPagedLookasideList(
 ## -parameters
 <dl>
 
-### -param <i>Lookaside</i> [in, out]
+### -param Lookaside [in, out]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558775">PAGED_LOOKASIDE_LIST</a> structure for the lookaside list, which the caller already initialized with <a href="..\wdm\nf-wdm-exinitializepagedlookasidelist.md">ExInitializePagedLookasideList</a>, which the caller already initialized with <b>ExInitializePagedLookasideList</b>.</p>
 </dd>
 
-### -param <i>Entry</i> [in]
+### -param Entry [in]
 
 <dd>
 <p>A pointer to the entry to be freed. The caller obtained this pointer from a preceding call to <a href="..\wdm\nf-wdm-exallocatefrompagedlookasidelist.md">ExAllocateFromPagedLookasideList</a>. </p>

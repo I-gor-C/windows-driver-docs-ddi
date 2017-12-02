@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTGetRuntimeData(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>Reserved for system use.</p>

@@ -55,7 +55,7 @@ NTSTATUS WppRecorderConfigure(
 ## -parameters
 <dl>
 
-### -param <i>ConfigureParams</i> 
+### -param ConfigureParams 
 
 <dd>
 <p>Pointer to a caller-allocated RECORDER_CONFIGURE_PARAMS structure.</p>

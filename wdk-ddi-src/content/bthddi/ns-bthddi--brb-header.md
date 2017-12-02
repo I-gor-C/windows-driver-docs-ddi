@@ -65,13 +65,13 @@ typedef struct _BRB_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>ListEntry</b>
+### -field ListEntry
 
 <dd>
 <p>A LIST_ENTRY structure used by the current owner of the BRB to place the BRB in a queue.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The size, in bytes, of the BRB, including the BRB_HEADER structure. The 
@@ -81,13 +81,13 @@ typedef struct _BRB_HEADER {
      member.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>For internal use only. Do not use.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The Bluetooth request block type. The 
@@ -123,19 +123,19 @@ typedef struct _BRB_HEADER {
 </ul>
 </dd>
 
-### -field <b>BthportFlags</b>
+### -field BthportFlags
 
 <dd>
 <p>For internal use only. Do not use.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The NTSTATUS code that is passed when the BRB call completes.</p>
 </dd>
 
-### -field <b>BtStatus</b>
+### -field BtStatus
 
 <dd>
 <p>The Bluetooth status code (BTSTATUS) that corresponds to the NTSTATUS code that is passed in the 
@@ -187,20 +187,20 @@ typedef struct _BRB_HEADER {
 </ul>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>For internal use only. Do not use.</p>
 </dd>
 
-### -field <b>ClientContext</b>
+### -field ClientContext
 
 <dd>
 <p>The client context that is associated with the BRB call. The caller can use this member to store a
      pointer or other information.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use. Do not use.</p>

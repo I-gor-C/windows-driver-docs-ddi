@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_pnp_state.htm
 old-project: wdf
 ms.assetid: b907a1ca-d9ef-45e9-9e1b-26e58e3e1e07
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -115,243 +115,243 @@ typedef enum _WDF_DEVICE_PNP_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfDevStatePnpInvalid"></a><a id="wdfdevstatepnpinvalid"></a><a id="WDFDEVSTATEPNPINVALID"></a><b>WdfDevStatePnpInvalid</b>
+### -field WdfDevStatePnpInvalid
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpObjectCreated"></a><a id="wdfdevstatepnpobjectcreated"></a><a id="WDFDEVSTATEPNPOBJECTCREATED"></a><b>WdfDevStatePnpObjectCreated</b>
+### -field WdfDevStatePnpObjectCreated
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpCheckForDevicePresence"></a><a id="wdfdevstatepnpcheckfordevicepresence"></a><a id="WDFDEVSTATEPNPCHECKFORDEVICEPRESENCE"></a><b>WdfDevStatePnpCheckForDevicePresence</b>
+### -field WdfDevStatePnpCheckForDevicePresence
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpEjectFailed"></a><a id="wdfdevstatepnpejectfailed"></a><a id="WDFDEVSTATEPNPEJECTFAILED"></a><b>WdfDevStatePnpEjectFailed</b>
+### -field WdfDevStatePnpEjectFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpEjectHardware"></a><a id="wdfdevstatepnpejecthardware"></a><a id="WDFDEVSTATEPNPEJECTHARDWARE"></a><b>WdfDevStatePnpEjectHardware</b>
+### -field WdfDevStatePnpEjectHardware
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpEjectedWaitingForRemove"></a><a id="wdfdevstatepnpejectedwaitingforremove"></a><a id="WDFDEVSTATEPNPEJECTEDWAITINGFORREMOVE"></a><b>WdfDevStatePnpEjectedWaitingForRemove</b>
+### -field WdfDevStatePnpEjectedWaitingForRemove
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpInit"></a><a id="wdfdevstatepnpinit"></a><a id="WDFDEVSTATEPNPINIT"></a><b>WdfDevStatePnpInit</b>
+### -field WdfDevStatePnpInit
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpInitStarting"></a><a id="wdfdevstatepnpinitstarting"></a><a id="WDFDEVSTATEPNPINITSTARTING"></a><b>WdfDevStatePnpInitStarting</b>
+### -field WdfDevStatePnpInitStarting
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpInitSurpriseRemoved"></a><a id="wdfdevstatepnpinitsurpriseremoved"></a><a id="WDFDEVSTATEPNPINITSURPRISEREMOVED"></a><b>WdfDevStatePnpInitSurpriseRemoved</b>
+### -field WdfDevStatePnpInitSurpriseRemoved
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpHardwareAvailable"></a><a id="wdfdevstatepnphardwareavailable"></a><a id="WDFDEVSTATEPNPHARDWAREAVAILABLE"></a><b>WdfDevStatePnpHardwareAvailable</b>
+### -field WdfDevStatePnpHardwareAvailable
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpEnableInterfaces"></a><a id="wdfdevstatepnpenableinterfaces"></a><a id="WDFDEVSTATEPNPENABLEINTERFACES"></a><b>WdfDevStatePnpEnableInterfaces</b>
+### -field WdfDevStatePnpEnableInterfaces
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpHardwareAvailablePowerPolicyFailed"></a><a id="wdfdevstatepnphardwareavailablepowerpolicyfailed"></a><a id="WDFDEVSTATEPNPHARDWAREAVAILABLEPOWERPOLICYFAILED"></a><b>WdfDevStatePnpHardwareAvailablePowerPolicyFailed</b>
+### -field WdfDevStatePnpHardwareAvailablePowerPolicyFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpQueryRemoveAskDriver"></a><a id="wdfdevstatepnpqueryremoveaskdriver"></a><a id="WDFDEVSTATEPNPQUERYREMOVEASKDRIVER"></a><b>WdfDevStatePnpQueryRemoveAskDriver</b>
+### -field WdfDevStatePnpQueryRemoveAskDriver
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpQueryRemovePending"></a><a id="wdfdevstatepnpqueryremovepending"></a><a id="WDFDEVSTATEPNPQUERYREMOVEPENDING"></a><b>WdfDevStatePnpQueryRemovePending</b>
+### -field WdfDevStatePnpQueryRemovePending
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpQueryRemoveStaticCheck"></a><a id="wdfdevstatepnpqueryremovestaticcheck"></a><a id="WDFDEVSTATEPNPQUERYREMOVESTATICCHECK"></a><b>WdfDevStatePnpQueryRemoveStaticCheck</b>
+### -field WdfDevStatePnpQueryRemoveStaticCheck
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpQueriedRemoving"></a><a id="wdfdevstatepnpqueriedremoving"></a><a id="WDFDEVSTATEPNPQUERIEDREMOVING"></a><b>WdfDevStatePnpQueriedRemoving</b>
+### -field WdfDevStatePnpQueriedRemoving
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpQueryStopAskDriver"></a><a id="wdfdevstatepnpquerystopaskdriver"></a><a id="WDFDEVSTATEPNPQUERYSTOPASKDRIVER"></a><b>WdfDevStatePnpQueryStopAskDriver</b>
+### -field WdfDevStatePnpQueryStopAskDriver
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpQueryStopPending"></a><a id="wdfdevstatepnpquerystoppending"></a><a id="WDFDEVSTATEPNPQUERYSTOPPENDING"></a><b>WdfDevStatePnpQueryStopPending</b>
+### -field WdfDevStatePnpQueryStopPending
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpQueryStopStaticCheck"></a><a id="wdfdevstatepnpquerystopstaticcheck"></a><a id="WDFDEVSTATEPNPQUERYSTOPSTATICCHECK"></a><b>WdfDevStatePnpQueryStopStaticCheck</b>
+### -field WdfDevStatePnpQueryStopStaticCheck
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpQueryCanceled"></a><a id="wdfdevstatepnpquerycanceled"></a><a id="WDFDEVSTATEPNPQUERYCANCELED"></a><b>WdfDevStatePnpQueryCanceled</b>
+### -field WdfDevStatePnpQueryCanceled
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpRemoved"></a><a id="wdfdevstatepnpremoved"></a><a id="WDFDEVSTATEPNPREMOVED"></a><b>WdfDevStatePnpRemoved</b>
+### -field WdfDevStatePnpRemoved
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpPdoRemoved"></a><a id="wdfdevstatepnppdoremoved"></a><a id="WDFDEVSTATEPNPPDOREMOVED"></a><b>WdfDevStatePnpPdoRemoved</b>
+### -field WdfDevStatePnpPdoRemoved
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpRemovedPdoWait"></a><a id="wdfdevstatepnpremovedpdowait"></a><a id="WDFDEVSTATEPNPREMOVEDPDOWAIT"></a><b>WdfDevStatePnpRemovedPdoWait</b>
+### -field WdfDevStatePnpRemovedPdoWait
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpRemovedPdoSurpriseRemoved"></a><a id="wdfdevstatepnpremovedpdosurpriseremoved"></a><a id="WDFDEVSTATEPNPREMOVEDPDOSURPRISEREMOVED"></a><b>WdfDevStatePnpRemovedPdoSurpriseRemoved</b>
+### -field WdfDevStatePnpRemovedPdoSurpriseRemoved
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpRemovingDisableInterfaces"></a><a id="wdfdevstatepnpremovingdisableinterfaces"></a><a id="WDFDEVSTATEPNPREMOVINGDISABLEINTERFACES"></a><b>WdfDevStatePnpRemovingDisableInterfaces</b>
+### -field WdfDevStatePnpRemovingDisableInterfaces
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpRestarting"></a><a id="wdfdevstatepnprestarting"></a><a id="WDFDEVSTATEPNPRESTARTING"></a><b>WdfDevStatePnpRestarting</b>
+### -field WdfDevStatePnpRestarting
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpStarted"></a><a id="wdfdevstatepnpstarted"></a><a id="WDFDEVSTATEPNPSTARTED"></a><b>WdfDevStatePnpStarted</b>
+### -field WdfDevStatePnpStarted
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpStartedCancelStop"></a><a id="wdfdevstatepnpstartedcancelstop"></a><a id="WDFDEVSTATEPNPSTARTEDCANCELSTOP"></a><b>WdfDevStatePnpStartedCancelStop</b>
+### -field WdfDevStatePnpStartedCancelStop
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpStartedCancelRemove"></a><a id="wdfdevstatepnpstartedcancelremove"></a><a id="WDFDEVSTATEPNPSTARTEDCANCELREMOVE"></a><b>WdfDevStatePnpStartedCancelRemove</b>
+### -field WdfDevStatePnpStartedCancelRemove
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpStartedRemoving"></a><a id="wdfdevstatepnpstartedremoving"></a><a id="WDFDEVSTATEPNPSTARTEDREMOVING"></a><b>WdfDevStatePnpStartedRemoving</b>
+### -field WdfDevStatePnpStartedRemoving
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpStartingFromStopped"></a><a id="wdfdevstatepnpstartingfromstopped"></a><a id="WDFDEVSTATEPNPSTARTINGFROMSTOPPED"></a><b>WdfDevStatePnpStartingFromStopped</b>
+### -field WdfDevStatePnpStartingFromStopped
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpStopped"></a><a id="wdfdevstatepnpstopped"></a><a id="WDFDEVSTATEPNPSTOPPED"></a><b>WdfDevStatePnpStopped</b>
+### -field WdfDevStatePnpStopped
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpStoppedWaitForStartCompletion"></a><a id="wdfdevstatepnpstoppedwaitforstartcompletion"></a><a id="WDFDEVSTATEPNPSTOPPEDWAITFORSTARTCOMPLETION"></a><b>WdfDevStatePnpStoppedWaitForStartCompletion</b>
+### -field WdfDevStatePnpStoppedWaitForStartCompletion
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpStartedStopping"></a><a id="wdfdevstatepnpstartedstopping"></a><a id="WDFDEVSTATEPNPSTARTEDSTOPPING"></a><b>WdfDevStatePnpStartedStopping</b>
+### -field WdfDevStatePnpStartedStopping
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpSurpriseRemove"></a><a id="wdfdevstatepnpsurpriseremove"></a><a id="WDFDEVSTATEPNPSURPRISEREMOVE"></a><b>WdfDevStatePnpSurpriseRemove</b>
+### -field WdfDevStatePnpSurpriseRemove
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpInitQueryRemove"></a><a id="wdfdevstatepnpinitqueryremove"></a><a id="WDFDEVSTATEPNPINITQUERYREMOVE"></a><b>WdfDevStatePnpInitQueryRemove</b>
+### -field WdfDevStatePnpInitQueryRemove
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpInitQueryRemoveCanceled"></a><a id="wdfdevstatepnpinitqueryremovecanceled"></a><a id="WDFDEVSTATEPNPINITQUERYREMOVECANCELED"></a><b>WdfDevStatePnpInitQueryRemoveCanceled</b>
+### -field WdfDevStatePnpInitQueryRemoveCanceled
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpFdoRemoved"></a><a id="wdfdevstatepnpfdoremoved"></a><a id="WDFDEVSTATEPNPFDOREMOVED"></a><b>WdfDevStatePnpFdoRemoved</b>
+### -field WdfDevStatePnpFdoRemoved
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpRemovedWaitForChildren"></a><a id="wdfdevstatepnpremovedwaitforchildren"></a><a id="WDFDEVSTATEPNPREMOVEDWAITFORCHILDREN"></a><b>WdfDevStatePnpRemovedWaitForChildren</b>
+### -field WdfDevStatePnpRemovedWaitForChildren
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpQueriedSurpriseRemove"></a><a id="wdfdevstatepnpqueriedsurpriseremove"></a><a id="WDFDEVSTATEPNPQUERIEDSURPRISEREMOVE"></a><b>WdfDevStatePnpQueriedSurpriseRemove</b>
+### -field WdfDevStatePnpQueriedSurpriseRemove
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpSurpriseRemoveIoStarted"></a><a id="wdfdevstatepnpsurpriseremoveiostarted"></a><a id="WDFDEVSTATEPNPSURPRISEREMOVEIOSTARTED"></a><b>WdfDevStatePnpSurpriseRemoveIoStarted</b>
+### -field WdfDevStatePnpSurpriseRemoveIoStarted
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpFailedPowerDown"></a><a id="wdfdevstatepnpfailedpowerdown"></a><a id="WDFDEVSTATEPNPFAILEDPOWERDOWN"></a><b>WdfDevStatePnpFailedPowerDown</b>
+### -field WdfDevStatePnpFailedPowerDown
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpFailedIoStarting"></a><a id="wdfdevstatepnpfailediostarting"></a><a id="WDFDEVSTATEPNPFAILEDIOSTARTING"></a><b>WdfDevStatePnpFailedIoStarting</b>
+### -field WdfDevStatePnpFailedIoStarting
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpFailedOwnHardware"></a><a id="wdfdevstatepnpfailedownhardware"></a><a id="WDFDEVSTATEPNPFAILEDOWNHARDWARE"></a><b>WdfDevStatePnpFailedOwnHardware</b>
+### -field WdfDevStatePnpFailedOwnHardware
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpFailed"></a><a id="wdfdevstatepnpfailed"></a><a id="WDFDEVSTATEPNPFAILED"></a><b>WdfDevStatePnpFailed</b>
+### -field WdfDevStatePnpFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpFailedSurpriseRemoved"></a><a id="wdfdevstatepnpfailedsurpriseremoved"></a><a id="WDFDEVSTATEPNPFAILEDSURPRISEREMOVED"></a><b>WdfDevStatePnpFailedSurpriseRemoved</b>
+### -field WdfDevStatePnpFailedSurpriseRemoved
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpFailedStarted"></a><a id="wdfdevstatepnpfailedstarted"></a><a id="WDFDEVSTATEPNPFAILEDSTARTED"></a><b>WdfDevStatePnpFailedStarted</b>
+### -field WdfDevStatePnpFailedStarted
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpFailedWaitForRemove"></a><a id="wdfdevstatepnpfailedwaitforremove"></a><a id="WDFDEVSTATEPNPFAILEDWAITFORREMOVE"></a><b>WdfDevStatePnpFailedWaitForRemove</b>
+### -field WdfDevStatePnpFailedWaitForRemove
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpFailedInit"></a><a id="wdfdevstatepnpfailedinit"></a><a id="WDFDEVSTATEPNPFAILEDINIT"></a><b>WdfDevStatePnpFailedInit</b>
+### -field WdfDevStatePnpFailedInit
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpPdoInitFailed"></a><a id="wdfdevstatepnppdoinitfailed"></a><a id="WDFDEVSTATEPNPPDOINITFAILED"></a><b>WdfDevStatePnpPdoInitFailed</b>
+### -field WdfDevStatePnpPdoInitFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpRestart"></a><a id="wdfdevstatepnprestart"></a><a id="WDFDEVSTATEPNPRESTART"></a><b>WdfDevStatePnpRestart</b>
+### -field WdfDevStatePnpRestart
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpRestartReleaseHardware"></a><a id="wdfdevstatepnprestartreleasehardware"></a><a id="WDFDEVSTATEPNPRESTARTRELEASEHARDWARE"></a><b>WdfDevStatePnpRestartReleaseHardware</b>
+### -field WdfDevStatePnpRestartReleaseHardware
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpRestartHardwareAvailable"></a><a id="wdfdevstatepnprestarthardwareavailable"></a><a id="WDFDEVSTATEPNPRESTARTHARDWAREAVAILABLE"></a><b>WdfDevStatePnpRestartHardwareAvailable</b>
+### -field WdfDevStatePnpRestartHardwareAvailable
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpPdoRestart"></a><a id="wdfdevstatepnppdorestart"></a><a id="WDFDEVSTATEPNPPDORESTART"></a><b>WdfDevStatePnpPdoRestart</b>
+### -field WdfDevStatePnpPdoRestart
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpFinal"></a><a id="wdfdevstatepnpfinal"></a><a id="WDFDEVSTATEPNPFINAL"></a><b>WdfDevStatePnpFinal</b>
+### -field WdfDevStatePnpFinal
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpRemovedChildrenRemoved"></a><a id="wdfdevstatepnpremovedchildrenremoved"></a><a id="WDFDEVSTATEPNPREMOVEDCHILDRENREMOVED"></a><b>WdfDevStatePnpRemovedChildrenRemoved</b>
+### -field WdfDevStatePnpRemovedChildrenRemoved
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpQueryRemoveEnsureDeviceAwake"></a><a id="wdfdevstatepnpqueryremoveensuredeviceawake"></a><a id="WDFDEVSTATEPNPQUERYREMOVEENSUREDEVICEAWAKE"></a><b>WdfDevStatePnpQueryRemoveEnsureDeviceAwake</b>
+### -field WdfDevStatePnpQueryRemoveEnsureDeviceAwake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpQueryStopEnsureDeviceAwake"></a><a id="wdfdevstatepnpquerystopensuredeviceawake"></a><a id="WDFDEVSTATEPNPQUERYSTOPENSUREDEVICEAWAKE"></a><b>WdfDevStatePnpQueryStopEnsureDeviceAwake</b>
+### -field WdfDevStatePnpQueryStopEnsureDeviceAwake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpFailedPowerPolicyRemoved"></a><a id="wdfdevstatepnpfailedpowerpolicyremoved"></a><a id="WDFDEVSTATEPNPFAILEDPOWERPOLICYREMOVED"></a><b>WdfDevStatePnpFailedPowerPolicyRemoved</b>
+### -field WdfDevStatePnpFailedPowerPolicyRemoved
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePnpNull"></a><a id="wdfdevstatepnpnull"></a><a id="WDFDEVSTATEPNPNULL"></a><b>WdfDevStatePnpNull</b>
+### -field WdfDevStatePnpNull
 
 <dd></dd>
 </dl>

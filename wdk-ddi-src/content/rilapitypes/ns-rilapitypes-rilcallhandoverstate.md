@@ -7,7 +7,7 @@ old-location: netvista\rilcallhandoverstate_2.htm
 old-project: netvista
 ms.assetid: 21558cd6-f200-4867-920f-8aaadc9839f8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLHANDOVERSTATE, RILCALLHANDOVERSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef struct _RILCALLHANDOVERSTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwPhase</b>
+### -field dwPhase
 
 <dd></dd>
 
-### -field <b>dwOldType</b>
+### -field dwOldType
 
 <dd></dd>
 
-### -field <b>dwNewType</b>
+### -field dwNewType
 
 <dd></dd>
 
-### -field <b>dw3gppCause</b>
+### -field dw3gppCause
 
 <dd></dd>
 </dl>

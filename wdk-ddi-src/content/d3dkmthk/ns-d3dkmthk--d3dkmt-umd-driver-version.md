@@ -54,7 +54,7 @@ typedef struct _D3DKMT_UMD_DRIVER_VERSION {
 ## -struct-fields
 <dl>
 
-### -field <b>DriverVersion</b>
+### -field DriverVersion
 
 <dd>
 <p>The user-mode driver version.</p>

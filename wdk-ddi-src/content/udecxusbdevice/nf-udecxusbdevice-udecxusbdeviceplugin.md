@@ -56,16 +56,16 @@ FORCEINLINE NTSTATUS UdecxUsbDevicePlugIn(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbDevice</i> [in]
+### -param UdecxUsbDevice [in]
 
 <dd>
-<p>A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.</p>
+<p>A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a>.</p>
 </dd>
 
-### -param <i>Options</i> [in]
+### -param Options [in]
 
 <dd>
-<p>A <a href="buses.udecx_usb_device_plug_in_options">UDECX_USB_DEVICE_PLUG_IN_OPTIONS</a>-type value that indicates the port to which the device is plugged. At most one of Usb20PortNumber, Usb30PortNumber can be non-zero. NULL disables plug-in options (use defaults).
+<p>A <a href="..\udecxusbdevice\ns-udecxusbdevice--udecx-usb-device-plug-in-options.md">UDECX_USB_DEVICE_PLUG_IN_OPTIONS</a>-type value that indicates the port to which the device is plugged. At most one of Usb20PortNumber, Usb30PortNumber can be non-zero. NULL disables plug-in options (use defaults).
 </p>
 </dd>
 </dl>

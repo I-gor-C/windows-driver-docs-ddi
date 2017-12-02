@@ -54,7 +54,7 @@ HRESULT KsRemoveAggregate(
 ## -parameters
 <dl>
 
-### -param <i>AggregateClass</i> [in]
+### -param AggregateClass [in]
 
 <dd>
 <p>Identifies the COM server to remove.</p>

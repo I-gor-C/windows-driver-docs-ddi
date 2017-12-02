@@ -58,31 +58,31 @@ typedef struct _IDE_ACCESS_RANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>RangeStart</b>
+### -field RangeStart
 
 <dd>
 <p>Contains the logical starting address of the address range.</p>
 </dd>
 
-### -field <b>PhysicalRangeStart</b>
+### -field PhysicalRangeStart
 
 <dd>
 <p>Contains the physical starting address of the address range.</p>
 </dd>
 
-### -field <b>RangeLength</b>
+### -field RangeLength
 
 <dd>
 <p>Contains the size, in bytes, of the range.</p>
 </dd>
 
-### -field <b>InMemory</b>
+### -field InMemory
 
 <dd>
 <p>Flag that indicates if this is a memory mapped resource. If cleared, this is an I/O port resource.</p>
 </dd>
 
-### -field <b>Bar</b>
+### -field Bar
 
 <dd>
 <p>The number of the PCI Base Address Range that this resource was found in.</p>

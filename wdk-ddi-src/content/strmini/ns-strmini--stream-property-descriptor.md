@@ -59,31 +59,31 @@ typedef struct _STREAM_PROPERTY_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies the property to be read/written.</p>
 </dd>
 
-### -field <b>PropertySetID</b>
+### -field PropertySetID
 
 <dd>
 <p>Specifies the index of the property set within either the <a href="..\strmini\ns-strmini--hw-stream-header.md">HW_STREAM_HEADER</a>'s <b>DevicePropertiesArray</b> (for minidriver properties) or the <a href="..\strmini\ns-strmini--hw-stream-information.md">HW_STREAM_INFORMATION</a>'s <b>StreamPropertiesArray</b> (for stream properties).</p>
 </dd>
 
-### -field <b>PropertyInfo</b>
+### -field PropertyInfo
 
 <dd>
 <p>Points to a buffer that the property data will be read from or written to.</p>
 </dd>
 
-### -field <b>PropertyInputSize</b>
+### -field PropertyInputSize
 
 <dd>
 <p>Size of the <b>Property</b> buffer.</p>
 </dd>
 
-### -field <b>PropertyOutputSize</b>
+### -field PropertyOutputSize
 
 <dd>
 <p>Size of the <b>PropertyInfo</b> buffer.</p>

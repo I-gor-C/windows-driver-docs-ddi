@@ -55,13 +55,13 @@ typedef struct _D3DHAL_CONTEXTDESTROYDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>dwhContext</b>
+### -field dwhContext
 
 <dd>
 <p>Specifies the handle to the context to be destroyed.</p>
 </dd>
 
-### -field <b>ddrval</b>
+### -field ddrval
 
 <dd>
 <p>Specifies the location where the driver writes the return code for <a href="..\d3dhal\nc-d3dhal-lpd3dhal-contextdestroycb.md">D3dContextDestroy</a>. D3D_OK indicates success. For more information, see <a href="https://msdn.microsoft.com/033beb6e-5872-4cb3-8f39-459e2fff82cd">Return Codes for Direct3D Driver Callbacks</a>.</p>

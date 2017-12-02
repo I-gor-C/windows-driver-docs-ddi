@@ -7,7 +7,7 @@ old-location: wdf\wdfioqueuecreate.htm
 old-project: wdf
 ms.assetid: cd7e993e-1381-4b0c-b046-716e839dbb62
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfIoQueueCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ NTSTATUS WdfIoQueueCreate(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to the framework device object that the queue will be associated with. </p>
 </dd>
 
-### -param <i>Config</i> [in]
+### -param Config [in]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfio\ns-wdfio--wdf-io-queue-config.md">WDF_IO_QUEUE_CONFIG</a> structure.</p>
 </dd>
 
-### -param <i>QueueAttributes</i> [in, optional]
+### -param QueueAttributes [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the new object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES. </p>
 </dd>
 
-### -param <i>Queue</i> [out, optional]
+### -param Queue [out, optional]
 
 <dd>
 <p>A pointer to a location that receives a handle to a framework queue object.</p>
@@ -207,4 +207,4 @@ NTSTATUS WdfIoQueueCreate(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueCreate method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueCreate method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

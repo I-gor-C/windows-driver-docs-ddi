@@ -7,7 +7,7 @@ old-location: wdf\read_register_uchar.htm
 old-project: wdf
 ms.assetid: 149DE843-937C-4A6F-AB2D-ACC8895D5E91
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: READ_REGISTER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ UCHAR READ_REGISTER_UCHAR(
 ## -parameters
 <dl>
 
-### -param <i>pDevice</i> [in]
+### -param pDevice [in]
 
 <dd>
 <p>Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.</p>
 </dd>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>A pointer to the register address, which must be a mapped range in memory space.</p>

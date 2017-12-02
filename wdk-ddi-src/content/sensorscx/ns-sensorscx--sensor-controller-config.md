@@ -7,7 +7,7 @@ old-location: sensors\sensor_controller_config.htm
 old-project: sensors
 ms.assetid: EEAC4D16-D0B8-4147-AD2D-7EE60853EBDD
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -105,19 +105,19 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The allocated size of this structure (in bytes).</p>
 </dd>
 
-### -field <b>DriverIsPowerPolicyOwner</b>
+### -field DriverIsPowerPolicyOwner
 
 <dd>
 <p>Indicates whether or not driver owns the power policy. This value must be either WdfFalse, WdfUseDefault, or WdfTrue. For partners to take advantage of pep-based power management, they must set this flag to WdfFalse or WdfUseDefault and remove any _PSx method in their ACPI tables.</p>
 </dd>
 
-### -field <b>EvtSensorStart</b>
+### -field EvtSensorStart
 
 <dd>
 <p>This callback function starts the sensor based on the default properties specified by the driver, or properties set by the class extension.</p>
@@ -127,7 +127,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 <dl>
 
-### -field <b><i>Sensor</i></b>
+### -field Sensor
 
 <dd>
 <p>A reference to a sensor object.</p>
@@ -135,7 +135,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </dl>
 </dd>
 
-### -field <b>EvtSensorStop</b>
+### -field EvtSensorStop
 
 <dd>
 <p>This callback function stops the sensor.</p>
@@ -145,7 +145,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 <dl>
 
-### -field <b><i>Sensor</i></b>
+### -field Sensor
 
 <dd>
 <p>A reference to a sensor object.</p>
@@ -153,7 +153,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </dl>
 </dd>
 
-### -field <b>EvtSensorGetSupportedDataFields</b>
+### -field EvtSensorGetSupportedDataFields
 
 <dd>
 <p>This callback function returns a list of data fields supported by the specified sensor.</p>
@@ -165,19 +165,19 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 <dl>
 
-### -field <b><i>Sensor</i></b>
+### -field Sensor
 
 <dd>
 <p>A reference to a sensor object.</p>
 </dd>
 
-### -field <b><i>pDataFields</i></b>
+### -field pDataFields
 
 <dd>
 <p>A list of data fields that are supported by the given sensor.</p>
 </dd>
 
-### -field <b><i>pSize</i></b>
+### -field pSize
 
 <dd>
 <p>The size of pFields.</p>
@@ -185,7 +185,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </dl>
 </dd>
 
-### -field <b>EvtSensorGetDataFieldProperties</b>
+### -field EvtSensorGetDataFieldProperties
 
 <dd>
 <p>This callback function returns the properties of a given data field associated with a sensor.</p>
@@ -198,7 +198,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 <dl>
 
-### -field <b><i>Sensor</i></b>
+### -field Sensor
 
 <dd>
 <p>A reference to a sensor object.
@@ -206,19 +206,19 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 </dd>
 
-### -field <b><i>pDataField</i></b>
+### -field pDataField
 
 <dd>
 <p>A reference to a data field.</p>
 </dd>
 
-### -field <b><i>pProperties</i></b>
+### -field pProperties
 
 <dd>
 <p>A list of properties associated with the pDataField.</p>
 </dd>
 
-### -field <b><i>pSize</i></b>
+### -field pSize
 
 <dd>
 <p>The size of pDataField.</p>
@@ -226,7 +226,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </dl>
 </dd>
 
-### -field <b>EvtSensorGetDataInterval</b>
+### -field EvtSensorGetDataInterval
 
 <dd>
 <p>This callback function returns the data interval for a specified sensor.</p>
@@ -237,7 +237,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 <dl>
 
-### -field <b><i>Sensor</i></b>
+### -field Sensor
 
 <dd>
 <p>A reference to a sensor object.
@@ -245,7 +245,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 </dd>
 
-### -field <b><i>pDataRateMs</i></b>
+### -field pDataRateMs
 
 <dd>
 <p>The data interval for the specified sensor.</p>
@@ -253,7 +253,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </dl>
 </dd>
 
-### -field <b>EvtSensorSetDataInterval</b>
+### -field EvtSensorSetDataInterval
 
 <dd>
 <p>This callback function sets the data interval for a specified sensor.</p>
@@ -264,7 +264,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 <dl>
 
-### -field <b><i>Sensor</i></b>
+### -field Sensor
 
 <dd>
 <p>A reference to a sensor object.
@@ -272,7 +272,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 </dd>
 
-### -field <b><i>DataRateMs</i></b>
+### -field DataRateMs
 
 <dd>
 <p>The data interval for to set for the sensor.</p>
@@ -280,7 +280,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </dl>
 </dd>
 
-### -field <b>EvtSensorGetDataThresholds</b>
+### -field EvtSensorGetDataThresholds
 
 <dd>
 <p>This callback function returns the thresholds that are associated with a sensor.</p>
@@ -292,7 +292,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 <dl>
 
-### -field <b><i>Sensor</i></b>
+### -field Sensor
 
 <dd>
 <p>A reference to a sensor object.
@@ -300,13 +300,13 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 </dd>
 
-### -field <b><i>pThresholds</i></b>
+### -field pThresholds
 
 <dd>
 <p>A list of threshold properties and their values associated with the sensor.</p>
 </dd>
 
-### -field <b><i>pSize</i></b>
+### -field pSize
 
 <dd>
 <p>The size of pThresholds.</p>
@@ -314,7 +314,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </dl>
 </dd>
 
-### -field <b>EvtSensorSetDataThresholds</b>
+### -field EvtSensorSetDataThresholds
 
 <dd>
 <p>This callback function stops the sensor.</p>
@@ -325,7 +325,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 <dl>
 
-### -field <b><i>Sensor</i></b>
+### -field Sensor
 
 <dd>
 <p>A reference to a sensor object.
@@ -333,7 +333,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 </dd>
 
-### -field <b><i>pThresholds</i></b>
+### -field pThresholds
 
 <dd>
 <p>A list of threshold properties and their values associated with the sensor.</p>
@@ -341,7 +341,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </dl>
 </dd>
 
-### -field <b>EvtSensorGetProperties</b>
+### -field EvtSensorGetProperties
 
 <dd>
 <p>This callback function returns the properties for a given sensor.</p>
@@ -353,7 +353,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 <dl>
 
-### -field <b><i>Sensor</i></b>
+### -field Sensor
 
 <dd>
 <p>A reference to a sensor object.
@@ -361,13 +361,13 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 </dd>
 
-### -field <b><i>pProperties</i></b>
+### -field pProperties
 
 <dd>
 <p>A list of properties and their values for the specified sensor.</p>
 </dd>
 
-### -field <b><i>pSize</i></b>
+### -field pSize
 
 <dd>
 <p>The size of pProperties.</p>
@@ -375,7 +375,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </dl>
 </dd>
 
-### -field <b>EvtSensorDeviceIoControl</b>
+### -field EvtSensorDeviceIoControl
 
 <dd>
 <p>This callback function handles IOCTLs outside of the class extension.<div class="alert"><b>Note</b>  If the driver needs to queue the IRP, it must copy the IRP to an IoQueue that the driver owns. This will prevent all IRPs for the driver to be stalled until completion.</div>
@@ -391,7 +391,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 <dl>
 
-### -field <b><i>Sensor</i></b>
+### -field Sensor
 
 <dd>
 <p>A reference to a sensor object.
@@ -399,13 +399,13 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 </dd>
 
-### -field <b><i>Request</i></b>
+### -field Request
 
 <dd>
 <p>A handle to a framework request object that represents the I/O request.</p>
 </dd>
 
-### -field <b><i>OutputBufferLength</i></b>
+### -field OutputBufferLength
 
 <dd>
 <p>The length of the output buffer (in bytes).
@@ -413,7 +413,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 </dd>
 
-### -field <b><i>InputBufferLength</i></b>
+### -field InputBufferLength
 
 <dd>
 <p>The length of the input buffer (in bytes).
@@ -421,7 +421,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </p>
 </dd>
 
-### -field <b><i>IoControlCode</i></b>
+### -field IoControlCode
 
 <dd>
 <p>The code that indicates which device I/O control function is to be executed.
@@ -431,7 +431,7 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 </dl>
 </dd>
 
-### -field <b>EvtSensorSetBatchLatency</b>
+### -field EvtSensorSetBatchLatency
 
 <dd>
 <p>This callback function sets the batch latency for a specified sensor.<pre class="syntax">typedef _Function_class_(EVT_SENSOR_DRIVER_SET_BATCH_LATENCY)
@@ -445,13 +445,13 @@ typedef EVT_SENSOR_DRIVER_SET_BATCH_LATENCY *PFN_SENSOR_DRIVER_SET_BATCH_LATENCY
 </p>
 <dl>
 
-### -field <i>Sensor</i>
+### -field Sensor
 
 <dd>
 <p>A reference to a sensor object.</p>
 </dd>
 
-### -field <i>BatchLatencyMs</i>
+### -field BatchLatencyMs
 
 <dd>
 <p>The batch latency, expressed in milliseconds.</p>

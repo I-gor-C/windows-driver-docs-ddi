@@ -56,11 +56,11 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>propertyName</b>
+### -field propertyName
 
 <dd></dd>
 
-### -field <b>propertyValue</b>
+### -field propertyValue
 
 <dd></dd>
 </dl>

@@ -57,25 +57,25 @@ typedef struct _OUTPUT_PACKET {
 ## -struct-fields
 <dl>
 
-### -field <b>Bytes</b>
+### -field Bytes
 
 <dd>
 <p>Pointer to an array of bytes being written to an i8042 port device.</p>
 </dd>
 
-### -field <b>CurrentByte</b>
+### -field CurrentByte
 
 <dd>
 <p>Specifies the index of the next byte to write.</p>
 </dd>
 
-### -field <b>ByteCount</b>
+### -field ByteCount
 
 <dd>
 <p>Specifies the number of bytes in the array of bytes located at <b>Bytes</b>.</p>
 </dd>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>Specifies one of the following write states:</p>
@@ -95,13 +95,13 @@ typedef struct _OUTPUT_PACKET {
 <p></p>
 <dl>
 
-### -field <a id="Idle"></a><a id="idle"></a><a id="IDLE"></a>Idle
+### -field Idle
 
 <dd>
 <p>Identifies that a write is not in progress.</p>
 </dd>
 
-### -field <a id="SendingBytes"></a><a id="sendingbytes"></a><a id="SENDINGBYTES"></a>SendingBytes
+### -field SendingBytes
 
 <dd>
 <p>Identifies that a write is in progress.</p>

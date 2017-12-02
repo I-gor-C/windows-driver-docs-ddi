@@ -57,19 +57,19 @@ POWER_STATE PoSetPowerState(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to the target <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
 </dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>Indicates a <a href="..\wdm\ne-wdm--power-state-type.md">POWER_STATE_TYPE</a> value. Drivers must specify <b>DevicePowerState</b>.</p>
 </dd>
 
-### -param <i>State</i> [in]
+### -param State [in]
 
 <dd>
 <p>Specifies the power state to be set. Drivers must specify a <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a> value.</p>
@@ -82,7 +82,7 @@ POWER_STATE PoSetPowerState(
 ## -remarks
 <p><b>PoSetPowerState</b> notifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> of the new power state for a device. Each driver in a device stack (filter, function, and bus drivers) must call <b>PoSetPowerState</b> to inform the power manager of a change in the power state of its corresponding device object. For example:</p>
 
-<p>A driver calls this routine after receiving a device set-power request and before calling <a href="..\ntifs\nf-ntifs-postartnextpowerirp.md">PoStartNextPowerIrp</a>. When handling a PnP <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> request, the driver should call <b>PoSetPowerState</b> to notify the power manager that the device is in the D0 state.</p>
+<p>A driver calls this routine after receiving a device set-power request and before calling <a href="..\wdm\nf-wdm-postartnextpowerirp.md">PoStartNextPowerIrp</a>. When handling a PnP <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> request, the driver should call <b>PoSetPowerState</b> to notify the power manager that the device is in the D0 state.</p>
 
 <p>If the device is powering down, the driver must call <b>PoSetPowerState</b> before leaving the D0 state. In addition, the driver must be able to process client requests before <b>PoSetPowerState</b> returns.</p>
 
@@ -158,7 +158,7 @@ POWER_STATE PoSetPowerState(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-postartnextpowerirp.md">PoStartNextPowerIrp</a>
+<a href="..\wdm\nf-wdm-postartnextpowerirp.md">PoStartNextPowerIrp</a>
 </dt>
 </dl>
 <p> </p>

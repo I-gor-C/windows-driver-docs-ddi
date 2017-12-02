@@ -7,7 +7,7 @@ old-location: debugger\coercevalue.htm
 old-project: debugger
 ms.assetid: db037fc8-d503-4a72-b6bc-d5189f6786d4
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl3, CoerceValue, IDebugControl3::CoerceValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ HRESULT CoerceValue(
 ## -parameters
 <dl>
 
-### -param <i>In</i> [in]
+### -param In [in]
 
 <dd>
 <p>Specifies the value to be converted</p>
 </dd>
 
-### -param <i>OutType</i> [in]
+### -param OutType [in]
 
 <dd>
 <p>Specifies the desired type for the converted value. See <a href="..\dbgeng\ns-dbgeng--debug-value.md">DEBUG_VALUE</a> for possible values.</p>
 </dd>
 
-### -param <i>Out</i> [out]
+### -param Out [out]
 
 <dd>
 <p>Receives the converted value.  The type of this value will be the type specified by <i>OutType</i>.</p>
@@ -82,7 +82,7 @@ HRESULT CoerceValue(
 
 <p> </p>
 
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p>
 
 ## -remarks
 <p>This method converts a value of one type into a value of another type.  If the specified <i>OutType</i> is not capable of containing the information supplied by the <i>In</i> variable, data will be lost.</p>
@@ -128,4 +128,4 @@ HRESULT CoerceValue(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::CoerceValue method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::CoerceValue method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

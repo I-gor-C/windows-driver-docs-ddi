@@ -55,39 +55,39 @@ typedef struct _CHANGER_SET_ACCESS {
 ## -struct-fields
 <dl>
 
-### -field <b>Element</b>
+### -field Element
 
 <dd>
 <p>Contains a <a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a> structure that specifies the element type and the zero-based address of the element to set. The <b>ElementType</b> member of the CHANGER_ELEMENT structure must be assigned one of the following values:</p>
 <p><b>ChangerIEPortChangerDoorChangerKeypad</b></p>
 </dd>
 
-### -field <b>Control</b>
+### -field Control
 
 <dd>
 <p>Specifies the operation to perform on the element. The <b>Features0</b> member of <a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a> indicates whether the changer supports a particular category of operation.</p>
 <p></p>
 <dl>
 
-### -field <a id="LOCK_ELEMENT"></a><a id="lock_element"></a>LOCK_ELEMENT
+### -field LOCK_ELEMENT
 
 <dd>
 <p>Lock the door, IEport, or keypad. Valid only if CHANGER_LOCK_UNLOCK is set.</p>
 </dd>
 
-### -field <a id="UNLOCK_ELEMENT"></a><a id="unlock_element"></a>UNLOCK_ELEMENT
+### -field UNLOCK_ELEMENT
 
 <dd>
 <p>Unlock the door, IEport, or keypad. Valid only if CHANGER_LOCK_UNLOCK is set.</p>
 </dd>
 
-### -field <a id="EXTEND_IEPORT"></a><a id="extend_ieport"></a>EXTEND_IEPORT
+### -field EXTEND_IEPORT
 
 <dd>
 <p>Extend the IEport. Valid only if CHANGER_OPEN_IEPORT is set.</p>
 </dd>
 
-### -field <a id="RETRACT_IEPORT"></a><a id="retract_ieport"></a>RETRACT_IEPORT
+### -field RETRACT_IEPORT
 
 <dd>
 <p>Retract the IEport. Valid only if CHANGER_CLOSE_IEPORT is set.</p>

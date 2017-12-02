@@ -68,50 +68,50 @@ typedef struct _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] A kernel-mode handle to a context that signals the synchronization events in the array that the <b>ObjectHandleArray</b> member specifies.</p>
 </dd>
 
-### -field <b>ObjectCount</b>
+### -field ObjectCount
 
 <dd>
 <p>[in] The number of synchronization events in the <b>ObjectHandleArray</b> array. </p>
 </dd>
 
-### -field <b>ObjectHandleArray</b>
+### -field ObjectHandleArray
 
 <dd>
 <p>[in] An array of kernel-mode handles to the synchronization events that the context that is specified by the <b>hContext</b> member signals. The D3DDDI_MAX_OBJECT_SIGNALED constant, which is defined as 32, indicates the maximum number of synchronization events that the context can signal. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-signalflags.md">D3DDDICB_SIGNALFLAGS</a> structure that indicates, in bit-field flags, signaling behavior.</p>
 </dd>
 
-### -field <b>BroadcastContextCount</b>
+### -field BroadcastContextCount
 
 <dd>
 <p>[in] The number of additional contexts in the array that <b>BroadcastContext</b> specifies.</p>
 </dd>
 
-### -field <b>BroadcastContext</b>
+### -field BroadcastContext
 
 <dd>
 <p>[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the additional contexts to broadcast the event to. The D3DDDI_MAX_BROADCAST_CONTEXT constant, which is defined as 64, defines the maximum number of contexts that the OpenGL ICD can broadcast the event to.</p>
 <p>The original context that the <b>hContext</b> member specifies and that owns the event is not an element in the <b>BroadcastContext</b> array. For example, if the <b>BroadcastContext</b> array contains one element, the OpenGL ICD sends the event to the owning context (<b>hContext</b>) and broadcasts to that one additional context. </p>
 </dd>
 
-### -field <b>Fence</b>
+### -field Fence
 
 <dd>
 <p>A structure that contains information about a fence. The union in D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2 can hold a Fence structure, which contains the following member:</p>
 <dl>
 
-### -field <b>FenceValue</b>
+### -field FenceValue
 
 <dd>
 <p>A 64-bit value that specifies the fence value to signal. </p>
@@ -119,14 +119,14 @@ typedef struct _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2 {
 </dl>
 </dd>
 
-### -field <b>CpuEventHandle</b>
+### -field CpuEventHandle
 
 <dd>
 <p>A handle to a CPU event that is to be signaled.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>An array of 64-bit values that are reserved for future use. The union in D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2 can hold this array. </p>

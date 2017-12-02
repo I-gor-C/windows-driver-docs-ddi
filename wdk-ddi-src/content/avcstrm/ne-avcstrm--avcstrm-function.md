@@ -62,55 +62,55 @@ typedef enum _AVCSTRM_FUNCTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="AVCSTRM_READ"></a><a id="avcstrm_read"></a><b>AVCSTRM_READ</b>
+### -field AVCSTRM_READ
 
 <dd>
 <p>Read data from a stream.</p>
 </dd>
 
-### -field <a id="AVCSTRM_WRITE"></a><a id="avcstrm_write"></a><b>AVCSTRM_WRITE</b>
+### -field AVCSTRM_WRITE
 
 <dd>
 <p>Write data to a stream.</p>
 </dd>
 
-### -field <a id="AVCSTRM_ABORT_STREAMING"></a><a id="avcstrm_abort_streaming"></a><b>AVCSTRM_ABORT_STREAMING</b>
+### -field AVCSTRM_ABORT_STREAMING
 
 <dd>
 <p>Abort streaming. This cancels <i>all</i> streaming IRPs. To cancel an individual IRP, use <a href="..\wdm\nf-wdm-iocancelirp.md">IoCancelIrp</a>.</p>
 </dd>
 
-### -field <a id="AVCSTRM_OPEN"></a><a id="avcstrm_open"></a><b>AVCSTRM_OPEN</b>
+### -field AVCSTRM_OPEN
 
 <dd>
 <p>Open a stream in a specific format.</p>
 </dd>
 
-### -field <a id="AVCSTRM_CLOSE"></a><a id="avcstrm_close"></a><b>AVCSTRM_CLOSE</b>
+### -field AVCSTRM_CLOSE
 
 <dd>
 <p>Close a stream and free any resources allocated for the stream.</p>
 </dd>
 
-### -field <a id="AVCSTRM_GET_STATE"></a><a id="avcstrm_get_state"></a><b>AVCSTRM_GET_STATE</b>
+### -field AVCSTRM_GET_STATE
 
 <dd>
 <p>Obtain the stream state.</p>
 </dd>
 
-### -field <a id="AVCSTRM_SET_STATE"></a><a id="avcstrm_set_state"></a><b>AVCSTRM_SET_STATE</b>
+### -field AVCSTRM_SET_STATE
 
 <dd>
 <p>Place the  stream into a new state.</p>
 </dd>
 
-### -field <a id="AVCSTRM_GET_PROPERTY"></a><a id="avcstrm_get_property"></a><b>AVCSTRM_GET_PROPERTY</b>
+### -field AVCSTRM_GET_PROPERTY
 
 <dd>
 <p>Get stream property. This function is not implemented.</p>
 </dd>
 
-### -field <a id="AVCSTRM_SET_PROPERTY"></a><a id="avcstrm_set_property"></a><b>AVCSTRM_SET_PROPERTY</b>
+### -field AVCSTRM_SET_PROPERTY
 
 <dd>
 <p>Set stream property. This function is not implemented.</p>

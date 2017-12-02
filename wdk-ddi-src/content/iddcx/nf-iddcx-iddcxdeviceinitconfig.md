@@ -57,13 +57,13 @@ NTSTATUS IddCxDeviceInitConfig(
 ## -parameters
 <dl>
 
-### -param <i>DeviceInit</i> 
+### -param DeviceInit 
 
 <dd>
 <p>The information about the device that is being initialized. </p>
 </dd>
 
-### -param <i>Config</i> 
+### -param Config 
 
 <dd>
 <p>The information required about the configuration of the client.</p>

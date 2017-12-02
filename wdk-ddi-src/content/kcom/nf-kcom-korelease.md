@@ -55,7 +55,7 @@ void KoRelease(
 ## -parameters
 <dl>
 
-### -param <i>ClassId</i> [in]
+### -param ClassId [in]
 
 <dd>
 <p>The CLSID of the object whose reference count will be decremented.</p>

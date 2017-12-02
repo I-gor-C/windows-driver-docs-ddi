@@ -61,31 +61,31 @@ VOID APIENTRY* CheckMultisampleQualityLevels(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>Format</i> 
+### -param Format 
 
 <dd>
 <p>A value of type <a href="direct3ddxgi.dxgi_format">DXGI_FORMAT</a> that indicates the render-target format that the check is performed for.</p>
 </dd>
 
-### -param <i>SampleCount</i> 
+### -param SampleCount 
 
 <dd>
 <p>The number of samples to retrieve the quality levels for. </p>
 </dd>
 
-### -param <i>Flags</i> 
+### -param Flags 
 
 <dd>
 <p>A combination of <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm1-3ddi-check-multisample-quality-levels-flag.md">D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_FLAG</a> values that are combined by using a bitwise <b>OR</b> operation.</p>
 </dd>
 
-### -param <i>pNumQualityLevels</i> [out]
+### -param pNumQualityLevels [out]
 
 <dd>
 <p>A pointer to a variable that receives the number of quality levels that the device supports for the specified number of samples.</p>

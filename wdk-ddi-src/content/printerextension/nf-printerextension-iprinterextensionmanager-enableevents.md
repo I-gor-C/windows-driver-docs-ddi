@@ -55,7 +55,7 @@ HRESULT EnableEvents(
 ## -parameters
 <dl>
 
-### -param <i>printerDriverId</i> [in]
+### -param printerDriverId [in]
 
 <dd>
 <p>The GUID representing the specified driver for which to enable events. This GUID is specified in the INF file, and is also specified by the manifest file directive 'PrinterDriverID'.</p>

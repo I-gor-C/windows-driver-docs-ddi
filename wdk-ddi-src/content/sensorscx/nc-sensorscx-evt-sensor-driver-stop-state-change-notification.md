@@ -7,7 +7,7 @@ old-location: sensors\evt_sensor_driver_stop_state_change_notification.htm
 old-project: sensors
 ms.assetid: 53B064AF-D06B-46A0-9D77-2DA72F0B47D6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorDriver, OnSetProperties, ISensorDriver::OnSetProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ NTSTATUS EvtSensorDriverStopStateChangeNotification(
 ## -parameters
 <dl>
 
-### -param <i>Sensors</i> 
+### -param Sensors 
 
 <dd>
 <p>Holds information on the sensor being handled by the driver.</p>

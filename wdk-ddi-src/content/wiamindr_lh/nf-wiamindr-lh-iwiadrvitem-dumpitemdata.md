@@ -7,7 +7,7 @@ old-location: image\iwiadrvitem_dumpitemdata.htm
 old-project: image
 ms.assetid: e17da654-60a7-4942-99f9-f55df87a1ca3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IWiaDrvItem, DumpItemData, IWiaDrvItem::DumpItemData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT DumpItemData(
 ## -parameters
 <dl>
 
-### -param <i>bstrDrvItemData</i> [out, optional]
+### -param bstrDrvItemData [out, optional]
 
 <dd>
 <p>Points to an allocated buffer that will receive the <b>IWiaDrvItem</b> data. </p>

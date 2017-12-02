@@ -7,7 +7,7 @@ old-location: netvista\ndis_miniport_driver_wdi_characteristics.htm
 old-project: netvista
 ms.assetid: 2F69C228-FF2D-4277-A4C9-14FBADA1CD31
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -82,7 +82,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS_REVISION_1"></a><a id="ndis_miniport_driver_wdi_characteristics_revision_1"></a>NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS_REVISION_1
+### -field NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS_REVISION_1
 
 <dd>
 <p>Set the 
@@ -91,26 +91,26 @@ typedef struct _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS {
 </dl>
 </dd>
 
-### -field <b>WdiVersion</b>
+### -field WdiVersion
 
 <dd>
 <p>The version of WDI used by the driver. Set this member to one of the following values:</p>
 <p></p>
 <dl>
 
-### -field <a id="WDI_VERSION_LATEST"></a><a id="wdi_version_latest"></a>WDI_VERSION_LATEST
+### -field WDI_VERSION_LATEST
 
 <dd>
 <p>The latest WDI version</p>
 </dd>
 
-### -field <a id="WDI_VERSION_1_0_1"></a><a id="wdi_version_1_0_1"></a>WDI_VERSION_1_0_1
+### -field WDI_VERSION_1_0_1
 
 <dd>
 <p>WDI version 1.0.1</p>
 </dd>
 
-### -field <a id="WDI_VERSION_1_0"></a><a id="wdi_version_1_0"></a>WDI_VERSION_1_0
+### -field WDI_VERSION_1_0
 
 <dd>
 <p>WDI version 1.0</p>
@@ -118,61 +118,61 @@ typedef struct _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS {
 </dl>
 </dd>
 
-### -field <b>AllocateAdapterHandler</b>
+### -field AllocateAdapterHandler
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport-wdi-allocate-adapter.md">MiniportWdiAllocateAdapter</a> handler function.</p>
 </dd>
 
-### -field <b>FreeAdapterHandler</b>
+### -field FreeAdapterHandler
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport-wdi-free-adapter.md">MiniportWdiFreeAdapter</a> handler function.</p>
 </dd>
 
-### -field <b>OpenAdapterHandler</b>
+### -field OpenAdapterHandler
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport-wdi-open-adapter.md">MiniportWdiOpenAdapter</a> handler function.</p>
 </dd>
 
-### -field <b>CloseAdapterHandler</b>
+### -field CloseAdapterHandler
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport-wdi-close-adapter.md">MiniportWdiCloseAdapter</a> handler function.</p>
 </dd>
 
-### -field <b>StartOperationHandler</b>
+### -field StartOperationHandler
 
 <dd>
 <p>The entry point of the <a href="netvista.miniportwdistartoperation">MiniportWdiStartOperation</a> handler function.</p>
 </dd>
 
-### -field <b>StopOperationHandler</b>
+### -field StopOperationHandler
 
 <dd>
 <p>The entry point of the <a href="netvista.miniportwdistopoperation">MiniportWdiStopOperation</a> handler function.</p>
 </dd>
 
-### -field <b>PostPauseHandler</b>
+### -field PostPauseHandler
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport-wdi-post-adapter-pause.md">MiniportWdiPostAdapterPause</a> handler function.</p>
 </dd>
 
-### -field <b>PostRestartHandler</b>
+### -field PostRestartHandler
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport-wdi-post-adapter-restart.md">MiniportWdiPostAdapterRestart</a> handler function.</p>
 </dd>
 
-### -field <b>HangDiagnoseHandler</b>
+### -field HangDiagnoseHandler
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport-wdi-adapter-hang-diagnose.md">MiniportWdiAdapterHangDiagnose</a> handler function.</p>
 </dd>
 
-### -field <b>TalTxRxInitializeHandler</b>
+### -field TalTxRxInitializeHandler
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport-wdi-tal-txrx-initialize.md">MiniportWdiTalTxRxInitialize</a> handler function.
@@ -180,7 +180,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS {
 </p>
 </dd>
 
-### -field <b>TalTxRxDeinitializeHandler</b>
+### -field TalTxRxDeinitializeHandler
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport-wdi-tal-txrx-deinitialize.md">MiniportWdiTalTxRxDeinitialize</a> handler function.
@@ -188,7 +188,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS {
 </p>
 </dd>
 
-### -field <b>LeIdleNotificationHandler</b>
+### -field LeIdleNotificationHandler
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport-wdi-idle-notification.md">MiniportWdiIdleNotification</a> handler function.
@@ -196,7 +196,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS {
 </p>
 </dd>
 
-### -field <b>LeCancelIdleNotificationHandler</b>
+### -field LeCancelIdleNotificationHandler
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport-wdi-cancel-idle-notification.md">MiniportWdiCancelIdleNotification</a> handler function.

@@ -54,7 +54,7 @@ HRESULT KsSetPhysicalTime(
 ## -parameters
 <dl>
 
-### -param <i>Time</i> [in]
+### -param Time [in]
 
 <dd>
 <p>Physical time to which to set the underlying clock.</p>

@@ -59,19 +59,19 @@ NTSTATUS DxgkCbQueryServices(
 ## -parameters
 <dl>
 
-### -param <i>DeviceHandle</i> [in]
+### -param DeviceHandle [in]
 
 <dd>
 <p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
 </dd>
 
-### -param <i>ServicesType</i> [in]
+### -param ServicesType [in]
 
 <dd>
 <p>A constant from the <a href="..\dispmprt\ne-dispmprt-dxgk-services.md">DXGK_SERVICES</a> enumeration that specifies which interface is being requested. This parameter must be set to <b>DxgkServicesAgp</b>, <b>DxgkServicesDebugReport</b>, or <b>DxgkServicesTimedOperation</b>, as those are the only supported interfaces.</p>
 </dd>
 
-### -param <i>Interface</i> [in, out]
+### -param Interface [in, out]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure that receives the requested interface.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcstype.htm
 old-project: netvista
 ms.assetid: 557fc92e-6550-44ea-ac09-bb0b74e1275f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILMSGDCSTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DCSTYPE_MSGWAIT"></a><a id="ril_dcstype_msgwait"></a><b>RIL_DCSTYPE_MSGWAIT</b>
+### -field RIL_DCSTYPE_MSGWAIT
 
 <dd></dd>
 
-### -field <a id="RIL_DCSTYPE_MSGCLASS"></a><a id="ril_dcstype_msgclass"></a><b>RIL_DCSTYPE_MSGCLASS</b>
+### -field RIL_DCSTYPE_MSGCLASS
 
 <dd></dd>
 
-### -field <a id="RIL_DCSTYPE_LANGUAGE"></a><a id="ril_dcstype_language"></a><b>RIL_DCSTYPE_LANGUAGE</b>
+### -field RIL_DCSTYPE_LANGUAGE
 
 <dd></dd>
 
-### -field <a id="RIL_DCSTYPE_MAX"></a><a id="ril_dcstype_max"></a><b>RIL_DCSTYPE_MAX</b>
+### -field RIL_DCSTYPE_MAX
 
 <dd></dd>
 </dl>

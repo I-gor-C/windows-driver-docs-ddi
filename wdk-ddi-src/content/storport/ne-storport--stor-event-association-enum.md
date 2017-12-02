@@ -58,25 +58,25 @@ typedef enum _STOR_EVENT_ASSOCIATION_ENUM {
 ## -enum-fields
 <dl>
 
-### -field <a id="StorEventAdapterAssociation"></a><a id="storeventadapterassociation"></a><a id="STOREVENTADAPTERASSOCIATION"></a><b>StorEventAdapterAssociation</b>
+### -field StorEventAdapterAssociation
 
 <dd>
 <p>The event is associated with the adapter.</p>
 </dd>
 
-### -field <a id="StorEventLunAssociation"></a><a id="storeventlunassociation"></a><a id="STOREVENTLUNASSOCIATION"></a><b>StorEventLunAssociation</b>
+### -field StorEventLunAssociation
 
 <dd>
 <p>The event is associated with the LUN.</p>
 </dd>
 
-### -field <a id="StorEventTargetAssociation"></a><a id="storeventtargetassociation"></a><a id="STOREVENTTARGETASSOCIATION"></a><b>StorEventTargetAssociation</b>
+### -field StorEventTargetAssociation
 
 <dd>
 <p>The event is associated with the target.</p>
 </dd>
 
-### -field <a id="StorEventInvalidAssociation"></a><a id="storeventinvalidassociation"></a><a id="STOREVENTINVALIDASSOCIATION"></a><b>StorEventInvalidAssociation</b>
+### -field StorEventInvalidAssociation
 
 <dd>
 <p>Marks end of valid enumeration range</p>

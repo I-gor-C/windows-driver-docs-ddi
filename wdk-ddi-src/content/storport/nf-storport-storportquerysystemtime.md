@@ -55,7 +55,7 @@ STORPORT_API VOID StorPortQuerySystemTime(
 ## -parameters
 <dl>
 
-### -param <i>CurrentTime</i> [out]
+### -param CurrentTime [out]
 
 <dd>
 <p>Pointer to the current time, on return. </p>

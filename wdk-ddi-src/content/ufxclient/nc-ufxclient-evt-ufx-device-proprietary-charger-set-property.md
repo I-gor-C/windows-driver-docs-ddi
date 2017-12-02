@@ -63,13 +63,13 @@ typedef EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY PFN_UFX_DEVICE_PROPRIETA
 ## -parameters
 <dl>
 
-### -param <i>UfxDevice</i> [in]
+### -param UfxDevice [in]
 
 <dd>
-<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.</p>
+<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>.</p>
 </dd>
 
-### -param <i>WdfRequest</i> [in]
+### -param WdfRequest [in]
 
 <dd>
 <p>The handle framework request object that for an <a href="..\charging\ni-charging-ioctl-internal-configure-charger-property.md">IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY</a> request from the battery minidriver. </p>
@@ -125,10 +125,10 @@ typedef EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY PFN_UFX_DEVICE_PROPRIETA
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ufxdevicecreate">UfxDeviceCreate</a>
+<a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>
 </dt>
 <dt>
-<a href="buses.ufxdeviceproprietarychargerdetectcomplete">UfxDeviceProprietaryChargerDetectComplete</a>
+<a href="..\ufxclient\nf-ufxclient-ufxdeviceproprietarychargerdetectcomplete.md">UfxDeviceProprietaryChargerDetectComplete</a>
 </dt>
 </dl>
 <p> </p>

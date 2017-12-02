@@ -55,13 +55,13 @@ NTSTATUS RtlUIntToInt8(
 ## -parameters
 <dl>
 
-### -param <i>uOperand</i> [in]
+### -param uOperand [in]
 
 <dd>
 <p>The value to be converted.</p>
 </dd>
 
-### -param <i>pi8Result</i> [out]
+### -param pi8Result [out]
 
 <dd>
 <p>A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

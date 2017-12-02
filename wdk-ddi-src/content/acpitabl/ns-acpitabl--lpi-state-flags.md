@@ -7,7 +7,7 @@ old-location: acpi\lpi_state_flags.htm
 old-project: acpi
 ms.assetid: 3A9DECE8-E85A-49D5-8AF1-6C7BA8B1AB7D
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: LPI_STATE_FLAGS, LPI_STATE_FLAGS, *PLPI_STATE_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef union _LPI_STATE_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>{
+### -field {
         ULONG Disabled:1;
         ULONG CounterUnavailable:1;
         ULONG Reserved:30;
@@ -68,7 +68,7 @@ typedef union _LPI_STATE_FLAGS {
 <p>An LPI state as a structure.</p>
 </dd>
 
-### -field <b>AsUlong</b>
+### -field AsUlong
 
 <dd>
 <p>An LPI state as an integer. </p>

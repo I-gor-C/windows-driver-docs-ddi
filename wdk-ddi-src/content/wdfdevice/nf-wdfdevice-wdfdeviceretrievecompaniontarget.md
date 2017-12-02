@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceretrievecompaniontarget.htm
 old-project: wdf
 ms.assetid: 2ca34fb7-72c1-4253-ad5b-bc829a1ba540
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceRetrieveCompanionTarget
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ NTSTATUS WdfDeviceRetrieveCompanionTarget(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd></dd>
 
-### -param <i>CompanionTarget</i> [out]
+### -param CompanionTarget [out]
 
 <dd></dd>
 </dl>

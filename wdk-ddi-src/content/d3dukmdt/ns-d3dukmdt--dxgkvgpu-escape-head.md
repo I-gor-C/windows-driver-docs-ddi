@@ -55,13 +55,13 @@ typedef struct _DXGKVGPU_ESCAPE_HEAD  {
 ## -struct-fields
 <dl>
 
-### -field <b>Luid</b>
+### -field Luid
 
 <dd>
 <p>The ID of the escape input.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The escape type.</p>

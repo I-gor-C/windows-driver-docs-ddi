@@ -55,7 +55,7 @@ VOID SERCX2_CUSTOM_RECEIVE_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
 <p>A pointer to the <a href="..\sercx\ns-sercx--sercx2-custom-receive-config.md">SERCX2_CUSTOM_RECEIVE_CONFIG</a> structure that is to be initialized.</p>

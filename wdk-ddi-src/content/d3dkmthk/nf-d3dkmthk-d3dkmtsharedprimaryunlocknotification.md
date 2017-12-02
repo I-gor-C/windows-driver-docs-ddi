@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTSharedPrimaryUnLockNotification(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-sharedprimaryunlocknotification.md">D3DKMT_SHAREDPRIMARYUNLOCKNOTIFICATION</a> structure that describes the shared primary surface that was unlocked.</p>

@@ -57,13 +57,13 @@ ULONG StorPortInitializeSpinlock(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Lock</i> [out]
+### -param Lock [out]
 
 <dd>
 <p>Pointer to a spin lock of type <b>STOR_KSPIN_LOCK</b>, for which the caller must provide the storage</p>

@@ -57,13 +57,13 @@ BOOLEAN VideoPortSignalDmaComplete(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>pDmaHandle</i> [in]
+### -param pDmaHandle [in]
 
 <dd>
 <p>Pointer to a DMA handle. To obtain the appropriate DMA handle, use the value in the <b>OutputBuffer</b> member of the <i>pVrp</i> parameter after <a href="..\video\nf-video-videoportlockpages.md">VideoPortLockPages</a> returns. </p>

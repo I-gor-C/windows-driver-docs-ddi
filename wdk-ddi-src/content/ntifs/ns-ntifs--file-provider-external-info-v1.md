@@ -7,7 +7,7 @@ old-location: ifsk\file_provider_external_info_v1.htm
 old-project: ifsk
 ms.assetid: 842D7F4A-3352-469A-B7C1-E075432107CA
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILE_PROVIDER_EXTERNAL_INFO_V1, FILE_PROVIDER_EXTERNAL_INFO_V1, *PFILE_PROVIDER_EXTERNAL_INFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ typedef struct _FILE_PROVIDER_EXTERNAL_INFO_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the provider to use. Specify FILE_PROVIDER_CURRENT_VERSION.</p>
 </dd>
 
-### -field <b>Algorithm</b>
+### -field Algorithm
 
 <dd>
 <p>Specifies the compression algorithm that is used to compress this file. Currently defined algorithms are: </p>
@@ -74,7 +74,7 @@ typedef struct _FILE_PROVIDER_EXTERNAL_INFO_V1 {
 </ul>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies flags for the operation. Reserved for future use, should be 0.</p>
@@ -114,4 +114,4 @@ typedef struct _FILE_PROVIDER_EXTERNAL_INFO_V1 {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_PROVIDER_EXTERNAL_INFO_V1 structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_PROVIDER_EXTERNAL_INFO_V1 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

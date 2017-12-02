@@ -60,37 +60,37 @@ PIRP IoBuildAsynchronousFsdRequest(
 ## -parameters
 <dl>
 
-### -param <i>MajorFunction</i> [in]
+### -param MajorFunction [in]
 
 <dd>
 <p>The major function code to be set in the IRP. This code can be <a href="https://msdn.microsoft.com/library/windows/hardware/ff549268">IRP_MJ_PNP</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549235">IRP_MJ_FLUSH_BUFFERS</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff549423">IRP_MJ_SHUTDOWN</a>.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to the next-lower driver's device object. This object represents the target device for the read, write, flush, or shutdown operation.</p>
 </dd>
 
-### -param <i>Buffer</i> [in, out]
+### -param Buffer [in, out]
 
 <dd>
 <p>A pointer to a buffer into which data is read or from which data is written. The value of this argument is <b>NULL</b> for flush and shutdown requests.</p>
 </dd>
 
-### -param <i>Length</i> [in, optional]
+### -param Length [in, optional]
 
 <dd>
 <p>The length, in bytes, of the buffer pointed to by <i>Buffer</i>. For devices such as disks, this value must be an integer multiple of the sector size. Starting with Windows 8, the sector size can be 4,096 or 512 bytes. In earlier versions of Windows, the sector size is always 512 bytes. This parameter is required for read and write requests, but must be zero for flush and shutdown requests.</p>
 </dd>
 
-### -param <i>StartingOffset</i> [in, optional]
+### -param StartingOffset [in, optional]
 
 <dd>
 <p>A pointer to the starting offset on the input/output media. The value of this argument is zero for flush and shutdown requests.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [in, optional]
+### -param IoStatusBlock [in, optional]
 
 <dd>
 <p>A pointer to the address of an I/O status block in which the to-be-called drivers return final status about the requested operation.</p>
@@ -109,11 +109,11 @@ PIRP IoBuildAsynchronousFsdRequest(
 
 <p>An intermediate or highest-level driver also can call <a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>, <a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>, or <a href="..\wdm\nf-wdm-iobuildsynchronousfsdrequest.md">IoBuildSynchronousFsdRequest</a> to set up requests it sends to lower-level drivers. Only a highest-level driver can call <a href="..\ntddk\nf-ntddk-iomakeassociatedirp.md">IoMakeAssociatedIrp</a>.</p>
 
-<p>During an <b>IoBuildAsynchronousFsdRequest</b> call, the I/O manager sets the <b>Tail.Overlay.Thread</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure to point to the caller's thread object, but does <u>not</u> take a counted reference to the thread object on behalf of the caller. After the caller sends the IRP to the driver for the target device, this driver might use the <b>Tail.Overlay.Thread</b> member to access the thread object. For example, a storage driver might call the <a href="..\ntddk\nf-ntddk-iosetharderrororverifydevice.md">IoSetHardErrorOrVerifyDevice</a> routine and supply a pointer to the IRP as an input parameter. During this call, <b>IoSetHardErrorOrVerifyDevice</b> uses the <b>Tail.Overlay.Thread</b> member to access the thread object. When the thread object is accessed in this way, the driver that called <b>IoBuildAsynchronousFsdRequest</b> to allocate the IRP is responsible for ensuring that the thread object stays valid while the IRP is being handled.</p>
+<p>During an <b>IoBuildAsynchronousFsdRequest</b> call, the I/O manager sets the <b>Tail.Overlay.Thread</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure to point to the caller's thread object, but does <u>not</u> take a counted reference to the thread object on behalf of the caller. After the caller sends the IRP to the driver for the target device, this driver might use the <b>Tail.Overlay.Thread</b> member to access the thread object. For example, a storage driver might call the <a href="..\ntddk\nf-ntddk-iosetharderrororverifydevice.md">IoSetHardErrorOrVerifyDevice</a> routine and supply a pointer to the IRP as an input parameter. During this call, <b>IoSetHardErrorOrVerifyDevice</b> uses the <b>Tail.Overlay.Thread</b> member to access the thread object. When the thread object is accessed in this way, the driver that called <b>IoBuildAsynchronousFsdRequest</b> to allocate the IRP is responsible for ensuring that the thread object stays valid while the IRP is being handled.</p>
 
 <p>To keep the thread object valid, the driver that calls <b>IoBuildAsynchronousFsdRequest</b> can take a counted reference on the thread object before sending the IRP. For example, this driver can call the <a href="..\wdm\nf-wdm-obreferenceobjectbypointerwithtag.md">ObReferenceObjectByPointerWithTag</a> routine and supply, as the <i>Object</i> parameter, the object pointer from the <b>Tail.Overlay.Thread</b> member of the <b>IRP</b> structure. Later, this driver's completion routine can dereference the object by calling a routine such as <a href="..\wdm\nf-wdm-obdereferenceobjectwithtag.md">ObDereferenceObjectWithTag</a>.</p>
 
-<p>A driver might call <b>IoBuildAsynchronousFsdRequest</b> in one thread, and send the IRP allocated by this call in another thread. Before sending the IRP, this driver should set the <b>Tail.Overlay.Thread</b> member of the IRP to point to the thread object for the sending thread. Typically, the driver calls the <a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a> routine to get the thread object pointer.</p>
+<p>A driver might call <b>IoBuildAsynchronousFsdRequest</b> in one thread, and send the IRP allocated by this call in another thread. Before sending the IRP, this driver should set the <b>Tail.Overlay.Thread</b> member of the IRP to point to the thread object for the sending thread. Typically, the driver calls the <a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a> routine to get the thread object pointer.</p>
 
 <p>A driver that calls <b>IoBuildAsynchronousFsdRequest</b> to allocate an IRP does not necessarily need to take a counted reference on the thread object pointed to by the <b>Tail.Overlay.Thread</b> member of the IRP. The driver might instead use another technique to guarantee that this thread object remains valid while the IRP is being handled. For example, if the driver created the thread, the thread can wait until the IRP is completed to terminate itself.</p>
 
@@ -222,7 +222,7 @@ PIRP IoBuildAsynchronousFsdRequest(
 <a href="..\ntddk\nf-ntddk-iosetharderrororverifydevice.md">IoSetHardErrorOrVerifyDevice</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-mmunlockpages.md">MmUnlockPages</a>
@@ -234,7 +234,7 @@ PIRP IoBuildAsynchronousFsdRequest(
 <a href="..\wdm\nf-wdm-obreferenceobjectbypointerwithtag.md">ObReferenceObjectByPointerWithTag</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 </dl>
 <p> </p>

@@ -58,13 +58,13 @@ VOID APIENTRY ResourceReadAfterWriteHazard(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hResource</i> [in]
+### -param hResource [in]
 
 <dd>
 <p> A handle to the resource.</p>

@@ -73,7 +73,7 @@ req.product: Windows 10 or later.
 ## -remarks
 <p><b>IPrinterBidiSetRequestCallback</b> provides the Bidi response string, and <b>HRESULT</b> value returned from the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd144984(v=vs.85).aspx">IBidiSpl2::SendRecvXmlString</a> method. In other words,  this interface provides the results of the attempt to send data to the device. </p>
 
-<p><b>IPrinterBidiSetRequestCallback</b>  helps to make it possible to perform device maintenance from a UWP  device app or from a printer extension. For more information, see <a href="NULL">Device Maintenance</a>.</p>
+<p><b>IPrinterBidiSetRequestCallback</b>  helps to make it possible to perform device maintenance from a UWP  device app or from a printer extension. For more information, see <a href="https://msdn.microsoft.com/310E92A9-F751-4346-9B2D-0578A136AD20">Device Maintenance</a>.</p>
 
 ## -requirements
 <table>
@@ -108,7 +108,7 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="NULL">Device Maintenance</a>
+<a href="https://msdn.microsoft.com/310E92A9-F751-4346-9B2D-0578A136AD20">Device Maintenance</a>
 </dt>
 <dt><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd144984(v=vs.85).aspx">IBidiSpl2::SendRecvXmlString</a></dt>
 <dt>

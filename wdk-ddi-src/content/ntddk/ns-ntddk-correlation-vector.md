@@ -56,7 +56,7 @@ typedef struct _CORRELATION_VECTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the correlation vector. Possible values are: </p>
@@ -67,7 +67,7 @@ typedef struct _CORRELATION_VECTOR {
 </ul>
 </dd>
 
-### -field <b>Vector</b>
+### -field Vector
 
 <dd>
 <p>An array CHARs that represents the correlation vector.</p>

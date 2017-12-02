@@ -58,19 +58,19 @@ HRESULT DrvXMoveTo(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>x</i> 
+### -param x 
 
 <dd>
 <p>Caller-supplied value representing the number of units the cursor should be moved. The unit is defined by the MV_GRAPHICS flags in <i>dwFlags</i>.</p>
 </dd>
 
-### -param <i>dwFlags</i> 
+### -param dwFlags 
 
 <dd>
 <p>One or more of the following caller-supplied bit flags:</p>
@@ -120,7 +120,7 @@ HRESULT DrvXMoveTo(
 <p> </p>
 </dd>
 
-### -param <i>piResult</i> [out]
+### -param piResult [out]
 
 <dd>
 <p>Receives the method-supplied result of subtracting the actual new cursor position from the requested new cursor position. This value might be zero, but it is always nonnegative.</p>

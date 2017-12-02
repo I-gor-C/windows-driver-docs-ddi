@@ -62,55 +62,55 @@ typedef struct _STORAGE_TEMPERATURE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>Identifies the instance of temperature information. Starts from 0. Index 0 may indicate a composite value.      </p>
 </dd>
 
-### -field <b>Temperature</b>
+### -field Temperature
 
 <dd>
 <p>A signed value that indicates the current temperature, in degrees Celsius. </p>
 </dd>
 
-### -field <b>OverThreshold</b>
+### -field OverThreshold
 
 <dd>
 <p>A signed value that specifies the maximum temperature within the desired threshold, in degrees Celsius.</p>
 </dd>
 
-### -field <b>UnderThreshold</b>
+### -field UnderThreshold
 
 <dd>
 <p>A signed value that specifies the minimum temperature within the desired threshold, in degrees Celsius.</p>
 </dd>
 
-### -field <b>OverThresholdChangable</b>
+### -field OverThresholdChangable
 
 <dd>
 <p>Indicates if <i>OverThreshold</i> can be changed by using <a href="..\ntddstor\ni-ntddstor-ioctl-storage-set-temperature-threshold.md">IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD</a>.</p>
 </dd>
 
-### -field <b>UnderThresholdChangable</b>
+### -field UnderThresholdChangable
 
 <dd>
 <p>Indicates if <i>UnderThreshold</i> can be changed by using <a href="..\ntddstor\ni-ntddstor-ioctl-storage-set-temperature-threshold.md">IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD</a>.</p>
 </dd>
 
-### -field <b>EventGenerated</b>
+### -field EventGenerated
 
 <dd>
 <p>Indicates if a notification will be generated when the current temperature crosses a threshold.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for future use.</p>

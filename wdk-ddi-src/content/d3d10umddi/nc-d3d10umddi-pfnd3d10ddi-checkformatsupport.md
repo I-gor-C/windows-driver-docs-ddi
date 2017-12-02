@@ -59,67 +59,67 @@ VOID APIENTRY CheckFormatSupport(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>Format</i> [in]
+### -param Format [in]
 
 <dd>
 <p> A -typed value of type <a href="direct3ddxgi.dxgi_format">DXGI_FORMAT</a> indicates the pixel format to retrieve capabilities for. </p>
 </dd>
 
-### -param <i>pFormatCaps</i> [out]
+### -param pFormatCaps [out]
 
 <dd>
 <p>A pointer to a variable that receives a valid bitwise <b>OR</b> of the following values that indicate the capabilities.</p>
 <dl class="indent">
 
-### -param <a id="D3D10_DDI_FORMAT_SUPPORT_SHADER_SAMPLE"></a><a id="d3d10_ddi_format_support_shader_sample"></a><p><a id="D3D10_DDI_FORMAT_SUPPORT_SHADER_SAMPLE"></a><a id="d3d10_ddi_format_support_shader_sample"></a><b>D3D10_DDI_FORMAT_SUPPORT_SHADER_SAMPLE</b> (0x00000001)</p>
+### -param D3D10_DDI_FORMAT_SUPPORT_SHADER_SAMPLE (0x00000001)
 
 
 <dd>
 <p>The format can be sampled with any filter in shaders.</p>
 </dd>
 
-### -param <a id="D3D10_DDI_FORMAT_SUPPORT_RENDERTARGET"></a><a id="d3d10_ddi_format_support_rendertarget"></a><p><a id="D3D10_DDI_FORMAT_SUPPORT_RENDERTARGET"></a><a id="d3d10_ddi_format_support_rendertarget"></a><b>D3D10_DDI_FORMAT_SUPPORT_RENDERTARGET</b> (0x00000002)</p>
+### -param D3D10_DDI_FORMAT_SUPPORT_RENDERTARGET (0x00000002)
 
 
 <dd>
 <p>The format can be a render target.</p>
 </dd>
 
-### -param <a id="D3D10_DDI_FORMAT_SUPPORT_BLENDABLE"></a><a id="d3d10_ddi_format_support_blendable"></a><p><a id="D3D10_DDI_FORMAT_SUPPORT_BLENDABLE"></a><a id="d3d10_ddi_format_support_blendable"></a><b>D3D10_DDI_FORMAT_SUPPORT_BLENDABLE</b> (0x00000004)</p>
+### -param D3D10_DDI_FORMAT_SUPPORT_BLENDABLE (0x00000004)
 
 
 <dd>
 <p>The format is blendable. (You can set this value only if the format can be a render target.)</p>
 </dd>
 
-### -param <a id="D3D10_DDI_FORMAT_SUPPORT_MULTISAMPLE_RENDERTARGET"></a><a id="d3d10_ddi_format_support_multisample_rendertarget"></a><p><a id="D3D10_DDI_FORMAT_SUPPORT_MULTISAMPLE_RENDERTARGET"></a><a id="d3d10_ddi_format_support_multisample_rendertarget"></a><b>D3D10_DDI_FORMAT_SUPPORT_MULTISAMPLE_RENDERTARGET</b> (0x00000008)</p>
+### -param D3D10_DDI_FORMAT_SUPPORT_MULTISAMPLE_RENDERTARGET (0x00000008)
 
 
 <dd>
 <p>The format can be a render target with a sample count that is greater than one.</p>
 </dd>
 
-### -param <a id="D3D10_DDI_FORMAT_SUPPORT_MULTISAMPLE_LOAD"></a><a id="d3d10_ddi_format_support_multisample_load"></a><p><a id="D3D10_DDI_FORMAT_SUPPORT_MULTISAMPLE_LOAD"></a><a id="d3d10_ddi_format_support_multisample_load"></a><b>D3D10_DDI_FORMAT_SUPPORT_MULTISAMPLE_LOAD</b> (0x00000010)</p>
+### -param D3D10_DDI_FORMAT_SUPPORT_MULTISAMPLE_LOAD (0x00000010)
 
 
 <dd>
 <p>The format can be used for reading individual samples from multiple-sample resources.</p>
 </dd>
 
-### -param <a id="D3D10_DDI_FORMAT_SUPPORT_NOT_SUPPORTED"></a><a id="d3d10_ddi_format_support_not_supported"></a><p><a id="D3D10_DDI_FORMAT_SUPPORT_NOT_SUPPORTED"></a><a id="d3d10_ddi_format_support_not_supported"></a><b>D3D10_DDI_FORMAT_SUPPORT_NOT_SUPPORTED</b> (0x80000000)</p>
+### -param D3D10_DDI_FORMAT_SUPPORT_NOT_SUPPORTED (0x80000000)
 
 
 <dd>
 <p>The display device does not support the format at all. This value is currently only valid for the <b>DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM</b>  format. If the driver sets this value, the driver must not set any of the other values.</p>
 </dd>
 
-### -param <a id="D3D11_1DDI_FORMAT_SUPPORT_DECODER_OUTPUT"></a><a id="d3d11_1ddi_format_support_decoder_output"></a><p><a id="D3D11_1DDI_FORMAT_SUPPORT_DECODER_OUTPUT"></a><a id="d3d11_1ddi_format_support_decoder_output"></a><b>D3D11_1DDI_FORMAT_SUPPORT_DECODER_OUTPUT</b> (0x00000020)</p>
+### -param D3D11_1DDI_FORMAT_SUPPORT_DECODER_OUTPUT (0x00000020)
 
 
 <dd>
@@ -127,7 +127,7 @@ VOID APIENTRY CheckFormatSupport(
 <p>Available starting with Windows 8.</p>
 </dd>
 
-### -param <a id="D3D11_1DDI_FORMAT_SUPPORT_VIDEO_PROCESSOR_OUTPUT"></a><a id="d3d11_1ddi_format_support_video_processor_output"></a><p><a id="D3D11_1DDI_FORMAT_SUPPORT_VIDEO_PROCESSOR_OUTPUT"></a><a id="d3d11_1ddi_format_support_video_processor_output"></a><b>D3D11_1DDI_FORMAT_SUPPORT_VIDEO_PROCESSOR_OUTPUT</b> (0x00000040)</p>
+### -param D3D11_1DDI_FORMAT_SUPPORT_VIDEO_PROCESSOR_OUTPUT (0x00000040)
 
 
 <dd>
@@ -135,7 +135,7 @@ VOID APIENTRY CheckFormatSupport(
 <p>Available starting with Windows 8.</p>
 </dd>
 
-### -param <a id="D3D11_1DDI_FORMAT_SUPPORT_VIDEO_PROCESSOR_INPUT"></a><a id="d3d11_1ddi_format_support_video_processor_input"></a><p><a id="D3D11_1DDI_FORMAT_SUPPORT_VIDEO_PROCESSOR_INPUT"></a><a id="d3d11_1ddi_format_support_video_processor_input"></a><b>D3D11_1DDI_FORMAT_SUPPORT_VIDEO_PROCESSOR_INPUT</b> (0x00000080)</p>
+### -param D3D11_1DDI_FORMAT_SUPPORT_VIDEO_PROCESSOR_INPUT (0x00000080)
 
 
 <dd>
@@ -143,7 +143,7 @@ VOID APIENTRY CheckFormatSupport(
 <p>Available starting with Windows 8.</p>
 </dd>
 
-### -param <a id="D3D11_1DDI_FORMAT_SUPPORT_VERTEX_BUFFER"></a><a id="d3d11_1ddi_format_support_vertex_buffer"></a><p><a id="D3D11_1DDI_FORMAT_SUPPORT_VERTEX_BUFFER"></a><a id="d3d11_1ddi_format_support_vertex_buffer"></a><b>D3D11_1DDI_FORMAT_SUPPORT_VERTEX_BUFFER</b> (0x00000100)</p>
+### -param D3D11_1DDI_FORMAT_SUPPORT_VERTEX_BUFFER (0x00000100)
 
 
 <dd>
@@ -151,7 +151,7 @@ VOID APIENTRY CheckFormatSupport(
 <p>Available starting with Windows 8.</p>
 </dd>
 
-### -param <a id="D3D11_1DDI_FORMAT_SUPPORT_UAV_WRITES"></a><a id="d3d11_1ddi_format_support_uav_writes"></a><p><a id="D3D11_1DDI_FORMAT_SUPPORT_UAV_WRITES"></a><a id="d3d11_1ddi_format_support_uav_writes"></a><b>D3D11_1DDI_FORMAT_SUPPORT_UAV_WRITES</b> (0x00000200)</p>
+### -param D3D11_1DDI_FORMAT_SUPPORT_UAV_WRITES (0x00000200)
 
 
 <dd>
@@ -159,7 +159,7 @@ VOID APIENTRY CheckFormatSupport(
 <p>Available starting with Windows 8.</p>
 </dd>
 
-### -param <a id="D3D11_1DDI_FORMAT_SUPPORT_BUFFER"></a><a id="d3d11_1ddi_format_support_buffer"></a><p><a id="D3D11_1DDI_FORMAT_SUPPORT_BUFFER"></a><a id="d3d11_1ddi_format_support_buffer"></a><b>D3D11_1DDI_FORMAT_SUPPORT_BUFFER</b> (0x00000400)</p>
+### -param D3D11_1DDI_FORMAT_SUPPORT_BUFFER (0x00000400)
 
 
 <dd>
@@ -167,7 +167,7 @@ VOID APIENTRY CheckFormatSupport(
 <p>Available starting with Windows 8.</p>
 </dd>
 
-### -param <a id="D3D11_1DDI_FORMAT_SUPPORT_CAPTURE"></a><a id="d3d11_1ddi_format_support_capture"></a><p><a id="D3D11_1DDI_FORMAT_SUPPORT_CAPTURE"></a><a id="d3d11_1ddi_format_support_capture"></a><b>D3D11_1DDI_FORMAT_SUPPORT_CAPTURE</b> (0x00000800)</p>
+### -param D3D11_1DDI_FORMAT_SUPPORT_CAPTURE (0x00000800)
 
 
 <dd>
@@ -175,7 +175,7 @@ VOID APIENTRY CheckFormatSupport(
 <p>Available starting with Windows 8.</p>
 </dd>
 
-### -param <a id="D3D11_1DDI_FORMAT_SUPPORT_VIDEO_ENCODER"></a><a id="d3d11_1ddi_format_support_video_encoder"></a><p><a id="D3D11_1DDI_FORMAT_SUPPORT_VIDEO_ENCODER"></a><a id="d3d11_1ddi_format_support_video_encoder"></a><b>D3D11_1DDI_FORMAT_SUPPORT_VIDEO_ENCODER</b> (0x00001000)</p>
+### -param D3D11_1DDI_FORMAT_SUPPORT_VIDEO_ENCODER (0x00001000)
 
 
 <dd>
@@ -183,7 +183,7 @@ VOID APIENTRY CheckFormatSupport(
 <p>Available starting with Windows 8.</p>
 </dd>
 
-### -param <a id="D3D11_1DDI_FORMAT_SUPPORT_OUTPUT_MERGER_LOGIC_OP"></a><a id="d3d11_1ddi_format_support_output_merger_logic_op"></a><p><a id="D3D11_1DDI_FORMAT_SUPPORT_OUTPUT_MERGER_LOGIC_OP"></a><a id="d3d11_1ddi_format_support_output_merger_logic_op"></a><b>D3D11_1DDI_FORMAT_SUPPORT_OUTPUT_MERGER_LOGIC_OP</b> (0x00002000)</p>
+### -param D3D11_1DDI_FORMAT_SUPPORT_OUTPUT_MERGER_LOGIC_OP (0x00002000)
 
 
 <dd>
@@ -191,7 +191,7 @@ VOID APIENTRY CheckFormatSupport(
 <p>Available starting with Windows 8.</p>
 </dd>
 
-### -param <a id="D3D11_1DDI_FORMAT_SUPPORT_SHADER_GATHER"></a><a id="d3d11_1ddi_format_support_shader_gather"></a><p><a id="D3D11_1DDI_FORMAT_SUPPORT_SHADER_GATHER"></a><a id="d3d11_1ddi_format_support_shader_gather"></a><b>D3D11_1DDI_FORMAT_SUPPORT_SHADER_GATHER</b> (0x00004000)</p>
+### -param D3D11_1DDI_FORMAT_SUPPORT_SHADER_GATHER (0x00004000)
 
 
 <dd>
@@ -199,7 +199,7 @@ VOID APIENTRY CheckFormatSupport(
 <p>Available starting with Windows 8.</p>
 </dd>
 
-### -param <a id="D3D11_1DDI_FORMAT_SUPPORT_MULTIPLANE_OVERLAY"></a><a id="d3d11_1ddi_format_support_multiplane_overlay"></a><p><a id="D3D11_1DDI_FORMAT_SUPPORT_MULTIPLANE_OVERLAY"></a><a id="d3d11_1ddi_format_support_multiplane_overlay"></a><b>D3D11_1DDI_FORMAT_SUPPORT_MULTIPLANE_OVERLAY</b> (0x00008000)</p>
+### -param D3D11_1DDI_FORMAT_SUPPORT_MULTIPLANE_OVERLAY (0x00008000)
 
 
 <dd>
@@ -207,7 +207,7 @@ VOID APIENTRY CheckFormatSupport(
 <p>Available starting with Windows 8. However, multiplane overlays are supported only in WDDM 1.3 and later drivers, which were introduced with Windows 8.1.</p>
 </dd>
 
-### -param <a id="D3DWDDM1_3DDI_FORMAT_SUPPORT_TILED"></a><a id="d3dwddm1_3ddi_format_support_tiled"></a><p><a id="D3DWDDM1_3DDI_FORMAT_SUPPORT_TILED"></a><a id="d3dwddm1_3ddi_format_support_tiled"></a><b>D3DWDDM1_3DDI_FORMAT_SUPPORT_TILED</b> (0x00010000)</p>
+### -param D3DWDDM1_3DDI_FORMAT_SUPPORT_TILED (0x00010000)
 
 
 <dd>
@@ -215,7 +215,7 @@ VOID APIENTRY CheckFormatSupport(
 <p>Available starting with Windows 8.1, and supported only by WDDM 1.3 and later drivers.</p>
 </dd>
 
-### -param <a id="D3D10_DDI_FORMAT_SUPPORT_NOT_SUPPORTED"></a><a id="d3d10_ddi_format_support_not_supported"></a><p><a id="D3D10_DDI_FORMAT_SUPPORT_NOT_SUPPORTED"></a><a id="d3d10_ddi_format_support_not_supported"></a><b>D3D10_DDI_FORMAT_SUPPORT_NOT_SUPPORTED</b> (0x80000000)</p>
+### -param D3D10_DDI_FORMAT_SUPPORT_NOT_SUPPORTED (0x80000000)
 
 
 <dd>

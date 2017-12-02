@@ -57,19 +57,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="DMUS_STREAM_MIDI_INVALID"></a><a id="dmus_stream_midi_invalid"></a><b>DMUS_STREAM_MIDI_INVALID</b>
+### -field DMUS_STREAM_MIDI_INVALID
 
 <dd></dd>
 
-### -field <a id="DMUS_STREAM_MIDI_RENDER_"></a><a id="dmus_stream_midi_render_"></a><b>DMUS_STREAM_MIDI_RENDER </b>
+### -field DMUS_STREAM_MIDI_RENDER 
 
 <dd></dd>
 
-### -field <a id="DMUS_STREAM_MIDI_CAPTURE"></a><a id="dmus_stream_midi_capture"></a><b>DMUS_STREAM_MIDI_CAPTURE</b>
+### -field DMUS_STREAM_MIDI_CAPTURE
 
 <dd></dd>
 
-### -field <a id="DMUS_STREAM_WAVE_SINK"></a><a id="dmus_stream_wave_sink"></a><b>DMUS_STREAM_WAVE_SINK</b>
+### -field DMUS_STREAM_WAVE_SINK
 
 <dd></dd>
 </dl>

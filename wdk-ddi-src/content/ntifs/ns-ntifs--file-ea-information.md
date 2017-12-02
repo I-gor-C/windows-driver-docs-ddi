@@ -54,7 +54,7 @@ typedef struct _FILE_EA_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>EaSize</b>
+### -field EaSize
 
 <dd>
 <p>Specifies the combined length, in bytes, of the extended attributes for the file.</p>

@@ -55,13 +55,13 @@ typedef struct _MPIO_DISK_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberDrives</b>
+### -field NumberDrives
 
 <dd>
 <p>An unsigned 32-bitfield that represents the number of multi-path disks in the system.</p>
 </dd>
 
-### -field <b>DriveInfo</b>
+### -field DriveInfo
 
 <dd>
 <p>An array that returns the information representing each multi-path LUN (pseudo-LUN) in the system. The number of elements in the array is given by <i>NumberDrives</i> and each element represents an instance of an MPIO_DRIVE_INFO structure.</p>

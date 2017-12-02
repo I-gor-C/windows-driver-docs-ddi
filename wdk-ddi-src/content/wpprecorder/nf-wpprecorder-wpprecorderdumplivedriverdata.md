@@ -57,19 +57,19 @@ NTSTATUS WppRecorderDumpLiveDriverData(
 ## -parameters
 <dl>
 
-### -param <i>OutBuffer</i> 
+### -param OutBuffer 
 
 <dd>
 <p>Pointer to the buffer that was allocated by WppRecorderLogCreate.</p>
 </dd>
 
-### -param <i>OutBufferLength</i> 
+### -param OutBufferLength 
 
 <dd>
 <p>Pointer to a ULONG that contains the size of the output buffer pointed to by OutBuffer.</p>
 </dd>
 
-### -param <i>Guid</i> 
+### -param Guid 
 
 <dd>
 <p>Pointer to the WPP controller GUID that identifies the driver data.</p>

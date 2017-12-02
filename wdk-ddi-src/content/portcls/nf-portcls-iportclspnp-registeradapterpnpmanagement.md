@@ -55,13 +55,13 @@ NTSTATUS RegisterAdapterPnpManagement(
 ## -parameters
 <dl>
 
-### -param <i>pUnknown</i> [in]
+### -param pUnknown [in]
 
 <dd>
 <p>Specifies a pointer to <b>IUnknown</b> of <a href="..\portcls\nn-portcls-iadapterpnpmanagement.md">IAdapterPnpManagement</a>. </p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Specifies a pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.</p>
@@ -74,7 +74,7 @@ NTSTATUS RegisterAdapterPnpManagement(
 ## -remarks
 <p>When the <code>RegisterAdapterPowerManagement</code> method registers the PnP management interface for the adapter with PortCls, it allows the adapter driver to be notified of PnP state change events.</p>
 
-<p>For more information,  see <a href="NULL">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>
+<p>For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430A-BCAF-04E13FA15382">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>
 
 ## -requirements
 <table>

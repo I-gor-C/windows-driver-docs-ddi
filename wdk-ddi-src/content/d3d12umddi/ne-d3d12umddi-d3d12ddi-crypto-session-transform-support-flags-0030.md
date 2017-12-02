@@ -55,13 +55,13 @@ typedef enum _D3D12DDI_CRYPTO_SESSION_TRANSFORM_SUPPORT_FLAGS_0030 {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_CRYPTO_SESSION_TRANSFORM_SUPPORT_FLAG_0030_NONE"></a><a id="d3d12ddi_crypto_session_transform_support_flag_0030_none"></a><b>D3D12DDI_CRYPTO_SESSION_TRANSFORM_SUPPORT_FLAG_0030_NONE</b>
+### -field D3D12DDI_CRYPTO_SESSION_TRANSFORM_SUPPORT_FLAG_0030_NONE
 
 <dd>
 <p>A crypto session transform support flag is not available.</p>
 </dd>
 
-### -field <a id="D3D12DDI_CRYPTO_SESSION_TRANSFORM_SUPPORT_FLAG_0030_SUPPORTED"></a><a id="d3d12ddi_crypto_session_transform_support_flag_0030_supported"></a><b>D3D12DDI_CRYPTO_SESSION_TRANSFORM_SUPPORT_FLAG_0030_SUPPORTED</b>
+### -field D3D12DDI_CRYPTO_SESSION_TRANSFORM_SUPPORT_FLAG_0030_SUPPORTED
 
 <dd>
 <p>The crypto session transform support flag is supported.</p>

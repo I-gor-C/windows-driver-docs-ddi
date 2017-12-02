@@ -56,19 +56,19 @@ typedef struct _MPIO_DISK_HEALTH_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberDiskPackets</b>
+### -field NumberDiskPackets
 
 <dd>
 <p>An unsigned 32-bitfield that returns the number of available health packets that correspond to the number of multi-path disks under MPIO control.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Should be zero.</p>
 </dd>
 
-### -field <b>DiskHealthPackets</b>
+### -field DiskHealthPackets
 
 <dd>
 <p>An array of health information packets for all the available multi-path disks under MPIO control. The number of elements in the array is given by NumberDiskPackets, and each element of the array is an instance of an MPIO_DISK_HEALTH_CLASS structure.</p>

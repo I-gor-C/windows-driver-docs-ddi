@@ -56,15 +56,15 @@ typedef struct _D3DKMT_PINDIRECTFLIPRESOURCES {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd></dd>
 
-### -field <b>ResourceCount</b>
+### -field ResourceCount
 
 <dd></dd>
 
-### -field <b>pResourceList</b>
+### -field pResourceList
 
 <dd></dd>
 </dl>

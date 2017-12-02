@@ -7,7 +7,7 @@ old-location: netvista\rilexecutorflag_2.htm
 old-project: netvista
 ms.assetid: 691d962a-5775-462a-8c3f-d9b02e189810
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILEXECUTORFLAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_EXECUTORFLAG_HIGHPRIORITY"></a><a id="ril_executorflag_highpriority"></a><b>RIL_EXECUTORFLAG_HIGHPRIORITY</b>
+### -field RIL_EXECUTORFLAG_HIGHPRIORITY
 
 <dd></dd>
 
-### -field <a id="RIL_EXECUTORFLAG_ALL"></a><a id="ril_executorflag_all"></a><b>RIL_EXECUTORFLAG_ALL</b>
+### -field RIL_EXECUTORFLAG_ALL
 
 <dd></dd>
 </dl>

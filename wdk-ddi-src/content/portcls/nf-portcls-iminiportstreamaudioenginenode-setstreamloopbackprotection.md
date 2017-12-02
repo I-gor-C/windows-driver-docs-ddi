@@ -54,7 +54,7 @@ NTSTATUS SetStreamLoopbackProtection(
 ## -parameters
 <dl>
 
-### -param <i>ProtectionOption</i> [in]
+### -param ProtectionOption [in]
 
 <dd>
 <p>A CONSTRICTOR_OPTION enumeration  value that indicates status of the loopback protection option.</p>

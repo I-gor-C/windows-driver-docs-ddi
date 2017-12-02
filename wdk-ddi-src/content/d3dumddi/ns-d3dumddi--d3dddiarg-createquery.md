@@ -55,7 +55,7 @@ typedef struct _D3DDDIARG_CREATEQUERY {
 ## -struct-fields
 <dl>
 
-### -field <b>QueryType</b>
+### -field QueryType
 
 <dd>
 <p>[in] A D3DDDIQUERYTYPE-typed value that indicates the query type to create resources for. This member can be one of the following values.</p>
@@ -178,7 +178,7 @@ typedef struct _D3DDDIARG_CREATEQUERY {
 <p> </p>
 </dd>
 
-### -field <b>hQuery</b>
+### -field hQuery
 
 <dd>
 <p>[out] A handle to the query. The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createquery.md">CreateQuery</a> function returns this handle to the Microsoft Direct3D runtime. </p>

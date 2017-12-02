@@ -57,26 +57,26 @@ typedef struct _HW_CLOCK_OBJECT {
 ## -struct-fields
 <dl>
 
-### -field <b>HwClockFunction</b>
+### -field HwClockFunction
 
 <dd>
 <p>Pointer to the stream's <a href="stream.strminiclock">StrMiniClock</a> routine.</p>
 </dd>
 
-### -field <b>ClockSupportFlags</b>
+### -field ClockSupportFlags
 
 <dd>
 <p>Specifies which options the <i>StrMiniClock</i> routine supports.</p>
 <p></p>
 <dl>
 
-### -field <a id="CLOCK_SUPPORT_CAN_READ_ONBOARD_CLOCK"></a><a id="clock_support_can_read_onboard_clock"></a>CLOCK_SUPPORT_CAN_READ_ONBOARD_CLOCK
+### -field CLOCK_SUPPORT_CAN_READ_ONBOARD_CLOCK
 
 <dd>
 <p>The <i>StrMiniClock</i> routine can return the current clock value for the stream's clock. The <i>StrMiniClock</i> routine must be able to handle a <b>Function</b> setting of TIME_READ_ONBOARD_CLOCK in the <a href="..\strmini\ns-strmini--hw-time-context.md">HW_TIME_CONTEXT</a> structure passed as a parameter.</p>
 </dd>
 
-### -field <a id="CLOCK_SUPPORT_CAN_RETURN_STREAM_TIME"></a><a id="clock_support_can_return_stream_time"></a>CLOCK_SUPPORT_CAN_RETURN_STREAM_TIME
+### -field CLOCK_SUPPORT_CAN_RETURN_STREAM_TIME
 
 <dd>
 <p>The <i>StrMiniClock</i> routine can return the current presentation time stamp for the stream. The <i>StrMiniClock</i> routine must be able to handle a <b>Function</b> setting of TIME_GET_STREAM_TIME in the <a href="..\strmini\ns-strmini--hw-time-context.md">HW_TIME_CONTEXT</a> structure passed as a parameter.</p>
@@ -84,7 +84,7 @@ typedef struct _HW_CLOCK_OBJECT {
 </dl>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. Do not use.</p>

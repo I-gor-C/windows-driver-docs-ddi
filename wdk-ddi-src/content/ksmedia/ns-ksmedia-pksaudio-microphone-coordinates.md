@@ -59,7 +59,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>usType</b>
+### -field usType
 
 <dd>
 <p>Specifies the type of microphone in use at this coordinate location. The value of this member is one of the <b>KSMICARRAY_MICTYPE</b> enumeration values shown in the following table.</p>
@@ -133,31 +133,31 @@ typedef struct {
 <p>If the microphone is of type KSMICARRAY_MICTYPE_VENDORDEFINED, the value must be set to 0x0F. Additionally, the most significant bits will further define the type of microphone.</p>
 </dd>
 
-### -field <b>wXCoord</b>
+### -field wXCoord
 
 <dd>
 <p>Specifies the signed X-coordinate of the microphone, in millimeters. Acceptable values range from -32768 to 32767, inclusive.</p>
 </dd>
 
-### -field <b>wYCoord</b>
+### -field wYCoord
 
 <dd>
 <p>Specifies the signed Y-coordinate of the microphone, in millimeters. Acceptable values range from -32768 to 32767, inclusive.</p>
 </dd>
 
-### -field <b>wZCoord</b>
+### -field wZCoord
 
 <dd>
 <p>Specifies the signed Z-coordinate of the microphone, in millimeters. Acceptable values range from -32768 to 32767, inclusive.</p>
 </dd>
 
-### -field <b>wVerticalAngle</b>
+### -field wVerticalAngle
 
 <dd>
 <p>Specifies a value between -15708 and +15708.  When divided by 10,000, it gives a radian angle measurement.</p>
 </dd>
 
-### -field <b>wHorizontalAngle</b>
+### -field wHorizontalAngle
 
 <dd>
 <p>Specifies a value between -31416 and +31416.  When divided by 10,000, it gives a radian angle measurement.</p>

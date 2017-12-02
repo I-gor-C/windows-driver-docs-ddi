@@ -7,7 +7,7 @@ old-location: wdf\write_register_buffer_ushort.htm
 old-project: wdf
 ms.assetid: 45E51355-9570-4548-B056-D1655BED5462
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ void WRITE_REGISTER_BUFFER_USHORT(
 ## -parameters
 <dl>
 
-### -param <i>pDevice</i> [in]
+### -param pDevice [in]
 
 <dd>
 <p>Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.</p>
 </dd>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>A pointer to the register, which must be a mapped range in memory space.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to a buffer into which an array of USHORT values is to be written.</p>
 </dd>
 
-### -param <i>Count </i> [in]
+### -param Count  [in]
 
 <dd>
 <p>Specifies the number of USHORT values to write to the register.</p>

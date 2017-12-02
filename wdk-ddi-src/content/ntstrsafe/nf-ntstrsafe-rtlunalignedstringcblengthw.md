@@ -56,19 +56,19 @@ NTSTATUS RtlUnalignedStringCbLengthW(
 ## -parameters
 <dl>
 
-### -param <i>psz</i> [in]
+### -param psz [in]
 
 <dd>
 <p>Supplies a pointer to a buffer that contains a null-terminated string whose length <b>RtlUnalignedStringCbLengthW</b>  will check. </p>
 </dd>
 
-### -param <i>cbMax</i> [in]
+### -param cbMax [in]
 
 <dd>
 <p>Supplies the maximum number of bytes that are allowed in the buffer that <i>psz</i> points to, including the terminating NULL character. This value cannot exceed NTSTRSAFE_MAX_CCH * sizeof(WCHAR). </p>
 </dd>
 
-### -param <i>pcbLength</i> [out, optional]
+### -param pcbLength [out, optional]
 
 <dd>
 <p>Optional. If the caller supplies a non-<b>NULL</b> address pointer, the function loads the address with the length, in bytes, of the string that is contained in the buffer that <i>psz</i> points to. The length does not include the string's terminating NULL character.</p>

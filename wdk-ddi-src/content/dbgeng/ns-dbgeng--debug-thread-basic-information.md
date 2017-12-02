@@ -7,7 +7,7 @@ old-location: debugger\debug_thread_basic_information.htm
 old-project: debugger
 ms.assetid: e964ed63-6c00-4308-955c-f8a99490a248
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: DEBUG_THREAD_BASIC_INFORMATION, DEBUG_THREAD_BASIC_INFORMATION, *PDEBUG_THREAD_BASIC_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ typedef struct _DEBUG_THREAD_BASIC_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Valid</b>
+### -field Valid
 
 <dd>
 <p>A bitset that specifies which other members of the structure contain valid information. A member of the structure is valid if the corresponding bit flag is set in <b>Valid</b>.</p>
@@ -124,63 +124,63 @@ typedef struct _DEBUG_THREAD_BASIC_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>ExitStatus</b>
+### -field ExitStatus
 
 <dd>
 <p>The exit code of the thread. If the thread is still running, <b>ExitStatus</b> is set to STILL_ACTIVE.</p>
 <p><b>ExitStatus</b> is only valid if the  DEBUG_TBINFO_EXIT_STATUS bit flag is set in <b>Valid</b>.</p>
 </dd>
 
-### -field <b>PriorityClass</b>
+### -field PriorityClass
 
 <dd>
 <p>The priority class of the thread. The priority classes are defined by the <i>XXX</i>_PRIORITY_CLASS constants in WinBase.h. For more information about thread priority classes, see the Platform SDK.</p>
 <p><b>PriorityClass</b> is only valid if the DEBUG_TBINFO_PRIORITY_CLASS bit flag is set in <b>Valid</b>.</p>
 </dd>
 
-### -field <b>Priority</b>
+### -field Priority
 
 <dd>
 <p>The priority of the thread relative to the priority class. Some thread priorities are defined by the THREAD_PRIORITY_<i>XXX</i> constants in WinBase.h.  For more information about thread priorities,  see the Platform SDK.</p>
 <p><b>Priority</b> is only valid if the DEBUG_TBINFO_PRIORITY bit flag is set in <b>Valid</b>.</p>
 </dd>
 
-### -field <b>CreateTime</b>
+### -field CreateTime
 
 <dd>
 <p>The creation time of the thread.</p>
 <p><b>CreateTime</b> is only valid if the DEBUG_TBINFO_TIMES bit flag is set in <b>Valid</b>.</p>
 </dd>
 
-### -field <b>ExitTime</b>
+### -field ExitTime
 
 <dd>
 <p>The exit time of the thread.</p>
 <p><b>ExitTime</b> is only valid if the DEBUG_TBINFO_TIMES bit flag is set in <b>Valid</b>.</p>
 </dd>
 
-### -field <b>KernelTime</b>
+### -field KernelTime
 
 <dd>
 <p>The amount of time the thread has executed in kernel mode.</p>
 <p><b>KernelTime</b> is only valid if the DEBUG_TBINFO_TIMES bit flag is set in <b>Valid</b>.</p>
 </dd>
 
-### -field <b>UserTime</b>
+### -field UserTime
 
 <dd>
 <p>The amount of time the thread has executed in user-mode.</p>
 <p><b>UserTime</b> is only valid if the DEBUG_TBINFO_TIMES bit flag is set in <b>Valid</b>.</p>
 </dd>
 
-### -field <b>StartOffset</b>
+### -field StartOffset
 
 <dd>
 <p>The starting address of the thread.</p>
 <p><b>StartOffset</b> is only valid if the DEBUG_TBINFO_START_OFFSET bit flag is set in <b>Valid</b>.</p>
 </dd>
 
-### -field <b>Affinity</b>
+### -field Affinity
 
 <dd>
 <p>The thread affinity mask for the thread in a Symmetric Multiple Processor (SMP) computer. For more information about the thread affinity mask, see the Platform SDK.</p>

@@ -67,17 +67,17 @@ struct _URB_CONTROL_VENDOR_OR_CLASS_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>Hdr</b>
+### -field Hdr
 
 <dd>
 <p>Pointer to a <a href="buses._urb_header">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be one of URB_FUNCTION_CLASS_XXX or URB_FUNCTION_VENDOR_XXX GET_STATUS, and <b>Hdr.Length</b> must be <code>sizeof(_URB_CONTROL_VENDOR_OR_CLASS_REQUEST)</code>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>Reserved. Must be NULL.</dd>
 
-### -field <b>TransferFlags</b>
+### -field TransferFlags
 
 <dd>
 <p>
@@ -91,7 +91,7 @@ struct _URB_CONTROL_VENDOR_OR_CLASS_REQUEST {
 <tr>
 <td width="40%"><a id="USBD_TRANSFER_DIRECTION_IN"></a><a id="usbd_transfer_direction_in"></a><dl>
 
-### -field <b>USBD_TRANSFER_DIRECTION_IN</b>
+### -field USBD_TRANSFER_DIRECTION_IN
 
 </dl>
 </td>
@@ -102,7 +102,7 @@ struct _URB_CONTROL_VENDOR_OR_CLASS_REQUEST {
 <tr>
 <td width="40%"><a id="USBD_SHORT_TRANSFER_OK"></a><a id="usbd_short_transfer_ok"></a><dl>
 
-### -field <b>USBD_SHORT_TRANSFER_OK</b>
+### -field USBD_SHORT_TRANSFER_OK
 
 </dl>
 </td>
@@ -123,61 +123,61 @@ struct _URB_CONTROL_VENDOR_OR_CLASS_REQUEST {
 <p> </p>
 </dd>
 
-### -field <b>TransferBufferLength</b>
+### -field TransferBufferLength
 
 <dd>
 <p>Specifies the length, in bytes, of the buffer specified in <b>TransferBuffer</b> or described in <b>TransferBufferMDL</b>. The host controller driver returns the number of bytes sent to or read from the pipe in this member.</p>
 </dd>
 
-### -field <b>TransferBuffer</b>
+### -field TransferBuffer
 
 <dd>
 <p>Pointer to a resident buffer for the transfer or is <b>NULL</b> if an MDL is supplied in <b>TransferBufferMDL</b>. The contents of this buffer depend on the value of <b>TransferFlags</b>. If USBD_TRANSFER_DIRECTION_IN is specified this buffer will contain data read from the device on return from the host controller driver. Otherwise, this buffer contains driver-supplied data for transfer to the device.</p>
 </dd>
 
-### -field <b>TransferBufferMDL</b>
+### -field TransferBufferMDL
 
 <dd>
 <p>Pointer to an MDL that describes a resident buffer or is <b>NULL</b> if a buffer is supplied in <b>TransferBuffer</b>. The contents of the buffer depend on the value of <b>TransferFlags</b>. If USBD_TRANSFER_DIRECTION_IN is specified, the described buffer will contain data read from the device on return from the host controller driver. Otherwise, the buffer contains driver-supplied data for transfer to the device. This MDL must be allocated from nonpaged pool.</p>
 </dd>
 
-### -field <b>UrbLink</b>
+### -field UrbLink
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>hca</b>
+### -field hca
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>RequestTypeReservedBits</b>
+### -field RequestTypeReservedBits
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>Request</b>
+### -field Request
 
 <dd>
 <p>Specifies the USB or vendor-defined request code for the device, interface, endpoint, or other device-defined target.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>Specifies a value, specific to <b>Request</b>, that becomes part of the USB-defined setup packet for the target. This value is defined by the creator of the code used in <b>Request</b>.</p>
 </dd>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>Specifies the device-defined index, returned by a successful configuration request, if the request is for an endpoint or interface. Otherwise, <b>Index</b> must be zero.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. Do not use.</p>

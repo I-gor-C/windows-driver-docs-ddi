@@ -59,13 +59,13 @@ NTSTATUS ZwQueryInformationEnlistment(
 ## -parameters
 <dl>
 
-### -param <i>EnlistmentHandle</i> [in]
+### -param EnlistmentHandle [in]
 
 <dd>
 <p>A handle to an enlistment object that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a> or <a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>. The handle must have ENLISTMENT_QUERY_INFORMATION access to the object.</p>
 </dd>
 
-### -param <i>EnlistmentInformationClass</i> [in]
+### -param EnlistmentInformationClass [in]
 
 <dd>
 <p>An <a href="..\wdm\ne-wdm--enlistment-information-class.md">ENLISTMENT_INFORMATION_CLASS</a>-typed enumeration value that specifies the information to be obtained. This value must be one of the following values:</p>
@@ -80,19 +80,19 @@ NTSTATUS ZwQueryInformationEnlistment(
 <p>The enumeration's <b>EnlistmentFullInformation</b> value is not used with <b>ZwQueryInformationEnlistment</b>. </p>
 </dd>
 
-### -param <i>EnlistmentInformation</i> [out]
+### -param EnlistmentInformation [out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives the information that the <i>EnlistmentInformationClass </i>parameter specifies. If the <i>EnlistmentInformationClass</i> parameter's value is <b>EnlistmentBasicInformation</b>, this buffer's structure type must be <a href="..\wdm\ns-wdm--enlistment-basic-information.md">ENLISTMENT_BASIC_INFORMATION</a>. If the <i>EnlistmentInformationClass</i> parameter's value is <b>EnlistmentRecoveryInformation</b>, this buffer's type must match the caller-defined type that the caller used when it called <a href="..\wdm\nf-wdm-zwsetinformationenlistment.md">ZwSetInformationEnlistment</a>.</p>
 </dd>
 
-### -param <i>EnlistmentInformationLength</i> [in]
+### -param EnlistmentInformationLength [in]
 
 <dd>
 <p>The length, in bytes, of the buffer that the <i>EnlistmentInformation</i> parameter points to.</p>
 </dd>
 
-### -param <i>ReturnLength</i> [out, optional]
+### -param ReturnLength [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the length, in bytes, of the information that KTM writes to the <i>EnlistmentInformation </i>buffer. This parameter is optional and can be <b>NULL</b>.</p>

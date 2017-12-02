@@ -57,19 +57,19 @@ typedef enum _POS_CX_EVENT_DEST {
 ## -enum-fields
 <dl>
 
-### -field <a id="POS_CX_EVENT_DEST_INVALID"></a><a id="pos_cx_event_dest_invalid"></a><b>POS_CX_EVENT_DEST_INVALID</b>
+### -field POS_CX_EVENT_DEST_INVALID
 
 <dd>
 <p>Specifies that no devices will receive this event.  This value should not be used.</p>
 </dd>
 
-### -field <a id="POS_CX_EVENT_DEST_DEVICE_OWNER"></a><a id="pos_cx_event_dest_device_owner"></a><b>POS_CX_EVENT_DEST_DEVICE_OWNER</b>
+### -field POS_CX_EVENT_DEST_DEVICE_OWNER
 
 <dd>
 <p>Specifies that only the current claim owner will receive this event.</p>
 </dd>
 
-### -field <a id="POS_CX_EVENT_DEST_ALL"></a><a id="pos_cx_event_dest_all"></a><b>POS_CX_EVENT_DEST_ALL</b>
+### -field POS_CX_EVENT_DEST_ALL
 
 <dd>
 <p>Specifies that the event will be broadcast to all client handles.</p>

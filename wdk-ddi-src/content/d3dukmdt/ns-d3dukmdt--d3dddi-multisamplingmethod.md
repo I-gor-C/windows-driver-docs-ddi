@@ -55,13 +55,13 @@ typedef struct _D3DDDI_MULTISAMPLINGMETHOD {
 ## -struct-fields
 <dl>
 
-### -field <b>NumSamples</b>
+### -field NumSamples
 
 <dd>
 <p>[out] The number of subpixels that are used in the multiple-sampling method (for example, 2 for 2x and 8 for 8x multiple-sampling).</p>
 </dd>
 
-### -field <b>NumQualityLevels</b>
+### -field NumQualityLevels
 
 <dd>
 <p>[out] The upper bound on the quality range that is supported for the multiple-sampling method. The range includes values from 0 through the reported maximum quality setting.</p>

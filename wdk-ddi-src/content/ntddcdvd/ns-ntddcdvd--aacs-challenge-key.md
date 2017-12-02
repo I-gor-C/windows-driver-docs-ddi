@@ -55,13 +55,13 @@ typedef struct _AACS_CHALLENGE_KEY {
 ## -struct-fields
 <dl>
 
-### -field <b>EllipticCurvePoint</b>
+### -field EllipticCurvePoint
 
 <dd>
 <p>The elliptical curve (ECC) point data.</p>
 </dd>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>The signature that the client uses to verify that the ECC point is valid for the current Advanced Access Content System (AACS) authentication sequence.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilexecutorrfstate_2.htm
 old-project: netvista
 ms.assetid: 7a9e4b9a-f166-41bc-9525-8539ca8864f5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILEXECUTORRFSTATE, RILEXECUTORRFSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef struct _RILEXECUTORRFSTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>fExecutorRFState</b>
+### -field fExecutorRFState
 
 <dd></dd>
 </dl>

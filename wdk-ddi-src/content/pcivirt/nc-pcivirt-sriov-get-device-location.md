@@ -63,7 +63,7 @@ typedef SRIOV_GET_DEVICE_LOCATION *PSRIOV_GET_DEVICE_LOCATION;
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to a driver-defined context.
@@ -71,25 +71,25 @@ typedef SRIOV_GET_DEVICE_LOCATION *PSRIOV_GET_DEVICE_LOCATION;
                 </p>
 </dd>
 
-### -param <i>VfIndex</i> [in]
+### -param VfIndex [in]
 
 <dd>
 <p>A zero-based index of the VF to which this read operation applies.</p>
 </dd>
 
-### -param <i>SegmentNumber</i> [out]
+### -param SegmentNumber [out]
 
 <dd>
 <p>A pointer to a variable that is filled in with the current Segment Number, which describes the group of PCI Buses to which this device is attached.</p>
 </dd>
 
-### -param <i>BusNumber</i> [out]
+### -param BusNumber [out]
 
 <dd>
 <p>A pointer to a variable that is filled in with the current Bus Number, which describes which PCI Bus to which this device is attached.</p>
 </dd>
 
-### -param <i>FunctionNumber</i> [out]
+### -param FunctionNumber [out]
 
 <dd>
 <p>A pointer to a variable that is filled in with the FunctionNumber, which further describes where on this bus the device can be found.</p>

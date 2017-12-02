@@ -57,7 +57,7 @@ DWORD APIENTRY D3dContextDestroy(
 ## -parameters
 <dl>
 
-### -param <i>pcdd</i> [in]
+### -param pcdd [in]
 
 <dd>
 <p>Points to a <a href="..\d3dhal\ns-d3dhal--d3dhal-contextdestroydata.md">D3DHAL_CONTEXTDESTROYDATA</a> structure that contains the information required for the driver to destroy the context. </p>

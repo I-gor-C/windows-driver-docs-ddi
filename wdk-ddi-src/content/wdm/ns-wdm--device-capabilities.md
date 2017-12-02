@@ -84,43 +84,43 @@ typedef struct _DEVICE_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size of the structure, in bytes. This field is set by the component that sends the <b>IRP_MN_QUERY_CAPABILITIES</b> request.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the structure, currently version 1. This field is set by the component that sends the <b>IRP_MN_QUERY_CAPABILITIES</b> request.</p>
 </dd>
 
-### -field <b>DeviceD1</b>
+### -field DeviceD1
 
 <dd>
 <p>Specifies whether the device hardware supports the D1 power state. Drivers should not change this value.</p>
 </dd>
 
-### -field <b>DeviceD2</b>
+### -field DeviceD2
 
 <dd>
 <p>Specifies whether the device hardware supports the D2 power state. Drivers should not change this value.</p>
 </dd>
 
-### -field <b>LockSupported</b>
+### -field LockSupported
 
 <dd>
 <p>Specifies whether the device supports physical-device locking that prevents device ejection. This member pertains to ejecting the device from its slot, rather than ejecting a piece of removable media from the device.</p>
 </dd>
 
-### -field <b>EjectSupported</b>
+### -field EjectSupported
 
 <dd>
 <p>Specifies whether the device supports software-controlled device ejection while the system is in the <b>PowerSystemWorking</b> state. This member pertains to ejecting the device from its slot, rather than ejecting a piece of removable media from the device.</p>
 </dd>
 
-### -field <b>Removable</b>
+### -field Removable
 
 <dd>
 <p>Specifies whether the device can be dynamically removed from its immediate parent. If <b>Removable</b> is set to <b>TRUE</b>, the device does not belong to the same physical object as its parent.</p>
@@ -129,31 +129,31 @@ typedef struct _DEVICE_CAPABILITIES {
 <p>If <b>Removable</b> is set to <b>TRUE</b>, the device is displayed in the <b>Unplug or Eject Hardware</b> program, unless <b>SurpriseRemovalOK</b> is also set to <b>TRUE</b>.</p>
 </dd>
 
-### -field <b>DockDevice</b>
+### -field DockDevice
 
 <dd>
 <p>Specifies whether the device is a docking peripheral.</p>
 </dd>
 
-### -field <b>UniqueID</b>
+### -field UniqueID
 
 <dd>
-<p>Specifies whether the device's instance ID is unique system-wide. This bit is clear if the instance ID is unique only within the scope of the bus. For more information, see <a href="NULL">Device Identification Strings</a>.</p>
+<p>Specifies whether the device's instance ID is unique system-wide. This bit is clear if the instance ID is unique only within the scope of the bus. For more information, see <a href="devinst.device_identification_strings">Device Identification Strings</a>.</p>
 </dd>
 
-### -field <b>SilentInstall</b>
+### -field SilentInstall
 
 <dd>
 <p>Specifies whether Device Manager should suppress all installation dialog boxes; except required dialog boxes such as "no compatible drivers found."</p>
 </dd>
 
-### -field <b>RawDeviceOK</b>
+### -field RawDeviceOK
 
 <dd>
 <p>Specifies whether the driver for the underlying bus can drive the device if there is no function driver (for example, SCSI devices in pass-through mode). This mode of operation is called <a href="wdkgloss.r#wdkgloss.raw_mode#wdkgloss.raw_mode">raw mode</a>.</p>
 </dd>
 
-### -field <b>SurpriseRemovalOK</b>
+### -field SurpriseRemovalOK
 
 <dd>
 <p>Specifies whether the function driver for the device can handle the case where the device is removed before Windows can send <b>IRP_MN_QUERY_REMOVE_DEVICE</b> to it. If <b>SurpriseRemovalOK</b> is set to <b>TRUE</b>, the device can be safely removed from its immediate parent regardless of the state that its driver is in.</p>
@@ -162,31 +162,31 @@ typedef struct _DEVICE_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <b>WakeFromD0</b>
+### -field WakeFromD0
 
 <dd>
 <p>Specifies whether the device can respond to an external wake signal while in the D0 state. Drivers should not change this value.</p>
 </dd>
 
-### -field <b>WakeFromD1</b>
+### -field WakeFromD1
 
 <dd>
 <p>Specifies whether the device can respond to an external wake signal while in the D1 state. Drivers should not change this value.</p>
 </dd>
 
-### -field <b>WakeFromD2</b>
+### -field WakeFromD2
 
 <dd>
 <p>Specifies whether the device can respond to an external wake signal while in the D2 state. Drivers should not change this value.</p>
 </dd>
 
-### -field <b>WakeFromD3</b>
+### -field WakeFromD3
 
 <dd>
 <p>Specifies whether the device can respond to an external wake signal while in the D3 state. Drivers should not change this value.</p>
 </dd>
 
-### -field <b>HardwareDisabled</b>
+### -field HardwareDisabled
 
 <dd>
 <p>When set, this flag specifies that the device's hardware is disabled.</p>
@@ -194,35 +194,35 @@ typedef struct _DEVICE_CAPABILITIES {
 <p>The PnP manager sends one <b>IRP_MN_QUERY_CAPABILITIES</b> IRP right after a device is enumerated and sends another after the device has been started. The PnP manager only checks this bit right after the device is enumerated. Once the device is started, this bit is ignored.</p>
 </dd>
 
-### -field <b>NonDynamic</b>
+### -field NonDynamic
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>WarmEjectSupported</b>
+### -field WarmEjectSupported
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>NoDisplayInUI</b>
+### -field NoDisplayInUI
 
 <dd>
 <p>Do not display the device in the user interface. If this bit is set, the device is <u>never</u> displayed in the user interface, even if the device is present but fails to start. Only bus drivers and associated bus filter drivers should set this bit. (Also see the <b>PNP_DEVICE_DONT_DISPLAY_IN_UI</b> flag in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559618">PNP_DEVICE_STATE</a> structure.)</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd></dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Address</b>
+### -field Address
 
 <dd>
 <p>Specifies an address indicating where the device is located on its underlying bus.</p>
@@ -231,49 +231,49 @@ typedef struct _DEVICE_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="1394"></a>1394
+### -field 1394
 
 <dd>
 <p>Does not supply an address because the addresses are volatile. Defaults to 0xFFFFFFFF. </p>
 </dd>
 
-### -field <a id="EISA"></a><a id="eisa"></a>EISA
+### -field EISA
 
 <dd>
 <p>Slot Number (0-F).</p>
 </dd>
 
-### -field <a id="IDE"></a><a id="ide"></a>IDE
+### -field IDE
 
 <dd>
 <p>For an IDE device, the address contains the target ID and LUN. For an IDE channel, the address is zero or one (0 = primary channel and 1 = secondary channel).</p>
 </dd>
 
-### -field <a id="ISApnp"></a><a id="isapnp"></a><a id="ISAPNP"></a>ISApnp
+### -field ISApnp
 
 <dd>
 <p>Does not supply an address. Defaults to 0xFFFFFFFF.</p>
 </dd>
 
-### -field <a id="PC_Card__PCMCIA_"></a><a id="pc_card__pcmcia_"></a><a id="PC_CARD__PCMCIA_"></a>PC Card (PCMCIA)
+### -field PC Card (PCMCIA)
 
 <dd>
 <p>The socket number (typically 0x00 or 0x40).</p>
 </dd>
 
-### -field <a id="PCI"></a><a id="pci"></a>PCI
+### -field PCI
 
 <dd>
 <p>The device number in the high word and the function number in the low word.</p>
 </dd>
 
-### -field <a id="SCSI"></a><a id="scsi"></a>SCSI
+### -field SCSI
 
 <dd>
 <p>The target ID.</p>
 </dd>
 
-### -field <a id="USB"></a><a id="usb"></a>USB
+### -field USB
 
 <dd>
 <p>The port number.</p>
@@ -281,14 +281,14 @@ typedef struct _DEVICE_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>UINumber</b>
+### -field UINumber
 
 <dd>
 <p>Specifies a number associated with the device that can be displayed in the user interface.</p>
 <p>This number is typically a user-perceived slot number, such as a number printed next to the slot on the board, or some other number that makes locating the physical device easier for the user. For buses with no such convention, or when the <b>UINumber</b> is unknown, the bus driver leaves this member at its default value of 0xFFFFFFFF.</p>
 </dd>
 
-### -field <b>DeviceState</b>
+### -field DeviceState
 
 <dd>
 <p>An array of values indicating the most-powered device power state that the device can maintain for each system power state. The <b>DeviceState[PowerSystemWorking]</b> element of the array corresponds to the S0 system state. The entry for <b>PowerSystemUnspecified</b> is reserved for system use.</p>
@@ -296,7 +296,7 @@ typedef struct _DEVICE_CAPABILITIES {
 <p>If the bus driver is unable to determine the appropriate device power state for a root-enumerated device, it sets <b>DeviceState[PowerSystemWorking]</b> to <b>PowerDeviceD0</b> and all other entries to <b>PowerDeviceD3</b>.</p>
 </dd>
 
-### -field <b>SystemWake</b>
+### -field SystemWake
 
 <dd>
 <p>Specifies the least-powered system power state from which the device can signal a wake event. A value of <b>PowerSystemUnspecified</b> indicates that the device cannot wake the system.</p>
@@ -304,25 +304,25 @@ typedef struct _DEVICE_CAPABILITIES {
 <p>In general, a driver should not change this value. If necessary, however, a driver can raise the power state, for example, from <b>PowerSystemHibernate</b> to <b>PowerSystemS1</b>, to indicate that its device cannot wake the system from a hibernation state but can from a higher-powered sleep state.</p>
 </dd>
 
-### -field <b>DeviceWake</b>
+### -field DeviceWake
 
 <dd>
 <p>Specifies the least-powered device power state from which the device can signal a wake event. A value of <b>PowerDeviceUnspecified</b> indicates that the device cannot signal a wake event.</p>
 </dd>
 
-### -field <b>D1Latency</b>
+### -field D1Latency
 
 <dd>
 <p>Specifies the device's approximate worst-case latency, in 100-microsecond units, for returning the device to the <b>PowerDeviceD0</b> state from the <b>PowerDeviceD1</b> state. Set to zero if the device does not support the D1 state.</p>
 </dd>
 
-### -field <b>D2Latency</b>
+### -field D2Latency
 
 <dd>
 <p>Specifies the device's approximate worst-case latency, in 100-microsecond units, for returning the device to the <b>PowerDeviceD0</b> state from the <b>PowerDeviceD2</b> state. Set to zero if the device does not support the D2 state.</p>
 </dd>
 
-### -field <b>D3Latency</b>
+### -field D3Latency
 
 <dd>
 <p>Specifies the device's approximate worst-case latency, in 100-microsecond units, for returning the device to the <b>PowerDeviceD0</b> state from the <b>PowerDeviceD3</b> state. Set to zero if the device does not support the D3 state. </p>

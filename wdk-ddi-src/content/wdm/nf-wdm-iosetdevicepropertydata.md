@@ -61,19 +61,19 @@ NTSTATUS IoSetDevicePropertyData(
 ## -parameters
 <dl>
 
-### -param <i>Pdo</i> [in]
+### -param Pdo [in]
 
 <dd>
 <p>A pointer to the physical device object (PDO) for the device that is being queried.</p>
 </dd>
 
-### -param <i>PropertyKey</i> [in]
+### -param PropertyKey [in]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a> structure that specifies the device property key.</p>
 </dd>
 
-### -param <i>Lcid</i> [in]
+### -param Lcid [in]
 
 <dd>
 <p>A locale identifier. Set this parameter either to a language-specific LCID value or to <b>LOCALE_NEUTRAL</b>.</p>
@@ -82,26 +82,26 @@ NTSTATUS IoSetDevicePropertyData(
 <p>For more information about language-specific LCID values, see <a href="http://msdn.microsoft.com/en-us/library/cc233968(PROT.10).aspx">LCID Structure</a>.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Set this parameter to <b>PLUGPLAY_PROPERTY_PERSISTENT</b> if the property value set by this routine should persist across computer restarts. Otherwise, set <i>Flags</i> to zero.</p>
 <p>Windows 8 and Windows Server 2012 and later operating systems treat <b>Flags</b> as if <b>PLUGPLAY_PROPERTY_PERSISTENT</b>  is always passed.</p>
 </dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff543546">DEVPROPTYPE</a> value that specifies the type of the data that is provided in the <i>Data</i> buffer.</p>
 </dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>The size, in bytes, of the buffer that <i>Data</i> points to.</p>
 </dd>
 
-### -param <i>Data</i> [in, optional]
+### -param Data [in, optional]
 
 <dd>
 <p>A pointer to the device property data. Set this parameter to <b>NULL</b> to delete the specified property. If <i>Data</i> is non-<b>NULL</b>, the routine stores an internal copy of the property value. The buffer pointed to by <i>Data</i> does not need to remain valid after the call returns.</p>
@@ -112,7 +112,7 @@ NTSTATUS IoSetDevicePropertyData(
 <p><b>IoSetDevicePropertyData</b> returns STATUS_SUCCESS if the call was successful, or the appropriate NTSTATUS code on failure.</p>
 
 ## -remarks
-<p>Kernel-mode drivers use the <b>IoSetDevicePropertyData</b> routine to modify device properties that are defined as part of the unified device property model. For more information about device properties, see <a href="NULL">Device Properties</a>.</p>
+<p>Kernel-mode drivers use the <b>IoSetDevicePropertyData</b> routine to modify device properties that are defined as part of the unified device property model. For more information about device properties, see <a href="https://msdn.microsoft.com/f41040c5-0eac-450d-b532-9165c543cc1a">Device Properties</a>.</p>
 
 <p>To delete a property for a specific locale, pass a language-specific LCID value in <i>Lcid</i> and <b>NULL</b> in <i>Data</i>.</p>
 

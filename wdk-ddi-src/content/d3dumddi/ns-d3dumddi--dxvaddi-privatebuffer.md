@@ -57,25 +57,25 @@ typedef struct _DXVADDI_PRIVATEBUFFER {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A handle to the resource that contains the private buffer for the decode operation. </p>
 </dd>
 
-### -field <b>SubResourceIndex</b>
+### -field SubResourceIndex
 
 <dd>
 <p>[in] The index to the private buffer within the resource.</p>
 </dd>
 
-### -field <b>DataOffset</b>
+### -field DataOffset
 
 <dd>
 <p>[in] The offset to the relevant data, in bytes, from the beginning of the buffer.</p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>[in] The size of the relevant data, in bytes.</p>

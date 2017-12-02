@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediatype.htm
 old-project: netvista
 ms.assetid: 993013f1-5026-4c30-b4df-958606adc8fa
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILCALLMEDIATYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLMEDIATYPE_AUDIO"></a><a id="ril_callmediatype_audio"></a><b>RIL_CALLMEDIATYPE_AUDIO</b>
+### -field RIL_CALLMEDIATYPE_AUDIO
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIATYPE_VIDEO"></a><a id="ril_callmediatype_video"></a><b>RIL_CALLMEDIATYPE_VIDEO</b>
+### -field RIL_CALLMEDIATYPE_VIDEO
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIATYPE_CUSTOM"></a><a id="ril_callmediatype_custom"></a><b>RIL_CALLMEDIATYPE_CUSTOM</b>
+### -field RIL_CALLMEDIATYPE_CUSTOM
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIATYPE_MAX"></a><a id="ril_callmediatype_max"></a><b>RIL_CALLMEDIATYPE_MAX</b>
+### -field RIL_CALLMEDIATYPE_MAX
 
 <dd></dd>
 </dl>

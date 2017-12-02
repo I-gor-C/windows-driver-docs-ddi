@@ -58,19 +58,19 @@ HRESULT SendBidiSetRequestAsync(
 ## -parameters
 <dl>
 
-### -param <i>bstrBidiRequest</i> [in]
+### -param bstrBidiRequest [in]
 
 <dd>
 <p>XML string that is used to transfer the data for the  Set request.</p>
 </dd>
 
-### -param <i>pCallback</i> [in]
+### -param pCallback [in]
 
 <dd>
 <p>Callback object for the Bidi Set request.</p>
 </dd>
 
-### -param <i> ppAsyncOperation</i> [out, retval]
+### -param  ppAsyncOperation [out, retval]
 
 <dd>
 <p>Context object associated with the asynchronous Bidi Set  request (operation).</p>

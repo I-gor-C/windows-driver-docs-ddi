@@ -59,37 +59,37 @@ typedef struct _D3DKMT_CREATEBUNDLEOBJECT {
 ## -struct-fields
 <dl>
 
-### -field <b>cObjects</b>
+### -field cObjects
 
 <dd>
 <p>The number of the DXGK object to be bundled.</p>
 </dd>
 
-### -field <b>phObjects</b>
+### -field phObjects
 
 <dd>
 <p>A pointer to the array of the DXGK object to be bundled.</p>
 </dd>
 
-### -field <b>ppObjectAttributes</b>
+### -field ppObjectAttributes
 
 <dd>
 <p>An array of pointers to object attributes for DXGK objects.</p>
 </dd>
 
-### -field <b>pBundleObjectAttributes</b>
+### -field pBundleObjectAttributes
 
 <dd>
 <p>Object attributes for the bundled object.</p>
 </dd>
 
-### -field <b> dwBundleDesiredAccess</b>
+### -field  dwBundleDesiredAccess
 
 <dd>
 <p>The desired access for bundle handle.</p>
 </dd>
 
-### -field <b>hNtBundleHandle</b>
+### -field hNtBundleHandle
 
 <dd>
 <p>The NT bundle handle.</p>

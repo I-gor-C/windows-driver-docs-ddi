@@ -7,7 +7,7 @@ old-location: netvista\ndismindicatereceivenetbufferlists.htm
 old-project: netvista
 ms.assetid: b87dba3e-c18f-4ea2-8bd5-ec3cdafc534b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMIndicateReceiveNetBufferLists
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ VOID NdisMIndicateReceiveNetBufferLists(
 ## -parameters
 <dl>
 
-### -param <i>MiniportAdapterHandle</i> [in]
+### -param MiniportAdapterHandle [in]
 
 <dd>
 <p>The miniport handle that NDIS passed to the 
@@ -67,7 +67,7 @@ VOID NdisMIndicateReceiveNetBufferLists(
      MiniportInitializeEx</a> function.</p>
 </dd>
 
-### -param <i>NetBufferLists</i> [in]
+### -param NetBufferLists [in]
 
 <dd>
 <p>A linked list of 
@@ -75,7 +75,7 @@ VOID NdisMIndicateReceiveNetBufferLists(
      miniport driver allocated.</p>
 </dd>
 
-### -param <i>PortNumber</i> [in]
+### -param PortNumber [in]
 
 <dd>
 <p>A port number that identifies a miniport adapter port. To assign a miniport adapter port number,
@@ -85,14 +85,14 @@ VOID NdisMIndicateReceiveNetBufferLists(
      not allocated ports for the specified adapter.</p>
 </dd>
 
-### -param <i>NumberOfNetBufferLists</i> [in]
+### -param NumberOfNetBufferLists [in]
 
 <dd>
 <p>The number of <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures that are in the linked list of structures at 
      <i>NetBufferLists</i> .</p>
 </dd>
 
-### -param <i>ReceiveFlags</i> [in]
+### -param ReceiveFlags [in]
 
 <dd>
 <p>Flags that define attributes for the send operation. The flags can be combined with an OR
@@ -101,14 +101,14 @@ VOID NdisMIndicateReceiveNetBufferLists(
 <p></p>
 <dl>
 
-### -param <a id="NDIS_RECEIVE_FLAGS_DISPATCH_LEVEL"></a><a id="ndis_receive_flags_dispatch_level"></a>NDIS_RECEIVE_FLAGS_DISPATCH_LEVEL
+### -param NDIS_RECEIVE_FLAGS_DISPATCH_LEVEL
 
 <dd>
 <p>Specifies that the current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
-       <a href="NULL">Dispatch IRQL Tracking</a>.</p>
+       <a href="netvista.dispatch_irql_tracking">Dispatch IRQL Tracking</a>.</p>
 </dd>
 
-### -param <a id="NDIS_RECEIVE_FLAGS_RESOURCES"></a><a id="ndis_receive_flags_resources"></a>NDIS_RECEIVE_FLAGS_RESOURCES
+### -param NDIS_RECEIVE_FLAGS_RESOURCES
 
 <dd>
 <p>Specifies that the miniport driver reclaims ownership of the <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures and any
@@ -116,21 +116,21 @@ VOID NdisMIndicateReceiveNetBufferLists(
        <b>NdisMIndicateReceiveNetBufferLists</b> returns.</p>
 </dd>
 
-### -param <a id="NDIS_RECEIVE_FLAGS_SINGLE_ETHER_TYPE"></a><a id="ndis_receive_flags_single_ether_type"></a>NDIS_RECEIVE_FLAGS_SINGLE_ETHER_TYPE
+### -param NDIS_RECEIVE_FLAGS_SINGLE_ETHER_TYPE
 
 <dd>
 <p>Specifies that all of the <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures in the list at 
        <i>NetBufferLists</i> have the same protocol type (EtherType).</p>
 </dd>
 
-### -param <a id="NDIS_RECEIVE_FLAGS_SINGLE_VLAN"></a><a id="ndis_receive_flags_single_vlan"></a>NDIS_RECEIVE_FLAGS_SINGLE_VLAN
+### -param NDIS_RECEIVE_FLAGS_SINGLE_VLAN
 
 <dd>
 <p>Specifies that all of the <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures in the list at 
        <i>NetBufferLists</i> belong to the same VLAN.</p>
 </dd>
 
-### -param <a id="NDIS_RECEIVE_FLAGS_PERFECT_FILTERED"></a><a id="ndis_receive_flags_perfect_filtered"></a>NDIS_RECEIVE_FLAGS_PERFECT_FILTERED
+### -param NDIS_RECEIVE_FLAGS_PERFECT_FILTERED
 
 <dd>
 <p>Specifies that all of the <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures in the list at 
@@ -138,7 +138,7 @@ VOID NdisMIndicateReceiveNetBufferLists(
        assigned to the miniport adapter.</p>
 </dd>
 
-### -param <a id="NDIS_RECEIVE_FLAGS_SINGLE_QUEUE"></a><a id="ndis_receive_flags_single_queue"></a>NDIS_RECEIVE_FLAGS_SINGLE_QUEUE
+### -param NDIS_RECEIVE_FLAGS_SINGLE_QUEUE
 
 <dd>
 <p>Specifies that all the <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures in the list at 
@@ -150,7 +150,7 @@ VOID NdisMIndicateReceiveNetBufferLists(
        NDIS_RECEIVE_QUEUE_PARAMETERS</a> structure when that queue was allocated.</p>
 </dd>
 
-### -param <a id="NDIS_RECEIVE_FLAGS_SHARED_MEMORY_INFO_VALID"></a><a id="ndis_receive_flags_shared_memory_info_valid"></a>NDIS_RECEIVE_FLAGS_SHARED_MEMORY_INFO_VALID
+### -param NDIS_RECEIVE_FLAGS_SHARED_MEMORY_INFO_VALID
 
 <dd>
 <p>Specifies that all the <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures in the list at 
@@ -162,7 +162,7 @@ VOID NdisMIndicateReceiveNetBufferLists(
        deleted.</p>
 </dd>
 
-### -param <a id="NDIS_RECEIVE_FLAGS_MORE_NBLS"></a><a id="ndis_receive_flags_more_nbls"></a>NDIS_RECEIVE_FLAGS_MORE_NBLS
+### -param NDIS_RECEIVE_FLAGS_MORE_NBLS
 
 <dd>
 <p>Reserved.</p>
@@ -310,4 +310,4 @@ VOID NdisMIndicateReceiveNetBufferLists(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMIndicateReceiveNetBufferLists function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMIndicateReceiveNetBufferLists function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

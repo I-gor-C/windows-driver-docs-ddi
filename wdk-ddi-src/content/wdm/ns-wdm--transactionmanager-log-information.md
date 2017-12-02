@@ -55,7 +55,7 @@ typedef struct _TRANSACTIONMANAGER_LOG_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>LogIdentity</b>
+### -field LogIdentity
 
 <dd>
 <p>A GUID that KTM uses to identify restart records in a transaction manager object's log stream. For more information about restart records, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566409">Writing Restart Records to a CLFS Stream</a>.</p>

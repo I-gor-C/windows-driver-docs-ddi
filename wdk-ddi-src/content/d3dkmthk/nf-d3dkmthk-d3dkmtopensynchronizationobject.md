@@ -54,7 +54,7 @@ NTSTATUS D3DKMTOpenSynchronizationObject(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-opensynchronizationobject.md">D3DKMT_OPENSYNCHRONIZATIONOBJECT</a> structure that describes a shared synchronization object to open. </p>

@@ -63,52 +63,52 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT {
 ## -struct-fields
 <dl>
 
-### -field <b>Identity</b>
+### -field Identity
 
 <dd>
 <p>The path is capable of displaying content with no rotation.</p>
 </dd>
 
-### -field <b>Rotate90</b>
+### -field Rotate90
 
 <dd>
 <p>The path is capable of displaying content that is rotated 90 degrees.</p>
 </dd>
 
-### -field <b>Rotate180</b>
+### -field Rotate180
 
 <dd>
 <p>The path is capable of displaying content that is rotated 180 degrees.</p>
 </dd>
 
-### -field <b>Rotate270</b>
+### -field Rotate270
 
 <dd>
 <p>The path is capable of displaying content that is rotated 270 degrees.</p>
 </dd>
 
-### -field <b>Offset0</b>
+### -field Offset0
 
 <dd>
 <p>The path adds no rotational offset. For more info, see <a href="display.supporting_rotation_in_a_display_miniport_driver#clone-mode_requirements#clone-mode_requirements">Clone-mode requirements starting with Windows 8.1 Update</a>.</p>
 <p>Supported starting with Windows 8.1 Update.</p>
 </dd>
 
-### -field <b>Offset90</b>
+### -field Offset90
 
 <dd>
 <p>The path adds a rotational offset of 90 degrees. For more info, see <a href="display.supporting_rotation_in_a_display_miniport_driver#clone-mode_requirements#clone-mode_requirements">Clone-mode requirements starting with Windows 8.1 Update</a>.</p>
 <p>Supported starting with Windows 8.1 Update.</p>
 </dd>
 
-### -field <b>Offset180</b>
+### -field Offset180
 
 <dd>
 <p>The path adds a rotational offset of 180 degrees. For more info, see <a href="display.supporting_rotation_in_a_display_miniport_driver#clone-mode_requirements#clone-mode_requirements">Clone-mode requirements starting with Windows 8.1 Update</a>.</p>
 <p>Supported starting with Windows 8.1 Update.</p>
 </dd>
 
-### -field <b>Offset270</b>
+### -field Offset270
 
 <dd>
 <p>The path adds a rotational offset of 270 degrees. For more info, see <a href="display.supporting_rotation_in_a_display_miniport_driver#clone-mode_requirements#clone-mode_requirements">Clone-mode requirements starting with Windows 8.1 Update</a>.</p>

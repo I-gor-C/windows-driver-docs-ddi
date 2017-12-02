@@ -56,19 +56,19 @@ typedef struct _PEP_DEVICE_REGISTER_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <b>ComponentCount</b>
+### -field ComponentCount
 
 <dd>
 <p>The number of components in this device, which is also the number of elements in the <b>Components</b> array. The <b>ComponentCount</b> value must be greater than or equal to one.</p>
 </dd>
 
-### -field <b>Components</b>
+### -field Components
 
 <dd>
 <p>The first element in an array of pointers to <a href="..\pepfx\ns-pepfx--pep-component-v2.md">PEP_COMPONENT_V2</a> structures. Each element in the array points to a structure that describes a component in the device. If this array contains more than one element, the additional elements immediately follow the end of the <b>PEP_DEVICE_REGISTER</b> structure.</p>

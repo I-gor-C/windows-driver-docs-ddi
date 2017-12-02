@@ -54,7 +54,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>BitStreamMode</b>
+### -field BitStreamMode
 
 <dd>
 <p>Specifies the bit-stream mode. The <b>BitStreamMode</b> member is set to a value in the range 0 to 7. Specify the value of this member as one of the following constants:</p>

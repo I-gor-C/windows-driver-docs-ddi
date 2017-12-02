@@ -57,13 +57,13 @@ typedef enum D3DWDDM2_0DDI_VIDEO_DECODER_CAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DWDDM2_0DDI_VIDEO_DECODER_CAP_DOWNSAMPLE"></a><a id="d3dwddm2_0ddi_video_decoder_cap_downsample"></a><b>D3DWDDM2_0DDI_VIDEO_DECODER_CAP_DOWNSAMPLE</b>
+### -field D3DWDDM2_0DDI_VIDEO_DECODER_CAP_DOWNSAMPLE
 
 <dd>
 <p>Indicates that the driver can support at least some downsampling scenarios.</p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_VIDEO_DECODER_CAP_NON_REAL_TIME"></a><a id="d3dwddm2_0ddi_video_decoder_cap_non_real_time"></a><b>D3DWDDM2_0DDI_VIDEO_DECODER_CAP_NON_REAL_TIME</b>
+### -field D3DWDDM2_0DDI_VIDEO_DECODER_CAP_NON_REAL_TIME
 
 <dd>
 <p>The decode operation is supported, but cannot be performed real-time.  Indicates that the decode hardware cannot support the decode operation in real-time. Decode is still viable for transcode scenarios. 
@@ -72,13 +72,13 @@ typedef enum D3DWDDM2_0DDI_VIDEO_DECODER_CAPS {
 <p>It is possible that decode can occur in real-time if downsampling is applied.</p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_VIDEO_DECODER_CAP_DOWNSAMPLE_REQUIRED"></a><a id="d3dwddm2_0ddi_video_decoder_cap_downsample_required"></a><b>D3DWDDM2_0DDI_VIDEO_DECODER_CAP_DOWNSAMPLE_REQUIRED</b>
+### -field D3DWDDM2_0DDI_VIDEO_DECODER_CAP_DOWNSAMPLE_REQUIRED
 
 <dd>
 <p>	Indicates that the decode configuration can be supported only if down sampling is applied. </p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_VIDEO_DECODER_CAP_UNSUPPORTED"></a><a id="d3dwddm2_0ddi_video_decoder_cap_unsupported"></a><b>D3DWDDM2_0DDI_VIDEO_DECODER_CAP_UNSUPPORTED</b>
+### -field D3DWDDM2_0DDI_VIDEO_DECODER_CAP_UNSUPPORTED
 
 <dd>
 <p>	Indicates that the decode configuration is not supported. </p>

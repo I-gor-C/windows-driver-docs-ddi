@@ -57,27 +57,27 @@ typedef struct _DXVADDI_DECODEBUFFERINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>CompressedBufferType</b>
+### -field CompressedBufferType
 
 <dd>
 <p>[out] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the buffer.</p>
 </dd>
 
-### -field <b>CreationWidth</b>
+### -field CreationWidth
 
 <dd>
 <p>[out] The width of the data in the buffer as the number of units of bits. For example, AYUV data is specified in 32-bit units, IA44/AI44 data is specified in 8-bit units, and DPXD data is specified in 2-bit units.</p>
 <p>The driver must assign a value to <b>CreationWidth</b> that is a multiple of 2 and does not exceed 65535.</p>
 </dd>
 
-### -field <b>CreationHeight</b>
+### -field CreationHeight
 
 <dd>
 <p>[out] The height of the data in the buffer as the number of units of bits. For example, AYUV data is specified in 32-bit units, IA44/AI44 data is specified in 8-bit units, and DPXD data is specified in 2-bit units.</p>
 <p>The driver must assign a value to <b>CreationHeight</b> that does not exceed 65535.</p>
 </dd>
 
-### -field <b>CreationPool</b>
+### -field CreationPool
 
 <dd>
 <p>[out] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-pool.md">D3DDDI_POOL</a>-typed value that indicates the type of memory that the buffer exists in.</p>

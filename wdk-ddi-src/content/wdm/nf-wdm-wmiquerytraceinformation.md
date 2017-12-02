@@ -59,31 +59,31 @@ NTSTATUS WmiQueryTraceInformation(
 ## -parameters
 <dl>
 
-### -param <i>TraceInformationClass</i> [in]
+### -param TraceInformationClass [in]
 
 <dd>
 <p>Specifies a <a href="..\wdm\ne-wdm--trace-information-class.md">TRACE_INFORMATION_CLASS</a> enumerator that indicates the type of information to return about an event trace.</p>
 </dd>
 
-### -param <i>TraceInformation</i> [out]
+### -param TraceInformation [out]
 
 <dd>
 <p>A pointer to a caller-allocated output buffer where the routine returns the event trace information specified by <i>TraceInformationClass</i>.</p>
 </dd>
 
-### -param <i>TraceInformationLength</i> [in]
+### -param TraceInformationLength [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the <i>TraceInformation</i> buffer.</p>
 </dd>
 
-### -param <i>RequiredLength</i> [out, optional]
+### -param RequiredLength [out, optional]
 
 <dd>
 <p>A pointer to the value returned by the routine that specifies the required size, in bytes, of the <i>TraceInformation</i> buffer. The caller should set <i>RequiredLength</i> to <b>NULL</b> if it does not use the required length information.</p>
 </dd>
 
-### -param <i>Buffer</i> [in, optional]
+### -param Buffer [in, optional]
 
 <dd>
 <p>A pointer to the query-specific input information that a caller supplies. If caller-supplied information is not required, the caller should set <i>Buffer</i> to <b>NULL</b>. </p>

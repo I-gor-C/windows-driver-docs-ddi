@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcsindication_2.htm
 old-project: netvista
 ms.assetid: 292f54d6-0555-47d0-97b9-b76e9e08bf78
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILMSGDCSINDICATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DCSINDICATION_FAX"></a><a id="ril_dcsindication_fax"></a><b>RIL_DCSINDICATION_FAX</b>
+### -field RIL_DCSINDICATION_FAX
 
 <dd></dd>
 
-### -field <a id="RIL_DCSINDICATION_EMAIL"></a><a id="ril_dcsindication_email"></a><b>RIL_DCSINDICATION_EMAIL</b>
+### -field RIL_DCSINDICATION_EMAIL
 
 <dd></dd>
 
-### -field <a id="RIL_DCSINDICATION_OTHER"></a><a id="ril_dcsindication_other"></a><b>RIL_DCSINDICATION_OTHER</b>
+### -field RIL_DCSINDICATION_OTHER
 
 <dd></dd>
 
-### -field <a id="RIL_DCSINDICATION_MAX"></a><a id="ril_dcsindication_max"></a><b>RIL_DCSINDICATION_MAX</b>
+### -field RIL_DCSINDICATION_MAX
 
 <dd></dd>
 </dl>

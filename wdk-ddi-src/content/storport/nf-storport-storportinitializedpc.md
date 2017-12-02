@@ -57,19 +57,19 @@ VOID StorPortInitializeDpc(
 ## -parameters
 <dl>
 
-### -param <i>DeviceExtension</i> [in]
+### -param DeviceExtension [in]
 
 <dd>
 <p>Pointer to the per-adapter device extension. </p>
 </dd>
 
-### -param <i>Dpc</i> [out]
+### -param Dpc [out]
 
 <dd>
 <p>Pointer to a buffer where a DPC object of type <a href="..\storport\ns-storport--stor-dpc.md">STOR_DPC</a> will be created. The caller must ensure that the size in bytes of this buffer is greater than or equal to <b>sizeof</b>(STOR_DPC). </p>
 </dd>
 
-### -param <i>HwDpcRoutine</i> [in]
+### -param HwDpcRoutine [in]
 
 <dd>
 <p>Pointer to the DPC routine that corresponds to the DPC object pointed to by <i>Dpc</i>. The prototype for this deferred routine is defined in Storport.h as follows: </p>

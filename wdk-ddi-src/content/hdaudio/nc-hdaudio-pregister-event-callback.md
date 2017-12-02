@@ -61,25 +61,25 @@ NTSTATUS RegisterEventCallback(
 ## -parameters
 <dl>
 
-### -param <i>context</i> [in]
+### -param context [in]
 
 <dd>
 <p>Specifies the context value from the <b>Context</b> member of the <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface.md">HDAUDIO_BUS_INTERFACE</a><u>, </u><a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-v2.md">HDAUDIO_BUS_INTERFACE_V2</a>, or <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a> structure.</p>
 </dd>
 
-### -param <i>routine</i> [in]
+### -param routine [in]
 
 <dd>
 <p>Function pointer to a callback routine. This parameter must be a valid, non-NULL function pointer of type PHDAUDIO_UNSOLICITED_RESPONSE_CALLBACK. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>callbackContext</i> [in]
+### -param callbackContext [in]
 
 <dd>
 <p>Specifies a context value for the callback routine. The caller casts the context value to type PVOID. When a codec generates an unsolicited response that contains the specified tag, the HD Audio bus driver passes the context value to the callback routine as a call parameter.</p>
 </dd>
 
-### -param <i>tag</i> [out]
+### -param tag [out]
 
 <dd>
 <p>Retrieves a tag value that identifies the unsolicited response. This parameter points to a caller-allocated UCHAR variable into which the routine writes the tag value. The caller should specify this tag value when programming the codec or codecs to generate the unsolicited response. For more information, see the following Remarks section.</p>

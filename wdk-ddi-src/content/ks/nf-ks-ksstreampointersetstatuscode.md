@@ -55,13 +55,13 @@ NTSTATUS KsStreamPointerSetStatusCode(
 ## -parameters
 <dl>
 
-### -param <i>StreamPointer</i> [in]
+### -param StreamPointer [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure. This pointer points to the frame contained in the IRP.</p>
 </dd>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>The error code with which to complete the IRP.</p>
@@ -74,7 +74,7 @@ NTSTATUS KsStreamPointerSetStatusCode(
 ## -remarks
 <p>Note that the IRP contains the frame to which <i>StreamPointer</i> points.</p>
 
-<p>Also see <a href="NULL">Stream Pointers</a>.</p>
+<p>Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736f">Stream Pointers</a>.</p>
 
 ## -requirements
 <table>

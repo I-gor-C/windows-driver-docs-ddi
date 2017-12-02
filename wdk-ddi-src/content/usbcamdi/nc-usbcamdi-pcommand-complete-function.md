@@ -60,19 +60,19 @@ VOID CommandCompleteFunction(
 ## -parameters
 <dl>
 
-### -param <i>DeviceContext</i> 
+### -param DeviceContext 
 
 <dd>
 <p>Specifies the user-supplied value or structure relevant to the stream.</p>
 </dd>
 
-### -param <i>CommandContext</i> 
+### -param CommandContext 
 
 <dd>
 <p>Specifies the context passed to <i>CommandCompleteFunction</i> by certain USBCAMD services.</p>
 </dd>
 
-### -param <i>NtStatus</i> 
+### -param NtStatus 
 
 <dd>
 <p>Specifies the completion status of the called function.</p>

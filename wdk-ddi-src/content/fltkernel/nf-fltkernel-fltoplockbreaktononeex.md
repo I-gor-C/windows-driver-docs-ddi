@@ -7,7 +7,7 @@ old-location: ifsk\fltoplockbreaktononeex.htm
 old-project: ifsk
 ms.assetid: 748951e3-9642-4c98-a3b0-5f6b18519bd4
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltOplockBreakToNoneEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,26 +59,26 @@ FLT_PREOP_CALLBACK_STATUS FltOplockBreakToNoneEx(
 ## -parameters
 <dl>
 
-### -param <i>Oplock</i> [in]
+### -param Oplock [in]
 
 <dd>
 <p>An opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>. </p>
 </dd>
 
-### -param <i>CallbackData</i> [in]
+### -param CallbackData [in]
 
 <dd>
 <p>A pointer to the callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A bitmask for the associated file I/O operation. A minifilter driver sets bits to specify the behavior of <b>FltOplockBreakToNoneEx</b>. The <i>Flags</i> parameter has the following options: </p>
 <p></p>
 <dl>
 
-### -param <a id="OPLOCK_FLAG_COMPLETE_IF_OPLOCKED__0x00000001_"></a><a id="oplock_flag_complete_if_oplocked__0x00000001_"></a><a id="OPLOCK_FLAG_COMPLETE_IF_OPLOCKED__0X00000001_"></a>OPLOCK_FLAG_COMPLETE_IF_OPLOCKED (0x00000001)
+### -param OPLOCK_FLAG_COMPLETE_IF_OPLOCKED (0x00000001)
 
 <dd>
 <p>Allows an oplock break to proceed without blocking or pending the operation that caused the oplock break. Typically, this flag is only used if the I/O operation that is represented by the callback data that the <i>CallbackData</i> parameter points to is an IRP_MJ_CREATE operation. </p>
@@ -86,13 +86,13 @@ FLT_PREOP_CALLBACK_STATUS FltOplockBreakToNoneEx(
 </dl>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>A pointer to caller-defined context information to be passed to the callback routines that the <i>WaitCompletionRoutine</i> and <i>PrePostCallbackDataRoutine </i>parameters point to. </p>
 </dd>
 
-### -param <i>WaitCompletionRoutine</i> [in, optional]
+### -param WaitCompletionRoutine [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied callback routine. If an oplock break is in progress, this routine is called when the break is completed. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, the caller is put into a wait state until the oplock break is completed. </p>
@@ -115,13 +115,13 @@ FLT_PREOP_CALLBACK_STATUS FltOplockBreakToNoneEx(
 <p></p>
 <dl>
 
-### -param <a id="CallbackData"></a><a id="callbackdata"></a><a id="CALLBACKDATA"></a><i>CallbackData</i>
+### -param CallbackData
 
 <dd>
 <p>A pointer to the callback data structure for the I/O operation. </p>
 </dd>
 
-### -param <a id="Context"></a><a id="context"></a><a id="CONTEXT"></a><i>Context</i>
+### -param Context
 
 <dd>
 <p>A context information pointer that was passed in the <i>Context</i> parameter to <b>FltOplockBreakToNoneEx</b>. </p>
@@ -129,7 +129,7 @@ FLT_PREOP_CALLBACK_STATUS FltOplockBreakToNoneEx(
 </dl>
 </dd>
 
-### -param <i>PrePostCallbackDataRoutine</i> [in, optional]
+### -param PrePostCallbackDataRoutine [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied callback routine to be called if the I/O operation is to be pended. The routine is called before the oplock package pends the IRP. This parameter is optional and can be <b>NULL</b>. </p>
@@ -152,13 +152,13 @@ FLT_PREOP_CALLBACK_STATUS FltOplockBreakToNoneEx(
 <p></p>
 <dl>
 
-### -param <a id="CallbackData"></a><a id="callbackdata"></a><a id="CALLBACKDATA"></a><i>CallbackData</i>
+### -param CallbackData
 
 <dd>
 <p>A pointer to the callback data structure for the I/O operation. </p>
 </dd>
 
-### -param <a id="Context"></a><a id="context"></a><a id="CONTEXT"></a><i>Context</i>
+### -param Context
 
 <dd>
 <p>A context information pointer that was passed in the <i>Context</i> parameter to <b>FltOplockBreakToNoneEx</b>. </p>
@@ -258,4 +258,4 @@ FLT_PREOP_CALLBACK_STATUS FltOplockBreakToNoneEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltOplockBreakToNoneEx routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltOplockBreakToNoneEx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size of the structure. Note that the structure contains a dynamic array.</p>
 </dd>
 
-### -field <b>Pin</b>
+### -field Pin
 
 <dd>
 <p>Specifies the PinId of the connected pin on the other filter. (Pin 2 of Wave is connected to Pin 1 of Topology.)</p>
 </dd>
 
-### -field <b>SymbolicLinkName</b>
+### -field SymbolicLinkName
 
 <dd>
 <p>Specifies a string containing the symbolic link name of the connected filter </p>

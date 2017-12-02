@@ -7,7 +7,7 @@ old-location: image\ioctl_scsiscan_unlockdevice.htm
 old-project: image
 ms.assetid: 6dc380a9-b983-453e-949d-f49f85df4c7b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: PWRITE_USING_TOKEN_HEADER, WRITE_USING_TOKEN_HEADER, *PWRITE_USING_TOKEN_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices

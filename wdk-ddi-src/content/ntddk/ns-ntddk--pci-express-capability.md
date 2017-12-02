@@ -67,85 +67,85 @@ typedef struct _PCI_EXPRESS_CAPABILITY {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537454">PCI_CAPABILITIES_HEADER</a> structure that describes the PCI capabilities header of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>ExpressCapabilities</b>
+### -field ExpressCapabilities
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537459">PCI_EXPRESS_CAPABILITIES_REGISTER</a> structure that describes the PCIe capabilities register of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>DeviceCapabilities</b>
+### -field DeviceCapabilities
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537463">PCI_EXPRESS_DEVICE_CAPABILITIES_REGISTER</a> structure that describes the PCIe device capabilities register of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>DeviceControl</b>
+### -field DeviceControl
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537464">PCI_EXPRESS_DEVICE_CONTROL_REGISTER</a> structure that describes the PCIe device control register of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>DeviceStatus</b>
+### -field DeviceStatus
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537465">PCI_EXPRESS_DEVICE_STATUS_REGISTER</a> structure that describes the PCIe device status register of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>LinkCapabilities</b>
+### -field LinkCapabilities
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537468">PCI_EXPRESS_LINK_CAPABILITIES_REGISTER</a> structure that describes the PCIe link capabilities register of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>LinkControl</b>
+### -field LinkControl
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537469">PCI_EXPRESS_LINK_CONTROL_REGISTER</a> structure that describes the PCIe link control register of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>LinkStatus</b>
+### -field LinkStatus
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537470">PCI_EXPRESS_LINK_STATUS_REGISTER</a> structure that describes the PCIe link status register of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>SlotCapabilities</b>
+### -field SlotCapabilities
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537560">PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER</a> structure that describes the PCIe slot capabilities register of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>SlotControl</b>
+### -field SlotControl
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537562">PCI_EXPRESS_SLOT_CONTROL_REGISTER</a> structure that describes the PCIe slot control register of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>SlotStatus</b>
+### -field SlotStatus
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537564">PCI_EXPRESS_SLOT_STATUS_REGISTER</a> structure that describes the PCIe slot status register of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>RootControl</b>
+### -field RootControl
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537474">PCI_EXPRESS_ROOT_CONTROL_REGISTER</a> structure that describes the PCIe root control register of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>RootCapabilities</b>
+### -field RootCapabilities
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537473">PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER</a> structure that describes the PCIe root capabilities register of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>RootStatus</b>
+### -field RootStatus
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537477">PCI_EXPRESS_ROOT_STATUS_REGISTER</a> structure that describes the PCIe root status register of the PCIe capability structure.</p>

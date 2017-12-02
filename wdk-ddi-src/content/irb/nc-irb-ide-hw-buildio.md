@@ -58,13 +58,13 @@ BOOLEAN IdeHwBuildIo(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the miniport driver channel extension.</p>
 </dd>
 
-### -param <i>Irb</i> [in]
+### -param Irb [in]
 
 <dd>
 <p>A pointer to a structure of type <a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a> that defines the Integrated Device Electronics (IDE) input/output request block (IRB) to process.</p>
@@ -83,7 +83,7 @@ BOOLEAN IdeHwBuildIo(
 
 <p>The miniport driver can use the <b><i>IdeHwBuildIo</i></b> routine to indicate to the port driver how an IRB should be handled. For example, the miniport driver can request that the port driver map the buffer at <i>DataBuffer </i>by setting the <b>IrbFlags</b> member of the IRB to the appropriate value. The miniport driver should not request that the buffer that is associated with a request be mapped unless the request is some type of data transfer. </p>
 
-<p>The <b><i>IdeHwBuildIo</i></b> routine resembles Storport's <a href="storage.hwstorbuildio">HwStorBuildIo</a> routine in functionality. For more information about the <b><i>HwStorBuildIo</i></b> routine, see <a href="NULL">Unsynchronized HwStorBuildIo Routine</a>.</p>
+<p>The <b><i>IdeHwBuildIo</i></b> routine resembles Storport's <a href="storage.hwstorbuildio">HwStorBuildIo</a> routine in functionality. For more information about the <b><i>HwStorBuildIo</i></b> routine, see <a href="storage.unsynchronized_hwstorbuildio_routine">Unsynchronized HwStorBuildIo Routine</a>.</p>
 
 <p><b><i>IdeHwBuildIo</i></b> is an optional routine.</p>
 

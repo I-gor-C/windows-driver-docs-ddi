@@ -58,25 +58,25 @@ typedef enum _TRANSACTIONMANAGER_INFORMATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="TransactionManagerBasicInformation"></a><a id="transactionmanagerbasicinformation"></a><a id="TRANSACTIONMANAGERBASICINFORMATION"></a><b>TransactionManagerBasicInformation</b>
+### -field TransactionManagerBasicInformation
 
 <dd>
 <p>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm--transactionmanager-basic-information.md">TRANSACTIONMANAGER_BASIC_INFORMATION</a> structure. </p>
 </dd>
 
-### -field <a id="TransactionManagerLogInformation"></a><a id="transactionmanagerloginformation"></a><a id="TRANSACTIONMANAGERLOGINFORMATION"></a><b>TransactionManagerLogInformation</b>
+### -field TransactionManagerLogInformation
 
 <dd>
 <p>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm--transactionmanager-log-information.md">TRANSACTIONMANAGER_LOG_INFORMATION</a> structure. </p>
 </dd>
 
-### -field <a id="TransactionManagerLogPathInformation"></a><a id="transactionmanagerlogpathinformation"></a><a id="TRANSACTIONMANAGERLOGPATHINFORMATION"></a><b>TransactionManagerLogPathInformation</b>
+### -field TransactionManagerLogPathInformation
 
 <dd>
 <p>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm--transactionmanager-logpath-information.md">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a> structure. </p>
 </dd>
 
-### -field <a id="TransactionManagerRecoveryInformation"></a><a id="transactionmanagerrecoveryinformation"></a><a id="TRANSACTIONMANAGERRECOVERYINFORMATION"></a><b>TransactionManagerRecoveryInformation</b>
+### -field TransactionManagerRecoveryInformation
 
 <dd>
 <p>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm--transactionmanager-recovery-information.md">TRANSACTIONMANAGER_RECOVERY_INFORMATION</a> structure.</p>

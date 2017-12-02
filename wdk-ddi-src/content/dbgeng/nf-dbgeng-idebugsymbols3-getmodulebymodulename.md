@@ -7,7 +7,7 @@ old-location: debugger\getmodulebymodulename.htm
 old-project: debugger
 ms.assetid: 243b79fe-b1b2-48b4-bb0b-c56b787e7b83
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSymbols3, GetModuleByModuleName, IDebugSymbols3::GetModuleByModuleName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ HRESULT GetModuleByModuleName(
 ## -parameters
 <dl>
 
-### -param <i>Name</i> [in]
+### -param Name [in]
 
 <dd>
 <p>Specifies the name of the desired module.</p>
 </dd>
 
-### -param <i>StartIndex</i> [in]
+### -param StartIndex [in]
 
 <dd>
 <p>Specifies the index to start searching from.</p>
 </dd>
 
-### -param <i>Index</i> [out, optional]
+### -param Index [out, optional]
 
 <dd>
 <p>Receives the index of the first module with the name <i>Name</i>.  If <i>Index</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>Base</i> [out, optional]
+### -param Base [out, optional]
 
 <dd>
 <p>Receives the location in the target's memory address space of the base of the module.  If <i>Base</i> is <b>NULL</b>, this information is not returned.</p>
@@ -83,7 +83,7 @@ HRESULT GetModuleByModuleName(
 </dl>
 
 ## -returns
-<p>This method may also return other error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>E_INVALIDARG</b></dt>
@@ -137,4 +137,4 @@ HRESULT GetModuleByModuleName(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols::GetModuleByModuleName method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols::GetModuleByModuleName method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

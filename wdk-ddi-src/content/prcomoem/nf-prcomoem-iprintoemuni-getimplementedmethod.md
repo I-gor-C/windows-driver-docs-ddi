@@ -55,7 +55,7 @@ HRESULT GetImplementedMethod(
 ## -parameters
 <dl>
 
-### -param <i>pMethodName</i> 
+### -param pMethodName 
 
 <dd>
 <p>Caller-supplied pointer to a string that represents the name of an <b>IPrintOemUni</b> interface method, such as "ImageProcessing" for <b>IPrintOemUni::ImageProcessing</b> or "FilterGraphics" for <b>IPrintOemUni::FilterGraphics</b>.</p>

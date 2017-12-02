@@ -7,7 +7,7 @@ old-location: ifsk\fltsetvolumecontext.htm
 old-project: ifsk
 ms.assetid: e1e8605c-b3d1-40db-bb33-fc1f7ed51617
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltSetVolumeContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,26 +57,26 @@ NTSTATUS FltSetVolumeContext(
 ## -parameters
 <dl>
 
-### -param <i>Volume</i> [in]
+### -param Volume [in]
 
 <dd>
 <p>Opaque volume pointer for the volume. </p>
 </dd>
 
-### -param <i>Operation</i> [in]
+### -param Operation [in]
 
 <dd>
 <p>Flag specifying details of the operation to be performed. This parameter must be one of the following: </p>
 <p></p>
 <dl>
 
-### -param <a id="FLT_SET_CONTEXT_REPLACE_IF_EXISTS"></a><a id="flt_set_context_replace_if_exists"></a>FLT_SET_CONTEXT_REPLACE_IF_EXISTS
+### -param FLT_SET_CONTEXT_REPLACE_IF_EXISTS
 
 <dd>
 <p>If a context is already set, replace it with <i>NewContext</i>. Otherwise, insert <i>NewContext</i> into the list of contexts for the volume. </p>
 </dd>
 
-### -param <a id="FLT_SET_CONTEXT_KEEP_IF_EXISTS"></a><a id="flt_set_context_keep_if_exists"></a>FLT_SET_CONTEXT_KEEP_IF_EXISTS
+### -param FLT_SET_CONTEXT_KEEP_IF_EXISTS
 
 <dd>
 <p>If a context is already set, return STATUS_FLT_CONTEXT_ALREADY_DEFINED. Otherwise, insert <i>NewContext</i> into the list of contexts for the volume. </p>
@@ -84,13 +84,13 @@ NTSTATUS FltSetVolumeContext(
 </dl>
 </dd>
 
-### -param <i>NewContext</i> [in]
+### -param NewContext [in]
 
 <dd>
 <p>Pointer to the new context to be set for the volume. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>OldContext</i> [out, optional]
+### -param OldContext [out, optional]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the address of the existing volume context for <i>Instance</i>. This parameter is optional and can be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.) </p>
@@ -211,4 +211,4 @@ NTSTATUS FltSetVolumeContext(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetVolumeContext function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetVolumeContext function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

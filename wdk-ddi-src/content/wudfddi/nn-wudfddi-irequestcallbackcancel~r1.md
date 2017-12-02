@@ -7,7 +7,7 @@ old-location: wdf\irequestcallbackcancel.htm
 old-project: wdf
 ms.assetid: d6aec38c-6cbb-494c-9fa4-10b6f4a30ae0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

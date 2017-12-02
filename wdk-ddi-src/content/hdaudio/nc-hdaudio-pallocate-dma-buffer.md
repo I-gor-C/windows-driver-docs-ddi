@@ -64,43 +64,43 @@ NTSTATUS AllocateDmaBuffer(
 ## -parameters
 <dl>
 
-### -param <i>context</i> [in]
+### -param context [in]
 
 <dd>
 <p>Specifies the context value from the <b>Context</b> members of the <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface.md">HDAUDIO_BUS_INTERFACE</a> and <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-v2.md">HDAUDIO_BUS_INTERFACE_V2</a> structures.</p>
 </dd>
 
-### -param <i>handle</i> [in]
+### -param handle [in]
 
 <dd>
 <p>Handle identifying the DMA engine. This handle value was obtained from a previous call to <a href="..\hdaudio\nc-hdaudio-pallocate-capture-dma-engine.md">AllocateCaptureDmaEngine</a> or <a href="..\hdaudio\nc-hdaudio-pallocate-render-dma-engine.md">AllocateRenderDmaEngine</a>.</p>
 </dd>
 
-### -param <i>requestedBufferSize</i> [in]
+### -param requestedBufferSize [in]
 
 <dd>
 <p>Specifies the requested buffer size in bytes.</p>
 </dd>
 
-### -param <i>bufferMdl</i> [out]
+### -param bufferMdl [out]
 
 <dd>
 <p>Retrieves the physical memory pages that contains the allocated buffer. This parameter points to a caller-allocated PMDL variable into which the routine writes a pointer to a memory descriptor list (MDL) that describes the buffer.</p>
 </dd>
 
-### -param <i>allocatedBufferSize</i> [out]
+### -param allocatedBufferSize [out]
 
 <dd>
 <p>Retrieves the allocated buffer size in bytes. This parameter points to a caller-allocated SIZE_T variable into which the routine writes the size of the allocated buffer.</p>
 </dd>
 
-### -param <i>streamID</i> [out]
+### -param streamID [out]
 
 <dd>
 <p>Retrieves the stream identifier. This parameter points to a caller-allocated UCHAR variable into which the routine writes the stream identifier that it assigns to the stream.</p>
 </dd>
 
-### -param <i>fifoSize</i> [out]
+### -param fifoSize [out]
 
 <dd>
 <p>Retrieves the DMA engine's FIFO size in bytes. This parameter points to a caller-allocated ULONG variable into which the routine writes the FIFO size.</p>

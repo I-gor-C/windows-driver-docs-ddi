@@ -54,7 +54,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTSetVidPnSourceOwner1(
 ## -parameters
 <dl>
 
-### -param <i>pSetVidPnSourceOwner1</i> [in]
+### -param pSetVidPnSourceOwner1 [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setvidpnsourceowner1.md">D3DKMT_SETVIDPNSOURCEOWNER1</a> structure that describes the parameters for setting or releasing the video present source.</p>

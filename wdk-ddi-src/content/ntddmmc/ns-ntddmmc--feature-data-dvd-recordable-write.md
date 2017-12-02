@@ -62,51 +62,51 @@ typedef struct _FEATURE_DATA_DVD_RECORDABLE_WRITE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>DVD_RW</b>
+### -field DVD_RW
 
 <dd>
 <p>Indicates, when set to 1, that the device supports writing and erasing on DVD-RW media. For more information about this feature see the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. </p>
 </dd>
 
-### -field <b>TestWrite</b>
+### -field TestWrite
 
 <dd>
 <p>Indicates, when set to 1, that the device is capable of performing test writes. When set to zero, the device cannot perform test writes. </p>
 </dd>
 
-### -field <b>RDualLayer</b>
+### -field RDualLayer
 
 <dd></dd>
 
-### -field <b>Reserved02</b>
+### -field Reserved02
 
 <dd></dd>
 
-### -field <b>BufferUnderrunFree</b>
+### -field BufferUnderrunFree
 
 <dd>
 <p>Indicates, when set to 1, that the device can perform under-run-free recording. </p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Reserved4</b>
+### -field Reserved4
 
 <dd>
 <p>Reserved. </p>

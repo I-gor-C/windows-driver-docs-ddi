@@ -55,7 +55,7 @@ DWORD GdiGetPageCount(
 ## -parameters
 <dl>
 
-### -param <i>SpoolFileHandle</i> 
+### -param SpoolFileHandle 
 
 <dd>
 <p>Caller-supplied spool file handle, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>.</p>
@@ -68,7 +68,7 @@ DWORD GdiGetPageCount(
 ## -remarks
 <p>The <b>GdiGetPageCount</b> function is exported by gdi32.dll for use within a print processor's <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a> function.</p><p class="note">Usually, a better method for determining the page count is to count the number of calls made to <a href="..\winppi\nf-winppi-gdigetpagehandle.md">GdiGetPageHandle</a>.</p>
 
-<p>For additional information about this set of functions, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
+<p>For additional information about this set of functions, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.</p>
 
 ## -requirements
 <table>

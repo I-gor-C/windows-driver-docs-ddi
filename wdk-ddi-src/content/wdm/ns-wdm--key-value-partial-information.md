@@ -58,25 +58,25 @@ typedef struct _KEY_VALUE_PARTIAL_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>TitleIndex</b>
+### -field TitleIndex
 
 <dd>
 <p>Device and intermediate drivers should ignore this member.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Specifies the system-defined type for the registry value in the <b>Data</b> member. For a summary of these types, see <a href="..\wdm\ns-wdm--key-value-basic-information.md">KEY_VALUE_BASIC_INFORMATION</a>.</p>
 </dd>
 
-### -field <b>DataLength</b>
+### -field DataLength
 
 <dd>
 <p>The size in bytes of the <b>Data</b> member.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>A value entry of the key.</p>

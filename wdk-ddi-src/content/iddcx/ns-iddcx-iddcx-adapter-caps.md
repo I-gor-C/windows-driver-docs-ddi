@@ -60,7 +60,7 @@ typedef struct IDDCX_ADAPTER_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -68,14 +68,14 @@ typedef struct IDDCX_ADAPTER_CAPS {
                  </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>
                      Adapter flags utilized by the driver.</p>
 </dd>
 
-### -field <b>MaxDisplayPipelineRate</b>
+### -field MaxDisplayPipelineRate
 
 <dd>
 <p>
@@ -84,20 +84,20 @@ typedef struct IDDCX_ADAPTER_CAPS {
                  </p>
 </dd>
 
-### -field <b>MaxMonitorsSupported</b>
+### -field MaxMonitorsSupported
 
 <dd>
 <p>
                      Indicates the maximum number of monitors that can be connected at the same time.</p>
 </dd>
 
-### -field <b>EndPointDiagnostics</b>
+### -field EndPointDiagnostics
 
 <dd>
 <p>Endpoint diagnostics information. None of this is used for runtime OS decision, but it is used for telemetry.</p>
 </dd>
 
-### -field <b>StaticDesktopReencodeFrameCount</b>
+### -field StaticDesktopReencodeFrameCount
 
 <dd>
 <p>

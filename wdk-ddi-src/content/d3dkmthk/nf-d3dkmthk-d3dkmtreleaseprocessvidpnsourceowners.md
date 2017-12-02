@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTReleaseProcessVidPnSourceOwners(
 ## -parameters
 <dl>
 
-### -param <i>hProcess</i> [in]
+### -param hProcess [in]
 
 <dd>
 <p>A handle to the process that video present network source owners are released from.</p>

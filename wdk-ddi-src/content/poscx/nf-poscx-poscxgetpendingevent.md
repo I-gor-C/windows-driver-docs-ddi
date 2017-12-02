@@ -60,13 +60,13 @@ NTSTATUS PosCxGetPendingEvent(
 ## -parameters
 <dl>
 
-### -param <i>device</i> [in]
+### -param device [in]
 
 <dd>
 <p>A handle to a framework device object that represents the device.</p>
 </dd>
 
-### -param <i>request</i> [in]
+### -param request [in]
 
 <dd>
 <p>A handle to a framework request object that represents the read request if <b>PosCxGetPendingEvent</b> is called from the device read callback.</p>

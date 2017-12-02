@@ -7,7 +7,7 @@ old-location: ifsk\rtlflushnonvolatilememory.htm
 old-project: ifsk
 ms.assetid: 759CDFAA-D939-44E7-AE03-E3ED90F8E09D
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlFlushNonVolatileMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,27 +57,27 @@ NTSTATUS RtlFlushNonVolatileMemory(
 ## -parameters
 <dl>
 
-### -param <i>NvToken</i> 
+### -param NvToken 
 
 <dd>
 <p> A pointer to an opaque structure that has
         information about various properties of the non-volatile memory region which <a href="..\ntddk\nf-ntddk-rtlgetnonvolatiletoken.md">RtlGetNonVolatileToken</a> had returned.</p>
 </dd>
 
-### -param <i>NvBuffer</i> 
+### -param NvBuffer 
 
 <dd>
 <p>A pointer to the non-volatile memory to flush. This should be user addresses obtained from
         a file mapping object.</p>
 </dd>
 
-### -param <i>Size</i> 
+### -param Size 
 
 <dd>
 <p>The length, in bytes, of the non-volatile memory buffer <b>NvBuffer</b> points to.</p>
 </dd>
 
-### -param <i>Flags</i> 
+### -param Flags 
 
 <dd>
 <p>One of the following flags can be specified:</p>
@@ -161,4 +161,4 @@ NTSTATUS RtlFlushNonVolatileMemory(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlFlushNonVolatileMemory routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlFlushNonVolatileMemory routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

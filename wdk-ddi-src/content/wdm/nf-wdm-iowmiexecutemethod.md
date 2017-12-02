@@ -60,37 +60,37 @@ NTSTATUS IoWMIExecuteMethod(
 ## -parameters
 <dl>
 
-### -param <i>DataBlockObject</i> [in]
+### -param DataBlockObject [in]
 
 <dd>
 <p>Pointer to a WMI data block object. The caller opens the data block object for the WMI class with <a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>. The object must be opened with the WMIGUID_EXECUTE access right.</p>
 </dd>
 
-### -param <i>InstanceName</i> [in]
+### -param InstanceName [in]
 
 <dd>
 <p>Specifies the name of the instance of the data block. This value corresponds to the value of the <b>InstanceName</b> property for the block.</p>
 </dd>
 
-### -param <i>MethodId</i> [in]
+### -param MethodId [in]
 
 <dd>
 <p>Specifies the method item ID for the method to be set. The value of this parameter corresponds to the value declared in the <b>WmiMethodId</b> qualifier for the method.</p>
 </dd>
 
-### -param <i>InBufferSize</i> [in]
+### -param InBufferSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of input data for the method. The actual input data is passed in the buffer pointed to by the <i>InOutBuffer</i> parameter.</p>
 </dd>
 
-### -param <i>OutBufferSize</i> [in, out]
+### -param OutBufferSize [in, out]
 
 <dd>
 <p>Pointer to a ULONG that specifies the expected size, bytes, of the data output by the method. The actual output data is returned in the buffer pointed to by the <i>InOutBuffer</i> parameter. If the routine succeeds, it updates the memory location to specify the number of bytes actually stored in <i>InOutBuffer</i>. If the routine fails with STATUS_BUFFER_TOO_SMALL, it returns the number of bytes required to return the data.</p>
 </dd>
 
-### -param <i>InOutBuffer</i> [in, out]
+### -param InOutBuffer [in, out]
 
 <dd>
 <p>Pointer to the buffer where the caller passes the WMI method's input data, and receives the WMI method's output data.</p>

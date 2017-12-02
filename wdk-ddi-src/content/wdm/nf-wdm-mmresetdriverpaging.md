@@ -55,7 +55,7 @@ VOID MmResetDriverPaging(
 ## -parameters
 <dl>
 
-### -param <i>AddressWithinSection</i> [in]
+### -param AddressWithinSection [in]
 
 <dd>
 <p>A pointer to a virtual address in the driver (for example, the address of the <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine).</p>

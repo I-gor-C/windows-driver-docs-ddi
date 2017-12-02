@@ -7,7 +7,7 @@ old-location: netvista\ndis_filter_driver_characteristics.htm
 old-project: netvista
 ms.assetid: 1eb2bae0-70b9-4bc0-9d93-4fc9467f9532
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_FILTER_DRIVER_CHARACTERISTICS, NDIS_FILTER_DRIVER_CHARACTERISTICS, *PNDIS_FILTER_DRIVER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -89,7 +89,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -103,7 +103,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_FILTER_CHARACTERISTICS_REVISION_3"></a><a id="ndis_filter_characteristics_revision_3"></a>NDIS_FILTER_CHARACTERISTICS_REVISION_3
+### -field NDIS_FILTER_CHARACTERISTICS_REVISION_3
 
 <dd>
 <p>Added the 
@@ -112,7 +112,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
         <b>Size</b> member to NDIS_SIZEOF_FILTER_DRIVER_CHARACTERISTICS_REVISION_3.</p>
 </dd>
 
-### -field <a id="NDIS_FILTER_CHARACTERISTICS_REVISION_2"></a><a id="ndis_filter_characteristics_revision_2"></a>NDIS_FILTER_CHARACTERISTICS_REVISION_2
+### -field NDIS_FILTER_CHARACTERISTICS_REVISION_2
 
 <dd>
 <p>Added the 
@@ -123,7 +123,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
         <b>Size</b> member to NDIS_SIZEOF_FILTER_DRIVER_CHARACTERISTICS_REVISION_2.</p>
 </dd>
 
-### -field <a id="NDIS_FILTER_CHARACTERISTICS_REVISION_1"></a><a id="ndis_filter_characteristics_revision_1"></a>NDIS_FILTER_CHARACTERISTICS_REVISION_1
+### -field NDIS_FILTER_CHARACTERISTICS_REVISION_1
 
 <dd>
 <p>Original version.</p>
@@ -133,14 +133,14 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
 </dl>
 </dd>
 
-### -field <b>MajorNdisVersion</b>
+### -field MajorNdisVersion
 
 <dd>
 <p>The major version of NDIS that the driver is using. The current value is
      0x06.</p>
 </dd>
 
-### -field <b>MinorNdisVersion</b>
+### -field MinorNdisVersion
 
 <dd>
 <p>The minor NDIS version. The following are the available minor version value settings.</p>
@@ -261,53 +261,53 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
 <p> </p>
 </dd>
 
-### -field <b>MajorDriverVersion</b>
+### -field MajorDriverVersion
 
 <dd>
 <p>Reserved for the major version number of the filter driver. Filter drivers can specify any value
      that they require.</p>
 </dd>
 
-### -field <b>MinorDriverVersion</b>
+### -field MinorDriverVersion
 
 <dd>
 <p>Reserved for the minor version number of the filter driver. Filter drivers can specify any value
      that they require.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>FriendlyName</b>
+### -field FriendlyName
 
 <dd>
 <p>A Unicode string that represents the user-readable description of the filter driver.</p>
 </dd>
 
-### -field <b>UniqueName</b>
+### -field UniqueName
 
 <dd>
-<p>A Unicode string that represents the unique name for the filter driver. This string must be a GUID, enclosed in curly braces, for example "{5cbf81bd-5055-47cd-9055-a76b2b4e3697}". This GUID must match the one in the <b>NetCfgInstanceId</b> INF file entry in the filter driver's INF file. For more information, see <a href="NULL">INF File Settings for Filter Drivers</a>.</p>
+<p>A Unicode string that represents the unique name for the filter driver. This string must be a GUID, enclosed in curly braces, for example "{5cbf81bd-5055-47cd-9055-a76b2b4e3697}". This GUID must match the one in the <b>NetCfgInstanceId</b> INF file entry in the filter driver's INF file. For more information, see <a href="netvista.inf_file_settings_for_filter_drivers">INF File Settings for Filter Drivers</a>.</p>
 </dd>
 
-### -field <b>ServiceName</b>
+### -field ServiceName
 
 <dd>
 <p>A Unicode string that represents the service name of the filter driver. This string must be the service name
-     from the AddService directive in the filter driver's INF file. For more information, see <a href="NULL">INF File Settings for Filter Drivers</a>.</p>
+     from the AddService directive in the filter driver's INF file. For more information, see <a href="netvista.inf_file_settings_for_filter_drivers">INF File Settings for Filter Drivers</a>.</p>
 </dd>
 
-### -field <b>SetOptionsHandler</b>
+### -field SetOptionsHandler
 
 <dd>
 <p>Specifies the entry point of the caller's 
      <a href="netvista.filtersetoptions">FilterSetOptions</a> function.</p>
 </dd>
 
-### -field <b>SetFilterModuleOptionsHandler</b>
+### -field SetFilterModuleOptionsHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -315,35 +315,35 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
      FilterSetModuleOptions</a> function.</p>
 </dd>
 
-### -field <b>AttachHandler</b>
+### -field AttachHandler
 
 <dd>
 <p>The entry point of the caller's 
      <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function.</p>
 </dd>
 
-### -field <b>DetachHandler</b>
+### -field DetachHandler
 
 <dd>
 <p>The entry point of the caller's 
      <a href="..\ndis\nc-ndis-filter-detach.md">FilterDetach</a> function.</p>
 </dd>
 
-### -field <b>RestartHandler</b>
+### -field RestartHandler
 
 <dd>
 <p>The entry point of the caller's 
      <a href="..\ndis\nc-ndis-filter-restart.md">FilterRestart</a> function.</p>
 </dd>
 
-### -field <b>PauseHandler</b>
+### -field PauseHandler
 
 <dd>
 <p>The entry point of the caller's 
      <a href="..\ndis\nc-ndis-filter-pause.md">FilterPause</a> function.</p>
 </dd>
 
-### -field <b>SendNetBufferListsHandler</b>
+### -field SendNetBufferListsHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -351,7 +351,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
      FilterSendNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>SendNetBufferListsCompleteHandler</b>
+### -field SendNetBufferListsCompleteHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -360,7 +360,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
      <b>NULL</b>.</p>
 </dd>
 
-### -field <b>CancelSendNetBufferListsHandler</b>
+### -field CancelSendNetBufferListsHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -368,7 +368,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
      FilterCancelSendNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>ReceiveNetBufferListsHandler</b>
+### -field ReceiveNetBufferListsHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -376,7 +376,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
      FilterReceiveNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>ReturnNetBufferListsHandler</b>
+### -field ReturnNetBufferListsHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -384,7 +384,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
      FilterReturnNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>OidRequestHandler</b>
+### -field OidRequestHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -392,7 +392,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
      this function, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>OidRequestCompleteHandler</b>
+### -field OidRequestCompleteHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -400,7 +400,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
      FilterOidRequestComplete</a> function. To bypass this function, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>CancelOidRequestHandler</b>
+### -field CancelOidRequestHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -408,7 +408,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
      FilterCancelOidRequest</a> function. To bypass this function, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>DevicePnPEventNotifyHandler</b>
+### -field DevicePnPEventNotifyHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -416,7 +416,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
      FilterDevicePnPEventNotify</a> function. To bypass this function, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>NetPnPEventHandler</b>
+### -field NetPnPEventHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -424,7 +424,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
      bypass this function, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>StatusHandler</b>
+### -field StatusHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -432,7 +432,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
      function, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>DirectOidRequestHandler</b>
+### -field DirectOidRequestHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -440,7 +440,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
       FilterDirectOidRequest</a> function. To bypass this function, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>DirectOidRequestCompleteHandler</b>
+### -field DirectOidRequestCompleteHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -448,7 +448,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
       FilterDirectOidRequestComplete</a> function. To bypass this function, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>CancelDirectOidRequestHandler</b>
+### -field CancelDirectOidRequestHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -456,7 +456,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
       FilterCancelDirectOidRequest</a> function. To bypass this function, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>SynchronousOidRequestHandler</b>
+### -field SynchronousOidRequestHandler
 
 <dd>
 <div class="alert"><b>Warning</b>  In Windows 10, version 1709, Synchronous OID requests are supported only for miniport and protocol drivers. Filter drivers cannot make Synchronous OID request calls in Windows 10, version 1709.</div>
@@ -464,7 +464,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
 <p>This member is reserved.</p>
 </dd>
 
-### -field <b>SynchronousOidRequestHandlerComplete</b>
+### -field SynchronousOidRequestHandlerComplete
 
 <dd>
 <div class="alert"><b>Warning</b>  In Windows 10, version 1709, Synchronous OID requests are supported only for miniport and protocol drivers. Filter drivers cannot make Synchronous OID request calls in Windows 10, version 1709.</div>
@@ -581,12 +581,12 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
 <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 </dt>
 <dt>
-<a href="NULL">INF File Settings for Filter Drivers</a>
+<a href="netvista.inf_file_settings_for_filter_drivers">INF File Settings for Filter Drivers</a>
 </dt>
 <dt>
-<a href="NULL">Initializing a Filter Driver</a>
+<a href="netvista.initializing_a_filter_driver">Initializing a Filter Driver</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_DRIVER_CHARACTERISTICS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_DRIVER_CHARACTERISTICS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -61,37 +61,37 @@ VOID ScsiPortLogError(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
-### -param <i>Srb</i> [in, optional]
+### -param Srb [in, optional]
 
 <dd>
 <p>Pointer to a SCSI request block if one is associated with the error. Otherwise, this parameter is <b>NULL</b>.</p>
 </dd>
 
-### -param <i>PathId</i> [in]
+### -param PathId [in]
 
 <dd>
 <p>Identifies the SCSI bus.</p>
 </dd>
 
-### -param <i>TargetId</i> [in]
+### -param TargetId [in]
 
 <dd>
 <p>Identifies the target controller or device on the bus.</p>
 </dd>
 
-### -param <i>Lun</i> [in]
+### -param Lun [in]
 
 <dd>
 <p>Identifies the logical unit number of the target device.</p>
 </dd>
 
-### -param <i>ErrorCode</i> [in]
+### -param ErrorCode [in]
 
 <dd>
 <p>Specifies an error code indicating one of the following values as the type of error.</p>
@@ -184,7 +184,7 @@ VOID ScsiPortLogError(
 <p> </p>
 </dd>
 
-### -param <i>UniqueId</i> [in]
+### -param UniqueId [in]
 
 <dd>
 <p>Specifies a unique identifier for the error. This value differentiates the current error from other errors with the same <i>ErrorCode</i>. For some miniport drivers, this identifies the line of code where the error was detected. For others, it is additional information returned by the HBA.</p>

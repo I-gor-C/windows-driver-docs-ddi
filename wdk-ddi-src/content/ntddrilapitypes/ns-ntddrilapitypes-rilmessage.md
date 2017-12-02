@@ -7,7 +7,7 @@ old-location: netvista\rilmessage.htm
 old-project: netvista
 ms.assetid: b776b060-79bf-4848-807d-1999d38075ad
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMESSAGE, RILMESSAGE, *LPRILMESSAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,59 +67,59 @@ typedef struct _RILMESSAGE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>raSvcCtrAddress</b>
+### -field raSvcCtrAddress
 
 <dd></dd>
 
-### -field <b>dwType</b>
+### -field dwType
 
 <dd></dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd></dd>
 
-### -field <b>RILMSGUNION</b>
+### -field RILMSGUNION
 
 <dd></dd>
 
-### -field <b>msgUnion</b>
+### -field msgUnion
 
 <dd></dd>
 
-### -field <b>unMsgInDeliver</b>
+### -field unMsgInDeliver
 
 <dd></dd>
 
-### -field <b>unMsgInStatus</b>
+### -field unMsgInStatus
 
 <dd></dd>
 
-### -field <b>unMsgOutSubmit</b>
+### -field unMsgOutSubmit
 
 <dd></dd>
 
-### -field <b>unMsgBcGeneral</b>
+### -field unMsgBcGeneral
 
 <dd></dd>
 
-### -field <b>unMsgIS637InStatus</b>
+### -field unMsgIS637InStatus
 
 <dd></dd>
 
-### -field <b>unMsgCDMAInDeliver</b>
+### -field unMsgCDMAInDeliver
 
 <dd></dd>
 
-### -field <b>unMsgCDMAOutSubmit</b>
+### -field unMsgCDMAOutSubmit
 
 <dd></dd>
 </dl>

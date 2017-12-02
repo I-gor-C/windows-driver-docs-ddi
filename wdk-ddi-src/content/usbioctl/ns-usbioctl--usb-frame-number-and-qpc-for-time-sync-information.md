@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Stores the frame and microframe numbers and the calculated system QPC values. This structure is used in the <a href="buses._ioctl_usb_get_frame_number_and_qpc_for_time_sync">IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC</a> request.</p>
+<p>Stores the frame and microframe numbers and the calculated system QPC values. This structure is used in the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-frame-number-and-qpc-for-time-sync.md">IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC</a> request.</p>
 
 
 ## -syntax
@@ -65,25 +65,25 @@ typedef struct _USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>TimeTrackingHandle</b>
+### -field TimeTrackingHandle
 
 <dd>
-<p>The time racking handle received in the previous <a href="buses._ioctl_usb_stop_tracking_for_time_sync">IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC</a> request.</p>
+<p>The time racking handle received in the previous <a href="..\usbioctl\ni-usbioctl-ioctl-usb-stop-tracking-for-time-sync.md">IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC</a> request.</p>
 </dd>
 
-### -field <b>InputFrameNumber</b>
+### -field InputFrameNumber
 
 <dd>
 <p>A 32-bit USB bus frame number. </p>
 </dd>
 
-### -field <b>InputMicroFrameNumber</b>
+### -field InputMicroFrameNumber
 
 <dd>
 <p>A 3-bit value received from the hardware. </p>
 </dd>
 
-### -field <b>QueryPerformanceCounterAtInputFrameOrMicroFrame</b>
+### -field QueryPerformanceCounterAtInputFrameOrMicroFrame
 
 <dd>
 <p>A value predicted by the USB driver stack that represents the system QPC value at the beginning of the frame and microframe represented by the <b>InputFrameNumber</b> and <b>InputMicroFrameNumber</b> input values.  
@@ -91,13 +91,13 @@ typedef struct _USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION {
 </p>
 </dd>
 
-### -field <b>QueryPerformanceCounterFrequency</b>
+### -field QueryPerformanceCounterFrequency
 
 <dd>
 <p>The current performance-counter frequency, in counts per second.</p>
 </dd>
 
-### -field <b>PredictedAccuracyInMicroSeconds</b>
+### -field PredictedAccuracyInMicroSeconds
 
 <dd>
 <p>A value that represents the accuracy of the predicted QPC value in micro seconds. 
@@ -105,13 +105,13 @@ typedef struct _USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION {
 </p>
 </dd>
 
-### -field <b>CurrentGenerationID</b>
+### -field CurrentGenerationID
 
 <dd>
 <p>An identifier for this request of time synchronization. </p>
 </dd>
 
-### -field <b>CurrentQueryPerformanceCounter</b>
+### -field CurrentQueryPerformanceCounter
 
 <dd>
 <p>Current QPC value captured that is synchronized with the bus frame numbers represented by <b>CurrentHardwareFrameNumber</b>, <b>CurrentHardwareMicroFrameNumber</b> and <b>CurrentUSBFrameNumber</b>. 
@@ -122,7 +122,7 @@ typedef struct _USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION {
 </p>
 </dd>
 
-### -field <b>CurrentHardwareFrameNumber</b>
+### -field CurrentHardwareFrameNumber
 
 <dd>
 <p>A 1-bit value of the current hardware frame number that is directly read  from the MFINDEX register. 
@@ -130,7 +130,7 @@ typedef struct _USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION {
 </p>
 </dd>
 
-### -field <b>CurrentHardwareMicroFrameNumber</b>
+### -field CurrentHardwareMicroFrameNumber
 
 <dd>
 <p>A 3-bit value of the current hardware micro frame number that is  directly read from the MFINDEX register. 
@@ -138,7 +138,7 @@ typedef struct _USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION {
 </p>
 </dd>
 
-### -field <b>CurrentUSBFrameNumber</b>
+### -field CurrentUSBFrameNumber
 
 <dd>
 <p>A 32-bit USB frame number value returned by <a href="buses._urb_get_current_frame_number">_URB_GET_CURRENT_FRAME_NUMBER</a>.</p>

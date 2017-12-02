@@ -63,43 +63,43 @@ typedef struct _SILO_MONITOR_REGISTRATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Set to <b>SERVER_SILO_MONITOR_REGISTRATION_VERSION</b>.</p>
 </dd>
 
-### -field <b>MonitorHost</b>
+### -field MonitorHost
 
 <dd>
 <p>If <b>true</b>, a create notification will be delivered for the host context.</p>
 </dd>
 
-### -field <b>MonitorExistingSilos</b>
+### -field MonitorExistingSilos
 
 <dd>
 <p>If <b>true</b>, create and terminate notifications will be delivered for any silos that currently exist at the time of registration; otherwise, only notifications for new silos will be delivered.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>DUMMYUNIONNAME</b>
+### -field DUMMYUNIONNAME
 
 <dd>
 <p>Unnamed union.</p>
 <dl>
 
-### -field <b>DriverObjectName</b>
+### -field DriverObjectName
 
 <dd>
 <p>A pointer to the unicode name for the driver object registering for notifications.</p>
 </dd>
 
-### -field <b>ComponentName</b>
+### -field ComponentName
 
 <dd>
 <p>A pointer to the unicode name for the component registering for notifications.</p>
@@ -107,13 +107,13 @@ typedef struct _SILO_MONITOR_REGISTRATION {
 </dl>
 </dd>
 
-### -field <b>CreateCallback</b>
+### -field CreateCallback
 
 <dd>
 <p>A pointer to a callback that is invoked whenever a new server silo is created on the system.  This value may be <b>NULL</b>.  This gives drivers to opportunity to handle the event and set up per-silo data structures.</p>
 </dd>
 
-### -field <b>TerminateCallback</b>
+### -field TerminateCallback
 
 <dd>
 <p>A pointer to a callback that is invoked whenever a server silo is terminated (about to be destroyed) on the system.  This value may be <b>NULL</b>.  This gives drivers the opportunity to complete work within the silo and begin tearing down their per-silo data structures.</p>

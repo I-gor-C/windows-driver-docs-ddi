@@ -57,19 +57,19 @@ HRESULT GetPropertyValue(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd>
 <p>The base value of the "name" attribute of the "Property" or the "ScoredProperty" element.</p>
 </dd>
 
-### -param <i>bstrNamespaceUri</i> [in]
+### -param bstrNamespaceUri [in]
 
 <dd>
 <p>The namespace URI value of the "name" attribute of the "Property" or the "ScoredProperty" element.</p>
 </dd>
 
-### -param <i>ppXmlNodeValue</i> [out, retval]
+### -param ppXmlNodeValue [out, retval]
 
 <dd>
 <p>The XML node for the "value" child element.</p>

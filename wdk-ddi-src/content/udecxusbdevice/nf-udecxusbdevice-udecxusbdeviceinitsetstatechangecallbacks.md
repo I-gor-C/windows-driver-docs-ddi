@@ -56,16 +56,16 @@ void UdecxUsbDeviceInitSetStateChangeCallbacks(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbDeviceInit</i> [in, out]
+### -param UdecxUsbDeviceInit [in, out]
 
 <dd>
-<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>. </p>
+<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>. </p>
 </dd>
 
-### -param <i>Callbacks</i> [in]
+### -param Callbacks [in]
 
 <dd>
-<p>A pointer to a <a href="buses.udecx_usb_device_state_change_callbacks">UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS</a> structure that contains pointers to callback functions implemented by the client driver.</p>
+<p>A pointer to a <a href="..\udecxusbdevice\ns-udecxusbdevice--udecx-usb-device-state-change-callbacks.md">UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS</a> structure that contains pointers to callback functions implemented by the client driver.</p>
 </dd>
 </dl>
 
@@ -134,7 +134,7 @@ void UdecxUsbDeviceInitSetStateChangeCallbacks(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>
 </dt>
 <dt>
 <a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>

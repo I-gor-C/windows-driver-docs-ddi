@@ -7,7 +7,7 @@ old-location: wdf\iwdffile2_retrievecountedfilename.htm
 old-project: wdf
 ms.assetid: 0b3aa8d9-1947-4e5e-91d1-6f73ddb3908a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFFile2, RetrieveCountedFileName, IWDFFile2::RetrieveCountedFileName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ HRESULT RetrieveCountedFileName(
 ## -parameters
 <dl>
 
-### -param <i>pCountedFileName</i> [out]
+### -param pCountedFileName [out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer. This buffer receives a <b>NULL</b>-terminated character string that represents the full name of the file that is associated with the device. If the pointer is <b>NULL</b>, <b>RetrieveCountedFileName</b> retrieves only the string length. </p>
 </dd>
 
-### -param <i>pdwCountedFileNameLength</i> [in, out]
+### -param pdwCountedFileNameLength [in, out]
 
 <dd>
 <p>A pointer to a caller-allocated variable. On input, the driver sets the variable to the length, in characters, of the buffer that <i>pdwFileNameLengthInChars</i> points to. On output, the framework sets the variable to the length, in characters, of the character string (including the terminating <b>NULL</b> character) that it placed in the buffer. If a counted file name does not exist, the framework sets the variable to zero. </p>
@@ -157,4 +157,4 @@ HRESULT RetrieveCountedFileName(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFFile2::RetrieveCountedFileName method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFFile2::RetrieveCountedFileName method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\ril_getuiccservicestate.htm
 old-project: netvista
 ms.assetid: 8ce53e64-791d-4e52-a383-b9e407b5b332
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetUiccServiceState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_GetUiccServiceState(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>hUiccApp</i> 
+### -param hUiccApp 
 
 <dd></dd>
 
-### -param <i>dwService</i> 
+### -param dwService 
 
 <dd></dd>
 </dl>

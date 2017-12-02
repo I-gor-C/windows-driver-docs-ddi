@@ -7,7 +7,7 @@ old-location: wdf\wdf_fileobject_config_init.htm
 old-project: wdf
 ms.assetid: 87ad817a-4a62-4061-949c-fe45bdfb44d5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_FILEOBJECT_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ VOID WDF_FILEOBJECT_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>FileEventCallbacks</i> [out]
+### -param FileEventCallbacks [out]
 
 <dd>
 <p>A pointer to a driver-allocated <a href="..\wdfdevice\ns-wdfdevice--wdf-fileobject-config.md">WDF_FILEOBJECT_CONFIG</a> structure.</p>
 </dd>
 
-### -param <i>EvtDeviceFileCreate</i> [in, optional]
+### -param EvtDeviceFileCreate [in, optional]
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-file-create.md">EvtDeviceFileCreate</a> event callback function.</p>
 </dd>
 
-### -param <i>EvtFileClose</i> [in, optional]
+### -param EvtFileClose [in, optional]
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-file-close.md">EvtFileClose</a> event callback function.</p>
 </dd>
 
-### -param <i>EvtFileCleanup</i> [in, optional]
+### -param EvtFileCleanup [in, optional]
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-file-cleanup.md">EvtFileCleanup</a> event callback function.</p>

@@ -57,20 +57,20 @@ typedef struct _LINK_SHARE_ACCESS {
 ## -struct-fields
 <dl>
 
-### -field <b> OpenCount</b>
+### -field  OpenCount
 
 <dd>
 <p>The number of open requests to the file.</p>
 </dd>
 
-### -field <b> Deleters</b>
+### -field  Deleters
 
 <dd>
 <p>File associated with the file object has been 
       opened for delete access.</p>
 </dd>
 
-### -field <b> SharedDelete</b>
+### -field  SharedDelete
 
 <dd>
 <p>File associated with the file object has been opened for delete sharing access.</p>

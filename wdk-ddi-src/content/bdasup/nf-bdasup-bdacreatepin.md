@@ -56,19 +56,19 @@ NTSTATUS BdaCreatePin(
 ## -parameters
 <dl>
 
-### -param <i>pKSFilter</i> [in]
+### -param pKSFilter [in]
 
 <dd>
 <p>Points to the filter in which to create a pin.</p>
 </dd>
 
-### -param <i>ulPinType</i> [in]
+### -param ulPinType [in]
 
 <dd>
 <p>Specifies the type of pin to create. The BDA minidriver must define a list of pin types for each filter that it supports.</p>
 </dd>
 
-### -param <i>pulPinId</i> [out, optional]
+### -param pulPinId [out, optional]
 
 <dd>
 <p>Points to a variable that receives the identifier for the created pin. </p>

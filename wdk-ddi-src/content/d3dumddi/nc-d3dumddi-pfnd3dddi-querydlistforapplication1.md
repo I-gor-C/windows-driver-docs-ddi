@@ -59,19 +59,19 @@ HRESULT APIENTRY* QueryDListForApplication(
 ## -parameters
 <dl>
 
-### -param <i>pDefaultToDiscrete</i> [out]
+### -param pDefaultToDiscrete [out]
 
 <dd>
 <p>If <b>TRUE</b>, the application should be run on the discrete GPU. Otherwise, the application should run on the integrated GPU.</p>
 </dd>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>A handle to the graphics adapter object.</p>
 </dd>
 
-### -param <i>pfnEscapeCB</i> [in]
+### -param pfnEscapeCB [in]
 
 <dd>
 <p>A function pointer to a <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-escapecb.md">pfnEscapeCb</a> callback function that shares info with the display miniport driver.</p>

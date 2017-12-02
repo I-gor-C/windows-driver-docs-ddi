@@ -69,56 +69,56 @@ typedef struct _D3DKMDT_VIDEO_SIGNAL_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>VideoStandard</b>
+### -field VideoStandard
 
 <dd>
 <p>A constant from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-video-signal-standard.md">D3DKMDT_VIDEO_SIGNAL_STANDARD</a> enumeration that indicates the video standard (if any) that defines the video signal.</p>
 </dd>
 
-### -field <b>TotalSize</b>
+### -field TotalSize
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-2dregion.md">D3DKMDT_2DREGION</a> structure that specifies the width and height (in pixels) of the entire video signal.</p>
 </dd>
 
-### -field <b>ActiveSize</b>
+### -field ActiveSize
 
 <dd>
 <p>A D3DKMDT_2DREGION structure that specifies the width and height (in pixels) of the active portion of the video signal.</p>
 </dd>
 
-### -field <b>VSyncFreq</b>
+### -field VSyncFreq
 
 <dd>
 <p>A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-rational.md">D3DDDI_RATIONAL</a> structure that specifies the vertical refresh rate in Hz.</p>
 </dd>
 
-### -field <b>HSyncFreq</b>
+### -field HSyncFreq
 
 <dd>
 <p>A D3DDDI_RATIONAL structure that specifies the horizontal refresh rate in Hz.</p>
 </dd>
 
-### -field <b>PixelRate</b>
+### -field PixelRate
 
 <dd>
 <p>The pixel clock rate.</p>
 </dd>
 
-### -field <b>AdditionalSignalInfo</b>
+### -field AdditionalSignalInfo
 
 <dd>
 <p>Supported by WDDM 1.3 and later display miniport drivers running on Windows 8.1 and later.</p>
 <dl>
 
-### -field <b>ScanLineOrdering</b>
+### -field ScanLineOrdering
 
 <dd>
 <p>A constant from the <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-video-signal-scanline-ordering.md">D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING</a> enumeration that indicates the scanline ordering (for example, progressive or interlaced) of the video signal.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>VSyncFreqDivider</b>
+### -field VSyncFreqDivider
 
 <dd>
 <p>The ratio of the VSync rate of a monitor that displays through a Miracast connected session to the VSync rate of the Miracast sink.</p>
@@ -129,7 +129,7 @@ typedef struct _D3DKMDT_VIDEO_SIGNAL_INFO {
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>
@@ -138,7 +138,7 @@ typedef struct _D3DKMDT_VIDEO_SIGNAL_INFO {
 </dl>
 </dd>
 
-### -field <b>ScanLineOrdering</b>
+### -field ScanLineOrdering
 
 <dd>
 <p>A constant from the <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-video-signal-scanline-ordering.md">D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING</a> enumeration that indicates the scanline ordering (for example, progressive or interlaced) of the video signal.</p>

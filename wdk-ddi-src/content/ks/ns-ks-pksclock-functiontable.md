@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>GetTime</b>
+### -field GetTime
 
 <dd>
 <p>Pointer to a driver-allocated <a href="stream.kstrclockgettime">KStrClockGetTime</a> routine.</p>
 </dd>
 
-### -field <b>GetPhysicalTime</b>
+### -field GetPhysicalTime
 
 <dd>
 <p>Pointer to a driver-allocated <a href="stream.kstrclockgetphysicaltime">KStrClockGetPhysicalTime</a> routine.</p>
 </dd>
 
-### -field <b>GetCorrelatedTime</b>
+### -field GetCorrelatedTime
 
 <dd>
 <p>Pointer to a driver-allocated <a href="stream.kstrclockgetcorrelatedtime">KStrClockGetCorrelatedTime</a> routine.</p>
 </dd>
 
-### -field <b>GetCorrelatedPhysicalTime</b>
+### -field GetCorrelatedPhysicalTime
 
 <dd>
 <p>Pointer to a driver-allocated <a href="stream.kstrclockgetcorrelatedphysicaltime">KStrClockGetCorrelatedPhysicalTime</a> routine. </p>

@@ -55,13 +55,13 @@ typedef enum D3D10_DDI_MAP_FLAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D10_DDI_MAP_FLAG_DONOTWAIT"></a><a id="d3d10_ddi_map_flag_donotwait"></a><b>D3D10_DDI_MAP_FLAG_DONOTWAIT</b>
+### -field D3D10_DDI_MAP_FLAG_DONOTWAIT
 
 <dd>
 <p>The driver can call the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> function to set the ERR_WASSTILLDRAWING error code if contention exists between an application and hardware when the driver receives the call to <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourcemap.md">ResourceMap</a>.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_MAP_FLAG_MASK"></a><a id="d3d10_ddi_map_flag_mask"></a><b>D3D10_DDI_MAP_FLAG_MASK</b>
+### -field D3D10_DDI_MAP_FLAG_MASK
 
 <dd>
 <p>A mask value that indicates the valid bitfields in a bitwise OR combination of the values from this enumeration. </p>

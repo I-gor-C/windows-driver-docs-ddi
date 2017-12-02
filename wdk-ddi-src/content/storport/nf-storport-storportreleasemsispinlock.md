@@ -57,19 +57,19 @@ ULONG StorPortReleaseMSISpinLock(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>MessageID</i> [in]
+### -param MessageID [in]
 
 <dd>
 <p>The identifier of the message.</p>
 </dd>
 
-### -param <i>OldIrql</i> [in]
+### -param OldIrql [in]
 
 <dd>
 <p>The IRQL that the <a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a> routine returned when the miniport driver acquired the spin lock.</p>

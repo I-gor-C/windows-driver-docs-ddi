@@ -55,7 +55,7 @@ VOID IoSetNextIrpStackLocation(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>Pointer to the IRP whose stack location is to be set. </p>

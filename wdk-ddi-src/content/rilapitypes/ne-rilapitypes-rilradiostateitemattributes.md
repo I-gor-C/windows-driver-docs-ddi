@@ -7,7 +7,7 @@ old-location: netvista\rilradiostateitemattributes_2.htm
 old-project: netvista
 ms.assetid: d13c1946-1283-4ed6-953e-626fda91a782
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILRADIOSTATEITEMATTRIBUTES {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISDIRTY"></a><a id="ril_radiostate_item_attribute_isdirty"></a><b>RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISDIRTY</b>
+### -field RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISDIRTY
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISWRITABLE"></a><a id="ril_radiostate_item_attribute_iswritable"></a><b>RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISWRITABLE</b>
+### -field RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISWRITABLE
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOSTATE_ITEM_ATTRIBUTE_HAVEOPTIONS"></a><a id="ril_radiostate_item_attribute_haveoptions"></a><b>RIL_RADIOSTATE_ITEM_ATTRIBUTE_HAVEOPTIONS</b>
+### -field RIL_RADIOSTATE_ITEM_ATTRIBUTE_HAVEOPTIONS
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOSTATE_ITEM_ATTRIBUTE_ALL"></a><a id="ril_radiostate_item_attribute_all"></a><b>RIL_RADIOSTATE_ITEM_ATTRIBUTE_ALL</b>
+### -field RIL_RADIOSTATE_ITEM_ATTRIBUTE_ALL
 
 <dd></dd>
 </dl>

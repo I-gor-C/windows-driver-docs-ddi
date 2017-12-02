@@ -54,7 +54,7 @@ NTSTATUS DrmDestroyContent(
 ## -parameters
 <dl>
 
-### -param <i>ContentId</i> [in]
+### -param ContentId [in]
 
 <dd>
 <p>Specifies a nonzero DRM content ID assigned to a KS audio stream by <b>DrmCreateContentMixed</b>. Note that a content ID of zero represents an audio stream with default DRM content rights, and cannot be used with this function.</p>
@@ -67,7 +67,7 @@ NTSTATUS DrmDestroyContent(
 ## -remarks
 <p>A KS audio filter can only use <code>DrmDestroyContent</code> to delete a DRM content ID that it obtained by calling <a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a>. Note that a KS audio filter must not use <code>DrmDestroyContent</code> to delete a DRM content ID set by <a href="audio.idrmaudiostream_setcontentid">IDrmAudioStream::SetContentId</a> or by an IOCTL_KS_PROPERTY request that sets the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a> property. Only the KS audio filter that created the content ID should delete it.</p>
 
-<p><code>DrmDestroyContent</code> performs the same function as <a href="..\portcls\nf-portcls-pcdestroycontent.md">PcDestroyContent</a> and <a href="audio.idrmport_destroycontent">IDrmPort::DestroyContent</a>. For more information, see <a href="NULL">DRM Functions and Interfaces</a>.</p>
+<p><code>DrmDestroyContent</code> performs the same function as <a href="..\portcls\nf-portcls-pcdestroycontent.md">PcDestroyContent</a> and <a href="audio.idrmport_destroycontent">IDrmPort::DestroyContent</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.</p>
 
 ## -requirements
 <table>

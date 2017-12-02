@@ -57,25 +57,25 @@ typedef struct _MSiSCSI_NICPerformance {
 ## -struct-fields
 <dl>
 
-### -field <b>BytesTransmitted</b>
+### -field BytesTransmitted
 
 <dd>
 <p>The number of bytes that are transmitted through the Ethernet port.</p>
 </dd>
 
-### -field <b>BytesReceived</b>
+### -field BytesReceived
 
 <dd>
 <p>The number of bytes that are received through the Ethernet port.</p>
 </dd>
 
-### -field <b>PDUTransmitted</b>
+### -field PDUTransmitted
 
 <dd>
 <p>The number of PDUs that are transmitted through the Ethernet port.</p>
 </dd>
 
-### -field <b>PDUReceived</b>
+### -field PDUReceived
 
 <dd>
 <p>The number of PDUs that are received through the Ethernet port.</p>

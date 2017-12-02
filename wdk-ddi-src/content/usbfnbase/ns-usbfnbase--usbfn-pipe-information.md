@@ -56,13 +56,13 @@ typedef struct _USBFN_PIPE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>EpDesc</b>
+### -field EpDesc
 
 <dd>
 <p>Describes the endpoint descriptor in a <a href="..\usbspec\ns-usbspec--usb-endpoint-descriptor.md">USB_ENDPOINT_DESCRIPTOR</a> structure.</p>
 </dd>
 
-### -field <b>PipeId</b>
+### -field PipeId
 
 <dd>
 <p>The pipe identifier (ID).</p>

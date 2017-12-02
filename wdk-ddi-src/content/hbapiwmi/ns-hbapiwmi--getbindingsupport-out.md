@@ -55,13 +55,13 @@ typedef struct _GetBindingSupport_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. </p>
 </dd>
 
-### -field <b>BindType</b>
+### -field BindType
 
 <dd>
 <p>Contains a bitmap that indicates the ability of an HBA and its miniport driver to provide a specific set of features related to persistent binding. For a list of values that this parameter can have, see the description of the <a href="storage.hba_bind_type">HBA_BIND_TYPE</a> WMI class qualifier. </p>

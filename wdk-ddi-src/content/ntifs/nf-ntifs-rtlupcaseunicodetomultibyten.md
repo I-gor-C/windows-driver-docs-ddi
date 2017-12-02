@@ -7,7 +7,7 @@ old-location: ifsk\rtlupcaseunicodetomultibyten.htm
 old-project: ifsk
 ms.assetid: a79a5d3b-ed1c-42fa-b491-0ad0b3dfc921
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlUpcaseUnicodeToMultiByteN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ NTSTATUS RtlUpcaseUnicodeToMultiByteN(
 ## -parameters
 <dl>
 
-### -param <i>MultiByteString</i> [out]
+### -param MultiByteString [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer to receive the translated string. </p>
 </dd>
 
-### -param <i>MaxBytesInMultiByteString</i> [in]
+### -param MaxBytesInMultiByteString [in]
 
 <dd>
 <p>Maximum number of bytes to be written at <i>MultiByteString</i>. If this value causes the translated string to be truncated, <b>RtlUpcaseUnicodeToMultiByteN</b> does not return an error status. </p>
 </dd>
 
-### -param <i>BytesInMultiByteString</i> [out, optional]
+### -param BytesInMultiByteString [out, optional]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the length, in bytes, of the translated string. This parameter can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>UnicodeString</i> [in]
+### -param UnicodeString [in]
 
 <dd>
 <p>Pointer to the Unicode source string to be translated. </p>
 </dd>
 
-### -param <i>BytesInUnicodeString</i> [in]
+### -param BytesInUnicodeString [in]
 
 <dd>
 <p>Size, in bytes, of the string at <i>UnicodeString</i>. </p>
@@ -165,4 +165,4 @@ NTSTATUS RtlUpcaseUnicodeToMultiByteN(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlUpcaseUnicodeToMultiByteN routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlUpcaseUnicodeToMultiByteN routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -54,7 +54,7 @@ HRESULT KsQueryMediums(
 ## -parameters
 <dl>
 
-### -param <i>MediumList</i> [out]
+### -param MediumList [out]
 
 <dd>
 <p>Pointer to a buffer that receives a pointer to a <a href="stream.ksmultiple_item">KSMULTIPLE_ITEM</a> structure, followed by a sequence of <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structures that describe medium types. The KSMULTIPLE_ITEM structure is a header that describes the size of the buffer and the number of entries in the list that follows the header.</p>

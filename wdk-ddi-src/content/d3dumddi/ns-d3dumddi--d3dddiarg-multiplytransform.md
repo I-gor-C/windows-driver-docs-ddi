@@ -55,7 +55,7 @@ typedef struct _D3DDDIARG_MULTIPLYTRANSFORM {
 ## -struct-fields
 <dl>
 
-### -field <b>TransformType</b>
+### -field TransformType
 
 <dd>
 <p>[in] A D3DTRANSFORMSTATETYPE-typed value that indicates the type of the transform that is being modified. This member can be one of the following values.</p>
@@ -92,7 +92,7 @@ typedef struct _D3DDDIARG_MULTIPLYTRANSFORM {
 <p> </p>
 </dd>
 
-### -field <b>Matrix</b>
+### -field Matrix
 
 <dd>
 <p>[in] A D3DMATRIX structure that describes the matrix that is used to modify the current transform. For more information about D3DMATRIX, see the Microsoft Windows SDK documentation.</p>

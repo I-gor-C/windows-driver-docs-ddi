@@ -7,7 +7,7 @@ old-location: netvista\rilaccesstechnology.htm
 old-project: netvista
 ms.assetid: 28363041-4adc-4348-a1a5-2b9c11750286
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILACCESSTECHNOLOGY, RILACCESSTECHNOLOGY, *LPRILACCESSTECHNOLOGY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,43 +63,43 @@ typedef struct _RILACCESSTECHNOLOGY {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwSystemType</b>
+### -field dwSystemType
 
 <dd></dd>
 
-### -field <b>RILACCESSTECHNOLOGYKINDUNION</b>
+### -field RILACCESSTECHNOLOGYKINDUNION
 
 <dd></dd>
 
-### -field <b>kindUnion</b>
+### -field kindUnion
 
 <dd></dd>
 
-### -field <b>dwEvdoKind</b>
+### -field dwEvdoKind
 
 <dd></dd>
 
-### -field <b>dwGsmKind</b>
+### -field dwGsmKind
 
 <dd></dd>
 
-### -field <b>dwUmtsKind</b>
+### -field dwUmtsKind
 
 <dd></dd>
 
-### -field <b>dwTdscdmaKind</b>
+### -field dwTdscdmaKind
 
 <dd></dd>
 
-### -field <b>dwLteKind</b>
+### -field dwLteKind
 
 <dd></dd>
 </dl>

@@ -55,7 +55,7 @@ PDEVICE_OBJECT IoGetRelatedDeviceObject(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to the file object. </p>

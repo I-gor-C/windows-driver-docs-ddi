@@ -56,19 +56,19 @@ typedef struct _DXVADDI_FILTERVALUES {
 ## -struct-fields
 <dl>
 
-### -field <b>Level</b>
+### -field Level
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the level of the filter.</p>
 </dd>
 
-### -field <b>Threshold</b>
+### -field Threshold
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the threshold of the filter.</p>
 </dd>
 
-### -field <b>Radius</b>
+### -field Radius
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the radius of the filter.</p>

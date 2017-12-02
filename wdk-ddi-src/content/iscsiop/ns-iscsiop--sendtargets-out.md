@@ -56,19 +56,19 @@ typedef struct _SendTargets_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The status of the <b>SendTargets</b> method. This member will contain 0 if the SEND TARGETS operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the SEND TARGETS operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.  </p>
 </dd>
 
-### -field <b>ResponseSize</b>
+### -field ResponseSize
 
 <dd>
 <p>The size, in bytes, of the buffer at Response.</p>
 </dd>
 
-### -field <b>Response</b>
+### -field Response
 
 <dd>
 <p>A buffer that holds the response data that the target returns. Response to SendTargets in UTF8 characters. NOTE: This field is a variable length array.</p>

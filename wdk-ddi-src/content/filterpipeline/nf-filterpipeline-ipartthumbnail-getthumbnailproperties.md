@@ -54,7 +54,7 @@ HRESULT GetThumbnailProperties(
 ## -parameters
 <dl>
 
-### -param <i>pContentType</i> [out]
+### -param pContentType [out]
 
 <dd>
 <p>A pointer to the content type of the thumbnail.</p>

@@ -59,19 +59,19 @@ __checkReturn HRESULT  APIENTRY DrawPrimitive(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-drawprimitive.md">D3DDDIARG_DRAWPRIMITIVE</a> structure that describes the primitive to draw.</p>
 </dd>
 
-### -param <i>pFlagBuffer</i> [in]
+### -param pFlagBuffer [in]
 
 <dd>
 <p> A pointer to a 32-bit value that contains triangle-edge flags, which are used only during line-fill mode. The first three bits (0/1/2) of the 32-bit value specify how the three edges of the corresponding triangles are rendered. If a bit is set to 1, its associated triangle edge is rendered; otherwise, the edge is not rendered.</p>

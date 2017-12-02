@@ -61,50 +61,50 @@ typedef struct _DXVA_DeinterlaceCaps {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Indicates the size of this structure.</p>
 </dd>
 
-### -field <b>NumPreviousOutputFrames</b>
+### -field NumPreviousOutputFrames
 
 <dd>
 <p>Indicates the number of required frames previously output by the deinterlace algorithm. This member is used by recursive deinterlace algorithms.</p>
 </dd>
 
-### -field <b>InputPool</b>
+### -field InputPool
 
 <dd>
 <p>Indicates the memory pool from which the interlaced source surfaces should be allocated. For more information, see the D3DPOOL enumeration type in the Microsoft Window SDK documentation. </p>
 </dd>
 
-### -field <b>NumForwardRefSamples</b>
+### -field NumForwardRefSamples
 
 <dd>
 <p>Indicates the required number of forward reference samples for the defined deinterlace mode. These samples will be in future fields. This value is zero for bob and line blending, and can be several values for adaptive deinterlacing and frame-rate conversion.</p>
 </dd>
 
-### -field <b>NumBackwardRefSamples</b>
+### -field NumBackwardRefSamples
 
 <dd>
 <p>Indicates the required backward reference samples for the defined deinterlace mode. The samples are in past fields. This value is zero for bob, 1 for line blending, and can be several values for adaptive deinterlacing and frame-rate conversion.</p>
 </dd>
 
-### -field <b>d3dOutputFormat</b>
+### -field d3dOutputFormat
 
 <dd>
 <p>Indicates the Direct3D surface format of the output frames. Usually a deinterlace algorithm outputs frames in a surface format that matches the input sample format. This member ensures that the VMR or other video renderer will be able to supply the correct output frame surfaces to the deinterlace hardware.</p>
 <p>Note that if the <b>DXVA_Deinterlace_YUV2RGB</b> enumerator is returned in the <a href="..\dxva\ne-dxva--dxva-videoprocesscaps.md">DXVA_VideoProcessCaps</a> enumeration, the VMR will assume that valid output formats are specified by this member, in addition to a D3DFMT_X8R8G8B8 format.</p>
 </dd>
 
-### -field <b>VideoProcessingCaps</b>
+### -field VideoProcessingCaps
 
 <dd>
 <p>Specifies a <a href="..\dxva\ne-dxva--dxva-videoprocesscaps.md">DXVA_VideoProcessCaps</a> enumeration indicating the operation that can be performed concurrently with the requested deinterlace. </p>
 </dd>
 
-### -field <b>DeinterlaceTechnology</b>
+### -field DeinterlaceTechnology
 
 <dd>
 <p>Specifies a <a href="..\dxva\ne-dxva--dxva-deinterlacetech.md">DXVA_DeinterlaceTech</a> enumeration indicating the deinterlacing technology used by this deinterlacing device.</p>

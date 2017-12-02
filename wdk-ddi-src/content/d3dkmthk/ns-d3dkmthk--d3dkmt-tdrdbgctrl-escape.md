@@ -57,11 +57,11 @@ typedef struct _D3DKMT_TDRDBGCTRL_ESCAPE {
 ## -struct-fields
 <dl>
 
-### -field <b>TdrControl</b>
+### -field TdrControl
 
 <dd></dd>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd></dd>
 </dl>

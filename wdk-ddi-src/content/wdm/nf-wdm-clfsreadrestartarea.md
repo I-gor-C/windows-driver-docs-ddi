@@ -59,31 +59,31 @@ NTSTATUS ClfsReadRestartArea(
 ## -parameters
 <dl>
 
-### -param <i>pvMarshalContext</i> [in, out]
+### -param pvMarshalContext [in, out]
 
 <dd>
 <p>A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.</p>
 </dd>
 
-### -param <i>ppvRestartBuffer</i> [out]
+### -param ppvRestartBuffer [out]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to the data buffer of the restart record.</p>
 </dd>
 
-### -param <i>pcbRestartBuffer</i> [out]
+### -param pcbRestartBuffer [out]
 
 <dd>
 <p>A pointer to a ULONG-typed variable that receives the size, in bytes, of the data buffer pointed to by <i>pcbRestartBuffer</i>. This is the length of the data buffer of the restart record.</p>
 </dd>
 
-### -param <i>plsn</i> [out]
+### -param plsn [out]
 
 <dd>
 <p>A pointer to a CLFS_LSN structure that receives the LSN of the restart record that was read.</p>
 </dd>
 
-### -param <i>ppvReadContext</i> [out]
+### -param ppvReadContext [out]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to an opaque read context. The caller can pass this context to <a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a> or <a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>. When the caller has finished using the read context, it must free the context by calling <a href="..\wdm\nf-wdm-clfsterminatereadlog.md">ClfsTerminateReadLog</a>.</p>

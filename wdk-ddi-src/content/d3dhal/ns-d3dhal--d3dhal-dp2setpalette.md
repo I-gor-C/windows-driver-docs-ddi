@@ -56,13 +56,13 @@ typedef struct _D3DHAL_DP2SETPALETTE {
 ## -struct-fields
 <dl>
 
-### -field <b>dwPaletteHandle</b>
+### -field dwPaletteHandle
 
 <dd>
 <p>Specifies a handle to the palette to be set up. If the value is zero, the surface specified by <b>dwSurfaceHandle</b> should be uncoupled from any palette it might have been associated with previously.</p>
 </dd>
 
-### -field <b>dwPaletteFlags</b>
+### -field dwPaletteFlags
 
 <dd>
 <p>Specifies a set of flags that specify the attributes of the palette.</p>
@@ -187,7 +187,7 @@ typedef struct _D3DHAL_DP2SETPALETTE {
 <p> </p>
 </dd>
 
-### -field <b>dwSurfaceHandle</b>
+### -field dwSurfaceHandle
 
 <dd>
 <p>Specifies a handle to the Direct3D surface (texture) that this palette (identified by <b>dwPaletteHandle</b>) is associated to.</p>

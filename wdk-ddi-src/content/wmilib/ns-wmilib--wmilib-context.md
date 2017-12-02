@@ -62,49 +62,49 @@ typedef struct _WMILIB_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>GuidCount</b>
+### -field GuidCount
 
 <dd>
 <p>Specifies the number of blocks registered by the driver.</p>
 </dd>
 
-### -field <b>GuidList</b>
+### -field GuidList
 
 <dd>
 <p>Pointer to an array of <b>GuidCount</b> <a href="..\wmilib\ns-wmilib--wmiguidreginfo.md">WMIGUIDREGINFO</a> structures that contain registration information for each block.</p>
 </dd>
 
-### -field <b>QueryWmiRegInfo</b>
+### -field QueryWmiRegInfo
 
 <dd>
 <p>Pointer to the driver's <a href="kernel.dpwmiqueryreginfo">DpWmiQueryReginfo</a> routine, which is a required entry point for drivers that call WMI library support routines.</p>
 </dd>
 
-### -field <b>QueryWmiDataBlock</b>
+### -field QueryWmiDataBlock
 
 <dd>
 <p>Pointer to the driver's <a href="kernel.dpwmiquerydatablock">DpWmiQueryDataBlock</a> routine, which is a required entry point for drivers that call WMI library support routines.</p>
 </dd>
 
-### -field <b>SetWmiDataBlock</b>
+### -field SetWmiDataBlock
 
 <dd>
 <p>Pointer to the driver's <a href="kernel.dpwmisetdatablock">DpWmiSetDataBlock</a> routine, which is an optional entry point for drivers that call WMI library support routines. If the driver does not implement this routine, it must set this member to <b>NULL</b>. In this case, WMI returns STATUS_WMI_READ_ONLY to the caller in response to any <a href="https://msdn.microsoft.com/library/windows/hardware/ff550831">IRP_MN_CHANGE_SINGLE_INSTANCE</a> request.</p>
 </dd>
 
-### -field <b>SetWmiDataItem</b>
+### -field SetWmiDataItem
 
 <dd>
 <p>Pointer to the driver's <a href="kernel.dpwmisetdataitem">DpWmiSetDataItem</a> routine, which is an optional entry point for drivers that call WMI library support routines. If the driver does not implement this routine, it must set this member to <b>NULL</b>. In this case, WMI returns STATUS_WMI_READ_ONLY to the caller in response to any <a href="https://msdn.microsoft.com/library/windows/hardware/ff550836">IRP_MN_CHANGE_SINGLE_ITEM</a> request.</p>
 </dd>
 
-### -field <b>ExecuteWmiMethod</b>
+### -field ExecuteWmiMethod
 
 <dd>
 <p>Pointer to the driver's <a href="kernel.dpwmiexecutemethod">DpWmiExecuteMethod</a> routine, which is an optional entry point for drivers that call WMI library support routines. If the driver does not implement this routine, it must set this member to <b>NULL</b>. In this case, WMI returns STATUS_INVALID_DEVICE_REQUEST to the caller in response to any <a href="https://msdn.microsoft.com/library/windows/hardware/ff550868">IRP_MN_EXECUTE_METHOD</a> request.</p>
 </dd>
 
-### -field <b>WmiFunctionControl</b>
+### -field WmiFunctionControl
 
 <dd>
 <p>Pointer to the driver's <a href="kernel.dpwmifunctioncontrol">DpWmiFunctionControl</a> routine, which is an optional entry point for drivers that call WMI library support routines. If the driver does not implement this routine, it must set this member to <b>NULL</b>. In this case, WMI returns STATUS_SUCCESS to the caller in response to any <b>IRP_MN_ENABLE_<i>XXX</i></b> or <b>IRP_MN_DISABLE_<i>XXX</i></b> request.</p>

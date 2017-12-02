@@ -7,7 +7,7 @@ old-location: ieee\get_unit_capabilities.htm
 old-project: IEEE
 ms.assetid: 7fe180c2-cf0b-4658-86e3-fed5e270db8c
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: GET_UNIT_CAPABILITIES, GET_UNIT_CAPABILITIES, *PGET_UNIT_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _GET_UNIT_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>NumOutputPlugs</b>
+### -field NumOutputPlugs
 
 <dd>
 <p>The number of output plugs supported by the device.</p>
 </dd>
 
-### -field <b>NumInputPlugs</b>
+### -field NumInputPlugs
 
 <dd>
 <p>The number of input plugs supported by the device.</p>
 </dd>
 
-### -field <b>MaxDataRate</b>
+### -field MaxDataRate
 
 <dd>
 <p>The maximum data rate of the device. Can be one of the following:</p>
@@ -78,13 +78,13 @@ typedef struct _GET_UNIT_CAPABILITIES {
 <p>CMP_SPEED_S400</p>
 </dd>
 
-### -field <b>CTSFlags</b>
+### -field CTSFlags
 
 <dd>
 <p>A bitmask that identifies the command and transaction sets supported by the device. For example, if <b>CTSFlags</b> is 0001, the device supports Audio Video Control (AV/C). If <b>CTSFlags</b> is 4000, the device supports a vendor-unique CTS. Most devices that support multiple command and transaction sets report each CTS value in a separate Configuration ROM unit directory entry, so typically only one bit is set at a time.</p>
 </dd>
 
-### -field <b>HardwareFlags</b>
+### -field HardwareFlags
 
 <dd>
 <p>If the AV_HOST_DMA_DOUBLE_BUFFERING_ENABLED flag is set, and the request level is SET_UNIT_INFO_ISOCH_PARAMS, then a size limit is imposed on members <b>RX_NumPackets</b> and <b>TX_NumPackets</b> of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538921">UNIT_ISOCH_PARAMS</a> structure. These members, when multiplied by the packet size, must be less than or equal to 64 KB. For example, <b>Rx_NumPackets * PacketSize </b>must be less than or equal to 64 KB. </p>
@@ -116,4 +116,4 @@ typedef struct _GET_UNIT_CAPABILITIES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20GET_UNIT_CAPABILITIES structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20GET_UNIT_CAPABILITIES structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

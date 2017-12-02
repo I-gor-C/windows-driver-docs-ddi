@@ -58,7 +58,7 @@ SIZE_T APIENTRY* CalcPrivateVideoProcessorOutputViewSize(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).
@@ -66,7 +66,7 @@ SIZE_T APIENTRY* CalcPrivateVideoProcessorOutputViewSize(
 </p>
 </dd>
 
-### -param <i>pView</i> [in]
+### -param pView [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-createvideoprocessoroutputview.md">D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW</a> structure that describes the video processor output view.</p>

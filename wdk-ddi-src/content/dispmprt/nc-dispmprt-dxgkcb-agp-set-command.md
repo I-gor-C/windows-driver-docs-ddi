@@ -58,13 +58,13 @@ NTSTATUS APIENTRY AgpSetCommand(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A handle to a context block that is associated with an AGP interface. The display miniport driver previously received this handle in the <b>Context</b> member of the DXGK_AGP_INTERFACE structure that was filled in by <a href="..\dispmprt\nc-dispmprt-dxgkcb-query-services.md">DxgkCbQueryServices</a>.</p>
 </dd>
 
-### -param <i>Command</i> [in]
+### -param Command [in]
 
 <dd>
 <p>A set of flags that specify the AGP rate and the types of AGP transactions that will be used.</p>

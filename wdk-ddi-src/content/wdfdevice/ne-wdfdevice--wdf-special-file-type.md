@@ -7,7 +7,7 @@ old-location: wdf\wdf_special_file_type.htm
 old-project: wdf
 ms.assetid: 3879570f-e083-4eaf-aa5b-9b78d8f826c1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ typedef enum _WDF_SPECIAL_FILE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfSpecialFileUndefined"></a><a id="wdfspecialfileundefined"></a><a id="WDFSPECIALFILEUNDEFINED"></a><b>WdfSpecialFileUndefined</b>
+### -field WdfSpecialFileUndefined
 
 <dd>
 <p>For internal use only.</p>
 </dd>
 
-### -field <a id="WdfSpecialFilePaging"></a><a id="wdfspecialfilepaging"></a><a id="WDFSPECIALFILEPAGING"></a><b>WdfSpecialFilePaging</b>
+### -field WdfSpecialFilePaging
 
 <dd>
 <p>The device supports paging files.</p>
 </dd>
 
-### -field <a id="WdfSpecialFileHibernation"></a><a id="wdfspecialfilehibernation"></a><a id="WDFSPECIALFILEHIBERNATION"></a><b>WdfSpecialFileHibernation</b>
+### -field WdfSpecialFileHibernation
 
 <dd>
 <p>The device supports hibernation files.</p>
 </dd>
 
-### -field <a id="WdfSpecialFileDump"></a><a id="wdfspecialfiledump"></a><a id="WDFSPECIALFILEDUMP"></a><b>WdfSpecialFileDump</b>
+### -field WdfSpecialFileDump
 
 <dd>
 <p>The device supports dump files.</p>
 </dd>
 
-### -field <a id="WdfSpecialFileBoot"></a><a id="wdfspecialfileboot"></a><a id="WDFSPECIALFILEBOOT"></a><b>WdfSpecialFileBoot</b>
+### -field WdfSpecialFileBoot
 
 <dd>
 <p>The device supports boot files. This constant is available in version 1.11 and later versions of KMDF.</p>
 </dd>
 
-### -field <a id="WdfSpecialFileMax"></a><a id="wdfspecialfilemax"></a><a id="WDFSPECIALFILEMAX"></a><b>WdfSpecialFileMax</b>
+### -field WdfSpecialFileMax
 
 <dd>
 <p>For internal use only.</p>
@@ -131,4 +131,4 @@ typedef enum _WDF_SPECIAL_FILE_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_SPECIAL_FILE_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_SPECIAL_FILE_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

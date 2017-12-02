@@ -57,19 +57,19 @@ typedef struct _BDA_SCAN_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>ulSignalLock</b>
+### -field ulSignalLock
 
 <dd></dd>
 
-### -field <b>ulSecondsLeft</b>
+### -field ulSecondsLeft
 
 <dd></dd>
 
-### -field <b>ulCurrentFrequency</b>
+### -field ulCurrentFrequency
 
 <dd></dd>
 </dl>

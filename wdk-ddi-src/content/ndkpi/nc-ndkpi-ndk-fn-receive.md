@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_receive.htm
 old-project: netvista
 ms.assetid: DC40C6B5-3F52-4A7E-B8FC-917ACDF8309A
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,28 +62,28 @@ NTSTATUS NdkReceive(
 ## -parameters
 <dl>
 
-### -param <i>pNdkQp</i> [in]
+### -param pNdkQp [in]
 
 <dd>
 <p>A pointer to an NDK queue pair (QP) object
 (<a href="..\ndkpi\ns-ndkpi--ndk-qp.md">NDK_QP</a>).</p>
 </dd>
 
-### -param <i>RequestContext</i> [in, optional]
+### -param RequestContext [in, optional]
 
 <dd>
 <p>A context value to be returned in the <b>RequestContext</b> member of the <a href="..\ndkpi\ns-ndkpi--ndk-result.md">NDK_RESULT</a> structure for this request.
 </p>
 </dd>
 
-### -param <i>pSgl</i> 
+### -param pSgl 
 
 <dd>
 <p>An array of SGE structures (<a href="..\ndkpi\ns-ndkpi--ndk-sge.md">NDK_SGE</a>) that represent the buffers to receive incoming data.
 </p>
 </dd>
 
-### -param <i>nSge</i> [in]
+### -param nSge [in]
 
 <dd>
 <p>The number of SGE structures in the array  that is specified in the <i>pSgl</i>
@@ -162,9 +162,9 @@ parameter.</p>
 <a href="..\ndkpi\ns-ndkpi--ndk-sge.md">NDK_SGE</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Work Request Posting Requirements</a>
+<a href="netvista.ndkpi_work_request_posting_requirements">NDKPI Work Request Posting Requirements</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_RECEIVE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_RECEIVE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

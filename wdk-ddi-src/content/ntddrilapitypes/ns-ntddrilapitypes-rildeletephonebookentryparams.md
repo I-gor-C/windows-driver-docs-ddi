@@ -7,7 +7,7 @@ old-location: netvista\rildeletephonebookentryparams.htm
 old-project: netvista
 ms.assetid: 1a372468-2bad-44d4-a19a-d3b517b7ed7b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILDELETEPHONEBOOKENTRYPARAMS, RILDELETEPHONEBOOKENTRYPARAMS, *LPRILDELETEPHONEBOOKENTRYPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef struct _RILDELETEPHONEBOOKENTRYPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwStoreLocation</b>
+### -field dwStoreLocation
 
 <dd></dd>
 
-### -field <b>dwIndex</b>
+### -field dwIndex
 
 <dd></dd>
 
-### -field <b>fHasLockVerification</b>
+### -field fHasLockVerification
 
 <dd></dd>
 
-### -field <b>lockVerification</b>
+### -field lockVerification
 
 <dd></dd>
 </dl>

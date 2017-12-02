@@ -58,14 +58,14 @@ NTSTATUS APIENTRY CALLBACK* DxgkCbDestroyContextAllocation(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>[in] A handle to the graphics adapter for which the allocation was created. The display miniport driver receives the handle from the <b>DeviceHandle</b> member of the <a href="..\dispmprt\ns-dispmprt--dxgkrnl-interface.md">DXGKRNL_INTERFACE</a> structure in a call to its <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.
 </p>
 </dd>
 
-### -param <i>hAllocation</i> [in]
+### -param hAllocation [in]
 
 <dd>
 <p>[in] A handle that was assigned by the DirectX graphics subsystem to the allocation. The display miniport driver receives the handle from the <b>hAllocation</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-createcontextallocation.md">DXGKARGCB_CREATECONTEXTALLOCATION</a> structure in the call to the<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-createcontextallocation.md">DxgkCbCreateContextAllocation</a>

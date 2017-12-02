@@ -57,19 +57,19 @@ typedef struct _D3DKMT_ACQUIREKEYEDMUTEX {
 ## -struct-fields
 <dl>
 
-### -field <b>hKeyedMutex</b>
+### -field hKeyedMutex
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the keyed mutex object to acquire. </p>
 </dd>
 
-### -field <b>Key</b>
+### -field Key
 
 <dd>
 <p>[in] A 64-bit value that specifies the key value to acquire the mutex for. </p>
 </dd>
 
-### -field <b>pTimeout</b>
+### -field pTimeout
 
 <dd>
 <p>[in] A pointer to a time-out value that specifies the absolute or relative time, in 100-nanosecond units, at which acquiring the mutex is to be completed. </p>
@@ -77,7 +77,7 @@ typedef struct _D3DKMT_ACQUIREKEYEDMUTEX {
 <p>If *<b>pTimeout</b> = 0, <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtacquirekeyedmutex.md">D3DKMTAcquireKeyedMutex</a> returns without waiting. If the caller supplies a <b>NULL</b> pointer, <b>D3DKMTAcquireKeyedMutex</b> waits indefinitely until the mutex object is set to the signaled state. </p>
 </dd>
 
-### -field <b>FenceValue</b>
+### -field FenceValue
 
 <dd>
 <p>[out] A 64-bit value that specifies the current fence value of the GPU synchronization object. </p>

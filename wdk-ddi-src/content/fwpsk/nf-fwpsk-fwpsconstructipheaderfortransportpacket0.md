@@ -7,7 +7,7 @@ old-location: netvista\fwpsconstructipheaderfortransportpacket0.htm
 old-project: netvista
 ms.assetid: badb7e91-1d5f-42c3-973b-c7d756d24a01
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsConstructIpHeaderForTransportPacket0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
 ## -parameters
 <dl>
 
-### -param <i>netBufferList</i> [in, out]
+### -param netBufferList [in, out]
 
 <dd>
 <p>A pointer to a 
@@ -79,7 +79,7 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
      the IP header.</p>
 </dd>
 
-### -param <i>headerIncludeHeaderSize</i> [in]
+### -param headerIncludeHeaderSize [in]
 
 <dd>
 <p>If the NET_BUFFER_LIST structure pointed to by 
@@ -95,7 +95,7 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
      IPv4 options will be preserved. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>addressFamily</i> [in]
+### -param addressFamily [in]
 
 <dd>
 <p>One of the following address families:
@@ -103,13 +103,13 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
 <p></p>
 <dl>
 
-### -param <a id="AF_INET"></a><a id="af_inet"></a>AF_INET
+### -param AF_INET
 
 <dd>
 <p>The IPv4 address family.</p>
 </dd>
 
-### -param <a id="AF_INET6"></a><a id="af_inet6"></a>AF_INET6
+### -param AF_INET6
 
 <dd>
 <p>The IPv6 address family.</p>
@@ -117,7 +117,7 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
 </dl>
 </dd>
 
-### -param <i>sourceAddress</i> [in]
+### -param sourceAddress [in]
 
 <dd>
 <p>A pointer to the source IP address that will be part of the IP header to be constructed. For IPv4,
@@ -125,7 +125,7 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
      network byte order.</p>
 </dd>
 
-### -param <i>remoteAddress</i> [in]
+### -param remoteAddress [in]
 
 <dd>
 <p>A pointer to a buffer that specifies the remote IP address that will be part of the IP header to
@@ -136,7 +136,7 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
      <i>addressFamily</i> parameter.</p>
 </dd>
 
-### -param <i>nextProtocol</i> [in]
+### -param nextProtocol [in]
 
 <dd>
 <p>Specifies the IPPROTO protocol type of the new IP header to be constructed. For more information
@@ -145,7 +145,7 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff543746">AF_INET6</a>.</p>
 </dd>
 
-### -param <i>endpointHandle</i> [in, optional]
+### -param endpointHandle [in, optional]
 
 <dd>
 <p>An optional handle that indicates the stack transport endpoint in the send data path into which
@@ -156,7 +156,7 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
      <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function.</p>
 </dd>
 
-### -param <i>controlData</i> [in, optional]
+### -param controlData [in, optional]
 
 <dd>
 <p>An optional pointer to a buffer that contains socket control data specified by the 
@@ -176,32 +176,32 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
      called.</p>
 </dd>
 
-### -param <i>controlDataLength</i> [in]
+### -param controlDataLength [in]
 
 <dd>
 <p>The length, in bytes, of the 
      <i>controlData</i> parameter.</p>
 </dd>
 
-### -param <i>flags</i> [in]
+### -param flags [in]
 
 <dd>
 <p>Reserved. Callout drivers must set this parameter to zero.</p>
 </dd>
 
-### -param <i>reserved</i> 
+### -param reserved 
 
 <dd>
 <p>Reserved. Callout drivers must set this parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>interfaceIndex</i> [in, optional]
+### -param interfaceIndex [in, optional]
 
 <dd>
 <p>The index of the interface on which the original packet data was received. A callout driver should use the value of the interface index that is passed as one of the incoming data values to its <a href="netvista.classifyfn">classifyFn</a> callout function for this parameter. This parameter is optional and can be zero.</p>
 </dd>
 
-### -param <i>subInterfaceIndex</i> [in, optional]
+### -param subInterfaceIndex [in, optional]
 
 <dd>
 <p>The index of the subinterface on which the original packet data was received. A callout driver
@@ -364,4 +364,4 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsConstructIpHeaderForTransportPacket0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsConstructIpHeaderForTransportPacket0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

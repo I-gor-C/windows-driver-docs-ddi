@@ -7,7 +7,7 @@ old-location: netvista\ndiscocreatevc.htm
 old-project: netvista
 ms.assetid: ae9175e5-c1fc-44ae-a7c9-921ac8483e33
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisCoCreateVc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ NDIS_STATUS NdisCoCreateVc(
 ## -parameters
 <dl>
 
-### -param <i>NdisBindingHandle</i> [in]
+### -param NdisBindingHandle [in]
 
 <dd>
 <p>Specifies the handle returned by 
@@ -66,7 +66,7 @@ NDIS_STATUS NdisCoCreateVc(
      target NIC or virtual adapter of the next-lower driver to which the caller is bound.</p>
 </dd>
 
-### -param <i>NdisAfHandle</i> [in, optional]
+### -param NdisAfHandle [in, optional]
 
 <dd>
 <p>Specifies the handle returned by 
@@ -79,7 +79,7 @@ NDIS_STATUS NdisCoCreateVc(
      ProtocolCmRegisterSap</a> function.</p>
 </dd>
 
-### -param <i>ProtocolVcContext</i> [in]
+### -param ProtocolVcContext [in]
 
 <dd>
 <p>Specifies the handle to a caller-supplied resident context area in which the caller maintains
@@ -88,7 +88,7 @@ NDIS_STATUS NdisCoCreateVc(
      <b>NdisCoCreateVc</b> succeeds.</p>
 </dd>
 
-### -param <i>NdisVcHandle</i> [in, out]
+### -param NdisVcHandle [in, out]
 
 <dd>
 <p>Pointer to a caller-supplied variable that must be initialized to <b>NULL</b> when 
@@ -259,4 +259,4 @@ NDIS_STATUS NdisCoCreateVc(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoCreateVc function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoCreateVc function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

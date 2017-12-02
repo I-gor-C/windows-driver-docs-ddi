@@ -57,25 +57,25 @@ NTSTATUS KsGetImageNameAndResourceId(
 ## -parameters
 <dl>
 
-### -param <i>RegKey</i> [in]
+### -param RegKey [in]
 
 <dd>
 <p>Specifies a handle for which to return the image name and resource identifier.</p>
 </dd>
 
-### -param <i>ImageName</i> [out]
+### -param ImageName [out]
 
 <dd>
 <p>A caller-allocated buffer that receives the image name for the specified resource.</p>
 </dd>
 
-### -param <i>ResourceId</i> [out]
+### -param ResourceId [out]
 
 <dd>
 <p>Pointer to a caller-supplied variable that receives the resource identifier.</p>
 </dd>
 
-### -param <i>ValueType</i> [out]
+### -param ValueType [out]
 
 <dd>
 <p>Pointer to a location into which the function returns the value type of the specified resource.</p>

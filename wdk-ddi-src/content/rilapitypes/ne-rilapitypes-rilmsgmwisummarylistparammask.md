@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwisummarylistparammask_2.htm
 old-project: netvista
 ms.assetid: cc4253ab-d0f8-4c73-a538-29cac8c0df31
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef enum _RILMSGMWISUMMARYLISTPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_MWISUMMARY_REFNUM"></a><a id="ril_param_mwisummary_refnum"></a><b>RIL_PARAM_MWISUMMARY_REFNUM</b>
+### -field RIL_PARAM_MWISUMMARY_REFNUM
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MWISUMMARY_ACCTADDR"></a><a id="ril_param_mwisummary_acctaddr"></a><b>RIL_PARAM_MWISUMMARY_ACCTADDR</b>
+### -field RIL_PARAM_MWISUMMARY_ACCTADDR
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MWISUMMARY_TOTALNUMDETAILITEMS"></a><a id="ril_param_mwisummary_totalnumdetailitems"></a><b>RIL_PARAM_MWISUMMARY_TOTALNUMDETAILITEMS</b>
+### -field RIL_PARAM_MWISUMMARY_TOTALNUMDETAILITEMS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MWISUMMARY_NUMSUMMARYITEMS"></a><a id="ril_param_mwisummary_numsummaryitems"></a><b>RIL_PARAM_MWISUMMARY_NUMSUMMARYITEMS</b>
+### -field RIL_PARAM_MWISUMMARY_NUMSUMMARYITEMS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MWISUMMARY_SUMMARYITEMS"></a><a id="ril_param_mwisummary_summaryitems"></a><b>RIL_PARAM_MWISUMMARY_SUMMARYITEMS</b>
+### -field RIL_PARAM_MWISUMMARY_SUMMARYITEMS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MWISUMMARY_ALL"></a><a id="ril_param_mwisummary_all"></a><b>RIL_PARAM_MWISUMMARY_ALL</b>
+### -field RIL_PARAM_MWISUMMARY_ALL
 
 <dd></dd>
 </dl>

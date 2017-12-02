@@ -7,7 +7,7 @@ old-location: wdf\evt_wdf_task_queue_task_execute_sync.htm
 old-project: wdf
 ms.assetid: c45d1873-fb29-49ee-b99b-09861478ac89
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,31 +65,31 @@ NTSTATUS EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC(
 ## -parameters
 <dl>
 
-### -param <i>Queue</i> [in]
+### -param Queue [in]
 
 <dd></dd>
 
-### -param <i>InputBuffer</i> [in, optional]
+### -param InputBuffer [in, optional]
 
 <dd></dd>
 
-### -param <i>OutputBuffer</i> [out, optional]
+### -param OutputBuffer [out, optional]
 
 <dd></dd>
 
-### -param <i>InputBufferLength</i> [in]
+### -param InputBufferLength [in]
 
 <dd></dd>
 
-### -param <i>OutputBufferLength</i> [in]
+### -param OutputBufferLength [in]
 
 <dd></dd>
 
-### -param <i>BytesWritten</i> [in]
+### -param BytesWritten [in]
 
 <dd></dd>
 
-### -param <i>TaskOperationCode</i> [in]
+### -param TaskOperationCode [in]
 
 <dd></dd>
 </dl>

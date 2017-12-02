@@ -59,37 +59,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size in bytes of the structure.</p>
 </dd>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>Specifies whether to enable HRTF processing. If nonzero, HRTF is enabled. If zero, it is disabled.</p>
 </dd>
 
-### -field <b>SwapChannels</b>
+### -field SwapChannels
 
 <dd>
 <p>Specifies whether the algorithm should swap channels. If <b>TRUE</b>, the algorithm should swap the channels to perform a left-to-right reversal of the location of the source. If <b>FALSE</b>, the algorithm should not swap the channels.</p>
 </dd>
 
-### -field <b>ZeroAzimuth</b>
+### -field ZeroAzimuth
 
 <dd>
 <p>Specifies whether the azimuth angle is zero. If <b>TRUE</b>, then only half of the filter coefficients are downloaded to the filter because the azimuth angle is zero. If <b>FALSE</b>, all the coefficients are downloaded.</p>
 </dd>
 
-### -field <b>CrossFadeOutput</b>
+### -field CrossFadeOutput
 
 <dd>
 <p>Specifies whether to cross-fade the output channels after crossing azimuth angle zero. If <b>TRUE</b>, the algorithm should cross-fade the output channels. If <b>FALSE</b>, it should not cross-fade the channels.</p>
 </dd>
 
-### -field <b>FilterSize</b>
+### -field FilterSize
 
 <dd>
 <p>Specifies the additional size in bytes of the filter coefficients that are appended to this structure.</p>

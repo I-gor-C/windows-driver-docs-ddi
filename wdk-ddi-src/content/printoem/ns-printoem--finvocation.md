@@ -56,13 +56,13 @@ typedef struct _FINVOCATION {
 ## -struct-fields
 <dl>
 
-### -field <b>dwCount</b>
+### -field dwCount
 
 <dd>
 <p>Specifies the Unidrv-supplied length, in bytes, of the command pointed to by <b>pubCommand</b>.</p>
 </dd>
 
-### -field <b>pubCommand</b>
+### -field pubCommand
 
 <dd>
 <p>Unidrv-supplied pointer to a string containing the printer's font selection command. The command is obtained from the font's .ufm (Unidrv Font Metrics) file.</p>

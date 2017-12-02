@@ -61,25 +61,25 @@ VOID AdapterListControl(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure. This is the device object for the target device, previously created by the driver's <a href="kernel.adddevice">AddDevice</a> routine.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>Caller-supplied pointer to an <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure that describes the I/O operation, if the driver has a <a href="kernel.startio">StartIo</a> routine. Otherwise, not used.</p>
+<p>Caller-supplied pointer to an <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure that describes the I/O operation, if the driver has a <a href="kernel.startio">StartIo</a> routine. Otherwise, not used.</p>
 </dd>
 
-### -param <i>ScatterGather</i> [in]
+### -param ScatterGather [in]
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\wdm\ns-wdm--scatter-gather-list.md">SCATTER_GATHER_LIST</a> structure describing scatter/gather regions.</p>
 </dd>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Caller-supplied pointer to driver-defined context information, specified in a previous call to <a href="kernel.allocateadapterchannel">AllocateAdapterChannel</a>. </p>
@@ -92,7 +92,7 @@ VOID AdapterListControl(
 ## -remarks
 <p>To register an <i>AdapterListControl</i> routine for a specific device object, a driver must call <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> to obtain an adapter object, then call <a href="kernel.getscattergatherlist">GetScatterGatherList</a> to request use of the adapter and to supply the <i>AdapterListControl</i> routine's address. When the adapter is free, the system calls the <i>AdapterListControl</i> routine.</p>
 
-<p>To define an <i>AdapterListControl</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define an <i>AdapterListControl</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define an <i>AdapterListControl</i> callback routine that is named <code>MyAdapterListControl</code>, use the DRIVER_LIST_CONTROL type as shown in this code example:</p>
 

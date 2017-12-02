@@ -56,13 +56,13 @@ PVOID InterlockedExchangePointer(
 ## -parameters
 <dl>
 
-### -param <i>Target</i> [in, out]
+### -param Target [in, out]
 
 <dd>
 <p>A pointer to a PVOID value. The routine sets (*<i>Target</i>) to <i>Value</i>.</p>
 </dd>
 
-### -param <i>Value</i> [in, optional]
+### -param Value [in, optional]
 
 <dd>
 <p>Specifies the PVOID value to set (*<i>Target</i>) to.</p>

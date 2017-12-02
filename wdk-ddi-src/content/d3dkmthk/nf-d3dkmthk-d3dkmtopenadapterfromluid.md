@@ -54,7 +54,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOpenAdapterFromLuid(
 ## -parameters
 <dl>
 
-### -param <i>pAdapter</i> [in, out]
+### -param pAdapter [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openadapterfromluid.md">D3DKMT_OPENADAPTERFROMLUID</a> structure that describes information that is required to perform the mapping.</p>

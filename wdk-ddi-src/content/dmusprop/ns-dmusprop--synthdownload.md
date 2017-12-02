@@ -55,13 +55,13 @@ typedef struct _SYNTHDOWNLOAD {
 ## -struct-fields
 <dl>
 
-### -field <b>DownloadHandle</b>
+### -field DownloadHandle
 
 <dd>
 <p>Handle to the downloaded DLS data buffer, which the miniport driver generates to uniquely identify the DLS data so that it can be unloaded later.</p>
 </dd>
 
-### -field <b>Free</b>
+### -field Free
 
 <dd>
 <p>Specifies whether the client can free the data buffer as soon as the DLS download completes. If <b>TRUE</b>, the client can free the buffer when the download completes. If <b>FALSE</b>, the client must not free the buffer until it is unloaded. For more information, see the following Remarks section.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilcbgwlconfiginfo_2.htm
 old-project: netvista
 ms.assetid: 5939b967-bbc7-42e3-af90-a1c20698a934
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCBGWLCONFIGINFO, RILCBGWLCONFIGINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILCBGWLCONFIGINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>fAccept</b>
+### -field fAccept
 
 <dd></dd>
 
-### -field <b>rgrrBroadcastMsgID</b>
+### -field rgrrBroadcastMsgID
 
 <dd></dd>
 </dl>

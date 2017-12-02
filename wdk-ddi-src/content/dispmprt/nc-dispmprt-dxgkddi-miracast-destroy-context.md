@@ -58,13 +58,13 @@ VOID* DxgkDdiMiracastDestroyContext(
 ## -parameters
 <dl>
 
-### -param <i>DriverContext</i> [in]
+### -param DriverContext [in]
 
 <dd>
 <p>A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>MiracastContext</i> [in]
+### -param MiracastContext [in]
 
 <dd>
 <p>The Miracast device context, supplied by the operating system. This context was previously provided by the driver in a call to the <a href="..\dispmprt\nc-dispmprt-dxgkddi-miracast-create-context.md">DxgkDdiMiracastCreateContext</a> function.</p>

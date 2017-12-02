@@ -55,13 +55,13 @@ NTSTATUS PoClearPowerRequest(
 ## -parameters
 <dl>
 
-### -param <i>PowerRequest</i> [in, out]
+### -param PowerRequest [in, out]
 
 <dd>
-<p>A pointer to a power request object that was created by the <a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.</p>
+<p>A pointer to a power request object that was created by the <a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.</p>
 </dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>The type of the power request. Set this parameter to the following <a href="..\wdm\ne-wdm--power-request-type.md">POWER_REQUEST_TYPE</a> enumeration value:</p>
@@ -79,7 +79,7 @@ NTSTATUS PoClearPowerRequest(
 <p> </p>
 
 ## -remarks
-<p>A driver can call the <a href="..\ntifs\nf-ntifs-posetpowerrequest.md">PoSetPowerRequest</a> routine to request that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> override several types of default power behavior, which are specified as <a href="..\wdm\ne-wdm--power-request-type.md">POWER_REQUEST_TYPE</a> enumeration values. To restore the default behavior, the driver cancels the request by calling the <b>PoClearPowerRequest</b> routine.</p>
+<p>A driver can call the <a href="..\wdm\nf-wdm-posetpowerrequest.md">PoSetPowerRequest</a> routine to request that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> override several types of default power behavior, which are specified as <a href="..\wdm\ne-wdm--power-request-type.md">POWER_REQUEST_TYPE</a> enumeration values. To restore the default behavior, the driver cancels the request by calling the <b>PoClearPowerRequest</b> routine.</p>
 
 <p>The power manager maintains a count of the active requests for each power request type. The <b>PoSetPowerRequest</b> routine increments the count for the specified power request type by one. The <b>PoClearPowerRequest</b> routine decrements the count by one. A nonzero count indicates that requests from one or more components are active. After the count decrements to zero, the power manager restores the default behavior for the specified power request type. </p>
 
@@ -146,10 +146,10 @@ NTSTATUS PoClearPowerRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a>
+<a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-posetpowerrequest.md">PoSetPowerRequest</a>
+<a href="..\wdm\nf-wdm-posetpowerrequest.md">PoSetPowerRequest</a>
 </dt>
 <dt>
 <a href="..\wdm\ne-wdm--power-request-type.md">POWER_REQUEST_TYPE</a>

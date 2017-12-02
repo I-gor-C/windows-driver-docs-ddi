@@ -57,25 +57,25 @@ NTSTATUS KsCreateTopologyNode(
 ## -parameters
 <dl>
 
-### -param <i>ParentHandle</i> [in]
+### -param ParentHandle [in]
 
 <dd>
 <p>Specifies the handle to the parent on which the node is created.</p>
 </dd>
 
-### -param <i>NodeCreate</i> [in]
+### -param NodeCreate [in]
 
 <dd>
 <p>Specifies topology node create parameters.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> indicating the desired access to the object. This is typically <b>GENERIC_READ</b> and/or <b>GENERIC_WRITE</b>.</p>
 </dd>
 
-### -param <i>NodeHandle</i> [out]
+### -param NodeHandle [out]
 
 <dd>
 <p>Location for the topology node handle.</p>

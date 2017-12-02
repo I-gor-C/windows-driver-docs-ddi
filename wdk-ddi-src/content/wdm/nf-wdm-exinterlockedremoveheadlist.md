@@ -56,13 +56,13 @@ PLIST_ENTRY ExInterlockedRemoveHeadList(
 ## -parameters
 <dl>
 
-### -param <i>ListHead</i> [in, out]
+### -param ListHead [in, out]
 
 <dd>
 <p>A pointer to the <a href="kernel.list_entry">LIST_ENTRY</a> structure that serves as the list header.</p>
 </dd>
 
-### -param <i>Lock</i> [in, out]
+### -param Lock [in, out]
 
 <dd>
 <p>A pointer to a <b>KSPIN_LOCK</b> structure that serves as the spin lock used to synchronize access to the list. The storage for the spin lock must be resident and must have been initialized by calling <a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>. You must use this spin lock only with the <b>ExInterlocked<i>Xxx</i>List</b> routines.</p>

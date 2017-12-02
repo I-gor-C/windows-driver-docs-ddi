@@ -57,13 +57,13 @@ typedef struct _ISCSI_Supported_LB_Policies {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueSessionId</b>
+### -field UniqueSessionId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
 </dd>
 
-### -field <b>LoadBalancePolicy</b>
+### -field LoadBalancePolicy
 
 <dd>
 <p>This specifies the type of load balance policy that has been established on a multiconnection session.</p>
@@ -124,13 +124,13 @@ typedef struct _ISCSI_Supported_LB_Policies {
 <p> </p>
 </dd>
 
-### -field <b>iSCSI_PathCount</b>
+### -field iSCSI_PathCount
 
 <dd>
 <p>The number of paths associated with a target in the context of this session.</p>
 </dd>
 
-### -field <b>iSCSI_Paths</b>
+### -field iSCSI_Paths
 
 <dd>
 <p>Path information as shown in the <a href="..\iscsimgt\ns-iscsimgt--iscsi-path.md">ISCSI_Path</a> structure.</p>

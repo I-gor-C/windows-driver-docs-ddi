@@ -73,72 +73,72 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <dl>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Specifies the capabilities of the external transport. For example ED_TRANSCAP_CAN_EJECT, ED_TRANSCAP_CAN_PLAY_BACKWARDS, or ED_TRANSCAP_CAN_BUMP_PLAY. See Remarks.</p>
 </dd>
 
-### -field <b>SignalMode</b>
+### -field SignalMode
 
 <dd>
 <p>Specifies the signal mode of the external transport. For example ED_TRANSBASIC_SIGNAL_525_60_SD, ED_TRANSBASIC_SIGNAL_MPEG2TS or ED_TRANSBASIC_SIGNAL_0625_50_MPEG. See Remarks</p>
 </dd>
 
-### -field <b>LoadMedium</b>
+### -field LoadMedium
 
 <dd>
 <p>Specifies load medium. For example eject, open tray, close tray.</p>
 </dd>
 
-### -field <b>MediumInfo</b>
+### -field MediumInfo
 
 <dd>
 <p>Describes the medium info.</p>
 </dd>
 
-### -field <b>XPrtState</b>
+### -field XPrtState
 
 <dd>
 <p>Describes the external transports state.</p>
 </dd>
 
-### -field <b>Timecode</b>
+### -field Timecode
 
 <dd>
 <p>Specifies the timecode, in hour:minute:second:frame format. This member is defined for future use.</p>
 <dl>
 
-### -field <b>frame</b>
+### -field frame
 
 <dd>
 <p>Specifies the frame. This member is defined for future use.</p>
 </dd>
 
-### -field <b>second</b>
+### -field second
 
 <dd>
 <p>Specifies the second. This member is defined for future use.</p>
 </dd>
 
-### -field <b>minute</b>
+### -field minute
 
 <dd>
 <p>Specifies the minute. This member is defined for future use.</p>
 </dd>
 
-### -field <b>hour</b>
+### -field hour
 
 <dd>
 <p>Specifies the hour. This member is defined for future use.</p>
@@ -146,30 +146,30 @@ typedef struct {
 </dl>
 </dd>
 
-### -field <b>dwTimecode</b>
+### -field dwTimecode
 
 <dd>
 <p>Specifies the timecode, in hour:minute:second:frame format. This member is defined for future use.</p>
 </dd>
 
-### -field <b>dwAbsTrackNumber</b>
+### -field dwAbsTrackNumber
 
 <dd>
 <p>Specifies the absolute track number. This member is defined for future use.</p>
 </dd>
 
-### -field <b>RawAVC</b>
+### -field RawAVC
 
 <dd>
 <dl>
 
-### -field <b>PayloadSize</b>
+### -field PayloadSize
 
 <dd>
 <p>Specifies the payload size.</p>
 </dd>
 
-### -field <b>Payload</b>
+### -field Payload
 
 <dd>
 <p>Describes the payload</p>

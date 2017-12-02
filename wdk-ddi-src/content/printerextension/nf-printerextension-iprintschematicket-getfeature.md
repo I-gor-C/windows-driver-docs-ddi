@@ -57,14 +57,14 @@ HRESULT GetFeature(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd>
 <p>The base name of the <b>name</b> attribute value of the feature element.
 For example, for the Print Schema feature &lt;psf:Feature name="psk:JobOutputBin"&gt;, the base name of the feature is "JobOutputBin".</p>
 </dd>
 
-### -param <i>bstrNamespaceUri</i> [in]
+### -param bstrNamespaceUri [in]
 
 <dd>
 <p>The namespace URI of the <b>name</b> attribute value of the feature element.
@@ -72,7 +72,7 @@ For example, the namespace URI of the public Print Schema feature "JobOutputBin"
 If the feature is not defined in the public Print Schema, then this should be the URI of the private namespace defining the feature.</p>
 </dd>
 
-### -param <i>ppFeature</i> [out, retval]
+### -param ppFeature [out, retval]
 
 <dd>
 <p>The returned feature.</p>

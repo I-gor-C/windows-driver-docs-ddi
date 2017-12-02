@@ -55,13 +55,13 @@ NTSTATUS ChangerGetElementStatus(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object that represents the changer. </p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to the IRP. </p>

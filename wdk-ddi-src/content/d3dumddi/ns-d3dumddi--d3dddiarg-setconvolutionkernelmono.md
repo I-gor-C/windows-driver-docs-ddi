@@ -57,25 +57,25 @@ typedef struct _D3DDDIARG_SETCONVOLUTIONKERNELMONO {
 ## -struct-fields
 <dl>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>[in] The width, which is the resolution of the filter kernel in the horizontal direction. Valid values for this member are from 1 to 7. </p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[in] The height, which is the resolution of the filter kernel in the vertical direction. Valid values for this member are from 1 to 7. </p>
 </dd>
 
-### -field <b>pKernelRow</b>
+### -field pKernelRow
 
 <dd>
 <p>[in] A pointer to weights in the horizontal direction of a separable filter. In Microsoft Direct3D 9.L and later, <b>pKernelRow</b> must be <b>NULL</b>, which indicates that all of the weights are 1.0. </p>
 </dd>
 
-### -field <b>pKernelCol</b>
+### -field pKernelCol
 
 <dd>
 <p>[in] A pointer to weights in the vertical direction of a separable filter. In Direct3D 9.L and later, <b>pKernelCol</b> must be <b>NULL</b>, which indicates that all of the weights are 1.0. </p>

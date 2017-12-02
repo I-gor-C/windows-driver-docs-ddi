@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains registration information for the <a href="buses.ioctl_usb_register_for_transport_characteristics_change">IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a> 
+<p>Contains registration information for the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-register-for-transport-characteristics-change.md">IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a> 
 
 request.</p>
 
@@ -59,7 +59,7 @@ typedef struct _USB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION {
 ## -struct-fields
 <dl>
 
-### -field <b> ULONG</b>
+### -field  ULONG
 
 <dd>
 <p>A bitmask set by the client driver to register for change notifications that it is interested in. The following bits are valid:</p>
@@ -76,22 +76,22 @@ is set, the client is notified of changes in bandwidth.
 </p>
 </dd>
 
-### -field <b> Handle</b>
+### -field  Handle
 
 <dd>
 <p>An opaque handle for this registration.</p>
 </dd>
 
-### -field <b> UsbTransportCharacteristics</b>
+### -field  UsbTransportCharacteristics
 
 <dd>
-<p>A <a href="buses.usb_transport_characteristics">USB_TRANSPORT_CHARACTERISTICS</a> structure that is filled by the USB driver stack with the initial values of the transport characteristics. 
+<p>A <a href="..\usbioctl\ns-usbioctl--usb-transport-characteristics.md">USB_TRANSPORT_CHARACTERISTICS</a> structure that is filled by the USB driver stack with the initial values of the transport characteristics. 
 </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The registration handle received in this request is valid until the caller sends the <a href="buses.ioctl_usb_unregister_for_transport_characteristics_change">IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a> request to unregister for notifications.</p>
+<p>The registration handle received in this request is valid until the caller sends the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-unregister-for-transport-characteristics-change.md">IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a> request to unregister for notifications.</p>
 
 ## -requirements
 <table>
@@ -110,7 +110,7 @@ is set, the client is notified of changes in bandwidth.
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ioctl_usb_register_for_transport_characteristics_change">IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-register-for-transport-characteristics-change.md">IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a>
 </dt>
 </dl>
 <p> </p>

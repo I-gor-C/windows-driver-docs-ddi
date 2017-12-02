@@ -56,13 +56,13 @@ NTSTATUS ObCloseHandle(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>A handle to a system-supplied object of any type.</p>
 </dd>
 
-### -param <i>PreviousMode</i> [in]
+### -param PreviousMode [in]
 
 <dd>
 <p>Specifies the previous processor mode of the thread that opened the handle. To close a <a href="wdkgloss.k#wdkgloss.kernel_handle#wdkgloss.kernel_handle"><i>kernel handle</i></a>, set this parameter to <b>KernelMode</b>. To close a <i>user handle</i>, set this parameter to <b>UserMode</b>. For more information about these two handle types, see Remarks.</p>
@@ -91,7 +91,7 @@ NTSTATUS ObCloseHandle(
 
 <p>The <b>ZwClose</b> routine is similar to <b>ObCloseHandle</b> but can close only kernel handles. The call <b>ZwClose</b>(<i>hObject</i>), which closes kernel handle <i>hObject</i>, has the same effect as the call <b>ObCloseHandle</b>(<i>hObject</i>, <b>KernelMode</b>). For more information about closing a kernel handle, see <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>.</p>
 
-<p>To determine whether a handle is a kernel handle or a user handle,  a driver that receives a handle  can call the <a href="..\wdm\nf-wdm-exgetpreviousmode.md">ExGetPreviousMode</a> routine. Or, the driver can read the <b>RequestorMode</b> field from the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure that describes the I/O request. The I/O manager sets the <b>RequestorMode</b> field to the previous processor mode of the thread that requested the I/O operation.</p>
+<p>To determine whether a handle is a kernel handle or a user handle,  a driver that receives a handle  can call the <a href="..\wdm\nf-wdm-exgetpreviousmode.md">ExGetPreviousMode</a> routine. Or, the driver can read the <b>RequestorMode</b> field from the <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure that describes the I/O request. The I/O manager sets the <b>RequestorMode</b> field to the previous processor mode of the thread that requested the I/O operation.</p>
 
 <p>Callers of <b>ObCloseHandle</b> should not assume that this routine automatically waits for all pending I/O operations to complete before it returns.</p>
 
@@ -165,7 +165,7 @@ NTSTATUS ObCloseHandle(
 <a href="..\wdm\nf-wdm-exgetpreviousmode.md">ExGetPreviousMode</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>

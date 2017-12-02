@@ -66,14 +66,14 @@ typedef union _PCI_EXPRESS_LINK_CAPABILITIES_REGISTER {
 ## -struct-fields
 <dl>
 
-### -field <b>MaximumLinkSpeed</b>
+### -field MaximumLinkSpeed
 
 <dd>
 <p>The maximum link speed of the PCIe link. The only valid value is:</p>
 <p></p>
 <dl>
 
-### -field <a id="1"></a><b>1</b>
+### -field 1
 
 <dd>
 <p>2.5 gigabits per second</p>
@@ -82,50 +82,50 @@ typedef union _PCI_EXPRESS_LINK_CAPABILITIES_REGISTER {
 <p>All other values are reserved.</p>
 </dd>
 
-### -field <b>MaximumLinkWidth</b>
+### -field MaximumLinkWidth
 
 <dd>
 <p>The maximum link width (number of lanes) implemented by the component. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="1"></a><b>1</b>
+### -field 1
 
 <dd>
 <p>x1 (1 lane)</p>
 </dd>
 
-### -field <a id="2"></a><b>2</b>
+### -field 2
 
 <dd>
 <p>x2 (2 lanes)</p>
 </dd>
 
-### -field <a id="4"></a><b>4</b>
+### -field 4
 
 <dd>
 <p>x4 (4 lanes)</p>
 </dd>
 
-### -field <a id="8"></a><b>8</b>
+### -field 8
 
 <dd>
 <p>x8 (8 lanes)</p>
 </dd>
 
-### -field <a id="12"></a><b>12</b>
+### -field 12
 
 <dd>
 <p>x12 (12 lanes)</p>
 </dd>
 
-### -field <a id="16"></a><b>16</b>
+### -field 16
 
 <dd>
 <p>x16 (16 lanes)</p>
 </dd>
 
-### -field <a id="32"></a><b>32</b>
+### -field 32
 
 <dd>
 <p>x32 (32 lanes)</p>
@@ -134,20 +134,20 @@ typedef union _PCI_EXPRESS_LINK_CAPABILITIES_REGISTER {
 <p>All other values are reserved.</p>
 </dd>
 
-### -field <b>ActiveStatePMSupport</b>
+### -field ActiveStatePMSupport
 
 <dd>
 <p>The level of active state power management supported on the PCIe link. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="L0sEntrySupport"></a><a id="l0sentrysupport"></a><a id="L0SENTRYSUPPORT"></a><b>L0sEntrySupport</b>
+### -field L0sEntrySupport
 
 <dd>
 <p>L0s is supported.</p>
 </dd>
 
-### -field <a id="L0sAndL1EntrySupport"></a><a id="l0sandl1entrysupport"></a><a id="L0SANDL1ENTRYSUPPORT"></a><b>L0sAndL1EntrySupport</b>
+### -field L0sAndL1EntrySupport
 
 <dd>
 <p>L0s and L1 are supported.</p>
@@ -156,56 +156,56 @@ typedef union _PCI_EXPRESS_LINK_CAPABILITIES_REGISTER {
 <p>All other values are reserved.</p>
 </dd>
 
-### -field <b>L0sExitLatency</b>
+### -field L0sExitLatency
 
 <dd>
 <p>The L0s exit latency for the PCIe link. This value indicates the length of time this port requires to complete a transition from L0s to L0.</p>
 <p></p>
 <dl>
 
-### -field <a id="L0s_Below64ns"></a><a id="l0s_below64ns"></a><a id="L0S_BELOW64NS"></a><b>L0s_Below64ns</b>
+### -field L0s_Below64ns
 
 <dd>
 <p>Less than 64 nanoseconds</p>
 </dd>
 
-### -field <a id="L0s_64ns_128ns"></a><a id="l0s_64ns_128ns"></a><a id="L0S_64NS_128NS"></a><b>L0s_64ns_128ns</b>
+### -field L0s_64ns_128ns
 
 <dd>
 <p>64 nanoseconds to 128 nanoseconds</p>
 </dd>
 
-### -field <a id="L0s_128ns_256ns"></a><a id="l0s_128ns_256ns"></a><a id="L0S_128NS_256NS"></a><b>L0s_128ns_256ns</b>
+### -field L0s_128ns_256ns
 
 <dd>
 <p>128 nanoseconds to 256 nanoseconds</p>
 </dd>
 
-### -field <a id="L0s_256ns_512ns"></a><a id="l0s_256ns_512ns"></a><a id="L0S_256NS_512NS"></a><b>L0s_256ns_512ns</b>
+### -field L0s_256ns_512ns
 
 <dd>
 <p>256 nanoseconds to 512 nanoseconds</p>
 </dd>
 
-### -field <a id="L0s_512ns_1us"></a><a id="l0s_512ns_1us"></a><a id="L0S_512NS_1US"></a><b>L0s_512ns_1us</b>
+### -field L0s_512ns_1us
 
 <dd>
 <p>512 nanoseconds to 1 microsecond</p>
 </dd>
 
-### -field <a id="L0s_1us_2us"></a><a id="l0s_1us_2us"></a><a id="L0S_1US_2US"></a><b>L0s_1us_2us</b>
+### -field L0s_1us_2us
 
 <dd>
 <p>1 microsecond to 2 microseconds</p>
 </dd>
 
-### -field <a id="L0s_2us_4us"></a><a id="l0s_2us_4us"></a><a id="L0S_2US_4US"></a><b>L0s_2us_4us</b>
+### -field L0s_2us_4us
 
 <dd>
 <p>2 microseconds to 4 microseconds</p>
 </dd>
 
-### -field <a id="L0s_Above4us"></a><a id="l0s_above4us"></a><a id="L0S_ABOVE4US"></a><b>L0s_Above4us</b>
+### -field L0s_Above4us
 
 <dd>
 <p>More than 4 microseconds</p>
@@ -213,56 +213,56 @@ typedef union _PCI_EXPRESS_LINK_CAPABILITIES_REGISTER {
 </dl>
 </dd>
 
-### -field <b>L1ExitLatency</b>
+### -field L1ExitLatency
 
 <dd>
 <p>The L1 exit latency for the PCIe link. This value indicates the length of time this port requires to complete a transition from L1 to L0.</p>
 <p></p>
 <dl>
 
-### -field <a id="L1_Below1us"></a><a id="l1_below1us"></a><a id="L1_BELOW1US"></a><b>L1_Below1us</b>
+### -field L1_Below1us
 
 <dd>
 <p>Less than 1 microsecond</p>
 </dd>
 
-### -field <a id="L1_1us_2us"></a><a id="l1_1us_2us"></a><a id="L1_1US_2US"></a><b>L1_1us_2us</b>
+### -field L1_1us_2us
 
 <dd>
 <p>1 microsecond to 2 microseconds</p>
 </dd>
 
-### -field <a id="L1_2us_4us"></a><a id="l1_2us_4us"></a><a id="L1_2US_4US"></a><b>L1_2us_4us</b>
+### -field L1_2us_4us
 
 <dd>
 <p>2 microseconds to 4 microseconds</p>
 </dd>
 
-### -field <a id="L1_4us_8us"></a><a id="l1_4us_8us"></a><a id="L1_4US_8US"></a><b>L1_4us_8us</b>
+### -field L1_4us_8us
 
 <dd>
 <p>4 microseconds to 8 microseconds</p>
 </dd>
 
-### -field <a id="L1_8us_16us"></a><a id="l1_8us_16us"></a><a id="L1_8US_16US"></a><b>L1_8us_16us</b>
+### -field L1_8us_16us
 
 <dd>
 <p>8 microseconds to 16 microseconds</p>
 </dd>
 
-### -field <a id="L1_16us_32us"></a><a id="l1_16us_32us"></a><a id="L1_16US_32US"></a><b>L1_16us_32us</b>
+### -field L1_16us_32us
 
 <dd>
 <p>16 microseconds to 32 microseconds</p>
 </dd>
 
-### -field <a id="L1_32us_64us"></a><a id="l1_32us_64us"></a><a id="L1_32US_64US"></a><b>L1_32us_64us</b>
+### -field L1_32us_64us
 
 <dd>
 <p>32 microseconds to 64 microseconds</p>
 </dd>
 
-### -field <a id="L1_Above64us"></a><a id="l1_above64us"></a><a id="L1_ABOVE64US"></a><b>L1_Above64us</b>
+### -field L1_Above64us
 
 <dd>
 <p>More than 64 microseconds</p>
@@ -271,37 +271,37 @@ typedef union _PCI_EXPRESS_LINK_CAPABILITIES_REGISTER {
 <p>This value is ignored if the <b>ActiveStatePMSupport </b>member is not set to <b>L0sAndL1EntrySupport</b>.</p>
 </dd>
 
-### -field <b>ClockPowerManagement</b>
+### -field ClockPowerManagement
 
 <dd>
 <p>A single bit that indicates that the component supports clock power management.</p>
 </dd>
 
-### -field <b>SurpriseDownErrorReportingCapable</b>
+### -field SurpriseDownErrorReportingCapable
 
 <dd>
 <p>A single bit that indicates that the component supports the optional capability of detecting and reporting a surprise-down error condition. This bit only applies to downstream ports.</p>
 </dd>
 
-### -field <b>DataLinkLayerActiveReportingCapable</b>
+### -field DataLinkLayerActiveReportingCapable
 
 <dd>
 <p>A single bit that indicates that the component supports the optional capability of reporting the data link active state of the data link control and management state machine. This bit only applies to downstream ports. Hot-plug capable downstream ports must support this capability.</p>
 </dd>
 
-### -field <b>Rsvd</b>
+### -field Rsvd
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>The PCIe port number for the PCIe link.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_LINK_CAPABILITIES_REGISTER structure.</p>

@@ -55,7 +55,7 @@ typedef struct _D3DDDIARG_SETTRANSFORM {
 ## -struct-fields
 <dl>
 
-### -field <b>TransformType</b>
+### -field TransformType
 
 <dd>
 <p>[in] A D3DTRANSFORMSTATETYPE-typed value that indicates the type of transform to set up. This member can be one of the following values.</p>
@@ -92,7 +92,7 @@ typedef struct _D3DDDIARG_SETTRANSFORM {
 <p> </p>
 </dd>
 
-### -field <b>Matrix</b>
+### -field Matrix
 
 <dd>
 <p>[in] A D3DMATRIX structure that describes the matrix that is used to set up the transform. For more information about D3DMATRIX, see the Microsoft Windows SDK documentation.</p>

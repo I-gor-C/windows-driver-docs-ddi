@@ -60,7 +60,7 @@ typedef struct _D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>WaitAny</b>
+### -field WaitAny
 
 <dd>
 <table>
@@ -97,13 +97,13 @@ typedef struct _D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The consolidated value of the bitfields in the nested structure.</p>

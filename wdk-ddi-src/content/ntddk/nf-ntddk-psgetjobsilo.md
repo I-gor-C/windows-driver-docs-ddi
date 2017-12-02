@@ -59,13 +59,13 @@ NTSTATUS PsGetJobSilo(
 ## -parameters
 <dl>
 
-### -param <i>Job</i> [in]
+### -param Job [in]
 
 <dd>
 <p>A job object.</p>
 </dd>
 
-### -param <i>Silo</i> [out]
+### -param Silo [out]
 
 <dd>
 <p> A pointer that receives the silo for the job.</p>

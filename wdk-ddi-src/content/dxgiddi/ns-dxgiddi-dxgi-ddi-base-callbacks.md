@@ -57,13 +57,13 @@ typedef struct DXGI_DDI_BASE_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnPresentCb</b>
+### -field pfnPresentCb
 
 <dd>
 <p>A pointer to the <a href="..\dxgiddi\nc-dxgiddi-pfnddxgiddi-presentcb.md">pfnPresentCbDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnPresentMultiplaneOverlayCb</b>
+### -field pfnPresentMultiplaneOverlayCb
 
 <dd>
 <p>A pointer to the <a href="display.pfnpresentmultiplaneoverlaycb_dxgi">pfnPresentMultiPlaneOverlayCb (DXGI)</a> function. Supported starting with Windows 8.1.</p>

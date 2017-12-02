@@ -57,19 +57,19 @@ typedef struct _BDA_CAS_REQUESTTUNERDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>ucRequestPriority</b>
+### -field ucRequestPriority
 
 <dd></dd>
 
-### -field <b>ucRequestReason</b>
+### -field ucRequestReason
 
 <dd></dd>
 
-### -field <b>ucRequestConsequences</b>
+### -field ucRequestConsequences
 
 <dd></dd>
 
-### -field <b>ulEstimatedTime</b>
+### -field ulEstimatedTime
 
 <dd></dd>
 </dl>

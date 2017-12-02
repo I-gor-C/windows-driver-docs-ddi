@@ -7,7 +7,7 @@ old-location: netvista\dot11_key_algo_ccmp.htm
 old-project: netvista
 ms.assetid: cf89ee80-d19d-4d97-b71f-8ebee4b96562
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_KEY_ALGO_CCMP, DOT11_KEY_ALGO_CCMP, *PDOT11_KEY_ALGO_CCMP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,15 +55,15 @@ typedef struct DOT11_KEY_ALGO_CCMP {
 ## -struct-fields
 <dl>
 
-### -field <b>ucIV48Counter</b>
+### -field ucIV48Counter
 
 <dd>
 <p>The initial 48-bit value of the AES-CCMP Packet Number (PN), which is used for replay protection.
      For more information about the PN, see 
-     <a href="NULL">AES-CCMP</a>.</p>
+     <a href="netvista.aes_ccmp">AES-CCMP</a>.</p>
 </dd>
 
-### -field <b>ulCCMPKeyLength</b>
+### -field ulCCMPKeyLength
 
 <dd>
 <p>The length, in bytes, of the AES-CCMP key material in the 
@@ -71,7 +71,7 @@ typedef struct DOT11_KEY_ALGO_CCMP {
      system, this member will always have a value of 16.</p>
 </dd>
 
-### -field <b>ucCCMPKey</b>
+### -field ucCCMPKey
 
 <dd>
 <p>The AES-CCMP key material.</p>
@@ -113,7 +113,7 @@ typedef struct DOT11_KEY_ALGO_CCMP {
 ## -see-also
 <dl>
 <dt>
-<a href="NULL">AES-CCMP</a>
+<a href="netvista.aes_ccmp">AES-CCMP</a>
 </dt>
 <dt>
 <a href="..\windot11\ns-windot11-dot11-cipher-default-key-value.md">
@@ -126,4 +126,4 @@ typedef struct DOT11_KEY_ALGO_CCMP {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_KEY_ALGO_CCMP structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_KEY_ALGO_CCMP structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -59,13 +59,13 @@ NTSTATUS APIENTRY USBCAMD_CancelBulkReadWrite(
 ## -parameters
 <dl>
 
-### -param <i>DeviceContext</i> [in]
+### -param DeviceContext [in]
 
 <dd>
 <p>Pointer to device-specific context.</p>
 </dd>
 
-### -param <i>PipeIndex</i> [in]
+### -param PipeIndex [in]
 
 <dd>
 <p>Specifies the index of the bulk pipe to cancel the read or write request.</p>

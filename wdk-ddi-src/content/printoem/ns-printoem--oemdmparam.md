@@ -63,25 +63,25 @@ typedef struct _OEMDMPARAM {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Contains the size of the OEMDMPARAM structure. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>pdriverobj</b>
+### -field pdriverobj
 
 <dd>
 <p></p>
 <dl>
 
-### -field <a id="For_IPrintOemUI__DevMode_"></a><a id="for_iprintoemui__devmode_"></a><a id="FOR_IPRINTOEMUI__DEVMODE_"></a>For <b>IPrintOemUI::DevMode</b>:
+### -field For IPrintOemUI::DevMode:
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <a id="For_IPrintOemUni__DevMode_and_IPrintOemPS__DevMode_"></a><a id="for_iprintoemuni__devmode_and_iprintoemps__devmode_"></a><a id="FOR_IPRINTOEMUNI__DEVMODE_AND_IPRINTOEMPS__DEVMODE_"></a>For <b>IPrintOemUni::DevMode</b> and <b>IPrintOemPS::DevMode</b>:
+### -field For IPrintOemUni::DevMode and IPrintOemPS::DevMode:
 
 <dd>
 <p>Pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
@@ -89,43 +89,43 @@ typedef struct _OEMDMPARAM {
 </dl>
 </dd>
 
-### -field <b>hPrinter</b>
+### -field hPrinter
 
 <dd>
 <p>Handle to the printer device. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>hModule</b>
+### -field hModule
 
 <dd>
 <p>Handle to the user interface plug-in module. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>pPublicDMIn</b>
+### -field pPublicDMIn
 
 <dd>
 <p>Pointer to the printer device's public DEVMODEW structure. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_DEFAULT, OEMDM_CONVERT, or OEMDM_MERGE.)</p>
 </dd>
 
-### -field <b>pPublicDMOut</b>
+### -field pPublicDMOut
 
 <dd>
 <p>Pointer to a location to receive public DEVMODEW structure contents. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_CONVERT or OEMDM_MERGE.)</p>
 </dd>
 
-### -field <b>pOEMDMIn</b>
+### -field pOEMDMIn
 
 <dd>
 <p>Pointer to a set of private DEVMODEW members. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_CONVERT or OEMDM_MERGE.)</p>
 </dd>
 
-### -field <b>pOEMDMOut</b>
+### -field pOEMDMOut
 
 <dd>
 <p>Pointer to memory allocated to receive modified private DEVMODEW contents. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_DEFAULT, OEMDM_CONVERT or OEMDM_MERGE.)</p>
 </dd>
 
-### -field <b>cbBufSize</b>
+### -field cbBufSize
 
 <dd>
 <p>On input, contains the caller-supplied size of memory space pointed to by <b>pOEMDMOut</b>. (Not valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_SIZE.)</p>

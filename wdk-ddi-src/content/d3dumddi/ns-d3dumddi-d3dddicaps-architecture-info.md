@@ -54,7 +54,7 @@ typedef struct D3DDDICAPS_ARCHITECTURE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>TileBasedDeferredRenderer</b>
+### -field TileBasedDeferredRenderer
 
 <dd>
 <p>Specifies whether a rendering device batches rendering commands and performs multipass rendering into tiles or bins over a render area. The value is <b>TRUE</b> if the rendering device batches rendering commands and <b>FALSE</b> otherwise.</p>

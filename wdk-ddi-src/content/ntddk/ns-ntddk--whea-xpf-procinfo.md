@@ -66,32 +66,32 @@ typedef struct _WHEA_XPF_PROCINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>CheckInfoId</b>
+### -field CheckInfoId
 
 <dd>
 <p>A GUID that identifies the processor error information that is contained in the <b>CheckInfo</b> member. The following are the possible GUIDs that can be specified for this member:</p>
 <p></p>
 <dl>
 
-### -field <a id="WHEA_CACHECHECK_GUID"></a><a id="whea_cachecheck_guid"></a>WHEA_CACHECHECK_GUID
+### -field WHEA_CACHECHECK_GUID
 
 <dd>
 <p>The <b>CheckInfo.CacheCheck</b> member contains cache error information.</p>
 </dd>
 
-### -field <a id="WHEA_TLBCHECK_GUID"></a><a id="whea_tlbcheck_guid"></a>WHEA_TLBCHECK_GUID
+### -field WHEA_TLBCHECK_GUID
 
 <dd>
 <p>The <b>CheckInfo.TlbCheck</b> member contains translation lookaside buffer error information.</p>
 </dd>
 
-### -field <a id="WHEA_BUSCHECK_GUID"></a><a id="whea_buscheck_guid"></a>WHEA_BUSCHECK_GUID
+### -field WHEA_BUSCHECK_GUID
 
 <dd>
 <p>The <b>CheckInfo.BusCheck</b> member contains bus error information.</p>
 </dd>
 
-### -field <a id="WHEA_MSCHECK_GUID"></a><a id="whea_mscheck_guid"></a>WHEA_MSCHECK_GUID
+### -field WHEA_MSCHECK_GUID
 
 <dd>
 <p>The <b>CheckInfo.MsCheck</b> member contains microarchitecture-specific error information.</p>
@@ -99,13 +99,13 @@ typedef struct _WHEA_XPF_PROCINFO {
 </dl>
 </dd>
 
-### -field <b>ValidBits</b>
+### -field ValidBits
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-xpf-procinfo-validbits.md">WHEA_XPF_PROCINFO_VALIDBITS</a> union that specifies which members of this structure contain valid data.</p>
 </dd>
 
-### -field <b>CheckInfo</b>
+### -field CheckInfo
 
 <dd>
 <p>A union of unions that are specific to each different type of processor error information.</p>
@@ -114,31 +114,31 @@ typedef struct _WHEA_XPF_PROCINFO {
 </p>
 <dl>
 
-### -field <b>CacheCheck</b>
+### -field CacheCheck
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-xpf-cache-check.md">WHEA_XPF_CACHE_CHECK</a> union that describes cache error information. </p>
 </dd>
 
-### -field <b>TlbCheck</b>
+### -field TlbCheck
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-xpf-tlb-check.md">WHEA_XPF_TLB_CHECK</a> union that describes translation lookaside buffer error information. </p>
 </dd>
 
-### -field <b>BusCheck</b>
+### -field BusCheck
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-xpf-bus-check.md">WHEA_XPF_BUS_CHECK</a> union that describes bus error information.</p>
 </dd>
 
-### -field <b>MsCheck</b>
+### -field MsCheck
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-xpf-ms-check.md">WHEA_XPF_MS_CHECK</a> union that describes microarchitecture-specific error information. </p>
 </dd>
 
-### -field <b>AsULONGLONG</b>
+### -field AsULONGLONG
 
 <dd>
 <p>A ULONGLONG representation of the contents of the <b>CheckInfo</b> union.</p>
@@ -146,28 +146,28 @@ typedef struct _WHEA_XPF_PROCINFO {
 </dl>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>An identifier that uniquely identifies the target associated with the error.</p>
 <p>This member contains valid data only if the <b>ValidBits.TargetId</b> bit is set.</p>
 </dd>
 
-### -field <b>RequesterId</b>
+### -field RequesterId
 
 <dd>
 <p>An identifier that uniquely identifies the requester associated with the error.</p>
 <p>This member contains valid data only if the <b>ValidBits.RequesterId</b> bit is set.</p>
 </dd>
 
-### -field <b>ResponderId</b>
+### -field ResponderId
 
 <dd>
 <p>An identifier that uniquely identifies the responder associated with the error.</p>
 <p>This member contains valid data only if the <b>ValidBits.Responder</b> bit is set.</p>
 </dd>
 
-### -field <b>InstructionPointer</b>
+### -field InstructionPointer
 
 <dd>
 <p>The instruction pointer at the time that the error occurred.</p>

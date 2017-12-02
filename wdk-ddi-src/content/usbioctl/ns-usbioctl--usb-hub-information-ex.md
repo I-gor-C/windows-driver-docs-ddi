@@ -60,7 +60,7 @@ typedef struct _USB_HUB_INFORMATION_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>HubType</b>
+### -field HubType
 
 <dd>
 <p>The type of hub: root hub, USB 2.0, or USB 3.0 hub. On successful completion of the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-hub-information-ex.md">IOCTL_USB_GET_HUB_INFORMATION_EX</a> I/O control request, <b>HubType</b> contains a <a href="..\usbioctl\ne-usbioctl--usb-hub-type.md">USB_HUB_TYPE</a> enumerator that indicates the type of hub.
@@ -68,24 +68,24 @@ typedef struct _USB_HUB_INFORMATION_EX {
 </p>
 </dd>
 
-### -field <b>HighestPortNumber</b>
+### -field HighestPortNumber
 
 <dd>
 <p>Indicates the number of ports on the hub. The ports are numbered from 1 to <b>HighestPortNumber</b>, where <b>HighestPortNumber</b> is the highest valid port number on the hub.</p>
 </dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <dl>
 
-### -field <b>UsbHubDescriptor</b>
+### -field UsbHubDescriptor
 
 <dd>
 <p>If <b>HubType</b> indicates a USB 2.0 hub,  <b>u.UsbHubDescriptor</b> is a <a href="..\usbspec\ns-usbspec--usb-hub-descriptor.md">USB_HUB_DESCRIPTOR</a> structure that contains selected information from the USB 2.0/1.1 hub descriptor, as defined in the USB 2.0 Specification. </p>
 </dd>
 
-### -field <b>Usb30HubDescriptor</b>
+### -field Usb30HubDescriptor
 
 <dd>
 <p>If <b>HubType</b> indicates a USB 3.0 hub,  <b>u.UsbHub30Descriptor</b> is a <a href="..\usbspec\ns-usbspec--usb-30-hub-descriptor.md">USB_30_HUB_DESCRIPTOR</a> structure that contains selected information from the USB 3.0 hub descriptor, as defined in the USB 3.0 Specification.</p>

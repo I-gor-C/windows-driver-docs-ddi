@@ -58,25 +58,25 @@ ULONG RtlFindClearRuns(
 ## -parameters
 <dl>
 
-### -param <i>BitMapHeader</i> [in]
+### -param BitMapHeader [in]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a> routine. </p>
 </dd>
 
-### -param <i>RunArray</i> [out]
+### -param RunArray [out]
 
 <dd>
 <p>Pointer to the first element in a caller-allocated array for the bit position and length of each clear run found in the given bitmap variable. </p>
 </dd>
 
-### -param <i>SizeOfRunArray</i> [in]
+### -param SizeOfRunArray [in]
 
 <dd>
 <p>Specifies the maximum number of clear runs to satisfy this request.</p>
 </dd>
 
-### -param <i>LocateLongestRuns</i> [in]
+### -param LocateLongestRuns [in]
 
 <dd>
 <p>If <b>TRUE</b>, specifies that the routine is to search the entire bitmap for the longest clear runs it can find. Otherwise, the routine stops searching when it has found the number of clear runs specified by <i>SizeOfRunArray</i>. </p>

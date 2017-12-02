@@ -57,38 +57,38 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Guid</b>
+### -field Guid
 
 <dd>
 <p>Points to the GUID that identifies the block. </p>
 </dd>
 
-### -field <b>InstanceCount</b>
+### -field InstanceCount
 
 <dd>
 <p>Specifies the number of instances defined for the block.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Indicates characteristics of the block. The SCSI port driver sets all but the following WMIREG_FLAG_<i>XXX</i> on behalf of the miniport driver. A miniport driver might set one or more of the following flags: </p>
 <p></p>
 <dl>
 
-### -field <a id="WMIREG_FLAG_EVENT_ONLY_GUID"></a><a id="wmireg_flag_event_only_guid"></a>WMIREG_FLAG_EVENT_ONLY_GUID
+### -field WMIREG_FLAG_EVENT_ONLY_GUID
 
 <dd>
 <p>The block can be enabled or disabled as an event only, and cannot be queried or set. If this flag is clear, the block can also be queried or set. </p>
 </dd>
 
-### -field <a id="WMIREG_FLAG_EXPENSIVE"></a><a id="wmireg_flag_expensive"></a>WMIREG_FLAG_EXPENSIVE
+### -field WMIREG_FLAG_EXPENSIVE
 
 <dd>
 <p>Requests the port driver send an enable-collection SRB the first time a data consumer opens the data block and a disable-collection SRB when the last data consumer closes the data block. This is recommended if collecting such data affects performance. A miniport driver need not collect the data until a data consumer explicitly requests it by opening the block. </p>
 </dd>
 
-### -field <a id="WMIREG_FLAG_REMOVE_GUID"></a><a id="wmireg_flag_remove_guid"></a>WMIREG_FLAG_REMOVE_GUID
+### -field WMIREG_FLAG_REMOVE_GUID
 
 <dd>
 <p>Removes support for a previously registered block when set.</p>

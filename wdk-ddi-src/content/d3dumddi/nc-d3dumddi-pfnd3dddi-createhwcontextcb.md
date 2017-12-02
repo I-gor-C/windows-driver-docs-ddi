@@ -55,13 +55,13 @@ _Check_return_ HRESULT APIENTRY CALLBACK PFND3DDDI_CREATEHWCONTEXTCB(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the device.</p>
 </dd>
 
-### -param <i>createHwContext</i> [in, out]
+### -param createHwContext [in, out]
 
 <dd>
 <p>A pointer to the structure holding information on creating the hardware context.</p>

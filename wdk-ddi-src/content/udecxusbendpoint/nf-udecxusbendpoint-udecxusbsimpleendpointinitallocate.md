@@ -55,10 +55,10 @@ PUDECXUSBENDPOINT_INIT UdecxUsbSimpleEndpointInitAllocate(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbDevice</i> [in]
+### -param UdecxUsbDevice [in]
 
 <dd>
-<p>A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.</p>
+<p>A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a>.</p>
 </dd>
 </dl>
 
@@ -66,9 +66,9 @@ PUDECXUSBENDPOINT_INIT UdecxUsbSimpleEndpointInitAllocate(
 <p>This method returns a pointer to an opaque <b>UDECXUSBENDPOINT_INIT</b> structure that contains the initialization parameters. The structure is allocated by the USB device emulation  class extension (UdeCx).</p>
 
 ## -remarks
-<p>The UDE client driver calls this method to allocate parameters for a simple endpoint that is created by a subsequent call to <a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a>. If the device is not created or the driver is finished using the resources, the driver must free the resources by calling <a href="buses.udecxusbendpointinitfree">UdecxUsbEndpointInitFree</a>.</p>
+<p>The UDE client driver calls this method to allocate parameters for a simple endpoint that is created by a subsequent call to <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>. If the device is not created or the driver is finished using the resources, the driver must free the resources by calling <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointinitfree.md">UdecxUsbEndpointInitFree</a>.</p>
 
-<p>The only valid time to create simple endpoints is after creating a the UDE device object and before calling <a href="buses.udecxusbdeviceplugin">UdecxUsbDevicePlugIn</a> on the device.
+<p>The only valid time to create simple endpoints is after creating a the UDE device object and before calling <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceplugin.md">UdecxUsbDevicePlugIn</a> on the device.
 </p>
 
 ## -requirements
@@ -130,7 +130,7 @@ PUDECXUSBENDPOINT_INIT UdecxUsbSimpleEndpointInitAllocate(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a>
+<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>
 </dt>
 <dt>
 <a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>

@@ -58,13 +58,13 @@ VOID APIENTRY IaSetTopology(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>PrimitiveTopology</i> [in]
+### -param PrimitiveTopology [in]
 
 <dd>
 <p> A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-primitive-topology.md">D3D10_DDI_PRIMITIVE_TOPOLOGY</a>-typed value that indicates the primitive topology to set. </p>

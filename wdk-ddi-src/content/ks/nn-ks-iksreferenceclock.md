@@ -152,7 +152,7 @@ req.iface:
 
 <p>However, a client that is written in C would do the following instead :</p>
 
-<p>For more information, see <a href="NULL">AVStream Overview</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/305039fe-0a00-4f3e-ae1a-61c50a2f2fb3">AVStream Overview</a>.</p>
 
 ## -requirements
 <table>

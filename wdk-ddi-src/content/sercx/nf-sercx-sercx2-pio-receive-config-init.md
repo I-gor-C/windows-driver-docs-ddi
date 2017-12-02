@@ -58,25 +58,25 @@ VOID SERCX2_PIO_RECEIVE_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>PioReceiveConfig</i> [out]
+### -param PioReceiveConfig [out]
 
 <dd>
 <p>A pointer to the <a href="..\sercx\ns-sercx--sercx2-pio-receive-config.md">SERCX2_PIO_RECEIVE_CONFIG</a> structure that is to be initialized.</p>
 </dd>
 
-### -param <i>EvtSerCx2PioReceiveReadBuffer</i> [in]
+### -param EvtSerCx2PioReceiveReadBuffer [in]
 
 <dd>
 <p>The value to load into the <b>EvtSerCx2PioReceiveReadBuffer</b> member of the <b>SERCX2_PIO_RECEIVE_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-pio-receive-config.md">SERCX2_PIO_RECEIVE_CONFIG</a>.</p>
 </dd>
 
-### -param <i>EvtSerCx2PioReceiveEnableReadyNotification</i> [in]
+### -param EvtSerCx2PioReceiveEnableReadyNotification [in]
 
 <dd>
 <p>The value to load into the <b>EvtSerCx2PioReceiveEnableReadyNotification</b> member of the <b>SERCX2_PIO_RECEIVE_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-pio-receive-config.md">SERCX2_PIO_RECEIVE_CONFIG</a>.</p>
 </dd>
 
-### -param <i>EvtSerCx2PioReceiveCancelReadyNotification</i> [in]
+### -param EvtSerCx2PioReceiveCancelReadyNotification [in]
 
 <dd>
 <p>The value to load into the <b>EvtSerCx2PioReceiveCancelReadyNotification</b> member of the <b>SERCX2_PIO_RECEIVE_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-pio-receive-config.md">SERCX2_PIO_RECEIVE_CONFIG</a>.</p>

@@ -57,7 +57,7 @@ typedef struct _VPCI_INVALIDATE_BLOCK_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>BlockMask</b>
+### -field BlockMask
 
 <dd>
 <p>A <b>UINT64</b> value that specifies a bitmask for the first 64 VF configuration blocks. Each bit in the bitmask corresponds to a VF configuration block. If a bit is set to one, the data associated with the corresponding VF configuration block has changed.</p>

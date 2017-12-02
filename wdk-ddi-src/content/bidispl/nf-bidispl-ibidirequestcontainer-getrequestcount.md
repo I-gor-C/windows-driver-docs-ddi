@@ -54,7 +54,7 @@ HRESULT IBidiRequestContainer::GetRequestCount(
 ## -parameters
 <dl>
 
-### -param <i>puCount</i> [out]
+### -param puCount [out]
 
 <dd>
 <p>Pointer to a variable that receives the number of requests.</p>

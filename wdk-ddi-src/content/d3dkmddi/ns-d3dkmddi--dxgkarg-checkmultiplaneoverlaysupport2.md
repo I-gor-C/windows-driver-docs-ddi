@@ -57,13 +57,13 @@ typedef struct _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2 {
 ## -struct-fields
 <dl>
 
-### -field <b>PlaneCount</b>
+### -field PlaneCount
 
 <dd>
 <p>The number of planes to be enabled.</p>
 </dd>
 
-### -field <b>pPlanes</b>
+### -field pPlanes
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-plane-with-source.md">DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE</a> 
@@ -71,13 +71,13 @@ typedef struct _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2 {
                                                                         provides for multi-plane overlays.</p>
 </dd>
 
-### -field <b>Supported</b>
+### -field Supported
 
 <dd>
 <p><b>TRUE</b> if the multi-plane overlay configuration can be supported, otherwise <b>FALSE</b>.</p>
 </dd>
 
-### -field <b>ReturnInfo</b>
+### -field ReturnInfo
 
 <dd>
 <p>Specifies additional information.</p>

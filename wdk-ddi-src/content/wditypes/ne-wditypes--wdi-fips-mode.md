@@ -7,7 +7,7 @@ old-location: netvista\wdi_fips_mode.htm
 old-project: netvista
 ms.assetid: 88EE4C63-C9D8-41D2-800E-9FFD5EF4962A
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _WDI_FIPS_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_FIPS_MODE_DISABLED"></a><a id="wdi_fips_mode_disabled"></a><b>WDI_FIPS_MODE_DISABLED</b>
+### -field WDI_FIPS_MODE_DISABLED
 
 <dd>
 <p>FIPS mode is disabled.</p>
 </dd>
 
-### -field <a id="WDI_FIPS_MODE_ENABLED"></a><a id="wdi_fips_mode_enabled"></a><b>WDI_FIPS_MODE_ENABLED</b>
+### -field WDI_FIPS_MODE_ENABLED
 
 <dd>
 <p>FIPS mode is enabled.</p>
 </dd>
 
-### -field <a id="WDI_FIPS_MODE_UNKNOWN"></a><a id="wdi_fips_mode_unknown"></a><b>WDI_FIPS_MODE_UNKNOWN</b>
+### -field WDI_FIPS_MODE_UNKNOWN
 
 <dd>
 <p>Unknown.</p>

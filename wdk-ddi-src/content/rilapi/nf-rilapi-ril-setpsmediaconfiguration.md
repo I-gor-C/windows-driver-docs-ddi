@@ -7,7 +7,7 @@ old-location: netvista\ril_setpsmediaconfiguration.htm
 old-project: netvista
 ms.assetid: 66fa9900-0195-4ec0-b181-6f791247422c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SetPSMediaConfiguration
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_SetPSMediaConfiguration(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>pConfigurationSet</i> 
+### -param pConfigurationSet 
 
 <dd></dd>
 </dl>

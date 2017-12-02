@@ -60,43 +60,43 @@ typedef struct _FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>Blank</b>
+### -field Blank
 
 <dd>
 <p>Indicates, when set to 1, that the device supports the BLANK command defined by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification, with Blanking Types of zero and one. When set to zero, this bit indicates that the device does not support this command. </p>
 </dd>
 
-### -field <b>Intermediate</b>
+### -field Intermediate
 
 <dd>
 <p>Indicates, when set to 1, that the device supports writing on an intermediate state-bordered area and quick formatting (Format Type of 15 - Quick Format, as defined by the <i>MMC-3</i> specification). When set to zero, this bit indicates that the device does not support writing on an intermediate state-bordered area nor does it support quick formatting. </p>
 </dd>
 
-### -field <b>DefectStatusDataRead</b>
+### -field DefectStatusDataRead
 
 <dd>
 <p>Corresponds to the Defect Status Bitmap Read (DSBR) bit as defined by the <i>MMC-3</i> specification. When set to 1, this bit indicates that the device allows initiators to read the Defect Status Bitmap of a medium. When set to zero, this bit indicates that the device does not support the reading of Defect Status Bitmap. </p>
 </dd>
 
-### -field <b>DefectStatusDataGenerate</b>
+### -field DefectStatusDataGenerate
 
 <dd>
 <p>Corresponds to the Defect Status Bitmap Generate (DSBG) bit as defined by the <i>MMC-3</i> specification. When set to 1, this bit indicates that the device can generate a Defect Status Bitmap during formatting. When set to zero, this bit indicates that the device cannot generate a Defect Status Bitmap during formatting. </p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>

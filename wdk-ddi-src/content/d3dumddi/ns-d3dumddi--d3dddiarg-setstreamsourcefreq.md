@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_SETSTREAMSOURCEFREQ {
 ## -struct-fields
 <dl>
 
-### -field <b>Stream</b>
+### -field Stream
 
 <dd>
 <p>[in] The stream source to divide, which is a value between zero and the maximum number of streams that are specified by the driver.</p>
 </dd>
 
-### -field <b>Divider</b>
+### -field Divider
 
 <dd>
 <p>[in] The frequency divisor of the portion of the vertex stream.</p>

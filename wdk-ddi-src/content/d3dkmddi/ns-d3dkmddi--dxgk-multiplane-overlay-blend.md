@@ -65,7 +65,7 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_BLEND {
 ## -struct-fields
 <dl>
 
-### -field <b>AlphaBlend</b>
+### -field AlphaBlend
 
 <dd>
 <p>If set, the overlay plane should use the pre-multiplied alpha channel in this plane to blend it with the plane beneath.</p>
@@ -73,27 +73,27 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_BLEND {
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>ColorKey</b>
+### -field ColorKey
 
 <dd>
 <p>A value for the color key. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Setting this member to zero is equivalent to setting the remaining 30 bits (0xFFFFFFFC) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Setting this member to zero is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A 32-bit value that identifies the type of blend operation to perform.</p>

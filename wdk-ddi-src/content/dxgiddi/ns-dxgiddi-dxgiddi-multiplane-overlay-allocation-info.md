@@ -55,13 +55,13 @@ typedef struct DXGIDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>PresentAllocation</b>
+### -field PresentAllocation
 
 <dd>
 <p>[in] A handle to the multiplane overlay allocation.</p>
 </dd>
 
-### -field <b>SubResourceIndex</b>
+### -field SubResourceIndex
 
 <dd>
 <p>[in] The zero-based index into the resource which the handle in the <b>PresentAllocation</b> member specifies. This index indicates the display surface.</p>

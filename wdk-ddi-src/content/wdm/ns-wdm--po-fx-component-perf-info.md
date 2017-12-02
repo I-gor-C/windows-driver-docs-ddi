@@ -56,13 +56,13 @@ typedef struct _PO_FX_COMPONENT_PERF_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>PerfStateSetsCount</b>
+### -field PerfStateSetsCount
 
 <dd>
 <p>The number of elements in the array <b>PerfStateSets</b> array.</p>
 </dd>
 
-### -field <b>PerfStateSets</b>
+### -field PerfStateSets
 
 <dd>
 <p>This member is the first element in an array of one or more <a href="..\wdm\ns-wdm--po-fx-component-perf-set.md">PO_FX_COMPONENT_PERF_SET</a> elements. Each  <b>PO_FX_COMPONENT_PERF_SET</b> represents one set of supported performance states for a component. If the array contains more than one element, the additional elements immediately follow the first element.</p>

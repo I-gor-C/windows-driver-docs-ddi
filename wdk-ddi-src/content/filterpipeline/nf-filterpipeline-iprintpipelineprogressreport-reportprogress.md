@@ -54,7 +54,7 @@ HRESULT ReportProgress(
 ## -parameters
 <dl>
 
-### -param <i>update</i> [in]
+### -param update [in]
 
 <dd>
 <p>An <a href="print.expsjobconsumption">EXpsJobConsumption</a>-typed value that describes the progress to the pipeline manager.</p>

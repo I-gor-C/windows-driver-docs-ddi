@@ -59,25 +59,25 @@ typedef struct _D3DHAL_DP2COMMAND {
 ## -struct-fields
 <dl>
 
-### -field <b>bCommand</b>
+### -field bCommand
 
 <dd>
 <p>Specifies a primitive to draw or a state change to process. This member can be one of the <a href="..\d3dhal\ne-d3dhal--d3dhal-dp2operation.md">D3DHAL_DP2OPERATION</a> enumerated values. </p>
 </dd>
 
-### -field <b>bReserved</b>
+### -field bReserved
 
 <dd>
 <p>Reserved for system use and should be ignored by the driver.</p>
 </dd>
 
-### -field <b>wPrimitiveCount</b>
+### -field wPrimitiveCount
 
 <dd>
 <p>Specifies the number of primitives to process. This member is valid when <b>bCommand</b> is not either of D3DDP2OP_RENDERSTATE or D3DDP2OP_TEXTURESTAGESTATE.</p>
 </dd>
 
-### -field <b>wStateCount</b>
+### -field wStateCount
 
 <dd>
 <p>Specifies the number of state changes to process. This member is valid when <b>bCommand</b> is one of D3DDP2OP_RENDERSTATE or D3DDP2OP_TEXTURESTAGESTATE.</p>

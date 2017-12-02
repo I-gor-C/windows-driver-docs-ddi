@@ -56,19 +56,19 @@ typedef struct _DXGKARG_SETROOTPAGETABLE {
 ## -struct-fields
 <dl>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>A context handle returned by <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a>.</p>
 </dd>
 
-### -field <b>Address</b>
+### -field Address
 
 <dd>
 <p>The GPU physical address of the root page table.</p>
 </dd>
 
-### -field <b>NumEntries</b>
+### -field NumEntries
 
 <dd>
 <p> The root page table size in entries. GPU should generate invalid fault when a virtual address has a top level page table entry index, which is greater or equal this value.</p>

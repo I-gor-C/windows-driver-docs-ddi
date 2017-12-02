@@ -56,19 +56,19 @@ typedef struct _D3DDDIENCRYPTED_BLOCK_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>NumEncryptedBytesAtBeginning</b>
+### -field NumEncryptedBytesAtBeginning
 
 <dd>
 <p>[in] The number of bytes at the beginning of the buffer that are encrypted. </p>
 </dd>
 
-### -field <b>NumBytesInSkipPattern</b>
+### -field NumBytesInSkipPattern
 
 <dd>
 <p>[in] The number of bytes in the buffer that are skipped from encryption before encryption starts again. </p>
 </dd>
 
-### -field <b>NumBytesInEncryptPattern</b>
+### -field NumBytesInEncryptPattern
 
 <dd>
 <p>[in] The number of bytes in the buffer that are encrypted after the skip pattern, which the <b>NumBytesInSkipPattern</b> member specifies. The skip and encrypt pattern is then repeated until the buffer ends. For more information about the skip-encrypt pattern, see the Remarks section. </p>

@@ -60,7 +60,7 @@ typedef EVT_IDD_CX_MONITOR_OPM_GET_RANDOM_NUMBER PFN_IDD_CX_MONITOR_OPM_GET_RAND
 ## -parameters
 <dl>
 
-### -param <i>OpmCxtObject</i> [in]
+### -param OpmCxtObject [in]
 
 <dd>
 <p>
@@ -68,7 +68,7 @@ typedef EVT_IDD_CX_MONITOR_OPM_GET_RANDOM_NUMBER PFN_IDD_CX_MONITOR_OPM_GET_RAND
                 The object for the OPM context that a random number will be gotten from.</p>
 </dd>
 
-### -param <i>pOutArgs</i> [out]
+### -param pOutArgs [out]
 
 <dd>
 <p>

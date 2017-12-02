@@ -57,25 +57,25 @@ VOID AtaPortReleaseQueueTag(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the channel extension.</p>
 </dd>
 
-### -param <i>TargetId</i> [in]
+### -param TargetId [in]
 
 <dd>
 <p>Specifies the target identifier of the device.</p>
 </dd>
 
-### -param <i>Lun</i> [in]
+### -param Lun [in]
 
 <dd>
 <p>Specifies the logical unit number of the device.</p>
 </dd>
 
-### -param <i>QueueTag</i> [in]
+### -param QueueTag [in]
 
 <dd>
 <p>Specifies the queue tag to be freed.</p>

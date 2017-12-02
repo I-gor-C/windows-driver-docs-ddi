@@ -7,7 +7,7 @@ old-location: netvista\dot11_power_mgmt_auto_mode_enabled_info.htm
 old-project: netvista
 ms.assetid: 9C75544F-A14C-4741-91FC-434AE1872A6E
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, *PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef struct _DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO structure. The required settings for the members of <b>Header</b> are the following.</p>
@@ -79,7 +79,7 @@ typedef struct _DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO {
 <p> </p>
 </dd>
 
-### -field <b>bEnabled</b>
+### -field bEnabled
 
 <dd>
 <p>Windows sets this member to TRUE to indicate to the device to automatically manage its power saving mode. Windows set this to FALSE to indicate to the device to stop automatically managing its power save mode.</p>

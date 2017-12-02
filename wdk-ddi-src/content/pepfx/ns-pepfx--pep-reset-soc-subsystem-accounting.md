@@ -55,13 +55,13 @@ typedef struct _PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING {
 ## -struct-fields
 <dl>
 
-### -field <b>PlatformIdleStateIndex</b>
+### -field PlatformIdleStateIndex
 
 <dd>
 <p>[in] The platform idle state index for the subsystem accounting to be reset.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>

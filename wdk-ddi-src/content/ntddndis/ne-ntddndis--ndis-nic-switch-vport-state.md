@@ -7,7 +7,7 @@ old-location: netvista\ndis_nic_switch_vport_state.htm
 old-project: netvista
 ms.assetid: 25999016-95a8-4d78-a4a3-111fc4e910ad
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT, *PGET_CONFIGURATION_IOCTL_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ typedef enum _NDIS_NIC_SWITCH_VPORT_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="NdisNicSwitchVPortStateUndefined"></a><a id="ndisnicswitchvportstateundefined"></a><a id="NDISNICSWITCHVPORTSTATEUNDEFINED"></a><b>NdisNicSwitchVPortStateUndefined</b>
+### -field NdisNicSwitchVPortStateUndefined
 
 <dd>
 <p>The VPort state is not defined.</p>
 </dd>
 
-### -field <a id="NdisNicSwitchVPortStateActivated"></a><a id="ndisnicswitchvportstateactivated"></a><a id="NDISNICSWITCHVPORTSTATEACTIVATED"></a><b>NdisNicSwitchVPortStateActivated</b>
+### -field NdisNicSwitchVPortStateActivated
 
 <dd>
 <p>The VPort is allocated and in an activated state.</p>
@@ -71,7 +71,7 @@ typedef enum _NDIS_NIC_SWITCH_VPORT_STATE {
 <div> </div>
 </dd>
 
-### -field <a id="NdisNicSwitchVPortStateDeactivated"></a><a id="ndisnicswitchvportstatedeactivated"></a><a id="NDISNICSWITCHVPORTSTATEDEACTIVATED"></a><b>NdisNicSwitchVPortStateDeactivated</b>
+### -field NdisNicSwitchVPortStateDeactivated
 
 <dd>
 <p>The VPort is allocated and in a deactivated state.</p>
@@ -79,7 +79,7 @@ typedef enum _NDIS_NIC_SWITCH_VPORT_STATE {
 <div> </div>
 </dd>
 
-### -field <a id="NdisNicSwitchVPortStateMaximum"></a><a id="ndisnicswitchvportstatemaximum"></a><a id="NDISNICSWITCHVPORTSTATEMAXIMUM"></a><b>NdisNicSwitchVPortStateMaximum</b>
+### -field NdisNicSwitchVPortStateMaximum
 
 <dd>
 <p>The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.</p>
@@ -126,4 +126,4 @@ typedef enum _NDIS_NIC_SWITCH_VPORT_STATE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VPORT_STATE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VPORT_STATE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

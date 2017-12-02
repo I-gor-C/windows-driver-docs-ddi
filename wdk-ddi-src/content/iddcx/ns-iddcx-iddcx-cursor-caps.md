@@ -60,7 +60,7 @@ typedef struct IDDCX_CURSOR_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -68,7 +68,7 @@ typedef struct IDDCX_CURSOR_CAPS {
                  </p>
 </dd>
 
-### -field <b>ColorXorCursorSupport</b>
+### -field ColorXorCursorSupport
 
 <dd>
 <p>
@@ -77,7 +77,7 @@ typedef struct IDDCX_CURSOR_CAPS {
 <div> </div>
 </dd>
 
-### -field <b>AlphaCursorSupport</b>
+### -field AlphaCursorSupport
 
 <dd>
 <p>
@@ -85,7 +85,7 @@ typedef struct IDDCX_CURSOR_CAPS {
                  </p>
 </dd>
 
-### -field <b>MaxX</b>
+### -field MaxX
 
 <dd>
 <p>
@@ -93,7 +93,7 @@ typedef struct IDDCX_CURSOR_CAPS {
                  </p>
 </dd>
 
-### -field <b>MaxY</b>
+### -field MaxY
 
 <dd>
 <p>

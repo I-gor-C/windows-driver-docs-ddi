@@ -58,13 +58,13 @@ typedef struct _OIEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Size, in bytes, of the OIEXT structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Can contain the following bit flag:</p>
@@ -87,19 +87,19 @@ typedef struct _OIEXT {
 <p> </p>
 </dd>
 
-### -field <b>hInstCaller</b>
+### -field hInstCaller
 
 <dd>
 <p>Instance handle to a DLL containing string and icon resources belonging to the <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a>, <a href="..\compstui\ns-compstui--opttype.md">OPTTYPE</a>, and <a href="..\compstui\ns-compstui--optparam.md">OPTPARAM</a> structures associated with the OIEXT structure. If <b>NULL</b>, CPSUI obtains resources from the DLL identified by the <b>hInstCaller</b> member of a <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> structure.</p>
 </dd>
 
-### -field <b>pHelpFile</b>
+### -field pHelpFile
 
 <dd>
 <p>Pointer to a NULL-terminated string representing a path to a help file containing help information for the option. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero. If <b>NULL</b>, CPSUI uses the help file identified by the <b>pHelpFile</b> member of a <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> structure.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Reserved, must be initialized to zero.</p>

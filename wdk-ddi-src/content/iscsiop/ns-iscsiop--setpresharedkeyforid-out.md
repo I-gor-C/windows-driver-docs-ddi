@@ -54,7 +54,7 @@ typedef struct _SetPresharedKeyForId_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>On output, the status of the <b>SetPresharedKeyForId</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>. </p>

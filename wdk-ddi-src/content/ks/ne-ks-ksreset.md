@@ -56,11 +56,11 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSRESET_BEGIN"></a><a id="ksreset_begin"></a><b>KSRESET_BEGIN</b>
+### -field KSRESET_BEGIN
 
 <dd></dd>
 
-### -field <a id="KSRESET_END_"></a><a id="ksreset_end_"></a><b>KSRESET_END
+### -field KSRESET_END
 </b>
 
 <dd></dd>

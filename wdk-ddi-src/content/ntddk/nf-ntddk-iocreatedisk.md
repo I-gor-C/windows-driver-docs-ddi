@@ -55,13 +55,13 @@ NTSTATUS IoCreateDisk(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Specifies the <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> for the raw disk.</p>
 </dd>
 
-### -param <i>Disk</i> [in, optional]
+### -param Disk [in, optional]
 
 <dd>
 <p>Pointer to a <a href="..\ntdddisk\ns-ntdddisk--create-disk.md">CREATE_DISK</a> structure that specifies the type and parameters for the partition table. If <i>Disk</i> is <b>NULL</b>, the routine deletes the partition table on the disk.</p>

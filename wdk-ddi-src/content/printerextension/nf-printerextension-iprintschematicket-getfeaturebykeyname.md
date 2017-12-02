@@ -56,13 +56,13 @@ HRESULT GetFeatureByKeyName(
 ## -parameters
 <dl>
 
-### -param <i>bstrKeyName</i> [in]
+### -param bstrKeyName [in]
 
 <dd>
 <p>The key name of the feature.</p>
 </dd>
 
-### -param <i>ppFeature</i> [out, retval]
+### -param ppFeature [out, retval]
 
 <dd>
 <p>The returned feature.</p>

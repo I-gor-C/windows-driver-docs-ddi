@@ -7,7 +7,7 @@ old-location: netvista\rilcardappadded.htm
 old-project: netvista
 ms.assetid: f0488502-8c0c-4e2d-81d0-98b206c74d78
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCARDAPPADDED, RILCARDAPPADDED, *LPRILCARDAPPADDED
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _RILCARDAPPADDED {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwSlotIndex</b>
+### -field dwSlotIndex
 
 <dd></dd>
 
-### -field <b>rilUiccAppInfo</b>
+### -field rilUiccAppInfo
 
 <dd></dd>
 </dl>

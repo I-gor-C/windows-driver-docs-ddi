@@ -59,31 +59,31 @@ ULONG USBCAMD_DriverEntry(
 ## -parameters
 <dl>
 
-### -param <i>Context1</i> [in]
+### -param Context1 [in]
 
 <dd>
 <p>Pointer to the first argument that is passed to the camera minidriver's DriverEntry function. This is effectively a pointer to the driver object that is created by the system and passed to DriverEntry.</p>
 </dd>
 
-### -param <i>Context2</i> [in]
+### -param Context2 [in]
 
 <dd>
 <p>Pointer to the second argument that is passed to the camera minidriver's DriverEntry function. This is effectively a pointer to the registry path that describes the minidriver's registry key.</p>
 </dd>
 
-### -param <i>DeviceContextSize</i> [in]
+### -param DeviceContextSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, required for the minidriver's device-specific context.</p>
 </dd>
 
-### -param <i>FrameContextSize</i> [in]
+### -param FrameContextSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, required for the minidriver's frame-specific context structure. Use <b>NULL</b> if not needed.</p>
 </dd>
 
-### -param <i>ReceivePacket</i> [in]
+### -param ReceivePacket [in]
 
 <dd>
 <p>Pointer to the minidriver-defined <a href="stream.adapterreceivepacket">AdapterReceivePacket</a> function that handles adapter-based SRB requests.</p>

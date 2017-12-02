@@ -75,49 +75,49 @@ typedef struct _SCSI_PNP_REQUEST_BLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The size, in bytes, of the <b>SCSI_PNP_REQUEST_BLOCK</b> structure. </p>
 </dd>
 
-### -field <b>Function</b>
+### -field Function
 
 <dd>
 <p>The operation to perform. For the <b>SCSI_PNP_REQUEST_BLOCK</b> structure, this member is always set to SRB_FUNCTION_PNP. </p>
 </dd>
 
-### -field <b>SrbStatus</b>
+### -field SrbStatus
 
 <dd>
 <p>The status of the completed request. The miniport driver should set this value before notifying the Storport driver that the request has completed. A miniport driver notifies the Storport driver that the request has completed by calling the <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a> routine with a notification type of <b>RequestComplete</b>. For a list of possible status values, see <a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a>.  </p>
 </dd>
 
-### -field <b>PnPSubFunction</b>
+### -field PnPSubFunction
 
 <dd>
 <p>This member is not currently used. Miniport drivers ignore this member. </p>
 </dd>
 
-### -field <b>PathId</b>
+### -field PathId
 
 <dd>
 <p>The SCSI port or bus identifier for the request. This value is zero based. </p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>The target controller or device identifier on the bus. </p>
 </dd>
 
-### -field <b>Lun</b>
+### -field Lun
 
 <dd>
 <p>The logical unit number (LUN) of the device. </p>
 </dd>
 
-### -field <b>PnPAction</b>
+### -field PnPAction
 
 <dd>
 <p>The plug and play action to perform. This member can have one of the following values:</p>
@@ -129,7 +129,7 @@ typedef struct _SCSI_PNP_REQUEST_BLOCK {
 <tr>
 <td width="40%"><a id="StorStartDevice"></a><a id="storstartdevice"></a><a id="STORSTARTDEVICE"></a><dl>
 
-### -field <b>StorStartDevice</b>
+### -field StorStartDevice
 
 
 ### -field 0x00
@@ -143,7 +143,7 @@ typedef struct _SCSI_PNP_REQUEST_BLOCK {
 <tr>
 <td width="40%"><a id="StorRemoveDevice"></a><a id="storremovedevice"></a><a id="STORREMOVEDEVICE"></a><dl>
 
-### -field <b>StorRemoveDevice</b>
+### -field StorRemoveDevice
 
 
 ### -field 0x02
@@ -157,7 +157,7 @@ typedef struct _SCSI_PNP_REQUEST_BLOCK {
 <tr>
 <td width="40%"><a id="StorStopDevice"></a><a id="storstopdevice"></a><a id="STORSTOPDEVICE"></a><dl>
 
-### -field <b>StorStopDevice</b>
+### -field StorStopDevice
 
 
 ### -field 0x04
@@ -171,7 +171,7 @@ typedef struct _SCSI_PNP_REQUEST_BLOCK {
 <tr>
 <td width="40%"><a id="StorQueryCapabilities"></a><a id="storquerycapabilities"></a><a id="STORQUERYCAPABILITIES"></a><dl>
 
-### -field <b>StorQueryCapabilities</b>
+### -field StorQueryCapabilities
 
 
 ### -field 0x09
@@ -185,7 +185,7 @@ typedef struct _SCSI_PNP_REQUEST_BLOCK {
 <tr>
 <td width="40%"><a id="StorQueryResourceRequirements"></a><a id="storqueryresourcerequirements"></a><a id="STORQUERYRESOURCEREQUIREMENTS"></a><dl>
 
-### -field <b>StorQueryResourceRequirements</b>
+### -field StorQueryResourceRequirements
 
 
 ### -field 0x0B
@@ -199,7 +199,7 @@ typedef struct _SCSI_PNP_REQUEST_BLOCK {
 <tr>
 <td width="40%"><a id="StorFilterResourceRequirements"></a><a id="storfilterresourcerequirements"></a><a id="STORFILTERRESOURCEREQUIREMENTS"></a><dl>
 
-### -field <b>StorFilterResourceRequirements</b>
+### -field StorFilterResourceRequirements
 
 
 ### -field 0x0D
@@ -213,7 +213,7 @@ typedef struct _SCSI_PNP_REQUEST_BLOCK {
 <tr>
 <td width="40%"><a id="StorSupriseRemoval"></a><a id="storsupriseremoval"></a><a id="STORSUPRISEREMOVAL"></a><dl>
 
-### -field <b>StorSupriseRemoval</b>
+### -field StorSupriseRemoval
 
 
 ### -field 0x17
@@ -228,67 +228,67 @@ typedef struct _SCSI_PNP_REQUEST_BLOCK {
 <p> </p>
 </dd>
 
-### -field <b>SrbFlags</b>
+### -field SrbFlags
 
 <dd>
 <p>Miniport driver should ignore this member. </p>
 </dd>
 
-### -field <b>DataTransferLength</b>
+### -field DataTransferLength
 
 <dd>
 <p>Miniport driver should ignore this member. </p>
 </dd>
 
-### -field <b>TimeOutValue</b>
+### -field TimeOutValue
 
 <dd>
 <p>The interval, in seconds, that the request can execute before the Storport driver determines that the request has timed out. </p>
 </dd>
 
-### -field <b>DataBuffer</b>
+### -field DataBuffer
 
 <dd>
 <p>Miniport driver should ignore this member. </p>
 </dd>
 
-### -field <b>SenseInfoBuffer</b>
+### -field SenseInfoBuffer
 
 <dd>
 <p>Miniport driver should ignore this member. </p>
 </dd>
 
-### -field <b>NextSrb</b>
+### -field NextSrb
 
 <dd>
 <p>Miniport driver should ignore this member. </p>
 </dd>
 
-### -field <b>OriginalRequest</b>
+### -field OriginalRequest
 
 <dd>
 <p>Miniport driver should ignore this member. </p>
 </dd>
 
-### -field <b>SrbExtension</b>
+### -field SrbExtension
 
 <dd>
 <p>A pointer to the SRB extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the <a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a> structure. The Storport driver does not initialize the memory that this member points to. The HBA can directly access the data that the miniport driver writes into the SRB extension. A miniport driver can obtain the physical address of the SRB extension by calling the <a href="..\storport\nf-storport-storportgetphysicaladdress.md">StorPortGetPhysicalAddress</a> routine. </p>
 </dd>
 
-### -field <b>SrbPnPFlags</b>
+### -field SrbPnPFlags
 
 <dd>
 <p>The PNP flags. Currently, the only flag allowed is SRB_PNP_FLAGS_ADAPTER_REQUEST, which indicates that the PNP request is for the adapter, and not for one of the devices on the adapter. If this flag is set, the miniport driver should ignore the values in the <b>PathId</b>, <b>TargetId</b>, and <b>Lun</b>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Reserved4</b>
+### -field Reserved4
 
 <dd>
 <p>Reserved for system use.</p>

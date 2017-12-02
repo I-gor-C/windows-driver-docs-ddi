@@ -58,31 +58,31 @@ typedef struct _DXGKARG_CREATEPROCESS {
 ## -struct-fields
 <dl>
 
-### -field <b>hDxgkProcess</b>
+### -field hDxgkProcess
 
 <dd>
 <p>[in] The handle to the DirectX graphics kernel process.</p>
 </dd>
 
-### -field <b>hKmdProcess</b>
+### -field hKmdProcess
 
 <dd>
 <p>[out] The handle to the kernel mode driver process.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-createprocessflags.md">DXGK_CREATEPROCESSFLAGS</a> structure describing the operation.</p>
 </dd>
 
-### -field <b>NumPasid</b>
+### -field NumPasid
 
 <dd>
 <p>[in] The number of elements in the process address space identifier array located in the <b>pPasid</b>  member. </p>
 </dd>
 
-### -field <b>pPasid</b>
+### -field pPasid
 
 <dd>
 <p>[in] A pointer to an array of process address identifiers. There will be one for each physical GPUs.</p>

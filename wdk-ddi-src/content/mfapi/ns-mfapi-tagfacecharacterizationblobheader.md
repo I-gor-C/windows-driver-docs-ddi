@@ -55,13 +55,13 @@ typedef struct tagFaceCharacterizationBlobHeader {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of this header + all following <a href="stream.facecharacterization">FaceCharacterization</a> structures.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Number of <b>FaceCharacterization</b> structures in the blob. Must match the number of <a href="stream.facerectinfo">FaceRectInfo</a> structures in <a href="stream.facerectinfoblobheader">FaceRectInfoBlobHeader</a>.</p>

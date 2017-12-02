@@ -67,9 +67,9 @@ USHORT KeQueryActiveGroupCount(void);
 
 <p>Thus, the number of active processors in a multiprocessor system can increase between system startup and shutdown, but this number never decreases. Similarly, the number of active groups in the system can increase if a processor is dynamically added to an inactive group while the system is running. The number of active groups never decreases.</p>
 
-<p>In contrast, the value that is returned by <a href="..\ntddk\nf-ntddk-kequerymaximumgroupcount.md">KeQueryMaximumGroupCount</a> remains constant during runtime. This value is the maximum number of groups that the system can have.</p>
+<p>In contrast, the value that is returned by <a href="..\wdm\nf-wdm-kequerymaximumgroupcount.md">KeQueryMaximumGroupCount</a> remains constant during runtime. This value is the maximum number of groups that the system can have.</p>
 
-<p>Call the <a href="..\ntddk\nf-ntddk-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a> routine to determine the number of active logical processors in a particular group.</p>
+<p>Call the <a href="..\wdm\nf-wdm-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a> routine to determine the number of active logical processors in a particular group.</p>
 
 <p>Windows 7 is the first version of Windows to support processor groups. In Windows 7, only 64-bit versions of Windows support multiple groups; 32-bit versions of Windows support only one group. If a multiprocessor system is running a 64-bit version of Windows and contains no more than 64 logical processors, Windows assigns all processors to group 0. A multiprocessor system that is running a 32-bit version of Windows can contain no more than 32 processors.</p>
 
@@ -136,10 +136,10 @@ USHORT KeQueryActiveGroupCount(void);
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a>
+<a href="..\wdm\nf-wdm-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequerymaximumgroupcount.md">KeQueryMaximumGroupCount</a>
+<a href="..\wdm\nf-wdm-kequerymaximumgroupcount.md">KeQueryMaximumGroupCount</a>
 </dt>
 </dl>
 <p> </p>

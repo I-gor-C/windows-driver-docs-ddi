@@ -60,25 +60,25 @@ NTSTATUS AVStrMiniDeviceStart(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>Pointer to a <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> structure describing the device to be started.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> that was received.</p>
 </dd>
 
-### -param <i>TranslatedResourceList</i> [in, optional]
+### -param TranslatedResourceList [in, optional]
 
 <dd>
 <p>Pointer to a <a href="..\wdm\ns-wdm--cm-resource-list.md">CM_RESOURCE_LIST</a> structure that contains the translated resource list extracted from <i>Irp</i>. Equals <b>NULL</b> if <i>Device</i> has no assigned resources. Optional.</p>
 </dd>
 
-### -param <i>UntranslatedResourceList</i> [in, optional]
+### -param UntranslatedResourceList [in, optional]
 
 <dd>
 <p>Pointer to a <a href="..\wdm\ns-wdm--cm-resource-list.md">CM_RESOURCE_LIST</a> structure that contains the untranslated resource list extracted from <i>Irp</i>. Equals <b>NULL</b> if the <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> member of this parameter list has no assigned resources. Optional.</p>

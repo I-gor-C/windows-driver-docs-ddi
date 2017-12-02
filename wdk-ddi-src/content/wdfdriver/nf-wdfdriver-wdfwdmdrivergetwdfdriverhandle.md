@@ -7,7 +7,7 @@ old-location: wdf\wdfwdmdrivergetwdfdriverhandle.htm
 old-project: wdf
 ms.assetid: 2126d36c-42c1-4e29-bf82-9f5682482557
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfWdmDriverGetWdfDriverHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ WDFDRIVER WdfWdmDriverGetWdfDriverHandle(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>A pointer to a WDM driver object.</p>

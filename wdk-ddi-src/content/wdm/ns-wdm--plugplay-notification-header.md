@@ -57,19 +57,19 @@ typedef struct _PLUGPLAY_NOTIFICATION_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the data structure, currently set to 1. </p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size of the structure, in bytes. </p>
 </dd>
 
-### -field <b>Event</b>
+### -field Event
 
 <dd>
 <p>Specifies a GUID identifying the event. </p>

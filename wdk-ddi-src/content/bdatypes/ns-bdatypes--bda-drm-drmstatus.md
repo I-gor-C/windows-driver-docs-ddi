@@ -57,19 +57,19 @@ typedef struct _BDA_DRM_DRMSTATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>DRMuuid</b>
+### -field DRMuuid
 
 <dd></dd>
 
-### -field <b>ulDrmUuidListStringSize</b>
+### -field ulDrmUuidListStringSize
 
 <dd></dd>
 
-### -field <b>argbDrmUuidListString</b>
+### -field argbDrmUuidListString
 
 <dd></dd>
 </dl>

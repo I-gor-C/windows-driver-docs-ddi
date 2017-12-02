@@ -7,7 +7,7 @@ old-location: image\io_block.htm
 old-project: image
 ms.assetid: aa1ccffc-c742-415d-8b72-fef247dff03c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IO_BLOCK, IO_BLOCK, *PIO_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef struct _IO_BLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>uOffset</b>
+### -field uOffset
 
 <dd>
 <p>Used as the <b>Value</b> field of a USB Device Request.</p>
 </dd>
 
-### -field <b>uLength</b>
+### -field uLength
 
 <dd>
 <p>Length of the buffer to transfer.</p>
 </dd>
 
-### -field <b>pbyData</b>
+### -field pbyData
 
 <dd>
 <p>Pointer to a data buffer with a length of <b>uLength</b>.</p>
 </dd>
 
-### -field <b>uIndex</b>
+### -field uIndex
 
 <dd>
 <p>Used as the <b>Index</b> field of a USB Device Request.</p>

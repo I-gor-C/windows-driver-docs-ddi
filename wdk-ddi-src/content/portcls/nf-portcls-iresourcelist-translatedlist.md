@@ -54,7 +54,7 @@ PCM_RESOURCE_LIST TranslatedList(
 ## -parameters
 <dl>
 
-### -param <i>None</i> 
+### -param None 
 
 <dd></dd>
 </dl>

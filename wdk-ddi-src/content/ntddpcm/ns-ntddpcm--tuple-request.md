@@ -54,7 +54,7 @@ typedef struct _TUPLE_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>Socket</b>
+### -field Socket
 
 <dd>
 <p>Indicates the socket number. </p>

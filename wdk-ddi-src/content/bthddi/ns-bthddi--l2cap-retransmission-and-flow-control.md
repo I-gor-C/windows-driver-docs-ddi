@@ -59,37 +59,37 @@ typedef struct _L2CAP_RETRANSMISSION_AND_FLOW_CONTROL {
 ## -struct-fields
 <dl>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>Requested mode for the enhanced L2CAP channel.</p>
 </dd>
 
-### -field <b>TxWindowSize</b>
+### -field TxWindowSize
 
 <dd>
 <p>Size of the transmission window for enhanced retransmission mode. The value of member is valid only when used with enhanced retransmission mode, and is ignored in streaming mode. Valid values range from 1 to 63.</p>
 </dd>
 
-### -field <b>MaxTransmit</b>
+### -field MaxTransmit
 
 <dd>
 <p>Number of times a single I/S frame will be re-transmitted in case of an error. The value of this member is valid only for enhanced retransmission mode and is ignored in streaming mode. The minimum value is 1.</p>
 </dd>
 
-### -field <b>RetransmissionTO</b>
+### -field RetransmissionTO
 
 <dd>
 <p>Retransmission timeout value. Profile drivers should set this value to 0.</p>
 </dd>
 
-### -field <b>MonitorTO</b>
+### -field MonitorTO
 
 <dd>
 <p>Monitor timeout. Profile drivers should set this value to 0.</p>
 </dd>
 
-### -field <b>MaxPDUSize</b>
+### -field MaxPDUSize
 
 <dd>
 <p>Maximum PDU Size.</p>

@@ -57,13 +57,13 @@ __declspec USBD_GetInterfaceLength(
 ## -parameters
 <dl>
 
-### -param <i>InterfaceDescriptor</i> [in]
+### -param InterfaceDescriptor [in]
 
 <dd>
 <p>Pointer to a interface descriptor for which to obtain the length.</p>
 </dd>
 
-### -param <i>BufferEnd</i> [in]
+### -param BufferEnd [in]
 
 <dd>
 <p>Pointer to the position within a buffer at which to stop searching for the length of the interface and associated endpoints.</p>

@@ -15,6 +15,7 @@ Nfccx.h contain these programming interfaces:
 | [NFC_CX_LLCP_CONFIG_INIT function](nf-nfccx-nfc-cx-llcp-config-init.md) | The NFC_CX_LLCP_CONFIG_INIT function initializes the NFC_CX_LLCP_CONFIG structure. |
 | [NFC_CX_RF_DISCOVERY_CONFIG_INIT function](nf-nfccx-nfc-cx-rf-discovery-config-init.md) | The NFC_CX_RF_DISCOVERY_CONFIG_INIT function initializes the NFC_CX_RF_DISCOVERY_CONFIG structure. |
 | [NfcCxDeviceDeinitialize function](nf-nfccx-nfccxdevicedeinitialize.md) | Called by the client driver after a WDF device has been created during the AddDevice routine. |
+| [NfcCxDeviceInitConfig function](nf-nfccx-nfccxdeviceinitconfig.md) | Called by the client driver during its AddDevice routine to perform DeviceInit functions. During this process the following I/O callback functions are also exchanged |
 | [NfcCxDeviceInitialize function](nf-nfccx-nfccxdeviceinitialize.md) | Called by the client driver after a WDF device has been created during the AddDevice routine. |
 | [NfcCxHardwareEvent function](nf-nfccx-nfccxhardwareevent.md) | Called by the client driver when a hardware event occurs like D0Entry and D0Exit callbacks to start or stop the device. For drivers that require firmware download on initialization or boot-up, it is recommended to move this call to a separate work item. However, the client driver is responsible for the following |
 | [NfcCxNciReadNotification function](nf-nfccx-nfccxncireadnotification.md) | Called by the client driver when a read packet is available. |

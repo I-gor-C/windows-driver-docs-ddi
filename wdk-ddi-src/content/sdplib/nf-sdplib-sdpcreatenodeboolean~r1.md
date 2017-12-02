@@ -58,13 +58,13 @@ PSDP_NODE SdpCreateNodeBoolean(
 ## -parameters
 <dl>
 
-### -param <i>bVal</i> [in]
+### -param bVal [in]
 
 <dd>
 <p>The Boolean value that is used to initialize the SDP_NODE structure.</p>
 </dd>
 
-### -param <i>tag</i> [in]
+### -param tag [in]
 
 <dd>
 <p>A profile driver defined tag to associate with the node.</p>

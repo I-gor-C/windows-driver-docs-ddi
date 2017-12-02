@@ -55,7 +55,7 @@ typedef struct _HPMI_QUERY_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Set to HPMI_QUERY_CAPABILITIES_VERSION_1.  </p>

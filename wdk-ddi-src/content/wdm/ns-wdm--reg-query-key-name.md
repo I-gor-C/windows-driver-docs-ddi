@@ -62,43 +62,43 @@ typedef struct _REG_QUERY_KEY_NAME {
 ## -struct-fields
 <dl>
 
-### -field <b>Object</b>
+### -field Object
 
 <dd>
 <p>A pointer to the registry key object for the key whose metadata is about to be queried.</p>
 </dd>
 
-### -field <b>ObjectNameInfo</b>
+### -field ObjectNameInfo
 
 <dd>
 <p>A pointer to an <b>OBJECT_NAME_INFORMATION</b> structure (see wdm.h) that contains the full registry key name to be returned by the system, as a Unicode string.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Specifies the size, in bytes, of the <b>ObjectNameInfo</b> buffer.</p>
 </dd>
 
-### -field <b>ResultLength</b>
+### -field ResultLength
 
 <dd>
 <p>Pointer to a variable that receives (from the system) the amount of valid data, in bytes, in the <b>ObjectNameInfo</b> buffer.</p>
 </dd>
 
-### -field <b>CallContext</b>
+### -field CallContext
 
 <dd>
 <p>Optional driver-defined context information that the driver's <a href="kernel.registrycallback">RegistryCallback</a> routine can supply.  </p>
 </dd>
 
-### -field <b>ObjectContext</b>
+### -field ObjectContext
 
 <dd>
 <p>A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. It contains the key context for the key that is being queried.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved for future use. </p>

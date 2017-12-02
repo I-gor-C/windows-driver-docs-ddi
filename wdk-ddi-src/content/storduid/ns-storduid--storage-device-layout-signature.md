@@ -61,36 +61,36 @@ typedef struct _STORAGE_DEVICE_LAYOUT_SIGNATURE {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the DUID.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this STORAGE_DEVICE_LAYOUT_SIGNATURE structure.</p>
 </dd>
 
-### -field <b>Mbr</b>
+### -field Mbr
 
 <dd>
 <p>A Boolean value that indicates whether the partition table of the disk is formatted with a master boot record (MBR). If <b>TRUE</b>, the partition table of the disk is formatted with a master boot record (MBR). If <b>FALSE</b>, the disk has a GUID partition table (GPT).</p>
 </dd>
 
-### -field <b>DeviceSpecific</b>
+### -field DeviceSpecific
 
 <dd>
 <dl>
 
-### -field <b>MbrSignature</b>
+### -field MbrSignature
 
 <dd>
 <p>The signature value, which uniquely identifies the disk.</p>
 </dd>
 
-### -field <b>GptDiskId</b>
+### -field GptDiskId
 
 <dd>
 <p>The GUID that uniquely identifies the disk.</p>

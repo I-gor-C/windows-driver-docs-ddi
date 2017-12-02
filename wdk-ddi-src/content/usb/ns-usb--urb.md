@@ -78,133 +78,133 @@ typedef struct _URB {
 ## -struct-fields
 <dl>
 
-### -field <b>UrbHeader</b>
+### -field UrbHeader
 
 <dd>
 <p>Provides basic information about the request being sent to the host controller driver. For more information, see <a href="buses._urb_header">_URB_HEADER</a>.</p>
 </dd>
 
-### -field <b>UrbSelectInterface</b>
+### -field UrbSelectInterface
 
 <dd>
 <p>Defines the format of a select interface command for a USB device. For more information, see <a href="buses._urb_select_interface">_URB_SELECT_INTERFACE</a>.</p>
 </dd>
 
-### -field <b>UrbSelectConfiguration</b>
+### -field UrbSelectConfiguration
 
 <dd>
 <p>Defines the format of a select configuration command for a USB device. For more information, see <a href="buses._urb_select_configuration">_URB_SELECT_CONFIGURATION</a>.</p>
 </dd>
 
-### -field <b>UrbPipeRequest</b>
+### -field UrbPipeRequest
 
 <dd>
 <p>Defines the format for a command for a  pipe in a USB endpoint. For more information, see <a href="buses._urb_pipe_request">_URB_PIPE_REQUEST</a>.</p>
 </dd>
 
-### -field <b>UrbFrameLengthControl</b>
+### -field UrbFrameLengthControl
 
 <dd>
 <p>Deprecated in Windows 2000 and later operating systems and is not supported by Microsoft. Do not use. </p>
 </dd>
 
-### -field <b>UrbGetFrameLength</b>
+### -field UrbGetFrameLength
 
 <dd>
 <p>Deprecated in Windows 2000 and later operating systems and is not supported by Microsoft. Do not use. </p>
 </dd>
 
-### -field <b>UrbSetFrameLength</b>
+### -field UrbSetFrameLength
 
 <dd>
 <p>Deprecated in Windows 2000 and later operating systems and is not supported by Microsoft. Do not use. </p>
 </dd>
 
-### -field <b>UrbGetCurrentFrameNumber</b>
+### -field UrbGetCurrentFrameNumber
 
 <dd>
 <p>Defines the format for a command to get the current frame number on a USB bus. For more information, see <a href="buses._urb_get_current_frame_number">_URB_GET_CURRENT_FRAME_NUMBER</a>.</p>
 </dd>
 
-### -field <b>UrbControlTransfer</b>
+### -field UrbControlTransfer
 
 <dd>
 <p>Defines the format for a command to transmit or receive data on a control pipe. For more information, see <a href="buses._urb_control_transfer">_URB_CONTROL_TRANSFER</a>.</p>
 </dd>
 
-### -field <b>UrbControlTransferEx</b>
+### -field UrbControlTransferEx
 
 <dd>
 <p>Defines the format for a command to transmit or receive data on a control pipe. For more information, see <a href="buses._urb_control_transfer_ex">_URB_CONTROL_TRANSFER_EX</a>.</p>
 </dd>
 
-### -field <b>UrbControlTransferEx</b>
+### -field UrbControlTransferEx
 
 <dd>
 <p>Defines the format for a command to transmit or receive data on a control pipe. </p>
 </dd>
 
-### -field <b>UrbBulkOrInterruptTransfer</b>
+### -field UrbBulkOrInterruptTransfer
 
 <dd>
 <p>Defines the format for a command to transmit or receive data on a bulk pipe, or to receive data from an interrupt pipe. For more information, see <a href="buses._urb_bulk_or_interrupt_transfer">_URB_BULK_OR_INTERRUPT_TRANSFER</a>.</p>
 </dd>
 
-### -field <b>UrbIsochronousTransfer</b>
+### -field UrbIsochronousTransfer
 
 <dd>
 <p>Defines the format of an isochronous transfer to a USB device. For more information, see <a href="buses._urb_isoch_transfer">_URB_ISOCH_TRANSFER</a>.</p>
 </dd>
 
-### -field <b>UrbControlDescriptorRequest</b>
+### -field UrbControlDescriptorRequest
 
 <dd>
 <p>Defines the format for a command to retrieve or set descriptor(s) on a USB device. For more information, see <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a>.</p>
 </dd>
 
-### -field <b>UrbControlGetStatusRequest</b>
+### -field UrbControlGetStatusRequest
 
 <dd>
 <p>Defines the format for a command to get status from a device, interface, or endpoint. For more information, see <a href="buses._urb_control_get_status_request">_URB_CONTROL_GET_STATUS_REQUEST</a>.</p>
 </dd>
 
-### -field <b>UrbControlFeatureRequest</b>
+### -field UrbControlFeatureRequest
 
 <dd>
 <p>Defines the format for a command to set or clear USB-defined features on an device, interface, or endpoint. For more information, see <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a>.</p>
 </dd>
 
-### -field <b>UrbControlVendorClassRequest</b>
+### -field UrbControlVendorClassRequest
 
 <dd>
 <p>Defines the format for a command to send or receive a vendor or class-specific request on a device, interface, endpoint, or other device-defined target. For more information, see <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a>.</p>
 </dd>
 
-### -field <b>UrbControlGetInterfaceRequest</b>
+### -field UrbControlGetInterfaceRequest
 
 <dd>
 <p>Defines the format for a command to get the current alternate interface setting for a selected interface. For more information, see <a href="buses._urb_control_get_interface_request">_URB_CONTROL_GET_INTERFACE_REQUEST</a>.</p>
 </dd>
 
-### -field <b>UrbControlGetConfigurationRequest</b>
+### -field UrbControlGetConfigurationRequest
 
 <dd>
 <p>Defines the format for a command to get the current configuration for a device. For more information, see <a href="buses._urb_control_get_configuration_request">_URB_CONTROL_GET_CONFIGURATION_REQUEST</a>.</p>
 </dd>
 
-### -field <b>UrbOSFeatureDescriptorRequest</b>
+### -field UrbOSFeatureDescriptorRequest
 
 <dd>
 <p>Defines the format for a command to request a Microsoft OS Descriptor. For more information, see <a href="buses._urb_os_feature_descriptor_request">_URB_OS_FEATURE_DESCRIPTOR_REQUEST</a>.</p>
 </dd>
 
-### -field <b>UrbOpenStaticStreams</b>
+### -field UrbOpenStaticStreams
 
 <dd>
 <p>Defines the format for a command to open streams in a bulk endpoint of a USB 3.0 device. For more information, see <a href="buses._urb_open_basic_streams">_URB_OPEN_STATIC_STREAMS</a> and <a href="buses.how_to_open_streams_in_a_usb_endpoint">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.</p>
 </dd>
 
-### -field <b>UrbGetIsochPipeTransferPathDelays</b>
+### -field UrbGetIsochPipeTransferPathDelays
 
 <dd>
 <p>Defines the format for a command to retrieve delays associated with isochronous transfer programming in the host controller and transfer completion so that the client driver can ensure that the device gets the isochronous packets in time. 

@@ -56,13 +56,13 @@ ULONG_PTR KeIpiGenericCall(
 ## -parameters
 <dl>
 
-### -param <i>BroadcastFunction</i> [in]
+### -param BroadcastFunction [in]
 
 <dd>
 <p>Pointer to an <a href="kernel.ipigenericcall">IpiGenericCall</a> routine. This routine is run on every processor simultaneously.</p>
 </dd>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Specifies the value to pass to <i>IpiGenericCall</i> when it is called. </p>

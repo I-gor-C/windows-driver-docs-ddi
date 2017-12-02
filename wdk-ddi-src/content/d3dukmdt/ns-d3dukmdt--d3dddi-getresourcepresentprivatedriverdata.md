@@ -57,14 +57,14 @@ typedef struct _D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A DirectX graphics kernel resource handle. 
 </p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in, out] The size of the <b>pPrivateDriverData</b> buffer in bytes. When zero or when there is insufficient space, the size of the required buffer is returned back to the caller along with a <b>STATUS_INVALID_BUFFER_SIZE</b><b>HRESULT</b> value from the calling method. </p>
@@ -72,7 +72,7 @@ typedef struct _D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA {
 <div> </div>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in, out] The buffer where the private data will be written to. 

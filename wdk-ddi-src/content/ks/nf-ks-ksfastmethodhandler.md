@@ -61,49 +61,49 @@ BOOLEAN KsFastMethodHandler(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Specifies the file object on which the request was made.</p>
 </dd>
 
-### -param <i>Method</i> [in]
+### -param Method [in]
 
 <dd>
 <p>Specifies the original method parameter. This will always be on FILE_LONG_ALIGNMENT, but may not be on FILE_QUAD_ALIGNMENT.</p>
 </dd>
 
-### -param <i>MethodLength</i> [in]
+### -param MethodLength [in]
 
 <dd>
 <p>Specifies the length indicated by the caller of the method parameter.</p>
 </dd>
 
-### -param <i>Data</i> [in, out]
+### -param Data [in, out]
 
 <dd>
 <p>Specifies the original unaligned data parameter.</p>
 </dd>
 
-### -param <i>DataLength</i> [in]
+### -param DataLength [in]
 
 <dd>
 <p>Specifies the length indicated by the caller of the data parameter.</p>
 </dd>
 
-### -param <i>IoStatus</i> [out]
+### -param IoStatus [out]
 
 <dd>
 <p>Specifies an aligned structure that is used to return error status and information.</p>
 </dd>
 
-### -param <i>MethodSetsCount</i> [in]
+### -param MethodSetsCount [in]
 
 <dd>
 <p>Indicates the number of method set structures being passed.</p>
 </dd>
 
-### -param <i>MethodSet</i> [in]
+### -param MethodSet [in]
 
 <dd>
 <p>Specifies the pointer to the list of method set information.</p>

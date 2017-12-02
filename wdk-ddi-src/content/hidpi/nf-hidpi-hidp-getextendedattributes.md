@@ -58,31 +58,31 @@ NTSTATUS __stdcall HidP_GetExtendedAttributes(
 ## -parameters
 <dl>
 
-### -param <i>ReportType</i> [in]
+### -param ReportType [in]
 
 <dd>
 <p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report associated with the HID control specified by <i>DataIndex</i>.</p>
 </dd>
 
-### -param <i>DataIndex</i> [in]
+### -param DataIndex [in]
 
 <dd>
 <p>Specifies the <a href="https://msdn.microsoft.com/84577544-515a-4fdc-86e5-518182c6c461">data index</a> of the HID control.</p>
 </dd>
 
-### -param <i>PreparsedData</i> [in]
+### -param PreparsedData [in]
 
 <dd>
-<p>Specifies the <a href="NULL">preparsed data</a> for the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> that contains the specified control.</p>
+<p>Specifies the <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a> for the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> that contains the specified control.</p>
 </dd>
 
-### -param <i>Attributes</i> [out]
+### -param Attributes [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that the routine uses to return the extended attributes of the control specified by <i>DataIndex</i>.</p>
 </dd>
 
-### -param <i>LengthAttributes</i> [in, out]
+### -param LengthAttributes [in, out]
 
 <dd>
 <p>Specifies the size, in bytes, of the <i>Attributes</i> buffer (which must be greater than or equal to sizeof(HIDP_EXTENDED_ATTRIBUTES).</p>
@@ -105,7 +105,7 @@ NTSTATUS __stdcall HidP_GetExtendedAttributes(
 
 <p>The routine returns as many bytes of the extended attribute information as the <i>Attribute</i> buffer can hold. If the buffer is too small, the routine truncates the information it returns. To determine the number of unknown tokens in the variable length array, a caller can first use the <i>Attributes</i> buffer to return the value of the <b>NumGlobalUnknowns</b> member of the extended attributes information.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

@@ -55,13 +55,13 @@ typedef enum D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN"></a><a id="d3d10_1_ddiarg_standard_multisample_pattern"></a><b>D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN</b>
+### -field D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN
 
 <dd>
 <p>The quality level value for standard multisample pattern. </p>
 </dd>
 
-### -field <a id="D3D10_1_DDIARG_CENTER_MULTISAMPLE_PATTERN"></a><a id="d3d10_1_ddiarg_center_multisample_pattern"></a><b>D3D10_1_DDIARG_CENTER_MULTISAMPLE_PATTERN</b>
+### -field D3D10_1_DDIARG_CENTER_MULTISAMPLE_PATTERN
 
 <dd>
 <p>The same number of samples as D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN, except all the samples overlap the center of the pixel. </p>

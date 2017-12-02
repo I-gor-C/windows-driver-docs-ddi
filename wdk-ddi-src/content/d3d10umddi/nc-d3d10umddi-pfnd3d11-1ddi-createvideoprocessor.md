@@ -60,7 +60,7 @@ HRESULT APIENTRY* CreateVideoProcessor(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).
@@ -68,19 +68,19 @@ HRESULT APIENTRY* CreateVideoProcessor(
 </p>
 </dd>
 
-### -param <i>pCreateData</i> [in]
+### -param pCreateData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-createvideoprocessor.md">D3D11_1DDIARG_CREATEVIDEOPROCESSOR</a> structure. This structure specifies the attributes of the video processor object to be created.</p>
 </dd>
 
-### -param <i>hVideoProcessor</i> [in]
+### -param hVideoProcessor [in]
 
 <dd>
 <p>A handle to the driver's private data for the video processor object. For more information, see the Remarks section.</p>
 </dd>
 
-### -param <i>hRTVideoProcessor</i> [in]
+### -param hRTVideoProcessor [in]
 
 <dd>
 <p>A handle to the video processor object that the driver should use when it calls back into the Direct3D runtime.</p>

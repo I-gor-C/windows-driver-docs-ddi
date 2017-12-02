@@ -7,7 +7,7 @@ old-location: netvista\wwan_modem_config_state.htm
 old-project: netvista
 ms.assetid: A22EA7A7-2C28-4117-A2B8-A7D3D4C9F11B
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef enum _WWAN_MODEM_CONFIG_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanModemConfigStateUnknown"></a><a id="wwanmodemconfigstateunknown"></a><a id="WWANMODEMCONFIGSTATEUNKNOWN"></a><b>WwanModemConfigStateUnknown</b>
+### -field WwanModemConfigStateUnknown
 
 <dd>
 <p>The modem configuration state is currently not available.</p>
 </dd>
 
-### -field <a id="WwanModemConfigStatePending"></a><a id="wwanmodemconfigstatepending"></a><a id="WWANMODEMCONFIGSTATEPENDING"></a><b>WwanModemConfigStatePending</b>
+### -field WwanModemConfigStatePending
 
 <dd>
 <p>The modem is currently selecting the best suitable configuration file that matches the UICC info.</p>
 </dd>
 
-### -field <a id="WwanModemConfigStateActivated"></a><a id="wwanmodemconfigstateactivated"></a><a id="WWANMODEMCONFIGSTATEACTIVATED"></a><b>WwanModemConfigStateActivated</b>
+### -field WwanModemConfigStateActivated
 
 <dd>
 <p>The modem has completed its configuration and modem subcomponents are aware of the new configuration.</p>
 </dd>
 
-### -field <a id="WwanModemConfigStateMax"></a><a id="wwanmodemconfigstatemax"></a><a id="WWANMODEMCONFIGSTATEMAX"></a><b>WwanModemConfigStateMax</b>
+### -field WwanModemConfigStateMax
 
 <dd>
 <p>The maximum value for this enumeration. This value might change in future versions of the NDIS
@@ -117,4 +117,4 @@ typedef enum _WWAN_MODEM_CONFIG_STATE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_MODEM_CONFIG_STATE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_MODEM_CONFIG_STATE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

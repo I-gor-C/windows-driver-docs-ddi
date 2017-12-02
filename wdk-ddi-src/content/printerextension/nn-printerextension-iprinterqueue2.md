@@ -84,7 +84,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p><b>IPrinterQueue2</b> also helps to make it possible to perform device maintenance and job management from a UWP  device app or from a printer extension. For more information, see <a href="NULL">Device Maintenance</a> and <a href="NULL">Job Management</a>.</p>
+<p><b>IPrinterQueue2</b> also helps to make it possible to perform device maintenance and job management from a UWP  device app or from a printer extension. For more information, see <a href="https://msdn.microsoft.com/310E92A9-F751-4346-9B2D-0578A136AD20">Device Maintenance</a> and <a href="https://msdn.microsoft.com/D1236DD2-D4AD-4615-9036-7EC75D6CADCE">Job Management</a>.</p>
 
 ## -requirements
 <table>
@@ -119,13 +119,13 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="NULL">Device Maintenance</a>
+<a href="https://msdn.microsoft.com/310E92A9-F751-4346-9B2D-0578A136AD20">Device Maintenance</a>
 </dt>
 <dt>
 <a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
 </dt>
 <dt>
-<a href="NULL">Job Management</a>
+<a href="https://msdn.microsoft.com/D1236DD2-D4AD-4615-9036-7EC75D6CADCE">Job Management</a>
 </dt>
 </dl>
 <p> </p>

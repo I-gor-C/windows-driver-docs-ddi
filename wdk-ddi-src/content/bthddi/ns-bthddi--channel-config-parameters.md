@@ -60,7 +60,7 @@ typedef struct _CHANNEL_CONFIG_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A flag or combination of flags that specifies which members of this structure contain data. Valid
@@ -111,33 +111,33 @@ typedef struct _CHANNEL_CONFIG_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>Mtu</b>
+### -field Mtu
 
 <dd>
 <p>The message transfer units for the specified channel direction.</p>
 </dd>
 
-### -field <b>FlushTO</b>
+### -field FlushTO
 
 <dd>
 <p>The flush timeout for the specified channel direction.</p>
 </dd>
 
-### -field <b>NumExtraOptions</b>
+### -field NumExtraOptions
 
 <dd>
 <p>The number of items specified in the array that is specified in the 
      <b>ExtraOptions</b> member.</p>
 </dd>
 
-### -field <b>ExtraOptions</b>
+### -field ExtraOptions
 
 <dd>
 <p>The number of items specified in the array that is specified in the 
      <b>ExtraOptions</b> member.</p>
 </dd>
 
-### -field <b>Flow</b>
+### -field Flow
 
 <dd>
 <p>The QoS settings for the specified channel direction.</p>

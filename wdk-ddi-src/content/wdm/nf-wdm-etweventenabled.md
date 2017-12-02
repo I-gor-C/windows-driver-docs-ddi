@@ -56,14 +56,14 @@ BOOLEAN EtwEventEnabled(
 ## -parameters
 <dl>
 
-### -param <i>RegHandle</i> [in]
+### -param RegHandle [in]
 
 <dd>
 <p>A pointer to the event provider registration handle, which is returned by the 
       <b>EtwRegister</b> function if the event provider registration is successful.</p>
 </dd>
 
-### -param <i>EventDescriptor</i> [in]
+### -param EventDescriptor [in]
 
 <dd>
 <p>A pointer to a constant EVENT_DESCRIPTOR. </p>

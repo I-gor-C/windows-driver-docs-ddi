@@ -58,13 +58,13 @@ NTSTATUS IoReportTargetDeviceChangeAsynchronous(
 ## -parameters
 <dl>
 
-### -param <i>PhysicalDeviceObject</i> [in]
+### -param PhysicalDeviceObject [in]
 
 <dd>
 <p>Pointer to the PDO of the device being reported. </p>
 </dd>
 
-### -param <i>NotificationStructure</i> [in]
+### -param NotificationStructure [in]
 
 <dd>
 <p>Pointer to a caller-supplied <a href="..\wdm\ns-wdm--target-device-custom-notification.md">TARGET_DEVICE_CUSTOM_NOTIFICATION</a> structure describing the custom event. The PnP manager sends this structure to drivers that registered for notification of the event.</p>
@@ -72,7 +72,7 @@ NTSTATUS IoReportTargetDeviceChangeAsynchronous(
 <p>The PnP manager fills in the <i>NotificationStructure</i>.<b>FileObject</b> field when it sends notifications to registrants.</p>
 </dd>
 
-### -param <i>Callback</i> [in, optional]
+### -param Callback [in, optional]
 
 <dd>
 <p>Optionally points to a caller-supplied routine that the PnP manager calls after it finishes notifying drivers that registered for this custom event.</p>
@@ -95,7 +95,7 @@ VOID
 <p>The PnP manager calls device-change-complete callback routines at IRQL = PASSIVE_LEVEL.</p>
 </dd>
 
-### -param <i>Context</i> [in, out]
+### -param Context [in, out]
 
 <dd>
 <p>Optionally points to a caller-supplied context structure that the PnP manager passes to the <i>Callback</i> routine. The caller must allocate this structure from nonpaged memory. </p>

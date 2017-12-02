@@ -58,25 +58,25 @@ VP_STATUS VideoPortSetRegistryParameters(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>ValueName</i> [in]
+### -param ValueName [in]
 
 <dd>
 <p>Pointer to a buffer containing a null-terminated Unicode string that names the value entry for which data is being written in the registry.</p>
 </dd>
 
-### -param <i>ValueData</i> [in]
+### -param ValueData [in]
 
 <dd>
 <p>Pointer to a buffer containing the values to be written for the <i>ValueName</i> entry.</p>
 </dd>
 
-### -param <i>ValueLength</i> 
+### -param ValueLength 
 
 <dd>
 <p>Specifies the size, in bytes, of the data to be written to the registry.</p>

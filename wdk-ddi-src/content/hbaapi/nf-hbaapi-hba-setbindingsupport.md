@@ -56,19 +56,19 @@ HBA_STATUS HBA_API HBA_SetBindingSupport(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port referenced by <i>HbaPortWWN </i>is located. </p>
 </dd>
 
-### -param <i>HbaPortWWN</i> [in]
+### -param HbaPortWWN [in]
 
 <dd>
 <p>Contains a 64-bit worldwide name (WWN) that uniquely identifies the port for which the binding capabilities specified by <i>Flags </i>are enabled. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Contains a bitwise OR of a set of flags that indicate the capabilities to enable on the port referenced by <i>HbaPortWWN</i>. For a description of the flags, see the corresponding values associated with the <a href="storage.hba_bind_type">HBA_BIND_TYPE</a> WMI property qualifier.</p>

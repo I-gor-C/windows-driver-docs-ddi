@@ -59,37 +59,37 @@ typedef struct D3D12DDICB_ALLOCATE_0022 {
 ## -struct-fields
 <dl>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>A pointer to a buffer that contains optional private driver data.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>Size of the private driver data.</p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>The handle of a resource. </p>
 </dd>
 
-### -field <b>hKMResource</b>
+### -field hKMResource
 
 <dd>
 <p>A handle of a kernel resource. </p>
 </dd>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>The number of allocations.</p>
 </dd>
 
-### -field <b>pAllocationInfo</b>
+### -field pAllocationInfo
 
 <dd>
 <p>Allocation as a <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi-allocation-info-0022.md">D3D12DDI_ALLOCATION_INFO_0022</a> structure. </p>

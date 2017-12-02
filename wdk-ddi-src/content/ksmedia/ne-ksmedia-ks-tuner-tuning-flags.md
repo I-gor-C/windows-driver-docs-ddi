@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_TUNER_TUNING_EXACT"></a><a id="ks_tuner_tuning_exact"></a><b>KS_TUNER_TUNING_EXACT</b>
+### -field KS_TUNER_TUNING_EXACT
 
 <dd>
 <p>The tuner should tune directly to the specified frequency and bypass any fine tuning logic.</p>
 </dd>
 
-### -field <a id="KS_TUNER_TUNING_FINE"></a><a id="ks_tuner_tuning_fine"></a><b>KS_TUNER_TUNING_FINE</b>
+### -field KS_TUNER_TUNING_FINE
 
 <dd>
 <p>The tuning operation should perform a comprehensive search for the best tuning. This flag is used only if the strategy is KS_TUNER_STRATEGY_DRIVER_TUNES.</p>
 </dd>
 
-### -field <a id="KS_TUNER_TUNING_COARSE"></a><a id="ks_tuner_tuning_coarse"></a><b>KS_TUNER_TUNING_COARSE</b>
+### -field KS_TUNER_TUNING_COARSE
 
 <dd>
 <p>The tuning operation should perform a fast search and attempt only to determine if a valid signal is present. This flag is used only if the strategy is KS_TUNER_STRATEGY_DRIVER_TUNES.</p>

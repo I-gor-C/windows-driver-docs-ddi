@@ -63,25 +63,25 @@ VOID APIENTRY* CopyTileMappings(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hDestTiledResource</i> 
+### -param hDestTiledResource 
 
 <dd>
 <p>A handle to the destination tiled resource.</p>
 </dd>
 
-### -param <i>pDestRegionStartCoord</i> [in]
+### -param pDestRegionStartCoord [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1-3ddi-tiled-resource-coordinate.md">D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE</a> structure that describes the starting coordinates of the destination tiled resource.</p>
 </dd>
 
-### -param <i>hSourceTiledResource</i> 
+### -param hSourceTiledResource 
 
 <dd>
 <p>A handle to the source tiled resource.
@@ -89,19 +89,19 @@ VOID APIENTRY* CopyTileMappings(
 </p>
 </dd>
 
-### -param <i>pSourceRegionStartCoord</i> [in]
+### -param pSourceRegionStartCoord [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1-3ddi-tiled-resource-coordinate.md">D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE</a> structure that describes the starting coordinates of the source tiled resource.</p>
 </dd>
 
-### -param <i>pTileRegionSize</i> [in]
+### -param pTileRegionSize [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1-3ddi-tile-region-size.md">D3DWDDM1_3DDI_TILE_REGION_SIZE</a> structure that describes the size of the tiled region.</p>
 </dd>
 
-### -param <i>Flags</i> 
+### -param Flags 
 
 <dd>
 <p>A combination of <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm1-3ddi-tile-mapping-flag.md">D3DWDDM1_3DDI_TILE_MAPPING_FLAG</a> values that are combined by using a bitwise <b>OR</b> operation.</p>

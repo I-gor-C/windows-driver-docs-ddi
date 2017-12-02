@@ -57,25 +57,25 @@ typedef struct _GPIO_READ_PINS_MASK_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>BankId</b>
+### -field BankId
 
 <dd>
 <p>The identifier for this bank of GPIO pins. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.</p>
 </dd>
 
-### -field <b>PinValues</b>
+### -field PinValues
 
 <dd>
 <p>A 64-bit variable to which the GPIO controller driver stores the values that it reads from the GPIO pins in the bank. If N is the number of GPIO pins in this bank, the pins are numbered 0 to N–1. The value from pin number 0 is saved in bit 0 (the least significant bit) of this variable, the value from pin number 1 is saved in bit 1 of this variable, and so on.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A set of flags to control the GPIO pin read operation. If the <b>WriteConfiguredPins</b> flag bit is set, the GPIO controller driver can read from a GPIO pin that is configured for write operations.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>

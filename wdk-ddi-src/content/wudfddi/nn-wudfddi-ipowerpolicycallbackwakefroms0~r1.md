@@ -7,7 +7,7 @@ old-location: wdf\ipowerpolicycallbackwakefroms0.htm
 old-project: wdf
 ms.assetid: d1b29916-9800-4276-860c-f7d143deb962
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

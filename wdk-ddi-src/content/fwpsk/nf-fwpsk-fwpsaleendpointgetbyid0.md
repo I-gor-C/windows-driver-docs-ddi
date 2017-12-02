@@ -7,7 +7,7 @@ old-location: netvista\fwpsaleendpointgetbyid0.htm
 old-project: netvista
 ms.assetid: fa9a5078-d254-4b4a-bbfb-256491beff5f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsAleEndpointGetById0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ NTSTATUS NTAPI FwpsAleEndpointGetById0(
 ## -parameters
 <dl>
 
-### -param <i>engineHandle</i> [in]
+### -param engineHandle [in]
 
 <dd>
 <p>A handle for an open session with the filter engine. This handle is obtained when a session is
@@ -66,13 +66,13 @@ NTSTATUS NTAPI FwpsAleEndpointGetById0(
      <a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>.</p>
 </dd>
 
-### -param <i>endpointId</i> [in]
+### -param endpointId [in]
 
 <dd>
 <p>The unique endpoint identifier.</p>
 </dd>
 
-### -param <i>properties</i> [out]
+### -param properties [out]
 
 <dd>
 <p>A pointer to an 
@@ -160,4 +160,4 @@ NTSTATUS NTAPI FwpsAleEndpointGetById0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAleEndpointGetById0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAleEndpointGetById0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

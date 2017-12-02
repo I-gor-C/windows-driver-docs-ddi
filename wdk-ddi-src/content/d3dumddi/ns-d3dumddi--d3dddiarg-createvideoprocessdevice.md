@@ -58,31 +58,31 @@ typedef struct _D3DDDIARG_CREATEVIDEOPROCESSDEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>pVideoProcGuid</b>
+### -field pVideoProcGuid
 
 <dd>
 <p>[in] A pointer to the GUID that represents a DirectX VA video processing device to create. The Microsoft Direct3D runtime can call the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function to query for the video processing GUIDs that the driver supports. </p>
 </dd>
 
-### -field <b>VideoDesc</b>
+### -field VideoDesc
 
 <dd>
 <p>[in] The <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videodesc.md">DXVADDI_VIDEODESC</a> structure for the video stream that the video processing device should process.</p>
 </dd>
 
-### -field <b>RenderTargetFormat</b>
+### -field RenderTargetFormat
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the render target for the video processing device.</p>
 </dd>
 
-### -field <b>MaxSubStreams</b>
+### -field MaxSubStreams
 
 <dd>
 <p>[in] The maximum number of video substreams that can be sent to the video processing device. If this value is set to zero, the device never receives any video substreams.</p>
 </dd>
 
-### -field <b>hVideoProcess</b>
+### -field hVideoProcess
 
 <dd>
 <p>[in/out] A handle to the video processing device. The user-mode display driver must set this handle to a value that the Microsoft Direct3D runtime can use to identify the video processing device in subsequent calls.</p>

@@ -56,19 +56,19 @@ NTSTATUS RtlUInt8Mult(
 ## -parameters
 <dl>
 
-### -param <i>u8Multiplicand</i> [in]
+### -param u8Multiplicand [in]
 
 <dd>
 <p>The value to be multiplied by <i>u8Multiplier</i>.</p>
 </dd>
 
-### -param <i>u8Multiplier</i> [in]
+### -param u8Multiplier [in]
 
 <dd>
 <p>The value by which to multiply <i>u8Multiplicand</i>.</p>
 </dd>
 
-### -param <i>pu8Result</i> [out]
+### -param pu8Result [out]
 
 <dd>
 <p>A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

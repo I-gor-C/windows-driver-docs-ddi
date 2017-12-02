@@ -7,7 +7,7 @@ old-location: ifsk\fltretrieveiopriorityinfo.htm
 old-project: ifsk
 ms.assetid: b764e55e-e58b-4a4f-a32f-84e3cfd5f8c4
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltRetrieveIoPriorityInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ NTSTATUS FltRetrieveIoPriorityInfo(
 ## -parameters
 <dl>
 
-### -param <i>Data</i> [in, optional]
+### -param Data [in, optional]
 
 <dd>
 <p>
@@ -65,19 +65,19 @@ NTSTATUS FltRetrieveIoPriorityInfo(
      </p>
 </dd>
 
-### -param <i>FileObject</i> [in, optional]
+### -param FileObject [in, optional]
 
 <dd>
 <p>An optional pointer to the file object associated with the I/O operation.  This parameter can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Thread</i> [in, optional]
+### -param Thread [in, optional]
 
 <dd>
 <p>An optional pointer to the thread in which to retrieve priority information from.  This parameter can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>PriorityInfo</i> [in, out]
+### -param PriorityInfo [in, out]
 
 <dd>
 <p>A pointer to an <a href="..\ntifs\ns-ntifs--io-priority-info.md">IO_PRIORITY_INFO</a> structure used to receive the priority information from the given thread.  The IO_PRIORITY_INFO structure must be initialized by an appropriate routine before it can be used by this routine. See the following Remarks section for more information.</p>
@@ -201,9 +201,9 @@ NTSTATUS FltRetrieveIoPriorityInfo(
 <a href="..\ntifs\nf-ntifs-ioinitializepriorityinfo.md">IoInitializePriorityInfo</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltRetrieveIoPriorityInfo routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltRetrieveIoPriorityInfo routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -57,19 +57,19 @@ typedef struct _MAPTABLE {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes, of the MAPTABLE structure, including the <b>Trans</b> array.</p>
 </dd>
 
-### -field <b>dwGlyphNum</b>
+### -field dwGlyphNum
 
 <dd>
 <p>Specifies the number of elements in the <b>Trans</b> array.</p>
 </dd>
 
-### -field <b>Trans</b>
+### -field Trans
 
 <dd>
 <p>Is an array of <a href="..\prntfont\ns-prntfont--transdata.md">TRANSDATA</a> structures.</p>

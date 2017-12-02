@@ -68,56 +68,56 @@ typedef enum _UFS_FLAGS_DESCRIPTOR {
 ## -enum-fields
 <dl>
 
-### -field <a id="UFS_Reserved1"></a><a id="ufs_reserved1"></a><a id="UFS_RESERVED1"></a><b>UFS_Reserved1</b>
+### -field UFS_Reserved1
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <a id="UFS_fDeviceInit"></a><a id="ufs_fdeviceinit"></a><a id="UFS_FDEVICEINIT"></a><b>UFS_fDeviceInit</b>
+### -field UFS_fDeviceInit
 
 <dd>
 <p>Indicates the device initialization is in progress.</p>
 </dd>
 
-### -field <a id="UFS_fPermanentWPEn"></a><a id="ufs_fpermanentwpen"></a><a id="UFS_FPERMANENTWPEN"></a><b>UFS_fPermanentWPEn</b>
+### -field UFS_fPermanentWPEn
 
 <dd>
 <p>Indicates permanent write protection is enabled.</p>
 </dd>
 
-### -field <a id="UFS_fPowerOnWPEn"></a><a id="ufs_fpoweronwpen"></a><a id="UFS_FPOWERONWPEN"></a><b>UFS_fPowerOnWPEn</b>
+### -field UFS_fPowerOnWPEn
 
 <dd>
 <p>Indicates power on write protection is enabled.</p>
 </dd>
 
-### -field <a id="UFS_fBackgroundOpsEn"></a><a id="ufs_fbackgroundopsen"></a><a id="UFS_FBACKGROUNDOPSEN"></a><b>UFS_fBackgroundOpsEn</b>
+### -field UFS_fBackgroundOpsEn
 
 <dd>
 <p>Indicates the device is permitted to run
 background operations.</p>
 </dd>
 
-### -field <a id="UFS_fDeviceLifeSpanModeEn"></a><a id="ufs_fdevicelifespanmodeen"></a><a id="UFS_FDEVICELIFESPANMODEEN"></a><b>UFS_fDeviceLifeSpanModeEn</b>
+### -field UFS_fDeviceLifeSpanModeEn
 
 <dd>
 <p>Indicates Device Life Span Mode is enabled.</p>
 </dd>
 
-### -field <a id="UFS_fPurgeEnable"></a><a id="ufs_fpurgeenable"></a><a id="UFS_FPURGEENABLE"></a><b>UFS_fPurgeEnable</b>
+### -field UFS_fPurgeEnable
 
 <dd>
 <p>Indicates Purge Operation is enabled.</p>
 </dd>
 
-### -field <a id="UFS_Reserved2"></a><a id="ufs_reserved2"></a><a id="UFS_RESERVED2"></a><b>UFS_Reserved2</b>
+### -field UFS_Reserved2
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <a id="UFS_fPhyResourceRemoval"></a><a id="ufs_fphyresourceremoval"></a><a id="UFS_FPHYRESOURCEREMOVAL"></a><b>UFS_fPhyResourceRemoval</b>
+### -field UFS_fPhyResourceRemoval
 
 <dd>
 <p>Indicates
@@ -125,20 +125,20 @@ that the dynamic capacity operation occurs on the device's EndPointReset or
 a hardware reset. The host cannot reset this flag.</p>
 </dd>
 
-### -field <a id="UFS_fBusyRTC"></a><a id="ufs_fbusyrtc"></a><a id="UFS_FBUSYRTC"></a><b>UFS_fBusyRTC</b>
+### -field UFS_fBusyRTC
 
 <dd>
 <p>Indicates the device is executing internal
 operation related to Real Time Clock.</p>
 </dd>
 
-### -field <a id="UFS_Reserved3"></a><a id="ufs_reserved3"></a><a id="UFS_RESERVED3"></a><b>UFS_Reserved3</b>
+### -field UFS_Reserved3
 
 <dd>
 <p>Reserved for the Unified Memory Extension standard..</p>
 </dd>
 
-### -field <a id="UFS_fPermanentlyDisableFwUpdate"></a><a id="ufs_fpermanentlydisablefwupdate"></a><a id="UFS_FPERMANENTLYDISABLEFWUPDATE"></a><b>UFS_fPermanentlyDisableFwUpdate</b>
+### -field UFS_fPermanentlyDisableFwUpdate
 
 <dd>
 <p>Indicates the UFS device will permanently
@@ -146,13 +146,13 @@ disallow future firmware updates to
 the Universal Flash Storage (UFS) device.</p>
 </dd>
 
-### -field <a id="UFS_Reserved4"></a><a id="ufs_reserved4"></a><a id="UFS_RESERVED4"></a><b>UFS_Reserved4</b>
+### -field UFS_Reserved4
 
 <dd>
 <p>Reserved for the Unified Memory Extension standard.</p>
 </dd>
 
-### -field <a id="UFS_Reserved5"></a><a id="ufs_reserved5"></a><a id="UFS_RESERVED5"></a><b>UFS_Reserved5</b>
+### -field UFS_Reserved5
 
 <dd>
 <p>Reserved for the Unified Memory Extension standard.</p>

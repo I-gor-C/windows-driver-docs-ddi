@@ -54,7 +54,7 @@ typedef struct D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM {
 ## -struct-fields
 <dl>
 
-### -field <b>Desc</b>
+### -field Desc
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-processor-content-desc.md">D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC</a> structure that describes a video stream for a video processor.</p>

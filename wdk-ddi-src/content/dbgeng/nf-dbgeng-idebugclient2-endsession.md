@@ -7,7 +7,7 @@ old-location: debugger\endsession.htm
 old-project: debugger
 ms.assetid: 521a0e4a-99c6-4ad4-886d-3fff9855e1fd
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugClient2, EndSession, IDebugClient2::EndSession
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT EndSession(
 ## -parameters
 <dl>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies how to end the session.  <i>Flags</i> can be one of the following values:</p>
@@ -110,7 +110,7 @@ HRESULT EndSession(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

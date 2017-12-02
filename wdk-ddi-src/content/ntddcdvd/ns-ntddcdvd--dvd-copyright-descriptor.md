@@ -56,19 +56,19 @@ typedef struct _DVD_COPYRIGHT_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>CopyrightProtectionType</b>
+### -field CopyrightProtectionType
 
 <dd>
 <p>Indicates, when set to 1, the presence of data specific to a copyright protection system. A value of zero indicates there is no such data. All other values are reserved.</p>
 </dd>
 
-### -field <b>RegionManagementInformation</b>
+### -field RegionManagementInformation
 
 <dd>
 <p>Indicates in which regions of the world the disc can be played. Each bit represents one of eight regions. If a bit is set, the disc cannot be played in the corresponding region. If a bit is not set, the disc can be played in the corresponding region. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. </p>

@@ -58,7 +58,7 @@ VOID EvtSerCxTransmitCancel(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A WDFDEVICE handle to the framework device object that represents the serial controller.</p>
@@ -75,7 +75,7 @@ VOID EvtSerCxTransmitCancel(
 
 <p>The function type for this callback is declared in Sercx.h, as follows.</p>
 
-<p>To define an <i>EvtSerCxTransmitCancel</i> callback function that is named <code>MyEvtSerCxTransmitCancel</code>, you must first provide a function declaration that <a href="NULL">Static Driver Verifier</a> (SDV) and other verification tools require, as follows.</p>
+<p>To define an <i>EvtSerCxTransmitCancel</i> callback function that is named <code>MyEvtSerCxTransmitCancel</code>, you must first provide a function declaration that <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV) and other verification tools require, as follows.</p>
 
 <p>Then, implement your callback function as follows.</p>
 

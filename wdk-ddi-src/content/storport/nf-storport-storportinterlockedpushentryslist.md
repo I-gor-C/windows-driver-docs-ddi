@@ -58,25 +58,25 @@ ULONG StorPortInterlockedPushEntrySList(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>SListHead</i> [in, out]
+### -param SListHead [in, out]
 
 <dd>
 <p>A pointer to an <b>STOR_SLIST_HEADER</b> structure that represents the head of a singly linked list. This structure is considered opaque and is for use by the Storport driver only.</p>
 </dd>
 
-### -param <i>SListEntry</i> [in, out]
+### -param SListEntry [in, out]
 
 <dd>
 <p>A pointer to an <b>STOR_SLIST_ENTRY</b> structure that represents the item to insert into the singly linked list.</p>
 </dd>
 
-### -param <i>Result</i> [out]
+### -param Result [out]
 
 <dd>
 <p>A pointer to a list entry pointer. The value returned is a pointer to  the previous item that existed  at the front of the list. This pervious item remains in the list behind the item new item added from <i>SListEntry</i>. If the list is empty, then <b>NULL</b> is returned in value pointed to by <i>Result</i>.</p>

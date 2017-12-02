@@ -60,7 +60,7 @@ typedef PFN_USBFN_SET_DEVICE_STATE USBFN_SET_DEVICE_STATE;
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>    A pointer to a driver-defined context.</p>

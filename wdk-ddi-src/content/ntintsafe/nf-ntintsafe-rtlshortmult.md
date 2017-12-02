@@ -56,19 +56,19 @@ NTSTATUS RtlShortMult(
 ## -parameters
 <dl>
 
-### -param <i>sMultiplicand</i> [in]
+### -param sMultiplicand [in]
 
 <dd>
 <p>The value to be multiplied by <i>sMultiplier</i>.</p>
 </dd>
 
-### -param <i>sMultiplier</i> [in]
+### -param sMultiplier [in]
 
 <dd>
 <p>The value by which to multiply <i>sMultiplicand</i>.</p>
 </dd>
 
-### -param <i>psResult</i> [out]
+### -param psResult [out]
 
 <dd>
 <p>A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

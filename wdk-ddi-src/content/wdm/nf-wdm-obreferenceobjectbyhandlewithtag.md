@@ -61,37 +61,37 @@ NTSTATUS ObReferenceObjectByHandleWithTag(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Specifies an open handle for an object. </p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies the types of access to the object that the caller requests. This parameter is a bitmask of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>. The interpretation of this field depends on the object type. Do not use any generic access rights. </p>
 </dd>
 
-### -param <i>ObjectType</i> [in, optional]
+### -param ObjectType [in, optional]
 
 <dd>
 <p>A pointer to an opaque structure that specifies the object type. This parameter points to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff558675">OBJECT_TYPE</a> structure. Set <i>ObjectType</i> to <b>NULL</b> or to one of the following pointer values, which are declared in the Wdm.h header file: <b>*ExEventObjectType</b>, <b>*ExSemaphoreObjectType</b>, <b>*IoFileObjectType</b>, <b>*PsProcessType</b>, <b>*PsThreadType</b>, <b>*SeTokenObjectType</b>, <b>*TmEnlistmentObjectType</b>, <b>*TmResourceManagerObjectType</b>, <b>*TmTransactionManagerObjectType</b>, or <b>*TmTransactionObjectType</b>. If <i>ObjectType</i> is not <b>NULL</b>, the routine verifies that the supplied object type matches the object type of the object that the <i>Handle</i> parameter specifies. </p>
 </dd>
 
-### -param <i>AccessMode</i> [in]
+### -param AccessMode [in]
 
 <dd>
 <p>Specifies the access mode to use for the access check. It must be either <b>UserMode</b> or <b>KernelMode</b>. Drivers should always specify <b>UserMode</b> for handles they receive from user address space.</p>
 </dd>
 
-### -param <i>Tag</i> [in]
+### -param Tag [in]
 
 <dd>
 <p>Specifies a four-byte, custom tag value. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>Object</i> [out]
+### -param Object [out]
 
 <dd>
 <p>A pointer to a variable into which the routine writes a pointer to the object. The following table lists the <i>Object</i> pointer types that are designated by the possible <i>ObjectType</i> parameter values.</p>
@@ -185,7 +185,7 @@ NTSTATUS ObReferenceObjectByHandleWithTag(
 <p>The structures that the pointer types reference are opaque, and drivers cannot access the structure members. Because the structures are opaque, PEPROCESS is equivalent to PKPROCESS, and PETHREAD is equivalent to PKTHREAD. </p>
 </dd>
 
-### -param <i>HandleInformation</i> [out, optional]
+### -param HandleInformation [out, optional]
 
 <dd>
 <p>Drivers set this parameter to <b>NULL</b>. </p>

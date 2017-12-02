@@ -58,13 +58,13 @@ typedef struct _D3DHAL_DP2SETSTREAMSOURCEUM {
 ## -struct-fields
 <dl>
 
-### -field <b>dwStream</b>
+### -field dwStream
 
 <dd>
 <p>Specifies the stream being bound. For DirectX 8.0 it is always zero.</p>
 </dd>
 
-### -field <b>dwStride</b>
+### -field dwStride
 
 <dd>
 <p>Specifies the vertex size in bytes.</p>

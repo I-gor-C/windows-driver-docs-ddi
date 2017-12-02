@@ -59,13 +59,13 @@ NTSTATUS PsRegisterSiloMonitor(
 ## -parameters
 <dl>
 
-### -param <i>Registration</i> [in]
+### -param Registration [in]
 
 <dd>
 <p>Specifies the server silo monitor to be registered, of type <a href="..\ntddk\ns-ntddk--silo-monitor-registration.md">SILO_MONITOR_REGISTRATION</a>. </p>
 </dd>
 
-### -param <i>ReturnedMonitor</i> [out]
+### -param ReturnedMonitor [out]
 
 <dd>
 <p>Receives a pointer to the monitor. This pointer is used to make further monitor-related calls.</p>

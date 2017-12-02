@@ -7,7 +7,7 @@ old-location: netvista\rilgeoscope_2.htm
 old-project: netvista
 ms.assetid: 821f05f8-cc2c-4567-a1a0-aaa7b535d568
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef enum _RILGEOSCOPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_GEOSCOPE_CELL_IMMEDIATE"></a><a id="ril_geoscope_cell_immediate"></a><b>RIL_GEOSCOPE_CELL_IMMEDIATE</b>
+### -field RIL_GEOSCOPE_CELL_IMMEDIATE
 
 <dd></dd>
 
-### -field <a id="RIL_GEOSCOPE_LOCATIONAREA"></a><a id="ril_geoscope_locationarea"></a><b>RIL_GEOSCOPE_LOCATIONAREA</b>
+### -field RIL_GEOSCOPE_LOCATIONAREA
 
 <dd></dd>
 
-### -field <a id="RIL_GEOSCOPE_PLMN"></a><a id="ril_geoscope_plmn"></a><b>RIL_GEOSCOPE_PLMN</b>
+### -field RIL_GEOSCOPE_PLMN
 
 <dd></dd>
 
-### -field <a id="RIL_GEOSCOPE_CELL"></a><a id="ril_geoscope_cell"></a><b>RIL_GEOSCOPE_CELL</b>
+### -field RIL_GEOSCOPE_CELL
 
 <dd></dd>
 
-### -field <a id="RIL_GEOSCOPE_MAX"></a><a id="ril_geoscope_max"></a><b>RIL_GEOSCOPE_MAX</b>
+### -field RIL_GEOSCOPE_MAX
 
 <dd></dd>
 </dl>

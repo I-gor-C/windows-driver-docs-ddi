@@ -56,19 +56,19 @@ typedef struct _D3DDDI_OPENALLOCATIONINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the allocation. The user-mode display driver should use this handle to reference the allocation in the command buffer.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in] A pointer to a block of private data, which was passed to the display miniport driver when the resource was created. </p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the block of private data that is pointed to by <b>pPrivateDriverData</b>.</p>

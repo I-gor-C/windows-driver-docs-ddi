@@ -55,7 +55,7 @@ VOID SERCX_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
 <p>A pointer to the <b>SERCX_CONFIG</b> structure that is to be initialized.</p>

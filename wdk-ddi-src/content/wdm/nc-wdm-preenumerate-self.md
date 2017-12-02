@@ -58,7 +58,7 @@ VOID ReenumerateSelf(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\wdm\ns-wdm--reenumerate-self-interface-standard.md">REENUMERATE_SELF_INTERFACE_STANDARD</a> structure.</p>

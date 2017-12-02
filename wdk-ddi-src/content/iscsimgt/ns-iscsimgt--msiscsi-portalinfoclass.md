@@ -55,13 +55,13 @@ typedef struct _MSiSCSI_PortalInfoClass {
 ## -struct-fields
 <dl>
 
-### -field <b>PortalInfoCount</b>
+### -field PortalInfoCount
 
 <dd>
 <p>The number of portals that the initiator discovered and for which portal information is available.</p>
 </dd>
 
-### -field <b>PortalInformation</b>
+### -field PortalInformation
 
 <dd>
 <p>A variable length array of <a href="..\iscsimgt\ns-iscsimgt--iscsi-portalinfo.md">ISCSI_PortalInfo</a> structures. The number of elements in the array is specified by the <b>PortalInfoCount</b> field.</p>

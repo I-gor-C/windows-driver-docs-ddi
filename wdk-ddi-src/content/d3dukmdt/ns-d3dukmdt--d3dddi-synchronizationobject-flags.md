@@ -77,7 +77,7 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Shared</b>
+### -field Shared
 
 <dd>
 <p>A UINT value that specifies whether the synchronization object is shared.</p>
@@ -85,7 +85,7 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS {
 <p>For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>NtSecuritySharing</b>
+### -field NtSecuritySharing
 
 <dd>
 <p>A UINT value that specifies whether the synchronization object is shared with an NT handle, meaning that it  does not have a global <b>D3DKMT_HANDLE</b> kernel-mode handle to the resource.</p>
@@ -96,7 +96,7 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>CrossAdapter</b>
+### -field CrossAdapter
 
 <dd>
 <p>A UINT value that specifies whether the synchronization object is a shared cross-adapter object on a <a href="display.using_cross-adapter_resources_in_a_hybrid_system#definition_of_a_hybrid_system#definition_of_a_hybrid_system">hybrid system</a>.</p>
@@ -104,7 +104,7 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS {
 <p>For more information, see <a href="https://msdn.microsoft.com/ECBB0AA7-50C2-41C8-9DC6-6EEFC5CEEB15">Using cross-adapter resources in a hybrid system</a>.</p>
 </dd>
 
-### -field <b>TopOfPipeline</b>
+### -field TopOfPipeline
 
 <dd>
 <table>
@@ -142,7 +142,7 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS {
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>NoSignal</b>
+### -field NoSignal
 
 <dd>
 <table>
@@ -180,7 +180,7 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS {
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>NoWait</b>
+### -field NoWait
 
 <dd>
 <table>
@@ -221,7 +221,7 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS {
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>NoSignalMaxValueOnTdr</b>
+### -field NoSignalMaxValueOnTdr
 
 <dd>
 <table>
@@ -258,32 +258,32 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS {
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS_RESERVED0</b>
+### -field D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS_RESERVED0
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] A member in the union that is contained in <b>D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS</b> that can hold one 32-bit value that identifies attributes of a synchronization object.</p>

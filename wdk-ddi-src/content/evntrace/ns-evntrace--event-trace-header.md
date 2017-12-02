@@ -87,56 +87,56 @@ typedef struct _EVENT_TRACE_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer that is allocated to hold event tracing information. The value that is specified must include both the size of the <b>EVENT_TRACE_HEADER</b> structure and the size of any driver-specific data. (<b>EVENT_TRACE_HEADER</b> is overlaid on a <a href="..\wmistr\ns-wmistr--wnode-header.md">WNODE_HEADER</a> structure, but the <b>Size</b> member of <b>EVENT_TRACE_HEADER</b> and the <b>BufferSize</b> member of <b>WNODE_HEADER</b> do not specify the same size. Do not use the <b>BufferSize</b> member of <b>WNODE_HEADER</b> to set the <b>Size</b> member.) </p>
 </dd>
 
-### -field <b>FieldTypeFlags</b>
+### -field FieldTypeFlags
 
 <dd>
 <p>Flags to indicate which fields in the <b>EVENT_TRACE_HEADER</b> structure are valid.</p>
 </dd>
 
-### -field <b>HeaderType</b>
+### -field HeaderType
 
 <dd>
 <p>Reserved for internal use.</p>
 </dd>
 
-### -field <b>MarkerFlags</b>
+### -field MarkerFlags
 
 <dd>
 <p>Reserved for internal use.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Drivers can use this member to store version information. This information is not interpreted by the event logger.</p>
 </dd>
 
-### -field <b>Class</b>
+### -field Class
 
 <dd>
 <p>
        Event class information.</p>
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Trace event type. This can be one of the predefined EVENT_TRACE_TYPE_<i>XXX</i> values contained in Evntrace.h or can be a driver-defined value. Callers are free to define private event types with values greater than the reserved values in Evntrace.h.</p>
 </dd>
 
-### -field <b>Level</b>
+### -field Level
 
 <dd>
 <p>Trace instrumentation level. A driver-defined value meant to represent the degree of detail of the trace instrumentation. Drivers are free to give this value meaning. This value should be 0 by default. More information about how consumers can request different levels of trace information will be provided in a future version of the documentation.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version of trace record. Version information that can be used by the driver to track different event formats.</p>
@@ -144,61 +144,61 @@ typedef struct _EVENT_TRACE_HEADER {
 </dl>
 </dd>
 
-### -field <b>ThreadId</b>
+### -field ThreadId
 
 <dd>
 <p>Thread identifier.</p>
 </dd>
 
-### -field <b>ProcessId</b>
+### -field ProcessId
 
 <dd>
 <p>Process identifier.</p>
 </dd>
 
-### -field <b>TimeStamp</b>
+### -field TimeStamp
 
 <dd>
 <p>The time at which the driver event occurred. This time value is expressed in absolute system time format. Absolute system time is the number of 100-nanosecond intervals since the start of the year 1601 in the Gregorian calendar. If the WNODE_FLAG_USE_TIMESTAMP is set in <b>Flags,</b> the system logger will leave the value of <b>TimeStamp</b> unchanged. Otherwise, the system logger will set the value of <b>TimeStamp</b> at the time it receives the event. A driver can call <b>KeQuerySystemTime</b> to set the value of <b>TimeStamp</b>. </p>
 </dd>
 
-### -field <b>Guid</b>
+### -field Guid
 
 <dd>
 <p>The GUID that identifies the data block for the event. </p>
 </dd>
 
-### -field <b>GuidPtr</b>
+### -field GuidPtr
 
 <dd>
 <p>If the WNODE_FLAG_USE_GUID_PTR flag bit is set in <b>Flags</b>, <b>GuidPtr</b> points to the GUID that identifies the data block for the event.</p>
 </dd>
 
-### -field <b>KernelTime</b>
+### -field KernelTime
 
 <dd>
 <p>Reserved for internal use.</p>
 </dd>
 
-### -field <b>UserTime</b>
+### -field UserTime
 
 <dd>
 <p>Reserved for internal use.</p>
 </dd>
 
-### -field <b>ProcessorTime</b>
+### -field ProcessorTime
 
 <dd>
 <p>Reserved for internal use.</p>
 </dd>
 
-### -field <b>ClientContext</b>
+### -field ClientContext
 
 <dd>
 <p>Reserved for internal use.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Provides information about the contents of this structure. For information about <b>EVENT_TRACE_HEADER</b><b> Flags</b> values, see the <b>Flags</b> description in <a href="..\wmistr\ns-wmistr--wnode-header.md">WNODE_HEADER</a>.</p>

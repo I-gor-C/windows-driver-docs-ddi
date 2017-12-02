@@ -7,7 +7,7 @@ old-location: netvista\protocoltcpoffloadevent.htm
 old-project: netvista
 ms.assetid: b64c0f9e-aa3d-43c5-bdf5-c40cae3929e3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: BINARY_DATA, BINARY_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ VOID ProtocolTcpOffloadEvent(
 ## -parameters
 <dl>
 
-### -param <i>OffloadContext</i> [in]
+### -param OffloadContext [in]
 
 <dd>
 <p>A pointer to the protocol or intermediate driver's 
@@ -75,7 +75,7 @@ VOID ProtocolTcpOffloadEvent(
      offloading the connection.</p>
 </dd>
 
-### -param <i>EventType</i> [in]
+### -param EventType [in]
 
 <dd>
 <p>The event being indicated as one of the following TCP_OFFLOAD_EVENT_TYPE values:
@@ -83,28 +83,28 @@ VOID ProtocolTcpOffloadEvent(
 <p></p>
 <dl>
 
-### -param <a id="TcpIndicateDisconnect"></a><a id="tcpindicatedisconnect"></a><a id="TCPINDICATEDISCONNECT"></a><b>TcpIndicateDisconnect</b>
+### -param TcpIndicateDisconnect
 
 <dd>
 <p>Indicates that the remote host initiated a graceful disconnect by sending a FIN segment on the
        connection.</p>
 </dd>
 
-### -param <a id="TcpIndicateRetrieve"></a><a id="tcpindicateretrieve"></a><a id="TCPINDICATERETRIEVE"></a><b>TcpIndicateRetrieve</b>
+### -param TcpIndicateRetrieve
 
 <dd>
 <p>Indicates that the offload target is requesting the host stack to terminate the offload of a TCP
        connection.</p>
 </dd>
 
-### -param <a id="TcpIndicateAbort"></a><a id="tcpindicateabort"></a><a id="TCPINDICATEABORT"></a><b>TcpIndicateAbort</b>
+### -param TcpIndicateAbort
 
 <dd>
 <p>Indicates that the remote host initiated an abortive disconnect by sending an acceptable RST
        segment on the connection.</p>
 </dd>
 
-### -param <a id="TcpIndicateSendBacklogChange"></a><a id="tcpindicatesendbacklogchange"></a><a id="TCPINDICATESENDBACKLOGCHANGE"></a><b>TcpIndicateSendBacklogChange</b>
+### -param TcpIndicateSendBacklogChange
 
 <dd>
 <p>Indicates a change in the preferred send backlog size.</p>
@@ -112,7 +112,7 @@ VOID ProtocolTcpOffloadEvent(
 </dl>
 </dd>
 
-### -param <i>EventSpecificInformation</i> [in]
+### -param EventSpecificInformation [in]
 
 <dd>
 <p>Specifies additional information about the event being indicated as follows:
@@ -120,13 +120,13 @@ VOID ProtocolTcpOffloadEvent(
 <p></p>
 <dl>
 
-### -param <a id="TcpIndicateDisconnect"></a><a id="tcpindicatedisconnect"></a><a id="TCPINDICATEDISCONNECT"></a><b>TcpIndicateDisconnect</b>
+### -param TcpIndicateDisconnect
 
 <dd>
 <p>Not meaningful.</p>
 </dd>
 
-### -param <a id="TcpIndicateRetrieve"></a><a id="tcpindicateretrieve"></a><a id="TCPINDICATERETRIEVE"></a><b>TcpIndicateRetrieve</b>
+### -param TcpIndicateRetrieve
 
 <dd>
 <p>Indicates the reason for the upload request as a TCP_UPLOAD_REASON value. For more information,
@@ -135,13 +135,13 @@ VOID ProtocolTcpOffloadEvent(
        NdisTcpOffloadEventHandler</a>.</p>
 </dd>
 
-### -param <a id="TcpIndicateAbort"></a><a id="tcpindicateabort"></a><a id="TCPINDICATEABORT"></a><b>TcpIndicateAbort</b>
+### -param TcpIndicateAbort
 
 <dd>
 <p>Not meaningful.</p>
 </dd>
 
-### -param <a id="TcpIndicateSendBacklogChange"></a><a id="tcpindicatesendbacklogchange"></a><a id="TCPINDICATESENDBACKLOGCHANGE"></a><b>TcpIndicateSendBacklogChange</b>
+### -param TcpIndicateSendBacklogChange
 
 <dd>
 <p>Specifies the optimum number of send data bytes that the host stack should have outstanding at
@@ -196,4 +196,4 @@ VOID ProtocolTcpOffloadEvent(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_EVENT_HANDLER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_EVENT_HANDLER callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

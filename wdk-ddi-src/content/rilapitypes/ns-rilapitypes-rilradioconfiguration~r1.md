@@ -7,7 +7,7 @@ old-location: netvista\rilradioconfiguration_2.htm
 old-project: netvista
 ms.assetid: bdd43d7d-a526-4a3a-81fc-561ae99d467e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILRADIOCONFIGURATION,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILRADIOCONFIGURATION {
 ## -struct-fields
 <dl>
 
-### -field <b>dwConfigId</b>
+### -field dwConfigId
 
 <dd></dd>
 
-### -field <b>dwRadioType</b>
+### -field dwRadioType
 
 <dd></dd>
 
-### -field <b>dwSystemTypes</b>
+### -field dwSystemTypes
 
 <dd></dd>
 </dl>

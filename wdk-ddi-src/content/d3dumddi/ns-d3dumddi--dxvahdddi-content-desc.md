@@ -60,13 +60,13 @@ typedef struct _DXVAHDDDI_CONTENT_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>InputFrameFormat</b>
+### -field InputFrameFormat
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-frame-format.md">DXVAHDDDI_FRAME_FORMAT</a>-typed value that indicates the frame format of the input video stream. </p>
 </dd>
 
-### -field <b>InputFrameRate</b>
+### -field InputFrameRate
 
 <dd>
 <p>
@@ -74,19 +74,19 @@ typedef struct _DXVAHDDDI_CONTENT_DESC {
      </p>
 </dd>
 
-### -field <b>InputWidth</b>
+### -field InputWidth
 
 <dd>
 <p>[in] The width, in pixels, of the input video stream. </p>
 </dd>
 
-### -field <b>InputHeight</b>
+### -field InputHeight
 
 <dd>
 <p>[in] The height, in pixels, of the input video stream. </p>
 </dd>
 
-### -field <b>OutputFrameRate</b>
+### -field OutputFrameRate
 
 <dd>
 <p>
@@ -94,13 +94,13 @@ typedef struct _DXVAHDDDI_CONTENT_DESC {
      </p>
 </dd>
 
-### -field <b>OutputWidth</b>
+### -field OutputWidth
 
 <dd>
 <p>[in] The width, in pixels, of the output video stream. </p>
 </dd>
 
-### -field <b>OutputHeight</b>
+### -field OutputHeight
 
 <dd>
 <p>[in] The height, in pixels, of the output video stream. </p>

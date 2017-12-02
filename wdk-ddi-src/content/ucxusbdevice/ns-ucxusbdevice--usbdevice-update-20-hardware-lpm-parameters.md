@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains parameters for a request to update USB 2.0 link power management (LPM). UCX passes this structure in the  <a href="buses.evt_ucx_usbdevice_update">EVT_UCX_USBDEVICE_UPDATE</a> callback function.</p>
+<p>Contains parameters for a request to update USB 2.0 link power management (LPM). UCX passes this structure in the  <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-update.md">EVT_UCX_USBDEVICE_UPDATE</a> callback function.</p>
 
 
 ## -syntax
@@ -61,43 +61,43 @@ typedef struct _USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>HardwareLpmEnable</b>
+### -field HardwareLpmEnable
 
 <dd>
 <p>If set, indicates are request to enable hardware LPM.</p>
 </dd>
 
-### -field <b>RemoteWakeEnable</b>
+### -field RemoteWakeEnable
 
 <dd>
 <p>If set, indicates are request to enable remote wake signal.</p>
 </dd>
 
-### -field <b>HostInitiatedResumeDurationMode</b>
+### -field HostInitiatedResumeDurationMode
 
 <dd>
 <p>The requested resume period.</p>
 </dd>
 
-### -field <b>BestEffortServiceLatency</b>
+### -field BestEffortServiceLatency
 
 <dd>
 <p>The requested best effort service latency.</p>
 </dd>
 
-### -field <b>BestEffortServiceLatencyDeep</b>
+### -field BestEffortServiceLatencyDeep
 
 <dd>
 <p>The requested best effort service latency deep.</p>
 </dd>
 
-### -field <b>L1Timeout</b>
+### -field L1Timeout
 
 <dd>
 <p>The requested L1 timeout.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Do not use.</p>
@@ -124,16 +124,16 @@ typedef struct _USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._roothub_20port_info">ROOTHUB_20PORT_INFO</a>
+<a href="..\ucxroothub\ns-ucxroothub--roothub-20port-info.md">ROOTHUB_20PORT_INFO</a>
 </dt>
 <dt>
-<a href="buses._usbdevice_update">USBDEVICE_UPDATE</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update.md">USBDEVICE_UPDATE</a>
 </dt>
 <dt>
-<a href="buses._usbdevice_update_flags">USBDEVICE_UPDATE_FLAGS</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update-flags.md">USBDEVICE_UPDATE_FLAGS</a>
 </dt>
 <dt>
-<a href="buses._usbdevice_update_failure_flags">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update-failure-flags.md">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
 </dt>
 </dl>
 <p> </p>

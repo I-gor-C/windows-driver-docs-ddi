@@ -56,19 +56,19 @@ HRESULT KsPrepareIoOperation(
 ## -parameters
 <dl>
 
-### -param <i>Sample</i> [in, out]
+### -param Sample [in, out]
 
 <dd>
 <p>Pointer to the <b>IMediaSample</b> interface for the associated media sample.</p>
 </dd>
 
-### -param <i>StreamHeader</i> [in, out]
+### -param StreamHeader [in, out]
 
 <dd>
 <p>Pointer to a buffer that contains the extended header information.</p>
 </dd>
 
-### -param <i>IoOperation</i> [in]
+### -param IoOperation [in]
 
 <dd>
 <p>Value that specifies the type of I/O operation. This value can be one of the following values from the KSIOOPERATION enumerated type:</p>

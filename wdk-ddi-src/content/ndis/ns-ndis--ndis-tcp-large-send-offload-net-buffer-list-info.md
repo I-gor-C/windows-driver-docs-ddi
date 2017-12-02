@@ -7,7 +7,7 @@ old-location: netvista\ndis_tcp_large_send_offload_net_buffer_list_info.htm
 old-project: netvista
 ms.assetid: 48827a51-d364-43f6-864b-b63395168429
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO, NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO, *PNDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -86,7 +86,7 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Transmit</b>
+### -field Transmit
 
 <dd>
 <p>A structure within NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO that specifies transmit
@@ -94,13 +94,13 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
       </p>
 <dl>
 
-### -field <b>Unused</b>
+### -field Unused
 
 <dd>
 <p>A ULONG value that specifies unused space that is reserved for NDIS.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The offload type that the miniport driver should run. Protocol drivers set this member to
@@ -109,7 +109,7 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
         operations.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for NDIS.</p>
@@ -117,7 +117,7 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
 </dl>
 </dd>
 
-### -field <b>LsoV1Transmit</b>
+### -field LsoV1Transmit
 
 <dd>
 <p>A structure within NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO that specifies LSO transmit
@@ -125,7 +125,7 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
       </p>
 <dl>
 
-### -field <b>MSS</b>
+### -field MSS
 
 <dd>
 <p>The maximum segment size (MSS), in bytes, for each packet after segmentaion. The TCP/IP
@@ -133,7 +133,7 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
         The size of TCP payload in each transmitted segment must not exceed this value.</p>
 </dd>
 
-### -field <b>TcpHeaderOffset</b>
+### -field TcpHeaderOffset
 
 <dd>
 <p>The offset, in bytes, of the TCP header from the beginning of the packet for TCP packets.
@@ -142,7 +142,7 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
         IP headers.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The offload type that the miniport driver should run. Protocol drivers set this member to
@@ -150,7 +150,7 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
         NDIS_TCP_LARGE_SEND_OFFLOAD_V2_TYPE to specify LSOV2 operations.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for NDIS.</p>
@@ -158,7 +158,7 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
 </dl>
 </dd>
 
-### -field <b>LsoV1TransmitComplete</b>
+### -field LsoV1TransmitComplete
 
 <dd>
 <p>A structure within NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO that specifies LSO transmit
@@ -166,7 +166,7 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
       </p>
 <dl>
 
-### -field <b>TcpPayload</b>
+### -field TcpPayload
 
 <dd>
 <p>The total number of TCP payload bytes in a set of packets that a network interface card (NIC)
@@ -174,14 +174,14 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
         the send of an LSO packet.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The offload type that the miniport driver performed. The mniport drivers leaves this value the
         same as it was when the overlying driver submitted the packet for transmit.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for NDIS.</p>
@@ -189,7 +189,7 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
 </dl>
 </dd>
 
-### -field <b>LsoV2Transmit</b>
+### -field LsoV2Transmit
 
 <dd>
 <p>A structure within NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO that specifies LSOV2 transmit
@@ -197,14 +197,14 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
       </p>
 <dl>
 
-### -field <b>MSS</b>
+### -field MSS
 
 <dd>
 <p>The MSS, in bytes, for each TCP segment. The TCP/IP transport writes this value before passing
         a large TCP packet to a miniport driver for segmentation.</p>
 </dd>
 
-### -field <b>TcpHeaderOffset</b>
+### -field TcpHeaderOffset
 
 <dd>
 <p>The offset, in bytes, of the TCP header from the beginning of the packet for TCP packets.
@@ -213,7 +213,7 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
         IP headers.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The offload type that the miniport driver should run. Protocol drivers set this member to
@@ -221,7 +221,7 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
         NDIS_TCP_LARGE_SEND_OFFLOAD_V2_TYPE to specify LSOV2 operations.</p>
 </dd>
 
-### -field <b>IPVersion</b>
+### -field IPVersion
 
 <dd>
 <p>The IP version of the packet. For IPv4 packets, 
@@ -231,7 +231,7 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
 </dl>
 </dd>
 
-### -field <b>LsoV2TransmitComplete</b>
+### -field LsoV2TransmitComplete
 
 <dd>
 <p>A structure within NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO that specifies LSOV2 transmit
@@ -239,13 +239,13 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
       </p>
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>In general, this member is reserved for NDIS.  However, when a send operation is complete, the miniport driver must set this member to zero.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The offload type that the miniport driver performed. The mniport driver leaves this value the
@@ -253,7 +253,7 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
 <p> For example, when a send operation is complete, the miniport driver sets this member to <b>NDIS_TCP_LARGE_SEND_OFFLOAD_V2_TYPE</b>.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for NDIS.</p>
@@ -261,7 +261,7 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
 </dl>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A PVOID version of the LSO information. Use this member to access the raw information instead of
@@ -325,4 +325,4 @@ typedef struct _NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -63,49 +63,49 @@ typedef struct _PEP_ACPI_QUERY_OBJECT_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] A PEPHANDLE value that identifies the device's registration for ACPI services. The platform extension plug-in (PEP) supplied this handle in response to a previous <a href="kernel.pep_notify_acpi_register_device">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>[in] A <a href="..\pepfx\ns-pepfx--pep-acpi-object-name.md">PEP_ACPI_OBJECT_NAME</a> union that specifies the path-relative, four-character name of the object.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>[in] A <a href="..\pepfx\ne-pepfx--pep-acpi-object-type.md">PEP_ACPI_OBJECT_TYPE</a> enumeration value that specifies the object type. Currently, a control method is the only object type that is defined for this member (<b>Type</b> = <b>PepAcpiObjectTypeMethod</b>).</p>
 </dd>
 
-### -field <b>ObjectFlags</b>
+### -field ObjectFlags
 
 <dd>
 <p>[in] A set of input flags. No flags are currently defined for this member, which is always set to PEP_ACPI_OBJECT_FLAG_NONE (0x0).</p>
 </dd>
 
-### -field <b>DUMMYUNIONNAME</b>
+### -field DUMMYUNIONNAME
 
 <dd>
 <p>The query result. If the specified object is a control method, the platform extension plug-in (PEP) writes the query result to the <b>MethodObject</b> member of this union.</p>
 <dl>
 
-### -field <b>MethodObject</b>
+### -field MethodObject
 
 <dd>
 <p>[out] Information about a control method object.</p>
 <dl>
 
-### -field <b>InputArgumentCount</b>
+### -field InputArgumentCount
 
 <dd>
 <p>The number of input arguments expected by the control method.</p>
 </dd>
 
-### -field <b>OutputArgumentCount</b>
+### -field OutputArgumentCount
 
 <dd>
 <p>The number of output arguments produced by the control method.</p>

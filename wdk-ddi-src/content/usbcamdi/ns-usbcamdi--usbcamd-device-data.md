@@ -68,79 +68,79 @@ typedef struct _USBCAMD_DEVICE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Sig</b>
+### -field Sig
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>CamInitialize</b>
+### -field CamInitialize
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.caminitialize">CamInitialize</a> callback function. This entry point is required.</p>
 </dd>
 
-### -field <b>CamUnInitialize</b>
+### -field CamUnInitialize
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.camuninitialize">CamUnInitialize</a> callback function. This entry point is required.</p>
 </dd>
 
-### -field <b>CamProcessUSBPacket</b>
+### -field CamProcessUSBPacket
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.camprocessusbpacket">CamProcessUSBPacket</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.</p>
 </dd>
 
-### -field <b>CamNewVideoFrame</b>
+### -field CamNewVideoFrame
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.camnewvideoframe">CamNewVideoFrame</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.</p>
 </dd>
 
-### -field <b>CamProcessRawVideoFrame</b>
+### -field CamProcessRawVideoFrame
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.camprocessrawvideoframe">CamProcessRawVideoFrame</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.</p>
 </dd>
 
-### -field <b>CamStartCapture</b>
+### -field CamStartCapture
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.camstartcapture">CamStartCapture</a> callback function. This entry point is required.</p>
 </dd>
 
-### -field <b>CamStopCapture</b>
+### -field CamStopCapture
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.camstopcapture">CamStopCapture</a> callback function. This entry point is required.</p>
 </dd>
 
-### -field <b>CamConfigure</b>
+### -field CamConfigure
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.camconfigure">CamConfigure</a> callback function. This entry point is required.</p>
 </dd>
 
-### -field <b>CamSaveState</b>
+### -field CamSaveState
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.camsavestate">CamSaveState</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.</p>
 </dd>
 
-### -field <b>CamRestoreState</b>
+### -field CamRestoreState
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.camrestorestate">CamRestoreState</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.</p>
 </dd>
 
-### -field <b>CamAllocateBandwidth</b>
+### -field CamAllocateBandwidth
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.camallocatebandwidth">CamAllocateBandwidth</a> callback function. This entry point is required.</p>
 </dd>
 
-### -field <b>CamFreeBandwidth</b>
+### -field CamFreeBandwidth
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.camfreebandwidth">CamFreeBandwidth</a> callback function. This entry point is required.</p>

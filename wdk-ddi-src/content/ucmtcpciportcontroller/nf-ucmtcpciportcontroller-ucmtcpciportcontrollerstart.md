@@ -55,10 +55,10 @@ NTSTATUS UcmTcpciPortControllerStart(
 ## -parameters
 <dl>
 
-### -param <i>PortControllerObject</i> 
+### -param PortControllerObject 
 
 <dd>
-<p>Handle to the port controller  object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.</p>
+<p>Handle to the port controller  object that the client driver received in the previous call to <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>.</p>
 </dd>
 </dl>
 
@@ -69,14 +69,14 @@ NTSTATUS UcmTcpciPortControllerStart(
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
 </dl><p>The port controller is already in Start state.</p><dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl><p>Hardware request queue has not been set by calling <a href="buses.ucmtcpciportcontrollersethardwarerequestqueue">UcmTcpciPortControllerSetHardwareRequestQueue</a>.</p>
+</dl><p>Hardware request queue has not been set by calling <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollersethardwarerequestqueue.md">UcmTcpciPortControllerSetHardwareRequestQueue</a>.</p>
 
 <p> </p>
 
 ## -remarks
-<p>After the client driver has received the UCMPORTCONTROLLER handle for the port controller object, the driver calls this method to notify the class extension that the driver can start receiving hardware requests. This method call allows the client driver to perform initialization of its framework context space on the port controller object, before the class extension can invoke the driver's callback functions or requests for the port controller object. The driver cannot call <a href="buses.ucmtcpciportcontrolleralert">UcmTcpciPortControllerAlert</a> or  <a href="buses.ucmtcpciportcontrollerstop">UcmTcpciPortControllerStop</a> until the port controller has been started.</p>
+<p>After the client driver has received the UCMPORTCONTROLLER handle for the port controller object, the driver calls this method to notify the class extension that the driver can start receiving hardware requests. This method call allows the client driver to perform initialization of its framework context space on the port controller object, before the class extension can invoke the driver's callback functions or requests for the port controller object. The driver cannot call <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrolleralert.md">UcmTcpciPortControllerAlert</a> or  <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollerstop.md">UcmTcpciPortControllerStop</a> until the port controller has been started.</p>
 
-<p>The client driver calls this method right after calling <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a> and initializing its context structure, if it was specified in the <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure as the <i>Attributes</i> parameter value.
+<p>The client driver calls this method right after calling <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a> and initializing its context structure, if it was specified in the <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure as the <i>Attributes</i> parameter value.
 The driver must assume that the class extension may submit requests even before <b>UcmTcpciPortControllerStart</b> returns, i.e., from within this DDI call. If the driver is holding a lock while calling <b>UcmTcpciPortControllerStart</b> and also attempts to acquire a lock while handling a hardware request (in its hardware request queue callback), it might result in a deadlock.
 </p>
 
@@ -136,7 +136,7 @@ The driver must assume that the class extension may submit requests even before 
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmtcpciportcontrollerstop">UcmTcpciPortControllerStop</a>
+<a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollerstop.md">UcmTcpciPortControllerStop</a>
 </dt>
 </dl>
 <p> </p>

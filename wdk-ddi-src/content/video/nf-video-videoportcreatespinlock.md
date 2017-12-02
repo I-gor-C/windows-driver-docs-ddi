@@ -56,13 +56,13 @@ VP_STATUS VideoPortCreateSpinLock(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>SpinLock</i> [out]
+### -param SpinLock [out]
 
 <dd>
 <p>Pointer to a memory location that will receive a pointer to the newly created spin lock.</p>

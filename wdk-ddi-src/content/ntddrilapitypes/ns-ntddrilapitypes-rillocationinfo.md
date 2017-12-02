@@ -7,7 +7,7 @@ old-location: netvista\rillocationinfo.htm
 old-project: netvista
 ms.assetid: 56d35556-1e1b-422f-acbf-f52708fbf7bf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILLOCATIONINFO, RILLOCATIONINFO, *LPRILLOCATIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef struct _RILLOCATIONINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwLocationAreaCode</b>
+### -field dwLocationAreaCode
 
 <dd></dd>
 
-### -field <b>dwTrackingAreaCode</b>
+### -field dwTrackingAreaCode
 
 <dd></dd>
 
-### -field <b>dwCellID</b>
+### -field dwCellID
 
 <dd></dd>
 </dl>

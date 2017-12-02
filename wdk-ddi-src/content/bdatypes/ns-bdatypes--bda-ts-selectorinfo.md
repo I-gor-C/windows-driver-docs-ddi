@@ -58,31 +58,31 @@ typedef struct _BDA_TS_SELECTORINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>bTSInfolength</b>
+### -field bTSInfolength
 
 <dd>
 <p>Specifies the buffer length including the extension.</p>
 </dd>
 
-### -field <b>bReserved</b>
+### -field bReserved
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>guidNetworkType</b>
+### -field guidNetworkType
 
 <dd>
 <p>Specifies the current type of tuning.</p>
 </dd>
 
-### -field <b>bTSIDCount</b>
+### -field bTSIDCount
 
 <dd>
 <p>Specifies the number of usTSID.</p>
 </dd>
 
-### -field <b>usTSID</b>
+### -field usTSID
 
 <dd></dd>
 </dl>

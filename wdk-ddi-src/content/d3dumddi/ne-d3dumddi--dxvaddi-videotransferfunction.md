@@ -63,64 +63,64 @@ typedef enum _DXVADDI_VIDEOTRANSFERFUNCTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVADDI_VideoTransFuncMask"></a><a id="dxvaddi_videotransfuncmask"></a><a id="DXVADDI_VIDEOTRANSFUNCMASK"></a><b>DXVADDI_VideoTransFuncMask</b>
+### -field DXVADDI_VideoTransFuncMask
 
 <dd>
 <p>Specifies the video transfer function mask. The first 5 (0x001F) bits of a DWORD can be used to specify the video transfer function.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoTransFunc_Unknown"></a><a id="dxvaddi_videotransfunc_unknown"></a><a id="DXVADDI_VIDEOTRANSFUNC_UNKNOWN"></a><b>DXVADDI_VideoTransFunc_Unknown</b>
+### -field DXVADDI_VideoTransFunc_Unknown
 
 <dd>
 <p>Specifies that the video transfer function is not specified. The default is 22_8bit_sRGB if required for a computation.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoTransFunc_10"></a><a id="dxvaddi_videotransfunc_10"></a><a id="DXVADDI_VIDEOTRANSFUNC_10"></a><b>DXVADDI_VideoTransFunc_10</b>
+### -field DXVADDI_VideoTransFunc_10
 
 <dd>
 <p>Specifies linear RGB conversion (corresponds to gamma = 1.0).</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoTransFunc_18"></a><a id="dxvaddi_videotransfunc_18"></a><a id="DXVADDI_VIDEOTRANSFUNC_18"></a><b>DXVADDI_VideoTransFunc_18</b>
+### -field DXVADDI_VideoTransFunc_18
 
 <dd>
 <p>Specifies true 1.8 gamma--that is, L' = pow(L, 1/gamma) for L=0..1.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoTransFunc_20"></a><a id="dxvaddi_videotransfunc_20"></a><a id="DXVADDI_VIDEOTRANSFUNC_20"></a><b>DXVADDI_VideoTransFunc_20</b>
+### -field DXVADDI_VideoTransFunc_20
 
 <dd>
 <p>Specifies true 2.0 gamma--that is, L' = pow(L, 1/gamma) for L=0..1.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoTransFunc_22"></a><a id="dxvaddi_videotransfunc_22"></a><a id="DXVADDI_VIDEOTRANSFUNC_22"></a><b>DXVADDI_VideoTransFunc_22</b>
+### -field DXVADDI_VideoTransFunc_22
 
 <dd>
 <p>Specifies true 2.2 gamma--that is, L' = pow(L, 1/gamma) for L=0..1. </p>
 <p>The BT470-2 SysM primaries (that is, the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-videoprimaries.md">DXVADDI_VIDEOPRIMARIES</a> enumeration type) use gamma 2.2.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoTransFunc_709"></a><a id="dxvaddi_videotransfunc_709"></a><a id="DXVADDI_VIDEOTRANSFUNC_709"></a><b>DXVADDI_VideoTransFunc_709</b>
+### -field DXVADDI_VideoTransFunc_709
 
 <dd>
 <p>Specifies gamma 2.2 curve with a linear range in the low range. </p>
 <p>The BT709, SMPTE296M, SMPTE170M, BT470, and SMPTE274M primaries (that is, the DXVADDI_VIDEOPRIMARIES enumeration type) use this video transfer function. </p>
 </dd>
 
-### -field <a id="DXVADDI_VideoTransFunc_240M"></a><a id="dxvaddi_videotransfunc_240m"></a><a id="DXVADDI_VIDEOTRANSFUNC_240M"></a><b>DXVADDI_VideoTransFunc_240M</b>
+### -field DXVADDI_VideoTransFunc_240M
 
 <dd>
 <p>Specifies gamma 2.2 curve with a linear range in the low range. </p>
 <p>The SMPTE240M and interim 274M primaries (that is, the DXVADDI_VIDEOPRIMARIES enumeration type) use this video transfer function. </p>
 </dd>
 
-### -field <a id="DXVADDI_VideoTransFunc_sRGB"></a><a id="dxvaddi_videotransfunc_srgb"></a><a id="DXVADDI_VIDEOTRANSFUNC_SRGB"></a><b>DXVADDI_VideoTransFunc_sRGB</b>
+### -field DXVADDI_VideoTransFunc_sRGB
 
 <dd>
 <p>Specifies gamma 2.4 curve with a linear range in the low range, which makes it match an accurate 2.2 gamma 8-bit curve. </p>
 </dd>
 
-### -field <a id="DXVADDI_VideoTransFunc_28"></a><a id="dxvaddi_videotransfunc_28"></a><a id="DXVADDI_VIDEOTRANSFUNC_28"></a><b>DXVADDI_VideoTransFunc_28</b>
+### -field DXVADDI_VideoTransFunc_28
 
 <dd>
 <p>Specifies true 2.8 gamma--that is, L' = pow(L, 1/gamma) for L=0..1.</p>

@@ -55,13 +55,13 @@ HRESULT KsDeliver(
 ## -parameters
 <dl>
 
-### -param <i>Sample</i> [in]
+### -param Sample [in]
 
 <dd>
 <p>Pointer to the <b>IMediaSample</b> interface for the associated media sample.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies a bitmask enumerating information about the stream header of the media sample. A bitwise OR combination of the following flags is possible:</p>

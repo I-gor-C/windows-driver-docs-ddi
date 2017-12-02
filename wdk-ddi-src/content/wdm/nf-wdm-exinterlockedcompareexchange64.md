@@ -58,25 +58,25 @@ LONGLONG ExInterlockedCompareExchange64(
 ## -parameters
 <dl>
 
-### -param <i>Destination</i> [in, out]
+### -param Destination [in, out]
 
 <dd>
 <p>A pointer to an integer that will be compared and possibly replaced.</p>
 </dd>
 
-### -param <i>Exchange</i> [in]
+### -param Exchange [in]
 
 <dd>
 <p>A pointer to an integer that will replace the one at <i>Destination</i> if the comparison results in equality.</p>
 </dd>
 
-### -param <i>Comparand</i> [in]
+### -param Comparand [in]
 
 <dd>
 <p>A pointer to an integer with which the value at <i>Destination</i> will be compared. </p>
 </dd>
 
-### -param <i>Lock</i> [in]
+### -param Lock [in]
 
 <dd>
 <p>A pointer to a caller-allocated spin-lock that is used if the host system does not support an 8-byte atomic compare-and-exchange operation. </p>

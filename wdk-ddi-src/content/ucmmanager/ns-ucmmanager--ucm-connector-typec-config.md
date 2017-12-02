@@ -60,45 +60,45 @@ typedef struct _UCM_CONNECTOR_TYPEC_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of the <b>UCM_CONNECTOR_TYPEC_CONFIG</b> structure. </p>
 </dd>
 
-### -field <b>IsSupported</b>
+### -field IsSupported
 
 <dd>
 <p>TRUE indicates a Type-C connector. FALSE, otherwise.  is supported. </p>
 </dd>
 
-### -field <b>SupportedOperatingModes</b>
+### -field SupportedOperatingModes
 
 <dd>
-<p>Indicates the supported operating mode of the connector. This value is a bitwise OR of <a href="buses.ucm_type_c_operating_mode">UCM_TYPEC_OPERATING_MODE</a>-typed flags.</p>
+<p>Indicates the supported operating mode of the connector. This value is a bitwise OR of <a href="..\ucmtypes\ne-ucmtypes--ucm-typec-operating-mode.md">UCM_TYPEC_OPERATING_MODE</a>-typed flags.</p>
 </dd>
 
-### -field <b>SupportedPowerSourcingCapabilities</b>
+### -field SupportedPowerSourcingCapabilities
 
 <dd>
-<p>Indicates the supported power source capabilities of the connector. This value is a bitwise OR of <a href="buses.ucm_type_c_current">UCM_TYPEC_CURRENT</a>-typed flags.</p>
+<p>Indicates the supported power source capabilities of the connector. This value is a bitwise OR of <a href="..\ucmtypes\ne-ucmtypes--ucm-typec-current.md">UCM_TYPEC_CURRENT</a>-typed flags.</p>
 </dd>
 
-### -field <b>AudioAccessoryCapable</b>
+### -field AudioAccessoryCapable
 
 <dd>
 <p>Indicates whether the connector is capable of detecting a USB Type-C analog input as 3.5 mm audio jack.</p>
 </dd>
 
-### -field <b>EvtSetDataRole</b>
+### -field EvtSetDataRole
 
 <dd>
-<p>A pointer to the client driver's implementation of the <a href="buses.evt_ucm_connector_set_data_role">EVT_UCM_CONNECTOR_SET_DATA_ROLE</a> callback function.</p>
+<p>A pointer to the client driver's implementation of the <a href="..\ucmmanager\nc-ucmmanager-evt-ucm-connector-set-data-role.md">EVT_UCM_CONNECTOR_SET_DATA_ROLE</a> callback function.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Initialize this structure by calling <a href="buses.ucm_connector_type_c_config_init">UCM_CONNECTOR_TYPEC_CONFIG_INIT</a>. An initialized <b>UCM_CONNECTOR_TYPEC_CONFIG</b> structure is an input parameter value to <a href="buses.ucmconnectorcreate">UcmConnectorCreate</a> that is used by Policy Manager to create a connector object.</p>
+<p>Initialize this structure by calling <a href="..\ucmmanager\nf-ucmmanager-ucm-connector-typec-config-init.md">UCM_CONNECTOR_TYPEC_CONFIG_INIT</a>. An initialized <b>UCM_CONNECTOR_TYPEC_CONFIG</b> structure is an input parameter value to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a> that is used by Policy Manager to create a connector object.</p>
 
 ## -requirements
 <table>
@@ -149,7 +149,7 @@ typedef struct _UCM_CONNECTOR_TYPEC_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmconnectorcreate">UcmConnectorCreate</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
 </dt>
 </dl>
 <p> </p>

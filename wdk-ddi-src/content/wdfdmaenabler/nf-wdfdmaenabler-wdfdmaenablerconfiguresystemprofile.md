@@ -7,7 +7,7 @@ old-location: wdf\wdfdmaenablerconfiguresystemprofile.htm
 old-project: wdf
 ms.assetid: 3374EBB8-F43A-4A2A-92AC-623B39F5EFA0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDmaEnablerConfigureSystemProfile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ NTSTATUS WdfDmaEnablerConfigureSystemProfile(
 ## -parameters
 <dl>
 
-### -param <i>DmaEnabler</i> [in]
+### -param DmaEnabler [in]
 
 <dd>
 <p>A handle to a DMA enabler object.</p>
 </dd>
 
-### -param <i>ProfileConfig</i> [in]
+### -param ProfileConfig [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdfdmaenabler\ns-wdfdmaenabler--wdf-dma-system-profile-config.md">WDF_DMA_SYSTEM_PROFILE_CONFIG</a> structure. Drivers must initialize this structure by calling <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdf-dma-system-profile-config-init.md">WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT</a>.</p>
 </dd>
 
-### -param <i>ConfigDirection</i> [in]
+### -param ConfigDirection [in]
 
 <dd>
 <p>A <a href="..\wdfdmaenabler\ne-wdfdmaenabler--wdf-dma-direction.md">WDF_DMA_DIRECTION</a>-typed value that specifies the direction of the DMA transfer operation. If the <a href="..\wdfdmaenabler\ne-wdfdmaenabler--wdf-dma-profile.md">WDF_DMA_PROFILE</a> value for this enabler is not <b>WdfDmaProfileSystemDuplex</b>, the framework ignores this parameter.</p>
@@ -97,7 +97,7 @@ NTSTATUS WdfDmaEnablerConfigureSystemProfile(
 
 <p>A driver typically calls <b>WdfDmaEnablerConfigureSystemProfile</b> from its <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-prepare-hardware.md">EvtDevicePrepareHardware</a> callback function.</p>
 
-<p>If your driver specified a duplex profile when it called <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>, the <b>WdfDmaEnablerConfigureSystemProfile</b> method's <i>ConfigDirection</i> parameter's value must be <b>WdfDmaDirectionReadFromDevice</b> to obtain the <a href="..\ntddk\ns-ntddk--dma-adapter.md">DMA_ADAPTER</a> structure for read operations and <b>WdfDmaDirectionWriteToDevice</b> to obtain the <b>DMA_ADAPTER</b> structure for write operations.</p>
+<p>If your driver specified a duplex profile when it called <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>, the <b>WdfDmaEnablerConfigureSystemProfile</b> method's <i>ConfigDirection</i> parameter's value must be <b>WdfDmaDirectionReadFromDevice</b> to obtain the <a href="..\wdm\ns-wdm--dma-adapter.md">DMA_ADAPTER</a> structure for read operations and <b>WdfDmaDirectionWriteToDevice</b> to obtain the <b>DMA_ADAPTER</b> structure for write operations.</p>
 
 <p>If the DMA enabler is a duplex enabler, the driver must initialize a particular direction before it can use it.  </p>
 
@@ -189,4 +189,4 @@ NTSTATUS WdfDmaEnablerConfigureSystemProfile(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaEnablerConfigureSystemProfile method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaEnablerConfigureSystemProfile method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

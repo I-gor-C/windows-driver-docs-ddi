@@ -7,7 +7,7 @@ old-location: ifsk\fltapplypriorityinfothread.htm
 old-project: ifsk
 ms.assetid: 62fd46a8-ee34-4c61-8e87-7fbe1a4622be
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltApplyPriorityInfoThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ NTSTATUS FltApplyPriorityInfoThread(
 ## -parameters
 <dl>
 
-### -param <i>InputPriorityInfo</i> [in]
+### -param InputPriorityInfo [in]
 
 <dd>
 <p>A pointer to an <a href="..\ntifs\ns-ntifs--io-priority-info.md">IO_PRIORITY_INFO</a> structure that is used to set the priority state of the given thread.  This IO_PRIORITY_INFO structure must have its members set by an appropriate routine - see the following Remarks section.  This parameter is required and cannot be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>OutputPriorityInfo</i> [out, optional]
+### -param OutputPriorityInfo [out, optional]
 
 <dd>
 <p>An optional pointer to an IO_PRIORITY_INFO structure used to receive the priority state of the thread before the <i>InputPriorityInfo</i> priority information is applied to the thread by <b>FltApplyPriorityInfoThread</b>.  This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Thread</i> [in]
+### -param Thread [in]
 
 <dd>
 <p>A pointer to the thread in which to apply the <i>InputPriorityInfo</i> priority information to.  This parameter is required and cannot be <b>NULL</b>. </p>
@@ -180,4 +180,4 @@ NTSTATUS FltApplyPriorityInfoThread(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltApplyPriorityInfoThread routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltApplyPriorityInfoThread routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

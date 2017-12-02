@@ -7,7 +7,7 @@ old-location: netvista\rilsendmsgparams_2.htm
 old-project: netvista
 ms.assetid: db2eeb43-710a-4be6-8d9f-49809ff70057
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSENDMSGPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef struct _RILSENDMSGPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>rmMessage</b>
+### -field rmMessage
 
 <dd></dd>
 
-### -field <b>dwOptions</b>
+### -field dwOptions
 
 <dd></dd>
 </dl>

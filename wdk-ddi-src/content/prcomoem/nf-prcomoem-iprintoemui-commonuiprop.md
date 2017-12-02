@@ -56,7 +56,7 @@ HRESULT CommonUIProp(
 ## -parameters
 <dl>
 
-### -param <i>dwMode</i> 
+### -param dwMode 
 
 <dd>
 <p>Caller-supplied integer constant indicating which property sheet page should be modified. The following constants are valid.</p>
@@ -85,7 +85,7 @@ HRESULT CommonUIProp(
 <p> </p>
 </dd>
 
-### -param <i>pOemCUIPParam</i> 
+### -param pOemCUIPParam 
 
 <dd>
 <p>Caller-supplied pointer to an <a href="..\printoem\ns-printoem--oemcuipparam.md">OEMCUIPPARAM</a> structure.</p>
@@ -106,7 +106,7 @@ HRESULT CommonUIProp(
 ## -remarks
 <p>When a user interface plug-in's <code>IPrintOemUI::CommonUIProp</code> method is called, it should return customized property sheet option items in order to modify an existing printer property sheet page.</p>
 
-<p>The <code>IPrintOemUI::CommonUIProp</code> method is called by the printer driver's <a href="NULL">printer interface DLL</a>. The method should supply an array of <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structures describing property sheet items, along with a callback function for processing user modifications to option values.</p>
+<p>The <code>IPrintOemUI::CommonUIProp</code> method is called by the printer driver's <a href="https://msdn.microsoft.com/2a8cf38f-8e27-4e08-9c0f-5d1a4cd854ac">printer interface DLL</a>. The method should supply an array of <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structures describing property sheet items, along with a callback function for processing user modifications to option values.</p>
 
 <p>You should expect the method to be called twice for each property sheet. The method's <i>dwMode</i> parameter value indicates whether it is being called to make changes to the printer property sheet or the document property sheet.</p>
 
@@ -126,7 +126,7 @@ HRESULT CommonUIProp(
 
 <p>If <code>IPrintOemUI::CommonUIProp</code> methods are exported by multiple user interface plug-ins, the methods are called in the order that the plug-ins are specified for installation.</p>
 
-<p>For more information, see <a href="NULL">Modifying a Driver-Supplied Property Sheet Page</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/98338017-96a0-414c-9b80-bcb98eff61e5">Modifying a Driver-Supplied Property Sheet Page</a>.</p>
 
 ## -requirements
 <table>

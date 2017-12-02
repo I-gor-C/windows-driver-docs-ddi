@@ -57,20 +57,20 @@ PVOID StorPortGetUncachedExtension(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
-### -param <i>ConfigInfo</i> 
+### -param ConfigInfo 
 
 <dd>
 <p>Specifies information about the HBA's DMA capabilities. The following members must be filled in: <b>DmaChannel</b> or <b>DmaPort</b>, <b>DmaWidth</b>, <b>DmaSpeed</b>, <b>MaximumTransferLength</b>, <b>ScatterGather</b>, <b>Master</b> set to <b>TRUE</b>, <b>NumberOfPhysicalBreaks</b>, <b>AdapterInterfaceType</b>, <b>Dma32BitAddresses</b>, <b>Dma64BitAddresses</b>, <b>SystemIoBusNumber</b>, <b>AutoRequestSense</b>, and <b>SrbExtensionSize</b>.</p>
 <p>Members that are not pertinent to the HBA, such as <b>DmaChannel</b> for an EISA bus-master adapter, must be left as is.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> 
+### -param NumberOfBytes 
 
 <dd>
 <p>The size required, in bytes, of the uncached extension to allocate.</p>

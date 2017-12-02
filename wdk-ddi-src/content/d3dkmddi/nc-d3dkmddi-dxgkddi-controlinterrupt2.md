@@ -58,13 +58,13 @@ NTSTATUS APIENTRY* DxgkDdi_ControlInterrupt2(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>[in] A handle to the adapter object for the graphics processing unit (GPU). The driver returned this handle in the <i>MiniportDeviceContext</i> parameter from a call to its <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function.</p>
 </dd>
 
-### -param <i>InterruptControl</i> [in]
+### -param InterruptControl [in]
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-controlinterrupt2.md">DXGKARG_CONTROLINTERRUPT2</a>-type value that supplies the interrupt type, as well as the VSYNC state.</p>

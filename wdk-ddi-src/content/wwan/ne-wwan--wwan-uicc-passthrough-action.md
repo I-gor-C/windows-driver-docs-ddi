@@ -7,7 +7,7 @@ old-location: netvista\wwan_uicc_passthrough_action.htm
 old-project: netvista
 ms.assetid: 4C9293CB-D92D-4C31-929F-16C1B8918933
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _WWAN_UICC_PASSTHROUGH_ACTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanUiccPassThroughDisable"></a><a id="wwanuiccpassthroughdisable"></a><a id="WWANUICCPASSTHROUGHDISABLE"></a><b>WwanUiccPassThroughDisable</b>
+### -field WwanUiccPassThroughDisable
 
 <dd>
 <p>Indicates to disable passthrough to the UICC after reset. When UICC passthrough is disabled, the MB host treats the UICC as a regular Telecom UICC and expects a Telecom UICC file system to be present on the UICC.</p>
 </dd>
 
-### -field <a id="WwanUiccPassThroughEnable"></a><a id="wwanuiccpassthroughenable"></a><a id="WWANUICCPASSTHROUGHENABLE"></a><b>WwanUiccPassThroughEnable</b>
+### -field WwanUiccPassThroughEnable
 
 <dd>
 <p>Indicates to enable passthrough to the UICC after reset. When UICC passthrough is enabled, the modem miniport adapter treats the UICC as if it were in a passthrough mode that enables communication between the host and UICC, even if the UICC has no Telecom UICC file system. The miniport adapter does not send any APDUs to the card and does not interfere at any time with the communication between the host and the UICC.</p>
 </dd>
 
-### -field <a id="WwanUiccPassThroughActionMaximum"></a><a id="wwanuiccpassthroughactionmaximum"></a><a id="WWANUICCPASSTHROUGHACTIONMAXIMUM"></a><b>WwanUiccPassThroughActionMaximum</b>
+### -field WwanUiccPassThroughActionMaximum
 
 <dd>
 <p>The maximum value for this enumeration. This value might change in future versions of the NDIS
@@ -113,4 +113,4 @@ typedef enum _WWAN_UICC_PASSTHROUGH_ACTION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_UICC_PASSTHROUGH_ACTION enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_UICC_PASSTHROUGH_ACTION enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

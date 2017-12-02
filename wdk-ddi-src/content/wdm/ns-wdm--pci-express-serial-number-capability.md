@@ -57,19 +57,19 @@ typedef struct _PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537466">PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER</a> structure that describes the header for this structure.</p>
 </dd>
 
-### -field <b>LowSerialNumber</b>
+### -field LowSerialNumber
 
 <dd>
 <p>The lower 32 bits of the serial number.</p>
 </dd>
 
-### -field <b>HighSerialNumber</b>
+### -field HighSerialNumber
 
 <dd>
 <p>The upper 32 bits of the serial number.</p>

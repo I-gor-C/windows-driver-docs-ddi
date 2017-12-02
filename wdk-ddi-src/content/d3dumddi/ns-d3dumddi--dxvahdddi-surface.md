@@ -55,13 +55,13 @@ typedef struct _DXVAHDDDI_SURFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A handle to the resource that contains the surface. </p>
 </dd>
 
-### -field <b>SubResourceIndex</b>
+### -field SubResourceIndex
 
 <dd>
 <p>[in] The zero-based index into the resource, which the handle in the <b>hResource</b> member specifies. The <b>SubResourceIndex</b> index indicates the surface. </p>

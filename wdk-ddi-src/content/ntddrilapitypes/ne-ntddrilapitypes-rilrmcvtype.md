@@ -7,7 +7,7 @@ old-location: netvista\rilrmcvtype.htm
 old-project: netvista
 ms.assetid: 007c6b45-0bec-4fcf-984a-675aa5336993
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILRMCVTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_RMCV_TYPE_BOOLEAN"></a><a id="ril_rmcv_type_boolean"></a><b>RIL_RMCV_TYPE_BOOLEAN</b>
+### -field RIL_RMCV_TYPE_BOOLEAN
 
 <dd></dd>
 
-### -field <a id="RIL_RMCV_TYPE_DWORD"></a><a id="ril_rmcv_type_dword"></a><b>RIL_RMCV_TYPE_DWORD</b>
+### -field RIL_RMCV_TYPE_DWORD
 
 <dd></dd>
 
-### -field <a id="RIL_RMCV_TYPE_STRING"></a><a id="ril_rmcv_type_string"></a><b>RIL_RMCV_TYPE_STRING</b>
+### -field RIL_RMCV_TYPE_STRING
 
 <dd></dd>
 </dl>

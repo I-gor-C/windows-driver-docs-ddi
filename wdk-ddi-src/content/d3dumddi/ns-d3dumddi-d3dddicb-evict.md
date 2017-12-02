@@ -59,25 +59,25 @@ typedef struct D3DDDICB_EVICT {
 ## -struct-fields
 <dl>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] Number of allocation handles in the <b>AllocationList</b> array.</p>
 </dd>
 
-### -field <b>AllocationList</b>
+### -field AllocationList
 
 <dd>
 <p>[in] An array of <b>NumAllocations</b> allocation handles to mark for eviction. All allocations must be created on <b>hDevice</b>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] Specifies eviction behavior as documented in <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-evict-flags.md">D3DDDI_EVICT_FLAGS</a>. </p>
 </dd>
 
-### -field <b>NumBytesToTrim</b>
+### -field NumBytesToTrim
 
 <dd>
 <p>[out] When non-zero, specifies how much the application should evict in order to meet its current memory budget.</p>

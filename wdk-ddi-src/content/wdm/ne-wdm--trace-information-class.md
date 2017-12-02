@@ -71,103 +71,103 @@ typedef enum _TRACE_INFORMATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="TraceIdClass"></a><a id="traceidclass"></a><a id="TRACEIDCLASS"></a><b>TraceIdClass</b>
+### -field TraceIdClass
 
 <dd>
 <p>Retrieves the logger ID (ULONG) of an event tracing session given a caller-supplied Wnode.</p>
 </dd>
 
-### -field <a id="TraceHandleClass"></a><a id="tracehandleclass"></a><a id="TRACEHANDLECLASS"></a><b>TraceHandleClass</b>
+### -field TraceHandleClass
 
 <dd>
 <p>Retrieves a trace handle (TRACEHANDLE) for an event tracing session given a caller-supplied logger ID (ULONG).</p>
 </dd>
 
-### -field <a id="TraceEnableFlagsClass"></a><a id="traceenableflagsclass"></a><a id="TRACEENABLEFLAGSCLASS"></a><b>TraceEnableFlagsClass</b>
+### -field TraceEnableFlagsClass
 
 <dd>
 <p>Retrieves the enable flags (ULONG) set on a caller-supplied event trace handle (TRACEHANDLE).</p>
 </dd>
 
-### -field <a id="TraceEnableLevelClass"></a><a id="traceenablelevelclass"></a><a id="TRACEENABLELEVELCLASS"></a><b>TraceEnableLevelClass</b>
+### -field TraceEnableLevelClass
 
 <dd>
 <p>Retrieves the enable level (ULONG) set on a caller-supplied event trace handle (TRACEHANDLE).</p>
 </dd>
 
-### -field <a id="GlobalLoggerHandleClass"></a><a id="globalloggerhandleclass"></a><a id="GLOBALLOGGERHANDLECLASS"></a><b>GlobalLoggerHandleClass</b>
+### -field GlobalLoggerHandleClass
 
 <dd>
 <p>Retrieves an event trace handle (TRACEHANDLE) for the global logger.</p>
 </dd>
 
-### -field <a id="EventLoggerHandleClass"></a><a id="eventloggerhandleclass"></a><a id="EVENTLOGGERHANDLECLASS"></a><b>EventLoggerHandleClass</b>
+### -field EventLoggerHandleClass
 
 <dd>
 <p>Reserved for use by the operating system.</p>
 </dd>
 
-### -field <a id="AllLoggerHandlesClass"></a><a id="allloggerhandlesclass"></a><a id="ALLLOGGERHANDLESCLASS"></a><b>AllLoggerHandlesClass</b>
+### -field AllLoggerHandlesClass
 
 <dd>
 <p>Retrieves an array of event trace handles (TRACEHANDLE array) for all valid loggers.</p>
 </dd>
 
-### -field <a id="TraceHandleByNameClass"></a><a id="tracehandlebynameclass"></a><a id="TRACEHANDLEBYNAMECLASS"></a><b>TraceHandleByNameClass</b>
+### -field TraceHandleByNameClass
 
 <dd>
 <p>Retrieves an event trace handle (TRACEHANDLE) identified by a caller-supplied friendly name (<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure in buffer).</p>
 </dd>
 
-### -field <a id="LoggerEventsLostClass"></a><a id="loggereventslostclass"></a><a id="LOGGEREVENTSLOSTCLASS"></a><b>LoggerEventsLostClass</b>
+### -field LoggerEventsLostClass
 
 <dd>
 <p>Retrieves the number (ULONG) of events lost for a logger session given a caller-supplied logger ID (ULONG).</p>
 </dd>
 
-### -field <a id="TraceSessionSettingsClass"></a><a id="tracesessionsettingsclass"></a><a id="TRACESESSIONSETTINGSCLASS"></a><b>TraceSessionSettingsClass</b>
+### -field TraceSessionSettingsClass
 
 <dd>
 <p>Retrieves the settings (<b>ETW_TRACE_SESSION_SETTINGS</b> structure) for a logger session given a caller-supplied trace handle (TRACEHANDLE).</p>
 </dd>
 
-### -field <a id="LoggerEventsLoggedClass"></a><a id="loggereventsloggedclass"></a><a id="LOGGEREVENTSLOGGEDCLASS"></a><b>LoggerEventsLoggedClass</b>
+### -field LoggerEventsLoggedClass
 
 <dd>
 <p>Retrieves the number (ULONG) of events logged in a logger session given a caller-supplied logger ID (ULONG).</p>
 </dd>
 
-### -field <a id="DiskIoNotifyRoutinesClass"></a><a id="diskionotifyroutinesclass"></a><a id="DISKIONOTIFYROUTINESCLASS"></a><b>DiskIoNotifyRoutinesClass</b>
+### -field DiskIoNotifyRoutinesClass
 
 <dd>
 <p>Reserved for use by the operating system.</p>
 </dd>
 
-### -field <a id="TraceInformationClassReserved1"></a><a id="traceinformationclassreserved1"></a><a id="TRACEINFORMATIONCLASSRESERVED1"></a><b>TraceInformationClassReserved1</b>
+### -field TraceInformationClassReserved1
 
 <dd>
 <p>Reserved for use by the operating system.</p>
 </dd>
 
-### -field <a id="FltIoNotifyRoutinesClass"></a><a id="fltionotifyroutinesclass"></a><a id="FLTIONOTIFYROUTINESCLASS"></a><b>FltIoNotifyRoutinesClass</b>
+### -field FltIoNotifyRoutinesClass
 
 <dd>
 <p>Reserved for use by the operating system.</p>
 </dd>
 
-### -field <a id="TraceInformationClassReserved2"></a><a id="traceinformationclassreserved2"></a><a id="TRACEINFORMATIONCLASSRESERVED2"></a><b>TraceInformationClassReserved2</b>
+### -field TraceInformationClassReserved2
 
 <dd>
 <p>Reserved for use by the operating system.</p>
 </dd>
 
-### -field <a id="WdfNotifyRoutinesClass"></a><a id="wdfnotifyroutinesclass"></a><a id="WDFNOTIFYROUTINESCLASS"></a><b>WdfNotifyRoutinesClass</b>
+### -field WdfNotifyRoutinesClass
 
 <dd>
 <p>Reserved for use by the operating system.</p>
 </dd>
 
-### -field <a id="MaxTraceInformationClass"></a><a id="maxtraceinformationclass"></a><a id="MAXTRACEINFORMATIONCLASS"></a><b>MaxTraceInformationClass</b>
+### -field MaxTraceInformationClass
 
 <dd>
 <p>The maximum value in this enumeration type.</p>

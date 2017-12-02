@@ -55,13 +55,13 @@ typedef struct _D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE {
 ## -struct-fields
 <dl>
 
-### -field <b>hNtHandle</b>
+### -field hNtHandle
 
 <dd>
 <p>The protected NT session handle.</p>
 </dd>
 
-### -field <b>hHandle</b>
+### -field hHandle
 
 <dd>
 <p>The protected kernel session handle.</p>

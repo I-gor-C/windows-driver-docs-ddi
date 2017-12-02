@@ -54,7 +54,7 @@ NTSTATUS D3DKMTGetDeviceState(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>[in/out] A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getdevicestate.md">D3DKMT_GETDEVICESTATE</a> structure that describes parameters for retrieving the state of a device.</p>

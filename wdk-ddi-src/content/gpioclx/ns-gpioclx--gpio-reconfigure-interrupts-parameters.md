@@ -58,19 +58,19 @@ typedef struct _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>BankId</b>
+### -field BankId
 
 <dd>
 <p>The identifier for the bank of GPIO pins that contains the interrupt pin to reconfigure. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.</p>
 </dd>
 
-### -field <b>PinNumber</b>
+### -field PinNumber
 
 <dd>
 <p>The bank-relative pin number. If N is the number of pins in this bank, <b>PinNumber</b> is an integer in the range 0 to N–1. GpioClx previously obtained the number of pins in each bank from the <i>CLIENT_QueryControllerBasicInformation</i> event callback function. For more information, see the description of the <b>NumberOfPinsPerBank</b> member in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.</p>
 </dd>
 
-### -field <b>InterruptMode</b>
+### -field InterruptMode
 
 <dd>
 <p>Indicates whether to configure the GPIO interrupt pin to be level-sensitive or edge-triggered (latched). This member is set to one of the following values:</p>
@@ -81,7 +81,7 @@ typedef struct _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS {
 <p>For more information, see <a href="..\wdm\ne-wdm--kinterrupt-mode.md">KINTERRUPT_MODE</a>.</p>
 </dd>
 
-### -field <b>Polarity</b>
+### -field Polarity
 
 <dd>
 <p>Indicates the polarity of the reconfigured GPIO interrupt pin. For a level-sensitive interrupt, this member indicates whether the interrupt is active-high or active-low. For an edge-triggered interrupt, this member indicates whether the interrupt is triggered on the rising edge, on the falling edge, or on both edges. This member is set to one of the following values:   </p>
@@ -95,7 +95,7 @@ typedef struct _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS {
 <p>For more information, see <a href="..\wdm\ne-wdm--kinterrupt-polarity.md">KINTERRUPT_POLARITY</a>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A set of flags to control the interrupt-reconfiguration operation. No flags are currently defined for this operation.</p>

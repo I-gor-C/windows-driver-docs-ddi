@@ -7,7 +7,7 @@ old-location: netvista\ndisgetversion.htm
 old-project: netvista
 ms.assetid: d3e2c799-f789-499f-9948-f41d7576296e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisGetVersion
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest_getoutputmemory.htm
 old-project: wdf
 ms.assetid: 12862fb2-4cdb-4446-aa20-ec911c9cd65f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFIoRequest, GetOutputMemory, IWDFIoRequest::GetOutputMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ void GetOutputMemory(
 ## -parameters
 <dl>
 
-### -param <i>ppWdfMemory</i> [out]
+### -param ppWdfMemory [out]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to the reference-counted <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface for the memory object. Note that returning <b>NULL</b> is valid; in this situation, no output memory is associated with the I/O request.</p>
@@ -146,4 +146,4 @@ void GetOutputMemory(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::GetOutputMemory method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::GetOutputMemory method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,19 +56,19 @@ NTSTATUS KsFilterAddTopologyConnections(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p><i>A pointer</i> to the <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> to which to add the new connections.</p>
 </dd>
 
-### -param <i>NewConnectionsCount</i> [in]
+### -param NewConnectionsCount [in]
 
 <dd>
 <p>The number of connections in <i>NewTopologyConnections</i>.</p>
 </dd>
 
-### -param <i>NewTopologyConnections</i> [in]
+### -param NewTopologyConnections [in]
 
 <dd>
 <p>A pointer to an array of <a href="stream.kstopology_connection">KSTOPOLOGY_CONNECTION</a> structures containing the new topology connections.</p>
@@ -81,7 +81,7 @@ NTSTATUS KsFilterAddTopologyConnections(
 ## -remarks
 <p>Note that the filter control mutex must be held before calling this function.</p>
 
-<p>For more information about mutexes, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>For more information about mutexes, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 ## -requirements
 <table>

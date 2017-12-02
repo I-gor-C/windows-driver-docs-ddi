@@ -7,7 +7,7 @@ old-location: netvista\ndismgetoffloadhandlers.htm
 old-project: netvista
 ms.assetid: a78acf5d-07ec-487c-97bd-daca8d08863c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMGetOffloadHandlers
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ NDIS_STATUS NdisMGetOffloadHandlers(
 ## -parameters
 <dl>
 
-### -param <i>NdisMiniportHandle</i> [in]
+### -param NdisMiniportHandle [in]
 
 <dd>
 <p>The handle to a context area that is offload target-allocated in which the offload target
@@ -69,7 +69,7 @@ NDIS_STATUS NdisMGetOffloadHandlers(
      MiniportInitializeEx</a> function.</p>
 </dd>
 
-### -param <i>ChimneyType</i> [in]
+### -param ChimneyType [in]
 
 <dd>
 <p>A chimney type that is one of the following NDIS_CHIMNEY_OFFLOAD_TYPE values:
@@ -77,7 +77,7 @@ NDIS_STATUS NdisMGetOffloadHandlers(
 <p></p>
 <dl>
 
-### -param <a id="NdisTcpChimneyOffload"></a><a id="ndistcpchimneyoffload"></a><a id="NDISTCPCHIMNEYOFFLOAD"></a><b>NdisTcpChimneyOffload</b>
+### -param NdisTcpChimneyOffload
 
 <dd>
 <p>The TCP chimney offload type.</p>
@@ -86,7 +86,7 @@ NDIS_STATUS NdisMGetOffloadHandlers(
 <p>All other NDIS_CHIMNEY_OFFLOAD_TYPE values are currently reserved.</p>
 </dd>
 
-### -param <i>OffloadHandlers</i> [out]
+### -param OffloadHandlers [out]
 
 <dd>
 <p>A pointer to a variable supplied by the offload target. The size of this variable is 
@@ -112,7 +112,7 @@ NDIS_STATUS NdisMGetOffloadHandlers(
 <p></p>
 <dl>
 
-### -param <a id="Header"></a><a id="header"></a><a id="HEADER"></a><b>Header</b>
+### -param Header
 
 <dd>
 <p>Specifies an NDIS object header, which is formatted as an 
@@ -219,4 +219,4 @@ NDIS_STATUS NdisMGetOffloadHandlers(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMGetOffloadHandlers function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMGetOffloadHandlers function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

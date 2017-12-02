@@ -7,7 +7,7 @@ old-location: image\wiaugetvalidformats.htm
 old-project: image
 ms.assetid: 8bf1d76a-2e5b-4e9a-85fc-187fea72d38c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiauGetValidFormats
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ HRESULT _stdcall wiauGetValidFormats(
 ## -parameters
 <dl>
 
-### -param <i>pDrv</i> [in]
+### -param pDrv [in]
 
 <dd>
 <p>Points to the WIA minidriver object. This parameter should be set to <b>this</b>.</p>
 </dd>
 
-### -param <i>pWiasContext</i> [in]
+### -param pWiasContext [in]
 
 <dd>
 <p>Pointer to a WIA item context.</p>
 </dd>
 
-### -param <i>TymedValue</i> 
+### -param TymedValue 
 
 <dd>
 <p>Specifies the tymed value to search for.</p>
 </dd>
 
-### -param <i>pNumFormats</i> [out]
+### -param pNumFormats [out]
 
 <dd>
 <p>Pointer to a memory location that receives the number of formats.</p>
 </dd>
 
-### -param <i>ppFormatArray</i> [out]
+### -param ppFormatArray [out]
 
 <dd>
 <p>Pointer to a memory location that receives the address of the array of format GUIDs.</p>

@@ -55,7 +55,7 @@ VOID RtlFreeUnicodeString(
 ## -parameters
 <dl>
 
-### -param <i>UnicodeString</i> [in, out]
+### -param UnicodeString [in, out]
 
 <dd>
 <p>Pointer to the Unicode string buffer previously allocated by <b>RtlAnsiStringToUnicodeString</b> or <b>RtlUpcaseUnicodeString</b>. </p>

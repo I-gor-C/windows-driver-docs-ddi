@@ -55,13 +55,13 @@ typedef struct _DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>[in] A Boolean value that specifies whether constriction is enabled. The default value is <b>FALSE</b>, which indicates that constriction is disabled. </p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>[in] A <a href="display.size">SIZE</a> structure that specifies the sampling size to which the output image is reduced. <b>Size</b> should be from (1, 1) to (width, height) of the target rectangle. <b>Size</b> should be (0, 0) to represent no constriction. The default value is (1, 1). </p>

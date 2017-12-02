@@ -55,13 +55,13 @@ typedef struct _MPIO_CONTROLLER_CONFIGURATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberControllers</b>
+### -field NumberControllers
 
 <dd>
 <p>An unsigned 32-bitfield that represents the total number of controllers on the system that are known to MPIO.</p>
 </dd>
 
-### -field <b>ControllerInfo</b>
+### -field ControllerInfo
 
 <dd>
 <p>An array with information about all the controllers and all targets in the system. The number of elements of the array is given by <i>NumberControllers</i> and each element of the array is an instance of an MPIO_CONTROLLER_INFO structure.</p>

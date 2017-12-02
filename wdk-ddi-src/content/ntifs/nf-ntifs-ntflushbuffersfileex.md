@@ -56,13 +56,13 @@ NTSTATUS ZwFlushBuffersFileEx(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [in]
+### -param FileHandle [in]
 
 <dd>
 <p>Handle returned by <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> or <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a> for the file whose buffers will be flushed. This parameter is required and cannot be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Flush operation flags. <i>Flags</i> can be 0 or one of the following values.</p>
@@ -74,7 +74,7 @@ NTSTATUS ZwFlushBuffersFileEx(
 <tr>
 <td width="40%"><a id="FLUSH_FLAGS_FILE_DATA_ONLY"></a><a id="flush_flags_file_data_only"></a><dl>
 
-### -param <b>FLUSH_FLAGS_FILE_DATA_ONLY</b>
+### -param FLUSH_FLAGS_FILE_DATA_ONLY
 
 </dl>
 </td>
@@ -85,7 +85,7 @@ NTSTATUS ZwFlushBuffersFileEx(
 <tr>
 <td width="40%"><a id="FLUSH_FLAGS_NO_SYNC"></a><a id="flush_flags_no_sync"></a><dl>
 
-### -param <b>FLUSH_FLAGS_NO_SYNC</b>
+### -param FLUSH_FLAGS_NO_SYNC
 
 </dl>
 </td>
@@ -97,7 +97,7 @@ NTSTATUS ZwFlushBuffersFileEx(
 <p> </p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>Address of the caller's I/O status block. This parameter is required and cannot be <b>NULL</b>.</p>

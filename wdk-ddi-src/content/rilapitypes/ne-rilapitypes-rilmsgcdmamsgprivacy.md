@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmamsgprivacy_2.htm
 old-project: netvista
 ms.assetid: 1a143103-a952-410c-a143-153685f022dd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILMSGCDMAMSGPRIVACY {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGPRIVACYCLASS_RESTRICTED"></a><a id="ril_msgprivacyclass_restricted"></a><b>RIL_MSGPRIVACYCLASS_RESTRICTED</b>
+### -field RIL_MSGPRIVACYCLASS_RESTRICTED
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPRIVACYCLASS_CONFIDENTIAL"></a><a id="ril_msgprivacyclass_confidential"></a><b>RIL_MSGPRIVACYCLASS_CONFIDENTIAL</b>
+### -field RIL_MSGPRIVACYCLASS_CONFIDENTIAL
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPRIVACYCLASS_SECRET"></a><a id="ril_msgprivacyclass_secret"></a><b>RIL_MSGPRIVACYCLASS_SECRET</b>
+### -field RIL_MSGPRIVACYCLASS_SECRET
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPRIVACYCLASS_MAX"></a><a id="ril_msgprivacyclass_max"></a><b>RIL_MSGPRIVACYCLASS_MAX</b>
+### -field RIL_MSGPRIVACYCLASS_MAX
 
 <dd></dd>
 </dl>

@@ -58,19 +58,19 @@ typedef union _PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER {
 ## -struct-fields
 <dl>
 
-### -field <b>CRSSoftwareVisibility</b>
+### -field CRSSoftwareVisibility
 
 <dd>
 <p>A single bit that indicates that the root port is capable of returning configuration request retry status (CRS) completion status to software.</p>
 </dd>
 
-### -field <b>Rsvd</b>
+### -field Rsvd
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>A USHORT representation of the contents of the PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER structure.</p>

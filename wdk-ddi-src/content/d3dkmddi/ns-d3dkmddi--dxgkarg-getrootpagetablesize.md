@@ -55,14 +55,14 @@ typedef struct _DXGKARG_GETROOTPAGETABLESIZE {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfPte</b>
+### -field NumberOfPte
 
 <dd>
 <p>[in] A pointer to the number of page table entries which are required to be in the root page table.</p>
 <p>[out] The actual number of page table entries in the page table with the returned size.</p>
 </dd>
 
-### -field <b>PhysicalAdapterIndex</b>
+### -field PhysicalAdapterIndex
 
 <dd>
 <p>Physical adapter index (zero for non-linked display adapter configurations).</p>

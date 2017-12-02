@@ -7,7 +7,7 @@ old-location: netvista\rilsendmsgoptions_2.htm
 old-project: netvista
 ms.assetid: 84d13b43-06c4-4454-9853-80b1fe65d29d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILSENDMSGOPTIONS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SENDOPT_PERSISTLINK"></a><a id="ril_sendopt_persistlink"></a><b>RIL_SENDOPT_PERSISTLINK</b>
+### -field RIL_SENDOPT_PERSISTLINK
 
 <dd></dd>
 
-### -field <a id="RIL_SENDOPT_IMS"></a><a id="ril_sendopt_ims"></a><b>RIL_SENDOPT_IMS</b>
+### -field RIL_SENDOPT_IMS
 
 <dd></dd>
 </dl>

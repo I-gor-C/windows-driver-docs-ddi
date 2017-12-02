@@ -61,49 +61,49 @@ typedef enum _D3D12DDICAPS_TYPE_VIDEO_0020 {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_SUPPORT"></a><a id="d3d12ddicaps_type_video_0020_decode_support"></a><b>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_SUPPORT</b>
+### -field D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_SUPPORT
 
 <dd>
 <p>Check if a decode profile, bitstream encryption, resolution, and format are supported</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_PROFILES"></a><a id="d3d12ddicaps_type_video_0020_decode_profiles"></a><b>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_PROFILES</b>
+### -field D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_PROFILES
 
 <dd>
 <p>Retrieve the list of decode profiles supported by the adapter.  </p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_FORMATS"></a><a id="d3d12ddicaps_type_video_0020_decode_formats"></a><b>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_FORMATS</b>
+### -field D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_FORMATS
 
 <dd>
 <p> Retrieves the supported decode formats. </p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_CONVERSION_SUPPORT"></a><a id="d3d12ddicaps_type_video_0020_decode_conversion_support"></a><b>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_CONVERSION_SUPPORT</b>
+### -field D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_CONVERSION_SUPPORT
 
 <dd>
 <p>Check whether a colorspace conversion, format conversion, and scale are supported.  </p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_BITSTREAM_ENCRYPTION_SCHEMES"></a><a id="d3d12ddicaps_type_video_0020_decode_bitstream_encryption_schemes"></a><b>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_BITSTREAM_ENCRYPTION_SCHEMES</b>
+### -field D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_BITSTREAM_ENCRYPTION_SCHEMES
 
 <dd>
 <p>Retrieve the list of bitstream encryption schemes supported by the adapter. </p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_SUPPORT"></a><a id="d3d12ddicaps_type_video_0020_process_support"></a><b>D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_SUPPORT</b>
+### -field D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_SUPPORT
 
 <dd>
 <p>Retrieves the video processor capabilities.  </p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_MAX_INPUT_STREAMS"></a><a id="d3d12ddicaps_type_video_0020_process_max_input_streams"></a><b>D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_MAX_INPUT_STREAMS</b>
+### -field D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_MAX_INPUT_STREAMS
 
 <dd>
 <p>The maximum number of streams that can be enabled at the same time.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_REFERENCE_INFO"></a><a id="d3d12ddicaps_type_video_0020_process_reference_info"></a><b>D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_REFERENCE_INFO</b>
+### -field D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_REFERENCE_INFO
 
 <dd>
 <p>Retrieves the number of past and future frames required for a given deinterlace mode, filters, frame rate conversion, and features.  </p>

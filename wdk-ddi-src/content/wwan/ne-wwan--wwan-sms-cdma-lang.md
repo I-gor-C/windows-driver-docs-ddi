@@ -7,7 +7,7 @@ old-location: netvista\wwan_sms_cdma_lang.htm
 old-project: netvista
 ms.assetid: 5294ce07-a4eb-4c21-88f1-04889dfbc1a1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,55 +64,55 @@ typedef enum _WWAN_SMS_CDMA_LANG {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanSmsCdmaLangUnknown"></a><a id="wwansmscdmalangunknown"></a><a id="WWANSMSCDMALANGUNKNOWN"></a><b>WwanSmsCdmaLangUnknown</b>
+### -field WwanSmsCdmaLangUnknown
 
 <dd>
 <p>The message language is unknown.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaLangEnglish"></a><a id="wwansmscdmalangenglish"></a><a id="WWANSMSCDMALANGENGLISH"></a><b>WwanSmsCdmaLangEnglish</b>
+### -field WwanSmsCdmaLangEnglish
 
 <dd>
 <p>The message is in English.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaLangFrench"></a><a id="wwansmscdmalangfrench"></a><a id="WWANSMSCDMALANGFRENCH"></a><b>WwanSmsCdmaLangFrench</b>
+### -field WwanSmsCdmaLangFrench
 
 <dd>
 <p>The message is in French.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaLangSpanish"></a><a id="wwansmscdmalangspanish"></a><a id="WWANSMSCDMALANGSPANISH"></a><b>WwanSmsCdmaLangSpanish</b>
+### -field WwanSmsCdmaLangSpanish
 
 <dd>
 <p>The message is in Spanish.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaLangJapanese"></a><a id="wwansmscdmalangjapanese"></a><a id="WWANSMSCDMALANGJAPANESE"></a><b>WwanSmsCdmaLangJapanese</b>
+### -field WwanSmsCdmaLangJapanese
 
 <dd>
 <p>The message is in Japanese.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaLangKorean"></a><a id="wwansmscdmalangkorean"></a><a id="WWANSMSCDMALANGKOREAN"></a><b>WwanSmsCdmaLangKorean</b>
+### -field WwanSmsCdmaLangKorean
 
 <dd>
 <p>The message is in Korean.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaLangChinese"></a><a id="wwansmscdmalangchinese"></a><a id="WWANSMSCDMALANGCHINESE"></a><b>WwanSmsCdmaLangChinese</b>
+### -field WwanSmsCdmaLangChinese
 
 <dd>
 <p>The message is in Chinese.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaLangHebrew"></a><a id="wwansmscdmalanghebrew"></a><a id="WWANSMSCDMALANGHEBREW"></a><b>WwanSmsCdmaLangHebrew</b>
+### -field WwanSmsCdmaLangHebrew
 
 <dd>
 <p>The message is in Hebrew.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaLangMax"></a><a id="wwansmscdmalangmax"></a><a id="WWANSMSCDMALANGMAX"></a><b>WwanSmsCdmaLangMax</b>
+### -field WwanSmsCdmaLangMax
 
 <dd>
 <p>The total number of supported SMS CDMA languages.</p>
@@ -155,4 +155,4 @@ typedef enum _WWAN_SMS_CDMA_LANG {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_CDMA_LANG enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_CDMA_LANG enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

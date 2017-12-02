@@ -55,7 +55,7 @@ HRESULT Cancel(
 ## -parameters
 <dl>
 
-### -param <i>void</i> 
+### -param void 
 
 <dd>
 <p>None.</p>

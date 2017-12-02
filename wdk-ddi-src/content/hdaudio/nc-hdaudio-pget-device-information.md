@@ -59,13 +59,13 @@ NTSTATUS GetDeviceInformation(
 ## -parameters
 <dl>
 
-### -param <i>context</i> [in]
+### -param context [in]
 
 <dd>
 <p>Specifies the context value from the <b>Context</b> member of the <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface.md">HDAUDIO_BUS_INTERFACE</a> or the <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-v2.md">HDAUDIO_BUS_INTERFACE_V2</a> structure.</p>
 </dd>
 
-### -param <i>deviceInformation</i> [in, out]
+### -param deviceInformation [in, out]
 
 <dd>
 <p>Retrieves information about the HD Audio controller device. This parameter points to a caller-allocated <a href="..\hdaudio\ns-hdaudio--hdaudio-device-information.md">HDAUDIO_DEVICE_INFORMATION</a> structure into which the routine writes the device information.</p>

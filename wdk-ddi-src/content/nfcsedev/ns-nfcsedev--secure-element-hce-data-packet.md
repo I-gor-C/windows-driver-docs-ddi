@@ -56,19 +56,19 @@ typedef struct _SECURE_ELEMENT_HCE_DATA_PACKET {
 ## -struct-fields
 <dl>
 
-### -field <b>bConnectionId</b>
+### -field bConnectionId
 
 <dd>
 <p>The ID of the connection established between the device and the smart card reader, on which to send and receive the HCE packet. This ID is also received from <a href="..\nfcsedev\ni-nfcsedev-ioctl-nfcse-get-next-event.md">IOCTL_NFCSE_GET_NEXT_EVENT</a> when the event type (<a href="..\nfcsedev\ne-nfcsedev--secure-element-event-type.md">SECURE_ELEMENT_EVENT_TYPE</a>) is <b>HceActivated</b> or <b>HceDeactivated</b>. Then the <b>pbEventData</b> field of the returned <a href="..\nfcsedev\ns-nfcsedev--secure-element-event-info.md">SECURE_ELEMENT_EVENT_INFO</a> structure is a <a href="..\nfcsedev\ns-nfcsedev--secure-element-hce-activation-payload.md">SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD</a> structure, which contains a <b>bConnectionId</b> member.</p>
 </dd>
 
-### -field <b>cbPayload</b>
+### -field cbPayload
 
 <dd>
 <p>Length of ISO 7816-4 APDU buffer.</p>
 </dd>
 
-### -field <b>pbPayload[ANYSIZE_ARRAY]</b>
+### -field pbPayload[ANYSIZE_ARRAY]
 
 <dd>
 <p>Buffer holding ISO 7816-4 APDU.</p>

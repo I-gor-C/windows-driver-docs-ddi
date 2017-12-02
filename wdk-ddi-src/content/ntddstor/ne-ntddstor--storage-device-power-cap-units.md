@@ -55,13 +55,13 @@ typedef enum _STORAGE_DEVICE_POWER_CAP_UNITS {
 ## -enum-fields
 <dl>
 
-### -field <a id="StorageDevicePowerCapUnitsPercent"></a><a id="storagedevicepowercapunitspercent"></a><a id="STORAGEDEVICEPOWERCAPUNITSPERCENT"></a><b>StorageDevicePowerCapUnitsPercent</b>
+### -field StorageDevicePowerCapUnitsPercent
 
 <dd>
 <p>Units in percent.</p>
 </dd>
 
-### -field <a id="StorageDevicePowerCapUnitsMilliwatts"></a><a id="storagedevicepowercapunitsmilliwatts"></a><a id="STORAGEDEVICEPOWERCAPUNITSMILLIWATTS"></a><b>StorageDevicePowerCapUnitsMilliwatts</b>
+### -field StorageDevicePowerCapUnitsMilliwatts
 
 <dd>
 <p>Units in milliwatts.</p>

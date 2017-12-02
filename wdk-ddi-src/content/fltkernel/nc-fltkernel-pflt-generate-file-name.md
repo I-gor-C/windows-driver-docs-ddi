@@ -7,7 +7,7 @@ old-location: ifsk\pflt_generate_file_name.htm
 old-project: ifsk
 ms.assetid: 04e7e4db-2cf6-4312-8964-2c69c96953a3
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: IXpsPartIterator, Reset, IXpsPartIterator::Reset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,38 +62,38 @@ NTSTATUS GenerateFileNameCallback(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>Opaque instance pointer for the minifilter driver instance that this callback routine is registered for. </p>
 </dd>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>A pointer to a file object for the file whose name is being requested. </p>
 </dd>
 
-### -param <i>CallbackData</i> [in, optional]
+### -param CallbackData [in, optional]
 
 <dd>
 <p>A pointer to the callback data structure for the operation during which this name is being requested. This parameter is <b>NULL</b> when <a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformationunsafe.md">FltGetFileNameInformationUnsafe</a> is called to retrieve the name of the file.</p>
 </dd>
 
-### -param <i>NameOptions</i> [in]
+### -param NameOptions [in]
 
 <dd>
 <p>
 <a href="ifsk.flt_file_name_options">FLT_FILE_NAME_OPTIONS</a> value that specifies the name format, query method, and flags for this file name information query. </p>
 </dd>
 
-### -param <i>CacheFileNameInformation</i> [out]
+### -param CacheFileNameInformation [out]
 
 <dd>
 <p>A pointer to a Boolean value specifying whether this name can be cached. Set to <b>TRUE</b> on output if the name can be cached; set to <b>FALSE</b> otherwise. </p>
 </dd>
 
-### -param <i>FileName</i> [out]
+### -param FileName [out]
 
 <dd>
 <p>A pointer to a filter manager-allocated <a href="..\fltkernel\ns-fltkernel--flt-name-control.md">FLT_NAME_CONTROL</a> structure to receive the file name on output. </p>
@@ -219,4 +219,4 @@ NTSTATUS GenerateFileNameCallback(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_GENERATE_FILE_NAME routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_GENERATE_FILE_NAME routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

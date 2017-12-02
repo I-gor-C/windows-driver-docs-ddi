@@ -57,25 +57,25 @@ typedef enum _HDAUDIO_STREAM_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="ResetState"></a><a id="resetstate"></a><a id="RESETSTATE"></a><b>ResetState</b>
+### -field ResetState
 
 <dd>
 <p>The reset state.</p>
 </dd>
 
-### -field <a id="StopState"></a><a id="stopstate"></a><a id="STOPSTATE"></a><b>StopState</b>
+### -field StopState
 
 <dd>
 <p>The stop state.</p>
 </dd>
 
-### -field <a id="PauseState"></a><a id="pausestate"></a><a id="PAUSESTATE"></a><b>PauseState</b>
+### -field PauseState
 
 <dd>
 <p>The pause state.</p>
 </dd>
 
-### -field <a id="RunState"></a><a id="runstate"></a><a id="RUNSTATE"></a><b>RunState</b>
+### -field RunState
 
 <dd>
 <p>The run state.</p>

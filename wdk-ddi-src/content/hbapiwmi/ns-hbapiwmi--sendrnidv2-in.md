@@ -57,25 +57,25 @@ typedef struct _SendRNIDV2_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>Contains a worldwide name for the local port through which the version 2 request node identification data (RNIDV2) command is sent. </p>
 </dd>
 
-### -field <b>DestWWN</b>
+### -field DestWWN
 
 <dd>
 <p>Contains a worldwide name for the destination port. </p>
 </dd>
 
-### -field <b>DestFCID</b>
+### -field DestFCID
 
 <dd>
 <p>Contains an address identifier of the destination port. For a description of the values that this member can have, see the T11 committee's specification for <i>Fibre Channel HBA API</i>.</p>
 </dd>
 
-### -field <b>NodeIdDataFormat</b>
+### -field NodeIdDataFormat
 
 <dd>
 <p>Indicates the node identification data format. For a description of the values that this member can have, see the T11 committee's specification for <i>Fibre Channel HBA API</i>. </p>

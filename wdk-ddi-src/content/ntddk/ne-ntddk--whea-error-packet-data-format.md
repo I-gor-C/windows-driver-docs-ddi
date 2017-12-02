@@ -62,55 +62,55 @@ typedef enum _WHEA_ERROR_PACKET_DATA_FORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="WheaDataFormatIPFSalRecord"></a><a id="wheadataformatipfsalrecord"></a><a id="WHEADATAFORMATIPFSALRECORD"></a><b>WheaDataFormatIPFSalRecord</b>
+### -field WheaDataFormatIPFSalRecord
 
 <dd>
 <p>The raw data in the hardware error packet contains an Itanium processor family system abstraction layer (SAL) error record. For more information about the format of a SAL error record, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=72212">Intel Itanium Processor Family System Abstraction Layer Specification</a>.</p>
 </dd>
 
-### -field <a id="WheaDataFormatXPFMCA"></a><a id="wheadataformatxpfmca"></a><a id="WHEADATAFORMATXPFMCA"></a><b>WheaDataFormatXPFMCA</b>
+### -field WheaDataFormatXPFMCA
 
 <dd>
 <p>The raw data in the hardware error packet is formatted as an MCA_EXCEPTION structure. For more information about the MCA_EXCEPTION structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540659">HalQuerySystemInformation</a>.</p>
 </dd>
 
-### -field <a id="WheaDataFormatMemory"></a><a id="wheadataformatmemory"></a><a id="WHEADATAFORMATMEMORY"></a><b>WheaDataFormatMemory</b>
+### -field WheaDataFormatMemory
 
 <dd>
 <p>The raw data in the hardware error packet contains memory error data. The format of this error data is dependent on the memory architecture.</p>
 </dd>
 
-### -field <a id="WheaDataFormatPCIExpress"></a><a id="wheadataformatpciexpress"></a><a id="WHEADATAFORMATPCIEXPRESS"></a><b>WheaDataFormatPCIExpress</b>
+### -field WheaDataFormatPCIExpress
 
 <dd>
 <p>The raw data in the hardware error packet is formatted as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a> structure.</p>
 </dd>
 
-### -field <a id="WheaDataFormatNMIPort"></a><a id="wheadataformatnmiport"></a><a id="WHEADATAFORMATNMIPORT"></a><b>WheaDataFormatNMIPort</b>
+### -field WheaDataFormatNMIPort
 
 <dd>
 <p>The raw data in the hardware error packet contains the data that was read from the nonmaskable interrupt (NMI) I/O ports by the NMI low-level hardware error handler (LLHEH). The format of this error data is specific to the implementation.</p>
 </dd>
 
-### -field <a id="WheaDataFormatPCIXBus"></a><a id="wheadataformatpcixbus"></a><a id="WHEADATAFORMATPCIXBUS"></a><b>WheaDataFormatPCIXBus</b>
+### -field WheaDataFormatPCIXBus
 
 <dd>
 <p>The raw data in the hardware error packet contains PCI/PCI-X bus error data. The format of this error data is specific to the implementation.</p>
 </dd>
 
-### -field <a id="WheaDataFormatPCIXDevice"></a><a id="wheadataformatpcixdevice"></a><a id="WHEADATAFORMATPCIXDEVICE"></a><b>WheaDataFormatPCIXDevice</b>
+### -field WheaDataFormatPCIXDevice
 
 <dd>
 <p>The raw data in the hardware error packet contains a PCI/PCI-X device error data. The format of this error data is specific to the implementation.</p>
 </dd>
 
-### -field <a id="WheaDataFormatGeneric"></a><a id="wheadataformatgeneric"></a><a id="WHEADATAFORMATGENERIC"></a><b>WheaDataFormatGeneric</b>
+### -field WheaDataFormatGeneric
 
 <dd>
 <p>The raw data in the hardware error packet is formatted as a <a href="..\ntddk\ns-ntddk--whea-generic-error.md">WHEA_GENERIC_ERROR</a> structure.</p>
 </dd>
 
-### -field <a id="WheaDataFormatMax"></a><a id="wheadataformatmax"></a><a id="WHEADATAFORMATMAX"></a><b>WheaDataFormatMax</b>
+### -field WheaDataFormatMax
 
 <dd>
 <p>The maximum number of formats of raw hardware error data.</p>

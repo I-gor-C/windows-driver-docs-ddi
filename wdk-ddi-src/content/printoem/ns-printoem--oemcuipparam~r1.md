@@ -69,67 +69,67 @@ typedef struct _OEMCUIPPARAM {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Size of the OEMCUIPPARAM structure. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>poemuiobj</b>
+### -field poemuiobj
 
 <dd>
 <p>Pointer to an <a href="..\printoem\ns-printoem--oemuiobj.md">OEMUIOBJ</a> structure.</p>
 </dd>
 
-### -field <b>hPrinter</b>
+### -field hPrinter
 
 <dd>
 <p>Handle to the printer. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>pPrinterName</b>
+### -field pPrinterName
 
 <dd>
 <p>String containing the printer name. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>hModule</b>
+### -field hModule
 
 <dd>
 <p>Handle to the user interface plug-in. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>hOEMHeap</b>
+### -field hOEMHeap
 
 <dd>
 <p>Handle to a heap from which space can be allocated by calling the <b>HeapAlloc</b> function (described in the Microsoft Windows SDK documentation). Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>pPublicDM</b>
+### -field pPublicDM
 
 <dd>
 <p>Pointer to the printer's public DEVMODEW structure. Valid only if the <a href="print.iprintoemui_commonuiprop">IPrintOemUI::CommonUIProp</a> method's <i>dwMode</i> argument is OEMCUIP_DOCPROP. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>pOEMDM</b>
+### -field pOEMDM
 
 <dd>
 <p>Pointer to the user interface plug-in's private DEVMODEW members. Valid only if the <b>IPrintOemUI::CommonUIProp</b> method's <i>dwMode</i> argument is OEMCUIP_DOCPROP. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p></p>
 <dl>
 
-### -field <a id="For_calls_to_IPrintOemUI__CommonUIProp_with_its_dwMode_parameter_set_to_OEMCUIP_DOCPROP_"></a><a id="for_calls_to_iprintoemui__commonuiprop_with_its_dwmode_parameter_set_to_oemcuip_docprop_"></a><a id="FOR_CALLS_TO_IPRINTOEMUI__COMMONUIPROP_WITH_ITS_DWMODE_PARAMETER_SET_TO_OEMCUIP_DOCPROP_"></a>For calls to <b>IPrintOemUI::CommonUIProp</b> with its <i>dwMode</i> parameter set to OEMCUIP_DOCPROP:
+### -field For calls to IPrintOemUI::CommonUIProp with its dwMode parameter set to OEMCUIP_DOCPROP:
 
 <dd>
 <p>Contains the contents of the <b>fMode</b> member of the <a href="..\winddiui\ns-winddiui--documentpropertyheader.md">DOCUMENTPROPERTYHEADER</a> structure received by the printer driver's <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a> function.</p>
 </dd>
 
-### -field <a id="For_calls_to_IPrintOemUI__CommonUIProp_with_its_dwMode_parameter_set_to_OEMCUIP_PRNPROP_"></a><a id="for_calls_to_iprintoemui__commonuiprop_with_its_dwmode_parameter_set_to_oemcuip_prnprop_"></a><a id="FOR_CALLS_TO_IPRINTOEMUI__COMMONUIPROP_WITH_ITS_DWMODE_PARAMETER_SET_TO_OEMCUIP_PRNPROP_"></a>For calls to <b>IPrintOemUI::CommonUIProp</b> with its <i>dwMode</i> parameter set to OEMCUIP_PRNPROP:
+### -field For calls to IPrintOemUI::CommonUIProp with its dwMode parameter set to OEMCUIP_PRNPROP:
 
 <dd>
 <p>Contains the contents of the <b>Flags</b> member of the DEVICEPROPERTYHEADER structure received by the printer driver's <a href="..\winddiui\nf-winddiui-drvdevicepropertysheets.md">DrvDevicePropertySheets</a> function.</p>
@@ -137,19 +137,19 @@ typedef struct _OEMCUIPPARAM {
 </dl>
 </dd>
 
-### -field <b>pDrvOptItems</b>
+### -field pDrvOptItems
 
 <dd>
 <p>Pointer to the printer driver's <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> array. Not valid the first time <b>IPrintOemUI::CommonUIProp</b> is called. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>cDrvOptItems</b>
+### -field cDrvOptItems
 
 <dd>
 <p>Count of OPTITEM structures in the array pointed to by <b>pDrvOptItems</b>. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>pOEMOptItems</b>
+### -field pOEMOptItems
 
 <dd>
 <p>Pointer to an array of OPTITEM structures. Supplied by <b>IPrintOemUI::CommonUIProp</b> caller. The second time the <b>IPrintOemUI::CommonUIProp</b> method is called, it must place OPTITEM structures defined by the user interface plug-in in this array, and it must place the structure count in <b>cOEMOptItems</b>. For each OPTITEM structure placed in the array, you must do the following:</p>
@@ -164,20 +164,20 @@ typedef struct _OEMCUIPPARAM {
 <p>Not valid the first time <b>IPrintOemUI::CommonUIProp</b> is called.</p>
 </dd>
 
-### -field <b>cOEMOptItems</b>
+### -field cOEMOptItems
 
 <dd>
 <p>Count of OPTITEM structures contained in the array pointed by <b>pOEMOptItems</b>. Supplied by the Unidrv or Pscript5 driver.</p>
 <p>The first time the <b>IPrintOemUI::CommonUIProp</b> method is called, the caller-supplied value for <b>cOEMOptItems</b> is zero. The <b>IPrintOemUI::CommonUIProp</b> method must change this value to indicate the number of OPTITEM structures that the method supplies. The second time it is called, <b>IPrintOemUI::CommonUIProp</b> must supply the number of OPTITEM structures actually added to the array pointed to by <b>pOEMOptItems</b>.</p>
 </dd>
 
-### -field <b>pOEMUserData</b>
+### -field pOEMUserData
 
 <dd>
 <p>Used by the <b>IPrintOemUI::CommonUIProp</b> method, the second time it is called, to provide the <b>OEMCUIPCallback</b> function with optional extra input information.</p>
 </dd>
 
-### -field <b>OEMCUIPCallback</b>
+### -field OEMCUIPCallback
 
 <dd>
 <p>Used by the <b>IPrintOemUI::CommonUIProp</b> method, the second time it is called, to return the address of a callback function of type <a href="..\printoem\nc-printoem-oemcuipcallback.md">OEMCUIPCALLBACK</a>.</p>
@@ -187,7 +187,7 @@ typedef struct _OEMCUIPPARAM {
 ## -remarks
 <p>A user interface plug-in receives this structure's address as an input argument to both its <a href="print.iprintoemui_commonuiprop">IPrintOemUI::CommonUIProp</a> method and its <a href="..\printoem\nc-printoem-oemcuipcallback.md">OEMCUIPCALLBACK</a>-typed callback function.</p>
 
-<p>For additional information about the use of this structure and associated functions, see <a href="NULL">User Interface Plug-Ins</a>.</p>
+<p>For additional information about the use of this structure and associated functions, see <a href="https://msdn.microsoft.com/22ac2af6-37d8-4913-95af-9c3dc8576d40">User Interface Plug-Ins</a>.</p>
 
 ## -requirements
 <table>

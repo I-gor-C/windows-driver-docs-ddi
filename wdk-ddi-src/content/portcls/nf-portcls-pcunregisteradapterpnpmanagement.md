@@ -54,7 +54,7 @@ PORTCLASSAPI NTSTATUS NTAPI PcUnregisterAdapterPnpManagement(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Specifies a pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.</p>
@@ -72,7 +72,7 @@ PORTCLASSAPI NTSTATUS NTAPI PcUnregisterAdapterPnpManagement(
 <p>Portcls uses <a href="..\portcls\nf-portcls-pcregisteradapterpnpmanagement.md">PcRegisterAdapterPnpManagement</a> and <b>PcUnregisterAdapterPnpManagement</b> to support PNP rebalance. 
 </p>
 
-<p>For more information,  see <a href="NULL">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>
+<p>For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430A-BCAF-04E13FA15382">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>
 
 ## -requirements
 <table>

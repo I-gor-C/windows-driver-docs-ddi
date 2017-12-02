@@ -55,7 +55,7 @@ BOOLEAN IoCancelIrp(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>A pointer to the IRP to be canceled.</p>

@@ -55,13 +55,13 @@ typedef struct _AVC_PRECONNECT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>PinId</b>
+### -field PinId
 
 <dd>
 <p>Specifies the offset (or ID) of the pin for which information is to be retrieved.</p>
 </dd>
 
-### -field <b>ConnectInfo</b>
+### -field ConnectInfo
 
 <dd>
 <p>The AVCPRECONNECTINFO values for the specified pin.</p>

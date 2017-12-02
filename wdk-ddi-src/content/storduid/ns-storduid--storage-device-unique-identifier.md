@@ -59,31 +59,31 @@ typedef struct _STORAGE_DEVICE_UNIQUE_IDENTIFIER {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the DUID.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of the identifier header and the identifiers (IDs) that follow the header.</p>
 </dd>
 
-### -field <b>StorageDeviceIdOffset</b>
+### -field StorageDeviceIdOffset
 
 <dd>
 <p>The offset, in bytes, from the beginning of the header to the device ID descriptor (<a href="..\ntddstor\ns-ntddstor--storage-device-id-descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>). The device ID descriptor contains the IDs that are extracted from page 0x83 of the device's vital product data (VPD).</p>
 </dd>
 
-### -field <b>StorageDeviceOffset</b>
+### -field StorageDeviceOffset
 
 <dd>
 <p>The offset, in bytes, from the beginning of the header to the device descriptor (<a href="..\ntddstor\ns-ntddstor--storage-device-descriptor.md">STORAGE_DEVICE_DESCRIPTOR</a>). The device descriptor contains IDs that are extracted from non-VPD inquiry data.</p>
 </dd>
 
-### -field <b>DriveLayoutSignatureOffset</b>
+### -field DriveLayoutSignatureOffset
 
 <dd>
 <p>The offset, in bytes, to the drive layout signature (<a href="..\storduid\ns-storduid--storage-device-layout-signature.md">STORAGE_DEVICE_LAYOUT_SIGNATURE</a>).</p>

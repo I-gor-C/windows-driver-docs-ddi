@@ -60,25 +60,25 @@ __checkReturn HRESULT APIENTRY DrawRectPatch(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-drawrectpatch.md">D3DDDIARG_DRAWRECTPATCH</a> structure that describes the rectangular patch to draw.</p>
 </dd>
 
-### -param <i>pInfo</i> [in]
+### -param pInfo [in]
 
 <dd>
 <p> Optional. A pointer to a D3DDDIRECTPATCH_INFO structure that describes information about the rectangular patch.</p>
 </dd>
 
-### -param <i>pPatch</i> [in]
+### -param pPatch [in]
 
 <dd>
 <p> Optional. A pointer to a buffer that contains four floating-point values (D3DFLOAT[4]) that provide the segment counts for each of the four edges of the rectangular patch.</p>

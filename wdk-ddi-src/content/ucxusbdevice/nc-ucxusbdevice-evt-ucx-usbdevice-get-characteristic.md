@@ -63,23 +63,23 @@ typedef EVT_UCX_USBDEVICE_GET_CHARACTERISTIC *PFN_UCX_USBDEVICE_GET_CHARACTERIST
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>UcxUsbDevice</i> [in]
+### -param UcxUsbDevice [in]
 
 <dd>
-<p>A handle to a UCX object that represents the USB device that the client driver received in a previous call to the <a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a> method.</p>
+<p>A handle to a UCX object that represents the USB device that the client driver received in a previous call to the <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a> method.</p>
 </dd>
 
-### -param <i>UcxUsbDeviceCharacteristic
+### -param UcxUsbDeviceCharacteristic
 </i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="buses.ucx_usbdevice_characteristic">UCX_USBDEVICE_CHARACTERISTIC</a> structure that contains the type of characteristic in which the caller is interested. The client driver fills the value of the requested  characteristic. For example, if the type indicates <a href="buses.ucx_usbdevice_characteristic_path_delay">UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY</a>, the driver fills the <b>UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY</b> structure, pointed to by <b>PathDelay</b> member, with the appropriate maximum and send path delay values.</p>
+<p>A pointer to a <a href="..\ucxusbdevice\ns-ucxusbdevice--ucx-usbdevice-characteristic.md">UCX_USBDEVICE_CHARACTERISTIC</a> structure that contains the type of characteristic in which the caller is interested. The client driver fills the value of the requested  characteristic. For example, if the type indicates <a href="..\ucxusbdevice\ns-ucxusbdevice--ucx-usbdevice-characteristic-path-delay.md">UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY</a>, the driver fills the <b>UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY</b> structure, pointed to by <b>PathDelay</b> member, with the appropriate maximum and send path delay values.</p>
 </dd>
 </dl>
 
@@ -87,7 +87,7 @@ typedef EVT_UCX_USBDEVICE_GET_CHARACTERISTIC *PFN_UCX_USBDEVICE_GET_CHARACTERIST
 <p>If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it must return a status value for which NT_SUCCESS(status) equals FALSE.</p>
 
 ## -remarks
-<p>The UCX client driver registers its implementation with the USB host controller extension (UCX) by calling the <a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a> method.</p>
+<p>The UCX client driver registers its implementation with the USB host controller extension (UCX) by calling the <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a> method.</p>
 
 ## -requirements
 <table>

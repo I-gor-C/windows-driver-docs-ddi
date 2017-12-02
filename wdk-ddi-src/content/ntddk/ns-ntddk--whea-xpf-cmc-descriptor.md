@@ -59,37 +59,37 @@ typedef struct _WHEA_XPF_CMC_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_XPFCMC.</p>
 </dd>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>A Boolean value that indicates if the error source is enabled.</p>
 </dd>
 
-### -field <b>NumberOfBanks</b>
+### -field NumberOfBanks
 
 <dd>
 <p>The number of <a href="..\ntddk\ns-ntddk--whea-xpf-mc-bank-descriptor.md">WHEA_XPF_MC_BANK_DESCRIPTOR</a> structures contained in the <b>Banks</b> member.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Notify</b>
+### -field Notify
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-notification-descriptor.md">WHEA_NOTIFICATION_DESCRIPTOR</a> structure that describes the notification mechanism that is used by the error source.</p>
 </dd>
 
-### -field <b>Banks</b>
+### -field Banks
 
 <dd>
 <p>An array of <a href="..\ntddk\ns-ntddk--whea-xpf-mc-bank-descriptor.md">WHEA_XPF_MC_BANK_DESCRIPTOR</a> structures that describe the banks of machine check registers.</p>

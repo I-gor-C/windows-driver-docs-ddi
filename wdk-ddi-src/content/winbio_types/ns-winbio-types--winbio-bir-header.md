@@ -69,13 +69,13 @@ typedef struct _WINBIO_BIR_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>ValidFields</b>
+### -field ValidFields
 
 <dd>
 <p>A Patron Format A bitmask that indicates which CBEFF optional fields are present in the BIR. For more information about all members of WINBIO_BIR_HEADER, follow the link in the Remarks section to the <i>NISTIR 6529-A Specification</i>. </p>
 </dd>
 
-### -field <b>HeaderVersion</b>
+### -field HeaderVersion
 
 <dd>
 <p>A structure of type WINBIO_BIR_VERSION that specifies the CBEFF header version.</p>
@@ -92,37 +92,37 @@ typedef struct _WINBIO_BIR_HEADER {
 </table></span></div>
 </dd>
 
-### -field <b>PatronHeaderVersion</b>
+### -field PatronHeaderVersion
 
 <dd>
 <p>A structure of type WINBIO_BIR_VERSION that specifies PATRON_HEADER_VERSION.</p>
 </dd>
 
-### -field <b>DataFlags</b>
+### -field DataFlags
 
 <dd>
 <p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536461">WINBIO_BIR_DATA_FLAGS</a> that specifies the level of processing expected for a data capture.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536458">WINBIO_BIOMETRIC_TYPE</a> that specifies the biometric type.</p>
 </dd>
 
-### -field <b>Subtype</b>
+### -field Subtype
 
 <dd>
 <p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536457">WINBIO_BIOMETRIC_SENSOR_SUBTYPE</a> that specifies the biometric subtype.</p>
 </dd>
 
-### -field <b>Purpose</b>
+### -field Purpose
 
 <dd>
 <p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536463">WINBIO_BIR_PURPOSE</a> that specifies the intended use of the data.</p>
 </dd>
 
-### -field <b>DataQuality</b>
+### -field DataQuality
 
 <dd>
 <p>A structure of type WINBIO_BIR_QUALITY that specifies the biometric data quality. Quality measurements are represented as signed integers in the range 0-100, except:</p>
@@ -140,25 +140,25 @@ typedef struct _WINBIO_BIR_HEADER {
 </table></span></div>
 </dd>
 
-### -field <b>CreationDate</b>
+### -field CreationDate
 
 <dd>
 <p>Specifies the creation date and time of this BIR in UTC by using the format YYYYMMDDhhmmss.</p>
 </dd>
 
-### -field <b>ValidityPeriod</b>
+### -field ValidityPeriod
 
 <dd>
 <p>Specifies the validity period of this BIR by using the format described in <i>CreationDate</i>.</p>
 </dd>
 
-### -field <b>BiometricDataFormat</b>
+### -field BiometricDataFormat
 
 <dd>
 <p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-registered-format.md">WINBIO_REGISTERED_FORMAT</a> that specifies the data format of the <b>StandardDataBlock</b> for this <a href="..\winbio_types\ns-winbio-types--winbio-bir.md">WINBIO_BIR</a>.</p>
 </dd>
 
-### -field <b>ProductId</b>
+### -field ProductId
 
 <dd>
 <p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-registered-format.md">WINBIO_REGISTERED_FORMAT</a> that specifies the product identifier for the component that generated the <b>StandardDataBlock</b> for this WINBIO_BIR.</p>

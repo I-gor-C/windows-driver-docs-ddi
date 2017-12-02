@@ -61,49 +61,49 @@ NTSTATUS __stdcall HidP_GetScaledUsageValue(
 ## -parameters
 <dl>
 
-### -param <i>ReportType</i> [in]
+### -param ReportType [in]
 
 <dd>
 <p>Specifies a <b>HIDP_REPORT_TYPE</b> enumerator value that identifies the type of HID report that contains the <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">HID usage</a> value.</p>
 </dd>
 
-### -param <i>UsagePage</i> [in]
+### -param UsagePage [in]
 
 <dd>
 <p>Specifies the usage page of the value to extract.</p>
 </dd>
 
-### -param <i>LinkCollection</i> [in]
+### -param LinkCollection [in]
 
 <dd>
 <p>Specifies the link collection identifier of the value to extract. A LinkCollection value of zero identifies the top-level collection.</p>
 </dd>
 
-### -param <i>Usage</i> [in]
+### -param Usage [in]
 
 <dd>
 <p>Specifies the usage of the value to extract.</p>
 </dd>
 
-### -param <i>UsageValue</i> [out]
+### -param UsageValue [out]
 
 <dd>
 <p>Pointer to the buffer in which the routine returns the signed and scaled value.</p>
 </dd>
 
-### -param <i>PreparsedData</i> [in]
+### -param PreparsedData [in]
 
 <dd>
-<p>Pointer to the <a href="NULL">preparsed data</a> of the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> that generated the report located at <i>Report</i>.</p>
+<p>Pointer to the <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a> of the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> that generated the report located at <i>Report</i>.</p>
 </dd>
 
-### -param <i>Report</i> [in]
+### -param Report [in]
 
 <dd>
 <p>Pointer to the report that contains the usage.</p>
 </dd>
 
-### -param <i>ReportLength</i> [in]
+### -param ReportLength [in]
 
 <dd>
 <p>Specifies the length, in bytes, of the report located at <i>Report</i>.</p>
@@ -138,7 +138,7 @@ NTSTATUS __stdcall HidP_GetScaledUsageValue(
 
 <p>If the routine returns status HIDP_STATUS_BAD_LOG_PHY_VALUES, an application or driver can call <a href="..\hidpi\nf-hidpi-hidp-getusagevalue.md">HidP_GetUsageValue</a> to extract the raw usage data.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

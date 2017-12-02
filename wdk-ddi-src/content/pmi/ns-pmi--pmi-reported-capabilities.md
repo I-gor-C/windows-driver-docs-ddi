@@ -67,32 +67,32 @@ typedef struct _PMI_REPORTED_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitmask that specifies the supported capabilities of the power meter. The following flags define the range of values for this member:</p>
 <p></p>
 <dl>
 
-### -field <a id="PMI_CAPABILITIES_SUPPORT_MEASUREMENT"></a><a id="pmi_capabilities_support_measurement"></a>PMI_CAPABILITIES_SUPPORT_MEASUREMENT
+### -field PMI_CAPABILITIES_SUPPORT_MEASUREMENT
 
 <dd>
 <p>This bit is set if the power meter supports power measurement.</p>
 </dd>
 
-### -field <a id="PMI_CAPABILITIES_SUPPORT_THRESHOLDS"></a><a id="pmi_capabilities_support_thresholds"></a>PMI_CAPABILITIES_SUPPORT_THRESHOLDS
+### -field PMI_CAPABILITIES_SUPPORT_THRESHOLDS
 
 <dd>
 <p>This bit is set if the power meter supports power thresholds.</p>
 </dd>
 
-### -field <a id="PMI_CAPABILITIES_SUPPORT_BUDGETING"></a><a id="pmi_capabilities_support_budgeting"></a>PMI_CAPABILITIES_SUPPORT_BUDGETING
+### -field PMI_CAPABILITIES_SUPPORT_BUDGETING
 
 <dd>
 <p>This bit is set if the power meter supports power budgeting.</p>
 </dd>
 
-### -field <a id="PMI_CAPABILITIES_DISCHARGE_ONLY"></a><a id="pmi_capabilities_discharge_only"></a>PMI_CAPABILITIES_DISCHARGE_ONLY
+### -field PMI_CAPABILITIES_DISCHARGE_ONLY
 
 <dd>
 <p>This bit is set if the power meter reports data only when the power supply is discharging. This is typically the case on mobile battery systems or some uninterruptible power supplies (UPSs).</p>
@@ -100,7 +100,7 @@ typedef struct _PMI_REPORTED_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>MeasurementUnit</b>
+### -field MeasurementUnit
 
 <dd>
 <p>A <a href="..\pmi\ne-pmi-pmi-measurement-unit.md">PMI_MEASUREMENT_UNIT</a> enumeration value that specifies the measurement unit. </p>
@@ -108,73 +108,73 @@ typedef struct _PMI_REPORTED_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <b>MeasurementType</b>
+### -field MeasurementType
 
 <dd>
 <p>A <a href="..\pmi\ne-pmi-pmi-measurement-type.md">PMI_MEASUREMENT_TYPE</a> enumeration value that specifies the measurement type, such as whether input or output power is measured.</p>
 </dd>
 
-### -field <b>Accuracy</b>
+### -field Accuracy
 
 <dd>
 <p>A value, in units of thousandths of a percent, that specifies the reported accuracy of the power meter. For example, a value of 1,000 corresponds to a one percent accuracy rating.</p>
 </dd>
 
-### -field <b>SamplingPeriod</b>
+### -field SamplingPeriod
 
 <dd>
 <p>A value, in units of milliseconds, that specifies the current averaging period.</p>
 </dd>
 
-### -field <b>MinimumAverageInterval</b>
+### -field MinimumAverageInterval
 
 <dd>
 <p>A value, in units of milliseconds, that specifies the minimum averaging interval.</p>
 </dd>
 
-### -field <b>MaximumAverageInterval</b>
+### -field MaximumAverageInterval
 
 <dd>
 <p>A value, in units of milliseconds, that specifies the maximum averaging interval.</p>
 </dd>
 
-### -field <b>Hysteresis</b>
+### -field Hysteresis
 
 <dd>
 <p>A value, in units of milliseconds, that specifies the hysteresis value. This value indicates the margin that is built around the threshold and budget events. This value prevents the trigger of unnecessary events when the reading fluctuates very close to one of the thresholds.</p>
 </dd>
 
-### -field <b>Writeable</b>
+### -field Writeable
 
 <dd>
 <p>A Boolean value that indicates whether the budgeting information is read/write (TRUE) or read-only (FALSE).</p>
 </dd>
 
-### -field <b>MinBudget</b>
+### -field MinBudget
 
 <dd>
 <p>A value, in units of watts, that specifies the minimum supported power budget.</p>
 </dd>
 
-### -field <b>MaxBudget</b>
+### -field MaxBudget
 
 <dd>
 <p>A value, in units of watts, that specifies the maximum supported power budget.</p>
 </dd>
 
-### -field <b>ModelNumber</b>
+### -field ModelNumber
 
 <dd>
 <p>A null-terminated, Unicode string that contains the model number of the power meter.</p>
 </dd>
 
-### -field <b>SerialNumber</b>
+### -field SerialNumber
 
 <dd>
 <p>A null-terminated, Unicode string that contains the serial number of the power meter.</p>
 </dd>
 
-### -field <b>OEMInformation</b>
+### -field OEMInformation
 
 <dd>
 <p>A null-terminated, Unicode string that contains descriptive information about the power meter. This information is specific to the implementation by the original OEM.</p>

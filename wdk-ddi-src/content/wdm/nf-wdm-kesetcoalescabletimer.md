@@ -59,31 +59,31 @@ BOOLEAN KeSetCoalescableTimer(
 ## -parameters
 <dl>
 
-### -param <i>Timer</i> [in, out]
+### -param Timer [in, out]
 
 <dd>
 <p>A pointer to a timer object. This parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554250">KTIMER</a> structure, which is an opaque, system structure that represents the timer object. This object must have been previously initialized by the <a href="..\wdm\nf-wdm-keinitializetimerex.md">KeInitializeTimerEx</a> or <a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a> routine.</p>
 </dd>
 
-### -param <i>DueTime</i> [in]
+### -param DueTime [in]
 
 <dd>
 <p>Specifies an absolute or relative time at which the timer is to expire. If the value of the <i>DueTime</i> parameter is negative, the expiration time is relative to the current system time. Otherwise, the expiration time is absolute. The expiration time is expressed in system time units, which are 100-nanosecond intervals. Absolute expiration times track any changes that are made to the system clock. Relative expiration times are not affected by system clock changes.</p>
 </dd>
 
-### -param <i>Period</i> [in]
+### -param Period [in]
 
 <dd>
 <p>Specifies the interval between periodic timer expirations in milliseconds. The value of this parameter must not exceed MAXLONG. This parameter is optional and can be set to zero to indicate that the timer is nonperiodic.</p>
 </dd>
 
-### -param <i>TolerableDelay</i> [in]
+### -param TolerableDelay [in]
 
 <dd>
 <p>Specifies a tolerance, in milliseconds, for the timer period that <i>Period</i> specifies and for the initial time interval that <i>DueTime</i> specifies. For a periodic timer, the time interval between two successive timer expirations will be in the range from (<i>Period</i> - <i>TolerableDelay</i>) to (<i>Period</i> + <i>TolerableDelay</i>). The initial expiration time will be in the range from <i>DueTime</i> to (<i>DueTime</i> + <i>TolerableDelay</i>). The <i>TolerableDelay</i> value cannot be negative.</p>
 </dd>
 
-### -param <i>Dpc</i> [in, optional]
+### -param Dpc [in, optional]
 
 <dd>
 <p>A pointer to a DPC object. This parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a> structure, which is an opaque, system structure that represents the DPC object. This object must have been previously initialized by the <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a> routine. This parameter is optional and can be specified as <b>NULL</b> if the caller does not require a DPC.</p>
@@ -114,7 +114,7 @@ BOOLEAN KeSetCoalescableTimer(
 
 <p>Only one instance of a particular DPC object can be in the system DPC queue at a time. To avoid potential race conditions, avoid passing the same DPC object to both the <b>KeSetCoalescableTimer</b> and <a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a> routines.</p>
 
-<p>Avoid changing the importance or the target processor of a DPC that is associated with an active timer. Either cancel the timer or make sure that the timer has expired before you call a routine such as <a href="..\ntddk\nf-ntddk-kesetimportancedpc.md">KeSetImportanceDpc</a> or <a href="..\wdm\nf-wdm-kesettargetprocessordpcex.md">KeSetTargetProcessorDpcEx</a> to change the DPC settings. For example, if a driver updates the target processor of a DPC while a timer enables the DPC to run, the DPC might run on an arbitrary processor.</p>
+<p>Avoid changing the importance or the target processor of a DPC that is associated with an active timer. Either cancel the timer or make sure that the timer has expired before you call a routine such as <a href="..\wdm\nf-wdm-kesetimportancedpc.md">KeSetImportanceDpc</a> or <a href="..\wdm\nf-wdm-kesettargetprocessordpcex.md">KeSetTargetProcessorDpcEx</a> to change the DPC settings. For example, if a driver updates the target processor of a DPC while a timer enables the DPC to run, the DPC might run on an arbitrary processor.</p>
 
 <p>A periodic timer automatically restarts as soon as it expires. Therefore, in a multiprocessor system, the DPC for a periodic timer might be running on two or more processors at the same time.</p>
 
@@ -216,7 +216,7 @@ BOOLEAN KeSetCoalescableTimer(
 <a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kesetimportancedpc.md">KeSetImportanceDpc</a>
+<a href="..\wdm\nf-wdm-kesetimportancedpc.md">KeSetImportanceDpc</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-kesettargetprocessordpcex.md">KeSetTargetProcessorDpcEx</a>

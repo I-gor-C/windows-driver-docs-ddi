@@ -59,25 +59,25 @@ typedef union {
 ## -struct-fields
 <dl>
 
-### -field <b>MonitorConnected</b>
+### -field MonitorConnected
 
 <dd>
 <p>If set, the monitor (the source) is connected to a Miracast sink.</p>
 </dd>
 
-### -field <b>ReducedModeListDueToBandwidth</b>
+### -field ReducedModeListDueToBandwidth
 
 <dd>
 <p>If set, the user-mode driver has reduced the modes exposed to the operating system based on the current suggested encode rate.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use and should be set to zero.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>Holds a 32-bit value that identifies the Miracast connected session.</p>

@@ -55,7 +55,7 @@ VOID CmCallbackReleaseKeyObjectIDEx(
 ## -parameters
 <dl>
 
-### -param <i>ObjectName</i> 
+### -param ObjectName 
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the object name string. The driver previously obtained this pointer by calling <a href="..\wdm\nf-wdm-cmcallbackgetkeyobjectidex.md">CmCallbackGetKeyObjectIDEx</a>.</p>

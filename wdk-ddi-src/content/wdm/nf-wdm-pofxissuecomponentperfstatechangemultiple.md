@@ -60,13 +60,13 @@ VOID PoFxIssueComponentPerfStateChangeMultiple(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>A handle that represents the registration of the device with PoFx. The device driver previously received this handle from the <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a> routine.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>The flags that modify the behavior of the performance state change operation. Set this member to zero or to one of the following flag <b>PO_FX_FLAG_<i>XXX</i></b> bits:</p>
@@ -79,7 +79,7 @@ VOID PoFxIssueComponentPerfStateChangeMultiple(
 <tr>
 <td width="40%"><a id="PO_FX_FLAG_BLOCKING"></a><a id="po_fx_flag_blocking"></a><dl>
 
-### -param <b>PO_FX_FLAG_BLOCKING</b>
+### -param PO_FX_FLAG_BLOCKING
 
 
 ### -param 0x1
@@ -93,7 +93,7 @@ VOID PoFxIssueComponentPerfStateChangeMultiple(
 <tr>
 <td width="40%"><a id="PO_FX_FLAG_ASYNC_ONLY"></a><a id="po_fx_flag_async_only"></a><dl>
 
-### -param <b>PO_FX_FLAG_ASYNC_ONLY</b>
+### -param PO_FX_FLAG_ASYNC_ONLY
 
 
 ### -param 0x2
@@ -108,25 +108,25 @@ VOID PoFxIssueComponentPerfStateChangeMultiple(
 <p> </p>
 </dd>
 
-### -param <i>Component</i> [in]
+### -param Component [in]
 
 <dd>
 <p>The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="kernel.po_fx_device">PO_FX_DEVICE</a> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
 </dd>
 
-### -param <i>PerfChangesCount</i> [in]
+### -param PerfChangesCount [in]
 
 <dd>
 <p>The number of performance state change requests contained in the <i>PerfChanges</i> array.</p>
 </dd>
 
-### -param <i>PerfChanges</i> [in]
+### -param PerfChanges [in]
 
 <dd>
 <p>The first element in an array of <a href="..\wdm\ns-wdm--po-fx-perf-state-change.md">PO_FX_PERF_STATE_CHANGE</a> structures that represent the performance states the driver intends to transition to. Each array element represents a single performance state change request. </p>
 </dd>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to the context for the <a href="kernel.componentperfstatecallback">ComponentPerfStateCallback</a> callback routine. This parameter is optional. It is provided so that a driver or device context can be passed to the callback routine. If this parameter is not used, it must be set to NULL.</p>

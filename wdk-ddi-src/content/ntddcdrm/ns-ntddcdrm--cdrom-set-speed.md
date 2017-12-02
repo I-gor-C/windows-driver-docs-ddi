@@ -57,25 +57,25 @@ typedef struct _CDROM_SET_SPEED {
 ## -struct-fields
 <dl>
 
-### -field <b>RequestType</b>
+### -field RequestType
 
 <dd>
 <p>A <a href="..\ntddcdrm\ne-ntddcdrm--cdrom-speed-request.md">CDROM_SPEED_REQUEST</a>-typed value that indicates the type of set speed operation for <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-set-speed.md">IOCTL_CDROM_SET_SPEED</a> to perform.</p>
 </dd>
 
-### -field <b>ReadSpeed</b>
+### -field ReadSpeed
 
 <dd>
 <p>The read speed, in kilobytes per second.</p>
 </dd>
 
-### -field <b>WriteSpeed</b>
+### -field WriteSpeed
 
 <dd>
 <p>The write speed, in kilobytes per second.</p>
 </dd>
 
-### -field <b>RotationControl</b>
+### -field RotationControl
 
 <dd>
 <p>A <a href="..\ntddcdrm\ne-ntddcdrm--write-rotation.md">WRITE_ROTATION</a>-typed value that indicates whether the drive uses constant angular velocity (CAV) or constant linear velocity (CLV) rotation when it writes to a CD.</p>

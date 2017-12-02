@@ -57,7 +57,7 @@ VOID QueuePacket(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to the function device object that represents a keyboard or mouse device.</p>

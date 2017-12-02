@@ -57,19 +57,19 @@ NTSTATUS KeDelayExecutionThread(
 ## -parameters
 <dl>
 
-### -param <i>WaitMode</i> [in]
+### -param WaitMode [in]
 
 <dd>
 <p>Specifies the processor mode in which the caller is waiting, which can be either <b>KernelMode</b> or <b>UserMode</b>. Lower-level drivers should specify <b>KernelMode</b>.</p>
 </dd>
 
-### -param <i>Alertable</i> [in]
+### -param Alertable [in]
 
 <dd>
 <p>Specifies <b>TRUE</b> if the wait is alertable. Lower-level drivers should specify <b>FALSE</b>.</p>
 </dd>
 
-### -param <i>Interval</i> [in]
+### -param Interval [in]
 
 <dd>
 <p>Specifies the absolute or relative time, in units of 100 nanoseconds, for which the wait is to occur. A negative value indicates relative time. Absolute expiration times track any changes in system time; relative expiration times are not affected by system time changes.</p>

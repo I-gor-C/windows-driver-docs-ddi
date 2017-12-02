@@ -55,13 +55,13 @@ typedef struct _DXGK_QUERYSEGMENTOUT2 {
 ## -struct-fields
 <dl>
 
-### -field <b>SegmentCount</b>
+### -field SegmentCount
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>pSegmentDescriptor</b>
+### -field pSegmentDescriptor
 
 <dd>
 <p>Reserved for system use.</p>

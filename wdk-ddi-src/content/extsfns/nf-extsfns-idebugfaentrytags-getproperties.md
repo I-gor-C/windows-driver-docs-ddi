@@ -7,7 +7,7 @@ old-location: debugger\idebugfaentrytags_getproperties.htm
 old-project: debugger
 ms.assetid: 140EAE7D-E349-4096-8578-6CF011C1FBA7
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugFAEntryTags, GetProperties, IDebugFAEntryTags::GetProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ HRESULT GetProperties(
 ## -parameters
 <dl>
 
-### -param <i>Tag</i> 
+### -param Tag 
 
 <dd>
 <p>A value in the <a href="https://msdn.microsoft.com/library/windows/hardware/jj991810">FA_TAG</a> enumeration. This method gets the name or description (or both) of this tag.</p>
 </dd>
 
-### -param <i>Name</i> [out]
+### -param Name [out]
 
 <dd>
 <p>A pointer to a buffer that receives a null-terminated string that is the name of the tag. If <i>NameSize</i> is less than the length of the tag's name, this method copies only <i>NameSize</i> bytes, including the <b>NULL</b> terminator, to this buffer.</p>
 </dd>
 
-### -param <i>NameSize</i> [in, out]
+### -param NameSize [in, out]
 
 <dd>
 <p>On input, this parameter, specifies the size, in bytes, of the buffer pointed to by <i>Name</i>. On output, this parameter receives the size, in bytes, of the name of the tag. If the tag has no name, this parameter receives a value of 0.</p>
@@ -79,13 +79,13 @@ HRESULT GetProperties(
 <div> </div>
 </dd>
 
-### -param <i>Description</i> [out]
+### -param Description [out]
 
 <dd>
 <p>A pointer to a buffer that receives a null-terminated string that is the description of the tag. If <i>DescSize</i> is less than the length of the tag's description, this method copies only <i>DescSize</i> bytes, including the <b>NULL</b> terminator, to this buffer.</p>
 </dd>
 
-### -param <i>DescSize</i> [in, out]
+### -param DescSize [in, out]
 
 <dd>
 <p>On input, this parameter, specifies the size, in bytes, of the buffer pointed to by <i>Description</i>. On output, this parameter receives the size, in bytes, of the description of the tag. If the tag has no description, this parameter receives a value of 0.</p>
@@ -93,7 +93,7 @@ HRESULT GetProperties(
 <div> </div>
 </dd>
 
-### -param <i>Flags</i> [out]
+### -param Flags [out]
 
 <dd>
 <p>Reserved. Set this parameter to NULL.</p>
@@ -158,4 +158,4 @@ HRESULT GetProperties(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFAEntryTags::GetProperties method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFAEntryTags::GetProperties method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

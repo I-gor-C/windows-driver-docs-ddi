@@ -57,14 +57,14 @@ typedef struct _STOR_LIST_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>Flink</b>
+### -field Flink
 
 <dd>
 <p>For a <b>LIST_ENTRY</b> structure that serves as a list entry, the <b>Flink</b> member points to the next entry in the list or to the list header if there is no next entry in the list. </p>
 <p>For a <b>LIST_ENTRY</b> structure that serves as the list header, the <b>Flink</b> member points to the first entry in the list or to the LIST_ENTRY structure itself if the list is empty.</p>
 </dd>
 
-### -field <b>Blink</b>
+### -field Blink
 
 <dd>
 <p>For a <b>LIST_ENTRY</b> structure that serves as a list entry, the <b>Blink</b> member points to the previous entry in the list or to the list header if there is no previous entry in the list.</p>

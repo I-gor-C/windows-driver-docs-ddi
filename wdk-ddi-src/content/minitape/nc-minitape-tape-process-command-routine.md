@@ -63,43 +63,43 @@ TAPE_STATUS TapeMiniCreatePartition(
 ## -parameters
 <dl>
 
-### -param <i>MinitapeExtension</i> [in, out]
+### -param MinitapeExtension [in, out]
 
 <dd>
 <p>Pointer to the driver-specific minitape extension. This is <b>NULL</b> if the miniclass driver did not request a minitape extension when it initialized.</p>
 </dd>
 
-### -param <i>CommandExtension</i> [in, out]
+### -param CommandExtension [in, out]
 
 <dd>
 <p>Pointer to the command extension. This is <b>NULL</b> if the miniclass driver did not request a command extension when it initialized.</p>
 </dd>
 
-### -param <i>CommandParameters</i> [in, out]
+### -param CommandParameters [in, out]
 
 <dd>
 <p>Pointer to a buffer allocated by the caller that contains a <a href="..\ntddtape\ns-ntddtape--tape-create-partition.md">TAPE_CREATE_PARTITION</a> structure.</p>
 </dd>
 
-### -param <i>Srb</i> [in, out]
+### -param Srb [in, out]
 
 <dd>
 <p>Pointer to an SRB allocated and partially filled in by the tape class driver. <i>TapeMiniCreatePartition</i> must fill in the CDB in the SRB. <i>TapeMiniCreatePartition</i> might fill in other SRB members, depending on the requirements of its devices.</p>
 </dd>
 
-### -param <i>CallNumber</i> [in]
+### -param CallNumber [in]
 
 <dd>
 <p>Specifies the number of times <i>TapeMiniCreatePartition</i> has been called to process a given tape command. <i>CallNumber</i> is zero the first time this routine is called and is incremented for each subsequent call until the miniclass driver returns a <a href="..\minitape\ne-minitape--tape-status.md">TAPE_STATUS</a> value that indicates the command is complete.</p>
 </dd>
 
-### -param <i>StatusOfLastCommand</i> [in, optional]
+### -param StatusOfLastCommand [in, optional]
 
 <dd>
 <p>Specifies the status of the last command. In the first call to <i>TapeMiniCreatePartition</i> to process a given request, <i>StatusOfLastCommand </i>is TAPE_STATUS_SUCCESS. In subsequent calls, <i>StatusOfLastCommand </i>is either TAPE_STATUS_SUCCESS or an error status if an error occurred and the tape miniclass driver set RETURN_ERRORS in <i>RetryFlags</i> in the previous call. </p>
 </dd>
 
-### -param <i>RetryFlags</i> [in, out]
+### -param RetryFlags [in, out]
 
 <dd>
 <p>Pointer to a variable that specifies what action the tape class driver should take when a tape device reports an error.</p>

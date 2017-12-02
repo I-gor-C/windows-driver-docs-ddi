@@ -61,25 +61,25 @@ typedef struct _PEP_PPM_CST_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The C-state type (0 = C0, 1 = C1, 2 = C2, and so on).</p>
 </dd>
 
-### -field <b>Latency</b>
+### -field Latency
 
 <dd>
 <p>The worst-case latency, in microseconds, to enter and exit this C state. There are no restrictions on latency size.</p>
 </dd>
 
-### -field <b>Power</b>
+### -field Power
 
 <dd>
 <p>The average power consumption, in milliwatts, of the processor when in this C state.</p>
 </dd>
 
-### -field <b>AddressSpaceId</b>
+### -field AddressSpaceId
 
 <dd>
 <p>The register address space ID (_ASI) for this C state. This member specifies the address space in which the register for this C state is located. The following IDs are defined for this member.</p>
@@ -120,19 +120,19 @@ typedef struct _PEP_PPM_CST_STATE {
 <p> </p>
 </dd>
 
-### -field <b>BitWidth</b>
+### -field BitWidth
 
 <dd>
 <p>The register bit width (_RBW) for this C state. This member specifies the width, in bits, of the register for this C state.</p>
 </dd>
 
-### -field <b>BitOffset</b>
+### -field BitOffset
 
 <dd>
 <p>The register bit offset (_RBO) for this C state. This member specifies the offset, in bits, from the register address specified in the <b>Address</b> member to the start of the register for this C state.</p>
 </dd>
 
-### -field <b>AccessSize</b>
+### -field AccessSize
 
 <dd>
 <p>The register access size (_ASZ) code for this C state. This member specifies the number of bytes to read during an access of the register for this C state. Valid access size codes are shown in the following table.</p>
@@ -165,7 +165,7 @@ typedef struct _PEP_PPM_CST_STATE {
 <p> </p>
 </dd>
 
-### -field <b>Address</b>
+### -field Address
 
 <dd>
 <p>The register address (_ADR) for this C state.</p>

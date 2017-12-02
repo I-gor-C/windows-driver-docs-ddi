@@ -57,25 +57,25 @@ typedef struct _VIDEO_WIN32K_CALLBACKS_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>CalloutType</b>
+### -field CalloutType
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>PhysDisp</b>
+### -field PhysDisp
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Param</b>
+### -field Param
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>Reserved for system use.</p>

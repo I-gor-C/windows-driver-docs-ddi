@@ -65,73 +65,73 @@ typedef struct _DISK_PERFORMANCE {
 ## -struct-fields
 <dl>
 
-### -field <b>BytesRead</b>
+### -field BytesRead
 
 <dd>
 <p>Contains a cumulative count of bytes read from the disk since the performance counters were enabled. </p>
 </dd>
 
-### -field <b>BytesWritten</b>
+### -field BytesWritten
 
 <dd>
 <p>Contains a cumulative count of bytes written to the disk since the performance counters were enabled.</p>
 </dd>
 
-### -field <b>ReadTime</b>
+### -field ReadTime
 
 <dd>
 <p>Contains a cumulative time, expressed in increments of 100 nanoseconds, spent on disk reads since the performance counters were enabled. </p>
 </dd>
 
-### -field <b>WriteTime</b>
+### -field WriteTime
 
 <dd>
 <p>Contains a cumulative time, expressed in increments of 100 nanoseconds, spent on disk reads since the performance counters were enabled. </p>
 </dd>
 
-### -field <b>IdleTime</b>
+### -field IdleTime
 
 <dd>
 <p>Contains a cumulative time, expressed in increments of 100 nanoseconds, since the performance counters were enabled in which there was no disk activity. </p>
 </dd>
 
-### -field <b>ReadCount</b>
+### -field ReadCount
 
 <dd>
 <p>Contains the number of disk accesses for reads since the performance counters were enabled. </p>
 </dd>
 
-### -field <b>WriteCount</b>
+### -field WriteCount
 
 <dd>
 <p>Contains the number of disk accesses for writes since the performance counters were enabled.</p>
 </dd>
 
-### -field <b>QueueDepth</b>
+### -field QueueDepth
 
 <dd>
 <p>Contains a snapshot of the number of queued disk I/O requests at the time that the query for performance statistics was performed. </p>
 </dd>
 
-### -field <b>SplitCount</b>
+### -field SplitCount
 
 <dd>
 <p>Contains the number of disk accesses by means of an associated IRP since the performance counters were enabled. </p>
 </dd>
 
-### -field <b>QueryTime</b>
+### -field QueryTime
 
 <dd>
 <p>Contains a timestamp indicating the system time at the moment that the query took place. System time is a count of 100-nanosecond intervals since January 1, 1601. System time is typically updated approximately every ten milliseconds. For more information about system time, see <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>.</p>
 </dd>
 
-### -field <b>StorageDeviceNumber</b>
+### -field StorageDeviceNumber
 
 <dd>
 <p>Contains a unique number assigned to every disk or volume across a particular storage type. The storage types are <i>disk.sys</i>, <i>ftdisk.sys</i>, and <i>dmio.sys</i>. </p>
 </dd>
 
-### -field <b>StorageManagerName</b>
+### -field StorageManagerName
 
 <dd>
 <p>Contains an 8-character string that indicates which device driver provided the performance statistics. In Windows 2000, this can be either "LogiDisk" for the driver <i>logidisk.sys</i> or "PhysDisk" for the driver <i>physdisk.sys</i>. These drivers collect performance statistics for devices and physical disks respectively. In Windows XP and later operating systems, this can be any of the following three strings: "FTDISK" for the driver <i>ftdisk.sys</i>, "DMIO" for the driver <i>dmio.sys</i>, or PARTMGR" for the driver <i>partmgr.sys</i>. These three drivers collect performance statistics for basic disk volumes, dynamic disk volumes, and physical disks respectively. Note that these strings are 8-character case-sensitive strings with blank fill. For example, in the case of the string "FTDISK", the <b>StorageManagerName</b> character array should contain two trailing blanks ("FTDISK&lt;b&gt;&lt;b&gt;"), and in the case of the string "DMIO", the array should contain four trailing blanks ("DMIO&lt;b&gt;&lt;b&gt;&lt;b&gt;&lt;b&gt;").</p>

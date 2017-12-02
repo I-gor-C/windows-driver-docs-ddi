@@ -55,20 +55,20 @@ NTSTATUS RtlUnicodeStringValidateEx(
 ## -parameters
 <dl>
 
-### -param <i>SourceString</i> [in]
+### -param SourceString [in]
 
 <dd>
 <p>Optional. A pointer to a <b>UNICODE_STRING</b> structure to be validated. This pointer can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.</p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>The following flag is defined: </p>
 <p></p>
 <dl>
 
-### -param <a id="STRSAFE_IGNORE_NULLS_"></a><a id="strsafe_ignore_nulls_"></a>STRSAFE_IGNORE_NULLS 
+### -param STRSAFE_IGNORE_NULLS 
 
 <dd>
 <p>If this flag is set, the source pointer can be <b>NULL</b>. <b>RtlUnicodeStringValidateEx</b> treats <b>NULL</b> source buffer pointers like empty strings (TEXT("")). </p>

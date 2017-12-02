@@ -56,15 +56,15 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSINTERFACE_STANDARD_STREAMING"></a><a id="ksinterface_standard_streaming"></a><b>KSINTERFACE_STANDARD_STREAMING</b>
+### -field KSINTERFACE_STANDARD_STREAMING
 
 <dd></dd>
 
-### -field <a id="KSINTERFACE_STANDARD_LOOPED_STREAMING"></a><a id="ksinterface_standard_looped_streaming"></a><b>KSINTERFACE_STANDARD_LOOPED_STREAMING</b>
+### -field KSINTERFACE_STANDARD_LOOPED_STREAMING
 
 <dd></dd>
 
-### -field <a id="KSINTERFACE_STANDARD_CONTROL"></a><a id="ksinterface_standard_control"></a><b>KSINTERFACE_STANDARD_CONTROL</b>
+### -field KSINTERFACE_STANDARD_CONTROL
 
 <dd>
 <p>Reserved for system use.</p>

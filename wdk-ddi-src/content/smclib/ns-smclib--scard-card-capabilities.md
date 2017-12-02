@@ -91,32 +91,32 @@ typedef struct _SCARD_CARD_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>InversConvention</b>
+### -field InversConvention
 
 <dd>
 <p>Contains a flag to indicate that the current smart card uses the inverse convention. </p>
 </dd>
 
-### -field <b>etu</b>
+### -field etu
 
 <dd>
 <p>Contains the elementary time unit (ETU). The ETU indicates the space of transmission time occupied by a single bit of data.  </p>
 </dd>
 
-### -field <b>ATR</b>
+### -field ATR
 
 <dd>
 <p>
       A structure with the following members:</p>
 <dl>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>A pointer to the buffer that receives the answer-to-reset (ATR) information that the smart card provides to the smart card reader after a warm or cold reset. </p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Contains the length, in bytes, of the ATR. </p>
@@ -124,7 +124,7 @@ typedef struct _SCARD_CARD_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>HistoricalChars</b>
+### -field HistoricalChars
 
 <dd>
 <p>
@@ -133,7 +133,7 @@ typedef struct _SCARD_CARD_CAPABILITIES {
      </p>
 <dl>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>Contains the historical characters. Historical characters designate general information, such as the smart card manufacturer, the chip inserted in the smart card, the masked ROM in the chip, and the life cycle of the smart card. For more information about historical characters, see the <i>ISO 7816-3 Specification</i> and part 4 of the <i>ISO 7816 Specification</i>. (This resource may not be available in some languages 
@@ -141,7 +141,7 @@ typedef struct _SCARD_CARD_CAPABILITIES {
 and countries.)</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Indicates the length, in bytes, of the historical character information. </p>
@@ -149,7 +149,7 @@ and countries.)</p>
 </dl>
 </dd>
 
-### -field <b>ClockRateConversion</b>
+### -field ClockRateConversion
 
 <dd>
 <p>Contains the clock conversion rate table. Using the clock rate conversion factor, F1, as an index in this array yields the maximum frequency that is allowed. For more information about clock conversion rate, see the <i>ISO 7816-3 specification</i>. (This resource may not be available in some languages 
@@ -157,7 +157,7 @@ and countries.)</p>
 and countries.)</p>
 </dd>
 
-### -field <b>BitRateAdjustment</b>
+### -field BitRateAdjustment
 
 <dd>
 <p>Contains the bit rate adjustment table. Using the bit rate adjustment factor, D1, as an index into this array yields the maximum bit rate that is allowed. t rate. For more information about the bit rate adjustment factor, see the <i>ISO 7816-3 specification</i>.  (This resource may not be available in some languages 
@@ -165,43 +165,43 @@ and countries.)</p>
 and countries.)</p>
 </dd>
 
-### -field <b>Fl</b>
+### -field Fl
 
 <dd>
 <p>Contains the clock rate conversion. This factor is used as an index into a table of maximum operating frequencies. When the smart card is reset, the smart card driver library uses this value to calculate a new clock frequency. </p>
 </dd>
 
-### -field <b>Dl</b>
+### -field Dl
 
 <dd>
 <p>Contains the bit rate adjustment. When the smart card is reset, the smart card driver library uses this value to calculate a new data bit rate. </p>
 </dd>
 
-### -field <b>II</b>
+### -field II
 
 <dd>
 <p>Contains the maximum programming current. </p>
 </dd>
 
-### -field <b>P</b>
+### -field P
 
 <dd>
 <p>Contains the programming voltage in units of 0.1 volts. </p>
 </dd>
 
-### -field <b>N</b>
+### -field N
 
 <dd>
 <p>Contains the extra guard time in units of the ETU. The ETU indicates the space of transmission time occupied by a single bit of data. The guard time is the minimum space of transmission time that separates two consecutive characters.</p>
 </dd>
 
-### -field <b>GT</b>
+### -field GT
 
 <dd>
 <p>Contains the guard time, in units of microseconds (including the extra guard time), which is the minimum delay between two consecutive characters.</p>
 </dd>
 
-### -field <b>Protocol</b>
+### -field Protocol
 
 <dd>
 <p>
@@ -210,13 +210,13 @@ and countries.)</p>
      </p>
 <dl>
 
-### -field <b>Supported</b>
+### -field Supported
 
 <dd>
 <p>Contains a bitmask of the supported protocols. </p>
 </dd>
 
-### -field <b>Selected</b>
+### -field Selected
 
 <dd>
 <p>Contains the protocol that is selected. </p>
@@ -224,7 +224,7 @@ and countries.)</p>
 </dl>
 </dd>
 
-### -field <b>T0</b>
+### -field T0
 
 <dd>
 <p>
@@ -233,13 +233,13 @@ and countries.)</p>
      </p>
 <dl>
 
-### -field <b>WI</b>
+### -field WI
 
 <dd>
 <p>Contains the work-waiting integer for the T=0 protocol. </p>
 </dd>
 
-### -field <b>WT</b>
+### -field WT
 
 <dd>
 <p>Contains the work-waiting time, in microseconds, for the T=0 protocol, which is the maximum delay allowed between two consecutive characters. </p>
@@ -247,7 +247,7 @@ and countries.)</p>
 </dl>
 </dd>
 
-### -field <b>T1</b>
+### -field T1
 
 <dd>
 <p>
@@ -256,43 +256,43 @@ and countries.)</p>
      </p>
 <dl>
 
-### -field <b>IFSC</b>
+### -field IFSC
 
 <dd>
 <p>Contains the size, in bytes, of the card's information field.</p>
 </dd>
 
-### -field <b>CWI</b>
+### -field CWI
 
 <dd>
 <p>Contains the character-waiting integer. </p>
 </dd>
 
-### -field <b>BWI</b>
+### -field BWI
 
 <dd>
 <p>Contains the block-waiting integer. </p>
 </dd>
 
-### -field <b>EDC</b>
+### -field EDC
 
 <dd>
 <p>Contains the error detection code. </p>
 </dd>
 
-### -field <b>CWT</b>
+### -field CWT
 
 <dd>
 <p>Contains the character-waiting time, in microseconds, for the T=1 protocol, which is the maximum delay that is allowed between two consecutive characters.s. </p>
 </dd>
 
-### -field <b>BWT</b>
+### -field BWT
 
 <dd>
 <p>Contains the block-waiting time, in microseconds, for the T=1 protocol. This is the maximum delay between the end of a block and the start of the next block that is sent in the opposite direction. </p>
 </dd>
 
-### -field <b>BGT</b>
+### -field BGT
 
 <dd>
 <p>Contains the block-guarding time, in microseconds, for the T=1 protocol. This is the minimum delay between the end of a block and the start of the next block that is sent in the opposite direction. </p>
@@ -300,13 +300,13 @@ and countries.)</p>
 </dl>
 </dd>
 
-### -field <b>PtsData</b>
+### -field PtsData
 
 <dd>
 <p>Contains a PTS_DATA structure that holds all the information that is required to perform a protocol type selection (PTS) request for the inserted smart card.art card.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>

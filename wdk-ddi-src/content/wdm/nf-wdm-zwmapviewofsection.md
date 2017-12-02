@@ -64,63 +64,63 @@ NTSTATUS ZwMapViewOfSection(
 ## -parameters
 <dl>
 
-### -param <i>SectionHandle</i> [in]
+### -param SectionHandle [in]
 
 <dd>
 <p>Handle to a section object. This handle is created by a successful call to <a href="..\wdm\nf-wdm-zwcreatesection.md">ZwCreateSection</a> or <a href="..\wdm\nf-wdm-zwopensection.md">ZwOpenSection</a>.</p>
 </dd>
 
-### -param <i>ProcessHandle</i> [in]
+### -param ProcessHandle [in]
 
 <dd>
 <p>Handle to the object that represents the process that the view should be mapped into. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566431">ZwCurrentProcess</a> macro to specify the current process. The handle must have been opened with PROCESS_VM_OPERATION access (described in the Microsoft Windows SDK documentation).</p>
 </dd>
 
-### -param <i>BaseAddress</i> [in, out]
+### -param BaseAddress [in, out]
 
 <dd>
 <p>Pointer to a variable that receives the base address of the view. If the value of this parameter is not <b>NULL</b>, the view is allocated starting at the specified virtual address rounded down to the next 64-kilobyte address boundary.</p>
 </dd>
 
-### -param <i>ZeroBits</i> [in]
+### -param ZeroBits [in]
 
 <dd>
 <p>Specifies the number of high-order address bits that must be zero in the base address of the section view. The value of this parameter must be less than 21 and is used only if <i>BaseAddress</i> is <b>NULL</b>—in other words, when the caller allows the system to determine where to allocate the view.</p>
 </dd>
 
-### -param <i>CommitSize</i> [in]
+### -param CommitSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the initially committed region of the view. <i>CommitSize</i> is meaningful only for page-file backed sections and is rounded up to the nearest multiple of PAGE_SIZE. (For sections that map files, both the data and the image are committed at section-creation time.)</p>
 </dd>
 
-### -param <i>SectionOffset</i> [in, out, optional]
+### -param SectionOffset [in, out, optional]
 
 <dd>
 <p>A pointer to a variable that receives the offset, in bytes, from the beginning of the section to the view. If this pointer is not <b>NULL</b>, the offset is rounded down to the next allocation-granularity size boundary.</p>
 </dd>
 
-### -param <i>ViewSize</i> [in, out]
+### -param ViewSize [in, out]
 
 <dd>
 <p>A pointer to a SIZE_T variable. If the initial value of this variable is zero, <b>ZwMapViewOfSection</b> maps a view of the section that starts at <i>SectionOffset</i> and continues to the end of the section. Otherwise, the initial value specifies the view's size, in bytes. <b>ZwMapViewOfSection</b> always rounds this value up to the nearest multiple of PAGE_SIZE before mapping the view.</p>
 <p>On return, the value receives the actual size, in bytes, of the view.</p>
 </dd>
 
-### -param <i>InheritDisposition</i> [in]
+### -param InheritDisposition [in]
 
 <dd>
 <p>Specifies how the view is to be shared with child processes. The possible values are:</p>
 <p></p>
 <dl>
 
-### -param <a id="ViewShare"></a><a id="viewshare"></a><a id="VIEWSHARE"></a><b>ViewShare</b>
+### -param ViewShare
 
 <dd>
 <p>The view will be mapped into any child processes that are created in the future.</p>
 </dd>
 
-### -param <a id="ViewUnmap"></a><a id="viewunmap"></a><a id="VIEWUNMAP"></a><b>ViewUnmap</b>
+### -param ViewUnmap
 
 <dd>
 <p>The view will not be mapped into child processes.</p>
@@ -129,13 +129,13 @@ NTSTATUS ZwMapViewOfSection(
 <p>Drivers should typically specify <b>ViewUnmap</b> for this parameter.</p>
 </dd>
 
-### -param <i>AllocationType</i> [in]
+### -param AllocationType [in]
 
 <dd>
 <p>Specifies a set of flags that describes the type of allocation to be performed for the specified region of pages. The valid flags are MEM_LARGE_PAGES, MEM_RESERVE, and MEM_TOP_DOWN. Although MEM_COMMIT is not allowed, it is implied unless MEM_RESERVE is specified. For more information about the MEM_<i>XXX</i> flags, see the description of the <a href="base.virtualalloc">VirtualAlloc</a> routine.</p>
 </dd>
 
-### -param <i>Win32Protect</i> [in]
+### -param Win32Protect [in]
 
 <dd>
 <p>Specifies the type of protection for the region of initially committed pages. Device and intermediate drivers should set this value to PAGE_READWRITE.</p>

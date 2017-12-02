@@ -55,7 +55,7 @@ BOOL ImpersonatePrinterClient(
 ## -parameters
 <dl>
 
-### -param <i>hToken</i> [in]
+### -param hToken [in]
 
 <dd>
 <p>Caller-supplied handle to a thread. This parameter must have been previously returned by a call to <a href="..\winsplp\nf-winsplp-reverttoprinterself.md">RevertToPrinterSelf</a>.</p>

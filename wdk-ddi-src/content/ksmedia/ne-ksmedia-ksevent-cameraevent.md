@@ -54,7 +54,7 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSEVENT_PHOTO_SAMPLE_SCANNED"></a><a id="ksevent_photo_sample_scanned"></a><b>KSEVENT_PHOTO_SAMPLE_SCANNED</b>
+### -field KSEVENT_PHOTO_SAMPLE_SCANNED
 
 <dd>
 <p>Event notifications to synchronize the shutter sound playback for a photo capture.</p>

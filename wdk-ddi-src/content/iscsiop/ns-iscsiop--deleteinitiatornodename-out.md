@@ -54,7 +54,7 @@ typedef struct _DeleteInitiatorNodeName_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The status of the <b>DeleteInitiatorNodeName</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>. </p>

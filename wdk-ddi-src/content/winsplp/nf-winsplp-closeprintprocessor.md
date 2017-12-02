@@ -55,7 +55,7 @@ BOOL ClosePrintProcessor(
 ## -parameters
 <dl>
 
-### -param <i>hPrintProcessor</i> [in, out]
+### -param hPrintProcessor [in, out]
 
 <dd>
 <p>Caller-supplied print processor handle. This is the handle returned by a previous call to <a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a>.</p>

@@ -60,37 +60,37 @@ NTSTATUS CmRegisterCallbackEx(
 ## -parameters
 <dl>
 
-### -param <i>Function</i> [in]
+### -param Function [in]
 
 <dd>
 <p>A pointer to the <a href="kernel.registrycallback">RegistryCallback</a> routine to register.</p>
 </dd>
 
-### -param <i>Altitude</i> [in]
+### -param Altitude [in]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure. This structure must contain a string that represents the <a href="ifsk.load_order_groups_and_altitudes_for_minifilter_drivers">altitude</a> of the calling <a href="ifsk.file_system_minifilter_drivers">minifilter driver</a>. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>Driver</i> [in]
+### -param Driver [in]
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a> structure that represents the driver.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>A driver-defined value that the configuration manager will pass as the <i>CallbackContext</i> parameter to the <i>RegistryCallback</i> routine.</p>
 </dd>
 
-### -param <i>Cookie</i> [out]
+### -param Cookie [out]
 
 <dd>
 <p>A pointer to a LARGE_INTEGER variable that receives the value that identifies the callback routine. When you unregister the callback routine, pass this value as the <i>Cookie</i> parameter to <a href="..\wdm\nf-wdm-cmunregistercallback.md">CmUnRegisterCallback</a>.</p>
 </dd>
 
-### -param <i>Reserved</i> 
+### -param Reserved 
 
 <dd>
 <p>This parameter is reserved for future use.</p>

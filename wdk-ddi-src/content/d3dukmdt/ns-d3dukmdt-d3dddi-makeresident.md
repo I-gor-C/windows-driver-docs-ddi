@@ -60,44 +60,44 @@ typedef struct D3DDDI_MAKERESIDENT {
 ## -struct-fields
 <dl>
 
-### -field <b>hPagingQueue</b>
+### -field hPagingQueue
 
 <dd>
 <p>[in] Paging queue on the device that created the input allocations. This queue will be used for residency operations.</p>
 </dd>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in/out] On input, the number of allocation handles in the <b>AllocationList</b> array and allocation priority values in the <b>PriorityList</b> array. On output,
                                                     the number of allocations successfully made resident.</p>
 </dd>
 
-### -field <b>AllocationList</b>
+### -field AllocationList
 
 <dd>
 <p>[in] An array of <b>NumAllocations</b> allocation handles to make resident. All allocations must be created on the device <b>hPagingQueue</b> is created for.</p>
 </dd>
 
-### -field <b>PriorityList</b>
+### -field PriorityList
 
 <dd>
 <p>[in] An array of <b>NumAllocations</b> specifying residency priority for each of the input allocations. This value is currently ignored and may be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] Specifies memory residency behavior as documented in <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-makeresident-flags.md">D3DDDI_MAKERESIDENT_FLAGS</a>.</p>
 </dd>
 
-### -field <b>PagingFenceValue</b>
+### -field PagingFenceValue
 
 <dd>
 <p>[out] When <b>MakeResident</b> returns <b>E_PENDING</b>, this member indicates the paging queue fence value to wait on. </p>
 </dd>
 
-### -field <b>NumBytesToTrim</b>
+### -field NumBytesToTrim
 
 <dd>
 <p>[out] When <b>MakeResident</b> returns <b>E_OUTOFMEMORY</b>, this member indicates the number of bytes over budget the application would be if the allocation(s) were made resident. </p>

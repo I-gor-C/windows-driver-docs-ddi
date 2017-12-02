@@ -64,55 +64,55 @@ typedef struct _TAPE_GET_DRIVE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>ECC</b>
+### -field ECC
 
 <dd>
 <p>When set to <b>TRUE</b>, indicates that the device uses hardware error correction.</p>
 </dd>
 
-### -field <b>Compression</b>
+### -field Compression
 
 <dd>
 <p>When set to <b>TRUE</b>, indicates that compression is enabled on a device that supports it. When compression is enabled, the device compresses data prior to writing it. When set to <b>FALSE</b>, compression is not enabled on the device. </p>
 </dd>
 
-### -field <b>DataPadding</b>
+### -field DataPadding
 
 <dd>
 <p>When set to <b>TRUE</b>, indicates that data padding is enabled on a device that supports it. When padding is enabled, the device pads data with zeros to keep the tape streaming until data is ready. When set to <b>FALSE</b>, data padding is not enabled. </p>
 </dd>
 
-### -field <b>ReportSetmarks</b>
+### -field ReportSetmarks
 
 <dd>
 <p>When set to <b>TRUE</b>, indicates that reporting setmarks is enabled on a device that supports it. The device reports setmarks encountered during read or space operations. When set to <b>FALSE</b>, reporting setmarks is not enabled. </p>
 </dd>
 
-### -field <b>DefaultBlockSize</b>
+### -field DefaultBlockSize
 
 <dd>
 <p>Indicates the default block size, in bytes. </p>
 </dd>
 
-### -field <b>MaximumBlockSize</b>
+### -field MaximumBlockSize
 
 <dd>
 <p>Indicates the maximum block size, in bytes, of either the tape device or the underlying host bus adapter (HBA), whichever is smaller. </p>
 </dd>
 
-### -field <b>MinimumBlockSize</b>
+### -field MinimumBlockSize
 
 <dd>
 <p>Indicates the minimum block size, in bytes. </p>
 </dd>
 
-### -field <b>MaximumPartitionCount</b>
+### -field MaximumPartitionCount
 
 <dd>
 <p>Indicates the maximum number of partitions the device supports. </p>
 </dd>
 
-### -field <b>FeaturesLow</b>
+### -field FeaturesLow
 
 <dd>
 <p>Indicates the features supported by this drive. The miniport driver sets TAPE_DRIVE_<i>XXX</i> flags for features supported by the drive and clears flags for features not supported. Callers can use the TAPE_DRIVE_<i>XXX</i> masks defined in <i>minitape.h</i> to determine whether a drive supports a particular feature. The masks available are as follows:</p>
@@ -317,7 +317,7 @@ typedef struct _TAPE_GET_DRIVE_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>FeaturesHigh</b>
+### -field FeaturesHigh
 
 <dd>
 <p>Indicates the additional features supported by this drive if TAPE_DRIVE_HIGH_FEATURES is set in <b>FeaturesLow</b>. The miniport driver sets TAPE_DRIVE_<i>XXX</i> flags for features supported by the drive and clears flags for features not supported. Callers can use the TAPE_DRIVE_<i>XXX</i> masks defined in <i>minitape.h </i>to determine whether a drive supports a particular feature. </p>
@@ -586,7 +586,7 @@ typedef struct _TAPE_GET_DRIVE_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>EOTWarningZoneSize</b>
+### -field EOTWarningZoneSize
 
 <dd>
 <p>Indicates the size in bytes of the early warning zone toward the end of the tape. The device returns a check condition when it enters the zone. </p>

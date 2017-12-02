@@ -58,13 +58,13 @@ typedef struct _D3DTRANSFORMCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes, of the D3DTRANSFORMCAPS structure. </p>
 </dd>
 
-### -field <b>dwCaps</b>
+### -field dwCaps
 
 <dd>
 <p>Specifies flags describing the capabilities of the lighting module. The following flag is defined:</p>

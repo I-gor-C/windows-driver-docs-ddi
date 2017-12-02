@@ -55,7 +55,7 @@ UCHAR VideoPortReadPortUchar(
 ## -parameters
 <dl>
 
-### -param <i>Port</i> 
+### -param Port 
 
 <dd>
 <p>Pointer to the port. The given <i>Port</i> must be in a mapped I/O-space range returned by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.</p>

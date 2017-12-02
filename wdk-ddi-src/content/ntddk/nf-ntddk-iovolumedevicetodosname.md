@@ -55,13 +55,13 @@ NTSTATUS IoVolumeDeviceToDosName(
 ## -parameters
 <dl>
 
-### -param <i>VolumeDeviceObject</i> [in]
+### -param VolumeDeviceObject [in]
 
 <dd>
 <p>A pointer to a device object that represents a volume device object created by a storage class driver.</p>
 </dd>
 
-### -param <i>DosName</i> [out]
+### -param DosName [out]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure. If the call is successful, <b>IoVolumeDeviceToDosName</b> sets the values of the <b>Length</b>, <b>MaximumLength</b>, and <b>Buffer</b> members of this structure. On exit, the <b>Buffer</b> member points to a wide-character, null-terminated string that contains the MS-DOS path of the volume device object specified by <i>VolumeDeviceObject</i>. For more information, see Remarks.</p>
@@ -78,7 +78,7 @@ NTSTATUS IoVolumeDeviceToDosName(
 <p> </p>
 
 ## -remarks
-<p><b>IoVolumeDeviceToDosName</b> allocates the string buffer pointed to by the <b>Buffer</b> member of the <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that the <i>DosName</i> parameter points to. After this buffer is no longer required, a caller of this routine should call the <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> routine to free the buffer.</p>
+<p><b>IoVolumeDeviceToDosName</b> allocates the string buffer pointed to by the <b>Buffer</b> member of the <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that the <i>DosName</i> parameter points to. After this buffer is no longer required, a caller of this routine should call the <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> routine to free the buffer.</p>
 
 <p>Starting with Windows Vista, you must ensure that APCs are <u>not</u> disabled before calling this routine. The <a href="..\wdm\nf-wdm-keareallapcsdisabled.md">KeAreAllApcsDisabled</a> routine can be used to verify that APCs are not disabled.</p>
 
@@ -145,7 +145,7 @@ NTSTATUS IoVolumeDeviceToDosName(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-keareallapcsdisabled.md">KeAreAllApcsDisabled</a>

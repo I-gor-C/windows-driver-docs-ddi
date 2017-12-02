@@ -7,7 +7,7 @@ old-location: netvista\wsk_provider_connection_dispatch.htm
 old-project: netvista
 ms.assetid: 70a86809-07f2-4723-9e50-4dbdd31ff900
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WSK_PROVIDER_CONNECTION_DISPATCH, WSK_PROVIDER_CONNECTION_DISPATCH, *PWSK_PROVIDER_CONNECTION_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ typedef struct _WSK_PROVIDER_CONNECTION_DISPATCH {
 ## -struct-fields
 <dl>
 
-### -field <b>Basic</b>
+### -field Basic
 
 <dd>
 <p>The members of the 
@@ -74,21 +74,21 @@ typedef struct _WSK_PROVIDER_CONNECTION_DISPATCH {
      <b>WSK_PROVIDER_CONNECTION_DISPATCH</b> structure.</p>
 </dd>
 
-### -field <b>WskBind</b>
+### -field WskBind
 
 <dd>
 <p>A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn-wsk-bind.md">WskBind</a> function for the socket.</p>
 </dd>
 
-### -field <b>WskConnect</b>
+### -field WskConnect
 
 <dd>
 <p>A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn-wsk-connect.md">WskConnect</a> function for the socket.</p>
 </dd>
 
-### -field <b>WskGetLocalAddress</b>
+### -field WskGetLocalAddress
 
 <dd>
 <p>A pointer to the WSK subsystem's 
@@ -96,7 +96,7 @@ typedef struct _WSK_PROVIDER_CONNECTION_DISPATCH {
      socket.</p>
 </dd>
 
-### -field <b>WskGetRemoteAddress</b>
+### -field WskGetRemoteAddress
 
 <dd>
 <p>A pointer to the WSK subsystem's 
@@ -104,21 +104,21 @@ typedef struct _WSK_PROVIDER_CONNECTION_DISPATCH {
      socket.</p>
 </dd>
 
-### -field <b>WskSend</b>
+### -field WskSend
 
 <dd>
 <p>A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn-wsk-send.md">WskSend</a> function for the socket.</p>
 </dd>
 
-### -field <b>WskReceive</b>
+### -field WskReceive
 
 <dd>
 <p>A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn-wsk-receive.md">WskReceive</a> function for the socket.</p>
 </dd>
 
-### -field <b>WskDisconnect</b>
+### -field WskDisconnect
 
 <dd>
 <p>A pointer to the WSK subsystem's 
@@ -126,14 +126,14 @@ typedef struct _WSK_PROVIDER_CONNECTION_DISPATCH {
      socket.</p>
 </dd>
 
-### -field <b>WskRelease</b>
+### -field WskRelease
 
 <dd>
 <p>A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn-wsk-release-data-indication-list.md">WskRelease</a> function for the socket.</p>
 </dd>
 
-### -field <b>WskConnectEx</b>
+### -field WskConnectEx
 
 <dd>
 <p>A pointer to the WSK subsystem's 
@@ -256,4 +256,4 @@ typedef struct _WSK_PROVIDER_CONNECTION_DISPATCH {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_CONNECTION_DISPATCH structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_CONNECTION_DISPATCH structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -69,97 +69,97 @@ typedef struct _MPIO_PATH_HEALTH_CLASS {
 ## -struct-fields
 <dl>
 
-### -field <b>PathId</b>
+### -field PathId
 
 <dd>
 <p>An unsigned 64-bitfield that represents an identifier that is assigned to a particular path.</p>
 </dd>
 
-### -field <b>NumberReads</b>
+### -field NumberReads
 
 <dd>
 <p>An unsigned 64-bitfield that specifies the number of read requests that are serviced by the specified path identifier.</p>
 </dd>
 
-### -field <b>NumberWrites</b>
+### -field NumberWrites
 
 <dd>
 <p>An unsigned 64-bitfield that specifies the number of write requests that are serviced by the specified path identifier.</p>
 </dd>
 
-### -field <b>NumberBytesRead</b>
+### -field NumberBytesRead
 
 <dd>
 <p>An unsigned 64-bitfield that specifies the total number of bytes that are read through the specified path identifier.</p>
 </dd>
 
-### -field <b>NumberBytesWritten</b>
+### -field NumberBytesWritten
 
 <dd>
 <p>An unsigned 64-bitfield that specifies the total number of bytes that are written through the specified path identifier.</p>
 </dd>
 
-### -field <b>NumberRetries</b>
+### -field NumberRetries
 
 <dd>
 <p>An unsigned 64-bitfield that specifies the total number of retries by using the specified path identifier.</p>
 </dd>
 
-### -field <b>NumberIoErrors</b>
+### -field NumberIoErrors
 
 <dd>
 <p>An unsigned 64-bitfield that specifies the total number of I/O errors that are encountered through the specified path identifier.</p>
 </dd>
 
-### -field <b>CreateTime</b>
+### -field CreateTime
 
 <dd>
 <p>A 64-bit integer that specifies the system time when this instance was created and exposed.</p>
 </dd>
 
-### -field <b>FailTime</b>
+### -field FailTime
 
 <dd>
 <p>A 64-bit integer that specifies the system time when the path that is associated with this path ID was removed.</p>
 </dd>
 
-### -field <b>PathOffline</b>
+### -field PathOffline
 
 <dd>
 <p>A Boolean field that indicates whether the path that is associated with this path ID is removed.</p>
 </dd>
 
-### -field <b>NumberReadsWrap</b>
+### -field NumberReadsWrap
 
 <dd>
 <p>An unsigned character field that specifies the total number of times that the <i>NumberReads</i> parameter has rolled around to zero.</p>
 </dd>
 
-### -field <b>NumberWritesWrap</b>
+### -field NumberWritesWrap
 
 <dd>
 <p>An unsigned character field that specifies the total number of times that the <i>NumberWrites</i> parameter has rolled around to zero.</p>
 </dd>
 
-### -field <b>NumberBytesReadWrap</b>
+### -field NumberBytesReadWrap
 
 <dd>
 <p>An unsigned character field that specifies the total number of times the <i>NumberBytesRead</i> parameter has rolled around to zero.</p>
 </dd>
 
-### -field <b>NumberBytesWrittenWrap</b>
+### -field NumberBytesWrittenWrap
 
 <dd>
 <p>An unsigned character field that specifies the total number of times that the <i>NumberBytesWritten</i> parameter has rolled around to zero.</p>
 </dd>
 
-### -field <b>OutstandingRequests</b>
+### -field OutstandingRequests
 
 <dd>
 <p>An unsigned character field that specifies the total number of outstanding requests.</p>
 </dd>
 
-### -field <b>Pad</b>
+### -field Pad
 
 <dd>
 <p>Should be zero.</p>

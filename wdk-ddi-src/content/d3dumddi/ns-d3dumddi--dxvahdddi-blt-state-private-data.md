@@ -56,19 +56,19 @@ typedef struct _DXVAHDDDI_BLT_STATE_PRIVATE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Guid</b>
+### -field Guid
 
 <dd>
 <p>[in] A GUID that identifies the private bitblt state.  </p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>[in] The size, in bytes, of the private bitblt state data. </p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>[in/out] A pointer to the private bitblt state data. The caller sets <b>pData</b> to <b>NULL</b> to retrieve the size of the private bitblt state data. </p>

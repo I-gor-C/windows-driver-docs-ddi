@@ -62,13 +62,13 @@ NTSTATUS EnableVirtualization(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in, out]
+### -param Context [in, out]
 
 <dd>
 <p>A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\wdm\ns-wdm--pci-virtualization-interface.md">PCI_VIRTUALIZATION_INTERFACE</a> structure for the interface.</p>
 </dd>
 
-### -param <i>NumVFs</i> [in]
+### -param NumVFs [in]
 
 <dd>
 <p>The number of PCIe virtual functions (VFs) that are to be enabled for the device. The <i>EnableVirtualization</i> routine sets the <b>NumVFs</b> member of the PCIe SR-IOV Extended Capability structure to the value of the <i>NumVFs</i> parameter. 
@@ -80,7 +80,7 @@ NTSTATUS EnableVirtualization(
 <div> </div>
 </dd>
 
-### -param <i>EnableVfMigration</i> [in]
+### -param EnableVfMigration [in]
 
 <dd>
 <p>A BOOLEAN value that indicates whether the multi-root I/O virtualization (MR-IOV) base function (BF) can dynamically reprovision the PCIe physical function (PF) of the device   as a VF at run time.</p>
@@ -88,7 +88,7 @@ NTSTATUS EnableVirtualization(
 <div> </div>
 </dd>
 
-### -param <i>EnableMigrationInterrupt</i> [in]
+### -param EnableMigrationInterrupt [in]
 
 <dd>
 <p>A BOOLEAN value that indicates whether the interrupt associated with the PF should be masked or unmasked during VF migration.</p>
@@ -96,7 +96,7 @@ NTSTATUS EnableVirtualization(
 <div> </div>
 </dd>
 
-### -param <i>EnableVirtualization</i> [in]
+### -param EnableVirtualization [in]
 
 <dd>
 <p>A BOOLEAN value that indicates whether virtualization is enabled on the PCIe configuration space of the device. If the <i>EnableVirtualization</i> parameter is <b>TRUE</b>, the <i>EnableVirtualization</i> routine sets the VF Enable bit of the PCIe SR-IOV Control field. The <i>EnableVirtualization</i> routine clears this bit if the <i>EnableVirtualization</i> parameter is <b>FALSE</b>.

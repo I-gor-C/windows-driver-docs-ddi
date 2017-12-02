@@ -7,7 +7,7 @@ old-location: netvista\ndis_routing_domain_entry.htm
 old-project: netvista
 ms.assetid: 65E39285-AFD2-4098-A983-C7FA06505407
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_ROUTING_DOMAIN_ENTRY, NDIS_ROUTING_DOMAIN_ENTRY, *PNDIS_ROUTING_DOMAIN_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct _NDIS_ROUTING_DOMAIN_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_ROUTING_DOMAIN_ENTRY</b>  structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -67,7 +67,7 @@ typedef struct _NDIS_ROUTING_DOMAIN_ENTRY {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_ROUTING_DOMAIN_ENTRY_REVISION_1"></a><a id="ndis_routing_domain_entry_revision_1"></a>NDIS_ROUTING_DOMAIN_ENTRY_REVISION_1
+### -field NDIS_ROUTING_DOMAIN_ENTRY_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.40 and later.</p>
@@ -76,7 +76,7 @@ typedef struct _NDIS_ROUTING_DOMAIN_ENTRY {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. This member is reserved for NDIS.
@@ -84,25 +84,25 @@ typedef struct _NDIS_ROUTING_DOMAIN_ENTRY {
 </p>
 </dd>
 
-### -field <b>RoutingDomainId</b>
+### -field RoutingDomainId
 
 <dd>
 <p>The routing domain identifier for the VM network adapter. This identifier is  a GUID.</p>
 </dd>
 
-### -field <b>RoutingDomainName</b>
+### -field RoutingDomainName
 
 <dd>
 <p>An <a href="..\ntddndis\ns-ntddndis--ndis-isolation-name.md">NDIS_ISOLATION_NAME</a> structure that contains the routing domain name for the VM network adapter.</p>
 </dd>
 
-### -field <b>NumIsolationEntries</b>
+### -field NumIsolationEntries
 
 <dd>
 <p>A <b>ULONG</b> value that specifies the number of <a href="..\ntddndis\ns-ntddndis--ndis-routing-domain-isolation-entry.md">NDIS_ROUTING_DOMAIN_ISOLATION_ENTRY</a> structures in the array that follows the <a href="..\ntddndis\ns-ntddndis--ndis-isolation-parameters.md">NDIS_ISOLATION_PARAMETERS</a> structure.</p>
 </dd>
 
-### -field <b>FirstIsolationEntryOffset</b>
+### -field FirstIsolationEntryOffset
 
 <dd>
 <p>A <b>ULONG</b> value that specifies the offset, in bytes, to the first <b>NDIS_ROUTING_DOMAIN_ENTRY</b> element in the array that follows the <a href="..\ntddndis\ns-ntddndis--ndis-isolation-parameters.md">NDIS_ISOLATION_PARAMETERS</a> structure in the buffer that the <b>InformationBuffer</b> member of the <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure points to. The offset is measured from the start of the <b>NDIS_ROUTING_DOMAIN_ENTRY</b> structure to the beginning of the first element of the array.</p>
@@ -156,4 +156,4 @@ typedef struct _NDIS_ROUTING_DOMAIN_ENTRY {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_ROUTING_DOMAIN_ENTRY structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_ROUTING_DOMAIN_ENTRY structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

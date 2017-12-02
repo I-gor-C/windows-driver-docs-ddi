@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-             Stores the values of TRANSMIT Register. This structure is used in the <a href="buses.ioctl_ucmtcpci_port_controller_set_transmit">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT</a> request.
+             Stores the values of TRANSMIT Register. This structure is used in the <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl-ucmtcpci-port-controller-set-transmit.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT</a> request.
                  </p>
 
 
@@ -58,13 +58,13 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT_IN_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>PortControllerObject</b>
+### -field PortControllerObject
 
 <dd>
-<p>Handle to the port controller object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.</p>
+<p>Handle to the port controller object that the client driver received in the previous call to <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>.</p>
 </dd>
 
-### -field <b>Transmit</b>
+### -field Transmit
 
 <dd>
 <p>A pointer to the 
@@ -93,7 +93,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT_IN_PARAMS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ioctl_ucmtcpci_port_controller_set_transmit">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT</a>
+<a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl-ucmtcpci-port-controller-set-transmit.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT</a>
 </dt>
 </dl>
 <p> </p>

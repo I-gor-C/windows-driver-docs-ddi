@@ -54,10 +54,10 @@ PKSFILTER KsGetFilterFromIrp(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>A pointer to the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure for which to return the associated filter.</p>
+<p>A pointer to the <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure for which to return the associated filter.</p>
 </dd>
 </dl>
 
@@ -115,7 +115,7 @@ PKSFILTER KsGetFilterFromIrp(
 <a href="..\ks\nf-ks-ksgetpinfromirp.md">KsGetPinFromIrp</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 </dl>
 <p> </p>

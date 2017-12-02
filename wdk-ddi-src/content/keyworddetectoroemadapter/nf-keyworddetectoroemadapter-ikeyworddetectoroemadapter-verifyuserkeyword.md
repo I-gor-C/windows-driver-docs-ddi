@@ -58,31 +58,31 @@ HRESULT VerifyUserKeyword(
 ## -parameters
 <dl>
 
-### -param <i>ModelData</i> [in]
+### -param ModelData [in]
 
 <dd>
 <p>A pointer to an <b>IStream</b> object bound to model data for a given stored model. On the initial call this will be empty.</p>
 </dd>
 
-### -param <i>KeywordId</i> [in]
+### -param KeywordId [in]
 
 <dd>
 <p>The <a href="audio.keywordid">KEYWORDID</a> in the  <i>UserRecording</i> parameter.</p>
 </dd>
 
-### -param <i>LangId</i> [in]
+### -param LangId [in]
 
 <dd>
 <p>The <b>LANGID</b> of the spoken language in the <i>UserRecording</i> parameter. </p>
 </dd>
 
-### -param <i>KeywordEndBytePos</i> [in]
+### -param KeywordEndBytePos [in]
 
 <dd>
 <p>Indicates the end of the keyword in the UserRecording.</p>
 </dd>
 
-### -param <i>UserRecording</i> [in]
+### -param UserRecording [in]
 
 <dd>
 <p>A pointer to the buffer containing the raw data in the appropriate <a href="mf.imfmediatype">IMFMediaType</a> format.</p>

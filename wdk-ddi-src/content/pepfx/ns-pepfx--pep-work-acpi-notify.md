@@ -55,13 +55,13 @@ typedef struct _PEP_WORK_ACPI_NOTIFY {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>A POHANDLE value that represents the registration of the device with PoFx. The platform extension plug-in (PEP) previously received this handle from the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) during the <a href="kernel.pep_notify_acpi_register_device">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a> notification in which the PEP elected to provide ACPI services for the device.</p>
 </dd>
 
-### -field <b>NotifyCode</b>
+### -field NotifyCode
 
 <dd>
 <p>The Notify code. For a list of Notify codes and their meanings, see section 5.6.6, "Device Object Notifications", of the Advanced Configuration and Power Interface Specification, Revision 5.0 (<a href="http://www.acpi.info">ACPI 5.0 specification</a>).</p>

@@ -64,67 +64,67 @@ typedef struct _STORAGE_PHYSICAL_ADAPTER_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>AdapterId</b>
+### -field AdapterId
 
 <dd>
 <p>The hardware ID of the storage adapter.</p>
 </dd>
 
-### -field <b>HealthStatus</b>
+### -field HealthStatus
 
 <dd>
 <p>Indicates the health status of a storage adapter, of type <a href="..\ntddstor\ne-ntddstor--storage-component-health-status.md">STORAGE_COMPONENT_HEALTH_STATUS</a>.</p>
 </dd>
 
-### -field <b>CommandProtocol</b>
+### -field CommandProtocol
 
 <dd>
 <p>Specifies the storage command protocols that are used between software and hardware, of type <a href="..\ntddstor\ne-ntddstor--storage-protocol-type.md">STORAGE_PROTOCOL_TYPE</a>.</p>
 </dd>
 
-### -field <b>SpecVersion</b>
+### -field SpecVersion
 
 <dd>
 <p>Indicates the specification of the storage adapter, of type <a href="..\ntddstor\ns-ntddstor--storage-spec-version.md">STORAGE_SPEC_VERSION</a>.</p>
 </dd>
 
-### -field <b>Vendor[8]</b>
+### -field Vendor[8]
 
 <dd>
 <p>The vendor name of the storage adapter.</p>
 </dd>
 
-### -field <b>Model[40]</b>
+### -field Model[40]
 
 <dd>
 <p>The model name of the storage adapter.</p>
 </dd>
 
-### -field <b>FirmwareRevision[16]</b>
+### -field FirmwareRevision[16]
 
 <dd>
 <p>The revision number of the storage adapter.</p>
 </dd>
 
-### -field <b>PhysicalLocation[32]</b>
+### -field PhysicalLocation[32]
 
 <dd>
 <p>This member is reserved for future use.</p>
 </dd>
 
-### -field <b>ExpandedConnector</b>
+### -field ExpandedConnector
 
 <dd>
 <p>Specifies if the storage adapter includes an expanded connector.</p>
 </dd>
 
-### -field <b>Reserved0[3]</b>
+### -field Reserved0[3]
 
 <dd>
 <p>Specifies if the storage adapter is reserved.</p>
 </dd>
 
-### -field <b>Reserved1[3]</b>
+### -field Reserved1[3]
 
 <dd>
 <p>Specifies if the storage adapter is reserved.</p>

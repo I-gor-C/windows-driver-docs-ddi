@@ -54,7 +54,7 @@ NTSTATUS ReleaseMapping(
 ## -parameters
 <dl>
 
-### -param <i>Tag</i> [in]
+### -param Tag [in]
 
 <dd>
 <p>Specifies a tag value identifying the mapping that is to be released. For more information, see the following Remarks section.</p>

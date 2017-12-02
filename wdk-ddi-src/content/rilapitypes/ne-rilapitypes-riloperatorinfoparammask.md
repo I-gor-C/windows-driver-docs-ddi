@@ -7,7 +7,7 @@ old-location: netvista\riloperatorinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 1366f37b-4785-4e36-9fc8-bfaef6f9e227
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILOPERATORINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_OI_STATUS"></a><a id="ril_param_oi_status"></a><b>RIL_PARAM_OI_STATUS</b>
+### -field RIL_PARAM_OI_STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OI_NAMES"></a><a id="ril_param_oi_names"></a><b>RIL_PARAM_OI_NAMES</b>
+### -field RIL_PARAM_OI_NAMES
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OI_ALL"></a><a id="ril_param_oi_all"></a><b>RIL_PARAM_OI_ALL</b>
+### -field RIL_PARAM_OI_ALL
 
 <dd></dd>
 </dl>

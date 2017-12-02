@@ -82,30 +82,30 @@ typedef union _UCM_PD_REQUEST_DATA_OBJECT {
 ## -struct-fields
 <dl>
 
-### -field <b>Ul</b>
+### -field Ul
 
 <dd>
 <p>Size of the structure.</p>
 </dd>
 
-### -field <b>Common</b>
+### -field Common
 
 <dd>
 <dl>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>ObjectPosition</b>
+### -field ObjectPosition
 
 <dd>
 <p>Object position.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>
@@ -113,30 +113,30 @@ typedef union _UCM_PD_REQUEST_DATA_OBJECT {
 </dl>
 </dd>
 
-### -field <b>FixedAndVariableRdo</b>
+### -field FixedAndVariableRdo
 
 <dd>
 <dl>
 
-### -field <b>MaximumOperatingCurrentIn10mA</b>
+### -field MaximumOperatingCurrentIn10mA
 
 <dd>
 <p>Maximum current in 10 mA units.</p>
 </dd>
 
-### -field <b>OperatingCurrentIn10mA</b>
+### -field OperatingCurrentIn10mA
 
 <dd>
 <p>Operating current in 10mA units.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>NoUsbSuspend</b>
+### -field NoUsbSuspend
 
 <dd>
 <p>Indicates support for USB suspend.
@@ -144,31 +144,31 @@ typedef union _UCM_PD_REQUEST_DATA_OBJECT {
 </p>
 </dd>
 
-### -field <b>UsbCommunicationCapable</b>
+### -field UsbCommunicationCapable
 
 <dd>
 <p>USB communication capable. </p>
 </dd>
 
-### -field <b>CapabilityMismatch</b>
+### -field CapabilityMismatch
 
 <dd>
 <p>Capability Mismatch </p>
 </dd>
 
-### -field <b>GiveBackFlag</b>
+### -field GiveBackFlag
 
 <dd>
 <p>GiveBack Flag.</p>
 </dd>
 
-### -field <b>ObjectPosition</b>
+### -field ObjectPosition
 
 <dd>
 <p>Object Position.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for future use.</p>
@@ -176,60 +176,60 @@ typedef union _UCM_PD_REQUEST_DATA_OBJECT {
 </dl>
 </dd>
 
-### -field <b>BatteryRdo</b>
+### -field BatteryRdo
 
 <dd>
 <dl>
 
-### -field <b>MaximumOperatingPowerIn250mW</b>
+### -field MaximumOperatingPowerIn250mW
 
 <dd>
 <p>Maximum Operating Power in 250mW units. </p>
 </dd>
 
-### -field <b>OperatingPowerIn250mW</b>
+### -field OperatingPowerIn250mW
 
 <dd>
 <p>Operating Power in 250mW units.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>NoUsbSuspend</b>
+### -field NoUsbSuspend
 
 <dd>
 <p> USB Suspend. </p>
 </dd>
 
-### -field <b>UsbCommunicationCapable</b>
+### -field UsbCommunicationCapable
 
 <dd>
 <p>USB Communications Capable.</p>
 </dd>
 
-### -field <b>CapabilityMismatch</b>
+### -field CapabilityMismatch
 
 <dd>
 <p>Capability Mismatch. </p>
 </dd>
 
-### -field <b>GiveBackFlag</b>
+### -field GiveBackFlag
 
 <dd>
 <p>GiveBack Flag. </p>
 </dd>
 
-### -field <b>ObjectPosition</b>
+### -field ObjectPosition
 
 <dd>
 <p>Object Position.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>

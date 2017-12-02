@@ -7,7 +7,7 @@ old-location: netvista\rilcalleridsettingsparammask_2.htm
 old-project: netvista
 ms.assetid: 579165ca-94e7-433c-91c6-3112c4b75f64
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILCALLERIDSETTINGSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_CIDS_PROVISIONING"></a><a id="ril_param_cids_provisioning"></a><b>RIL_PARAM_CIDS_PROVISIONING</b>
+### -field RIL_PARAM_CIDS_PROVISIONING
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CIDS_STATUS"></a><a id="ril_param_cids_status"></a><b>RIL_PARAM_CIDS_STATUS</b>
+### -field RIL_PARAM_CIDS_STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CIDS_ALL"></a><a id="ril_param_cids_all"></a><b>RIL_PARAM_CIDS_ALL</b>
+### -field RIL_PARAM_CIDS_ALL
 
 <dd></dd>
 </dl>

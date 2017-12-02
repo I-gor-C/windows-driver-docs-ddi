@@ -64,49 +64,49 @@ typedef enum _DXVA_VideoChromaSubsampling {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVA_VideoChromaSubsamplingShift"></a><a id="dxva_videochromasubsamplingshift"></a><a id="DXVA_VIDEOCHROMASUBSAMPLINGSHIFT"></a><b>DXVA_VideoChromaSubsamplingShift</b>
+### -field DXVA_VideoChromaSubsamplingShift
 
 <dd>
 <p>Specifies to shift bits by 8 positions (DXVA_ExtColorData_ShiftBase + 0, or 8 + 0).</p>
 </dd>
 
-### -field <a id="DXVA_VideoChromaSubsamplingMask"></a><a id="dxva_videochromasubsamplingmask"></a><a id="DXVA_VIDEOCHROMASUBSAMPLINGMASK"></a><b>DXVA_VideoChromaSubsamplingMask</b>
+### -field DXVA_VideoChromaSubsamplingMask
 
 <dd>
 <p>Specifies the video chroma subsampling mask. 4 (0x00000F00) bits of a DWORD can be used to specify video chroma subsampling.</p>
 </dd>
 
-### -field <a id="DXVA_VideoChromaSubsampling_Unknown"></a><a id="dxva_videochromasubsampling_unknown"></a><a id="DXVA_VIDEOCHROMASUBSAMPLING_UNKNOWN"></a><b>DXVA_VideoChromaSubsampling_Unknown</b>
+### -field DXVA_VideoChromaSubsampling_Unknown
 
 <dd>
 <p>Specifies that the video chroma subsampling is not specified.</p>
 </dd>
 
-### -field <a id="DXVA_VideoChromaSubsampling_ProgressiveChroma"></a><a id="dxva_videochromasubsampling_progressivechroma"></a><a id="DXVA_VIDEOCHROMASUBSAMPLING_PROGRESSIVECHROMA"></a><b>DXVA_VideoChromaSubsampling_ProgressiveChroma</b>
+### -field DXVA_VideoChromaSubsampling_ProgressiveChroma
 
 <dd>
 <p>Specifies that the video chroma subsampling is progressive chroma.</p>
 </dd>
 
-### -field <a id="DXVA_VideoChromaSubsampling_Horizontally_Cosited"></a><a id="dxva_videochromasubsampling_horizontally_cosited"></a><a id="DXVA_VIDEOCHROMASUBSAMPLING_HORIZONTALLY_COSITED"></a><b>DXVA_VideoChromaSubsampling_Horizontally_Cosited</b>
+### -field DXVA_VideoChromaSubsampling_Horizontally_Cosited
 
 <dd>
 <p>Specifies that chroma samples are aligned on multiples of the luma samples horizontally.</p>
 </dd>
 
-### -field <a id="DXVA_VideoChromaSubsampling_Vertically_Cosited"></a><a id="dxva_videochromasubsampling_vertically_cosited"></a><a id="DXVA_VIDEOCHROMASUBSAMPLING_VERTICALLY_COSITED"></a><b>DXVA_VideoChromaSubsampling_Vertically_Cosited</b>
+### -field DXVA_VideoChromaSubsampling_Vertically_Cosited
 
 <dd>
 <p>Specifies that chroma samples are aligned on multiples of the luma samples vertically.</p>
 </dd>
 
-### -field <a id="DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes"></a><a id="dxva_videochromasubsampling_vertically_alignedchromaplanes"></a><a id="DXVA_VIDEOCHROMASUBSAMPLING_VERTICALLY_ALIGNEDCHROMAPLANES"></a><b>DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</b>
+### -field DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes
 
 <dd>
 <p>Specifies that the Pb and Pr (or Cb and Cr) planes have the same phase alignment. This enumerator can only be set to 0 in the <b>VideoChromaSubsampling</b> member of the <a href="..\dxva\ns-dxva--dxva-extendedformat.md">DXVA_ExtendedFormat</a> structure if the data is vertically cosited.</p>
 </dd>
 
-### -field <a id="DXVA_VideoChromaSubsampling_MPEG2"></a><a id="dxva_videochromasubsampling_mpeg2"></a><a id="DXVA_VIDEOCHROMASUBSAMPLING_MPEG2"></a><b>DXVA_VideoChromaSubsampling_MPEG2</b>
+### -field DXVA_VideoChromaSubsampling_MPEG2
 
 <dd>
 <p>A bitwise OR of the DXVA_VideoChromaSubsampling_Horizontally_Cosited and DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes values that are used with 4:2:0 data.
@@ -114,7 +114,7 @@ typedef enum _DXVA_VideoChromaSubsampling {
 </p>
 </dd>
 
-### -field <a id="DXVA_VideoChromaSubsampling_MPEG1"></a><a id="dxva_videochromasubsampling_mpeg1"></a><a id="DXVA_VIDEOCHROMASUBSAMPLING_MPEG1"></a><b>DXVA_VideoChromaSubsampling_MPEG1</b>
+### -field DXVA_VideoChromaSubsampling_MPEG1
 
 <dd>
 <p>The DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes value that is used with 4:2:0 data.
@@ -122,7 +122,7 @@ typedef enum _DXVA_VideoChromaSubsampling {
 </p>
 </dd>
 
-### -field <a id="DXVA_VideoChromaSubsampling_DV_PAL"></a><a id="dxva_videochromasubsampling_dv_pal"></a><a id="DXVA_VIDEOCHROMASUBSAMPLING_DV_PAL"></a><b>DXVA_VideoChromaSubsampling_DV_PAL</b>
+### -field DXVA_VideoChromaSubsampling_DV_PAL
 
 <dd>
 <p>A bitwise OR of the DXVA_VideoChromaSubsampling_Horizontally_Cosited and DXVA_VideoChromaSubsampling_Vertically_Cosited values that are used with 4:2:0 data.
@@ -130,7 +130,7 @@ typedef enum _DXVA_VideoChromaSubsampling {
 </p>
 </dd>
 
-### -field <a id="DXVA_VideoChromaSubsampling_Cosited"></a><a id="dxva_videochromasubsampling_cosited"></a><a id="DXVA_VIDEOCHROMASUBSAMPLING_COSITED"></a><b>DXVA_VideoChromaSubsampling_Cosited</b>
+### -field DXVA_VideoChromaSubsampling_Cosited
 
 <dd>
 <p>A bitwise OR of the DXVA_VideoChromaSubsampling_Horizontally_Cosited, and DXVA_VideoChromaSubsampling_Vertically_Cosited, and DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes values that are used with 4:4:4, 4:2:2, and 4:1:1 data.

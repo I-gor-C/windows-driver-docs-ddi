@@ -55,13 +55,13 @@ typedef struct _SRIOV_MITIGATED_RANGES_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>VfIndex</b>
+### -field VfIndex
 
 <dd>
 <p>Zero-based index of the virtual function from the first virtual function exposed by this physical function.</p>
 </dd>
 
-### -field <b>BarNumber</b>
+### -field BarNumber
 
 <dd>
 <p>The number of BAR of the ranges of memory-mapped I/O space.</p>

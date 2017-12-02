@@ -7,7 +7,7 @@ old-location: netvista\ril_sendflash.htm
 old-project: netvista
 ms.assetid: 9a23fae8-7142-48a1-871e-1fa3a6d8e112
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SendFlash
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_SendFlash(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>lpraRilAddress</i> 
+### -param lpraRilAddress 
 
 <dd></dd>
 </dl>

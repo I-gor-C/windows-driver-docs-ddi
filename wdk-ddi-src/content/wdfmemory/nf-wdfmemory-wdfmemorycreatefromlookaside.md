@@ -7,7 +7,7 @@ old-location: wdf\wdfmemorycreatefromlookaside.htm
 old-project: wdf
 ms.assetid: aeafa20c-e4be-4b6d-88b7-22b84ef4cedd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfMemoryCreateFromLookaside
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ NTSTATUS WdfMemoryCreateFromLookaside(
 ## -parameters
 <dl>
 
-### -param <i>Lookaside</i> [in]
+### -param Lookaside [in]
 
 <dd>
 <p>A handle to a framework lookaside-list object that is obtained by calling <a href="..\wdfmemory\nf-wdfmemory-wdflookasidelistcreate.md">WdfLookasideListCreate</a>.</p>
 </dd>
 
-### -param <i>Memory</i> [out]
+### -param Memory [out]
 
 <dd>
 <p>A pointer to a location that receives a handle to the new framework memory object.</p>
@@ -173,4 +173,4 @@ NTSTATUS WdfMemoryCreateFromLookaside(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfMemoryCreateFromLookaside method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfMemoryCreateFromLookaside method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

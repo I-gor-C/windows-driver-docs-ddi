@@ -7,7 +7,7 @@ old-location: netvista\ndiscompletebindadapterex.htm
 old-project: netvista
 ms.assetid: e52c7aeb-bbd8-402e-94af-f74df6deb23c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisCompleteBindAdapterEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ VOID NdisCompleteBindAdapterEx(
 ## -parameters
 <dl>
 
-### -param <i>BindContext</i> [in]
+### -param BindContext [in]
 
 <dd>
 <p>The handle that NDIS passed to the 
@@ -67,7 +67,7 @@ VOID NdisCompleteBindAdapterEx(
      ProtocolBindAdapterEx</a> function.</p>
 </dd>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>The final status of the completed bind operation. This parameter can be one of the following
@@ -76,13 +76,13 @@ VOID NdisCompleteBindAdapterEx(
 <p></p>
 <dl>
 
-### -param <a id="NDIS_STATUS_SUCCESS"></a><a id="ndis_status_success"></a>NDIS_STATUS_SUCCESS
+### -param NDIS_STATUS_SUCCESS
 
 <dd>
 <p>The driver successfully completed the binding to the underlying NIC.</p>
 </dd>
 
-### -param <a id="NDIS_STATUS_XXX_or_NTSTATUS_XXX"></a><a id="ndis_status_xxx_or_ntstatus_xxx"></a><a id="NDIS_STATUS_XXX_OR_NTSTATUS_XXX"></a>NDIS_STATUS_<i>XXX</i> or NTSTATUS_<i>XXX</i>
+### -param NDIS_STATUS_XXX or NTSTATUS_XXX
 
 <dd>
 <p>The protocol driver's attempt to set up a binding failed or the protocol driver could not
@@ -177,4 +177,4 @@ VOID NdisCompleteBindAdapterEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCompleteBindAdapterEx function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCompleteBindAdapterEx function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

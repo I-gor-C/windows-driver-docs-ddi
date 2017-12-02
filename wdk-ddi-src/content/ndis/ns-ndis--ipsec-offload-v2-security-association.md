@@ -7,7 +7,7 @@ old-location: netvista\ipsec_offload_v2_security_association.htm
 old-project: netvista
 ms.assetid: b2c5611e-930d-41a5-a07e-7de8f8584283
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, *PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A set of flags that can be combined with a bitwise OR operation. Otherwise, set this member to
@@ -70,7 +70,7 @@ typedef struct _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION {
 <p></p>
 <dl>
 
-### -field <a id="IPSEC_OFFLOAD_V2_ESN_SA"></a><a id="ipsec_offload_v2_esn_sa"></a>IPSEC_OFFLOAD_V2_ESN_SA
+### -field IPSEC_OFFLOAD_V2_ESN_SA
 
 <dd>
 <p>Specifies ESN SA.</p>
@@ -78,7 +78,7 @@ typedef struct _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION {
 </dl>
 </dd>
 
-### -field <b>Operation</b>
+### -field Operation
 
 <dd>
 <p>The IPsec operation for which the SA is to be used. The 
@@ -86,13 +86,13 @@ typedef struct _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION {
      IPSEC_OFFLOAD_V2_OPERATION</a> enumeration defines the supported operations.</p>
 </dd>
 
-### -field <b>Spi</b>
+### -field Spi
 
 <dd>
 <p>A 32 bit security parameters index (SPI) for the SA.</p>
 </dd>
 
-### -field <b>AuthenticationAlgorithm</b>
+### -field AuthenticationAlgorithm
 
 <dd>
 <p>The integrity (authentication) algorithm for the SA, formatted as an 
@@ -100,7 +100,7 @@ typedef struct _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION {
      IPSEC_OFFLOAD_V2_ALGORITHM_INFO</a> structure.</p>
 </dd>
 
-### -field <b>EncryptionAlgorithm</b>
+### -field EncryptionAlgorithm
 
 <dd>
 <p>The confidentiality (encryption/decryption) algorithm for the SA, formatted as an
@@ -113,7 +113,7 @@ typedef struct _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION {
 <div> </div>
 </dd>
 
-### -field <b>SequenceNumberHighOrder</b>
+### -field SequenceNumberHighOrder
 
 <dd>
 <p>The sequence number high-order extension. This sequence number high-order extension is defined in
@@ -183,4 +183,4 @@ typedef struct _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

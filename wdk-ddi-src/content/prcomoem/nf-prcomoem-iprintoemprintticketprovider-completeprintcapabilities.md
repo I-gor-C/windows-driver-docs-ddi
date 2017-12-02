@@ -56,13 +56,13 @@ HRESULT CompletePrintCapabilities(
 ## -parameters
 <dl>
 
-### -param <i>pPrintTicket</i> [in]
+### -param pPrintTicket [in]
 
 <dd>
 <p>A pointer to an input print ticket. Any configuration-dependent data in the print capabilities (that is, data that would be represented by a *<b>Switch</b> / *<b>Case</b> construct in a GPD file) must be based on the settings in the print ticket. If the application does not provide a print ticket, this parameter can be <b>NULL</b>. In such situations, the provider should assume default settings for feature and parameter constructs.</p>
 </dd>
 
-### -param <i>pCapabilities</i> [in, out]
+### -param pCapabilities [in, out]
 
 <dd>
 <p>A pointer to a partially-complete print capabilities document. When <code>IPrintOemPrintTicketProvider::CompletePrintCapabilities</code> returns, the buffer that is pointed to by <i>pCapablities</i> should contain a completed print capabilities document.</p>

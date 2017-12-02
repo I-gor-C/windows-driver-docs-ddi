@@ -54,7 +54,7 @@ NTSTATUS D3DKMTDestroyAllocation(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroyallocation.md">D3DKMT_DESTROYALLOCATION</a> structure that contains information for releasing allocations.</p>

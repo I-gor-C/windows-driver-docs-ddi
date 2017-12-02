@@ -55,13 +55,13 @@ typedef struct D3D10DDIARG_TEXCUBE_SHADERRESOURCEVIEW {
 ## -struct-fields
 <dl>
 
-### -field <b>MostDetailedMip</b>
+### -field MostDetailedMip
 
 <dd>
 <p>[in] The identifier of the most detailed MIP-map. </p>
 </dd>
 
-### -field <b>MipLevels</b>
+### -field MipLevels
 
 <dd>
 <p>[in] The number of MIP-map levels for the texture. </p>

@@ -55,13 +55,13 @@ typedef struct _VOLUME_PHYSICAL_OFFSETS {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfPhysicalOffsets</b>
+### -field NumberOfPhysicalOffsets
 
 <dd>
 <p>Contains the number of physical offsets returned by the call to <a href="..\ntddvol\ni-ntddvol-ioctl-volume-logical-to-physical.md">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a>. </p>
 </dd>
 
-### -field <b>PhysicalOffset</b>
+### -field PhysicalOffset
 
 <dd>
 <p>Contains an array of structures of type <a href="..\ntddvol\ns-ntddvol--volume-physical-offset.md">VOLUME_PHYSICAL_OFFSET</a>. Each element of the array contains a pair consisting of a physical disk number and an accompanying physical offset &lt;disk number, disk offset&gt;. </p>

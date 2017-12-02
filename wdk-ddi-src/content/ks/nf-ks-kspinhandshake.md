@@ -56,19 +56,19 @@ NTSTATUS KsPinHandshake(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure that is initiating the handshake. The handshake request is passed on to the pin connected to this object.</p>
 </dd>
 
-### -param <i>In</i> [in]
+### -param In [in]
 
 <dd>
 <p>A pointer to the <a href="stream.kshandshake">KSHANDSHAKE</a> structure containing the handshake information to be passed to the connected pin.</p>
 </dd>
 
-### -param <i>Out</i> [out]
+### -param Out [out]
 
 <dd>
 <p>A pointer to a <a href="stream.kshandshake">KSHANDSHAKE</a> structure that is filled in with handshake information by the connected pin.</p>

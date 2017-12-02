@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-                 Contains configuration options for the port controller object,  passed by the client driver in the call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>. Call <a href="buses.ucmtcpci_port_controller_config_init">UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT</a> to initialize this structure.
+                 Contains configuration options for the port controller object,  passed by the client driver in the call to <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>. Call <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpci-port-controller-config-init.md">UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT</a> to initialize this structure.
              </p>
 
 
@@ -59,7 +59,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -67,17 +67,17 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_CONFIG {
                  </p>
 </dd>
 
-### -field <b>Identification</b>
+### -field Identification
 
 <dd>
-<p>A pointer to the <a href="buses.ucmtcpci_port_controller_identification">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION</a> structure.</p>
+<p>A pointer to the <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller--ucmtcpci-port-controller-identification.md">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION</a> structure.</p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p> A pointer to the 
-                 <a href="buses.ucmtcpci_port_controller_capabilities">UCMTCPCI_PORT_CONTROLLER_CAPABILITIES</a> structure.</p>
+                 <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller--ucmtcpci-port-controller-capabilities.md">UCMTCPCI_PORT_CONTROLLER_CAPABILITIES</a> structure.</p>
 </dd>
 </dl>
 
@@ -101,7 +101,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>
+<a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>
 </dt>
 </dl>
 <p> </p>

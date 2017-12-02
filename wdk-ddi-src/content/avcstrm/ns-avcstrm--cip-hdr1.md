@@ -61,49 +61,49 @@ typedef struct _CIP_HDR1 {
 ## -struct-fields
 <dl>
 
-### -field <b>DBC</b>
+### -field DBC
 
 <dd>
 <p>Data block counter. This is not used by subunit driver. It must be set to 0.</p>
 </dd>
 
-### -field <b>Rsv00</b>
+### -field Rsv00
 
 <dd>
 <p>Reserved bits. Do not use this. It must be 0:0.</p>
 </dd>
 
-### -field <b>SPH</b>
+### -field SPH
 
 <dd>
 <p>Specifies a source packet header. A value of 1 indicates the presence of a source packet header. A value of 0 indicates no source packet header.</p>
 </dd>
 
-### -field <b>QPC</b>
+### -field QPC
 
 <dd>
 <p>Quadlet padding count (0..7 quadlets).</p>
 </dd>
 
-### -field <b>FN</b>
+### -field FN
 
 <dd>
 <p>Specifies the fractional number.</p>
 </dd>
 
-### -field <b>DBS</b>
+### -field DBS
 
 <dd>
 <p>Specifies the data block size in quadlets.</p>
 </dd>
 
-### -field <b>SID</b>
+### -field SID
 
 <dd>
 <p>Specifies the source node ID (ID of transmitter). Not used by the subunit driver. Must be set to 0.</p>
 </dd>
 
-### -field <b>Bit00</b>
+### -field Bit00
 
 <dd>
 <p>Must be set to 0:0.</p>

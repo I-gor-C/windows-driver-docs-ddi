@@ -56,19 +56,19 @@ HBA_STATUS HBA_API HBA_GetAdapterPortAttributes(
 ## -parameters
 <dl>
 
-### -param <i>HbaHandle</i> [in]
+### -param HbaHandle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
 </dd>
 
-### -param <i>PortIndex</i> [in]
+### -param PortIndex [in]
 
 <dd>
 <p>Indicates which remote port to query on the HBA specified by <i>HbaHandle</i>. </p>
 </dd>
 
-### -param <i>PortAttributes</i> [out]
+### -param PortAttributes [out]
 
 <dd>
 <p>Pointer to a structure of type <a href="..\hbaapi\ns-hbaapi-hba-portattributes.md">HBA_PortAttributes</a> that, on return, contains the attributes of the remote port with an index of <i>PortIndex </i>on the HBA specified by <i>HbaHandle. </i></p>

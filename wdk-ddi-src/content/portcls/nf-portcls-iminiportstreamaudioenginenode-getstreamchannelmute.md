@@ -55,13 +55,13 @@ NTSTATUS GetStreamChannelMute(
 ## -parameters
 <dl>
 
-### -param <i>ulChannel</i> [in]
+### -param ulChannel [in]
 
 <dd>
 <p>The audio stream channel.</p>
 </dd>
 
-### -param <i>pbMute</i> [out]
+### -param pbMute [out]
 
 <dd>
 <p>The state of the Mute node.</p>

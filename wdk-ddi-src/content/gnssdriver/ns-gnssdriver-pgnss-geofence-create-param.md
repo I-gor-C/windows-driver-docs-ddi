@@ -7,7 +7,7 @@ old-location: sensors\gnss_geofence_create_param.htm
 old-project: sensors
 ms.assetid: CA517EF6-41EE-4DB0-B628-35902BA34FFB
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_GEOFENCE_CREATE_PARAM, GNSS_GEOFENCE_CREATE_PARAM, *PGNSS_GEOFENCE_CREATE_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>AlertTypes</b>
+### -field AlertTypes
 
 <dd>
 <p>This is a bitmask that indicates the various alerts for this geofence that the HLOS is interested in. The GNSS engine should not raise any geofence alerts unless specifically requested by the HLOS.</p>
@@ -81,20 +81,20 @@ typedef struct {
 <p>In all cases, the GNSS engine must separately raise the global tracking status alert if it is unable to track the geofences (irrespective of their alert settings).</p>
 </dd>
 
-### -field <b>InitialState</b>
+### -field InitialState
 
 <dd>
 <p>Indicates the initial state of the specific geofence, as seen by the HLOS.  The GNSS engine must use this state as the starting state of the geofence, as opposed always starting from the GNSS_GeofenceState_Unknown state. This allows the GNSS engine to stay in sync with the HLOS in terms of the geofence states and get around any differences in geofence entry or  exit detection logic between the GNSS engine and the HLOS.</p>
 <p>As the GNSS engine starts tracking the newly added geofence, if it determines that the geofence is in a different state than this initial state, it should raise the appropriate alert. Conversely, if the states are identical, no alert should be raised.</p>
 </dd>
 
-### -field <b>Boundary</b>
+### -field Boundary
 
 <dd>
 <p>The actual boundary of the geofence.</p>
 </dd>
 
-### -field <b>Unused[512]</b>
+### -field Unused[512]
 
 <dd>
 <p>Padding buffer.</p>

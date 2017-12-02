@@ -61,68 +61,68 @@ typedef struct _SYNTHCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>Guid</b>
+### -field Guid
 
 <dd>
 <p>Specifies the class ID for the synthesizer's miniport driver interface.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies the general capabilities of the driver. This member is a bitfield whose value is either zero or the bitwise OR of one or more of the following flag bits:</p>
 <p></p>
 <dl>
 
-### -field <a id="SYNTH_PC_DLS"></a><a id="synth_pc_dls"></a>SYNTH_PC_DLS
+### -field SYNTH_PC_DLS
 
 <dd>
 <p>The driver supports downloadable sample collections (DLS Level 1).</p>
 </dd>
 
-### -field <a id="SYNTH_PC_EXTERNAL"></a><a id="synth_pc_external"></a>SYNTH_PC_EXTERNAL
+### -field SYNTH_PC_EXTERNAL
 
 <dd>
 <p>The synth represents a connection to external hardware.</p>
 </dd>
 
-### -field <a id="SYNTH_PC_SOFTWARESYNTH"></a><a id="synth_pc_softwaresynth"></a>SYNTH_PC_SOFTWARESYNTH
+### -field SYNTH_PC_SOFTWARESYNTH
 
 <dd>
 <p>The driver implements a software synthesizer.</p>
 </dd>
 
-### -field <a id="SYNTH_PC_MEMORYSIZEFIXED"></a><a id="synth_pc_memorysizefixed"></a>SYNTH_PC_MEMORYSIZEFIXED
+### -field SYNTH_PC_MEMORYSIZEFIXED
 
 <dd>
 <p>The memory size given in the <b>MemorySize</b> member is valid and represents the maximum amount of sample memory in bytes. This flag is typically set when the sample memory is not system memory.</p>
 </dd>
 
-### -field <a id="SYNTH_PC_GMINHARDWARE"></a><a id="synth_pc_gminhardware"></a>SYNTH_PC_GMINHARDWARE
+### -field SYNTH_PC_GMINHARDWARE
 
 <dd>
 <p>The synth supports the General MIDI sound set in hardware.</p>
 </dd>
 
-### -field <a id="SYNTH_PC_GSINHARDWARE"></a><a id="synth_pc_gsinhardware"></a>SYNTH_PC_GSINHARDWARE
+### -field SYNTH_PC_GSINHARDWARE
 
 <dd>
 <p>The synth supports the Roland GS sound set in hardware.</p>
 </dd>
 
-### -field <a id="SYNTH_PC_REVERB"></a><a id="synth_pc_reverb"></a>SYNTH_PC_REVERB
+### -field SYNTH_PC_REVERB
 
 <dd>
 <p>The synth supports reverb.</p>
 </dd>
 
-### -field <a id="SYNTH_PC_DLS2"></a><a id="synth_pc_dls2"></a>SYNTH_PC_DLS2
+### -field SYNTH_PC_DLS2
 
 <dd>
 <p>The driver supports downloadable sample collections (DLS Level 2).</p>
 </dd>
 
-### -field <a id="SYNTH_PC_SYSTEMMEMORY"></a><a id="synth_pc_systemmemory"></a>SYNTH_PC_SYSTEMMEMORY
+### -field SYNTH_PC_SYSTEMMEMORY
 
 <dd>
 <p>The synth can use system memory.</p>
@@ -130,50 +130,50 @@ typedef struct _SYNTHCAPS {
 </dl>
 </dd>
 
-### -field <b>MemorySize</b>
+### -field MemorySize
 
 <dd>
 <p>Specifies the amount of sample memory on the device (in bytes). This field should contain the value SYNTH_PC_SYSTEMMEMORY if the device uses system memory for sample memory with no limitation on the amount of memory allocated.</p>
 </dd>
 
-### -field <b>MaxChannelGroups</b>
+### -field MaxChannelGroups
 
 <dd>
 <p>Specifies the maximum number of channel groups this driver supports. Each channel group represents a set of 16 MIDI channels and has associated with it all the state that a MIDI hardware device would keep, which includes DLS, GM, GS, XG, or other mode information. DLS downloads, however, are per-driver and can be used by any of the channel groups. This prevents wasting memory by downloading several copies of the same DLS sample, one per channel group.</p>
 </dd>
 
-### -field <b>MaxVoices</b>
+### -field MaxVoices
 
 <dd>
 <p>Specifies the maximum number of voices that the rendering device supports. If the property handler is unable to provide a valid number for this member, it should set the member to (ULONG)-1.</p>
 </dd>
 
-### -field <b>MaxAudioChannels</b>
+### -field MaxAudioChannels
 
 <dd>
 <p>Specifies the maximum number of audio channels that the rendering device supports. If the property handler is unable to provide a valid number for this member, it should set the member to (ULONG)-1.</p>
 </dd>
 
-### -field <b>EffectFlags</b>
+### -field EffectFlags
 
 <dd>
 <p>Specifies the effects that the rendering device is capable of producing. This member is a bitfield whose value is either zero or the bitwise OR of the following flag bits:</p>
 <p></p>
 <dl>
 
-### -field <a id="SYNTH_EFFECT_REVERB"></a><a id="synth_effect_reverb"></a>SYNTH_EFFECT_REVERB
+### -field SYNTH_EFFECT_REVERB
 
 <dd>
 <p>Rendering device can produce reverb effect.</p>
 </dd>
 
-### -field <a id="SYNTH_EFFECT_CHORUS"></a><a id="synth_effect_chorus"></a>SYNTH_EFFECT_CHORUS
+### -field SYNTH_EFFECT_CHORUS
 
 <dd>
 <p>Rendering device can produce chorus effect.</p>
 </dd>
 
-### -field <a id="SYNTH_EFFECT_DELAY"></a><a id="synth_effect_delay"></a>SYNTH_EFFECT_DELAY
+### -field SYNTH_EFFECT_DELAY
 
 <dd>
 <p>Rendering device can produce delay effect.</p>
@@ -182,7 +182,7 @@ typedef struct _SYNTHCAPS {
 <p>If the device supports none of these capabilities, set this member to SYNTH_EFFECT_NONE (zero).</p>
 </dd>
 
-### -field <b>Description</b>
+### -field Description
 
 <dd>
 <p>Contains a text description of the device. This member is a WCHAR array containing a null-terminated string (for example, "Microsoft MPU-401").</p>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_filter_parameters.htm
 old-project: netvista
 ms.assetid: 39dc6b3a-f24d-4f1a-96f8-416fbcb3f894
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_RECEIVE_FILTER_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,11 +45,11 @@ req.iface:
 <p>The <b>NDIS_RECEIVE_FILTER_PARAMETERS</b> structure specifies the parameters for an NDIS receive filter.</p>
 <p>NDIS receive filters are used in the following NDIS interfaces:</p>
 <p>
-<a href="NULL">NDIS Packet Coalescing</a>. For more information on how to use receive filters in this technology, see <a href="NULL">Managing Packet Coalescing Receive Filters</a>.</p>
+<a href="netvista.ndis_packet_coalescing">NDIS Packet Coalescing</a>. For more information on how to use receive filters in this technology, see <a href="netvista.managing_packet_coalescing_receive_filters">Managing Packet Coalescing Receive Filters</a>.</p>
 <p>
-<a href="NULL">Single Root I/O Virtualization (SR-IOV)</a>. For more information on how to use receive filters in this technology, see <a href="NULL">Setting a Receive Filter on a Virtual Port</a>.</p>
+<a href="netvista.single_root_i_o_virtualization__sr-iov_">Single Root I/O Virtualization (SR-IOV)</a>. For more information on how to use receive filters in this technology, see <a href="netvista.setting_a_receive_filter_on_a_virtual_port">Setting a Receive Filter on a Virtual Port</a>.</p>
 <p>
-<a href="NULL">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="NULL">Setting and Clearing VMQ Filters</a>.</p>
+<a href="netvista.virtual_machine_queue__vmq__in_ndis_6_20">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="netvista.setting_and_clearing_vmq_filters">Setting and Clearing VMQ Filters</a>.</p>
 
 
 ## -syntax
@@ -76,7 +76,7 @@ typedef struct _NDIS_RECEIVE_FILTER_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -89,7 +89,7 @@ typedef struct _NDIS_RECEIVE_FILTER_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_FILTER_PARAMETERS_REVISION_2"></a><a id="ndis_receive_filter_parameters_revision_2"></a>NDIS_RECEIVE_FILTER_PARAMETERS_REVISION_2
+### -field NDIS_RECEIVE_FILTER_PARAMETERS_REVISION_2
 
 <dd>
 <p>Added the 
@@ -98,7 +98,7 @@ typedef struct _NDIS_RECEIVE_FILTER_PARAMETERS {
         <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_PARAMETERS_REVISION_2.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_PARAMETERS_REVISION_1"></a><a id="ndis_receive_filter_parameters_revision_1"></a>NDIS_RECEIVE_FILTER_PARAMETERS_REVISION_1
+### -field NDIS_RECEIVE_FILTER_PARAMETERS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.20.</p>
@@ -108,7 +108,7 @@ typedef struct _NDIS_RECEIVE_FILTER_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitwise OR of the following flags.</p>
@@ -120,7 +120,7 @@ typedef struct _NDIS_RECEIVE_FILTER_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_RECEIVE_FILTER_PACKET_ENCAPSULATION_GRE"></a><a id="ndis_receive_filter_packet_encapsulation_gre"></a><dl>
 
-### -field <b>NDIS_RECEIVE_FILTER_PACKET_ENCAPSULATION_GRE</b>
+### -field NDIS_RECEIVE_FILTER_PACKET_ENCAPSULATION_GRE
 
 
 ### -field 0x00000002
@@ -135,23 +135,23 @@ typedef struct _NDIS_RECEIVE_FILTER_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>FilterType</b>
+### -field FilterType
 
 <dd>
 <p>The type of the receive filter.</p>
 </dd>
 
-### -field <b>QueueId</b>
+### -field QueueId
 
 <dd>
 <p>A receive queue identifier. This identifier is an
      integer between zero and the number of queues that the network adapter supports. A value of NDIS_DEFAULT_RECEIVE_QUEUE_ID specifies
      the default receive queue.</p>
-<div class="alert"><b>Note</b>  Miniport drivers that support <a href="NULL">NDIS packet coalescing</a> or the SR-IOV interface must set the <b>QueueId</b> member to NDIS_DEFAULT_RECEIVE_QUEUE_ID.</div>
+<div class="alert"><b>Note</b>  Miniport drivers that support <a href="netvista.ndis_packet_coalescing">NDIS packet coalescing</a> or the SR-IOV interface must set the <b>QueueId</b> member to NDIS_DEFAULT_RECEIVE_QUEUE_ID.</div>
 <div> </div>
 </dd>
 
-### -field <b>FilterId</b>
+### -field FilterId
 
 <dd>
 <p>A receive filter identifier. The filter identifier
@@ -159,7 +159,7 @@ typedef struct _NDIS_RECEIVE_FILTER_PARAMETERS {
      invalid.</p>
 </dd>
 
-### -field <b>FieldParametersArrayOffset</b>
+### -field FieldParametersArrayOffset
 
 <dd>
 <p>The offset, in bytes, to the first element in an array of elements that follow this structure. The offset is measured from the start of the <b>NDIS_RECEIVE_FILTER_PARAMETERS</b> structure up to the beginning of the first element. Each element in the array is an <a href="..\ntddndis\ns-ntddndis--ndis-receive-filter-field-parameters.md">NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a> structure.
@@ -169,19 +169,19 @@ typedef struct _NDIS_RECEIVE_FILTER_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>FieldParametersArrayNumElements</b>
+### -field FieldParametersArrayNumElements
 
 <dd>
 <p>The number of elements in the array.</p>
 </dd>
 
-### -field <b>FieldParametersArrayElementSize</b>
+### -field FieldParametersArrayElementSize
 
 <dd>
 <p>The size, in bytes, of each element in the array.</p>
 </dd>
 
-### -field <b>RequestedFilterIdBitCount</b>
+### -field RequestedFilterIdBitCount
 
 <dd>
 <p>The number of bits in a filter identifier. The miniport driver uses
@@ -193,17 +193,17 @@ typedef struct _NDIS_RECEIVE_FILTER_PARAMETERS {
 <p>Starting with NDIS 6.20, this member must be set to zero.</p>
 </dd>
 
-### -field <b>MaxCoalescingDelay</b>
+### -field MaxCoalescingDelay
 
 <dd>
 <p>The maximum time, in milliseconds, that the first packet that matches this receive filter is saved within the hardware coalescing buffer on the network adapter. </p>
 <p>As soon as the first  packet that matches the filter is received, the network adapter coalesces the packet. The adapter also starts a hardware timer whose expiration time  is set to the value of the <b>MaxCoalescingDelay</b> member. Additional packets that match the same filter must be coalesced by the adapter without resetting and restarting the hardware timer.</p>
 <p>When the hardware timer expires, the adapter must generate a receive interrupt to signal the host about coalesced packets that match the receive filter.</p>
-<div class="alert"><b>Note</b>  Miniport drivers that do not support <a href="NULL">NDIS packet coalescing</a> must ignore this member.</div>
+<div class="alert"><b>Note</b>  Miniport drivers that do not support <a href="netvista.ndis_packet_coalescing">NDIS packet coalescing</a> must ignore this member.</div>
 <div> </div>
 </dd>
 
-### -field <b>VPortId</b>
+### -field VPortId
 
 <dd>
 <p>The VPort identifier on which the receive filter is to be configured. A value of DEFAULT_VPORT_ID specifies the default VPort that is attached to the PCI Express (PCIe) physical function (PF) of the network adapter.
@@ -249,7 +249,7 @@ typedef struct _NDIS_RECEIVE_FILTER_PARAMETERS {
 </li>
 </ul>
 </p>
-<p>For more information, see <a href="NULL">Handling Packet Coalescing Receive Filters</a>.</p>
+<p>For more information, see <a href="netvista.handling_packet_coalescing_receive_filters">Handling Packet Coalescing Receive Filters</a>.</p>
 </li>
 <li>
 <p>If the network adapter supports the SR-IOV interface, the adapter should forward the packet to the receive queue of a default or nondefault VPort. The receive queue is specified by the <b>QueueId</b> member and the VPort is specified by the  <b>VPortId</b> member.</p>
@@ -276,7 +276,7 @@ typedef struct _NDIS_RECEIVE_FILTER_PARAMETERS {
 
 <p>The available space within the hardware coalescing buffer reaches an adapter-specific low-water mark.</p>
 
-<p>For more information, see <a href="NULL">Handling Packet Coalescing Receive Filters</a>.</p>
+<p>For more information, see <a href="netvista.handling_packet_coalescing_receive_filters">Handling Packet Coalescing Receive Filters</a>.</p>
 
 <p>If the network adapter supports the SR-IOV interface, the adapter should forward the packet to the receive queue of a default or nondefault VPort. The receive queue is specified by the <b>QueueId</b> member and the VPort is specified by the  <b>VPortId</b> member.</p>
 
@@ -325,4 +325,4 @@ typedef struct _NDIS_RECEIVE_FILTER_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

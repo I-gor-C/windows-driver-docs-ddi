@@ -54,7 +54,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOfferAllocations(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-offerallocations.md">D3DKMT_OFFERALLOCATIONS</a> structure that defines memory allocations that the driver offers for reuse.</p>

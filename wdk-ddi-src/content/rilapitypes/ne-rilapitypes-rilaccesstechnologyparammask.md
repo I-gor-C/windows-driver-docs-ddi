@@ -7,7 +7,7 @@ old-location: netvista\rilaccesstechnologyparammask_2.htm
 old-project: netvista
 ms.assetid: 9acb41d8-502f-404e-a03f-d222eff6d0ad
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILACCESSTECHNOLOGYPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_ACCTECH_SYSTEMKIND"></a><a id="ril_param_acctech_systemkind"></a><b>RIL_PARAM_ACCTECH_SYSTEMKIND</b>
+### -field RIL_PARAM_ACCTECH_SYSTEMKIND
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_ACCTECH_ALL"></a><a id="ril_param_acctech_all"></a><b>RIL_PARAM_ACCTECH_ALL</b>
+### -field RIL_PARAM_ACCTECH_ALL
 
 <dd></dd>
 </dl>

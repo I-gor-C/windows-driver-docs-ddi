@@ -7,7 +7,7 @@ old-location: ifsk\mrxcreatesrvcall.htm
 old-project: ifsk
 ms.assetid: 2f6325e1-4ede-41e5-87d3-833c6b52157a
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ NTSTATUS MRxCreateSrvCall(
 ## -parameters
 <dl>
 
-### -param <i>pSrvCall</i> [in, out]
+### -param pSrvCall [in, out]
 
 <dd>
 <p>A pointer to the SRV_CALL structure to be created. </p>
 </dd>
 
-### -param <i>pCallbackContext</i> [in, out]
+### -param pCallbackContext [in, out]
 
 <dd>
 <p>A pointer to the callback context used by the network mini-redirector to notify RDBSS when the <i>MRxCreateSrvCall</i> request is finally completed. The <i>pCallbackContext</i> parameter points to an MRX_SRVCALLDOWN_STRUCTURE structure that contains the RX_CONTEXT structure for this request, as well as the <b>Callback</b> routine that the mini-redirector calls when the <i>MRxCreateSrvCall</i> request is finally completed. </p>
@@ -166,4 +166,4 @@ NTSTATUS MRxCreateSrvCall(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxCreateSrvCall routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxCreateSrvCall routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

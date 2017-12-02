@@ -76,139 +76,139 @@ typedef struct _D3DDDICB_SUBMITCOMMAND {
 ## -struct-fields
 <dl>
 
-### -field <b>Commands</b>
+### -field Commands
 
 <dd>
 <p>GPU virtual address to the commands being submitted to the context for execution. This information is provided to the kernel mode driver during command submission and is also used for debugging purposes.</p>
 </dd>
 
-### -field <b>CommandLength</b>
+### -field CommandLength
 
 <dd>
 <p>Specifies the length, in bytes, of the commands being submitted to the GPU. This information is provided to the kernel  mode driver during command submission and is also used for debugging purposes.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>An instance of the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-submitcommandflags.md">D3DDDICB_SUBMITCOMMANDFLAGS</a> structure.</p>
 </dd>
 
-### -field <b>BroadcastContextCount</b>
+### -field BroadcastContextCount
 
 <dd>
 <p>Specifies the number of context these command should be submitted to. This count must be at least 1.</p>
 </dd>
 
-### -field <b>BroadcastContext</b>
+### -field BroadcastContext
 
 <dd>
 <p>Specifies the handle of the context to execute the specified commands.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>Pointer to driver private data to be passed to the kernel mode driver as part of this submission.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>Size of the private driver data information being passed. This size must be smaller than the size requested by the kernel mode driver for submission private driver data.</p>
 </dd>
 
-### -field <b>NumPrimaries</b>
+### -field NumPrimaries
 
 <dd>
 <p>Specifies the number of primaries and swapchain back buffers being written to by the submitted commands. This is equal to the number of allocations in the <b>WrittenPrimaries</b> array.</p>
 </dd>
 
-### -field <b>WrittenPrimaries</b>
+### -field WrittenPrimaries
 
 <dd>
 <p>Arrays of handle to the primaries and swapchain back buffers being written to by the submitted commands.</p>
 </dd>
 
-### -field <b>MarkerLogType</b>
+### -field MarkerLogType
 
 <dd>
 <p>A <a href="..\d3dumddi\ne-d3dumddi-d3dddi-markerlogtype.md">D3DDDI_MARKERLOGTYPE</a> enumeration that indicates the type of marker in the Event Tracing for Windows (ETW) log that the user-mode display driver supports.</p>
 </dd>
 
-### -field <b>RenderCBSequence</b>
+### -field RenderCBSequence
 
 <dd>
 <p>A unique identifier for each <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a> function call. Starts at a value of 1 for contexts associated with single-threaded user-mode DDIs and ranges to a value of 0x80000001 for contexts associated with free-threaded user mode DDIs. The user-mode display driver must increment the value for each <i>pfnRenderCb</i> call it makes on any engine.</p>
 </dd>
 
-### -field <b>FirstAPISequenceNumberHigh</b>
+### -field FirstAPISequenceNumberHigh
 
 <dd>
 <p>Used by the driver to pass the context's API sequence number.</p>
 </dd>
 
-### -field <b>CompletedAPISequenceNumberLow0Size</b>
+### -field CompletedAPISequenceNumberLow0Size
 
 <dd>
 <p>Used by the driver to pass the context's API sequence number.</p>
 </dd>
 
-### -field <b>CompletedAPISequenceNumberLow1Size</b>
+### -field CompletedAPISequenceNumberLow1Size
 
 <dd>
 <p>Used by the driver to pass the context's API sequence number.</p>
 </dd>
 
-### -field <b>BegunAPISequenceNumberLow0Size</b>
+### -field BegunAPISequenceNumberLow0Size
 
 <dd>
 <p>Used by the driver to pass the context's API sequence number.</p>
 </dd>
 
-### -field <b>BegunAPISequenceNumberLow1Size</b>
+### -field BegunAPISequenceNumberLow1Size
 
 <dd>
 <p>Used by the driver to pass the context's API sequence number.</p>
 </dd>
 
-### -field <b>pCompletedAPISequenceNumberLow0</b>
+### -field pCompletedAPISequenceNumberLow0
 
 <dd>
 <p>A pointer used by the driver to pass the context's API sequence number.</p>
 </dd>
 
-### -field <b>pCompletedAPISequenceNumberLow1</b>
+### -field pCompletedAPISequenceNumberLow1
 
 <dd>
 <p>A pointer used by the driver to pass the context's API sequence number.</p>
 </dd>
 
-### -field <b>pBegunAPISequenceNumberLow0</b>
+### -field pBegunAPISequenceNumberLow0
 
 <dd>
 <p>A pointer used by the driver to pass the context's API sequence number.</p>
 </dd>
 
-### -field <b>pBegunAPISequenceNumberLow1</b>
+### -field pBegunAPISequenceNumberLow1
 
 <dd>
 <p>A pointer used by the driver to pass the context's API sequence number.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>NumHistoryBuffers</b>
+### -field NumHistoryBuffers
 
 <dd>
 <p>The number of history buffers.</p>
 </dd>
 
-### -field <b>HistoryBufferArray</b>
+### -field HistoryBufferArray
 
 <dd>
 <p>A pointer to the array of history buffers.</p>

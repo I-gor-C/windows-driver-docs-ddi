@@ -56,13 +56,13 @@ VOID ScsiDebugPrint(
 ## -parameters
 <dl>
 
-### -param <i>DebugPrintLevel</i> 
+### -param DebugPrintLevel 
 
 <dd>
 <p>Contains a value between 0 and 3 that specifies the amount of verbosity. A value of 3 signifies the highest level of verbosity. A value of 0 signifies the lowest level. <b>ScsiDebugPrint</b> will print the message pointed to by <i>DebugMessage</i>, together with other debugging information. For information about how the meaning of <i>DebugPrintLevel </i>has changed in Windows XP and later operating systems, see the remarks section.  </p>
 </dd>
 
-### -param <i>DebugMessage</i> 
+### -param DebugMessage 
 
 <dd>
 <p>Pointer to the message to be printed. </p>

@@ -54,7 +54,7 @@ NTSTATUS GetLfxState(
 ## -parameters
 <dl>
 
-### -param <i>pbEnable</i> [out]
+### -param pbEnable [out]
 
 <dd>
 <p>The current state of the LFX node.</p>

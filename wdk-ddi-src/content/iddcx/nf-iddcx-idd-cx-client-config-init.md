@@ -56,7 +56,7 @@ VOID IDD_CX_CLIENT_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
 <p>A pointer to the driver-allocated IDD_CX_CLIENT_CONFIG structure.</p>

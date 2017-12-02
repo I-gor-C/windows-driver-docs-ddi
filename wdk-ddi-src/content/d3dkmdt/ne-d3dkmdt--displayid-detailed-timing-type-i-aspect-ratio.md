@@ -60,37 +60,37 @@ enum _DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO {
 ## -enum-fields
 <dl>
 
-### -field <a id="DIDDT1_AspectRatio_1x1"></a><a id="diddt1_aspectratio_1x1"></a><a id="DIDDT1_ASPECTRATIO_1X1"></a><b>DIDDT1_AspectRatio_1x1</b>
+### -field DIDDT1_AspectRatio_1x1
 
 <dd>
 <p>Indicates a 1 x 1 aspect ratio.</p>
 </dd>
 
-### -field <a id="DIDDT1_AspectRatio_5x4"></a><a id="diddt1_aspectratio_5x4"></a><a id="DIDDT1_ASPECTRATIO_5X4"></a><b>DIDDT1_AspectRatio_5x4</b>
+### -field DIDDT1_AspectRatio_5x4
 
 <dd>
 <p>Indicates a 5 x 4 aspect ratio.</p>
 </dd>
 
-### -field <a id="DIDDT1_AspectRatio_4x3"></a><a id="diddt1_aspectratio_4x3"></a><a id="DIDDT1_ASPECTRATIO_4X3"></a><b>DIDDT1_AspectRatio_4x3</b>
+### -field DIDDT1_AspectRatio_4x3
 
 <dd>
 <p>Indicates a 4 x 3 aspect ratio.</p>
 </dd>
 
-### -field <a id="DIDDT1_AspectRatio_15x9"></a><a id="diddt1_aspectratio_15x9"></a><a id="DIDDT1_ASPECTRATIO_15X9"></a><b>DIDDT1_AspectRatio_15x9</b>
+### -field DIDDT1_AspectRatio_15x9
 
 <dd>
 <p>Indicates a 15 x 9 aspect ratio.</p>
 </dd>
 
-### -field <a id="DIDDT1_AspectRatio_16x9"></a><a id="diddt1_aspectratio_16x9"></a><a id="DIDDT1_ASPECTRATIO_16X9"></a><b>DIDDT1_AspectRatio_16x9</b>
+### -field DIDDT1_AspectRatio_16x9
 
 <dd>
 <p>Indicates a 16 x 9 aspect ratio.</p>
 </dd>
 
-### -field <a id="DIDDT1_AspectRatio_16x10"></a><a id="diddt1_aspectratio_16x10"></a><a id="DIDDT1_ASPECTRATIO_16X10"></a><b>DIDDT1_AspectRatio_16x10</b>
+### -field DIDDT1_AspectRatio_16x10
 
 <dd>
 <p>Indicates a 16 x 10 aspect ratio.</p>

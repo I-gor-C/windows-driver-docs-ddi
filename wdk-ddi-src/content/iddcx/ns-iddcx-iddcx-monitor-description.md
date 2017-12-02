@@ -57,7 +57,7 @@ typedef struct IDDCX_MONITOR_DESCRIPTION {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -65,7 +65,7 @@ typedef struct IDDCX_MONITOR_DESCRIPTION {
                  </p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>
@@ -73,7 +73,7 @@ typedef struct IDDCX_MONITOR_DESCRIPTION {
                  </p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>
@@ -81,7 +81,7 @@ typedef struct IDDCX_MONITOR_DESCRIPTION {
                  </p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>

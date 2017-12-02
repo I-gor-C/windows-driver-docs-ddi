@@ -7,13 +7,13 @@ old-location: debugger\writephysical.htm
 old-project: debugger
 ms.assetid: faafaf0a-29ef-43ef-9f9a-f3b545e83f65
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: WritePhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -58,25 +58,25 @@ __inline VOID WritePhysical(
 ## -parameters
 <dl>
 
-### -param <i>address</i> [in]
+### -param address [in]
 
 <dd>
 <p>Specifies the physical address to write.</p>
 </dd>
 
-### -param <i>buf</i> [in]
+### -param buf [in]
 
 <dd>
 <p>Specifies the address of an array of bytes to hold the data that is written.</p>
 </dd>
 
-### -param <i>size</i> [in]
+### -param size [in]
 
 <dd>
 <p>Specifies the number of bytes to write. </p>
 </dd>
 
-### -param <i>sizew</i> [out, optional]
+### -param sizew [out, optional]
 
 <dd>
 <p>Receives the number of bytes actually written.</p>
@@ -107,7 +107,7 @@ __inline VOID WritePhysical(
 </th>
 <td width="70%">
 <dl>
-<dt>Dbgeng.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Dbgeng.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

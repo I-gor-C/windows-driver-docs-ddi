@@ -54,7 +54,7 @@ typedef enum _KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY_ID"></a><a id="ksproperty_cameracontrol_image_pin_capability_property_id"></a><b>KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY_ID</b>
+### -field KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY_ID
 
 <dd>
 <p>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj553706">KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY</a> property is used to identify whether the camera's image pin and the record pin are mutually exclusive.</p>

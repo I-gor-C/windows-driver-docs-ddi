@@ -58,25 +58,25 @@ typedef struct _STREAM_TIME_REFERENCE {
 ## -struct-fields
 <dl>
 
-### -field <b>CurrentOnboardClockValue</b>
+### -field CurrentOnboardClockValue
 
 <dd>
 <p>Current value of the adapter clock.</p>
 </dd>
 
-### -field <b>OnboardClockFrequency</b>
+### -field OnboardClockFrequency
 
 <dd>
 <p>Frequency of the adapter clock.</p>
 </dd>
 
-### -field <b>CurrentSystemTime</b>
+### -field CurrentSystemTime
 
 <dd>
 <p>KeQueryPerformanceCounter time.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

@@ -57,19 +57,19 @@ VOID ExNotifyCallback(
 ## -parameters
 <dl>
 
-### -param <i>CallbackObject</i> [in]
+### -param CallbackObject [in]
 
 <dd>
 <p>A pointer to the callback object for which all registered callback routines will be called.</p>
 </dd>
 
-### -param <i>Argument1</i> [in, optional]
+### -param Argument1 [in, optional]
 
 <dd>
 <p>Specifies the parameter that is passed as <i>Argument1</i> of the callback routine.</p>
 </dd>
 
-### -param <i>Argument2</i> [in, optional]
+### -param Argument2 [in, optional]
 
 <dd>
 <p>Specifies the parameter that is passed as <i>Argument2</i> of the callback routine. </p>

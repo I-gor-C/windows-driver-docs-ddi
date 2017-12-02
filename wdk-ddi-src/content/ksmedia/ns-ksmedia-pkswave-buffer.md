@@ -56,7 +56,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Attributes</b>
+### -field Attributes
 
 <dd>
 <p>Specifies the following flags:</p>
@@ -85,13 +85,13 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>BufferSize</b>
+### -field BufferSize
 
 <dd>
 <p>Specifies the size of the buffer, in bytes.</p>
 </dd>
 
-### -field <b>BufferAddress</b>
+### -field BufferAddress
 
 <dd>
 <p>Specifies the starting address of the buffer.</p>

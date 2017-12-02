@@ -65,13 +65,13 @@ NTSTATUS ClfsCreateLogFile(
 ## -parameters
 <dl>
 
-### -param <i>pplfoLog</i> [out]
+### -param pplfoLog [out]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents an open instance of the stream.</p>
 </dd>
 
-### -param <i>puszLogFileName</i> [in]
+### -param puszLogFileName [in]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that supplies the name of the stream or the underlying physical log. </p>
@@ -93,7 +93,7 @@ NTSTATUS ClfsCreateLogFile(
 </ul>
 </dd>
 
-### -param <i>fDesiredAccess</i> [in]
+### -param fDesiredAccess [in]
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> that supplies the type of access the client will have (by using the pointer returned in <i>pplfoLog</i>) to the stream. If this parameter is zero, clients can query the stream for its attributes, but cannot read from or write to the stream. This parameter can be zero or any combination of the following flags:</p>
@@ -130,7 +130,7 @@ NTSTATUS ClfsCreateLogFile(
 <p> </p>
 </dd>
 
-### -param <i>dwShareMode</i> [in]
+### -param dwShareMode [in]
 
 <dd>
 <p>The sharing mode of the stream, which can be zero (not shared) or any combination of the following flags:</p>
@@ -167,13 +167,13 @@ NTSTATUS ClfsCreateLogFile(
 <p> </p>
 </dd>
 
-### -param <i>psdLogFile</i> [in, optional]
+### -param psdLogFile [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> structure that supplies security attributes for the stream. This parameter can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>fCreateDisposition</i> [in]
+### -param fCreateDisposition [in]
 
 <dd>
 <p>The action to take that depends on whether the stream already exists. This parameter must be set to one of the following values:</p>
@@ -210,7 +210,7 @@ NTSTATUS ClfsCreateLogFile(
 <p> </p>
 </dd>
 
-### -param <i>fCreateOptions</i> [in]
+### -param fCreateOptions [in]
 
 <dd>
 <p>A set of flags that specify options to apply when creating or opening the stream. This parameter can be zero or a compatible combination of the following flags:</p>
@@ -247,14 +247,14 @@ NTSTATUS ClfsCreateLogFile(
 <p> </p>
 </dd>
 
-### -param <i>fFlagsAndAttributes</i> [in]
+### -param fFlagsAndAttributes [in]
 
 <dd>
 <p>A value that specifies whether the stream is opened for normal or read-only access. This parameter must be set to either </p>
 <p>FILE_ATTRIBUTE_NORMAL or FILE_ATTRIBUTE_READONLY.</p>
 </dd>
 
-### -param <i>fLogOptionFlag</i> [in]
+### -param fLogOptionFlag [in]
 
 <dd>
 <p>A hint about the relationship between CLFS and the component creating or opening the stream. This parameter must be set to one of the following values:
@@ -308,13 +308,13 @@ NTSTATUS ClfsCreateLogFile(
 <p> </p>
 </dd>
 
-### -param <i>pvContext</i> [in, optional]
+### -param pvContext [in, optional]
 
 <dd>
 <p>A pointer to a context. The way the context is interpreted depends on the value passed to <i>fLogOptionsFlag</i>. </p>
 </dd>
 
-### -param <i>cbContext</i> [in]
+### -param cbContext [in]
 
 <dd>
 <p>The size, in bytes, of the context pointed to by <i>pvContext</i>. If <i>pvContext</i> is not <b>NULL</b>, this parameter must be greater than zero. </p>

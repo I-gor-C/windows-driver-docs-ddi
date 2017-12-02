@@ -56,13 +56,13 @@ BOOLEAN ExAcquireResourceExclusiveLite(
 ## -parameters
 <dl>
 
-### -param <i>Resource</i> [in, out]
+### -param Resource [in, out]
 
 <dd>
 <p>A pointer to the resource to acquire.</p>
 </dd>
 
-### -param <i>Wait</i> [in]
+### -param Wait [in]
 
 <dd>
 <p>Specifies the routine's behavior whenever the resource cannot be acquired immediately. If <b>TRUE</b>, the caller is put into a wait state until the resource can be acquired. If <b>FALSE</b>, the routine immediately returns, regardless of whether the resource can be acquired. </p>
@@ -85,7 +85,7 @@ BOOLEAN ExAcquireResourceExclusiveLite(
 
 <p>The caller can release the resource by calling either <a href="kernel.exreleaseresourcelite">ExReleaseResourceLite</a> or <a href="..\wdm\nf-wdm-exreleaseresourceforthreadlite.md">ExReleaseResourceForThreadLite</a>.</p>
 
-<p>Normal kernel APC delivery must be disabled before calling this routine. Disable normal kernel APC delivery by calling <a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a>. Delivery must remain disabled until the resource is released, at which point it can be reenabled by calling <a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543219">Disabling APCs</a>.</p>
+<p>Normal kernel APC delivery must be disabled before calling this routine. Disable normal kernel APC delivery by calling <a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a>. Delivery must remain disabled until the resource is released, at which point it can be reenabled by calling <a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543219">Disabling APCs</a>.</p>
 
 ## -requirements
 <table>
@@ -179,7 +179,7 @@ BOOLEAN ExAcquireResourceExclusiveLite(
 <a href="..\wdm\nf-wdm-exreleaseresourceforthreadlite.md">ExReleaseResourceForThreadLite</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a>
+<a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a>
 </dt>
 </dl>
 <p> </p>

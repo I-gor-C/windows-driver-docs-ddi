@@ -7,7 +7,7 @@ old-location: netvista\rilhideidsettingsparammask_2.htm
 old-project: netvista
 ms.assetid: 5c951b21-1fa9-4b76-8631-3ab4148176ef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILHIDEIDSETTINGSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_HIDS_STATUS"></a><a id="ril_param_hids_status"></a><b>RIL_PARAM_HIDS_STATUS</b>
+### -field RIL_PARAM_HIDS_STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_HIDS_PROVISIONING"></a><a id="ril_param_hids_provisioning"></a><b>RIL_PARAM_HIDS_PROVISIONING</b>
+### -field RIL_PARAM_HIDS_PROVISIONING
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_HIDS_ALL"></a><a id="ril_param_hids_all"></a><b>RIL_PARAM_HIDS_ALL</b>
+### -field RIL_PARAM_HIDS_ALL
 
 <dd></dd>
 </dl>

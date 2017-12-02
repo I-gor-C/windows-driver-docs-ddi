@@ -56,7 +56,7 @@ BOOL DrvUpgradePrinter(
 ## -parameters
 <dl>
 
-### -param <i>Level</i> 
+### -param Level 
 
 <dd>
 <p>Caller-supplied value indicating the type of structure pointed to by <i>pDriverUpgradeInfo</i>, as indicated in the following table.</p>
@@ -89,7 +89,7 @@ BOOL DrvUpgradePrinter(
 <p> </p>
 </dd>
 
-### -param <i>pDriverUpgradeInfo</i> [in, optional]
+### -param pDriverUpgradeInfo [in, optional]
 
 <dd>
 <p>Caller-supplied pointer to a structure whose type is identified by <i>dwLevel</i>. </p>
@@ -100,7 +100,7 @@ BOOL DrvUpgradePrinter(
 <p>If the operation succeeds, the function should return <b>TRUE</b>; otherwise, it should call SetLastError to set an error code and return <b>FALSE</b>.</p>
 
 ## -remarks
-<p>A <a href="NULL">printer interface DLL</a> can optionally provide a <b>DrvUpgradePrinter</b> function. If it does, the spooler calls it for every printer when the printer driver is copied onto the system. This occurs when a system is upgraded from one operating system release to the next, or when an application updates a printer driver by calling the Win32 <b>AddPrinterDriver</b> function.</p>
+<p>A <a href="https://msdn.microsoft.com/2a8cf38f-8e27-4e08-9c0f-5d1a4cd854ac">printer interface DLL</a> can optionally provide a <b>DrvUpgradePrinter</b> function. If it does, the spooler calls it for every printer when the printer driver is copied onto the system. This occurs when a system is upgraded from one operating system release to the next, or when an application updates a printer driver by calling the Win32 <b>AddPrinterDriver</b> function.</p>
 
 <p>Often, a new driver version requires registry settings that are different from those of the old version. The <b>DrvUpgradePrinter</b> function's purpose is to update the registry so it is compatible with the driver. For more information about storing printer information in the registry, see <a href="..\winddiui\nf-winddiui-drvprinterevent.md">DrvPrinterEvent</a>.</p>
 

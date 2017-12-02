@@ -59,31 +59,31 @@ PMDL IoAllocateMdl(
 ## -parameters
 <dl>
 
-### -param <i>VirtualAddress</i> [in, optional]
+### -param VirtualAddress [in, optional]
 
 <dd>
 <p>Pointer to the base virtual address of the buffer the MDL is to describe.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the length, in bytes, of the buffer that the MDL is to describe. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>SecondaryBuffer</i> [in]
+### -param SecondaryBuffer [in]
 
 <dd>
 <p>Indicates whether the buffer is a primary or secondary buffer. This parameter determines how the MDL is to be linked to the IRP. All buffers except the first buffer described by an MDL in an IRP are considered secondary buffers. This field must be <b>FALSE</b> if no IRP is associated with the MDL. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>ChargeQuota</i> [in]
+### -param ChargeQuota [in]
 
 <dd>
 <p>Reserved for system use. Drivers must set this parameter to <b>FALSE</b>.</p>
 </dd>
 
-### -param <i>Irp</i> [in, out, optional]
+### -param Irp [in, out, optional]
 
 <dd>
 <p>Pointer to an IRP to be associated with the MDL. If the <i>Irp</i> pointer is non-<b>NULL</b>, the allocated MDL is associated with the specified IRP's MDL list, according to the value of <i>SecondaryBuffer</i>. </p>

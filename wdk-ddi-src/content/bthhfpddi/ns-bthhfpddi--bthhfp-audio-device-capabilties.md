@@ -55,13 +55,13 @@ typedef struct _BTHHFP_AUDIO_DEVICE_CAPABILTIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the device.</p>
 </dd>
 
-### -field <b>Supports16kHzSampling</b>
+### -field Supports16kHzSampling
 
 <dd>
 <p>Whether the device supports 16 kHz sampling.</p>

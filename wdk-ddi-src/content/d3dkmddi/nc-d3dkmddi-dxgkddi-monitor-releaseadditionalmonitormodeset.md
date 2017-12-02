@@ -59,19 +59,19 @@ NTSTATUS APIENTRY pfnReleaseAdditionalMonitorModeSet(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>[in] A handle that identifies a display adapter. The Microsoft DirectX graphics kernel subsystem previously provided this handle to the display miniport driver in the <i>DxgkInterface</i> parameter of the <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
 </dd>
 
-### -param <i>VideoPresentTargetId</i> [in]
+### -param VideoPresentTargetId [in]
 
 <dd>
 <p>[in] An integer that identifies one of the video present targets on the display adapter. The additional modes set object <i>ppAdditionalModesSet</i> returned in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-getadditionalmonitormodeset.md">pfnGetAdditionalMonitorModeSet</a> function describes the additional monitor source mode sets that are available on the monitor that is connected to this video present target.</p>
 </dd>
 
-### -param <i>pAdditionalModesSet</i> [in]
+### -param pAdditionalModesSet [in]
 
 <dd>
 <p>[in] A pointer to a variable that receives a <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-targetmode-detail-timing.md">DXGK_TARGETMODE_DETAIL_TIMING</a> structure that describes a video present target's additional timing modes that are compatible with the display device. This structure was initially obtained in a call to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-getadditionalmonitormodeset.md">pfnGetAdditionalMonitorModeSet</a>.</p>

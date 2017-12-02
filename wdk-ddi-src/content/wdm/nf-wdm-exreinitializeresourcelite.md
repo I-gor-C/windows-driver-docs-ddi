@@ -55,7 +55,7 @@ NTSTATUS ExReinitializeResourceLite(
 ## -parameters
 <dl>
 
-### -param <i>Resource</i> [in, out]
+### -param Resource [in, out]
 
 <dd>
 <p>A pointer to the caller-supplied resource variable to be reinitialized.</p>

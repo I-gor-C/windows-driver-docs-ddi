@@ -62,55 +62,55 @@ NTSTATUS PcNewRegistryKey(
 ## -parameters
 <dl>
 
-### -param <i>OutRegistryKey</i> [out]
+### -param OutRegistryKey [out]
 
 <dd>
 <p>Output pointer to the registry-key object created by this function. This parameter points to a caller-allocated pointer variable into which the function outputs the pointer to the <a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a> object. The object represents the registry key being opened or created. Specify a valid, non-<b>NULL</b> pointer value for this parameter.</p>
 </dd>
 
-### -param <i>OuterUnknown</i> [in, optional]
+### -param OuterUnknown [in, optional]
 
 <dd>
 <p>Pointer to the <a href="com.iunknown">IUnknown</a> interface of an object that needs to aggregate the <i>OutRegistryKey</i> object. Unless aggregation is required, set this parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>RegistryKeyType</i> [in]
+### -param RegistryKeyType [in]
 
 <dd>
 <p>Specifies the type of registry key that the caller wants to create or open. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies an access-control mask. This parameter is a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>. It indicates the type of access that the caller is requesting to the registry key that is to be opened or created. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in, optional]
+### -param DeviceObject [in, optional]
 
 <dd>
 <p>Pointer to the adapter driver's device object. This pointer is cast to type PVOID. If <i>RegistryKeyType</i> is any value other than <b>GeneralRegistryKey</b>, this parameter must point to a valid, initialized system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>. If the value of <i>RegistryKeyType</i> is <b>GeneralRegistryKey</b>, the <b>PcNewRegistryKey</b> function does not use this parameter. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>SubDevice</i> [in, optional]
+### -param SubDevice [in, optional]
 
 <dd>
 <p>Specifies the aspect of the device that is to be offered to clients. Adapter drivers must assign the value <b>NULL</b> to this parameter.</p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in, optional]
+### -param ObjectAttributes [in, optional]
 
 <dd>
 <p>Pointer to the object attributes of the key being created or opened. If <i>RegistryKeyType</i> has the value <b>GeneralRegistryKey</b>, this parameter must point to a valid, initialized system structure of type <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> with a valid <i>ObjectName</i> string for the key; otherwise, the function does not use this parameter. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>CreateOptions</i> [in, optional]
+### -param CreateOptions [in, optional]
 
 <dd>
 <p>Specifies the create options. Can be zero if none are desired. If <i>RegistryKeyType</i> is not <b>GeneralRegistryKey</b>, the <b>PcNewRegistryKey</b> function ignores this parameter. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>Disposition</i> [out, optional]
+### -param Disposition [out, optional]
 
 <dd>
 <p>Pointer to a variable that receives a value indicating whether a key was created or an existing key was opened. This parameter is optional and can be specified as <b>NULL</b>. If <i>RegistryKeyType</i> is any value other than <b>GeneralRegistryKey</b>, the <b>PcNewRegistryKey</b> function ignores this parameter. For more information, see the following Remarks section.</p>
@@ -157,7 +157,7 @@ NTSTATUS PcNewRegistryKey(
 
 <p>The <b>PcNewRegistryKey</b> function is similar to the <a href="audio.iport_newregistrykey">IPort::NewRegistryKey</a> method except that the device object and port object must be explicitly specified in a <b>PcNewRegistryKey</b> call but are simply implied in a <b>NewRegistryKey</b> call. <b>PcNewRegistryKey</b> is used primarily by adapter drivers. Miniport drivers typically call <b>NewRegistryKey</b> instead.</p>
 
-<p>The <i>OutRegistryKey</i> and <i>OuterUnknown</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>. </p>
+<p>The <i>OutRegistryKey</i> and <i>OuterUnknown</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>. </p>
 
 ## -requirements
 <table>

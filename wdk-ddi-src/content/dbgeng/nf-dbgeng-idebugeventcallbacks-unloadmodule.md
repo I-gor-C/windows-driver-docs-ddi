@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbacks_unloadmodule.htm
 old-project: debugger
 ms.assetid: 2afdaee6-7714-42d4-a402-3cb85ef3b970
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugEventCallbacks, UnloadModule, IDebugEventCallbacks::UnloadModule
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ HRESULT UnloadModule(
 ## -parameters
 <dl>
 
-### -param <i>ImageBaseName</i> [in, optional]
+### -param ImageBaseName [in, optional]
 
 <dd>
 <p>Specifies the name of the module's image file, which can include the path.  If this information is not available, <i>ImageBaseName</i> will be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>BaseOffset</i> [in]
+### -param BaseOffset [in]
 
 <dd>
 <p>Specifies the base address of the module in the target's memory address space.    If this information is not available, <i>BaseOffset</i> will be <b>NULL</b>.</p>
@@ -69,7 +69,7 @@ HRESULT UnloadModule(
 </dl>
 
 ## -returns
-<p>This method returns a <a href="debugger.debug_status_xxx">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
+<p>This method returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541651">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
 
 ## -remarks
 <p>This method is only called by the engine if the DEBUG_EVENT_UNLOAD_MODULE flag is set in the mask returned by <a href="debugger.idebugeventcallbacks_getinterestmask">IDebugEventCallbacks::GetInterestMask</a>.</p>

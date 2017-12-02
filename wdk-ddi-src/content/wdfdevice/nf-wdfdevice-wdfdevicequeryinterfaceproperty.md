@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicequeryinterfaceproperty.htm
 old-project: wdf
 ms.assetid: 0A09990B-DAB9-41D3-80BF-38CD6AF39625
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceQueryInterfaceProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ NTSTATUS WdfDeviceQueryInterfaceProperty(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>PropertyData</i> [in]
+### -param PropertyData [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdfdevice\ns-wdfdevice--wdf-device-interface-property-data.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a> structure that identifies the device interface property to be retrieved.</p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>The size, in bytes, of the buffer that is pointed to by <i>PropertyBuffer.</i></p>
 </dd>
 
-### -param <i>PropertyBuffer</i> [out]
+### -param PropertyBuffer [out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives the requested device interface property. The pointer can be NULL if the <i>BufferLength</i> parameter is zero.</p>
 </dd>
 
-### -param <i>ResultLength</i> [out]
+### -param ResultLength [out]
 
 <dd>
 <p>A caller-supplied location that, on return, contains the size, in bytes, of the information that <b>WdfDeviceQueryInterfaceProperty</b> stored in <i>PropertyBuffer</i>. If the function's return value is <b>STATUS_BUFFER_TOO_SMALL</b>, this location receives the required buffer size.</p>
 </dd>
 
-### -param <i>Type</i> [out]
+### -param Type [out]
 
 <dd>
 <p>A pointer to a <b>DEVPROPTYPE</b>-typed variable that identifies the type of property data that <b>WdfDeviceQueryInterfaceProperty</b> stored in the buffer that <i>PropertyBuffer</i> points to.</p>
@@ -202,4 +202,4 @@ NTSTATUS WdfDeviceQueryInterfaceProperty(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceQueryInterfaceProperty method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceQueryInterfaceProperty method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

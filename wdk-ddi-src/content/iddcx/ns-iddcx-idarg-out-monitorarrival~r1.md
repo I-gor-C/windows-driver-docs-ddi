@@ -56,7 +56,7 @@ typedef struct IDARG_OUT_MONITORARRIVAL {
 ## -struct-fields
 <dl>
 
-### -field <b>OsAdapterLuid</b>
+### -field OsAdapterLuid
 
 <dd>
 <p>
@@ -66,7 +66,7 @@ typedef struct IDARG_OUT_MONITORARRIVAL {
 <div> </div>
 </dd>
 
-### -field <b>OsTargetId</b>
+### -field OsTargetId
 
 <dd>
 <p>

@@ -59,31 +59,31 @@ HRESULT CreateInstanceOfMSXMLObject(
 ## -parameters
 <dl>
 
-### -param <i>rclsid</i> [in]
+### -param rclsid [in]
 
 <dd>
 <p>The CLSID that is associated with the data and code that will be used to create the object. </p>
 </dd>
 
-### -param <i>pUnkOuter</i> [in]
+### -param pUnkOuter [in]
 
 <dd>
 <p>A pointer to the aggregate object's <b>IUnknown</b> interface (the controlling <b>IUnknown</b>). This parameter must be <b>NULL</b>, which means that the object is not being created as part of an aggregate. </p>
 </dd>
 
-### -param <i>dwClsContext</i> [in]
+### -param dwClsContext [in]
 
 <dd>
 <p>The context in which the code that manages the newly created object will run. The only valid values are <b>NULL</b> and CLSCTX_INPROC_SERVER, which is a value of the CLSCTX enumeration (described in the Microsoft Windows SDK documentation).</p>
 </dd>
 
-### -param <i>riid</i> [in]
+### -param riid [in]
 
 <dd>
 <p>A reference to the identifier of the interface that will be used to communicate with the object. </p>
 </dd>
 
-### -param <i>ppv</i> [out]
+### -param ppv [out]
 
 <dd>
 <p>A pointer to a variable that receives the address of the interface that is requested in the <i>riid</i> parameter. If <b>IPrintCoreHelper::CreateInstanceOfMSXMLObject</b> successfully returns, *<i>ppv</i> contains the address of the requested interface. If this method fails, *<i>ppv</i> contains <b>NULL</b>. </p>

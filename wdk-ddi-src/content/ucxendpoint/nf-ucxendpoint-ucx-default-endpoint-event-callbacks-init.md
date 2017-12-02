@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="buses._ucx_default_endpoint_event_callbacks">UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS</a> structure with client driver's callback functions. The client driver calls this function before calling <a href="buses._ucxendpointcreate">UcxEndpointCreate</a> method to create an endpoint and register its callback functions with UCX.</p>
+<p>Initializes a <a href="..\ucxendpoint\ns-ucxendpoint--ucx-default-endpoint-event-callbacks.md">UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS</a> structure with client driver's callback functions. The client driver calls this function before calling <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a> method to create an endpoint and register its callback functions with UCX.</p>
 
 
 ## -syntax
@@ -60,40 +60,40 @@ FORCEINLINE void UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Callbacks</i> [out]
+### -param Callbacks [out]
 
 <dd>
-<p>A pointer to a <a href="buses._ucx_default_endpoint_event_callbacks">UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS</a> structure that contains pointers to the client driver's event callback functions.</p>
+<p>A pointer to a <a href="..\ucxendpoint\ns-ucxendpoint--ucx-default-endpoint-event-callbacks.md">UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS</a> structure that contains pointers to the client driver's event callback functions.</p>
 </dd>
 
-### -param <i>EvtEndpointPurge</i> [in]
+### -param EvtEndpointPurge [in]
 
 <dd>
-<p>A pointer to client driver's implementation of the <a href="buses.evt_ucx_endpoint_purge">EVT_UCX_ENDPOINT_PURGE</a>                     event callback function.</p>
+<p>A pointer to client driver's implementation of the <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-purge.md">EVT_UCX_ENDPOINT_PURGE</a>                     event callback function.</p>
 </dd>
 
-### -param <i>EvtEndpointStart</i> [in]
+### -param EvtEndpointStart [in]
 
 <dd>
-<p>A pointer to client driver's implementation of the <a href="buses.evt_ucx_endpoint_start">EVT_UCX_ENDPOINT_START</a>                     event callback function.</p>
+<p>A pointer to client driver's implementation of the <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-start.md">EVT_UCX_ENDPOINT_START</a>                     event callback function.</p>
 </dd>
 
-### -param <i>EvtEndpointAbort</i> [in]
+### -param EvtEndpointAbort [in]
 
 <dd>
-<p>A pointer to client driver's implementation of the <a href="buses.evt_ucx_endpoint_abort">EVT_UCX_ENDPOINT_ABORT</a>                     event callback function.</p>
+<p>A pointer to client driver's implementation of the <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-abort.md">EVT_UCX_ENDPOINT_ABORT</a>                     event callback function.</p>
 </dd>
 
-### -param <i>EvtEndpointOkToCancelTransfers</i> [in]
+### -param EvtEndpointOkToCancelTransfers [in]
 
 <dd>
-<p>A pointer to client driver's implementation of the <a href="buses.evt_ucx_endpoint_ok_to_cancel_transfers">EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS</a>    event callback function.</p>
+<p>A pointer to client driver's implementation of the <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-ok-to-cancel-transfers.md">EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS</a>    event callback function.</p>
 </dd>
 
-### -param <i>EvtDefaultEndpointUpdate</i> [in]
+### -param EvtDefaultEndpointUpdate [in]
 
 <dd>
-<p>A pointer to client driver's implementation of the <a href="buses.evt_ucx_default_endpoint_update">EVT_UCX_DEFAULT_ENDPOINT_UPDATE</a>    event callback function.</p>
+<p>A pointer to client driver's implementation of the <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-default-endpoint-update.md">EVT_UCX_DEFAULT_ENDPOINT_UPDATE</a>    event callback function.</p>
 </dd>
 </dl>
 
@@ -144,7 +144,7 @@ FORCEINLINE void UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
+<a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
 </dt>
 </dl>
 <p> </p>

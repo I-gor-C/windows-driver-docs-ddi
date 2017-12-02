@@ -7,7 +7,7 @@ old-location: netvista\rilvoicedomain_2.htm
 old-project: netvista
 ms.assetid: bc0e9ba8-c790-402a-900a-7ae2b4f76060
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILVOICEDOMAIN {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_VOICE_DOMAIN_3GPP"></a><a id="ril_voice_domain_3gpp"></a><b>RIL_VOICE_DOMAIN_3GPP</b>
+### -field RIL_VOICE_DOMAIN_3GPP
 
 <dd></dd>
 
-### -field <a id="RIL_VOICE_DOMAIN_3GPP2"></a><a id="ril_voice_domain_3gpp2"></a><b>RIL_VOICE_DOMAIN_3GPP2</b>
+### -field RIL_VOICE_DOMAIN_3GPP2
 
 <dd></dd>
 
-### -field <a id="RIL_VOICE_DOMAIN_IMS"></a><a id="ril_voice_domain_ims"></a><b>RIL_VOICE_DOMAIN_IMS</b>
+### -field RIL_VOICE_DOMAIN_IMS
 
 <dd></dd>
 
-### -field <a id="RIL_VOICE_DOMAIN_MAX"></a><a id="ril_voice_domain_max"></a><b>RIL_VOICE_DOMAIN_MAX</b>
+### -field RIL_VOICE_DOMAIN_MAX
 
 <dd></dd>
 </dl>

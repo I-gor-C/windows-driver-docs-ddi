@@ -61,31 +61,31 @@ NTSTATUS ClfsWriteRestartArea(
 ## -parameters
 <dl>
 
-### -param <i>pvMarshalContext</i> [in, out]
+### -param pvMarshalContext [in, out]
 
 <dd>
 <p>A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.</p>
 </dd>
 
-### -param <i>pvRestartBuffer</i> [in]
+### -param pvRestartBuffer [in]
 
 <dd>
 <p>A pointer to a buffer that contains the data for the restart record.</p>
 </dd>
 
-### -param <i>cbRestartBuffer</i> [in]
+### -param cbRestartBuffer [in]
 
 <dd>
 <p>The size, in bytes, of the buffer pointed to by <i>pvRestartBuffer</i>. This is the size of the restart data.</p>
 </dd>
 
-### -param <i>plsnBase</i> [in, optional]
+### -param plsnBase [in, optional]
 
 <dd>
 <p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that specifies a new base LSN for the stream. If this parameter is <b>NULL</b>, the base LSN is not changed.</p>
 </dd>
 
-### -param <i>fFlags</i> [in]
+### -param fFlags [in]
 
 <dd>
 <p>This parameter must be one of the following values.</p>
@@ -114,13 +114,13 @@ NTSTATUS ClfsWriteRestartArea(
 <p> </p>
 </dd>
 
-### -param <i>pcbWritten</i> [out, optional]
+### -param pcbWritten [out, optional]
 
 <dd>
 <p>A pointer to a ULONG-typed variable that receives the number of bytes actually forced to stable storage. This parameter can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>plsnNext</i> [out, optional]
+### -param plsnNext [out, optional]
 
 <dd>
 <p>A pointer to a <b>CLFS_LSN</b> structure that receives the LSN of the newly written restart record.</p>

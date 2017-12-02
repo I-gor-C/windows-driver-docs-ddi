@@ -57,25 +57,25 @@ typedef struct _PEP_ACPI_PREPARE_DEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>AcpiDeviceName</b>
+### -field AcpiDeviceName
 
 <dd>
-<p>[in] A pointer to an <a href="kernel.ansi_string">ANSI_STRING</a> structure that contains the fully qualified BIOS name for the device. This name specifies the path and name of the device in the ACPI namespace. For more information, see <a href="NULL">Enumerating Child Devices and Control Methods</a>.</p>
+<p>[in] A pointer to an <a href="kernel.ansi_string">ANSI_STRING</a> structure that contains the fully qualified BIOS name for the device. This name specifies the path and name of the device in the ACPI namespace. For more information, see <a href="https://msdn.microsoft.com/fe0553df-a5b9-46c4-8e1d-8b89a7d4ad67">Enumerating Child Devices and Control Methods</a>.</p>
 </dd>
 
-### -field <b>InputFlags</b>
+### -field InputFlags
 
 <dd>
 <p>[in] A set of input flags. No flags are currently defined for this member, which is always set to PEP_ACPI_PREPARE_DEVICE_INPUT_FLAG_NONE (0x0).</p>
 </dd>
 
-### -field <b>DeviceAccepted</b>
+### -field DeviceAccepted
 
 <dd>
 <p>[out] Whether the PEP is prepared to provide ACPI services for the device. Set this member to TRUE if the PEP is prepared to be the sole provider of ACPI services for this device, and to FALSE if it is not.</p>
 </dd>
 
-### -field <b>OutputFlags</b>
+### -field OutputFlags
 
 <dd>
 <p>[out] A set of output flags. No flags are currently defined for this member. Set this member to PEP_ACPI_PREPARE_DEVICE_OUTPUT_FLAG_NONE (0x0).</p>

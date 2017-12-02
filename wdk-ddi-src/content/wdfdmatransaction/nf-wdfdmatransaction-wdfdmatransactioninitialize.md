@@ -7,7 +7,7 @@ old-location: wdf\wdfdmatransactioninitialize.htm
 old-project: wdf
 ms.assetid: cb17b31a-a069-4d41-a613-81a9815ac9a3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDmaTransactionInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ NTSTATUS WdfDmaTransactionInitialize(
 ## -parameters
 <dl>
 
-### -param <i>DmaTransaction</i> [in]
+### -param DmaTransaction [in]
 
 <dd>
 <p>A handle to a DMA transaction object that the driver obtained from a previous call to <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>.</p>
 </dd>
 
-### -param <i>EvtProgramDmaFunction</i> [in]
+### -param EvtProgramDmaFunction [in]
 
 <dd>
 <p>A pointer to the driver's <a href="wdf.evtprogramdma">EvtProgramDma</a> event callback function. </p>
 </dd>
 
-### -param <i>DmaDirection</i> [in]
+### -param DmaDirection [in]
 
 <dd>
 <p>A <a href="..\wdfdmaenabler\ne-wdfdmaenabler--wdf-dma-direction.md">WDF_DMA_DIRECTION</a>-typed value.</p>
 </dd>
 
-### -param <i>Mdl</i> [in]
+### -param Mdl [in]
 
 <dd>
 <p>A pointer to a memory descriptor list (MDL) that describes the buffer that will be used for the DMA transaction. See more information in <b>Remarks</b>.</p>
 </dd>
 
-### -param <i>VirtualAddress</i> [in]
+### -param VirtualAddress [in]
 
 <dd>
 <p>The virtual address of the buffer that will be used for the DMA transaction.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The number of bytes to be transferred.</p>
@@ -235,4 +235,4 @@ NTSTATUS WdfDmaTransactionInitialize(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionInitialize method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionInitialize method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

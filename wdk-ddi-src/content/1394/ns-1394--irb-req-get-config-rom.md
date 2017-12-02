@@ -7,7 +7,7 @@ old-location: ieee\irb_req_get_config_rom.htm
 old-project: IEEE
 ms.assetid: 9C4EC9CA-3B7F-4611-BB96-A86C0FEDDF25
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_GET_CONFIG_ROM, IRB_REQ_GET_CONFIG_ROM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,37 +58,37 @@ typedef struct _IRB_REQ_GET_CONFIG_ROM {
 ## -struct-fields
 <dl>
 
-### -field <b>GenerationCount</b>
+### -field GenerationCount
 
 <dd>
 <p>Receives the generation of the bus for which the contents of this configuration ROM was retrieved.</p>
 </dd>
 
-### -field <b>ConfigRom</b>
+### -field ConfigRom
 
 <dd>
 <p>Receives a pointer to a <b>ConfigRom</b> object.</p>
 </dd>
 
-### -field <b>UnitDirectoryIndex</b>
+### -field UnitDirectoryIndex
 
 <dd>
 <p>Receives the index to the node's unit directory in its configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.</p>
 </dd>
 
-### -field <b>UnitDependentDirectoryIndex</b>
+### -field UnitDependentDirectoryIndex
 
 <dd>
 <p>Receives the index to the node's unit dependent directory in its configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.</p>
 </dd>
 
-### -field <b>VendorLeafIndex</b>
+### -field VendorLeafIndex
 
 <dd>
 <p>Receives the index to the node's vendor textual leaf in the configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.</p>
 </dd>
 
-### -field <b>ModelLeafIndex</b>
+### -field ModelLeafIndex
 
 <dd>
 <p>Receives the index to the node's model textual leaf in the configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.</p>

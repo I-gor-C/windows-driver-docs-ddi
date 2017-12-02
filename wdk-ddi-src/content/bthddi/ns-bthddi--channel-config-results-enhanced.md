@@ -55,13 +55,13 @@ typedef struct _CHANNEL_CONFIG_RESULTS_ENHANCED {
 ## -struct-fields
 <dl>
 
-### -field <b>Params</b>
+### -field Params
 
 <dd>
 <p>Channel parameters for the given direction of the channel</p>
 </dd>
 
-### -field <b>ExtraOptionsBufferSize</b>
+### -field ExtraOptionsBufferSize
 
 <dd>
 <p>Amount of buffer required to retrieve the current extra options for the given direction</p>

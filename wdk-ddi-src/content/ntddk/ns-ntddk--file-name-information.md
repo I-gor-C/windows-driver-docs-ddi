@@ -55,13 +55,13 @@ typedef struct _FILE_NAME_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>FileNameLength</b>
+### -field FileNameLength
 
 <dd>
 <p>Specifies the length, in bytes, of the file name string.</p>
 </dd>
 
-### -field <b>FileName</b>
+### -field FileName
 
 <dd>
 <p>Specifies the first character of the file name string. This is followed in memory by the remainder of the string.</p>

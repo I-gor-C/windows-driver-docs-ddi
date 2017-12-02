@@ -7,7 +7,7 @@ old-location: ifsk\fast_io_dispatch.htm
 old-project: ifsk
 ms.assetid: 9F422CE9-8ADC-4709-8FE5-5A3501B47AC2
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FAST_IO_DISPATCH, FAST_IO_DISPATCH, *PFAST_IO_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,176 +82,176 @@ typedef struct _FAST_IO_DISPATCH {
 ## -struct-fields
 <dl>
 
-### -field <b>SizeOfFastIoDispatch</b>
+### -field SizeOfFastIoDispatch
 
 <dd>
 <p>Set to <b>sizeof</b>(FAST_IO_DISPATCH).</p>
 </dd>
 
-### -field <b>FastIoCheckIfPossible</b>
+### -field FastIoCheckIfPossible
 
 <dd>
 <p>A pointer to a callback routine that checks if fast I/O is possible for a either a read or a write operation.</p>
 </dd>
 
-### -field <b>FastIoRead</b>
+### -field FastIoRead
 
 <dd>
 <p>A pointer to a callback routine that does a fast cached read, bypassing the IRP read path.  It is used to perform a copy read
     for a cached file object.</p>
 </dd>
 
-### -field <b>FastIoWrite</b>
+### -field FastIoWrite
 
 <dd>
 <p>A pointer to a callback routine that does a fast cached write, bypassing the IRP write path.  It is used to perform a copy write
     for a cached file object.</p>
 </dd>
 
-### -field <b>FastIoQueryBasicInfo</b>
+### -field FastIoQueryBasicInfo
 
 <dd>
 <p>A pointer to a callback routine for fast query of basic file information.</p>
 </dd>
 
-### -field <b>FastIoQueryStandardInfo</b>
+### -field FastIoQueryStandardInfo
 
 <dd>
 <p>A pointer to a callback routine for fast query of standard file information.</p>
 </dd>
 
-### -field <b>FastIoLock</b>
+### -field FastIoLock
 
 <dd>
 <p>A pointer to a callback routine for doing a fast lock on a file object.</p>
 </dd>
 
-### -field <b>FastIoUnlockSingle</b>
+### -field FastIoUnlockSingle
 
 <dd>
 <p>A pointer to a callback routine for doing a fast release of a single lock on a file object.</p>
 </dd>
 
-### -field <b>FastIoUnlockAll</b>
+### -field FastIoUnlockAll
 
 <dd>
 <p>A pointer to a callback routine for doing a fast release of a all locks held on a file object.</p>
 </dd>
 
-### -field <b>FastIoUnlockAllByKey</b>
+### -field FastIoUnlockAllByKey
 
 <dd>
 <p>A pointer to a callback routine for doing a fast release of a all locks grouped by a key.</p>
 </dd>
 
-### -field <b>FastIoDeviceControl</b>
+### -field FastIoDeviceControl
 
 <dd>
 <p>A pointer to a callback routine for fast device control processing.</p>
 </dd>
 
-### -field <b>AcquireFileForNtCreateSection</b>
+### -field AcquireFileForNtCreateSection
 
 <dd>
 <p>A pointer to a callback routine used by the memory manager to acquire a file exclusively.</p>
 </dd>
 
-### -field <b>ReleaseFileForNtCreateSection</b>
+### -field ReleaseFileForNtCreateSection
 
 <dd>
 <p>A pointer to a callback routine used by the memory manager to release a previously acquired file.</p>
 </dd>
 
-### -field <b>FastIoDetachDevice</b>
+### -field FastIoDetachDevice
 
 <dd>
 <p>A pointer to a callback routine that is invoked to detach the current device object from a device object that
     is being deleted. </p>
 </dd>
 
-### -field <b>FastIoQueryNetworkOpenInfo</b>
+### -field FastIoQueryNetworkOpenInfo
 
 <dd>
 <p>A pointer to a callback routine for fast query of network file information.</p>
 </dd>
 
-### -field <b>AcquireForModWrite</b>
+### -field AcquireForModWrite
 
 <dd>
 <p>A pointer to a callback routine that decides which file system resource the modified page
     writer should acquire and acquires it if possible.</p>
 </dd>
 
-### -field <b>MdlRead</b>
+### -field MdlRead
 
 <dd>
 <p>A pointer to a callback routine that does a fast cached MDL read, bypassing the IRP read path.  It is used to perform a copy read
     for a cached file object.</p>
 </dd>
 
-### -field <b>MdlReadComplete</b>
+### -field MdlReadComplete
 
 <dd>
 <p>A pointer to a callback routine that performs a fast completion of an MDL read.</p>
 </dd>
 
-### -field <b>PrepareMdlWrite</b>
+### -field PrepareMdlWrite
 
 <dd>
 <p>A pointer to a callback routine that does a fast cached MDL write, bypassing the IRP write path.  It is used to perform a copy write
     for a cached file object.</p>
 </dd>
 
-### -field <b>MdlWriteComplete</b>
+### -field MdlWriteComplete
 
 <dd>
 <p>A pointer to a callback routine that performs a fast completion of an MDL write.</p>
 </dd>
 
-### -field <b>FastIoReadCompressed</b>
+### -field FastIoReadCompressed
 
 <dd>
 <p>A pointer to a callback routine that performs a fast  compressed read of data from a file.</p>
 </dd>
 
-### -field <b>FastIoWriteCompressed</b>
+### -field FastIoWriteCompressed
 
 <dd>
 <p>A pointer to a callback routine that performs a fast  compressed write of data to  a file.</p>
 </dd>
 
-### -field <b>MdlReadCompleteCompressed</b>
+### -field MdlReadCompleteCompressed
 
 <dd>
 <p>A pointer to a callback routine that completes  a fast  MDL compressed read of data from  a file.</p>
 </dd>
 
-### -field <b>MdlWriteCompleteCompressed</b>
+### -field MdlWriteCompleteCompressed
 
 <dd>
 <p>A pointer to a callback routine that completes  a fast  MDL compressed write of data to  a file.</p>
 </dd>
 
-### -field <b>FastIoQueryOpen</b>
+### -field FastIoQueryOpen
 
 <dd>
 <p>A pointer to a callback routine that implements  a fast  open for path based queries.</p>
 </dd>
 
-### -field <b>ReleaseForModWrite</b>
+### -field ReleaseForModWrite
 
 <dd>
 <p>This routine releases a file system resource previously acquired for
     the modified page write.</p>
 </dd>
 
-### -field <b>AcquireForCcFlush</b>
+### -field AcquireForCcFlush
 
 <dd>
 <p>A pointer to a callback routine that acquires a file system resource prior to a cache flush.</p>
 </dd>
 
-### -field <b>ReleaseForCcFlush</b>
+### -field ReleaseForCcFlush
 
 <dd>
 <p>A pointer to a callback routine that releases a file system resource previously acquired for a cache flush.</p>

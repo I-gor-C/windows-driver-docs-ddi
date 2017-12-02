@@ -7,7 +7,7 @@ old-location: ieee\irb_req_get_1394_address_from_device_object.htm
 old-project: IEEE
 ms.assetid: 457E3A4E-6845-473C-AACD-7CC00080C34B
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT, IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,13 +54,13 @@ typedef struct _IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT {
 ## -struct-fields
 <dl>
 
-### -field <b>fulFlags</b>
+### -field fulFlags
 
 <dd>
 <p>Specifies which device's node address we are querying. Zero indicates the calling device. USE_LOCAL_NODE indicates the local host controller.</p>
 </dd>
 
-### -field <b>NodeAddress</b>
+### -field NodeAddress
 
 <dd>
 <p>Contains the NODE_ADDRESS structure describing the device's node address. In the case of virtual devices, the bus driver returns the node address of the host controller in the stack where the virtual device's device object is loaded. </p>

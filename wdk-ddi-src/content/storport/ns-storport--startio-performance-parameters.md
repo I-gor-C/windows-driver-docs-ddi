@@ -58,25 +58,25 @@ typedef struct _STARTIO_PERFORMANCE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of the structure. This member is valid starting with Windows 8.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of the structure.</p>
 </dd>
 
-### -field <b>MessageNumber</b>
+### -field MessageNumber
 
 <dd>
 <p>The offset in the device's MSI-X table for the optimal MSI-X message with which to interrupt. If the device does not support MSI-X messages, this member will be zero.</p>
 </dd>
 
-### -field <b>ChannelNumber</b>
+### -field ChannelNumber
 
 <dd>
 <p>Denotes the concurrent channel in which Storport is passing the I/O. If the miniport driver did not set up concurrent channels, this member will be zero.</p>

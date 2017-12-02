@@ -61,13 +61,13 @@ typedef EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER PEVT_UCX_CONTROLLER_GET_CURRE
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>FrameNumber</i> [out]
+### -param FrameNumber [out]
 
 <dd>
 <p>A pointer to the current 32-bit frame number.</p>

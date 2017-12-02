@@ -57,25 +57,25 @@ typedef struct _KSCAMERA_PROFILE_PININFO {
 ## -struct-fields
 <dl>
 
-### -field <b>PinCategory</b>
+### -field PinCategory
 
 <dd>
 <p>This is the PINNAME category corresponding to Capture, Preview or Still image pin.  For Windows 10, the only supported pin categories are:  PINNAME_VIDEO_CAPTURE, PINNAME_VIDEO_PREVIEW, PINNAME_VIDEO_STILL.  All other categories will result in an STATUS_INVALID_PARAMETER error.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Unused. Must be 0.</p>
 </dd>
 
-### -field <b>MediaInfoCount</b>
+### -field MediaInfoCount
 
 <dd>
 <p>Array size of KSCAMERA_PROFILE_MEDIAINFO structures specified in the MediaInfos field.</p>
 </dd>
 
-### -field <b>MediaInfos</b>
+### -field MediaInfos
 
 <dd>
 <p>Array of KSCAMERA_PROFILE_MEDIAINFO structures.</p>

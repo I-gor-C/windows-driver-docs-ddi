@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY VideoProcessEndFrame(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-videoprocessendframe.md">D3DDDIARG_VIDEOPROCESSENDFRAME</a> structure that describes the DirectX VA video processor that should stop processing a frame.</p>

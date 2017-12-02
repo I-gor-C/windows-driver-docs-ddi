@@ -64,67 +64,67 @@ typedef enum _STORAGE_DEVICE_FORM_FACTOR {
 ## -enum-fields
 <dl>
 
-### -field <a id="FormFactorUnknown"></a><a id="formfactorunknown"></a><a id="FORMFACTORUNKNOWN"></a><b>FormFactorUnknown</b>
+### -field FormFactorUnknown
 
 <dd>
 <p>Unknown form factor.</p>
 </dd>
 
-### -field <a id="FormFactor3_5"></a><a id="formfactor3_5"></a><a id="FORMFACTOR3_5"></a><b>FormFactor3_5</b>
+### -field FormFactor3_5
 
 <dd>
 <p>3.5 inch nominal form factor.</p>
 </dd>
 
-### -field <a id="FormFactor2_5"></a><a id="formfactor2_5"></a><a id="FORMFACTOR2_5"></a><b>FormFactor2_5</b>
+### -field FormFactor2_5
 
 <dd>
 <p>2.5 inch nominal form factor.</p>
 </dd>
 
-### -field <a id="FormFactor1_8"></a><a id="formfactor1_8"></a><a id="FORMFACTOR1_8"></a><b>FormFactor1_8</b>
+### -field FormFactor1_8
 
 <dd>
 <p>1.8 inch nominal form factor.</p>
 </dd>
 
-### -field <a id="FormFactor1_8Less"></a><a id="formfactor1_8less"></a><a id="FORMFACTOR1_8LESS"></a><b>FormFactor1_8Less</b>
+### -field FormFactor1_8Less
 
 <dd>
 <p>Less than 1.8 inch nominal form factor.</p>
 </dd>
 
-### -field <a id="FormFactorEmbedded"></a><a id="formfactorembedded"></a><a id="FORMFACTOREMBEDDED"></a><b>FormFactorEmbedded</b>
+### -field FormFactorEmbedded
 
 <dd>
 <p>The storage device is embedded on a board.</p>
 </dd>
 
-### -field <a id="FormFactorMemoryCard"></a><a id="formfactormemorycard"></a><a id="FORMFACTORMEMORYCARD"></a><b>FormFactorMemoryCard</b>
+### -field FormFactorMemoryCard
 
 <dd>
 <p>A memory card, such as SmartMedia or CompactFlash.</p>
 </dd>
 
-### -field <a id="FormFactormSata"></a><a id="formfactormsata"></a><a id="FORMFACTORMSATA"></a><b>FormFactormSata</b>
+### -field FormFactormSata
 
 <dd>
 <p>Mini-SATA (mSATA) form factor.</p>
 </dd>
 
-### -field <a id="FormFactorM_2"></a><a id="formfactorm_2"></a><a id="FORMFACTORM_2"></a><b>FormFactorM_2</b>
+### -field FormFactorM_2
 
 <dd>
 <p>M.2 form factor.</p>
 </dd>
 
-### -field <a id="FormFactorPCIeBoard"></a><a id="formfactorpcieboard"></a><a id="FORMFACTORPCIEBOARD"></a><b>FormFactorPCIeBoard</b>
+### -field FormFactorPCIeBoard
 
 <dd>
 <p>PCI Express (PCIe) card form factor.</p>
 </dd>
 
-### -field <a id="FormFactorDimm"></a><a id="formfactordimm"></a><a id="FORMFACTORDIMM"></a><b>FormFactorDimm</b>
+### -field FormFactorDimm
 
 <dd>
 <p>Dual in-line memory module (DIMM) slot form factor.</p>

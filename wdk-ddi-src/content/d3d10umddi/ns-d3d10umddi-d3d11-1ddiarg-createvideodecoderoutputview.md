@@ -58,31 +58,31 @@ typedef struct _D3D11_1DDIARG_CREATEVIDEODECODEROUTPUTVIEW {
 ## -struct-fields
 <dl>
 
-### -field <b>hDrvResource</b>
+### -field hDrvResource
 
 <dd>
 <p>A handle to the video decoder output resource.</p>
 </dd>
 
-### -field <b>DecodeProfile</b>
+### -field DecodeProfile
 
 <dd>
 <p>The decode profile to be used in conjunction with the encryption.</p>
 </dd>
 
-### -field <b>MipSlice</b>
+### -field MipSlice
 
 <dd>
 <p>The identifier of the MIP-map slice.</p>
 </dd>
 
-### -field <b>FirstArraySlice</b>
+### -field FirstArraySlice
 
 <dd>
 <p>The identifier of the first array slice.</p>
 </dd>
 
-### -field <b>ArraySize</b>
+### -field ArraySize
 
 <dd>
 <p>The number of array slices for the texture.</p>

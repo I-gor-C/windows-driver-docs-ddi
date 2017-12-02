@@ -57,25 +57,25 @@ typedef struct _KSFILTER_DISPATCH {
 ## -struct-fields
 <dl>
 
-### -field <b>Create</b>
+### -field Create
 
 <dd>
 <p>Optional. A pointer to a minidriver-supplied <a href="stream.avstrminifiltercreate">AVStrMiniFilterCreate</a> callback routine.</p>
 </dd>
 
-### -field <b>Close</b>
+### -field Close
 
 <dd>
 <p>Optional. A pointer to a minidriver-supplied <a href="stream.avstrminifilterclose">AVStrMiniFilterClose</a> callback routine.</p>
 </dd>
 
-### -field <b>Process</b>
+### -field Process
 
 <dd>
 <p>Optional. A pointer to a minidriver-supplied <a href="stream.avstrminifilterprocess">AVStrMiniFilterProcess</a> callback routine.</p>
 </dd>
 
-### -field <b>Reset</b>
+### -field Reset
 
 <dd>
 <p>Optional. A pointer to a minidriver-supplied <a href="stream.avstrminifilterreset">AVStrMiniFilterReset</a> callback routine.</p>
@@ -85,10 +85,10 @@ typedef struct _KSFILTER_DISPATCH {
 ## -remarks
 <p>Any of the callback pointers may be <b>NULL</b>, indicating that the driver does not wish to receive notification of a given event.</p>
 
-<p>Also see <a href="NULL">Restarting Processing in AVStream</a> and </p>
+<p>Also see <a href="https://msdn.microsoft.com/f60d4dbd-61e6-4ae2-aa43-9edc8f36c3ff">Restarting Processing in AVStream</a> and </p>
 
 <p>
-<a href="NULL">Filter-Centric Processing</a>.</p>
+<a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>.</p>
 
 ## -requirements
 <table>

@@ -7,7 +7,7 @@ old-location: wdf\iwdffile2_getrelatedfileobject.htm
 old-project: wdf
 ms.assetid: 0ac5c19a-b3ec-4f1e-a018-2c11cc18e58d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFFile2, GetRelatedFileObject, IWDFFile2::GetRelatedFileObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ void GetRelatedFileObject(
 ## -parameters
 <dl>
 
-### -param <i>ppRelatedFileObj</i> [out]
+### -param ppRelatedFileObj [out]
 
 <dd>
 <p>The address of a location that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface of a UMDF file object. This file object is related to the file object that exposes the <a href="..\wudfddi\nn-wudfddi-iwdffile2.md">IWDFFile2</a> interface's parent <b>IWDFFile</b> interface.</p>
@@ -67,7 +67,7 @@ void GetRelatedFileObject(
 <p>None.</p>
 
 ## -remarks
-<p>Use of related file objects is technology-specific. For example, <a href="NULL">kernel streaming</a> uses related file objects to represent the parent filters of child pins.</p>
+<p>Use of related file objects is technology-specific. For example, <a href="https://msdn.microsoft.com/dcd28218-b3bf-4e5d-b1a7-6910103afb96">kernel streaming</a> uses related file objects to represent the parent filters of child pins.</p>
 
 <p>For more information about related file objects, see the <b>GetRelatedFileObject</b> member of the kernel-mode <a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a> structure.</p>
 
@@ -131,4 +131,4 @@ void GetRelatedFileObject(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFFile2::GetRelatedFileObject method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFFile2::GetRelatedFileObject method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

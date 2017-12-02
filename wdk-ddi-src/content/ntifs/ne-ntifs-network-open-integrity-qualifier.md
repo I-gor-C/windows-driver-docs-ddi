@@ -7,7 +7,7 @@ old-location: ifsk\network_open_integrity_qualifier.htm
 old-project: ifsk
 ms.assetid: 6a51ee2e-2df6-44f4-8e95-776851d743a6
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: VOLUME_READ_PLEX_INPUT, VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="NetworkOpenIntegrityAny"></a><a id="networkopenintegrityany"></a><a id="NETWORKOPENINTEGRITYANY"></a><b>NetworkOpenIntegrityAny</b>
+### -field NetworkOpenIntegrityAny
 
 <dd>
 <p>Indicates that the file has no integrity restrictions. That is, the file has no restrictions about how to sign, encrypt, and so on. </p>
 </dd>
 
-### -field <a id="NetworkOpenIntegrityNone"></a><a id="networkopenintegritynone"></a><a id="NETWORKOPENINTEGRITYNONE"></a><b>NetworkOpenIntegrityNone</b>
+### -field NetworkOpenIntegrityNone
 
 <dd>
 <p>Indicates that the file is not signed or encrypted. </p>
 </dd>
 
-### -field <a id="NetworkOpenIntegritySigned"></a><a id="networkopenintegritysigned"></a><a id="NETWORKOPENINTEGRITYSIGNED"></a><b>NetworkOpenIntegritySigned</b>
+### -field NetworkOpenIntegritySigned
 
 <dd>
 <p>Indicates that the file is signed end-to-end. </p>
 </dd>
 
-### -field <a id="NetworkOpenIntegrityEncrypted"></a><a id="networkopenintegrityencrypted"></a><a id="NETWORKOPENINTEGRITYENCRYPTED"></a><b>NetworkOpenIntegrityEncrypted</b>
+### -field NetworkOpenIntegrityEncrypted
 
 <dd>
 <p>Indicates that the file is encrypted end-to-end. </p>
 </dd>
 
-### -field <a id="NetworkOpenIntegrityMaximum"></a><a id="networkopenintegritymaximum"></a><a id="NETWORKOPENINTEGRITYMAXIMUM"></a><b>NetworkOpenIntegrityMaximum</b>
+### -field NetworkOpenIntegrityMaximum
 
 <dd>
 <p>Indicates that the file has the best integrity that is available. </p>

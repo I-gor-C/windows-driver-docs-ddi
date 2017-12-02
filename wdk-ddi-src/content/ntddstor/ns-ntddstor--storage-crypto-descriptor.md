@@ -58,31 +58,31 @@ typedef struct _STORAGE_CRYPTO_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>NumKeysSupported</b>
+### -field NumKeysSupported
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>NumCryptoCapabilities</b>
+### -field NumCryptoCapabilities
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>CryptoCapabilities</b>
+### -field CryptoCapabilities
 
 <dd>
 <p>Reserved for system use.</p>

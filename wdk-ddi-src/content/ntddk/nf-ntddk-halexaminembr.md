@@ -57,28 +57,28 @@ VOID HalExamineMBR(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to the device object for the device being examined.</p>
 </dd>
 
-### -param <i>SectorSize</i> [in]
+### -param SectorSize [in]
 
 <dd>
 <p>The minimum number of bytes that an I/O operation can fetch from the device being examined. If this value is less than 512, <b>HalExamineMBR</b> reads 512 bytes to ensure that it reads an entire partition table.</p>
 </dd>
 
-### -param <i>MBRTypeIdentifier</i> [in]
+### -param MBRTypeIdentifier [in]
 
 <dd>
 <p>MBR partition type identifier. This parameter specifies the type of MBR that may be on the disk. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
-<p>A pointer to a location to which <b>HalExamineMBR</b> writes a pointer to a buffer that contains data from the MBR. The layout of the buffer depends on the MBR partition type. <b>HalExamineMBR</b> allocates the storage for this buffer. The caller must deallocate this buffer as soon as possible by calling the <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> routine.</p>
+<p>A pointer to a location to which <b>HalExamineMBR</b> writes a pointer to a buffer that contains data from the MBR. The layout of the buffer depends on the MBR partition type. <b>HalExamineMBR</b> allocates the storage for this buffer. The caller must deallocate this buffer as soon as possible by calling the <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> routine.</p>
 <p><b>HalExamineMBR</b> sets *<i>Buffer</i> = <b>NULL</b> if the MBR partition type of the disk does not match that specified by <i>MBRTypeIdentifier</i> or if there is an error.</p>
 </dd>
 </dl>
@@ -160,7 +160,7 @@ VOID HalExamineMBR(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
 <a href="..\ntdddisk\ns-ntdddisk--partition-information.md">PARTITION_INFORMATION</a>

@@ -57,19 +57,19 @@ VOID KeInitializeSemaphore(
 ## -parameters
 <dl>
 
-### -param <i>Semaphore</i> [out]
+### -param Semaphore [out]
 
 <dd>
 <p>Pointer to a dispatcher object of type semaphore, for which the caller provides the storage.</p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>Specifies the initial count value to be assigned to the semaphore. This value must be positive. A nonzero value sets the initial state of the semaphore to signaled.</p>
 </dd>
 
-### -param <i>Limit</i> [in]
+### -param Limit [in]
 
 <dd>
 <p>Specifies the maximum count value that the semaphore can attain. This value must be positive. It determines how many waiting threads become eligible for execution when the semaphore is set to the signaled state and can therefore access the resource that the semaphore protects. </p>

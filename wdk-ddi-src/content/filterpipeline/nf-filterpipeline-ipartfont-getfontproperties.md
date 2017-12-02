@@ -55,13 +55,13 @@ HRESULT GetFontProperties(
 ## -parameters
 <dl>
 
-### -param <i>pContentType</i> [out]
+### -param pContentType [out]
 
 <dd>
 <p>A pointer to the content type of the font.</p>
 </dd>
 
-### -param <i>pFontOptions</i> [out]
+### -param pFontOptions [out]
 
 <dd>
 <p>A pointer to the options of the font.</p>

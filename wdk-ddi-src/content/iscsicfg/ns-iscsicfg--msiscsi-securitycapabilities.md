@@ -58,31 +58,31 @@ typedef struct _MSiSCSI_SecurityCapabilities {
 ## -struct-fields
 <dl>
 
-### -field <b>ProtectiScsiTraffic</b>
+### -field ProtectiScsiTraffic
 
 <dd>
 <p>A Boolean value that indicates whether the initiator can use IPsec to protect iSCSI traffic. If this member is <b>TRUE</b>, the initiator can use IPsec to protect iSCSI traffic. If <b>FALSE</b>, the initiator cannot use IPsec.</p>
 </dd>
 
-### -field <b>ProtectiSNSTraffic</b>
+### -field ProtectiSNSTraffic
 
 <dd>
 <p>A Boolean value that indicates whether the initiator can use IPsec to protect iSNS traffic. If this member is <b>TRUE</b>, the initiator can use IPsec to protect iSNS traffic. If <b>FALSE</b>, the initiator cannot use IPsec.</p>
 </dd>
 
-### -field <b>CertificatesSupported</b>
+### -field CertificatesSupported
 
 <dd>
 <p>A Boolean value that indicates whether the initiator supports certificates. If this member is <b>TRUE</b>, the initiator supports certificates. If this member is <b>FALSE</b>, the initiatiator does not support certificates.</p>
 </dd>
 
-### -field <b>EncryptionAvailableCount</b>
+### -field EncryptionAvailableCount
 
 <dd>
 <p>The number of encryption types that the initiator supports. </p>
 </dd>
 
-### -field <b>EncryptionAvailable</b>
+### -field EncryptionAvailable
 
 <dd>
 <p>A variable length array of <a href="storage.iscsi_encryption_types">ISCSI_ENCRYPTION_TYPES</a> structures, which indicate types of encryption that the initiator supports. </p>

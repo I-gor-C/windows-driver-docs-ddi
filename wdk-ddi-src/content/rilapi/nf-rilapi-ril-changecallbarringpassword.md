@@ -7,7 +7,7 @@ old-location: netvista\ril_changecallbarringpassword.htm
 old-project: netvista
 ms.assetid: f312e955-c8a5-4642-ac8a-a0173f034a63
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_ChangeCallBarringPassword
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,31 +63,31 @@ HRESULT  RIL_ChangeCallBarringPassword(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>dwType</i> 
+### -param dwType 
 
 <dd></dd>
 
-### -param <i>lpwszOldPassword</i> 
+### -param lpwszOldPassword 
 
 <dd></dd>
 
-### -param <i>lpwszNewPassword</i> 
+### -param lpwszNewPassword 
 
 <dd></dd>
 
-### -param <i>lpszConfirmPassword</i> 
+### -param lpszConfirmPassword 
 
 <dd></dd>
 </dl>

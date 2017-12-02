@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceminiportcreate.htm
 old-project: wdf
 ms.assetid: d74dedbd-f418-4ea3-ae76-c0da9c5f2fb9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceMiniportCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ NTSTATUS WdfDeviceMiniportCreate(
 ## -parameters
 <dl>
 
-### -param <i>Driver</i> [in]
+### -param Driver [in]
 
 <dd>
 <p>A handle to the driver's framework driver object, obtained by a previous call to <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>.</p>
 </dd>
 
-### -param <i>Attributes</i> [in, optional]
+### -param Attributes [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to a WDM <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that represents the functional device object (FDO) for the miniport driver.</p>
 </dd>
 
-### -param <i>AttachedDeviceObject</i> [in, optional]
+### -param AttachedDeviceObject [in, optional]
 
 <dd>
 <p>A pointer to a WDM DEVICE_OBJECT structure that represents the next-lower device object in the device stack.</p>
 </dd>
 
-### -param <i>Pdo</i> [in, optional]
+### -param Pdo [in, optional]
 
 <dd>
 <p>A pointer to a WDM DEVICE_OBJECT structure that represents the physical device object (PDO) for the device.</p>
 </dd>
 
-### -param <i>Device</i> [out]
+### -param Device [out]
 
 <dd>
 <p>A pointer to a location that receives a handle to the new framework device object.</p>
@@ -218,4 +218,4 @@ NTSTATUS WdfDeviceMiniportCreate(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceMiniportCreate method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceMiniportCreate method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

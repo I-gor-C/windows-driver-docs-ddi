@@ -58,21 +58,21 @@ typedef struct IDARG_IN_SETSWAPCHAIN {
 ## -struct-fields
 <dl>
 
-### -field <b>hSwapChain</b>
+### -field hSwapChain
 
 <dd>
 <p>
                      [in] Handle to indirect swapchain that will be used to pass the desktop image to the driver for processing, transmission and display.</p>
 </dd>
 
-### -field <b>hNextSurfaceAvailable</b>
+### -field hNextSurfaceAvailable
 
 <dd>
 <p>
                      [in] Handle to auto reset event that is signaled when the new image to encode is ready.</p>
 </dd>
 
-### -field <b>RenderAdapterLuid</b>
+### -field RenderAdapterLuid
 
 <dd>
 <p>

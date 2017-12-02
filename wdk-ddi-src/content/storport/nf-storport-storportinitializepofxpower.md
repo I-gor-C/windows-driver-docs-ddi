@@ -58,25 +58,25 @@ ULONG StorPortInitializePoFxPower(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Address</i> [in, optional]
+### -param Address [in, optional]
 
 <dd>
 <p>The address of a storage device unit. This parameter is <b>NULL</b> when registering for a storage adapter.</p>
 </dd>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A pointer to a <b>STOR_POFX_DEVICE_V2</b> structure cast to a pointer to <a href="..\storport\ns-storport--stor-pofx-device.md">STOR_POFX_DEVICE</a>. This structure contains a component list with F-states for a storage device.</p>
 </dd>
 
-### -param <i>D3ColdEnabled</i> [in, out]
+### -param D3ColdEnabled [in, out]
 
 <dd>
 <p>A pointer to a <b>BOOLEAN</b> value which the Storport driver will set to indicate whether the D3 Cold state is enabled for the storage device.</p>

@@ -54,7 +54,7 @@ VOID RtlRunOnceInitialize(
 ## -parameters
 <dl>
 
-### -param <i>RunOnce</i> [out]
+### -param RunOnce [out]
 
 <dd>
 <p>Pointer to the <b>RTL_RUN_ONCE</b> one-time initialization structure.</p>

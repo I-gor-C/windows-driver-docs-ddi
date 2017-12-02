@@ -7,7 +7,7 @@ old-location: debugger\getflags.htm
 old-project: debugger
 ms.assetid: 0137a872-63e9-4630-86fa-accfaa9b6d6b
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugBreakpoint2, GetFlags, IDebugBreakpoint2::GetFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetFlags(
 ## -parameters
 <dl>
 
-### -param <i>Flags</i> [out]
+### -param Flags [out]
 
 <dd>
 <p>The breakpoint's flags.  For more information about the flag bit field and an explanation of each flag, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>
@@ -68,7 +68,7 @@ HRESULT GetFlags(
 
 <p> </p>
 
-<p>This method can also return error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
+<p>This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.</p>
 
 ## -remarks
 <p>The <a href="debugger.getparameters">GetParameters</a> method also returns the breakpoint's flags.</p>

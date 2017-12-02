@@ -63,61 +63,61 @@ BOOL WcsTranslateColors(
 ## -parameters
 <dl>
 
-### -param <i>hColorTransform</i> [in]
+### -param hColorTransform [in]
 
 <dd>
 <p>A handle to the WCS color transform to use.</p>
 </dd>
 
-### -param <i>nColors</i> [in]
+### -param nColors [in]
 
 <dd>
 <p>The number of elements in the array pointed to by <i>pInputData</i> and <i>pOutputData</i>.</p>
 </dd>
 
-### -param <i>nInputChannels</i> [in]
+### -param nInputChannels [in]
 
 <dd>
 <p>The number of channels per element in the array pointed to by <i>pInputData</i>.</p>
 </dd>
 
-### -param <i>cdtInput</i> [in]
+### -param cdtInput [in]
 
 <dd>
 <p>The input <a href="..\icm\ne-icm-colordatatype.md">COLORDATATYPE</a> color data type.</p>
 </dd>
 
-### -param <i>cbInput</i> [in]
+### -param cbInput [in]
 
 <dd>
 <p>The buffer size, in bytes, of <i>pInputData</i>.</p>
 </dd>
 
-### -param <i>pInputData</i> [in]
+### -param pInputData [in]
 
 <dd>
 <p>A pointer to an array of input colors.</p>
 </dd>
 
-### -param <i>nOutputChannels</i> [in]
+### -param nOutputChannels [in]
 
 <dd>
 <p>The number of channels per element in the array pointed to by <i>pOutputData</i>.</p>
 </dd>
 
-### -param <i>cdtOutput</i> [in]
+### -param cdtOutput [in]
 
 <dd>
 <p>The output <a href="..\icm\ne-icm-colordatatype.md">COLORDATATYPE</a> color data type.</p>
 </dd>
 
-### -param <i>cbOutput</i> [in]
+### -param cbOutput [in]
 
 <dd>
 <p>The buffer size, in bytes, of <i>pOutputData</i>.</p>
 </dd>
 
-### -param <i>pOutputData</i> [out]
+### -param pOutputData [out]
 
 <dd>
 <p>A pointer to an array of colors that receives the results of the color translation.</p>

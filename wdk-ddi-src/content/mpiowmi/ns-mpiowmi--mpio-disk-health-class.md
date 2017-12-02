@@ -69,97 +69,97 @@ typedef struct _MPIO_DISK_HEALTH_CLASS {
 ## -struct-fields
 <dl>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>The name of this multi-path disk.</p>
 </dd>
 
-### -field <b>NumberReads</b>
+### -field NumberReads
 
 <dd>
 <p>An unsigned 64-bitfield that specifies the number of read requests that are serviced by this multi-path disk.</p>
 </dd>
 
-### -field <b>NumberWrites</b>
+### -field NumberWrites
 
 <dd>
 <p>An unsigned 64-bitfield that specifies the number of write requests that are serviced by this multi-path disk.</p>
 </dd>
 
-### -field <b>NumberBytesRead</b>
+### -field NumberBytesRead
 
 <dd>
 <p>An unsigned 64-bitfield that specifies the total number of bytes that are read from this multi-path disk.</p>
 </dd>
 
-### -field <b>NumberBytesWritten</b>
+### -field NumberBytesWritten
 
 <dd>
 <p>An unsigned 64-bitfield that specifies the total number of bytes that are written to this multi-path disk.</p>
 </dd>
 
-### -field <b>NumberRetries</b>
+### -field NumberRetries
 
 <dd>
 <p>An unsigned 64-bitfield that specifies the total number of retries for this multi-path disk.</p>
 </dd>
 
-### -field <b>NumberIoErrors</b>
+### -field NumberIoErrors
 
 <dd>
 <p>An unsigned 64-bitfield that specifies the total number of I/O errors that are encountered by this multi-path disk.</p>
 </dd>
 
-### -field <b>CreateTime</b>
+### -field CreateTime
 
 <dd>
 <p>A 64-bit integer that specifies the system time when the health packet was created for this multi-path disk.</p>
 </dd>
 
-### -field <b>PathFailures</b>
+### -field PathFailures
 
 <dd>
 <p>A 64-bit integer that specifies the total number of path failures for this multi-path disk.</p>
 </dd>
 
-### -field <b>FailTime</b>
+### -field FailTime
 
 <dd>
 <p>A 64-bit integer that specifies the system time when this multi-path disk went offline or failed.</p>
 </dd>
 
-### -field <b>DeviceOffline</b>
+### -field DeviceOffline
 
 <dd>
 <p>A Boolean field that indicates whether the multi-path disk is offline or has failed.</p>
 </dd>
 
-### -field <b>NumberReadsWrap</b>
+### -field NumberReadsWrap
 
 <dd>
 <p>An unsigned character field that specifies the total number of times that the <i>NumberReads</i> parameter has rolled around to zero.</p>
 </dd>
 
-### -field <b>NumberWritesWrap</b>
+### -field NumberWritesWrap
 
 <dd>
 <p>An unsigned character field that specifies the total number of times the <i>NumberWrites</i> parameter has rolled around to zero.</p>
 </dd>
 
-### -field <b>NumberBytesReadWrap</b>
+### -field NumberBytesReadWrap
 
 <dd>
 <p>An unsigned character field that specifies the total number of times that the <i>NumberBytesRead</i> parameter has rolled around to zero.</p>
 </dd>
 
-### -field <b>NumberBytesWrittenWrap</b>
+### -field NumberBytesWrittenWrap
 
 <dd>
 <p>An unsigned character field that specifies the total number of times that the <i>NumberBytesWritten</i> parameter has rolled around to zero.</p>
 </dd>
 
-### -field <b>Pad</b>
+### -field Pad
 
 <dd>
 <p>Should be zero.</p>

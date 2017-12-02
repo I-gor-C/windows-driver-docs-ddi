@@ -59,19 +59,19 @@ NTSTATUS APIENTRY DxgkCbQueryVidPnInterface(
 ## -parameters
 <dl>
 
-### -param <i>hVidPn</i> [in]
+### -param hVidPn [in]
 
 <dd>
 <p>[in] A handle to a VidPN object. The VidPN manager previously provided the display miniport driver with this handle by calling <a href="display.dxgkddienumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>, <a href="display.dxgkddiissupportedvidpn">DxgkDdiIsSupportedVidPn</a>, or <a href="display.dxgkddirecommendfunctionalvidpn">DxgkDdiRecommendFunctionalVidPn</a>.</p>
 </dd>
 
-### -param <i>VidPnInterfaceVersion</i> [in]
+### -param VidPnInterfaceVersion [in]
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-vidpn-interface-version.md">DXGK_VIDPN_INTERFACE_VERSION</a> enumerator that specifies the version of the VidPN interface being requested. Callers must set this parameter to <b>DXGK_VIDPN_INTERFACE_VERSION_V1</b>.</p>
 </dd>
 
-### -param <i>ppVidPnInterface</i> [out]
+### -param ppVidPnInterface [out]
 
 <dd>
 <p>[out] A pointer to a variable that receives a pointer to the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpn-interface.md">DXGK_VIDPN_INTERFACE</a> structure.</p>

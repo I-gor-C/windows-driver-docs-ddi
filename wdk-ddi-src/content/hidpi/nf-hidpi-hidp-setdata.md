@@ -59,37 +59,37 @@ NTSTATUS __stdcall HidP_SetData(
 ## -parameters
 <dl>
 
-### -param <i>ReportType</i> [in]
+### -param ReportType [in]
 
 <dd>
 <p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report located at <i>Report</i>.</p>
 </dd>
 
-### -param <i>DataList</i> [in, out]
+### -param DataList [in, out]
 
 <dd>
 <p>Pointer to a caller-allocated array of <a href="..\hidpi\ns-hidpi--hidp-data.md">HIDP_DATA</a> structures that specify which buttons and usage values to set.</p>
 </dd>
 
-### -param <i>DataLength</i> [in, out]
+### -param DataLength [in, out]
 
 <dd>
 <p>Specifies, on input, the number of members in the <i>DataList</i> array. For information about the output value, see the Remarks section.</p>
 </dd>
 
-### -param <i>PreparsedData</i> [in]
+### -param PreparsedData [in]
 
 <dd>
-<p>Pointer to a top-level's <a href="NULL">preparsed data</a>.</p>
+<p>Pointer to a top-level's <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.</p>
 </dd>
 
-### -param <i>Report</i> [in]
+### -param Report [in]
 
 <dd>
 <p>Pointer to a HID report.</p>
 </dd>
 
-### -param <i>ReportLength</i> [in]
+### -param ReportLength [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the HID report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a> returns in a collection's <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure.</p>
@@ -139,7 +139,7 @@ NTSTATUS __stdcall HidP_SetData(
 
 <p>Set to the index of the <i>DataList</i> member that caused the error.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

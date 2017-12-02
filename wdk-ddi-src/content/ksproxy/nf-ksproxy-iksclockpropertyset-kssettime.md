@@ -54,7 +54,7 @@ HRESULT KsSetTime(
 ## -parameters
 <dl>
 
-### -param <i>Time </i> [in]
+### -param Time  [in]
 
 <dd>
 <p>Time to which to set the underlying clock.</p>

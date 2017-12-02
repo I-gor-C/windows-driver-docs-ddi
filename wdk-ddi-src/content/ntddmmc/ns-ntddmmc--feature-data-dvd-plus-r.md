@@ -57,25 +57,25 @@ typedef struct _FEATURE_DATA_DVD_PLUS_R {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>Write</b>
+### -field Write
 
 <dd>
 <p>Indicates, when set to 1, that the device has an ability that was not specified in the DVD-ROM profile, to write to DVD+R discs according to <i>DVD+R 4.7 Gbytes Basic Format Specifications.</i> When set to 0, the device has no extra ability beyond what is specified in the profile. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. </p>

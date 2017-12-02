@@ -58,25 +58,25 @@ VOID StorPortAcquireSpinLock(
 ## -parameters
 <dl>
 
-### -param <i>DeviceExtension</i> [in]
+### -param DeviceExtension [in]
 
 <dd>
 <p>A pointer to the miniport driver per-adapter device extension. </p>
 </dd>
 
-### -param <i>SpinLock</i> [in]
+### -param SpinLock [in]
 
 <dd>
 <p>Contains an enumerator value of type <a href="..\storport\ne-storport--stor-spinlock.md">STOR_SPINLOCK</a> that specifies the spin lock to acquire. </p>
 </dd>
 
-### -param <i>LockContext</i> [in]
+### -param LockContext [in]
 
 <dd>
 <p>A pointer to the DPC object for which the lock is held if <i>SpinLock</i> indicates a type of <b>DpcLock</b>. This member should be <b>NULL</b> if <i>SpinLock </i>indicates a type of either <b>InterruptLock</b> or <b>StartIoLock</b>. </p>
 </dd>
 
-### -param <i>LockHandle</i> [in, out]
+### -param LockHandle [in, out]
 
 <dd>
 <p>A pointer to a buffer that, on return, will contain a lock handle. To release the lock, the caller must pass this handle to the <a href="..\storport\nf-storport-storportreleasespinlock.md">StorPortReleaseSpinLock</a> routine. </p>

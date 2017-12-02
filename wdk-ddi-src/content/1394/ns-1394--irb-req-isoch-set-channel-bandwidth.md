@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_set_channel_bandwidth.htm
 old-project: IEEE
 ms.assetid: CBEB68C2-549F-4EB6-9AF4-4DCA6749F75D
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_ISOCH_SET_CHANNEL_BANDWIDTH, IRB_REQ_ISOCH_SET_CHANNEL_BANDWIDTH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef struct _IRB_REQ_ISOCH_SET_CHANNEL_BANDWIDTH {
 ## -struct-fields
 <dl>
 
-### -field <b>hBandwidth</b>
+### -field hBandwidth
 
 <dd>
 <p>Bandwidth handle to reset.</p>
 </dd>
 
-### -field <b>nMaxBytesPerFrame</b>
+### -field nMaxBytesPerFrame
 
 <dd>
 <p>Specifies the new bandwidth for <b>hBandwidth</b>.</p>
 </dd>
 
-### -field <b>nBandwidthUnitsRequired</b>
+### -field nBandwidthUnitsRequired
 
 <dd>
 <p>Specifies a pre-calculated value.</p>
@@ -75,7 +75,7 @@ typedef struct _IRB_REQ_ISOCH_SET_CHANNEL_BANDWIDTH {
 </dl>
 
 ## -remarks
-
+<p>This request does not require the caller to know the bandwidth that was allocated when a handle was generated. REQUEST_ISOCH_SET_CHANNEL_BANDWIDTH can be used to readjust the bandwidth on a bandwidth handle whose bytes per frame setting is unknown. Despite its name, this request does not involve isochronous channels in any way.</p>
 
 ## -requirements
 <table>

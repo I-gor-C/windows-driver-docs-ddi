@@ -59,19 +59,19 @@ typedef struct _D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW {
 ## -struct-fields
 <dl>
 
-### -field <b>hDrvResource</b>
+### -field hDrvResource
 
 <dd>
 <p>A handle to the video decoder input resource.</p>
 </dd>
 
-### -field <b>hDrvVideoProcessorEnum</b>
+### -field hDrvVideoProcessorEnum
 
 <dd>
 <p>A handle to the video processor enumeration.</p>
 </dd>
 
-### -field <b>FourCC</b>
+### -field FourCC
 
 <dd>
 <p>A FOURCC code that the application uses to override the surface format. A value of zero indicates that the application will not override the resource format.</p>
@@ -79,19 +79,19 @@ typedef struct _D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW {
 <p>For more information about FOURCC codes, see <a href="http://go.microsoft.com/fwlink/p/?linkid=231686">Video FOURCCs</a>.</p>
 </dd>
 
-### -field <b>MipSlice</b>
+### -field MipSlice
 
 <dd>
 <p>The identifier of the MIP-map slice.</p>
 </dd>
 
-### -field <b>FirstArraySlice</b>
+### -field FirstArraySlice
 
 <dd>
 <p>The identifier of the first array slice.</p>
 </dd>
 
-### -field <b>ArraySize</b>
+### -field ArraySize
 
 <dd>
 <p>The number of array slices for the texture.</p>

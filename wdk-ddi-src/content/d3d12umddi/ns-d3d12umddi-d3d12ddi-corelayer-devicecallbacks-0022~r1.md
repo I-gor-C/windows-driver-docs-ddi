@@ -67,85 +67,85 @@ typedef struct D3D12DDI_CORELAYER_DEVICECALLBACKS_0022 {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnSetErrorCb</b>
+### -field pfnSetErrorCb
 
 <dd>
 <p>A pointer to the pfnSetErrorCb function.</p>
 </dd>
 
-### -field <b>pfnSetCommandListErrorCb</b>
+### -field pfnSetCommandListErrorCb
 
 <dd>
 <p>A pointer to the function.</p>
 </dd>
 
-### -field <b>pfnSetCommandListDDITableCb</b>
+### -field pfnSetCommandListDDITableCb
 
 <dd>
 <p>A pointer to the pfnSetCommandListErrorCb function.</p>
 </dd>
 
-### -field <b>pfnCreateContextCb</b>
+### -field pfnCreateContextCb
 
 <dd>
 <p>A pointer to the pfnCreateContextCb function.</p>
 </dd>
 
-### -field <b>pfnCreateContextVirtualCb</b>
+### -field pfnCreateContextVirtualCb
 
 <dd>
 <p>A pointer to the pfnCreateContextVirtualCb function.</p>
 </dd>
 
-### -field <b>pfnDestroyContextCb</b>
+### -field pfnDestroyContextCb
 
 <dd>
 <p>A pointer to the pfnDestroyContextCb function.</p>
 </dd>
 
-### -field <b>pfnCreatePagingQueueCb</b>
+### -field pfnCreatePagingQueueCb
 
 <dd>
 <p>A pointer to the pfnCreatePagingQueueCb function.</p>
 </dd>
 
-### -field <b>pfnDestroyPagingQueueCb</b>
+### -field pfnDestroyPagingQueueCb
 
 <dd>
 <p>A pointer to the pfnDestroyPagingQueueCb function.</p>
 </dd>
 
-### -field <b>pfnMakeResidentCb</b>
+### -field pfnMakeResidentCb
 
 <dd>
 <p>A pointer to the pfnMakeResidentCb function.</p>
 </dd>
 
-### -field <b>pfnEvictCb</b>
+### -field pfnEvictCb
 
 <dd>
 <p>A pointer to the pfnEvictCb function.</p>
 </dd>
 
-### -field <b>pfnReclaimAllocations2Cb</b>
+### -field pfnReclaimAllocations2Cb
 
 <dd>
 <p>A pointer to the pfnReclaimAllocations2Cb function.</p>
 </dd>
 
-### -field <b>pfnOfferAllocationsCb</b>
+### -field pfnOfferAllocationsCb
 
 <dd>
 <p>A pointer to the pfnOfferAllocationsCb function.</p>
 </dd>
 
-### -field <b>pfnAllocateCb</b>
+### -field pfnAllocateCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi-allocate-cb-0022.md">pfnAllocateCb</a> function.</p>
 </dd>
 
-### -field <b>pfnDeallocateCb</b>
+### -field pfnDeallocateCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi-deallocate-cb-0022.md">pfnDeallocateCb</a> function.</p>

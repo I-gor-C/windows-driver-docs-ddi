@@ -7,7 +7,7 @@ old-location: netvista\wdi_p2p_listen_state.htm
 old-project: netvista
 ms.assetid: 68798F3D-B708-4DCD-AB3F-D8DE4A8A0CF2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef enum _WDI_P2P_LISTEN_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_P2P_LISTEN_STATE_OFF"></a><a id="wdi_p2p_listen_state_off"></a><b>WDI_P2P_LISTEN_STATE_OFF</b>
+### -field WDI_P2P_LISTEN_STATE_OFF
 
 <dd>
 <p>When this listen state is set:</p>
@@ -68,7 +68,7 @@ typedef enum _WDI_P2P_LISTEN_STATE {
 </ul>
 </dd>
 
-### -field <a id="WDI_P2P_LISTEN_STATE_PASSIVE_AVAILABILITY"></a><a id="wdi_p2p_listen_state_passive_availability"></a><b>WDI_P2P_LISTEN_STATE_PASSIVE_AVAILABILITY</b>
+### -field WDI_P2P_LISTEN_STATE_PASSIVE_AVAILABILITY
 
 <dd>
 <p>When this listen state is set:</p>
@@ -78,7 +78,7 @@ typedef enum _WDI_P2P_LISTEN_STATE {
 </ul>
 </dd>
 
-### -field <a id="WDI_P2P_LISTEN_STATE_AUTOMATIC_AVAILABILITY"></a><a id="wdi_p2p_listen_state_automatic_availability"></a><b>WDI_P2P_LISTEN_STATE_AUTOMATIC_AVAILABILITY</b>
+### -field WDI_P2P_LISTEN_STATE_AUTOMATIC_AVAILABILITY
 
 <dd>
 <p>When this listen state is set:</p>
@@ -90,7 +90,7 @@ typedef enum _WDI_P2P_LISTEN_STATE {
 <div> </div>
 </dd>
 
-### -field <a id="WDI_P2P_LISTEN_STATE_HIGH_AVAILABILITY"></a><a id="wdi_p2p_listen_state_high_availability"></a><b>WDI_P2P_LISTEN_STATE_HIGH_AVAILABILITY</b>
+### -field WDI_P2P_LISTEN_STATE_HIGH_AVAILABILITY
 
 <dd>
 <p>When this listen state is set:</p>

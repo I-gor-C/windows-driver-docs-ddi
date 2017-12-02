@@ -57,19 +57,19 @@ typedef enum _UCM_PD_POWER_DATA_OBJECT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UcmPdPdoTypeFixedSupply"></a><a id="ucmpdpdotypefixedsupply"></a><a id="UCMPDPDOTYPEFIXEDSUPPLY"></a><b>UcmPdPdoTypeFixedSupply</b>
+### -field UcmPdPdoTypeFixedSupply
 
 <dd>
 <p>Indicates the PD data object type is a fixed supply.</p>
 </dd>
 
-### -field <a id="UcmPdPdoTypeBatterySupply"></a><a id="ucmpdpdotypebatterysupply"></a><a id="UCMPDPDOTYPEBATTERYSUPPLY"></a><b>UcmPdPdoTypeBatterySupply</b>
+### -field UcmPdPdoTypeBatterySupply
 
 <dd>
 <p>Indicates the PD data object type is a battery supply.</p>
 </dd>
 
-### -field <a id="UcmPdPdoTypeVariableSupplyNonBattery"></a><a id="ucmpdpdotypevariablesupplynonbattery"></a><a id="UCMPDPDOTYPEVARIABLESUPPLYNONBATTERY"></a><b>UcmPdPdoTypeVariableSupplyNonBattery</b>
+### -field UcmPdPdoTypeVariableSupplyNonBattery
 
 <dd>
 <p>Indicates the PD data object type is a non-battery variable supply.</p>
@@ -128,7 +128,7 @@ typedef enum _UCM_PD_POWER_DATA_OBJECT_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucm_pd_power_data_object_get_type">UCM_PD_POWER_DATA_OBJECT_GET_TYPE</a>
+<a href="..\ucmtypes\nf-ucmtypes-ucm-pd-power-data-object-get-type.md">UCM_PD_POWER_DATA_OBJECT_GET_TYPE</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\ndisregisterprotocoldriver.htm
 old-project: netvista
 ms.assetid: b48571eb-13a2-4541-80ac-c8d31f378d37
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisRegisterProtocolDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,14 +58,14 @@ NDIS_STATUS NdisRegisterProtocolDriver(
 ## -parameters
 <dl>
 
-### -param <i>ProtocolDriverContext</i> [in, optional]
+### -param ProtocolDriverContext [in, optional]
 
 <dd>
 <p>A handle to a driver-allocated context area where the driver maintains state and configuration
      information.</p>
 </dd>
 
-### -param <i>ProtocolCharacteristics</i> [in]
+### -param ProtocolCharacteristics [in]
 
 <dd>
 <p>A pointer to an 
@@ -75,7 +75,7 @@ NDIS_STATUS NdisRegisterProtocolDriver(
      <i>ProtocolXxx</i> function entry points.</p>
 </dd>
 
-### -param <i>NdisProtocolHandle</i> [out]
+### -param NdisProtocolHandle [out]
 
 <dd>
 <p>A pointer to a caller-supplied handle variable. NDIS writes a handle to this variable that
@@ -212,4 +212,4 @@ NDIS_STATUS NdisRegisterProtocolDriver(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisRegisterProtocolDriver function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisRegisterProtocolDriver function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

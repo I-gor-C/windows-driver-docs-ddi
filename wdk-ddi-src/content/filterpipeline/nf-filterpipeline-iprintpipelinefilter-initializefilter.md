@@ -56,19 +56,19 @@ HRESULT InitializeFilter(
 ## -parameters
 <dl>
 
-### -param <i>pICommunicator</i> [in]
+### -param pICommunicator [in]
 
 <dd>
 <p>A pointer to the <a href="print.iinterfiltercommunicator">IInterFilterCommunicator</a> interface.</p>
 </dd>
 
-### -param <i>pIPropertyBag</i> [in]
+### -param pIPropertyBag [in]
 
 <dd>
 <p>A pointer to the<a href="print.iprintpipelinepropertybag">IPrintPipelinePropertyBag</a> interface.</p>
 </dd>
 
-### -param <i>pIPipelineControl</i> [in]
+### -param pIPipelineControl [in]
 
 <dd>
 <p>A pointer to the <a href="print.iprintpipelinemanagercontrol">IPrintPipelineManagerControl</a> interface.</p>

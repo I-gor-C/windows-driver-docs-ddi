@@ -7,7 +7,7 @@ old-location: debugger\debug_cached_symbol_info.htm
 old-project: debugger
 ms.assetid: CC7914B6-DCE1-45D1-84D3-5FF1449AD565
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: DEBUG_CACHED_SYMBOL_INFO, DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ typedef struct _DEBUG_CACHED_SYMBOL_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ModBase</b>
+### -field ModBase
 
 <dd>
 <p>A module base.</p>
 </dd>
 
-### -field <b>Arg1</b>
+### -field Arg1
 
 <dd>
 <p>An argument value.</p>
 </dd>
 
-### -field <b>Arg2</b>
+### -field Arg2
 
 <dd>
 <p>An argument value.</p>
 </dd>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>An ID.</p>
 </dd>
 
-### -field <b>Arg3</b>
+### -field Arg3
 
 <dd>
 <p>An argument value.</p>

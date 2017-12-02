@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>Specifies the exported <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a>.</p>
 </dd>
 
-### -field <b>ReferenceDeviceObject</b>
+### -field ReferenceDeviceObject
 
 <dd>
 <p>Pointer to a driver-supplied <a href="stream.kstrreferencedeviceobject">KStrReferenceDeviceObject</a> routine.</p>
 </dd>
 
-### -field <b>DereferenceDeviceObject</b>
+### -field DereferenceDeviceObject
 
 <dd>
 <p>Pointer to a driver-supplied <a href="stream.kstrdereferencedeviceobject">KStrDereferenceDeviceObject</a> routine.</p>
 </dd>
 
-### -field <b>QueryReferenceString</b>
+### -field QueryReferenceString
 
 <dd>
 <p>Pointer to a driver-supplied <a href="stream.kstrqueryreferencestring">KStrQueryReferenceString</a> routine.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilcallhandoverstateparammask.htm
 old-project: netvista
 ms.assetid: 2534a05b-9e7f-4081-af61-721cd1fa82fc
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILCALLHANDOVERSTATEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_HANDOVER_OLD_TYPE"></a><a id="ril_param_handover_old_type"></a><b>RIL_PARAM_HANDOVER_OLD_TYPE</b>
+### -field RIL_PARAM_HANDOVER_OLD_TYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_HANDOVER_NEW_TYPE"></a><a id="ril_param_handover_new_type"></a><b>RIL_PARAM_HANDOVER_NEW_TYPE</b>
+### -field RIL_PARAM_HANDOVER_NEW_TYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_HANDOVER_3GPPCAUSE"></a><a id="ril_param_handover_3gppcause"></a><b>RIL_PARAM_HANDOVER_3GPPCAUSE</b>
+### -field RIL_PARAM_HANDOVER_3GPPCAUSE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_HANDOVER_ALL"></a><a id="ril_param_handover_all"></a><b>RIL_PARAM_HANDOVER_ALL</b>
+### -field RIL_PARAM_HANDOVER_ALL
 
 <dd></dd>
 </dl>

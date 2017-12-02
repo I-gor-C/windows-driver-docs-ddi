@@ -55,13 +55,13 @@ typedef struct _IDE_LBA_RANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>StartSector</b>
+### -field StartSector
 
 <dd>
 <p>Contains the starting sector of the LBA range.</p>
 </dd>
 
-### -field <b>SectorCount</b>
+### -field SectorCount
 
 <dd>
 <p>Contains the sector count of the LBA range.</p>

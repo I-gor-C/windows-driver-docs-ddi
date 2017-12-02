@@ -7,7 +7,7 @@ old-location: ieee\pcmp_notify_routine.htm
 old-project: IEEE
 ms.assetid: 0576D73A-0A36-4AB7-952C-19B56FD246D8
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: TOPOLOGY_MAP, TOPOLOGY_MAP, *PTOPOLOGY_MAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef PCMP_NOTIFY_ROUTINE CmpNotifyRoutine;
 ## -parameters
 <dl>
 
-### -param <i>NotifyInfo</i> [in]
+### -param NotifyInfo [in]
 
 <dd>
 <p>Specifies the notification information.</p>

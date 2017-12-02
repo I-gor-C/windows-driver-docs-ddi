@@ -7,7 +7,7 @@ old-location: netvista\rilcalllist_v2.htm
 old-project: netvista
 ms.assetid: 4cf94a04-dbb4-4e24-954b-3a5a720ef963
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLLIST_V2, RILCALLLIST_V2, *LPRILCALLLIST_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILCALLLIST_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>dwNumberOfCalls</b>
+### -field dwNumberOfCalls
 
 <dd></dd>
 
-### -field <b>rciCallInfo</b>
+### -field rciCallInfo
 
 <dd></dd>
 </dl>

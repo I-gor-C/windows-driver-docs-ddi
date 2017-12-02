@@ -7,7 +7,7 @@ old-location: netvista\close_ndk_adapter_handler.htm
 old-project: netvista
 ms.assetid: 9D5980F1-A244-4C5C-B032-68C10BF9D6E7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TCP_OFFLOAD_STATS, TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ VOID CloseNdkAdapterHandler(
 ## -parameters
 <dl>
 
-### -param <i>MiniportAdapterContext</i> [in]
+### -param MiniportAdapterContext [in]
 
 <dd>
 <p>A handle to a context area that the miniport driver allocated in its <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> function. The miniport driver uses this context area to maintain state information for an NDIS  miniport adapter.</p>
 </dd>
 
-### -param <i>pNdkAdapter</i> [in]
+### -param pNdkAdapter [in]
 
 <dd>
 <p>A pointer to the <a href="..\ndkpi\ns-ndkpi--ndk-adapter.md">NDK_ADAPTER</a> instance to close.</p>
@@ -133,4 +133,4 @@ VOID CloseNdkAdapterHandler(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20CLOSE_NDK_ADAPTER_HANDLER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20CLOSE_NDK_ADAPTER_HANDLER callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

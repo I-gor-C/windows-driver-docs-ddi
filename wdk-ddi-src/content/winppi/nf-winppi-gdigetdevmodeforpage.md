@@ -58,25 +58,25 @@ BOOL GdiGetDevmodeForPage(
 ## -parameters
 <dl>
 
-### -param <i>SpoolFileHandle</i> 
+### -param SpoolFileHandle 
 
 <dd>
 <p>Caller-supplied spool file handle, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>.</p>
 </dd>
 
-### -param <i>dwPageNumber</i> 
+### -param dwPageNumber 
 
 <dd>
 <p>Caller-supplied number of the page for which <a href="display.devmodew">DEVMODEW</a> contents are to be returned.</p>
 </dd>
 
-### -param <i>pCurrDM</i> 
+### -param pCurrDM 
 
 <dd>
 <p>Caller-supplied location to receive a pointer to a DEVMODE structure for the page specified by <i>dwPageNumber</i>.</p>
 </dd>
 
-### -param <i>pLastDM</i> 
+### -param pLastDM 
 
 <dd>
 <p>Caller-supplied location to receive a pointer to a DEVMODE structure for the page previous to the one specified by <i>dwPageNumber</i>.</p>
@@ -97,7 +97,7 @@ BOOL GdiGetDevmodeForPage(
 
 <p>Call <a href="..\winppi\nf-winppi-gdistartpageemf.md">GdiStartPageEMF</a>.</p>
 
-<p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.</p>
 
 ## -requirements
 <table>

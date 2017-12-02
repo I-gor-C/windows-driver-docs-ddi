@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KsObjectTypeDevice"></a><a id="ksobjecttypedevice"></a><a id="KSOBJECTTYPEDEVICE"></a><b>KsObjectTypeDevice</b>
+### -field KsObjectTypeDevice
 
 <dd>
 <p>Specifies that the object is a device.</p>
 </dd>
 
-### -field <a id="KsObjectTypeFilterFactory"></a><a id="ksobjecttypefilterfactory"></a><a id="KSOBJECTTYPEFILTERFACTORY"></a><b>KsObjectTypeFilterFactory</b>
+### -field KsObjectTypeFilterFactory
 
 <dd>
 <p>Specifies that the object is a filter factory.</p>
 </dd>
 
-### -field <a id="KsObjectTypeFilter"></a><a id="ksobjecttypefilter"></a><a id="KSOBJECTTYPEFILTER"></a><b>KsObjectTypeFilter</b>
+### -field KsObjectTypeFilter
 
 <dd>
 <p>Specifies that the object is a filter.</p>
 </dd>
 
-### -field <a id="KsObjectTypePin"></a><a id="ksobjecttypepin"></a><a id="KSOBJECTTYPEPIN"></a><b>KsObjectTypePin</b>
+### -field KsObjectTypePin
 
 <dd>
 <p>Specifies that the object is a pin.</p>

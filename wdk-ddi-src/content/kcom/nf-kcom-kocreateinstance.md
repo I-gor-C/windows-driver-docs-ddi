@@ -59,31 +59,31 @@ NTSTATUS KoCreateInstance(
 ## -parameters
 <dl>
 
-### -param <i>ClassId</i> [in]
+### -param ClassId [in]
 
 <dd>
 <p>The CLSID of the object to create an instance of.</p>
 </dd>
 
-### -param <i>UnkOuter</i> [in, optional]
+### -param UnkOuter [in, optional]
 
 <dd>
 <p>The outer unknown object to pass to the new instance.</p>
 </dd>
 
-### -param <i>ClsContext</i> [in]
+### -param ClsContext [in]
 
 <dd>
 <p>The context in which to create the instance. This must be CLSCTX_KERNEL_SERVER.</p>
 </dd>
 
-### -param <i>InterfaceId</i> [in]
+### -param InterfaceId [in]
 
 <dd>
 <p>Reference to the identifier of the interface that will communicate with the object.</p>
 </dd>
 
-### -param <i>Interface</i> [out]
+### -param Interface [out]
 
 <dd>
 <p>Address of the pointer variable that receives the new interface pointer specified in <i>InterfaceId</i>.</p>

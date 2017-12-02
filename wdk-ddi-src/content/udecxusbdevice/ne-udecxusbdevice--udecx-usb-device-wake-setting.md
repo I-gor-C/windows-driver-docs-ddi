@@ -57,19 +57,19 @@ typedef enum _UDECX_USB_DEVICE_WAKE_SETTING {
 ## -enum-fields
 <dl>
 
-### -field <a id="UdecxUsbDeviceWakeDisabled"></a><a id="udecxusbdevicewakedisabled"></a><a id="UDECXUSBDEVICEWAKEDISABLED"></a><b>UdecxUsbDeviceWakeDisabled</b>
+### -field UdecxUsbDeviceWakeDisabled
 
 <dd>
 <p>The USB device cannot send a wake signal to the host controller.</p>
 </dd>
 
-### -field <a id="UdecxUsbDeviceWakeEnabled"></a><a id="udecxusbdevicewakeenabled"></a><a id="UDECXUSBDEVICEWAKEENABLED"></a><b>UdecxUsbDeviceWakeEnabled</b>
+### -field UdecxUsbDeviceWakeEnabled
 
 <dd>
 <p>The USB device can send a wake signal to the host controller.</p>
 </dd>
 
-### -field <a id="UdecxUsbDeviceWakeNotApplicable"></a><a id="udecxusbdevicewakenotapplicable"></a><a id="UDECXUSBDEVICEWAKENOTAPPLICABLE"></a><b>UdecxUsbDeviceWakeNotApplicable</b>
+### -field UdecxUsbDeviceWakeNotApplicable
 
 <dd>
 <p>This value is used only if the USB device is a SuperSpeed device.</p>
@@ -96,7 +96,7 @@ typedef enum _UDECX_USB_DEVICE_WAKE_SETTING {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_udecx_usb_device_d0_exit">EVT_UDECX_USB_DEVICE_D0_EXIT</a>
+<a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-d0-exit.md">EVT_UDECX_USB_DEVICE_D0_EXIT</a>
 </dt>
 </dl>
 <p> </p>

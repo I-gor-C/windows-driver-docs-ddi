@@ -59,37 +59,37 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_MEMORY_RESOURCE(
 ## -parameters
 <dl>
 
-### -param <i>ReadWrite</i> [in]
+### -param ReadWrite [in]
 
 <dd>
 <p>If true, indicates that the resource is read/write. Otherwise, it's read-only.</p>
 </dd>
 
-### -param <i>MinimumAddress</i> [in]
+### -param MinimumAddress [in]
 
 <dd>
 <p>Specifies the minimum acceptable starting address for the IO range.</p>
 </dd>
 
-### -param <i>MaximumAddress</i> [in]
+### -param MaximumAddress [in]
 
 <dd>
 <p>Specifies the maximum acceptable starting address for the IO range.</p>
 </dd>
 
-### -param <i>Alignment</i> [in]
+### -param Alignment [in]
 
 <dd>
 <p>Specifies the alignment granularity for the memory address assigned.</p>
 </dd>
 
-### -param <i>MemorySize</i> [in]
+### -param MemorySize [in]
 
 <dd>
 <p>Specifies the number of bytes in the memory range.</p>
 </dd>
 
-### -param <i>Resource</i> [out]
+### -param Resource [out]
 
 <dd>
 <p>A pointer to the resource. The structure behind the pointer is of type <a href="..\pepfx\ns-pepfx--pep-acpi-io-memory-resource.md">PEP_ACPI_IO_MEMORY_RESOURCE</a>.</p>

@@ -63,61 +63,61 @@ typedef struct _ISCSI_Persistent_Login {
 ## -struct-fields
 <dl>
 
-### -field <b>TargetName</b>
+### -field TargetName
 
 <dd>
 <p>A wide character string that indicates the name of the target with which the iSCSI initiator service establishes a persistent logon when it restarts.</p>
 </dd>
 
-### -field <b>SecurityFlags</b>
+### -field SecurityFlags
 
 <dd>
 <p>A bitwise OR of security flags that indicate the security requirements of the target that is specified in the persistent logon. For a list of possible values for this member, see <a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>.</p>
 </dd>
 
-### -field <b>InitiatorPortNumber</b>
+### -field InitiatorPortNumber
 
 <dd>
 <p>The port number on the initiator side to perform the logon operation through. </p>
 </dd>
 
-### -field <b>UsernameSize</b>
+### -field UsernameSize
 
 <dd>
 <p>The size, in bytes, of the string in <b>Username</b>.</p>
 </dd>
 
-### -field <b>IsInformationalSession</b>
+### -field IsInformationalSession
 
 <dd>
 <p>A Boolean value that indicates whether the persistent logon is configured to establish a purely informational session. If this member is <b>TRUE</b>, the persistent logon is configured to establish a purely informational session.</p>
 </dd>
 
-### -field <b>UniqueIdForISID</b>
+### -field UniqueIdForISID
 
 <dd>
 <p>Portal to use for initial connection</p>
 </dd>
 
-### -field <b>TargetPortal</b>
+### -field TargetPortal
 
 <dd>
 <p>An <a href="..\iscsidef\ns-iscsidef--iscsi-targetportal.md">ISCSI_TargetPortal</a> structure that specifies which target portal to use for the initial logon connection.</p>
 </dd>
 
-### -field <b>LoginOptions</b>
+### -field LoginOptions
 
 <dd>
 <p>An <a href="..\iscsidef\ns-iscsidef--iscsi-loginoptions.md">ISCSI_LoginOptions</a> structure that specifies the characteristics of the persistent logon session. </p>
 </dd>
 
-### -field <b>TargetMapping</b>
+### -field TargetMapping
 
 <dd>
 <p>An <a href="..\iscsidef\ns-iscsidef--iscsi-targetmapping.md">ISCSI_TargetMapping</a> structure that defines the target mappings. </p>
 </dd>
 
-### -field <b>Username</b>
+### -field Username
 
 <dd>
 <p>A variable-length array of characters that specifies the challenge handshake authentication protocol user name (CHAP_N) to use when the initiator is authenticating the target. The number of elements in the array is specified by the <b>UsernameSize</b> field.</p>

@@ -58,31 +58,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_FOCUSSTATE_UNINITIALIZED"></a><a id="kscamera_extendedprop_focusstate_uninitialized"></a><b>KSCAMERA_EXTENDEDPROP_FOCUSSTATE_UNINITIALIZED</b>
+### -field KSCAMERA_EXTENDEDPROP_FOCUSSTATE_UNINITIALIZED
 
 <dd>
 <p>The focus state is not initialized.</p>
 </dd>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_FOCUSSTATE_LOST"></a><a id="kscamera_extendedprop_focusstate_lost"></a><b>KSCAMERA_EXTENDEDPROP_FOCUSSTATE_LOST</b>
+### -field KSCAMERA_EXTENDEDPROP_FOCUSSTATE_LOST
 
 <dd>
 <p>The focus state is lost.</p>
 </dd>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_FOCUSSTATE_SEARCHING"></a><a id="kscamera_extendedprop_focusstate_searching"></a><b>KSCAMERA_EXTENDEDPROP_FOCUSSTATE_SEARCHING</b>
+### -field KSCAMERA_EXTENDEDPROP_FOCUSSTATE_SEARCHING
 
 <dd>
 <p>The focus state is searching.</p>
 </dd>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FOCUSED"></a><a id="kscamera_extendedprop_focusstate_focused"></a><b>KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FOCUSED</b>
+### -field KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FOCUSED
 
 <dd>
 <p>The focus state is focused.</p>
 </dd>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FAILED"></a><a id="kscamera_extendedprop_focusstate_failed"></a><b>KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FAILED</b>
+### -field KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FAILED
 
 <dd>
 <p>The focus state is failed.</p>

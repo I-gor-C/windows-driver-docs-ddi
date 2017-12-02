@@ -56,19 +56,19 @@ typedef struct _D3DKMT_UPDATEOVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device that the overlay is associated with.</p>
 </dd>
 
-### -field <b>hOverlay</b>
+### -field hOverlay
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to modify. </p>
 </dd>
 
-### -field <b>OverlayInfo</b>
+### -field OverlayInfo
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-kerneloverlayinfo.md">D3DDDI_KERNELOVERLAYINFO</a> structure that describes modification information for the kernel-mode overlay object. </p>

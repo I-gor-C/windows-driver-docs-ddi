@@ -56,7 +56,7 @@ typedef struct _DXGKARG_COMMITVIDPN_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>PathPowerTransition</b>
+### -field PathPowerTransition
 
 <dd>
 <p>A UINT value that specifies whether the Microsoft DirectX graphics kernel subsystem calls the <a href="display.dxgkddicommitvidpn">DxgkDdiCommitVidPn</a> function to power off a connected monitor.</p>
@@ -65,7 +65,7 @@ typedef struct _DXGKARG_COMMITVIDPN_FLAGS {
 <p>For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>PathPoweredOff</b>
+### -field PathPoweredOff
 
 <dd>
 <p>A UINT value that specifies whether the DirectX graphics kernel subsystem calls <a href="display.dxgkddicommitvidpn">DxgkDdiCommitVidPn</a> to inform the driver that the user changed modes.</p>
@@ -74,7 +74,7 @@ typedef struct _DXGKARG_COMMITVIDPN_FLAGS {
 <p>For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 30 bits (0xFFFFFFFC) of a 32-bit value to zeros.</p>

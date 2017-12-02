@@ -56,19 +56,19 @@ typedef struct _D3DKMT_INVALIDATEACTIVEVIDPN {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[in] A handle to the graphics adapter that the VidPN exists on.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in] A pointer to a buffer that contains the display mode (for example, clone-view mode) that the OpenGL installable client driver (ICD) requests for the new VidPN.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.</p>

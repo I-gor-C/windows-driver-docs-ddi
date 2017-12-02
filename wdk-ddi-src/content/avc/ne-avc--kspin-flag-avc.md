@@ -58,31 +58,31 @@ typedef enum _KSPIN_FLAG_AVC {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPIN_FLAG_AVCMASK"></a><a id="kspin_flag_avcmask"></a><b>KSPIN_FLAG_AVCMASK</b>
+### -field KSPIN_FLAG_AVCMASK
 
 <dd>
 <p>The mask to isolate the AV/C defined bit flags</p>
 </dd>
 
-### -field <a id="KSPIN_FLAG_AVC_PERMANENT"></a><a id="kspin_flag_avc_permanent"></a><b>KSPIN_FLAG_AVC_PERMANENT</b>
+### -field KSPIN_FLAG_AVC_PERMANENT
 
 <dd>
 <p>Part of the AV/C Connect Status bitmask. Represents a permanent connection between two subunits within the same unit.</p>
 </dd>
 
-### -field <a id="KSPIN_FLAG_AVC_CONNECTED"></a><a id="kspin_flag_avc_connected"></a><b>KSPIN_FLAG_AVC_CONNECTED</b>
+### -field KSPIN_FLAG_AVC_CONNECTED
 
 <dd>
 <p>Part of the AV/C Connect Status bitmask. Represents a connection that is currently active, but not necessarily permanent.</p>
 </dd>
 
-### -field <a id="KSPIN_FLAG_AVC_PCRONLY"></a><a id="kspin_flag_avc_pcronly"></a><b>KSPIN_FLAG_AVC_PCRONLY</b>
+### -field KSPIN_FLAG_AVC_PCRONLY
 
 <dd>
 <p>No subunit plug control. Only unit input and output plugs are available, and this AVCPRECONNECTINFO structure represents one of them.</p>
 </dd>
 
-### -field <a id="KSPIN_FLAG_AVC_FIXEDPCR"></a><a id="kspin_flag_avc_fixedpcr"></a><b>KSPIN_FLAG_AVC_FIXEDPCR</b>
+### -field KSPIN_FLAG_AVC_FIXEDPCR
 
 <dd>
 <p>Represents a permanent connection between a subunit plug and a unit (serial bus) plug. Specifying this flag implies KSPIN_FLAG_AVC_PERMANENT, although that bit is not set if this one is set.</p>
@@ -112,7 +112,7 @@ typedef enum _KSPIN_FLAG_AVC {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554154">AVC_FUNCTION_GET_CONNECTINFO</a>
 </dt>
 <dt>
-<a href="stream.av_c_intersect_handler">AV/C Intersect Handler</a>
+<a href="..\avc\nc-avc-pfnavcintersecthandler.md">AV/C Intersect Handler</a>
 </dt>
 </dl>
 <p> </p>

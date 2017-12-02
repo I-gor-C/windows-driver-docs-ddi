@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>The <code>IServiceGroup</code> interface encapsulates a group of objects that all require notification of the same service request. When the service group object receives notification of the request, it forwards the notification to each of the objects in the group. The PortCls system driver implements the <code>IServiceGroup</code> interface and exposes it to miniport drivers. A miniport driver creates an <code>IServiceGroup</code> object by calling <a href="..\portcls\nf-portcls-pcnewservicegroup.md">PcNewServiceGroup</a>. <code>IServiceGroup</code> inherits from the <a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a> interface.</p>
-<p>Port drivers typically use service group objects to demultiplex requests for interrupt service, although the functionality of a service group is general enough to make it potentially useful for other purposes as well. For more information, see <a href="NULL">Service Sink and Service Group Objects</a>.</p>
+<p>Port drivers typically use service group objects to demultiplex requests for interrupt service, although the functionality of a service group is general enough to make it potentially useful for other purposes as well. For more information, see <a href="https://msdn.microsoft.com/00e17e01-8889-4fae-a0ff-e110d7a9b21e">Service Sink and Service Group Objects</a>.</p>
 
 
 ## -inheritance

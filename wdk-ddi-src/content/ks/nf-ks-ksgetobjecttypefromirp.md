@@ -54,10 +54,10 @@ KSOBJECTTYPE KsGetObjectTypeFromIrp(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>A pointer to the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure for which to find the associated AVStream object type.</p>
+<p>A pointer to the <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure for which to find the associated AVStream object type.</p>
 </dd>
 </dl>
 
@@ -120,7 +120,7 @@ KSOBJECTTYPE KsGetObjectTypeFromIrp(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\ks\nf-ks-ksaddirptocancelablequeue.md">KsAddIrpToCancelableQueue</a>

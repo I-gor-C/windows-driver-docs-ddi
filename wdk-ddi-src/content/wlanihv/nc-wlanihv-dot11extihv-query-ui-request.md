@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvqueryuirequest.htm
 old-project: netvista
 ms.assetid: 37c01180-0742-4764-88c3-9ceb807a0086
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ DWORD APIENTRY Dot11ExtIhvQueryUIRequest(
 ## -parameters
 <dl>
 
-### -param <i>hIhvExtAdapter</i> [in, optional]
+### -param hIhvExtAdapter [in, optional]
 
 <dd>
 <p>The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) adapter. This
@@ -67,7 +67,7 @@ DWORD APIENTRY Dot11ExtIhvQueryUIRequest(
      Handler function.</p>
 </dd>
 
-### -param <i>connectionPhase</i> [in]
+### -param connectionPhase [in]
 
 <dd>
 <p>The current connection phase. The data type for this member is the 
@@ -76,13 +76,13 @@ DWORD APIENTRY Dot11ExtIhvQueryUIRequest(
 <p></p>
 <dl>
 
-### -param <a id="connection_phase_any"></a><a id="CONNECTION_PHASE_ANY"></a><b>connection_phase_any</b>
+### -param connection_phase_any
 
 <dd>
 <p>Specifies any connection phase.</p>
 </dd>
 
-### -param <a id="connection_phase_initial_connection"></a><a id="CONNECTION_PHASE_INITIAL_CONNECTION"></a><b>connection_phase_initial_connection</b>
+### -param connection_phase_initial_connection
 
 <dd>
 <p>Specifies the connection phase before the IHV Extensions DLL initiates a pre-association
@@ -91,7 +91,7 @@ DWORD APIENTRY Dot11ExtIhvQueryUIRequest(
        Operations</a>.</p>
 </dd>
 
-### -param <a id="connection_phase_post_l3_connection"></a><a id="CONNECTION_PHASE_POST_L3_CONNECTION"></a><b>connection_phase_post_l3_connection</b>
+### -param connection_phase_post_l3_connection
 
 <dd>
 <p>Specifies the connection phase after the IHV Extensions DLL completes a post-association
@@ -102,7 +102,7 @@ DWORD APIENTRY Dot11ExtIhvQueryUIRequest(
 </dl>
 </dd>
 
-### -param <i>ppIhvUIRequest</i> [out]
+### -param ppIhvUIRequest [out]
 
 <dd>
 <p>The address of a pointer to a 
@@ -191,4 +191,4 @@ DWORD APIENTRY Dot11ExtIhvQueryUIRequest(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_QUERY_UI_REQUEST callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_QUERY_UI_REQUEST callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -57,25 +57,25 @@ typedef struct _HDAUDIO_STREAM_FORMAT {
 ## -struct-fields
 <dl>
 
-### -field <b>SampleRate</b>
+### -field SampleRate
 
 <dd>
 <p>Specifies the sample rate in samples per second. This member indicates the rate at which each channel should be played or recorded.</p>
 </dd>
 
-### -field <b>ValidBitsPerSample</b>
+### -field ValidBitsPerSample
 
 <dd>
 <p>Specifies the number of valid bits per sample. The valid bits are left justified within the container. Any unused bits to the right of the valid bits must be set to zero.</p>
 </dd>
 
-### -field <b>ContainerSize</b>
+### -field ContainerSize
 
 <dd>
 <p>Specifies the size in bits of a sample container. Valid values for this member are 8, 16, 24, and 32.</p>
 </dd>
 
-### -field <b>NumberOfChannels</b>
+### -field NumberOfChannels
 
 <dd>
 <p>Specifies the number of channels of audio data. For monophonic audio, set this member to 1. For stereo, set this member to 2.</p>

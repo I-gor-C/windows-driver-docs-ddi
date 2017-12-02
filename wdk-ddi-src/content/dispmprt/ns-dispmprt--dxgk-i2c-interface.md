@@ -60,43 +60,43 @@ typedef struct _DXGK_I2C_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of the I2C interface. Version number constants are defined in <i>Dispmprt.h</i> (for example, DXGK_I2C_INTERFACE_VERSION_1).</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to a private context block.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to an interface reference function that is implemented by the display miniport driver.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to an interface dereference function that is implemented by the display miniport driver.</p>
 </dd>
 
-### -field <b>DxgkDdiI2CTransmitDataToDisplay</b>
+### -field DxgkDdiI2CTransmitDataToDisplay
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-i2c-transmit-data-to-display.md">DxgkDdiI2CTransmitDataToDisplay</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiI2CReceiveDataFromDisplay</b>
+### -field DxgkDdiI2CReceiveDataFromDisplay
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-i2c-receive-data-from-display.md">DxgkDdiI2CReceiveDataFromDisplay</a> function.</p>

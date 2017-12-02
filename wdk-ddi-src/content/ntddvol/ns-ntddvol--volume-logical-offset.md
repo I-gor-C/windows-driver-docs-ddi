@@ -54,7 +54,7 @@ typedef struct _VOLUME_LOGICAL_OFFSET {
 ## -struct-fields
 <dl>
 
-### -field <b>LogicalOffset</b>
+### -field LogicalOffset
 
 <dd>
 <p>Contains a logical offset in bytes into a volume. </p>

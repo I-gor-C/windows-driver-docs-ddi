@@ -54,7 +54,7 @@ req.iface:
 ## -parameters
 <dl>
 
-### -param <i>MicroSeconds</i> [in]
+### -param MicroSeconds [in]
 
 <dd>
 <p>Specifies the number of microseconds to stall.</p>

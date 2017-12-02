@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediaid_2.htm
 old-project: netvista
 ms.assetid: ad367969-217c-4b9a-b9b1-1b6d1bf04f2e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLMEDIAID, RILCALLMEDIAID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILCALLMEDIAID {
 ## -struct-fields
 <dl>
 
-### -field <b>dwType</b>
+### -field dwType
 
 <dd></dd>
 
-### -field <b>dwID</b>
+### -field dwID
 
 <dd></dd>
 </dl>

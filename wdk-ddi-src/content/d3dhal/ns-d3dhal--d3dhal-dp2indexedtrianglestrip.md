@@ -54,7 +54,7 @@ typedef struct _D3DHAL_DP2INDEXEDTRIANGLESTRIP {
 ## -struct-fields
 <dl>
 
-### -field <b>wV</b>
+### -field wV
 
 <dd>
 <p>Specifies the index into the vertex buffer containing coordinate data for the first vertex of the triangle strip.</p>

@@ -58,13 +58,13 @@ NTSTATUS  APIENTRY DxgkDdiQueryCurrentFence(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> 
+### -param hAdapter 
 
 <dd>
 <p>[in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function.</p>
 </dd>
 
-### -param <i>pCurrentFence</i> 
+### -param pCurrentFence 
 
 <dd>
 <p>[in/out] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-querycurrentfence.md">DXGKARG_QUERYCURRENTFENCE</a> structure that contains information about the current fence data. </p>

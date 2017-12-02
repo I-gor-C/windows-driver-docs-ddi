@@ -7,7 +7,7 @@ old-location: netvista\riluiccresponseparammask.htm
 old-project: netvista
 ms.assetid: 2a87655f-8c8c-48c7-982e-dcb70ca600fb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILUICCRESPONSEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_SR_STATUSWORD2"></a><a id="ril_param_sr_statusword2"></a><b>RIL_PARAM_SR_STATUSWORD2</b>
+### -field RIL_PARAM_SR_STATUSWORD2
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SR_RESPONSESIZE"></a><a id="ril_param_sr_responsesize"></a><b>RIL_PARAM_SR_RESPONSESIZE</b>
+### -field RIL_PARAM_SR_RESPONSESIZE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SR_RESPONSE"></a><a id="ril_param_sr_response"></a><b>RIL_PARAM_SR_RESPONSE</b>
+### -field RIL_PARAM_SR_RESPONSE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SR_ALL"></a><a id="ril_param_sr_all"></a><b>RIL_PARAM_SR_ALL</b>
+### -field RIL_PARAM_SR_ALL
 
 <dd></dd>
 </dl>

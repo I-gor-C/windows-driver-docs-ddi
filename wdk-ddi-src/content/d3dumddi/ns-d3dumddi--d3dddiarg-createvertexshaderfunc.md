@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_CREATEVERTEXSHADERFUNC {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>[in] The size, in bytes, of the vertex shader code that is passed to the <i>pCode</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createvertexshaderfunc.md">CreateVertexShaderFunc</a> function.</p>
 </dd>
 
-### -field <b>ShaderHandle</b>
+### -field ShaderHandle
 
 <dd>
 <p>[out] A handle to the vertex shader code.</p>

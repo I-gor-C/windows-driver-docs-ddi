@@ -60,19 +60,19 @@ NTSTATUS KeConvertAuxiliaryCounterToPerformanceCounter(
 ## -parameters
 <dl>
 
-### -param <i>AuxiliaryCounterValue</i> [in]
+### -param AuxiliaryCounterValue [in]
 
 <dd>
 <p>The auxiliary counter value to convert.</p>
 </dd>
 
-### -param <i>PerformanceCounterValue</i> [out]
+### -param PerformanceCounterValue [out]
 
 <dd>
 <p>A pointer to the variable that contains the converted performance counter value.</p>
 </dd>
 
-### -param <i>ConversionError</i> [out, optional]
+### -param ConversionError [out, optional]
 
 <dd>
 <p>A pointer to a variable that contains the estimated conversion error in units of nanosecond.</p>

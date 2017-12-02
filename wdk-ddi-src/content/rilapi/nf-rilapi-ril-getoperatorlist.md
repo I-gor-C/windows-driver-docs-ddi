@@ -7,7 +7,7 @@ old-location: netvista\ril_getoperatorlist.htm
 old-project: netvista
 ms.assetid: 34894a89-73ba-4744-97b9-7c1f124431f4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetOperatorList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_GetOperatorList(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>dwSystemTypes</i> 
+### -param dwSystemTypes 
 
 <dd></dd>
 </dl>

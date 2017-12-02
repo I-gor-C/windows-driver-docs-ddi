@@ -58,25 +58,25 @@ ULONG StorPortMarkDumpMemory(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Address</i> [in]
+### -param Address [in]
 
 <dd>
 <p>The starting address of the memory range to mark.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length of the marked memory range.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Dump memory marking flags. The <i>Flags</i> parameter must be 0 or contain only the following value.</p>
@@ -88,7 +88,7 @@ ULONG StorPortMarkDumpMemory(
 <tr>
 <td width="40%"><a id="MARK_DUMP_MEMORY_FLAG_PHYSICAL_ADDRESS"></a><a id="mark_dump_memory_flag_physical_address"></a><dl>
 
-### -param <b>MARK_DUMP_MEMORY_FLAG_PHYSICAL_ADDRESS</b>
+### -param MARK_DUMP_MEMORY_FLAG_PHYSICAL_ADDRESS
 
 </dl>
 </td>

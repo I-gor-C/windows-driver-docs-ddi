@@ -56,13 +56,13 @@ NTSTATUS ZwRollbackTransaction(
 ## -parameters
 <dl>
 
-### -param <i>TransactionHandle</i> [in]
+### -param TransactionHandle [in]
 
 <dd>
 <p>A handle to a <a href="https://msdn.microsoft.com/124105bd-70be-49b1-8ea4-af6ba1f3cf16">transaction object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a> or <a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>. The handle must have TRANSACTION_ROLLBACK access to the object.</p>
 </dd>
 
-### -param <i>Wait</i> [in]
+### -param Wait [in]
 
 <dd>
 <p>A Boolean value that the caller sets to <b>TRUE</b> for synchronous operation or <b>FALSE</b> for asynchronous operation. If this parameter is set to <b>TRUE</b>, the call does not return until the rollback operation is complete.</p>

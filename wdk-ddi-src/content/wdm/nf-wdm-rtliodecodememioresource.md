@@ -58,25 +58,25 @@ ULONGLONG RtlIoDecodeMemIoResource(
 ## -parameters
 <dl>
 
-### -param <i>Descriptor</i> [in]
+### -param Descriptor [in]
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--io-resource-descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structure to provide the address information for.</p>
 </dd>
 
-### -param <i>Alignment</i> [out, optional]
+### -param Alignment [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives the alignment, in bytes, of the address range. This parameter can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>MinimumAddress</i> [out, optional]
+### -param MinimumAddress [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives the minimum address of the address range. This parameter can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>MaximumAddress</i> [out, optional]
+### -param MaximumAddress [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives the maximum address of the address range. This parameter can be <b>NULL</b>.</p>

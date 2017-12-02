@@ -58,13 +58,13 @@ typedef struct _WINBIO_DIAGNOSTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>PayloadSize</b>
+### -field PayloadSize
 
 <dd>
 <p>The total size of the payload.  This includes the fixed length structure and any variable data at the end.</p>
 </dd>
 
-### -field <b>WinBioHresult</b>
+### -field WinBioHresult
 
 <dd>
 <p>The status detail of the I/O operation.  This is where WINBIO error and information codes will be passed. The following table shows possible values.</p>
@@ -93,13 +93,13 @@ typedef struct _WINBIO_DIAGNOSTICS {
 <p> </p>
 </dd>
 
-### -field <b>SensorStatus</b>
+### -field SensorStatus
 
 <dd>
 <p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536476">WINBIO_SENSOR_STATUS</a> that contains the operating status of the biometric sensor.</p>
 </dd>
 
-### -field <b>VendorDiagnostics</b>
+### -field VendorDiagnostics
 
 <dd>
 <p>An optional <a href="..\winbio_ioctl\ns-winbio-ioctl--winbio-data.md">WINBIO_DATA</a> structure for vendor-specific additional information.</p>

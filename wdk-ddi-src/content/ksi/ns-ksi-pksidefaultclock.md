@@ -75,91 +75,91 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Frequency</b>
+### -field Frequency
 
 <dd></dd>
 
-### -field <b>LastDueTime</b>
+### -field LastDueTime
 
 <dd></dd>
 
-### -field <b>RunningTimeDelta</b>
+### -field RunningTimeDelta
 
 <dd></dd>
 
-### -field <b>LastRunningTime</b>
+### -field LastRunningTime
 
 <dd></dd>
 
-### -field <b>TimeAccessLock</b>
+### -field TimeAccessLock
 
 <dd></dd>
 
-### -field <b>EventQueue</b>
+### -field EventQueue
 
 <dd></dd>
 
-### -field <b>EventQueueLock</b>
+### -field EventQueueLock
 
 <dd></dd>
 
-### -field <b>QueueTimer</b>
+### -field QueueTimer
 
 <dd></dd>
 
-### -field <b>QueueDpc</b>
+### -field QueueDpc
 
 <dd></dd>
 
-### -field <b>ReferenceCount</b>
+### -field ReferenceCount
 
 <dd></dd>
 
-### -field <b>State</b>
+### -field State
 
 <dd></dd>
 
-### -field <b>SuspendDelta</b>
+### -field SuspendDelta
 
 <dd></dd>
 
-### -field <b>SuspendTime</b>
+### -field SuspendTime
 
 <dd></dd>
 
-### -field <b>SetTimer</b>
+### -field SetTimer
 
 <dd></dd>
 
-### -field <b>CancelTimer</b>
+### -field CancelTimer
 
 <dd></dd>
 
-### -field <b>CorrelatedTime</b>
+### -field CorrelatedTime
 
 <dd></dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd></dd>
 
-### -field <b>Resolution</b>
+### -field Resolution
 
 <dd></dd>
 
-### -field <b>FreeEvent</b>
+### -field FreeEvent
 
 <dd></dd>
 
-### -field <b>ExternalTimeReferenceCount</b>
+### -field ExternalTimeReferenceCount
 
 <dd></dd>
 
-### -field <b>ExternalTimeValid</b>
+### -field ExternalTimeValid
 
 <dd></dd>
 
-### -field <b>LastStreamTime</b>
+### -field LastStreamTime
 
 <dd></dd>
 </dl>

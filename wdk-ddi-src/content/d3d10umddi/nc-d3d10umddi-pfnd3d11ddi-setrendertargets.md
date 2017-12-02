@@ -67,49 +67,49 @@ VOID APIENTRY SetRenderTargets(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>phRenderTargetView</i> [in]
+### -param phRenderTargetView [in]
 
 <dd>
 <p> An array of handles to the render target view objects to set. Note that some handle values can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>NumRTVs</i> [in]
+### -param NumRTVs [in]
 
 <dd>
 <p> The number of elements in the array that <i>phRenderTargetView</i> specifies for the render target views (RTVs) to set. </p>
 </dd>
 
-### -param <i>RTVNumbertoUnbind</i> [in]
+### -param RTVNumbertoUnbind [in]
 
 <dd>
 <p> The number of render target view (RTV) objects to unbind (that is, those render target view objects that are previously set but should be no longer set). </p>
 </dd>
 
-### -param <i>hDepthStencilView</i> [in]
+### -param hDepthStencilView [in]
 
 <dd>
 <p> A handle to the depth-stencil buffer to set. </p>
 </dd>
 
-### -param <i>phUnorderedAccessView</i> [in]
+### -param phUnorderedAccessView [in]
 
 <dd>
 <p> An array of handles to the unordered access view (UAV) objects. </p>
 </dd>
 
-### -param <i>pUAVInitialCounts</i> [in]
+### -param pUAVInitialCounts [in]
 
 <dd>
 <p>An array of append and consume buffer offsets. <i>pUAV</i> is only relevant for unordered access views (UAVs)  of the <i>phUnorderedAccessView</i> array that were created with either <b>D3D11_DDI_BUFFER_UAV_FLAG_APPEND</b>  or <b>D3D11_DDI_BUFFER_UAV_FLAG_COUNTER</b> set in the <b>Flags</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-buffer-unorderedaccessview.md">D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW</a> structure when the UAV was created; otherwise, the argument is ignored. If an element in this array is set to -1, the current offset for that append and consume buffer should be kept. Any other value causes the driver to set the hidden counter for that UAV append and consume buffer.</p>
 </dd>
 
-### -param <i>UAVIndex</i> [in]
+### -param UAVIndex [in]
 
 <dd>
 <p>Indicates the start element, in the array of bind points, where the passed unordered access view (UAV) array is going to be applied. <i>UAVIndex</i> should be at least as great as  the <i>NumRTVs</i> parameter.</p>
@@ -117,19 +117,19 @@ VOID APIENTRY SetRenderTargets(
 <div> </div>
 </dd>
 
-### -param <i>NumUAVs</i> [in]
+### -param NumUAVs [in]
 
 <dd>
 <p> The number of unordered access view objects (UAVs) to set. </p>
 </dd>
 
-### -param <i>UAVFirsttoSet</i> [in]
+### -param UAVFirsttoSet [in]
 
 <dd>
 <p> The first unordered access view object (UAV) in the set of all updated UAVs (which includes <b>NULL</b> bindings). </p>
 </dd>
 
-### -param <i>UAVNumberUpdated</i> [in]
+### -param UAVNumberUpdated [in]
 
 <dd>
 <p> The number of unordered access view objects (UAVs) in the set of all updated UAVs (which includes <b>NULL</b> bindings). </p>

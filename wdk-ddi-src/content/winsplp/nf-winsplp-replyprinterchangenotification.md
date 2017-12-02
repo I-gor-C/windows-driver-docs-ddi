@@ -58,25 +58,25 @@ BOOL ReplyPrinterChangeNotification(
 ## -parameters
 <dl>
 
-### -param <i>hNotify</i> [in]
+### -param hNotify [in]
 
 <dd>
 <p>Caller-supplied handle. This handle must have been previously received as the <i>hNotify</i> input to the print provider's <a href="..\winspool\nf-winspool-findfirstprinterchangenotification.md">FindFirstPrinterChangeNotification</a> function.</p>
 </dd>
 
-### -param <i>fdwFlags</i> 
+### -param fdwFlags 
 
 <dd>
 <p>One or more caller-supplied PRINTER_CHANGE_-prefixed flags, listed in the Microsoft Windows SDK documentation's description of <b>FindNextPrinterChangeNotification</b>.</p>
 </dd>
 
-### -param <i>pdwResult</i> [out, optional]
+### -param pdwResult [out, optional]
 
 <dd>
 <p>Optional. If not <b>NULL</b>, it receives spooler-supplied PRINTER_NOTIFY_INFO-prefixed flags indicating results of updating the supplied information.</p>
 </dd>
 
-### -param <i>pPrinterNotifyInfo</i> [in, optional]
+### -param pPrinterNotifyInfo [in, optional]
 
 <dd>
 <p>Optional. Caller-supplieid address of a PRINTER_NOTIFY_INFO structure (described in the Windows SDK documentation). Can be <b>NULL</b> if no new notification information is being added.</p>
@@ -93,7 +93,7 @@ BOOL ReplyPrinterChangeNotification(
 
 <p>Calling <code>ReplyPrinterChangeNotification</code> causes the spooler to signal the client application that a print queue event has occurred. This happens even if the provider supplies <b>NULL</b> for <i>pPrinterNotifyInfo</i>. To update the spooler's record of print queue changes without causing the client to be notified, use <a href="..\winsplp\nf-winsplp-partialreplyprinterchangenotification.md">PartialReplyPrinterChangeNotification</a>. It is common to call <b>PartialReplyPrinterChangeNotification</b> several times to update the spooler's database, then to call <code>ReplyPrinterChangeNotification</code> to notify the client that changes have occurred.</p>
 
-<p>For additional information, see <a href="NULL">Supporting Printer Change Notifications</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/e75c6f89-9cef-4900-af89-edf1f7f786c7">Supporting Printer Change Notifications</a>.</p>
 
 ## -requirements
 <table>

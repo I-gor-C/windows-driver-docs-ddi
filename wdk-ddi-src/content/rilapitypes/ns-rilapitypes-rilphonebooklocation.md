@@ -7,7 +7,7 @@ old-location: netvista\rilphonebooklocation_2.htm
 old-project: netvista
 ms.assetid: 1878109a-f70c-4e4b-8735-7fbb972f4416
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILPHONEBOOKLOCATION, RILPHONEBOOKLOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef struct _RILPHONEBOOKLOCATION {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwStoreLocation</b>
+### -field dwStoreLocation
 
 <dd></dd>
 
-### -field <b>dwIndex</b>
+### -field dwIndex
 
 <dd></dd>
 </dl>

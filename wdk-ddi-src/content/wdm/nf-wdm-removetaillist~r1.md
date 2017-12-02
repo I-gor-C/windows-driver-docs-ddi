@@ -55,7 +55,7 @@ PLIST_ENTRY RemoveTailList(
 ## -parameters
 <dl>
 
-### -param <i>ListHead</i> [in, out]
+### -param ListHead [in, out]
 
 <dd>
 <p>Pointer to the <a href="kernel.list_entry">LIST_ENTRY</a> structure that serves as the list header.</p>

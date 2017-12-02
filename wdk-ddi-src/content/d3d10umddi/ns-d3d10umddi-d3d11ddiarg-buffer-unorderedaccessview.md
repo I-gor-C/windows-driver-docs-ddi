@@ -56,19 +56,19 @@ typedef struct D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW {
 ## -struct-fields
 <dl>
 
-### -field <b>FirstElement</b>
+### -field FirstElement
 
 <dd>
 <p>[in] The offset, in bytes, to the first element in the buffer. </p>
 </dd>
 
-### -field <b>NumElements</b>
+### -field NumElements
 
 <dd>
 <p>[in] The number of elements in the buffer. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A valid bitwise OR of flag values that describe the buffer. The Direct3D runtime supports the following values.</p>

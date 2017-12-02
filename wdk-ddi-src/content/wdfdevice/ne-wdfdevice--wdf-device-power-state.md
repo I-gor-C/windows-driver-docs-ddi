@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_power_state.htm
 old-project: wdf
 ms.assetid: 06bb6465-afc6-4b92-b3d7-1c66f6c6c33d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -156,407 +156,407 @@ typedef enum _WDF_DEVICE_POWER_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfDevStatePowerInvalid"></a><a id="wdfdevstatepowerinvalid"></a><a id="WDFDEVSTATEPOWERINVALID"></a><b>WdfDevStatePowerInvalid</b>
+### -field WdfDevStatePowerInvalid
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerObjectCreated"></a><a id="wdfdevstatepowerobjectcreated"></a><a id="WDFDEVSTATEPOWEROBJECTCREATED"></a><b>WdfDevStatePowerObjectCreated</b>
+### -field WdfDevStatePowerObjectCreated
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerCheckDeviceType"></a><a id="wdfdevstatepowercheckdevicetype"></a><a id="WDFDEVSTATEPOWERCHECKDEVICETYPE"></a><b>WdfDevStatePowerCheckDeviceType</b>
+### -field WdfDevStatePowerCheckDeviceType
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerCheckDeviceTypeNP"></a><a id="wdfdevstatepowercheckdevicetypenp"></a><a id="WDFDEVSTATEPOWERCHECKDEVICETYPENP"></a><b>WdfDevStatePowerCheckDeviceTypeNP</b>
+### -field WdfDevStatePowerCheckDeviceTypeNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerCheckParentState"></a><a id="wdfdevstatepowercheckparentstate"></a><a id="WDFDEVSTATEPOWERCHECKPARENTSTATE"></a><b>WdfDevStatePowerCheckParentState</b>
+### -field WdfDevStatePowerCheckParentState
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerCheckParentStateNP"></a><a id="wdfdevstatepowercheckparentstatenp"></a><a id="WDFDEVSTATEPOWERCHECKPARENTSTATENP"></a><b>WdfDevStatePowerCheckParentStateNP</b>
+### -field WdfDevStatePowerCheckParentStateNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerEnablingWakeAtBus"></a><a id="wdfdevstatepowerenablingwakeatbus"></a><a id="WDFDEVSTATEPOWERENABLINGWAKEATBUS"></a><b>WdfDevStatePowerEnablingWakeAtBus</b>
+### -field WdfDevStatePowerEnablingWakeAtBus
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerEnablingWakeAtBusNP"></a><a id="wdfdevstatepowerenablingwakeatbusnp"></a><a id="WDFDEVSTATEPOWERENABLINGWAKEATBUSNP"></a><b>WdfDevStatePowerEnablingWakeAtBusNP</b>
+### -field WdfDevStatePowerEnablingWakeAtBusNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerD0"></a><a id="wdfdevstatepowerd0"></a><a id="WDFDEVSTATEPOWERD0"></a><b>WdfDevStatePowerD0</b>
+### -field WdfDevStatePowerD0
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerD0NP"></a><a id="wdfdevstatepowerd0np"></a><a id="WDFDEVSTATEPOWERD0NP"></a><b>WdfDevStatePowerD0NP</b>
+### -field WdfDevStatePowerD0NP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerD0BusWakeOwner"></a><a id="wdfdevstatepowerd0buswakeowner"></a><a id="WDFDEVSTATEPOWERD0BUSWAKEOWNER"></a><b>WdfDevStatePowerD0BusWakeOwner</b>
+### -field WdfDevStatePowerD0BusWakeOwner
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerD0BusWakeOwnerNP"></a><a id="wdfdevstatepowerd0buswakeownernp"></a><a id="WDFDEVSTATEPOWERD0BUSWAKEOWNERNP"></a><b>WdfDevStatePowerD0BusWakeOwnerNP</b>
+### -field WdfDevStatePowerD0BusWakeOwnerNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerD0ArmedForWake"></a><a id="wdfdevstatepowerd0armedforwake"></a><a id="WDFDEVSTATEPOWERD0ARMEDFORWAKE"></a><b>WdfDevStatePowerD0ArmedForWake</b>
+### -field WdfDevStatePowerD0ArmedForWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerD0ArmedForWakeNP"></a><a id="wdfdevstatepowerd0armedforwakenp"></a><a id="WDFDEVSTATEPOWERD0ARMEDFORWAKENP"></a><b>WdfDevStatePowerD0ArmedForWakeNP</b>
+### -field WdfDevStatePowerD0ArmedForWakeNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerD0DisarmingWakeAtBus"></a><a id="wdfdevstatepowerd0disarmingwakeatbus"></a><a id="WDFDEVSTATEPOWERD0DISARMINGWAKEATBUS"></a><b>WdfDevStatePowerD0DisarmingWakeAtBus</b>
+### -field WdfDevStatePowerD0DisarmingWakeAtBus
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerD0DisarmingWakeAtBusNP"></a><a id="wdfdevstatepowerd0disarmingwakeatbusnp"></a><a id="WDFDEVSTATEPOWERD0DISARMINGWAKEATBUSNP"></a><b>WdfDevStatePowerD0DisarmingWakeAtBusNP</b>
+### -field WdfDevStatePowerD0DisarmingWakeAtBusNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerD0Starting"></a><a id="wdfdevstatepowerd0starting"></a><a id="WDFDEVSTATEPOWERD0STARTING"></a><b>WdfDevStatePowerD0Starting</b>
+### -field WdfDevStatePowerD0Starting
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerD0StartingConnectInterrupt"></a><a id="wdfdevstatepowerd0startingconnectinterrupt"></a><a id="WDFDEVSTATEPOWERD0STARTINGCONNECTINTERRUPT"></a><b>WdfDevStatePowerD0StartingConnectInterrupt</b>
+### -field WdfDevStatePowerD0StartingConnectInterrupt
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerD0StartingDmaEnable"></a><a id="wdfdevstatepowerd0startingdmaenable"></a><a id="WDFDEVSTATEPOWERD0STARTINGDMAENABLE"></a><b>WdfDevStatePowerD0StartingDmaEnable</b>
+### -field WdfDevStatePowerD0StartingDmaEnable
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerD0StartingStartSelfManagedIo"></a><a id="wdfdevstatepowerd0startingstartselfmanagedio"></a><a id="WDFDEVSTATEPOWERD0STARTINGSTARTSELFMANAGEDIO"></a><b>WdfDevStatePowerD0StartingStartSelfManagedIo</b>
+### -field WdfDevStatePowerD0StartingStartSelfManagedIo
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerDecideD0State"></a><a id="wdfdevstatepowerdecided0state"></a><a id="WDFDEVSTATEPOWERDECIDED0STATE"></a><b>WdfDevStatePowerDecideD0State</b>
+### -field WdfDevStatePowerDecideD0State
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoD3Stopped"></a><a id="wdfdevstatepowergotod3stopped"></a><a id="WDFDEVSTATEPOWERGOTOD3STOPPED"></a><b>WdfDevStatePowerGotoD3Stopped</b>
+### -field WdfDevStatePowerGotoD3Stopped
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerStopped"></a><a id="wdfdevstatepowerstopped"></a><a id="WDFDEVSTATEPOWERSTOPPED"></a><b>WdfDevStatePowerStopped</b>
+### -field WdfDevStatePowerStopped
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerStartingCheckDeviceType"></a><a id="wdfdevstatepowerstartingcheckdevicetype"></a><a id="WDFDEVSTATEPOWERSTARTINGCHECKDEVICETYPE"></a><b>WdfDevStatePowerStartingCheckDeviceType</b>
+### -field WdfDevStatePowerStartingCheckDeviceType
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerStartingChild"></a><a id="wdfdevstatepowerstartingchild"></a><a id="WDFDEVSTATEPOWERSTARTINGCHILD"></a><b>WdfDevStatePowerStartingChild</b>
+### -field WdfDevStatePowerStartingChild
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerDxDisablingWakeAtBus"></a><a id="wdfdevstatepowerdxdisablingwakeatbus"></a><a id="WDFDEVSTATEPOWERDXDISABLINGWAKEATBUS"></a><b>WdfDevStatePowerDxDisablingWakeAtBus</b>
+### -field WdfDevStatePowerDxDisablingWakeAtBus
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerDxDisablingWakeAtBusNP"></a><a id="wdfdevstatepowerdxdisablingwakeatbusnp"></a><a id="WDFDEVSTATEPOWERDXDISABLINGWAKEATBUSNP"></a><b>WdfDevStatePowerDxDisablingWakeAtBusNP</b>
+### -field WdfDevStatePowerDxDisablingWakeAtBusNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoDx"></a><a id="wdfdevstatepowergotodx"></a><a id="WDFDEVSTATEPOWERGOTODX"></a><b>WdfDevStatePowerGotoDx</b>
+### -field WdfDevStatePowerGotoDx
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoDxNP"></a><a id="wdfdevstatepowergotodxnp"></a><a id="WDFDEVSTATEPOWERGOTODXNP"></a><b>WdfDevStatePowerGotoDxNP</b>
+### -field WdfDevStatePowerGotoDxNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoDxIoStopped"></a><a id="wdfdevstatepowergotodxiostopped"></a><a id="WDFDEVSTATEPOWERGOTODXIOSTOPPED"></a><b>WdfDevStatePowerGotoDxIoStopped</b>
+### -field WdfDevStatePowerGotoDxIoStopped
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoDxIoStoppedNP"></a><a id="wdfdevstatepowergotodxiostoppednp"></a><a id="WDFDEVSTATEPOWERGOTODXIOSTOPPEDNP"></a><b>WdfDevStatePowerGotoDxIoStoppedNP</b>
+### -field WdfDevStatePowerGotoDxIoStoppedNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoDxNPFailed"></a><a id="wdfdevstatepowergotodxnpfailed"></a><a id="WDFDEVSTATEPOWERGOTODXNPFAILED"></a><b>WdfDevStatePowerGotoDxNPFailed</b>
+### -field WdfDevStatePowerGotoDxNPFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerDx"></a><a id="wdfdevstatepowerdx"></a><a id="WDFDEVSTATEPOWERDX"></a><b>WdfDevStatePowerDx</b>
+### -field WdfDevStatePowerDx
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerDxNP"></a><a id="wdfdevstatepowerdxnp"></a><a id="WDFDEVSTATEPOWERDXNP"></a><b>WdfDevStatePowerDxNP</b>
+### -field WdfDevStatePowerDxNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoDxArmedForWake"></a><a id="wdfdevstatepowergotodxarmedforwake"></a><a id="WDFDEVSTATEPOWERGOTODXARMEDFORWAKE"></a><b>WdfDevStatePowerGotoDxArmedForWake</b>
+### -field WdfDevStatePowerGotoDxArmedForWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoDxArmedForWakeNP"></a><a id="wdfdevstatepowergotodxarmedforwakenp"></a><a id="WDFDEVSTATEPOWERGOTODXARMEDFORWAKENP"></a><b>WdfDevStatePowerGotoDxArmedForWakeNP</b>
+### -field WdfDevStatePowerGotoDxArmedForWakeNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoDxIoStoppedArmedForWake"></a><a id="wdfdevstatepowergotodxiostoppedarmedforwake"></a><a id="WDFDEVSTATEPOWERGOTODXIOSTOPPEDARMEDFORWAKE"></a><b>WdfDevStatePowerGotoDxIoStoppedArmedForWake</b>
+### -field WdfDevStatePowerGotoDxIoStoppedArmedForWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoDxIoStoppedArmedForWakeNP"></a><a id="wdfdevstatepowergotodxiostoppedarmedforwakenp"></a><a id="WDFDEVSTATEPOWERGOTODXIOSTOPPEDARMEDFORWAKENP"></a><b>WdfDevStatePowerGotoDxIoStoppedArmedForWakeNP</b>
+### -field WdfDevStatePowerGotoDxIoStoppedArmedForWakeNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerDxArmedForWake"></a><a id="wdfdevstatepowerdxarmedforwake"></a><a id="WDFDEVSTATEPOWERDXARMEDFORWAKE"></a><b>WdfDevStatePowerDxArmedForWake</b>
+### -field WdfDevStatePowerDxArmedForWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerDxArmedForWakeNP"></a><a id="wdfdevstatepowerdxarmedforwakenp"></a><a id="WDFDEVSTATEPOWERDXARMEDFORWAKENP"></a><b>WdfDevStatePowerDxArmedForWakeNP</b>
+### -field WdfDevStatePowerDxArmedForWakeNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerCheckParentStateArmedForWake"></a><a id="wdfdevstatepowercheckparentstatearmedforwake"></a><a id="WDFDEVSTATEPOWERCHECKPARENTSTATEARMEDFORWAKE"></a><b>WdfDevStatePowerCheckParentStateArmedForWake</b>
+### -field WdfDevStatePowerCheckParentStateArmedForWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerCheckParentStateArmedForWakeNP"></a><a id="wdfdevstatepowercheckparentstatearmedforwakenp"></a><a id="WDFDEVSTATEPOWERCHECKPARENTSTATEARMEDFORWAKENP"></a><b>WdfDevStatePowerCheckParentStateArmedForWakeNP</b>
+### -field WdfDevStatePowerCheckParentStateArmedForWakeNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWaitForParentArmedForWake"></a><a id="wdfdevstatepowerwaitforparentarmedforwake"></a><a id="WDFDEVSTATEPOWERWAITFORPARENTARMEDFORWAKE"></a><b>WdfDevStatePowerWaitForParentArmedForWake</b>
+### -field WdfDevStatePowerWaitForParentArmedForWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWaitForParentArmedForWakeNP"></a><a id="wdfdevstatepowerwaitforparentarmedforwakenp"></a><a id="WDFDEVSTATEPOWERWAITFORPARENTARMEDFORWAKENP"></a><b>WdfDevStatePowerWaitForParentArmedForWakeNP</b>
+### -field WdfDevStatePowerWaitForParentArmedForWakeNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerStartSelfManagedIo"></a><a id="wdfdevstatepowerstartselfmanagedio"></a><a id="WDFDEVSTATEPOWERSTARTSELFMANAGEDIO"></a><b>WdfDevStatePowerStartSelfManagedIo</b>
+### -field WdfDevStatePowerStartSelfManagedIo
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerStartSelfManagedIoNP"></a><a id="wdfdevstatepowerstartselfmanagedionp"></a><a id="WDFDEVSTATEPOWERSTARTSELFMANAGEDIONP"></a><b>WdfDevStatePowerStartSelfManagedIoNP</b>
+### -field WdfDevStatePowerStartSelfManagedIoNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerStartSelfManagedIoFailed"></a><a id="wdfdevstatepowerstartselfmanagediofailed"></a><a id="WDFDEVSTATEPOWERSTARTSELFMANAGEDIOFAILED"></a><b>WdfDevStatePowerStartSelfManagedIoFailed</b>
+### -field WdfDevStatePowerStartSelfManagedIoFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerStartSelfManagedIoFailedNP"></a><a id="wdfdevstatepowerstartselfmanagediofailednp"></a><a id="WDFDEVSTATEPOWERSTARTSELFMANAGEDIOFAILEDNP"></a><b>WdfDevStatePowerStartSelfManagedIoFailedNP</b>
+### -field WdfDevStatePowerStartSelfManagedIoFailedNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWaitForParent"></a><a id="wdfdevstatepowerwaitforparent"></a><a id="WDFDEVSTATEPOWERWAITFORPARENT"></a><b>WdfDevStatePowerWaitForParent</b>
+### -field WdfDevStatePowerWaitForParent
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWaitForParentNP"></a><a id="wdfdevstatepowerwaitforparentnp"></a><a id="WDFDEVSTATEPOWERWAITFORPARENTNP"></a><b>WdfDevStatePowerWaitForParentNP</b>
+### -field WdfDevStatePowerWaitForParentNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWakePending"></a><a id="wdfdevstatepowerwakepending"></a><a id="WDFDEVSTATEPOWERWAKEPENDING"></a><b>WdfDevStatePowerWakePending</b>
+### -field WdfDevStatePowerWakePending
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWakePendingNP"></a><a id="wdfdevstatepowerwakependingnp"></a><a id="WDFDEVSTATEPOWERWAKEPENDINGNP"></a><b>WdfDevStatePowerWakePendingNP</b>
+### -field WdfDevStatePowerWakePendingNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWaking"></a><a id="wdfdevstatepowerwaking"></a><a id="WDFDEVSTATEPOWERWAKING"></a><b>WdfDevStatePowerWaking</b>
+### -field WdfDevStatePowerWaking
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWakingNP"></a><a id="wdfdevstatepowerwakingnp"></a><a id="WDFDEVSTATEPOWERWAKINGNP"></a><b>WdfDevStatePowerWakingNP</b>
+### -field WdfDevStatePowerWakingNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWakingConnectInterrupt"></a><a id="wdfdevstatepowerwakingconnectinterrupt"></a><a id="WDFDEVSTATEPOWERWAKINGCONNECTINTERRUPT"></a><b>WdfDevStatePowerWakingConnectInterrupt</b>
+### -field WdfDevStatePowerWakingConnectInterrupt
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWakingConnectInterruptNP"></a><a id="wdfdevstatepowerwakingconnectinterruptnp"></a><a id="WDFDEVSTATEPOWERWAKINGCONNECTINTERRUPTNP"></a><b>WdfDevStatePowerWakingConnectInterruptNP</b>
+### -field WdfDevStatePowerWakingConnectInterruptNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWakingConnectInterruptFailed"></a><a id="wdfdevstatepowerwakingconnectinterruptfailed"></a><a id="WDFDEVSTATEPOWERWAKINGCONNECTINTERRUPTFAILED"></a><b>WdfDevStatePowerWakingConnectInterruptFailed</b>
+### -field WdfDevStatePowerWakingConnectInterruptFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWakingConnectInterruptFailedNP"></a><a id="wdfdevstatepowerwakingconnectinterruptfailednp"></a><a id="WDFDEVSTATEPOWERWAKINGCONNECTINTERRUPTFAILEDNP"></a><b>WdfDevStatePowerWakingConnectInterruptFailedNP</b>
+### -field WdfDevStatePowerWakingConnectInterruptFailedNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWakingDmaEnable"></a><a id="wdfdevstatepowerwakingdmaenable"></a><a id="WDFDEVSTATEPOWERWAKINGDMAENABLE"></a><b>WdfDevStatePowerWakingDmaEnable</b>
+### -field WdfDevStatePowerWakingDmaEnable
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWakingDmaEnableNP"></a><a id="wdfdevstatepowerwakingdmaenablenp"></a><a id="WDFDEVSTATEPOWERWAKINGDMAENABLENP"></a><b>WdfDevStatePowerWakingDmaEnableNP</b>
+### -field WdfDevStatePowerWakingDmaEnableNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWakingDmaEnableFailed"></a><a id="wdfdevstatepowerwakingdmaenablefailed"></a><a id="WDFDEVSTATEPOWERWAKINGDMAENABLEFAILED"></a><b>WdfDevStatePowerWakingDmaEnableFailed</b>
+### -field WdfDevStatePowerWakingDmaEnableFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerWakingDmaEnableFailedNP"></a><a id="wdfdevstatepowerwakingdmaenablefailednp"></a><a id="WDFDEVSTATEPOWERWAKINGDMAENABLEFAILEDNP"></a><b>WdfDevStatePowerWakingDmaEnableFailedNP</b>
+### -field WdfDevStatePowerWakingDmaEnableFailedNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerReportPowerUpFailedDerefParent"></a><a id="wdfdevstatepowerreportpowerupfailedderefparent"></a><a id="WDFDEVSTATEPOWERREPORTPOWERUPFAILEDDEREFPARENT"></a><b>WdfDevStatePowerReportPowerUpFailedDerefParent</b>
+### -field WdfDevStatePowerReportPowerUpFailedDerefParent
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerReportPowerUpFailed"></a><a id="wdfdevstatepowerreportpowerupfailed"></a><a id="WDFDEVSTATEPOWERREPORTPOWERUPFAILED"></a><b>WdfDevStatePowerReportPowerUpFailed</b>
+### -field WdfDevStatePowerReportPowerUpFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerPowerFailedPowerDown"></a><a id="wdfdevstatepowerpowerfailedpowerdown"></a><a id="WDFDEVSTATEPOWERPOWERFAILEDPOWERDOWN"></a><b>WdfDevStatePowerPowerFailedPowerDown</b>
+### -field WdfDevStatePowerPowerFailedPowerDown
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerReportPowerDownFailed"></a><a id="wdfdevstatepowerreportpowerdownfailed"></a><a id="WDFDEVSTATEPOWERREPORTPOWERDOWNFAILED"></a><b>WdfDevStatePowerReportPowerDownFailed</b>
+### -field WdfDevStatePowerReportPowerDownFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerInitialConnectInterruptFailed"></a><a id="wdfdevstatepowerinitialconnectinterruptfailed"></a><a id="WDFDEVSTATEPOWERINITIALCONNECTINTERRUPTFAILED"></a><b>WdfDevStatePowerInitialConnectInterruptFailed</b>
+### -field WdfDevStatePowerInitialConnectInterruptFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerInitialDmaEnableFailed"></a><a id="wdfdevstatepowerinitialdmaenablefailed"></a><a id="WDFDEVSTATEPOWERINITIALDMAENABLEFAILED"></a><b>WdfDevStatePowerInitialDmaEnableFailed</b>
+### -field WdfDevStatePowerInitialDmaEnableFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerInitialSelfManagedIoFailed"></a><a id="wdfdevstatepowerinitialselfmanagediofailed"></a><a id="WDFDEVSTATEPOWERINITIALSELFMANAGEDIOFAILED"></a><b>WdfDevStatePowerInitialSelfManagedIoFailed</b>
+### -field WdfDevStatePowerInitialSelfManagedIoFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerInitialPowerUpFailedDerefParent"></a><a id="wdfdevstatepowerinitialpowerupfailedderefparent"></a><a id="WDFDEVSTATEPOWERINITIALPOWERUPFAILEDDEREFPARENT"></a><b>WdfDevStatePowerInitialPowerUpFailedDerefParent</b>
+### -field WdfDevStatePowerInitialPowerUpFailedDerefParent
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerInitialPowerUpFailed"></a><a id="wdfdevstatepowerinitialpowerupfailed"></a><a id="WDFDEVSTATEPOWERINITIALPOWERUPFAILED"></a><b>WdfDevStatePowerInitialPowerUpFailed</b>
+### -field WdfDevStatePowerInitialPowerUpFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerDxStoppedDisarmWake"></a><a id="wdfdevstatepowerdxstoppeddisarmwake"></a><a id="WDFDEVSTATEPOWERDXSTOPPEDDISARMWAKE"></a><b>WdfDevStatePowerDxStoppedDisarmWake</b>
+### -field WdfDevStatePowerDxStoppedDisarmWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerDxStoppedDisarmWakeNP"></a><a id="wdfdevstatepowerdxstoppeddisarmwakenp"></a><a id="WDFDEVSTATEPOWERDXSTOPPEDDISARMWAKENP"></a><b>WdfDevStatePowerDxStoppedDisarmWakeNP</b>
+### -field WdfDevStatePowerDxStoppedDisarmWakeNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoDxStoppedDisableInterruptNP"></a><a id="wdfdevstatepowergotodxstoppeddisableinterruptnp"></a><a id="WDFDEVSTATEPOWERGOTODXSTOPPEDDISABLEINTERRUPTNP"></a><b>WdfDevStatePowerGotoDxStoppedDisableInterruptNP</b>
+### -field WdfDevStatePowerGotoDxStoppedDisableInterruptNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoDxStopped"></a><a id="wdfdevstatepowergotodxstopped"></a><a id="WDFDEVSTATEPOWERGOTODXSTOPPED"></a><b>WdfDevStatePowerGotoDxStopped</b>
+### -field WdfDevStatePowerGotoDxStopped
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerDxStopped"></a><a id="wdfdevstatepowerdxstopped"></a><a id="WDFDEVSTATEPOWERDXSTOPPED"></a><b>WdfDevStatePowerDxStopped</b>
+### -field WdfDevStatePowerDxStopped
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoStopped"></a><a id="wdfdevstatepowergotostopped"></a><a id="WDFDEVSTATEPOWERGOTOSTOPPED"></a><b>WdfDevStatePowerGotoStopped</b>
+### -field WdfDevStatePowerGotoStopped
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerStoppedCompleteDx"></a><a id="wdfdevstatepowerstoppedcompletedx"></a><a id="WDFDEVSTATEPOWERSTOPPEDCOMPLETEDX"></a><b>WdfDevStatePowerStoppedCompleteDx</b>
+### -field WdfDevStatePowerStoppedCompleteDx
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerDxStoppedDecideDxState"></a><a id="wdfdevstatepowerdxstoppeddecidedxstate"></a><a id="WDFDEVSTATEPOWERDXSTOPPEDDECIDEDXSTATE"></a><b>WdfDevStatePowerDxStoppedDecideDxState</b>
+### -field WdfDevStatePowerDxStoppedDecideDxState
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerDxStoppedArmForWake"></a><a id="wdfdevstatepowerdxstoppedarmforwake"></a><a id="WDFDEVSTATEPOWERDXSTOPPEDARMFORWAKE"></a><b>WdfDevStatePowerDxStoppedArmForWake</b>
+### -field WdfDevStatePowerDxStoppedArmForWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerDxStoppedArmForWakeNP"></a><a id="wdfdevstatepowerdxstoppedarmforwakenp"></a><a id="WDFDEVSTATEPOWERDXSTOPPEDARMFORWAKENP"></a><b>WdfDevStatePowerDxStoppedArmForWakeNP</b>
+### -field WdfDevStatePowerDxStoppedArmForWakeNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerFinalPowerDownFailed"></a><a id="wdfdevstatepowerfinalpowerdownfailed"></a><a id="WDFDEVSTATEPOWERFINALPOWERDOWNFAILED"></a><b>WdfDevStatePowerFinalPowerDownFailed</b>
+### -field WdfDevStatePowerFinalPowerDownFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerFinal"></a><a id="wdfdevstatepowerfinal"></a><a id="WDFDEVSTATEPOWERFINAL"></a><b>WdfDevStatePowerFinal</b>
+### -field WdfDevStatePowerFinal
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoImplicitD3DisarmWakeAtBus"></a><a id="wdfdevstatepowergotoimplicitd3disarmwakeatbus"></a><a id="WDFDEVSTATEPOWERGOTOIMPLICITD3DISARMWAKEATBUS"></a><b>WdfDevStatePowerGotoImplicitD3DisarmWakeAtBus</b>
+### -field WdfDevStatePowerGotoImplicitD3DisarmWakeAtBus
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerUpFailed"></a><a id="wdfdevstatepowerupfailed"></a><a id="WDFDEVSTATEPOWERUPFAILED"></a><b>WdfDevStatePowerUpFailed</b>
+### -field WdfDevStatePowerUpFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerUpFailedDerefParent"></a><a id="wdfdevstatepowerupfailedderefparent"></a><a id="WDFDEVSTATEPOWERUPFAILEDDEREFPARENT"></a><b>WdfDevStatePowerUpFailedDerefParent</b>
+### -field WdfDevStatePowerUpFailedDerefParent
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoDxFailed"></a><a id="wdfdevstatepowergotodxfailed"></a><a id="WDFDEVSTATEPOWERGOTODXFAILED"></a><b>WdfDevStatePowerGotoDxFailed</b>
+### -field WdfDevStatePowerGotoDxFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerGotoDxStoppedDisableInterrupt"></a><a id="wdfdevstatepowergotodxstoppeddisableinterrupt"></a><a id="WDFDEVSTATEPOWERGOTODXSTOPPEDDISABLEINTERRUPT"></a><b>WdfDevStatePowerGotoDxStoppedDisableInterrupt</b>
+### -field WdfDevStatePowerGotoDxStoppedDisableInterrupt
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerUpFailedNP"></a><a id="wdfdevstatepowerupfailednp"></a><a id="WDFDEVSTATEPOWERUPFAILEDNP"></a><b>WdfDevStatePowerUpFailedNP</b>
+### -field WdfDevStatePowerUpFailedNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerUpFailedDerefParentNP"></a><a id="wdfdevstatepowerupfailedderefparentnp"></a><a id="WDFDEVSTATEPOWERUPFAILEDDEREFPARENTNP"></a><b>WdfDevStatePowerUpFailedDerefParentNP</b>
+### -field WdfDevStatePowerUpFailedDerefParentNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerNotifyingD0ExitToWakeInterrupts"></a><a id="wdfdevstatepowernotifyingd0exittowakeinterrupts"></a><a id="WDFDEVSTATEPOWERNOTIFYINGD0EXITTOWAKEINTERRUPTS"></a><b>WdfDevStatePowerNotifyingD0ExitToWakeInterrupts</b>
+### -field WdfDevStatePowerNotifyingD0ExitToWakeInterrupts
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerNotifyingD0EntryToWakeInterrupts"></a><a id="wdfdevstatepowernotifyingd0entrytowakeinterrupts"></a><a id="WDFDEVSTATEPOWERNOTIFYINGD0ENTRYTOWAKEINTERRUPTS"></a><b>WdfDevStatePowerNotifyingD0EntryToWakeInterrupts</b>
+### -field WdfDevStatePowerNotifyingD0EntryToWakeInterrupts
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerNotifyingD0ExitToWakeInterruptsNP"></a><a id="wdfdevstatepowernotifyingd0exittowakeinterruptsnp"></a><a id="WDFDEVSTATEPOWERNOTIFYINGD0EXITTOWAKEINTERRUPTSNP"></a><b>WdfDevStatePowerNotifyingD0ExitToWakeInterruptsNP</b>
+### -field WdfDevStatePowerNotifyingD0ExitToWakeInterruptsNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerNotifyingD0EntryToWakeInterruptsNP"></a><a id="wdfdevstatepowernotifyingd0entrytowakeinterruptsnp"></a><a id="WDFDEVSTATEPOWERNOTIFYINGD0ENTRYTOWAKEINTERRUPTSNP"></a><b>WdfDevStatePowerNotifyingD0EntryToWakeInterruptsNP</b>
+### -field WdfDevStatePowerNotifyingD0EntryToWakeInterruptsNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerInitialPowerUpFailedPowerDown"></a><a id="wdfdevstatepowerinitialpowerupfailedpowerdown"></a><a id="WDFDEVSTATEPOWERINITIALPOWERUPFAILEDPOWERDOWN"></a><b>WdfDevStatePowerInitialPowerUpFailedPowerDown</b>
+### -field WdfDevStatePowerInitialPowerUpFailedPowerDown
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerUpFailedPowerDown"></a><a id="wdfdevstatepowerupfailedpowerdown"></a><a id="WDFDEVSTATEPOWERUPFAILEDPOWERDOWN"></a><b>WdfDevStatePowerUpFailedPowerDown</b>
+### -field WdfDevStatePowerUpFailedPowerDown
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerUpFailedPowerDownNP"></a><a id="wdfdevstatepowerupfailedpowerdownnp"></a><a id="WDFDEVSTATEPOWERUPFAILEDPOWERDOWNNP"></a><b>WdfDevStatePowerUpFailedPowerDownNP</b>
+### -field WdfDevStatePowerUpFailedPowerDownNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerInitialSelfManagedIoFailedStarted"></a><a id="wdfdevstatepowerinitialselfmanagediofailedstarted"></a><a id="WDFDEVSTATEPOWERINITIALSELFMANAGEDIOFAILEDSTARTED"></a><b>WdfDevStatePowerInitialSelfManagedIoFailedStarted</b>
+### -field WdfDevStatePowerInitialSelfManagedIoFailedStarted
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerStartSelfManagedIoFailedStarted"></a><a id="wdfdevstatepowerstartselfmanagediofailedstarted"></a><a id="WDFDEVSTATEPOWERSTARTSELFMANAGEDIOFAILEDSTARTED"></a><b>WdfDevStatePowerStartSelfManagedIoFailedStarted</b>
+### -field WdfDevStatePowerStartSelfManagedIoFailedStarted
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerStartSelfManagedIoFailedStartedNP"></a><a id="wdfdevstatepowerstartselfmanagediofailedstartednp"></a><a id="WDFDEVSTATEPOWERSTARTSELFMANAGEDIOFAILEDSTARTEDNP"></a><b>WdfDevStatePowerStartSelfManagedIoFailedStartedNP</b>
+### -field WdfDevStatePowerStartSelfManagedIoFailedStartedNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePowerNull"></a><a id="wdfdevstatepowernull"></a><a id="WDFDEVSTATEPOWERNULL"></a><b>WdfDevStatePowerNull</b>
+### -field WdfDevStatePowerNull
 
 <dd></dd>
 </dl>

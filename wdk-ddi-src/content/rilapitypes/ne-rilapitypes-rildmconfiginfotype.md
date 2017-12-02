@@ -7,7 +7,7 @@ old-location: netvista\rildmconfiginfotype_2.htm
 old-project: netvista
 ms.assetid: 86f09204-5f4a-412d-a10b-4692e159ca1b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILDMCONFIGINFOTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DMCV_TYPE_BOOLEAN"></a><a id="ril_dmcv_type_boolean"></a><b>RIL_DMCV_TYPE_BOOLEAN</b>
+### -field RIL_DMCV_TYPE_BOOLEAN
 
 <dd></dd>
 
-### -field <a id="RIL_DMCV_TYPE_DWORD"></a><a id="ril_dmcv_type_dword"></a><b>RIL_DMCV_TYPE_DWORD</b>
+### -field RIL_DMCV_TYPE_DWORD
 
 <dd></dd>
 
-### -field <a id="RIL_DMCV_TYPE_STRING"></a><a id="ril_dmcv_type_string"></a><b>RIL_DMCV_TYPE_STRING</b>
+### -field RIL_DMCV_TYPE_STRING
 
 <dd></dd>
 
-### -field <a id="RIL_DMCV_TYPE_MAX"></a><a id="ril_dmcv_type_max"></a><b>RIL_DMCV_TYPE_MAX</b>
+### -field RIL_DMCV_TYPE_MAX
 
 <dd></dd>
 </dl>

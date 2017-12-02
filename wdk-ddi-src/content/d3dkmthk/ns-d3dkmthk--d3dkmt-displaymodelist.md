@@ -56,19 +56,19 @@ typedef struct _D3DKMT_DISPLAYMODELIST {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the display modes apply to.</p>
 </dd>
 
-### -field <b>ModeCount</b>
+### -field ModeCount
 
 <dd>
 <p>[in/out] The number of display modes in the array that <b>pModeList</b> specifies.</p>
 </dd>
 
-### -field <b>pModeList</b>
+### -field pModeList
 
 <dd>
 <p>[out] An array of <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-displaymode.md">D3DKMT_DISPLAYMODE</a> structures that represent the list of display modes.</p>

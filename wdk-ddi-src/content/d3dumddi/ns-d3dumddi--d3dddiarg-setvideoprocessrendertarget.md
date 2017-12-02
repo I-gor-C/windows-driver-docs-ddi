@@ -56,19 +56,19 @@ typedef struct _D3DDDIARG_SETVIDEOPROCESSRENDERTARGET {
 ## -struct-fields
 <dl>
 
-### -field <b>hVideoProcess</b>
+### -field hVideoProcess
 
 <dd>
 <p>[in] A handle to the Microsoft DirectX Video Acceleration (DirectX VA) video processing device. The user-mode display driver returns this handle in a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createvideoprocessdevice.md">CreateVideoProcessDevice</a> function.</p>
 </dd>
 
-### -field <b>hRenderTarget</b>
+### -field hRenderTarget
 
 <dd>
 <p>[in] A handle to the render target surface for video processing.</p>
 </dd>
 
-### -field <b>SubResourceIndex</b>
+### -field SubResourceIndex
 
 <dd>
 <p>[in] An index into the resource for the render target surface.</p>

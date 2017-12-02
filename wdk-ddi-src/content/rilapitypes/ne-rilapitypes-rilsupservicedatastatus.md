@@ -7,7 +7,7 @@ old-location: netvista\rilsupservicedatastatus_2.htm
 old-project: netvista
 ms.assetid: 9879db5b-25c1-451c-bb50-37e85cf1f5e5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILSUPSERVICEDATASTATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SUPSVCDATASTATUS_FURTHERINFOREQUIRED"></a><a id="ril_supsvcdatastatus_furtherinforequired"></a><b>RIL_SUPSVCDATASTATUS_FURTHERINFOREQUIRED</b>
+### -field RIL_SUPSVCDATASTATUS_FURTHERINFOREQUIRED
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCDATASTATUS_TIMEOUT"></a><a id="ril_supsvcdatastatus_timeout"></a><b>RIL_SUPSVCDATASTATUS_TIMEOUT</b>
+### -field RIL_SUPSVCDATASTATUS_TIMEOUT
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCDATASTATUS_ERROR"></a><a id="ril_supsvcdatastatus_error"></a><b>RIL_SUPSVCDATASTATUS_ERROR</b>
+### -field RIL_SUPSVCDATASTATUS_ERROR
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCDATASTATUS_MAX"></a><a id="ril_supsvcdatastatus_max"></a><b>RIL_SUPSVCDATASTATUS_MAX</b>
+### -field RIL_SUPSVCDATASTATUS_MAX
 
 <dd></dd>
 </dl>

@@ -55,13 +55,13 @@ typedef struct _KS_DVDCOPY_CHLGKEY {
 ## -struct-fields
 <dl>
 
-### -field <b>ChlgKey</b>
+### -field ChlgKey
 
 <dd>
 <p>Specifies the DVD decoder minidriver's challenge key.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Do not use.</p>
@@ -71,7 +71,7 @@ typedef struct _KS_DVDCOPY_CHLGKEY {
 ## -remarks
 <p>The KS_DVDCOPY_CHLGKEY structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565140">KSPROPERTY_DVDCOPY_CHLG_KEY</a> property.</p>
 
-<p>For more information, see <a href="NULL">DVD Copyright Protection</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/ff9cf8c8-7c8f-485c-b2ab-7567a5eeb87b">DVD Copyright Protection</a>.</p>
 
 ## -requirements
 <table>

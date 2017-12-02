@@ -56,19 +56,19 @@ typedef struct D3D12DDIARG_CREATECOMMANDQUEUE_0023 {
 ## -struct-fields
 <dl>
 
-### -field <b>QueueFlags</b>
+### -field QueueFlags
 
 <dd>
 <p>Command queue flags. </p>
 </dd>
 
-### -field <b>NodeMask</b>
+### -field NodeMask
 
 <dd>
 <p>A mask for a node.</p>
 </dd>
 
-### -field <b>QueueCreationFlags</b>
+### -field QueueCreationFlags
 
 <dd>
 <p>Command queue creation flag, as a <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi-command-queue-creation-flags.md">D3D12DDI_COMMAND_QUEUE_CREATION_FLAGS</a> value. </p>

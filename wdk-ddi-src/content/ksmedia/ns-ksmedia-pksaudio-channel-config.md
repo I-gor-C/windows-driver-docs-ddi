@@ -54,7 +54,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>ActiveSpeakerPositions</b>
+### -field ActiveSpeakerPositions
 
 <dd>
 <p>Specifies both the number of channels and the assignment of those channels to speaker positions. This member is a bitmask in which each bit within the mask corresponds to a particular speaker position. If a mask bit is set, the audio stream contains a channel that is assigned to the speaker position that the mask bit represents. The number of channels in the stream is obtained by counting how many number ones appear in the bitmask. For more information, see the following Remarks section.</p>

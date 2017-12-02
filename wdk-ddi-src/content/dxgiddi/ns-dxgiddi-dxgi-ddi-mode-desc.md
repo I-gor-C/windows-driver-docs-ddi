@@ -60,43 +60,43 @@ typedef struct DXGI_DDI_MODE_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>[out] The screen width of the display mode, in pixels.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[out] The screen height of the display mode, in pixels.</p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>[out] A DXGI_FORMAT-typed value that indicates the pixel format of the display mode.</p>
 </dd>
 
-### -field <b>RefreshRate</b>
+### -field RefreshRate
 
 <dd>
 <p>[out] A <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-rational.md">DXGI_DDI_RATIONAL</a> structure that indicates the refresh rate of the display mode.</p>
 </dd>
 
-### -field <b>ScanlineOrdering</b>
+### -field ScanlineOrdering
 
 <dd>
 <p>[out] A <a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-mode-scanline-order.md">DXGI_DDI_MODE_SCANLINE_ORDER</a>-typed value that indicates how scan lines are ordered in the display mode.</p>
 </dd>
 
-### -field <b>Rotation</b>
+### -field Rotation
 
 <dd>
 <p>[out] A <a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-mode-rotation.md">DXGI_DDI_MODE_ROTATION</a>-typed value that identifies the orientation of the display mode.</p>
 </dd>
 
-### -field <b>Scaling</b>
+### -field Scaling
 
 <dd>
 <p>[out] A <a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-mode-scaling.md">DXGI_DDI_MODE_SCALING</a>-typed value that identifies the scaling of the display mode.</p>

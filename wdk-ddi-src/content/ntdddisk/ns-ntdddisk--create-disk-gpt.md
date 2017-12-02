@@ -55,13 +55,13 @@ typedef struct _CREATE_DISK_GPT {
 ## -struct-fields
 <dl>
 
-### -field <b>DiskId</b>
+### -field DiskId
 
 <dd>
 <p>Specifies the GUID that uniquely identifies the disk.</p>
 </dd>
 
-### -field <b>MaxPartitionCount</b>
+### -field MaxPartitionCount
 
 <dd>
 <p>Specifies the maximum number of partitions allowed on the disk.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_qos_classification_element.htm
 old-project: netvista
 ms.assetid: 2677dc3a-7685-40bf-94c3-2efecf21e9a8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_QOS_CLASSIFICATION_ELEMENT, NDIS_QOS_CLASSIFICATION_ELEMENT, *PNDIS_QOS_CLASSIFICATION_ELEMENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,7 +80,7 @@ typedef struct _NDIS_QOS_CLASSIFICATION_ELEMENT {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -88,7 +88,7 @@ typedef struct _NDIS_QOS_CLASSIFICATION_ELEMENT {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_QOS_CLASSIFICATION_ELEMENT_REVISION_1"></a><a id="ndis_qos_classification_element_revision_1"></a>NDIS_QOS_CLASSIFICATION_ELEMENT_REVISION_1
+### -field NDIS_QOS_CLASSIFICATION_ELEMENT_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30.</p>
@@ -97,14 +97,14 @@ typedef struct _NDIS_QOS_CLASSIFICATION_ELEMENT {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise OR of flags that specify the state of the NDIS QoS traffic classifications that a miniport driver supports. The following flags are defined:</p>
 <p></p>
 <dl>
 
-### -field <a id="NDIS_QOS_CLASSIFICATION_ENFORCED_BY_MINIPORT"></a><a id="ndis_qos_classification_enforced_by_miniport"></a>NDIS_QOS_CLASSIFICATION_ENFORCED_BY_MINIPORT
+### -field NDIS_QOS_CLASSIFICATION_ENFORCED_BY_MINIPORT
 
 <dd>
 <p>If this flag is set, the miniport driver accepts the traffic classification parameters that are specified in the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure. If the driver accepts the parameters, it must configure the network adapter to perform the traffic classification as specified by the parameters.</p>
@@ -115,28 +115,28 @@ typedef struct _NDIS_QOS_CLASSIFICATION_ELEMENT {
 </dl>
 </dd>
 
-### -field <b>ConditionSelector</b>
+### -field ConditionSelector
 
 <dd>
 <p>A <b>USHORT</b> value that specifies the type of the data pattern that is contained in the <b>ConditionField</b> member. For example, the data pattern type could specify a destination UDP port whose value is specified by the <b>ConditionField</b> member.</p>
 <p>For more information, see <a href="#condition_members">Guidelines for Setting the <b>ConditionSelector</b> and <b>ConditionField</b> Members</a>.</p>
 </dd>
 
-### -field <b>ConditionField</b>
+### -field ConditionField
 
 <dd>
 <p>A <b>USHORT</b> value that contains the data pattern whose type is specified by the  <b>ConditionSelector</b> member. </p>
 <p>For more information, see <a href="#condition_members">Guidelines for Setting the <b>ConditionSelector</b> and <b>ConditionField</b> Members</a>.</p>
 </dd>
 
-### -field <b>ActionSelector</b>
+### -field ActionSelector
 
 <dd>
 <p>A <b>USHORT</b> value that specifies the type of action data that is contained in the <b>ActionField</b> member.  Starting with NDIS 6.30, the action data type specifies an 802.1p priority level whose value is specified by the <b>ConditionField</b> member.</p>
 <p>For more information, see <a href="#action_members">Guidelines for Setting the <b>ActionSelector</b> and <b>ActionField</b> Members</a>.</p>
 </dd>
 
-### -field <b>ActionField</b>
+### -field ActionField
 
 <dd>
 <p>A <b>USHORT</b> value that contains an action value whose type is specified by the  <b>ActionSelector</b> member.  </p>
@@ -163,7 +163,7 @@ typedef struct _NDIS_QOS_CLASSIFICATION_ELEMENT {
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439812">NDIS_STATUS_QOS_REMOTE_PARAMETERS_CHANGE</a>
 </p>
 
-<p>For more information, see <a href="NULL">NDIS QoS Traffic Classifications</a>.</p>
+<p>For more information, see <a href="netvista.ndis_qos_traffic_classifications">NDIS QoS Traffic Classifications</a>.</p>
 
 <p>The following table defines the range of values for the <b>ConditionSelector</b> and <b>ConditionField</b> members.</p>
 
@@ -185,15 +185,15 @@ typedef struct _NDIS_QOS_CLASSIFICATION_ELEMENT {
 
 <p>If the <b>ConditionSelector</b> member contains a value of NDIS_QOS_CONDITION_NETDIRECT_PORT, the miniport driver must match the <b>ConditionField</b> member against either the source or destination port of a NetworkDirect connection. If the miniport driver accepts a NetDirect connection, the driver must match the <b>ConditionField</b> member against the source port of any packet it sends over that connection. If the miniport driver initiates a NetDirect connection, it must match the <b>ConditionField</b> member against the destination port of any packet it sends over that connection.</p>
 
-<p>For more information on the DCB component, see <a href="NULL">NDIS QoS Architecture for Data Center Bridging</a>.</p>
+<p>For more information on the DCB component, see <a href="netvista.ndis_qos_architecture_for_data_center_bridging">NDIS QoS Architecture for Data Center Bridging</a>.</p>
 
 <p>The following table defines the range of values for the <b>ActionSelector</b> and <b>ActionField</b> members.</p>
 
-<p>The <b>ActionField</b> member contains a 3-bit IEEE 802.1p priority level value. For more information on these priority levels, see <a href="NULL">IEEE 802.1p Priority Levels</a>.</p>
+<p>The <b>ActionField</b> member contains a 3-bit IEEE 802.1p priority level value. For more information on these priority levels, see <a href="netvista.ieee_802_1p_priority_levels">IEEE 802.1p Priority Levels</a>.</p>
 
 <p>Starting with NDIS 6.30, traffic classification actions define an IEEE 802.1p priority level to which the egress packet is assigned. When the network adapter assigns a priority level to an egress packet, the adapter also applies the parameters for the NDIS QoS traffic class associated with the specified priority level. These parameters determine how the network adapter transmits the packet, and include bandwidth allocation  and transmission selection algorithm (TSA). </p>
 
-<p>For more information on NDIS QoS traffic classes, see <a href="NULL">NDIS QoS Traffic Classes</a>.</p>
+<p>For more information on NDIS QoS traffic classes, see <a href="netvista.ndis_qos_traffic_classes">NDIS QoS Traffic Classes</a>.</p>
 
 ## -requirements
 <table>
@@ -244,4 +244,4 @@ typedef struct _NDIS_QOS_CLASSIFICATION_ELEMENT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_QOS_CLASSIFICATION_ELEMENT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_QOS_CLASSIFICATION_ELEMENT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

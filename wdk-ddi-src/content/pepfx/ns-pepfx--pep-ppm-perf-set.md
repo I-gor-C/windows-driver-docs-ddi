@@ -58,31 +58,31 @@ typedef struct _PEP_PPM_PERF_SET {
 ## -struct-fields
 <dl>
 
-### -field <b>MinimumPerformance</b>
+### -field MinimumPerformance
 
 <dd>
 <p>[in] The new minimum performance level in platform-specific units. This member indicates the absolute minimum performance level that the processor can run at.</p>
 </dd>
 
-### -field <b>MaximumPerformance</b>
+### -field MaximumPerformance
 
 <dd>
 <p>[in] The new maximum performance level in platform-specific units. This member indicates the absolute maximum performance level that the processor can run at.</p>
 </dd>
 
-### -field <b>DesiredPerformance</b>
+### -field DesiredPerformance
 
 <dd>
 <p>[in] The new desired performance level in platform-specific units. This member is set to a value in the range <b>MinimumPerformance</b> to <b>MaximumPerformance</b>.</p>
 </dd>
 
-### -field <b>TimeWindow</b>
+### -field TimeWindow
 
 <dd>
 <p>[in] The width, in milliseconds, of the new time window over which the platform must provide the required average performance. If this time window is nonzero, the instantaneous performance provided by the platform does not need to match the desired performance level, and only needs to fall within the constraints specified by the minimum and maximum performance level.</p>
 </dd>
 
-### -field <b>PerformanceTolerance</b>
+### -field PerformanceTolerance
 
 <dd>
 <p>[in] The new performance tolerance in platform-specific units. This member contains the minimum performance level that the platform can deliver and still meet the operating system's performance requirements.</p>

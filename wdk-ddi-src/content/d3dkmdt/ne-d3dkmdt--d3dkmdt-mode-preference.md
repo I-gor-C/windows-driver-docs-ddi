@@ -56,19 +56,19 @@ typedef enum _D3DKMDT_MODE_PREFERENCE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_MP_UNINITIALIZED"></a><a id="d3dkmdt_mp_uninitialized"></a><b>D3DKMDT_MP_UNINITIALIZED</b>
+### -field D3DKMDT_MP_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_MODE_PREFERENCE has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MP_PREFERRED"></a><a id="d3dkmdt_mp_preferred"></a><b>D3DKMDT_MP_PREFERRED</b>
+### -field D3DKMDT_MP_PREFERRED
 
 <dd>
 <p>Indicates that the mode is preferred by the monitor.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MP_NOTPREFERRED"></a><a id="d3dkmdt_mp_notpreferred"></a><b>D3DKMDT_MP_NOTPREFERRED</b>
+### -field D3DKMDT_MP_NOTPREFERRED
 
 <dd>
 <p>Indicates that the mode is not preferred by the monitor.</p>

@@ -57,27 +57,27 @@ typedef struct _D3DDDICB_OFFERALLOCATIONS {
 ## -struct-fields
 <dl>
 
-### -field <b>pResources</b>
+### -field pResources
 
 <dd>
 <p>[in] An array of Direct3D runtime handles to resources to offer.</p>
 <p>If the user-mode driver uses the array specified by <b>HandleList</b> to offer a list of allocations, it must set <b>pResources</b> to <b>NULL</b>. Conversely, if the driver uses the array specified by <b>pResources</b> to offer a list of resources, it must set <b>HandleList</b> to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>HandleList</b>
+### -field HandleList
 
 <dd>
 <p>[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to allocations to offer.</p>
 <p>If resources were created with the <b>D3D10_DDI_BIND_PRESENT</b> flag value set in <i>pCreateResource</i>-&gt;<b>BindFlags</b>, offer the resources by their allocation handles, not by their resource handles.</p>
 </dd>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of items in the <b>pResources</b> or <b>HandleList</b> members, whichever is not <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Priority</b>
+### -field Priority
 
 <dd>
 <p>[in] The priority, of type  <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-offer-priority.md">D3DDDI_OFFER_PRIORITY</a>, with which to offer the allocations for reuse.</p>

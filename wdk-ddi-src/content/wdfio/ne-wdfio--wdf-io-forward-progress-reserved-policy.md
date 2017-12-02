@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_forward_progress_reserved_policy.htm
 old-project: wdf
 ms.assetid: 6d530cf2-de06-4aa3-9f4d-08619906c9ed
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,26 +59,26 @@ typedef enum _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfIoForwardProgressInvalidPolicy"></a><a id="wdfioforwardprogressinvalidpolicy"></a><a id="WDFIOFORWARDPROGRESSINVALIDPOLICY"></a><b>WdfIoForwardProgressInvalidPolicy</b>
+### -field WdfIoForwardProgressInvalidPolicy
 
 <dd></dd>
 
-### -field <a id="WdfIoForwardProgressReservedPolicyAlwaysUseReservedRequest"></a><a id="wdfioforwardprogressreservedpolicyalwaysusereservedrequest"></a><a id="WDFIOFORWARDPROGRESSRESERVEDPOLICYALWAYSUSERESERVEDREQUEST"></a><b>WdfIoForwardProgressReservedPolicyAlwaysUseReservedRequest</b>
+### -field WdfIoForwardProgressReservedPolicyAlwaysUseReservedRequest
 
 <dd>
 <p>In a low-memory situation, the framework always uses a reserved request object, if one is available.</p>
 </dd>
 
-### -field <a id="WdfIoForwardProgressReservedPolicyUseExamine"></a><a id="wdfioforwardprogressreservedpolicyuseexamine"></a><a id="WDFIOFORWARDPROGRESSRESERVEDPOLICYUSEEXAMINE"></a><b>WdfIoForwardProgressReservedPolicyUseExamine</b>
+### -field WdfIoForwardProgressReservedPolicyUseExamine
 
 <dd>
 <p>In a low-memory situation, the framework calls the driver's <a href="..\wdfio\nc-wdfio-evt-wdf-io-wdm-irp-for-forward-progress.md">EvtIoWdmIrpForForwardProgress</a> callback function.</p>
 </dd>
 
-### -field <a id="WdfIoForwardProgressReservedPolicyPagingIO"></a><a id="wdfioforwardprogressreservedpolicypagingio"></a><a id="WDFIOFORWARDPROGRESSRESERVEDPOLICYPAGINGIO"></a><b>WdfIoForwardProgressReservedPolicyPagingIO</b>
+### -field WdfIoForwardProgressReservedPolicyPagingIO
 
 <dd>
-<p>In a low-memory situation, if the <b>Flags</b> member of the I/O request's <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure indicates a paging operation, the framework uses a reserved request object, if one is available. If the I/O request is not a paging operation, the framework completes the I/O request with an error status value.</p>
+<p>In a low-memory situation, if the <b>Flags</b> member of the I/O request's <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure indicates a paging operation, the framework uses a reserved request object, if one is available. If the I/O request is not a paging operation, the framework completes the I/O request with an error status value.</p>
 </dd>
 </dl>
 

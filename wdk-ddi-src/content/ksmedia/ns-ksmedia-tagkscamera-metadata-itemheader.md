@@ -55,13 +55,13 @@ typedef struct tagKSCAMERA_METADATA_ITEMHEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>MetadataId</b>
+### -field MetadataId
 
 <dd>
 <p>The identifier for the metadata item. This can be a standard identifier as defined in the <a href="..\ksmedia\ne-ksmedia-kscamera-metadataid.md">KSCAMERA_MetadataId</a> enumeration or any custom metadata identifier that starts from MetadataId_Custom_Start (0x80000000).</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Set to <b>sizeof(KSCAMERA_METADATA_ITEMHEADER)</b> + the size of the metadata payload that follows.</p>

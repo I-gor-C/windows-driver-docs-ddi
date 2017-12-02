@@ -54,7 +54,7 @@ void __inline KsGateTurnInputOff(
 ## -parameters
 <dl>
 
-### -param <i>Gate</i> [in, optional]
+### -param Gate [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksgate.md">KSGATE</a> structure that is the gate to transition to the OFF state. Must currently have an input in the ON state. May be an AND gate or an OR gate.</p>
@@ -67,7 +67,7 @@ void __inline KsGateTurnInputOff(
 ## -remarks
 <p>It is the minidriver's responsibility to verify that the gate that the minidriver passes to <b>KsGateTurnInputOff</b> has at least one ON input. If you call this function with an OR gate that has no inputs currently in the ON state, the call sets the OR gate into an invalid state. If you call this function with an AND gate that has no inputs currently in the ON state, the result is equivalent to adding another input in the OFF state to <i>Gate</i>.</p>
 
-<p>Furthermore, if turning an input off would cause <i>Gate</i> to transition from the open state to the closed state, this call instead turns off an input to whatever gate is attached to <i>Gate</i>. For more information, see <a href="NULL">Flow Control Gates in AVStream</a>.</p>
+<p>Furthermore, if turning an input off would cause <i>Gate</i> to transition from the open state to the closed state, this call instead turns off an input to whatever gate is attached to <i>Gate</i>. For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.</p>
 
 ## -requirements
 <table>

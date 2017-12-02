@@ -7,7 +7,7 @@ old-location: netvista\rilrfstateparammask.htm
 old-project: netvista
 ms.assetid: 53cd2444-fda7-4e1f-b2d3-23ab20955a0e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILRFSTATEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_RFSTATE_RFSTATE"></a><a id="ril_param_rfstate_rfstate"></a><b>RIL_PARAM_RFSTATE_RFSTATE</b>
+### -field RIL_PARAM_RFSTATE_RFSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_RFSTATE_RFDATASIZE"></a><a id="ril_param_rfstate_rfdatasize"></a><b>RIL_PARAM_RFSTATE_RFDATASIZE</b>
+### -field RIL_PARAM_RFSTATE_RFDATASIZE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_RFSTATE_RFDATA"></a><a id="ril_param_rfstate_rfdata"></a><b>RIL_PARAM_RFSTATE_RFDATA</b>
+### -field RIL_PARAM_RFSTATE_RFDATA
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_RFSTATE_ALL"></a><a id="ril_param_rfstate_all"></a><b>RIL_PARAM_RFSTATE_ALL</b>
+### -field RIL_PARAM_RFSTATE_ALL
 
 <dd></dd>
 </dl>

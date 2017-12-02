@@ -57,13 +57,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION {
 ## -struct-fields
 <dl>
 
-### -field <b>Parameters</b>
+### -field Parameters
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-configure-input.md">D3D11_1DDI_AUTHENTICATED_CONFIGURE_INPUT</a> structure that contains the command GUID and other data. </p>
 </dd>
 
-### -field <b>DecodeHandle</b>
+### -field DecodeHandle
 
 <dd>
 <p>A handle to the decoder device.
@@ -71,13 +71,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION {
 </p>
 </dd>
 
-### -field <b>CryptoSessionHandle</b>
+### -field CryptoSessionHandle
 
 <dd>
 <p>A handle to the cryptographic session.</p>
 </dd>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>A handle to the Direct3D device.</p>

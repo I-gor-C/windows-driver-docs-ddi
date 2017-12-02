@@ -55,13 +55,13 @@ PKSPIN KsFilterGetFirstChildPin(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure to query for instantiated pins.</p>
 </dd>
 
-### -param <i>PinId</i> [in]
+### -param PinId [in]
 
 <dd>
 <p>The numeric ID of the pin type for which to find the first instantiated member.</p>
@@ -72,7 +72,7 @@ PKSPIN KsFilterGetFirstChildPin(
 <p><b>KsFilterGetFirstChildPin</b> returns a pointer to the first instantiated <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure of type <i>PinID</i> on the specified filter.</p>
 
 ## -remarks
-<p>Note that the object hierarchy is guaranteed stable only while the appropriate mutex is held, in this case the filter control mutex. For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>Note that the object hierarchy is guaranteed stable only while the appropriate mutex is held, in this case the filter control mutex. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 ## -requirements
 <table>

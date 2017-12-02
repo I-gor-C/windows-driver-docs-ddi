@@ -56,13 +56,13 @@ NTSTATUS RtlStringFromGUID(
 ## -parameters
 <dl>
 
-### -param <i>Guid</i> [in]
+### -param Guid [in]
 
 <dd>
 <p>Specifies the binary-format GUID to convert. </p>
 </dd>
 
-### -param <i>GuidString</i> [out]
+### -param GuidString [out]
 
 <dd>
 <p>Pointer to a caller-supplied variable in which a pointer to the converted GUID string is returned. <b>RtlStringFromGUID</b> allocates the buffer space for the string, which the caller must free by calling <b>RtlFreeUnicodeString</b>. </p>

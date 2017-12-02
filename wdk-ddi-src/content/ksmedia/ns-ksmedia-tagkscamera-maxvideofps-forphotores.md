@@ -59,37 +59,37 @@ typedef struct _KSCAMERA_MAXVIDEOFPS_FORPHOTORES {
 ## -struct-fields
 <dl>
 
-### -field <b>PhotoResWidth</b>
+### -field PhotoResWidth
 
 <dd>
 <p>The photo resolution width in pixels.</p>
 </dd>
 
-### -field <b>PhotoResHeight</b>
+### -field PhotoResHeight
 
 <dd>
 <p>The photo resolution height in pixels.</p>
 </dd>
 
-### -field <b>PreviewFPSNum</b>
+### -field PreviewFPSNum
 
 <dd>
 <p>The numerator value of the preview frame rate.</p>
 </dd>
 
-### -field <b>PreviewFPSDenom</b>
+### -field PreviewFPSDenom
 
 <dd>
 <p>The denominator value of the preview frame rate.</p>
 </dd>
 
-### -field <b>CaptureFPSNum</b>
+### -field CaptureFPSNum
 
 <dd>
 <p>The numerator value of the capture frame rate.</p>
 </dd>
 
-### -field <b>CaptureFPSDenom</b>
+### -field CaptureFPSDenom
 
 <dd>
 <p>The denominator value of the capture frame rate.</p>

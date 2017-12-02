@@ -59,38 +59,38 @@ typedef struct _D3DDDIBOX {
 ## -struct-fields
 <dl>
 
-### -field <b>Left</b>
+### -field Left
 
 <dd>
 <p>[in] The position of the left side of the box on the x-axis.</p>
 </dd>
 
-### -field <b>Top</b>
+### -field Top
 
 <dd>
 <p>[in] The position of the top of the box on the y-axis.</p>
 </dd>
 
-### -field <b>Right</b>
+### -field Right
 
 <dd>
 <p>[in] The position of the right side of the box on the x-axis.</p>
 </dd>
 
-### -field <b>Bottom</b>
+### -field Bottom
 
 <dd>
 <p>[in] The position of the bottom of the box on the y-axis.</p>
 </dd>
 
-### -field <b>Front</b>
+### -field Front
 
 <dd>
 <p>
       [in] The position of the front of the box on the z-axis.</p>
 </dd>
 
-### -field <b>Back</b>
+### -field Back
 
 <dd>
 <p>[in] The position of the back of the box on the z-axis.</p>

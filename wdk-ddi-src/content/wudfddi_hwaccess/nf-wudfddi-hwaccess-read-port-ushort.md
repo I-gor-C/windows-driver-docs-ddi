@@ -7,7 +7,7 @@ old-location: wdf\read_port_ushort.htm
 old-project: wdf
 ms.assetid: 522C2745-A758-4C58-9891-BD2A70DBE498
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: READ_PORT_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ USHORT READ_PORT_USHORT(
 ## -parameters
 <dl>
 
-### -param <i>pDevice</i> [in]
+### -param pDevice [in]
 
 <dd>
 <p>Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.</p>
 </dd>
 
-### -param <i>Port</i> [in]
+### -param Port [in]
 
 <dd>
 <p>Specifies the port address, which must be a mapped memory range in I/O space.</p>

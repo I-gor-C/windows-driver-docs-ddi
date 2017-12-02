@@ -60,43 +60,43 @@ typedef enum _DXVA_VideoLighting {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVA_VideoLightingShift"></a><a id="dxva_videolightingshift"></a><a id="DXVA_VIDEOLIGHTINGSHIFT"></a><b>DXVA_VideoLightingShift</b>
+### -field DXVA_VideoLightingShift
 
 <dd>
 <p>Specifies to shift bits by 18 positions (DXVA_ExtColorData_ShiftBase + 10, or 8 + 10).</p>
 </dd>
 
-### -field <a id="DXVA_VideoLightingMask"></a><a id="dxva_videolightingmask"></a><a id="DXVA_VIDEOLIGHTINGMASK"></a><b>DXVA_VideoLightingMask</b>
+### -field DXVA_VideoLightingMask
 
 <dd>
 <p>Specifies the video lighting mask. 4 (0x003C0000) bits of a DWORD can be used to specify video lighting.</p>
 </dd>
 
-### -field <a id="DXVA_VideoLighting_Unknown"></a><a id="dxva_videolighting_unknown"></a><a id="DXVA_VIDEOLIGHTING_UNKNOWN"></a><b>DXVA_VideoLighting_Unknown</b>
+### -field DXVA_VideoLighting_Unknown
 
 <dd>
 <p>Specifies that the video lighting condition is not specified. The default is dim.</p>
 </dd>
 
-### -field <a id="DXVA_VideoLighting_bright"></a><a id="dxva_videolighting_bright"></a><a id="DXVA_VIDEOLIGHTING_BRIGHT"></a><b>DXVA_VideoLighting_bright</b>
+### -field DXVA_VideoLighting_bright
 
 <dd>
 <p>Specifies bright light for viewing video (for example, outside lighting conditions).</p>
 </dd>
 
-### -field <a id="DXVA_VideoLighting_office"></a><a id="dxva_videolighting_office"></a><a id="DXVA_VIDEOLIGHTING_OFFICE"></a><b>DXVA_VideoLighting_office</b>
+### -field DXVA_VideoLighting_office
 
 <dd>
 <p>Specifies a medium brightness light for viewing video (for example, lighting conditions in home offices).</p>
 </dd>
 
-### -field <a id="DXVA_VideoLighting_dim"></a><a id="dxva_videolighting_dim"></a><a id="DXVA_VIDEOLIGHTING_DIM"></a><b>DXVA_VideoLighting_dim</b>
+### -field DXVA_VideoLighting_dim
 
 <dd>
 <p>Specifies a dim light for viewing video (for example, low-level lighting in a living room while watching television). </p>
 </dd>
 
-### -field <a id="DXVA_VideoLighting_dark"></a><a id="dxva_videolighting_dark"></a><a id="DXVA_VIDEOLIGHTING_DARK"></a><b>DXVA_VideoLighting_dark</b>
+### -field DXVA_VideoLighting_dark
 
 <dd>
 <p>Specifies near darkness for viewing video (for example, movie-theatre lighting).</p>

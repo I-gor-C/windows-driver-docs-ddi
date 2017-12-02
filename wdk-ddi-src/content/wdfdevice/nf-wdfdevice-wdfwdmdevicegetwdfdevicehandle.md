@@ -7,7 +7,7 @@ old-location: wdf\wdfwdmdevicegetwdfdevicehandle.htm
 old-project: wdf
 ms.assetid: 8083af10-1b35-4600-b409-e895d35f7ccc
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfWdmDeviceGetWdfDeviceHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ WDFDEVICE WdfWdmDeviceGetWdfDeviceHandle(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to a WDM <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that the calling driver created.</p>
@@ -137,4 +137,4 @@ WDFDEVICE WdfWdmDeviceGetWdfDeviceHandle(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfWdmDeviceGetWdfDeviceHandle method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfWdmDeviceGetWdfDeviceHandle method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

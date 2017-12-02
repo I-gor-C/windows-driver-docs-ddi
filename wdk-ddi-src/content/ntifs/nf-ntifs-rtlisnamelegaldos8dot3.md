@@ -7,7 +7,7 @@ old-location: ifsk\rtlisnamelegaldos8dot3.htm
 old-project: ifsk
 ms.assetid: 27aa6bd1-c4e2-427e-a9e4-383d66fe2d61
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlIsNameLegalDOS8Dot3
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ BOOLEAN RtlIsNameLegalDOS8Dot3(
 ## -parameters
 <dl>
 
-### -param <i>Name</i> [in]
+### -param Name [in]
 
 <dd>
 <p>Pointer to a Unicode string containing the file name. </p>
 </dd>
 
-### -param <i>OemName</i> [in, out]
+### -param OemName [in, out]
 
 <dd>
 <p>Pointer to an optional caller-allocated buffer that receives a counted OEM string corresponding to the Unicode string at <i>Name</i>. </p>
 </dd>
 
-### -param <i>NameContainsSpaces</i> [out, optional]
+### -param NameContainsSpaces [out, optional]
 
 <dd>
 <p>Pointer to an optional BOOLEAN value that receives <b>TRUE</b> if the string at <i>Name</i> contains embedded spaces, <b>FALSE</b> otherwise. This value is valid only if <b>RtlIsNameLegalDOS8Dot3</b> returns <b>TRUE</b>. </p>
@@ -151,4 +151,4 @@ BOOLEAN RtlIsNameLegalDOS8Dot3(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlIsNameLegalDOS8Dot3 routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlIsNameLegalDOS8Dot3 routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

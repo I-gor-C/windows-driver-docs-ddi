@@ -7,7 +7,7 @@ old-location: wdf\wdfdriveropenparametersregistrykey.htm
 old-project: wdf
 ms.assetid: e0f22096-3d82-4e1c-9398-d5e441fbb473
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDriverOpenParametersRegistryKey
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ NTSTATUS WdfDriverOpenParametersRegistryKey(
 ## -parameters
 <dl>
 
-### -param <i>Driver</i> [in]
+### -param Driver [in]
 
 <dd>
 <p>A handle to the driver's framework driver object that the driver obtained from a previous call to <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a> or <a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>-typed value that specifies an access mask for the <b>Parameters</b> registry key.</p>
@@ -74,13 +74,13 @@ NTSTATUS WdfDriverOpenParametersRegistryKey(
 <p>As a best practice, ask for only the types of access that your driver needs.</p>
 </dd>
 
-### -param <i>KeyAttributes</i> [in, optional]
+### -param KeyAttributes [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the framework registry-key object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.</p>
 </dd>
 
-### -param <i>Key</i> [out]
+### -param Key [out]
 
 <dd>
 <p>A pointer to a location that receives a handle to a framework registry-key object.</p>
@@ -200,4 +200,4 @@ NTSTATUS WdfDriverOpenParametersRegistryKey(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDriverOpenParametersRegistryKey method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDriverOpenParametersRegistryKey method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

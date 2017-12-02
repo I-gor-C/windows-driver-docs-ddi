@@ -59,37 +59,37 @@ typedef struct _TRACK_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Control</b>
+### -field Control
 
 <dd>
 <p>Indicates the attributes of the track. For information about the permissible values for this member, see specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS). </p>
 </dd>
 
-### -field <b>Adr</b>
+### -field Adr
 
 <dd>
 <p>Indicates the type of information encoded in the Q subchannel of the track where this table of contents entry was found. For information about the permissible values for this member, see specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS). </p>
 </dd>
 
-### -field <b>TrackNumber</b>
+### -field TrackNumber
 
 <dd>
 <p>Indicates the number of the track. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Address</b>
+### -field Address
 
 <dd>
 <p>Indicates the starting address of the track. </p>

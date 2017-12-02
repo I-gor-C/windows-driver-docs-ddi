@@ -7,7 +7,7 @@ old-location: sensors\evt_sensor_driver_enable_wake.htm
 old-project: sensors
 ms.assetid: 969E08D1-0D4A-4FED-9722-4EDA067C522C
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorDriver, OnSetProperties, ISensorDriver::OnSetProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ NTSTATUS CALLBACK EVT_SENSOR_DRIVER_ENABLE_WAKE(
 ## -parameters
 <dl>
 
-### -param <i>Sensor</i> [in]
+### -param Sensor [in]
 
 <dd>
 <p>A reference to the sensor object</p>

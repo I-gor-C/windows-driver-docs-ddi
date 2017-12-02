@@ -60,32 +60,32 @@ NTSTATUS DxgkCbExcludeAdapterAccess(
 ## -parameters
 <dl>
 
-### -param <i>DeviceHandle</i> [in]
+### -param DeviceHandle [in]
 
 <dd>
 <p>A handle that represents a display adapter. The display miniport driver obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
 </dd>
 
-### -param <i>Attributes</i> [in]
+### -param Attributes [in]
 
 <dd>
 <p>A value that specifies video memory operations. This parameter can be any combination of the following bit flag values, except that DXGK_EXCLUDE_EVICT_ALL and DXGK_EXCLUDE_CALL_SYNCHRONOUS are mutually exclusive. These values are defined in <i>Dispmprt.h</i>.</p>
 <p></p>
 <dl>
 
-### -param <a id="DXGK_EXCLUDE_EVICT_ALL"></a><a id="dxgk_exclude_evict_all"></a>DXGK_EXCLUDE_EVICT_ALL
+### -param DXGK_EXCLUDE_EVICT_ALL
 
 <dd>
 <p>All video memory in the adapter is copied to system memory; this is an expensive operation. If the <i>Attributes</i> parameter is not set to this value, access to locked surfaces in system memory is suspended.</p>
 </dd>
 
-### -param <a id="DXGK_EXCLUDE_CALL_SYNCHRONOUS"></a><a id="dxgk_exclude_call_synchronous"></a>DXGK_EXCLUDE_CALL_SYNCHRONOUS
+### -param DXGK_EXCLUDE_CALL_SYNCHRONOUS
 
 <dd>
 <p>Executes the protected <a href="..\dispmprt\nc-dispmprt-dxgkddi-protected-callback.md">DxgkProtectedCallback</a> driver callback routine in the same thread context as the caller. The caller must be calling from a <a href="https://msdn.microsoft.com/2b7c1eae-6527-469e-a2fa-74d2a1246bd3">second level</a> or <a href="https://msdn.microsoft.com/780d37d9-40c6-4737-9042-473810868227">third level</a> synchronized DDI call. Otherwise the <b>DxgkCbExcludeAdapterAccess</b> function will fail.</p>
 </dd>
 
-### -param <a id="DXGK_EXCLUDE_BRIDGE_ACCESS"></a><a id="dxgk_exclude_bridge_access"></a>DXGK_EXCLUDE_BRIDGE_ACCESS
+### -param DXGK_EXCLUDE_BRIDGE_ACCESS
 
 <dd>
 <p>Protects access to the PCI Express (PCIe) root port when the driver needs to access the root port configuration space. Set the <i>Attributes</i> parameter to this value before calling <a href="..\dispmprt\nc-dispmprt-dxgkcb-read-device-space.md">DxgkCbReadDeviceSpace</a> or <a href="..\dispmprt\nc-dispmprt-dxgkcb-write-device-space.md">DxgkCbWriteDeviceSpace</a> functions with the <i>DataType</i> parameter set to DXGK_WHICHSPACE_BRIDGE.</p>
@@ -93,13 +93,13 @@ NTSTATUS DxgkCbExcludeAdapterAccess(
 </dl>
 </dd>
 
-### -param <i>DxgkProtectedCallback</i> [in]
+### -param DxgkProtectedCallback [in]
 
 <dd>
 <p>The callback routine to be called back when all access to the adapter has been halted.</p>
 </dd>
 
-### -param <i>ProtectedCallbackContext</i> [in]
+### -param ProtectedCallbackContext [in]
 
 <dd>
 <p>A pointer to the value to pass to the <i>ProtectedCallbackContext</i> parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkddi-protected-callback.md">DxgkProtectedCallback</a> callback routine.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ril_setuiccservicestate.htm
 old-project: netvista
 ms.assetid: 96b17a3f-1e69-47f5-aa09-59abfb5c1505
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SetUiccServiceState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,27 +62,27 @@ HRESULT  RIL_SetUiccServiceState(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>hUiccApp</i> 
+### -param hUiccApp 
 
 <dd></dd>
 
-### -param <i>dwService</i> 
+### -param dwService 
 
 <dd></dd>
 
-### -param <i>lpLockCredential</i> 
+### -param lpLockCredential 
 
 <dd></dd>
 
-### -param <i>fEnable</i> 
+### -param fEnable 
 
 <dd></dd>
 </dl>

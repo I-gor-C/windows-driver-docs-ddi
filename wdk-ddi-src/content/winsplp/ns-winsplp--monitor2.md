@@ -147,121 +147,121 @@ typedef struct _MONITOR2 {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Specifies the size, in bytes, of the MONITOR2 structure.</p>
 </dd>
 
-### -field <b>pfnEnumPorts</b>
+### -field pfnEnumPorts
 
 <dd>
 <p>Pointer to the print monitor's <a href="print.enumports">EnumPorts</a> function. (Port monitors only.)</p>
 </dd>
 
-### -field <b>pfnOpenPort</b>
+### -field pfnOpenPort
 
 <dd>
 <p>Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-openport.md">OpenPort</a> function.</p>
 </dd>
 
-### -field <b>pfnOpenPortEx</b>
+### -field pfnOpenPortEx
 
 <dd>
 <p>Pointer to the print monitor's <a href="print.openportex">OpenPortEx</a> function. (Language monitors only.)</p>
 </dd>
 
-### -field <b>pfnStartDocPort</b>
+### -field pfnStartDocPort
 
 <dd>
 <p>Pointer to the print monitor's <a href="print.startdocport">StartDocPort</a> function.</p>
 </dd>
 
-### -field <b>pfnWritePort</b>
+### -field pfnWritePort
 
 <dd>
 <p>Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-writeport.md">WritePort</a> function.</p>
 </dd>
 
-### -field <b>pfnReadPort</b>
+### -field pfnReadPort
 
 <dd>
 <p>Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-readport.md">ReadPort</a> function.</p>
 </dd>
 
-### -field <b>pfnEndDocPort</b>
+### -field pfnEndDocPort
 
 <dd>
 <p>Pointer to the print monitor's <a href="print.enddocport">EndDocPort</a> function.</p>
 </dd>
 
-### -field <b>pfnClosePort</b>
+### -field pfnClosePort
 
 <dd>
 <p>Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-closeport.md">ClosePort</a> function.</p>
 </dd>
 
-### -field <b>pfnAddPort</b>
+### -field pfnAddPort
 
 <dd>
 <p>(Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="print.addport">AddPort</a> function.</p>
 </dd>
 
-### -field <b>pfnAddPortEx</b>
+### -field pfnAddPortEx
 
 <dd>
 <p>(Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="print.addportex">AddPortEx</a> function. (Port monitors only.)</p>
 </dd>
 
-### -field <b>pfnConfigurePort</b>
+### -field pfnConfigurePort
 
 <dd>
 <p>(Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="print.configureport">ConfigurePort</a> function.</p>
 </dd>
 
-### -field <b>pfnDeletePort</b>
+### -field pfnDeletePort
 
 <dd>
 <p>(Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="print.deleteport">DeletePort</a> function.</p>
 </dd>
 
-### -field <b>pfnGetPrinterDataFromPort</b>
+### -field pfnGetPrinterDataFromPort
 
 <dd>
 <p>Pointer to the print monitor's <a href="print.getprinterdatafromport">GetPrinterDataFromPort</a> function.</p>
 </dd>
 
-### -field <b>pfnSetPortTimeOuts</b>
+### -field pfnSetPortTimeOuts
 
 <dd>
 <p>Pointer to the print monitor's <a href="print.setporttimeouts">SetPortTimeOuts</a> function. (Port monitors only.)</p>
 </dd>
 
-### -field <b>pfnXcvOpenPort</b>
+### -field pfnXcvOpenPort
 
 <dd>
 <p>Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-xcvopenport.md">XcvOpenPort</a> function. (Port monitors only.)</p>
 </dd>
 
-### -field <b>pfnXcvDataPort</b>
+### -field pfnXcvDataPort
 
 <dd>
 <p>Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-xcvdataport.md">XcvDataPort</a> function. (Port monitors only.)</p>
 </dd>
 
-### -field <b>pfnXcvClosePort</b>
+### -field pfnXcvClosePort
 
 <dd>
 <p>Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-xcvcloseport.md">XcvClosePort</a> function. (Port monitors only.)</p>
 </dd>
 
-### -field <b>pfnShutdown</b>
+### -field pfnShutdown
 
 <dd>
 <p>Pointer to the print monitor's <a href="print.shutdown">Shutdown</a> function.</p>
 </dd>
 
-### -field <b>pfnSendRecvBidiDataFromPort</b>
+### -field pfnSendRecvBidiDataFromPort
 
 <dd>
 <p>Pointer to the print monitor's <a href="print.sendrecvbididatafromport">SendRecvBidiDataFromPort</a> function.</p>

@@ -55,7 +55,7 @@ UCHAR READ_PORT_UCHAR(
 ## -parameters
 <dl>
 
-### -param <i>Port</i> [in]
+### -param Port [in]
 
 <dd>
 <p>Specifies the port address, which must be a mapped memory range in I/O space. </p>

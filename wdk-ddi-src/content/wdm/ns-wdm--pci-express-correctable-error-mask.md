@@ -66,61 +66,61 @@ typedef union _PCI_EXPRESS_CORRECTABLE_ERROR_MASK {
 ## -struct-fields
 <dl>
 
-### -field <b>ReceiverError</b>
+### -field ReceiverError
 
 <dd>
 <p>A single bit that indicates that the reporting of receiver errors is masked.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>BadTLP</b>
+### -field BadTLP
 
 <dd>
 <p>A single bit that indicates that the reporting of bad transaction layer packets (TLPs) is masked.</p>
 </dd>
 
-### -field <b>BadDLLP</b>
+### -field BadDLLP
 
 <dd>
 <p>A single bit that indicates that the reporting of bad data link layer packets (DLLPs) is masked.</p>
 </dd>
 
-### -field <b>ReplayNumRollover</b>
+### -field ReplayNumRollover
 
 <dd>
 <p>A single bit that indicates that the reporting of rollovers of the counter that counts the number of times the retry buffer has been re-transmitted is masked.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>ReplayTimerTimeout</b>
+### -field ReplayTimerTimeout
 
 <dd>
 <p>A single bit that indicates that the reporting of timeouts of the replay timer is masked.</p>
 </dd>
 
-### -field <b>AdvisoryNonFatalError</b>
+### -field AdvisoryNonFatalError
 
 <dd>
 <p>A single bit that indicates that the reporting of advisory non-fatal errors is masked.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_CORRECTABLE_ERROR_MASK structure.</p>

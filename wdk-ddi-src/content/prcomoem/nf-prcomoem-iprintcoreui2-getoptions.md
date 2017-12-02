@@ -61,43 +61,43 @@ HRESULT GetOptions(
 ## -parameters
 <dl>
 
-### -param <i>poemuiobj</i> [in]
+### -param poemuiobj [in]
 
 <dd>
 <p>Pointer to the current context, an <a href="..\printoem\ns-printoem--oemuiobj.md">OEMUIOBJ</a> structure.</p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>Is reserved and must be set to zero.</p>
 </dd>
 
-### -param <i>pmszFeaturesRequested</i> [in]
+### -param pmszFeaturesRequested [in]
 
 <dd>
 <p>Pointer to caller-supplied buffer containing a list of feature keywords (in MULTI_SZ format) whose settings are requested. Set this parameter to <b>NULL</b> to obtain settings for all features.</p>
 </dd>
 
-### -param <i>cbIn</i> [in]
+### -param cbIn [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer pointed to by <i>pmszFeaturesRequested</i>. The size includes the last MULTI_SZ null character.</p>
 </dd>
 
-### -param <i>pmszFeatureOptionBuf</i> [out]
+### -param pmszFeatureOptionBuf [out]
 
 <dd>
 <p>Pointer to a caller-supplied buffer that receives a list of feature/option keyword pairs (in MULTI_SZ format) obtained from the driver settings. Each feature/option keyword pair contains the feature keyword name, a null character, the option keyword name, and another null character. The list is terminated by two null characters.</p>
 </dd>
 
-### -param <i>cbSize</i> [in]
+### -param cbSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer pointed to by <i>pmszFeatureOptionBuf</i>.</p>
 </dd>
 
-### -param <i>pcbNeeded</i> [out]
+### -param pcbNeeded [out]
 
 <dd>
 <p>Pointer to a memory location that receives the actual size, in bytes, of the feature/option keyword pairs.</p>
@@ -124,13 +124,13 @@ HRESULT GetOptions(
 <p> </p>
 
 ## -remarks
-<p>This method is supported only for Windows XP Pscript5 UI plug-ins that fully replace the core driver's standard UI pages, and is supported only during the UI plug-in's <a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a> and <a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a> functions, and their property sheet callback routines. See <a href="NULL">Replacing Driver-Supplied Property Sheet Pages</a> for more information.</p>
+<p>This method is supported only for Windows XP Pscript5 UI plug-ins that fully replace the core driver's standard UI pages, and is supported only during the UI plug-in's <a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a> and <a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a> functions, and their property sheet callback routines. See <a href="https://msdn.microsoft.com/b7f79841-f82c-4a60-9c2f-58772a65a5eb">Replacing Driver-Supplied Property Sheet Pages</a> for more information.</p>
 
-<p>If a requested feature keyword is not recognized, or recognized but not supported in the current sticky mode (<a href="wdkgloss.d#wdkgloss.document-sticky#wdkgloss.document-sticky"><i>document-sticky</i></a> or <a href="wdkgloss.p#wdkgloss.printer-sticky#wdkgloss.printer-sticky"><i>printer-sticky</i></a> -- see <a href="NULL">Replacing Driver-Supplied Property Sheet Pages</a>), or the feature keyword is recognized but there is currently no option selection for it, the feature is simply ignored and the feature/option keyword pair is not placed in the output buffer.</p>
+<p>If a requested feature keyword is not recognized, or recognized but not supported in the current sticky mode (<a href="wdkgloss.d#wdkgloss.document-sticky#wdkgloss.document-sticky"><i>document-sticky</i></a> or <a href="wdkgloss.p#wdkgloss.printer-sticky#wdkgloss.printer-sticky"><i>printer-sticky</i></a> -- see <a href="https://msdn.microsoft.com/b7f79841-f82c-4a60-9c2f-58772a65a5eb">Replacing Driver-Supplied Property Sheet Pages</a>), or the feature keyword is recognized but there is currently no option selection for it, the feature is simply ignored and the feature/option keyword pair is not placed in the output buffer.</p>
 
 <p>To reduce the need to make two calls per data access, pass the method an output buffer of a fixed size (1 KB, for example), and then check the function return value. If the method returns S_OK, the buffer already contains the data of interest. If the method returns E_OUTOFMEMORY, the value in *<i>pcbNeeded</i> is the buffer size needed to hold the data of interest. The caller should then allocate a buffer of that larger size and proceed with a second call to the method.</p>
 
-<p>For more information, see <a href="NULL">Using GetOptions and SetOptions</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/c8b5c235-0b74-47c8-b6ba-eba810a8467b">Using GetOptions and SetOptions</a>.</p>
 
 ## -requirements
 <table>

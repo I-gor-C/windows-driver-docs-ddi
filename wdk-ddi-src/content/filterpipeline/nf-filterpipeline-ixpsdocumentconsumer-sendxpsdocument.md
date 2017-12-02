@@ -54,7 +54,7 @@ HRESULT SendXpsDocument(
 ## -parameters
 <dl>
 
-### -param <i>pIXpsDocument</i> [in]
+### -param pIXpsDocument [in]
 
 <dd>
 <p>A pointer to the XPS document object to send.</p>

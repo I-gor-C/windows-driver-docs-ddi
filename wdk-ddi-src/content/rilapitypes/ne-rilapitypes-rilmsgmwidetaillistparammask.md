@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwidetaillistparammask_2.htm
 old-project: netvista
 ms.assetid: 1b0777d4-8977-4dd2-a728-65f0e045efc8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILMSGMWIDETAILLISTPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_MWIDETAIL_REFNUM"></a><a id="ril_param_mwidetail_refnum"></a><b>RIL_PARAM_MWIDETAIL_REFNUM</b>
+### -field RIL_PARAM_MWIDETAIL_REFNUM
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MWIDETAIL_NUMDETAILITEMS"></a><a id="ril_param_mwidetail_numdetailitems"></a><b>RIL_PARAM_MWIDETAIL_NUMDETAILITEMS</b>
+### -field RIL_PARAM_MWIDETAIL_NUMDETAILITEMS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MWIDETAIL_DETAILITEMS"></a><a id="ril_param_mwidetail_detailitems"></a><b>RIL_PARAM_MWIDETAIL_DETAILITEMS</b>
+### -field RIL_PARAM_MWIDETAIL_DETAILITEMS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MWIDETAIL_ALL"></a><a id="ril_param_mwidetail_all"></a><b>RIL_PARAM_MWIDETAIL_ALL</b>
+### -field RIL_PARAM_MWIDETAIL_ALL
 
 <dd></dd>
 </dl>

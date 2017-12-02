@@ -58,13 +58,13 @@ VOID APIENTRY QueryBegin(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hQuery</i> [in]
+### -param hQuery [in]
 
 <dd>
 <p> A handle to the query object to begin.</p>

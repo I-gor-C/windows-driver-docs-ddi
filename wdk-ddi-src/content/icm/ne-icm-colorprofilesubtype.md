@@ -60,43 +60,43 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="CPST_PERCEPTUAL"></a><a id="cpst_perceptual"></a><b>CPST_PERCEPTUAL</b>
+### -field CPST_PERCEPTUAL
 
 <dd>
 <p>Specifies a perceptual rendering intent for WCS gamut map model profiles (GMMPs).</p>
 </dd>
 
-### -field <a id="CPST_RELATIVE_COLORIMETRIC"></a><a id="cpst_relative_colorimetric"></a><b>CPST_RELATIVE_COLORIMETRIC</b>
+### -field CPST_RELATIVE_COLORIMETRIC
 
 <dd>
 <p>Specifies a relative colorimetric rendering intent for WCS GMMPs.</p>
 </dd>
 
-### -field <a id="CPST_SATURATION"></a><a id="cpst_saturation"></a><b>CPST_SATURATION</b>
+### -field CPST_SATURATION
 
 <dd>
 <p>Specifies a saturation rendering intent for WCS GMMPs.</p>
 </dd>
 
-### -field <a id="CPST_ABSOLUTE_COLORIMETRIC"></a><a id="cpst_absolute_colorimetric"></a><b>CPST_ABSOLUTE_COLORIMETRIC</b>
+### -field CPST_ABSOLUTE_COLORIMETRIC
 
 <dd>
 <p>Specifies an absolute colorimetric rendering intent for WCS GMMPs.</p>
 </dd>
 
-### -field <a id="CPST_NONE"></a><a id="cpst_none"></a><b>CPST_NONE</b>
+### -field CPST_NONE
 
 <dd>
 <p>Specifies that the color profile subtype is not applicable to the selected color profile type.</p>
 </dd>
 
-### -field <a id="CPST_RGB_WORKING_SPACE"></a><a id="cpst_rgb_working_space"></a><b>CPST_RGB_WORKING_SPACE</b>
+### -field CPST_RGB_WORKING_SPACE
 
 <dd>
 <p>Specifies the RGB color working space for ICC profiles or WCS device model profiles (DMPs).</p>
 </dd>
 
-### -field <a id="CPST_CUSTOM_WORKING_SPACE"></a><a id="cpst_custom_working_space"></a><b>CPST_CUSTOM_WORKING_SPACE</b>
+### -field CPST_CUSTOM_WORKING_SPACE
 
 <dd>
 <p>Specifies a custom color working space.</p>

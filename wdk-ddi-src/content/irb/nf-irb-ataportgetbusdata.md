@@ -57,25 +57,25 @@ ULONG AtaPortGetBusData(
 ## -parameters
 <dl>
 
-### -param <i>ControllerExtension</i> [in]
+### -param ControllerExtension [in]
 
 <dd>
 <p>A pointer to the HBA controller extension.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to the buffer where the retrieved data is returned. </p>
 </dd>
 
-### -param <i>ConfigDataOffset</i> [in]
+### -param ConfigDataOffset [in]
 
 <dd>
 <p>Specifies an offset into the device's PCI bus configuration space where the return value is found.</p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>Specifies the length, in bytes, of the buffer.</p>

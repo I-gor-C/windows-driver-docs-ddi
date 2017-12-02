@@ -57,7 +57,7 @@ PVOID ExAllocatePoolWithQuotaTag(
 ## -parameters
 <dl>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>Specifies the type of pool memory to allocate. For a description of the available pool memory types, see <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a>.</p>
@@ -65,13 +65,13 @@ PVOID ExAllocatePoolWithQuotaTag(
 <p>Similarly, you can modify the <i>PoolType</i> value by bitwise-ORing this value with the POOL_COLD_ALLOCATION flag as a hint to the kernel to allocate the memory from pages that are likely to be paged out quickly. To reduce the amount of resident pool memory as much as possible, you should not reference these allocations frequently. The POOL_COLD_ALLOCATION flag is only advisory and is supported in Windows XP and later versions of the Windows operating system.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>Specifies the number of bytes to allocate.</p>
 </dd>
 
-### -param <i>Tag</i> [in]
+### -param Tag [in]
 
 <dd>
 <p>Specifies the pool tag for the allocated memory. For more information, see the <i>Tag</i> parameter of <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>.</p>
@@ -90,7 +90,7 @@ PVOID ExAllocatePoolWithQuotaTag(
 
 <p>The system associates the pool tag with the allocated memory. Programming tools, such as WinDbg, can display the pool tag associated with each allocated buffer. The value of <i>Tag</i> is normally displayed in reversed order. For example, if a caller passes 'Fred' as a <i>Tag</i>, it would appear as 'derF' if the pool is dumped or when tracking pool usage in the debugger.</p>
 
-<p>The allocated buffer can be freed with either <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> or <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>.</p>
+<p>The allocated buffer can be freed with either <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> or <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>.</p>
 
 <p>The system automatically sets certain standard event objects when the amount of pool (paged or nonpaged) is high or low. Drivers can wait for these events to tune their pool usage. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563847">Standard Event Objects</a>.</p>
 
@@ -172,7 +172,7 @@ PVOID ExAllocatePoolWithQuotaTag(
 <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>

@@ -59,13 +59,13 @@ BOOLEAN I2CStop(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's per-adapter device extension.</p>
 </dd>
 
-### -param <i>I2CCallbacks</i> [in]
+### -param I2CCallbacks [in]
 
 <dd>
 <p>Pointer to an <a href="..\video\ns-video--i2c-callbacks.md">I2C_CALLBACKS</a> structure, containing pointers to miniport driver-defined functions that read and write data and clock lines.</p>

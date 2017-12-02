@@ -55,13 +55,13 @@ NTSTATUS KsValidateAllocatorCreateRequest(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP with the IRP_MJ_CREATE request being validated.</p>
 </dd>
 
-### -param <i>AllocatorFraming</i> [out]
+### -param AllocatorFraming [out]
 
 <dd>
 <p>Caller-defined pointer that on successful completion contains an address to the framing structure supplied with the request.</p>

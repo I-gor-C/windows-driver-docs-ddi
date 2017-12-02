@@ -58,7 +58,7 @@ typedef struct _SDP_NODE_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Link</b>
+### -field Link
 
 <dd>
 <p>A linked-list structure that is used to link peer SDP record nodes when this structure is part of
@@ -69,7 +69,7 @@ typedef struct _SDP_NODE_HEADER {
      <b>u.alternative</b> part of the individual SDP_NODE structure.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The data type of the 
@@ -77,7 +77,7 @@ typedef struct _SDP_NODE_HEADER {
      <b>u</b> member of the SDP_NODE structure.</p>
 </dd>
 
-### -field <b>SpecificType</b>
+### -field SpecificType
 
 <dd>
 <p>Extra information about the data type associated with the 

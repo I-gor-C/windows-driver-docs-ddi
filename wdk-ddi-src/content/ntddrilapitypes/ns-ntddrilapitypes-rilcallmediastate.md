@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediastate.htm
 old-project: netvista
 ms.assetid: 1fe4b90e-f89a-4ccc-bc92-b6f2edfb0b98
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLMEDIASTATE, RILCALLMEDIASTATE, *LPRILCALLMEDIASTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,35 +61,35 @@ typedef struct _RILCALLMEDIASTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>dwDirection</b>
+### -field dwDirection
 
 <dd></dd>
 
-### -field <b>dwCallMediaType</b>
+### -field dwCallMediaType
 
 <dd></dd>
 
-### -field <b>RILCALLMEDIASTATEUNION</b>
+### -field RILCALLMEDIASTATEUNION
 
 <dd></dd>
 
-### -field <b>mediaStateUnion</b>
+### -field mediaStateUnion
 
 <dd></dd>
 
-### -field <b>stAudioState</b>
+### -field stAudioState
 
 <dd></dd>
 
-### -field <b>stVideoState</b>
+### -field stVideoState
 
 <dd></dd>
 
-### -field <b>dwCustomStateSpecific</b>
+### -field dwCustomStateSpecific
 
 <dd></dd>
 
-### -field <b>pad</b>
+### -field pad
 
 <dd></dd>
 </dl>

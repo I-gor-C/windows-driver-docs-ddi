@@ -54,7 +54,7 @@ HRESULT RequestWriter(
 ## -parameters
 <dl>
 
-### -param <i>ppIWriter</i> [out]
+### -param ppIWriter [out]
 
 <dd>
 <p>A variable that receives the writer interface object that <b>RequestWriter</b> retrieves.</p>
@@ -65,7 +65,7 @@ HRESULT RequestWriter(
 <p><b>RequestWriter</b> returns an <b>HRESULT</b> value.</p>
 
 ## -remarks
-<p>The <b>IInterFilterCommunicator</b> object is passed to each filter in the <a href="print.iprintpipelinefilter_initializefilter">IPrintPipelineFilter::InitializeFilter</a> method. The filter uses the <b>RequestWriter</b> method to get the writer interface for the object. The universally unique identifier (UUID) for the object is declared in the <a href="NULL">filter pipeline configuration file</a>.</p>
+<p>The <b>IInterFilterCommunicator</b> object is passed to each filter in the <a href="print.iprintpipelinefilter_initializefilter">IPrintPipelineFilter::InitializeFilter</a> method. The filter uses the <b>RequestWriter</b> method to get the writer interface for the object. The universally unique identifier (UUID) for the object is declared in the <a href="https://msdn.microsoft.com/586247bd-6d06-4728-a5f0-ee3fe1d09321">filter pipeline configuration file</a>.</p>
 
 ## -requirements
 <table>

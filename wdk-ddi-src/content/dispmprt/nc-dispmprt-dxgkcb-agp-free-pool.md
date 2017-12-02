@@ -58,13 +58,13 @@ NTSTATUS APIENTRY AgpFreePool(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A handle to a context block that is associated with an AGP interface. The display miniport driver previously received this handle in the <b>Context</b> member of the DXGK_AGP_INTERFACE structure that was filled in by <a href="..\dispmprt\nc-dispmprt-dxgkcb-query-services.md">DxgkCbQueryServices</a>.</p>
 </dd>
 
-### -param <i>VirtualAddress</i> [in]
+### -param VirtualAddress [in]
 
 <dd>
 <p>The base virtual address of the AGP allocation that is to be freed. This is the virtual address that was previously returned in the <i>VirtualAddress</i> output parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkcb-agp-allocate-pool.md">AgpAllocatePool</a> function.</p>

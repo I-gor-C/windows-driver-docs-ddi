@@ -61,13 +61,13 @@ NTSTATUS ZwCreateKey(
 ## -parameters
 <dl>
 
-### -param <i>KeyHandle</i> [out]
+### -param KeyHandle [out]
 
 <dd>
 <p>Pointer to a HANDLE variable that receives a handle to the key.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that determines the requested access to the object. In addition to the access rights that are defined for all types of objects (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>), the caller can specify one or more of the following access rights, which are specific to object directories:</p>
@@ -168,25 +168,25 @@ NTSTATUS ZwCreateKey(
 <p> </p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in]
+### -param ObjectAttributes [in]
 
 <dd>
 <p>Pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. </p>
 </dd>
 
-### -param <i>TitleIndex</i> 
+### -param TitleIndex 
 
 <dd>
 <p>Device and intermediate drivers set this parameter to zero. </p>
 </dd>
 
-### -param <i>Class</i> [in, optional]
+### -param Class [in, optional]
 
 <dd>
 <p>Pointer to a Unicode string that contains the key's object class. This information is used by the configuration manager. </p>
 </dd>
 
-### -param <i>CreateOptions</i> [in]
+### -param CreateOptions [in]
 
 <dd>
 <p>Specifies the options to apply when creating or opening a key, specified as a compatible combination of the following flags.</p>
@@ -231,7 +231,7 @@ NTSTATUS ZwCreateKey(
 <p> </p>
 </dd>
 
-### -param <i>Disposition</i> [out, optional]
+### -param Disposition [out, optional]
 
 <dd>
 <p>Pointer to a variable that receives a value indicating whether a new key was created or an existing one opened.</p>

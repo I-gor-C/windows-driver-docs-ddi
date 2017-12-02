@@ -59,25 +59,25 @@ PDMA VideoPortAssociateEventsWithDmaHandle(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>pVrp</i> [in, out]
+### -param pVrp [in, out]
 
 <dd>
 <p>Pointer to a <a href="..\video\ns-video--video-request-packet.md">VIDEO_REQUEST_PACKET</a>. </p>
 </dd>
 
-### -param <i>MappedUserEvent</i> [in]
+### -param MappedUserEvent [in]
 
 <dd>
 <p>Is reserved for system use.</p>
 </dd>
 
-### -param <i>DisplayDriverEvent</i> [in]
+### -param DisplayDriverEvent [in]
 
 <dd>
 <p>Is reserved for system use.</p>

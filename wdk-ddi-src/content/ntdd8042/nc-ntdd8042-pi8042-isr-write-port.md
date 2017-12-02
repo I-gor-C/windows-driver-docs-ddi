@@ -58,13 +58,13 @@ VOID I8042IsrWritePort(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to the function device object that represents a keyboard or mouse device.</p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>Specifies the data to write to an i8042 port.</p>

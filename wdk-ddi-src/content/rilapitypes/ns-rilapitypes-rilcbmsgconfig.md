@@ -7,7 +7,7 @@ old-location: netvista\rilcbmsgconfig_2.htm
 old-project: netvista
 ms.assetid: 7cdab678-5c83-4590-b911-5961db89e7ce
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCBMSGCONFIG, RILCBMSGCONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef struct _RILCBMSGCONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwGWLConfigInfoSize</b>
+### -field dwGWLConfigInfoSize
 
 <dd></dd>
 
-### -field <b>GWLConfigInfo</b>
+### -field GWLConfigInfo
 
 <dd></dd>
 
-### -field <b>dwCDMAConfigInfoSize</b>
+### -field dwCDMAConfigInfoSize
 
 <dd></dd>
 
-### -field <b>CDMAConfigInfo</b>
+### -field CDMAConfigInfo
 
 <dd></dd>
 </dl>

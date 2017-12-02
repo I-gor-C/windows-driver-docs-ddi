@@ -55,13 +55,13 @@ typedef enum _DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY_BILINEAR"></a><a id="dxgk_multiplane_overlay_stretch_quality_bilinear"></a><b>DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY_BILINEAR</b>
+### -field DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY_BILINEAR
 
 <dd>
 <p>When the hardware stretches or shrinks the data, it should perform bilinear filtering. If the hardware lacks enough resources to perform bilinear shrinking, the user-mode display driver can use point sampling.</p>
 </dd>
 
-### -field <a id="DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY_HIGH"></a><a id="dxgk_multiplane_overlay_stretch_quality_high"></a><b>DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY_HIGH</b>
+### -field DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY_HIGH
 
 <dd>
 <p>When the hardware stretches or shrinks the data, it should perform the highest quality filtering that it supports.</p>

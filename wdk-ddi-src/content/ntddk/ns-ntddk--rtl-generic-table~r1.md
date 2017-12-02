@@ -7,7 +7,7 @@ old-location: ifsk\rtl_generic_table.htm
 old-project: ifsk
 ms.assetid: 0e5dba1b-8b0d-470a-8ead-4c022e9da7fe
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RTL_GENERIC_TABLE, RTL_GENERIC_TABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,55 +63,55 @@ typedef struct _RTL_GENERIC_TABLE {
 ## -struct-fields
 <dl>
 
-### -field <b>TableRoot</b>
+### -field TableRoot
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>InsertOrderList</b>
+### -field InsertOrderList
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>OrderedPointer</b>
+### -field OrderedPointer
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>WhichOrderedElement</b>
+### -field WhichOrderedElement
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>NumberGenericTableElements</b>
+### -field NumberGenericTableElements
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>CompareRoutine</b>
+### -field CompareRoutine
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>AllocateRoutine</b>
+### -field AllocateRoutine
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>FreeRoutine</b>
+### -field FreeRoutine
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>TableContext</b>
+### -field TableContext
 
 <dd>
 <p>Reserved for system use.</p>
@@ -221,4 +221,4 @@ typedef struct _RTL_GENERIC_TABLE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RTL_GENERIC_TABLE structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RTL_GENERIC_TABLE structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

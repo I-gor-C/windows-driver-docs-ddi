@@ -56,19 +56,19 @@ typedef struct __RAW_READ_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>DiskOffset</b>
+### -field DiskOffset
 
 <dd>
 <p>Contains an offset into the CD-ROM disc where data will be read. You can  calculate this offset by multiplying the starting sector number for the request times 2048.</p>
 </dd>
 
-### -field <b>SectorCount</b>
+### -field SectorCount
 
 <dd>
 <p>Contains the number of sectors to read.</p>
 </dd>
 
-### -field <b>TrackMode</b>
+### -field TrackMode
 
 <dd>
 <p>Contains an enumerator of type <a href="..\ntddcdrm\ne-ntddcdrm--track-mode-type.md">TRACK_MODE_TYPE</a> that indicates the type of the track mode. </p>

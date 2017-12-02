@@ -57,19 +57,19 @@ typedef struct _REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Object</b>
+### -field Object
 
 <dd>
 <p>A pointer to the registry key object for the key to be deleted.</p>
 </dd>
 
-### -field <b>ObjectContext</b>
+### -field ObjectContext
 
 <dd>
 <p>A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved for future use.</p>

@@ -62,33 +62,33 @@ typedef struct _DXGK_POWER_COMPONENT_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved for system use and should be set to zero.</p>
 </dd>
 
-### -field <b>DriverCompletesFStateTransition</b>
+### -field DriverCompletesFStateTransition
 
 <dd>
 <p>If set, indicates that the display miniport driver will call the  <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-completefstatetransition.md">DxgkCbCompleteFStateTransition</a> function for a registered power component when the component completes an F-state transition.</p>
 <p>For more information, see Remarks section of the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-completefstatetransition.md">DxgkCbCompleteFStateTransition</a> function.</p>
 </dd>
 
-### -field <b>TransitionTo_F0_OnDx</b>
+### -field TransitionTo_F0_OnDx
 
 <dd>
 <p>If set, indicates that the Windows power management framework will place a registered power component into the F0 power state during device power state (Dx) transitions.</p>
 <p>If set, during a Dx transition the power manager places the component into the F0 state before it dispatches a Dx IRP to the device stack. The power manager keeps the component in the F0 state until the D0 IRP is completed.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 29 bits (0xFFFFFFF8) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that <b>DXGK_POWER_COMPONENT_FLAGS</b> contains that can hold a 32-bit value that identifies information about the power component.</p>

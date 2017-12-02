@@ -61,25 +61,25 @@ VOID HwVidBugcheckCallback(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.</p>
 </dd>
 
-### -param <i>BugcheckCode</i> [in]
+### -param BugcheckCode [in]
 
 <dd>
 <p>Specifies a <a href="https://msdn.microsoft.com/DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB">bug check code</a>.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to the memory location where the miniport driver can store the data that is to be appended to the dump file.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer pointed to by the <i>Buffer</i> parameter.</p>

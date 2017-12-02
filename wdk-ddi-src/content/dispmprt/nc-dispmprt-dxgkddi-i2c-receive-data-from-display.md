@@ -62,25 +62,25 @@ NTSTATUS DxgkDdiI2CReceiveDataFromDisplay(
 ## -parameters
 <dl>
 
-### -param <i>MiniportDeviceContext</i> [in]
+### -param MiniportDeviceContext [in]
 
 <dd>
 <p>A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>VidPnTargetId</i> [in]
+### -param VidPnTargetId [in]
 
 <dd>
 <p>An integer that identifies one of the video present targets on the display adapter.</p>
 </dd>
 
-### -param <i>SevenBitI2CAddress</i> [in]
+### -param SevenBitI2CAddress [in]
 
 <dd>
 <p>The address of the I2C device from which data will be received.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A value that specifies whether the length of the data is supplied as part of the data transmitted by the I2C device. This parameter must be set to one of the following values.</p>
@@ -109,13 +109,13 @@ NTSTATUS DxgkDdiI2CReceiveDataFromDisplay(
 <p> </p>
 </dd>
 
-### -param <i>DataLength</i> [in]
+### -param DataLength [in]
 
 <dd>
 <p>The length, in bytes, of the buffer pointed to by <i>Data</i>.</p>
 </dd>
 
-### -param <i>Data</i> [out]
+### -param Data [out]
 
 <dd>
 <p>A pointer to a buffer that receives the data. The buffer can be in paged memory.</p>

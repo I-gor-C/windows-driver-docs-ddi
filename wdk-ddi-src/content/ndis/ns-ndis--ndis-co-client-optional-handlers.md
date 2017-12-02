@@ -7,7 +7,7 @@ old-location: netvista\ndis_co_client_optional_handlers.htm
 old-project: netvista
 ms.assetid: 1f2285bb-be70-4496-905d-89106bf3712a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_CO_CLIENT_OPTIONAL_HANDLERS, NDIS_CO_CLIENT_OPTIONAL_HANDLERS, *PNDIS_CO_CLIENT_OPTIONAL_HANDLERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -77,7 +77,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -90,27 +90,27 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      <b>Size</b> member to NDIS_SIZEOF_CO_CLIENT_OPTIONAL_HANDLERS_REVISION_1.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>ClCreateVcHandler</b>
+### -field ClCreateVcHandler
 
 <dd>
 <p>The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol-co-create-vc.md">ProtocolCoCreateVc</a> function.</p>
 </dd>
 
-### -field <b>ClDeleteVcHandler</b>
+### -field ClDeleteVcHandler
 
 <dd>
 <p>The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol-co-delete-vc.md">ProtocolCoDeleteVc</a> function.</p>
 </dd>
 
-### -field <b>ClOidRequestHandler</b>
+### -field ClOidRequestHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -118,7 +118,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      ProtocolCoOidRequest</a> function.</p>
 </dd>
 
-### -field <b>ClOidRequestCompleteHandler</b>
+### -field ClOidRequestCompleteHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -126,7 +126,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      ProtocolCoOidRequestComplete</a> function.</p>
 </dd>
 
-### -field <b>ClOpenAfCompleteHandlerEx</b>
+### -field ClOpenAfCompleteHandlerEx
 
 <dd>
 <p>The entry point of the caller's 
@@ -134,7 +134,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      ProtocolClOpenAfCompleteEx</a> function.</p>
 </dd>
 
-### -field <b>ClCloseAfCompleteHandler</b>
+### -field ClCloseAfCompleteHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -142,7 +142,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      ProtocolClCloseAfComplete</a> function.</p>
 </dd>
 
-### -field <b>ClRegisterSapCompleteHandler</b>
+### -field ClRegisterSapCompleteHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -151,7 +151,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      remote machines.</p>
 </dd>
 
-### -field <b>ClDeregisterSapCompleteHandler</b>
+### -field ClDeregisterSapCompleteHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -159,7 +159,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      ProtocolClDeregisterSapComplete</a> function.</p>
 </dd>
 
-### -field <b>ClMakeCallCompleteHandler</b>
+### -field ClMakeCallCompleteHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -168,7 +168,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      machines.</p>
 </dd>
 
-### -field <b>ClModifyCallQoSCompleteHandler</b>
+### -field ClModifyCallQoSCompleteHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -178,7 +178,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      manager to establish the QoS when the client sets up an incoming call.</p>
 </dd>
 
-### -field <b>ClCloseCallCompleteHandler</b>
+### -field ClCloseCallCompleteHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -186,7 +186,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      ProtocolClCloseCallComplete</a> function.</p>
 </dd>
 
-### -field <b>ClAddPartyCompleteHandler</b>
+### -field ClAddPartyCompleteHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -195,7 +195,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      VCs for outgoing calls to remote machines.</p>
 </dd>
 
-### -field <b>ClDropPartyCompleteHandler</b>
+### -field ClDropPartyCompleteHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -203,7 +203,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      ProtocolClDropPartyComplete</a> function.</p>
 </dd>
 
-### -field <b>ClIncomingCallHandler</b>
+### -field ClIncomingCallHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -212,7 +212,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      machines.</p>
 </dd>
 
-### -field <b>ClIncomingCallQoSChangeHandler</b>
+### -field ClIncomingCallQoSChangeHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -221,7 +221,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      from remote machines on which the sending client can dynamically change the QoS.</p>
 </dd>
 
-### -field <b>ClIncomingCloseCallHandler</b>
+### -field ClIncomingCloseCallHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -229,7 +229,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      ProtocolClIncomingCloseCall</a> function.</p>
 </dd>
 
-### -field <b>ClIncomingDropPartyHandler</b>
+### -field ClIncomingDropPartyHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -237,7 +237,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      ProtocolClIncomingDropParty</a> function.</p>
 </dd>
 
-### -field <b>ClCallConnectedHandler</b>
+### -field ClCallConnectedHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -246,7 +246,7 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
      machines.</p>
 </dd>
 
-### -field <b>ClNotifyCloseAfHandler</b>
+### -field ClNotifyCloseAfHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -369,4 +369,4 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CO_CLIENT_OPTIONAL_HANDLERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CO_CLIENT_OPTIONAL_HANDLERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

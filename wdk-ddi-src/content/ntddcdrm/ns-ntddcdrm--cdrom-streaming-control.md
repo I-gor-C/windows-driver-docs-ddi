@@ -54,7 +54,7 @@ typedef struct _CDROM_STREAMING_CONTROL {
 ## -struct-fields
 <dl>
 
-### -field <b>RequestType</b>
+### -field RequestType
 
 <dd>
 <p>The <a href="..\ntddcdrm\ne-ntddcdrm--streaming-control-request-type.md">STREAMING_CONTROL_REQUEST_TYPE</a>   enumeration specifies the type of request.</p>

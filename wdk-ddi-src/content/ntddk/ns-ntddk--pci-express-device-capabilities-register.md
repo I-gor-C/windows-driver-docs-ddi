@@ -67,44 +67,44 @@ typedef union _PCI_EXPRESS_DEVICE_CAPABILITIES_REGISTER {
 ## -struct-fields
 <dl>
 
-### -field <b>MaxPayloadSizeSupported</b>
+### -field MaxPayloadSizeSupported
 
 <dd>
 <p>The maximum payload size that is supported by the device. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="MaxPayload128Bytes"></a><a id="maxpayload128bytes"></a><a id="MAXPAYLOAD128BYTES"></a><b>MaxPayload128Bytes</b>
+### -field MaxPayload128Bytes
 
 <dd>
 <p>128 byte maximum payload size</p>
 </dd>
 
-### -field <a id="MaxPayload256Bytes"></a><a id="maxpayload256bytes"></a><a id="MAXPAYLOAD256BYTES"></a><b>MaxPayload256Bytes</b>
+### -field MaxPayload256Bytes
 
 <dd>
 <p>256 byte maximum payload size</p>
 </dd>
 
-### -field <a id="MaxPayload512Bytes"></a><a id="maxpayload512bytes"></a><a id="MAXPAYLOAD512BYTES"></a><b>MaxPayload512Bytes</b>
+### -field MaxPayload512Bytes
 
 <dd>
 <p>512 byte maximum payload size</p>
 </dd>
 
-### -field <a id="MaxPayload1024Bytes"></a><a id="maxpayload1024bytes"></a><a id="MAXPAYLOAD1024BYTES"></a><b>MaxPayload1024Bytes</b>
+### -field MaxPayload1024Bytes
 
 <dd>
 <p>1024 byte maximum payload size</p>
 </dd>
 
-### -field <a id="MaxPayload2048Bytes"></a><a id="maxpayload2048bytes"></a><a id="MAXPAYLOAD2048BYTES"></a><b>MaxPayload2048Bytes</b>
+### -field MaxPayload2048Bytes
 
 <dd>
 <p>2048 byte maximum payload size</p>
 </dd>
 
-### -field <a id="MaxPayload4096Bytes"></a><a id="maxpayload4096bytes"></a><a id="MAXPAYLOAD4096BYTES"></a><b>MaxPayload4096Bytes</b>
+### -field MaxPayload4096Bytes
 
 <dd>
 <p>4096 byte maximum payload size</p>
@@ -112,32 +112,32 @@ typedef union _PCI_EXPRESS_DEVICE_CAPABILITIES_REGISTER {
 </dl>
 </dd>
 
-### -field <b>PhantomFunctionsSupported</b>
+### -field PhantomFunctionsSupported
 
 <dd>
 <p>A value that indicates the support of unused function numbers (phantom functions) to extend the number of outstanding transactions that are allowed for the device. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="0"></a><b>0</b>
+### -field 0
 
 <dd>
 <p>No function number bits are used for phantom functions. The device can implement functions for all eight function numbers.</p>
 </dd>
 
-### -field <a id="1"></a><b>1</b>
+### -field 1
 
 <dd>
 <p>The most significant bit in the function number is used for phantom functions. The device can implement functions for function numbers 0 to 3.</p>
 </dd>
 
-### -field <a id="2"></a><b>2</b>
+### -field 2
 
 <dd>
 <p>The two most significant bits in the function number are used for phantom functions. The device can implement functions for function numbers 0 and 1.</p>
 </dd>
 
-### -field <a id="3"></a><b>3</b>
+### -field 3
 
 <dd>
 <p>All three bits in the function number are used for phantom functions. The device implements only a single function for function number 0.</p>
@@ -145,62 +145,62 @@ typedef union _PCI_EXPRESS_DEVICE_CAPABILITIES_REGISTER {
 </dl>
 </dd>
 
-### -field <b>ExtendedTagSupported</b>
+### -field ExtendedTagSupported
 
 <dd>
 <p>A single bit that specifies the maximum supported size of the Tag field in a PCIe transaction descriptor when the device is a requester. If this bit is clear, a 5-bit Tag field is supported. If this bit is set, an 8-bit Tag field is supported.</p>
 </dd>
 
-### -field <b>L0sAcceptableLatency</b>
+### -field L0sAcceptableLatency
 
 <dd>
 <p>The maximum acceptable total latency that the device can withstand due to a transition from the L0s state to the L0 state. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="L0s_Below64ns"></a><a id="l0s_below64ns"></a><a id="L0S_BELOW64NS"></a><b>L0s_Below64ns</b>
+### -field L0s_Below64ns
 
 <dd>
 <p>64 nanoseconds</p>
 </dd>
 
-### -field <a id="L0s_64ns_128ns"></a><a id="l0s_64ns_128ns"></a><a id="L0S_64NS_128NS"></a><b>L0s_64ns_128ns</b>
+### -field L0s_64ns_128ns
 
 <dd>
 <p>128 nanoseconds</p>
 </dd>
 
-### -field <a id="L0s_128ns_256ns"></a><a id="l0s_128ns_256ns"></a><a id="L0S_128NS_256NS"></a><b>L0s_128ns_256ns</b>
+### -field L0s_128ns_256ns
 
 <dd>
 <p>256 nanoseconds</p>
 </dd>
 
-### -field <a id="L0s_256ns_512ns"></a><a id="l0s_256ns_512ns"></a><a id="L0S_256NS_512NS"></a><b>L0s_256ns_512ns</b>
+### -field L0s_256ns_512ns
 
 <dd>
 <p>512 nanoseconds</p>
 </dd>
 
-### -field <a id="L0s_512ns_1us"></a><a id="l0s_512ns_1us"></a><a id="L0S_512NS_1US"></a><b>L0s_512ns_1us</b>
+### -field L0s_512ns_1us
 
 <dd>
 <p>1 microsecond</p>
 </dd>
 
-### -field <a id="L0s_1us_2us"></a><a id="l0s_1us_2us"></a><a id="L0S_1US_2US"></a><b>L0s_1us_2us</b>
+### -field L0s_1us_2us
 
 <dd>
 <p>2 microseconds</p>
 </dd>
 
-### -field <a id="L0s_2us_4us"></a><a id="l0s_2us_4us"></a><a id="L0S_2US_4US"></a><b>L0s_2us_4us</b>
+### -field L0s_2us_4us
 
 <dd>
 <p>4 microseconds</p>
 </dd>
 
-### -field <a id="L0s_Above4us"></a><a id="l0s_above4us"></a><a id="L0S_ABOVE4US"></a><b>L0s_Above4us</b>
+### -field L0s_Above4us
 
 <dd>
 <p>No limit</p>
@@ -208,56 +208,56 @@ typedef union _PCI_EXPRESS_DEVICE_CAPABILITIES_REGISTER {
 </dl>
 </dd>
 
-### -field <b>L1AcceptableLatency</b>
+### -field L1AcceptableLatency
 
 <dd>
 <p>The maximum acceptable total latency that the device can withstand due to a transition from the L1 state to the L0 state. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="L1_Below1us"></a><a id="l1_below1us"></a><a id="L1_BELOW1US"></a><b>L1_Below1us</b>
+### -field L1_Below1us
 
 <dd>
 <p>1 microsecond</p>
 </dd>
 
-### -field <a id="L1_1us_2us"></a><a id="l1_1us_2us"></a><a id="L1_1US_2US"></a><b>L1_1us_2us</b>
+### -field L1_1us_2us
 
 <dd>
 <p>2 microseconds</p>
 </dd>
 
-### -field <a id="L1_2us_4us"></a><a id="l1_2us_4us"></a><a id="L1_2US_4US"></a><b>L1_2us_4us</b>
+### -field L1_2us_4us
 
 <dd>
 <p>4 microseconds</p>
 </dd>
 
-### -field <a id="L1_4us_8us"></a><a id="l1_4us_8us"></a><a id="L1_4US_8US"></a><b>L1_4us_8us</b>
+### -field L1_4us_8us
 
 <dd>
 <p>8 microseconds</p>
 </dd>
 
-### -field <a id="L1_8us_16us"></a><a id="l1_8us_16us"></a><a id="L1_8US_16US"></a><b>L1_8us_16us</b>
+### -field L1_8us_16us
 
 <dd>
 <p>16 microseconds</p>
 </dd>
 
-### -field <a id="L1_16us_32us"></a><a id="l1_16us_32us"></a><a id="L1_16US_32US"></a><b>L1_16us_32us</b>
+### -field L1_16us_32us
 
 <dd>
 <p>32 microseconds</p>
 </dd>
 
-### -field <a id="L1_32us_64us"></a><a id="l1_32us_64us"></a><a id="L1_32US_64US"></a><b>L1_32us_64us</b>
+### -field L1_32us_64us
 
 <dd>
 <p>64 microseconds</p>
 </dd>
 
-### -field <a id="L1_Above64us"></a><a id="l1_above64us"></a><a id="L1_ABOVE64US"></a><b>L1_Above64us</b>
+### -field L1_Above64us
 
 <dd>
 <p>No limit</p>
@@ -265,56 +265,56 @@ typedef union _PCI_EXPRESS_DEVICE_CAPABILITIES_REGISTER {
 </dl>
 </dd>
 
-### -field <b>Undefined</b>
+### -field Undefined
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>RoleBasedErrorReporting</b>
+### -field RoleBasedErrorReporting
 
 <dd>
 <p>A single bit that indicates that the device implements role-based error reporting.</p>
 </dd>
 
-### -field <b>Rsvd1</b>
+### -field Rsvd1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>CapturedSlotPowerLimit</b>
+### -field CapturedSlotPowerLimit
 
 <dd>
 <p>The maximum amount of power that can be supplied by the slot. This value is used in combination with the value of the <b>CapturedSlotPowerLimitScale</b> member to compute the power in watts.</p>
 </dd>
 
-### -field <b>CapturedSlotPowerLimitScale</b>
+### -field CapturedSlotPowerLimitScale
 
 <dd>
 <p>The scale used for the value contained in the <b>CapturedSlotPowerLimit</b> member to compute the maximum power, in watts, that can be supplied by the slot. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="0"></a><b>0</b>
+### -field 0
 
 <dd>
 <p>Multiply the value in the <b>CapturedSlotPowerLimit</b> member by 1.0.</p>
 </dd>
 
-### -field <a id="1"></a><b>1</b>
+### -field 1
 
 <dd>
 <p>Multiply the value in the <b>CapturedSlotPowerLimit</b> member by 0.1.</p>
 </dd>
 
-### -field <a id="2"></a><b>2</b>
+### -field 2
 
 <dd>
 <p>Multiply the value in the <b>CapturedSlotPowerLimit</b> member by 0.01.</p>
 </dd>
 
-### -field <a id="3"></a><b>3</b>
+### -field 3
 
 <dd>
 <p>Multiply the value in the <b>CapturedSlotPowerLimit</b> member by 0.001.</p>
@@ -322,13 +322,13 @@ typedef union _PCI_EXPRESS_DEVICE_CAPABILITIES_REGISTER {
 </dl>
 </dd>
 
-### -field <b>Rsvd2</b>
+### -field Rsvd2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_DEVICE_CAPABILITIES_REGISTER structure.</p>

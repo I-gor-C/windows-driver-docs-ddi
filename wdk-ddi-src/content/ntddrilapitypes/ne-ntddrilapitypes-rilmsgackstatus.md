@@ -7,7 +7,7 @@ old-location: netvista\rilmsgackstatus.htm
 old-project: netvista
 ms.assetid: 551193d0-596c-40bf-9a31-f8b6eb330e25
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILMSGACKSTATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGACKSTATUS_FAIL_MEM_FULL"></a><a id="ril_msgackstatus_fail_mem_full"></a><b>RIL_MSGACKSTATUS_FAIL_MEM_FULL</b>
+### -field RIL_MSGACKSTATUS_FAIL_MEM_FULL
 
 <dd></dd>
 
-### -field <a id="RIL_MSGACKSTATUS_ERROR"></a><a id="ril_msgackstatus_error"></a><b>RIL_MSGACKSTATUS_ERROR</b>
+### -field RIL_MSGACKSTATUS_ERROR
 
 <dd></dd>
 
-### -field <a id="RIL_MSGACKSTATUS_MAX"></a><a id="ril_msgackstatus_max"></a><b>RIL_MSGACKSTATUS_MAX</b>
+### -field RIL_MSGACKSTATUS_MAX
 
 <dd></dd>
 </dl>

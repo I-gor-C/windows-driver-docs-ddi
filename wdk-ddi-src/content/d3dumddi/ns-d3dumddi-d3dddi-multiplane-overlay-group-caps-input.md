@@ -55,13 +55,13 @@ typedef struct D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based video present network (VidPN) source identification number of the input for which the capabilities are queried.</p>
 </dd>
 
-### -field <b>GroupIndex</b>
+### -field GroupIndex
 
 <dd>
 <p>[in] The index of the overlay capability group for which capabilities are queried. This value is always between zero and (<a href="..\d3dumddi\ns-d3dumddi-d3dddi-multiplane-overlay-caps.md">D3DDDI_MULTIPLANE_OVERLAY_CAPS</a>.<b>NumCapabilityGroups</b> – 1).</p>

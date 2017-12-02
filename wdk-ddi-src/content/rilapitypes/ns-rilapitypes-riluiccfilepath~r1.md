@@ -7,7 +7,7 @@ old-location: netvista\riluiccfilepath_2.htm
 old-project: netvista
 ms.assetid: d0321907-0a3c-43cc-97f1-a3a7e9b84311
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUICCFILEPATH,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILUICCFILEPATH {
 ## -struct-fields
 <dl>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwFilePathLen</b>
+### -field dwFilePathLen
 
 <dd></dd>
 
-### -field <b>wFilePath</b>
+### -field wFilePath
 
 <dd></dd>
 </dl>

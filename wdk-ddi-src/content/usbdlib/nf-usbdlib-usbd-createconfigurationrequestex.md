@@ -58,13 +58,13 @@ PURB USBD_CreateConfigurationRequestEx(
 ## -parameters
 <dl>
 
-### -param <i>ConfigurationDescriptor</i> [in]
+### -param ConfigurationDescriptor [in]
 
 <dd>
 <p>Pointer to a caller-allocated <a href="..\usbspec\ns-usbspec--usb-configuration-descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a> structure that contains the configuration descriptor for the configuration to be selected. Typically, the client driver submits a URB  of the type  URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE (see <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a>)     to retrieve information about configurations, interfaces, endpoints, the vendor, and class-specific descriptors from a USB device. When the client driver specifies USB_CONFIGURATION_DESCRIPTOR_TYPE as the descriptor type, the request retrieves all device information in a <b>USB_CONFIGURATION_DESCRIPTOR</b> structure. The driver then passes the received pointer to    the <b>USB_CONFIGURATION_DESCRIPTOR</b> structure in the <i>ConfigurationDescriptor</i> parameter.</p>
 </dd>
 
-### -param <i>InterfaceList</i> [in]
+### -param InterfaceList [in]
 
 <dd>
 <p>Pointer to the first element of a caller-allocated array of <a href="..\usbdlib\ns-usbdlib--usbd-interface-list-entry.md">USBD_INTERFACE_LIST_ENTRY</a>    structures. The length of the array depends on the number of interfaces in the configuration descriptor. The number  of elements in the array  must be one more than the number of interfaces in the configuration. Initialize the array by calling <a href="..\wdm\nf-wdm-rtlzeromemory.md">RtlZeroMemory</a>. The <b>InterfaceDescriptor</b> member of the last element in the array must be set to <b>NULL</b>. </p>
@@ -81,7 +81,7 @@ PURB USBD_CreateConfigurationRequestEx(
 
 <p>After the USB driver stack completes the select-configuration request, you can inspect the  <a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a> structures.  The <b>Pipes</b> member of <b>USBD_INTERFACE_INFORMATION</b> points to an array of <a href="..\usb\ns-usb--usbd-pipe-information.md">USBD_PIPE_INFORMATION</a> structures. The USB bus driver fills the array of <b>USBD_PIPE_INFORMATION</b> structures with information about the  pipes associated with the endpoints of the interface. The client driver can obtain pipe handles from the <code>Pipes[i].PipeHandle</code> and use them to send I/O requests to specific pipes. </p>
 
-<p>After you have completed all operations with the returned <a href="..\usb\ns-usb--urb.md">URB</a>, you must free the <b>URB</b> by calling <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>. </p>
+<p>After you have completed all operations with the returned <a href="..\usb\ns-usb--urb.md">URB</a>, you must free the <b>URB</b> by calling <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>. </p>
 
 <p>You can  allocate the configuration descriptor and the array from nonpaged or paged pool. Callers of this routine can run at IRQL &lt;= DISPATCH_LEVEL if the memory pointed to by <i>ConfigurationDescriptor</i> and <i>InterfaceList</i> is allocated from nonpaged pool. Otherwise, callers must run at IRQL &lt; DISPATCH_LEVEL.</p>
 

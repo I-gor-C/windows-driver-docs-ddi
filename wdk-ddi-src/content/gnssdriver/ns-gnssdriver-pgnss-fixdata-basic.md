@@ -7,7 +7,7 @@ old-location: sensors\gnss_fixdata_basic.htm
 old-project: sensors
 ms.assetid: D293366B-13FA-438E-BEBD-1F0EAA693400
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_FIXDATA_BASIC, GNSS_FIXDATA_BASIC, *PGNSS_FIXDATA_BASIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,43 +60,43 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>Latitude</b>
+### -field Latitude
 
 <dd>
 <p>Latitude value. Valid range is -180.0 to + 180.0. NaN indicates unavailable.</p>
 </dd>
 
-### -field <b>Longitude</b>
+### -field Longitude
 
 <dd>
 <p>Longitude value. Valid range is -90.0 to + 90.0. NaN indicates unavailable.</p>
 </dd>
 
-### -field <b>Altitude</b>
+### -field Altitude
 
 <dd>
 <p>Altitude value in meters (in relation to sea level). NaN indicates unavailable.</p>
 </dd>
 
-### -field <b>Speed</b>
+### -field Speed
 
 <dd>
 <p>Speed in meters per second. Zero or positive value. NaN indicates unavailable.</p>
 </dd>
 
-### -field <b>Heading</b>
+### -field Heading
 
 <dd>
 <p>Heading/direction in degrees. Valid range is 0 to 360. Zero indicates true north. NaN indicates unavailable.</p>

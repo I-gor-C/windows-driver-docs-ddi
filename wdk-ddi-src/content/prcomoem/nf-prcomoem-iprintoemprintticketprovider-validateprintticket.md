@@ -55,7 +55,7 @@ HRESULT ValidatePrintTicket(
 ## -parameters
 <dl>
 
-### -param <i>pPrintTicket</i> [in, out]
+### -param pPrintTicket [in, out]
 
 <dd>
 <p>A pointer to an input print ticket. When <code>IPrintOemPrintTicketProvider::ValidatePrintTicket</code> successfully returns, <i>pPrintTicket</i> points to a validated print ticket.</p>

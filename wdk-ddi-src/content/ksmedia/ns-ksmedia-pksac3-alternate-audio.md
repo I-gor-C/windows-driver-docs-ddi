@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>fStereo</b>
+### -field fStereo
 
 <dd>
 <p>Specifies whether the two mono channels should be interpreted as a stereo pair. If <b>TRUE</b>, the two mono channels are treated as a stereo pair. If <b>FALSE</b>, <b>DualMode</b>=0x03 causes the two mono channels to be mixed before being output by the decoder.</p>
 </dd>
 
-### -field <b>DualMode</b>
+### -field DualMode
 
 <dd>
 <p>When two independent channels of audio are encoded in the stream, this member specifies whether to use the audio track in channel 1, channel 2, or both. A value of 0x01 selects channel 1, 0x02 selects channel 2, and 0x03 selects both. Specify the value of this member as one of the following constants:</p>

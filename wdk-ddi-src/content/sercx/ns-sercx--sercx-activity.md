@@ -57,19 +57,19 @@ typedef struct _SERCX_ACTIVITY {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercxgetactivity.md">SerCxGetActivity</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
-### -field <b>Transmitting</b>
+### -field Transmitting
 
 <dd>
 <p>Whether a transmit (write) operation is in progress. This member is TRUE if a transmit operation is in progress. Otherwise, it is FALSE.</p>
 </dd>
 
-### -field <b>Receiving</b>
+### -field Receiving
 
 <dd>
 <p>Whether a receive (read) operation is in progress. This member is TRUE if a receive operation is in progress. Otherwise, it is FALSE.</p>

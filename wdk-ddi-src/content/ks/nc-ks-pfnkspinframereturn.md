@@ -62,37 +62,37 @@ void AVStrMiniFrameReturn(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>Pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure representing the pin on which the frame was injected.</p>
 </dd>
 
-### -param <i>Data</i> [in, optional]
+### -param Data [in, optional]
 
 <dd>
 <p>Pointer to the buffer originally specified in the call to <a href="..\ks\nf-ks-kspinsubmitframe.md">KsPinSubmitFrame</a>.</p>
 </dd>
 
-### -param <i>Size</i> [in, optional]
+### -param Size [in, optional]
 
 <dd>
 <p>Specifies the size in bytes of <i>Data</i> as originally specified in <a href="..\ks\nf-ks-kspinsubmitframe.md">KsPinSubmitFrame</a>.</p>
 </dd>
 
-### -param <i>Mdl</i> [in, optional]
+### -param Mdl [in, optional]
 
 <dd>
 <p>Pointer to a memory descriptor list describing the injected frame as in the call to <a href="..\ks\nf-ks-kspinsubmitframemdl.md">KsPinSubmitFrameMdl</a><b>.</b></p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Pointer to the minidriver-supplied context buffer attached to the frame when the frame was injected into the circuit.</p>
 </dd>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>Contains a copy of <i>Irp-&gt;IoStatus.Status</i> for the IRP to which the requested frame was attached.</p>

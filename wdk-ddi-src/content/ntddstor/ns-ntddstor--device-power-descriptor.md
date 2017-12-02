@@ -65,65 +65,65 @@ typedef struct _DEVICE_POWER_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Contains the size of this structure, in bytes. The value of this member will change as members are added to 
       the structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the total size of the data returned, in bytes. This may include data that follows this 
       structure.</p>
 </dd>
 
-### -field <b>DeviceAttentionSupported</b>
+### -field DeviceAttentionSupported
 
 <dd>
 <p><b>True</b> if device attention is supported. Otherwise, <b>False</b>.</p>
 </dd>
 
-### -field <b>AsynchronousNotificationSupported</b>
+### -field AsynchronousNotificationSupported
 
 <dd>
 <p><b>True</b> if the device supports asynchronous notifications, delivered via 
       <b>IOCTL_STORAGE_EVENT_NOTIFICATION</b>. Otherwise, <b>False</b></p>
 </dd>
 
-### -field <b>IdlePowerManagementEnabled</b>
+### -field IdlePowerManagementEnabled
 
 <dd>
 <p><b>True</b> if the device has been registered for runtime idle power management. Otherwise, <b>False</b></p>
 </dd>
 
-### -field <b>D3ColdEnabled</b>
+### -field D3ColdEnabled
 
 <dd>
 <p><b>True</b> if the device will be powered off when put into the D3 power state. Otherwise, <b>False</b></p>
 </dd>
 
-### -field <b>D3ColdSupported</b>
+### -field D3ColdSupported
 
 <dd>
 <p><b>True</b> if the platform supports <b>D3ColdEnabled</b> for this device. Otherwise, 
       <b>False</b>.</p>
 </dd>
 
-### -field <b>NoVerifyDuringIdlePower</b>
+### -field NoVerifyDuringIdlePower
 
 <dd>
 <p><b>True</b> if the device requires no verification during idle power transitions. Otherwise, <b>False</b></p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>IdleTimeoutInMS</b>
+### -field IdleTimeoutInMS
 
 <dd>
 <p>The idle timeout value in milliseconds. This member is ignored unless 

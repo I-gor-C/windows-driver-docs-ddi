@@ -7,7 +7,7 @@ old-location: image\rangevalue.htm
 old-project: image
 ms.assetid: 18322d1f-9fc9-43f0-925e-616731845792
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: RANGEVALUE, RANGEVALUE, *PRANGEVALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _RANGEVALUE {
 ## -struct-fields
 <dl>
 
-### -field <b>lMin</b>
+### -field lMin
 
 <dd>
 <p>Specifies the minimum value for a parameter.</p>
 </dd>
 
-### -field <b>lMax</b>
+### -field lMax
 
 <dd>
 <p>Specifies the maximum value for a parameter.</p>
 </dd>
 
-### -field <b>lStep</b>
+### -field lStep
 
 <dd>
 <p>Specifies the step value for a parameter.</p>

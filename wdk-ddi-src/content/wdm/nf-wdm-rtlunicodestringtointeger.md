@@ -57,13 +57,13 @@ NTSTATUS RtlUnicodeStringToInteger(
 ## -parameters
 <dl>
 
-### -param <i>String</i> [in]
+### -param String [in]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the number representation to convert to the equivalent integer value.</p>
 </dd>
 
-### -param <i>Base</i> [in, optional]
+### -param Base [in, optional]
 
 <dd>
 <p>A numeric value that indicates the base (or radix) of the number that the Unicode string represents. This parameter value is optional and can be set to zero.</p>
@@ -82,7 +82,7 @@ NTSTATUS RtlUnicodeStringToInteger(
 <p>If the Unicode string does not contain any of these prefixes, <b>RtlUnicodeStringToInteger</b> treats the string as a base-10 integer.</p>
 </dd>
 
-### -param <i>Value</i> [out]
+### -param Value [out]
 
 <dd>
 <p>A pointer to a ULONG variable to which <b>RtlUnicodeStringToInteger</b> writes the integer value that results from conversion of the Unicode string.</p>

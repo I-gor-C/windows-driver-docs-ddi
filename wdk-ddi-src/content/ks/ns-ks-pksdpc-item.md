@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Dpc</b>
+### -field Dpc
 
 <dd>
 <p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a> structure that is queued to perform notifications that cannot occur at raised IRQL.</p>
 </dd>
 
-### -field <b>ReferenceCount</b>
+### -field ReferenceCount
 
 <dd>
 <p>Specifies whether pending DPCs will reference this structure. This is initially set to 1 when the event structure is created, and decremented when the event structure is destroyed. If the reference count is nonzero at that time, then the last DPC to run frees the structure rather than the event disable call.</p>
 </dd>
 
-### -field <b>AccessLock</b>
+### -field AccessLock
 
 <dd>
 <p>This lock is used to synchronize deletion of an event item with any DPC that might be running.</p>

@@ -58,31 +58,31 @@ typedef struct _SCSI_ADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Contains the length of this structure in bytes. </p>
 </dd>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>Contains the number of the SCSI adapter.</p>
 </dd>
 
-### -field <b>PathId</b>
+### -field PathId
 
 <dd>
 <p>Contains the number of the bus. </p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>Contains the number of the target device. </p>
 </dd>
 
-### -field <b>Lun</b>
+### -field Lun
 
 <dd>
 <p>Contains the logical unit number.</p>

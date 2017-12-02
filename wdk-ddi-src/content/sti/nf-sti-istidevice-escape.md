@@ -7,7 +7,7 @@ old-location: image\istidevice_escape.htm
 old-project: image
 ms.assetid: ca2aae12-b4b8-4bae-bc3b-812a1ae539c0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDevice, Escape, IStiDevice::Escape
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,37 +60,37 @@ HRESULT Escape(
 ## -parameters
 <dl>
 
-### -param <i>EscapeFunction</i> [in]
+### -param EscapeFunction [in]
 
 <dd>
 <p>Caller-supplied, vendor-defined, DWORD-sized value representing an I/O operation. The device's minidriver must recognize this value and must export an <b>IStiUSD</b> interface. Vendor-defined values must be greater than STI_RAW_RESERVED, which is defined in <i>Sti.h</i>.</p>
 </dd>
 
-### -param <i>lpInData</i> [in]
+### -param lpInData [in]
 
 <dd>
 <p>Caller-supplied pointer to a buffer containing data to be sent to the device.</p>
 </dd>
 
-### -param <i>cbInDataSize</i> 
+### -param cbInDataSize 
 
 <dd>
 <p>Caller-supplied length, in bytes, of the data contained in the buffer pointed to by <i>lpInData</i>.</p>
 </dd>
 
-### -param <i>pOutData</i> [in, out]
+### -param pOutData [in, out]
 
 <dd>
 <p>Caller-supplied pointer to a memory buffer to receive data from the device.</p>
 </dd>
 
-### -param <i>dwOutDataSize</i> 
+### -param dwOutDataSize 
 
 <dd>
 <p>Caller-supplied length, in bytes, of the buffer pointed to by <i>lpOutData</i>.</p>
 </dd>
 
-### -param <i>pdwActualData</i> [out]
+### -param pdwActualData [out]
 
 <dd>
 <p>Receives the number of bytes actually written to <i>pOutData</i>.</p>

@@ -68,24 +68,24 @@ typedef struct _PCI_PM_CAPABILITY {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537454">PCI_CAPABILITIES_HEADER</a> that identifies the capability and provides a link to the next capability description. </p>
 </dd>
 
-### -field <b>PMC</b>
+### -field PMC
 
 <dd>
 <dl>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537581">PCI_PMC</a> that specifies the power management capabilities of the device. This information was retrieved from the power management capabilities register (offset 2 in the power management register block). For more information about the contents of the power management capabilities register, see the <i>PCI Power Management Specification</i>. </p>
 </dd>
 
-### -field <b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>Contains the same data as the <b>Capabilities </b>member. </p>
@@ -93,18 +93,18 @@ typedef struct _PCI_PM_CAPABILITY {
 </dl>
 </dd>
 
-### -field <b>PMCSR</b>
+### -field PMCSR
 
 <dd>
 <dl>
 
-### -field <b>ControlStatus</b>
+### -field ControlStatus
 
 <dd>
 <p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537583">PCI_PMCSR</a> that reports the contents of the power management control status register. This register is used to monitor power management event signals and manage the device's power state. For more information about the contents of the power management control status register, see the <i>PCI Power Management Specification</i>. </p>
 </dd>
 
-### -field <b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>Contains the same data as the <b>Capabilities </b>member. </p>
@@ -112,18 +112,18 @@ typedef struct _PCI_PM_CAPABILITY {
 </dl>
 </dd>
 
-### -field <b>PMCSR_BSE</b>
+### -field PMCSR_BSE
 
 <dd>
 <dl>
 
-### -field <b>BridgeSupport</b>
+### -field BridgeSupport
 
 <dd>
 <p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537587">PCI_PMCSR_BSE</a> that reports the contents of the power management control status register for PCI bridge support extensions. </p>
 </dd>
 
-### -field <b>AsUCHAR</b>
+### -field AsUCHAR
 
 <dd>
 <p>Contains the same data as the <b>BridgeSupport</b> member.</p>
@@ -131,7 +131,7 @@ typedef struct _PCI_PM_CAPABILITY {
 </dl>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>Holds the contents of an optional data register that the device uses to report state-dependent operating data, such as heat dissipation or how much power the device has consumed.</p>

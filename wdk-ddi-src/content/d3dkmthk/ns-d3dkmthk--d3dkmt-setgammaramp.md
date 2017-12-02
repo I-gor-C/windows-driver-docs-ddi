@@ -61,37 +61,37 @@ typedef struct _D3DKMT_SETGAMMARAMP {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the device.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for the VidPN source. </p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-gammaramp-type.md">D3DDDI_GAMMARAMP_TYPE</a>-typed value. This member can be one of the following: D3DDDI_GAMMARAMP_UNINITIALIZED (0), D3DDDI_GAMMARAMP_DEFAULT (1), D3DDDI_GAMMARAMP_RGB256x3x16 (2), or D3DDDI_GAMMARAMP_DXGI_1 (3).</p>
 </dd>
 
-### -field <b>pGammaRampRgb256x3x16</b>
+### -field pGammaRampRgb256x3x16
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-gamma-ramp-rgb256x3x16.md">D3DDDI_GAMMA_RAMP_RGB256x3x16</a> structure. The union that is contained in D3DKMT_SETGAMMARAMP holds a structure of this type if the <b>Type</b> member is D3DDDI_GAMMARAMP_RGB256x3x16.</p>
 </dd>
 
-### -field <b>pGammaRampDXGI1</b>
+### -field pGammaRampDXGI1
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-gamma-ramp-dxgi-1.md">D3DDDI_GAMMA_RAMP_DXGI_1</a> structure. The union that is contained in D3DKMT_SETGAMMARAMP holds a structure of this type if the <b>Type</b> member is D3DDDI_GAMMARAMP_DXGI_1.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>[in] The size of the D3DDDI_GAMMA_RAMP_RGB256x3x16 or D3DDDI_GAMMA_RAMP_DXGI_1 structure that <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-gamma-ramp-rgb256x3x16.md">D3DDDI_GAMMA_RAMP_RGB256x3x16</a> or <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-gamma-ramp-dxgi-1.md">D3DDDI_GAMMA_RAMP_DXGI_1</a> points to.</p>

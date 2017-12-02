@@ -7,7 +7,7 @@ old-location: ifsk\se_token_user.htm
 old-project: ifsk
 ms.assetid: 3B870461-0C5D-46DF-A850-EB796AE5A4CB
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: SE_TOKEN_USER, SE_TOKEN_USER, PSE_TOKEN_USER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,25 +61,25 @@ typedef struct _SE_TOKEN_USER {
 ## -struct-fields
 <dl>
 
-### -field <b>TokenUser</b>
+### -field TokenUser
 
 <dd>
 <p>Specifies a <b>TOKEN_USER</b> structure representing the user associated with an access token.</p>
 </dd>
 
-### -field <b>User</b>
+### -field User
 
 <dd>
 <p>Specifies an <b>SID_AND_ATTRIBUTES</b> structure representing the user associated with the access token.</p>
 </dd>
 
-### -field <b>Sid</b>
+### -field Sid
 
 <dd>
 <p>Specifies a <b>Security Identifier (SID)</b> structure used to uniquely identify users or groups</p>
 </dd>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>Specifies an array of SECURITY_MAX_SID_SIZE for allocating enough memory for the largest possible SID size.</p>
@@ -117,4 +117,4 @@ typedef struct _SE_TOKEN_USER {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SE_TOKEN_USER structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SE_TOKEN_USER structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

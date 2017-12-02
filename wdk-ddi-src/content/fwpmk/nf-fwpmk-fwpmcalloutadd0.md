@@ -7,7 +7,7 @@ old-location: netvista\fwpmcalloutadd0.htm
 old-project: netvista
 ms.assetid: f88a31c4-f42c-487d-b6d8-f8f609f2faff
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpmCalloutAdd0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ NTSTATUS NTAPI FwpmCalloutAdd0(
 ## -parameters
 <dl>
 
-### -param <i>engineHandle</i> [in]
+### -param engineHandle [in]
 
 <dd>
 <p>A handle for an open session to the filter engine. A callout driver calls the 
@@ -66,7 +66,7 @@ NTSTATUS NTAPI FwpmCalloutAdd0(
      session to the filter engine.</p>
 </dd>
 
-### -param <i>callout</i> [in]
+### -param callout [in]
 
 <dd>
 <p>A pointer to a constant 
@@ -74,14 +74,14 @@ NTSTATUS NTAPI FwpmCalloutAdd0(
      data that is required to add the callout to the filter engine.</p>
 </dd>
 
-### -param <i>sd</i> [in, optional]
+### -param sd [in, optional]
 
 <dd>
 <p>A pointer to a constant <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> structure that describes the security descriptor for
      the callout that is being added to the filter engine. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>id</i> [out, optional]
+### -param id [out, optional]
 
 <dd>
 <p>A pointer to a UINT32-typed variable that receives a run-time identifier that identifies the
@@ -187,9 +187,9 @@ NTSTATUS NTAPI FwpmCalloutAdd0(
 <a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>
 </dt>
 <dt>
-<a href="NULL">Types of Callouts</a>
+<a href="netvista.types_of_callouts">Types of Callouts</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmCalloutAdd0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmCalloutAdd0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

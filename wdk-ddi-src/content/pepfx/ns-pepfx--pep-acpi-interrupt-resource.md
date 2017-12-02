@@ -59,37 +59,37 @@ typedef struct _PEP_ACPI_INTERRUPT_RESOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="..\pepfx\ne-pepfx--pep-acpi-resource-type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value describing this resource.</p>
 </dd>
 
-### -field <b>InterruptType</b>
+### -field InterruptType
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--kinterrupt-mode.md">KINTERRUPT_MODE</a> enumeration value that identifies the interrupt type.</p>
 </dd>
 
-### -field <b>InterruptPolarity</b>
+### -field InterruptPolarity
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--kinterrupt-polarity.md">KINTERRUPT_POLARITY</a> enumeration value that identifies how a device signals an interrupt request on an interrupt line.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <a href="..\pepfx\ns-pepfx--pep-acpi-resource-flags.md">PEP_ACPI_RESOURCE_FLAGS</a> structure that describes the capabilities of this ACPI resource.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>The count of items in the <b>Pins</b> array.</p>
 </dd>
 
-### -field <b>Pins</b>
+### -field Pins
 
 <dd>
 <p>A list of pin numbers on the resource that are described by this descriptor. </p>

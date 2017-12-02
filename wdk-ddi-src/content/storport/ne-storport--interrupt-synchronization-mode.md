@@ -57,19 +57,19 @@ typedef enum _INTERRUPT_SYNCHRONIZATION_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="InterruptSupportNone"></a><a id="interruptsupportnone"></a><a id="INTERRUPTSUPPORTNONE"></a><b>InterruptSupportNone</b>
+### -field InterruptSupportNone
 
 <dd>
 <p>MSI interrupts are not supported.</p>
 </dd>
 
-### -field <a id="InterruptSynchronizeAll"></a><a id="interruptsynchronizeall"></a><a id="INTERRUPTSYNCHRONIZEALL"></a><b>InterruptSynchronizeAll</b>
+### -field InterruptSynchronizeAll
 
 <dd>
 <p>The Storport driver serializes all message signaled interrupts using a single interrupt spin lock. When an interrupt occurs, the Storport driver calls the miniport driver's <a href="storage.hwmsinterruptroutine">HwMSInterruptRoutine</a> routine at DIRQL after acquiring the interrupt spin lock.</p>
 </dd>
 
-### -field <a id="InterruptSynchronizePerMessage"></a><a id="interruptsynchronizepermessage"></a><a id="INTERRUPTSYNCHRONIZEPERMESSAGE"></a><b>InterruptSynchronizePerMessage</b>
+### -field InterruptSynchronizePerMessage
 
 <dd>
 <p>The miniport driver serializes message signaled interrupts on a per message basis. In the synchronization per message mode, the Storport driver calls the miniport driver's <a href="storage.hwmsinterruptroutine">HwMSInterruptRoutine</a> routine at DIRQL   holding the interrupt spin lock of the corresponding  message. For more on the behavior of this synchronization mode, see the remarks section for HwMSInterruptRoutine.</p>

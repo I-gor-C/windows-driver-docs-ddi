@@ -61,49 +61,49 @@ NTSTATUS __stdcall HidP_SetUsages(
 ## -parameters
 <dl>
 
-### -param <i>ReportType</i> [in]
+### -param ReportType [in]
 
 <dd>
 <p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of report located at <i>Report</i>.</p>
 </dd>
 
-### -param <i>UsagePage</i> [in]
+### -param UsagePage [in]
 
 <dd>
 <p>Specifies the <a href="hid.hid_usages#usage_page#usage_page">usage page</a> for the usages specified by <i>UsageList</i>.</p>
 </dd>
 
-### -param <i>LinkCollection</i> [in]
+### -param LinkCollection [in]
 
 <dd>
 <p>Specifies the <a href="https://msdn.microsoft.com/3f934661-c33c-4c08-82ac-ee2e0f519c8e">link collection</a> that contains the usages. If <i>LinkCollection</i> is nonzero, the routine only sets the usages, if they exist, in this link collection. If <i>LinkCollection</i> is zero, the routine sets the first usage for each specified usage in the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> associated with <i>PreparsedData</i>.</p>
 </dd>
 
-### -param <i>UsageList</i> [in, out]
+### -param UsageList [in, out]
 
 <dd>
 <p>Pointer to the array of usages.</p>
 </dd>
 
-### -param <i>UsageLength</i> [in, out]
+### -param UsageLength [in, out]
 
 <dd>
 <p>Specifies, on input, the number of usages in <i>UsageList</i>. See the Remarks section for information about the output value.</p>
 </dd>
 
-### -param <i>PreparsedData</i> [in]
+### -param PreparsedData [in]
 
 <dd>
-<p>Pointer to the <a href="NULL">preparsed data</a> of the top-level collection associated with the report located at <i>Report</i>.</p>
+<p>Pointer to the <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a> of the top-level collection associated with the report located at <i>Report</i>.</p>
 </dd>
 
-### -param <i>Report</i> [in]
+### -param Report [in]
 
 <dd>
 <p>Pointer to a report.</p>
 </dd>
 
-### -param <i>ReportLength</i> [in]
+### -param ReportLength [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a> returns in a collection's <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure.</p>
@@ -132,7 +132,7 @@ NTSTATUS __stdcall HidP_SetUsages(
 ## -remarks
 <p>If <b>HidP_SetUsages</b> cannot set a usage in <i>UsageList</i>, the routine sets <i>UsageLength</i> to the index of the usage that could not be set, and returns a status value that indicates the error.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

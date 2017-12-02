@@ -61,49 +61,49 @@ NTSTATUS KsPinDataIntersectionEx(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP that describes the property request.</p>
 </dd>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>Specifies the specific property that is being queried.</p>
 </dd>
 
-### -param <i>Data</i> [out]
+### -param Data [out]
 
 <dd>
 <p>Specifies the pin property-specific data.</p>
 </dd>
 
-### -param <i>DescriptorsCount</i> [in]
+### -param DescriptorsCount [in]
 
 <dd>
 <p>Specifies the number of descriptor structures.</p>
 </dd>
 
-### -param <i>Descriptor</i> [in]
+### -param Descriptor [in]
 
 <dd>
 <p>Specifies the pointer to the list of pin information structures.</p>
 </dd>
 
-### -param <i>DescriptorSize</i> [in]
+### -param DescriptorSize [in]
 
 <dd>
 <p>Size of the descriptor structures, in bytes.</p>
 </dd>
 
-### -param <i>IntersectHandler</i> [in, optional]
+### -param IntersectHandler [in, optional]
 
 <dd>
 <p>Contains the optional minidriver-defined <a href="stream.kstrintersecthandlerex">KStrIntersectHandlerEx</a> callback function to compare data ranges.</p>
 </dd>
 
-### -param <i>HandlerContext</i> [in, optional]
+### -param HandlerContext [in, optional]
 
 <dd>
 <p>Optional context that is supplied to the handler.</p>

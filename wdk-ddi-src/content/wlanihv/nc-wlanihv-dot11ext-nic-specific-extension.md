@@ -7,7 +7,7 @@ old-location: netvista\dot11extnicspecificextension.htm
 old-project: netvista
 ms.assetid: e588db31-d6d7-4b79-80f5-128c6d618ab6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ DWORD WINAPI * Dot11ExtNicSpecificExtension(
 ## -parameters
 <dl>
 
-### -param <i>hDot11SvcHandle</i> [in, optional]
+### -param hDot11SvcHandle [in, optional]
 
 <dd>
 <p>The handle used by the operating system to reference the WLAN adapter. This handle value was
@@ -66,21 +66,21 @@ DWORD WINAPI * Dot11ExtNicSpecificExtension(
      Handler function.</p>
 </dd>
 
-### -param <i>dwInBufferSize</i> [in]
+### -param dwInBufferSize [in]
 
 <dd>
 <p>The size, in bytes, of the caller-allocated data buffer referenced by the 
      <i>pvInBuffer</i> parameter.</p>
 </dd>
 
-### -param <i>pvInBuffer</i> [in]
+### -param pvInBuffer [in]
 
 <dd>
 <p>A pointer to a caller-allocated input buffer that contains the data required to perform the
      operation. The format of this data is defined by the IHV.</p>
 </dd>
 
-### -param <i>pdwOutBufferSize</i> [in, out]
+### -param pdwOutBufferSize [in, out]
 
 <dd>
 <p>A pointer to a caller-allocated DWORD variable. When the 
@@ -91,7 +91,7 @@ DWORD WINAPI * Dot11ExtNicSpecificExtension(
      <i>pvOutBuffer</i> parameter.</p>
 </dd>
 
-### -param <i>pvOutBuffer</i> [out]
+### -param pvOutBuffer [out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that contains data returned from the Native 802.11 miniport
@@ -159,4 +159,4 @@ DWORD WINAPI * Dot11ExtNicSpecificExtension(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_NIC_SPECIFIC_EXTENSION callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_NIC_SPECIFIC_EXTENSION callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -64,55 +64,55 @@ typedef struct tagKS_VIDEOINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>rcSource</b>
+### -field rcSource
 
 <dd>
 <p>Specifies a clipping rectangle that selects the portion of the active video signal to use. </p>
 </dd>
 
-### -field <b>rcTarget</b>
+### -field rcTarget
 
 <dd>
 <p>Specifies a rectangle that indicates which part of the target buffer to use.</p>
 </dd>
 
-### -field <b>dwBitRate</b>
+### -field dwBitRate
 
 <dd>
 <p>Specifies a value that indicates the video stream's approximate data rate, in bits per second.</p>
 </dd>
 
-### -field <b>dwBitErrorRate</b>
+### -field dwBitErrorRate
 
 <dd>
 <p>Specifies a value that indicates the video stream's data error rate, in bit errors per second.</p>
 </dd>
 
-### -field <b>AvgTimePerFrame</b>
+### -field AvgTimePerFrame
 
 <dd>
 <p>Specifies the average time per frame in 100-nanosecond units.</p>
 </dd>
 
-### -field <b>bmiHeader</b>
+### -field bmiHeader
 
 <dd>
 <p>Describes a <a href="stream.ks_bitmapinfoheader">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.</p>
 </dd>
 
-### -field <b>bmiColors</b>
+### -field bmiColors
 
 <dd>
 <p>Array of KS_RGBQUAD structures that specifies the video's color palette. Each structure represents a single color, which is a combination of red, green, and blue intensities.</p>
 </dd>
 
-### -field <b>dwBitMasks</b>
+### -field dwBitMasks
 
 <dd>
 <p>Array of DWORD values that specify true-color bitmasks.</p>
 </dd>
 
-### -field <b>TrueColorInfo</b>
+### -field TrueColorInfo
 
 <dd>
 <p>

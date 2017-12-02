@@ -7,7 +7,7 @@ old-location: netvista\ril_sendrestricteduicccmd.htm
 old-project: netvista
 ms.assetid: f9341659-105b-4ec7-bce7-878698de8c14
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SendRestrictedUiccCmd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,31 +63,31 @@ HRESULT  RIL_SendRestrictedUiccCmd(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwCommand</i> 
+### -param dwCommand 
 
 <dd></dd>
 
-### -param <i>lpParameters</i> 
+### -param lpParameters 
 
 <dd></dd>
 
-### -param <i>lpbData</i> 
+### -param lpbData 
 
 <dd></dd>
 
-### -param <i>dwSize</i> 
+### -param dwSize 
 
 <dd></dd>
 
-### -param <i>lpLockVerification</i> 
+### -param lpLockVerification 
 
 <dd></dd>
 </dl>

@@ -55,7 +55,7 @@ typedef struct _SPLCLIENT_INFO_2_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>hSplPrinter</b>
+### -field hSplPrinter
 
 <dd>
 <p>Specifies the server-side handle to be used for direct calls.</p>

@@ -58,14 +58,14 @@ typedef struct _BTH_VENDOR_SPECIFIC_COMMAND {
 ## -struct-fields
 <dl>
 
-### -field <b>ManufacturerId</b>
+### -field ManufacturerId
 
 <dd>
 <p>The manufacturer identifier of the radio. Radios that have this manufacturer identifier can
      receive the vendor-specific command.</p>
 </dd>
 
-### -field <b>LmpVersion</b>
+### -field LmpVersion
 
 <dd>
 <p>A UCHAR that contains the link management protocol (LMP) version. If the LMP version of a radio is
@@ -74,7 +74,7 @@ typedef struct _BTH_VENDOR_SPECIFIC_COMMAND {
      <b>LmpVersion</b> is zero, all radios will receive the vendor-specific command.</p>
 </dd>
 
-### -field <b>MatchAnySinglePattern</b>
+### -field MatchAnySinglePattern
 
 <dd>
 <p>A BOOLEAN value that specifies if all the patterns in the 
@@ -86,7 +86,7 @@ typedef struct _BTH_VENDOR_SPECIFIC_COMMAND {
      <b>MatchAnySinglePattern</b> is <b>TRUE</b>, matching any pattern associates an event with the command.</p>
 </dd>
 
-### -field <b>HciHeader</b>
+### -field HciHeader
 
 <dd>
 <p>A 
@@ -96,7 +96,7 @@ typedef struct _BTH_VENDOR_SPECIFIC_COMMAND {
      not include the size of the patterns.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>A UCHAR array that contains the data and patterns for the command that is specified in the 

@@ -60,40 +60,40 @@ typedef struct _USBFN_CLASS_INFORMATION_PACKET {
 ## -struct-fields
 <dl>
 
-### -field <b>FullSpeedClassInterface</b>
+### -field FullSpeedClassInterface
 
 <dd>
-<p>A <a href="buses.usbfn_class_interface">USBFN_CLASS_INTERFACE</a> structure that describes an interface for full speed device.</p>
+<p>A <a href="..\usbfnbase\ns-usbfnbase--usbfn-class-interface.md">USBFN_CLASS_INTERFACE</a> structure that describes an interface for full speed device.</p>
 </dd>
 
-### -field <b>HighSpeedClassInterface</b>
+### -field HighSpeedClassInterface
 
 <dd>
-<p>A <a href="buses.usbfn_class_interface">USBFN_CLASS_INTERFACE</a> structure that describes an interface for high speed device.</p>
+<p>A <a href="..\usbfnbase\ns-usbfnbase--usbfn-class-interface.md">USBFN_CLASS_INTERFACE</a> structure that describes an interface for high speed device.</p>
 </dd>
 
-### -field <b>InterfaceName[MAX_INTERFACE_NAME_LENGTH]</b>
+### -field InterfaceName[MAX_INTERFACE_NAME_LENGTH]
 
 <dd>
 <p>A string that contains the interface name.</p>
 </dd>
 
-### -field <b>InterfaceGuid[MAX_INTERFACE_GUID_LENGTH]</b>
+### -field InterfaceGuid[MAX_INTERFACE_GUID_LENGTH]
 
 <dd>
 <p>A string from which the driver can derive the device interface GUID.</p>
 </dd>
 
-### -field <b>HasInterfaceGuid</b>
+### -field HasInterfaceGuid
 
 <dd>
 <p>Determines whether the driver has published a device interface is GUID. </p>
 </dd>
 
-### -field <b>SuperSpeedClassInterface</b>
+### -field SuperSpeedClassInterface
 
 <dd>
-<p>A <a href="buses.usbfn_class_interface">USBFN_CLASS_INTERFACE</a> structure that describes an interface for SuperSpeed device.</p>
+<p>A <a href="..\usbfnbase\ns-usbfnbase--usbfn-class-interface.md">USBFN_CLASS_INTERFACE</a> structure that describes an interface for SuperSpeed device.</p>
 </dd>
 </dl>
 
@@ -117,7 +117,7 @@ typedef struct _USBFN_CLASS_INFORMATION_PACKET {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbfn_class_interface">USBFN_CLASS_INTERFACE</a>
+<a href="..\usbfnbase\ns-usbfnbase--usbfn-class-interface.md">USBFN_CLASS_INTERFACE</a>
 </dt>
 <dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatesymboliclink.md">WdfDeviceCreateSymbolicLink</a>

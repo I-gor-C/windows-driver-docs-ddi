@@ -7,7 +7,7 @@ old-location: image\wias_changed_value_info.htm
 old-project: image
 ms.assetid: bfef9d54-fcd5-436b-b3ec-8cd3b8f38360
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: WIAS_CHANGED_VALUE_INFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,13 +68,13 @@ typedef struct _WIAS_CHANGED_VALUE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>bChanged</b>
+### -field bChanged
 
 <dd>
 <p>Is a Boolean that indicates whether a property has changed. That is, if the property's current value is different from its value before <a href="image.iwiaminidrv_drvvalidateitemproperties">IWiaMiniDrv::drvValidateItemProperties</a> was called. Upon return from one of the <b>wiasGetChangedValue</b><i>Xxx</i> functions, this member is <b>TRUE</b> if the property changed, and <b>FALSE</b> if the property did not change. </p>
 </dd>
 
-### -field <b>vt</b>
+### -field vt
 
 <dd>
 <p>Specifies the variant data type for the property. This member can be one of the following:</p>
@@ -110,12 +110,12 @@ typedef struct _WIAS_CHANGED_VALUE_INFO {
 <p>See the PROPVARIANT structure in the Microsoft Windows SDK documentation for more information.</p>
 </dd>
 
-### -field <b>Old</b>
+### -field Old
 
 <dd>
 </dd>
 
-### -field <b>Current</b>
+### -field Current
 
 <dd>
 </dd>
@@ -166,4 +166,4 @@ typedef struct _WIAS_CHANGED_VALUE_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIAS_CHANGED_VALUE_INFO structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIAS_CHANGED_VALUE_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

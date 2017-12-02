@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcsmsgclass.htm
 old-project: netvista
 ms.assetid: 3190aa21-201a-40d1-b894-dd393e413826
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILMSGDCSMSGCLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DCSMSGCLASS_1"></a><a id="ril_dcsmsgclass_1"></a><b>RIL_DCSMSGCLASS_1</b>
+### -field RIL_DCSMSGCLASS_1
 
 <dd></dd>
 
-### -field <a id="RIL_DCSMSGCLASS_2"></a><a id="ril_dcsmsgclass_2"></a><b>RIL_DCSMSGCLASS_2</b>
+### -field RIL_DCSMSGCLASS_2
 
 <dd></dd>
 
-### -field <a id="RIL_DCSMSGCLASS_3"></a><a id="ril_dcsmsgclass_3"></a><b>RIL_DCSMSGCLASS_3</b>
+### -field RIL_DCSMSGCLASS_3
 
 <dd></dd>
 
-### -field <a id="RIL_DCSMSGCLASS_MAX"></a><a id="ril_dcsmsgclass_max"></a><b>RIL_DCSMSGCLASS_MAX</b>
+### -field RIL_DCSMSGCLASS_MAX
 
 <dd></dd>
 </dl>

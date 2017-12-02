@@ -54,7 +54,7 @@ typedef struct _D3DDDIARG_DESTROYCRYPTOSESSION {
 ## -struct-fields
 <dl>
 
-### -field <b>hCryptoSession</b>
+### -field hCryptoSession
 
 <dd>
 <p>[in] The handle to the encryption session that the driver destroys.</p>

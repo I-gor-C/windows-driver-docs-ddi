@@ -7,7 +7,7 @@ old-location: netvista\dot11_power_mgmt_mode_status_info.htm
 old-project: netvista
 ms.assetid: A373EA34-A7CF-47B3-8194-438BE7F4FC9C
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_POWER_MGMT_MODE_STATUS_INFO, DOT11_POWER_MGMT_MODE_STATUS_INFO, *PDOT11_POWER_MGMT_MODE_STATUSINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ typedef struct _DOT11_POWER_MGMT_MODE_STATUS_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_POWER_MGMT_MODE_STATUS_INFO structure. The required settings for the members of <b>Header</b> are the following.</p>
@@ -81,13 +81,13 @@ typedef struct _DOT11_POWER_MGMT_MODE_STATUS_INFO {
 <p> </p>
 </dd>
 
-### -field <b>PowerSaveMode</b>
+### -field PowerSaveMode
 
 <dd>
 <p>The current power mode of the hardware. The mode may be <b>dot11_power_mode_active</b> or <b>dot11_power_mode_powersave</b>, but should not be <b>dot11_power_mode_unknown</b>.</p>
 </dd>
 
-### -field <b>uPowerSaveLevel</b>
+### -field uPowerSaveLevel
 
 <dd>
 <p>One of the following values describing power saving levels:</p>
@@ -116,7 +116,7 @@ typedef struct _DOT11_POWER_MGMT_MODE_STATUS_INFO {
 <p> </p>
 </dd>
 
-### -field <b>Reason</b>
+### -field Reason
 
 <dd>
 <p>Reason that the device changed into the current power mode.</p>

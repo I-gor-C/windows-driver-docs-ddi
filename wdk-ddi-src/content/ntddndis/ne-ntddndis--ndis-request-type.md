@@ -7,7 +7,7 @@ old-location: netvista\ndis_request_type.htm
 old-project: netvista
 ms.assetid: c4352eab-8bbd-429e-93ad-190372d29f2c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT, *PGET_CONFIGURATION_IOCTL_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ typedef enum _NDIS_REQUEST_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="NdisRequestQueryInformation"></a><a id="ndisrequestqueryinformation"></a><a id="NDISREQUESTQUERYINFORMATION"></a><b>NdisRequestQueryInformation</b>
+### -field NdisRequestQueryInformation
 
 <dd>
 <p>A query-information request. For certain requests, NDIS satisfies the request. Otherwise,
@@ -76,14 +76,14 @@ typedef enum _NDIS_REQUEST_TYPE {
 <div> </div>
 </dd>
 
-### -field <a id="NdisRequestSetInformation"></a><a id="ndisrequestsetinformation"></a><a id="NDISREQUESTSETINFORMATION"></a><b>NdisRequestSetInformation</b>
+### -field NdisRequestSetInformation
 
 <dd>
 <p>A set-information request. NDIS forwards such a request to the underlying driver's 
      <i>MiniportOidRequest</i> function.</p>
 </dd>
 
-### -field <a id="NdisRequestQueryStatistics"></a><a id="ndisrequestquerystatistics"></a><a id="NDISREQUESTQUERYSTATISTICS"></a><b>NdisRequestQueryStatistics</b>
+### -field NdisRequestQueryStatistics
 
 <dd>
 <p>A query-statistics request. For certain requests, NDIS satisfies the request. Otherwise,
@@ -93,61 +93,61 @@ typedef enum _NDIS_REQUEST_TYPE {
 <div> </div>
 </dd>
 
-### -field <a id="NdisRequestOpen"></a><a id="ndisrequestopen"></a><a id="NDISREQUESTOPEN"></a><b>NdisRequestOpen</b>
+### -field NdisRequestOpen
 
 <dd>
 <p>This type is obsolete.</p>
 </dd>
 
-### -field <a id="NdisRequestClose"></a><a id="ndisrequestclose"></a><a id="NDISREQUESTCLOSE"></a><b>NdisRequestClose</b>
+### -field NdisRequestClose
 
 <dd>
 <p>This type is obsolete.</p>
 </dd>
 
-### -field <a id="NdisRequestSend"></a><a id="ndisrequestsend"></a><a id="NDISREQUESTSEND"></a><b>NdisRequestSend</b>
+### -field NdisRequestSend
 
 <dd>
 <p>This type is obsolete.</p>
 </dd>
 
-### -field <a id="NdisRequestTransferData"></a><a id="ndisrequesttransferdata"></a><a id="NDISREQUESTTRANSFERDATA"></a><b>NdisRequestTransferData</b>
+### -field NdisRequestTransferData
 
 <dd>
 <p>This type is obsolete.</p>
 </dd>
 
-### -field <a id="NdisRequestReset"></a><a id="ndisrequestreset"></a><a id="NDISREQUESTRESET"></a><b>NdisRequestReset</b>
+### -field NdisRequestReset
 
 <dd>
 <p>This type is obsolete.</p>
 </dd>
 
-### -field <a id="NdisRequestGeneric1"></a><a id="ndisrequestgeneric1"></a><a id="NDISREQUESTGENERIC1"></a><b>NdisRequestGeneric1</b>
+### -field NdisRequestGeneric1
 
 <dd>
 <p>A request that is specific to the type of the miniport driver.</p>
 </dd>
 
-### -field <a id="NdisRequestGeneric2"></a><a id="ndisrequestgeneric2"></a><a id="NDISREQUESTGENERIC2"></a><b>NdisRequestGeneric2</b>
+### -field NdisRequestGeneric2
 
 <dd>
 <p>A request that is specific to the type of the miniport driver.</p>
 </dd>
 
-### -field <a id="NdisRequestGeneric3"></a><a id="ndisrequestgeneric3"></a><a id="NDISREQUESTGENERIC3"></a><b>NdisRequestGeneric3</b>
+### -field NdisRequestGeneric3
 
 <dd>
 <p>A request that is specific to the type of the miniport driver.</p>
 </dd>
 
-### -field <a id="NdisRequestGeneric4"></a><a id="ndisrequestgeneric4"></a><a id="NDISREQUESTGENERIC4"></a><b>NdisRequestGeneric4</b>
+### -field NdisRequestGeneric4
 
 <dd>
 <p>A request that is specific to the type of the miniport driver.</p>
 </dd>
 
-### -field <a id="NdisRequestMethod"></a><a id="ndisrequestmethod"></a><a id="NDISREQUESTMETHOD"></a><b>NdisRequestMethod</b>
+### -field NdisRequestMethod
 
 <dd>
 <p>A method request. NDIS forwards such a request to the underlying driver's 
@@ -192,4 +192,4 @@ typedef enum _NDIS_REQUEST_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_REQUEST_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_REQUEST_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

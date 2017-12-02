@@ -58,28 +58,28 @@ typedef struct _USBFN_CLASS_INTERFACE_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>BaseInterfaceNumber</b>
+### -field BaseInterfaceNumber
 
 <dd>
 <p>The index number of the interface.</p>
 </dd>
 
-### -field <b>InterfaceCount</b>
+### -field InterfaceCount
 
 <dd>
 <p>The number of USB interfaces contained in  the selected function.</p>
 </dd>
 
-### -field <b>PipeCount</b>
+### -field PipeCount
 
 <dd>
 <p>The number of endpoints contained in  the interface.</p>
 </dd>
 
-### -field <b>PipeArr</b>
+### -field PipeArr
 
 <dd>
-<p>An array of <a href="buses.usbfn_pipe_information">USBFN_PIPE_INFORMATION</a> structures that describes the endpoints in the interface.</p>
+<p>An array of <a href="..\usbfnbase\ns-usbfnbase--usbfn-pipe-information.md">USBFN_PIPE_INFORMATION</a> structures that describes the endpoints in the interface.</p>
 </dd>
 </dl>
 

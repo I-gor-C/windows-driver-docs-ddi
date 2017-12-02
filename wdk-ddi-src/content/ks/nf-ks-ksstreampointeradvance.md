@@ -54,7 +54,7 @@ NTSTATUS KsStreamPointerAdvance(
 ## -parameters
 <dl>
 
-### -param <i>StreamPointer</i> [in]
+### -param StreamPointer [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure representing the stream pointer to advance to reference the next available data frame.</p>
@@ -69,7 +69,7 @@ NTSTATUS KsStreamPointerAdvance(
 
 <p>An attempt to advance a stream pointer that is unlocked always succeeds and returns STATUS_SUCCESS. Since the stream pointer is not locked, there is no way to determine if the stream pointer references actual data. The minidriver must attempt a lock to determine if the newly advanced stream pointer references a data frame or not.</p>
 
-<p>Also see <a href="NULL">Stream Pointers</a>.</p>
+<p>Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736f">Stream Pointers</a>.</p>
 
 ## -requirements
 <table>

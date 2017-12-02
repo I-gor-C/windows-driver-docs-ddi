@@ -7,7 +7,7 @@ old-location: ifsk\token_groups_and_privileges.htm
 old-project: ifsk
 ms.assetid: 27d4793d-bdb4-46c5-b6e4-a2136e899adc
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: TOKEN_GROUPS_AND_PRIVILEGES, TOKEN_GROUPS_AND_PRIVILEGES, *PTOKEN_GROUPS_AND_PRIVILEGES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,61 +63,61 @@ typedef struct _TOKEN_GROUPS_AND_PRIVILEGES {
 ## -struct-fields
 <dl>
 
-### -field <b>SidCount</b>
+### -field SidCount
 
 <dd>
 <p>Specifies the number of SIDs in the access token. </p>
 </dd>
 
-### -field <b>SidLength</b>
+### -field SidLength
 
 <dd>
 <p>Specifies the length, in bytes, required to hold all of the user SIDs and the account SID for the group. </p>
 </dd>
 
-### -field <b>Sids</b>
+### -field Sids
 
 <dd>
 <p>A pointer to SID_AND_ATTRIBUTES structures that contain a set of SIDs and corresponding attributes. </p>
 </dd>
 
-### -field <b>RestrictedSidCount</b>
+### -field RestrictedSidCount
 
 <dd>
 <p>Specifies the number of the restricted SIDs included in the access token. </p>
 </dd>
 
-### -field <b>RestrictedSidLength</b>
+### -field RestrictedSidLength
 
 <dd>
 <p>Specifies the length, in bytes, required to hold all of the restricted SIDs. </p>
 </dd>
 
-### -field <b>RestrictedSids</b>
+### -field RestrictedSids
 
 <dd>
 <p>A pointer to <a href="..\ntifs\ns-ntifs--sid-and-attributes.md">SID_AND_ATTRIBUTES</a> structures that contain a set of restricted SIDs and corresponding attributes. </p>
 </dd>
 
-### -field <b>PrivilegeCount</b>
+### -field PrivilegeCount
 
 <dd>
 <p>Specifies the number of privileges included in the access token. </p>
 </dd>
 
-### -field <b>PrivilegeLength</b>
+### -field PrivilegeLength
 
 <dd>
 <p>Specifies the length, in bytes, needed to hold all of the privileges. </p>
 </dd>
 
-### -field <b>Privileges</b>
+### -field Privileges
 
 <dd>
 <p>A pointer to <a href="..\wdm\ns-wdm--luid-and-attributes.md">LUID_AND_ATTRIBUTES</a> structures that contain a set of privileges. </p>
 </dd>
 
-### -field <b>AuthenticationId</b>
+### -field AuthenticationId
 
 <dd>
 <p>The locally unique identifier (LUID) of the authenticator of the token. </p>
@@ -203,4 +203,4 @@ typedef struct _TOKEN_GROUPS_AND_PRIVILEGES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TOKEN_GROUPS_AND_PRIVILEGES structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TOKEN_GROUPS_AND_PRIVILEGES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

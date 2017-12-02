@@ -54,7 +54,7 @@ typedef struct _ScsiReportLuns_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueSessionId</b>
+### -field UniqueSessionId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in their <i>UniqueSessionId</i> parameter. </p>
@@ -90,7 +90,7 @@ typedef struct _ScsiReportLuns_IN {
 <a href="storage.scsireportluns">ScsiReportLuns</a>
 </dt>
 <dt>
-<a href="..\hbapiwmi\ns-hbapiwmi--scsireportluns-out.md">ScsiReportLuns_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--scsireportluns-out.md">ScsiReportLuns_OUT</a>
 </dt>
 </dl>
 <p> </p>

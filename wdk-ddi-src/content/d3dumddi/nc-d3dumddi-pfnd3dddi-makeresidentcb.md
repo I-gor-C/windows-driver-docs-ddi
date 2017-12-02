@@ -58,13 +58,13 @@ HRESULT APIENTRY CALLBACK* pfnMakeResidentCb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device.</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-makeresident.md">D3DDDI_MAKERESIDENT</a> structure that describes the memory pages to make resident.

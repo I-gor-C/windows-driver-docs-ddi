@@ -56,13 +56,13 @@ NTSTATUS IoValidateDeviceIoControlAccess(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>For more information, see  the <a href="..\wdmsec\nf-wdmsec-wdmlibiovalidatedeviceiocontrolaccess.md">WdmlibIoValidateDeviceIoControlAccess</a> function.</p>
 </dd>
 
-### -param <i>RequiredAccess</i> [in]
+### -param RequiredAccess [in]
 
 <dd>
 <p>For more information, see  the <a href="..\wdmsec\nf-wdmsec-wdmlibiovalidatedeviceiocontrolaccess.md">WdmlibIoValidateDeviceIoControlAccess</a> function.</p>
@@ -138,7 +138,7 @@ NTSTATUS IoValidateDeviceIoControlAccess(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 </dl>
 <p> </p>

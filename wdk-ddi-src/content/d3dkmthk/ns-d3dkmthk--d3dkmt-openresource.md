@@ -70,74 +70,74 @@ typedef struct _D3DKMT_OPENRESOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the device that the resource and allocations are associated with.</p>
 </dd>
 
-### -field <b>hGlobalShare</b>
+### -field hGlobalShare
 
 <dd>
 <p>[in] A handle to the shared resource to open.</p>
 </dd>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of elements in the array that <b>pOpenAllocationInfo</b> specifies, which represents the number of allocations that are associated with the resource.</p>
 </dd>
 
-### -field <b>pOpenAllocationInfo</b>
+### -field pOpenAllocationInfo
 
 <dd>
 <p>[in/out] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structures that describe each allocation to update.</p>
 </dd>
 
-### -field <b>pOpenAllocationInfo2</b>
+### -field pOpenAllocationInfo2
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>This member is available beginning with Windows 7.</p>
 </dd>
 
-### -field <b>pPrivateRuntimeData</b>
+### -field pPrivateRuntimeData
 
 <dd>
 <p>[in] A pointer to a caller-supplied buffer where the OpenGL runtime copies private data that is associated with the resource.</p>
 </dd>
 
-### -field <b>PrivateRuntimeDataSize</b>
+### -field PrivateRuntimeDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the buffer that <b>pPrivateRuntimeData</b> points to.</p>
 </dd>
 
-### -field <b>pResourcePrivateDriverData</b>
+### -field pResourcePrivateDriverData
 
 <dd>
 <p>[in/out] A pointer to a buffer that receives the private data that is associated with the resource. This data is per resource and not per allocation.</p>
 </dd>
 
-### -field <b>ResourcePrivateDriverDataSize</b>
+### -field ResourcePrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the buffer that <b>pResourcePrivateDriverData</b> points to.</p>
 </dd>
 
-### -field <b>pTotalPrivateDriverDataBuffer</b>
+### -field pTotalPrivateDriverDataBuffer
 
 <dd>
 <p>[in/out] A pointer to a buffer that receives the private data for all of the allocations that are associated with the resource. The caller should never access this private data directly.</p>
 </dd>
 
-### -field <b>TotalPrivateDriverDataBufferSize</b>
+### -field TotalPrivateDriverDataBufferSize
 
 <dd>
 <p>[in/out] On input, the size, in bytes, of the buffer that <b>pTotalPrivateDriverDataBuffer</b> points to. On output, this member specifies the size, in bytes, of data that is written to the buffer that <b>pTotalPrivateDriverDataBuffer</b> points to.</p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the newly opened shared resource that is associated with the allocations.</p>

@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_WINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>WNear</b>
+### -field WNear
 
 <dd>
 <p>[in] A FLOAT value that indicates the near limit in the w range. </p>
 </dd>
 
-### -field <b>WFar</b>
+### -field WFar
 
 <dd>
 <p>[in] A FLOAT value that indicates the far limit in the w range. </p>

@@ -56,13 +56,13 @@ typedef struct _USBFN_USB_STRING {
 ## -struct-fields
 <dl>
 
-### -field <b>StringIndex</b>
+### -field StringIndex
 
 <dd>
 <p>The string index.</p>
 </dd>
 
-### -field <b> UsbString</b>
+### -field  UsbString
 
 <dd>
 <p>Pointer to the string.  </p>
@@ -89,7 +89,7 @@ typedef struct _USBFN_USB_STRING {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ioctl_internal_usbfn_register_usb_string">IOCTL_INTERNAL_USBFN_REGISTER_USB_STRING</a>
+<a href="..\usbfnioctl\ni-usbfnioctl-ioctl-internal-usbfn-register-usb-string.md">IOCTL_INTERNAL_USBFN_REGISTER_USB_STRING</a>
 </dt>
 </dl>
 <p> </p>

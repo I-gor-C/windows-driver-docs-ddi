@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: <= PASSIVE_LEVEL
 req.iface: 
 ---
 
@@ -78,7 +78,7 @@ typedef struct _BTHDDI_SDP_NODE_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>A structure that describes the 
@@ -87,14 +87,14 @@ typedef struct _BTHDDI_SDP_NODE_INTERFACE {
      <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a>.</p>
 </dd>
 
-### -field <b>SdpCreateNodeTree</b>
+### -field SdpCreateNodeTree
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodetree.md">SdpCreateNodeTree</a> function.</p>
 </dd>
 
-### -field <b>SdpFreeTree</b>
+### -field SdpFreeTree
 
 <dd>
 <p>A pointer to the 
@@ -102,126 +102,126 @@ typedef struct _BTHDDI_SDP_NODE_INTERFACE {
      <i>.</i></p>
 </dd>
 
-### -field <b>SdpCreateNodeNil</b>
+### -field SdpCreateNodeNil
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodenil.md">SdpCreateNodeNil</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeBoolean</b>
+### -field SdpCreateNodeBoolean
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeboolean.md">SdpCreateNodeBoolean</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeUint8</b>
+### -field SdpCreateNodeUint8
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeuint8.md">SdpCreateNodeUInt8</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeUint16</b>
+### -field SdpCreateNodeUint16
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeuint16.md">SdpCreateNodeUInt16</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeUint32</b>
+### -field SdpCreateNodeUint32
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeuint32.md">SdpCreateNodeUInt32</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeUint64</b>
+### -field SdpCreateNodeUint64
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeuint64.md">SdpCreateNodeUInt64</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeUint128</b>
+### -field SdpCreateNodeUint128
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeuint128.md">SdpCreateNodeUInt128</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeInt8</b>
+### -field SdpCreateNodeInt8
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeuint128.md">SdpCreateNodeInt8</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeInt16</b>
+### -field SdpCreateNodeInt16
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeint16.md">SdpCreateNodeInt16</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeInt32</b>
+### -field SdpCreateNodeInt32
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeint32.md">SdpCreateNodeInt32</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeInt64</b>
+### -field SdpCreateNodeInt64
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeint64.md">SdpCreateNodeInt64</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeInt128</b>
+### -field SdpCreateNodeInt128
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeint128.md">SdpCreateNodeInt128</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeUuid16</b>
+### -field SdpCreateNodeUuid16
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeuuid16.md">SdpCreateNodeUUID16</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeUuid32</b>
+### -field SdpCreateNodeUuid32
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeuuid32.md">SdpCreateNodeUUID32</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeUuid128</b>
+### -field SdpCreateNodeUuid128
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeuuid128.md">SdpCreateNodeUUID128</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeString</b>
+### -field SdpCreateNodeString
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodestring.md">SdpCreateNodeString</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeUrl</b>
+### -field SdpCreateNodeUrl
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeurl.md">SdpCreateNodeUrl</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeAlternative</b>
+### -field SdpCreateNodeAlternative
 
 <dd>
 <p>A pointer to the 
@@ -229,7 +229,7 @@ typedef struct _BTHDDI_SDP_NODE_INTERFACE {
      SdpCreateNodeAlternative</a> function.</p>
 </dd>
 
-### -field <b>SdpCreateNodeSequence</b>
+### -field SdpCreateNodeSequence
 
 <dd>
 <p>A pointer to the 
@@ -237,7 +237,7 @@ typedef struct _BTHDDI_SDP_NODE_INTERFACE {
      SdpCreateNodeSequence</a> function.</p>
 </dd>
 
-### -field <b>SdpAddAttributeToTree</b>
+### -field SdpAddAttributeToTree
 
 <dd>
 <p>A pointer to the 
@@ -245,7 +245,7 @@ typedef struct _BTHDDI_SDP_NODE_INTERFACE {
      SdpAddAttributeToTree</a> function.</p>
 </dd>
 
-### -field <b>SdpAppendNodeToContainerNode</b>
+### -field SdpAppendNodeToContainerNode
 
 <dd>
 <p>A pointer to the 

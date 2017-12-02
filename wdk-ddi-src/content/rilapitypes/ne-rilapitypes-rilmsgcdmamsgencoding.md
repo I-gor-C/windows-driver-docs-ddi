@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmamsgencoding_2.htm
 old-project: netvista
 ms.assetid: 85586f69-09c3-4ebe-ad90-eb1b18e9d552
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,47 +65,47 @@ typedef enum _RILMSGCDMAMSGENCODING {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGCODING_7BITASCII"></a><a id="ril_msgcoding_7bitascii"></a><b>RIL_MSGCODING_7BITASCII</b>
+### -field RIL_MSGCODING_7BITASCII
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCODING_UNICODE"></a><a id="ril_msgcoding_unicode"></a><b>RIL_MSGCODING_UNICODE</b>
+### -field RIL_MSGCODING_UNICODE
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCODING_7BITGSM"></a><a id="ril_msgcoding_7bitgsm"></a><b>RIL_MSGCODING_7BITGSM</b>
+### -field RIL_MSGCODING_7BITGSM
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCODING_8BITGSM"></a><a id="ril_msgcoding_8bitgsm"></a><b>RIL_MSGCODING_8BITGSM</b>
+### -field RIL_MSGCODING_8BITGSM
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCODING_OCTET"></a><a id="ril_msgcoding_octet"></a><b>RIL_MSGCODING_OCTET</b>
+### -field RIL_MSGCODING_OCTET
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCODING_IA5"></a><a id="ril_msgcoding_ia5"></a><b>RIL_MSGCODING_IA5</b>
+### -field RIL_MSGCODING_IA5
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCODING_JIS"></a><a id="ril_msgcoding_jis"></a><b>RIL_MSGCODING_JIS</b>
+### -field RIL_MSGCODING_JIS
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCODING_KOREAN"></a><a id="ril_msgcoding_korean"></a><b>RIL_MSGCODING_KOREAN</b>
+### -field RIL_MSGCODING_KOREAN
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCODING_LATIN_HEBREW"></a><a id="ril_msgcoding_latin_hebrew"></a><b>RIL_MSGCODING_LATIN_HEBREW</b>
+### -field RIL_MSGCODING_LATIN_HEBREW
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCODING_LATIN"></a><a id="ril_msgcoding_latin"></a><b>RIL_MSGCODING_LATIN</b>
+### -field RIL_MSGCODING_LATIN
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCODING_MAX"></a><a id="ril_msgcoding_max"></a><b>RIL_MSGCODING_MAX</b>
+### -field RIL_MSGCODING_MAX
 
 <dd></dd>
 </dl>

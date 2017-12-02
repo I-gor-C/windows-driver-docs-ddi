@@ -58,13 +58,13 @@ HRESULT APIENTRY CALLBACK* pfnDeallocateCb(
 ## -parameters
 <dl>
 
-### -param <i>hRTDevice</i> [in]
+### -param hRTDevice [in]
 
 <dd>
 <p>The handle for a device.</p>
 </dd>
 
-### -param <i>Deallocate</i> [in]
+### -param Deallocate [in]
 
 <dd>
 <p>A  <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddicb-deallocate-0022.md">D3D12DDICB_DEALLOCATE_0022</a> structure that contains information for a deallocation.</p>

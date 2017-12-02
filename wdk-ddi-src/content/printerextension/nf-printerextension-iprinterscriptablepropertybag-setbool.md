@@ -56,13 +56,13 @@ HRESULT SetBool(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd>
 <p>The property to set.</p>
 </dd>
 
-### -param <i>bValue</i> [in]
+### -param bValue [in]
 
 <dd>
 <p>The value to set.</p>

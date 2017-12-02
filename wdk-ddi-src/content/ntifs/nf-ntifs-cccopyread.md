@@ -7,7 +7,7 @@ old-location: ifsk\cccopyread.htm
 old-project: ifsk
 ms.assetid: ab095bc4-b896-4c8b-a778-714952fd41d4
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: CcCopyRead
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ BOOLEAN CcCopyRead(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>A pointer to a file object for the cached file from which the data is to be read.</p>
 </dd>
 
-### -param <i>FileOffset</i> [in]
+### -param FileOffset [in]
 
 <dd>
 <p>A pointer to a variable that specifies the starting byte offset within the cached file.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length in bytes of the data to be read.</p>
 </dd>
 
-### -param <i>Wait</i> [in]
+### -param Wait [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if the caller can be put into a wait state until all the data has been copied, <b>FALSE</b> otherwise.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>A pointer to a buffer into which the data is to be copied. </p>
 </dd>
 
-### -param <i>IoStatus</i> [out]
+### -param IoStatus [out]
 
 <dd>
 <p>A pointer to a caller-allocated structure that receives the final completion status and information about the operation. If not all of the data is copied successfully, <i>IoStatus.Information</i> contains the actual number of bytes that were copied.</p>
@@ -193,4 +193,4 @@ BOOLEAN CcCopyRead(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcCopyRead routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcCopyRead routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

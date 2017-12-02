@@ -56,13 +56,13 @@ typedef struct _PO_FX_PERF_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The value of this performance state. The units are specified by the <b>Unit</b> member of the <a href="..\wdm\ns-wdm--po-fx-component-perf-set.md">PO_FX_COMPONENT_PERF_SET</a> that contains this performance state. For example, if <b>Value</b> is 100000000 and the <b>Unit</b> member of the  <b>PO_FX_COMPONENT_PERF_SET</b> is <b>PoFxPerfStateUnitFrequency</b>, this performance state represents 100 MHz.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to additional context for the performance state that cannot be presented by the <b>Value</b> member. This data can be shared between the driver and the platform extension plug-in (PEP).</p>

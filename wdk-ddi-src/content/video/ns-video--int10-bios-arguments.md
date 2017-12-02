@@ -63,41 +63,41 @@ typedef struct _INT10_BIOS_ARGUMENTS {
 ## -struct-fields
 <dl>
 
-### -field <b>Eax</b>
+### -field Eax
 
 <dd></dd>
 
-### -field <b>Ebx</b>
+### -field Ebx
 
 <dd></dd>
 
-### -field <b>Ecx</b>
+### -field Ecx
 
 <dd></dd>
 
-### -field <b>Edx</b>
+### -field Edx
 
 <dd></dd>
 
-### -field <b>Esi</b>
+### -field Esi
 
 <dd></dd>
 
-### -field <b>Edi</b>
+### -field Edi
 
 <dd></dd>
 
-### -field <b>Ebp</b>
+### -field Ebp
 
 <dd>
 <p>Are seven of the x86 microprocessor registers.</p>
 </dd>
 
-### -field <b>SegDs</b>
+### -field SegDs
 
 <dd></dd>
 
-### -field <b>SegEs</b>
+### -field SegEs
 
 <dd>
 <p>Are two of the x86 microprocessor segment registers.</p>

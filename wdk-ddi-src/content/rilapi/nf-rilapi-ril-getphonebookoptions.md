@@ -7,7 +7,7 @@ old-location: netvista\ril_getphonebookoptions.htm
 old-project: netvista
 ms.assetid: 7d8ff1cc-e5d6-473b-bc16-e87468bb546c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetPhonebookOptions
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_GetPhonebookOptions(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>hUiccApp</i> 
+### -param hUiccApp 
 
 <dd></dd>
 
-### -param <i>dwStoreLocation</i> 
+### -param dwStoreLocation 
 
 <dd></dd>
 </dl>

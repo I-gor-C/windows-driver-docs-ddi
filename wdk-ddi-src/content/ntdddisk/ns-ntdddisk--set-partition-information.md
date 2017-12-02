@@ -54,7 +54,7 @@ typedef struct _SET_PARTITION_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>PartitionType</b>
+### -field PartitionType
 
 <dd>
 <p>Indicates the partition type. IOCTL_DISK_SET_PARTITION_INFO uses this value to set the partition type. See <a href="..\ntdddisk\ns-ntdddisk--partition-information.md">PARTITION_INFORMATION</a> for a list of system-defined GPT partition types.</p>

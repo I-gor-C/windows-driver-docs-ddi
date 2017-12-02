@@ -58,31 +58,31 @@ typedef struct _MSiSCSI_InitiatorInstanceStatistics {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueAdapterId</b>
+### -field UniqueAdapterId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="..\iscsimgt\ns-iscsimgt--msiscsi-hbainformation.md">MSiSCSI_HBAInformation</a> structure. For more information about the class that generates MSiSCSI_HBAInformation, see  <a href="storage.msiscsi_hbainformation_wmi_class">MSiSCSI_HBAInformation WMI Class</a>.</p>
 </dd>
 
-### -field <b>SessionDigestErrorCount</b>
+### -field SessionDigestErrorCount
 
 <dd>
 <p>The number of session digest errors.</p>
 </dd>
 
-### -field <b>SessionConnectionTimeoutErrorCount</b>
+### -field SessionConnectionTimeoutErrorCount
 
 <dd>
 <p>The number of session connection time-out errors.</p>
 </dd>
 
-### -field <b>SessionFormatErrorCount</b>
+### -field SessionFormatErrorCount
 
 <dd>
 <p>The number of session format errors.</p>
 </dd>
 
-### -field <b>SessionFailureCount</b>
+### -field SessionFailureCount
 
 <dd>
 <p>The number of failed sessions that belong to the initiator instance that <b>UniqueAdapterId</b> specifies.</p>

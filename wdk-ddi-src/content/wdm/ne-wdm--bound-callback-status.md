@@ -58,25 +58,25 @@ typedef enum _BOUND_CALLBACK_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="BoundExceptionContinueSearch"></a><a id="boundexceptioncontinuesearch"></a><a id="BOUNDEXCEPTIONCONTINUESEARCH"></a><b>BoundExceptionContinueSearch</b>
+### -field BoundExceptionContinueSearch
 
 <dd>
 <p>The bounds exception was not handled by the callback, and the exception should continue to propagate.  </p>
 </dd>
 
-### -field <a id="BoundExceptionHandled"></a><a id="boundexceptionhandled"></a><a id="BOUNDEXCEPTIONHANDLED"></a><b>BoundExceptionHandled</b>
+### -field BoundExceptionHandled
 
 <dd>
 <p>The exception was handled by the callback, and the exception should not propagate any further. </p>
 </dd>
 
-### -field <a id="BoundExceptionError"></a><a id="boundexceptionerror"></a><a id="BOUNDEXCEPTIONERROR"></a><b>BoundExceptionError</b>
+### -field BoundExceptionError
 
 <dd>
 <p>The user mode process should be terminated by the system.</p>
 </dd>
 
-### -field <a id="BoundExceptionMaximum"></a><a id="boundexceptionmaximum"></a><a id="BOUNDEXCEPTIONMAXIMUM"></a><b>BoundExceptionMaximum</b>
+### -field BoundExceptionMaximum
 
 <dd>
 <p>This value is not currently used.</p>

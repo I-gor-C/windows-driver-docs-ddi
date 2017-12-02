@@ -7,7 +7,7 @@ old-location: netvista\riluicclockstate_2.htm
 old-project: netvista
 ms.assetid: 18b933e6-cff3-49de-94ec-731a168c9d23
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUICCLOCKSTATE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef struct _RILUICCLOCKSTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>rilUiccLock</b>
+### -field rilUiccLock
 
 <dd></dd>
 
-### -field <b>dwLockState</b>
+### -field dwLockState
 
 <dd></dd>
 
-### -field <b>dwVerifyAttemptsLeft</b>
+### -field dwVerifyAttemptsLeft
 
 <dd></dd>
 
-### -field <b>dwUnblockAttemptsLeft</b>
+### -field dwUnblockAttemptsLeft
 
 <dd></dd>
 </dl>

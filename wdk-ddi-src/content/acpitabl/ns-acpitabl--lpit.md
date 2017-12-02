@@ -7,7 +7,7 @@ old-location: acpi\lpit.htm
 old-project: acpi
 ms.assetid: 351BC859-E703-4F75-B691-A503C08560CF
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: LPIT, LPIT, *PLPIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,13 +54,13 @@ typedef struct _LPIT {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>A header.</p>
 </dd>
 
-### -field <b>LpiStates</b>
+### -field LpiStates
 
 <dd>
 <p>An array of states.</p>

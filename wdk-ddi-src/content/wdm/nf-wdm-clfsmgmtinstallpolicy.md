@@ -57,19 +57,19 @@ NTSTATUS ClfsMgmtInstallPolicy(
 ## -parameters
 <dl>
 
-### -param <i>LogFile</i> [in]
+### -param LogFile [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents the CLFS log that this instance of the <b>CLFS_MGMT_POLICY</b> structure will apply to. The policy applies to all streams within the log, even if a single stream within the log was specified. </p>
 </dd>
 
-### -param <i>Policy</i> [in]
+### -param Policy [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--clfs-mgmt-policy.md">CLFS_MGMT_POLICY</a> structure that contains the policy to be installed.</p>
 </dd>
 
-### -param <i>PolicyLength</i> [in]
+### -param PolicyLength [in]
 
 <dd>
 <p>The length, in bytes, of the structure pointed to by the <i>Policy</i> parameter. </p>

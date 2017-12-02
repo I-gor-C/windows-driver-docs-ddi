@@ -7,7 +7,7 @@ old-location: ifsk\refs_smr_volume_gc_state.htm
 old-project: ifsk
 ms.assetid: 9E75F65A-6E9C-485F-9437-30CB01A5F317
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: VOLUME_READ_PLEX_INPUT, VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ typedef enum _REFS_SMR_VOLUME_GC_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="SmrGcStateInactive"></a><a id="smrgcstateinactive"></a><a id="SMRGCSTATEINACTIVE"></a><b>SmrGcStateInactive</b>
+### -field SmrGcStateInactive
 
 <dd>
 <p>Specifies the garbage collection is inactive.</p>
 </dd>
 
-### -field <a id="SmrGcStatePaused"></a><a id="smrgcstatepaused"></a><a id="SMRGCSTATEPAUSED"></a><b>SmrGcStatePaused</b>
+### -field SmrGcStatePaused
 
 <dd>
 <p> Specifies the garbage collection has been paused.</p>
 </dd>
 
-### -field <a id="SmrGcStateActive"></a><a id="smrgcstateactive"></a><a id="SMRGCSTATEACTIVE"></a><b>SmrGcStateActive</b>
+### -field SmrGcStateActive
 
 <dd>
 <p>Specifies the garbage collection is running.</p>
 </dd>
 
-### -field <a id="SmrGcStateActiveFullSpeed"></a><a id="smrgcstateactivefullspeed"></a><a id="SMRGCSTATEACTIVEFULLSPEED"></a><b>SmrGcStateActiveFullSpeed</b>
+### -field SmrGcStateActiveFullSpeed
 
 <dd>
 <p>Specifies the garbage collection is running at full speed.</p>

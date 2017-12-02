@@ -7,7 +7,7 @@ old-location: ifsk\rxchangebufferingstate.htm
 old-project: ifsk
 ms.assetid: 83e181cd-bbec-4142-8d97-4f67285b6bb4
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxChangeBufferingState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ NTSTATUS RxChangeBufferingState(
 ## -parameters
 <dl>
 
-### -param <i>SrvOpen</i> 
+### -param SrvOpen 
 
 <dd>
 <p>A pointer to the SRV_OPEN data structure to be changed.</p>
 </dd>
 
-### -param <i>Context</i> 
+### -param Context 
 
 <dd>
 <p>A pointer to the context parameter for use by the network mini-redirector callback. </p>
 </dd>
 
-### -param <i>ComputeNewState</i> 
+### -param ComputeNewState 
 
 <dd>
 <p>The value that indicates if the new buffering state is to be computed. When this value is set to <b>TRUE</b>, the new buffering state is determined by calling the network mini-redirector to compute the new buffering state. When this value is <b>FALSE</b>, the new buffering state is determined by the <i>BufferingFlags</i> member of the passed in <i>SrvOpen</i> structure.</p>
@@ -164,4 +164,4 @@ NTSTATUS RxChangeBufferingState(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxChangeBufferingState function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxChangeBufferingState function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

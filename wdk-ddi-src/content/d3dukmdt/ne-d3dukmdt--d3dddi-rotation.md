@@ -57,25 +57,25 @@ typedef enum _D3DDDI_ROTATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_ROTATION_IDENTITY"></a><a id="d3dddi_rotation_identity"></a><b>D3DDDI_ROTATION_IDENTITY</b>
+### -field D3DDDI_ROTATION_IDENTITY
 
 <dd>
 <p>Indicates that the resource is not rotated. </p>
 </dd>
 
-### -field <a id="D3DDDI_ROTATION_90"></a><a id="d3dddi_rotation_90"></a><b>D3DDDI_ROTATION_90</b>
+### -field D3DDDI_ROTATION_90
 
 <dd>
 <p>Indicates that the resource is rotated 90 degrees. </p>
 </dd>
 
-### -field <a id="D3DDDI_ROTATION_180"></a><a id="d3dddi_rotation_180"></a><b>D3DDDI_ROTATION_180</b>
+### -field D3DDDI_ROTATION_180
 
 <dd>
 <p>Indicates that the resource is rotated 180 degrees. </p>
 </dd>
 
-### -field <a id="D3DDDI_ROTATION_270"></a><a id="d3dddi_rotation_270"></a><b>D3DDDI_ROTATION_270</b>
+### -field D3DDDI_ROTATION_270
 
 <dd>
 <p>Indicates that the resource is rotated 270 degrees. </p>

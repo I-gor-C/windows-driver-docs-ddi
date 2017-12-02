@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_SETDISPLAYMODE {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A handle to the resource that contains the display surface.</p>
 </dd>
 
-### -field <b>SubResourceIndex</b>
+### -field SubResourceIndex
 
 <dd>
 <p>[in] The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the display surface.</p>

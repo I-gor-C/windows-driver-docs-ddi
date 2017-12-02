@@ -56,13 +56,13 @@ ULONG StorPortIsCurrentOsInstallationUpgrade(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Upgraded</i> [out]
+### -param Upgraded [out]
 
 <dd>
 <p>The value pointed to by <i>Upgraded</i> is set to <b>TRUE</b> if the current operating system installation was upgraded from a previous version. Otherwise, it is set to <b>FALSE</b>.</p>

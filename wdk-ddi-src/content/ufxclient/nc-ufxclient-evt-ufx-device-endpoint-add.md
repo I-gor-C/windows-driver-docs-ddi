@@ -62,19 +62,19 @@ typedef EVT_UFX_DEVICE_ENDPOINT_ADD PFN_UFX_DEVICE_ENDPOINT_ADD;
 ## -parameters
 <dl>
 
-### -param <i>UfxDevice</i> [in]
+### -param UfxDevice [in]
 
 <dd>
-<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.</p>
+<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>.</p>
 </dd>
 
-### -param <i>EndpointDescriptor</i> [in]
+### -param EndpointDescriptor [in]
 
 <dd>
 <p>A pointer to a <a href="..\usbspec\ns-usbspec--usb-endpoint-descriptor.md">USB_ENDPOINT_DESCRIPTOR</a> structure that contains descriptor data.</p>
 </dd>
 
-### -param <i>EndpointInit</i> [in, out]
+### -param EndpointInit [in, out]
 
 <dd>
 <p>A pointer to an  UFXENDPOINT_INIT opaque structure that contains the endpoint descriptor required  to create an endpoint object.</p>
@@ -85,11 +85,11 @@ typedef EVT_UFX_DEVICE_ENDPOINT_ADD PFN_UFX_DEVICE_ENDPOINT_ADD;
 <p>If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it must return a status value for which NT_SUCCESS(status) equals FALSE.</p>
 
 ## -remarks
-<p>The client driver for the function host controller registers its <i>EVT_UFX_DEVICE_ENDPOINT_ADD</i> implementation with the USB function class extension (UFX) by calling the <a href="buses.ufxdevicecreate">UfxDeviceCreate</a> method.</p>
+<p>The client driver for the function host controller registers its <i>EVT_UFX_DEVICE_ENDPOINT_ADD</i> implementation with the USB function class extension (UFX) by calling the <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a> method.</p>
 
-<p>To create the endpoint the client driver is expected to initialize the attributes of the endpoint’s transfer and command queues, and then call <a href="buses.ufxendpointcreate">UfxEndpointCreate</a> to create the endpoint.</p>
+<p>To create the endpoint the client driver is expected to initialize the attributes of the endpoint’s transfer and command queues, and then call <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a> to create the endpoint.</p>
 
-<p>The client driver indicates completion of this event by calling the <a href="buses.ufxdeviceeventcomplete">UfxDeviceEventComplete</a> method.</p>
+<p>The client driver indicates completion of this event by calling the <a href="..\ufxclient\nf-ufxclient-ufxdeviceeventcomplete.md">UfxDeviceEventComplete</a> method.</p>
 
 ## -requirements
 <table>
@@ -132,10 +132,10 @@ typedef EVT_UFX_DEVICE_ENDPOINT_ADD PFN_UFX_DEVICE_ENDPOINT_ADD;
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ufxdevicecreate">UfxDeviceCreate</a>
+<a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>
 </dt>
 <dt>
-<a href="buses.ufxdeviceeventcomplete">UfxDeviceEventComplete</a>
+<a href="..\ufxclient\nf-ufxclient-ufxdeviceeventcomplete.md">UfxDeviceEventComplete</a>
 </dt>
 </dl>
 <p> </p>

@@ -54,7 +54,7 @@ typedef struct _AddRADIUSServer_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>On output from <b>AddRADIUSServer</b>, the status of the <b>AddRADIUSServer</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.</p>

@@ -54,7 +54,7 @@ typedef struct _ClearMpioDiskHealthCounters_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>DiskOrdinal</b>
+### -field DiskOrdinal
 
 <dd>
 <p>A 32-bitfield that represents the MPIO disk ordinal value.</p>

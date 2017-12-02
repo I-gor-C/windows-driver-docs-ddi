@@ -54,7 +54,7 @@ void PowerChangeNotify(
 ## -parameters
 <dl>
 
-### -param <i>PowerState</i> [in]
+### -param PowerState [in]
 
 <dd>
 <p>Specifies the current power state. This parameter is a union of type POWER_STATE. The new power state (<i>PowerState</i>.<b>DeviceState</b>) can be one of the DEVICE_POWER_STATE enumeration values listed in <a href="audio.iadapterpowermanagement_powerchangestate">IAdapterPowerManagement::PowerChangeState</a>.</p>

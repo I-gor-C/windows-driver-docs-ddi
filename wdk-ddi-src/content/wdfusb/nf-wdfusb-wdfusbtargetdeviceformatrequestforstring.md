@@ -7,7 +7,7 @@ old-location: wdf\wdfusbtargetdeviceformatrequestforstring.htm
 old-project: wdf
 ms.assetid: f1875578-33c1-4d9e-865b-f1f5391f4aca
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfUsbTargetDeviceFormatRequestForString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ NTSTATUS WdfUsbTargetDeviceFormatRequestForString(
 ## -parameters
 <dl>
 
-### -param <i>UsbDevice</i> [in]
+### -param UsbDevice [in]
 
 <dd>
 <p>A handle to a USB device object that was obtained from a previous call to <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object.</p>
 </dd>
 
-### -param <i>Memory</i> [in]
+### -param Memory [in]
 
 <dd>
 <p>A handle to a framework memory object.</p>
 </dd>
 
-### -param <i>Offset</i> [in, optional]
+### -param Offset [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wudfddi_types\ns-wudfddi-types--wdfmemory-offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address and length, within the output buffer, for storing the string descriptor. If this pointer is <b>NULL</b>, the descriptor is stored at the beginning of the output buffer, and the maximum string length is the buffer length. </p>
 </dd>
 
-### -param <i>StringIndex</i> [in]
+### -param StringIndex [in]
 
 <dd>
 <p>An index value that identifies the string. This index value is obtained from a <a href="..\usbspec\ns-usbspec--usb-device-descriptor.md">USB_DEVICE_DESCRIPTOR</a>, <a href="..\usbspec\ns-usbspec--usb-configuration-descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a>, or <a href="..\usbspec\ns-usbspec--usb-interface-descriptor.md">USB_INTERFACE_DESCRIPTOR</a> structure.</p>
 </dd>
 
-### -param <i>LangID</i> [in, optional]
+### -param LangID [in, optional]
 
 <dd>
 <p>A language identifier. The string will be retrieved for the language that this identifier specifies. For information about obtaining a device's supported language identifiers, see the USB specification. </p>
@@ -224,4 +224,4 @@ NTSTATUS WdfUsbTargetDeviceFormatRequestForString(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceFormatRequestForString method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceFormatRequestForString method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

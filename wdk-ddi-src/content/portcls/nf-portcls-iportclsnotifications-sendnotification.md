@@ -55,14 +55,14 @@ NTSTATUS  SendNotification(
 ## -parameters
 <dl>
 
-### -param <i> NotificationId</i> [in]
+### -param  NotificationId [in]
 
 <dd>
 <p>KSNOTIFICATIONID_AudioModule
 </p>
 </dd>
 
-### -param <i>PPCNOTIFICATION* </i> [in]
+### -param PPCNOTIFICATION*  [in]
 
 <dd>
 <p>Pointer to a <a href="..\portcls\ns-portcls--pcnotification-buffer.md">PCNOTIFICATION_BUFFER</a> structure to send to the listening audio module UWP clients. </p>

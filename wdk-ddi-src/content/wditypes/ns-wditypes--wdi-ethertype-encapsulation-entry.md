@@ -7,7 +7,7 @@ old-location: netvista\wdi_ethertype_encapsulation_entry.htm
 old-project: netvista
 ms.assetid: 49FE4EC0-B735-48C0-B26E-E165CA840D12
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDI_ETHERTYPE_ENCAPSULATION_ENTRY, WDI_ETHERTYPE_ENCAPSULATION_ENTRY, *PWDI_ETHERTYPE_ENCAPSULATION_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ typedef struct _WDI_ETHERTYPE_ENCAPSULATION_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>EtherType</b>
+### -field EtherType
 
 <dd>
 <p>The value of the IEEE EtherType in big-endian byte order.</p>
 </dd>
 
-### -field <b>EncapsulationType</b>
+### -field EncapsulationType
 
 <dd>
 <p>The type of encapsulation to be performed on the specified EtherType.</p>

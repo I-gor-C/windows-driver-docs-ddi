@@ -59,19 +59,19 @@ typedef struct _DXGKARG_MAPCPUHOSTAPERTURE {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>Specifies the allocation handle, associated with the allocation being mapped. This is the handle, returned by the kernel mode driver from <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> or passed in <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-createcontextallocation.md">DxgkCbCreateContextAllocation</a>. This parameter will be <b>NULL</b> for implicit allocations, such as a page table.</p>
 </dd>
 
-### -field <b>SegmentId</b>
+### -field SegmentId
 
 <dd>
 <p>Specifies the segment identifier of the segment being accessed.</p>
 </dd>
 
-### -field <b>PhysicalAdapterIndex</b>
+### -field PhysicalAdapterIndex
 
 <dd>
 <p>A zero-based physical adapter index in a linked display adapter link.
@@ -82,19 +82,19 @@ The page size is equal to the segment page size, reported in <a href="..\d3dkmdd
 <div> </div>
 </dd>
 
-### -field <b>NumberOfPages</b>
+### -field NumberOfPages
 
 <dd>
 <p>Specifies the number of pages being mapped.</p>
 </dd>
 
-### -field <b>pCpuHostAperturePages</b>
+### -field pCpuHostAperturePages
 
 <dd>
 <p>Array of CPU Host Aperture pages to map. This is an array of page indices from the start of the CPU host aperture physical address.</p>
 </dd>
 
-### -field <b>pMemorySegmentPages</b>
+### -field pMemorySegmentPages
 
 <dd>
 <p>MDL-style array of page indices to the allocation pages that need to be mapped into the CPU host aperture. The page indexes starting from 0. </p>

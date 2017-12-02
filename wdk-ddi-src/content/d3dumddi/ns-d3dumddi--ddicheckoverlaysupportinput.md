@@ -62,19 +62,19 @@ typedef struct _DDICHECKOVERLAYSUPPORTINPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>OverlayWidth</b>
+### -field OverlayWidth
 
 <dd>
 <p>[in] The width of the overlay in pixels. </p>
 </dd>
 
-### -field <b>OverlayHeight</b>
+### -field OverlayHeight
 
 <dd>
 <p>[in] The height of the overlay in pixels. </p>
 </dd>
 
-### -field <b>OverlayFormat</b>
+### -field OverlayFormat
 
 <dd>
 <p>
@@ -82,37 +82,37 @@ typedef struct _DDICHECKOVERLAYSUPPORTINPUT {
      </p>
 </dd>
 
-### -field <b>DisplayWidth</b>
+### -field DisplayWidth
 
 <dd>
 <p>[in] The screen width of the display in pixels. </p>
 </dd>
 
-### -field <b>DisplayHeight</b>
+### -field DisplayHeight
 
 <dd>
 <p>[in] The screen height of the display in pixels. </p>
 </dd>
 
-### -field <b>DisplayRefreshRate</b>
+### -field DisplayRefreshRate
 
 <dd>
 <p>[in] The refresh rate of the display. </p>
 </dd>
 
-### -field <b>DisplayFormat</b>
+### -field DisplayFormat
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the display. </p>
 </dd>
 
-### -field <b>DisplayScanLineOrdering</b>
+### -field DisplayScanLineOrdering
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi-scanlineordering.md">D3DDDI_SCANLINEORDERING</a>-typed value that indicates how the scan lines are drawn on the display. </p>
 </dd>
 
-### -field <b>DisplayRotation</b>
+### -field DisplayRotation
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-rotation.md">D3DDDI_ROTATION</a>-typed value that indicates how the display is oriented. </p>

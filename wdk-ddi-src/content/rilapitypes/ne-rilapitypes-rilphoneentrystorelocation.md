@@ -7,7 +7,7 @@ old-location: netvista\rilphoneentrystorelocation_2.htm
 old-project: netvista
 ms.assetid: f9166dfa-e895-4aca-8080-af3cfe9c143f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef enum _RILPHONEENTRYSTORELOCATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PBLOC_UICCFIXDIALING"></a><a id="ril_pbloc_uiccfixdialing"></a><b>RIL_PBLOC_UICCFIXDIALING</b>
+### -field RIL_PBLOC_UICCFIXDIALING
 
 <dd></dd>
 
-### -field <a id="RIL_PBLOC_OWNNUMBERS"></a><a id="ril_pbloc_ownnumbers"></a><b>RIL_PBLOC_OWNNUMBERS</b>
+### -field RIL_PBLOC_OWNNUMBERS
 
 <dd></dd>
 
-### -field <a id="RIL_PBLOC_UICCPHONEBOOK"></a><a id="ril_pbloc_uiccphonebook"></a><b>RIL_PBLOC_UICCPHONEBOOK</b>
+### -field RIL_PBLOC_UICCPHONEBOOK
 
 <dd></dd>
 
-### -field <a id="RIL_PBLOC_UICCSERVICEDIALING"></a><a id="ril_pbloc_uiccservicedialing"></a><b>RIL_PBLOC_UICCSERVICEDIALING</b>
+### -field RIL_PBLOC_UICCSERVICEDIALING
 
 <dd></dd>
 
-### -field <a id="RIL_PBLOC_ALL"></a><a id="ril_pbloc_all"></a><b>RIL_PBLOC_ALL</b>
+### -field RIL_PBLOC_ALL
 
 <dd></dd>
 </dl>

@@ -58,25 +58,25 @@ NTSTATUS KsForwardAndCatchIrp(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject </i> [in]
+### -param DeviceObject  [in]
 
 <dd>
 <p>Specifies the device to forward the IRP to.</p>
 </dd>
 
-### -param <i>Irp </i> [in]
+### -param Irp  [in]
 
 <dd>
 <p>Specifies the IRP that is being forwarded to the specified driver.</p>
 </dd>
 
-### -param <i>FileObject </i> [in]
+### -param FileObject  [in]
 
 <dd>
 <p>Specifies a file object value to copy to the next stack location. This can be <b>NULL</b> in order to set no file object, but the value is always copied to the next stack location. If the current file object is to be preserved, it must be passed in this parameter. </p>
 </dd>
 
-### -param <i>StackUse </i> [in]
+### -param StackUse  [in]
 
 <dd>
 <p>Specifies a value enumerated by KSSTACK_USE. If the value is <i>KsStackCopyToNewLocation</i>, the parameters are copied to the next stack location. If the value is <i>KsStackReuseCurrentLocation</i>, the current stack location is reused when the IRP is forwarded and the stack location is returned to the current location. If the value is <i>KsStackUseNewLocation</i>, the new stack location is used as is.</p>

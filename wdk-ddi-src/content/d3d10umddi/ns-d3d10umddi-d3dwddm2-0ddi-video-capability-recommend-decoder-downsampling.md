@@ -59,31 +59,31 @@ typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_RECOMMEND_DECODER_DOWNSAMPLING {
 ## -struct-fields
 <dl>
 
-### -field <b>pInputDesc</b>
+### -field pInputDesc
 
 <dd>
 <p>Contains the decode profile used and the resolution and format of the reference frames.  This is the resolution/format to be downsampled (e.g. 4K, DXGI_FORMAT_P010).</p>
 </dd>
 
-### -field <b>InputColorSpace</b>
+### -field InputColorSpace
 
 <dd>
 <p>Contains the color space information of the reference frame data.</p>
 </dd>
 
-### -field <b>pInputConfig</b>
+### -field pInputConfig
 
 <dd>
 <p>Contains the configuration data associated with the decode profile.</p>
 </dd>
 
-### -field <b>pFrameRate</b>
+### -field pFrameRate
 
 <dd>
 <p>Contains the frame rate of the video content.</p>
 </dd>
 
-### -field <b>pOutputDesc</b>
+### -field pOutputDesc
 
 <dd>
 <p>The driver returns the recommended resolution and the format of the output/display frames.  
@@ -94,7 +94,7 @@ typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_RECOMMEND_DECODER_DOWNSAMPLING {
 <div> </div>
 </dd>
 
-### -field <b>OutputColorSpace</b>
+### -field OutputColorSpace
 
 <dd>
 <p>The driver returns the recommended color space information of the display frame data.</p>

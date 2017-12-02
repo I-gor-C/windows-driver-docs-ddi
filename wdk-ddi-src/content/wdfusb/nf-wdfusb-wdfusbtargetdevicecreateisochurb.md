@@ -7,7 +7,7 @@ old-location: wdf\wdfusbtargetdevicecreateisochurb.htm
 old-project: wdf
 ms.assetid: 2D25A276-A367-4E59-9CA0-4F480675DD77
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfUsbTargetDeviceCreateIsochUrb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,31 +62,31 @@ NTSTATUS WdfUsbTargetDeviceCreateIsochUrb(
 ## -parameters
 <dl>
 
-### -param <i>UsbDevice</i> [in]
+### -param UsbDevice [in]
 
 <dd>
 <p>A handle to a USB device object that was obtained from a previous call to <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>.</p>
 </dd>
 
-### -param <i>Attributes</i> [in, optional]
+### -param Attributes [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new memory object.   If the driver provides this parameter, the structure's <b>ParentObject</b> member must be a USB device object (WDFUSBDEVICE) or a request object (WDFREQUEST) created by the framework, or any object whose chain of parents leads to one of these types. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.</p>
 </dd>
 
-### -param <i>NumberOfIsochPackets</i> [in]
+### -param NumberOfIsochPackets [in]
 
 <dd>
 <p>Specifies the number of isochronous packets for which the system allocates memory in the URB.</p>
 </dd>
 
-### -param <i>UrbMemory</i> [out]
+### -param UrbMemory [out]
 
 <dd>
 <p>A pointer to a WDFMEMORY-typed location that receives a handle to a framework memory object.</p>
 </dd>
 
-### -param <i>Urb</i> [out, optional]
+### -param Urb [out, optional]
 
 <dd>
 <p>A pointer to an URB structure that receives the address of the new isochronous URB. The framework initializes contents of the URB structure to zero. This parameter is optional and can be NULL.</p>
@@ -196,4 +196,4 @@ NTSTATUS WdfUsbTargetDeviceCreateIsochUrb(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceCreateIsochUrb method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceCreateIsochUrb method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

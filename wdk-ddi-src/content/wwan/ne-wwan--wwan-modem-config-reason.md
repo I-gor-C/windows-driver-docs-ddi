@@ -7,7 +7,7 @@ old-location: netvista\wwan_modem_config_reason.htm
 old-project: netvista
 ms.assetid: 2CF2C69B-A5DF-4A78-BC15-EB80FAC51831
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,61 +64,61 @@ typedef enum _WWAN_MODEM_CONFIG_REASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanModemConfigReasonNone"></a><a id="wwanmodemconfigreasonnone"></a><a id="WWANMODEMCONFIGREASONNONE"></a><b>WwanModemConfigReasonNone</b>
+### -field WwanModemConfigReasonNone
 
 <dd>
 <p>Default value that can be used if other optional reasons are not supported.</p>
 </dd>
 
-### -field <a id="WwanModemConfigReasonSIMDetected"></a><a id="wwanmodemconfigreasonsimdetected"></a><a id="WWANMODEMCONFIGREASONSIMDETECTED"></a><b>WwanModemConfigReasonSIMDetected</b>
+### -field WwanModemConfigReasonSIMDetected
 
 <dd>
 <p>Required. A SIM card was detected by a modem.</p>
 </dd>
 
-### -field <a id="WwanModemConfigReasonSIMRemoved"></a><a id="wwanmodemconfigreasonsimremoved"></a><a id="WWANMODEMCONFIGREASONSIMREMOVED"></a><b>WwanModemConfigReasonSIMRemoved</b>
+### -field WwanModemConfigReasonSIMRemoved
 
 <dd>
 <p>Optional. A SIM card was removed.</p>
 </dd>
 
-### -field <a id="WwanModemConfigReasonNOSIM"></a><a id="wwanmodemconfigreasonnosim"></a><a id="WWANMODEMCONFIGREASONNOSIM"></a><b>WwanModemConfigReasonNOSIM</b>
+### -field WwanModemConfigReasonNOSIM
 
 <dd>
 <p>Optional. There is no SIM card.</p>
 </dd>
 
-### -field <a id="WwanModemConfigReasonIMSIReset"></a><a id="wwanmodemconfigreasonimsireset"></a><a id="WWANMODEMCONFIGREASONIMSIRESET"></a><b>WwanModemConfigReasonIMSIReset</b>
+### -field WwanModemConfigReasonIMSIReset
 
 <dd>
 <p>Optional. A SIM card was reset with new IMSI programmed into it.</p>
 </dd>
 
-### -field <a id="WwanModemConfigReasonActivationFailure"></a><a id="wwanmodemconfigreasonactivationfailure"></a><a id="WWANMODEMCONFIGREASONACTIVATIONFAILURE"></a><b>WwanModemConfigReasonActivationFailure</b>
+### -field WwanModemConfigReasonActivationFailure
 
 <dd>
 <p>Optional. Activation of a new configuration failed.</p>
 </dd>
 
-### -field <a id="WwanModemConfigReasonConfigFileUpdate"></a><a id="wwanmodemconfigreasonconfigfileupdate"></a><a id="WWANMODEMCONFIGREASONCONFIGFILEUPDATE"></a><b>WwanModemConfigReasonConfigFileUpdate</b>
+### -field WwanModemConfigReasonConfigFileUpdate
 
 <dd>
 <p>Optional. A new configuration file was updated by the host.</p>
 </dd>
 
-### -field <a id="WwanModemConfigReasonModemReset"></a><a id="wwanmodemconfigreasonmodemreset"></a><a id="WWANMODEMCONFIGREASONMODEMRESET"></a><b>WwanModemConfigReasonModemReset</b>
+### -field WwanModemConfigReasonModemReset
 
 <dd>
 <p>Optional. The modem reset and configuration was not lost.</p>
 </dd>
 
-### -field <a id="WwanModemConfigReasonModemRecovery"></a><a id="wwanmodemconfigreasonmodemrecovery"></a><a id="WWANMODEMCONFIGREASONMODEMRECOVERY"></a><b>WwanModemConfigReasonModemRecovery</b>
+### -field WwanModemConfigReasonModemRecovery
 
 <dd>
 <p>Required. The modem reset and configuration was restored to default.</p>
 </dd>
 
-### -field <a id="WwanModemConfigReasonMax"></a><a id="wwanmodemconfigreasonmax"></a><a id="WWANMODEMCONFIGREASONMAX"></a><b>WwanModemConfigReasonMax</b>
+### -field WwanModemConfigReasonMax
 
 <dd>
 <p>The maximum value for this enumeration. This value might change in future versions of the NDIS
@@ -159,4 +159,4 @@ typedef enum _WWAN_MODEM_CONFIG_REASON {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_MODEM_CONFIG_REASON enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_MODEM_CONFIG_REASON enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY ConfigureAuthenticatedChannel(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p> A pointer to a <a href="display.d3dddiarg_configureauthenticatedchannel">D3DDDIARG_CONFIGUREAUTHENTICATEDCHANNEL</a> structure that describes how to configure an authenticated channel. This structure contains an input buffer that describes how to configure the authenticated channel and an output buffer with configuration information. </p>

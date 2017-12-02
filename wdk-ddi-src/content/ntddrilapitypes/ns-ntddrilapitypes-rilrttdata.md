@@ -7,7 +7,7 @@ old-location: netvista\rilrttdata.htm
 old-project: netvista
 ms.assetid: 037831c7-d0ef-4cbc-a414-a77010e228a5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILRTTDATA, RILRTTDATA, *LPRILRTTDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _RILRTTDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwID</b>
+### -field dwID
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>wszRTTData</b>
+### -field wszRTTData
 
 <dd></dd>
 </dl>

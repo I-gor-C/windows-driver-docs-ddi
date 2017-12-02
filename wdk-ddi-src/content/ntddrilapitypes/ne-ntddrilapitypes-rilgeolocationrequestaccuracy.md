@@ -7,7 +7,7 @@ old-location: netvista\rilgeolocationrequestaccuracy.htm
 old-project: netvista
 ms.assetid: e1e6ca44-a027-4800-9932-617f3bb4679d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef enum _RILGEOLOCATIONREQUESTACCURACY {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_LOCACCURACY_DEFAULT"></a><a id="ril_locaccuracy_default"></a><b>RIL_LOCACCURACY_DEFAULT</b>
+### -field RIL_LOCACCURACY_DEFAULT
 
 <dd></dd>
 </dl>

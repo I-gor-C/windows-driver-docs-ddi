@@ -57,25 +57,25 @@ IDE_PHYSICAL_ADDRESS AtaPortGetPhysicalAddress(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the channel extension. </p>
 </dd>
 
-### -param <i>Irb</i> [in, optional]
+### -param Irb [in, optional]
 
 <dd>
 <p>A pointer to a structure of type <a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) for which the address range is converted. </p>
 </dd>
 
-### -param <i>VirtualAddress</i> [in, optional]
+### -param VirtualAddress [in, optional]
 
 <dd>
 <p>A pointer to the base virtual address to convert. </p>
 </dd>
 
-### -param <i>Length</i> [out, optional]
+### -param Length [out, optional]
 
 <dd>
 <p>Returns the number of mapped bytes starting at the returned physical address. </p>

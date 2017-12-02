@@ -56,19 +56,19 @@ NTSTATUS BdaMethodDeletePin(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Points to the IRP for the request to delete a pin factory. The BDA minidriver receives this IRP with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563415">KSMETHOD_BDA_DELETE_PIN_FACTORY</a> request.</p>
 </dd>
 
-### -param <i>pKSMethod</i> [in]
+### -param pKSMethod [in]
 
 <dd>
 <p>Points to a <a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a> structure that describes the method and request type of a method request.</p>
 </dd>
 
-### -param <i>pvIgnored</i> 
+### -param pvIgnored 
 
 <dd>
 <p>Points to a buffer that is ignored.</p>

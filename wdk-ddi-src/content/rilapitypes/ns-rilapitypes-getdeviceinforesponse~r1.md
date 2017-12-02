@@ -7,7 +7,7 @@ old-location: netvista\getdeviceinforesponse_2.htm
 old-project: netvista
 ms.assetid: 318927ab-6134-4a01-bf9c-a85619d2bbdf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: GETDEVICEINFORESPONSE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef struct _GETDEVICEINFORESPONSE {
 ## -struct-fields
 <dl>
 
-### -field <b>Result</b>
+### -field Result
 
 <dd></dd>
 </dl>

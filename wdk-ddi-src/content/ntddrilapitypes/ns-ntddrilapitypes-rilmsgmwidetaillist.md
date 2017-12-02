@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwidetaillist.htm
 old-project: netvista
 ms.assetid: 026cf4d6-2f34-4911-8ec6-0b4170463e4d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMSGMWIDETAILLIST, RILMSGMWIDETAILLIST, *LPRILMSGMWIDETAILLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,27 +59,27 @@ typedef struct _RILMSGMWIDETAILLIST {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwReferenceNumber</b>
+### -field dwReferenceNumber
 
 <dd></dd>
 
-### -field <b>dwNumberOfDetailItems</b>
+### -field dwNumberOfDetailItems
 
 <dd></dd>
 
-### -field <b>stMwiDetail</b>
+### -field stMwiDetail
 
 <dd></dd>
 </dl>

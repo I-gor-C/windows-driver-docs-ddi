@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcsmsgclass_2.htm
 old-project: netvista
 ms.assetid: 67064f7c-4d2a-4d2f-8393-fb85d5139bca
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILMSGDCSMSGCLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DCSMSGCLASS_1"></a><a id="ril_dcsmsgclass_1"></a><b>RIL_DCSMSGCLASS_1</b>
+### -field RIL_DCSMSGCLASS_1
 
 <dd></dd>
 
-### -field <a id="RIL_DCSMSGCLASS_2"></a><a id="ril_dcsmsgclass_2"></a><b>RIL_DCSMSGCLASS_2</b>
+### -field RIL_DCSMSGCLASS_2
 
 <dd></dd>
 
-### -field <a id="RIL_DCSMSGCLASS_3"></a><a id="ril_dcsmsgclass_3"></a><b>RIL_DCSMSGCLASS_3</b>
+### -field RIL_DCSMSGCLASS_3
 
 <dd></dd>
 
-### -field <a id="RIL_DCSMSGCLASS_MAX"></a><a id="ril_dcsmsgclass_max"></a><b>RIL_DCSMSGCLASS_MAX</b>
+### -field RIL_DCSMSGCLASS_MAX
 
 <dd></dd>
 </dl>

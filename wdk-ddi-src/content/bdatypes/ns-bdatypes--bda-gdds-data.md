@@ -57,19 +57,19 @@ typedef struct _BDA_GDDS_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>ulDataLength</b>
+### -field ulDataLength
 
 <dd></dd>
 
-### -field <b>ulPercentageProgress</b>
+### -field ulPercentageProgress
 
 <dd></dd>
 
-### -field <b>argbData</b>
+### -field argbData
 
 <dd></dd>
 </dl>

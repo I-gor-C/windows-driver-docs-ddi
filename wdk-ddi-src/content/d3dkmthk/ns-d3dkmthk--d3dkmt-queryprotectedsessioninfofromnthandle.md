@@ -58,31 +58,31 @@ typedef struct _D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE {
 ## -struct-fields
 <dl>
 
-### -field <b>hNtHandle</b>
+### -field hNtHandle
 
 <dd>
 <p>The protected NT session handle.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>The private driver data.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>The size of the private driver data.</p>
 </dd>
 
-### -field <b>pPrivateRuntimeData</b>
+### -field pPrivateRuntimeData
 
 <dd>
 <p>The private runtime data.</p>
 </dd>
 
-### -field <b>PrivateRuntimeDataSize</b>
+### -field PrivateRuntimeDataSize
 
 <dd>
 <p>The size of the private runtime data.</p>

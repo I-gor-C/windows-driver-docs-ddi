@@ -7,7 +7,7 @@ old-location: ifsk\fltallocatefilelock.htm
 old-project: ifsk
 ms.assetid: f5a96fc2-e6b8-44df-a827-d10d693f6f2b
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltAllocateFileLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ PFILE_LOCK FltAllocateFileLock(
 ## -parameters
 <dl>
 
-### -param <i>CompleteLockCallbackDataRoutine</i> [in, optional]
+### -param CompleteLockCallbackDataRoutine [in, optional]
 
 <dd>
 <p>Pointer to a <a href="..\fltkernel\nc-fltkernel-pflt-complete-lock-callback-data-routine.md">PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE</a>-typed callback routine to be called when an <a href="ifsk.irp_mj_lock_control">IRP_MJ_LOCK_CONTROL</a> request is completed. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>UnlockRoutine</i> [in, optional]
+### -param UnlockRoutine [in, optional]
 
 <dd>
 <p>Pointer to a <a href="ifsk.punlock_routine">PUNLOCK_ROUTINE</a>-typed callback routine to be called when the byte range is unlocked. This parameter is optional and can be <b>NULL</b>. </p>
@@ -170,4 +170,4 @@ PFILE_LOCK FltAllocateFileLock(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocateFileLock routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocateFileLock routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

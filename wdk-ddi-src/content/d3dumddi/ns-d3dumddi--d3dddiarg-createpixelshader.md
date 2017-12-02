@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_CREATEPIXELSHADER {
 ## -struct-fields
 <dl>
 
-### -field <b>CodeSize</b>
+### -field CodeSize
 
 <dd>
 <p>[in] The size, in bytes, of the pixel shader code that is passed in the <i>pCode</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createpixelshader.md">CreatePixelShader</a> function.</p>
 </dd>
 
-### -field <b>ShaderHandle</b>
+### -field ShaderHandle
 
 <dd>
 <p>[out] A handle to the pixel shader code.</p>

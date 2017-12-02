@@ -7,7 +7,7 @@ old-location: netvista\rilumtsmrlparammask_2.htm
 old-project: netvista
 ms.assetid: d0450aeb-8b6e-4ab2-94b7-563503a83e76
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,39 +63,39 @@ typedef enum _RILUMTSMRLPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_UMTSMRL_MNC"></a><a id="ril_param_umtsmrl_mnc"></a><b>RIL_PARAM_UMTSMRL_MNC</b>
+### -field RIL_PARAM_UMTSMRL_MNC
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UMTSMRL_LAC"></a><a id="ril_param_umtsmrl_lac"></a><b>RIL_PARAM_UMTSMRL_LAC</b>
+### -field RIL_PARAM_UMTSMRL_LAC
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UMTSMRL_CELLID"></a><a id="ril_param_umtsmrl_cellid"></a><b>RIL_PARAM_UMTSMRL_CELLID</b>
+### -field RIL_PARAM_UMTSMRL_CELLID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UMTSMRL_UARFCN"></a><a id="ril_param_umtsmrl_uarfcn"></a><b>RIL_PARAM_UMTSMRL_UARFCN</b>
+### -field RIL_PARAM_UMTSMRL_UARFCN
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UMTSMRL_PRIMARY_SC"></a><a id="ril_param_umtsmrl_primary_sc"></a><b>RIL_PARAM_UMTSMRL_PRIMARY_SC</b>
+### -field RIL_PARAM_UMTSMRL_PRIMARY_SC
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UMTSMRL_RSCP"></a><a id="ril_param_umtsmrl_rscp"></a><b>RIL_PARAM_UMTSMRL_RSCP</b>
+### -field RIL_PARAM_UMTSMRL_RSCP
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UMTSMRL_ECNO"></a><a id="ril_param_umtsmrl_ecno"></a><b>RIL_PARAM_UMTSMRL_ECNO</b>
+### -field RIL_PARAM_UMTSMRL_ECNO
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UMTSMRL_PATHLOSS"></a><a id="ril_param_umtsmrl_pathloss"></a><b>RIL_PARAM_UMTSMRL_PATHLOSS</b>
+### -field RIL_PARAM_UMTSMRL_PATHLOSS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UMTSMRL_ALL"></a><a id="ril_param_umtsmrl_all"></a><b>RIL_PARAM_UMTSMRL_ALL</b>
+### -field RIL_PARAM_UMTSMRL_ALL
 
 <dd></dd>
 </dl>

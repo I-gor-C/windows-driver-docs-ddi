@@ -56,13 +56,13 @@ VP_STATUS VideoPortGetVersion(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>pVpOsVersionInfo</i> [in, out]
+### -param pVpOsVersionInfo [in, out]
 
 <dd>
 <p>Pointer to a <a href="..\video\ns-video--vposversioninfo.md">VPOSVERSIONINFO</a> structure that will receive the operating system version information. The caller should set the <b>Size</b> member of the VPOSVERSIONINFO structure to the size, in bytes, of that structure.</p>

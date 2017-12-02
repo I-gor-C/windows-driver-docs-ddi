@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_GM_GRAPHMANAGER"></a><a id="ksproperty_gm_graphmanager"></a><b>KSPROPERTY_GM_GRAPHMANAGER</b>
+### -field KSPROPERTY_GM_GRAPHMANAGER
 
 <dd>
 <p>Not supported.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_GM_TIMESTAMP_CLOCK"></a><a id="ksproperty_gm_timestamp_clock"></a><b>KSPROPERTY_GM_TIMESTAMP_CLOCK</b>
+### -field KSPROPERTY_GM_TIMESTAMP_CLOCK
 
 <dd>
 <p>Not supported.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_GM_RATEMATCH"></a><a id="ksproperty_gm_ratematch"></a><b>KSPROPERTY_GM_RATEMATCH</b>
+### -field KSPROPERTY_GM_RATEMATCH
 
 <dd>
 <p>Not supported.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_GM_RENDER_CLOCK"></a><a id="ksproperty_gm_render_clock"></a><b>KSPROPERTY_GM_RENDER_CLOCK</b>
+### -field KSPROPERTY_GM_RENDER_CLOCK
 
 <dd>
 <p>Not supported.</p>

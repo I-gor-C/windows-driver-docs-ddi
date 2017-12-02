@@ -69,97 +69,97 @@ typedef struct _HIDP_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>Usage</b>
+### -field Usage
 
 <dd>
 <p>Specifies a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="hid.hid_usages#usage_id#usage_id">usage ID</a>.</p>
 </dd>
 
-### -field <b>UsagePage</b>
+### -field UsagePage
 
 <dd>
 <p>Specifies the top-level collection's <a href="hid.hid_usages#usage_page#usage_page">usage page</a>.</p>
 </dd>
 
-### -field <b>InputReportByteLength</b>
+### -field InputReportByteLength
 
 <dd>
 <p>Specifies the maximum size, in bytes, of all the input reports (including the report ID, if report IDs are used, which is prepended to the report data).</p>
 </dd>
 
-### -field <b>OutputReportByteLength</b>
+### -field OutputReportByteLength
 
 <dd>
 <p>Specifies the maximum size, in bytes, of all the output reports (including the report ID, if report IDs are used, which is prepended to the report data).</p>
 </dd>
 
-### -field <b>FeatureReportByteLength</b>
+### -field FeatureReportByteLength
 
 <dd>
 <p>Specifies the maximum length, in bytes, of all the feature reports (including the report ID, if report IDs are used, which is prepended to the report data).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for internal system use.</p>
 </dd>
 
-### -field <b>NumberLinkCollectionNodes</b>
+### -field NumberLinkCollectionNodes
 
 <dd>
 <p>Specifies the number of <a href="..\hidpi\ns-hidpi--hidp-link-collection-node.md">HIDP_LINK_COLLECTION_NODE</a> structures that are returned for this top-level collection by <a href="..\hidpi\nf-hidpi-hidp-getlinkcollectionnodes.md">HidP_GetLinkCollectionNodes</a>.</p>
 </dd>
 
-### -field <b>NumberInputButtonCaps</b>
+### -field NumberInputButtonCaps
 
 <dd>
 <p>Specifies the number of input <a href="..\hidpi\ns-hidpi--hidp-button-caps.md">HIDP_BUTTON_CAPS</a> structures that <a href="..\hidpi\nf-hidpi-hidp-getbuttoncaps.md">HidP_GetButtonCaps</a> returns.</p>
 </dd>
 
-### -field <b>NumberInputValueCaps</b>
+### -field NumberInputValueCaps
 
 <dd>
 <p>Specifies the number of input <a href="..\hidpi\ns-hidpi--hidp-value-caps.md">HIDP_VALUE_CAPS</a> structures that <a href="..\hidpi\nf-hidpi-hidp-getvaluecaps.md">HidP_GetValueCaps</a> returns.</p>
 </dd>
 
-### -field <b>NumberInputDataIndices</b>
+### -field NumberInputDataIndices
 
 <dd>
-<p>Specifies the number of <a href="NULL">data indices</a> assigned to buttons and values in all input reports.</p>
+<p>Specifies the number of <a href="https://msdn.microsoft.com/84577544-515a-4fdc-86e5-518182c6c461">data indices</a> assigned to buttons and values in all input reports.</p>
 </dd>
 
-### -field <b>NumberOutputButtonCaps</b>
+### -field NumberOutputButtonCaps
 
 <dd>
 <p>Specifies the number of output HIDP_BUTTON_CAPS structures that <b>HidP_GetButtonCaps</b> returns.</p>
 </dd>
 
-### -field <b>NumberOutputValueCaps</b>
+### -field NumberOutputValueCaps
 
 <dd>
 <p>Specifies the number of output HIDP_VALUE_CAPS structures that <b>HidP_GetValueCaps</b> returns.</p>
 </dd>
 
-### -field <b>NumberOutputDataIndices</b>
+### -field NumberOutputDataIndices
 
 <dd>
 <p>Specifies the number of data indices assigned to buttons and values in all output reports.</p>
 </dd>
 
-### -field <b>NumberFeatureButtonCaps</b>
+### -field NumberFeatureButtonCaps
 
 <dd>
 <p>Specifies the total number of feature HIDP_BUTTONS_CAPS structures that <b>HidP_GetButtonCaps</b> returns.</p>
 </dd>
 
-### -field <b>NumberFeatureValueCaps</b>
+### -field NumberFeatureValueCaps
 
 <dd>
 <p>Specifies the total number of feature HIDP_VALUE_CAPS structures that <b>HidP_GetValueCaps</b> returns.</p>
 </dd>
 
-### -field <b>NumberFeatureDataIndices</b>
+### -field NumberFeatureDataIndices
 
 <dd>
 <p>Specifies the number of data indices assigned to buttons and values in all feature reports.</p>

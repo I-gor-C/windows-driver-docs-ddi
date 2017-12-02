@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediadirection.htm
 old-project: netvista
 ms.assetid: 8c6b2329-9956-43c1-8a4d-ef9587cf0980
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILCALLMEDIADIRECTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLMEDIADIRECTION_RX"></a><a id="ril_callmediadirection_rx"></a><b>RIL_CALLMEDIADIRECTION_RX</b>
+### -field RIL_CALLMEDIADIRECTION_RX
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIADIRECTION_TX"></a><a id="ril_callmediadirection_tx"></a><b>RIL_CALLMEDIADIRECTION_TX</b>
+### -field RIL_CALLMEDIADIRECTION_TX
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIADIRECTION_RXTX"></a><a id="ril_callmediadirection_rxtx"></a><b>RIL_CALLMEDIADIRECTION_RXTX</b>
+### -field RIL_CALLMEDIADIRECTION_RXTX
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIADIRECTION_MAX"></a><a id="ril_callmediadirection_max"></a><b>RIL_CALLMEDIADIRECTION_MAX</b>
+### -field RIL_CALLMEDIADIRECTION_MAX
 
 <dd></dd>
 </dl>

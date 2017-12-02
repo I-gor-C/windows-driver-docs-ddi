@@ -62,13 +62,13 @@ typedef EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE PFN_UFX_DEVICE_SUPER_SPEED_POWE
 ## -parameters
 <dl>
 
-### -param <i>UfxDevice</i> [in]
+### -param UfxDevice [in]
 
 <dd>
-<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.</p>
+<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>.</p>
 </dd>
 
-### -param <i>Feature</i> [in]
+### -param Feature [in]
 
 <dd>
 <p>Feature selector for the power feature that is set or cleared, as defined in section 9.4 of the USB 3.0 Specification.  The feature selector can be one of these values: </p>
@@ -79,7 +79,7 @@ typedef EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE PFN_UFX_DEVICE_SUPER_SPEED_POWE
 </ul>
 </dd>
 
-### -param <i>Set</i> [in]
+### -param Set [in]
 
 <dd>
 <p>If TRUE, set the feature.</p>
@@ -91,11 +91,11 @@ typedef EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE PFN_UFX_DEVICE_SUPER_SPEED_POWE
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The client driver for the function host controller registers its <i>EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE</i> implementation with the USB function class extension (UFX) by calling the <a href="buses.ufxdevicecreate">UfxDeviceCreate</a> method.</p>
+<p>The client driver for the function host controller registers its <i>EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE</i> implementation with the USB function class extension (UFX) by calling the <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a> method.</p>
 
 <p>This event callback is only required for controllers that support SuperSpeed operation.</p>
 
-<p>The client driver indicates completion of this event by calling the <a href="buses.ufxdeviceeventcomplete">UfxDeviceEventComplete</a> method.</p>
+<p>The client driver indicates completion of this event by calling the <a href="..\ufxclient\nf-ufxclient-ufxdeviceeventcomplete.md">UfxDeviceEventComplete</a> method.</p>
 
 ## -requirements
 <table>
@@ -138,10 +138,10 @@ typedef EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE PFN_UFX_DEVICE_SUPER_SPEED_POWE
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ufxdevicecreate">UfxDeviceCreate</a>
+<a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>
 </dt>
 <dt>
-<a href="buses.ufxdeviceeventcomplete">UfxDeviceEventComplete</a>
+<a href="..\ufxclient\nf-ufxclient-ufxdeviceeventcomplete.md">UfxDeviceEventComplete</a>
 </dt>
 </dl>
 <p> </p>

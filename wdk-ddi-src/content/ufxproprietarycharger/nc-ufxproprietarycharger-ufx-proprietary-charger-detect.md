@@ -61,16 +61,16 @@ typedef UFX_PROPRIETARY_CHARGER_DETECT PFN_UFX_PROPRIETARY_CHARGER_DETECT;
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>    A pointer to a driver-defined context.</p>
 </dd>
 
-### -param <i>DetectedCharger</i> [out]
+### -param DetectedCharger [out]
 
 <dd>
-<p>A pointer to a     <a href="buses.ufx_proprietary_charger">UFX_PROPRIETARY_CHARGER</a> structure that the driver fills with charger information. </p>
+<p>A pointer to a     <a href="..\ufxproprietarycharger\ns-ufxproprietarycharger--ufx-proprietary-charger.md">UFX_PROPRIETARY_CHARGER</a> structure that the driver fills with charger information. </p>
 </dd>
 </dl>
 

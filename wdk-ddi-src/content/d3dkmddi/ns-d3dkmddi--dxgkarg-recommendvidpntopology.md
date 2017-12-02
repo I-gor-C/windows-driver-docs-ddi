@@ -57,19 +57,19 @@ typedef struct _DXGKARG_RECOMMENDVIDPNTOPOLOGY {
 ## -struct-fields
 <dl>
 
-### -field <b>hVidPn</b>
+### -field hVidPn
 
 <dd>
 <p>A handle to a VidPN object. The <i>DxgkDdiRecommendVidPnTopology</i> function creates or augments the topology of this VidPN.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>D3DDDI_ID_ALL or the identifier of a particular video present source on the display adapter. If this member is the identifier of a particular source, the <i>DxgkDdiRecommendVidPnTopology</i> function must augment the topology by adding at least one path that originates from that source. If this member is equal to D3DDDI_ID_ALL, <i>DxgkDdiRecommendVidPnTopology</i> must create the entire topology.</p>
 </dd>
 
-### -field <b>RequestReason</b>
+### -field RequestReason
 
 <dd>
 <p>
@@ -77,7 +77,7 @@ typedef struct _DXGKARG_RECOMMENDVIDPNTOPOLOGY {
      </p>
 </dd>
 
-### -field <b>hFallbackTopology</b>
+### -field hFallbackTopology
 
 <dd>
 <p>A handle to a VidPN topology object that represents the fallback VidPN topology that Windows will use if the miniport does not provide a topology recommendation.</p>

@@ -63,31 +63,31 @@ PDMA VideoPortMapDmaMemory(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>pVrp</i> [in]
+### -param pVrp [in]
 
 <dd>
 <p>Pointer to a <a href="..\video\ns-video--video-request-packet.md">VIDEO_REQUEST_PACKET</a>.</p>
 </dd>
 
-### -param <i>BoardAddress</i> [in]
+### -param BoardAddress [in]
 
 <dd>
 <p>Specifies the adapter's beginning address.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the length, in bytes, of the range of memory.</p>
 </dd>
 
-### -param <i>InIoSpace</i> [in]
+### -param InIoSpace [in]
 
 <dd>
 <p>Indicates the location of the range. This parameter can be one of the following values:</p>
@@ -140,19 +140,19 @@ PDMA VideoPortMapDmaMemory(
 <p> </p>
 </dd>
 
-### -param <i>MappedUserEvent</i> [in]
+### -param MappedUserEvent [in]
 
 <dd>
 <p>Is reserved for system use.</p>
 </dd>
 
-### -param <i>DisplayDriverEvent</i> [in]
+### -param DisplayDriverEvent [in]
 
 <dd>
 <p>Is reserved for system use.</p>
 </dd>
 
-### -param <i>VirtualAddress</i> [in, out]
+### -param VirtualAddress [in, out]
 
 <dd>
 <p>Is reserved for system use.</p>

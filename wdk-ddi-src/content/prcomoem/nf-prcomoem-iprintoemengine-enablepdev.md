@@ -64,43 +64,43 @@ HRESULT EnablePDEV(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd></dd>
 
-### -param <i>pPrinterName</i> 
+### -param pPrinterName 
 
 <dd></dd>
 
-### -param <i>cPatterns</i> 
+### -param cPatterns 
 
 <dd></dd>
 
-### -param <i>phsurfPatterns</i> 
+### -param phsurfPatterns 
 
 <dd></dd>
 
-### -param <i>cjGdiInfo</i> 
+### -param cjGdiInfo 
 
 <dd></dd>
 
-### -param <i>pGdiInfo</i> 
+### -param pGdiInfo 
 
 <dd></dd>
 
-### -param <i>cjDevInfo</i> 
+### -param cjDevInfo 
 
 <dd></dd>
 
-### -param <i>pDevInfo</i> 
+### -param pDevInfo 
 
 <dd></dd>
 
-### -param <i>pded</i> 
+### -param pded 
 
 <dd></dd>
 
-### -param <i>pDevOem</i> 
+### -param pDevOem 
 
 <dd></dd>
 </dl>

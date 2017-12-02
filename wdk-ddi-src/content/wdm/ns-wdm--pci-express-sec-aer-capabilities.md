@@ -59,19 +59,19 @@ typedef union _PCI_EXPRESS_SEC_AER_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>SecondaryUncorrectableFirstErrorPtr</b>
+### -field SecondaryUncorrectableFirstErrorPtr
 
 <dd>
 <p>The bit position of the first error that was reported in the PCIe secondary uncorrectable error status register.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_SEC_AER_CAPABILITIES structure.</p>

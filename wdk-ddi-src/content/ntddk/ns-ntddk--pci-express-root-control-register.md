@@ -62,43 +62,43 @@ typedef union _PCI_EXPRESS_ROOT_CONTROL_REGISTER {
 ## -struct-fields
 <dl>
 
-### -field <b>CorrectableSerrEnable</b>
+### -field CorrectableSerrEnable
 
 <dd>
 <p>A single bit that indicates that a system error should be generated if a correctable error is reported by any of the devices in the hierarchy that are associated with this root port or by the root port itself.</p>
 </dd>
 
-### -field <b>NonFatalSerrEnable</b>
+### -field NonFatalSerrEnable
 
 <dd>
 <p>A single bit that indicates that a system error should be generated if a non-fatal error is reported by any of the devices in the hierarchy that are associated with this root port or by the root port itself.</p>
 </dd>
 
-### -field <b>FatalSerrEnable</b>
+### -field FatalSerrEnable
 
 <dd>
 <p>A single bit that indicates that a system error should be generated if a non-fatal error is reported by any of the devices in the hierarchy that are associated with this root port or by the root port itself.</p>
 </dd>
 
-### -field <b>PMEInterruptEnable</b>
+### -field PMEInterruptEnable
 
 <dd>
 <p>A single bit that indicates that interrupts are enabled for power management events.</p>
 </dd>
 
-### -field <b>CRSSoftwareVisibilityEnable</b>
+### -field CRSSoftwareVisibilityEnable
 
 <dd>
 <p>A single bit that indicates that the root port is enabled to return configuration request retry status (CRS) completion status to software.</p>
 </dd>
 
-### -field <b>Rsvd</b>
+### -field Rsvd
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>A USHORT representation of the contents of the PCI_EXPRESS_ROOT_CONTROL_REGISTER structure.</p>

@@ -57,25 +57,25 @@ typedef struct _NLSTABLEINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>OemTableInfo</b>
+### -field OemTableInfo
 
 <dd>
 <p>Specifies OEM table.</p>
 </dd>
 
-### -field <b>AnsiTableInfo</b>
+### -field AnsiTableInfo
 
 <dd>
 <p>Specifies an ANSI table. </p>
 </dd>
 
-### -field <b>UpperCaseTable</b>
+### -field UpperCaseTable
 
 <dd>
 <p>Specifies an 844 format uppercase table.</p>
 </dd>
 
-### -field <b>PUSHORT</b>
+### -field PUSHORT
 
 <dd>
 <p>Specifies an 844 format lowercase table.</p>

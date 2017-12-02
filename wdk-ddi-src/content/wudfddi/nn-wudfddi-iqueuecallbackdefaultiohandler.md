@@ -7,7 +7,7 @@ old-location: wdf\iqueuecallbackdefaultiohandler.htm
 old-project: wdf
 ms.assetid: 3b2980f9-2f55-4fe3-99ac-1da578688f4b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

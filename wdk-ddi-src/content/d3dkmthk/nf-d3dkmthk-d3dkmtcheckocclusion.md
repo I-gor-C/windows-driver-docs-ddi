@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTCheckOcclusion(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-checkocclusion.md">D3DKMT_CHECKOCCLUSION</a> structure that describes parameters for checking occlusion.</p>

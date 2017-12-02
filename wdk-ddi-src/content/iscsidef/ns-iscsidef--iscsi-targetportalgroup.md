@@ -55,13 +55,13 @@ typedef struct _ISCSI_TargetPortalGroup {
 ## -struct-fields
 <dl>
 
-### -field <b>PortalCount</b>
+### -field PortalCount
 
 <dd>
 <p>The number of portals in the portal group. </p>
 </dd>
 
-### -field <b>Portals</b>
+### -field Portals
 
 <dd>
 <p>A variable-length array of <a href="..\iscsidef\ns-iscsidef--iscsi-targetportal.md">ISCSI_TargetPortal</a> structures, which describe portals in the target portal group. The number of elements in the array is specified by the PortalCount field.</p>

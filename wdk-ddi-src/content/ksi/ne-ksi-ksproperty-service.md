@@ -55,11 +55,11 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_SERVICE_BUILDCACHE"></a><a id="ksproperty_service_buildcache"></a><b>KSPROPERTY_SERVICE_BUILDCACHE</b>
+### -field KSPROPERTY_SERVICE_BUILDCACHE
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_SERVICE_MERIT"></a><a id="ksproperty_service_merit"></a><b>KSPROPERTY_SERVICE_MERIT</b>
+### -field KSPROPERTY_SERVICE_MERIT
 
 <dd></dd>
 </dl>

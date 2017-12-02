@@ -74,7 +74,7 @@ typedef struct _KS_VIDEO_STREAM_CONFIG_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>guid</b>
+### -field guid
 
 <dd>
 <p>GUID that specifies the video format type. Possible values include:</p>
@@ -87,79 +87,79 @@ typedef struct _KS_VIDEO_STREAM_CONFIG_CAPS {
 <p>This GUID is identical to the DirectShow AM_MEDIA_TYPE enumeration. For more information about AM_MEDIA_TYPE, see the DirectX SDK documentation.</p>
 </dd>
 
-### -field <b>VideoStandard</b>
+### -field VideoStandard
 
 <dd>
 <p>Specifies the analog video standards that are supported by the stream. This member can be set to one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks-analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.</p>
 </dd>
 
-### -field <b>InputSize</b>
+### -field InputSize
 
 <dd>
 <p>Specifies the size of the incoming signal. <b>InputSize</b> indicates the image rectangle's width and height, in pixels. This is the largest signal that the filter can digitize with each pixel remaining unique. </p>
 </dd>
 
-### -field <b>MinCroppingSize</b>
+### -field MinCroppingSize
 
 <dd>
 <p>Specifies the smallest cropping rectangle allowed, as specified in the <b>rcSource</b> member of the <a href="stream.ks_videoinfoheader">KS_VIDEOINFOHEADER</a> structure, which is associated with the <b>DataRange</b> member. </p>
 </dd>
 
-### -field <b>MaxCroppingSize</b>
+### -field MaxCroppingSize
 
 <dd>
 <p>Specifies the largest cropping rectangle allowed, as specified in the <b>rcSource</b> member of the KS_VIDEOINFOHEADER structure, which is associated with the <b>DataRange</b> member. </p>
 </dd>
 
-### -field <b>CropGranularityX</b>
+### -field CropGranularityX
 
 <dd>
 <p>Specifies the horizontal granularity of the cropping size. For example, valid widths could be specified as even multiples of four. </p>
 </dd>
 
-### -field <b>CropGranularityY</b>
+### -field CropGranularityY
 
 <dd>
 <p>Specifies the vertical granularity of the cropping size. For example, valid heights could be specified as even multiples of four. </p>
 </dd>
 
-### -field <b>CropAlignX</b>
+### -field CropAlignX
 
 <dd>
 <p>Specifies the horizontal alignment of the cropping rectangle inside <b>InputSize</b>. For example, the minidriver could specify that valid rectangles must start on a boundary that is a multiple of four. </p>
 </dd>
 
-### -field <b>CropAlignY</b>
+### -field CropAlignY
 
 <dd>
 <p>Specifies the vertical alignment of the cropping rectangle inside <b>InputSize</b>. For example, the minidriver could specify that valid rectangles must start on a boundary that is a multiple of four.</p>
 </dd>
 
-### -field <b>MinOutputSize</b>
+### -field MinOutputSize
 
 <dd>
 <p>Specifies the smallest bitmap that this pin can produce.</p>
 </dd>
 
-### -field <b>MaxOutputSize</b>
+### -field MaxOutputSize
 
 <dd>
 <p>Specifies the largest bitmap that this pin can produce.</p>
 </dd>
 
-### -field <b>OutputGranularityX</b>
+### -field OutputGranularityX
 
 <dd>
 <p>Specifies the granularity of the output bitmap width.</p>
 </dd>
 
-### -field <b>OutputGranularityY</b>
+### -field OutputGranularityY
 
 <dd>
 <p>Specifies the granularity of the output bitmap height.</p>
 </dd>
 
-### -field <b>StretchTapsX</b>
+### -field StretchTapsX
 
 <dd>
 <p>Specifies one of the following values to indicate how well the filter can stretch the image's width.</p>
@@ -204,7 +204,7 @@ typedef struct _KS_VIDEO_STREAM_CONFIG_CAPS {
 <p> </p>
 </dd>
 
-### -field <b>StretchTapsY</b>
+### -field StretchTapsY
 
 <dd>
 <p>Specifies one of the following values to indicate how well the filter can stretch the image's height.</p>
@@ -249,7 +249,7 @@ typedef struct _KS_VIDEO_STREAM_CONFIG_CAPS {
 <p> </p>
 </dd>
 
-### -field <b>ShrinkTapsX</b>
+### -field ShrinkTapsX
 
 <dd>
 <p>Specifies one of the following values to indicate how well the filter can shrink the image's width.</p>
@@ -294,7 +294,7 @@ typedef struct _KS_VIDEO_STREAM_CONFIG_CAPS {
 <p> </p>
 </dd>
 
-### -field <b>ShrinkTapsY</b>
+### -field ShrinkTapsY
 
 <dd>
 <p>Specifies one of the following values to indicate how well the filter can shrink the image's height.</p>
@@ -339,25 +339,25 @@ typedef struct _KS_VIDEO_STREAM_CONFIG_CAPS {
 <p> </p>
 </dd>
 
-### -field <b>MinFrameInterval</b>
+### -field MinFrameInterval
 
 <dd>
 <p>Specifies the minimum frame rate allowed. This value applies to capture filters only.</p>
 </dd>
 
-### -field <b>MaxFrameInterval</b>
+### -field MaxFrameInterval
 
 <dd>
 <p>Specifies the maximum frame rate allowed. This value applies to capture filters only.</p>
 </dd>
 
-### -field <b>MinBitsPerSecond</b>
+### -field MinBitsPerSecond
 
 <dd>
 <p>Specifies the minimum data rate, in bits per second, that this pin can produce.</p>
 </dd>
 
-### -field <b>MaxBitsPerSecond</b>
+### -field MaxBitsPerSecond
 
 <dd>
 <p>Specifies the maximum data rate, in bits per second, that this pin can produce.</p>

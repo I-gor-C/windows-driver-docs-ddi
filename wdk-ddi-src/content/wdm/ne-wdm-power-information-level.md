@@ -150,577 +150,577 @@ typedef enum _POWER_INFORMATION_LEVEL {
 ## -enum-fields
 <dl>
 
-### -field <a id="SystemPowerPolicyAc"></a><a id="systempowerpolicyac"></a><a id="SYSTEMPOWERPOLICYAC"></a><b>SystemPowerPolicyAc</b>
+### -field SystemPowerPolicyAc
 
 <dd>
 <p>Indicates SystemPowerPolicyAc.</p>
 </dd>
 
-### -field <a id="SystemPowerPolicyDc"></a><a id="systempowerpolicydc"></a><a id="SYSTEMPOWERPOLICYDC"></a><b>SystemPowerPolicyDc</b>
+### -field SystemPowerPolicyDc
 
 <dd>
 <p>Indicates SystemPowerPolicyDc.</p>
 </dd>
 
-### -field <a id="VerifySystemPolicyAc"></a><a id="verifysystempolicyac"></a><a id="VERIFYSYSTEMPOLICYAC"></a><b>VerifySystemPolicyAc</b>
+### -field VerifySystemPolicyAc
 
 <dd>
 <p>Indicates VerifySystemPolicyAc.</p>
 </dd>
 
-### -field <a id="VerifySystemPolicyDc"></a><a id="verifysystempolicydc"></a><a id="VERIFYSYSTEMPOLICYDC"></a><b>VerifySystemPolicyDc</b>
+### -field VerifySystemPolicyDc
 
 <dd>
 <p>Indicates VerifySystemPolicyDc.</p>
 </dd>
 
-### -field <a id="SystemPowerCapabilities"></a><a id="systempowercapabilities"></a><a id="SYSTEMPOWERCAPABILITIES"></a><b>SystemPowerCapabilities</b>
+### -field SystemPowerCapabilities
 
 <dd>
 <p>Indicates the power capabilities of the system.</p>
 </dd>
 
-### -field <a id="SystemBatteryState"></a><a id="systembatterystate"></a><a id="SYSTEMBATTERYSTATE"></a><b>SystemBatteryState</b>
+### -field SystemBatteryState
 
 <dd>
 <p>Indicates the system's battery state.</p>
 </dd>
 
-### -field <a id="SystemPowerStateHandler"></a><a id="systempowerstatehandler"></a><a id="SYSTEMPOWERSTATEHANDLER"></a><b>SystemPowerStateHandler</b>
+### -field SystemPowerStateHandler
 
 <dd>
 <p>Indicates the system's power state handler.</p>
 </dd>
 
-### -field <a id="ProcessorStateHandler"></a><a id="processorstatehandler"></a><a id="PROCESSORSTATEHANDLER"></a><b>ProcessorStateHandler</b>
+### -field ProcessorStateHandler
 
 <dd>
 <p>Indicates the processor state handler.</p>
 </dd>
 
-### -field <a id="SystemPowerPolicyCurrent"></a><a id="systempowerpolicycurrent"></a><a id="SYSTEMPOWERPOLICYCURRENT"></a><b>SystemPowerPolicyCurrent</b>
+### -field SystemPowerPolicyCurrent
 
 <dd>
 <p>Indicates the system's current power policy.</p>
 </dd>
 
-### -field <a id="AdministratorPowerPolicy"></a><a id="administratorpowerpolicy"></a><a id="ADMINISTRATORPOWERPOLICY"></a><b>AdministratorPowerPolicy</b>
+### -field AdministratorPowerPolicy
 
 <dd>
 <p>Indicates the administrator's power policy.</p>
 </dd>
 
-### -field <a id="SystemReserveHiberFile"></a><a id="systemreservehiberfile"></a><a id="SYSTEMRESERVEHIBERFILE"></a><b>SystemReserveHiberFile</b>
+### -field SystemReserveHiberFile
 
 <dd>
 <p>Indicates the SystemReserveHiberFile.</p>
 </dd>
 
-### -field <a id="ProcessorInformation"></a><a id="processorinformation"></a><a id="PROCESSORINFORMATION"></a><b>ProcessorInformation</b>
+### -field ProcessorInformation
 
 <dd>
 <p>Indicates the processor information.</p>
 </dd>
 
-### -field <a id="SystemPowerInformation"></a><a id="systempowerinformation"></a><a id="SYSTEMPOWERINFORMATION"></a><b>SystemPowerInformation</b>
+### -field SystemPowerInformation
 
 <dd>
 <p>Indicates the system power information.</p>
 </dd>
 
-### -field <a id="ProcessorStateHandler2"></a><a id="processorstatehandler2"></a><a id="PROCESSORSTATEHANDLER2"></a><b>ProcessorStateHandler2</b>
+### -field ProcessorStateHandler2
 
 <dd>
 <p>Indicates the processor state handler.</p>
 </dd>
 
-### -field <a id="LastWakeTime"></a><a id="lastwaketime"></a><a id="LASTWAKETIME"></a><b>LastWakeTime</b>
+### -field LastWakeTime
 
 <dd>
 <p>Indicates the last wake time.</p>
 </dd>
 
-### -field <a id="LastSleepTime"></a><a id="lastsleeptime"></a><a id="LASTSLEEPTIME"></a><b>LastSleepTime</b>
+### -field LastSleepTime
 
 <dd>
 <p>Indicates the last sleep time.</p>
 </dd>
 
-### -field <a id="SystemExecutionState"></a><a id="systemexecutionstate"></a><a id="SYSTEMEXECUTIONSTATE"></a><b>SystemExecutionState</b>
+### -field SystemExecutionState
 
 <dd>
 <p>Indicates the system execution state.</p>
 </dd>
 
-### -field <a id="SystemPowerStateNotifyHandler"></a><a id="systempowerstatenotifyhandler"></a><a id="SYSTEMPOWERSTATENOTIFYHANDLER"></a><b>SystemPowerStateNotifyHandler</b>
+### -field SystemPowerStateNotifyHandler
 
 <dd>
 <p>Indicates the system power state notify handler.</p>
 </dd>
 
-### -field <a id="ProcessorPowerPolicyAc"></a><a id="processorpowerpolicyac"></a><a id="PROCESSORPOWERPOLICYAC"></a><b>ProcessorPowerPolicyAc</b>
+### -field ProcessorPowerPolicyAc
 
 <dd>
 <p>Indicates ProcessorPowerPolicyAc.</p>
 </dd>
 
-### -field <a id="ProcessorPowerPolicyDc"></a><a id="processorpowerpolicydc"></a><a id="PROCESSORPOWERPOLICYDC"></a><b>ProcessorPowerPolicyDc</b>
+### -field ProcessorPowerPolicyDc
 
 <dd>
 <p>Indicates ProcessorPowerPolicyDc.</p>
 </dd>
 
-### -field <a id="VerifyProcessorPowerPolicyAc"></a><a id="verifyprocessorpowerpolicyac"></a><a id="VERIFYPROCESSORPOWERPOLICYAC"></a><b>VerifyProcessorPowerPolicyAc</b>
+### -field VerifyProcessorPowerPolicyAc
 
 <dd>
 <p>Indicates VerifyProcessorPowerPolicyAc.</p>
 </dd>
 
-### -field <a id="VerifyProcessorPowerPolicyDc"></a><a id="verifyprocessorpowerpolicydc"></a><a id="VERIFYPROCESSORPOWERPOLICYDC"></a><b>VerifyProcessorPowerPolicyDc</b>
+### -field VerifyProcessorPowerPolicyDc
 
 <dd>
 <p>Indicates VerifyProcessorPowerPolicyDc.</p>
 </dd>
 
-### -field <a id="ProcessorPowerPolicyCurrent"></a><a id="processorpowerpolicycurrent"></a><a id="PROCESSORPOWERPOLICYCURRENT"></a><b>ProcessorPowerPolicyCurrent</b>
+### -field ProcessorPowerPolicyCurrent
 
 <dd>
 <p>Indicates the current processor power policy.</p>
 </dd>
 
-### -field <a id="SystemPowerStateLogging"></a><a id="systempowerstatelogging"></a><a id="SYSTEMPOWERSTATELOGGING"></a><b>SystemPowerStateLogging</b>
+### -field SystemPowerStateLogging
 
 <dd>
 <p>Indicates SystemPowerStateLogging.</p>
 </dd>
 
-### -field <a id="SystemPowerLoggingEntry"></a><a id="systempowerloggingentry"></a><a id="SYSTEMPOWERLOGGINGENTRY"></a><b>SystemPowerLoggingEntry</b>
+### -field SystemPowerLoggingEntry
 
 <dd>
 <p>Indicates SystemPowerLoggingEntry.</p>
 </dd>
 
-### -field <a id="SetPowerSettingValue"></a><a id="setpowersettingvalue"></a><a id="SETPOWERSETTINGVALUE"></a><b>SetPowerSettingValue</b>
+### -field SetPowerSettingValue
 
 <dd>
 <p>Indicates that the power setting value is set.</p>
 </dd>
 
-### -field <a id="NotifyUserPowerSetting"></a><a id="notifyuserpowersetting"></a><a id="NOTIFYUSERPOWERSETTING"></a><b>NotifyUserPowerSetting</b>
+### -field NotifyUserPowerSetting
 
 <dd>
 <p>Indicates that the user should be notified of the power setting.</p>
 </dd>
 
-### -field <a id="PowerInformationLevelUnused0"></a><a id="powerinformationlevelunused0"></a><a id="POWERINFORMATIONLEVELUNUSED0"></a><b>PowerInformationLevelUnused0</b>
+### -field PowerInformationLevelUnused0
 
 <dd>
 <p>Indicates that the power information level is unused.</p>
 </dd>
 
-### -field <a id="SystemMonitorHiberBootPowerOff"></a><a id="systemmonitorhiberbootpoweroff"></a><a id="SYSTEMMONITORHIBERBOOTPOWEROFF"></a><b>SystemMonitorHiberBootPowerOff</b>
+### -field SystemMonitorHiberBootPowerOff
 
 <dd>
 <p>Indicates that the system monitor boot power is off.</p>
 </dd>
 
-### -field <a id="SystemVideoState"></a><a id="systemvideostate"></a><a id="SYSTEMVIDEOSTATE"></a><b>SystemVideoState</b>
+### -field SystemVideoState
 
 <dd>
 <p>Indicates the system video state.</p>
 </dd>
 
-### -field <a id="TraceApplicationPowerMessage"></a><a id="traceapplicationpowermessage"></a><a id="TRACEAPPLICATIONPOWERMESSAGE"></a><b>TraceApplicationPowerMessage</b>
+### -field TraceApplicationPowerMessage
 
 <dd>
 <p>Indicates the trace application power message.</p>
 </dd>
 
-### -field <a id="TraceApplicationPowerMessageEnd"></a><a id="traceapplicationpowermessageend"></a><a id="TRACEAPPLICATIONPOWERMESSAGEEND"></a><b>TraceApplicationPowerMessageEnd</b>
+### -field TraceApplicationPowerMessageEnd
 
 <dd>
 <p>Indicates the end of the trace application power message.</p>
 </dd>
 
-### -field <a id="ProcessorPerfStates"></a><a id="processorperfstates"></a><a id="PROCESSORPERFSTATES"></a><b>ProcessorPerfStates</b>
+### -field ProcessorPerfStates
 
 <dd>
 <p>Indicates the processor performance states.</p>
 </dd>
 
-### -field <a id="ProcessorIdleStates"></a><a id="processoridlestates"></a><a id="PROCESSORIDLESTATES"></a><b>ProcessorIdleStates</b>
+### -field ProcessorIdleStates
 
 <dd>
 <p>Indicates the processor idle states.</p>
 </dd>
 
-### -field <a id="ProcessorCap"></a><a id="processorcap"></a><a id="PROCESSORCAP"></a><b>ProcessorCap</b>
+### -field ProcessorCap
 
 <dd>
 <p>Indicates the processor cap.</p>
 </dd>
 
-### -field <a id="SystemWakeSource"></a><a id="systemwakesource"></a><a id="SYSTEMWAKESOURCE"></a><b>SystemWakeSource</b>
+### -field SystemWakeSource
 
 <dd>
 <p>Indicates the system wake source.</p>
 </dd>
 
-### -field <a id="SystemHiberFileInformation"></a><a id="systemhiberfileinformation"></a><a id="SYSTEMHIBERFILEINFORMATION"></a><b>SystemHiberFileInformation</b>
+### -field SystemHiberFileInformation
 
 <dd>
 <p>Indicates the system's hibernation file information.</p>
 </dd>
 
-### -field <a id="TraceServicePowerMessage"></a><a id="traceservicepowermessage"></a><a id="TRACESERVICEPOWERMESSAGE"></a><b>TraceServicePowerMessage</b>
+### -field TraceServicePowerMessage
 
 <dd>
 <p>Indicates the trace service power message.</p>
 </dd>
 
-### -field <a id="ProcessorLoad"></a><a id="processorload"></a><a id="PROCESSORLOAD"></a><b>ProcessorLoad</b>
+### -field ProcessorLoad
 
 <dd>
 <p>Indicates the processor load.</p>
 </dd>
 
-### -field <a id="PowerShutdownNotification"></a><a id="powershutdownnotification"></a><a id="POWERSHUTDOWNNOTIFICATION"></a><b>PowerShutdownNotification</b>
+### -field PowerShutdownNotification
 
 <dd>
 <p>Indicates the power shutdown notification.</p>
 </dd>
 
-### -field <a id="MonitorCapabilities"></a><a id="monitorcapabilities"></a><a id="MONITORCAPABILITIES"></a><b>MonitorCapabilities</b>
+### -field MonitorCapabilities
 
 <dd>
 <p>Indicates the monitor's capabilities.</p>
 </dd>
 
-### -field <a id="SessionPowerInit"></a><a id="sessionpowerinit"></a><a id="SESSIONPOWERINIT"></a><b>SessionPowerInit</b>
+### -field SessionPowerInit
 
 <dd>
 <p>Indicates the session power has been initialized.</p>
 </dd>
 
-### -field <a id="SessionDisplayState"></a><a id="sessiondisplaystate"></a><a id="SESSIONDISPLAYSTATE"></a><b>SessionDisplayState</b>
+### -field SessionDisplayState
 
 <dd>
 <p>Indicates the session display state.</p>
 </dd>
 
-### -field <a id="PowerRequestCreate"></a><a id="powerrequestcreate"></a><a id="POWERREQUESTCREATE"></a><b>PowerRequestCreate</b>
+### -field PowerRequestCreate
 
 <dd>
 <p>Indicates that a power request has been created.</p>
 </dd>
 
-### -field <a id="PowerRequestAction"></a><a id="powerrequestaction"></a><a id="POWERREQUESTACTION"></a><b>PowerRequestAction</b>
+### -field PowerRequestAction
 
 <dd>
 <p>Indicates the action of the power request.</p>
 </dd>
 
-### -field <a id="GetPowerRequestList"></a><a id="getpowerrequestlist"></a><a id="GETPOWERREQUESTLIST"></a><b>GetPowerRequestList</b>
+### -field GetPowerRequestList
 
 <dd>
 <p>Indicates that the power request list should be queued. </p>
 </dd>
 
-### -field <a id="ProcessorInformationEx"></a><a id="processorinformationex"></a><a id="PROCESSORINFORMATIONEX"></a><b>ProcessorInformationEx</b>
+### -field ProcessorInformationEx
 
 <dd>
 <p>Indicates ProcessorInformationEx.</p>
 </dd>
 
-### -field <a id="NotifyUserModeLegacyPowerEvent"></a><a id="notifyusermodelegacypowerevent"></a><a id="NOTIFYUSERMODELEGACYPOWEREVENT"></a><b>NotifyUserModeLegacyPowerEvent</b>
+### -field NotifyUserModeLegacyPowerEvent
 
 <dd>
 <p>Indicates that a notification should be created for the user mode legacy power event.</p>
 </dd>
 
-### -field <a id="GroupPark"></a><a id="grouppark"></a><a id="GROUPPARK"></a><b>GroupPark</b>
+### -field GroupPark
 
 <dd>
 <p>Indicates the group park.</p>
 </dd>
 
-### -field <a id="ProcessorIdleDomains"></a><a id="processoridledomains"></a><a id="PROCESSORIDLEDOMAINS"></a><b>ProcessorIdleDomains</b>
+### -field ProcessorIdleDomains
 
 <dd>
 <p>Indicates the processor's idle domains.</p>
 </dd>
 
-### -field <a id="WakeTimerList"></a><a id="waketimerlist"></a><a id="WAKETIMERLIST"></a><b>WakeTimerList</b>
+### -field WakeTimerList
 
 <dd>
 <p>Indicates the wake timer list.</p>
 </dd>
 
-### -field <a id="SystemHiberFileSize"></a><a id="systemhiberfilesize"></a><a id="SYSTEMHIBERFILESIZE"></a><b>SystemHiberFileSize</b>
+### -field SystemHiberFileSize
 
 <dd>
 <p>Indicates the system's hibernation file size.</p>
 </dd>
 
-### -field <a id="ProcessorIdleStatesHv"></a><a id="processoridlestateshv"></a><a id="PROCESSORIDLESTATESHV"></a><b>ProcessorIdleStatesHv</b>
+### -field ProcessorIdleStatesHv
 
 <dd>
 <p>Indicates the processor's idle states.</p>
 </dd>
 
-### -field <a id="ProcessorPerfStatesHv"></a><a id="processorperfstateshv"></a><a id="PROCESSORPERFSTATESHV"></a><b>ProcessorPerfStatesHv</b>
+### -field ProcessorPerfStatesHv
 
 <dd>
 <p>Indicates the processor's performance states.</p>
 </dd>
 
-### -field <a id="ProcessorPerfCapHv"></a><a id="processorperfcaphv"></a><a id="PROCESSORPERFCAPHV"></a><b>ProcessorPerfCapHv</b>
+### -field ProcessorPerfCapHv
 
 <dd>
 <p>Indicates the processor's performance capabilities.</p>
 </dd>
 
-### -field <a id="ProcessorSetIdle"></a><a id="processorsetidle"></a><a id="PROCESSORSETIDLE"></a><b>ProcessorSetIdle</b>
+### -field ProcessorSetIdle
 
 <dd>
 <p>Indicates that the processor has been set to idle.</p>
 </dd>
 
-### -field <a id="LogicalProcessorIdling"></a><a id="logicalprocessoridling"></a><a id="LOGICALPROCESSORIDLING"></a><b>LogicalProcessorIdling</b>
+### -field LogicalProcessorIdling
 
 <dd>
 <p>Indicates that the processor is idling.</p>
 </dd>
 
-### -field <a id="UserPresence"></a><a id="userpresence"></a><a id="USERPRESENCE"></a><b>UserPresence</b>
+### -field UserPresence
 
 <dd>
 <p>Indicates the user presence.</p>
 </dd>
 
-### -field <a id="PowerSettingNotificationName"></a><a id="powersettingnotificationname"></a><a id="POWERSETTINGNOTIFICATIONNAME"></a><b>PowerSettingNotificationName</b>
+### -field PowerSettingNotificationName
 
 <dd>
 <p>Indicates the power setting notification name.</p>
 </dd>
 
-### -field <a id="GetPowerSettingValue"></a><a id="getpowersettingvalue"></a><a id="GETPOWERSETTINGVALUE"></a><b>GetPowerSettingValue</b>
+### -field GetPowerSettingValue
 
 <dd>
 <p>Indicates that the power setting value should be queued.</p>
 </dd>
 
-### -field <a id="IdleResiliency"></a><a id="idleresiliency"></a><a id="IDLERESILIENCY"></a><b>IdleResiliency</b>
+### -field IdleResiliency
 
 <dd>
 <p>Indicates the idle resiliency.</p>
 </dd>
 
-### -field <a id="SessionRITState"></a><a id="sessionritstate"></a><a id="SESSIONRITSTATE"></a><b>SessionRITState</b>
+### -field SessionRITState
 
 <dd>
 <p>Indicates the session's RIT state.</p>
 </dd>
 
-### -field <a id="SessionConnectNotification"></a><a id="sessionconnectnotification"></a><a id="SESSIONCONNECTNOTIFICATION"></a><b>SessionConnectNotification</b>
+### -field SessionConnectNotification
 
 <dd>
 <p>Indicates the session's connect notification.</p>
 </dd>
 
-### -field <a id="SessionPowerCleanup"></a><a id="sessionpowercleanup"></a><a id="SESSIONPOWERCLEANUP"></a><b>SessionPowerCleanup</b>
+### -field SessionPowerCleanup
 
 <dd>
 <p>Indicates the session's power cleanup.</p>
 </dd>
 
-### -field <a id="SessionLockState"></a><a id="sessionlockstate"></a><a id="SESSIONLOCKSTATE"></a><b>SessionLockState</b>
+### -field SessionLockState
 
 <dd>
 <p>Indicates the session's lock state.</p>
 </dd>
 
-### -field <a id="SystemHiberbootState"></a><a id="systemhiberbootstate"></a><a id="SYSTEMHIBERBOOTSTATE"></a><b>SystemHiberbootState</b>
+### -field SystemHiberbootState
 
 <dd>
 <p>Indicates the system's hibernation boot state.</p>
 </dd>
 
-### -field <a id="PlatformInformation"></a><a id="platforminformation"></a><a id="PLATFORMINFORMATION"></a><b>PlatformInformation</b>
+### -field PlatformInformation
 
 <dd>
 <p>Indicates the platform information.</p>
 </dd>
 
-### -field <a id="PdcInvocation"></a><a id="pdcinvocation"></a><a id="PDCINVOCATION"></a><b>PdcInvocation</b>
+### -field PdcInvocation
 
 <dd>
 <p>Indicates the pdc invocation.</p>
 </dd>
 
-### -field <a id="MonitorInvocation"></a><a id="monitorinvocation"></a><a id="MONITORINVOCATION"></a><b>MonitorInvocation</b>
+### -field MonitorInvocation
 
 <dd>
 <p>Indicates the monitor invocation.</p>
 </dd>
 
-### -field <a id="FirmwareTableInformationRegistered"></a><a id="firmwaretableinformationregistered"></a><a id="FIRMWARETABLEINFORMATIONREGISTERED"></a><b>FirmwareTableInformationRegistered</b>
+### -field FirmwareTableInformationRegistered
 
 <dd>
 <p>Indicates the registered firmware table information.</p>
 </dd>
 
-### -field <a id="SetShutdownSelectedTime"></a><a id="setshutdownselectedtime"></a><a id="SETSHUTDOWNSELECTEDTIME"></a><b>SetShutdownSelectedTime</b>
+### -field SetShutdownSelectedTime
 
 <dd>
 <p>Indicates that the shutdown time should be set.</p>
 </dd>
 
-### -field <a id="SuspendResumeInvocation"></a><a id="suspendresumeinvocation"></a><a id="SUSPENDRESUMEINVOCATION"></a><b>SuspendResumeInvocation</b>
+### -field SuspendResumeInvocation
 
 <dd>
 <p>Indicates SuspendResumeInvocation.</p>
 </dd>
 
-### -field <a id="PlmPowerRequestCreate"></a><a id="plmpowerrequestcreate"></a><a id="PLMPOWERREQUESTCREATE"></a><b>PlmPowerRequestCreate</b>
+### -field PlmPowerRequestCreate
 
 <dd>
 <p>Indicates that the power request has been created.</p>
 </dd>
 
-### -field <a id="ScreenOff"></a><a id="screenoff"></a><a id="SCREENOFF"></a><b>ScreenOff</b>
+### -field ScreenOff
 
 <dd>
 <p>Indicates that the screen is off.</p>
 </dd>
 
-### -field <a id="CsDeviceNotification"></a><a id="csdevicenotification"></a><a id="CSDEVICENOTIFICATION"></a><b>CsDeviceNotification</b>
+### -field CsDeviceNotification
 
 <dd>
 <p>Indicates the device notification.</p>
 </dd>
 
-### -field <a id="PlatformRole"></a><a id="platformrole"></a><a id="PLATFORMROLE"></a><b>PlatformRole</b>
+### -field PlatformRole
 
 <dd>
 <p>Indicates the platform role.</p>
 </dd>
 
-### -field <a id="LastResumePerformance"></a><a id="lastresumeperformance"></a><a id="LASTRESUMEPERFORMANCE"></a><b>LastResumePerformance</b>
+### -field LastResumePerformance
 
 <dd>
 <p>Indicates the last time performance was resumed.</p>
 </dd>
 
-### -field <a id="DisplayBurst"></a><a id="displayburst"></a><a id="DISPLAYBURST"></a><b>DisplayBurst</b>
+### -field DisplayBurst
 
 <dd>
 <p>Indicates display burst.</p>
 </dd>
 
-### -field <a id="ExitLatencySamplingPercentage"></a><a id="exitlatencysamplingpercentage"></a><a id="EXITLATENCYSAMPLINGPERCENTAGE"></a><b>ExitLatencySamplingPercentage</b>
+### -field ExitLatencySamplingPercentage
 
 <dd>
 <p>Indicates the latency sampling percentage.</p>
 </dd>
 
-### -field <a id="RegisterSpmPowerSettings"></a><a id="registerspmpowersettings"></a><a id="REGISTERSPMPOWERSETTINGS"></a><b>RegisterSpmPowerSettings</b>
+### -field RegisterSpmPowerSettings
 
 <dd>
 <p>Indicates that the power settings are registered.</p>
 </dd>
 
-### -field <a id="PlatformIdleStates"></a><a id="platformidlestates"></a><a id="PLATFORMIDLESTATES"></a><b>PlatformIdleStates</b>
+### -field PlatformIdleStates
 
 <dd>
 <p>Indicates the platform's idle states.</p>
 </dd>
 
-### -field <a id="ProcessorIdleVeto"></a><a id="processoridleveto"></a><a id="PROCESSORIDLEVETO"></a><b>ProcessorIdleVeto</b>
+### -field ProcessorIdleVeto
 
 <dd>
 <p>Indicates the processor's idle veto.</p>
 </dd>
 
-### -field <a id="PlatformIdleVeto"></a><a id="platformidleveto"></a><a id="PLATFORMIDLEVETO"></a><b>PlatformIdleVeto</b>
+### -field PlatformIdleVeto
 
 <dd>
 <p>Indicates the platform's idle veto.</p>
 </dd>
 
-### -field <a id="SystemBatteryStatePrecise"></a><a id="systembatterystateprecise"></a><a id="SYSTEMBATTERYSTATEPRECISE"></a><b>SystemBatteryStatePrecise</b>
+### -field SystemBatteryStatePrecise
 
 <dd>
 <p>Indicates the system's battery state.</p>
 </dd>
 
-### -field <a id="ThermalEvent"></a><a id="thermalevent"></a><a id="THERMALEVENT"></a><b>ThermalEvent</b>
+### -field ThermalEvent
 
 <dd>
 <p>Indicates the thermal event.</p>
 </dd>
 
-### -field <a id="PowerRequestActionInternal"></a><a id="powerrequestactioninternal"></a><a id="POWERREQUESTACTIONINTERNAL"></a><b>PowerRequestActionInternal</b>
+### -field PowerRequestActionInternal
 
 <dd>
 <p>Indicates the internal power request action.</p>
 </dd>
 
-### -field <a id="BatteryDeviceState"></a><a id="batterydevicestate"></a><a id="BATTERYDEVICESTATE"></a><b>BatteryDeviceState</b>
+### -field BatteryDeviceState
 
 <dd>
 <p>Indicates the battery's device state.	</p>
 </dd>
 
-### -field <a id="PowerInformationInternal"></a><a id="powerinformationinternal"></a><a id="POWERINFORMATIONINTERNAL"></a><b>PowerInformationInternal</b>
+### -field PowerInformationInternal
 
 <dd>
 <p>Indicates the internal power information.</p>
 </dd>
 
-### -field <a id="ThermalStandby"></a><a id="thermalstandby"></a><a id="THERMALSTANDBY"></a><b>ThermalStandby</b>
+### -field ThermalStandby
 
 <dd>
 <p>Indicates thermal standby.</p>
 </dd>
 
-### -field <a id="SystemHiberFileType"></a><a id="systemhiberfiletype"></a><a id="SYSTEMHIBERFILETYPE"></a><b>SystemHiberFileType</b>
+### -field SystemHiberFileType
 
 <dd>
 <p>Indicates the system's hibernation file type.</p>
 </dd>
 
-### -field <a id="PhysicalPowerButtonPress"></a><a id="physicalpowerbuttonpress"></a><a id="PHYSICALPOWERBUTTONPRESS"></a><b>PhysicalPowerButtonPress</b>
+### -field PhysicalPowerButtonPress
 
 <dd>
 <p>Indicates a physical power button press.</p>
 </dd>
 
-### -field <a id="QueryPotentialDripsConstraint"></a><a id="querypotentialdripsconstraint"></a><a id="QUERYPOTENTIALDRIPSCONSTRAINT"></a><b>QueryPotentialDripsConstraint</b>
+### -field QueryPotentialDripsConstraint
 
 <dd>
 <p>Indicates the potential drips constraint.</p>
 </dd>
 
-### -field <a id="EnergyTrackerCreate"></a><a id="energytrackercreate"></a><a id="ENERGYTRACKERCREATE"></a><b>EnergyTrackerCreate</b>
+### -field EnergyTrackerCreate
 
 <dd>
 <p>Indicates that the energy tracker is created.</p>
 </dd>
 
-### -field <a id="EnergyTrackerQuery"></a><a id="energytrackerquery"></a><a id="ENERGYTRACKERQUERY"></a><b>EnergyTrackerQuery</b>
+### -field EnergyTrackerQuery
 
 <dd>
 <p>Indicates that the energy tracker is queried.</p>
 </dd>
 
-### -field <a id="UpdateBlackBoxRecorder"></a><a id="updateblackboxrecorder"></a><a id="UPDATEBLACKBOXRECORDER"></a><b>UpdateBlackBoxRecorder</b>
+### -field UpdateBlackBoxRecorder
 
 <dd>
 <p>Indicates that the black box recorder is updated.</p>
 </dd>
 
-### -field <a id="PowerInformationLevelMaximum"></a><a id="powerinformationlevelmaximum"></a><a id="POWERINFORMATIONLEVELMAXIMUM"></a><b>PowerInformationLevelMaximum</b>
+### -field PowerInformationLevelMaximum
 
 <dd>
 <p>Indicates the maximum power level.</p>

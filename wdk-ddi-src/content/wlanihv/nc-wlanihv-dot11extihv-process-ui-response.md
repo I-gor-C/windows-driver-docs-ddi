@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvprocessuiresponse.htm
 old-project: netvista
 ms.assetid: 1483be56-71c5-435b-843d-821f73dc79d7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ DWORD APIENTRY Dot11ExtIhvProcessUIResponse(
 ## -parameters
 <dl>
 
-### -param <i>guidUIRequest</i> [in]
+### -param guidUIRequest [in]
 
 <dd>
 <p>The GUID that identifies the request. This GUID value was created by the IHV Extensions DLL and
@@ -67,14 +67,14 @@ DWORD APIENTRY Dot11ExtIhvProcessUIResponse(
      <a href="..\wlanihv\nc-wlanihv-dot11ext-send-ui-request.md">Dot11ExtSendUIRequest</a>.</p>
 </dd>
 
-### -param <i>dwByteCount</i> [in]
+### -param dwByteCount [in]
 
 <dd>
 <p>The length, in bytes, of the data referenced through the 
      <i>pvResponseBuffer</i> parameter.</p>
 </dd>
 
-### -param <i>pvResponseBuffer</i> [in, optional]
+### -param pvResponseBuffer [in, optional]
 
 <dd>
 <p>A pointer to the buffer that contains the user data.</p>
@@ -154,4 +154,4 @@ DWORD APIENTRY Dot11ExtIhvProcessUIResponse(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_PROCESS_UI_RESPONSE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_PROCESS_UI_RESPONSE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

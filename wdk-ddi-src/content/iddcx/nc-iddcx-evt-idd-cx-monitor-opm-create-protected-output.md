@@ -61,7 +61,7 @@ typedef EVT_IDD_CX_MONITOR_OPM_CREATE_PROTECTED_OUTPUT PFN_IDD_CX_MONITOR_OPM_CR
 ## -parameters
 <dl>
 
-### -param <i>MonitorObject</i> [in]
+### -param MonitorObject [in]
 
 <dd>
 <p>
@@ -69,7 +69,7 @@ typedef EVT_IDD_CX_MONITOR_OPM_CREATE_PROTECTED_OUTPUT PFN_IDD_CX_MONITOR_OPM_CR
                 A handle used by the OS to identify the monitor that the OPM context should be created on.</p>
 </dd>
 
-### -param <i>OpmCxtObject</i> [in]
+### -param OpmCxtObject [in]
 
 <dd>
 <p>
@@ -77,7 +77,7 @@ typedef EVT_IDD_CX_MONITOR_OPM_CREATE_PROTECTED_OUTPUT PFN_IDD_CX_MONITOR_OPM_CR
                 A context used by the OS to identify the OPM context the call is for.</p>
 </dd>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>

@@ -7,7 +7,7 @@ old-location: ieee\av_pcr.htm
 old-project: IEEE
 ms.assetid: f6d3f95b-7484-4a6b-9b7e-69f6172b7a12
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: AV_PCR, AV_PCR, *PAV_PCR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _AV_PCR {
 ## -struct-fields
 <dl>
 
-### -field <b>oPCR</b>
+### -field oPCR
 
 <dd>
 <p>Contains an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537441">OPCR</a> structure that contains initialization values for an output plug. </p>
 </dd>
 
-### -field <b>iPCR</b>
+### -field iPCR
 
 <dd>
 <p>Contains an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537348">IPCR</a> structure that contains initialization values for an input plug.</p>
 </dd>
 
-### -field <b>ulongData</b>
+### -field ulongData
 
 <dd>
 <p>Reserved for internal use.</p>
@@ -104,4 +104,4 @@ typedef struct _AV_PCR {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20AV_PCR structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20AV_PCR structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

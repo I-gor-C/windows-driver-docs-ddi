@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_io_type.htm
 old-project: wdf
 ms.assetid: 0ad08e4f-7a9b-4052-888e-ae01c9c105c8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,32 +60,32 @@ typedef enum _WDF_DEVICE_IO_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfDeviceIoUndefined"></a><a id="wdfdeviceioundefined"></a><a id="WDFDEVICEIOUNDEFINED"></a><b>WdfDeviceIoUndefined</b>
+### -field WdfDeviceIoUndefined
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="WdfDeviceIoNeither"></a><a id="wdfdeviceioneither"></a><a id="WDFDEVICEIONEITHER"></a><b>WdfDeviceIoNeither</b>
+### -field WdfDeviceIoNeither
 
 <dd>
 <p><b>UMDF </b>This value is not used by UMDF drivers. A UMDF driver can access device I/O control requests that specify the METHOD_NEITHER buffer access method by setting the <b>UmdfMethodNeitherAction</b> INF directive and using <b>WdfDeviceIoBuffered</b> or <b>WdfDeviceIoDirect</b>. For more information, see <a href="wdf.specifying_wdf_directives_in_inf_files">Specifying WDF Directives in INF Files</a>.</p>
 <p><b>KMDF </b>Neither buffered nor direct I/O will be used to access data buffers.</p>
 </dd>
 
-### -field <a id="WdfDeviceIoBuffered"></a><a id="wdfdeviceiobuffered"></a><a id="WDFDEVICEIOBUFFERED"></a><b>WdfDeviceIoBuffered</b>
+### -field WdfDeviceIoBuffered
 
 <dd>
 <p>Buffered I/O will be used to access data buffers.</p>
 </dd>
 
-### -field <a id="WdfDeviceIoDirect"></a><a id="wdfdeviceiodirect"></a><a id="WDFDEVICEIODIRECT"></a><b>WdfDeviceIoDirect</b>
+### -field WdfDeviceIoDirect
 
 <dd>
 <p>Direct I/O will be used to access data buffers.</p>
 </dd>
 
-### -field <a id="WdfDeviceIoBufferedOrDirect"></a><a id="wdfdeviceiobufferedordirect"></a><a id="WDFDEVICEIOBUFFEREDORDIRECT"></a><b>WdfDeviceIoBufferedOrDirect</b>
+### -field WdfDeviceIoBufferedOrDirect
 
 <dd>
 <p>This value is not used by KMDF drivers.</p>
@@ -142,4 +142,4 @@ typedef enum _WDF_DEVICE_IO_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_IO_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_IO_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -54,7 +54,7 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_CAMERACONTROL_FLASH_PROPERTY_ID"></a><a id="ksproperty_cameracontrol_flash_property_id"></a><b>KSPROPERTY_CAMERACONTROL_FLASH_PROPERTY_ID</b>
+### -field KSPROPERTY_CAMERACONTROL_FLASH_PROPERTY_ID
 
 <dd>
 <p>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj156041">KSPROPERTY_CAMERACONTROL_FLASH_PROPERTY</a> property is used to specify flash control.</p>

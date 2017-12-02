@@ -58,25 +58,25 @@ VOID StreamClassDebugAssert(
 ## -parameters
 <dl>
 
-### -param <i>File</i> [in]
+### -param File [in]
 
 <dd>
 <p>Pointer to a <b>NULL</b>-terminated string containing the file name in which the assert occurred.</p>
 </dd>
 
-### -param <i>Line</i> [in]
+### -param Line [in]
 
 <dd>
 <p>Specifies the line number of the assert.</p>
 </dd>
 
-### -param <i>AssertText</i> [in]
+### -param AssertText [in]
 
 <dd>
 <p>Pointer to a <b>NULL</b>-terminated string containing text to be printed in the debug message.</p>
 </dd>
 
-### -param <i>AssertValue</i> [in]
+### -param AssertValue [in]
 
 <dd>
 <p>Specifies a value to be printed in the debug message.</p>
@@ -87,7 +87,7 @@ VOID StreamClassDebugAssert(
 <p>None</p>
 
 ## -remarks
-<p>When running a checked version of the class driver, asserts are recognized, and result in a debug message and breakpoint. When running a free version of the class driver, asserts are ignored. For more information, see <a href="NULL">Stream Class Debugging</a>.</p>
+<p>When running a checked version of the class driver, asserts are recognized, and result in a debug message and breakpoint. When running a free version of the class driver, asserts are ignored. For more information, see <a href="https://msdn.microsoft.com/544b922b-58e4-4cbb-a76c-d8e13ae17e55">Stream Class Debugging</a>.</p>
 
 ## -requirements
 <table>

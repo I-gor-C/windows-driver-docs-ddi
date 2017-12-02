@@ -56,19 +56,19 @@ typedef struct _VIDEO_SHARE_MEMORY_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>SharedViewOffset</b>
+### -field SharedViewOffset
 
 <dd>
 <p>Indicates the offset, in bytes, from the beginning of the <a href="wdkgloss.f#wdkgloss.frame_buffer#wdkgloss.frame_buffer"><i>frame buffer</i></a>.</p>
 </dd>
 
-### -field <b>SharedViewSize</b>
+### -field SharedViewSize
 
 <dd>
 <p>Indicates the size, in bytes, of the frame buffer. The value of this member will always be a multiple of 64 KB.</p>
 </dd>
 
-### -field <b>VirtualAddress</b>
+### -field VirtualAddress
 
 <dd>
 <p>Indicates the address in virtual memory at which the requested memory was mapped.</p>

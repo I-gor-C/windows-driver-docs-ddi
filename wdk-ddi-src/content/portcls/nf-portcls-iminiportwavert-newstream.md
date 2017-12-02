@@ -58,31 +58,31 @@ NTSTATUS NewStream(
 ## -parameters
 <dl>
 
-### -param <i>Stream</i> [out]
+### -param Stream [out]
 
 <dd>
 <p>Output pointer for the new stream. This parameter points to a caller-allocated pointer variable, into which the <code>NewStream</code> method writes a pointer to the <b>IMiniportWaveRTStream</b> interface of the new stream object. The caller specifies a valid, non-<b>NULL</b> pointer for this parameter.</p>
 </dd>
 
-### -param <i>PortStream</i> [in]
+### -param PortStream [in]
 
 <dd>
 <p>Pointer to the <a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>.</p>
 </dd>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
-<p>Specifies a pin ID that identifies the pin to be opened. If the filter descriptor of the WaveRT miniport driver specifies a total of <i>n</i> pin factories on the filter, valid values for the <i>Pin</i> parameter are in the range 0 to <i>n</i>-1. For more information about filter descriptors, see the <a href="NULL">Filter Factories</a> topic. </p>
+<p>Specifies a pin ID that identifies the pin to be opened. If the filter descriptor of the WaveRT miniport driver specifies a total of <i>n</i> pin factories on the filter, valid values for the <i>Pin</i> parameter are in the range 0 to <i>n</i>-1. For more information about filter descriptors, see the <a href="https://msdn.microsoft.com/e836f941-274f-4e27-8069-753ef9ef2a06">Filter Factories</a> topic. </p>
 </dd>
 
-### -param <i>Capture</i> [in]
+### -param Capture [in]
 
 <dd>
 <p>Specifies a Boolean value that indicates whether to create a capture stream or a render stream. This parameter is <b>TRUE</b> for a capture (input) stream, and <b>FALSE</b> for a playback (output) stream.</p>
 </dd>
 
-### -param <i>DataFormat</i> [in]
+### -param DataFormat [in]
 
 <dd>
 <p>Pointer to a <a href="stream.ksdataformat">KSDATAFORMAT</a> structure that specifies the data format of the new stream. For more information, see the following Remarks section.</p>

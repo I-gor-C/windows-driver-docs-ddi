@@ -77,95 +77,95 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="DevicePropertyDeviceDescription"></a><a id="devicepropertydevicedescription"></a><a id="DEVICEPROPERTYDEVICEDESCRIPTION"></a><b>DevicePropertyDeviceDescription</b>
+### -field DevicePropertyDeviceDescription
 
 <dd></dd>
 
-### -field <a id="DevicePropertyHardwareID"></a><a id="devicepropertyhardwareid"></a><a id="DEVICEPROPERTYHARDWAREID"></a><b>DevicePropertyHardwareID</b>
+### -field DevicePropertyHardwareID
 
 <dd></dd>
 
-### -field <a id="DevicePropertyCompatibleIDs"></a><a id="devicepropertycompatibleids"></a><a id="DEVICEPROPERTYCOMPATIBLEIDS"></a><b>DevicePropertyCompatibleIDs</b>
+### -field DevicePropertyCompatibleIDs
 
 <dd></dd>
 
-### -field <a id="DevicePropertyBootConfiguration"></a><a id="devicepropertybootconfiguration"></a><a id="DEVICEPROPERTYBOOTCONFIGURATION"></a><b>DevicePropertyBootConfiguration</b>
+### -field DevicePropertyBootConfiguration
 
 <dd></dd>
 
-### -field <a id="DevicePropertyBootConfigurationTranslated"></a><a id="devicepropertybootconfigurationtranslated"></a><a id="DEVICEPROPERTYBOOTCONFIGURATIONTRANSLATED"></a><b>DevicePropertyBootConfigurationTranslated</b>
+### -field DevicePropertyBootConfigurationTranslated
 
 <dd></dd>
 
-### -field <a id="DevicePropertyClassName"></a><a id="devicepropertyclassname"></a><a id="DEVICEPROPERTYCLASSNAME"></a><b>DevicePropertyClassName</b>
+### -field DevicePropertyClassName
 
 <dd></dd>
 
-### -field <a id="DevicePropertyClassGuid"></a><a id="devicepropertyclassguid"></a><a id="DEVICEPROPERTYCLASSGUID"></a><b>DevicePropertyClassGuid</b>
+### -field DevicePropertyClassGuid
 
 <dd></dd>
 
-### -field <a id="DevicePropertyDriverKeyName"></a><a id="devicepropertydriverkeyname"></a><a id="DEVICEPROPERTYDRIVERKEYNAME"></a><b>DevicePropertyDriverKeyName</b>
+### -field DevicePropertyDriverKeyName
 
 <dd></dd>
 
-### -field <a id="DevicePropertyManufacturer"></a><a id="devicepropertymanufacturer"></a><a id="DEVICEPROPERTYMANUFACTURER"></a><b>DevicePropertyManufacturer</b>
+### -field DevicePropertyManufacturer
 
 <dd></dd>
 
-### -field <a id="DevicePropertyFriendlyName"></a><a id="devicepropertyfriendlyname"></a><a id="DEVICEPROPERTYFRIENDLYNAME"></a><b>DevicePropertyFriendlyName</b>
+### -field DevicePropertyFriendlyName
 
 <dd></dd>
 
-### -field <a id="DevicePropertyLocationInformation"></a><a id="devicepropertylocationinformation"></a><a id="DEVICEPROPERTYLOCATIONINFORMATION"></a><b>DevicePropertyLocationInformation</b>
+### -field DevicePropertyLocationInformation
 
 <dd></dd>
 
-### -field <a id="DevicePropertyPhysicalDeviceObjectName"></a><a id="devicepropertyphysicaldeviceobjectname"></a><a id="DEVICEPROPERTYPHYSICALDEVICEOBJECTNAME"></a><b>DevicePropertyPhysicalDeviceObjectName</b>
+### -field DevicePropertyPhysicalDeviceObjectName
 
 <dd></dd>
 
-### -field <a id="DevicePropertyBusTypeGuid"></a><a id="devicepropertybustypeguid"></a><a id="DEVICEPROPERTYBUSTYPEGUID"></a><b>DevicePropertyBusTypeGuid</b>
+### -field DevicePropertyBusTypeGuid
 
 <dd></dd>
 
-### -field <a id="DevicePropertyLegacyBusType"></a><a id="devicepropertylegacybustype"></a><a id="DEVICEPROPERTYLEGACYBUSTYPE"></a><b>DevicePropertyLegacyBusType</b>
+### -field DevicePropertyLegacyBusType
 
 <dd></dd>
 
-### -field <a id="DevicePropertyBusNumber"></a><a id="devicepropertybusnumber"></a><a id="DEVICEPROPERTYBUSNUMBER"></a><b>DevicePropertyBusNumber</b>
+### -field DevicePropertyBusNumber
 
 <dd></dd>
 
-### -field <a id="DevicePropertyEnumeratorName"></a><a id="devicepropertyenumeratorname"></a><a id="DEVICEPROPERTYENUMERATORNAME"></a><b>DevicePropertyEnumeratorName</b>
+### -field DevicePropertyEnumeratorName
 
 <dd></dd>
 
-### -field <a id="DevicePropertyAddress"></a><a id="devicepropertyaddress"></a><a id="DEVICEPROPERTYADDRESS"></a><b>DevicePropertyAddress</b>
+### -field DevicePropertyAddress
 
 <dd></dd>
 
-### -field <a id="DevicePropertyUINumber"></a><a id="devicepropertyuinumber"></a><a id="DEVICEPROPERTYUINUMBER"></a><b>DevicePropertyUINumber</b>
+### -field DevicePropertyUINumber
 
 <dd></dd>
 
-### -field <a id="DevicePropertyInstallState"></a><a id="devicepropertyinstallstate"></a><a id="DEVICEPROPERTYINSTALLSTATE"></a><b>DevicePropertyInstallState</b>
+### -field DevicePropertyInstallState
 
 <dd></dd>
 
-### -field <a id="DevicePropertyRemovalPolicy"></a><a id="devicepropertyremovalpolicy"></a><a id="DEVICEPROPERTYREMOVALPOLICY"></a><b>DevicePropertyRemovalPolicy</b>
+### -field DevicePropertyRemovalPolicy
 
 <dd></dd>
 
-### -field <a id="DevicePropertyResourceRequirements"></a><a id="devicepropertyresourcerequirements"></a><a id="DEVICEPROPERTYRESOURCEREQUIREMENTS"></a><b>DevicePropertyResourceRequirements</b>
+### -field DevicePropertyResourceRequirements
 
 <dd></dd>
 
-### -field <a id="DevicePropertyAllocatedResources"></a><a id="devicepropertyallocatedresources"></a><a id="DEVICEPROPERTYALLOCATEDRESOURCES"></a><b>DevicePropertyAllocatedResources</b>
+### -field DevicePropertyAllocatedResources
 
 <dd></dd>
 
-### -field <a id="DevicePropertyContainerID"></a><a id="devicepropertycontainerid"></a><a id="DEVICEPROPERTYCONTAINERID"></a><b>DevicePropertyContainerID</b>
+### -field DevicePropertyContainerID
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookansoperation_2.htm
 old-project: netvista
 ms.assetid: ce1d2d09-64a3-40a9-b24b-66edbd34d637
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILPHONEBOOKANSOPERATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PHONEBOOK_ANSMODIFIED"></a><a id="ril_phonebook_ansmodified"></a><b>RIL_PHONEBOOK_ANSMODIFIED</b>
+### -field RIL_PHONEBOOK_ANSMODIFIED
 
 <dd></dd>
 
-### -field <a id="RIL_PHONEBOOK_ANSDELETED"></a><a id="ril_phonebook_ansdeleted"></a><b>RIL_PHONEBOOK_ANSDELETED</b>
+### -field RIL_PHONEBOOK_ANSDELETED
 
 <dd></dd>
 
-### -field <a id="RIL_PHONEBOOK_MAX"></a><a id="ril_phonebook_max"></a><b>RIL_PHONEBOOK_MAX</b>
+### -field RIL_PHONEBOOK_MAX
 
 <dd></dd>
 </dl>

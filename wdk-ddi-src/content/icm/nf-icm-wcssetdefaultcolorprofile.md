@@ -59,38 +59,38 @@ BOOL WcsSetDefaultColorProfile(
 ## -parameters
 <dl>
 
-### -param <i>profileManagementScope</i> [in]
+### -param profileManagementScope [in]
 
 <dd>
 <p>
       A <a href="..\icm\ne-icm-wcs-profile-management-scope.md">WCS_PROFILE_MANAGEMENT_SCOPE</a> value that specifies the scope of this profile management operation.</p>
 </dd>
 
-### -param <i>pDeviceName</i> [in, optional]
+### -param pDeviceName [in, optional]
 
 <dd>
 <p>A pointer to the name of the device for which the default color profile is to be set. If <b>NULL</b>, a device-independent default profile will be used.</p>
 </dd>
 
-### -param <i>cptColorProfileType</i> [in]
+### -param cptColorProfileType [in]
 
 <dd>
 <p>A <a href="..\icm\ne-icm-colorprofiletype.md">COLORPROFILETYPE</a> value that specifies the color profile type.</p>
 </dd>
 
-### -param <i>cpstColorProfileSubType</i> [in]
+### -param cpstColorProfileSubType [in]
 
 <dd>
 <p>A <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a> value that specifies the color profile subtype.</p>
 </dd>
 
-### -param <i>dwProfileID</i> [in]
+### -param dwProfileID [in]
 
 <dd>
 <p>The ID of the color space that the color profile represents.</p>
 </dd>
 
-### -param <i>pProfileName</i> [in, optional]
+### -param pProfileName [in, optional]
 
 <dd>
 <p>A pointer to a buffer to receive the name of the color profile. See Remarks.</p>

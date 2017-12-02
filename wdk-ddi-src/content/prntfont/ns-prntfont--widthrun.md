@@ -57,19 +57,19 @@ typedef struct _WIDTHRUN {
 ## -struct-fields
 <dl>
 
-### -field <b>wStartGlyph</b>
+### -field wStartGlyph
 
 <dd>
 <p>Is an index value indicating the first glyph of the width run.</p>
 </dd>
 
-### -field <b>wGlyphCount</b>
+### -field wGlyphCount
 
 <dd>
 <p>Specifies the number of glyphs represented by the width run.</p>
 </dd>
 
-### -field <b>loCharWidthOffset</b>
+### -field loCharWidthOffset
 
 <dd>
 <p>Specifies the offset from the beginning of a <a href="..\prntfont\ns-prntfont--widthtable.md">WIDTHTABLE</a> structure to the location containing the width of the set of glyphs contained in the width run.</p>

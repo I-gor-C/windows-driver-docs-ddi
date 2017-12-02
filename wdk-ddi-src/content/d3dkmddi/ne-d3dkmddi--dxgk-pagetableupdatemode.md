@@ -56,19 +56,19 @@ typedef enum _DXGK_PAGETABLEUPDATEMODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_PAGETABLEUPDATE_CPU_VIRTUAL"></a><a id="dxgk_pagetableupdate_cpu_virtual"></a><b>DXGK_PAGETABLEUPDATE_CPU_VIRTUAL</b>
+### -field DXGK_PAGETABLEUPDATE_CPU_VIRTUAL
 
 <dd>
 <p>Indicates that the address of the page table to update is in the <b>CpuVirtual</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a> structure.</p>
 </dd>
 
-### -field <a id="DXGK_PAGETABLEUPDATE_GPU_VIRTUAL"></a><a id="dxgk_pagetableupdate_gpu_virtual"></a><b>DXGK_PAGETABLEUPDATE_GPU_VIRTUAL</b>
+### -field DXGK_PAGETABLEUPDATE_GPU_VIRTUAL
 
 <dd>
 <p>Indicates that the address of the page table to update is in the <b>GpuVirtual</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a> structure.</p>
 </dd>
 
-### -field <a id="DXGK_PAGETABLEUPDATE_GPU_PHYSICAL"></a><a id="dxgk_pagetableupdate_gpu_physical"></a><b>DXGK_PAGETABLEUPDATE_GPU_PHYSICAL</b>
+### -field DXGK_PAGETABLEUPDATE_GPU_PHYSICAL
 
 <dd>
 <p>Indicates that the address of the page table to update is in the <b>GpuPhysical</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a> structure.</p>

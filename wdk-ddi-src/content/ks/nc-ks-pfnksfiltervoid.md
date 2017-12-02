@@ -57,7 +57,7 @@ NTSTATUS AVStrMiniFilterReset(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>Pointer to the <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> to return to its previous state.</p>
@@ -68,13 +68,13 @@ NTSTATUS AVStrMiniFilterReset(
 <p>AVStream does not currently use the return value.</p>
 
 ## -remarks
-<p>For more information, see <a href="NULL">Filter-Centric Processing</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>.</p>
 
 <p>Note that it is not the filter in question, but rather a pin on this filter that actually receives the reset IOCTL.</p>
 
 <p>The minidriver specifies this routine's address in the <b>Reset</b> member of its <a href="..\ks\ns-ks--ksfilter-dispatch.md">KSFILTER_DISPATCH</a> structure.</p>
 
-<p>The filter control mutex may be held during this function. See <a href="NULL">Filter Control Mutex in AVStream</a>.</p>
+<p>The filter control mutex may be held during this function. See <a href="https://msdn.microsoft.com/402795a0-e567-4e7e-a7d8-b2ce29ffb8fd">Filter Control Mutex in AVStream</a>.</p>
 
 <p>This routine is optional.</p>
 

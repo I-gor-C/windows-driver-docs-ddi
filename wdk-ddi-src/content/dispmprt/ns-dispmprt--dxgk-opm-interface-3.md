@@ -70,103 +70,103 @@ typedef struct _DXGK_OPM_INTERFACE_3 {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>A positive integer that indicates the version number of the OPM interface that is implemented by the display miniport driver. The <b>Version</b> member must be set to DXGK_OPM_INTERFACE_VERSION_1, which is defined in Dispmprt.h.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to a private context block. <b>Context</b> must be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to an interface reference function that is implemented by the display miniport driver. For more information about the operation of an interface reference function, see the Remarks section of the <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to an interface dereference function that is implemented by the display miniport driver. For more information about the operation of an interface dereference function, see the Remarks section of the <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure.</p>
 </dd>
 
-### -field <b>DxgkDdiOPMGetCertificateSize</b>
+### -field DxgkDdiOPMGetCertificateSize
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-certificate-size.md">DxgkDdiOPMGetCertificateSize</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiOPMGetCertificate</b>
+### -field DxgkDdiOPMGetCertificate
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-certificate.md">DxgkDdiOPMGetCertificate</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiOPMCreateProtectedOutput</b>
+### -field DxgkDdiOPMCreateProtectedOutput
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-create-protected-output.md">DxgkDdiOPMCreateProtectedOutput</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiOPMGetRandomNumber</b>
+### -field DxgkDdiOPMGetRandomNumber
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-random-number.md">DxgkDdiOPMGetRandomNumber</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiOPMSetSigningKeyAndSequenceNumbers</b>
+### -field DxgkDdiOPMSetSigningKeyAndSequenceNumbers
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-set-signing-key-and-sequence-numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiOPMGetInformation</b>
+### -field DxgkDdiOPMGetInformation
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiOPMGetCOPPCompatibleInformation</b>
+### -field DxgkDdiOPMGetCOPPCompatibleInformation
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-copp-compatible-information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiOPMConfigureProtectedOutput</b>
+### -field DxgkDdiOPMConfigureProtectedOutput
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-configure-protected-output.md">DxgkDdiOPMConfigureProtectedOutput</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiOPMDestroyProtectedOutput</b>
+### -field DxgkDdiOPMDestroyProtectedOutput
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-destroy-protected-output.md">DxgkDdiOPMDestroyProtectedOutput</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiOPMCreateProtectedOutputNonLocalDisplay</b>
+### -field DxgkDdiOPMCreateProtectedOutputNonLocalDisplay
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-destroy-protected-output.md">DxgkDdiOPMCreateProtectedOutputNonLocalDisplay</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiOPMSetSrmList</b>
+### -field DxgkDdiOPMSetSrmList
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-destroy-protected-output.md">DxgkDdiOPMSetSrmList</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiOPMGetSrmListVersion</b>
+### -field DxgkDdiOPMGetSrmListVersion
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-destroy-protected-output.md">DxgkDdiOPMGetSrmListVersion</a> function.</p>

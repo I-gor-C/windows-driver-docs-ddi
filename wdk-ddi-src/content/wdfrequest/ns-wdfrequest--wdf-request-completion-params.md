@@ -7,7 +7,7 @@ old-location: wdf\wdf_request_completion_params.htm
 old-project: wdf
 ms.assetid: e3993202-c49d-4de9-8881-9e3786575e17
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_REQUEST_COMPLETION_PARAMS, WDF_REQUEST_COMPLETION_PARAMS, *PWDF_REQUEST_COMPLETION_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -103,48 +103,48 @@ typedef struct _WDF_REQUEST_COMPLETION_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-request-type.md">WDF_REQUEST_TYPE</a> value that identifies the request type.</p>
 </dd>
 
-### -field <b>IoStatus</b>
+### -field IoStatus
 
 <dd>
 <p>An <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure for the request.</p>
 </dd>
 
-### -field <b>Parameters</b>
+### -field Parameters
 
 <dd>
 <p>Request-specific values for the request.</p>
 <dl>
 
-### -field <b>Write</b>
+### -field Write
 
 <dd>
 <dl>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>A handle to a framework memory object. This object identifies the buffer that the driver specified when it formatted the request and sent it to an I/O target.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Length, in bytes, of the transfer.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Beginning address within the buffer for the data transfer.</p>
@@ -152,24 +152,24 @@ typedef struct _WDF_REQUEST_COMPLETION_PARAMS {
 </dl>
 </dd>
 
-### -field <b>Read</b>
+### -field Read
 
 <dd>
 <dl>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>A handle to a framework memory object. This object identifies the buffer that the driver specified when it formatted the request and sent it to an I/O target.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Length, in bytes, of the transfer.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Beginning address within the buffer for the data transfer.</p>
@@ -177,23 +177,23 @@ typedef struct _WDF_REQUEST_COMPLETION_PARAMS {
 </dl>
 </dd>
 
-### -field <b>Ioctl</b>
+### -field Ioctl
 
 <dd>
 <dl>
 
-### -field <b>Input</b>
+### -field Input
 
 <dd>
 <dl>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>A handle to a framework memory object. This object identifies the input buffer that the driver specified when it formatted the request and sent it to an I/O target.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Beginning address within the buffer for the data transfer.</p>
@@ -201,24 +201,24 @@ typedef struct _WDF_REQUEST_COMPLETION_PARAMS {
 </dl>
 </dd>
 
-### -field <b>Output</b>
+### -field Output
 
 <dd>
 <dl>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>A handle to a framework memory object. This object identifies the output buffers that the driver specified when it formatted the request and sent it to an I/O target.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Beginning address within the buffer for the data transfer.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Length, in bytes, of the transfer.</p>
@@ -228,30 +228,30 @@ typedef struct _WDF_REQUEST_COMPLETION_PARAMS {
 </dl>
 </dd>
 
-### -field <b>Others</b>
+### -field Others
 
 <dd>
 <dl>
 
-### -field <b>Argument1</b>
+### -field Argument1
 
 <dd>
 <p>Use of this member is defined by the driver stack.  See Remarks.</p>
 </dd>
 
-### -field <b>Argument2</b>
+### -field Argument2
 
 <dd>
 <p>Use of this member is defined by the driver stack.</p>
 </dd>
 
-### -field <b>Argument3</b>
+### -field Argument3
 
 <dd>
 <p>Use of this member is defined by the driver stack.</p>
 </dd>
 
-### -field <b>Argument4</b>
+### -field Argument4
 
 <dd>
 <p>Use of this member is defined by the driver stack.</p>
@@ -259,7 +259,7 @@ typedef struct _WDF_REQUEST_COMPLETION_PARAMS {
 </dl>
 </dd>
 
-### -field <b>Usb</b>
+### -field Usb
 
 <dd>
 <p>For USB devices, this member contains a pointer to a <a href="..\wdfusb\ns-wdfusb--wdf-usb-request-completion-params.md">WDF_USB_REQUEST_COMPLETION_PARAMS</a> structure.
@@ -329,4 +329,4 @@ typedef struct _WDF_REQUEST_COMPLETION_PARAMS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_COMPLETION_PARAMS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_COMPLETION_PARAMS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

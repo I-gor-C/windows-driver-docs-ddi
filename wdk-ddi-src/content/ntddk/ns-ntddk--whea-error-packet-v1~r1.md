@@ -77,121 +77,121 @@ typedef struct _WHEA_ERROR_PACKET_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>The signature of the hardware error packet. This member contains the value WHEA_ERROR_PACKET_V1_SIGNATURE.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-error-packet-flags.md">WHEA_ERROR_PACKET_FLAGS</a> union that describes the error condition. </p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of the hardware error packet, including the raw data.</p>
 </dd>
 
-### -field <b>RawDataLength</b>
+### -field RawDataLength
 
 <dd>
 <p>The length, in bytes, of the data that is contained in the <b>RawData</b> member.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>ErrorType</b>
+### -field ErrorType
 
 <dd>
 <p>A <a href="..\ntddk\ne-ntddk--whea-error-type.md">WHEA_ERROR_TYPE</a>-typed value that indicates the type of hardware component that reported the hardware error.</p>
 </dd>
 
-### -field <b>ErrorSeverity</b>
+### -field ErrorSeverity
 
 <dd>
 <p>A <a href="..\ntddk\ne-ntddk--whea-error-severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition.</p>
 </dd>
 
-### -field <b>ErrorSourceId</b>
+### -field ErrorSourceId
 
 <dd>
 <p>The identifier of the error source that reported the hardware error.</p>
 </dd>
 
-### -field <b>ErrorSourceType</b>
+### -field ErrorSourceType
 
 <dd>
 <p>A <a href="..\ntddk\ne-ntddk--whea-error-source-type.md">WHEA_ERROR_SOURCE_TYPE</a>-typed value that indicates the type of error source that reported the hardware error.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the WHEA_ERROR_PACKET_V1 structure. This member contains the value WHEA_ERROR_PKT_V1VERSION.</p>
 </dd>
 
-### -field <b>Cpu</b>
+### -field Cpu
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <p>A union consisting of the following members:</p>
 <dl>
 
-### -field <b>ProcessorError</b>
+### -field ProcessorError
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-processor-generic-error-section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure that describes processor error data. This member is used only when the <b>ErrorType</b> member is set to <b>WheaErrTypeProcessor</b>. </p>
 </dd>
 
-### -field <b>MemoryError</b>
+### -field MemoryError
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-memory-error-section.md">WHEA_MEMORY_ERROR_SECTION</a> structure that describes memory error data. This member is used only when the <b>ErrorType</b> member is set to <b>WheaErrTypeMemory</b>. </p>
 </dd>
 
-### -field <b>NmiError</b>
+### -field NmiError
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-nmi-error-section.md">WHEA_NMI_ERROR_SECTION</a> structure that describes nonmaskable interrupt (NMI) error data. This member is used only when the <b>ErrorType</b> member is set to <b>WheaErrTypeNMI</b>. </p>
 </dd>
 
-### -field <b>PciExpressError</b>
+### -field PciExpressError
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-pciexpress-error-section.md">WHEA_PCIEXPRESS_ERROR_SECTION</a> structure that describes PCI Express (PCIe) error data. This member is used only when the <b>ErrorType</b> member is set to <b>WheaErrTypePCIExpress</b>. </p>
 </dd>
 
-### -field <b>PciXBusError</b>
+### -field PciXBusError
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-pcixbus-error-section.md">WHEA_PCIXBUS_ERROR_SECTION</a> structure that describes PCI or PCI-X bus error data. This member is used only when the <b>ErrorType</b> member is set to <b>WheaErrTypePCIXBus</b>. </p>
 </dd>
 
-### -field <b>PciXDeviceError</b>
+### -field PciXDeviceError
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-pcixdevice-error-section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure that describes PCI or PCI-X device error data. This member is used only when the <b>ErrorType</b> member is set to <b>WheaErrTypePCIXDevice</b>. </p>
@@ -199,19 +199,19 @@ typedef struct _WHEA_ERROR_PACKET_V1 {
 </dl>
 </dd>
 
-### -field <b>RawDataFormat</b>
+### -field RawDataFormat
 
 <dd>
 <p>A <a href="..\ntddk\ne-ntddk--whea-raw-data-format.md">WHEA_RAW_DATA_FORMAT</a>-typed value that indicates the format of the hardware error information that is contained in the <b>RawData</b> data buffer.</p>
 </dd>
 
-### -field <b>RawDataOffset</b>
+### -field RawDataOffset
 
 <dd>
 <p>An offset, in bytes, from the beginning of the <b>RawData</b> data buffer where a PSHED plug-in can add supplementary platform-specific error information to the hardware error packet. The amount of supplementary information that can be added to the hardware error packet is limited by the total size of the packet as specified in the <b>Size</b> member.</p>
 </dd>
 
-### -field <b>RawData</b>
+### -field RawData
 
 <dd>
 <p>A variable-sized data buffer that contains the raw hardware error information from the error source's status registers. The format of the hardware error data is specified by the <b>RawDataFormat</b> member.</p>

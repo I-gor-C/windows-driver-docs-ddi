@@ -57,19 +57,19 @@ BOOLEAN KeSetTimer(
 ## -parameters
 <dl>
 
-### -param <i>Timer</i> [in, out]
+### -param Timer [in, out]
 
 <dd>
 <p>Pointer to a timer object that was initialized with <a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a> or <a href="..\wdm\nf-wdm-keinitializetimerex.md">KeInitializeTimerEx</a>.</p>
 </dd>
 
-### -param <i>DueTime</i> [in]
+### -param DueTime [in]
 
 <dd>
 <p>Specifies the absolute or relative time at which the timer is to expire. If the value of the <i>DueTime</i> parameter is negative, the expiration time is relative to the current system time. Otherwise, the expiration time is absolute. The expiration time is expressed in system time units (100-nanosecond intervals). Absolute expiration times track any changes in the system time; relative expiration times are not affected by system time changes.</p>
 </dd>
 
-### -param <i>Dpc</i> [in, optional]
+### -param Dpc [in, optional]
 
 <dd>
 <p>Pointer to a DPC object that was initialized by <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>. This parameter is optional. </p>

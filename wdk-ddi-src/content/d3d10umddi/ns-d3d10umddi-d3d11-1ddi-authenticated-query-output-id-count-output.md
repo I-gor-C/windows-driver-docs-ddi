@@ -57,13 +57,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Output</b>
+### -field Output
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure that contains a Message Authentication Code (MAC) and other data.</p>
 </dd>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>A handle to the device.
@@ -71,13 +71,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT_OUTPUT {
 </p>
 </dd>
 
-### -field <b>CryptoSessionHandle</b>
+### -field CryptoSessionHandle
 
 <dd>
 <p>A handle to the cryptographic session.</p>
 </dd>
 
-### -field <b>OutputIDCount</b>
+### -field OutputIDCount
 
 <dd>
 <p>The number of output IDs associated with the specified device and cryptographic session.</p>

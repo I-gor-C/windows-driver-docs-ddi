@@ -58,31 +58,31 @@ typedef enum D3D12DDI_RESOURCE_BARRIER_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_RESOURCE_BARRIER_FLAG_NONE"></a><a id="d3d12ddi_resource_barrier_flag_none"></a><b>D3D12DDI_RESOURCE_BARRIER_FLAG_NONE</b>
+### -field D3D12DDI_RESOURCE_BARRIER_FLAG_NONE
 
 <dd>
 <p>No flag value.</p>
 </dd>
 
-### -field <a id="D3D12DDI_RESOURCE_BARRIER_FLAG_BEGIN_ONLY"></a><a id="d3d12ddi_resource_barrier_flag_begin_only"></a><b>D3D12DDI_RESOURCE_BARRIER_FLAG_BEGIN_ONLY</b>
+### -field D3D12DDI_RESOURCE_BARRIER_FLAG_BEGIN_ONLY
 
 <dd>
 <p>Indicates a release. This flag is relevant only for ranged barriers.</p>
 </dd>
 
-### -field <a id="D3D12DDI_RESOURCE_BARRIER_FLAG_END_ONLY"></a><a id="d3d12ddi_resource_barrier_flag_end_only"></a><b>D3D12DDI_RESOURCE_BARRIER_FLAG_END_ONLY</b>
+### -field D3D12DDI_RESOURCE_BARRIER_FLAG_END_ONLY
 
 <dd>
 <p>Indicates an acquire. This flag is relevant only for ranged barriers.</p>
 </dd>
 
-### -field <a id="D3D12DDI_RESOURCE_BARRIER_FLAG_0022_ATOMIC_COPY"></a><a id="d3d12ddi_resource_barrier_flag_0022_atomic_copy"></a><b>D3D12DDI_RESOURCE_BARRIER_FLAG_0022_ATOMIC_COPY</b>
+### -field D3D12DDI_RESOURCE_BARRIER_FLAG_0022_ATOMIC_COPY
 
 <dd>
 <p>Indicates that ranged barriers are associated with a parameter of an atomic copy operation. </p>
 </dd>
 
-### -field <a id="D3D12DDI_RESOURCE_BARRIER_FLAG_0022_ALIASING"></a><a id="d3d12ddi_resource_barrier_flag_0022_aliasing"></a><b>D3D12DDI_RESOURCE_BARRIER_FLAG_0022_ALIASING</b>
+### -field D3D12DDI_RESOURCE_BARRIER_FLAG_0022_ALIASING
 
 <dd>
 <p>Indicates that an aliasing barrier has been converted to a ranged barrier.</p>

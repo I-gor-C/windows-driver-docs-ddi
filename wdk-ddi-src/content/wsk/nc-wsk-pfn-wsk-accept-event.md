@@ -7,7 +7,7 @@ old-location: netvista\wskacceptevent.htm
 old-project: netvista
 ms.assetid: 672440f0-810a-4e68-82a5-d038770898c5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ NTSTATUS APIENTRY WskAcceptEvent(
 ## -parameters
 <dl>
 
-### -param <i>SocketContext</i> [in, optional]
+### -param SocketContext [in, optional]
 
 <dd>
 <p>A pointer to the socket context for the listening socket on which the incoming connection was
@@ -75,7 +75,7 @@ NTSTATUS APIENTRY WskAcceptEvent(
      socket.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A ULONG value that contains the following flag, or zero:
@@ -83,7 +83,7 @@ NTSTATUS APIENTRY WskAcceptEvent(
 <p></p>
 <dl>
 
-### -param <a id="WSK_FLAG_AT_DISPATCH_LEVEL"></a><a id="wsk_flag_at_dispatch_level"></a>WSK_FLAG_AT_DISPATCH_LEVEL
+### -param WSK_FLAG_AT_DISPATCH_LEVEL
 
 <dd>
 <p>The WSK subsystem called the 
@@ -94,7 +94,7 @@ NTSTATUS APIENTRY WskAcceptEvent(
 </dl>
 </dd>
 
-### -param <i>LocalAddress</i> [in]
+### -param LocalAddress [in]
 
 <dd>
 <p>A pointer to a buffer that contains the local transport address on which the incoming connection
@@ -102,7 +102,7 @@ NTSTATUS APIENTRY WskAcceptEvent(
      that the WSK application specified when it created the listening socket.</p>
 </dd>
 
-### -param <i>RemoteAddress</i> [in]
+### -param RemoteAddress [in]
 
 <dd>
 <p>A pointer to a buffer that contains the remote transport address from which the incoming
@@ -110,7 +110,7 @@ NTSTATUS APIENTRY WskAcceptEvent(
      address family that the WSK application specified when it created the listening socket.</p>
 </dd>
 
-### -param <i>AcceptSocket</i> [in, optional]
+### -param AcceptSocket [in, optional]
 
 <dd>
 <p>A pointer to a 
@@ -121,7 +121,7 @@ NTSTATUS APIENTRY WskAcceptEvent(
      listening socket as soon as possible.</p>
 </dd>
 
-### -param <i>AcceptSocketContext</i> [out]
+### -param AcceptSocketContext [out]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to a WSK application-supplied context for the
@@ -132,7 +132,7 @@ NTSTATUS APIENTRY WskAcceptEvent(
      <i>AcceptSocketContext</i> parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>AcceptSocketDispatch</i> [out]
+### -param AcceptSocketDispatch [out]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to a constant 
@@ -282,4 +282,4 @@ NTSTATUS APIENTRY WskAcceptEvent(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_ACCEPT_EVENT callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_ACCEPT_EVENT callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

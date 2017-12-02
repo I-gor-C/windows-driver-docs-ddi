@@ -56,7 +56,7 @@ typedef struct _PCI_CAPABILITIES_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>CapabilityID</b>
+### -field CapabilityID
 
 <dd>
 <p>Contains an 8-bit integer that indicates the capability ID. The capability ID identifies the type of capability structure that follows this header. The <b>CapabilityID</b> member must have one of the following values:</p>
@@ -205,7 +205,7 @@ typedef struct _PCI_CAPABILITIES_HEADER {
 <p> </p>
 </dd>
 
-### -field <b>Next</b>
+### -field Next
 
 <dd>
 <p>Contains an offset into the PCI configuration space that indicates the location of the next item in the capability list. If there are no additional items in the list, this member will contain zero. </p>

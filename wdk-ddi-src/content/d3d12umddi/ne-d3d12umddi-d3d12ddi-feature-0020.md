@@ -54,7 +54,7 @@ typedef enum _D3D12DDI_FEATURE_0020 {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_FEATURE_0020_VIDEO"></a><a id="d3d12ddi_feature_0020_video"></a><b>D3D12DDI_FEATURE_0020_VIDEO</b>
+### -field D3D12DDI_FEATURE_0020_VIDEO
 
 <dd>
 <p>A feature. </p>

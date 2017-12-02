@@ -59,37 +59,37 @@ typedef struct _MOUNTMGR_MOUNT_POINT {
 ## -struct-fields
 <dl>
 
-### -field <b>SymbolicLinkNameOffset</b>
+### -field SymbolicLinkNameOffset
 
 <dd>
 <p>Contains an offset, in bytes, into the output buffer where the symbolic link is located.</p>
 </dd>
 
-### -field <b>SymbolicLinkNameLength</b>
+### -field SymbolicLinkNameLength
 
 <dd>
 <p>Contains the length, in bytes, of the symbolic link. </p>
 </dd>
 
-### -field <b>UniqueIdOffset</b>
+### -field UniqueIdOffset
 
 <dd>
 <p>Contains an offset, in bytes, into the output buffer where the unique ID is located. </p>
 </dd>
 
-### -field <b>UniqueIdLength</b>
+### -field UniqueIdLength
 
 <dd>
 <p>Contains the length, in bytes, of the unique ID. </p>
 </dd>
 
-### -field <b>DeviceNameOffset</b>
+### -field DeviceNameOffset
 
 <dd>
 <p>Contains an offset, in bytes, into the output buffer where the nonpersistent device name is located. </p>
 </dd>
 
-### -field <b>DeviceNameLength</b>
+### -field DeviceNameLength
 
 <dd>
 <p>Contains the length, in bytes, of the nonpersistent device name. </p>
@@ -103,7 +103,7 @@ typedef struct _MOUNTMGR_MOUNT_POINT {
 
 <p>The <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a> request is available in Windows 2000 and later operating systems.</p>
 
-<p>For a discussion of the different between symbolic links, unique IDs, and nonpersistent device names, see <a href="NULL">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
+<p>For a discussion of the different between symbolic links, unique IDs, and nonpersistent device names, see <a href="storage.supporting_mount_manager_requests_in_a_storage_class_driver">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
 
 ## -requirements
 <table>

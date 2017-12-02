@@ -64,26 +64,26 @@ typedef struct _DXGK_PLANE_SPECIFIC_INPUT_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>Indicates whether the overlay plane is enabled for display.</p>
 </dd>
 
-### -field <b>FlipImmediate</b>
+### -field FlipImmediate
 
 <dd>
 <p>Indicates that the driver should perform a flip operation that occurs without vertical sync.</p>
 </dd>
 
-### -field <b>FlipOnNextVSync</b>
+### -field FlipOnNextVSync
 
 <dd>
 <p>Indicates that the driver should perform a flip operation that occurs on the next vertical sync.</p>
 <p>If the current line being displayed is less than DXGK_MULTIPLANE_OVERLAY_PLANE3.MaxImmediateFlipLine, the driver should convert this flip to an immediate flip and set DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS. FlipConvertedToImmediate to TRUE.</p>
 </dd>
 
-### -field <b>SharedPrimaryTransition</b>
+### -field SharedPrimaryTransition
 
 <dd>
 <p>Specifies that the driver is transitioning to or from a shared managed primary allocation.
@@ -97,19 +97,19 @@ This member is set if either of the following transitions occurs:
 <p>When SharedPrimaryTransition is set, the display miniport driver must validate that the hardware can seamlessly switch back and forth between primary and shared primary allocations, and it must perform any hardware programming needed to make the seamless switch occur.</p>
 </dd>
 
-### -field <b>IndependentFlipExclusive</b>
+### -field IndependentFlipExclusive
 
 <dd>
 <p>When IndependentFlipExlusive is set, the flip is done in the independent flip exclusive mode. The front buffer is accessed only by the display hardware and not by the DWM. The kernel mode driver can apply vertical sync-related optimizations. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 27 bits (0xFFFFFFE0) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd></dd>
 </dl>

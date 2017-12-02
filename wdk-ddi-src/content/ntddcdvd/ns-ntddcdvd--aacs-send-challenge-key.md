@@ -55,13 +55,13 @@ typedef struct _AACS_SEND_CHALLENGE_KEY {
 ## -struct-fields
 <dl>
 
-### -field <b>SessionId</b>
+### -field SessionId
 
 <dd>
 <p>A value of type DVD_SESSION_ID that specifies an Authentication Grant Identifier (AGID).</p>
 </dd>
 
-### -field <b>ChallengeKey</b>
+### -field ChallengeKey
 
 <dd>
 <p>A structure of type <a href="..\ntddcdvd\ns-ntddcdvd--aacs-challenge-key.md">AACS_CHALLENGE_KEY</a> that specifies the challenge key to retrieve.</p>

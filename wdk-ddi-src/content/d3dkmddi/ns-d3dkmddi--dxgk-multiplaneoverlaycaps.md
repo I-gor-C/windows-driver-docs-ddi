@@ -70,7 +70,7 @@ typedef struct _DXGK_MULTIPLANEOVERLAYCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>Rotation</b>
+### -field Rotation
 
 <dd>
 <p>When TRUE, indicates that the hardware supports rotating the plane 90, 180, or 270 degrees. 
@@ -79,7 +79,7 @@ If TRUE, RotationWithoutIndependentFlip should be FALSE.
 </p>
 </dd>
 
-### -field <b>RotationWithoutIndependentFlip</b>
+### -field RotationWithoutIndependentFlip
 
 <dd>
 <p>When TRUE, indicates that the driver can perform plane rotation of 90, 180, or 270 degrees, but IndependentFlip cannot be used when rotating the plane.
@@ -88,57 +88,57 @@ If TRUE, Rotation should be FALSE.
 </p>
 </dd>
 
-### -field <b>VerticalFlip</b>
+### -field VerticalFlip
 
 <dd>
 <p>When TRUE, the hardware supports flipping the plane vertically.</p>
 </dd>
 
-### -field <b>HorizontalFlip</b>
+### -field HorizontalFlip
 
 <dd>
 <p>When TRUE, the hardware supports flipping the plane horizontally.</p>
 </dd>
 
-### -field <b>StretchRGB</b>
+### -field StretchRGB
 
 <dd>
 <p>When TRUE, the hardware supports stretching any plane containing RGB data.</p>
 </dd>
 
-### -field <b>StretchYUV</b>
+### -field StretchYUV
 
 <dd>
 <p>When TRUE, the hardware supports stretching any plane containing YUV data.</p>
 </dd>
 
-### -field <b>BilinearFilter</b>
+### -field BilinearFilter
 
 <dd>
 <p>When TRUE, the hardware supports bilinear filtering.</p>
 </dd>
 
-### -field <b>HighFilter</b>
+### -field HighFilter
 
 <dd>
 <p>When TRUE, the hardware supports better than bilinear filtering.</p>
 </dd>
 
-### -field <b>Shared</b>
+### -field Shared
 
 <dd>
 <p>When TRUE, the multiplane overlay resources reported by the capabilities are shared across all VidPn sources.</p>
 <p>When FALSE, the multiplane overlay resources reported by capabilities are dedicated to the specific VidPn source.</p>
 </dd>
 
-### -field <b>Immediate</b>
+### -field Immediate
 
 <dd>
 <p>When TRUE, the HW supports immediate flips of the MPO plane.</p>
 <p>If the flip contains changes that cannot be performed as an immediate flip, the driver can promote the flip to a VSYNC flip using the new HSync completion infrastructure.</p>
 </dd>
 
-### -field <b>Plane0ForVirtualModeOnly</b>
+### -field Plane0ForVirtualModeOnly
 
 <dd>
 <p>When TRUE, the hardware will always apply the stretch factor of plane 0 to the hardware cursor as well as the plane. This implies that stretching/shrinking of plane 0 should only occur when plane 0 is the desktop plane and when the stretching/shrinking is used for virtual mode support.
@@ -146,13 +146,13 @@ If TRUE, Rotation should be FALSE.
 </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 21 bits (0xFFFFFFFC) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd></dd>
 </dl>

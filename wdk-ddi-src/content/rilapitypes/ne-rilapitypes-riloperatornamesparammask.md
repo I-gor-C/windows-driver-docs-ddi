@@ -7,7 +7,7 @@ old-location: netvista\riloperatornamesparammask_2.htm
 old-project: netvista
 ms.assetid: d91e6e66-ff0f-4e36-ba1b-bd7f502739d9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef enum _RILOPERATORNAMESPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_ON_SHORTNAME"></a><a id="ril_param_on_shortname"></a><b>RIL_PARAM_ON_SHORTNAME</b>
+### -field RIL_PARAM_ON_SHORTNAME
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_ON_NUMNAME"></a><a id="ril_param_on_numname"></a><b>RIL_PARAM_ON_NUMNAME</b>
+### -field RIL_PARAM_ON_NUMNAME
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_ON_COUNTRY_CODE"></a><a id="ril_param_on_country_code"></a><b>RIL_PARAM_ON_COUNTRY_CODE</b>
+### -field RIL_PARAM_ON_COUNTRY_CODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_ON_SYSTEMTYPE"></a><a id="ril_param_on_systemtype"></a><b>RIL_PARAM_ON_SYSTEMTYPE</b>
+### -field RIL_PARAM_ON_SYSTEMTYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_ON_ALL"></a><a id="ril_param_on_all"></a><b>RIL_PARAM_ON_ALL</b>
+### -field RIL_PARAM_ON_ALL
 
 <dd></dd>
 </dl>

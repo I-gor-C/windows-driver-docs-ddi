@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY SetPriority(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setpriority.md">D3DDDIARG_SETPRIORITY</a> structure that specifies the priority level to set for the managed texture.</p>

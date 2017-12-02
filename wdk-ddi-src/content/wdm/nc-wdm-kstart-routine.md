@@ -58,7 +58,7 @@ VOID ThreadStart(
 ## -parameters
 <dl>
 
-### -param <i>StartContext</i> [in]
+### -param StartContext [in]
 
 <dd>
 <p>A caller-supplied pointer to driver-defined context information that is specified in the <i>StartContext</i> parameter a previous call to <a href="..\wdm\nf-wdm-pscreatesystemthread.md">PsCreateSystemThread</a>.</p>
@@ -68,7 +68,7 @@ VOID ThreadStart(
 ## -returns
 <p>None</p>
 
-<p>To define a <i>ThreadStart</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define a <i>ThreadStart</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define a <i>ThreadStart</i> callback routine that is named <code>MyThreadStart</code>, use the KSTART_ROUTINE type as shown in this code example:</p>
 

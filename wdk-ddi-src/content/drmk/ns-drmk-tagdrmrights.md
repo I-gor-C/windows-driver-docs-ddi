@@ -57,7 +57,7 @@ typedef struct tagDRMRIGHTS {
 ## -struct-fields
 <dl>
 
-### -field <b>CopyProtect</b>
+### -field CopyProtect
 
 <dd>
 <p>Specifies one of the following copy-protection values:
@@ -65,7 +65,7 @@ typedef struct tagDRMRIGHTS {
 <p></p>
 <dl>
 
-### -field <a id="TRUE"></a><a id="true"></a>TRUE
+### -field TRUE
 
 <dd>
 <p>Enables copy protection. An audio application must not do the following:
@@ -81,7 +81,7 @@ typedef struct tagDRMRIGHTS {
 </ul>
 </dd>
 
-### -field <a id="FALSE"></a><a id="false"></a>FALSE
+### -field FALSE
 
 <dd>
 <p>Disables copy protection. Content can be copied without restrictions.</p>
@@ -90,26 +90,26 @@ typedef struct tagDRMRIGHTS {
 <p>For more information about <b>CopyProtect</b>, see the Remarks section.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use. Initialize to zero.</p>
 </dd>
 
-### -field <b>DigitalOutputDisable</b>
+### -field DigitalOutputDisable
 
 <dd>
 <p>Specifies one of the following digital output protection values:</p>
 <p></p>
 <dl>
 
-### -field <a id="TRUE"></a><a id="true"></a>TRUE
+### -field TRUE
 
 <dd>
 <p>Disable digital outputs. A software component must not transfer the content out of the host system through any type of digital interface. Note that digital output protection does not affect USB devices because the host system includes USB devices.</p>
 </dd>
 
-### -field <a id="FALSE"></a><a id="false"></a>FALSE
+### -field FALSE
 
 <dd>
 <p>Enables digital outputs. Content can be transferred from the host system to an external component without restrictions.</p>

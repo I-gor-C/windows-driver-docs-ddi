@@ -7,7 +7,7 @@ old-location: wdf\wdfioqueuefindrequest.htm
 old-project: wdf
 ms.assetid: 379fc7ec-577a-48a4-83b0-4be4e8cfe1bf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfIoQueueFindRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ NTSTATUS WdfIoQueueFindRequest(
 ## -parameters
 <dl>
 
-### -param <i>Queue</i> [in]
+### -param Queue [in]
 
 <dd>
 <p>A handle to a framework queue object.</p>
 </dd>
 
-### -param <i>FoundRequest</i> [in, optional]
+### -param FoundRequest [in, optional]
 
 <dd>
 <p>A request object handle that the driver received from a previous call to <b>WdfIoQueueFindRequest</b>. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>FileObject</i> [in, optional]
+### -param FileObject [in, optional]
 
 <dd>
 <p>A handle to a framework file object. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Parameters</i> [in, out]
+### -param Parameters [in, out]
 
 <dd>
 <p>A pointer to a driver-allocated <a href="..\wdfrequest\ns-wdfrequest--wdf-request-parameters.md">WDF_REQUEST_PARAMETERS</a> structure that receives parameters that are associated with the found request. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>OutRequest</i> [out]
+### -param OutRequest [out]
 
 <dd>
 <p>A pointer to a location that receives a handle to the found request. If no match is found, the location receives <b>NULL</b>.</p>
@@ -203,4 +203,4 @@ NTSTATUS WdfIoQueueFindRequest(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueFindRequest method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueFindRequest method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

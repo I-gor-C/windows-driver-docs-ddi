@@ -7,7 +7,7 @@ old-location: netvista\ndismcmmodifycallqoscomplete.htm
 old-project: netvista
 ms.assetid: 66157bc7-8094-481f-8aae-a438031b61d0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMCmModifyCallQoSComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,14 +57,14 @@ VOID NdisMCmModifyCallQoSComplete(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>Specifies the final status of the client's request to modify the QoS on this VC, either
      NDIS_STATUS_SUCCESS or any caller-determined NDIS_STATUS_<i>XXX</i><u>except</u> NDIS_STATUS_PENDING.</p>
 </dd>
 
-### -param <i>NdisVcHandle</i> [in]
+### -param NdisVcHandle [in]
 
 <dd>
 <p>Specifies the handle to the VC, obtained from the per-VC state designated by the 
@@ -73,7 +73,7 @@ VOID NdisMCmModifyCallQoSComplete(
      ProtocolCmModifyCallQoS</a> function for this request.</p>
 </dd>
 
-### -param <i>CallParameters</i> [in]
+### -param CallParameters [in]
 
 <dd>
 <p>Pointer to a structure of type 
@@ -184,4 +184,4 @@ VOID NdisMCmModifyCallQoSComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmModifyCallQoSComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmModifyCallQoSComplete function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

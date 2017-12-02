@@ -7,7 +7,7 @@ old-location: wdf\wdf_wmi_provider_flags.htm
 old-project: wdf
 ms.assetid: 85b1a4b4-53e0-4663-b813-18801f8b639b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfVerifierKeBugCheck
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ typedef enum _WDF_WMI_PROVIDER_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfWmiProviderEventOnly"></a><a id="wdfwmiprovidereventonly"></a><a id="WDFWMIPROVIDEREVENTONLY"></a><b>WdfWmiProviderEventOnly</b>
+### -field WdfWmiProviderEventOnly
 
 <dd>
 <p>WMI clients can receive notification of WMI events, but they cannot query or set instance data. The driver can call <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancefireevent.md">WdfWmiInstanceFireEvent</a>, but it does not provide any instance-specific callback functions.</p>
 </dd>
 
-### -field <a id="WdfWmiProviderExpensive"></a><a id="wdfwmiproviderexpensive"></a><a id="WDFWMIPROVIDEREXPENSIVE"></a><b>WdfWmiProviderExpensive</b>
+### -field WdfWmiProviderExpensive
 
 <dd>
 <p>Collecting the provider's data can potentially affect the driver's performance, so the driver will not collect data unless a WMI client has registered to use it. The framework calls the driver's <a href="..\wdfwmi\nc-wdfwmi-evt-wdf-wmi-provider-function-control.md">EvtWmiProviderFunctionControl</a> callback function, passing the <b>WdfWmiInstanceControl</b> value (from the <a href="..\wdfwmi\ne-wdfwmi--wdf-wmi-provider-control.md">WDF_WMI_PROVIDER_CONTROL</a> enumeration), to inform the driver to begin collecting data. If the driver does not provide an <i>EvtWmiProviderFunctionControl</i> callback function, it can call <a href="..\wdfwmi\nf-wdfwmi-wdfwmiproviderisenabled.md">WdfWmiProviderIsEnabled</a>.</p>
 </dd>
 
-### -field <a id="WdfWmiProviderTracing"></a><a id="wdfwmiprovidertracing"></a><a id="WDFWMIPROVIDERTRACING"></a><b>WdfWmiProviderTracing</b>
+### -field WdfWmiProviderTracing
 
 <dd>
 <p>The WMI data provider supports WMI event tracing. The driver can obtain the tracing handle by calling <a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidergettracinghandle.md">WdfWmiProviderGetTracingHandle</a>. If this flag is set, no other flags can be set.</p>
 </dd>
 
-### -field <a id="WdfWmiProviderValidFlags"></a><a id="wdfwmiprovidervalidflags"></a><a id="WDFWMIPROVIDERVALIDFLAGS"></a><b>WdfWmiProviderValidFlags</b>
+### -field WdfWmiProviderValidFlags
 
 <dd>
 <p>The bitwise OR of all flags. Drivers should not use this value.</p>
@@ -132,4 +132,4 @@ typedef enum _WDF_WMI_PROVIDER_FLAGS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_WMI_PROVIDER_FLAGS enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_WMI_PROVIDER_FLAGS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

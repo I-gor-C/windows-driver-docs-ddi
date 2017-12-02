@@ -7,7 +7,7 @@ old-location: debugger\getsymbolinformation.htm
 old-project: debugger
 ms.assetid: 1866c6ad-57a2-4f3d-a2c8-f5748ecf42bc
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugAdvanced2, GetSymbolInformation, IDebugAdvanced2::GetSymbolInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ HRESULT GetSymbolInformation(
 ## -parameters
 <dl>
 
-### -param <i>Which</i> [in]
+### -param Which [in]
 
 <dd>
 <p>Specifies the piece of information to return.  <i>Which</i> can take one of the values in the follow table.</p>
@@ -108,32 +108,32 @@ HRESULT GetSymbolInformation(
 <p> </p>
 </dd>
 
-### -param <i>Arg64</i> [in]
+### -param Arg64 [in]
 
 <dd>
 <p>Specifies a 64-bit argument.  This parameter has the following interpretations depending on the value of <i>Which</i>:</p>
 <p></p>
 <dl>
 
-### -param <a id="DEBUG_SYMINFO_BREAKPOINT_SOURCE_LINE"></a><a id="debug_syminfo_breakpoint_source_line"></a>DEBUG_SYMINFO_BREAKPOINT_SOURCE_LINE
+### -param DEBUG_SYMINFO_BREAKPOINT_SOURCE_LINE
 
 <dd>
 <p>Ignored.</p>
 </dd>
 
-### -param <a id="DEBUG_SYMINFO_IMAGEHLP_MODULEW64"></a><a id="debug_syminfo_imagehlp_modulew64"></a>DEBUG_SYMINFO_IMAGEHLP_MODULEW64
+### -param DEBUG_SYMINFO_IMAGEHLP_MODULEW64
 
 <dd>
 <p>The base address of the module whose description is being requested.</p>
 </dd>
 
-### -param <a id="DEBUG_SYMINFO_GET_SYMBOL_NAME_BY_OFFSET_AND_TAG_WIDE"></a><a id="debug_syminfo_get_symbol_name_by_offset_and_tag_wide"></a>DEBUG_SYMINFO_GET_SYMBOL_NAME_BY_OFFSET_AND_TAG_WIDE
+### -param DEBUG_SYMINFO_GET_SYMBOL_NAME_BY_OFFSET_AND_TAG_WIDE
 
 <dd>
 <p>Specifies the address in the target's memory of the symbol whose name is being requested.</p>
 </dd>
 
-### -param <a id="DEBUG_SYMINFO_GET_MODULE_SYMBOL_NAMES_AND_OFFSETS"></a><a id="debug_syminfo_get_module_symbol_names_and_offsets"></a>DEBUG_SYMINFO_GET_MODULE_SYMBOL_NAMES_AND_OFFSETS
+### -param DEBUG_SYMINFO_GET_MODULE_SYMBOL_NAMES_AND_OFFSETS
 
 <dd>
 <p>Specifies the module whose symbols are requested.  <i>Arg64</i> is a location within the memory allocation of the module.</p>
@@ -141,32 +141,32 @@ HRESULT GetSymbolInformation(
 </dl>
 </dd>
 
-### -param <i>Arg32</i> [in]
+### -param Arg32 [in]
 
 <dd>
 <p>Specifies a 32-bit argument.  This parameter has the following interpretations depending on the value of <i>Which</i>:</p>
 <p></p>
 <dl>
 
-### -param <a id="DEBUG_SYMINFO_BREAKPOINT_SOURCE_LINE"></a><a id="debug_syminfo_breakpoint_source_line"></a>DEBUG_SYMINFO_BREAKPOINT_SOURCE_LINE
+### -param DEBUG_SYMINFO_BREAKPOINT_SOURCE_LINE
 
 <dd>
 <p>The engine breakpoint ID of the desired breakpoint.</p>
 </dd>
 
-### -param <a id="DEBUG_SYMINFO_IMAGEHLP_MODULEW64"></a><a id="debug_syminfo_imagehlp_modulew64"></a>DEBUG_SYMINFO_IMAGEHLP_MODULEW64
+### -param DEBUG_SYMINFO_IMAGEHLP_MODULEW64
 
 <dd>
 <p>Set to zero.</p>
 </dd>
 
-### -param <a id="DEBUG_SYMINFO_GET_SYMBOL_NAME_BY_OFFSET_AND_TAG_WIDE"></a><a id="debug_syminfo_get_symbol_name_by_offset_and_tag_wide"></a>DEBUG_SYMINFO_GET_SYMBOL_NAME_BY_OFFSET_AND_TAG_WIDE
+### -param DEBUG_SYMINFO_GET_SYMBOL_NAME_BY_OFFSET_AND_TAG_WIDE
 
 <dd>
 <p>The PDB classification of the symbol.  <i>Arg32</i> must be one of the values in the <b>SymTagEnum</b> enumeration defined in Dbghelp.h.  For more information, see PDB documentation.</p>
 </dd>
 
-### -param <a id="DEBUG_SYMINFO_GET_MODULE_SYMBOL_NAMES_AND_OFFSETS"></a><a id="debug_syminfo_get_module_symbol_names_and_offsets"></a>DEBUG_SYMINFO_GET_MODULE_SYMBOL_NAMES_AND_OFFSETS
+### -param DEBUG_SYMINFO_GET_MODULE_SYMBOL_NAMES_AND_OFFSETS
 
 <dd>
 <p>The PDB classification of the symbol.  <i>Arg32</i> must be one of the values in the <b>SymTagEnum</b> enumeration defined in Dbghelp.h.  For more information, see PDB documentation.</p>
@@ -174,37 +174,37 @@ HRESULT GetSymbolInformation(
 </dl>
 </dd>
 
-### -param <i>Buffer</i> [out, optional]
+### -param Buffer [out, optional]
 
 <dd>
 <p>Receives the requested symbol information.  The type of the data returned depends on the value of <i>Which</i>.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer <i>Buffer</i>.</p>
 </dd>
 
-### -param <i>InfoSize</i> [out, optional]
+### -param InfoSize [out, optional]
 
 <dd>
 <p>If this method returns <b>S_OK</b>, <i>InfoSize</i> receives the size, in bytes, of the symbol information returned to <i>Buffer</i>.  If this method returns <b>S_FALSE</b>, the supplied buffer is not big enough, and <i>InfoSize</i> receives the required buffer size. If <i>InfoSize</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>StringBuffer</i> [out, optional]
+### -param StringBuffer [out, optional]
 
 <dd>
 <p>Receives the requested string.  The interpretation of this string depends on the value of <i>Which</i>.  If <i>StringBuffer</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>StringBufferSize</i> [in]
+### -param StringBufferSize [in]
 
 <dd>
 <p>Specifies the size, in characters, of the string buffer <i>StringBuffer</i>.</p>
 </dd>
 
-### -param <i>StringSize</i> [out, optional]
+### -param StringSize [out, optional]
 
 <dd>
 <p>Receives the size, in characters, of the string returned to <i>StringBuffer</i>.  If <i>StringSize</i> is <b>NULL</b>, this information is not returned.</p>
@@ -212,7 +212,7 @@ HRESULT GetSymbolInformation(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>S_FALSE</b></dt>

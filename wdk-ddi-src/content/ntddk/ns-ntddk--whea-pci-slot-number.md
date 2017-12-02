@@ -61,31 +61,31 @@ typedef struct _WHEA_PCI_SLOT_NUMBER {
 ## -struct-fields
 <dl>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <p>A union that contains the following members:</p>
 <dl>
 
-### -field <b>bits</b>
+### -field bits
 
 <dd>
 <p>A structure that describes the logical PCI slot.</p>
 <dl>
 
-### -field <b>DeviceNumber</b>
+### -field DeviceNumber
 
 <dd>
 <p>The device number that is assigned to the logical PCI slot. </p>
 </dd>
 
-### -field <b>FunctionNumber</b>
+### -field FunctionNumber
 
 <dd>
 <p>The specific function on the device that is located in the logical PCI slot. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. </p>
@@ -93,7 +93,7 @@ typedef struct _WHEA_PCI_SLOT_NUMBER {
 </dl>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the WHEA_PCI_SLOT_NUMBER structure.</p>

@@ -60,37 +60,37 @@ PVOID ScsiPortGetDeviceBase(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
-### -param <i>BusType</i> [in]
+### -param BusType [in]
 
 <dd>
 <p>Specifies the interface type of the I/O bus on which the HBA is connected. The miniport driver's <a href="storage.hwscsifindadapter">HwScsiFindAdapter</a> routine obtains the value for this parameter from the <b>AdapterInterfaceType</b> member of the input PORT_CONFIGURATION_INFORMATION.</p>
 </dd>
 
-### -param <i>SystemIoBusNumber</i> [in]
+### -param SystemIoBusNumber [in]
 
 <dd>
 <p>Specifies the system-assigned number of the I/O bus on which the HBA is connected. The <i>HwScsiFindAdapter</i> routine obtains the value for this parameter from the <b>SystemIoBusNumber</b> member of the input PORT_CONFIGURATION_INFORMATION.</p>
 </dd>
 
-### -param <i>IoAddress</i> [in]
+### -param IoAddress [in]
 
 <dd>
 <p>Specifies the bus-relative base address of a range used by the HBA. The <i>HwScsiFindAdapter</i> routine obtains the value for this parameter from one of the <b>AccessRanges</b> elements in the PORT_CONFIGURATION_INFORMATION if the port driver supplies range-configuration information. Otherwise, this address can be a value returned by <b>ScsiPortGetBusData</b> or a miniport driver-supplied default value. Avoid using a base address of zero because its successful return status can conflict with the error status (<b>NULL</b>).</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>Specifies the size in bytes of the range that the mapping should cover. The <i>HwScsiFindAdapter</i> routine obtains the value of this parameter from the same <b>AccessRanges</b> element as <i>IoAddress</i> if the port driver supplies range configuration information. Otherwise, this value can be returned by <b>ScsiPortGetBusData</b> or a miniport driver-supplied default. In any case, the driver must not access the hardware outside of the returned, mapped range.</p>
 </dd>
 
-### -param <i>InIoSpace</i> [in]
+### -param InIoSpace [in]
 
 <dd>
 <p><b>TRUE</b> indicates the range to be mapped is in I/O space, and the miniport driver will pass mapped addresses in this range to the <b>ScsiPort...Port</b><i>Xxx</i> to communicate with the HBA. The <i>HwScsiFindAdapter</i> routine obtains the value of this parameter from the same <b>AccessRanges</b> element as <i>IoAddress</i>. Note that a miniport driver <i>must invert</i> the value of the <b>InMemorySpace</b> member in an ACCESS_RANGE-type element before it is passed to <b>ScsiPortGetDeviceBase</b> as the <i>InIoSpace</i> argument. <b>FALSE</b> indicates that the range to be mapped is in memory space. </p>

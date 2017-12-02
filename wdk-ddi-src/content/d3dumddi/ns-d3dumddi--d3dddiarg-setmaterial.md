@@ -58,31 +58,31 @@ typedef struct _D3DDDIARG_SETMATERIAL {
 ## -struct-fields
 <dl>
 
-### -field <b>Diffuse</b>
+### -field Diffuse
 
 <dd>
 <p>[in] A D3DCOLORVALUE structure that indicates the diffuse color of the material. For more information about D3DCOLORVALUE, see the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -field <b>Ambient</b>
+### -field Ambient
 
 <dd>
 <p>[in] A D3DCOLORVALUE structure that indicates the ambient color of the material.</p>
 </dd>
 
-### -field <b>Specular</b>
+### -field Specular
 
 <dd>
 <p>[in] A D3DCOLORVALUE structure that indicates the specular color of the material.</p>
 </dd>
 
-### -field <b>Emissive</b>
+### -field Emissive
 
 <dd>
 <p>[in] A D3DCOLORVALUE structure that indicates the emissive color of the material.</p>
 </dd>
 
-### -field <b>Power</b>
+### -field Power
 
 <dd>
 <p>[in] A FLOAT value that indicates the sharpness of specular highlights. To turn off specular highlights for a material, set <b>Power</b> to 0 (setting <b>Specular</b> to 0 is not enough).</p>

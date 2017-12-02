@@ -7,7 +7,7 @@ old-location: netvista\rilparticipantoperation.htm
 old-project: netvista
 ms.assetid: 0f59d104-ef86-4fed-9728-1a01ccb6f879
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILPARTICIPANTOPERATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARTICIPANT_REMOVE"></a><a id="ril_participant_remove"></a><b>RIL_PARTICIPANT_REMOVE</b>
+### -field RIL_PARTICIPANT_REMOVE
 
 <dd></dd>
 
-### -field <a id="RIL_PARTICIPANT_MAX"></a><a id="ril_participant_max"></a><b>RIL_PARTICIPANT_MAX</b>
+### -field RIL_PARTICIPANT_MAX
 
 <dd></dd>
 </dl>

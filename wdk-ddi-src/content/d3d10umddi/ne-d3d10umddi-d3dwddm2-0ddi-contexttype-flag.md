@@ -59,37 +59,37 @@ typedef enum _D3DWDDM2_0DDI_CONTEXTTYPE_FLAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DWDDM2_0DDI_CONTEXTTYPE_ALL"></a><a id="d3dwddm2_0ddi_contexttype_all"></a><b>D3DWDDM2_0DDI_CONTEXTTYPE_ALL</b>
+### -field D3DWDDM2_0DDI_CONTEXTTYPE_ALL
 
 <dd>
 <p>Indicates that all JPEG contexts should be created.</p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_CONTEXTTYPE_3D"></a><a id="d3dwddm2_0ddi_contexttype_3d"></a><b>D3DWDDM2_0DDI_CONTEXTTYPE_3D</b>
+### -field D3DWDDM2_0DDI_CONTEXTTYPE_3D
 
 <dd>
 <p>Indicates that a JPEG 3D context should be created.</p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_CONTEXTTYPE_COMPUTE"></a><a id="d3dwddm2_0ddi_contexttype_compute"></a><b>D3DWDDM2_0DDI_CONTEXTTYPE_COMPUTE</b>
+### -field D3DWDDM2_0DDI_CONTEXTTYPE_COMPUTE
 
 <dd>
 <p>Indicates that a JPEG compute context should be created.</p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_CONTEXTTYPE_COPY"></a><a id="d3dwddm2_0ddi_contexttype_copy"></a><b>D3DWDDM2_0DDI_CONTEXTTYPE_COPY</b>
+### -field D3DWDDM2_0DDI_CONTEXTTYPE_COPY
 
 <dd>
 <p>Indicates that  a JPEG copy context should be created.</p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_CONTEXTTYPE_VIDEO"></a><a id="d3dwddm2_0ddi_contexttype_video"></a><b>D3DWDDM2_0DDI_CONTEXTTYPE_VIDEO</b>
+### -field D3DWDDM2_0DDI_CONTEXTTYPE_VIDEO
 
 <dd>
 <p>Indicates that a JPEG video context should be created.</p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_CONTEXTTYPE_IMAGE"></a><a id="d3dwddm2_0ddi_contexttype_image"></a><b>D3DWDDM2_0DDI_CONTEXTTYPE_IMAGE</b>
+### -field D3DWDDM2_0DDI_CONTEXTTYPE_IMAGE
 
 <dd>
 <p>Indicates that a JPEG image context should be created.</p>

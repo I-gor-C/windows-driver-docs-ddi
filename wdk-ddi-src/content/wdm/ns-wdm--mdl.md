@@ -55,7 +55,7 @@ struct MDL {
 ## -struct-fields
 <dl>
 
-### -field <b>Next</b>
+### -field Next
 
 <dd>
 <p>Pointer to the next MDL in an MDL chain. For more information about MDL chains, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565421">Using MDLs</a>.</p>

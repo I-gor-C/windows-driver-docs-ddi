@@ -57,19 +57,19 @@ VOID IoRemoveLinkShareAccess(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to the file object, which usually is being closed by the current thread.</p>
 </dd>
 
-### -param <i>ShareAccess</i> [in, out]
+### -param ShareAccess [in, out]
 
 <dd>
 <p>Pointer to the share-access structure that describes how the open file object is currently being accessed. </p>
 </dd>
 
-### -param <i>LinkShareAccess</i> [in, out, optional]
+### -param LinkShareAccess [in, out, optional]
 
 <dd>
 <p>Pointer to the share-access structure that describes how the open file object is currently being accessed. </p>

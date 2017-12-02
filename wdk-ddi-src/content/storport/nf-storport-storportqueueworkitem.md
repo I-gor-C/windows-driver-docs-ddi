@@ -58,25 +58,25 @@ ULONG StorPortQueueWorkItem(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>WorkItemCallback</i> [in]
+### -param WorkItemCallback [in]
 
 <dd>
 <p>A pointer to a work item callback routine supplied by the miniport. This routine is called in context of the system thread to process the scheduled <i>WorkItem</i>.</p>
 </dd>
 
-### -param <i>Worker</i> [in]
+### -param Worker [in]
 
 <dd>
 <p>A pointer to an opaque buffer for the worker returned by <a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Optional context for the <i>WorkItem</i> that is processed by the callback routine in <i>WorkItemCallback</i>.</p>

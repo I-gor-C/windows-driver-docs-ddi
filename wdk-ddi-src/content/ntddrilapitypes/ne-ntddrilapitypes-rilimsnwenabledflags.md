@@ -7,7 +7,7 @@ old-location: netvista\rilimsnwenabledflags.htm
 old-project: netvista
 ms.assetid: ae13790a-2442-4a8e-88cb-2cb6c8e02da6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef enum _RILIMSNWENABLEDFLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_IMS_NW_ENABLED_FLAG_PROVISION"></a><a id="ril_ims_nw_enabled_flag_provision"></a><b>RIL_IMS_NW_ENABLED_FLAG_PROVISION</b>
+### -field RIL_IMS_NW_ENABLED_FLAG_PROVISION
 
 <dd></dd>
 
-### -field <a id="RIL_IMS_NW_ENABLED_FLAG_VOICE"></a><a id="ril_ims_nw_enabled_flag_voice"></a><b>RIL_IMS_NW_ENABLED_FLAG_VOICE</b>
+### -field RIL_IMS_NW_ENABLED_FLAG_VOICE
 
 <dd></dd>
 
-### -field <a id="RIL_IMS_NW_ENABLED_FLAG_VIDEO"></a><a id="ril_ims_nw_enabled_flag_video"></a><b>RIL_IMS_NW_ENABLED_FLAG_VIDEO</b>
+### -field RIL_IMS_NW_ENABLED_FLAG_VIDEO
 
 <dd></dd>
 
-### -field <a id="RIL_IMS_NW_ENABLED_FLAG_EAB"></a><a id="ril_ims_nw_enabled_flag_eab"></a><b>RIL_IMS_NW_ENABLED_FLAG_EAB</b>
+### -field RIL_IMS_NW_ENABLED_FLAG_EAB
 
 <dd></dd>
 
-### -field <a id="RIL_IMS_NW_ENABLED_FLAG_ALL"></a><a id="ril_ims_nw_enabled_flag_all"></a><b>RIL_IMS_NW_ENABLED_FLAG_ALL</b>
+### -field RIL_IMS_NW_ENABLED_FLAG_ALL
 
 <dd></dd>
 </dl>

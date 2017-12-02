@@ -57,25 +57,25 @@ typedef struct D3D10_1DDIARG_TEXCUBE_SHADERRESOURCEVIEW {
 ## -struct-fields
 <dl>
 
-### -field <b>MostDetailedMip</b>
+### -field MostDetailedMip
 
 <dd>
 <p>[in] The identifier of the most detailed MIP-map. </p>
 </dd>
 
-### -field <b>MipLevels</b>
+### -field MipLevels
 
 <dd>
 <p>[in] The number of MIP-map levels for the texture. </p>
 </dd>
 
-### -field <b>First2DArrayFace</b>
+### -field First2DArrayFace
 
 <dd>
 <p>[in] The identifier of the first 2-D texture that comprises one or more cube textures. </p>
 </dd>
 
-### -field <b>NumCubes</b>
+### -field NumCubes
 
 <dd>
 <p>[in] The number of cube textures for a shader resource view. </p>

@@ -56,19 +56,19 @@ typedef struct _D3D12DDI_EXTENDED_FEATURES_FUNCS_0020 {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnGetSupportedExtendedFeatures</b>
+### -field pfnGetSupportedExtendedFeatures
 
 <dd>
 <p>A pointer for a callback function to get supported extended features.</p>
 </dd>
 
-### -field <b>pfnGetSupportedExtendedFeatureVersions</b>
+### -field pfnGetSupportedExtendedFeatureVersions
 
 <dd>
 <p>A pointer for a callback function to get the supported versions of extended features.</p>
 </dd>
 
-### -field <b>pfnEnableExtendedFeature</b>
+### -field pfnEnableExtendedFeature
 
 <dd>
 <p>A pointer for a callback function to enable an extended feature.</p>

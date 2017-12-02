@@ -56,7 +56,7 @@ NTSTATUS KeSaveExtendedProcessorState(
 ## -parameters
 <dl>
 
-### -param <i>Mask</i> [in]
+### -param Mask [in]
 
 <dd>
 <p>A 64-bit feature mask. The bits in this mask identify the extended processor feature states to save. If a mask bit is one, the routine saves the state of the feature that is identified by this bit. If a mask bit is zero, the state for the corresponding feature is not saved. This mask must not identify extended processor features that the operating system has not enabled. To obtain a mask of the enabled features, call the <a href="..\ntddk\nf-ntddk-rtlgetenabledextendedfeatures.md">RtlGetEnabledExtendedFeatures</a> routine.</p>
@@ -69,7 +69,7 @@ NTSTATUS KeSaveExtendedProcessorState(
 <tr>
 <td width="40%"><a id="XSTATE_MASK_LEGACY_FLOATING_POINT"></a><a id="xstate_mask_legacy_floating_point"></a><dl>
 
-### -param <b>XSTATE_MASK_LEGACY_FLOATING_POINT</b>
+### -param XSTATE_MASK_LEGACY_FLOATING_POINT
 
 </dl>
 </td>
@@ -80,7 +80,7 @@ NTSTATUS KeSaveExtendedProcessorState(
 <tr>
 <td width="40%"><a id="XSTATE_MASK_LEGACY_SSE"></a><a id="xstate_mask_legacy_sse"></a><dl>
 
-### -param <b>XSTATE_MASK_LEGACY_SSE</b>
+### -param XSTATE_MASK_LEGACY_SSE
 
 </dl>
 </td>
@@ -91,7 +91,7 @@ NTSTATUS KeSaveExtendedProcessorState(
 <tr>
 <td width="40%"><a id="XSTATE_MASK_LEGACY"></a><a id="xstate_mask_legacy"></a><dl>
 
-### -param <b>XSTATE_MASK_LEGACY</b>
+### -param XSTATE_MASK_LEGACY
 
 </dl>
 </td>
@@ -102,7 +102,7 @@ NTSTATUS KeSaveExtendedProcessorState(
 <tr>
 <td width="40%"><a id="XSTATE_MASK_GSSE"></a><a id="xstate_mask_gsse"></a><dl>
 
-### -param <b>XSTATE_MASK_GSSE</b>
+### -param XSTATE_MASK_GSSE
 
 </dl>
 </td>
@@ -114,7 +114,7 @@ NTSTATUS KeSaveExtendedProcessorState(
 <p> </p>
 </dd>
 
-### -param <i>XStateSave</i> [out]
+### -param XStateSave [out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer into which the routine writes an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566414">XSTATE_SAVE</a> structure. This structure contains the saved state information for the extended processor features indicated by the <i>Mask</i> parameter. The buffer must be large enough to contain this structure.</p>

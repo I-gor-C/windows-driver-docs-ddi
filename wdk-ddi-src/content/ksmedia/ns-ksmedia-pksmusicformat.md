@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>TimeDeltaMs</b>
+### -field TimeDeltaMs
 
 <dd>
 <p>Indicates when this series of MIDI data bytes should be played. If this is the first KSMUSICFORMAT structure in the buffer, this field represents the delta (time change, in milliseconds) from the <b>PresentationTime</b> in the <a href="stream.ksstream_header">KSSTREAM_HEADER</a> structure. Otherwise, the field represents the delta offset (in milliseconds) from the previous message (KSMUSICFORMAT structure). If this time is in the past, then the message is played immediately.</p>
 </dd>
 
-### -field <b>ByteCount</b>
+### -field ByteCount
 
 <dd>
 <p>Specifies the number of bytes of data that follow this structure. Because the subsequent structure or properties should be DWORD aligned and might allow for extra blanks or used bytes, <b>ByteCount</b> should be the actual number of bytes present and not include any padding separating the data structures.</p>

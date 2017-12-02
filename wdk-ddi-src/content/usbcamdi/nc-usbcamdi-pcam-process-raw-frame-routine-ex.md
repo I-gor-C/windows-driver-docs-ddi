@@ -68,67 +68,67 @@ NTSTATUS CamProcessRawVideoFrameEx(
 ## -parameters
 <dl>
 
-### -param <i>BusDeviceObject</i> 
+### -param BusDeviceObject 
 
 <dd>
 <p>Pointer to the camera minidriver's device object created by the USB hub.</p>
 </dd>
 
-### -param <i>DeviceContext</i> 
+### -param DeviceContext 
 
 <dd>
 <p>Pointer to the camera minidriver's device context.</p>
 </dd>
 
-### -param <i>FrameContext</i> 
+### -param FrameContext 
 
 <dd>
 <p>Pointer to the minidriver's frame context.</p>
 </dd>
 
-### -param <i>FrameBuffer</i> 
+### -param FrameBuffer 
 
 <dd>
 <p>Pointer to the buffer that receives the final processed video frame. See the Remarks section for more information about how USBCAMD uses this parameter.</p>
 </dd>
 
-### -param <i>FrameLength</i> 
+### -param FrameLength 
 
 <dd>
 <p>Specifies the length of the frame buffer (from the original read request) in bytes.</p>
 </dd>
 
-### -param <i>RawFrameBuffer</i> 
+### -param RawFrameBuffer 
 
 <dd>
 <p>Pointer to the buffer containing the received USB packets. See the Remarks section for more information about how USBCAMD uses this parameter.</p>
 </dd>
 
-### -param <i>RawFrameLength</i> 
+### -param RawFrameLength 
 
 <dd>
 <p>Specifies the length of <i>RawFrameBuffer</i> in bytes.</p>
 </dd>
 
-### -param <i>NumberOfPackets</i> 
+### -param NumberOfPackets 
 
 <dd>
 <p>Specifies the number of USB packets received into <i>RawFrameBuffer</i>.</p>
 </dd>
 
-### -param <i>BytesReturned</i> 
+### -param BytesReturned 
 
 <dd>
-<p>Pointer to the number of bytes transferred. The minidriver must set this to zero if it encounters any errors during processing, as described in <a href="NULL">Data Flow Using Isochronous Pipes</a>. See the Remarks section for more information about how USBCAMD uses this parameter.</p>
+<p>Pointer to the number of bytes transferred. The minidriver must set this to zero if it encounters any errors during processing, as described in <a href="https://msdn.microsoft.com/a66f4191-53ce-4ca2-aae7-8fb24a1a9a16">Data Flow Using Isochronous Pipes</a>. See the Remarks section for more information about how USBCAMD uses this parameter.</p>
 </dd>
 
-### -param <i>ActualRawFrameLength</i> 
+### -param ActualRawFrameLength 
 
 <dd>
 <p>Contains the length of the actual buffer received from the camera. This value is specified in bytes.</p>
 </dd>
 
-### -param <i>StreamNumber</i> 
+### -param StreamNumber 
 
 <dd>
 <p>Indicates the stream number with which this frame is associated with.</p>

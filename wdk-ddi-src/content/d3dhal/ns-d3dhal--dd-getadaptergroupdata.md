@@ -60,25 +60,25 @@ typedef struct _DD_GETADAPTERGROUPDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>gdi2</b>
+### -field gdi2
 
 <dd>
 <p>Specifies a <a href="..\d3dhal\ns-d3dhal--dd-getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data for the query.</p>
 </dd>
 
-### -field <b>ulUniqueAdapterGroupId</b>
+### -field ulUniqueAdapterGroupId
 
 <dd>
 <p>Receives the identifier of the group of adapters that comprise the driver's multiple-head video card. The driver must provide a unique identifier for the master and all subordinate adapters within this group.</p>
 </dd>
 
-### -field <b>dwReserved1</b>
+### -field dwReserved1
 
 <dd>
 <p>Specifies a reserved field. Driver should not read or write. Set to zero.</p>
 </dd>
 
-### -field <b>dwReserved2</b>
+### -field dwReserved2
 
 <dd>
 <p>Specifies a reserved field. Driver should not read or write. Set to zero.</p>

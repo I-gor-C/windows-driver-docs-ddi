@@ -7,7 +7,7 @@ old-location: netvista\rilradiopresence_2.htm
 old-project: netvista
 ms.assetid: 0fd02d1a-e6c4-418d-b890-9b60f4f0c1ce
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILRADIOPRESENCE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_RADIOPRESENCE_PRESENT"></a><a id="ril_radiopresence_present"></a><b>RIL_RADIOPRESENCE_PRESENT</b>
+### -field RIL_RADIOPRESENCE_PRESENT
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOPRESENCE_MAX"></a><a id="ril_radiopresence_max"></a><b>RIL_RADIOPRESENCE_MAX</b>
+### -field RIL_RADIOPRESENCE_MAX
 
 <dd></dd>
 </dl>

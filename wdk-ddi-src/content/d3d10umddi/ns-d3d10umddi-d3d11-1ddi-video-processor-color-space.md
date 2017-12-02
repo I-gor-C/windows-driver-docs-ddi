@@ -59,7 +59,7 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Usage</b>
+### -field Usage
 
 <dd>
 <p>Specifies whether the output is intended for playback or video processing (such as editing or authoring). The device can optimize the processing based on the type. The default state value is 0 (playback). 
@@ -98,7 +98,7 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE {
 <p> </p>
 </dd>
 
-### -field <b>RGB_Range</b>
+### -field RGB_Range
 
 <dd>
 <p>Specifies the RGB color range. The default state value is 0 (full range).
@@ -137,7 +137,7 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE {
 <p> </p>
 </dd>
 
-### -field <b>YCbCr_Matrix</b>
+### -field YCbCr_Matrix
 
 <dd>
 <p>Specifies the YCbCr transfer matrix. The default state value is 0 (BT.601).
@@ -176,7 +176,7 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE {
 <p> </p>
 </dd>
 
-### -field <b>YCbCr_xvYCC</b>
+### -field YCbCr_xvYCC
 
 <dd>
 <p>Specifies whether the output uses conventional YCbCr or extended YCbCr (xvYCC). The default state value is zero (conventional YCbCr).
@@ -215,7 +215,7 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE {
 <p> </p>
 </dd>
 
-### -field <b>Nominal_Range</b>
+### -field Nominal_Range
 
 <dd>
 <p>[in] A UINT value that specifies that the luminance range of YUV data is described by the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-nominal-range.md">D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE</a> enumeration. The default state value is zero, which indicates the studio luminance range of 16 to 235, inclusive [16, 235].</p>
@@ -224,7 +224,7 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE {
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. Set to zero.</p>

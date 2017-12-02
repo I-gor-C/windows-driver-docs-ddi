@@ -7,7 +7,7 @@ old-location: wdf\iwdfdeviceinitialize_retrievedeviceinstanceid.htm
 old-project: wdf
 ms.assetid: 5f1651f9-4952-4e87-90fc-3f79948b8457
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFDeviceInitialize, RetrieveDeviceInstanceId, IWDFDeviceInitialize::RetrieveDeviceInstanceId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ HRESULT RetrieveDeviceInstanceId(
 ## -parameters
 <dl>
 
-### -param <i>Buffer</i> [out, optional]
+### -param Buffer [out, optional]
 
 <dd>
 <p>A pointer to a buffer that receives a <b>NULL</b>-terminated string that represents the identifier of an instance of a device if the supplied buffer is non-<b>NULL</b> and <a href="wdf.iwdfdevice_retrievedeviceinstanceid">RetrieveDeviceInstanceId</a> is successful. </p>
 </dd>
 
-### -param <i>pdwSizeInChars</i> [in, out]
+### -param pdwSizeInChars [in, out]
 
 <dd>
 <p>A pointer to a variable that receives the number of characters, including the <b>NULL</b> character, in the string that <i>Buffer</i> points to.</p>
@@ -158,4 +158,4 @@ HRESULT RetrieveDeviceInstanceId(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDeviceInitialize::RetrieveDeviceInstanceId method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDeviceInitialize::RetrieveDeviceInstanceId method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

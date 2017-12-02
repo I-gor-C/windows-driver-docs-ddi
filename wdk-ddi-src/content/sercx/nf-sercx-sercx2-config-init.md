@@ -58,25 +58,25 @@ VOID SERCX2_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
 <p>A pointer to the <a href="..\sercx\ns-sercx--sercx2-config.md">SERCX2_CONFIG</a> structure that is to be initialized.</p>
 </dd>
 
-### -param <i>EvtSerCx2ApplyConfig</i> [in]
+### -param EvtSerCx2ApplyConfig [in]
 
 <dd>
 <p>The value to load into the <b>EvtSerCx2ApplyConfig</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-config.md">SERCX2_CONFIG</a>.</p>
 </dd>
 
-### -param <i>EvtSerCx2Control</i> [in]
+### -param EvtSerCx2Control [in]
 
 <dd>
 <p>The value to load into the <b>EvtSerCx2Control</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-config.md">SERCX2_CONFIG</a>.</p>
 </dd>
 
-### -param <i>EvtSerCx2PurgeFifos</i> [in]
+### -param EvtSerCx2PurgeFifos [in]
 
 <dd>
 <p>The value to load into the <b>EvtSerCx2PurgeFifos</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-config.md">SERCX2_CONFIG</a>.</p>

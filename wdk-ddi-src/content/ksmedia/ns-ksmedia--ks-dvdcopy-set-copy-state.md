@@ -54,7 +54,7 @@ typedef struct _KS_DVDCOPY_SET_COPY_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>DVDCopyState</b>
+### -field DVDCopyState
 
 <dd>
 <p>Indicates the progress of the copyright protection initialization, authentication and key negotiation sequence. This must be one of the values from the <a href="..\ksmedia\ne-ksmedia-ks-dvdcopystate.md">KS_DVDCOPYSTATE</a> enumeration.</p>
@@ -64,7 +64,7 @@ typedef struct _KS_DVDCOPY_SET_COPY_STATE {
 ## -remarks
 <p>This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565147">KSPROPERTY_DVDCOPY_SET_COPY_STATE</a> property.</p>
 
-<p>For more information, see <a href="NULL">DVD Copyright Protection</a>, <a href="NULL">Multiple Data Streams on the same Hardware</a> and <a href="NULL">Synchronizing Key Exchange with Data Flow</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/ff9cf8c8-7c8f-485c-b2ab-7567a5eeb87b">DVD Copyright Protection</a>, <a href="https://msdn.microsoft.com/23133022-6d00-44ad-8c0d-24715204cacc">Multiple Data Streams on the same Hardware</a> and <a href="https://msdn.microsoft.com/54abc258-d26a-4d42-a5aa-712cdae76b6d">Synchronizing Key Exchange with Data Flow</a>.</p>
 
 ## -requirements
 <table>

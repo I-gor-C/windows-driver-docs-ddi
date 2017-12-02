@@ -61,49 +61,49 @@ typedef struct _DXGK_VIDPNSOURCEMODESET_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnGetNumModes</b>
+### -field pfnGetNumModes
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpnsourcemodeset-getnummodes.md">pfnGetNumModes</a> function.</p>
 </dd>
 
-### -field <b>pfnAcquireFirstModeInfo</b>
+### -field pfnAcquireFirstModeInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpnsourcemodeset-acquirefirstmodeinfo.md">pfnAcquireFirstModeInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnAcquireNextModeInfo</b>
+### -field pfnAcquireNextModeInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpnsourcemodeset-acquirenextmodeinfo.md">pfnAcquireNextModeInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnAcquirePinnedModeInfo</b>
+### -field pfnAcquirePinnedModeInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpnsourcemodeset-acquirepinnedmodeinfo.md">pfnAcquirePinnedModeInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnReleaseModeInfo</b>
+### -field pfnReleaseModeInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpnsourcemodeset-releasemodeinfo.md">pfnReleaseModeInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateNewModeInfo</b>
+### -field pfnCreateNewModeInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpnsourcemodeset-createnewmodeinfo.md">pfnCreateNewModeInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnAddMode</b>
+### -field pfnAddMode
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpnsourcemodeset-addmode.md">pfnAddMode</a> function.</p>
 </dd>
 
-### -field <b>pfnPinMode</b>
+### -field pfnPinMode
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpnsourcemodeset-pinmode.md">pfnPinMode</a> function.</p>

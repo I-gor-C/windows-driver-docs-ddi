@@ -63,61 +63,61 @@ typedef struct _MSiSCSI_SessionStatistics {
 ## -struct-fields
 <dl>
 
-### -field <b>iSCSIName</b>
+### -field iSCSIName
 
 <dd>
 <p>A wide character string that contains the name of an iSCSI target.</p>
 </dd>
 
-### -field <b>USID</b>
+### -field USID
 
 <dd>
 <p>The iSCSI session identifier (ID) for this connection instance. This ID is an internal value that the iSCSI protocol uses to identify the session. Do not use this ID. Application software should use the session identifier that the <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods return in the <i>UniqueSessionId</i> parameter.</p>
 </dd>
 
-### -field <b>UniqueAdapterId</b>
+### -field UniqueAdapterId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this ID. The initiator reports this value in the <i>UniqueAdapterId</i> member of the <a href="..\iscsimgt\ns-iscsimgt--msiscsi-hbainformation.md">MSiSCSI_HBAInformation</a> structure.</p>
 </dd>
 
-### -field <b>BytesSent</b>
+### -field BytesSent
 
 <dd>
 <p>The number of bytes that are sent over this session. </p>
 </dd>
 
-### -field <b>BytesReceived</b>
+### -field BytesReceived
 
 <dd>
 <p>The number of bytes that are received over this session. </p>
 </dd>
 
-### -field <b>PDUCommandsSent</b>
+### -field PDUCommandsSent
 
 <dd>
 <p>The number of PDUs that are sent over this session. </p>
 </dd>
 
-### -field <b>PDUResponsesReceived</b>
+### -field PDUResponsesReceived
 
 <dd>
 <p>The number of PDUs that are received over this session. </p>
 </dd>
 
-### -field <b>DigestErrors</b>
+### -field DigestErrors
 
 <dd>
 <p>The number of digest errors that have occurred in this session.</p>
 </dd>
 
-### -field <b>ConnectionTimeoutErrors</b>
+### -field ConnectionTimeoutErrors
 
 <dd>
 <p>The number of connection time-out errors that have occurred in this session. </p>
 </dd>
 
-### -field <b>FormatErrors</b>
+### -field FormatErrors
 
 <dd>
 <p>The number of format errors that have occurred in this session.</p>

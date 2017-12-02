@@ -7,7 +7,7 @@ old-location: debugger\getthreadidbyprocessor.htm
 old-project: debugger
 ms.assetid: c771a581-53ac-44a7-b307-b8a22ac97496
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSystemObjects4, GetThreadIdByProcessor, IDebugSystemObjects4::GetThreadIdByProcessor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ HRESULT GetThreadIdByProcessor(
 ## -parameters
 <dl>
 
-### -param <i>Processor</i> [in]
+### -param Processor [in]
 
 <dd>
 <p>Specifies the processor corresponding to the desired thread.</p>
 </dd>
 
-### -param <i>Id</i> [out]
+### -param Id [out]
 
 <dd>
 <p>Receives the engine thread ID.</p>
@@ -69,7 +69,7 @@ HRESULT GetThreadIdByProcessor(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

@@ -63,20 +63,20 @@ typedef struct _DXGK_FAULT_ERROR_CODE {
 ## -struct-fields
 <dl>
 
-### -field <b>IsDeviceSpecificCode</b>
+### -field IsDeviceSpecificCode
 
 <dd>
 <p>When set, this indicates that the GPU error code is specific to the particular vendor. In this case, <b>DeviceSpecificCode</b> should be set to a vendor specific error code.</p>
 <p>When not set, this indicates that the GPU error can be described via a set of predefined values in <a href="..\d3dkmdt\ne-d3dkmdt--dxgk-general-error-code.md">DXGK_GENERAL_ERROR_CODE</a> enumeration. <b>GeneralErrorCode</b> value should be set to the corresponding error code.</p>
 </dd>
 
-### -field <b>GeneralErrorCode</b>
+### -field GeneralErrorCode
 
 <dd>
 <p>General error code defined by <a href="..\d3dkmdt\ne-d3dkmdt--dxgk-general-error-code.md">DXGK_GENERAL_ERROR_CODE</a>.</p>
 </dd>
 
-### -field <b>IsDeviceSpecificCodeReservedBit</b>
+### -field IsDeviceSpecificCodeReservedBit
 
 <dd>
 <p>Same as <b>IsDeviceSpecificCode</b> member above:</p>
@@ -84,7 +84,7 @@ typedef struct _DXGK_FAULT_ERROR_CODE {
 <p>When not set, this indicates that the GPU error can be described via a set of predefined values in <a href="..\d3dkmdt\ne-d3dkmdt--dxgk-general-error-code.md">DXGK_GENERAL_ERROR_CODE</a> enumeration. <b>GeneralErrorCode</b> value should be set to the corresponding error code.</p>
 </dd>
 
-### -field <b>DeviceSpecificCode</b>
+### -field DeviceSpecificCode
 
 <dd>
 <p>A device specific error code.</p>

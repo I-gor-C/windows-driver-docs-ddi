@@ -7,7 +7,7 @@ old-location: ifsk\flt_file_name_information.htm
 old-project: ifsk
 ms.assetid: 998a028a-7dd8-429a-8195-68d4b4b1b156
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FLT_FILE_NAME_INFORMATION, FLT_FILE_NAME_INFORMATION, *PFLT_FILE_NAME_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,13 +63,13 @@ typedef struct _FLT_FILE_NAME_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size, in bytes, of the FLT_FILE_NAME_INFORMATION structure. </p>
 </dd>
 
-### -field <b>NamesParsed</b>
+### -field NamesParsed
 
 <dd>
 <p>Bitmask of flags that indicate which name components have been parsed from the <b>Name</b> string by <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>. Note that, when parsing the <b>Name</b> string, <b>FltParseFileNameInformation</b> sets this flag for each component, whether the component is found to be present in the string. These values may be combined by using the OR operator. </p>
@@ -114,7 +114,7 @@ typedef struct _FLT_FILE_NAME_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>Format of the name information stored in the <b>Name</b> member. One of the following. (For an explanation of these formats, see the following Remarks section.) </p>
@@ -151,44 +151,44 @@ typedef struct _FLT_FILE_NAME_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>
 <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the file name string, formatted as specified by the <b>Format</b> member. </p>
 </dd>
 
-### -field <b>Volume</b>
+### -field Volume
 
 <dd>
 <p>UNICODE_STRING structure that contains the volume name parsed from the <b>Name</b> string. If <b>Format</b> is FLT_FILE_NAME_SHORT, <b>Volume.Length</b> is zero. </p>
 </dd>
 
-### -field <b>Share</b>
+### -field Share
 
 <dd>
 <p>UNICODE_STRING structure that contains the network share name parsed from the <b>Name</b> string for a remote file. If <b>Format</b> is FLT_FILE_NAME_SHORT, <b>Share.Length</b> is zero. </p>
 </dd>
 
-### -field <b>Extension</b>
+### -field Extension
 
 <dd>
 <p>UNICODE_STRING structure that contains the extension parsed from the <b>Name</b> string. If no extension is found, <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a> sets <b>Extension.Length</b> to zero. </p>
 </dd>
 
-### -field <b>Stream</b>
+### -field Stream
 
 <dd>
 <p>UNICODE_STRING structure that contains the stream name parsed from the <b>Name</b> string. If no stream name is found, or if <b>Format</b> is FLT_FILE_NAME_SHORT, <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a> sets <b>Stream.Length</b> to zero. </p>
 </dd>
 
-### -field <b>FinalComponent</b>
+### -field FinalComponent
 
 <dd>
 <p>UNICODE_STRING structure that contains the final name component parsed from the <b>Name</b> string. If no final component name is found, or if <b>Format</b> is FLT_FILE_NAME_SHORT, <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a> sets <b>FinalComponent.Length</b> to zero. </p>
 </dd>
 
-### -field <b>ParentDir</b>
+### -field ParentDir
 
 <dd>
 <p>UNICODE_STRING structure that contains the parent directory name parsed from the <b>Name</b> string by <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>. If no parent directory name is found, or if <b>Format</b> is FLT_FILE_NAME_SHORT, <b>FltParseFileNameInformation</b> sets <b>ParentDir.Length</b> to zero. </p>
@@ -301,4 +301,4 @@ typedef struct _FLT_FILE_NAME_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_FILE_NAME_INFORMATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_FILE_NAME_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

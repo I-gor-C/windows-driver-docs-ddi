@@ -57,19 +57,19 @@ ULONG StorPortGetNodeAffinity(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>NodeNumber</i> [in]
+### -param NodeNumber [in]
 
 <dd>
 <p>The NUMA node from which to return the processor mask.</p>
 </dd>
 
-### -param <i>NodeAffinityMask</i> [out]
+### -param NodeAffinityMask [out]
 
 <dd>
 <p>A pointer to a variable that holds the affinity mask of the given node.</p>

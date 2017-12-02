@@ -60,37 +60,37 @@ typedef struct _KBUGCHECK_SECONDARY_DUMP_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>InBuffer</b>
+### -field InBuffer
 
 <dd>
 <p>Pointer to a buffer that is allocated by the system.</p>
 </dd>
 
-### -field <b>InBufferLength</b>
+### -field InBufferLength
 
 <dd>
 <p>Specifies the size of the buffer, in bytes, specified by the <b>InBuffer</b> member.</p>
 </dd>
 
-### -field <b>MaximumAllowed</b>
+### -field MaximumAllowed
 
 <dd>
 <p>Specifies the maximum amount of data that the <i>BugCheckSecondaryDumpDataCallback</i> routine can write to the crash dump file.</p>
 </dd>
 
-### -field <b>Guid</b>
+### -field Guid
 
 <dd>
 <p>Specifies a GUID that identifies the driver's crash dump data. (Drivers must use unique GUIDs to mark their crash dump data. Use the GuidGen.exe tool to generate GUIDs for your driver. This tool is included in the Microsoft Windows SDK.)</p>
 </dd>
 
-### -field <b>OutBuffer</b>
+### -field OutBuffer
 
 <dd>
 <p>Pointer to the buffer where the driver writes its crash dump data, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>OutBufferLength</b>
+### -field OutBufferLength
 
 <dd>
 <p>Specifies the size of the buffer, in bytes, that was specified by the <b>OutBuffer</b> member.</p>

@@ -65,13 +65,13 @@ typedef struct _COUNTED_REASON_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of the structure. Set this member to DIAGNOSTIC_REASON_VERSION.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Indicates whether the structure contains a simple reason string or a detailed set of reason strings. Set this member to one of the following constants:</p>
@@ -86,31 +86,31 @@ typedef struct _COUNTED_REASON_CONTEXT {
 <p>If <b>Flags</b> = DIAGNOSTIC_REASON_SIMPLE_STRING, the <b>SimpleString</b> member of the union is valid. If <b>Flags</b> = DIAGNOSTIC_REASON_DETAILED_STRING, the <b>ResourceFileName</b>, <b>ResourceReasonId</b>, <b>StringCount</b>, and <b>ReasonStrings</b> members are valid (and the <b>SimpleString</b> member is not valid).</p>
 </dd>
 
-### -field <b>ResourceFileName</b>
+### -field ResourceFileName
 
 <dd>
 <p>A pointer to a wide-character, null-terminated string that contains the pathname of a resource file. This resource file contains one or more localized strings that give reasons for a power request. This member is optional and can be specified as <b>NULL</b> or as an empty string if no resource file is required. This member is valid only if <b>Flags</b> = DIAGNOSTIC_REASON_DETAILED_STRING. </p>
 </dd>
 
-### -field <b>ResourceReasonId</b>
+### -field ResourceReasonId
 
 <dd>
 <p>The resource ID assigned to the first reason string in the resource file that is specified by <b>ResourceFileName</b>. This member is valid only if <b>Flags</b> = DIAGNOSTIC_REASON_DETAILED_STRING. </p>
 </dd>
 
-### -field <b>StringCount</b>
+### -field StringCount
 
 <dd>
 <p>The number of reason strings in the <b>ReasonStrings</b> array or in the resource file that is specified by <b>ResourceFileName</b>. This member is valid only if <b>Flags</b> = DIAGNOSTIC_REASON_DETAILED_STRING. </p>
 </dd>
 
-### -field <b>ReasonStrings</b>
+### -field ReasonStrings
 
 <dd>
 <p>A pointer to an array of string pointers. Each array element is a pointer to a wide-character, null-terminated string. The number of array elements is specified by <b>StringCount</b>. This member is valid only if <b>Flags</b> = DIAGNOSTIC_REASON_DETAILED_STRING. </p>
 </dd>
 
-### -field <b>SimpleString</b>
+### -field SimpleString
 
 <dd>
 <p>A pointer to a wide-character, null-terminated string that explains the reason for a power request. This member is valid only if <b>Flags</b> = DIAGNOSTIC_REASON_SIMPLE_STRING. </p>
@@ -118,7 +118,7 @@ typedef struct _COUNTED_REASON_CONTEXT {
 </dl>
 
 ## -remarks
-<p>This structure is used by the <a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.</p>
+<p>This structure is used by the <a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.</p>
 
 <p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> uses the reason string or strings contained in this structure as a diagnostic aid during functional and performance testing.</p>
 
@@ -151,7 +151,7 @@ typedef struct _COUNTED_REASON_CONTEXT {
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a>
+<a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a>
 </dt>
 </dl>
 <p> </p>

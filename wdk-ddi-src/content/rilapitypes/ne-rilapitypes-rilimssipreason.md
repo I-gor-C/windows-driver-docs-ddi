@@ -7,7 +7,7 @@ old-location: netvista\rilimssipreason_2.htm
 old-project: netvista
 ms.assetid: 45cee356-e05e-4f3a-bccf-4d95a64587d4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILIMSSIPREASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_IMSSIPREASON_NOT_AUTHORIZED_FOR_SERVICE"></a><a id="ril_imssipreason_not_authorized_for_service"></a><b>RIL_IMSSIPREASON_NOT_AUTHORIZED_FOR_SERVICE</b>
+### -field RIL_IMSSIPREASON_NOT_AUTHORIZED_FOR_SERVICE
 
 <dd></dd>
 
-### -field <a id="RIL_IMSSIPREASON_MAX"></a><a id="ril_imssipreason_max"></a><b>RIL_IMSSIPREASON_MAX</b>
+### -field RIL_IMSSIPREASON_MAX
 
 <dd></dd>
 </dl>

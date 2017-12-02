@@ -7,7 +7,7 @@ old-location: spb\spb_transfer_list_init.htm
 old-project: SPB
 ms.assetid: 7FFFB495-7E6A-465C-AE93-B62957179531
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/30/2017
 ms.keywords: SPB_TRANSFER_LIST_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ VOID SPB_TRANSFER_LIST_INIT(
 ## -parameters
 <dl>
 
-### -param <i>TransferList</i> [out]
+### -param TransferList [out]
 
 <dd>
 <p>A pointer to the <b>SPB_TRANSFER_LIST</b> structure that is to be initialized.</p>
 </dd>
 
-### -param <i>TransferCount</i> [in]
+### -param TransferCount [in]
 
 <dd>
 <p>The number of entries in the transfer list. The function writes this value to the <b>TransferCount</b> member of the  <b>SPB_TRANSFER_LIST</b> structure.</p>
@@ -116,4 +116,4 @@ VOID SPB_TRANSFER_LIST_INIT(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_LIST_INIT function%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_LIST_INIT function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

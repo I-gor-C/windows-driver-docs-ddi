@@ -56,19 +56,19 @@ typedef enum D3D12DDI_DEALLOCATE_FLAGS_0022 {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_DEALLOCATE_FLAGS_0022_NONE"></a><a id="d3d12ddi_deallocate_flags_0022_none"></a><b>D3D12DDI_DEALLOCATE_FLAGS_0022_NONE</b>
+### -field D3D12DDI_DEALLOCATE_FLAGS_0022_NONE
 
 <dd>
 <p>No flag value.</p>
 </dd>
 
-### -field <a id="D3D12DDI_DEALLOCATE_FLAGS_0022_ASSUME_NOT_IN_USE"></a><a id="d3d12ddi_deallocate_flags_0022_assume_not_in_use"></a><b>D3D12DDI_DEALLOCATE_FLAGS_0022_ASSUME_NOT_IN_USE</b>
+### -field D3D12DDI_DEALLOCATE_FLAGS_0022_ASSUME_NOT_IN_USE
 
 <dd>
 <p>Assume that the allocation is not in use.</p>
 </dd>
 
-### -field <a id="D3D12DDI_DEALLOCATE_FLAGS_0022_SYNCHRONOUS_DESTROY"></a><a id="d3d12ddi_deallocate_flags_0022_synchronous_destroy"></a><b>D3D12DDI_DEALLOCATE_FLAGS_0022_SYNCHRONOUS_DESTROY</b>
+### -field D3D12DDI_DEALLOCATE_FLAGS_0022_SYNCHRONOUS_DESTROY
 
 <dd>
 <p>Perform synchronous destroy.</p>

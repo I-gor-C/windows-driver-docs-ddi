@@ -59,37 +59,37 @@ NTSTATUS KsRegisterFilterWithNoKSPins(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure corresponding to the device to which to register the filter.</p>
 </dd>
 
-### -param <i>InterfaceClassGUID</i> [in]
+### -param InterfaceClassGUID [in]
 
 <dd>
 <p>A pointer to the GUID representing the class to register. For instance, this would point to KSCATEGORY_TVTUNER for a TvTuner filter.</p>
 </dd>
 
-### -param <i>PinCount</i> [in]
+### -param PinCount [in]
 
 <dd>
 <p>The count of the number of pins on the filter.</p>
 </dd>
 
-### -param <i>PinDirection</i> [in]
+### -param PinDirection [in]
 
 <dd>
 <p>A pointer to the first element of an array of Boolean values indicating pin direction for each pin on the filter. Output pins are <b>TRUE</b>; input pins are <b>FALSE</b>. This array must be <i>PinCount</i> in length.</p>
 </dd>
 
-### -param <i>MediumList</i> [in]
+### -param MediumList [in]
 
 <dd>
 <p>A pointer to the first element of an array of <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structures defining the mediums for each pin on the filter. This array must be <i>PinCount</i> in length.</p>
 </dd>
 
-### -param <i>CategoryList</i> [in, optional]
+### -param CategoryList [in, optional]
 
 <dd>
 <p>A pointer to the first element of an array of GUIDs defining the categories for each pin on the filter. If this parameter is present, it must be <i>PinCount</i> in length.</p>
@@ -106,7 +106,7 @@ NTSTATUS KsRegisterFilterWithNoKSPins(
 
 <p>If writing a BDA minidriver, consider using <a href="..\ks\nf-ks-ksfilterfactoryupdatecachedata.md">KsFilterFactoryUpdateCacheData</a> instead of this routine. See details on the reference page for <b>KsFilterFactoryUpdateCacheData</b>.</p>
 
-<p>For more information, see <a href="NULL">AVStream Descriptors</a> and <a href="NULL">Initializing an AVStream Minidriver</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/fd436406-311b-4537-994d-fbd8d92d4673">AVStream Descriptors</a> and <a href="https://msdn.microsoft.com/666d6efb-93ec-43f3-87c5-ea1a3983bfd0">Initializing an AVStream Minidriver</a>.</p>
 
 ## -requirements
 <table>

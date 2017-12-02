@@ -7,7 +7,7 @@ old-location: sensors\isensordriver_ongetdatafields.htm
 old-project: sensors
 ms.assetid: a9233a0f-ac80-46be-9abe-7b87d25736f9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorDriver, OnGetDataFields, ISensorDriver::OnGetDataFields
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ HRESULT OnGetDataFields(
 ## -parameters
 <dl>
 
-### -param <i>pClientFile</i> 
+### -param pClientFile 
 
 <dd>
 <p> Pointer to an IWDFFile interface that represents the file object for the application requesting the data.</p>
 </dd>
 
-### -param <i>pwszSensorID</i> 
+### -param pwszSensorID 
 
 <dd>
 <p>LPWSTR that contains the ID for the sensor from which the client application is requesting data.</p>
 </dd>
 
-### -param <i>pDataFields</i> 
+### -param pDataFields 
 
 <dd>
 <p>Pointer to an IPortableDeviceKeyCollection that contains the list of PROPERTYKEY values that represent the data fields being requested. </p>
 </dd>
 
-### -param <i>ppDataValues</i> 
+### -param ppDataValues 
 
 <dd>
 <p>Address of an IPortableDeviceValues pointer that receives the requested data.</p>

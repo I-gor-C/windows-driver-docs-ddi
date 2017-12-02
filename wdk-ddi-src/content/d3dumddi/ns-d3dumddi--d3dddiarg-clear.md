@@ -57,7 +57,7 @@ typedef struct _D3DDDIARG_CLEAR {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A UINT value that specifies which buffers the driver should clear and how the clear operation should be performed. This member can be a bitwise OR of the following values. For more information, see the Remarks section in the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-clear.md">Clear</a> reference page.</p>
@@ -102,19 +102,19 @@ typedef struct _D3DDDIARG_CLEAR {
 <p> </p>
 </dd>
 
-### -field <b>FillColor</b>
+### -field FillColor
 
 <dd>
 <p>[in] The color value that the driver should clear the context's render target to.</p>
 </dd>
 
-### -field <b>FillDepth</b>
+### -field FillDepth
 
 <dd>
 <p>[in] The value that the driver should use to set the depth in the context's depth buffer. This member can be a value in the range from 0.0 through 1.0. </p>
 </dd>
 
-### -field <b>FillStencil</b>
+### -field FillStencil
 
 <dd>
 <p>[in] The value that the driver should clear the context's stencil buffer to. This member can be an integer in the range from 0 through 2ⁿ-1, where <i>n</i> is the number of bits in the stencil buffer.</p>

@@ -57,14 +57,14 @@ typedef struct IDDCX_OPM_REQUESTED_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Total size of the structure.
                  </p>
 </dd>
 
-### -field <b>RequestedInformation</b>
+### -field RequestedInformation
 
 <dd>
 <p>The information that was requested.

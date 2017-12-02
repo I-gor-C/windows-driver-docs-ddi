@@ -56,13 +56,13 @@ typedef struct _DXGKARGCB_GETHANDLEDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>hObject</b>
+### -field hObject
 
 <dd>
 <p>[in] A handle to the private data. This handle is the kernel-mode handle that the Microsoft DirectX graphics kernel subsystem (which is part of <i>Dxgkrnl.sys</i>) assigned for the private data.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>[in] A DXGK_HANDLE_TYPE-typed value that indicates the type of handle to retrieve data about. This member can be one of the following values:</p>
@@ -91,7 +91,7 @@ typedef struct _DXGKARGCB_GETHANDLEDATA {
 <p> </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgkcb-gethandledataflags.md">DXGKCB_GETHANDLEDATAFLAGS</a> structure that indicates if allocations belong to a resource.</p>

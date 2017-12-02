@@ -61,31 +61,31 @@ VOID APIENTRY* CheckDirectFlipSupport(D3D11_1)(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hResource1</i> 
+### -param hResource1 
 
 <dd>
 <p>A resource in the application's swapchain.</p>
 </dd>
 
-### -param <i>hResource2</i> 
+### -param hResource2 
 
 <dd>
 <p>A resource in the DWM's swapchain.</p>
 </dd>
 
-### -param <i>CheckDirectFlipFlags</i> 
+### -param CheckDirectFlipFlags 
 
 <dd>
 <p>If this parameter has a value of <b>D3D11_1DDI_CHECK_DIRECT_FLIP_IMMEDIATE</b>, seamless flipping should occur immediately and does not have to be synchronized with a VSync interrupt.</p>
 </dd>
 
-### -param <i>pSupported</i> [out]
+### -param pSupported [out]
 
 <dd>
 <p>Set to <b>TRUE</b> if the driver can seamlessly flip video memory between  an application's managed primary allocations and the DWM's managed primary allocations. Otherwise, set to <b>FALSE</b>.</p>

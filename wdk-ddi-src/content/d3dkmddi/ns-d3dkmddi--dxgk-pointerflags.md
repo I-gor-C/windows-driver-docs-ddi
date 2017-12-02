@@ -62,31 +62,31 @@ typedef struct _DXGK_POINTERFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Monochrome</b>
+### -field Monochrome
 
 <dd>
 <p>A UINT value that specifies whether the mouse pointer can display in monochrome. Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Color</b>
+### -field Color
 
 <dd>
 <p>A UINT value that specifies whether the mouse pointer can display in color and with transparency (alpha). Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>MaskedColor</b>
+### -field MaskedColor
 
 <dd>
 <p>A UINT value that specifies whether the mouse pointer can display in color and with a mask value in the transparency (alpha) bits. Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 29 bits (0xFFFFFFF8) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that DXGK_POINTERFLAGS contains that can hold a 32-bit value that identifies mouse pointer capabilities.</p>

@@ -57,7 +57,7 @@ VOID KStrReferenceDeviceObject(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to a device extension of the device's PDO.</p>

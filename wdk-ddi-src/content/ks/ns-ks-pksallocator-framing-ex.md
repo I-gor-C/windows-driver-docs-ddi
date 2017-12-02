@@ -58,31 +58,31 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>CountItems</b>
+### -field CountItems
 
 <dd>
 <p>Specifies the number of framing items that are present in the <b>FramingItem</b> array.</p>
 </dd>
 
-### -field <b>PinFlags</b>
+### -field PinFlags
 
 <dd>
 <p>Reserved, set to zero.</p>
 </dd>
 
-### -field <b>OutputCompression</b>
+### -field OutputCompression
 
 <dd>
 <p>Points to a structure of type <a href="stream.ks_compression">KS_COMPRESSION</a> that defines the frame ratio for transforms that change the size of a frame.</p>
 </dd>
 
-### -field <b>PinWeight</b>
+### -field PinWeight
 
 <dd>
 <p>This pin framing's weight graph-wide. Reserved, set to zero.</p>
 </dd>
 
-### -field <b>FramingItem</b>
+### -field FramingItem
 
 <dd>
 <p>An array of <a href="stream.ks_framing_item">KS_FRAMING_ITEM</a> structures specifying the actual framing items.</p>

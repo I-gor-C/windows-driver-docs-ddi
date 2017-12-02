@@ -94,43 +94,43 @@ typedef struct _KMDDOD_INITIALIZATION_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>A positive integer that indicates the version of the functional interface implemented by the KMDOD. The KMDOD must set this member to <b>DXGKDDI_INTERFACE_VERSION</b>, which is defined in Dispmprt.h.</p>
 </dd>
 
-### -field <b>DxgkDdiAddDevice</b>
+### -field DxgkDdiAddDevice
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiStartDevice</b>
+### -field DxgkDdiStartDevice
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiStopDevice</b>
+### -field DxgkDdiStopDevice
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddistopdevice">DxgkDdiStopDevice</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiRemoveDevice</b>
+### -field DxgkDdiRemoveDevice
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddiremovedevice">DxgkDdiRemoveDevice</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiDispatchIoRequest</b>
+### -field DxgkDdiDispatchIoRequest
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddidispatchiorequest">DxgkDdiDispatchIoRequest</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiInterruptRoutine</b>
+### -field DxgkDdiInterruptRoutine
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddiinterruptroutine">DxgkDdiInterruptRoutine</a> function.</p>
@@ -138,7 +138,7 @@ typedef struct _KMDDOD_INITIALIZATION_DATA {
 <div> </div>
 </dd>
 
-### -field <b>DxgkDdiDpcRoutine</b>
+### -field DxgkDdiDpcRoutine
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddidpcroutine">DxgkDdiDpcRoutine</a> function.</p>
@@ -146,139 +146,139 @@ typedef struct _KMDDOD_INITIALIZATION_DATA {
 <div> </div>
 </dd>
 
-### -field <b>DxgkDdiQueryChildRelations</b>
+### -field DxgkDdiQueryChildRelations
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiQueryChildStatus</b>
+### -field DxgkDdiQueryChildStatus
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddiquerychildstatus">DxgkDdiQueryChildStatus</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiQueryDeviceDescriptor</b>
+### -field DxgkDdiQueryDeviceDescriptor
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddiquerydevicedescriptor">DxgkDdiQueryDeviceDescriptor</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiSetPowerState</b>
+### -field DxgkDdiSetPowerState
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddisetpowerstate">DxgkDdiSetPowerState</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiNotifyAcpiEvent</b>
+### -field DxgkDdiNotifyAcpiEvent
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddinotifyacpievent">DxgkDdiNotifyAcpiEvent</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiResetDevice</b>
+### -field DxgkDdiResetDevice
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddiresetdevice">DxgkDdiResetDevice</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiUnload</b>
+### -field DxgkDdiUnload
 
 <dd>
 <p>A pointer to the KMDOD's <a href="..\dispmprt\nc-dispmprt-dxgkddi-unload.md">DxgkDdiUnload</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiQueryInterface</b>
+### -field DxgkDdiQueryInterface
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddiqueryinterface">DxgkDdiQueryInterface</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiControlEtwLogging</b>
+### -field DxgkDdiControlEtwLogging
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddicontroletwlogging">DxgkDdiControlEtwLogging</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiQueryAdapterInfo</b>
+### -field DxgkDdiQueryAdapterInfo
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiSetPalette</b>
+### -field DxgkDdiSetPalette
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddisetpalette">DxgkDdiSetPalette</a> function that sets the palette for the display.</p>
 </dd>
 
-### -field <b>DxgkDdiSetPointerPosition</b>
+### -field DxgkDdiSetPointerPosition
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddisetpointerposition">DxgkDdiSetPointerPosition</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiSetPointerShape</b>
+### -field DxgkDdiSetPointerShape
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddisetpointershape">DxgkDdiSetPointerShape</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiEscape</b>
+### -field DxgkDdiEscape
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddiescape">DxgkDdiEscape</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiCollectDbgInfo</b>
+### -field DxgkDdiCollectDbgInfo
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddicollectdbginfo">DxgkDdiCollectDbgInfo</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiIsSupportedVidPn</b>
+### -field DxgkDdiIsSupportedVidPn
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddiissupportedvidpn">DxgkDdiIsSupportedVidPn</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiRecommendFunctionalVidPn</b>
+### -field DxgkDdiRecommendFunctionalVidPn
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddirecommendfunctionalvidpn">DxgkDdiRecommendFunctionalVidPn</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiEnumVidPnCofuncModality</b>
+### -field DxgkDdiEnumVidPnCofuncModality
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddienumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiSetVidPnSourceVisibility</b>
+### -field DxgkDdiSetVidPnSourceVisibility
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddisetvidpnsourcevisibility">DxgkDdiSetVidPnSourceVisibility</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiCommitVidPn</b>
+### -field DxgkDdiCommitVidPn
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddicommitvidpn">DxgkDdiCommitVidPn</a>  function.</p>
 </dd>
 
-### -field <b>DxgkDdiUpdateActiveVidPnPresentPath</b>
+### -field DxgkDdiUpdateActiveVidPnPresentPath
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddiupdateactivevidpnpresentpath">DxgkDdiUpdateActiveVidPnPresentPath</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiRecommendMonitorModes</b>
+### -field DxgkDdiRecommendMonitorModes
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddirecommendmonitormodes">DxgkDdiRecommendMonitorModes</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiGetScanLine</b>
+### -field DxgkDdiGetScanLine
 
 <dd>
 <p>A pointer to the KMDOD's <a href="display.dxgkddigetscanline">DxgkDdiGetScanLine</a> function.</p>
@@ -286,49 +286,49 @@ typedef struct _KMDDOD_INITIALIZATION_DATA {
 <div> </div>
 </dd>
 
-### -field <b>DxgkDdiQueryVidPnHWCapability</b>
+### -field DxgkDdiQueryVidPnHWCapability
 
 <dd>
 <p>
       A pointer to the KMDOD's <a href="display.dxgkddiqueryvidpnhwcapability">DxgkDdiQueryVidPnHWCapability</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiPresentDisplayOnly</b>
+### -field DxgkDdiPresentDisplayOnly
 
 <dd>
 <p>
       A pointer to the KMDOD's <a href="display.dxgkddiqueryvidpnhwcapability">DxgkDdiQueryVidPnHWCapability</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiStopDeviceAndReleasePostDisplayOwnership</b>
+### -field DxgkDdiStopDeviceAndReleasePostDisplayOwnership
 
 <dd>
 <p>
       A pointer to the KMDOD's <a href="display.dxgkddireleasepostdisplayownership">DxgkDdiStopDeviceAndReleasePostDisplayOwnership</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiSystemDisplayEnable</b>
+### -field DxgkDdiSystemDisplayEnable
 
 <dd>
 <p>
       A pointer to the KMDOD's <a href="display.dxgkddisystemdisplayenable">DxgkDdiSystemDisplayEnable</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiSystemDisplayWrite</b>
+### -field DxgkDdiSystemDisplayWrite
 
 <dd>
 <p>
       A pointer to the KMDOD's <a href="display.dxgkddisystemdisplaywrite">DxgkDdiSystemDisplayWrite</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiGetChildContainerId</b>
+### -field DxgkDdiGetChildContainerId
 
 <dd>
 <p>
       A pointer to the KMDOD's <a href="display.dxgkddigetchildcontainerid">DxgkDdiGetChildContainerId</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiControlInterrupt</b>
+### -field DxgkDdiControlInterrupt
 
 <dd>
 <p>
@@ -337,21 +337,21 @@ typedef struct _KMDDOD_INITIALIZATION_DATA {
 <div> </div>
 </dd>
 
-### -field <b>DxgkDdiSetPowerComponentFState</b>
+### -field DxgkDdiSetPowerComponentFState
 
 <dd>
 <p>
       A pointer to the KMDOD's <a href="display.dxgkddisetpowercomponentfstate">DxgkDdiSetPowerComponentFState</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiPowerRuntimeControlRequest</b>
+### -field DxgkDdiPowerRuntimeControlRequest
 
 <dd>
 <p>
       A pointer to the KMDOD's <a href="display.dxgkddipowerruntimecontrolrequest">DxgkDdiPowerRuntimeControlRequest</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiNotifySurpriseRemoval</b>
+### -field DxgkDdiNotifySurpriseRemoval
 
 <dd>
 <p>

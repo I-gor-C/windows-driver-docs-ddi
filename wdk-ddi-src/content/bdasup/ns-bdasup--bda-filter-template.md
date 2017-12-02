@@ -56,19 +56,19 @@ typedef struct _BDA_FILTER_TEMPLATE {
 ## -struct-fields
 <dl>
 
-### -field <b>pFilterDescriptor</b>
+### -field pFilterDescriptor
 
 <dd>
 <p>Points to a KSFILTER_DESCRIPTOR structure that describes a template for a filter for the BDA device. </p>
 </dd>
 
-### -field <b>ulcPinPairs</b>
+### -field ulcPinPairs
 
 <dd>
 <p>Number of pairs of pins in the <b>pPinPairs</b> array.</p>
 </dd>
 
-### -field <b>pPinPairs</b>
+### -field pPinPairs
 
 <dd>
 <p>Array of BDA_PIN_PAIRING structures that describe the topology between a pair of the filter's input and output pins. </p>

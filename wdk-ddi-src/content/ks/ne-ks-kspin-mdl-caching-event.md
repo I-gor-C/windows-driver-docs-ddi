@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPIN_MDL_CACHING_NOTIFY_CLEANUP"></a><a id="kspin_mdl_caching_notify_cleanup"></a><b>KSPIN_MDL_CACHING_NOTIFY_CLEANUP</b>
+### -field KSPIN_MDL_CACHING_NOTIFY_CLEANUP
 
 <dd>
 <p>This value is used internally by the operating system.</p>
 </dd>
 
-### -field <a id="KSPIN_MDL_CACHING_NOTIFY_CLEANALL_WAIT"></a><a id="kspin_mdl_caching_notify_cleanall_wait"></a><b>KSPIN_MDL_CACHING_NOTIFY_CLEANALL_WAIT</b>
+### -field KSPIN_MDL_CACHING_NOTIFY_CLEANALL_WAIT
 
 <dd>
 <p>This value is used internally by the operating system.</p>
 </dd>
 
-### -field <a id="KSPIN_MDL_CACHING_NOTIFY_CLEANALL_NOWAIT"></a><a id="kspin_mdl_caching_notify_cleanall_nowait"></a><b>KSPIN_MDL_CACHING_NOTIFY_CLEANALL_NOWAIT</b>
+### -field KSPIN_MDL_CACHING_NOTIFY_CLEANALL_NOWAIT
 
 <dd>
 <p>This value is used internally by the operating system.</p>
 </dd>
 
-### -field <a id="KSPIN_MDL_CACHING_NOTIFY_ADDSAMPLE"></a><a id="kspin_mdl_caching_notify_addsample"></a><b>KSPIN_MDL_CACHING_NOTIFY_ADDSAMPLE</b>
+### -field KSPIN_MDL_CACHING_NOTIFY_ADDSAMPLE
 
 <dd>
 <p>This value is used internally by the operating system.</p>

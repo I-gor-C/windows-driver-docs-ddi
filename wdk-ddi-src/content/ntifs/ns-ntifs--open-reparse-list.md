@@ -7,7 +7,7 @@ old-location: ifsk\open_reparse_list.htm
 old-project: ifsk
 ms.assetid: 2477F904-A470-4FB0-83D8-0264A4838C12
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: OPEN_REPARSE_LIST, OPEN_REPARSE_LIST, *POPEN_REPARSE_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef struct _OPEN_REPARSE_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>OpenReparseList</b>
+### -field OpenReparseList
 
 <dd>
 <p> A pointer to a list of <b>OPEN_REPARSE_LIST_ENTRY</b>

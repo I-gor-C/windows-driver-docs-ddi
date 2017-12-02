@@ -59,31 +59,31 @@ typedef enum _KBUGCHECK_DUMP_IO_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="KbDumpIoInvalid"></a><a id="kbdumpioinvalid"></a><a id="KBDUMPIOINVALID"></a><b>KbDumpIoInvalid</b>
+### -field KbDumpIoInvalid
 
 <dd>
 <p>Reserved for system use. Do not use.</p>
 </dd>
 
-### -field <a id="KbDumpIoHeader"></a><a id="kbdumpioheader"></a><a id="KBDUMPIOHEADER"></a><b>KbDumpIoHeader</b>
+### -field KbDumpIoHeader
 
 <dd>
 <p>Specifies that crash dump data is header information.</p>
 </dd>
 
-### -field <a id="KbDumpIoBody"></a><a id="kbdumpiobody"></a><a id="KBDUMPIOBODY"></a><b>KbDumpIoBody</b>
+### -field KbDumpIoBody
 
 <dd>
 <p>Specifies that the crash dump data is part of the main body of the crash dump, such as the memory state at the time of the bug check.</p>
 </dd>
 
-### -field <a id="KbDumpIoSecondaryData"></a><a id="kbdumpiosecondarydata"></a><a id="KBDUMPIOSECONDARYDATA"></a><b>KbDumpIoSecondaryData</b>
+### -field KbDumpIoSecondaryData
 
 <dd>
 <p>Specifies that the crash dump data is data returned by a <a href="..\wdm\nc-wdm-kbugcheck-reason-callback-routine.md">BugCheckSecondaryDumpDataCallback</a> routine.</p>
 </dd>
 
-### -field <a id="KbDumpIoComplete"></a><a id="kbdumpiocomplete"></a><a id="KBDUMPIOCOMPLETE"></a><b>KbDumpIoComplete</b>
+### -field KbDumpIoComplete
 
 <dd>
 <p>Specifies that the crash dump data has been completely written.</p>

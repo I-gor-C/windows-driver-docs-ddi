@@ -56,13 +56,13 @@ typedef struct _DEVICE_DATA_SET_RANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>StartingOffset</b>
+### -field StartingOffset
 
 <dd>
 <p>Contains the starting offset, in bytes, of the data set range. The offset value must be block aligned.</p>
 </dd>
 
-### -field <b>LengthInBytes</b>
+### -field LengthInBytes
 
 <dd>
 <p>Contains the length, in bytes, of the data set range. The length value must be block aligned.</p>

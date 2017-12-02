@@ -69,7 +69,7 @@ typedef struct IDDCX_FRAME_STATISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -77,14 +77,14 @@ typedef struct IDDCX_FRAME_STATISTICS {
                  </p>
 </dd>
 
-### -field <b>PresentationFrameNumber</b>
+### -field PresentationFrameNumber
 
 <dd>
 <p>
                      The frame number provided in the ReleaseAndAcquireBuffer call</p>
 </dd>
 
-### -field <b>FrameStatus</b>
+### -field FrameStatus
 
 <dd>
 <p>
@@ -92,13 +92,13 @@ typedef struct IDDCX_FRAME_STATISTICS {
                  </p>
 </dd>
 
-### -field <b>ReEncodeNumber</b>
+### -field ReEncodeNumber
 
 <dd>
 <p>Zero based number to indicate the number of times the same frame has been encoded and sent. Re-encodes can be the result of the OS providing the same frame and frame number to the driver to encode or the driver having to re-encode outside of the normal OS presentation to satisfy the protocol.</p>
 </dd>
 
-### -field <b>FrameSliceTotal</b>
+### -field FrameSliceTotal
 
 <dd>
 <p>
@@ -106,7 +106,7 @@ typedef struct IDDCX_FRAME_STATISTICS {
                  </p>
 </dd>
 
-### -field <b>CurrentSlice</b>
+### -field CurrentSlice
 
 <dd>
 <p>
@@ -114,7 +114,7 @@ typedef struct IDDCX_FRAME_STATISTICS {
                  </p>
 </dd>
 
-### -field <b>FrameAcquireQpcTime</b>
+### -field FrameAcquireQpcTime
 
 <dd>
 <p>
@@ -122,7 +122,7 @@ typedef struct IDDCX_FRAME_STATISTICS {
                  </p>
 </dd>
 
-### -field <b>FrameProcessingStepsCount</b>
+### -field FrameProcessingStepsCount
 
 <dd>
 <p>
@@ -130,7 +130,7 @@ typedef struct IDDCX_FRAME_STATISTICS {
                  </p>
 </dd>
 
-### -field <b>pFrameProcessingStep</b>
+### -field pFrameProcessingStep
 
 <dd>
 <p>
@@ -138,7 +138,7 @@ typedef struct IDDCX_FRAME_STATISTICS {
                  </p>
 </dd>
 
-### -field <b>SendStartQpcTime</b>
+### -field SendStartQpcTime
 
 <dd>
 <p>
@@ -147,7 +147,7 @@ typedef struct IDDCX_FRAME_STATISTICS {
 <div> </div>
 </dd>
 
-### -field <b>SendStopQpcTime</b>
+### -field SendStopQpcTime
 
 <dd>
 <p>
@@ -156,7 +156,7 @@ typedef struct IDDCX_FRAME_STATISTICS {
 <div> </div>
 </dd>
 
-### -field <b>SendCompleteQpcTime</b>
+### -field SendCompleteQpcTime
 
 <dd>
 <p>
@@ -164,7 +164,7 @@ typedef struct IDDCX_FRAME_STATISTICS {
                  </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>
@@ -172,7 +172,7 @@ typedef struct IDDCX_FRAME_STATISTICS {
                  </p>
 </dd>
 
-### -field <b>ProcessedPixelCount</b>
+### -field ProcessedPixelCount
 
 <dd>
 <p>
@@ -180,7 +180,7 @@ typedef struct IDDCX_FRAME_STATISTICS {
                  The total number of pixels processed in this frame</p>
 </dd>
 
-### -field <b>FrameSizeInBytes</b>
+### -field FrameSizeInBytes
 
 <dd>
 <p>

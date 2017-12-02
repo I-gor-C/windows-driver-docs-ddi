@@ -54,7 +54,7 @@ typedef struct _SM_SetRNIDMgmtInfo_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>MgmtInfo</b>
+### -field MgmtInfo
 
 <dd>
 <p>A structure of type HBAFC3MgmtInfo that holds FC3 management information. This information is used to configure the fibre channel adapter.</p>

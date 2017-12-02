@@ -55,13 +55,13 @@ req.iface:
 ## -parameters
 <dl>
 
-### -param <i>NotifyRoutine</i> [in]
+### -param NotifyRoutine [in]
 
 <dd>
 <p>A pointer to the caller-implemented <a href="..\ntddk\nc-ntddk-pload-image-notify-routine.md">PLOAD_IMAGE_NOTIFY_ROUTINE</a> callback routine for load-image notifications.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Supplies a bitmask of flags that control the callback function. Here are the possible values:</p>

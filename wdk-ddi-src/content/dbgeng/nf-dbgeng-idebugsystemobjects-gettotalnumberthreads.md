@@ -7,7 +7,7 @@ old-location: debugger\gettotalnumberthreads.htm
 old-project: debugger
 ms.assetid: dce67b78-a5e0-4664-b183-f462bcd773c8
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSystemObjects, GetTotalNumberThreads, IDebugSystemObjects::GetTotalNumberThreads
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ HRESULT GetTotalNumberThreads(
 ## -parameters
 <dl>
 
-### -param <i>Total</i> [out]
+### -param Total [out]
 
 <dd>
 <p>Receives the total number of threads for all the processes in the current target.</p>
 </dd>
 
-### -param <i>LargestProcess</i> [out]
+### -param LargestProcess [out]
 
 <dd>
 <p>Receives the largest number of threads in any process for the current target.</p>
@@ -69,7 +69,7 @@ HRESULT GetTotalNumberThreads(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

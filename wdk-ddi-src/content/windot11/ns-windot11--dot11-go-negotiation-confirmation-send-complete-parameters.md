@@ -7,7 +7,7 @@ old-location: netvista\dot11_go_negotiation_confirmation_send_complete_parameter
 old-project: netvista
 ms.assetid: CD8427DB-256C-4C34-8D14-2C1AD4C297ED
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct _DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Specifies the type, revision and size of the <b>DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following:</p>
@@ -83,31 +83,31 @@ typedef struct _DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>PeerDeviceAddress</b>
+### -field PeerDeviceAddress
 
 <dd>
 <p>The device address of the Peer-to-Peer (P2P) Wi-Fi Direct (WFD) device that the GO negotiation confirmation was sent to.</p>
 </dd>
 
-### -field <b>DialogToken</b>
+### -field DialogToken
 
 <dd>
 <p>The dialog token from the GO negotiation  confirmation packet. This must match the dialog token sent with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451803">OID_DOT11_WFD_SEND_GO_NEGOTIATION_CONFIRMATION</a> request.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The status of the request send attempt. Set to <b>NDIS_STATUS_SUCCESS</b> if the packet was successfully transmitted.</p>
 </dd>
 
-### -field <b>uIEsOffset</b>
+### -field uIEsOffset
 
 <dd>
 <p>The offset, in bytes,  of the array of additional information elements (IEs) which were included in the the GO negotiation confirmation packet. This offset is from the start of the buffer that contains this structure.</p>
 </dd>
 
-### -field <b>uIEsLength</b>
+### -field uIEsLength
 
 <dd>
 <p>The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.</p>

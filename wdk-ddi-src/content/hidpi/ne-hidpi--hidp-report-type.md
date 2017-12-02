@@ -56,19 +56,19 @@ typedef enum _HIDP_REPORT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="HidP_Input"></a><a id="hidp_input"></a><a id="HIDP_INPUT"></a><b>HidP_Input</b>
+### -field HidP_Input
 
 <dd>
 <p>Indicates an input report.</p>
 </dd>
 
-### -field <a id="HidP_Output"></a><a id="hidp_output"></a><a id="HIDP_OUTPUT"></a><b>HidP_Output</b>
+### -field HidP_Output
 
 <dd>
 <p>Indicates an output report.</p>
 </dd>
 
-### -field <a id="HidP_Feature"></a><a id="hidp_feature"></a><a id="HIDP_FEATURE"></a><b>HidP_Feature</b>
+### -field HidP_Feature
 
 <dd>
 <p>Indicates a feature report.</p>

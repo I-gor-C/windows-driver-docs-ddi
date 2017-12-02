@@ -55,13 +55,13 @@ typedef struct _DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>[in] A Boolean value that specifies whether the driver should use the <b>SourceRect</b> member or the entire input surface as the source. The default value is <b>FALSE</b>, which indicates that the entire input surface is the source. </p>
 </dd>
 
-### -field <b>SourceRect</b>
+### -field SourceRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure that specifies the source rectangle in the coordinates of the input surface. This member is relevant only when the <b>Enable</b> member is set to <b>TRUE</b>. The default value is (0,0,0,0). </p>

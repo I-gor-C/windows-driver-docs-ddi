@@ -62,31 +62,31 @@ NTSTATUS EvtSerCxControl(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A WDFDEVICE handle to the framework device object that represents the serial controller.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A WDFREQUEST handle to the framework request object that represents the I/O control request.</p>
 </dd>
 
-### -param <i>OutputBufferLength</i> [in]
+### -param OutputBufferLength [in]
 
 <dd>
 <p>Specifies the length, in bytes, of the output buffer for the I/O control request specified by the <i>Request</i> parameter.</p>
 </dd>
 
-### -param <i>InputBufferLength</i> [in]
+### -param InputBufferLength [in]
 
 <dd>
 <p>Specifies the length, in bytes, of the input buffer for the I/O control request specified by the <i>Request</i> parameter.</p>
 </dd>
 
-### -param <i>IoControlCode</i> [in]
+### -param IoControlCode [in]
 
 <dd>
 <p>Specifies the IOCTL from the I/O control request specified by the <i>Request</i> parameter.</p>
@@ -109,7 +109,7 @@ NTSTATUS EvtSerCxControl(
 
 <p>The function type for this callback is declared in Sercx.h, as follows.</p>
 
-<p>To define an <i>EvtSerCxControl</i> callback function that is named <code>MyEvtSerCxControl</code>, you must first provide a function declaration that <a href="NULL">Static Driver Verifier</a> (SDV) and other verification tools require, as follows.</p>
+<p>To define an <i>EvtSerCxControl</i> callback function that is named <code>MyEvtSerCxControl</code>, you must first provide a function declaration that <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV) and other verification tools require, as follows.</p>
 
 <p>Then, implement your callback function as follows.</p>
 

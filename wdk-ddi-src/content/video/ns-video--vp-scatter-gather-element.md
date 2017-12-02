@@ -57,19 +57,19 @@ typedef struct _VP_SCATTER_GATHER_ELEMENT {
 ## -struct-fields
 <dl>
 
-### -field <b>Address</b>
+### -field Address
 
 <dd>
 <p>Specifies the logical address of one scatter/gather element.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Specifies the length, in bytes, of the scatter/gather element.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>

@@ -61,43 +61,43 @@ BOOLEAN ScsiPortWmiDispatchFunction(
 ## -parameters
 <dl>
 
-### -param <i>WmiLibInfo</i> [in]
+### -param WmiLibInfo [in]
 
 <dd>
 <p>Pointer to a <a href="storage.scsi_wmilib_context">SCSI_WMILIB_CONTEXT</a> structure that contains registration information for a miniport driver's data blocks and event blocks and defines entry points for the miniport driver's WMI library callback routines.</p>
 </dd>
 
-### -param <i>MinorFunction</i> [in]
+### -param MinorFunction [in]
 
 <dd>
 <p>Indicates the WMI action to perform. The miniport driver sets <i>MinorFunction</i> to <b>Srb-&gt;WmiSubFunction</b> from the input SRB.</p>
 </dd>
 
-### -param <i>DeviceContext</i> [in]
+### -param DeviceContext [in]
 
 <dd>
 <p>Pointer to a miniport driver-defined context value. The port driver will pass <i>DeviceContext</i> to the miniport driver's <i>HwScsiWmiXxx</i> callback routine. This value would typically point to a HW_DEVICE_EXTENSION structure.</p>
 </dd>
 
-### -param <i>RequestContext</i> [in]
+### -param RequestContext [in]
 
 <dd>
 <p>Pointer to a SCSIWMI_REQUEST_CONTEXT structure that contains context information for the WMI SRB. If the SRB can pend, the miniport driver must allocate this structure from the SRB extension because the request context must remain valid until after <b>ScsiPortWmiPostProcess</b> returns with the final SRB return status and buffer size. <b>ScsiPortWmiDispatchFunction </b>will pass <i>RequestContext</i> to the miniport driver's callback routine that processes this request.</p>
 </dd>
 
-### -param <i>DataPath</i> [in]
+### -param DataPath [in]
 
 <dd>
 <p>Pointer to a GUID that represents the data block associated with the request. The miniport driver sets <i>DataPath</i> to <b>Srb-&gt;DataPath</b> from the input SRB.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size in bytes of the data buffer. The miniport driver sets <i>BufferSize</i> to <b>Srb-&gt;DataTransferLength</b> from the input SRB.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to the data buffer. The miniport driver sets <i>Buffer</i> to <b>Srb-&gt;DataBuffer</b> from the input SRB.</p>

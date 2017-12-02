@@ -56,19 +56,19 @@ typedef struct _WHEA_FIRMWARE_ERROR_RECORD_REFERENCE {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of firmware error record. This member is always set to WHEA_FIRMWARE_RECORD_TYPE_IPFSAL.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>FirmwareRecordId</b>
+### -field FirmwareRecordId
 
 <dd>
 <p>The identifier of the firmware error record.</p>

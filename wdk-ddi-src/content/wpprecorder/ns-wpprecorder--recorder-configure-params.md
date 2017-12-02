@@ -56,13 +56,13 @@ typedef struct _RECORDER_CONFIGURE_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of this structure.</p>
 </dd>
 
-### -field <b>CreateDefaultLog</b>
+### -field CreateDefaultLog
 
 <dd>
 <p>Indicates whether WPP should use the default log for trace messages. TRUE (default), use the default log; FALSE disable the default log.</p>

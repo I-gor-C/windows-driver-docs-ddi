@@ -62,55 +62,55 @@ typedef struct D3DWDDM2_2DDI_SWIZZLE_PATTERN_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>InterleavePatternSourceBits</b>
+### -field InterleavePatternSourceBits
 
 <dd>
 <p>The interleave pattern source bits.</p>
 </dd>
 
-### -field <b>InterleavePatternXORSourceBits</b>
+### -field InterleavePatternXORSourceBits
 
 <dd>
 <p>The interleave pattern XOR source bits.</p>
 </dd>
 
-### -field <b>InterleavePatternXOR2SourceBits</b>
+### -field InterleavePatternXOR2SourceBits
 
 <dd>
 <p>The interleave pattern second XOR source bits.</p>
 </dd>
 
-### -field <b>InterleavePatternXOR3SourceBits</b>
+### -field InterleavePatternXOR3SourceBits
 
 <dd>
 <p>The interleave pattern third XOR source bits.</p>
 </dd>
 
-### -field <b>InterleavePatternXOR4SourceBits</b>
+### -field InterleavePatternXOR4SourceBits
 
 <dd>
 <p>The interleave pattern fourth XOR source bits.</p>
 </dd>
 
-### -field <b>PostambleXORSourceBits</b>
+### -field PostambleXORSourceBits
 
 <dd>
 <p>Postamble XOR source bits.</p>
 </dd>
 
-### -field <b>PostambleXOR2SourceBits</b>
+### -field PostambleXOR2SourceBits
 
 <dd>
 <p>Postamble second XOR source bits.</p>
 </dd>
 
-### -field <b>PostambleXORImmediate</b>
+### -field PostambleXORImmediate
 
 <dd>
 <p>A postamble XOR immediate value. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags. For more information, see the <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm2-0ddi-swizzle-pattern-flags.md">D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS</a> enumeration. </p>

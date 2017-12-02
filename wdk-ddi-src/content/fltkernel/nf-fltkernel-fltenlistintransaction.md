@@ -7,7 +7,7 @@ old-location: ifsk\fltenlistintransaction.htm
 old-project: ifsk
 ms.assetid: c4b82596-824f-488e-96cd-17bd850494e5
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltEnlistInTransaction
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ NTSTATUS FltEnlistInTransaction(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>An opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>Transaction</i> [in]
+### -param Transaction [in]
 
 <dd>
 <p>An opaque transaction pointer for the transaction. </p>
 </dd>
 
-### -param <i>TransactionContext</i> [in]
+### -param TransactionContext [in]
 
 <dd>
 <p>A pointer to the minifilter driver's transaction context. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>NotificationMask</i> [in]
+### -param NotificationMask [in]
 
 <dd>
 <p>Specifies the type of notifications that the filter manager is to send to the minifilter driver, as one or more of the values listed in the following table. This parameter is required and cannot be zero. </p>
@@ -271,4 +271,4 @@ NTSTATUS FltEnlistInTransaction(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnlistInTransaction routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnlistInTransaction routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,13 +56,13 @@ HRESULT WINAPI LogJobInfoForBranchOffice(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd>
 <p>Specifies a handle to the CSR printer.</p>
 </dd>
 
-### -param <i>pJobDataContainer</i> [in]
+### -param pJobDataContainer [in]
 
 <dd>
 <p>Specifies a pointer to an array of <a href="RID">BranchOfficeJobData</a> structures, containing the events to be logged.</p>

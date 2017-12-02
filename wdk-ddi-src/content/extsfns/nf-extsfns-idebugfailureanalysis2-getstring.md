@@ -7,7 +7,7 @@ old-location: debugger\idebugfailureanalysis2_getstring.htm
 old-project: debugger
 ms.assetid: 76F5F3E0-74BF-4DFF-9AA3-A67C03AF56F9
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugFailureAnalysis2, GetString, IDebugFailureAnalysis2::GetString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ PFA_ENTRY GetUlong(
 ## -parameters
 <dl>
 
-### -param <i>Tag</i> [in]
+### -param Tag [in]
 
 <dd>
 <p>A value in the <a href="https://msdn.microsoft.com/library/windows/hardware/jj991810">FA_TAG</a> enumeration.</p>
 </dd>
 
-### -param <i>Str</i> [out]
+### -param Str [out]
 
 <dd>
 <p>A pointer to a buffer that receives the string value from the entry's data block.</p>
 </dd>
 
-### -param <i>MaxSize</i> [in]
+### -param MaxSize [in]
 
 <dd>
 <p>The size, in bytes, of the buffer pointed to by <i>Str</i>.</p>
@@ -129,4 +129,4 @@ PFA_ENTRY GetUlong(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFailureAnalysis2::GetUlong method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFailureAnalysis2::GetUlong method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

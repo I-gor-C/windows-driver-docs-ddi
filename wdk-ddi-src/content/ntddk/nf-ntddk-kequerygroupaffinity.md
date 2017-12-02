@@ -54,10 +54,10 @@ KAFFINITY KeQueryGroupAffinity(
 ## -parameters
 <dl>
 
-### -param <i>GroupNumber</i> [in]
+### -param GroupNumber [in]
 
 <dd>
-<p>The group number. If a multiprocessor system contains <i>n</i> groups, the groups are numbered from 0 to <i>n</i>-1. To obtain the number of active groups in the system, call the <a href="..\ntddk\nf-ntddk-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a> routine. </p>
+<p>The group number. If a multiprocessor system contains <i>n</i> groups, the groups are numbered from 0 to <i>n</i>-1. To obtain the number of active groups in the system, call the <a href="..\wdm\nf-wdm-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a> routine. </p>
 </dd>
 </dl>
 

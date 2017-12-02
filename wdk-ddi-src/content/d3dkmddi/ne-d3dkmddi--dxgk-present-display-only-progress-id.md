@@ -55,13 +55,13 @@ typedef enum _DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_COMPLETE"></a><a id="dxgk_present_displayonly_progress_id_complete"></a><b>DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_COMPLETE</b>
+### -field DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_COMPLETE
 
 <dd>
 <p>The present operation has completed.</p>
 </dd>
 
-### -field <a id="DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_FAILED"></a><a id="dxgk_present_displayonly_progress_id_failed"></a><b>DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_FAILED</b>
+### -field DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_FAILED
 
 <dd>
 <p>An error occurred during the present operation.</p>

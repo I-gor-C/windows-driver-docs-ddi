@@ -56,19 +56,19 @@ typedef struct _D3DDDICB_DEALLOCATE {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A handle to a resource whose associated allocations must be released. If the user-mode display driver uses the array that is specified by <b>HandleList</b> to specify the allocations to release, it sets <b>hResource</b> to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of allocations in the <b>HandleList</b> array. If the user-mode display driver sets the handle in the <b>hResource</b> member to non-<b>NULL</b>, <b>NumAllocations</b> is ignored by the Microsoft Direct3D runtime.</p>
 </dd>
 
-### -field <b>HandleList</b>
+### -field HandleList
 
 <dd>
 <p>[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations. The Direct3D runtime's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-allocatecb.md">pfnAllocateCb</a> function returns these handles. Therefore, the user-mode display driver uses these handles to release the allocations.</p>

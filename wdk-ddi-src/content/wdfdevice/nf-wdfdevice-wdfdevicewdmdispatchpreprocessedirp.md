@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicewdmdispatchpreprocessedirp.htm
 old-project: wdf
 ms.assetid: 83b18680-0b58-4278-87ff-757eb6e76178
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceWdmDispatchPreprocessedIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,16 +57,16 @@ NTSTATUS WdfDeviceWdmDispatchPreprocessedIrp(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>A pointer to an <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure.</p>
+<p>A pointer to an <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure.</p>
 </dd>
 </dl>
 

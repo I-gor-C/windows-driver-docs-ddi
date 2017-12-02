@@ -57,7 +57,7 @@ typedef struct IDDCX_MONITOR_MODE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -65,7 +65,7 @@ typedef struct IDDCX_MONITOR_MODE {
                  </p>
 </dd>
 
-### -field <b>Origin</b>
+### -field Origin
 
 <dd>
 <p>
@@ -73,7 +73,7 @@ typedef struct IDDCX_MONITOR_MODE {
                  </p>
 </dd>
 
-### -field <b>MonitorVideoSignalInfo</b>
+### -field MonitorVideoSignalInfo
 
 <dd>
 <p>

@@ -7,7 +7,7 @@ old-location: ifsk\ioenumeratedeviceobjectlist.htm
 old-project: ifsk
 ms.assetid: ce6cec58-2122-49c3-8c5c-172df2c4dd04
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: IoEnumerateDeviceObjectList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ NTSTATUS IoEnumerateDeviceObjectList(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>A pointer to the driver object for the driver. </p>
 </dd>
 
-### -param <i>DeviceObjectList</i> [out]
+### -param DeviceObjectList [out]
 
 <dd>
 <p>A pointer to a caller-allocated array that receives the device object pointers. This parameter can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>DeviceObjectListSize</i> [in]
+### -param DeviceObjectListSize [in]
 
 <dd>
 <p>Size, in bytes, of the <i>DeviceObjectList</i> array. Can be zero. </p>
 </dd>
 
-### -param <i>ActualNumberDeviceObjects</i> [out]
+### -param ActualNumberDeviceObjects [out]
 
 <dd>
 <p>Actual number of device objects found in the driver object's device object list. Note that if the array at <i>DeviceObjectList</i> is too small, the number of device object pointers that are copied into the array will be less than <i>ActualNumberDeviceObjects</i>. </p>
@@ -170,7 +170,7 @@ NTSTATUS IoEnumerateDeviceObjectList(
 <a href="..\ntifs\nf-ntifs-iogetattacheddevice.md">IoGetAttachedDevice</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iogetattacheddevicereference.md">IoGetAttachedDeviceReference</a>
+<a href="..\wdm\nf-wdm-iogetattacheddevicereference.md">IoGetAttachedDeviceReference</a>
 </dt>
 <dt>
 <a href="..\ntifs\nf-ntifs-iogetlowerdeviceobject.md">IoGetLowerDeviceObject</a>
@@ -184,4 +184,4 @@ NTSTATUS IoEnumerateDeviceObjectList(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoEnumerateDeviceObjectList routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoEnumerateDeviceObjectList routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

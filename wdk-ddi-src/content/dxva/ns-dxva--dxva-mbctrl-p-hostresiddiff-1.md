@@ -60,13 +60,13 @@ typedef struct _DXVA_MBctrl_P_HostResidDiff_1 {
 ## -struct-fields
 <dl>
 
-### -field <b>wMBaddress</b>
+### -field wMBaddress
 
 <dd>
 <p>Specifies the macroblock address of the current macroblock in raster scan order. For examples of macroblock addresses see <a href="https://msdn.microsoft.com/f04c5462-db7c-4917-b8ef-22a630c82994">macroblock addresses</a>.</p>
 </dd>
 
-### -field <b>wMBtype</b>
+### -field wMBtype
 
 <dd>
 <p>Specifies the type of macroblock being processed. The following bits define the contents of <b>wMBtype</b>.</p>
@@ -180,13 +180,13 @@ typedef struct _DXVA_MBctrl_P_HostResidDiff_1 {
 <p> </p>
 </dd>
 
-### -field <b>dwMB_SNL</b>
+### -field dwMB_SNL
 
 <dd>
 <p>Specifies the number of skipped macroblocks to be generated following the current macroblock and indicates the location of the residual difference data for the blocks of the current macroblock. This member contains two variables: <i>MBskipsFollowing</i> in the most significant 8 bits, and <i>MBdataLocation</i> in the least significant 24 bits. <i>MBskipsFollowing</i> indicates the number of skipped macroblocks to be generated following the current macroblock. <i>MBdataLocation</i> is an index into the residual difference block data buffer. This index indicates the location of the residual difference data for the blocks of the current macroblock, expressed as a multiple of 32 bits.</p>
 </dd>
 
-### -field <b>wPatternCode</b>
+### -field wPatternCode
 
 <dd>
 <p>Indicates whether <a href="https://msdn.microsoft.com/7a416992-04d3-4307-83b3-9fb94c17d60e">residual difference data</a> is sent for each block in the current macroblock. </p>
@@ -194,7 +194,7 @@ typedef struct _DXVA_MBctrl_P_HostResidDiff_1 {
 <p>If the <b>bConfigSpatialResidInterleaved </b>member of DXVA_ConfigPictureDecode is 1, host-based residual differences are sent in a chroma-interleaved form matching that of the YUV pixel format in use. In this case, each Cb and spatially corresponding Cr pair of blocks is treated as a single residual difference structure unit. This does not alter the value or meaning of <b>wPatternCode</b>, but it implies that both members of each pair of Cb and Cr data blocks are sent whenever either of these data blocks has the corresponding bit set in <b>wPatternCode</b>. If the bit in <b>wPatternCode</b> for a particular data block is zero, the corresponding residual difference data values must be sent as zero whenever this pairing necessitates sending a residual difference data block for a block with a <b>wPatternCode</b> bit equal to zero.</p>
 </dd>
 
-### -field <b>wPC_Overflow</b>
+### -field wPC_Overflow
 
 <dd>
 <p>Specifies which blocks of the macroblock use overflow residual difference data.</p>
@@ -203,13 +203,13 @@ typedef struct _DXVA_MBctrl_P_HostResidDiff_1 {
  </p>
 </dd>
 
-### -field <b>dwReservedBits2</b>
+### -field dwReservedBits2
 
 <dd>
 <p>Reserved bits used for packing and alignment. Must be zero.</p>
 </dd>
 
-### -field <b>MVector</b>
+### -field MVector
 
 <dd>
 <p>An array containing the value of the motion vector(s) for the macroblock, each motion vector is represented by a <a href="..\dxva\ns-dxva--dxva-mvvalue.md">DXVA_MVvalue</a> structure.</p>

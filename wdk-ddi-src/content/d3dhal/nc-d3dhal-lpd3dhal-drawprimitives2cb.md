@@ -57,7 +57,7 @@ DWORD APIENTRY D3dDrawPrimitives2(
 ## -parameters
 <dl>
 
-### -param <i>pdp</i> [in]
+### -param pdp [in]
 
 <dd>
 <p>Points to a <a href="..\d3dhal\ns-d3dhal--d3dhal-drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a> structure that contains the information required for the driver to render one or more primitives.</p>

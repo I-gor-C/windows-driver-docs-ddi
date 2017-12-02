@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitsetcharacteristics.htm
 old-project: wdf
 ms.assetid: 2937d9f1-f838-4ec4-972d-21ff43097590
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceInitSetCharacteristics
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ VOID WdfDeviceInitSetCharacteristics(
 ## -parameters
 <dl>
 
-### -param <i>DeviceInit</i> [in]
+### -param DeviceInit [in]
 
 <dd>
 <p>A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure.</p>
 </dd>
 
-### -param <i>DeviceCharacteristics</i> [in]
+### -param DeviceCharacteristics [in]
 
 <dd>
 <p>A value that consists of ORed system-defined constants that represent device characteristics. For more information, see the <b>Characteristics</b> member of the <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure.</p>
 </dd>
 
-### -param <i>OrInValues</i> [in]
+### -param OrInValues [in]
 
 <dd>
 <p>A Boolean value. If this value is <b>TRUE</b>, the <i>DeviceCharacteristics</i> value is ORed with existing device characteristics. If the value is <b>FALSE</b>, the <i>DeviceCharacteristics</i> value replaces existing device characteristics.</p>
@@ -157,4 +157,4 @@ VOID WdfDeviceInitSetCharacteristics(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceInitSetCharacteristics method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceInitSetCharacteristics method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

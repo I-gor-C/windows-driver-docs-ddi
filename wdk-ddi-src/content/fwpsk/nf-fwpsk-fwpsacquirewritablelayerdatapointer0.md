@@ -7,7 +7,7 @@ old-location: netvista\fwpsacquirewritablelayerdatapointer0.htm
 old-project: netvista
 ms.assetid: 79816d01-bf27-49d0-b6f1-083b7e87cc4e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsAcquireWritableLayerDataPointer0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ NTSTATUS NTAPI FwpsAcquireWritableLayerDataPointer0(
 ## -parameters
 <dl>
 
-### -param <i>classifyHandle</i> [in]
+### -param classifyHandle [in]
 
 <dd>
 <p>A handle for the classify request.
@@ -69,7 +69,7 @@ NTSTATUS NTAPI FwpsAcquireWritableLayerDataPointer0(
      FwpsAcquireClassifyHandle0</a>.</p>
 </dd>
 
-### -param <i>filterId</i> [in]
+### -param filterId [in]
 
 <dd>
 <p>The value of the 
@@ -80,13 +80,13 @@ NTSTATUS NTAPI FwpsAcquireWritableLayerDataPointer0(
      <a href="netvista.fwps_filter1">FWPS_FILTER1</a>.</p>
 </dd>
 
-### -param <i>flags</i> [in]
+### -param flags [in]
 
 <dd>
 <p>Reserved for future use. Set to zero.</p>
 </dd>
 
-### -param <i>writableLayerData</i> [out]
+### -param writableLayerData [out]
 
 <dd>
 <p>A data buffer that contains the modifiable data for the layer. The supported data types, which are listed in the following Remarks section, are defined as
@@ -94,7 +94,7 @@ NTSTATUS NTAPI FwpsAcquireWritableLayerDataPointer0(
      type.</p>
 </dd>
 
-### -param <i>classifyOut</i> [in, out]
+### -param classifyOut [in, out]
 
 <dd>
 <p>Set to the 
@@ -219,4 +219,4 @@ NTSTATUS NTAPI FwpsAcquireWritableLayerDataPointer0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAcquireWritableLayerDataPointer0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAcquireWritableLayerDataPointer0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

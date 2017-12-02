@@ -61,13 +61,13 @@ typedef struct _ISCSI_PortalInfo {
 ## -struct-fields
 <dl>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>The unique port number associated with this portal.</p>
 </dd>
 
-### -field <b>PortalType</b>
+### -field PortalType
 
 <dd>
 <p>The type of portal. This member can have the following symbolic constant values, which are defined in <i>Iscsimgt.h</i>.</p>
@@ -96,37 +96,37 @@ typedef struct _ISCSI_PortalInfo {
 <p> </p>
 </dd>
 
-### -field <b>Protocol</b>
+### -field Protocol
 
 <dd>
 <p>The portal's transport protocol. Currently, this member must hold the value that is associated with the symbolic constant, TCP. TCP is defined in <i>Iscsimgt.h</i>.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for Microsoft use only.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for Microsoft use only.</p>
 </dd>
 
-### -field <b>IPAddr</b>
+### -field IPAddr
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that indicates the portal's network IP address.</p>
 </dd>
 
-### -field <b>Port</b>
+### -field Port
 
 <dd>
 <p>The socket number for the portal.</p>
 </dd>
 
-### -field <b>PortalTag</b>
+### -field PortalTag
 
 <dd>
 <p>The portal group tag to which the portal belongs.</p>

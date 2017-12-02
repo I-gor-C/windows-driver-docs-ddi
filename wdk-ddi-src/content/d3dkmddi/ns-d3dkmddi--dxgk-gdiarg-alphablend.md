@@ -62,7 +62,7 @@ typedef struct _DXGK_GDIARG_ALPHABLEND {
 ## -struct-fields
 <dl>
 
-### -field <b>SrcRect</b>
+### -field SrcRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure that defines the rectangular area to be copied. This rectangle is specified in the coordinate system of the source surface and is defined by two points: upper left and lower right. The two points that define the rectangle are always well ordered. </p>
@@ -71,7 +71,7 @@ typedef struct _DXGK_GDIARG_ALPHABLEND {
 <p>For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure that defines the rectangular area to be modified. This rectangle is specified in the coordinate system of the destination surface and is defined by two points: upper left and lower right. The rectangle is lower-right exclusive; that is, its lower and right edges are not a part of the bit-block transfer. The two points that define the rectangle are always well ordered. </p>
@@ -79,43 +79,43 @@ typedef struct _DXGK_GDIARG_ALPHABLEND {
 <p>For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>SrcAllocationIndex</b>
+### -field SrcAllocationIndex
 
 <dd>
 <p>[in] An index of the element in the allocation list that specifies the allocation that is referenced by the <b>SrcRect</b> source rectangle.</p>
 </dd>
 
-### -field <b>DstAllocationIndex</b>
+### -field DstAllocationIndex
 
 <dd>
 <p>[in] An index of the element in the allocation list that specifies the allocation that is referenced by the <b>DstRect</b> destination rectangle.</p>
 </dd>
 
-### -field <b>NumSubRects</b>
+### -field NumSubRects
 
 <dd>
 <p>[in] The number of sub-rectangles in the destination surface space that is bounded by the <b>DstRect</b> destination rectangle.</p>
 </dd>
 
-### -field <b>pSubRects</b>
+### -field pSubRects
 
 <dd>
 <p>[in] A pointer to the sub-rectangles in the destination surface space.</p>
 </dd>
 
-### -field <b>SourceConstantAlpha</b>
+### -field SourceConstantAlpha
 
 <dd>
 <p>[in] The constant blend factor to apply to the entire source surface. This value is in the range of [0,255], where 0 is completely transparent and 255 is completely opaque.</p>
 </dd>
 
-### -field <b>SourceHasAlpha</b>
+### -field SourceHasAlpha
 
 <dd>
 <p>[in] Defines whether the surface is assumed to have an alpha channel. If <b>TRUE</b>, the surface is assumed to have an alpha channel; otherwise the value is <b>FALSE</b>.</p>
 </dd>
 
-### -field <b>SrcPitch</b>
+### -field SrcPitch
 
 <dd>
 <p>[in] The pitch of the source surface, in bytes.</p>

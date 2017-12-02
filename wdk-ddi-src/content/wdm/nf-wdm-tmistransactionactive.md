@@ -55,7 +55,7 @@ BOOLEAN TmIsTransactionActive(
 ## -parameters
 <dl>
 
-### -param <i>Transaction</i> [in]
+### -param Transaction [in]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/124105bd-70be-49b1-8ea4-af6ba1f3cf16">transaction object</a>. To obtain this pointer, your component must call <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a> or <a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a> provided.</p>

@@ -60,19 +60,19 @@ NTSTATUS PoFxRegisterComponentPerfStates(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>A handle that represents the registration of the device with PoFx. The device driver previously received this handle from the <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a> routine.</p>
 </dd>
 
-### -param <i>Component</i> [in]
+### -param Component [in]
 
 <dd>
 <p>The index that identifies the component whose performance states will be managed. This parameter is an index into the <b>Components</b> array in the <a href="kernel.po_fx_device">PO_FX_DEVICE</a> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>The flags that modify the behavior of the performance state registration. Set this member to zero or to one of the following flag <b>PO_FX_FLAG_PERF_<i>XXX</i></b> bits:</p>
@@ -84,7 +84,7 @@ NTSTATUS PoFxRegisterComponentPerfStates(
 <tr>
 <td width="40%"><a id="PO_FX_FLAG_PERF_PEP_OPTIONAL"></a><a id="po_fx_flag_perf_pep_optional"></a><dl>
 
-### -param <b>PO_FX_FLAG_PERF_PEP_OPTIONAL</b>
+### -param PO_FX_FLAG_PERF_PEP_OPTIONAL
 
 
 ### -param 0x1
@@ -98,7 +98,7 @@ NTSTATUS PoFxRegisterComponentPerfStates(
 <tr>
 <td width="40%"><a id="PO_FX_FLAG_PERF_QUERY_ON_F0"></a><a id="po_fx_flag_perf_query_on_f0"></a><dl>
 
-### -param <b>PO_FX_FLAG_PERF_QUERY_ON_F0</b>
+### -param PO_FX_FLAG_PERF_QUERY_ON_F0
 
 
 ### -param 0x2
@@ -112,7 +112,7 @@ NTSTATUS PoFxRegisterComponentPerfStates(
 <tr>
 <td width="40%"><a id="PO_FX_FLAG_PERF_QUERY_ON_ALL_IDLE_STATES"></a><a id="po_fx_flag_perf_query_on_all_idle_states"></a><dl>
 
-### -param <b>PO_FX_FLAG_PERF_QUERY_ON_ALL_IDLE_STATES</b>
+### -param PO_FX_FLAG_PERF_QUERY_ON_ALL_IDLE_STATES
 
 
 ### -param 0x4
@@ -127,19 +127,19 @@ NTSTATUS PoFxRegisterComponentPerfStates(
 <p> </p>
 </dd>
 
-### -param <i>ComponentPerfStateCallback</i> [in]
+### -param ComponentPerfStateCallback [in]
 
 <dd>
 <p>A pointer to a  <a href="kernel.componentperfstatecallback">ComponentPerfStateCallback</a> routine. This routine is called when PoFx has completed logging and notifying the PEP about a performance state transition that is initiated by the driver’s call to <a href="..\wdm\nf-wdm-pofxissuecomponentperfstatechange.md">PoFxIssueComponentPerfStateChange</a> or <a href="..\wdm\nf-wdm-pofxissuecomponentperfstatechangemultiple.md">PoFxIssueComponentPerfStateChangeMultiple</a>. This callback may be the same for all components and all devices; PoFx provides the device handle and component index in each completion call.</p>
 </dd>
 
-### -param <i>InputStateInfo</i> [in]
+### -param InputStateInfo [in]
 
 <dd>
 <p>If the driver provides performance state info, this parameter contains a pointer to a driver allocated <a href="..\wdm\ns-wdm--po-fx-component-perf-info.md">PO_FX_COMPONENT_PERF_INFO</a> structure that provides performance state information to PoFx. If the driver requires performance state information from the PEP, this parameter must be set to NULL. </p>
 </dd>
 
-### -param <i>OutputStateInfo</i> [out]
+### -param OutputStateInfo [out]
 
 <dd>
 <p>If the driver requires performance state information from the PEP, after a successful registration this parameter contains a pointer to a <a href="..\wdm\ns-wdm--po-fx-component-perf-info.md">PO_FX_COMPONENT_PERF_INFO</a> structure that provides performance state information defined by the PEP. If the driver provides performance state info, this parameter must be set to NULL. </p>

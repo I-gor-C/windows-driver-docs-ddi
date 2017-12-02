@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Event</b>
+### -field Event
 
 <dd>
 <p>This member is used internally by the operating system.</p>
 </dd>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>This member is used internally by the operating system.</p>

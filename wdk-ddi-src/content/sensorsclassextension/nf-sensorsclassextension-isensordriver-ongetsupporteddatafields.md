@@ -7,7 +7,7 @@ old-location: sensors\isensordriver_ongetsupporteddatafields.htm
 old-project: sensors
 ms.assetid: 5020212e-9e3f-468f-8f7c-77d70a8f024b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorDriver, OnGetSupportedDataFields, ISensorDriver::OnGetSupportedDataFields
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ HRESULT OnGetSupportedDataFields(
 ## -parameters
 <dl>
 
-### -param <i>pwszSensorID</i> 
+### -param pwszSensorID 
 
 <dd>
 <p>LPWSTR that contains the ID for the sensor from which the client application is requesting the data fields list.</p>
 </dd>
 
-### -param <i>ppSupportedDataFields</i> 
+### -param ppSupportedDataFields 
 
 <dd>
 <p>Address of an IPortableDeviceKeyCollection pointer that receives the list of PROPERTYKEY values that represent the supported data fields.</p>

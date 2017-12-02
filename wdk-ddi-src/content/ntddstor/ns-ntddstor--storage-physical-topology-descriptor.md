@@ -58,31 +58,31 @@ typedef struct _STORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the physical topology.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The total size of data in the system.</p>
 </dd>
 
-### -field <b>NodeCount</b>
+### -field NodeCount
 
 <dd>
 <p>The total number of storage nodes in the system.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Indicates if storage in the system is reserved.</p>
 </dd>
 
-### -field <b>Node[ANYSIZE_ARRAY]</b>
+### -field Node[ANYSIZE_ARRAY]
 
 <dd>
 <p>Describes the storage nodes in the system.</p>

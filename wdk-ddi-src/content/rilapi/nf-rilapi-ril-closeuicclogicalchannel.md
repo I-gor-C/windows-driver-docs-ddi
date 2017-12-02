@@ -7,7 +7,7 @@ old-location: netvista\ril_closeuicclogicalchannel.htm
 old-project: netvista
 ms.assetid: 4cc0c9b0-8ddc-408e-bc49-81e5a19843d2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_CloseUiccLogicalChannel
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_CloseUiccLogicalChannel(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwSlotIndex</i> 
+### -param dwSlotIndex 
 
 <dd></dd>
 
-### -param <i>dwChannelId</i> 
+### -param dwChannelId 
 
 <dd></dd>
 </dl>

@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>CreateItemsCount</b>
+### -field CreateItemsCount
 
 <dd>
 <p>Contains the number of items in the following array.</p>
 </dd>
 
-### -field <b>CreateItemsList</b>
+### -field CreateItemsList
 
 <dd>
 <p>Points to an array of <a href="stream.ksobject_create_item">KSOBJECT_CREATE_ITEM</a> structures for base object classes supported by this device object.</p>

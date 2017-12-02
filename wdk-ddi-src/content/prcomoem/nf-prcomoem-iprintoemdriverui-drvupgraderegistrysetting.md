@@ -57,19 +57,19 @@ HRESULT DrvUpgradeRegistrySetting(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> 
+### -param hPrinter 
 
 <dd>
 <p>Caller-supplied printer handle.</p>
 </dd>
 
-### -param <i>pFeature</i> 
+### -param pFeature 
 
 <dd>
 <p>Caller-supplied pointer to a string identifying a printer feature name contained in the printer's <a href="wdkgloss.g#wdkgloss.generic_printer_description__gpd_#wdkgloss.generic_printer_description__gpd_"><i>GPD</i></a> or <a href="wdkgloss.p#wdkgloss.postscript_printer_description__ppd_#wdkgloss.postscript_printer_description__ppd_"><i>PPD</i></a> file.</p>
 </dd>
 
-### -param <i>pOption</i> 
+### -param pOption 
 
 <dd>
 <p>Caller-supplied pointer to a string identifying an option name, associated with the specified feature, contained in the printer's GPD or PPD file.</p>

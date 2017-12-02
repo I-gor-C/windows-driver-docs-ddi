@@ -60,44 +60,44 @@ VOID  StreamClassStreamNotification(
 ## -parameters
 <dl>
 
-### -param <i>NotificationType</i> [in]
+### -param NotificationType [in]
 
 <dd>
 <p>This is an enumeration value that contains the type of notification that the minidriver is sending.</p>
 <p></p>
 <dl>
 
-### -param <a id="StreamRequestComplete"></a><a id="streamrequestcomplete"></a><a id="STREAMREQUESTCOMPLETE"></a><b>StreamRequestComplete</b>
+### -param StreamRequestComplete
 
 <dd>
 <p>Indicates that the minidriver has completed its handling of the stream-oriented stream request block that is pointed to by the optional third argument of this routine, <i>pSrb</i>.</p>
 </dd>
 
-### -param <a id="ReadyForNextStreamDataRequest"></a><a id="readyfornextstreamdatarequest"></a><a id="READYFORNEXTSTREAMDATAREQUEST"></a><b>ReadyForNextStreamDataRequest</b>
+### -param ReadyForNextStreamDataRequest
 
 <dd>
 <p>Indicates that this stream is ready to receive another data request. </p>
 </dd>
 
-### -param <a id="ReadyForNextStreamControlRequest"></a><a id="readyfornextstreamcontrolrequest"></a><a id="READYFORNEXTSTREAMCONTROLREQUEST"></a><b>ReadyForNextStreamControlRequest</b>
+### -param ReadyForNextStreamControlRequest
 
 <dd>
 <p>Indicates that this stream is ready to receive another control request. </p>
 </dd>
 
-### -param <a id="SignalStreamEvent"></a><a id="signalstreamevent"></a><a id="SIGNALSTREAMEVENT"></a><b>SignalStreamEvent</b>
+### -param SignalStreamEvent
 
 <dd>
 <p>Signals that the event specified by the <i>EventEntry</i> parameter has occurred.</p>
 </dd>
 
-### -param <a id="SignalMultipleStreamEvents"></a><a id="signalmultiplestreamevents"></a><a id="SIGNALMULTIPLESTREAMEVENTS"></a><b>SignalMultipleStreamEvents</b>
+### -param SignalMultipleStreamEvents
 
 <dd>
 <p>Signals that all events that match the criteria specified in the <i>EventSet</i> and <i>EventId</i> parameters have occurred.</p>
 </dd>
 
-### -param <a id="DeleteStreamEvent"></a><a id="deletestreamevent"></a><a id="DELETESTREAMEVENT"></a><b>DeleteStreamEvent</b>
+### -param DeleteStreamEvent
 
 <dd>
 <p>Deletes the event specified by the <i>EventEntry</i> parameter.</p>
@@ -105,31 +105,31 @@ VOID  StreamClassStreamNotification(
 </dl>
 </dd>
 
-### -param <i>StreamObject</i> [in]
+### -param StreamObject [in]
 
 <dd>
 <p>Points to the stream object of the stream that the class driver is being notified about.</p>
 </dd>
 
-### -param <i>pSrb</i> 
+### -param pSrb 
 
 <dd>
 <p>Pointer to an <a href="..\strmini\ns-strmini--hw-stream-request-block.md">HW_STREAM_REQUEST_BLOCK</a> structure. Specify only if <i>NotificationType</i> equals <b>StreamRequestComplete</b>. Pointer to the stream request block that the minidriver has completed processing. Once this routine completes, this address is no longer valid. This parameter is optional.</p>
 </dd>
 
-### -param <i>EventEntry</i> 
+### -param EventEntry 
 
 <dd>
 <p>Specify only if <i>NotificationType</i> equals either <b>SignalStreamEvent</b> or <b>DeleteStreamEvent</b>. Pointer to the event to be signaled or deleted. This parameter is optional. </p>
 </dd>
 
-### -param <i>EventSet</i> 
+### -param EventSet 
 
 <dd>
 <p>Identifies the event set against which to match in the event queue for this stream. Specify only if <i>NotificationType</i> equals <b>SignalMultipleStreamEvents</b>. This parameter is optional. </p>
 </dd>
 
-### -param <i>EventId</i> 
+### -param EventId 
 
 <dd>
 <p>Indicates the event ID against which to match in the event queue for this stream. Specify only if <i>NotificationType</i> equals <b>SignalMultipleStreamEvents</b>. This parameter is optional.</p>

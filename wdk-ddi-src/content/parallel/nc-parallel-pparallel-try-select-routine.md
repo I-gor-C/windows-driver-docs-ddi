@@ -7,7 +7,7 @@ old-location: parports\pparallel_try_select_routine.htm
 old-project: parports
 ms.assetid: e7ecc2ac-fb86-40fe-829b-ee5851c6ae5f
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/30/2017
 ms.keywords: RegisterOpRegionHandler
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,26 +55,26 @@ typedef NTSTATUS (*PPARALLEL_TRY_SELECT_ROUTINE)(
 ## -parameters
 <dl>
 
-### -param <i>TrySelectContext</i> [in]
+### -param TrySelectContext [in]
 
 <dd>
 <p>Pointer to the device extension of a parallel port's functional device object (<a href="wdkgloss.f#wdkgloss.fdo#wdkgloss.fdo"><i>FDO</i></a>).</p>
 </dd>
 
-### -param <i>TrySelectCommand</i> [in]
+### -param TrySelectCommand [in]
 
 <dd>
 <p>Pointer to a <a href="..\parallel\ns-parallel--parallel-1284-command.md">PARALLEL_1284_COMMAND</a> structure. The caller specifies the following members:</p>
 <p></p>
 <dl>
 
-### -param <a id="ID"></a><a id="id"></a><b>ID</b>
+### -param ID
 
 <dd>
 <p>Specifies the 1284.3 device ID. </p>
 </dd>
 
-### -param <a id="CommandFlags"></a><a id="commandflags"></a><a id="COMMANDFLAGS"></a><b>CommandFlags</b>
+### -param CommandFlags
 
 <dd>
 <p>Specifies a bitwise OR of zero or more of the following flags:</p>
@@ -181,4 +181,4 @@ typedef NTSTATUS (*PPARALLEL_TRY_SELECT_ROUTINE)(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PPARALLEL_TRY_SELECT_ROUTINE callback function%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PPARALLEL_TRY_SELECT_ROUTINE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

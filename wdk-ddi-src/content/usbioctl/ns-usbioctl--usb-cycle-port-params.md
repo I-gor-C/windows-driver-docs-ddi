@@ -59,13 +59,13 @@ typedef struct _USB_CYCLE_PORT_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>ConnectionIndex</b>
+### -field ConnectionIndex
 
 <dd>
 <p>Specifies the port number starting at 1.</p>
 </dd>
 
-### -field <b>StatusReturned</b>
+### -field StatusReturned
 
 <dd>
 <p>On return, contains the USBD status of the operation.</p>

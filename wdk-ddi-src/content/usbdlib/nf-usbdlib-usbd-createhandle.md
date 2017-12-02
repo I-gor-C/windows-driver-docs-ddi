@@ -60,31 +60,31 @@ NTSTATUS USBD_CreateHandle(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object for the client driver.</p>
 </dd>
 
-### -param <i>TargetDeviceObject</i> [in]
+### -param TargetDeviceObject [in]
 
 <dd>
 <p>Pointer to the next lower device object in the device stack. The client driver receives a pointer to that device object in a previous call to <a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>.</p>
 </dd>
 
-### -param <i>USBDClientContractVersion</i> [in]
+### -param USBDClientContractVersion [in]
 
 <dd>
 <p>The contract version that the client driver supports. <i>USBDClientContractVersion</i> must be  USBD_CLIENT_CONTRACT_VERSION_602. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>PoolTag</i> [in]
+### -param PoolTag [in]
 
 <dd>
 <p>The pool tag used for memory allocations.</p>
 </dd>
 
-### -param <i>USBDHandle</i> [out]
+### -param USBDHandle [out]
 
 <dd>
 <p>Opaque handle that indicates that the client driver was registered with the USB driver stack. For more information, see Remarks.</p>

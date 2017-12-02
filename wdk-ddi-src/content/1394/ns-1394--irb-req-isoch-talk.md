@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_talk.htm
 old-project: IEEE
 ms.assetid: B42852F3-BF64-44F8-8D9C-361D623CE35A
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_ISOCH_TALK, IRB_REQ_ISOCH_TALK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef struct _IRB_REQ_ISOCH_TALK {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>Specifies the resource handle to use for this operation. Resources are acquired through the REQUEST_ISOCH_ALLOCATE_RESOURCES request.</p>
 </dd>
 
-### -field <b>fulFlags</b>
+### -field fulFlags
 
 <dd>
 <p>Reserved. Drivers should set this to zero.</p>
 </dd>
 
-### -field <b>StartTime</b>
+### -field StartTime
 
 <dd>
 <p>Specifies the cycle time to begin operation. This member is used only if the driver specified the RESOURCE_SYNCH_ON_TIME flag when it allocated the resource handle passed in <b>u.IsochTalk.hResource</b>. (The timing resolution is per isochronous cycle, so the <b>CycleOffset</b> member of <b>StartTime</b> is not used.)</p>
@@ -75,7 +75,9 @@ typedef struct _IRB_REQ_ISOCH_TALK {
 </dl>
 
 ## -remarks
+<p>Talking on a channel may begin immediately, or it may be synchronized to an event. If the driver set the RESOURCE_SYNCH_ON_TIME flag on the REQUEST_ISOCH_ALLOCATE_RESOURCES request that returned the resource handle, then the write operation begins on the specified cycle count. Additional synchronization options can be set for each buffer in the ISOCH_DESCRIPTOR structure.</p>
 
+<p>If successful, the request returns a STATUS_SUCCESS value. The call returns immediately, and does not wait for any synchronization events. The bus driver calls the callback the driver provides in ISOCH_DESCRIPTOR to signal that it has finished processing an attached buffer.</p>
 
 ## -requirements
 <table>

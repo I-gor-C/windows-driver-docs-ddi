@@ -55,13 +55,13 @@ NTSTATUS PcRegisterAdapterPowerManagement(
 ## -parameters
 <dl>
 
-### -param <i>pUnknown</i> [in]
+### -param pUnknown [in]
 
 <dd>
 <p>Pointer to an adapter driver object's <a href="com.iunknown">IUnknown</a> interface. The PortCls system driver queries this object for its <a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a> interface.</p>
 </dd>
 
-### -param <i>pvContext1</i> [in]
+### -param pvContext1 [in]
 
 <dd>
 <p>Pointer to the adapter's <a href="wdkgloss.f#wdkgloss.functional_device_object__fdo_#wdkgloss.functional_device_object__fdo_"><i>functional device object (FDO)</i></a>. This parameter is a pointer to a system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> but is cast to type PVOID.</p>

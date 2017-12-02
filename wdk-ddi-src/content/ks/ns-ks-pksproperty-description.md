@@ -58,31 +58,31 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>AccessFlags</b>
+### -field AccessFlags
 
 <dd>
 <p>Specifies the access allowed to this property. A basic-support request sets this member to the bitwise OR of the flags for all the access types that the handler supports for this property. For a list of possible flag values, see <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.</p>
 </dd>
 
-### -field <b>DescriptionSize</b>
+### -field DescriptionSize
 
 <dd>
 <p>Specifies total size in bytes of the KSPROPERTY_DESCRIPTION structure and any values entries that follow it. If the basic-support property request returns no values entries, this member is the size of KSPROPERTY_DESCRIPTION.</p>
 </dd>
 
-### -field <b>PropTypeSet</b>
+### -field PropTypeSet
 
 <dd>
 <p>A structure of type <a href="stream.ksidentifier">KSIDENTIFIER</a>. If supported by the specific property, specifies the type of values contained in this property. This group is uniquely specified by a GUID, such that new types of values may be created without overlapping with extensions to this set. The value types indicate the type of the value (like VT_BOOL, VT_UI4 in the standard set). This is GUID_NULL, with an identifier of zero, if values information is not supported by this property.</p>
 </dd>
 
-### -field <b>MembersListCount</b>
+### -field MembersListCount
 
 <dd>
 <p>Specifies the number of <a href="stream.ksproperty_membersheader">KSPROPERTY_MEMBERSHEADER</a> structures to follow this header.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use. Set to zero.</p>
@@ -96,7 +96,7 @@ typedef struct {
 
 <p>The values information that may follow the KSPROPERTY_DESCRIPTION structure is described by a list of <a href="stream.ksproperty_memberslist">KSPROPERTY_MEMBERSLIST</a> structures, each of which contains data range information.</p>
 
-<p>For more information, see <a href="NULL">KS Properties</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88-aaf9-ff1ddbfd30f7">KS Properties</a>.</p>
 
 ## -requirements
 <table>

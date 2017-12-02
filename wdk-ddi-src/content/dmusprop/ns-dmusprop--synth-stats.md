@@ -60,44 +60,44 @@ typedef struct _SYNTH_STATS {
 ## -struct-fields
 <dl>
 
-### -field <b>ValidStats</b>
+### -field ValidStats
 
 <dd>
 <p>Specifies which members of the SYNTH_STATS structure contain valid data. This member is a bitfield whose value is either zero or a bitwise OR of one or more of the following flag bits:</p>
 <p></p>
 <dl>
 
-### -field <a id="SYNTH_STATS_VOICES"></a><a id="synth_stats_voices"></a>SYNTH_STATS_VOICES
+### -field SYNTH_STATS_VOICES
 
 <dd>
 <p>The <b>Voices</b> field contains valid data.</p>
 </dd>
 
-### -field <a id="SYNTH_STATS_TOTAL_CPU"></a><a id="synth_stats_total_cpu"></a>SYNTH_STATS_TOTAL_CPU
+### -field SYNTH_STATS_TOTAL_CPU
 
 <dd>
 <p>The <b>TotalCPU</b> field contains valid data.</p>
 </dd>
 
-### -field <a id="SYNTH_STATS_CPU_PER_VOICE"></a><a id="synth_stats_cpu_per_voice"></a>SYNTH_STATS_CPU_PER_VOICE
+### -field SYNTH_STATS_CPU_PER_VOICE
 
 <dd>
 <p>The <b>CPUPerVoice</b> field contains valid data.</p>
 </dd>
 
-### -field <a id="SYNTH_STATS_LOST_NOTES"></a><a id="synth_stats_lost_notes"></a>SYNTH_STATS_LOST_NOTES
+### -field SYNTH_STATS_LOST_NOTES
 
 <dd>
 <p>The <b>LostNotes </b>field contains valid data.</p>
 </dd>
 
-### -field <a id="SYNTH_STATS_PEAK_VOLUME"></a><a id="synth_stats_peak_volume"></a>SYNTH_STATS_PEAK_VOLUME
+### -field SYNTH_STATS_PEAK_VOLUME
 
 <dd>
 <p>The <b>PeakVolume </b>field contains valid data.</p>
 </dd>
 
-### -field <a id="SYNTH_STATS_FREE_MEMORY"></a><a id="synth_stats_free_memory"></a>SYNTH_STATS_FREE_MEMORY
+### -field SYNTH_STATS_FREE_MEMORY
 
 <dd>
 <p>The <b>FreeMemory</b> field contains valid data.</p>
@@ -105,37 +105,37 @@ typedef struct _SYNTH_STATS {
 </dl>
 </dd>
 
-### -field <b>Voices</b>
+### -field Voices
 
 <dd>
 <p>Specifies the average number of voices playing.</p>
 </dd>
 
-### -field <b>TotalCPU</b>
+### -field TotalCPU
 
 <dd>
 <p>Specifies the total CPU usage (all voices), which is expressed as a percentage (a fraction multiplied by 100).</p>
 </dd>
 
-### -field <b>CPUPerVoice</b>
+### -field CPUPerVoice
 
 <dd>
 <p>Specifies the CPU usage per voice, which is expressed as a percentage (a fraction multiplied by 100).</p>
 </dd>
 
-### -field <b>LostNotes</b>
+### -field LostNotes
 
 <dd>
-<p>Specifies the number of notes lost. Notes can be dropped if the number of simultaneous voices exceeds the maximum specified by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPERTY_SYNTH_PORTPARAMETERS</a> property. For additional information, see <a href="NULL">Voice Allocation</a>.</p>
+<p>Specifies the number of notes lost. Notes can be dropped if the number of simultaneous voices exceeds the maximum specified by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPERTY_SYNTH_PORTPARAMETERS</a> property. For additional information, see <a href="https://msdn.microsoft.com/fb1e6c36-02b4-41a6-b9c4-09f393d389db">Voice Allocation</a>.</p>
 </dd>
 
-### -field <b>FreeMemory</b>
+### -field FreeMemory
 
 <dd>
 <p>Specifies the amount of free memory in bytes. This is the storage that remains available for downloading additional DLS data resources.</p>
 </dd>
 
-### -field <b>PeakVolume</b>
+### -field PeakVolume
 
 <dd>
 <p>Specifies the peak volume level expressed as decibels multiplied by 100.</p>

@@ -62,37 +62,37 @@ NTSTATUS DxgkCbEvalAcpiMethod(
 ## -parameters
 <dl>
 
-### -param <i>DeviceHandle</i> [in]
+### -param DeviceHandle [in]
 
 <dd>
 <p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
 </dd>
 
-### -param <i>DeviceUid</i> [in]
+### -param DeviceUid [in]
 
 <dd>
 <p>The unique identifier for the ACPI device on which the method will be evaluated. If the ACPI device is a child of the display adapter, this is the <b>ChildUid</b> member of the <a href="..\dispmprt\ns-dispmprt--dxgk-child-descriptor.md">DXGK_CHILD_DESCRIPTOR</a> structure that the display miniport driver filled in during <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a>. If the ACPI device is the display adapter itself, this parameter must be set to DISPLAY_ADAPTER_HW_ID.</p>
 </dd>
 
-### -param <i>AcpiInputBuffer</i> [in]
+### -param AcpiInputBuffer [in]
 
 <dd>
 <p>A pointer to an <a href="acpi.acpi_eval_input_buffer_complex">ACPI_EVAL_INPUT_BUFFER_COMPLEX</a> structure (defined in <i>Acpiioct.h</i>) allocated and filled in by the display miniport driver. The structure contains the arguments that are required by the ACPI method. See the following Remarks section for more information.</p>
 </dd>
 
-### -param <i>AcpiInputSize</i> [in]
+### -param AcpiInputSize [in]
 
 <dd>
 <p>The total size, in bytes, of the buffer pointed to by <i>AcpiInputBuffer</i>.</p>
 </dd>
 
-### -param <i>AcpiOutputBuffer</i> [out]
+### -param AcpiOutputBuffer [out]
 
 <dd>
 <p>A pointer to an ACPI_EVAL_OUTPUT_BUFFER structure (defined in <i>Acpiioct.h</i>) that receives the return value of the ACPI method. This parameter can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>AcpiOutputSize</i> [in]
+### -param AcpiOutputSize [in]
 
 <dd>
 <p>The total size, in bytes, of the buffer pointed to by <i>AcpiOutputBuffer</i>.</p>

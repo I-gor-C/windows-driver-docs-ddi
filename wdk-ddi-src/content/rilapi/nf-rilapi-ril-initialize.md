@@ -7,7 +7,7 @@ old-location: netvista\ril_initialize.htm
 old-project: netvista
 ms.assetid: 7287281b-8c7b-4842-b312-1fff130a5de6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_Initialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,35 +64,35 @@ HRESULT  RIL_Initialize(
 ## -parameters
 <dl>
 
-### -param <i>dwIndex</i> 
+### -param dwIndex 
 
 <dd></dd>
 
-### -param <i>pfnResult</i> 
+### -param pfnResult 
 
 <dd></dd>
 
-### -param <i>pfnNotify</i> 
+### -param pfnNotify 
 
 <dd></dd>
 
-### -param <i>lpdwNotifications</i> 
+### -param lpdwNotifications 
 
 <dd></dd>
 
-### -param <i>dwNotificationCount</i> 
+### -param dwNotificationCount 
 
 <dd></dd>
 
-### -param <i>lpParam</i> 
+### -param lpParam 
 
 <dd></dd>
 
-### -param <i>pwszClientName</i> 
+### -param pwszClientName 
 
 <dd></dd>
 
-### -param <i>lphRil</i> 
+### -param lphRil 
 
 <dd></dd>
 </dl>

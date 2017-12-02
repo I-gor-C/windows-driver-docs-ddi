@@ -7,7 +7,7 @@ old-location: netvista\rilsystemcaps_2.htm
 old-project: netvista
 ms.assetid: d8148f94-d3f0-4578-83a3-024e64c9258b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILSYSTEMCAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SYSTEMCAPS_VOICEDATA"></a><a id="ril_systemcaps_voicedata"></a><b>RIL_SYSTEMCAPS_VOICEDATA</b>
+### -field RIL_SYSTEMCAPS_VOICEDATA
 
 <dd></dd>
 
-### -field <a id="RIL_SYSTEMCAPS_ALL"></a><a id="ril_systemcaps_all"></a><b>RIL_SYSTEMCAPS_ALL</b>
+### -field RIL_SYSTEMCAPS_ALL
 
 <dd></dd>
 </dl>

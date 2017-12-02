@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="ISCSI_IP_ADDRESS_TEXT"></a><a id="iscsi_ip_address_text"></a><b>ISCSI_IP_ADDRESS_TEXT</b>
+### -field ISCSI_IP_ADDRESS_TEXT
 
 <dd>
 <p>The IP address is in dotted decimal text format or in DNS format.</p>
 </dd>
 
-### -field <a id="ISCSI_IP_ADDRESS_IPV4"></a><a id="iscsi_ip_address_ipv4"></a><b>ISCSI_IP_ADDRESS_IPV4</b>
+### -field ISCSI_IP_ADDRESS_IPV4
 
 <dd>
 <p>The IP address is a binary address that complies with version 4 of the IP protocol.</p>
 </dd>
 
-### -field <a id="ISCSI_IP_ADDRESS_IPV6"></a><a id="iscsi_ip_address_ipv6"></a><b>ISCSI_IP_ADDRESS_IPV6</b>
+### -field ISCSI_IP_ADDRESS_IPV6
 
 <dd>
 <p>The IP address is a binary address that complies with version 6 of the IP protocol.</p>
 </dd>
 
-### -field <a id="ISCSI_IP_ADDRESS_EMPTY"></a><a id="iscsi_ip_address_empty"></a><b>ISCSI_IP_ADDRESS_EMPTY</b>
+### -field ISCSI_IP_ADDRESS_EMPTY
 
 <dd>
 <p>No address is specified.</p>

@@ -55,13 +55,13 @@ typedef struct _DXGK_MONITORLINKINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>UsageHints</b>
+### -field UsageHints
 
 <dd>
 <p>Hints to the driver on the intended usage of the display device.</p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Flags which describe the capabilities for driving the monitor.</p>

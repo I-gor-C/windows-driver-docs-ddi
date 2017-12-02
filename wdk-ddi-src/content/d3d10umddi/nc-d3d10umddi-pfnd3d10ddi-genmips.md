@@ -58,13 +58,13 @@ VOID APIENTRY GenMips(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hShaderResourceView</i> [in]
+### -param hShaderResourceView [in]
 
 <dd>
 <p> A handle to the MIP-map texture surface.</p>

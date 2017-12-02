@@ -58,25 +58,25 @@ typedef struct _GENERIC_MAPPING {
 ## -struct-fields
 <dl>
 
-### -field <b>GenericRead</b>
+### -field GenericRead
 
 <dd>
 <p>Describes the specific access rights corresponding to the GENERIC_READ access right.</p>
 </dd>
 
-### -field <b>GenericWrite</b>
+### -field GenericWrite
 
 <dd>
 <p>Describes the specific access rights corresponding to the GENERIC_WRITE access right.</p>
 </dd>
 
-### -field <b>GenericExecute</b>
+### -field GenericExecute
 
 <dd>
 <p>Describes the specific access rights corresponding to the GENERIC_EXECUTE access right.</p>
 </dd>
 
-### -field <b>GenericAll</b>
+### -field GenericAll
 
 <dd>
 <p>Describes the specific access rights corresponding to the GENERIC_ALL access right.</p>

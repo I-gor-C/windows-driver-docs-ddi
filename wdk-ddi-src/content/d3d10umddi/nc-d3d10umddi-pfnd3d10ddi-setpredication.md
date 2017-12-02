@@ -59,19 +59,19 @@ VOID APIENTRY SetPredication(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hQuery</i> [in]
+### -param hQuery [in]
 
 <dd>
 <p> A handle to the query object to set as a predicate. Setting <i>hQuery</i> to <b>NULL</b> indicates "no predication". If <i>hQuery</i> is set to <b>NULL</b>, the driver ignores the value in the <i>PredicateValue</i> parameter; however, the driver should store the predicate value for subsequent requests for the value.</p>
 </dd>
 
-### -param <i>PredicateValue</i> [in]
+### -param PredicateValue [in]
 
 <dd>
 <p> A Boolean value to compare with query data. If the query data is equal to the predicate value, the following rendering and resource manipulation commands are not performed. </p>

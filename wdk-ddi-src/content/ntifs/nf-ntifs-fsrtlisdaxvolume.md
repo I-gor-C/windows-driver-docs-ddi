@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlisdaxvolume.htm
 old-project: ifsk
 ms.assetid: FFCD2329-FD6A-48AE-8E9D-56AA7D79B174
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FsRtlIsDaxVolume
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ BOOLEAN FsRtlIsDaxVolume(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>A file object for a file, on the volume which is being queried.</p>

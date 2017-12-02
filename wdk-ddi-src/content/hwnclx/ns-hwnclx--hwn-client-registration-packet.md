@@ -66,67 +66,67 @@ typedef struct _HWN_CLIENT_REGISTRATION_PACKET {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version of this structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of this structure.</p>
 </dd>
 
-### -field <b>DeviceContextSize</b>
+### -field DeviceContextSize
 
 <dd>
 <p>Size of the driver-defined context structure.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reseved.</p>
 </dd>
 
-### -field <b>ClientInitializeDevice</b>
+### -field ClientInitializeDevice
 
 <dd>
 <p>A pointer to the client driver's implementation of the <a href="..\hwnclx\nc-hwnclx-hwn-client-initialize-device.md">HWN_CLIENT_INITIALIZE_DEVICE</a> callback function.</p>
 </dd>
 
-### -field <b>ClientUnInitializeDevice</b>
+### -field ClientUnInitializeDevice
 
 <dd>
 <p>A pointer to the client driver's implementation of the <a href="..\hwnclx\nc-hwnclx-hwn-client-uninitialize-device.md">HWN_CLIENT_UNINITIALIZE_DEVICE</a> callback function.</p>
 </dd>
 
-### -field <b>ClientQueryDeviceInformation</b>
+### -field ClientQueryDeviceInformation
 
 <dd>
 <p>A pointer to the client driver's implementation of the  <a href="..\hwnclx\nc-hwnclx-hwn-client-query-device-information.md">HWN_CLIENT_QUERY_DEVICE_INFORMATION</a> callback function.</p>
 </dd>
 
-### -field <b>ClientStartDevice</b>
+### -field ClientStartDevice
 
 <dd>
 <p>A pointer to the client driver's implementation of the  <a href="..\hwnclx\nc-hwnclx-hwn-client-start-device.md">HWN_CLIENT_START_DEVICE</a> callback function.</p>
 </dd>
 
-### -field <b>ClientStopDevice</b>
+### -field ClientStopDevice
 
 <dd>
 <p>A pointer to the client driver's implementation of the  <a href="..\hwnclx\nc-hwnclx-hwn-client-stop-device.md">HWN_CLIENT_STOP_DEVICE</a> callback function.</p>
 </dd>
 
-### -field <b>ClientSetHwNState</b>
+### -field ClientSetHwNState
 
 <dd>
 <p>A pointer to the client driver's implementation of the  <a href="..\hwnclx\nc-hwnclx-hwn-client-set-state.md">HWN_CLIENT_SET_STATE</a> callback function.</p>
 </dd>
 
-### -field <b>ClientGetHwNState</b>
+### -field ClientGetHwNState
 
 <dd>
 <p>A pointer to the client driver's implementation of the  <a href="..\hwnclx\nc-hwnclx-hwn-client-get-state.md">HWN_CLIENT_GET_STATE</a> callback function.</p>

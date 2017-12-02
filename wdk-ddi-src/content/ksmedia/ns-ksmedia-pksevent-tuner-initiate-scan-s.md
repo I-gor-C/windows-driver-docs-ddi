@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>EventData</b>
+### -field EventData
 
 <dd>
 <p>A structure of type <a href="stream.kseventdata">KSEVENTDATA</a> that specifies the standard event structure, which contains the event handle that the driver notifies about the scan operation. </p>
 </dd>
 
-### -field <b>StartFrequency</b>
+### -field StartFrequency
 
 <dd>
 <p>The initial frequency, in Hz, for a scan operation. </p>
 </dd>
 
-### -field <b>EndFrequency</b>
+### -field EndFrequency
 
 <dd>
 <p>The final frequency, in Hz, for a scan operation.  </p>

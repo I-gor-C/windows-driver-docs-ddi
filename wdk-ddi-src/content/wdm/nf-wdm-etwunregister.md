@@ -55,7 +55,7 @@ NTSTATUS EtwUnregister(
 ## -parameters
 <dl>
 
-### -param <i>RegHandle</i> [in]
+### -param RegHandle [in]
 
 <dd>
 <p>A pointer to the provider registration handle, which is returned by the <b>EtwRegister</b> function if the event provider registration is successful.  </p>

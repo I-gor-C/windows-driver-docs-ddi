@@ -83,7 +83,7 @@ typedef struct tagTRANSPORTBASICPARMS {
 ## -struct-fields
 <dl>
 
-### -field <b>TimeFormat</b>
+### -field TimeFormat
 
 <dd>
 <p>Indicates the basic time format.</p>
@@ -136,7 +136,7 @@ typedef struct tagTRANSPORTBASICPARMS {
 <p> </p>
 </dd>
 
-### -field <b>TimeReference</b>
+### -field TimeReference
 
 <dd>
 <p>Indicates the basic time reference.</p>
@@ -173,13 +173,13 @@ typedef struct tagTRANSPORTBASICPARMS {
 <p> </p>
 </dd>
 
-### -field <b>Superimpose</b>
+### -field Superimpose
 
 <dd>
 <p>Indicates whether to enable or disable the onscreen display. Specify <b>TRUE</b> to enable, <b>FALSE</b> to disable.</p>
 </dd>
 
-### -field <b>EndStopAction</b>
+### -field EndStopAction
 
 <dd>
 <p>Specifies the stop action.</p>
@@ -216,7 +216,7 @@ typedef struct tagTRANSPORTBASICPARMS {
 <p> </p>
 </dd>
 
-### -field <b>RecordFormat</b>
+### -field RecordFormat
 
 <dd>
 <p>Indicates the basic record format.</p>
@@ -253,73 +253,73 @@ typedef struct tagTRANSPORTBASICPARMS {
 <p> </p>
 </dd>
 
-### -field <b>StepFrames</b>
+### -field StepFrames
 
 <dd>
 <p>Indicates the frame step count.</p>
 </dd>
 
-### -field <b>SetpField</b>
+### -field SetpField
 
 <dd>
 <p>Indicates the field step count.</p>
 </dd>
 
-### -field <b>Preroll</b>
+### -field Preroll
 
 <dd>
 <p>Indicates the preroll amount.</p>
 </dd>
 
-### -field <b>RecPreroll</b>
+### -field RecPreroll
 
 <dd>
 <p>Indicates the record preroll amount.</p>
 </dd>
 
-### -field <b>Postroll</b>
+### -field Postroll
 
 <dd>
 <p>Indicates the postroll amount.</p>
 </dd>
 
-### -field <b>EditDelay</b>
+### -field EditDelay
 
 <dd>
 <p>Indicates the edit delay amount.</p>
 </dd>
 
-### -field <b>PlayTCDelay</b>
+### -field PlayTCDelay
 
 <dd>
 <p>Indicates the play timecode delay amount.</p>
 </dd>
 
-### -field <b>RecTCDelay</b>
+### -field RecTCDelay
 
 <dd>
 <p>Indicates the record timecode delay amount.</p>
 </dd>
 
-### -field <b>EditField</b>
+### -field EditField
 
 <dd>
 <p>Indicates the edit field.</p>
 </dd>
 
-### -field <b>FrameServo</b>
+### -field FrameServo
 
 <dd>
 <p>Specifies the frame servo.</p>
 </dd>
 
-### -field <b>ColorFrameServo</b>
+### -field ColorFrameServo
 
 <dd>
 <p>Specifies the color frame servo.</p>
 </dd>
 
-### -field <b>ServoRef</b>
+### -field ServoRef
 
 <dd>
 <p>Specifies the servo ref.</p>
@@ -364,13 +364,13 @@ typedef struct tagTRANSPORTBASICPARMS {
 <p> </p>
 </dd>
 
-### -field <b>WarnGenlock</b>
+### -field WarnGenlock
 
 <dd>
 <p>Indicates the warn genlock.</p>
 </dd>
 
-### -field <b>SetTracking</b>
+### -field SetTracking
 
 <dd>
 <p>Specifies the tracking.</p>
@@ -407,67 +407,67 @@ typedef struct tagTRANSPORTBASICPARMS {
 <p> </p>
 </dd>
 
-### -field <b>VolumeName</b>
+### -field VolumeName
 
 <dd>
 <p>Specifies the volume name.</p>
 </dd>
 
-### -field <b>Ballistic</b>
+### -field Ballistic
 
 <dd>
 <p>Specifies any proprietary data.</p>
 </dd>
 
-### -field <b>Speed</b>
+### -field Speed
 
 <dd>
 <p>Specifies the speed.</p>
 </dd>
 
-### -field <b>CounterFormat</b>
+### -field CounterFormat
 
 <dd>
 <p>Specifies the counter format.</p>
 </dd>
 
-### -field <b>TunerChannel</b>
+### -field TunerChannel
 
 <dd>
 <p>Indicates the tuner channel.</p>
 </dd>
 
-### -field <b>TunerNumber</b>
+### -field TunerNumber
 
 <dd>
 <p>Indicates the tuner number.</p>
 </dd>
 
-### -field <b>TimerEvent</b>
+### -field TimerEvent
 
 <dd>
 <p>Specifies a timer event.</p>
 </dd>
 
-### -field <b>TimerStartDay</b>
+### -field TimerStartDay
 
 <dd>
 <p>Indicates the timer start-day.</p>
 </dd>
 
-### -field <b>TimerStartTime</b>
+### -field TimerStartTime
 
 <dd>
 <p>Indicates the timer start-time.</p>
 </dd>
 
-### -field <b>TimerStopDay</b>
+### -field TimerStopDay
 
 <dd>
 <p>Indicates the timer stop-day.</p>
 </dd>
 
-### -field <b>TimerStopTime</b>
+### -field TimerStopTime
 
 <dd>
 <p>Indicates the timer stop-time.</p>

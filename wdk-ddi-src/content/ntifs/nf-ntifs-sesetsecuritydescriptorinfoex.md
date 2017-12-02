@@ -7,7 +7,7 @@ old-location: ifsk\sesetsecuritydescriptorinfoex.htm
 old-project: ifsk
 ms.assetid: 90526705-069d-432f-87b1-1efc247aee05
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: SeSetSecurityDescriptorInfoEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,13 +60,13 @@ NTSTATUS SeSetSecurityDescriptorInfoEx(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in, optional]
+### -param Object [in, optional]
 
 <dd>
 <p>Pointer to the object whose security descriptor is to be modified. This is used to update security quota information.</p>
 </dd>
 
-### -param <i>SecurityInformation</i> [in]
+### -param SecurityInformation [in]
 
 <dd>
 <p>Pointer to a value specifying which security information is to be set. Can be a combination of one or more of the following. </p>
@@ -111,19 +111,19 @@ NTSTATUS SeSetSecurityDescriptorInfoEx(
 <p> </p>
 </dd>
 
-### -param <i>SecurityDescriptor</i> [in]
+### -param SecurityDescriptor [in]
 
 <dd>
 <p>The input security descriptor to be applied to the object. The caller of this routine is expected to probe and capture the passed security descriptor before calling, and to release it after calling.</p>
 </dd>
 
-### -param <i>ObjectsSecurityDescriptor</i> [in, out]
+### -param ObjectsSecurityDescriptor [in, out]
 
 <dd>
 <p>Pointer to a pointer to the object's security descriptor. The security descriptor must be in self-relative format. This structure must be deallocated by the caller.</p>
 </dd>
 
-### -param <i>AutoInheritFlags</i> [in]
+### -param AutoInheritFlags [in]
 
 <dd>
 <p>Bitmask that controls automatic inheritance of ACEs. Set to the logical OR of one or more of the following bit flags: </p>
@@ -152,7 +152,7 @@ NTSTATUS SeSetSecurityDescriptorInfoEx(
 <p> </p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>Specifies the pool type to use when allocating a new security descriptor, which can be one of the following: </p>
@@ -166,7 +166,7 @@ NTSTATUS SeSetSecurityDescriptorInfoEx(
 <p><b>Note</b>: The <b>NonPagedPoolMustSucceed</b> and <b>NonPagedPoolCacheAlignedMustS</b> pool types are obsolete and should no longer be used. </p>
 </dd>
 
-### -param <i>GenericMapping</i> [in]
+### -param GenericMapping [in]
 
 <dd>
 <p>Pointer to a GENERIC_MAPPING structure that specifies the mapping of generic to specific and standard access types for the object being accessed. This mapping structure is expected to be safe to access (that is, captured if necessary) prior to be passed to this routine.</p>
@@ -305,4 +305,4 @@ NTSTATUS SeSetSecurityDescriptorInfoEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeSetSecurityDescriptorInfoEx routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeSetSecurityDescriptorInfoEx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

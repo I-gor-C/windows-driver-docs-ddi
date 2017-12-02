@@ -63,49 +63,49 @@ typedef struct _VPCI_INTERFACE_STANDARD {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The driver-defined interface version.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to interface-specific context information.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to an <a href="kernel.interfacereference">InterfaceReference</a> routine that increments the interface's reference count.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to an <a href="kernel.interfacedereference">InterfaceDereference</a> routine that decrements the interface's reference count.</p>
 </dd>
 
-### -field <b>WriteVfConfigBlock</b>
+### -field WriteVfConfigBlock
 
 <dd>
 <p>A pointer to a <a href="..\vpci\nc-vpci-vpci-write-block.md">WriteVfConfigBlock</a> routine that writes a block of configuration data for a PCIe VF.</p>
 </dd>
 
-### -field <b>ReadVfConfigBlock</b>
+### -field ReadVfConfigBlock
 
 <dd>
 <p>A pointer to a <a href="..\vpci\nc-vpci-vpci-read-block.md">ReadVfConfigBlock</a> routine that reads a block of configuration data for a PCIe VF.</p>
 </dd>
 
-### -field <b>SerialNumber</b>
+### -field SerialNumber
 
 <dd>
 <p>A UINT32 value that contains the serial number for the PCIe VF on the device. The virtualization stack generates a unique serial number for each VF that is exposed on the device.</p>

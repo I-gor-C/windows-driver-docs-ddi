@@ -58,19 +58,19 @@ typedef enum _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_RVT_UNINITIALIZED"></a><a id="dxgk_rvt_uninitialized"></a><b>DXGK_RVT_UNINITIALIZED</b>
+### -field DXGK_RVT_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-recommendvidpntopology-reason.md">DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</a> has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="DXGK_RVT_INITIALIZATION_NOLKG"></a><a id="dxgk_rvt_initialization_nolkg"></a><b>DXGK_RVT_INITIALIZATION_NOLKG</b>
+### -field DXGK_RVT_INITIALIZATION_NOLKG
 
 <dd>
 <p>Indicates that the call is being made during the initialization of the display adapter after an attempt to use the last known good VidPN topology failed.</p>
 </dd>
 
-### -field <a id="DXGK_RVT_AUGMENTATION_NOLKG"></a><a id="dxgk_rvt_augmentation_nolkg"></a><b>DXGK_RVT_AUGMENTATION_NOLKG</b>
+### -field DXGK_RVT_AUGMENTATION_NOLKG
 
 <dd>
 <p>
@@ -78,13 +78,13 @@ typedef enum _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON {
      </p>
 </dd>
 
-### -field <a id="DXGK_RVT_AUGMENTATION_LKGOVERRIDE"></a><a id="dxgk_rvt_augmentation_lkgoverride"></a><b>DXGK_RVT_AUGMENTATION_LKGOVERRIDE</b>
+### -field DXGK_RVT_AUGMENTATION_LKGOVERRIDE
 
 <dd>
 <p>Indicates that the call is being made during the VidPN topology augmentation by the display mode manager (DMM), giving the display miniport driver a chance to override the last known good VidPN topology.</p>
 </dd>
 
-### -field <a id="DXGK_RVT_INITIALIZATION_LKGOVERRIDE"></a><a id="dxgk_rvt_initialization_lkgoverride"></a><b>DXGK_RVT_INITIALIZATION_LKGOVERRIDE</b>
+### -field DXGK_RVT_INITIALIZATION_LKGOVERRIDE
 
 <dd>
 <p>Indicates that the call is being made during the initialization of the display adapter, giving the display miniport driver a chance to override the last known good VidPN topology.</p>

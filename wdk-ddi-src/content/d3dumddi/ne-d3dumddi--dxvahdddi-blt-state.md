@@ -59,37 +59,37 @@ typedef enum _DXVAHDDDI_BLT_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVAHDDDI_BLT_STATE_TARGET_RECT"></a><a id="dxvahdddi_blt_state_target_rect"></a><b>DXVAHDDDI_BLT_STATE_TARGET_RECT</b>
+### -field DXVAHDDDI_BLT_STATE_TARGET_RECT
 
 <dd>
 <p>The bitblt state data specifies the target rectangle of the output in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-target-rect-data.md">DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR"></a><a id="dxvahdddi_blt_state_background_color"></a><b>DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR</b>
+### -field DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR
 
 <dd>
 <p>The bitblt state data specifies the background color to fill in the target rectangle of the output in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-background-color-data.md">DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE"></a><a id="dxvahdddi_blt_state_output_color_space"></a><b>DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE</b>
+### -field DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE
 
 <dd>
 <p>The bitblt state data specifies the color space of the output in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-output-color-space-data.md">DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_BLT_STATE_ALPHA_FILL"></a><a id="dxvahdddi_blt_state_alpha_fill"></a><b>DXVAHDDDI_BLT_STATE_ALPHA_FILL</b>
+### -field DXVAHDDDI_BLT_STATE_ALPHA_FILL
 
 <dd>
 <p>The bitblt state data specifies the alpha-fill mode of the output in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-alpha-fill-data.md">DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_BLT_STATE_CONSTRICTION"></a><a id="dxvahdddi_blt_state_constriction"></a><b>DXVAHDDDI_BLT_STATE_CONSTRICTION</b>
+### -field DXVAHDDDI_BLT_STATE_CONSTRICTION
 
 <dd>
 <p>The bitblt state data specifies the down sampling of the output in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-constriction-data.md">DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_BLT_STATE_PRIVATE"></a><a id="dxvahdddi_blt_state_private"></a><b>DXVAHDDDI_BLT_STATE_PRIVATE</b>
+### -field DXVAHDDDI_BLT_STATE_PRIVATE
 
 <dd>
 <p>The bitblt state data specifies the private parameters in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-private-data.md">DXVAHDDDI_BLT_STATE_PRIVATE_DATA</a> structure. </p>

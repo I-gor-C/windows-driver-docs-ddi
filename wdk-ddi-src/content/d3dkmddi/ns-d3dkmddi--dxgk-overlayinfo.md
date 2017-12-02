@@ -60,43 +60,43 @@ typedef struct _DXGK_OVERLAYINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[in] A handle to the allocation to be displayed on the overlay.</p>
 </dd>
 
-### -field <b>PhysicalAddress</b>
+### -field PhysicalAddress
 
 <dd>
 <p>[in] The physical address, within the segment that <b>SegmentId</b> specifies, of the allocation to be displayed.</p>
 </dd>
 
-### -field <b>SegmentId</b>
+### -field SegmentId
 
 <dd>
 <p>[in] The identifier of a segment in which the allocation is currently paged-in.</p>
 </dd>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure that contains the overlay destination rectangle, in device coordinates.</p>
 </dd>
 
-### -field <b>SrcRect</b>
+### -field SrcRect
 
 <dd>
 <p>[in] A RECT structure that contains the overlay source rectangle, in device coordinates.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in] A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver. </p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.</p>

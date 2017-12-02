@@ -54,7 +54,7 @@ typedef struct _PEP_PPM_ENTER_SYSTEM_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>TargetState</b>
+### -field TargetState
 
 <dd>
 <p>On input, a <a href="..\wdm\ne-wdm--system-power-state.md">SYSTEM_POWER_STATE</a>-type value that indicates the power state that the system is entering. </p>

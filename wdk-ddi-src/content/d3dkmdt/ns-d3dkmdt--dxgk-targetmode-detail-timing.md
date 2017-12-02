@@ -56,19 +56,19 @@ typedef struct _DXGK_TARGETMODE_DETAIL_TIMING {
 ## -struct-fields
 <dl>
 
-### -field <b>VideoStandard</b>
+### -field VideoStandard
 
 <dd>
 <p>[in] A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-video-signal-standard.md">D3DKMDT_VIDEO_SIGNAL_STANDARD</a>-typed value that indicates the supported video signal standard.</p>
 </dd>
 
-### -field <b>TimingId</b>
+### -field TimingId
 
 <dd>
 <p>[in] A UINT value that describes the registry ID of the video standard data described by <b>VideoStandard</b>. The high 8 bits indicate the target mode's video standard. The low 24 bits indicate the mode index in the video standard.</p>
 </dd>
 
-### -field <b>DetailTiming</b>
+### -field DetailTiming
 
 <dd>
 <p>[in] A <a href="..\d3dkmdt\ns-d3dkmdt--displayid-detailed-timing-type-i.md">DISPLAYID_DETAILED_TIMING_TYPE_I</a>-typed value that indicates the target mode data for a video present target.</p>

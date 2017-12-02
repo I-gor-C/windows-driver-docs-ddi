@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTDestroyAllocation2(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroyallocation2.md">D3DKMT_DESTROYALLOCATION2</a> structure that contains information for releasing allocations.</p>

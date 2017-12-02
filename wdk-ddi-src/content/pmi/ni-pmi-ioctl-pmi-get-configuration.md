@@ -86,7 +86,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has completed the IOCTL request successfully.</p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-configuration.md">PMI_CONFIGURATION</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-configuration.md">PMI_CONFIGURATION</a> structure.</p>
 
 <p>The initiator-allocated input buffer contains an invalid <a href="..\pmi\ne-pmi-pmi-configuration-type.md">PMI_CONFIGURATION_TYPE</a> value.</p>
 
@@ -98,7 +98,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has completed the IOCTL request successfully.</p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-configuration.md">PMI_CONFIGURATION</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-configuration.md">PMI_CONFIGURATION</a> structure.</p>
 
 <p>The initiator-allocated input buffer contains an invalid <a href="..\pmi\ne-pmi-pmi-configuration-type.md">PMI_CONFIGURATION_TYPE</a> value.</p>
 
@@ -110,7 +110,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has completed the IOCTL request successfully.</p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-configuration.md">PMI_CONFIGURATION</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-configuration.md">PMI_CONFIGURATION</a> structure.</p>
 
 <p>The initiator-allocated input buffer contains an invalid <a href="..\pmi\ne-pmi-pmi-configuration-type.md">PMI_CONFIGURATION_TYPE</a> value.</p>
 
@@ -122,7 +122,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has completed the IOCTL request successfully.</p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-configuration.md">PMI_CONFIGURATION</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-configuration.md">PMI_CONFIGURATION</a> structure.</p>
 
 <p>The initiator-allocated input buffer contains an invalid <a href="..\pmi\ne-pmi-pmi-configuration-type.md">PMI_CONFIGURATION_TYPE</a> value.</p>
 
@@ -134,7 +134,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has completed the IOCTL request successfully.</p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-configuration.md">PMI_CONFIGURATION</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-configuration.md">PMI_CONFIGURATION</a> structure.</p>
 
 <p>The initiator-allocated input buffer contains an invalid <a href="..\pmi\ne-pmi-pmi-configuration-type.md">PMI_CONFIGURATION_TYPE</a> value.</p>
 
@@ -186,7 +186,7 @@ I/O Status block
 <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\pmi\ns-pmi--pmi-budgeting-configuration.md">PMI_BUDGETING_CONFIGURATION</a>

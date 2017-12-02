@@ -7,7 +7,7 @@ old-location: netvista\rilcbmsgconfigparammask.htm
 old-project: netvista
 ms.assetid: 86bbc3ef-c76c-4abd-bfcb-56c804c12b1f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILCBMSGCONFIGPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_CBMC_GWLINFO"></a><a id="ril_param_cbmc_gwlinfo"></a><b>RIL_PARAM_CBMC_GWLINFO</b>
+### -field RIL_PARAM_CBMC_GWLINFO
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CBMC_CDMASIZE"></a><a id="ril_param_cbmc_cdmasize"></a><b>RIL_PARAM_CBMC_CDMASIZE</b>
+### -field RIL_PARAM_CBMC_CDMASIZE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CBMC_CDMAINFO"></a><a id="ril_param_cbmc_cdmainfo"></a><b>RIL_PARAM_CBMC_CDMAINFO</b>
+### -field RIL_PARAM_CBMC_CDMAINFO
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CBMC_ALL"></a><a id="ril_param_cbmc_all"></a><b>RIL_PARAM_CBMC_ALL</b>
+### -field RIL_PARAM_CBMC_ALL
 
 <dd></dd>
 </dl>

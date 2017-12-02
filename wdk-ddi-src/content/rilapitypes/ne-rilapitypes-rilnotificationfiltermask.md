@@ -7,7 +7,7 @@ old-location: netvista\rilnotificationfiltermask_2.htm
 old-project: netvista
 ms.assetid: 00d083af-f2c1-4ad5-803a-5981ed70035f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILNOTIFICATIONFILTERMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_NFS_SIGNALQUALITY"></a><a id="ril_nfs_signalquality"></a><b>RIL_NFS_SIGNALQUALITY</b>
+### -field RIL_NFS_SIGNALQUALITY
 
 <dd></dd>
 
-### -field <a id="RIL_NFS_REGSTATUS_RATKIND"></a><a id="ril_nfs_regstatus_ratkind"></a><b>RIL_NFS_REGSTATUS_RATKIND</b>
+### -field RIL_NFS_REGSTATUS_RATKIND
 
 <dd></dd>
 
-### -field <a id="RIL_NFS_LOCATIONUPDATE"></a><a id="ril_nfs_locationupdate"></a><b>RIL_NFS_LOCATIONUPDATE</b>
+### -field RIL_NFS_LOCATIONUPDATE
 
 <dd></dd>
 
-### -field <a id="RIL_NFS_ALL"></a><a id="ril_nfs_all"></a><b>RIL_NFS_ALL</b>
+### -field RIL_NFS_ALL
 
 <dd></dd>
 </dl>

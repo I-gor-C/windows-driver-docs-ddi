@@ -54,7 +54,7 @@ PKSFILTER __inline KsFilterFactoryGetFirstChildFilter(
 ## -parameters
 <dl>
 
-### -param <i>FilterFactory</i> [in]
+### -param FilterFactory [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> structure for which to find the first instantiated child filter.</p>
@@ -65,7 +65,7 @@ PKSFILTER __inline KsFilterFactoryGetFirstChildFilter(
 <p><b>KsFilterFactoryGetFirstChildFilter</b> returns a pointer to the first instantiated <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure created by <i>FilterFactory</i>. If there are no instantiated filters created by <i>FilterFactory</i>, <b>NULL</b> is returned.</p>
 
 ## -remarks
-<p>This call is an inline function call to <a href="..\ks\nf-ks-ksgetfirstchild.md">KsGetFirstChild</a>. Note that the object hierarchy is guaranteed to be stable only while the appropriate mutex is held, in this case the device mutex. For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>This call is an inline function call to <a href="..\ks\nf-ks-ksgetfirstchild.md">KsGetFirstChild</a>. Note that the object hierarchy is guaranteed to be stable only while the appropriate mutex is held, in this case the device mutex. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 ## -requirements
 <table>

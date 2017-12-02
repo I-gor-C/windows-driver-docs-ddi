@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediatype_2.htm
 old-project: netvista
 ms.assetid: f4ecaf9a-1d8d-4a56-afa0-b893eb0c4c62
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILCALLMEDIATYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLMEDIATYPE_AUDIO"></a><a id="ril_callmediatype_audio"></a><b>RIL_CALLMEDIATYPE_AUDIO</b>
+### -field RIL_CALLMEDIATYPE_AUDIO
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIATYPE_VIDEO"></a><a id="ril_callmediatype_video"></a><b>RIL_CALLMEDIATYPE_VIDEO</b>
+### -field RIL_CALLMEDIATYPE_VIDEO
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIATYPE_CUSTOM"></a><a id="ril_callmediatype_custom"></a><b>RIL_CALLMEDIATYPE_CUSTOM</b>
+### -field RIL_CALLMEDIATYPE_CUSTOM
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIATYPE_MAX"></a><a id="ril_callmediatype_max"></a><b>RIL_CALLMEDIATYPE_MAX</b>
+### -field RIL_CALLMEDIATYPE_MAX
 
 <dd></dd>
 </dl>

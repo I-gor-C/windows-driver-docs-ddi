@@ -56,7 +56,7 @@ typedef struct _KSAUDIOMODULE_PROPERTY {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>The KSPROPERTY of the audio module is defined as follows.</p>
@@ -71,13 +71,13 @@ typedef struct _KSAUDIOMODULE_PROPERTY {
 </dl>
 </dd>
 
-### -field <b>ClassId</b>
+### -field ClassId
 
 <dd>
 <p>The ClassId of the audio module. The ClassId is an identifier that establishes what type of module this is. The value and mapping is established by the ISV and IHV.</p>
 </dd>
 
-### -field <b>InstanceId</b>
+### -field InstanceId
 
 <dd>
 <p>The InstanceId of the audio module.  The InstanceId is a unique identifier that distinguishes this instance of a module from another instance of an module. </p>

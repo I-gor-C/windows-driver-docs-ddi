@@ -60,14 +60,14 @@ typedef struct _BTH_SDP_CONNECT {
 ## -struct-fields
 <dl>
 
-### -field <b>bthAddress</b>
+### -field bthAddress
 
 <dd>
 <p>The address of the remote SDP server that the local system connects to. This address cannot be to
      the local radio.</p>
 </dd>
 
-### -field <b>fSdpConnect</b>
+### -field fSdpConnect
 
 <dd>
 <p>A flag or combination of flags that determines how to handle the connection request. Valid flag
@@ -98,13 +98,13 @@ typedef struct _BTH_SDP_CONNECT {
 <p> </p>
 </dd>
 
-### -field <b>hConnection</b>
+### -field hConnection
 
 <dd>
 <p>A handle for the SDP connection on the remote server.</p>
 </dd>
 
-### -field <b>requestTimeout</b>
+### -field requestTimeout
 
 <dd>
 <p>The timeout, in seconds, for requests to the SDP connection handle that is returned in the 

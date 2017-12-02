@@ -7,7 +7,7 @@ old-location: netvista\ndismgetvirtualfunctionbusdata.htm
 old-project: netvista
 ms.assetid: 15e2e1f4-6039-4588-a7ba-bd8aa6b78839
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMGetVirtualFunctionBusData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ ULONG NdisMGetVirtualFunctionBusData(
 ## -parameters
 <dl>
 
-### -param <i>NdisMiniportHandle</i> [in]
+### -param NdisMiniportHandle [in]
 
 <dd>
 <p>The network adapter handle that NDIS passed to the 
@@ -66,19 +66,19 @@ ULONG NdisMGetVirtualFunctionBusData(
      <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>.</p>
 </dd>
 
-### -param <i>VFId</i> [in]
+### -param VFId [in]
 
 <dd>
 <p>The identifier of the VF from which the data from the PCI configuration space is returned.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>A pointer to a buffer that receives the data that is read from the VF's PCI configuration space.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>The offset, in units of bytes, in the VF's PCI configuration space from which data is read.
@@ -86,7 +86,7 @@ ULONG NdisMGetVirtualFunctionBusData(
 </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length, in units of bytes, of the data to be read.</p>
@@ -102,9 +102,9 @@ ULONG NdisMGetVirtualFunctionBusData(
 <p>The PF miniport driver typically calls <b>NdisMGetVirtualFunctionBusData</b> when it handles an OID method request of  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451879">OID_SRIOV_READ_VF_CONFIG_SPACE</a>.  
 However, the driver can call this function any time after virtualization has been enabled on the network adapter through a call to <a href="..\ndis\nf-ndis-ndismenablevirtualization.md">NdisMEnableVirtualization</a>.</p>
 
-<p>For more information on how to query the VF's PCI configuration space, see <a href="NULL">Querying the PCI Configuration Space for a Virtual Function</a>.</p>
+<p>For more information on how to query the VF's PCI configuration space, see <a href="netvista.querying_the_pci_configuration_space_for_a_virtual_function">Querying the PCI Configuration Space for a Virtual Function</a>.</p>
 
-<p>For more information about the SR-IOV interface, see 	<a href="NULL">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
+<p>For more information about the SR-IOV interface, see 	<a href="netvista.overview_of_single_root_i_o_virtualization__sr-iov_">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
 
 <p>If an independent hardware vendor (IHV) provides a virtual bus driver (VBD) as part of its SR-IOV <a href="devinst.driver_packages">driver package</a>, its miniport driver must not call <b>NdisMGetVirtualFunctionBusData</b>. Instead, the driver must interface with the VBD through a private communication channel, and request that the VBD call <a href="..\wdm\nc-wdm-get-virtual-device-data.md">GetVirtualFunctionData</a>. This function is exposed from the <a href="kernel.guid_pci_virtualization_interface">GUID_PCI_VIRTUALIZATION_INTERFACE</a> interface that is supported by the underlying PCI bus driver.</p>
 
@@ -197,4 +197,4 @@ However, the driver can call this function any time after virtualization has bee
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMGetVirtualFunctionBusData function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMGetVirtualFunctionBusData function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

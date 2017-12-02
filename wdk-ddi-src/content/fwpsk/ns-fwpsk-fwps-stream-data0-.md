@@ -7,7 +7,7 @@ old-location: netvista\fwps_stream_data0.htm
 old-project: netvista
 ms.assetid: 7e9daf20-12d6-42dc-99fb-9e9efe5a9900
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_STREAM_DATA0_, FWPS_STREAM_DATA0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct FWPS_STREAM_DATA0_ {
 ## -struct-fields
 <dl>
 
-### -field <b>flags</b>
+### -field flags
 
 <dd>
 <p>A variable containing flags that specify the characteristics of the data stream.
@@ -66,27 +66,27 @@ typedef struct FWPS_STREAM_DATA0_ {
 <p></p>
 <dl>
 
-### -field <a id="FWPS_STREAM_FLAG_RECEIVE"></a><a id="fwps_stream_flag_receive"></a>FWPS_STREAM_FLAG_RECEIVE
+### -field FWPS_STREAM_FLAG_RECEIVE
 
 <dd>
 <p>Specifies that the stream is an inbound data stream. This flag is always set for inbound data
        streams.</p>
 </dd>
 
-### -field <a id="FWPS_STREAM_FLAG_RECEIVE_EXPEDITED"></a><a id="fwps_stream_flag_receive_expedited"></a>FWPS_STREAM_FLAG_RECEIVE_EXPEDITED
+### -field FWPS_STREAM_FLAG_RECEIVE_EXPEDITED
 
 <dd>
 <p>Specifies that the inbound data stream contains high-priority out-of-band data.</p>
 </dd>
 
-### -field <a id="FWPS_STREAM_FLAG_RECEIVE_DISCONNECT"></a><a id="fwps_stream_flag_receive_disconnect"></a>FWPS_STREAM_FLAG_RECEIVE_DISCONNECT
+### -field FWPS_STREAM_FLAG_RECEIVE_DISCONNECT
 
 <dd>
 <p>Specifies that the inbound data has arrived with the FIN flag set in the TCP header. This
        indicates that the sender has disconnected the stream.</p>
 </dd>
 
-### -field <a id="FWPS_STREAM_FLAG_RECEIVE_ABORT"></a><a id="fwps_stream_flag_receive_abort"></a>FWPS_STREAM_FLAG_RECEIVE_ABORT
+### -field FWPS_STREAM_FLAG_RECEIVE_ABORT
 
 <dd>
 <p>Specifies that the inbound data has arrived with the RST flag set in the TCP header. This
@@ -100,20 +100,20 @@ typedef struct FWPS_STREAM_DATA0_ {
 <p></p>
 <dl>
 
-### -field <a id="FWPS_STREAM_FLAG_SEND"></a><a id="fwps_stream_flag_send"></a>FWPS_STREAM_FLAG_SEND
+### -field FWPS_STREAM_FLAG_SEND
 
 <dd>
 <p>Specifies that the stream is an outbound data stream. This flag is always set for outbound data
        streams.</p>
 </dd>
 
-### -field <a id="FWPS_STREAM_FLAG_SEND_EXPEDITED"></a><a id="fwps_stream_flag_send_expedited"></a>FWPS_STREAM_FLAG_SEND_EXPEDITED
+### -field FWPS_STREAM_FLAG_SEND_EXPEDITED
 
 <dd>
 <p>Specifies that the outbound data stream contains high-priority out-of-band data.</p>
 </dd>
 
-### -field <a id="FWPS_STREAM_FLAG_SEND_NODELAY"></a><a id="fwps_stream_flag_send_nodelay"></a>FWPS_STREAM_FLAG_SEND_NODELAY
+### -field FWPS_STREAM_FLAG_SEND_NODELAY
 
 <dd>
 <p>Specifies that the sending client requests that the outbound data stream is not to be buffered.
@@ -121,7 +121,7 @@ typedef struct FWPS_STREAM_DATA0_ {
        necessary.</p>
 </dd>
 
-### -field <a id="FWPS_STREAM_FLAG_SEND_DISCONNECT"></a><a id="fwps_stream_flag_send_disconnect"></a>FWPS_STREAM_FLAG_SEND_DISCONNECT
+### -field FWPS_STREAM_FLAG_SEND_DISCONNECT
 
 <dd>
 <p>Specifies that the stream is to be disconnected after the data in the outbound data stream has
@@ -129,7 +129,7 @@ typedef struct FWPS_STREAM_DATA0_ {
        out.</p>
 </dd>
 
-### -field <a id="FWPS_STREAM_FLAG_SEND_ABORT"></a><a id="fwps_stream_flag_send_abort"></a>FWPS_STREAM_FLAG_SEND_ABORT
+### -field FWPS_STREAM_FLAG_SEND_ABORT
 
 <dd>
 <p>Specifies that the stream is to be reset after the data in the outbound data stream has been
@@ -144,7 +144,7 @@ typedef struct FWPS_STREAM_DATA0_ {
 </dl>
 </dd>
 
-### -field <b>dataOffset</b>
+### -field dataOffset
 
 <dd>
 <p>An 
@@ -152,13 +152,13 @@ typedef struct FWPS_STREAM_DATA0_ {
      that specifies the offset into the data stream where the portion of the data stream begins.</p>
 </dd>
 
-### -field <b>dataLength</b>
+### -field dataLength
 
 <dd>
 <p>The number of bytes in the portion of the data stream.</p>
 </dd>
 
-### -field <b>netBufferListChain</b>
+### -field netBufferListChain
 
 <dd>
 <p>A pointer to a 
@@ -218,4 +218,4 @@ typedef struct FWPS_STREAM_DATA0_ {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_STREAM_DATA0 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_STREAM_DATA0 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

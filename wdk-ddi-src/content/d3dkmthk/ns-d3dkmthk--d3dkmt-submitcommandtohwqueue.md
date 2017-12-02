@@ -61,27 +61,27 @@ typedef struct _D3DKMT_SUBMITCOMMANDTOHWQUEUE {
 ## -struct-fields
 <dl>
 
-### -field <b>hHwQueue</b>
+### -field hHwQueue
 
 <dd>
 <p>Context queue to submit the command to.
 </p>
 </dd>
 
-### -field <b>HwQueueProgressFenceId</b>
+### -field HwQueueProgressFenceId
 
 <dd>
 <p>Hardware queue progress fence value that will be signaled once the command is finished.</p>
 </dd>
 
-### -field <b> CommandBuffer</b>
+### -field  CommandBuffer
 
 <dd>
 <p>GPU VA of the command buffer to be executed on the GPU.
 </p>
 </dd>
 
-### -field <b>CommandLength</b>
+### -field CommandLength
 
 <dd>
 <p>Length in bytes of the command buffer.
@@ -89,7 +89,7 @@ typedef struct _D3DKMT_SUBMITCOMMANDTOHWQUEUE {
 </p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>Size of private driver data in bytes.
@@ -97,21 +97,21 @@ typedef struct _D3DKMT_SUBMITCOMMANDTOHWQUEUE {
 </p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>Pointer to the private driver data.
 </p>
 </dd>
 
-### -field <b>NumPrimaries</b>
+### -field NumPrimaries
 
 <dd>
 <p>The number of primaries written by this command buffer.
 </p>
 </dd>
 
-### -field <b>WrittenPrimaries</b>
+### -field WrittenPrimaries
 
 <dd>
 <p>The array of primaries written by this command buffer.

@@ -60,25 +60,25 @@ HBA_STATUS HBA_API HBA_SendLIRR(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA through which to send the LIR request. </p>
 </dd>
 
-### -param <i>SourceWWN</i> [in]
+### -param SourceWWN [in]
 
 <dd>
 <p>Contains the worldwide name (WWN) of the local port from which to issue the command and which will receive link incident records from the destination port referenced by <i>DestWWN</i>. For a definition of worldwide names, see the T11 committee's specification for <i>Fibre Channel HBA API</i>. </p>
 </dd>
 
-### -param <i>DestWWN</i> [in]
+### -param DestWWN [in]
 
 <dd>
 <p>Contains the WWN of the remote destination port that will report link incident records to the source port. For a definition of worldwide names, see the T11 committee's specification for <i>Fibre Channel HBA API</i>. </p>
 </dd>
 
-### -param <i>Function</i> [in]
+### -param Function [in]
 
 <dd>
 <p>Specifies the action to take. This member either registers a source port to receive link incident records and specifies the mode of registration, or it de-registers a source port that is already registered. This member must have one of the following values.</p>
@@ -132,20 +132,20 @@ HBA_STATUS HBA_API HBA_SendLIRR(
 <p>For further explanation of the available registration modes, see the T11 committee's <i>Fibre Channel Framing and Signaling</i> specification.</p>
 </dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>Specifies the type of records whose delivery is affected by the link incident record request (LIRR). When 0, the LIRR governs the delivery of common link incident records, so if the source port is registering to receive records, then the source port is added to the destination port's registration list for common link incident records. If the source port is de-registering, then it is removed from that list. </p>
 <p>If <i>Type </i>is nonzero, then it specifies the format type of the records for which the source port is registering or de-registering. For a list of the types of formats and their corresponding values, see the FC-4 type codes table in the T11 committee's <i>Fibre Channel Framing and Signaling</i> specification. </p>
 </dd>
 
-### -param <i>pRspBuffer</i> [out]
+### -param pRspBuffer [out]
 
 <dd>
 <p>Pointer to a buffer that receives the payload data of the response to the LIRR, if the LIRR succeeds. If the destination port rejects the request, this buffer holds the link service reject (LS_RJT) payload data. If the amount of returned data exceeds the buffer size specified in <i>RspBufferSize</i>, the data is truncated to the buffer size<i>. </i>The payload data is in big-endian format (higher order bytes are in lower addresses). </p>
 </dd>
 
-### -param <i>RspBufferSize</i> [in, out]
+### -param RspBufferSize [in, out]
 
 <dd>
 <p>On input, indicates the size, in bytes, of the buffer at <i>pRspBuffer</i>. On output, this member indicates the size, in bytes, of the response data. Eight bytes is sufficient for any response.</p>

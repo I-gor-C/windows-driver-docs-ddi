@@ -58,25 +58,25 @@ typedef struct _KEY_VALUE_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>ValueName</b>
+### -field ValueName
 
 <dd>
 <p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the name of the value entry.</p>
 </dd>
 
-### -field <b>DataLength</b>
+### -field DataLength
 
 <dd>
 <p>Specifies the size, in bytes, of the data for the value entry.</p>
 </dd>
 
-### -field <b>DataOffset</b>
+### -field DataOffset
 
 <dd>
 <p>Specifies the offset, in bytes, of the value entry's data within the buffer that is pointed to by the <b>ValueBuffer</b> member of <a href="..\wdm\ns-wdm--reg-query-multiple-value-key-information.md">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a>.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Specifies the type of the value entry's data. For a description of the possible values for <b>Type</b>, see the <i>Type</i> parameter of <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>.</p>

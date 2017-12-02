@@ -59,19 +59,19 @@ NTSTATUS SynchWritePort(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to a context supplied by I8042prt. </p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>Specifies the UCHAR value to write to an i8042 port.</p>
 </dd>
 
-### -param <i>WaitForACK</i> [in]
+### -param WaitForACK [in]
 
 <dd>
 <p>Specifies, if <b>TRUE</b>, that the routine waits until the write is acknowledged by the i8042 port. Otherwise, the routine returns without waiting for an acknowledgment from the port.</p>

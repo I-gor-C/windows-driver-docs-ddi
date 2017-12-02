@@ -95,253 +95,253 @@ typedef struct D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnSetErrorCb</b>
+### -field pfnSetErrorCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateVsConstBufCb</b>
+### -field pfnStateVsConstBufCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-vs-constbuf-cb.md">pfnStateVsConstBufCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStatePsSrvCb</b>
+### -field pfnStatePsSrvCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-ps-srv-cb.md">pfnStatePsSrvCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStatePsShaderCb</b>
+### -field pfnStatePsShaderCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-ps-shader-cb.md">pfnStatePsShaderCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStatePsSamplerCb</b>
+### -field pfnStatePsSamplerCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-ps-sampler-cb.md">pfnStatePsSamplerCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateVsShaderCb</b>
+### -field pfnStateVsShaderCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-vs-shader-cb.md">pfnStateVsShaderCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStatePsConstBufCb</b>
+### -field pfnStatePsConstBufCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-ps-constbuf-cb.md">pfnStatePsConstBufCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateIaInputLayoutCb</b>
+### -field pfnStateIaInputLayoutCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-ia-inputlayout-cb.md">pfnStateIaInputLayoutCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateIaVertexBufCb</b>
+### -field pfnStateIaVertexBufCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-ia-vertexbuf-cb.md">pfnStateIaVertexBufCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateIaIndexBufCb</b>
+### -field pfnStateIaIndexBufCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-ia-indexbuf-cb.md">pfnStateIaIndexBufCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateGsConstBufCb</b>
+### -field pfnStateGsConstBufCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-gs-constbuf-cb.md">pfnStateGsConstBufCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateGsShaderCb</b>
+### -field pfnStateGsShaderCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-gs-shader-cb.md">pfnStateGsShaderCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateIaPrimitiveTopologyCb</b>
+### -field pfnStateIaPrimitiveTopologyCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-ia-primitive-topology-cb.md">pfnStateIaPrimitiveTopologyCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateVsSrvCb</b>
+### -field pfnStateVsSrvCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-vs-srv-cb.md">pfnStateVsSrvCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateVsSamplerCb</b>
+### -field pfnStateVsSamplerCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-vs-sampler-cb.md">pfnStateVsSamplerCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateGsSrvCb</b>
+### -field pfnStateGsSrvCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-gs-srv-cb.md">pfnStateGsSrvCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateGsSamplerCb</b>
+### -field pfnStateGsSamplerCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-gs-sampler-cb.md">pfnStateGsSamplerCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateOmRenderTargetsCb</b>
+### -field pfnStateOmRenderTargetsCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-om-rendertargets-cb.md">pfnStateOmRenderTargetsCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateOmBlendStateCb</b>
+### -field pfnStateOmBlendStateCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-om-blendstate-cb.md">pfnStateOmBlendStateCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateOmDepthStateCb</b>
+### -field pfnStateOmDepthStateCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-om-depthstate-cb.md">pfnStateOmDepthStateCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateRsRastStateCb</b>
+### -field pfnStateRsRastStateCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-rs-raststate-cb.md">pfnStateRsRastStateCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateSoTargetsCb</b>
+### -field pfnStateSoTargetsCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-so-targets-cb.md">pfnStateSoTargetsCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateRsViewportsCb</b>
+### -field pfnStateRsViewportsCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-rs-viewports-cb.md">pfnStateRsViewportsCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateRsScissorCb</b>
+### -field pfnStateRsScissorCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-rs-scissor-cb.md">pfnStateRsScissorCb</a> function.</p>
 </dd>
 
-### -field <b>pfnDisableDeferredStagingResourceDestruction</b>
+### -field pfnDisableDeferredStagingResourceDestruction
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-disable-deferred-staging-resource-destruction-cb.md">pfnDisableDeferredStagingResourceDestruction</a> function.</p>
 </dd>
 
-### -field <b>pfnStateTextFilterSizeCb</b>
+### -field pfnStateTextFilterSizeCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-state-textfiltersize-cb.md">pfnStateTextFilterSizeCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateHsSrvCb</b>
+### -field pfnStateHsSrvCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-state-hs-srv-cb.md">pfnStateHsSrvCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateHsShaderCb</b>
+### -field pfnStateHsShaderCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-state-hs-shader-cb.md">pfnStateHsShaderCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateHsSamplerCb</b>
+### -field pfnStateHsSamplerCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-state-hs-sampler-cb.md">pfnStateHsSamplerCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateHsConstBufCb</b>
+### -field pfnStateHsConstBufCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-state-hs-constbuf-cb.md">pfnStateHsConstBufCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateDsSrvCb</b>
+### -field pfnStateDsSrvCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-state-ds-srv-cb.md">pfnStateDsSrvCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateDsShaderCb</b>
+### -field pfnStateDsShaderCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-state-ds-shader-cb.md">pfnStateDsShaderCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateDsSamplerCb</b>
+### -field pfnStateDsSamplerCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-state-ds-sampler-cb.md">pfnStateDsSamplerCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateDsConstBufCb</b>
+### -field pfnStateDsConstBufCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-state-ds-constbuf-cb.md">pfnStateDsConstBufCb</a> function.</p>
 </dd>
 
-### -field <b>pfnPerformAmortizedProcessingCb</b>
+### -field pfnPerformAmortizedProcessingCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-perform-amortized-processing-cb.md">pfnPerformAmortizedProcessingCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateCsSrvCb</b>
+### -field pfnStateCsSrvCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-state-cs-srv-cb.md">pfnStateCsSrvCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateCsUavCb</b>
+### -field pfnStateCsUavCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-state-cs-uav-cb.md">pfnStateCsUavCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateCsShaderCb</b>
+### -field pfnStateCsShaderCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-state-cs-shader-cb.md">pfnStateCsShaderCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateCsSamplerCb</b>
+### -field pfnStateCsSamplerCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-state-cs-sampler-cb.md">pfnStateCsSamplerCb</a> function.</p>
 </dd>
 
-### -field <b>pfnStateCsConstBufCb</b>
+### -field pfnStateCsConstBufCb
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-state-cs-constbuf-cb.md">pfnStateCsConstBufCb</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateContextCb</b>
+### -field pfnCreateContextCb
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateContextVirtualCb</b>
+### -field pfnCreateContextVirtualCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createcontextvirtualcb.md">pfnCreateContextVirtualCb</a> function.</p>

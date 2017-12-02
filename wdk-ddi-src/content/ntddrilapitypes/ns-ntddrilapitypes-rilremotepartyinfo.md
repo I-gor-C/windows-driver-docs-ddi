@@ -7,7 +7,7 @@ old-location: netvista\rilremotepartyinfo.htm
 old-project: netvista
 ms.assetid: 3bcaaf63-adff-4559-9e34-eae089dff6f8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILREMOTEPARTYINFO, RILREMOTEPARTYINFO, *LPRILREMOTEPARTYINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,39 +62,39 @@ typedef struct _RILREMOTEPARTYINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>raAddress</b>
+### -field raAddress
 
 <dd></dd>
 
-### -field <b>rsaSubAddress</b>
+### -field rsaSubAddress
 
 <dd></dd>
 
-### -field <b>wszDescription</b>
+### -field wszDescription
 
 <dd></dd>
 
-### -field <b>dwNumberPresentationIndicator</b>
+### -field dwNumberPresentationIndicator
 
 <dd></dd>
 
-### -field <b>dwNamePresentationIndicator</b>
+### -field dwNamePresentationIndicator
 
 <dd></dd>
 
-### -field <b>dwID</b>
+### -field dwID
 
 <dd></dd>
 </dl>

@@ -66,86 +66,86 @@ typedef struct _ATA_ZONE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>ZoneType  : 4</b>
+### -field ZoneType  : 4
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved0  : 4</b>
+### -field Reserved0  : 4
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reset  : 1</b>
+### -field Reset  : 1
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>NonSeq : 1</b>
+### -field NonSeq : 1
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved1  : 2</b>
+### -field Reserved1  : 2
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>ZoneCondition  : 4</b>
+### -field ZoneCondition  : 4
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>ZoneLength  : 48</b>
+### -field ZoneLength  : 48
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved3  : 16</b>
+### -field Reserved3  : 16
 
 <dd>
 <p>N/A</p>
 <p>N/A</p>
 </dd>
 
-### -field <b>ZoneStartLBA  : 48</b>
+### -field ZoneStartLBA  : 48
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved4  : 16</b>
+### -field Reserved4  : 16
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>WritePointerLBA  : 48</b>
+### -field WritePointerLBA  : 48
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved5  : 16</b>
+### -field Reserved5  : 16
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved6</b>
+### -field Reserved6
 
 <dd>
 <p>N/A</p>

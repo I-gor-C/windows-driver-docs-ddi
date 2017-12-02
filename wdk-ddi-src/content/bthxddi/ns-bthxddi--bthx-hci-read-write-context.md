@@ -56,19 +56,19 @@ typedef struct _BTHX_HCI_READ_WRITE_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>DataLen</b>
+### -field DataLen
 
 <dd>
 <p>The length, in bytes, of data in <b>Data</b>.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of packetized data.</p>
 </dd>
 
-### -field <b>Data[]</b>
+### -field Data[]
 
 <dd>
 <p>Actual data to be read/written.</p>

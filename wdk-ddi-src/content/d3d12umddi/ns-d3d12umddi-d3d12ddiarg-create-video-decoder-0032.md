@@ -55,13 +55,13 @@ typedef struct _D3D12DDIARG_CREATE_VIDEO_DECODER_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeMask</b>
+### -field NodeMask
 
 <dd>
 <p>Represents the set of nodes.</p>
 </dd>
 
-### -field <b>Configuration</b>
+### -field Configuration
 
 <dd>
 <p>The video decode configuration.</p>

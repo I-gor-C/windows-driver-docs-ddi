@@ -7,7 +7,7 @@ old-location: netvista\rilradiopresence.htm
 old-project: netvista
 ms.assetid: de67cf2e-1dd8-4b01-9a60-b8a2a01d326b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILRADIOPRESENCE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_RADIOPRESENCE_PRESENT"></a><a id="ril_radiopresence_present"></a><b>RIL_RADIOPRESENCE_PRESENT</b>
+### -field RIL_RADIOPRESENCE_PRESENT
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOPRESENCE_MAX"></a><a id="ril_radiopresence_max"></a><b>RIL_RADIOPRESENCE_MAX</b>
+### -field RIL_RADIOPRESENCE_MAX
 
 <dd></dd>
 </dl>

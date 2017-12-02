@@ -7,7 +7,7 @@ old-location: netvista\rilsendmsgoptions.htm
 old-project: netvista
 ms.assetid: 23f2500f-8b0d-4e52-ab7e-b39d8368f78b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILSENDMSGOPTIONS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SENDOPT_PERSISTLINK"></a><a id="ril_sendopt_persistlink"></a><b>RIL_SENDOPT_PERSISTLINK</b>
+### -field RIL_SENDOPT_PERSISTLINK
 
 <dd></dd>
 
-### -field <a id="RIL_SENDOPT_IMS"></a><a id="ril_sendopt_ims"></a><b>RIL_SENDOPT_IMS</b>
+### -field RIL_SENDOPT_IMS
 
 <dd></dd>
 </dl>

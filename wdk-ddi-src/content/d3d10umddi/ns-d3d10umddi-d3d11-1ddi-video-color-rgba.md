@@ -57,25 +57,25 @@ typedef struct D3D11_1DDI_VIDEO_COLOR_RGBA {
 ## -struct-fields
 <dl>
 
-### -field <b>R</b>
+### -field R
 
 <dd>
 <p>The red value.</p>
 </dd>
 
-### -field <b>G</b>
+### -field G
 
 <dd>
 <p>The green value.</p>
 </dd>
 
-### -field <b>B</b>
+### -field B
 
 <dd>
 <p>The blue value.</p>
 </dd>
 
-### -field <b>A</b>
+### -field A
 
 <dd>
 <p>The alpha value. Values range from 0 (transparent) to 1 (opaque).

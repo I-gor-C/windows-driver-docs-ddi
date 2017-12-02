@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>DataFormat</b>
+### -field DataFormat
 
 <dd>
 <p>Specifies the general features of the stream's data format. This member is a structure of type <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff561656(v=vs.85).aspx">KSDATAFORMAT</a>.</p>
 </dd>
 
-### -field <b>WaveFormatEx</b>
+### -field WaveFormatEx
 
 <dd>
 <p>Describes the wave-specific details of the audio stream's data format. This member contains an initialized <a href="audio.waveformatex">WAVEFORMATEX</a> structure.</p>
@@ -69,7 +69,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>In response to an input <i>DataRange</i> parameter that specifies a WAVEFORMATEX format (see example in <a href="NULL">PCM Stream Data Range</a>), the <a href="audio.iminiport_datarangeintersection">IMiniport::DataRangeIntersection</a> method checks to see if the specified pin supports a compatible WAVEFORMATEX format. If so, the method outputs a KSDATAFORMAT_WAVEFORMATEX structure (see example in <a href="NULL">PCM Stream Data Format</a>) to the buffer that its <i>ResultantFormat</i> parameter points to.</p>
+<p>In response to an input <i>DataRange</i> parameter that specifies a WAVEFORMATEX format (see example in <a href="https://msdn.microsoft.com/e8a9b681-3bd2-46ed-970f-5217dbfb2e4e">PCM Stream Data Range</a>), the <a href="audio.iminiport_datarangeintersection">IMiniport::DataRangeIntersection</a> method checks to see if the specified pin supports a compatible WAVEFORMATEX format. If so, the method outputs a KSDATAFORMAT_WAVEFORMATEX structure (see example in <a href="https://msdn.microsoft.com/86599e55-e771-4d6e-ad59-6dc905c53cd8">PCM Stream Data Format</a>) to the buffer that its <i>ResultantFormat</i> parameter points to.</p>
 
 <p>Note that the <b>WaveFormatEx</b> member of the KSDATAFORMAT_WAVEFORMATEX structure can be extended to include additional format information (for example, a channel configuration mask). For more information, see <a href="audio.waveformatextensible">WAVEFORMATEXTENSIBLE</a>.</p>
 

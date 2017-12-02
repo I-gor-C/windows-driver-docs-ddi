@@ -54,7 +54,7 @@ VOID KsFreeObjectHeader(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [in]
+### -param Header [in]
 
 <dd>
 <p>Points to the object header to free.</p>

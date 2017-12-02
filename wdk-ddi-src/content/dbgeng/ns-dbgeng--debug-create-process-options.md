@@ -7,7 +7,7 @@ old-location: debugger\debug_create_process_options.htm
 old-project: debugger
 ms.assetid: b4b279c2-d44a-442d-9f1d-0ac0d2304eb8
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: DEBUG_CREATE_PROCESS_OPTIONS, DEBUG_CREATE_PROCESS_OPTIONS, *PDEBUG_CREATE_PROCESS_OPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct _DEBUG_CREATE_PROCESS_OPTIONS {
 ## -struct-fields
 <dl>
 
-### -field <b>CreateFlags</b>
+### -field CreateFlags
 
 <dd>
 <p>The flags to use when creating the process.   In addition to the flags described in the "Process Creation Flags" topic in the Platform SDK documentation, the <a href="debugger.introduction#debugger_engine#debugger_engine">debugger engine</a> uses the following flags when creating a process.</p>
@@ -87,7 +87,7 @@ typedef struct _DEBUG_CREATE_PROCESS_OPTIONS {
 <p>When creating and attaching to a process through the debugger engine, set one of the Platform SDK's process creation flags: DEBUG_PROCESS or DEBUG_ONLY_THIS_PROCESS.</p>
 </dd>
 
-### -field <b>EngCreateFlags</b>
+### -field EngCreateFlags
 
 <dd>
 <p>The engine specific flags used when creating the process.  <b>EngCreateFlags</b> is a combination of the following bit-flags:</p>
@@ -124,13 +124,13 @@ typedef struct _DEBUG_CREATE_PROCESS_OPTIONS {
 <p> </p>
 </dd>
 
-### -field <b>VerifierFlags</b>
+### -field VerifierFlags
 
 <dd>
-<p>The Application Verifier flags.  Only used if DEBUG_ECREATE_PROCESS_USE_VERIFIER_FLAGS is set in the <b>EngCreateFlags</b> field.  For possible values, see the <a href="NULL">Application Verifier</a> documentation. </p>
+<p>The Application Verifier flags.  Only used if DEBUG_ECREATE_PROCESS_USE_VERIFIER_FLAGS is set in the <b>EngCreateFlags</b> field.  For possible values, see the <a href="https://msdn.microsoft.com/d3040254-aa9b-4aae-b850-966078df7988">Application Verifier</a> documentation. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Set to zero.</p>

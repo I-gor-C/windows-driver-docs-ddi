@@ -7,7 +7,7 @@ old-location: debugger\getwindbgextensionapis64.htm
 old-project: debugger
 ms.assetid: 01b34b26-2835-4a58-abf3-190da63d25eb
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl2, GetWindbgExtensionApis64, IDebugControl2::GetWindbgExtensionApis64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetWindbgExtensionApis64(
 ## -parameters
 <dl>
 
-### -param <i>Api</i> [in, out]
+### -param Api [in, out]
 
 <dd>
 <p>Receives a WINDBG_EXTENSION_APIS64 structure.  This structure contains the functions used by the WdbgExts API.  The <b>nSize</b> member of this structure must be set to the size of the structure before it is passed to this method.</p>
@@ -62,7 +62,7 @@ HRESULT GetWindbgExtensionApis64(
 </dl>
 
 ## -returns
-<p>This method may also return other error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>E_INVALIDARG</b></dt>

@@ -58,19 +58,19 @@ NTSTATUS ObReferenceObjectByPointer(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>Pointer to the object's body.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies a mask representing the requested access to the object.</p>
 </dd>
 
-### -param <i>ObjectType</i> [in, optional]
+### -param ObjectType [in, optional]
 
 <dd>
 <p>Pointer to the object type. <i>ObjectType</i> can be <b>*ExEventObjectType</b>, <b>*ExSemaphoreObjectType</b>, <b>*IoFileObjectType</b>, <b>*PsProcessType</b>, <b>*PsThreadType</b>, <b>*SeTokenObjectType</b>, <b>*TmEnlistmentObjectType</b>, <b>*TmResourceManagerObjectType</b>, <b>*TmTransactionManagerObjectType</b>, or <b>*TmTransactionObjectType</b>. </p>
@@ -79,7 +79,7 @@ NTSTATUS ObReferenceObjectByPointer(
 <p>This parameter can also be <b>NULL</b> if <i>AccessMode</i> is <b>KernelMode</b>.</p>
 </dd>
 
-### -param <i>AccessMode</i> [in]
+### -param AccessMode [in]
 
 <dd>
 <p>Indicates the access mode to use for the access check. It must be either <b>UserMode</b> or <b>KernelMode</b>. Lower-level drivers should specify <b>KernelMode</b>.</p>

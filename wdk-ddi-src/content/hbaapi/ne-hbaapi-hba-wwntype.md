@@ -55,13 +55,13 @@ typedef enum HBA_wwntype {
 ## -enum-fields
 <dl>
 
-### -field <a id="NODE_WWN"></a><a id="node_wwn"></a><b>NODE_WWN</b>
+### -field NODE_WWN
 
 <dd>
 <p>Indicates that the world wide name specifies a node..</p>
 </dd>
 
-### -field <a id="PORT_WWN"></a><a id="port_wwn"></a><b>PORT_WWN</b>
+### -field PORT_WWN
 
 <dd>
 <p>Indicates that the world wide name specifies a port. </p>

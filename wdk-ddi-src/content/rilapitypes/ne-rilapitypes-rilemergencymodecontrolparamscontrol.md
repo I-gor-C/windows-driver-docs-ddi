@@ -7,7 +7,7 @@ old-location: netvista\rilemergencymodecontrolparamscontrol_2.htm
 old-project: netvista
 ms.assetid: b169e3a3-141b-4bca-9eaa-ce55f7194e4f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILEMERGENCYMODECONTROLPARAMSCONTROL {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_EMC_OTHER_MODEM_IN_EMERGECY_MODE"></a><a id="ril_emc_other_modem_in_emergecy_mode"></a><b>RIL_EMC_OTHER_MODEM_IN_EMERGECY_MODE</b>
+### -field RIL_EMC_OTHER_MODEM_IN_EMERGECY_MODE
 
 <dd></dd>
 
-### -field <a id="RIL_EMC_ALL_MODEMS_ARE_IN_NORMAL_MODE"></a><a id="ril_emc_all_modems_are_in_normal_mode"></a><b>RIL_EMC_ALL_MODEMS_ARE_IN_NORMAL_MODE</b>
+### -field RIL_EMC_ALL_MODEMS_ARE_IN_NORMAL_MODE
 
 <dd></dd>
 
-### -field <a id="RIL_EMC_MAX"></a><a id="ril_emc_max"></a><b>RIL_EMC_MAX</b>
+### -field RIL_EMC_MAX
 
 <dd></dd>
 </dl>

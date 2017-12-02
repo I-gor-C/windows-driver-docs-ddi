@@ -57,25 +57,25 @@ typedef struct _CHANGER_MOVE_MEDIUM {
 ## -struct-fields
 <dl>
 
-### -field <b>Transport</b>
+### -field Transport
 
 <dd>
 <p>Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a> that indicates which transport element to use for the move operation. The <b>ElementType</b> member of the CHANGER_ELEMENT structure must be assigned a value of <b>ChangerTransport</b>. </p>
 </dd>
 
-### -field <b>Source</b>
+### -field Source
 
 <dd>
 <p>Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a> that indicates the element that contains the piece of media to be moved to <b>Destination</b>. The <b>ElementType</b> must be <b>ChangerDrive</b>, <b>ChangerTransport</b>, <b>ChangerSlot</b>, or <b>ChangerIEPort</b>.</p>
 </dd>
 
-### -field <b>Destination</b>
+### -field Destination
 
 <dd>
 <p>Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a> that indicates the destination of the piece of media originally at <b>Source</b>. The <b>ElementType</b> must be <b>ChangerDrive</b>, <b>ChangerTransport</b>, <b>ChangerSlot</b>, or <b>ChangerIEPort</b>.</p>
 </dd>
 
-### -field <b>Flip</b>
+### -field Flip
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the piece of media should be flipped. When <b>FALSE</b> the media is not ready to be flipped. This member is valid only if CHANGER_MEDIUM_FLIP is set in the <b>Features0</b> member of the  <a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a> structure.</p>

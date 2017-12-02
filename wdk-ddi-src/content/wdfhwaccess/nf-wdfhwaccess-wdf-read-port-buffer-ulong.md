@@ -7,7 +7,7 @@ old-location: wdf\wdf_read_port_buffer_ulong.htm
 old-project: wdf
 ms.assetid: 4ED85628-E5EA-4D51-97B0-383C606CCC42
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_READ_PORT_BUFFER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ void WDF_READ_PORT_BUFFER_ULONG(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>Port</i> [in]
+### -param Port [in]
 
 <dd>
 <p>Specifies the port address, which must be a mapped memory range in I/O space.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>A pointer to a buffer into which an array of ULONG values is read.</p>
 </dd>
 
-### -param <i>Count </i> [in]
+### -param Count  [in]
 
 <dd>
 <p>Specifies the number of ULONG values to be read into the buffer.</p>

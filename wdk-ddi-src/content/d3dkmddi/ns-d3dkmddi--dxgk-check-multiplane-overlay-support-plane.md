@@ -56,19 +56,19 @@ typedef struct _DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[out] A handle to the allocation. The display miniport driver must set this member to a value that it can use to refer to its private tracking structure for the allocation.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based video present network (VidPN) source identification number of the input for which the support levels are queried.</p>
 </dd>
 
-### -field <b>PlaneAttributes</b>
+### -field PlaneAttributes
 
 <dd>
 <p>A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-attributes.md">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES</a> structure that specifies overlay plane attributes.</p>

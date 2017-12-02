@@ -61,31 +61,31 @@ typedef union _PCI_EXPRESS_ROOT_ERROR_COMMAND {
 ## -struct-fields
 <dl>
 
-### -field <b>CorrectableErrorReportingEnable</b>
+### -field CorrectableErrorReportingEnable
 
 <dd>
 <p>A single bit that indicates that interrupts are enabled for when a correctable error is reported by any of the devices in the hierarchy that are associated with this root port.</p>
 </dd>
 
-### -field <b>NonFatalErrorReportingEnable</b>
+### -field NonFatalErrorReportingEnable
 
 <dd>
 <p>A single bit that indicates that interrupts are enabled for when a non-fatal error is reported by any of the devices in the hierarchy that are associated with this root port.</p>
 </dd>
 
-### -field <b>FatalErrorReportingEnable</b>
+### -field FatalErrorReportingEnable
 
 <dd>
 <p>A single bit that indicates that interrupts are enabled for when a non-fatal error is reported by any of the devices in the hierarchy that are associated with this root port.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_ROOT_ERROR_COMMAND structure.</p>

@@ -56,20 +56,20 @@ BOOL GdiEndPageEMF(
 ## -parameters
 <dl>
 
-### -param <i>SpoolFileHandle</i> 
+### -param SpoolFileHandle 
 
 <dd>
 <p>Caller-supplied spool file handle, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>.</p>
 </dd>
 
-### -param <i>dwOptimization</i> 
+### -param dwOptimization 
 
 <dd>
 <p>Caller-supplied flags. The following flag is defined:</p>
 <p></p>
 <dl>
 
-### -param <a id="EMF_PP_COLOR_OPTIMIZATION"></a><a id="emf_pp_color_optimization"></a>EMF_PP_COLOR_OPTIMIZATION
+### -param EMF_PP_COLOR_OPTIMIZATION
 
 <dd>
 <p>Enable color optimization. For more information, see Remarks.</p>
@@ -94,9 +94,9 @@ BOOL GdiEndPageEMF(
 
 <p>If you are creating a Unidrv rendering plug-in to generate color watermarks, be advised that color optimization causes color watermarks to be printed in black and white when they are printed on black-and-white documents. To ensure that color watermarks print correctly with color and black-and-white documents, disable color optimization.</p>
 
-<p>The color optimization controlled by the <i>dwOptimization</i> parameter can also be controlled by setting the <b>dwColorOptimization</b> member of the <a href="..\winddiui\ns-winddiui--attribute-info-2.md">ATTRIBUTE_INFO_2</a> or <a href="..\winddiui\ns-winddiui--attribute-info-3.md">ATTRIBUTE_INFO_3</a> structures. This optimization also can be controlled by the Unidrv *<b>ChangeColorModeOnDoc?</b> color attribute (see <a href="NULL">Color Attributes</a>).</p>
+<p>The color optimization controlled by the <i>dwOptimization</i> parameter can also be controlled by setting the <b>dwColorOptimization</b> member of the <a href="..\winddiui\ns-winddiui--attribute-info-2.md">ATTRIBUTE_INFO_2</a> or <a href="..\winddiui\ns-winddiui--attribute-info-3.md">ATTRIBUTE_INFO_3</a> structures. This optimization also can be controlled by the Unidrv *<b>ChangeColorModeOnDoc?</b> color attribute (see <a href="https://msdn.microsoft.com/c8de0186-9cf5-43e5-81e7-33351a34c13c">Color Attributes</a>).</p>
 
-<p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.</p>
 
 ## -requirements
 <table>

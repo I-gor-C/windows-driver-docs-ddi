@@ -63,49 +63,49 @@ typedef struct _D3DKMT_BRIGHTNESS_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A value of type <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-brightness-info-type.md">D3DKMT_BRIGHTNESS_INFO_TYPE</a> that  indicates the type of brightness information to retrieve or set.</p>
 </dd>
 
-### -field <b>PossibleLevels</b>
+### -field PossibleLevels
 
 <dd>
 <p>A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-brightness-possible-levels.md">D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS</a> structure that contains information about all possible brightness levels that the integrated display panel supports.</p>
 </dd>
 
-### -field <b>Brightness</b>
+### -field Brightness
 
 <dd>
 <p>The current brightness level.</p>
 </dd>
 
-### -field <b>BrightnessCaps</b>
+### -field BrightnessCaps
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-brightness-caps.md">DXGK_BRIGHTNESS_CAPS</a> structure that represents the brightness control capabilities of the integrated display panel.</p>
 </dd>
 
-### -field <b>BrightnessState</b>
+### -field BrightnessState
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-brightness-state.md">DXGK_BRIGHTNESS_STATE</a> structure that represents the smooth brightness control capabilities of the integrated display panel.</p>
 </dd>
 
-### -field <b>OptimizationLevel</b>
+### -field OptimizationLevel
 
 <dd>
 <p>A <a href="..\d3dkmdt\ne-d3dkmdt-dxgk-backlight-optimization-level.md">DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</a> structure that represents the optimization level of brightness control.</p>
 </dd>
 
-### -field <b>ReductionInfo</b>
+### -field ReductionInfo
 
 <dd>
 <p>A value of type <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-backlight-info.md">DXGK_BACKLIGHT_INFO</a> that provides the current absolute level of backlight reduction.</p>
 </dd>
 
-### -field <b>VerboseLogging</b>
+### -field VerboseLogging
 
 <dd>
 <p>A boolean value that indicates whether Event Tracing for Windows (ETW) logging of brightness information should be verbose.</p>

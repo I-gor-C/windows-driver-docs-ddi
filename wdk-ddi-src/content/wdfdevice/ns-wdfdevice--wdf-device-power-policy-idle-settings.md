@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_power_policy_idle_settings.htm
 old-project: wdf
 ms.assetid: 8d5acd3a-3ec3-4190-98d4-e7ce9ea8d3e8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, *PWDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,37 +64,37 @@ typedef struct _WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>IdleCaps</b>
+### -field IdleCaps
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-power-policy-s0-idle-capabilities.md">WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</a>-typed enumerator that identifies the device's ability to wake itself up after being set to a low-power state, while the system remains in its working (S0) state.</p>
 </dd>
 
-### -field <b>DxState</b>
+### -field DxState
 
 <dd>
 <p>A <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a>-typed enumerator that identifies the low <a href="https://msdn.microsoft.com/2229f34c-9b88-4e3e-802e-f7be2c7ef168">device power state</a> that the device will enter after the idle timeout period ends. <b>DEVICE_POWER_STATE</b> values are defined in <i>wdm.h</i>.</p>
 </dd>
 
-### -field <b>IdleTimeout</b>
+### -field IdleTimeout
 
 <dd>
 <p>The amount of time, in milliseconds, that the device will remain idle before the framework places it in the <b>DxState</b>-supplied low-power state. To use the framework's default idle timeout value, specify <b>IdleTimeoutDefaultValue</b>. For more information on when the framework considers the device to be idle, see <a href="wdf.supporting_idle_power_down#idle_conditions#idle_conditions">Supporting Idle Power-Down</a>.</p>
 </dd>
 
-### -field <b>UserControlOfIdleSettings</b>
+### -field UserControlOfIdleSettings
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-power-policy-s0-idle-user-control.md">WDF_POWER_POLICY_S0_IDLE_USER_CONTROL</a>-typed enumerator that indicates whether users have the ability to modify the device's idle settings.</p>
 </dd>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed enumerator that indicates whether the device will be powered down if it remains idle and while the system power is at S0. This member can have one of the following values:</p>
@@ -112,7 +112,7 @@ typedef struct _WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS {
 <p>If powering down is enabled, the device has a wake-up capability, and the idle timeout value expires, the framework calls the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-arm-wake-from-s0.md">EvtDeviceArmWakeFromS0</a> callback function before the device enters a low-power state.</p>
 </dd>
 
-### -field <b>PowerUpIdleDeviceOnSystemWake</b>
+### -field PowerUpIdleDeviceOnSystemWake
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed enumerator that indicates whether the device will return to its working (D0) state when the system returns to its working (S0) state. This member is valid only if the driver sets the <b>IdleCaps</b> member to <a href="..\wudfddi_types\ne-wudfddi-types--wdf-power-policy-s0-idle-capabilities.md">IdleCannotWakeFromS0</a>. The <b>PowerUpIdleDeviceOnSystemWake</b> member can have one of the following values:</p>
@@ -131,14 +131,14 @@ typedef struct _WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS {
 <p>The <b>PowerUpIdleDeviceOnSystemWake</b> member is available in version 1.9 and later versions of KMDF, and starting in version 2.0 of UMDF.</p>
 </dd>
 
-### -field <b>IdleTimeoutType</b>
+### -field IdleTimeoutType
 
 <dd>
 <p>A <a href="..\wdfdevice\ne-wdfdevice--wdf-power-policy-idle-timeout-type.md">WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE</a>-typed enumerator  that indicates how the <b>IdleTimeout</b> member is used.</p>
 <p>The <b>IdleTimeoutType</b> member is available in version 1.11 and later versions of KMDF, and starting in version 2.0 of UMDF. See additional information in Remarks.</p>
 </dd>
 
-### -field <b>ExcludeD3Cold</b>
+### -field ExcludeD3Cold
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed enumerator that indicates whether the D3cold power state should be an allowable choice for the low-power state that the device will enter when the idle timeout period expires. The <b>ExcludeD3Cold</b> member can have one of the following values:</p>

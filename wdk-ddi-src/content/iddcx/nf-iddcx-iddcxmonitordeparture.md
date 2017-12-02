@@ -56,7 +56,7 @@ NTSTATUS IddCxMonitorDeparture(
 ## -parameters
 <dl>
 
-### -param <i>MonitorObject</i> [in]
+### -param MonitorObject [in]
 
 <dd>
 <p>The monitor object that is departing</p>

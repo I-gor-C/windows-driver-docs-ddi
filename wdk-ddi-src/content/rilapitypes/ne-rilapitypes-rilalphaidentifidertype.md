@@ -7,7 +7,7 @@ old-location: netvista\rilalphaidentifidertype_2.htm
 old-project: netvista
 ms.assetid: 25e65540-b221-453a-95ff-ec2b96857475
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILALPHAIDENTIFIDERTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_ALPHAIDENTIFIERTYPE_PRESENT"></a><a id="ril_alphaidentifiertype_present"></a><b>RIL_ALPHAIDENTIFIERTYPE_PRESENT</b>
+### -field RIL_ALPHAIDENTIFIERTYPE_PRESENT
 
 <dd></dd>
 
-### -field <a id="RIL_ALPHAIDENTIFIERTYPE_NOTPRESENT"></a><a id="ril_alphaidentifiertype_notpresent"></a><b>RIL_ALPHAIDENTIFIERTYPE_NOTPRESENT</b>
+### -field RIL_ALPHAIDENTIFIERTYPE_NOTPRESENT
 
 <dd></dd>
 
-### -field <a id="RIL_ALPHAIDENTIFIERTYPE_MAX"></a><a id="ril_alphaidentifiertype_max"></a><b>RIL_ALPHAIDENTIFIERTYPE_MAX</b>
+### -field RIL_ALPHAIDENTIFIERTYPE_MAX
 
 <dd></dd>
 </dl>

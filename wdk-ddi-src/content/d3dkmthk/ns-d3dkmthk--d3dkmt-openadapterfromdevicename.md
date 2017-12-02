@@ -56,19 +56,19 @@ typedef struct _D3DKMT_OPENADAPTERFROMDEVICENAME {
 ## -struct-fields
 <dl>
 
-### -field <b>pDeviceName</b>
+### -field pDeviceName
 
 <dd>
 <p>[in] A Null-terminated string that contains the name of the device from which to open an adapter instance. </p>
 </dd>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[out] A handle to the graphics adapter for the device that <b>pDeviceName</b> specifies. The adapter handle is returned from the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromdevicename.md">D3DKMTOpenAdapterFromDeviceName</a> function.</p>
 </dd>
 
-### -field <b>AdapterLuid</b>
+### -field AdapterLuid
 
 <dd>
 <p>[out] The locally unique identifier (<a href="kernel.luid">LUID</a>) of the graphics adapter for the device that <b>pDeviceName</b> specifies. The LUID is returned from the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromdevicename.md">D3DKMTOpenAdapterFromDeviceName</a> call.</p>

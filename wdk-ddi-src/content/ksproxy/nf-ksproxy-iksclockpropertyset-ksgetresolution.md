@@ -54,7 +54,7 @@ HRESULT KsGetResolution(
 ## -parameters
 <dl>
 
-### -param <i>Resolution</i> [out]
+### -param Resolution [out]
 
 <dd>
 <p>Pointer to a variable that receives a <a href="stream.ksresolution">KSRESOLUTION</a> structure that contains the granularity and error of the underlying clock.</p>

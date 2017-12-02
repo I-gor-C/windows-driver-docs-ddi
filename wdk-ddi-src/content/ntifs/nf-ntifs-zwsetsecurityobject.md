@@ -56,13 +56,13 @@ NTSTATUS ZwSetSecurityObject(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Handle for the object whose security state is to be set. This handle must have the access specified in the Meaning column of the table shown in the description of the <i>SecurityInformation</i> parameter.</p>
 </dd>
 
-### -param <i>SecurityInformation</i> [in]
+### -param SecurityInformation [in]
 
 <dd>
 <p>
@@ -108,7 +108,7 @@ NTSTATUS ZwSetSecurityObject(
 <p> </p>
 </dd>
 
-### -param <i>SecurityDescriptor</i> [in]
+### -param SecurityDescriptor [in]
 
 <dd>
 <p>Pointer to the security descriptor to be set for the object.</p>

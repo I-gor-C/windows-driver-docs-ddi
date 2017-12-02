@@ -58,23 +58,23 @@ typedef struct _BDA_ISDBCAS_RESPONSEDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>ulRequestID</b>
+### -field ulRequestID
 
 <dd></dd>
 
-### -field <b>ulIsdbStatus</b>
+### -field ulIsdbStatus
 
 <dd></dd>
 
-### -field <b>ulIsdbDataSize</b>
+### -field ulIsdbDataSize
 
 <dd></dd>
 
-### -field <b>argbIsdbCommandData</b>
+### -field argbIsdbCommandData
 
 <dd></dd>
 </dl>

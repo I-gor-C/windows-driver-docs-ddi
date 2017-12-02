@@ -56,19 +56,19 @@ NTSTATUS RtlLongPtrSub(
 ## -parameters
 <dl>
 
-### -param <i>lMinuend</i> [in]
+### -param lMinuend [in]
 
 <dd>
 <p>The value from which <i>lSubtrahend</i> is subtracted.</p>
 </dd>
 
-### -param <i>lSubtrahend</i> [in]
+### -param lSubtrahend [in]
 
 <dd>
 <p>The value to subtract from <i>lMinuend</i>.</p>
 </dd>
 
-### -param <i>plResult</i> [out]
+### -param plResult [out]
 
 <dd>
 <p>A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

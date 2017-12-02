@@ -7,7 +7,7 @@ old-location: wdf\wudf_interrupt_config.htm
 old-project: wdf
 ms.assetid: 7A849A10-2C47-42E2-8BEB-E1D979D3C893
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_INTERRUPT_CONFIG, WUDF_INTERRUPT_CONFIG, *PWUDF_INTERRUPT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,55 +65,55 @@ typedef struct _WUDF_INTERRUPT_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>ShareVector</b>
+### -field ShareVector
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed value. If this value is <b>WdfTrue</b>, the interrupt vector can be shared. If the value is <b>WdfFalse</b>, the interrupt vector cannot be shared. If the value is <b>WdfDefault</b> and the interrupt is level-triggered,  the Plug and Play manager uses the bus driver's value. If the value is <b>WdfDefault</b> and the interrupt is not level-triggered, the interrupt vector cannot be shared.</p>
 </dd>
 
-### -field <b>AutomaticSerialization</b>
+### -field AutomaticSerialization
 
 <dd>
 <p>A Boolean value that, if TRUE, indicates that the framework will synchronize execution of the interrupt object's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-workitem.md">OnInterruptWorkItem</a> callback function with other callback functions that use the framework's <a href="wdf.specifying_a_callback_synchronization_mode">callback synchronization</a> functionality.  See  Remarks for more information.</p>
 </dd>
 
-### -field <b>OnInterruptIsr</b>
+### -field OnInterruptIsr
 
 <dd>
 <p>A pointer to the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-isr.md">OnInterruptIsr</a> callback function, or NULL.</p>
 </dd>
 
-### -field <b>OnInterruptEnable</b>
+### -field OnInterruptEnable
 
 <dd>
 <p>A pointer to the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-enable.md">OnInterruptEnable</a> callback function, or NULL.</p>
 </dd>
 
-### -field <b>OnInterruptDisable</b>
+### -field OnInterruptDisable
 
 <dd>
 <p>A pointer to the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-disable.md">OnInterruptDisable</a> callback function, or NULL.</p>
 </dd>
 
-### -field <b>OnInterruptWorkItem</b>
+### -field OnInterruptWorkItem
 
 <dd>
 <p>A pointer to the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-workitem.md">OnInterruptWorkItem</a> callback function, or NULL.</p>
 </dd>
 
-### -field <b>InterruptRaw</b>
+### -field InterruptRaw
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes the <a href="wdf.raw_and_translated_resources">raw resources</a> that the system assigned to the interrupt. This member is only used if the interrupt is created in the <a href="wdf.ipnpcallbackhardware_onpreparehardware">OnPrepareHardware</a> callback.</p>
 </dd>
 
-### -field <b>InterruptTranslated</b>
+### -field InterruptTranslated
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes the <a href="wdf.raw_and_translated_resources">translated resources</a> that the system assigned to the interrupt. This member is only used if the interrupt is created in the <a href="wdf.ipnpcallbackhardware_onpreparehardware">OnPrepareHardware</a> callback.</p>
@@ -176,4 +176,4 @@ UMDF supports edge-triggered, line-based interrupts and message-signaled interru
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_INTERRUPT_CONFIG structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_INTERRUPT_CONFIG structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

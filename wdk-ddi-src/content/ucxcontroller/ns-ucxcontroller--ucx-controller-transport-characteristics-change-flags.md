@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Defines flags for the transport characteristics changes. This structure is used in the <a href="buses.evt_ucx_controller_set_transport_characteristics_change_notification">EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION</a> callback function.</p>
+<p>Defines flags for the transport characteristics changes. This structure is used in the <a href="..\ucxcontroller\nc-ucxcontroller-evt-ucx-controller-set-transport-characteristics-change-notification.md">EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION</a> callback function.</p>
 
 
 ## -syntax
@@ -59,13 +59,13 @@ typedef union _UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>AsUlong32</b>
+### -field AsUlong32
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>                    CurrentRoundtripLatencyChanged</b>
+### -field                     CurrentRoundtripLatencyChanged
 
 <dd>
 <p>Contains the current round-trip delay in milliseconds from the time a non-isochronous transfer is received by the USB driver stack to the time that the transfer is completed.  
@@ -74,7 +74,7 @@ For MA-USB, the underlying network could be WiFi, WiGig, Ethernet etc. The delay
 </p>
 </dd>
 
-### -field <b>                    CurrentTotalBandwidthChanged</b>
+### -field                     CurrentTotalBandwidthChanged
 
 <dd>
 <p>Contains the total bandwidth of the host controller’s shared transport. 
@@ -120,7 +120,7 @@ For MA-USB, the underlying network transport could be WiFi, WiGig, Ethernet etc.
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_ucx_controller_set_transport_characteristics_change_notification">EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION</a>
+<a href="..\ucxcontroller\nc-ucxcontroller-evt-ucx-controller-set-transport-characteristics-change-notification.md">EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION</a>
 </dt>
 </dl>
 <p> </p>

@@ -57,19 +57,19 @@ typedef enum _DEVICE_REMOVAL_POLICY {
 ## -enum-fields
 <dl>
 
-### -field <a id="RemovalPolicyExpectNoRemoval"></a><a id="removalpolicyexpectnoremoval"></a><a id="REMOVALPOLICYEXPECTNOREMOVAL"></a><b>RemovalPolicyExpectNoRemoval</b>
+### -field RemovalPolicyExpectNoRemoval
 
 <dd>
 <p>The device is not typically removed.</p>
 </dd>
 
-### -field <a id="RemovalPolicyExpectOrderlyRemoval"></a><a id="removalpolicyexpectorderlyremoval"></a><a id="REMOVALPOLICYEXPECTORDERLYREMOVAL"></a><b>RemovalPolicyExpectOrderlyRemoval</b>
+### -field RemovalPolicyExpectOrderlyRemoval
 
 <dd>
 <p>The device is typically removed in an orderly fashion. (Before the device is removed, the Plug and Play [PnP] manager sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551705">IRP_MN_QUERY_REMOVE_DEVICE</a> request to the device's driver.)</p>
 </dd>
 
-### -field <a id="RemovalPolicyExpectSurpriseRemoval"></a><a id="removalpolicyexpectsurpriseremoval"></a><a id="REMOVALPOLICYEXPECTSURPRISEREMOVAL"></a><b>RemovalPolicyExpectSurpriseRemoval</b>
+### -field RemovalPolicyExpectSurpriseRemoval
 
 <dd>
 <p>The device can be removed suddenly. (The driver receives no advance warning that the device will be removed. The Plug and Play [PnP] manager sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551760">IRP_MN_SURPRISE_REMOVAL</a> request when the device is removed.) </p>

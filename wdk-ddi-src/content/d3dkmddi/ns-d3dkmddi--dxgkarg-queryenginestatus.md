@@ -56,19 +56,19 @@ typedef struct _DXGKARG_QUERYENGINESTATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>[in] An index of a node within the physical adapter defined by   the <b>EngineOrdinal</b> member that is being queried in a call to <a href="display.dxgkddiqueryenginestatus">DxgkDdiQueryEngineStatus</a>.</p>
 </dd>
 
-### -field <b>EngineOrdinal</b>
+### -field EngineOrdinal
 
 <dd>
 <p>[in] An index that defines the physical adapter in a linked display adapter (LDA) configuration that the node defined by <b>NodeOrdinal</b> belongs to.</p>
 </dd>
 
-### -field <b>EngineStatus</b>
+### -field EngineStatus
 
 <dd>
 <p>[out] The progress, of type <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-enginestatus.md">DXGK_ENGINESTATUS</a>, of the node and physical adapter that are specified by the <b>NodeOrdinal</b> and <b>EngineOrdinal</b> members.</p>

@@ -57,25 +57,25 @@ typedef struct tagFaceCharacterization {
 ## -struct-fields
 <dl>
 
-### -field <b>BlinkScoreLeft</b>
+### -field BlinkScoreLeft
 
 <dd>
 <p>0 indicates no blink for the left eye, 100 indicates definite blink for the left eye (0 - 100).</p>
 </dd>
 
-### -field <b>BlinkScoreRight</b>
+### -field BlinkScoreRight
 
 <dd>
 <p>0 indicates no blink for the right eye, 100 indicates definite blink for the right eye (0 - 100).</p>
 </dd>
 
-### -field <b>FacialExpression</b>
+### -field FacialExpression
 
 <dd>
 <p>A  defined facial expression value.</p>
 </dd>
 
-### -field <b>FacialExpressionScore</b>
+### -field FacialExpressionScore
 
 <dd>
 <p>0 indicates no such facial expression as identified, 100 indicates definite such facial expression as defined (0 - 100).</p>

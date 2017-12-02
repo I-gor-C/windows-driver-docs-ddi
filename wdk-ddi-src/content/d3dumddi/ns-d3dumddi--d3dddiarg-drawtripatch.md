@@ -54,7 +54,7 @@ typedef struct _D3DDDIARG_DRAWTRIPATCH {
 ## -struct-fields
 <dl>
 
-### -field <b>Handle</b>
+### -field Handle
 
 <dd>
 <p>[in] The handle to the patch surface.</p>

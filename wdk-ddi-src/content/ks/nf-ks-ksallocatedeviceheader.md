@@ -56,19 +56,19 @@ NTSTATUS KsAllocateDeviceHeader(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [out]
+### -param Header [out]
 
 <dd>
 <p>Points to the location in which to return a pointer to the initialized header.</p>
 </dd>
 
-### -param <i>ItemsCount</i> [in]
+### -param ItemsCount [in]
 
 <dd>
 <p>Specifies the number of subitems in the <i>ItemsList</i>. This should be zero if an <i>ItemsList</i> is not passed.</p>
 </dd>
 
-### -param <i>ItemsList</i> [in, optional]
+### -param ItemsList [in, optional]
 
 <dd>
 <p>Optional. Points to a KSOBJECT_CREATE_ITEM structure for each subitem. If there are no subitems, this value should be <b>NULL</b> and <i>ItemsCount</i> should be zero.</p>

@@ -57,22 +57,22 @@ typedef struct _USBFN_CLASS_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>InterfaceNumber</b>
+### -field InterfaceNumber
 
 <dd>
 <p>The index number of the interface.</p>
 </dd>
 
-### -field <b>PipeCount</b>
+### -field PipeCount
 
 <dd>
 <p>The number of endpoints contained in  the interface.</p>
 </dd>
 
-### -field <b>PipeArr</b>
+### -field PipeArr
 
 <dd>
-<p>An array of <a href="buses.usbfn_pipe_information">USBFN_PIPE_INFORMATION</a> structures that describes the endpoints in the interface.</p>
+<p>An array of <a href="..\usbfnbase\ns-usbfnbase--usbfn-pipe-information.md">USBFN_PIPE_INFORMATION</a> structures that describes the endpoints in the interface.</p>
 </dd>
 </dl>
 
@@ -96,7 +96,7 @@ typedef struct _USBFN_CLASS_INTERFACE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbfn_pipe_information">USBFN_PIPE_INFORMATION</a>
+<a href="..\usbfnbase\ns-usbfnbase--usbfn-pipe-information.md">USBFN_PIPE_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

@@ -55,7 +55,7 @@ HRESULT ExpandIntentOptions(
 ## -parameters
 <dl>
 
-### -param <i>pPrintTicket</i> [in, out]
+### -param pPrintTicket [in, out]
 
 <dd>
 <p>A pointer to a print ticket.</p>

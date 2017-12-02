@@ -57,19 +57,19 @@ typedef struct _WMIGUIDREGINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Guid</b>
+### -field Guid
 
 <dd>
 <p>Pointer to the GUID that identifies the block. The memory that contains the GUID can be paged unless it is also used to call <a href="..\wmilib\nf-wmilib-wmifireevent.md">WmiFireEvent</a>.</p>
 </dd>
 
-### -field <b>InstanceCount</b>
+### -field InstanceCount
 
 <dd>
 <p>Specifies the number of instances defined for the block.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flag bits that indicate characteristics of the block. These flag bits are defined in the Wmistr.h header file. WMI ORs the <b>Flags</b> parameter value with the flag bits set by the driver in the <i>RegFlags</i> parameter of its <a href="kernel.dpwmiqueryreginfo">DpWmiQueryReginfo</a> routine, which apply to all of the data blocks and event blocks registered by the driver. <b>Flags</b> therefore supplements the driver's default settings for a given block.</p>
@@ -77,7 +77,7 @@ typedef struct _WMIGUIDREGINFO {
 <p></p>
 <dl>
 
-### -field <a id="WMIREG_FLAG_INSTANCE_PDO"></a><a id="wmireg_flag_instance_pdo"></a>WMIREG_FLAG_INSTANCE_PDO
+### -field WMIREG_FLAG_INSTANCE_PDO
 
 <dd>
 <p>Requests WMI to generate static instance names from the device instance ID for the PDO. If this flag is set, the <i>Pdo</i> parameter of the driver's <i>DpWmiQueryReginfo</i> routine points to the PDO passed to the driver's <a href="kernel.adddevice">AddDevice</a> routine. WMI generates instance names from the device instance path of the PDO. Using the device instance path as a base for static instance names is efficient because such names are guaranteed to be unique. WMI automatically supplies a "friendly" name for the instance as an item in a data block that can be queried by data consumers.</p>
@@ -87,19 +87,19 @@ typedef struct _WMIGUIDREGINFO {
 <p></p>
 <dl>
 
-### -field <a id="WMIREG_FLAG_EVENT_ONLY_GUID"></a><a id="wmireg_flag_event_only_guid"></a>WMIREG_FLAG_EVENT_ONLY_GUID
+### -field WMIREG_FLAG_EVENT_ONLY_GUID
 
 <dd>
 <p>The block can be enabled or disabled as an event only, and cannot be queried or set. If this flag is clear, the block can also be queried or set.</p>
 </dd>
 
-### -field <a id="WMIREG_FLAG_EXPENSIVE"></a><a id="wmireg_flag_expensive"></a>WMIREG_FLAG_EXPENSIVE
+### -field WMIREG_FLAG_EXPENSIVE
 
 <dd>
 <p>Requests WMI to send an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550857">IRP_MN_ENABLE_COLLECTION</a> request the first time a data consumer opens the data block and an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550848">IRP_MN_DISABLE_COLLECTION</a> request when the last data consumer closes the data block. This is recommended if collecting such data affects performance, because a driver need not collect the data until a data consumer explicitly requests it by opening the block.</p>
 </dd>
 
-### -field <a id="WMIREG_FLAG_REMOVE_GUID_"></a><a id="wmireg_flag_remove_guid_"></a>WMIREG_FLAG_REMOVE_GUID 
+### -field WMIREG_FLAG_REMOVE_GUID 
 
 <dd>
 <p>Requests WMI to remove support for this block. This flag is valid only in response to a request to update registration information (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a> with <b>Parameters.WMI.DataPath </b>set to WMIUPDATE).</p>

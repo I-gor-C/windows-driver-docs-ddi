@@ -7,7 +7,7 @@ old-location: acpi\registeropregionhandler.htm
 old-project: acpi
 ms.assetid: 5795a1d1-0e13-4f9f-b2f2-37bbd71bde7a
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: RegisterOpRegionHandler
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ NTSTATUS RegisterOpRegionHandler(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the physical device object (<a href="wdkgloss.p#wdkgloss.pdo#wdkgloss.pdo"><i>PDO</i></a>) that represents the ACPI device that defines the operation region.</p>
 </dd>
 
-### -param <i>AccessType</i> [in]
+### -param AccessType [in]
 
 <dd>
 <p>Specifies ACPI_OPREGION_ACCESS_AS_COOKED.</p>
 </dd>
 
-### -param <i>RegionSpace</i> [in]
+### -param RegionSpace [in]
 
 <dd>
 <p>Specifies one of the following types of region space.</p>
@@ -149,25 +149,25 @@ NTSTATUS RegisterOpRegionHandler(
 <p> </p>
 </dd>
 
-### -param <i>Handler</i> [in]
+### -param Handler [in]
 
 <dd>
 <p>Pointer to the <a href="..\oprghdlr\nc-oprghdlr-acpi-op-region-handler.md">ACPI_OP_REGION_HANDLER</a>-typed operation region handler (supplied by an ACPI device function driver).</p>
 </dd>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to a device-specific operation region context (supplied by an ACPI device function driver).</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Reserved for internal use.</p>
 </dd>
 
-### -param <i>OperationRegionObject</i> [out]
+### -param OperationRegionObject [out]
 
 <dd>
 <p>Pointer to caller-allocated buffer that, on output, contains a pointer to the operation region object that the ACPI driver creates for the operation region.</p>
@@ -245,4 +245,4 @@ NTSTATUS RegisterOpRegionHandler(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [acpi\acpi]:%20RegisterOpRegionHandler routine%20 RELEASE:%20(11/16/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [acpi\acpi]:%20RegisterOpRegionHandler routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

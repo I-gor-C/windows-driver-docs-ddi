@@ -56,13 +56,13 @@ NTSTATUS USBD_UrbAllocate(
 ## -parameters
 <dl>
 
-### -param <i>USBDHandle</i> [in]
+### -param USBDHandle [in]
 
 <dd>
 <p>USBD handle that is retrieved by the client driver in a previous call to  the <a href="..\usbdlib\nf-usbdlib-usbd-createhandle.md">USBD_CreateHandle</a> routine.</p>
 </dd>
 
-### -param <i>Urb</i> [out]
+### -param Urb [out]
 
 <dd>
 <p>Pointer to the newly allocated <a href="..\usb\ns-usb--urb.md">URB</a> structure. All members of the structure are set to zero. The client driver must free the URB when the driver has finished using it by calling <a href="..\usbdlib\nf-usbdlib-usbd-urbfree.md">USBD_UrbFree</a>.</p>

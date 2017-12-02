@@ -7,7 +7,7 @@ old-location: netvista\fwpsinjectnetworksendasync0.htm
 old-project: netvista
 ms.assetid: 9cc76bf7-a744-46f9-89d5-5277744221e5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsInjectNetworkSendAsync0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NTSTATUS NTAPI FwpsInjectNetworkSendAsync0(
 ## -parameters
 <dl>
 
-### -param <i>injectionHandle</i> [in]
+### -param injectionHandle [in]
 
 <dd>
 <p>An injection handle that was previously created by a call to the 
@@ -69,7 +69,7 @@ NTSTATUS NTAPI FwpsInjectNetworkSendAsync0(
      <i>flags</i> parameter set to FWPS_INJECTION_TYPE_NETWORK.</p>
 </dd>
 
-### -param <i>injectionContext</i> [in, optional]
+### -param injectionContext [in, optional]
 
 <dd>
 <p>An optional handle to the injection context. If specified, it can be obtained by calling the 
@@ -78,13 +78,13 @@ NTSTATUS NTAPI FwpsInjectNetworkSendAsync0(
      <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b>.</p>
 </dd>
 
-### -param <i>flags</i> [in]
+### -param flags [in]
 
 <dd>
 <p>Reserved. Callout drivers must set this parameter to zero.</p>
 </dd>
 
-### -param <i>compartmentId</i> [in]
+### -param compartmentId [in]
 
 <dd>
 <p>The identifier of the routing compartment into which the packet data is injected, specified as a 
@@ -99,7 +99,7 @@ NTSTATUS NTAPI FwpsInjectNetworkSendAsync0(
      <b>currentMetadataValues</b> member. Otherwise, set this parameter to UNSPECIFIED_COMPARTMENT_ID.</p>
 </dd>
 
-### -param <i>netBufferList</i> [in, out]
+### -param netBufferList [in, out]
 
 <dd>
 <p>A pointer to a 
@@ -111,7 +111,7 @@ NTSTATUS NTAPI FwpsInjectNetworkSendAsync0(
      IP header.</p>
 </dd>
 
-### -param <i>completionFn</i> [in]
+### -param completionFn [in]
 
 <dd>
 <p>A pointer to a 
@@ -120,7 +120,7 @@ NTSTATUS NTAPI FwpsInjectNetworkSendAsync0(
      <i>NetBufferList</i> parameter, has been injected into the network stack.</p>
 </dd>
 
-### -param <i>completionContext</i> [in, optional]
+### -param completionContext [in, optional]
 
 <dd>
 <p>A pointer to a callout driver-provided context that is passed to the callout function pointed to
@@ -157,7 +157,7 @@ NTSTATUS NTAPI FwpsInjectNetworkSendAsync0(
     <b>FwpsInjectNetworkSendAsync0</b> function to inject network packet data into the send data path. This
     function can execute asynchronously. Callout drivers normally inject data into the network stack when
     modifying packet data. For more information about how a callout driver can modify packet data, see 
-    <a href="NULL">Callout Driver Operations</a>.</p>
+    <a href="netvista.callout_driver_operations">Callout Driver Operations</a>.</p>
 
 <p>If the return value is not STATUS_SUCCESS, the completion function will not be called. In this case,
     the net buffer list pointed to by 
@@ -267,4 +267,4 @@ NTSTATUS NTAPI FwpsInjectNetworkSendAsync0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectNetworkSendAsync0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectNetworkSendAsync0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

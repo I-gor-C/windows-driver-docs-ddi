@@ -55,13 +55,13 @@ NTSTATUS PsSetCreateProcessNotifyRoutine(
 ## -parameters
 <dl>
 
-### -param <i>NotifyRoutine</i> [in]
+### -param NotifyRoutine [in]
 
 <dd>
 <p>Specifies the entry point of a caller-supplied process-creation callback routine. See <a href="..\ntddk\nc-ntddk-pcreate-process-notify-routine.md">PCREATE_PROCESS_NOTIFY_ROUTINE</a>.</p>
 </dd>
 
-### -param <i>Remove</i> [in]
+### -param Remove [in]
 
 <dd>
 <p>Indicates whether the routine specified by <i>NotifyRoutine</i> should be added to or removed from the system's list of notification routines. If <b>FALSE</b>, the specified routine is added to the list. If <b>TRUE</b>, the specified routine is removed from the list.</p>

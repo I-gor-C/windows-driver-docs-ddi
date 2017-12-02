@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p><code>IPortClsPnp</code> is the PnP management interface that the port class driver (PortCls) exposes to the adapter.</p>
-<p>For more information,  see <a href="NULL">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>
+<p>For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430A-BCAF-04E13FA15382">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>
 <p>The <code>IPortClsPnp</code> interface is available in Windows 10, version 1511 and later versions of Windows. </p>
 
 

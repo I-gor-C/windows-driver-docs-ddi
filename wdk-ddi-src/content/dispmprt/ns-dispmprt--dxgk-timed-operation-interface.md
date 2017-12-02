@@ -74,55 +74,55 @@ typedef struct _DXGK_TIMED_OPERATION_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of the <a href="display.timed_operation_interface">Timed Operation Interface</a>. Version number constants are defined in <i>Dispmprt.h</i> (for example, DXGK_TIMED_OPERATION_INTERFACE_VERSION_1).</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to a context that is provided by the display port driver.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to an interface reference function that is implemented by the display port driver.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to an interface dereference function that is implemented by the display port driver.</p>
 </dd>
 
-### -field <b>TimedOperationStart</b>
+### -field TimedOperationStart
 
 <dd>
 <p>A pointer to the display port driver's <a href="display.timedoperationstart">TimedOperationStart</a> function. </p>
 <dl>
 
-### -field <i>Op</i>
+### -field Op
 
 <dd>
 <p>See <a href="display.timedoperationstart">TimedOperationStart</a> for more information.</p>
 </dd>
 
-### -field <i>Timeout</i>
+### -field Timeout
 
 <dd>
 <p>See <a href="display.timedoperationstart">TimedOperationStart</a> for more information.</p>
 </dd>
 
-### -field <i>OsHandled</i>
+### -field OsHandled
 
 <dd>
 <p>See <a href="display.timedoperationstart">TimedOperationStart</a> for more information.</p>
@@ -130,31 +130,31 @@ typedef struct _DXGK_TIMED_OPERATION_INTERFACE {
 </dl>
 </dd>
 
-### -field <b>TimedOperationDelay</b>
+### -field TimedOperationDelay
 
 <dd>
 <p>A pointer to the display port driver's <a href="display.timedoperationdelay">TimedOperationDelay</a> function. </p>
 <dl>
 
-### -field <i>Op</i>
+### -field Op
 
 <dd>
 <p>See <a href="display.timedoperationdelay">TimedOperationDelay</a> for more information.</p>
 </dd>
 
-### -field <i>WaitMode</i>
+### -field WaitMode
 
 <dd>
 <p>See <a href="display.timedoperationdelay">TimedOperationDelay</a> for more information.</p>
 </dd>
 
-### -field <i>Alertable</i>
+### -field Alertable
 
 <dd>
 <p>See <a href="display.timedoperationdelay">TimedOperationDelay</a> for more information.</p>
 </dd>
 
-### -field <i>Interval</i>
+### -field Interval
 
 <dd>
 <p>See <a href="display.timedoperationdelay">TimedOperationDelay</a> for more information.</p>
@@ -162,43 +162,43 @@ typedef struct _DXGK_TIMED_OPERATION_INTERFACE {
 </dl>
 </dd>
 
-### -field <b>TimedOperationWaitForSingleObject</b>
+### -field TimedOperationWaitForSingleObject
 
 <dd>
 <p>A pointer to the display port driver's <a href="display.timedoperationwaitforsingleobject">TimedOperationWaitForSingleObject</a> function. </p>
 <dl>
 
-### -field <i>Op</i>
+### -field Op
 
 <dd>
 <p>See <a href="display.timedoperationwaitforsingleobject">TimedOperationWaitForSingleObject</a> for more information.</p>
 </dd>
 
-### -field <i>Object</i>
+### -field Object
 
 <dd>
 <p>See <a href="display.timedoperationwaitforsingleobject">TimedOperationWaitForSingleObject</a> for more information.</p>
 </dd>
 
-### -field <i>WaitReason</i>
+### -field WaitReason
 
 <dd>
 <p>See <a href="display.timedoperationwaitforsingleobject">TimedOperationWaitForSingleObject</a> for more information.</p>
 </dd>
 
-### -field <i>WaitMode</i>
+### -field WaitMode
 
 <dd>
 <p>See <a href="display.timedoperationwaitforsingleobject">TimedOperationWaitForSingleObject</a> for more information.</p>
 </dd>
 
-### -field <i>Alertable</i>
+### -field Alertable
 
 <dd>
 <p>See <a href="display.timedoperationwaitforsingleobject">TimedOperationWaitForSingleObject</a> for more information.</p>
 </dd>
 
-### -field <i>Timeout</i>
+### -field Timeout
 
 <dd>
 <p>See <a href="display.timedoperationwaitforsingleobject">TimedOperationWaitForSingleObject</a> for more information.</p>

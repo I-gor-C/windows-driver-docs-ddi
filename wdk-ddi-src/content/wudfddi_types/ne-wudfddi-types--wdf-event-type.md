@@ -7,7 +7,7 @@ old-location: wdf\wdf_event_type.htm
 old-project: wdf
 ms.assetid: DC6353BB-98C0-4647-9180-F099CD95348E
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _WDF_EVENT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfEventReserved"></a><a id="wdfeventreserved"></a><a id="WDFEVENTRESERVED"></a><b>WdfEventReserved</b>
+### -field WdfEventReserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="WdfEventBroadcast"></a><a id="wdfeventbroadcast"></a><a id="WDFEVENTBROADCAST"></a><b>WdfEventBroadcast</b>
+### -field WdfEventBroadcast
 
 <dd>
 <p>In the current version of UMDF, the driver must specify <b>WdfEventBroadcast</b>. For more information, see <a href="..\wdfdevice\nf-wdfdevice-wdfdevicepostevent.md">WdfDevicePostEvent</a>.</p>
 </dd>
 
-### -field <a id="WdfEventMaximum"></a><a id="wdfeventmaximum"></a><a id="WDFEVENTMAXIMUM"></a><b>WdfEventMaximum</b>
+### -field WdfEventMaximum
 
 <dd>
 <p>Reserved for system use.</p>
@@ -122,4 +122,4 @@ typedef enum _WDF_EVENT_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_EVENT_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_EVENT_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

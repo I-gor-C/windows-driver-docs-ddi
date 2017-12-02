@@ -56,16 +56,16 @@ ULONG StorPortGetSystemPortNumber(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Address</i> [in, out]
+### -param Address [in, out]
 
 <dd>
-<p>A pointer to a storage address structure formatted as <a href="..\scsi\ns-scsi--stor-addr-btl8.md">STOR_ADDR_BTL8</a>. On return, the <b>Port</b> member of this structure will contain the port value assigned to the adapter.</p>
+<p>A pointer to a storage address structure formatted as <a href="..\storport\ns-storport--stor-addr-btl8.md">STOR_ADDR_BTL8</a>. On return, the <b>Port</b> member of this structure will contain the port value assigned to the adapter.</p>
 </dd>
 </dl>
 
@@ -85,7 +85,7 @@ ULONG StorPortGetSystemPortNumber(
 <p> </p>
 
 ## -remarks
-<p>The address structure pointed to by <i>Address</i> is allocated and formatted as <a href="..\scsi\ns-scsi--stor-addr-btl8.md">STOR_ADDR_BTL8</a>. The <b>Type</b> member of <i>Address</i> must be set to <b>STOR_ADDRESS_TYPE_BTL8</b> and the <b>Length</b> member <i>Address</i> must be greater than or equal to <b>STOR_ADDR_BTL8_ADDRESS_LENGTH</b>.</p>
+<p>The address structure pointed to by <i>Address</i> is allocated and formatted as <a href="..\storport\ns-storport--stor-addr-btl8.md">STOR_ADDR_BTL8</a>. The <b>Type</b> member of <i>Address</i> must be set to <b>STOR_ADDRESS_TYPE_BTL8</b> and the <b>Length</b> member <i>Address</i> must be greater than or equal to <b>STOR_ADDR_BTL8_ADDRESS_LENGTH</b>.</p>
 
 ## -requirements
 <table>
@@ -122,10 +122,10 @@ ULONG StorPortGetSystemPortNumber(
 ## -see-also
 <dl>
 <dt>
-<a href="..\scsi\ns-scsi--stor-addr-btl8.md">STOR_ADDR_BTL8</a>
+<a href="..\storport\ns-storport--stor-addr-btl8.md">STOR_ADDR_BTL8</a>
 </dt>
 <dt>
-<a href="..\scsi\ns-scsi--stor-address.md">STOR_ADDRESS</a>
+<a href="..\storport\ns-storport--stor-address.md">STOR_ADDRESS</a>
 </dt>
 </dl>
 <p> </p>

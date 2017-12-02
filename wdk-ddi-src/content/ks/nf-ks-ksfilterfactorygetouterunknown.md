@@ -54,7 +54,7 @@ PUNKNOWN __inline KsFilterFactoryGetOuterUnknown(
 ## -parameters
 <dl>
 
-### -param <i>FilterFactory</i> [in]
+### -param FilterFactory [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> for which to return the outer unknown interface.</p>
@@ -67,7 +67,7 @@ PUNKNOWN __inline KsFilterFactoryGetOuterUnknown(
 ## -remarks
 <p>This call is an inline function call to <a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>.</p>
 
-<p>For more information, see <a href="NULL">AVStream Overview</a>
+<p>For more information, see <a href="https://msdn.microsoft.com/305039fe-0a00-4f3e-ae1a-61c50a2f2fb3">AVStream Overview</a>
 </p>
 
 ## -requirements
@@ -128,7 +128,7 @@ PUNKNOWN __inline KsFilterFactoryGetOuterUnknown(
 <a href="..\ks\nf-ks-kspingetouterunknown.md">KsPinGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 </dt>
 </dl>
 <p> </p>

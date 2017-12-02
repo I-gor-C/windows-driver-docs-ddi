@@ -60,25 +60,25 @@ ULONG VideoPortGetBusData(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>BusDataType</i> 
+### -param BusDataType 
 
 <dd>
 <p>Specifies the type of bus configuration data to return. The value of this parameter can be <b>Cmos</b>, <b>EisaConfiguration</b>, or <b>PCIConfiguration</b>. However, additional types of bus configuration might be supported in the future. The upper bound on the types supported is always <b>MaximumBusDataType</b>.</p>
 </dd>
 
-### -param <i>SlotNumber</i> 
+### -param SlotNumber 
 
 <dd>
 <p>Specifies the location of the device on the bus for a <b>Cmos </b><i>BusDataType</i>; zero for all other bus types.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Pointer to a buffer into which <b>VideoPortGetBusData</b> returns the configuration information. The contents of the buffer depend on the <i>BusDataType</i>, as follows:</p>
@@ -95,13 +95,13 @@ ULONG VideoPortGetBusData(
 </ul>
 </dd>
 
-### -param <i>Offset</i> 
+### -param Offset 
 
 <dd>
 <p>Specifies the offset, in bytes, into the PCI configuration space that should be retrieved If <i>BusDataType</i> is <b>PCIConfiguration</b>; otherwise zero. See <b>Remarks</b> for more information.</p>
 </dd>
 
-### -param <i>Length</i> 
+### -param Length 
 
 <dd>
 <p>Specifies the length, in bytes, of <i>Buffer</i>.</p>

@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_queue_dispatch_type.htm
 old-project: wdf
 ms.assetid: 90f2f490-ee29-4e20-94b2-65a9bba3e831
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfIoQueueDispatchInvalid"></a><a id="wdfioqueuedispatchinvalid"></a><a id="WDFIOQUEUEDISPATCHINVALID"></a><b>WdfIoQueueDispatchInvalid</b>
+### -field WdfIoQueueDispatchInvalid
 
 <dd>
 <p>Reserved for internal use.</p>
 </dd>
 
-### -field <a id="WdfIoQueueDispatchSequential"></a><a id="wdfioqueuedispatchsequential"></a><a id="WDFIOQUEUEDISPATCHSEQUENTIAL"></a><b>WdfIoQueueDispatchSequential</b>
+### -field WdfIoQueueDispatchSequential
 
 <dd>
 <p>The I/O queue's requests are presented to the driver's <a href="wdf.request_handlers">request handlers</a> one at a time. The framework does not deliver the next request until a driver has called <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a> to complete the current request.</p>
 </dd>
 
-### -field <a id="WdfIoQueueDispatchParallel"></a><a id="wdfioqueuedispatchparallel"></a><a id="WDFIOQUEUEDISPATCHPARALLEL"></a><b>WdfIoQueueDispatchParallel</b>
+### -field WdfIoQueueDispatchParallel
 
 <dd>
 <p>The framework presents requests to the driver's request handlers as soon as the requests are available. </p>
 </dd>
 
-### -field <a id="WdfIoQueueDispatchManual"></a><a id="wdfioqueuedispatchmanual"></a><a id="WDFIOQUEUEDISPATCHMANUAL"></a><b>WdfIoQueueDispatchManual</b>
+### -field WdfIoQueueDispatchManual
 
 <dd>
 <p>The framework places requests into the queue but does not deliver them to the driver. The driver must retrieve requests from the queue by calling <a href="..\wdfio\nf-wdfio-wdfioqueueretrievenextrequest.md">WdfIoQueueRetrieveNextRequest</a>.</p>
 </dd>
 
-### -field <a id="WdfIoQueueDispatchMax"></a><a id="wdfioqueuedispatchmax"></a><a id="WDFIOQUEUEDISPATCHMAX"></a><b>WdfIoQueueDispatchMax</b>
+### -field WdfIoQueueDispatchMax
 
 <dd>
 <p>Reserved for internal use only.</p>

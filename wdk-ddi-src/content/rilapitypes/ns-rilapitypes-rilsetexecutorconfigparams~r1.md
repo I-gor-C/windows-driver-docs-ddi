@@ -7,7 +7,7 @@ old-location: netvista\rilsetexecutorconfigparams_2.htm
 old-project: netvista
 ms.assetid: b8dcfd30-e7fc-45ab-b407-a0719f624c8e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSETEXECUTORCONFIGPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILSETEXECUTORCONFIGPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>rilExecutorConfig</b>
+### -field rilExecutorConfig
 
 <dd></dd>
 </dl>

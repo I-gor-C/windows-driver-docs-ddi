@@ -56,19 +56,19 @@ typedef struct _LINKED_DEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>ChainUid</b>
+### -field ChainUid
 
 <dd>
 <p>A unique identifier for this chain of display adapters.</p>
 </dd>
 
-### -field <b>NumberOfLinksInChain</b>
+### -field NumberOfLinksInChain
 
 <dd>
 <p>The expected number of linked adapters that the operating system should enumerate.</p>
 </dd>
 
-### -field <b>LeadLink</b>
+### -field LeadLink
 
 <dd>
 <p>A value that indicates the leading link in the chain of linked adapters. The value is <b>TRUE</b> only for the adapter that will be allowed to enumerate child adapters. Otherwise, the value is <b>FALSE</b>.</p>

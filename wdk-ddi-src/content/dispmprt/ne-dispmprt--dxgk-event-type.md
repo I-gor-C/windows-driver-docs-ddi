@@ -57,25 +57,25 @@ typedef enum _DXGK_EVENT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DxgkUndefinedEvent"></a><a id="dxgkundefinedevent"></a><a id="DXGKUNDEFINEDEVENT"></a><b>DxgkUndefinedEvent</b>
+### -field DxgkUndefinedEvent
 
 <dd>
 <p>Indicates that a variable of type DXGK_EVENT_TYPE has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="DxgkAcpiEvent"></a><a id="dxgkacpievent"></a><a id="DXGKACPIEVENT"></a><b>DxgkAcpiEvent</b>
+### -field DxgkAcpiEvent
 
 <dd>
 <p>Indicates that the event is an ACPI event.</p>
 </dd>
 
-### -field <a id="DxgkPowerStateEvent"></a><a id="dxgkpowerstateevent"></a><a id="DXGKPOWERSTATEEVENT"></a><b>DxgkPowerStateEvent</b>
+### -field DxgkPowerStateEvent
 
 <dd>
 <p>Indicates that the event is a power state event.</p>
 </dd>
 
-### -field <a id="DxgkDockingEvent"></a><a id="dxgkdockingevent"></a><a id="DXGKDOCKINGEVENT"></a><b>DxgkDockingEvent</b>
+### -field DxgkDockingEvent
 
 <dd>
 <p>Indicates that the event is a docking event.</p>

@@ -55,13 +55,13 @@ NTSTATUS KsAcquireResetValue(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Points to the IRP from which to retrieve the reset state.</p>
 </dd>
 
-### -param <i>ResetValue</i> [out]
+### -param ResetValue [out]
 
 <dd>
 <p>Points to a caller-allocated buffer, that on successful completion contains the reset value (KSRESET_BEGIN, KSRESET_END) associated with the IRP.</p>

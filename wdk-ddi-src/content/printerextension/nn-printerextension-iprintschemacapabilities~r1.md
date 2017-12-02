@@ -254,7 +254,7 @@ req.product: Windows 10 or later.
 <a href="print.iprintschematicket_getcapabilities">IPrintSchemaTicket_GetCapabilities</a>
 </dt>
 <dt>
-<a href="NULL">V4 Printer Driver Localization</a>
+<a href="https://msdn.microsoft.com/5C587AF2-C51E-4728-A214-7FC1F8A6E445">V4 Printer Driver Localization</a>
 </dt>
 </dl>
 <p> </p>

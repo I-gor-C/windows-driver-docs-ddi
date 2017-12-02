@@ -57,19 +57,19 @@ req.product: Windows 10 or later.
 ## -parameters
 <dl>
 
-### -param <i>Port</i> [in]
+### -param Port [in]
 
 <dd>
 <p>Pointer to the port, which must be a mapped memory range in I/O space.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to a buffer from which an array of ULONG values is to be written.</p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>Specifies the number of ULONG values to be written to the port. </p>

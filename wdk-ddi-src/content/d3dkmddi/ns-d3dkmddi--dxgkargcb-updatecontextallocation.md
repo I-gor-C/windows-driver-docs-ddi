@@ -56,19 +56,19 @@ typedef struct _DXGKARGCB_UPDATECONTEXTALLOCATION {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>Handle to the context allocation being updated. The allocation defines a physical adapter in a linked display adapter link.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>Pointer to a private driver data buffer to be passed to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-updatecontextallocation.md">DxgkCbUpdateContextAllocation</a> paging operation.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>Specify the size of the driver private data.</p>

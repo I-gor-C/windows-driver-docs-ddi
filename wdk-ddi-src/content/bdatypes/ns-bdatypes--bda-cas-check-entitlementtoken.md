@@ -55,11 +55,11 @@ typedef struct _BDA_CAS_CHECK_ENTITLEMENTTOKEN {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>ulDescrambleStatus</b>
+### -field ulDescrambleStatus
 
 <dd></dd>
 </dl>

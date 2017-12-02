@@ -54,7 +54,7 @@ VOID KsFreeDeviceHeader(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [in]
+### -param Header [in]
 
 <dd>
 <p>Indicates the device header to free that had been previously allocated by <b>KsAllocateDeviceHeader</b>.</p>

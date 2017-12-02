@@ -54,7 +54,7 @@ typedef struct _SetBindingSupport_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. </p>

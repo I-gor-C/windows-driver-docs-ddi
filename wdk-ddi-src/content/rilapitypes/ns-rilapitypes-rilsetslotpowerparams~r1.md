@@ -7,7 +7,7 @@ old-location: netvista\rilsetslotpowerparams_2.htm
 old-project: netvista
 ms.assetid: 1f62344f-9e54-4a17-9c0c-ef46614508f2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSETSLOTPOWERPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILSETSLOTPOWERPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSlotIndex</b>
+### -field dwSlotIndex
 
 <dd></dd>
 
-### -field <b>fPowerOn</b>
+### -field fPowerOn
 
 <dd></dd>
 </dl>

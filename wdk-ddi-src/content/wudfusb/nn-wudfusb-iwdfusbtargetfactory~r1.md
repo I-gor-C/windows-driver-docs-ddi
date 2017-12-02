@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetfactory.htm
 old-project: wdf
 ms.assetid: 00f89160-b880-4882-bf2e-28e9ed15f844
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFUsbTargetPipe2, ConfigureContinuousReader, IWDFUsbTargetPipe2::ConfigureContinuousReader
 ms.prod: windows-hardware
 ms.technology: windows-devices

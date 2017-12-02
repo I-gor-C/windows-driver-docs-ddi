@@ -55,13 +55,13 @@ HRESULT RequestShutdown(
 ## -parameters
 <dl>
 
-### -param <i>hrReason</i> [in]
+### -param hrReason [in]
 
 <dd>
 <p>An <b>HRESULT</b> value that indicates the reason for the lack of memory.</p>
 </dd>
 
-### -param <i>pReason</i> [in]
+### -param pReason [in]
 
 <dd>
 <p>Not used. Set to <b>NULL</b>.</p>

@@ -59,31 +59,31 @@ VP_STATUS VideoPortGetRegistryParameters(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>ParameterName</i> [in]
+### -param ParameterName [in]
 
 <dd>
 <p>Pointer to a NULL-terminated Unicode string that names the value entry to be retrieved from the registry. See the <b>Remarks</b> section for more information.</p>
 </dd>
 
-### -param <i>IsParameterFileName</i> 
+### -param IsParameterFileName 
 
 <dd>
 <p>If the value is <b>TRUE</b>, the data value normally returned is treated as a file name. In that case, the buffered contents of that file are returned, rather than the parameter itself.</p>
 </dd>
 
-### -param <i>CallbackRoutine</i> 
+### -param CallbackRoutine 
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\video\nc-video-pminiport-get-registry-routine.md">HwVidQueryNamedValueCallback</a> function.</p>
 </dd>
 
-### -param <i>Context</i> 
+### -param Context 
 
 <dd>
 <p>Pointer to a caller-determined context parameter to be passed to the <i>CallbackRoutine</i>, typically the <a href="..\video\ns-video--video-port-config-info.md">VIDEO_PORT_CONFIG_INFO</a> buffer.</p>

@@ -55,7 +55,7 @@ void COMPOSITE_DEVICE_CAPABILITIES_INIT(
 ## -parameters
 <dl>
 
-### -param <i>CapabilityFlags</i> 
+### -param CapabilityFlags 
 
 <dd>
 <p> A pointer to a caller-allocated <a href="..\usbdlib\ns-usbdlib--composite-device-capabilities.md">COMPOSITE_DEVICE_CAPABILITIES</a> structure to be initialized. The macro sets the <b>CompositeDriverCapabilityFunctionSuspend</b>

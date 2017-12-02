@@ -7,7 +7,7 @@ old-location: netvista\rilgeolocationrequestaccuracy_2.htm
 old-project: netvista
 ms.assetid: 160de99b-d04e-4c7d-bde2-92d23123f295
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef enum _RILGEOLOCATIONREQUESTACCURACY {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_LOCACCURACY_DEFAULT"></a><a id="ril_locaccuracy_default"></a><b>RIL_LOCACCURACY_DEFAULT</b>
+### -field RIL_LOCACCURACY_DEFAULT
 
 <dd></dd>
 </dl>

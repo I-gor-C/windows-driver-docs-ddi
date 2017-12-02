@@ -58,31 +58,31 @@ typedef struct _DISK_GEOMETRY {
 ## -struct-fields
 <dl>
 
-### -field <b>Cylinders</b>
+### -field Cylinders
 
 <dd>
 <p>Indicates the number of cylinders on the disk device.</p>
 </dd>
 
-### -field <b>MediaType</b>
+### -field MediaType
 
 <dd>
 <p>Indicates the type of disk. The enumeration <a href="storage.media_type">MEDIA_TYPE</a> lists the values that can be assigned to this member. </p>
 </dd>
 
-### -field <b>TracksPerCylinder</b>
+### -field TracksPerCylinder
 
 <dd>
 <p>Indicates the number of tracks in a cylinder.</p>
 </dd>
 
-### -field <b>SectorsPerTrack</b>
+### -field SectorsPerTrack
 
 <dd>
 <p>Indicates the number of sectors in each track.</p>
 </dd>
 
-### -field <b>BytesPerSector</b>
+### -field BytesPerSector
 
 <dd>
 <p>Indicates the number of bytes in a disk sector.</p>

@@ -59,19 +59,19 @@ __checkReturn HRESULT APIENTRY SetStreamSourceUM(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setstreamsourceum.md">D3DDDIARG_SETSTREAMSOURCEUM</a> structure that specifies the vertex stream source to bind.</p>
 </dd>
 
-### -param <i>pUMBuffer</i> [in]
+### -param pUMBuffer [in]
 
 <dd>
 <p> A pointer to the user-memory buffer that supplies the vertex data for the vertex stream source.</p>

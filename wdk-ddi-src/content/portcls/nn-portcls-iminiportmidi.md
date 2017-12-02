@@ -39,8 +39,8 @@ req.iface:
 
 
 ## -description
-<p>The <code>IMiniportMidi</code> interface is the primary interface for a MIDI miniport driver for a MIDI synthesizer device. The MIDI port driver communicates with the miniport driver through this interface. The adapter driver creates the MIDI miniport object and passes the object's <code>IMiniportMidi</code> interface pointer to the MIDI port driver's <a href="audio.iport_init">IPort::Init</a> method (see the code example in <a href="NULL">Subdevice Creation</a>). <code>IMiniportMidi</code> inherits from the <a href="..\portcls\nn-portcls-iminiport.md">IMiniport</a> interface.</p>
-<p>An adapter driver forms a miniport/port driver pair by binding an <code>IMiniportMidi</code> object to an <a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a> object. The PortCls system driver registers this pair with the system as a MIDI filter (see <a href="NULL">MIDI and DirectMusic Filters</a>).</p>
+<p>The <code>IMiniportMidi</code> interface is the primary interface for a MIDI miniport driver for a MIDI synthesizer device. The MIDI port driver communicates with the miniport driver through this interface. The adapter driver creates the MIDI miniport object and passes the object's <code>IMiniportMidi</code> interface pointer to the MIDI port driver's <a href="audio.iport_init">IPort::Init</a> method (see the code example in <a href="https://msdn.microsoft.com/e4ba1209-adc6-48c3-9633-247e9e3849bc">Subdevice Creation</a>). <code>IMiniportMidi</code> inherits from the <a href="..\portcls\nn-portcls-iminiport.md">IMiniport</a> interface.</p>
+<p>An adapter driver forms a miniport/port driver pair by binding an <code>IMiniportMidi</code> object to an <a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a> object. The PortCls system driver registers this pair with the system as a MIDI filter (see <a href="https://msdn.microsoft.com/622aa4ae-c855-4088-bc1a-30dff7a24d23">MIDI and DirectMusic Filters</a>).</p>
 <p>The <code>IMiniportMidi</code> interface provides methods for initializing the miniport object, for creating a new MIDI stream, and for notifying the miniport driver of an interrupt service request.</p>
 
 

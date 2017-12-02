@@ -7,7 +7,7 @@ old-location: ifsk\fltqueuegenericworkitem.htm
 old-project: ifsk
 ms.assetid: 30179fe1-e218-46cd-96a9-816ebab112bf
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltQueueGenericWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ NTSTATUS FltQueueGenericWorkItem(
 ## -parameters
 <dl>
 
-### -param <i>FltWorkItem</i> [in]
+### -param FltWorkItem [in]
 
 <dd>
 <p>Pointer to the work item to be added to the work queue. The work item must have been allocated by calling <a href="..\fltkernel\nf-fltkernel-fltallocategenericworkitem.md">FltAllocateGenericWorkItem</a>. </p>
 </dd>
 
-### -param <i>FltObject</i> [in]
+### -param FltObject [in]
 
 <dd>
 <p>Opaque filter (PFLT_FILTER) or instance (PFLT_INSTANCE) pointer for the caller. </p>
 </dd>
 
-### -param <i>WorkerRoutine</i> [in]
+### -param WorkerRoutine [in]
 
 <dd>
 <p>Pointer to a caller-supplied worker routine. This routine is declared as follows: </p>
@@ -92,19 +92,19 @@ NTSTATUS FltQueueGenericWorkItem(
 <p></p>
 <dl>
 
-### -param <a id="FltWorkItem"></a><a id="fltworkitem"></a><a id="FLTWORKITEM"></a><i>FltWorkItem</i>
+### -param FltWorkItem
 
 <dd>
 <p>Opaque pointer to a generic work item structure. </p>
 </dd>
 
-### -param <a id="FltObject"></a><a id="fltobject"></a><a id="FLTOBJECT"></a><i>FltObject</i>
+### -param FltObject
 
 <dd>
 <p>Opaque filter pointer that was passed as the <i>FltObject</i> parameter of <b>FltQueueGenericWorkItem</b>. </p>
 </dd>
 
-### -param <a id="Context"></a><a id="context"></a><a id="CONTEXT"></a><i>Context</i>
+### -param Context
 
 <dd>
 <p>Context information pointer that was passed as the <i>Context</i> parameter of <b>FltQueueGenericWorkItem</b>. This parameter is optional. </p>
@@ -112,7 +112,7 @@ NTSTATUS FltQueueGenericWorkItem(
 </dl>
 </dd>
 
-### -param <i>QueueType</i> [in]
+### -param QueueType [in]
 
 <dd>
 <p>Specifies the queue into which the work item that <i>FltWorkItem</i> points to is to be inserted. <i>QueueType</i> can be either of the following: </p>
@@ -142,7 +142,7 @@ NTSTATUS FltQueueGenericWorkItem(
 <p>The <i>QueueType</i> value <b>HyperCriticalWorkQueue</b> is reserved for system use. </p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Pointer to caller-defined context information to be passed as the <i>Context</i> parameter of the callback routine specified in the <i>WorkerRoutine</i> parameter. This parameter is optional.</p>
@@ -226,4 +226,4 @@ NTSTATUS FltQueueGenericWorkItem(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueueGenericWorkItem function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueueGenericWorkItem function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

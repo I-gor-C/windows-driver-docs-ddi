@@ -61,49 +61,49 @@ typedef union _PEP_ACPI_RESOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The <a href="..\pepfx\ne-pepfx--pep-acpi-resource-type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value that is applicable to  this resource.</p>
 </dd>
 
-### -field <b>IoMemory</b>
+### -field IoMemory
 
 <dd>
 <p>If <b>Type</b> is <b>PepAcpiMemory</b> or <b>PepAcpiIoPort</b>, this union contains a <a href="..\pepfx\ns-pepfx--pep-acpi-io-memory-resource.md">PEP_ACPI_IO_MEMORY_RESOURCE</a> structure describing an ACPI IO or memory resource. </p>
 </dd>
 
-### -field <b>Interrupt</b>
+### -field Interrupt
 
 <dd>
 <p>If <b>Type</b> is <b>PepAcpiInterrupt</b>, this union contains a <a href="..\pepfx\ns-pepfx--pep-acpi-interrupt-resource.md">PEP_ACPI_INTERRUPT_RESOURCE</a> structure describing an ACPI interrupt resource. </p>
 </dd>
 
-### -field <b>Gpio</b>
+### -field Gpio
 
 <dd>
 <p>If <b>Type</b> is <b>PepAcpiGpioIo</b> or <b>PepAcpiGpioInt</b>, this union contains a <a href="..\pepfx\ns-pepfx--pep-acpi-gpio-resource.md">PEP_ACPI_GPIO_RESOURCE</a> structure describing an ACPI GPIO resource. </p>
 </dd>
 
-### -field <b>SpbI2c</b>
+### -field SpbI2c
 
 <dd>
 <p>If <b>Type</b> is <b>PepAcpiSpbI2c</b>, this union contains a <a href="..\pepfx\ns-pepfx--pep-acpi-spb-i2c-resource.md">PEP_ACPI_SPB_I2C_RESOURCE</a> structure describing an ACPI I2C serial bus resource. </p>
 </dd>
 
-### -field <b>SpbSpi</b>
+### -field SpbSpi
 
 <dd>
 <p>If <b>Type</b> is <b>PepAcpiSpbSpi</b>, this union contains a <a href="..\pepfx\ns-pepfx--pep-acpi-spb-spi-resource.md">PEP_ACPI_SPB_SPI_RESOURCE</a> structure describing an ACPI SPI serial bus resource. </p>
 </dd>
 
-### -field <b>SpbUart</b>
+### -field SpbUart
 
 <dd>
 <p>If <b>Type</b> is <b>PepAcpiSpbUart</b>, this union contains a <a href="..\pepfx\ns-pepfx--pep-acpi-spb-uart-resource.md">PEP_ACPI_SPB_UART_RESOURCE</a> structure describing an ACPI SPB serial bus resource. </p>
 </dd>
 
-### -field <b>ExtendedAddress</b>
+### -field ExtendedAddress
 
 <dd>
 <p>If <b>Type</b> is <b>PepAcpiExtendedMemory</b> or <b>PepAcpiExtendedIo</b>, this union contains a <a href="..\pepfx\ns-pepfx--pep-acpi-extended-address.md">PEP_ACPI_EXTENDED_ADDRESS</a> structure describing an ACPI extended memory or extended IO resource. </p>

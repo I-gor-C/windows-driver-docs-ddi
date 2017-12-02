@@ -7,7 +7,7 @@ old-location: netvista\ndis_restart_general_attributes.htm
 old-project: netvista
 ms.assetid: f67bd2fe-4553-4b1a-8d39-26777bcc60e0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_RESTART_GENERAL_ATTRIBUTES, NDIS_RESTART_GENERAL_ATTRIBUTES, *PNDIS_RESTART_GENERAL_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,7 +74,7 @@ typedef struct _NDIS_RESTART_GENERAL_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -88,7 +88,7 @@ typedef struct _NDIS_RESTART_GENERAL_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RESTART_GENERAL_ATTRIBUTES_REVISION_2"></a><a id="ndis_restart_general_attributes_revision_2"></a>NDIS_RESTART_GENERAL_ATTRIBUTES_REVISION_2
+### -field NDIS_RESTART_GENERAL_ATTRIBUTES_REVISION_2
 
 <dd>
 <p>Added the 
@@ -101,7 +101,7 @@ typedef struct _NDIS_RESTART_GENERAL_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RESTART_GENERAL_ATTRIBUTES_REVISION_1"></a><a id="ndis_restart_general_attributes_revision_1"></a>NDIS_RESTART_GENERAL_ATTRIBUTES_REVISION_1
+### -field NDIS_RESTART_GENERAL_ATTRIBUTES_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.0 and NDIS 6.1.
@@ -112,42 +112,42 @@ typedef struct _NDIS_RESTART_GENERAL_ATTRIBUTES {
 </dl>
 </dd>
 
-### -field <b>MtuSize</b>
+### -field MtuSize
 
 <dd>
 <p>The maximum transfer unit (MTU) size. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569598">OID_GEN_MAXIMUM_FRAME_SIZE</a>.</p>
 </dd>
 
-### -field <b>MaxXmitLinkSpeed</b>
+### -field MaxXmitLinkSpeed
 
 <dd>
 <p>The maximum transmit link speed of the adapter in bits per second. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569602">OID_GEN_MAX_LINK_SPEED</a>.</p>
 </dd>
 
-### -field <b>MaxRcvLinkSpeed</b>
+### -field MaxRcvLinkSpeed
 
 <dd>
 <p>The maximum receive link speed of the adapter in bits per second. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569602">OID_GEN_MAX_LINK_SPEED</a>.</p>
 </dd>
 
-### -field <b>LookaheadSize</b>
+### -field LookaheadSize
 
 <dd>
 <p>The lookahead size for the miniport adapter. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569574">OID_GEN_CURRENT_LOOKAHEAD</a>.</p>
 </dd>
 
-### -field <b>MacOptions</b>
+### -field MacOptions
 
 <dd>
 <p>The medium access control (MAC) options for the miniport adapter. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569597">OID_GEN_MAC_OPTIONS</a>.</p>
 </dd>
 
-### -field <b>SupportedPacketFilters</b>
+### -field SupportedPacketFilters
 
 <dd>
 <p>The packet filter flags for the miniport adapter. For more information, see 
@@ -155,7 +155,7 @@ typedef struct _NDIS_RESTART_GENERAL_ATTRIBUTES {
      OID_GEN_SUPPORTED_PACKET_FILTERS</a>.</p>
 </dd>
 
-### -field <b>MaxMulticastListSize</b>
+### -field MaxMulticastListSize
 
 <dd>
 <p>The maximum multicast address list size for the miniport adapter. For more information, see 
@@ -163,7 +163,7 @@ typedef struct _NDIS_RESTART_GENERAL_ATTRIBUTES {
      OID_802_3_MAXIMUM_LIST_SIZE</a>.</p>
 </dd>
 
-### -field <b>RecvScaleCapabilities</b>
+### -field RecvScaleCapabilities
 
 <dd>
 <p>The receive side scaling (RSS) capabilities of the NIC. If the miniport adapter does not support
@@ -176,7 +176,7 @@ typedef struct _NDIS_RESTART_GENERAL_ATTRIBUTES {
      OID_GEN_RECEIVE_SCALE_CAPABILITIES</a>.</p>
 </dd>
 
-### -field <b>AccessType</b>
+### -field AccessType
 
 <dd>
 <p>A 
@@ -184,13 +184,13 @@ typedef struct _NDIS_RESTART_GENERAL_ATTRIBUTES {
      access type.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>ConnectionType</b>
+### -field ConnectionType
 
 <dd>
 <p>A 
@@ -198,7 +198,7 @@ typedef struct _NDIS_RESTART_GENERAL_ATTRIBUTES {
      interface connection type.</p>
 </dd>
 
-### -field <b>SupportedStatistics</b>
+### -field SupportedStatistics
 
 <dd>
 <p>The supported statistics. For more information, see the 
@@ -207,33 +207,33 @@ typedef struct _NDIS_RESTART_GENERAL_ATTRIBUTES {
      NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a> structure.</p>
 </dd>
 
-### -field <b>DataBackFillSize</b>
+### -field DataBackFillSize
 
 <dd>
 <p>The required data backfill size, in bytes, of the driver.</p>
 </dd>
 
-### -field <b>ContextBackFillSize</b>
+### -field ContextBackFillSize
 
 <dd>
 <p>The required context backfill size, in bytes, of the driver.</p>
 </dd>
 
-### -field <b>SupportedOidList</b>
+### -field SupportedOidList
 
 <dd>
 <p>A list of OIDs that the miniport driver supports. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569642">OID_GEN_SUPPORTED_LIST</a>.</p>
 </dd>
 
-### -field <b>SupportedOidListLength</b>
+### -field SupportedOidListLength
 
 <dd>
 <p>The size, in bytes, of the OID list that is specified in the 
      <b>SupportedOidList</b> member.</p>
 </dd>
 
-### -field <b>MaxLookaheadSizeAccessed</b>
+### -field MaxLookaheadSizeAccessed
 
 <dd>
 <p>A ULONG value for the maximum size, in bytes, of the lookahead size requirement for receive
@@ -349,4 +349,4 @@ typedef struct _NDIS_RESTART_GENERAL_ATTRIBUTES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RESTART_GENERAL_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RESTART_GENERAL_ATTRIBUTES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

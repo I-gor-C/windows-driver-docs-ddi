@@ -7,7 +7,7 @@ old-location: netvista\riladdcallforwardingparams_2.htm
 old-project: netvista
 ms.assetid: 96adad09-fe54-469a-b57d-4df68750968c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILADDCALLFORWARDINGPARAMS, RILADDCALLFORWARDINGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILADDCALLFORWARDINGPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwReason</b>
+### -field dwReason
 
 <dd></dd>
 
-### -field <b>rcfsSettings</b>
+### -field rcfsSettings
 
 <dd></dd>
 </dl>

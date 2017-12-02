@@ -55,7 +55,7 @@ HRESULT Start(
 ## -parameters
 <dl>
 
-### -param <i>Void</i> 
+### -param Void 
 
 <dd>
 <p>This method has no parameters.</p>

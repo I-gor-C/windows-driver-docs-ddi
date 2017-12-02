@@ -7,7 +7,7 @@ old-location: netvista\dot11_power_mode.htm
 old-project: netvista
 ms.assetid: 4f18f937-e749-414d-aa21-96c6ab02982b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PRINTER_EVENT_ATTRIBUTES_INFO, PRINTER_EVENT_ATTRIBUTES_INFO, *PPRINTER_EVENT_ATTRIBUTES_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef enum _DOT11_POWER_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="dot11_power_mode_unknown"></a><a id="DOT11_POWER_MODE_UNKNOWN"></a><b>dot11_power_mode_unknown</b>
+### -field dot11_power_mode_unknown
 
 <dd>
 <p>Specifies an undefined or uninitialized power mode.</p>
 </dd>
 
-### -field <a id="dot11_power_mode_active"></a><a id="DOT11_POWER_MODE_ACTIVE"></a><b>dot11_power_mode_active</b>
+### -field dot11_power_mode_active
 
 <dd>
 <p>Specifies an active power mode in which the PHY is always turned on.</p>
 </dd>
 
-### -field <a id="dot11_power_mode_powersave"></a><a id="DOT11_POWER_MODE_POWERSAVE"></a><b>dot11_power_mode_powersave</b>
+### -field dot11_power_mode_powersave
 
 <dd>
 <p>Specifies a power-save mode in which the PHY is periodically turned off.</p>
@@ -110,4 +110,4 @@ typedef enum _DOT11_POWER_MODE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_POWER_MODE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_POWER_MODE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

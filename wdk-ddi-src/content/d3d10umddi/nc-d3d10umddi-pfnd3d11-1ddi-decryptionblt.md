@@ -65,7 +65,7 @@ VOID APIENTRY* DecryptionBlt(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).
@@ -73,19 +73,19 @@ VOID APIENTRY* DecryptionBlt(
 </p>
 </dd>
 
-### -param <i>hCryptoSession</i> [in]
+### -param hCryptoSession [in]
 
 <dd>
 <p>A handle to the driver's private data for the cryptographic session. This handle was created by the Direct3D runtime and passed to the driver in the call to the <a href="display.createcryptosession1">CreateCryptoSession</a> function.</p>
 </dd>
 
-### -param <i>hSrcResource</i> [in]
+### -param hSrcResource [in]
 
 <dd>
 <p>A handle to the resource that contains the source data.</p>
 </dd>
 
-### -param <i>hDstResource</i> [in]
+### -param hDstResource [in]
 
 <dd>
 <p>A pointer to the resource where the encrypted data is to be written.
@@ -93,7 +93,7 @@ VOID APIENTRY* DecryptionBlt(
 </p>
 </dd>
 
-### -param <i>pEncryptedBlockInfo</i> [in]
+### -param pEncryptedBlockInfo [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-encrypted-block-info.md">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a> structure that describes the portions of the buffer that are encrypted. </p>
@@ -101,13 +101,13 @@ VOID APIENTRY* DecryptionBlt(
 <div> </div>
 </dd>
 
-### -param <i>ContentKeySize</i> [in]
+### -param ContentKeySize [in]
 
 <dd>
 <p>The size, in bytes, of the content key.</p>
 </dd>
 
-### -param <i>pContentKey</i> [in]
+### -param pContentKey [in]
 
 <dd>
 <p>A pointer to a block of memory that contains the content key that is required to decrypt the bit-block transfer (bitblt) data.</p>
@@ -115,13 +115,13 @@ VOID APIENTRY* DecryptionBlt(
 <p>If <i>pContentKey</i> is NULL, the graphics adapter does not require a separate content key to decrypt the data. In this case, the session key is used to decrypt the data.</p>
 </dd>
 
-### -param <i>IVSize</i> [in]
+### -param IVSize [in]
 
 <dd>
 <p>The size, in bytes, of the initialization vector (IV).</p>
 </dd>
 
-### -param <i>pIV</i> [in]
+### -param pIV [in]
 
 <dd>
 <p>A pointer to a block of memory that contains the initialization vector that is required to decrypt the bitblt data. For more information, see the Remarks section.</p>

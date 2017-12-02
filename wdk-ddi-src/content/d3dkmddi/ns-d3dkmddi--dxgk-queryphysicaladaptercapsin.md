@@ -54,7 +54,7 @@ typedef struct _DXGK_QUERYPHYSICALADAPTERCAPSIN {
 ## -struct-fields
 <dl>
 
-### -field <b>PhysicalAdapterIndex</b>
+### -field PhysicalAdapterIndex
 
 <dd>
 <p>Index of a physical adapter in a link.</p>

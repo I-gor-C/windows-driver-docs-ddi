@@ -58,27 +58,27 @@ typedef enum _SCO_RETRANSMISSION_EFFORT {
 ## -enum-fields
 <dl>
 
-### -field <a id="SCO_RETRANSMISSION_NONE"></a><a id="sco_retransmission_none"></a><b>SCO_RETRANSMISSION_NONE</b>
+### -field SCO_RETRANSMISSION_NONE
 
 <dd>
 <p>The profile driver specifies that there should be no retransmissions on the channel.</p>
 </dd>
 
-### -field <a id="SCO_RETRANSMISSION_MIN1_POWER"></a><a id="sco_retransmission_min1_power"></a><b>SCO_RETRANSMISSION_MIN1_POWER</b>
+### -field SCO_RETRANSMISSION_MIN1_POWER
 
 <dd>
 <p>The profile driver specifies that there should be at least one retransmission on the channel. Any
      retransmissions that are performed should be optimized for power consumption.</p>
 </dd>
 
-### -field <a id="SCO_RETRANSMISSION_MIN1_QUALITY"></a><a id="sco_retransmission_min1_quality"></a><b>SCO_RETRANSMISSION_MIN1_QUALITY</b>
+### -field SCO_RETRANSMISSION_MIN1_QUALITY
 
 <dd>
 <p>The profile driver specifies that there should be at least one retransmission on the channel. Any
      retransmissions that are performed should be optimized for link quality.</p>
 </dd>
 
-### -field <a id="SCO_RETRANSMISSION_DONT_CARE"></a><a id="sco_retransmission_dont_care"></a><b>SCO_RETRANSMISSION_DONT_CARE</b>
+### -field SCO_RETRANSMISSION_DONT_CARE
 
 <dd>
 <p>The profile driver specifies that retransmissions can occur, but are not required.</p>

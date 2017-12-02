@@ -56,13 +56,13 @@ typedef struct _D3DDDIARG_RECLAIMRESOURCES {
 ## -struct-fields
 <dl>
 
-### -field <b>pResources</b>
+### -field pResources
 
 <dd>
 <p>[in] A pointer to an array of handles to the resources that are to be reclaimed.</p>
 </dd>
 
-### -field <b>pDiscarded</b>
+### -field pDiscarded
 
 <dd>
 <p>[out] An optional array of Boolean values that specify whether each resource or allocation was discarded.</p>
@@ -71,7 +71,7 @@ typedef struct _D3DDDIARG_RECLAIMRESOURCES {
 <p>If <b>pDiscarded</b> is <b>NULL</b>, the driver can ignore it.</p>
 </dd>
 
-### -field <b>Resources</b>
+### -field Resources
 
 <dd>
 <p>[in] The number of elements in the arrays pointed to by <b>pResources</b> and <b>pDiscarded</b>.</p>

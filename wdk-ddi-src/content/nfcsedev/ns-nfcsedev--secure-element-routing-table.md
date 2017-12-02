@@ -56,13 +56,13 @@ typedef struct _SECURE_ELEMENT_ROUTING_TABLE {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfEntries</b>
+### -field NumberOfEntries
 
 <dd>
 <p>Number of routing table entries.</p>
 </dd>
 
-### -field <b>TableEntries[ANYSIZE_ARRAY]</b>
+### -field TableEntries[ANYSIZE_ARRAY]
 
 <dd>
 <p>Listen mode routing table.</p>

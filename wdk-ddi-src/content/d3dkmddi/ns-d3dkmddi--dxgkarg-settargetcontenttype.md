@@ -56,13 +56,13 @@ typedef struct _DXGKARG_SETTARGETCONTENTTYPE {
 ## -struct-fields
 <dl>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>The identifier of a display adapter's video present target.</p>
 </dd>
 
-### -field <b>ContentType</b>
+### -field ContentType
 
 <dd>
 <p>A D3DKMDT_VIDPN_PRESENT_PATH_CONTENT value indicating the type of content being presented on the target id for which the driver should optimize.</p>

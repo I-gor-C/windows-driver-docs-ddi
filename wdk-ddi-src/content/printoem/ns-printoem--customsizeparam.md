@@ -57,19 +57,19 @@ typedef struct _CUSTOMSIZEPARAM {
 ## -struct-fields
 <dl>
 
-### -field <b>dwOrder</b>
+### -field dwOrder
 
 <dd>
 <p>Specifies the order in which a custom page size parameter is placed on the PostScript interpreter's operand stack. For example, a parameter for which <b>dwOrder</b> is set to 1 is placed on the stack first. A parameter for which <b>dwOrder</b> is set to 2 is placed on the stack second, and so on.</p>
 </dd>
 
-### -field <b>lMinVal</b>
+### -field lMinVal
 
 <dd>
 <p>Specifies the minimum value of the custom page size parameter.</p>
 </dd>
 
-### -field <b>lMaxVal</b>
+### -field lMaxVal
 
 <dd>
 <p>Specifies the maximum value of the custom page size parameter.</p>

@@ -59,37 +59,37 @@ typedef struct _SERIAL_CHARS {
 ## -struct-fields
 <dl>
 
-### -field <b>EofChar</b>
+### -field EofChar
 
 <dd>
 <p>The EOF (end of file) character. Receipt of this character marks the end of the input stream.</p>
 </dd>
 
-### -field <b>ErrorChar</b>
+### -field ErrorChar
 
 <dd>
 <p>The parity error replacement character. Bytes received with parity errors are replaced by this character.</p>
 </dd>
 
-### -field <b>BreakChar</b>
+### -field BreakChar
 
 <dd>
 <p>The break character. Receipt of this character indicates that a break (temporary pause) occurred in the input stream.</p>
 </dd>
 
-### -field <b>EventChar</b>
+### -field EventChar
 
 <dd>
 <p>The event character. Receipt of this character signals a serial communication event if the SERIAL_EV_RXFLAG flag bit is set in the current wait mask. The wait mask is set by the <a href="..\ntddser\ni-ntddser-ioctl-serial-set-wait-mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a> request. The <a href="..\ntddser\ni-ntddser-ioctl-serial-wait-on-mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a> request initiates a wait for the events in the wait mask.</p>
 </dd>
 
-### -field <b>XonChar</b>
+### -field XonChar
 
 <dd>
 <p>The XON (transmit on) character to use for both transmit and receive operations. The XON and XOFF characters are used for software flow control.</p>
 </dd>
 
-### -field <b>XoffChar</b>
+### -field XoffChar
 
 <dd>
 <p>The XOFF (transmit off) character to use for both transmit and receive operations.</p>

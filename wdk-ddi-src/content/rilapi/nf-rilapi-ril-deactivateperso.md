@@ -7,7 +7,7 @@ old-location: netvista\ril_deactivateperso.htm
 old-project: netvista
 ms.assetid: 3116482a-aa56-4a1d-98ef-da06c5c1b789
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_DeactivatePerso
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_DeactivatePerso(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwPersoFeature</i> 
+### -param dwPersoFeature 
 
 <dd></dd>
 
-### -param <i>lpszPassword</i> 
+### -param lpszPassword 
 
 <dd></dd>
 </dl>

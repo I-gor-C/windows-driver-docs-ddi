@@ -7,7 +7,7 @@ old-location: netvista\dot11_channel_hint.htm
 old-project: netvista
 ms.assetid: B3E395C3-C642-4A5E-9005-88323A80F90E
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_CHANNEL_HINT, DOT11_CHANNEL_HINT, *PDOT11_CHANNEL_HINT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,13 +54,13 @@ typedef struct _DOT11_CHANNEL_HINT {
 ## -struct-fields
 <dl>
 
-### -field <b>Dot11PhyType</b>
+### -field Dot11PhyType
 
 <dd>
 <p>The 802.11 PHY and media type.</p>
 </dd>
 
-### -field <b>uChannelNumber</b>
+### -field uChannelNumber
 
 <dd>
 <p>Channel number.</p>

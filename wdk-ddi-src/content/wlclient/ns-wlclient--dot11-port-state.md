@@ -7,7 +7,7 @@ old-location: netvista\dot11_port_state.htm
 old-project: netvista
 ms.assetid: 09d36c81-d480-48c6-8633-c79061420217
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_PORT_STATE, DOT11_PORT_STATE, *PDOT11_PORT_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,20 +56,20 @@ typedef struct _DOT11_PORT_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>PeerMacAddress</b>
+### -field PeerMacAddress
 
 <dd>
 <p>The media access control (MAC) address of the AP or peer station with which the security session
      has been initiated.</p>
 </dd>
 
-### -field <b>uSessionId</b>
+### -field uSessionId
 
 <dd>
 <p>The security session identifier (ID) assigned by the operating system.</p>
 </dd>
 
-### -field <b>bPortControlled</b>
+### -field bPortControlled
 
 <dd>
 <p>A Boolean value that defines whether the port is controlled for access to the BSS network. A value
@@ -79,7 +79,7 @@ typedef struct _DOT11_PORT_STATE {
      802.1X-1999 standard.</p>
 </dd>
 
-### -field <b>bPortAuthorized</b>
+### -field bPortAuthorized
 
 <dd>
 <p>A Boolean value that defines whether the port is authorized to access the BSS network. A value of
@@ -134,4 +134,4 @@ typedef struct _DOT11_PORT_STATE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PORT_STATE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PORT_STATE structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

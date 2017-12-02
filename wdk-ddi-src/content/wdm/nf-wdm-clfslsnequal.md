@@ -56,13 +56,13 @@ BOOLEAN ClfsLsnEqual(
 ## -parameters
 <dl>
 
-### -param <i>plsn1</i> [in]
+### -param plsn1 [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that supplies one of the LSNs to be compared.</p>
 </dd>
 
-### -param <i>plsn2</i> [in]
+### -param plsn2 [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that supplies the other LSN to be compared.</p>

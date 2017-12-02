@@ -54,7 +54,7 @@ void RemoveMember(
 ## -parameters
 <dl>
 
-### -param <i>pServiceSink</i> [in]
+### -param pServiceSink [in]
 
 <dd>
 <p>Pointer to the <a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a> interface of the member that is to be removed</p>
@@ -65,7 +65,7 @@ void RemoveMember(
 <p>None</p>
 
 ## -remarks
-<p>The <code>RemoveMember</code> method removes a service sink that was previously added to the service group by an <b>AddMember</b> call. The <b>AddMember</b> method called <b>AddRef</b> on the service sink object, and the <code>RemoveMember</code> method calls <b>Release</b> on the service sink object. This behavior is in accordance with the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <code>RemoveMember</code> method removes a service sink that was previously added to the service group by an <b>AddMember</b> call. The <b>AddMember</b> method called <b>AddRef</b> on the service sink object, and the <code>RemoveMember</code> method calls <b>Release</b> on the service sink object. This behavior is in accordance with the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

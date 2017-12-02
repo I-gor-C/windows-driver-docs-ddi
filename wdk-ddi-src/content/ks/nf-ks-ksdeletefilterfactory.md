@@ -54,7 +54,7 @@ NTSTATUS KsDeleteFilterFactory(
 ## -parameters
 <dl>
 
-### -param <i>FilterFactory</i> [in]
+### -param FilterFactory [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> structure that represents the filter factory to be deleted.</p>

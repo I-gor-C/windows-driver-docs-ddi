@@ -55,13 +55,13 @@ VOID TapeDebugPrint(
 ## -parameters
 <dl>
 
-### -param <i>DebugPrintLevel</i> 
+### -param DebugPrintLevel 
 
 <dd>
 <p>Determines whether the string is printed or not. If this parameter has a value less than or equal to the tape class global variable <b>TapeClassDebug</b>, <b>TapeDebugPrint</b> prints the message, otherwise nothing is printed. If this parameter has a value of zero, <b>TapeClassDebug</b> always prints the message. </p>
 </dd>
 
-### -param <i>DebugMessage</i> 
+### -param DebugMessage 
 
 <dd>
 <p>Pointer to the string to be printed.</p>

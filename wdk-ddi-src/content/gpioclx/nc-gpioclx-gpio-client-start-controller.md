@@ -59,19 +59,19 @@ NTSTATUS CLIENT_StartController(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/4BE99C71-9BA6-44E3-A54F-DE8C3440A474">device context</a>.</p>
 </dd>
 
-### -param <i>RestoreContext</i> [in]
+### -param RestoreContext [in]
 
 <dd>
 <p>Whether the client driver should restore the GPIO controller to a previously saved hardware context. If TRUE, the hardware context should be restored. If FALSE, the hardware context should not be restored. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>PreviousPowerState</i> [in]
+### -param PreviousPowerState [in]
 
 <dd>
 <p>The previous device power state. This parameter is a <a href="..\wudfddi_types\ne-wudfddi-types--wdf-power-device-state.md">WDF_POWER_DEVICE_STATE</a> enumeration value that specifies the low-power state from which the device entered the D0 power state. The GPIO controller driver can use this information to determine how to configure the controller device so that it is ready to use.</p>
@@ -90,13 +90,13 @@ NTSTATUS CLIENT_StartController(
 
 <p>Although the <i>CLIENT_StartController</i> callback function is called at IRQL = PASSIVE_LEVEL, you should not make this function <a href="kmdf.creating_pageable_code_in_a_framework_based_driver">pageable</a>. The <i>CLIENT_StartController</i> callback is in the critical timing path for restoring power to the devices in the hardware platform and, for performance reasons, it should not be delayed by page faults.</p>
 
-<p>To define a <i>CLIENT_StartController</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define a <i>CLIENT_StartController</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define a <i>CLIENT_StartController</i> callback function that is named <code>MyEvtGpioStartController</code>, use the GPIO_CLIENT_START_CONTROLLER function type, as shown in this code example:</p>
 
 <p>Then, implement your callback function as follows:</p>
 
-<p>The GPIO_CLIENT_START_CONTROLLER function type is defined in the Gpioclx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the GPIO_CLIENT_START_CONTROLLER function type in the header file are used. For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.</p>
+<p>The GPIO_CLIENT_START_CONTROLLER function type is defined in the Gpioclx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the GPIO_CLIENT_START_CONTROLLER function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.</p>
 
 ## -requirements
 <table>

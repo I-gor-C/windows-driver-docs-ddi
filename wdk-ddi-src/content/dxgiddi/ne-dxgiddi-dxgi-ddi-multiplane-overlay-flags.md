@@ -56,19 +56,19 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP"></a><a id="dxgi_ddi_multiplane_overlay_flag_vertical_flip"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP
 
 <dd>
 <p>The overlay plane should flip the data vertically, making it appear upside-down.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP"></a><a id="dxgi_ddi_multiplane_overlay_flag_horizontal_flip"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP
 
 <dd>
 <p>The overlay plane should flip the data horizontally, making it appear as a right-to-left mirror image.</p>
 </dd>
 
-### -field <a id="DXGI_MULTIPLANE_OVERLAY_FLAG_FULLSCREEN_POST_COMPOSITION"></a><a id="dxgi_multiplane_overlay_flag_fullscreen_post_composition"></a><b>DXGI_MULTIPLANE_OVERLAY_FLAG_FULLSCREEN_POST_COMPOSITION</b>
+### -field DXGI_MULTIPLANE_OVERLAY_FLAG_FULLSCREEN_POST_COMPOSITION
 
 <dd>
 <p>Indicates that the plane is to be stretched using panel fitter hardware.

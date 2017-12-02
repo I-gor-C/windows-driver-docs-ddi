@@ -59,135 +59,135 @@ NTSTATUS IoGetDeviceProperty(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the physical device object (PDO) for the device being queried.</p>
 </dd>
 
-### -param <i>DeviceProperty</i> [in]
+### -param DeviceProperty [in]
 
 <dd>
 <p>Specifies the device property being requested. Must be one of the following <a href="kernel.device_registry_property">DEVICE_REGISTRY_PROPERTY</a> enumeration values:</p>
 <p></p>
 <dl>
 
-### -param <a id="DevicePropertyAddress"></a><a id="devicepropertyaddress"></a><a id="DEVICEPROPERTYADDRESS"></a><b>DevicePropertyAddress</b>
+### -param DevicePropertyAddress
 
 <dd>
 <p>Requests the address of the device on the bus. <i>PropertyBuffer</i> points to a ULONG.</p>
 <p>The interpretation of this address is bus-specific. The caller of this routine should call the routine again to request the <b>DevicePropertyBusTypeGuid</b>, or possibly the <b>DevicePropertyLegacyBusType</b>, so it can interpret the address. An address value of 0xFFFFFFFF indicates that the underlying bus driver did not supply a bus address for the device.</p>
 </dd>
 
-### -param <a id="DevicePropertyBootConfiguration"></a><a id="devicepropertybootconfiguration"></a><a id="DEVICEPROPERTYBOOTCONFIGURATION"></a><b>DevicePropertyBootConfiguration</b>
+### -param DevicePropertyBootConfiguration
 
 <dd>
 <p>Requests the hardware resources assigned to the device by the firmware, in raw form. <i>PropertyBuffer</i> points to a <a href="..\wdm\ns-wdm--cm-resource-list.md">CM_RESOURCE_LIST</a> structure.</p>
 </dd>
 
-### -param <a id="DevicePropertyBootConfigurationTranslated"></a><a id="devicepropertybootconfigurationtranslated"></a><a id="DEVICEPROPERTYBOOTCONFIGURATIONTRANSLATED"></a><b>DevicePropertyBootConfigurationTranslated</b>
+### -param DevicePropertyBootConfigurationTranslated
 
 <dd>
 <p>The hardware resources assigned to the device by the firmware, in translated form. <i>PropertyBuffer</i> points to a <b>CM_RESOURCE_LIST</b> structure.</p>
 </dd>
 
-### -param <a id="DevicePropertyBusNumber"></a><a id="devicepropertybusnumber"></a><a id="DEVICEPROPERTYBUSNUMBER"></a><b>DevicePropertyBusNumber</b>
+### -param DevicePropertyBusNumber
 
 <dd>
 <p>Requests the legacy bus number of the bus the device is connected to. <i>PropertyBuffer</i> points to a ULONG.</p>
 </dd>
 
-### -param <a id="DevicePropertyBusTypeGuid"></a><a id="devicepropertybustypeguid"></a><a id="DEVICEPROPERTYBUSTYPEGUID"></a><b>DevicePropertyBusTypeGuid</b>
+### -param DevicePropertyBusTypeGuid
 
 <dd>
 <p>Requests the GUID for the bus that the device is connected to. The system-defined bus type GUIDs are listed in the Wdmguid.h header file. <i>PropertyBuffer</i> points to a GUID, which is a 16-byte structure that contains the GUID in binary form.</p>
 </dd>
 
-### -param <a id="DevicePropertyClassGuid"></a><a id="devicepropertyclassguid"></a><a id="DEVICEPROPERTYCLASSGUID"></a><b>DevicePropertyClassGuid</b>
+### -param DevicePropertyClassGuid
 
 <dd>
 <p>Requests the GUID for the device's setup class. <i>PropertyBuffer</i> points to a NULL-terminated array of WCHAR. This routine returns the GUID in a string format as follows, where each "c" represents a hexadecimal character: {cccccccc-cccc-cccc-cccc-cccccccccccc}</p>
 </dd>
 
-### -param <a id="DevicePropertyClassName"></a><a id="devicepropertyclassname"></a><a id="DEVICEPROPERTYCLASSNAME"></a><b>DevicePropertyClassName</b>
+### -param DevicePropertyClassName
 
 <dd>
 <p>Requests the name of the device's setup class, in text format. <i>PropertyBuffer</i> points to a NULL-terminated WCHAR string. </p>
 </dd>
 
-### -param <a id="DevicePropertyCompatibleIDs"></a><a id="devicepropertycompatibleids"></a><a id="DEVICEPROPERTYCOMPATIBLEIDS"></a><b>DevicePropertyCompatibleIDs</b>
+### -param DevicePropertyCompatibleIDs
 
 <dd>
 <p>Requests the <a href="wdkgloss.c#wdkgloss.compatible_id#wdkgloss.compatible_id"><i>compatible IDs</i></a> reported by the device. <i>PropertyBuffer</i> points to a REG_MULTI_SZ value.</p>
 </dd>
 
-### -param <a id="DevicePropertyDeviceDescription"></a><a id="devicepropertydevicedescription"></a><a id="DEVICEPROPERTYDEVICEDESCRIPTION"></a><b>DevicePropertyDeviceDescription</b>
+### -param DevicePropertyDeviceDescription
 
 <dd>
 <p>Requests a string describing the device, such as "Microsoft PS/2 Port Mouse", typically defined by the manufacturer. <i>PropertyBuffer</i> points to a NULL-terminated WCHAR string. </p>
 </dd>
 
-### -param <a id="DevicePropertyDriverKeyName"></a><a id="devicepropertydriverkeyname"></a><a id="DEVICEPROPERTYDRIVERKEYNAME"></a><b>DevicePropertyDriverKeyName</b>
+### -param DevicePropertyDriverKeyName
 
 <dd>
 <p>Requests the name of the driver-specific registry key. <i>PropertyBuffer</i> points to a NULL-terminated WCHAR string.</p>
 </dd>
 
-### -param <a id="DevicePropertyEnumeratorName"></a><a id="devicepropertyenumeratorname"></a><a id="DEVICEPROPERTYENUMERATORNAME"></a><b>DevicePropertyEnumeratorName</b>
+### -param DevicePropertyEnumeratorName
 
 <dd>
 <p>Requests the name of the enumerator for the device, such as "PCI" or "root". <i>PropertyBuffer</i> points to a NULL-terminated WCHAR string.</p>
 </dd>
 
-### -param <a id="DevicePropertyFriendlyName"></a><a id="devicepropertyfriendlyname"></a><a id="DEVICEPROPERTYFRIENDLYNAME"></a><b>DevicePropertyFriendlyName</b>
+### -param DevicePropertyFriendlyName
 
 <dd>
 <p>Requests a string that can be used to distinguish between two similar devices, typically defined by the class installer. <i>PropertyBuffer</i> points to a NULL-terminated WCHAR string. </p>
 </dd>
 
-### -param <a id="DevicePropertyHardwareID"></a><a id="devicepropertyhardwareid"></a><a id="DEVICEPROPERTYHARDWAREID"></a><b>DevicePropertyHardwareID</b>
+### -param DevicePropertyHardwareID
 
 <dd>
 <p>Requests the <a href="wdkgloss.h#wdkgloss.hardware_id#wdkgloss.hardware_id"><i>hardware IDs</i></a> provided by the device that identify the device. <i>PropertyBuffer</i> points to a REG_MULTI_SZ value.</p>
 </dd>
 
-### -param <a id="DevicePropertyInstallState"></a><a id="devicepropertyinstallstate"></a><a id="DEVICEPROPERTYINSTALLSTATE"></a><b>DevicePropertyInstallState</b>
+### -param DevicePropertyInstallState
 
 <dd>
 <p>(Windows XP and later versions of Windows.) Requests the device's installation state. The installation state is returned as a <a href="..\wdm\ne-wdm--device-install-state.md">DEVICE_INSTALL_STATE</a> enumeration value (see the Ntddk.h header file). </p>
 </dd>
 
-### -param <a id="DevicePropertyLegacyBusType"></a><a id="devicepropertylegacybustype"></a><a id="DEVICEPROPERTYLEGACYBUSTYPE"></a><b>DevicePropertyLegacyBusType</b>
+### -param DevicePropertyLegacyBusType
 
 <dd>
 <p>Requests the bus type, such as PCIBus or PCMCIABus. <i>PropertyBuffer</i> points to an <a href="..\wdm\ne-wdm--interface-type.md">INTERFACE_TYPE</a> enumeration value.</p>
 </dd>
 
-### -param <a id="DevicePropertyLocationInformation"></a><a id="devicepropertylocationinformation"></a><a id="DEVICEPROPERTYLOCATIONINFORMATION"></a><b>DevicePropertyLocationInformation</b>
+### -param DevicePropertyLocationInformation
 
 <dd>
 <p>Requests information about the device's location on the bus; the interpretation of this information is bus-specific. <i>PropertyBuffer</i> points to a NULL-terminated WCHAR string.</p>
 </dd>
 
-### -param <a id="DevicePropertyManufacturer"></a><a id="devicepropertymanufacturer"></a><a id="DEVICEPROPERTYMANUFACTURER"></a><b>DevicePropertyManufacturer</b>
+### -param DevicePropertyManufacturer
 
 <dd>
 <p>Requests a string identifying the manufacturer of the device. <i>PropertyBuffer</i> points to a NULL-terminated WCHAR string.</p>
 </dd>
 
-### -param <a id="DevicePropertyPhysicalDeviceObjectName"></a><a id="devicepropertyphysicaldeviceobjectname"></a><a id="DEVICEPROPERTYPHYSICALDEVICEOBJECTNAME"></a><b>DevicePropertyPhysicalDeviceObjectName</b>
+### -param DevicePropertyPhysicalDeviceObjectName
 
 <dd>
 <p>Requests the name of the PDO for this device. <i>PropertyBuffer</i> points to a NULL-terminated WCHAR string.</p>
 </dd>
 
-### -param <a id="DevicePropertyRemovalPolicy"></a><a id="devicepropertyremovalpolicy"></a><a id="DEVICEPROPERTYREMOVALPOLICY"></a><b>DevicePropertyRemovalPolicy</b>
+### -param DevicePropertyRemovalPolicy
 
 <dd>
 <p>(Windows XP and later versions of Windows.) Requests the device's current removal policy. The operating system uses this value as a hint to determine how the device is normally removed. The <i>PropertyBuffer</i> parameter points to a <a href="..\wdm\ne-wdm--device-removal-policy.md">DEVICE_REMOVAL_POLICY</a> enumeration value.</p>
 </dd>
 
-### -param <a id="DevicePropertyUINumber"></a><a id="devicepropertyuinumber"></a><a id="DEVICEPROPERTYUINUMBER"></a><b>DevicePropertyUINumber</b>
+### -param DevicePropertyUINumber
 
 <dd>
 <p>Requests a number associated with the device that can be displayed in the user interface. <i>PropertyBuffer</i> points to a ULONG value.</p>
@@ -196,19 +196,19 @@ NTSTATUS IoGetDeviceProperty(
 </dl>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the caller-supplied <i>PropertyBuffer</i>.</p>
 </dd>
 
-### -param <i>PropertyBuffer</i> [out, optional]
+### -param PropertyBuffer [out, optional]
 
 <dd>
 <p>Pointer to a caller-supplied buffer to receive the property information. The buffer can be allocated from pageable memory. The type of the buffer is determined by the <i>DeviceProperty</i> (see above).</p>
 </dd>
 
-### -param <i>ResultLength</i> [out]
+### -param ResultLength [out]
 
 <dd>
 <p>Pointer to a ULONG to receive the size of the property information returned at <i>PropertyBuffer</i>. If <b>IoGetDeviceProperty</b> returns STATUS_BUFFER_TOO_SMALL, it sets this parameter to the required buffer length.</p>

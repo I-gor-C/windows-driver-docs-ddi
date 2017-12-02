@@ -58,13 +58,13 @@ NTSTATUS CLIENT_PreProcessControllerInterrupt(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/4BE99C71-9BA6-44E3-A54F-DE8C3440A474">device context</a>.</p>
 </dd>
 
-### -param <i>BankId</i> [in]
+### -param BankId [in]
 
 <dd>
 <p>The bank that contains the interrupting GPIO pin. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1. The GPIO framework extension previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.</p>
@@ -79,17 +79,17 @@ NTSTATUS CLIENT_PreProcessControllerInterrupt(
 
 <p>Typically, a GPIO controller driver can access a memory-mapped GPIO controller at DIRQL, but can access a serially connected GPIO controller only at PASSIVE_LEVEL. However, some serially connected GPIO controllers might lose interrupt status data if they delay capture of the interrupt status bits until the IRQL drops to PASSIVE_LEVEL. When the IRQL later drops to PASSIVE_LEVEL, the GPIO framework extension (GpioClx) can call the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439395">CLIENT_QueryActiveInterrupts</a> callback function to retrieve the register contents.</p>
 
-<p>The GPIO controller driver indicates whether it must handle interrupts at PASSIVE_LEVEL in the device information that it passes to GpioClx during the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> callback. If the GPIO controller is memory-mapped, so that the driver can access the controller's registers at DIRQL, the driver sets the <b>MemoryMappedController</b> flag bit in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a> structure that the driver passes to GpioClx. Otherwise, the driver sets <b>MemoryMappedController</b> = 0 to indicate that the driver must handle interrupts at PASSIVE_LEVEL. For more information, see <a href="NULL">Passive-Level ISRs</a>.</p>
+<p>The GPIO controller driver indicates whether it must handle interrupts at PASSIVE_LEVEL in the device information that it passes to GpioClx during the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> callback. If the GPIO controller is memory-mapped, so that the driver can access the controller's registers at DIRQL, the driver sets the <b>MemoryMappedController</b> flag bit in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a> structure that the driver passes to GpioClx. Otherwise, the driver sets <b>MemoryMappedController</b> = 0 to indicate that the driver must handle interrupts at PASSIVE_LEVEL. For more information, see <a href="https://msdn.microsoft.com/E7556046-D85C-4CD1-8C27-578BF5CAFF2B">Passive-Level ISRs</a>.</p>
 
 <p>To register your driver's <i>CLIENT_PreProcessControllerInterrupt</i> callback function, call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439490">GPIO_CLX_RegisterClient</a> method. This method accepts, as an input parameter, a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh439479">GPIO_CLIENT_REGISTRATION_PACKET</a> structure that contains a <i>CLIENT_PreProcessControllerInterrupt</i> function pointer.</p>
 
-<p>To define a <i>CLIENT_PreProcessControllerInterrupt</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define a <i>CLIENT_PreProcessControllerInterrupt</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define a <i>CLIENT_PreProcessControllerInterrupt</i> callback function that is named <code>MyEvtGpioPreProcessInterrupt</code>, use the GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT function type, as shown in this code example:</p>
 
 <p>Then, implement your callback function as follows:</p>
 
-<p>The GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT function type is defined in the Gpioclx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT function type in the header file are used. For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.</p>
+<p>The GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT function type is defined in the Gpioclx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.</p>
 
 ## -requirements
 <table>

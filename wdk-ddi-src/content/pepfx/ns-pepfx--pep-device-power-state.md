@@ -57,25 +57,25 @@ typedef struct _PEP_DEVICE_POWER_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] The PEPHANDLE value that identifies this device. The PEP previously created this handle in response to a <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification from the Windows <a href="https://msdn.microsoft.com/9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF">power management framework</a> (PoFx).</p>
 </dd>
 
-### -field <b>PowerState</b>
+### -field PowerState
 
 <dd>
 <p>[in] A <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a> enumeration value that specifies the new device power state.</p>
 </dd>
 
-### -field <b>Complete</b>
+### -field Complete
 
 <dd>
 <p>[in] Whether the transition to the new device power state has just been initiated or has just completed. If TRUE, the transition to the target device power state has completed. If FALSE, the power policy owner (PPO) has initiated the transition by calling the <a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a> routine, but the Windows power manager has not yet issued the D<i>x</i> IRP (an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a> request of type <b>DevicePowerState</b>) to the device's driver stack.</p>
 </dd>
 
-### -field <b>SystemTransition</b>
+### -field SystemTransition
 
 <dd>
 <p>[in] Always set to FALSE.</p>

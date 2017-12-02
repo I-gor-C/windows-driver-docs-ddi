@@ -55,7 +55,7 @@ PSINGLE_LIST_ENTRY PopEntryList(
 ## -parameters
 <dl>
 
-### -param <i>ListHead</i> [in, out]
+### -param ListHead [in, out]
 
 <dd>
 <p>Pointer to the <a href="..\wdm\ns-wdm--single-list-entry.md">SINGLE_LIST_ENTRY</a> structure that represents the head of the list. On return, <i>ListHead</i>-&gt;<b>Next</b> points to the beginning of the list with the first entry removed. </p>

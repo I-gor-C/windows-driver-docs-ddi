@@ -57,15 +57,15 @@ HRESULT EnableDriver(
 ## -parameters
 <dl>
 
-### -param <i>DriverVersion</i> 
+### -param DriverVersion 
 
 <dd></dd>
 
-### -param <i>cbSize</i> 
+### -param cbSize 
 
 <dd></dd>
 
-### -param <i>pded</i> 
+### -param pded 
 
 <dd></dd>
 </dl>

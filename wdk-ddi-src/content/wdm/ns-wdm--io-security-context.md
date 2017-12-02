@@ -58,25 +58,25 @@ typedef struct _IO_SECURITY_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>SecurityQos</b>
+### -field SecurityQos
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>AccessState</b>
+### -field AccessState
 
 <dd>
 <p>Reserved for use by file systems and file system filter drivers. This member is a pointer to an <a href="..\wdm\ns-wdm--access-state.md">ACCESS_STATE</a> structure that contains the object's subject context, granted access types, and remaining desired access types. </p>
 </dd>
 
-### -field <b>DesiredAccess</b>
+### -field DesiredAccess
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that expresses the access rights that are requested in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a> request.</p>
 </dd>
 
-### -field <b>FullCreateOptions</b>
+### -field FullCreateOptions
 
 <dd>
 <p>Reserved for system use.</p>

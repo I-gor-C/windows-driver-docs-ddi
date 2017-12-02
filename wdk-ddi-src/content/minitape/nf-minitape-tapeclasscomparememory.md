@@ -56,19 +56,19 @@ ULONG TapeClassCompareMemory(
 ## -parameters
 <dl>
 
-### -param <i>Source1</i> [in, out]
+### -param Source1 [in, out]
 
 <dd>
 <p>Pointer to the first buffer to be compared.</p>
 </dd>
 
-### -param <i>Source2</i> [in, out]
+### -param Source2 [in, out]
 
 <dd>
 <p>Pointer to the second buffer to be compared.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the number of bytes to be compared.</p>

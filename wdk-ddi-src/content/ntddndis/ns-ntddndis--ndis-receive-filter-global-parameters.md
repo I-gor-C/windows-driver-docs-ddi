@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_filter_global_parameters.htm
 old-project: netvista
 ms.assetid: 4ec36054-ba61-4862-b185-7473a6806804
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS, NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS, *PNDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,11 +43,11 @@ req.iface:
   enabled or disabled on a network adapter.</p>
 <p>NDIS receive filters are used in the following NDIS interfaces:</p>
 <p>
-<a href="NULL">NDIS Packet Coalescing</a>. For more information about how to use receive filters in this interface, see <a href="NULL">Managing Packet Coalescing Receive Filters</a>.</p>
+<a href="netvista.ndis_packet_coalescing">NDIS Packet Coalescing</a>. For more information about how to use receive filters in this interface, see <a href="netvista.managing_packet_coalescing_receive_filters">Managing Packet Coalescing Receive Filters</a>.</p>
 <p>
-<a href="NULL">Single Root I/O Virtualization (SR-IOV)</a>. For more information about how to use receive filters in this interface, see <a href="NULL">Setting a Receive Filter on a Virtual Port</a>.</p>
+<a href="netvista.single_root_i_o_virtualization__sr-iov_">Single Root I/O Virtualization (SR-IOV)</a>. For more information about how to use receive filters in this interface, see <a href="netvista.setting_a_receive_filter_on_a_virtual_port">Setting a Receive Filter on a Virtual Port</a>.</p>
 <p>
-<a href="NULL">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="NULL">Setting and Clearing VMQ Filters</a>.</p>
+<a href="netvista.virtual_machine_queue__vmq__in_ndis_6_20">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="netvista.setting_and_clearing_vmq_filters">Setting and Clearing VMQ Filters</a>.</p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ typedef struct _NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -78,7 +78,7 @@ typedef struct _NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS_REVISION_1"></a><a id="ndis_receive_filter_global_parameters_revision_1"></a>NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS_REVISION_1
+### -field NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.20.</p>
@@ -88,13 +88,13 @@ typedef struct _NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitwise OR of flags. This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>EnabledFilterTypes</b>
+### -field EnabledFilterTypes
 
 <dd>
 <p>A  bitwise OR of flags for types of enabled receive filters. The
@@ -103,7 +103,7 @@ typedef struct _NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_FILTER_VMQ_FILTERS_ENABLED"></a><a id="ndis_receive_filter_vmq_filters_enabled"></a>NDIS_RECEIVE_FILTER_VMQ_FILTERS_ENABLED
+### -field NDIS_RECEIVE_FILTER_VMQ_FILTERS_ENABLED
 
 <dd>
 <p>Specifies that VMQ filters are enabled.</p>
@@ -111,7 +111,7 @@ typedef struct _NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_FILTER_PACKET_COALESCING_FILTERS_ENABLED"></a><a id="ndis_receive_filter_packet_coalescing_filters_enabled"></a>NDIS_RECEIVE_FILTER_PACKET_COALESCING_FILTERS_ENABLED
+### -field NDIS_RECEIVE_FILTER_PACKET_COALESCING_FILTERS_ENABLED
 
 <dd>
 <p>Specifies that NDIS packet coalescing receive filters are enabled.</p>
@@ -119,7 +119,7 @@ typedef struct _NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>EnabledQueueTypes</b>
+### -field EnabledQueueTypes
 
 <dd>
 <p>A  bitwise OR of flags for types of enabled receive queues. The
@@ -128,7 +128,7 @@ typedef struct _NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_FILTER_VM_QUEUES_ENABLED"></a><a id="ndis_receive_filter_vm_queues_enabled"></a>NDIS_RECEIVE_FILTER_VM_QUEUES_ENABLED
+### -field NDIS_RECEIVE_FILTER_VM_QUEUES_ENABLED
 
 <dd>
 <p>Specifies that virtual machine (VM) queues are enabled.  VM queues are used in the VMQ and SR-IOV interface.</p>
@@ -177,4 +177,4 @@ typedef struct _NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

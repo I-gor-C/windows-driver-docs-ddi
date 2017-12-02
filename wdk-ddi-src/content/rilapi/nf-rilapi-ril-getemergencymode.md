@@ -7,7 +7,7 @@ old-location: netvista\ril_getemergencymode.htm
 old-project: netvista
 ms.assetid: 3c95d10b-5db6-40d0-9caa-518235e81d6d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetEmergencyMode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_GetEmergencyMode(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 </dl>

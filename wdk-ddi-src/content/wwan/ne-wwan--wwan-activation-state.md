@@ -7,7 +7,7 @@ old-location: netvista\wwan_activation_state.htm
 old-project: netvista
 ms.assetid: ca5caf9d-5c73-4516-bbc9-ee3ff9511e99
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ typedef enum _WWAN_ACTIVATION_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanActivationStateUnknown"></a><a id="wwanactivationstateunknown"></a><a id="WWANACTIVATIONSTATEUNKNOWN"></a><b>WwanActivationStateUnknown</b>
+### -field WwanActivationStateUnknown
 
 <dd>
 <p>The activation state is unknown.</p>
 </dd>
 
-### -field <a id="WwanActivationStateActivated"></a><a id="wwanactivationstateactivated"></a><a id="WWANACTIVATIONSTATEACTIVATED"></a><b>WwanActivationStateActivated</b>
+### -field WwanActivationStateActivated
 
 <dd>
 <p>The packet context is activated.</p>
 </dd>
 
-### -field <a id="WwanActivationStateActivating"></a><a id="wwanactivationstateactivating"></a><a id="WWANACTIVATIONSTATEACTIVATING"></a><b>WwanActivationStateActivating</b>
+### -field WwanActivationStateActivating
 
 <dd>
 <p>The packet context is currently in the process of getting activated.</p>
 </dd>
 
-### -field <a id="WwanActivationStateDeactivated"></a><a id="wwanactivationstatedeactivated"></a><a id="WWANACTIVATIONSTATEDEACTIVATED"></a><b>WwanActivationStateDeactivated</b>
+### -field WwanActivationStateDeactivated
 
 <dd>
 <p>The packet context is not activated.</p>
 </dd>
 
-### -field <a id="WwanActivationStateDeactivating"></a><a id="wwanactivationstatedeactivating"></a><a id="WWANACTIVATIONSTATEDEACTIVATING"></a><b>WwanActivationStateDeactivating</b>
+### -field WwanActivationStateDeactivating
 
 <dd>
 <p>The packet context is currently in the process of getting deactivated.</p>
 </dd>
 
-### -field <a id="WwanActivationStateMax"></a><a id="wwanactivationstatemax"></a><a id="WWANACTIVATIONSTATEMAX"></a><b>WwanActivationStateMax</b>
+### -field WwanActivationStateMax
 
 <dd>
 <p>The total number of PDP activation states.</p>
@@ -137,4 +137,4 @@ typedef enum _WWAN_ACTIVATION_STATE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_ACTIVATION_STATE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_ACTIVATION_STATE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

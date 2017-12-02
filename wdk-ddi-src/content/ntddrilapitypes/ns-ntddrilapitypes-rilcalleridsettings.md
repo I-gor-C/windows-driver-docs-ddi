@@ -7,7 +7,7 @@ old-location: netvista\rilcalleridsettings.htm
 old-project: netvista
 ms.assetid: 3ba2cd72-4678-4ada-9777-12cbb6032628
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLERIDSETTINGS, RILCALLERIDSETTINGS, *LPRILCALLERIDSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef struct _RILCALLERIDSETTINGS {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwStatus</b>
+### -field dwStatus
 
 <dd></dd>
 
-### -field <b>dwProvisioning</b>
+### -field dwProvisioning
 
 <dd></dd>
 </dl>

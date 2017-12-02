@@ -61,43 +61,43 @@ typedef struct _CLFS_MGMT_CLIENT_REGISTRATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the <b>CLFS_MGMT_CLIENT_REGISTRATION</b> structure. Set this to <b>CLFS_MGMT_CLIENT_REGISTRATION_VERSION</b>.</p>
 </dd>
 
-### -field <b>AdvanceTailCallback</b>
+### -field AdvanceTailCallback
 
 <dd>
 <p>A pointer to the log's <a href="kernel.clfsadvancetailcallback">ClfsAdvanceTailCallback</a> function.</p>
 </dd>
 
-### -field <b>AdvanceTailCallbackData</b>
+### -field AdvanceTailCallbackData
 
 <dd>
 <p>A pointer to user-defined data that will be supplied to the <i>ClfsAdvanceTailCallback</i> function when the function is invoked. </p>
 </dd>
 
-### -field <b>LogGrowthCompleteCallback</b>
+### -field LogGrowthCompleteCallback
 
 <dd>
 <p>A pointer to the log's <a href="kernel.clfsloggrowthcompletecallback">ClfsLogGrowthCompleteCallback</a> function.</p>
 </dd>
 
-### -field <b>LogGrowthCompleteCallbackData</b>
+### -field LogGrowthCompleteCallbackData
 
 <dd>
 <p>A pointer to user-defined data that will be supplied to the <i>ClfsLogGrowthCompleteCallback</i> function when the function is invoked. </p>
 </dd>
 
-### -field <b>LogUnpinnedCallback</b>
+### -field LogUnpinnedCallback
 
 <dd>
 <p>A pointer to the log's <a href="kernel.clfslogunpinnedcallback">ClfsLogUnpinnedCallback</a> function.</p>
 </dd>
 
-### -field <b>LogUnpinnedCallbackData</b>
+### -field LogUnpinnedCallbackData
 
 <dd>
 <p>A pointer to user-defined data that will be supplied to the <i>ClfsLogUnpinnedCallback</i> function when the function is invoked. </p>

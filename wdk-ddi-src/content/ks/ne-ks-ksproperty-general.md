@@ -54,7 +54,7 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_GENERAL_COMPONENTID"></a><a id="ksproperty_general_componentid"></a><b>KSPROPERTY_GENERAL_COMPONENTID</b>
+### -field KSPROPERTY_GENERAL_COMPONENTID
 
 <dd>
 <p>Specify to access general component information stored in the <b>KSCOMPONENTID</b> structure.</p>

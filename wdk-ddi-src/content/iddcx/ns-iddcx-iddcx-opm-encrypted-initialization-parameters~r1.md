@@ -56,7 +56,7 @@ typedef struct IDDCX_OPM_ENCRYPTED_INITIALIZATION_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -64,7 +64,7 @@ typedef struct IDDCX_OPM_ENCRYPTED_INITIALIZATION_PARAMETERS {
                  </p>
 </dd>
 
-### -field <b>EncryptedParameters</b>
+### -field EncryptedParameters
 
 <dd>
 <p>

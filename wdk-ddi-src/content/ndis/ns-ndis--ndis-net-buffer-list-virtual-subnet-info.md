@@ -7,7 +7,7 @@ old-location: netvista\ndis_net_buffer_list_virtual_subnet_info.htm
 old-project: netvista
 ms.assetid: E87F9FC0-D408-43D2-A09F-F921617CF3DA
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO, NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO, *PNDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct _NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO {
 ## -struct-fields
 <dl>
 
-### -field ( <i>unnamed struct</i> )
+### -field ( unnamed struct )
 
 <dd>
 <p>A member in the union that is contained in <b>NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO</b>. Ethernet
@@ -70,19 +70,19 @@ typedef struct _NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO {
       This member is a bit field with the following members:</p>
 <dl>
 
-### -field <b>VirtualSubnetId</b>
+### -field VirtualSubnetId
 
 <dd>
 <p>The originating virtual switch port ID for the network buffer list.</p>
 </dd>
 
-### -field <b>ReservedVsidBits</b>
+### -field ReservedVsidBits
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
@@ -90,7 +90,7 @@ typedef struct _NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO {
 </dl>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that is contained in <b>NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO</b>. 
@@ -130,13 +130,13 @@ typedef struct _NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="NULL">Cloning Packet Traffic</a>
+<a href="netvista.cloning_or_duplicating_packet_traffic">Cloning Packet Traffic</a>
 </dt>
 <dt>
-<a href="NULL">Forwarding Extensions</a>
+<a href="netvista.forwarding_extensions">Forwarding Extensions</a>
 </dt>
 <dt>
-<a href="NULL">Overview of the Hyper-V Extensible Switch</a>
+<a href="netvista.overview_of_the_hyper_v_extensible_switch">Overview of the Hyper-V Extensible Switch</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
@@ -153,4 +153,4 @@ typedef struct _NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

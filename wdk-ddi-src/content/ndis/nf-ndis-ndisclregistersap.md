@@ -7,7 +7,7 @@ old-location: netvista\ndisclregistersap.htm
 old-project: netvista
 ms.assetid: 33ed0839-d1e3-4872-baa8-ead7e97f8c53
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisClRegisterSap
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ NDIS_STATUS NdisClRegisterSap(
 ## -parameters
 <dl>
 
-### -param <i>NdisAfHandle</i> [in]
+### -param NdisAfHandle [in]
 
 <dd>
 <p>Specifies the handle returned by 
@@ -66,7 +66,7 @@ NDIS_STATUS NdisClRegisterSap(
      which implicitly identifies the call manager with which to register the SAP.</p>
 </dd>
 
-### -param <i>ProtocolSapContext</i> [in]
+### -param ProtocolSapContext [in]
 
 <dd>
 <p>Specifies the handle to a caller-supplied resident context area in which the client maintains
@@ -75,7 +75,7 @@ NDIS_STATUS NdisClRegisterSap(
      <b>NdisClRegisterSap</b> succeeds.</p>
 </dd>
 
-### -param <i>Sap</i> [in]
+### -param Sap [in]
 
 <dd>
 <p>Pointer to a client-supplied specification for the SAP to be opened, formatted as a structure of
@@ -83,7 +83,7 @@ NDIS_STATUS NdisClRegisterSap(
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff545392">CO_SAP</a>.</p>
 </dd>
 
-### -param <i>NdisSapHandle</i> [out]
+### -param NdisSapHandle [out]
 
 <dd>
 <p>Pointer to a variable in which a handle to the newly registered SAP is returned if this call
@@ -243,4 +243,4 @@ NDIS_STATUS NdisClRegisterSap(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClRegisterSap function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClRegisterSap function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -55,7 +55,7 @@ VOID ExUnregisterCallback(
 ## -parameters
 <dl>
 
-### -param <i>CbRegistration</i> [in, out]
+### -param CbRegistration [in, out]
 
 <dd>
 <p>Specifies the callback routine to unregister. This must be the value returned by <b>ExRegisterCallback</b> when the callback was registered. </p>

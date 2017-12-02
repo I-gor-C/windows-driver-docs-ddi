@@ -7,7 +7,7 @@ old-location: sensors\sensor_property_list.htm
 old-project: sensors
 ms.assetid: 03E03BB9-95DB-49C0-AF14-FFF1998C98A7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SENSOR_PROPERTY_LIST, SENSOR_PROPERTY_LIST, *PSENSOR_PROPERTY_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _SENSOR_PROPERTY_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>AllocatedSizeInBytes</b>
+### -field AllocatedSizeInBytes
 
 <dd>
 <p>Represents the number of elements allocated in List.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Represents the number of used entries in List.</p>
 </dd>
 
-### -field <b>List</b>
+### -field List
 
 <dd>
 <p>A list of PROPERTYKEY values.</p>

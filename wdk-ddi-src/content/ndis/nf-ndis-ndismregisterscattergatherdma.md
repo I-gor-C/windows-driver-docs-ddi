@@ -7,7 +7,7 @@ old-location: netvista\ndismregisterscattergatherdma.htm
 old-project: netvista
 ms.assetid: 90ce64a2-9140-4b5f-88aa-b4f01a3d0c6f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMRegisterScatterGatherDma
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,14 +59,14 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
 ## -parameters
 <dl>
 
-### -param <i>MiniportAdapterHandle</i> [in]
+### -param MiniportAdapterHandle [in]
 
 <dd>
 <p>The miniport handle that NDIS passed to 
      <i>MiniportInitializeEx</i>.</p>
 </dd>
 
-### -param <i>DmaDescription</i> [in, out]
+### -param DmaDescription [in, out]
 
 <dd>
 <p>A pointer to an NDIS_SG_DMA_DESCRIPTION structure. This structure describes the scatter/gather DMA
@@ -94,7 +94,7 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
 <p></p>
 <dl>
 
-### -param <a id="Header"></a><a id="header"></a><a id="HEADER"></a><b>Header</b>
+### -param Header
 
 <dd>
 <p>The 
@@ -106,7 +106,7 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
        <b>Size</b> member to NDIS_SIZEOF_SG_DMA_DESCRIPTION_REVISION_1.</p>
 </dd>
 
-### -param <a id="Flags"></a><a id="flags"></a><a id="FLAGS"></a><b>Flags</b>
+### -param Flags
 
 <dd>
 <p>A set of bit flags that define scatter/gather characteristics. Set this member to the bitwise OR
@@ -117,7 +117,7 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
 <p>Set this member to zero if 64-bit addressing is not required.</p>
 </dd>
 
-### -param <a id="MaximumPhysicalMapping"></a><a id="maximumphysicalmapping"></a><a id="MAXIMUMPHYSICALMAPPING"></a><b>MaximumPhysicalMapping</b>
+### -param MaximumPhysicalMapping
 
 <dd>
 <p>The maximum number of bytes that the NIC can transfer in a single DMA operation. NDIS provides
@@ -125,7 +125,7 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
        value to determine the maximum number of map registers to reserve for the NIC.</p>
 </dd>
 
-### -param <a id="ProcessSGListHandler"></a><a id="processsglisthandler"></a><a id="PROCESSSGLISTHANDLER"></a><b>ProcessSGListHandler</b>
+### -param ProcessSGListHandler
 
 <dd>
 <p>The 
@@ -133,7 +133,7 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
        that NDIS calls when HAL is done building the scatter/gather list.</p>
 </dd>
 
-### -param <a id="SharedMemAllocateCompleteHandler"></a><a id="sharedmemallocatecompletehandler"></a><a id="SHAREDMEMALLOCATECOMPLETEHANDLER"></a><b>SharedMemAllocateCompleteHandler</b>
+### -param SharedMemAllocateCompleteHandler
 
 <dd>
 <p>The 
@@ -145,7 +145,7 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
        <b>NdisMAllocateSharedMemoryAsyncEx</b>.</p>
 </dd>
 
-### -param <a id="ScatterGatherListSize"></a><a id="scattergatherlistsize"></a><a id="SCATTERGATHERLISTSIZE"></a><b>ScatterGatherListSize</b>
+### -param ScatterGatherListSize
 
 <dd>
 <p>The size, in bytes, of the memory that is required to hold a scatter/gather list. NDIS sets this
@@ -156,7 +156,7 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
 </dl>
 </dd>
 
-### -param <i>NdisMiniportDmaHandle</i> [out]
+### -param NdisMiniportDmaHandle [out]
 
 <dd>
 <p>A pointer to a variable that the caller supplies and that NDIS fills with a handle. The handle
@@ -327,18 +327,18 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
 <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
-<a href="NULL">Allocating and Freeing Scatter/Gather Lists</a>
+<a href="netvista.allocating_and_freeing_scatter_gather_lists">Allocating and Freeing Scatter/Gather Lists</a>
 </dt>
 <dt>
-<a href="NULL">Miniport Driver Scatter/Gather DMA</a>
+<a href="netvista.scatter_gather_dma2">Miniport Driver Scatter/Gather DMA</a>
 </dt>
 <dt>
-<a href="NULL">NDIS Scatter/Gather DMA</a>
+<a href="netvista.ndis_scatter_gather_dma">NDIS Scatter/Gather DMA</a>
 </dt>
 <dt>
-<a href="NULL">Registering and Deregistering DMA Channels</a>
+<a href="netvista.registering_and_deregistering_dma_channels">Registering and Deregistering DMA Channels</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterScatterGatherDma function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterScatterGatherDma function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

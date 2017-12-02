@@ -62,55 +62,55 @@ typedef struct HBA_MgmtInfo {
 ## -struct-fields
 <dl>
 
-### -field <b>wwn</b>
+### -field wwn
 
 <dd>
 <p>Contains a 64 bit world-wide name (WWN) that uniquely identifies the primary fibre channel node (host system) to which the HBA is attached. This information is returned in an RNID Accept payload in response to an RNID request. For more information about the meaning of this member, see the description of the RNID Accept payload in the <i>Fibre Channel Framing and Signaling (FC-FS) </i>specification, published by the T11 committee. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
-### -field <b>unittype</b>
+### -field unittype
 
 <dd>
 <p>Contains a value that indicates the unit type. Unit types include such things as gateways, switches, hubs, storage subsystems, etc. For a list of values that can be assigned to this field and their corresponding units, see the <i>Fibre Channel Framing and Signaling (FC-FS) </i>specification, published by the T11 committee.</p>
 </dd>
 
-### -field <b>PortId</b>
+### -field PortId
 
 <dd>
 <p>Contains a vendor-specific value that identifies the physical port on the HBA that has a Fibre-Channel link attached. For more information about the meaning of this member, see the <i>Fibre Channel Framing and Signaling (FC-FS) </i>specification, published by the T11 committee. </p>
 </dd>
 
-### -field <b>NumberOfAttachedNodes</b>
+### -field NumberOfAttachedNodes
 
 <dd>
 <p>Indicates the number of nodes to which the HBA is attached. For more information about the meaning of this member, see the description of the RNID Accept payload in the <i>Fibre Channel Framing and Signaling (FC-FS) </i>specification, published by the T11 committee. </p>
 </dd>
 
-### -field <b>IPVersion</b>
+### -field IPVersion
 
 <dd>
 <p>Indicates the version of the IP protocol used by the HBA. For more information about the meaning of this member, see the <i>Fibre Channel Framing and Signaling (FC-FS) </i>specification, published by the T11 committee. </p>
 </dd>
 
-### -field <b>UDPPort</b>
+### -field UDPPort
 
 <dd>
 <p>Indicates the UDP/TCP port number used by the HBA. For more information about the meaning of this member, see the <i>Fibre Channel Framing and Signaling (FC-FS) </i>specification, published by the T11 committee. </p>
 </dd>
 
-### -field <b>IPAddress</b>
+### -field IPAddress
 
 <dd>
 <p>Contains the IP address f the HBA. </p>
 </dd>
 
-### -field <b>reserved</b>
+### -field reserved
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>TopologyDiscoveryFlags</b>
+### -field TopologyDiscoveryFlags
 
 <dd>
 <p>Contains the topology discovery flags. For an explanation of this member, see the <i>Fibre Channel Framing and Signaling (FC-FS) </i>specification, published by the T11 committee. </p>

@@ -7,7 +7,7 @@ old-location: sensors\gnss_chipsetinfo.htm
 old-project: sensors
 ms.assetid: DE45805C-09E6-44B8-A4DA-BF73EC444AA9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_CHIPSETINFO, GNSS_CHIPSETINFO, *PGNSS_CHIPSETINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>ManufacturerID[25]</b>
+### -field ManufacturerID[25]
 
 <dd>
 <p>String containing an identifier for the manufacturer.</p>
 </dd>
 
-### -field <b>HardwareID[25]</b>
+### -field HardwareID[25]
 
 <dd>
 <p>String containing an identifier for the specific GNSS chipset or combo chipset.</p>
 </dd>
 
-### -field <b>FirmwareVersion[20]</b>
+### -field FirmwareVersion[20]
 
 <dd>
 <p>Version for the firmware for the. This would be a string, typically of the format NNNN.NNNN.NNNN.NNNN.</p>
 </dd>
 
-### -field <b>Unused[512]</b>
+### -field Unused[512]
 
 <dd>
 <p>Padding buffer.</p>

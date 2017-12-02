@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_filter_info_array.htm
 old-project: netvista
 ms.assetid: 32896b46-1143-4598-ad15-2eb4dbdea6e8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_RECEIVE_FILTER_INFO_ARRAY, NDIS_RECEIVE_FILTER_INFO_ARRAY, *PNDIS_RECEIVE_FILTER_INFO_ARRAY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,11 +45,11 @@ req.iface:
 <p>The <b>NDIS_RECEIVE_FILTER_INFO_ARRAY</b> structure specifies a list of receive filters that are currently configured on a miniport driver.</p>
 <p>NDIS receive filters are used in the following NDIS interfaces:</p>
 <p>
-<a href="NULL">NDIS Packet Coalescing</a>. For more information about how to use receive filters in this interface, see <a href="NULL">Managing Packet Coalescing Receive Filters</a>.</p>
+<a href="netvista.ndis_packet_coalescing">NDIS Packet Coalescing</a>. For more information about how to use receive filters in this interface, see <a href="netvista.managing_packet_coalescing_receive_filters">Managing Packet Coalescing Receive Filters</a>.</p>
 <p>
-<a href="NULL">Single Root I/O Virtualization (SR-IOV)</a>. For more information about how to use receive filters in this interface, see <a href="NULL">Setting a Receive Filter on a Virtual Port</a>.</p>
+<a href="netvista.single_root_i_o_virtualization__sr-iov_">Single Root I/O Virtualization (SR-IOV)</a>. For more information about how to use receive filters in this interface, see <a href="netvista.setting_a_receive_filter_on_a_virtual_port">Setting a Receive Filter on a Virtual Port</a>.</p>
 <p>
-<a href="NULL">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="NULL">Setting and Clearing VMQ Filters</a>.</p>
+<a href="netvista.virtual_machine_queue__vmq__in_ndis_6_20">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="netvista.setting_and_clearing_vmq_filters">Setting and Clearing VMQ Filters</a>.</p>
 
 
 ## -syntax
@@ -72,7 +72,7 @@ typedef struct _NDIS_RECEIVE_FILTER_INFO_ARRAY {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_RECEIVE_FILTER_INFO_ARRAY</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -80,14 +80,14 @@ typedef struct _NDIS_RECEIVE_FILTER_INFO_ARRAY {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_SIZEOF_RECEIVE_FILTER_INFO_ARRAY_REVISION_2"></a><a id="ndis_sizeof_receive_filter_info_array_revision_2"></a>NDIS_SIZEOF_RECEIVE_FILTER_INFO_ARRAY_REVISION_2
+### -field NDIS_SIZEOF_RECEIVE_FILTER_INFO_ARRAY_REVISION_2
 
 <dd>
 <p>Added members for NDIS 6.30.</p>
 <p>Set the <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_INFO_ARRAY_REVISION_2.</p>
 </dd>
 
-### -field <a id="NDIS_SIZEOF_RECEIVE_FILTER_INFO_ARRAY_REVISION_1"></a><a id="ndis_sizeof_receive_filter_info_array_revision_1"></a>NDIS_SIZEOF_RECEIVE_FILTER_INFO_ARRAY_REVISION_1
+### -field NDIS_SIZEOF_RECEIVE_FILTER_INFO_ARRAY_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.20.</p>
@@ -96,17 +96,17 @@ typedef struct _NDIS_RECEIVE_FILTER_INFO_ARRAY {
 </dl>
 </dd>
 
-### -field <b>QueueId</b>
+### -field QueueId
 
 <dd>
 <p>A receive queue identifier. This identifier is an
      integer between zero and the number of queues that the network adapter supports. A value of NDIS_DEFAULT_RECEIVE_QUEUE_ID specifies
      the default receive queue.</p>
-<div class="alert"><b>Note</b>  Miniport drivers that support <a href="NULL">NDIS packet coalescing</a> or SR-IOV interface must set the <b>QueueId</b> member to NDIS_DEFAULT_RECEIVE_QUEUE_ID.</div>
+<div class="alert"><b>Note</b>  Miniport drivers that support <a href="netvista.ndis_packet_coalescing">NDIS packet coalescing</a> or SR-IOV interface must set the <b>QueueId</b> member to NDIS_DEFAULT_RECEIVE_QUEUE_ID.</div>
 <div> </div>
 </dd>
 
-### -field <b>FirstElementOffset</b>
+### -field FirstElementOffset
 
 <dd>
 <p>The offset, in bytes, to the first element in an array of elements that follow this structure. The offset is measured from the start of the <b>NDIS_RECEIVE_FILTER_INFO_ARRAY</b> structure up to the beginning of the first element. Each element in the array is an <a href="..\ntddndis\ns-ntddndis--ndis-receive-filter-info.md">NDIS_RECEIVE_FILTER_INFO</a> structure.
@@ -116,26 +116,26 @@ typedef struct _NDIS_RECEIVE_FILTER_INFO_ARRAY {
 <div> </div>
 </dd>
 
-### -field <b>NumElements</b>
+### -field NumElements
 
 <dd>
 <p>The number of elements in the array.</p>
 </dd>
 
-### -field <b>ElementSize</b>
+### -field ElementSize
 
 <dd>
 <p>The size, in bytes, of each element in the array.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A  bitwise OR of the following flags: </p>
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_FILTER_INFO_ARRAY_VPORT_ID_SPECIFIED"></a><a id="ndis_receive_filter_info_array_vport_id_specified"></a>NDIS_RECEIVE_FILTER_INFO_ARRAY_VPORT_ID_SPECIFIED
+### -field NDIS_RECEIVE_FILTER_INFO_ARRAY_VPORT_ID_SPECIFIED
 
 <dd>
 <p>If this flag is set, information is requested about receive filters that are configured on the virtual port (VPort) specified by the <b>VPortId</b> member.</p>
@@ -145,7 +145,7 @@ typedef struct _NDIS_RECEIVE_FILTER_INFO_ARRAY {
 </dl>
 </dd>
 
-### -field <b>VPortId</b>
+### -field VPortId
 
 <dd>
 <p>The virtual port (VPort) identifier on which receive filters are being queried. The VPort identifier must be one of the following values:</p>
@@ -217,4 +217,4 @@ The identifier of a VPort that was previously allocated through an OID method re
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_INFO_ARRAY structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_INFO_ARRAY structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

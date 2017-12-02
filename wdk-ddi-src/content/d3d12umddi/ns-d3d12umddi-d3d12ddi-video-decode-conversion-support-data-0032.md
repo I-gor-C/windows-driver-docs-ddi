@@ -61,49 +61,49 @@ typedef struct _D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeIndex</b>
+### -field NodeIndex
 
 <dd>
 <p>Node index.</p>
 </dd>
 
-### -field <b>Configuration</b>
+### -field Configuration
 
 <dd>
 <p>Configuration.</p>
 </dd>
 
-### -field <b>DecodeSample</b>
+### -field DecodeSample
 
 <dd>
 <p>Decode sample.</p>
 </dd>
 
-### -field <b>OutputFormat</b>
+### -field OutputFormat
 
 <dd>
 <p>Output format.</p>
 </dd>
 
-### -field <b>FrameRate</b>
+### -field FrameRate
 
 <dd>
 <p>Frame rate.</p>
 </dd>
 
-### -field <b>BitRate</b>
+### -field BitRate
 
 <dd>
 <p>Bitrate.</p>
 </dd>
 
-### -field <b>SupportFlags</b>
+### -field SupportFlags
 
 <dd>
 <p>Support flags.</p>
 </dd>
 
-### -field <b>ScaleSupport</b>
+### -field ScaleSupport
 
 <dd>
 <p>Scale support.</p>

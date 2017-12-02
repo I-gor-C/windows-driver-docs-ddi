@@ -63,43 +63,43 @@ typedef struct _BDA_WMDRM_STATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>ulMaxCaptureTokenSize</b>
+### -field ulMaxCaptureTokenSize
 
 <dd></dd>
 
-### -field <b>uMaxStreamingPid</b>
+### -field uMaxStreamingPid
 
 <dd></dd>
 
-### -field <b>ulMaxLicense</b>
+### -field ulMaxLicense
 
 <dd></dd>
 
-### -field <b>ulMinSecurityLevel</b>
+### -field ulMinSecurityLevel
 
 <dd></dd>
 
-### -field <b>ulRevInfoSequenceNumber</b>
+### -field ulRevInfoSequenceNumber
 
 <dd></dd>
 
-### -field <b>ulRevInfoIssuedTime</b>
+### -field ulRevInfoIssuedTime
 
 <dd></dd>
 
-### -field <b>ulRevListVersion</b>
+### -field ulRevListVersion
 
 <dd></dd>
 
-### -field <b>ulRevInfoTTL</b>
+### -field ulRevInfoTTL
 
 <dd></dd>
 
-### -field <b>ulState</b>
+### -field ulState
 
 <dd></dd>
 </dl>

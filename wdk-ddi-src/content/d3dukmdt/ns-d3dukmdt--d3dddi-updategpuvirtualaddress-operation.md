@@ -82,17 +82,17 @@ typedef struct _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION {
 ## -struct-fields
 <dl>
 
-### -field <b>OperationType</b>
+### -field OperationType
 
 <dd></dd>
 
-### -field <b>Map</b>
+### -field Map
 
 <dd>
 <p>Maps the given virtual address range to the given allocation range. The allocation does not have to be resident at the time of submission or at the time of mapping. The read-write protection is set to the pages. <b>DriverProtection</b> for the pages is set to zero.</p>
 <dl>
 
-### -field <b>BaseAddress</b>
+### -field BaseAddress
 
 <dd>
 <p>Specifies the <b>BaseAddress</b> of the GPU virtual address range to update. The value is in bytes and must be 4KB aligned.</p>
@@ -100,25 +100,25 @@ typedef struct _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION {
 </p>
 </dd>
 
-### -field <b>SizeInBytes</b>
+### -field SizeInBytes
 
 <dd>
 <p>Specifies the size, in bytes, for the range being updated. The value must be 4KB aligned.</p>
 </dd>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>Specifies the allocation the range needs to be mapped to.</p>
 </dd>
 
-### -field <b>AllocationOffsetInBytes</b>
+### -field AllocationOffsetInBytes
 
 <dd>
 <p>Specifies the offset, in bytes, to the first page in the allocation to map. The value must be 4KB aligned.</p>
 </dd>
 
-### -field <b>AllocationSizeInBytes</b>
+### -field AllocationSizeInBytes
 
 <dd>
 <p>Specifies the size of the allocation range to map, in bytes. The value must be 4KB aligned and must be less than <b>Map.SizeInBytes</b>. If this value is zero, <b>Map.SizeInBytes</b> is used.</p>
@@ -127,13 +127,13 @@ typedef struct _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION {
 </dl>
 </dd>
 
-### -field <b>MapProtect</b>
+### -field MapProtect
 
 <dd>
 <p>Maps the given virtual address range to the given allocation range. The allocation does not have to be resident at the time of submission or at the time of mapping. The page protection is specified in the operation.</p>
 <dl>
 
-### -field <b>BaseAddress</b>
+### -field BaseAddress
 
 <dd>
 <p>Specifies the <b>BaseAddress</b> of the GPU virtual address range to update. The value is in bytes and must be 4KB aligned.
@@ -142,25 +142,25 @@ typedef struct _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION {
 </p>
 </dd>
 
-### -field <b>SizeInBytes</b>
+### -field SizeInBytes
 
 <dd>
 <p>Specifies the size, in bytes, for the range being updated. The value must be 4KB aligned.</p>
 </dd>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>Specifies the allocation the range needs to be mapped to.</p>
 </dd>
 
-### -field <b>AllocationOffsetInBytes</b>
+### -field AllocationOffsetInBytes
 
 <dd>
 <p>Specifies the offset, in bytes, to the first page in the allocation to map. The value must be 4KB aligned.</p>
 </dd>
 
-### -field <b>AllocationSizeInBytes</b>
+### -field AllocationSizeInBytes
 
 <dd>
 <p>Specifies the size of the allocation range to map, in bytes. The value must be 4KB aligned and must be less than Map.<b>SizeInBytes</b>. If this value is zero, <b>Map.SizeInBytes</b> is used.
@@ -168,13 +168,13 @@ typedef struct _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION {
 <p>When this value is less than <b>Map.SizeInBytes</b>, <b>Map.SizeInBytes</b> must be a multiple of it. In this case <b>Map.SizeInBytes</b>/<b>Map.AllocationSizeInBytes</b> virtual address ranges will be mapped to the same allocation range.</p>
 </dd>
 
-### -field <b>Protection</b>
+### -field Protection
 
 <dd>
 <p>Specifies API defined protection for the pages.</p>
 </dd>
 
-### -field <b>DriverProtection</b>
+### -field DriverProtection
 
 <dd>
 <p>Specifies driver specific protection for the pages.</p>
@@ -182,25 +182,25 @@ typedef struct _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION {
 </dl>
 </dd>
 
-### -field <b>Unmap</b>
+### -field Unmap
 
 <dd>
 <p>Puts the specified virtual address range to the <i>zero</i> state or to the <i>invalid</i> state.</p>
 <dl>
 
-### -field <b>BaseAddress</b>
+### -field BaseAddress
 
 <dd>
 <p>Specifies the <b>BaseAddress</b> of the GPU virtual address range to put back into the <i>zero</i> state. The value is in bytes and must be 4KB aligned.</p>
 </dd>
 
-### -field <b>SizeInBytes</b>
+### -field SizeInBytes
 
 <dd>
 <p>Specifies the size, in bytes, for the range to be freed. The value must be 4KB aligned.</p>
 </dd>
 
-### -field <b>Protection</b>
+### -field Protection
 
 <dd>
 <p>Defines is the page table entry state after un-mapping, either <i>Zero</i> or <i>NoAccess</i>. </p>
@@ -208,25 +208,25 @@ typedef struct _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION {
 </dl>
 </dd>
 
-### -field <b>Copy</b>
+### -field Copy
 
 <dd>
 <p>The copy operation copies all mappings from source GPU virtual address range to the destination range. The source and destination ranges are allowed to intersect. Both ranges must belong to a reserved (zero) virtual address range.</p>
 <dl>
 
-### -field <b>BaseAddress</b>
+### -field BaseAddress
 
 <dd>
 <p>Specifies the start virtual address of the source virtual address range. The value is in bytes and must be 4KB aligned.</p>
 </dd>
 
-### -field <b>SizeInBytes</b>
+### -field SizeInBytes
 
 <dd>
 <p>Specifies the size, in bytes, for the range being copied. The value must be 4KB aligned.</p>
 </dd>
 
-### -field <b>DestAddress</b>
+### -field DestAddress
 
 <dd>
 <p>Specifies the start virtual address of the destination virtual address range. The value is in bytes and must be 4KB aligned.</p>

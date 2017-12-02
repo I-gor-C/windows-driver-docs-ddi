@@ -7,7 +7,7 @@ old-location: debugger\ext_command.htm
 old-project: debugger
 ms.assetid: 349712b1-bd1f-4f1f-a242-b6aa36e48773
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: EXT_COMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,20 +57,20 @@ req.iface:
 ## -parameters
 <dl>
 
-### -param <i>_Name</i> 
+### -param _Name 
 
 <dd>
 <p>The name of the extension command.  This must be the same as the <i>_Name</i> parameter that is used to declare the extension command by using <a href="..\engextcpp\nf-engextcpp-ext-command-method.md">EXT_COMMAND_METHOD</a>.</p>
 <p>Because EXT_COMMAND is a macro, <i>_Name</i> must be the bare name of the extension command and should not be enclosed in quotation marks or be a variable.</p>
 </dd>
 
-### -param <i>_Desc</i> 
+### -param _Desc 
 
 <dd>
 <p>A string describing the extension command.</p>
 </dd>
 
-### -param <i>_Args</i> 
+### -param _Args 
 
 <dd>
 <p>A string describing the arguments that are expected by the extension command.   For information about how the <i>_Args</i> string is formatted, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff553340">Parsing Extension Arguments</a>.</p>
@@ -142,4 +142,4 @@ req.iface:
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20EXT_COMMAND function%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20EXT_COMMAND function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

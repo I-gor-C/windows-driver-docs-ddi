@@ -7,7 +7,7 @@ old-location: debugger\debug_get_text_completions_in.htm
 old-project: debugger
 ms.assetid: 1B8B0B7D-346D-41FC-B718-60B04F10702C
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: DEBUG_GET_TEXT_COMPLETIONS_IN, DEBUG_GET_TEXT_COMPLETIONS_IN, *PDEBUG_GET_TEXT_COMPLETIONS_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ typedef struct _DEBUG_GET_TEXT_COMPLETIONS_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags. Valid flag values include the following:</p>
@@ -68,7 +68,7 @@ typedef struct _DEBUG_GET_TEXT_COMPLETIONS_IN {
 <tr>
 <td width="40%"><a id="DEBUG_GET_TEXT_COMPLETIONS_NO_DOT_COMMANDS"></a><a id="debug_get_text_completions_no_dot_commands"></a><dl>
 
-### -field <b>DEBUG_GET_TEXT_COMPLETIONS_NO_DOT_COMMANDS</b>
+### -field DEBUG_GET_TEXT_COMPLETIONS_NO_DOT_COMMANDS
 
 
 ### -field 0x00000001
@@ -82,7 +82,7 @@ typedef struct _DEBUG_GET_TEXT_COMPLETIONS_IN {
 <tr>
 <td width="40%"><a id="DEBUG_GET_TEXT_COMPLETIONS_NO_EXTENSION_COMMANDS"></a><a id="debug_get_text_completions_no_extension_commands"></a><dl>
 
-### -field <b>DEBUG_GET_TEXT_COMPLETIONS_NO_EXTENSION_COMMANDS</b>
+### -field DEBUG_GET_TEXT_COMPLETIONS_NO_EXTENSION_COMMANDS
 
 
 ### -field 0x00000002
@@ -96,7 +96,7 @@ typedef struct _DEBUG_GET_TEXT_COMPLETIONS_IN {
 <tr>
 <td width="40%"><a id="DEBUG_GET_TEXT_COMPLETIONS_NO_SYMBOLS"></a><a id="debug_get_text_completions_no_symbols"></a><dl>
 
-### -field <b>DEBUG_GET_TEXT_COMPLETIONS_NO_SYMBOLS</b>
+### -field DEBUG_GET_TEXT_COMPLETIONS_NO_SYMBOLS
 
 
 ### -field 0x00000004
@@ -111,13 +111,13 @@ typedef struct _DEBUG_GET_TEXT_COMPLETIONS_IN {
 <p> </p>
 </dd>
 
-### -field <b>MatchCountLimit</b>
+### -field MatchCountLimit
 
 <dd>
 <p>The limit of matches.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. </p>

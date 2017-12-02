@@ -58,56 +58,56 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>DataRange</b>
+### -field DataRange
 
 <dd>
 <p>Specifies the MajorFormat and SubFormat GUIDs as well as the Specifier GUID for the DirectMusic data. This member is an initialized <a href="stream.ksdatarange">KSDATARANGE</a> structure.</p>
 </dd>
 
-### -field <b>Technology</b>
+### -field Technology
 
 <dd>
 <p>Specifies the type of MIDI output device. This member can be one of the following GUIDs:</p>
 <p></p>
 <dl>
 
-### -field <a id="KSMUSIC_TECHNOLOGY_PORT"></a><a id="ksmusic_technology_port"></a>KSMUSIC_TECHNOLOGY_PORT
+### -field KSMUSIC_TECHNOLOGY_PORT
 
 <dd>
 <p>The device is a MIDI hardware port.</p>
 </dd>
 
-### -field <a id="KSMUSIC_TECHNOLOGY_SYNTH"></a><a id="ksmusic_technology_synth"></a>KSMUSIC_TECHNOLOGY_SYNTH
+### -field KSMUSIC_TECHNOLOGY_SYNTH
 
 <dd>
 <p>The device is a synthesizer.</p>
 </dd>
 
-### -field <a id="KSMUSIC_TECHNOLOGY_SQSYNTH"></a><a id="ksmusic_technology_sqsynth"></a>KSMUSIC_TECHNOLOGY_SQSYNTH
+### -field KSMUSIC_TECHNOLOGY_SQSYNTH
 
 <dd>
 <p>The device is a square-wave synthesizer.</p>
 </dd>
 
-### -field <a id="KSMUSIC_TECHNOLOGY_FMSYNTH"></a><a id="ksmusic_technology_fmsynth"></a>KSMUSIC_TECHNOLOGY_FMSYNTH
+### -field KSMUSIC_TECHNOLOGY_FMSYNTH
 
 <dd>
 <p>The device is an FM synthesizer.</p>
 </dd>
 
-### -field <a id="KSMUSIC_TECHNOLOGY_MAPPER"></a><a id="ksmusic_technology_mapper"></a>KSMUSIC_TECHNOLOGY_MAPPER
+### -field KSMUSIC_TECHNOLOGY_MAPPER
 
 <dd>
 <p>The device is the Microsoft MIDI mapper.</p>
 </dd>
 
-### -field <a id="KSMUSIC_TECHNOLOGY_WAVETABLE"></a><a id="ksmusic_technology_wavetable"></a>KSMUSIC_TECHNOLOGY_WAVETABLE
+### -field KSMUSIC_TECHNOLOGY_WAVETABLE
 
 <dd>
 <p>The device is a hardware wavetable synthesizer.</p>
 </dd>
 
-### -field <a id="KSMUSIC_TECHNOLOGY_SWSYNTH"></a><a id="ksmusic_technology_swsynth"></a>KSMUSIC_TECHNOLOGY_SWSYNTH
+### -field KSMUSIC_TECHNOLOGY_SWSYNTH
 
 <dd>
 <p>The device is a software synthesizer.</p>
@@ -115,19 +115,19 @@ typedef struct {
 </dl>
 </dd>
 
-### -field <b>Channels</b>
+### -field Channels
 
 <dd>
 <p>Specifies the maximum number of simultaneous channels that can be played by an internal synthesizer device. If the device is a port, this member is not meaningful and is set to zero.</p>
 </dd>
 
-### -field <b>Notes</b>
+### -field Notes
 
 <dd>
 <p>Specifies the maximum number of simultaneous notes that can be played by an internal synthesizer device. If the device is a port, this member is not meaningful and is set to zero.</p>
 </dd>
 
-### -field <b>ChannelMask</b>
+### -field ChannelMask
 
 <dd>
 <p>Specifies which channels an internal synthesizer device responds to, where the least significant bit refers to channel 0 and the most significant bit to channel 15. Port devices that transmit on all channels set this member to 0xFFFF.</p>
@@ -135,9 +135,9 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>For examples of data ranges that use the KSDATARANGE_MUSIC structure, see <a href="NULL">MIDI Stream Data Range</a> and <a href="NULL">DirectMusic Stream Data Range</a>.</p>
+<p>For examples of data ranges that use the KSDATARANGE_MUSIC structure, see <a href="https://msdn.microsoft.com/392eadf7-9c6e-4527-bc84-a2916623c154">MIDI Stream Data Range</a> and <a href="https://msdn.microsoft.com/e3423901-330e-4a86-a921-6678e1c45a97">DirectMusic Stream Data Range</a>.</p>
 
-<p>For information about data ranges and intersection handling, see <a href="NULL">Data-Intersection Handlers</a>.</p>
+<p>For information about data ranges and intersection handling, see <a href="https://msdn.microsoft.com/7206afdb-8a34-4b5a-8cea-87119f426161">Data-Intersection Handlers</a>.</p>
 
 ## -requirements
 <table>

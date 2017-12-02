@@ -7,7 +7,7 @@ old-location: netvista\wdi_radio_measurement_action.htm
 old-project: netvista
 ms.assetid: AA17E666-5934-453D-B55D-98F8616F6369
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ typedef enum _WDI_RADIO_MEASUREMENT_ACTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_REQUEST"></a><a id="wdi_radio_measurement_action_neighbor_report_request"></a><b>WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_REQUEST</b>
+### -field WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_REQUEST
 
 <dd>
 <p>This refers to the neighbor report request action frame sent by the client to the AP.</p>
 </dd>
 
-### -field <a id="WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_RESPONSE"></a><a id="wdi_radio_measurement_action_neighbor_report_response"></a><b>WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_RESPONSE</b>
+### -field WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_RESPONSE
 
 <dd>
 <p>This refers to the neighbor report response action frame from the AP.</p>

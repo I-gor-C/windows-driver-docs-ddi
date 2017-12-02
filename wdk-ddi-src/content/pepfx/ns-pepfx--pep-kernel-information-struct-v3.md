@@ -66,79 +66,79 @@ typedef struct _PEP_KERNEL_INFORMATION_STRUCT_V3 {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The current version number for this structure. Set this member to <b>PEP_KERNEL_INFORMATION_VERSION</b>.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. Set this member to <b>sizeof</b>(<b>PEP_KERNEL_INFORMATION</b>).</p>
 </dd>
 
-### -field <b>Plugin</b>
+### -field Plugin
 
 <dd>
 <p>The handle assigned to the PEP's registration with PoFx. PoFx sets the value of this member. The PEP uses this handle in calls to the <a href="kernel.requestworker">RequestWorker</a> routine.</p>
 </dd>
 
-### -field <b>RequestWorker</b>
+### -field RequestWorker
 
 <dd>
 <p>A pointer to a <a href="kernel.requestworker">RequestWorker</a> routine. PoFx sets the value of this member. The <b>RequestWorker</b> routine is implemented by PoFx. The PEP calls this routine to request the use of a worker thread from the operating system.</p>
 </dd>
 
-### -field <b>EnumerateUnmaskedInterrupts</b>
+### -field EnumerateUnmaskedInterrupts
 
 <dd>
 <p>A pointer to an <a href="kernel.enumerateunmaskedinterrupts">EnumerateUnmaskedInterrupts</a> routine. PoFx sets the value of this member. The <b>EnumerateUnmaskedInterrupts</b> routine is implemented by PoFx. The PEP calls this routine to request information about the unmasked interrupts.</p>
 </dd>
 
-### -field <b>ProcessorHalt</b>
+### -field ProcessorHalt
 
 <dd>
 <p>A pointer to a <a href="kernel.processorhalt">ProcessorHalt</a> routine. PoFx sets the value of this member. The <b>ProcessorHalt</b> routine is implemented by PoFx. The PEP calls this routine to prepare the current processor to enter the halted state.</p>
 </dd>
 
-### -field <b>RequestInterrupt</b>
+### -field RequestInterrupt
 
 <dd>
 <p>A pointer to a <a href="kernel.requestinterrupt">RequestInterrupt</a> routine. PoFx sets the value of this member. The <b>RequestInterrupt</b> routine is implemented by PoFx. The PEP calls this routine to replay an edge-triggered interrupt that might have been lost after the hardware platform entered a low-power system state.</p>
 </dd>
 
-### -field <b>TransitionCriticalResource</b>
+### -field TransitionCriticalResource
 
 <dd>
 <p>A pointer to a <a href="kernel.transitioncriticalresource">TransitionCriticalResource</a> routine. PoFx sets the value of this member. The <b>TransitionCriticalResource</b> routine is implemented by PoFx. The PEP calls this routine to transition critical system resources to the idle condition.</p>
 </dd>
 
-### -field <b>ProcessorIdleVeto</b>
+### -field ProcessorIdleVeto
 
 <dd>
 <p>A pointer to a <a href="kernel.processoridleveto">ProcessorIdleVeto</a> routine. PoFx sets the value of this member. The <b>ProcessorIdleVeto</b> routine is implemented by PoFx. The PEP calls this routine to increment or decrement the veto count for a pending transition to a processor idle state.</p>
 </dd>
 
-### -field <b>PlatformIdleVeto</b>
+### -field PlatformIdleVeto
 
 <dd>
 <p>A pointer to a <a href="kernel.platformidleveto">PlatformIdleVeto</a> routine. PoFx sets the value of this member. The <b>PlatformIdleVeto</b> routine is implemented by PoFx. The PEP calls this routine to increment or decrement the veto count for a pending transition to a platform idle state.</p>
 </dd>
 
-### -field <b>UpdateProcessorIdleState</b>
+### -field UpdateProcessorIdleState
 
 <dd>
 <p>A pointer to an <a href="kernel.updateprocessoridlestate">UpdateProcessorIdleState</a> routine. PoFx sets the value of this member. The <b>UpdateProcessorIdleState</b> routine is implemented by PoFx. The PEP calls this routine to update the properties of the specified processor idle state.</p>
 </dd>
 
-### -field <b>UpdatePlatformIdleState</b>
+### -field UpdatePlatformIdleState
 
 <dd>
 <p>A pointer to an <a href="kernel.updateplatformidlestate">UpdatePlatformIdleState</a> routine. PoFx sets the value of this member. The <b>UpdatePlatformIdleState</b> routine is implemented by PoFx. The PEP calls this routine to update the properties of the specified platform idle state.</p>
 </dd>
 
-### -field <b>RequestCommon</b>
+### -field RequestCommon
 
 <dd>
 <p>A pointer to an <a href="..\pepfx\nc-pepfx-pofxcallbackrequestcommon.md">RequestCommon</a> routine. PoFx sets the value of this member. The <b>RequestCommon</b> routine is implemented by PoFx. The PEP calls this routine to perform a processing operation that is specified by a request ID.</p>

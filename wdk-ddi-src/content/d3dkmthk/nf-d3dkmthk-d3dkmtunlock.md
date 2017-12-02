@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTUnlock(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-unlock.md">D3DKMT_UNLOCK</a> structure that describes a list of allocations to unlock.</p>

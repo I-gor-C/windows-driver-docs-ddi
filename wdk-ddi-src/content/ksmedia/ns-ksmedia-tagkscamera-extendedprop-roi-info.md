@@ -57,25 +57,25 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Region</b>
+### -field Region
 
 <dd>
 <p>These are the relative coordinates in Q13 format on the frame that face detection is running.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>These are VIDEOPROCFLAG flags that indicate the op mode for the ISP control. For focus ROI, the default value is 0 representing focus region configuration without initiating a focus.</p>
 </dd>
 
-### -field <b>Weight</b>
+### -field Weight
 
 <dd>
 <p>This is the weight of the region (0-100).</p>
 </dd>
 
-### -field <b>RegionOfInterestType</b>
+### -field RegionOfInterestType
 
 <dd>
 <p>If the region is a face, this value is KSCAMERA_EXTENDEDPROP_ROITYPE_FACE. If the region is anything other than face, this value is KSCAMERA_EXTENDEDPROP_ROITYPE_UNKNOWN. For more information, see the <a href="..\ksmedia\ne-ksmedia-kscamera-extendedprop-roitype.md">KSCAMERA_EXTENDEDPROP_ROITYPE</a> enumeration.</p>

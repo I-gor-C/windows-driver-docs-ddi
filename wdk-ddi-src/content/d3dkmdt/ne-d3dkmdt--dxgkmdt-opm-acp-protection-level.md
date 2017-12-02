@@ -58,31 +58,31 @@ typedef enum _DXGKMDT_OPM_ACP_PROTECTION_LEVEL {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKMDT_OPM_ACP_OFF"></a><a id="dxgkmdt_opm_acp_off"></a><b>DXGKMDT_OPM_ACP_OFF</b>
+### -field DXGKMDT_OPM_ACP_OFF
 
 <dd>
 <p>Indicates that the signal from a video output is not protected by any form of ACP.</p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_ACP_LEVEL_ONE"></a><a id="dxgkmdt_opm_acp_level_one"></a><b>DXGKMDT_OPM_ACP_LEVEL_ONE</b>
+### -field DXGKMDT_OPM_ACP_LEVEL_ONE
 
 <dd>
 <p>Indicates that the signal from a video output is protected by the ACP level one protection scheme. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_ACP_LEVEL_TWO"></a><a id="dxgkmdt_opm_acp_level_two"></a><b>DXGKMDT_OPM_ACP_LEVEL_TWO</b>
+### -field DXGKMDT_OPM_ACP_LEVEL_TWO
 
 <dd>
 <p>Indicates that the signal from a video output is protected by the ACP level two protection scheme. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_ACP_LEVEL_THREE"></a><a id="dxgkmdt_opm_acp_level_three"></a><b>DXGKMDT_OPM_ACP_LEVEL_THREE</b>
+### -field DXGKMDT_OPM_ACP_LEVEL_THREE
 
 <dd>
 <p>Indicates that the signal from a video output is protected by the ACP level three protection scheme. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_ACP_FORCE_ULONG"></a><a id="dxgkmdt_opm_acp_force_ulong"></a><b>DXGKMDT_OPM_ACP_FORCE_ULONG</b>
+### -field DXGKMDT_OPM_ACP_FORCE_ULONG
 
 <dd>
 <p>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</p>

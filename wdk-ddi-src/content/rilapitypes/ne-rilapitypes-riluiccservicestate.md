@@ -7,7 +7,7 @@ old-location: netvista\riluiccservicestate_2.htm
 old-project: netvista
 ms.assetid: f817db6b-bda4-45cd-953b-fd3d81bafa8f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILUICCSERVICESTATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_UICCSERVICESTATE_DISABLED"></a><a id="ril_uiccservicestate_disabled"></a><b>RIL_UICCSERVICESTATE_DISABLED</b>
+### -field RIL_UICCSERVICESTATE_DISABLED
 
 <dd></dd>
 
-### -field <a id="RIL_UICCSERVICESTATE_ENABLED"></a><a id="ril_uiccservicestate_enabled"></a><b>RIL_UICCSERVICESTATE_ENABLED</b>
+### -field RIL_UICCSERVICESTATE_ENABLED
 
 <dd></dd>
 
-### -field <a id="RIL_UICCSERVICESTATE_MAX"></a><a id="ril_uiccservicestate_max"></a><b>RIL_UICCSERVICESTATE_MAX</b>
+### -field RIL_UICCSERVICESTATE_MAX
 
 <dd></dd>
 </dl>

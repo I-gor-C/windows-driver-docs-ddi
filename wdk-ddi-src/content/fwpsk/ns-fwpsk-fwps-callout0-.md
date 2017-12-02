@@ -7,7 +7,7 @@ old-location: netvista\fwps_callout0.htm
 old-project: netvista
 ms.assetid: df6e9980-6c9b-4d01-a1d5-e5242a3ebc66
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_CALLOUT0_, FWPS_CALLOUT0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ typedef struct FWPS_CALLOUT0_ {
 ## -struct-fields
 <dl>
 
-### -field <b>calloutKey</b>
+### -field calloutKey
 
 <dd>
 <p>A callout driver-defined <b>GUID</b> that uniquely identifies the callout.</p>
 </dd>
 
-### -field <b>flags</b>
+### -field flags
 
 <dd>
 <p>Flags that specify callout-specific parameters. Possible flags are:
@@ -73,7 +73,7 @@ typedef struct FWPS_CALLOUT0_ {
 <p></p>
 <dl>
 
-### -field <a id="FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW"></a><a id="fwp_callout_flag_conditional_on_flow"></a>FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW
+### -field FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW
 
 <dd>
 <p>A callout driver can specify this flag when registering a callout that will be added at a layer
@@ -84,7 +84,7 @@ typedef struct FWPS_CALLOUT0_ {
        <a href="..\fwpsk\nf-fwpsk-fwpsflowassociatecontext0.md">FwpsFlowAssociateContext0</a> function.</p>
 </dd>
 
-### -field <a id="FWP_CALLOUT_FLAG_ALLOW_OFFLOAD"></a><a id="fwp_callout_flag_allow_offload"></a>FWP_CALLOUT_FLAG_ALLOW_OFFLOAD
+### -field FWP_CALLOUT_FLAG_ALLOW_OFFLOAD
 
 <dd>
 <p>A callout driver specifies this flag to indicate that the callout driver's 
@@ -96,7 +96,7 @@ typedef struct FWPS_CALLOUT0_ {
 </dl>
 </dd>
 
-### -field <b>classifyFn</b>
+### -field classifyFn
 
 <dd>
 <p>A pointer to the callout driver's 
@@ -104,7 +104,7 @@ typedef struct FWPS_CALLOUT0_ {
      engine calls this function whenever there is network data to be processed by the callout.</p>
 </dd>
 
-### -field <b>notifyFn</b>
+### -field notifyFn
 
 <dd>
 <p>A pointer to the callout driver's 
@@ -112,7 +112,7 @@ typedef struct FWPS_CALLOUT0_ {
      this function to notify the callout driver about events that are associated with the callout.</p>
 </dd>
 
-### -field <b>flowDeleteFn</b>
+### -field flowDeleteFn
 
 <dd>
 <p>A pointer to the callout driver's 
@@ -179,4 +179,4 @@ typedef struct FWPS_CALLOUT0_ {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT0 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT0 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

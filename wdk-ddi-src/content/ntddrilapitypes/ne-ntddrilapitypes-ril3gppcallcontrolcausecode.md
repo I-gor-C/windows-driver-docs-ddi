@@ -7,7 +7,7 @@ old-location: netvista\ril3gppcallcontrolcausecode.htm
 old-project: netvista
 ms.assetid: a469e292-a57d-4876-a050-266f57985a50
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -99,187 +99,187 @@ typedef enum _RIL3GPPCALLCONTROLCAUSECODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_3GPPCCCAUSE_NO_ROUTE_TO_DESTINATION"></a><a id="ril_3gppcccause_no_route_to_destination"></a><b>RIL_3GPPCCCAUSE_NO_ROUTE_TO_DESTINATION</b>
+### -field RIL_3GPPCCCAUSE_NO_ROUTE_TO_DESTINATION
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_CHANNEL_UNACCEPTABLE"></a><a id="ril_3gppcccause_channel_unacceptable"></a><b>RIL_3GPPCCCAUSE_CHANNEL_UNACCEPTABLE</b>
+### -field RIL_3GPPCCCAUSE_CHANNEL_UNACCEPTABLE
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_OPERATOR_DETERMINED_BARRING"></a><a id="ril_3gppcccause_operator_determined_barring"></a><b>RIL_3GPPCCCAUSE_OPERATOR_DETERMINED_BARRING</b>
+### -field RIL_3GPPCCCAUSE_OPERATOR_DETERMINED_BARRING
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_NORMAL_CALL_CLEARING"></a><a id="ril_3gppcccause_normal_call_clearing"></a><b>RIL_3GPPCCCAUSE_NORMAL_CALL_CLEARING</b>
+### -field RIL_3GPPCCCAUSE_NORMAL_CALL_CLEARING
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_USER_BUSY"></a><a id="ril_3gppcccause_user_busy"></a><b>RIL_3GPPCCCAUSE_USER_BUSY</b>
+### -field RIL_3GPPCCCAUSE_USER_BUSY
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_NO_USER_RESPONDING"></a><a id="ril_3gppcccause_no_user_responding"></a><b>RIL_3GPPCCCAUSE_NO_USER_RESPONDING</b>
+### -field RIL_3GPPCCCAUSE_NO_USER_RESPONDING
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_USER_ALERTING_NO_ANSWER"></a><a id="ril_3gppcccause_user_alerting_no_answer"></a><b>RIL_3GPPCCCAUSE_USER_ALERTING_NO_ANSWER</b>
+### -field RIL_3GPPCCCAUSE_USER_ALERTING_NO_ANSWER
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_CALL_REJECTED"></a><a id="ril_3gppcccause_call_rejected"></a><b>RIL_3GPPCCCAUSE_CALL_REJECTED</b>
+### -field RIL_3GPPCCCAUSE_CALL_REJECTED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_NUMBER_CHANGED"></a><a id="ril_3gppcccause_number_changed"></a><b>RIL_3GPPCCCAUSE_NUMBER_CHANGED</b>
+### -field RIL_3GPPCCCAUSE_NUMBER_CHANGED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_PREEMPTION"></a><a id="ril_3gppcccause_preemption"></a><b>RIL_3GPPCCCAUSE_PREEMPTION</b>
+### -field RIL_3GPPCCCAUSE_PREEMPTION
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_DESTINATION_OUT_OF_ORDER"></a><a id="ril_3gppcccause_destination_out_of_order"></a><b>RIL_3GPPCCCAUSE_DESTINATION_OUT_OF_ORDER</b>
+### -field RIL_3GPPCCCAUSE_DESTINATION_OUT_OF_ORDER
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_INVALID_NUMBER_FORMAT"></a><a id="ril_3gppcccause_invalid_number_format"></a><b>RIL_3GPPCCCAUSE_INVALID_NUMBER_FORMAT</b>
+### -field RIL_3GPPCCCAUSE_INVALID_NUMBER_FORMAT
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_FACILITY_REJECTED"></a><a id="ril_3gppcccause_facility_rejected"></a><b>RIL_3GPPCCCAUSE_FACILITY_REJECTED</b>
+### -field RIL_3GPPCCCAUSE_FACILITY_REJECTED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_RESPONSE_TO_STATUS_ENQUIRY"></a><a id="ril_3gppcccause_response_to_status_enquiry"></a><b>RIL_3GPPCCCAUSE_RESPONSE_TO_STATUS_ENQUIRY</b>
+### -field RIL_3GPPCCCAUSE_RESPONSE_TO_STATUS_ENQUIRY
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_NORMAL_UNSPECIFIED"></a><a id="ril_3gppcccause_normal_unspecified"></a><b>RIL_3GPPCCCAUSE_NORMAL_UNSPECIFIED</b>
+### -field RIL_3GPPCCCAUSE_NORMAL_UNSPECIFIED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_NO_CHANNEL_AVAILABLE"></a><a id="ril_3gppcccause_no_channel_available"></a><b>RIL_3GPPCCCAUSE_NO_CHANNEL_AVAILABLE</b>
+### -field RIL_3GPPCCCAUSE_NO_CHANNEL_AVAILABLE
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_NETWORK_OUT_OF_ORDER"></a><a id="ril_3gppcccause_network_out_of_order"></a><b>RIL_3GPPCCCAUSE_NETWORK_OUT_OF_ORDER</b>
+### -field RIL_3GPPCCCAUSE_NETWORK_OUT_OF_ORDER
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_TEMPORARY_FAILURE"></a><a id="ril_3gppcccause_temporary_failure"></a><b>RIL_3GPPCCCAUSE_TEMPORARY_FAILURE</b>
+### -field RIL_3GPPCCCAUSE_TEMPORARY_FAILURE
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_CONGESTION"></a><a id="ril_3gppcccause_congestion"></a><b>RIL_3GPPCCCAUSE_CONGESTION</b>
+### -field RIL_3GPPCCCAUSE_CONGESTION
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_ACCESS_INFORMATION_DISCARDED"></a><a id="ril_3gppcccause_access_information_discarded"></a><b>RIL_3GPPCCCAUSE_ACCESS_INFORMATION_DISCARDED</b>
+### -field RIL_3GPPCCCAUSE_ACCESS_INFORMATION_DISCARDED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_REQUESTED_CHANNEL_NOT_AVAILABLE"></a><a id="ril_3gppcccause_requested_channel_not_available"></a><b>RIL_3GPPCCCAUSE_REQUESTED_CHANNEL_NOT_AVAILABLE</b>
+### -field RIL_3GPPCCCAUSE_REQUESTED_CHANNEL_NOT_AVAILABLE
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_RESOURCE_UNAVAILABLE_UNSPECIFIED"></a><a id="ril_3gppcccause_resource_unavailable_unspecified"></a><b>RIL_3GPPCCCAUSE_RESOURCE_UNAVAILABLE_UNSPECIFIED</b>
+### -field RIL_3GPPCCCAUSE_RESOURCE_UNAVAILABLE_UNSPECIFIED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_QOS_UNAVAILABLE"></a><a id="ril_3gppcccause_qos_unavailable"></a><b>RIL_3GPPCCCAUSE_QOS_UNAVAILABLE</b>
+### -field RIL_3GPPCCCAUSE_QOS_UNAVAILABLE
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_FACILITY_NOT_SUBSCRIBED"></a><a id="ril_3gppcccause_facility_not_subscribed"></a><b>RIL_3GPPCCCAUSE_FACILITY_NOT_SUBSCRIBED</b>
+### -field RIL_3GPPCCCAUSE_FACILITY_NOT_SUBSCRIBED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_INCOMING_CALLS_BARRED_IN_CUG"></a><a id="ril_3gppcccause_incoming_calls_barred_in_cug"></a><b>RIL_3GPPCCCAUSE_INCOMING_CALLS_BARRED_IN_CUG</b>
+### -field RIL_3GPPCCCAUSE_INCOMING_CALLS_BARRED_IN_CUG
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_BEARER_CAPABILITY_NOT_AUTHORIZED"></a><a id="ril_3gppcccause_bearer_capability_not_authorized"></a><b>RIL_3GPPCCCAUSE_BEARER_CAPABILITY_NOT_AUTHORIZED</b>
+### -field RIL_3GPPCCCAUSE_BEARER_CAPABILITY_NOT_AUTHORIZED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_BEARER_CAPABILITY_NOT_AVAILABLE"></a><a id="ril_3gppcccause_bearer_capability_not_available"></a><b>RIL_3GPPCCCAUSE_BEARER_CAPABILITY_NOT_AVAILABLE</b>
+### -field RIL_3GPPCCCAUSE_BEARER_CAPABILITY_NOT_AVAILABLE
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_SVC_NOT_AVAILABLE_UNSPECIFIED"></a><a id="ril_3gppcccause_svc_not_available_unspecified"></a><b>RIL_3GPPCCCAUSE_SVC_NOT_AVAILABLE_UNSPECIFIED</b>
+### -field RIL_3GPPCCCAUSE_SVC_NOT_AVAILABLE_UNSPECIFIED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_BEARER_SERVICE_NOT_IMPLEMENTED"></a><a id="ril_3gppcccause_bearer_service_not_implemented"></a><b>RIL_3GPPCCCAUSE_BEARER_SERVICE_NOT_IMPLEMENTED</b>
+### -field RIL_3GPPCCCAUSE_BEARER_SERVICE_NOT_IMPLEMENTED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_ACM_NOT_LESS_THAN_ACMMAX"></a><a id="ril_3gppcccause_acm_not_less_than_acmmax"></a><b>RIL_3GPPCCCAUSE_ACM_NOT_LESS_THAN_ACMMAX</b>
+### -field RIL_3GPPCCCAUSE_ACM_NOT_LESS_THAN_ACMMAX
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_FACILITY_NOT_IMPLEMENTED"></a><a id="ril_3gppcccause_facility_not_implemented"></a><b>RIL_3GPPCCCAUSE_FACILITY_NOT_IMPLEMENTED</b>
+### -field RIL_3GPPCCCAUSE_FACILITY_NOT_IMPLEMENTED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_ONLY_RESTRICTED_DIGITAL_BEARER"></a><a id="ril_3gppcccause_only_restricted_digital_bearer"></a><b>RIL_3GPPCCCAUSE_ONLY_RESTRICTED_DIGITAL_BEARER</b>
+### -field RIL_3GPPCCCAUSE_ONLY_RESTRICTED_DIGITAL_BEARER
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_SVC_NOT_IMPLEMENTED_UNSPECIFIED"></a><a id="ril_3gppcccause_svc_not_implemented_unspecified"></a><b>RIL_3GPPCCCAUSE_SVC_NOT_IMPLEMENTED_UNSPECIFIED</b>
+### -field RIL_3GPPCCCAUSE_SVC_NOT_IMPLEMENTED_UNSPECIFIED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_INVALID_TRANSACTION_ID"></a><a id="ril_3gppcccause_invalid_transaction_id"></a><b>RIL_3GPPCCCAUSE_INVALID_TRANSACTION_ID</b>
+### -field RIL_3GPPCCCAUSE_INVALID_TRANSACTION_ID
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_USER_NOT_MEMBER_OF_CUG"></a><a id="ril_3gppcccause_user_not_member_of_cug"></a><b>RIL_3GPPCCCAUSE_USER_NOT_MEMBER_OF_CUG</b>
+### -field RIL_3GPPCCCAUSE_USER_NOT_MEMBER_OF_CUG
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_INCOMPATIBLE_DESTINATION"></a><a id="ril_3gppcccause_incompatible_destination"></a><b>RIL_3GPPCCCAUSE_INCOMPATIBLE_DESTINATION</b>
+### -field RIL_3GPPCCCAUSE_INCOMPATIBLE_DESTINATION
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_SEMANTICALLY_INCORRECT_MESSAGE"></a><a id="ril_3gppcccause_semantically_incorrect_message"></a><b>RIL_3GPPCCCAUSE_SEMANTICALLY_INCORRECT_MESSAGE</b>
+### -field RIL_3GPPCCCAUSE_SEMANTICALLY_INCORRECT_MESSAGE
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_INVALID_MANDATORY_FUNCTION"></a><a id="ril_3gppcccause_invalid_mandatory_function"></a><b>RIL_3GPPCCCAUSE_INVALID_MANDATORY_FUNCTION</b>
+### -field RIL_3GPPCCCAUSE_INVALID_MANDATORY_FUNCTION
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_MESSAGE_TYPE_NOT_IMPLEMENTED"></a><a id="ril_3gppcccause_message_type_not_implemented"></a><b>RIL_3GPPCCCAUSE_MESSAGE_TYPE_NOT_IMPLEMENTED</b>
+### -field RIL_3GPPCCCAUSE_MESSAGE_TYPE_NOT_IMPLEMENTED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_MESSAGE_TYPE_NOT_COMPATIBLE"></a><a id="ril_3gppcccause_message_type_not_compatible"></a><b>RIL_3GPPCCCAUSE_MESSAGE_TYPE_NOT_COMPATIBLE</b>
+### -field RIL_3GPPCCCAUSE_MESSAGE_TYPE_NOT_COMPATIBLE
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_IE_NOT_IMPLEMENTED"></a><a id="ril_3gppcccause_ie_not_implemented"></a><b>RIL_3GPPCCCAUSE_IE_NOT_IMPLEMENTED</b>
+### -field RIL_3GPPCCCAUSE_IE_NOT_IMPLEMENTED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_CONDITIONAL_IE_ERROR"></a><a id="ril_3gppcccause_conditional_ie_error"></a><b>RIL_3GPPCCCAUSE_CONDITIONAL_IE_ERROR</b>
+### -field RIL_3GPPCCCAUSE_CONDITIONAL_IE_ERROR
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_MESSAGE_NOT_COMPATIBLE"></a><a id="ril_3gppcccause_message_not_compatible"></a><b>RIL_3GPPCCCAUSE_MESSAGE_NOT_COMPATIBLE</b>
+### -field RIL_3GPPCCCAUSE_MESSAGE_NOT_COMPATIBLE
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_RECOVERY_ON_TIMER_EXPIRY"></a><a id="ril_3gppcccause_recovery_on_timer_expiry"></a><b>RIL_3GPPCCCAUSE_RECOVERY_ON_TIMER_EXPIRY</b>
+### -field RIL_3GPPCCCAUSE_RECOVERY_ON_TIMER_EXPIRY
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_PROTOCOL_ERROR_UNSPECIFIED"></a><a id="ril_3gppcccause_protocol_error_unspecified"></a><b>RIL_3GPPCCCAUSE_PROTOCOL_ERROR_UNSPECIFIED</b>
+### -field RIL_3GPPCCCAUSE_PROTOCOL_ERROR_UNSPECIFIED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPCCCAUSE_INTERWORKING_UNSPECIFIED"></a><a id="ril_3gppcccause_interworking_unspecified"></a><b>RIL_3GPPCCCAUSE_INTERWORKING_UNSPECIFIED</b>
+### -field RIL_3GPPCCCAUSE_INTERWORKING_UNSPECIFIED
 
 <dd></dd>
 </dl>

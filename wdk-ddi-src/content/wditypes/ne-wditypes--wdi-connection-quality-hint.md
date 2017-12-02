@@ -7,7 +7,7 @@ old-location: netvista\wdi_connection_quality_hint.htm
 old-project: netvista
 ms.assetid: D83AE2BE-1273-48A1-A42C-C2EADA07D9C0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ typedef enum _WDI_CONNECTION_QUALITY_HINT {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_CONNECTION_QUALITY_AUTO_POWER_SAVE"></a><a id="wdi_connection_quality_auto_power_save"></a><b>WDI_CONNECTION_QUALITY_AUTO_POWER_SAVE</b>
+### -field WDI_CONNECTION_QUALITY_AUTO_POWER_SAVE
 
 <dd>
 <p>This hint indicates that the host has no specific preference for the usage of this port. The port should use power saving mechanisms when possible, as well as when other ports require a larger share of bandwidth/radio time. It can be enabled simultaneously on more than one port. This is the default Connection Quality setting for a port.</p>
 </dd>
 
-### -field <a id="WDI_CONNECTION_QUALITY_LOW_LATENCY"></a><a id="wdi_connection_quality_low_latency"></a><b>WDI_CONNECTION_QUALITY_LOW_LATENCY</b>
+### -field WDI_CONNECTION_QUALITY_LOW_LATENCY
 
 <dd>
 <p>This hint indicates that the host wants to use this port for low latency operations. The adapter should provide service to this port at a regular interval.
@@ -73,13 +73,13 @@ This can be set simultaneously on two ports. If the ports are on different chann
 When in this mode, the port can (optionally) use power saving as long as it can meet the above latency requirements.</p>
 </dd>
 
-### -field <a id="WDI_CONNECTION_QUALITY_HIGH_THROUGHPUT"></a><a id="wdi_connection_quality_high_throughput"></a><b>WDI_CONNECTION_QUALITY_HIGH_THROUGHPUT</b>
+### -field WDI_CONNECTION_QUALITY_HIGH_THROUGHPUT
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <a id="WDI_CONNECTION_QUALITY_HIGH_CHANNEL_AVAILABILITY"></a><a id="wdi_connection_quality_high_channel_availability"></a><b>WDI_CONNECTION_QUALITY_HIGH_CHANNEL_AVAILABILITY</b>
+### -field WDI_CONNECTION_QUALITY_HIGH_CHANNEL_AVAILABILITY
 
 <dd>
 <p>This hint indicates that the host is performing an operation on the port which is not tolerant to packet loss. Adapter should not power save and should remain on the given port’s operational channel for as long as possible without losing link connectivity on other ports, until this connection quality hint is unset.

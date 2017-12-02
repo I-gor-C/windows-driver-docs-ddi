@@ -7,7 +7,7 @@ old-location: debugger\stack_src_info.htm
 old-project: debugger
 ms.assetid: F19D5A5C-D9CF-40CC-B344-8F2D862FBF04
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: STACK_SRC_INFO, STACK_SRC_INFO, *PSTACK_SRC_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ typedef struct _STACK_SRC_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ImagePath</b>
+### -field ImagePath
 
 <dd>
 <p>An image path.</p>
 </dd>
 
-### -field <b>ModuleName</b>
+### -field ModuleName
 
 <dd>
 <p>A module name.</p>
 </dd>
 
-### -field <b>Function</b>
+### -field Function
 
 <dd>
 <p>A function.</p>
 </dd>
 
-### -field <b>Displacement</b>
+### -field Displacement
 
 <dd>
 <p>A displacement value. </p>
 </dd>
 
-### -field <b>Row</b>
+### -field Row
 
 <dd>
 <p>A row number.</p>
 </dd>
 
-### -field <b>Column</b>
+### -field Column
 
 <dd>
 <p>A column number.</p>

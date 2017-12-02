@@ -57,25 +57,25 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS structure indicating additional transform information.</p>
 </dd>
 
-### -field <b>SrcRect</b>
+### -field SrcRect
 
 <dd>
 <p>Contains the source rect of the virtual mode.</p>
 </dd>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd>
 <p>Contains the destination rect of the virtual mode.</p>
 </dd>
 
-### -field <b>Rotation</b>
+### -field Rotation
 
 <dd>
 <p>Indicates additional rotation that should occur on the final image.</p>

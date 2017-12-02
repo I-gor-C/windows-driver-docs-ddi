@@ -63,22 +63,22 @@ typedef struct _D3DKMT_DEVICE_ESCAPE {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd></dd>
 
-### -field <b>VidPnFromAllocation</b>
+### -field VidPnFromAllocation
 
 <dd>
 <dl>
 
-### -field <b>hPrimaryAllocation</b>
+### -field hPrimaryAllocation
 
 <dd>
 <p>[in] The primary allocation handle.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[out] The VidPN source ID of the primary allocation.</p>

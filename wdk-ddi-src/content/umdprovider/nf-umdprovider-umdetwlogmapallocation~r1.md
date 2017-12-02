@@ -60,7 +60,7 @@ void UMDEtwLogMapAllocation(
 ## -parameters
 <dl>
 
-### -param <i>hD3DAllocation</i> 
+### -param hD3DAllocation 
 
 <dd>
 <p>A handle to the Direct3D allocation.</p>
@@ -68,31 +68,31 @@ void UMDEtwLogMapAllocation(
 <p>The driver can set this value to <b>NULL</b> if it uses allocations internally.</p>
 </dd>
 
-### -param <i>hDxgAllocation</i> 
+### -param hDxgAllocation 
 
 <dd>
 <p>A handle to the DirectX graphics kernel subsystem (Dxgkrnl.sys) allocation that the Direct3D allocation is mapped to.</p>
 </dd>
 
-### -param <i>Offset</i> 
+### -param Offset 
 
 <dd>
 <p>The starting address, in bytes, of the Direct3D allocation within the Dxgkrnl allocation.</p>
 </dd>
 
-### -param <i>Size</i> 
+### -param Size 
 
 <dd>
 <p>The size, in bytes, of the Direct3D allocation within the Dxgkrnl allocation.</p>
 </dd>
 
-### -param <i>Usage</i> 
+### -param Usage 
 
 <dd>
 <p>A <a href="..\umdprovider\ns-umdprovider--umdetw-allocation-usage.md">UMDETW_ALLOCATION_USAGE</a> structure that indicates the reason for this mapping.</p>
 </dd>
 
-### -param <i>Semantic</i> 
+### -param Semantic 
 
 <dd>
 <p>If the allocation is used internally by the user-mode driver, this is a <a href="..\umdprovider\ne-umdprovider--umdetw-allocation-semantic.md">UMDETW_ALLOCATION_SEMANTIC</a> structure that indicates what the allocation is used for.</p>

@@ -7,7 +7,7 @@ old-location: parports\parclass_negotiation_mask.htm
 old-project: parports
 ms.assetid: 6d246ec3-47f1-46da-8ac4-f073f91c0d44
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/30/2017
 ms.keywords: PARCLASS_NEGOTIATION_MASK, PARCLASS_NEGOTIATION_MASK, *PPARCLASS_NEGOTIATION_MASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ typedef struct _PARCLASS_NEGOTIATION_MASK {
 ## -struct-fields
 <dl>
 
-### -field <b>usReadMask</b>
+### -field usReadMask
 
 <dd>
 <p>Specifies the read protocols. For read and write protocol values, see the constants that are defined in <i>ntddpar.h</i> (from NONE to ECP_ANY).</p>
 </dd>
 
-### -field <b>usWriteMask</b>
+### -field usWriteMask
 
 <dd>
 <p>Specifies the write protocols.</p>
@@ -71,7 +71,7 @@ typedef struct _PARCLASS_NEGOTIATION_MASK {
 ## -remarks
 <p>A client specifies a set of requested protocols by setting a bitwise OR of the constants that represent each protocol. The system-supplied bus driver for parallel ports selects the fastest protocol that it supports from among those specified by the client. </p>
 
-<p>For more information, see <a href="NULL">Setting and Clearing a Communication Mode for a Parallel Device</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2ff53ed0-dbb7-4c8f-b6e4-5f7d20124a7c">Setting and Clearing a Communication Mode for a Parallel Device</a>.</p>
 
 ## -requirements
 <table>
@@ -107,4 +107,4 @@ typedef struct _PARCLASS_NEGOTIATION_MASK {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PARCLASS_NEGOTIATION_MASK structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PARCLASS_NEGOTIATION_MASK structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

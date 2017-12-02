@@ -58,25 +58,25 @@ ULONG StorPortAllocateMdl(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>BufferPointer</i> [in]
+### -param BufferPointer [in]
 
 <dd>
 <p>A pointer to the base virtual address of the buffer that the MDL is to describe.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>This parameter specifies the length, in bytes, of the buffer that the MDL is to describe.</p>
 </dd>
 
-### -param <i>Mdl</i> [out]
+### -param Mdl [out]
 
 <dd>
 <p>A pointer to receive the allocated MDL.</p>

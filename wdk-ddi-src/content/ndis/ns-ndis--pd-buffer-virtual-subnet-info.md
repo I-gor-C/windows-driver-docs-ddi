@@ -7,7 +7,7 @@ old-location: netvista\pd_buffer_virtual_subnet_info.htm
 old-project: netvista
 ms.assetid: 569424A2-4279-4758-A6F1-402D25F9B04F
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ typedef struct _PD_BUFFER_VIRTUAL_SUBNET_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>VirtualSubnetId</b>
+### -field VirtualSubnetId
 
 <dd>
 <p>The virtual subnet ID.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>

@@ -58,19 +58,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>MethodId</b>
+### -field MethodId
 
 <dd>
 <p>Contains the identifier of the method and the flags describing the type of method.</p>
 </dd>
 
-### -field <b>MethodHandler</b>
+### -field MethodHandler
 
 <dd>
 <p>Points to a driver-supplied <a href="stream.kstrfasthandler">KStrFastHandler</a> routine for this method.</p>
 </dd>
 
-### -field <b>MethodSupported</b>
+### -field MethodSupported
 
 <dd>
 <p>Set to <b>TRUE</b> if the method is supported, otherwise set to <b>FALSE</b>.</p>

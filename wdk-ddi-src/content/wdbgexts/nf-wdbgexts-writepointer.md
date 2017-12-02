@@ -7,13 +7,13 @@ old-location: debugger\writepointer.htm
 old-project: debugger
 ms.assetid: 5f3d6cd6-e138-4114-8fac-03cbe1c7aa68
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: WritePointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -56,13 +56,13 @@ ULONG WritePointer(
 ## -parameters
 <dl>
 
-### -param <i>Address</i> 
+### -param Address 
 
 <dd>
 <p>Specifies the address to write the pointer to.</p>
 </dd>
 
-### -param <i>Pointer</i> 
+### -param Pointer 
 
 <dd>
 <p>Specifies the value of the pointer.  If the target uses 32-bit pointers, <i>Pointer</i> is a 32-bit value that has been sign-extended to 64-bits.</p>
@@ -93,7 +93,7 @@ ULONG WritePointer(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>
@@ -107,4 +107,4 @@ ULONG WritePointer(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20WritePointer function%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20WritePointer function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

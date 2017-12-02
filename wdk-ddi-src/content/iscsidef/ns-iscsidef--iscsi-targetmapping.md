@@ -61,49 +61,49 @@ typedef struct _ISCSI_TargetMapping {
 ## -struct-fields
 <dl>
 
-### -field <b>OSBus</b>
+### -field OSBus
 
 <dd>
 <p>The SCSI bus number (which is valid in the local operating system) that the remote target is mapped to. A value of 0xffffffff indicates that the miniport driver can associate any SCSI bus number with the target. </p>
 </dd>
 
-### -field <b>OSTarget</b>
+### -field OSTarget
 
 <dd>
 <p>The SCSI target number (which is valid in the local operating system) that the remote target is mapped to. A value of 0xffffffff indicates that the miniport driver can pick any number to identify the remote target device.</p>
 </dd>
 
-### -field <b>UniqueSessionId</b>
+### -field UniqueSessionId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
 </dd>
 
-### -field <b>LUNCount</b>
+### -field LUNCount
 
 <dd>
 <p>The number of LUNs that are associated with the remote target device.</p>
 </dd>
 
-### -field <b>TargetName</b>
+### -field TargetName
 
 <dd>
 <p>A wide character string that indicates the target name. </p>
 </dd>
 
-### -field <b>FromPersistentLogin</b>
+### -field FromPersistentLogin
 
 <dd>
 <p>A Boolean value that indicates whether the logon session is persistent. If this member is <b>TRUE</b>, the logon session is persistent and the system creates it automatically when the computer boots up. If this member is <b>FALSE</b>, the logon session is not persistent.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for Microsoft use only.</p>
 </dd>
 
-### -field <b>LUNList</b>
+### -field LUNList
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-lunlist.md">ISCSI_LUNList</a> structure that holds a list of LUNs that are associated with the target device.</p>

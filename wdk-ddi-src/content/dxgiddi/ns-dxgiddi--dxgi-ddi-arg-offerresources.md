@@ -57,26 +57,26 @@ typedef struct _DXGI_DDI_ARG_OFFERRESOURCES {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the display device (graphics context) on which the driver offers resources for reuse.</p>
 <p>The Direct3D runtime passed this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when it created the device by calling the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> routine.</p>
 </dd>
 
-### -field <b>pResources</b>
+### -field pResources
 
 <dd>
 <p>[in] A pointer to an array of handles to the video memory resources that the driver offers.</p>
 </dd>
 
-### -field <b>Resources</b>
+### -field Resources
 
 <dd>
 <p>[in] The number of elements in the array pointed to by <b>pResources</b>.</p>
 </dd>
 
-### -field <b>Priority</b>
+### -field Priority
 
 <dd>
 <p>[in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-offer-priority.md">D3DDDI_OFFER_PRIORITY</a> that indicates the importance of the resources pointed to by <b>pResources</b>.</p>

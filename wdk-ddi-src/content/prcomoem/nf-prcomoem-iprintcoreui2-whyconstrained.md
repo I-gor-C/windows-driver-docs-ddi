@@ -61,44 +61,44 @@ HRESULT WhyConstrained(
 ## -parameters
 <dl>
 
-### -param <i>poemuiobj</i> [in]
+### -param poemuiobj [in]
 
 <dd>
 <p>Pointer to the current context, an <a href="..\printoem\ns-printoem--oemuiobj.md">OEMUIOBJ</a> structure.</p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>Is reserved and must be set to zero.</p>
 </dd>
 
-### -param <i>pszFeatureKeyword</i> [in]
+### -param pszFeatureKeyword [in]
 
 <dd>
 <p>Pointer to a caller-supplied buffer containing the single feature keyword of interest to the caller.</p>
 </dd>
 
-### -param <i>pszOptionKeyword</i> [in]
+### -param pszOptionKeyword [in]
 
 <dd>
 <p>Pointer to a caller-supplied buffer containing the option keyword.</p>
 </dd>
 
-### -param <i>pmszReasonList</i> [out]
+### -param pmszReasonList [out]
 
 <dd>
 <p>Pointer to a caller-supplied buffer that receives a list of the feature/option keyword pairs that place constraints on the specified feature/option. This list is in MULTI_SZ format with each item in the list separated from the next by a null character. The list is terminated with two null characters.</p>
 <p>Set this parameter to <b>NULL</b> to simply query for the size (*<i>pcbNeeded</i>) of the reason list without having the list filled in.</p>
 </dd>
 
-### -param <i>cbSize</i> [in]
+### -param cbSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer pointed to by <i>pmszReasonList</i>.</p>
 </dd>
 
-### -param <i>pcbNeeded</i> [out]
+### -param pcbNeeded [out]
 
 <dd>
 <p>Pointer to a memory location that receives the actual size, in bytes, of the reason list.</p>
@@ -120,14 +120,14 @@ HRESULT WhyConstrained(
 
 <p>The feature keyword or option keyword was not recognized.</p>
 
-<p>The feature stickiness (see <a href="NULL">Replacing Driver-Supplied Property Sheet Pages</a>) did not match that specified in the current context.</p><dl>
+<p>The feature stickiness (see <a href="https://msdn.microsoft.com/b7f79841-f82c-4a60-9c2f-58772a65a5eb">Replacing Driver-Supplied Property Sheet Pages</a>) did not match that specified in the current context.</p><dl>
 <dt><b>E_FAIL</b></dt>
 </dl><p>The method failed</p>
 
 <p> </p>
 
 ## -remarks
-<p>This method is supported only for Windows XP Pscript5 UI plug-ins that fully replace the core driver's standard UI pages, and is supported only during the UI plug-in's <a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a> and <a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a> functions, and their property sheet callback routines. See <a href="NULL">Replacing Driver-Supplied Property Sheet Pages</a> for more information.</p>
+<p>This method is supported only for Windows XP Pscript5 UI plug-ins that fully replace the core driver's standard UI pages, and is supported only during the UI plug-in's <a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a> and <a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a> functions, and their property sheet callback routines. See <a href="https://msdn.microsoft.com/b7f79841-f82c-4a60-9c2f-58772a65a5eb">Replacing Driver-Supplied Property Sheet Pages</a> for more information.</p>
 
 <p>When a user of the OEM UI attempts to select an item that is constrained, the caller can use this method to display a message explaining why the item is constrained. When this method returns, <i>pmszReasonList</i> points to a list of one or more feature/option pairs that appear in the current driver settings, but conflict with the selected feature/option keywords. If there were no conflicts, the method should return S_OK, <i>pmszReasonList</i> should be filled in with an empty ASCII string containing only a null character, and *<i>pcbNeeded</i> should be set to 1.</p>
 

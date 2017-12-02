@@ -7,7 +7,7 @@ old-location: image\istidevice_unlockdevice.htm
 old-project: image
 ms.assetid: 0bcd48c6-be8a-47af-9e34-a06ce572925c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDevice, UnLockDevice, IStiDevice::UnLockDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices

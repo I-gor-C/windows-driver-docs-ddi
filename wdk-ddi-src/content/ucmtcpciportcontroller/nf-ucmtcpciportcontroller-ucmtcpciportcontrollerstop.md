@@ -55,10 +55,10 @@ VOID UcmTcpciPortControllerStop(
 ## -parameters
 <dl>
 
-### -param <i>PortControllerObject</i> 
+### -param PortControllerObject 
 
 <dd>
-<p>Handle to the port controller object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.</p>
+<p>Handle to the port controller object that the client driver received in the previous call to <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>.</p>
 </dd>
 </dl>
 
@@ -72,7 +72,7 @@ VOID UcmTcpciPortControllerStop(
 
 <p>If the driver is transitioning to a Dx state due to S0-Idle, the driver must not call this method from its <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-d0-exit.md">EVT_WDF_DEVICE_D0_EXIT</a> callback function.  Synchronization with the driver's power state can be achieved by using a power-managed queue to receive hardware requests.</p>
 
-<p>It is safe to call <b>UcmTcpciPortControllerStop</b> on a port controller that has already been stopped. After this method returns, no other method except for <a href="buses.ucmtcpciportcontrollerstart">UcmTcpciPortControllerStart</a> can be called on the port controller.</p>
+<p>It is safe to call <b>UcmTcpciPortControllerStop</b> on a port controller that has already been stopped. After this method returns, no other method except for <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollerstart.md">UcmTcpciPortControllerStart</a> can be called on the port controller.</p>
 
 <p>The client driver must call this method if it needs to stop all actions on the port controller so that it can perform error recovery if it detected any issues during its operation. After the recovery process has been completed, the driver must restart the port controller.
 </p>
@@ -130,7 +130,7 @@ VOID UcmTcpciPortControllerStop(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmtcpciportcontrollerstart">UcmTcpciPortControllerStart</a>
+<a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollerstart.md">UcmTcpciPortControllerStart</a>
 </dt>
 </dl>
 <p> </p>

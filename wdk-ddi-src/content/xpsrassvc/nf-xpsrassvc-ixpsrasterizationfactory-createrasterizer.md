@@ -59,19 +59,19 @@ HRESULT CreateRasterizer(
 ## -parameters
 <dl>
 
-### -param <i>xpsPage</i> [in, optional]
+### -param xpsPage [in, optional]
 
 <dd>
 <p>Pointer to an <b>IXpsOMPage</b> object that represents the XPS fixed page to render. This object encapsulates a FixedPage section from an XPS document. For more information about <b>IXpsOMPage</b>, see <a href="http://go.microsoft.com/fwlink/p/?linkid=146349">IXpsOMPage</a><u>.</u></p>
 </dd>
 
-### -param <i>DPI</i> [in]
+### -param DPI [in]
 
 <dd>
 <p>Dots per inch in the rasterized output. This parameter applies to both the x and y dimensions of the output bitmap. The <i>DPI</i> value is the resolution of the device that is to print or display the XPS fixed page.</p>
 </dd>
 
-### -param <i>nonTextRenderingMode</i> [in]
+### -param nonTextRenderingMode [in]
 
 <dd>
 <p>Rendering mode for nontext items in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following <a href="print.xpsras_rendering_mode_enumeration">XPSRAS_RENDERING_MODE</a> enumeration values:</p>
@@ -85,7 +85,7 @@ HRESULT CreateRasterizer(
 </ul>
 </dd>
 
-### -param <i>textRenderingMode</i> [in]
+### -param textRenderingMode [in]
 
 <dd>
 <p>Rendering mode for text in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following XPSRAS_RENDERING_MODE enumeration values:</p>
@@ -99,7 +99,7 @@ HRESULT CreateRasterizer(
 </ul>
 </dd>
 
-### -param <i>ppIXPSRasterizer</i> [out, optional]
+### -param ppIXPSRasterizer [out, optional]
 
 <dd>
 <p>This parameter points to a location into which the method writes a pointer to the <a href="print.ixpsrasterizer_interface">IXpsRasterizer</a> interface of the newly created XPS rasterizer object. If the method fails, it writes <b>NULL</b> to this location and returns an error code.</p>

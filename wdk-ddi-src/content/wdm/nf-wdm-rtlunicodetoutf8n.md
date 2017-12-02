@@ -59,31 +59,31 @@ NTSTATUS RtlUnicodeToUTF8N(
 ## -parameters
 <dl>
 
-### -param <i>UTF8StringDestination</i> [out]
+### -param UTF8StringDestination [out]
 
 <dd>
 <p>A pointer to a caller-allocated destination buffer into which the routine writes the UTF-8 output string. If this parameter is <b>NULL</b>, the routine writes the required size of the output buffer to *<i>UTF8StringActualByteCount</i>. </p>
 </dd>
 
-### -param <i>UTF8StringMaxByteCount</i> [in]
+### -param UTF8StringMaxByteCount [in]
 
 <dd>
 <p>Specifies the maximum number of bytes that the routine can write to the buffer that <i>UTF8StringDestination</i> points to. If <i>UTF8StringDestination</i> = <b>NULL</b>, set <i>UTF8StringMaxByteCount</i> = 0. </p>
 </dd>
 
-### -param <i>UTF8StringActualByteCount</i> [out]
+### -param UTF8StringActualByteCount [out]
 
 <dd>
 <p>A pointer to a location into which the routine writes the actual number of bytes that it has written to the buffer that <i>UTF8StringDestination</i> points to. If <i>UTF8StringDestination</i> is non-<b>NULL</b>, this count never exceeds the value of <i>UTF8StringMaxByteCount</i>. If <i>UTF8StringDestination</i> is <b>NULL</b>, this count is the number of bytes that are required to contain the entire output string. </p>
 </dd>
 
-### -param <i>UnicodeStringSource</i> [in]
+### -param UnicodeStringSource [in]
 
 <dd>
 <p>A pointer to the Unicode source string.</p>
 </dd>
 
-### -param <i>UnicodeStringByteCount</i> [in]
+### -param UnicodeStringByteCount [in]
 
 <dd>
 <p>Specifies the number of bytes in the Unicode source string that the <i>UnicodeStringSource</i> parameter points to. </p>
@@ -114,7 +114,7 @@ NTSTATUS RtlUnicodeToUTF8N(
 
 <p><b>RtlUnicodeToUTF8N</b> continues to convert the input string to an output string until it reaches the end of the source buffer or the end of the destination buffer, whichever occurs first. The routine converts any null characters in the input string to null characters in the output string. If the input string contains a terminating null character, but the null character is not located at the end of the source buffer, the routine continues past the terminating null character until it reaches the end of the available buffer space.</p>
 
-<p>The <a href="..\ntifs\nf-ntifs-rtlutf8tounicoden.md">RtlUTF8ToUnicodeN</a> routine converts a UTF-8 string to a Unicode string.</p>
+<p>The <a href="..\wdm\nf-wdm-rtlutf8tounicoden.md">RtlUTF8ToUnicodeN</a> routine converts a UTF-8 string to a Unicode string.</p>
 
 <p>You can use <b>RtlUnicodeToUTF8N</b> and <b>RtlUTF8ToUnicode</b> routines to perform a lossless conversion of valid text strings between the Unicode and UTF-8 formats. However, strings that have arbitrary data values are likely to violate the Unicode rules for encoding surrogate pairs, and any information that is contained in the invalid values in an input string is lost and cannot be recovered from the resulting output string. </p>
 
@@ -181,7 +181,7 @@ NTSTATUS RtlUnicodeToUTF8N(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\nf-ntifs-rtlutf8tounicoden.md">RtlUTF8ToUnicodeN</a>
+<a href="..\wdm\nf-wdm-rtlutf8tounicoden.md">RtlUTF8ToUnicodeN</a>
 </dt>
 </dl>
 <p> </p>

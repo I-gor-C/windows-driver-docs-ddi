@@ -7,7 +7,7 @@ old-location: ifsk\atomic_create_ecp_context.htm
 old-project: ifsk
 ms.assetid: CFA879CC-6124-4E1C-B440-358455A5E6EF
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: ATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_CONTEXT, *PATOMIC_CREATE_ECP_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,13 +69,13 @@ typedef struct _ATOMIC_CREATE_ECP_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of the context structure.</p>
 </dd>
 
-### -field <b>InFlags</b>
+### -field InFlags
 
 <dd>
 <p>Flags that indicate the requested supplemental operation(s) to be performed with the create operation.</p>
@@ -87,7 +87,7 @@ typedef struct _ATOMIC_CREATE_ECP_CONTEXT {
 <tr>
 <td width="40%"><a id="ATOMIC_CREATE_ECP_IN_FLAG_SPARSE_SPECIFIED"></a><a id="atomic_create_ecp_in_flag_sparse_specified"></a><dl>
 
-### -field <b>ATOMIC_CREATE_ECP_IN_FLAG_SPARSE_SPECIFIED</b>
+### -field ATOMIC_CREATE_ECP_IN_FLAG_SPARSE_SPECIFIED
 
 
 ### -field 0x0001
@@ -101,7 +101,7 @@ typedef struct _ATOMIC_CREATE_ECP_CONTEXT {
 <tr>
 <td width="40%"><a id="ATOMIC_CREATE_ECP_IN_FLAG_REPARSE_POINT_SPECIFIED"></a><a id="atomic_create_ecp_in_flag_reparse_point_specified"></a><dl>
 
-### -field <b>ATOMIC_CREATE_ECP_IN_FLAG_REPARSE_POINT_SPECIFIED</b>
+### -field ATOMIC_CREATE_ECP_IN_FLAG_REPARSE_POINT_SPECIFIED
 
 
 ### -field 0x0002
@@ -115,7 +115,7 @@ typedef struct _ATOMIC_CREATE_ECP_CONTEXT {
 <tr>
 <td width="40%"><a id="ATOMIC_CREATE_ECP_IN_FLAG_EOF_SPECIFIED"></a><a id="atomic_create_ecp_in_flag_eof_specified"></a><dl>
 
-### -field <b>ATOMIC_CREATE_ECP_IN_FLAG_EOF_SPECIFIED</b>
+### -field ATOMIC_CREATE_ECP_IN_FLAG_EOF_SPECIFIED
 
 
 ### -field 0x0004
@@ -130,7 +130,7 @@ that on-disk allocation will occur to support the requested file size.</p>
 <tr>
 <td width="40%"><a id="ATOMIC_CREATE_ECP_IN_FLAG_VDL_SPECIFIED"></a><a id="atomic_create_ecp_in_flag_vdl_specified"></a><dl>
 
-### -field <b>ATOMIC_CREATE_ECP_IN_FLAG_VDL_SPECIFIED</b>
+### -field ATOMIC_CREATE_ECP_IN_FLAG_VDL_SPECIFIED
 
 
 ### -field 0x0008
@@ -149,7 +149,7 @@ expose uninitialized data.</div>
 <tr>
 <td width="40%"><a id="ATOMIC_CREATE_ECP_IN_FLAG_OPERATION_MASK"></a><a id="atomic_create_ecp_in_flag_operation_mask"></a><dl>
 
-### -field <b>ATOMIC_CREATE_ECP_IN_FLAG_OPERATION_MASK</b>
+### -field ATOMIC_CREATE_ECP_IN_FLAG_OPERATION_MASK
 
 
 ### -field 0x00ff
@@ -163,7 +163,7 @@ expose uninitialized data.</div>
 <tr>
 <td width="40%"><a id="ATOMIC_CREATE_ECP_IN_FLAG_BEST_EFFORT"></a><a id="atomic_create_ecp_in_flag_best_effort"></a><dl>
 
-### -field <b>ATOMIC_CREATE_ECP_IN_FLAG_BEST_EFFORT</b>
+### -field ATOMIC_CREATE_ECP_IN_FLAG_BEST_EFFORT
 
 
 ### -field 0x0100
@@ -181,7 +181,7 @@ perform all of the requested supplemental operations.</p>
 <p> </p>
 </dd>
 
-### -field <b>OutFlags</b>
+### -field OutFlags
 
 <dd>
 <p>Flags that indicate the actual supplemental operation(s) performed with a successful create operation.</p>
@@ -193,7 +193,7 @@ perform all of the requested supplemental operations.</p>
 <tr>
 <td width="40%"><a id="ATOMIC_CREATE_ECP_OUT_FLAG_SPARSE_SET"></a><a id="atomic_create_ecp_out_flag_sparse_set"></a><dl>
 
-### -field <b>ATOMIC_CREATE_ECP_OUT_FLAG_SPARSE_SET</b>
+### -field ATOMIC_CREATE_ECP_OUT_FLAG_SPARSE_SET
 
 
 ### -field 0x0001
@@ -207,7 +207,7 @@ perform all of the requested supplemental operations.</p>
 <tr>
 <td width="40%"><a id="ATOMIC_CREATE_ECP_OUT_FLAG_REPARSE_POINT_SET"></a><a id="atomic_create_ecp_out_flag_reparse_point_set"></a><dl>
 
-### -field <b>ATOMIC_CREATE_ECP_OUT_FLAG_REPARSE_POINT_SET</b>
+### -field ATOMIC_CREATE_ECP_OUT_FLAG_REPARSE_POINT_SET
 
 
 ### -field 0x0002
@@ -221,7 +221,7 @@ perform all of the requested supplemental operations.</p>
 <tr>
 <td width="40%"><a id="ATOMIC_CREATE_ECP_OUT_FLAG_EOF_SET"></a><a id="atomic_create_ecp_out_flag_eof_set"></a><dl>
 
-### -field <b>ATOMIC_CREATE_ECP_OUT_FLAG_EOF_SET</b>
+### -field ATOMIC_CREATE_ECP_OUT_FLAG_EOF_SET
 
 
 ### -field 0x0004
@@ -235,7 +235,7 @@ perform all of the requested supplemental operations.</p>
 <tr>
 <td width="40%"><a id="ATOMIC_CREATE_ECP_OUT_FLAG_VDL_SET"></a><a id="atomic_create_ecp_out_flag_vdl_set"></a><dl>
 
-### -field <b>ATOMIC_CREATE_ECP_OUT_FLAG_VDL_SET</b>
+### -field ATOMIC_CREATE_ECP_OUT_FLAG_VDL_SET
 
 
 ### -field 0x0008
@@ -250,7 +250,7 @@ length.</p>
 <tr>
 <td width="40%"><a id="ATOMIC_CREATE_ECP_OUT_FLAG_OPERATION_MASK"></a><a id="atomic_create_ecp_out_flag_operation_mask"></a><dl>
 
-### -field <b>ATOMIC_CREATE_ECP_OUT_FLAG_OPERATION_MASK</b>
+### -field ATOMIC_CREATE_ECP_OUT_FLAG_OPERATION_MASK
 
 
 ### -field 0x00ff
@@ -265,49 +265,49 @@ length.</p>
 <p> </p>
 </dd>
 
-### -field <b>ReparseBufferLength</b>
+### -field ReparseBufferLength
 
 <dd>
 <p>The length of the <b>ReparseBuffer</b> member. This value can't exceed the <b>MAXIMUM_REPARSE_DATA_BUFFER_SIZE</b> (16K).</p>
 </dd>
 
-### -field <b>ReparseBuffer</b>
+### -field ReparseBuffer
 
 <dd>
 <p>The optional value that indicates the type of buffer used in the create operation. Possible values are <b>REPARSE_DATA_BUFFER</b> or <b>REPARSE_GUID_DATA_BUFFER</b>.</p>
 </dd>
 
-### -field <b>FileSize</b>
+### -field FileSize
 
 <dd>
 <p>The optional value that is used with <b>ATOMIC_CREATE_ECP_IN_FLAG_EOF_SPECIFIED</b> to indicate the requested file size to be set on the file.</p>
 </dd>
 
-### -field <b>ValidDataLength</b>
+### -field ValidDataLength
 
 <dd>
 <p>The optional value that is used with <b>ATOMIC_CREATE_ECP_IN_FLAG_VDL_SPECIFIED</b> to indicate the requested valid data length to be set on the file.</p>
 </dd>
 
-### -field <b>FileTimestamps</b>
+### -field FileTimestamps
 
 <dd>
 <p>Pointer to an optional <a href="..\ntifs\ns-ntifs--file-timestamps.md">FILE_TIMESTAMPS</a> structure which contains  the last recorded instance of specific actions on a file.</p>
 </dd>
 
-### -field <b>FileAttributes</b>
+### -field FileAttributes
 
 <dd>
 <p>Specifies the attributes of a file.</p>
 </dd>
 
-### -field <b>UsnSourceInfo</b>
+### -field UsnSourceInfo
 
 <dd>
 <p>Specifies optional Update Sequence Number (USN) source info flags.</p>
 </dd>
 
-### -field <b>Usn</b>
+### -field Usn
 
 <dd>
 <p>Specifies the Update Sequence Number (USN). This value is filled at the end of <b>GUID_ECP_ATOMIC_CREATE</b> .</p>

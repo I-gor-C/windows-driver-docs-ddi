@@ -91,95 +91,95 @@ typedef struct _D3DKMT_VIDMM_ESCAPE {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd></dd>
 
-### -field <b>SetFault</b>
+### -field SetFault
 
 <dd>
 <dl>
 
-### -field <b>ProbeAndLock</b>
+### -field ProbeAndLock
 
 <dd></dd>
 
-### -field <b>SplitPoin</b>
+### -field SplitPoin
 
 <dd></dd>
 
-### -field <b>HotAddMemory</b>
+### -field HotAddMemory
 
 <dd></dd>
 
-### -field <b>SwizzlingAperture</b>
+### -field SwizzlingAperture
 
 <dd></dd>
 
-### -field <b>PagingPathLockSubRange</b>
+### -field PagingPathLockSubRange
 
 <dd></dd>
 
-### -field <b>PagingPathLockMinRange</b>
+### -field PagingPathLockMinRange
 
 <dd></dd>
 
-### -field <b>ComplexLock</b>
+### -field ComplexLock
 
 <dd></dd>
 
-### -field <b>FailVARotation</b>
+### -field FailVARotation
 
 <dd></dd>
 
-### -field <b>NoWriteCombined</b>
+### -field NoWriteCombined
 
 <dd></dd>
 
-### -field <b>NoPrePatching</b>
+### -field NoPrePatching
 
 <dd></dd>
 
-### -field <b>AlwaysRepatch</b>
+### -field AlwaysRepatch
 
 <dd></dd>
 
-### -field <b>ExpectPreparationFailure</b>
+### -field ExpectPreparationFailure
 
 <dd></dd>
 
-### -field <b>FailUserModeVAMapping</b>
+### -field FailUserModeVAMapping
 
 <dd></dd>
 
-### -field <b>NeverDiscardOfferedAllocation</b>
+### -field NeverDiscardOfferedAllocation
 
 <dd></dd>
 
-### -field <b>AlwaysDiscardOfferedAllocation</b>
+### -field AlwaysDiscardOfferedAllocation
 
 <dd></dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd></dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd></dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd></dd>
 </dl>
 </dd>
 
-### -field <b>Evict</b>
+### -field Evict
 
 <dd>
 </dd>
 
-### -field <b>EvictByNtHandle</b>
+### -field EvictByNtHandle
 
 <dd>
 </dd>

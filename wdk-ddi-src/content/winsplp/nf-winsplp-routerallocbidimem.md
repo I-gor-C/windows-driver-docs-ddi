@@ -55,7 +55,7 @@ PVOID RouterAllocBidiMem(
 ## -parameters
 <dl>
 
-### -param <i>NumBytes</i> [in]
+### -param NumBytes [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the block of memory to be allocated.</p>

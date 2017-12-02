@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY DestroyAuthenticatedChannel(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="display.d3dddiarg_destroyauthenticatedchannel">D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL</a> structure that contains one member that specifies the handle to the authenticated channel to destroy. </p>

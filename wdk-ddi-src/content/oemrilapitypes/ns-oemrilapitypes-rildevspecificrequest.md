@@ -7,7 +7,7 @@ old-location: netvista\rildevspecificrequest.htm
 old-project: netvista
 ms.assetid: 36e2ae4b-cc2f-4980-95fe-25a38a1c07b1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILDEVSPECIFICREQUEST, RILDEVSPECIFICREQUEST, *LPRILDEVSPECIFICREQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef struct _RILDEVSPECIFICREQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>dwCmdId</b>
+### -field dwCmdId
 
 <dd></dd>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd></dd>
 
-### -field <b>params</b>
+### -field params
 
 <dd></dd>
 </dl>

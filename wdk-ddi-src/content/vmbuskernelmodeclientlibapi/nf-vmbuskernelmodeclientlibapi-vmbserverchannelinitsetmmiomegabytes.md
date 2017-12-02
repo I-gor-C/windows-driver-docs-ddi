@@ -7,7 +7,7 @@ old-location: netvista\vmbserverchannelinitsetmmiomegabytes.htm
 old-project: netvista
 ms.assetid: 9E19BCC0-5529-470C-BF69-521FEFA3303E
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbServerChannelInitSetMmioMegabytes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,20 +59,20 @@ NTSTATUS VmbServerChannelInitSetMmioMegabytes(
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>A handle for a channel.</p>
 </dd>
 
-### -param <i>MmioMegabytes</i> [in]
+### -param MmioMegabytes [in]
 
 <dd>
 <p>The amount of MMIO space, in megabytes, to reserve.
 </p>
 </dd>
 
-### -param <i>MmioMegabytesOptional</i> [in]
+### -param MmioMegabytesOptional [in]
 
 <dd>
 <p>The amount of extra optional MMIO

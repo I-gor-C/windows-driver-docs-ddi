@@ -57,25 +57,25 @@ typedef struct _D3DKMT_OPENADAPTERFROMHDC {
 ## -struct-fields
 <dl>
 
-### -field <b>hDc</b>
+### -field hDc
 
 <dd>
 <p>[in] The HDC for the graphics adapter and monitor output that are retrieved.</p>
 </dd>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[out] A handle to the graphics adapter for the HDC that <b>hDc</b> specifies. The adapter handle is returned from the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromhdc.md">D3DKMTOpenAdapterFromHdc</a> function.</p>
 </dd>
 
-### -field <b>AdapterLuid</b>
+### -field AdapterLuid
 
 <dd>
 <p>[out] The locally unique identifier (<a href="kernel.luid">LUID</a>) of the graphics adapter for the HDC that <b>hDc</b> specifies. The LUID is returned from the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromhdc.md">D3DKMTOpenAdapterFromHdc</a> call.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[out] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for the HDC that <b>hDc</b> specifies. The identification number is returned from the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromhdc.md">D3DKMTOpenAdapterFromHdc</a> call.</p>

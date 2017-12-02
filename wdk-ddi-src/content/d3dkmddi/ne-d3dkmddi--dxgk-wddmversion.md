@@ -56,7 +56,7 @@ typedef enum _DXGK_WDDMVERSION {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKDDI_WDDMv1"></a><a id="dxgkddi_wddmv1"></a><a id="DXGKDDI_WDDMV1"></a><b>DXGKDDI_WDDMv1</b>
+### -field DXGKDDI_WDDMv1
 
 <dd>
 <p>Reserved for system use.</p>
@@ -67,14 +67,14 @@ with the Windows 7 WDK (Version 7600), set the <b>WDDMVersion</b> member of the
 </p>
 </dd>
 
-### -field <a id="DXGKDDI_WDDMv1_2"></a><a id="dxgkddi_wddmv1_2"></a><a id="DXGKDDI_WDDMV1_2"></a><b>DXGKDDI_WDDMv1_2</b>
+### -field DXGKDDI_WDDMv1_2
 
 <dd>
 <p>Supported beginning with Windows 8.</p>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="DXGKDDI_WDDMv2"></a><a id="dxgkddi_wddmv2"></a><a id="DXGKDDI_WDDMV2"></a><b>DXGKDDI_WDDMv2</b>
+### -field DXGKDDI_WDDMv2
 
 <dd>
 <p>Reserved for system use.</p>

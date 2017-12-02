@@ -58,13 +58,13 @@ void EvtNfcCxWriteNciPacket(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object.</p>

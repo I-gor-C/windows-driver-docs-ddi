@@ -56,19 +56,19 @@ typedef enum _DXVAHDDDI_NOMINAL_RANGE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_UNDEFINED"></a><a id="d3d11_1ddi_video_processor_nominal_range_undefined"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_UNDEFINED</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_UNDEFINED
 
 <dd>
 <p>The driver default value, which is the <i>studio luminance range</i> of 16 to 235, inclusive [16, 235].</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_16_235"></a><a id="d3d11_1ddi_video_processor_nominal_range_16_235"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_16_235</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_16_235
 
 <dd>
 <p>The <i>studio luminance range</i> of 16 to 235, inclusive [16, 235].</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_0_255"></a><a id="d3d11_1ddi_video_processor_nominal_range_0_255"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_0_255</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_0_255
 
 <dd>
 <p>The <i>full luminance range</i>, or <i>extended range</i>, of 0 to 255, inclusive [0, 255].</p>

@@ -60,7 +60,7 @@ HRESULT APIENTRY* CreateAuthenticatedChannel(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).
@@ -68,19 +68,19 @@ HRESULT APIENTRY* CreateAuthenticatedChannel(
 </p>
 </dd>
 
-### -param <i>pCreateData</i> [in]
+### -param pCreateData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-createauthenticatedchannel.md">D3D11_1DDIARG_CREATEAUTHENTICATEDCHANNEL</a> structure. This structure specifies the attributes of the authenticated channel to be created.</p>
 </dd>
 
-### -param <i>hAuthChannel</i> [in]
+### -param hAuthChannel [in]
 
 <dd>
 <p>A handle to the driver's private data for the authenticated channel object. For more information, see the Remarks section.</p>
 </dd>
 
-### -param <i>hRTAuthChannel</i> [in]
+### -param hRTAuthChannel [in]
 
 <dd>
 <p>A handle to the authenticated channel object that the driver should use when it calls back into the Direct3D runtime.</p>

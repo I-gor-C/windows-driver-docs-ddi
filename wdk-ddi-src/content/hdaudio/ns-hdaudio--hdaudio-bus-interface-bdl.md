@@ -73,121 +73,121 @@ typedef struct _HDAUDIO_BUS_INTERFACE_BDL {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size in bytes of the HDAUDIO_BUS_INTERFACE_BDL structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the extended HD Audio DDI.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Pointer to interface-specific context information.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>Pointer to a driver-supplied routine that increments the interface's reference count.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>Pointer to a driver-supplied routine that decrements the interface's reference count.</p>
 </dd>
 
-### -field <b>TransferCodecVerbs</b>
+### -field TransferCodecVerbs
 
 <dd>
 <p>Function pointer to the <a href="..\hdaudio\nc-hdaudio-ptransfer-codec-verbs.md">TransferCodecVerbs</a> routine.</p>
 </dd>
 
-### -field <b>AllocateCaptureDmaEngine</b>
+### -field AllocateCaptureDmaEngine
 
 <dd>
 <p>Function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate-capture-dma-engine.md">AllocateCaptureDmaEngine</a> routine.</p>
 </dd>
 
-### -field <b>AllocateRenderDmaEngine</b>
+### -field AllocateRenderDmaEngine
 
 <dd>
 <p>Function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate-render-dma-engine.md">AllocateRenderDmaEngine</a> routine.</p>
 </dd>
 
-### -field <b>ChangeBandwidthAllocation</b>
+### -field ChangeBandwidthAllocation
 
 <dd>
 <p>Function pointer to the <a href="..\hdaudio\nc-hdaudio-pchange-bandwidth-allocation.md">ChangeBandwidthAllocation</a> routine.</p>
 </dd>
 
-### -field <b>AllocateContiguousDmaBuffer</b>
+### -field AllocateContiguousDmaBuffer
 
 <dd>
 <p>Function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate-contiguous-dma-buffer.md">AllocateContiguousDmaBuffer</a> routine.</p>
 </dd>
 
-### -field <b>SetupDmaEngineWithBdl</b>
+### -field SetupDmaEngineWithBdl
 
 <dd>
 <p>Function pointer to the <a href="..\hdaudio\nc-hdaudio-psetup-dma-engine-with-bdl.md">SetupDmaEngineWithBdl</a> routine.</p>
 </dd>
 
-### -field <b>FreeContiguousDmaBuffer</b>
+### -field FreeContiguousDmaBuffer
 
 <dd>
 <p>Function pointer to the <a href="..\hdaudio\nc-hdaudio-pfree-contiguous-dma-buffer.md">FreeContiguousDmaBuffer</a> routine.</p>
 </dd>
 
-### -field <b>FreeDmaEngine</b>
+### -field FreeDmaEngine
 
 <dd>
 <p>Function pointer to the <a href="..\hdaudio\nc-hdaudio-pfree-dma-engine.md">FreeDmaEngine</a> routine.</p>
 </dd>
 
-### -field <b>SetDmaEngineState</b>
+### -field SetDmaEngineState
 
 <dd>
 <p>Function pointer to the <a href="..\hdaudio\nc-hdaudio-pset-dma-engine-state.md">SetDmaEngineState</a> routine.</p>
 </dd>
 
-### -field <b>GetWallClockRegister</b>
+### -field GetWallClockRegister
 
 <dd>
 <p>Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget-wall-clock-register.md">GetWallClockRegister</a> routine.</p>
 </dd>
 
-### -field <b>GetLinkPositionRegister</b>
+### -field GetLinkPositionRegister
 
 <dd>
 <p>Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget-link-position-register.md">GetLinkPositionRegister</a> routine.</p>
 </dd>
 
-### -field <b>RegisterEventCallback</b>
+### -field RegisterEventCallback
 
 <dd>
 <p>Function pointer to the <a href="..\hdaudio\nc-hdaudio-pregister-event-callback.md">RegisterEventCallback</a> routine.</p>
 </dd>
 
-### -field <b>UnregisterEventCallback</b>
+### -field UnregisterEventCallback
 
 <dd>
 <p>Function pointer to the <a href="..\hdaudio\nc-hdaudio-punregister-event-callback.md">UnregisterEventCallback</a> routine.</p>
 </dd>
 
-### -field <b>GetDeviceInformation</b>
+### -field GetDeviceInformation
 
 <dd>
 <p>Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget-device-information.md">GetDeviceInformation</a> routine.</p>
 </dd>
 
-### -field <b>GetResourceInformation</b>
+### -field GetResourceInformation
 
 <dd>
 <p>Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget-resource-information.md">GetResourceInformation</a> routine.</p>
@@ -203,7 +203,7 @@ typedef struct _HDAUDIO_BUS_INTERFACE_BDL {
 
 <p>HDAUDIO_BUS_INTERFACE has two members, <a href="..\hdaudio\nc-hdaudio-pallocate-dma-buffer.md">AllocateDmaBuffer</a> and <a href="..\hdaudio\nc-hdaudio-pfree-dma-buffer.md">FreeDmaBuffer</a>, that are not present in HDAUDIO_BUS_INTERFACE_BDL.</p>
 
-<p>For more information, see <a href="NULL">Differences Between the HD Audio DDI Versions</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/e24071d3-9021-40c0-907a-91ada8a1306b">Differences Between the HD Audio DDI Versions</a>.</p>
 
 <p>The names and definitions of the first five members (<b>Size</b>, <b>Version</b>, <b>Context</b>, <b>InterfaceReference</b>, and <b>InterfaceDereference</b>) are the same as in the <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure. The remaining members are specific to the extended HD Audio DDI and specify function pointers to the routines in the DDI. For more information, see <a href="https://msdn.microsoft.com/142eb2f0-6c6d-4441-8ad7-0875546c1ab2">Obtaining an HDAUDIO_BUS_INTERFACE_BDL DDI Object</a>.</p>
 

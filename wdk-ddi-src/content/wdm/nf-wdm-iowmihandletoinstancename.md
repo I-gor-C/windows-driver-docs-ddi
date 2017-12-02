@@ -57,19 +57,19 @@ NTSTATUS IoWMIHandleToInstanceName(
 ## -parameters
 <dl>
 
-### -param <i>DataBlockObject</i> [in]
+### -param DataBlockObject [in]
 
 <dd>
 <p>Pointer to a WMI data block object. The caller opens the data block object for the WMI class with the <a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a> routine. </p>
 </dd>
 
-### -param <i>FileHandle</i> [in]
+### -param FileHandle [in]
 
 <dd>
 <p>Specifies a file handle. The routine returns the instance name corresponding to the driver that is represented by the file handle. </p>
 </dd>
 
-### -param <i>InstanceName</i> [out]
+### -param InstanceName [out]
 
 <dd>
 <p>Pointer to the <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that the routine uses to return the instance name. The caller frees the returned buffer within <b>UNICODE_STRING</b>. </p>

@@ -61,20 +61,20 @@ NTSTATUS* DxgkDdiMiracastQueryCaps(
 ## -parameters
 <dl>
 
-### -param <i>DriverContext</i> [in]
+### -param DriverContext [in]
 
 <dd>
 <p>A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>MiracastCapsSize</i> [in]
+### -param MiracastCapsSize [in]
 
 <dd>
 <p>The size, supplied by the operating system, of the <a href="..\dispmprt\ns-dispmprt--dxgk-miracast-caps.md">DXGK_MIRACAST_CAPS</a> structure pointed to by the <i>MiracastCaps</i> parameter.</p>
 <p>The driver should check this value before it fills the structure.</p>
 </dd>
 
-### -param <i>MiracastCaps</i> [out]
+### -param MiracastCaps [out]
 
 <dd>
 <p>A pointer to an operating system-provided buffer that holds a <a href="..\dispmprt\ns-dispmprt--dxgk-miracast-caps.md">DXGK_MIRACAST_CAPS</a> structure that the driver fills with Miracast device capabilities.</p>

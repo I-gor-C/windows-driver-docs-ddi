@@ -55,13 +55,13 @@ BOOLEAN PoQueryWatchdogTime(
 ## -parameters
 <dl>
 
-### -param <i>Pdo</i> [in]
+### -param Pdo [in]
 
 <dd>
 <p>A pointer to a physical device object (PDO). This parameter points to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that represents a physical device.</p>
 </dd>
 
-### -param <i>SecondsRemaining</i> [out]
+### -param SecondsRemaining [out]
 
 <dd>
 <p>A pointer to a location into which the routine writes the time, in seconds, that remains before the next power watchdog time-out is set to occur.</p>

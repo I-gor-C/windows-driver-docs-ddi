@@ -55,16 +55,16 @@ NTSTATUS PcForwardIrpSynchronous(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the audio device's device object. This parameter must point to a system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>Pointer to the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> that is to be forwarded</p>
+<p>Pointer to the <a href="..\wdm\ns-wdm--irp.md">IRP</a> that is to be forwarded</p>
 </dd>
 </dl>
 
@@ -132,7 +132,7 @@ NTSTATUS PcForwardIrpSynchronous(
 <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\portcls\nf-portcls-pccompleteirp.md">PcCompleteIrp</a>

@@ -7,7 +7,7 @@ old-location: netvista\dot11extsetethertypehandling.htm
 old-project: netvista
 ms.assetid: 0681519e-022a-487c-ae5e-39a293b060ec
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ DWORD WINAPI * Dot11ExtSetEtherTypeHandling(
 ## -parameters
 <dl>
 
-### -param <i>hDot11SvcHandle</i> [in, optional]
+### -param hDot11SvcHandle [in, optional]
 
 <dd>
 <p>The handle used by the operating system to reference the WLAN adapter. This handle value was
@@ -67,7 +67,7 @@ DWORD WINAPI * Dot11ExtSetEtherTypeHandling(
      Handler function.</p>
 </dd>
 
-### -param <i>uMaxBackLog</i> [in]
+### -param uMaxBackLog [in]
 
 <dd>
 <p>The maximum number of received packets that the operating system queues if the IHV Extensions DLL
@@ -77,14 +77,14 @@ DWORD WINAPI * Dot11ExtSetEtherTypeHandling(
      <i>uMaxBackLog</i> is reached, the operating system discards the oldest packet in the queue.</p>
 </dd>
 
-### -param <i>uNumOfExemption</i> [in]
+### -param uNumOfExemption [in]
 
 <dd>
 <p>The number of entries within the privacy exemptions array referenced by the 
      <i>pExemption</i> parameter. A value of zero disables privacy exemptions on the WLAN adapter.</p>
 </dd>
 
-### -param <i>pExemption</i> [in, optional]
+### -param pExemption [in, optional]
 
 <dd>
 <p>A pointer to an array of privacy exemptions. Each entry in the array is formatted as a 
@@ -92,7 +92,7 @@ DWORD WINAPI * Dot11ExtSetEtherTypeHandling(
      DOT11_PRIVACY_EXEMPTION</a> structure.</p>
 </dd>
 
-### -param <i>uNumOfRegistration</i> [in]
+### -param uNumOfRegistration [in]
 
 <dd>
 <p>Number of entries within the IEEE EtherType registrations array referenced by the 
@@ -102,7 +102,7 @@ DWORD WINAPI * Dot11ExtSetEtherTypeHandling(
      Handler function.</p>
 </dd>
 
-### -param <i>pusRegistration</i> [in, optional]
+### -param pusRegistration [in, optional]
 
 <dd>
 <p>A pointer to an array of IEEE EtherType registrations. Each entry has the EtherType value in
@@ -196,4 +196,4 @@ DWORD WINAPI * Dot11ExtSetEtherTypeHandling(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_ETHERTYPE_HANDLING callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_ETHERTYPE_HANDLING callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

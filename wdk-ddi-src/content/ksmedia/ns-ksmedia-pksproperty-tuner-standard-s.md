@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>Standard</b>
+### -field Standard
 
 <dd>
 <p>Describes an analog video standard. This member may be set to one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks-analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.</p>

@@ -55,13 +55,13 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="PmiMeasurementUnitMilliWatt"></a><a id="pmimeasurementunitmilliwatt"></a><a id="PMIMEASUREMENTUNITMILLIWATT"></a><b>PmiMeasurementUnitMilliWatt</b>
+### -field PmiMeasurementUnitMilliWatt
 
 <dd>
 <p>The PMI measurement data is in units of milliwatts (mW).</p>
 </dd>
 
-### -field <a id="PmiMeasurementUnitMax"></a><a id="pmimeasurementunitmax"></a><a id="PMIMEASUREMENTUNITMAX"></a><b>PmiMeasurementUnitMax</b>
+### -field PmiMeasurementUnitMax
 
 <dd>
 <p>The maximum types of PMI measurement units.</p>

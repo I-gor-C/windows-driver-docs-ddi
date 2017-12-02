@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY GetCaps(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p> A handle that identifies the graphics adapter. </p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getcaps.md">D3DDDIARG_GETCAPS</a> structure that describes the capabilities to retrieve.</p>

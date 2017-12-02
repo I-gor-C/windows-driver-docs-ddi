@@ -59,19 +59,19 @@ typedef struct _D3DHAL_DP2DRAWPRIMITIVE {
 ## -struct-fields
 <dl>
 
-### -field <b>primType</b>
+### -field primType
 
 <dd>
 <p>Specifies the type of primitive to draw (one of D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP or D3DPT_TRIANGLEFAN).</p>
 </dd>
 
-### -field <b>VStart</b>
+### -field VStart
 
 <dd>
 <p>Specifies the index (into each active vertex stream) of the vertex elements with which to start drawing. Actual vertex data should be read from the current vertex streams (those referenced by the current vertex shader) rather than from the vertex data pointer in <a href="..\d3dhal\ns-d3dhal--d3dhal-drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>.</p>
 </dd>
 
-### -field <b>PrimitiveCount</b>
+### -field PrimitiveCount
 
 <dd>
 <p>Specifies the number of triangles, lines or points to draw for the given primitive.</p>

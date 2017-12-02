@@ -54,7 +54,7 @@ typedef struct _PMI_MEASUREMENT_CONFIGURATION {
 ## -struct-fields
 <dl>
 
-### -field <b>AveragingInterval</b>
+### -field AveragingInterval
 
 <dd>
 <p>A value, in units of milliseconds (mS), that specifies the interval during which the power meter averages power measurement data.</p>

@@ -58,25 +58,25 @@ PVOID USBCAMD_AdapterReceivePacket(
 ## -parameters
 <dl>
 
-### -param <i>Srb</i> [in]
+### -param Srb [in]
 
 <dd>
 <p>Pointer to the SRB passed to the camera minidriver's <a href="stream.adapterreceivepacket">AdapterReceivePacket</a> callback function.</p>
 </dd>
 
-### -param <i>DeviceData</i> [in]
+### -param DeviceData [in]
 
 <dd>
 <p>Pointer to the <a href="..\usbcamdi\ns-usbcamdi--usbcamd-device-data.md">USBCAMD_DEVICE_DATA</a> structure that contains entry points to the camera minidriver's callback functions.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device's physical device object (PDO).</p>
 </dd>
 
-### -param <i>NeedsCompletion</i> [in]
+### -param NeedsCompletion [in]
 
 <dd>
 <p>Specifies if USBCAMD is to process and complete the SRB request. Specify <b>TRUE</b> if USBCAMD is to complete the SRB request Specify <b>FALSE</b> to make USBCAMD ignore the SRB request and return the device context pointer.</p>

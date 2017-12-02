@@ -61,20 +61,20 @@ typedef struct _CDROM_TOC_FULL_TOC_DATA_BLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>SessionNumber</b>
+### -field SessionNumber
 
 <dd>
 <p>Contains the number of the session that the track belongs to. </p>
 </dd>
 
-### -field <b>Control</b>
+### -field Control
 
 <dd>
 <p>Indicates the attributes of the track. </p>
 <p></p>
 <dl>
 
-### -field <a id="AUDIO_WITH_PREEMPHASIS"></a><a id="audio_with_preemphasis"></a>AUDIO_WITH_PREEMPHASIS
+### -field AUDIO_WITH_PREEMPHASIS
 
 <dd>
 <p>Indicates two audio channels with preemphasis of 50/15 microseconds have been added. </p>
@@ -83,7 +83,7 @@ typedef struct _CDROM_TOC_FULL_TOC_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="DIGITAL_COPY_PERMITTED"></a><a id="digital_copy_permitted"></a>DIGITAL_COPY_PERMITTED
+### -field DIGITAL_COPY_PERMITTED
 
 <dd>
 <p>Indicates digital copying is allowed. </p>
@@ -92,7 +92,7 @@ typedef struct _CDROM_TOC_FULL_TOC_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="AUDIO_DATA_TRACK"></a><a id="audio_data_track"></a>AUDIO_DATA_TRACK
+### -field AUDIO_DATA_TRACK
 
 <dd>
 <p>Indicates that the track contains nonaudio data. </p>
@@ -101,7 +101,7 @@ typedef struct _CDROM_TOC_FULL_TOC_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="TWO_FOUR_CHANNEL_AUDIO"></a><a id="two_four_channel_audio"></a>TWO_FOUR_CHANNEL_AUDIO
+### -field TWO_FOUR_CHANNEL_AUDIO
 
 <dd>
 <p>Indicates that the track contains four channels of audio data.</p>
@@ -109,14 +109,14 @@ typedef struct _CDROM_TOC_FULL_TOC_DATA_BLOCK {
 </dl>
 </dd>
 
-### -field <b>Adr</b>
+### -field Adr
 
 <dd>
 <p>Indicates the type of information encoded in the Q subchannel of the block where this table of contents entry was found.</p>
 <p></p>
 <dl>
 
-### -field <a id="ADR_NO_MODE_INFORMATION"></a><a id="adr_no_mode_information"></a>ADR_NO_MODE_INFORMATION
+### -field ADR_NO_MODE_INFORMATION
 
 <dd>
 <p>Q subchannel mode information not supplied. </p>
@@ -125,7 +125,7 @@ typedef struct _CDROM_TOC_FULL_TOC_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="ADR_ENCODES_CURRENT_POSITION"></a><a id="adr_encodes_current_position"></a>ADR_ENCODES_CURRENT_POSITION
+### -field ADR_ENCODES_CURRENT_POSITION
 
 <dd>
 <dl>
@@ -141,7 +141,7 @@ typedef struct _CDROM_TOC_FULL_TOC_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="ADR_ENCODES_MEDIA_CATALOG"></a><a id="adr_encodes_media_catalog"></a>ADR_ENCODES_MEDIA_CATALOG
+### -field ADR_ENCODES_MEDIA_CATALOG
 
 <dd>
 <p>Q subchannel encodes media catalog number. </p>
@@ -150,7 +150,7 @@ typedef struct _CDROM_TOC_FULL_TOC_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="ADR_ENCODES_ISRC_"></a><a id="adr_encodes_isrc_"></a>ADR_ENCODES_ISRC 
+### -field ADR_ENCODES_ISRC 
 
 <dd>
 <p>Q subchannel encodes ISRC. </p>
@@ -158,31 +158,31 @@ typedef struct _CDROM_TOC_FULL_TOC_DATA_BLOCK {
 </dl>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Point</b>
+### -field Point
 
 <dd>
 <p>Defines various types of information within the table of contents lead-in area. For information about the permissible values for this member, see specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS).</p>
 </dd>
 
-### -field <b>MsfExtra</b>
+### -field MsfExtra
 
 <dd>
 <p>See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member. </p>
 </dd>
 
-### -field <b>Zero</b>
+### -field Zero
 
 <dd>
 <p>Contains the value of the zero bit.</p>
 </dd>
 
-### -field <b>Msf</b>
+### -field Msf
 
 <dd>
 <p>Contains the minute, second, and frame. Msf[0] contains the minutes field. Msf[1] contains the seconds field, and Msf[2] contains the frames field. MSF is a format similar to logical block addressing. </p>

@@ -57,19 +57,19 @@ typedef enum _SERCX_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="SerCxStatusSuccess"></a><a id="sercxstatussuccess"></a><a id="SERCXSTATUSSUCCESS"></a><b>SerCxStatusSuccess</b>
+### -field SerCxStatusSuccess
 
 <dd>
 <p>The operation is proceeding successfully.</p>
 </dd>
 
-### -field <a id="SerCxStatusCancelled"></a><a id="sercxstatuscancelled"></a><a id="SERCXSTATUSCANCELLED"></a><b>SerCxStatusCancelled</b>
+### -field SerCxStatusCancelled
 
 <dd>
 <p>The operation was canceled.</p>
 </dd>
 
-### -field <a id="SerCxStatusTimeout"></a><a id="sercxstatustimeout"></a><a id="SERCXSTATUSTIMEOUT"></a><b>SerCxStatusTimeout</b>
+### -field SerCxStatusTimeout
 
 <dd>
 <p>The operation timed out. This enumeration value applies only to read interval time-outs for receive operations. For more information, see the description of the <b>ReadIntervalTimeout</b> member in <a href="..\ntddser\ns-ntddser--serial-timeouts.md">SERIAL_TIMEOUTS</a>.</p>

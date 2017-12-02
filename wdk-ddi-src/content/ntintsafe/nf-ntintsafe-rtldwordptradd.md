@@ -56,19 +56,19 @@ NTSTATUS RtlDWordPtrAdd(
 ## -parameters
 <dl>
 
-### -param <i>dwAugend</i> [in]
+### -param dwAugend [in]
 
 <dd>
 <p>The first value in the equation.</p>
 </dd>
 
-### -param <i>dwAddend</i> [in]
+### -param dwAddend [in]
 
 <dd>
 <p>The value to add to <i>dwAugend</i>.</p>
 </dd>
 
-### -param <i>pdwResult</i> [out]
+### -param pdwResult [out]
 
 <dd>
 <p>A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

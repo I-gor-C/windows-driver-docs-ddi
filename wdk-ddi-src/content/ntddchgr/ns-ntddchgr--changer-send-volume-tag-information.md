@@ -56,13 +56,13 @@ typedef struct _CHANGER_SEND_VOLUME_TAG_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>StartingElement</b>
+### -field StartingElement
 
 <dd>
 <p>Describes the first element of the range to search for or to set in a structure of type <a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a>. </p>
 </dd>
 
-### -field <b>ActionCode</b>
+### -field ActionCode
 
 <dd>
 <p>Indicates the operation to perform. The <b>Features0</b> member of <a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a> indicates whether the changer supports a particular category of operation:</p>
@@ -82,7 +82,7 @@ typedef struct _CHANGER_SEND_VOLUME_TAG_INFORMATION {
 </ul>
 </dd>
 
-### -field <b>VolumeIDTemplate</b>
+### -field VolumeIDTemplate
 
 <dd>
 <p>Specifies the template to be used by the device to search for volume IDs. For a translate operation, the template can include the wildcard characters, asterisk (*) and question mark (?), to search for volumes that match the template. For other operations, the template specifies a single volume. </p>

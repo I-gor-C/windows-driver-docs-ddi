@@ -65,63 +65,63 @@ typedef struct _DXVA_VideoSample2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p><b>Only compiles for a 64-bit version of the operating system.</b></p>
 <p>Indicates the size of this structure.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p><b>Only compiles for a 64-bit version of the operating system.</b></p>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>rtStart</b>
+### -field rtStart
 
 <dd>
 <p>Specifies the start time of the sample.</p>
 </dd>
 
-### -field <b>rtEnd</b>
+### -field rtEnd
 
 <dd>
 <p>Specifies the end time of the sample.</p>
 </dd>
 
-### -field <b>SampleFormat</b>
+### -field SampleFormat
 
 <dd>
 <p>Specifies the format of the sample as defined by values of the <a href="..\dxva\ns-dxva--dxva-extendedformat.md">DXVA_ExtendedFormat</a> enumeration type. </p>
 </dd>
 
-### -field <b>SampleFlags</b>
+### -field SampleFlags
 
 <dd>
 <p>Specifies a collection of flags that indicate changes in the current sample frame from the previous sample frame. This member is a bitwise-OR of one or more of the flags in the <a href="..\dxva\ne-dxva--dxva-sampleflags.md">DXVA_SampleFlags</a> enumeration type.</p>
 </dd>
 
-### -field <b>lpDDSSrcSurface</b>
+### -field lpDDSSrcSurface
 
 <dd>
 <p>Pointer to a <a href="display.dd_surface_local">DD_SURFACE_LOCAL</a> structure that represents the sample.</p>
 </dd>
 
-### -field <b>rcSrc</b>
+### -field rcSrc
 
 <dd>
 <p>Specifies a <a href="display.rect">RECT</a> structure that describes the upper-left and lower-right points of a rectangle on the source surface. These points define the area of the source data for the bit-block transfer and its position on the source surface.</p>
 </dd>
 
-### -field <b>rcDst</b>
+### -field rcDst
 
 <dd>
 <p>Specifies a RECT structure that describes the upper-left and lower-right points of a rectangle on the destination surface. These points define the area in which the bit-block transfer should occur and its position on the destination surface.</p>
 </dd>
 
-### -field <b>Palette</b>
+### -field Palette
 
 <dd>
 <p>Specifies an array of <a href="..\dxva\ns-dxva--dxva-ayuvsample2.md">DXVA_AYUVsample2</a> structures that represent a complete 16-color palette for palletized video substream pixel formats. The driver uses this palette to composite the substream sample. For nonpalletized pixel formats, the palette is zero and can be ignored.</p>

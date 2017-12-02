@@ -7,7 +7,7 @@ old-location: netvista\fwpsredirecthandlecreate0.htm
 old-project: netvista
 ms.assetid: 841f3885-509a-457e-854d-e8ead657de54
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsRedirectHandleCreate0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>FwpsRedirectHandleCreate0</b> function creates a handle that  connection redirection functions can use to redirect connections to a local process. For more information about redirection, see <a href="NULL">Using Bind or Connect Redirection</a>.<div class="alert"><b>Note</b>  <b>FwpsRedirectHandleCreate0</b> is a specific version of <b>FwpsRedirectHandleCreate</b>. See <a href="fwp.wfp_version-independent_names_and_targeting_specific_versions_of_windows">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information.</div>
+<p>The <b>FwpsRedirectHandleCreate0</b> function creates a handle that  connection redirection functions can use to redirect connections to a local process. For more information about redirection, see <a href="netvista.using_bind_or_connect_redirection">Using Bind or Connect Redirection</a>.<div class="alert"><b>Note</b>  <b>FwpsRedirectHandleCreate0</b> is a specific version of <b>FwpsRedirectHandleCreate</b>. See <a href="fwp.wfp_version-independent_names_and_targeting_specific_versions_of_windows">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information.</div>
 <div> </div>
 </p>
 
@@ -58,19 +58,19 @@ NTSTATUS NTAPI FwpsRedirectHandleCreate0(
 ## -parameters
 <dl>
 
-### -param <i>providerGuid</i> 
+### -param providerGuid 
 
 <dd>
 <p>The provider GUID.</p>
 </dd>
 
-### -param <i>flags</i> 
+### -param flags 
 
 <dd>
 <p>Reserved.  Set to zero.</p>
 </dd>
 
-### -param <i>redirectHandle</i> 
+### -param redirectHandle 
 
 <dd>
 <p>A pointer to the variable that receives the handle.</p>
@@ -91,7 +91,7 @@ NTSTATUS NTAPI FwpsRedirectHandleCreate0(
 ## -remarks
 <p>A callout driver calls the <b>FwpsRedirectHandleCreate0</b> function to create a handle that can be used to redirect connections.</p>
 
-<p>For more information about redirection, see <a href="NULL">Using Bind or Connect Redirection</a>.</p>
+<p>For more information about redirection, see <a href="netvista.using_bind_or_connect_redirection">Using Bind or Connect Redirection</a>.</p>
 
 <p>Your callout driver should call <b>FwpsRedirectHandleCreate0</b> once and cache the handle so that it can reuse the handle.</p>
 
@@ -172,4 +172,4 @@ NTSTATUS NTAPI FwpsRedirectHandleCreate0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsRedirectHandleCreate0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsRedirectHandleCreate0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

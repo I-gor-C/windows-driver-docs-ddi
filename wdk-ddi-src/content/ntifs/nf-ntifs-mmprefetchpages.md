@@ -7,7 +7,7 @@ old-location: ifsk\mmprefetchpages.htm
 old-project: ifsk
 ms.assetid: fd76dfed-2c47-4289-a672-1db8129f5a9e
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: MmPrefetchPages
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ NTSTATUS MmPrefetchPages(
 ## -parameters
 <dl>
 
-### -param <i>NumberOfLists</i> [in]
+### -param NumberOfLists [in]
 
 <dd>
 <p>The number of read-lists in the array passed in the <i>ReadLists</i> parameter.</p>
 </dd>
 
-### -param <i>ReadLists</i> [in]
+### -param ReadLists [in]
 
 <dd>
 <p>A pointer to an array of read-lists to be prefetched.</p>

@@ -56,19 +56,19 @@ typedef struct _HDAUDIO_BUFFER_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Address</b>
+### -field Address
 
 <dd>
 <p>Specifies the start address of a physically contiguous fragment of the buffer. In the case of a 32-bit address, the address should be right-justified and the 32 most significant bits (MSBs) of the member should be zero.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Specifies the size in bytes of the buffer fragment.</p>
 </dd>
 
-### -field <b>InterruptOnCompletion</b>
+### -field InterruptOnCompletion
 
 <dd>
 <p>Specifies whether the DMA engine should generate an interrupt on completing the transfer of the buffer fragment. A value of 1 enables the interrupt. A value of 0 disables it.</p>

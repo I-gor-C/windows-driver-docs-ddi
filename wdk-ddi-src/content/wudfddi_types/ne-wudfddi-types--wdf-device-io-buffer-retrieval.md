@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_io_buffer_retrieval.htm
 old-project: wdf
 ms.assetid: 50ece9a1-8d0d-442c-962c-488bd6368a67
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ typedef enum _WDF_DEVICE_IO_BUFFER_RETRIEVAL {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfDeviceIoBufferRetrievalInvalid"></a><a id="wdfdeviceiobufferretrievalinvalid"></a><a id="WDFDEVICEIOBUFFERRETRIEVALINVALID"></a><b>WdfDeviceIoBufferRetrievalInvalid</b>
+### -field WdfDeviceIoBufferRetrievalInvalid
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="WdfDeviceIoBufferRetrievalCopyImmediately"></a><a id="wdfdeviceiobufferretrievalcopyimmediately"></a><a id="WDFDEVICEIOBUFFERRETRIEVALCOPYIMMEDIATELY"></a><b>WdfDeviceIoBufferRetrievalCopyImmediately</b>
+### -field WdfDeviceIoBufferRetrievalCopyImmediately
 
 <dd>
 <p>UMDF makes an I/O request's buffers available to the driver (by copying them into the <a href="wdf.umdf_driver_host_process">UMDF driver host process</a>) as soon as UMDF receives the I/O request. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <a id="WdfDeviceIoBufferRetrievalDeferred"></a><a id="wdfdeviceiobufferretrievaldeferred"></a><a id="WDFDEVICEIOBUFFERRETRIEVALDEFERRED"></a><b>WdfDeviceIoBufferRetrievalDeferred</b>
+### -field WdfDeviceIoBufferRetrievalDeferred
 
 <dd>
 <p>UMDF makes an I/O request's buffers available to the driver (by copying them into the UMDF driver host process) only when the driver attempts to access the buffers. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <a id="WdfDeviceIoBufferRetrievalMaximum"></a><a id="wdfdeviceiobufferretrievalmaximum"></a><a id="WDFDEVICEIOBUFFERRETRIEVALMAXIMUM"></a><b>WdfDeviceIoBufferRetrievalMaximum</b>
+### -field WdfDeviceIoBufferRetrievalMaximum
 
 <dd>
 <p>Reserved for system use.</p>
@@ -151,4 +151,4 @@ typedef enum _WDF_DEVICE_IO_BUFFER_RETRIEVAL {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_IO_BUFFER_RETRIEVAL enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_IO_BUFFER_RETRIEVAL enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,19 +56,19 @@ NTSTATUS KsForwardIrp(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP that is being forwarded to the specified driver.</p>
 </dd>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Specifies the file object to initialize the next stack with.</p>
 </dd>
 
-### -param <i>ReuseStackLocation</i> [in]
+### -param ReuseStackLocation [in]
 
 <dd>
 <p>Specifies the new stack location.</p>

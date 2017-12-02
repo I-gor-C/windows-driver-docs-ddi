@@ -7,7 +7,7 @@ old-location: wdf\wdfcmresourcelistinsertdescriptor.htm
 old-project: wdf
 ms.assetid: 18406f06-d60c-401e-a745-54caf1d0c21d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfCmResourceListInsertDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ NTSTATUS WdfCmResourceListInsertDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>List</i> [in]
+### -param List [in]
 
 <dd>
 <p>A handle to a framework resource-list object that represents a list of hardware resources for a device.</p>
 </dd>
 
-### -param <i>Descriptor</i> [in]
+### -param Descriptor [in]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.</p>
 </dd>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>A zero-based value that is used as an index into the logical configuration that <i>List</i> specifies. To add a resource descriptor to the end of the resource list, specify WDF_INSERT_AT_END or the return value from <a href="..\wdfresource\nf-wdfresource-wdfcmresourcelistgetcount.md">WdfCmResourceListGetCount</a>.</p>
@@ -183,4 +183,4 @@ NTSTATUS WdfCmResourceListInsertDescriptor(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfCmResourceListInsertDescriptor method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfCmResourceListInsertDescriptor method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

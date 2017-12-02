@@ -59,19 +59,19 @@ __checkReturn HRESULT APIENTRY SetVertexShaderConst(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setvertexshaderconst.md">D3DDDIARG_SETVERTEXSHADERCONST</a> structure that specifies how to set the vertex shader constant registers.</p>
 </dd>
 
-### -param <i>pRegisters</i> [in]
+### -param pRegisters [in]
 
 <dd>
 <p> A pointer to a buffer that contains the floating-point values to copy.</p>

@@ -58,13 +58,13 @@ typedef struct _D3DHAL_DP2ADDDIRTYRECT {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSurface</b>
+### -field dwSurface
 
 <dd>
 <p>Specifies the handle to the managed 2D resource that contains a dirtied 2D texture.</p>
 </dd>
 
-### -field <b>rDirtyArea</b>
+### -field rDirtyArea
 
 <dd>
 <p>Specifies the 2D texture that was marked as dirtied. This is a <a href="display.rectl">RECTL</a> structure.</p>

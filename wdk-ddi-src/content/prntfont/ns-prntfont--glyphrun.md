@@ -56,13 +56,13 @@ typedef struct _GLYPHRUN {
 ## -struct-fields
 <dl>
 
-### -field <b>wcLow</b>
+### -field wcLow
 
 <dd>
 <p>Specifies a Unicode value representing the first glyph in the glyph run.</p>
 </dd>
 
-### -field <b>wGlyphCount</b>
+### -field wGlyphCount
 
 <dd>
 <p>Specifies the number of glyphs represented by the glyph run.</p>

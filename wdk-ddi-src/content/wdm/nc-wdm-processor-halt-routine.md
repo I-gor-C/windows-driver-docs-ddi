@@ -58,7 +58,7 @@ NTSTATUS Halt(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in, out, optional]
+### -param Context [in, out, optional]
 
 <dd>
 <p>A pointer to a PEP-defined processor-halt context. This pointer is the <i>Context</i> parameter value that the PEP previously passed to the <a href="kernel.processorhalt">ProcessorHalt</a> routine.</p>

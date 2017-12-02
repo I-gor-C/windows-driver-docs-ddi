@@ -55,7 +55,7 @@ VOID PcwCloseInstance(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>A pointer to the instance of the counter set to close. </p>

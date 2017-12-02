@@ -7,7 +7,7 @@ old-location: wdf\wdfdmatransactionsettransfercompletecallback.htm
 old-project: wdf
 ms.assetid: B97FF6B1-BFCB-4293-B2F0-EE08E12CFCFF
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDmaTransactionSetTransferCompleteCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ void WdfDmaTransactionSetTransferCompleteCallback(
 ## -parameters
 <dl>
 
-### -param <i>DmaTransaction</i> [in]
+### -param DmaTransaction [in]
 
 <dd>
 <p>A handle to an initialized DMA transaction object for which to set or clear the transfer completion callback.</p>
 </dd>
 
-### -param <i>DmaCompletionRoutine</i> [in, optional]
+### -param DmaCompletionRoutine [in, optional]
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdmatransaction\nc-wdfdmatransaction-evt-wdf-dma-transaction-dma-transfer-complete.md">EvtDmaTransactionDmaTransferComplete</a> event callback function, or NULL to clear a previously set callback function.</p>
 </dd>
 
-### -param <i>DmaCompletionContext</i> [in, optional]
+### -param DmaCompletionContext [in, optional]
 
 <dd>
 <p>A pointer to a buffer containing the driver-specified context to be provided to the driver's <a href="..\wdfdmatransaction\nc-wdfdmatransaction-evt-wdf-dma-transaction-dma-transfer-complete.md">EvtDmaTransactionDmaTransferComplete</a> event callback function, or NULL.</p>
@@ -169,4 +169,4 @@ void WdfDmaTransactionSetTransferCompleteCallback(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionSetTransferCompleteCallback method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionSetTransferCompleteCallback method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

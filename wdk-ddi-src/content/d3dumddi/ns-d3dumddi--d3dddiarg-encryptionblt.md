@@ -60,43 +60,43 @@ typedef struct _D3DDDIARG_ENCRYPTIONBLT {
 ## -struct-fields
 <dl>
 
-### -field <b>hCryptoSession</b>
+### -field hCryptoSession
 
 <dd>
 <p>[in] A handle to the encryption session. </p>
 </dd>
 
-### -field <b>hSrcResource</b>
+### -field hSrcResource
 
 <dd>
 <p>[in] A handle to the source resource.</p>
 </dd>
 
-### -field <b>SrcSubResourceIndex</b>
+### -field SrcSubResourceIndex
 
 <dd>
 <p>[in] The index to the source surface within the resource. </p>
 </dd>
 
-### -field <b>hDstResource</b>
+### -field hDstResource
 
 <dd>
 <p>[in] A handle to the destination resource. </p>
 </dd>
 
-### -field <b>DstSubResourceIndex</b>
+### -field DstSubResourceIndex
 
 <dd>
 <p>[in] The index to the destination surface within the resource. </p>
 </dd>
 
-### -field <b>DstResourceSize</b>
+### -field DstResourceSize
 
 <dd>
 <p>[in] The size, in bytes, of the destination resource. </p>
 </dd>
 
-### -field <b>pIV</b>
+### -field pIV
 
 <dd>
 <p>[out] A pointer to a block of memory in which <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-encryptionblt.md">EncryptionBlt</a> returns the initialization vector that is required to decrypt the bitblt data. If <b>pIV</b> is <b>NULL</b>, hardware does not require a separate key to decrypt the data that is read back. </p>

@@ -57,25 +57,25 @@ typedef struct _D3DKMT_ADAPTERREGISTRYINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>AdapterString</b>
+### -field AdapterString
 
 <dd>
 <p>[out] A string that contains the name of the graphics adapter.</p>
 </dd>
 
-### -field <b>BiosString</b>
+### -field BiosString
 
 <dd>
 <p>[out] A string that contains the name of the BIOS for the graphics adapter.</p>
 </dd>
 
-### -field <b>DacType</b>
+### -field DacType
 
 <dd>
 <p>[out] A string that contains the DAC type for the graphics adapter.</p>
 </dd>
 
-### -field <b>ChipType</b>
+### -field ChipType
 
 <dd>
 <p>[out] A string that contains the chip type for the graphics adapter.</p>

@@ -7,7 +7,7 @@ old-location: spb\spbrequestcaptureioothertransferlist.htm
 old-project: SPB
 ms.assetid: 7AC76E6F-1250-49EB-BEA1-3807C65AC2B7
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/30/2017
 ms.keywords: SpbRequestCaptureIoOtherTransferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ NTSTATUS SpbRequestCaptureIoOtherTransferList(
 ## -parameters
 <dl>
 
-### -param <i>SpbRequest</i> [in]
+### -param SpbRequest [in]
 
 <dd>
 <p>An <a href="buses.spbrequest_object_handle">SPBREQUEST</a> handle to the custom IOCTL request. The SPB controller driver previously received this handle through one of its registered <a href="https://msdn.microsoft.com/1DA1FF41-FB01-45CC-B0C1-EAF2C81D0CDA">event callback functions</a>.</p>
@@ -148,4 +148,4 @@ NTSTATUS SpbRequestCaptureIoOtherTransferList(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SpbRequestCaptureIoOtherTransferList method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SpbRequestCaptureIoOtherTransferList method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

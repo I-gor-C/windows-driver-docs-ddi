@@ -56,15 +56,15 @@ typedef struct _BDA_DISEQC_RESPONSE {
 ## -struct-fields
 <dl>
 
-### -field <b>ulRequestId</b>
+### -field ulRequestId
 
 <dd></dd>
 
-### -field <b>ulPacketLength</b>
+### -field ulPacketLength
 
 <dd></dd>
 
-### -field <b>argbPacketData</b>
+### -field argbPacketData
 
 <dd></dd>
 </dl>

@@ -55,7 +55,7 @@ typedef struct _DXVA_QmatrixData {
 ## -struct-fields
 <dl>
 
-### -field <b>bNewQmatrix</b>
+### -field bNewQmatrix
 
 <dd>
 <p>Indicates which new inverse-quantization matrices are present in an inverse-quantization matrix buffer. Each element in this array corresponds to an inverse-quantization matrix type and indicates whether a new inverse-quantization matrix of that type is present in the buffer. If any element in the <b>bNewQmatrix</b> array contains a value of 1, a new inverse-quantization matrix of the type specified for that array element follows in the inverse-quantization matrix buffer. The inverse-quantization matrices that can be used are as follows.</p>
@@ -114,7 +114,7 @@ typedef struct _DXVA_QmatrixData {
 </dl>
 </dd>
 
-### -field <b>Qmatrix</b>
+### -field Qmatrix
 
 <dd>
 <p>A two-dimensional array that specifies an inverse-quantization matrix buffer. This array is present only for each element in <b>bNewQmatrix</b> equal to 1. The matrix consists of (<b>bBlockWidthMinus1</b>+1) X (<b>bBlockHeightMinus1</b>+1) unsigned words (in which only the lower 8 bits of each word are used for the dominant video coding standards), where <b>bBlockWidthMinus1</b> and <b>bBlockHeightMinus1</b> are members of the <a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a> structure.</p>

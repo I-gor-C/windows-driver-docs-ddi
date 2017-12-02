@@ -57,19 +57,19 @@ VOID ScsiPortMoveMemory(
 ## -parameters
 <dl>
 
-### -param <i>WriteBuffer</i> [in]
+### -param WriteBuffer [in]
 
 <dd>
 <p>Pointer to the destination buffer.</p>
 </dd>
 
-### -param <i>ReadBuffer</i> [in]
+### -param ReadBuffer [in]
 
 <dd>
 <p>Pointer to the source buffer.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies how many bytes to transfer from <i>ReadBuffer</i> to <i>WriteBuffer</i>.</p>

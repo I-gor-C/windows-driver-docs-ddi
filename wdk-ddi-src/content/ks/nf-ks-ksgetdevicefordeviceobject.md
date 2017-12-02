@@ -54,7 +54,7 @@ PKSDEVICE KsGetDeviceForDeviceObject(
 ## -parameters
 <dl>
 
-### -param <i>FunctionalDeviceObject</i> [in]
+### -param FunctionalDeviceObject [in]
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> for which to return the corresponding <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> structure.</p>

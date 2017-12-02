@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTSetAllocationPriority(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setallocationpriority.md">D3DKMT_SETALLOCATIONPRIORITY</a> structure that contains information for setting the priority level of a resource or list of allocations.</p>

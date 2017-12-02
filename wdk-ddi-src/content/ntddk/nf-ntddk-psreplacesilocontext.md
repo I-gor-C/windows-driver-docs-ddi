@@ -57,25 +57,25 @@ NTSTATUS PsReplaceSiloContext(
 ## -parameters
 <dl>
 
-### -param <i>Silo</i> [in]
+### -param Silo [in]
 
 <dd>
 <p>A pointer to a silo.  This parameter is required and it cannot be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ContextSlot</i> [in]
+### -param ContextSlot [in]
 
 <dd>
 <p>A slot allocated by the <a href="..\ntddk\nf-ntddk-psallocsilocontextslot.md">PsAllocSiloContextSlot</a> routine. </p>
 </dd>
 
-### -param <i>NewSiloContext</i> [in]
+### -param NewSiloContext [in]
 
 <dd>
 <p>A pointer to the object created by the <a href="..\ntddk\nf-ntddk-pscreatesilocontext.md">PsCreateSiloContext</a> routine. The object must be created using the same silo pointer as the one specified in this routine. This parameter is required and it cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>OldSiloContext</i> [optional]
+### -param OldSiloContext [optional]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the address of the existing object. This parameter is optional and can be <b>NULL</b>. The address that the parameter receives can be <b>NULL</b>. </p>

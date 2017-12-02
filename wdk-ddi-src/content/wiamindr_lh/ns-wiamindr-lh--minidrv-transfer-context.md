@@ -7,7 +7,7 @@ old-location: image\minidrv_transfer_context.htm
 old-project: image
 ms.assetid: 26583873-4f84-4254-86c1-2063df85000c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: MINIDRV_TRANSFER_CONTEXT, MINIDRV_TRANSFER_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -81,165 +81,165 @@ typedef struct _MINIDRV_TRANSFER_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>lSize</b>
+### -field lSize
 
 <dd>
 <p>Specifies the size in bytes of this MINIDRV_TRANSFER_CONTEXT structure.</p>
 </dd>
 
-### -field <b>lWidthInPixels</b>
+### -field lWidthInPixels
 
 <dd>
 <p>Specifies the width in pixels of the current image. The value of this member is derived from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551615">WIA_IPA_PIXELS_PER_LINE</a> common item property.</p>
 </dd>
 
-### -field <b>lLines</b>
+### -field lLines
 
 <dd>
 <p>Specifies the total number of lines (the number of horizontal rows of pixels) in the current image. The value of this member is derived from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551611">WIA_IPA_NUMBER_OF_LINES</a> common item property.</p>
 </dd>
 
-### -field <b>lDepth</b>
+### -field lDepth
 
 <dd>
 <p>Specifies the color depth value of the current image in bits per pixel. The value of this member is derived from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551546">WIA_IPA_DEPTH</a> common item property.</p>
 </dd>
 
-### -field <b>lXRes</b>
+### -field lXRes
 
 <dd>
 <p>Specifies the current horizontal resolution of the image in pixels per inch. The value of this member is derived from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552665">WIA_IPS_XRES</a> scanner item property.</p>
 </dd>
 
-### -field <b>lYRes</b>
+### -field lYRes
 
 <dd>
 <p>Specifies the current vertical resolution of the image in pixels per inch. The value of this member is derived from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552673">WIA_IPS_YRES</a> scanner item property.</p>
 </dd>
 
-### -field <b>lCompression</b>
+### -field lCompression
 
 <dd>
 <p>Specifies the type of compression used by the device. The value of this member is derived from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551540">WIA_IPA_COMPRESSION</a> common item property.</p>
 </dd>
 
-### -field <b>guidFormatID</b>
+### -field guidFormatID
 
 <dd>
 <p>Specifies a GUID that indicates the data format for the device. The value of this member is derived from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551553">WIA_IPA_FORMAT</a> common item property.</p>
 </dd>
 
-### -field <b>tymed</b>
+### -field tymed
 
 <dd>
 <p>Specifies the type of data transfer. The data transfer specified can be either a memory-callback transfer (TYMED_CALLBACK or TYMED_MULTIPAGE_CALLBACK) or file transfer (TYMED_FILE or TYMED_MULTIPAGE_FILE). The value of this member is derived from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551656">WIA_IPA_TYMED</a> common item property. </p>
 <p>This member conveys information related to that in the <b>bTransferDataCB</b> member. See <b>Remarks</b> for more information.</p>
 </dd>
 
-### -field <b>hFile</b>
+### -field hFile
 
 <dd>
 <p>Specifies the handle to the open file used during file transfers. The minidriver should not use this member. See <b>Remarks</b> for more information.</p>
 </dd>
 
-### -field <b>cbOffset</b>
+### -field cbOffset
 
 <dd>
 <p>Specifies the current offset in bytes of the next buffer location used during this transfer.</p>
 </dd>
 
-### -field <b>lBufferSize</b>
+### -field lBufferSize
 
 <dd>
 <p>Specifies the total size of the transfer buffer.</p>
 </dd>
 
-### -field <b>lActiveBuffer</b>
+### -field lActiveBuffer
 
 <dd>
 <p>Specifies which buffer is used for the current transfer. The value of this member must be in the range of 1 through <b>lNumBuffers</b>.</p>
 </dd>
 
-### -field <b>lNumBuffers</b>
+### -field lNumBuffers
 
 <dd>
 <p>Specifies the number of buffers available for data transfer. This value can currently be either 1 or 2.</p>
 </dd>
 
-### -field <b>pBaseBuffer</b>
+### -field pBaseBuffer
 
 <dd>
 <p>Points to the start of the base transfer buffer.</p>
 </dd>
 
-### -field <b>pTransferBuffer</b>
+### -field pTransferBuffer
 
 <dd>
 <p>Points to the start of the current transfer buffer. For a callback transfer in which double buffering is used, this member alternates between the two buffers, pointing to the beginning of the first buffer, and then to the beginning of the second, and so on.</p>
 </dd>
 
-### -field <b>bTransferDataCB</b>
+### -field bTransferDataCB
 
 <dd>
-<p>Specifies whether a data transfer is a memory-callback transfer or a file transfer. This member is set to <b>TRUE</b> if the transfer is a memory-callback transfer, and <b>FALSE</b> if the transfer is a file transfer. For file transfers, the WIA service usually provides a callback routine, which enables the application to receive updates from the minidriver about the status of the file transfer. (The WIA service provides a callback routine if the application provides its own callback routine. See <a href="NULL">IWiaMiniDrvCallback COM Interface</a> for details.) For file transfers, a minidriver should check the value stored in the <b>pIWiaMiniDrvCallBack</b> member. If that member is <b>NULL</b>, the WIA service does not provide a callback routine, so the driver must not attempt to call it. For memory-callback transfers, the WIA service always provides a callback.</p>
+<p>Specifies whether a data transfer is a memory-callback transfer or a file transfer. This member is set to <b>TRUE</b> if the transfer is a memory-callback transfer, and <b>FALSE</b> if the transfer is a file transfer. For file transfers, the WIA service usually provides a callback routine, which enables the application to receive updates from the minidriver about the status of the file transfer. (The WIA service provides a callback routine if the application provides its own callback routine. See <a href="https://msdn.microsoft.com/a535d718-e34f-4cd0-9137-83d28d0b8e9c">IWiaMiniDrvCallback COM Interface</a> for details.) For file transfers, a minidriver should check the value stored in the <b>pIWiaMiniDrvCallBack</b> member. If that member is <b>NULL</b>, the WIA service does not provide a callback routine, so the driver must not attempt to call it. For memory-callback transfers, the WIA service always provides a callback.</p>
 <p>This member conveys information related to that in the <b>tymed</b> member. See <b>Remarks</b> for more information.</p>
 </dd>
 
-### -field <b>bClassDrvAllocBuf</b>
+### -field bClassDrvAllocBuf
 
 <dd>
 <p>Specifies whether the WIA service has allocated the transfer buffer. This value is <b>TRUE</b> if the WIA service allocated the buffer, and <b>FALSE</b> if not. In that case, it is the minidriver's responsibility to allocate the transfer buffer.</p>
 </dd>
 
-### -field <b>lClientAddress</b>
+### -field lClientAddress
 
 <dd>
 <p>Specifies the address, in the client's address space, of the transfer. The minidriver must not change this value.</p>
 </dd>
 
-### -field <b>pIWiaMiniDrvCallBack</b>
+### -field pIWiaMiniDrvCallBack
 
 <dd>
 <p>Points to an <a href="image.iwiaminidrvcallback_interface">IWiaMiniDrvCallBack Interface</a> used for data or status callback transfer.</p>
 </dd>
 
-### -field <b>lImageSize</b>
+### -field lImageSize
 
 <dd>
 <p>Specifies the size, in bytes, of uncompressed bits in a single page.</p>
 </dd>
 
-### -field <b>lHeaderSize</b>
+### -field lHeaderSize
 
 <dd>
 <p>Specifies the size, in bytes, of image header data in a single page.</p>
 </dd>
 
-### -field <b>lItemSize</b>
+### -field lItemSize
 
 <dd>
 <p>Specifies the size, in bytes, of bits and header. This value can be zero if the item size is unknown before acquisition.</p>
 </dd>
 
-### -field <b>cbWidthInBytes</b>
+### -field cbWidthInBytes
 
 <dd>
 <p>Specifies the size, in bytes, of an image line.</p>
 </dd>
 
-### -field <b>lPage</b>
+### -field lPage
 
 <dd>
 <p>Specifies the page number of the current page when scanning a multipage TIFF image. Page numbering begins with zero.</p>
 </dd>
 
-### -field <b>lCurIfdOffset</b>
+### -field lCurIfdOffset
 
 <dd>
 <p>Specifies the image file directory (IFD) offset in the current page of a multipage TIFF image.</p>
 </dd>
 
-### -field <b>lPrevIfdOffset</b>
+### -field lPrevIfdOffset
 
 <dd>
 <p>Specifies the image file directory (IFD) offset in the previous page of a multipage TIFF image.</p>
@@ -390,4 +390,4 @@ typedef struct _MINIDRV_TRANSFER_CONTEXT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20MINIDRV_TRANSFER_CONTEXT structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20MINIDRV_TRANSFER_CONTEXT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

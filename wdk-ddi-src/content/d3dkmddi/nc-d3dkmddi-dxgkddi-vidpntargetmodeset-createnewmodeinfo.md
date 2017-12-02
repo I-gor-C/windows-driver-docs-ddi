@@ -58,13 +58,13 @@ NTSTATUS APIENTRY pfnCreateNewModeInfo(
 ## -parameters
 <dl>
 
-### -param <i>hVidPnTargetModeSet</i> [in]
+### -param hVidPnTargetModeSet [in]
 
 <dd>
 <p>[in] A handle to a VidPN target mode set object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-acquiretargetmodeset.md">pfnAcquireTargetModeSet</a> function of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpn-interface.md">DXGK_VIDPN_INTERFACE</a> interface.</p>
 </dd>
 
-### -param <i>ppNewVidPnTargetModeInfo</i> [out]
+### -param ppNewVidPnTargetModeInfo [out]
 
 <dd>
 <p>[out] A pointer to a variable that receives a pointer to a D3DKMDT_VIDPN_TARGET_MODE structure allocated by the VidPN manager.</p>

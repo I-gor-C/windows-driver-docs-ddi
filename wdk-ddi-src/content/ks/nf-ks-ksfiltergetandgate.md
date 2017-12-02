@@ -54,7 +54,7 @@ PKSGATE KsFilterGetAndGate(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure for which to acquire the corresponding AND gate.</p>

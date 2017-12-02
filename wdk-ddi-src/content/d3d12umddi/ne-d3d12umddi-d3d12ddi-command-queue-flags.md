@@ -60,43 +60,43 @@ typedef enum D3D12DDI_COMMAND_QUEUE_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_COMMAND_QUEUE_FLAG_NONE"></a><a id="d3d12ddi_command_queue_flag_none"></a><b>D3D12DDI_COMMAND_QUEUE_FLAG_NONE</b>
+### -field D3D12DDI_COMMAND_QUEUE_FLAG_NONE
 
 <dd>
 <p>No flags.</p>
 </dd>
 
-### -field <a id="D3D12DDI_COMMAND_QUEUE_FLAG_3D"></a><a id="d3d12ddi_command_queue_flag_3d"></a><b>D3D12DDI_COMMAND_QUEUE_FLAG_3D</b>
+### -field D3D12DDI_COMMAND_QUEUE_FLAG_3D
 
 <dd>
 <p>3D.</p>
 </dd>
 
-### -field <a id="D3D12DDI_COMMAND_QUEUE_FLAG_COMPUTE"></a><a id="d3d12ddi_command_queue_flag_compute"></a><b>D3D12DDI_COMMAND_QUEUE_FLAG_COMPUTE</b>
+### -field D3D12DDI_COMMAND_QUEUE_FLAG_COMPUTE
 
 <dd>
 <p>Compute.</p>
 </dd>
 
-### -field <a id="D3D12DDI_COMMAND_QUEUE_FLAG_COPY"></a><a id="d3d12ddi_command_queue_flag_copy"></a><b>D3D12DDI_COMMAND_QUEUE_FLAG_COPY</b>
+### -field D3D12DDI_COMMAND_QUEUE_FLAG_COPY
 
 <dd>
 <p>Copy.</p>
 </dd>
 
-### -field <a id="D3D12DDI_COMMAND_QUEUE_FLAG_PAGING"></a><a id="d3d12ddi_command_queue_flag_paging"></a><b>D3D12DDI_COMMAND_QUEUE_FLAG_PAGING</b>
+### -field D3D12DDI_COMMAND_QUEUE_FLAG_PAGING
 
 <dd>
 <p>Paging.</p>
 </dd>
 
-### -field <a id="D3D12DDI_COMMAND_QUEUE_FLAG_0022_VIDEO_DECODE"></a><a id="d3d12ddi_command_queue_flag_0022_video_decode"></a><b>D3D12DDI_COMMAND_QUEUE_FLAG_0022_VIDEO_DECODE</b>
+### -field D3D12DDI_COMMAND_QUEUE_FLAG_0022_VIDEO_DECODE
 
 <dd>
 <p>Decode video.</p>
 </dd>
 
-### -field <a id="D3D12DDI_COMMAND_QUEUE_FLAG_0022_VIDEO_PROCESS"></a><a id="d3d12ddi_command_queue_flag_0022_video_process"></a><b>D3D12DDI_COMMAND_QUEUE_FLAG_0022_VIDEO_PROCESS</b>
+### -field D3D12DDI_COMMAND_QUEUE_FLAG_0022_VIDEO_PROCESS
 
 <dd>
 <p>Process video.</p>

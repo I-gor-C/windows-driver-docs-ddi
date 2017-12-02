@@ -54,7 +54,7 @@ NTSTATUS BdaUninitFilter(
 ## -parameters
 <dl>
 
-### -param <i>pKSFilter</i> [in]
+### -param pKSFilter [in]
 
 <dd>
 <p>Points to the filter from which to remove the BDA filter context.</p>

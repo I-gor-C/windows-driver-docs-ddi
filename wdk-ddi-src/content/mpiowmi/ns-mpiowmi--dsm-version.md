@@ -57,25 +57,25 @@ typedef struct _DSM_VERSION {
 ## -struct-fields
 <dl>
 
-### -field <b>MajorVersion</b>
+### -field MajorVersion
 
 <dd>
 <p>An unsigned 32-bitfield that represents the major version portion of the version.</p>
 </dd>
 
-### -field <b>MinorVersion</b>
+### -field MinorVersion
 
 <dd>
 <p>An unsigned 32-bitfield that represents the minor version portion of the version.</p>
 </dd>
 
-### -field <b>ProductBuild</b>
+### -field ProductBuild
 
 <dd>
 <p>An unsigned 32-bitfield that represents the product build portion of the version.</p>
 </dd>
 
-### -field <b>QfeNumber</b>
+### -field QfeNumber
 
 <dd>
 <p>An unsigned 32-bitfield that represents the QFE number portion of the version.</p>

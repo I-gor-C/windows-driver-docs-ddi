@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Framing</b>
+### -field Framing
 
 <dd>
 <p>A <a href="stream.ksallocator_framing">KSALLOCATOR_FRAMING</a> structure that contains the framing specified when the allocator was created.</p>
 </dd>
 
-### -field <b>AllocatedFrames</b>
+### -field AllocatedFrames
 
 <dd>
 <p>Contains the current number of allocated frames. This value changes on an extremely frequent basis.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved and set to zero.</p>

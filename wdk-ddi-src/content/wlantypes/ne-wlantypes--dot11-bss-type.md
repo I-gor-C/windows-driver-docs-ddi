@@ -7,7 +7,7 @@ old-location: netvista\dot11_bss_type.htm
 old-project: netvista
 ms.assetid: 5cb263e2-e5b7-456f-9fef-deaf5434c404
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11EXT_IHV_SSID_LIST,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef enum _DOT11_BSS_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="dot11_BSS_type_infrastructure"></a><a id="dot11_bss_type_infrastructure"></a><a id="DOT11_BSS_TYPE_INFRASTRUCTURE"></a><b>dot11_BSS_type_infrastructure</b>
+### -field dot11_BSS_type_infrastructure
 
 <dd>
 <p>Specifies an infrastructure BSS network.</p>
 </dd>
 
-### -field <a id="dot11_BSS_type_independent"></a><a id="dot11_bss_type_independent"></a><a id="DOT11_BSS_TYPE_INDEPENDENT"></a><b>dot11_BSS_type_independent</b>
+### -field dot11_BSS_type_independent
 
 <dd>
 <p>Specifies an independent BSS (IBSS) network.</p>
 </dd>
 
-### -field <a id="dot11_BSS_type_any"></a><a id="dot11_bss_type_any"></a><a id="DOT11_BSS_TYPE_ANY"></a><b>dot11_BSS_type_any</b>
+### -field dot11_BSS_type_any
 
 <dd>
 <p>Specifies either infrastructure or IBSS network.</p>
@@ -128,4 +128,4 @@ typedef enum _DOT11_BSS_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

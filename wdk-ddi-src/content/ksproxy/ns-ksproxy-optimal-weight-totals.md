@@ -56,15 +56,15 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>MinTotalNominator</b>
+### -field MinTotalNominator
 
 <dd></dd>
 
-### -field <b>MaxTotalNominator</b>
+### -field MaxTotalNominator
 
 <dd></dd>
 
-### -field <b>TotalDenominator</b>
+### -field TotalDenominator
 
 <dd></dd>
 </dl>

@@ -55,7 +55,7 @@ VOID ExDeleteNPagedLookasideList(
 ## -parameters
 <dl>
 
-### -param <i>Lookaside</i> [in, out]
+### -param Lookaside [in, out]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556431">NPAGED_LOOKASIDE_LIST</a> structure for the lookaside list, which the caller originally set up with <a href="..\wdm\nf-wdm-exinitializenpagedlookasidelist.md">ExInitializeNPagedLookasideList</a>. </p>

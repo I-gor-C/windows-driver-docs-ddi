@@ -55,13 +55,13 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_ROITYPE_UNKNOWN"></a><a id="kscamera_extendedprop_roitype_unknown"></a><b>KSCAMERA_EXTENDEDPROP_ROITYPE_UNKNOWN</b>
+### -field KSCAMERA_EXTENDEDPROP_ROITYPE_UNKNOWN
 
 <dd>
 <p>The ROI type is unknown.</p>
 </dd>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_ROITYPE_FACE"></a><a id="kscamera_extendedprop_roitype_face"></a><b>KSCAMERA_EXTENDEDPROP_ROITYPE_FACE</b>
+### -field KSCAMERA_EXTENDEDPROP_ROITYPE_FACE
 
 <dd>
 <p>The ROI type is face.</p>

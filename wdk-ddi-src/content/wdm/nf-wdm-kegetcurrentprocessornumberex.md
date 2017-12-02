@@ -55,7 +55,7 @@ ULONG KeGetCurrentProcessorNumberEx(
 ## -parameters
 <dl>
 
-### -param <i>ProcNumber</i> [out, optional]
+### -param ProcNumber [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer into which the routine writes a <a href="..\miniport\ns-miniport--processor-number.md">PROCESSOR_NUMBER</a> structure that identifies the current logical processor. This structure contains the group number and the group-relative processor number. You can set this parameter to <b>NULL</b> if you do not need this information. </p>

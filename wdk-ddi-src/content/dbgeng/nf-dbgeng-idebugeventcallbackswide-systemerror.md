@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbackswide_systemerror.htm
 old-project: debugger
 ms.assetid: 938eacb5-7939-43ed-a854-046708fc9c79
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugEventCallbacksWide, SystemError, IDebugEventCallbacksWide::SystemError
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ HRESULT SystemError(
 ## -parameters
 <dl>
 
-### -param <i>Error</i> [in]
+### -param Error [in]
 
 <dd>
 <p>Specifies the error that caused the event.</p>
 </dd>
 
-### -param <i>Level</i> [in]
+### -param Level [in]
 
 <dd>
 <p>Specifies the severity of the error.</p>
@@ -69,7 +69,7 @@ HRESULT SystemError(
 </dl>
 
 ## -returns
-<p>This method returns a <a href="debugger.debug_status_xxx">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
+<p>This method returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541651">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
 
 ## -remarks
 <p>This method is only called by the engine if the DEBUG_EVENT_SYSTEM_ERROR flag is set in the mask returned by <a href="debugger.idebugeventcallbackswide_getinterestmask">IDebugEventCallbacksWide::GetInterestMask</a>.</p>

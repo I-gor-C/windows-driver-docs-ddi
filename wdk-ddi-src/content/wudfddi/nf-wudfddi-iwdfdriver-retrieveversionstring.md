@@ -7,7 +7,7 @@ old-location: wdf\iwdfdriver_retrieveversionstring.htm
 old-project: wdf
 ms.assetid: 2fa320df-bafd-42f4-a0a1-14151c39d68a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFDriver, RetrieveVersionString, IWDFDriver::RetrieveVersionString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ HRESULT RetrieveVersionString(
 ## -parameters
 <dl>
 
-### -param <i>pVersion</i> [out]
+### -param pVersion [out]
 
 <dd>
 <p>A pointer to a buffer that receives a <b>NULL</b>-terminated string that represents the version of the framework if the supplied buffer is non-<b>NULL</b> and <b>RetrieveVersionString</b> is successful. </p>
 </dd>
 
-### -param <i>pdwVersionLength</i> [in, out]
+### -param pdwVersionLength [in, out]
 
 <dd>
 <p>A pointer to a variable that receives the size, in characters, of the version string that <i>pVersion</i> points to. On input, this variable contains the size, in bytes, of the buffer at <i>pVersion</i>.</p>

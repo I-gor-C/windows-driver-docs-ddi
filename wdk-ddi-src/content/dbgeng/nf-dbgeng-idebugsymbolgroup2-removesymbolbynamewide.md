@@ -7,7 +7,7 @@ old-location: debugger\removesymbolbynamewide.htm
 old-project: debugger
 ms.assetid: 12261b88-681e-4623-b5af-abaae756e3e1
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSymbolGroup2, RemoveSymbolByNameWide, IDebugSymbolGroup2::RemoveSymbolByNameWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT RemoveSymbolByNameWide(
 ## -parameters
 <dl>
 
-### -param <i>Name</i> [in]
+### -param Name [in]
 
 <dd>
 <p>The name of the symbol to remove from the symbol group.</p>
@@ -68,7 +68,7 @@ HRESULT RemoveSymbolByNameWide(
 
 <p> </p>
 
-<p>This method can also return error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
+<p>This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.</p>
 
 ## -remarks
 <p>When a symbol is removed, the indexes of the symbols that remain in the symbol group might change.</p>
@@ -116,4 +116,4 @@ HRESULT RemoveSymbolByNameWide(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbolGroup2::RemoveSymbolByNameWide method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbolGroup2::RemoveSymbolByNameWide method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

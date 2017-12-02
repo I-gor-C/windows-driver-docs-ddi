@@ -60,43 +60,43 @@ typedef struct _D3DKMT_QUERYRESOURCEINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the device that the resource and allocations are associated with.</p>
 </dd>
 
-### -field <b>hGlobalShare</b>
+### -field hGlobalShare
 
 <dd>
 <p>[in] A handle to the shared resource to open.</p>
 </dd>
 
-### -field <b>pPrivateRuntimeData</b>
+### -field pPrivateRuntimeData
 
 <dd>
 <p>[in] If non-<b>NULL</b>, a pointer to a buffer that receives the runtime-private data that is supplied at create time. The OpenGL ICD should first call the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryresourceinfo.md">D3DKMTQueryResourceInfo</a> function with <b>pPrivateRuntimeData</b> set to <b>NULL</b> to obtain the buffer size and then call again with the correct size buffer. </p>
 </dd>
 
-### -field <b>PrivateRuntimeDataSize</b>
+### -field PrivateRuntimeDataSize
 
 <dd>
 <p>[in/out] The size, in bytes, of the buffer that <b>pPrivateRuntimeData</b> points to. If <b>pPrivateRuntimeData</b> is <b>NULL</b>, <b>PrivateRuntimeDataSize</b> is set to the size, in bytes, that is required for the buffer to store the runtime-private data.</p>
 </dd>
 
-### -field <b>TotalPrivateDriverDataSize</b>
+### -field TotalPrivateDriverDataSize
 
 <dd>
 <p>[out] The size, in bytes, of the buffer that is required to hold the private driver data for all of the allocations that are associated with the resource.</p>
 </dd>
 
-### -field <b>ResourcePrivateDriverDataSize</b>
+### -field ResourcePrivateDriverDataSize
 
 <dd>
 <p>[out] The size, in bytes, of the buffer that is required to hold the private driver data for the resource.</p>
 </dd>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[out] The number of allocations that are associated with the resource.</p>

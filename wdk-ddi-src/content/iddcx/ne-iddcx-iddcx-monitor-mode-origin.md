@@ -58,7 +58,7 @@ typedef enum _IDDCX_MONITOR_MODE_ORIGIN {
 ## -enum-fields
 <dl>
 
-### -field <a id="IDDCX_MONITOR_MODE_ORIGIN_UNINITIALIZED"></a><a id="iddcx_monitor_mode_origin_uninitialized"></a><b>IDDCX_MONITOR_MODE_ORIGIN_UNINITIALIZED</b>
+### -field IDDCX_MONITOR_MODE_ORIGIN_UNINITIALIZED
 
 <dd>
 <p>
@@ -66,7 +66,7 @@ typedef enum _IDDCX_MONITOR_MODE_ORIGIN {
                     Indicates that an <b>IDDCX_MONITOR_MODE_ORIGIN</b> variable has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="IDDCX_MONITOR_MODE_ORIGIN_MONITORDESCRIPTOR"></a><a id="iddcx_monitor_mode_origin_monitordescriptor"></a><b>IDDCX_MONITOR_MODE_ORIGIN_MONITORDESCRIPTOR</b>
+### -field IDDCX_MONITOR_MODE_ORIGIN_MONITORDESCRIPTOR
 
 <dd>
 <p>
@@ -74,7 +74,7 @@ typedef enum _IDDCX_MONITOR_MODE_ORIGIN {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_MONITOR_MODE_ORIGIN_DRIVER"></a><a id="iddcx_monitor_mode_origin_driver"></a><b>IDDCX_MONITOR_MODE_ORIGIN_DRIVER</b>
+### -field IDDCX_MONITOR_MODE_ORIGIN_DRIVER
 
 <dd>
 <p>

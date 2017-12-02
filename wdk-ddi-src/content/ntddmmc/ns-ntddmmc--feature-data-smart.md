@@ -57,25 +57,25 @@ typedef struct _FEATURE_DATA_SMART {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.</p>
 </dd>
 
-### -field <b>FaultFailureReportingPagePresent</b>
+### -field FaultFailureReportingPagePresent
 
 <dd>
 <p>Indicates, when set to 1, that the device supports the Fault / Failure Reporting Mode. If set to zero, the device does not support this mode. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved02</b>
+### -field Reserved02
 
 <dd>
 <p>Reserved.</p>

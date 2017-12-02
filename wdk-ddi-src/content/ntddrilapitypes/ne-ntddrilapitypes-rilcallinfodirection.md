@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfodirection.htm
 old-project: netvista
 ms.assetid: 2243fb04-81a9-49d6-9ce2-d06d4a590fb1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILCALLINFODIRECTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLDIR_OUTGOING"></a><a id="ril_calldir_outgoing"></a><b>RIL_CALLDIR_OUTGOING</b>
+### -field RIL_CALLDIR_OUTGOING
 
 <dd></dd>
 
-### -field <a id="RIL_CALLDIR_MAX"></a><a id="ril_calldir_max"></a><b>RIL_CALLDIR_MAX</b>
+### -field RIL_CALLDIR_MAX
 
 <dd></dd>
 </dl>

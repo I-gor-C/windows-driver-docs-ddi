@@ -56,19 +56,19 @@ NTSTATUS BdaPropertyGetControllingPinId(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Points to the IRP for the request to retrieve the controlling pin for a node. The BDA minidriver receives this IRP with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564303">KSPROPERTY_BDA_CONTROLLING_PIN_ID</a> request.</p>
 </dd>
 
-### -param <i>pProperty</i> [in]
+### -param pProperty [in]
 
 <dd>
 <p>Points to a <a href="..\bdamedia\ns-bdamedia--ksp-bda-node-pin.md">KSP_BDA_NODE_PIN</a> structure that describes the property and request type of the property request to retrieve the controlling pin for a node. </p>
 </dd>
 
-### -param <i>pulControllingPinId</i> [out, optional]
+### -param pulControllingPinId [out, optional]
 
 <dd>
 <p>Points to a variable that receives the identifier of the controlling pin for a node. </p>

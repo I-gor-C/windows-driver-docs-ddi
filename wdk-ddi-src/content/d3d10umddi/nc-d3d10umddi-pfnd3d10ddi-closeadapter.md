@@ -57,7 +57,7 @@ HRESULT APIENTRY CloseAdapter(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p> A handle to the graphics adapter object that was created with the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-openadapter.md">OpenAdapter10</a> function.</p>

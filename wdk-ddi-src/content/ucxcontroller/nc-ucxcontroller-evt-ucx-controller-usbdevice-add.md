@@ -62,19 +62,19 @@ typedef EVT_UCX_CONTROLLER_USBDEVICE_ADD PEVT_UCX_CONTROLLER_USBDEVICE_ADD;
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>UcxUsbDeviceInfo</i> [in]
+### -param UcxUsbDeviceInfo [in]
 
 <dd>
-<p>Pointer to a <a href="buses._ucxusbdevice_info">UCXUSBDEVICE_INFO</a> structure.</p>
+<p>Pointer to a <a href="..\ucxcontroller\ns-ucxcontroller--ucxusbdevice-info.md">UCXUSBDEVICE_INFO</a> structure.</p>
 </dd>
 
-### -param <i>UsbDeviceInit</i> [in]
+### -param UsbDeviceInit [in]
 
 <dd>
 <p>Pointer to an opaque structure containing initialization
@@ -91,7 +91,7 @@ typedef EVT_UCX_CONTROLLER_USBDEVICE_ADD PEVT_UCX_CONTROLLER_USBDEVICE_ADD;
 
 <p>This callback function creates a new USB device object and registers the
     USB device object callback functions by calling
-    <a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a>.  The function may need to allocate the common buffer that will be
+    <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a>.  The function may need to allocate the common buffer that will be
     used as the device context.</p>
 
 ## -requirements

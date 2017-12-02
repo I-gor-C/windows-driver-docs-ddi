@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnLockCb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-lock.md">D3DDDICB_LOCK</a> structure that describes the allocation to lock.</p>

@@ -58,31 +58,31 @@ typedef struct _PEP_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The current version number for this structure. Set this member to PEP_INFORMATION_VERSION.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. Set this member to <b>sizeof</b>(<b>PEP_INFORMATION</b>).</p>
 </dd>
 
-### -field <b>AcceptDeviceNotification</b>
+### -field AcceptDeviceNotification
 
 <dd>
 <p>A pointer to an <a href="kernel.acceptdevicenotification">AcceptDeviceNotification</a> callback routine. This member is required to point to a valid callback routine.</p>
 </dd>
 
-### -field <b>AcceptProcessorNotification</b>
+### -field AcceptProcessorNotification
 
 <dd>
 <p>A pointer to an <a href="kernel.acceptprocessornotification">AcceptProcessorNotification</a> callback routine. This member is optional and can be NULL if the PEP is not prepared to handle PPM notifications from PoFx.</p>
 </dd>
 
-### -field <b>AcceptAcpiNotification</b>
+### -field AcceptAcpiNotification
 
 <dd>
 <p>A pointer to an <a href="kernel.acceptacpinotification">AcceptAcpiNotification</a> callback routine. This member is optional and can be NULL if the PEP is not prepared to handle ACPI notifications from PoFx.</p>

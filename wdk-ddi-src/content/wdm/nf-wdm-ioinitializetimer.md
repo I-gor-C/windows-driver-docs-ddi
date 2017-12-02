@@ -57,19 +57,19 @@ NTSTATUS IoInitializeTimer(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to a device object representing a device on which I/O operations can time out.</p>
 </dd>
 
-### -param <i>TimerRoutine</i> [in]
+### -param TimerRoutine [in]
 
 <dd>
 <p>Pointer to the driver-supplied <i>IoTimer</i> routine. </p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Pointer to the driver-determined context with which its <i>IoTimer</i> routine will be called. </p>
@@ -82,7 +82,7 @@ NTSTATUS IoInitializeTimer(
 ## -remarks
 <p><b>IoInitializeTimer</b> should be called only once per device object.</p>
 
-<p>A driver's <a href="..\wdm\nc-wdm-io-timer-routine.md">IoTimer</a> routine is called once per second after the driver enables the timer by calling <a href="..\ntifs\nf-ntifs-iostarttimer.md">IoStartTimer</a>. The driver can disable the timer by calling <a href="..\ntifs\nf-ntifs-iostoptimer.md">IoStopTimer</a> and can reenable it again with <b>IoStartTimer</b>.</p>
+<p>A driver's <a href="..\wdm\nc-wdm-io-timer-routine.md">IoTimer</a> routine is called once per second after the driver enables the timer by calling <a href="..\wdm\nf-wdm-iostarttimer.md">IoStartTimer</a>. The driver can disable the timer by calling <a href="..\wdm\nf-wdm-iostoptimer.md">IoStopTimer</a> and can reenable it again with <b>IoStartTimer</b>.</p>
 
 <p>The driver's <i>IoTimer</i> routine is called at IRQL = DISPATCH_LEVEL and therefore must not contain pageable code.</p>
 
@@ -162,10 +162,10 @@ NTSTATUS IoInitializeTimer(
 <a href="..\wdm\nc-wdm-io-timer-routine.md">IoTimer</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iostarttimer.md">IoStartTimer</a>
+<a href="..\wdm\nf-wdm-iostarttimer.md">IoStartTimer</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iostoptimer.md">IoStopTimer</a>
+<a href="..\wdm\nf-wdm-iostoptimer.md">IoStopTimer</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>

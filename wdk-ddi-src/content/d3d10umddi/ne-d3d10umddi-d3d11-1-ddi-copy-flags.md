@@ -56,19 +56,19 @@ typedef enum D3D11_1_DDI_COPY_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_COPY_NO_OVERWRITE"></a><a id="d3d11_1ddi_copy_no_overwrite"></a><b>D3D11_1DDI_COPY_NO_OVERWRITE</b>
+### -field D3D11_1DDI_COPY_NO_OVERWRITE
 
 <dd>
 <p>The caller guarantees that the portion of the surface that is being written to with new data is not currently being referenced or accessed by any previous render operation. The driver can take advantage of this capability to optimize performance and memory usage.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_COPY_DISCARD"></a><a id="d3d11_1ddi_copy_discard"></a><b>D3D11_1DDI_COPY_DISCARD</b>
+### -field D3D11_1DDI_COPY_DISCARD
 
 <dd>
 <p>The user-mode display driver can discard previous contents of the entire resource. The driver can take advantage of this capability to optimize performance and memory usage.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_COPY_TILEABLE"></a><a id="d3d11_1ddi_copy_tileable"></a><b>D3D11_1DDI_COPY_TILEABLE</b>
+### -field D3D11_1DDI_COPY_TILEABLE
 
 <dd>
 <p>For tile-based deferred rendering, a copy operation can operate on only the currently processed tile in the source or destination resource, and the scene does not have to be flushed in all tiles.</p>

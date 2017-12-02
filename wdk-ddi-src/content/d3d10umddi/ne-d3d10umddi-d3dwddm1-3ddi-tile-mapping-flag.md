@@ -55,7 +55,7 @@ enum D3DWDDM1_3DDI_TILE_MAPPING_FLAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DWDDM1_3DDI_TILE_MAPPING_NO_OVERWRITE"></a><a id="d3dwddm1_3ddi_tile_mapping_no_overwrite"></a><b>D3DWDDM1_3DDI_TILE_MAPPING_NO_OVERWRITE</b>
+### -field D3DWDDM1_3DDI_TILE_MAPPING_NO_OVERWRITE
 
 <dd>
 <p>Previously submitted commands to the 

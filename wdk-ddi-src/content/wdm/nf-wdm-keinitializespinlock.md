@@ -55,7 +55,7 @@ VOID KeInitializeSpinLock(
 ## -parameters
 <dl>
 
-### -param <i>SpinLock</i> [out]
+### -param SpinLock [out]
 
 <dd>
 <p>Pointer to a spin lock, for which the caller must provide the storage.</p>

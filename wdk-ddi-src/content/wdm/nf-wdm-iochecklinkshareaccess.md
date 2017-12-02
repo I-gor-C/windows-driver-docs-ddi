@@ -60,13 +60,13 @@ NTSTATUS IoCheckLinkShareAccess(
 ## -parameters
 <dl>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that indicates the desired type of access to the given file object.</p>
 </dd>
 
-### -param <i>DesiredShareAccess</i> [in]
+### -param DesiredShareAccess [in]
 
 <dd>
 <p>Specifies the desired type of shared access to the file object for the current open request. The value of this parameter is usually the same as the <i>ShareAccess</i> parameter that is passed to the file system or highest-level driver by the I/O manager when the open request was made. This value can be zero, or any combination of the following:</p>
@@ -83,25 +83,25 @@ NTSTATUS IoCheckLinkShareAccess(
 </dl>
 </dd>
 
-### -param <i>FileObject</i> [in, out]
+### -param FileObject [in, out]
 
 <dd>
 <p>A pointer to the file object for which to check access for the current open request.</p>
 </dd>
 
-### -param <i>ShareAccess</i> [in, out]
+### -param ShareAccess [in, out]
 
 <dd>
 <p>A pointer to the common share-access data structure that is associated with <i>FileObject</i>. Drivers should treat this structure as opaque.</p>
 </dd>
 
-### -param <i>LinkShareAccess</i> [in, out, optional]
+### -param LinkShareAccess [in, out, optional]
 
 <dd>
 <p>A pointer to the common link share-access data structure (<a href="..\wdm\ns-wdm--link-share-access.md">LINK_SHARE_ACCESS</a>) that is associated with <i>FileObject</i>. Drivers should treat this structure as opaque.</p>
 </dd>
 
-### -param <i>IoShareAccessFlags</i> [in]
+### -param IoShareAccessFlags [in]
 
 <dd>
 <p>A bitmask of these flags:</p>

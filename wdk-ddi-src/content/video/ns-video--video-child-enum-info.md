@@ -59,32 +59,32 @@ typedef struct _VIDEO_CHILD_ENUM_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size in bytes of this structure.</p>
 </dd>
 
-### -field <b>ChildDescriptorSize</b>
+### -field ChildDescriptorSize
 
 <dd>
 <p>The size in bytes of the buffer to which <i>pChildDescriptor</i> points. The video port driver allocates this buffer to be large enough to accommodate a DDC2-compliant EDID structure.</p>
 </dd>
 
-### -field <b>ChildIndex</b>
+### -field ChildIndex
 
 <dd>
 <p>The index of the child device for which the system is requesting information. This member is used to enumerate devices that are not enumerated by ACPI or other operating system components. If <b>ChildIndex</b> is set to zero, the driver should use the value specified in <b>ACPIHwId</b> as the ID of the device being enumerated.</p>
 </dd>
 
-### -field <b>ACPIHwId</b>
+### -field ACPIHwId
 
 <dd>
 <p>The identifier returned by the ACPI BIOS that represents the child device being enumerated. The miniport driver should use this member only if <b>ChildIndex</b> is zero.</p>
 <p>The <b>ACPIHwId</b> returned by the firmware must match the value returned in <i>UId</i> by the miniport driver. The System BIOS manufacturer and the graphics IHV must synchronize these IDs.</p>
 </dd>
 
-### -field <b>ChildHwDeviceExtension</b>
+### -field ChildHwDeviceExtension
 
 <dd>
 <p>A pointer to a device extension specific to this child device. This member is valid only if the miniport driver filled the <b>ChildHwDeviceExtensionSize</b> member of VIDEO_HW_INITIALIZATION_DATA with a value other than zero.</p>

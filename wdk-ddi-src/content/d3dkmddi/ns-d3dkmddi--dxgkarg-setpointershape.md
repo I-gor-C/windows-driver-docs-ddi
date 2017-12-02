@@ -61,37 +61,37 @@ typedef struct _DXGKARG_SETPOINTERSHAPE {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-pointerflags.md">DXGK_POINTERFLAGS</a> structure that identifies, in bit-field flags, how to display the mouse pointer.</p>
 </dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>[in] The width of the mouse pointer, in pixels.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[in] The height of the mouse pointer, in scan lines.</p>
 </dd>
 
-### -field <b>Pitch</b>
+### -field Pitch
 
 <dd>
 <p>[in] The width of the mouse pointer, in bytes.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the mouse pointer is located in. </p>
 </dd>
 
-### -field <b>pPixels</b>
+### -field pPixels
 
 <dd>
 <p>[in] A pointer to the start of the following bitmap depending on the bit-field flag that is set in the <b>Flags</b> member:</p>
@@ -111,7 +111,7 @@ typedef struct _DXGKARG_SETPOINTERSHAPE {
 ### -field For monochrome mouse pointers:
 
 
-### -field A monochrome bitmap whose size is specified by <b>Width</b> and <b>Height</b> in a 1 bits per pixel (bpp) DIB format AND mask that is followed by another 1 bpp DIB format XOR mask of the same size.
+### -field A monochrome bitmap whose size is specified by Width and Height in a 1 bits per pixel (bpp) DIB format AND mask that is followed by another 1 bpp DIB format XOR mask of the same size.
 
 </dl>
 </p>
@@ -128,7 +128,7 @@ typedef struct _DXGKARG_SETPOINTERSHAPE {
 ### -field For color mouse pointers:
 
 
-### -field A color bitmap whose size is specified by <b>Width</b> and <b>Height</b> in a 32 bpp ARGB device independent bitmap (DIB) format.
+### -field A color bitmap whose size is specified by Width and Height in a 32 bpp ARGB device independent bitmap (DIB) format.
 
 </dl>
 </p>
@@ -155,13 +155,13 @@ typedef struct _DXGKARG_SETPOINTERSHAPE {
 <p> </p>
 </dd>
 
-### -field <b>XHot</b>
+### -field XHot
 
 <dd>
 <p>[in] The column, in pixels, that the mouse pointer is located on from the top left of the bitmap that <b>pPixels</b> points to. </p>
 </dd>
 
-### -field <b>YHot</b>
+### -field YHot
 
 <dd>
 <p>[in] The row, in pixels, that the mouse pointer is located on from the top left of the bitmap that <b>pPixels</b> points to.</p>

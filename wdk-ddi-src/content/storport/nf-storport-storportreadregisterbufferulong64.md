@@ -58,19 +58,19 @@ req.product: Windows 10 or later.
 ## -parameters
 <dl>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>Pointer to the register where the data is to be read. The register must be a mapped range in memory space</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Pointer to the buffer that receives the data that is read.</p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>Specifies the number of data values to read. Each data item has a size of <b>sizeof</b>(ULONG64). </p>

@@ -60,37 +60,37 @@ typedef struct _VPOSVERSIONINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size, in bytes, of the VPOSVERSIONINFO structure.</p>
 </dd>
 
-### -field <b>MajorVersion</b>
+### -field MajorVersion
 
 <dd>
 <p>Specifies the major version number of the operating system. For example, for Windows 2000, the major version number is five. For Windows XP, the major version number is six.</p>
 </dd>
 
-### -field <b>MinorVersion</b>
+### -field MinorVersion
 
 <dd>
 <p>Specifies the minor version number of the operating system. For example, for Windows 2000, the minor version number is zero.</p>
 </dd>
 
-### -field <b>BuildNumber</b>
+### -field BuildNumber
 
 <dd>
 <p>Specifies the build number of the operating system.</p>
 </dd>
 
-### -field <b>ServicePackMajor</b>
+### -field ServicePackMajor
 
 <dd>
 <p>Specifies the major version number of the latest Service Pack installed on the operating system. For example, for Service Pack 3, the major version number is three.</p>
 </dd>
 
-### -field <b>ServicePackMinor</b>
+### -field ServicePackMinor
 
 <dd>
 <p>Specifies the minor version number of the latest Service Pack installed on the operating system. For example, for Service Pack 3, the minor version number is zero.</p>

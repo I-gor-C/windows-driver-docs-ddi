@@ -65,55 +65,55 @@ VOID APIENTRY ResourceCopyRegion(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hDstResource</i> [in]
+### -param hDstResource [in]
 
 <dd>
 <p> A handle to the destination resource to copy to.</p>
 </dd>
 
-### -param <i>DstSubresource</i> [in]
+### -param DstSubresource [in]
 
 <dd>
 <p> An index that indicates the destination subresource to copy to. </p>
 </dd>
 
-### -param <i>DstX</i> [in]
+### -param DstX [in]
 
 <dd>
 <p> The x-coordinate of the destination subresource. </p>
 </dd>
 
-### -param <i>DstY</i> [in]
+### -param DstY [in]
 
 <dd>
 <p> The y-coordinate of the destination subresource. For one-dimensional (1-D) subresources, <i>DstY</i> is set to zero.</p>
 </dd>
 
-### -param <i>DstZ</i> [in]
+### -param DstZ [in]
 
 <dd>
 <p> The z-coordinate of the destination subresource. For one-dimensional (1-D) and two-dimensional (2-D) subresources, <i>DstZ</i> is set to zero.</p>
 </dd>
 
-### -param <i>hSrcResource</i> [in]
+### -param hSrcResource [in]
 
 <dd>
 <p> A handle to the source resource to copy from.</p>
 </dd>
 
-### -param <i>SrcSubresource</i> [in]
+### -param SrcSubresource [in]
 
 <dd>
 <p> An index that indicates the source subresource to copy from. </p>
 </dd>
 
-### -param <i>pSrcBox</i> [in, optional]
+### -param pSrcBox [in, optional]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-box.md">D3D10_DDI_BOX</a> structure that specifies a box that fits on either the source or destination subresource. If <i>pSrcBox</i> is <b>NULL</b>, the driver should copy the entire source subresouce to the destination.</p>

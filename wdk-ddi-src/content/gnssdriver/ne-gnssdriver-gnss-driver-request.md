@@ -7,7 +7,7 @@ old-location: sensors\gnss_driver_request.htm
 old-project: sensors
 ms.assetid: 923774E0-4F4E-470A-9793-8AD4261AEB64
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="SUPL_CONFIG_DATA"></a><a id="supl_config_data"></a><b>SUPL_CONFIG_DATA</b>
+### -field SUPL_CONFIG_DATA
 
 <dd>
 <p>This is used by the GNSS driver to  request SUPL configuration data.</p>

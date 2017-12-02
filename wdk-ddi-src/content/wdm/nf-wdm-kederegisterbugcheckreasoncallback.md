@@ -55,7 +55,7 @@ BOOLEAN KeDeregisterBugCheckReasonCallback(
 ## -parameters
 <dl>
 
-### -param <i>CallbackRecord</i> [in, out]
+### -param CallbackRecord [in, out]
 
 <dd>
 <p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551873">KBUGCHECK_REASON_CALLBACK_RECORD</a> structure. <i>CallbackRecord</i> must be the same value that was passed to <a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a> when the callback was registered.</p>

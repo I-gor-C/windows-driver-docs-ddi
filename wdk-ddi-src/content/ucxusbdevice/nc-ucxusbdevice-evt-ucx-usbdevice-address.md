@@ -61,16 +61,16 @@ typedef EVT_UCX_USBDEVICE_ADDRESS PEVT_UCX_USBDEVICE_ADDRESS;
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
-<p>A structure of type <a href="buses._usbdevice_address">USBDEVICE_ADDRESS</a>.</p>
+<p>A structure of type <a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-address.md">USBDEVICE_ADDRESS</a>.</p>
 </dd>
 </dl>
 
@@ -78,7 +78,7 @@ typedef EVT_UCX_USBDEVICE_ADDRESS PEVT_UCX_USBDEVICE_ADDRESS;
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a> method.</p>
+<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a> method.</p>
 
 <p>The client driver returns completion status in <i>Request</i>.  The driver can complete the WDFREQUEST asynchronously.</p>
 
@@ -123,13 +123,13 @@ typedef EVT_UCX_USBDEVICE_ADDRESS PEVT_UCX_USBDEVICE_ADDRESS;
 ## -see-also
 <dl>
 <dt>
-<a href="buses._ucx_usbdevice_event_callbacks_init">UCX_USBDEVICE_EVENT_CALLBACKS_INIT</a>
+<a href="..\ucxusbdevice\nf-ucxusbdevice-ucx-usbdevice-event-callbacks-init.md">UCX_USBDEVICE_EVENT_CALLBACKS_INIT</a>
 </dt>
 <dt>
-<a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a>
+<a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a>
 </dt>
 <dt>
-<a href="buses._ucxusbdeviceinitseteventcallbacks">UcxUsbDeviceInitSetEventCallbacks</a>
+<a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdeviceinitseteventcallbacks.md">UcxUsbDeviceInitSetEventCallbacks</a>
 </dt>
 </dl>
 <p> </p>

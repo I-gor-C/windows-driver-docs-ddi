@@ -59,13 +59,13 @@ typedef struct _PEP_PPM_QUERY_DOMAIN_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>DomainId</b>
+### -field DomainId
 
 <dd>
 <p>On input, the domain ID of the domain being queried.</p>
 </dd>
 
-### -field <b>CoordinationType</b>
+### -field CoordinationType
 
 <dd>
 <p>On output, indicates the coordination type of the performance domain. The possible values are:</p>
@@ -77,26 +77,26 @@ typedef struct _PEP_PPM_QUERY_DOMAIN_INFO {
 <p>If this notification is not supported, PROCESSOR_DOMAIN_COORDIANTION_SW_ALL coordination is used. </p>
 </dd>
 
-### -field <b>IdleProcessorsDiscounted</b>
+### -field IdleProcessorsDiscounted
 
 <dd>
 <p>On output, and if HW-ALL coordination is used, this value is  TRUE if the platform automatically ignores requests from idle processors as it determines the resolved performance level of the domain, FALSE if requests from idle processors continue to be honored.  
 If PROCESSOR_DOMAIN_COORDIANTION_HW_ALL coordination is not used: this field is ignored. </p>
 </dd>
 
-### -field <b>SchedulerDirectedTransitionsSupported</b>
+### -field SchedulerDirectedTransitionsSupported
 
 <dd>
 <p>On output, this value is TRUE if the PEP supports the requirements of scheduler directed performance transitions for this domain, FALSE otherwise. </p>
 </dd>
 
-### -field <b>WorstCaseTransitionLatency</b>
+### -field WorstCaseTransitionLatency
 
 <dd>
 <p>On output, this value indicates the worst case latency for the processor to transition to a new performance state, measured from the time the OS issues the notification to the PEP to transition to a new performance level, to the time the processor is running at the new performance level, in 100ns units. </p>
 </dd>
 
-### -field <b>WorstCaseTransitionOverhead</b>
+### -field WorstCaseTransitionOverhead
 
 <dd>
 <p>On output, this value indicates the worst case overhead (PEP code execution time plus time the processor is not executing instructions) measured from the time the OS issues the notification to the PEP to transition to a new performance level, to the time the processor is running at the new performance level, in 100ns units. </p>

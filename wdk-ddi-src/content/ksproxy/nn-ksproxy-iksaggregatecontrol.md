@@ -182,7 +182,7 @@ HKLM\System\CurrentControlSet\Control\MediaInterfaces\{set guid}
 ## -see-also
 <dl>
 <dt>
-<a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 </dt>
 <dt>
 <a href="stream.iksobject_ksgetobjecthandle">IKsObject::KsGetObjectHandle</a>

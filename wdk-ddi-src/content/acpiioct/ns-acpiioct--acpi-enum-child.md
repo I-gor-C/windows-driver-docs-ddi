@@ -7,7 +7,7 @@ old-location: acpi\acpi_enum_child.htm
 old-project: acpi
 ms.assetid: baa0292a-b327-4fc0-9235-b1b977f93bf9
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: ACPI_ENUM_CHILD, ACPI_ENUM_CHILD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef struct _ACPI_ENUM_CHILD {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A flag value that the ACPI driver sets to ACPI_OBJECT_HAS_CHILDREN if the enumerated child object has child objects; otherwise, the ACPI driver does not set this value.</p>
 </dd>
 
-### -field <b>NameLength</b>
+### -field NameLength
 
 <dd>
 <p>The number of characters, including a NULL-terminated character, in the ASCII string that the <b>Name</b> array contains.</p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>A NULL-terminated ASCII string that contains the path and name of an object in an ACPI namespace. For more information about the format of the path and name, see the Remarks section later in this topic.</p>
@@ -114,4 +114,4 @@ typedef struct _ACPI_ENUM_CHILD {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [acpi\acpi]:%20ACPI_ENUM_CHILD structure%20 RELEASE:%20(11/16/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [acpi\acpi]:%20ACPI_ENUM_CHILD structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -55,13 +55,13 @@ typedef struct _VIDEO_POINTER_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Column</b>
+### -field Column
 
 <dd>
 <p>Specifies the column location of the pointer in pixels, starting from the top left corner of the screen.</p>
 </dd>
 
-### -field <b>Row</b>
+### -field Row
 
 <dd>
 <p>Specifies the row location of the pointer in pixels, starting from the top left corner of the screen.</p>

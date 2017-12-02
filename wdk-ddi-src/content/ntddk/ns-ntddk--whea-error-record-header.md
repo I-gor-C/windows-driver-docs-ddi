@@ -69,116 +69,116 @@ typedef struct _WHEA_ERROR_RECORD_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>The signature of the error record. This member contains the value 'REPC'.</p>
 </dd>
 
-### -field <b>Revision</b>
+### -field Revision
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-revision.md">WHEA_REVISION</a> union that describes the revision level of the WHEA_ERROR_RECORD_HEADER structure.</p>
 </dd>
 
-### -field <b>SignatureEnd</b>
+### -field SignatureEnd
 
 <dd>
 <p>The end of the signature of the error record. This member contains the value 0xFFFFFFFF.</p>
 </dd>
 
-### -field <b>SectionCount</b>
+### -field SectionCount
 
 <dd>
 <p>The number of sections of error information that are contained in the error record.</p>
 </dd>
 
-### -field <b>Severity</b>
+### -field Severity
 
 <dd>
 <p>A <a href="..\ntddk\ne-ntddk--whea-error-severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition described by the error record.</p>
 </dd>
 
-### -field <b>ValidBits</b>
+### -field ValidBits
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-error-record-header-validbits.md">WHEA_ERROR_RECORD_HEADER_VALIDBITS</a> union that specifies which members of the WHEA_ERROR_RECORD_HEADER structure contain valid data.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The length, in bytes, of the error record.</p>
 </dd>
 
-### -field <b>Timestamp</b>
+### -field Timestamp
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-timestamp.md">WHEA_TIMESTAMP</a> union that indicates the time that the error was reported to the operating system. This member contains valid data only if the <b>ValidBits.Timestamp</b> bit is set.</p>
 </dd>
 
-### -field <b>PlatformId</b>
+### -field PlatformId
 
 <dd>
 <p>A GUID that identifies the platform on which the hardware error occurred. This member contains valid data only if the <b>ValidBits.PlatformId</b> bit is set.</p>
 </dd>
 
-### -field <b>PartitionId</b>
+### -field PartitionId
 
 <dd>
 <p>A GUID that identifies the partition on which the hardware error occurred. This member contains valid data only if the <b>ValidBits.PartitionId</b> bit is set.</p>
 </dd>
 
-### -field <b>CreatorId</b>
+### -field CreatorId
 
 <dd>
 <p>A GUID that identifies the entity that created the error record. When the Windows kernel creates an error record, it sets this member to WHEA_RECORD_CREATOR_GUID.</p>
 </dd>
 
-### -field <b>NotifyType</b>
+### -field NotifyType
 
 <dd>
 <p>A GUID that identifies the notification mechanism by which an error condition is reported to the operating system. The following are the GUIDs for the standard notification types:</p>
 <p></p>
 <dl>
 
-### -field <a id="CMC_NOTIFY_TYPE_GUID"></a><a id="cmc_notify_type_guid"></a>CMC_NOTIFY_TYPE_GUID
+### -field CMC_NOTIFY_TYPE_GUID
 
 <dd>
 <p>Corrected Machine Check (CMC)</p>
 </dd>
 
-### -field <a id="CPE_NOTIFY_TYPE_GUID"></a><a id="cpe_notify_type_guid"></a>CPE_NOTIFY_TYPE_GUID
+### -field CPE_NOTIFY_TYPE_GUID
 
 <dd>
 <p>Corrected Platform Error (CPE)</p>
 </dd>
 
-### -field <a id="MCE_NOTIFY_TYPE_GUID"></a><a id="mce_notify_type_guid"></a>MCE_NOTIFY_TYPE_GUID
+### -field MCE_NOTIFY_TYPE_GUID
 
 <dd>
 <p>Machine Check Exception (MCE)</p>
 </dd>
 
-### -field <a id="PCIe_NOTIFY_TYPE_GUID"></a><a id="pcie_notify_type_guid"></a><a id="PCIE_NOTIFY_TYPE_GUID"></a>PCIe_NOTIFY_TYPE_GUID
+### -field PCIe_NOTIFY_TYPE_GUID
 
 <dd>
 <p>PCI Express (PCIe) Error</p>
 </dd>
 
-### -field <a id="INIT_NOTIFY_TYPE_GUID"></a><a id="init_notify_type_guid"></a>INIT_NOTIFY_TYPE_GUID
+### -field INIT_NOTIFY_TYPE_GUID
 
 <dd>
 <p>INIT Error Record (INIT)</p>
 </dd>
 
-### -field <a id="NMI_NOTIFY_TYPE_GUID"></a><a id="nmi_notify_type_guid"></a>NMI_NOTIFY_TYPE_GUID
+### -field NMI_NOTIFY_TYPE_GUID
 
 <dd>
 <p>Nonmaskable Interrupt (NMI)</p>
 </dd>
 
-### -field <a id="BOOT_NOTIFY_TYPE_GUID"></a><a id="boot_notify_type_guid"></a>BOOT_NOTIFY_TYPE_GUID
+### -field BOOT_NOTIFY_TYPE_GUID
 
 <dd>
 <p>Boot Error Record (BOOT)</p>
@@ -187,13 +187,13 @@ typedef struct _WHEA_ERROR_RECORD_HEADER {
 <p>For error notification types that do not conform to one of the standard types in the previous list, a platform-specific GUID can be defined to identify the notification mechanism. If the notification type does not correspond to any of the standard notification types or any platform-specific notification types, this member is set to GENERIC_NOTIFY_TYPE_GUID.</p>
 </dd>
 
-### -field <b>RecordId</b>
+### -field RecordId
 
 <dd>
 <p>The identifier of the error record. This identifier is unique only on the system that created the error record.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A WHEA_ERROR_RECORD_HEADER_FLAGS union that describes the error condition. The WHEA_ERROR_RECORD_HEADER_FLAGS union is defined as follows:</p>
@@ -218,31 +218,31 @@ typedef struct _WHEA_ERROR_RECORD_HEADER {
 <p></p>
 <dl>
 
-### -field <a id="Recovered"></a><a id="recovered"></a><a id="RECOVERED"></a><b>Recovered</b>
+### -field Recovered
 
 <dd>
 <p>A single bit that indicates that the operating system recovered from the error condition.</p>
 </dd>
 
-### -field <a id="PreviousError"></a><a id="previouserror"></a><a id="PREVIOUSERROR"></a><b>PreviousError</b>
+### -field PreviousError
 
 <dd>
 <p>A single bit that indicates that the error condition occurred in a previous session of the operating system.</p>
 </dd>
 
-### -field <a id="Simulated"></a><a id="simulated"></a><a id="SIMULATED"></a><b>Simulated</b>
+### -field Simulated
 
 <dd>
 <p>A single bit that indicates that the error condition was simulated.</p>
 </dd>
 
-### -field <a id="Reserved"></a><a id="reserved"></a><a id="RESERVED"></a><b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="AsULONG"></a><a id="asulong"></a><a id="ASULONG"></a><b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the WHEA_ERROR_RECORD_HEADER_FLAGS union.</p>
@@ -250,13 +250,13 @@ typedef struct _WHEA_ERROR_RECORD_HEADER {
 </dl>
 </dd>
 
-### -field <b>PersistenceInfo</b>
+### -field PersistenceInfo
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-persistence-info.md">WHEA_PERSISTENCE_INFO</a> union that is used by the error record persistence interface.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>

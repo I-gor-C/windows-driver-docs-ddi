@@ -54,7 +54,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTReclaimAllocations2(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-reclaimallocations2.md">D3DKMT_RECLAIMALLOCATIONS2</a> structure that defines memory allocations to reclaim.</p>

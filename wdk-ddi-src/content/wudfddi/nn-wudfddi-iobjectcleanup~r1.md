@@ -7,7 +7,7 @@ old-location: wdf\iobjectcleanup.htm
 old-project: wdf
 ms.assetid: 5e465c90-3290-4c89-bf47-521280c0fe5c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

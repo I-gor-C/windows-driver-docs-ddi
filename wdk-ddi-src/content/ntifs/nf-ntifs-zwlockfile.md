@@ -63,61 +63,61 @@ NTSTATUS ZwLockFile(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [in]
+### -param FileHandle [in]
 
 <dd>
 <p>A handle for the file on which a byte-range lock is requested.</p>
 </dd>
 
-### -param <i>Event</i> [in, optional]
+### -param Event [in, optional]
 
 <dd>
 <p>A handle to a caller-created event. If not <b>NULL</b>, the caller is placed into a wait state until the operation succeeds, at which time the event is set into the Signaled state.</p>
 </dd>
 
-### -param <i>ApcRoutine</i> [in, optional]
+### -param ApcRoutine [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied APC routine that is executed after the operation completes. Can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ApcContext</i> [in, optional]
+### -param ApcContext [in, optional]
 
 <dd>
 <p>A pointer to a caller-specified context for the APC routine. This value is passed to the APC routine when it is executed. Can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that contains the final status.</p>
 </dd>
 
-### -param <i>ByteOffset</i> [in]
+### -param ByteOffset [in]
 
 <dd>
 <p>A pointer to a variable that specifies the starting byte offset of the range to lock.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>A pointer to a variable that specifies the length in bytes of the range to lock.</p>
 </dd>
 
-### -param <i>Key</i> [in]
+### -param Key [in]
 
 <dd>
 <p>A caller-assigned value used to describe groups of related locks. This value should be set to zero.</p>
 </dd>
 
-### -param <i>FailImmediately</i> [in]
+### -param FailImmediately [in]
 
 <dd>
 <p>If <b>TRUE</b>, immediately return if the file cannot be locked. If <b>FALSE</b>, wait for the lock request to be granted.</p>
 </dd>
 
-### -param <i>ExclusiveLock</i> [in]
+### -param ExclusiveLock [in]
 
 <dd>
 <p>If <b>TRUE</b>, byte-range lock is exclusive; otherwise, shared lock.</p>

@@ -56,13 +56,13 @@ PVOID CmGetBoundTransaction(
 ## -parameters
 <dl>
 
-### -param <i>Cookie</i> [in]
+### -param Cookie [in]
 
 <dd>
 <p>The cookie value that the driver previously obtain by calling <a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a> or <a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a>. </p>
 </dd>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>The pointer value that the driver's <a href="kernel.registrycallback">RegistryCallback</a> callback routine received in one of the <b>REG_<i>XXX</i>_KEY_INFORMATION</b> structures. </p>

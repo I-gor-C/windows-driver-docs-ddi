@@ -59,37 +59,37 @@ typedef struct _D3DKMT_CREATEKEYEDMUTEX2 {
 ## -struct-fields
 <dl>
 
-### -field <b>InitialValue</b>
+### -field InitialValue
 
 <dd>
 <p>[in] A 64-bit value that specifies the initial value to create the keyed mutex for.</p>
 </dd>
 
-### -field <b>hSharedHandle</b>
+### -field hSharedHandle
 
 <dd>
 <p>[out] A value of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode shared global handle to the keyed mutex object.</p>
 </dd>
 
-### -field <b>hKeyedMutex</b>
+### -field hKeyedMutex
 
 <dd>
 <p>[out] A value of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode handle to the keyed mutex object in the current process.</p>
 </dd>
 
-### -field <b>pPrivateRuntimeData</b>
+### -field pPrivateRuntimeData
 
 <dd>
 <p>[in] A pointer to a caller-supplied buffer where the runtime private data associated with the resource is stored.</p>
 </dd>
 
-### -field <b>PrivateRuntimeDataSize</b>
+### -field PrivateRuntimeDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the buffer pointed to by the <b>pPrivateRuntimeData</b> member.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createkeyedmutex2-flags.md">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a> structure that indicates how to specify a handle to a keyed mutex object.</p>

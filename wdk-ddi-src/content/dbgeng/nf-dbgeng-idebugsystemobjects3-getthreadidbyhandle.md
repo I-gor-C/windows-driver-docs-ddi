@@ -7,7 +7,7 @@ old-location: debugger\getthreadidbyhandle.htm
 old-project: debugger
 ms.assetid: 80962f29-9a11-456b-b083-bd0f4e26e954
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSystemObjects3, GetThreadIdByHandle, IDebugSystemObjects3::GetThreadIdByHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ HRESULT GetThreadIdByHandle(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Specifies the system handle of the thread whose thread ID is requested.</p>
 </dd>
 
-### -param <i>Id</i> [out]
+### -param Id [out]
 
 <dd>
 <p>Receives the engine thread ID.</p>
@@ -69,7 +69,7 @@ HRESULT GetThreadIdByHandle(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

@@ -7,7 +7,7 @@ old-location: netvista\rilsetcallforwardingstatusparams_2.htm
 old-project: netvista
 ms.assetid: 98996648-7e1a-4ccd-be8f-b31c1d0a3302
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSETCALLFORWARDINGSTATUSPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef struct _RILSETCALLFORWARDINGSTATUSPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwReason</b>
+### -field dwReason
 
 <dd></dd>
 
-### -field <b>fAllClasses</b>
+### -field fAllClasses
 
 <dd></dd>
 
-### -field <b>dwInfoClasses</b>
+### -field dwInfoClasses
 
 <dd></dd>
 
-### -field <b>dwStatus</b>
+### -field dwStatus
 
 <dd></dd>
 </dl>

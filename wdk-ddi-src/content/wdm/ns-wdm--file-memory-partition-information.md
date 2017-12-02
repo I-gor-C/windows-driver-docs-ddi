@@ -7,7 +7,7 @@ old-location: ifsk\_file_memory_partition_information.htm
 old-project: ifsk
 ms.assetid: 1d74aec3-dbc5-4494-ba52-135e3f545c1b
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILE_MEMORY_PARTITION_INFORMATION, FILE_MEMORY_PARTITION_INFORMATION, *PFILE_MEMORY_PARTITION_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,23 +63,23 @@ typedef struct _FILE_MEMORY_PARTITION_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>OwnerPartitionHandle</b>
+### -field OwnerPartitionHandle
 
 <dd>
 <p>Handle to the specified partition.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <dl>
 
-### -field <b>DUMMYSTRUCTNAME</b>
+### -field DUMMYSTRUCTNAME
 
 <dd>
 <dl>
 
-### -field <b>NoCrossPartitionAccess</b>
+### -field NoCrossPartitionAccess
 
 <dd>
 <p>Determines whether cross-partition access is allowed.</p>
@@ -87,7 +87,7 @@ typedef struct _FILE_MEMORY_PARTITION_INFORMATION {
 </dl>
 </dd>
 
-### -field <b>AllFlags</b>
+### -field AllFlags
 
 <dd>
 <p>Bitwise of all flags. </p>

@@ -7,7 +7,7 @@ old-location: debugger\findsourcefile.htm
 old-project: debugger
 ms.assetid: 960d02a8-0929-4ac5-acf8-8386cae543f8
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSymbols2, FindSourceFile, IDebugSymbols2::FindSourceFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,45 +60,45 @@ HRESULT FindSourceFile(
 ## -parameters
 <dl>
 
-### -param <i>StartElement</i> [in]
+### -param StartElement [in]
 
 <dd>
 <p>Specifies the index of an element within the source path to start searching from.  All elements in the source path before <i>StartElement</i> are excluded from the search.  The index of the first element is zero.  If <i>StartElement</i> is greater than or equal to the number of elements in the source path, the filing system is checked directly.</p>
 <p>This parameter can be used with <i>FoundElement</i> to check for multiple matches in the source path.</p>
 </dd>
 
-### -param <i>File</i> [in]
+### -param File [in]
 
 <dd>
 <p>Specifies the path and file name of the file to search for.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies the search flags. For a description of these flags, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541495">DEBUG_FIND_SOURCE_XXX</a>.</p>
 <p>The flag DEBUG_FIND_SOURCE_TOKEN_LOOKUP should not be set.  The flag DEBUG_FIND_SOURCE_NO_SRCSRV is ignored because this method does not include source servers in the search.</p>
 </dd>
 
-### -param <i>FoundElement</i> [out, optional]
+### -param FoundElement [out, optional]
 
 <dd>
 <p>Receives the index of the element within the source path that contains the file.  If the file was found directly on the filing system (not using the source path) then <b>-1</b> is returned to <i>FoundElement</i>.  If <i>FoundElement</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>Buffer</i> [out, optional]
+### -param Buffer [out, optional]
 
 <dd>
 <p>Receives the path and name of the found file.  If the flag DEBUG_FIND_SOURCE_FULL_PATH is set, this is the full canonical path name for the file.  Otherwise, it is the concatenation of the directory in the source path with the tail of <i>File</i> that was used to find the file.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size, in characters, of the <i>Buffer</i> buffer.</p>
 </dd>
 
-### -param <i>FoundSize</i> [out, optional]
+### -param FoundSize [out, optional]
 
 <dd>
 <p>Specifies the size, in characters, of the name of the file.  If <i>FoundSize</i> is <b>NULL</b>, this information is not returned.</p>
@@ -106,7 +106,7 @@ HRESULT FindSourceFile(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>E_NOINTERFACE</b></dt>
@@ -179,4 +179,4 @@ HRESULT FindSourceFile(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols::FindSourceFile method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols::FindSourceFile method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\rildisplayinfotag.htm
 old-project: netvista
 ms.assetid: ba47d9e3-4e95-479b-9e6a-10eb723e7d59
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -81,115 +81,115 @@ typedef enum _RILDISPLAYINFOTAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_SKIP"></a><a id="ril_extended_display_tag_skip"></a><b>RIL_EXTENDED_DISPLAY_TAG_SKIP</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_SKIP
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_CONTINUATION"></a><a id="ril_extended_display_tag_continuation"></a><b>RIL_EXTENDED_DISPLAY_TAG_CONTINUATION</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_CONTINUATION
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_CALLED_ADDRESS"></a><a id="ril_extended_display_tag_called_address"></a><b>RIL_EXTENDED_DISPLAY_TAG_CALLED_ADDRESS</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_CALLED_ADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_CAUSE"></a><a id="ril_extended_display_tag_cause"></a><b>RIL_EXTENDED_DISPLAY_TAG_CAUSE</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_CAUSE
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_PROGRESS_INDICATOR"></a><a id="ril_extended_display_tag_progress_indicator"></a><b>RIL_EXTENDED_DISPLAY_TAG_PROGRESS_INDICATOR</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_PROGRESS_INDICATOR
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_NOTIFICATION_INDICATOR"></a><a id="ril_extended_display_tag_notification_indicator"></a><b>RIL_EXTENDED_DISPLAY_TAG_NOTIFICATION_INDICATOR</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_NOTIFICATION_INDICATOR
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_PROMPT"></a><a id="ril_extended_display_tag_prompt"></a><b>RIL_EXTENDED_DISPLAY_TAG_PROMPT</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_PROMPT
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_ACCUMULATED_DIGITS"></a><a id="ril_extended_display_tag_accumulated_digits"></a><b>RIL_EXTENDED_DISPLAY_TAG_ACCUMULATED_DIGITS</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_ACCUMULATED_DIGITS
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_STATUS"></a><a id="ril_extended_display_tag_status"></a><b>RIL_EXTENDED_DISPLAY_TAG_STATUS</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_INBAND"></a><a id="ril_extended_display_tag_inband"></a><b>RIL_EXTENDED_DISPLAY_TAG_INBAND</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_INBAND
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_CALLING_ADDRESS"></a><a id="ril_extended_display_tag_calling_address"></a><b>RIL_EXTENDED_DISPLAY_TAG_CALLING_ADDRESS</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_CALLING_ADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_REASON"></a><a id="ril_extended_display_tag_reason"></a><b>RIL_EXTENDED_DISPLAY_TAG_REASON</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_REASON
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_CALLING_PARTY_NAME"></a><a id="ril_extended_display_tag_calling_party_name"></a><b>RIL_EXTENDED_DISPLAY_TAG_CALLING_PARTY_NAME</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_CALLING_PARTY_NAME
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_CALLED_PARTY_NAME"></a><a id="ril_extended_display_tag_called_party_name"></a><b>RIL_EXTENDED_DISPLAY_TAG_CALLED_PARTY_NAME</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_CALLED_PARTY_NAME
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_ORIGINAL_CALLED_NAME"></a><a id="ril_extended_display_tag_original_called_name"></a><b>RIL_EXTENDED_DISPLAY_TAG_ORIGINAL_CALLED_NAME</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_ORIGINAL_CALLED_NAME
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_REDIRECTING_NAME"></a><a id="ril_extended_display_tag_redirecting_name"></a><b>RIL_EXTENDED_DISPLAY_TAG_REDIRECTING_NAME</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_REDIRECTING_NAME
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_CONNECTED_NAME"></a><a id="ril_extended_display_tag_connected_name"></a><b>RIL_EXTENDED_DISPLAY_TAG_CONNECTED_NAME</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_CONNECTED_NAME
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_ORIGINATING_RESTRICT"></a><a id="ril_extended_display_tag_originating_restrict"></a><b>RIL_EXTENDED_DISPLAY_TAG_ORIGINATING_RESTRICT</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_ORIGINATING_RESTRICT
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_DATE_TIME_OF_DAY"></a><a id="ril_extended_display_tag_date_time_of_day"></a><b>RIL_EXTENDED_DISPLAY_TAG_DATE_TIME_OF_DAY</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_DATE_TIME_OF_DAY
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_CALL_APPEARANCE_ID"></a><a id="ril_extended_display_tag_call_appearance_id"></a><b>RIL_EXTENDED_DISPLAY_TAG_CALL_APPEARANCE_ID</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_CALL_APPEARANCE_ID
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_FEATURE_ADDRESS"></a><a id="ril_extended_display_tag_feature_address"></a><b>RIL_EXTENDED_DISPLAY_TAG_FEATURE_ADDRESS</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_FEATURE_ADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_REDIRECTION_NAME"></a><a id="ril_extended_display_tag_redirection_name"></a><b>RIL_EXTENDED_DISPLAY_TAG_REDIRECTION_NAME</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_REDIRECTION_NAME
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_REDIRECTION_NUMBER"></a><a id="ril_extended_display_tag_redirection_number"></a><b>RIL_EXTENDED_DISPLAY_TAG_REDIRECTION_NUMBER</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_REDIRECTION_NUMBER
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_REDIRECTING_NUMBER"></a><a id="ril_extended_display_tag_redirecting_number"></a><b>RIL_EXTENDED_DISPLAY_TAG_REDIRECTING_NUMBER</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_REDIRECTING_NUMBER
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_ORIGINAL_CALLED_NUMBER"></a><a id="ril_extended_display_tag_original_called_number"></a><b>RIL_EXTENDED_DISPLAY_TAG_ORIGINAL_CALLED_NUMBER</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_ORIGINAL_CALLED_NUMBER
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_CONNECTED_NUMBER"></a><a id="ril_extended_display_tag_connected_number"></a><b>RIL_EXTENDED_DISPLAY_TAG_CONNECTED_NUMBER</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_CONNECTED_NUMBER
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_TEXT"></a><a id="ril_extended_display_tag_text"></a><b>RIL_EXTENDED_DISPLAY_TAG_TEXT</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_TEXT
 
 <dd></dd>
 
-### -field <a id="RIL_EXTENDED_DISPLAY_TAG_MAX"></a><a id="ril_extended_display_tag_max"></a><b>RIL_EXTENDED_DISPLAY_TAG_MAX</b>
+### -field RIL_EXTENDED_DISPLAY_TAG_MAX
 
 <dd></dd>
 </dl>

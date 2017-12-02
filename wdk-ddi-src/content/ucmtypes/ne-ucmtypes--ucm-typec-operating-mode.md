@@ -58,25 +58,25 @@ typedef enum _UCM_TYPEC_OPERATING_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UcmTypeCOperatingModeInvalid"></a><a id="ucmtypecoperatingmodeinvalid"></a><a id="UCMTYPECOPERATINGMODEINVALID"></a><b>UcmTypeCOperatingModeInvalid</b>
+### -field UcmTypeCOperatingModeInvalid
 
 <dd>
 <p>Indicates the operating mode is invalid.</p>
 </dd>
 
-### -field <a id="UcmTypeCOperatingModeDfp"></a><a id="ucmtypecoperatingmodedfp"></a><a id="UCMTYPECOPERATINGMODEDFP"></a><b>UcmTypeCOperatingModeDfp</b>
+### -field UcmTypeCOperatingModeDfp
 
 <dd>
 <p>Indicates the operating mode is set to downstream-facing port.</p>
 </dd>
 
-### -field <a id="UcmTypeCOperatingModeUfp"></a><a id="ucmtypecoperatingmodeufp"></a><a id="UCMTYPECOPERATINGMODEUFP"></a><b>UcmTypeCOperatingModeUfp</b>
+### -field UcmTypeCOperatingModeUfp
 
 <dd>
 <p>Indicates the operating mode is set to upstream-facing port.</p>
 </dd>
 
-### -field <a id="UcmTypeCOperatingModeDrp"></a><a id="ucmtypecoperatingmodedrp"></a><a id="UCMTYPECOPERATINGMODEDRP"></a><b>UcmTypeCOperatingModeDrp</b>
+### -field UcmTypeCOperatingModeDrp
 
 <dd>
 <p>Indicates the operating mode is set to dual-role port. </p>
@@ -135,7 +135,7 @@ typedef enum _UCM_TYPEC_OPERATING_MODE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucm_connector_type_c_config_init">UCM_CONNECTOR_TYPEC_CONFIG_INIT</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucm-connector-typec-config-init.md">UCM_CONNECTOR_TYPEC_CONFIG_INIT</a>
 </dt>
 </dl>
 <p> </p>

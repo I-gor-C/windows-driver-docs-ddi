@@ -7,7 +7,7 @@ old-location: parports\parallel_port_information.htm
 old-project: parports
 ms.assetid: 9f170425-2c65-469e-adae-e845b11b9c8e
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/30/2017
 ms.keywords: PARALLEL_PORT_INFORMATION, PARALLEL_PORT_INFORMATION, *PPARALLEL_PORT_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,43 +60,43 @@ typedef struct _PARALLEL_PORT_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>OriginalController</b>
+### -field OriginalController
 
 <dd>
 <p>Specifies the bus relative base I/O address of the parallel port registers. </p>
 </dd>
 
-### -field <b>Controller</b>
+### -field Controller
 
 <dd>
 <p>Pointer to the system-mapped base I/O location of the parallel port registers.</p>
 </dd>
 
-### -field <b>SpanOfController</b>
+### -field SpanOfController
 
 <dd>
 <p>Specifies the size, in bytes, of the I/O space, allocated to the parallel port.</p>
 </dd>
 
-### -field <b>TryAllocatePort</b>
+### -field TryAllocatePort
 
 <dd>
 <p>Pointer to the system-supplied <a href="..\parallel\nc-parallel-pparallel-try-allocate-routine.md">PPARALLEL_TRY_ALLOCATE_ROUTINE</a> callback that a kernel-mode driver can use to attempt to allocate the parallel port.</p>
 </dd>
 
-### -field <b>FreePort</b>
+### -field FreePort
 
 <dd>
 <p>Pointer to the system-supplied <a href="..\parallel\nc-parallel-pparallel-free-routine.md">PPARALLEL_FREE_ROUTINE</a> callback that a kernel-mode driver can use to free the parallel port. </p>
 </dd>
 
-### -field <b>QueryNumWaiters</b>
+### -field QueryNumWaiters
 
 <dd>
 <p>Pointer to the system-supplied <a href="..\parallel\nc-parallel-pparallel-query-waiters-routine.md">PPARALLEL_QUERY_WAITERS_ROUTINE</a> callback that a kernel-mode driver can use to determine the number of requests on the work queue of the parallel port.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Pointer to the device extension of parallel port.</p>
@@ -154,4 +154,4 @@ typedef struct _PARALLEL_PORT_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PARALLEL_PORT_INFORMATION structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PARALLEL_PORT_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

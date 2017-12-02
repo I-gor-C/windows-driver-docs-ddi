@@ -7,7 +7,7 @@ old-location: netvista\wwan_set_context.htm
 old-project: netvista
 ms.assetid: 00772a37-ef1b-446b-b7bd-1a6aa27d1dad
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_SET_CONTEXT, WWAN_SET_CONTEXT, *PWWAN_SET_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ typedef struct _WWAN_SET_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>ContextId</b>
+### -field ContextId
 
 <dd>
 <p>A unique ID for this context.
@@ -75,7 +75,7 @@ typedef struct _WWAN_SET_CONTEXT {
      <i>query</i> OID_WWAN_PROVISIONED_CONTEXT requests.</p>
 </dd>
 
-### -field <b>ContextType</b>
+### -field ContextType
 
 <dd>
 <p>Specifies the type of context being represented, for example, Internet connectivity, VPN (a
@@ -83,7 +83,7 @@ typedef struct _WWAN_SET_CONTEXT {
      <b>WwanContextTypeNone</b> for empty or unprovisioned contexts.</p>
 </dd>
 
-### -field <b>AccessString</b>
+### -field AccessString
 
 <dd>
 <p>A NULL-terminated string to access the network. For GSM-based networks, this would be an Access
@@ -94,19 +94,19 @@ typedef struct _WWAN_SET_CONTEXT {
 <p>The size of the string should not exceed 100 bytes.</p>
 </dd>
 
-### -field <b>UserName</b>
+### -field UserName
 
 <dd>
 <p>The username to use for authentication. This member can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Password</b>
+### -field Password
 
 <dd>
 <p>The password to use for authentication. This member can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Compression</b>
+### -field Compression
 
 <dd>
 <p>Specifies the compression to be used in the data connection for header and data. This member
@@ -114,13 +114,13 @@ typedef struct _WWAN_SET_CONTEXT {
      <b>WwanCompressionNone</b> for CDMA-based devices.</p>
 </dd>
 
-### -field <b>AuthType</b>
+### -field AuthType
 
 <dd>
 <p>Authentication type to use for the PDP activation.</p>
 </dd>
 
-### -field <b>ProviderId</b>
+### -field ProviderId
 
 <dd>
 <p>A NULL-terminated string that represents the network provider identification for which the

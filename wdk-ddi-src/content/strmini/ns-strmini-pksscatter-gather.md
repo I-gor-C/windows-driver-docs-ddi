@@ -56,11 +56,11 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>PhysicalAddress</b>
+### -field PhysicalAddress
 
 <dd></dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd></dd>
 </dl>

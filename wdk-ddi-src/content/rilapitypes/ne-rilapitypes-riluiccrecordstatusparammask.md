@@ -7,7 +7,7 @@ old-location: netvista\riluiccrecordstatusparammask_2.htm
 old-project: netvista
 ms.assetid: d0aad2bc-9b14-4468-92cf-b5757e43fde0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILUICCRECORDSTATUSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_URS_ITEMCOUNT"></a><a id="ril_param_urs_itemcount"></a><b>RIL_PARAM_URS_ITEMCOUNT</b>
+### -field RIL_PARAM_URS_ITEMCOUNT
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_URS_SIZE"></a><a id="ril_param_urs_size"></a><b>RIL_PARAM_URS_SIZE</b>
+### -field RIL_PARAM_URS_SIZE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_URS_FILELOCKSTATUS"></a><a id="ril_param_urs_filelockstatus"></a><b>RIL_PARAM_URS_FILELOCKSTATUS</b>
+### -field RIL_PARAM_URS_FILELOCKSTATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_URS_ALL"></a><a id="ril_param_urs_all"></a><b>RIL_PARAM_URS_ALL</b>
+### -field RIL_PARAM_URS_ALL
 
 <dd></dd>
 </dl>

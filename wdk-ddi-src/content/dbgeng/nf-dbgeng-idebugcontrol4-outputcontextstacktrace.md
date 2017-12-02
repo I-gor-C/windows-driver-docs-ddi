@@ -7,7 +7,7 @@ old-location: debugger\outputcontextstacktrace.htm
 old-project: debugger
 ms.assetid: da3d19ab-258d-4214-8674-b35fec06534b
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl4, OutputContextStackTrace, IDebugControl4::OutputContextStackTrace
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,43 +60,43 @@ HRESULT OutputContextStackTrace(
 ## -parameters
 <dl>
 
-### -param <i>OutputControl</i> [in]
+### -param OutputControl [in]
 
 <dd>
-<p>Specifies where to send the output.  For possible values, see <a href="debugger.debug_outctl_xxx">DEBUG_OUTCTL_XXX</a>.</p>
+<p>Specifies where to send the output.  For possible values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541517">DEBUG_OUTCTL_XXX</a>.</p>
 </dd>
 
-### -param <i>Frames</i> [in]
+### -param Frames [in]
 
 <dd>
 <p>Specifies the array of stack frames to output.  The number of elements in this array is <i>FramesSize</i>.  If <i>Frames</i> is <b>NULL</b>, the current stack frame is used.</p>
 </dd>
 
-### -param <i>FramesSize</i> [in]
+### -param FramesSize [in]
 
 <dd>
 <p>Specifies the number of frames to output.</p>
 </dd>
 
-### -param <i>FrameContexts</i> [in]
+### -param FrameContexts [in]
 
 <dd>
 <p>Specifies the register context for each frame in the stack.  The entries in this array correspond to the entries in the <i>Frames</i> array.  The type of the thread context is the CONTEXT structure for the target's effective processor.</p>
 </dd>
 
-### -param <i>FrameContextsSize</i> [in]
+### -param FrameContextsSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the memory pointed to by <i>FrameContexts</i>.  The number of stack frames must equal the number of contexts, and <i>FrameContextsSize</i> must equal <i>FramesSize</i> multiplied by <i>FrameContextsEntrySize</i>.</p>
 </dd>
 
-### -param <i>FrameContextsEntrySize</i> [in]
+### -param FrameContextsEntrySize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of each frame context in <i>FrameContexts</i>.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies bit flags that determine what information to output for each frame.  <i>Flags</i> can be any combination of values from the following table.</p>
@@ -199,7 +199,7 @@ HRESULT OutputContextStackTrace(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 
@@ -249,4 +249,4 @@ HRESULT OutputContextStackTrace(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::OutputContextStackTrace method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::OutputContextStackTrace method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

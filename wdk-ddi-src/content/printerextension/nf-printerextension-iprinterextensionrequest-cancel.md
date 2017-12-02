@@ -56,13 +56,13 @@ HRESULT Cancel(
 ## -parameters
 <dl>
 
-### -param <i>hr</i> [in]
+### -param hr [in]
 
 <dd>
 <p>The operation result.</p>
 </dd>
 
-### -param <i>bstrLogMessage</i> [in]
+### -param bstrLogMessage [in]
 
 <dd>
 <p>The log message.</p>

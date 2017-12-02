@@ -61,43 +61,43 @@ typedef struct _UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size in bytes of this structure.</p>
 </dd>
 
-### -field <b>EvtEndpointPurge</b>
+### -field EvtEndpointPurge
 
 <dd>
 <p>A pointer to a EVT_UCX_ENDPOINT_PURGE callback function.</p>
 </dd>
 
-### -field <b>EvtEndpointStart</b>
+### -field EvtEndpointStart
 
 <dd>
 <p>A pointer to a EVT_UCX_ENDPOINT_START callback function.</p>
 </dd>
 
-### -field <b>EvtEndpointAbort</b>
+### -field EvtEndpointAbort
 
 <dd>
 <p>A pointer to a EVT_UCX_ENDPOINT_ABORT callback function.</p>
 </dd>
 
-### -field <b>EvtEndpointOkToCancelTransfers</b>
+### -field EvtEndpointOkToCancelTransfers
 
 <dd>
 <p>A pointer to a EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS callback function.</p>
 </dd>
 
-### -field <b>EvtDefaultEndpointUpdate</b>
+### -field EvtDefaultEndpointUpdate
 
 <dd>
 <p>A pointer to a EVT_UCX_DEFAULT_ENDPOINT_UPDATE callback function.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Do not use.</p>
@@ -124,10 +124,10 @@ typedef struct _UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucx_default_endpoint_event_callbacks_init">UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT</a>
+<a href="..\ucxendpoint\nf-ucxendpoint-ucx-default-endpoint-event-callbacks-init.md">UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT</a>
 </dt>
 <dt>
-<a href="buses._ucxdefaultendpointinitseteventcallbacks">UcxDefaultEndpointInitSetEventCallbacks</a>
+<a href="..\ucxendpoint\nf-ucxendpoint-ucxdefaultendpointinitseteventcallbacks.md">UcxDefaultEndpointInitSetEventCallbacks</a>
 </dt>
 </dl>
 <p> </p>

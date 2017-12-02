@@ -7,7 +7,7 @@ old-location: netvista\rilsmsmsginflags.htm
 old-project: netvista
 ms.assetid: aaa7967a-dfbc-4c4c-a309-095628fae6c0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILSMSMSGINFLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SMSMSGIN_IMS"></a><a id="ril_smsmsgin_ims"></a><b>RIL_SMSMSGIN_IMS</b>
+### -field RIL_SMSMSGIN_IMS
 
 <dd></dd>
 
-### -field <a id="RIL_SMSMSGIN_ALL"></a><a id="ril_smsmsgin_all"></a><b>RIL_SMSMSGIN_ALL</b>
+### -field RIL_SMSMSGIN_ALL
 
 <dd></dd>
 </dl>

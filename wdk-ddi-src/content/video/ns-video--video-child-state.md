@@ -56,13 +56,13 @@ typedef struct _VIDEO_CHILD_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>Specifies the ID for a particular child device, as given to it by the miniport driver. This value is the same as that returned in the <i>UId</i> parameter of the <a href="..\video\nc-video-pvideo-hw-get-child-descriptor.md">HwVidGetVideoChildDescriptor</a> function.</p>
 </dd>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>Specifies the new state, on or off, for the child device. A value of one (1) indicates that the child device should be turned on; a value of zero (0) indicates that it should be turned off. One possible use for <b>State</b> is in hotkey switching from one display device to another.</p>

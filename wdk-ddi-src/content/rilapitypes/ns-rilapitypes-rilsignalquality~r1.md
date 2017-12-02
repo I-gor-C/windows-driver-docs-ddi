@@ -7,7 +7,7 @@ old-location: netvista\rilsignalquality_2.htm
 old-project: netvista
 ms.assetid: cc5bf370-3996-46de-b27d-8a390a6f407e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSIGNALQUALITY,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef struct _RILSIGNALQUALITY {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwSystemType</b>
+### -field dwSystemType
 
 <dd></dd>
 
-### -field <b>nNumSignalBars</b>
+### -field nNumSignalBars
 
 <dd></dd>
 
-### -field <b>nSignalStrength</b>
+### -field nSignalStrength
 
 <dd></dd>
 
-### -field <b>nSNRStrength</b>
+### -field nSNRStrength
 
 <dd></dd>
 </dl>

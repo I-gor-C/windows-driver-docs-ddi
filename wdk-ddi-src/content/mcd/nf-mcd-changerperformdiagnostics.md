@@ -55,13 +55,13 @@ NTSTATUS ChangerPerformDiagnostics(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object that represents the changer.</p>
 </dd>
 
-### -param <i>ChangerDeviceError</i> [out]
+### -param ChangerDeviceError [out]
 
 <dd>
 <p>Pointer to the buffer of type <a href="..\wmidata\ns-wmidata--wmi-changer-problem-device-error.md">WMI_CHANGER_PROBLEM_DEVICE_ERROR</a> in which the minidriver returns the diagnostic information.</p>

@@ -54,7 +54,7 @@ typedef struct _TAPE_SET_MEDIA_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>BlockSize</b>
+### -field BlockSize
 
 <dd>
 <p>Indicates the requested block size, in bytes, or zero for variable block size in a drive that supports it. </p>

@@ -54,7 +54,7 @@ PDEVICE_OBJECT KsQueryDevicePnpObject(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [in]
+### -param Header [in]
 
 <dd>
 <p>Points to a header previously allocated by <a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a> whose PnP device object is to be returned.</p>

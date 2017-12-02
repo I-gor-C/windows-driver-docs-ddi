@@ -56,19 +56,19 @@ NTSTATUS RegisterServiceRoutine(
 ## -parameters
 <dl>
 
-### -param <i>Routine</i> [in]
+### -param Routine [in]
 
 <dd>
 <p>Pointer to the routine that is to be called. This parameter is a function pointer of type PINTERRUPTSYNCROUTINE (see <a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>).</p>
 </dd>
 
-### -param <i>DynamicContext</i> [in]
+### -param DynamicContext [in]
 
 <dd>
 <p>Specifies a context value that is passed to the routine when it is called.</p>
 </dd>
 
-### -param <i>First</i> [in]
+### -param First [in]
 
 <dd>
 <p>Specifies whether the routine is added at the head or tail of the list of ISRs. If <b>TRUE</b>, the routine is added at the head of the list. If <b>FALSE</b>, it is added at the tail.</p>

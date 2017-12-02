@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="DockStateUnsupported"></a><a id="dockstateunsupported"></a><a id="DOCKSTATEUNSUPPORTED"></a><b>DockStateUnsupported</b>
+### -field DockStateUnsupported
 
 <dd>
 <p>Indicates that the portable computer does not support docking.</p>
 </dd>
 
-### -field <a id="DockStateUnDocked"></a><a id="dockstateundocked"></a><a id="DOCKSTATEUNDOCKED"></a><b>DockStateUnDocked</b>
+### -field DockStateUnDocked
 
 <dd>
 <p>Indicates that the portable computer is not docked.</p>
 </dd>
 
-### -field <a id="DockStateDocked"></a><a id="dockstatedocked"></a><a id="DOCKSTATEDOCKED"></a><b>DockStateDocked</b>
+### -field DockStateDocked
 
 <dd>
 <p>Indicates that the portable computer is docked.</p>
 </dd>
 
-### -field <a id="DockStateUnknown"></a><a id="dockstateunknown"></a><a id="DOCKSTATEUNKNOWN"></a><b>DockStateUnknown</b>
+### -field DockStateUnknown
 
 <dd>
 <p>Indicates that the docking state of the portable computer is not known.</p>

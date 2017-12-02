@@ -54,7 +54,7 @@ void __stdcall HidD_GetHidGuid(
 ## -parameters
 <dl>
 
-### -param <i>HidGuid</i> [out]
+### -param HidGuid [out]
 
 <dd>
 <p>Pointer to a caller-allocated GUID buffer that the routine uses to return the device interface GUID for HIDClass devices.</p>
@@ -67,7 +67,7 @@ void __stdcall HidD_GetHidGuid(
 ## -remarks
 <p>Only user-mode applications can call <b>HidD_GetHidGuid</b>.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>.</p>
 
 ## -requirements
 <table>

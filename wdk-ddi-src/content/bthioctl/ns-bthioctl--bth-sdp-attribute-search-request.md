@@ -58,14 +58,14 @@ typedef struct _BTH_SDP_ATTRIBUTE_SEARCH_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>hConnection</b>
+### -field hConnection
 
 <dd>
 <p>A handle to the remote SDP server that is returned by the 
      <a href="..\bthioctl\ni-bthioctl-ioctl-bth-sdp-connect.md">IOCTL_BTH_SDP_CONNECT</a> IOCTL.</p>
 </dd>
 
-### -field <b>searchFlags</b>
+### -field searchFlags
 
 <dd>
 <dl>
@@ -76,7 +76,7 @@ typedef struct _BTH_SDP_ATTRIBUTE_SEARCH_REQUEST {
 </dl>
 </dd>
 
-### -field <b>recordHandle</b>
+### -field recordHandle
 
 <dd>
 <p>The record handle that is returned by the remote SDP server from a previous call to the 
@@ -84,7 +84,7 @@ typedef struct _BTH_SDP_ATTRIBUTE_SEARCH_REQUEST {
      IOCTL_BTH_SDP_SERVICE_SEARCH</a> IOCTL.</p>
 </dd>
 
-### -field <b>range</b>
+### -field range
 
 <dd>
 <p>A variable-length array of structures of type 

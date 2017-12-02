@@ -7,7 +7,7 @@ old-location: netvista\rilimsstatus_v2.htm
 old-project: netvista
 ms.assetid: afc17375-a65d-495d-b68a-b74146cb8f69
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILIMSSTATUS_V2, RILIMSSTATUS_V2, *LPRILIMSSTATUS_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef struct _RILIMSSTATUS_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwAvailableServices</b>
+### -field dwAvailableServices
 
 <dd></dd>
 
-### -field <b>dwSMSSupportedFormat</b>
+### -field dwSMSSupportedFormat
 
 <dd></dd>
 
-### -field <b>wszServingDomain</b>
+### -field wszServingDomain
 
 <dd></dd>
 </dl>

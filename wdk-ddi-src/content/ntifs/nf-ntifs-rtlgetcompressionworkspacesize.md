@@ -7,7 +7,7 @@ old-location: ifsk\rtlgetcompressionworkspacesize.htm
 old-project: ifsk
 ms.assetid: f0e856f8-9c01-4219-b521-ab4a5c9bc35c
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlGetCompressionWorkSpaceSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ NTSTATUS RtlGetCompressionWorkSpaceSize(
 ## -parameters
 <dl>
 
-### -param <i>CompressionFormatAndEngine</i> [in]
+### -param CompressionFormatAndEngine [in]
 
 <dd>
 <p>Bitmask specifying the compression format and engine type. This parameter must be set to one of the following bitwise OR combinations:</p>
@@ -126,13 +126,13 @@ NTSTATUS RtlGetCompressionWorkSpaceSize(
 <p> </p>
 </dd>
 
-### -param <i>CompressBufferWorkSpaceSize</i> [out]
+### -param CompressBufferWorkSpaceSize [out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer receiving the size, in bytes, required to compress a buffer. This value is used to determine the correct size of <a href="..\ntifs\nf-ntifs-rtlcompressbuffer.md">RtlCompressBuffer</a>'s <i>WorkSpace</i> buffer.</p>
 </dd>
 
-### -param <i>CompressFragmentWorkSpaceSize</i> [out]
+### -param CompressFragmentWorkSpaceSize [out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer receiving the size, in bytes, required to decompress a compressed buffer to a fragment. This value is used to determine the correct size of <a href="..\ntifs\nf-ntifs-rtldecompressfragment.md">RtlDecompressFragment</a>'s <i>WorkSpace</i> buffer. Note that the <b>RtlCompressFragment</b> function does not currently exist.</p>
@@ -242,4 +242,4 @@ NTSTATUS RtlGetCompressionWorkSpaceSize(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetCompressionWorkSpaceSize function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetCompressionWorkSpaceSize function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

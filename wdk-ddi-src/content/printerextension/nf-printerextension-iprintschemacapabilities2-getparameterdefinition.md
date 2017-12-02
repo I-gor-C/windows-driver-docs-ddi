@@ -58,19 +58,19 @@ HRESULT GetParameterDefinition(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd>
 <p>The keyword name.</p>
 </dd>
 
-### -param <i>bstrNamespaceUri</i> [in]
+### -param bstrNamespaceUri [in]
 
 <dd>
 <p>The keyword namespace URI.</p>
 </dd>
 
-### -param <i>ppParameterDefinition</i> [out, retval]
+### -param ppParameterDefinition [out, retval]
 
 <dd>
 <p>The <b>IPrintSchemaParameterDefinition</b> object.</p>

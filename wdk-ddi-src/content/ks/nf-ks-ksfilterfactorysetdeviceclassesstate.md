@@ -55,13 +55,13 @@ NTSTATUS KsFilterFactorySetDeviceClassesState(
 ## -parameters
 <dl>
 
-### -param <i>FilterFactory</i> [in]
+### -param FilterFactory [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> for which to change device class status.</p>
 </dd>
 
-### -param <i>NewState</i> [in]
+### -param NewState [in]
 
 <dd>
 <p>If set to <b>TRUE</b>, the device classes are enabled; if <b>FALSE</b>, they are disabled.</p>

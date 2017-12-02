@@ -57,25 +57,25 @@ typedef struct _MOUNTMGR_CREATE_POINT_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>SymbolicLinkNameOffset</b>
+### -field SymbolicLinkNameOffset
 
 <dd>
 <p>Contains an offset in bytes into the output buffer where the symbolic link name is located. </p>
 </dd>
 
-### -field <b>SymbolicLinkNameLength</b>
+### -field SymbolicLinkNameLength
 
 <dd>
 <p>Contains the length in bytes of the symbolic link name stored in the output buffer. </p>
 </dd>
 
-### -field <b>DeviceNameOffset</b>
+### -field DeviceNameOffset
 
 <dd>
 <p>Contains an offset in bytes into the output buffer where the nonpersistent (target) device name is located. </p>
 </dd>
 
-### -field <b>DeviceNameLength</b>
+### -field DeviceNameLength
 
 <dd>
 <p>Contains the length in bytes of the nonpersistent (target) device name. </p>
@@ -83,7 +83,7 @@ typedef struct _MOUNTMGR_CREATE_POINT_INPUT {
 </dl>
 
 ## -remarks
-<p>The name given for purposes of identifying the volume can be of any type: a unique volume name, a symbolic link name, or a nonpersistent device name. For a discussion of the difference between symbolic link names and nonpersistent target device names, see <a href="NULL">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
+<p>The name given for purposes of identifying the volume can be of any type: a unique volume name, a symbolic link name, or a nonpersistent device name. For a discussion of the difference between symbolic link names and nonpersistent target device names, see <a href="storage.supporting_mount_manager_requests_in_a_storage_class_driver">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
 
 ## -requirements
 <table>

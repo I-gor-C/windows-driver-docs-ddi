@@ -61,25 +61,25 @@ VOID APIENTRY AgpFreePhysical(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the device extension of the miniport driver.</p>
 </dd>
 
-### -param <i>PhysicalReserveContext</i> [in]
+### -param PhysicalReserveContext [in]
 
 <dd>
 <p>Identifies a reserved physical address range. This context handle was obtained from <a href="..\videoagp\nc-videoagp-pagp-reserve-physical.md">AgpReservePhysical</a>.</p>
 </dd>
 
-### -param <i>Pages</i> [in]
+### -param Pages [in]
 
 <dd>
 <p>Specifies the number of pages of system memory that the video port driver should unmap.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the page offset into the reserved physical address range identified by <b>PhysicalReserveContext</b> that indicates the actual base address at which to unmap system memory.</p>

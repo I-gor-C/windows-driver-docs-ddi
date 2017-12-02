@@ -56,16 +56,16 @@ FORCEINLINE NTSTATUS UdecxWdfDeviceAddUsbDeviceEmulation(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to the framework device object that the client driver retrieved in the previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.</p>
 </dd>
 
-### -param <i>Config</i> [in]
+### -param Config [in]
 
 <dd>
-<p> A pointer to a <a href="buses.udecx_wdf_device_config">UDECX_WDF_DEVICE_CONFIG</a> structure that the client driver initialized by calling <a href="buses.udecx_wdf_device_config_init">UDECX_WDF_DEVICE_CONFIG_INIT</a>.</p>
+<p> A pointer to a <a href="..\udecxwdfdevice\ns-udecxwdfdevice--udecx-wdf-device-config.md">UDECX_WDF_DEVICE_CONFIG</a> structure that the client driver initialized by calling <a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecx-wdf-device-config-init.md">UDECX_WDF_DEVICE_CONFIG_INIT</a>.</p>
 </dd>
 </dl>
 
@@ -75,7 +75,7 @@ FORCEINLINE NTSTATUS UdecxWdfDeviceAddUsbDeviceEmulation(
 ## -remarks
 <p>The UDE client driver for the emulated host controller and the USB device must call this method after the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call. </p>
 
-<p>During this call, the client driver-supplied event callback implementations are also registered. Supply function  pointers to those functions by call setting appropriate members of <a href="buses.udecx_wdf_device_config">UDECX_WDF_DEVICE_CONFIG</a>. </p>
+<p>During this call, the client driver-supplied event callback implementations are also registered. Supply function  pointers to those functions by call setting appropriate members of <a href="..\udecxwdfdevice\ns-udecxwdfdevice--udecx-wdf-device-config.md">UDECX_WDF_DEVICE_CONFIG</a>. </p>
 
 <p>The method makes the framework device object capable of performing operations related to a controller and its root hub, such as handling various queues required to process IOCTL requests sent to the attached USB device. </p>
 

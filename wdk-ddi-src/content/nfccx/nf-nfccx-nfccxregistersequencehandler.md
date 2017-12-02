@@ -56,19 +56,19 @@ NTSTATUS NfcCxRegisterSequenceHandler(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> 
+### -param Device 
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>Sequence</i> 
+### -param Sequence 
 
 <dd>
 <p>An <a href="..\nfccx\ne-nfccx--nfc-cx-sequence.md">NFC_CX_SEQUENCE</a>-typed enumerator.</p>
 </dd>
 
-### -param <i>EvtNfcCxSequenceHandler</i> 
+### -param EvtNfcCxSequenceHandler 
 
 <dd>
 <p>A pointer to an <a href="..\nfccx\nc-nfccx-evt-nfc-cx-sequence-handler.md">EvtNfcCxSequenceHandler</a> callback function. </p>

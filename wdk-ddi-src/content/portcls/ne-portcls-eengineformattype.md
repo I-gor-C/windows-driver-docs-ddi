@@ -56,19 +56,19 @@ typedef enum _eEngineFormatType {
 ## -enum-fields
 <dl>
 
-### -field <a id="eMixFormat"></a><a id="emixformat"></a><a id="EMIXFORMAT"></a><b>eMixFormat</b>
+### -field eMixFormat
 
 <dd>
 <p>Indicates a data format for the Mixer.</p>
 </dd>
 
-### -field <a id="eDeviceFormat"></a><a id="edeviceformat"></a><a id="EDEVICEFORMAT"></a><b>eDeviceFormat</b>
+### -field eDeviceFormat
 
 <dd>
 <p>Indicates the default data format for the audio adapter.</p>
 </dd>
 
-### -field <a id="eSupportedDeviceFormats"></a><a id="esupporteddeviceformats"></a><a id="ESUPPORTEDDEVICEFORMATS"></a><b>eSupportedDeviceFormats</b>
+### -field eSupportedDeviceFormats
 
 <dd>
 <p>Indicates all the data formats supported by the audio adapter.</p>

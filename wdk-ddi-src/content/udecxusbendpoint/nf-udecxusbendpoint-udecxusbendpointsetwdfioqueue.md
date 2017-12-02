@@ -56,13 +56,13 @@ FORCEINLINE void UdecxUsbEndpointSetWdfIoQueue(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbEndpoint</i> [in]
+### -param UdecxUsbEndpoint [in]
 
 <dd>
-<p>A handle to a UDE endpoint object. The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a>.</p>
+<p>A handle to a UDE endpoint object. The client driver retrieved this pointer in the previous call to <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>.</p>
 </dd>
 
-### -param <i>WdfQueue</i> [in]
+### -param WdfQueue [in]
 
 <dd>
 <p>A handle to a framework queue object that will handle requests sent to the endpoint. The client driver retrieved this pointer in the previous call to <a href="..\wdfio\nf-wdfio-wdfioqueuecreate.md">WdfIoQueueCreate</a>. </p>

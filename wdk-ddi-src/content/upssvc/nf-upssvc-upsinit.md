@@ -55,7 +55,7 @@ DWORD UPSInit(
 ## -parameters
 <dl>
 
-### -param <i></i> 
+### -param  
 
 <dd>
 <p>None</p>
@@ -84,7 +84,7 @@ DWORD UPSInit(
 
 <p>Determining the initial state of the UPS unit</p>
 
-<p>Updating <a href="NULL">UPS registry entries</a>
+<p>Updating <a href="https://msdn.microsoft.com/d0d4ef8f-9df1-48a3-b0fc-cea4eb3cdf40">UPS registry entries</a>
 </p>
 
 <p>Beginning the monitoring of the UPS unit</p>

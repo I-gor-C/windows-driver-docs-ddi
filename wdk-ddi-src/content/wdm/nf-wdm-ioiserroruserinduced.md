@@ -55,7 +55,7 @@ BOOLEAN IoIsErrorUserInduced(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>Specifies the current NTSTATUS value, usually within the driver's <a href="kernel.dpcforisr">DpcForIsr</a> routine.</p>
@@ -133,7 +133,7 @@ BOOLEAN IoIsErrorUserInduced(
 <a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
+<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
 </dt>
 </dl>
 <p> </p>

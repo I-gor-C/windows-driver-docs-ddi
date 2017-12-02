@@ -61,19 +61,19 @@ VOID APIENTRY ClearDepthStencilView(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hDepthStencilView</i> [in]
+### -param hDepthStencilView [in]
 
 <dd>
 <p> A handle to the depth-stencil view to clear. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p> A value that specifies which parts of the buffer to affect. This parameter must be set to one of the following values from the D3D10_DDI_CLEAR_FLAG enumeration.</p>
@@ -102,13 +102,13 @@ VOID APIENTRY ClearDepthStencilView(
 <p> </p>
 </dd>
 
-### -param <i>Depth</i> [in]
+### -param Depth [in]
 
 <dd>
 <p> A single-precision float vector to set the depth to. </p>
 </dd>
 
-### -param <i>Stencil</i> [in]
+### -param Stencil [in]
 
 <dd>
 <p> An unsigned 8-bit integer value to set the stencil to. </p>

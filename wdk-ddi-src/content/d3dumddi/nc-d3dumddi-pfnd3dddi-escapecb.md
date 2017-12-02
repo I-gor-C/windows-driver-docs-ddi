@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnEscapeCb(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>A handle to the graphics adapter object.</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-escape.md">D3DDDICB_ESCAPE</a> structure that describes the shared information.</p>

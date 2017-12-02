@@ -67,37 +67,37 @@ typedef struct _DXGK_PRE_START_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ReservedIn</b>
+### -field ReservedIn
 
 <dd>
 <p>This value is reserved for system use.</p>
 </dd>
 
-### -field <b>Input</b>
+### -field Input
 
 <dd>
 <p>The combined UINT value operated on.</p>
 </dd>
 
-### -field <b>SupportPreserveBootDisplay</b>
+### -field SupportPreserveBootDisplay
 
 <dd>
 <p>Flag which indicates support for preserving the timing and content of the firmware display mode across DxgkDdiStartDevice.</p>
 </dd>
 
-### -field <b>IsUEFIFrameBufferCpuAccessibleDuringStartup</b>
+### -field IsUEFIFrameBufferCpuAccessibleDuringStartup
 
 <dd>
 <p>Indicates that the driver can maintain same CPU virtual address mapping to the UEFI frame buffer during driver initialization.</p>
 </dd>
 
-### -field <b>ReservedOut</b>
+### -field ReservedOut
 
 <dd>
 <p>This value is reserved for system use.</p>
 </dd>
 
-### -field <b>Output</b>
+### -field Output
 
 <dd>
 <p>The combined UINT value operated on.</p>

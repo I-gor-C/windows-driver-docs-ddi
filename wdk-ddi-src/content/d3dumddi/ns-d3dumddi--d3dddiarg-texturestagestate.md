@@ -56,13 +56,13 @@ typedef struct _D3DDDIARG_TEXTURESTAGESTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Stage</b>
+### -field Stage
 
 <dd>
 <p>[in] The stage in a multiple-texture group that indicates the texture to be updated. This member can be an integer in the range from 0 through 7, with the highest numbered texture being closest to the frame buffer.</p>
 </dd>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>[in] A D3DDDITEXTURESTAGESTATETYPE-typed value that indicates the texture state to be updated. </p>
@@ -94,7 +94,7 @@ typedef struct _D3DDDIARG_TEXTURESTAGESTATE {
 <p> </p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] The value to which the driver should update the texture state that is identified by the <b>Stage</b> and <b>State</b> members. For more information about values that can be updated for each texture state, see the definitions of the corresponding texture state in the D3DTEXTURESTAGESTATETYPE or D3DSAMPLERSTATETYPE enumeration type in the DirectX SDK documentation.</p>

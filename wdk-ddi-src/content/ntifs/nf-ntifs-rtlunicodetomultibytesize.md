@@ -7,7 +7,7 @@ old-location: ifsk\rtlunicodetomultibytesize.htm
 old-project: ifsk
 ms.assetid: 603a5554-2e61-49f1-a4b1-e0f0f3ba36c8
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlUnicodeToMultiByteSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ NTSTATUS RtlUnicodeToMultiByteSize(
 ## -parameters
 <dl>
 
-### -param <i>BytesInMultiByteString</i> [out]
+### -param BytesInMultiByteString [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the number of bytes required to store the translated string. </p>
 </dd>
 
-### -param <i>UnicodeString</i> [in]
+### -param UnicodeString [in]
 
 <dd>
 <p>Pointer to the Unicode string for which the multibyte length is to be calculated. </p>
 </dd>
 
-### -param <i>BytesInUnicodeString</i> [in]
+### -param BytesInUnicodeString [in]
 
 <dd>
 <p>Length, in bytes, of the source string. </p>
@@ -151,4 +151,4 @@ NTSTATUS RtlUnicodeToMultiByteSize(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlUnicodeToMultiByteSize routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlUnicodeToMultiByteSize routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

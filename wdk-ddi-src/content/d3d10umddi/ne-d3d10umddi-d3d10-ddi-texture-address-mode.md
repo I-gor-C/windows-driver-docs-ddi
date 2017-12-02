@@ -58,31 +58,31 @@ typedef enum D3D10_DDI_TEXTURE_ADDRESS_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D10_DDI_TEXTURE_ADDRESS_WRAP"></a><a id="d3d10_ddi_texture_address_wrap"></a><b>D3D10_DDI_TEXTURE_ADDRESS_WRAP</b>
+### -field D3D10_DDI_TEXTURE_ADDRESS_WRAP
 
 <dd>
 <p>Tile the texture at every integer junction. For example, for u values between 0 and 3, the texture is repeated three times; no mirroring is performed.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_TEXTURE_ADDRESS_MIRROR"></a><a id="d3d10_ddi_texture_address_mirror"></a><b>D3D10_DDI_TEXTURE_ADDRESS_MIRROR</b>
+### -field D3D10_DDI_TEXTURE_ADDRESS_MIRROR
 
 <dd>
 <p>Similar to D3D10_DDI_TEXTURE_ADDRESS_WRAP, except that the texture is flipped at every integer junction. For u values between 0 and 1, for example, the texture is addressed normally; between 1 and 2, the texture is flipped (mirrored); and between 2 and 3, the texture is normal again, and so on.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_TEXTURE_ADDRESS_CLAMP"></a><a id="d3d10_ddi_texture_address_clamp"></a><b>D3D10_DDI_TEXTURE_ADDRESS_CLAMP</b>
+### -field D3D10_DDI_TEXTURE_ADDRESS_CLAMP
 
 <dd>
 <p>Texture coordinates outside the range [0.0, 1.0] are set to the texture color at 0.0 or 1.0, respectively.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_TEXTURE_ADDRESS_BORDER"></a><a id="d3d10_ddi_texture_address_border"></a><b>D3D10_DDI_TEXTURE_ADDRESS_BORDER</b>
+### -field D3D10_DDI_TEXTURE_ADDRESS_BORDER
 
 <dd>
 <p>Texture coordinates outside the range [0.0, 1.0] are set to the border color.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_TEXTURE_ADDRESS_MIRRORONCE"></a><a id="d3d10_ddi_texture_address_mirroronce"></a><b>D3D10_DDI_TEXTURE_ADDRESS_MIRRORONCE</b>
+### -field D3D10_DDI_TEXTURE_ADDRESS_MIRRORONCE
 
 <dd>
 <p>Similar to D3D10_DDI_TEXTURE_ADDRESS_MIRROR and D3D10_DDI_TEXTURE_ADDRESS_CLAMP. Takes the absolute value of the texture coordinate (thus, mirroring around 0), and then clamps to the maximum value. The most common usage of D3D10_DDI_TEXTURE_ADDRESS_MIRRORONCE is for volume textures, where support for the full D3D10_DDI_TEXTURE_ADDRESS_MIRRORONCE texture-addressing mode is not necessary, but the data is symmetric around the one axis.</p>

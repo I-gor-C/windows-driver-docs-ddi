@@ -61,28 +61,28 @@ typedef struct _DXGK_BRIGHTNESS_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>SmoothBrightness</b>
+### -field SmoothBrightness
 
 <dd>
 <p>[in] If set, the integrated display panel supports smooth brightness control.</p>
 <p>Setting this member is equivalent to setting the first bit of a 32-bit value (0x00000001).</p>
 </dd>
 
-### -field <b>AdaptiveBrightness</b>
+### -field AdaptiveBrightness
 
 <dd>
 <p>[in] If set, the integrated display panel supports adaptive brightness control.</p>
 <p>Setting this member is equivalent to setting the second bit of a 32-bit value (0x00000002).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.
 Setting this member is equivalent to setting the remaining 30 bits (0xFFFFFFFC) of a 32-bit value to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] A member in the union that <b>DXGK_BRIGHTNESS_CAPS</b> contains that can hold one 32-bit value that identifies information about the display miniport driver's brightness control capabilities.</p>

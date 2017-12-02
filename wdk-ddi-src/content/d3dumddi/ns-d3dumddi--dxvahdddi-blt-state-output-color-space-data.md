@@ -64,35 +64,35 @@ typedef struct _DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Usage</b>
+### -field Usage
 
 <dd>
 <p>[in] A UINT value that specifies whether the decode device should perform video playback (for example, presenting to the screen) or video processing (for example, video editing or authoring). The driver can perform the optimal color conversion based on the output device context. The default value is zero, which indicates video playback.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001). </p>
 </dd>
 
-### -field <b>RGB_Range</b>
+### -field RGB_Range
 
 <dd>
 <p>[in] A UINT value that specifies whether the output is full range RGB (that is, 0 to 255) or limited range RGB (that is, 16 to 235). The default value is zero, which indicates full range RGB.</p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002). </p>
 </dd>
 
-### -field <b>YCbCr_Matrix</b>
+### -field YCbCr_Matrix
 
 <dd>
 <p>[in] A UINT value that specifies whether the output is BT.601 (for standard digital television) or BT.709 (for high-definition television). The default value is zero, which indicates BT.601. </p>
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>YCbCr_xvYCC</b>
+### -field YCbCr_xvYCC
 
 <dd>
 <p>[in] A UINT value that specifies whether the output is conventional YCbCr or extended YCbCr (xvYCC). The default is zero, which indicates conventional YCbCr. </p>
 <p>Setting this member is equivalent to setting the fourth bit of the 32-bit <b>Value</b> member (0x00000008).</p>
 </dd>
 
-### -field <b>Nominal_Range</b>
+### -field Nominal_Range
 
 <dd>
 <p>[in] A UINT value that specifies that the luminance range of YUV data is described by the <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-nominal-range.md">DXVAHDDDI_NOMINAL_RANGE</a> enumeration. The default is zero, which indicates the studio luminance range of 16 to 255, inclusive [16, 235].</p>
@@ -101,14 +101,14 @@ typedef struct _DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA {
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] Reserved. Must be zero.</p>
 <p>This member is equivalent to the remaining 26 bits (0xFFFFFFC0) of the 32-bit <b>Value</b> member.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] A 32-bit value that describes the color space of the output. </p>

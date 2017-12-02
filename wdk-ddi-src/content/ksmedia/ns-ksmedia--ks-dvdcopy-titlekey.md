@@ -57,7 +57,7 @@ typedef struct _KS_DVDCOPY_TITLEKEY {
 ## -struct-fields
 <dl>
 
-### -field <b>KeyFlags</b>
+### -field KeyFlags
 
 <dd>
 <p>Title key flags settings that provide Copyrighted Material flag (CPM), Copy Guard Management System (CGMS) and Copyright Protection System (CP_SEC) copyright protection flags from the DVD drive. The following CGMS flags are defined:</p>
@@ -158,19 +158,19 @@ typedef struct _KS_DVDCOPY_TITLEKEY {
 <p> </p>
 </dd>
 
-### -field <b>ReservedNT</b>
+### -field ReservedNT
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>TitleKey</b>
+### -field TitleKey
 
 <dd>
 <p>Specifies the current title key.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Do not use.</p>
@@ -180,7 +180,7 @@ typedef struct _KS_DVDCOPY_TITLEKEY {
 ## -remarks
 <p>The KS_DVDCOPY_TITLEKEY structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565148">KSPROPERTY_DVDCOPY_TITLE_KEY</a> property.</p>
 
-<p>For more information, see <a href="NULL">DVD Copyright Protection</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/ff9cf8c8-7c8f-485c-b2ab-7567a5eeb87b">DVD Copyright Protection</a>.</p>
 
 ## -requirements
 <table>

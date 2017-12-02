@@ -7,7 +7,7 @@ old-location: ifsk\fsctl_offload_write_input.htm
 old-project: ifsk
 ms.assetid: 4ADBBBDC-02DD-4D1A-B697-6286D7513B2E
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FSCTL_OFFLOAD_WRITE_INPUT, FSCTL_OFFLOAD_WRITE_INPUT, *PFSCTL_OFFLOAD_WRITE_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ typedef struct _FSCTL_OFFLOAD_WRITE_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure. Set this member to <b>sizeof</b>(FSCTL_OFFLOAD_WRITE_INPUT).</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p> This member is not used. Set to 0.</p>
 </dd>
 
-### -field <b>FileOffset</b>
+### -field FileOffset
 
 <dd>
 <p> The position in the file to begin writing to. The offset value must be aligned to a logical sector boundary on the volume.</p>
 </dd>
 
-### -field <b>CopyLength</b>
+### -field CopyLength
 
 <dd>
 <p> The length, in bytes, of data to write, starting at <b>FileOffset</b>. The length  value must align to a logical sector boundary on the volume, except when the length matches end-of-file.</p>
 </dd>
 
-### -field <b>TransferOffset</b>
+### -field TransferOffset
 
 <dd>
 <p> The position in the data associated with <b>Token</b> to begin writing from.</p>
 </dd>
 
-### -field <b>Token</b>
+### -field Token
 
 <dd>
 <p>A byte array that contains a token structure, <a href="..\ntddstor\ns-ntddstor--storage-offload-token.md">STORAGE_OFFLOAD_TOKEN</a>, representing a file data range to be logically written. The contents of <b>Token</b>  must remain unmodified between offload operations.</p>
@@ -138,4 +138,4 @@ typedef struct _FSCTL_OFFLOAD_WRITE_INPUT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSCTL_OFFLOAD_WRITE_INPUT structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSCTL_OFFLOAD_WRITE_INPUT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

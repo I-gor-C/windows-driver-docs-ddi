@@ -56,19 +56,19 @@ typedef struct _DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>RepeatFrame</b>
+### -field RepeatFrame
 
 <dd>
 <p>[in] A Boolean value that specifies whether the frame rate conversion repeats or interpolates the frames. The driver refers to <b>RepeatFrame</b> only when it uses the frame rate conversion. The default value is <b>FALSE</b>, which indicates that the frame rate conversion interpolates the frames. </p>
 </dd>
 
-### -field <b>OutputRate</b>
+### -field OutputRate
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-output-rate.md">DXVAHDDDI_OUTPUT_RATE</a>-typed value that indicates the output rate of the input stream. The default value is DXVAHDDDI_OUTPUT_RATE_NORMAL. </p>
 </dd>
 
-### -field <b>CustomRate</b>
+### -field CustomRate
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies a fractional value that represents a custom output rate. The driver refers to <b>CustomRate</b> only when the value that is specified in <b>OutputRate</b> is DXVAHDDDI_OUTPUT_RATE_CUSTOM. The default value is 1/1. </p>

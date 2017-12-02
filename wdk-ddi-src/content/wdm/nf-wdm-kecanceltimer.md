@@ -55,7 +55,7 @@ BOOLEAN KeCancelTimer(
 ## -parameters
 <dl>
 
-### -param <i>Timer</i> [in, out]
+### -param Timer [in, out]
 
 <dd>
 <p>Pointer to an initialized timer object, for which the caller provides the storage.</p>

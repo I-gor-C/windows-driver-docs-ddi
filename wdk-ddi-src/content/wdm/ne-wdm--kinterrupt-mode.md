@@ -56,13 +56,13 @@ typedef enum _KINTERRUPT_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="LevelSensitive"></a><a id="levelsensitive"></a><a id="LEVELSENSITIVE"></a><b>LevelSensitive</b>
+### -field LevelSensitive
 
 <dd>
 <p>The interrupt is level-triggered. This is the mode for traditional PCI line-based interrupts.</p>
 </dd>
 
-### -field <a id="Latched"></a><a id="latched"></a><a id="LATCHED"></a><b>Latched</b>
+### -field Latched
 
 <dd>
 <p>The interrupt is edge-triggered. This is the mode for PCI message-signaled interrupts. </p>

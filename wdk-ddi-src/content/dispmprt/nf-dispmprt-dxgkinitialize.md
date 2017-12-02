@@ -56,19 +56,19 @@ NTSTATUS DxgkInitialize(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a> structure. The display miniport driver previously obtained this pointer in its <a href="display.driverentry_of_display_miniport_driver">DriverEntry</a> function.</p>
 </dd>
 
-### -param <i>RegistryPath</i> [in]
+### -param RegistryPath [in]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that supplies the path to the driver's service registry key.  The display miniport driver previously obtained this pointer in its <a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a> function.</p>
 </dd>
 
-### -param <i>DriverInitializationData</i> [in]
+### -param DriverInitializationData [in]
 
 <dd>
 <p>A pointer to a <a href="..\dispmprt\ns-dispmprt--driver-initialization-data.md">DRIVER_INITIALIZATION_DATA</a> structure that supplies the DirectX graphics kernel subsystem with pointers to functions implemented by the display miniport driver.</p>

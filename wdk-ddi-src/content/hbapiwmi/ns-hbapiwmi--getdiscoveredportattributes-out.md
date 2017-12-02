@@ -55,13 +55,13 @@ typedef struct _GetDiscoveredPortAttributes_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains a value associated with the WMI class qualifier <a href="storage.hba_status">HBA_STATUS</a> that indicates the result of an HBA query operation.</p>
 </dd>
 
-### -field <b>PortAttributes</b>
+### -field PortAttributes
 
 <dd>
 <p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--msfc-hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a> that holds the port attributes to report.</p>

@@ -59,7 +59,7 @@ typedef struct IDDCX_PATH {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -67,7 +67,7 @@ typedef struct IDDCX_PATH {
                  </p>
 </dd>
 
-### -field <b>MonitorObject</b>
+### -field MonitorObject
 
 <dd>
 <p>
@@ -75,7 +75,7 @@ typedef struct IDDCX_PATH {
                  </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>
@@ -83,7 +83,7 @@ typedef struct IDDCX_PATH {
                  </p>
 </dd>
 
-### -field <b>TargetVideoSignalInfo</b>
+### -field TargetVideoSignalInfo
 
 <dd>
 <p>The details of the target mode signal. 

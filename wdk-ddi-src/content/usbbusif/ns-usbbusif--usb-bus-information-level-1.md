@@ -58,25 +58,25 @@ typedef struct _USB_BUS_INFORMATION_LEVEL_1 {
 ## -struct-fields
 <dl>
 
-### -field <b>TotalBandwidth</b>
+### -field TotalBandwidth
 
 <dd>
 <p>Specifies the total bandwidth, in bits per second, available on the bus. </p>
 </dd>
 
-### -field <b>ConsumedBandwidth</b>
+### -field ConsumedBandwidth
 
 <dd>
 <p>Specifies the mean bandwidth already in use, in bits per second. </p>
 </dd>
 
-### -field <b>ControllerNameLength</b>
+### -field ControllerNameLength
 
 <dd>
 <p>Specifies the length of symbolic name for the host controller, in Unicode.</p>
 </dd>
 
-### -field <b>ControllerNameUnicodeString</b>
+### -field ControllerNameUnicodeString
 
 <dd>
 <p>Specifies the symbolic name for the host controller, in Unicode. </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilsetmsginuiccstatusparams_2.htm
 old-project: netvista
 ms.assetid: 12181c9d-c0bd-48ee-8eaf-64cc66c272f4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSETMSGINUICCSTATUSPARAMS, RILSETMSGINUICCSTATUSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILSETMSGINUICCSTATUSPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwIndex</b>
+### -field dwIndex
 
 <dd></dd>
 
-### -field <b>dwStatus</b>
+### -field dwStatus
 
 <dd></dd>
 </dl>

@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>NumberOfInputs</b>
+### -field NumberOfInputs
 
 <dd>
 <p>Indicates the number of audio and video input pins on the crossbar.</p>
 </dd>
 
-### -field <b>NumberOfOutputs</b>
+### -field NumberOfOutputs
 
 <dd>
 <p>Indicates the number of audio and video output pins on the crossbar.</p>

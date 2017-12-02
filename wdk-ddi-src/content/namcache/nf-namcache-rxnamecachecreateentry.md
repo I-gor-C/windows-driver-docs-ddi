@@ -7,7 +7,7 @@ old-location: ifsk\rxnamecachecreateentry.htm
 old-project: ifsk
 ms.assetid: 1cfe2d2d-99fa-4dc2-b517-5026fd72d5d4
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxNameCacheCreateEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ PNAME_CACHE RxNameCacheCreateEntry(
 ## -parameters
 <dl>
 
-### -param <i>NameCacheCtl</i> [in]
+### -param NameCacheCtl [in]
 
 <dd>
 <p>A pointer to the NAME_CACHE_CONTROL structure from which to allocate the entry.</p>
 </dd>
 
-### -param <i>Name</i> [in]
+### -param Name [in]
 
 <dd>
 <p>A pointer to the Unicode name string with which to initialize the name cache entry.</p>
 </dd>
 
-### -param <i>CaseInsensitive</i> [in]
+### -param CaseInsensitive [in]
 
 <dd>
 <p>A Boolean value that indicates if case insensitive comparions should be used when comparing the <i>Name</i> parameter. </p>
@@ -144,4 +144,4 @@ PNAME_CACHE RxNameCacheCreateEntry(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxNameCacheCreateEntry function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxNameCacheCreateEntry function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

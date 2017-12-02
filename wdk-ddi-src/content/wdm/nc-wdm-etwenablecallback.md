@@ -64,46 +64,46 @@ VOID EtwEnableCallback(
 ## -parameters
 <dl>
 
-### -param <i>SourceId</i> [in]
+### -param SourceId [in]
 
 <dd>
 <p>The GUID that identifies the session that enabled the provider. </p>
 </dd>
 
-### -param <i>IsEnabled</i> [in]
+### -param IsEnabled [in]
 
 <dd>
 <p>The parameter indicates whether the provider is being enabled or disabled. The value is <b>TRUE</b> if the session enabled the provider; otherwise, it is <b>FALSE</b>.</p>
 </dd>
 
-### -param <i>Level</i> [in]
+### -param Level [in]
 
 <dd>
 <p>The level at which the event is enabled. This parameter is a provider-defined value that specifies the verboseness of the events that the provider writes. The provider must write the event if this value is less than or equal to the level value that the event defines. </p>
 <p>This value is passed in the <i>Level</i> parameter of the <a href="http://go.microsoft.com/fwlink/p/?linkid=103398">EnableTraceEx</a> function or the <i>EnableLevel</i> parameter of the <a href="http://go.microsoft.com/fwlink/p/?linkid=103399">EnableTrace</a> function.</p>
 </dd>
 
-### -param <i>MatchAnyKeyword</i> [in]
+### -param MatchAnyKeyword [in]
 
 <dd>
 <p>The bitmask of keywords that the provider uses to determine the category of events that it writes. </p>
 <p>This value is passed in the <i>MatchAnyKeyword</i> parameter of the <a href="http://go.microsoft.com/fwlink/p/?linkid=103398">EnableTraceEx</a> function or the <i>EnableFlag</i> parameter of the <a href="http://go.microsoft.com/fwlink/p/?linkid=103399">EnableTrace</a> function. <i>MatchAnyKeyword</i> is a 64-bit value and is basically an extended version of the 32-bit <i>EnableFlag</i>.</p>
 </dd>
 
-### -param <i>MatchAllKeyword</i> [in]
+### -param MatchAllKeyword [in]
 
 <dd>
 <p>This bitmask additionally restricts the category of events that the provider writes. </p>
 <p>This value is passed in the <i>MatchAllKeywords</i> parameter of the <b>EnableTraceEx</b> function.</p>
 </dd>
 
-### -param <i>FilterData</i> [in, optional]
+### -param FilterData [in, optional]
 
 <dd>
 <p>The provider-defined data. This parameter is optional. The provider determines the layout of the data and its purpose. For example, the provider can use this data to additionally filter the events that it writes or use it to perform some calculations before writing the events. For detailed information, see <a href="devtest.event_filter_descriptor">Event Filter Descriptor</a>.</p>
 </dd>
 
-### -param <i>CallbackContext</i> [in, out, optional]
+### -param CallbackContext [in, out, optional]
 
 <dd>
 <p>The context of the callback function that is defined when the provider called <a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a> to register itself. This parameter is optional.</p>

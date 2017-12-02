@@ -96,253 +96,253 @@ typedef enum _STDVARIABLEINDEX {
 ## -enum-fields
 <dl>
 
-### -field <a id="SVI_NUMDATABYTES"></a><a id="svi_numdatabytes"></a><b>SVI_NUMDATABYTES</b>
+### -field SVI_NUMDATABYTES
 
 <dd>
 <p>The number of data bytes.</p>
 </dd>
 
-### -field <a id="SVI_WIDTHINBYTES"></a><a id="svi_widthinbytes"></a><b>SVI_WIDTHINBYTES</b>
+### -field SVI_WIDTHINBYTES
 
 <dd>
 <p>The raster data width in bytes.</p>
 </dd>
 
-### -field <a id="SVI_HEIGHTINPIXELS"></a><a id="svi_heightinpixels"></a><b>SVI_HEIGHTINPIXELS</b>
+### -field SVI_HEIGHTINPIXELS
 
 <dd>
 <p>The raster data height in pixels.</p>
 </dd>
 
-### -field <a id="SVI_COPIES"></a><a id="svi_copies"></a><b>SVI_COPIES</b>
+### -field SVI_COPIES
 
 <dd>
 <p>The number of copies.</p>
 </dd>
 
-### -field <a id="SVI_PRINTDIRECTION"></a><a id="svi_printdirection"></a><b>SVI_PRINTDIRECTION</b>
+### -field SVI_PRINTDIRECTION
 
 <dd>
 <p>The print direction in CC degrees.</p>
 </dd>
 
-### -field <a id="SVI_DESTX"></a><a id="svi_destx"></a><b>SVI_DESTX</b>
+### -field SVI_DESTX
 
 <dd>
 <p>The x destination.</p>
 </dd>
 
-### -field <a id="SVI_DESTY"></a><a id="svi_desty"></a><b>SVI_DESTY</b>
+### -field SVI_DESTY
 
 <dd>
 <p>The y destination.</p>
 </dd>
 
-### -field <a id="SVI_DESTXREL"></a><a id="svi_destxrel"></a><b>SVI_DESTXREL</b>
+### -field SVI_DESTXREL
 
 <dd>
 <p>The relative x destination.</p>
 </dd>
 
-### -field <a id="SVI_DESTYREL"></a><a id="svi_destyrel"></a><b>SVI_DESTYREL</b>
+### -field SVI_DESTYREL
 
 <dd>
 <p>The relative y direction.</p>
 </dd>
 
-### -field <a id="SVI_LINEFEEDSPACING"></a><a id="svi_linefeedspacing"></a><b>SVI_LINEFEEDSPACING</b>
+### -field SVI_LINEFEEDSPACING
 
 <dd>
 <p>The line feed spacing.</p>
 </dd>
 
-### -field <a id="SVI_RECTXSIZE"></a><a id="svi_rectxsize"></a><b>SVI_RECTXSIZE</b>
+### -field SVI_RECTXSIZE
 
 <dd>
 <p>The x rect size.</p>
 </dd>
 
-### -field <a id="SVI_RECTYSIZE"></a><a id="svi_rectysize"></a><b>SVI_RECTYSIZE</b>
+### -field SVI_RECTYSIZE
 
 <dd>
 <p>The y rect size.</p>
 </dd>
 
-### -field <a id="SVI_GRAYPERCENT"></a><a id="svi_graypercent"></a><b>SVI_GRAYPERCENT</b>
+### -field SVI_GRAYPERCENT
 
 <dd>
 <p>The gray percentage.</p>
 </dd>
 
-### -field <a id="SVI_NEXTFONTID"></a><a id="svi_nextfontid"></a><b>SVI_NEXTFONTID</b>
+### -field SVI_NEXTFONTID
 
 <dd>
 <p>The next font ID.</p>
 </dd>
 
-### -field <a id="SVI_NEXTGLYPH"></a><a id="svi_nextglyph"></a><b>SVI_NEXTGLYPH</b>
+### -field SVI_NEXTGLYPH
 
 <dd>
 <p>The next glyph.</p>
 </dd>
 
-### -field <a id="SVI_PHYSPAPERLENGTH"></a><a id="svi_physpaperlength"></a><b>SVI_PHYSPAPERLENGTH</b>
+### -field SVI_PHYSPAPERLENGTH
 
 <dd>
 <p>The physical paper length.</p>
 </dd>
 
-### -field <a id="SVI_PHYSPAPERWIDTH"></a><a id="svi_physpaperwidth"></a><b>SVI_PHYSPAPERWIDTH</b>
+### -field SVI_PHYSPAPERWIDTH
 
 <dd>
 <p>The physical paper width.</p>
 </dd>
 
-### -field <a id="SVI_FONTHEIGHT"></a><a id="svi_fontheight"></a><b>SVI_FONTHEIGHT</b>
+### -field SVI_FONTHEIGHT
 
 <dd>
 <p>The font height.</p>
 </dd>
 
-### -field <a id="SVI_FONTWIDTH"></a><a id="svi_fontwidth"></a><b>SVI_FONTWIDTH</b>
+### -field SVI_FONTWIDTH
 
 <dd>
 <p>The font width.</p>
 </dd>
 
-### -field <a id="SVI_FONTMAXWIDTH"></a><a id="svi_fontmaxwidth"></a><b>SVI_FONTMAXWIDTH</b>
+### -field SVI_FONTMAXWIDTH
 
 <dd>
 <p>The max font width.</p>
 </dd>
 
-### -field <a id="SVI_FONTBOLD"></a><a id="svi_fontbold"></a><b>SVI_FONTBOLD</b>
+### -field SVI_FONTBOLD
 
 <dd>
 <p>The font is bold.</p>
 </dd>
 
-### -field <a id="SVI_FONTITALIC"></a><a id="svi_fontitalic"></a><b>SVI_FONTITALIC</b>
+### -field SVI_FONTITALIC
 
 <dd>
 <p>The font is italicized.</p>
 </dd>
 
-### -field <a id="SVI_FONTUNDERLINE"></a><a id="svi_fontunderline"></a><b>SVI_FONTUNDERLINE</b>
+### -field SVI_FONTUNDERLINE
 
 <dd>
 <p>The font is underlined.</p>
 </dd>
 
-### -field <a id="SVI_FONTSTRIKETHRU"></a><a id="svi_fontstrikethru"></a><b>SVI_FONTSTRIKETHRU</b>
+### -field SVI_FONTSTRIKETHRU
 
 <dd>
 <p>The font has the strikethru style applied.</p>
 </dd>
 
-### -field <a id="SVI_CURRENTFONTID"></a><a id="svi_currentfontid"></a><b>SVI_CURRENTFONTID</b>
+### -field SVI_CURRENTFONTID
 
 <dd>
 <p>The current font ID.</p>
 </dd>
 
-### -field <a id="SVI_TEXTYRES"></a><a id="svi_textyres"></a><b>SVI_TEXTYRES</b>
+### -field SVI_TEXTYRES
 
 <dd>
 <p>The text y resolution.</p>
 </dd>
 
-### -field <a id="SVI_TEXTXRES"></a><a id="svi_textxres"></a><b>SVI_TEXTXRES</b>
+### -field SVI_TEXTXRES
 
 <dd>
 <p>The text x resolution.</p>
 </dd>
 
-### -field <a id="SVI_GRAPHICSYRES"></a><a id="svi_graphicsyres"></a><b>SVI_GRAPHICSYRES</b>
+### -field SVI_GRAPHICSYRES
 
 <dd>
 <p>The graphics y resolution.</p>
 </dd>
 
-### -field <a id="SVI_GRAPHICSXRES"></a><a id="svi_graphicsxres"></a><b>SVI_GRAPHICSXRES</b>
+### -field SVI_GRAPHICSXRES
 
 <dd>
 <p>The graphics x resolution.</p>
 </dd>
 
-### -field <a id="SVI_ROP3"></a><a id="svi_rop3"></a><b>SVI_ROP3</b>
+### -field SVI_ROP3
 
 <dd>
 <p>The rop3.</p>
 </dd>
 
-### -field <a id="SVI_REDVALUE"></a><a id="svi_redvalue"></a><b>SVI_REDVALUE</b>
+### -field SVI_REDVALUE
 
 <dd>
 <p>The red value.</p>
 </dd>
 
-### -field <a id="SVI_GREENVALUE"></a><a id="svi_greenvalue"></a><b>SVI_GREENVALUE</b>
+### -field SVI_GREENVALUE
 
 <dd>
 <p>The green value.</p>
 </dd>
 
-### -field <a id="SVI_BLUEVALUE"></a><a id="svi_bluevalue"></a><b>SVI_BLUEVALUE</b>
+### -field SVI_BLUEVALUE
 
 <dd>
 <p>The blue value.</p>
 </dd>
 
-### -field <a id="SVI_PALETTEINDEXTOPROGRAM"></a><a id="svi_paletteindextoprogram"></a><b>SVI_PALETTEINDEXTOPROGRAM</b>
+### -field SVI_PALETTEINDEXTOPROGRAM
 
 <dd>
 <p>The palette index to program.</p>
 </dd>
 
-### -field <a id="SVI_CURRENTPALETTEINDEX"></a><a id="svi_currentpaletteindex"></a><b>SVI_CURRENTPALETTEINDEX</b>
+### -field SVI_CURRENTPALETTEINDEX
 
 <dd>
 <p>The current palette index.</p>
 </dd>
 
-### -field <a id="SVI_PATTERNBRUSH_TYPE"></a><a id="svi_patternbrush_type"></a><b>SVI_PATTERNBRUSH_TYPE</b>
+### -field SVI_PATTERNBRUSH_TYPE
 
 <dd>
 <p>The pattern brush type.</p>
 </dd>
 
-### -field <a id="SVI_PATTERNBRUSH_ID"></a><a id="svi_patternbrush_id"></a><b>SVI_PATTERNBRUSH_ID</b>
+### -field SVI_PATTERNBRUSH_ID
 
 <dd>
 <p>The pattern brush ID.</p>
 </dd>
 
-### -field <a id="SVI_PATTERNBRUSH_SIZE"></a><a id="svi_patternbrush_size"></a><b>SVI_PATTERNBRUSH_SIZE</b>
+### -field SVI_PATTERNBRUSH_SIZE
 
 <dd>
 <p>The pattern brush size.</p>
 </dd>
 
-### -field <a id="SVI_CURSORORIGINX"></a><a id="svi_cursororiginx"></a><b>SVI_CURSORORIGINX</b>
+### -field SVI_CURSORORIGINX
 
 <dd>
 <p>The cursor origin x value. This is in master units and in the coordinates of the currently selected orientation. This values is defined as ImageableOrigin minus CursorOrigin.</p>
 </dd>
 
-### -field <a id="SVI_CURSORORIGINY"></a><a id="svi_cursororiginy"></a><b>SVI_CURSORORIGINY</b>
+### -field SVI_CURSORORIGINY
 
 <dd>
 <p>The cursor origin y value. This is in master units and in the coordinates of the currently selected orientation. This values is defined as ImageableOrigin minus CursorOrigin.</p>
 </dd>
 
-### -field <a id="SVI_PAGENUMBER"></a><a id="svi_pagenumber"></a><b>SVI_PAGENUMBER</b>
+### -field SVI_PAGENUMBER
 
 <dd>
 <p>The page number. This value tracks the number of times DrvStartBand has been called since StartDoc.</p>
 </dd>
 
-### -field <a id="SVI_MAX"></a><a id="svi_max"></a><b>SVI_MAX</b>
+### -field SVI_MAX
 
 <dd>
 <p>Placeholder. Do not use.</p>

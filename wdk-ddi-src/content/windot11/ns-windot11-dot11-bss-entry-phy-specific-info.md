@@ -7,7 +7,7 @@ old-location: netvista\dot11_bss_entry_phy_specific_info.htm
 old-project: netvista
 ms.assetid: 85bcd355-633b-4d3f-a387-1e3b2ac3a013
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, *PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef union DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>uChCenterFrequency</b>
+### -field uChCenterFrequency
 
 <dd>
 <p>The channel center frequency of the band on which the 802.11 Probe-Response or Beacon frame was
@@ -70,13 +70,13 @@ typedef union DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO {
 <div> </div>
 </dd>
 
-### -field <b>FHSS</b>
+### -field FHSS
 
 <dd>
 <p>The FHSS parameters, as specified by the following members:</p>
 <dl>
 
-### -field <b>uHopPattern</b>
+### -field uHopPattern
 
 <dd>
 <p>The current hopping pattern used by the layer management entity (LME) of the PHY to determine the
@@ -87,7 +87,7 @@ typedef union DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO {
 <div> </div>
 </dd>
 
-### -field <b>uHopSet</b>
+### -field uHopSet
 
 <dd>
 <p>The current set of patterns used by the LME of the PHY to determine the hopping sequence. For
@@ -98,7 +98,7 @@ typedef union DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO {
 <div> </div>
 </dd>
 
-### -field <b>uDwellTime</b>
+### -field uDwellTime
 
 <dd>
 <p>The maximum amount of time that the PHY can use when transmitting on a single channel. The value
@@ -147,4 +147,4 @@ typedef union DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

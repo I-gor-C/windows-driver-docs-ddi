@@ -57,13 +57,13 @@ NTSTATUS IoWMISetNotificationCallback(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in, out]
+### -param Object [in, out]
 
 <dd>
 <p>Pointer to a WMI data block object. The caller opens the data block object for the WMI event with the <a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a> routine. The object must be opened with the WMIGUID_NOTIFICATION access right.</p>
 </dd>
 
-### -param <i>Callback</i> [in]
+### -param Callback [in]
 
 <dd>
 <p>Pointer to a function of the form:</p>
@@ -80,7 +80,7 @@ NTSTATUS IoWMISetNotificationCallback(
 <p>WMI calls this function to notify the caller that the specified event has occurred. The <i>Wnode</i> parameter of the callback routine points to the <a href="kernel.wnode_event_item">WNODE_EVENT_ITEM</a> structure returned by the driver triggering the event. The <i>Context</i> parameter of the callback routine points to the value specified in the <i>Context</i> parameter of the <b>IoWMISetNotificationCallback</b> routine.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Specifies the value that WMI passes to the callback routine when the event occurs.</p>

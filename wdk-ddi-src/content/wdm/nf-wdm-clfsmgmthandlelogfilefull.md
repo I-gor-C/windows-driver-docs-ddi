@@ -55,7 +55,7 @@ NTSTATUS ClfsMgmtHandleLogFileFull(
 ## -parameters
 <dl>
 
-### -param <i>Client</i> [in]
+### -param Client [in]
 
 <dd>
 <p>The client that is requesting CLFS management to make space available in the log. The value of this parameter should be the <b>CLFS_MGMT_CLIENT</b> structure that is obtained through a call to the <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a> routine.</p>

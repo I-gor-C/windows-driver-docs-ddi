@@ -55,27 +55,27 @@ PKSSTREAM_POINTER KsPinGetTrailingEdgeStreamPointer(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure for whose queue to return the trailing edge stream pointer.</p>
 </dd>
 
-### -param <i>State</i> [in]
+### -param State [in]
 
 <dd>
 <p>This parameter specifies the state in which to acquire the trailing edge stream pointer. Can be one of the following:</p>
 <p></p>
 <dl>
 
-### -param <a id="KSSTREAM_POINTER_STATE_UNLOCKED"></a><a id="ksstream_pointer_state_unlocked"></a>KSSTREAM_POINTER_STATE_UNLOCKED
+### -param KSSTREAM_POINTER_STATE_UNLOCKED
 
 <dd>
 <p>Acquire the leading edge stream pointer regardless of whether it references a data frame or not. </p>
 <p>No attempts can be made to access any data associated with the pointer until the pointer is locked. Also note that frames associated with an unlocked stream pointer can be canceled.</p>
 </dd>
 
-### -param <a id="KSSTREAM_POINTER_STATE_LOCKED"></a><a id="ksstream_pointer_state_locked"></a>KSSTREAM_POINTER_STATE_LOCKED
+### -param KSSTREAM_POINTER_STATE_LOCKED
 
 <dd>
 <p>Acquire and lock the leading edge stream pointer. If no data frame is associated with the stream pointer, return <b>NULL</b>. If a non<b>null</b> pointer is returned, it is a locked stream pointer and has a data frame associated with it. Frames associated with a locked stream pointer <i>cannot</i> be canceled. </p>
@@ -92,7 +92,7 @@ PKSSTREAM_POINTER KsPinGetTrailingEdgeStreamPointer(
 
 <p>Data frames that reside in the window between the leading edge stream pointer and the trailing edge stream pointer have at least one reference count and thus will not leave the queue and be completed until they exit the window as a result of the advancement of the trailing edge. Note that frames between the leading edge and trailing edge are <b>not</b> locked by default and therefore can be canceled.</p>
 
-<p><b>KsPinGetTrailingEdgeStreamPointer</b> is mostly of use in pin-centric filters. For more information, see <a href="NULL">Pin-Centric Processing</a> and <a href="NULL">Filter-Centric Processing</a>.</p>
+<p><b>KsPinGetTrailingEdgeStreamPointer</b> is mostly of use in pin-centric filters. For more information, see <a href="https://msdn.microsoft.com/0b6a02c2-e672-4568-a890-491c721ec3a7">Pin-Centric Processing</a> and <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>.</p>
 
 <p><b>KsPinGetTrailingEdgeStreamPointer</b> will not work unless the pin descriptor for the pin specifies that the queue is to have a distinct trailing edge by setting the KSPIN_FLAG_DISTINCT_TRAILING_EDGE flag.</p>
 

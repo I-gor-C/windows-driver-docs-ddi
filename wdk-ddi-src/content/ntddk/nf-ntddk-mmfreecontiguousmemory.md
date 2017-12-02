@@ -54,7 +54,7 @@ VOID MmFreeContiguousMemory(
 ## -parameters
 <dl>
 
-### -param <i>BaseAddress</i> [in]
+### -param BaseAddress [in]
 
 <dd>
 <p>Pointer to the virtual address of the memory to be freed.</p>

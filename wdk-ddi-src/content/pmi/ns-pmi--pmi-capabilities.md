@@ -60,38 +60,38 @@ typedef struct _PMI_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>A value that specifies the version of this structure. For Windows 7, Windows Server 2008 R2, and later versions of Windows, this value must be 1.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>A value, in units of bytes, that specifies the size of the structure.</p>
 </dd>
 
-### -field <b>CapabilityType</b>
+### -field CapabilityType
 
 <dd>
 <p>A <a href="..\pmi\ne-pmi-pmi-capabilities-type.md">PMI_CAPABILITIES_TYPE</a> enumeration value that specifies the data type of the <b>Capabilities</b> member.</p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>A union of the supported Power Meter Interface (PMI) capability structures. Based on the value of the <b>CapabilityType</b> member, one of the following <b>Capabilities</b> submembers is used to reference the following PMI capability structures:</p>
 <dl>
 
-### -field <b>ReportedCapabilities</b>
+### -field ReportedCapabilities
 
 <dd>
 <p>A <a href="..\pmi\ns-pmi--pmi-metered-hardware-information.md">PMI_METERED_HARDWARE_INFORMATION</a> structure that specifies one or more hardware devices that are monitored by the power meter. </p>
 <p>The <b>Capabilities</b> member contains this structure if the <b>CapabilityType</b> member is set to <b>PmiMeteredHardware</b>.</p>
 </dd>
 
-### -field <b>MeteredHardwareInformation</b>
+### -field MeteredHardwareInformation
 
 <dd>
 <p>A <a href="..\pmi\ns-pmi--pmi-reported-capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure that specifies the PMI capabilities of the power meter, such as the following:</p>

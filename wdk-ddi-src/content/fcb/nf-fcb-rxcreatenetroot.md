@@ -7,7 +7,7 @@ old-location: ifsk\rxcreatenetroot.htm
 old-project: ifsk
 ms.assetid: 076624d3-96f5-4e93-8598-b880a6b2289b
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxCreateNetRoot
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ PNET_ROOT RxCreateNetRoot(
 ## -parameters
 <dl>
 
-### -param <i>SrvCall</i> [in]
+### -param SrvCall [in]
 
 <dd>
 <p>A pointer to the associated SRV_CALL structure.</p>
 </dd>
 
-### -param <i>Name</i> [in]
+### -param Name [in]
 
 <dd>
 <p>A pointer to the name to be inserted in the name table.</p>
 </dd>
 
-### -param <i>NetRootFlags</i> [in]
+### -param NetRootFlags [in]
 
 <dd>
 <p>The value to set the <b>Flags</b> member of the NET_ROOT which is used to denote the state of the NET_ROOT structure.</p>
 </dd>
 
-### -param <i>RxConnectionId</i> [in, optional]
+### -param RxConnectionId [in, optional]
 
 <dd>
 <p>A pointer to the connection ID to be associated with the name to be inserted in the prefix name table. This parameter can be <b>NULL</b> in which case no connection ID will be associated with the name inserted in the prefix name table.</p>
@@ -194,4 +194,4 @@ PNET_ROOT RxCreateNetRoot(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCreateNetRoot function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCreateNetRoot function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

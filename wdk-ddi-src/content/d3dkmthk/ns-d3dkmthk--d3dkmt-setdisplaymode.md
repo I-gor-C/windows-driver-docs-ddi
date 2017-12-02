@@ -59,37 +59,37 @@ typedef struct _D3DKMT_SETDISPLAYMODE {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the device that requests setting of the display mode.</p>
 </dd>
 
-### -field <b>hPrimaryAllocation</b>
+### -field hPrimaryAllocation
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the primary allocation for scanning out. </p>
 </dd>
 
-### -field <b>ScanLineOrdering</b>
+### -field ScanLineOrdering
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-video-signal-scanline-ordering.md">D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING</a>-typed value that indicates how scan lines are ordered in the display mode.</p>
 </dd>
 
-### -field <b>DisplayOrientation</b>
+### -field DisplayOrientation
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-rotation.md">D3DDDI_ROTATION</a>-typed value that identifies the orientation of the display mode.</p>
 </dd>
 
-### -field <b>PrivateDriverFormatAttribute</b>
+### -field PrivateDriverFormatAttribute
 
 <dd>
 <p>[out] A UINT value that specifies a private format attribute that the OpenGL installable client driver (ICD) should use to convert the current primary surface if a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetdisplaymode.md">D3DKMTSetDisplayMode</a> function failed with STATUS_GRAPHICS_INCOMPATIBLE_PRIVATE_FORMAT. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>

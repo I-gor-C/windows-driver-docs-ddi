@@ -59,25 +59,25 @@ typedef struct D3D10DDIARG_INPUT_ELEMENT_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>InputSlot</b>
+### -field InputSlot
 
 <dd>
 <p>[in] The number of the input slot for the element. </p>
 </dd>
 
-### -field <b>AlignedByteOffset</b>
+### -field AlignedByteOffset
 
 <dd>
 <p>[in] The aligned offset, in bytes, for the element. </p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>[in] A DXGI_FORMAT-typed value that indicates the format of the element.</p>
 </dd>
 
-### -field <b>InputSlotClass</b>
+### -field InputSlotClass
 
 <dd>
 <p>[in] A value that specifies the type of element. This member must be set to one of the following values from the D3D10_DDI_INPUT_CLASSIFICATION enumeration.</p>
@@ -106,13 +106,13 @@ typedef struct D3D10DDIARG_INPUT_ELEMENT_DESC {
 <p> </p>
 </dd>
 
-### -field <b>InstanceDataStepRate</b>
+### -field InstanceDataStepRate
 
 <dd>
 <p>[in] The number of instances to render before incrementing to the next data element, if the <b>InputSlotClass</b> member is set to D3D10_DDI_INPUT_PER_INSTANCE_DATA. <b>InstanceDataStepRate</b> is set to zero if <b>InputSlotClass</b> is set to D3D10_DDI_INPUT_PER_VERTEX_DATA. </p>
 </dd>
 
-### -field <b>InputRegister</b>
+### -field InputRegister
 
 <dd>
 <p>[in] The number of the input register for the element.</p>

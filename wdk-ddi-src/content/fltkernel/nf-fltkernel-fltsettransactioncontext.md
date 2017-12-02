@@ -7,7 +7,7 @@ old-location: ifsk\fltsettransactioncontext.htm
 old-project: ifsk
 ms.assetid: bb68ee38-1726-4493-9c3b-71a1352dd9f2
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltSetTransactionContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ NTSTATUS FltSetTransactionContext(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>Opaque instance pointer for the caller. </p>
 </dd>
 
-### -param <i>Transaction</i> [in]
+### -param Transaction [in]
 
 <dd>
 <p>Opaque transaction pointer for the transaction on which the context is being set. </p>
 </dd>
 
-### -param <i>Operation</i> [in]
+### -param Operation [in]
 
 <dd>
 <p>Flag that specifies the details of the operation to be performed. This parameter must be one of the following: </p>
@@ -82,7 +82,7 @@ NTSTATUS FltSetTransactionContext(
 <tr>
 <td width="40%"><a id="FLT_SET_CONTEXT_REPLACE_IF_EXISTS"></a><a id="flt_set_context_replace_if_exists"></a><dl>
 
-### -param <b>FLT_SET_CONTEXT_REPLACE_IF_EXISTS</b>
+### -param FLT_SET_CONTEXT_REPLACE_IF_EXISTS
 
 </dl>
 </td>
@@ -93,7 +93,7 @@ NTSTATUS FltSetTransactionContext(
 <tr>
 <td width="40%"><a id="FLT_SET_CONTEXT_KEEP_IF_EXISTS"></a><a id="flt_set_context_keep_if_exists"></a><dl>
 
-### -param <b>FLT_SET_CONTEXT_KEEP_IF_EXISTS</b>
+### -param FLT_SET_CONTEXT_KEEP_IF_EXISTS
 
 </dl>
 </td>
@@ -105,13 +105,13 @@ NTSTATUS FltSetTransactionContext(
 <p> </p>
 </dd>
 
-### -param <i>NewContext</i> [in]
+### -param NewContext [in]
 
 <dd>
 <p>Pointer to the new context to be set for the instance. The context must have been allocated by a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>OldContext</i> [out, optional]
+### -param OldContext [out, optional]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the address of the existing transaction context, if one is already set. This parameter is optional and can be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.) </p>
@@ -250,4 +250,4 @@ NTSTATUS FltSetTransactionContext(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetTransactionContext routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetTransactionContext routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

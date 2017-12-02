@@ -57,19 +57,19 @@ typedef struct _SYSENV_VARIABLE {
 ## -struct-fields
 <dl>
 
-### -field <b>VendorGuid</b>
+### -field VendorGuid
 
 <dd>
 <p>The vendor GUID.</p>
 </dd>
 
-### -field <b>VariableNameLength</b>
+### -field VariableNameLength
 
 <dd>
 <p>The length of the string pointed to by  <b>VariableName</b>, which contains the name of the variable.</p>
 </dd>
 
-### -field <b>VariableName</b>
+### -field VariableName
 
 <dd>
 <p>A string that  contains the name of the variable.</p>

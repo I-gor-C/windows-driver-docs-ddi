@@ -60,37 +60,37 @@ BOOLEAN ScsiPortValidateRange(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
-### -param <i>BusType</i> [in]
+### -param BusType [in]
 
 <dd>
 <p>Specifies the value of the <b>AdapterInterfaceType</b> member in the PORT_CONFIGURATION_INFORMATION structure when <i>HwScsiFindAdapter</i> is called.</p>
 </dd>
 
-### -param <i>SystemIoBusNumber</i> [in]
+### -param SystemIoBusNumber [in]
 
 <dd>
 <p>Specifies the value of the <b>SystemIoBusNumber</b> member in the configuration information when <i>HwScsiFindAdapter</i> is called.</p>
 </dd>
 
-### -param <i>IoAddress</i> [in]
+### -param IoAddress [in]
 
 <dd>
 <p>Specifies a bus-relative base address for the range of ports or device memory to be validated <i>before</i> the miniport driver's <i>HwScsiFindAdapter</i> routine attempts to map the access range for the adapter at that address.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>Specifies the size in bytes or number of elements in the range.</p>
 </dd>
 
-### -param <i>InIoSpace</i> [in]
+### -param InIoSpace [in]
 
 <dd>
 <p>Indicates when TRUE that the range is in I/O space, rather than in memory. When <b>FALSE</b>, the range is in memory space. </p>

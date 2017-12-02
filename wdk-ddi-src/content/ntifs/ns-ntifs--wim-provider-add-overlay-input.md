@@ -7,7 +7,7 @@ old-location: ifsk\wim_provider_add_overlay_input.htm
 old-project: ifsk
 ms.assetid: 75C95941-367D-4A7F-A121-AF2BF9EFE28E
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: WIM_PROVIDER_ADD_OVERLAY_INPUT, WIM_PROVIDER_ADD_OVERLAY_INPUT, *PWIM_PROVIDER_ADD_OVERLAY_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct _WIM_PROVIDER_ADD_OVERLAY_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>WimType</b>
+### -field WimType
 
 <dd>
 <p>The type of WIM file set as a backing source. The WIM file type is set to one of the following values.</p>
@@ -69,7 +69,7 @@ typedef struct _WIM_PROVIDER_ADD_OVERLAY_INPUT {
 <tr>
 <td width="40%"><a id="_WIM_BOOT_OS_WIM"></a><a id="_wim_boot_os_wim"></a><dl>
 
-### -field <b> WIM_BOOT_OS_WIM</b>
+### -field  WIM_BOOT_OS_WIM
 
 </dl>
 </td>
@@ -80,7 +80,7 @@ typedef struct _WIM_PROVIDER_ADD_OVERLAY_INPUT {
 <tr>
 <td width="40%"><a id="_WIM_BOOT_NOT_OS_WIM"></a><a id="_wim_boot_not_os_wim"></a><dl>
 
-### -field <b> WIM_BOOT_NOT_OS_WIM</b>
+### -field  WIM_BOOT_NOT_OS_WIM
 
 </dl>
 </td>
@@ -92,19 +92,19 @@ typedef struct _WIM_PROVIDER_ADD_OVERLAY_INPUT {
 <p> </p>
 </dd>
 
-### -field <b>WimIndex</b>
+### -field WimIndex
 
 <dd>
 <p>The index of the image in the WIM file whose filename is specified at <b>WimFileNameOffset</b>.</p>
 </dd>
 
-### -field <b>WimFileNameOffset</b>
+### -field WimFileNameOffset
 
 <dd>
 <p>The offset, in bytes, from the beginning of this structure of the file name for the WIM file to add as a backing source. The file name is a string of <b>WCHAR</b> character values.</p>
 </dd>
 
-### -field <b>WimFileNameLength</b>
+### -field WimFileNameLength
 
 <dd>
 <p>The length, in bytes, of the file name at found at  <b>WimFileNameOffset</b>.</p>
@@ -155,4 +155,4 @@ typedef struct _WIM_PROVIDER_ADD_OVERLAY_INPUT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20WIM_PROVIDER_ADD_OVERLAY_INPUT structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20WIM_PROVIDER_ADD_OVERLAY_INPUT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

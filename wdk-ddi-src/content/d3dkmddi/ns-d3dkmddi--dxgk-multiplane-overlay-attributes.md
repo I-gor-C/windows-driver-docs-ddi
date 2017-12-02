@@ -74,56 +74,56 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies a flip operation as one of the applicable constant values in the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-flags.md">DXGK_MULTIPLANE_OVERLAY_FLAGS</a> enumeration.</p>
 </dd>
 
-### -field <b>SrcRect</b>
+### -field SrcRect
 
 <dd>
 <p>Specifies the source rectangle, of type <a href="display.rect">RECT</a>, relative to the source resource.</p>
 </dd>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd>
 <p>Specifies the destination rectangle, of type <a href="display.rect">RECT</a>, relative to the monitor resolution.</p>
 </dd>
 
-### -field <b>ClipRect</b>
+### -field ClipRect
 
 <dd>
 <p>Specifies any additional clipping, of type <a href="display.rect">RECT</a>, relative to the <b>DstRect</b> rectangle, after the data has been stretched according to the values of <b>SrcRect</b> and <b>DstRect</b>.</p>
 <p>The driver and hardware can use the <b>ClipRect</b> member to apply a common stretch factor as the clipping changes when an app occludes part of the <b>DstRect</b> destination rectangle.</p>
 </dd>
 
-### -field <b>Rotation</b>
+### -field Rotation
 
 <dd>
 <p>Specifies the clockwise rotation of the overlay plane, given as a value from the <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-rotation.md">D3DDDI_ROTATION</a> enumeration.</p>
 </dd>
 
-### -field <b>Blend</b>
+### -field Blend
 
 <dd>
 <p>Specifies the blend mode that applies to this overlay plane and the plane beneath it, given as a value from the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-blend.md">DXGK_MULTIPLANE_OVERLAY_BLEND</a> enumeration.</p>
 </dd>
 
-### -field <b>NumFilters</b>
+### -field NumFilters
 
 <dd>
 <p>Optionally specifies the number of filters that the driver and hardware implement on the overlay plane. Note that the operating system ignores this member.</p>
 </dd>
 
-### -field <b>pFilters</b>
+### -field pFilters
 
 <dd>
 <p>An optional pointer to a buffer that specifies the filters that the driver and hardware implement on the overlay plane. Note that the operating system ignores this member.</p>
 </dd>
 
-### -field <b>VideoFrameFormat</b>
+### -field VideoFrameFormat
 
 <dd>
 <p>Specifies the overlay plane's video frame format, given as a value from the <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-multiplane-overlay-video-frame-format.md">DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a> enumeration.</p>
@@ -131,13 +131,13 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES {
 <div> </div>
 </dd>
 
-### -field <b>YCbCrFlags</b>
+### -field YCbCrFlags
 
 <dd>
 <p>Specifies YUV range and conversion info given as a value from the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-ycbcr-flags.md">DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a> enumeration.</p>
 </dd>
 
-### -field <b>StereoFormat</b>
+### -field StereoFormat
 
 <dd>
 <p>Specifies the overlay plane's video frame format, given as a value from the <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-multiplane-overlay-stereo-format.md">DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT</a> enumeration.</p>
@@ -145,19 +145,19 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES {
 <div> </div>
 </dd>
 
-### -field <b>StereoLeftViewFrame0</b>
+### -field StereoLeftViewFrame0
 
 <dd>
 <p>Reserved for system use. Must always be <b>FALSE</b>.</p>
 </dd>
 
-### -field <b>StereoBaseViewFrame0</b>
+### -field StereoBaseViewFrame0
 
 <dd>
 <p>Reserved for system use. Must always be <b>FALSE</b>.</p>
 </dd>
 
-### -field <b>StereoFlipMode</b>
+### -field StereoFlipMode
 
 <dd>
 <p>Specifies the overlay plane's stereo flip mode, given as a value from the <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-multiplane-overlay-stereo-flip-mode.md">DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE</a> enumeration.</p>
@@ -165,7 +165,7 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES {
 <div> </div>
 </dd>
 
-### -field <b>StretchQuality</b>
+### -field StretchQuality
 
 <dd>
 <p>Specifies the overlay plane's stretch quality, given as a value from the <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-multiplane-overlay-stretch-quality.md">DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a> enumeration.</p>

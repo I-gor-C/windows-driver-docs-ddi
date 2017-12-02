@@ -58,31 +58,31 @@ typedef struct tag_video_configure_parms {
 ## -struct-fields
 <dl>
 
-### -field <b>lpdwReturn</b>
+### -field lpdwReturn
 
 <dd>
 <p>Specifies the return parameter from the configure MSG.</p>
 </dd>
 
-### -field <b>lpData1</b>
+### -field lpData1
 
 <dd>
 <p>Specifies a pointer to data 1.</p>
 </dd>
 
-### -field <b>dwSize1</b>
+### -field dwSize1
 
 <dd>
 <p>Specifies the size of data buffer 1.</p>
 </dd>
 
-### -field <b>lpData2</b>
+### -field lpData2
 
 <dd>
 <p>Specifies a pointer to data 2.</p>
 </dd>
 
-### -field <b>dwSize2</b>
+### -field dwSize2
 
 <dd>
 <p>Specifies the size of data buffer 2.</p>

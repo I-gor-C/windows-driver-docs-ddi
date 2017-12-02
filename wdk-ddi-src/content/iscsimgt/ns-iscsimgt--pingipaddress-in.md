@@ -57,25 +57,25 @@ typedef struct _PingIPAddress_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>RequestCount</b>
+### -field RequestCount
 
 <dd>
 <p>The number of ping requests to be sent to the specified IP address.</p>
 </dd>
 
-### -field <b>RequestSize</b>
+### -field RequestSize
 
 <dd>
 <p>The size of each request (in bytes) to be sent.</p>
 </dd>
 
-### -field <b>Timeout</b>
+### -field Timeout
 
 <dd>
 <p>The timeout (in milliseconds) for each ping request.</p>
 </dd>
 
-### -field <b>Address</b>
+### -field Address
 
 <dd>
 <p>The IP address to which the ping request must be sent. The IP address is provided by the <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure.</p>

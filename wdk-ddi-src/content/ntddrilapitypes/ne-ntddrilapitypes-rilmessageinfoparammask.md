@@ -7,7 +7,7 @@ old-location: netvista\rilmessageinfoparammask.htm
 old-project: netvista
 ms.assetid: 70e0f22c-14d4-43e6-bfb6-66523706ba52
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILMESSAGEINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_MI_STATUS"></a><a id="ril_param_mi_status"></a><b>RIL_PARAM_MI_STATUS</b>
+### -field RIL_PARAM_MI_STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MI_MESSAGE"></a><a id="ril_param_mi_message"></a><b>RIL_PARAM_MI_MESSAGE</b>
+### -field RIL_PARAM_MI_MESSAGE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MI_ALL"></a><a id="ril_param_mi_all"></a><b>RIL_PARAM_MI_ALL</b>
+### -field RIL_PARAM_MI_ALL
 
 <dd></dd>
 </dl>

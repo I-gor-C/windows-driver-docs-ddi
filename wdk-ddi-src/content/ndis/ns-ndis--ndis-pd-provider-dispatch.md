@@ -7,7 +7,7 @@ old-location: netvista\ndis_pd_provider_dispatch.htm
 old-project: netvista
 ms.assetid: E93B8A07-7C06-470B-9B26-8D59C2685D2C
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PD_PROVIDER_DISPATCH, NDIS_PD_PROVIDER_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ typedef struct _NDIS_PD_PROVIDER_DISPATCH {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_PROVIDER_DISPATCH</b> structure. Set the members of this structure as follows:</p>
@@ -75,61 +75,61 @@ typedef struct _NDIS_PD_PROVIDER_DISPATCH {
 </ul>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>This member is reserved and must be set to 0 by the provider.</p>
 </dd>
 
-### -field <b>NdisPDAllocateQueue</b>
+### -field NdisPDAllocateQueue
 
 <dd>
 <p>See <a href="..\ndis\nc-ndis-ndis-pd-allocate-queue.md">NdisPDAllocateQueue</a>.</p>
 </dd>
 
-### -field <b>NdisPDFreeQueue</b>
+### -field NdisPDFreeQueue
 
 <dd>
 <p>See <a href="..\ndis\nc-ndis-ndis-pd-free-queue.md">NdisPDFreeQueue</a>.</p>
 </dd>
 
-### -field <b>NdisPDOnRssReceiveQueues</b>
+### -field NdisPDOnRssReceiveQueues
 
 <dd>
 <p>See <a href="netvista.ndispdonrssreceivequeues">NdisPDOnRssReceiveQueues</a>.</p>
 </dd>
 
-### -field <b>NdisPDOffRssReceiveQueues</b>
+### -field NdisPDOffRssReceiveQueues
 
 <dd>
 <p>See <a href="netvista.ndispdoffrssreceivequeues">NdisPDOffRssReceiveQueues</a>.</p>
 </dd>
 
-### -field <b>NdisPDAllocateCounter</b>
+### -field NdisPDAllocateCounter
 
 <dd>
 <p>See <a href="..\ndis\nc-ndis-ndis-pd-allocate-counter.md">NdisPDAllocateCounter</a>.</p>
 </dd>
 
-### -field <b>NdisPDFreeCounter</b>
+### -field NdisPDFreeCounter
 
 <dd>
 <p>See <a href="..\ndis\nc-ndis-ndis-pd-free-counter.md">NdisPDFreeCounter</a>.</p>
 </dd>
 
-### -field <b>NdisPDQueryCounter</b>
+### -field NdisPDQueryCounter
 
 <dd>
 <p>See <a href="..\ndis\nc-ndis-ndis-pd-query-counter.md">NdisPDQueryCounter</a>.</p>
 </dd>
 
-### -field <b>NdisPDSetReceiveFilter</b>
+### -field NdisPDSetReceiveFilter
 
 <dd>
 <p>See <a href="..\ndis\nc-ndis-ndis-pd-set-receive-filter.md">NdisPDSetReceiveFilter</a>.</p>
 </dd>
 
-### -field <b>NdisPDClearReceiveFilter</b>
+### -field NdisPDClearReceiveFilter
 
 <dd>
 <p>See <a href="..\ndis\nc-ndis-ndis-pd-clear-receive-filter.md">NdisPDClearReceiveFilter</a>.</p>
@@ -177,4 +177,4 @@ typedef struct _NDIS_PD_PROVIDER_DISPATCH {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PD_PROVIDER_DISPATCH structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PD_PROVIDER_DISPATCH structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

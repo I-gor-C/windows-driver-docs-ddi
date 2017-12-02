@@ -56,19 +56,19 @@ typedef struct _RemovePersistentLogin_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>The port number from which the initiator established the logon session.</p>
 </dd>
 
-### -field <b>TargetName</b>
+### -field TargetName
 
 <dd>
 <p>The iSCSI target name to be removed from the initiator's list of persistent logon targets.</p>
 </dd>
 
-### -field <b>TargetPortal</b>
+### -field TargetPortal
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-targetportal.md">ISCSI_TargetPortal</a> structure that specifies the target portal for which the initiator should delete persistent logons. ISCSI_TargetPortal has an <b>Address</b> member of type <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a>. If the <b>Type</b> member of ISCSI_IP_Address is set to ISCSI_IP_ADDRESS_EMPTY, the <a href="storage.removepersistentlogin">RemovePersistentLogin</a> method removes the persistent logons to the target for all portals.</p>

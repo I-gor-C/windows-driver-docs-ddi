@@ -56,15 +56,15 @@ typedef struct _DXGK_POWER_P_COMPONENT {
 ## -struct-fields
 <dl>
 
-### -field <b>StateCount</b>
+### -field StateCount
 
 <dd></dd>
 
-### -field <b>States</b>
+### -field States
 
 <dd></dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd></dd>
 </dl>

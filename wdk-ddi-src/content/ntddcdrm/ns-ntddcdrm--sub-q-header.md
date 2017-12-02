@@ -56,20 +56,20 @@ typedef struct _SUB_Q_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AudioStatus</b>
+### -field AudioStatus
 
 <dd>
 <p>Reports the audio status with one of the following flags:</p>
 <p></p>
 <dl>
 
-### -field <a id="AUDIO_STATUS_NOT_SUPPORTED"></a><a id="audio_status_not_supported"></a>AUDIO_STATUS_NOT_SUPPORTED
+### -field AUDIO_STATUS_NOT_SUPPORTED
 
 <dd>
 <p>Audio status byte not supported or not valid.</p>
@@ -78,7 +78,7 @@ typedef struct _SUB_Q_HEADER {
 <p></p>
 <dl>
 
-### -field <a id="AUDIO_STATUS_IN_PROGRESS"></a><a id="audio_status_in_progress"></a>AUDIO_STATUS_IN_PROGRESS
+### -field AUDIO_STATUS_IN_PROGRESS
 
 <dd>
 <p>Audio play operation is in progress.</p>
@@ -87,7 +87,7 @@ typedef struct _SUB_Q_HEADER {
 <p></p>
 <dl>
 
-### -field <a id="AUDIO_STATUS_PAUSED"></a><a id="audio_status_paused"></a>AUDIO_STATUS_PAUSED
+### -field AUDIO_STATUS_PAUSED
 
 <dd>
 <p>Audio play operation is paused.</p>
@@ -96,7 +96,7 @@ typedef struct _SUB_Q_HEADER {
 <p></p>
 <dl>
 
-### -field <a id="AUDIO_STATUS_PLAY_COMPLETE"></a><a id="audio_status_play_complete"></a>AUDIO_STATUS_PLAY_COMPLETE
+### -field AUDIO_STATUS_PLAY_COMPLETE
 
 <dd>
 <p>Audio play operation completed successfully.</p>
@@ -105,7 +105,7 @@ typedef struct _SUB_Q_HEADER {
 <p></p>
 <dl>
 
-### -field <a id="AUDIO_STATUS_PLAY_ERROR"></a><a id="audio_status_play_error"></a>AUDIO_STATUS_PLAY_ERROR
+### -field AUDIO_STATUS_PLAY_ERROR
 
 <dd>
 <p>Audio play operation stopped due to error.</p>
@@ -114,7 +114,7 @@ typedef struct _SUB_Q_HEADER {
 <p></p>
 <dl>
 
-### -field <a id="AUDIO_STATUS_NO_STATUS"></a><a id="audio_status_no_status"></a>AUDIO_STATUS_NO_STATUS
+### -field AUDIO_STATUS_NO_STATUS
 
 <dd>
 <p>No current audio status to return.</p>
@@ -122,7 +122,7 @@ typedef struct _SUB_Q_HEADER {
 </dl>
 </dd>
 
-### -field <b>DataLength</b>
+### -field DataLength
 
 <dd>
 <p>Gives the length of Q subchannel data that follows this header structure. The bytes in this array are arranged in big-endian order. <b>DataLength</b>[0] contains the most significant byte, and <b>DataLength</b>[1] contains the least significant byte. </p>

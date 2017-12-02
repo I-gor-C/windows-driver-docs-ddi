@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY CreateDevice(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p> A handle that identifies the graphics adapter. </p>
 </dd>
 
-### -param <i>pCreateData</i> [in, out]
+### -param pCreateData [in, out]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createdevice.md">D3DDDIARG_CREATEDEVICE</a> structure. On input, this structure contains information that the driver can use. On output, the driver specifies information in the structure that the Microsoft Direct3D runtime can use.</p>

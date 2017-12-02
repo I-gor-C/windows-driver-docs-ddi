@@ -57,19 +57,19 @@ typedef enum _MONITOR_DISPLAY_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PowerMonitorOff"></a><a id="powermonitoroff"></a><a id="POWERMONITOROFF"></a><b>PowerMonitorOff</b>
+### -field PowerMonitorOff
 
 <dd>
 <p>This indicates that the monitor is off.</p>
 </dd>
 
-### -field <a id="PowerMonitorOn"></a><a id="powermonitoron"></a><a id="POWERMONITORON"></a><b>PowerMonitorOn</b>
+### -field PowerMonitorOn
 
 <dd>
 <p>This indicates that the monitor is on.</p>
 </dd>
 
-### -field <a id="PowerMonitorDim"></a><a id="powermonitordim"></a><a id="POWERMONITORDIM"></a><b>PowerMonitorDim</b>
+### -field PowerMonitorDim
 
 <dd>
 <p>This indicates that the monitor is dim.</p>

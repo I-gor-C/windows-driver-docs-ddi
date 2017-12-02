@@ -56,13 +56,13 @@ typedef struct _IO_SESSION_CONNECT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>SessionId</b>
+### -field SessionId
 
 <dd>
 <p>Session ID. This member contains the <a href="http://go.microsoft.com/fwlink/p/?linkid=155045">Terminal Services</a> session identifier of the user session for which the driver is receiving this notification.</p>
 </dd>
 
-### -field <b>LocalSession</b>
+### -field LocalSession
 
 <dd>
 <p>Indicates whether the user session is a local session or a remote session. If <b>TRUE</b>, the user is logged on locally. If <b>FALSE</b>, the user is logged on remotely. </p>

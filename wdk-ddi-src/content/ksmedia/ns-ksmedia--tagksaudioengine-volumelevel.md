@@ -56,19 +56,19 @@ typedef struct _KSAUDIOENGINE_VOLUMELEVEL {
 ## -struct-fields
 <dl>
 
-### -field <b>TargetVolume</b>
+### -field TargetVolume
 
 <dd>
 <p>Specifies the desired final volume level using the scale defined for the <b>KSPROPERTY_AUDIOENGINE_VOLUMELEVEL</b> property.</p>
 </dd>
 
-### -field <b>CurveType</b>
+### -field CurveType
 
 <dd>
 <p>Uses the <a href="..\ksmedia\ne-ksmedia-audio-curve-type.md">AUDIO_CURVE_TYPE</a> enumeration to specify the curve algorithm to apply over the duration specified, in order to reach the desired level.  The curve begins at the current volume level and ends at the target volume level specified in the <b>TargetVolume</b> parameter.</p>
 </dd>
 
-### -field <b>CurveDuration</b>
+### -field CurveDuration
 
 <dd>
 <p>Specifies the duration, in hundreds of nanoseconds, over which the volume curve must take effect.</p>

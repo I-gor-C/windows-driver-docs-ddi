@@ -7,7 +7,7 @@ old-location: acpi\lpi_state_descriptor.htm
 old-project: acpi
 ms.assetid: B52012DB-922A-43A2-A175-7F7887C290F1
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: LPI_STATE_DESCRIPTOR, LPI_STATE_DESCRIPTOR, *PLPI_STATE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,61 +62,61 @@ typedef struct _LPI_STATE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The length.</p>
 </dd>
 
-### -field <b>UniqueId</b>
+### -field UniqueId
 
 <dd>
 <p>A unique ID.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>State flags.</p>
 </dd>
 
-### -field <b>EntryTrigger</b>
+### -field EntryTrigger
 
 <dd>
 <p>An entry trigger.</p>
 </dd>
 
-### -field <b>Residency</b>
+### -field Residency
 
 <dd>
 <p>A residency value.</p>
 </dd>
 
-### -field <b>Latency</b>
+### -field Latency
 
 <dd>
 <p>A latency value.</p>
 </dd>
 
-### -field <b>ResidencyCounter</b>
+### -field ResidencyCounter
 
 <dd>
 <p>Residency counter.</p>
 </dd>
 
-### -field <b>ResidencyCounterFrequency</b>
+### -field ResidencyCounterFrequency
 
 <dd>
 <p>Residency counter frequency. </p>

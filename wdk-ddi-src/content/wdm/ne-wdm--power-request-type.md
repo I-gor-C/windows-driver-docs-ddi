@@ -58,25 +58,25 @@ typedef enum _POWER_REQUEST_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PowerRequestDisplayRequired"></a><a id="powerrequestdisplayrequired"></a><a id="POWERREQUESTDISPLAYREQUIRED"></a><b>PowerRequestDisplayRequired</b>
+### -field PowerRequestDisplayRequired
 
 <dd>
 <p>Not used by drivers. For more information, see Remarks.</p>
 </dd>
 
-### -field <a id="PowerRequestSystemRequired"></a><a id="powerrequestsystemrequired"></a><a id="POWERREQUESTSYSTEMREQUIRED"></a><b>PowerRequestSystemRequired</b>
+### -field PowerRequestSystemRequired
 
 <dd>
 <p>Prevents the computer from automatically entering sleep mode after a period of user inactivity.</p>
 </dd>
 
-### -field <a id="PowerRequestAwayModeRequired"></a><a id="powerrequestawaymoderequired"></a><a id="POWERREQUESTAWAYMODEREQUIRED"></a><b>PowerRequestAwayModeRequired</b>
+### -field PowerRequestAwayModeRequired
 
 <dd>
 <p>Not used by drivers. For more information, see Remarks.</p>
 </dd>
 
-### -field <a id="PowerRequestExecutionRequired"></a><a id="powerrequestexecutionrequired"></a><a id="POWERREQUESTEXECUTIONREQUIRED"></a><b>PowerRequestExecutionRequired</b>
+### -field PowerRequestExecutionRequired
 
 <dd>
 <p>Not used by drivers. For more information, see Remarks.</p>
@@ -84,7 +84,7 @@ typedef enum _POWER_REQUEST_TYPE {
 </dl>
 
 ## -remarks
-<p>This enumeration is used by the kernel-mode <a href="..\ntifs\nf-ntifs-poclearpowerrequest.md">PoClearPowerRequest</a> and <a href="..\ntifs\nf-ntifs-posetpowerrequest.md">PoSetPowerRequest</a> routines. Drivers that call these routines must specify the <b>PowerRequestSystemRequired</b> enumeration value.</p>
+<p>This enumeration is used by the kernel-mode <a href="..\wdm\nf-wdm-poclearpowerrequest.md">PoClearPowerRequest</a> and <a href="..\wdm\nf-wdm-posetpowerrequest.md">PoSetPowerRequest</a> routines. Drivers that call these routines must specify the <b>PowerRequestSystemRequired</b> enumeration value.</p>
 
 <p>The other three enumeration values—<b>PowerRequestDisplayRequired</b>, <b>PowerRequestAwayModeRequired</b>, and <b>PowerRequestExecutionRequired</b>—are not used by drivers. Applications specify these power request types in calls to the <a href="base.powersetrequest">PowerSetRequest</a> and <a href="base.powerclearrequest">PowerClearRequest</a> functions.</p>
 
@@ -125,10 +125,10 @@ typedef enum _POWER_REQUEST_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\nf-ntifs-poclearpowerrequest.md">PoClearPowerRequest</a>
+<a href="..\wdm\nf-wdm-poclearpowerrequest.md">PoClearPowerRequest</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-posetpowerrequest.md">PoSetPowerRequest</a>
+<a href="..\wdm\nf-wdm-posetpowerrequest.md">PoSetPowerRequest</a>
 </dt>
 <dt>
 <a href="base.powerclearrequest">PowerClearRequest</a>

@@ -57,7 +57,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>FilterMethod</b>
+### -field FilterMethod
 
 <dd>
 <p>Specifies the filter method to use. Set this parameter to one of the following KSDS3D_HRTF_FILTER_METHOD enumeration values:</p>
@@ -72,7 +72,7 @@ typedef struct {
 <p>For more information, see the description of the <b>MaxFilterSize</b> member of <a href="audio.ksds3d_hrtf_init_msg">KSDS3D_HRTF_INIT_MSG</a>.</p>
 </dd>
 
-### -field <b>CoeffFormat</b>
+### -field CoeffFormat
 
 <dd>
 <p>Specifies the coefficient format to use. Set this parameter to one of the following KSDS3D_HRTF_COEFF_FORMAT enumeration values:</p>
@@ -86,13 +86,13 @@ typedef struct {
 </ul>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the filter version. Set this parameter to the KSDS3D_HRTF_FILTER_VERSION enumeration value DS3D_HRTF_VERSION_1.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Set to zero.</p>

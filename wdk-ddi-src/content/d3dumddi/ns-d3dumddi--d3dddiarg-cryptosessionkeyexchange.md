@@ -56,19 +56,19 @@ typedef struct _D3DDDIARG_CRYPTOSESSIONKEYEXCHANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>hCryptoSession</b>
+### -field hCryptoSession
 
 <dd>
 <p>[in] A handle to the encryption session that is the runtime creates when the runtime calls the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createcryptosession.md">CreateCryptoSession</a> function. </p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>[in/out] The size, in bytes, of the data that the <b>pData</b> member points to. </p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>[in/out] A pointer to a buffer that contains the session key. </p>

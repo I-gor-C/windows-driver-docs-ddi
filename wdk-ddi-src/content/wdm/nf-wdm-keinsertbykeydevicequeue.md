@@ -57,19 +57,19 @@ BOOLEAN KeInsertByKeyDeviceQueue(
 ## -parameters
 <dl>
 
-### -param <i>DeviceQueue</i> [in, out]
+### -param DeviceQueue [in, out]
 
 <dd>
 <p>Pointer to a control object of the device queue type for which the caller provides the storage.</p>
 </dd>
 
-### -param <i>DeviceQueueEntry</i> [in, out]
+### -param DeviceQueueEntry [in, out]
 
 <dd>
 <p>Pointer to the device queue entry to be inserted into the device queue according to the specific key value.</p>
 </dd>
 
-### -param <i>SortKey</i> [in]
+### -param SortKey [in]
 
 <dd>
 <p>Specifies the sort-key value that determines the position in the device queue in which to insert the entry. </p>

@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>TimeBase</b>
+### -field TimeBase
 
 <dd>
 <p>Specifies a 64-bit time base.</p>
 </dd>
 
-### -field <b>Interval</b>
+### -field Interval
 
 <dd>
 <p>Specifies a recurrence interval, also 64-bit.</p>

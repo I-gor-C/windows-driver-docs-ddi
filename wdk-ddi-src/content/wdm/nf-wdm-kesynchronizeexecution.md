@@ -57,19 +57,19 @@ BOOLEAN KeSynchronizeExecution(
 ## -parameters
 <dl>
 
-### -param <i>Interrupt</i> [in, out]
+### -param Interrupt [in, out]
 
 <dd>
 <p>A pointer to a set of interrupt objects. The caller obtained this pointer from the <a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a> or <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> routine.</p>
 </dd>
 
-### -param <i>SynchronizeRoutine</i> [in]
+### -param SynchronizeRoutine [in]
 
 <dd>
 <p>Specifies a caller-supplied <a href="kernel.synchcritsection">SynchCritSection</a> routine whose execution is to be synchronized with the execution of the ISR assigned to the interrupt objects.</p>
 </dd>
 
-### -param <i>SynchronizeContext</i> [in, optional]
+### -param SynchronizeContext [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied context value to be passed to the <a href="kernel.synchcritsection">SynchCritSection</a> routine when it is called.</p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>HidD_GetPreparsedData</b> routine returns a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="NULL">preparsed data</a>.</p>
+<p>The <b>HidD_GetPreparsedData</b> routine returns a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.</p>
 
 
 ## -syntax
@@ -55,13 +55,13 @@ BOOLEAN __stdcall HidD_GetPreparsedData(
 ## -parameters
 <dl>
 
-### -param <i>HidDeviceObject</i> [in]
+### -param HidDeviceObject [in]
 
 <dd>
 <p>Specifies an open handle to a top-level collection.</p>
 </dd>
 
-### -param <i>PreparsedData</i> [out]
+### -param PreparsedData [out]
 
 <dd>
 <p>Pointer to the address of a routine-allocated buffer that contains a collection's preparsed data in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543586">_HIDP_PREPARSED_DATA</a> structure.</p>
@@ -76,7 +76,7 @@ BOOLEAN __stdcall HidD_GetPreparsedData(
 
 <p>When an application no longer requires the preparsed data, it should call <a href="..\hidsdi\nf-hidsdi-hidd-freepreparseddata.md">HidD_FreePreparsedData</a> to free the preparsed data buffer.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

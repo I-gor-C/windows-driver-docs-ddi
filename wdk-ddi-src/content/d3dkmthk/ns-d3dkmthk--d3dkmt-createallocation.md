@@ -70,20 +70,20 @@ typedef struct _D3DKMT_CREATEALLOCATION {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the device that the resource or allocation is associated with.</p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in/out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the resource that is associated with the allocations. The value in <b>hResource</b> should always be zero unless an allocation will be added to an existing resource, in which case <b>hResource</b> contains the resource handle. </p>
 <p>When the <b>CreateResource</b> bit-field flag is set in the <b>Flags</b> member, the OpenGL runtime generates a unique handle and passes it back to the driver. On output from the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreateallocation.md">D3DKMTCreateAllocation</a> function, <b>hResource</b> specifies the handle that the driver should use in subsequent OpenGL runtime calls to identify the resource. The resource handle that is returned is device-specific and is valid only when used with the device that it was created on.</p>
 </dd>
 
-### -field <b>hGlobalShare</b>
+### -field hGlobalShare
 
 <dd>
 <p>[out] A handle to the shared resource. The driver should always set the value in <b>hGlobalShare</b> to zero. </p>
@@ -92,50 +92,50 @@ typedef struct _D3DKMT_CREATEALLOCATION {
 </p>
 </dd>
 
-### -field <b>pPrivateRuntimeData</b>
+### -field pPrivateRuntimeData
 
 <dd>
 <p>[in] A pointer to optional private data that can be attached to a resource for debugging purposes. This data is per resource and not per allocation.</p>
 </dd>
 
-### -field <b>PrivateRuntimeDataSize</b>
+### -field PrivateRuntimeDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the private data that <b>pPrivateRuntimeData</b> points to.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in] A pointer to a buffer that contains optional private data that the display miniport driver might require to create the resource or allocation. The contents of the buffer typically come from the OpenGL ICD and must be in a format that the display miniport driver can process.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in/out] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.</p>
 </dd>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of elements in the array that <b>pAllocationInfo</b> specifies, which represents the number of allocations to create. Note that creating a resource without any allocations initially associated with it is valid; therefore, <b>NumAllocations</b> can be set to 0.</p>
 </dd>
 
-### -field <b>pAllocationInfo</b>
+### -field pAllocationInfo
 
 <dd>
 <p>[in] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-allocationinfo.md">D3DDDI_ALLOCATIONINFO</a> structures that describe specific properties for each allocation to create.</p>
 </dd>
 
-### -field <b>pAllocationInfo2</b>
+### -field pAllocationInfo2
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>This member is available beginning with Windows 7.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createallocationflags.md">D3DKMT_CREATEALLOCATIONFLAGS</a> structure that identifies  attributes for creating the allocation, in bit-field flags.</p>
@@ -143,7 +143,7 @@ typedef struct _D3DKMT_CREATEALLOCATION {
 <div> </div>
 </dd>
 
-### -field <b>hPrivateRuntimeResourceHandle</b>
+### -field hPrivateRuntimeResourceHandle
 
 <dd>
 <p>[in] An opaque handle that you can use in event tracing. This handle can be used to associate kernel-mode allocations with user-mode surface pointers when you analyze Event Tracing for Windows (ETW) event logs.</p>

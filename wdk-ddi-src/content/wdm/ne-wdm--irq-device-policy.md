@@ -60,37 +60,37 @@ typedef enum _IRQ_DEVICE_POLICY {
 ## -enum-fields
 <dl>
 
-### -field <a id="IrqPolicyMachineDefault"></a><a id="irqpolicymachinedefault"></a><a id="IRQPOLICYMACHINEDEFAULT"></a><b>IrqPolicyMachineDefault</b>
+### -field IrqPolicyMachineDefault
 
 <dd>
 <p>The device does not require any particular assignment of interrupts to processors.</p>
 </dd>
 
-### -field <a id="IrqPolicyAllCloseProcessors"></a><a id="irqpolicyallcloseprocessors"></a><a id="IRQPOLICYALLCLOSEPROCESSORS"></a><b>IrqPolicyAllCloseProcessors</b>
+### -field IrqPolicyAllCloseProcessors
 
 <dd>
 <p>The operating system should assign interrupts from the device to processors that are close to the device. On non-NUMA computers, the effect of this value is identical to that of <b>IrqPolicyAllProcessorsInMachine</b>.</p>
 </dd>
 
-### -field <a id="IrqPolicyOneCloseProcessor"></a><a id="irqpolicyonecloseprocessor"></a><a id="IRQPOLICYONECLOSEPROCESSOR"></a><b>IrqPolicyOneCloseProcessor</b>
+### -field IrqPolicyOneCloseProcessor
 
 <dd>
 <p>The operating system should assign a single interrupt for the device to one processor that is close to the device. On non-NUMA computers, the operating system can assign the interrupt to any processor.</p>
 </dd>
 
-### -field <a id="IrqPolicyAllProcessorsInMachine"></a><a id="irqpolicyallprocessorsinmachine"></a><a id="IRQPOLICYALLPROCESSORSINMACHINE"></a><b>IrqPolicyAllProcessorsInMachine</b>
+### -field IrqPolicyAllProcessorsInMachine
 
 <dd>
 <p>The operating system should assign interrupts from the device to all processors.</p>
 </dd>
 
-### -field <a id="IrqPolicySpecifiedProcessors"></a><a id="irqpolicyspecifiedprocessors"></a><a id="IRQPOLICYSPECIFIEDPROCESSORS"></a><b>IrqPolicySpecifiedProcessors</b>
+### -field IrqPolicySpecifiedProcessors
 
 <dd>
 <p>The operating system should assign interrupts from the device to a specific set of processors.</p>
 </dd>
 
-### -field <a id="IrqPolicySpreadMessagesAcrossAllProcessors"></a><a id="irqpolicyspreadmessagesacrossallprocessors"></a><a id="IRQPOLICYSPREADMESSAGESACROSSALLPROCESSORS"></a><b>IrqPolicySpreadMessagesAcrossAllProcessors</b>
+### -field IrqPolicySpreadMessagesAcrossAllProcessors
 
 <dd>
 <p>The operating system should assign different message-signaled interrupts to different processors, if possible. </p>

@@ -7,7 +7,7 @@ old-location: netvista\ndisequalunicodestring.htm
 old-project: netvista
 ms.assetid: 8f3abf40-bb47-4fa6-862b-6126edb00b36
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisEqualUnicodeString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ BOOLEAN NdisEqualUnicodeString(
 ## -parameters
 <dl>
 
-### -param <i>String1</i> [in]
+### -param String1 [in]
 
 <dd>
 <p>A pointer to an NDIS_STRING type that describes the first Unicode string.</p>
 </dd>
 
-### -param <i>String2</i> [in]
+### -param String2 [in]
 
 <dd>
 <p>A pointer to an NDIS_STRING type that describes the second Unicode string.</p>
 </dd>
 
-### -param <i>CaseInSensitive</i> [in]
+### -param CaseInSensitive [in]
 
 <dd>
 <p>A Boolean value that is <b>TRUE</b>, if case should be ignored when doing the comparison. Otherwise, it
@@ -142,4 +142,4 @@ BOOLEAN NdisEqualUnicodeString(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisEqualUnicodeString function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisEqualUnicodeString function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

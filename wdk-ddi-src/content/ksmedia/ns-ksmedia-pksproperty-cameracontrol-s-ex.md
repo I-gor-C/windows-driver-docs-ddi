@@ -59,19 +59,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>Specifies the value of the property. This member is read/write.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Indicates, for Get requests, the current setting for the specified property from the values listed below. Indicates, for Set requests, the desired setting for the specified property from the values listed below. This member can be a bitwise <b>OR</b> of the following values that are defined in Ksmedia.h:</p>
@@ -83,7 +83,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="KSPROPERTY_CAMERACONTROL_FLAGS_AUTO"></a><a id="ksproperty_cameracontrol_flags_auto"></a><dl>
 
-### -field <b>KSPROPERTY_CAMERACONTROL_FLAGS_AUTO</b>
+### -field KSPROPERTY_CAMERACONTROL_FLAGS_AUTO
 
 </dl>
 </td>
@@ -95,7 +95,7 @@ If the driver receives this value, it should set the camera control synchronousl
 <tr>
 <td width="40%"><a id="KSPROPERTY_CAMERACONTROL_FLAGS_MANUAL"></a><a id="ksproperty_cameracontrol_flags_manual"></a><dl>
 
-### -field <b>KSPROPERTY_CAMERACONTROL_FLAGS_MANUAL</b>
+### -field KSPROPERTY_CAMERACONTROL_FLAGS_MANUAL
 
 </dl>
 </td>
@@ -106,7 +106,7 @@ If the driver receives this value, it should set the camera control synchronousl
 <tr>
 <td width="40%"><a id="KSPROPERTY_CAMERACONTROL_FLAGS_ASYNCHRONOUS"></a><a id="ksproperty_cameracontrol_flags_asynchronous"></a><dl>
 
-### -field <b>KSPROPERTY_CAMERACONTROL_FLAGS_ASYNCHRONOUS</b>
+### -field KSPROPERTY_CAMERACONTROL_FLAGS_ASYNCHRONOUS
 
 </dl>
 </td>
@@ -120,7 +120,7 @@ If the driver receives this value, it should set the camera control synchronousl
 <p> </p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>If set, indicates that when the application submits a query, the driver should return the value of the <b>Capabilities</b> member of the appropriate camera control structure from the following list.</p>
@@ -140,7 +140,7 @@ If the driver receives this value, it should set the camera control synchronousl
 </ul>
 </dd>
 
-### -field <b>FocusRect</b>
+### -field FocusRect
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that specifies the rectangular region in which the device should set the focus. This structure is available only to Windows desktop applications.</p>

@@ -54,7 +54,7 @@ void KsFreeObjectBag(
 ## -parameters
 <dl>
 
-### -param <i>ObjectBag</i> [in]
+### -param ObjectBag [in]
 
 <dd>
 <p>The KSOBJECT_BAG (equivalent to type PVOID) to be emptied and then freed.</p>
@@ -65,7 +65,7 @@ void KsFreeObjectBag(
 <p>None</p>
 
 ## -remarks
-<p>For more information, see <a href="NULL">Object Bags</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a>.</p>
 
 <p><b>KsFreeObjectBag</b> removes any items present in <i>ObjectBag</i>. In addition, if the reference count for a given object is zero (that is, the object is not present in any other object bag associated with the same device as <i>ObjectBag</i>), then that item is freed. </p>
 

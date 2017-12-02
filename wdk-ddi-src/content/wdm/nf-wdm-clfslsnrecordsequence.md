@@ -55,7 +55,7 @@ ULONG ClfsLsnRecordSequence(
 ## -parameters
 <dl>
 
-### -param <i>plsn</i> [in]
+### -param plsn [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure from which the record sequence number is retrieved.</p>

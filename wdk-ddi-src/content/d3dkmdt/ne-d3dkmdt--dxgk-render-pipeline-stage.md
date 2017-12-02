@@ -61,49 +61,49 @@ typedef enum _DXGK_RENDER_PIPELINE_STAGE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_RENDER_PIPELINE_STAGE_UNKNOWN"></a><a id="dxgk_render_pipeline_stage_unknown"></a><b>DXGK_RENDER_PIPELINE_STAGE_UNKNOWN</b>
+### -field DXGK_RENDER_PIPELINE_STAGE_UNKNOWN
 
 <dd>
 <p>Indicates that the stage where the error occurred is unknown.</p>
 </dd>
 
-### -field <a id="DXGK_RENDER_PIPELINE_STAGE_INPUT_ASSEMBLER"></a><a id="dxgk_render_pipeline_stage_input_assembler"></a><b>DXGK_RENDER_PIPELINE_STAGE_INPUT_ASSEMBLER</b>
+### -field DXGK_RENDER_PIPELINE_STAGE_INPUT_ASSEMBLER
 
 <dd>
 <p>Indicates that the error occurred at the input assembler stage.</p>
 </dd>
 
-### -field <a id="DXGK_RENDER_PIPELINE_STAGE_VERTEX_SHADER"></a><a id="dxgk_render_pipeline_stage_vertex_shader"></a><b>DXGK_RENDER_PIPELINE_STAGE_VERTEX_SHADER</b>
+### -field DXGK_RENDER_PIPELINE_STAGE_VERTEX_SHADER
 
 <dd>
 <p>Indicates that the error occurred at the vertex shader stage.</p>
 </dd>
 
-### -field <a id="DXGK_RENDER_PIPELINE_STAGE_GEOMETRY_SHADER"></a><a id="dxgk_render_pipeline_stage_geometry_shader"></a><b>DXGK_RENDER_PIPELINE_STAGE_GEOMETRY_SHADER</b>
+### -field DXGK_RENDER_PIPELINE_STAGE_GEOMETRY_SHADER
 
 <dd>
 <p>Indicates that the error occurred at the geometry shader stage.</p>
 </dd>
 
-### -field <a id="DXGK_RENDER_PIPELINE_STAGE_STREAM_OUTPUT"></a><a id="dxgk_render_pipeline_stage_stream_output"></a><b>DXGK_RENDER_PIPELINE_STAGE_STREAM_OUTPUT</b>
+### -field DXGK_RENDER_PIPELINE_STAGE_STREAM_OUTPUT
 
 <dd>
 <p>Indicates that the error occurred at the stream output stage.</p>
 </dd>
 
-### -field <a id="DXGK_RENDER_PIPELINE_STAGE_RASTERIZER"></a><a id="dxgk_render_pipeline_stage_rasterizer"></a><b>DXGK_RENDER_PIPELINE_STAGE_RASTERIZER</b>
+### -field DXGK_RENDER_PIPELINE_STAGE_RASTERIZER
 
 <dd>
 <p>Indicates that the error occurred at the rasterizer stage.</p>
 </dd>
 
-### -field <a id="DXGK_RENDER_PIPELINE_STAGE_PIXEL_SHADER"></a><a id="dxgk_render_pipeline_stage_pixel_shader"></a><b>DXGK_RENDER_PIPELINE_STAGE_PIXEL_SHADER</b>
+### -field DXGK_RENDER_PIPELINE_STAGE_PIXEL_SHADER
 
 <dd>
 <p>Indicates that the error occurred at the pixel shader stage.</p>
 </dd>
 
-### -field <a id="DXGK_RENDER_PIPELINE_STAGE_OUTPUT_MERGER"></a><a id="dxgk_render_pipeline_stage_output_merger"></a><b>DXGK_RENDER_PIPELINE_STAGE_OUTPUT_MERGER</b>
+### -field DXGK_RENDER_PIPELINE_STAGE_OUTPUT_MERGER
 
 <dd>
 <p>Indicates that the error occurred at the output merger stage.</p>

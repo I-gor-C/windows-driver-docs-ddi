@@ -61,48 +61,48 @@ typedef struct _DXVA_DeinterlaceBlt {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size of this structure in bytes.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd></dd>
 
-### -field <b>rtTarget</b>
+### -field rtTarget
 
 <dd>
 <p>Identifies the location of the output frame within the sequence of input frames. If only deinterlacing is performed, the target time should coincide with either the starting display time of a reference sample, as defined in the <a href="..\dxva\ns-dxva--dxva-videosample.md">DXVA_VideoSample</a> structure, or the midpoint between the starting display time and the ending display time. For more information, see Remarks.</p>
 <p>If a frame rate conversion is requested, the <b>rtTarget</b> time can be different from any of the <b>rtStart</b> times of the reference samples.</p>
 </dd>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd>
 <p>Specifies a <a href="display.rect">RECT</a> structure that describes the upper left and lower right points of a rectangle on the destination surface. These points define the area in which the bit-block transfer should occur and its position on the destination surface.</p>
 </dd>
 
-### -field <b>SrcRect</b>
+### -field SrcRect
 
 <dd>
 <p>Specifies a <a href="display.rect">RECT</a> structure that describes the upper left and lower right points of a rectangle on the source surface. These points define the area of the source data for the bit-block transfer and its position on the source surface.</p>
 </dd>
 
-### -field <b>NumSourceSurfaces</b>
+### -field NumSourceSurfaces
 
 <dd>
 <p>Specifies the number of valid surfaces passed in the <b>Source</b> array.</p>
 </dd>
 
-### -field <b>Alpha</b>
+### -field Alpha
 
 <dd>
 <p>Specifies the transparency of the output image as it is written to the destination surface. A value of  0.0F indicates transparent. A value of 1.0F indicates opaque.</p>
 </dd>
 
-### -field <b>Source</b>
+### -field Source
 
 <dd>
 <p>An array of <a href="..\dxva\ns-dxva--dxva-videosample.md">DXVA_VideoSample</a> structures that specify the reference input samples needed for this deinterlacing or frame-rate conversion operation.</p>

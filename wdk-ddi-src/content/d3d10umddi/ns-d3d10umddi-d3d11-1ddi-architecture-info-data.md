@@ -54,7 +54,7 @@ typedef struct D3D11_1DDI_ARCHITECTURE_INFO_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>TileBasedDeferredRenderer</b>
+### -field TileBasedDeferredRenderer
 
 <dd>
 <p>Specifies whether a rendering device batches rendering commands and performs multipass rendering into tiles or bins over a render area. The value is <b>TRUE</b> if the rendering device batches rendering commands and <b>FALSE</b> otherwise.</p>

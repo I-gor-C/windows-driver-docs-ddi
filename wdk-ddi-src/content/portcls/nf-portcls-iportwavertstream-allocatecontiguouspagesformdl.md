@@ -56,19 +56,19 @@ PMDL AllocateContiguousPagesForMdl(
 ## -parameters
 <dl>
 
-### -param <i>LowAddress</i> [in]
+### -param LowAddress [in]
 
 <dd>
 <p>Specifies the low end of the address range from which the storage for the MDL can be allocated.</p>
 </dd>
 
-### -param <i>HighAddress</i> [in]
+### -param HighAddress [in]
 
 <dd>
 <p>Specifies the high end of the address range from which the storage for the MDL can be allocated.</p>
 </dd>
 
-### -param <i>TotalBytes</i> [in]
+### -param TotalBytes [in]
 
 <dd>
 <p>Specifies the total number of bytes to allocate for the MDL. This method always allocates an integral number of memory pages.</p>

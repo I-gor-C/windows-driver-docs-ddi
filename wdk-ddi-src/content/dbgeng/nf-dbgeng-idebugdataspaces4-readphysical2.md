@@ -7,7 +7,7 @@ old-location: debugger\readphysical2.htm
 old-project: debugger
 ms.assetid: ad376a6f-b8e3-40ba-9b00-df1410c1293c
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugDataSpaces4, ReadPhysical2, IDebugDataSpaces4::ReadPhysical2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ HRESULT ReadPhysical2(
 ## -parameters
 <dl>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the physical address of the memory to read.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies the properties of the physical memory to be read.  This must match the way the physical memory was advertised to the operating system on the target.  Possible values are listed in the following table.</p>
@@ -109,19 +109,19 @@ HRESULT ReadPhysical2(
 <p> </p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Receives the memory that is read.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the <i>Buffer</i> buffer.  This is the maximum number of bytes that will be read.</p>
 </dd>
 
-### -param <i>BytesRead</i> [out, optional]
+### -param BytesRead [out, optional]
 
 <dd>
 <p>Receives the number of bytes read from the target's memory.  If <i>BytesRead</i> is <b>NULL</b>, this information is not returned.</p>
@@ -135,7 +135,7 @@ HRESULT ReadPhysical2(
 
 <p> </p>
 
-<p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
+<p>This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p>
 
 ## -remarks
 <p>This method is only available in kernel-mode debugging.</p>
@@ -180,4 +180,4 @@ HRESULT ReadPhysical2(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces4::ReadPhysical2 method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces4::ReadPhysical2 method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

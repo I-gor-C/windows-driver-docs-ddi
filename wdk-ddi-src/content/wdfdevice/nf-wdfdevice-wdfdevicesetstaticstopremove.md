@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicesetstaticstopremove.htm
 old-project: wdf
 ms.assetid: b2776618-2585-4a7a-9f8f-536f1d28745b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceSetStaticStopRemove
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ VOID WdfDeviceSetStaticStopRemove(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>Stoppable</i> [in]
+### -param Stoppable [in]
 
 <dd>
 <p>A Boolean value that indicates whether the specified device can be stopped and removed. If <b>TRUE</b>, the device can be stopped and removed. If <b>FALSE</b>, the device cannot be stopped and removed.</p>

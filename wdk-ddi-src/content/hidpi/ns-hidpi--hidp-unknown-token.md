@@ -56,19 +56,19 @@ typedef struct _HIDP_UNKNOWN_TOKEN {
 ## -struct-fields
 <dl>
 
-### -field <b>Token</b>
+### -field Token
 
 <dd>
 <p>Specifies the one-byte prefix of a global item.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for internal system use.</p>
 </dd>
 
-### -field <b>BitField</b>
+### -field BitField
 
 <dd>
 <p>Specifies the data part of the global item.</p>

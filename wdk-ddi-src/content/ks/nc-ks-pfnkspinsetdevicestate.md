@@ -59,19 +59,19 @@ NTSTATUS AVStrMiniPinSetDeviceState(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>Pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure for which state is changing.</p>
 </dd>
 
-### -param <i>ToState</i> [in]
+### -param ToState [in]
 
 <dd>
 <p>The target <a href="stream.ksstate">KSSTATE</a> after receipt of the IOCTL.</p>
 </dd>
 
-### -param <i>FromState</i> [in]
+### -param FromState [in]
 
 <dd>
 <p>The previous <a href="stream.ksstate">KSSTATE</a>.</p>
@@ -79,7 +79,7 @@ NTSTATUS AVStrMiniPinSetDeviceState(
 </dl>
 
 ## -returns
-<p>Return STATUS_SUCCESS or the error code that was returned from the attempt to set the state. Do not return STATUS_PENDING. The filter control mutex is held during this function. See <a href="NULL">Filter Control Mutex in AVStream</a>.</p>
+<p>Return STATUS_SUCCESS or the error code that was returned from the attempt to set the state. Do not return STATUS_PENDING. The filter control mutex is held during this function. See <a href="https://msdn.microsoft.com/402795a0-e567-4e7e-a7d8-b2ce29ffb8fd">Filter Control Mutex in AVStream</a>.</p>
 
 ## -remarks
 <p>The minidriver specifies this routine's address in the <b>SetDeviceState</b> member of its <a href="..\ks\ns-ks--kspin-dispatch.md">KSPIN_DISPATCH</a> structure.</p>

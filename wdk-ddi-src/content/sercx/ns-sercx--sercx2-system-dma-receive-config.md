@@ -69,61 +69,61 @@ typedef struct _SERCX2_SYSTEM_DMA_RECEIVE_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2systemdmareceivecreate.md">SerCx2SystemDmaReceiveCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
-### -field <b>MaximumTransferLength</b>
+### -field MaximumTransferLength
 
 <dd>
 <p>The default maximum size, in bytes, that the serial controller can handle in a single system DMA transfer. If the size of the buffer in the read (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>) request is larger than this maximum size, SerCx2 uses multiple DMA transfers to handle the request, and limits each transfer to the maximum length.</p>
 </dd>
 
-### -field <b>MinimumTransactionLength</b>
+### -field MinimumTransactionLength
 
 <dd>
 <p>The minimum length, in bytes, of a system-DMA-receive transaction. If the length of the buffer in a read request is less than this minimum length, SerCx2 uses programmed I/O (PIO) for the transaction.</p>
 </dd>
 
-### -field <b>DmaAlignment</b>
+### -field DmaAlignment
 
 <dd>
 <p>DMA alignment requirement. Specifies how the starting address of a transfer in a system-DMA-receive transaction must be aligned in memory. Set this member to the appropriate FILE_<i>XXX</i>_ALIGNMENT constant in the Wdm.h header file. For example, FILE_WORD_ALIGNMENT indicates that the starting DMA address must be aligned to two-byte boundary in memory, FILE_LONG_ALIGNMENT indicates that the address must be aligned to a four-byte boundary, and so on. SerCx2 does not support FILE_BYTE_ALIGNMENT. The minimum transfer unit (MTU) of the system DMA adapter should be greater than or equal to the required alignment. For example, if the MTU is four bytes, <b>DmaAlignment</b> must be at least FILE_LONG_ALIGNMENT.</p>
 </dd>
 
-### -field <b>MaximumScatterGatherFragments</b>
+### -field MaximumScatterGatherFragments
 
 <dd>
 <p>The maximum number of buffer fragments that can be specified in the scatter/gather list for a DMA transfer in a system-DMA-receive transaction.</p>
 </dd>
 
-### -field <b>DmaWidth</b>
+### -field DmaWidth
 
 <dd>
 <p>The width of the data register at the address specified by <b>DeviceAddress</b>. Possible values are <b>Width8Bits</b>, <b>Width16Bits</b>, <b>Width32Bits</b>, and <b>Width64Bits</b>.</p>
 </dd>
 
-### -field <b>DeviceAddress</b>
+### -field DeviceAddress
 
 <dd>
 <p>The translated address from which the DMA controller transfers. For more information, see the description of the <b>DeviceAddress</b> member in <a href="..\wdfdmaenabler\ns-wdfdmaenabler--wdf-dma-system-profile-config.md">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>.</p>
 </dd>
 
-### -field <b>DmaDescriptor</b>
+### -field DmaDescriptor
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes the system DMA resource to use for receive transactions. The serial controller driver gets this structure from the raw resource list it receives in the <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-prepare-hardware.md">EvtDevicePrepareHardware</a> callback that starts the serial controller.</p>
 </dd>
 
-### -field <b>MinimumTransferUnitOverride</b>
+### -field MinimumTransferUnitOverride
 
 <dd>
 <p>An override value to use in place of the default minimum transfer unit. The number of bytes specified by an element in a scatter/gather list must be an integer multiple of the minimum transfer unit. A value of zero indicates that the default minimum transfer unit should be used. For more information, see the description of the <b>MinimumTransferUnit</b> member in <a href="..\wdm\ns-wdm--dma-adapter-info-v1.md">DMA_ADAPTER_INFO_V1</a>.</p>
 </dd>
 
-### -field <b>Exclusive</b>
+### -field Exclusive
 
 <dd>
 <p>Whether to use system-DMA-receive transactions exclusively to handle write (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>) requests. Set to <b>TRUE</b> to indicate that read requests should use system-DMA-receive transactions exclusively. Set to <b>FALSE</b> to indicate that read requests can use a combination of system-DMA-receive transactions and PIO-receive transactions.</p>
@@ -132,31 +132,31 @@ typedef struct _SERCX2_SYSTEM_DMA_RECEIVE_CONFIG {
 <p>Regardless of the value of this member, PIO-receive transactions are used to save any unread data in the receive FIFO before the serial controller exits the D0 device power state to enter a low-power state.</p>
 </dd>
 
-### -field <b>EvtSerCx2SystemDmaReceiveInitializeTransaction</b>
+### -field EvtSerCx2SystemDmaReceiveInitializeTransaction
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-receive-initialize-transaction.md">EvtSerCx2SystemDmaReceiveInitializeTransaction</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>
 </dd>
 
-### -field <b>EvtSerCx2SystemDmaReceiveCleanupTransaction</b>
+### -field EvtSerCx2SystemDmaReceiveCleanupTransaction
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-receive-cleanup-transaction.md">EvtSerCx2SystemDmaReceiveCleanupTransaction</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>
 </dd>
 
-### -field <b>EvtSerCx2SystemDmaReceiveConfigureDmaChannel</b>
+### -field EvtSerCx2SystemDmaReceiveConfigureDmaChannel
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-receive-configure-dma-channel.md">EvtSerCx2SystemDmaReceiveConfigureDmaChannel</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>
 </dd>
 
-### -field <b>EvtSerCx2SystemDmaReceiveEnableNewDataNotification</b>
+### -field EvtSerCx2SystemDmaReceiveEnableNewDataNotification
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-receive-enable-new-data-notification.md">EvtSerCx2SystemDmaReceiveEnableNewDataNotification</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function. However, a driver that implements this function must also implement an <i>EvtSerCx2SystemDmaReceiveCancelNewDataNotification</i> function.</p>
 </dd>
 
-### -field <b>EvtSerCx2SystemDmaReceiveCancelNewDataNotification</b>
+### -field EvtSerCx2SystemDmaReceiveCancelNewDataNotification
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-receive-cancel-new-data-notification.md">EvtSerCx2SystemDmaReceiveCancelNewDataNotification</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function. However, a driver that implements this function must also implement an <i>EvtSerCx2SystemDmaReceiveEnableNewDataNotification</i> function.</p>

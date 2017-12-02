@@ -7,7 +7,7 @@ old-location: netvista\rilsenduicctoolkitcmdresponseparams.htm
 old-project: netvista
 ms.assetid: 9006d542-0f83-4cd4-ab81-d2e4cce67406
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSENDUICCTOOLKITCMDRESPONSEPARAMS, RILSENDUICCTOOLKITCMDRESPONSEPARAMS, *LPRILSENDUICCTOOLKITCMDRESPONSEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef struct _RILSENDUICCTOOLKITCMDRESPONSEPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSlotIndex</b>
+### -field dwSlotIndex
 
 <dd></dd>
 
-### -field <b>dwDetailsSize</b>
+### -field dwDetailsSize
 
 <dd></dd>
 
-### -field <b>bDetails</b>
+### -field bDetails
 
 <dd></dd>
 </dl>

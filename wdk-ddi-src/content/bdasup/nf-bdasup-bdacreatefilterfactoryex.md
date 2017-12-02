@@ -57,25 +57,25 @@ NTSTATUS BdaCreateFilterFactoryEx(
 ## -parameters
 <dl>
 
-### -param <i>pKSDevice</i> [in]
+### -param pKSDevice [in]
 
 <dd>
 <p>Points to the BDA device to which to add the filter factory with associated BDA template topology.</p>
 </dd>
 
-### -param <i>pFilterDescriptor</i> [in]
+### -param pFilterDescriptor [in]
 
 <dd>
 <p>Points to a <a href="..\ks\ns-ks--ksfilter-descriptor.md">KSFILTER_DESCRIPTOR</a> structure that describes a filter for the BDA device. Note that not all of the template pin and node types may be exposed as pin and node factories when the filter is first initialized. </p>
 </dd>
 
-### -param <i>pBdaFilterTemplate</i> [in]
+### -param pBdaFilterTemplate [in]
 
 <dd>
 <p>Points to a <a href="..\bdasup\ns-bdasup--bda-filter-template.md">BDA_FILTER_TEMPLATE</a> structure that describes a BDA template topology. </p>
 </dd>
 
-### -param <i>ppKSFilterFactory</i> [out, optional]
+### -param ppKSFilterFactory [out, optional]
 
 <dd>
 <p>Points to a buffer that receives a pointer to a <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> structure for the newly created filter factory. </p>

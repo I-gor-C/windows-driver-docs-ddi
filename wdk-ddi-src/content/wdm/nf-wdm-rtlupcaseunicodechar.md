@@ -55,7 +55,7 @@ WCHAR RtlUpcaseUnicodeChar(
 ## -parameters
 <dl>
 
-### -param <i>SourceCharacter</i> [in]
+### -param SourceCharacter [in]
 
 <dd>
 <p>Specifies the character to convert.</p>

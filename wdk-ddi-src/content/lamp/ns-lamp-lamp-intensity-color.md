@@ -56,19 +56,19 @@ typedef struct LAMP_INTENSITY_COLOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Red</b>
+### -field Red
 
 <dd>
 <p>Red light intensity in percentage (0-100).</p>
 </dd>
 
-### -field <b>Green</b>
+### -field Green
 
 <dd>
 <p>Green light intensity in percentage (0-100).</p>
 </dd>
 
-### -field <b>Blue</b>
+### -field Blue
 
 <dd>
 <p>Blue light intensity in percentage (0-100).</p>

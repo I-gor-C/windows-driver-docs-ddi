@@ -7,7 +7,7 @@ old-location: netvista\ndis_miniport_adapter_registration_attributes.htm
 old-project: netvista
 ms.assetid: 8f0d539a-50c5-4ecd-b62d-6b32fe7cfaba
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -67,14 +67,14 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES_REVISION_2"></a><a id="ndis_miniport_adapter_registration_attributes_revision_2"></a>NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES_REVISION_2
+### -field NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES_REVISION_2
 
 <dd>
 <p>Added <b>AttributeFlags</b> flags for NDIS 6.30.</p>
 <p>Set the <b>Size</b> member to NDIS_SIZEOF_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES_REVISION_2.</p>
 </dd>
 
-### -field <a id="NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES_REVISION_1"></a><a id="ndis_miniport_adapter_registration_attributes_revision_1"></a>NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES_REVISION_1
+### -field NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.0.</p>
@@ -83,7 +83,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
 </dl>
 </dd>
 
-### -field <b>MiniportAdapterContext</b>
+### -field MiniportAdapterContext
 
 <dd>
 <p>A handle to a context area that the miniport driver allocated in its 
@@ -91,7 +91,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
      The miniport driver uses this context area to maintain state information for a miniport adapter.</p>
 </dd>
 
-### -field <b>AttributeFlags</b>
+### -field AttributeFlags
 
 <dd>
 <p>A bitmask of flags that are combined with a bitwise OR. NDIS miniport drivers should set one or more of
@@ -100,7 +100,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_MINIPORT_ATTRIBUTES_HARDWARE_DEVICE"></a><a id="ndis_miniport_attributes_hardware_device"></a>NDIS_MINIPORT_ATTRIBUTES_HARDWARE_DEVICE
+### -field NDIS_MINIPORT_ATTRIBUTES_HARDWARE_DEVICE
 
 <dd>
 <p>Set if the miniport driver directly controls a physical device. The physical device is assigned
@@ -110,7 +110,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
        MiniportInitializeEx</a> function.</p>
 </dd>
 
-### -field <a id="NDIS_MINIPORT_ATTRIBUTES_NDIS_WDM"></a><a id="ndis_miniport_attributes_ndis_wdm"></a>NDIS_MINIPORT_ATTRIBUTES_NDIS_WDM
+### -field NDIS_MINIPORT_ATTRIBUTES_NDIS_WDM
 
 <dd>
 <p>Set if the lower-level interface of the miniport adapter is a WDM bus driver such as USB or IEEE
@@ -119,13 +119,13 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
        through the underlying bus driver's WDM interface.</p>
 </dd>
 
-### -field <a id="NDIS_MINIPORT_ATTRIBUTES_BUS_MASTER"></a><a id="ndis_miniport_attributes_bus_master"></a>NDIS_MINIPORT_ATTRIBUTES_BUS_MASTER
+### -field NDIS_MINIPORT_ATTRIBUTES_BUS_MASTER
 
 <dd>
 <p>Set if the caller's NIC is a bus-master DMA device.</p>
 </dd>
 
-### -field <a id="NDIS_MINIPORT_ATTRIBUTES_NO_HALT_ON_SUSPEND"></a><a id="ndis_miniport_attributes_no_halt_on_suspend"></a>NDIS_MINIPORT_ATTRIBUTES_NO_HALT_ON_SUSPEND
+### -field NDIS_MINIPORT_ATTRIBUTES_NO_HALT_ON_SUSPEND
 
 <dd>
 <p>Set if NDIS should not call a miniport driver's 
@@ -134,7 +134,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
        should not set this flag.</p>
 </dd>
 
-### -field <a id="NDIS_MINIPORT_ATTRIBUTES_SURPRISE_REMOVE_OK"></a><a id="ndis_miniport_attributes_surprise_remove_ok"></a>NDIS_MINIPORT_ATTRIBUTES_SURPRISE_REMOVE_OK
+### -field NDIS_MINIPORT_ATTRIBUTES_SURPRISE_REMOVE_OK
 
 <dd>
 <p>Set if the miniport driver can handle removal of its NIC without user notification. NDIS drivers receive
@@ -143,14 +143,14 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
        MiniportDevicePnPEventNotify</a> function.</p>
 </dd>
 
-### -field <a id="NDIS_MINIPORT_ATTRIBUTES_NOT_CO_NDIS"></a><a id="ndis_miniport_attributes_not_co_ndis"></a>NDIS_MINIPORT_ATTRIBUTES_NOT_CO_NDIS
+### -field NDIS_MINIPORT_ATTRIBUTES_NOT_CO_NDIS
 
 <dd>
 <p>Set by a miniport driver that can support both connection-oriented and connectionless devices to indicate
        that the device is a connectionless device.</p>
 </dd>
 
-### -field <a id="NDIS_MINIPORT_ATTRIBUTES_DO_NOT_BIND_TO_ALL_CO"></a><a id="ndis_miniport_attributes_do_not_bind_to_all_co"></a>NDIS_MINIPORT_ATTRIBUTES_DO_NOT_BIND_TO_ALL_CO
+### -field NDIS_MINIPORT_ATTRIBUTES_DO_NOT_BIND_TO_ALL_CO
 
 <dd>
 <p>Set by a CoNDIS miniport driver that does not provide TAPI services. Setting
@@ -159,7 +159,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
        drivers.</p>
 </dd>
 
-### -field <a id="NDIS_MINIPORT_ATTRIBUTES_CONTROLS_DEFAULT_PORT"></a><a id="ndis_miniport_attributes_controls_default_port"></a>NDIS_MINIPORT_ATTRIBUTES_CONTROLS_DEFAULT_PORT
+### -field NDIS_MINIPORT_ATTRIBUTES_CONTROLS_DEFAULT_PORT
 
 <dd>
 <p>Set by a miniport driver that calls the 
@@ -169,14 +169,14 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
        default port is not active.</p>
 </dd>
 
-### -field <a id="NDIS_MINIPORT_ATTRIBUTES_NO_PAUSE_ON_SUSPEND"></a><a id="ndis_miniport_attributes_no_pause_on_suspend"></a>NDIS_MINIPORT_ATTRIBUTES_NO_PAUSE_ON_SUSPEND
+### -field NDIS_MINIPORT_ATTRIBUTES_NO_PAUSE_ON_SUSPEND
 
 <dd>
 <p>Starting with NDIS 6.30, this flag is set if the miniport driver  is able to transition to a low-power state without being paused. </p>
 <p>For more information about this flag, see the Remarks section.</p>
 </dd>
 
-### -field <a id="NDIS_MINIPORT_ATTRIBUTES_REGISTER_BUGCHECK_CALLBACK"></a><a id="ndis_miniport_attributes_register_bugcheck_callback"></a>NDIS_MINIPORT_ATTRIBUTES_REGISTER_BUGCHECK_CALLBACK
+### -field NDIS_MINIPORT_ATTRIBUTES_REGISTER_BUGCHECK_CALLBACK
 
 <dd>
 <p>Starting with NDIS 6.30 miniports, NDIS will not invoke the miniport's MiniportShutdownEx handler during a BugCheck unless this flag is set.  Most miniports should not set this flag. </p>
@@ -184,7 +184,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
 </dl>
 </dd>
 
-### -field <b>CheckForHangTimeInSeconds</b>
+### -field CheckForHangTimeInSeconds
 
 <dd>
 <p>The time-out interval, in seconds, at which NDIS should call the 
@@ -198,11 +198,11 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
      <i>MiniportCheckForHangEx</i> is always a multiple of 2 seconds. For example, if you specify 5
      seconds, the interval will be approximately 4 seconds.</p>
 <p>If this member is 0, the default time-out interval is 2 seconds.</p>
-<div class="alert"><b>Note</b>  The time-out interval must be greater than your miniport driver's initialization time. For more information, see <a href="NULL">Miniport Adapter Check-for-Hang and Reset Operations</a>.</div>
+<div class="alert"><b>Note</b>  The time-out interval must be greater than your miniport driver's initialization time. For more information, see <a href="netvista.miniport_adapter_check_for_hang_and_reset_operations">Miniport Adapter Check-for-Hang and Reset Operations</a>.</div>
 <div> </div>
 </dd>
 
-### -field <b>InterfaceType</b>
+### -field InterfaceType
 
 <dd>
 <p>The I/O bus interface type of the miniport adapter. This is usually the type of I/O bus on which
@@ -211,88 +211,88 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="NdisInterfaceInternal"></a><a id="ndisinterfaceinternal"></a><a id="NDISINTERFACEINTERNAL"></a><b>NdisInterfaceInternal</b>
+### -field NdisInterfaceInternal
 
 <dd>
 <p>Specifies a host-specific internal interface.</p>
 </dd>
 
-### -field <a id="NdisInterfaceIsa"></a><a id="ndisinterfaceisa"></a><a id="NDISINTERFACEISA"></a><b>NdisInterfaceIsa</b>
+### -field NdisInterfaceIsa
 
 <dd>
 <p>Specifies the ISA interface.</p>
 </dd>
 
-### -field <a id="NdisInterfaceEisa"></a><a id="ndisinterfaceeisa"></a><a id="NDISINTERFACEEISA"></a><b>NdisInterfaceEisa</b>
+### -field NdisInterfaceEisa
 
 <dd>
 <p>Specifies the extended ISA (EISA) interface. This interface type is not supported in NDIS 6.0
        and later versions.</p>
 </dd>
 
-### -field <a id="NdisInterfaceMca"></a><a id="ndisinterfacemca"></a><a id="NDISINTERFACEMCA"></a><b>NdisInterfaceMca</b>
+### -field NdisInterfaceMca
 
 <dd>
 <p>Refers to the MCA bus, which is no longer supported. This interface type is not supported in
        NDIS 6.0 and later versions.</p>
 </dd>
 
-### -field <a id="NdisInterfaceTurboChannel"></a><a id="ndisinterfaceturbochannel"></a><a id="NDISINTERFACETURBOCHANNEL"></a><b>NdisInterfaceTurboChannel</b>
+### -field NdisInterfaceTurboChannel
 
 <dd>
 <p>Specifies the Turbo Channel interface.</p>
 </dd>
 
-### -field <a id="NdisInterfacePci"></a><a id="ndisinterfacepci"></a><a id="NDISINTERFACEPCI"></a><b>NdisInterfacePci</b>
+### -field NdisInterfacePci
 
 <dd>
 <p>Specifies the Peripheral Component Interconnect (PCI) interface.</p>
 </dd>
 
-### -field <a id="NdisInterfacePcMcia"></a><a id="ndisinterfacepcmcia"></a><a id="NDISINTERFACEPCMCIA"></a><b>NdisInterfacePcMcia</b>
+### -field NdisInterfacePcMcia
 
 <dd>
 <p>Specifies the Personal Computer Memory Card International Association (PC Card)
        interface.</p>
 </dd>
 
-### -field <a id="NdisInterfaceCBus"></a><a id="ndisinterfacecbus"></a><a id="NDISINTERFACECBUS"></a><b>NdisInterfaceCBus</b>
+### -field NdisInterfaceCBus
 
 <dd>
 <p>Specifies the CBus.</p>
 </dd>
 
-### -field <a id="NdisInterfaceMPIBus"></a><a id="ndisinterfacempibus"></a><a id="NDISINTERFACEMPIBUS"></a><b>NdisInterfaceMPIBus</b>
+### -field NdisInterfaceMPIBus
 
 <dd>
 <p>Specifies the MPIBus.</p>
 </dd>
 
-### -field <a id="NdisInterfaceMPSABus"></a><a id="ndisinterfacempsabus"></a><a id="NDISINTERFACEMPSABUS"></a><b>NdisInterfaceMPSABus</b>
+### -field NdisInterfaceMPSABus
 
 <dd>
 <p>Specifies the MPSABus.</p>
 </dd>
 
-### -field <a id="NdisInterfaceProcessorInternal"></a><a id="ndisinterfaceprocessorinternal"></a><a id="NDISINTERFACEPROCESSORINTERNAL"></a><b>NdisInterfaceProcessorInternal</b>
+### -field NdisInterfaceProcessorInternal
 
 <dd>
 <p>Specifies the processor internal bus.</p>
 </dd>
 
-### -field <a id="NdisInterfaceInternalPowerBus"></a><a id="ndisinterfaceinternalpowerbus"></a><a id="NDISINTERFACEINTERNALPOWERBUS"></a><b>NdisInterfaceInternalPowerBus</b>
+### -field NdisInterfaceInternalPowerBus
 
 <dd>
 <p>Specifies the internal power bus.</p>
 </dd>
 
-### -field <a id="NdisInterfacePNPISABus"></a><a id="ndisinterfacepnpisabus"></a><a id="NDISINTERFACEPNPISABUS"></a><b>NdisInterfacePNPISABus</b>
+### -field NdisInterfacePNPISABus
 
 <dd>
 <p>Specifies the PNPISABus.</p>
 </dd>
 
-### -field <a id="NdisInterfacePNPBus"></a><a id="ndisinterfacepnpbus"></a><a id="NDISINTERFACEPNPBUS"></a><b>NdisInterfacePNPBus</b>
+### -field NdisInterfacePNPBus
 
 <dd>
 <p>Specifies the PNPBus.</p>
@@ -381,9 +381,9 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569780">OID_PNP_SET_POWER</a>
 </dt>
 <dt>
-<a href="NULL">Miniport Adapter Check-for-Hang and Reset Operations</a>
+<a href="netvista.miniport_adapter_check_for_hang_and_reset_operations">Miniport Adapter Check-for-Hang and Reset Operations</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

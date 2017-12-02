@@ -7,7 +7,7 @@ old-location: netvista\dot11_association_state.htm
 old-project: netvista
 ms.assetid: 90d2457f-4246-464b-8de6-f8fda056eb7b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PRINTER_EVENT_ATTRIBUTES_INFO, PRINTER_EVENT_ATTRIBUTES_INFO, *PPRINTER_EVENT_ATTRIBUTES_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,25 +56,25 @@ typedef enum _DOT11_ASSOCIATION_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="dot11_assoc_state_zero"></a><a id="DOT11_ASSOC_STATE_ZERO"></a><b>dot11_assoc_state_zero</b>
+### -field dot11_assoc_state_zero
 
 <dd>
 <p>The association state is undefined.</p>
 </dd>
 
-### -field <a id="dot11_assoc_state_unauth_unassoc"></a><a id="DOT11_ASSOC_STATE_UNAUTH_UNASSOC"></a><b>dot11_assoc_state_unauth_unassoc</b>
+### -field dot11_assoc_state_unauth_unassoc
 
 <dd>
 <p>The 802.11 station is unauthenticated with the peer and is not associated.</p>
 </dd>
 
-### -field <a id="dot11_assoc_state_auth_unassoc"></a><a id="DOT11_ASSOC_STATE_AUTH_UNASSOC"></a><b>dot11_assoc_state_auth_unassoc</b>
+### -field dot11_assoc_state_auth_unassoc
 
 <dd>
 <p>The 802.11 station is authenticated with the peer but is not associated.</p>
 </dd>
 
-### -field <a id="dot11_assoc_state_auth_assoc"></a><a id="DOT11_ASSOC_STATE_AUTH_ASSOC"></a><b>dot11_assoc_state_auth_assoc</b>
+### -field dot11_assoc_state_auth_assoc
 
 <dd>
 <p>The 802.11 station is authenticated and associated with the peer.</p>

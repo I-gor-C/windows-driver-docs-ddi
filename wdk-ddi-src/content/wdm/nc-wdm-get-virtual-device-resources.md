@@ -59,13 +59,13 @@ VOID GetResources(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in, out]
+### -param Context [in, out]
 
 <dd>
 <p>A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\wdm\ns-wdm--pci-virtualization-interface.md">PCI_VIRTUALIZATION_INTERFACE</a> structure for the interface.</p>
 </dd>
 
-### -param <i>CapturedBusNumbers</i> [out]
+### -param CapturedBusNumbers [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which this routine returns a UINT8 value. This value specifies the number of PCIe buses that have been captured for use by the SR-IOV PF of the device.</p>

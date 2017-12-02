@@ -73,103 +73,103 @@ typedef struct _VIDEO_MODE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Specifies the length, in bytes, of this structure. A miniport driver can use this value to determine the version of this structure. </p>
 </dd>
 
-### -field <b>ModeIndex</b>
+### -field ModeIndex
 
 <dd>
 <p>Specifies the index of the particular mode to be used in a call to the miniport driver.</p>
 </dd>
 
-### -field <b>VisScreenWidth</b>
+### -field VisScreenWidth
 
 <dd>
 <p>Specifies the number of visible pixels on one horizontal scan line.</p>
 </dd>
 
-### -field <b>VisScreenHeight</b>
+### -field VisScreenHeight
 
 <dd>
 <p>Specifies the number of visible lines (or scan lines) on the screen.</p>
 </dd>
 
-### -field <b>ScreenStride</b>
+### -field ScreenStride
 
 <dd>
 <p>Specifies the number of bytes between the start of one scan line and the next.</p>
 </dd>
 
-### -field <b>NumberOfPlanes</b>
+### -field NumberOfPlanes
 
 <dd>
 <p>Specifies the number of separate planes combined by the device.</p>
 </dd>
 
-### -field <b>BitsPerPlane</b>
+### -field BitsPerPlane
 
 <dd>
 <p>Specifies the number of bits per pixel per plane.</p>
 </dd>
 
-### -field <b>Frequency</b>
+### -field Frequency
 
 <dd>
 <p>Specifies the screen refresh rate, in Hertz.</p>
 </dd>
 
-### -field <b>XMillimeter</b>
+### -field XMillimeter
 
 <dd>
 <p>Specifies the width, in millimeters, of the active region on the output device.</p>
 </dd>
 
-### -field <b>YMillimeter</b>
+### -field YMillimeter
 
 <dd>
 <p>Specifies the height, in millimeters, of the active region on the output device.</p>
 </dd>
 
-### -field <b>NumberRedBits</b>
+### -field NumberRedBits
 
 <dd>
 <p>Specifies the number of bits in the red DAC.</p>
 </dd>
 
-### -field <b>NumberGreenBits</b>
+### -field NumberGreenBits
 
 <dd>
 <p>Specifies the number of bits in the green DAC.</p>
 </dd>
 
-### -field <b>NumberBlueBits</b>
+### -field NumberBlueBits
 
 <dd>
 <p>Specifies the number of bits in the blue DAC.</p>
 </dd>
 
-### -field <b>RedMask</b>
+### -field RedMask
 
 <dd>
 <p>Is the red color mask for a device with direct color modes. For example, to indicate that bits 0 through 4 are to be used for red, use the value 0x001F.</p>
 </dd>
 
-### -field <b>GreenMask</b>
+### -field GreenMask
 
 <dd>
 <p>Is the green color mask for a device with direct color modes. For example, to indicate that bits 5 through 9 are to be used for green, use the value 0x03E0.</p>
 </dd>
 
-### -field <b>BlueMask</b>
+### -field BlueMask
 
 <dd>
 <p>Is the blue color mask for a device with direct color modes. For example, to indicate that bits 10 through 14 are to be used for blue, use the value 0x7C00.</p>
 </dd>
 
-### -field <b>AttributeFlags</b>
+### -field AttributeFlags
 
 <dd>
 <p>Is a set of flags indicating certain behavior for the device. The flags and their meanings are shown in the following table.</p>
@@ -243,7 +243,7 @@ typedef struct _VIDEO_MODE_INFORMATION {
 ### -field 0 = Colors are direct
 
 
-### -field 1 = Colors are indexed to a <a href="wdkgloss.p#wdkgloss.palette#wdkgloss.palette"><i>palette</i></a>
+### -field 1 = Colors are indexed to a palette
 
 </dl>
 </p>
@@ -332,7 +332,7 @@ typedef struct _VIDEO_MODE_INFORMATION {
 <p>
 <dl>
 
-### -field 0 = 64-bit memory writes to <a href="wdkgloss.f#wdkgloss.frame_buffer#wdkgloss.frame_buffer"><i>frame buffer</i></a> are handled properly
+### -field 0 = 64-bit memory writes to frame buffer are handled properly
 
 
 ### -field 1 = 64-bit memory writes to frame buffer are not handled
@@ -345,19 +345,19 @@ typedef struct _VIDEO_MODE_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>VideoMemoryBitmapWidth</b>
+### -field VideoMemoryBitmapWidth
 
 <dd>
 <p>Specifies the width, in pixels, of the video memory bitmap. </p>
 </dd>
 
-### -field <b>VideoMemoryBitmapHeight</b>
+### -field VideoMemoryBitmapHeight
 
 <dd>
 <p>Specifies the height, in pixels, of the video memory bitmap.</p>
 </dd>
 
-### -field <b>DriverSpecificAttributeFlags</b>
+### -field DriverSpecificAttributeFlags
 
 <dd>
 <p>Is a set of flags indicating certain behavior for the device. These private flags are defined in the miniport driver, and are for the use by the miniport and display drivers only.</p>

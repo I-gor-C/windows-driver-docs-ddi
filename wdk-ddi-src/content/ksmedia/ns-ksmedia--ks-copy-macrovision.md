@@ -54,7 +54,7 @@ typedef struct _KS_COPY_MACROVISION {
 ## -struct-fields
 <dl>
 
-### -field <b>MACROVISIONLevel</b>
+### -field MACROVISIONLevel
 
 <dd>
 <p>Specifies the Macrovision level. This must be one of the following values from the KS_COPY_MACROVISION_LEVEL enumeration:</p>
@@ -103,7 +103,7 @@ typedef struct _KS_COPY_MACROVISION {
 ## -remarks
 <p>The KS_COPY_MACROVISION structure is used by the KSPROPERTY_COPY_MACROVISION property.</p>
 
-<p>For additional uses of this structure see <a href="NULL">DVD Copyright Protection</a> and <a href="NULL">Macrovision</a>.</p>
+<p>For additional uses of this structure see <a href="https://msdn.microsoft.com/ff9cf8c8-7c8f-485c-b2ab-7567a5eeb87b">DVD Copyright Protection</a> and <a href="https://msdn.microsoft.com/62bd8d8a-3e58-4bca-a32d-ff792180afbe">Macrovision</a>.</p>
 
 ## -requirements
 <table>

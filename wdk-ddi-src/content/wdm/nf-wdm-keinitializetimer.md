@@ -55,7 +55,7 @@ VOID KeInitializeTimer(
 ## -parameters
 <dl>
 
-### -param <i>Timer</i> [out]
+### -param Timer [out]
 
 <dd>
 <p>Pointer to a timer object, for which the caller provides the storage.</p>

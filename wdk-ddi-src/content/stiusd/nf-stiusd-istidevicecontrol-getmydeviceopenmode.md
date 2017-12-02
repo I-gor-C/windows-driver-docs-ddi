@@ -7,7 +7,7 @@ old-location: image\istidevicecontrol_getmydeviceopenmode.htm
 old-project: image
 ms.assetid: 814e739f-6147-4287-876e-db6fc41c5aa1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDeviceControl, GetMyDeviceOpenMode, IStiDeviceControl::GetMyDeviceOpenMode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT GetMyDeviceOpenMode(
 ## -parameters
 <dl>
 
-### -param <i>pdwOpenMode</i> 
+### -param pdwOpenMode 
 
 <dd>
 <p>Receives the mode flag that an application previously specified as the <i>dwMode</i> argument to <a href="image.istillimage_createdevice">IStillImage::CreateDevice</a>.</p>

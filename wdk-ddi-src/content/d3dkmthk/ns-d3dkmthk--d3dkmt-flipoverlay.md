@@ -58,31 +58,31 @@ typedef struct _D3DKMT_FLIPOVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device that the overlay is associated with.</p>
 </dd>
 
-### -field <b>hOverlay</b>
+### -field hOverlay
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to be flipped.</p>
 </dd>
 
-### -field <b>hSource</b>
+### -field hSource
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the source allocation to be displayed.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in] A pointer to a block of private data, which is passed from the OpenGL ICD to the display miniport driver. </p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.</p>

@@ -55,13 +55,13 @@ typedef struct _D3DHAL_DP2SETTEXLOD {
 ## -struct-fields
 <dl>
 
-### -field <b>dwDDSurface</b>
+### -field dwDDSurface
 
 <dd>
 <p>Specifies a handle to a surface chain.</p>
 </dd>
 
-### -field <b>dwLOD</b>
+### -field dwLOD
 
 <dd>
 <p>Controls the maximum MIP level loaded into video memory. Therefore, if the most detailed MIP map in the chain has dimensions 256x256, setting the maximum level to 2 means that the largest MIP map ever present in video memory has dimensions 64x64. </p>

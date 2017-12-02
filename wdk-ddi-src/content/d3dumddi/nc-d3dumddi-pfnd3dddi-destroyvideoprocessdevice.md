@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY DestroyVideoProcessDevice(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hVideoProcessor</i> [in]
+### -param hVideoProcessor [in]
 
 <dd>
 <p> A handle to the DirectX VA video processing device that was created by the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createvideoprocessdevice.md">CreateVideoProcessDevice</a> function.</p>

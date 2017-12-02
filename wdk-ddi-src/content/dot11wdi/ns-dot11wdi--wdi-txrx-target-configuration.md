@@ -7,7 +7,7 @@ old-location: netvista\wdi_txrx_target_configuration.htm
 old-project: netvista
 ms.assetid: 5a2d8bdf-cfc2-4724-aab3-0277edb477e7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDI_TXRX_TARGET_CONFIGURATION, WDI_TXRX_TARGET_CONFIGURATION, *PWDI_TXRX_TARGET_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _WDI_TXRX_TARGET_CONFIGURATION {
 ## -struct-fields
 <dl>
 
-### -field <b>TxRxParams</b>
+### -field TxRxParams
 
 <dd>
 <p>Specifies the TXRX parameters.</p>
 </dd>
 
-### -field <b>MaxNumPorts</b>
+### -field MaxNumPorts
 
 <dd>
 <p>Specifies the maximum number of ports.</p>
 </dd>
 
-### -field <b>MaxNumPeers</b>
+### -field MaxNumPeers
 
 <dd>
 <p>Specifies the maximum number of peers.</p>

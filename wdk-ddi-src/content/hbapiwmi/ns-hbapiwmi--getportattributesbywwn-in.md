@@ -54,7 +54,7 @@ typedef struct _GetPortAttributesByWWN_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>wwn</b>
+### -field wwn
 
 <dd>
 <p>Contains a worldwide name that identifies a port of type FC_Port.</p>

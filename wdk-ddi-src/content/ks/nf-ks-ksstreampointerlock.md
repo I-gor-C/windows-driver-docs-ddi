@@ -54,7 +54,7 @@ NTSTATUS KsStreamPointerLock(
 ## -parameters
 <dl>
 
-### -param <i>StreamPointer</i> [in]
+### -param StreamPointer [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure representing the stream pointer to attempt to lock.</p>
@@ -69,7 +69,7 @@ NTSTATUS KsStreamPointerLock(
 
 <p>If the pin that the stream pointer references specifies that DMA scatter/gather mappings should be generated using KSPIN_FLAG_GENERATE_MAPPINGS, AVStream generates the mappings when the stream pointer is locked.</p>
 
-<p>Also see <a href="NULL">Stream Pointers</a>. </p>
+<p>Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736f">Stream Pointers</a>. </p>
 
 ## -requirements
 <table>

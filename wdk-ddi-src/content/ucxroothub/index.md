@@ -36,4 +36,5 @@ Ucxroothub.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [CONTROLLER_TYPE enumeration](ne-ucxroothub--controller-type.md) | This enumeration specifies if the USB host controller is an eXtensible Host Controller Interface (xHCI) controller. |
 | [TRISTATE enumeration](ne-ucxroothub--tristate.md) | The TRISTATE enumeration indicates generic state values for true or false. |

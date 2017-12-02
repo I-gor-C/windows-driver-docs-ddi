@@ -54,7 +54,7 @@ ULONGLONG PcGetTimeInterval(
 ## -parameters
 <dl>
 
-### -param <i>Since</i> [in]
+### -param Since [in]
 
 <dd>
 <p>Specifies the time from which to measure the interval. Typically, this function is called once with a "since" of zero to get the current time, and is called subsequently with a "since" of the recorded current time to get time intervals from that time.</p>

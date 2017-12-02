@@ -58,13 +58,13 @@ NTSTATUS DxgkCbGetDeviceInformation(
 ## -parameters
 <dl>
 
-### -param <i>DeviceHandle</i> [in]
+### -param DeviceHandle [in]
 
 <dd>
 <p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to the <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
 </dd>
 
-### -param <i>DeviceInfo</i> [out]
+### -param DeviceInfo [out]
 
 <dd>
 <p>A pointer to a <a href="..\dispmprt\ns-dispmprt--dxgk-device-info.md">DXGK_DEVICE_INFO</a> structure that receives information about the display adapter.</p>

@@ -71,43 +71,43 @@ typedef struct _DXGK_FIRMWARE_TABLE_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of the System Firmware Table interface. Version number constants are defined in Dispmprt.h (for example, <b>DXGK_FIRMWARE_TABLE_INTERFACE_VERSION_1</b>).</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to a context that is provided by the display port driver.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to an interface reference function that is implemented by the display port driver.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to an interface dereference function that is implemented by the display port driver.</p>
 </dd>
 
-### -field <b>EnumSystemFirmwareTables</b>
+### -field EnumSystemFirmwareTables
 
 <dd>
 <p>A pointer to the display port driver's <a href="display.enumsystemfirmwaretables">EnumSystemFirmwareTables</a> function. </p>
 </dd>
 
-### -field <b>ReadSystemFirmwareTable</b>
+### -field ReadSystemFirmwareTable
 
 <dd>
 <p>A pointer to the display port driver's <a href="display.readsystemfirmwaretable">ReadSystemFirmwareTable</a> function. </p>

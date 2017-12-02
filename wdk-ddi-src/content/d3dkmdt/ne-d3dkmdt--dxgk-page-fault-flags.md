@@ -59,13 +59,13 @@ typedef enum _DXGK_PAGE_FAULT_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_PAGE_FAULT_WRITE"></a><a id="dxgk_page_fault_write"></a><b>DXGK_PAGE_FAULT_WRITE</b>
+### -field DXGK_PAGE_FAULT_WRITE
 
 <dd>
 <p>When set, this indicates that the faulted GPU virtual operation was a write operation.</p>
 </dd>
 
-### -field <a id="DXGK_PAGE_FAULT_FENCE_INVALID"></a><a id="dxgk_page_fault_fence_invalid"></a><b>DXGK_PAGE_FAULT_FENCE_INVALID</b>
+### -field DXGK_PAGE_FAULT_FENCE_INVALID
 
 <dd>
 <p>When set, this indicates that a faulting packet could not be determined. In this case, the OS will have to perform a GPU reset action to clear the GPU error state, and one of the subsequent bits will have to be set.</p>
@@ -74,25 +74,25 @@ typedef enum _DXGK_PAGE_FAULT_FLAGS {
 </p>
 </dd>
 
-### -field <a id="DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED"></a><a id="dxgk_page_fault_adapter_reset_required"></a><b>DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED</b>
+### -field DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED
 
 <dd>
 <p>When set, this indicates that the fault put the GPU into a state that requires a full adapter reset.</p>
 </dd>
 
-### -field <a id="DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED"></a><a id="dxgk_page_fault_engine_reset_required"></a><b>DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED</b>
+### -field DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED
 
 <dd>
 <p>When set, this indicates that the fault put the GPU into a state that requires a GPU engine reset.</p>
 </dd>
 
-### -field <a id="DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR"></a><a id="dxgk_page_fault_fatal_hardware_error"></a><b>DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR</b>
+### -field DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR
 
 <dd>
 <p>When set, this indicates that the system hardware, not just the GPU, cannot continue, and the OS should issue a bugcheck.</p>
 </dd>
 
-### -field <a id="DXGK_PAGE_FAULT_IOMMU"></a><a id="dxgk_page_fault_iommu"></a><b>DXGK_PAGE_FAULT_IOMMU</b>
+### -field DXGK_PAGE_FAULT_IOMMU
 
 <dd>
 <p>When set, this indicates that the faulting GPU's virtual address was mapped using IoMmu. When not set, the faulting GPU's virtual address was mapped using the GPU's memory management unit.</p>

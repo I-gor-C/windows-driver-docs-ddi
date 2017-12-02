@@ -53,7 +53,7 @@ HRESULT WINAPI RemovePrintDeviceObject(
 ## -parameters
 <dl>
 
-### -param <i>hDeviceObject</i> [in]
+### -param hDeviceObject [in]
 
 <dd>
 <p>The HANDLE to the device object to be removed. This should be a device object that was  created with <a href="..\winsplp\nf-winsplp-addprintdeviceobject.md">AddPrintDeviceObject</a>.</p>

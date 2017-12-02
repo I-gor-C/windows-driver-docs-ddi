@@ -54,20 +54,20 @@ typedef struct _VIDEO_MODE {
 ## -struct-fields
 <dl>
 
-### -field <b>RequestedMode</b>
+### -field RequestedMode
 
 <dd>
 <p>Is the mode that the miniport driver should set if possible. In addition, the two high-order bits can be set to request special behavior from the miniport driver as follows:</p>
 <p></p>
 <dl>
 
-### -field <a id="VIDEO_MODE_ZERO_MEMORY"></a><a id="video_mode_zero_memory"></a>VIDEO_MODE_ZERO_MEMORY
+### -field VIDEO_MODE_ZERO_MEMORY
 
 <dd>
 <p>Indicates that the miniport driver should zero the video memory in conjunction with the mode set.</p>
 </dd>
 
-### -field <a id="VIDEO_MODE_MAP_MEM_LINEAR"></a><a id="video_mode_map_mem_linear"></a>VIDEO_MODE_MAP_MEM_LINEAR
+### -field VIDEO_MODE_MAP_MEM_LINEAR
 
 <dd>
 <p>Indicates that the miniport driver should map the video memory in a linear fashion if the adapter supports such an operation.</p>

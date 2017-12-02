@@ -59,13 +59,13 @@ NTSTATUS APIENTRY USBCAMD_SetVideoFormat(
 ## -parameters
 <dl>
 
-### -param <i>DeviceContext</i> [in]
+### -param DeviceContext [in]
 
 <dd>
 <p>Pointer to device-specific context.</p>
 </dd>
 
-### -param <i>pSrb</i> [in]
+### -param pSrb [in]
 
 <dd>
 <p>Pointer to a stream request block (SRB).</p>

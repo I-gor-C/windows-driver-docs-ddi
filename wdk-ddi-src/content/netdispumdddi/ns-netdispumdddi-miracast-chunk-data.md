@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>ChunkInfo</b>
+### -field ChunkInfo
 
 <dd>
 <p>A <a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-info.md">MIRACAST_CHUNK_INFO</a> encode chunk information structure that the user-mode display driver wants to report.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.</p>
 </dd>
 
-### -field <b>PrivateDriverData</b>
+### -field PrivateDriverData
 
 <dd>
 <p>Private data, of type <b>UCHAR</b>, that the user-mode display driver sends when it calls the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-get-next-chunk-data.md">GetNextChunkData</a> function.</p>

@@ -56,13 +56,13 @@ void UdecxUsbDeviceSetFunctionSuspendAndWakeComplete(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbDevice</i> [in]
+### -param UdecxUsbDevice [in]
 
 <dd>
-<p>A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.</p>
+<p>A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a>.</p>
 </dd>
 
-### -param <i>CompletionStatus</i> [in]
+### -param CompletionStatus [in]
 
 <dd>
 <p>An appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code that indicates the success or failure of the asynchronous operation.</p>
@@ -134,7 +134,7 @@ void UdecxUsbDeviceSetFunctionSuspendAndWakeComplete(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_udecx_usb_device_set_function_suspend_and_wake">EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE</a>
+<a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-set-function-suspend-and-wake.md">EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE</a>
 </dt>
 <dt>
 <a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>

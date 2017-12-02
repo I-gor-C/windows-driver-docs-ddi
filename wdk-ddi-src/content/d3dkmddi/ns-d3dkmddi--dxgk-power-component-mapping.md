@@ -65,18 +65,18 @@ typedef struct _DXGK_POWER_COMPONENT_MAPPING {
 ## -struct-fields
 <dl>
 
-### -field <b>ComponentType</b>
+### -field ComponentType
 
 <dd>
 <p>A <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-power-component-type.md">DXGK_POWER_COMPONENT_TYPE</a>-typed value that indicates the power component type that is reported by the display miniport driver to the DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -field <b>EngineDesc</b>
+### -field EngineDesc
 
 <dd>
 <dl>
 
-### -field <b>NodeIndex</b>
+### -field NodeIndex
 
 <dd>
 <p>The index of the engine (node).</p>
@@ -84,12 +84,12 @@ typedef struct _DXGK_POWER_COMPONENT_MAPPING {
 </dl>
 </dd>
 
-### -field <b>MonitorRefreshDesc</b>
+### -field MonitorRefreshDesc
 
 <dd>
 <dl>
 
-### -field <b>VidPnSourceID</b>
+### -field VidPnSourceID
 
 <dd>
 <p>An identifier of one of the video present sources associated with the video present network object.</p>
@@ -97,12 +97,12 @@ typedef struct _DXGK_POWER_COMPONENT_MAPPING {
 </dl>
 </dd>
 
-### -field <b>MonitorDesc</b>
+### -field MonitorDesc
 
 <dd>
 <dl>
 
-### -field <b>VidPnTargetID</b>
+### -field VidPnTargetID
 
 <dd>
 <p>An identifier of one of the video present targets associated with the VidPN object.</p>

@@ -7,7 +7,7 @@ old-location: wdf\wdf_usb_pipe_type.htm
 old-project: wdf
 ms.assetid: ae230ff0-4fd9-417b-8ee0-80e3ca5a30ff
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_TIMER_CONFIG, WDF_TIMER_CONFIG, *PWDF_TIMER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef enum _WDF_USB_PIPE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfUsbPipeTypeInvalid"></a><a id="wdfusbpipetypeinvalid"></a><a id="WDFUSBPIPETYPEINVALID"></a><b>WdfUsbPipeTypeInvalid</b>
+### -field WdfUsbPipeTypeInvalid
 
 <dd>
 <p>Reserved for internal use.</p>
 </dd>
 
-### -field <a id="WdfUsbPipeTypeControl"></a><a id="wdfusbpipetypecontrol"></a><a id="WDFUSBPIPETYPECONTROL"></a><b>WdfUsbPipeTypeControl</b>
+### -field WdfUsbPipeTypeControl
 
 <dd>
 <p>The pipe is a control pipe.</p>
 </dd>
 
-### -field <a id="WdfUsbPipeTypeIsochronous"></a><a id="wdfusbpipetypeisochronous"></a><a id="WDFUSBPIPETYPEISOCHRONOUS"></a><b>WdfUsbPipeTypeIsochronous</b>
+### -field WdfUsbPipeTypeIsochronous
 
 <dd>
 <p>The pipe is an isochronous pipe. </p>
 </dd>
 
-### -field <a id="WdfUsbPipeTypeBulk"></a><a id="wdfusbpipetypebulk"></a><a id="WDFUSBPIPETYPEBULK"></a><b>WdfUsbPipeTypeBulk</b>
+### -field WdfUsbPipeTypeBulk
 
 <dd>
 <p>The pipe is a bulk pipe.</p>
 </dd>
 
-### -field <a id="WdfUsbPipeTypeInterrupt"></a><a id="wdfusbpipetypeinterrupt"></a><a id="WDFUSBPIPETYPEINTERRUPT"></a><b>WdfUsbPipeTypeInterrupt</b>
+### -field WdfUsbPipeTypeInterrupt
 
 <dd>
 <p>The pipe is an interrupt pipe.</p>
@@ -132,4 +132,4 @@ typedef enum _WDF_USB_PIPE_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_PIPE_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_PIPE_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

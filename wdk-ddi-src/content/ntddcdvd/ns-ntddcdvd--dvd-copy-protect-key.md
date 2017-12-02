@@ -62,30 +62,30 @@ typedef struct _DVD_COPY_PROTECT_KEY {
 ## -struct-fields
 <dl>
 
-### -field <b>KeyLength</b>
+### -field KeyLength
 
 <dd>
 <p>Indicates the length of the key data to be retrieved. </p>
 </dd>
 
-### -field <b>SessionId</b>
+### -field SessionId
 
 <dd>
 <p>Indicates the DVD session ID. </p>
 </dd>
 
-### -field <b>KeyType</b>
+### -field KeyType
 
 <dd>
 <p>Indicates the key type. The DVD device driver uses this information to determine the key format in a report key command, as defined by the <i>SCSI Multimedia Commands - 3 (MMC-3)</i> specification. A report key command either reports key data for a specified key (challenge key, bus key, title key, RPC key, or disk key), reports the state of the authentication success flag (ASF), or invalidates an authentication grant ID (AGID). See the <i>MMC-3</i> specification for further information. </p>
 </dd>
 
-### -field <b>KeyFlags</b>
+### -field KeyFlags
 
 <dd>
 <dl>
 
-### -field Contains copy generation management system (CGMS) data. For devices that implement a CGMS protection scheme, the CGMS data is returned with the title key data in the <b>KeyFlags</b> member. This member can have any of the following values:
+### -field Contains copy generation management system (CGMS) data. For devices that implement a CGMS protection scheme, the CGMS data is returned with the title key data in the KeyFlags member. This member can have any of the following values:
 
 
 ### -field 
@@ -191,18 +191,18 @@ typedef struct _DVD_COPY_PROTECT_KEY {
 </dl>
 </dd>
 
-### -field <b>Parameters</b>
+### -field Parameters
 
 <dd>
 <dl>
 
-### -field <b>FileHandle</b>
+### -field FileHandle
 
 <dd>
 <p>Pointer to the file handle for the physical device that the copy protection is being negotiated on.</p>
 </dd>
 
-### -field <b>TitleOffset</b>
+### -field TitleOffset
 
 <dd>
 <p>Contains the logical block address on the media of the title.</p>
@@ -211,7 +211,7 @@ typedef struct _DVD_COPY_PROTECT_KEY {
 </dl>
 </dd>
 
-### -field <b>KeyData</b>
+### -field KeyData
 
 <dd>
 <p>Contains the key data that was returned. </p>

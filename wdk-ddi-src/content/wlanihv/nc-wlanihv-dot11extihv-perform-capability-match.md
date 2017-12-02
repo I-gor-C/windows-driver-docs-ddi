@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvperformcapabilitymatch.htm
 old-project: netvista
 ms.assetid: c49b23c0-4707-4626-8035-a83ccf7638eb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ DWORD APIENTRY Dot11ExtIhvPerformCapabilityMatch(
 ## -parameters
 <dl>
 
-### -param <i>hIhvExtAdapter</i> [in, optional]
+### -param hIhvExtAdapter [in, optional]
 
 <dd>
 <p>The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) adapter. This
@@ -70,7 +70,7 @@ DWORD APIENTRY Dot11ExtIhvPerformCapabilityMatch(
      Handler function.</p>
 </dd>
 
-### -param <i>pIhvProfileParams</i> [in, optional]
+### -param pIhvProfileParams [in, optional]
 
 <dd>
 <p>A pointer to a 
@@ -79,7 +79,7 @@ DWORD APIENTRY Dot11ExtIhvPerformCapabilityMatch(
      set (BSS) network to which the profile extensions will be applied.</p>
 </dd>
 
-### -param <i>pIhvConnProfile</i> [in]
+### -param pIhvConnProfile [in]
 
 <dd>
 <p>A pointer to a 
@@ -88,7 +88,7 @@ DWORD APIENTRY Dot11ExtIhvPerformCapabilityMatch(
      profile.</p>
 </dd>
 
-### -param <i>pIhvSecProfile</i> [in]
+### -param pIhvSecProfile [in]
 
 <dd>
 <p>A pointer to a 
@@ -97,7 +97,7 @@ DWORD APIENTRY Dot11ExtIhvPerformCapabilityMatch(
      profile.</p>
 </dd>
 
-### -param <i>pConnectableBssid</i> [in, optional]
+### -param pConnectableBssid [in, optional]
 
 <dd>
 <p>A pointer to a 
@@ -105,14 +105,14 @@ DWORD APIENTRY Dot11ExtIhvPerformCapabilityMatch(
      or more 802.11 Beacon or Probe Response frames received from a BSS network. This list is derived from
      the results of the last scan operation performed by the WLAN adapter. For more information about the
      scan operation, see 
-     <a href="NULL">Native 802.11 Scan Operations</a>.
+     <a href="netvista.native_802_11_scan_operations">Native 802.11 Scan Operations</a>.
      </p>
 <div class="alert"><b>Note</b>  For Windows Vista, the IHV Extensions DLL supports only infrastructure basic
      service set (BSS) networks.</div>
 <div> </div>
 </dd>
 
-### -param <i>pdwReasonCode</i> [out]
+### -param pdwReasonCode [out]
 
 <dd>
 <p>A pointer to a DWORD value, which provides additional information for the return value of the 
@@ -217,4 +217,4 @@ DWORD APIENTRY Dot11ExtIhvPerformCapabilityMatch(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_PERFORM_CAPABILITY_MATCH callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_PERFORM_CAPABILITY_MATCH callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

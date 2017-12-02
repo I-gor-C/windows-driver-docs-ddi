@@ -7,7 +7,7 @@ old-location: netvista\rildmconfiginfovalue_2.htm
 old-project: netvista
 ms.assetid: 6b917b11-a2f2-4b8b-9964-2d7b4a6a1871
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILDMCONFIGINFOVALUE, RILDMCONFIGINFOVALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef struct _RILDMCONFIGINFOVALUE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwType</b>
+### -field dwType
 
 <dd></dd>
 
-### -field <b>fValue</b>
+### -field fValue
 
 <dd></dd>
 
-### -field <b>dwValue</b>
+### -field dwValue
 
 <dd></dd>
 
-### -field <b>wszValue</b>
+### -field wszValue
 
 <dd></dd>
 </dl>

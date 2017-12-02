@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_build_lam.htm
 old-project: netvista
 ms.assetid: 89183961-0A96-4ED0-8316-E6A2C99C929F
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,50 +64,50 @@ NTSTATUS NdkBuildLam(
 ## -parameters
 <dl>
 
-### -param <i>pNdkAdapter</i> [in]
+### -param pNdkAdapter [in]
 
 <dd>
 <p>A pointer to an NDK adapter object (<a href="..\ndkpi\ns-ndkpi--ndk-adapter.md">NDK_ADAPTER</a>).
 </p>
 </dd>
 
-### -param <i>Mdl</i> [in]
+### -param Mdl [in]
 
 <dd>
 <p> A memory descriptor list (MDL) or chain of MDLs. The portion of the MDL chain from the starting virtual address up to the number of bytes in the  <i>Length</i> parameter must represent a virtually contiguous memory region.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The number of bytes to map starting from the first MDL's virtual address.  The MDL virtual address can be obtained with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554539">MmGetMdlVirtualAddress</a> macro. <i>Length</i> must not exceed the total number of bytes represented by the MDL chain.</p>
 </dd>
 
-### -param <i>RequestCompletion</i> [in]
+### -param RequestCompletion [in]
 
 <dd>
 <p>A pointer to a <i>NdkRequestCompletion</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-request-completion.md">NDK_FN_REQUEST_COMPLETION</a>) callback function.</p>
 </dd>
 
-### -param <i>RequestContext</i> [in, optional]
+### -param RequestContext [in, optional]
 
 <dd>
 <p>A context value for the provider to pass back to the <i>NdkRequestCompletion</i> callback function that is specified in the <i>RequestCompletion</i> parameter.</p>
 </dd>
 
-### -param <i>pNdkLAM</i> 
+### -param pNdkLAM 
 
 <dd>
 <p>A pointer to a buffer that will hold an <a href="..\ndkpi\ns-ndkpi--ndk-logical-address-mapping.md">NDK_LOGICAL_ADDRESS_MAPPING</a>  structure that contains an adapter page array. The  adapter page array is stored  in the <b>AdapterPageArray</b> member and the <b>AdapterPageCount</b> member contains the number of adapter page elements.</p>
 </dd>
 
-### -param <i>pLAMSize</i> 
+### -param pLAMSize 
 
 <dd>
 <p>The size, in bytes, of the buffer at the <i>pNdkLAM</i> parameter for input, or the actual number of bytes written for output.</p>
 </dd>
 
-### -param <i>pFBO</i> [out]
+### -param pFBO [out]
 
 <dd>
 <p>The first byte offset (FBO) value is returned in this location. The FBO is the starting offset within the first adapter page.</p>
@@ -215,9 +215,9 @@ NTSTATUS NdkBuildLam(
 <a href="..\ndkpi\ns-ndkpi--ndk-logical-address-mapping.md">NDK_LOGICAL_ADDRESS_MAPPING</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Object Lifetime Requirements</a>
+<a href="netvista.ndkpi_object_lifetime_requirements">NDKPI Object Lifetime Requirements</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_BUILD_LAM callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_BUILD_LAM callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

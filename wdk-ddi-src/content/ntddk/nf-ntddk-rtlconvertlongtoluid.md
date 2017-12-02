@@ -54,7 +54,7 @@ LUID RtlConvertLongToLuid(
 ## -parameters
 <dl>
 
-### -param <i>Long</i> [in]
+### -param Long [in]
 
 <dd>
 <p>Specifies the long integer to convert. </p>

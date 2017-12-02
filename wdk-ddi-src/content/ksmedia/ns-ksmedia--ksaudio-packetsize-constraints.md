@@ -59,53 +59,53 @@ typedef struct _KSAUDIO_PACKETSIZE_CONSTRAINTS {
 ## -struct-fields
 <dl>
 
-### -field <b>MinPacketPeriodInHns</b>
+### -field MinPacketPeriodInHns
 
 <dd>
 <p>The absolute minimum processing period supported by the driver expressed in hundred-nanosecond (HNS) units. This value can be 0 if the driver has no specific minimum processing period.</p>
 </dd>
 
-### -field <b>PacketSizeFileAlignment</b>
+### -field PacketSizeFileAlignment
 
 <dd>
 <p>The byte size alignment requirement. Use one of these defined file alignment values:</p>
 <dl><a id="FILE_BYTE_ALIGNMENT"></a><a id="file_byte_alignment"></a>
-### -field <b>FILE_BYTE_ALIGNMENT</b>
+### -field FILE_BYTE_ALIGNMENT
 <a id="FILE_WORD_ALIGNMENT"></a><a id="file_word_alignment"></a>
-### -field <b>FILE_WORD_ALIGNMENT</b>
+### -field FILE_WORD_ALIGNMENT
 <a id="FILE_LONG_ALIGNMENT"></a><a id="file_long_alignment"></a>
-### -field <b>FILE_LONG_ALIGNMENT</b>
+### -field FILE_LONG_ALIGNMENT
 <a id="FILE_QUAD_ALIGNMENT"></a><a id="file_quad_alignment"></a>
-### -field <b>FILE_QUAD_ALIGNMENT</b>
+### -field FILE_QUAD_ALIGNMENT
 <a id="FILE_OCTA_ALIGNMENT"></a><a id="file_octa_alignment"></a>
-### -field <b>FILE_OCTA_ALIGNMENT</b>
+### -field FILE_OCTA_ALIGNMENT
 <a id="FILE_32_BYTE_ALIGNMENT"></a><a id="file_32_byte_alignment"></a>
-### -field <b>FILE_32_BYTE_ALIGNMENT</b>
+### -field FILE_32_BYTE_ALIGNMENT
 <a id="FILE_64_BYTE_ALIGNMENT"></a><a id="file_64_byte_alignment"></a>
-### -field <b>FILE_64_BYTE_ALIGNMENT</b>
+### -field FILE_64_BYTE_ALIGNMENT
 <a id="FILE_128_BYTE_ALIGNMENT"></a><a id="file_128_byte_alignment"></a>
-### -field <b>FILE_128_BYTE_ALIGNMENT</b>
+### -field FILE_128_BYTE_ALIGNMENT
 <a id="FILE_256_BYTE_ALIGNMENT"></a><a id="file_256_byte_alignment"></a>
-### -field <b>FILE_256_BYTE_ALIGNMENT</b>
+### -field FILE_256_BYTE_ALIGNMENT
 <a id="FILE_512_BYTE_ALIGNMENT"></a><a id="file_512_byte_alignment"></a>
-### -field <b>FILE_512_BYTE_ALIGNMENT</b>
+### -field FILE_512_BYTE_ALIGNMENT
 
 </dl>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Unused.</p>
 </dd>
 
-### -field <b>NumProcessingModeConstraints</b>
+### -field NumProcessingModeConstraints
 
 <dd>
 <p>The number of additional constraints for specific processing modes. This value can be 0.</p>
 </dd>
 
-### -field <b>ProcessingModeConstraints</b>
+### -field ProcessingModeConstraints
 
 <dd>
 <p>An array of 0 or more processing mode constraints. 

@@ -55,13 +55,13 @@ typedef struct tagKS_DATAFORMAT_VBIINFOHEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>DataFormat</b>
+### -field DataFormat
 
 <dd>
 <p>Specifies the data format being proposed.</p>
 </dd>
 
-### -field <b>VBIInfoHeader</b>
+### -field VBIInfoHeader
 
 <dd>
 <p>Describes VBI-specific information about the proposed connection.</p>

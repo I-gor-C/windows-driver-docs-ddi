@@ -7,7 +7,7 @@ old-location: netvista\dot11_invitation_request_send_complete_parameters.htm
 old-project: netvista
 ms.assetid: 9E2951DE-083E-43D2-A487-97D0ADD76BE2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct _DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following.</p>
@@ -84,37 +84,37 @@ typedef struct _DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>PeerDeviceAddress</b>
+### -field PeerDeviceAddress
 
 <dd>
 <p>The device address of the Peer-to-Peer (P2P) Wi-Fi Direct (WFD) device that the invitation request was sent to.</p>
 </dd>
 
-### -field <b>ReceiverAddress</b>
+### -field ReceiverAddress
 
 <dd>
 <p>The address of the device that received the invitation request.</p>
 </dd>
 
-### -field <b>DialogToken</b>
+### -field DialogToken
 
 <dd>
 <p>The dialog token from the invitation request packet. This must match the dialog token sent with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451806">OID_DOT11_WFD_SEND_INVITATION_REQUEST</a> request.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The status of the request send attempt. Set to <b>NDIS_STATUS_SUCCESS</b> if the packet was successfully transmitted.</p>
 </dd>
 
-### -field <b>uIEsOffset</b>
+### -field uIEsOffset
 
 <dd>
 <p>The offset, in bytes,  of the array of additional information elements (IEs) that were included in the invitation request packet. This offset is from the start of the buffer that contains this structure.</p>
 </dd>
 
-### -field <b>uIEsLength</b>
+### -field uIEsLength
 
 <dd>
 <p>The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.</p>

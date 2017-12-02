@@ -7,7 +7,7 @@ old-location: ieee\irb_req_control.htm
 old-project: IEEE
 ms.assetid: F0ABD318-AC63-40D5-B94E-BD6FEA1A57AC
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_CONTROL, IRB_REQ_CONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,37 +58,37 @@ typedef struct _IRB_REQ_CONTROL {
 ## -struct-fields
 <dl>
 
-### -field <b>ulIoControlCode</b>
+### -field ulIoControlCode
 
 <dd>
 <p>Specifies the control code used in this request. Vendors should make these control codes unique, so that they do not overlap.</p>
 </dd>
 
-### -field <b>pInBuffer</b>
+### -field pInBuffer
 
 <dd>
 <p>Points to an MDL that describes the input buffer. The input buffer contains user-defined information.</p>
 </dd>
 
-### -field <b>ulInBufferLength</b>
+### -field ulInBufferLength
 
 <dd>
 <p>Specifies the length of the input buffer.</p>
 </dd>
 
-### -field <b>pOutBuffer</b>
+### -field pOutBuffer
 
 <dd>
 <p>Points to an MDL that describes the output buffer. The output buffer contains user-defined information.</p>
 </dd>
 
-### -field <b>ulOutBufferLength</b>
+### -field ulOutBufferLength
 
 <dd>
 <p>Specifies the length of the output buffer.</p>
 </dd>
 
-### -field <b>BytesReturned</b>
+### -field BytesReturned
 
 <dd>
 <p>Specifies the number of bytes returned.</p>

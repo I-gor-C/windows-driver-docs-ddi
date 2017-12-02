@@ -7,7 +7,7 @@ old-location: ieee\isoch_descriptor.htm
 old-project: IEEE
 ms.assetid: 4f508af6-942b-4d48-8874-4b6d9918f01f
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: ISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR, *PISOCH_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ typedef struct _ISOCH_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>fulFlags</b>
+### -field fulFlags
 
 <dd>
 <p>Specifies various flags for this isochronous descriptor. Each attached buffer on the channel has an associated isoch descriptor. </p>
@@ -159,43 +159,43 @@ typedef struct _ISOCH_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>Mdl</b>
+### -field Mdl
 
 <dd>
 <p>Specifies the MDL representing a buffer in which the data is, or will be, contained. </p>
 </dd>
 
-### -field <b>ulLength</b>
+### -field ulLength
 
 <dd>
 <p>Specifies the length of the <b>Mdl</b>.</p>
 </dd>
 
-### -field <b>nMaxBytesPerFrame</b>
+### -field nMaxBytesPerFrame
 
 <dd>
 <p>Specifies the maximum bytes contained in each isochronous frame. On writes, the data in the buffer is split into isochronous packets of this size.</p>
 </dd>
 
-### -field <b>ulSynch</b>
+### -field ulSynch
 
 <dd>
 <p>For IsochTalk requests, if the DESCRIPTOR_SYNCH_ON_SY flag is set, this member specifies the Sy field of the outgoing packet. For REQUEST_ISOCH_LISTEN requests, if the DESCRIPTOR_SYNCH_ON_SY flag is set, this member specifies the value the host controller will match against the Sy field in isochronous packet headers.</p>
 </dd>
 
-### -field <b>ulTag</b>
+### -field ulTag
 
 <dd>
 <p>For IsochTalk requests, this member specifies the Tag field of the outgoing packet. For REQUEST_ISOCH_LISTEN requests, if the DESCRIPTOR_SYNCH_ON_TAG flag is set, this member specifies the value the host controller will match against the Tag field in isochronous packet headers.</p>
 </dd>
 
-### -field <b>CycleTime</b>
+### -field CycleTime
 
 <dd>
 <p>If the DESCRIPTOR_SYNCH_ON_TIME flag is set, this member specifies the isochronous cycle time to synchronize on. (The timing resolution is per isochronous cycle. The <b>CycleOffset</b> member of the cycle time is not used.) If the DESCRIPTOR_TIME_STAMP_ON_COMPLETION flag is set, the bus driver fills this member with the isochronous cycle time on completion of the operation that used this buffer.</p>
 </dd>
 
-### -field <b>Callback</b>
+### -field Callback
 
 <dd>
 <p>Pointer to a callback routine. If non-NULL, the bus driver calls this routine to indicate that the associated attached buffers are ready to be detached. The callback executes at IRQL DISPATCH_LEVEL. The callback is of the following type:</p>
@@ -211,19 +211,19 @@ typedef struct _ISOCH_DESCRIPTOR {
 </table></span></div>
 </dd>
 
-### -field <b>Context1</b>
+### -field Context1
 
 <dd>
 <p>Specifies the first parameter when the bus driver calls the routine passed in <b>Callback</b>.</p>
 </dd>
 
-### -field <b>Context2</b>
+### -field Context2
 
 <dd>
 <p>Specifies the second parameter when the bus driver calls the routine passed in <b>Callback</b>.</p>
 </dd>
 
-### -field <b>status</b>
+### -field status
 
 <dd>
 <p>For <a href="https://msdn.microsoft.com/library/windows/hardware/ff537650">REQUEST_ISOCH_ATTACH_BUFFERS</a> requests, this member specifies the status of the attach operation on this buffer.   If an error occurs during the processing of the <b>REQUEST_ISOCH_ATTACH_BUFFERS</b> request, the bus driver fills in the <b>status</b> member with an appropriate error code.
@@ -232,19 +232,19 @@ typedef struct _ISOCH_DESCRIPTOR {
 <div> </div>
 </dd>
 
-### -field <b>DeviceReserved</b>
+### -field DeviceReserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>BusReserved</b>
+### -field BusReserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>PortReserved</b>
+### -field PortReserved
 
 <dd>
 <p>Reserved.</p>
@@ -303,4 +303,4 @@ typedef struct _ISOCH_DESCRIPTOR {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20ISOCH_DESCRIPTOR structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20ISOCH_DESCRIPTOR structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

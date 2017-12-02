@@ -54,7 +54,7 @@ NTSTATUS PshedRegisterPlugin(
 ## -parameters
 <dl>
 
-### -param <i>Packet</i> [in, out]
+### -param Packet [in, out]
 
 <dd>
 <p>A pointer to an initialized  <a href="..\ntddk\ns-ntddk--whea-pshed-plugin-registration-packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure that describes the PSHED plug-in's registration information.</p>

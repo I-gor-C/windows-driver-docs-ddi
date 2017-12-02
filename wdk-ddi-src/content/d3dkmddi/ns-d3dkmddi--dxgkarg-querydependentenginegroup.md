@@ -56,19 +56,19 @@ typedef struct _DXGKARG_QUERYDEPENDENTENGINEGROUP {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>[in] An index of a node within the physical adapter defined by   the <b>EngineOrdinal</b> member that is being queried in a call to <a href="display.dxgkddiquerydependentenginegroup">DxgkDdiQueryDependentEngineGroup</a>.</p>
 </dd>
 
-### -field <b>EngineOrdinal</b>
+### -field EngineOrdinal
 
 <dd>
 <p>[in] An index that defines the physical adapter in a linked display adapter (LDA) configuration that the node defined by <b>NodeOrdinal</b> belongs to.</p>
 </dd>
 
-### -field <b>DependentNodeOrdinalMask</b>
+### -field DependentNodeOrdinalMask
 
 <dd>
 <p>[out] The bitmask that describes all dependent nodes that will be affected by a reset operation.</p>

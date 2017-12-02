@@ -7,7 +7,7 @@ old-location: netvista\rilcallhandoverphase_2.htm
 old-project: netvista
 ms.assetid: 181363b5-08fa-4a6b-aa91-c9827a82b80e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILCALLHANDOVERPHASE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLHANDOVERPHASE_COMPLETED"></a><a id="ril_callhandoverphase_completed"></a><b>RIL_CALLHANDOVERPHASE_COMPLETED</b>
+### -field RIL_CALLHANDOVERPHASE_COMPLETED
 
 <dd></dd>
 
-### -field <a id="RIL_CALLHANDOVERPHASE_FAILED"></a><a id="ril_callhandoverphase_failed"></a><b>RIL_CALLHANDOVERPHASE_FAILED</b>
+### -field RIL_CALLHANDOVERPHASE_FAILED
 
 <dd></dd>
 
-### -field <a id="RIL_CALLHANDOVERPHASE_CANCELLED"></a><a id="ril_callhandoverphase_cancelled"></a><b>RIL_CALLHANDOVERPHASE_CANCELLED</b>
+### -field RIL_CALLHANDOVERPHASE_CANCELLED
 
 <dd></dd>
 
-### -field <a id="RIL_CALLHANDOVERPHASE_MAX"></a><a id="ril_callhandoverphase_max"></a><b>RIL_CALLHANDOVERPHASE_MAX</b>
+### -field RIL_CALLHANDOVERPHASE_MAX
 
 <dd></dd>
 </dl>

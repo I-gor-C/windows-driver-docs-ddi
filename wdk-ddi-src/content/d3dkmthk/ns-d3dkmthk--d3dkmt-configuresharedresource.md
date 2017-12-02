@@ -58,31 +58,31 @@ typedef struct _D3DKMT_CONFIGURESHAREDRESOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the device that the resource is associated with. </p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the shared resource to configure. </p>
 </dd>
 
-### -field <b>IsDwm</b>
+### -field IsDwm
 
 <dd>
 <p>[in] A Boolean value that specifies whether the current process is the Desktop Windows Manager (DWM). <b>TRUE</b> indicates DWM; <b>FALSE</b> indicates that the current process is non-DWM and is specified by the <b>hProcess</b> member. </p>
 </dd>
 
-### -field <b>hProcess</b>
+### -field hProcess
 
 <dd>
 <p>[in] A handle to the process for the non-DWM situation. </p>
 </dd>
 
-### -field <b>AllowAccess</b>
+### -field AllowAccess
 
 <dd>
 <p>[in] A Boolean value that specifies whether the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a> function should allow the process to access the resource. <b>TRUE</b> indicates to allow access; <b>FALSE</b> indicates to not allow access. </p>

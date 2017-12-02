@@ -64,61 +64,61 @@ typedef struct _SPLCLIENT_INFO_3_VISTA {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Specifies the size in bytes of this structure.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Specifies open printer additional flags to the provider.</p>
 </dd>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Reserved. Used for compatibility with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562674">SPLCLIENT_INFO_1</a> structure.</p>
 </dd>
 
-### -field <b>pMachineName</b>
+### -field pMachineName
 
 <dd>
 <p>Specifies the client machine name.</p>
 </dd>
 
-### -field <b>pUserName</b>
+### -field pUserName
 
 <dd>
 <p>Specifies the client user name.</p>
 </dd>
 
-### -field <b>dwBuildNum</b>
+### -field dwBuildNum
 
 <dd>
 <p>Specifies the client build number.</p>
 </dd>
 
-### -field <b>dwMajorVersion</b>
+### -field dwMajorVersion
 
 <dd>
 <p>Specifies the major version of the client machine.</p>
 </dd>
 
-### -field <b>dwMinorVersion</b>
+### -field dwMinorVersion
 
 <dd>
 <p>Specifies the minor version of the client machine.</p>
 </dd>
 
-### -field <b>wProcessorArchitecture</b>
+### -field wProcessorArchitecture
 
 <dd>
 <p>Specifies the client machine architecture.</p>
 </dd>
 
-### -field <b>hSplPrinter</b>
+### -field hSplPrinter
 
 <dd>
 <p>Specifies the server-side handle to be used for direct calls.</p>

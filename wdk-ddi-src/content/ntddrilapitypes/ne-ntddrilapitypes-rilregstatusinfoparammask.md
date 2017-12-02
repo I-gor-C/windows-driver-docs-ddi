@@ -7,7 +7,7 @@ old-location: netvista\rilregstatusinfoparammask.htm
 old-project: netvista
 ms.assetid: 7857f845-d695-4b0f-9e52-8871c0140a74
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,39 +62,39 @@ typedef enum _RILREGSTATUSINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_REGSI_HUICCAPP"></a><a id="ril_param_regsi_huiccapp"></a><b>RIL_PARAM_REGSI_HUICCAPP</b>
+### -field RIL_PARAM_REGSI_HUICCAPP
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_REGSI_REGSTATUS"></a><a id="ril_param_regsi_regstatus"></a><b>RIL_PARAM_REGSI_REGSTATUS</b>
+### -field RIL_PARAM_REGSI_REGSTATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_REGSI_ACCESSTECHNOLOGY"></a><a id="ril_param_regsi_accesstechnology"></a><b>RIL_PARAM_REGSI_ACCESSTECHNOLOGY</b>
+### -field RIL_PARAM_REGSI_ACCESSTECHNOLOGY
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_REGSI_SYSTEMCAPS"></a><a id="ril_param_regsi_systemcaps"></a><b>RIL_PARAM_REGSI_SYSTEMCAPS</b>
+### -field RIL_PARAM_REGSI_SYSTEMCAPS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_REGSI_REGREJECTREASON"></a><a id="ril_param_regsi_regrejectreason"></a><b>RIL_PARAM_REGSI_REGREJECTREASON</b>
+### -field RIL_PARAM_REGSI_REGREJECTREASON
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_REGSI_CURRENTOPERATOR"></a><a id="ril_param_regsi_currentoperator"></a><b>RIL_PARAM_REGSI_CURRENTOPERATOR</b>
+### -field RIL_PARAM_REGSI_CURRENTOPERATOR
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_REGSI_VOICEDOMAIN"></a><a id="ril_param_regsi_voicedomain"></a><b>RIL_PARAM_REGSI_VOICEDOMAIN</b>
+### -field RIL_PARAM_REGSI_VOICEDOMAIN
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_REGSI_NETWORKCODE"></a><a id="ril_param_regsi_networkcode"></a><b>RIL_PARAM_REGSI_NETWORKCODE</b>
+### -field RIL_PARAM_REGSI_NETWORKCODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_REGSI_ALL"></a><a id="ril_param_regsi_all"></a><b>RIL_PARAM_REGSI_ALL</b>
+### -field RIL_PARAM_REGSI_ALL
 
 <dd></dd>
 </dl>

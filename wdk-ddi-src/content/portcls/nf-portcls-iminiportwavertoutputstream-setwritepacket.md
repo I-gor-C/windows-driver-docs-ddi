@@ -56,20 +56,20 @@ NTSTATUS SetWritePacket(
 ## -parameters
 <dl>
 
-### -param <i>PacketNumber</i> [in]
+### -param PacketNumber [in]
 
 <dd>
 <p>The number of the packet written by the OS to the WaveRT buffer. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Additional attributes related to the packet or stream.</p>
 <p>KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM - This flag indicates that this packet represents the end of the data stream.</p>
 </dd>
 
-### -param <i>EosPacketLength</i> [in]
+### -param EosPacketLength [in]
 
 <dd>
 <p>The length of the EOS packet if KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM is specified in Flags. Zero is a valid value. If KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM is not specified in Flags, this parameter is ignored.</p>

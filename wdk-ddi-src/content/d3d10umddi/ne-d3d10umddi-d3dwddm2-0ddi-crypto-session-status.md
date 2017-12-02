@@ -56,19 +56,19 @@ typedef enum _D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_OK"></a><a id="d3dwddm2_0ddi_crypto_session_status_ok"></a><b>D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_OK</b>
+### -field D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_OK
 
 <dd>
 <p>The <i>CryptoSession</i> object is in a functional state.</p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_KEY_LOST"></a><a id="d3dwddm2_0ddi_crypto_session_status_key_lost"></a><b>D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_KEY_LOST</b>
+### -field D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_KEY_LOST
 
 <dd>
 <p>The underlying hardware key for the specified <i>CryptoSession</i> has become lost. </p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_KEY_AND_CONTENT_LOST"></a><a id="d3dwddm2_0ddi_crypto_session_status_key_and_content_lost"></a><b>D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_KEY_AND_CONTENT_LOST</b>
+### -field D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_KEY_AND_CONTENT_LOST
 
 <dd>
 <p>The underlying hardware key for the specified <i>CryptoSession</i> has become lost and protected content has become corrupted. </p>

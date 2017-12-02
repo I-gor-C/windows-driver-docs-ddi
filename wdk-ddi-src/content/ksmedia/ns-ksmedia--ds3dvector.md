@@ -65,37 +65,37 @@ typedef struct _DS3DVECTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>x</b>
+### -field x
 
 <dd>
 <p>Specifies the x-coordinate of the position.</p>
 </dd>
 
-### -field <b>dvX</b>
+### -field dvX
 
 <dd>
 <p>Specifies the x-component of the vector.</p>
 </dd>
 
-### -field <b>y</b>
+### -field y
 
 <dd>
 <p>Specifies the y-coordinate of the position.</p>
 </dd>
 
-### -field <b>dvY</b>
+### -field dvY
 
 <dd>
 <p>Specifies the y-component of the vector.</p>
 </dd>
 
-### -field <b>z</b>
+### -field z
 
 <dd>
 <p>Specifies the z-coordinate of the position.</p>
 </dd>
 
-### -field <b>dvZ</b>
+### -field dvZ
 
 <dd>
 <p>Specifies the z-component of the vector.</p>

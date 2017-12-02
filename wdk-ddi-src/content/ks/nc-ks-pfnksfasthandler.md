@@ -62,37 +62,37 @@ BOOLEAN KStrFastHandler(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Specifies the file object on which the request was made.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>Specifies the original property parameter. This will always be on FILE_LONG_ALIGNMENT, but cannot be on FILE_QUAD_ALIGNMENT.</p>
 </dd>
 
-### -param <i>RequestLength</i> [in]
+### -param RequestLength [in]
 
 <dd>
 <p>Specifies the length indicated by the caller of the property parameter.</p>
 </dd>
 
-### -param <i>Data</i> [in, out]
+### -param Data [in, out]
 
 <dd>
 <p>Specifies the original unaligned data parameter.</p>
 </dd>
 
-### -param <i>DataLength</i> [in]
+### -param DataLength [in]
 
 <dd>
 <p>Specifies the length indicated by the caller of the data parameter.</p>
 </dd>
 
-### -param <i>IoStatus</i> [out]
+### -param IoStatus [out]
 
 <dd>
 <p>Specifies an aligned structure that is used to return error status and information. This information is then copied to the original I/O status structure on completion.</p>

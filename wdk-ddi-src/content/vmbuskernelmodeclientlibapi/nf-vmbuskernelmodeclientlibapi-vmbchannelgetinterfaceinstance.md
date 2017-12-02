@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelgetinterfaceinstance.htm
 old-project: netvista
 ms.assetid: BEE9581A-5FC4-4C5B-B428-B782E59720C3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbChannelGetInterfaceInstance
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ VOID VmbChannelGetInterfaceInstance(
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>The channel for which to get an instance.</p>
 </dd>
 
-### -param <i>InterfaceInstance</i> [out]
+### -param InterfaceInstance [out]
 
 <dd>
 <p>A pointer to a GUID, which is the interface instance

@@ -7,7 +7,7 @@ old-location: wdf\wdfmemorycreatepreallocated.htm
 old-project: wdf
 ms.assetid: 8c4f9abc-f03d-4084-b0ce-34aea5dd7d96
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfMemoryCreatePreallocated
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ NTSTATUS WdfMemoryCreatePreallocated(
 ## -parameters
 <dl>
 
-### -param <i>Attributes</i> [in, optional]
+### -param Attributes [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains object attributes for the new memory object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to a driver-supplied buffer.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>The nonzero size, in bytes, of the buffer that <i>Buffer</i> points to.</p>
 </dd>
 
-### -param <i>Memory</i> [out]
+### -param Memory [out]
 
 <dd>
 <p>A pointer to a location that receives a handle to the new memory object.</p>
@@ -206,4 +206,4 @@ NTSTATUS WdfMemoryCreatePreallocated(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfMemoryCreatePreallocated method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfMemoryCreatePreallocated method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

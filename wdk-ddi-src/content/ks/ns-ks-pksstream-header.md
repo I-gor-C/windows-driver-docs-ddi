@@ -62,49 +62,49 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size, in bytes, of the structure. This should be at least <b>sizeof</b>(KSSTREAM_HEADER).</p>
 </dd>
 
-### -field <b>TypeSpecificFlags</b>
+### -field TypeSpecificFlags
 
 <dd>
 <p>Specifies flags that are specific to a data format. The only flag currently supported for <i>TypeSpecificFlags</i> is KS_AM_UseNewCSSKey. This flag indicates that the hardware decoder should switch to the next queued CSS (Content Scramble System) decryption key, because the data sample that immediately follows the header is the first data sample to which a new title key applies.</p>
 </dd>
 
-### -field <b>PresentationTime</b>
+### -field PresentationTime
 
 <dd>
 <p>A <a href="stream.kstime">KSTIME</a> structure that specifies the presentation time for the related stream buffer in 100-nanosecond units. For more information, see the <b>Remarks</b> section.</p>
 </dd>
 
-### -field <b>Duration</b>
+### -field Duration
 
 <dd>
 <p>Specifies the duration of this stream segment in the same units as the presentation time (100-nanosecond units). Set to zero when not used.</p>
 </dd>
 
-### -field <b>FrameExtent</b>
+### -field FrameExtent
 
 <dd>
 <p>Specifies the size of the entire frame. The region within the frame extent is available to the filter, and the resulting valid data size for the stream operation is reflected in the <b>DataUsed</b> member.</p>
 </dd>
 
-### -field <b>DataUsed</b>
+### -field DataUsed
 
 <dd>
 <p>For a write operation, this member specifies the number of bytes within the frame that are valid when submitting a frame to a lower-level driver. The headers are not modified on a write operation; however, the <b>Information</b> member of the IO_STATUS_BLOCK structure contains the total number of bytes actually written. For a read operation, this member is not used when submitting a frame to a lower-level driver and must be set to zero. On return, this member contains the number of bytes actually filled in this frame and the <b>Information</b> member of the IO_STATUS_BLOCK structure contains the size of the list of headers actually used. Note that if the minidriver specifies KSPIN_FLAG_GENERATE_MAPPINGS in <a href="..\ks\ns-ks--kspin-descriptor-ex.md">KSPIN_DESCRIPTOR_EX</a>, when a stream pointer is advanced past a frame, <b>DataUsed</b> is set to <b>Count</b> minus <b>Remaining</b> (members of <a href="..\ks\ns-ks--ksstream-pointer-offset.md">KSSTREAM_POINTER_OFFSET</a>). If the driver does not specify this flag, the minidriver is responsible for setting <b>DataUsed</b>.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>Specifies the virtual address of the data buffer.</p>
 </dd>
 
-### -field <b>OptionsFlags</b>
+### -field OptionsFlags
 
 <dd>
 <p>
@@ -249,7 +249,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for internal use.</p>
@@ -267,7 +267,7 @@ typedef struct {
 
 <p>On an IOCTL_KS_WRITE_STREAM, the member elements must be initialized, and each KSSTREAM_HEADER.DataUsed element contains the number of bytes to write. The actual number of total bytes written is returned in pIrp-&gt;IoStatus.Information. This is less than or equal to the total of all KSSTREAM_HEADER.DataUsed elements in the headers.</p>
 
-<p>If you are using the <a href="..\ks\nn-ks-iksreferenceclock.md">IKsReferenceClock</a> interface to obtain timestamps to place in the <b>PresentationTime</b> member of KSSTREAM_HEADER, see <a href="NULL">AVStream Clocks</a> for more information.</p>
+<p>If you are using the <a href="..\ks\nn-ks-iksreferenceclock.md">IKsReferenceClock</a> interface to obtain timestamps to place in the <b>PresentationTime</b> member of KSSTREAM_HEADER, see <a href="https://msdn.microsoft.com/fc1d5bca-72e3-48e2-b46f-09a13bba83b4">AVStream Clocks</a> for more information.</p>
 
 ## -requirements
 <table>

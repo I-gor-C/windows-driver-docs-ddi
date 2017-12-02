@@ -54,44 +54,44 @@ typedef struct _FILE_MODE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>Specifies the mode in which the file will be accessed following a create-file or open-file operation. This parameter is either zero or the bitwise OR of one or more of the following file option flags:</p>
 <p></p>
 <dl>
 
-### -field <a id="FILE_WRITE_THROUGH"></a><a id="file_write_through"></a>FILE_WRITE_THROUGH
+### -field FILE_WRITE_THROUGH
 
 <dd>
 <p>Any system services, file system drivers (FSDs), and drivers that write data to the file must actually transfer the data into the file before any requested write operation is considered complete.</p>
 </dd>
 
-### -field <a id="FILE_SEQUENTIAL_ONLY"></a><a id="file_sequential_only"></a>FILE_SEQUENTIAL_ONLY
+### -field FILE_SEQUENTIAL_ONLY
 
 <dd>
 <p>All accesses to the file will be sequential.</p>
 </dd>
 
-### -field <a id="FILE_NO_INTERMEDIATE_BUFFERING"></a><a id="file_no_intermediate_buffering"></a>FILE_NO_INTERMEDIATE_BUFFERING
+### -field FILE_NO_INTERMEDIATE_BUFFERING
 
 <dd>
 <p>The file cannot be cached or buffered in a driver's internal buffers.</p>
 </dd>
 
-### -field <a id="FILE_SYNCHRONOUS_IO_ALERT"></a><a id="file_synchronous_io_alert"></a>FILE_SYNCHRONOUS_IO_ALERT
+### -field FILE_SYNCHRONOUS_IO_ALERT
 
 <dd>
 <p>All operations on the file are performed synchronously. Any wait on behalf of the caller is subject to premature termination from alerts. This flag also causes the I/O system to maintain the file position context.</p>
 </dd>
 
-### -field <a id="FILE_SYNCHRONOUS_IO_NONALERT"></a><a id="file_synchronous_io_nonalert"></a>FILE_SYNCHRONOUS_IO_NONALERT
+### -field FILE_SYNCHRONOUS_IO_NONALERT
 
 <dd>
 <p>All operations on the file are performed synchronously. Wait requests in the system that must synchronize I/O queuing and completion are not subject to alerts. This flag also causes the I/O system to maintain the file position context.</p>
 </dd>
 
-### -field <a id="FILE_DELETE_ON_CLOSE"></a><a id="file_delete_on_close"></a>FILE_DELETE_ON_CLOSE
+### -field FILE_DELETE_ON_CLOSE
 
 <dd>
 <p>Delete the file when the last handle to the file is closed.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_filter_restart_parameters.htm
 old-project: netvista
 ms.assetid: f61e8c1b-5cc5-4d61-a4e2-39ca402cd710
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_FILTER_RESTART_PARAMETERS, NDIS_FILTER_RESTART_PARAMETERS, *PNDIS_FILTER_RESTART_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct _NDIS_FILTER_RESTART_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -73,7 +73,7 @@ typedef struct _NDIS_FILTER_RESTART_PARAMETERS {
      NDIS_SIZEOF__FILTER_RESTART_PARAMETERS_REVISION_1.</p>
 </dd>
 
-### -field <b>MiniportMediaType</b>
+### -field MiniportMediaType
 
 <dd>
 <p>The 
@@ -82,14 +82,14 @@ typedef struct _NDIS_FILTER_RESTART_PARAMETERS {
      <a href="..\ntddndis\ne-ntddndis--ndis-medium.md">NDIS_MEDIUM</a>.</p>
 </dd>
 
-### -field <b>MiniportPhysicalMediaType</b>
+### -field MiniportPhysicalMediaType
 
 <dd>
 <p>The physical medium type for the base underlying miniport adapter. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569621">OID_GEN_PHYSICAL_MEDIUM</a>.</p>
 </dd>
 
-### -field <b>RestartAttributes</b>
+### -field RestartAttributes
 
 <dd>
 <p>
@@ -97,7 +97,7 @@ typedef struct _NDIS_FILTER_RESTART_PARAMETERS {
      </p>
 </dd>
 
-### -field <b>LowerIfIndex</b>
+### -field LowerIfIndex
 
 <dd>
 <p>The NDIS network interface index of the interface just below the current filter module. That is,
@@ -110,7 +110,7 @@ typedef struct _NDIS_FILTER_RESTART_PARAMETERS {
      miniport.</p>
 </dd>
 
-### -field <b>LowerIfNetLuid</b>
+### -field LowerIfNetLuid
 
 <dd>
 <p>The NDIS network interface 
@@ -124,7 +124,7 @@ typedef struct _NDIS_FILTER_RESTART_PARAMETERS {
      driver virtual miniport.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for future use.</p>
@@ -182,4 +182,4 @@ typedef struct _NDIS_FILTER_RESTART_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_RESTART_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_RESTART_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

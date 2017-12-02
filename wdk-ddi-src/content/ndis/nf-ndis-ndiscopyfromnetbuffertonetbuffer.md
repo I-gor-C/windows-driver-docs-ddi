@@ -7,7 +7,7 @@ old-location: netvista\ndiscopyfromnetbuffertonetbuffer.htm
 old-project: netvista
 ms.assetid: b760e176-3ef7-4495-89c7-ec6b8bb3ed30
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisCopyFromNetBufferToNetBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,13 +62,13 @@ NDIS_STATUS NdisCopyFromNetBufferToNetBuffer(
 ## -parameters
 <dl>
 
-### -param <i>Destination</i> [in]
+### -param Destination [in]
 
 <dd>
 <p>A pointer to a previously allocated destination NET_BUFFER structure.</p>
 </dd>
 
-### -param <i>DestinationOffset</i> [in]
+### -param DestinationOffset [in]
 
 <dd>
 <p>The byte offset within the destination NET_BUFFER structure at which to begin writing the copied
@@ -76,19 +76,19 @@ NDIS_STATUS NdisCopyFromNetBufferToNetBuffer(
      <i>DestinationOffset</i>, see the following Remarks section.</p>
 </dd>
 
-### -param <i>BytesToCopy</i> [in]
+### -param BytesToCopy [in]
 
 <dd>
 <p>The number of bytes to copy.</p>
 </dd>
 
-### -param <i>Source</i> [in]
+### -param Source [in]
 
 <dd>
 <p>A pointer to a previously allocated source NET_BUFFER structure.</p>
 </dd>
 
-### -param <i>SourceOffset</i> [in]
+### -param SourceOffset [in]
 
 <dd>
 <p>The byte offset within the source NET_BUFFER structure at which to begin copying the data. For
@@ -96,7 +96,7 @@ NDIS_STATUS NdisCopyFromNetBufferToNetBuffer(
      <i>SourceOffset</i>, see the following Remarks section.</p>
 </dd>
 
-### -param <i>BytesCopied</i> [out]
+### -param BytesCopied [out]
 
 <dd>
 <p>A pointer to the caller-supplied variable in which this function returns the number of bytes
@@ -216,4 +216,4 @@ NDIS_STATUS NdisCopyFromNetBufferToNetBuffer(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCopyFromNetBufferToNetBuffer function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCopyFromNetBufferToNetBuffer function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

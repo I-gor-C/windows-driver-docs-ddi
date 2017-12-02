@@ -55,13 +55,13 @@ typedef struct _GetBindingCapability_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. </p>
 </dd>
 
-### -field <b>BindType</b>
+### -field BindType
 
 <dd>
 <p>Indicates the ability of an HBA and its miniport driver to provide a specific set of features related to persistent binding. For a list of values that this parameter can have, see the description of the HBA_BIND_TYPE WMI class qualifier.</p>

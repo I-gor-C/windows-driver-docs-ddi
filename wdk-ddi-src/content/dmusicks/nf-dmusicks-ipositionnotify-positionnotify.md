@@ -54,7 +54,7 @@ HRESULT PositionNotify(
 ## -parameters
 <dl>
 
-### -param <i>bytePosition</i> [in]
+### -param bytePosition [in]
 
 <dd></dd>
 </dl>

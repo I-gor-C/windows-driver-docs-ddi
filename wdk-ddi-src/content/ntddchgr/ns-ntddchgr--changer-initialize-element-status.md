@@ -55,13 +55,13 @@ typedef struct _CHANGER_INITIALIZE_ELEMENT_STATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>ElementList</b>
+### -field ElementList
 
 <dd>
 <p>Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr--changer-element-list.md">CHANGER_ELEMENT_LIST</a> that specifies the element type and the number of elements. If the <b>Features0</b> member of the <a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a> structure is set to CHANGER_INIT_ELEM_STAT_WITH_RANGE, the changer supports initializing a range of elements. In this case, the element type can be <b>ChangerTransport</b>, <b>ChangerSlot</b>, <b>ChangerDrive</b>, or <b>ChangerIEPort</b> and <b>ElementList</b> can specify a number of elements to initialize. Otherwise, the element type must be <b>AllElements</b> and the number of elements is ignored. </p>
 </dd>
 
-### -field <b>BarCodeScan</b>
+### -field BarCodeScan
 
 <dd>
 <p>Instructs the changer driver, when <b>TRUE</b>, to initialize elements by scanning bar codes. When <b>FALSE</b>, the changer driver takes no action. This member is applicable only if the <b>Features0</b> member of GET_CHANGER_PARAMETERS is set to CHANGER_BAR_CODE_SCANNER_INSTALLED. If the changer has nonvolatile RAM, a bar code scan can serve as an optimization.</p>

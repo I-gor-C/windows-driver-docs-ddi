@@ -7,7 +7,7 @@ old-location: netvista\ndis_offload.htm
 old-project: netvista
 ms.assetid: 9d1447f1-aae8-4c27-a27b-e521c0c8ca97
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_OFFLOAD, NDIS_OFFLOAD, *PNDIS_OFFLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ typedef struct _NDIS_OFFLOAD {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -95,7 +95,7 @@ typedef struct _NDIS_OFFLOAD {
 </p>
 </dd>
 
-### -field <b>Checksum</b>
+### -field Checksum
 
 <dd>
 <p>Checksum offload information in an 
@@ -103,7 +103,7 @@ typedef struct _NDIS_OFFLOAD {
      NDIS_TCP_IP_CHECKSUM_OFFLOAD</a> structure.</p>
 </dd>
 
-### -field <b>LsoV1</b>
+### -field LsoV1
 
 <dd>
 <p>Large send offload version 1 (LSOV1) information in an 
@@ -111,7 +111,7 @@ typedef struct _NDIS_OFFLOAD {
      NDIS_TCP_LARGE_SEND_OFFLOAD_V1</a> structure.</p>
 </dd>
 
-### -field <b>IPsecV1</b>
+### -field IPsecV1
 
 <dd>
 <p>Internet protocol security (IPsec) offload information in an 
@@ -119,7 +119,7 @@ typedef struct _NDIS_OFFLOAD {
      NDIS_IPSEC_OFFLOAD_V1</a> structure.</p>
 </dd>
 
-### -field <b>LsoV2</b>
+### -field LsoV2
 
 <dd>
 <p>Large send offload version 2 (LSOV2) offload information in an 
@@ -127,7 +127,7 @@ typedef struct _NDIS_OFFLOAD {
      NDIS_TCP_LARGE_SEND_OFFLOAD_V2</a> structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitwise OR  of flags that specify properties that the network adapter supports. The following flags are defined.</p>
@@ -139,7 +139,7 @@ typedef struct _NDIS_OFFLOAD {
 <tr>
 <td width="40%"><a id="IPSEC_OFFLOAD_V2_AND_TCP_CHECKSUM_COEXISTENCE"></a><a id="ipsec_offload_v2_and_tcp_checksum_coexistence"></a><dl>
 
-### -field <b>IPSEC_OFFLOAD_V2_AND_TCP_CHECKSUM_COEXISTENCE</b>
+### -field IPSEC_OFFLOAD_V2_AND_TCP_CHECKSUM_COEXISTENCE
 
 
 ### -field 0x00000002
@@ -153,7 +153,7 @@ typedef struct _NDIS_OFFLOAD {
 <tr>
 <td width="40%"><a id="IPSEC_OFFLOAD_V2_AND_UDP_CHECKSUM_COEXISTENCE"></a><a id="ipsec_offload_v2_and_udp_checksum_coexistence"></a><dl>
 
-### -field <b>IPSEC_OFFLOAD_V2_AND_UDP_CHECKSUM_COEXISTENCE</b>
+### -field IPSEC_OFFLOAD_V2_AND_UDP_CHECKSUM_COEXISTENCE
 
 
 ### -field 0x00000004
@@ -168,25 +168,25 @@ typedef struct _NDIS_OFFLOAD {
 <p> </p>
 </dd>
 
-### -field <b>IPsecV2</b>
+### -field IPsecV2
 
 <dd>
 <p>Internet protocol security (IPsec) offload version 2 information in an 
       <a href="..\ntddndis\ns-ntddndis--ndis-ipsec-offload-v2.md">NDIS_IPSEC_OFFLOAD_V2</a> structure.</p>
 </dd>
 
-### -field <b>Rsc</b>
+### -field Rsc
 
 <dd>
 <p>
-<a href="NULL">Receive Segment Coalescing (RSC)</a> offload information in    an <a href="..\ntddndis\ns-ntddndis--ndis-tcp-recv-seg-coalesce-offload.md">NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD</a> structure.</p>
+<a href="netvista.receive_segment_coalescing__rsc_">Receive Segment Coalescing (RSC)</a> offload information in    an <a href="..\ntddndis\ns-ntddndis--ndis-tcp-recv-seg-coalesce-offload.md">NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD</a> structure.</p>
 </dd>
 
-### -field <b>EncapsulatedPacketTaskOffloadGre</b>
+### -field EncapsulatedPacketTaskOffloadGre
 
 <dd>
 <p>
-<a href="NULL">Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload</a> information in an <a href="..\ntddndis\ns-ntddndis--ndis-encapsulated-packet-task-offload.md">NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD</a> structure. This member should only be set by miniport drivers that support task offloads for NVGRE-formatted packets.<div class="alert"><b>Note</b>  This member is available only in NDIS 6.30 and later. </div>
+<a href="netvista.network_virtualization_using_generic_routing_encapsulation__nvgre__task_offload">Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload</a> information in an <a href="..\ntddndis\ns-ntddndis--ndis-encapsulated-packet-task-offload.md">NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD</a> structure. This member should only be set by miniport drivers that support task offloads for NVGRE-formatted packets.<div class="alert"><b>Note</b>  This member is available only in NDIS 6.30 and later. </div>
 <div> </div>
 </p>
 </dd>
@@ -292,15 +292,15 @@ typedef struct _NDIS_OFFLOAD {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569806">OID_TCP_OFFLOAD_HARDWARE_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="NULL">Determining the RSC Capabilities of a Network Adapter</a>
+<a href="netvista.determining_the_rsc_capabilities_of_a_network_adapter">Determining the RSC Capabilities of a Network Adapter</a>
 </dt>
 <dt>
-<a href="NULL">Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload</a>
+<a href="netvista.network_virtualization_using_generic_routing_encapsulation__nvgre__task_offload">Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload</a>
 </dt>
 <dt>
-<a href="NULL">TCP/IP Task Offload</a>
+<a href="netvista.task_offload">TCP/IP Task Offload</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

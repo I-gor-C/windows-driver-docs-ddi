@@ -58,26 +58,26 @@ PVOID VideoPortGetDeviceBase(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>IoAddress</i> 
+### -param IoAddress 
 
 <dd>
 <p>The base physical address of the range to map. You get this bus-relative value by calling <a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a>, <a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a>, or <a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>. Otherwise, this value is a driver-supplied, default base address for the device memory or I/O ports.</p>
 <p>You must have successfully claimed the range described by <i>IoAddress</i> and <i>NumberOfUchars</i> in the registry through a preceding call to <a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a> or <b>VideoPortGetAccessRanges</b>.</p>
 </dd>
 
-### -param <i>NumberOfUchars</i> 
+### -param NumberOfUchars 
 
 <dd>
 <p>The number of bytes, starting at <i>IoAddress</i>, to map.</p>
 </dd>
 
-### -param <i>InIoSpace</i> 
+### -param InIoSpace 
 
 <dd>
 <p>The location of the <i>IoAddress</i> range. This parameter can be one of the following flags or an ORed, compatible combination of these flags.</p>

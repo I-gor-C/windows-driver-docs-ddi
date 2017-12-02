@@ -7,7 +7,7 @@ old-location: netvista\CopyNetBufferListInfo.htm
 old-project: netvista
 ms.assetid: 5CC345FA-C3EF-4122-8E9C-6EA27B20DD5A
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,30 +63,30 @@ NDIS_STATUS CopyNetBufferListInfo(
 ## -parameters
 <dl>
 
-### -param <i>NdisSwitchContext</i> [in]
+### -param NdisSwitchContext [in]
 
 <dd>
 <p>An NDIS_SWITCH_CONTEXT value that contains the handle of the extensible switch module to which the extension is attached. When the extension calls <a href="..\ndis\nf-ndis-ndisfgetoptionalswitchhandlers.md">NdisFGetOptionalSwitchHandlers</a>,  this handle is returned through the <i>NdisSwitchContext</i> parameter.</p>
 </dd>
 
-### -param <i>DestNetBufferList</i> [in, out]
+### -param DestNetBufferList [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure for the destination packet to which the extensible switch forwarding context is copied.  </p>
 </dd>
 
-### -param <i>SrcNetBufferList</i> [in]
+### -param SrcNetBufferList [in]
 
 <dd>
 <p>A pointer to a <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure for the source packet from which the extensible switch forwarding context is copied. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A UINT32 value. When the NDIS_SWITCH_COPY_NBL_INFO_FLAGS_PRESERVE_DESTINATIONS flag is specified, the function copies the extensible switch destination ports from the source packet to the destination packet.</p>
 <p>The data that is contained within the source packet's <a href="..\ndis\ns-ndis--ndis-switch-forwarding-detail-net-buffer-list-info.md">NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO</a> union is always copied to the extensible switch forwarding context in the destination packet. This data includes the source port identifiers and index of the network adapter connection from which the packet originated. Depending on the number of extensible switch destination ports that are copied to the destination packet, the NumAvailableDestinations member of the <b>NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO</b> union is updated in the destination packet.</p>
-<p>For more information about the forwarding context, see <a href="NULL">Hyper-V Extensible Switch Forwarding Context</a>.</p>
+<p>For more information about the forwarding context, see <a href="netvista.hyper_v_extensible_switch_forwarding_context">Hyper-V Extensible Switch Forwarding Context</a>.</p>
 </dd>
 </dl>
 
@@ -174,4 +174,4 @@ NDIS_STATUS CopyNetBufferListInfo(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_COPY_NET_BUFFER_LIST_INFO callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_COPY_NET_BUFFER_LIST_INFO callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

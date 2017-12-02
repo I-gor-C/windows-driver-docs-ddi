@@ -58,19 +58,19 @@ NTSTATUS ClfsAddLogContainerSet(
 ## -parameters
 <dl>
 
-### -param <i>plfoLog</i> [in]
+### -param plfoLog [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents the log to which the containers will be added. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>.</p>
 </dd>
 
-### -param <i>cContainers</i> [in]
+### -param cContainers [in]
 
 <dd>
 <p>The number of containers in the set. This is the number of elements in the <i>rguszContainerPath</i> array.</p>
 </dd>
 
-### -param <i>pcbContainer</i> [in, optional]
+### -param pcbContainer [in, optional]
 
 <dd>
 <p>A pointer to a ULONGLONG-typed variable. The role of this parameter depends on whether the log currently has at least one container.</p>
@@ -87,7 +87,7 @@ NTSTATUS ClfsAddLogContainerSet(
 </ul>
 </dd>
 
-### -param <i>rguszContainerPath</i> [in]
+### -param rguszContainerPath [in]
 
 <dd>
 <p>A pointer to an array of <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structures. Each string supplies the path name for one of the new containers. The number of elements in the array is given by <i>cContainers</i>. A given path can be absolute or relative to the location of the base log file. Paths that are relative to the base log file must begin with CLFS_CONTAINER_RELATIVE_PREFIX, which is the string literal (L"%BLF%\\").</p>

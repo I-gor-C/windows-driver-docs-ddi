@@ -55,13 +55,13 @@ typedef struct _MOUNTDEV_UNIQUE_ID {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueIdLength</b>
+### -field UniqueIdLength
 
 <dd>
 <p>Contains the length of the unique volume ID. </p>
 </dd>
 
-### -field <b>UniqueId</b>
+### -field UniqueId
 
 <dd>
 <p>Contains the unique volume ID as an array of bytes. </p>
@@ -69,7 +69,7 @@ typedef struct _MOUNTDEV_UNIQUE_ID {
 </dl>
 
 ## -remarks
-<p>For a discussion of unique volume IDs and how the mount manager uses them, see <a href="NULL">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
+<p>For a discussion of unique volume IDs and how the mount manager uses them, see <a href="storage.supporting_mount_manager_requests_in_a_storage_class_driver">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
 
 ## -requirements
 <table>

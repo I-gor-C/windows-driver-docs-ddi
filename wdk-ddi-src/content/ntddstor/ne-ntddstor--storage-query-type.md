@@ -57,25 +57,25 @@ typedef enum _STORAGE_QUERY_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PropertyStandardQuery"></a><a id="propertystandardquery"></a><a id="PROPERTYSTANDARDQUERY"></a><b>PropertyStandardQuery</b>
+### -field PropertyStandardQuery
 
 <dd>
 <p>Instructs the port driver to report a device descriptor, an adapter descriptor or a unique hardware device ID (DUID).</p>
 </dd>
 
-### -field <a id="PropertyExistsQuery"></a><a id="propertyexistsquery"></a><a id="PROPERTYEXISTSQUERY"></a><b>PropertyExistsQuery</b>
+### -field PropertyExistsQuery
 
 <dd>
 <p>Instructs the port driver to report whether the descriptor is supported.</p>
 </dd>
 
-### -field <a id="PropertyMaskQuery"></a><a id="propertymaskquery"></a><a id="PROPERTYMASKQUERY"></a><b>PropertyMaskQuery</b>
+### -field PropertyMaskQuery
 
 <dd>
 <p>Not currently supported. Do not use.</p>
 </dd>
 
-### -field <a id="PropertyQueryMaxDefined"></a><a id="propertyquerymaxdefined"></a><a id="PROPERTYQUERYMAXDEFINED"></a><b>PropertyQueryMaxDefined</b>
+### -field PropertyQueryMaxDefined
 
 <dd>
 <p>Specifies the upper limit of the list of query types. This is used to validate the query type.</p>

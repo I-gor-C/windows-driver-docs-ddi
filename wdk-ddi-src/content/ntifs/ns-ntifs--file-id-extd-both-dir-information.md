@@ -7,7 +7,7 @@ old-location: ifsk\file_id_extd_both_dir_information.htm
 old-project: ifsk
 ms.assetid: 3673C27D-61D9-4127-ABC1-655DE83AD64E
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILE_ID_EXTD_BOTH_DIR_INFORMATION, FILE_ID_EXTD_BOTH_DIR_INFORMATION, *PFILE_ID_EXTD_BOTH_DIR_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,55 +69,55 @@ typedef struct _FILE_ID_BOTH_DIR_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NextEntryOffset</b>
+### -field NextEntryOffset
 
 <dd>
 <p>Byte offset of the next <b>FILE_ID_EXTD_BOTH_DIR_INFORMATION</b> entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one. </p>
 </dd>
 
-### -field <b>FileIndex</b>
+### -field FileIndex
 
 <dd>
 <p>Byte offset of the file within the parent directory. This member is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order. </p>
 </dd>
 
-### -field <b>CreationTime</b>
+### -field CreationTime
 
 <dd>
 <p>Time when the file was created. </p>
 </dd>
 
-### -field <b>LastAccessTime</b>
+### -field LastAccessTime
 
 <dd>
 <p>Last time the file was accessed. </p>
 </dd>
 
-### -field <b>LastWriteTime</b>
+### -field LastWriteTime
 
 <dd>
 <p>Last time information was written to the file. </p>
 </dd>
 
-### -field <b>ChangeTime</b>
+### -field ChangeTime
 
 <dd>
 <p>Last time the file was changed. </p>
 </dd>
 
-### -field <b>EndOfFile</b>
+### -field EndOfFile
 
 <dd>
 <p>Absolute new end-of-file position as a byte offset from the start of the file. <b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file. In other words, <b>EndOfFile</b> is the offset to the byte immediately following the last valid byte in the file.</p>
 </dd>
 
-### -field <b>AllocationSize</b>
+### -field AllocationSize
 
 <dd>
 <p>File allocation size, in bytes. Usually, this value is a multiple of the sector or cluster size of the underlying physical device. </p>
 </dd>
 
-### -field <b>FileAttributes</b>
+### -field FileAttributes
 
 <dd>
 <p>File attributes, which can be any valid combination of the following: </p>
@@ -135,43 +135,43 @@ typedef struct _FILE_ID_BOTH_DIR_INFORMATION {
 </p>
 </dd>
 
-### -field <b>FileNameLength</b>
+### -field FileNameLength
 
 <dd>
 <p>Specifies the length of the file name string. </p>
 </dd>
 
-### -field <b>EaSize</b>
+### -field EaSize
 
 <dd>
 <p>Combined length, in bytes, of the extended attributes (EA) for the file. </p>
 </dd>
 
-### -field <b>ReparsePointTag</b>
+### -field ReparsePointTag
 
 <dd>
 <p>Tag value for the reparse point.</p>
 </dd>
 
-### -field <b>FileId</b>
+### -field FileId
 
 <dd>
 <p>The 128-byte file reference number for the file. This number is generated and assigned to the file by the file system.</p>
 </dd>
 
-### -field <b>ShortNameLength</b>
+### -field ShortNameLength
 
 <dd>
 <p>Specifies the length of the short file name string. </p>
 </dd>
 
-### -field <b>ShortName</b>
+### -field ShortName
 
 <dd>
 <p>Unicode string containing the short (8.3) name for the file. </p>
 </dd>
 
-### -field <b>FileName</b>
+### -field FileName
 
 <dd>
 <p>Specifies the first character of the file name string. This is followed in memory by the remainder of the string. </p>
@@ -229,4 +229,4 @@ typedef struct _FILE_ID_BOTH_DIR_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_ID_EXTD_BOTH_DIR_INFORMATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_ID_EXTD_BOTH_DIR_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -57,19 +57,19 @@ STDMETHOD GetSupportedVersions(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd>
 <p>A handle to the print device.</p>
 </dd>
 
-### -param <i>ppVersions</i> [out]
+### -param ppVersions [out]
 
 <dd>
 <p>A pointer to a variable that receives the address of the first element of an array of version numbers. Version numbers in the array can appear in any order. For more information about this parameter, see the following Remarks section.</p>
 </dd>
 
-### -param <i>cVersions</i> [out]
+### -param cVersions [out]
 
 <dd>
 <p>A pointer to a variable that receives the number of elements in the array that is pointed to by *<i>ppVersions</i>. </p>

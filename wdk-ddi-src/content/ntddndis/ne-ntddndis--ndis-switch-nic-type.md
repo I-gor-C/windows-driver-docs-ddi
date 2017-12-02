@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_nic_type.htm
 old-project: netvista
 ms.assetid: 0ff7a803-9de4-4b2f-ab5f-3eb5107d5b64
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT, *PGET_CONFIGURATION_IOCTL_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ typedef enum _NDIS_SWITCH_NIC_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="NdisSwitchNicTypeExternal"></a><a id="ndisswitchnictypeexternal"></a><a id="NDISSWITCHNICTYPEEXTERNAL"></a><b>NdisSwitchNicTypeExternal</b>
+### -field NdisSwitchNicTypeExternal
 
 <dd>
 <p>This value specifies a virtual network adapter that is exposed in the management operating system that runs in the Hyper-V parent partition. The external network adapter provides the connection to the  physical network interface that is available on the host. This allows processes that run in either the management or guest operating systems to send or receive packets over the extensible switch.</p>
-<div class="alert"><b>Note</b>  An extensible switch supports no more than one external network adapter. The external network adapter can be bound to one or more underlying physical network adapters. For more information, see <a href="NULL">External Network Adapters</a>.</div>
+<div class="alert"><b>Note</b>  An extensible switch supports no more than one external network adapter. The external network adapter can be bound to one or more underlying physical network adapters. For more information, see <a href="netvista.external_network_adapters">External Network Adapters</a>.</div>
 <div> </div>
 </dd>
 
-### -field <a id="NdisSwitchNicTypeSynthetic"></a><a id="ndisswitchnictypesynthetic"></a><a id="NDISSWITCHNICTYPESYNTHETIC"></a><b>NdisSwitchNicTypeSynthetic</b>
+### -field NdisSwitchNicTypeSynthetic
 
 <dd>
 <p>This value specifies a synthetic network adapter that is exposed in a guest operating system that runs in a Hyper-V child partition.</p>
@@ -75,7 +75,7 @@ typedef enum _NDIS_SWITCH_NIC_TYPE {
 <div> </div>
 </dd>
 
-### -field <a id="NdisSwitchNicTypeEmulated"></a><a id="ndisswitchnictypeemulated"></a><a id="NDISSWITCHNICTYPEEMULATED"></a><b>NdisSwitchNicTypeEmulated</b>
+### -field NdisSwitchNicTypeEmulated
 
 <dd>
 <p>This value specifies an emulated network adapter that is exposed in a guest operating system.</p>
@@ -83,11 +83,11 @@ typedef enum _NDIS_SWITCH_NIC_TYPE {
 <div> </div>
 </dd>
 
-### -field <a id="NdisSwitchNicTypeInternal"></a><a id="ndisswitchnictypeinternal"></a><a id="NDISSWITCHNICTYPEINTERNAL"></a><b>NdisSwitchNicTypeInternal</b>
+### -field NdisSwitchNicTypeInternal
 
 <dd>
 <p>This value specifies a virtual network adapter that is exposed in the management operating system that runs in the Hyper-V parent partition. The internal network adapter provides access to an extensible switch for processes that run in the management operating system. This allows these processes to send or receive packets over the extensible switch.</p>
-<div class="alert"><b>Note</b>  An extensible switch supports no more than one internal network adapter. For more information, see <a href="NULL">Internal Network Adapters</a>.</div>
+<div class="alert"><b>Note</b>  An extensible switch supports no more than one internal network adapter. For more information, see <a href="netvista.internal_network_adapters">Internal Network Adapters</a>.</div>
 <div> </div>
 </dd>
 </dl>
@@ -97,7 +97,7 @@ typedef enum _NDIS_SWITCH_NIC_TYPE {
 
 </p>
 
-<p>For more information on the types of network adapters that connect to extensible switch ports, see <a href="NULL">Hyper-V Extensible Switch Network Adapters</a>.
+<p>For more information on the types of network adapters that connect to extensible switch ports, see <a href="netvista.hyper_v_extensible_switch_network_adapters">Hyper-V Extensible Switch Network Adapters</a>.
 
 </p>
 
@@ -132,4 +132,4 @@ typedef enum _NDIS_SWITCH_NIC_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_NIC_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_NIC_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

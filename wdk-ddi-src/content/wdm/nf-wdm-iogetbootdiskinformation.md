@@ -56,13 +56,13 @@ NTSTATUS IoGetBootDiskInformation(
 ## -parameters
 <dl>
 
-### -param <i>BootDiskInformation</i> [in, out]
+### -param BootDiskInformation [in, out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that the routine uses to return information about the boot and system disks. The routine fills this buffer in with either a <a href="..\wdm\ns-wdm--bootdisk-information.md">BOOTDISK_INFORMATION</a> or a <a href="..\wdm\ns-wdm--bootdisk-information-ex.md">BOOTDISK_INFORMATION_EX</a> structure.</p>
 </dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer specified by <i>BootDiskInformation</i>. Should be either <b>sizeof</b>(<b>BOOTDISK_INFORMATION</b>) or <b>sizeof</b>(<b>BOOTDISK_INFORMATION_EX</b>).</p>

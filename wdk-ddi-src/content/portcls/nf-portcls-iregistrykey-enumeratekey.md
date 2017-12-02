@@ -58,13 +58,13 @@ NTSTATUS EnumerateKey(
 ## -parameters
 <dl>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>Specifies the subkey index. This parameter identifies the subkey for which key information is requested. If the key contains <i>n</i> subkeys, valid indices range from 0 to <i>n</i>-1. If the index exceeds this range, the method returns STATUS_NO_MORE_ENTRIES.</p>
 </dd>
 
-### -param <i>KeyInformationClass</i> [in]
+### -param KeyInformationClass [in]
 
 <dd>
 <p>Specifies the type of information to be returned in the buffer. Set this parameter to one of the following KEY_INFORMATION_CLASS enumeration values:</p>
@@ -81,19 +81,19 @@ NTSTATUS EnumerateKey(
 </ul>
 </dd>
 
-### -param <i>KeyInformation</i> [out]
+### -param KeyInformation [out]
 
 <dd>
 <p>Pointer to the key information buffer. This parameter points to a caller-allocated buffer into which the method writes the requested data. The buffer contains a structure of type <a href="..\wdm\ns-wdm--key-basic-information.md">KEY_BASIC_INFORMATION</a>, <a href="..\wdm\ns-wdm--key-full-information.md">KEY_FULL_INFORMATION</a>, or <a href="..\wdm\ns-wdm--key-node-information.md">KEY_NODE_INFORMATION</a>, depending on the value of <i>KeyInformationClass</i>. The structure is followed by a string of Unicode characters whose size depends on the type of information being requested about the key.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the size in bytes of the <i>KeyInformation</i> buffer, which the caller must set according to the given <i>KeyInformationClass</i>. For the call to succeed, the buffer must be at least as large as the data that the method writes into the buffer.</p>
 </dd>
 
-### -param <i>ResultLength</i> [out]
+### -param ResultLength [out]
 
 <dd>
 <p>Output pointer for the length of the resulting data. This parameter points to a caller-allocated ULONG variable into which the method writes a count specifying the number of bytes actually written into the <i>KeyInformation</i> buffer. If the specified buffer length is too small to contain the information, however, the method instead outputs the required buffer size and returns STATUS_BUFFER_OVERFLOW.</p>

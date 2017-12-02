@@ -7,7 +7,7 @@ old-location: debugger\getindexbyname.htm
 old-project: debugger
 ms.assetid: a012b235-ed50-4009-a7ee-01783f9e3597
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugRegisters2, GetIndexByName, IDebugRegisters2::GetIndexByName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ HRESULT GetIndexByName(
 ## -parameters
 <dl>
 
-### -param <i>Name</i> [in]
+### -param Name [in]
 
 <dd>
 <p>Specifies the name of the register whose index is requested.</p>
 </dd>
 
-### -param <i>Index</i> [out]
+### -param Index [out]
 
 <dd>
 <p>Receives the index of the register.</p>
@@ -69,7 +69,7 @@ HRESULT GetIndexByName(
 </dl>
 
 ## -returns
-<p>This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="debugger.hresult_values">HRESULT Values</a>.</p><dl>
+<p>This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>E_NOINTERFACE</b></dt>

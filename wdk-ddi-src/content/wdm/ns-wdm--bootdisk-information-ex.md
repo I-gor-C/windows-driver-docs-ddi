@@ -62,49 +62,49 @@ typedef struct _BOOTDISK_INFORMATION_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>BootPartitionOffset</b>
+### -field BootPartitionOffset
 
 <dd>
 <p>Specifies the offset, in bytes, on the boot disk where the boot partition begins.</p>
 </dd>
 
-### -field <b>SystemPartitionOffset</b>
+### -field SystemPartitionOffset
 
 <dd>
 <p>Specifies the offset, in bytes, on the system disk where the system partition begins.</p>
 </dd>
 
-### -field <b>BootDeviceSignature</b>
+### -field BootDeviceSignature
 
 <dd>
 <p>If the <b>BootDeviceIsGpt</b> member is <b>FALSE</b>, this specifies the signature for the disk's MBR partition table. Otherwise, this member is unused.</p>
 </dd>
 
-### -field <b>SystemDeviceSignature</b>
+### -field SystemDeviceSignature
 
 <dd>
 <p>If the <b>SystemDeviceIsGpt</b> member is <b>FALSE</b>, this specifies the signature for the disk's MBR partition table. Otherwise, this member is unused.</p>
 </dd>
 
-### -field <b>BootDeviceGuid</b>
+### -field BootDeviceGuid
 
 <dd>
 <p>If the <b>BootDeviceIsGpt</b> member is <b>TRUE</b>, this specifies the GUID for the boot disk. Otherwise, this member is unused. </p>
 </dd>
 
-### -field <b>SystemDeviceGuid</b>
+### -field SystemDeviceGuid
 
 <dd>
 <p>If the <b>SystemDeviceIsGpt</b> member is <b>TRUE</b>, this specifies the GUID for the boot disk. Otherwise, this member is unused. </p>
 </dd>
 
-### -field <b>BootDeviceIsGpt</b>
+### -field BootDeviceIsGpt
 
 <dd>
 <p><b>TRUE</b> if the boot disk is formatted with the GPT partition table type.</p>
 </dd>
 
-### -field <b>SystemDeviceIsGpt</b>
+### -field SystemDeviceIsGpt
 
 <dd>
 <p><b>TRUE</b> if the system disk is formatted with the GPT partition table type. </p>

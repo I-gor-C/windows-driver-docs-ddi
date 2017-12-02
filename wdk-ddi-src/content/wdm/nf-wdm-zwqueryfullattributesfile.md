@@ -56,13 +56,13 @@ NTSTATUS ZwQueryFullAttributesFile(
 ## -parameters
 <dl>
 
-### -param <i>ObjectAttributes</i> [in]
+### -param ObjectAttributes [in]
 
 <dd>
 <p>A pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that supplies the attributes to be used for the file object. </p>
 </dd>
 
-### -param <i>FileInformation</i> [out]
+### -param FileInformation [out]
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--file-network-open-information.md">FILE_NETWORK_OPEN_INFORMATION</a> structure that receives the returned file attributes information. </p>

@@ -57,25 +57,25 @@ typedef struct _D3D12DDI_CRYPTO_SESSION_TRANSFORM_DECRYPT_OUTPUT_ARGUMENTS_0030 
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>Enable.</p>
 </dd>
 
-### -field <b>hDrvBuffer</b>
+### -field hDrvBuffer
 
 <dd>
 <p>Buffer.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Offset.</p>

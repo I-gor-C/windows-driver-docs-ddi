@@ -85,74 +85,74 @@ typedef struct _DEVICE_MEDIA_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceSpecific</b>
+### -field DeviceSpecific
 
 <dd>
 <dl>
 
-### -field <b>DiskInfo</b>
+### -field DiskInfo
 
 <dd>
 <p>Describes a nonremovable (fixed) disk.</p>
 <dl>
 
-### -field <b>Cylinders</b>
+### -field Cylinders
 
 <dd>
 <p>Specifies the number of cylinders on this disk. </p>
 </dd>
 
-### -field <b>MediaType</b>
+### -field MediaType
 
 <dd>
 <p>Specifies a <a href="storage.media_type">MEDIA_TYPE</a> of <b>FixedMedia</b>. </p>
 </dd>
 
-### -field <b>TracksPerCylinder</b>
+### -field TracksPerCylinder
 
 <dd>
 <p>Specifies the number of tracks per cylinder.</p>
 </dd>
 
-### -field <b>SectorsPerTrack</b>
+### -field SectorsPerTrack
 
 <dd>
 <p>Specifies the number of sectors per track.</p>
 </dd>
 
-### -field <b>BytesPerSector</b>
+### -field BytesPerSector
 
 <dd>
 <p>Specifies the number of bytes per sector.</p>
 </dd>
 
-### -field <b>NumberMediaSides</b>
+### -field NumberMediaSides
 
 <dd>
 <p>Specifies the number of sides of the disk that can contain data: either 1 for one-sided media or 2 for two-sided media.</p>
 </dd>
 
-### -field <b>MediaCharacteristics</b>
+### -field MediaCharacteristics
 
 <dd>
 <p>Specifies characteristics of the disk indicated by one or more of the following flags.</p>
 <dl><a id="MEDIA_CURRENTLY_MOUNTED_"></a><a id="media_currently_mounted_"></a>
-### -field <b>MEDIA_CURRENTLY_MOUNTED
+### -field MEDIA_CURRENTLY_MOUNTED
 </b>
 <a id="MEDIA_ERASEABLE_"></a><a id="media_eraseable_"></a>
-### -field <b>MEDIA_ERASEABLE
+### -field MEDIA_ERASEABLE
 </b>
 <a id="MEDIA_READ_ONLY_"></a><a id="media_read_only_"></a>
-### -field <b>MEDIA_READ_ONLY
+### -field MEDIA_READ_ONLY
 </b>
 <a id="MEDIA_READ_WRITE_"></a><a id="media_read_write_"></a>
-### -field <b>MEDIA_READ_WRITE
+### -field MEDIA_READ_WRITE
 </b>
 <a id="MEDIA_WRITE_ONCE_"></a><a id="media_write_once_"></a>
-### -field <b>MEDIA_WRITE_ONCE
+### -field MEDIA_WRITE_ONCE
 </b>
 <a id="MEDIA_WRITE_PROTECTED_"></a><a id="media_write_protected_"></a>
-### -field <b>MEDIA_WRITE_PROTECTED
+### -field MEDIA_WRITE_PROTECTED
 </b>
 
 </dl>
@@ -160,49 +160,49 @@ typedef struct _DEVICE_MEDIA_INFO {
 </dl>
 </dd>
 
-### -field <b>RemovableDiskInfo</b>
+### -field RemovableDiskInfo
 
 <dd>
 <p>Describes a removable (nonfixed) disk.</p>
 <dl>
 
-### -field <b>Cylinders</b>
+### -field Cylinders
 
 <dd>
 <p>Specifies the number of cylinders on this disk. </p>
 </dd>
 
-### -field <b>MediaType</b>
+### -field MediaType
 
 <dd>
 <p>Specifies a <a href="storage.media_type">MEDIA_TYPE</a> or <a href="..\ntddstor\ne-ntddstor--storage-media-type.md">STORAGE_MEDIA_TYPE</a> value that indicates the type of removable disk. </p>
 </dd>
 
-### -field <b>TracksPerCylinder</b>
+### -field TracksPerCylinder
 
 <dd>
 <p>Specifies the number of tracks per cylinder.</p>
 </dd>
 
-### -field <b>SectorsPerTrack</b>
+### -field SectorsPerTrack
 
 <dd>
 <p>Specifies the number of sectors per track.</p>
 </dd>
 
-### -field <b>BytesPerSector</b>
+### -field BytesPerSector
 
 <dd>
 <p>Specifies the number of bytes per sector.</p>
 </dd>
 
-### -field <b>NumberMediaSides</b>
+### -field NumberMediaSides
 
 <dd>
 <p>Specifies the number of sides of the disk that can contain data: 1 for one-sided media or 2 for two-sided media.</p>
 </dd>
 
-### -field <b>MediaCharacteristics</b>
+### -field MediaCharacteristics
 
 <dd>
 <p>Specifies characteristics of the disk, indicated by MEDIA_<i>XXX</i> flags ORed together. For a list of these flags, see the <b>DeviceSpecific.DiskInfo.MediaCharacteristics</b> member of the <b>DeviceSpecific.DiskInfo</b> structure.</p>
@@ -210,54 +210,54 @@ typedef struct _DEVICE_MEDIA_INFO {
 </dl>
 </dd>
 
-### -field <b>TapeInfo</b>
+### -field TapeInfo
 
 <dd>
 <p>Describes a tape.</p>
 <dl>
 
-### -field <b>MediaType</b>
+### -field MediaType
 
 <dd>
 <p>Specifies a <a href="..\ntddstor\ne-ntddstor--storage-media-type.md">STORAGE_MEDIA_TYPE</a> value that indicates the type of tape described in this structure. </p>
 </dd>
 
-### -field <b>MediaCharacteristics</b>
+### -field MediaCharacteristics
 
 <dd>
 <p>Specifies characteristics of the tape, indicated by MEDIA_<i>XXX</i> flags ORed together. For a list of these flags, see the <b>DeviceSpecific.DiskInfo.MediaCharacteristics</b> member of the <b>DeviceSpecific.DiskInfo</b> structure.</p>
 </dd>
 
-### -field <b>CurrentBlockSize</b>
+### -field CurrentBlockSize
 
 <dd>
 <p>Specifies the current block size, in bytes.</p>
 </dd>
 
-### -field <b>BusType</b>
+### -field BusType
 
 <dd>
 <p>Specifies a value of type <a href="storage.storage_bus_type">STORAGE_BUS_TYPE</a> that indicates the bus type.</p>
 </dd>
 
-### -field <b>BusSpecificData</b>
+### -field BusSpecificData
 
 <dd>
 <dl>
 
-### -field <b>ScsiInformation</b>
+### -field ScsiInformation
 
 <dd>
 <p>Specifies bus-specific information from mode page data that describes the medium supported by the tape drive. Values for other bus types will be supplied in a later release.</p>
 <dl>
 
-### -field <b>MediumType</b>
+### -field MediumType
 
 <dd>
 <p>Specifies the SCSI-specific medium type.</p>
 </dd>
 
-### -field <b>DensityCode</b>
+### -field DensityCode
 
 <dd>
 <p>Specifies the SCSI-specific current operating density for read/write operations.</p>

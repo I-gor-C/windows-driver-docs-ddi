@@ -58,25 +58,25 @@ STDMETHOD GetOption(
 ## -parameters
 <dl>
 
-### -param <i>pDevmode</i> [in, optional]
+### -param pDevmode [in, optional]
 
 <dd>
 <p>A pointer to a <a href="display.devmodew">DEVMODEW</a>structure. If this pointer is provided, <b>IPrintCoreHelperPS::GetOption</b> should use the DEVMODEW structure that is pointed to by <i>pDevmode</i> instead of the default or current DEVMODEW structure. If this method is called from the plug-in provider or from <a href="print.iprintoemps_devmode">IPrintOemPS::DevMode</a>, this parameter is required. In most other situations, the parameter should be <b>NULL</b>. When the core driver sets <i>pDevmode</i> to <b>NULL</b>, it modifies its internal state rather than that of the passed-in DEVMODEW structure. This is required during operations such as full UI replacement, where the DEVMODEW structure returned by a DDI, such as <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a>, is being serviced by the core driver's UI module.</p>
 </dd>
 
-### -param <i>cbSize</i> [in]
+### -param cbSize [in]
 
 <dd>
 <p>The size, in bytes, of the DEVMODEW structure that is pointed to by the <i>pDevmode</i> parameter.</p>
 </dd>
 
-### -param <i>pszFeatureRequested</i> [in]
+### -param pszFeatureRequested [in]
 
 <dd>
 <p>A pointer to the ANSI string that contains the name of the feature as it appears in the PPD file.</p>
 </dd>
 
-### -param <i>ppszOption</i> [out]
+### -param ppszOption [out]
 
 <dd>
 <p>A pointer to a variable that contains the address of an ANSI string. When <b>IPrintCoreHelperPS::GetOption</b> returns, the string should contain the keyword for the currently selected option as it appears in the configuration file. The caller should not modify this string and should not free the memory that is associated with this string.</p>
@@ -101,7 +101,7 @@ STDMETHOD GetOption(
 ## -remarks
 <p><b>IPrintCoreHelperPS::GetOption</b> cannot be used for features that allow multiple options to be set simultaneously. </p>
 
-<p>Feature keywords are as defined in the PPD file. In addition, the Pscript5 driver supports several reserved keywords for options that are stored in its private <a href="display.devmodew">DEVMODEW</a>structure. For the list of Pscript5 features, see <a href="NULL">Keyword Mapping</a>. </p>
+<p>Feature keywords are as defined in the PPD file. In addition, the Pscript5 driver supports several reserved keywords for options that are stored in its private <a href="display.devmodew">DEVMODEW</a>structure. For the list of Pscript5 features, see <a href="https://msdn.microsoft.com/eb2cbe3c-b516-4db3-92ad-5eafd7181624">Keyword Mapping</a>. </p>
 
 <p>The caller should not free the string that is pointed to by <i>ppszOption</i> and should not modify the string in any way.</p>
 

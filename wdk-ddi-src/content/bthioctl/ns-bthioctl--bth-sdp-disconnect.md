@@ -56,7 +56,7 @@ typedef struct _BTH_SDP_DISCONNECT {
 ## -struct-fields
 <dl>
 
-### -field <b>hConnection</b>
+### -field hConnection
 
 <dd>
 <p>A handle for the SDP connection on the remote server to terminate. This should be a value returned

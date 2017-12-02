@@ -57,25 +57,25 @@ void KsDeviceRegisterAdapterObject(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> structure representing the AVStream device for which to register an adapter object.</p>
 </dd>
 
-### -param <i>AdapterObject</i> [in]
+### -param AdapterObject [in]
 
 <dd>
-<p>A pointer to the <a href="..\ntddk\ns-ntddk--dma-adapter.md">DMA_ADAPTER</a> structure returned by <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> that represents the DMA controller..</p>
+<p>A pointer to the <a href="..\wdm\ns-wdm--dma-adapter.md">DMA_ADAPTER</a> structure returned by <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> that represents the DMA controller..</p>
 </dd>
 
-### -param <i>MaxMappingByteCount</i> [in]
+### -param MaxMappingByteCount [in]
 
 <dd>
 <p>This parameter specifies the maximum number of bytes that the device can handle for a single mapping. Allows AVStream to automatically break up large chunks of contiguous physical memory into multiple scatter/gather elements for devices that impose a size limit on individual mappings in DMA transfers. <i>Breaks are not guaranteed to occur on page boundaries.</i></p>
 </dd>
 
-### -param <i>MappingTableStride</i> [in]
+### -param MappingTableStride [in]
 
 <dd>
 <p>This parameter specifies how many bytes each entry in the mapping table requires. This must be at least <b>sizeof</b> (<a href="..\ks\ns-ks--ksmapping.md">KSMAPPING</a>) and can be as large as necessary.</p>
@@ -89,9 +89,9 @@ void KsDeviceRegisterAdapterObject(
 ## -remarks
 <p>A minidriver that calls <b>KsDeviceRegisterAdapterObject</b> is responsible for previously acquiring the adapter object through <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a>. </p>
 
-<p>Also note that if the minidriver specifies the KSPIN_FLAG_GENERATE_MAPPINGS flag for any pin on any filter on the device, the minidriver must call <b>KsDeviceRegisterAdapterObject</b> before processing any data. More information about this flag can be found in the reference page for <a href="..\ks\ns-ks--kspin-descriptor-ex.md">KSPIN_DESCRIPTOR_EX</a>. Also see <a href="NULL">AVStream DMA Services</a>.</p><p class="note">In addition, as noted in the member description above, setting <i>MaxMappingsByteCount</i> does not guarantee that breaks will occur on page boundaries. If you require breaks on page boundaries, consider not specifying a limit on mapping sizes; instead, break the returned scatter/gather mappings into page-aligned chunks manually.</p>
+<p>Also note that if the minidriver specifies the KSPIN_FLAG_GENERATE_MAPPINGS flag for any pin on any filter on the device, the minidriver must call <b>KsDeviceRegisterAdapterObject</b> before processing any data. More information about this flag can be found in the reference page for <a href="..\ks\ns-ks--kspin-descriptor-ex.md">KSPIN_DESCRIPTOR_EX</a>. Also see <a href="https://msdn.microsoft.com/ba1c525b-26b0-4778-b58b-f4169cfb972e">AVStream DMA Services</a>.</p><p class="note">In addition, as noted in the member description above, setting <i>MaxMappingsByteCount</i> does not guarantee that breaks will occur on page boundaries. If you require breaks on page boundaries, consider not specifying a limit on mapping sizes; instead, break the returned scatter/gather mappings into page-aligned chunks manually.</p>
 
-<p>Also see <a href="NULL">Supporting DMA in 64-Bit AVStream Drivers</a>.</p>
+<p>Also see <a href="https://msdn.microsoft.com/1173a83f-8d9e-4678-bfb5-f2fb91e827be">Supporting DMA in 64-Bit AVStream Drivers</a>.</p>
 
 ## -requirements
 <table>

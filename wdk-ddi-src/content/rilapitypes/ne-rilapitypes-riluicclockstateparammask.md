@@ -7,7 +7,7 @@ old-location: netvista\riluicclockstateparammask_2.htm
 old-project: netvista
 ms.assetid: 88bdeb85-1ce8-43df-8cf1-4563d90a46ad
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILUICCLOCKSTATEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_UICCLOCKSTATE_LOCKSTATE"></a><a id="ril_param_uicclockstate_lockstate"></a><b>RIL_PARAM_UICCLOCKSTATE_LOCKSTATE</b>
+### -field RIL_PARAM_UICCLOCKSTATE_LOCKSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UICCLOCKSTATE_VERIFYATTEMPTSLEFT"></a><a id="ril_param_uicclockstate_verifyattemptsleft"></a><b>RIL_PARAM_UICCLOCKSTATE_VERIFYATTEMPTSLEFT</b>
+### -field RIL_PARAM_UICCLOCKSTATE_VERIFYATTEMPTSLEFT
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UICCLOCKSTATE_UNBLOCKATTEMPTSLEFT"></a><a id="ril_param_uicclockstate_unblockattemptsleft"></a><b>RIL_PARAM_UICCLOCKSTATE_UNBLOCKATTEMPTSLEFT</b>
+### -field RIL_PARAM_UICCLOCKSTATE_UNBLOCKATTEMPTSLEFT
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UICCLOCKSTATE_ALL"></a><a id="ril_param_uicclockstate_all"></a><b>RIL_PARAM_UICCLOCKSTATE_ALL</b>
+### -field RIL_PARAM_UICCLOCKSTATE_ALL
 
 <dd></dd>
 </dl>

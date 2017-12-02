@@ -56,7 +56,7 @@ PVOID MmGetSystemAddressForMdl(
 ## -parameters
 <dl>
 
-### -param <i>Mdl</i> [in]
+### -param Mdl [in]
 
 <dd>
 <p>Pointer to a buffer whose corresponding base virtual address is to be mapped. </p>

@@ -60,43 +60,43 @@ typedef struct _ISCSI_RedirectPortalInfo {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueConnectionId</b>
+### -field UniqueConnectionId
 
 <dd>
 <p>The connection identifier (ID) that the operating system and application software use to uniquely identify the connection. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in the UniqueConnectionId parameter. This value is not to be confused with the connection ID (CID).</p>
 </dd>
 
-### -field <b>OriginalIPAddr</b>
+### -field OriginalIPAddr
 
 <dd>
 <p>This is the original IP address given during login from which redirection is to be set, and the IP address is provided via the ISCSI_IP_Address structure.</p>
 </dd>
 
-### -field <b>OriginalPort</b>
+### -field OriginalPort
 
 <dd>
 <p>This is the original portals socket number given during login.</p>
 </dd>
 
-### -field <b>RedirectedIPAddr</b>
+### -field RedirectedIPAddr
 
 <dd>
 <p>This is the IP address to which traffic needs to be redirected. The IP address is provided via the ISCSI_IP_Address structure.</p>
 </dd>
 
-### -field <b>RedirectedPort</b>
+### -field RedirectedPort
 
 <dd>
 <p>This is the socket number for the redirected target portal.</p>
 </dd>
 
-### -field <b>Redirected</b>
+### -field Redirected
 
 <dd>
 <p>This indicates whether the login is redirected. If this value is <b>TRUE</b>, RedirectedIPAddr and RedirectedPort are valid.</p>
 </dd>
 
-### -field <b>TemporaryRedirect</b>
+### -field TemporaryRedirect
 
 <dd>
 <p>This value is <b>true</b> if redirection is temporary.</p>

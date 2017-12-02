@@ -55,7 +55,7 @@ VOID KeQuerySystemTimePrecise(
 ## -parameters
 <dl>
 
-### -param <i>CurrentTime</i> [out]
+### -param CurrentTime [out]
 
 <dd>
 <p>A pointer to a LARGE_INTEGER variable into which the routine writes the current system time.</p>
@@ -72,7 +72,7 @@ VOID KeQuerySystemTimePrecise(
 
 <p>To provide a system time value that is more accurate than that of <b>KeQuerySystemTime</b>, <b>KeQuerySystemTimePrecise</b> uses the system performance counter to measure the time elapsed since the last clock timer interrupt, and adds this time to the system clock time that it calculates from the clock timer count. The system time reported by <b>KeQuerySystemTimePrecise</b> is accurate to within a microsecond.</p>
 
-<p>On some hardware platforms, a <b>KeQuerySystemTimePrecise</b> call might be slower than a <b>KeQuerySystemTime</b> call. The reason is that <b>KeQuerySystemTimePrecise</b> reads the performance counter, which can introduce an additional delay. For more information, see <a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>.
+<p>On some hardware platforms, a <b>KeQuerySystemTimePrecise</b> call might be slower than a <b>KeQuerySystemTime</b> call. The reason is that <b>KeQuerySystemTimePrecise</b> reads the performance counter, which can introduce an additional delay. For more information, see <a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>.
 </p>
 
 <p>Call the <a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a> routine to determine the duration of a system clock tick.</p>
@@ -143,13 +143,13 @@ VOID KeQuerySystemTimePrecise(
 <a href="..\wdm\nf-wdm-exsystemtimetolocaltime.md">ExSystemTimeToLocalTime</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequerytickcount.md">KeQueryTickCount</a>
+<a href="..\wdm\nf-wdm-kequerytickcount.md">KeQueryTickCount</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a>

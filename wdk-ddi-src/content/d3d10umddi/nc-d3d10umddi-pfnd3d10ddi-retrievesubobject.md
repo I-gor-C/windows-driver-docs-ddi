@@ -62,7 +62,7 @@ HRESULT APIENTRY* RetrieveSubObject(D3D11_1)(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>A handle to the display device (graphics context).
@@ -70,7 +70,7 @@ HRESULT APIENTRY* RetrieveSubObject(D3D11_1)(
 </p>
 </dd>
 
-### -param <i>SubDeviceID</i> [in]
+### -param SubDeviceID [in]
 
 <dd>
 <p>The function table being retrieved, with the following possible values.</p>
@@ -108,25 +108,25 @@ HRESULT APIENTRY* RetrieveSubObject(D3D11_1)(
 <p> </p>
 </dd>
 
-### -param <i>ParamSize</i> [in]
+### -param ParamSize [in]
 
 <dd>
 <p>The size, in bytes, of an input parameter structure that is described by the <i>SubDeviceID</i> parameter.</p>
 </dd>
 
-### -param <i>pParams</i> [in]
+### -param pParams [in]
 
 <dd>
 <p>A pointer to an input parameter structure that is described by the <i>SubDeviceID</i> parameter.</p>
 </dd>
 
-### -param <i>OutputParamSize</i> [in]
+### -param OutputParamSize [in]
 
 <dd>
 <p>The size, in bytes, of an output parameter structure that is described by the <i>SubDeviceID</i> parameter.</p>
 </dd>
 
-### -param <i>pOutputParamsBuffer</i> [out]
+### -param pOutputParamsBuffer [out]
 
 <dd>
 <p>A pointer to an output parameter structure that is described by the <i>SubDeviceID</i> parameter.</p>

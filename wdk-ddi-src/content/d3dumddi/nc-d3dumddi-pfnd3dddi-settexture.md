@@ -59,19 +59,19 @@ __checkReturn HRESULT APIENTRY SetTexture(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>Stage</i> [in]
+### -param Stage [in]
 
 <dd>
 <p> The stage in a multiple-texture group that indicates where to insert the texture that is specified by the <i>hTexture</i> handle. This parameter can be an integer in the range from 0 through 7, with the highest-numbered texture being closest to the frame buffer.</p>
 </dd>
 
-### -param <i>hTexture</i> [in]
+### -param hTexture [in]
 
 <dd>
 <p> A handle to the texture to insert.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilgetdriverversionparams.htm
 old-project: netvista
 ms.assetid: 42167f2f-0bd5-452c-9b41-d18efac28a33
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILGETDRIVERVERSIONPARAMS, RILGETDRIVERVERSIONPARAMS, *LPRILGETDRIVERVERSIONPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILGETDRIVERVERSIONPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwMinVersion</b>
+### -field dwMinVersion
 
 <dd></dd>
 
-### -field <b>dwMaxVersion</b>
+### -field dwMaxVersion
 
 <dd></dd>
 </dl>

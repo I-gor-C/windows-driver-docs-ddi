@@ -55,13 +55,13 @@ typedef struct _D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology to set a private-format attribute on (that is, the identifier of the primary surface to set a private-format attribute on). </p>
 </dd>
 
-### -field <b>PrivateDriverFormatAttribute</b>
+### -field PrivateDriverFormatAttribute
 
 <dd>
 <p>[in] A UINT value that specifies the private-format attribute to set for the video present source that the <b>VidPnSourceId</b> member specifies.</p>

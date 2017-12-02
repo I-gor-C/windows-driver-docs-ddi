@@ -54,7 +54,7 @@ DWORD GetVersion(
 ## -parameters
 <dl>
 
-### -param <i>None</i> 
+### -param None 
 
 <dd></dd>
 </dl>
@@ -85,7 +85,7 @@ DWORD GetVersion(
 
 <p><b>kVersionWin98SE_QFE2</b></p>
 
-<p>Windows 98 SE + Hot-Fix Package 269601 (See <a href="NULL">Additional Requirements for Windows 98</a>.)</p>
+<p>Windows 98 SE + Hot-Fix Package 269601 (See <a href="https://msdn.microsoft.com/8fcdc565-9d8a-45d9-9dc2-0420cbffc4f5">Additional Requirements for Windows 98</a>.)</p>
 
 <p><b>kVersionWin2K_SP2</b></p>
 
@@ -117,15 +117,15 @@ DWORD GetVersion(
 
 <p><b>kVersionWin2K_UAAQFE</b></p>
 
-<p>Windows 2000 + hot-fix package with IUnregister<i>Xxx</i> support (See <a href="NULL">Dynamic Audio Subdevices</a>.)</p>
+<p>Windows 2000 + hot-fix package with IUnregister<i>Xxx</i> support (See <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890-aae1-5ecf58f2e22a">Dynamic Audio Subdevices</a>.)</p>
 
 <p><b>kVersionWinXP_UAAQFE</b></p>
 
-<p>Windows XP + hot-fix package with IUnregister<i>Xxx</i> support (See <a href="NULL">Dynamic Audio Subdevices</a>.)</p>
+<p>Windows XP + hot-fix package with IUnregister<i>Xxx</i> support (See <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890-aae1-5ecf58f2e22a">Dynamic Audio Subdevices</a>.)</p>
 
 <p><b>kVersionWinServer2003_UAAQFE</b></p>
 
-<p>Windows Server 2003 + hot-fix package with IUnregister<i>Xxx</i> support (See <a href="NULL">Dynamic Audio Subdevices</a>.)</p>
+<p>Windows Server 2003 + hot-fix package with IUnregister<i>Xxx</i> support (See <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890-aae1-5ecf58f2e22a">Dynamic Audio Subdevices</a>.)</p>
 
 <p>The version numbers in the preceding table are defined in header file portcls.h. Note that portcls.h defines version numbers both for Windows versions that do and do not support the <b>IPortClsVersion</b> interface. Both types of version number can be useful. A miniport driver typically contains a proprietary routine that determines the Windows version and can return any of the version numbers in the preceding table. When executed on a platform that does not support <b>IPortClsVersion</b>, this routine needs to use other software tests to determine the Windows version. These tests typically rely on the <a href="..\wdm\nf-wdm-ioiswdmversionavailable.md">IoIsWdmVersionAvailable</a> function. For a code example of such a routine, see the sb16 sample audio driver in the Windows Driver Kit (WDK).</p>
 

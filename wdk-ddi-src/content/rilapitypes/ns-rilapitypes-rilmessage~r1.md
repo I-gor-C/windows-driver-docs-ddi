@@ -7,7 +7,7 @@ old-location: netvista\rilmessage_2.htm
 old-project: netvista
 ms.assetid: 731ae115-2394-4651-9b79-6d640d07a328
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMESSAGE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -84,123 +84,123 @@ typedef struct _RILMESSAGE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>raSvcCtrAddress</b>
+### -field raSvcCtrAddress
 
 <dd></dd>
 
-### -field <b>dwType</b>
+### -field dwType
 
 <dd></dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd></dd>
 
-### -field <b>RILMSGUNION</b>
+### -field RILMSGUNION
 
 <dd></dd>
 
-### -field <b>msgUnion</b>
+### -field msgUnion
 
 <dd></dd>
 
-### -field <b>switch_is</b>
+### -field switch_is
 
 <dd></dd>
 
-### -field <b>dwType</b>
+### -field dwType
 
 <dd></dd>
 
-### -field <b>unMsgInDeliver</b>
+### -field unMsgInDeliver
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_MSGTYPE_IN_DELIVER</b>
+### -field RIL_MSGTYPE_IN_DELIVER
 
 <dd></dd>
 
-### -field <b>unMsgInStatus</b>
+### -field unMsgInStatus
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_MSGTYPE_IN_STATUS</b>
+### -field RIL_MSGTYPE_IN_STATUS
 
 <dd></dd>
 
-### -field <b>unMsgOutSubmit</b>
+### -field unMsgOutSubmit
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_MSGTYPE_OUT_SUBMIT</b>
+### -field RIL_MSGTYPE_OUT_SUBMIT
 
 <dd></dd>
 
-### -field <b>unMsgBcGeneral</b>
+### -field unMsgBcGeneral
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_MSGTYPE_BC_GENERAL</b>
+### -field RIL_MSGTYPE_BC_GENERAL
 
 <dd></dd>
 
-### -field <b>unMsgIS637InStatus</b>
+### -field unMsgIS637InStatus
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_MSGTYPE_IN_IS637STATUS</b>
+### -field RIL_MSGTYPE_IN_IS637STATUS
 
 <dd></dd>
 
-### -field <b>unMsgCDMAInDeliver</b>
+### -field unMsgCDMAInDeliver
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_MSGTYPE_IN_CDMADELIVER</b>
+### -field RIL_MSGTYPE_IN_CDMADELIVER
 
 <dd></dd>
 
-### -field <b>unMsgCDMAOutSubmit</b>
+### -field unMsgCDMAOutSubmit
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_MSGTYPE_OUT_CDMASUBMIT</b>
+### -field RIL_MSGTYPE_OUT_CDMASUBMIT
 
 <dd></dd>
 </dl>

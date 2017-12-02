@@ -57,19 +57,19 @@ typedef struct _CM_SCSI_DEVICE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of this structure.</p>
 </dd>
 
-### -field <b>Revision</b>
+### -field Revision
 
 <dd>
 <p>The revision for this structure.</p>
 </dd>
 
-### -field <b>HostIdentifier</b>
+### -field HostIdentifier
 
 <dd>
 <p>The SCSI bus identifier used by the ARC firmware. </p>

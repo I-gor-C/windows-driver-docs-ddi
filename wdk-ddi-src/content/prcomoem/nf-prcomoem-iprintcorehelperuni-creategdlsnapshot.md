@@ -58,25 +58,25 @@ HRESULT CreateGDLSnapshot(
 ## -parameters
 <dl>
 
-### -param <i>pDevmode</i> [in]
+### -param pDevmode [in]
 
 <dd>
 <p>A pointer to a <a href="display.devmodew">DEVMODEW</a> structure. If this pointer is provided, <code>IPrintCoreHelperUni::CreateGDLSnapshot</code>  should use the DEVMODEW structure that is pointed to by <i>pDevmode</i> instead of the default or current DEVMODEW structure. If this method is called from the plug-in provider, there is no default DEVMODEW structure and the <i>pDevmode</i> parameter is required.</p>
 </dd>
 
-### -param <i>cbSize</i> [in]
+### -param cbSize [in]
 
 <dd>
 <p>The size, in bytes, of the DEVMODEW structure that is pointed to by the <i>pDevmode</i> parameter. </p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>Reserved for system use. This parameter must be set to zero.</p>
 </dd>
 
-### -param <i>ppSnapshotStream</i> [out]
+### -param ppSnapshotStream [out]
 
 <dd>
 <p>A pointer to a stream that supplies the XML version of the GDL snapshot.</p>

@@ -58,19 +58,19 @@ typedef union {
 ## -struct-fields
 <dl>
 
-### -field <b>FrameNumber</b>
+### -field FrameNumber
 
 <dd>
 <p>The number of the encoded Wi-Fi frame.</p>
 </dd>
 
-### -field <b>PartNumber</b>
+### -field PartNumber
 
 <dd>
 <p>The frame part number.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>Holds a 64-bit value that identifies the encode chunk.</p>

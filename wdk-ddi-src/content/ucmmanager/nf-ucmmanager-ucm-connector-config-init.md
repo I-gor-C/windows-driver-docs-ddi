@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="buses.ucm_connector_config">UCM_CONNECTOR_CONFIG</a> structure.</p>
+<p>Initializes a <a href="..\ucmmanager\ns-ucmmanager--ucm-connector-config.md">UCM_CONNECTOR_CONFIG</a> structure.</p>
 
 
 ## -syntax
@@ -56,13 +56,13 @@ FORCEINLINE void UCM_CONNECTOR_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i> Config</i> [out]
+### -param  Config [out]
 
 <dd>
-<p>Pointer to a caller-allocated <a href="buses.ucm_connector_config">UCM_CONNECTOR_CONFIG</a> structure to initialize.</p>
+<p>Pointer to a caller-allocated <a href="..\ucmmanager\ns-ucmmanager--ucm-connector-config.md">UCM_CONNECTOR_CONFIG</a> structure to initialize.</p>
 </dd>
 
-### -param <i> ConnectorId</i> [in]
+### -param  ConnectorId [in]
 
 <dd>
 <p>The identifier to assign to the connector object. If there is only one connector, pass 0.</p>
@@ -124,7 +124,7 @@ FORCEINLINE void UCM_CONNECTOR_CONFIG_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucm_manager_config">UCM_MANAGER_CONFIG</a>
+<a href="..\ucmmanager\ns-ucmmanager--ucm-manager-config.md">UCM_MANAGER_CONFIG</a>
 </dt>
 </dl>
 <p> </p>

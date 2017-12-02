@@ -56,7 +56,7 @@ PSDP_NODE SdpCreateNodeAlternative(
 ## -parameters
 <dl>
 
-### -param <i>tag</i> [in]
+### -param tag [in]
 
 <dd>
 <p>A profile driver defined tag to associate with the node.</p>

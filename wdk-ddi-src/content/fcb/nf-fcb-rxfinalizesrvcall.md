@@ -7,7 +7,7 @@ old-location: ifsk\rxfinalizesrvcall.htm
 old-project: ifsk
 ms.assetid: 293bb629-ac31-4ae3-bba3-b06812e9e6cb
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxFinalizeSrvCall
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ BOOLEAN RxFinalizeSrvCall(
 ## -parameters
 <dl>
 
-### -param <i>ThisSrvCall</i> [out]
+### -param ThisSrvCall [out]
 
 <dd>
 <p>A pointer to the SRV_CALL structure to finalize.</p>
 </dd>
 
-### -param <i>ForceFinalize</i> [in]
+### -param ForceFinalize [in]
 
 <dd>
 <p>The value indicating whether the finalization should be forced, regardless of the reference count. </p>
@@ -179,4 +179,4 @@ BOOLEAN RxFinalizeSrvCall(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxFinalizeSrvCall function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxFinalizeSrvCall function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

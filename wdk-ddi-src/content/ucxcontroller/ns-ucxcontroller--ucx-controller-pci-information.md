@@ -60,37 +60,37 @@ typedef struct _UCX_CONTROLLER_PCI_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>VendorId</b>
+### -field VendorId
 
 <dd>
 <p>The vendor ID for the PCI USB controller.</p>
 </dd>
 
-### -field <b>DeviceId</b>
+### -field DeviceId
 
 <dd>
 <p>The device ID for the PCI USB controller.</p>
 </dd>
 
-### -field <b>RevisionId</b>
+### -field RevisionId
 
 <dd>
 <p>The revision ID for the PCI USB controller.</p>
 </dd>
 
-### -field <b>BusNumber</b>
+### -field BusNumber
 
 <dd>
 <p>Specifies the bus number that identifies the bus instance that a device instance is attached to.</p>
 </dd>
 
-### -field <b>DeviceNumber</b>
+### -field DeviceNumber
 
 <dd>
 <p>Specifies the device number that is assigned to the logical PCI slot. </p>
 </dd>
 
-### -field <b>FunctionNumber</b>
+### -field FunctionNumber
 
 <dd>
 <p>Specifies the specific function on the device that is located in the logical PCI slot. </p>
@@ -117,13 +117,13 @@ typedef struct _UCX_CONTROLLER_PCI_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._ucx_controller_config">UCX_CONTROLLER_CONFIG</a>
+<a href="..\ucxcontroller\ns-ucxcontroller--ucx-controller-config.md">UCX_CONTROLLER_CONFIG</a>
 </dt>
 <dt>
-<a href="buses.ucx_controller_parent_bus_type">UCX_CONTROLLER_PARENT_BUS_TYPE</a>
+<a href="..\ucxcontroller\ne-ucxcontroller--ucx-controller-parent-bus-type.md">UCX_CONTROLLER_PARENT_BUS_TYPE</a>
 </dt>
 <dt>
-<a href="buses._ucx_controller_config_set_pci_info">UCX_CONTROLLER_CONFIG_SET_PCI_INFO</a>
+<a href="..\ucxcontroller\nf-ucxcontroller-ucx-controller-config-set-pci-info.md">UCX_CONTROLLER_CONFIG_SET_PCI_INFO</a>
 </dt>
 </dl>
 <p> </p>

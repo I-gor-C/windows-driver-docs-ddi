@@ -7,7 +7,7 @@ old-location: wdf\iwdfioqueue.htm
 old-project: wdf
 ms.assetid: 9a3ec86a-6a1d-4c65-a65a-7cb85bbd1ab8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

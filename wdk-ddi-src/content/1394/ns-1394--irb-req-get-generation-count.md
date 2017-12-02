@@ -7,7 +7,7 @@ old-location: ieee\irb_req_get_generation_count.htm
 old-project: IEEE
 ms.assetid: C744C48E-476A-46F8-97BE-B3484E6FEF27
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_GET_GENERATION_COUNT, IRB_REQ_GET_GENERATION_COUNT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,7 +53,7 @@ typedef struct _IRB_REQ_GET_GENERATION_COUNT {
 ## -struct-fields
 <dl>
 
-### -field <b>GenerationCount</b>
+### -field GenerationCount
 
 <dd>
 <p>Specifies the current generation count.</p>

@@ -58,13 +58,13 @@ HRESULT pfnPresentCbDXGI(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to a display device (graphics context). </p>
 </dd>
 
-### -param <i>pPresentData</i> [in]
+### -param pPresentData [in]
 
 <dd>
 <p> A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgiddicb-present.md">DXGIDDICB_PRESENT</a> structure that describes the source and destination allocations that content is copied from and to. </p>

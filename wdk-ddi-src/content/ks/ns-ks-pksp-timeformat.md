@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure.</p>
 </dd>
 
-### -field <b>SourceFormat</b>
+### -field SourceFormat
 
 <dd>
 <p>Pointer to a GUID that specifies the format to convert. If <b>NULL</b>, the current format is used.</p>
 </dd>
 
-### -field <b>TargetFormat</b>
+### -field TargetFormat
 
 <dd>
 <p>Pointer to a GUID that specifies the target format. If <b>NULL</b>, the current format is used.</p>
 </dd>
 
-### -field <b>Time</b>
+### -field Time
 
 <dd>
 <p>Specifies the time value to convert.</p>

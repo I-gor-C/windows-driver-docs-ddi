@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY CreateResource(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context) that is used to create the resource.</p>
 </dd>
 
-### -param <i>pResource</i> [in, out]
+### -param pResource [in, out]
 
 <dd>
 <p> A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt--d3dddiarg-createresource.md">D3DDDIARG_CREATERESOURCE</a> structure that describes the resource that is created.</p>

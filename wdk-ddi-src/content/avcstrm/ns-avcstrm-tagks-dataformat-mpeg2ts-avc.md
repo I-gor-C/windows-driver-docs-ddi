@@ -55,13 +55,13 @@ typedef struct tagKS_DATAFORMAT_MPEG2TS_AVC {
 ## -struct-fields
 <dl>
 
-### -field <b>DataFormat</b>
+### -field DataFormat
 
 <dd>
 <p>Specifies the data format of the MPEG2 connection.</p>
 </dd>
 
-### -field <b>ConnectInfo</b>
+### -field ConnectInfo
 
 <dd>
 <p>Specifies the AV/C connection information.</p>

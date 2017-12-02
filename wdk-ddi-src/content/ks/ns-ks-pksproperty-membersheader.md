@@ -57,7 +57,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>MembersFlags</b>
+### -field MembersFlags
 
 <dd>
 <p>Specifies the type of entries in the members list. The size of valid values is determined by value type, as specified in the <b>PropTypeSet</b> member of the <a href="stream.ksproperty_description">KSPROPERTY_DESCRIPTION</a> structure. The number of range pairs is determined by <b>MembersCount</b>. This should be one of the values listed in the following table.</p>
@@ -103,19 +103,19 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>MembersSize</b>
+### -field MembersSize
 
 <dd>
 <p>Specifies the size, in bytes, of an individual array element.</p>
 </dd>
 
-### -field <b>MembersCount</b>
+### -field MembersCount
 
 <dd>
 <p>Specifies the number of entries in the members array.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies the type of entries in the members list. The size of valid values is determined by value type, as specified in the <b>PropTypeSet</b> member of the <a href="stream.ksproperty_description">KSPROPERTY_DESCRIPTION</a> structure. The number of range pairs is determined by <b>MembersCount</b>. This should be one of the values listed in the following table.</p>

@@ -7,7 +7,7 @@ old-location: netvista\wdi_roam_trigger.htm
 old-project: netvista
 ms.assetid: 7AFA084B-5EFC-429B-B6D1-F4E484B16921
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ typedef enum _WDI_ROAM_TRIGGER {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_ROAM_TRIGGER_OTHER"></a><a id="wdi_roam_trigger_other"></a><b>WDI_ROAM_TRIGGER_OTHER</b>
+### -field WDI_ROAM_TRIGGER_OTHER
 
 <dd>
 <p>None.</p>
 </dd>
 
-### -field <a id="WDI_ROAM_TRIGGER_CRITICAL_BSS_TRANSITION_REQUEST"></a><a id="wdi_roam_trigger_critical_bss_transition_request"></a><b>WDI_ROAM_TRIGGER_CRITICAL_BSS_TRANSITION_REQUEST</b>
+### -field WDI_ROAM_TRIGGER_CRITICAL_BSS_TRANSITION_REQUEST
 
 <dd>
 <p>This value is for roams due to a BSS Transition Request by the AP with the Disassociation Imminent bit set.</p>

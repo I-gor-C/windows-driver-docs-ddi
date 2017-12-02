@@ -7,7 +7,7 @@ old-location: netvista\rilgsmkind.htm
 old-project: netvista
 ms.assetid: ad88382b-bfb0-46c4-9db7-9adb1ee074a4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILGSMKIND {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_GSMKIND_GPRS"></a><a id="ril_gsmkind_gprs"></a><b>RIL_GSMKIND_GPRS</b>
+### -field RIL_GSMKIND_GPRS
 
 <dd></dd>
 
-### -field <a id="RIL_GSMKIND_EDGE"></a><a id="ril_gsmkind_edge"></a><b>RIL_GSMKIND_EDGE</b>
+### -field RIL_GSMKIND_EDGE
 
 <dd></dd>
 
-### -field <a id="RIL_GSMKIND_MAX"></a><a id="ril_gsmkind_max"></a><b>RIL_GSMKIND_MAX</b>
+### -field RIL_GSMKIND_MAX
 
 <dd></dd>
 </dl>

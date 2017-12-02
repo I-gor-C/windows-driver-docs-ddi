@@ -7,7 +7,7 @@ old-location: ifsk\txn_parameter_block.htm
 old-project: ifsk
 ms.assetid: 973f440a-ba17-466a-a9f4-f21c07e854d8
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: TXN_PARAMETER_BLOCK, TXN_PARAMETER_BLOCK, *PTXN_PARAMETER_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef struct _TXN_PARAMETER_BLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The size, in bytes, of the TXN_PARAMETER_BLOCK structure. </p>
 </dd>
 
-### -field <b>TxFsContext</b>
+### -field TxFsContext
 
 <dd>
 <p>The miniversion ID for the file. </p>
 </dd>
 
-### -field <b>TransactionObject</b>
+### -field TransactionObject
 
 <dd>
 <p>An opaque pointer to the transaction object for the transaction. </p>
@@ -122,4 +122,4 @@ typedef struct _TXN_PARAMETER_BLOCK {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TXN_PARAMETER_BLOCK structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TXN_PARAMETER_BLOCK structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

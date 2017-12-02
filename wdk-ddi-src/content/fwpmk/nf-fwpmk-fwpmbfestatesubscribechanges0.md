@@ -7,7 +7,7 @@ old-location: netvista\fwpmbfestatesubscribechanges0.htm
 old-project: netvista
 ms.assetid: 375af8a1-9e05-4830-9074-6313b4e082d9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpmBfeStateSubscribeChanges0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ NTSTATUS NTAPI FwpmBfeStateSubscribeChanges0(
 ## -parameters
 <dl>
 
-### -param <i>deviceObject</i> [in, out]
+### -param deviceObject [in, out]
 
 <dd>
 <p>A pointer to a device object that was previously created by the callout driver. For more
@@ -67,7 +67,7 @@ NTSTATUS NTAPI FwpmBfeStateSubscribeChanges0(
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff542862">Creating a Device Object</a>.</p>
 </dd>
 
-### -param <i>callback</i> [in]
+### -param callback [in]
 
 <dd>
 <p>A pointer to a callout driver-provided service state change callback function. The filter engine
@@ -91,7 +91,7 @@ callback(
 <p></p>
 <dl>
 
-### -param <a id="Context"></a><a id="context"></a><a id="CONTEXT"></a><i>Context</i>
+### -param Context
 
 <dd>
 <p>The pointer that was passed in the 
@@ -99,7 +99,7 @@ callback(
        <b>FwpmBfeStateSubscribeChanges0</b> function.</p>
 </dd>
 
-### -param <a id="newState"></a><a id="newstate"></a><a id="NEWSTATE"></a><i>newState</i>
+### -param newState
 
 <dd>
 <p>The new state of the filter engine. This parameter contains one of the following values:
@@ -107,25 +107,25 @@ callback(
 <p></p>
 <dl>
 
-### -param <a id="FWPM_SERVICE_STOPPED"></a><a id="fwpm_service_stopped"></a>FWPM_SERVICE_STOPPED
+### -param FWPM_SERVICE_STOPPED
 
 <dd>
 <p>The filter engine is not running.</p>
 </dd>
 
-### -param <a id="FWPM_SERVICE_START_PENDING"></a><a id="fwpm_service_start_pending"></a>FWPM_SERVICE_START_PENDING
+### -param FWPM_SERVICE_START_PENDING
 
 <dd>
 <p>The filter engine is starting.</p>
 </dd>
 
-### -param <a id="FWPM_SERVICE_STOP_PENDING"></a><a id="fwpm_service_stop_pending"></a>FWPM_SERVICE_STOP_PENDING
+### -param FWPM_SERVICE_STOP_PENDING
 
 <dd>
 <p>The filter engine is stopping.</p>
 </dd>
 
-### -param <a id="FWPM_SERVICE_RUNNING"></a><a id="fwpm_service_running"></a>FWPM_SERVICE_RUNNING
+### -param FWPM_SERVICE_RUNNING
 
 <dd>
 <p>The filter engine is running.</p>
@@ -135,7 +135,7 @@ callback(
 </dl>
 </dd>
 
-### -param <i>context</i> [in, optional]
+### -param context [in, optional]
 
 <dd>
 <p>A pointer to a callout driver-provided context that is passed to the callback function specified
@@ -143,7 +143,7 @@ callback(
      <i>Callback</i> parameter.</p>
 </dd>
 
-### -param <i>changeHandle</i> [out]
+### -param changeHandle [out]
 
 <dd>
 <p>A pointer to a variable that receives a handle that is associated with the registration of the
@@ -247,4 +247,4 @@ callback(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmBfeStateSubscribeChanges0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmBfeStateSubscribeChanges0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

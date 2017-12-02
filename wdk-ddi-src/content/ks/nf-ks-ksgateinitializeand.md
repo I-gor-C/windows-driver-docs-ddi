@@ -55,13 +55,13 @@ void __inline KsGateInitializeAnd(
 ## -parameters
 <dl>
 
-### -param <i>AndGate</i> [in]
+### -param AndGate [in]
 
 <dd>
 <p>A pointer to the KSGATE structure to initialize as a new AND gate.</p>
 </dd>
 
-### -param <i>NextOrGate</i> [in, optional]
+### -param NextOrGate [in, optional]
 
 <dd>
 <p>A pointer to an existing KSGATE structure to which <i>AndGate</i> attaches. This parameter should be an OR gate and is optional.</p>
@@ -72,7 +72,7 @@ void __inline KsGateInitializeAnd(
 <p>None</p>
 
 ## -remarks
-<p>The next gate (following <i>AndGate</i>) must be an OR gate, whether it is specified in this call or later. For more information, see <a href="NULL">Flow Control Gates in AVStream</a>.</p>
+<p>The next gate (following <i>AndGate</i>) must be an OR gate, whether it is specified in this call or later. For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.</p>
 
 <p><b>KsGateInitializeAnd</b> is an inline call to <a href="..\ks\nf-ks-ksgateinitialize.md">KsGateInitialize</a>.</p>
 

@@ -7,7 +7,7 @@ old-location: image\istidevicecontrol_getmydeviceportname.htm
 old-project: image
 ms.assetid: f400ab05-aea9-4154-a725-5b23a6dc06b6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDeviceControl, GetMyDevicePortName, IStiDeviceControl::GetMyDevicePortName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ HRESULT GetMyDevicePortName(
 ## -parameters
 <dl>
 
-### -param <i>lpszDevicePath</i> 
+### -param lpszDevicePath 
 
 <dd>
 <p>Caller-supplied pointer to a buffer to receive the device's port name.</p>
 </dd>
 
-### -param <i>cwDevicePathSize</i> 
+### -param cwDevicePathSize 
 
 <dd>
 <p>Caller-supplied number of characters (of type TCHAR) in the buffer pointed to by <i>lpszDevicePath</i>.</p>

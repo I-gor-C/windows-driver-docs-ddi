@@ -55,13 +55,13 @@ typedef struct _GetFC3MgmtInfo_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains a value associated with the WMI class qualifier <a href="storage.hba_status">HBA_STATUS</a> that indicates the result of an HBA query operation. </p>
 </dd>
 
-### -field <b>MgmtInfo</b>
+### -field MgmtInfo
 
 <dd>
 <p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbafc3mgmtinfo.md">HBAFC3MgmtInfo</a> that reports FC3 management information. </p>

@@ -60,31 +60,31 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Mute</b>
+### -field Mute
 
 <dd>
 <p>Specifies whether the data path from the input channel to the output channel is muted (not mixed). A value of <b>TRUE</b> indicates that the data path is muted.</p>
 </dd>
 
-### -field <b>Minimum</b>
+### -field Minimum
 
 <dd>
 <p>Specifies the minimum mix level for the data path from the input channel to the output channel. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>Maximum</b>
+### -field Maximum
 
 <dd>
 <p>Specifies the maximum mix level for the data path from the input channel to the output channel. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>Reset</b>
+### -field Reset
 
 <dd>
 <p><b>Reset</b> is a misnomer. This member should have been called Resolution instead. It specifies the resolution of the mix level for the data path from the input channel to the output channel. Resolution values use the following scale: a range from 0 to +2147483647, where 0 is no control and any other number is the number of steps between actual hardware settings in the range between <b>Minimum</b> and <b>Maximum</b>.</p>
 </dd>
 
-### -field <b>Resolution</b>
+### -field Resolution
 
 <dd></dd>
 </dl>

@@ -55,7 +55,7 @@ VOID ExConvertExclusiveToSharedLite(
 ## -parameters
 <dl>
 
-### -param <i>Resource</i> [in, out]
+### -param Resource [in, out]
 
 <dd>
 <p>A pointer to the resource for which the access should be converted.</p>

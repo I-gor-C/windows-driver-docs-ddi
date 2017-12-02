@@ -57,19 +57,19 @@ HANDLE GdiGetSpoolFileHandle(
 ## -parameters
 <dl>
 
-### -param <i>pwszPrinterName</i> 
+### -param pwszPrinterName 
 
 <dd>
 <p>Caller-supplied pointer to a string representing the name of the target printer. See the following Remarks section.</p>
 </dd>
 
-### -param <i>pDevmode</i> 
+### -param pDevmode 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure. See the following Remarks section.</p>
 </dd>
 
-### -param <i>pwszDocName</i> 
+### -param pwszDocName 
 
 <dd>
 <p>Caller-supplied pointer to the print job's document name. See the following Remarks section.</p>
@@ -98,7 +98,7 @@ HANDLE GdiGetSpoolFileHandle(
 
 <p>A print processor must call the <b>GdiGetSpoolFileHandle</b> function before calling any other GDI printing functions, because the returned handle must be passed to the other functions. The function calls OpenPrinter to open a connection to the printer, and CreateDC to create a device context for drawing. The print processor can obtain the device context's handle by calling <a href="..\winppi\nf-winppi-gdigetdc.md">GdiGetDC</a>.</p>
 
-<p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.</p>
 
 ## -requirements
 <table>

@@ -7,7 +7,7 @@ old-location: netvista\rilemergencynumberparammask_2.htm
 old-project: netvista
 ms.assetid: a59daf60-43d9-4fe4-af72-dc031f259133
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILEMERGENCYNUMBERPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_ENUM_UICC"></a><a id="ril_param_enum_uicc"></a><b>RIL_PARAM_ENUM_UICC</b>
+### -field RIL_PARAM_ENUM_UICC
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_ENUM_CATEGORY"></a><a id="ril_param_enum_category"></a><b>RIL_PARAM_ENUM_CATEGORY</b>
+### -field RIL_PARAM_ENUM_CATEGORY
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_ENUM_NUMBER"></a><a id="ril_param_enum_number"></a><b>RIL_PARAM_ENUM_NUMBER</b>
+### -field RIL_PARAM_ENUM_NUMBER
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_ENUM_ALL"></a><a id="ril_param_enum_all"></a><b>RIL_PARAM_ENUM_ALL</b>
+### -field RIL_PARAM_ENUM_ALL
 
 <dd></dd>
 </dl>

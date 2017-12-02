@@ -60,43 +60,43 @@ void _inline KsFilterGenerateEvents(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure on which to generate events. </p>
 </dd>
 
-### -param <i>EventSet</i> [in, optional]
+### -param EventSet [in, optional]
 
 <dd>
 <p>A pointer to the event set GUID to match for determination of which events to generate. If this parameter is <b>NULL</b>, the event set GUID is not taken into account for determining matching events.</p>
 </dd>
 
-### -param <i>EventId</i> [in]
+### -param EventId [in]
 
 <dd>
 <p>The event ID to match for determining which events to generate.</p>
 </dd>
 
-### -param <i>DataSize</i> [in]
+### -param DataSize [in]
 
 <dd>
 <p>The size of <i>Data</i> in bytes.</p>
 </dd>
 
-### -param <i>Data</i> [in]
+### -param Data [in]
 
 <dd>
 <p>A pointer to a data buffer. Specify if generating a data event.</p>
 </dd>
 
-### -param <i>CallBack</i> [in, optional]
+### -param CallBack [in, optional]
 
 <dd>
 <p>A pointer to a caller-specified function that is called to determine whether a given event should be generated. If this is <b>NULL</b>, no callback verification is performed to determine whether an event should be generated (only <i>EventSet </i>and <i>EventId</i> are used). For more information, see the Remarks section below.</p>
 </dd>
 
-### -param <i>CallBackContext</i> [in, optional]
+### -param CallBackContext [in, optional]
 
 <dd>
 <p>An optional pointer to a caller-specified context that is passed to the callback function <i>CallBack</i>. For more information, see the Remarks section below.</p>
@@ -123,7 +123,7 @@ void _inline KsFilterGenerateEvents(
 
 <p>AVStream passes the contents of the <b>KsFilterGenerateEvents</b> routine's parameter <i>CallBackContext</i> in this callback's <i>Context</i> parameter. <i>EventEntry</i> is a pointer to a <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a> structure that specifies the event that would be generated. The callback function should return <b>TRUE</b> if this event should be generated.</p>
 
-<p>For more information, see <a href="NULL">Event Handling in AVStream</a> and <a href="NULL">KS Events</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/7add2055-8d3f-432d-8aa1-44459ac197dd">Event Handling in AVStream</a> and <a href="https://msdn.microsoft.com/3eaa1d65-8417-4a07-b358-823394baec9b">KS Events</a>. </p>
 
 ## -requirements
 <table>

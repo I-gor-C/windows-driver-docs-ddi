@@ -59,25 +59,25 @@ typedef struct _USB_NODE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeType</b>
+### -field NodeType
 
 <dd>
 <p>A <a href="..\usbioctl\ne-usbioctl--usb-hub-node.md">USB_HUB_NODE</a> enumerator that indicates whether the parent device is a hub or a non-hub composite device.</p>
 </dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <p>The members of the <b>u</b> union are as follows:</p>
 <dl>
 
-### -field <b>HubInformation</b>
+### -field HubInformation
 
 <dd>
 <p>A <a href="..\usbioctl\ns-usbioctl--usb-hub-information.md">USB_HUB_INFORMATION</a> structure that contains information about a parent hub device.</p>
 </dd>
 
-### -field <b>MiParentInformation</b>
+### -field MiParentInformation
 
 <dd>
 <p>A <a href="..\usbioctl\ns-usbioctl--usb-mi-parent-information.md">USB_MI_PARENT_INFORMATION</a> structure that contains information about a parent non-hub, composite device.</p>

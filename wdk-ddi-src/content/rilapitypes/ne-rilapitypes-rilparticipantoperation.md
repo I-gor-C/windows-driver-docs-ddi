@@ -7,7 +7,7 @@ old-location: netvista\rilparticipantoperation_2.htm
 old-project: netvista
 ms.assetid: 74386760-95c8-4c69-99bf-542e7c58b8c8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILPARTICIPANTOPERATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARTICIPANT_REMOVE"></a><a id="ril_participant_remove"></a><b>RIL_PARTICIPANT_REMOVE</b>
+### -field RIL_PARTICIPANT_REMOVE
 
 <dd></dd>
 
-### -field <a id="RIL_PARTICIPANT_MAX"></a><a id="ril_participant_max"></a><b>RIL_PARTICIPANT_MAX</b>
+### -field RIL_PARTICIPANT_MAX
 
 <dd></dd>
 </dl>

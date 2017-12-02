@@ -7,7 +7,7 @@ old-location: ifsk\token_control.htm
 old-project: ifsk
 ms.assetid: 3e0d41f4-4918-4768-a341-25d27f0a8af0
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: TOKEN_CONTROL, TOKEN_CONTROL, *PTOKEN_CONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ typedef struct _TOKEN_CONTROL {
 ## -struct-fields
 <dl>
 
-### -field <b>TokenId</b>
+### -field TokenId
 
 <dd>
 <p>Specifies a locally unique identifier (LUID) identifying this instance of the token object. </p>
 </dd>
 
-### -field <b>AuthenticationId</b>
+### -field AuthenticationId
 
 <dd>
 <p>Specifies an LUID assigned to the session this token represents. There can be many tokens representing a single logon session. </p>
 </dd>
 
-### -field <b>ModifiedId</b>
+### -field ModifiedId
 
 <dd>
 <p>Specifies an LUID that changes each time the token is modified. An application can use this value as a test of whether a security context has changed since it was last used. </p>
 </dd>
 
-### -field <b>TokenSource</b>
+### -field TokenSource
 
 <dd>
 <p>Specifies a <a href="..\ntifs\ns-ntifs--token-source.md">TOKEN_SOURCE</a> structure identifying the source that issued the token. This information is used in audit logging. </p>
@@ -140,4 +140,4 @@ typedef struct _TOKEN_CONTROL {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TOKEN_CONTROL structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TOKEN_CONTROL structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

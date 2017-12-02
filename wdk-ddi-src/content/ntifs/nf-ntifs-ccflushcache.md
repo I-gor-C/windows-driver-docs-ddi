@@ -7,7 +7,7 @@ old-location: ifsk\ccflushcache.htm
 old-project: ifsk
 ms.assetid: 06bb49bc-56e6-42fc-ae52-c954507d2a3f
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: CcFlushCache
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ VOID CcFlushCache(
 ## -parameters
 <dl>
 
-### -param <i>SectionObjectPointer</i> [in]
+### -param SectionObjectPointer [in]
 
 <dd>
 <p>Pointer to a <b>SECTION_OBJECT_POINTERS</b> structure containing the file object's section object pointers.</p>
 </dd>
 
-### -param <i>FileOffset</i> [in, optional]
+### -param FileOffset [in, optional]
 
 <dd>
 <p>Pointer to a variable that specifies the starting byte offset within the cached file where the data is to be flushed. </p>
@@ -71,13 +71,13 @@ VOID CcFlushCache(
 <p>If <i>FileOffset</i> is not <b>NULL</b>, only the byte range specified by <i>FileOffset</i> and <i>Length</i> is flushed.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Length of the byte range to flush, starting at <i>FileOffset</i>. If <i>FileOffset</i> is <b>NULL</b>, <i>Length</i> is ignored.</p>
 </dd>
 
-### -param <i>IoStatus</i> [out, optional]
+### -param IoStatus [out, optional]
 
 <dd>
 <p>Pointer to a structure that receives the final completion status and information about the flush operation. If the data is flushed successfully, <i>IoStatus.Status</i> contains STATUS_SUCCESS. If not all of the data is flushed successfully, <i>IoStatus.Information</i> contains the actual number of bytes that were flushed. Otherwise, <i>IoStatus.Information</i> contains the value  given in <i>Length</i>.</p>
@@ -153,4 +153,4 @@ VOID CcFlushCache(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcFlushCache routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcFlushCache routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-                        Initializes the <a href="buses.ucmtcpci_device_config">UCMTCPCI_DEVICE_CONFIG</a> structure.
+                        Initializes the <a href="..\ucmtcpcidevice\ns-ucmtcpcidevice--ucmtcpci-device-config.md">UCMTCPCI_DEVICE_CONFIG</a> structure.
                 </p>
 
 
@@ -57,10 +57,10 @@ VOID UCMTCPCI_DEVICE_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
-<p>A pointer to the driver-allocated <a href="buses.ucmtcpci_device_config">UCMTCPCI_DEVICE_CONFIG</a> structure.</p>
+<p>A pointer to the driver-allocated <a href="..\ucmtcpcidevice\ns-ucmtcpcidevice--ucmtcpci-device-config.md">UCMTCPCI_DEVICE_CONFIG</a> structure.</p>
 </dd>
 </dl>
 
@@ -111,7 +111,7 @@ VOID UCMTCPCI_DEVICE_CONFIG_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmtcpcideviceinitialize">UcmTcpciDeviceInitialize</a>
+<a href="..\ucmtcpcidevice\nf-ucmtcpcidevice-ucmtcpcideviceinitialize.md">UcmTcpciDeviceInitialize</a>
 </dt>
 </dl>
 <p> </p>

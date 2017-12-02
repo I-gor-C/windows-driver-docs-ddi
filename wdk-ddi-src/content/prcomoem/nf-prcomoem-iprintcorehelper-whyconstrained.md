@@ -60,37 +60,37 @@ HRESULT WhyConstrained(
 ## -parameters
 <dl>
 
-### -param <i>pDevmode</i> [in]
+### -param pDevmode [in]
 
 <dd>
 <p>A pointer to a <a href="display.devmodew">DEVMODEW</a> structure. If this pointer is provided, <b>IPrintCoreHelper::WhyConstrained</b> should use the DEVMODEW structure that is pointed to by <i>pDevmode</i> instead of the default or current DEVMODEW structure. If this method is called from the plug-in provider or from either <a href="print.iprintoemps_devmode">IPrintOemPS::DevMode</a> or <a href="print.iprintoemuni_devmode">IPrintOemUni::DevMode</a>, this parameter is required. In most other situations, the parameter should be <b>NULL</b>. When the core driver sets <i>pDevmode</i> to <b>NULL</b>, it modifies its internal state rather than that of the passed-in DEVMODEW structure. This is required during operations such as full UI replacement, where the DEVMODEW structure returned by a DDI, such as <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a>, is being serviced by the core driver's UI module.</p>
 </dd>
 
-### -param <i>cbSize</i> [in]
+### -param cbSize [in]
 
 <dd>
 <p>The size, in bytes, of the DEVMODEW structure that is pointed to by the <i>pDevmode</i> parameter. </p>
 </dd>
 
-### -param <i>pszFeatureKeyword</i> [in]
+### -param pszFeatureKeyword [in]
 
 <dd>
 <p>A pointer to an ANSI string that contains the name of the feature. The feature name should correspond to the keyword that is used in the GPD or PPD file.</p>
 </dd>
 
-### -param <i>pszOptionKeyword</i> [in]
+### -param pszOptionKeyword [in]
 
 <dd>
 <p>A pointer to an ANSI string that contains the name of the option. The option name should correspond to the keyword that is used in the GPD or PPD file.</p>
 </dd>
 
-### -param <i>ppFOConstraints</i> [out]
+### -param ppFOConstraints [out]
 
 <dd>
 <p>A pointer to an array of <a href="..\prcomoem\ns-prcomoem--print-feature-option.md">PRINT_FEATURE_OPTION</a> elements. When <b>IPrintCoreHelper::WhyConstrained</b> returns, the array contains a list of feature-element pairs of the options that constrain the options that are specified in the <i>pszOptionKeyword </i>parameter.</p>
 </dd>
 
-### -param <i>pdwNumOptions</i> [out]
+### -param pdwNumOptions [out]
 
 <dd>
 <p>A pointer to a variable that receives the number of feature-option pairs in the array that is pointed to by the <i>ppFOConstraints</i> parameter.</p>

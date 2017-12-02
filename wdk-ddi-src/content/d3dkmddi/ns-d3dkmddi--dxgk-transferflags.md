@@ -64,48 +64,48 @@ typedef struct _DXGK_TRANSFERFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Swizzle</b>
+### -field Swizzle
 
 <dd>
 <p>[in] A UINT value that specifies whether the driver should swizzle the source to the destination during the transfer. Note that for multiple-level allocations (for example, MIP-map textures), the driver should swizzle all levels of the allocations. For more information about swizzling allocations, see <a href="https://msdn.microsoft.com/c9be52d9-36b2-4a0f-9629-01b31293af38">Locking Swizzled Allocations</a>.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Unswizzle</b>
+### -field Unswizzle
 
 <dd>
 <p>[in] A UINT value that specifies whether the driver should unswizzle the source to the destination during the transfer. Note that for multiple-level allocations (for example, MIP-map textures), the driver should unswizzle all levels of the allocations. For more information about swizzling allocations, see <a href="https://msdn.microsoft.com/c9be52d9-36b2-4a0f-9629-01b31293af38">Locking Swizzled Allocations</a>.</p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>AllocationIsIdle</b>
+### -field AllocationIsIdle
 
 <dd>
 <p>[in] A UINT value that specifies whether the graphics processing unit (GPU) is using the given allocation. If this member is set, the GPU is not using the given allocation; that is, no work was queued or will be queued to the GPU until the call to <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a> returns.</p>
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>TransferStart</b>
+### -field TransferStart
 
 <dd>
 <p>[in] A UINT value that specifies whether the transfer operation is starting. If this member is set, the transfer operation is starting.</p>
 <p>Setting this member is equivalent to setting the fourth bit of the 32-bit <b>Value</b> member (0x00000008).</p>
 </dd>
 
-### -field <b>TransferEnd</b>
+### -field TransferEnd
 
 <dd>
 <p>[in] A UINT value that specifies whether the transfer operation is ending. If this member is set, the transfer operation is ending.</p>
 <p>Setting this member is equivalent to setting the fifth bit of the 32-bit <b>Value</b> member (0x00000010).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 27 bits (0xFFFFFFE0) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] A member in the union that DXGK_TRANSFERFLAGS contains that can hold a 32-bit value that identifies the transfer-operation type.</p>

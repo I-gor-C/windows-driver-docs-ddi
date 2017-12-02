@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>ContentId</b>
+### -field ContentId
 
 <dd>
 <p>Specifies the DRM content ID. This member identifies a protected KS audio stream.</p>
 </dd>
 
-### -field <b>DrmRights</b>
+### -field DrmRights
 
 <dd>
 <p>Specifies the DRM content rights assigned to the stream. This member is a pointer to a <a href="audio.drmrights">DRMRIGHTS</a> structure.</p>

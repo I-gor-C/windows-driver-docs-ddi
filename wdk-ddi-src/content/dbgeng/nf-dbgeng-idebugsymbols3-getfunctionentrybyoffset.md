@@ -7,7 +7,7 @@ old-location: debugger\getfunctionentrybyoffset.htm
 old-project: debugger
 ms.assetid: 6b1fa9fc-f033-4d93-a2ec-f31159d6a69d
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSymbols3, GetFunctionEntryByOffset, IDebugSymbols3::GetFunctionEntryByOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ HRESULT GetFunctionEntryByOffset(
 ## -parameters
 <dl>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies a location in the current process's virtual address space of the function's implementation.  This is the value returned in the <i>Offset</i> parameter of <a href="debugger.getnextsymbolmatch">GetNextSymbolMatch</a> and <a href="debugger.getsymboloffset">IDebugSymbolGroup::GetSymbolOffset</a>, and the value of the <b>Offset</b> field in the <a href="..\dbgeng\ns-dbgeng--debug-symbol-entry.md">DEBUG_SYMBOL_ENTRY</a> structure.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies a bit-flag which alters the behavior of this method.  If the bit DEBUG_GETFNENT_RAW_ENTRY_ONLY is not set, the engine will provide artificial entries for well known cases.  If this bit is set the artificial entries are not used.</p>
 </dd>
 
-### -param <i>Buffer</i> [out, optional]
+### -param Buffer [out, optional]
 
 <dd>
 <p>Receives the function entry information.  If the effective processor is an x86, this is the FPO_DATA structure for the function.  For all other architectures, this is the IMAGE_FUNCTION_ENTRY structure for that architecture.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size of the buffer <i>Buffer</i>.</p>
 </dd>
 
-### -param <i>BufferNeeded</i> [out, optional]
+### -param BufferNeeded [out, optional]
 
 <dd>
 <p>Specifies the size of the function entry information.</p>
@@ -90,7 +90,7 @@ HRESULT GetFunctionEntryByOffset(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>S_FALSE</b></dt>
@@ -146,4 +146,4 @@ HRESULT GetFunctionEntryByOffset(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetFunctionEntryByOffset method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetFunctionEntryByOffset method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,13 +56,13 @@ PIRP IoCsqRemoveNextIrp(
 ## -parameters
 <dl>
 
-### -param <i>Csq</i> [in, out]
+### -param Csq [in, out]
 
 <dd>
 <p>Pointer to the driver's dispatch table for cancel-safe IRP queues. The dispatch table must be initialized by <a href="..\wdm\nf-wdm-iocsqinitialize.md">IoCsqInitialize</a>.</p>
 </dd>
 
-### -param <i>PeekContext</i> [in, optional]
+### -param PeekContext [in, optional]
 
 <dd>
 <p>A pointer to a driver-defined context value. <b>IoCsqRemoveNextIrp</b> passes this parameter to the driver's <a href="..\wdm\nc-wdm-io-csq-peek-next-irp.md">CsqPeekNextIrp</a> routine. For more information, see the following Remarks section.</p>

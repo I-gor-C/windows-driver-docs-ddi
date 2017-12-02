@@ -57,19 +57,19 @@ typedef enum _USBD_ENDPOINT_OFFLOAD_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UsbdEndpointOffloadModeNotSupported"></a><a id="usbdendpointoffloadmodenotsupported"></a><a id="USBDENDPOINTOFFLOADMODENOTSUPPORTED"></a><b>UsbdEndpointOffloadModeNotSupported</b>
+### -field UsbdEndpointOffloadModeNotSupported
 
 <dd>
 <p>Endpoint offloading is not supported.</p>
 </dd>
 
-### -field <a id="UsbdEndpointOffloadSoftwareAssisted"></a><a id="usbdendpointoffloadsoftwareassisted"></a><a id="USBDENDPOINTOFFLOADSOFTWAREASSISTED"></a><b>UsbdEndpointOffloadSoftwareAssisted</b>
+### -field UsbdEndpointOffloadSoftwareAssisted
 
 <dd>
 <p>Endpoint offloading is handled by the software.</p>
 </dd>
 
-### -field <a id="UsbdEndpointOffloadHardwareAssisted"></a><a id="usbdendpointoffloadhardwareassisted"></a><a id="USBDENDPOINTOFFLOADHARDWAREASSISTED"></a><b>UsbdEndpointOffloadHardwareAssisted</b>
+### -field UsbdEndpointOffloadHardwareAssisted
 
 <dd>
 <p>Endpoint offloading is handled in the USB device or host controller hardware.</p>

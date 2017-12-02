@@ -60,25 +60,25 @@ typedef struct _WHEA_XPF_MCE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_XPFMCE.</p>
 </dd>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>A Boolean value that indicates if the error source is enabled.</p>
 </dd>
 
-### -field <b>NumberOfBanks</b>
+### -field NumberOfBanks
 
 <dd>
 <p>The number of <a href="..\ntddk\ns-ntddk--whea-xpf-mc-bank-descriptor.md">WHEA_XPF_MC_BANK_DESCRIPTOR</a> structures contained in the <b>Banks</b> member.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>An XPF_MCE_FLAGS union that indicates which of the members of the WHEA_XPF_MCE_DESCRIPTOR structure can be written to by the operating system. The XPF_MCE_FLAGS union is defined as follows:</p>
@@ -102,25 +102,25 @@ typedef struct _WHEA_XPF_MCE_DESCRIPTOR {
 <p></p>
 <dl>
 
-### -field <a id="MCG_CapabilityRW"></a><a id="mcg_capabilityrw"></a><a id="MCG_CAPABILITYRW"></a><b>MCG_CapabilityRW</b>
+### -field MCG_CapabilityRW
 
 <dd>
 <p>A single bit that indicates that the operating system can write to the <b>MCG_Capability</b> member of the WHEA_XPF_MCE_DESCRIPTOR structure.</p>
 </dd>
 
-### -field <a id="MCG_GlobalControlRW"></a><a id="mcg_globalcontrolrw"></a><a id="MCG_GLOBALCONTROLRW"></a><b>MCG_GlobalControlRW</b>
+### -field MCG_GlobalControlRW
 
 <dd>
 <p>A single bit that indicates that the operating system can write to the <b>MCG_GlobalControl</b> member of the WHEA_XPF_MCE_DESCRIPTOR structure.</p>
 </dd>
 
-### -field <a id="Reserved"></a><a id="reserved"></a><a id="RESERVED"></a><b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="AsULONG"></a><a id="asulong"></a><a id="ASULONG"></a><b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the XPF_MCE_FLAGS union.</p>
@@ -128,19 +128,19 @@ typedef struct _WHEA_XPF_MCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>MCG_Capability</b>
+### -field MCG_Capability
 
 <dd>
 <p>The contents of the processor's IA32_MCG_CAP model-specific register. This register contains capability information about the machine check architecture of the processor. For more information about the IA32_MCG_CAP register, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.</p>
 </dd>
 
-### -field <b>MCG_GlobalControl</b>
+### -field MCG_GlobalControl
 
 <dd>
 <p>The contents of the processor's IA32_MCG_CTL model-specific register. This register controls the reporting of machine check exceptions. For more information about the IA32_MCG_CTL register, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.</p>
 </dd>
 
-### -field <b>Banks</b>
+### -field Banks
 
 <dd>
 <p>An array of <a href="..\ntddk\ns-ntddk--whea-xpf-mc-bank-descriptor.md">WHEA_XPF_MC_BANK_DESCRIPTOR</a> structures that describe the banks of machine check registers.</p>

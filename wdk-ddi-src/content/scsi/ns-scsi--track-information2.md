@@ -79,55 +79,55 @@ typedef struct _TRACK_INFORMATION2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The length, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>TrackNumberLsb</b>
+### -field TrackNumberLsb
 
 <dd>
 <p>The least significant byte of the track number.</p>
 </dd>
 
-### -field <b>SessionNumberLsb</b>
+### -field SessionNumberLsb
 
 <dd>
 <p>The least significant byte of the session number.</p>
 </dd>
 
-### -field <b>Reserved4</b>
+### -field Reserved4
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>TrackMode</b>
+### -field TrackMode
 
 <dd>
 <p>The track mode. See the <i>SCSI-3 Multi-Media </i>specification for an explanation of meaning of this member.</p>
 </dd>
 
-### -field <b>Copy</b>
+### -field Copy
 
 <dd>
 <p>The copy bit indicates whether the track is a copy or not. If this bit is 1, the track is a copy. If it is 0, the track is not a copy.</p>
 </dd>
 
-### -field <b>Damage</b>
+### -field Damage
 
 <dd>
 <p>The damage bit indicates, together with the NWA_V bit, whether a write to the media is complete or not, and what sort of methods the CD-ROM class driver can use to complete the write. See the <i>SCSI-3 Multi-Media </i>specification for an explanation of how to interpret the values in the <b>Damage</b> and <b>NWA_V</b> members.</p>
 </dd>
 
-### -field <b>Reserved5</b>
+### -field Reserved5
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>DataMode</b>
+### -field DataMode
 
 <dd>
 <p>The data mode. This member can have any of the following values:</p>
@@ -168,95 +168,95 @@ typedef struct _TRACK_INFORMATION2 {
 <p> </p>
 </dd>
 
-### -field <b>FixedPacket</b>
+### -field FixedPacket
 
 <dd>
 <p>The fixed packet bit indicates, under some circumstances, when set to 1, that write operations to the track must must use fixed packets. For a complete explanation of the meaning of this bit, see the <i>SCSI Multimedia Commands - 3 (MMC-3)</i> specification.</p>
 </dd>
 
-### -field <b>Packet</b>
+### -field Packet
 
 <dd>
 <p>The fixed packet bit indicates, under some circumstances, when set to 1, that write operations to the track must must use fixed packets. For a complete explanation of the meaning of this bit, see the <i>SCSI Multimedia Commands - 3 (MMC-3)</i> specification.</p>
 </dd>
 
-### -field <b>Blank</b>
+### -field Blank
 
 <dd>
 <p>The blank bit, when set to 1, indicates that the track contains no written data and last recorded address field is invalid. For a complete explanation of the meaning of this bit, see the <i>SCSI Multimedia Commands - 3 (MMC-3)</i> specification.</p>
 </dd>
 
-### -field <b>ReservedTrack</b>
+### -field ReservedTrack
 
 <dd>
 <p>The reserved track bit, when 1, indicates that the track is reserved.</p>
 </dd>
 
-### -field <b>NWA_V</b>
+### -field NWA_V
 
 <dd>
 <p>A boolean value that indicates, when 1, that the value in <b>NextWritableAddress</b> is valid. If 0, the value in <b>NextWritableAddress</b> is invalid.</p>
 </dd>
 
-### -field <b>LRA_V</b>
+### -field LRA_V
 
 <dd>
 <p>A boolean value that indicates whether the <b>LastRecordedAddress</b> member is valid or not. If <b>LRA_V</b> is 1, the <b>LastRecordedAddress</b> member is valid. If 0, the <b>LastRecordedAddress</b> member is not valid.</p>
 </dd>
 
-### -field <b>Reserved6</b>
+### -field Reserved6
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>TrackStartAddress</b>
+### -field TrackStartAddress
 
 <dd>
 <p>The starting address of the specified track.</p>
 </dd>
 
-### -field <b>NextWritableAddress</b>
+### -field NextWritableAddress
 
 <dd>
 <p>The logical block address of the next writable user block in the track specified by the track number (<b>TrackNumberLsb</b> and <b>TrackNumberMsb</b>).</p>
 </dd>
 
-### -field <b>FreeBlocks</b>
+### -field FreeBlocks
 
 <dd>
 <p>The maximum number of user data blocks that are available for recording in the track.</p>
 </dd>
 
-### -field <b>FixedPacketSize</b>
+### -field FixedPacketSize
 
 <dd>
 <p>The blocking factor. This value The fixed packet size is valid only when the Packet and the FP bits are both set to one.</p>
 </dd>
 
-### -field <b>TrackSize</b>
+### -field TrackSize
 
 <dd>
 <p>Track Size is the number of user data blocks in the track.</p>
 </dd>
 
-### -field <b>LastRecordedAddress</b>
+### -field LastRecordedAddress
 
 <dd></dd>
 
-### -field <b>TrackNumberMsb</b>
+### -field TrackNumberMsb
 
 <dd>
 <p>The most significant byte of the track number.</p>
 </dd>
 
-### -field <b>SessionNumberMsb</b>
+### -field SessionNumberMsb
 
 <dd>
 <p>The most significant byte of the session number.</p>
 </dd>
 
-### -field <b>Reserved7</b>
+### -field Reserved7
 
 <dd>
 <p>Reserved7</p>

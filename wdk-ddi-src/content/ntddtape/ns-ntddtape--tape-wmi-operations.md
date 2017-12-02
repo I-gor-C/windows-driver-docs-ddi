@@ -56,14 +56,14 @@ typedef struct _TAPE_WMI_OPERATIONS {
 ## -struct-fields
 <dl>
 
-### -field <b>Method</b>
+### -field Method
 
 <dd>
 <p>Indicates the operation to be performed by the tape device. The operations allowed are as follows:</p>
 <p></p>
 <dl>
 
-### -field <a id="TAPE_CHECK_FOR_DRIVE_PROBLEM"></a><a id="tape_check_for_drive_problem"></a>TAPE_CHECK_FOR_DRIVE_PROBLEM
+### -field TAPE_CHECK_FOR_DRIVE_PROBLEM
 
 <dd>
 <p>If the tape drive supports commands to return specific device errors, such as tape alerts, the minidriver's <a href="storage.tapeminiwmicontrol">TapeMiniWMIControl</a> routine should execute the TAPE_QUERY_DEVICE_ERROR_DATA method Otherwise, it should execute the TAPE_QUERY_IO_ERROR_DATA method.</p>
@@ -72,7 +72,7 @@ typedef struct _TAPE_WMI_OPERATIONS {
 <p></p>
 <dl>
 
-### -field <a id="TAPE_QUERY_DEVICE_ERROR_DATA"></a><a id="tape_query_device_error_data"></a>TAPE_QUERY_DEVICE_ERROR_DATA
+### -field TAPE_QUERY_DEVICE_ERROR_DATA
 
 <dd>
 <p>Returns specific device errors, such as tape alerts. Not all tape drives support this method.</p>
@@ -81,7 +81,7 @@ typedef struct _TAPE_WMI_OPERATIONS {
 <p></p>
 <dl>
 
-### -field <a id="TAPE_QUERY_IO_ERROR_DATA__"></a><a id="tape_query_io_error_data__"></a>TAPE_QUERY_IO_ERROR_DATA  
+### -field TAPE_QUERY_IO_ERROR_DATA  
 
 <dd>
 <p>Returns general I/O error data, such as read/write errors, based on the I/O error count. All tape drives support this method.</p>
@@ -89,13 +89,13 @@ typedef struct _TAPE_WMI_OPERATIONS {
 </dl>
 </dd>
 
-### -field <b>DataBufferSize</b>
+### -field DataBufferSize
 
 <dd>
 <p>Indicates the size in bytes of the buffer in which the tape minidriver returns the results of the operation. </p>
 </dd>
 
-### -field <b>DataBuffer</b>
+### -field DataBuffer
 
 <dd>
 <p>Pointer to a buffer in which the tape minidriver returns the results of the operation. The first <b>sizeof</b>(ULONG) bytes of <b>DataBuffer</b> contain a value of type <a href="..\ntddtape\ne-ntddtape--tape-drive-problem-type.md">TAPE_DRIVE_PROBLEM_TYPE</a>, followed by <b>DataBufferSize</b> - <b>sizeof</b>(ULONG) bytes of tape data. </p>

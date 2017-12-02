@@ -7,7 +7,7 @@ old-location: debugger\writetypeddatavirtual.htm
 old-project: debugger
 ms.assetid: c7a3854b-2405-4e20-8c6c-4e0c0d43987e
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSymbols, WriteTypedDataVirtual, IDebugSymbols::WriteTypedDataVirtual
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ HRESULT WriteTypedDataVirtual(
 ## -parameters
 <dl>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the location in the target's virtual address space where the data will be written.</p>
 </dd>
 
-### -param <i>Module</i> [in]
+### -param Module [in]
 
 <dd>
 <p>Specifies the base address of the module containing the type.</p>
 </dd>
 
-### -param <i>TypeId</i> [in]
+### -param TypeId [in]
 
 <dd>
 <p>Specifies the type ID of the type.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Specifies the buffer containing the data to be written.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size in bytes of the buffer <i>Buffer</i>.  This is the maximum number of bytes to be written.</p>
 </dd>
 
-### -param <i>BytesWritten</i> [out, optional]
+### -param BytesWritten [out, optional]
 
 <dd>
 <p>Receives the number of bytes that were written.  If <i>BytesWritten</i> is <b>NULL</b>, this information is not returned.</p>
@@ -97,7 +97,7 @@ HRESULT WriteTypedDataVirtual(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>S_FALSE</b></dt>

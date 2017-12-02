@@ -62,19 +62,19 @@ NTSTATUS GetLocation(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in, out]
+### -param Context [in, out]
 
 <dd>
 <p>A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\wdm\ns-wdm--pci-virtualization-interface.md">PCI_VIRTUALIZATION_INTERFACE</a> structure for the interface.</p>
 </dd>
 
-### -param <i>VirtualFunction</i> [in]
+### -param VirtualFunction [in]
 
 <dd>
 <p>A zero-based value that specifies the VF on the device for  which the device location is returned</p>
 </dd>
 
-### -param <i>SegmentNumber</i> [out]
+### -param SegmentNumber [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which this routine returns a UINT16 value for the current PCI segment number. This value specifies the group of PCI buses on which the device is attached.
@@ -82,7 +82,7 @@ NTSTATUS GetLocation(
 </p>
 </dd>
 
-### -param <i>BusNumber</i> [out]
+### -param BusNumber [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which this routine returns a UINT8 value. This value specifies the current PCI bus number on which the device is attached.
@@ -90,7 +90,7 @@ NTSTATUS GetLocation(
 </p>
 </dd>
 
-### -param <i>FunctionNumber</i> [out]
+### -param FunctionNumber [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which this routine returns a UINT8 value.  This value contains the function number for the specified VF on the PCI bus.</p>

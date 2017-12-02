@@ -55,13 +55,13 @@ typedef struct _PEP_PPM_PLATFORM_STATE_RESIDENCY {
 ## -struct-fields
 <dl>
 
-### -field <b>Residency</b>
+### -field Residency
 
 <dd>
 <p>The accumulated residency time, in 100-nanosecond units. This is the total amount of time that the hardware platform has spent in this idle state since system startup.</p>
 </dd>
 
-### -field <b>TransitionCount</b>
+### -field TransitionCount
 
 <dd>
 <p>The total number of times that the platform has entered this idle state since system startup.</p>

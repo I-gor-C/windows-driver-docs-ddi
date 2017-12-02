@@ -57,7 +57,7 @@ NTSTATUS APIENTRY CALLBACK* DxgkCbCreateContextAllocation(
 ## -parameters
 <dl>
 
-### -param <i>ContextAllocation</i> [in, out]
+### -param ContextAllocation [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-createcontextallocation.md">DXGKARGCB_CREATECONTEXTALLOCATION</a> structure that specifies the attributes of the context to be allocated.</p>

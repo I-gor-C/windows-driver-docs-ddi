@@ -60,25 +60,25 @@ NTSTATUS APIENTRY pfnAcquireSourceModeSet(
 ## -parameters
 <dl>
 
-### -param <i>hVidPn</i> [in]
+### -param hVidPn [in]
 
 <dd>
 <p>[in] A handle to a VidPN object. The VidPN manager previously provided this handle to the display miniport driver by calling <a href="display.dxgkddienumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>, <a href="display.dxgkddiissupportedvidpn">DxgkDdiIsSupportedVidPn</a>, or <a href="display.dxgkddirecommendfunctionalvidpn">DxgkDdiRecommendFunctionalVidPn</a>.</p>
 </dd>
 
-### -param <i>VidPnSourceId</i> [in]
+### -param VidPnSourceId [in]
 
 <dd>
 <p>[in] An integer that identifies one of the video present sources associated with the VidPN object.</p>
 </dd>
 
-### -param <i>phVidPnSourceModeSet</i> [out]
+### -param phVidPnSourceModeSet [out]
 
 <dd>
 <p>[out] A pointer to a variable that receives a handle to the requested source mode set object.</p>
 </dd>
 
-### -param <i>ppVidPnSourceModeSetInterface</i> [out]
+### -param ppVidPnSourceModeSetInterface [out]
 
 <dd>
 <p>[out] A pointer to a variable that receives a pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpnsourcemodeset-interface.md">DXGK_VIDPNSOURCEMODESET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the source mode set object.</p>

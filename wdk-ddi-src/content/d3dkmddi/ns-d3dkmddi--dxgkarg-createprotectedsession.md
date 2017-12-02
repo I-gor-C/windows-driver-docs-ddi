@@ -56,20 +56,20 @@ typedef struct _DXGKARG_CREATEPROTECTEDSESSION {
 ## -struct-fields
 <dl>
 
-### -field <b>hProtectedSession</b>
+### -field hProtectedSession
 
 <dd>
 <p>An assigned value for the protected session that was passed to DxgkDdiCreateProtectedSession.
 </p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>A pointer to the driver data.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>The size of the data.</p>

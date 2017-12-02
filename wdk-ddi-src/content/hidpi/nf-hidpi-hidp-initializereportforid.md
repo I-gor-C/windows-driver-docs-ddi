@@ -58,31 +58,31 @@ NTSTATUS __stdcall HidP_InitializeReportForID(
 ## -parameters
 <dl>
 
-### -param <i>ReportType</i> [in]
+### -param ReportType [in]
 
 <dd>
 <p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator that indicates the type of HID report located at <i>Report</i>.</p>
 </dd>
 
-### -param <i>ReportID</i> [in]
+### -param ReportID [in]
 
 <dd>
 <p>Specifies a report ID.</p>
 </dd>
 
-### -param <i>PreparsedData</i> [in]
+### -param PreparsedData [in]
 
 <dd>
-<p>Pointer to the <a href="NULL">preparsed data</a> of the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> associated with the HID report located at <i>Report</i>.</p>
+<p>Pointer to the <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a> of the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> associated with the HID report located at <i>Report</i>.</p>
 </dd>
 
-### -param <i>Report</i> [out]
+### -param Report [out]
 
 <dd>
 <p>Pointer to the caller-allocated buffer containing the HID report that <b>HidP_InitializeReportForID</b> initializes.</p>
 </dd>
 
-### -param <i>ReportLength</i> [in]
+### -param ReportLength [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the HID report located at <i>Report</i>. <i>ReportLength</i> must be equal to the collection's report length for the specified report type, as specified by the <i>Xxx</i><b>ReportByteLength</b> members of a collection's <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure.</p>
@@ -113,7 +113,7 @@ NTSTATUS __stdcall HidP_InitializeReportForID(
 
 <p>Sets the bitfield of all controls with null values to their corresponding null value.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

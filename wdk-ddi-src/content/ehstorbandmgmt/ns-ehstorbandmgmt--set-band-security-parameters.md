@@ -60,13 +60,13 @@ typedef struct _SET_BAND_SECURITY_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>StructSize</b>
+### -field StructSize
 
 <dd>
 <p>The size of this structure in bytes. Set to <b>sizeof</b>(SET_BAND_SECURITY_PARAMETERS).</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Security parameter flags. This value is a bitwise OR combination of the following.</p>
@@ -78,7 +78,7 @@ typedef struct _SET_BAND_SECURITY_PARAMETERS {
 <tr>
 <td width="40%"><a id="SETBANDSEC_AUTHKEY_CACHING_ENABLED"></a><a id="setbandsec_authkey_caching_enabled"></a><dl>
 
-### -field <b>SETBANDSEC_AUTHKEY_CACHING_ENABLED</b>
+### -field SETBANDSEC_AUTHKEY_CACHING_ENABLED
 
 </dl>
 </td>
@@ -90,19 +90,19 @@ typedef struct _SET_BAND_SECURITY_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>BandId</b>
+### -field BandId
 
 <dd>
 <p>The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId.</b> To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.</p>
 </dd>
 
-### -field <b>BandStart</b>
+### -field BandStart
 
 <dd>
 <p>The starting byte location on the storage device to begin a band search. An attempt is made to match a band at or after <b>BandStart</b>.</p>
 </dd>
 
-### -field <b>CurrentAuthKeyOffset</b>
+### -field CurrentAuthKeyOffset
 
 <dd>
 <p>The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the current authentication key for the band. This authentication key is required and must be present following this structure. The offset is from the beginning of <b>SET_BAND_SECURITY_PARAMETERS</b>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.</p>
@@ -123,13 +123,13 @@ typedef struct _SET_BAND_SECURITY_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="KeySize"></a><a id="keysize"></a><a id="KEYSIZE"></a>KeySize
+### -field KeySize
 
 <dd>
 <p>The size of the key, in bytes, of the key data at <b>Key</b>. If <b>KeySize</b> is set to 0, a default key is used.</p>
 </dd>
 
-### -field <a id="Key"></a><a id="key"></a><a id="KEY"></a>Key
+### -field Key
 
 <dd>
 <p>A variable-length byte array containing the key data.</p>
@@ -138,7 +138,7 @@ typedef struct _SET_BAND_SECURITY_PARAMETERS {
 <p>To specify a default authentication key to the band, set   <b>AuthKeyOffset</b> = <b>EHSTOR_BANDMGR_NO_KEY</b>.</p>
 </dd>
 
-### -field <b>NewAuthKeyOffset</b>
+### -field NewAuthKeyOffset
 
 <dd>
 <p>The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the new authentication key for the band.  The offset is from the beginning of <b>SET_BAND_SECURITY_PARAMETERS</b>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.</p>
@@ -159,13 +159,13 @@ typedef struct _SET_BAND_SECURITY_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="KeySize"></a><a id="keysize"></a><a id="KEYSIZE"></a>KeySize
+### -field KeySize
 
 <dd>
 <p>The size of the key, in bytes, of the key data at <b>Key</b>. If <b>KeySize</b> is set to 0, a default key is used.</p>
 </dd>
 
-### -field <a id="Key"></a><a id="key"></a><a id="KEY"></a>Key
+### -field Key
 
 <dd>
 <p>A variable-length byte array that contains the key data.</p>
@@ -174,7 +174,7 @@ typedef struct _SET_BAND_SECURITY_PARAMETERS {
 <p>To assign a default authentication key to the band, set   <b>AuthKeyOffset</b> = <b>EHSTOR_BANDMGR_NO_KEY</b>. If <b>NewAuthKeyOffset</b> == <b>CurrentAuthKeyOffset</b>, the authentication key for the band is left unchanged.</p>
 </dd>
 
-### -field <b>BandSecurityInfoOffset</b>
+### -field BandSecurityInfoOffset
 
 <dd>
 <p>The offset, in bytes, of a <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-security-info.md">BAND_SECURITY_INFO</a> structure. The offset is from the beginning of <b>SET_BAND_SECURITY_PARAMETERS</b>.</p>

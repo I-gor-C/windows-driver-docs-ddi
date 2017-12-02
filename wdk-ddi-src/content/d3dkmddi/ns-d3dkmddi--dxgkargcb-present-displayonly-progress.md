@@ -55,13 +55,13 @@ typedef struct _DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>An integer that identifies a video present source.</p>
 </dd>
 
-### -field <b>ProgressId</b>
+### -field ProgressId
 
 <dd>
 <p>A value of type <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-present-display-only-progress-id.md">DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID</a> that represents the status of the current present operation.</p>

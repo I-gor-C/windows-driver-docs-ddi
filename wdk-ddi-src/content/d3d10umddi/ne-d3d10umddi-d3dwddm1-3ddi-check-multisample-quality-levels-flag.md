@@ -55,7 +55,7 @@ enum D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_FLAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_TILED_RESOURCE"></a><a id="d3dwddm1_3ddi_check_multisample_quality_levels_tiled_resource"></a><b>D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_TILED_RESOURCE</b>
+### -field D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_TILED_RESOURCE
 
 <dd>
 <p>Check the multisample quality levels of a tiled resource.</p>

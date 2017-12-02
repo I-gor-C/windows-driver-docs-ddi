@@ -7,7 +7,7 @@ old-location: netvista\ndis_filter_attach_parameters.htm
 old-project: netvista
 ms.assetid: d46a1e62-9d03-4ab9-86f6-81b06c04d0f6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_FILTER_ATTACH_PARAMETERS, NDIS_FILTER_ATTACH_PARAMETERS, *PNDIS_FILTER_ATTACH_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -88,7 +88,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -102,7 +102,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_FILTER_ATTACH__PARAMETERS_REVISION_4"></a><a id="ndis_filter_attach__parameters_revision_4"></a>NDIS_FILTER_ATTACH__PARAMETERS_REVISION_4
+### -field NDIS_FILTER_ATTACH__PARAMETERS_REVISION_4
 
 <dd>
 <p>Added various members for NDIS 6.30.</p>
@@ -110,7 +110,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
         <b>Size</b> member to NDIS_SIZEOF_FILTER_ATTACH_PARAMETERS_REVISION_4.</p>
 </dd>
 
-### -field <a id="NDIS_FILTER_ATTACH_PARAMETERS_REVISION_3"></a><a id="ndis_filter_attach_parameters_revision_3"></a>NDIS_FILTER_ATTACH_PARAMETERS_REVISION_3
+### -field NDIS_FILTER_ATTACH_PARAMETERS_REVISION_3
 
 <dd>
 <p>Added the 
@@ -121,7 +121,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
         <b>Size</b> member to NDIS_SIZEOF_FILTER_ATTACH_PARAMETERS_REVISION_3.</p>
 </dd>
 
-### -field <a id="NDIS_FILTER_ATTACH_PARAMETERS_REVISION_2"></a><a id="ndis_filter_attach_parameters_revision_2"></a>NDIS_FILTER_ATTACH_PARAMETERS_REVISION_2
+### -field NDIS_FILTER_ATTACH_PARAMETERS_REVISION_2
 
 <dd>
 <p>Added the 
@@ -130,7 +130,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
         <b>Size</b> member to NDIS_SIZEOF_FILTER_ATTACH_PARAMETERS_REVISION_2.</p>
 </dd>
 
-### -field <a id="NDIS_FILTER_ATTACH_PARAMETERS_REVISION_1"></a><a id="ndis_filter_attach_parameters_revision_1"></a>NDIS_FILTER_ATTACH_PARAMETERS_REVISION_1
+### -field NDIS_FILTER_ATTACH_PARAMETERS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.0.</p>
@@ -140,13 +140,13 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>IfIndex</b>
+### -field IfIndex
 
 <dd>
 <p>The NDIS interface index of the filter module that NDIS is attaching to the driver stack.</p>
 </dd>
 
-### -field <b>NetLuid</b>
+### -field NetLuid
 
 <dd>
 <p>The NDIS network interface 
@@ -155,13 +155,13 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      <i>)</i>.</p>
 </dd>
 
-### -field <b>FilterModuleGuidName</b>
+### -field FilterModuleGuidName
 
 <dd>
 <p>The GUID name of the filter module that NDIS is attaching.</p>
 </dd>
 
-### -field <b>BaseMiniportIfIndex</b>
+### -field BaseMiniportIfIndex
 
 <dd>
 <p>The NDIS network interface index of the base miniport adapter. That is, if there are virtual
@@ -169,7 +169,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      member is the interface index of the physical miniport adapter or a virtual miniport of the highest-level MUX intermediate driver.</p>
 </dd>
 
-### -field <b>BaseMiniportInstanceName</b>
+### -field BaseMiniportInstanceName
 
 <dd>
 <p>A pointer to an NDIS_STRING type value that contains a counted Unicode string. This string
@@ -178,13 +178,13 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> type.</p>
 </dd>
 
-### -field <b>BaseMiniportName</b>
+### -field BaseMiniportName
 
 <dd>
 <p>The name of the base miniport adapter.</p>
 </dd>
 
-### -field <b>MediaConnectState</b>
+### -field MediaConnectState
 
 <dd>
 <p>The 
@@ -192,14 +192,14 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      NET_IF_MEDIA_CONNECT_STATE</a> connection state type.</p>
 </dd>
 
-### -field <b>MediaDuplexState</b>
+### -field MediaDuplexState
 
 <dd>
 <p>The media duplex state for the underlying miniport adapter. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569606">OID_GEN_MEDIA_DUPLEX_STATE</a>.</p>
 </dd>
 
-### -field <b>XmitLinkSpeed</b>
+### -field XmitLinkSpeed
 
 <dd>
 <p>The current transmit link speed of the underlying miniport adapter in bits per second. For more
@@ -207,7 +207,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569594">OID_GEN_LINK_SPEED_EX</a>.</p>
 </dd>
 
-### -field <b>RcvLinkSpeed</b>
+### -field RcvLinkSpeed
 
 <dd>
 <p>The current receive link speed of the underlying miniport adapter in bits per second. For more
@@ -215,7 +215,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569594">OID_GEN_LINK_SPEED_EX</a>.</p>
 </dd>
 
-### -field <b>MiniportMediaType</b>
+### -field MiniportMediaType
 
 <dd>
 <p>The 
@@ -224,14 +224,14 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      <a href="..\ntddndis\ne-ntddndis--ndis-medium.md">NDIS_MEDIUM</a>.</p>
 </dd>
 
-### -field <b>MiniportPhysicalMediaType</b>
+### -field MiniportPhysicalMediaType
 
 <dd>
 <p>The physical medium type for the base underlying miniport adapter. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569621">OID_GEN_PHYSICAL_MEDIUM</a>.</p>
 </dd>
 
-### -field <b>MiniportMediaSpecificAttributes</b>
+### -field MiniportMediaSpecificAttributes
 
 <dd>
 <p>A pointer to an 
@@ -248,23 +248,23 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES</a> structure.</p>
 </dd>
 
-### -field <b>DefaultOffloadConfiguration</b>
+### -field DefaultOffloadConfiguration
 
 <dd>
 <p>A pointer to an 
-     <a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a> structure which defines task
+     <a href="..\ntddndis\ns-ntddndis--ndis-offload.md">NDIS_OFFLOAD</a> structure which defines task
      offload attributes. The filter driver should review these attributes to obtain the task offload
      capabilities of the underlying drivers. The filter driver should modify these attributes, if necessary,
      to reflect any changes in the task offload support that it requires.</p>
 </dd>
 
-### -field <b>MacAddressLength</b>
+### -field MacAddressLength
 
 <dd>
 <p>The MAC address length, in bytes. The MAC address length is specific to the type of media.</p>
 </dd>
 
-### -field <b>CurrentMacAddress</b>
+### -field CurrentMacAddress
 
 <dd>
 <p>The current MAC address. For example, the 
@@ -272,7 +272,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      specifies the current MAC address for IEEE 802.3 drivers.</p>
 </dd>
 
-### -field <b>BaseMiniportNetLuid</b>
+### -field BaseMiniportNetLuid
 
 <dd>
 <p>The NDIS network interface 
@@ -282,7 +282,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      highest-level MUX intermediate driver.</p>
 </dd>
 
-### -field <b>LowerIfIndex</b>
+### -field LowerIfIndex
 
 <dd>
 <p>The NDIS network interface index of the interface just below the current filter module. That is,
@@ -296,7 +296,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      virtual miniport.</p>
 </dd>
 
-### -field <b>LowerIfNetLuid</b>
+### -field LowerIfNetLuid
 
 <dd>
 <p>The NDIS network interface NET_LUID value of the interface just below the current filter module.
@@ -310,13 +310,13 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      intermediate driver virtual miniport.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>HDSplitCurrentConfig</b>
+### -field HDSplitCurrentConfig
 
 <dd>
 <p>A pointer to an 
@@ -326,7 +326,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      not support header-data split.</p>
 </dd>
 
-### -field <b>ReceiveFilterCapabilities</b>
+### -field ReceiveFilterCapabilities
 
 <dd>
 <p>A pointer to an 
@@ -336,7 +336,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      support receive filtering.</p>
 </dd>
 
-### -field <b>MiniportPhysicalDeviceObject</b>
+### -field MiniportPhysicalDeviceObject
 
 <dd>
 <p>A pointer to a 
@@ -344,7 +344,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      represents the physical device for the underlying miniport adapter.</p>
 </dd>
 
-### -field <b>NicSwitchCapabilities</b>
+### -field NicSwitchCapabilities
 
 <dd>
 <p>A pointer to an 
@@ -354,20 +354,20 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
      switch features.</p>
 </dd>
 
-### -field <b>BaseMiniportIfConnectorPresent</b>
+### -field BaseMiniportIfConnectorPresent
 
 <dd>
 <p>A Boolean value that, if set to TRUE, indicates whether a network interface (if) connector is present on the underlying network adapter. This value should be set to TRUE for a physical adapter.</p>
 </dd>
 
-### -field <b>SriovCapabilities</b>
+### -field SriovCapabilities
 
 <dd>
 <p>A pointer to an <a href="..\ntddndis\ns-ntddndis--ndis-sriov-capabilities.md">NDIS_SRIOV_CAPABILITIES</a> structure. This structure specifies the single root I/O virtualization (SR-IOV) capabilities that are currently enabled on the underlying miniport adapter. This value can be <b>NULL</b> if the miniport adapter does not support SR-IOV features.</p>
-<p>For more information, see <a href="NULL">Single Root I/O Virtualization (SR-IOV)</a>.</p>
+<p>For more information, see <a href="netvista.single_root_i_o_virtualization__sr-iov_">Single Root I/O Virtualization (SR-IOV)</a>.</p>
 </dd>
 
-### -field <b>NicSwitchArray</b>
+### -field NicSwitchArray
 
 <dd>
 <p>A pointer to an <a href="..\ntddndis\ns-ntddndis--ndis-nic-switch-info-array.md">NDIS_NIC_SWITCH_INFO_ARRAY</a> structure.  This array enumerates the NIC switches that have been created on the miniport adapter. NIC switches can be created only if SR-IOV is supported and enabled on the adapter. </p>
@@ -434,7 +434,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
 <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-offload.md">NDIS_OFFLOAD</a>
 </dt>
 <dt>
 <a href="..\ntddndis\ns-ntddndis--ndis-receive-filter-capabilities.md">
@@ -470,4 +470,4 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_ATTACH_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_ATTACH_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

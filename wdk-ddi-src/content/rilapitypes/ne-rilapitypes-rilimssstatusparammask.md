@@ -7,7 +7,7 @@ old-location: netvista\rilimssstatusparammask_2.htm
 old-project: netvista
 ms.assetid: 0d5896e8-b85e-407c-8b3e-cc8ad95c2ab1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef enum _RILIMSSSTATUSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_IMSSTATUS_HUICCAPP"></a><a id="ril_param_imsstatus_huiccapp"></a><b>RIL_PARAM_IMSSTATUS_HUICCAPP</b>
+### -field RIL_PARAM_IMSSTATUS_HUICCAPP
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_IMSSTATUS_AVAILABLESERVICES"></a><a id="ril_param_imsstatus_availableservices"></a><b>RIL_PARAM_IMSSTATUS_AVAILABLESERVICES</b>
+### -field RIL_PARAM_IMSSTATUS_AVAILABLESERVICES
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_IMSSTATUS_SMSSUPPORTEDFORMAT"></a><a id="ril_param_imsstatus_smssupportedformat"></a><b>RIL_PARAM_IMSSTATUS_SMSSUPPORTEDFORMAT</b>
+### -field RIL_PARAM_IMSSTATUS_SMSSUPPORTEDFORMAT
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_IMSSTATUS_SERVINGDOMAIN"></a><a id="ril_param_imsstatus_servingdomain"></a><b>RIL_PARAM_IMSSTATUS_SERVINGDOMAIN</b>
+### -field RIL_PARAM_IMSSTATUS_SERVINGDOMAIN
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_IMSSTATUS_SYSTEMTYPE"></a><a id="ril_param_imsstatus_systemtype"></a><b>RIL_PARAM_IMSSTATUS_SYSTEMTYPE</b>
+### -field RIL_PARAM_IMSSTATUS_SYSTEMTYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_IMSSTATUS_ALL"></a><a id="ril_param_imsstatus_all"></a><b>RIL_PARAM_IMSSTATUS_ALL</b>
+### -field RIL_PARAM_IMSSTATUS_ALL
 
 <dd></dd>
 </dl>

@@ -56,13 +56,13 @@ PVP_DMA_ADAPTER VideoPortGetDmaAdapter(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>VpDeviceDescription</i> [in]
+### -param VpDeviceDescription [in]
 
 <dd>
 <p>Pointer to a <a href="..\video\ns-video--vp-device-description.md">VP_DEVICE_DESCRIPTION</a> structure, which describes the attributes of the physical device.</p>

@@ -61,49 +61,49 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_DENOISE"></a><a id="d3d11_1ddi_video_processor_auto_stream_caps_denoise"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_DENOISE</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_DENOISE
 
 <dd>
 <p>Denoise.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_DERINGING"></a><a id="d3d11_1ddi_video_processor_auto_stream_caps_deringing"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_DERINGING</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_DERINGING
 
 <dd>
 <p>Deringing.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_EDGE_ENHANCEMENT"></a><a id="d3d11_1ddi_video_processor_auto_stream_caps_edge_enhancement"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_EDGE_ENHANCEMENT</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_EDGE_ENHANCEMENT
 
 <dd>
 <p>Edge enhancement.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_COLOR_CORRECTION"></a><a id="d3d11_1ddi_video_processor_auto_stream_caps_color_correction"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_COLOR_CORRECTION</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_COLOR_CORRECTION
 
 <dd>
 <p>Color correction.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_FLESH_TONE_MAPPING"></a><a id="d3d11_1ddi_video_processor_auto_stream_caps_flesh_tone_mapping"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_FLESH_TONE_MAPPING</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_FLESH_TONE_MAPPING
 
 <dd>
 <p>Flesh-tone mapping.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_IMAGE_STABILIZATION"></a><a id="d3d11_1ddi_video_processor_auto_stream_caps_image_stabilization"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_IMAGE_STABILIZATION</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_IMAGE_STABILIZATION
 
 <dd>
 <p>Image stabilization.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_SUPER_RESOLUTION"></a><a id="d3d11_1ddi_video_processor_auto_stream_caps_super_resolution"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_SUPER_RESOLUTION</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_SUPER_RESOLUTION
 
 <dd>
 <p>Enhanced image resolution.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_ANAMORPHIC_SCALING"></a><a id="d3d11_1ddi_video_processor_auto_stream_caps_anamorphic_scaling"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_ANAMORPHIC_SCALING</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_ANAMORPHIC_SCALING
 
 <dd>
 <p>Anamorphic scaling.</p>

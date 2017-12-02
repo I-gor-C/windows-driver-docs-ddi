@@ -61,13 +61,13 @@ NTSTATUS SetDmaEngineState(
 ## -parameters
 <dl>
 
-### -param <i>context</i> [in]
+### -param context [in]
 
 <dd>
 <p>Specifies the context value from the <b>Context</b> member of the <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface.md">HDAUDIO_BUS_INTERFACE</a><u>, </u><a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-v2.md">HDAUDIO_BUS_INTERFACE_V2</a>, or <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a> structure.</p>
 </dd>
 
-### -param <i>streamState</i> [in]
+### -param streamState [in]
 
 <dd>
 <p>Specifies the new stream state. Set this parameter to one of the following HDAUDIO_STREAM_STATE enumeration values:</p>
@@ -88,13 +88,13 @@ NTSTATUS SetDmaEngineState(
 <p>In the current implementation, <b>PauseState</b> and <b>StopState</b> represent the same hardware state.</p>
 </dd>
 
-### -param <i>numberOfHandles</i> [in]
+### -param numberOfHandles [in]
 
 <dd>
 <p>Specifies the number of handles in the <i>handles</i> array. Set this parameter to a nonzero value.</p>
 </dd>
 
-### -param <i>handles</i> [in]
+### -param handles [in]
 
 <dd>
 <p>Pointer to an array of handles to DMA engines. Specify a non-<b>NULL</b> value for this parameter.</p>
@@ -113,7 +113,7 @@ NTSTATUS SetDmaEngineState(
 <p> </p>
 
 ## -remarks
-<p>This routine changes the state of one or more DMA engines to the state that the <i>streamState</i> parameter specifies. The routine synchronizes the state transitions of all the DMA engines that the handles in the <i>handles</i> array identify. For more information, see <a href="NULL">Synchronizing Two or More Streams</a>.</p>
+<p>This routine changes the state of one or more DMA engines to the state that the <i>streamState</i> parameter specifies. The routine synchronizes the state transitions of all the DMA engines that the handles in the <i>handles</i> array identify. For more information, see <a href="https://msdn.microsoft.com/c25f4ca2-8a9f-43bc-a1bf-b71826b446ff">Synchronizing Two or More Streams</a>.</p>
 
 <p>Before calling this routine, set up each DMA engine in the <i>handles</i> array:</p>
 

@@ -7,7 +7,7 @@ old-location: sd\sdbusopeninterface.htm
 old-project: SD
 ms.assetid: a788cd28-81a7-4b8c-b9c5-76dd2b1cd0f3
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/30/2017
 ms.keywords: SdBusOpenInterface
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ NTSTATUS SdBusOpenInterface(
 ## -parameters
 <dl>
 
-### -param <i>Pdo</i> [in]
+### -param Pdo [in]
 
 <dd>
 <p>Pointer to the physical device object that the SD bus driver created for the SD device that the device driver manages. The system passes this pointer to the device driver when it calls the driver's <a href="kernel.adddevice">AddDevice</a> routine.</p>
 </dd>
 
-### -param <i>InterfaceStandard</i> [out]
+### -param InterfaceStandard [out]
 
 <dd>
 <p>Contains, on input, a pointer to a structure of type <a href="https://msdn.microsoft.com/92b8762d-8af3-493c-aa1d-bc245b0cbd83">SDBUS_INTERFACE_STANDARD</a> supplied by the caller. On output, this structure holds pointers to the SD bus interface routines. This structure also contains some context information in its <b>Context</b> member that the caller should pass in every time it calls an interface routine.</p>
 </dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>Contains the size, in bytes, of the structure pointed to by <i>InterfaceStandard</i>.</p>
 </dd>
 
-### -param <i>Version</i> [in]
+### -param Version [in]
 
 <dd>
 <p>Must be set to SDBUS_INTERFACE_VERSION.</p>
@@ -133,4 +133,4 @@ NTSTATUS SdBusOpenInterface(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SdBusOpenInterface function%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SdBusOpenInterface function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,19 +56,19 @@ typedef enum D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS_NONE"></a><a id="d3dwddm2_0ddi_swizzle_pattern_flags_none"></a><b>D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS_NONE</b>
+### -field D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS_NONE
 
 <dd>
 <p>No flags.</p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS_STACK_DEPTH_SLICES"></a><a id="d3dwddm2_0ddi_swizzle_pattern_flags_stack_depth_slices"></a><b>D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS_STACK_DEPTH_SLICES</b>
+### -field D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS_STACK_DEPTH_SLICES
 
 <dd>
 <p>Stack depth slices. </p>
 </dd>
 
-### -field <a id="D3DWDDM2_2DDI_SWIZZLE_PATTERN_FLAGS_CONDITIONAL_POSTAMBLE_XORS"></a><a id="d3dwddm2_2ddi_swizzle_pattern_flags_conditional_postamble_xors"></a><b>D3DWDDM2_2DDI_SWIZZLE_PATTERN_FLAGS_CONDITIONAL_POSTAMBLE_XORS</b>
+### -field D3DWDDM2_2DDI_SWIZZLE_PATTERN_FLAGS_CONDITIONAL_POSTAMBLE_XORS
 
 <dd>
 <p>Conditional post-amble Xors. </p>

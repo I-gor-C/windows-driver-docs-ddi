@@ -57,25 +57,25 @@ typedef struct _D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based video present network (VidPN) source identification number of the input for which the hardware support is queried.</p>
 </dd>
 
-### -field <b>NumPlanes</b>
+### -field NumPlanes
 
 <dd>
 <p>[out] The number of overlay planes that the hardware supports.</p>
 </dd>
 
-### -field <b>pPlanes</b>
+### -field pPlanes
 
 <dd>
 <p>[out] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddi-check-multiplane-overlay-support-plane-info.md">D3DDDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO</a> structure that specifies support attributes that the hardware provides for multiplane overlays.</p>
 </dd>
 
-### -field <b>Supported</b>
+### -field Supported
 
 <dd>
 <p>[out] <b>TRUE</b> if the hardware supports multiplane overlays, otherwise <b>FALSE</b>.

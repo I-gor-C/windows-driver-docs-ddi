@@ -57,19 +57,19 @@ typedef struct _BDA_WMDRM_RENEWLICENSE {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>ulDescrambleStatus</b>
+### -field ulDescrambleStatus
 
 <dd></dd>
 
-### -field <b>ulXmrLicenseOutputLength</b>
+### -field ulXmrLicenseOutputLength
 
 <dd></dd>
 
-### -field <b>argbXmrLicenceOutputBuffer</b>
+### -field argbXmrLicenceOutputBuffer
 
 <dd>
 <p>Specifies the license and entitlement token buffer.</p>

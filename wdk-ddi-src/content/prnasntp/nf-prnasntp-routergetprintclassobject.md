@@ -57,19 +57,19 @@ HRESULT RouterGetPrintClassObject(
 ## -parameters
 <dl>
 
-### -param <i>pPrinter</i> [in]
+### -param pPrinter [in]
 
 <dd>
 <p>A pointer to a null-terminated string that contains the name of the printer or print server.</p>
 </dd>
 
-### -param <i>riid</i> [in]
+### -param riid [in]
 
 <dd>
 <p>The identifier of the requested COM interface.</p>
 </dd>
 
-### -param <i>ppv</i> [out]
+### -param ppv [out]
 
 <dd>
 <p>A pointer to a variable that supplies the address of the COM interface requested in the <i>iid</i> parameter.</p>

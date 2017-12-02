@@ -65,13 +65,13 @@ NTSTATUS GetNextChunkData(
 ## -parameters
 <dl>
 
-### -param <i>hMiracastDeviceHandle</i> [in]
+### -param hMiracastDeviceHandle [in]
 
 <dd>
 <p>A handle that represents a Miracast device. The Miracast user-mode driver previously obtained this handle as the <i>hMiracastDeviceHandle</i> parameter in a call to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-create-miracast-context.md">CreateMiracastContext</a> function.</p>
 </dd>
 
-### -param <i>TimeoutInMilliseconds</i> [in]
+### -param TimeoutInMilliseconds [in]
 
 <dd>
 <p>The timeout interval value, in milliseconds, supplied by the Miracast user-mode driver.</p>
@@ -79,20 +79,20 @@ NTSTATUS GetNextChunkData(
 <p>If this value is zero and a chunk is not ready, the operating system will not block a call to <b>GetNextChunkData</b>.</p>
 </dd>
 
-### -param <i>AdditionalWaitEventCount</i> [in]
+### -param AdditionalWaitEventCount [in]
 
 <dd>
 <p>The number of additional events that are supplied in the <i>pAdditionalWaitEvents</i> parameter.</p>
 <p> A maximum of 4 wait events can be supplied.</p>
 </dd>
 
-### -param <i>pAdditionalWaitEvents</i> [in, optional]
+### -param pAdditionalWaitEvents [in, optional]
 
 <dd>
 <p>An optional pointer to an array of events that  <b>GetNextChunkData</b> will wait on while waiting for a new encode chunk.</p>
 </dd>
 
-### -param <i>pChunkDataBufferSize</i> [in, out]
+### -param pChunkDataBufferSize [in, out]
 
 <dd>
 <p>A pointer to a variable that contains the size, in bytes, of the <i>pChunkDataBuffer</i> buffer.</p>
@@ -100,13 +100,13 @@ NTSTATUS GetNextChunkData(
 <p>When  <b>GetNextChunkData</b> returns a success code, this parameter contains the size of actual encode chunk data returned in <i>pChunkDataBuffer</i>.</p>
 </dd>
 
-### -param <i>pChunkDataBuffer</i> [out]
+### -param pChunkDataBuffer [out]
 
 <dd>
 <p>A pointer to a buffer of type  <a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-data.md">MIRACAST_CHUNK_DATA</a> that the operating system provides to store information about the next encode chunk. This parameter is provided only if the call to <b>GetNextChunkData</b> is successful.</p>
 </dd>
 
-### -param <i>pOutstandingChunksToProcess</i> [out]
+### -param pOutstandingChunksToProcess [out]
 
 <dd>
 <p>A pointer to a variable that contains the number of outstanding encode chunks that are available for the driver at the time this call returned.  This parameter is provided only if the call to <b>GetNextChunkData</b> is successful.</p>

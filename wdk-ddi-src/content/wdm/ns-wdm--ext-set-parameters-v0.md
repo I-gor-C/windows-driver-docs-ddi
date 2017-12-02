@@ -57,19 +57,19 @@ typedef struct _EXT_SET_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of this <b>EXT_SET_PARAMETERS</b> structure. The <a href="..\wdm\nf-wdm-exinitializesettimerparameters.md">ExInitializeSetTimerParameters</a> routine sets this member to the correct version number.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Set to zero. The <b>ExInitializeSetTimerParameters</b> routine sets this member to zero.</p>
 </dd>
 
-### -field <b>NoWakeTolerance</b>
+### -field NoWakeTolerance
 
 <dd>
 <p>The maximum time, in system time units (100-nanosecond intervals), that the timer can wait to wake the processor after the timer reaches its expiration time. Only after the processor wakes can the timer expire. If a timer is set to expire when the processor is in a low-power state, the timer will not wake the processor to expire until the expiration time plus the <b>NoWakeTolerance</b> delay is exceeded. As an option, a driver can set this member to EX_TIMER_UNLIMITED_TOLERANCE, which indicates that the timer never wakes the processor and, thus, cannot expire until the processor wakes for some other reason.</p>

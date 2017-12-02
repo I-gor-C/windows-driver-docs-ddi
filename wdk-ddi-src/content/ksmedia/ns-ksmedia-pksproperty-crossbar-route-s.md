@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>IndexInputPin</b>
+### -field IndexInputPin
 
 <dd>
 <p>Specifies the zero-based index of the input pin for which the query is being made.</p>
 </dd>
 
-### -field <b>IndexOutputPin</b>
+### -field IndexOutputPin
 
 <dd>
 <p>Specifies the zero-based index of the output pin for which the query is being made.</p>
 </dd>
 
-### -field <b>CanRoute</b>
+### -field CanRoute
 
 <dd>
 <p>Returns whether the minidriver supports routing between the pins specified by <b>IndexInputPin</b> and <b>IndexOutputPin</b>. A nonzero value indicates that routing is supported. If the minidriver does not support routing between the two pins, this value is zero.</p>

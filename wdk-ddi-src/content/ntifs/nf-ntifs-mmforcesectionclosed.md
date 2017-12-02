@@ -7,7 +7,7 @@ old-location: ifsk\mmforcesectionclosed.htm
 old-project: ifsk
 ms.assetid: aa598c4b-e840-41cb-81a3-719a5b1ee48b
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: MmForceSectionClosed
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ BOOLEAN MmForceSectionClosed(
 ## -parameters
 <dl>
 
-### -param <i>SectionObjectPointer</i> [in]
+### -param SectionObjectPointer [in]
 
 <dd>
 <p>A pointer to a structure that contains the file object's section object pointers.</p>
 </dd>
 
-### -param <i>DelayClose</i> [in]
+### -param DelayClose [in]
 
 <dd>
 <p>A Boolean value that specifies whether the section is subsequently deleted if <b>MmForceSectionClosed</b> cannot delete the section synchronously (that is, prior to <b>MmForceSectionClosed</b> returning). </p>
@@ -139,4 +139,4 @@ BOOLEAN MmForceSectionClosed(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MmForceSectionClosed routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MmForceSectionClosed routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

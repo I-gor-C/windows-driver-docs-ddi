@@ -57,19 +57,19 @@ typedef struct _DXVA_Highlight {
 ## -struct-fields
 <dl>
 
-### -field <b>wHighlightActive</b>
+### -field wHighlightActive
 
 <dd>
 <p>Indicates whether a rectangular highlight area is active. Zero indicates inactive and 1 indicates active. If inactive, the highlight data must have no effect on the content of the blended picture.</p>
 </dd>
 
-### -field <b>wHighlightIndices</b>
+### -field wHighlightIndices
 
 <dd>
 <p>Contains four palette indexes. Each palette index consists of 4 bits. Each 2-bit index in the highlighted rectangular area of the DXPD is used to select among these four palette indexes. The 4 most significant bits are for index 3, the next 4 bits are for index 2, the next 4 bits are for index 1, and the 4 least significant bits are for index 0. </p>
 </dd>
 
-### -field <b>wHighlightAlphas</b>
+### -field wHighlightAlphas
 
 <dd>
 <p>Contains four opacity values. Each opacity value consists of 4 bits. Each 2-bit index in the highlighted rectangular area of the DXPD is used to select among these four opacity values. The 4 most significant bits are for index 3, the next 4 bits are for index 2, the next 4 bits are for index 1, and the 4 least significant bits are for index 0.</p>
@@ -90,7 +90,7 @@ typedef struct _DXVA_Highlight {
 </ul>
 </dd>
 
-### -field <b>HighlightRect</b>
+### -field HighlightRect
 
 <dd>
 <p>Specifies a <a href="display.rect">RECT</a> structure that defines the area of the highlight rectangle.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ndismcosendnetbufferlistscomplete.htm
 old-project: netvista
 ms.assetid: c4978122-6d13-4e9b-8eb7-d06cd7372268
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMCoSendNetBufferListsComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ VOID NdisMCoSendNetBufferListsComplete(
 ## -parameters
 <dl>
 
-### -param <i>NdisVcHandle</i> [in]
+### -param NdisVcHandle [in]
 
 <dd>
 <p>A handle that identifies a virtual connection (VC). The miniport driver obtained this handle as an
@@ -69,7 +69,7 @@ VOID NdisMCoSendNetBufferListsComplete(
      service access point (SAP) to indicate an incoming-call notification on.</p>
 </dd>
 
-### -param <i>NetBufferLists</i> [in]
+### -param NetBufferLists [in]
 
 <dd>
 <p>A pointer to a linked list of 
@@ -79,7 +79,7 @@ VOID NdisMCoSendNetBufferListsComplete(
      MiniportCoSendNetBufferLists</a> function.</p>
 </dd>
 
-### -param <i>SendCompleteFlags</i> [in]
+### -param SendCompleteFlags [in]
 
 <dd>
 <p>NDIS flags that can be combined with a bitwise OR operation. To clear all of the flags, set this
@@ -87,7 +87,7 @@ VOID NdisMCoSendNetBufferListsComplete(
      <b>NdisMCoSendNetBufferListsComplete</b> supports the NDIS_SEND_COMPLETE_FLAGS_DISPATCH_LEVEL flag,
      which; if set, indicates that the current IRQL is DISPATCH_LEVEL. For more information about this flag,
      see 
-     <a href="NULL">Dispatch IRQL Tracking</a>.</p>
+     <a href="netvista.dispatch_irql_tracking">Dispatch IRQL Tracking</a>.</p>
 </dd>
 </dl>
 
@@ -223,4 +223,4 @@ VOID NdisMCoSendNetBufferListsComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoSendNetBufferListsComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoSendNetBufferListsComplete function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

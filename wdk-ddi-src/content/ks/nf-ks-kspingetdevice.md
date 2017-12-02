@@ -54,7 +54,7 @@ PKSDEVICE __inline KsPinGetDevice(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure representing the pin for which to return the owning AVStream device.</p>

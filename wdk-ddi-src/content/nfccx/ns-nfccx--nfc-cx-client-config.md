@@ -62,7 +62,7 @@ typedef struct _NFC_CX_CLIENT_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of this structure in bytes.
@@ -70,13 +70,13 @@ typedef struct _NFC_CX_CLIENT_CONFIG {
 </p>
 </dd>
 
-### -field <b>IsPowerPolicyOwner</b>
+### -field IsPowerPolicyOwner
 
 <dd>
 <p> A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed enumerator. </p>
 </dd>
 
-### -field <b>PowerIdleTimeout</b>
+### -field PowerIdleTimeout
 
 <dd>
 <p>IdleTimeout value, in milliseconds. Default is 1 second.
@@ -84,7 +84,7 @@ typedef struct _NFC_CX_CLIENT_CONFIG {
 </p>
 </dd>
 
-### -field <b>PowerIdleType</b>
+### -field PowerIdleType
 
 <dd>
 <p>A <a href="..\wdfdevice\ne-wdfdevice--wdf-power-policy-idle-timeout-type.md">WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE</a>-typed enumerator.
@@ -92,7 +92,7 @@ typedef struct _NFC_CX_CLIENT_CONFIG {
 </p>
 </dd>
 
-### -field <b>BusType</b>
+### -field BusType
 
 <dd>
 <p> An <a href="..\nfccx\ne-nfccx--nfc-cx-transport-type.md">NFC_CX_TRANSPORT_TYPE</a>-typed enumerator.
@@ -100,7 +100,7 @@ typedef struct _NFC_CX_CLIENT_CONFIG {
 </p>
 </dd>
 
-### -field <b>DriverFlags</b>
+### -field DriverFlags
 
 <dd>
 <p> Combination of <a href="..\nfccx\ne-nfccx--nfc-cx-driver-flags.md">NFC_CX_DRIVER_FLAGS</a> values.
@@ -108,7 +108,7 @@ typedef struct _NFC_CX_CLIENT_CONFIG {
 </p>
 </dd>
 
-### -field <b>DeviceMode</b>
+### -field DeviceMode
 
 <dd>
 <p> Device mode.
@@ -116,13 +116,13 @@ typedef struct _NFC_CX_CLIENT_CONFIG {
 </p>
 </dd>
 
-### -field <b>EvtNfcCxWriteNciPacket</b>
+### -field EvtNfcCxWriteNciPacket
 
 <dd>
 <p>Pointer to an <a href="..\nfccx\nc-nfccx-evt-nfc-cx-write-nci-packet.md">EvtNfcCxWriteNciPacket</a> callback.</p>
 </dd>
 
-### -field <b>EvtNfcCxDeviceIoControl</b>
+### -field EvtNfcCxDeviceIoControl
 
 <dd>
 <p>Pointer to an <a href="..\nfccx\nc-nfccx-evt-nfc-cx-device-io-control.md">EvtNfcCxDeviceIoControl</a> callback.</p>

@@ -7,7 +7,7 @@ old-location: ieee\unit_diag_level.htm
 old-project: IEEE
 ms.assetid: 2759486f-7eaa-4af4-b9a9-2e44354f411b
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: UNIT_DIAG_LEVEL, UNIT_DIAG_LEVEL, *PUNIT_DIAG_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,38 +53,38 @@ typedef struct _UNIT_DIAG_LEVEL {
 ## -struct-fields
 <dl>
 
-### -field <b>DiagLevel</b>
+### -field DiagLevel
 
 <dd>
 <p>The bitmask representing the diaglevel. Possible settings are:</p>
 <p></p>
 <dl>
 
-### -field <a id="DIAGLEVEL_NONE"></a><a id="diaglevel_none"></a>DIAGLEVEL_NONE
+### -field DIAGLEVEL_NONE
 
 <dd>
 <p>Nothing set.</p>
 </dd>
 
-### -field <a id="DIAGLEVEL_IGNORE_OPLUG"></a><a id="diaglevel_ignore_oplug"></a>DIAGLEVEL_IGNORE_OPLUG
+### -field DIAGLEVEL_IGNORE_OPLUG
 
 <dd>
 <p>Ignore programming of the oPCR plug on the device when set.</p>
 </dd>
 
-### -field <a id="DIAGLEVEL_IGNORE_IPLUG"></a><a id="diaglevel_ignore_iplug"></a>DIAGLEVEL_IGNORE_IPLUG
+### -field DIAGLEVEL_IGNORE_IPLUG
 
 <dd>
 <p>Ignore programming of the iPCR on the device when set.</p>
 </dd>
 
-### -field <a id="DIAGLEVEL_SET_CHANNEL_63"></a><a id="diaglevel_set_channel_63"></a>DIAGLEVEL_SET_CHANNEL_63
+### -field DIAGLEVEL_SET_CHANNEL_63
 
 <dd>
 <p>Set the channel to 63 when disconnecting from the device.</p>
 </dd>
 
-### -field <a id="DIAGLEVEL_IPCR_IGNORE_FREE"></a><a id="diaglevel_ipcr_ignore_free"></a>DIAGLEVEL_IPCR_IGNORE_FREE
+### -field DIAGLEVEL_IPCR_IGNORE_FREE
 
 <dd>
 <p>Do not free isochronous resources when disconnecting from the device iPCR.</p>
@@ -118,4 +118,4 @@ typedef struct _UNIT_DIAG_LEVEL {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20UNIT_DIAG_LEVEL structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20UNIT_DIAG_LEVEL structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

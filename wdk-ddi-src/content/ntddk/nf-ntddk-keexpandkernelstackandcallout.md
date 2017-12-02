@@ -56,19 +56,19 @@ NTSTATUS KeExpandKernelStackAndCallout(
 ## -parameters
 <dl>
 
-### -param <i>Callout</i> [in]
+### -param Callout [in]
 
 <dd>
 <p>Pointer to an <a href="kernel.expandedstackcall">ExpandedStackCall</a> routine.</p>
 </dd>
 
-### -param <i>Parameter</i> [in, optional]
+### -param Parameter [in, optional]
 
 <dd>
 <p>Specifies the parameter to pass to the <i>ExpandedStackCall</i> routine.</p>
 </dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>Specifies the number of bytes on the stack to provide to the <i>ExpandedStackCall</i> routine. This value must be large enough to accommodate the stack usage of the <i>ExpandedStackCall</i> routine and any call that this routine might make. This value must not exceed MAXIMUM_EXPANSION_SIZE.</p>

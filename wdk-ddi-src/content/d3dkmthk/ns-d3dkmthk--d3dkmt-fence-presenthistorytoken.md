@@ -54,7 +54,7 @@ typedef struct _D3DKMT_FENCE_PRESENTHISTORYTOKEN {
 ## -struct-fields
 <dl>
 
-### -field <b>Key</b>
+### -field Key
 
 <dd>
 <p>[in] A 64-bit value that specifies the key for the fence. </p>

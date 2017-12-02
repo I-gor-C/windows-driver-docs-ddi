@@ -54,7 +54,7 @@ void KsReleaseControl(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>The object for which to release the control mutex.</p>
@@ -69,7 +69,7 @@ void KsReleaseControl(
 
 <p>Minidrivers typically do not call <b>KsReleaseControl</b> directly, but instead call <a href="..\ks\nf-ks-ksfilterreleasecontrol.md">KsFilterReleaseControl</a> or <a href="..\ks\nf-ks-kspinreleasecontrol.md">KsPinReleaseControl</a>. These versions automatically provide the necessary typecasting to PVOID.</p>
 
-<p>For more information, see <a href="NULL">Mutexes in AVStream</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>. </p>
 
 ## -requirements
 <table>

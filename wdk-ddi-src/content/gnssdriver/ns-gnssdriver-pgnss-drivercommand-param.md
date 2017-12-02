@@ -7,7 +7,7 @@ old-location: sensors\gnss_drivercommand_param.htm
 old-project: sensors
 ms.assetid: EC6EDD7A-B57F-4350-9EB9-56721EAC19BD
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_DRIVERCOMMAND_PARAM, GNSS_DRIVERCOMMAND_PARAM, *PGNSS_DRIVERCOMMAND_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,45 +61,45 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>CommandType</b>
+### -field CommandType
 
 <dd>
 <p>Identifies the specific command that the driver is required to execute.</p>
 <p>This is a well-defined list of GNSS driver commands, as defined by the <a href="..\gnssdriver\ne-gnssdriver-gnss-drivercommand-type.md">GNSS_DRIVERCOMMAND_TYPE</a> enumeration.</p>
 </dd>
 
-### -field <b>CommandFlag</b>
+### -field CommandFlag
 
 <dd>
 <p>Bitmask indicating certain aspects of the command.</p>
 <p>The flags are defined by the GNSS_DRIVERCOMMAND_FLAG_* macro.</p>
 </dd>
 
-### -field <b>CommandDataSize</b>
+### -field CommandDataSize
 
 <dd>
 <p>Size of the configuration data being sent to the driver.</p>
 </dd>
 
-### -field <b>Unused[512]</b>
+### -field Unused[512]
 
 <dd>
 <p>Padding buffer.</p>
 </dd>
 
-### -field <b>CommandData[ANYSIZE_ARRAY]</b>
+### -field CommandData[ANYSIZE_ARRAY]
 
 <dd>
 <p>Data associated with the specific command type.</p>

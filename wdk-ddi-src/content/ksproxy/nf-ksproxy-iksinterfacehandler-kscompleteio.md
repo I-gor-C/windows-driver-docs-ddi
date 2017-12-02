@@ -54,7 +54,7 @@ HRESULT KsCompleteIo(
 ## -parameters
 <dl>
 
-### -param <i>StreamSegment</i> [in, out]
+### -param StreamSegment [in, out]
 
 <dd>
 <p>Pointer to a <a href="..\ksproxy\ns-ksproxy--ksstream-segment.md">KSSTREAM_SEGMENT</a> structure that contains header information for a stream segment to complete. </p>

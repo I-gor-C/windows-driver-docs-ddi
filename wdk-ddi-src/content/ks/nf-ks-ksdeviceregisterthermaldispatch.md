@@ -55,13 +55,13 @@ void KSDDKAPI NTSTATUS NTAPI KsDeviceRegisterThermalDispatch(
 ## -parameters
 <dl>
 
-### -param <i>KsDevice</i> [in]
+### -param KsDevice [in]
 
 <dd>
 <p>A KS device object representing the device managed by KS. For more information, see <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a>.</p>
 </dd>
 
-### -param <i>KsDeviceThermalDispatch</i> [in]
+### -param KsDeviceThermalDispatch [in]
 
 <dd>
 <p>A structure containing the Avstream driver active and passive thermal callback notifications.</p>

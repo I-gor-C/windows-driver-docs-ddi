@@ -7,7 +7,7 @@ old-location: wdf\iwdfdevice_setpnpstate.htm
 old-project: wdf
 ms.assetid: 3bd88ecd-7c7c-4ee9-8eb8-bc5653bd4ed0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFDevice, SetPnpState, IWDFDevice::SetPnpState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ void SetPnpState(
 ## -parameters
 <dl>
 
-### -param <i>State</i> [in]
+### -param State [in]
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-pnp-state.md">WDF_PNP_STATE</a>-typed value that identifies the PnP property to set.</p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>A WDF_TRI_STATE-typed value that identifies how to set the PnP property that <i>State</i> specifies. The following table shows the possible values for <i>Value</i>.</p>
@@ -176,4 +176,4 @@ void SetPnpState(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice::SetPnpState method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice::SetPnpState method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>Specifies the standard interface header.</p>
 </dd>
 
-### -field <b>QueryMediumsList</b>
+### -field QueryMediumsList
 
 <dd>
 <p>Specifies the interface definition.</p>

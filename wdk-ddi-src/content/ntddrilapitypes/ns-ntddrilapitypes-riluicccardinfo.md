@@ -7,7 +7,7 @@ old-location: netvista\riluicccardinfo.htm
 old-project: netvista
 ms.assetid: 761f1ab6-75e6-4c40-b79c-01f2e92df495
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUICCCARDINFO, RILUICCCARDINFO, *LPRILUICCCARDINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,27 +59,27 @@ typedef struct _RILUICCCARDINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>fIsVirtualCard</b>
+### -field fIsVirtualCard
 
 <dd></dd>
 
-### -field <b>IccId</b>
+### -field IccId
 
 <dd></dd>
 
-### -field <b>dwNumApps</b>
+### -field dwNumApps
 
 <dd></dd>
 
-### -field <b>AppInfo</b>
+### -field AppInfo
 
 <dd></dd>
 </dl>

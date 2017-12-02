@@ -58,31 +58,31 @@ typedef struct _MSiSCSI_DiscoveryConfig {
 ## -struct-fields
 <dl>
 
-### -field <b>PerformiSNSDiscovery</b>
+### -field PerformiSNSDiscovery
 
 <dd>
 <p>A Boolean value that indicates whether the initiator performs target discovery by using iSNS and a predetermined iSNS server. If this member is <b>TRUE</b>, the initiator performs target discovery by using iSNS and a predetermined iSNS server. If this member is <b>FALSE</b>, the initiator does not do discovery with iSNS.</p>
 </dd>
 
-### -field <b>PerformSLPDiscovery</b>
+### -field PerformSLPDiscovery
 
 <dd>
 <p>A Boolean value that indicates whether the initiator performs target discovery by using SLP. If this member is <b>TRUE</b>, the initiator performs target discovery by using SLP. </p>
 </dd>
 
-### -field <b>AutomaticiSNSDiscovery</b>
+### -field AutomaticiSNSDiscovery
 
 <dd>
 <p>A Boolean value that indicates whether the initiator should automatically search for an iSNS server and then perform target discovery by using iSNS. If this member is <b>TRUE</b>, the initiator should automatically search for an iSNS server and then perform target discovery by using iSNS.</p>
 </dd>
 
-### -field <b>InitiatorName</b>
+### -field InitiatorName
 
 <dd>
 <p>The default initiator name to register with the iSNS server. </p>
 </dd>
 
-### -field <b>iSNSServer</b>
+### -field iSNSServer
 
 <dd>
 <p>If <b>AutomaticiSNSDiscovery</b> is <b>FALSE</b>, <b>iSNSServer</b> contains a <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that provides a fixed address of the iSNS server that is independent of the version of the IP protocol in use. </p>

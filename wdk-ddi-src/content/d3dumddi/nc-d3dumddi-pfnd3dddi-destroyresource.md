@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY DestroyResource(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context) that is used to destroy the resource.</p>
 </dd>
 
-### -param <i>hResource</i> [in]
+### -param hResource [in]
 
 <dd>
 <p> A handle to the resource that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource.md">CreateResource</a> or <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-openresource.md">OpenResource</a> function created.</p>

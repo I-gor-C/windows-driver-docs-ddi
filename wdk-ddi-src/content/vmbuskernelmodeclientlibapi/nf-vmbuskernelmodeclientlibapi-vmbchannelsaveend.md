@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelsaveend.htm
 old-project: netvista
 ms.assetid: 0E61AF98-DC71-4234-B337-71B2AF65D858
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbChannelSaveEnd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ VOID VmbChannelSaveEnd(
 ## -parameters
 <dl>
 
-### -param <i>Channel
+### -param Channel
     </i> [in]
 
 <dd>

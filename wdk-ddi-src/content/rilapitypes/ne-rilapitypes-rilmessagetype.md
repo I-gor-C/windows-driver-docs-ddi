@@ -7,7 +7,7 @@ old-location: netvista\rilmessagetype_2.htm
 old-project: netvista
 ms.assetid: 5f167bd5-a2b8-48a1-b403-e9ac68122ae4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef enum _RILMESSAGETYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGTYPE_IN_STATUS"></a><a id="ril_msgtype_in_status"></a><b>RIL_MSGTYPE_IN_STATUS</b>
+### -field RIL_MSGTYPE_IN_STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTYPE_IN_IS637STATUS"></a><a id="ril_msgtype_in_is637status"></a><b>RIL_MSGTYPE_IN_IS637STATUS</b>
+### -field RIL_MSGTYPE_IN_IS637STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTYPE_IN_CDMADELIVER"></a><a id="ril_msgtype_in_cdmadeliver"></a><b>RIL_MSGTYPE_IN_CDMADELIVER</b>
+### -field RIL_MSGTYPE_IN_CDMADELIVER
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTYPE_OUT_SUBMIT"></a><a id="ril_msgtype_out_submit"></a><b>RIL_MSGTYPE_OUT_SUBMIT</b>
+### -field RIL_MSGTYPE_OUT_SUBMIT
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTYPE_OUT_CDMASUBMIT"></a><a id="ril_msgtype_out_cdmasubmit"></a><b>RIL_MSGTYPE_OUT_CDMASUBMIT</b>
+### -field RIL_MSGTYPE_OUT_CDMASUBMIT
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTYPE_BC_GENERAL"></a><a id="ril_msgtype_bc_general"></a><b>RIL_MSGTYPE_BC_GENERAL</b>
+### -field RIL_MSGTYPE_BC_GENERAL
 
 <dd></dd>
 </dl>

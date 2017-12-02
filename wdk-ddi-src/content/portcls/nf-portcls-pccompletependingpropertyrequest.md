@@ -55,13 +55,13 @@ NTSTATUS PcCompletePendingPropertyRequest(
 ## -parameters
 <dl>
 
-### -param <i>PropertyRequest</i> [in]
+### -param PropertyRequest [in]
 
 <dd>
 <p>Pointer to the property request that was passed to the property handler. The request is a structure of type <a href="..\portcls\ns-portcls--pcproperty-request.md">PCPROPERTY_REQUEST</a>.</p>
 </dd>
 
-### -param <i>NtStatus</i> [in]
+### -param NtStatus [in]
 
 <dd>
 <p>Specifies the completion status of the request. See the list of NTSTATUS values defined in header file ntstatus.h.</p>

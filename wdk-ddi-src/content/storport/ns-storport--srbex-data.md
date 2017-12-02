@@ -57,7 +57,7 @@ typedef struct _SRBEX_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Data type indicator for the extended SRB data structure. The possible values for <b>Type</b> are one of the following.</p>
@@ -69,7 +69,7 @@ typedef struct _SRBEX_DATA {
 <tr>
 <td width="40%"><a id="SrbExDataTypeUnknown"></a><a id="srbexdatatypeunknown"></a><a id="SRBEXDATATYPEUNKNOWN"></a><dl>
 
-### -field <b>SrbExDataTypeUnknown</b>
+### -field SrbExDataTypeUnknown
 
 </dl>
 </td>
@@ -80,102 +80,102 @@ typedef struct _SRBEX_DATA {
 <tr>
 <td width="40%"><a id="SrbExDataTypeBidirectional"></a><a id="srbexdatatypebidirectional"></a><a id="SRBEXDATATYPEBIDIRECTIONAL"></a><dl>
 
-### -field <b>SrbExDataTypeBidirectional</b>
+### -field SrbExDataTypeBidirectional
 
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-bidirectional.md">SRBEX_DATA_BIDIRECTIONAL</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\storport\ns-storport--srbex-data-bidirectional.md">SRBEX_DATA_BIDIRECTIONAL</a> structure.</p>
 </td>
 </tr>
 <tr>
 <td width="40%"><a id="SrbExDataTypeScsiCdb16"></a><a id="srbexdatatypescsicdb16"></a><a id="SRBEXDATATYPESCSICDB16"></a><dl>
 
-### -field <b>SrbExDataTypeScsiCdb16</b>
+### -field SrbExDataTypeScsiCdb16
 
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-scsi-cdb16.md">SRBEX_DATA_SCSI_CDB16</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\storport\ns-storport--srbex-data-scsi-cdb16.md">SRBEX_DATA_SCSI_CDB16</a> structure.</p>
 </td>
 </tr>
 <tr>
 <td width="40%"><a id="SrbExDataTypeScsiCdb32"></a><a id="srbexdatatypescsicdb32"></a><a id="SRBEXDATATYPESCSICDB32"></a><dl>
 
-### -field <b>SrbExDataTypeScsiCdb32</b>
+### -field SrbExDataTypeScsiCdb32
 
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-scsi-cdb32.md">SRBEX_DATA_SCSI_CDB32</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\storport\ns-storport--srbex-data-scsi-cdb32.md">SRBEX_DATA_SCSI_CDB32</a> structure.</p>
 </td>
 </tr>
 <tr>
 <td width="40%"><a id="SrbExDataTypeScsiCdbVar"></a><a id="srbexdatatypescsicdbvar"></a><a id="SRBEXDATATYPESCSICDBVAR"></a><dl>
 
-### -field <b>SrbExDataTypeScsiCdbVar</b>
+### -field SrbExDataTypeScsiCdbVar
 
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-scsi-cdb-var.md">SRBEX_DATA_SCSI_CDB_VAR</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\storport\ns-storport--srbex-data-scsi-cdb-var.md">SRBEX_DATA_SCSI_CDB_VAR</a> structure.</p>
 </td>
 </tr>
 <tr>
 <td width="40%"><a id="SrbExDataTypeWmi"></a><a id="srbexdatatypewmi"></a><a id="SRBEXDATATYPEWMI"></a><dl>
 
-### -field <b>SrbExDataTypeWmi</b>
+### -field SrbExDataTypeWmi
 
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-wmi.md">SRBEX_DATA_WMI</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\storport\ns-storport--srbex-data-wmi.md">SRBEX_DATA_WMI</a> structure.</p>
 </td>
 </tr>
 <tr>
 <td width="40%"><a id="SrbExDataTypePower"></a><a id="srbexdatatypepower"></a><a id="SRBEXDATATYPEPOWER"></a><dl>
 
-### -field <b>SrbExDataTypePower</b>
+### -field SrbExDataTypePower
 
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-power.md">SRBEX_DATA_POWER</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\storport\ns-storport--srbex-data-power.md">SRBEX_DATA_POWER</a> structure.</p>
 </td>
 </tr>
 <tr>
 <td width="40%"><a id="SrbExDataTypePnp"></a><a id="srbexdatatypepnp"></a><a id="SRBEXDATATYPEPNP"></a><dl>
 
-### -field <b>SrbExDataTypePnp</b>
+### -field SrbExDataTypePnp
 
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-pnp.md">SRBEX_DATA_PNP</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\storport\ns-storport--srbex-data-pnp.md">SRBEX_DATA_PNP</a> structure.</p>
 </td>
 </tr>
 <tr>
 <td width="40%"><a id="SrbExDataTypeIoInfo"></a><a id="srbexdatatypeioinfo"></a><a id="SRBEXDATATYPEIOINFO"></a><dl>
 
-### -field <b>SrbExDataTypeIoInfo</b>
+### -field SrbExDataTypeIoInfo
 
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-io-info.md">SRBEX_DATA_IO_INFO</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\storport\ns-storport--srbex-data-io-info.md">SRBEX_DATA_IO_INFO</a> structure.</p>
 </td>
 </tr>
 </table>
 <p> </p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Length of the SRB data, in bytes, present  in the <b>Data</b> member.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>The extended SRB data block contents.</p>
@@ -183,7 +183,7 @@ typedef struct _SRBEX_DATA {
 </dl>
 
 ## -remarks
-<p>The SRB extended data is present when the <b>SrbExDataOffset</b> array in the <a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a> structure contains valid offset locations.  A storage driver initially references a memory offset location contained in <b>SrbExDataOffset</b> as an <b>SRBEX_DATA</b> structure. A pointer to the data block is then cast to the appropriate structure type based on the data type value in the <b>Type</b> member.</p>
+<p>The SRB extended data is present when the <b>SrbExDataOffset</b> array in the <a href="..\storport\ns-storport--storage-request-block.md">STORAGE_REQUEST_BLOCK</a> structure contains valid offset locations.  A storage driver initially references a memory offset location contained in <b>SrbExDataOffset</b> as an <b>SRBEX_DATA</b> structure. A pointer to the data block is then cast to the appropriate structure type based on the data type value in the <b>Type</b> member.</p>
 
 <p>The following example code fragment shows how to access the extended data for the an SRB function of SRB_FUNCTION_PNP.</p>
 
@@ -212,28 +212,28 @@ typedef struct _SRBEX_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="..\srb\ns-srb--srbex-data-bidirectional.md">SRBEX_DATA_BIDIRECTIONAL</a>
+<a href="..\storport\ns-storport--srbex-data-bidirectional.md">SRBEX_DATA_BIDIRECTIONAL</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb--srbex-data-io-info.md">SRBEX_DATA_IO_INFO</a>
+<a href="..\storport\ns-storport--srbex-data-io-info.md">SRBEX_DATA_IO_INFO</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb--srbex-data-pnp.md">SRBEX_DATA_PNP</a>
+<a href="..\storport\ns-storport--srbex-data-pnp.md">SRBEX_DATA_PNP</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb--srbex-data-power.md">SRBEX_DATA_POWER</a>
+<a href="..\storport\ns-storport--srbex-data-power.md">SRBEX_DATA_POWER</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb--srbex-data-scsi-cdb16.md">SRBEX_DATA_SCSI_CDB16</a>
+<a href="..\storport\ns-storport--srbex-data-scsi-cdb16.md">SRBEX_DATA_SCSI_CDB16</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb--srbex-data-scsi-cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
+<a href="..\storport\ns-storport--srbex-data-scsi-cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb--srbex-data-scsi-cdb-var.md">SRBEX_DATA_SCSI_CDB_VAR</a>
+<a href="..\storport\ns-storport--srbex-data-scsi-cdb-var.md">SRBEX_DATA_SCSI_CDB_VAR</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb--srbex-data-wmi.md">SRBEX_DATA_WMI</a>
+<a href="..\storport\ns-storport--srbex-data-wmi.md">SRBEX_DATA_WMI</a>
 </dt>
 </dl>
 <p> </p>

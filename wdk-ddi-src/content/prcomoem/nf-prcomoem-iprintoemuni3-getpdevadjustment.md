@@ -59,13 +59,13 @@ HRESULT GetPDEVAdjustment(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>dwAdjustType</i> 
+### -param dwAdjustType 
 
 <dd>
 <p>Specifies the type of adjustment asked for. The following flags are currently supported.</p>
@@ -102,19 +102,19 @@ HRESULT GetPDEVAdjustment(
 <p> </p>
 </dd>
 
-### -param <i>pBuf</i> 
+### -param pBuf 
 
 <dd>
 <p>Pointer to a structure that contains the planned settings that are used if there is no change. These structures are listed in the preceding table. The plug-in can overwrite the settings in the relevant structure.</p>
 </dd>
 
-### -param <i>cbBuffer</i> 
+### -param cbBuffer 
 
 <dd>
 <p>Specifies the size, in bytes, of the structure pointed to by <i>pBuf</i>.</p>
 </dd>
 
-### -param <i>pbAdjustmentDone</i> [out]
+### -param pbAdjustmentDone [out]
 
 <dd>
 <p>Pointer to a memory location that the plug-in sets to <b>TRUE</b> when it actually changes a value in the buffer. This may be used by the driver for optimizations.</p>

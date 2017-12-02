@@ -54,7 +54,7 @@ NTSTATUS UnregisterAdapterPnpManagement(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Specifies a pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter that the PnP management was registered with earlier using <a href="audio.iportclspnp_registeradapterpnpmanagement">IPortClsPnp::RegisterAdapterPnpManagement</a>.</p>
@@ -65,7 +65,7 @@ NTSTATUS UnregisterAdapterPnpManagement(
 <p>The <code>UnregisterAdapterPowerManagement</code> method returns STATUS_SUCCESS if the call is successful. Otherwise, it returns the appropriate error code.</p>
 
 ## -remarks
-<p>For more information,  see <a href="NULL">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>
+<p>For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430A-BCAF-04E13FA15382">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>
 
 ## -requirements
 <table>

@@ -66,19 +66,19 @@ _Check_return_ HRESULT APIENTRY* pfnCheckCounter(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>Counter</i> [in]
+### -param Counter [in]
 
 <dd>
 <p> A value of type <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createquery.md">D3DDDIQUERYTYPE</a> that identifies the counter identifier that info is retrieved for.</p>
 </dd>
 
-### -param <i>pType</i> [out]
+### -param pType [out]
 
 <dd>
 <p>A pointer to a variable that receives one of the following values from the <b>D3DDDI_COUNTER_TYPE</b> enumeration that identifies the data type that the counter outputs.</p>
@@ -123,20 +123,20 @@ _Check_return_ HRESULT APIENTRY* pfnCheckCounter(
 <p> </p>
 </dd>
 
-### -param <i>pActiveCounters</i> [out]
+### -param pActiveCounters [out]
 
 <dd>
 <p>A pointer to a variable that receives the number of simultaneously active counters that are allocated for the creation of the counter identifier that the <i>Counter</i> parameter identifies.</p>
 </dd>
 
-### -param <i>pszName</i> [out, optional]
+### -param pszName [out, optional]
 
 <dd>
 <p>An optional pointer that the driver returns a <b>NULL</b>-terminated string to that contains the name of the counter identifier.</p>
 <p>Can be <b>NULL</b>, in which case the app doesn't need the name.</p>
 </dd>
 
-### -param <i>pNameLength</i> [in, out, optional]
+### -param pNameLength [in, out, optional]
 
 <dd>
 <p>An optional pointer to a variable that receives the size, in bytes, of the <b>NULL</b>-terminated string that the <i>pszName</i> parameter specifies.</p>
@@ -148,14 +148,14 @@ _Check_return_ HRESULT APIENTRY* pfnCheckCounter(
 </ul>
 </dd>
 
-### -param <i>pszUnits</i> [out, optional]
+### -param pszUnits [out, optional]
 
 <dd>
 <p>An optional pointer that the driver returns a <b>NULL</b>-terminated string to that contains the name of the units that the counter identifier measures.</p>
 <p>Can be <b>NULL</b>, in which case the app doesn't need the units info. See more info in the explanation of the <i>pUnitsLength</i> parameter.</p>
 </dd>
 
-### -param <i>pUnitsLength</i> [in, out, optional]
+### -param pUnitsLength [in, out, optional]
 
 <dd>
 <p> An optional pointer to a variable that receives the size, in bytes, of the <b>NULL</b>-terminated string that the <i>pszUnits</i> parameter specifies.</p>
@@ -167,14 +167,14 @@ _Check_return_ HRESULT APIENTRY* pfnCheckCounter(
 </ul>
 </dd>
 
-### -param <i>pszDescription</i> [out, optional]
+### -param pszDescription [out, optional]
 
 <dd>
 <p>An optional pointer that the driver returns a <b>NULL</b>-terminated string to that contains the description of what the counter identifier measures.</p>
 <p>Can be <b>NULL</b>, in which case the app doesn't need the description info. See more info in the explanation of the <i>pDescriptionLength</i> parameter.</p>
 </dd>
 
-### -param <i>pDescriptionLength</i> [in, out, optional]
+### -param pDescriptionLength [in, out, optional]
 
 <dd>
 <p> An optional pointer to a variable that receives the size, in bytes, of the <b>NULL</b>-terminated string that the <i>pszDescription</i> parameter specifies.</p>

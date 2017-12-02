@@ -7,7 +7,7 @@ old-location: netvista\dot11_cipher_key_mapping_key_value.htm
 old-project: netvista
 ms.assetid: 0ab5239d-422e-483e-a633-4efab47311fc
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_CIPHER_KEY_MAPPING_KEY_VALUE, DOT11_CIPHER_KEY_MAPPING_KEY_VALUE, *PDOT11_CIPHER_KEY_MAPPING_KEY_VALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct DOT11_CIPHER_KEY_MAPPING_KEY_VALUE {
 ## -struct-fields
 <dl>
 
-### -field <b>PeerMacAddr</b>
+### -field PeerMacAddr
 
 <dd>
 <p>MAC address of the peer. The peer is either an access point (AP) (for infrastructure BSS networks)
@@ -73,7 +73,7 @@ typedef struct DOT11_CIPHER_KEY_MAPPING_KEY_VALUE {
      <b>PeerMacAddr</b> must have a unique value.</p>
 </dd>
 
-### -field <b>AlgorithmId</b>
+### -field AlgorithmId
 
 <dd>
 <p>The value of the cipher algorithm that uses this key. For more information about enumerator values
@@ -81,7 +81,7 @@ typedef struct DOT11_CIPHER_KEY_MAPPING_KEY_VALUE {
      <a href="..\wlantypes\ne-wlantypes--dot11-cipher-algorithm.md">DOT11_CIPHER_ALGORITHM</a>.</p>
 </dd>
 
-### -field <b>Direction</b>
+### -field Direction
 
 <dd>
 <p>This member specifies whether the 802.11 station uses the key for receive or transmit packets. The
@@ -89,7 +89,7 @@ typedef struct DOT11_CIPHER_KEY_MAPPING_KEY_VALUE {
      <a href="..\windot11\ne-windot11-dot11-direction.md">DOT11_DIRECTION</a> enumeration.</p>
 </dd>
 
-### -field <b>bDelete</b>
+### -field bDelete
 
 <dd>
 <p>If set to <b>TRUE</b>, the miniport driver must delete the key referenced by 
@@ -99,7 +99,7 @@ typedef struct DOT11_CIPHER_KEY_MAPPING_KEY_VALUE {
      <b>Direction</b> .</p>
 </dd>
 
-### -field <b>bStatic</b>
+### -field bStatic
 
 <dd>
 <p>A Boolean value that specifies whether the miniport driver should delete the default key following
@@ -133,14 +133,14 @@ typedef struct DOT11_CIPHER_KEY_MAPPING_KEY_VALUE {
 </ul>
 </dd>
 
-### -field <b>usKeyLength</b>
+### -field usKeyLength
 
 <dd>
 <p>The length, in bytes, of the key material in the 
      <b>ucKey</b> array.</p>
 </dd>
 
-### -field <b>ucKey</b>
+### -field ucKey
 
 <dd>
 <p>The key material.
@@ -229,4 +229,4 @@ typedef struct DOT11_CIPHER_KEY_MAPPING_KEY_VALUE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_KEY_MAPPING_KEY_VALUE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_KEY_MAPPING_KEY_VALUE structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

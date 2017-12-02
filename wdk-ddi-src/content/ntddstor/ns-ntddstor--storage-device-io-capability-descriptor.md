@@ -57,25 +57,25 @@ typedef struct _STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure. The Size serves as the version.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure.</p>
 </dd>
 
-### -field <b>LunMaxIoCount</b>
+### -field LunMaxIoCount
 
 <dd>
 <p>The logical unit number (LUN) max outstanding I/O count.</p>
 </dd>
 
-### -field <b>AdapterMaxIoCount</b>
+### -field AdapterMaxIoCount
 
 <dd>
 <p>The adapter max outstanding I/O count.</p>

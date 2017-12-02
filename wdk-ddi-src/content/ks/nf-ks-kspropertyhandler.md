@@ -56,19 +56,19 @@ NTSTATUS KsPropertyHandler(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP with the property request being handled.</p>
 </dd>
 
-### -param <i>PropertySetsCount</i> [in]
+### -param PropertySetsCount [in]
 
 <dd>
 <p>Specifies the number of property sets being passed.</p>
 </dd>
 
-### -param <i>PropertySet</i> [in]
+### -param PropertySet [in]
 
 <dd>
 <p>Points to an array of <a href="stream.ksproperty_set">KSPROPERTY_SET</a> structures. The driver should provide one structure for each property set it wants KsPropertyHandler to handle.</p>
@@ -76,7 +76,7 @@ NTSTATUS KsPropertyHandler(
 </dl>
 
 ## -returns
-<p>The <b>KsPropertyHandler </b>function returns STATUS_SUCCESS if successful, or an error specific to the property being handled if unsuccessful. The function sets the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a>-&gt;<a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a>.Information member, either through setting it to zero because of an internal error, or through a property handler setting it. The function does not set the lrp-&gt;IoStatus.Status member nor does it complete the IRP.</p>
+<p>The <b>KsPropertyHandler </b>function returns STATUS_SUCCESS if successful, or an error specific to the property being handled if unsuccessful. The function sets the <a href="..\wdm\ns-wdm--irp.md">IRP</a>-&gt;<a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a>.Information member, either through setting it to zero because of an internal error, or through a property handler setting it. The function does not set the lrp-&gt;IoStatus.Status member nor does it complete the IRP.</p>
 
 ## -remarks
 <p><b>KsPropertyHandler</b> responds to all property identifiers defined by the sets, and can only be called at PASSIVE_LEVEL.</p>

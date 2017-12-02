@@ -54,7 +54,7 @@ typedef struct _AUX_MODULE_BASIC_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ImageBase</b>
+### -field ImageBase
 
 <dd>
 <p>A pointer to the base of the loaded image. </p>

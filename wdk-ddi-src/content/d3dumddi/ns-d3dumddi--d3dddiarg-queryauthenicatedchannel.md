@@ -57,25 +57,25 @@ typedef struct _D3DDDIARG_QUERYAUTHENTICATEDCHANNEL {
 ## -struct-fields
 <dl>
 
-### -field <b>InputSize</b>
+### -field InputSize
 
 <dd>
 <p>[in] The size, in bytes, of the input data that the <b>pInputData</b> member points to. </p>
 </dd>
 
-### -field <b>pInputData</b>
+### -field pInputData
 
 <dd>
 <p>[in] A pointer to a buffer that describes the information to query. The buffer that <b>pInputData</b> points to is defined identically to the input buffer that is passed to the <b>IDirect3DAuthenticatedChannel::Query</b> method. For more information about <b>IDirect3DAuthenticatedChannel::Query</b>, see the Windows SDK documentation. </p>
 </dd>
 
-### -field <b>OutputSize</b>
+### -field OutputSize
 
 <dd>
 <p>[in] The size, in bytes, of the output data that the <b>pOutputData</b> member points to. </p>
 </dd>
 
-### -field <b>pOutputData</b>
+### -field pOutputData
 
 <dd>
 <p>[in/out] A pointer to a buffer that describes the information that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-queryauthenticatedchannel.md">QueryAuthenticatedChannel</a> function returns. The buffer that <b>pOutputData</b> points to is defined identically to the output buffer that the <b>IDirect3DAuthenticatedChannel::Query</b> method returns. </p>

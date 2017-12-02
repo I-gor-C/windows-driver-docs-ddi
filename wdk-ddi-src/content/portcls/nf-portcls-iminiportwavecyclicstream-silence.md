@@ -55,13 +55,13 @@ void Silence(
 ## -parameters
 <dl>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer in kernel virtual-address space to the start of the buffer to which the silence samples are to be written. The buffer must be large enough to contain at least the number of bytes specified in <i>ByteCount</i>.</p>
 </dd>
 
-### -param <i>ByteCount</i> [in]
+### -param ByteCount [in]
 
 <dd>
 <p>Specifies the number of bytes of silence to be written to the buffer.</p>

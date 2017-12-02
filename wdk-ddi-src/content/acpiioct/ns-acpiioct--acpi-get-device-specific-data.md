@@ -7,7 +7,7 @@ old-location: acpi\acpi_get_device_specific_data.htm
 old-project: acpi
 ms.assetid: F7B4E80F-AB83-4E0F-9933-D953744A1970
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: ACPI_GET_DEVICE_SPECIFIC_DATA, ACPI_GET_DEVICE_SPECIFIC_DATA, *PACPI_GET_DEVICE_SPECIFIC_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,25 +56,25 @@ typedef struct _ACPI_GET_DEVICE_SPECIFIC_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>A unique identifier for the IOCTL.</p>
 </dd>
 
-### -field <b>Section</b>
+### -field Section
 
 <dd>
 <p>A GUID specified by the caller.</p>
 </dd>
 
-### -field <b>PropertyNameLength</b>
+### -field PropertyNameLength
 
 <dd>
 <p>The length of the property name.</p>
 </dd>
 
-### -field <b>PropertyName</b>
+### -field PropertyName
 
 <dd>
 <p>Specifies the property name. If not specified, the <b>PropertyNameLength</b> and the <b>PropertyName</b> are returned. If a <b>PropertyName</b> is specified, only the value of that <b>PropertyName</b> is returned.</p>

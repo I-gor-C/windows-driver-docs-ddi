@@ -58,31 +58,31 @@ typedef struct _HID_DEVICE_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size of the structure. This member should be treated as read-only when a HID minidriver uses this structure to complete an <a href="..\hidport\ni-hidport-ioctl-hid-get-device-attributes.md">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a> request.</p>
 </dd>
 
-### -field <b>VendorID</b>
+### -field VendorID
 
 <dd>
 <p>Specifies a HID device's vendor ID.</p>
 </dd>
 
-### -field <b>ProductID</b>
+### -field ProductID
 
 <dd>
 <p>Specifies a HID device's product ID.</p>
 </dd>
 
-### -field <b>VersionNumber</b>
+### -field VersionNumber
 
 <dd>
 <p>Specifies the manufacturer's revision number for a HID device.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for internal system use.</p>

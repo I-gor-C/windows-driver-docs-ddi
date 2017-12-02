@@ -54,7 +54,7 @@ void AddEventToEventList(
 ## -parameters
 <dl>
 
-### -param <i>EventEntry</i> [in]
+### -param EventEntry [in]
 
 <dd>
 <p>Pointer to the event entry that describes the event. This is an opaque system structure of type <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a>.</p>

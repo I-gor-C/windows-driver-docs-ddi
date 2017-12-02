@@ -64,37 +64,37 @@ typedef struct _DXVADDI_VIDEOPROCESSBLTFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>BackgroundChanged</b>
+### -field BackgroundChanged
 
 <dd>
 <p>A UINT value that specifies whether the background color of the destination surface changed. Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>TargetRectChanged</b>
+### -field TargetRectChanged
 
 <dd>
 <p>A UINT value that specifies whether the target rectangle of the destination surface changed. Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>ColorDataChanged</b>
+### -field ColorDataChanged
 
 <dd>
 <p>A UINT value that specifies whether format information for the destination surface changed. Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>AlphaChanged</b>
+### -field AlphaChanged
 
 <dd>
 <p>A UINT value that specifies whether the planar alpha value for the destination surface changed. Setting this member is equivalent to setting the fourth bit of the 32-bit <b>Value</b> member (0x00000008).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the fifth through sixteenth bits (0x0000FFF0) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>DestData</b>
+### -field DestData
 
 <dd>
 <p>A UINT value that contains video processor sample destination data. Setting this member is equivalent to setting the seventeenth through thirty-second bits (0xFFFF0000) of the 32-bit <b>Value</b> member. The following bits can be set:</p>
@@ -103,7 +103,7 @@ typedef struct _DXVADDI_VIDEOPROCESSBLTFLAGS {
 <p>DXVADDI_DESTDATA_RFF_TFF_PRESENT (0x0004) </p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A 32-bit value that identifies changes in the current destination surface from the previous destination surface.</p>

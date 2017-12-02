@@ -55,13 +55,13 @@ NTSTATUS RegisterWMIProvider(
 ## -parameters
 <dl>
 
-### -param <i>pDeviceObject</i> [in]
+### -param pDeviceObject [in]
 
 <dd>
 <p>Specifies a pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT </a> structure that represents the functional device object of the adapter driver.</p>
 </dd>
 
-### -param <i>MiniportWmiContext</i> [in]
+### -param MiniportWmiContext [in]
 
 <dd>
 <p>Specifies a pointer to a <a href="..\wmilib\ns-wmilib--wmilib-context.md">WMILIB_CONTEXT</a> structure that provides registration information for a driver's data blocks and event blocks.</p>

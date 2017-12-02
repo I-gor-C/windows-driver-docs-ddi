@@ -58,31 +58,31 @@ typedef struct _MSFC_FC4STATISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>InputRequests</b>
+### -field InputRequests
 
 <dd>
 <p>Indicates the number of input requests.</p>
 </dd>
 
-### -field <b>OutputRequests</b>
+### -field OutputRequests
 
 <dd>
 <p>Indicates the number of output requests.</p>
 </dd>
 
-### -field <b>ControlRequests</b>
+### -field ControlRequests
 
 <dd>
 <p>Indicates the number of control requests.</p>
 </dd>
 
-### -field <b>InputMegabytes</b>
+### -field InputMegabytes
 
 <dd>
 <p>Indicates the number of megabytes of data that has been input.</p>
 </dd>
 
-### -field <b>OutputMegabytes</b>
+### -field OutputMegabytes
 
 <dd>
 <p>Indicates the number of megabytes of data that has been output.</p>

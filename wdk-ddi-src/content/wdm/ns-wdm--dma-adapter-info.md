@@ -58,13 +58,13 @@ typedef struct _DMA_ADAPTER_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of the <b>DMA_ADAPTER_INFO_</b><i>XXX</i> structure that follows this member. For a <a href="..\wdm\ns-wdm--dma-adapter-info-v1.md">DMA_ADAPTER_INFO_V1</a> structure, set this member to DMA_ADAPTER_INFO_VERSION1 before calling the <a href="kernel.getdmaadapterinfo">GetDmaAdapterInfo</a> routine.</p>
 </dd>
 
-### -field <b>V1</b>
+### -field V1
 
 <dd>
 <p>The capabilities of the bus-master DMA device or the system DMA controller. For more information, see <a href="..\wdm\ns-wdm--dma-adapter-info-v1.md">DMA_ADAPTER_INFO_V1</a>.</p>

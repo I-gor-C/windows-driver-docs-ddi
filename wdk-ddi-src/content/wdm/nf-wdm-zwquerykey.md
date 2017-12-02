@@ -59,31 +59,31 @@ NTSTATUS ZwQueryKey(
 ## -parameters
 <dl>
 
-### -param <i>KeyHandle</i> [in]
+### -param KeyHandle [in]
 
 <dd>
 <p>Handle to the registry key to obtain information about. This handle is created by a successful call to <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> or <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>. </p>
 </dd>
 
-### -param <i>KeyInformationClass</i> [in]
+### -param KeyInformationClass [in]
 
 <dd>
 <p>Specifies a <a href="..\wdm\ne-wdm--key-information-class.md">KEY_INFORMATION_CLASS</a> value that determines the type of information returned in the <i>KeyInformation</i> buffer. </p>
 </dd>
 
-### -param <i>KeyInformation</i> [out, optional]
+### -param KeyInformation [out, optional]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that receives the requested information.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the <i>KeyInformation</i> buffer. </p>
 </dd>
 
-### -param <i>ResultLength</i> [out]
+### -param ResultLength [out]
 
 <dd>
 <p>Pointer to a variable that receives the size, in bytes, of the requested key information. If <b>ZwQueryKey</b> returns STATUS_SUCCESS, the variable contains the amount of data returned. If <b>ZwQueryKey</b> returns STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL, you can use the value of the variable to determine the required buffer size. </p>

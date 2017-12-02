@@ -54,7 +54,7 @@ HRESULT SetPagePart(
 ## -parameters
 <dl>
 
-### -param <i>pUnk</i> [in]
+### -param pUnk [in]
 
 <dd>
 <p>A pointer to the new part.</p>

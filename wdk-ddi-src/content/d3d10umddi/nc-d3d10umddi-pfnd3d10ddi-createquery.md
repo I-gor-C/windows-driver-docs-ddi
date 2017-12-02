@@ -60,25 +60,25 @@ VOID APIENTRY CreateQuery(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pCreateQuery</i> [in]
+### -param pCreateQuery [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createquery.md">D3D10DDIARG_CREATEQUERY</a> structure that describes the parameters that the user-mode display driver uses to create a query. </p>
 </dd>
 
-### -param <i>hQuery</i> [in]
+### -param hQuery [in]
 
 <dd>
 <p> A handle to the driver's private data for the query. The driver returns the size, in bytes, of the memory region that the Microsoft Direct3D runtime must allocate for the private data from a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivatequerysize.md">CalcPrivateQuerySize</a> function. The handle is really just a pointer to a region of memory, the size of which the driver requested. The driver uses this region of memory to store internal data structures that are related to its query object. </p>
 </dd>
 
-### -param <i>hRTQuery</i> [in]
+### -param hRTQuery [in]
 
 <dd>
 <p> A handle to the query that the driver should use anytime it calls back into the Direct3D runtime. </p>

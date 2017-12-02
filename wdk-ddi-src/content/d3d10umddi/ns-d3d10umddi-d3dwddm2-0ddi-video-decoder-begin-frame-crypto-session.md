@@ -59,37 +59,37 @@ typedef struct D3DWDDM2_0DDI_VIDEO_DECODER_BEGIN_FRAME_CRYPTO_SESSION {
 ## -struct-fields
 <dl>
 
-### -field <b>hCryptoSession</b>
+### -field hCryptoSession
 
 <dd>
 <p>A handle to a cryptographic session object created using <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createcryptosession.md">CreateCryptoSession</a>.</p>
 </dd>
 
-### -field <b>pBlob</b>
+### -field pBlob
 
 <dd>
 <p>A pointer to an IHV-defined blob allocated by an upstream DRM component.  The blob identifies the sealed decryption key to be used for the current frame.</p>
 </dd>
 
-### -field <b>BlobSize</b>
+### -field BlobSize
 
 <dd>
 <p>Size of the IHV-defined blob passed in the <b>pBlob</b> member.</p>
 </dd>
 
-### -field <b>pKeyInfoId</b>
+### -field pKeyInfoId
 
 <dd>
 <p>A pointer to a GUID identifying the hardware key.</p>
 </dd>
 
-### -field <b>pPrivateData</b>
+### -field pPrivateData
 
 <dd>
 <p>The definition of this buffer is dependent on the implementation of the secure environment. It may contain data specific to the current frame.</p>
 </dd>
 
-### -field <b>PrivateDataSize</b>
+### -field PrivateDataSize
 
 <dd>
 <p>Contains the size of the memory buffer referenced by the <b>pPrivateData</b> member.</p>

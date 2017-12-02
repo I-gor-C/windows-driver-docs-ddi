@@ -7,7 +7,7 @@ old-location: netvista\ndis_offload_encapsulation.htm
 old-project: netvista
 ms.assetid: 19013ffa-6bb5-4a77-b85b-c32fb0bf0530
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_OFFLOAD_ENCAPSULATION, NDIS_OFFLOAD_ENCAPSULATION, *PNDIS_OFFLOAD_ENCAPSULATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ typedef struct _NDIS_OFFLOAD_ENCAPSULATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -77,7 +77,7 @@ typedef struct _NDIS_OFFLOAD_ENCAPSULATION {
      <b>Size</b> member to NDIS_SIZEOF_OFFLOAD_ENCAPSULATION_REVISION_1.</p>
 </dd>
 
-### -field <b>IPv4</b>
+### -field IPv4
 
 <dd>
 <p>A structure within NDIS_OFFLOAD_ENCAPSULATION that specifies IPv4 encapsulation and that contains
@@ -85,7 +85,7 @@ typedef struct _NDIS_OFFLOAD_ENCAPSULATION {
      </p>
 <dl>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>A ULONG value that enables IPv4 encapsulation. A protocol driver sets 
@@ -94,7 +94,7 @@ typedef struct _NDIS_OFFLOAD_ENCAPSULATION {
        <b>Enabled</b> to NDIS_OFFLOAD_SET_NO_CHANGE.</p>
 </dd>
 
-### -field <b>EncapsulationType</b>
+### -field EncapsulationType
 
 <dd>
 <p>The IPv4 encapsulation type. If the 
@@ -110,19 +110,19 @@ typedef struct _NDIS_OFFLOAD_ENCAPSULATION {
 <tr>
 <td width="40%"><a id="NDIS_ENCAPSULATION_IEEE_802_3"></a><a id="ndis_encapsulation_ieee_802_3"></a><dl>
 
-### -field <b>NDIS_ENCAPSULATION_IEEE_802_3</b>
+### -field NDIS_ENCAPSULATION_IEEE_802_3
 
 </dl>
 </td>
 <td width="60%">
-<p>Specifies IEEE 802.3 encapsulation. When this value is specified, a miniport driver should also use NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q or NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q_IN_OOB encapsulation where applicable. See documentation for <a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a> for more information.
+<p>Specifies IEEE 802.3 encapsulation. When this value is specified, a miniport driver should also use NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q or NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q_IN_OOB encapsulation where applicable. See documentation for <a href="..\ntddndis\ns-ntddndis--ndis-offload.md">NDIS_OFFLOAD</a> for more information.
 </p>
 </td>
 </tr>
 <tr>
 <td width="40%"><a id="NDIS_ENCAPSULATION_IEEE_LLC_SNAP_ROUTED"></a><a id="ndis_encapsulation_ieee_llc_snap_routed"></a><dl>
 
-### -field <b>NDIS_ENCAPSULATION_IEEE_LLC_SNAP_ROUTED</b>
+### -field NDIS_ENCAPSULATION_IEEE_LLC_SNAP_ROUTED
 
 </dl>
 </td>
@@ -135,7 +135,7 @@ typedef struct _NDIS_OFFLOAD_ENCAPSULATION {
 <p> </p>
 </dd>
 
-### -field <b>HeaderSize</b>
+### -field HeaderSize
 
 <dd>
 <p>The Ethernet header length that is used in IPv4 packets. If the 
@@ -146,7 +146,7 @@ typedef struct _NDIS_OFFLOAD_ENCAPSULATION {
 </dl>
 </dd>
 
-### -field <b>IPv6</b>
+### -field IPv6
 
 <dd>
 <p>A structure within NDIS_OFFLOAD_ENCAPSULATION that specifies IPv6 encapsulation and that contains
@@ -154,7 +154,7 @@ typedef struct _NDIS_OFFLOAD_ENCAPSULATION {
      </p>
 <dl>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>A ULONG value that enables IPv6 encapsulation. A protocol driver sets 
@@ -163,7 +163,7 @@ typedef struct _NDIS_OFFLOAD_ENCAPSULATION {
        <b>Enabled</b> to NDIS_OFFLOAD_SET_NO_CHANGE.</p>
 </dd>
 
-### -field <b>EncapsulationType</b>
+### -field EncapsulationType
 
 <dd>
 <p>The IPv6 encapsulation type. If the 
@@ -180,19 +180,19 @@ typedef struct _NDIS_OFFLOAD_ENCAPSULATION {
 <tr>
 <td width="40%"><a id="NDIS_ENCAPSULATION_IEEE_802_3"></a><a id="ndis_encapsulation_ieee_802_3"></a><dl>
 
-### -field <b>NDIS_ENCAPSULATION_IEEE_802_3</b>
+### -field NDIS_ENCAPSULATION_IEEE_802_3
 
 </dl>
 </td>
 <td width="60%">
-<p>Specifies IEEE 802.3 encapsulation. When this value is specified, a miniport driver should also use NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q or NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q_IN_OOB encapsulation where applicable. See documentation for <a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a> for more information.
+<p>Specifies IEEE 802.3 encapsulation. When this value is specified, a miniport driver should also use NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q or NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q_IN_OOB encapsulation where applicable. See documentation for <a href="..\ntddndis\ns-ntddndis--ndis-offload.md">NDIS_OFFLOAD</a> for more information.
 </p>
 </td>
 </tr>
 <tr>
 <td width="40%"><a id="NDIS_ENCAPSULATION_IEEE_LLC_SNAP_ROUTED"></a><a id="ndis_encapsulation_ieee_llc_snap_routed"></a><dl>
 
-### -field <b>NDIS_ENCAPSULATION_IEEE_LLC_SNAP_ROUTED</b>
+### -field NDIS_ENCAPSULATION_IEEE_LLC_SNAP_ROUTED
 
 </dl>
 </td>
@@ -205,7 +205,7 @@ typedef struct _NDIS_OFFLOAD_ENCAPSULATION {
 <p> </p>
 </dd>
 
-### -field <b>HeaderSize</b>
+### -field HeaderSize
 
 <dd>
 <p>The Ethernet header length that is used in IPv6 packets. If the 
@@ -263,4 +263,4 @@ typedef struct _NDIS_OFFLOAD_ENCAPSULATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD_ENCAPSULATION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD_ENCAPSULATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

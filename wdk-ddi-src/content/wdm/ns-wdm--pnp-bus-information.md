@@ -58,19 +58,19 @@ typedef struct _PNP_BUS_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>BusTypeGuid</b>
+### -field BusTypeGuid
 
 <dd></dd>
 
-### -field <b>LegacyBusType</b>
+### -field LegacyBusType
 
 <dd></dd>
 
-### -field <b>LegacyBusType</b>
+### -field LegacyBusType
 
 <dd></dd>
 
-### -field <b>BusNumber</b>
+### -field BusNumber
 
 <dd></dd>
 </dl>

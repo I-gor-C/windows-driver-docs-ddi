@@ -7,7 +7,7 @@ old-location: sensors\gnss_fixdata.htm
 old-project: sensors
 ms.assetid: 2939F01A-2F1C-4434-BAE1-59F1F320BD44
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_FIXDATA, GNSS_FIXDATA, *PGNSS_FIXDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,66 +63,66 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>FixSessionID</b>
+### -field FixSessionID
 
 <dd>
 <p>ID of the fix session that generated this fix.</p>
 <p>The GNSS driver populates this field so that the GNSS adapter can correlate the fix data with the original start fix request.</p>
 </dd>
 
-### -field <b>FixTimeStamp</b>
+### -field FixTimeStamp
 
 <dd>
 <p>Timestamp when the fix is generated.</p>
 <p>This should be the time obtained from the satellites measurements.</p>
 </dd>
 
-### -field <b>IsFinalFix</b>
+### -field IsFinalFix
 
 <dd>
 <p>Boolean value indicating whether this is a final fix or not.</p>
 <p>A value of FALSE implies this is an intermediate fix and a final fix is forthcoming.</p>
 </dd>
 
-### -field <b>FixStatus</b>
+### -field FixStatus
 
 <dd>
 <p>An NTSTATUS value indicating whether this fix contains a valid fix, or if the GNSS engine/driver encountered any error in getting the fix.</p>
 <p>Unless this value indicates success, the basic fix data element of this structure should not be relied on. Satellite and mode data elements may still be valid.</p>
 </dd>
 
-### -field <b>FixLevelOfDetails</b>
+### -field FixLevelOfDetails
 
 <dd>
 <p>A bitmask containing the GNSS_FIXDETAIL_* bits that determine which members of this structure are populated by the GNSS driver. </p>
 </dd>
 
-### -field <b>BasicData</b>
+### -field BasicData
 
 <dd>
 <p>This element contains the basic fix data fix when FixLevelofDetails field has GNSS_FIXDETAIL_BASIC bit set.</p>
 <p>Unless explicitly indicated in the fix session parameter, the GNSS driver is recommended to always populate this element.</p>
 </dd>
 
-### -field <b>AccuracyData</b>
+### -field AccuracyData
 
 <dd>
 <p>This element contains the accuracy-related data when FixLevelofDetails field has GNSS_FIXDETAIL_ACCURACY bit set.</p>
 </dd>
 
-### -field <b>SatelliteData</b>
+### -field SatelliteData
 
 <dd>
 <p>This element contains the satellite-related data when FixLevelofDetails field has GNSS_FIXDETAIL_SATELLITE bit set.</p>

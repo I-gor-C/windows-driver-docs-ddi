@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>fRepeatPreviousBlock</b>
+### -field fRepeatPreviousBlock
 
 <dd>
 <p>Specifies whether to repeat the previous block when an error occurs. If <b>TRUE</b>, the decoder repeats the last block not in error as long as errors are detected in the input stream. If <b>FALSE</b>, the decoder mutes. A muted output stream does not necessarily result in any data packets. Instead, the renderer might substitute a more reliable stream or simply output silence.</p>
 </dd>
 
-### -field <b>fErrorInCurrentBlock</b>
+### -field fErrorInCurrentBlock
 
 <dd>
 <p>Specifies whether the current block contains an error. If <b>TRUE</b>, the current block contains an error. If <b>FALSE</b>, the current block has no errors.</p>

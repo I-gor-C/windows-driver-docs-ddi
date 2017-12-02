@@ -55,13 +55,13 @@ NTSTATUS KsFreeObjectCreateItem(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [in]
+### -param Header [in]
 
 <dd>
 <p>Points to the device header on which the create item is attached.</p>
 </dd>
 
-### -param <i>CreateItem</i> [in]
+### -param CreateItem [in]
 
 <dd>
 <p>Contains the name of the create item to free.</p>

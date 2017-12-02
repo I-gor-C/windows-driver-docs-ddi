@@ -7,7 +7,7 @@ old-location: netvista\rilcallrtt.htm
 old-project: netvista
 ms.assetid: aa69cc11-66c7-4d23-b596-c37472af484a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLRTT, RILCALLRTT, *LPRILCALLRTT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef struct _RILCALLRTT {
 ## -struct-fields
 <dl>
 
-### -field <b>dwRTTAction</b>
+### -field dwRTTAction
 
 <dd></dd>
 
-### -field <b>dwRTTModeType</b>
+### -field dwRTTModeType
 
 <dd></dd>
 
-### -field <b>stRTTCap</b>
+### -field stRTTCap
 
 <dd></dd>
 </dl>

@@ -58,7 +58,7 @@ typedef struct IDDCX_FRAME_STATISTICS_STE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -66,7 +66,7 @@ typedef struct IDDCX_FRAME_STATISTICS_STE {
                  </p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>
@@ -74,7 +74,7 @@ typedef struct IDDCX_FRAME_STATISTICS_STE {
                  </p>
 </dd>
 
-### -field <b>QpcTime</b>
+### -field QpcTime
 
 <dd>
 <p>
@@ -82,7 +82,7 @@ typedef struct IDDCX_FRAME_STATISTICS_STE {
                  </p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>

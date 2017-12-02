@@ -57,25 +57,25 @@ typedef struct _SETRESULT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>CPSUI-supplied size, in bytes, of the SETRESULT_INFO structure.</p>
 </dd>
 
-### -field <b>wReserved</b>
+### -field wReserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>hSetResult</b>
+### -field hSetResult
 
 <dd>
 <p>CPSUI-supplied handle to an added property sheet page, obtained from the application. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>Result</b>
+### -field Result
 
 <dd>
 <p>CPSUI-supplied handle to an added property sheet page, obtained from the application. For more information, see the following Remarks section.</p>

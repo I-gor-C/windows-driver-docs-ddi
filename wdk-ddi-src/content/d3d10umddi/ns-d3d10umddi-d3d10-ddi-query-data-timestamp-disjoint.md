@@ -55,13 +55,13 @@ typedef struct D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT {
 ## -struct-fields
 <dl>
 
-### -field <b>Frequency</b>
+### -field Frequency
 
 <dd>
 <p>The frequency, in Hz, of the timestamp clock. </p>
 </dd>
 
-### -field <b>Disjoint</b>
+### -field Disjoint
 
 <dd>
 <p>A BOOL value that indicates whether something caused the timestamp counter to become discontinuous or disjoint. This value is <b>TRUE</b> if the values from TIMESTAMP queries cannot be guaranteed to be continuous throughout the duration of the D3D10DDI_QUERY_TIMESTAMPDISJOINT query. Otherwise, this value should be <b>FALSE</b>. </p>

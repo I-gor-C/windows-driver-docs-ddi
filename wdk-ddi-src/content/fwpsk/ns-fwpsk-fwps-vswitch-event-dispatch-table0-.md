@@ -7,7 +7,7 @@ old-location: netvista\fwps_vswitch_event_dispatch_table0.htm
 old-project: netvista
 ms.assetid: 7e949e6d-7448-4f76-b8a1-6d050261fb21
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,43 +66,43 @@ typedef struct FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_ {
 ## -struct-fields
 <dl>
 
-### -field <b>vSwitchLifetimeNotifyFn</b>
+### -field vSwitchLifetimeNotifyFn
 
 <dd>
 <p>The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps-vswitch-lifetime-event-callback0.md">FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0</a> callback function or NULL.</p>
 </dd>
 
-### -field <b>vSwitchPortEventNotifyFn</b>
+### -field vSwitchPortEventNotifyFn
 
 <dd>
 <p>The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps-vswitch-port-event-callback0.md">FWPS_VSWITCH_PORT_EVENT_CALLBACK0</a> callback function or NULL.</p>
 </dd>
 
-### -field <b>vSwitchInterfaceEventNotifyFn</b>
+### -field vSwitchInterfaceEventNotifyFn
 
 <dd>
 <p>The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps-vswitch-interface-event-callback0.md">FWPS_VSWITCH_INTERFACE_EVENT_CALLBACK0</a> callback function or NULL.</p>
 </dd>
 
-### -field <b>vSwitchFilterEngineReorderNotifyRn</b>
+### -field vSwitchFilterEngineReorderNotifyRn
 
 <dd>
 <p>The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps-vswitch-filter-engine-reorder-callback0.md">FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0</a> callback function or NULL.</p>
 </dd>
 
-### -field <b>vSwitchPolicyEventNotifyFn</b>
+### -field vSwitchPolicyEventNotifyFn
 
 <dd>
 <p>The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps-vswitch-policy-event-callback0.md">FWPS_VSWITCH_POLICY_EVENT_CALLBACK0</a> callback function or NULL.</p>
 </dd>
 
-### -field <b>vSwitchRuntimeStateSaveNotifyFn</b>
+### -field vSwitchRuntimeStateSaveNotifyFn
 
 <dd>
 <p>The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps-vswitch-runtime-state-save-callback0.md">FWPS_VSWITCH_RUNTIME_STATE_SAVE_CALLBACK0</a> callback function or NULL.</p>
 </dd>
 
-### -field <b>vSwitchRuntimeStateRestoreNotifyFn</b>
+### -field vSwitchRuntimeStateRestoreNotifyFn
 
 <dd>
 <p>The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps-vswitch-runtime-state-restore-callback0.md">FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0</a> callback function or NULL.</p>
@@ -168,4 +168,4 @@ typedef struct FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_ {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_VSWITCH_EVENT_DISPATCH_TABLE0 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_VSWITCH_EVENT_DISPATCH_TABLE0 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

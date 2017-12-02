@@ -59,19 +59,19 @@ __checkReturn HRESULT APIENTRY CreatePixelShader(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createpixelshader.md">D3DDDIARG_CREATEPIXELSHADER</a> structure that retrieves the shader handle that is associated with the pixel shader code that is specified by <b>pCode</b>.</p>
 </dd>
 
-### -param <i>pCode</i> [in]
+### -param pCode [in]
 
 <dd>
 <p> An array of CONST UINT tokens that make up the pixel shader code.</p>

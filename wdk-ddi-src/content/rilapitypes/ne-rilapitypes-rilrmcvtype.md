@@ -7,7 +7,7 @@ old-location: netvista\rilrmcvtype_2.htm
 old-project: netvista
 ms.assetid: 7517d3fd-723d-4fd7-b5ce-3d08443b8f59
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILRMCVTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_RMCV_TYPE_BOOLEAN"></a><a id="ril_rmcv_type_boolean"></a><b>RIL_RMCV_TYPE_BOOLEAN</b>
+### -field RIL_RMCV_TYPE_BOOLEAN
 
 <dd></dd>
 
-### -field <a id="RIL_RMCV_TYPE_DWORD"></a><a id="ril_rmcv_type_dword"></a><b>RIL_RMCV_TYPE_DWORD</b>
+### -field RIL_RMCV_TYPE_DWORD
 
 <dd></dd>
 
-### -field <a id="RIL_RMCV_TYPE_STRING"></a><a id="ril_rmcv_type_string"></a><b>RIL_RMCV_TYPE_STRING</b>
+### -field RIL_RMCV_TYPE_STRING
 
 <dd></dd>
 </dl>

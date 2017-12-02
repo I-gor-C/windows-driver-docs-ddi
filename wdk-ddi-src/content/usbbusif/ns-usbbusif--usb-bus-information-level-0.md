@@ -56,13 +56,13 @@ typedef struct _USB_BUS_INFORMATION_LEVEL_0 {
 ## -struct-fields
 <dl>
 
-### -field <b>TotalBandwidth</b>
+### -field TotalBandwidth
 
 <dd>
 <p>Specifies the total bandwidth, in bits per second, available on the bus. </p>
 </dd>
 
-### -field <b>ConsumedBandwidth</b>
+### -field ConsumedBandwidth
 
 <dd>
 <p>Specifies the mean bandwidth that is already in use, in bits per second. </p>

@@ -55,7 +55,7 @@ BOOL RouterFreePrinterNotifyInfo(
 ## -parameters
 <dl>
 
-### -param <i>pInfo</i> [in, optional]
+### -param pInfo [in, optional]
 
 <dd>
 <p>Caller-supplied pointer to a PRINTER_NOTIFY_INFO structure (described in the Windows SDK documentation).</p>
@@ -70,7 +70,7 @@ BOOL RouterFreePrinterNotifyInfo(
 
 <p>Besides deallocating the specified PRINTER_NOTIFY_INFO structure and its associated PRINTER_NOTIFY_INFO_DATA structure array, the function also deallocates buffer space pointed to by <i>pBuf</i> in any element of the PRINTER_NOTIFY_INFO_DATA structure array.</p>
 
-<p>For additional information, see <a href="NULL">Supporting Printer Change Notifications</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/e75c6f89-9cef-4900-af89-edf1f7f786c7">Supporting Printer Change Notifications</a>.</p>
 
 ## -requirements
 <table>

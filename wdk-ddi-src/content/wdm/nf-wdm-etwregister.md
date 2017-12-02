@@ -58,25 +58,25 @@ NTSTATUS EtwRegister(
 ## -parameters
 <dl>
 
-### -param <i>ProviderId</i> [in]
+### -param ProviderId [in]
 
 <dd>
 <p>A pointer to the event provider GUID. </p>
 </dd>
 
-### -param <i>EnableCallback</i> [in, optional]
+### -param EnableCallback [in, optional]
 
 <dd>
 <p>A pointer to an optional callback function. The callback function provides additional event filtering capabilities. The callback function is user-defined.</p>
 </dd>
 
-### -param <i>CallbackContext</i> [in, optional]
+### -param CallbackContext [in, optional]
 
 <dd>
 <p>The function passes back the optional callback context when a callback is made. You can specify the optional context when you register a provider.  The <i>CallbackContext</i> parameter supports the scenarios in which one callback is shared by multiple providers, as in a C++ class. The <i>CallbackContext</i> provides a way to distinguish the target provider instances for the enable callback. </p>
 </dd>
 
-### -param <i>RegHandle</i> [out]
+### -param RegHandle [out]
 
 <dd>
 <p>A pointer to a variable that receives the provider registration handle if the function call is successful. </p>

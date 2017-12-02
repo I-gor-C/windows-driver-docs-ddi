@@ -57,25 +57,25 @@ typedef enum _D3DKMDT_PIXEL_VALUE_ACCESS_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_PVAM_UNINITIALIZED"></a><a id="d3dkmdt_pvam_uninitialized"></a><b>D3DKMDT_PVAM_UNINITIALIZED</b>
+### -field D3DKMDT_PVAM_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_PIXEL_VALUE_ACCESS_MODE has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_PVAM_DIRECT"></a><a id="d3dkmdt_pvam_direct"></a><b>D3DKMDT_PVAM_DIRECT</b>
+### -field D3DKMDT_PVAM_DIRECT
 
 <dd>
 <p>Indicates that colors are stored directly in the primary surface.</p>
 </dd>
 
-### -field <a id="D3DKMDT_PVAM_PRESETPALETTE"></a><a id="d3dkmdt_pvam_presetpalette"></a><b>D3DKMDT_PVAM_PRESETPALETTE</b>
+### -field D3DKMDT_PVAM_PRESETPALETTE
 
 <dd>
 <p>Indicates that palette indices are stored in the primary surface. Colors are stored in a palette that is specific to the display adapter. The operating system can query the display miniport driver for the palette.</p>
 </dd>
 
-### -field <a id="D3DKMDT_PVAM_SETTABLEPALETTE"></a><a id="d3dkmdt_pvam_settablepalette"></a><b>D3DKMDT_PVAM_SETTABLEPALETTE</b>
+### -field D3DKMDT_PVAM_SETTABLEPALETTE
 
 <dd>
 <p>Indicates that palette indices are stored in the primary surface. Colors are stored in a palette that the operating system can set dynamically by calling the display miniport driver.</p>

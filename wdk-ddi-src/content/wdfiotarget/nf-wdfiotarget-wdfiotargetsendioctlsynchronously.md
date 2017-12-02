@@ -7,7 +7,7 @@ old-location: wdf\wdfiotargetsendioctlsynchronously.htm
 old-project: wdf
 ms.assetid: 1c43f6cd-0026-4654-b3ce-71fd51b3821d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfIoTargetSendIoctlSynchronously
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,43 +62,43 @@ NTSTATUS WdfIoTargetSendIoctlSynchronously(
 ## -parameters
 <dl>
 
-### -param <i>IoTarget</i> [in]
+### -param IoTarget [in]
 
 <dd>
 <p>A handle to a local or remote I/O target object that was obtained from a previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a> or <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>, or from a method that a specialized I/O target supplies.</p>
 </dd>
 
-### -param <i>Request</i> [in, optional]
+### -param Request [in, optional]
 
 <dd>
 <p>A handle to a framework request object. This parameter is optional and can be <b>NULL</b>. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>IoctlCode</i> [in]
+### -param IoctlCode [in]
 
 <dd>
 <p>An I/O control code (IOCTL) that the I/O target supports. </p>
 </dd>
 
-### -param <i>InputBuffer</i> [in, optional]
+### -param InputBuffer [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfmemory\ns-wdfmemory--wdf-memory-descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure that describes a buffer that will be written to the I/O target. For more information, see the following Remarks section. This parameter is optional and can be <b>NULL</b> if the request does not send data.</p>
 </dd>
 
-### -param <i>OutputBuffer</i> [in, optional]
+### -param OutputBuffer [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfmemory\ns-wdfmemory--wdf-memory-descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure that describes a buffer that will receive data from the I/O target. For more information, see the following Remarks section. This parameter is optional and can be <b>NULL</b> if the request does not receive data.</p>
 </dd>
 
-### -param <i>RequestOptions</i> [in, optional]
+### -param RequestOptions [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfrequest\ns-wdfrequest--wdf-request-send-options.md">WDF_REQUEST_SEND_OPTIONS</a> structure that specifies options for the request. This pointer is optional and can be <b>NULL</b>. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>BytesReturned</i> [out, optional]
+### -param BytesReturned [out, optional]
 
 <dd>
 <p>A pointer to a location that receives information (such as the number of bytes that were transferred) that another driver supplies when it completes the request by calling <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithinformation.md">WdfRequestCompleteWithInformation</a>. This pointer is optional and can be <b>NULL</b>.</p>
@@ -116,7 +116,7 @@ NTSTATUS WdfIoTargetSendIoctlSynchronously(
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl><p>The framework cannot allocate system resources (typically memory).</p><dl>
 <dt><b>STATUS_REQUEST_NOT_ACCEPTED</b></dt>
-</dl><p>The I/O request packet (<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>) that the <i>Request</i> parameter represents does not provide enough <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> structures to allow the driver to forward the request.</p>
+</dl><p>The I/O request packet (<a href="..\wdm\ns-wdm--irp.md">IRP</a>) that the <i>Request</i> parameter represents does not provide enough <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> structures to allow the driver to forward the request.</p>
 
 <p> </p>
 
@@ -317,4 +317,4 @@ NTSTATUS WdfIoTargetSendIoctlSynchronously(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoTargetSendIoctlSynchronously method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoTargetSendIoctlSynchronously method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

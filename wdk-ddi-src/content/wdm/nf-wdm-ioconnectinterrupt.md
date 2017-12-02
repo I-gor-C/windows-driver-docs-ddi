@@ -65,67 +65,67 @@ NTSTATUS IoConnectInterrupt(
 ## -parameters
 <dl>
 
-### -param <i>InterruptObject</i> [out]
+### -param InterruptObject [out]
 
 <dd>
 <p>Pointer to the address of driver-supplied storage for a pointer to a set of interrupt objects. This pointer must be passed in subsequent calls to <a href="..\wdm\nf-wdm-kesynchronizeexecution.md">KeSynchronizeExecution</a>.</p>
 </dd>
 
-### -param <i>ServiceRoutine</i> [in]
+### -param ServiceRoutine [in]
 
 <dd>
 <p>Pointer to the entry point for the driver-supplied <a href="kernel.interruptservice">InterruptService</a> routine.</p>
 </dd>
 
-### -param <i>ServiceContext</i> [in, optional]
+### -param ServiceContext [in, optional]
 
 <dd>
 <p>Pointer to the driver-determined context that will be supplied to the <i>InterruptService</i> routine when it is called. The <i>ServiceContext</i> area must be in resident memory: in the device extension of a driver-created device object, in the controller extension of a driver-created controller object, or in nonpaged pool allocated by the device driver. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff559930">Providing ISR Context Information</a> for details.</p>
 </dd>
 
-### -param <i>SpinLock</i> [in, optional]
+### -param SpinLock [in, optional]
 
 <dd>
 <p>Pointer to an initialized spin lock, for which the driver supplies the storage, that will be used to synchronize access to driver-determined data shared by other driver routines. This parameter is required if the ISR handles more than one vector or if the driver has more than one ISR. Otherwise, the driver need not allocate storage for an interrupt spin lock and the input pointer is <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Vector</i> [in]
+### -param Vector [in]
 
 <dd>
 <p>Specifies the interrupt vector passed in the interrupt resource at the <b>u.Interrupt.Vector</b> member of <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>.</p>
 </dd>
 
-### -param <i>Irql</i> [in]
+### -param Irql [in]
 
 <dd>
 <p>Specifies the DIRQL passed in the interrupt resource at the <b>u.Interrupt.Level</b> member of <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b>.</p>
 </dd>
 
-### -param <i>SynchronizeIrql</i> [in]
+### -param SynchronizeIrql [in]
 
 <dd>
 <p>Specifies the DIRQL at which the ISR will run. If the ISR handles more than one interrupt vector or the driver has more than one ISR, this value must be the highest of the <i>Irql</i> values passed at <b>u.Interrupt.Level</b> in each interrupt resource. Otherwise, the <i>Irql</i> and <i>SynchronizeIrql</i> values are identical.</p>
 </dd>
 
-### -param <i>InterruptMode</i> [in]
+### -param InterruptMode [in]
 
 <dd>
 <p>Specifies whether the device interrupt is <b>LevelSensitive</b> or <b>Latched</b>.</p>
 </dd>
 
-### -param <i>ShareVector</i> [in]
+### -param ShareVector [in]
 
 <dd>
 <p>Specifies whether the interrupt vector is sharable. </p>
 </dd>
 
-### -param <i>ProcessorEnableMask</i> [in]
+### -param ProcessorEnableMask [in]
 
 <dd>
 <p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a> value representing the set of processors on which device interrupts can occur in this platform. This value is passed in the interrupt resource at <b>u.Interrupt.Affinity</b>. </p>
 </dd>
 
-### -param <i>FloatingSave</i> [in]
+### -param FloatingSave [in]
 
 <dd>
 <p>Specifies whether to save the floating-point stack when the driver's device interrupts. For x86-based and Itanium-based platforms, this value must be set to <b>FALSE</b>. For more information about saving floating-point and MMX state, see <a href="https://msdn.microsoft.com/73414084-4054-466a-b64c-5c81b224be92">Using Floating Point or MMX in a WDM Driver</a>. </p>
@@ -156,7 +156,7 @@ NTSTATUS IoConnectInterrupt(
 
 <p>For example, if a KAFFINITY value identifies the active processors in a group, the mask bit for a processor is one if the processor is active, and is zero if the processor is not active.</p>
 
-<p>The number of bits in the affinity mask determines the maximum number of logical processors in a group. For a 64-bit version of Windows, the maximum number of processors per group is 64. For a 32-bit version of Windows, the maximum number of processors per group is 32. Call the <a href="..\ntddk\nf-ntddk-kequerymaximumprocessorcountex.md">KeQueryMaximumProcessorCountEx</a> routine to obtain the maximum number of processors per group. This number depends on the hardware configuration of the multiprocessor system, but can never exceed the fixed 64-processor and 32-processor limits that are set by the 64-bit and 32-bit versions of Windows, respectively.</p>
+<p>The number of bits in the affinity mask determines the maximum number of logical processors in a group. For a 64-bit version of Windows, the maximum number of processors per group is 64. For a 32-bit version of Windows, the maximum number of processors per group is 32. Call the <a href="..\wdm\nf-wdm-kequerymaximumprocessorcountex.md">KeQueryMaximumProcessorCountEx</a> routine to obtain the maximum number of processors per group. This number depends on the hardware configuration of the multiprocessor system, but can never exceed the fixed 64-processor and 32-processor limits that are set by the 64-bit and 32-bit versions of Windows, respectively.</p>
 
 <p>The <a href="..\miniport\ns-miniport--group-affinity.md">GROUP_AFFINITY</a> structure contains an affinity mask and a group number. The group number identifies the group to which the affinity mask applies.</p>
 

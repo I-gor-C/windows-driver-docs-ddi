@@ -58,31 +58,31 @@ VOID APIENTRY* PFND3D12DDI_VIDEO_DECODE_FRAME_0030(
 ## -parameters
 <dl>
 
-### -param <i>hDrvCommandList</i> 
+### -param hDrvCommandList 
 
 <dd>
 <p>The command list.</p>
 </dd>
 
-### -param <i>hDrvDecoder</i> 
+### -param hDrvDecoder 
 
 <dd>
 <p>The video decoder.</p>
 </dd>
 
-### -param <i>SubmissionID</i> 
+### -param SubmissionID 
 
 <dd>
 <p>The submission ID.</p>
 </dd>
 
-### -param <i>pOutputStreamParameters</i> 
+### -param pOutputStreamParameters 
 
 <dd>
 <p>The output arguments for the video decode.</p>
 </dd>
 
-### -param <i>pInputStreamParameters</i> 
+### -param pInputStreamParameters 
 
 <dd>
 <p>The input arguments for the video decode.</p>

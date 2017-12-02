@@ -61,19 +61,19 @@ typedef struct D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1 {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>A handle to the resource object that was created through a call to <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource.md">CreateResource</a>.</p>
 </dd>
 
-### -field <b>BufferType</b>
+### -field BufferType
 
 <dd>
 <p>The type of buffer, specified as a member of the <b>D3D11_1DDI_VIDEO_DECODER_BUFFER_TYPE</b> enumeration.</p>
 </dd>
 
-### -field <b>DataOffset</b>
+### -field DataOffset
 
 <dd>
 <p>The offset of the relevant data from the beginning of the buffer, in bytes. </p>
@@ -81,25 +81,25 @@ typedef struct D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1 {
 <div> </div>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>Size of the relevant data.</p>
 </dd>
 
-### -field <b>pIV</b>
+### -field pIV
 
 <dd>
 <p>A pointer to a buffer that contains an initialization vector (IV) for encrypted data. If the decode buffer does not contain encrypted data, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>IVSize</b>
+### -field IVSize
 
 <dd>
 <p>The size of the buffer specified in the <b>pIV</b> member. If <b>pIV</b> is <b>NULL</b>, set this member to zero.</p>
 </dd>
 
-### -field <b>pSubSampleMappingBlock</b>
+### -field pSubSampleMappingBlock
 
 <dd>
 <p>A pointer to an array of <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-video-decoder-sub-sample-mapping-block.md">D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK</a> structures, which indicate exactly which bytes in the decode buffer are encrypted and which are in the clear.  If the decode buffer does not contain encrypted data, set this member to <b>NULL</b>.
@@ -109,7 +109,7 @@ typedef struct D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1 {
 </p>
 </dd>
 
-### -field <b>SubSampleMappingCount</b>
+### -field SubSampleMappingCount
 
 <dd>
 <p>The number of <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-video-decoder-sub-sample-mapping-block.md">D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK</a> structures specified in the <b>pSubSampleMappingBlocks</b> member. If <b>pSubSampleMappingBLocks</b> is <b>NULL</b>, set this member to zero.</p>

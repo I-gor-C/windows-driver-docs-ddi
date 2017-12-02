@@ -57,25 +57,25 @@ typedef struct _DXGKARG_DESTROYALLOCATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of elements in the array that <b>pAllocationList</b> specifies, which represents the number of allocations to release.</p>
 </dd>
 
-### -field <b>pAllocationList</b>
+### -field pAllocationList
 
 <dd>
 <p>[in] An array of handles to the allocations to release.</p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in/out] A handle to a resource. The display miniport driver cleans up this handle if it must release the resource along with the allocations.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-destroyallocationflags.md">DXGK_DESTROYALLOCATIONFLAGS</a> structure that identifies how to release the allocations.</p>

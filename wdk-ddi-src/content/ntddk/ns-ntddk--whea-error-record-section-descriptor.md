@@ -63,37 +63,37 @@ typedef struct _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>SectionOffset</b>
+### -field SectionOffset
 
 <dd>
 <p>The offset, in bytes, from the beginning of the error record to the beginning of the error record section.</p>
 </dd>
 
-### -field <b>SectionLength</b>
+### -field SectionLength
 
 <dd>
 <p>The length, in bytes, of the error data contained in the error record section.</p>
 </dd>
 
-### -field <b>Revision</b>
+### -field Revision
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-revision.md">WHEA_REVISION</a> union that describes the revision level of the WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure.</p>
 </dd>
 
-### -field <b>ValidBits</b>
+### -field ValidBits
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-error-record-section-descriptor-validbits.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS</a> union that specifies which members of this structure contain valid data.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_FLAGS union that describes the error record section. The WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_FLAGS union is defined as follows:</p>
@@ -121,49 +121,49 @@ typedef struct _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR {
 <p></p>
 <dl>
 
-### -field <a id="Primary"></a><a id="primary"></a><a id="PRIMARY"></a><b>Primary</b>
+### -field Primary
 
 <dd>
 <p>A single bit that indicates that the corresponding error record section is the primary section within the error record. When there are multiple sections contained in an error record, the primary section is the section that is used for error recovery.</p>
 </dd>
 
-### -field <a id="ContainmentWarning"></a><a id="containmentwarning"></a><a id="CONTAINMENTWARNING"></a><b>ContainmentWarning</b>
+### -field ContainmentWarning
 
 <dd>
 <p>A single bit that indicates that the error described by the corresponding error record section was not contained within the processor or memory hierarchy. In this situation, the error might have propagated to other components of the system.</p>
 </dd>
 
-### -field <a id="Reset"></a><a id="reset"></a><a id="RESET"></a><b>Reset</b>
+### -field Reset
 
 <dd>
 <p>A single bit that indicates that the component must be reinitialized or re-enabled by the operating system.</p>
 </dd>
 
-### -field <a id="ThresholdExceeded"></a><a id="thresholdexceeded"></a><a id="THRESHOLDEXCEEDED"></a><b>ThresholdExceeded</b>
+### -field ThresholdExceeded
 
 <dd>
 <p>A single bit that indicates that an error threshold has been exceeded.</p>
 </dd>
 
-### -field <a id="ResourceNotAvailable"></a><a id="resourcenotavailable"></a><a id="RESOURCENOTAVAILABLE"></a><b>ResourceNotAvailable</b>
+### -field ResourceNotAvailable
 
 <dd>
 <p>A single bit that indicates that a resource could not be queried for error information due to conflicts with other system software or resources. In this situation, some of the fields of the corresponding error record section will be invalid.</p>
 </dd>
 
-### -field <a id="LatentError"></a><a id="latenterror"></a><a id="LATENTERROR"></a><b>LatentError</b>
+### -field LatentError
 
 <dd>
 <p>A single bit that indicates that the reported error is a latent error (one not yet consumed) that could result in a more severe error when it is consumed.</p>
 </dd>
 
-### -field <a id="Reserved"></a><a id="reserved"></a><a id="RESERVED"></a><b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="AsULONG"></a><a id="asulong"></a><a id="ASULONG"></a><b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_FLAGS union.</p>
@@ -171,68 +171,68 @@ typedef struct _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>SectionType</b>
+### -field SectionType
 
 <dd>
 <p>A GUID that identifies the type of error data that is contained in the error record section. The standard section types are defined as follows:</p>
 <p></p>
 <dl>
 
-### -field <a id="WHEA_PACKET_SECTION_GUID"></a><a id="whea_packet_section_guid"></a>WHEA_PACKET_SECTION_GUID
+### -field WHEA_PACKET_SECTION_GUID
 
 <dd>
 <p>The error record section contains the hardware error packet that was passed to the operating system by the low-level hardware error handler (LLHEH) that reported the error. This data is described by a <a href="whea.whea_error_packet">WHEA_ERROR_PACKET</a> structure.</p>
 </dd>
 
-### -field <a id="PROCESSOR_GENERIC_ERROR_SECTION_GUID"></a><a id="processor_generic_error_section_guid"></a>PROCESSOR_GENERIC_ERROR_SECTION_GUID
+### -field PROCESSOR_GENERIC_ERROR_SECTION_GUID
 
 <dd>
 <p>The error record section contains processor error data that is not specific to a particular processor architecture. This data is described by a <a href="..\ntddk\ns-ntddk--whea-processor-generic-error-section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure.</p>
 </dd>
 
-### -field <a id="IPF_PROCESSOR_ERROR_SECTION_GUID"></a><a id="ipf_processor_error_section_guid"></a>IPF_PROCESSOR_ERROR_SECTION_GUID
+### -field IPF_PROCESSOR_ERROR_SECTION_GUID
 
 <dd>
 <p>The error record section contains processor error data that is specific to the Itanium processor architecture. For more information about the format of the error data that is contained in this error record section, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=72212">Intel Itanium Processor Family System Abstraction Layer Specification</a>.</p>
 </dd>
 
-### -field <a id="FIRMWARE_ERROR_RECORD_REFERENCE_GUID"></a><a id="firmware_error_record_reference_guid"></a>FIRMWARE_ERROR_RECORD_REFERENCE_GUID
+### -field FIRMWARE_ERROR_RECORD_REFERENCE_GUID
 
 <dd>
 <p>The error record section contains a reference to a firmware error record that is specific to the Itanium processor architecture. This data is described by a <a href="..\ntddk\ns-ntddk--whea-firmware-error-record-reference.md">WHEA_FIRMWARE_ERROR_RECORD_REFERENCE</a> structure.</p>
 </dd>
 
-### -field <a id="MEMORY_ERROR_SECTION_GUID"></a><a id="memory_error_section_guid"></a>MEMORY_ERROR_SECTION_GUID
+### -field MEMORY_ERROR_SECTION_GUID
 
 <dd>
 <p>The error record section contains platform memory error data. This data is described by a <a href="..\ntddk\ns-ntddk--whea-memory-error-section.md">WHEA_MEMORY_ERROR_SECTION</a> structure.</p>
 </dd>
 
-### -field <a id="NMI_SECTION_GUID"></a><a id="nmi_section_guid"></a>NMI_SECTION_GUID
+### -field NMI_SECTION_GUID
 
 <dd>
 <p>The error record section contains nonmaskable interrupt (NMI) error data. This data is described by a <a href="..\ntddk\ns-ntddk--whea-nmi-error-section.md">WHEA_NMI_ERROR_SECTION</a> structure.</p>
 </dd>
 
-### -field <a id="PCIEXPRESS_ERROR_SECTION_GUID"></a><a id="pciexpress_error_section_guid"></a>PCIEXPRESS_ERROR_SECTION_GUID
+### -field PCIEXPRESS_ERROR_SECTION_GUID
 
 <dd>
 <p>The error record section contains PCI Express (PCIe) error data. This data is described by a <a href="..\ntddk\ns-ntddk--whea-pciexpress-error-section.md">WHEA_PCIEXPRESS_ERROR_SECTION</a> structure.</p>
 </dd>
 
-### -field <a id="PCIXBUS_ERROR_SECTION_GUID"></a><a id="pcixbus_error_section_guid"></a>PCIXBUS_ERROR_SECTION_GUID
+### -field PCIXBUS_ERROR_SECTION_GUID
 
 <dd>
 <p>The error record section contains PCI/PCI-X bus error data. This data is described by a <a href="..\ntddk\ns-ntddk--whea-pcixbus-error-section.md">WHEA_PCIXBUS_ERROR_SECTION</a> structure.</p>
 </dd>
 
-### -field <a id="PCIXBUS_ERROR_SECTION_GUID"></a><a id="pcixbus_error_section_guid"></a>PCIXBUS_ERROR_SECTION_GUID
+### -field PCIXBUS_ERROR_SECTION_GUID
 
 <dd>
 <p>The error record section contains PCI/PCI-X device error data. This data is described by a <a href="..\ntddk\ns-ntddk--whea-pcixdevice-error-section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure.</p>
 </dd>
 
-### -field <a id="XPF_PROCESSOR_ERROR_SECTION_GUID"></a><a id="xpf_processor_error_section_guid"></a>XPF_PROCESSOR_ERROR_SECTION_GUID
+### -field XPF_PROCESSOR_ERROR_SECTION_GUID
 
 <dd>
 <p>The error record section contains processor error data that is specific to the x86 or x64 processor architecture. This data is described by a <a href="..\ntddk\ns-ntddk--whea-xpf-processor-error-section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure.</p>
@@ -241,19 +241,19 @@ typedef struct _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR {
 <p>For error record sections that do not conform to one of the standard section types, this member contains a platform-specific GUID that identifies the type of error data that is contained in the error record section. If a platform-specific GUID is not defined for the type of error data that is contained in the error record section, this member contains GENERIC_SECTION_GUID.</p>
 </dd>
 
-### -field <b>FRUId</b>
+### -field FRUId
 
 <dd>
 <p>A GUID that identifies the Field Replaceable Unit (FRU) that contains the hardware where the error occurred. This member contains valid data only if the <b>ValidBits.FRUId</b> bit is set.</p>
 </dd>
 
-### -field <b>SectionSeverity</b>
+### -field SectionSeverity
 
 <dd>
 <p>A <a href="..\ntddk\ne-ntddk--whea-error-severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition that is described by the error record section.</p>
 </dd>
 
-### -field <b>FRUText</b>
+### -field FRUText
 
 <dd>
 <p>A character string that identifies the Field Replaceable Unit (FRU) that contains the hardware where the error occurred. This member contains valid data only if the <b>ValidBits.FRUText</b> bit is set.</p>

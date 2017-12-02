@@ -7,7 +7,7 @@ old-location: ifsk\rtlallocateheap.htm
 old-project: ifsk
 ms.assetid: 38f4c2b7-f9cd-42f2-b75e-725976b6b9dd
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlAllocateHeap
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ PVOID RtlAllocateHeap(
 ## -parameters
 <dl>
 
-### -param <i>HeapHandle</i> [in]
+### -param HeapHandle [in]
 
 <dd>
 <p>Handle for a private heap from which the memory will be allocated. This parameter is a handle returned from a successful call to <b>RtlCreateHeap</b>. </p>
 </dd>
 
-### -param <i>Flags</i> [in, optional]
+### -param Flags [in, optional]
 
 <dd>
 <p>Specifies several controllable aspects of heap allocation. Specifying any of these values will override the corresponding value specified when the heap was created with <b>RtlCreateHeap</b>. This parameter can be one or more of the following values. </p>
@@ -99,7 +99,7 @@ PVOID RtlAllocateHeap(
 <p> </p>
 </dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>Number of bytes to be allocated. If the heap, specified by the <i>HeapHandle</i> parameter, is a nongrowable heap, <i>Size</i> must be less than or equal to the heap's virtual memory threshold. (For more information, see the <b>VirtualMemoryThreshold</b> member of the <i>Parameters</i> parameter to <a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>.) </p>
@@ -206,4 +206,4 @@ PVOID RtlAllocateHeap(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlAllocateHeap routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlAllocateHeap routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

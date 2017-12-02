@@ -126,13 +126,13 @@ ULONG KeQueryTimeIncrement(void);
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequerytickcount.md">KeQueryTickCount</a>
+<a href="..\wdm\nf-wdm-kequerytickcount.md">KeQueryTickCount</a>
 </dt>
 </dl>
 <p> </p>

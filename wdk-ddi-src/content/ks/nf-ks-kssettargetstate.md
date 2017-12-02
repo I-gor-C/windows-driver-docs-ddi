@@ -55,13 +55,13 @@ VOID KsSetTargetState(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [in]
+### -param Header [in]
 
 <dd>
 <p>Points to a header previously allocated by <a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a>.</p>
 </dd>
 
-### -param <i>TargetState</i> [in]
+### -param TargetState [in]
 
 <dd>
 <p>Contains the new state of the target associated with this object header. This may be either KSTARGET_STATE_DISABLED or KSTARGET_STATE_ENABLED.</p>

@@ -57,25 +57,25 @@ typedef struct _MPIO_DRIVE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberPaths</b>
+### -field NumberPaths
 
 <dd>
 <p>An unsigned 32-bitfield that represents the number of paths to the LUN.</p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>A string field (of maximum length 63 characters) that returns the device name that was created by MPIO for the LUN.</p>
 </dd>
 
-### -field <b>SerialNumber</b>
+### -field SerialNumber
 
 <dd>
 <p>A string field (of maximum length 63 characters) that returns the serial number that was created for the LUN by either the DSM or by MPIO itself.</p>
 </dd>
 
-### -field <b>DsmName</b>
+### -field DsmName
 
 <dd>
 <p>A string field (of maximum length 63 characters) that returns the friendly name of the controlling DSM for the device.</p>

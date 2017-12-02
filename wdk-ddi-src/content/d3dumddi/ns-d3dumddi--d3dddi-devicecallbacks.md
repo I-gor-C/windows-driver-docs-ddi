@@ -114,327 +114,327 @@ typedef struct _D3DDDI_DEVICECALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnAllocateCb</b>
+### -field pfnAllocateCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-allocatecb.md">pfnAllocateCb</a> function, which the user-mode display driver uses to request that the Direct3D runtime create a memory allocation for use by the driver.</p>
 </dd>
 
-### -field <b>pfnDeallocateCb</b>
+### -field pfnDeallocateCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-deallocatecb.md">pfnDeallocateCb</a> function, which the user-mode display driver uses to request that the Direct3D runtime free memory that was previously allocated.</p>
 </dd>
 
-### -field <b>pfnSetPriorityCb</b>
+### -field pfnSetPriorityCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setprioritycb.md">pfnSetPriorityCb</a> function, which the user-mode display driver uses to set the priority of a resource or list of allocations.</p>
 </dd>
 
-### -field <b>pfnQueryResidencyCb</b>
+### -field pfnQueryResidencyCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-queryresidencycb.md">pfnQueryResidencyCb</a> function, which the user-mode display driver uses to query the residency status of a resource or list of allocations.</p>
 </dd>
 
-### -field <b>pfnSetDisplayModeCb</b>
+### -field pfnSetDisplayModeCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setdisplaymodecb.md">pfnSetDisplayModeCb</a> function, which the user-mode display driver uses to set an allocation for displaying.</p>
 </dd>
 
-### -field <b>pfnPresentCb</b>
+### -field pfnPresentCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-presentcb.md">pfnPresentCb</a> function, which the user-mode display driver uses to submit a present command to the display miniport driver.</p>
 </dd>
 
-### -field <b>pfnRenderCb</b>
+### -field pfnRenderCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a> function, which the user-mode display driver uses to submit a command buffer to the display miniport driver.</p>
 </dd>
 
-### -field <b>pfnLockCb</b>
+### -field pfnLockCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lockcb.md">pfnLockCb</a> function, which the user-mode display driver uses to request a lock from the display miniport driver. This lock cannot be handled completely by the user-mode display driver.</p>
 </dd>
 
-### -field <b>pfnUnlockCb</b>
+### -field pfnUnlockCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-unlockcb.md">pfnUnlockCb</a> function, which the user-mode display driver uses to call the display miniport driver for an unlock. This unlock cannot be handled completely by the user-mode display driver. </p>
 </dd>
 
-### -field <b>pfnEscapeCb</b>
+### -field pfnEscapeCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-escapecb.md">pfnEscapeCb</a> function, which the user-mode display driver uses to share information with the display miniport driver. </p>
 </dd>
 
-### -field <b>pfnCreateOverlayCb</b>
+### -field pfnCreateOverlayCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createoverlaycb.md">pfnCreateOverlayCb</a> function, which the user-mode display driver uses to create and display a kernel-mode overlay object. </p>
 </dd>
 
-### -field <b>pfnUpdateOverlayCb</b>
+### -field pfnUpdateOverlayCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-updateoverlaycb.md">pfnUpdateOverlayCb</a> function, which the user-mode display driver uses to modify a kernel-mode overlay object. </p>
 </dd>
 
-### -field <b>pfnFlipOverlayCb</b>
+### -field pfnFlipOverlayCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-flipoverlaycb.md">pfnFlipOverlayCb</a> function, which the user-mode display driver uses to change the allocation that the overlay displays. </p>
 </dd>
 
-### -field <b>pfnDestroyOverlayCb</b>
+### -field pfnDestroyOverlayCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroyoverlaycb.md">pfnDestroyOverlayCb</a> function, which the user-mode display driver uses to destroy a kernel-mode overlay object and stop the overlay from being displayed. </p>
 </dd>
 
-### -field <b>pfnCreateContextCb</b>
+### -field pfnCreateContextCb
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function, which the user-mode display driver uses to create a context to submit requests to. </p>
 </dd>
 
-### -field <b>pfnDestroyContextCb</b>
+### -field pfnDestroyContextCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroycontextcb.md">pfnDestroyContextCb</a> function, which the user-mode display driver uses to destroy a context that <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> created. </p>
 </dd>
 
-### -field <b>pfnCreateSynchronizationObjectCb</b>
+### -field pfnCreateSynchronizationObjectCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createsynchronizationobjectcb.md">pfnCreateSynchronizationObjectCb</a> function, which the user-mode display driver uses to create a synchronization object. </p>
 </dd>
 
-### -field <b>pfnDestroySynchronizationObjectCb</b>
+### -field pfnDestroySynchronizationObjectCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroysynchronizationobjectcb.md">pfnDestroySynchronizationObjectCb</a> function, which the user-mode display driver uses to destroy a synchronization object that <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createsynchronizationobjectcb.md">pfnCreateSynchronizationObjectCb</a> created. </p>
 </dd>
 
-### -field <b>pfnWaitForSynchronizationObjectCb</b>
+### -field pfnWaitForSynchronizationObjectCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-waitforsynchronizationobjectcb.md">pfnWaitForSynchronizationObjectCb</a> function, which the user-mode display driver uses to wait for synchronization events to occur and then uses to return. </p>
 </dd>
 
-### -field <b>pfnSignalSynchronizationObjectCb</b>
+### -field pfnSignalSynchronizationObjectCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-signalsynchronizationobjectcb.md">pfnSignalSynchronizationObjectCb</a> function, which the user-mode display driver uses to signal that synchronization events are no longer owned by a context. </p>
 </dd>
 
-### -field <b>pfnSetAsyncCallbacksCb</b>
+### -field pfnSetAsyncCallbacksCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setasynccallbackscb.md">pfnSetAsyncCallbacksCb</a> function that the user-mode display driver uses to notify the Direct3D runtime whether the runtime will start or stop receiving calls to the runtime's callback functions from a worker thread.</p>
 <p>Only DirectX 9 and Direct 9L versions of the runtime support the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setasynccallbackscb.md">pfnSetAsyncCallbacksCb</a> function. DirectX 10 and later versions of the runtime set the <b>pfnSetAsyncCallbacksCb</b> member to <b>NULL</b> when the runtime calls the user-mode display driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function to create a rendering device. </p>
 </dd>
 
-### -field <b>pfnSetDisplayPrivateDriverFormatCb</b>
+### -field pfnSetDisplayPrivateDriverFormatCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setdisplayprivatedriverformatcb.md">pfnSetDisplayPrivateDriverFormatCb</a> function that the user-mode display driver uses to change the format of the shared primary surface. </p>
 </dd>
 
-### -field <b>pfnOfferAllocationsCb</b>
+### -field pfnOfferAllocationsCb
 
 <dd>
 <p>A pointer to the <a href="display.pfnofferallocationscb">pfnOfferAllocationsCb</a> function, which a WDDM 1.2 and later user-mode display driver   calls to offer  video memory allocations for reuse.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>pfnReclaimAllocationsCb</b>
+### -field pfnReclaimAllocationsCb
 
 <dd>
 <p>A pointer to the <a href="display.pfnreclaimallocationscb">pfnReclaimAllocationsCb</a> function, which a WDDM 1.2 and later user-mode display driver   calls to reclaim access to video memory allocations that were previously offered  for reuse.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>pfnCreateSynchronizationObject2Cb</b>
+### -field pfnCreateSynchronizationObject2Cb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createsynchronizationobject2cb.md">pfnCreateSynchronizationObject2Cb</a> function, which a WDDM 1.2 and later user-mode display driver uses to create a GPU synchronization object.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>pfnWaitForSynchronizationObject2Cb</b>
+### -field pfnWaitForSynchronizationObject2Cb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-waitforsynchronizationobject2cb.md">pfnWaitForSynchronizationObject2Cb</a> function, which a WDDM 1.2 and later user-mode display driver uses to wait for GPU synchronization events to occur and then uses to return.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>pfnSignalSynchronizationObject2Cb</b>
+### -field pfnSignalSynchronizationObject2Cb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-signalsynchronizationobject2cb.md">pfnSignalSynchronizationObject2Cb</a> function, which a WDDM 1.2 and later user-mode display driver uses to signal that GPU synchronization events are no longer owned by a context.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>pfnPresentMultiPlaneOverlayCb</b>
+### -field pfnPresentMultiPlaneOverlayCb
 
 <dd>
 <p>A pointer to the <a href="display.pfnpresentmultiplaneoverlaycb_d3d">pfnPresentMultiPlaneOverlayCb (D3D)</a> function, which a WDDM 1.3 and later user-mode display driver uses to copy content from a source multiplane overlay allocation to a destination allocation.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>pfnLogUMDMarkerCb</b>
+### -field pfnLogUMDMarkerCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-logumdmarkercb.md">pfnLogUMDMarkerCb</a> function, which a WDDM 1.3 and later user-mode display driver calls to log a custom Event Tracing for Windows (ETW) marker event.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>pfnMakeResidentCb</b>
+### -field pfnMakeResidentCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-makeresidentcb.md">pfnMakeResidentCb</a> function.</p>
 </dd>
 
-### -field <b>pfnEvictCb</b>
+### -field pfnEvictCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-evictcb.md">pfnEvictCb</a> function.</p>
 </dd>
 
-### -field <b>pfnWaitForSynchronizationObjectFromCpuCb</b>
+### -field pfnWaitForSynchronizationObjectFromCpuCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-waitforsynchronizationobjectfromcpucb.md">pfnWaitForSynchronizationObjectFromCpuCb</a> function.</p>
 </dd>
 
-### -field <b>pfnSignalSynchronizationObjectFromCpuCb</b>
+### -field pfnSignalSynchronizationObjectFromCpuCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-signalsynchronizationobjectfromcpucb.md">pfnSignalSynchronizationObjectFromCpuCb</a> function.</p>
 </dd>
 
-### -field <b>pfnWaitForSynchronizationObjectFromGpuCb</b>
+### -field pfnWaitForSynchronizationObjectFromGpuCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-waitforsynchronizationobjectfromgpucb.md">pfnWaitForSynchronizationObjectFromGpuCb</a> function.</p>
 </dd>
 
-### -field <b>pfnSignalSynchronizationObjectFromGpuCb</b>
+### -field pfnSignalSynchronizationObjectFromGpuCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-signalsynchronizationobjectfromgpucb.md">pfnSignalSynchronizationObjectFromGpuCb</a> function.</p>
 </dd>
 
-### -field <b>pfnCreatePagingQueueCb</b>
+### -field pfnCreatePagingQueueCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createpagingqueuecb.md">pfnCreatePagingQueueCb</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyPagingQueueCb</b>
+### -field pfnDestroyPagingQueueCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroypagingqueuecb.md">pfnDestroyPagingQueueCb</a> function.</p>
 </dd>
 
-### -field <b>pfnLock2Cb</b>
+### -field pfnLock2Cb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lock2cb.md">pfnLock2Cb</a> function.</p>
 </dd>
 
-### -field <b>pfnUnlock2Cb</b>
+### -field pfnUnlock2Cb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-unlock2cb.md">pfnUnlock2Cb</a> function.</p>
 </dd>
 
-### -field <b>pfnInvalidateCacheCb</b>
+### -field pfnInvalidateCacheCb
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/56DF8936-4DD1-4352-9063-72F441FDF343">pfnInvalidateCacheCb</a> function.</p>
 </dd>
 
-### -field <b>pfnReserveGpuVirtualAddressCb</b>
+### -field pfnReserveGpuVirtualAddressCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a> function.</p>
 </dd>
 
-### -field <b>pfnMapGpuVirtualAddressCb</b>
+### -field pfnMapGpuVirtualAddressCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-mapgpuvirtualaddresscb.md">pfnMapGpuVirtualAddressCb</a> function.</p>
 </dd>
 
-### -field <b>pfnFreeGpuVirtualAddressCb</b>
+### -field pfnFreeGpuVirtualAddressCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-freegpuvirtualaddresscb.md">pfnFreeGpuVirtualAddressCb</a> function.</p>
 </dd>
 
-### -field <b>pfnUpdateGpuVirtualAddressCb</b>
+### -field pfnUpdateGpuVirtualAddressCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-updategpuvirtualaddresscb.md">pfnUpdateGpuVirtualAddressCb</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateContextVirtualCb</b>
+### -field pfnCreateContextVirtualCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createcontextvirtualcb.md">pfnCreateContextVirtualCb</a> function.</p>
 </dd>
 
-### -field <b>pfnSubmitCommandCb</b>
+### -field pfnSubmitCommandCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-submitcommandcb.md">pfnSubmitCommandCb</a> function.</p>
 </dd>
 
-### -field <b>pfnDeallocate2Cb</b>
+### -field pfnDeallocate2Cb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-deallocate2cb.md">pfnDeallocate2Cb</a> function.</p>
 </dd>
 
-### -field <b>pfnSignalSynchronizationObjectFromGpu2Cb</b>
+### -field pfnSignalSynchronizationObjectFromGpu2Cb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-signalsynchronizationobjectfromgpu2cb.md">pfnSignalSynchronizationObjectFromGpu2Cb</a> function.</p>
 </dd>
 
-### -field <b>pfnReclaimAllocations2Cb</b>
+### -field pfnReclaimAllocations2Cb
 
 <dd>
 <p>A pointer to the <a href="display.pfnreclaimallocations2cb">pfnReclaimAllocations2Cb</a> function.</p>
 </dd>
 
-### -field <b>pfnGetResourcePresentPrivateDriverDataCb</b>
+### -field pfnGetResourcePresentPrivateDriverDataCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getresourcepresentprivatedriverdatacb.md">pfnGetResourcePresentPrivateDriverDataCb</a> function.</p>
 </dd>
 
-### -field <b>pfnUpdateAllocationPropertyCb</b>
+### -field pfnUpdateAllocationPropertyCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-updateallocationpropertycb.md">pfnUpdateAllocationPropertyCb</a> function.</p>
 </dd>
 
-### -field <b>pfnOfferAllocations2Cb</b>
+### -field pfnOfferAllocations2Cb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-offerallocations2cb.md">pfnOfferAllocations2Cb</a> function.</p>
 </dd>
 
-### -field <b>pfnReclaimAllocations3Cb</b>
+### -field pfnReclaimAllocations3Cb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-reclaimallocations3cb.md">pfnReclaimAllocations3Cb</a> function.</p>

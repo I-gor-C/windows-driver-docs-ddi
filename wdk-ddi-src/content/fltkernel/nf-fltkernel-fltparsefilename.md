@@ -7,7 +7,7 @@ old-location: ifsk\fltparsefilename.htm
 old-project: ifsk
 ms.assetid: 8d91390b-22a1-4e0b-8c9e-78c0872e7b21
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltParseFileName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ NTSTATUS FltParseFileName(
 ## -parameters
 <dl>
 
-### -param <i>FileName</i> [in]
+### -param FileName [in]
 
 <dd>
 <p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the string to parse as a file name. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>Extension</i> [in, out]
+### -param Extension [in, out]
 
 <dd>
 <p>Pointer to a UNICODE_STRING structure that receives the extension parsed from the <i>FileName</i> string. If no extension is found, <b>FltParseFileName</b> sets <i>Extension.Buffer</i> to <b>NULL</b> and <i>Extension.Length</i> to zero. Otherwise, <i>Extension.Buffer</i> receives a pointer to the beginning of the extension in <i>FileName.Buffer</i>, and <i>Extension.Length</i> receives the length, in bytes, of the extension. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>Stream</i> [in, out]
+### -param Stream [in, out]
 
 <dd>
 <p>Pointer to a UNICODE_STRING structure that receives the stream name parsed from the <i>FileName</i> string. If no stream name is found, <b>FltParseFileName</b> sets <i>Stream.Buffer</i> to <b>NULL</b> and <i>Stream.Length</i> to zero. Otherwise, <i>Stream.Buffer</i> receives a pointer to the beginning of the stream name in <i>FileName.Buffer</i>, and <i>Stream.Length</i> receives the length, in bytes, of the stream name. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>FinalComponent</i> [in, out]
+### -param FinalComponent [in, out]
 
 <dd>
 <p>Pointer to a UNICODE_STRING structure that receives the final name component parsed from the <i>FileName</i> string. If no final component is found, <b>FltParseFileName</b> sets <i>FinalComponent.Buffer</i> to <b>NULL</b> and <i>FinalComponent.Length</i> to zero. Otherwise, <i>FinalComponent.Buffer</i> receives a pointer to the beginning of the final component in <i>FileName.Buffer</i>, and <i>FinalComponent.Length</i> receives the length, in bytes, of the final component. This parameter is optional and can be <b>NULL</b>. </p>
@@ -184,4 +184,4 @@ NTSTATUS FltParseFileName(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltParseFileName function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltParseFileName function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

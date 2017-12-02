@@ -57,19 +57,19 @@ typedef struct _TRANSACTION_BASIC_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>TransactionId</b>
+### -field TransactionId
 
 <dd>
 <p>A GUID that KTM has assigned to the transaction object. This value is also known as the transaction's <a href="https://msdn.microsoft.com/927a417b-35f5-49b8-85f3-7e6b1f5c0225">unit of work (UOW) identifier</a>.</p>
 </dd>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--transaction-state.md">TRANSACTION_STATE</a>-typed value that specifies the transaction's current state.</p>
 </dd>
 
-### -field <b>Outcome</b>
+### -field Outcome
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--transaction-outcome.md">TRANSACTION_OUTCOME</a>-typed value that specifies the transaction's outcome (result).</p>

@@ -7,13 +7,13 @@ old-location: debugger\setthreadforoperation64.htm
 old-project: debugger
 ms.assetid: 0c8f7113-0866-454a-9596-8733dd78b282
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: SetThreadForOperation64
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -55,7 +55,7 @@ __inline VOID SetThreadForOperation64(
 ## -parameters
 <dl>
 
-### -param <i>Thread</i> 
+### -param Thread 
 
 <dd>
 <p>Points to the thread object to be used for the next stack trace.</p>
@@ -88,7 +88,7 @@ __inline VOID SetThreadForOperation64(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

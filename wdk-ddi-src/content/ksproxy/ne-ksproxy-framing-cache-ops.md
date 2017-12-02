@@ -57,21 +57,21 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="Framing_Cache_Update"></a><a id="framing_cache_update"></a><a id="FRAMING_CACHE_UPDATE"></a><b>Framing_Cache_Update</b>
+### -field Framing_Cache_Update
 
 <dd>
 <p>Specifies a request to bypass the cache when reading or writing.</p>
 </dd>
 
-### -field <a id="Framing_Cache_ReadLast"></a><a id="framing_cache_readlast"></a><a id="FRAMING_CACHE_READLAST"></a><b>Framing_Cache_ReadLast</b>
+### -field Framing_Cache_ReadLast
 
 <dd></dd>
 
-### -field <a id="Framing_Cache_ReadOrig"></a><a id="framing_cache_readorig"></a><a id="FRAMING_CACHE_READORIG"></a><b>Framing_Cache_ReadOrig</b>
+### -field Framing_Cache_ReadOrig
 
 <dd></dd>
 
-### -field <a id="Framing_Cache_Write"></a><a id="framing_cache_write"></a><a id="FRAMING_CACHE_WRITE"></a><b>Framing_Cache_Write</b>
+### -field Framing_Cache_Write
 
 <dd></dd>
 </dl>

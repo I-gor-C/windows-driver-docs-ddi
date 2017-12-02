@@ -55,7 +55,7 @@ PPRINTER_NOTIFY_INFO RouterAllocPrinterNotifyInfo(
 ## -parameters
 <dl>
 
-### -param <i>cPrinterNotifyInfoData</i> 
+### -param cPrinterNotifyInfoData 
 
 <dd>
 <p>Caller-supplied number specifying size of the PRINTER_NOTIFY_INFO_DATA structure array to be allocated.</p>
@@ -74,7 +74,7 @@ PPRINTER_NOTIFY_INFO RouterAllocPrinterNotifyInfo(
 
 <p>If <code>RefreshPrinterChangeNotification</code> executes successfully and returns the allocated structures to the caller, you should assume that the caller will deallocate structure memory. However, if <code>RefreshPrinterChangeNotification</code> encounters an error it should call <a href="..\winsplp\nf-winsplp-routerfreeprinternotifyinfo.md">RouterFreePrinterNotifyInfo</a> to deallocate the memory.</p>
 
-<p>For additional information, see <a href="NULL">Supporting Printer Change Notifications</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/e75c6f89-9cef-4900-af89-edf1f7f786c7">Supporting Printer Change Notifications</a>.</p>
 
 ## -requirements
 <table>

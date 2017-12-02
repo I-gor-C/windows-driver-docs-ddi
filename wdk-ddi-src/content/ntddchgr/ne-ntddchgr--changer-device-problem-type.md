@@ -67,85 +67,85 @@ typedef enum _CHANGER_DEVICE_PROBLEM_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DeviceProblemNone"></a><a id="deviceproblemnone"></a><a id="DEVICEPROBLEMNONE"></a><b>DeviceProblemNone</b>
+### -field DeviceProblemNone
 
 <dd>
 <p>Indicates the device has no problem.</p>
 </dd>
 
-### -field <a id="DeviceProblemHardware"></a><a id="deviceproblemhardware"></a><a id="DEVICEPROBLEMHARDWARE"></a><b>DeviceProblemHardware</b>
+### -field DeviceProblemHardware
 
 <dd>
 <p>Indicates the device has had a hardware error.</p>
 </dd>
 
-### -field <a id="DeviceProblemCHMError"></a><a id="deviceproblemchmerror"></a><a id="DEVICEPROBLEMCHMERROR"></a><b>DeviceProblemCHMError</b>
+### -field DeviceProblemCHMError
 
 <dd>
 <p>Indicates the Cartridge Handling Mechanism (CHM) has some problem.</p>
 </dd>
 
-### -field <a id="DeviceProblemDoorOpen"></a><a id="deviceproblemdooropen"></a><a id="DEVICEPROBLEMDOOROPEN"></a><b>DeviceProblemDoorOpen</b>
+### -field DeviceProblemDoorOpen
 
 <dd>
 <p>Indicates the changer's door is open.</p>
 </dd>
 
-### -field <a id="DeviceProblemCalibrationError"></a><a id="deviceproblemcalibrationerror"></a><a id="DEVICEPROBLEMCALIBRATIONERROR"></a><b>DeviceProblemCalibrationError</b>
+### -field DeviceProblemCalibrationError
 
 <dd>
 <p>Indicates the changer has a calibration problem.</p>
 </dd>
 
-### -field <a id="DeviceProblemTargetFailure"></a><a id="deviceproblemtargetfailure"></a><a id="DEVICEPROBLEMTARGETFAILURE"></a><b>DeviceProblemTargetFailure</b>
+### -field DeviceProblemTargetFailure
 
 <dd>
 <p>Indicates a target failure has occurred.</p>
 </dd>
 
-### -field <a id="DeviceProblemCHMMoveError"></a><a id="deviceproblemchmmoveerror"></a><a id="DEVICEPROBLEMCHMMOVEERROR"></a><b>DeviceProblemCHMMoveError</b>
+### -field DeviceProblemCHMMoveError
 
 <dd>
 <p>Indicates the CHM is blocked and cannot move. </p>
 </dd>
 
-### -field <a id="DeviceProblemCHMZeroError"></a><a id="deviceproblemchmzeroerror"></a><a id="DEVICEPROBLEMCHMZEROERROR"></a><b>DeviceProblemCHMZeroError</b>
+### -field DeviceProblemCHMZeroError
 
 <dd>
 <p>Indicates the CHM could not define zero on one or more of its axis.</p>
 </dd>
 
-### -field <a id="DeviceProblemCartridgeInsertError"></a><a id="deviceproblemcartridgeinserterror"></a><a id="DEVICEPROBLEMCARTRIDGEINSERTERROR"></a><b>DeviceProblemCartridgeInsertError</b>
+### -field DeviceProblemCartridgeInsertError
 
 <dd>
 <p>Indicates an error occurred while loading a cartridge in the drive.</p>
 </dd>
 
-### -field <a id="DeviceProblemPositionError"></a><a id="deviceproblempositionerror"></a><a id="DEVICEPROBLEMPOSITIONERROR"></a><b>DeviceProblemPositionError</b>
+### -field DeviceProblemPositionError
 
 <dd>
 <p>Indicates the CHM has a problem positioning itself to some point.</p>
 </dd>
 
-### -field <a id="DeviceProblemSensorError"></a><a id="deviceproblemsensorerror"></a><a id="DEVICEPROBLEMSENSORERROR"></a><b>DeviceProblemSensorError</b>
+### -field DeviceProblemSensorError
 
 <dd>
 <p>Indicates the device's sensors are malfunctioning.</p>
 </dd>
 
-### -field <a id="DeviceProblemCartridgeEjectError"></a><a id="deviceproblemcartridgeejecterror"></a><a id="DEVICEPROBLEMCARTRIDGEEJECTERROR"></a><b>DeviceProblemCartridgeEjectError</b>
+### -field DeviceProblemCartridgeEjectError
 
 <dd>
 <p>Indicates an error occurred while unloading a cartridge.</p>
 </dd>
 
-### -field <a id="DeviceProblemGripperError"></a><a id="deviceproblemgrippererror"></a><a id="DEVICEPROBLEMGRIPPERERROR"></a><b>DeviceProblemGripperError</b>
+### -field DeviceProblemGripperError
 
 <dd>
 <p>Indicates the media gripper has a problem.</p>
 </dd>
 
-### -field <a id="DeviceProblemDriveError"></a><a id="deviceproblemdriveerror"></a><a id="DEVICEPROBLEMDRIVEERROR"></a><b>DeviceProblemDriveError</b>
+### -field DeviceProblemDriveError
 
 <dd>
 <p>Indicates the changer's drive is malfunctioning.</p>

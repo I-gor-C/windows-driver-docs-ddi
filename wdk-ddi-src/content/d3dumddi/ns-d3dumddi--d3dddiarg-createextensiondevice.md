@@ -56,19 +56,19 @@ typedef struct _D3DDDIARG_CREATEEXTENSIONDEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>pGuid</b>
+### -field pGuid
 
 <dd>
 <p>[in] A pointer to the GUID that represents the DirectX VA extension type. The Microsoft Direct3D runtime calls the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function to query for the supported extension GUIDs.</p>
 </dd>
 
-### -field <b>pPrivate</b>
+### -field pPrivate
 
 <dd>
 <p>[in] A pointer to the <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-privatedata.md">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to create the extension device. </p>
 </dd>
 
-### -field <b>hExtension</b>
+### -field hExtension
 
 <dd>
 <p>[in/out] A handle to the extension device. The user-mode display driver must set this handle to a value that the Direct3D runtime can use to identify the extension device in subsequent calls.</p>

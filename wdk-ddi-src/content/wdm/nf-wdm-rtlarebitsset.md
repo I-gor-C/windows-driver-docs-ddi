@@ -57,19 +57,19 @@ BOOLEAN RtlAreBitsSet(
 ## -parameters
 <dl>
 
-### -param <i>BitMapHeader</i> [in]
+### -param BitMapHeader [in]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a> routine. </p>
 </dd>
 
-### -param <i>StartingIndex</i> [in]
+### -param StartingIndex [in]
 
 <dd>
 <p>Specifies the start of the bit range to be tested. This is a zero-based value indicating the position of the first bit in the range. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies how many bits to test. </p>

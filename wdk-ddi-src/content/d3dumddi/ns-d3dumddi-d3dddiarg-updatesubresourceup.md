@@ -60,43 +60,43 @@ typedef struct D3DDDIARG_UPDATESUBRESOURCEUP {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>A handle to the destination resource to copy to.</p>
 </dd>
 
-### -field <b>SubResourceIndex</b>
+### -field SubResourceIndex
 
 <dd>
 <p>The index of the destination subresource to which data is to be copied.</p>
 </dd>
 
-### -field <b>DstBox</b>
+### -field DstBox
 
 <dd>
 <p>A destination region, of type  <a href="..\d3dumddi\ns-d3dumddi--d3dddibox.md">D3DDDIBOX</a>, of the subresource to which data is to be copied. If <b>Flags</b>-&gt;<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-copyflags.md">BoxValid</a> is not set, the entire subresource must be updated.</p>
 </dd>
 
-### -field <b>pSysMemUP</b>
+### -field pSysMemUP
 
 <dd>
 <p>A pointer to the beginning address of the source data that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-updatesubresourceup.md">pfnUpdateSubresourceUP</a> function copies to update the destination subresouce.</p>
 </dd>
 
-### -field <b>RowPitch</b>
+### -field RowPitch
 
 <dd>
 <p>The offset, in bytes, to move to the next row of source data.</p>
 </dd>
 
-### -field <b>DepthPitch</b>
+### -field DepthPitch
 
 <dd>
 <p>The offset, in bytes, to move to the next depth slice of source data.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-copyflags.md">D3DDDIARG_COPYFLAGS</a> structure that specifies additional characteristics of the subresource update operation.</p>

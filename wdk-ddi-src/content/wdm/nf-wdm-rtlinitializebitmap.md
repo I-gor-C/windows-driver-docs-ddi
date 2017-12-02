@@ -57,19 +57,19 @@ VOID RtlInitializeBitMap(
 ## -parameters
 <dl>
 
-### -param <i>BitMapHeader</i> [out]
+### -param BitMapHeader [out]
 
 <dd>
 <p>Pointer to an empty <a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a> structure. </p>
 </dd>
 
-### -param <i>BitMapBuffer</i> [in]
+### -param BitMapBuffer [in]
 
 <dd>
 <p>Pointer to caller-allocated memory for the bitmap itself. The base address of this buffer must be ULONG-aligned. The size of the allocated buffer must be an integer multiple of <b>sizeof</b>(ULONG) bytes. </p>
 </dd>
 
-### -param <i>SizeOfBitMap</i> [in]
+### -param SizeOfBitMap [in]
 
 <dd>
 <p>Specifies the number of bits in the bitmap. This value can be any number of bits that will fit in the buffer allocated for the bitmap. </p>

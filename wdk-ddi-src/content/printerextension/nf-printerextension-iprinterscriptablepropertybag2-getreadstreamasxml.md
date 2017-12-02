@@ -56,11 +56,11 @@ HRESULT GetReadStreamAsXML(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd></dd>
 
-### -param <i>ppXmlNode</i> [out]
+### -param ppXmlNode [out]
 
 <dd></dd>
 </dl>

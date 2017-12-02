@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTChangeSurfacePointer(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>For system use only.</p>

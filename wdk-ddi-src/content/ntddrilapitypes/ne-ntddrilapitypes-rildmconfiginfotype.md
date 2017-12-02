@@ -7,7 +7,7 @@ old-location: netvista\rildmconfiginfotype.htm
 old-project: netvista
 ms.assetid: c6dc14a5-59de-42dd-9e45-99f632bf6a57
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILDMCONFIGINFOTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DMCV_TYPE_BOOLEAN"></a><a id="ril_dmcv_type_boolean"></a><b>RIL_DMCV_TYPE_BOOLEAN</b>
+### -field RIL_DMCV_TYPE_BOOLEAN
 
 <dd></dd>
 
-### -field <a id="RIL_DMCV_TYPE_DWORD"></a><a id="ril_dmcv_type_dword"></a><b>RIL_DMCV_TYPE_DWORD</b>
+### -field RIL_DMCV_TYPE_DWORD
 
 <dd></dd>
 
-### -field <a id="RIL_DMCV_TYPE_STRING"></a><a id="ril_dmcv_type_string"></a><b>RIL_DMCV_TYPE_STRING</b>
+### -field RIL_DMCV_TYPE_STRING
 
 <dd></dd>
 
-### -field <a id="RIL_DMCV_TYPE_MAX"></a><a id="ril_dmcv_type_max"></a><b>RIL_DMCV_TYPE_MAX</b>
+### -field RIL_DMCV_TYPE_MAX
 
 <dd></dd>
 </dl>

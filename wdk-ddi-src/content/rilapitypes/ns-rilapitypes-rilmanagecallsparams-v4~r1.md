@@ -7,7 +7,7 @@ old-location: netvista\rilmanagecallsparams_v4_2.htm
 old-project: netvista
 ms.assetid: 62465d2b-53b4-4c11-97c0-ff7171d8a3b0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMANAGECALLSPARAMS_V4,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef struct _RILMANAGECALLSPARAMS_V4 {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwCommand</b>
+### -field dwCommand
 
 <dd></dd>
 
-### -field <b>dwID</b>
+### -field dwID
 
 <dd></dd>
 
-### -field <b>fHasOfferAnswer</b>
+### -field fHasOfferAnswer
 
 <dd></dd>
 
-### -field <b>rcmOfferAnswer</b>
+### -field rcmOfferAnswer
 
 <dd></dd>
 
-### -field <b>raAddress</b>
+### -field raAddress
 
 <dd></dd>
 
-### -field <b>dwRTTAction</b>
+### -field dwRTTAction
 
 <dd></dd>
 </dl>

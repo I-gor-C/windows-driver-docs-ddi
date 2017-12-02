@@ -55,11 +55,11 @@ typedef struct _SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>guidSecureElementId</b>
+### -field guidSecureElementId
 
 <dd></dd>
 
-### -field <b>eEventType</b>
+### -field eEventType
 
 <dd>
 <p>Secure element event type. A service can subscribe and receive notification when an external reader arrival, external reader departure, transaction, HCE activated, or HCE deactivated event is triggered.</p>

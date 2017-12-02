@@ -7,7 +7,7 @@ old-location: wdf\wdfregistryquerymemory.htm
 old-project: wdf
 ms.assetid: 2d689ede-418e-4bf3-8c0e-82ded1085382
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfRegistryQueryMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ NTSTATUS WdfRegistryQueryMemory(
 ## -parameters
 <dl>
 
-### -param <i>Key</i> [in]
+### -param Key [in]
 
 <dd>
 <p>A handle to a registry-key object that represents an opened registry key.</p>
 </dd>
 
-### -param <i>ValueName</i> [in]
+### -param ValueName [in]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains a value name. </p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a>-typed value that specifies the type of memory to be allocated for the data buffer. </p>
 </dd>
 
-### -param <i>MemoryAttributes</i> [in, optional]
+### -param MemoryAttributes [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains object attributes for the new memory object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES. </p>
 </dd>
 
-### -param <i>Memory</i> [out]
+### -param Memory [out]
 
 <dd>
 <p>A pointer to a location that receives a handle to the new memory object. </p>
 </dd>
 
-### -param <i>ValueType</i> [out, optional]
+### -param ValueType [out, optional]
 
 <dd>
 <p>A pointer to a location that receives the data type. For a list of data type values, see the <b>Type</b> member of <a href="..\wdm\ns-wdm--key-value-basic-information.md">KEY_VALUE_BASIC_INFORMATION</a>. This pointer is optional and can be <b>NULL</b>.</p>
@@ -235,4 +235,4 @@ NTSTATUS WdfRegistryQueryMemory(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRegistryQueryMemory method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRegistryQueryMemory method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,13 +56,13 @@ NTSTATUS IoSetIoPriorityHint(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP to set the priority hint value for.</p>
 </dd>
 
-### -param <i>PriorityHint</i> [in]
+### -param PriorityHint [in]
 
 <dd>
 <p>Specifies the <a href="..\wdm\ne-wdm--io-priority-hint.md">IO_PRIORITY_HINT</a> value that indicates the new priority hint.</p>

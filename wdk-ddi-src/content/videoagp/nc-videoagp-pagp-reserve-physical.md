@@ -61,19 +61,19 @@ PHYSICAL_ADDRESS APIENTRY AgpReservePhysical(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>Pages</i> [in]
+### -param Pages [in]
 
 <dd>
 <p>Specifies the number of pages that the video port driver should reserve.</p>
 </dd>
 
-### -param <i>Caching</i> [in]
+### -param Caching [in]
 
 <dd>
 <p>Specifies the type of caching that the system should use. This parameter can be set to one of the following values.</p>
@@ -110,7 +110,7 @@ PHYSICAL_ADDRESS APIENTRY AgpReservePhysical(
 <p> </p>
 </dd>
 
-### -param <i>PhysicalReserveContext</i> [out]
+### -param PhysicalReserveContext [out]
 
 <dd>
 <p>Specifies the location in which the video port driver writes a context handle that identifies the reserved physical address space.</p>

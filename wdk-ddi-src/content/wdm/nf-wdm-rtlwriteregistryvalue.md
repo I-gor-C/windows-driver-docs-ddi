@@ -60,7 +60,7 @@ NTSTATUS RtlWriteRegistryValue(
 ## -parameters
 <dl>
 
-### -param <i>RelativeTo</i> [in]
+### -param RelativeTo [in]
 
 <dd>
 <p>Specifies whether <i>Path</i> is an absolute registry path or is relative to a predefined path as one of the following.</p>
@@ -137,31 +137,31 @@ NTSTATUS RtlWriteRegistryValue(
 <p> </p>
 </dd>
 
-### -param <i>Path</i> [in]
+### -param Path [in]
 
 <dd>
 <p>Pointer to either an absolute registry path or a path relative to the known location specified by the <i>RelativeTo</i> parameter. If the RTL_REGISTRY_HANDLE flag is specified, this parameter is a registry handle for an already opened key to be used directly.</p>
 </dd>
 
-### -param <i>ValueName</i> [in]
+### -param ValueName [in]
 
 <dd>
 <p>Pointer to the name of a subkey or value entry to be written into the registry.</p>
 </dd>
 
-### -param <i>ValueType</i> [in]
+### -param ValueType [in]
 
 <dd>
 <p>Specifies a REG_<i>XXX</i> value that determines the type of the <i>ValueName</i> parameter. For a list of the possible values, see the <i>Type</i> parameter of <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>.</p>
 </dd>
 
-### -param <i>ValueData</i> [in, optional]
+### -param ValueData [in, optional]
 
 <dd>
 <p>Pointer to the name of a subkey or values for its value entries (or both) to be written into the registry.</p>
 </dd>
 
-### -param <i>ValueLength</i> [in]
+### -param ValueLength [in]
 
 <dd>
 <p>Specifies the number of bytes of <i>ValueData</i> to be written into the registry.</p>

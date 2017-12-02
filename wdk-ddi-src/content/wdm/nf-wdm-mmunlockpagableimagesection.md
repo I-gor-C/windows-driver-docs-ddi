@@ -55,7 +55,7 @@ VOID MmUnlockPagableImageSection(
 ## -parameters
 <dl>
 
-### -param <i>ImageSectionHandle</i> [in]
+### -param ImageSectionHandle [in]
 
 <dd>
 <p>Specifies the handle returned by a call to <a href="..\wdm\nf-wdm-mmlockpagablecodesection.md">MmLockPagableCodeSection</a> or <a href="..\wdm\nf-wdm-mmlockpagabledatasection.md">MmLockPagableDataSection</a>. </p>

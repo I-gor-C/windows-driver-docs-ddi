@@ -7,7 +7,7 @@ old-location: netvista\ndisreadnetworkaddress.htm
 old-project: netvista
 ms.assetid: 42519c60-6dc6-4c20-a2e8-954d9610a982
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisReadNetworkAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ VOID NdisReadNetworkAddress(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [out]
+### -param Status [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which this function returns the status of the call as
@@ -68,14 +68,14 @@ VOID NdisReadNetworkAddress(
 <p></p>
 <dl>
 
-### -param <a id="NDIS_STATUS_SUCCESS"></a><a id="ndis_status_success"></a>NDIS_STATUS_SUCCESS
+### -param NDIS_STATUS_SUCCESS
 
 <dd>
 <p>The caller can use the address returned at 
        <i>NetworkAddress</i> for the NIC.</p>
 </dd>
 
-### -param <a id="NDIS_STATUS_FAILURE"></a><a id="ndis_status_failure"></a>NDIS_STATUS_FAILURE
+### -param NDIS_STATUS_FAILURE
 
 <dd>
 <p>There was no NIC address information available in the caller's registry 
@@ -84,14 +84,14 @@ VOID NdisReadNetworkAddress(
 </dl>
 </dd>
 
-### -param <i>NetworkAddress</i> [out]
+### -param NetworkAddress [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which this function returns a pointer to a buffer that contains the
      network address (typically the MAC address), stored as a sequence of byte integers, if the call is successful.</p>
 </dd>
 
-### -param <i>NetworkAddressLength</i> [out]
+### -param NetworkAddressLength [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which this function returns the number of bytes that
@@ -99,7 +99,7 @@ VOID NdisReadNetworkAddress(
      <i>NetworkAddress</i>.</p>
 </dd>
 
-### -param <i>ConfigurationHandle</i> [in]
+### -param ConfigurationHandle [in]
 
 <dd>
 <p>The configuration handle returned by the 
@@ -192,4 +192,4 @@ VOID NdisReadNetworkAddress(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReadNetworkAddress function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReadNetworkAddress function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

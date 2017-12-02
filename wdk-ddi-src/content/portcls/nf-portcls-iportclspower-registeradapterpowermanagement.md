@@ -55,13 +55,13 @@ NTSTATUS RegisterAdapterPowerManagement(
 ## -parameters
 <dl>
 
-### -param <i>pUnknown</i> [in]
+### -param pUnknown [in]
 
 <dd>
 <p>Specifies a pointer to <b>IUnknown</b>. . PortCls queries this <b>IUnknown</b> object for the <a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a> or the <a href="..\portcls\nn-portcls-iadapterpowermanagement2.md">IAdapterPowerManagement2</a> interface of the adapter.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Specifies a pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.</p>

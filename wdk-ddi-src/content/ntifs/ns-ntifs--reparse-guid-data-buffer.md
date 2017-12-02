@@ -7,7 +7,7 @@ old-location: ifsk\reparse_guid_data_buffer.htm
 old-project: ifsk
 ms.assetid: 9acb3b65-46c7-4b29-8d7a-c5d8fcd4563d
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: REPARSE_GUID_DATA_BUFFER, REPARSE_GUID_DATA_BUFFER, *PREPARSE_GUID_DATA_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,36 +60,36 @@ typedef struct _REPARSE_GUID_DATA_BUFFER {
 ## -struct-fields
 <dl>
 
-### -field <b>ReparseTag</b>
+### -field ReparseTag
 
 <dd>
 <p>Reparse point tag that uniquely identifies the owner of the reparse point. (See the following <b>Remarks</b> section.) </p>
 </dd>
 
-### -field <b>ReparseDataLength</b>
+### -field ReparseDataLength
 
 <dd>
 <p>Size, in bytes, of the reparse data in the <b>DataBuffer</b> member. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved; do not use. </p>
 </dd>
 
-### -field <b>ReparseGuid</b>
+### -field ReparseGuid
 
 <dd>
 <p>GUID that uniquely identifies the owner of the reparse point. (See the following <b>Remarks</b> section.) </p>
 </dd>
 
-### -field <b>GenericReparseBuffer</b>
+### -field GenericReparseBuffer
 
 <dd>
 <dl>
 
-### -field <b>DataBuffer</b>
+### -field DataBuffer
 
 <dd>
 <p>User-defined data for the reparse point. The format of this data is defined by the owner of the reparse point. </p>
@@ -171,4 +171,4 @@ typedef struct _REPARSE_GUID_DATA_BUFFER {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20REPARSE_GUID_DATA_BUFFER structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20REPARSE_GUID_DATA_BUFFER structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

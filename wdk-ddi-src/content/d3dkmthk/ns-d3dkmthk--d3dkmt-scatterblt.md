@@ -58,23 +58,23 @@ typedef struct _D3DKMT_SCATTERBLT {
 ## -struct-fields
 <dl>
 
-### -field <b>hLogicalSurfaceDestination</b>
+### -field hLogicalSurfaceDestination
 
 <dd></dd>
 
-### -field <b>hDestinationCompSurfDWM</b>
+### -field hDestinationCompSurfDWM
 
 <dd></dd>
 
-### -field <b>DestinationCompositionBindingId</b>
+### -field DestinationCompositionBindingId
 
 <dd></dd>
 
-### -field <b>SourceRect</b>
+### -field SourceRect
 
 <dd></dd>
 
-### -field <b>DestinationOffset</b>
+### -field DestinationOffset
 
 <dd></dd>
 </dl>

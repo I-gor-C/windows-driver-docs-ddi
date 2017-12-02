@@ -7,6 +7,12 @@ This header is used by SD. For more information, see
 Sddef.h contain these programming interfaces:
 
 
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [SDCMD_DESCRIPTOR structure](ns-sddef--sdcmd-descriptor.md) | The SDCMD_DESCRIPTOR structure defines a Secure Digital (SD) card command. |
+
 ## Enumerations
 
 | Title   | Description   |

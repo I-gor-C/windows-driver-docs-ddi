@@ -56,15 +56,15 @@ typedef struct _BDA_SIGNAL_TIMEOUTS {
 ## -struct-fields
 <dl>
 
-### -field <b>ulCarrierTimeoutMs</b>
+### -field ulCarrierTimeoutMs
 
 <dd></dd>
 
-### -field <b>ulScanningTimeoutMs</b>
+### -field ulScanningTimeoutMs
 
 <dd></dd>
 
-### -field <b>ulTuningTimeoutMs</b>
+### -field ulTuningTimeoutMs
 
 <dd></dd>
 </dl>

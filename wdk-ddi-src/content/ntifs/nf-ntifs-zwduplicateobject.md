@@ -60,43 +60,43 @@ NTSTATUS ZwDuplicateObject(
 ## -parameters
 <dl>
 
-### -param <i>SourceProcessHandle</i> [in]
+### -param SourceProcessHandle [in]
 
 <dd>
 <p>A handle to the source process for the handle being duplicated.</p>
 </dd>
 
-### -param <i>SourceHandle</i> [in]
+### -param SourceHandle [in]
 
 <dd>
 <p>The handle to duplicate.</p>
 </dd>
 
-### -param <i>TargetProcessHandle</i> [in, optional]
+### -param TargetProcessHandle [in, optional]
 
 <dd>
 <p>A handle to the target process that is to receive the new handle. This parameter is optional and can be specified as NULL if the <b>DUPLICATE_CLOSE_SOURCE</b> flag is set in <i>Options</i>.</p>
 </dd>
 
-### -param <i>TargetHandle</i> [out, optional]
+### -param TargetHandle [out, optional]
 
 <dd>
 <p>A pointer to a HANDLE variable into which the routine writes the new duplicated handle. The duplicated handle is valid in the specified target process. This parameter is optional and can be specified as NULL if no duplicate handle is to be created.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that specifies the desired access for the new handle.</p>
 </dd>
 
-### -param <i>HandleAttributes</i> [in]
+### -param HandleAttributes [in]
 
 <dd>
 <p>A ULONG that specifies the desired attributes for the new handle. For more information about attributes, see the description of the <b>Attributes</b> member in <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a>.</p>
 </dd>
 
-### -param <i>Options</i> [in]
+### -param Options [in]
 
 <dd>
 <p>A set of flags to control the behavior of the duplication operation. Set this parameter to zero or to the bitwise OR of one or more of the following flags.</p>

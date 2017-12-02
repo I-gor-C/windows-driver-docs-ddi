@@ -57,19 +57,19 @@ BOOLEAN VideoPortQueueDpc(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>CallbackRoutine</i> [in]
+### -param CallbackRoutine [in]
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\video\nc-video-pminiport-dpc-routine.md">HwVidDpcRoutine</a> to be called when the DPC is scheduled. The callback routine must be nonpaged.</p>
 </dd>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to the miniport driver-supplied context that will be passed to <i>CallbackRoutine</i>.</p>

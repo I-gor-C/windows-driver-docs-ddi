@@ -7,7 +7,7 @@ old-location: netvista\ndis_port_authentication_parameters.htm
 old-project: netvista
 ms.assetid: 7c411d9e-1064-4278-9870-0546891d4743
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PORT_AUTHENTICATION_PARAMETERS, NDIS_PORT_AUTHENTICATION_PARAMETERS, *PNDIS_PORT_AUTHENTICATION_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct _NDIS_PORT_AUTHENTICATION_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -71,7 +71,7 @@ typedef struct _NDIS_PORT_AUTHENTICATION_PARAMETERS {
      <b>Size</b> member to NDIS_SIZEOF_PORT_AUTHENTICATION_PARAMETERS_REVISION_1.</p>
 </dd>
 
-### -field <b>SendControlState</b>
+### -field SendControlState
 
 <dd>
 <p>The control state of the port that the miniport adapter should use for send operations. This
@@ -80,20 +80,20 @@ typedef struct _NDIS_PORT_AUTHENTICATION_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NdisPortControlStateUnknown"></a><a id="ndisportcontrolstateunknown"></a><a id="NDISPORTCONTROLSTATEUNKNOWN"></a><b>NdisPortControlStateUnknown</b>
+### -field NdisPortControlStateUnknown
 
 <dd>
 <p>The port's control state for send operations is unknown.</p>
 </dd>
 
-### -field <a id="NdisPortControlStateControlled"></a><a id="ndisportcontrolstatecontrolled"></a><a id="NDISPORTCONTROLSTATECONTROLLED"></a><b>NdisPortControlStateControlled</b>
+### -field NdisPortControlStateControlled
 
 <dd>
 <p>The port is in a controlled state for send operations. That is, the port requires
        authorization.</p>
 </dd>
 
-### -field <a id="NdisPortControlStateUncontrolled"></a><a id="ndisportcontrolstateuncontrolled"></a><a id="NDISPORTCONTROLSTATEUNCONTROLLED"></a><b>NdisPortControlStateUncontrolled</b>
+### -field NdisPortControlStateUncontrolled
 
 <dd>
 <p>The port is in an uncontrolled state for send operations. That is, the port does not require
@@ -102,7 +102,7 @@ typedef struct _NDIS_PORT_AUTHENTICATION_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>RcvControlState</b>
+### -field RcvControlState
 
 <dd>
 <p>The control state of the port that the miniport adapter should use for receive operations. This
@@ -111,20 +111,20 @@ typedef struct _NDIS_PORT_AUTHENTICATION_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NdisPortControlStateUnknown"></a><a id="ndisportcontrolstateunknown"></a><a id="NDISPORTCONTROLSTATEUNKNOWN"></a><b>NdisPortControlStateUnknown</b>
+### -field NdisPortControlStateUnknown
 
 <dd>
 <p>The port's control state for receive operations is unknown.</p>
 </dd>
 
-### -field <a id="NdisPortControlStateControlled"></a><a id="ndisportcontrolstatecontrolled"></a><a id="NDISPORTCONTROLSTATECONTROLLED"></a><b>NdisPortControlStateControlled</b>
+### -field NdisPortControlStateControlled
 
 <dd>
 <p>The port is in a controlled state for receive operations. That is, the port requires
        authorization.</p>
 </dd>
 
-### -field <a id="NdisPortControlStateUncontrolled"></a><a id="ndisportcontrolstateuncontrolled"></a><a id="NDISPORTCONTROLSTATEUNCONTROLLED"></a><b>NdisPortControlStateUncontrolled</b>
+### -field NdisPortControlStateUncontrolled
 
 <dd>
 <p>The port is in an uncontrolled state for receive operations. That is, the port does not require
@@ -133,7 +133,7 @@ typedef struct _NDIS_PORT_AUTHENTICATION_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>SendAuthorizationState</b>
+### -field SendAuthorizationState
 
 <dd>
 <p>The authorization state of the port that the miniport adapter should use for send operations.
@@ -145,25 +145,25 @@ typedef struct _NDIS_PORT_AUTHENTICATION_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NdisPortAuthorizationUnknown"></a><a id="ndisportauthorizationunknown"></a><a id="NDISPORTAUTHORIZATIONUNKNOWN"></a><b>NdisPortAuthorizationUnknown</b>
+### -field NdisPortAuthorizationUnknown
 
 <dd>
 <p>The port's authorization state for send operations is unknown.</p>
 </dd>
 
-### -field <a id="NdisPortAuthorized"></a><a id="ndisportauthorized"></a><a id="NDISPORTAUTHORIZED"></a><b>NdisPortAuthorized</b>
+### -field NdisPortAuthorized
 
 <dd>
 <p>The port is authorized for send operations.</p>
 </dd>
 
-### -field <a id="NdisPortUnauthorized"></a><a id="ndisportunauthorized"></a><a id="NDISPORTUNAUTHORIZED"></a><b>NdisPortUnauthorized</b>
+### -field NdisPortUnauthorized
 
 <dd>
 <p>The port is not authorized for send operations.</p>
 </dd>
 
-### -field <a id="NdisPortReauthorizing"></a><a id="ndisportreauthorizing"></a><a id="NDISPORTREAUTHORIZING"></a><b>NdisPortReauthorizing</b>
+### -field NdisPortReauthorizing
 
 <dd>
 <p>The port is re-authorizing for send operations.</p>
@@ -171,7 +171,7 @@ typedef struct _NDIS_PORT_AUTHENTICATION_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>RcvAuthorizationState</b>
+### -field RcvAuthorizationState
 
 <dd>
 <p>The authorization state of the port that the miniport adapter should use for receive operations.
@@ -183,25 +183,25 @@ typedef struct _NDIS_PORT_AUTHENTICATION_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NdisPortAuthorizationUnknown"></a><a id="ndisportauthorizationunknown"></a><a id="NDISPORTAUTHORIZATIONUNKNOWN"></a><b>NdisPortAuthorizationUnknown</b>
+### -field NdisPortAuthorizationUnknown
 
 <dd>
 <p>The port's authorization state for receive operations is unknown.</p>
 </dd>
 
-### -field <a id="NdisPortAuthorized"></a><a id="ndisportauthorized"></a><a id="NDISPORTAUTHORIZED"></a><b>NdisPortAuthorized</b>
+### -field NdisPortAuthorized
 
 <dd>
 <p>The port is authorized for receive operations.</p>
 </dd>
 
-### -field <a id="NdisPortUnauthorized"></a><a id="ndisportunauthorized"></a><a id="NDISPORTUNAUTHORIZED"></a><b>NdisPortUnauthorized</b>
+### -field NdisPortUnauthorized
 
 <dd>
 <p>The port is not authorized for receive operations.</p>
 </dd>
 
-### -field <a id="NdisPortReauthorizing"></a><a id="ndisportreauthorizing"></a><a id="NDISPORTREAUTHORIZING"></a><b>NdisPortReauthorizing</b>
+### -field NdisPortReauthorizing
 
 <dd>
 <p>The port is re-authorizing for receive operations.</p>
@@ -250,4 +250,4 @@ typedef struct _NDIS_PORT_AUTHENTICATION_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PORT_AUTHENTICATION_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PORT_AUTHENTICATION_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

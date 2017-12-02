@@ -70,98 +70,98 @@ typedef struct _HW_STREAM_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfPossibleInstances</b>
+### -field NumberOfPossibleInstances
 
 <dd>
 <p>Specifies the number of possible instances of this stream that can be opened.</p>
 </dd>
 
-### -field <b>DataFlow</b>
+### -field DataFlow
 
 <dd>
 <p>The direction that data can travel on this stream. For unidirectional data flow, <b>DataFlow</b> has the value <b>KSPIN_DATAFLOW_IN</b> or KSPIN_DATAFLOW_OUT.</p>
 </dd>
 
-### -field <b>DataAccessible</b>
+### -field DataAccessible
 
 <dd>
 <p>Specifies <b>TRUE</b> if the stream data is accessible to the class driver. </p>
 </dd>
 
-### -field <b>NumberOfFormatArrayEntries</b>
+### -field NumberOfFormatArrayEntries
 
 <dd>
 <p>The number of entries in the array that begins at the address in the <b>StreamFormatsArray</b> member.</p>
 </dd>
 
-### -field <b>StreamFormatsArray</b>
+### -field StreamFormatsArray
 
 <dd>
 <p>Pointer to the beginning of the array of data ranges that this stream supports. (The name of this member is deceptive. This member points to an array of <a href="stream.ksdatarange">KSDATARANGE</a> structures, not KSDATAFORMAT structures.)</p>
 </dd>
 
-### -field <b>ClassReserved</b>
+### -field ClassReserved
 
 <dd>
 <p>Reserved for use by the class driver. Do not use.</p>
 </dd>
 
-### -field <b>NumStreamPropArrayEntries</b>
+### -field NumStreamPropArrayEntries
 
 <dd>
 <p>The number of entries in the array that begins at the address in the <b>StreamPropertiesArray</b> member.</p>
 </dd>
 
-### -field <b>StreamPropertiesArray</b>
+### -field StreamPropertiesArray
 
 <dd>
 <p>Pointer to the beginning of the array of property sets supported by this stream.</p>
 </dd>
 
-### -field <b>NumStreamEventArrayEntries</b>
+### -field NumStreamEventArrayEntries
 
 <dd>
 <p>The number of entries in the array that begins at the address in the <b>StreamEventsArray</b> field.</p>
 </dd>
 
-### -field <b>StreamEventsArray</b>
+### -field StreamEventsArray
 
 <dd>
 <p>Pointer to the beginning of the array of event sets supported by this stream.</p>
 </dd>
 
-### -field <b>Category</b>
+### -field Category
 
 <dd>
 <p>Specifies the GUID of the pin category.</p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>Specifies the GUID of the localized Unicode string name for the pin type, stored in the Registry.</p>
 </dd>
 
-### -field <b>MediumsCount</b>
+### -field MediumsCount
 
 <dd>
 <p>The number of entries in the array that begins at the address in the <b>Mediums</b> field.</p>
 </dd>
 
-### -field <b>Mediums</b>
+### -field Mediums
 
 <dd>
 <p>Pointer to the beginning of the array of <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structures supported by this stream. If the minidriver does not specify a medium, the class driver uses the KSMEDIUMSETID_STANDARD, KSMEDIUM_TYPE_ANYINSTANCE medium as the default.</p>
 </dd>
 
-### -field <b>BridgeStream</b>
+### -field BridgeStream
 
 <dd>
 <p>If <b>TRUE</b>, the communications type of this stream's underlying pin type is KSPIN_COMMUNICATION_BRIDGE. Otherwise, the default communications type of a stream is KSPIN_COMMUNICATION_SINK.</p>
 <p>Most minidrivers will set this member to <b>FALSE</b>. See KSPROPERTY_PIN_COMMUNICATIONS for a description of communication types.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for use by the class driver. Do not use.</p>

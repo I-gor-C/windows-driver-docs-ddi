@@ -58,19 +58,19 @@ typedef union _WHEA_REVISION {
 ## -struct-fields
 <dl>
 
-### -field <b>MinorRevision</b>
+### -field MinorRevision
 
 <dd>
 <p>The minor revision number.</p>
 </dd>
 
-### -field <b>MajorRevision</b>
+### -field MajorRevision
 
 <dd>
 <p>The major revision number.</p>
 </dd>
 
-### -field <b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>A USHORT representation of the contents of the WHEA_REVISION union.</p>

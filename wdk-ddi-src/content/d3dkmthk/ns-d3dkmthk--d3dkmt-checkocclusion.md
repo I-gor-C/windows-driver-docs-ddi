@@ -54,7 +54,7 @@ typedef struct _D3DKMT_CHECKOCCLUSION {
 ## -struct-fields
 <dl>
 
-### -field <b>hWindow</b>
+### -field hWindow
 
 <dd>
 <p>[in] A handle to the window to check for occlusion. </p>

@@ -66,63 +66,63 @@ typedef struct _DXGK_SEGMENTBANKPREFERENCE {
 ## -struct-fields
 <dl>
 
-### -field <b>Bank0</b>
+### -field Bank0
 
 <dd>
 <p>[out] The identifier of the highest priority preferred bank, or 0 if no preference is required. Valid values are from 1 to 127.</p>
 <p>This member is equivalent to the first 7 bits of the 32-bit <b>Value</b> member (0x0000007F). </p>
 </dd>
 
-### -field <b>Direction0</b>
+### -field Direction0
 
 <dd>
 <p>[out] The direction in which <b>Bank0</b> should be scanned to locate a free area of memory. A value of 0 indicates a bottom-up search (that is, low address to high address), and a value of 1 indicates a top-bottom search (that is, high address to low address).</p>
 <p>This member is equivalent to the eighth bit of the 32-bit <b>Value</b> member (0x00000080). </p>
 </dd>
 
-### -field <b>Bank1</b>
+### -field Bank1
 
 <dd>
 <p>[out] The identifier of the next highest priority preferred bank, or 0 if no preference is required. Valid values are from 1 to 127.</p>
 <p>This member is equivalent to bits 9 through 15 of the 32-bit <b>Value</b> member (0x00007F00). </p>
 </dd>
 
-### -field <b>Direction1</b>
+### -field Direction1
 
 <dd>
 <p>[out] The direction in which <b>Bank1</b> should be scanned to locate a free hole of memory. A value of 0 indicates a bottom-up search (that is, low address to high address), and a value of 1 indicates a top-bottom search (that is, high address to low address).</p>
 <p>This member is equivalent to the sixteenth bit of the 32-bit <b>Value</b> member (0x00008000). </p>
 </dd>
 
-### -field <b>Bank2</b>
+### -field Bank2
 
 <dd>
 <p>[out] The identifier of the next highest priority preferred bank, or 0 if no preference is required. Valid values are from 1 to 127.</p>
 <p>This member is equivalent to bits 17 through 23 of the 32-bit <b>Value</b> member (0x007F0000). </p>
 </dd>
 
-### -field <b>Direction2</b>
+### -field Direction2
 
 <dd>
 <p>[out] The direction in which <b>Bank2</b> should be scanned to locate a free hole of memory. A value of 0 indicates a bottom-up search (that is, low address to high address), and a value of 1 indicates a top-bottom search (that is, high address to low address).</p>
 <p>This member is equivalent to the twenty-fourth bit of the 32-bit <b>Value</b> member (0x00800000). </p>
 </dd>
 
-### -field <b>Bank3</b>
+### -field Bank3
 
 <dd>
 <p>[out] The identifier of the next highest priority preferred bank, or 0 if no preference is required. Valid values are from 1 to 127.</p>
 <p>This member is equivalent to bits 25 through 31 of the 32-bit <b>Value</b> member (0x7F000000). </p>
 </dd>
 
-### -field <b>Direction3</b>
+### -field Direction3
 
 <dd>
 <p>[out] The direction in which <b>Bank3</b> should be scanned to locate a free hole of memory. A value of 0 indicates a bottom-up search (that is, low address to high address), and a value of 1 indicates a top-bottom search (that is, high address to low address).</p>
 <p>This member is equivalent to the thirty-secondbit of the 32-bit <b>Value</b> member (0x80000000). </p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[out] A member in the union that DXGK_SEGMENTBANKPREFERENCE contains that can hold a 32-bit value that identifies bank preferences.</p>

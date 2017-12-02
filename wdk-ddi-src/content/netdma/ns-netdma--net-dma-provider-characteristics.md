@@ -7,7 +7,7 @@ old-location: netvista\net_dma_provider_characteristics.htm
 old-project: netvista
 ms.assetid: 7ec6d449-fdc2-44d8-976b-5a1d23c76e7b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,26 +67,26 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>MajorVersion</b>
+### -field MajorVersion
 
 <dd>
 <p>The major version number of the DMA provider driver.</p>
 </dd>
 
-### -field <b>MinorVersion</b>
+### -field MinorVersion
 
 <dd>
 <p>The minor version number of the DMA provider driver.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this NET_DMA_PROVIDER_CHARACTERISTICS structure. Set this member to 
      sizeof(NET_DMA_PROVIDER_CHARACTERISTICS).</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>DMA provider characteristics flags. NetDMA 1.0 and 1.1 drivers set this member to zero.
@@ -95,16 +95,16 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
 <p></p>
 <dl>
 
-### -field <a id="NET_DMA_PROVIDER_CHARACTERISTICS_DCA_SUPPORTED"></a><a id="net_dma_provider_characteristics_dca_supported"></a>NET_DMA_PROVIDER_CHARACTERISTICS_DCA_SUPPORTED
+### -field NET_DMA_PROVIDER_CHARACTERISTICS_DCA_SUPPORTED
 
 <dd>
 <p>The NetDMA provider supports 
-       <a href="NULL">Direct Cache Access (DCA)</a>.</p>
+       <a href="netvista.direct_cache_access__dca_">Direct Cache Access (DCA)</a>.</p>
 </dd>
 </dl>
 </dd>
 
-### -field <b>PhysicalDeviceObject</b>
+### -field PhysicalDeviceObject
 
 <dd>
 <p>The physical device object (PDO) that is associated with the DMA provider. The Plug and Play (PnP)
@@ -113,13 +113,13 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
      <a href="kernel.adddevice">AddDevice</a> routine.</p>
 </dd>
 
-### -field <b>MaxDmaChannelCount</b>
+### -field MaxDmaChannelCount
 
 <dd>
 <p>The maximum number of DMA channels that the DMA provider can support.</p>
 </dd>
 
-### -field <b>SetDmaChannelCpuAffinity</b>
+### -field SetDmaChannelCpuAffinity
 
 <dd>
 <p>The entry point for the 
@@ -127,7 +127,7 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
      ProviderSetDmaChannelCpuAffinity</a> function.</p>
 </dd>
 
-### -field <b>AllocateDmaChannel</b>
+### -field AllocateDmaChannel
 
 <dd>
 <p>The entry point for the 
@@ -135,7 +135,7 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
      ProviderAllocateDmaChannel</a> function.</p>
 </dd>
 
-### -field <b>FreeDmaChannel</b>
+### -field FreeDmaChannel
 
 <dd>
 <p>The entry point for the 
@@ -143,14 +143,14 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
      ProviderFreeDmaChannel</a> function.</p>
 </dd>
 
-### -field <b>StartDma</b>
+### -field StartDma
 
 <dd>
 <p>The entry point for the 
      <a href="..\netdma\nc-netdma-dma-start-handler.md">ProviderStartDma</a> function.</p>
 </dd>
 
-### -field <b>SuspendDma</b>
+### -field SuspendDma
 
 <dd>
 <p>The entry point for the 
@@ -158,7 +158,7 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
      function is not supported, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>ResumeDma</b>
+### -field ResumeDma
 
 <dd>
 <p>The entry point for the 
@@ -166,7 +166,7 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
      function is not supported, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>AbortDma</b>
+### -field AbortDma
 
 <dd>
 <p>The entry point for the 
@@ -174,14 +174,14 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
      function is not supported, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>AppendDma</b>
+### -field AppendDma
 
 <dd>
 <p>The entry point for the 
      <a href="..\netdma\nc-netdma-dma-append-handler.md">ProviderAppendDma</a> function.</p>
 </dd>
 
-### -field <b>ResetChannel</b>
+### -field ResetChannel
 
 <dd>
 <p>The entry point for the 
@@ -189,7 +189,7 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
      this function is not supported, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>FriendlyName</b>
+### -field FriendlyName
 
 <dd>
 <p>A Unicode string that represents the user-readable description of the NetDMA provider
@@ -270,4 +270,4 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

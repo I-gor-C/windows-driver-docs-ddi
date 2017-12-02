@@ -56,13 +56,13 @@ VOID VideoPortUnlockBuffer(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>Mdl</i> [in]
+### -param Mdl [in]
 
 <dd>
 <p>Pointer to the MDL of the buffer to be released. This parameter should be the same pointer that was returned by <a href="..\video\nf-video-videoportlockbuffer.md">VideoPortLockBuffer</a>.</p>

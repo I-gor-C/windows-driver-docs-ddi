@@ -7,7 +7,7 @@ old-location: netvista\rilunsolicitedssinfo_v1.htm
 old-project: netvista
 ms.assetid: c9681207-6cdd-40b6-8878-7ea37f383e4f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUNSOLICITEDSSINFO_V1, RILUNSOLICITEDSSINFO_V1, *LPRILUNSOLICITEDSSINFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,35 +61,35 @@ typedef struct _RILUNSOLICITEDSSINFO_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwID</b>
+### -field dwID
 
 <dd></dd>
 
-### -field <b>dwNotificationCode</b>
+### -field dwNotificationCode
 
 <dd></dd>
 
-### -field <b>raAddress</b>
+### -field raAddress
 
 <dd></dd>
 
-### -field <b>rsaSubAddress</b>
+### -field rsaSubAddress
 
 <dd></dd>
 
-### -field <b>dwCUGIndex</b>
+### -field dwCUGIndex
 
 <dd></dd>
 </dl>

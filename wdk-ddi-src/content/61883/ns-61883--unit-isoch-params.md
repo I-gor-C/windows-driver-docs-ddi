@@ -7,7 +7,7 @@ old-location: ieee\unit_isoch_params.htm
 old-project: IEEE
 ms.assetid: 1c661a35-8209-49c5-9987-b4b6e9e710b4
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: UNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,25 +56,25 @@ typedef struct _UNIT_ISOCH_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>RX_NumPackets</b>
+### -field RX_NumPackets
 
 <dd>
 <p>The number of isochronous packets per descriptor to be received.</p>
 </dd>
 
-### -field <b>RX_NumDescriptors</b>
+### -field RX_NumDescriptors
 
 <dd>
 <p>The number of descriptors used for receiving isochronous data.</p>
 </dd>
 
-### -field <b>TX_NumPackets</b>
+### -field TX_NumPackets
 
 <dd>
 <p>The number of isochronous packets per descriptor to be transmitted.</p>
 </dd>
 
-### -field <b>TX_NumDescriptors</b>
+### -field TX_NumDescriptors
 
 <dd>
 <p>The number of descriptors used for transmitting isochronous data.</p>
@@ -109,4 +109,4 @@ typedef struct _UNIT_ISOCH_PARAMS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20UNIT_ISOCH_PARAMS structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20UNIT_ISOCH_PARAMS structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

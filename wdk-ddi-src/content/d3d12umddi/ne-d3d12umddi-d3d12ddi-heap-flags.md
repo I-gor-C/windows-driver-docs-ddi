@@ -60,43 +60,43 @@ typedef enum D3D12DDI_HEAP_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_HEAP_FLAG_NONE"></a><a id="d3d12ddi_heap_flag_none"></a><b>D3D12DDI_HEAP_FLAG_NONE</b>
+### -field D3D12DDI_HEAP_FLAG_NONE
 
 <dd>
 <p>No flags.</p>
 </dd>
 
-### -field <a id="D3D12DDI_HEAP_FLAG_NON_RT_DS_TEXTURES"></a><a id="d3d12ddi_heap_flag_non_rt_ds_textures"></a><b>D3D12DDI_HEAP_FLAG_NON_RT_DS_TEXTURES</b>
+### -field D3D12DDI_HEAP_FLAG_NON_RT_DS_TEXTURES
 
 <dd>
 <p>The heap supports resources allocated for other than Render Target (RT) and Depth-Stencil (DS) textures. </p>
 </dd>
 
-### -field <a id="D3D12DDI_HEAP_FLAG_BUFFERS"></a><a id="d3d12ddi_heap_flag_buffers"></a><b>D3D12DDI_HEAP_FLAG_BUFFERS</b>
+### -field D3D12DDI_HEAP_FLAG_BUFFERS
 
 <dd>
 <p>The heap supports resources allocated for buffers.</p>
 </dd>
 
-### -field <a id="D3D12DDI_HEAP_FLAG_COHERENT_SYSTEMWIDE"></a><a id="d3d12ddi_heap_flag_coherent_systemwide"></a><b>D3D12DDI_HEAP_FLAG_COHERENT_SYSTEMWIDE</b>
+### -field D3D12DDI_HEAP_FLAG_COHERENT_SYSTEMWIDE
 
 <dd>
 <p>The heap supports resources allocated for coherent systemwide. </p>
 </dd>
 
-### -field <a id="D3D12DDI_HEAP_FLAG_PRIMARY"></a><a id="d3d12ddi_heap_flag_primary"></a><b>D3D12DDI_HEAP_FLAG_PRIMARY</b>
+### -field D3D12DDI_HEAP_FLAG_PRIMARY
 
 <dd>
 <p>The heap supports resources allocated for primary.</p>
 </dd>
 
-### -field <a id="D3D12DDI_HEAP_FLAG_RT_DS_TEXTURES"></a><a id="d3d12ddi_heap_flag_rt_ds_textures"></a><b>D3D12DDI_HEAP_FLAG_RT_DS_TEXTURES</b>
+### -field D3D12DDI_HEAP_FLAG_RT_DS_TEXTURES
 
 <dd>
 <p>The heap supports resources allocated for RT and DS textures.</p>
 </dd>
 
-### -field <a id="D3D12DDI_HEAP_FLAG_CONTENT_PROTECTION_"></a><a id="d3d12ddi_heap_flag_content_protection_"></a><b>D3D12DDI_HEAP_FLAG_CONTENT_PROTECTION </b>
+### -field D3D12DDI_HEAP_FLAG_CONTENT_PROTECTION 
 
 <dd>
 <p>The heap supports resources allocated for content protection.</p>

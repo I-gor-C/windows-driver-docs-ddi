@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="buses.ucm_connector_pd_config">UCM_CONNECTOR_PD_CONFIG</a> structure.</p>
+<p>Initializes a <a href="..\ucmmanager\ns-ucmmanager--ucm-connector-pd-config.md">UCM_CONNECTOR_PD_CONFIG</a> structure.</p>
 
 
 ## -syntax
@@ -56,16 +56,16 @@ FORCEINLINE void UCM_CONNECTOR_PD_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
-<p>Pointer to a caller-allocated <a href="buses.ucm_connector_pd_config">UCM_CONNECTOR_PD_CONFIG</a> structure to initialize.</p>
+<p>Pointer to a caller-allocated <a href="..\ucmmanager\ns-ucmmanager--ucm-connector-pd-config.md">UCM_CONNECTOR_PD_CONFIG</a> structure to initialize.</p>
 </dd>
 
-### -param <i>SupportedPowerRoles</i> [in]
+### -param SupportedPowerRoles [in]
 
 <dd>
-<p>A bitwise OR of <a href="buses.ucm_power_role">UCM_POWER_ROLE</a>-typed flags.</p>
+<p>A bitwise OR of <a href="..\ucmtypes\ne-ucmtypes--ucm-power-role.md">UCM_POWER_ROLE</a>-typed flags.</p>
 </dd>
 </dl>
 
@@ -124,7 +124,7 @@ FORCEINLINE void UCM_CONNECTOR_PD_CONFIG_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmconnectorcreate">UcmConnectorCreate</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
 </dt>
 </dl>
 <p> </p>

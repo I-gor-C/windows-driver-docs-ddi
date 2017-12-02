@@ -56,19 +56,19 @@ typedef struct _MSiSCSI_InitiatorSessionInfo {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueAdapterId</b>
+### -field UniqueAdapterId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="..\iscsimgt\ns-iscsimgt--msiscsi-hbainformation.md">MSiSCSI_HBAInformation</a> structure.</p>
 </dd>
 
-### -field <b>SessionCount</b>
+### -field SessionCount
 
 <dd>
 <p>The number of sessions that have been established with the provided adapter ID.</p>
 </dd>
 
-### -field <b>SessionsList</b>
+### -field SessionsList
 
 <dd>
 <p>A variable length array of <a href="..\iscsimgt\ns-iscsimgt--iscsi-sessionstaticinfo.md">ISCSI_SessionStaticInfo</a> structures, which describe the static information that is associated with a session.</p>

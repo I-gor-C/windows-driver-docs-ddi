@@ -7,7 +7,7 @@ old-location: wdf\wdfinterruptcreate.htm
 old-project: wdf
 ms.assetid: 6279f9ed-f271-45e6-92ef-2a919f3584ed
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfInterruptCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ NTSTATUS WdfInterruptCreate(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>Configuration</i> [in]
+### -param Configuration [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdfinterrupt\ns-wdfinterrupt--wdf-interrupt-config.md">WDF_INTERRUPT_CONFIG</a> structure that was initialized by a call to <a href="..\wdfinterrupt\nf-wdfinterrupt-wdf-interrupt-config-init.md">WDF_INTERRUPT_CONFIG_INIT</a>.</p>
 </dd>
 
-### -param <i>Attributes</i> [in, optional]
+### -param Attributes [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the framework interrupt object.  (See Remarks for additional information.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.</p>
 </dd>
 
-### -param <i>Interrupt</i> [out]
+### -param Interrupt [out]
 
 <dd>
 <p>A pointer to a location that receives a handle to the new interrupt object.</p>
@@ -228,4 +228,4 @@ must be NULL. If the driver calls <b>WdfInterruptCreate</b> from <i>EvtDevicePre
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfInterruptCreate method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfInterruptCreate method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

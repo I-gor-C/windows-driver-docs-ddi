@@ -58,25 +58,25 @@ NTSTATUS IoWMISuggestInstanceName(
 ## -parameters
 <dl>
 
-### -param <i>PhysicalDeviceObject</i> [in, optional]
+### -param PhysicalDeviceObject [in, optional]
 
 <dd>
 <p>If supplied, points to the driver's physical device object.</p>
 </dd>
 
-### -param <i>SymbolicLinkName</i> [in, optional]
+### -param SymbolicLinkName [in, optional]
 
 <dd>
 <p>If supplied, points to the symbolic link name returned from <a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>. </p>
 </dd>
 
-### -param <i>CombineNames</i> [in]
+### -param CombineNames [in]
 
 <dd>
 <p>If <b>TRUE</b> then the suggested names returned will combine the <i>PhysicalDeviceObject</i> and <i>SymbolicLinkName</i> information.</p>
 </dd>
 
-### -param <i>SuggestedInstanceName</i> [out]
+### -param SuggestedInstanceName [out]
 
 <dd>
 <p>A pointer to a buffer which upon successful completion will contain a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> which contains the suggested instance name. The caller is responsible for freeing this buffer when it is no longer needed.</p>

@@ -65,55 +65,55 @@ typedef union _USB_HUB_CAP_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>ul</b>
+### -field ul
 
 <dd>
 <p>A bitmask that represents the hub capabilities.</p>
 </dd>
 
-### -field <b>HubIsHighSpeedCapable</b>
+### -field HubIsHighSpeedCapable
 
 <dd>
 <p>If <b>TRUE</b>, the hub is high speed-capable. This capability does not necessarily mean that the hub is operating at high speed</p>
 </dd>
 
-### -field <b>HubIsHighSpeed</b>
+### -field HubIsHighSpeed
 
 <dd>
 <p>If <b>TRUE</b>, the hub is high speed.</p>
 </dd>
 
-### -field <b>HubIsMultiTtCapable</b>
+### -field HubIsMultiTtCapable
 
 <dd>
 <p>If <b>TRUE</b>, the hub is capable of doing multiple transaction translations simultaneously.</p>
 </dd>
 
-### -field <b>HubIsMultiTt</b>
+### -field HubIsMultiTt
 
 <dd>
 <p>If <b>TRUE</b>, the hub is configured to perform multiple transaction translations simultaneously.</p>
 </dd>
 
-### -field <b>HubIsRoot</b>
+### -field HubIsRoot
 
 <dd>
 <p>If <b>TRUE</b>, the hub is the root hub.</p>
 </dd>
 
-### -field <b>HubIsArmedWakeOnConnect</b>
+### -field HubIsArmedWakeOnConnect
 
 <dd>
 <p>If <b>TRUE</b>, the hub is armed to wake when a device is connected to the hub.</p>
 </dd>
 
-### -field <b>HubIsBusPowered</b>
+### -field HubIsBusPowered
 
 <dd>
 <p>A boolean value that indicates whether the hub is bus-powered. <b>TRUE</b>, the hub is bus-powered; <b>FALSE</b>, the hub is self-powered.</p>
 </dd>
 
-### -field <b>ReservedMBZ</b>
+### -field ReservedMBZ
 
 <dd>
 <p>Reserved. Do not use.</p>

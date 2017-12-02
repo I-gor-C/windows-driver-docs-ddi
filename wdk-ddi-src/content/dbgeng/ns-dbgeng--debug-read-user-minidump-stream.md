@@ -7,7 +7,7 @@ old-location: debugger\debug_read_user_minidump_stream.htm
 old-project: debugger
 ms.assetid: 07005D52-E851-4AE8-95D8-ED8E26C43DC6
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: DEBUG_READ_USER_MINIDUMP_STREAM, DEBUG_READ_USER_MINIDUMP_STREAM, *PDEBUG_READ_USER_MINIDUMP_STREAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ typedef struct _DEBUG_READ_USER_MINIDUMP_STREAM {
 ## -struct-fields
 <dl>
 
-### -field <b>StreamType</b>
+### -field StreamType
 
 <dd>
 <p>The type of stream.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>The offset of stream.</p>
 </dd>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>Specifies the beginning of the buffer to read.</p>
 </dd>
 
-### -field <b>BufferSize</b>
+### -field BufferSize
 
 <dd>
 <p>Specifies the length of the buffer to read.</p>
 </dd>
 
-### -field <b>BufferUsed</b>
+### -field BufferUsed
 
 <dd>
 <p>The buffer used value.</p>

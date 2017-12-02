@@ -63,31 +63,31 @@ typedef struct _UMDETW_ALLOCATION_USAGE {
 ## -struct-fields
 <dl>
 
-### -field <b>Packed</b>
+### -field Packed
 
 <dd>
 <p>The allocation is packed into a larger parent allocation.</p>
 </dd>
 
-### -field <b>Renamed</b>
+### -field Renamed
 
 <dd>
 <p>The allocation is a renamed instance of a Direct3D allocation.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>
 </dd>
 
-### -field <b>DriverReserved</b>
+### -field DriverReserved
 
 <dd>
 <p>The driver can use these bit fields for its own internal purposes.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A 32-bit value that specifies the allocation mapping.</p>

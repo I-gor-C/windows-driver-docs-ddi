@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookemailaddress_2.htm
 old-project: netvista
 ms.assetid: 322939c8-c7c9-405b-9f78-08ae9c642b42
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILPHONEBOOKEMAILADDRESS, RILPHONEBOOKEMAILADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILPHONEBOOKEMAILADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>wszAddress</b>
+### -field wszAddress
 
 <dd></dd>
 </dl>

@@ -58,13 +58,13 @@ PSDP_NODE SdpCreateNodeUUID32(
 ## -parameters
 <dl>
 
-### -param <i>ulVal</i> [in]
+### -param ulVal [in]
 
 <dd>
 <p>The 32-bit UUID value to initialize the SDP_NODE structure.</p>
 </dd>
 
-### -param <i>tag</i> [in]
+### -param tag [in]
 
 <dd>
 <p>A profile driver defined tag to associate with the node.</p>

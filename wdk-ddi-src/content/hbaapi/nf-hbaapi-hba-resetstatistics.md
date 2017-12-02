@@ -55,13 +55,13 @@ void HBA_API HBA_ResetStatistics(
 ## -parameters
 <dl>
 
-### -param <i>HbaHandle</i> [in]
+### -param HbaHandle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located.  </p>
 </dd>
 
-### -param <i>PortIndex</i> [in]
+### -param PortIndex [in]
 
 <dd>
 <p>Indicates for which port on the HBA the statistics counters should be reset. </p>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_miniport_adapter_offload_attributes.htm
 old-project: netvista
 ms.assetid: 9ce875fc-ed3f-43e9-bfbc-081f02cb1999
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -71,15 +71,15 @@ typedef struct _NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES {
      <b>Size</b> member to NDIS_SIZEOF_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES_REVISION_1.</p>
 </dd>
 
-### -field <b>DefaultOffloadConfiguration</b>
+### -field DefaultOffloadConfiguration
 
 <dd>
 <p>A pointer to an 
-     <a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a> structure that indicates the
+     <a href="..\ntddndis\ns-ntddndis--ndis-offload.md">NDIS_OFFLOAD</a> structure that indicates the
      current offload capabilities that are provided by the miniport adapter.</p>
 </dd>
 
-### -field <b>HardwareOffloadCapabilities</b>
+### -field HardwareOffloadCapabilities
 
 <dd>
 <p>A pointer to an NDIS_OFFLOAD structure that indicates all the task offload capabilites that are
@@ -87,7 +87,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES {
      by standardized keywords in the registry.</p>
 </dd>
 
-### -field <b>DefaultTcpConnectionOffloadConfiguration</b>
+### -field DefaultTcpConnectionOffloadConfiguration
 
 <dd>
 <p>A pointer to an 
@@ -96,7 +96,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES {
      that are provided by the miniport adapter.</p>
 </dd>
 
-### -field <b>TcpConnectionOffloadHardwareCapabilities</b>
+### -field TcpConnectionOffloadHardwareCapabilities
 
 <dd>
 <p>A pointer to an NDIS_TCP_CONNECTION_OFFLOAD structure that indicates all the connection offload
@@ -146,7 +146,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES {
 <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-offload.md">NDIS_OFFLOAD</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559004">NDIS_TASK_OFFLOAD_HEADER</a>
@@ -160,4 +160,4 @@ typedef struct _NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

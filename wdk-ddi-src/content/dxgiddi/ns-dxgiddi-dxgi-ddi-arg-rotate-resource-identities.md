@@ -56,20 +56,20 @@ typedef struct DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the display device (graphics context) on which the driver rotates resources. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function to create the display device. </p>
 </dd>
 
-### -field <b>pResources</b>
+### -field pResources
 
 <dd>
 <p>[in] A pointer to an array of handles to the resources to rotate.</p>
 <p>Beginning in Windows 8, the driver must support rotation of stereo back buffers.</p>
 </dd>
 
-### -field <b>Resources</b>
+### -field Resources
 
 <dd>
 <p>[in] The number of elements in the <i>pResources</i> array.  </p>

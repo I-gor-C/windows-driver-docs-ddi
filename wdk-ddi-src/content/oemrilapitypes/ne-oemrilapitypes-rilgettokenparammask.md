@@ -7,7 +7,7 @@ old-location: netvista\rilgettokenparammask.htm
 old-project: netvista
 ms.assetid: d791b497-3ef3-42f1-a6e6-980992c97f45
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RtlUnicodeStringVPrintfEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILDEVSPECIFICPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_GETTOKEN_TIMEOUT"></a><a id="ril_param_gettoken_timeout"></a><b>RIL_PARAM_GETTOKEN_TIMEOUT</b>
+### -field RIL_PARAM_GETTOKEN_TIMEOUT
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_GETTOKEN_HEADER"></a><a id="ril_param_gettoken_header"></a><b>RIL_PARAM_GETTOKEN_HEADER</b>
+### -field RIL_PARAM_GETTOKEN_HEADER
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_GETTOKEN_PROTOCOL_ID"></a><a id="ril_param_gettoken_protocol_id"></a><b>RIL_PARAM_GETTOKEN_PROTOCOL_ID</b>
+### -field RIL_PARAM_GETTOKEN_PROTOCOL_ID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_GETTOKEN_ALL"></a><a id="ril_param_gettoken_all"></a><b>RIL_PARAM_GETTOKEN_ALL</b>
+### -field RIL_PARAM_GETTOKEN_ALL
 
 <dd></dd>
 </dl>

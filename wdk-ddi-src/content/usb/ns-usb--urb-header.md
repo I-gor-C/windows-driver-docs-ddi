@@ -59,13 +59,13 @@ struct _URB_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Specifies the length, in bytes, of the URB. For URB requests that use data structures other than <b>_URB_HEADER</b>, this member must be set to the length of the entire URB request structure, not the _URB_HEADER size.</p>
 </dd>
 
-### -field <b>Function</b>
+### -field Function
 
 <dd>
 <p>
@@ -73,70 +73,70 @@ struct _URB_HEADER {
 </p>
 <dl class="indent">
 
-### -field <a id="URB_FUNCTION_SELECT_CONFIGURATION"></a><a id="urb_function_select_configuration"></a><p><a id="URB_FUNCTION_SELECT_CONFIGURATION"></a><a id="urb_function_select_configuration"></a><b>URB_FUNCTION_SELECT_CONFIGURATION</b></p>
+### -field URB_FUNCTION_SELECT_CONFIGURATION
 
 
 <dd>
 <p>Indicates to the host controller driver that a configuration is to be selected. If set, the URB is used with <a href="buses._urb_select_configuration">_URB_SELECT_CONFIGURATION</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_SELECT_INTERFACE"></a><a id="urb_function_select_interface"></a><p><a id="URB_FUNCTION_SELECT_INTERFACE"></a><a id="urb_function_select_interface"></a><b>URB_FUNCTION_SELECT_INTERFACE</b></p>
+### -field URB_FUNCTION_SELECT_INTERFACE
 
 
 <dd>
 <p>Indicates to the host controller driver that an alternate interface setting is being selected for an interface. If set, the URB is used with <a href="buses._urb_select_interface">_URB_SELECT_INTERFACE</a> as the data structure. </p>
 </dd>
 
-### -field <a id="URB_FUNCTION_ABORT_PIPE"></a><a id="urb_function_abort_pipe"></a><p><a id="URB_FUNCTION_ABORT_PIPE"></a><a id="urb_function_abort_pipe"></a><b>URB_FUNCTION_ABORT_PIPE</b></p>
+### -field URB_FUNCTION_ABORT_PIPE
 
 
 <dd>
 <p>Indicates that all outstanding requests for a pipe should be canceled. If set, the URB is used with <a href="buses._urb_pipe_request">_URB_PIPE_REQUEST</a> as the data structure. This general-purpose request enables a client to cancel any pending transfers for the specified pipe. Pipe state and endpoint state are unaffected. The abort request might complete before all outstanding requests have completed. Do <i>not</i> assume that completion of the abort request implies that all other outstanding requests have completed. </p>
 </dd>
 
-### -field <a id="URB_FUNCTION_TAKE_FRAME_LENGTH_CONTROL"></a><a id="urb_function_take_frame_length_control"></a><p><a id="URB_FUNCTION_TAKE_FRAME_LENGTH_CONTROL"></a><a id="urb_function_take_frame_length_control"></a><b>URB_FUNCTION_TAKE_FRAME_LENGTH_CONTROL</b></p>
+### -field URB_FUNCTION_TAKE_FRAME_LENGTH_CONTROL
 
 
 <dd>
 <p>This URB function is <b>deprecated</b> in Windows 2000 and later operating systems and is not supported by Microsoft. Do not use. If you specify this function with an URB request, the request will fail and the system will report an error. </p>
 </dd>
 
-### -field <a id="URB_FUNCTION_RELEASE_FRAME_LENGTH_CONTROL"></a><a id="urb_function_release_frame_length_control"></a><p><a id="URB_FUNCTION_RELEASE_FRAME_LENGTH_CONTROL"></a><a id="urb_function_release_frame_length_control"></a><b>URB_FUNCTION_RELEASE_FRAME_LENGTH_CONTROL</b></p>
+### -field URB_FUNCTION_RELEASE_FRAME_LENGTH_CONTROL
 
 
 <dd>
 <p>This URB function is <b>deprecated</b> in Windows 2000 and later operating systems and is not supported by Microsoft. Do not use. If you specify this function with an URB request, the request will fail and the system will report an error. </p>
 </dd>
 
-### -field <a id="URB_FUNCTION_GET_FRAME_LENGTH"></a><a id="urb_function_get_frame_length"></a><p><a id="URB_FUNCTION_GET_FRAME_LENGTH"></a><a id="urb_function_get_frame_length"></a><b>URB_FUNCTION_GET_FRAME_LENGTH</b></p>
+### -field URB_FUNCTION_GET_FRAME_LENGTH
 
 
 <dd>
 <p>This URB function is <b>deprecated</b> in Windows 2000 and later operating systems and is not supported by Microsoft. Do not use.  If you use this function with a URB request, the request will fail and the system will report an error.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_SET_FRAME_LENGTH"></a><a id="urb_function_set_frame_length"></a><p><a id="URB_FUNCTION_SET_FRAME_LENGTH"></a><a id="urb_function_set_frame_length"></a><b>URB_FUNCTION_SET_FRAME_LENGTH</b></p>
+### -field URB_FUNCTION_SET_FRAME_LENGTH
 
 
 <dd>
 <p>This URB function is <b>deprecated</b> in Windows 2000 and later operating systems and is not supported by Microsoft. Do not use.  If you use it with a URB request, the request will fail and the system will report an error. </p>
 </dd>
 
-### -field <a id="URB_FUNCTION_GET_CURRENT_FRAME_NUMBER"></a><a id="urb_function_get_current_frame_number"></a><p><a id="URB_FUNCTION_GET_CURRENT_FRAME_NUMBER"></a><a id="urb_function_get_current_frame_number"></a><b>URB_FUNCTION_GET_CURRENT_FRAME_NUMBER</b></p>
+### -field URB_FUNCTION_GET_CURRENT_FRAME_NUMBER
 
 
 <dd>
 <p>Requests the current frame number from the host controller driver. If set, the URB is used with <a href="buses._urb_get_current_frame_number">_URB_GET_CURRENT_FRAME_NUMBER</a> as the data structure. </p>
 </dd>
 
-### -field <a id="URB_FUNCTION_CONTROL_TRANSFER"></a><a id="urb_function_control_transfer"></a><p><a id="URB_FUNCTION_CONTROL_TRANSFER"></a><a id="urb_function_control_transfer"></a><b>URB_FUNCTION_CONTROL_TRANSFER</b></p>
+### -field URB_FUNCTION_CONTROL_TRANSFER
 
 
 <dd>
 <p>Transfers data to or from a control pipe. If set, the URB is used with <a href="buses._urb_control_transfer">_URB_CONTROL_TRANSFER</a> as the data structure. </p>
 </dd>
 
-### -field <a id="URB_FUNCTION_CONTROL_TRANSFER_EX"></a><a id="urb_function_control_transfer_ex"></a><p><a id="URB_FUNCTION_CONTROL_TRANSFER_EX"></a><a id="urb_function_control_transfer_ex"></a><b>URB_FUNCTION_CONTROL_TRANSFER_EX</b></p>
+### -field URB_FUNCTION_CONTROL_TRANSFER_EX
 
 
 <dd>
@@ -145,14 +145,14 @@ struct _URB_HEADER {
 </p>
 </dd>
 
-### -field <a id="URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER"></a><a id="urb_function_bulk_or_interrupt_transfer"></a><p><a id="URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER"></a><a id="urb_function_bulk_or_interrupt_transfer"></a><b>URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER</b></p>
+### -field URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER
 
 
 <dd>
 <p>Transfers data from a bulk pipe or interrupt pipe or to an bulk pipe. If set, the URB is used with <a href="buses._urb_bulk_or_interrupt_transfer">_URB_BULK_OR_INTERRUPT_TRANSFER</a> as the data structure. </p>
 </dd>
 
-### -field <a id="URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER_USING_CHAINED_MDL"></a><a id="urb_function_bulk_or_interrupt_transfer_using_chained_mdl"></a><p><a id="URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER_USING_CHAINED_MDL"></a><a id="urb_function_bulk_or_interrupt_transfer_using_chained_mdl"></a><b>URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER_USING_CHAINED_MDL</b></p>
+### -field URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER_USING_CHAINED_MDL
 
 
 <dd>
@@ -160,14 +160,14 @@ struct _URB_HEADER {
 <p>Available in Windows 8.  For information about using chained MDLs, see <a href="buses.how_to_send_chained_mdls">How to Send Chained MDLs</a>.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_ISOCH_TRANSFER"></a><a id="urb_function_isoch_transfer"></a><p><a id="URB_FUNCTION_ISOCH_TRANSFER"></a><a id="urb_function_isoch_transfer"></a><b>URB_FUNCTION_ISOCH_TRANSFER</b></p>
+### -field URB_FUNCTION_ISOCH_TRANSFER
 
 
 <dd>
 <p>Transfers data to or from an isochronous pipe. If set, the URB is used with <a href="buses._urb_isoch_transfer">_URB_ISOCH_TRANSFER</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_ISOCH_TRANSFER_USING_CHAINED_MDL"></a><a id="urb_function_isoch_transfer_using_chained_mdl"></a><p><a id="URB_FUNCTION_ISOCH_TRANSFER_USING_CHAINED_MDL"></a><a id="urb_function_isoch_transfer_using_chained_mdl"></a><b>URB_FUNCTION_ISOCH_TRANSFER_USING_CHAINED_MDL</b></p>
+### -field URB_FUNCTION_ISOCH_TRANSFER_USING_CHAINED_MDL
 
 
 <dd>
@@ -175,14 +175,14 @@ struct _URB_HEADER {
 <p>Available in Windows 8.  For information about using chained MDLs, see <a href="buses.how_to_send_chained_mdls">How to Send Chained MDLs</a>.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_RESET_PIPE"></a><a id="urb_function_reset_pipe"></a><p><a id="URB_FUNCTION_RESET_PIPE"></a><a id="urb_function_reset_pipe"></a><b>URB_FUNCTION_RESET_PIPE</b></p>
+### -field URB_FUNCTION_RESET_PIPE
 
 
 <dd>
 <p>See URB_FUNCTION_SYNC_RESET_PIPE_AND_CLEAR_STALL.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_SYNC_RESET_PIPE_AND_CLEAR_STALL"></a><a id="urb_function_sync_reset_pipe_and_clear_stall"></a><p><a id="URB_FUNCTION_SYNC_RESET_PIPE_AND_CLEAR_STALL"></a><a id="urb_function_sync_reset_pipe_and_clear_stall"></a><b>URB_FUNCTION_SYNC_RESET_PIPE_AND_CLEAR_STALL</b></p>
+### -field URB_FUNCTION_SYNC_RESET_PIPE_AND_CLEAR_STALL
 
 
 <dd>
@@ -199,7 +199,7 @@ struct _URB_HEADER {
 <p>This URB must be sent at PASSIVE_LEVEL.  </p>
 </dd>
 
-### -field <a id="URB_FUNCTION_SYNC_RESET_PIPE"></a><a id="urb_function_sync_reset_pipe"></a><p><a id="URB_FUNCTION_SYNC_RESET_PIPE"></a><a id="urb_function_sync_reset_pipe"></a><b>URB_FUNCTION_SYNC_RESET_PIPE</b></p>
+### -field URB_FUNCTION_SYNC_RESET_PIPE
 
 
 <dd>
@@ -216,7 +216,7 @@ struct _URB_HEADER {
 <p>Available in Windows XP and later operating systems.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_SYNC_CLEAR_STALL"></a><a id="urb_function_sync_clear_stall"></a><p><a id="URB_FUNCTION_SYNC_CLEAR_STALL"></a><a id="urb_function_sync_clear_stall"></a><b>URB_FUNCTION_SYNC_CLEAR_STALL</b></p>
+### -field URB_FUNCTION_SYNC_CLEAR_STALL
 
 
 <dd>
@@ -226,182 +226,182 @@ struct _URB_HEADER {
 <p>Available in Windows XP and later operating systems.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE"></a><a id="urb_function_get_descriptor_from_device"></a><p><a id="URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE"></a><a id="urb_function_get_descriptor_from_device"></a><b>URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE</b></p>
+### -field URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE
 
 
 <dd>
 <p>Retrieves the device descriptor from a specific USB device. If set, the URB is used with <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure. </p>
 </dd>
 
-### -field <a id="URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT"></a><a id="urb_function_get_descriptor_from_endpoint"></a><p><a id="URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT"></a><a id="urb_function_get_descriptor_from_endpoint"></a><b>URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT</b></p>
+### -field URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT
 
 
 <dd>
 <p>Retrieves the descriptor from an endpoint on an interface for a USB device. If set, the URB is used with <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE"></a><a id="urb_function_set_descriptor_to_device"></a><p><a id="URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE"></a><a id="urb_function_set_descriptor_to_device"></a><b>URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE</b></p>
+### -field URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE
 
 
 <dd>
 <p>Sets a device descriptor on a device. If set, the URB is used with <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT"></a><a id="urb_function_set_descriptor_to_endpoint"></a><p><a id="URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT"></a><a id="urb_function_set_descriptor_to_endpoint"></a><b>URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT</b></p>
+### -field URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT
 
 
 <dd>
 <p>Sets an endpoint descriptor on an endpoint for an interface. If set, the URB is used with <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_SET_FEATURE_TO_DEVICE"></a><a id="urb_function_set_feature_to_device"></a><p><a id="URB_FUNCTION_SET_FEATURE_TO_DEVICE"></a><a id="urb_function_set_feature_to_device"></a><b>URB_FUNCTION_SET_FEATURE_TO_DEVICE</b></p>
+### -field URB_FUNCTION_SET_FEATURE_TO_DEVICE
 
 
 <dd>
 <p>Sets a USB-defined feature on a device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_SET_FEATURE_TO_INTERFACE"></a><a id="urb_function_set_feature_to_interface"></a><p><a id="URB_FUNCTION_SET_FEATURE_TO_INTERFACE"></a><a id="urb_function_set_feature_to_interface"></a><b>URB_FUNCTION_SET_FEATURE_TO_INTERFACE</b></p>
+### -field URB_FUNCTION_SET_FEATURE_TO_INTERFACE
 
 
 <dd>
 <p>Sets a USB-defined feature on an interface for a device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_SET_FEATURE_TO_ENDPOINT"></a><a id="urb_function_set_feature_to_endpoint"></a><p><a id="URB_FUNCTION_SET_FEATURE_TO_ENDPOINT"></a><a id="urb_function_set_feature_to_endpoint"></a><b>URB_FUNCTION_SET_FEATURE_TO_ENDPOINT</b></p>
+### -field URB_FUNCTION_SET_FEATURE_TO_ENDPOINT
 
 
 <dd>
 <p>Sets a USB-defined feature on an endpoint for an interface on a USB device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_SET_FEATURE_TO_OTHER"></a><a id="urb_function_set_feature_to_other"></a><p><a id="URB_FUNCTION_SET_FEATURE_TO_OTHER"></a><a id="urb_function_set_feature_to_other"></a><b>URB_FUNCTION_SET_FEATURE_TO_OTHER</b></p>
+### -field URB_FUNCTION_SET_FEATURE_TO_OTHER
 
 
 <dd>
 <p>Sets a USB-defined feature on a device-defined target on a USB device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE"></a><a id="urb_function_clear_feature_to_device"></a><p><a id="URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE"></a><a id="urb_function_clear_feature_to_device"></a><b>URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE</b></p>
+### -field URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE
 
 
 <dd>
 <p>Clears a USB-defined feature on a device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE"></a><a id="urb_function_clear_feature_to_interface"></a><p><a id="URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE"></a><a id="urb_function_clear_feature_to_interface"></a><b>URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE</b></p>
+### -field URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE
 
 
 <dd>
 <p>Clears a USB-defined feature on an interface for a device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT"></a><a id="urb_function_clear_feature_to_endpoint"></a><p><a id="URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT"></a><a id="urb_function_clear_feature_to_endpoint"></a><b>URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT</b></p>
+### -field URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT
 
 
 <dd>
 <p>Clears a USB-defined feature on an endpoint, for an interface, on a USB device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_CLEAR_FEATURE_TO_OTHER"></a><a id="urb_function_clear_feature_to_other"></a><p><a id="URB_FUNCTION_CLEAR_FEATURE_TO_OTHER"></a><a id="urb_function_clear_feature_to_other"></a><b>URB_FUNCTION_CLEAR_FEATURE_TO_OTHER</b></p>
+### -field URB_FUNCTION_CLEAR_FEATURE_TO_OTHER
 
 
 <dd>
 <p>Clears a USB-defined feature on a device defined target on a USB device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_GET_STATUS_FROM_DEVICE"></a><a id="urb_function_get_status_from_device"></a><p><a id="URB_FUNCTION_GET_STATUS_FROM_DEVICE"></a><a id="urb_function_get_status_from_device"></a><b>URB_FUNCTION_GET_STATUS_FROM_DEVICE</b></p>
+### -field URB_FUNCTION_GET_STATUS_FROM_DEVICE
 
 
 <dd>
 <p>Retrieves status from a USB device. If set, the URB is used with <a href="buses._urb_control_get_status_request">_URB_CONTROL_GET_STATUS_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_GET_STATUS_FROM_INTERFACE"></a><a id="urb_function_get_status_from_interface"></a><p><a id="URB_FUNCTION_GET_STATUS_FROM_INTERFACE"></a><a id="urb_function_get_status_from_interface"></a><b>URB_FUNCTION_GET_STATUS_FROM_INTERFACE</b></p>
+### -field URB_FUNCTION_GET_STATUS_FROM_INTERFACE
 
 
 <dd>
 <p>Retrieves status from an interface on a USB device. If set, the URB is used with <a href="buses._urb_control_get_status_request">_URB_CONTROL_GET_STATUS_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_GET_STATUS_FROM_ENDPOINT"></a><a id="urb_function_get_status_from_endpoint"></a><p><a id="URB_FUNCTION_GET_STATUS_FROM_ENDPOINT"></a><a id="urb_function_get_status_from_endpoint"></a><b>URB_FUNCTION_GET_STATUS_FROM_ENDPOINT</b></p>
+### -field URB_FUNCTION_GET_STATUS_FROM_ENDPOINT
 
 
 <dd>
 <p>Retrieves status from an endpoint for an interface on a USB device. If set, the URB is used with <a href="buses._urb_control_get_status_request">_URB_CONTROL_GET_STATUS_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_GET_STATUS_FROM_OTHER"></a><a id="urb_function_get_status_from_other"></a><p><a id="URB_FUNCTION_GET_STATUS_FROM_OTHER"></a><a id="urb_function_get_status_from_other"></a><b>URB_FUNCTION_GET_STATUS_FROM_OTHER</b></p>
+### -field URB_FUNCTION_GET_STATUS_FROM_OTHER
 
 
 <dd>
 <p>Retrieves status from a device-defined target on a USB device. If set, the URB is used with <a href="buses._urb_control_get_status_request">_URB_CONTROL_GET_STATUS_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_VENDOR_DEVICE"></a><a id="urb_function_vendor_device"></a><p><a id="URB_FUNCTION_VENDOR_DEVICE"></a><a id="urb_function_vendor_device"></a><b>URB_FUNCTION_VENDOR_DEVICE</b></p>
+### -field URB_FUNCTION_VENDOR_DEVICE
 
 
 <dd>
 <p>Sends a vendor-specific command to a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_VENDOR_INTERFACE"></a><a id="urb_function_vendor_interface"></a><p><a id="URB_FUNCTION_VENDOR_INTERFACE"></a><a id="urb_function_vendor_interface"></a><b>URB_FUNCTION_VENDOR_INTERFACE</b></p>
+### -field URB_FUNCTION_VENDOR_INTERFACE
 
 
 <dd>
 <p>Sends a vendor-specific command for an interface on a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_VENDOR_ENDPOINT"></a><a id="urb_function_vendor_endpoint"></a><p><a id="URB_FUNCTION_VENDOR_ENDPOINT"></a><a id="urb_function_vendor_endpoint"></a><b>URB_FUNCTION_VENDOR_ENDPOINT</b></p>
+### -field URB_FUNCTION_VENDOR_ENDPOINT
 
 
 <dd>
 <p>Sends a vendor-specific command for an endpoint on an interface on a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_VENDOR_OTHER"></a><a id="urb_function_vendor_other"></a><p><a id="URB_FUNCTION_VENDOR_OTHER"></a><a id="urb_function_vendor_other"></a><b>URB_FUNCTION_VENDOR_OTHER</b></p>
+### -field URB_FUNCTION_VENDOR_OTHER
 
 
 <dd>
 <p>Sends a vendor-specific command to a device-defined target on a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_CLASS_DEVICE"></a><a id="urb_function_class_device"></a><p><a id="URB_FUNCTION_CLASS_DEVICE"></a><a id="urb_function_class_device"></a><b>URB_FUNCTION_CLASS_DEVICE</b></p>
+### -field URB_FUNCTION_CLASS_DEVICE
 
 
 <dd>
 <p>Sends a USB-defined class-specific command to a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_CLASS_INTERFACE"></a><a id="urb_function_class_interface"></a><p><a id="URB_FUNCTION_CLASS_INTERFACE"></a><a id="urb_function_class_interface"></a><b>URB_FUNCTION_CLASS_INTERFACE</b></p>
+### -field URB_FUNCTION_CLASS_INTERFACE
 
 
 <dd>
 <p>Sends a USB-defined class-specific command to an interface on a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_CLASS_ENDPOINT"></a><a id="urb_function_class_endpoint"></a><p><a id="URB_FUNCTION_CLASS_ENDPOINT"></a><a id="urb_function_class_endpoint"></a><b>URB_FUNCTION_CLASS_ENDPOINT</b></p>
+### -field URB_FUNCTION_CLASS_ENDPOINT
 
 
 <dd>
 <p>Sends a USB-defined class-specific command to an endpoint, on an interface, on a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_CLASS_OTHER"></a><a id="urb_function_class_other"></a><p><a id="URB_FUNCTION_CLASS_OTHER"></a><a id="urb_function_class_other"></a><b>URB_FUNCTION_CLASS_OTHER</b></p>
+### -field URB_FUNCTION_CLASS_OTHER
 
 
 <dd>
 <p>Sends a USB-defined class-specific command to a device defined target on a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_GET_CONFIGURATION"></a><a id="urb_function_get_configuration"></a><p><a id="URB_FUNCTION_GET_CONFIGURATION"></a><a id="urb_function_get_configuration"></a><b>URB_FUNCTION_GET_CONFIGURATION</b></p>
+### -field URB_FUNCTION_GET_CONFIGURATION
 
 
 <dd>
 <p>Retrieves the current configuration on a USB device. If set, the URB is used with <a href="buses._urb_control_get_configuration_request">_URB_CONTROL_GET_CONFIGURATION_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_GET_INTERFACE"></a><a id="urb_function_get_interface"></a><p><a id="URB_FUNCTION_GET_INTERFACE"></a><a id="urb_function_get_interface"></a><b>URB_FUNCTION_GET_INTERFACE</b></p>
+### -field URB_FUNCTION_GET_INTERFACE
 
 
 <dd>
@@ -409,21 +409,21 @@ struct _URB_HEADER {
 <p>Available in Windows 2000, and Windows Vista and later operating systems.  Not available in Windows XP.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE"></a><a id="urb_function_get_descriptor_from_interface"></a><p><a id="URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE"></a><a id="urb_function_get_descriptor_from_interface"></a><b>URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE</b></p>
+### -field URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE
 
 
 <dd>
 <p>Retrieves the descriptor from an interface for a USB device. If set, the URB is used with <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE"></a><a id="urb_function_set_descriptor_to_interface"></a><p><a id="URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE"></a><a id="urb_function_set_descriptor_to_interface"></a><b>URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE</b></p>
+### -field URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE
 
 
 <dd>
 <p>Sets a descriptor for an interface on a USB device. If set, the URB is used with <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR"></a><a id="urb_function_get_ms_feature_descriptor"></a><p><a id="URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR"></a><a id="urb_function_get_ms_feature_descriptor"></a><b>URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR</b></p>
+### -field URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR
 
 
 <dd>
@@ -433,7 +433,7 @@ as the data structure. </p>
 </p>
 </dd>
 
-### -field <a id="URB_FUNCTION_OPEN_STATIC_STREAMS__"></a><a id="urb_function_open_static_streams__"></a><p><a id="URB_FUNCTION_OPEN_STATIC_STREAMS__"></a><a id="urb_function_open_static_streams__"></a><b>URB_FUNCTION_OPEN_STATIC_STREAMS  </b></p>
+### -field URB_FUNCTION_OPEN_STATIC_STREAMS  
 
 
 <dd>
@@ -441,7 +441,7 @@ as the data structure. </p>
 <p>Available in Windows 8.  For information about formatting an URB for an open-stream request, see <a href="buses.how_to_open_streams_in_a_usb_endpoint">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.</p>
 </dd>
 
-### -field <a id="URB_FUNCTION_CLOSE_STATIC_STREAMS__"></a><a id="urb_function_close_static_streams__"></a><p><a id="URB_FUNCTION_CLOSE_STATIC_STREAMS__"></a><a id="urb_function_close_static_streams__"></a><b>URB_FUNCTION_CLOSE_STATIC_STREAMS  </b></p>
+### -field URB_FUNCTION_CLOSE_STATIC_STREAMS  
 
 
 <dd>
@@ -451,19 +451,19 @@ as the data structure. </p>
 </dl>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>Contains a USBD_STATUS_<i>XXX</i> code on return from the host controller driver.</p>
 </dd>
 
-### -field <b>UsbdDeviceHandle</b>
+### -field UsbdDeviceHandle
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>UsbdFlags</b>
+### -field UsbdFlags
 
 <dd>
 <p>Reserved. Do not use.</p>

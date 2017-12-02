@@ -57,26 +57,26 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based video present network (VidPN) source identification number of the input for which the hardware support is queried.</p>
 </dd>
 
-### -field <b>DesiredPresentDuration</b>
+### -field DesiredPresentDuration
 
 <dd>
 <p>[in] The desired duration of a single present operation, in units of 100 nanoseconds.</p>
 </dd>
 
-### -field <b>ClosestSmallerDuration</b>
+### -field ClosestSmallerDuration
 
 <dd>
 <p>[out] The smallest supported desired duration of a single present operation on the given VidPN source, in units of 100 nanoseconds. The value must be ≤ <b>DesiredPresentDuration</b>.</p>
 <p>See Remarks for more limitations on this value.</p>
 </dd>
 
-### -field <b>ClosestLargerDuration</b>
+### -field ClosestLargerDuration
 
 <dd>
 <p>[out] The largest supported desired duration of a single present operation on the given VidPN source, in units of 100 nanoseconds. The value must be ≥ <b>DesiredPresentDuration</b>.</p>

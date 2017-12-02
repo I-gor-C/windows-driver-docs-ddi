@@ -65,13 +65,13 @@ typedef struct _ATA_PASS_THROUGH_DIRECT {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Specifies the length in bytes of the ATA_PASS_THROUGH_DIRECT structure.</p>
 </dd>
 
-### -field <b>AtaFlags</b>
+### -field AtaFlags
 
 <dd>
 <p>Indicates the direction of data transfer and specifies the kind of operation to be performed. The value of this member must be some combination of the flags in the following table.</p>
@@ -132,61 +132,61 @@ typedef struct _ATA_PASS_THROUGH_DIRECT {
 <p> </p>
 </dd>
 
-### -field <b>PathId</b>
+### -field PathId
 
 <dd>
 <p>Contains an integer that indicates the IDE port or bus for the request. This value is set by the port driver.</p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>Contains an integer that indicates the target device on the bus. This value is set by the port driver.</p>
 </dd>
 
-### -field <b>Lun</b>
+### -field Lun
 
 <dd>
 <p>Indicates the logical unit number of the device. This value is set by the port driver.</p>
 </dd>
 
-### -field <b>ReservedAsUchar</b>
+### -field ReservedAsUchar
 
 <dd>
 <p>Reserved for future use. </p>
 </dd>
 
-### -field <b>DataTransferLength</b>
+### -field DataTransferLength
 
 <dd>
 <p>Indicates the size, in bytes, of the data buffer. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred. </p>
 </dd>
 
-### -field <b>TimeOutValue</b>
+### -field TimeOutValue
 
 <dd>
 <p>Indicates the number of seconds that are allowed for the request to execute before the OS-specific port driver determines that the request has timed out.</p>
 </dd>
 
-### -field <b>ReservedAsUlong</b>
+### -field ReservedAsUlong
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>DataBuffer</b>
+### -field DataBuffer
 
 <dd>
 <p>Pointer to the data buffer.</p>
 </dd>
 
-### -field <b>PreviousTaskFile</b>
+### -field PreviousTaskFile
 
 <dd>
 <p>Specifies the contents of the input task file register prior to the current pass-through command. This member is not used when the ATA_FLAGS_48BIT_COMMAND flag is not set. </p>
 </dd>
 
-### -field <b>CurrentTaskFile</b>
+### -field CurrentTaskFile
 
 <dd>
 <p>Specifies the content of the task file register on both input and output. On input, the array values in <b>CurrentTaskFile</b> map to the input registers in the following manner.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilalphaidentifidertype.htm
 old-project: netvista
 ms.assetid: e7be6f28-b6f0-4b95-9145-abbb98e7f5a5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILALPHAIDENTIFIDERTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_ALPHAIDENTIFIERTYPE_PRESENT"></a><a id="ril_alphaidentifiertype_present"></a><b>RIL_ALPHAIDENTIFIERTYPE_PRESENT</b>
+### -field RIL_ALPHAIDENTIFIERTYPE_PRESENT
 
 <dd></dd>
 
-### -field <a id="RIL_ALPHAIDENTIFIERTYPE_NOTPRESENT"></a><a id="ril_alphaidentifiertype_notpresent"></a><b>RIL_ALPHAIDENTIFIERTYPE_NOTPRESENT</b>
+### -field RIL_ALPHAIDENTIFIERTYPE_NOTPRESENT
 
 <dd></dd>
 
-### -field <a id="RIL_ALPHAIDENTIFIERTYPE_MAX"></a><a id="ril_alphaidentifiertype_max"></a><b>RIL_ALPHAIDENTIFIERTYPE_MAX</b>
+### -field RIL_ALPHAIDENTIFIERTYPE_MAX
 
 <dd></dd>
 </dl>

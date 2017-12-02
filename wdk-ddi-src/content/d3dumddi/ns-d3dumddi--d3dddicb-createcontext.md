@@ -68,79 +68,79 @@ typedef struct _D3DDDICB_CREATECONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>[in] The zero-based index for the node that the context is scheduled on.</p>
 </dd>
 
-### -field <b>EngineAffinity</b>
+### -field EngineAffinity
 
 <dd>
 <p>[in] The zero-based index for the engine, within the node that <b>NodeOrdinal</b> specifies, that the context can run in.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-createcontextflags.md">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context. </p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in] A pointer to private data that is passed to a display miniport driver. </p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.</p>
 </dd>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[out] A handle to the context that the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function creates. </p>
 </dd>
 
-### -field <b>pCommandBuffer</b>
+### -field pCommandBuffer
 
 <dd>
 <p>[out] A pointer to the first command buffer for the created context.</p>
 </dd>
 
-### -field <b>CommandBufferSize</b>
+### -field CommandBufferSize
 
 <dd>
 <p>[out] The size, in bytes, of the first command buffer for the created context, which <b>pCommandBuffer</b> points to. </p>
 </dd>
 
-### -field <b>pAllocationList</b>
+### -field pAllocationList
 
 <dd>
 <p>[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-allocationlist.md">D3DDDI_ALLOCATIONLIST</a> structures for the first allocation list for the created context.</p>
 </dd>
 
-### -field <b>AllocationListSize</b>
+### -field AllocationListSize
 
 <dd>
 <p>[out] The number of elements in the allocation-list array that <b>pAllocationList</b> specifies.</p>
 </dd>
 
-### -field <b>pPatchLocationList</b>
+### -field pPatchLocationList
 
 <dd>
 <p>[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures for the first patch-location list for the created context.</p>
 </dd>
 
-### -field <b>PatchLocationListSize</b>
+### -field PatchLocationListSize
 
 <dd>
 <p>[out] The number of elements in the patch-location-list array that <b>pPatchLocationList</b> specifies.</p>
 </dd>
 
-### -field <b>CommandBuffer</b>
+### -field CommandBuffer
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>

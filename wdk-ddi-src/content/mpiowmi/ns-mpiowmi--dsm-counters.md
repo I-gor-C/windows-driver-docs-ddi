@@ -60,43 +60,43 @@ typedef struct _DSM_COUNTERS {
 ## -struct-fields
 <dl>
 
-### -field <b>PathVerifyEnabled</b>
+### -field PathVerifyEnabled
 
 <dd>
 <p>An unsigned 32-bitfield that is used as a flag. This field indicates if path verification must be performed by MPIO periodically on all paths that expose devices that are controlled by this particular DSM.</p>
 </dd>
 
-### -field <b>PathVerificationPeriod</b>
+### -field PathVerificationPeriod
 
 <dd>
 <p>An unsigned 32-bitfield that is used to indicate the periodicity (in seconds) with which MPIO has been requested to perform path verification. This field is only honored if <i>PathVerifyEnabled</i> is <b>TRUE</b>.</p>
 </dd>
 
-### -field <b>PDORemovePeriod</b>
+### -field PDORemovePeriod
 
 <dd>
 <p>An unsigned 32-bitfield that controls the amount of time (in seconds) that the pseudo-LUN will continue to remain in system memory, even after losing all its path information.</p>
 </dd>
 
-### -field <b>RetryCount</b>
+### -field RetryCount
 
 <dd>
 <p>An unsigned 32-bitfield that specifies the number of times a failed I/O will be retried.</p>
 </dd>
 
-### -field <b>RetryInterval</b>
+### -field RetryInterval
 
 <dd>
 <p>An unsigned 32-bitfield that specifies the interval of time (in seconds) after which a failed request is retried.</p>
 </dd>
 
-### -field <b>Reserved32</b>
+### -field Reserved32
 
 <dd>
 <p>Should be zero.</p>
 </dd>
 
-### -field <b>Reserved64</b>
+### -field Reserved64
 
 <dd>
 <p>Should be zero.</p>

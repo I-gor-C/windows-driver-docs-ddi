@@ -56,19 +56,19 @@ typedef struct _KSMAPPING {
 ## -struct-fields
 <dl>
 
-### -field <b>PhysicalAddress</b>
+### -field PhysicalAddress
 
 <dd>
 <p>This member contains the physical address of this piece of the data frame.</p>
 </dd>
 
-### -field <b>ByteCount</b>
+### -field ByteCount
 
 <dd>
 <p>This member contains the number of bytes of contiguous physical memory in this individual mapping.</p>
 </dd>
 
-### -field <b>Alignment</b>
+### -field Alignment
 
 <dd>
 <p>This member specifies the memory alignment in bytes for this buffer.</p>
@@ -76,7 +76,7 @@ typedef struct _KSMAPPING {
 </dl>
 
 ## -remarks
-<p>In order for minidrivers to use this structure within the stream pointer offsets, the pin for which this is referring must specify scatter/gather DMA mapping generation through KSPIN_FLAG_GENERATE_MAPPINGS and the client must register its DMA adapter object with AVStream using <b>KsDeviceRegisterAdapterObject</b>. See <a href="NULL">AVStream DMA Services</a>. The KSPIN_FLAG_GENERATE_MAPPINGS flag is defined on the <a href="..\ks\ns-ks--kspin-descriptor-ex.md">KSPIN_DESCRIPTOR_EX</a> reference page.</p>
+<p>In order for minidrivers to use this structure within the stream pointer offsets, the pin for which this is referring must specify scatter/gather DMA mapping generation through KSPIN_FLAG_GENERATE_MAPPINGS and the client must register its DMA adapter object with AVStream using <b>KsDeviceRegisterAdapterObject</b>. See <a href="https://msdn.microsoft.com/ba1c525b-26b0-4778-b58b-f4169cfb972e">AVStream DMA Services</a>. The KSPIN_FLAG_GENERATE_MAPPINGS flag is defined on the <a href="..\ks\ns-ks--kspin-descriptor-ex.md">KSPIN_DESCRIPTOR_EX</a> reference page.</p>
 
 ## -requirements
 <table>

@@ -58,32 +58,32 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>fSupportsHardwareAssistedScanning</b>
+### -field fSupportsHardwareAssistedScanning
 
 <dd>
 <p>A Boolean value that indicates whether the driver or firmware for a tuner supports hardware-assisted scanning operations. <b>TRUE</b> indicates that the driver or firmware for a tuner supports hardware-assisted scanning operations. <b>FALSE</b> indicates that the driver or firmware does not support hardware-assisted scanning operations. </p>
 </dd>
 
-### -field <b>SupportedBroadcastStandards</b>
+### -field SupportedBroadcastStandards
 
 <dd>
 <p>The number of broadcast video standard types that the tuning device can support. A hybrid tuner can support multiple types. </p>
 </dd>
 
-### -field <b>GUIDBucket</b>
+### -field GUIDBucket
 
 <dd>
 <p>An array of GUIDs for the network types that the tuning device supports. </p>
 <p>Based on the supported number in <b>SupportedBroadcastStandards</b> that is returned in the initial call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565887">KSPROPERTY_TUNER_SCAN_CAPS</a> property, the analog or digital tuner filter then allocates an array of GUIDs. The driver uses this allocated user buffer to return all the supported GUIDs in the next call to KSPROPERTY_TUNER_SCAN_CAPS. The driver must call the <a href="..\wdm\nf-wdm-probeforwrite.md">ProbeForWrite</a> function to validate this user buffer and must ensure that the length of the buffer is valid. Although unlikely, if the driver will access this buffer in an arbitrary thread, it should map the buffer into kernel space. Currently, scanning capabilities are defined for supporting the analog standard. If the driver supports analog and the application intends to start a scanning session for analog, the corresponding capabilities are defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565881">KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS</a> property. Other scanning capabilities to support other broadcast standards (for example, DVB-S) are not yet supported. </p>
 </dd>
 
-### -field <b>lengthofBucket</b>
+### -field lengthofBucket
 
 <dd>
 <p>The number of GUIDs in the <b>GUIDBucket</b> array. </p>

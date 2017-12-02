@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelpause.htm
 old-project: netvista
 ms.assetid: 434CA5F7-24D4-40E7-AE77-C0732D3FBBFF
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbChannelPause
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ VOID VmbChannelPause(
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>A handle for the channel to pause.</p>

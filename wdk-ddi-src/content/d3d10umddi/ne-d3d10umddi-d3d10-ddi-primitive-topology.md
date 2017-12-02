@@ -97,31 +97,31 @@ typedef enum D3D10_DDI_PRIMITIVE_TOPOLOGY {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D10_DDI_PRIMITIVE_TOPOLOGY_UNDEFINED"></a><a id="d3d10_ddi_primitive_topology_undefined"></a><b>D3D10_DDI_PRIMITIVE_TOPOLOGY_UNDEFINED</b>
+### -field D3D10_DDI_PRIMITIVE_TOPOLOGY_UNDEFINED
 
 <dd>
 <p>The primitive topology is undefined.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_PRIMITIVE_TOPOLOGY_POINTLIST"></a><a id="d3d10_ddi_primitive_topology_pointlist"></a><b>D3D10_DDI_PRIMITIVE_TOPOLOGY_POINTLIST</b>
+### -field D3D10_DDI_PRIMITIVE_TOPOLOGY_POINTLIST
 
 <dd>
 <p>Vertices are rendered as a collection of isolated points.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_PRIMITIVE_TOPOLOGY_LINELIST"></a><a id="d3d10_ddi_primitive_topology_linelist"></a><b>D3D10_DDI_PRIMITIVE_TOPOLOGY_LINELIST</b>
+### -field D3D10_DDI_PRIMITIVE_TOPOLOGY_LINELIST
 
 <dd>
 <p>Vertices are rendered as a list of isolated straight line segments.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_PRIMITIVE_TOPOLOGY_LINESTRIP"></a><a id="d3d10_ddi_primitive_topology_linestrip"></a><b>D3D10_DDI_PRIMITIVE_TOPOLOGY_LINESTRIP</b>
+### -field D3D10_DDI_PRIMITIVE_TOPOLOGY_LINESTRIP
 
 <dd>
 <p>Vertices are rendered as a single polyline.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_PRIMITIVE_TOPOLOGY_TRIANGLELIST"></a><a id="d3d10_ddi_primitive_topology_trianglelist"></a><b>D3D10_DDI_PRIMITIVE_TOPOLOGY_TRIANGLELIST</b>
+### -field D3D10_DDI_PRIMITIVE_TOPOLOGY_TRIANGLELIST
 
 <dd>
 <p>
@@ -129,223 +129,223 @@ typedef enum D3D10_DDI_PRIMITIVE_TOPOLOGY {
      </p>
 </dd>
 
-### -field <a id="D3D10_DDI_PRIMITIVE_TOPOLOGY_TRIANGLESTRIP"></a><a id="d3d10_ddi_primitive_topology_trianglestrip"></a><b>D3D10_DDI_PRIMITIVE_TOPOLOGY_TRIANGLESTRIP</b>
+### -field D3D10_DDI_PRIMITIVE_TOPOLOGY_TRIANGLESTRIP
 
 <dd>
 <p>Vertices are rendered as a triangle strip. </p>
 </dd>
 
-### -field <a id="D3D10_DDI_PRIMITIVE_TOPOLOGY_LINELIST_ADJ"></a><a id="d3d10_ddi_primitive_topology_linelist_adj"></a><b>D3D10_DDI_PRIMITIVE_TOPOLOGY_LINELIST_ADJ</b>
+### -field D3D10_DDI_PRIMITIVE_TOPOLOGY_LINELIST_ADJ
 
 <dd>
 <p>The primitives contain room for adjacency information.  </p>
 </dd>
 
-### -field <a id="D3D10_DDI_PRIMITIVE_TOPOLOGY_LINESTRIP_ADJ"></a><a id="d3d10_ddi_primitive_topology_linestrip_adj"></a><b>D3D10_DDI_PRIMITIVE_TOPOLOGY_LINESTRIP_ADJ</b>
+### -field D3D10_DDI_PRIMITIVE_TOPOLOGY_LINESTRIP_ADJ
 
 <dd>
 <p>The primitives contain room for adjacency information. </p>
 </dd>
 
-### -field <a id="D3D10_DDI_PRIMITIVE_TOPOLOGY_TRIANGLELIST_ADJ"></a><a id="d3d10_ddi_primitive_topology_trianglelist_adj"></a><b>D3D10_DDI_PRIMITIVE_TOPOLOGY_TRIANGLELIST_ADJ</b>
+### -field D3D10_DDI_PRIMITIVE_TOPOLOGY_TRIANGLELIST_ADJ
 
 <dd>
 <p>The primitives contain room for adjacency information. </p>
 </dd>
 
-### -field <a id="D3D10_DDI_PRIMITIVE_TOPOLOGY_TRIANGLESTRIP_ADJ"></a><a id="d3d10_ddi_primitive_topology_trianglestrip_adj"></a><b>D3D10_DDI_PRIMITIVE_TOPOLOGY_TRIANGLESTRIP_ADJ</b>
+### -field D3D10_DDI_PRIMITIVE_TOPOLOGY_TRIANGLESTRIP_ADJ
 
 <dd>
 <p>The primitives contain room for adjacency information. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_1_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_1_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_1_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_1_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_2_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_2_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_2_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_2_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_3_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_3_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_3_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_3_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_4_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_4_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_4_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_4_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_5_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_5_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_5_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_5_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_6_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_6_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_6_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_6_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_7_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_7_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_7_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_7_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_8_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_8_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_8_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_8_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_9_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_9_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_9_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_9_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_10_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_10_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_10_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_10_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_11_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_11_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_11_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_11_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_12_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_12_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_12_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_12_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_13_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_13_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_13_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_13_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_14_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_14_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_14_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_14_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_15_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_15_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_15_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_15_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_16_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_16_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_16_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_16_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_17_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_17_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_17_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_17_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_18_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_18_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_18_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_18_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_19_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_19_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_19_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_19_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_20_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_20_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_20_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_20_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_21_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_21_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_21_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_21_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_22_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_22_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_22_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_22_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_23_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_23_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_23_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_23_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_24_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_24_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_24_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_24_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_25_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_25_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_25_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_25_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_26_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_26_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_26_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_26_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_27_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_27_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_27_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_27_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_28_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_28_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_28_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_28_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_29_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_29_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_29_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_29_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_30_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_30_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_30_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_30_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_31_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_31_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_31_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_31_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_PRIMITIVE_TOPOLOGY_32_CONTROL_POINT_PATCHLIST"></a><a id="d3d11_ddi_primitive_topology_32_control_point_patchlist"></a><b>D3D11_DDI_PRIMITIVE_TOPOLOGY_32_CONTROL_POINT_PATCHLIST</b>
+### -field D3D11_DDI_PRIMITIVE_TOPOLOGY_32_CONTROL_POINT_PATCHLIST
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>

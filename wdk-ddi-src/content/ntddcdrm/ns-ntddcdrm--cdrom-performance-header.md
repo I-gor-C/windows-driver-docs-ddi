@@ -59,37 +59,37 @@ typedef struct _CDROM_PERFORMANCE_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>DataLength</b>
+### -field DataLength
 
 <dd>
 <p>The size of the available data (not just the size of returned data). The size does  not include this <b>Datalength</b> field.</p>
 </dd>
 
-### -field <b> Except</b>
+### -field  Except
 
 <dd>
 <p>The format of the descriptors that follow the header depend on the value in this field. If false (0), the <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-nominal-performance-descriptor.md">CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR</a> follows the <b>CDROM_PERFORMANCE_HEADER</b> in the returned data. If true (1),  the <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-exception-performance-descriptor.md">CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR</a> follows the <b>CDROM_PERFORMANCE_HEADER</b> in the returned data.</p>
 </dd>
 
-### -field <b>Write</b>
+### -field Write
 
 <dd>
 <p>Indicates whether the result data is for read or write performance.  If false (0), it indicates that the result data is for read performance. If true (1), it indicates that the result data is for write performance.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>  Reserved2</b>
+### -field   Reserved2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b> Data</b>
+### -field  Data
 
 <dd>
 <p>Contains a list of the following records, depending upon the type of request: <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-nominal-performance-descriptor.md">CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR</a>,   

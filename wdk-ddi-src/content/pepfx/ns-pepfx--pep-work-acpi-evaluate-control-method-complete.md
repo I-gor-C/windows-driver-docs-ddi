@@ -58,31 +58,31 @@ typedef struct _PEP_WORK_ACPI_EVALUATE_CONTROL_METHOD_COMPLETE {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>A POHANDLE value that represents the registration of the device with the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx). The PEP previously received this handle from PoFx during the <a href="kernel.pep_notify_acpi_register_device">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a> notification in which the PEP elected to provide ACPI services for the device.</p>
 </dd>
 
-### -field <b>CompletionFlags</b>
+### -field CompletionFlags
 
 <dd>
 <p>A set of completion flags. No flags are currently defined for this member, which is always set to PEP_ACPI_EVALUATE_CONTROL_METHOD_COMPLETE_FLAG_NONE (0x0).</p>
 </dd>
 
-### -field <b>CompletionContext</b>
+### -field CompletionContext
 
 <dd>
 <p>A pointer to a completion context value. This is the same pointer that PoFx passed to the PEP in the <a href="kernel.pep_notify_acpi_evaluate_control_method">PEP_NOTIFY_ACPI_EVALUATE_CONTROL_METHOD</a> notification that initiated the asynchronous evaluation of the ACPI control method.</p>
 </dd>
 
-### -field <b>OutputArgumentSize</b>
+### -field OutputArgumentSize
 
 <dd>
 <p>The size, in bytes, of the buffer pointed to by the <b>OutputArguments</b> member.</p>
 </dd>
 
-### -field <b>OutputArguments</b>
+### -field OutputArguments
 
 <dd>
 <p>A pointer to a buffer to which the PEP has written the result of evaluating the ACPI control method. This buffer starts with a <a href="acpi.acpi_method_argument">ACPI_METHOD_ARGUMENT</a> structure, which might be followed by additional output data. PoFx allocated this buffer and passed the buffer pointer to the PEP in the <a href="kernel.pep_notify_acpi_evaluate_control_method">PEP_NOTIFY_ACPI_EVALUATE_CONTROL_METHOD</a> notification that initiated the asynchronous evaluation of the ACPI control method.</p>

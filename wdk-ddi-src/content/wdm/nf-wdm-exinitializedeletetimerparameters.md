@@ -55,7 +55,7 @@ VOID ExInitializeDeleteTimerParameters(
 ## -parameters
 <dl>
 
-### -param <i>Parameters</i> 
+### -param Parameters 
 
 <dd>
 <p>A pointer to the <b>EXT_DELETE_PARAMETERS</b> structure that is to be initialized.</p>

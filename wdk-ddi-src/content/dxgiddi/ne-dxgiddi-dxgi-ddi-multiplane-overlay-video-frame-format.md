@@ -56,19 +56,19 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGI_DDI_MULIIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_PROGRESSIVE"></a><a id="dxgi_ddi_muliiplane_overlay_video_frame_format_progressive"></a><b>DXGI_DDI_MULIIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_PROGRESSIVE</b>
+### -field DXGI_DDI_MULIIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_PROGRESSIVE
 
 <dd>
 <p>Progressive scan format.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST"></a><a id="dxgi_ddi_multiplane_overlay_video_frame_format_interlaced_top_field_first"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST"></a><a id="dxgi_ddi_multiplane_overlay_video_frame_format_interlaced_bottom_field_first"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>

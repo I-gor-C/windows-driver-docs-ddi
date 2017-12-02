@@ -62,19 +62,19 @@ VP_STATUS SvgaHwIoPortUshortString(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> 
+### -param Context 
 
 <dd>
 <p>Specifies the miniport driver-determined context value that was set in <b>EmulatorAccessEntriesContext</b> of VIDEO_PORT_CONFIG_INFO.</p>
 </dd>
 
-### -param <i>Port</i> 
+### -param Port 
 
 <dd>
 <p>Specifies the mapped I/O port to be trapped.</p>
 </dd>
 
-### -param <i>AccessMode</i> 
+### -param AccessMode 
 
 <dd>
 <p>Specifies the type of access allowed, which can be one or a combination (ORed) of the following values:</p>
@@ -90,13 +90,13 @@ VP_STATUS SvgaHwIoPortUshortString(
 </p>
 </dd>
 
-### -param <i>Data</i> 
+### -param Data 
 
 <dd>
 <p>Pointer to the string of USHORT data values to be transferred. This string is accessed one value at a time until all values have been hooked.</p>
 </dd>
 
-### -param <i>DataLength</i> 
+### -param DataLength 
 
 <dd>
 <p>Specifies the number of USHORT values in the string.</p>

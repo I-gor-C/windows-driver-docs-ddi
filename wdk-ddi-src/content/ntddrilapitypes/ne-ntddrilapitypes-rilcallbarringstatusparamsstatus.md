@@ -7,7 +7,7 @@ old-location: netvista\rilcallbarringstatusparamsstatus.htm
 old-project: netvista
 ms.assetid: aff61006-8bc4-4916-9718-a852516fc4d2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILCALLBARRINGSTATUSPARAMSSTATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_BARRINGSTATUS_ENABLED"></a><a id="ril_barringstatus_enabled"></a><b>RIL_BARRINGSTATUS_ENABLED</b>
+### -field RIL_BARRINGSTATUS_ENABLED
 
 <dd></dd>
 
-### -field <a id="RIL_BARRINGSTATUS_MAX"></a><a id="ril_barringstatus_max"></a><b>RIL_BARRINGSTATUS_MAX</b>
+### -field RIL_BARRINGSTATUS_MAX
 
 <dd></dd>
 </dl>

@@ -61,49 +61,49 @@ typedef struct _STORAGE_PROTOCOL_SPECIFIC_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>ProtocolType</b>
+### -field ProtocolType
 
 <dd>
 <p>The protocol type. Values for this member are defined in the <a href="..\ntddstor\ne-ntddstor--storage-protocol-type.md">STORAGE_PROTOCOL_TYPE</a> enumeration.</p>
 </dd>
 
-### -field <b>DataType</b>
+### -field DataType
 
 <dd>
 <p>The protocol data type. Data types are defined in the <a href="..\ntddstor\ne-ntddstor--storage-protocol-nvme-data-type.md">STORAGE_PROTOCOL_NVME_DATA_TYPE</a> and <a href="..\ntddstor\ne-ntddstor--storage-protocol-ata-data-type.md">STORAGE_PROTOCOL_ATA_DATA_TYPE</a> enumerations.</p>
 </dd>
 
-### -field <b>ProtocolDataRequestValue</b>
+### -field ProtocolDataRequestValue
 
 <dd>
 <p>The protocol data request value.</p>
 </dd>
 
-### -field <b>ProtocolDataRequestSubValue</b>
+### -field ProtocolDataRequestSubValue
 
 <dd>
 <p>The sub value of the protocol data request.</p>
 </dd>
 
-### -field <b>ProtocolDataOffset</b>
+### -field ProtocolDataOffset
 
 <dd>
 <p>The offset of the data buffer that is from the beginning of this structure. The typical value can be sizeof(<b>STORAGE_PROTOCOL_SPECIFIC_DATA</b>).</p>
 </dd>
 
-### -field <b>ProtocolDataLength</b>
+### -field ProtocolDataLength
 
 <dd>
 <p>The length of the protocol data.</p>
 </dd>
 
-### -field <b>FixedProtocolReturnData</b>
+### -field FixedProtocolReturnData
 
 <dd>
 <p>The returned data.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

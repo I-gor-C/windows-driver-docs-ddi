@@ -54,7 +54,7 @@ NTSTATUS KsCreateDefaultAllocator(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP with the IRP_MJ_CREATE request being handled.</p>

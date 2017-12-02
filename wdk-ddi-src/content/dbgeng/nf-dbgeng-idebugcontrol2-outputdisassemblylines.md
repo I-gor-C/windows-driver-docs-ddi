@@ -7,7 +7,7 @@ old-location: debugger\outputdisassemblylines.htm
 old-project: debugger
 ms.assetid: fb69e052-1033-457d-bafb-bf4be4ea5966
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl2, OutputDisassemblyLines, IDebugControl2::OutputDisassemblyLines
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,31 +62,31 @@ HRESULT OutputDisassemblyLines(
 ## -parameters
 <dl>
 
-### -param <i>OutputControl</i> [in]
+### -param OutputControl [in]
 
 <dd>
-<p>Specifies the output control that determines which client's output callbacks receive the output.  For possible values, see <a href="debugger.debug_outctl_xxx">DEBUG_OUTCTL_XXX</a>.  For more information about output, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.</p>
+<p>Specifies the output control that determines which client's output callbacks receive the output.  For possible values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541517">DEBUG_OUTCTL_XXX</a>.  For more information about output, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.</p>
 </dd>
 
-### -param <i>PreviousLines</i> [in]
+### -param PreviousLines [in]
 
 <dd>
 <p>Specifies the number of lines of instructions before the instruction at <i>Offset</i> to include in the output.  Typically, each instruction is output on a single line.  However, some instructions can take up several lines of output; this can cause the number of lines output before the instruction at <i>Offset</i> to be greater than <i>PreviousLines</i>.</p>
 </dd>
 
-### -param <i>TotalLines</i> [in]
+### -param TotalLines [in]
 
 <dd>
 <p>Specifies the total number of lines of instructions to include in the output.  Typically, each instruction is output on a single line.  However, some instructions can take up several lines of output; this can cause the number of lines output to be greater than <i>TotalLines</i>.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the location in the target's memory of the instructions to disassemble.  The disassembly output will start <i>PreviousLines</i> lines before these processor instructions.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies the bit-flags that affect the behavior of this method.  The following table lists the bits that can be set.</p>
@@ -131,25 +131,25 @@ HRESULT OutputDisassemblyLines(
 <p> </p>
 </dd>
 
-### -param <i>OffsetLine</i> [out, optional]
+### -param OffsetLine [out, optional]
 
 <dd>
 <p>Receives the line number in the output that contains the instruction at <i>Offset</i>.  If <i>OffsetLine</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>StartOffset</i> [out, optional]
+### -param StartOffset [out, optional]
 
 <dd>
 <p>Receives the location in the target's memory of the first instruction included in the output.  If <i>StartOffset</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>EndOffset</i> [out, optional]
+### -param EndOffset [out, optional]
 
 <dd>
 <p>Receives the locaiton in the target's memory of the instruction that follows the last disassembled instruction.</p>
 </dd>
 
-### -param <i>LineOffsets</i> [out, optional]
+### -param LineOffsets [out, optional]
 
 <dd>
 <p>Receives the locations in the target's memory of the instructions included in the output starting with the instruction at <i>Offset</i>.  <i>LineOffsets</i> is an array that contains <i>TotalLines</i> elements.</p>
@@ -160,7 +160,7 @@ HRESULT OutputDisassemblyLines(
 </dl>
 
 ## -returns
-<p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 
@@ -218,4 +218,4 @@ HRESULT OutputDisassemblyLines(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::OutputDisassemblyLines method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::OutputDisassemblyLines method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

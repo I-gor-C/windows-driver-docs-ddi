@@ -7,7 +7,7 @@ old-location: netvista\ndis_pd_counter_type.htm
 old-project: netvista
 ms.assetid: 36DA5A61-2DA4-4CD1-8BA5-74444DC002F0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ typedef enum _NDIS_PD_COUNTER_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PDCounterTypeUnknown"></a><a id="pdcountertypeunknown"></a><a id="PDCOUNTERTYPEUNKNOWN"></a><b>PDCounterTypeUnknown</b>
+### -field PDCounterTypeUnknown
 
 <dd>
 <p>The counter type is not known.</p>
 </dd>
 
-### -field <a id="PDCounterTypeReceiveQueue"></a><a id="pdcountertypereceivequeue"></a><a id="PDCOUNTERTYPERECEIVEQUEUE"></a><b>PDCounterTypeReceiveQueue</b>
+### -field PDCounterTypeReceiveQueue
 
 <dd>
 <p>The counter is a receive queue counter.</p>
 </dd>
 
-### -field <a id="PDCounterTypeTransmitQueue"></a><a id="pdcountertypetransmitqueue"></a><a id="PDCOUNTERTYPETRANSMITQUEUE"></a><b>PDCounterTypeTransmitQueue</b>
+### -field PDCounterTypeTransmitQueue
 
 <dd>
 <p>The counter is a transmit queue counter.</p>
 </dd>
 
-### -field <a id="PDCounterTypeReceiveFilter"></a><a id="pdcountertypereceivefilter"></a><a id="PDCOUNTERTYPERECEIVEFILTER"></a><b>PDCounterTypeReceiveFilter</b>
+### -field PDCounterTypeReceiveFilter
 
 <dd>
 <p>The counter is a receive filter counter.</p>
 </dd>
 
-### -field <a id="PDCounterTypeMax"></a><a id="pdcountertypemax"></a><a id="PDCOUNTERTYPEMAX"></a><b>PDCounterTypeMax</b>
+### -field PDCounterTypeMax
 
 <dd>
 <p>The maximum value for this enumeration. This value might change in future versions of NDIS header files and binaries.
@@ -132,4 +132,4 @@ typedef enum _NDIS_PD_COUNTER_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PD_COUNTER_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PD_COUNTER_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

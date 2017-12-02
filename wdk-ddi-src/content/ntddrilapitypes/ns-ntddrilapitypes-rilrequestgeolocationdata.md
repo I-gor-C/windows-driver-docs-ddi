@@ -7,7 +7,7 @@ old-location: netvista\rilrequestgeolocationdata.htm
 old-project: netvista
 ms.assetid: 814e00c5-7248-4853-a61b-e70be86bca0e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILREQUESTGEOLOCATIONDATA, RILREQUESTGEOLOCATIONDATA, *LPRILREQUESTGEOLOCATIONDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,27 +59,27 @@ typedef struct _RILREQUESTGEOLOCATIONDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwLocationInformationMask</b>
+### -field dwLocationInformationMask
 
 <dd></dd>
 
-### -field <b>dwLocationRequestAccuracy</b>
+### -field dwLocationRequestAccuracy
 
 <dd></dd>
 
-### -field <b>rrRequestInformation</b>
+### -field rrRequestInformation
 
 <dd></dd>
 </dl>

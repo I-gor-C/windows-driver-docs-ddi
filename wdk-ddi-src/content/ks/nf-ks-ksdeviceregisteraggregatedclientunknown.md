@@ -55,13 +55,13 @@ PUNKNOWN __inline KsDeviceRegisterAggregatedClientUnknown(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> structure representing the specified AVStream device.</p>
 </dd>
 
-### -param <i>ClientUnknown</i> [in]
+### -param ClientUnknown [in]
 
 <dd>
 <p>A pointer to the client's undelegated <b>IUnknown</b> interface.</p>

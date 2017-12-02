@@ -57,25 +57,25 @@ void __inline KsGateInitialize(
 ## -parameters
 <dl>
 
-### -param <i>Gate</i> [in]
+### -param Gate [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksgate.md">KSGATE</a> structure to initialize.</p>
 </dd>
 
-### -param <i>InitialCount</i> [in]
+### -param InitialCount [in]
 
 <dd>
-<p>This parameter specifies the initial count to place on the gate. Fills in <i>Gate -&gt; Count</i>. For a new AND gate, this should be 1 (1 − 0 off inputs), and for a new OR gate, this should be 0 (0 on inputs). For more information, see <a href="NULL">Flow Control Gates in AVStream</a>.</p>
+<p>This parameter specifies the initial count to place on the gate. Fills in <i>Gate -&gt; Count</i>. For a new AND gate, this should be 1 (1 − 0 off inputs), and for a new OR gate, this should be 0 (0 on inputs). For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.</p>
 </dd>
 
-### -param <i>NextGate</i> [in, optional]
+### -param NextGate [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksgate.md">KSGATE</a> structure to which <i>Gate</i> should attach its output for state transitions. If this optional parameter is unspecified, <i>Gate</i> is not be attached to a subsequent gate.</p>
 </dd>
 
-### -param <i>StateToPropagate</i> [in]
+### -param StateToPropagate [in]
 
 <dd>
 <p>This parameter specifies whether to propagate ON transitions or OFF transitions. For an OR gate, set to <b>TRUE</b>; for an AND gate, set to <b>FALSE</b>.</p>
@@ -90,7 +90,7 @@ void __inline KsGateInitialize(
 
 <p>AND and OR gates are conceptualizations of the gating mechanism. AVStream does not distinguish between them in the implementation of the common gate functions. The gate functions specific to AND and OR gates are inline calls to the common gate functions.</p>
 
-<p>To learn more about the gate construct in AVStream, see <a href="NULL">Flow Control Gates in AVStream</a>, <a href="..\ks\ns-ks--ksgate.md">KSGATE</a>.</p>
+<p>To learn more about the gate construct in AVStream, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>, <a href="..\ks\ns-ks--ksgate.md">KSGATE</a>.</p>
 
 ## -requirements
 <table>

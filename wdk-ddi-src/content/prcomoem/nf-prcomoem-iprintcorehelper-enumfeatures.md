@@ -56,13 +56,13 @@ STDMETHOD EnumFeatures(
 ## -parameters
 <dl>
 
-### -param <i>pFeatureList[]</i> [out]
+### -param pFeatureList[] [out]
 
 <dd>
 <p>A pointer to an array of ANSI character strings that contain all of the features that are available for the current device. The final array element is indicated by a <b>NULL</b> string. The array elements should be considered constants. The caller does not need to provide a buffer for the array, nor should the caller release the array.</p>
 </dd>
 
-### -param <i>pdwNumFeatures</i> [out]
+### -param pdwNumFeatures [out]
 
 <dd>
 <p>A pointer to a variable that receives the number of feature keywords in the array that is pointed to by the <i>pFeatureList</i> parameter.</p>

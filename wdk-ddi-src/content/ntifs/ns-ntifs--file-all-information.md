@@ -62,55 +62,55 @@ typedef struct _FILE_ALL_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>BasicInformation</b>
+### -field BasicInformation
 
 <dd>
 <p>Contains basic information about the file, which includes the file attributes and the file creation time. This member is a <a href="..\wdm\ns-wdm--file-basic-information.md">FILE_BASIC_INFORMATION</a> structure. </p>
 </dd>
 
-### -field <b>StandardInformation</b>
+### -field StandardInformation
 
 <dd>
 <p>Contains standard information about a file, which includes the file allocation size, the end-of-file offset, and whether the file is a directory. This member is a <a href="..\wdm\ns-wdm--file-standard-information.md">FILE_STANDARD_INFORMATION</a> structure. </p>
 </dd>
 
-### -field <b>InternalInformation</b>
+### -field InternalInformation
 
 <dd>
 <p>Contains the 8-byte file reference number for the file. This member is a <a href="..\ntifs\ns-ntifs--file-internal-information.md">FILE_INTERNAL_INFORMATION</a> structure. </p>
 </dd>
 
-### -field <b>EaInformation</b>
+### -field EaInformation
 
 <dd>
 <p>Specifies the size of the extended attributes of the file. This member is a <a href="..\ntifs\ns-ntifs--file-ea-information.md">FILE_EA_INFORMATION</a> structure. </p>
 </dd>
 
-### -field <b>AccessInformation</b>
+### -field AccessInformation
 
 <dd>
 <p>Specifies the client's access rights to the file. This member is a <a href="..\ntifs\ns-ntifs--file-access-information.md">FILE_ACCESS_INFORMATION</a> structure. </p>
 </dd>
 
-### -field <b>PositionInformation</b>
+### -field PositionInformation
 
 <dd>
 <p>Specifies the current file position. This member is a <a href="..\wdm\ns-wdm--file-position-information.md">FILE_POSITION_INFORMATION</a> structure. </p>
 </dd>
 
-### -field <b>ModeInformation</b>
+### -field ModeInformation
 
 <dd>
 <p>Specifies the access mode in which the file was created or opened. This member is a <a href="..\ntifs\ns-ntifs--file-mode-information.md">FILE_MODE_INFORMATION</a> structure. </p>
 </dd>
 
-### -field <b>AlignmentInformation</b>
+### -field AlignmentInformation
 
 <dd>
 <p>Specifies the device's memory address alignment requirement for data transfers. This member is a <a href="..\ntddk\ns-ntddk--file-alignment-information.md">FILE_ALIGNMENT_INFORMATION</a> structure. </p>
 </dd>
 
-### -field <b>NameInformation</b>
+### -field NameInformation
 
 <dd>
 <p>Contains the file name. This member is a <a href="..\ntddk\ns-ntddk--file-name-information.md">FILE_NAME_INFORMATION</a> structure. This structure contains the first character in the file name string. The additional characters in the file name string immediately follow the structure. To accommodate the full file name, the buffer that is allocated to contain a <b>FILE_ALL_INFORMATION</b> structure must be large enough to contain both the structure and the part of the file name string that follows the structure. </p>

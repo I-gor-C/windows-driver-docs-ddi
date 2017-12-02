@@ -57,25 +57,25 @@ typedef struct _DXVADDI_QUERYFILTERPROPERTYRANGEINPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>pVideoProcGuid</b>
+### -field pVideoProcGuid
 
 <dd>
 <p>[in] A pointer to a GUID that represents the video processing device type. </p>
 </dd>
 
-### -field <b>VideoDesc</b>
+### -field VideoDesc
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videodesc.md">DXVADDI_VIDEODESC</a> structure that describes the video stream.</p>
 </dd>
 
-### -field <b>RenderTargetFormat</b>
+### -field RenderTargetFormat
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the render target for the video processing device.</p>
 </dd>
 
-### -field <b>FilterSetting</b>
+### -field FilterSetting
 
 <dd>
 <p>[in] A filter setting that range information is requested for. This member can be one of the following settings:</p>

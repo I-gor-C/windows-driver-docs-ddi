@@ -7,7 +7,7 @@ old-location: netvista\rilequipmentstate_2.htm
 old-project: netvista
 ms.assetid: fd3af191-aae8-4afa-b737-8c51029df0e4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILEQUIPMENTSTATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_EQSTATE_FULL"></a><a id="ril_eqstate_full"></a><b>RIL_EQSTATE_FULL</b>
+### -field RIL_EQSTATE_FULL
 
 <dd></dd>
 
-### -field <a id="RIL_EQSTATE_SHUTDOWN"></a><a id="ril_eqstate_shutdown"></a><b>RIL_EQSTATE_SHUTDOWN</b>
+### -field RIL_EQSTATE_SHUTDOWN
 
 <dd></dd>
 
-### -field <a id="RIL_EQSTATE_MAX"></a><a id="ril_eqstate_max"></a><b>RIL_EQSTATE_MAX</b>
+### -field RIL_EQSTATE_MAX
 
 <dd></dd>
 </dl>

@@ -40,7 +40,7 @@ req.iface: ISynthSinkDMus
 
 ## -description
 <p>The <code>IMXF</code> interface represents the DirectMusic stream on a MIDI transport filter (MXF). The DMus miniport driver implements this interface and exposes it to the DMus port driver. MIDI transport occurs through IMXF, which is the DMus miniport driver's primary interface for managing DirectMusic streams. The DMus port driver uses this interface to manage a DirectMusic stream on a MIDI transport filter (MXF). The miniport driver creates a stream object with this interface when the port driver calls the miniport driver's <a href="audio.iminiportdmus_newstream">IMiniportDMus::NewStream</a> method. <code>IMXF</code> inherits from the <b>IUnknown</b> interface.</p>
-<p>The <a href="..\dmusicks\nn-dmusicks-iallocatormxf~r1.md">IAllocatorMXF</a> and <a href="..\dmusicks\nn-dmusicks-isynthsinkdmus.md">ISynthSinkDMus</a> interfaces both inherit from <code>IMXF</code>. For information about using these interfaces to manage MIDI streams, see <a href="NULL">MIDI Transport</a>.</p>
+<p>The <a href="..\dmusicks\nn-dmusicks-iallocatormxf~r1.md">IAllocatorMXF</a> and <a href="..\dmusicks\nn-dmusicks-isynthsinkdmus.md">ISynthSinkDMus</a> interfaces both inherit from <code>IMXF</code>. For information about using these interfaces to manage MIDI streams, see <a href="https://msdn.microsoft.com/ce9ec589-0aea-4ed9-a60d-50f2ddfb0c13">MIDI Transport</a>.</p>
 
 
 ## -inheritance

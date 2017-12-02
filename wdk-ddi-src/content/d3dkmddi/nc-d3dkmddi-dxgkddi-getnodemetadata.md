@@ -59,19 +59,19 @@ NTSTATUS APIENTRY DxgkDdiGetNodeMetadata(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>[in] A handle that identifies a display adapter. The DirectX graphics kernel subsystem previously provided this handle to the display miniport driver in the <i>DxgkInterface</i> parameter of the <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
 </dd>
 
-### -param <i>NodeOrdinal</i> [in]
+### -param NodeOrdinal [in]
 
 <dd>
 <p>An index of a node for which engine information will be obtained. This node is within the physical adapter defined by the <i>hAdapter</i> parameter.</p>
 </dd>
 
-### -param <i>pGetNodeMetadata</i> [out]
+### -param pGetNodeMetadata [out]
 
 <dd>
 <p>A pointer to a <a href="display.dxgkarg_getnodemetadata">DXGKARG_GETNODEMETADATA</a> structure that contains the engine type and friendly name of the engine specified by the <i>NodeOrdinal</i> parameter.</p>

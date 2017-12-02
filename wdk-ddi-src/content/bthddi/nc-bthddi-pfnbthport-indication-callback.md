@@ -61,7 +61,7 @@ void BluetoothPortIndicationCallback(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>For incoming remote connection request indications, this is the context specified by the profile
@@ -74,7 +74,7 @@ void BluetoothPortIndicationCallback(
      <a href="bltooth._brb_l2ca_open_channel">_BRB_L2CA_OPEN_CHANNEL</a> BRB.</p>
 </dd>
 
-### -param <i>Indication</i> [in]
+### -param Indication [in]
 
 <dd>
 <p>An 
@@ -82,7 +82,7 @@ void BluetoothPortIndicationCallback(
      of L2CAP event.</p>
 </dd>
 
-### -param <i>Parameters</i> [in]
+### -param Parameters [in]
 
 <dd>
 <p>An 

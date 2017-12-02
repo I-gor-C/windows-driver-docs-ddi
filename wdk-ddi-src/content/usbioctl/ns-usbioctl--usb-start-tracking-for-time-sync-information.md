@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The input and output buffer for the <a href="buses.ioctl_usb_start_tracking_for_time_sync">IOCTL_USB_START_TRACKING_FOR_TIME_SYNC</a> request.</p>
+<p>The input and output buffer for the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-start-tracking-for-time-sync.md">IOCTL_USB_START_TRACKING_FOR_TIME_SYNC</a> request.</p>
 
 
 ## -syntax
@@ -56,13 +56,13 @@ typedef struct _USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>TimeTrackingHandle</b>
+### -field TimeTrackingHandle
 
 <dd>
-<p>Registration handle for time sync tracking retrieved through the <a href="buses.ioctl_usb_start_tracking_for_time_sync">IOCTL_USB_START_TRACKING_FOR_TIME_SYNC</a> request. On input, this handle must be set to NULL. On output, the USB driver stack sets this member to the assigned handle. </p>
+<p>Registration handle for time sync tracking retrieved through the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-start-tracking-for-time-sync.md">IOCTL_USB_START_TRACKING_FOR_TIME_SYNC</a> request. On input, this handle must be set to NULL. On output, the USB driver stack sets this member to the assigned handle. </p>
 </dd>
 
-### -field <b>IsStartupDelayTolerable</b>
+### -field IsStartupDelayTolerable
 
 <dd>
 <p>On input, the caller must specify whether the initial startup latency of up to 2.048 seconds is tolerable. TRUE indicates that the caller can tolerate the initial startup latency FALSE, the registration is delayed until the USB driver stack is able to detect a valid frame or microframe boundary. 
@@ -91,7 +91,7 @@ typedef struct _USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ioctl_usb_start_tracking_for_time_sync">IOCTL_USB_START_TRACKING_FOR_TIME_SYNC</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-start-tracking-for-time-sync.md">IOCTL_USB_START_TRACKING_FOR_TIME_SYNC</a>
 </dt>
 </dl>
 <p> </p>

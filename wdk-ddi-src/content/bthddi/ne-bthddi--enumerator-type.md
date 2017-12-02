@@ -58,13 +58,13 @@ typedef enum _ENUMERATOR_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="ENUMERATOR_TYPE_PROTOCOL"></a><a id="enumerator_type_protocol"></a><b>ENUMERATOR_TYPE_PROTOCOL</b>
+### -field ENUMERATOR_TYPE_PROTOCOL
 
 <dd>
 <p>For internal use only. Do not use.</p>
 </dd>
 
-### -field <a id="ENUMERATOR_TYPE_SERVICE"></a><a id="enumerator_type_service"></a><b>ENUMERATOR_TYPE_SERVICE</b>
+### -field ENUMERATOR_TYPE_SERVICE
 
 <dd>
 <p>This value should be specified for profile drivers. For more information about how this value is
@@ -72,7 +72,7 @@ typedef enum _ENUMERATOR_TYPE {
      <a href="..\bthddi\ns-bthddi--bth-enumerator-info.md">BTH_ENUMERATOR_INFO</a>.</p>
 </dd>
 
-### -field <a id="ENUMERATOR_TYPE_MAX"></a><a id="enumerator_type_max"></a><b>ENUMERATOR_TYPE_MAX</b>
+### -field ENUMERATOR_TYPE_MAX
 
 <dd>
 <p>For internal use only. Do not use.</p>

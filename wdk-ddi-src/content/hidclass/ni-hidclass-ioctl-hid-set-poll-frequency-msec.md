@@ -43,7 +43,7 @@ req.iface:
 <p>User-mode applications or kernel-mode drivers that perform irregular, opportunistic reads on a polled device must furnish a polling interval of zero. In such cases, IOCTL_HID_SET_POLL_FREQUENCY_MSEC does not actually change the polling frequency of the device; but if the report data is not stale when it is read, the read is completed immediately with the latest report data for the indicated collection. If the report data is stale, it is refreshed immediately, without waiting for the expiration of the polling interval, and the read is completed with the new data. </p>
 <p>If the value for the polling interval that is provided in the IRP is not zero, it must be &gt;= MIN_POLL_INTERVAL_MSEC and &lt;= MAX_POLL_INTERVAL_MSEC.</p>
 <p>Polling may be limited if there are multiple top-level collections.</p>
-<p>For general information about HIDClass devices, see <a href="NULL">HID Collections</a>. </p>
+<p>For general information about HIDClass devices, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 
 ## -ioctlparameters

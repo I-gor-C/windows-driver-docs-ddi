@@ -55,13 +55,13 @@ VOID KsAcquireDeviceSecurityLock(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [in]
+### -param Header [in]
 
 <dd>
 <p>Points to a driver-allocated device header, previously allocated by <b>KsAllocateDeviceHeader,</b> for the device object described by the KSDEVICE_HEADER structure.</p>
 </dd>
 
-### -param <i>Exclusive</i> [in]
+### -param Exclusive [in]
 
 <dd>
 <p>Indicates, if set to <b>TRUE</b>, that the lock is to be acquired exclusively.</p>

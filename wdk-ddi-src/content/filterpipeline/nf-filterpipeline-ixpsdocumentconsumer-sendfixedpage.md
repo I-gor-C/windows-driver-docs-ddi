@@ -54,7 +54,7 @@ HRESULT SendFixedPage(
 ## -parameters
 <dl>
 
-### -param <i>pIFixedPage</i> [in]
+### -param pIFixedPage [in]
 
 <dd>
 <p>A pointer to an XPS fixed page object.</p>

@@ -59,37 +59,37 @@ typedef struct _KBUGCHECK_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>BugCheckDataSize</b>
+### -field BugCheckDataSize
 
 <dd>
 <p>The size, in bytes, of the <b>KBUGCHECK_DATA</b> structure. Callers of <a href="..\aux_klib\nf-aux-klib-auxklibgetbugcheckdata.md">AuxKlibGetBugCheckData</a> must supply this value. </p>
 </dd>
 
-### -field <b>BugCheckCode</b>
+### -field BugCheckCode
 
 <dd>
 <p>The bug check code. This value identifies that type of bug check that has occurred.</p>
 </dd>
 
-### -field <b>Parameter1</b>
+### -field Parameter1
 
 <dd>
 <p>Bug check parameter 1. For more information about this parameter, see specific <a href="https://msdn.microsoft.com/DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB">bug check codes</a>. </p>
 </dd>
 
-### -field <b>Parameter2</b>
+### -field Parameter2
 
 <dd>
 <p>Bug check parameter 2. For more information about this parameter, see specific <a href="https://msdn.microsoft.com/DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB">bug check codes</a>. </p>
 </dd>
 
-### -field <b>Parameter3</b>
+### -field Parameter3
 
 <dd>
 <p>Bug check parameter 3. For more information about this parameter, see specific <a href="https://msdn.microsoft.com/DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB">bug check codes</a>. </p>
 </dd>
 
-### -field <b>Parameter4</b>
+### -field Parameter4
 
 <dd>
 <p>Bug check parameter 4. For more information about this parameter, see specific <a href="https://msdn.microsoft.com/DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB">bug check codes</a>. </p>

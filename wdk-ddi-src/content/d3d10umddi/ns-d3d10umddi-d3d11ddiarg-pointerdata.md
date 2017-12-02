@@ -58,35 +58,35 @@ typedef struct D3D11DDIARG_POINTERDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>uCBOffset</b>
+### -field uCBOffset
 
 <dd>
 <p>A UINT value that specifies the offset, in bytes, into the constant buffer that the <b>uCBID</b> member specifies to reach the data for the interface. </p>
 <p>Setting this member is equivalent to setting the first 12 bits of a 32-bit value (0x00000FFF).</p>
 </dd>
 
-### -field <b>uCBID</b>
+### -field uCBID
 
 <dd>
 <p>A UINT value that identifies the constant buffer that data for the interface is in. </p>
 <p>Setting this member is equivalent to setting bits 13 through 16 of a 32-bit value (0x0000F000).</p>
 </dd>
 
-### -field <b>uBaseSamp</b>
+### -field uBaseSamp
 
 <dd>
 <p>A UINT value that specifies the index of the first sampler that is used by the class instance of the interface implementation.</p>
 <p>Setting this member is equivalent to setting bits 17 through 20 of a 32-bit value (0x000F0000).</p>
 </dd>
 
-### -field <b>uBaseTex</b>
+### -field uBaseTex
 
 <dd>
 <p>A UINT value that specifies the index of the first texture that is used by the class instance of the interface implementation.</p>
 <p>Setting this member is equivalent to setting bits 21 through 27 of a 32-bit value (0x07F00000).</p>
 </dd>
 
-### -field <b>uReserved</b>
+### -field uReserved
 
 <dd>
 <p>Reserved for future use. This member makes the size of D3D11DDIARG_POINTERDATA 32-bit aligned and should always be set to zero. Setting this member to zero is equivalent to setting the remaining 5 bits (0xF8000000) of a 32-bit value to zeros.</p>

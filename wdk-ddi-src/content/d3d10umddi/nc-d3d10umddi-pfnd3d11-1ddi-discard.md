@@ -61,31 +61,31 @@ VOID APIENTRY* Discard(D3D11_1)(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>HandleType</i> 
+### -param HandleType 
 
 <dd>
 <p>A value, of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi-handletype.md">D3D11DDI_HANDLETYPE</a>, that identifies the context handle type.</p>
 </dd>
 
-### -param <i>hResourceOrView</i> 
+### -param hResourceOrView 
 
 <dd>
 <p>A pointer to a handle to the resource or to the view that is to be discarded.</p>
 </dd>
 
-### -param <i>pRects</i> [in, optional]
+### -param pRects [in, optional]
 
 <dd>
 <p>An optional array of <a href="display.rect">RECT</a> structures for the rectangles in the resource view to discard. If <b>NULL</b>, the <i>Discard(D3D11_1)</i> function discards the entire surface.</p>
 </dd>
 
-### -param <i>NumRects</i> 
+### -param NumRects 
 
 <dd>
 <p>The number of rectangles in the array that the  <i>pRects</i> parameter specifies.</p>

@@ -7,7 +7,7 @@ old-location: netvista\riluiccapppersocheckstatusstate.htm
 old-project: netvista
 ms.assetid: d41d5559-b9ec-4ae5-b658-8f75e8af13e4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILUICCAPPPERSOCHECKSTATUSSTATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PERSOCHECKSTATE_PASS"></a><a id="ril_persocheckstate_pass"></a><b>RIL_PERSOCHECKSTATE_PASS</b>
+### -field RIL_PERSOCHECKSTATE_PASS
 
 <dd></dd>
 
-### -field <a id="RIL_PERSOCHECKSTATE_FAIL"></a><a id="ril_persocheckstate_fail"></a><b>RIL_PERSOCHECKSTATE_FAIL</b>
+### -field RIL_PERSOCHECKSTATE_FAIL
 
 <dd></dd>
 
-### -field <a id="RIL_PERSOCHECKSTATE_MAX"></a><a id="ril_persocheckstate_max"></a><b>RIL_PERSOCHECKSTATE_MAX</b>
+### -field RIL_PERSOCHECKSTATE_MAX
 
 <dd></dd>
 </dl>

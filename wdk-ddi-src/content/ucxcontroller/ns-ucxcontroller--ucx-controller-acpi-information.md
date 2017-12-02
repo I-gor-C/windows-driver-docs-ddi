@@ -57,19 +57,19 @@ typedef struct _UCX_CONTROLLER_ACPI_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>VendorId</b>
+### -field VendorId
 
 <dd>
 <p>The vendor ID of the ACPI USB controller.</p>
 </dd>
 
-### -field <b>DeviceId</b>
+### -field DeviceId
 
 <dd>
 <p>The device ID of the ACPI USB controller.</p>
 </dd>
 
-### -field <b>RevisionId</b>
+### -field RevisionId
 
 <dd>
 <p>The revision ID of the ACPI USB controller.</p>
@@ -96,10 +96,10 @@ typedef struct _UCX_CONTROLLER_ACPI_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._ucx_controller_config">UCX_CONTROLLER_CONFIG</a>
+<a href="..\ucxcontroller\ns-ucxcontroller--ucx-controller-config.md">UCX_CONTROLLER_CONFIG</a>
 </dt>
 <dt>
-<a href="buses._ucx_controller_config_set_acpi_info">UCX_CONTROLLER_CONFIG_SET_ACPI_INFO</a>
+<a href="..\ucxcontroller\nf-ucxcontroller-ucx-controller-config-set-acpi-info.md">UCX_CONTROLLER_CONFIG_SET_ACPI_INFO</a>
 </dt>
 </dl>
 <p> </p>

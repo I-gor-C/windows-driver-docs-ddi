@@ -55,7 +55,7 @@ typedef struct IDARG_IN_ADAPTER_INIT_FINISHED {
 ## -struct-fields
 <dl>
 
-### -field <b>AdapterInitStatus</b>
+### -field AdapterInitStatus
 
 <dd>
 <p>

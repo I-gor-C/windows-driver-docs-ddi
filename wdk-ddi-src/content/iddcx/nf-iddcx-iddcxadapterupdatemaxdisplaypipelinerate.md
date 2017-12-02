@@ -57,13 +57,13 @@ NTSTATUS IddCxAdapterUpdateMaxDisplayPipelineRate(
 ## -parameters
 <dl>
 
-### -param <i>hOsAdapterContext</i> [in]
+### -param hOsAdapterContext [in]
 
 <dd>
 <p>This is the OS context handle for this adapter returned by the <b>IddCxStart</b> call</p>
 </dd>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>Input arguments to the function</p>

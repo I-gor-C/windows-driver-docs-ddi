@@ -7,7 +7,7 @@ old-location: netvista\ril_setcallwaitingstatus.htm
 old-project: netvista
 ms.assetid: e511db5d-3544-45a4-9ed4-72bb3f2572ec
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SetCallWaitingStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,27 +62,27 @@ HRESULT  RIL_SetCallWaitingStatus(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>fAllClasses</i> 
+### -param fAllClasses 
 
 <dd></dd>
 
-### -param <i>dwInfoClasses</i> 
+### -param dwInfoClasses 
 
 <dd></dd>
 
-### -param <i>dwStatus</i> 
+### -param dwStatus 
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_shared_memory_parameters.htm
 old-project: netvista
 ms.assetid: 286b08f6-179e-426e-ae65-b108529d049a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_SHARED_MEMORY_PARAMETERS, NDIS_SHARED_MEMORY_PARAMETERS, *PNDIS_SHARED_MEMORY_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ typedef struct _NDIS_SHARED_MEMORY_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the NDIS_SHARED_MEMORY_PARAMETERS structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -75,14 +75,14 @@ typedef struct _NDIS_SHARED_MEMORY_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_SHARED_MEMORY_PARAMETERS_REVISION_2"></a><a id="ndis_shared_memory_parameters_revision_2"></a>NDIS_SHARED_MEMORY_PARAMETERS_REVISION_2
+### -field NDIS_SHARED_MEMORY_PARAMETERS_REVISION_2
 
 <dd>
 <p>Added <b>VPortId</b> for NDIS 6.30.</p>
 <p>Set the <b>Size</b> member to NDIS_SIZEOF_SHARED_MEMORY_PARAMETERS_REVISION_2.</p>
 </dd>
 
-### -field <a id="NDIS_SHARED_MEMORY_PARAMETERS_REVISION_1"></a><a id="ndis_shared_memory_parameters_revision_1"></a>NDIS_SHARED_MEMORY_PARAMETERS_REVISION_1
+### -field NDIS_SHARED_MEMORY_PARAMETERS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.20.</p>
@@ -91,7 +91,7 @@ typedef struct _NDIS_SHARED_MEMORY_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A UCHAR value that contains a bitwise OR of the following value:
@@ -99,7 +99,7 @@ typedef struct _NDIS_SHARED_MEMORY_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_SHARED_MEM_PARAMETERS_CONTIGOUS"></a><a id="ndis_shared_mem_parameters_contigous"></a>NDIS_SHARED_MEM_PARAMETERS_CONTIGOUS
+### -field NDIS_SHARED_MEM_PARAMETERS_CONTIGOUS
 
 <dd>
 <p>The shared memory is in a contiguous block of memory.</p>
@@ -107,7 +107,7 @@ typedef struct _NDIS_SHARED_MEMORY_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>QueueId</b>
+### -field QueueId
 
 <dd>
 <p>An NDIS_RECEIVE_QUEUE_ID value that contains a virtual machine queue (VMQ) or single root I/O virtualization (SR-IOV) receive queue identifier. This identifier is an
@@ -117,7 +117,7 @@ typedef struct _NDIS_SHARED_MEMORY_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>SharedMemoryHandle</b>
+### -field SharedMemoryHandle
 
 <dd>
 <p>An NDIS_HANDLE value that identifies a block of shared memory. NDIS provides this handle before it
@@ -126,13 +126,13 @@ typedef struct _NDIS_SHARED_MEMORY_PARAMETERS {
      NdisAllocateSharedMemory</a> function.</p>
 </dd>
 
-### -field <b>PreferredNode</b>
+### -field PreferredNode
 
 <dd>
 <p>A NODE_REQUIREMENT value that indicates the preferred node to use while allocating memory. If the driver does not have a preference, then the value must be set to MM_ANY_NODE_OK.</p>
 </dd>
 
-### -field <b>Usage</b>
+### -field Usage
 
 <dd>
 <p>An 
@@ -140,13 +140,13 @@ typedef struct _NDIS_SHARED_MEMORY_PARAMETERS {
      value that specifies the purpose of the shared memory.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>A ULONG value that contains the length, in bytes, of the shared memory block.</p>
 </dd>
 
-### -field <b>VirtualAddress</b>
+### -field VirtualAddress
 
 <dd>
 <p>A PVOID value that contains the base virtual address of the shared memory. NDIS provides this
@@ -154,20 +154,20 @@ typedef struct _NDIS_SHARED_MEMORY_PARAMETERS {
      <b>NdisAllocateSharedMemory</b> function.</p>
 </dd>
 
-### -field <b>SGListBufferLength</b>
+### -field SGListBufferLength
 
 <dd>
 <p>A ULONG value that contains the length, in bytes, of the scatter gather list buffer.</p>
 </dd>
 
-### -field <b>SGListBuffer</b>
+### -field SGListBuffer
 
 <dd>
 <p>A pointer to a 
      <a href="..\wdm\ns-wdm--scatter-gather-list.md">SCATTER_GATHER_LIST</a> structure.</p>
 </dd>
 
-### -field <b>VPortId</b>
+### -field VPortId
 
 <dd>
 <p>An NDIS_NIC_SWITCH_VPORT_ID value that specifies a virtual port (VPort) identifier on which the shared memory is to be allocated. This value must be the identifier of a nondefault VPort that is attached to the physical function (PF) of the miniport adapter. 
@@ -230,4 +230,4 @@ typedef struct _NDIS_SHARED_MEMORY_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SHARED_MEMORY_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SHARED_MEMORY_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

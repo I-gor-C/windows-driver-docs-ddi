@@ -7,7 +7,7 @@ old-location: netvista\wdi_can_sustain_ap_reason.htm
 old-project: netvista
 ms.assetid: 9AAE4B3F-7C5C-457D-9388-63E6E6AB8A2E
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ typedef enum _WDI_CAN_SUSTAIN_AP_REASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_CAN_SUSTAIN_AP_REASON_IHV_START"></a><a id="wdi_can_sustain_ap_reason_ihv_start"></a><b>WDI_CAN_SUSTAIN_AP_REASON_IHV_START</b>
+### -field WDI_CAN_SUSTAIN_AP_REASON_IHV_START
 
 <dd>
 <p>The start value of possible IHV-specified reasons.</p>
 </dd>
 
-### -field <a id="WDI_CAN_SUSTAIN_AP_REASON_IHV_END"></a><a id="wdi_can_sustain_ap_reason_ihv_end"></a><b>WDI_CAN_SUSTAIN_AP_REASON_IHV_END</b>
+### -field WDI_CAN_SUSTAIN_AP_REASON_IHV_END
 
 <dd>
 <p>The end value of possible IHV-specified reasons.</p>

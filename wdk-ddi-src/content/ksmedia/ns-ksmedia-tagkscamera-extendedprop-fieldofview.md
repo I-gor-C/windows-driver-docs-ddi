@@ -57,25 +57,25 @@ typedef struct _KSCAMERA_EXTENDEDPROP_FIELDOFVIEW {
 ## -struct-fields
 <dl>
 
-### -field <b>NormalizedFocalLengthX</b>
+### -field NormalizedFocalLengthX
 
 <dd>
 <p>The horizontal focal length, in millimeters, normalized to a 35mm camera aperture size.</p>
 </dd>
 
-### -field <b>NormalizedFocalLengthY</b>
+### -field NormalizedFocalLengthY
 
 <dd>
 <p>The vertical focal length, in millimeters, normalized to a 35mm camera aperture size.</p>
 </dd>
 
-### -field <b>Flag</b>
+### -field Flag
 
 <dd>
 <p>Reserved. Set to 0.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Set to 0.</p>

@@ -7,7 +7,7 @@ old-location: ifsk\instance_aggregate_standard_information.htm
 old-project: ifsk
 ms.assetid: 35311ee7-d023-4b04-b510-a949ab9a40ca
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: INSTANCE_AGGREGATE_STANDARD_INFORMATION, INSTANCE_AGGREGATE_STANDARD_INFORMATION, *PINSTANCE_AGGREGATE_STANDARD_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,13 +85,13 @@ typedef struct _INSTANCE_AGGREGATE_STANDARD_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NextEntryOffset</b>
+### -field NextEntryOffset
 
 <dd>
 <p>Byte offset of the next INSTANCE_AGGREGATE_STANDARD_INFORMATION structure if multiple structures are present in a buffer. This member is zero if no other structures follow this one.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Indicates whether the filter driver is a legacy filter driver or a minifilter driver.  This member must contain one of the following flags.</p>
@@ -120,18 +120,18 @@ typedef struct _INSTANCE_AGGREGATE_STANDARD_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <dl>
 
-### -field <b>MiniFilter</b>
+### -field MiniFilter
 
 <dd>
 <p>Nested structure variable with the following members.</p>
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitmask of flags that describe attributes of the minifilter instance. The following are valid flag values.</p>
@@ -148,68 +148,68 @@ typedef struct _INSTANCE_AGGREGATE_STANDARD_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>FrameID</b>
+### -field FrameID
 
 <dd>
 <p>Zero-based index used to identify the filter manager frame that the minifilter instance is in. </p>
 </dd>
 
-### -field <b>VolumeFileSystemType</b>
+### -field VolumeFileSystemType
 
 <dd>
 <p>Identifies the type of file system the minifilter instance is attached to.  The possible values for this member are listed in <a href="..\fltuserstructures\ne-fltuserstructures--flt-filesystem-type.md">FLT_FILESYSTEM_TYPE</a>.</p>
 </dd>
 
-### -field <b>InstanceNameLength</b>
+### -field InstanceNameLength
 
 <dd>
 <p>Length, in bytes, of the minifilter instance name. </p>
 </dd>
 
-### -field <b>InstanceNameBufferOffset</b>
+### -field InstanceNameBufferOffset
 
 <dd>
 <p>Byte offset (relative to the beginning of the structure) of the first character of the Unicode minifilter instance name string. This string is not NULL-terminated. </p>
 </dd>
 
-### -field <b>AltitudeLength</b>
+### -field AltitudeLength
 
 <dd>
 <p>Length, in bytes, of the minifilter instance altitude string. </p>
 </dd>
 
-### -field <b>AltitudeBufferOffset</b>
+### -field AltitudeBufferOffset
 
 <dd>
 <p>Byte offset (relative to the beginning of the structure) of the first character of the Unicode minifilter instance altitude string. This string is not NULL-terminated. </p>
 </dd>
 
-### -field <b>VolumeNameLength</b>
+### -field VolumeNameLength
 
 <dd>
 <p>Length, in bytes, of the volume name of the volume that the minifilter instance is attached to. 
 </p>
 </dd>
 
-### -field <b>VolumeNameBufferOffset</b>
+### -field VolumeNameBufferOffset
 
 <dd>
 <p>Byte offset (relative to the beginning of the structure) of the first character of the Unicode volume name string for the volume that the minifilter instance is attached to. This string is not NULL-terminated.</p>
 </dd>
 
-### -field <b>FilterNameLength</b>
+### -field FilterNameLength
 
 <dd>
 <p>Length, in bytes, of the minifilter name of the minifilter from which the minifilter instance was derived.</p>
 </dd>
 
-### -field <b>FilterNameBufferOffset</b>
+### -field FilterNameBufferOffset
 
 <dd>
 <p>Byte offset (relative to the beginning of the structure) of the first character of the Unicode minifilter name string for the minifilter from which the minifilter instance was derived. This string is not NULL-terminated.</p>
 </dd>
 
-### -field <b>SupportedFeatures</b>
+### -field SupportedFeatures
 
 <dd>
 <p>The supported feature flags for the filter.</p>
@@ -224,7 +224,7 @@ typedef struct _INSTANCE_AGGREGATE_STANDARD_INFORMATION {
 <tr>
 <td width="40%"><a id="SUPPORTED_FS_FEATURES_OFFLOAD_READ"></a><a id="supported_fs_features_offload_read"></a><dl>
 
-### -field <b>SUPPORTED_FS_FEATURES_OFFLOAD_READ</b>
+### -field SUPPORTED_FS_FEATURES_OFFLOAD_READ
 
 
 ### -field 0x00000001
@@ -238,7 +238,7 @@ typedef struct _INSTANCE_AGGREGATE_STANDARD_INFORMATION {
 <tr>
 <td width="40%"><a id="SUPPORTED_FS_FEATURES_OFFLOAD_WRITE"></a><a id="supported_fs_features_offload_write"></a><dl>
 
-### -field <b>SUPPORTED_FS_FEATURES_OFFLOAD_WRITE</b>
+### -field SUPPORTED_FS_FEATURES_OFFLOAD_WRITE
 
 
 ### -field 0x00000002
@@ -255,7 +255,7 @@ typedef struct _INSTANCE_AGGREGATE_STANDARD_INFORMATION {
 </dl>
 </dd>
 
-### -field <b>LegacyFilter</b>
+### -field LegacyFilter
 
 <dd>
 <p>
@@ -264,7 +264,7 @@ typedef struct _INSTANCE_AGGREGATE_STANDARD_INFORMATION {
       </p>
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitmask of flags that describe attributes of the legacy filter. The following are valid flag values.</p>
@@ -281,13 +281,13 @@ typedef struct _INSTANCE_AGGREGATE_STANDARD_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>AltitudeLength</b>
+### -field AltitudeLength
 
 <dd>
 <p>Length, in bytes, of the legacy filter altitude string.</p>
 </dd>
 
-### -field <b>AltitudeBufferOffset</b>
+### -field AltitudeBufferOffset
 
 <dd>
 <p>Byte offset (relative to the beginning of the structure) of the first character of the Unicode legacy filter altitude string. This string is not NULL-terminated.
@@ -295,32 +295,32 @@ typedef struct _INSTANCE_AGGREGATE_STANDARD_INFORMATION {
 <p>Starting with Windows Vista, altitudes are assigned to legacy filter drivers based on the driver's load order group. This ensures that minifilter drivers will layer properly above and below legacy filter drivers even if one or more of the filter drivers are loaded out-of-order.</p>
 </dd>
 
-### -field <b>VolumeNameLength</b>
+### -field VolumeNameLength
 
 <dd>
 <p> 
 Length, in bytes, of the volume name of the volume that the legacy filter is attached to.</p>
 </dd>
 
-### -field <b>VolumeNameBufferOffset</b>
+### -field VolumeNameBufferOffset
 
 <dd>
 <p>Byte offset (relative to the beginning of the structure) of the first character of the Unicode volume name string for the volume that the legacy filter is attached to. This string is not NULL-terminated.</p>
 </dd>
 
-### -field <b>FilterNameLength</b>
+### -field FilterNameLength
 
 <dd>
 <p>Length, in bytes, of the legacy filter name.</p>
 </dd>
 
-### -field <b>FilterNameBufferOffset</b>
+### -field FilterNameBufferOffset
 
 <dd>
 <p>Byte offset (relative to the beginning of the structure) of the first character of the Unicode legacy filter name string. This string is not NULL-terminated.</p>
 </dd>
 
-### -field <b>SupportedFeatures</b>
+### -field SupportedFeatures
 
 <dd>
 <p>The supported feature flags for the filter.</p>
@@ -335,7 +335,7 @@ Length, in bytes, of the volume name of the volume that the legacy filter is att
 <tr>
 <td width="40%"><a id="SUPPORTED_FS_FEATURES_OFFLOAD_READ"></a><a id="supported_fs_features_offload_read"></a><dl>
 
-### -field <b>SUPPORTED_FS_FEATURES_OFFLOAD_READ</b>
+### -field SUPPORTED_FS_FEATURES_OFFLOAD_READ
 
 
 ### -field 0x00000001
@@ -349,7 +349,7 @@ Length, in bytes, of the volume name of the volume that the legacy filter is att
 <tr>
 <td width="40%"><a id="SUPPORTED_FS_FEATURES_OFFLOAD_WRITE"></a><a id="supported_fs_features_offload_write"></a><dl>
 
-### -field <b>SUPPORTED_FS_FEATURES_OFFLOAD_WRITE</b>
+### -field SUPPORTED_FS_FEATURES_OFFLOAD_WRITE
 
 
 ### -field 0x00000002
@@ -466,4 +466,4 @@ Length, in bytes, of the volume name of the volume that the legacy filter is att
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20INSTANCE_AGGREGATE_STANDARD_INFORMATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20INSTANCE_AGGREGATE_STANDARD_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

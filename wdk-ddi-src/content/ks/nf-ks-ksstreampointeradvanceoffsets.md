@@ -57,27 +57,27 @@ NTSTATUS KsStreamPointerAdvanceOffsets(
 ## -parameters
 <dl>
 
-### -param <i>StreamPointer</i> [in]
+### -param StreamPointer [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure representing the stream pointer for which to advance the offsets. <i>StreamPointer</i> should be in the locked state when this function is called.</p>
 </dd>
 
-### -param <i>InUsed</i> [in]
+### -param InUsed [in]
 
 <dd>
 <p>The number of bytes to advance the input pointer of this stream pointer. </p>
 <p>(StreamPointer -&gt; OffsetIn)</p>
 </dd>
 
-### -param <i>OutUsed</i> [in]
+### -param OutUsed [in]
 
 <dd>
 <p>The number of bytes to advance the output pointer of this stream pointer </p>
 <p>(StreamPointer -&gt; OffsetOut)</p>
 </dd>
 
-### -param <i>Eject</i> [in]
+### -param Eject [in]
 
 <dd>
 <p>This parameter indicates whether the stream pointer should be advanced to the next data frame If this parameter is set to <b>TRUE</b>, AVStream advances the stream pointer regardless of whether advancing the offsets causes the stream pointer to point to the end of a frame.</p>
@@ -92,7 +92,7 @@ NTSTATUS KsStreamPointerAdvanceOffsets(
 
 <p>It is the responsibility of the minidriver to verify that <i>StreamPointer</i> is locked before calling <b>KsStreamPointerAdvanceOffsets</b>. Also, a single advancement cannot advance a stream pointer further than the beginning of the next frame in the queue. Thus, minidrivers should not attempt to advance offsets by a value greater than <i>StreamPointer -&gt; Offset*.Remaining</i>. </p>
 
-<p>Also see <a href="NULL">Stream Pointers</a>. </p>
+<p>Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736f">Stream Pointers</a>. </p>
 
 ## -requirements
 <table>

@@ -57,13 +57,13 @@ FORCEINLINE void UdecxUrbCompleteWithNtStatus(
 ## -parameters
 <dl>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object that contains the <a href="..\usb\ns-usb--urb.md">URB</a> for the transfer.</p>
 </dd>
 
-### -param <i>NtStatus</i> [in]
+### -param NtStatus [in]
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a>-typed value that indicates the success or failure of the completed URB request. </p>

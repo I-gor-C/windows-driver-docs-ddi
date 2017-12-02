@@ -58,25 +58,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="IdeStart"></a><a id="idestart"></a><a id="IDESTART"></a><b>IdeStart</b>
+### -field IdeStart
 
 <dd>
 <p>Indicates that the miniport driver should start the channel.</p>
 </dd>
 
-### -field <a id="IdeStop"></a><a id="idestop"></a><a id="IDESTOP"></a><b>IdeStop</b>
+### -field IdeStop
 
 <dd>
 <p>Indicates that the miniport driver should stop the channel.</p>
 </dd>
 
-### -field <a id="IdePowerUp"></a><a id="idepowerup"></a><a id="IDEPOWERUP"></a><b>IdePowerUp</b>
+### -field IdePowerUp
 
 <dd>
 <p>Indicates that the miniport driver should power up the channel.</p>
 </dd>
 
-### -field <a id="IdePowerDown"></a><a id="idepowerdown"></a><a id="IDEPOWERDOWN"></a><b>IdePowerDown</b>
+### -field IdePowerDown
 
 <dd>
 <p>
@@ -84,7 +84,7 @@ typedef enum  {
      </p>
 </dd>
 
-### -field <a id="IdeVendorDefined"></a><a id="idevendordefined"></a><a id="IDEVENDORDEFINED"></a><b>IdeVendorDefined</b>
+### -field IdeVendorDefined
 
 <dd>
 <p>Indicates that the miniport driver should perform a vendor-defined control action.</p>

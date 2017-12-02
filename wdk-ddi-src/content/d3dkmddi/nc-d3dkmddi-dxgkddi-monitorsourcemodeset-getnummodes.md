@@ -58,13 +58,13 @@ NTSTATUS APIENTRY pfnGetNumModes(
 ## -parameters
 <dl>
 
-### -param <i>hMonitorSourceModeSet</i> [in]
+### -param hMonitorSourceModeSet [in]
 
 <dd>
 <p>A handle to a monitor source mode set object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-acquiremonitorsourcemodeset.md">pfnAcquireMonitorSourceModeSet</a> function of the <a href="display.monitor_interface">Monitor interface</a>.</p>
 </dd>
 
-### -param <i>pNumMonitorSourceModes</i> [out]
+### -param pNumMonitorSourceModes [out]
 
 <dd>
 <p>A pointer to a SIZE_T-typed variable that receives the number of monitor source modes in the set.</p>

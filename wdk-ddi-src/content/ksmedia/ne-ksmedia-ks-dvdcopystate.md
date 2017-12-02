@@ -58,31 +58,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_DVDCOPYSTATE_INITIALIZE"></a><a id="ks_dvdcopystate_initialize"></a><b>KS_DVDCOPYSTATE_INITIALIZE</b>
+### -field KS_DVDCOPYSTATE_INITIALIZE
 
 <dd>
 <p>Indicates that the full copyright protection sequence is starting.</p>
 </dd>
 
-### -field <a id="KS_DVDCOPYSTATE_INITIALIZE_TITLE"></a><a id="ks_dvdcopystate_initialize_title"></a><b>KS_DVDCOPYSTATE_INITIALIZE_TITLE</b>
+### -field KS_DVDCOPYSTATE_INITIALIZE_TITLE
 
 <dd>
 <p>Indicates that a title key copyright protection sequence is starting.</p>
 </dd>
 
-### -field <a id="KS_DVDCOPYSTATE_AUTHENTICATION_NOT_REQUIRED"></a><a id="ks_dvdcopystate_authentication_not_required"></a><b>KS_DVDCOPYSTATE_AUTHENTICATION_NOT_REQUIRED</b>
+### -field KS_DVDCOPYSTATE_AUTHENTICATION_NOT_REQUIRED
 
 <dd>
 <p>Indicates that no authentication is required.</p>
 </dd>
 
-### -field <a id="KS_DVDCOPYSTATE_AUTHENTICATION_REQUIRED"></a><a id="ks_dvdcopystate_authentication_required"></a><b>KS_DVDCOPYSTATE_AUTHENTICATION_REQUIRED</b>
+### -field KS_DVDCOPYSTATE_AUTHENTICATION_REQUIRED
 
 <dd>
 <p>Indicates that authentication is required.</p>
 </dd>
 
-### -field <a id="KS_DVDCOPYSTATE_DONE"></a><a id="ks_dvdcopystate_done"></a><b>KS_DVDCOPYSTATE_DONE</b>
+### -field KS_DVDCOPYSTATE_DONE
 
 <dd>
 <p>Indicates that the copyright protection sequence is complete.</p>

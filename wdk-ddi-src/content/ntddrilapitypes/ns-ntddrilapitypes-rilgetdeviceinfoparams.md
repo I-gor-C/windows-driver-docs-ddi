@@ -7,7 +7,7 @@ old-location: netvista\rilgetdeviceinfoparams.htm
 old-project: netvista
 ms.assetid: 4cb3be01-7e74-4c98-9c4b-2e1c78d96001
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILGETDEVICEINFOPARAMS, RILGETDEVICEINFOPARAMS, *LPRILGETDEVICEINFOPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILGETDEVICEINFOPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwId</b>
+### -field dwId
 
 <dd></dd>
 </dl>

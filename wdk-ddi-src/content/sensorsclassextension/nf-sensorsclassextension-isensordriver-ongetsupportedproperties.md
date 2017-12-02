@@ -7,7 +7,7 @@ old-location: sensors\isensordriver_ongetsupportedproperties.htm
 old-project: sensors
 ms.assetid: 8712fe85-0af1-4552-9351-aca4fe5430d1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorDriver, OnGetSupportedProperties, ISensorDriver::OnGetSupportedProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ HRESULT OnGetSupportedProperties(
 ## -parameters
 <dl>
 
-### -param <i>pwszSensorID</i> 
+### -param pwszSensorID 
 
 <dd>
 <p>LPWSTR that contains the ID for the sensor from which the client application is requesting the properties list.</p>
 </dd>
 
-### -param <i>ppSupportedProperties</i> 
+### -param ppSupportedProperties 
 
 <dd>
 <p> Address of an IPortableDeviceKeyCollection pointer that receives the list of PROPERTYKEY values that represent the supported properties.</p>

@@ -7,7 +7,7 @@ old-location: debugger\idebugcontrol5_getstacktraceex.htm
 old-project: debugger
 ms.assetid: 6DFCA3CB-D5DE-4EF5-892B-776B932E6CE6
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl5, GetStackTraceEx, IDebugControl5::GetStackTraceEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ HRESULT GetStackTraceEx(
 ## -parameters
 <dl>
 
-### -param <i>FrameOffset</i> [in]
+### -param FrameOffset [in]
 
 <dd>
 <p>Specifies the location of the stack frame at the top of the stack.  If <i>FrameOffset</i> is set to zero, the current frame pointer is used instead.</p>
 </dd>
 
-### -param <i>StackOffset</i> [in]
+### -param StackOffset [in]
 
 <dd>
 <p>Specifies the location of the current stack.  If <i>StackOffset</i> is set to zero, the current stack pointer is used instead.</p>
 </dd>
 
-### -param <i>InstructionOffset</i> [in]
+### -param InstructionOffset [in]
 
 <dd>
 <p>Specifies the location of the instruction of interest for the function that is represented by the stack frame at the top of the stack.  If <i>InstructionOffset</i> is set to zero, the current instruction is used instead.</p>
 </dd>
 
-### -param <i>Frames</i> [out]
+### -param Frames [out]
 
 <dd>
 <p>Receives the stack frames.  The number of elements this array holds is <i>FrameSize</i>.</p>
 </dd>
 
-### -param <i>FrameSize</i> [in]
+### -param FrameSize [in]
 
 <dd>
 <p>Specifies the number of items in the <i>Frames</i> array.</p>
 </dd>
 
-### -param <i>FramesFilled</i> [out, optional]
+### -param FramesFilled [out, optional]
 
 <dd>
 <p>Receives the number of frames that were placed in the array <i>Frames</i>.  If <i>FramesFilled</i> is <b>NULL</b>, this information is not returned.</p>
@@ -97,7 +97,7 @@ HRESULT GetStackTraceEx(
 </dl>
 
 ## -returns
-<p>This method may also return other error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>E_FAIL</b></dt>
@@ -165,4 +165,4 @@ HRESULT GetStackTraceEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl5::GetStackTraceEx method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl5::GetStackTraceEx method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

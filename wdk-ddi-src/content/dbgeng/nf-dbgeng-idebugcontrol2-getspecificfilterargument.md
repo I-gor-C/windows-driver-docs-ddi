@@ -7,7 +7,7 @@ old-location: debugger\getspecificfilterargument.htm
 old-project: debugger
 ms.assetid: a6e32ca9-ebae-482c-808c-6302ccd48db0
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl2, GetSpecificFilterArgument, IDebugControl2::GetSpecificFilterArgument
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ HRESULT GetSpecificFilterArgument(
 ## -parameters
 <dl>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>Specifies the index of the specific filter whose argument will be returned.  <i>Index</i> must be the index of a specific filter that has an argument.</p>
 </dd>
 
-### -param <i>Buffer</i> [out, optional]
+### -param Buffer [out, optional]
 
 <dd>
 <p>Receives the argument for the specific filter.  The interpretation of the argument depends on the specific filter.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size, in characters, of the buffer that <i>Buffer</i> specifies.</p>
 </dd>
 
-### -param <i>ArgumentSize</i> [out, optional]
+### -param ArgumentSize [out, optional]
 
 <dd>
 <p>Receives the size, in characters, of the argument for the specific filter.</p>
@@ -83,7 +83,7 @@ HRESULT GetSpecificFilterArgument(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>E_INVALIDARG</b></dt>
@@ -141,4 +141,4 @@ HRESULT GetSpecificFilterArgument(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::GetSpecificFilterArgument method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::GetSpecificFilterArgument method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

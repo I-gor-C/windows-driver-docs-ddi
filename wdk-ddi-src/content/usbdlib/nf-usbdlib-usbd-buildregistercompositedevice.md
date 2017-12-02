@@ -59,25 +59,25 @@ void  USBD_BuildRegisterCompositeDevice(
 ## -parameters
 <dl>
 
-### -param <i>USBDHandle</i> [in]
+### -param USBDHandle [in]
 
 <dd>
 <p>A USBD handle that is retrieved in a previous call to the <a href="..\usbdlib\nf-usbdlib-usbd-createhandle.md">USBD_CreateHandle</a> routine.</p>
 </dd>
 
-### -param <i>CapabilityFlags</i> [in]
+### -param CapabilityFlags [in]
 
 <dd>
 <p>A caller-allocated <a href="..\usbdlib\ns-usbdlib--composite-device-capabilities.md">COMPOSITE_DEVICE_CAPABILITIES</a> structure that indicates the capabilities that are supported by the composite driver. For instance, to   indicate that the composite driver supports function suspend, set the <b>CapabilityFunctionSuspend</b> member of <b>COMPOSITE_DEVICE_CAPABILITIES</b> to 1.</p>
 </dd>
 
-### -param <i>FunctionCount</i> [in]
+### -param FunctionCount [in]
 
 <dd>
 <p>The number of physical device objects (PDOs) to be created by the parent driver. The <i>FunctionCount</i> value cannot exceed 255.</p>
 </dd>
 
-### -param <i>RegisterCompositeDevice</i> [out]
+### -param RegisterCompositeDevice [out]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\usbdlib\ns-usbdlib--register-composite-device.md">REGISTER_COMPOSITE_DEVICE</a> structure. Upon completion, the structure is populated with the specified registration  information. To register the composite driver, send the <a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-register-composite-device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a> I/O request and pass the populated structure. </p>

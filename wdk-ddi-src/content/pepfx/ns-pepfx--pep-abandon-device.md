@@ -55,13 +55,13 @@ typedef struct _PEP_ABANDON_DEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceId</b>
+### -field DeviceId
 
 <dd>
 <p>[in] A string that uniquely identifies the device. This member is a pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains a <a href="devinst.device_identification_strings">device identification string</a>.</p>
 </dd>
 
-### -field <b>DeviceAccepted</b>
+### -field DeviceAccepted
 
 <dd>
 <p>[out] Whether the PEP claims ownership of the device. The PEP sets this member to TRUE to claim ownership of the device, or to FALSE to indicate that it does not own the device.</p>

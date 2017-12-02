@@ -63,43 +63,43 @@ NTSTATUS DxgkCbMapMemory(
 ## -parameters
 <dl>
 
-### -param <i>DeviceHandle</i> [in]
+### -param DeviceHandle [in]
 
 <dd>
 <p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
 </dd>
 
-### -param <i>TranslatedAddress</i> [in]
+### -param TranslatedAddress [in]
 
 <dd>
 <p>The base translated physical address of the memory range to be mapped. The display miniport driver previously obtained this address by calling <a href="..\dispmprt\nc-dispmprt-dxgkcb-get-device-information.md">DxgkCbGetDeviceInformation</a>.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The size, in bytes, of the range to be mapped.</p>
 </dd>
 
-### -param <i>InIoSpace</i> [in]
+### -param InIoSpace [in]
 
 <dd>
 <p>A Boolean value that specifies whether the range is in I/O space (<b>TRUE</b>) or memory space (<b>FALSE</b>).</p>
 </dd>
 
-### -param <i>MapToUserMode</i> [in]
+### -param MapToUserMode [in]
 
 <dd>
 <p>A Boolean value that specifies whether the range is mapped into user-mode space or system space. If <b>TRUE</b>, the range is mapped into the (user-mode) virtual address space of the current process. If <b>FALSE</b>, the range is mapped into system space. If <i>InIoSpace</i> is <b>TRUE</b>, this parameter is ignored.</p>
 </dd>
 
-### -param <i>CacheType</i> [in]
+### -param CacheType [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--memory-caching-type.md">MEMORY_CACHING_TYPE</a> enumerator that specifies the caching behavior of the mapped range.</p>
 </dd>
 
-### -param <i>VirtualAddress</i> [out]
+### -param VirtualAddress [out]
 
 <dd>
 <p>A pointer to a variable that receives the address of the beginning of the mapped range. The way that the mapped range is accessed depends on the values of <i>InIoSpace</i> and <i>MapToUserMode</i>. The following table summarizes the different ways that the mapped range is accessed.</p>

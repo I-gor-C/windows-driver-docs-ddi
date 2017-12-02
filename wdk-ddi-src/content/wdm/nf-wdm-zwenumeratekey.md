@@ -60,19 +60,19 @@ NTSTATUS ZwEnumerateKey(
 ## -parameters
 <dl>
 
-### -param <i>KeyHandle</i> [in]
+### -param KeyHandle [in]
 
 <dd>
 <p>Handle to the registry key that contains the subkeys to be enumerated. The handle is created by a successful call to <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> or <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>. </p>
 </dd>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>The index of the subkey that you want information for. If the key has <i>n</i> subkeys, the subkeys are numbered from 0 to <i>n</i>-1. </p>
 </dd>
 
-### -param <i>KeyInformationClass</i> [in]
+### -param KeyInformationClass [in]
 
 <dd>
 <p>Specifies a <a href="..\wdm\ne-wdm--key-information-class.md">KEY_INFORMATION_CLASS</a> enumeration value that determines the type of information to be received by the <i>KeyInformation</i> buffer. Set <i>KeyInformationClass</i> to one of the following values:</p>
@@ -84,19 +84,19 @@ NTSTATUS ZwEnumerateKey(
 <p>If any value not in this list is specified, the routine returns error code STATUS_INVALID_PARAMETER.</p>
 </dd>
 
-### -param <i>KeyInformation</i> [out, optional]
+### -param KeyInformation [out, optional]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that receives the requested information. The <i>KeyInformationClass</i> parameter determines the type of information provided. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the <i>KeyInformation</i> buffer. </p>
 </dd>
 
-### -param <i>ResultLength</i> [out]
+### -param ResultLength [out]
 
 <dd>
 <p>Pointer to a variable that receives the size, in bytes, of the registry-key information. If <b>ZwEnumerateKey</b> returns STATUS_SUCCESS, you can use the value of this variable to determine the amount of data returned. If the routine returns STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL, you can use the value of this variable to determine the size of buffer required to hold the key information. </p>

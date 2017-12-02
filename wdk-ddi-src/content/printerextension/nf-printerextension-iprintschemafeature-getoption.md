@@ -57,19 +57,19 @@ HRESULT GetOption(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd>
 <p>The name of the option.</p>
 </dd>
 
-### -param <i>bstrNamespaceUri</i> [in]
+### -param bstrNamespaceUri [in]
 
 <dd>
 <p>The namespace URI of the option.</p>
 </dd>
 
-### -param <i>ppOption</i> [out, retval]
+### -param ppOption [out, retval]
 
 <dd>
 <p>The returned option.</p>

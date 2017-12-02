@@ -56,13 +56,13 @@ VOID ASSERTMSG(
 ## -parameters
 <dl>
 
-### -param <i>Message</i> 
+### -param Message 
 
 <dd>
 <p>Specifies the null-delimited string to be displayed by the debugger.</p>
 </dd>
 
-### -param <i>Expression</i> 
+### -param Expression 
 
 <dd>
 <p>Specifies any logical expression.</p>

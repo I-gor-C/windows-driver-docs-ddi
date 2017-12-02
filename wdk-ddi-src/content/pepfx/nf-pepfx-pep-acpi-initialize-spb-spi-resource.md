@@ -68,7 +68,7 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE(
 ## -parameters
 <dl>
 
-### -param <i>DeviceSelection</i> [in]
+### -param DeviceSelection [in]
 
 <dd>
 <p>The device selection value. This value is
@@ -76,7 +76,7 @@ specific to the device and may refer to a chip-select line, GPIO
 line, or other line selection mechanism.</p>
 </dd>
 
-### -param <i>DeviceSelectionPolarity</i> [in]
+### -param DeviceSelectionPolarity [in]
 
 <dd>
 <p>The polarity of the clock. If zero, this indicates the
@@ -84,31 +84,31 @@ clock is low during the first phase. If 1, this indicates the
 clock is high during the first phase.</p>
 </dd>
 
-### -param <i>WireMode</i> [in]
+### -param WireMode [in]
 
 <dd>
 <p>When zero, indicates that this device produces and consumes this resource. Otherwise, this device only consumes this resource.</p>
 </dd>
 
-### -param <i>DataBitLength</i> [in]
+### -param DataBitLength [in]
 
 <dd>
 <p>The size, in bits, of the smallest unit of transfer.</p>
 </dd>
 
-### -param <i>SlaveMode</i> [in]
+### -param SlaveMode [in]
 
 <dd>
 <p>Indicates if the resource is operating in slave mode.</p>
 </dd>
 
-### -param <i>ConnectionSpeed</i> [in]
+### -param ConnectionSpeed [in]
 
 <dd>
 <p>The maximum speed, in hertz, supported by this connection.</p>
 </dd>
 
-### -param <i>ClockPolarity</i> [in]
+### -param ClockPolarity [in]
 
 <dd>
 <p>The polarity of the clock. If zero, this indicates the
@@ -116,13 +116,13 @@ clock is low during the first phase. If 1, this indicates the
 clock is high during the first phase.</p>
 </dd>
 
-### -param <i>ClockPhase</i> [in]
+### -param ClockPhase [in]
 
 <dd>
 <p>The phase of the clock pulse on which to capture data.</p>
 </dd>
 
-### -param <i>ResourceSource</i> [in]
+### -param ResourceSource [in]
 
 <dd>
 <p>The name of the serial bus controller device to which this
@@ -131,37 +131,37 @@ qualified path, a relative path, or a simple name segment
 that utilizes the namespace search rules.</p>
 </dd>
 
-### -param <i>ResourceSourceIndex</i> [in]
+### -param ResourceSourceIndex [in]
 
 <dd>
 <p>This parameter should always be set to zero.</p>
 </dd>
 
-### -param <i>ResourceUsage</i> [in]
+### -param ResourceUsage [in]
 
 <dd>
 <p>Indicates if the resource is in use.</p>
 </dd>
 
-### -param <i>SharedMode</i> [in]
+### -param SharedMode [in]
 
 <dd>
 <p>Indicates if the resource is shared.</p>
 </dd>
 
-### -param <i>VendorData</i> [in]
+### -param VendorData [in]
 
 <dd>
 <p>A pointer to optional data that is specific to the serial bus connection type.</p>
 </dd>
 
-### -param <i>VendorDataLength</i> [in]
+### -param VendorDataLength [in]
 
 <dd>
 <p>The length of the buffer pointed to by the <i>VendorData</i> parameter.</p>
 </dd>
 
-### -param <i>Resource</i> [out]
+### -param Resource [out]
 
 <dd>
 <p>A pointer to the resource. The structure behind the pointer is of type <a href="..\pepfx\ns-pepfx--pep-acpi-spb-spi-resource.md">PEP_ACPI_SPB_SPI_RESOURCE</a>.</p>

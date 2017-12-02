@@ -69,91 +69,91 @@ typedef struct _REG_CREATE_KEY_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>CompleteName</b>
+### -field CompleteName
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the path of the new registry key. The path can be absolute or relative. If the path is absolute, this structure contains a fully qualified path that starts with the "\" character. For an absolute path, the <b>RootObject</b> member specifies the <b>\REGISTRY</b> key, which is the root directory of the registry tree. If the path is relative, the path starts with a character other than "\", and is relative to the key that is specified by the <i>RootObject</i> member.</p>
 </dd>
 
-### -field <b>RootObject</b>
+### -field RootObject
 
 <dd>
 <p>Pointer to the registry key object that serves as the root for the path specified by the <i>CompleteName</i> member.</p>
 </dd>
 
-### -field <b>ObjectType</b>
+### -field ObjectType
 
 <dd>
 <p>The <b>ObjectType</b> member is reserved for internal use. Drivers must not access this member. This member is defined starting with Windows Vista.</p>
 </dd>
 
-### -field <b>CreateOptions</b>
+### -field CreateOptions
 
 <dd>
 <p>A bitwise OR of flags. For more information about these flags, see the <i>CreateOptions</i> parameter of the <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> routine. This member is defined starting with Windows Vista.</p>
 </dd>
 
-### -field <b>Class</b>
+### -field Class
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that identifies the key's object class. For more information about this member, see the <i>Class</i> parameter of the <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> routine. This member is defined starting with Windows Vista.</p>
 </dd>
 
-### -field <b>SecurityDescriptor</b>
+### -field SecurityDescriptor
 
 <dd>
 <p>A pointer to a <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> structure that contains security information for the key object. This member is defined starting with Windows Vista.</p>
 </dd>
 
-### -field <b>SecurityQualityOfService</b>
+### -field SecurityQualityOfService
 
 <dd>
 <p>A pointer to a <b>SECURITY_QUALITY_OF_SERVICE</b> structure, which is defined in Winnt.h. This member is defined starting with Windows Vista.</p>
 </dd>
 
-### -field <b>DesiredAccess</b>
+### -field DesiredAccess
 
 <dd>
 <p>The access mask that was specified by the thread that is attempting to create the registry key. This member is defined starting with Windows Vista.</p>
 </dd>
 
-### -field <b>GrantedAccess</b>
+### -field GrantedAccess
 
 <dd>
 <p>An access mask that indicates the access rights that have been granted to the thread that is attempting to create the registry key. For more information about this member, see Remarks. This member is defined starting with Windows Vista.</p>
 </dd>
 
-### -field <b>Disposition</b>
+### -field Disposition
 
 <dd>
 <p>A value that indicates whether the registry key was created. For more information about this member, see the <i>Disposition</i> parameter of the <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> routine and the following Remarks section. This member is defined starting with Windows Vista.</p>
 </dd>
 
-### -field <b>ResultObject</b>
+### -field ResultObject
 
 <dd>
 <p>A pointer to a location that receives the address of the key object that represents the created registry key. For more information about this member, see Remarks. This member is defined starting with Windows Vista.</p>
 </dd>
 
-### -field <b>CallContext</b>
+### -field CallContext
 
 <dd>
 <p>Optional driver-defined context information that the driver's <a href="kernel.registrycallback">RegistryCallback</a> routine can supply. This member is defined starting with Windows Vista.</p>
 </dd>
 
-### -field <b>RootObjectContext</b>
+### -field RootObjectContext
 
 <dd>
 <p>A pointer to a driver-defined context information that the driver has associated with the root of the path for the registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined starting with Windows Vista.</p>
 </dd>
 
-### -field <b>Transaction</b>
+### -field Transaction
 
 <dd>
 <p>A pointer to a transaction object that the operation is attempted on. If this member is <b>NULL</b>, the operation is being performed in non-transactional context. This member is defined starting with Windows Vista.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Starting with Windows Vista, if this member is 1, then it is safe to cast this structure to type <a href="..\wdm\ns-wdm--reg-create-key-information-v1.md">REG_CREATE_KEY_INFORMATION_V1</a>, which contains additional parameters.</p>

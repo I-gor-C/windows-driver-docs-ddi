@@ -56,13 +56,13 @@ HANDLE OpenPrintProcessor(
 ## -parameters
 <dl>
 
-### -param <i>pPrinterName</i> [in]
+### -param pPrinterName [in]
 
 <dd>
 <p>Caller-supplied pointer to the name of the printer for which the print processor is being opened.</p>
 </dd>
 
-### -param <i>pPrintProcessorOpenData</i> [in]
+### -param pPrintProcessorOpenData [in]
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\winsplp\ns-winsplp--printprocessoropendata.md">PRINTPROCESSOROPENDATA</a> structure.</p>

@@ -54,7 +54,7 @@ typedef enum _D3DKMT_STANDARDALLOCATIONTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_STANDARDALLOCATIONTYPE_EXISTINGHEAP"></a><a id="d3dkmt_standardallocationtype_existingheap"></a><b>D3DKMT_STANDARDALLOCATIONTYPE_EXISTINGHEAP</b>
+### -field D3DKMT_STANDARDALLOCATIONTYPE_EXISTINGHEAP
 
 <dd>
 <p>Indicates that the allocation type is an existing heap.</p>

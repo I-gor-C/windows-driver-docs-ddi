@@ -56,7 +56,7 @@ typedef struct IDDCX_OPM_GET_INFO_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -64,7 +64,7 @@ typedef struct IDDCX_OPM_GET_INFO_PARAMETERS {
                  </p>
 </dd>
 
-### -field <b>GetInfoParameters</b>
+### -field GetInfoParameters
 
 <dd>
 <p>

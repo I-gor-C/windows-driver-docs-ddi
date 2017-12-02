@@ -7,7 +7,7 @@ old-location: netvista\riluiccappdatachange.htm
 old-project: netvista
 ms.assetid: a551f469-96f4-42cf-826d-3557cc13ce29
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUICCAPPDATACHANGE, RILUICCAPPDATACHANGE, *LPRILUICCAPPDATACHANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef struct _RILUICCAPPDATACHANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwDataChange</b>
+### -field dwDataChange
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: acpi\acpi_eval_input_buffer_complex_v2_ex.htm
 old-project: acpi
 ms.assetid: 50AEF454-8E36-4348-9340-330094D2FDF8
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,31 +57,31 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>Defines the <b>ULONG</b> member <b>Signature</b>.</p>
 </dd>
 
-### -field <b>MethodName[256]</b>
+### -field MethodName[256]
 
 <dd>
 <p>NULL terminated name string.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Defines the <b>ULONG</b> member <b>Size</b>.</p>
 </dd>
 
-### -field <b>ArgumentCount</b>
+### -field ArgumentCount
 
 <dd>
 <p>Defines the <b>ULONG</b> member <b>ArgumentCount</b>.</p>
 </dd>
 
-### -field <b>Argument[ANYSIZE_ARRAY]</b>
+### -field Argument[ANYSIZE_ARRAY]
 
 <dd>
 <p>Defines the <b>ACPI_METHOD_ARGUMENT_V2</b> member <b>Argument[ANYSIZE_ARRAY]</b>.</p>

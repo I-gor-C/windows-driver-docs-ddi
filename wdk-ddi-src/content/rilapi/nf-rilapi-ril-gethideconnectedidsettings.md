@@ -7,7 +7,7 @@ old-location: netvista\ril_gethideconnectedidsettings.htm
 old-project: netvista
 ms.assetid: fd5f8556-0038-4700-87cf-61e9daa17d90
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetHideConnectedIdSettings
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_GetHideConnectedIdSettings(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: wdf\wdf_pdo_event_callbacks.htm
 old-project: wdf
 ms.assetid: 13cb1da1-0bb7-444e-a0e1-abcac7d0240d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_PDO_EVENT_CALLBACKS, WDF_PDO_EVENT_CALLBACKS, *PWDF_PDO_EVENT_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,49 +63,49 @@ typedef struct _WDF_PDO_EVENT_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>EvtDeviceResourcesQuery</b>
+### -field EvtDeviceResourcesQuery
 
 <dd>
 <p>A pointer to the driver's <a href="wdf.evtdeviceresourcesquery">EvtDeviceResourcesQuery</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceResourceRequirementsQuery</b>
+### -field EvtDeviceResourceRequirementsQuery
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfpdo\nc-wdfpdo-evt-wdf-device-resource-requirements-query.md">EvtDeviceResourceRequirementsQuery</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceEject</b>
+### -field EvtDeviceEject
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfpdo\nc-wdfpdo-evt-wdf-device-eject.md">EvtDeviceEject</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceSetLock</b>
+### -field EvtDeviceSetLock
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfpdo\nc-wdfpdo-evt-wdf-device-set-lock.md">EvtDeviceSetLock</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceEnableWakeAtBus</b>
+### -field EvtDeviceEnableWakeAtBus
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfpdo\nc-wdfpdo-evt-wdf-device-enable-wake-at-bus.md">EvtDeviceEnableWakeAtBus</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceDisableWakeAtBus</b>
+### -field EvtDeviceDisableWakeAtBus
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfpdo\nc-wdfpdo-evt-wdf-device-disable-wake-at-bus.md">EvtDeviceDisableWakeAtBus</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceReportedMissing</b>
+### -field EvtDeviceReportedMissing
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfpdo\nc-wdfpdo-evt-wdf-device-reported-missing.md">EvtDeviceReportedMissing</a> event callback function, or <b>NULL</b>. The <b>EvtDeviceReportedMissing</b> member is available in version 1.11 and later versions of KMDF.</p>
@@ -156,4 +156,4 @@ typedef struct _WDF_PDO_EVENT_CALLBACKS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PDO_EVENT_CALLBACKS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PDO_EVENT_CALLBACKS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

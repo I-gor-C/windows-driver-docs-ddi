@@ -56,19 +56,19 @@ typedef struct _PEP_PPM_PERF_SET_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>MinimumPerformanceState</b>
+### -field MinimumPerformanceState
 
 <dd>
 <p>On input, the new requested minimum performance state. This state is  defined as the absolute minimum instantaneous performance level at which  the processor may run. The operating system may set this value to any performance value in the range [Lowest Performance, Guaranteed Performance], inclusive. Minimum performance must never be set to a value higher than maximum performance. </p>
 </dd>
 
-### -field <b>MaximumPerformanceState</b>
+### -field MaximumPerformanceState
 
 <dd>
 <p>On input, the new requested maximum performance state. This state is defined as the absolute maximum instantaneous performance level at which the processor may run. The OS may set Maximum performance to any performance value in the range [Lowest Performance, Highest Performance], inclusive.</p>
 </dd>
 
-### -field <b>DesiredPerformanceState</b>
+### -field DesiredPerformanceState
 
 <dd>
 <p>On input, the new requested desired performance state. This state is defined as the performance level power manager is requesting from the processor. Desired performance may be set to any performance value in the range [Minimum Performance, Maximum Performance], inclusive. Desired performance may take one of two meanings, depending on whether the desired performance is above or below the guaranteed performance level. 

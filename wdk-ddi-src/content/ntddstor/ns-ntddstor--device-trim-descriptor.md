@@ -56,19 +56,19 @@ typedef struct _DEVICE_TRIM_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Contains the size of the structure DEVICE_TRIM_DESCRIPTOR. The value of this member will change as members are added to the structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the total size of the descriptor, in bytes.</p>
 </dd>
 
-### -field <b>TrimEnabled</b>
+### -field TrimEnabled
 
 <dd>
 <p>Specifies whether trim is enabled for the device.</p>

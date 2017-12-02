@@ -62,13 +62,13 @@ typedef struct _DLGPAGE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Caller-supplied size, in bytes, of the DLGPAGE structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Caller-supplied bit flags, as described in the following table.</p>
@@ -99,19 +99,19 @@ typedef struct _DLGPAGE {
 <p> </p>
 </dd>
 
-### -field <b>DlgProc</b>
+### -field DlgProc
 
 <dd>
 <p>Optional, caller-supplied DLGPROC-typed pointer to a dialog box procedure, used to process messages sent by the system when user events occur. (The DLGPROC pointer type is described in the Microsoft Windows SDK documentation.) If <b>NULL</b>, CPSUI supplies a dialog box procedure. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>pTabName</b>
+### -field pTabName
 
 <dd>
 <p>Caller-supplied pointer to a NULL-terminated string to be displayed on the page tab.</p>
 </dd>
 
-### -field <b>IconID</b>
+### -field IconID
 
 <dd>
 <p>Caller-supplied, can be one of the following:</p>
@@ -126,7 +126,7 @@ typedef struct _DLGPAGE {
 <p>The specified icon is displayed on the page tab. If this value is zero, an icon is not displayed.</p>
 </dd>
 
-### -field <b>DlgTemplateID</b>
+### -field DlgTemplateID
 
 <dd>
 <p>Caller-supplied resource identifier for a dialog box template. This can refer to an application-supplied DIALOG resource, or it can be one of the following CPSUI-supplied identifiers (defined in compstui.h):</p>
@@ -165,7 +165,7 @@ typedef struct _DLGPAGE {
 <p>This member is not used if DPF_USE_HDLGTEMPLATE is set in <b>Flags</b>.</p>
 </dd>
 
-### -field <b>hDlgTemplate</b>
+### -field hDlgTemplate
 
 <dd>
 <p>Caller-supplied handle to a DLGTEMPLATE structure (described in the Microsoft Windows SDK documentation).</p>

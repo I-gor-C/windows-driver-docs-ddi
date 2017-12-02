@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>ProtocolId</b>
+### -field ProtocolId
 
 <dd>
 <p>This member specifies the GUID that represents the interface or protocol being negotiated between two AVStream pins.</p>
 </dd>
 
-### -field <b>Argument1</b>
+### -field Argument1
 
 <dd>
 <p>A pointer to an interface-dependent argument. Most often, this is used to pass back and forth COM-style interface pointers once a specific private interface or protocol has been agreed upon. </p>
 </dd>
 
-### -field <b>Argument2</b>
+### -field Argument2
 
 <dd>
 <p>A pointer to an interface-dependent argument.</p>

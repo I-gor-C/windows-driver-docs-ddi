@@ -57,13 +57,13 @@ NTSTATUS RtlIntegerToUnicodeString(
 ## -parameters
 <dl>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>Specifies the ULONG value to convert. </p>
 </dd>
 
-### -param <i>Base</i> [in, optional]
+### -param Base [in, optional]
 
 <dd>
 <p>Specifies the base to use when converting <i>Value</i> to a string. The possible values are:</p>
@@ -108,7 +108,7 @@ NTSTATUS RtlIntegerToUnicodeString(
 <p> </p>
 </dd>
 
-### -param <i>String</i> [in, out]
+### -param String [in, out]
 
 <dd>
 <p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that receives the string representation of <i>Value</i>. The buffer specified by the <i>Buffer</i>  of <i>String</i> must be large enough to hold the result. </p>

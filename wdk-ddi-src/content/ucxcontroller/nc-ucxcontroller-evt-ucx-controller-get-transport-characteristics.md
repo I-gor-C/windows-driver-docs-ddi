@@ -61,16 +61,16 @@ typedef EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS *PFN_UCX_CONTROLLER_GET
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>UcxControllerTransportCharacteristics</i> [out]
+### -param UcxControllerTransportCharacteristics [out]
 
 <dd>
-<p>A pointer to a <a href="buses.ucx_controller_transport_characteristics">UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS</a> structure that the client driver for the host controller fills with transport characteristics.</p>
+<p>A pointer to a <a href="..\ucxcontroller\ns-ucxcontroller--ucx-controller-transport-characteristics.md">UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS</a> structure that the client driver for the host controller fills with transport characteristics.</p>
 </dd>
 </dl>
 
@@ -80,7 +80,7 @@ typedef EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS *PFN_UCX_CONTROLLER_GET
 ## -remarks
 <p>The UCX client driver registers its implementation with the USB host controller extension (UCX) by calling the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 
-<p>This callback function is optional. Whenever transport characteristics change, the client driver is responsible for notifying UCX that one of the characteristics have changed using a new function <a href="buses.ucxcontrollernotifytransportcharacteristicschange">UcxControllerNotifyTransportCharacteristicsChange</a>. </p>
+<p>This callback function is optional. Whenever transport characteristics change, the client driver is responsible for notifying UCX that one of the characteristics have changed using a new function <a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollernotifytransportcharacteristicschange.md">UcxControllerNotifyTransportCharacteristicsChange</a>. </p>
 
 ## -requirements
 <table>

@@ -60,13 +60,13 @@ typedef struct _PEP_QUERY_SOC_SUBSYSTEM {
 ## -struct-fields
 <dl>
 
-### -field <b>PlatformIdleStateIndex</b>
+### -field PlatformIdleStateIndex
 
 <dd>
 <p>[in] The platform idle state index that is being queried by the kernel.</p>
 </dd>
 
-### -field <b>SubsystemIndex</b>
+### -field SubsystemIndex
 
 <dd>
 <p>[in] The subsystem index, which is a unique index assigned by the OS to each subsystem within the context of a given <b>PlatformIdleStateIndex</b>. </p>
@@ -74,7 +74,7 @@ typedef struct _PEP_QUERY_SOC_SUBSYSTEM {
 <p>The  PEP can ignore this value.  </p>
 </dd>
 
-### -field <b>SubsystemHandle</b>
+### -field SubsystemHandle
 
 <dd>
 <p>[out] A context pointer that the PEP can optionally assign a value to. It will receive the pointer on subsequent notifications for this particular subsystem.  In subsequent notifications, a PEP uses <b>PlatformIdleStateIndex</b> along with <b>SubsystemName</b> and/or <b>SubsystemHandle</b> to look up a particular subsystemâ€™s accounting data. </p>
@@ -82,7 +82,7 @@ typedef struct _PEP_QUERY_SOC_SUBSYSTEM {
 <p>The PEP is not required to fill  this member.</p>
 </dd>
 
-### -field <b>ParentName</b>
+### -field ParentName
 
 <dd>
 <p>[in/out]  A buffer for holding the parent name of the corresponding subsystem.  Each  subsystem has a parent and subsystems with the same value for <b>ParentName</b> are considered siblings.  Subsystem sibling hierarchies are optional.  In the absence of any hierarchy, all subsystems are top level subsystems and specify a common value for <b>ParentName</b>.  To indicate a hierarchy, top level subsystems specify a common <b>ParentName</b> while each non-top-level subsystem specifies its parent subsystemâ€™s <b>SubsystemName</b> for <b>ParentName</b>.  
@@ -100,7 +100,7 @@ typedef struct _PEP_QUERY_SOC_SUBSYSTEM {
 Since this memory is pre-allocated, its size cannot be changed. The PEP is responsible for truncating the parent name, if necessary, so that it does not exceed the length specified in <b>ParentName.MaximumLength</b> (including the terminating <b>UNICODE_NULL</b> character).</p>
 </dd>
 
-### -field <b>SubsystemName</b>
+### -field SubsystemName
 
 <dd>
 <p>[in/out] A buffer for holding this subsystem's name.  Every subsystem has a subsystem name and <b>SubsystemName</b> must be unique among all subsystems within the context of a given platform idle state.  A subsystemâ€™s <b>SubsystemName</b> cannot be the same as <b>ParentName</b>.
@@ -118,14 +118,14 @@ Since this memory is pre-allocated, its size cannot be changed. The PEP is respo
 Since this memory is pre-allocated, its size cannot be changed. The PEP is responsible for truncating the subsystem name, if necessary, so that it does not exceed the length specified in <b>SubsystemName.MaximumLength</b> (including the terminating <b>UNICODE_NULL</b> character).</p>
 </dd>
 
-### -field <b>MetadataCount</b>
+### -field MetadataCount
 
 <dd>
 <p>[out] The number of metadata key/value string pairs tallied by this SoC subsystem.  </p>
 <p>Metadata is optional.  The PEP returns zero if it does not report any metadata for this SoC subsystem.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>

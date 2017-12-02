@@ -7,7 +7,7 @@ old-location: netvista\ndis_open_parameters.htm
 old-project: netvista
 ms.assetid: bb61026c-311b-41d1-9fcb-3ac44df2025e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_OPEN_PARAMETERS, NDIS_OPEN_PARAMETERS, *PNDIS_OPEN_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct _NDIS_OPEN_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -73,7 +73,7 @@ typedef struct _NDIS_OPEN_PARAMETERS {
      <b>Size</b> member to the NDIS_SIZEOF_OPEN_PARAMETERS_REVISION_1.</p>
 </dd>
 
-### -field <b>AdapterName</b>
+### -field AdapterName
 
 <dd>
 <p>A Unicode string that contains the name of the miniport adapter that NDIS passed to 
@@ -83,7 +83,7 @@ typedef struct _NDIS_OPEN_PARAMETERS {
      adapter that is associated with an intermediate driver.</p>
 </dd>
 
-### -field <b>MediumArray</b>
+### -field MediumArray
 
 <dd>
 <p>A pointer to an array of 
@@ -91,14 +91,14 @@ typedef struct _NDIS_OPEN_PARAMETERS {
      <a href="..\ntddndis\ne-ntddndis--ndis-medium.md">NDIS_MEDIUM</a> types.</p>
 </dd>
 
-### -field <b>MediumArraySize</b>
+### -field MediumArraySize
 
 <dd>
 <p>The number of elements in the 
      <b>MediumArray</b> member.</p>
 </dd>
 
-### -field <b>SelectedMediumIndex</b>
+### -field SelectedMediumIndex
 
 <dd>
 <p>A pointer to an driver-provided UINT variable that contains an index into the 
@@ -106,7 +106,7 @@ typedef struct _NDIS_OPEN_PARAMETERS {
      driver uses.</p>
 </dd>
 
-### -field <b>FrameTypeArray</b>
+### -field FrameTypeArray
 
 <dd>
 <p>A pointer to an array of NET_FRAME_TYPE values, specifying the frame types that you want the
@@ -132,7 +132,7 @@ typedef NET_FRAME_TYPE *PNET_FRAME_TYPE;</pre>
 <div> </div>
 </dd>
 
-### -field <b>FrameTypeArraySize</b>
+### -field FrameTypeArraySize
 
 <dd>
 <p>The number of elements in the 
@@ -185,4 +185,4 @@ typedef NET_FRAME_TYPE *PNET_FRAME_TYPE;</pre>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OPEN_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OPEN_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

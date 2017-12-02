@@ -54,7 +54,7 @@ typedef struct _CREATE_DISK_MBR {
 ## -struct-fields
 <dl>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>Specifies the disk signature value, which uniquely identifies the disk.</p>

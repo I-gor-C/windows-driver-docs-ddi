@@ -55,13 +55,13 @@ typedef struct tag_KS_TRUECOLORINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>dwBitMasks</b>
+### -field dwBitMasks
 
 <dd>
 <p>Array of color masks (one per color element).</p>
 </dd>
 
-### -field <b>bmiColors</b>
+### -field bmiColors
 
 <dd>
 <p>Array of palette colors.</p>

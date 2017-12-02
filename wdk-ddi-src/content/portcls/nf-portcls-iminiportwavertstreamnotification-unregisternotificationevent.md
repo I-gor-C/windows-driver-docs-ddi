@@ -54,7 +54,7 @@ NTSTATUS UnregisterNotificationEvent(
 ## -parameters
 <dl>
 
-### -param <i>NotificationEvent</i> [in]
+### -param NotificationEvent [in]
 
 <dd>
 <p>A pointer to a previously registered kernel event (PKEVENT) to be unregistered from notification as DMA progresses.</p>

@@ -57,7 +57,7 @@ typedef struct IDARG_IN_SET_GAMMARAMP {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>
@@ -65,14 +65,14 @@ typedef struct IDARG_IN_SET_GAMMARAMP {
                  </p>
 </dd>
 
-### -field <b>GammaRampSizeInBytes</b>
+### -field GammaRampSizeInBytes
 
 <dd>
 <p>
                      [in] Size in bytes of the provided gamma ramp data.  Set to zero for <a href="..\iddcx\ne-iddcx-iddcx-gammaramp-type.md">IDDCX_GAMMARAMP_TYPE</a>.</p>
 </dd>
 
-### -field <b>pGammaRampData</b>
+### -field pGammaRampData
 
 <dd>
 <p>

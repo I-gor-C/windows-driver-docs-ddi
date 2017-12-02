@@ -59,26 +59,26 @@ NTSTATUS GetReadPacket(
 ## -parameters
 <dl>
 
-### -param <i>PacketNumber</i> [out]
+### -param PacketNumber [out]
 
 <dd>
 <p>Returns the packet number relative to the start of capture.  </p>
 </dd>
 
-### -param <i>Flags</i> [out]
+### -param Flags [out]
 
 <dd>
 <p>Reserved for future use. Must be set to 0.</p>
 </dd>
 
-### -param <i>PerformanceCount</i> [out]
+### -param PerformanceCount [out]
 
 <dd>
 <p>Returns the performance counter value corresponding to the sampling instant of the first sample in the packet. 
 </p>
 </dd>
 
-### -param <i>MoreData</i> [out]
+### -param MoreData [out]
 
 <dd>
 <p> Returns <b>TRUE</b> if there is more data ready immediately. The OS may optionally immediately call this routine again after processing the packet to get the next packet information. If the driver returns <b>FALSE</b>, then capture is operating at real time. 

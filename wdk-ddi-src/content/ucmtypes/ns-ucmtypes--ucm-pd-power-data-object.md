@@ -83,24 +83,24 @@ typedef union _UCM_PD_POWER_DATA_OBJECT {
 ## -struct-fields
 <dl>
 
-### -field <b>Ul</b>
+### -field Ul
 
 <dd>
 <p>Size of the structure.</p>
 </dd>
 
-### -field <b>Common</b>
+### -field Common
 
 <dd>
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Type of Power Data Object.</p>
@@ -108,55 +108,55 @@ typedef union _UCM_PD_POWER_DATA_OBJECT {
 </dl>
 </dd>
 
-### -field <b>FixedSupplyPdo</b>
+### -field FixedSupplyPdo
 
 <dd>
 <p>Describing a Fixed Supply type Power Data Object.</p>
 <dl>
 
-### -field <b>MaximumCurrentIn10mA</b>
+### -field MaximumCurrentIn10mA
 
 <dd>
 <p>Maximum current in multiples of 10 mA.</p>
 </dd>
 
-### -field <b>VoltageIn50mV</b>
+### -field VoltageIn50mV
 
 <dd>
 <p>Voltage in multiples of 50 mV.</p>
 </dd>
 
-### -field <b>PeakCurrent</b>
+### -field PeakCurrent
 
 <dd>
 <p>Peak current.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>DataRoleSwap</b>
+### -field DataRoleSwap
 
 <dd>
 <p>If set, indicates the Power Data Object can perform a data role swap.</p>
 </dd>
 
-### -field <b>UsbCommunicationCapable</b>
+### -field UsbCommunicationCapable
 
 <dd>
 <p>If set, indicates the Power Data Object is USB communication capable. </p>
 </dd>
 
-### -field <b>ExternallyPowered</b>
+### -field ExternallyPowered
 
 <dd>
 <p>If set, indicates the Power Data Object is externally powered.</p>
 </dd>
 
-### -field <b>UsbSuspendSupported</b>
+### -field UsbSuspendSupported
 
 <dd>
 <p>Indicates support for USB suspend.
@@ -164,13 +164,13 @@ typedef union _UCM_PD_POWER_DATA_OBJECT {
 </p>
 </dd>
 
-### -field <b>DualRolePower</b>
+### -field DualRolePower
 
 <dd>
 <p>Dual role power</p>
 </dd>
 
-### -field <b>FixedSupply</b>
+### -field FixedSupply
 
 <dd>
 <p>fixed supply</p>
@@ -178,31 +178,31 @@ typedef union _UCM_PD_POWER_DATA_OBJECT {
 </dl>
 </dd>
 
-### -field <b>VariableSupplyNonBatteryPdo</b>
+### -field VariableSupplyNonBatteryPdo
 
 <dd>
 <p>Contains bitfields describing a variable-supply non-battery PD object.</p>
 <dl>
 
-### -field <b>MaximumCurrentIn10mA</b>
+### -field MaximumCurrentIn10mA
 
 <dd>
 <p>Describes the maximum current in multiples of 10 mA.</p>
 </dd>
 
-### -field <b>MinimumVoltageIn50mV</b>
+### -field MinimumVoltageIn50mV
 
 <dd>
 <p>Desribes the minimum voltage in multiples of 50 mV.</p>
 </dd>
 
-### -field <b>MaximumVoltageIn50mV</b>
+### -field MaximumVoltageIn50mV
 
 <dd>
 <p>Describes the maximum voltage in multiples of 50 mV.</p>
 </dd>
 
-### -field <b>VariableSupportNonBattery</b>
+### -field VariableSupportNonBattery
 
 <dd>
 <p>Variable Support Non Battery type.</p>
@@ -210,31 +210,31 @@ typedef union _UCM_PD_POWER_DATA_OBJECT {
 </dl>
 </dd>
 
-### -field <b>BatterySupplyPdo</b>
+### -field BatterySupplyPdo
 
 <dd>
 <p>Contains bitfields describing a battery supply PD object.</p>
 <dl>
 
-### -field <b>MaximumAllowablePowerIn250mW</b>
+### -field MaximumAllowablePowerIn250mW
 
 <dd>
 <p>Describes the maximum allowable power in multiples of 250 mW.</p>
 </dd>
 
-### -field <b>MinimumVoltageIn50mV</b>
+### -field MinimumVoltageIn50mV
 
 <dd>
 <p>Describes the minimum voltage in multiples of 50 mV.</p>
 </dd>
 
-### -field <b>MaximumVoltageIn50mV</b>
+### -field MaximumVoltageIn50mV
 
 <dd>
 <p>Describes the maximum voltage in multiples of 50 mV.</p>
 </dd>
 
-### -field <b>Battery</b>
+### -field Battery
 
 <dd>
 <p>Battery type.</p>

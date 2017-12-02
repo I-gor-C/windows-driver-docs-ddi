@@ -54,7 +54,7 @@ typedef enum _DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAG_PREEMPTIVE"></a><a id="dxgk_hardware_content_protection_teardown_flag_preemptive"></a><b>DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAG_PREEMPTIVE</b>
+### -field DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAG_PREEMPTIVE
 
 <dd>
 <p>Indicates that the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-hardwarecontentprotectionteardown.md">DxgkCbHardwareContentProtectionTeardown</a> callback is being preemptively called prior to tear-down event actually occurring.</p>

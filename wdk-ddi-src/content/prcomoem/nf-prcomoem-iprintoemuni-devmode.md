@@ -56,13 +56,13 @@ STDMETHOD DevMode(
 ## -parameters
 <dl>
 
-### -param <i>dwMode</i> 
+### -param dwMode 
 
 <dd>
 <p>Specifies a caller-supplied constant. See the Remarks section for more information.</p>
 </dd>
 
-### -param <i>pOemDMParam</i> 
+### -param pOemDMParam 
 
 <dd>
 <p>Caller-supplied pointer to an <a href="..\printoem\ns-printoem--oemdmparam.md">OEMDMPARAM</a> structure.</p>

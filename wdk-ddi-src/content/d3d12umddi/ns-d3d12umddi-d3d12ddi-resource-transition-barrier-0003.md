@@ -57,25 +57,25 @@ typedef struct D3D12DDI_RESOURCE_TRANSITION_BARRIER_0003 {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>The handle of a resource.</p>
 </dd>
 
-### -field <b>Subresource</b>
+### -field Subresource
 
 <dd>
 <p>A subresource.</p>
 </dd>
 
-### -field <b>StateBefore</b>
+### -field StateBefore
 
 <dd>
 <p>The state before a transition.</p>
 </dd>
 
-### -field <b>StateAfter</b>
+### -field StateAfter
 
 <dd>
 <p>The state after a transition.</p>

@@ -55,7 +55,7 @@ VOID SERCX_ACTIVITY_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Activity</i> [out]
+### -param Activity [out]
 
 <dd>
 <p>A pointer to the <b>SERCX_ACTIVITY</b> structure that is to be initialized.</p>

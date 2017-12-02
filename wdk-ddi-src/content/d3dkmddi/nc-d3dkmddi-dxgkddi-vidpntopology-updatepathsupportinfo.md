@@ -58,13 +58,13 @@ NTSTATUS APIENTRY pfnUpdatePathSupportInfo(
 ## -parameters
 <dl>
 
-### -param <i>i_hVidPnTopology</i> [in]
+### -param i_hVidPnTopology [in]
 
 <dd>
 <p>[in] A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-gettopology.md">pfnGetTopology</a> function of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpn-interface.md">DXGK_VIDPN_INTERFACE</a> interface.</p>
 </dd>
 
-### -param <i>i_pVidPnPresentPathInfo</i> [in]
+### -param i_pVidPnPresentPathInfo [in]
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure. The <b>VidPnSourceId</b> and <b>VidPnTargetId</b> members (taken as a pair) identify the path that is to have its transformation and copy protection support updated. The <b>ContentTransformation</b> and <b>CopyProtection</b> members supply the updated transformation and copy protection support.</p>

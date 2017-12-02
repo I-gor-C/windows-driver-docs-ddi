@@ -7,7 +7,7 @@ old-location: netvista\rilcalleridsettingsparammask.htm
 old-project: netvista
 ms.assetid: 3a8b4be6-91b5-4368-8f54-efa73deb41c0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILCALLERIDSETTINGSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_CIDS_PROVISIONING"></a><a id="ril_param_cids_provisioning"></a><b>RIL_PARAM_CIDS_PROVISIONING</b>
+### -field RIL_PARAM_CIDS_PROVISIONING
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CIDS_STATUS"></a><a id="ril_param_cids_status"></a><b>RIL_PARAM_CIDS_STATUS</b>
+### -field RIL_PARAM_CIDS_STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CIDS_ALL"></a><a id="ril_param_cids_all"></a><b>RIL_PARAM_CIDS_ALL</b>
+### -field RIL_PARAM_CIDS_ALL
 
 <dd></dd>
 </dl>

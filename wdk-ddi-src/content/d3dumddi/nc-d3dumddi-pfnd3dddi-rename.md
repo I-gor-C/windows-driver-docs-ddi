@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY Rename(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to a display device (that is, the graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-rename.md">D3DDDIARG_RENAME</a> structure that describes the resource or surface within a resource to rename with a new allocation.</p>

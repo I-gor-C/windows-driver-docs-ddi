@@ -7,13 +7,13 @@ old-location: debugger\ig_dump_symbol_info.htm
 old-project: debugger
 ms.assetid: 5a00f401-89e5-4863-ab14-a8ab7eec1869
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: SYM_DUMP_PARAM, SYM_DUMP_PARAM, *PSYM_DUMP_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -75,31 +75,31 @@ typedef struct _SYM_DUMP_PARAM {
 ## -struct-fields
 <dl>
 
-### -field <b>size</b>
+### -field size
 
 <dd>
 <p>Specifies the size, in bytes, of this structure.  It should be set to <code>sizeof(SYM_DUMP_PARAM)</code>.</p>
 </dd>
 
-### -field <b>sName</b>
+### -field sName
 
 <dd>
 <p>Specifies the name of the symbol to lookup.</p>
 </dd>
 
-### -field <b>Options</b>
+### -field Options
 
 <dd>
 <p>Specifies the flags that determine the behavior of this <b>Ioctl</b> operation.  For a description of these flags, see Remarks.</p>
 </dd>
 
-### -field <b>addr</b>
+### -field addr
 
 <dd>
 <p>Specifies the address of the symbol.</p>
 </dd>
 
-### -field <b>listLink</b>
+### -field listLink
 
 <dd>
 <p>Specifies the field that contains the next item in a linked list.  If the symbol is an entry in a linked list, this <b>Ioctl</b> operation can iterate over the items in the list using the field specified here as the pointer to the next item in the list.  The type of this structure is <a href="..\wdbgexts\ns-wdbgexts--field-info.md">FIELD_INFO</a>.</p>
@@ -107,85 +107,85 @@ typedef struct _SYM_DUMP_PARAM {
 <p>DBG_DUMP_LIST should be set in <b>Options</b> to tell this <b>Ioctl</b> to iterate over the list.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Specifies a pointer that is passed to the callback function in the <b>CallbackRoutine</b> member and to the callback functions in the <b>fieldCallBack</b> member of the <b>linkList</b> and <b>Fields</b> members.</p>
 </dd>
 
-### -field <b>pBuffer</b>
+### -field pBuffer
 
 <dd>
 <p>Specifies a buffer that receives information about the symbol.  This buffer is only used if the DBG_DUMP_COPY_TYPE_DATA flag is set in <b>Options</b>.  The size of this buffer is specified in <b>BufferSize</b>.</p>
 </dd>
 
-### -field <b>CallbackRoutine</b>
+### -field CallbackRoutine
 
 <dd>
 <p>Specifies a callback function that is called by the engine.  The engine provides the callback function with information about the symbol and its members.</p>
 </dd>
 
-### -field <b>nFields</b>
+### -field nFields
 
 <dd>
 <p>Specifies the number of entries in the <b>Fields</b> array.</p>
 </dd>
 
-### -field <b>Fields</b>
+### -field Fields
 
 <dd>
 <p>Specifies an array of <a href="..\wdbgexts\ns-wdbgexts--field-info.md">FIELD_INFO</a> structures that control the behavior of this operation for individual members of the specified symbol. See FIELD_INFO for details.</p>
 </dd>
 
-### -field <b>ModBase</b>
+### -field ModBase
 
 <dd>
 <p>Receives the location in the target's memory of the start of the module that contains the symbol.</p>
 </dd>
 
-### -field <b>TypeId</b>
+### -field TypeId
 
 <dd>
 <p>Receives the type ID of the symbol.</p>
 </dd>
 
-### -field <b>TypeSize</b>
+### -field TypeSize
 
 <dd>
 <p>Receives the size, in bytes, of the symbol in the target's memory.</p>
 </dd>
 
-### -field <b>BufferSize</b>
+### -field BufferSize
 
 <dd>
 <p>Specifies the size, in bytes, of the <b>pBuffer</b> buffer.</p>
 </dd>
 
-### -field <b>fPointer</b>
+### -field fPointer
 
 <dd>
 <p>Receives a Boolean value that indicates whether the symbol is a pointer.  <b>fPointer</b> is <b>FALSE</b> if the symbol is not a pointer.  It is 1 if the symbol is a 32-bit pointer and 3 if the symbol is a 64-bit pointer.</p>
 </dd>
 
-### -field <b>fArray</b>
+### -field fArray
 
 <dd>
 <p>Receives a Boolean value that indicates whether the symbol is an array.  <b>fArray</b> is <b>FALSE</b> if the symbol is not an array and <b>TRUE</b> if it is.</p>
 </dd>
 
-### -field <b>fStruct</b>
+### -field fStruct
 
 <dd>
 <p>Receives a Boolean value that indicates whether the symbol is a structure.  <b>fStruct</b> is <b>FALSE</b> if the symbol is not a structure and <b>TRUE</b> if it is.</p>
 </dd>
 
-### -field <b>fConstant</b>
+### -field fConstant
 
 <dd>
 <p>Receives a Boolean value that indicates whether the symbol is a constant.  <b>fConstant</b> is <b>FALSE</b> if the symbol is not a constant and <b>TRUE</b> if it is.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd></dd>
 </dl>
@@ -317,7 +317,7 @@ typedef struct _SYM_DUMP_PARAM {
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>
@@ -340,4 +340,4 @@ typedef struct _SYM_DUMP_PARAM {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20SYM_DUMP_PARAM structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20SYM_DUMP_PARAM structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

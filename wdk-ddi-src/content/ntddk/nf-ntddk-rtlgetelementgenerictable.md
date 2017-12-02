@@ -7,7 +7,7 @@ old-location: ifsk\rtlgetelementgenerictable.htm
 old-project: ifsk
 ms.assetid: 85b5fce8-eac4-4cd8-9a24-22564aae915a
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlGetElementGenericTable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ PVOID RtlGetElementGenericTable(
 ## -parameters
 <dl>
 
-### -param <i>Table</i> [in]
+### -param Table [in]
 
 <dd>
 <p>Pointer to the generic table (<a href="..\ntddk\ns-ntddk--rtl-generic-table.md">RTL_GENERIC_TABLE</a>) from which the <i>I</i>th element is to be retrieved. The table must have been initialized by calling <b>RtlInitializeGenericTable</b>.</p>
 </dd>
 
-### -param <i>I</i> [in]
+### -param I [in]
 
 <dd>
 <p>Index of the element selected. This value is zero-based, so the index of the last-inserted element currently in <i>Table</i> is always one less than the value returned by <b>RtlNumberGenericTableElements</b>. </p>
@@ -161,4 +161,4 @@ PVOID RtlGetElementGenericTable(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetElementGenericTable routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetElementGenericTable routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

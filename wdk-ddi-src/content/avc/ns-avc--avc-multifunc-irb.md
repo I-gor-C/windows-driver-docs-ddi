@@ -66,67 +66,67 @@ typedef struct _AVC_MULTIFUNC_IRB {
 ## -struct-fields
 <dl>
 
-### -field <b>Common</b>
+### -field Common
 
 <dd>
 <p> I/O Request Block (IRB) header structure where a function number is stored.</p>
 </dd>
 
-### -field <b>PinCount</b>
+### -field PinCount
 
 <dd>
 <p>Used with AVC_FUNCTION_GET_PIN_COUNT.</p>
 </dd>
 
-### -field <b>PinDescriptor</b>
+### -field PinDescriptor
 
 <dd>
 <p>Used with AVC_FUNCTION_GET_PIN_DESCRIPTOR.</p>
 </dd>
 
-### -field <b>PreConnectInfo</b>
+### -field PreConnectInfo
 
 <dd>
 <p>Used with AVC_FUNCTION_GET_CONNECT_INFO.</p>
 </dd>
 
-### -field <b>SetConnectInfo</b>
+### -field SetConnectInfo
 
 <dd>
 <p>Used with AVC_FUNCTION_SET_CONNECT_INFO.</p>
 </dd>
 
-### -field <b>PinId</b>
+### -field PinId
 
 <dd>
 <p>Used with AVC_FUNCTION_ACQUIRE, <b>AVC_FUNCTION_RELEASE</b> and AVC_FUNCTION_CLR_CONNECTINFO.</p>
 </dd>
 
-### -field <b>ExtPlugCounts</b>
+### -field ExtPlugCounts
 
 <dd>
 <p>Used with AVC_FUNCTION_GET_EXT_PLUG_COUNTS.</p>
 </dd>
 
-### -field <b>UniqueID</b>
+### -field UniqueID
 
 <dd>
 <p>Used with AVC_FUNCTION_GET_UNIQUE_ID.</p>
 </dd>
 
-### -field <b>PeerLocator</b>
+### -field PeerLocator
 
 <dd>
 <p>Used with AVC_FUNCTION_PEER_DO_LOCATOR.</p>
 </dd>
 
-### -field <b>PeerList</b>
+### -field PeerList
 
 <dd>
 <p>Used with AVC_FUNCTION_PEER_DO_LIST.</p>
 </dd>
 
-### -field <b>Subunits</b>
+### -field Subunits
 
 <dd>
 <p>Used with AVC_FUNCTION_GET_SUBUNIT_INFO.</p>

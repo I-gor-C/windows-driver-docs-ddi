@@ -57,19 +57,19 @@ VOID IoInitializeIrp(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>Pointer to the IRP to be initialized.</p>
 </dd>
 
-### -param <i>PacketSize</i> [in]
+### -param PacketSize [in]
 
 <dd>
 <p>Specifies the size in bytes of the IRP.</p>
 </dd>
 
-### -param <i>StackSize</i> [in]
+### -param StackSize [in]
 
 <dd>
 <p>Specifies the number of stack locations in the IRP. </p>
@@ -180,10 +180,10 @@ VOID IoInitializeIrp(
 <a href="..\wdm\nf-wdm-iosetnextirpstacklocation.md">IoSetNextIrpStackLocation</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iosizeofirp.md">IoSizeOfIrp</a>
+<a href="..\wdm\nf-wdm-iosizeofirp.md">IoSizeOfIrp</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 </dl>
 <p> </p>

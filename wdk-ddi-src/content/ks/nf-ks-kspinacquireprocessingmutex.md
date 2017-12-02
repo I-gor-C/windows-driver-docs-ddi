@@ -54,7 +54,7 @@ void KsPinAcquireProcessingMutex(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure for which to acquire the processing mutex.</p>
@@ -65,7 +65,7 @@ void KsPinAcquireProcessingMutex(
 <p>None</p>
 
 ## -remarks
-<p>For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 ## -requirements
 <table>

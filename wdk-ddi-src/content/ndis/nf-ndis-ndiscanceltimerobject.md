@@ -7,7 +7,7 @@ old-location: netvista\ndiscanceltimerobject.htm
 old-project: netvista
 ms.assetid: b66652b7-2e02-49f5-a7e3-60ff35363a19
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisCancelTimerObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ BOOLEAN NdisCancelTimerObject(
 ## -parameters
 <dl>
 
-### -param <i>TimerObject</i> [in]
+### -param TimerObject [in]
 
 <dd>
 <p>A handle to a timer object that NDIS provides when a driver calls the 
@@ -94,7 +94,7 @@ BOOLEAN NdisCancelTimerObject(
 <p>If  the caller of
     <b>NdisCancelTimerObject</b> is canceling a one-shot timer, the caller is required to have a separate synchronization mechanism to ensure the timer is not currently running on another processor. For example, the caller could call <a href="https://msdn.microsoft.com/library/windows/hardware/ff567897">NDIS_WAIT_FOR_MUTEX</a> in order to wait for the timer thread to signal a mutex object when the thread is about to complete.</p>
 
-<p>For more information, see <a href="NULL">Synchronization and Notification in Network Drivers</a>.</p>
+<p>For more information, see <a href="netvista.synchronization_and_notification_in_network_drivers">Synchronization and Notification in Network Drivers</a>.</p>
 
 ## -requirements
 <table>
@@ -168,4 +168,4 @@ BOOLEAN NdisCancelTimerObject(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCancelTimerObject function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCancelTimerObject function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

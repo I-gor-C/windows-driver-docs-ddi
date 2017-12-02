@@ -57,19 +57,19 @@ typedef struct _SECTION_OBJECT_POINTERS {
 ## -struct-fields
 <dl>
 
-### -field <b>DataSectionObject</b>
+### -field DataSectionObject
 
 <dd>
 <p>Opaque pointer to a data section object (that is, a <b>CONTROL_AREA</b> structure) that is used to track state information for a data file stream. Memory manager sets this member when the operating system first caches the data stream. A <b>NULL</b> value indicates that the data stream is <u>currently</u> not in memory; this value, however, can change at any time.</p>
 </dd>
 
-### -field <b>SharedCacheMap</b>
+### -field SharedCacheMap
 
 <dd>
 <p>Opaque pointer to a cache map object (that is, a <b>SHARED_CACHE_MAP</b> structure) that is used to track views that are mapped to the data file stream. Cache manager sets this member when the operating system first caches the stream. A <b>NULL</b> value indicates that the data stream is <pre class="syntax">currently</pre> not cached; this value, however, can change at any time.</p>
 </dd>
 
-### -field <b>ImageSectionObject</b>
+### -field ImageSectionObject
 
 <dd>
 <p>Opaque pointer to an image section object (that is, a <b>CONTROL_AREA</b> structure) that is used to track state information for an executable file stream. Memory manager sets this member whenever an executable image section is created for the stream. A <b>NULL</b> value indicates that the executable image is <u>currently</u> not in memory; this value, however, can change at any time. </p>

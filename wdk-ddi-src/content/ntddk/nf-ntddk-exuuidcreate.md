@@ -54,7 +54,7 @@ NTSTATUS ExUuidCreate(
 ## -parameters
 <dl>
 
-### -param <i>Uuid</i> [out]
+### -param Uuid [out]
 
 <dd>
 <p>A pointer to a caller-allocated UUID (GUID) structure that is set to a new UUID value. </p>

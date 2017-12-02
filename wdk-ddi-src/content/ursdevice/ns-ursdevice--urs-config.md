@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains pointers to event callback functions implemented by the URS client driver for a USB dual-role controller. Initialize this structure by calling <a href="buses.urs_config_init">URS_CONFIG_INIT</a>.</p>
+<p>Contains pointers to event callback functions implemented by the URS client driver for a USB dual-role controller. Initialize this structure by calling <a href="..\ursdevice\nf-ursdevice-urs-config-init.md">URS_CONFIG_INIT</a>.</p>
 
 
 ## -syntax
@@ -58,28 +58,28 @@ typedef struct _URS_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure.</p>
 </dd>
 
-### -field <b>HostInterfaceType</b>
+### -field HostInterfaceType
 
 <dd>
-<p>A <a href="buses.urs_host_interface_type">URS_HOST_INTERFACE_TYPE</a> type value that indicates the type of USB host controller: EHCI, xHCI, or other.</p>
+<p>A <a href="..\urstypes\ne-urstypes--urs-host-interface-type.md">URS_HOST_INTERFACE_TYPE</a> type value that indicates the type of USB host controller: EHCI, xHCI, or other.</p>
 </dd>
 
-### -field <b>EvtUrsFilterRemoveResourceRequirements</b>
+### -field EvtUrsFilterRemoveResourceRequirements
 
 <dd>
 <p>A pointer to an <a href="buses.evt_urs_device_filter_resource_requirements">EVT_URS_DEVICE_FILTER_RESOURCE_REQUIREMENTS</a> callback function.</p>
 </dd>
 
-### -field <b>EvtUrsSetRole</b>
+### -field EvtUrsSetRole
 
 <dd>
-<p>A pointer to an <a href="buses.evt_urs_set_role">EVT_URS_SET_ROLE</a> callback function.</p>
+<p>A pointer to an <a href="..\ursdevice\nc-ursdevice-evt-urs-set-role.md">EVT_URS_SET_ROLE</a> callback function.</p>
 </dd>
 </dl>
 
@@ -111,10 +111,10 @@ typedef struct _URS_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ursdeviceinitialize">UrsDeviceInitialize</a>
+<a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a>
 </dt>
 <dt>
-<a href="buses.urs_config_init">URS_CONFIG_INIT</a>
+<a href="..\ursdevice\nf-ursdevice-urs-config-init.md">URS_CONFIG_INIT</a>
 </dt>
 </dl>
 <p> </p>

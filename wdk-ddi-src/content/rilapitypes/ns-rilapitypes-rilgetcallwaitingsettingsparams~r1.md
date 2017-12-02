@@ -7,7 +7,7 @@ old-location: netvista\rilgetcallwaitingsettingsparams_2.htm
 old-project: netvista
 ms.assetid: 87d6c7a0-04ad-4a4e-89c2-7e5d581bd543
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILGETCALLWAITINGSETTINGSPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILGETCALLWAITINGSETTINGSPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>fAllClasses</b>
+### -field fAllClasses
 
 <dd></dd>
 
-### -field <b>dwInfoClasses</b>
+### -field dwInfoClasses
 
 <dd></dd>
 </dl>

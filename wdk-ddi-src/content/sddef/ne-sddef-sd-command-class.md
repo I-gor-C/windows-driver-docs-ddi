@@ -7,7 +7,7 @@ old-location: sd\sd_command_class.htm
 old-project: SD
 ms.assetid: 2c82db4c-70b1-4601-a0b0-23b1f53e3503
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/30/2017
 ms.keywords: PSCSIWMIGUIDREGINFO, SCSIWMIGUIDREGINFO, *PSCSIWMIGUIDREGINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="SDCC_STANDARD"></a><a id="sdcc_standard"></a><b>SDCC_STANDARD</b>
+### -field SDCC_STANDARD
 
 <dd>
 <p>Indicates an SD card command from the standard command set. This command set includes command codes 0 to 63.</p>
 </dd>
 
-### -field <a id="SDCC_APP_CMD"></a><a id="sdcc_app_cmd"></a><b>SDCC_APP_CMD</b>
+### -field SDCC_APP_CMD
 
 <dd>
 <p>Indicates an SD command from the application command set. This command set includes command codes 0 to 63, preceded by the application command escape code 55.</p>
@@ -95,4 +95,4 @@ typedef enum  {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SD_COMMAND_CLASS enumeration%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SD_COMMAND_CLASS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

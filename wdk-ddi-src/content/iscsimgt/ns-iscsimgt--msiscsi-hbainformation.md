@@ -74,55 +74,55 @@ typedef struct _MSiSCSI_HBAInformation {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueAdapterId</b>
+### -field UniqueAdapterId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). </p>
 </dd>
 
-### -field <b>IntegratedTCPIP</b>
+### -field IntegratedTCPIP
 
 <dd>
 <p>A Boolean value that indicates if the Windows TCP/IP stack manages TCP/IP traffic for the HBA. If this member is <b>TRUE</b>, the Windows TCP/IP stack manages TCP/IP traffic for the HBA. If this member is <b>FALSE</b>, the Windows TCP/IP stack does not manage TCP/IP traffic for the HBA. A miniport driver for an adapter with its own TCP/IP stack should set this member to <b>FALSE</b>.</p>
 </dd>
 
-### -field <b>RequiresBinaryIpAddresses</b>
+### -field RequiresBinaryIpAddresses
 
 <dd>
 <p>A Boolean value that indicates whether the miniport driver for the HBA instructs the iSCSI initiator service to perform DNS lookup and provide the HBA with binary IP addresses. If this member is <b>TRUE</b>, the miniport driver for the HBA instructs the iSCSI initiator service to perform DNS lookup and provide the HBA with binary IP addresses. For the iSCSI initiator service to honor this request, the HBA must be on the same network as the Windows TCP/IP stack. If <b>RequiresBinaryIpAddresses</b> is <b>FALSE</b>, the HBA and its miniport driver have direct access to DNS. </p>
 </dd>
 
-### -field <b>VersionMin</b>
+### -field VersionMin
 
 <dd>
 <p>The earliest version of the iSCSI specification that the HBA and its miniport driver support. </p>
 </dd>
 
-### -field <b>VersionMax</b>
+### -field VersionMax
 
 <dd>
 <p>The most recent version of the iSCSI specification that the HBA and its miniport driver support. </p>
 </dd>
 
-### -field <b>MultifunctionDevice</b>
+### -field MultifunctionDevice
 
 <dd>
 <p>A Boolean value that indicates whether the HBA is a multifunction device. If this member is <b>TRUE</b>, the HBA is a multifunction device, and it exposes a netcard interface. If this member <b>FALSE</b>, the HBA is not a multifunction device.</p>
 </dd>
 
-### -field <b>CacheValid</b>
+### -field CacheValid
 
 <dd>
 <p>A Boolean value that indicates if the adapter caches are value. If this member is <b>TRUE</b>, the adapter caches are valid. If this member is <b>FALSE</b>, the caches are invalid or the adapter does not cache data. </p>
 </dd>
 
-### -field <b>NumberOfPorts</b>
+### -field NumberOfPorts
 
 <dd>
 <p>The number of ports (or TCP/IP addresses on the adapter).</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The current status of HBA. This member can hold any of the following values:</p>
@@ -167,7 +167,7 @@ typedef struct _MSiSCSI_HBAInformation {
 <p> </p>
 </dd>
 
-### -field <b>FunctionalitySupported</b>
+### -field FunctionalitySupported
 
 <dd>
 <p>A bitwise OR of the flags that define the functionality that the HBA supports. The following table describes the possible flags.</p>
@@ -228,67 +228,67 @@ typedef struct _MSiSCSI_HBAInformation {
 <p> </p>
 </dd>
 
-### -field <b>GenerationalGuid</b>
+### -field GenerationalGuid
 
 <dd>
 <p>The generational GUID. This GUID is the GUID value that the <a href="storage.setgenerationalguid">SetGenerationalGuid</a> method in the <a href="storage.msiscsi_operations_wmi_class">MSiSCSI_Operations WMI Class</a> last set.</p>
 </dd>
 
-### -field <b>MaxCDBLength</b>
+### -field MaxCDBLength
 
 <dd>
 <p>The maximum CDB length, in bytes, that the HBA supports.</p>
 </dd>
 
-### -field <b>BiDiScsiCommands</b>
+### -field BiDiScsiCommands
 
 <dd>
 <p>A Boolean value that indicates if the HBA supports bidirectional SCSI commands. If this member is <b>TRUE</b>, the HBA supports bidirectional SCSI commands. If this member is <b>FALSE</b>, the HBA does not support bidirectional commands.</p>
 </dd>
 
-### -field <b>VendorID</b>
+### -field VendorID
 
 <dd>
 <p>The manufacturer of the HBA.</p>
 </dd>
 
-### -field <b>VendorModel</b>
+### -field VendorModel
 
 <dd>
 <p>A string that specifies the model of the HBA. The manufacturer defines this string.</p>
 </dd>
 
-### -field <b>VendorVersion</b>
+### -field VendorVersion
 
 <dd>
 <p>A string that specifies the version of the HBA. The manufacturer defines this string.</p>
 </dd>
 
-### -field <b>FirmwareVersion</b>
+### -field FirmwareVersion
 
 <dd>
 <p>A string that specifies the version of the firmware in the HBA. The manufacturer defines this string.</p>
 </dd>
 
-### -field <b>AsicVersion</b>
+### -field AsicVersion
 
 <dd>
 <p>A string that specifies the Asic version. The manufacturer defines this string.</p>
 </dd>
 
-### -field <b>OptionRomVersion</b>
+### -field OptionRomVersion
 
 <dd>
 <p>A string that specifies the option ROM version of the HBA. The manufacturer defines this string.</p>
 </dd>
 
-### -field <b>SerialNumber</b>
+### -field SerialNumber
 
 <dd>
 <p>A string that specifies the serial number of the HBA. The manufacturer defines this string.</p>
 </dd>
 
-### -field <b>DriverName</b>
+### -field DriverName
 
 <dd>
 <p>A string that specifies the name of the driver for the HBA.</p>

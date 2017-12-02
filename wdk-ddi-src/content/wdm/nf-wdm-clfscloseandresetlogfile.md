@@ -55,7 +55,7 @@ NTSTATUS ClfsCloseAndResetLogFile(
 ## -parameters
 <dl>
 
-### -param <i>plfoLog</i> [in]
+### -param plfoLog [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure for which references will be released. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>.</p>

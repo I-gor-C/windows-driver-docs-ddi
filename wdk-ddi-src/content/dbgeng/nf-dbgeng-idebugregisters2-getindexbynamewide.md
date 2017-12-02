@@ -7,7 +7,7 @@ old-location: debugger\getindexbynamewide.htm
 old-project: debugger
 ms.assetid: eb6a50b4-275f-42c9-8121-17677971ebb2
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugRegisters2, GetIndexByNameWide, IDebugRegisters2::GetIndexByNameWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ HRESULT GetIndexByNameWide(
 ## -parameters
 <dl>
 
-### -param <i>Name</i> [in]
+### -param Name [in]
 
 <dd>
 <p>Specifies the name of the register whose index is requested.</p>
 </dd>
 
-### -param <i>Index</i> [out]
+### -param Index [out]
 
 <dd>
 <p>Receives the index of the register.</p>
@@ -69,7 +69,7 @@ HRESULT GetIndexByNameWide(
 </dl>
 
 ## -returns
-<p>This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="debugger.hresult_values">HRESULT Values</a>.</p><dl>
+<p>This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>E_NOINTERFACE</b></dt>

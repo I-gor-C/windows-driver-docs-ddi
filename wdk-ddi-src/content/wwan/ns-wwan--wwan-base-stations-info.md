@@ -7,7 +7,7 @@ old-location: netvista\wwan_base_stations_info.htm
 old-project: netvista
 ms.assetid: 66460B28-C2B4-4F05-A133-31A753AF9489
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_BASE_STATIONS_INFO, WWAN_BASE_STATIONS_INFO, *PWWAN_BASE_STATIONS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,121 +74,121 @@ typedef struct _WWAN_BASE_STATIONS_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>SystemType</b>
+### -field SystemType
 
 <dd>
 <p>Indicates the system type (or types) for which serving cell information is valid. This member is a bitmask of one or more system types as defined in the <b>WwanDataClass</b> member of <a href="..\wwan\ns-wwan--wwan-device-caps.md">WWAN_DEVICE_CAPS</a>.</p>
 </dd>
 
-### -field <b>GSMServingCellOffset</b>
+### -field GSMServingCellOffset
 
 <dd>
 <p>The offset in bytes, calculated from the beginning of this structure, to the buffer containing the GSM serving cell information. This member can be NULL when the technology of the serving cell is not GSM.</p>
 </dd>
 
-### -field <b>GSMServingCellSize</b>
+### -field GSMServingCellSize
 
 <dd>
 <p>The size, in bytes, used for the buffer containing the GSM serving cell info, which is formatted as <a href="..\wwan\ns-wwan--wwan-gsm-serving-cell-info.md">WWAN_GSM_SERVING_CELL_INFO</a>.</p>
 </dd>
 
-### -field <b>UMTSServingCellOffset</b>
+### -field UMTSServingCellOffset
 
 <dd>
 <p>The offset in bytes, calculated from the beginning of this structure, to the buffer containing the UMTS serving cell information. This member can be NULL when the technology of serving cell is not UMTS.</p>
 </dd>
 
-### -field <b>UMTSServingCellSize</b>
+### -field UMTSServingCellSize
 
 <dd>
 <p>The size, in bytes, used for the buffer containing the UMTS serving cell info, which is formatted as <a href="..\wwan\ns-wwan--wwan-umts-serving-cell-info.md">WWAN_UMTS_SERVING_CELL_INFO</a>.</p>
 </dd>
 
-### -field <b>TDSCDMAServingCellOffset</b>
+### -field TDSCDMAServingCellOffset
 
 <dd>
 <p>The offset in bytes, calculated from the beginning of this structure, to the buffer containing the TDSCDMA serving cell information. This member can be NULL when the technology of serving cell is not TDSCDMA.</p>
 </dd>
 
-### -field <b>TDSCDMAServingCellSize</b>
+### -field TDSCDMAServingCellSize
 
 <dd>
 <p>The size, in bytes, used for the buffer containing the TDSCDMA serving cell info, which is formatted as <a href="..\wwan\ns-wwan--wwan-tdscdma-serving-cell-info.md">WWAN_TDSCDMA_SERVING_CELL_INFO</a>.</p>
 </dd>
 
-### -field <b>LTEServingCellOffset</b>
+### -field LTEServingCellOffset
 
 <dd>
 <p>The offset in bytes, calculated from the beginning of this structure, to the buffer containing the LTE serving cell information. This member can be NULL when the technology of serving cell is not LTE.</p>
 </dd>
 
-### -field <b>LTEServingCellSize</b>
+### -field LTEServingCellSize
 
 <dd>
 <p>The size, in bytes, used for the buffer containing the LTE serving cell info, which is formatted as <a href="..\wwan\ns-wwan--wwan-lte-serving-cell-info.md">WWAN_LTE_SERVING_CELL_INFO</a>.</p>
 </dd>
 
-### -field <b>GSMNmrOffset</b>
+### -field GSMNmrOffset
 
 <dd>
 <p>The offset in bytes, calculated from the beginning of this structure, to the buffer containing the GSM network measurement report. This member can be NULL when no GSM neighboring network is returned in the measurement report.</p>
 </dd>
 
-### -field <b>GSMNmrSize</b>
+### -field GSMNmrSize
 
 <dd>
 <p>The size, in bytes, of the buffer containing the GSM network measurement report (NMR), which is formatted as <a href="..\wwan\ns-wwan--wwan-gsm-nmr.md">WWAN_GSM_NMR</a>.</p>
 </dd>
 
-### -field <b>UMTSMrlOffset</b>
+### -field UMTSMrlOffset
 
 <dd>
 <p>The offset in bytes, calculated from the beginning of this structure, to the buffer containing UMTS measured results list. This member can be NULL when no UMTS neighboring network is returned in the measurement report.</p>
 </dd>
 
-### -field <b>UMTSMrlSize</b>
+### -field UMTSMrlSize
 
 <dd>
 <p>The size, in bytes, of the buffer containing the UMTS measured results list (MRL), which is formatted as <a href="..\wwan\ns-wwan--wwan-umts-mrl.md">WWAN_UMTS_MRL</a>.</p>
 </dd>
 
-### -field <b>TDSCDMAMrlOffset</b>
+### -field TDSCDMAMrlOffset
 
 <dd>
 <p>The offset in bytes, calculated from the beginning of this structure, to the buffer containing TDSCDMA measured results list. This member can be NULL when no TDSCDMA neighboring network is returned in the measurement report.</p>
 </dd>
 
-### -field <b>TDSCDMAMrlSize</b>
+### -field TDSCDMAMrlSize
 
 <dd>
 <p>The size, in bytes, of the buffer containing the TDSCDMA measured results list (MRL), which is formatted as <a href="..\wwan\ns-wwan--wwan-tdscdma-mrl.md">WWAN_TDSCDMA_MRL</a>.</p>
 </dd>
 
-### -field <b>LTEMrlOffset</b>
+### -field LTEMrlOffset
 
 <dd>
 <p>The offset in bytes, calculated from the beginning of this structure, to the buffer containing LTE measured results list. This member can be NULL when no LTE neighboring network is returned in the measurement report.</p>
 </dd>
 
-### -field <b>LTEMrlSize</b>
+### -field LTEMrlSize
 
 <dd>
 <p>The size, in bytes, of the buffer containing the LTE measured results list (MRL), which is formatted as <a href="..\wwan\ns-wwan--wwan-lte-mrl.md">WWAN_LTE_MRL</a>.</p>
 </dd>
 
-### -field <b>CDMAMrlOffset</b>
+### -field CDMAMrlOffset
 
 <dd>
 <p>The offset in bytes, calculated from the beginning of this structure, to the buffer containing CDMA measured results list. This member can be NULL when no CDMA neighboring network is returned in the measurement report.</p>
 </dd>
 
-### -field <b>CDMAMrlSize</b>
+### -field CDMAMrlSize
 
 <dd>
 <p>The size, in bytes, of the buffer containing the CDMA measured results list (MRL), which is formatted as <a href="..\wwan\ns-wwan--wwan-cdma-mrl.md">WWAN_CDMA_MRL</a>.</p>
 </dd>
 
-### -field <b>BaseStationsData[ANYSIZE_ARRAY]</b>
+### -field BaseStationsData[ANYSIZE_ARRAY]
 
 <dd>
 <p>The data buffer containing the base stations information. This buffer is where the structures specified by the other members of <b>WWAN_BASE_STATIONS_INFO</b> reside: <b>WWAN_GSM_SERVING_CELL_INFO</b>, <b>WWAN_UMTS_SERVING_CELL_INFO</b>, <b>WWAN_TDSCDMA_SERVING_CELL_INFO</b>, <b>WWAN_LTE_SERVING_CELL_INFO</b>, <b>WWAN_GSM_NMR</b>, <b>WWAN_UMTS_MRL</b>, <b>WWAN_TDSCDMA_MRL</b>, <b>WWAN_LTE_MRL</b>, and <b>WWAN_CDMA_MRL</b>.</p>
@@ -261,4 +261,4 @@ typedef struct _WWAN_BASE_STATIONS_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_BASE_STATIONS_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_BASE_STATIONS_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

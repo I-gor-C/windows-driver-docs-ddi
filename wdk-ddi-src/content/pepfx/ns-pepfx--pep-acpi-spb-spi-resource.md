@@ -59,31 +59,31 @@ typedef struct _PEP_ACPI_SPB_SPI_RESOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>SpbCommon</b>
+### -field SpbCommon
 
 <dd>
 <p>A <a href="..\pepfx\ns-pepfx--pep-acpi-spb-resource.md">PEP_ACPI_SPB_RESOURCE</a> structure describing this resource.</p>
 </dd>
 
-### -field <b>ConnectionSpeed</b>
+### -field ConnectionSpeed
 
 <dd>
 <p>The maximum speed, in hertz, supported by this connection.</p>
 </dd>
 
-### -field <b>DataBitLength</b>
+### -field DataBitLength
 
 <dd>
 <p>The size, in bits, of the smallest unit of transfer.</p>
 </dd>
 
-### -field <b>Phase</b>
+### -field Phase
 
 <dd>
 <p>The phase of the clock pulse on which to capture data.</p>
 </dd>
 
-### -field <b>Polarity</b>
+### -field Polarity
 
 <dd>
 <p>The polarity of the clock. If zero, this indicates the
@@ -91,7 +91,7 @@ clock is low during the first phase. If 1, this indicates the
 clock is high during the first phase.</p>
 </dd>
 
-### -field <b>DeviceSelection</b>
+### -field DeviceSelection
 
 <dd>
 <p>The device selection value. This value is

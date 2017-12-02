@@ -56,19 +56,19 @@ typedef struct D3D11_1_DDI_BLEND_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>AlphaToCoverageEnable</b>
+### -field AlphaToCoverageEnable
 
 <dd>
 <p>[in] A Boolean value that specifies whether transparency coverage is enabled. <b>TRUE</b> indicates transparency coverage is enabled; <b>FALSE</b> indicates transparency coverage is disabled. This member is relevant for multiple-sample antialiasing only.</p>
 </dd>
 
-### -field <b>IndependentBlendEnable</b>
+### -field IndependentBlendEnable
 
 <dd>
 <p>[in] A Boolean value that specifies only whether the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-calcprivateblendstatesize.md">CalcPrivateBlendStateSize(D3D11_1)</a> function replicated the first entry in the array that the <b>RenderTarget</b> member specifies to the other entries of that array. <b>TRUE</b> indicates the first entry was not replicated; <b>FALSE</b> indicates that the first entry in the array in the <b>RenderTarget</b> member is replicated to the other entries of the array.</p>
 </dd>
 
-### -field <b>RenderTarget</b>
+### -field RenderTarget
 
 <dd>
 <p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1-ddi-render-target-blend-desc.md">D3D11_1_DDI_RENDER_TARGET_BLEND_DESC</a> structures that indicate the blend state for each associated render target.</p>

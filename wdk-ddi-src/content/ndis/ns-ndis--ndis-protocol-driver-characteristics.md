@@ -7,7 +7,7 @@ old-location: netvista\ndis_protocol_driver_characteristics.htm
 old-project: netvista
 ms.assetid: db64c160-9db6-4b23-af14-e64acdb9ef57
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PROTOCOL_DRIVER_CHARACTERISTICS, NDIS_PROTOCOL_DRIVER_CHARACTERISTICS, *PNDIS_PROTOCOL_DRIVER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,7 +75,7 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -89,7 +89,7 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_2"></a><a id="ndis_protocol_driver_characteristics_revision_2"></a>NDIS_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_2
+### -field NDIS_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_2
 
 <dd>
 <p>Added the 
@@ -99,7 +99,7 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
         NDIS_SIZEOF_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_2.</p>
 </dd>
 
-### -field <a id="NDIS_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_1"></a><a id="ndis_protocol_driver_characteristics_revision_1"></a>NDIS_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_1
+### -field NDIS_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.0.</p>
@@ -110,14 +110,14 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
 </dl>
 </dd>
 
-### -field <b>MajorNdisVersion</b>
+### -field MajorNdisVersion
 
 <dd>
 <p>The major version of the NDIS library the protocol driver is using. The current value is
      0x06.</p>
 </dd>
 
-### -field <b>MinorNdisVersion</b>
+### -field MinorNdisVersion
 
 <dd>
 <p>The minor NDIS version. The following are the available minor version value settings.</p>
@@ -238,40 +238,40 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
 <p> </p>
 </dd>
 
-### -field <b>MajorDriverVersion</b>
+### -field MajorDriverVersion
 
 <dd>
 <p>Reserved for the major version number of the protocol driver. Protocol drivers can specify any
      value that they require.</p>
 </dd>
 
-### -field <b>MinorDriverVersion</b>
+### -field MinorDriverVersion
 
 <dd>
 <p>Reserved for the minor version number of the protocol driver. Protocol drivers can specify any
      value that they require.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for NDIS. Protocol drivers should set this member to zero.</p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>A Unicode string that is the service name of the protocol driver.</p>
 </dd>
 
-### -field <b>SetOptionsHandler</b>
+### -field SetOptionsHandler
 
 <dd>
 <p>The entry point for the 
      <a href="..\ndis\nc-ndis-set-options.md">ProtocolSetOptions</a> function.</p>
 </dd>
 
-### -field <b>BindAdapterHandlerEx</b>
+### -field BindAdapterHandlerEx
 
 <dd>
 <p>The entry point for the 
@@ -279,7 +279,7 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
      ProtocolBindAdapterEx</a> function.</p>
 </dd>
 
-### -field <b>UnbindAdapterHandlerEx</b>
+### -field UnbindAdapterHandlerEx
 
 <dd>
 <p>The entry point for the 
@@ -287,7 +287,7 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
      ProtocolUnbindAdapterEx</a> function.</p>
 </dd>
 
-### -field <b>OpenAdapterCompleteHandlerEx</b>
+### -field OpenAdapterCompleteHandlerEx
 
 <dd>
 <p>The entry point for the 
@@ -295,7 +295,7 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
      ProtocolOpenAdapterCompleteEx</a> function.</p>
 </dd>
 
-### -field <b>CloseAdapterCompleteHandlerEx</b>
+### -field CloseAdapterCompleteHandlerEx
 
 <dd>
 <p>The entry point for the 
@@ -303,14 +303,14 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
      ProtocolCloseAdapterCompleteEx</a> function.</p>
 </dd>
 
-### -field <b>NetPnPEventHandler</b>
+### -field NetPnPEventHandler
 
 <dd>
 <p>The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol-net-pnp-event.md">ProtocolNetPnPEvent</a> function.</p>
 </dd>
 
-### -field <b>UninstallHandler</b>
+### -field UninstallHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -318,7 +318,7 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
      or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>OidRequestCompleteHandler</b>
+### -field OidRequestCompleteHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -326,7 +326,7 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
      ProtocolOidRequestComplete</a> function.</p>
 </dd>
 
-### -field <b>StatusHandlerEx</b>
+### -field StatusHandlerEx
 
 <dd>
 <p>The entry point of the caller's 
@@ -334,7 +334,7 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
      <b>NULL</b>.</p>
 </dd>
 
-### -field <b>ReceiveNetBufferListsHandler</b>
+### -field ReceiveNetBufferListsHandler
 
 <dd>
 <p>The entry point for the 
@@ -342,7 +342,7 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
      ProtocolReceiveNetBufferLists</a> function.</p>
 </dd>
 
-### -field <b>SendNetBufferListsCompleteHandler</b>
+### -field SendNetBufferListsCompleteHandler
 
 <dd>
 <p>The entry point for the 
@@ -350,7 +350,7 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
      ProtocolSendNetBufferListsComplete</a> function.</p>
 </dd>
 
-### -field <b>DirectOidRequestCompleteHandler</b>
+### -field DirectOidRequestCompleteHandler
 
 <dd>
 <p>The entry point of the caller's 
@@ -440,4 +440,4 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROTOCOL_DRIVER_CHARACTERISTICS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROTOCOL_DRIVER_CHARACTERISTICS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

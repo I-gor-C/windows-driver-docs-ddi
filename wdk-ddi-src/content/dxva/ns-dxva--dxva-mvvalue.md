@@ -55,13 +55,13 @@ typedef struct _DXVA_MVvalue {
 ## -struct-fields
 <dl>
 
-### -field <b>horz</b>
+### -field horz
 
 <dd>
 <p>Specifies the horizontal component of the value of a motion vector. Contains a signed integer motion offset in half-sample units. The value of this member will be an even integer if the <b>bMVprecisionAndChromaRelation</b> member of <a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a> equals 2 (H.261-style motion supporting only integer-sample offsets).</p>
 </dd>
 
-### -field <b>vert</b>
+### -field vert
 
 <dd>
 <p>Specifies the vertical component of the value of a motion vector. Contains a signed integer motion offset in half-sample units. The value of this member will be an even integer if the <b>bMVprecisionAndChromaRelation</b> member of <a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a> equals 2 (H.261-style motion supporting only integer-sample offsets).</p>

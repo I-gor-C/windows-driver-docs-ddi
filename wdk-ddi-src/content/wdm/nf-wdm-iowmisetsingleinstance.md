@@ -59,31 +59,31 @@ NTSTATUS IoWMISetSingleInstance(
 ## -parameters
 <dl>
 
-### -param <i>DataBlockObject</i> [in]
+### -param DataBlockObject [in]
 
 <dd>
 <p>Pointer to a WMI data block object. The caller opens the data block object for the WMI class with the <a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a> routine. The object must be opened with the WMIGUID_SET access right. </p>
 </dd>
 
-### -param <i>InstanceName</i> [in]
+### -param InstanceName [in]
 
 <dd>
 <p>Specifies the name of the instance of the data block. This value corresponds to the value of the <b>InstanceName</b> property for the block.</p>
 </dd>
 
-### -param <i>Version</i> [in]
+### -param Version [in]
 
 <dd>
 <p>Reserved for future use. Callers must set this parameter to zero.</p>
 </dd>
 
-### -param <i>ValueBufferSize</i> [in]
+### -param ValueBufferSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer passed in the <i>ValueBuffer</i> parameter.</p>
 </dd>
 
-### -param <i>ValueBuffer</i> [in]
+### -param ValueBuffer [in]
 
 <dd>
 <p>Pointer to the buffer that contains the new values for the properties within the data block.</p>

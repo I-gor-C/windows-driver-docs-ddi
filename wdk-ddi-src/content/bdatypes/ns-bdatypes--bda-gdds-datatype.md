@@ -55,11 +55,11 @@ typedef struct _BDA_GDDS_DATATYPE {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>uuidDataType</b>
+### -field uuidDataType
 
 <dd></dd>
 </dl>

@@ -55,7 +55,7 @@ HRESULT SendBidiQuery(
 ## -parameters
 <dl>
 
-### -param <i>bstrBidiQuery</i> [in]
+### -param bstrBidiQuery [in]
 
 <dd>
 <p>The specified query.</p>

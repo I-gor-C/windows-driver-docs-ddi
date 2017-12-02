@@ -7,7 +7,7 @@ old-location: netvista\wwan_gsm_nmr.htm
 old-project: netvista
 ms.assetid: ADEEB57F-79FF-4AA7-84AF-FED413E47057
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_GSM_NMR, WWAN_GSM_NMR, *PWWAN_GSM_NMR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ typedef struct _WWAN_GSM_NMR {
 ## -struct-fields
 <dl>
 
-### -field <b>ElementCount</b>
+### -field ElementCount
 
 <dd>
 <p>The count of NMR entries following this member.</p>
 </dd>
 
-### -field <b>GSMNmr[ANYSIZE_ARRAY]</b>
+### -field GSMNmr[ANYSIZE_ARRAY]
 
 <dd>
 <p>The array of NMR records, each specified as a <a href="..\wwan\ns-wwan--wwan-gsm-nmr-info.md">WWAN_GSM_NMR_INFO</a> structure.</p>
@@ -111,4 +111,4 @@ typedef struct _WWAN_GSM_NMR {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_GSM_NMR structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_GSM_NMR structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

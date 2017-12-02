@@ -63,43 +63,43 @@ typedef struct _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2 {
 ## -struct-fields
 <dl>
 
-### -field <b>ContextCount</b>
+### -field ContextCount
 
 <dd>
 <p>The number of contexts in the array that the <b>Context</b> member specifies.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>An array of handles to the contexts that contributed to a display operation.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-setvidpnsourceaddress-flags.md">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a> structure that identifies the type of display operation to perform.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>An integer that identifies a video present source on the display adapter.</p>
 </dd>
 
-### -field <b>PlaneCount</b>
+### -field PlaneCount
 
 <dd>
 <p>The number of overlay planes in the <b>pPlanes</b> list.</p>
 </dd>
 
-### -field <b>pPlanes</b>
+### -field pPlanes
 
 <dd>
 <p>An array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-plane2.md">DXGK_MULTIPLANE_OVERLAY_PLANE2</a> structures that specify the overlay planes to display.</p>
 </dd>
 
-### -field <b>Duration</b>
+### -field Duration
 
 <dd>
 <p>The length of time, in 100 nanoseconds units, between when the current present operation flips to the screen and the next vertical blanking interrupt occurs.</p>

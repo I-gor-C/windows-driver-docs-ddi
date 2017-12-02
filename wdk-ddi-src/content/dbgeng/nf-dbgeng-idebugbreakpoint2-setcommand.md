@@ -7,7 +7,7 @@ old-location: debugger\setcommand.htm
 old-project: debugger
 ms.assetid: 0c9db77e-6e5d-45cd-a52c-dcc3acf5cba0
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugBreakpoint2, SetCommand, IDebugBreakpoint2::SetCommand
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT SetCommand(
 ## -parameters
 <dl>
 
-### -param <i>Command</i> [in]
+### -param Command [in]
 
 <dd>
 <p>The command string that is executed when the breakpoint is triggered.</p>
@@ -68,7 +68,7 @@ HRESULT SetCommand(
 
 <p> </p>
 
-<p>This method can also return error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
+<p>This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.</p>
 
 ## -remarks
 <p>The command string is a list of debugger commands that are separated by semicolons.  These commands are executed every time that the breakpoint is triggered.  The commands are executed before the engine informs any event callbacks that the breakpoint has been triggered.</p>

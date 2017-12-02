@@ -62,49 +62,49 @@ typedef struct _POPULATE_TOKEN_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>PopulateTokenDataLength</b>
+### -field PopulateTokenDataLength
 
 <dd>
 <p>The length of this structure beginning with the <i>Immediate</i> parameter and include all of the elements of the <b>BlockDeviceRangeDescriptor</b> array.</p>
 </dd>
 
-### -field <b>Immediate</b>
+### -field Immediate
 
 <dd>
 <p>If set, the status of the POPULATE TOKEN command is returned immediately after receipt and validation of the range descriptors. Otherwise, status is returned after all command processing is complete.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved bits.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>InactivityTimeout</b>
+### -field InactivityTimeout
 
 <dd>
 <p>The timeout duration for which the copy provider waits for the next command using the token created for this representation of data (ROD). The validity of the token created  for the ROD described by this structure expires at this timeout value.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>BlockDeviceRangeDescriptorListLength</b>
+### -field BlockDeviceRangeDescriptorListLength
 
 <dd>
 <p>The length, in bytes, for all  of the <a href="storage.block_device_range_descriptor">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures in the <b>BlockDeviceRangeDescriptor</b> array.</p>
 </dd>
 
-### -field <b>BlockDeviceRangeDescriptor</b>
+### -field BlockDeviceRangeDescriptor
 
 <dd>
 <p>An array of <a href="storage.block_device_range_descriptor">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the logical blocks representing the file being read from the LUN.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilgetoperatorlistparams.htm
 old-project: netvista
 ms.assetid: 75c8b3b3-4f33-465a-a35c-9d3056a2eb75
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILGETOPERATORLISTPARAMS, RILGETOPERATORLISTPARAMS, *LPRILGETOPERATORLISTPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILGETOPERATORLISTPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwSystemTypes</b>
+### -field dwSystemTypes
 
 <dd></dd>
 </dl>

@@ -55,13 +55,13 @@ typedef struct _D3DHAL_DP2INDEXEDLINELIST {
 ## -struct-fields
 <dl>
 
-### -field <b>wV1</b>
+### -field wV1
 
 <dd>
 <p>Specifies the index into the vertex buffer, identifying the first endpoint of the line.</p>
 </dd>
 
-### -field <b>wV2</b>
+### -field wV2
 
 <dd>
 <p>Specifies the index into the vertex buffer, identifying the second endpoint of the line.</p>

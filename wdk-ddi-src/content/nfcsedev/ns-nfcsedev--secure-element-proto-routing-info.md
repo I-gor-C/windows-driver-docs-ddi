@@ -56,13 +56,13 @@ typedef struct _SECURE_ELEMENT_PROTO_ROUTING_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>guidSecureElementId</b>
+### -field guidSecureElementId
 
 <dd>
 <p>Secure element unique identifier returned by enumeration DDI.</p>
 </dd>
 
-### -field <b>eRfProtocolType</b>
+### -field eRfProtocolType
 
 <dd>
 <p>NFC Forum RF protocol.</p>

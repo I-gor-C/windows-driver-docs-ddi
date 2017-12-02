@@ -59,37 +59,37 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_PLANE2 {
 ## -struct-fields
 <dl>
 
-### -field <b>LayerIndex</b>
+### -field LayerIndex
 
 <dd>
 <p>The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.</p>
 </dd>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>Indicates whether the overlay plane specified by <b>LayerIndex</b> is enabled for display.</p>
 </dd>
 
-### -field <b>AllocationSegment</b>
+### -field AllocationSegment
 
 <dd>
 <p>The identifier of a segment that data is read from.</p>
 </dd>
 
-### -field <b>AllocationAddress</b>
+### -field AllocationAddress
 
 <dd>
 <p>A <b>PHYSICAL_ADDRESS</b> data type (which is defined as <b>LARGE_INTEGER</b>) that indicates the physical address within the segment that <b>AllocationSegment</b> specifies, where the data is read.</p>
 </dd>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>A handle to the allocation to be displayed on the overlay plane.</p>
 </dd>
 
-### -field <b>PlaneAttributes</b>
+### -field PlaneAttributes
 
 <dd>
 <p>A structure of type <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-attributes2.md">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2</a> that specifies overlay plane attributes.</p>

@@ -56,19 +56,19 @@ typedef struct _SENDCMDOUTPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>cBufferSize</b>
+### -field cBufferSize
 
 <dd>
 <p>Contains the size in bytes of the buffer pointed to by <b>bBuffer</b>. </p>
 </dd>
 
-### -field <b>DriverStatus</b>
+### -field DriverStatus
 
 <dd>
 <p>Contains a <a href="..\ntdddisk\ns-ntdddisk--driverstatus.md">DRIVERSTATUS</a> structure that indicates the driver status. </p>
 </dd>
 
-### -field <b>bBuffer</b>
+### -field bBuffer
 
 <dd>
 <p>Pointer to a buffer in which to store the data read from the drive.</p>

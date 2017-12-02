@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_create_srq.htm
 old-project: netvista
 ms.assetid: 83125C65-021F-4EEE-8819-B73752908DE7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,61 +66,61 @@ NTSTATUS NdkCreateSrq(
 ## -parameters
 <dl>
 
-### -param <i>pNdkPd</i> [in]
+### -param pNdkPd [in]
 
 <dd>
 <p>A pointer to an NDK protection domain (PD) object (<a href="..\ndkpi\ns-ndkpi--ndk-pd.md">NDK_PD</a>).</p>
 </dd>
 
-### -param <i>SrqDepth</i> [in]
+### -param SrqDepth [in]
 
 <dd>
 <p>The maximum number of receive requests that can be outstanding over the SRQ. This value  must be less than or equal to the value in the <b>MaxSrqDepth</b> member that is specified in the <a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a> structure.</p>
 </dd>
 
-### -param <i>MaxReceiveRequestSge</i> [in]
+### -param MaxReceiveRequestSge [in]
 
 <dd>
 <p>The maximum number of SGEs that are supported in a single receive request. This value must be less than or equal to the value in the <b>MaxReceiveRequestSge</b> member that is specified in the NDK_ADAPTER_INFO structure.</p>
 </dd>
 
-### -param <i>NotifyThreshold</i> [in]
+### -param NotifyThreshold [in]
 
 <dd>
 <p>The minimum number of queued receive requests for triggering SRQ notification callbacks.</p>
 </dd>
 
-### -param <i>SrqNotification</i> [in, optional]
+### -param SrqNotification [in, optional]
 
 <dd>
 <p>An optional <i>NdkSrqNotificationCallback</i> function(<a href="..\ndkpi\nc-ndkpi-ndk-fn-srq-notification-callback.md">NDK_FN_SRQ_NOTIFICATION_CALLBACK</a>) which the provider calls if the  queued receive request count falls below the threshold that is specified in the  <i>NotifyThreshold</i> parameter.</p>
 </dd>
 
-### -param <i>SrqNotificationContext</i> [in, optional]
+### -param SrqNotificationContext [in, optional]
 
 <dd>
 <p>A context value that the NDK provider passes back to the <i>NdkSrqNotificationCallback</i> function that is specified in the <i>SrqNotification</i> parameter.</p>
 </dd>
 
-### -param <i>Affinity</i> [in, optional]
+### -param Affinity [in, optional]
 
 <dd>
 <p>An affinity mask (<a href="..\miniport\ns-miniport--group-affinity.md">GROUP_AFFINITY</a>) that specifies preferred processors that the consumer would choose to run the <i>NdkSrqNotificationCallback</i> callbacks. Providers should honor the processor preferences if their underlying hardware allows it, but consumers cannot assume that <i>NdkSrqNotificationCallback</i> callbacks will occur only on the preferred processors. Set <i>Affinity</i> to NULL if there are no preferred processors.</p>
 </dd>
 
-### -param <i>CreateCompletion</i> [in]
+### -param CreateCompletion [in]
 
 <dd>
 <p>A pointer to an <i>NdkCreateCompletion</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-create-completion.md">NDK_FN_CREATE_COMPLETION</a>) function that completes the creation of an NDK object.</p>
 </dd>
 
-### -param <i>RequestContext</i> [in, optional]
+### -param RequestContext [in, optional]
 
 <dd>
 <p>A context value that the NDK provider passes back to the <i>NdkCreateCompletion</i> function that is specified in the <i>CreateCompletion</i> parameter.</p>
 </dd>
 
-### -param <i>ppNdkSrq</i> 
+### -param ppNdkSrq 
 
 <dd>
 <p>A pointer to a created SRQ object (<a href="..\ndkpi\ns-ndkpi--ndk-srq.md">NDK_SRQ</a>) is returned in this location if the request succeeds without returning STATUS_PENDING. If the request returns STATUS_PENDING then this parameter is ignored and the created object is returned with the callback that is specified in the  <i>CreateCompletion</i> parameter.</p>
@@ -214,9 +214,9 @@ NTSTATUS NdkCreateSrq(
 <a href="..\ndkpi\ns-ndkpi--ndk-srq.md">NDK_SRQ</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Object Lifetime Requirements</a>
+<a href="netvista.ndkpi_object_lifetime_requirements">NDKPI Object Lifetime Requirements</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_CREATE_SRQ callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_CREATE_SRQ callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: image\wiaupropsinpropspec.htm
 old-project: image
 ms.assetid: c376297a-11a6-4e9f-b551-36a573cdb7e0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiauPropsInPropSpec
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ BOOL _stdcall wiauPropsInPropSpec(
 ## -parameters
 <dl>
 
-### -param <i>NumPropSpecs</i> 
+### -param NumPropSpecs 
 
 <dd>
 <p>Specifies the number of property specification IDs in the array pointed to by the <i>pPropSpecs</i> parameter.</p>
 </dd>
 
-### -param <i>pPropSpecs</i> [in]
+### -param pPropSpecs [in]
 
 <dd>
 <p>Points to the first element of the array of property specification IDs.</p>
 </dd>
 
-### -param <i>NumProps</i> 
+### -param NumProps 
 
 <dd>
 <p>Specifies the number of property specification IDs to search for.</p>
 </dd>
 
-### -param <i>pProps</i> [in]
+### -param pProps [in]
 
 <dd>
 <p>Points to the first element of the array containing the property specification IDs to search for.</p>
@@ -129,4 +129,4 @@ BOOL _stdcall wiauPropsInPropSpec(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiauPropsInPropSpec function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiauPropsInPropSpec function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

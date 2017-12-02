@@ -58,13 +58,13 @@ NTSTATUS APIENTRY pfnGetNumFrequencyRanges(
 ## -parameters
 <dl>
 
-### -param <i>hMonitorFrequencyRangeSet</i> [in]
+### -param hMonitorFrequencyRangeSet [in]
 
 <dd>
 <p>[in] A handle to a monitor frequency range set object. The display miniport driver previously obtained this handle by calling the <b>pfnGetMonitorFrequencyRangeSet</b> function of the <a href="display.monitor_interface">Monitor interface</a>. </p>
 </dd>
 
-### -param <i>pNumMonitorFrequencyRanges</i> [out]
+### -param pNumMonitorFrequencyRanges [out]
 
 <dd>
 <p>[out] A pointer to a SIZE_T-typed variable that receives the number of descriptors in the set.</p>

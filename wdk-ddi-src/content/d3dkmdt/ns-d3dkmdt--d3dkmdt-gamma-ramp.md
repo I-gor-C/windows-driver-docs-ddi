@@ -61,43 +61,43 @@ typedef struct _D3DKMDT_GAMMA_RAMP {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-gammaramp-type.md">D3DDDI_GAMMARAMP_TYPE</a> enumerator that specifies the format of the lookup table. </p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>The size, in bytes, of the lookup table pointed to by <i>Data</i>.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>[in] A union that contains one of the following ways to access the lookup table data depending on the value in the Type member:</p>
 <dl>
 
-### -field <b>pRgb256x3x16</b>
+### -field pRgb256x3x16
 
 <dd>
 <p>If <b>Type</b> is equal to D3DDDI_GAMMARAMP_RGB256x3x16, this member is a pointer to a <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-gamma-ramp-rgb256x3x16.md">D3DDDI_GAMMA_RAMP_RGB256x3x16</a> structure that contains the lookup table. </p>
 </dd>
 
-### -field <b>pDxgi1</b>
+### -field pDxgi1
 
 <dd>
 <p>If <b>Type</b> is equal to D3DDDI_GAMMARAMP_DXGI_1, this member is a pointer to a <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-gamma-ramp-dxgi-1.md">D3DDDI_GAMMA_RAMP_DXGI_1</a> structure that contains the lookup table. </p>
 </dd>
 
-### -field <b>p3x4</b>
+### -field p3x4
 
 <dd>
 <p>Pointer to a D3DDDI_3x4_COLORSPACE_TRANSFORM which describes the 3 by 4 matrix colorspace transform to be applied.</p>
 </dd>
 
-### -field <b>pRaw</b>
+### -field pRaw
 
 <dd>
 <p>This member provides an alternative way to access the lookup table data. For example, for copying the lookup table, VOID* might be more convenient than D3DDDI_GAMMA_RAMP_RGB256x3x16.</p>

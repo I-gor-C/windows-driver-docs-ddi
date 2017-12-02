@@ -71,109 +71,109 @@ typedef enum _D3DDDIMULTISAMPLE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDIMULTISAMPLE_NONE"></a><a id="d3dddimultisample_none"></a><b>D3DDDIMULTISAMPLE_NONE</b>
+### -field D3DDDIMULTISAMPLE_NONE
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_NONMASKABLE"></a><a id="d3dddimultisample_nonmaskable"></a><b>D3DDDIMULTISAMPLE_NONMASKABLE</b>
+### -field D3DDDIMULTISAMPLE_NONMASKABLE
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_2_SAMPLES"></a><a id="d3dddimultisample_2_samples"></a><b>D3DDDIMULTISAMPLE_2_SAMPLES</b>
+### -field D3DDDIMULTISAMPLE_2_SAMPLES
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_3_SAMPLES"></a><a id="d3dddimultisample_3_samples"></a><b>D3DDDIMULTISAMPLE_3_SAMPLES</b>
+### -field D3DDDIMULTISAMPLE_3_SAMPLES
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_4_SAMPLES"></a><a id="d3dddimultisample_4_samples"></a><b>D3DDDIMULTISAMPLE_4_SAMPLES</b>
+### -field D3DDDIMULTISAMPLE_4_SAMPLES
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_5_SAMPLES"></a><a id="d3dddimultisample_5_samples"></a><b>D3DDDIMULTISAMPLE_5_SAMPLES</b>
+### -field D3DDDIMULTISAMPLE_5_SAMPLES
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_6_SAMPLES"></a><a id="d3dddimultisample_6_samples"></a><b>D3DDDIMULTISAMPLE_6_SAMPLES</b>
+### -field D3DDDIMULTISAMPLE_6_SAMPLES
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_7_SAMPLES"></a><a id="d3dddimultisample_7_samples"></a><b>D3DDDIMULTISAMPLE_7_SAMPLES</b>
+### -field D3DDDIMULTISAMPLE_7_SAMPLES
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_8_SAMPLES"></a><a id="d3dddimultisample_8_samples"></a><b>D3DDDIMULTISAMPLE_8_SAMPLES</b>
+### -field D3DDDIMULTISAMPLE_8_SAMPLES
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_9_SAMPLES"></a><a id="d3dddimultisample_9_samples"></a><b>D3DDDIMULTISAMPLE_9_SAMPLES</b>
+### -field D3DDDIMULTISAMPLE_9_SAMPLES
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_10_SAMPLES"></a><a id="d3dddimultisample_10_samples"></a><b>D3DDDIMULTISAMPLE_10_SAMPLES</b>
+### -field D3DDDIMULTISAMPLE_10_SAMPLES
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_11_SAMPLES"></a><a id="d3dddimultisample_11_samples"></a><b>D3DDDIMULTISAMPLE_11_SAMPLES</b>
+### -field D3DDDIMULTISAMPLE_11_SAMPLES
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_12_SAMPLES"></a><a id="d3dddimultisample_12_samples"></a><b>D3DDDIMULTISAMPLE_12_SAMPLES</b>
+### -field D3DDDIMULTISAMPLE_12_SAMPLES
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_13_SAMPLES"></a><a id="d3dddimultisample_13_samples"></a><b>D3DDDIMULTISAMPLE_13_SAMPLES</b>
+### -field D3DDDIMULTISAMPLE_13_SAMPLES
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_14_SAMPLES"></a><a id="d3dddimultisample_14_samples"></a><b>D3DDDIMULTISAMPLE_14_SAMPLES</b>
+### -field D3DDDIMULTISAMPLE_14_SAMPLES
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_15_SAMPLES"></a><a id="d3dddimultisample_15_samples"></a><b>D3DDDIMULTISAMPLE_15_SAMPLES</b>
+### -field D3DDDIMULTISAMPLE_15_SAMPLES
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_16_SAMPLES"></a><a id="d3dddimultisample_16_samples"></a><b>D3DDDIMULTISAMPLE_16_SAMPLES</b>
+### -field D3DDDIMULTISAMPLE_16_SAMPLES
 
 <dd>
 <p>The level of full-scene multisampling available.</p>
 </dd>
 
-### -field <a id="D3DDDIMULTISAMPLE_FORCE_UINT"></a><a id="d3dddimultisample_force_uint"></a><b>D3DDDIMULTISAMPLE_FORCE_UINT</b>
+### -field D3DDDIMULTISAMPLE_FORCE_UINT
 
 <dd>
 <p>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. This value is not used.</p>

@@ -7,7 +7,7 @@ old-location: netvista\vmbclientchannelinitsettargetpnp.htm
 old-project: netvista
 ms.assetid: 5525FD48-BE65-48CA-B3D5-C96AFD4ECF56
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbClientChannelInitSetTargetPnp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,14 +61,14 @@ NTSTATUS VmbClientChannelInitSetTargetPnp(
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>A pointer to a channel.
 </p>
 </dd>
 
-### -param <i>InterfaceType</i> [in]
+### -param InterfaceType [in]
 
 <dd>
 <p>A pointer to the interface type GUID.
@@ -76,7 +76,7 @@ This GUID identifies the
 type of channel and the protocol that is used with the channel.  </p>
 </dd>
 
-### -param <i>InterfaceInstance</i> [in, optional]
+### -param InterfaceInstance [in, optional]
 
 <dd>
 <p>A pointer to the instance type GUID. This is a 
@@ -85,7 +85,7 @@ provided, any instance with the provided type is accepted.
 </p>
 </dd>
 
-### -param <i>PnpFailureCallback</i> [in, optional]
+### -param PnpFailureCallback [in, optional]
 
 <dd>
 <p>A pointer to an event callback to call if the

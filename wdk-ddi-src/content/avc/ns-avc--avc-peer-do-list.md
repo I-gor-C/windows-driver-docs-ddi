@@ -55,13 +55,13 @@ typedef struct _AVC_PEER_DO_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Ignored on input. On output, set to the number of objects in the list. If zero, the caller must not attempt to dereference the <b>Objects</b> member (it is set to <b>NULL</b>).</p>
 </dd>
 
-### -field <b>Objects</b>
+### -field Objects
 
 <dd>
 <p>Ignored on input. On output (and if the <b>Count</b> member is not zero) <b>Objects</b> contains a pointer to a contiguous array of DEVICE_OBJECT pointers. The caller must release the reference held on each object (by using <b>ObDereferenceObject</b>), and free the memory containing the list (by using <b>ExFreePool</b>) when finished with it.</p>

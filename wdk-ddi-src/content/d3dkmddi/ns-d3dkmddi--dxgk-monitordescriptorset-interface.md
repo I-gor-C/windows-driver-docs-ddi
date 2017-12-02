@@ -57,25 +57,25 @@ typedef struct _DXGK_MONITORDESCRIPTORSET_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnGetNumDescriptors</b>
+### -field pfnGetNumDescriptors
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitordescriptorset-getnumdescriptors.md">pfnGetNumDescriptors</a> function. </p>
 </dd>
 
-### -field <b>pfnAcquireFirstDescriptorInfo</b>
+### -field pfnAcquireFirstDescriptorInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitordescriptorset-acquirefirstdescriptorinfo.md">pfnAcquireFirstDescriptorInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnAcquireNextDescriptorInfo</b>
+### -field pfnAcquireNextDescriptorInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitordescriptorset-acquirenextdescriptorinfo.md">pfnAcquireNextDescriptorInfo</a> function. </p>
 </dd>
 
-### -field <b>pfnReleaseDescriptorInfo</b>
+### -field pfnReleaseDescriptorInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitordescriptorset-releasedescriptorinfo.md">pfnReleaseDescriptorInfo</a> function. </p>

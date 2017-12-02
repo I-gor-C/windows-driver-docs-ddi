@@ -7,7 +7,7 @@ old-location: ifsk\exqueueworkitem.htm
 old-project: ifsk
 ms.assetid: 287affe1-c5d4-4b36-8017-d1fef6088cf8
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: ExQueueWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ VOID ExQueueWorkItem(
 ## -parameters
 <dl>
 
-### -param <i>WorkItem</i> [in, out]
+### -param WorkItem [in, out]
 
 <dd>
 <p>Pointer to the work item. This work item must have been initialized by a preceding call to <a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a>. </p>
 </dd>
 
-### -param <i>QueueType</i> [in]
+### -param QueueType [in]
 
 <dd>
 <p>Specifies the queue into which the work item pointed to by <i>WorkItem</i> is to be inserted. <i>QueueType</i> can be either of the following: </p>
@@ -97,7 +97,7 @@ VOID ExQueueWorkItem(
 <p>None </p>
 
 ## -remarks
-<p>The callback routine that was specified in the <i>Routine</i> parameter to <a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a> is called in a system context at IRQL PASSIVE_LEVEL. This caller-supplied routine is responsible for freeing the work item when it is no longer needed by calling <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> or <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>.</p>
+<p>The callback routine that was specified in the <i>Routine</i> parameter to <a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a> is called in a system context at IRQL PASSIVE_LEVEL. This caller-supplied routine is responsible for freeing the work item when it is no longer needed by calling <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> or <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>.</p>
 
 <p>System worker threads are a limited resource. Drivers must not permanently reserve a work item for the driver's use. Work items are designed for operations that complete quickly. Drivers should free any work items that they allocate as soon as possible.</p>
 
@@ -166,7 +166,7 @@ VOID ExQueueWorkItem(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>
@@ -189,4 +189,4 @@ VOID ExQueueWorkItem(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ExQueueWorkItem routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ExQueueWorkItem routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

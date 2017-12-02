@@ -55,13 +55,13 @@ typedef struct _SYNTH_BUFFER {
 ## -struct-fields
 <dl>
 
-### -field <b>BufferSize</b>
+### -field BufferSize
 
 <dd>
 <p>Specifies the size in bytes of the buffer that <b>BufferAddress</b> points to.</p>
 </dd>
 
-### -field <b>BufferAddress</b>
+### -field BufferAddress
 
 <dd>
 <p>Pointer to a user-mode address that needs to be converted for kernel use.</p>

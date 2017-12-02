@@ -56,13 +56,13 @@ HRESULT OnBidiResponseReceived(
 ## -parameters
 <dl>
 
-### -param <i>bstrResponse</i> [in]
+### -param bstrResponse [in]
 
 <dd>
 <p>The received response.</p>
 </dd>
 
-### -param <i>hrStatus</i> [in]
+### -param hrStatus [in]
 
 <dd>
 <p>An HRESULT value.</p>

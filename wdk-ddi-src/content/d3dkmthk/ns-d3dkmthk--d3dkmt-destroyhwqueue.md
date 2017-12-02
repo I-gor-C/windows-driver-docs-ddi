@@ -54,7 +54,7 @@ typedef struct _D3DKMT_DESTROYHWQUEUE {
 ## -struct-fields
 <dl>
 
-### -field <b>hHwQueue</b>
+### -field hHwQueue
 
 <dd>
 <p>Handle to the hardware queue to be destroyed.

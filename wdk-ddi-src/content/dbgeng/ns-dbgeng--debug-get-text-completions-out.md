@@ -7,7 +7,7 @@ old-location: debugger\debug_get_text_completions_out.htm
 old-project: debugger
 ms.assetid: 09F3A720-C039-4C8D-84A4-8AF071E1FFB0
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: DEBUG_GET_TEXT_COMPLETIONS_OUT, DEBUG_GET_TEXT_COMPLETIONS_OUT, *PDEBUG_GET_TEXT_COMPLETIONS_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct _DEBUG_GET_TEXT_COMPLETIONS_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags. Valid flag values include the following:</p>
@@ -70,7 +70,7 @@ typedef struct _DEBUG_GET_TEXT_COMPLETIONS_OUT {
 <tr>
 <td width="40%"><a id="DEBUG_GET_TEXT_COMPLETIONS_IS_DOT_COMMAND"></a><a id="debug_get_text_completions_is_dot_command"></a><dl>
 
-### -field <b>DEBUG_GET_TEXT_COMPLETIONS_IS_DOT_COMMAND</b>
+### -field DEBUG_GET_TEXT_COMPLETIONS_IS_DOT_COMMAND
 
 
 ### -field 0x00000001
@@ -84,7 +84,7 @@ typedef struct _DEBUG_GET_TEXT_COMPLETIONS_OUT {
 <tr>
 <td width="40%"><a id="DEBUG_GET_TEXT_COMPLETIONS_IS_EXTENSION_COMMAND"></a><a id="debug_get_text_completions_is_extension_command"></a><dl>
 
-### -field <b>DEBUG_GET_TEXT_COMPLETIONS_IS_EXTENSION_COMMAND</b>
+### -field DEBUG_GET_TEXT_COMPLETIONS_IS_EXTENSION_COMMAND
 
 
 ### -field 0x00000002
@@ -98,7 +98,7 @@ typedef struct _DEBUG_GET_TEXT_COMPLETIONS_OUT {
 <tr>
 <td width="40%"><a id="DEBUG_GET_TEXT_COMPLETIONS_IS_SYMBOL"></a><a id="debug_get_text_completions_is_symbol"></a><dl>
 
-### -field <b>DEBUG_GET_TEXT_COMPLETIONS_IS_SYMBOL</b>
+### -field DEBUG_GET_TEXT_COMPLETIONS_IS_SYMBOL
 
 
 ### -field 0x00000004
@@ -113,25 +113,25 @@ typedef struct _DEBUG_GET_TEXT_COMPLETIONS_OUT {
 <p> </p>
 </dd>
 
-### -field <b>ReplaceIndex</b>
+### -field ReplaceIndex
 
 <dd>
 <p>The index of the replace location.</p>
 </dd>
 
-### -field <b>MatchCount</b>
+### -field MatchCount
 
 <dd>
 <p>Count value of matches.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>

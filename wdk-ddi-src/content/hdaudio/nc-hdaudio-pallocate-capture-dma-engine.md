@@ -62,31 +62,31 @@ NTSTATUS AllocateCaptureDmaEngine(
 ## -parameters
 <dl>
 
-### -param <i>context</i> [in]
+### -param context [in]
 
 <dd>
 <p>Specifies the context value from the <b>Context</b> member of the <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface.md">HDAUDIO_BUS_INTERFACE</a><u>, </u><a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-v2.md">HDAUDIO_BUS_INTERFACE_V2</a> or <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a> structure.</p>
 </dd>
 
-### -param <i>codecAddress</i> [in]
+### -param codecAddress [in]
 
 <dd>
 <p>Specifies a codec address. This parameter identifies the serial data in (SDI) line on which the codec supplies the capture data to the HD Audio bus controller. A bus controller with <i>n</i> SDI pins can support up to <i>n</i> codecs with addresses ranging from 0 to <i>n</i>-1.</p>
 </dd>
 
-### -param <i>streamFormat</i> [in]
+### -param streamFormat [in]
 
 <dd>
 <p>Specifies the requested stream format. This parameter points to a caller-allocated structure of type <a href="..\hdaudio\ns-hdaudio--hdaudio-stream-format.md">HDAUDIO_STREAM_FORMAT</a> that specifies a data format for the stream.</p>
 </dd>
 
-### -param <i>handle</i> [out]
+### -param handle [out]
 
 <dd>
 <p>Retrieves the handle to the DMA engine. This parameter points to a caller-allocated HANDLE variable into which the routine writes a handle that identifies the DMA engine.</p>
 </dd>
 
-### -param <i>converterFormat</i> [out]
+### -param converterFormat [out]
 
 <dd>
 <p>Retrieves the converter format. This parameter points to a caller-allocated structure of type <a href="..\hdaudio\ns-hdaudio--hdaudio-converter-format.md">HDAUDIO_CONVERTER_FORMAT</a> into which the routine writes the encoded format.</p>

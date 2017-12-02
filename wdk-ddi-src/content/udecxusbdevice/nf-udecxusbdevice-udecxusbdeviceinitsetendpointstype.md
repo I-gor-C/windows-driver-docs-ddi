@@ -56,16 +56,16 @@ void UdecxUsbDeviceInitSetEndpointsType(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbDeviceInit</i> [in, out]
+### -param UdecxUsbDeviceInit [in, out]
 
 <dd>
-<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>. </p>
+<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>. </p>
 </dd>
 
-### -param <i>UdecxEndpointType</i> [in]
+### -param UdecxEndpointType [in]
 
 <dd>
-<p>A <a href="buses.udecx_endpoint_type">UDECX_ENDPOINT_TYPE</a>-type value that indicates the type of USB endpoint.</p>
+<p>A <a href="..\udecxusbdevice\ne-udecxusbdevice--udecx-endpoint-type.md">UDECX_ENDPOINT_TYPE</a>-type value that indicates the type of USB endpoint.</p>
 </dd>
 </dl>
 
@@ -73,11 +73,11 @@ void UdecxUsbDeviceInitSetEndpointsType(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>Before creating the virtual USB device, the client driver must indicate the type of endpoint it supports. It can support one of two types (defined in <a href="buses.udecx_endpoint_type">UDECX_ENDPOINT_TYPE</a>): </p>
+<p>Before creating the virtual USB device, the client driver must indicate the type of endpoint it supports. It can support one of two types (defined in <a href="..\udecxusbdevice\ne-udecxusbdevice--udecx-endpoint-type.md">UDECX_ENDPOINT_TYPE</a>): </p>
 
 <p>The <i>UdecxUsbDeviceInit</i> is an opaque structure that contains pointers to callback functions related to endpoints. If the client driver supports dynamic endpoints, then these callback functions must be implemented by the driver:</p>
 
-<p>Before calling this method, the client driver must have set those pointers by calling <a href="buses.udecxusbdeviceinitsetstatechangecallbacks">UdecxUsbDeviceInitSetStateChangeCallbacks</a>.</p>
+<p>Before calling this method, the client driver must have set those pointers by calling <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitsetstatechangecallbacks.md">UdecxUsbDeviceInitSetStateChangeCallbacks</a>.</p>
 
 ## -requirements
 <table>
@@ -141,13 +141,13 @@ void UdecxUsbDeviceInitSetEndpointsType(
 <a href="buses.usb_endpoints_and_their_pipes">USB endpoints</a>
 </dt>
 <dt>
-<a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>
 </dt>
 <dt>
-<a href="buses.udecxusbdeviceinitsetstatechangecallbacks">UdecxUsbDeviceInitSetStateChangeCallbacks</a>
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitsetstatechangecallbacks.md">UdecxUsbDeviceInitSetStateChangeCallbacks</a>
 </dt>
 <dt>
-<a href="buses.evt_udecx_usb_device_endpoints_configure">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a>
+<a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-endpoints-configure.md">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a>
 </dt>
 <dt>
 <a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>

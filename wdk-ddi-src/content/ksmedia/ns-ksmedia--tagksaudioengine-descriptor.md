@@ -56,19 +56,19 @@ typedef struct _KSAUDIOENGINE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>nHostPinId</b>
+### -field nHostPinId
 
 <dd>
 <p>Specifies the ID of the pin factory that is connected to the audio engine node that handles host-processed audio data.  This is the pin factory on which a software audio engine will run.</p>
 </dd>
 
-### -field <b>nOffloadPinId</b>
+### -field nOffloadPinId
 
 <dd>
 <p>Specifies the ID of the pin factory that is connected to the audio engine node that handles offloaded streams.</p>
 </dd>
 
-### -field <b>nLoopbackPinId</b>
+### -field nLoopbackPinId
 
 <dd>
 <p>Specifies the ID of the pin factory that is connected to the audio engine node that supplies a post-mix loopback or reference stream.</p>

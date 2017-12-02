@@ -57,25 +57,25 @@ typedef enum DXGI_DDI_MODE_SCANLINE_ORDER {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGI_DDI_MODE_SCANLINE_ORDER_UNSPECIFIED"></a><a id="dxgi_ddi_mode_scanline_order_unspecified"></a><b>DXGI_DDI_MODE_SCANLINE_ORDER_UNSPECIFIED</b>
+### -field DXGI_DDI_MODE_SCANLINE_ORDER_UNSPECIFIED
 
 <dd>
 <p>A DXGI_DDI_MODE_SCANLINE_ORDER-typed variable has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MODE_SCANLINE_ORDER_PROGRESSIVE"></a><a id="dxgi_ddi_mode_scanline_order_progressive"></a><b>DXGI_DDI_MODE_SCANLINE_ORDER_PROGRESSIVE</b>
+### -field DXGI_DDI_MODE_SCANLINE_ORDER_PROGRESSIVE
 
 <dd>
 <p>Each field contains an entire frame.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MODE_SCANLINE_ORDER_UPPER_FIELD_FIRST"></a><a id="dxgi_ddi_mode_scanline_order_upper_field_first"></a><b>DXGI_DDI_MODE_SCANLINE_ORDER_UPPER_FIELD_FIRST</b>
+### -field DXGI_DDI_MODE_SCANLINE_ORDER_UPPER_FIELD_FIRST
 
 <dd>
 <p>Each field contains half of a frame, and the odd scan lines are displayed first.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MODE_SCANLINE_ORDER_LOWER_FIELD_FIRST"></a><a id="dxgi_ddi_mode_scanline_order_lower_field_first"></a><b>DXGI_DDI_MODE_SCANLINE_ORDER_LOWER_FIELD_FIRST</b>
+### -field DXGI_DDI_MODE_SCANLINE_ORDER_LOWER_FIELD_FIRST
 
 <dd>
 <p>Each field contains half of a frame, and the even scan lines are displayed first.</p>

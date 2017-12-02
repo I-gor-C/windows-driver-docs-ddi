@@ -62,7 +62,7 @@ typedef struct _D3DKMT_OUTPUTDUPLPRESENTFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>ProtectedContentBlankedOut</b>
+### -field ProtectedContentBlankedOut
 
 <dd>
 <p>Specifies whether the desktop image might contain protected content that was already blanked out (black) in the desktop image.</p>
@@ -70,7 +70,7 @@ typedef struct _D3DKMT_OUTPUTDUPLPRESENTFLAGS {
 <p>The application can use this information to notify the remote user that some of the desktop content might be protected and therefore not visible.</p>
 </dd>
 
-### -field <b>RemoteSession</b>
+### -field RemoteSession
 
 <dd>
 <p>Specifies if the present operation is directed to a remote session</p>
@@ -78,14 +78,14 @@ typedef struct _D3DKMT_OUTPUTDUPLPRESENTFLAGS {
 <p>If <b>TRUE</b>, the present operation will go through a GDI path.</p>
 </dd>
 
-### -field <b>FullScreenPresent</b>
+### -field FullScreenPresent
 
 <dd>
 <p>Specifies if the present operation is to the full screen.</p>
 <p><b>TRUE</b> if the present operation is to the full screen; otherwise, <b>FALSE</b>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 29 bits (0xFFFFFFF8) of the 32-bit <b>Value</b> member to zeros.
@@ -93,7 +93,7 @@ typedef struct _D3DKMT_OUTPUTDUPLPRESENTFLAGS {
 </p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A 32-bit value that identifies the DDA present options.</p>

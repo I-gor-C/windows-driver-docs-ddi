@@ -7,7 +7,7 @@ old-location: netvista\rildialparams_v1_2.htm
 old-project: netvista
 ms.assetid: 9df42e37-b04a-4159-a952-45754277f1b4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILDIALPARAMS_V1, RILDIALPARAMS_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILDIALPARAMS_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>raAddress</b>
+### -field raAddress
 
 <dd></dd>
 
-### -field <b>dwOptions</b>
+### -field dwOptions
 
 <dd></dd>
 </dl>

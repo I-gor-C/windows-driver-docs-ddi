@@ -7,7 +7,7 @@ old-location: netvista\ndis_nic_switch_delete_vport_parameters.htm
 old-project: netvista
 ms.assetid: 7cbdaa08-51c9-495d-a5c7-bb2c4009d7a4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS, NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS, *PNDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ typedef struct _NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -64,7 +64,7 @@ typedef struct _NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS_REVISION_1"></a><a id="ndis_nic_switch_delete_vport_parameters_revision_1"></a>NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS_REVISION_1
+### -field NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30.</p>
@@ -73,13 +73,13 @@ typedef struct _NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>VPortId</b>
+### -field VPortId
 
 <dd>
 <p>An NDIS_NIC_SWITCH_VPORT_ID value  that uniquely identifies the virtual port (VPort) to be deleted. The VPort with the specified NDIS_NIC_SWITCH_VPORT_ID value must have previously been created through an OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>.</p>
@@ -128,4 +128,4 @@ typedef struct _NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

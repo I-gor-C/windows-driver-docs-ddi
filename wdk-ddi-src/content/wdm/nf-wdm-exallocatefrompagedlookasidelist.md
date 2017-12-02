@@ -55,7 +55,7 @@ PVOID ExAllocateFromPagedLookasideList(
 ## -parameters
 <dl>
 
-### -param <i>Lookaside</i> [in, out]
+### -param Lookaside [in, out]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558775">PAGED_LOOKASIDE_LIST</a> structure for the lookaside list, which the caller already initialized with <a href="..\wdm\nf-wdm-exinitializepagedlookasidelist.md">ExInitializePagedLookasideList</a>. </p>

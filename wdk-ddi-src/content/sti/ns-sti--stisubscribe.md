@@ -7,7 +7,7 @@ old-location: image\stisubscribe.htm
 old-project: image
 ms.assetid: 68859180-274d-44f8-9ccf-1cae0348f902
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: STISUBSCRIBE, STISUBSCRIBE, *LPSTISUBSCRIBE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,20 +60,20 @@ typedef struct _STISUBSCRIBE {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Caller-supplied size, in bytes, of the STISUBSCRIBE structure.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>One of the following bit flags, defined in <i>Sti.h</i>.</p>
 <p></p>
 <dl>
 
-### -field <a id="STI_SUBSCRIBE_FLAG_EVENT"></a><a id="sti_subscribe_flag_event"></a>STI_SUBSCRIBE_FLAG_EVENT
+### -field STI_SUBSCRIBE_FLAG_EVENT
 
 <dd>
 <p>Event notifications should be delivered to the application by calls to <b>SetEvent</b>. The <b>hEvent</b> member contains a Win32 event handle. </p>
@@ -83,7 +83,7 @@ typedef struct _STISUBSCRIBE {
 <p></p>
 <dl>
 
-### -field <a id="STI_SUBSCRIBE_FLAG_WINDOW"></a><a id="sti_subscribe_flag_window"></a>STI_SUBSCRIBE_FLAG_WINDOW
+### -field STI_SUBSCRIBE_FLAG_WINDOW
 
 <dd>
 <p>Event notifications should be delivered to the application using window messages. The <b>dwWndNotify</b> member contains a window handle and <b>uiNotificationMessage</b> contains a window message.</p>
@@ -92,25 +92,25 @@ typedef struct _STISUBSCRIBE {
 </dl>
 </dd>
 
-### -field <b>dwFilter</b>
+### -field dwFilter
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>hWndNotify</b>
+### -field hWndNotify
 
 <dd>
 <p>Handle to an application window that should receive the message specified by <b>uiNotificationMessage</b> when an event occurs. Used only if STI_SUBSCRIBE_FLAG_WINDOW is set in <b>dwFlags</b>.</p>
 </dd>
 
-### -field <b>hEvent</b>
+### -field hEvent
 
 <dd>
 <p>Handle to a Win32 event created with <b>CreateEvent</b>, which the event monitor will use with <b>SetEvent</b> when an event occurs and for which the application can wait. Used only if STI_SUBSCRIBE_FLAG_WINDOW is set in <b>dwFlags</b>.</p>
 </dd>
 
-### -field <b>uiNotificationMessage</b>
+### -field uiNotificationMessage
 
 <dd>
 <p>Window message that should be passed to the <b>dwWndNotify</b> window when an event occurs.</p>

@@ -63,7 +63,7 @@ ULONGLONG KeQueryInterruptTime(void);
 ## -remarks
 <p>This routine returns the system interrupt time, which is the amount of time since the operating system was last started. The interrupt-time count begins at zero when the operating system starts and is incremented at each clock interrupt by the length of a clock tick. For various reasons, such as hardware differences, the length of a system clock tick can vary between computers. Call the <a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a> routine to determine the size of a system clock tick.</p>
 
-<p><b>KeQueryInterruptTime</b> can be used for performance tuning. This routine returns a finer grained measurement than the <a href="..\ntddk\nf-ntddk-kequerytickcount.md">KeQueryTickCount</a> routine. A call to <b>KeQueryInterruptTime</b> has considerably less overhead than a call to the <a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a> routine, as well.</p>
+<p><b>KeQueryInterruptTime</b> can be used for performance tuning. This routine returns a finer grained measurement than the <a href="..\wdm\nf-wdm-kequerytickcount.md">KeQueryTickCount</a> routine. A call to <b>KeQueryInterruptTime</b> has considerably less overhead than a call to the <a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a> routine, as well.</p>
 
 <p>Consequently, interrupt time can be used to measure very fine-grained durations while the system is running because operations that set or reset the system time have no effect on the system interrupt time count.</p>
 
@@ -138,10 +138,10 @@ ULONGLONG KeQueryInterruptTime(void);
 <a href="..\wdm\nf-wdm-kequeryinterrupttimeprecise.md">KeQueryInterruptTimePrecise</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequerytickcount.md">KeQueryTickCount</a>
+<a href="..\wdm\nf-wdm-kequerytickcount.md">KeQueryTickCount</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a>

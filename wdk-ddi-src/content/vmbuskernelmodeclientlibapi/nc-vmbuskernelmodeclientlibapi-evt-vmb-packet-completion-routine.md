@@ -7,7 +7,7 @@ old-location: netvista\evt_vmb_packet_completion_routine.htm
 old-project: netvista
 ms.assetid: DEE6FBD6-4807-4216-9010-F59C9E08076B
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VideoPortGetAgpServices
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,27 +65,27 @@ typedef EVT_VMB_PACKET_COMPLETION_ROUTINE PFN_VMB_PACKET_COMPLETION_ROUTINE;
 ## -parameters
 <dl>
 
-### -param <i>Packet</i> [in]
+### -param Packet [in]
 
 <dd>
 <p>The packet that is completed.
 </p>
 </dd>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>A status code.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A buffer that contains the completion response from the opposite endpoint, if any.
 </p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>Length of the <i>Buffer</i> parameter, in bytes.</p>
@@ -135,4 +135,4 @@ If not, the outgoing packet was successfully placed into the ring buffer.</p>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20EVT_VMB_PACKET_COMPLETION_ROUTINE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20EVT_VMB_PACKET_COMPLETION_ROUTINE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

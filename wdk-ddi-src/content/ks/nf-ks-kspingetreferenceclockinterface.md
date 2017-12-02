@@ -55,13 +55,13 @@ NTSTATUS KsPinGetReferenceClockInterface(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure for which to return the reference clock interface.</p>
 </dd>
 
-### -param <i>Interface</i> [out]
+### -param Interface [out]
 
 <dd>
 <p>A pointer to a memory location that receives the address of an <a href="..\ks\nn-ks-iksreferenceclock.md">IKsReferenceClock</a> interface. This is a COM style interface with an associated reference count. Minidrivers must release the interface when finished with it.</p>
@@ -74,7 +74,7 @@ NTSTATUS KsPinGetReferenceClockInterface(
 ## -remarks
 <p>The most common time to call <b>KsPinGetReferenceClockInterface</b> is in a state transition to KSSTATE_ACQUIRE.</p>
 
-<p>See <a href="NULL">AVStream Clocks</a> for more information about using the <a href="..\ks\nn-ks-iksreferenceclock.md">IKsReferenceClock</a> interface that this routine returns.</p>
+<p>See <a href="https://msdn.microsoft.com/fc1d5bca-72e3-48e2-b46f-09a13bba83b4">AVStream Clocks</a> for more information about using the <a href="..\ks\nn-ks-iksreferenceclock.md">IKsReferenceClock</a> interface that this routine returns.</p>
 
 ## -requirements
 <table>
@@ -141,7 +141,7 @@ NTSTATUS KsPinGetReferenceClockInterface(
 <a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 </dt>
 <dt>
 <a href="..\ks\nn-ks-iksreferenceclock.md">IKsReferenceClock</a>

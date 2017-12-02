@@ -57,7 +57,7 @@ VOID* APIENTRY CALLBACK DxgkCbGetHandleData(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-gethandledata.md">DXGKARGCB_GETHANDLEDATA</a> structure that describes the allocation data to retrieve.</p>

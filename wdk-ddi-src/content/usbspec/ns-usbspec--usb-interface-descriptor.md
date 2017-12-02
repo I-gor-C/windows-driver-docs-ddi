@@ -63,55 +63,55 @@ typedef struct _USB_INTERFACE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>The length, in bytes, of the descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorType</b>
+### -field bDescriptorType
 
 <dd>
 <p>The descriptor type. <b>bDescriptor</b> must be set to USB_INTERFACE_DESCRIPTOR_TYPE.</p>
 </dd>
 
-### -field <b>bInterfaceNumber</b>
+### -field bInterfaceNumber
 
 <dd>
 <p>The index number of the interface.</p>
 </dd>
 
-### -field <b>bAlternateSetting</b>
+### -field bAlternateSetting
 
 <dd>
 <p>The index number of the alternate setting of the interface.</p>
 </dd>
 
-### -field <b>bNumEndpoints</b>
+### -field bNumEndpoints
 
 <dd>
 <p>The number of endpoints that are used by the interface, excluding the default status endpoint.</p>
 </dd>
 
-### -field <b>bInterfaceClass</b>
+### -field bInterfaceClass
 
 <dd>
 <p>The class code of the device that the USB specification group assigned.</p>
 </dd>
 
-### -field <b>bInterfaceSubClass</b>
+### -field bInterfaceSubClass
 
 <dd>
 <p>The subclass code of the device that the USB specification group assigned.</p>
 </dd>
 
-### -field <b>bInterfaceProtocol</b>
+### -field bInterfaceProtocol
 
 <dd>
 <p>The protocol code of the device that the USB specification group assigned.</p>
 </dd>
 
-### -field <b>iInterface</b>
+### -field iInterface
 
 <dd>
 <p>The index of a string descriptor that describes the interface. For information about this field, see section 9.6.5 in the "Universal Serial Bus Revision 2.0" specification  at <a href="http://www.usb.org/developers/docs/">USB Technology</a>.</p>

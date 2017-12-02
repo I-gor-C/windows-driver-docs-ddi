@@ -74,19 +74,19 @@ typedef struct D3DDDI_RESERVEGPUVIRTUALADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>hPagingQueue</b>
+### -field hPagingQueue
 
 <dd>
 <p>Paging queue to synchronize the operation on.</p>
 </dd>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>DirectX graphics adapter handle. </p>
 </dd>
 
-### -field <b>BaseAddress</b>
+### -field BaseAddress
 
 <dd>
 <p>(Optional) If <b>non-NULL</b>, the video memory manager will attempt to use this address as the base address for the reserved range. If the range from <b>BaseAddress</b> to <b>BaseAddress</b>+<b>Size</b> isn’t free, the call will fail. When this parameter is <b>non-NULL</b>, <b>MinimumAddress</b> and <b>MaximumAddress</b> are ignored.</p>
@@ -96,7 +96,7 @@ typedef struct D3DDDI_RESERVEGPUVIRTUALADDRESS {
 </p>
 </dd>
 
-### -field <b>MinimumAddress</b>
+### -field MinimumAddress
 
 <dd>
 <p>(Optional) Specifies the minimum GPU virtual address to consider for the reserved range.</p>
@@ -104,7 +104,7 @@ typedef struct D3DDDI_RESERVEGPUVIRTUALADDRESS {
 <p>This parameter is ignored when <b>BaseAddress</b> != <b>NULL</b>.</p>
 </dd>
 
-### -field <b>MaximumAddress</b>
+### -field MaximumAddress
 
 <dd>
 <p>(Optional) Specifies the maximum GPU virtual address to consider for the reserved range. the video memory manager will guarantee that <b>BaseAddress</b>+<b>Size</b> &lt;= <b>MaximumAddress</b>. If this is set to NULL the video memory manager will not apply any limit.</p>
@@ -112,49 +112,49 @@ typedef struct D3DDDI_RESERVEGPUVIRTUALADDRESS {
 <p>This parameter is ignored when <b>BaseAddress</b> != <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specify the size of the range to reserve in bytes. Must be a multiple of 64KB.</p>
 </dd>
 
-### -field <b>ReservationType</b>
+### -field ReservationType
 
 <dd>
 <p>Specifies the virtual address reservation type.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>DriverProtection</b>
+### -field DriverProtection
 
 <dd>
 <p>Specifies the driver-specific protection</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>VirtualAddress</b>
+### -field VirtualAddress
 
 <dd>
 <p>[out] The reserved virtual address.</p>
 </dd>
 
-### -field <b>PagingFenceValue</b>
+### -field PagingFenceValue
 
 <dd>
 <p>Paging fence identifier for synchronization</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>

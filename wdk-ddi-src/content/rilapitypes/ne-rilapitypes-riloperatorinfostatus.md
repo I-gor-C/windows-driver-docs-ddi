@@ -7,7 +7,7 @@ old-location: netvista\riloperatorinfostatus_2.htm
 old-project: netvista
 ms.assetid: 8b17ae4a-b3ea-48b6-8269-f947e1d74b86
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILOPERATORINFOSTATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_OPSTATUS_AVAILABLE"></a><a id="ril_opstatus_available"></a><b>RIL_OPSTATUS_AVAILABLE</b>
+### -field RIL_OPSTATUS_AVAILABLE
 
 <dd></dd>
 
-### -field <a id="RIL_OPSTATUS_CURRENT"></a><a id="ril_opstatus_current"></a><b>RIL_OPSTATUS_CURRENT</b>
+### -field RIL_OPSTATUS_CURRENT
 
 <dd></dd>
 
-### -field <a id="RIL_OPSTATUS_FORBIDDEN"></a><a id="ril_opstatus_forbidden"></a><b>RIL_OPSTATUS_FORBIDDEN</b>
+### -field RIL_OPSTATUS_FORBIDDEN
 
 <dd></dd>
 
-### -field <a id="RIL_OPSTATUS_MAX"></a><a id="ril_opstatus_max"></a><b>RIL_OPSTATUS_MAX</b>
+### -field RIL_OPSTATUS_MAX
 
 <dd></dd>
 </dl>

@@ -57,19 +57,19 @@ typedef struct _KSSTREAM_SEGMENT {
 ## -struct-fields
 <dl>
 
-### -field <b>KsInterfaceHandler</b>
+### -field KsInterfaceHandler
 
 <dd>
 <p>Pointer to a <a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a> interface for the I/O operation.</p>
 </dd>
 
-### -field <b>KsDataTypeHandler</b>
+### -field KsDataTypeHandler
 
 <dd>
 <p>Pointer to a <a href="..\ksproxy\nn-ksproxy-iksdatatypehandler.md">IKsDataTypeHandler</a> interface for the I/O operation.</p>
 </dd>
 
-### -field <b>IoOperation</b>
+### -field IoOperation
 
 <dd>
 <p>Value that specifies the type of I/O operation. This value can be one of the following values from the KSIOOPERATION enumerated type:</p>
@@ -98,7 +98,7 @@ typedef struct _KSSTREAM_SEGMENT {
 <p> </p>
 </dd>
 
-### -field <b>CompletionEvent</b>
+### -field CompletionEvent
 
 <dd>
 <p>Handle to an event that is used to signal that the I/O operation completed.</p>

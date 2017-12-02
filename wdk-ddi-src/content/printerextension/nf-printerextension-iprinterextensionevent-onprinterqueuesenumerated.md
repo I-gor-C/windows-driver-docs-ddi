@@ -55,7 +55,7 @@ HRESULT OnPrinterQueuesEnumerated(
 ## -parameters
 <dl>
 
-### -param <i>pContextCollection</i> [in]
+### -param pContextCollection [in]
 
 <dd>
 <p>Pointer to <a href="..\printerextension\nn-printerextension-iprinterextensioncontextcollection.md">IPrinterExtensionContextCollection</a> object.</p>

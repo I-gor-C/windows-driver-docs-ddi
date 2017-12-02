@@ -55,13 +55,13 @@ typedef struct _D3DKMT_OPENSYNCOBJECTFROMNTHANDLE {
 ## -struct-fields
 <dl>
 
-### -field <b>hNtHandle</b>
+### -field hNtHandle
 
 <dd>
 <p>[in] An NT handle to the process.</p>
 </dd>
 
-### -field <b>hSyncObject</b>
+### -field hSyncObject
 
 <dd>
 <p>[out] A handle of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode handle to the kernel-mode synchronization object.</p>

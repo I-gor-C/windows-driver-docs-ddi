@@ -60,37 +60,37 @@ typedef struct _KEY_VALUE_FULL_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>TitleIndex</b>
+### -field TitleIndex
 
 <dd>
 <p>Device and intermediate drivers should ignore this member. </p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Specifies the system-defined type for the registry value(s) following the <b>Name</b> member. For a summary of these types, see <a href="..\wdm\ns-wdm--key-value-basic-information.md">KEY_VALUE_BASIC_INFORMATION</a>.</p>
 </dd>
 
-### -field <b>DataOffset</b>
+### -field DataOffset
 
 <dd>
 <p>Specifies the offset from the start of this structure to the data immediately following the <b>Name</b> string.</p>
 </dd>
 
-### -field <b>DataLength</b>
+### -field DataLength
 
 <dd>
 <p>Specifies the number of bytes of registry information for the value entry identified by <b>Name</b>.</p>
 </dd>
 
-### -field <b>NameLength</b>
+### -field NameLength
 
 <dd>
 <p>Specifies the size in bytes of the following value entry name. </p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>A string of Unicode characters naming a value entry of the key. </p>

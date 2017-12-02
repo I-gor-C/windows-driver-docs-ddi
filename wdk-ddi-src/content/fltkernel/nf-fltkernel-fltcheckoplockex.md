@@ -7,7 +7,7 @@ old-location: ifsk\fltcheckoplockex.htm
 old-project: ifsk
 ms.assetid: 2af1f496-48cf-4f99-a22b-cf7d1837617e
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltCheckOplockEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,44 +59,44 @@ FLT_PREOP_CALLBACK_STATUS FltCheckOplockEx(
 ## -parameters
 <dl>
 
-### -param <i>Oplock</i> [in]
+### -param Oplock [in]
 
 <dd>
 <p>An opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>. </p>
 </dd>
 
-### -param <i>CallbackData</i> [in]
+### -param CallbackData [in]
 
 <dd>
 <p>A pointer to the callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A bitmask for the associated file I/O operation. A minifilter driver sets bits to specify the behavior of <b>FltCheckOplockEx</b>. The <i>Flags</i> parameter has the following options:</p>
 <p></p>
 <dl>
 
-### -param <a id="OPLOCK_FLAG_COMPLETE_IF_OPLOCKED__0x00000001_"></a><a id="oplock_flag_complete_if_oplocked__0x00000001_"></a><a id="OPLOCK_FLAG_COMPLETE_IF_OPLOCKED__0X00000001_"></a>OPLOCK_FLAG_COMPLETE_IF_OPLOCKED (0x00000001)
+### -param OPLOCK_FLAG_COMPLETE_IF_OPLOCKED (0x00000001)
 
 <dd>
 <p>Allows an opportunistic lock break to proceed without blocking or pending the operation that caused the oplock break. </p>
 </dd>
 
-### -param <a id="OPLOCK_FLAG_OPLOCK_KEY_CHECK_ONLY__0x00000002_"></a><a id="oplock_flag_oplock_key_check_only__0x00000002_"></a><a id="OPLOCK_FLAG_OPLOCK_KEY_CHECK_ONLY__0X00000002_"></a>OPLOCK_FLAG_OPLOCK_KEY_CHECK_ONLY (0x00000002)
+### -param OPLOCK_FLAG_OPLOCK_KEY_CHECK_ONLY (0x00000002)
 
 <dd>
 <p>Specifies that <b>FltCheckOplockEx</b> should only check for an opportunistic lock key on the FILE_OBJECT that is associated with the I/O operation. This I/O operations is represented by the callback data that the <i>CallbackData</i> parameter points to. <b>FltCheckOplockEx </b>must then add the key if one is provided in the I/O operation. No other oplock processing occurs; that is, no opportunistic lock break will occur. </p>
 </dd>
 
-### -param <a id="OPLOCK_FLAG_BACK_OUT_ATOMIC_OPLOCK__0x00000004_"></a><a id="oplock_flag_back_out_atomic_oplock__0x00000004_"></a><a id="OPLOCK_FLAG_BACK_OUT_ATOMIC_OPLOCK__0X00000004_"></a>OPLOCK_FLAG_BACK_OUT_ATOMIC_OPLOCK (0x00000004)
+### -param OPLOCK_FLAG_BACK_OUT_ATOMIC_OPLOCK (0x00000004)
 
 <dd>
 <p>Specifies that <a href="ifsk.fsrtlcheckoplockex">FsRtlCheckOplockEx</a> should revert any state that was previously set up through a call to the <a href="..\fltkernel\nf-fltkernel-fltoplockfsctrl.md">FltOplockFsctrl</a> routine. <b>FltOplockFsctrl</b> is called when an IRP_MJ_CREATE request is processed. This IRP_MJ_CREATE request specifies the FILE_OPEN_REQUIRING_OPLOCK flag in the create options parameter. The OPLOCK_FLAG_BACK_OUT_ATOMIC_OPLOCK flag is typically used in final processing of such a create request when it previously failed. </p>
 </dd>
 
-### -param <a id="OPLOCK_FLAG_IGNORE_OPLOCK_KEYS__0x00000008_"></a><a id="oplock_flag_ignore_oplock_keys__0x00000008_"></a><a id="OPLOCK_FLAG_IGNORE_OPLOCK_KEYS__0X00000008_"></a>OPLOCK_FLAG_IGNORE_OPLOCK_KEYS (0x00000008)
+### -param OPLOCK_FLAG_IGNORE_OPLOCK_KEYS (0x00000008)
 
 <dd>
 <p>Allows all opportunistic lock breaks to proceed regardless of the opportunistic lock key. </p>
@@ -104,13 +104,13 @@ FLT_PREOP_CALLBACK_STATUS FltCheckOplockEx(
 </dl>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>A pointer to caller-defined context information to be passed to the callback routines that <i>WaitCompletionRoutine</i> and <i>PrePostCallbackDataRoutine </i>point to. The Filter Manager treats this information as opaque. </p>
 </dd>
 
-### -param <i>WaitCompletionRoutine</i> [in, optional]
+### -param WaitCompletionRoutine [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied callback routine. If an oplock break is in progress, the Filter Manager calls this routine when the oplock break is completed. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, the caller is put into a wait state until the oplock break is completed. </p>
@@ -133,13 +133,13 @@ FLT_PREOP_CALLBACK_STATUS FltCheckOplockEx(
 <p></p>
 <dl>
 
-### -param <a id="CallbackData"></a><a id="callbackdata"></a><a id="CALLBACKDATA"></a><i>CallbackData</i>
+### -param CallbackData
 
 <dd>
 <p>A pointer to the callback data structure for the I/O operation. </p>
 </dd>
 
-### -param <a id="Context"></a><a id="context"></a><a id="CONTEXT"></a><i>Context</i>
+### -param Context
 
 <dd>
 <p>A context information pointer that was passed in the <i>Context</i> parameter to <b>FltCheckOplockEx</b>. </p>
@@ -147,7 +147,7 @@ FLT_PREOP_CALLBACK_STATUS FltCheckOplockEx(
 </dl>
 </dd>
 
-### -param <i>PrePostCallbackDataRoutine</i> [in, optional]
+### -param PrePostCallbackDataRoutine [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied callback routine to be called if the I/O operation is posted to a work queue. This parameter is optional and can be <b>NULL</b>. </p>
@@ -169,13 +169,13 @@ FLT_PREOP_CALLBACK_STATUS FltCheckOplockEx(
 <p></p>
 <dl>
 
-### -param <a id="CallbackData"></a><a id="callbackdata"></a><a id="CALLBACKDATA"></a><i>CallbackData</i>
+### -param CallbackData
 
 <dd>
 <p>A pointer to the callback data structure for the I/O operation. </p>
 </dd>
 
-### -param <a id="Context"></a><a id="context"></a><a id="CONTEXT"></a><i>Context</i>
+### -param Context
 
 <dd>
 <p>A context information pointer that was passed in the <i>Context</i> parameter to <b>FltCheckOplockEx</b>. </p>
@@ -302,4 +302,4 @@ FLT_PREOP_CALLBACK_STATUS FltCheckOplockEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCheckOplockEx routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCheckOplockEx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

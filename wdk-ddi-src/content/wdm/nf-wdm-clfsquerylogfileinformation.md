@@ -58,19 +58,19 @@ NTSTATUS  ClfsQueryLogFileInformation(
 ## -parameters
 <dl>
 
-### -param <i>plfoLog</i> [in]
+### -param plfoLog [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents a CLFS stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>.</p>
 </dd>
 
-### -param <i>eInformationClass</i> [in]
+### -param eInformationClass [in]
 
 <dd>
 <p>A value from the <a href="kernel.clfs_log_information_class">CLFS_LOG_INFORMATION_CLASS</a> enumeration that specifies the type of information being requested.</p>
 </dd>
 
-### -param <i>pinfoBuffer</i> [out]
+### -param pinfoBuffer [out]
 
 <dd>
 <p>A pointer to a buffer that receives the log information. The structure of this buffer depends on the value of <i>eInformationClass</i>. The following table shows the relationship between the information class and the data type of the buffer.</p>
@@ -133,7 +133,7 @@ NTSTATUS  ClfsQueryLogFileInformation(
 <p> </p>
 </dd>
 
-### -param <i>pcbBuffer</i> [in, out]
+### -param pcbBuffer [in, out]
 
 <dd>
 <p>The size, in bytes, of the buffer pointed to by <i>pinfoBuffer</i>.</p>

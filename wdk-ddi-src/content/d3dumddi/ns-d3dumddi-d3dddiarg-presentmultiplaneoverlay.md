@@ -61,37 +61,37 @@ typedef struct D3DDDIARG_PRESENTMULTIPLANEOVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based video present network (VidPN) source identification number of the input that is to be displayed.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-presentflags.md">D3DDDI_PRESENTFLAGS</a> structure that identifies, in bit-field flags, how to display.</p>
 </dd>
 
-### -field <b>FlipInterval</b>
+### -field FlipInterval
 
 <dd>
 <p>[in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi-flipinterval-type.md">D3DDDI_FLIPINTERVAL_TYPE</a> that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs). </p>
 </dd>
 
-### -field <b>PresentPlaneCount</b>
+### -field PresentPlaneCount
 
 <dd>
 <p>[in] The number of overlay planes that are available to display.</p>
 </dd>
 
-### -field <b>pPresentPlanes</b>
+### -field pPresentPlanes
 
 <dd>
 <p>[in] A pointer to a structure of type <a href="..\d3dumddi\ns-d3dumddi--d3dddi-present-multiplane-overlay.md">D3DDDI_PRESENT_MULTIPLANE_OVERLAY</a> that  describes the overlay plane to display.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] Reserved for system use. The driver should ignore this member.</p>

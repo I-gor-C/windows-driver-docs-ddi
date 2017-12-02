@@ -56,13 +56,13 @@ NTSTATUS WppRecorderLogCreate(
 ## -parameters
 <dl>
 
-### -param <i>CreateParams</i> 
+### -param CreateParams 
 
 <dd>
 <p>A pointer to a RECORDER_LOG_CREATE_PARAMS structure.</p>
 </dd>
 
-### -param <i>RecorderLog</i> 
+### -param RecorderLog 
 
 <dd>
 <p>A handle for the recorder log.</p>

@@ -54,7 +54,7 @@ typedef struct _PEP_LOW_POWER_EPOCH {
 ## -struct-fields
 <dl>
 
-### -field <b>LowPowerEpoch</b>
+### -field LowPowerEpoch
 
 <dd>
 <p>When <b>TRUE</b>, indicates that the low power epoch is on. </p>

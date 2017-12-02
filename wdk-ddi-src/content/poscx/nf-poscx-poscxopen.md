@@ -57,19 +57,19 @@ NTSTATUS PosCxOpen(
 ## -parameters
 <dl>
 
-### -param <i>device</i> [in]
+### -param device [in]
 
 <dd>
 <p>A handle to a framework device object that represents the device.</p>
 </dd>
 
-### -param <i>fileObject</i> [in]
+### -param fileObject [in]
 
 <dd>
 <p>A handle to a framework file object that identifies the caller associated with the open instance.</p>
 </dd>
 
-### -param <i>deviceInterfaceTag</i> [in]
+### -param deviceInterfaceTag [in]
 
 <dd>
 <p>An identifier used to specify the caller's device interface in a multi-function device.  For a single-interface device, this value should be 0.</p>

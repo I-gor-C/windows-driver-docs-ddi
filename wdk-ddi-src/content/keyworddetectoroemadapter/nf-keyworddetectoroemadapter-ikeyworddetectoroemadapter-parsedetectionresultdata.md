@@ -60,7 +60,7 @@ HRESULT ParseDetectionResultData(
 ## -parameters
 <dl>
 
-### -param <i>ModelData</i> [in]
+### -param ModelData [in]
 
 <dd>
 <p>A pointer to <b>IStream</b> bound to model data for the arming pattern.
@@ -68,38 +68,38 @@ HRESULT ParseDetectionResultData(
 </p>
 </dd>
 
-### -param <i>Result</i> [in]
+### -param Result [in]
 
 <dd>
 <p>A pointer to the <a href="..\ksmedia\ns-ksmedia-sounddetector-patternheader.md">SOUNDDETECTOR_PATTERNHEADER</a> from the DDI.
 </p>
 </dd>
 
-### -param <i>KeywordId</i> [out]
+### -param KeywordId [out]
 
 <dd>
 <p>Identifies a keyword function. The driver may return 0 to indicate no match.</p>
 </dd>
 
-### -param <i>LangId</i> [out]
+### -param LangId [out]
 
 <dd>
 <p>Identifies a language.</p>
 </dd>
 
-### -param <i>pIsUserMatch</i> [out]
+### -param pIsUserMatch [out]
 
 <dd>
 <p>Indicates if the user matched.</p>
 </dd>
 
-### -param <i>KeywordStartPerformanceCounter</i> [out]
+### -param KeywordStartPerformanceCounter [out]
 
 <dd>
 <p>Optionally returns the start time of the keyword in terms of the Windows performance counter. The OEMDLL should return 0 if this is not available.</p>
 </dd>
 
-### -param <i>KeywordEndPerformanceCounter</i> [out]
+### -param KeywordEndPerformanceCounter [out]
 
 <dd>
 <p>Optionally returns the end time of the keyword in terms of the Windows performance counter. The OEMDLL should return 0 if this is not available.</p>

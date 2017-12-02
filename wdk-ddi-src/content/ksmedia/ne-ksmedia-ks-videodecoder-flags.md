@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_VIDEODECODER_FLAGS_CAN_DISABLE_OUTPUT"></a><a id="ks_videodecoder_flags_can_disable_output"></a><b>KS_VIDEODECODER_FLAGS_CAN_DISABLE_OUTPUT</b>
+### -field KS_VIDEODECODER_FLAGS_CAN_DISABLE_OUTPUT
 
 <dd>
 <p>The decoder can translate its output lines. Video decoders that use a video port use this flag.</p>
 </dd>
 
-### -field <a id="KS_VIDEODECODER_FLAGS_CAN_USE_VCR_LOCKING"></a><a id="ks_videodecoder_flags_can_use_vcr_locking"></a><b>KS_VIDEODECODER_FLAGS_CAN_USE_VCR_LOCKING</b>
+### -field KS_VIDEODECODER_FLAGS_CAN_USE_VCR_LOCKING
 
 <dd>
 <p>The video decoder can alter its phase locked loop (PLL) timings to lock on to noisy signals. This flag typically is used when the video source is a VCR that introduces variability in the vertical and horizontal sync timing.</p>
 </dd>
 
-### -field <a id="KS_VIDEODECODER_FLAGS_CAN_INDICATE_LOCKED"></a><a id="ks_videodecoder_flags_can_indicate_locked"></a><b>KS_VIDEODECODER_FLAGS_CAN_INDICATE_LOCKED</b>
+### -field KS_VIDEODECODER_FLAGS_CAN_INDICATE_LOCKED
 
 <dd>
 <p>The video decoder can distinguish whether it has locked to an incoming analog video signal.</p>

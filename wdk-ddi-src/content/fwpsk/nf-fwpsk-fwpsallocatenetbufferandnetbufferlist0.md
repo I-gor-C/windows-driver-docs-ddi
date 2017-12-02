@@ -7,7 +7,7 @@ old-location: netvista\fwpsallocatenetbufferandnetbufferlist0.htm
 old-project: netvista
 ms.assetid: d7f2d3c0-f2c9-4624-b3e1-9fbbf64c7186
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsAllocateNetBufferAndNetBufferList0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
 ## -parameters
 <dl>
 
-### -param <i>poolHandle</i> [in]
+### -param poolHandle [in]
 
 <dd>
 <p>A 
@@ -71,7 +71,7 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
      <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">NdisAllocateNetBufferListPool</a> function.</p>
 </dd>
 
-### -param <i>contextSize</i> [in]
+### -param contextSize [in]
 
 <dd>
 <p>The size, in bytes, of used data space in the 
@@ -80,7 +80,7 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
      by <b>MEMORY_ALLOCATION_ALIGNMENT</b>.</p>
 </dd>
 
-### -param <i>contextBackFill</i> [in]
+### -param contextBackFill [in]
 
 <dd>
 <p>The size, in bytes, of 
@@ -90,14 +90,14 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
      multiple of the value defined by <b>MEMORY_ALLOCATION_ALIGNMENT</b>.</p>
 </dd>
 
-### -param <i>mdlChain</i> [in, optional]
+### -param mdlChain [in, optional]
 
 <dd>
 <p>A pointer to an MDL chain that is used to initialize the preallocated NET_BUFFER structure. This
      parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>dataOffset</i> [in]
+### -param dataOffset [in]
 
 <dd>
 <p>The initial offset, in bytes, from the start of the buffer to the start of the 
@@ -106,14 +106,14 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
      space in the MDL chain.</p>
 </dd>
 
-### -param <i>dataLength</i> [in]
+### -param dataLength [in]
 
 <dd>
 <p>The length, in bytes, of the 
      used data space in the MDL chain.</p>
 </dd>
 
-### -param <i>netBufferList</i> [out]
+### -param netBufferList [out]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to the new 
@@ -142,7 +142,7 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
 <p>This function is a wrapper around the 
     <a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
     NdisAllocateNetBufferAndNetBufferList</a> function, but it is specialized for use by WFP 
-    <a href="NULL">packet injection functions</a>.</p>
+    <a href="netvista.packet_injection_functions">packet injection functions</a>.</p>
 
 <p>After the data described by the new <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure has been successfully injected into the
     network stack, the callout driver frees the new <b>NET_BUFFER_LIST</b> structure by calling the 
@@ -219,9 +219,9 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
 <a href="..\ndis\ns-ndis--net-buffer-list-context.md">NET_BUFFER_LIST_CONTEXT</a>
 </dt>
 <dt>
-<a href="NULL">Packet Injection Functions</a>
+<a href="netvista.packet_injection_functions">Packet Injection Functions</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAllocateNetBufferAndNetBufferList0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAllocateNetBufferAndNetBufferList0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

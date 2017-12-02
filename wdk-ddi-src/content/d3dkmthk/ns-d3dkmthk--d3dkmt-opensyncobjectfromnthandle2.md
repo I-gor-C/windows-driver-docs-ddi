@@ -65,49 +65,49 @@ typedef struct _D3DKMT_OPENSYNCOBJECTFROMNTHANDLE2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hNtHandle</b>
+### -field hNtHandle
 
 <dd>
 <p>[in] NT handle for the sync object to be opened.</p>
 </dd>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] Device handle to use this sync object on.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] Specifies the desired sync object behavior for this device, such as wait and signal semantics and TDR handling.</p>
 </dd>
 
-### -field <b>hSyncObject</b>
+### -field hSyncObject
 
 <dd>
 <p>[out] Handle to the sync object that can be used in this process.</p>
 </dd>
 
-### -field <b>MonitoredFence</b>
+### -field MonitoredFence
 
 <dd>
 <p>Contains sync object virtual addresses that can be used in this process.</p>
 <dl>
 
-### -field <b>FenceValueCPUVirtualAddress</b>
+### -field FenceValueCPUVirtualAddress
 
 <dd>
 <p>[out] A read-only mapping of the fence value for the CPU. This is a user mode address readable from the process that created the monitored fence object. For 32 bit platforms that support 64 bit atomic reads via methods such as <code>InterlockedCompareExchange64(pointer,0,0)</code>, the mapping will be made read-write instead of read-only to avoid an access violation during the interlocked operation. Depending on the value of <b>No64BitAtomics</b> cap, this address points to either a 32 bit or a 64 bit underlying value.</p>
 </dd>
 
-### -field <b>FenceValueGPUVirtualAddress</b>
+### -field FenceValueGPUVirtualAddress
 
 <dd>
 <p>[out] A read-write mapping of the fence value for the GPU. A driver can signal a new fence value by inserting a GPU write command for this address into a command buffer, and the DirectX graphics  kernel will unblock waiters for this fence object value. This GPU virtual address is mapped asynchronously, and the driver should wait for the device that opened or created the monitored fence synchronization object to reach <b>PagingFenceValue</b> on its paging fence object prior to accessing this GPU virtual address. Depending on the value of <b>No64BitAtomics</b> cap, this address points to either a 32 bit or a 64 bit underlying value.</p>
 </dd>
 
-### -field <b>EngineAffinity</b>
+### -field EngineAffinity
 
 <dd>
 <p>[in] A bit field, where each bit position (starting from zero) defines a physical adapter index in an linked display adapter link where the GPU virtual address will be committed. Zero means that GPU virtual address will be committed to all physical adapters.</p>
@@ -115,7 +115,7 @@ typedef struct _D3DKMT_OPENSYNCOBJECTFROMNTHANDLE2 {
 </dl>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>The consolidated value of the <b>MonitoredFence</b> structure.</p>

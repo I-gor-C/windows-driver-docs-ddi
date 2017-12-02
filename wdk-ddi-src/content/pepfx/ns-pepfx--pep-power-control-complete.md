@@ -58,31 +58,31 @@ typedef struct _PEP_POWER_CONTROL_COMPLETE {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>PowerControlCode</b>
+### -field PowerControlCode
 
 <dd>
 <p>[in] A pointer to a <a href="http://msdn.microsoft.com/library/windows/desktop/aa373931(v=vs.85).aspx">GUID</a> value that specifies the power control operation that was performed. This is the same value that the PEP supplied in response to the <a href="kernel.pep_dpm_work">PEP_DPM_WORK</a> notification to initiate the power control operation.</p>
 </dd>
 
-### -field <b>RequestContext</b>
+### -field RequestContext
 
 <dd>
 <p>[in] A pointer to the request context that was sent by the PEP in the <a href="..\pepfx\ns-pepfx--pep-work-information.md">PEP_WORK_INFORMATION</a> structure that the PEP supplied in the original work request. Typically, this member points to a structure that contains a pointer to an output buffer to contain the results of the power control operation that was requested by the PEP.</p>
 </dd>
 
-### -field <b>BytesReturned</b>
+### -field BytesReturned
 
 <dd>
 <p>[in] The size, in bytes, of the result data stored by the driver in the output buffer. For more information about this buffer, see the description of the <b>RequestContext</b> member.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>[in] The status of the power control operation. If the operation was successful, the PEP sets this member to STATUS_SUCCESS. Otherwise, the PEP sets this member to an appropriate error status code.</p>

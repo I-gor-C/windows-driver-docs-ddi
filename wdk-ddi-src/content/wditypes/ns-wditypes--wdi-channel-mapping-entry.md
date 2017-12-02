@@ -7,7 +7,7 @@ old-location: netvista\wdi_channel_mapping_entry.htm
 old-project: netvista
 ms.assetid: F05DAD5F-C0A4-46E0-8069-7CEF5B6C5707
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDI_CHANNEL_MAPPING_ENTRY,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ typedef struct _WDI_CHANNEL_MAPPING_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>ChannelNumber</b>
+### -field ChannelNumber
 
 <dd>
 <p>Specifies the logical channel number.</p>
 </dd>
 
-### -field <b>ChannelCenterFrequency</b>
+### -field ChannelCenterFrequency
 
 <dd>
 <p>Specifies the center frequency for the channel in MHz.</p>

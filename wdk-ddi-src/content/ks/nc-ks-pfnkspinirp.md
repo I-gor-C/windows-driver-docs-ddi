@@ -58,13 +58,13 @@ NTSTATUS AVStrMiniPinClose(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>Pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> that was just closed.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a> for <i>Pin</i>.</p>
@@ -79,7 +79,7 @@ NTSTATUS AVStrMiniPinClose(
 
 <p>At the point at which the routine is called, any registered events on the pin have been freed, but the object is otherwise intact.</p>
 
-<p>The filter control mutex is held while in this function. For more information about mutexes, please see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>The filter control mutex is held while in this function. For more information about mutexes, please see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 <p>This routine is optional.</p>
 

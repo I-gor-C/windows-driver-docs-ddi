@@ -54,7 +54,7 @@ BOOLEAN KsProcessPinUpdate(
 ## -parameters
 <dl>
 
-### -param <i>ProcessPin</i> [in]
+### -param ProcessPin [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksprocesspin.md">KSPROCESSPIN</a> structure that represents the process pin to update.</p>
@@ -65,7 +65,7 @@ BOOLEAN KsProcessPinUpdate(
 <p><b>KsProcessPinUpdate</b> returns <b>TRUE</b> if <i>ProcessPin</i>'s conditions for processing are met; otherwise, it returns <b>FALSE</b>. (These conditions are set in the pin descriptor within the <b>Pin</b> member of <i>ProcessPin</i>.) If the minidriver's dispatch calls this routine while the filter is in the STOP state, <b>KsProcessPinUpdate</b> returns <b>FALSE</b> since no pipe exists.</p>
 
 ## -remarks
-<p>For more information, see <a href="NULL">Filter-Centric Processing</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>.</p>
 
 ## -requirements
 <table>

@@ -55,13 +55,13 @@ typedef enum D3DWDDM1_3DDI_MARKER_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DWDDM1_3DDI_MARKER_TYPE_NONE"></a><a id="d3dwddm1_3ddi_marker_type_none"></a><b>D3DWDDM1_3DDI_MARKER_TYPE_NONE</b>
+### -field D3DWDDM1_3DDI_MARKER_TYPE_NONE
 
 <dd>
 <p>No marker type is supported.</p>
 </dd>
 
-### -field <a id="D3DWDDM1_3DDI_MARKER_TYPE_PROFILE"></a><a id="d3dwddm1_3ddi_marker_type_profile"></a><b>D3DWDDM1_3DDI_MARKER_TYPE_PROFILE</b>
+### -field D3DWDDM1_3DDI_MARKER_TYPE_PROFILE
 
 <dd>
 <p>The context submits GPU work for single-threaded user-mode DDIs. In this case, each time stamp denotes the end of GPU work.</p>

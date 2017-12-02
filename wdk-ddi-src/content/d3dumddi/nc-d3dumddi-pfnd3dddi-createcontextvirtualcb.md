@@ -58,13 +58,13 @@ HRESULT APIENTRY CALLBACK* pfnCreateContextVirtualCb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device.</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-createcontextvirtual.md">D3DDDICB_CREATECONTEXTVIRTUAL</a> structure that describes the context to create.</p>

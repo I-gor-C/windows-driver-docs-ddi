@@ -56,13 +56,13 @@ BOOLEAN ExCancelTimer(
 ## -parameters
 <dl>
 
-### -param <i>Timer</i> [in, out]
+### -param Timer [in, out]
 
 <dd>
 <p>A pointer to an <a href="kernel.ex_timer">EX_TIMER</a> structure. This structure is a timer object that was previously allocated by the <a href="..\wdm\nf-wdm-exallocatetimer.md">ExAllocateTimer</a> routine.</p>
 </dd>
 
-### -param <i>Parameters</i> [in, optional]
+### -param Parameters [in, optional]
 
 <dd>
 <p>Drivers must set this parameter to <b>NULL</b>.</p>

@@ -7,7 +7,7 @@ old-location: ifsk\rtlgetelementgenerictableavl.htm
 old-project: ifsk
 ms.assetid: c836dd4b-5c66-4302-9b2a-115cec418533
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlGetElementGenericTableAvl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ PVOID RtlGetElementGenericTableAvl(
 ## -parameters
 <dl>
 
-### -param <i>Table</i> [in]
+### -param Table [in]
 
 <dd>
 <p>Pointer to the generic AVL table (<a href="..\ntddk\ns-ntddk--rtl-avl-table.md">RTL_AVL_TABLE</a>) from which the <i>I</i>th element is to be retrieved. The table must have been initialized by calling <a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>.</p>
 </dd>
 
-### -param <i>I</i> [in]
+### -param I [in]
 
 <dd>
 <p>Index of the element selected. This value is zero-based, so the index of the last-inserted element currently in <i>Table</i> is always one less than the value returned by <a href="https://msdn.microsoft.com/library/windows/hardware/hh406522">RtlNumberGenericTableElementsAvl</a>. </p>
@@ -169,4 +169,4 @@ PVOID RtlGetElementGenericTableAvl(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetElementGenericTableAvl routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetElementGenericTableAvl routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\rilemergencynumber_2.htm
 old-project: netvista
 ms.assetid: 70759d23-b5ab-4c51-b73f-32021b9ae6fb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILEMERGENCYNUMBER,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef struct _RILEMERGENCYNUMBER {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwCategory</b>
+### -field dwCategory
 
 <dd></dd>
 
-### -field <b>wszEmergencyNumber</b>
+### -field wszEmergencyNumber
 
 <dd></dd>
 </dl>

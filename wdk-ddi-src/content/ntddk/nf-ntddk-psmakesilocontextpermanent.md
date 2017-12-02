@@ -55,13 +55,13 @@ NTSTATUS PsMakeSiloContextPermanent(
 ## -parameters
 <dl>
 
-### -param <i>Silo</i> [in]
+### -param Silo [in]
 
 <dd>
 <p>The silo in which the slot resides. This parameter is required and it cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>ContextSlot</i> [in]
+### -param ContextSlot [in]
 
 <dd>
 <p>The slot to make read-only. The slot must be previously allocated by the <a href="..\ntddk\nf-ntddk-psallocsilocontextslot.md">PsAllocSiloContextSlot</a> routine.</p>

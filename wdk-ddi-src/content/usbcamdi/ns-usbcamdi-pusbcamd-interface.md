@@ -60,37 +60,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>Describes the interface that USBCAMD exports for use by other drivers.</p>
 </dd>
 
-### -field <b>USBCAMD_WaitOnDeviceEvent</b>
+### -field USBCAMD_WaitOnDeviceEvent
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.usbcamd_waitondeviceevent">USBCAMD_WaitOnDeviceEvent</a> service.</p>
 </dd>
 
-### -field <b>USBCAMD_BulkReadWrite</b>
+### -field USBCAMD_BulkReadWrite
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.usbcamd_bulkreadwrite">USBCAMD_BulkReadWrite</a> service.</p>
 </dd>
 
-### -field <b>USBCAMD_SetVideoFormat</b>
+### -field USBCAMD_SetVideoFormat
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.usbcamd_setvideoformat">USBCAMD_SetVideoFormat</a> service.</p>
 </dd>
 
-### -field <b>USBCAMD_SetIsoPipeState</b>
+### -field USBCAMD_SetIsoPipeState
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.usbcamd_setisopipestate">USBCAMD_SetIsoPipeState</a> service.</p>
 </dd>
 
-### -field <b>USBCAMD_CancelBulkReadWrite</b>
+### -field USBCAMD_CancelBulkReadWrite
 
 <dd>
 <p>Pointer to the camera minidriver defined <a href="stream.usbcamd_cancelbulkreadwrite">USBCAMD_CancelBulkReadWrite</a> service.</p>
@@ -98,7 +98,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>The camera minidriver may obtain the USBCAMD_INTERFACE entry points at any point after it has received <a href="https://msdn.microsoft.com/library/windows/hardware/ff568182">SRB_INITIALIZATION_COMPLETE</a>. The IRP for acquiring a USBCAMD_INTERFACE is <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> and must be sent at IRQL = PASSIVE_LEVEL. Typically, a camera minidriver obtains the addresses of the USBCAMD_INTERFACE entry points once toward the end of the initialization of the camera minidriver. The members of the USBCAMD_INTERFACE structure are filled with the minidriver's entry points as described in <a href="NULL">Acquiring USBCAMD2 Features</a>
+<p>The camera minidriver may obtain the USBCAMD_INTERFACE entry points at any point after it has received <a href="https://msdn.microsoft.com/library/windows/hardware/ff568182">SRB_INITIALIZATION_COMPLETE</a>. The IRP for acquiring a USBCAMD_INTERFACE is <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> and must be sent at IRQL = PASSIVE_LEVEL. Typically, a camera minidriver obtains the addresses of the USBCAMD_INTERFACE entry points once toward the end of the initialization of the camera minidriver. The members of the USBCAMD_INTERFACE structure are filled with the minidriver's entry points as described in <a href="https://msdn.microsoft.com/39db38a8-8279-4c61-9010-cc6d4767efc2">Acquiring USBCAMD2 Features</a>
 </p>
 
 <p><b>USBCAMD_INTERFACE</b> is not supported in the original USBCAMD.</p>

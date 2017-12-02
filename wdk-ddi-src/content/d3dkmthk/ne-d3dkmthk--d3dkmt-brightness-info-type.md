@@ -63,61 +63,61 @@ typedef enum _D3DKMT_BRIGHTNESS_INFO_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_BRIGHTNESS_INFO_GET_POSSIBLE_LEVELS"></a><a id="d3dkmt_brightness_info_get_possible_levels"></a><b>D3DKMT_BRIGHTNESS_INFO_GET_POSSIBLE_LEVELS</b>
+### -field D3DKMT_BRIGHTNESS_INFO_GET_POSSIBLE_LEVELS
 
 <dd>
 <p>Retrieve all possible brightness levels that the integrated display panel supports.</p>
 </dd>
 
-### -field <a id="D3DKMT_BRIGHTNESS_INFO_GET"></a><a id="d3dkmt_brightness_info_get"></a><b>D3DKMT_BRIGHTNESS_INFO_GET</b>
+### -field D3DKMT_BRIGHTNESS_INFO_GET
 
 <dd>
 <p>Retrieve the currently active brightness level.</p>
 </dd>
 
-### -field <a id="D3DKMT_BRIGHTNESS_INFO_SET"></a><a id="d3dkmt_brightness_info_set"></a><b>D3DKMT_BRIGHTNESS_INFO_SET</b>
+### -field D3DKMT_BRIGHTNESS_INFO_SET
 
 <dd>
 <p> Set a new brightness level.</p>
 </dd>
 
-### -field <a id="D3DKMT_BRIGHTNESS_INFO_GET_CAPS"></a><a id="d3dkmt_brightness_info_get_caps"></a><b>D3DKMT_BRIGHTNESS_INFO_GET_CAPS</b>
+### -field D3DKMT_BRIGHTNESS_INFO_GET_CAPS
 
 <dd>
 <p>Retrieve brightness control capabilities of the integrated display panel.</p>
 </dd>
 
-### -field <a id="D3DKMT_BRIGHTNESS_INFO_SET_STATE"></a><a id="d3dkmt_brightness_info_set_state"></a><b>D3DKMT_BRIGHTNESS_INFO_SET_STATE</b>
+### -field D3DKMT_BRIGHTNESS_INFO_SET_STATE
 
 <dd>
 <p>Enable smooth brightness control.</p>
 </dd>
 
-### -field <a id="D3DKMT_BRIGHTNESS_INFO_SET_OPTIMIZATION"></a><a id="d3dkmt_brightness_info_set_optimization"></a><b>D3DKMT_BRIGHTNESS_INFO_SET_OPTIMIZATION</b>
+### -field D3DKMT_BRIGHTNESS_INFO_SET_OPTIMIZATION
 
 <dd>
 <p>Set the level of optimization that the display miniport driver uses to control the brightness of the integrated display panel.</p>
 </dd>
 
-### -field <a id="D3DKMT_BRIGHTNESS_INFO_GET_REDUCTION"></a><a id="d3dkmt_brightness_info_get_reduction"></a><b>D3DKMT_BRIGHTNESS_INFO_GET_REDUCTION</b>
+### -field D3DKMT_BRIGHTNESS_INFO_GET_REDUCTION
 
 <dd>
 <p>Retrieve the current level of backlight reduction that is applied to the integrated display panel.</p>
 </dd>
 
-### -field <a id="D3DKMT_BRIGHTNESS_INFO_BEGIN_MANUAL_MODE"></a><a id="d3dkmt_brightness_info_begin_manual_mode"></a><b>D3DKMT_BRIGHTNESS_INFO_BEGIN_MANUAL_MODE</b>
+### -field D3DKMT_BRIGHTNESS_INFO_BEGIN_MANUAL_MODE
 
 <dd>
 <p>The user has begun to manually adjust the brightness level.</p>
 </dd>
 
-### -field <a id="D3DKMT_BRIGHTNESS_INFO_END_MANUAL_MODE"></a><a id="d3dkmt_brightness_info_end_manual_mode"></a><b>D3DKMT_BRIGHTNESS_INFO_END_MANUAL_MODE</b>
+### -field D3DKMT_BRIGHTNESS_INFO_END_MANUAL_MODE
 
 <dd>
 <p>The user has ended the manual adjustment of the brightness level.</p>
 </dd>
 
-### -field <a id="D3DKMT_BRIGHTNESS_INFO_TOGGLE_LOGGING"></a><a id="d3dkmt_brightness_info_toggle_logging"></a><b>D3DKMT_BRIGHTNESS_INFO_TOGGLE_LOGGING</b>
+### -field D3DKMT_BRIGHTNESS_INFO_TOGGLE_LOGGING
 
 <dd>
 <p>Enable or disable Event Tracing for Windows (ETW) logging of brightness information.</p>

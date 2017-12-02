@@ -54,7 +54,7 @@ typedef struct _D3DDDIARG_SETDEPTHSTENCIL {
 ## -struct-fields
 <dl>
 
-### -field <b>hZBuffer</b>
+### -field hZBuffer
 
 <dd>
 <p>[in] A handle to the depth buffer.</p>

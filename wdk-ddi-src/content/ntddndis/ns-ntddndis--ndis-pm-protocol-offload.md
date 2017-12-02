@@ -7,7 +7,7 @@ old-location: netvista\ndis_pm_protocol_offload.htm
 old-project: netvista
 ms.assetid: 1ae68e5c-f9ea-4454-b015-82e3af0f7ccd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PM_PROTOCOL_OFFLOAD, NDIS_PM_PROTOCOL_OFFLOAD, *PNDIS_PM_PROTOCOL_OFFLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,7 +82,7 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -94,13 +94,13 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
      <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_PROTOCOL_OFFLOAD_REVISION_1.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>Priority</b>
+### -field Priority
 
 <dd>
 <p>A ULONG value that contains the priority of the protocol offload. If an overlying driver adds a
@@ -112,19 +112,19 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_PM_PROTOCOL_OFFLOAD_PRIORITY_LOWEST"></a><a id="ndis_pm_protocol_offload_priority_lowest"></a>NDIS_PM_PROTOCOL_OFFLOAD_PRIORITY_LOWEST
+### -field NDIS_PM_PROTOCOL_OFFLOAD_PRIORITY_LOWEST
 
 <dd>
 <p>Specifies the lowest priority protocol offload.</p>
 </dd>
 
-### -field <a id="NDIS_PM_PROTOCOL_OFFLOAD_PRIORITY_NORMAL"></a><a id="ndis_pm_protocol_offload_priority_normal"></a>NDIS_PM_PROTOCOL_OFFLOAD_PRIORITY_NORMAL
+### -field NDIS_PM_PROTOCOL_OFFLOAD_PRIORITY_NORMAL
 
 <dd>
 <p>Specifies a normal priority protocol offload.</p>
 </dd>
 
-### -field <a id="NDIS_PM_PROTOCOL_OFFLOAD_PRIORITY_HIGHEST"></a><a id="ndis_pm_protocol_offload_priority_highest"></a>NDIS_PM_PROTOCOL_OFFLOAD_PRIORITY_HIGHEST
+### -field NDIS_PM_PROTOCOL_OFFLOAD_PRIORITY_HIGHEST
 
 <dd>
 <p>Specifies the highest priority protocol offload.</p>
@@ -132,7 +132,7 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
 </dl>
 </dd>
 
-### -field <b>ProtocolOffloadType</b>
+### -field ProtocolOffloadType
 
 <dd>
 <p>An 
@@ -140,7 +140,7 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
      NDIS_PM_PROTOCOL_OFFLOAD_TYPE</a> value that contains the type of protocol offload.</p>
 </dd>
 
-### -field <b>FriendlyName</b>
+### -field FriendlyName
 
 <dd>
 <p>An 
@@ -148,7 +148,7 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
      that contains the user-readable description of the low power protocol offload.</p>
 </dd>
 
-### -field <b>ProtocolOffloadId</b>
+### -field ProtocolOffloadId
 
 <dd>
 <p>A ULONG value that contains an NDIS-provided value that identifies the offloaded protocol. Before
@@ -158,7 +158,7 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
      <b>ProtocolOffloadId</b> to a value that is unique among the protocol offloads on a network adapter.</p>
 </dd>
 
-### -field <b>NextProtocolOffloadOffset</b>
+### -field NextProtocolOffloadOffset
 
 <dd>
 <p>A ULONG value that contains an offset, in bytes. The 
@@ -168,26 +168,26 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
      <b>NextProtocolOffloadOffset</b> is zero, the current structure is the last structure in the list.</p>
 </dd>
 
-### -field <b>ProtocolOffloadParameters</b>
+### -field ProtocolOffloadParameters
 
 <dd>
 <p>A union that contains the following member structures:</p>
 <dl>
 
-### -field <b>IPv4ARPParameters</b>
+### -field IPv4ARPParameters
 
 <dd>
 <p>A structure that contains IPv4 ARP parameters. This structure contains the following
       members:</p>
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>RemoteIPv4Address</b>
+### -field RemoteIPv4Address
 
 <dd>
 <p>A <b>UCHAR</b> array that contains an optional IPv4 address. This address represents the Source Protocol
@@ -198,14 +198,14 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
 <p>For more information about the ARP protocol, see RFC 826.</p>
 </dd>
 
-### -field <b>HostIPv4Address</b>
+### -field HostIPv4Address
 
 <dd>
 <p>A <b>UCHAR</b> array that contains the IPv4 address. When it sends the ARP response, the network adapter uses this
        member for the SPA field of the response.</p>
 </dd>
 
-### -field <b>MacAddress</b>
+### -field MacAddress
 
 <dd>
 <p>A <b>UCHAR</b> array that contains a media access control (MAC) address. The network adapter uses this MAC address
@@ -219,20 +219,20 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
 </dl>
 </dd>
 
-### -field <b>IPv6NSParameters</b>
+### -field IPv6NSParameters
 
 <dd>
 <p>A structure that contains IPv6 Neighbor Solicitation (NS) parameters. This structure contains the
       following members:</p>
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise OR of flags. This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>RemoteIPv6Address</b>
+### -field RemoteIPv6Address
 
 <dd>
 <p>A <b>UCHAR</b> array that contains an optional IPv6 address. This address represents the Source Address
@@ -243,14 +243,14 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
 <p>For more information about IPv6 NS and NA messages, see <a href="http://go.microsoft.com/fwlink/p/?linkid=268370">RFC 4861</a>.</p>
 </dd>
 
-### -field <b>SolicitedNodeIPv6Address</b>
+### -field SolicitedNodeIPv6Address
 
 <dd>
 <p>A <b>UCHAR</b> array that contains the solicited node IPv6 address. For more information about this
        type of IPv6 address, see Multicast IPv6 Addresses.</p>
 </dd>
 
-### -field <b>MacAddress</b>
+### -field MacAddress
 
 <dd>
 <p>A <b>UCHAR</b> array that contains the MAC address. When it sends the NA message, the network adapter uses this array
@@ -261,7 +261,7 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
 <div> </div>
 </dd>
 
-### -field <b>TargetIPv6Addresses</b>
+### -field TargetIPv6Addresses
 
 <dd>
 <p>A <b>UCHAR</b> array that contains one or two IPv6 addresses. If it contains only one address, that address is stored in the first element in the array, and the second element is filled with zeros.</p>
@@ -273,32 +273,32 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
 </dl>
 </dd>
 
-### -field <b>Dot11RSNRekeyParameters</b>
+### -field Dot11RSNRekeyParameters
 
 <dd>
 <p>A structure that contains IEEE 802.11i Robust Security Network (RSN) handshake parameters. This
       structure contains the following members:</p>
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise OR of flags. This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>KCK</b>
+### -field KCK
 
 <dd>
 <p>A <b>UCHAR</b> array that contains an IEEE 802.11 key confirmation key (KCK).</p>
 </dd>
 
-### -field <b>KEK</b>
+### -field KEK
 
 <dd>
 <p>A <b>UCHAR</b> array that contains an IEEE 802.11 key encryption key (KEK).</p>
 </dd>
 
-### -field <b>KeyReplayCounter</b>
+### -field KeyReplayCounter
 
 <dd>
 <p>A <b>ULONGLONG</b> value that contains a replay counter.</p>
@@ -357,4 +357,4 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PROTOCOL_OFFLOAD structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PROTOCOL_OFFLOAD structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

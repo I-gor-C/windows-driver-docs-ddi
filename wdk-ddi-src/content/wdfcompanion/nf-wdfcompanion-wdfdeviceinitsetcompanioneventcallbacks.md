@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitsetcompanioneventcallbacks.htm
 old-project: wdf
 ms.assetid: 7320238d-0c7f-423c-8de7-2b22d02d77bd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceInitSetCompanionEventCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,11 +57,11 @@ VOID WdfDeviceInitSetCompanionEventCallbacks(
 ## -parameters
 <dl>
 
-### -param <i>DeviceInit</i> [in]
+### -param DeviceInit [in]
 
 <dd></dd>
 
-### -param <i>CompanionEventCallbacks</i> [in]
+### -param CompanionEventCallbacks [in]
 
 <dd></dd>
 </dl>

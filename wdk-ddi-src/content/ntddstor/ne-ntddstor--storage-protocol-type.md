@@ -61,49 +61,49 @@ typedef enum _STORAGE_PROTOCOL_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="ProtocolTypeUnknown"></a><a id="protocoltypeunknown"></a><a id="PROTOCOLTYPEUNKNOWN"></a><b>ProtocolTypeUnknown</b>
+### -field ProtocolTypeUnknown
 
 <dd>
 <p>Unknown protocol type.</p>
 </dd>
 
-### -field <a id="ProtocolTypeScsi"></a><a id="protocoltypescsi"></a><a id="PROTOCOLTYPESCSI"></a><b>ProtocolTypeScsi</b>
+### -field ProtocolTypeScsi
 
 <dd>
 <p>SCSI protocol type.</p>
 </dd>
 
-### -field <a id="ProtocolTypeAta"></a><a id="protocoltypeata"></a><a id="PROTOCOLTYPEATA"></a><b>ProtocolTypeAta</b>
+### -field ProtocolTypeAta
 
 <dd>
 <p>ATA protocol type.</p>
 </dd>
 
-### -field <a id="ProtocolTypeNvme"></a><a id="protocoltypenvme"></a><a id="PROTOCOLTYPENVME"></a><b>ProtocolTypeNvme</b>
+### -field ProtocolTypeNvme
 
 <dd>
 <p>NVMe protocol type.</p>
 </dd>
 
-### -field <a id="ProtocolTypeSd"></a><a id="protocoltypesd"></a><a id="PROTOCOLTYPESD"></a><b>ProtocolTypeSd</b>
+### -field ProtocolTypeSd
 
 <dd>
 <p>SD protocol type.</p>
 </dd>
 
-### -field <a id="ProtocolTypeUfs"></a><a id="protocoltypeufs"></a><a id="PROTOCOLTYPEUFS"></a><b>ProtocolTypeUfs</b>
+### -field ProtocolTypeUfs
 
 <dd>
 <p>UFS protocol type.</p>
 </dd>
 
-### -field <a id="ProtocolTypeProprietary"></a><a id="protocoltypeproprietary"></a><a id="PROTOCOLTYPEPROPRIETARY"></a><b>ProtocolTypeProprietary</b>
+### -field ProtocolTypeProprietary
 
 <dd>
 <p> Vendor-specific protocol type.</p>
 </dd>
 
-### -field <a id="ProtocolTypeMaxReserved"></a><a id="protocoltypemaxreserved"></a><a id="PROTOCOLTYPEMAXRESERVED"></a><b>ProtocolTypeMaxReserved</b>
+### -field ProtocolTypeMaxReserved
 
 <dd>
 <p>Reserved.</p>

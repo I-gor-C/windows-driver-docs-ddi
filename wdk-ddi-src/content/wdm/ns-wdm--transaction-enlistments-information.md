@@ -56,13 +56,13 @@ typedef struct _TRANSACTION_ENLISTMENTS_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfEnlistments</b>
+### -field NumberOfEnlistments
 
 <dd>
 <p>The number of enlistments that are associated with a transaction object. This is also the number of elements in the array that the <b>EnlistmentPair</b> member specifies.</p>
 </dd>
 
-### -field <b>EnlistmentPair</b>
+### -field EnlistmentPair
 
 <dd>
 <p>A caller-allocated array of <a href="..\wdm\ns-wdm--transaction-enlistment-pair.md">TRANSACTION_ENLISTMENT_PAIR</a> structures. </p>

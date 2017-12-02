@@ -58,7 +58,7 @@ _Check_return_ HRESULT APIENTRY* pfnUpdateSubresourceUP(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).
@@ -66,7 +66,7 @@ _Check_return_ HRESULT APIENTRY* pfnUpdateSubresourceUP(
 </p>
 </dd>
 
-### -param <i>pCounterInfo</i> [in]
+### -param pCounterInfo [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-updatesubresourceup.md">D3DDDIARG_UPDATESUBRESOURCEUP</a> structure that describes how to update a destination subresource region from a source system-memory region.</p>

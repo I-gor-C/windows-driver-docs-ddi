@@ -7,7 +7,7 @@ old-location: netvista\rilcloseuicclogicalchannelgroupparams_2.htm
 old-project: netvista
 ms.assetid: 89d50918-2cd2-4889-aec4-fc9e2875855a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCLOSEUICCLOGICALCHANNELGROUPPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILCLOSEUICCLOGICALCHANNELGROUPPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSlotIndex</b>
+### -field dwSlotIndex
 
 <dd></dd>
 
-### -field <b>dwChannelGroup</b>
+### -field dwChannelGroup
 
 <dd></dd>
 </dl>

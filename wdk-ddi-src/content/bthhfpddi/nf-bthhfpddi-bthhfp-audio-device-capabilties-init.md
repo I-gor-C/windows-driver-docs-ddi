@@ -56,7 +56,7 @@ FORCEINLINE VOID  BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT(
 ## -parameters
 <dl>
 
-### -param <i>caps</i> [out]
+### -param caps [out]
 
 <dd>
 <p>A pointer to an initialized <a href="audio._bthhfp_audio_device_capabilties">BTHHFP_AUDIO_DEVICE_CAPABILTIES</a> data structure.</p>

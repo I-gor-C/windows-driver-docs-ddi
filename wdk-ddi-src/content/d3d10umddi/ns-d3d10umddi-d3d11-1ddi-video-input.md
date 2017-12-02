@@ -55,13 +55,13 @@ typedef struct D3D11_1DDI_VIDEO_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Relocate</b>
+### -field Relocate
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>
 </dd>
 
-### -field <b>p11VideoDeviceFuncs</b>
+### -field p11VideoDeviceFuncs
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>

@@ -56,19 +56,19 @@ typedef struct D3DDDI_DXGI_RGB {
 ## -struct-fields
 <dl>
 
-### -field <b>Red</b>
+### -field Red
 
 <dd>
 <p>A FLOAT value that is used to describe the gamma function for the red color channel.</p>
 </dd>
 
-### -field <b>Green</b>
+### -field Green
 
 <dd>
 <p>A FLOAT value that is used to describe the gamma function for the green color channel.</p>
 </dd>
 
-### -field <b>Blue</b>
+### -field Blue
 
 <dd>
 <p>A FLOAT value that is used to describe the gamma function for the blue color channel.</p>

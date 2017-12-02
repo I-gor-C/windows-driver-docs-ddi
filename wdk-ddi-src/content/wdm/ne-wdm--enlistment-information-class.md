@@ -57,19 +57,19 @@ typedef enum _ENLISTMENT_INFORMATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="EnlistmentBasicInformation"></a><a id="enlistmentbasicinformation"></a><a id="ENLISTMENTBASICINFORMATION"></a><b>EnlistmentBasicInformation</b>
+### -field EnlistmentBasicInformation
 
 <dd>
 <p>Information about an enlistment object is stored in an <a href="..\wdm\ns-wdm--enlistment-basic-information.md">ENLISTMENT_BASIC_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="EnlistmentRecoveryInformation"></a><a id="enlistmentrecoveryinformation"></a><a id="ENLISTMENTRECOVERYINFORMATION"></a><b>EnlistmentRecoveryInformation</b>
+### -field EnlistmentRecoveryInformation
 
 <dd>
 <p>A resource manager is setting or obtaining customized recovery information for an enlistment. To learn more about recovery information, see <a href="..\wdm\nf-wdm-zwsetinformationenlistment.md">ZwSetInformationEnlistment</a>.</p>
 </dd>
 
-### -field <a id="EnlistmentCrmInformation"></a><a id="enlistmentcrminformation"></a><a id="ENLISTMENTCRMINFORMATION"></a><b>EnlistmentCrmInformation</b>
+### -field EnlistmentCrmInformation
 
 <dd>
 <p>Information about an enlistment object is stored in an <b>ENLISTMENT_CRM_INFORMATION</b> structure.</p>

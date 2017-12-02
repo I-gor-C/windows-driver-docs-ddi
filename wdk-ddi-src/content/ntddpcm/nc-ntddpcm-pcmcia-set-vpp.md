@@ -58,32 +58,32 @@ BOOLEAN SetVpp(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Pointer to the context for the interface routine.</p>
 </dd>
 
-### -param <i>VppLevel</i> [in]
+### -param VppLevel [in]
 
 <dd>
 <p>Specifies the voltage level to set on the Vpp pin. <i>VppLevel</i> must be one of the following values:</p>
 <p></p>
 <dl>
 
-### -param <a id="PCMCIA_VPP_0V"></a><a id="pcmcia_vpp_0v"></a>PCMCIA_VPP_0V
+### -param PCMCIA_VPP_0V
 
 <dd>
 <p>Specifies that the voltage on the Vpp pin be set to zero volts and that the Vpp pin be disabled.</p>
 </dd>
 
-### -param <a id="PCMCIA_VPP_12V"></a><a id="pcmcia_vpp_12v"></a>PCMCIA_VPP_12V
+### -param PCMCIA_VPP_12V
 
 <dd>
 <p>Specifies that the voltage on the Vpp pin be set to twelve volts.</p>
 </dd>
 
-### -param <a id="PCMCIA_VPP_IS_VCC"></a><a id="pcmcia_vpp_is_vcc"></a>PCMCIA_VPP_IS_VCC
+### -param PCMCIA_VPP_IS_VCC
 
 <dd>
 <p>Specifies that the voltage on the Vpp pin be set to equal the voltage on the Vcc (primary card power) pin.</p>

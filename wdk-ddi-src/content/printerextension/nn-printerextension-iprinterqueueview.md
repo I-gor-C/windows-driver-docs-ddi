@@ -75,7 +75,7 @@ req.product: Windows 10 or later.
 
 <p>And also, note that job enumeration starts when the first event handler is added and stops when the last event handler is removed.</p>
 
-<p><b>IPrinterQueueView</b> also helps to make it possible to perform job management from a UWP  device app or from a printer extension. For more information, see <a href="NULL">Job Management</a>.</p>
+<p><b>IPrinterQueueView</b> also helps to make it possible to perform job management from a UWP  device app or from a printer extension. For more information, see <a href="https://msdn.microsoft.com/D1236DD2-D4AD-4615-9036-7EC75D6CADCE">Job Management</a>.</p>
 
 ## -requirements
 <table>
@@ -113,7 +113,7 @@ req.product: Windows 10 or later.
 <a href="print.iprinterqueueviewevent_onchanged">IPrinterQueueViewEvent::OnChanged</a>
 </dt>
 <dt>
-<a href="NULL">Job Management</a>
+<a href="https://msdn.microsoft.com/D1236DD2-D4AD-4615-9036-7EC75D6CADCE">Job Management</a>
 </dt>
 </dl>
 <p> </p>

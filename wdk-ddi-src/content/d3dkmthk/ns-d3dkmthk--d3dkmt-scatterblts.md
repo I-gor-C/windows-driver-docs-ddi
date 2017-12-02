@@ -55,11 +55,11 @@ typedef struct _D3DKMT_SCATTERBLTS {
 ## -struct-fields
 <dl>
 
-### -field <b>NumBlts</b>
+### -field NumBlts
 
 <dd></dd>
 
-### -field <b>Blts</b>
+### -field Blts
 
 <dd></dd>
 </dl>

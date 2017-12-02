@@ -57,25 +57,25 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ROTATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_IDENTITY"></a><a id="d3d11_1ddi_video_processor_rotation_identity"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_IDENTITY</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_IDENTITY
 
 <dd>
 <p>Indicates that rotation is 0 degrees—landscape mode.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_90"></a><a id="d3d11_1ddi_video_processor_rotation_90"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_90</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_90
 
 <dd>
 <p>Indicates that rotation is 90 degrees clockwise—portrait mode.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_180"></a><a id="d3d11_1ddi_video_processor_rotation_180"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_180</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_180
 
 <dd>
 <p>Indicates that rotation is 180 degrees clockwise—inverted landscape mode.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_270"></a><a id="d3d11_1ddi_video_processor_rotation_270"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_270</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_270
 
 <dd>
 <p>Indicates that rotation is 270 degrees clockwise—inverted portrait mode.</p>

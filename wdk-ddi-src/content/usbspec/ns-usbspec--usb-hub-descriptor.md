@@ -61,43 +61,43 @@ typedef struct _USB_HUB_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bDescriptorLength</b>
+### -field bDescriptorLength
 
 <dd>
 <p>The length, in bytes, of the descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorType</b>
+### -field bDescriptorType
 
 <dd>
 <p>The descriptor type. For hub descriptors, this value should be 0x29.</p>
 </dd>
 
-### -field <b>bNumberOfPorts</b>
+### -field bNumberOfPorts
 
 <dd>
 <p>The number of ports on the hub.</p>
 </dd>
 
-### -field <b>wHubCharacteristics</b>
+### -field wHubCharacteristics
 
 <dd>
 <p>The hub characteristics. For more information about this member, see Universal Serial Bus Specification.</p>
 </dd>
 
-### -field <b>bPowerOnToPowerGood</b>
+### -field bPowerOnToPowerGood
 
 <dd>
 <p>The time, in 2-millisecond intervals, that it takes the device to turn on completely. For more information about this member, see Universal Serial Bus Specification.</p>
 </dd>
 
-### -field <b>bHubControlCurrent</b>
+### -field bHubControlCurrent
 
 <dd>
 <p>The maximum current requirements, in milliamperes, of the controller component of the hub.</p>
 </dd>
 
-### -field <b>bRemoveAndPowerMask</b>
+### -field bRemoveAndPowerMask
 
 <dd>
 <p>Not currently implemented. Do not use this member. </p>

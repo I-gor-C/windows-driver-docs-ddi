@@ -59,19 +59,19 @@ VOID APIENTRY SetTextFilterSize(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>Width</i> [in]
+### -param Width [in]
 
 <dd>
 <p> The width of the monochrome convolution filter. The width can be from 1 to 7 texels.</p>
 </dd>
 
-### -param <i>Height</i> [in]
+### -param Height [in]
 
 <dd>
 <p> The height of the monochrome convolution filter. The height can be from 1 to 7 texels.</p>

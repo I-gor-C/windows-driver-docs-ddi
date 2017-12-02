@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p><i>This function is intended for internal use only.</i></p>
-<p>The <b>KsQuerySoftwareBusInterface</b> function creates a buffer from the paged pool and copies the reference string associated with the demand-load bus enumerator object's PDO into the buffer. It is the caller's responsibility to free the buffer using <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>. </p>
+<p>The <b>KsQuerySoftwareBusInterface</b> function creates a buffer from the paged pool and copies the reference string associated with the demand-load bus enumerator object's PDO into the buffer. It is the caller's responsibility to free the buffer using <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>. </p>
 
 
 ## -syntax
@@ -57,13 +57,13 @@ NTSTATUS KsQuerySoftwareBusInterface(
 ## -parameters
 <dl>
 
-### -param <i>PnpDeviceObject</i> [in]
+### -param PnpDeviceObject [in]
 
 <dd>
 <p>Pointer to the demand-load bus enumerator's device object.</p>
 </dd>
 
-### -param <i>BusInterface</i> [out]
+### -param BusInterface [out]
 
 <dd>
 <p>Pointer to the demand-load bus enumerator's interface.</p>

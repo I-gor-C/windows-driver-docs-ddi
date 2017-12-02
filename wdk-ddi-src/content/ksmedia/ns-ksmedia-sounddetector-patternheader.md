@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of the audio data.</p>
 </dd>
 
-### -field <b>PatternType</b>
+### -field PatternType
 
 <dd>
 <p>The keyword pattern format, expressed as a GUID.</p>

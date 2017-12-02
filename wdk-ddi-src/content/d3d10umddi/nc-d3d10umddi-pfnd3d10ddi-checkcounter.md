@@ -66,19 +66,19 @@ VOID APIENTRY CheckCounter(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>Query</i> [in]
+### -param Query [in]
 
 <dd>
 <p> A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi-query.md">D3D10DDI_QUERY</a>-typed value that identifies the counter identifier that information is retrieved for.</p>
 </dd>
 
-### -param <i>pCounterType</i> [out]
+### -param pCounterType [out]
 
 <dd>
 <p>A pointer to a variable that receives one of the following values from the D3D10DDI_COUNTER_TYPE enumeration that identifies the data type that the counter outputs. </p>
@@ -123,43 +123,43 @@ VOID APIENTRY CheckCounter(
 <p> </p>
 </dd>
 
-### -param <i>pActiveCounters</i> [out]
+### -param pActiveCounters [out]
 
 <dd>
 <p>A pointer to a variable that receives the number of simultaneously active counters that are allocated for the creation of the counter identifier that <i>Query</i> identifies. </p>
 </dd>
 
-### -param <i>pName</i> [out]
+### -param pName [out]
 
 <dd>
 <p>A pointer that the driver returns a NULL-terminated string to that contains the name of the counter identifier. </p>
 </dd>
 
-### -param <i>pNameLength</i> [in, out]
+### -param pNameLength [in, out]
 
 <dd>
 <p>A pointer to a variable that receives the size, in bytes, of the NULL-terminated string that the <i>pName</i> parameter specifies.  </p>
 </dd>
 
-### -param <i>pUnits</i> [out]
+### -param pUnits [out]
 
 <dd>
 <p>A pointer that the driver returns a NULL-terminated string to that contains the name of the units that the counter identifier measures. </p>
 </dd>
 
-### -param <i>pUnitsLength</i> [in, out]
+### -param pUnitsLength [in, out]
 
 <dd>
 <p> A pointer to a variable that receives the size, in bytes, of the NULL-terminated string that the <i>pUnits</i> parameter specifies. </p>
 </dd>
 
-### -param <i>pDescription</i> [out]
+### -param pDescription [out]
 
 <dd>
 <p>A pointer that the driver returns a NULL-terminated string to that contains the description of what the counter identifier measures. </p>
 </dd>
 
-### -param <i>pDescriptionLength</i> [in, out]
+### -param pDescriptionLength [in, out]
 
 <dd>
 <p> A pointer to a variable that receives the size, in bytes, of the NULL-terminated string that the <i>pDescription</i> parameter specifies. </p>

@@ -55,7 +55,7 @@ VOID MmUnlockPages(
 ## -parameters
 <dl>
 
-### -param <i>MemoryDescriptorList</i> [in, out]
+### -param MemoryDescriptorList [in, out]
 
 <dd>
 <p>A pointer to an MDL.</p>

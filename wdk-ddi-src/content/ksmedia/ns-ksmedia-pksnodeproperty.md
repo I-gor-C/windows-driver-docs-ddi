@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies the property to get or set. This member is a structure of type <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.</p>
 </dd>
 
-### -field <b>NodeId</b>
+### -field NodeId
 
 <dd>
 <p>Specifies the node ID. This member identifies the target node for the property request.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for internal use by operating system. Do not use.</p>
@@ -78,7 +78,7 @@ typedef struct {
 ## -remarks
 <p>This structure is identical to <a href="stream.ksp_node">KSP_NODE</a>.</p>
 
-<p>See the discussion of the KSNODEPROPERTY structure in <a href="NULL">Audio Property Requests</a>.</p>
+<p>See the discussion of the KSNODEPROPERTY structure in <a href="https://msdn.microsoft.com/dcfd139c-fca3-4068-8324-aa2c952dbc1f">Audio Property Requests</a>.</p>
 
 ## -requirements
 <table>

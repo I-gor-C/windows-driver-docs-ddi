@@ -56,7 +56,7 @@ typedef struct IDARG_OUT_ADAPTER_INIT {
 ## -struct-fields
 <dl>
 
-### -field <b>AdapterObject</b>
+### -field AdapterObject
 
 <dd>
 <p>

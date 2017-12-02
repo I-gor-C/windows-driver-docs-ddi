@@ -60,19 +60,19 @@ typedef struct _D3DKMDT_GDISURFACEFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Stereo         </b>
+### -field Stereo         
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>Reserved for system use.</p>

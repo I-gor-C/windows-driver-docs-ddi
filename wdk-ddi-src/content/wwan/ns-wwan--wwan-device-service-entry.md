@@ -7,7 +7,7 @@ old-location: netvista\wwan_device_service_entry.htm
 old-project: netvista
 ms.assetid: 26B26715-0C1E-4FF1-B3FA-B6952BF70572
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_DEVICE_SERVICE_ENTRY, WWAN_DEVICE_SERVICE_ENTRY, *PWWAN_DEVICE_SERVICE_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _WWAN_DEVICE_SERVICE_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceServiceGuid</b>
+### -field DeviceServiceGuid
 
 <dd>
 <p>The GUID of the device service. This GUID is used to identify the device service in any of the other device OIDs/indications.</p>
 </dd>
 
-### -field <b>SessionCapability</b>
+### -field SessionCapability
 
 <dd>
 <p>Flags indicating the capabilities of a device service session.</p>
 </dd>
 
-### -field <b>uMaxSessionInstances</b>
+### -field uMaxSessionInstances
 
 <dd>
 <p>The maximum number of sessions supported by the device service.</p>
@@ -109,4 +109,4 @@ typedef struct _WWAN_DEVICE_SERVICE_ENTRY {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DEVICE_SERVICE_ENTRY structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DEVICE_SERVICE_ENTRY structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

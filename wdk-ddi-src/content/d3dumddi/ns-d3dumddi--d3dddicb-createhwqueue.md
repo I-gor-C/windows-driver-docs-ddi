@@ -61,52 +61,52 @@ typedef struct _D3DDDICB_CREATEHWQUEUE {
 ## -struct-fields
 <dl>
 
-### -field <b> hHwContext</b>
+### -field  hHwContext
 
 <dd>
 <p>Handle to the context the queue is created for.
 </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Queue creation flags.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p> Size of private driver data.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>Pointer to private driver data.</p>
 </dd>
 
-### -field <b>hHwQueue</b>
+### -field hHwQueue
 
 <dd>
 <p>Handle to the created queue.</p>
 </dd>
 
-### -field <b>hHwQueueProgressFence</b>
+### -field hHwQueueProgressFence
 
 <dd>
 <p>Handle to the hardware queue progress fence object.
 </p>
 </dd>
 
-### -field <b>HwQueueProgressFenceCPUVirtualAddress</b>
+### -field HwQueueProgressFenceCPUVirtualAddress
 
 <dd>
 <p>Read-only mapping of the fence value for the CPU
 </p>
 </dd>
 
-### -field <b>HwQueueProgressFenceGPUVirtualAddress</b>
+### -field HwQueueProgressFenceGPUVirtualAddress
 
 <dd>
 <p>Read/write mapping of the fence value for the GPU

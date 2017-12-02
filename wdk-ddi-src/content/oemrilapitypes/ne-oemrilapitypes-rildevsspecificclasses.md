@@ -7,7 +7,7 @@ old-location: netvista\rildevsspecificclasses.htm
 old-project: netvista
 ms.assetid: 21fcd199-b2bb-4ba0-9a22-33ef6579cd7a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RtlUnicodeStringVPrintfEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef enum _RILDEVSSPECIFICCLASSES {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DSCLASS_OEM_GBA"></a><a id="ril_dsclass_oem_gba"></a><b>RIL_DSCLASS_OEM_GBA</b>
+### -field RIL_DSCLASS_OEM_GBA
 
 <dd></dd>
 </dl>

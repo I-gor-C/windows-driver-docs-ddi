@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="DeviceUnknown"></a><a id="deviceunknown"></a><a id="DEVICEUNKNOWN"></a><b>DeviceUnknown</b>
+### -field DeviceUnknown
 
 <dd>
 <p>Indicates that the device does not communicate by means of a known protocol.</p>
 </dd>
 
-### -field <a id="DeviceIsAta"></a><a id="deviceisata"></a><a id="DEVICEISATA"></a><b>DeviceIsAta</b>
+### -field DeviceIsAta
 
 <dd>
 <p>Indicates an ATA device.</p>
 </dd>
 
-### -field <a id="DeviceIsAtapi"></a><a id="deviceisatapi"></a><a id="DEVICEISATAPI"></a><b>DeviceIsAtapi</b>
+### -field DeviceIsAtapi
 
 <dd>
 <p>Indicates an ATAPI device.</p>
 </dd>
 
-### -field <a id="DeviceNotExist"></a><a id="devicenotexist"></a><a id="DEVICENOTEXIST"></a><b>DeviceNotExist</b>
+### -field DeviceNotExist
 
 <dd>
 <p>Indicates that the device does not exist.</p>

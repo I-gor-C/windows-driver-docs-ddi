@@ -55,14 +55,14 @@ typedef struct _DXVA_TCoef4Group {
 ## -struct-fields
 <dl>
 
-### -field <b>TCoefIDX</b>
+### -field TCoefIDX
 
 <dd>
 <p>Specifies the scan index of the coefficient in the block. Expressed as the number of zero-valued coefficients that precede the current coefficient in the scan order specified by the <i>MBscanMethod</i> variable (bits 6 and 7 of the <b>wMBtype</b> member of the macroblock control command). These commands are defined in the following structures: <a href="..\dxva\ns-dxva--dxva-mbctrl-i-offhostidct-1.md">DXVA_MBctrl_I_OffHostIDCT_1</a> or <a href="..\dxva\ns-dxva--dxva-mbctrl-p-offhostidct-1.md">DXVA_MBctrl_P_OffHostIDCT_1</a>. <b>TCoefIDX</b> contains the number of zero-valued coefficients that precede the current coefficient in the specified scan order, subsequent to the last transmitted coefficient for the block (or relative to the start of the block if none precede it). Any remaining coefficients after the last sent coefficient in the inverse-scan order are implied to have the value 0.</p>
 <p><b>TCoefIDX</b> must always be less than 64.</p>
 </dd>
 
-### -field <b>TCoefValue</b>
+### -field TCoefValue
 
 <dd>
 <p>Specifies the value of the coefficient in the block. <b>TCoefValue</b> must be clipped to the appropriate range as specified in <a href="https://msdn.microsoft.com/7736a226-1122-4380-b09f-a8560c0cd609">Low-Level IDCT Processing Elements</a> by the host prior to passing the coefficient value to the accelerator for IDCT operation. MPEG-2 mismatch control, if necessary, is also the responsibility of the host, not the accelerator (this may require the creation of extra "phantom" nonzero coefficients).</p>

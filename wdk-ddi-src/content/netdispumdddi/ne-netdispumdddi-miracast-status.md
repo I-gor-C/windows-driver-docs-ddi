@@ -59,37 +59,37 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="MIRACAST_STATUS_CRITICAL_ERROR"></a><a id="miracast_status_critical_error"></a><b>MIRACAST_STATUS_CRITICAL_ERROR</b>
+### -field MIRACAST_STATUS_CRITICAL_ERROR
 
 <dd>
 <p>An unspecified error occurred, and the Miracast connected session cannot continue.</p>
 </dd>
 
-### -field <a id="MIRACAST_STATUS_MISSING_KEEPALIVE"></a><a id="miracast_status_missing_keepalive"></a><b>MIRACAST_STATUS_MISSING_KEEPALIVE</b>
+### -field MIRACAST_STATUS_MISSING_KEEPALIVE
 
 <dd>
 <p>The Miracast sink failed to respond to the protocol keep-alive message.</p>
 </dd>
 
-### -field <a id="MIRACAST_STATUS_SINK_DISOCNNECT_REQUEST"></a><a id="miracast_status_sink_disocnnect_request"></a><b>MIRACAST_STATUS_SINK_DISOCNNECT_REQUEST</b>
+### -field MIRACAST_STATUS_SINK_DISOCNNECT_REQUEST
 
 <dd>
 <p>The Miracast sink requested that it be disconnected.</p>
 </dd>
 
-### -field <a id="MIRACAST_STATUS_INSUFFICIENT_BANDWIDTH"></a><a id="miracast_status_insufficient_bandwidth"></a><b>MIRACAST_STATUS_INSUFFICIENT_BANDWIDTH</b>
+### -field MIRACAST_STATUS_INSUFFICIENT_BANDWIDTH
 
 <dd>
 <p>The bandwidth of the wireless connection has changed such that the current mode cannot be sustained.</p>
 </dd>
 
-### -field <a id="MIRACAST_STATUS_SINK_FAILED_STANDARD_MODE_CHANGE"></a><a id="miracast_status_sink_failed_standard_mode_change"></a><b>MIRACAST_STATUS_SINK_FAILED_STANDARD_MODE_CHANGE</b>
+### -field MIRACAST_STATUS_SINK_FAILED_STANDARD_MODE_CHANGE
 
 <dd>
 <p>The Miracast sink failed to set a standard Video Electronics Standards Association (VESA) setting, Consumer Electronics Association (CEA) standard setting, or a hand-held mode change.</p>
 </dd>
 
-### -field <a id="MIRACAST_STATUS_FORCE_UINT32"></a><a id="miracast_status_force_uint32"></a><b>MIRACAST_STATUS_FORCE_UINT32</b>
+### -field MIRACAST_STATUS_FORCE_UINT32
 
 <dd>
 <p>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</p>

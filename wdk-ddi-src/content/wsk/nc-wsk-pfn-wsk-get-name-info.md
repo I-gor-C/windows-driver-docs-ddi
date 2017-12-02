@@ -7,7 +7,7 @@ old-location: netvista\wskgetnameinfo.htm
 old-project: netvista
 ms.assetid: 99e10a70-90a7-4d96-ae5f-ba82d8c4c1a8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ NTSTATUS WSKAPI * WskGetNameInfo(
 ## -parameters
 <dl>
 
-### -param <i>Client</i> [in]
+### -param Client [in]
 
 <dd>
 <p>[in] A pointer to a 
@@ -76,7 +76,7 @@ NTSTATUS WSKAPI * WskGetNameInfo(
      WskCaptureProviderNPI</a> function.</p>
 </dd>
 
-### -param <i>SockAddr</i> [in]
+### -param SockAddr [in]
 
 <dd>
 <p>[in] A pointer to a 
@@ -84,7 +84,7 @@ NTSTATUS WSKAPI * WskGetNameInfo(
      and port number of the socket.</p>
 </dd>
 
-### -param <i>SockAddrLength</i> [in]
+### -param SockAddrLength [in]
 
 <dd>
 <p>[in] Specifies the length, in bytes, of the buffer pointed to by the 
@@ -93,7 +93,7 @@ NTSTATUS WSKAPI * WskGetNameInfo(
      <a href="..\ntifs\ns-ntifs-sockaddr-storage.md">SOCKADDR_STORAGE</a> structure.</p>
 </dd>
 
-### -param <i>NodeName</i> [out, optional]
+### -param NodeName [out, optional]
 
 <dd>
 <p>[out] An optional pointer to a 
@@ -106,7 +106,7 @@ NTSTATUS WSKAPI * WskGetNameInfo(
      <i>ServiceBuffer</i> must not both be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ServiceName</i> [out, optional]
+### -param ServiceName [out, optional]
 
 <dd>
 <p>[out] An optional pointer to a 
@@ -119,7 +119,7 @@ NTSTATUS WSKAPI * WskGetNameInfo(
      <i>ServiceBuffer</i> must not both be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>[in] A ULONG value that is used to customize the processing of this function.
@@ -128,27 +128,27 @@ NTSTATUS WSKAPI * WskGetNameInfo(
 <p></p>
 <dl>
 
-### -param <a id="NI_DGRAM"></a><a id="ni_dgram"></a>NI_DGRAM
+### -param NI_DGRAM
 
 <dd>
 <p>Indicates that the service is a datagram service. This flag is necessary for the few services
        that provide different port numbers for UDP and TCP service.</p>
 </dd>
 
-### -param <a id="NI_NAMEREQD"></a><a id="ni_namereqd"></a>NI_NAMEREQD
+### -param NI_NAMEREQD
 
 <dd>
 <p>Indicates that a host name that cannot be resolved by DNS results in an error.</p>
 </dd>
 
-### -param <a id="NI_NOFQDN"></a><a id="ni_nofqdn"></a>NI_NOFQDN
+### -param NI_NOFQDN
 
 <dd>
 <p>Results in a local host having only its Relative Distinguished Name (RDN) returned in the 
        <i>NodeName</i> parameter.</p>
 </dd>
 
-### -param <a id="NI_NUMERICHOST"></a><a id="ni_numerichost"></a>NI_NUMERICHOST
+### -param NI_NUMERICHOST
 
 <dd>
 <p>Indicates that the function returns the numeric form of the host name instead of its name, a
@@ -156,7 +156,7 @@ NTSTATUS WSKAPI * WskGetNameInfo(
        resolved by DNS.</p>
 </dd>
 
-### -param <a id="NI_NUMERICSERV"></a><a id="ni_numericserv"></a>NI_NUMERICSERV
+### -param NI_NUMERICSERV
 
 <dd>
 <p>Indicates that the function returns the port number of the service instead of its name. Also, if
@@ -166,7 +166,7 @@ NTSTATUS WSKAPI * WskGetNameInfo(
 </dl>
 </dd>
 
-### -param <i>OwningProcess</i> [in, optional]
+### -param OwningProcess [in, optional]
 
 <dd>
 <p>[in] An optional pointer to the process from which the function retrieves the security context.
@@ -179,7 +179,7 @@ NTSTATUS WSKAPI * WskGetNameInfo(
      function fails and returns STATUS_INVALID_PARAMETER.</p>
 </dd>
 
-### -param <i>OwningThread</i> [in, optional]
+### -param OwningThread [in, optional]
 
 <dd>
 <p>[in] An optional pointer to the thread from which the function retrieves the security context.
@@ -190,7 +190,7 @@ NTSTATUS WSKAPI * WskGetNameInfo(
      function fails and returns STATUS_INVALID_PARAMETER.</p>
 </dd>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>[in/out] A pointer to an I/O request packet (IRP) to use to complete the request asynchronously.
@@ -291,4 +291,4 @@ NTSTATUS WSKAPI * WskGetNameInfo(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_NAME_INFO callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_NAME_INFO callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

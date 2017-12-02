@@ -56,15 +56,15 @@ typedef struct _BDA_BUFFER {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>ulKeyuuidBufferLen</b>
+### -field ulKeyuuidBufferLen
 
 <dd></dd>
 
-### -field <b>argKeyuuidBuffer</b>
+### -field argKeyuuidBuffer
 
 <dd></dd>
 </dl>

@@ -57,19 +57,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeProperty</b>
+### -field NodeProperty
 
 <dd>
 <p>Specifies an initialized <a href="stream.ksp_node">KSP_NODE</a> structure that describes the property set, property ID, request type, and node ID. </p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>Specifies the value of the property. This member is read/write.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Indicates, for Get requests, the current setting for the specified property from the values listed below. Indicates, for Set requests, the desired setting for the specified property from the values listed below. This member can be set to one of the following values that are defined in <i>ksmedia.h</i>:</p>
@@ -114,7 +114,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Indicates the minidriver's camera control capabilities for the specified property. This member is read-only. This member can be set to one of the following values that are defined in <i>ksmedia.h</i>:</p>
@@ -161,7 +161,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>See related information about the <a href="NULL">USB Video Class Driver</a>.</p>
+<p>See related information about the <a href="https://msdn.microsoft.com/84b5302d-c4c1-4519-bb94-66e80879ce26">USB Video Class Driver</a>.</p>
 
 ## -requirements
 <table>

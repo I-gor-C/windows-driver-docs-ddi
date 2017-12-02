@@ -62,34 +62,34 @@ typedef struct _D3DDDI_PRESENTFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Blt</b>
+### -field Blt
 
 <dd>
 <p>A UINT value that specifies whether to perform a bit-block transfer (bitblt) data to the primary surface. </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>ColorFill</b>
+### -field ColorFill
 
 <dd>
 <p>A UINT value that specifies whether to perform a colorfill bitblt to the primary surface . </p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>Flip</b>
+### -field Flip
 
 <dd>
 <p>A UINT value that specifies whether to flip to a new surface. </p>
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 29 bits (0xFFFFFFF8) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that is contained in D3DDDI_PRESENTFLAGS that can hold one 32-bit value that identifies how to perform a present operation.</p>

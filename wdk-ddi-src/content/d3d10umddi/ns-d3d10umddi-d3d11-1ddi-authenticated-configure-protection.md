@@ -55,13 +55,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_PROTECTION {
 ## -struct-fields
 <dl>
 
-### -field <b>Parameters</b>
+### -field Parameters
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-configure-input.md">D3D11_1DDI_AUTHENTICATED_CONFIGURE_INPUT</a> structure that contains the command GUID and other data. </p>
 </dd>
 
-### -field <b>Protections</b>
+### -field Protections
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-protection-flags.md">D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS</a> structure that specifies the protection level.

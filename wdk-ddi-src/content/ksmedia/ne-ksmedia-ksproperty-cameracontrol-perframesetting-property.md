@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CAPABILITY"></a><a id="ksproperty_cameracontrol_perframesetting_capability"></a><b>KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CAPABILITY</b>
+### -field KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CAPABILITY
 
 <dd>
 <p>This is used to query the driver’s per-frame settings capabilities.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET"></a><a id="ksproperty_cameracontrol_perframesetting_set"></a><b>KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET</b>
+### -field KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET
 
 <dd>
 <p>This is used to configure the per-frame settings.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR"></a><a id="ksproperty_cameracontrol_perframesetting_clear"></a><b>KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR</b>
+### -field KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR
 
 <dd>
 <p>This is used to clear the per-frame settings previously configured.</p>

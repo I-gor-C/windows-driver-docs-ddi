@@ -7,7 +7,7 @@ old-location: ifsk\network_open_ecp_context.htm
 old-project: ifsk
 ms.assetid: 583fe92d-ce81-47b4-bd75-5566a5379790
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: NETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT, *PNETWORK_OPEN_ECP_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,45 +67,45 @@ typedef struct _NETWORK_OPEN_ECP_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Must be set to zero. </p>
 </dd>
 
-### -field ( <i>unnamed struct</i> )
+### -field ( unnamed struct )
 
 <dd>
 <p>A structure that contains restrictions for opening the file and to apply to the file after it is opened. </p>
 <dl>
 
-### -field <b>in</b>
+### -field in
 
 <dd>
 <p>A structure in the DUMMYSTRUCTNAME structure that contains restrictions for opening a file.</p>
 <p></p>
 <dl>
 
-### -field <a id="Location"></a><a id="location"></a><a id="LOCATION"></a><b>Location</b>
+### -field Location
 
 <dd>
 <p>A <a href="..\ntifs\ne-ntifs-network-open-location-qualifier.md">NETWORK_OPEN_LOCATION_QUALIFIER</a>-typed value that specifies the location restriction to attach to the file. </p>
 </dd>
 
-### -field <a id="Integrity"></a><a id="integrity"></a><a id="INTEGRITY"></a><b>Integrity</b>
+### -field Integrity
 
 <dd>
 <p>This member is currently not implemented and should be ignored. </p>
 <p>A <a href="..\ntifs\ne-ntifs-network-open-integrity-qualifier.md">NETWORK_OPEN_INTEGRITY_QUALIFIER</a>-typed value that specifies the integrity restriction to attach to the file. </p>
 </dd>
 
-### -field <a id="Flags"></a><a id="flags"></a><a id="FLAGS"></a><b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Supported starting with Windows 7.</p>
@@ -159,27 +159,27 @@ typedef struct _NETWORK_OPEN_ECP_CONTEXT {
 </dl>
 </dd>
 
-### -field <b>out</b>
+### -field out
 
 <dd>
 <p>A structure in the DUMMYSTRUCTNAME structure that contains information that a file provides after it is opened.</p>
 <p></p>
 <dl>
 
-### -field <a id="Location"></a><a id="location"></a><a id="LOCATION"></a><b>Location</b>
+### -field Location
 
 <dd>
 <p>A <a href="..\ntifs\ne-ntifs-network-open-location-qualifier.md">NETWORK_OPEN_LOCATION_QUALIFIER</a>-typed value that specifies the location restriction to attach to the file. </p>
 </dd>
 
-### -field <a id="Integrity"></a><a id="integrity"></a><a id="INTEGRITY"></a><b>Integrity</b>
+### -field Integrity
 
 <dd>
 <p>This member is currently not implemented and should be ignored. </p>
 <p>A <a href="..\ntifs\ne-ntifs-network-open-integrity-qualifier.md">NETWORK_OPEN_INTEGRITY_QUALIFIER</a>-typed value that specifies the integrity restriction to attach to the file. </p>
 </dd>
 
-### -field <a id="Flags"></a><a id="flags"></a><a id="FLAGS"></a><b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Supported starting with Windows 7.</p>
@@ -271,4 +271,4 @@ typedef struct _NETWORK_OPEN_ECP_CONTEXT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20NETWORK_OPEN_ECP_CONTEXT structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20NETWORK_OPEN_ECP_CONTEXT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

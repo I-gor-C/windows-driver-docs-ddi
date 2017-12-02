@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_connect.htm
 old-project: netvista
 ms.assetid: AFB291B7-7962-46D2-BB00-E1CB8B0BF5FC
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,73 +68,73 @@ NTSTATUS NdkConnect(
 ## -parameters
 <dl>
 
-### -param <i>pNdkConnector</i> [in]
+### -param pNdkConnector [in]
 
 <dd>
 <p>A pointer to an NDK connector object (<a href="..\ndkpi\ns-ndkpi--ndk-connector.md">NDK_CONNECTOR</a>).</p>
 </dd>
 
-### -param <i>pNdkQp</i> [in]
+### -param pNdkQp [in]
 
 <dd>
 <p>A pointer to an NDK queue pair (QP) object (<a href="..\ndkpi\ns-ndkpi--ndk-qp.md">NDK_QP</a>) to associate with the connection.</p>
 </dd>
 
-### -param <i>pSrcAddress</i> 
+### -param pSrcAddress 
 
 <dd>
 <p>A source address.  For AF_INET or AF_INET6 <i>pSrcAddress</i>  is the source IP address and the source ND port.</p>
 </dd>
 
-### -param <i>SrcAddressLength</i> [in]
+### -param SrcAddressLength [in]
 
 <dd>
 <p>The size, in bytes,  of source address data at the <i>pSrcAddress</i> parameter.</p>
 </dd>
 
-### -param <i>pDestAddress</i> 
+### -param pDestAddress 
 
 <dd>
 <p>A destination address.  For AF_INET or AF_INET6 <i>pDestAddress</i>  is the destination IP address and the source ND port .</p>
 </dd>
 
-### -param <i>DestAddressLength</i> [in]
+### -param DestAddressLength [in]
 
 <dd>
 <p>The size, in bytes,  of destination address data at the <i>pDestAddress</i> parameter.</p>
 </dd>
 
-### -param <i>InboundReadLimit</i> [in]
+### -param InboundReadLimit [in]
 
 <dd>
 <p>The consumer-supplied maximum number of incoming in-progress read operations to allow on the QP. If the underlying provider has a lower <b>MaxInboundReadLimit</b> value in the <a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a> structure, then the provider will cap the consumer-supplied value to the provider maximum. If the peer has a lower <i>OutboundReadLimit</i> value, then the provider will use that value as the effective <i>InboundReadLimit</i>. The consumer can retrieve the effective <i>InboundReadLimit</i> by calling the <i>NdkGetConnectionData</i> function (<a href="..\ndkpi\nc-ndkpi-ndk-fn-get-connection-data.md">NDK_FN_GET_CONNECTION_DATA</a>).</p>
 </dd>
 
-### -param <i>OutboundReadLimit</i> [in]
+### -param OutboundReadLimit [in]
 
 <dd>
 <p>The consumer-supplied maximum number of outgoing in-progress read operations to allow on the QP. If the underlying provider has a lower <b>MaxOutboundReadLimit</b> value  in the <a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a> structure, then the provider will cap the consumer supplied value to the provider maximum. If the peer has a lower <i>InboundReadLimit</i>, then the provider will use that value as the effective <i>OutboundReadLimit</i>. The     consumer can retrieve the effective <i>OutboundReadLimit</i> by calling the <i>NdkGetConnectionData</i> function (<a href="..\ndkpi\nc-ndkpi-ndk-fn-get-connection-data.md">NDK_FN_GET_CONNECTION_DATA</a>).</p>
 </dd>
 
-### -param <i>pPrivateData</i> 
+### -param pPrivateData 
 
 <dd>
 <p>A pointer to private data that is sent with the connect request.</p>
 </dd>
 
-### -param <i>PrivateDataLength</i> [in]
+### -param PrivateDataLength [in]
 
 <dd>
 <p>The length, in bytes, of the private data that is provided in the <i>pPrivateData</i> parameter.</p>
 </dd>
 
-### -param <i>RequestCompletion</i> [in]
+### -param RequestCompletion [in]
 
 <dd>
 <p>A pointer to a request completion callback routine <i>NdkRequestCompletion</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-request-completion.md">NDK_FN_REQUEST_COMPLETION</a>).</p>
 </dd>
 
-### -param <i>RequestContext</i> [in, optional]
+### -param RequestContext [in, optional]
 
 <dd>
 <p>A context value to pass to the <i>Context</i> parameter of the  callback function that is specified in the <i>RequestCompletion</i> parameter.</p>
@@ -245,9 +245,9 @@ NTSTATUS NdkConnect(
 <a href="..\ndkpi\ns-ndkpi--ndk-qp.md">NDK_QP</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Object Lifetime Requirements</a>
+<a href="netvista.ndkpi_object_lifetime_requirements">NDKPI Object Lifetime Requirements</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_CONNECT callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_CONNECT callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

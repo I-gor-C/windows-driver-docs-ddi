@@ -55,13 +55,13 @@ typedef struct _D3DDDICB_SETDISPLAYMODE {
 ## -struct-fields
 <dl>
 
-### -field <b>hPrimaryAllocation</b>
+### -field hPrimaryAllocation
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the primary allocation for scanning out. The Microsoft Direct3D runtime's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-allocatecb.md">pfnAllocateCb</a> function returns this handle. </p>
 </dd>
 
-### -field <b>PrivateDriverFormatAttribute</b>
+### -field PrivateDriverFormatAttribute
 
 <dd>
 <p>[out] A private format attribute that the user-mode display driver should use to convert the current primary surface if the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setdisplaymodecb.md">pfnSetDisplayModeCb</a> callback function returned D3DDDIERR_INCOMPATIBLEPRIVATEFORMAT. </p>

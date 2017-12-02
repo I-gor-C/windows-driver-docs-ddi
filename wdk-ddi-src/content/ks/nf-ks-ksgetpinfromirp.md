@@ -54,10 +54,10 @@ PKSPIN KsGetPinFromIrp(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>A pointer to an <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> for which to return the associated pin.</p>
+<p>A pointer to an <a href="..\wdm\ns-wdm--irp.md">IRP</a> for which to return the associated pin.</p>
 </dd>
 </dl>
 

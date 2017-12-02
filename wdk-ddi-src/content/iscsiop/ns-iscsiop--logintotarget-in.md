@@ -68,91 +68,91 @@ typedef struct _LoginToTarget_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>The number of the port (initiator portal) that the HBA initiator uses to establish the logon session. This value must match the <b>Index</b> member of the <a href="..\iscsimgt\ns-iscsimgt--iscsi-portalinfo.md">ISCSI_PortalInfo</a> structure.</p>
 </dd>
 
-### -field <b>LoginOptions</b>
+### -field LoginOptions
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-loginoptions.md">ISCSI_LoginOptions</a> structure that specifies the characteristics of the logon session.</p>
 </dd>
 
-### -field <b>SessionType</b>
+### -field SessionType
 
 <dd>
 <p>A <a href="storage.loginsessiontype">LOGINSESSIONTYPE</a> enumeration value that specifies the type of logon session. </p>
 </dd>
 
-### -field <b>SecurityFlags</b>
+### -field SecurityFlags
 
 <dd>
 <p>A bitwise OR of security flags that indicate the security requirements that are associated with the authentication key that is used to establish the logon session. For a list of the flags that you can combine to define this member's value, see <a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>.</p>
 </dd>
 
-### -field <b>TargetPortal</b>
+### -field TargetPortal
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-targetportal.md">ISCSI_TargetPortal</a> structure that indicates which target portal to use to make the connection. </p>
 </dd>
 
-### -field <b>UsernameSize</b>
+### -field UsernameSize
 
 <dd>
 <p>The size, in bytes, of the string in <b>Username</b>.</p>
 </dd>
 
-### -field <b>PasswordSize</b>
+### -field PasswordSize
 
 <dd>
 <p>The size, in bytes, of the string in <b>Password</b>.</p>
 </dd>
 
-### -field <b>KeySize</b>
+### -field KeySize
 
 <dd>
 <p>The size, in bytes, of the string in <b>Key</b>.</p>
 </dd>
 
-### -field <b>UniqueIdForISID</b>
+### -field UniqueIdForISID
 
 <dd>
 <p>A number that the miniport driver that manages the HBA can use to construct a unique session identifier (ISID). </p>
 </dd>
 
-### -field <b>PersistentLogin</b>
+### -field PersistentLogin
 
 <dd>
 <p>A Boolean value that indicates if the logon should be persistent. If this member is <b>TRUE</b>, the logon should be persistent. The HBA's miniport driver should store the characteristics of this logon in non-volatile memory and log on to the target automatically every time the operating system loads the miniport driver. If this member is <b>FALSE</b>, the logon is not persistent.</p>
 </dd>
 
-### -field <b>InitiatorNode</b>
+### -field InitiatorNode
 
 <dd>
 <p>The iSCSI name of the initiator node to use for the connection. If this member is empty, the HBA's miniport driver can choose any initiator node name during authentication. The initiator node name is usually an iSCSI qualified name (IQN).</p>
 </dd>
 
-### -field <b>InitiatorAlias</b>
+### -field InitiatorAlias
 
 <dd>
 <p>The iSCSI alias of the initiator node. </p>
 </dd>
 
-### -field <b>TargetName</b>
+### -field TargetName
 
 <dd>
 <p>The iSCSI target name with which to establish the logon session. </p>
 </dd>
 
-### -field <b>Mappings</b>
+### -field Mappings
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-targetmapping.md">ISCSI_TargetMapping</a> structure that maps a collection of logical unit numbers (LUNs) that are locally defined to a group of 64-bit iSCSI LUNs. If the initiator service does not specify mappings, the HBA's miniport driver can use any mappings for the LUNs. The miniport driver should report unmapped LUNs to the port driver to be enumerated.</p>
 </dd>
 
-### -field <b>Key</b>
+### -field Key
 
 <dd>
 <p>A variable-length array of UCHAR values that defines the preshared key that is associated with the target IP address.</p>

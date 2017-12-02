@@ -71,95 +71,95 @@ typedef struct _PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY {
 ## -struct-fields
 <dl>
 
-### -field <b>DUMMYUNIONNAME</b>
+### -field DUMMYUNIONNAME
 
 <dd>
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Bitwise of flags in this structure.</p>
 </dd>
 
-### -field <b>DUMMYSTRUCTNAME</b>
+### -field DUMMYSTRUCTNAME
 
 <dd>
 <dl>
 
-### -field <b>EnableExportAddressFilter</b>
+### -field EnableExportAddressFilter
 
 <dd>
 <p>If set this enables the Export Address Filter mitigation in enforcement mode for the process.</p>
 </dd>
 
-### -field <b>AuditExportAddressFilter</b>
+### -field AuditExportAddressFilter
 
 <dd>
 <p>If set this enables the Export Address Filter mitigation in audit mode for the process.</p>
 </dd>
 
-### -field <b>EnableExportAddressFilterPlus</b>
+### -field EnableExportAddressFilterPlus
 
 <dd>
 <p>If set this enables the Export Address Filter Plus mitigation in enforcement mode for the process.</p>
 </dd>
 
-### -field <b>AuditExportAddressFilterPlus</b>
+### -field AuditExportAddressFilterPlus
 
 <dd>
 <p>If set this enables the Export Address Filter mitigation in audit mode for the process.</p>
 </dd>
 
-### -field <b>EnableImportAddressFilter</b>
+### -field EnableImportAddressFilter
 
 <dd>
 <p>If set this enables the Import Address Filter mitigation in enforcement mode for the process.</p>
 </dd>
 
-### -field <b>AuditImportAddressFilter</b>
+### -field AuditImportAddressFilter
 
 <dd>
 <p>If set this enables the Import Address Filter mitigation in enforcement mode for the process.</p>
 </dd>
 
-### -field <b>EnableRopStackPivot</b>
+### -field EnableRopStackPivot
 
 <dd>
 <p>If set this enables the stack pivot anti-ROP (Return-oriented-programming) mitigation in enforcement mode for the process.</p>
 </dd>
 
-### -field <b>AuditRopStackPivot</b>
+### -field AuditRopStackPivot
 
 <dd>
 <p>If set this enables the stack pivot anti-ROP (Return-oriented-programming) mitigation in audit mode for the process.</p>
 </dd>
 
-### -field <b>EnableRopCallerCheck</b>
+### -field EnableRopCallerCheck
 
 <dd>
 <p>If set this enables the caller check anti-ROP (Return-oriented-programming) mitigation in enforcement mode for the process. Applies to 32-bit processes only.</p>
 </dd>
 
-### -field <b>AuditRopCallerCheck</b>
+### -field AuditRopCallerCheck
 
 <dd>
 <p>If set this enables the caller check anti-ROP (Return-oriented-programming) mitigation in audit mode for the process. Applies to 32-bit processes only.</p>
 </dd>
 
-### -field <b>EnableRopSimExec</b>
+### -field EnableRopSimExec
 
 <dd>
 <p>If set this enables the simulated execution anti-ROP (Return-oriented-programming) mitigation in enforcement mode for the process. Applies to 32-bit processes only.</p>
 </dd>
 
-### -field <b>AuditRopSimExec</b>
+### -field AuditRopSimExec
 
 <dd>
 <p>If set this enables the simulated execution anti-ROP (Return-oriented-programming) mitigation in audit mode for the process. Applies to 32-bit processes only.</p>
 </dd>
 
-### -field <b>ReservedFlags</b>
+### -field ReservedFlags
 
 <dd>
 <p>Reserved.</p>

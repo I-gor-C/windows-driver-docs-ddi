@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>The <b>IOCTL_HID_SEND_IDLE_NOTIFICATION_REQUEST</b> 
    control code is the IOCTL of the idle notification request IRP that HIDClass sends to HID mini drivers, such as HIDUSB, to inform the bus driver that the device is now idle.</p>
-<p>For general information about HIDClass devices, see <a href="NULL">HID Collections</a>. </p>
+<p>For general information about HIDClass devices, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 
 ## -ioctlparameters

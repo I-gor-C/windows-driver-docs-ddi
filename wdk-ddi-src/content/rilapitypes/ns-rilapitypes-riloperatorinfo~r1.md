@@ -7,7 +7,7 @@ old-location: netvista\riloperatorinfo_2.htm
 old-project: netvista
 ms.assetid: cf189a5a-8281-4d9a-bad8-a25a1294aec9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILOPERATORINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef struct _RILOPERATORINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwIndex</b>
+### -field dwIndex
 
 <dd></dd>
 
-### -field <b>dwStatus</b>
+### -field dwStatus
 
 <dd></dd>
 
-### -field <b>ronNames</b>
+### -field ronNames
 
 <dd></dd>
 </dl>

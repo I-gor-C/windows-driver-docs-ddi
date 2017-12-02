@@ -55,13 +55,13 @@ VOID AtaPortWritePortUlong(
 ## -parameters
 <dl>
 
-### -param <i>Port</i> [in]
+### -param Port [in]
 
 <dd>
 <p>A pointer to the I/O port. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>.</p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>Specifies the value to write to the HBA's I/O port.</p>

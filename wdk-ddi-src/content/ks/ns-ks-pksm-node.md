@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Method</b>
+### -field Method
 
 <dd>
 <p>A structure of type <a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a> that specifies the requested method.</p>
 </dd>
 
-### -field <b>NodeId</b>
+### -field NodeId
 
 <dd>
 <p>Specifies the node ID.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. Should be set to zero.</p>

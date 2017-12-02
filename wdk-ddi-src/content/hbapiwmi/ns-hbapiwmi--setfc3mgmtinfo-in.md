@@ -54,7 +54,7 @@ typedef struct _SetFC3MgmtInfo_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>MgmtInfo</b>
+### -field MgmtInfo
 
 <dd>
 <p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbafc3mgmtinfo.md">HBAFC3MgmtInfo</a> that holds FC3 management information that will be used to configure the fibre channel adapter. </p>

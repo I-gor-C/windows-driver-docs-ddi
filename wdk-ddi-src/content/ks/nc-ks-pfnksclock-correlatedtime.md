@@ -58,13 +58,13 @@ LONGLONG FASTCALL KStrClockGetCorrelatedPhysicalTime(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a> structure to which a handle was returned when the clock instance was created.</p>
 </dd>
 
-### -param <i>SystemTime</i> [out]
+### -param SystemTime [out]
 
 <dd>
 <p>A pointer to a 64-bit integer containing the number of clock ticks since system boot.</p>
@@ -77,7 +77,7 @@ LONGLONG FASTCALL KStrClockGetCorrelatedPhysicalTime(
 ## -remarks
 <p>You can obtain an entry point for this routine by supplying a driver-allocated <a href="stream.ksclock_functiontable">KSCLOCK_FUNCTIONTABLE</a> structure in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564466">KSPROPERTY_CLOCK_FUNCTIONTABLE</a> request.</p>
 
-<p>The system time is acquired from <a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>.</p>
+<p>The system time is acquired from <a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>.</p>
 
 <p>Both time values are specified in 100 nanosecond units.</p>
 
@@ -117,7 +117,7 @@ LONGLONG FASTCALL KStrClockGetCorrelatedPhysicalTime(
 <a href="stream.kscorrelated_time">KSCORRELATED_TIME</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
 </dt>
 </dl>
 <p> </p>

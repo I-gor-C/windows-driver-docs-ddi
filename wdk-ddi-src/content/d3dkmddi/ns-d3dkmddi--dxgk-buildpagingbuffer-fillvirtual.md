@@ -58,31 +58,31 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>The kernel mode driver handle of the allocation being filled. The handle is returned from <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a>. The allocation properties are needed in order to detect if the allocation is swizzled.</p>
 </dd>
 
-### -field <b>AllocationOffsetInBytes</b>
+### -field AllocationOffsetInBytes
 
 <dd>
 <p>The offset, in bytes, from the start of the allocation being filled.</p>
 </dd>
 
-### -field <b>FillSizeInBytes</b>
+### -field FillSizeInBytes
 
 <dd>
 <p>The number of bytes to fill.</p>
 </dd>
 
-### -field <b>FillPattern</b>
+### -field FillPattern
 
 <dd>
 <p>The byte pattern to fill with.</p>
 </dd>
 
-### -field <b>DestinationVirtualAddress</b>
+### -field DestinationVirtualAddress
 
 <dd>
 <p>The virtual address of the destination in the context of the paging process.</p>

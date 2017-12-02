@@ -56,20 +56,20 @@ typedef struct _BTH_VENDOR_PATTERN {
 ## -struct-fields
 <dl>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>The offset, in bytes, of the pattern from the beginning of the event data, excluding the event
      header.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of the pattern.</p>
 </dd>
 
-### -field <b>Pattern</b>
+### -field Pattern
 
 <dd>
 <p>A buffer that contains pattern data.</p>

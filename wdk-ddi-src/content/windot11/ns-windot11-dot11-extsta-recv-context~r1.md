@@ -7,7 +7,7 @@ old-location: netvista\dot11_extsta_recv_context.htm
 old-project: netvista
 ms.assetid: 517be11b-a15d-43ac-aefd-f425fa6f63e7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_EXTSTA_RECV_CONTEXT,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ typedef struct DOT11_EXTSTA_RECV_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_EXTSTA_RECV_CONTEXT structure. This member is formatted
@@ -74,19 +74,19 @@ typedef struct DOT11_EXTSTA_RECV_CONTEXT {
 <p></p>
 <dl>
 
-### -field <a id="Type"></a><a id="type"></a><a id="TYPE"></a><b>Type</b>
+### -field Type
 
 <dd>
 <p>This member must be set to NDIS_OBJECT_TYPE_DEFAULT.</p>
 </dd>
 
-### -field <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a><b>Revision</b>
+### -field Revision
 
 <dd>
 <p>This member must be set to DOT11_EXTSTA_RECV_CONTEXT_REVISION_1.</p>
 </dd>
 
-### -field <a id="Size"></a><a id="size"></a><a id="SIZE"></a><b>Size</b>
+### -field Size
 
 <dd>
 <p>This member must be set to 
@@ -97,7 +97,7 @@ typedef struct DOT11_EXTSTA_RECV_CONTEXT {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>uReceiveFlags</b>
+### -field uReceiveFlags
 
 <dd>
 <p>The attributes of the received packet data specified through a bitmask. 
@@ -108,7 +108,7 @@ typedef struct DOT11_EXTSTA_RECV_CONTEXT {
 <p></p>
 <dl>
 
-### -field <a id="DOT11_RECV_FLAG_RAW_PACKET"></a><a id="dot11_recv_flag_raw_packet"></a>DOT11_RECV_FLAG_RAW_PACKET
+### -field DOT11_RECV_FLAG_RAW_PACKET
 
 <dd>
 <p>If this bit is set, the packet contains the data as it was originally received by the 802.11
@@ -117,7 +117,7 @@ typedef struct DOT11_EXTSTA_RECV_CONTEXT {
        Packets</a>.</p>
 </dd>
 
-### -field <a id="DOT11_RECV_FLAG_RAW_PACKET_FCS_FAILURE"></a><a id="dot11_recv_flag_raw_packet_fcs_failure"></a>DOT11_RECV_FLAG_RAW_PACKET_FCS_FAILURE
+### -field DOT11_RECV_FLAG_RAW_PACKET_FCS_FAILURE
 
 <dd>
 <p>If this bit is set, the raw packet data was received with frame check sequence (FCS) failures.
@@ -127,7 +127,7 @@ typedef struct DOT11_EXTSTA_RECV_CONTEXT {
 <div> </div>
 </dd>
 
-### -field <a id="DOT11_RECV_FLAG_RAW_PACKET_TIMESTAMP"></a><a id="dot11_recv_flag_raw_packet_timestamp"></a>DOT11_RECV_FLAG_RAW_PACKET_TIMESTAMP
+### -field DOT11_RECV_FLAG_RAW_PACKET_TIMESTAMP
 
 <dd>
 <p>If this bit is set, the NIC sets the timestamp information in the 
@@ -136,20 +136,20 @@ typedef struct DOT11_EXTSTA_RECV_CONTEXT {
 </dl>
 </dd>
 
-### -field <b>uPhyId</b>
+### -field uPhyId
 
 <dd>
 <p>The identifier (ID) of the PHY on which the 802.11 station received the packet.</p>
 </dd>
 
-### -field <b>uChCenterFrequency</b>
+### -field uChCenterFrequency
 
 <dd>
 <p>The channel center frequency, in units of megahertz (MHz), of the frequency band on which the
      802.11 station received the packet.</p>
 </dd>
 
-### -field <b>usNumberOfMPDUsReceived</b>
+### -field usNumberOfMPDUsReceived
 
 <dd>
 <p>The number of media access control (MAC) protocol data unit (MPDU) fragments received and
@@ -157,14 +157,14 @@ typedef struct DOT11_EXTSTA_RECV_CONTEXT {
      <b>usNumberOfMPDUsReceived</b> must be from one through the value of DOT11_MAX_NUM_OF_FRAGMENTS.</p>
 </dd>
 
-### -field <b>lRSSI</b>
+### -field lRSSI
 
 <dd>
 <p>The received signal strength indication (RSSI) value for the last received MPDU fragment of the
      802.11 packet. The RSSI value is in units of decibels referenced to 1.0 milliwatts (dBm).</p>
 </dd>
 
-### -field <b>ucDataRate</b>
+### -field ucDataRate
 
 <dd>
 <p>The data rate at which the 802.11 station received the packet. The value of 
@@ -175,7 +175,7 @@ typedef struct DOT11_EXTSTA_RECV_CONTEXT {
      OID_DOT11_DATA_RATE_MAPPING_TABLE</a>.</p>
 </dd>
 
-### -field <b>uSizeMediaSpecificInfo</b>
+### -field uSizeMediaSpecificInfo
 
 <dd>
 <p>The size, in bytes, of the media specific information at the 
@@ -188,7 +188,7 @@ typedef struct DOT11_EXTSTA_RECV_CONTEXT {
 <div> </div>
 </dd>
 
-### -field <b>pvMediaSpecificInfo</b>
+### -field pvMediaSpecificInfo
 
 <dd>
 <p>A pointer to a buffer that contains media-specific infomration. The mininiport driver can set this
@@ -204,12 +204,12 @@ typedef struct DOT11_EXTSTA_RECV_CONTEXT {
 <div> </div>
 </dd>
 
-### -field <b>ullTimestamp</b>
+### -field ullTimestamp
 
 <dd>
 <p>An 802.11 timing synchronization function (TSF) timer value, in microseconds, that specifies the
      time when the packet was received. This member is provided to support 
-     <a href="NULL">indicating raw 802.11 packets</a>.
+     <a href="netvista.indicating_raw_802_11_packets">indicating raw 802.11 packets</a>.
      </p>
 <p>If a NIC does not support 
      <b>ullTimestamp</b>, it must not set the DOT11_RECV_FLAG_RAW_PACKET_TIMESTAMP flag in the 
@@ -313,4 +313,4 @@ typedef struct DOT11_EXTSTA_RECV_CONTEXT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTSTA_RECV_CONTEXT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTSTA_RECV_CONTEXT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

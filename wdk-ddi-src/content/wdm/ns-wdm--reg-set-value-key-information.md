@@ -63,55 +63,55 @@ typedef struct _REG_SET_VALUE_KEY_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Object</b>
+### -field Object
 
 <dd>
 <p>A pointer to the registry key object for the key whose value entry is about to be changed.</p>
 </dd>
 
-### -field <b>ValueName</b>
+### -field ValueName
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the name of the value entry about to be changed. </p>
 </dd>
 
-### -field <b>TitleIndex</b>
+### -field TitleIndex
 
 <dd>
 <p>Reserved for system use. Drivers should ignore this member. </p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of data that is about to be written. For more information about the possible values for this member, see the <i>Type</i> parameter of <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>A pointer to a buffer that contains the data about to be written. The format of the buffer depends on the value of <b>Type</b>. For more information, see <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>.</p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>The size, in bytes, of the <b>Data</b> buffer.</p>
 </dd>
 
-### -field <b>CallContext</b>
+### -field CallContext
 
 <dd>
 <p>Optional driver-defined context information that the driver's <a href="kernel.registrycallback">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system. </p>
 </dd>
 
-### -field <b>ObjectContext</b>
+### -field ObjectContext
 
 <dd>
 <p>A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.</p>

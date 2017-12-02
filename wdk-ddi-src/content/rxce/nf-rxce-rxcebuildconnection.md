@@ -7,7 +7,7 @@ old-location: ifsk\rxcebuildconnection.htm
 old-project: ifsk
 ms.assetid: 3d4c2e69-7cdc-4eee-b56c-b1485768e942
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxCeBuildConnection
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,37 +60,37 @@ NTSTATUS RxCeBuildConnection(
 ## -parameters
 <dl>
 
-### -param <i>pAddress</i> [in]
+### -param pAddress [in]
 
 <dd>
 <p>A pointer to the local RDBSS connection engine address.</p>
 </dd>
 
-### -param <i>pConnectionInformation</i> [in]
+### -param pConnectionInformation [in]
 
 <dd>
 <p>A pointer to the connection information that specifies the remote address.</p>
 </dd>
 
-### -param <i>pHandler</i> [in]
+### -param pHandler [in]
 
 <dd>
 <p>A pointer to the event handler for processing receive indications.</p>
 </dd>
 
-### -param <i>pEventContext</i> [in]
+### -param pEventContext [in]
 
 <dd>
 <p>A pointer to the context parameter to be passed back to the event handler and used for indications.</p>
 </dd>
 
-### -param <i>pConnection</i> [in, out]
+### -param pConnection [in, out]
 
 <dd>
 <p>On input, this parameter contains a pointer to an uninitialized RDBSS connection. On output when this call is successful, the connection is properly initialized.</p>
 </dd>
 
-### -param <i>pVc</i> [in, out]
+### -param pVc [in, out]
 
 <dd>
 <p>On input, this parameter contains a pointer to an uninitialized RDBSS virtual circuit. On output when this call is successful, the virtual circuit is associated with the connection and the virtual circuit is properly initialized.</p>
@@ -156,4 +156,4 @@ NTSTATUS RxCeBuildConnection(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCeBuildConnection function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCeBuildConnection function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -59,31 +59,31 @@ typedef struct _ISCSI_Path {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueConnectionId</b>
+### -field UniqueConnectionId
 
 <dd>
 <p>This is a unique connection identifier that the initiator uses to identify a connection. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in the UniqueConnectionId parameter.  This value is not to be confused with the connection ID (CID).</p>
 </dd>
 
-### -field <b>EstimatedLinkSpeed</b>
+### -field EstimatedLinkSpeed
 
 <dd>
 <p>This specifies the connection speed in megabits per second (Mbps).</p>
 </dd>
 
-### -field <b>PathWeight</b>
+### -field PathWeight
 
 <dd>
 <p>This specifies the weight assigned to this path. The value can be any 32-bit number, with a higher number that signifies a higher priority. If more than one path is available, this path weight value is compared against each other path weight and will be prioritized accordingly. For example, if a value of 1 is used for path1 and a value of 2 for path2, path2 has higher priority.</p>
 </dd>
 
-### -field <b>PrimaryPath</b>
+### -field PrimaryPath
 
 <dd>
 <p>This specifies the state of the path: primary or secondary. If the value is 1, it means the path is the primary path, and if it is 0, it is a secondary path.</p>
 </dd>
 
-### -field <b>ConnectionStatus</b>
+### -field ConnectionStatus
 
 <dd>
 <p>This indicates the status of the connection.</p>
@@ -120,7 +120,7 @@ typedef struct _ISCSI_Path {
 <p> </p>
 </dd>
 
-### -field <b>TCPOffLoadAvailable</b>
+### -field TCPOffLoadAvailable
 
 <dd>
 <p>This indicates whether the connection supports TCP offload or not.</p>

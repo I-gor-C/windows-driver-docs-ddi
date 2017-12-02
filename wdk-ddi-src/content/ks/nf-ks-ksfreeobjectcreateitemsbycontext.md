@@ -55,13 +55,13 @@ NTSTATUS KsFreeObjectCreateItemsByContext(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [in]
+### -param Header [in]
 
 <dd>
 <p>Points to the device header on which the create items are attached.</p>
 </dd>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Contains the context of the create items to free. All create items with this context value will be freed.</p>

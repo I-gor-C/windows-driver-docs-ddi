@@ -7,7 +7,7 @@ old-location: netvista\rillinecontrolinfo.htm
 old-project: netvista
 ms.assetid: 4a3bcbda-58e8-4b40-bcc2-fe7b1e624973
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILLINECONTROLINFO, RILLINECONTROLINFO, *LPRILLINECONTROLINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,27 +59,27 @@ typedef struct _RILLINECONTROLINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>fPolarityIncluded</b>
+### -field fPolarityIncluded
 
 <dd></dd>
 
-### -field <b>fToggleMode</b>
+### -field fToggleMode
 
 <dd></dd>
 
-### -field <b>fReversePolarity</b>
+### -field fReversePolarity
 
 <dd></dd>
 
-### -field <b>dwPowerDenialTime</b>
+### -field dwPowerDenialTime
 
 <dd></dd>
 </dl>

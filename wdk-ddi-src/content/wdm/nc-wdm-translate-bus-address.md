@@ -62,31 +62,31 @@ BOOLEAN TranslateBusAddress(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\wdm\ns-wdm--bus-interface-standard.md">BUS_INTERFACE_STANDARD</a> structure for the interface.</p>
 </dd>
 
-### -param <i>BusAddress</i> [in]
+### -param BusAddress [in]
 
 <dd>
 <p>The bus-relative address to be translated.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length, in bytes, of the input memory that <i>BusAddress</i> points to.</p>
 </dd>
 
-### -param <i>AddressSpace</i> [in, out]
+### -param AddressSpace [in, out]
 
 <dd>
 <p>On input, the address space in which the device's hardware address resides. A value of 0x0 signifies memory space, and a value of 0x1 signifies port I/O space. On output, <i>AddressSpace</i> indicates the address space in which the <i>TranslatedAddress</i> resides.</p>
 </dd>
 
-### -param <i>TranslatedAddress</i> [out]
+### -param TranslatedAddress [out]
 
 <dd>
 <p>The translated (logical) address that corresponds to the bus-relative address that the caller provides in <i>BusAddress</i>.</p>

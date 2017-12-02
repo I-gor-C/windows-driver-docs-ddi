@@ -54,7 +54,7 @@ void __inline KsGateRemoveOffInputFromOr(
 ## -parameters
 <dl>
 
-### -param <i>OrGate</i> [in]
+### -param OrGate [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksgate.md">KSGATE</a> structure representing the OR gate from which to remove an OFF input.</p>
@@ -67,7 +67,7 @@ void __inline KsGateRemoveOffInputFromOr(
 ## -remarks
 <p><b>KsGateRemoveOffInputFromOr</b> should only be used on gates that were specifically created as AND gates; AVStream does not verify that the given gate is truly an AND gate.</p>
 
-<p>For more information, see <a href="NULL">Flow Control Gates in AVStream</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.</p>
 
 <p>This call is an empty function. It should be used for code readability and clarity. </p>
 

@@ -7,7 +7,7 @@ old-location: netvista\rilradiostategroupflags.htm
 old-project: netvista
 ms.assetid: b44debf9-4f44-44fc-9857-e4725edc888f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef enum _RILRADIOSTATEGROUPFLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_RADIOSTATE_GROUPFLAG_HASSUBGROUPS"></a><a id="ril_radiostate_groupflag_hassubgroups"></a><b>RIL_RADIOSTATE_GROUPFLAG_HASSUBGROUPS</b>
+### -field RIL_RADIOSTATE_GROUPFLAG_HASSUBGROUPS
 
 <dd></dd>
 </dl>

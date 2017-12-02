@@ -77,71 +77,71 @@ typedef struct D3DKMT_MULTIPLANE_OVERLAY_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd></dd>
 
-### -field <b>SrcRect</b>
+### -field SrcRect
 
 <dd></dd>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd></dd>
 
-### -field <b>ClipRect</b>
+### -field ClipRect
 
 <dd></dd>
 
-### -field <b>Rotation</b>
+### -field Rotation
 
 <dd></dd>
 
-### -field <b>Blend</b>
+### -field Blend
 
 <dd></dd>
 
-### -field <b>DirtyRectCount</b>
+### -field DirtyRectCount
 
 <dd></dd>
 
-### -field <b>pDirtyRects</b>
+### -field pDirtyRects
 
 <dd></dd>
 
-### -field <b>NumFilters</b>
+### -field NumFilters
 
 <dd></dd>
 
-### -field <b>pFilters</b>
+### -field pFilters
 
 <dd></dd>
 
-### -field <b>VideoFrameFormat</b>
+### -field VideoFrameFormat
 
 <dd></dd>
 
-### -field <b>YCbCrFlags</b>
+### -field YCbCrFlags
 
 <dd></dd>
 
-### -field <b>StereoFormat</b>
+### -field StereoFormat
 
 <dd></dd>
 
-### -field <b>StereoLeftViewFrame0</b>
+### -field StereoLeftViewFrame0
 
 <dd></dd>
 
-### -field <b>StereoBaseViewFrame0</b>
+### -field StereoBaseViewFrame0
 
 <dd></dd>
 
-### -field <b>StereoFlipMode</b>
+### -field StereoFlipMode
 
 <dd></dd>
 
-### -field <b>StretchQuality</b>
+### -field StretchQuality
 
 <dd></dd>
 </dl>

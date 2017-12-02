@@ -63,13 +63,13 @@ typedef struct D3D10_DDI_DEPTH_STENCIL_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>DepthEnable</b>
+### -field DepthEnable
 
 <dd>
 <p>[in] A Boolean value that specifies whether depth is enabled. <b>TRUE</b> indicates depth is enabled; <b>FALSE</b> indicates depth is disabled. </p>
 </dd>
 
-### -field <b>DepthWriteMask</b>
+### -field DepthWriteMask
 
 <dd>
 <p>[in] A bitwise value that indicates the write properties for a depth stencil state. This member is a valid bitwise OR of the following values from the D3D10_DDI_DEPTH_WRITE_MASK enumeration.</p>
@@ -98,49 +98,49 @@ typedef struct D3D10_DDI_DEPTH_STENCIL_DESC {
 <p> </p>
 </dd>
 
-### -field <b>DepthFunc</b>
+### -field DepthFunc
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-comparison-func.md">D3D10_DDI_COMPARISON_FUNC</a>-typed value that indicates the depth-comparison function to perform.</p>
 </dd>
 
-### -field <b>StencilEnable</b>
+### -field StencilEnable
 
 <dd>
 <p>[in] A Boolean value that specifies whether stencil is enabled. <b>TRUE</b> indicates stencil is enabled; <b>FALSE</b> indicates stencil is disabled. </p>
 </dd>
 
-### -field <b>FrontEnable</b>
+### -field FrontEnable
 
 <dd>
 <p>[in] A Boolean value that specifies whether the performance of stencil operations on forward-facing polygons is enabled. <b>TRUE</b> indicates that the performance on forward-facing polygons is enabled; <b>FALSE</b> indicates that it is disabled. </p>
 </dd>
 
-### -field <b>BackEnable</b>
+### -field BackEnable
 
 <dd>
 <p>[in] A Boolean value that specifies whether the performance of stencil operations on back-facing polygons is enabled. <b>TRUE</b> indicates that the performance on back-facing polygons is enabled; <b>FALSE</b> indicates that it is disabled. </p>
 </dd>
 
-### -field <b>StencilReadMask</b>
+### -field StencilReadMask
 
 <dd>
 <p>[in] An 8-bit bitwise value that the driver uses in a bitwise AND operation with the stencil value in the stencil buffer immediately after reading the stencil value out of the stencil buffer. </p>
 </dd>
 
-### -field <b>StencilWriteMask</b>
+### -field StencilWriteMask
 
 <dd>
 <p>[in] An 8-bit bitwise value that the driver uses in a bitwise AND operation with the current stencil value before writing the result back out to the stencil buffer. </p>
 </dd>
 
-### -field <b>FrontFace</b>
+### -field FrontFace
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-depth-stencilop-desc.md">D3D10_DDI_DEPTH_STENCILOP_DESC</a> structure that describes the stencil operation to perform on forward-facing polygons.</p>
 </dd>
 
-### -field <b>BackFace</b>
+### -field BackFace
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-depth-stencilop-desc.md">D3D10_DDI_DEPTH_STENCILOP_DESC</a> structure that describes the stencil operation to perform on back-facing polygons.</p>

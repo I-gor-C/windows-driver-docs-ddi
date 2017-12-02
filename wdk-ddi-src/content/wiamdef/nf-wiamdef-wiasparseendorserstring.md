@@ -7,7 +7,7 @@ old-location: image\wiasparseendorserstring.htm
 old-project: image
 ms.assetid: c724a4f5-55ef-413d-bd1a-9cd39d3e42f5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiasParseEndorserString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ HRESULT _stdcall wiasParseEndorserString(
 ## -parameters
 <dl>
 
-### -param <i>pWiasContext</i> [in]
+### -param pWiasContext [in]
 
 <dd>
 <p>Pointer to a WIA Item context (the context of the item containing the WIA_DPS_ENDORSER_STRING property (described in the Microsoft Windows SDK documentation)).</p>
 </dd>
 
-### -param <i>lFlags</i> 
+### -param lFlags 
 
 <dd>
 <p>Reserved for system use and should be set to 0.</p>
 </dd>
 
-### -param <i>pInfo</i> [out, optional]
+### -param pInfo [out, optional]
 
 <dd>
 <p>Pointer to a <a href="..\wiamindr_lh\ns-wiamindr-lh--wias-endorser-info.md">WIAS_ENDORSER_INFO</a> structure containing the page count and a list of custom token/value pairs. Can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>pOutputString</i> [out]
+### -param pOutputString [out]
 
 <dd>
 <p>Pointer to a memory location that receives the address of the parsed endorser string. If *<i>pOutputString</i> is non-<b>NULL</b> on entry, then the function assumes that the caller allocated the buffer; otherwise the WIA service will allocate it. Note that the WIA service assumes the <i>maximum</i> resultant endorser string is MAX_PATH (defined in <i>stdlib.h</i>) characters long. If the driver expects the string to be longer, it should allocate the buffer itself. If the caller allocates the buffer, it <i>must</i> initialize the contents of the buffer to zero before using this function.</p>
@@ -158,4 +158,4 @@ HRESULT _stdcall wiasParseEndorserString(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasParseEndorserString function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasParseEndorserString function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

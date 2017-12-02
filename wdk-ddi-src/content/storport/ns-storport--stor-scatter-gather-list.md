@@ -57,19 +57,19 @@ typedef struct _STOR_SCATTER_GATHER_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfElements</b>
+### -field NumberOfElements
 
 <dd>
 <p>Contains the number of scatter/gather elements in the list. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>List</b>
+### -field List
 
 <dd>
 <p>Contains the array of scatter/gather elements. </p>

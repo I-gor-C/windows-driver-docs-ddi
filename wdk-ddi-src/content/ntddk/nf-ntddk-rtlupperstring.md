@@ -55,13 +55,13 @@ VOID RtlUpperString(
 ## -parameters
 <dl>
 
-### -param <i>DestinationString</i> [in, out]
+### -param DestinationString [in, out]
 
 <dd>
 <p>Pointer to the buffer for the converted destination string. </p>
 </dd>
 
-### -param <i>SourceString</i> [in]
+### -param SourceString [in]
 
 <dd>
 <p>Pointer to the source string to be converted to uppercase. </p>

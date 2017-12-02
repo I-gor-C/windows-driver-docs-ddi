@@ -55,13 +55,13 @@ PUNKNOWN __inline KsFilterRegisterAggregatedClientUnknown(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>A pointer to the specified AVStream <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure.</p>
 </dd>
 
-### -param <i>ClientUnknown</i> [in]
+### -param ClientUnknown [in]
 
 <dd>
 <p>The client <b>IUnknown</b> interface object.</p>

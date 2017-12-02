@@ -59,41 +59,41 @@ typedef struct _DXGK_DEVICEINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>DmaBufferSize</b>
+### -field DmaBufferSize
 
 <dd>
 <p>[out] The size, in bytes, of the buffer of hardware commands that is sent through direct memory access (DMA) to the hardware.</p>
 <p>The DMA buffer can grow and shrink after the device is created; however, the DMA buffer can never shrink smaller than the starting size that <b>DmaBufferSize</b> specifies. </p>
 </dd>
 
-### -field <b>DmaBufferSegmentSet</b>
+### -field DmaBufferSegmentSet
 
 <dd>
 <p>[out] The identifiers of the segments where the DMA buffers should be made accessible to the graphics processing unit (GPU). </p>
 </dd>
 
-### -field <b>DmaBufferPrivateDataSize</b>
+### -field DmaBufferPrivateDataSize
 
 <dd>
 <p>[out] The size, in bytes, of the driver-resident private data structure that is associated with each DMA buffer. Memory for this private data structure is allocated from nonpaged pool. If the driver specifies zero in <b>DmaBufferPrivateDataSize</b>, no memory is allocated for the private data structure.</p>
 <p>The private data structure that is associated with a DMA buffer is initialized to zero when the DMA buffer is created. During the lifetime of the DMA buffer, the video memory manager never accesses the private data structure that is associated with the DMA buffer.</p>
 </dd>
 
-### -field <b>AllocationListSize</b>
+### -field AllocationListSize
 
 <dd>
 <p>[out] The starting number of elements in an array of allocations (that is, an array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationlist.md">DXGK_ALLOCATIONLIST</a> structures). This number is the starting number of allocations that the driver requests to be in the <b>pAllocationList</b> members of <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-present.md">DXGKARG_PRESENT</a> and <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-render.md">DXGKARG_RENDER</a> structures in calls to the driver's <a href="display.dxgkddipresent">DxgkDdiPresent</a> and <a href="display.dxgkddirender">DxgkDdiRender</a> functions. </p>
 <p>The allocation list can grow and shrink after the device is created; however, the allocation list can never shrink smaller than the starting size that <b>AllocationListSize</b> specifies. </p>
 </dd>
 
-### -field <b>PatchLocationListSize</b>
+### -field PatchLocationListSize
 
 <dd>
 <p>[out] The starting number of elements in an array of patch locations (that is, an array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures) for the device in user mode and kernel mode. This number is the starting number of patch locations that the driver requests to be in the <b>pPatchLocationListIn</b> members of <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-render.md">DXGKARG_RENDER</a> structures in calls to its <a href="display.dxgkddirender">DxgkDdiRender</a> function. </p>
 <p>The patch-location list can grow and shrink after the device is created; however, the patch-location list can never shrink smaller than the starting size that <b>PatchLocationListSize</b> specifies. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-deviceinfoflags.md">DXGK_DEVICEINFOFLAGS</a> structure that identifies, in bit-field flags, information about the device.</p>

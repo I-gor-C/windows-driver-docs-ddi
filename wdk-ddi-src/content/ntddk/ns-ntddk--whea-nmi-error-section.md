@@ -55,13 +55,13 @@ typedef struct _WHEA_NMI_ERROR_SECTION {
 ## -struct-fields
 <dl>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>An 8-byte data buffer that contains the data that was read from the NMI I/O ports by the NMI low-level hardware error handler (LLHEH).</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A WHEA_NMI_ERROR__SECTION_FLAGS union that describes the source of the NMI error. The WHEA_NMI_ERROR_FLAGS union is defined as follows:</p>
@@ -84,19 +84,19 @@ typedef struct _WHEA_NMI_ERROR_SECTION {
 <p></p>
 <dl>
 
-### -field <a id="HypervisorError"></a><a id="hypervisorerror"></a><a id="HYPERVISORERROR"></a><b>HypervisorError</b>
+### -field HypervisorError
 
 <dd>
 <p>A hypervisor error has occurred.</p>
 </dd>
 
-### -field <a id="Reserved"></a><a id="reserved"></a><a id="RESERVED"></a><b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="AsULONG"></a><a id="asulong"></a><a id="ASULONG"></a><b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the WHEA_NMI_ERROR_SECTION_FLAGS union.</p>

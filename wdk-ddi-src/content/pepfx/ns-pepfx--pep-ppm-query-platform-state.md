@@ -55,13 +55,13 @@ typedef struct _PEP_PPM_QUERY_PLATFORM_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>StateIndex</b>
+### -field StateIndex
 
 <dd>
 <p>[in] The index of this platform idle state. If the hardware platform supports N platform idle states, the states are numbered 0 to N-1. The Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) previously sent a <a href="kernel.pep_notify_ppm_query_platform_states">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES</a> notification to the platform extension plug-in (PEP) to determine the number of supported platform idle states.</p>
 </dd>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>[out] A <a href="..\pepfx\ns-pepfx--pep-platform-idle-state.md">PEP_PLATFORM_IDLE_STATE</a> structure that describes the platform idle state.</p>

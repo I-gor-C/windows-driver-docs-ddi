@@ -86,7 +86,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has completed the IOCTL request successfully. </p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-capabilities.md">PMI_CAPABILITIES</a> structure and its variable-length data. </p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-capabilities.md">PMI_CAPABILITIES</a> structure and its variable-length data. </p>
 
 <p>The initiator-allocated input buffer contains an invalid <a href="..\pmi\ne-pmi-pmi-capabilities-type.md">PMI_CAPABILITIES_TYPE</a> value.</p>
 
@@ -98,7 +98,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has completed the IOCTL request successfully. </p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-capabilities.md">PMI_CAPABILITIES</a> structure and its variable-length data. </p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-capabilities.md">PMI_CAPABILITIES</a> structure and its variable-length data. </p>
 
 <p>The initiator-allocated input buffer contains an invalid <a href="..\pmi\ne-pmi-pmi-capabilities-type.md">PMI_CAPABILITIES_TYPE</a> value.</p>
 
@@ -110,7 +110,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has completed the IOCTL request successfully. </p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-capabilities.md">PMI_CAPABILITIES</a> structure and its variable-length data. </p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-capabilities.md">PMI_CAPABILITIES</a> structure and its variable-length data. </p>
 
 <p>The initiator-allocated input buffer contains an invalid <a href="..\pmi\ne-pmi-pmi-capabilities-type.md">PMI_CAPABILITIES_TYPE</a> value.</p>
 
@@ -122,7 +122,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has completed the IOCTL request successfully. </p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-capabilities.md">PMI_CAPABILITIES</a> structure and its variable-length data. </p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-capabilities.md">PMI_CAPABILITIES</a> structure and its variable-length data. </p>
 
 <p>The initiator-allocated input buffer contains an invalid <a href="..\pmi\ne-pmi-pmi-capabilities-type.md">PMI_CAPABILITIES_TYPE</a> value.</p>
 
@@ -134,7 +134,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has completed the IOCTL request successfully. </p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-capabilities.md">PMI_CAPABILITIES</a> structure and its variable-length data. </p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-capabilities.md">PMI_CAPABILITIES</a> structure and its variable-length data. </p>
 
 <p>The initiator-allocated input buffer contains an invalid <a href="..\pmi\ne-pmi-pmi-capabilities-type.md">PMI_CAPABILITIES_TYPE</a> value.</p>
 
@@ -179,7 +179,7 @@ I/O Status block
 <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\pmi\ns-pmi--pmi-capabilities.md">PMI_CAPABILITIES</a>

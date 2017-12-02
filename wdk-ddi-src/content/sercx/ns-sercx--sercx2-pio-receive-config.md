@@ -60,37 +60,37 @@ typedef struct _SERCX2_PIO_RECEIVE_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
-### -field <b>EvtSerCx2PioReceiveInitializeTransaction</b>
+### -field EvtSerCx2PioReceiveInitializeTransaction
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-pio-receive-initialize-transaction.md">EvtSerCx2PioReceiveInitializeTransaction</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>
 </dd>
 
-### -field <b>EvtSerCx2PioReceiveCleanupTransaction</b>
+### -field EvtSerCx2PioReceiveCleanupTransaction
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-pio-receive-cleanup-transaction.md">EvtSerCx2PioReceiveCleanupTransaction</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>
 </dd>
 
-### -field <b>EvtSerCx2PioReceiveReadBuffer</b>
+### -field EvtSerCx2PioReceiveReadBuffer
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-pio-receive-read-buffer.md">EvtSerCx2PioReceiveReadBuffer</a> event callback function. This member must point to a valid function.</p>
 </dd>
 
-### -field <b>EvtSerCx2PioReceiveEnableReadyNotification</b>
+### -field EvtSerCx2PioReceiveEnableReadyNotification
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-pio-receive-enable-ready-notification.md">EvtSerCx2PioReceiveEnableReadyNotification</a> event callback function. This member must point to a valid function.</p>
 </dd>
 
-### -field <b>EvtSerCx2PioReceiveCancelReadyNotification</b>
+### -field EvtSerCx2PioReceiveCancelReadyNotification
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-pio-receive-cancel-ready-notification.md">EvtSerCx2PioReceiveCancelReadyNotification</a> event callback function. This member must point to a valid function.</p>

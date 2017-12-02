@@ -7,7 +7,7 @@ old-location: debugger\debugcommandexception.htm
 old-project: debugger
 ms.assetid: 6DC67840-B985-45D0-8E81-671C3DC1EBC2
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: DebugCommandException
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ void WINAPI DebugCommandException(
 ## -parameters
 <dl>
 
-### -param <i>Command</i> 
+### -param Command 
 
 <dd>
 <p>A command.</p>
 </dd>
 
-### -param <i>ArgSize</i> 
+### -param ArgSize 
 
 <dd>
 <p>The size of the argument.</p>
 </dd>
 
-### -param <i>Arg</i> 
+### -param Arg 
 
 <dd>
 <p>A pointer to an argument.</p>

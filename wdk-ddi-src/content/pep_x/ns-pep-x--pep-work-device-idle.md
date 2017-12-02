@@ -55,13 +55,13 @@ typedef struct _PEP_WORK_DEVICE_IDLE {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>A handle that represents the registration of the device with the Windows <a href="https://msdn.microsoft.com/9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF">power management framework</a> (PoFx). A POHANDLE value that represents the registration of the device with PoFx. The platform extension plug-in (PEP) previously received this handle from PoFx during the <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification that informed the PEP that the device's driver stack registered the device with PoFx.</p>
 </dd>
 
-### -field <b>IgnoreIdleTimeout</b>
+### -field IgnoreIdleTimeout
 
 <dd>
 <p>Whether to ignore the idle time-out. Set to TRUE to tell the operating system to ignore the idle time-out for this device. Set to FALSE to tell the operating system to call the device driver's <a href="kernel.devicepowernotrequiredcallback">DevicePowerNotRequiredCallback</a> callback routine after the device remains idle for the designated time-out interval. For more information, see <a href="..\wdm\nf-wdm-pofxsetdeviceidletimeout.md">PoFxSetDeviceIdleTimeout</a>.</p>

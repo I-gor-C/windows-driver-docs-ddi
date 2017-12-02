@@ -144,547 +144,547 @@ typedef struct D3D12DDI_DEVICE_FUNCS_CORE_0010 {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnCheckFormatSupport</b>
+### -field pfnCheckFormatSupport
 
 <dd>
 <p>A function that checks format support.</p>
 </dd>
 
-### -field <b>pfnCheckMultisampleQualityLevels</b>
+### -field pfnCheckMultisampleQualityLevels
 
 <dd>
 <p>A function that checks multi-sample quality levels. </p>
 </dd>
 
-### -field <b>pfnGetMipPacking</b>
+### -field pfnGetMipPacking
 
 <dd>
 <p>A function that gets MIP packing.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateElementLayoutSize</b>
+### -field pfnCalcPrivateElementLayoutSize
 
 <dd>
 <p>A function that calculates layout size for a private element. </p>
 </dd>
 
-### -field <b>pfnCreateElementLayout</b>
+### -field pfnCreateElementLayout
 
 <dd>
 <p>A function that creates an element layout. </p>
 </dd>
 
-### -field <b>pfnDestroyElementLayout</b>
+### -field pfnDestroyElementLayout
 
 <dd>
 <p>A function that destroys an element layout.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateBlendStateSize</b>
+### -field pfnCalcPrivateBlendStateSize
 
 <dd>
 <p>A function that calculates the size of a private blend state.</p>
 </dd>
 
-### -field <b>pfnCreateBlendState</b>
+### -field pfnCreateBlendState
 
 <dd>
 <p>A function that creates a blend state.</p>
 </dd>
 
-### -field <b>pfnDestroyBlendState</b>
+### -field pfnDestroyBlendState
 
 <dd>
 <p>A function that destroys a blend state.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateDepthStencilStateSize</b>
+### -field pfnCalcPrivateDepthStencilStateSize
 
 <dd>
 <p>A function that calculates the size of the state of a private depth stencil. </p>
 </dd>
 
-### -field <b>pfnCreateDepthStencilState</b>
+### -field pfnCreateDepthStencilState
 
 <dd>
 <p>A function that creates a depth stencil state.</p>
 </dd>
 
-### -field <b>pfnDestroyDepthStencilState</b>
+### -field pfnDestroyDepthStencilState
 
 <dd>
 <p>A function that destroys a depth stencil state.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateRasterizerStateSize</b>
+### -field pfnCalcPrivateRasterizerStateSize
 
 <dd>
 <p>A function that calculates the size of a private rasterizer state. </p>
 </dd>
 
-### -field <b>pfnCreateRasterizerState</b>
+### -field pfnCreateRasterizerState
 
 <dd>
 <p>A function that creates a rasterizer state.</p>
 </dd>
 
-### -field <b>pfnDestroyRasterizerState</b>
+### -field pfnDestroyRasterizerState
 
 <dd>
 <p>A function that destroys a rasterizer state.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateShaderSize</b>
+### -field pfnCalcPrivateShaderSize
 
 <dd>
 <p>A function that calculates the size of a private shader. </p>
 </dd>
 
-### -field <b>pfnCreateVertexShader</b>
+### -field pfnCreateVertexShader
 
 <dd>
 <p>A function that creates a vertex shader. </p>
 </dd>
 
-### -field <b>pfnCreatePixelShader</b>
+### -field pfnCreatePixelShader
 
 <dd>
 <p>A function that creates a shader.</p>
 </dd>
 
-### -field <b>pfnCreateGeometryShader</b>
+### -field pfnCreateGeometryShader
 
 <dd>
 <p>A function that creates a geometry shader.</p>
 </dd>
 
-### -field <b>pfnCreateComputeShader</b>
+### -field pfnCreateComputeShader
 
 <dd>
 <p>A function that creates a compute shader. </p>
 </dd>
 
-### -field <b>pfnCalcPrivateGeometryShaderWithStreamOutput</b>
+### -field pfnCalcPrivateGeometryShaderWithStreamOutput
 
 <dd>
 <p>A function that calculates a private geometry shader with stream output. </p>
 </dd>
 
-### -field <b>pfnCreateGeometryShaderWithStreamOutput</b>
+### -field pfnCreateGeometryShaderWithStreamOutput
 
 <dd>
 <p>A function that creates a private geometry shader with stream output. </p>
 </dd>
 
-### -field <b>pfnCalcPrivateTessellationShaderSize</b>
+### -field pfnCalcPrivateTessellationShaderSize
 
 <dd>
 <p>A function that creates private tessellation shader size. </p>
 </dd>
 
-### -field <b>pfnCreateHullShader</b>
+### -field pfnCreateHullShader
 
 <dd>
 <p>A function that creates a hull shader.</p>
 </dd>
 
-### -field <b>pfnCreateDomainShader</b>
+### -field pfnCreateDomainShader
 
 <dd>
 <p>A function that creates a domain shader.</p>
 </dd>
 
-### -field <b>pfnDestroyShader</b>
+### -field pfnDestroyShader
 
 <dd>
 <p>A function that destroys a shader.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateCommandQueueSize</b>
+### -field pfnCalcPrivateCommandQueueSize
 
 <dd>
 <p>A function that calculates the size of a private queue.</p>
 </dd>
 
-### -field <b>pfnCreateCommandQueue</b>
+### -field pfnCreateCommandQueue
 
 <dd>
 <p>A function that creates a command queue.</p>
 </dd>
 
-### -field <b>pfnDestroyCommandQueue</b>
+### -field pfnDestroyCommandQueue
 
 <dd>
 <p>A function that destroys a command queue.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateCommandAllocatorSize</b>
+### -field pfnCalcPrivateCommandAllocatorSize
 
 <dd>
 <p>A function that calculates the size of a private command allocator.</p>
 </dd>
 
-### -field <b>pfnCreateCommandAllocator</b>
+### -field pfnCreateCommandAllocator
 
 <dd>
 <p>A function that creates a command allocator.</p>
 </dd>
 
-### -field <b>pfnDestroyCommandAllocator</b>
+### -field pfnDestroyCommandAllocator
 
 <dd>
 <p>A function that destroys a command allocator. </p>
 </dd>
 
-### -field <b>pfnResetCommandAllocator</b>
+### -field pfnResetCommandAllocator
 
 <dd>
 <p>A function that resets a command allocator. </p>
 </dd>
 
-### -field <b>pfnCalcPrivatePipelineStateSize</b>
+### -field pfnCalcPrivatePipelineStateSize
 
 <dd>
 <p>A function that calculate the size of a private pipeline state.</p>
 </dd>
 
-### -field <b>pfnCreatePipelineState</b>
+### -field pfnCreatePipelineState
 
 <dd>
 <p>A function that crates a pipeline state.</p>
 </dd>
 
-### -field <b>pfnDestroyPipelineState</b>
+### -field pfnDestroyPipelineState
 
 <dd>
 <p>A function that destroys a pipeline state.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateCommandListSize</b>
+### -field pfnCalcPrivateCommandListSize
 
 <dd>
 <p>A function that calculate the size of a private command list.</p>
 </dd>
 
-### -field <b>pfnCreateCommandList</b>
+### -field pfnCreateCommandList
 
 <dd>
 <p>A function that creates a command list.</p>
 </dd>
 
-### -field <b>pfnDestroyCommandList</b>
+### -field pfnDestroyCommandList
 
 <dd>
 <p>A function that destroys a command list. </p>
 </dd>
 
-### -field <b>pfnCalcPrivateFenceSize</b>
+### -field pfnCalcPrivateFenceSize
 
 <dd>
 <p>A function that calculates a private fence size. </p>
 </dd>
 
-### -field <b>pfnCreateFence</b>
+### -field pfnCreateFence
 
 <dd>
 <p>A function that creates a fence.</p>
 </dd>
 
-### -field <b>pfnDestroyFence</b>
+### -field pfnDestroyFence
 
 <dd>
 <p>A function that destroys a fence. </p>
 </dd>
 
-### -field <b>pfnCalcPrivateDescriptorHeapSize</b>
+### -field pfnCalcPrivateDescriptorHeapSize
 
 <dd>
 <p>A function that calculates the size of a private descriptor heap.</p>
 </dd>
 
-### -field <b>pfnCreateDescriptorHeap</b>
+### -field pfnCreateDescriptorHeap
 
 <dd>
 <p>A function that creates a descriptor heap.</p>
 </dd>
 
-### -field <b>pfnDestroyDescriptorHeap</b>
+### -field pfnDestroyDescriptorHeap
 
 <dd>
 <p>A function that destroys a descriptor heap. </p>
 </dd>
 
-### -field <b>pfnGetDescriptorSizeInBytes</b>
+### -field pfnGetDescriptorSizeInBytes
 
 <dd>
 <p>A function that gets the descriptor size, in bytes.</p>
 </dd>
 
-### -field <b>pfnGetCPUDescriptorHandleForHeapStart</b>
+### -field pfnGetCPUDescriptorHandleForHeapStart
 
 <dd>
 <p>A function that gets a CPU descriptor handle. </p>
 </dd>
 
-### -field <b>pfnGetGPUDescriptorHandleForHeapStart</b>
+### -field pfnGetGPUDescriptorHandleForHeapStart
 
 <dd>
 <p>A function that gets a GPU descriptor handle.</p>
 </dd>
 
-### -field <b>pfnCreateShaderResourceView</b>
+### -field pfnCreateShaderResourceView
 
 <dd>
 <p>A function that creates a shader resource view. </p>
 </dd>
 
-### -field <b>pfnCreateConstantBufferView</b>
+### -field pfnCreateConstantBufferView
 
 <dd>
 <p>A function that creates a constant buffer view. </p>
 </dd>
 
-### -field <b>pfnCreateSampler</b>
+### -field pfnCreateSampler
 
 <dd>
 <p>A function that creates a sampler.</p>
 </dd>
 
-### -field <b>pfnCreateUnorderedAccessView</b>
+### -field pfnCreateUnorderedAccessView
 
 <dd>
 <p>A function that creates an unordered access view. </p>
 </dd>
 
-### -field <b>pfnCreateRenderTargetView</b>
+### -field pfnCreateRenderTargetView
 
 <dd>
 <p>A function that creates a render target view. </p>
 </dd>
 
-### -field <b>pfnCreateDepthStencilView</b>
+### -field pfnCreateDepthStencilView
 
 <dd>
 <p>A function that creates a depth stencil view. </p>
 </dd>
 
-### -field <b>pfnCalcPrivateRootSignatureSize</b>
+### -field pfnCalcPrivateRootSignatureSize
 
 <dd>
 <p>A function that calculates the size of a private root signature. </p>
 </dd>
 
-### -field <b>pfnCreateRootSignature</b>
+### -field pfnCreateRootSignature
 
 <dd>
 <p>A function that creates a root signature. </p>
 </dd>
 
-### -field <b>pfnDestroyRootSignature</b>
+### -field pfnDestroyRootSignature
 
 <dd>
 <p>A function that destroys a root signature. </p>
 </dd>
 
-### -field <b>pfnMapHeap</b>
+### -field pfnMapHeap
 
 <dd>
 <p>A function that maps a heap.</p>
 </dd>
 
-### -field <b>pfnUnmapHeap</b>
+### -field pfnUnmapHeap
 
 <dd>
 <p>A function that unmaps a heap.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateHeapAndResourceSizes</b>
+### -field pfnCalcPrivateHeapAndResourceSizes
 
 <dd>
 <p>A function that calculates sizes for private heap and resource. </p>
 </dd>
 
-### -field <b>pfnCreateHeapAndResource</b>
+### -field pfnCreateHeapAndResource
 
 <dd>
 <p>A function that create a heap and resource. </p>
 </dd>
 
-### -field <b>pfnDestroyHeapAndResource</b>
+### -field pfnDestroyHeapAndResource
 
 <dd>
 <p>A function that destroys a heap and resource. </p>
 </dd>
 
-### -field <b>pfnMakeResident</b>
+### -field pfnMakeResident
 
 <dd>
 <p>A function that makes a resident. </p>
 </dd>
 
-### -field <b>pfnEvict</b>
+### -field pfnEvict
 
 <dd>
 <p>A function that evicts. </p>
 </dd>
 
-### -field <b>pfnCalcPrivateOpenedHeapAndResourceSizes</b>
+### -field pfnCalcPrivateOpenedHeapAndResourceSizes
 
 <dd>
 <p>A function that calculates sizes for private opened heap and resources. </p>
 </dd>
 
-### -field <b>pfnOpenHeapAndResource</b>
+### -field pfnOpenHeapAndResource
 
 <dd>
 <p>A function that opens a heap and resource. </p>
 </dd>
 
-### -field <b>pfnCopyDescriptors</b>
+### -field pfnCopyDescriptors
 
 <dd>
 <p>A function that copies descriptors. </p>
 </dd>
 
-### -field <b>pfnCopyDescriptorsSimple</b>
+### -field pfnCopyDescriptorsSimple
 
 <dd>
 <p>A function that does a simple copy of descriptors. </p>
 </dd>
 
-### -field <b>pfnCalcPrivateQueryHeapSize</b>
+### -field pfnCalcPrivateQueryHeapSize
 
 <dd>
 <p>A function that calculates the size of a private query heap.</p>
 </dd>
 
-### -field <b>pfnCreateQueryHeap</b>
+### -field pfnCreateQueryHeap
 
 <dd>
 <p>A function that creates a query heap.</p>
 </dd>
 
-### -field <b>pfnDestroyQueryHeap</b>
+### -field pfnDestroyQueryHeap
 
 <dd>
 <p>A function that destroys a query heap. </p>
 </dd>
 
-### -field <b>pfnCalcPrivateCommandSignatureSize</b>
+### -field pfnCalcPrivateCommandSignatureSize
 
 <dd>
 <p>A function that calculates the size of a private command signature. </p>
 </dd>
 
-### -field <b>pfnCreateCommandSignature</b>
+### -field pfnCreateCommandSignature
 
 <dd>
 <p>A function that creates a command signature. </p>
 </dd>
 
-### -field <b>pfnDestroyCommandSignature</b>
+### -field pfnDestroyCommandSignature
 
 <dd>
 <p>A function that destroys a command signature. </p>
 </dd>
 
-### -field <b>pfnCheckResourceVirtualAddress</b>
+### -field pfnCheckResourceVirtualAddress
 
 <dd>
 <p>A function that checks the virtual address of a resource.</p>
 </dd>
 
-### -field <b>pfnCheckResourceAllocationInfo</b>
+### -field pfnCheckResourceAllocationInfo
 
 <dd>
 <p>A function that checks allocation information of a resource.</p>
 </dd>
 
-### -field <b>pfnCheckSubresourceInfo</b>
+### -field pfnCheckSubresourceInfo
 
 <dd>
 <p>A function that checks information of a subresource. </p>
 </dd>
 
-### -field <b>pfnCheckExistingResourceAllocationInfo</b>
+### -field pfnCheckExistingResourceAllocationInfo
 
 <dd>
 <p>A function that checks allocation information of an existing resource.</p>
 </dd>
 
-### -field <b>pfnOfferResources</b>
+### -field pfnOfferResources
 
 <dd>
 <p>A function that offers resources.</p>
 </dd>
 
-### -field <b>pfnReclaimResources</b>
+### -field pfnReclaimResources
 
 <dd>
 <p>A function that reclaims resources. </p>
 </dd>
 
-### -field <b>pfnGetImplicitPhysicalAdapterMask</b>
+### -field pfnGetImplicitPhysicalAdapterMask
 
 <dd>
 <p>A function that gets an implicit physical adapter mask.</p>
 </dd>
 
-### -field <b>pfnGetPresentPrivateDriverDataSize</b>
+### -field pfnGetPresentPrivateDriverDataSize
 
 <dd>
 <p>A function that gets the present size of private driver data. </p>
 </dd>
 
-### -field <b>pfnQueryNodeMap</b>
+### -field pfnQueryNodeMap
 
 <dd>
 <p>A function that queries a node map.</p>
 </dd>
 
-### -field <b>pfnRetrieveShaderComment</b>
+### -field pfnRetrieveShaderComment
 
 <dd>
 <p>A function that retrieves a shader comment. </p>
 </dd>
 
-### -field <b>pfnCheckResourceAllocationHandle</b>
+### -field pfnCheckResourceAllocationHandle
 
 <dd>
 <p>A function that checks a resource allocation handle. </p>
 </dd>
 
-### -field <b>pfnCalcPrivatePipelineLibrarySize</b>
+### -field pfnCalcPrivatePipelineLibrarySize
 
 <dd>
 <p>A function that calculates the size of a private pipeline library.</p>
 </dd>
 
-### -field <b>pfnCreatePipelineLibrary</b>
+### -field pfnCreatePipelineLibrary
 
 <dd>
 <p>A function that creates a pipeline library.</p>
 </dd>
 
-### -field <b>pfnDestroyPipelineLibrary</b>
+### -field pfnDestroyPipelineLibrary
 
 <dd>
 <p>A function that destroys a pipeline library.</p>
 </dd>
 
-### -field <b>pfnAddPipelineStateToLibrary</b>
+### -field pfnAddPipelineStateToLibrary
 
 <dd>
 <p>A function that adds pipeline state to a library.</p>
 </dd>
 
-### -field <b>pfnCalcSerializedLibrarySize</b>
+### -field pfnCalcSerializedLibrarySize
 
 <dd>
 <p>A function that calculates the size of a serialized library.</p>
 </dd>
 
-### -field <b>pfnSerializeLibrary</b>
+### -field pfnSerializeLibrary
 
 <dd>
 <p>A function that serializes a library. </p>

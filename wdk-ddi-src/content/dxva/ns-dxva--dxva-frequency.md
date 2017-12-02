@@ -55,13 +55,13 @@ typedef struct _DXVA_Frequency {
 ## -struct-fields
 <dl>
 
-### -field <b>Numerator</b>
+### -field Numerator
 
 <dd>
 <p>Specifies the numerator of the frequency fraction.</p>
 </dd>
 
-### -field <b>Denominator</b>
+### -field Denominator
 
 <dd>
 <p>Specifies the denominator of the frequency fraction.</p>

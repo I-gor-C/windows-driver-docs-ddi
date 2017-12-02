@@ -54,7 +54,7 @@ NTSTATUS SetStreamCurrentWritePositionForLastBuffer(
 ## -parameters
 <dl>
 
-### -param <i>ulWritePosition</i> [in]
+### -param ulWritePosition [in]
 
 <dd>
 <p>The current cursor position in the last audio data stream.</p>

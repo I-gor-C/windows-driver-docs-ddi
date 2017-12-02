@@ -57,25 +57,25 @@ HRESULT KsGetMediaType(
 ## -parameters
 <dl>
 
-### -param <i>Position</i> [in]
+### -param Position [in]
 
 <dd>
 <p>Offset into the data range item that <b>KsGetMediaType</b> fills. Note that the data type of <i>Position</i> is <b>int</b> to conform to underlying calls.</p>
 </dd>
 
-### -param <i>AmMediaType</i> [out]
+### -param AmMediaType [out]
 
 <dd>
 <p>Pointer to a variable that receives information in a AM_MEDIA_TYPE structure.</p>
 </dd>
 
-### -param <i>FilterHandle</i> [in]
+### -param FilterHandle [in]
 
 <dd>
 <p>Handle to the filter that contains the pin factory to query.</p>
 </dd>
 
-### -param <i>PinFactoryId</i> [in]
+### -param PinFactoryId [in]
 
 <dd>
 <p>Identifier of the pin factory against which the information for a media type is being returned.</p>

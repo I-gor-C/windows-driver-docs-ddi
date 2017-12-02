@@ -56,13 +56,13 @@ NTSTATUS IoCreateSymbolicLink(
 ## -parameters
 <dl>
 
-### -param <i>SymbolicLinkName</i> [in]
+### -param SymbolicLinkName [in]
 
 <dd>
 <p>Pointer to a buffered Unicode string that is the user-visible name.</p>
 </dd>
 
-### -param <i>DeviceName</i> [in]
+### -param DeviceName [in]
 
 <dd>
 <p>Pointer to a buffered Unicode string that is the name of the driver-created device object. </p>

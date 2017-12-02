@@ -60,7 +60,7 @@ typedef EVT_IDD_CX_ADAPTER_COMMIT_MODES PFN_IDD_CX_ADAPTER_COMMIT_MODES;
 ## -parameters
 <dl>
 
-### -param <i>AdapterObject</i> [in]
+### -param AdapterObject [in]
 
 <dd>
 <p>
@@ -68,7 +68,7 @@ typedef EVT_IDD_CX_ADAPTER_COMMIT_MODES PFN_IDD_CX_ADAPTER_COMMIT_MODES;
                 A handle provided by the driver used by the OS to reference the adapter in a call to the driver.</p>
 </dd>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>

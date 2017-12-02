@@ -56,19 +56,19 @@ HRESULT KsCompleteMediaType(
 ## -parameters
 <dl>
 
-### -param <i>FilterHandle</i> [in]
+### -param FilterHandle [in]
 
 <dd>
 <p>Handle to the underlying KS filter.</p>
 </dd>
 
-### -param <i>PinFactoryId</i> [in]
+### -param PinFactoryId [in]
 
 <dd>
 <p>Identifier of the pin factory against which the media type is being completed.</p>
 </dd>
 
-### -param <i>AmMediaType</i> [in, out]
+### -param AmMediaType [in, out]
 
 <dd>
 <p>Pointer to a AM_MEDIA_TYPE structure that describes the format of the media samples. <b>KsCompleteMediaType</b> receives partially specified media samples, completes the specification, and returns.</p>

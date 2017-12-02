@@ -58,31 +58,31 @@ NTSTATUS PcNewResourceSublist(
 ## -parameters
 <dl>
 
-### -param <i>OutResourceList</i> [out]
+### -param OutResourceList [out]
 
 <dd>
 <p>Output pointer to the resource-list object that this function creates. This parameter points to the caller-allocated pointer variable into which the function outputs the pointer to the <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a> object. Specify a valid, non-<b>NULL</b> pointer value for this parameter.</p>
 </dd>
 
-### -param <i>OuterUnknown</i> [in, optional]
+### -param OuterUnknown [in, optional]
 
 <dd>
 <p>Pointer to the <a href="com.iunknown">IUnknown</a> interface of an object that needs to aggregate the object. Unless aggregation is required, set this parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>Specifies the type of pool from which the object is to be allocated. This is a <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a> enumeration value.</p>
 </dd>
 
-### -param <i>ParentList</i> [in]
+### -param ParentList [in]
 
 <dd>
 <p>Pointer to the resource list from which the child list will be created. The resource list has an <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a> interface.</p>
 </dd>
 
-### -param <i>MaximumEntries</i> [in]
+### -param MaximumEntries [in]
 
 <dd>
 <p>Specifies the maximum number of entries that will be added to the resource list.</p>
@@ -97,7 +97,7 @@ NTSTATUS PcNewResourceSublist(
 
 <p>An adapter driver typically uses the <b>PcNewResourceSublist</b> function in combination with the <a href="audio.iresourcelist_addentryfromparent">IResourceList::AddEntryFromParent</a> method to take the original list of resources that it received from the system and divide them up into sublists that it assigns to its various subdevices.</p>
 
-<p>The <i>OutResourceList</i>, <i>OuterUnknown</i>, and <i>ParentList</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>OutResourceList</i>, <i>OuterUnknown</i>, and <i>ParentList</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

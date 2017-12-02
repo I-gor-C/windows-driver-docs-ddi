@@ -56,15 +56,15 @@ typedef struct _D3DKMT_OUTPUTDUPL_GET_FRAMEINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd></dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd></dd>
 
-### -field <b>FrameInfo</b>
+### -field FrameInfo
 
 <dd></dd>
 </dl>

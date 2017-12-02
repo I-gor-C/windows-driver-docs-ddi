@@ -56,13 +56,13 @@ NTSTATUS MmAdvanceMdl(
 ## -parameters
 <dl>
 
-### -param <i>Mdl</i> [in, out]
+### -param Mdl [in, out]
 
 <dd>
 <p>Specifies the MDL to advance.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>Specifies the number of bytes to advance the beginning of the MDL.</p>

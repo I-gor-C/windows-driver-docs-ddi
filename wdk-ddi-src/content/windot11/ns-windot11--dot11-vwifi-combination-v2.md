@@ -7,7 +7,7 @@ old-location: netvista\dot11_vwifi_combination_v2.htm
 old-project: netvista
 ms.assetid: b30b868d-3012-4bdc-80f4-ffae2ebaa4d6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_VWIFI_COMBINATION_V2,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct _DOT11_VWIFI_COMBINATION_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_VWIFI_COMBINATION_V2 structure. This member is formatted
@@ -69,19 +69,19 @@ typedef struct _DOT11_VWIFI_COMBINATION_V2 {
 <p></p>
 <dl>
 
-### -field <a id="Type"></a><a id="type"></a><a id="TYPE"></a><b>Type</b>
+### -field Type
 
 <dd>
 <p>This member must be set to NDIS_OBJECT_TYPE_DEFAULT.</p>
 </dd>
 
-### -field <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a><b>Revision</b>
+### -field Revision
 
 <dd>
 <p>This member must be set to DOT11_VWIFI_COMBINATION_REVISION_2.</p>
 </dd>
 
-### -field <a id="Size"></a><a id="size"></a><a id="SIZE"></a><b>Size</b>
+### -field Size
 
 <dd>
 <p>This member must be set to 
@@ -92,28 +92,28 @@ typedef struct _DOT11_VWIFI_COMBINATION_V2 {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>uNumInfrastructure</b>
+### -field uNumInfrastructure
 
 <dd>
 <p>The number of 802.11 infrastructure stations supported. For more information, see the following
      Remarks section.</p>
 </dd>
 
-### -field <b>uNumAdhoc</b>
+### -field uNumAdhoc
 
 <dd>
 <p>The number of Adhoc Stations supported. For more information, see the following Remarks
      section.</p>
 </dd>
 
-### -field <b>uNumSoftAP</b>
+### -field uNumSoftAP
 
 <dd>
 <p>The number of Soft AP Stations supported. For more information, see the following Remarks
      section.</p>
 </dd>
 
-### -field <b>uNumVirtualStation</b>
+### -field uNumVirtualStation
 
 <dd>
 <p>The number of Virtual Stations supported. For more information, see the following Remarks
@@ -172,4 +172,4 @@ typedef struct _DOT11_VWIFI_COMBINATION_V2 {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_VWIFI_COMBINATION_V2 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_VWIFI_COMBINATION_V2 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

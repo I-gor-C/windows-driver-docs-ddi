@@ -7,7 +7,7 @@ old-location: debugger\getrunningprocesssystemidbyexecutablenamewide.htm
 old-project: debugger
 ms.assetid: ab21286e-96cd-402c-bb8d-d33b4ee7938e
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugClient4, GetRunningProcessSystemIdByExecutableNameWide, IDebugClient4::GetRunningProcessSystemIdByExecutableNameWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ HRESULT GetRunningProcessSystemIdByExecutableNameWide(
 ## -parameters
 <dl>
 
-### -param <i>Server</i> [in]
+### -param Server [in]
 
 <dd>
 <p>Specifies the process server to search for the executable name.  If <i>Server</i> is zero, the engine will search for the executable name among the processes running on the local computer.</p>
 </dd>
 
-### -param <i>ExeName</i> [in]
+### -param ExeName [in]
 
 <dd>
 <p>Specifies the executable file name for which to search.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies a bit-set that controls how the executable name is matched.  The following flags may be present:</p>
@@ -99,7 +99,7 @@ HRESULT GetRunningProcessSystemIdByExecutableNameWide(
 <p> </p>
 </dd>
 
-### -param <i>Id</i> [out]
+### -param Id [out]
 
 <dd>
 <p>Receives the process ID of the first process to match <i>ExeName</i>.</p>
@@ -107,7 +107,7 @@ HRESULT GetRunningProcessSystemIdByExecutableNameWide(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>S_FALSE</b></dt>
@@ -175,4 +175,4 @@ HRESULT GetRunningProcessSystemIdByExecutableNameWide(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient3::GetRunningProcessSystemIdByExecutableNameWide method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient3::GetRunningProcessSystemIdByExecutableNameWide method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

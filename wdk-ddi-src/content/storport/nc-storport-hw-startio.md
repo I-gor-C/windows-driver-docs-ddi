@@ -59,13 +59,13 @@ BOOLEAN HwStorStartIo(
 ## -parameters
 <dl>
 
-### -param <i>DeviceExtension</i> 
+### -param DeviceExtension 
 
 <dd>
 <p>A pointer to the miniport driver's per HBA storage area.</p>
 </dd>
 
-### -param <i>Srb</i> 
+### -param Srb 
 
 <dd>
 <p>A pointer to the SCSI request block to be started. </p>
@@ -86,7 +86,7 @@ BOOLEAN HwStorStartIo(
 
 <p>If a non-virtual miniport supports the concurrent channels optimization (STOR_PERF_CONCURRENT_CHANNELS set by <a href="..\storport\nf-storport-storportinitializeperfopts.md">StorPortInitializePerfOpts</a>), multiple calls to <b>HwStorStartIo</b> concurrently are possible. In this case, the miniport will need to ensure that any shared resources are protected by a lock. With this performance optimization, Storport will not acquire the StartIo lock prior to calling <b>HwStorStartIo</b> and the miniport must provide its own lock if required.</p>
 
-<p>For <a href="NULL">storage virtual miniport drivers</a>, Storport calls <b>HwStorStartIo</b> at any IRQL &lt;= DISPATCH_LEVEL and does not use an internal spin lock. The <b>HwStorStartIo</b> routine may acquire its own spin lock by calling <a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>. Also, calls to <a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a>  are allowed in the <b>HwStorStartIo</b> routine of a storage virtual miniport driver.</p>
+<p>For <a href="storage.storage_virtual_miniport_drivers">storage virtual miniport drivers</a>, Storport calls <b>HwStorStartIo</b> at any IRQL &lt;= DISPATCH_LEVEL and does not use an internal spin lock. The <b>HwStorStartIo</b> routine may acquire its own spin lock by calling <a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>. Also, calls to <a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a>  are allowed in the <b>HwStorStartIo</b> routine of a storage virtual miniport driver.</p>
 
 <p>The SRB is expected to be completed when SCSI status is received. When the Storport driver completes the SRB by calling <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a> with a <i>NotificationType</i> of <a href="storage.storportnotification__notificationtype___requestcomplete_">RequestComplete</a>, an SRB is expected to return one of the following values in the <b>SrbStatus</b> field of the Srb:</p>
 
@@ -108,11 +108,11 @@ BOOLEAN HwStorStartIo(
 
 <p>The name <b>HwStorStartIo</b> is a placeholder to describe the miniport routine set in the <b>HwStartIo</b> member of <a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a> structure. This structure is passed in the <i>HwInitializationData</i> parameter of <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The actual prototype of this routine is defined in Storport.h as follows:</p>
 
-<p>Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a> or <a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>. If the function identifier in the <b>Function</b> field of <i>Srb</i> is <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b>, the SRB is a <b>STORAGE_REQUEST_BLOCK</b> request structure.</p>
+<p>Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a> or <a href="..\storport\ns-storport--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>. If the function identifier in the <b>Function</b> field of <i>Srb</i> is <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b>, the SRB is a <b>STORAGE_REQUEST_BLOCK</b> request structure.</p>
 
-<p>To define a <b>HwStorStartIo</b> callback routine, you must first provide a function declaration that <a href="NULL">Static Driver Verifier</a> (SDV) and other verification tools require, as shown in the following code example:</p>
+<p>To define a <b>HwStorStartIo</b> callback routine, you must first provide a function declaration that <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV) and other verification tools require, as shown in the following code example:</p>
 
-<p>To define an <b>HwStorStartIo</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
+<p>To define an <b>HwStorStartIo</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
 
 <p> For example, to define a <b>HwStorStartIo</b> callback routine that is named <i>MyHwStartIo</i>, use the <b>HW_STARTIO</b> type as shown in this code example:</p>
 
@@ -161,7 +161,7 @@ BOOLEAN HwStorStartIo(
 <a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
 </dt>
 <dt>
 <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>

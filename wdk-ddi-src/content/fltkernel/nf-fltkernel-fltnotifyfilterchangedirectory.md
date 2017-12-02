@@ -7,7 +7,7 @@ old-location: ifsk\fltnotifyfilterchangedirectory.htm
 old-project: ifsk
 ms.assetid: bbeabd33-951e-4fd5-9845-cabed5f95fcd
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltNotifyFilterChangeDirectory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,43 +64,43 @@ VOID FltNotifyFilterChangeDirectory(
 ## -parameters
 <dl>
 
-### -param <i>NotifySync</i> [in, out]
+### -param NotifySync [in, out]
 
 <dd>
 <p>Pointer to an opaque synchronization object for the change directory notify list that the <i>NotifyList</i> parameter points to. </p>
 </dd>
 
-### -param <i>NotifyList</i> [in, out]
+### -param NotifyList [in, out]
 
 <dd>
 <p>Pointer to the head of the change directory notify list for the current volume. Each element in the list is an opaque notify structure. </p>
 </dd>
 
-### -param <i>FsContext</i> [in]
+### -param FsContext [in]
 
 <dd>
 <p>Pointer to a unique value assigned by the caller to identify the notify structure to be created. If a callback routine is supplied in the <i>TraverseCallback</i> parameter, <i>FsContext</i> is passed as the <i>NotifyContext</i> parameter to that routine. </p>
 </dd>
 
-### -param <i>FullDirectoryName</i> [in]
+### -param FullDirectoryName [in]
 
 <dd>
 <p>Pointer to an ANSI or Unicode string that contains the full name for the directory associated with this notify structure. </p>
 </dd>
 
-### -param <i>WatchTree</i> [in]
+### -param WatchTree [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if all subdirectories of the directory that is specified by the <i>FullDirectoryName</i> parameter should also be watched. Set to <b>FALSE</b> if only the directory itself is to be watched. </p>
 </dd>
 
-### -param <i>IgnoreBuffer</i> [in]
+### -param IgnoreBuffer [in]
 
 <dd>
 <p>Set to <b>TRUE</b> to ignore any user buffers and force the directory to be reenumerated. This action speeds the operation. </p>
 </dd>
 
-### -param <i>CompletionFilter</i> [in]
+### -param CompletionFilter [in]
 
 <dd>
 <p>Bitmask of flags that specify the types of changes to files or directories that should cause the callback data structures in the notify list to be completed. The possible flag values are described in the following table.</p>
@@ -217,13 +217,13 @@ VOID FltNotifyFilterChangeDirectory(
 <p> </p>
 </dd>
 
-### -param <i>NotifyCallbackData</i> [in]
+### -param NotifyCallbackData [in]
 
 <dd>
 <p>Pointer to the callback data structure for the operation to be added to the notify list. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>TraverseCallback</i> [in, optional]
+### -param TraverseCallback [in, optional]
 
 <dd>
 <p>Optional pointer to a callback routine to be invoked when a change occurs in a subdirectory that is being watched in a directory tree. This pointer lets the file system check whether the watcher has traverse access to that directory. Such a caller-supplied routine is declared as follows:</p>
@@ -245,13 +245,13 @@ VOID FltNotifyFilterChangeDirectory(
 <p>For more information about the <i>TargetContext</i> parameter, see the <i>TargetContext</i> parameter of the <a href="ifsk.fsrtlnotifyfullreportchange">FsRtlNotifyFullReportChange</a> routine. </p>
 </dd>
 
-### -param <i>SubjectContext</i> [in, optional]
+### -param SubjectContext [in, optional]
 
 <dd>
 <p>Pointer to a context structure to be passed to <i>TraverseCallback</i>. <b>FltNotifyFilterChangeDirectory</b> releases the context and frees the structure after using it. If a <i>TraverseCallback</i> routine is supplied, <i>SubjectContext</i> is passed as the <i>SubjectContext</i> parameter to that routine.</p>
 </dd>
 
-### -param <i>FilterCallback</i> [in, optional]
+### -param FilterCallback [in, optional]
 
 <dd>
 <p>Optional pointer to a callback routine to be invoked when a change occurs to the directory. If this callback routine returns <b>TRUE</b>, <a href="ifsk.fsrtlnotifyfilterreportchange">FsRtlNotifyFilterReportChange</a> completes the pending IRP_MN_NOTIFY_CHANGE_DIRECTORY operations in the notify list; otherwise, it does not. Such a caller-supplied routine is declared as follows: </p>
@@ -354,4 +354,4 @@ VOID FltNotifyFilterChangeDirectory(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltNotifyFilterChangeDirectory routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltNotifyFilterChangeDirectory routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

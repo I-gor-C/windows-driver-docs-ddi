@@ -57,25 +57,25 @@ HBA_STATUS HBA_API HBA_GetDiscoveredPortAttributes(
 ## -parameters
 <dl>
 
-### -param <i>HbaHandle</i> [in]
+### -param HbaHandle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located.  </p>
 </dd>
 
-### -param <i>PortIndex</i> [in]
+### -param PortIndex [in]
 
 <dd>
 <p>Indicates the index of the local port of type Nx_Port through which to query the discovered remote port. For a definition of Nx_Port, see the T11 committee's <i>Fibre Channel HBA API</i> specification.</p>
 </dd>
 
-### -param <i>DiscoveredPortIndex</i> [in]
+### -param DiscoveredPortIndex [in]
 
 <dd>
 <p>Indicates the index of the remote port to query. </p>
 </dd>
 
-### -param <i>HbaPortAttributes</i> [out]
+### -param HbaPortAttributes [out]
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-portattributes.md">HBA_PortAttributes</a> that reports the port attributes. </p>

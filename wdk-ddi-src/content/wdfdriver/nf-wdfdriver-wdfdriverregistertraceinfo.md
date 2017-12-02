@@ -7,7 +7,7 @@ old-location: wdf\wdfdriverregistertraceinfo.htm
 old-project: wdf
 ms.assetid: f2d332cd-d744-444c-b616-d8400ad30d43
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDriverRegisterTraceInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,15 +58,15 @@ NTSTATUS WdfDriverRegisterTraceInfo(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd></dd>
 
-### -param <i>EvtTraceCallback</i> [in]
+### -param EvtTraceCallback [in]
 
 <dd></dd>
 
-### -param <i>ControlBlock</i> [in]
+### -param ControlBlock [in]
 
 <dd></dd>
 </dl>

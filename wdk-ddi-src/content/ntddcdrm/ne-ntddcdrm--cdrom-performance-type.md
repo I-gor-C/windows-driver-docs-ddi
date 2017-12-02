@@ -55,13 +55,13 @@ typedef enum _CDROM_PERFORMANCE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="CdromReadPerformance"></a><a id="cdromreadperformance"></a><a id="CDROMREADPERFORMANCE"></a><b>CdromReadPerformance</b>
+### -field CdromReadPerformance
 
 <dd>
 <p>Requests streaming read performance data.</p>
 </dd>
 
-### -field <a id="__CdromWritePerformance"></a><a id="__cdromwriteperformance"></a><a id="__CDROMWRITEPERFORMANCE"></a><b>  CdromWritePerformance</b>
+### -field   CdromWritePerformance
 
 <dd>
 <p>Requests streaming write performance data.</p>

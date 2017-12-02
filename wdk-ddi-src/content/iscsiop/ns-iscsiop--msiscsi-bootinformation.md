@@ -56,19 +56,19 @@ typedef struct _MSiSCSI_BootInformation {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeName</b>
+### -field NodeName
 
 <dd>
 <p>The name of the initiator node that contains the boot device.</p>
 </dd>
 
-### -field <b>SharedSecretLength</b>
+### -field SharedSecretLength
 
 <dd>
 <p>The length, in bytes, of the shared secret for the initiator node.</p>
 </dd>
 
-### -field <b>SharedSecret</b>
+### -field SharedSecret
 
 <dd>
 <p>The shared secret for the initiator node.</p>

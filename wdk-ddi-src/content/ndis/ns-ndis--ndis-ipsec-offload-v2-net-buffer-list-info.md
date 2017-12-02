@@ -7,7 +7,7 @@ old-location: netvista\ndis_ipsec_offload_v2_net_buffer_list_info.htm
 old-project: netvista
 ms.assetid: f528ae2f-54fc-4edc-99bf-b1958837584b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO, NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO, *PNDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,13 +68,13 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Transmit</b>
+### -field Transmit
 
 <dd>
 <p>A structure that contains the following members:</p>
 <dl>
 
-### -field <b>OffloadHandle</b>
+### -field OffloadHandle
 
 <dd>
 <p>A handle to the outbound security association (SA) for a packet that has just one IPsec payload
@@ -83,13 +83,13 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO {
 </dl>
 </dd>
 
-### -field <b>Receive</b>
+### -field Receive
 
 <dd>
 <p>A structure that contains the following members:</p>
 <dl>
 
-### -field <b>SaDeleteReq</b>
+### -field SaDeleteReq
 
 <dd>
 <p>A ULONG value that, when set, indicates that the TCP/IP transport should issue the 
@@ -100,7 +100,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO {
        OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA request.</p>
 </dd>
 
-### -field <b>CryptoDone</b>
+### -field CryptoDone
 
 <dd>
 <p>A ULONG value that, when set, indicates that a NIC performed IPsec checking on at least one
@@ -108,7 +108,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO {
        perform IPsec checking on the packet.</p>
 </dd>
 
-### -field <b>NextCryptoDone</b>
+### -field NextCryptoDone
 
 <dd>
 <p>A ULONG value that, when set, indicates that a NIC performed IPsec checking on both the tunnel
@@ -118,13 +118,13 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO {
        <b>NextCryptoDone</b> is set to zero.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>CryptoStatus</b>
+### -field CryptoStatus
 
 <dd>
 <p>The result of IPsec checking that a NIC performed on a receive packet. This result can be
@@ -133,7 +133,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO {
 <p></p>
 <dl>
 
-### -field <a id="CRYPTO_SUCCESS"></a><a id="crypto_success"></a><b>CRYPTO_SUCCESS</b>
+### -field CRYPTO_SUCCESS
 
 <dd>
 <p>The packet was successfully decrypted, if necessary, and the authentication header (AH)
@@ -141,44 +141,44 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO {
          validated.</p>
 </dd>
 
-### -field <a id="CRYPTO_GENERIC_ERROR"></a><a id="crypto_generic_error"></a><b>CRYPTO_GENERIC_ERROR</b>
+### -field CRYPTO_GENERIC_ERROR
 
 <dd>
 <p>The packet failed the IPsec check for an unspecified reason.</p>
 </dd>
 
-### -field <a id="CRYPTO_TRANSPORT_AH_AUTH_FAILED"></a><a id="crypto_transport_ah_auth_failed"></a><b>CRYPTO_TRANSPORT_AH_AUTH_FAILED</b>
+### -field CRYPTO_TRANSPORT_AH_AUTH_FAILED
 
 <dd>
 <p>The AH checksum for the transport portion of the packet was invalid.</p>
 </dd>
 
-### -field <a id="CRYPTO_TRANSPORT_ESP_AUTH_FAILED"></a><a id="crypto_transport_esp_auth_failed"></a><b>CRYPTO_TRANSPORT_ESP_AUTH_FAILED</b>
+### -field CRYPTO_TRANSPORT_ESP_AUTH_FAILED
 
 <dd>
 <p>The ESP checksum for the transport portion of the packet was invalid.</p>
 </dd>
 
-### -field <a id="CRYPTO_TUNNEL_AH_AUTH_FAILED"></a><a id="crypto_tunnel_ah_auth_failed"></a><b>CRYPTO_TUNNEL_AH_AUTH_FAILED</b>
+### -field CRYPTO_TUNNEL_AH_AUTH_FAILED
 
 <dd>
 <p>The AH checksum for the tunnel portion of the packet was invalid.</p>
 </dd>
 
-### -field <a id="CRYPTO_TUNNEL_ESP_AUTH_FAILED"></a><a id="crypto_tunnel_esp_auth_failed"></a><b>CRYPTO_TUNNEL_ESP_AUTH_FAILED</b>
+### -field CRYPTO_TUNNEL_ESP_AUTH_FAILED
 
 <dd>
 <p>The ESP checksum for the tunnel portion of the packet was invalid.</p>
 </dd>
 
-### -field <a id="CRYPTO_INVALID_PACKET_SYNTAX"></a><a id="crypto_invalid_packet_syntax"></a><b>CRYPTO_INVALID_PACKET_SYNTAX</b>
+### -field CRYPTO_INVALID_PACKET_SYNTAX
 
 <dd>
 <p>The receive packet's length is invalid. For example, the total length in the IP header is not
          sufficient to include all of the fields and headers for AH/ESP.</p>
 </dd>
 
-### -field <a id="CRYPTO_INVALID_PROTOCOL"></a><a id="crypto_invalid_protocol"></a><b>CRYPTO_INVALID_PROTOCOL</b>
+### -field CRYPTO_INVALID_PROTOCOL
 
 <dd>
 <p>The IPsec protocols that were specified in the SA that the packet was received on do not match
@@ -262,4 +262,4 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

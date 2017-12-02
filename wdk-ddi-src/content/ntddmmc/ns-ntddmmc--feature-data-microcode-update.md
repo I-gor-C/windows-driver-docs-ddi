@@ -57,21 +57,21 @@ typedef struct _FEATURE_DATA_MICROCODE_UPDATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>M5</b>
+### -field M5
 
 <dd></dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd></dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd></dd>
 </dl>

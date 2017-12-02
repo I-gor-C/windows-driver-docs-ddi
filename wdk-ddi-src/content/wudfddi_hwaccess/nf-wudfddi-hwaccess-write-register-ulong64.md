@@ -7,7 +7,7 @@ old-location: wdf\write_register_ulong64.htm
 old-project: wdf
 ms.assetid: 50C407F2-657F-451F-8A6B-BEEB533D89DE
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_ULONG64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ void WRITE_REGISTER_ULONG64(
 ## -parameters
 <dl>
 
-### -param <i>pDevice</i> [in]
+### -param pDevice [in]
 
 <dd>
 <p>Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.</p>
 </dd>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>A pointer to the register, which must be a mapped range in memory space.</p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>Specifies a ULONG64 value to write to the register.</p>

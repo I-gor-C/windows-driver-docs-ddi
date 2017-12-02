@@ -55,7 +55,7 @@ LONGLONG KsGetDefaultClockTime(
 ## -parameters
 <dl>
 
-### -param <i>DefaultClock</i> [in]
+### -param DefaultClock [in]
 
 <dd>
 <p>Specifies an initialize default clock structure that is shared among any instance of the default clock for the parent. </p>

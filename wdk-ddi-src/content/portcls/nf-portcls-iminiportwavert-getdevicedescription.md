@@ -54,7 +54,7 @@ NTSTATUS GetDeviceDescription(
 ## -parameters
 <dl>
 
-### -param <i>DeviceDescription</i> [out]
+### -param DeviceDescription [out]
 
 <dd>
 <p>Pointer to a DEVICE_DESCRIPTION structure to be filled in by the miniport. The caller specifies a valid, non-NULL pointer value for this parameter.</p>

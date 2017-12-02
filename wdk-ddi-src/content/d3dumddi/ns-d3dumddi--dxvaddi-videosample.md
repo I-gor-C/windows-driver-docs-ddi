@@ -63,61 +63,61 @@ typedef struct _DXVADDI_VIDEOSAMPLE {
 ## -struct-fields
 <dl>
 
-### -field <b>Start</b>
+### -field Start
 
 <dd>
 <p>[in] A REFERENCE_TIME value that identifies the start time of the sample.</p>
 </dd>
 
-### -field <b>End</b>
+### -field End
 
 <dd>
 <p>[in] A REFERENCE_TIME value that identifies the end time of the sample.</p>
 </dd>
 
-### -field <b>SampleFormat</b>
+### -field SampleFormat
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure that describes the extended format of the video sample.</p>
 </dd>
 
-### -field <b>SampleFlags</b>
+### -field SampleFlags
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videosampleflags.md">DXVADDI_VIDEOSAMPLEFLAGS</a> structure that identifies changes in the current sample frame from the previous sample frame.</p>
 </dd>
 
-### -field <b>SrcResource</b>
+### -field SrcResource
 
 <dd>
 <p>[in] A handle to the resource that contains the source surface.</p>
 </dd>
 
-### -field <b>SrcSubResourceIndex</b>
+### -field SrcSubResourceIndex
 
 <dd>
 <p>[in] The index to the source surface within the resource. </p>
 </dd>
 
-### -field <b>SrcRect</b>
+### -field SrcRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure that describes the upper-left and lower-right points of a rectangle on the source surface. These points define the area of the source data for the bit-block transfer (bitblt) and its position on the source surface.</p>
 </dd>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd>
 <p>[in] A RECT structure that describes the upper-left and lower-right points of a rectangle on the destination surface. These points define the area in which the bit-block transfer (bitblt) should occur and its position on the destination surface.</p>
 </dd>
 
-### -field <b>Pal</b>
+### -field Pal
 
 <dd>
 <p>[in] An array of <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-ayuvsample8.md">DXVADDI_AYUVSAMPLE8</a> structures that represent a complete 16-color palette for palletized video substream pixel formats. The driver uses this palette to composite the substream sample. For nonpalletized pixel formats, the <b>Pal</b> member is <b>NULL</b> and can be ignored.</p>
 </dd>
 
-### -field <b>PlanarAlpha</b>
+### -field PlanarAlpha
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the transparency value that the driver should apply to the composited background color and video stream and substream image (the entire video plane) as it is written to the destination surface. A value of 0.0 indicates transparent. A value of 1.0 indicates opaque.</p>

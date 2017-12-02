@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="buses.ucm_connector_typec_attach_params">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a> structure.</p>
+<p>Initializes a <a href="..\ucmmanager\ns-ucmmanager--ucm-connector-typec-attach-params.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a> structure.</p>
 
 
 ## -syntax
@@ -56,16 +56,16 @@ FORCEINLINE void UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
-<p>Pointer to a caller-allocated <a href="buses.ucm_connector_typec_attach_params">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a> structure to initialize.</p>
+<p>Pointer to a caller-allocated <a href="..\ucmmanager\ns-ucmmanager--ucm-connector-typec-attach-params.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a> structure to initialize.</p>
 </dd>
 
-### -param <i>PortPartnerType</i> [in]
+### -param PortPartnerType [in]
 
 <dd>
-<p>A <a href="buses.ucm_type_c_port_state">UCM_TYPE_C_PORT_STATE</a>-typed flag that indicates the state of the partner port.</p>
+<p>A <a href="..\ucmtypes\ne-ucmtypes--ucm-typec-partner.md">UCM_TYPE_C_PORT_STATE</a>-typed flag that indicates the state of the partner port.</p>
 </dd>
 </dl>
 
@@ -124,7 +124,7 @@ FORCEINLINE void UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmconnectortypecattach">UcmConnectorTypeCAttach</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
 </dt>
 </dl>
 <p> </p>

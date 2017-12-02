@@ -75,37 +75,37 @@ typedef struct _DISPLAYID_DETAILED_TIMING_TYPE_I {
 ## -struct-fields
 <dl>
 
-### -field <b>PixelClock</b>
+### -field PixelClock
 
 <dd>
 <p>[in] The display pixel clock rate, in units of 10 KHz. Clock rate must be between 1 MHz and 10 GHz, inclusive.</p>
 </dd>
 
-### -field <b>AspectRatio</b>
+### -field AspectRatio
 
 <dd>
 <p>[in] The display aspect ratio, which must be one of the values in the <a href="..\d3dkmdt\ne-d3dkmdt--displayid-detailed-timing-type-i-aspect-ratio.md">DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO</a> enumeration.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] Reserved for system use.</p>
 </dd>
 
-### -field <b>ScanningType</b>
+### -field ScanningType
 
 <dd>
 <p>[in] The frame scanning type. Must be one of the values in the <a href="..\d3dkmdt\ne-d3dkmdt--displayid-detailed-timing-type-i-scanning-mode.md">DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE</a> enumeration.</p>
 </dd>
 
-### -field <b>StereoMode</b>
+### -field StereoMode
 
 <dd>
 <p>[in] The display stereo vision mode. Must be one of the values in the <a href="..\d3dkmdt\ne-d3dkmdt--displayid-detailed-timing-type-i-stereo-mode.md">DISPLAYID_DETAILED_TIMING_TYPE_I_STEREO_MODE</a> enumeration.</p>
 </dd>
 
-### -field <b>PreferredTiming</b>
+### -field PreferredTiming
 
 <dd>
 <p>
@@ -113,61 +113,61 @@ typedef struct _DISPLAYID_DETAILED_TIMING_TYPE_I {
       </p>
 </dd>
 
-### -field <b>HorizontalActivePixels</b>
+### -field HorizontalActivePixels
 
 <dd>
 <p>[in] The number of active pixels in the horizontal direction.</p>
 </dd>
 
-### -field <b>HorizontalBlankPixels</b>
+### -field HorizontalBlankPixels
 
 <dd>
 <p>[in] The number of blank pixels in the horizontal direction.</p>
 </dd>
 
-### -field <b>HorizontalFrontPorch</b>
+### -field HorizontalFrontPorch
 
 <dd>
 <p>[in] The horizontal front porch interval, in pixels. The front porch is the blanking interval before the sync pulse.</p>
 </dd>
 
-### -field <b>HorizontalSyncPolarity</b>
+### -field HorizontalSyncPolarity
 
 <dd>
 <p>[in] The horizontal sync polarity, which must be one of the values in the <a href="..\d3dkmdt\ne-d3dkmdt--displayid-detailed-timing-type-i-sync-polarity.md">DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY</a> enumeration.</p>
 </dd>
 
-### -field <b>HorizontalSyncWidth</b>
+### -field HorizontalSyncWidth
 
 <dd>
 <p>[in] The horizontal sync interval, in pixels.</p>
 </dd>
 
-### -field <b>VerticalActiveLines</b>
+### -field VerticalActiveLines
 
 <dd>
 <p>[in] The number of active scan lines.</p>
 </dd>
 
-### -field <b>VerticalBlankLines</b>
+### -field VerticalBlankLines
 
 <dd>
 <p>[in] The number of blank scan lines.</p>
 </dd>
 
-### -field <b>VerticalFrontPorch</b>
+### -field VerticalFrontPorch
 
 <dd>
 <p>[in] The vertical front porch interval, in number of lines. The front porch is the blanking interval before the sync pulse.</p>
 </dd>
 
-### -field <b>VerticalSyncPolarity</b>
+### -field VerticalSyncPolarity
 
 <dd>
 <p>[in] The vertical sync polarity. Must be one of the values in the <a href="..\d3dkmdt\ne-d3dkmdt--displayid-detailed-timing-type-i-sync-polarity.md">DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY</a> enumeration.</p>
 </dd>
 
-### -field <b>VerticalSyncWidth</b>
+### -field VerticalSyncWidth
 
 <dd>
 <p>[in] The vertical sync interval, in number of lines.</p>

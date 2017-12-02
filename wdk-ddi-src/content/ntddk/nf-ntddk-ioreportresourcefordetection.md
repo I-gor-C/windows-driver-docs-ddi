@@ -60,43 +60,43 @@ NTSTATUS IoReportResourceForDetection(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>Pointer to the driver object that was input to the driver's <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine.</p>
 </dd>
 
-### -param <i>DriverList</i> [in, optional]
+### -param DriverList [in, optional]
 
 <dd>
 <p>Optionally points to a caller-supplied buffer that contains the driver's resource list, if the driver claims the same resources for all its devices. If the caller specifies a <i>DeviceList</i>, this parameter is ignored.</p>
 </dd>
 
-### -param <i>DriverListSize</i> [in, optional]
+### -param DriverListSize [in, optional]
 
 <dd>
 <p>Specifies the size in bytes of an optional <i>DriverList</i>. If <i>DriverList</i> is <b>NULL</b>, this parameter should be zero.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in, optional]
+### -param DeviceObject [in, optional]
 
 <dd>
 <p>Optionally points to the device object representing device for which the driver is attempting to claim resources. </p>
 </dd>
 
-### -param <i>DeviceList</i> [in, optional]
+### -param DeviceList [in, optional]
 
 <dd>
 <p>Optionally points to a caller-supplied buffer containing the device's resource list. If the driver claims the same resources for all its devices, the caller can specify a <i>DriverList</i> instead. </p>
 </dd>
 
-### -param <i>DeviceListSize</i> [in, optional]
+### -param DeviceListSize [in, optional]
 
 <dd>
 <p>Specifies the size in bytes of an optional <i>DeviceList</i>. If <i>DeviceList</i> is <b>NULL</b>, this parameter should be zero. </p>
 </dd>
 
-### -param <i>ConflictDetected</i> [out]
+### -param ConflictDetected [out]
 
 <dd>
 <p>Pointer to a caller-supplied Boolean value that is set to <b>TRUE</b> on return if the resources are not available. </p>

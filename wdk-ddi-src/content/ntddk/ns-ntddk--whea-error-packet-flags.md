@@ -63,13 +63,13 @@ typedef union _WHEA_ERROR_PACKET_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>PreviousError</b>
+### -field PreviousError
 
 <dd>
 <p>A single bit that indicates whether the hardware error packet contains information about a fatal hardware error. This error caused the operating system to generate a bug check and restart.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for system use.</p>
@@ -79,30 +79,30 @@ typedef union _WHEA_ERROR_PACKET_FLAGS {
 </p>
 </dd>
 
-### -field <b>HypervisorError</b>
+### -field HypervisorError
 
 <dd>
 <p>A single bit that indicates that a hypervisor error has occurred.</p>
 </dd>
 
-### -field <b>Simulated</b>
+### -field Simulated
 
 <dd>
 <p>A single bit that indicates that the error condition was simulated.</p>
 </dd>
 
-### -field <b>PlatformPfaControl</b>
+### -field PlatformPfaControl
 
 <dd>
 <p>A single bit that indicates whether WHEA or a PSHED plug-in is in control of predictive failure analysis (PFA). If this bit is set, the PSHED plug-in is in control of PFA and must set the <b>PlatformDirectedOffline </b>to bring an <a href="wdkgloss.e#wdkgloss.ecc#wdkgloss.ecc"><i>ECC</i></a> memory page into an offline state.</p>
-<p>For more information about PFA support for WHEA, see <a href="NULL">Predictive Failure Analysis (PFA)</a>.</p>
+<p>For more information about PFA support for WHEA, see <a href="https://msdn.microsoft.com/d2ded330-edcc-4bdd-9b52-73c1961d8ef2">Predictive Failure Analysis (PFA)</a>.</p>
 <p>
 <div class="alert"><b>Note</b>  This member is supported in Windows 7 and later versions of Windows.</div>
 <div> </div>
 </p>
 </dd>
 
-### -field <b>PlatformDirectedOffline</b>
+### -field PlatformDirectedOffline
 
 <dd>
 <p>A single bit that indicates whether the PSHED plug-in that performs PFA on a system component has determined if the component should be brought into an offline state. This bit is only valid if the <b>PlatformPfaControl</b> member is set.</p>
@@ -112,13 +112,13 @@ typedef union _WHEA_ERROR_PACKET_FLAGS {
 </p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for system use. </p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the WHEA_ERROR_PACKET_FLAGS union.</p>
@@ -154,7 +154,7 @@ typedef union _WHEA_ERROR_PACKET_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="NULL">Predictive Failure Analysis (PFA)</a>
+<a href="https://msdn.microsoft.com/d2ded330-edcc-4bdd-9b52-73c1961d8ef2">Predictive Failure Analysis (PFA)</a>
 </dt>
 <dt>
 <a href="whea.whea_error_packet">WHEA_ERROR_PACKET</a>

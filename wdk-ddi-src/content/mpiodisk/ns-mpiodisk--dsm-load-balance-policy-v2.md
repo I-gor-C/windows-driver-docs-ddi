@@ -58,31 +58,31 @@ typedef struct _DSM_Load_Balance_Policy_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of WMI class supported. Set to 2.</p>
 </dd>
 
-### -field <b>LoadBalancePolicy</b>
+### -field LoadBalancePolicy
 
 <dd>
 <p>An unsigned 32-bitfield that represents the load balance policy type that is currently being applied to the LUN if the LUN is being queried, or the new policy to apply to the LUN if the LUN is being set.</p>
 </dd>
 
-### -field <b>DSMPathCount</b>
+### -field DSMPathCount
 
 <dd>
 <p>An unsigned 32-bitfield that represents the number of paths that expose the LUN's instances.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Should be zero.</p>
 </dd>
 
-### -field <b>DSM_Paths</b>
+### -field DSM_Paths
 
 <dd>
 <p>An array of MPIO_DSM_Path_V2 structures that represent path attributes for each of the LUN's instances.</p>

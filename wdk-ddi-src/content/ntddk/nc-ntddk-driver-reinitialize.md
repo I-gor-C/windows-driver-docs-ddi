@@ -59,19 +59,19 @@ VOID Reinitialize(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a> structure. This is the driver's driver object.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Caller-supplied pointer to context information, specified in a previous call to <a href="..\ntddk\nf-ntddk-ioregisterdriverreinitialization.md">IoRegisterDriverReinitialization</a> or <a href="..\ntddk\nf-ntddk-ioregisterbootdriverreinitialization.md">IoRegisterBootDriverReinitialization</a>.</p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>Caller-supplied value representing the number of times the <i>Reinitialize</i> routine has been called, including the current call.</p>
@@ -86,7 +86,7 @@ VOID Reinitialize(
 
 <p>For more information about implementing a <i>Reinitialize</i> routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566403">Writing a Reinitialize Routine</a>.</p>
 
-<p>To define a <i>Reinitialize</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define a <i>Reinitialize</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define a <i>Reinitialize</i> callback routine that is named <code>MyReinitialize</code>, use the DRIVER_REINITIALIZE type as shown in this code example:</p>
 

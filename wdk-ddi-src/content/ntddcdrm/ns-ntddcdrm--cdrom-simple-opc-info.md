@@ -56,19 +56,19 @@ typedef struct _CDROM_SIMPLE_OPC_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>RequestType</b>
+### -field RequestType
 
 <dd>
 <p>The request type defined in the <a href="..\ntddcdrm\ne-ntddcdrm--cdrom-opc-info-type.md">CDROM_OPC_INFO_TYPE</a> enumeration.</p>
 </dd>
 
-### -field <b>Exclude0</b>
+### -field Exclude0
 
 <dd>
 <p>Exclude layer 0 from OPC.</p>
 </dd>
 
-### -field <b>Exclude1</b>
+### -field Exclude1
 
 <dd>
 <p>Exclude layer 1 from OPC.</p>

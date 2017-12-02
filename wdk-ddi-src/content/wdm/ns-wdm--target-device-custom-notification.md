@@ -60,37 +60,37 @@ typedef struct _TARGET_DEVICE_CUSTOM_NOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the data structure, currently 1. </p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size of the structure, in bytes, including the first three standard members plus the event-specific data. </p>
 </dd>
 
-### -field <b>Event</b>
+### -field Event
 
 <dd>
 <p>Specifies a GUID identifying the event. GUIDs for custom event notification are defined by the components that use this mechanism. </p>
 </dd>
 
-### -field <b>FileObject</b>
+### -field FileObject
 
 <dd>
 <p>Pointer to a file object for the device.</p>
 </dd>
 
-### -field <b>NameBufferOffset</b>
+### -field NameBufferOffset
 
 <dd>
 <p>Specifies the offset, in bytes, from beginning of <b>CustomDataBuffer</b> where text begins. A value of -1 indicates that there is no text.</p>
 </dd>
 
-### -field <b>CustomDataBuffer</b>
+### -field CustomDataBuffer
 
 <dd>
 <p>A variable-length buffer, optionally containing binary data at the start of the buffer, followed by an optional text buffer (word-aligned). </p>

@@ -58,20 +58,20 @@ typedef struct _DXVA_COPPCommand {
 ## -struct-fields
 <dl>
 
-### -field <b>macKDI</b>
+### -field macKDI
 
 <dd>
 <p>Specifies a message authentication code (MAC) GUID for the command at <b>CommandData</b>. The display driver can use the MAC to verify that the transmission of the command was secure (that is, it was not tampered with in transit to the driver). </p>
 </dd>
 
-### -field <b>guidCommandID</b>
+### -field guidCommandID
 
 <dd>
 <p>Specifies the GUID that identifies the command. The following GUIDs are supported:</p>
 <p></p>
 <dl>
 
-### -field <a id="DXVA_COPPSetProtectionLevel"></a><a id="dxva_coppsetprotectionlevel"></a><a id="DXVA_COPPSETPROTECTIONLEVEL"></a>DXVA_COPPSetProtectionLevel
+### -field DXVA_COPPSetProtectionLevel
 
 <dd>
 <p>Sets the protection type and level on the physical connector associated with the COPP device.</p>
@@ -89,7 +89,7 @@ typedef struct _DXVA_COPPCommand {
 </table></span></div>
 </dd>
 
-### -field <a id="DXVA_COPPSetSignaling"></a><a id="dxva_coppsetsignaling"></a><a id="DXVA_COPPSETSIGNALING"></a>DXVA_COPPSetSignaling
+### -field DXVA_COPPSetSignaling
 
 <dd>
 <p>An instruction about how to protect the signal that goes through the physical connector associated with the DirectX VA COPP device.</p>
@@ -109,19 +109,19 @@ typedef struct _DXVA_COPPCommand {
 </dl>
 </dd>
 
-### -field <b>dwSequence</b>
+### -field dwSequence
 
 <dd>
 <p>Specifies a sequence number. For the <a href="display.coppcommand">COPPCommand</a> function to process the command, the value in <b>dwSequence</b> must match the 32-bit random starting status sequence number that was passed in the <a href="..\dxva\ns-dxva--dxva-coppsignature.md">DXVA_COPPSignature</a> structure to the <a href="display.coppsequencestart">COPPSequenceStart</a> function.</p>
 </dd>
 
-### -field <b>cbSizeData</b>
+### -field cbSizeData
 
 <dd>
 <p>Specifies the size, in bytes, of the command data at <b>CommandData</b>.</p>
 </dd>
 
-### -field <b>CommandData</b>
+### -field CommandData
 
 <dd>
 <p>Specifies an array that comprises the command data. </p>

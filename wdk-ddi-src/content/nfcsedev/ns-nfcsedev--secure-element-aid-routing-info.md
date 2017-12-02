@@ -56,7 +56,7 @@ typedef struct _SECURE_ELEMENT_AID_ROUTING_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>guidSecureElementId</b>
+### -field guidSecureElementId
 
 <dd>
 <p>Secure element unique identifier returned by enumeration DDI.
@@ -64,13 +64,13 @@ typedef struct _SECURE_ELEMENT_AID_ROUTING_INFO {
 </p>
 </dd>
 
-### -field <b>cbAid</b>
+### -field cbAid
 
 <dd>
 <p>Length of applet ID buffer.</p>
 </dd>
 
-### -field <b>pbAid[16]</b>
+### -field pbAid[16]
 
 <dd>
 <p>Buffer holding ISO 7816 AID.</p>

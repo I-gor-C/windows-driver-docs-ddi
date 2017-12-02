@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_pnp_capabilities_init.htm
 old-project: wdf
 ms.assetid: 5ae60715-ba51-4814-ae34-34967cdbab78
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_DEVICE_PNP_CAPABILITIES_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ VOID WDF_DEVICE_PNP_CAPABILITIES_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Caps</i> [out]
+### -param Caps [out]
 
 <dd>
 <p>A pointer to a driver-supplied <a href="..\wdfdevice\ns-wdfdevice--wdf-device-pnp-capabilities.md">WDF_DEVICE_PNP_CAPABILITIES</a> structure.</p>

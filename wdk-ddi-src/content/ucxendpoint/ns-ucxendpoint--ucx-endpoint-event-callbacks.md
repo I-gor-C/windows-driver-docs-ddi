@@ -66,76 +66,76 @@ typedef struct _UCX_ENDPOINT_EVENT_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size in bytes of the structure.</p>
 </dd>
 
-### -field <b>EvtEndpointPurge</b>
+### -field EvtEndpointPurge
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_endpoint_purge">EVT_UCX_ENDPOINT_PURGE</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-purge.md">EVT_UCX_ENDPOINT_PURGE</a> callback function.</p>
 </dd>
 
-### -field <b>EvtEndpointStart</b>
+### -field EvtEndpointStart
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_endpoint_start">EVT_UCX_ENDPOINT_START</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-start.md">EVT_UCX_ENDPOINT_START</a> callback function.</p>
 </dd>
 
-### -field <b>EvtEndpointAbort</b>
+### -field EvtEndpointAbort
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_endpoint_abort">EVT_UCX_ENDPOINT_ABORT</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-abort.md">EVT_UCX_ENDPOINT_ABORT</a> callback function.</p>
 </dd>
 
-### -field <b>EvtEndpointReset</b>
+### -field EvtEndpointReset
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_endpoint_reset">EVT_UCX_ENDPOINT_RESET</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-reset.md">EVT_UCX_ENDPOINT_RESET</a> callback function.</p>
 </dd>
 
-### -field <b>EvtEndpointOkToCancelTransfers</b>
+### -field EvtEndpointOkToCancelTransfers
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_endpoint_ok_to_cancel_transfers">EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-ok-to-cancel-transfers.md">EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS</a> callback function.</p>
 </dd>
 
-### -field <b>EvtEndpointStaticStreamsAdd</b>
+### -field EvtEndpointStaticStreamsAdd
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_endpoint_static_streams_add">EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-static-streams-add.md">EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD</a> callback function.</p>
 </dd>
 
-### -field <b>EvtEndpointStaticStreamsEnable</b>
+### -field EvtEndpointStaticStreamsEnable
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_endpoint_static_streams_enable">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-static-streams-enable.md">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a> callback function.</p>
 </dd>
 
-### -field <b>EvtEndpointStaticStreamsDisable</b>
+### -field EvtEndpointStaticStreamsDisable
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_endpoint_static_streams_disable">EVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-static-streams-disable.md">EVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE</a> callback function.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Do not use.</p>
 </dd>
 
-### -field <b>EvtEndpointGetIsochTransferPathDelays</b>
+### -field EvtEndpointGetIsochTransferPathDelays
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_endpoint_get_isoch_transfer_path_delays_">EVT_UCX_ENDPOINT_GET_ISOCH_TRANSFER_PATH_DELAYS</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-get-isoch-transfer-path-delays.md">EVT_UCX_ENDPOINT_GET_ISOCH_TRANSFER_PATH_DELAYS</a> callback function.</p>
 </dd>
 
-### -field <b>EvtEndpointSetCharacteristic</b>
+### -field EvtEndpointSetCharacteristic
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_endpoint_set_characteristic">EVT_UCX_ENDPOINT_SET_CHARACTERISTIC</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-set-characteristic.md">EVT_UCX_ENDPOINT_SET_CHARACTERISTIC</a> callback function.</p>
 </dd>
 </dl>
 
@@ -159,10 +159,10 @@ typedef struct _UCX_ENDPOINT_EVENT_CALLBACKS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._ucx_endpoint_event_callbacks_init">UCX_ENDPOINT_EVENT_CALLBACKS_INIT</a>
+<a href="..\ucxendpoint\nf-ucxendpoint-ucx-endpoint-event-callbacks-init.md">UCX_ENDPOINT_EVENT_CALLBACKS_INIT</a>
 </dt>
 <dt>
-<a href="buses._ucxendpointinitseteventcallbacks">UcxEndpointInitSetEventCallbacks</a>
+<a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointinitseteventcallbacks.md">UcxEndpointInitSetEventCallbacks</a>
 </dt>
 </dl>
 <p> </p>

@@ -57,19 +57,19 @@ typedef struct _REG_POST_CREATE_KEY_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>CompleteName</b>
+### -field CompleteName
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that specifies the complete path of the registry key. </p>
 </dd>
 
-### -field <b>Object</b>
+### -field Object
 
 <dd>
 <p>A pointer to the registry key object that was created.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The NTSTATUS value that the system will return for the registry operation.</p>

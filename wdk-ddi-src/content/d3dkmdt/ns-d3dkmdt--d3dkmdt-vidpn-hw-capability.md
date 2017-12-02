@@ -60,7 +60,7 @@ typedef struct _D3DKMDT_VIDPN_HW_CAPABILITY {
 ## -struct-fields
 <dl>
 
-### -field <b>DriverRotation</b>
+### -field DriverRotation
 
 <dd>
 <p>A UINT value that describes the capability of the display miniport driver to display a rotated image.</p>
@@ -68,7 +68,7 @@ typedef struct _D3DKMDT_VIDPN_HW_CAPABILITY {
 <p>If set to 0, the driver uses display pipeline hardware to directly generate the rotated image.</p>
 </dd>
 
-### -field <b>DriverScaling</b>
+### -field DriverScaling
 
 <dd>
 <p>A UINT value that describes the capability of the display miniport driver to display a scaled image.</p>
@@ -76,7 +76,7 @@ typedef struct _D3DKMDT_VIDPN_HW_CAPABILITY {
 <p>If set to 0, the driver uses display pipeline hardware to directly generate the scaled image.</p>
 </dd>
 
-### -field <b>DriverCloning</b>
+### -field DriverCloning
 
 <dd>
 <p>A UINT value that describes the capability of the display miniport driver to display a cloned image.</p>
@@ -84,7 +84,7 @@ typedef struct _D3DKMDT_VIDPN_HW_CAPABILITY {
 <p>If set to 0, the driver uses display pipeline hardware to directly generate the cloned image.</p>
 </dd>
 
-### -field <b>DriverColorConvert</b>
+### -field DriverColorConvert
 
 <dd>
 <p>A UINT value that describes the capability of the display miniport driver to display a color-convert bit-block transfer (bitblt).</p>
@@ -92,7 +92,7 @@ typedef struct _D3DKMDT_VIDPN_HW_CAPABILITY {
 <p>If set to 0, the driver uses display pipeline hardware to directly generate the color-converted image.</p>
 </dd>
 
-### -field <b>DriverLinkedAdapaterOutput</b>
+### -field DriverLinkedAdapaterOutput
 
 <dd>
 <p>A UINT value that describes the capability of the display miniport driver to perform a bit-block transfer (bitblt) of a primary surface from one linked display adapter to another linked display adapter.</p>
@@ -100,7 +100,7 @@ typedef struct _D3DKMDT_VIDPN_HW_CAPABILITY {
 <p>If set to 0, the driver uses display pipeline hardware to directly generate the bitblt from the first linked display adapter and to display it with the second linked display adapter.</p>
 </dd>
 
-### -field <b>DriverRemoteDisplay</b>
+### -field DriverRemoteDisplay
 
 <dd>
 <p>A UINT value that describes whether the display pipeline hardware is located on the same device as the GPU graphics rendering pipeline.</p>
@@ -108,7 +108,7 @@ typedef struct _D3DKMDT_VIDPN_HW_CAPABILITY {
 <p>If set to 0, the display pipeline hardware is located on the same device as the GPU graphics rendering pipeline.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. The display miniport driver must set this value to 0.</p>

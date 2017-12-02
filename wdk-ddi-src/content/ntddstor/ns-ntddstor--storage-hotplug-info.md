@@ -58,31 +58,31 @@ typedef struct _STORAGE_HOTPLUG_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Indicates the size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>MediaRemovable</b>
+### -field MediaRemovable
 
 <dd>
 <p>Specifies whether the media is removable. If set to a nonzero value, the device media is removable. If set to zero, the device media is not removable. </p>
 </dd>
 
-### -field <b>MediaHotplug</b>
+### -field MediaHotplug
 
 <dd>
 <p>Specifies whether the media is lockable. If set to a nonzero value, the device media is not lockable. If set to zero, the device media is lockable.</p>
 </dd>
 
-### -field <b>DeviceHotplug</b>
+### -field DeviceHotplug
 
 <dd>
 <p>Specifies whether the device is a hotplug device. If set to a nonzero value, the device is a hotplug device. If set to zero, the device is not a hotplug device.</p>
 </dd>
 
-### -field <b>WriteCacheEnableOverride</b>
+### -field WriteCacheEnableOverride
 
 <dd>
 <p>Do not use; set the value to <b>NULL</b>.</p>

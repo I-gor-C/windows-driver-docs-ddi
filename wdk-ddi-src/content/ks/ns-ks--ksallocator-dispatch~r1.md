@@ -57,25 +57,25 @@ typedef struct _KSALLOCATOR_DISPATCH {
 ## -struct-fields
 <dl>
 
-### -field <b>InitializeAllocator</b>
+### -field InitializeAllocator
 
 <dd>
 <p>A pointer to a minidriver-supplied <a href="stream.avstrminiinitializeallocator">AVStrMiniInitializeAllocator</a> callback routine.</p>
 </dd>
 
-### -field <b>DeleteAllocator</b>
+### -field DeleteAllocator
 
 <dd>
 <p>A pointer to a minidriver-supplied <a href="stream.avstrminideleteallocator">AVStrMiniDeleteAllocator</a> callback routine.</p>
 </dd>
 
-### -field <b>Allocate</b>
+### -field Allocate
 
 <dd>
 <p>A pointer to a minidriver-supplied <a href="stream.avstrminiallocate">AVStrMiniAllocate</a> callback routine.</p>
 </dd>
 
-### -field <b>Free</b>
+### -field Free
 
 <dd>
 <p>A pointer to a minidriver-supplied <a href="stream.avstrminiallocatorfreeframe">AVStrMiniAllocatorFreeFrame</a> callback routine.</p>

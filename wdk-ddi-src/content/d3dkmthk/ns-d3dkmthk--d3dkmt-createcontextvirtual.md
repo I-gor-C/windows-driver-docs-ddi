@@ -63,49 +63,49 @@ typedef struct _D3DKMT_CREATECONTEXTVIRTUAL {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the device.</p>
 </dd>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>[in] The zero-based index for the node that the context is scheduled on.</p>
 </dd>
 
-### -field <b>EngineAffinity</b>
+### -field EngineAffinity
 
 <dd>
 <p>[in] The zero-based index for the engine, within the node that <b>NodeOrdinal</b> specifies, that the context can run in.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-createcontextflags.md">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context. </p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in] A pointer to private data that is passed to a display miniport driver.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.</p>
 </dd>
 
-### -field <b>ClientHint</b>
+### -field ClientHint
 
 <dd>
 <p>[in] A hint describing which graphics subsystem is creating the context.</p>
 </dd>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[out] A handle to the context that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontextvirtual.md">D3DKMTCreateContextVirtual</a> function creates. </p>

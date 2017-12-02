@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmamsgstatustype_2.htm
 old-project: netvista
 ms.assetid: 315ca5af-103e-4c00-8dd7-10aa21bfa8a2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILMSGCDMAMSGSTATUSTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGSTATUSTYPE_DELIVERYACK"></a><a id="ril_msgstatustype_deliveryack"></a><b>RIL_MSGSTATUSTYPE_DELIVERYACK</b>
+### -field RIL_MSGSTATUSTYPE_DELIVERYACK
 
 <dd></dd>
 
-### -field <a id="RIL_MSGSTATUSTYPE_USERACK"></a><a id="ril_msgstatustype_userack"></a><b>RIL_MSGSTATUSTYPE_USERACK</b>
+### -field RIL_MSGSTATUSTYPE_USERACK
 
 <dd></dd>
 
-### -field <a id="RIL_MSGSTATUSTYPE_READACK"></a><a id="ril_msgstatustype_readack"></a><b>RIL_MSGSTATUSTYPE_READACK</b>
+### -field RIL_MSGSTATUSTYPE_READACK
 
 <dd></dd>
 
-### -field <a id="RIL_MSGSTATUSTYPE_MAX"></a><a id="ril_msgstatustype_max"></a><b>RIL_MSGSTATUSTYPE_MAX</b>
+### -field RIL_MSGSTATUSTYPE_MAX
 
 <dd></dd>
 </dl>

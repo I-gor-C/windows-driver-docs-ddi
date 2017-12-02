@@ -80,19 +80,19 @@ typedef struct _EXTTEXTMETRIC {
 ## -struct-fields
 <dl>
 
-### -field <b>emSize</b>
+### -field emSize
 
 <dd>
 <p>Specifies the size of the structure, in bytes.</p>
 </dd>
 
-### -field <b>emPointSize</b>
+### -field emPointSize
 
 <dd>
 <p>Specifies the nominal point size of this font, in twips (1/20 of a point, or 1/1440 inch). This is the intended size of the font; the actual size may differ slightly depending on the resolution of the device.</p>
 </dd>
 
-### -field <b>emOrientation</b>
+### -field emOrientation
 
 <dd>
 <p>Specifies the orientation of the font. The <b>emOrientation</b> member can be any of the following values: </p>
@@ -129,13 +129,13 @@ typedef struct _EXTTEXTMETRIC {
 <p> </p>
 </dd>
 
-### -field <b>emMasterHeight</b>
+### -field emMasterHeight
 
 <dd>
 <p>Specifies the font size, in device units, for which the values in this font's extent table are exact.</p>
 </dd>
 
-### -field <b>emMinScale</b>
+### -field emMinScale
 
 <dd>
 <p>Specifies the minimum valid point size for this font. The following equation illustrates how the minimum point size is determined:</p>
@@ -152,7 +152,7 @@ typedef struct _EXTTEXTMETRIC {
 <p>The value 72 represents the number of points per inch. The <i>dfVertRes</i> value is the number of dots per inch.</p>
 </dd>
 
-### -field <b>emMaxScale</b>
+### -field emMaxScale
 
 <dd>
 <p>Specifies the maximum valid point size for this font. The following equation illustrates how the maximum point size is determined:</p>
@@ -169,121 +169,121 @@ typedef struct _EXTTEXTMETRIC {
 <p>The value 72 represents the number of points per inch. The <i>dfVertRes</i> value is the number of dots per inch.</p>
 </dd>
 
-### -field <b>emMasterUnits</b>
+### -field emMasterUnits
 
 <dd>
 <p>Specifies the integral number of units per em, where an em equals the value of the <b>emMasterHeight</b> member. (That is, <b>emMasterUnits</b> is <b>emMasterHeight</b> expressed in font units instead of device units.)</p>
 </dd>
 
-### -field <b>emCapHeight</b>
+### -field emCapHeight
 
 <dd>
 <p>Specifies the height, in font units, of uppercase characters in the font. Typically, this is the height of uppercase H.</p>
 </dd>
 
-### -field <b>emXHeight</b>
+### -field emXHeight
 
 <dd>
 <p>Specifies the height, in font units, of lowercase characters in the font. Typically, this is the height of lowercase x.</p>
 </dd>
 
-### -field <b>emLowerCaseAscent</b>
+### -field emLowerCaseAscent
 
 <dd>
 <p>Specifies the distance, in font units, that the ascender of lowercase letters extends above the base line. Typically, this is the height of lowercase d.</p>
 </dd>
 
-### -field <b>emLowerCaseDescent</b>
+### -field emLowerCaseDescent
 
 <dd>
 <p>Specifies the distance, in font units, that the descender of lowercase letters extends below the base line. Typically, this is specified for the descender of lowercase p.</p>
 </dd>
 
-### -field <b>emSlant</b>
+### -field emSlant
 
 <dd>
 <p>For an italic or slanted font, specifies the angle of the slant measured in tenths of a degree clockwise from the upright version of the font.</p>
 </dd>
 
-### -field <b>emSuperScript</b>
+### -field emSuperScript
 
 <dd>
 <p>Specifies the recommended amount, in font units, to offset superscript characters from the base line. This is typically a negative value.</p>
 </dd>
 
-### -field <b>emSubScript</b>
+### -field emSubScript
 
 <dd>
 <p>Specifies the recommended amount, in font units, to offset subscript characters from the base line. This is typically a positive value.</p>
 </dd>
 
-### -field <b>emSuperScriptSize</b>
+### -field emSuperScriptSize
 
 <dd>
 <p>Specifies the recommended size, in font units, of superscript characters for this font.</p>
 </dd>
 
-### -field <b>emSubScriptSize</b>
+### -field emSubScriptSize
 
 <dd>
 <p>Specifies the recommended size, in font units, of subscript characters for this font.</p>
 </dd>
 
-### -field <b>emUnderlineOffset</b>
+### -field emUnderlineOffset
 
 <dd>
 <p>Specifies the offset, in font units, downward from the base line, where the top of a single underline bar should appear.</p>
 </dd>
 
-### -field <b>emUnderlineWidth</b>
+### -field emUnderlineWidth
 
 <dd>
 <p>Specifies the thickness, in font units, of the underline bar.</p>
 </dd>
 
-### -field <b>emDoubleUpperUnderlineOffset</b>
+### -field emDoubleUpperUnderlineOffset
 
 <dd>
 <p>Specifies the offset, in font units, downward from the base line, where the top of the upper double-underline bar should appear.</p>
 </dd>
 
-### -field <b>emDoubleLowerUnderlineOffset</b>
+### -field emDoubleLowerUnderlineOffset
 
 <dd>
 <p>Specifies the offset, in font units, downward from the base line, where the top of the lower double-underline bar should appear.</p>
 </dd>
 
-### -field <b>emDoubleUpperUnderlineWidth</b>
+### -field emDoubleUpperUnderlineWidth
 
 <dd>
 <p>Specifies the thickness, in font units, of the upper underline bar.</p>
 </dd>
 
-### -field <b>emDoubleLowerUnderlineWidth</b>
+### -field emDoubleLowerUnderlineWidth
 
 <dd>
 <p>Specifies the thickness, in font units, of the lower underline bar.</p>
 </dd>
 
-### -field <b>emStrikeOutOffset</b>
+### -field emStrikeOutOffset
 
 <dd>
 <p>Specifies the offset, in font units, upward from the base line, where the top of a strikeout bar should appear.</p>
 </dd>
 
-### -field <b>emStrikeOutWidth</b>
+### -field emStrikeOutWidth
 
 <dd>
 <p>Specifies the thickness, in font units, of the strikeout bar.</p>
 </dd>
 
-### -field <b>emKernPairs</b>
+### -field emKernPairs
 
 <dd>
 <p>Specifies the number of character kerning pairs defined for this font.</p>
 </dd>
 
-### -field <b>emKernTracks</b>
+### -field emKernTracks
 
 <dd>
 <p>Specifies the number of kerning tracks defined for this font.</p>

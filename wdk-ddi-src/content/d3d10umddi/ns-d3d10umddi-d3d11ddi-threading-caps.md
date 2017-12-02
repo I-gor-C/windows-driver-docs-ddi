@@ -54,7 +54,7 @@ typedef struct D3D11DDI_THREADING_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>Caps</b>
+### -field Caps
 
 <dd>
 <p>[in] A valid bitwise OR of values that describe the threading capabilities of the driver. The Direct3D runtime supports the following values.</p>

@@ -66,73 +66,73 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_PIN_ASSIGNMENT {
 ## -enum-fields
 <dl>
 
-### -field <a id="UcmTcpciPortControllerPinAssignmentInvalid"></a><a id="ucmtcpciportcontrollerpinassignmentinvalid"></a><a id="UCMTCPCIPORTCONTROLLERPINASSIGNMENTINVALID"></a><b>UcmTcpciPortControllerPinAssignmentInvalid</b>
+### -field UcmTcpciPortControllerPinAssignmentInvalid
 
 <dd>
 <p>Invalid pin assignment.</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerDFPDPinAssignmentA"></a><a id="ucmtcpciportcontrollerdfpdpinassignmenta"></a><a id="UCMTCPCIPORTCONTROLLERDFPDPINASSIGNMENTA"></a><b>UcmTcpciPortControllerDFPDPinAssignmentA</b>
+### -field UcmTcpciPortControllerDFPDPinAssignmentA
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerDFPDPinAssignmentB"></a><a id="ucmtcpciportcontrollerdfpdpinassignmentb"></a><a id="UCMTCPCIPORTCONTROLLERDFPDPINASSIGNMENTB"></a><b>UcmTcpciPortControllerDFPDPinAssignmentB</b>
+### -field UcmTcpciPortControllerDFPDPinAssignmentB
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerDFPDPinAssignmentC"></a><a id="ucmtcpciportcontrollerdfpdpinassignmentc"></a><a id="UCMTCPCIPORTCONTROLLERDFPDPINASSIGNMENTC"></a><b>UcmTcpciPortControllerDFPDPinAssignmentC</b>
+### -field UcmTcpciPortControllerDFPDPinAssignmentC
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerDFPDPinAssignmentD"></a><a id="ucmtcpciportcontrollerdfpdpinassignmentd"></a><a id="UCMTCPCIPORTCONTROLLERDFPDPINASSIGNMENTD"></a><b>UcmTcpciPortControllerDFPDPinAssignmentD</b>
+### -field UcmTcpciPortControllerDFPDPinAssignmentD
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerDFPDPinAssignmentE"></a><a id="ucmtcpciportcontrollerdfpdpinassignmente"></a><a id="UCMTCPCIPORTCONTROLLERDFPDPINASSIGNMENTE"></a><b>UcmTcpciPortControllerDFPDPinAssignmentE</b>
+### -field UcmTcpciPortControllerDFPDPinAssignmentE
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerDFPDPinAssignmentF"></a><a id="ucmtcpciportcontrollerdfpdpinassignmentf"></a><a id="UCMTCPCIPORTCONTROLLERDFPDPINASSIGNMENTF"></a><b>UcmTcpciPortControllerDFPDPinAssignmentF</b>
+### -field UcmTcpciPortControllerDFPDPinAssignmentF
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerUFPDPinAssignmentA"></a><a id="ucmtcpciportcontrollerufpdpinassignmenta"></a><a id="UCMTCPCIPORTCONTROLLERUFPDPINASSIGNMENTA"></a><b>UcmTcpciPortControllerUFPDPinAssignmentA</b>
+### -field UcmTcpciPortControllerUFPDPinAssignmentA
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerUFPDPinAssignmentB"></a><a id="ucmtcpciportcontrollerufpdpinassignmentb"></a><a id="UCMTCPCIPORTCONTROLLERUFPDPINASSIGNMENTB"></a><b>UcmTcpciPortControllerUFPDPinAssignmentB</b>
+### -field UcmTcpciPortControllerUFPDPinAssignmentB
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerUFPDPinAssignmentC"></a><a id="ucmtcpciportcontrollerufpdpinassignmentc"></a><a id="UCMTCPCIPORTCONTROLLERUFPDPINASSIGNMENTC"></a><b>UcmTcpciPortControllerUFPDPinAssignmentC</b>
+### -field UcmTcpciPortControllerUFPDPinAssignmentC
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerUFPDPinAssignmentD"></a><a id="ucmtcpciportcontrollerufpdpinassignmentd"></a><a id="UCMTCPCIPORTCONTROLLERUFPDPINASSIGNMENTD"></a><b>UcmTcpciPortControllerUFPDPinAssignmentD</b>
+### -field UcmTcpciPortControllerUFPDPinAssignmentD
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerUFPDPinAssignmentE"></a><a id="ucmtcpciportcontrollerufpdpinassignmente"></a><a id="UCMTCPCIPORTCONTROLLERUFPDPINASSIGNMENTE"></a><b>UcmTcpciPortControllerUFPDPinAssignmentE</b>
+### -field UcmTcpciPortControllerUFPDPinAssignmentE
 
 <dd>
 <p>TBD</p>

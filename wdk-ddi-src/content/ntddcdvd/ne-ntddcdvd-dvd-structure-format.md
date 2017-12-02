@@ -59,37 +59,37 @@ typedef enum DVD_STRUCTURE_FORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="DvdPhysicalDescriptor"></a><a id="dvdphysicaldescriptor"></a><a id="DVDPHYSICALDESCRIPTOR"></a><b>DvdPhysicalDescriptor</b>
+### -field DvdPhysicalDescriptor
 
 <dd>
 <p>Indicates that caller is requesting a DVD physical descriptor. </p>
 </dd>
 
-### -field <a id="DvdCopyrightDescriptor"></a><a id="dvdcopyrightdescriptor"></a><a id="DVDCOPYRIGHTDESCRIPTOR"></a><b>DvdCopyrightDescriptor</b>
+### -field DvdCopyrightDescriptor
 
 <dd>
 <p>Indicates that caller is requesting a DVD copyright descriptor containing copyright information from the DVD lead-in area. </p>
 </dd>
 
-### -field <a id="DvdDiskKeyDescriptor"></a><a id="dvddiskkeydescriptor"></a><a id="DVDDISKKEYDESCRIPTOR"></a><b>DvdDiskKeyDescriptor</b>
+### -field DvdDiskKeyDescriptor
 
 <dd>
 <p>Indicates that caller is requesting a DVD key descriptor containing the disc key obfuscated using the bus key. </p>
 </dd>
 
-### -field <a id="DvdBCADescriptor"></a><a id="dvdbcadescriptor"></a><a id="DVDBCADESCRIPTOR"></a><b>DvdBCADescriptor</b>
+### -field DvdBCADescriptor
 
 <dd>
 <p>Indicates that caller is requesting a DVD burst cutting area (BCA) descriptor. </p>
 </dd>
 
-### -field <a id="DvdManufacturerDescriptor"></a><a id="dvdmanufacturerdescriptor"></a><a id="DVDMANUFACTURERDESCRIPTOR"></a><b>DvdManufacturerDescriptor</b>
+### -field DvdManufacturerDescriptor
 
 <dd>
 <p>Indicates that caller is requesting a DVD manufacturer descriptor containing disc manufacturing information from the DVD lead-in area. </p>
 </dd>
 
-### -field <a id="DvdMaxDescriptor"></a><a id="dvdmaxdescriptor"></a><a id="DVDMAXDESCRIPTOR"></a><b>DvdMaxDescriptor</b>
+### -field DvdMaxDescriptor
 
 <dd>
 <p>Indicates that caller is requesting a DVD max descriptor. </p>

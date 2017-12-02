@@ -55,13 +55,13 @@ typedef struct D3DDDIARG_COUNTER_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>LastDeviceDependentCounter</b>
+### -field LastDeviceDependentCounter
 
 <dd>
 <p>A value of type <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createquery.md">D3DDDIQUERYTYPE</a> that identifies the largest device-dependent counter identifier that the device supports. If none are supported, the user-mode display driver must set the value to 0; otherwise, the driver sets the value to greater than or equal to  <b>D3DDDIQUERYTYPE_COUNTER_DEVICE_DEPENDENT</b>.</p>
 </dd>
 
-### -field <b>NumSimultaneousCounters</b>
+### -field NumSimultaneousCounters
 
 <dd>
 <p>The number of simultaneously active counters that the driver supports.</p>

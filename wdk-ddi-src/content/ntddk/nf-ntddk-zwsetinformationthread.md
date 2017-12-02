@@ -57,19 +57,19 @@ NTSTATUS ZwSetInformationThread(
 ## -parameters
 <dl>
 
-### -param <i>ThreadHandle</i> [in]
+### -param ThreadHandle [in]
 
 <dd>
 <p>Handle to the thread object. To create a new thread and get a handle to it, call <a href="..\wdm\nf-wdm-pscreatesystemthread.md">PsCreateSystemThread</a>. To specify the current thread, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566434">ZwCurrentThread</a> macro.</p>
 </dd>
 
-### -param <i>ThreadInformationClass</i> [in]
+### -param ThreadInformationClass [in]
 
 <dd>
 <p>One of the system-defined values in the THREADINFOCLASS enumeration (see ntddk.h), <b>ThreadPriority</b>,   <b>ThreadBasePriority</b>,  <b>ThreadPagePriority</b>, or <b>ThreadPowerThrottlingState</b>.</p>
 </dd>
 
-### -param <i>ThreadInformation</i> [in]
+### -param ThreadInformation [in]
 
 <dd>
 <p>Pointer to a variable that specifies the information to set. </p>
@@ -85,7 +85,7 @@ NTSTATUS ZwSetInformationThread(
 <tr>
 <td width="40%"><a id="MEMORY_PRIORITY_VERY_LOW"></a><a id="memory_priority_very_low"></a><dl>
 
-### -param <b>MEMORY_PRIORITY_VERY_LOW</b>
+### -param MEMORY_PRIORITY_VERY_LOW
 
 
 ### -param 1
@@ -99,7 +99,7 @@ NTSTATUS ZwSetInformationThread(
 <tr>
 <td width="40%"><a id="MEMORY_PRIORITY_LOW"></a><a id="memory_priority_low"></a><dl>
 
-### -param <b>MEMORY_PRIORITY_LOW</b>
+### -param MEMORY_PRIORITY_LOW
 
 
 ### -param 2
@@ -113,7 +113,7 @@ NTSTATUS ZwSetInformationThread(
 <tr>
 <td width="40%"><a id="MEMORY_PRIORITY_MEDIUM"></a><a id="memory_priority_medium"></a><dl>
 
-### -param <b>MEMORY_PRIORITY_MEDIUM</b>
+### -param MEMORY_PRIORITY_MEDIUM
 
 
 ### -param 3
@@ -127,7 +127,7 @@ NTSTATUS ZwSetInformationThread(
 <tr>
 <td width="40%"><a id="MEMORY_PRIORITY_BELOW_NORMAL"></a><a id="memory_priority_below_normal"></a><dl>
 
-### -param <b>MEMORY_PRIORITY_BELOW_NORMAL</b>
+### -param MEMORY_PRIORITY_BELOW_NORMAL
 
 
 ### -param 4
@@ -141,7 +141,7 @@ NTSTATUS ZwSetInformationThread(
 <tr>
 <td width="40%"><a id="MEMORY_PRIORITY_NORMAL"></a><a id="memory_priority_normal"></a><dl>
 
-### -param <b>MEMORY_PRIORITY_NORMAL</b>
+### -param MEMORY_PRIORITY_NORMAL
 
 
 ### -param 5
@@ -156,7 +156,7 @@ NTSTATUS ZwSetInformationThread(
 <p> </p>
 </dd>
 
-### -param <i>ThreadInformationLength</i> [in]
+### -param ThreadInformationLength [in]
 
 <dd>
 <p>The size, in bytes, of <b>ThreadInformation</b>. </p>

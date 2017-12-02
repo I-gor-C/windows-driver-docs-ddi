@@ -56,13 +56,13 @@ LONG InterlockedXor(
 ## -parameters
 <dl>
 
-### -param <i>Destination</i> [in, out]
+### -param Destination [in, out]
 
 <dd>
 <p>A pointer to the variable to be exclusive ORed with <i>Value</i>. The result of the operation is stored in the variable. </p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>Specifies the value to be exclusive ORed with the variable that is pointed to by <i>Destination</i>. </p>

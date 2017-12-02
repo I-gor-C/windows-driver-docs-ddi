@@ -54,7 +54,7 @@ HRESULT GetXpsPartIterator(
 ## -parameters
 <dl>
 
-### -param <i>pXpsPartIt</i> [out]
+### -param pXpsPartIt [out]
 
 <dd>
 <p>An iterator that you can use to enumerate all of the parts that are associated with the page.</p>

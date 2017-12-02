@@ -7,7 +7,7 @@ old-location: netvista\ril_cancelsupservicedatasession.htm
 old-project: netvista
 ms.assetid: f4b247e4-65d5-47ec-879d-9718710a7b61
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_CancelSupServiceDataSession
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_CancelSupServiceDataSession(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 </dl>

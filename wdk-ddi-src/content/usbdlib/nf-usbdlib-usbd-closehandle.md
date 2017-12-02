@@ -55,7 +55,7 @@ VOID USBD_CloseHandle(
 ## -parameters
 <dl>
 
-### -param <i>USBDHandle</i> [in]
+### -param USBDHandle [in]
 
 <dd>
 <p>USBD handle to be closed. The handle is retrieved by the client driver in a previous call to  the <a href="..\usbdlib\nf-usbdlib-usbd-createhandle.md">USBD_CreateHandle</a> routine.</p>

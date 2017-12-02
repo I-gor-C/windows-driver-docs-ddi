@@ -57,25 +57,25 @@ TAPE_PHYS_POSITION TapeClassLogicalBlockToPhysicalBlock(
 ## -parameters
 <dl>
 
-### -param <i>DensityCode</i> [in]
+### -param DensityCode [in]
 
 <dd>
 <p>Specifies the tape media density code. This routine supports tapes with the following density codes: QIC_24, QIC_120, QIC_150, QIC_525, QIC_1000, QIC_2GB, QIC_1350, and QIC_2100.</p>
 </dd>
 
-### -param <i>LogicalBlockAddress</i> [in]
+### -param LogicalBlockAddress [in]
 
 <dd>
 <p>Specifies a pseudological block address.</p>
 </dd>
 
-### -param <i>BlockLength</i> [in]
+### -param BlockLength [in]
 
 <dd>
 <p>Specifies the logical block size, in bytes.</p>
 </dd>
 
-### -param <i>FromBOT</i> [in]
+### -param FromBOT [in]
 
 <dd>
 <p><b>TRUE</b> indicates that the physical block calculation should start at the beginning of the tape and account for the physical device header. <b>FALSE</b> indicates that the tape has two partitions, that the block address is on the directory partition, and therefore no physical device header needs to be factored into the calculation.</p>

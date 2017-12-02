@@ -68,7 +68,7 @@ typedef struct _D3DKMT_CREATEALLOCATIONFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>CreateResource</b>
+### -field CreateResource
 
 <dd>
 <p>A UINT value that specifies whether to create a device-specific resource.</p>
@@ -76,7 +76,7 @@ typedef struct _D3DKMT_CREATEALLOCATIONFLAGS {
 <p>Setting this member is equivalent to setting the first bit of a 32-bit value (0x00000001).</p>
 </dd>
 
-### -field <b>CreateShared</b>
+### -field CreateShared
 
 <dd>
 <p>A UINT value that specifies whether to create a resource shared across all devices. </p>
@@ -85,21 +85,21 @@ typedef struct _D3DKMT_CREATEALLOCATIONFLAGS {
 <p>Setting this member is equivalent to setting the second bit of a 32-bit value (0x00000002).</p>
 </dd>
 
-### -field <b>NonSecure</b>
+### -field NonSecure
 
 <dd>
 <p>A UINT value that specifies whether to create an allocation that can be opened by any process. If <b>NonSecure</b> is set, secure and non-secure processes can open the allocation.</p>
 <p>Setting this member is equivalent to setting the third bit of a 32-bit value (0x00000004).</p>
 </dd>
 
-### -field <b>CreateProtected</b>
+### -field CreateProtected
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member is equivalent to setting the fourth bit of a 32-bit value (0x00000008).</p>
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>RestrictSharedAccess</b>
+### -field RestrictSharedAccess
 
 <dd>
 <p>A UINT value that specifies whether to create a resource shared across all devices but with some restrictions.</p>
@@ -107,14 +107,14 @@ typedef struct _D3DKMT_CREATEALLOCATIONFLAGS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>ExistingSysMem</b>
+### -field ExistingSysMem
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member is equivalent to setting the sixth bit of a 32-bit value (0x00000020).</p>
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>NtSecuritySharing</b>
+### -field NtSecuritySharing
 
 <dd>
 <p>A UINT value that specifies whether the allocation is shared with an NT handle, meaning that it  does not have a global <b>D3DKMT_HANDLE</b> kernel-mode handle to the resource.</p>
@@ -126,7 +126,7 @@ typedef struct _D3DKMT_CREATEALLOCATIONFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>ReadOnly</b>
+### -field ReadOnly
 
 <dd>
 <p>A UINT value that specifies whether the allocation can only be read from.</p>
@@ -134,35 +134,35 @@ typedef struct _D3DKMT_CREATEALLOCATIONFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>CreateWriteCombined</b>
+### -field CreateWriteCombined
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member is equivalent to setting the seventh bit of a 32-bit value (0x00000100).</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>CreateCached</b>
+### -field CreateCached
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member is equivalent to setting the eighth bit of a 32-bit value (0x00000200).</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>SwapChainBackBuffer</b>
+### -field SwapChainBackBuffer
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member is equivalent to setting the seventh bit of a 32-bit value (0x00000100).</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member is equivalent to setting the remaining 22 bits (0xFFFFFC00) of a 32-bit value to zeros.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member is equivalent to setting the remaining 26 bits (0xFFFFFFC0) of a 32-bit value to zeros.</p>

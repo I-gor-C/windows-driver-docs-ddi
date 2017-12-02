@@ -56,13 +56,13 @@ VP_STATUS VideoPortGetVgaStatus(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>VgaStatus</i> [out]
+### -param VgaStatus [out]
 
 <dd>
 <p>Pointer to the resulting VGA status. A value of zero (0) indicates that VGA is not enabled; a value of one (1) indicates that VGA is enabled.</p>

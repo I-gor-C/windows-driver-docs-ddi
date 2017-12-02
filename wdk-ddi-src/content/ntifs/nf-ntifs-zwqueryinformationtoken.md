@@ -58,19 +58,19 @@ NTSTATUS ZwQueryInformationToken(
 ## -parameters
 <dl>
 
-### -param <i>TokenHandle</i> [in]
+### -param TokenHandle [in]
 
 <dd>
 <p>Handle for an access token from which information is to be retrieved. If <i>TokenInformationClass</i> is set to <b>TokenSource</b>, the handle must have TOKEN_QUERY_SOURCE access. For all other <i>TokenInformationClass</i> values, the handle must have TOKEN_QUERY access. For more information about access rights for access-token objects, see the Security section of the Windows SDK documentation.</p>
 </dd>
 
-### -param <i>TokenInformationClass</i> [in]
+### -param TokenInformationClass [in]
 
 <dd>
 <p>A value from the <a href="..\ntifs\ne-ntifs--token-information-class.md">TOKEN_INFORMATION_CLASS</a> enumerated type identifying the type of information to be retrieved. The possible values for this parameter are listed in the <i>TokenInformationClass</i> Value column of the table shown in the description of the <i>TokenInformation</i> parameter.</p>
 </dd>
 
-### -param <i>TokenInformation</i> [out]
+### -param TokenInformation [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that receives the requested information about the token. The structure put into this buffer depends upon the value of <i>TokenInformationClass</i>, as shown in the following table. All structures must be aligned on a 32-bit boundary.</p>
@@ -171,13 +171,13 @@ NTSTATUS ZwQueryInformationToken(
 <p> </p>
 </dd>
 
-### -param <i>TokenInformationLength</i> [in]
+### -param TokenInformationLength [in]
 
 <dd>
 <p>Length, in bytes, of the caller-allocated <i>TokenInformation</i> buffer. </p>
 </dd>
 
-### -param <i>ReturnLength</i> [out]
+### -param ReturnLength [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the actual length, in bytes, of the information returned in the <i>TokenInformation</i> buffer. If either of the following conditions is true, no data is returned in the <i>TokenInformation</i> buffer: </p>

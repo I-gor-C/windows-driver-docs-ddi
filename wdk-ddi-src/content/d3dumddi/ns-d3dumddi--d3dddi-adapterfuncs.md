@@ -56,19 +56,19 @@ typedef struct _D3DDDI_ADAPTERFUNCS {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnGetCaps</b>
+### -field pfnGetCaps
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function that queries for capabilities of the graphics hardware.</p>
 </dd>
 
-### -field <b>pfnCreateDevice</b>
+### -field pfnCreateDevice
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createdevice.md">CreateDevice</a> function that creates a representation of a display device that handles a collection of rendering state.</p>
 </dd>
 
-### -field <b>pfnCloseAdapter</b>
+### -field pfnCloseAdapter
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-closeadapter.md">CloseAdapter</a> function that releases resources for a graphics adapter object.</p>

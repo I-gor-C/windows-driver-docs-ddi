@@ -62,19 +62,19 @@ typedef struct CM_Power_Data_s {
 ## -struct-fields
 <dl>
 
-### -field <b>PD_Size</b>
+### -field PD_Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>PD_MostRecentPowerState</b>
+### -field PD_MostRecentPowerState
 
 <dd>
 <p>A <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a> value representing the device's most recent power state.</p>
 </dd>
 
-### -field <b>PD_Capabilities</b>
+### -field PD_Capabilities
 
 <dd>
 <p>The device's power capabilities, represented by a combination of the following bit flags:</p>
@@ -89,31 +89,31 @@ typedef struct CM_Power_Data_s {
 <p>PDCAP_WARM_EJECT_SUPPORTED</p>
 </dd>
 
-### -field <b>PD_D1Latency</b>
+### -field PD_D1Latency
 
 <dd>
 <p>The device's latency when returning the D0 state from the D1 state. For more information, see the <b>D1Latency</b> member of <a href="..\wdm\ns-wdm--device-capabilities.md">DEVICE_CAPABILITIES</a>.</p>
 </dd>
 
-### -field <b>PD_D2Latency</b>
+### -field PD_D2Latency
 
 <dd>
 <p>The device's latency when returning the D0 state from the D2 state. For more information, see the <b>D2Latency</b> member of <b>DEVICE_CAPABILITIES</b>.</p>
 </dd>
 
-### -field <b>PD_D3Latency</b>
+### -field PD_D3Latency
 
 <dd>
 <p>The device's latency when returning the D0 state from the D3 state. For more information, see the <b>D3Latency</b> member of <b>DEVICE_CAPABILITIES</b>.</p>
 </dd>
 
-### -field <b>PD_PowerStateMapping</b>
+### -field PD_PowerStateMapping
 
 <dd>
 <p>An array of <b>DEVICE_POWER_STATE</b> values representing the maximum device power state achievable for each system power state. For more information, see the <b>DeviceState</b> member of <a href="..\wdm\ns-wdm--device-capabilities.md">DEVICE_CAPABILITIES</a>.</p>
 </dd>
 
-### -field <b>PD_DeepestSystemWake</b>
+### -field PD_DeepestSystemWake
 
 <dd>
 <p>Specifies the least-powered system state from which the device can wake the system. <b>PD_DeepestSystemWake</b> typically indicates one of the system sleeping states, S1, S2, or S3 (as specified by <b>PowerSystemSleeping1</b>, <b>PowerSystemSleeping2</b>, and <b>PowerSystemSleeping3</b>, respectively). Note, however, that some devices might be able to wake the system from the system hibernate state, S4 (as specified by <b>PowerSystemHibernate</b>), or even from the system shutdown state, S5 (as specified by <b>PowerSystemShutdown</b>). </p>

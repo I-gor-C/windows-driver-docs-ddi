@@ -56,7 +56,7 @@ typedef struct _VIDEO_PUBLIC_ACCESS_RANGES {
 ## -struct-fields
 <dl>
 
-### -field <b>InIoSpace</b>
+### -field InIoSpace
 
 <dd>
 <p>Indicates the location of the range. This parameter can be one of the following values, or certain bitwise combinations of these values:</p>
@@ -109,13 +109,13 @@ typedef struct _VIDEO_PUBLIC_ACCESS_RANGES {
 <p> </p>
 </dd>
 
-### -field <b>MappedInIoSpace</b>
+### -field MappedInIoSpace
 
 <dd>
 <p>Indicates, on the current platform, whether the registers or ports are mapped in I/O space or in memory space. A value of <b>TRUE</b> (1) indicates that the registers or ports are mapped in I/O space; a value of <b>FALSE</b> (0) indicates that the registers or ports are mapped in memory space.</p>
 </dd>
 
-### -field <b>VirtualAddress</b>
+### -field VirtualAddress
 
 <dd>
 <p>Pointer to the location of the registers or I/O ports as mapped under the current architecture.</p>

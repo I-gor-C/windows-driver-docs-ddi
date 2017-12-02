@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type. </p>
 </dd>
 
-### -field <b>lOcularFocalLength</b>
+### -field lOcularFocalLength
 
 <dd>
 <p>Specifies a value of type LONG containing the focal length of the lens closest to the camera user.</p>
 </dd>
 
-### -field <b>lObjectiveFocalLengthMin</b>
+### -field lObjectiveFocalLengthMin
 
 <dd>
 <p>Specifies a value of type LONG containing the minimum focal length of the lens closest to the camera subject.</p>
 </dd>
 
-### -field <b>lObjectiveFocalLengthMax</b>
+### -field lObjectiveFocalLengthMax
 
 <dd>
 <p>Specifies a value of type LONG containing the maximum focal length of the lens closest to the camera subject.</p>

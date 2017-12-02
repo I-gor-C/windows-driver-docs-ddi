@@ -68,85 +68,85 @@ typedef struct _PORT_DATA_1 {
 ## -struct-fields
 <dl>
 
-### -field <b>sztPortName</b>
+### -field sztPortName
 
 <dd>
 <p>Specifies the name of the port. The MAX_PORTNAME_LEN constant is defined in tcpxcv.h.</p>
 </dd>
 
-### -field <b>dwVersion</b>
+### -field dwVersion
 
 <dd>
 <p>Specifies the version number of the PORT_DATA_1 structure, which is currently 1.</p>
 </dd>
 
-### -field <b>dwProtocol</b>
+### -field dwProtocol
 
 <dd>
 <p>Specifies the protocol to use for the port. This value can be either PROTOCOL_RAWTCP_TYPE or PROTOCOL_LPR_TYPE, constants that are defined in tcpxcv.h.</p>
 </dd>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Specifies the size, in bytes of this structure. Use <b>sizeof</b>(PORT_DATA_1) for this value.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Reserved, must be set to zero.</p>
 </dd>
 
-### -field <b>sztHostAddress</b>
+### -field sztHostAddress
 
 <dd>
 <p>Specifies the IP Address or host name of the printer. The MAX_NETWORKNAME_LEN constant is defined in tcpxcv.h.</p>
 </dd>
 
-### -field <b>sztSNMPCommunity</b>
+### -field sztSNMPCommunity
 
 <dd>
 <p>Specifies the SNMP community name of the printer. The MAX_SNMP_COMMUNITY_STR_LEN constant is defined in tcpxcv.h.</p>
 </dd>
 
-### -field <b>dwDoubleSpool</b>
+### -field dwDoubleSpool
 
 <dd>
 <p>If <b>TRUE</b>, indicates that double spooling is enabled. If <b>FALSE</b>, double spooling is disabled.</p>
 </dd>
 
-### -field <b>sztQueue</b>
+### -field sztQueue
 
 <dd>
 <p>Specifies the LPR queue name. The MAX_QUEUENAME_LEN constant is defined in tcpxcv.h.</p>
 </dd>
 
-### -field <b>sztIPAddress</b>
+### -field sztIPAddress
 
 <dd>
 <p>Specifies the IP address of the printer. The MAX_IPADDR_STR_LEN constant is defined in tcpxcv.h.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved, must be set to zero.</p>
 </dd>
 
-### -field <b>dwPortNumber</b>
+### -field dwPortNumber
 
 <dd>
 <p>Specifies the port number of the device.</p>
 </dd>
 
-### -field <b>dwSNMPEnabled</b>
+### -field dwSNMPEnabled
 
 <dd>
 <p>If <b>TRUE</b>, indicates that the device supports Simple Network Management Protocol (SNMP).</p>
 </dd>
 
-### -field <b>dwSNMPDevIndex</b>
+### -field dwSNMPDevIndex
 
 <dd>
 <p>Specifies the SNMP device index.</p>
@@ -156,7 +156,7 @@ typedef struct _PORT_DATA_1 {
 ## -remarks
 <p>When the <a href="print.xcvdata">XcvData</a> function is called either to add a port or configure an existing port, its <i>pOutputData</i> parameter must be set with the address of a PORT_DATA_1 structure, which will be filled in when the function returns. To add a port, set this function's <i>pszDataName</i> parameter to the string L"AddPort". To configure a port, set this parameter to L"ConfigPort". </p>
 
-<p>See <a href="NULL">TCPMON Xcv Interface</a> for more information.</p>
+<p>See <a href="https://msdn.microsoft.com/7b2b1cff-ab8f-44e0-9327-dc60a0072bf5">TCPMON Xcv Interface</a> for more information.</p>
 
 ## -requirements
 <table>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_filter_field_parameters.htm
 old-project: netvista
 ms.assetid: 3d387fe9-a7cc-4034-b31e-ba1359db2ae1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, *PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,11 +43,11 @@ req.iface:
   in a network packet header.</p>
 <p>NDIS receive filters are used in the following NDIS interfaces:</p>
 <p>
-<a href="NULL">NDIS Packet Coalescing</a>. For more information about how to use receive filters in this interface, see <a href="NULL">Managing Packet Coalescing Receive Filters</a>.</p>
+<a href="netvista.ndis_packet_coalescing">NDIS Packet Coalescing</a>. For more information about how to use receive filters in this interface, see <a href="netvista.managing_packet_coalescing_receive_filters">Managing Packet Coalescing Receive Filters</a>.</p>
 <p>
-<a href="NULL">Single Root I/O Virtualization (SR-IOV)</a>. For more information about how to use receive filters in this interface, see <a href="NULL">Setting a Receive Filter on a Virtual Port</a>.</p>
+<a href="netvista.single_root_i_o_virtualization__sr-iov_">Single Root I/O Virtualization (SR-IOV)</a>. For more information about how to use receive filters in this interface, see <a href="netvista.setting_a_receive_filter_on_a_virtual_port">Setting a Receive Filter on a Virtual Port</a>.</p>
 <p>
-<a href="NULL">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="NULL">Setting and Clearing VMQ Filters</a>.</p>
+<a href="netvista.virtual_machine_queue__vmq__in_ndis_6_20">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="netvista.setting_and_clearing_vmq_filters">Setting and Clearing VMQ Filters</a>.</p>
 
 
 ## -syntax
@@ -86,7 +86,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -104,7 +104,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_2"></a><a id="ndis_receive_filter_field_parameters_revision_2"></a><dl>
 
-### -field <b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_2</b>
+### -field NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_2
 
 
 ### -field 2
@@ -120,7 +120,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_1"></a><a id="ndis_receive_filter_field_parameters_revision_1"></a><dl>
 
-### -field <b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_1</b>
+### -field NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_1
 
 
 ### -field 1
@@ -137,7 +137,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitwise OR of flags. The following flags are valid for the 
@@ -152,7 +152,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNTAGGED_OR_ZERO"></a><a id="ndis_receive_filter_field_mac_header_vlan_untagged_or_zero"></a><dl>
 
-### -field <b>NDIS_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNTAGGED_OR_ZERO</b>
+### -field NDIS_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNTAGGED_OR_ZERO
 
 
 ### -field 0x00000001
@@ -182,19 +182,19 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>FrameHeader</b>
+### -field FrameHeader
 
 <dd>
 <p>The type of header in the network data frame.</p>
 </dd>
 
-### -field <b>ReceiveFilterTest</b>
+### -field ReceiveFilterTest
 
 <dd>
 <p>The type of test to perform for the receive filter.</p>
 </dd>
 
-### -field <b>HeaderField</b>
+### -field HeaderField
 
 <dd>
 <p>The type of field in a header. The field type (for example,
@@ -204,19 +204,19 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 <p>This union contains the following members:</p>
 <dl>
 
-### -field <b>MacHeaderField</b>
+### -field MacHeaderField
 
 <dd>
 <p>The type of field in a MAC header.</p>
 </dd>
 
-### -field <b>ArpHeaderField</b>
+### -field ArpHeaderField
 
 <dd>
 <p>The type of field in an Address Resolution Protocol (ARP) header.</p>
 </dd>
 
-### -field <b>IPv4HeaderField</b>
+### -field IPv4HeaderField
 
 <dd>
 <p>An 
@@ -224,7 +224,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
        value that specifies the type of field in an IP version 4 (IPv4) header.</p>
 </dd>
 
-### -field <b>IPv6HeaderField</b>
+### -field IPv6HeaderField
 
 <dd>
 <p>An 
@@ -232,7 +232,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
        value that specifies the type of field in an IP version 6 (IPv6) header.</p>
 </dd>
 
-### -field <b>UdpHeaderField</b>
+### -field UdpHeaderField
 
 <dd>
 <p>The type of field in a User Datagram Protocol
@@ -241,7 +241,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>FieldValue</b>
+### -field FieldValue
 
 <dd>
 <p></p>
@@ -250,7 +250,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 <p>This union contains the following members:</p>
 <dl>
 
-### -field <b>FieldByteValue</b>
+### -field FieldByteValue
 
 <dd>
 <p>A <b>UCHAR</b> value to compare with a field in a network packet.</p>
@@ -258,25 +258,25 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>FieldShortValue</b>
+### -field FieldShortValue
 
 <dd>
 <p>A <b>USHORT</b> value to compare with a field in a network packet.</p>
 </dd>
 
-### -field <b>FieldLongValue</b>
+### -field FieldLongValue
 
 <dd>
 <p>A <b>ULONG</b> value to compare with a field in a network packet.</p>
 </dd>
 
-### -field <b>FieldLong64Value</b>
+### -field FieldLong64Value
 
 <dd>
 <p>A <b>ULONG64</b> value to compare with a field in a network packet.</p>
 </dd>
 
-### -field <b>FieldByteArrayValue</b>
+### -field FieldByteArrayValue
 
 <dd>
 <p>A <b>UCHAR</b> array to compare with a field in a network packet.</p>
@@ -284,7 +284,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>ResultValue</b>
+### -field ResultValue
 
 <dd>
 <p>A union that contains a test result value. </p>
@@ -293,31 +293,31 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 <p>This union contains the following members:</p>
 <dl>
 
-### -field <b>ResultByteValue</b>
+### -field ResultByteValue
 
 <dd>
 <p>A <b>UCHAR</b> value to compare with a test result.</p>
 </dd>
 
-### -field <b>ResultShortValue</b>
+### -field ResultShortValue
 
 <dd>
 <p>A <b>USHORT</b> value to compare with a test result.</p>
 </dd>
 
-### -field <b>ResultLongValue</b>
+### -field ResultLongValue
 
 <dd>
 <p>A <b>ULONG</b> value to compare with a test result.</p>
 </dd>
 
-### -field <b>ResultLong64Value</b>
+### -field ResultLong64Value
 
 <dd>
 <p>A <b>ULONG64</b> value to compare with a test result.</p>
 </dd>
 
-### -field <b>ResultByteArrayValue</b>
+### -field ResultByteArrayValue
 
 <dd>
 <p>A <b>UCHAR</b> array to compare with a test result.</p>
@@ -415,4 +415,4 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

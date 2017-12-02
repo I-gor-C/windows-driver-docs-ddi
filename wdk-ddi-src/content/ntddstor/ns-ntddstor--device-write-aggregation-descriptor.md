@@ -56,20 +56,20 @@ typedef struct _DEVICE_WRITE_AGGREGATION_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Contains the size, in bytes, of this structure. The value of this member will change as members are added 
       to the structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the total size of the descriptor, in bytes.</p>
 </dd>
 
-### -field <b>BenefitsFromWriteAggregation</b>
+### -field BenefitsFromWriteAggregation
 
 <dd>
 <p><b>TRUE</b> if the device benefits from write aggregation.</p>

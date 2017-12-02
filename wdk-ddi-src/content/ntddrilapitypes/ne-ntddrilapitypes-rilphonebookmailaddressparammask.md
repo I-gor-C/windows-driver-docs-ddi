@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookmailaddressparammask.htm
 old-project: netvista
 ms.assetid: db3b9173-f0fe-4d51-a17e-a7b55839cbb6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef enum _RILPHONEBOOKMAILADDRESSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_PBEA_ALL"></a><a id="ril_param_pbea_all"></a><b>RIL_PARAM_PBEA_ALL</b>
+### -field RIL_PARAM_PBEA_ALL
 
 <dd></dd>
 </dl>

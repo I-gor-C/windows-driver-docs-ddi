@@ -7,7 +7,7 @@ old-location: netvista\rilexecutorconfig.htm
 old-project: netvista
 ms.assetid: d53c3df2-fd75-4008-a740-0afa293e36eb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILEXECUTORCONFIG, RILEXECUTORCONFIG, *LPRILEXECUTORCONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _RILEXECUTORCONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd></dd>
 
-### -field <b>dwNumApps</b>
+### -field dwNumApps
 
 <dd></dd>
 
-### -field <b>lphUiccApps</b>
+### -field lphUiccApps
 
 <dd></dd>
 </dl>

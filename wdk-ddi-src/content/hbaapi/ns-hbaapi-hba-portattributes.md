@@ -68,25 +68,25 @@ typedef struct HBA_PortAttributes {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeWWN</b>
+### -field NodeWWN
 
 <dd>
 <p>Contains a 64 bit world-wide name (WWN) that uniquely identifies the fibre channel node associated with <b>PortWWN</b>. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.</p>
 </dd>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>Contains a 64 bit world-wide name (WWN) that uniquely identifies the fibre channel port. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.</p>
 </dd>
 
-### -field <b>PortFcId</b>
+### -field PortFcId
 
 <dd>
 <p>Contains the current fibre channel address of <b>PortWWN</b>. The high order byte of this member contains the first byte of the address, and successively lower order bytes of this member contain successively lower bytes of the address. The lowest order byte of this member must be zero.</p>
 </dd>
 
-### -field <b>PortType</b>
+### -field PortType
 
 <dd>
 <p>Indicates the port type. This member must have one of the following values: </p>
@@ -187,7 +187,7 @@ typedef struct HBA_PortAttributes {
 <p> </p>
 </dd>
 
-### -field <b>PortState</b>
+### -field PortState
 
 <dd>
 <p>Contains the state of the port indicated by <b>PortWWN</b>. This member must have one of the following values:</p>
@@ -264,41 +264,41 @@ typedef struct HBA_PortAttributes {
 <p> </p>
 </dd>
 
-### -field <b>PortSupportedClassofService</b>
+### -field PortSupportedClassofService
 
 <dd>
 <p>Indicates the class of service that are supported by <b>PortWWN</b>. For a list of the differences classes of service and the values that must be assigned to this member for each class, see the ANSI standard for <i>Fibre Channel Generic Services 4th Generation</i> (FC-GS-4).</p>
 </dd>
 
-### -field <b>PortSupportedFc4Types</b>
+### -field PortSupportedFc4Types
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fc4types.md">HBA_fc4types</a> that indicates the FC-4 types that are supported by <b>PortWWN</b>. For a discussion FC-4 types, see the ANSI standard for <i>Fibre Channel Generic Services 4th Generation</i> (FC-GS-4). </p>
 </dd>
 
-### -field <b>PortActiveFc4Types</b>
+### -field PortActiveFc4Types
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fc4types.md">HBA_fc4types</a> that indicates the FC-4 types that are currently available on <b>PortWWN</b>. For a discussion FC-4 types, see the ANSI standard for <i>Fibre Channel Generic Services 4th Generation</i> (FC-GS-4).</p>
 </dd>
 
-### -field <b>PortSymbolicName</b>
+### -field PortSymbolicName
 
 <dd>
 <p>Contains the symbolic name of the port. </p>
 </dd>
 
-### -field <b>OSDeviceName</b>
+### -field OSDeviceName
 
 <dd></dd>
 
-### -field <b>PortSupportedSpeed</b>
+### -field PortSupportedSpeed
 
 <dd>
 <p>Indicates the signaling bit rates at which <b>PortWWN</b> can operate. For a list of the values that this member supports, see <b>PortSpeed</b>. </p>
 </dd>
 
-### -field <b>PortSpeed</b>
+### -field PortSpeed
 
 <dd>
 <p>Indicates the signaling bit rates at which <b>PortWWN</b> is currently operating. This member must have one of the following values: </p>
@@ -359,19 +359,19 @@ typedef struct HBA_PortAttributes {
 <p> </p>
 </dd>
 
-### -field <b>PortMaxFrameSize</b>
+### -field PortMaxFrameSize
 
 <dd>
 <p>Indicates the maximum frame size, in bytes, that is supported by <b>PortWWN</b>.</p>
 </dd>
 
-### -field <b>FabricName</b>
+### -field FabricName
 
 <dd>
 <p>Contains the name identifier for the fabric to which <b>PortWWN</b> is attached. </p>
 </dd>
 
-### -field <b>NumberofDiscoveredPorts</b>
+### -field NumberofDiscoveredPorts
 
 <dd>
 <p>Indicates the number of ports that are visible to <b>PortWWN</b>. For a more detailed explanation of the sorts of ports that this number takes into consideration, see the T11 committee's specification for <i>Fibre Channel HBA API</i> (FC-HBA). </p>

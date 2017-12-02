@@ -7,7 +7,7 @@ old-location: ifsk\fltcreatefileex.htm
 old-project: ifsk
 ms.assetid: 83b672dd-26fc-4c22-815d-72143159983d
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltCreateFileEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,31 +68,31 @@ NTSTATUS FltCreateFileEx(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>An opaque filter pointer for the caller. </p>
 </dd>
 
-### -param <i>Instance</i> [in, optional]
+### -param Instance [in, optional]
 
 <dd>
 <p>An opaque instance pointer for the minifilter driver instance that the create request is to be sent to. The instance must be attached to the volume where the file or directory resides. This parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request is sent to the device object at the top of the file system driver stack for the volume. If it is non-<b>NULL</b>, the request is sent only to minifilter driver instances that are attached below the specified instance. </p>
 </dd>
 
-### -param <i>FileHandle</i> [out]
+### -param FileHandle [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the file handle if the call to <b>FltCreateFileEx</b> is successful. </p>
 </dd>
 
-### -param <i>FileObject</i> [out]
+### -param FileObject [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the file object pointer if the call to <b>FltCreateFileEx</b> is successful. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>A bitmask of flags specifying the type of access that the caller requires to the file or directory. The set of system-defined <i>DesiredAccess</i> flags determines the following specific access rights for file objects. </p>
@@ -266,7 +266,7 @@ NTSTATUS FltCreateFileEx(
 <p> </p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in]
+### -param ObjectAttributes [in]
 
 <dd>
 <p>A pointer to a structure already initialized with <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>. If the caller is running in the system process context, this parameter can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to <b>InitializeObjectAttributes</b>. Members of this structure for a file object include the following. </p>
@@ -319,7 +319,7 @@ NTSTATUS FltCreateFileEx(
 <p> </p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. On return from <b>FltCreateFileEx</b>, the <b>Information</b> member contains one of the following values.</p>
@@ -345,13 +345,13 @@ NTSTATUS FltCreateFileEx(
 </dl>
 </dd>
 
-### -param <i>AllocationSize </i> [in, optional]
+### -param AllocationSize  [in, optional]
 
 <dd>
 <p>Optionally specifies the initial allocation size, in bytes, for the file stream. A nonzero value has no effect unless the file is being created, overwritten, or superseded. </p>
 </dd>
 
-### -param <i>FileAttributes</i> [in]
+### -param FileAttributes [in]
 
 <dd>
 <p>Specifies one or more of the following FILE_ATTRIBUTE_<i>XXX</i> flags, which represent the file attributes to set if you are creating, superseding, or overwriting a file. Normally, you specify FILE_ATTRIBUTE_NORMAL, which sets the default attributes. </p>
@@ -412,7 +412,7 @@ NTSTATUS FltCreateFileEx(
 <p> </p>
 </dd>
 
-### -param <i>ShareAccess</i> [in]
+### -param ShareAccess [in]
 
 <dd>
 <p>Specifies the type of share access to the file that the caller requires, as zero or one, or a combination of the following flags. If the IO_IGNORE_SHARE_ACCESS_CHECK flag is specified in the <i>Flags</i> parameter, the I/O manager ignores this parameter. However, the file system might still perform access checks. Thus, it is important to specify the sharing mode you would like for this parameter, even when using the IO_IGNORE_SHARE_ACCESS_CHECK flag. For the greatest chance of avoiding sharing violation errors, specify all of the following share access flags. </p>
@@ -449,7 +449,7 @@ NTSTATUS FltCreateFileEx(
 <p> </p>
 </dd>
 
-### -param <i>CreateDisposition</i> [in]
+### -param CreateDisposition [in]
 
 <dd>
 <p>Specifies a value that determines the action to be taken, depending on whether the file already exists. The value can be any of those described following. </p>
@@ -510,7 +510,7 @@ NTSTATUS FltCreateFileEx(
 <p> </p>
 </dd>
 
-### -param <i>CreateOptions</i> [in]
+### -param CreateOptions [in]
 
 <dd>
 <p>Specifies the options to be applied when creating or opening the file, as a compatible combination of the following flags. </p>
@@ -661,19 +661,19 @@ NTSTATUS FltCreateFileEx(
 <p> </p>
 </dd>
 
-### -param <i>EaBuffer</i> [in, optional]
+### -param EaBuffer [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied <a href="..\wdm\ns-wdm--file-full-ea-information.md">FILE_FULL_EA_INFORMATION</a>-structured buffer containing extended attribute (EA) information to be applied to the file. </p>
 </dd>
 
-### -param <i>EaLength</i> [in]
+### -param EaLength [in]
 
 <dd>
 <p>Length, in bytes, of <i>EaBuffer</i>. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies options to be used during the creation of the create request. The following table lists the available options. </p>
@@ -940,4 +940,4 @@ NTSTATUS FltCreateFileEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateFileEx routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateFileEx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

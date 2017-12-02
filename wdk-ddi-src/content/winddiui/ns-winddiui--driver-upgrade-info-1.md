@@ -56,13 +56,13 @@ typedef struct _DRIVER_UPGRADE_INFO_1 {
 ## -struct-fields
 <dl>
 
-### -field <b>pPrinterName</b>
+### -field pPrinterName
 
 <dd>
 <p>Pointer to a NULL-terminated string that specifies the name of the printer.</p>
 </dd>
 
-### -field <b>pOldDriverDirectory</b>
+### -field pOldDriverDirectory
 
 <dd>
 <p>Pointer to a NULL-terminated string that specifies the local directory in which the old printer driver files can be found.</p>

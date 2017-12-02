@@ -7,7 +7,7 @@ old-location: netvista\wdi_data_rate_entry.htm
 old-project: netvista
 ms.assetid: 16A4B49B-9912-40BE-80E8-68416B966B71
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDI_DATA_RATE_ENTRY,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ typedef struct _WDI_DATA_RATE_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>DataRateFlag</b>
+### -field DataRateFlag
 
 <dd>
 <p>Specifies data rate flags as defined in WDI_DATA_RATE_FLAGS.</p>
 </dd>
 
-### -field <b>DataRateValue</b>
+### -field DataRateValue
 
 <dd>
 <p>Specifies the data rate in units of 500 kilobits per second. The value is in the range from 0x0002 through 0xffff.

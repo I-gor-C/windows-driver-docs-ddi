@@ -55,13 +55,13 @@ HRESULT KsCreateSinkPinHandle(
 ## -parameters
 <dl>
 
-### -param <i>Interface</i> [in]
+### -param Interface [in]
 
 <dd>
 <p>A type reference to a <a href="stream.kspin_interface">KSPIN_INTERFACE</a> structure for the interface that <b>KsCreateSinkPinHandle</b> negotiated for the created pin. </p>
 </dd>
 
-### -param <i>Medium</i> [in]
+### -param Medium [in]
 
 <dd>
 <p>A type reference to a <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structure for the medium that <b>KsCreateSinkPinHandle</b> negotiated for the created pin. </p>

@@ -57,25 +57,25 @@ typedef enum _DXGK_DISPLAYPANELORIENTATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_DPO_0"></a><a id="dxgk_dpo_0"></a><b>DXGK_DPO_0</b>
+### -field DXGK_DPO_0
 
 <dd>
 <p>Indicates a 0 degree rotation.</p>
 </dd>
 
-### -field <a id="DXGK_DPO_90"></a><a id="dxgk_dpo_90"></a><b>DXGK_DPO_90</b>
+### -field DXGK_DPO_90
 
 <dd>
 <p>Indicates a 90 degree rotation.</p>
 </dd>
 
-### -field <a id="DXGK_DPO_180"></a><a id="dxgk_dpo_180"></a><b>DXGK_DPO_180</b>
+### -field DXGK_DPO_180
 
 <dd>
 <p>Indicates a 180 degree rotation.</p>
 </dd>
 
-### -field <a id="DXGK_DPO_270"></a><a id="dxgk_dpo_270"></a><b>DXGK_DPO_270</b>
+### -field DXGK_DPO_270
 
 <dd>
 <p>Indicates a 270 degree rotation.</p>

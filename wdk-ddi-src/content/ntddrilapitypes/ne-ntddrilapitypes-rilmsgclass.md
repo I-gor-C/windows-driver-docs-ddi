@@ -7,7 +7,7 @@ old-location: netvista\rilmsgclass.htm
 old-project: netvista
 ms.assetid: 2f7e2c4f-56bc-4efd-8911-5161b657dbea
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILMSGCLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGCLASS_INCOMING"></a><a id="ril_msgclass_incoming"></a><b>RIL_MSGCLASS_INCOMING</b>
+### -field RIL_MSGCLASS_INCOMING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCLASS_OUTGOING"></a><a id="ril_msgclass_outgoing"></a><b>RIL_MSGCLASS_OUTGOING</b>
+### -field RIL_MSGCLASS_OUTGOING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCLASS_BROADCAST"></a><a id="ril_msgclass_broadcast"></a><b>RIL_MSGCLASS_BROADCAST</b>
+### -field RIL_MSGCLASS_BROADCAST
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCLASS_ALL"></a><a id="ril_msgclass_all"></a><b>RIL_MSGCLASS_ALL</b>
+### -field RIL_MSGCLASS_ALL
 
 <dd></dd>
 </dl>

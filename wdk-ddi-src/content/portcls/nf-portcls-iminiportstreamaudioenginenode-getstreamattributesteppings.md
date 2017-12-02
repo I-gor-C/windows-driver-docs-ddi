@@ -56,19 +56,19 @@ NTSTATUS GetStreamAttributeSteppings(
 ## -parameters
 <dl>
 
-### -param <i>targetType</i> [in]
+### -param targetType [in]
 
 <dd>
 <p>An <a href="..\portcls\ne-portcls-echanneltargettype.md">eChannelTargetType</a> enumerated value that specifies the  target node type.</p>
 </dd>
 
-### -param <i>pKsPropStepLong</i> [out]
+### -param pKsPropStepLong [out]
 
 <dd>
 <p>A structure of type <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff565631(v=vs.85).aspx">KSPROPERTY_STEPPING_LONG</a> that contains information about the allowed stepping value for the audio stream attribute.</p>
 </dd>
 
-### -param <i>ui32DataSize</i> [in]
+### -param ui32DataSize [in]
 
 <dd>
 <p>The allowed stepping value.</p>

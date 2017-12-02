@@ -55,7 +55,7 @@ BOOL GdiDeleteSpoolFileHandle(
 ## -parameters
 <dl>
 
-### -param <i>SpoolFileHandle</i> 
+### -param SpoolFileHandle 
 
 <dd>
 <p>Caller-supplied spool file handle, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>.</p>
@@ -70,7 +70,7 @@ BOOL GdiDeleteSpoolFileHandle(
 
 <p>Print processors should call <b>GdiDeleteSpoolFileHandle</b> after calling <a href="..\winppi\nf-winppi-gdienddocemf.md">GdiEndDocEMF</a>, when processing a print job's EMF data stream has been completed. The function calls ClosePrinter (described in the Microsoft Window SDK documentation) to close the printer connection.</p>
 
-<p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.</p>
 
 ## -requirements
 <table>

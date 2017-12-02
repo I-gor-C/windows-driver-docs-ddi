@@ -7,7 +7,7 @@ old-location: netvista\wsk_client_connection_dispatch.htm
 old-project: netvista
 ms.assetid: 960eee8a-2950-4baf-b32d-be13b3d65951
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WSK_CLIENT_CONNECTION_DISPATCH,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct _WSK_CLIENT_CONNECTION_DISPATCH {
 ## -struct-fields
 <dl>
 
-### -field <b>WskReceiveEvent</b>
+### -field WskReceiveEvent
 
 <dd>
 <p>A pointer to the WSK application's 
@@ -67,7 +67,7 @@ typedef struct _WSK_CLIENT_CONNECTION_DISPATCH {
      <i>WskReceiveEvent</i> event callback function for the socket, this pointer can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>WskDisconnectEvent</b>
+### -field WskDisconnectEvent
 
 <dd>
 <p>A pointer to the WSK application's 
@@ -76,7 +76,7 @@ typedef struct _WSK_CLIENT_CONNECTION_DISPATCH {
      <i>WskDisconnectEvent</i> event callback function for the socket, this pointer can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>WskSendBacklogEvent</b>
+### -field WskSendBacklogEvent
 
 <dd>
 <p>A pointer to the WSK application's 
@@ -161,4 +161,4 @@ typedef struct _WSK_CLIENT_CONNECTION_DISPATCH {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_CLIENT_CONNECTION_DISPATCH structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_CLIENT_CONNECTION_DISPATCH structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

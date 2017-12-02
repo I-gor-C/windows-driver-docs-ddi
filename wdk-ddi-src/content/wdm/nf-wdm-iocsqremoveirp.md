@@ -56,13 +56,13 @@ PIRP IoCsqRemoveIrp(
 ## -parameters
 <dl>
 
-### -param <i>Csq</i> [in, out]
+### -param Csq [in, out]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550560">IO_CSQ</a> structure for the driver's cancel-safe IRP queue. This structure must have been initialized by <a href="..\wdm\nf-wdm-iocsqinitialize.md">IoCsqInitialize</a> or <a href="..\wdm\nf-wdm-iocsqinitializeex.md">IoCsqInitializeEx</a>.</p>
 </dd>
 
-### -param <i>Context</i> [in, out]
+### -param Context [in, out]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550567">IO_CSQ_IRP_CONTEXT</a> structure that identifies the IRP to remove. The <b>IO_CSQ_IRP_CONTEXT</b> structure is initialized by <a href="..\wdm\nf-wdm-iocsqinsertirp.md">IoCsqInsertIrp</a> or <a href="..\wdm\nf-wdm-iocsqinsertirpex.md">IoCsqInsertIrpEx</a> when the IRP is first inserted in the queue.</p>

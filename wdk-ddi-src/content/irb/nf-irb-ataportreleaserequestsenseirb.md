@@ -55,13 +55,13 @@ VOID AtaPortReleaseRequestSenseIrb(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the channel extension. </p>
 </dd>
 
-### -param <i>Irb</i> [in]
+### -param Irb [in]
 
 <dd>
 <p>A pointer to a structure of type <a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a> that defines the request sense IRB.</p>

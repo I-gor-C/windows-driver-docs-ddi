@@ -7,7 +7,7 @@ old-location: ifsk\file_fs_persistent_volume_information.htm
 old-project: ifsk
 ms.assetid: f1c7785e-e135-4060-8cf7-5c985b37ff83
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILE_FS_PERSISTENT_VOLUME_INFORMATION, FILE_FS_PERSISTENT_VOLUME_INFORMATION, *PFILE_FS_PERSISTENT_VOLUME_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct _FILE_FS_PERSISTENT_VOLUME_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>VolumeFlags</b>
+### -field VolumeFlags
 
 <dd>
 <p>The persistent state settings for a file system volume. This value is a bitwise OR combination of the following.</p>
@@ -69,7 +69,7 @@ typedef struct _FILE_FS_PERSISTENT_VOLUME_INFORMATION {
 <tr>
 <td width="40%"><a id="PERSISTENT_VOLUME_STATE_SHORT_NAME_CREATION_DISABLED"></a><a id="persistent_volume_state_short_name_creation_disabled"></a><dl>
 
-### -field <b>PERSISTENT_VOLUME_STATE_SHORT_NAME_CREATION_DISABLED</b>
+### -field PERSISTENT_VOLUME_STATE_SHORT_NAME_CREATION_DISABLED
 
 
 ### -field 0x00000001
@@ -83,7 +83,7 @@ typedef struct _FILE_FS_PERSISTENT_VOLUME_INFORMATION {
 <tr>
 <td width="40%"><a id="PERSISTENT_VOLUME_STATE_VOLUME_SCRUB_DISABLED"></a><a id="persistent_volume_state_volume_scrub_disabled"></a><dl>
 
-### -field <b>PERSISTENT_VOLUME_STATE_VOLUME_SCRUB_DISABLED</b>
+### -field PERSISTENT_VOLUME_STATE_VOLUME_SCRUB_DISABLED
 
 
 ### -field 0x00000002
@@ -98,7 +98,7 @@ typedef struct _FILE_FS_PERSISTENT_VOLUME_INFORMATION {
 <tr>
 <td width="40%"><a id="PERSISTENT_VOLUME_STATE_GLOBAL_METADATA_NO_SEEK_PENALTY"></a><a id="persistent_volume_state_global_metadata_no_seek_penalty"></a><dl>
 
-### -field <b>PERSISTENT_VOLUME_STATE_GLOBAL_METADATA_NO_SEEK_PENALTY</b>
+### -field PERSISTENT_VOLUME_STATE_GLOBAL_METADATA_NO_SEEK_PENALTY
 
 
 ### -field 0x00000004
@@ -113,7 +113,7 @@ typedef struct _FILE_FS_PERSISTENT_VOLUME_INFORMATION {
 <tr>
 <td width="40%"><a id="PERSISTENT_VOLUME_STATE_LOCAL_METADATA_NO_SEEK_PENALTY"></a><a id="persistent_volume_state_local_metadata_no_seek_penalty"></a><dl>
 
-### -field <b>PERSISTENT_VOLUME_STATE_LOCAL_METADATA_NO_SEEK_PENALTY</b>
+### -field PERSISTENT_VOLUME_STATE_LOCAL_METADATA_NO_SEEK_PENALTY
 
 
 ### -field 0x00000008
@@ -128,7 +128,7 @@ typedef struct _FILE_FS_PERSISTENT_VOLUME_INFORMATION {
 <tr>
 <td width="40%"><a id="PERSISTENT_VOLUME_STATE_NO_HEAT_GATHERING"></a><a id="persistent_volume_state_no_heat_gathering"></a><dl>
 
-### -field <b>PERSISTENT_VOLUME_STATE_NO_HEAT_GATHERING</b>
+### -field PERSISTENT_VOLUME_STATE_NO_HEAT_GATHERING
 
 
 ### -field 0x00000010
@@ -143,7 +143,7 @@ typedef struct _FILE_FS_PERSISTENT_VOLUME_INFORMATION {
 <tr>
 <td width="40%"><a id="PERSISTENT_VOLUME_STATE_CONTAINS_BACKING_WIM"></a><a id="persistent_volume_state_contains_backing_wim"></a><dl>
 
-### -field <b>PERSISTENT_VOLUME_STATE_CONTAINS_BACKING_WIM</b>
+### -field PERSISTENT_VOLUME_STATE_CONTAINS_BACKING_WIM
 
 
 ### -field 0x00000020
@@ -158,7 +158,7 @@ typedef struct _FILE_FS_PERSISTENT_VOLUME_INFORMATION {
 <tr>
 <td width="40%"><a id="PERSISTENT_VOLUME_STATE_BACKED_BY_WIM"></a><a id="persistent_volume_state_backed_by_wim"></a><dl>
 
-### -field <b>PERSISTENT_VOLUME_STATE_BACKED_BY_WIM</b>
+### -field PERSISTENT_VOLUME_STATE_BACKED_BY_WIM
 
 
 ### -field 0x00000040
@@ -174,19 +174,19 @@ typedef struct _FILE_FS_PERSISTENT_VOLUME_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>FlagMask</b>
+### -field FlagMask
 
 <dd>
 <p>A mask value for the valid flags that can appear in <b>VolumeFlags</b>. This is a bitwise OR combination of the desired flags described for <b>VolumeFlags</b>.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of this structure. Set to 1.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Set to 0;</p>
@@ -235,4 +235,4 @@ typedef struct _FILE_FS_PERSISTENT_VOLUME_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_FS_PERSISTENT_VOLUME_INFORMATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_FS_PERSISTENT_VOLUME_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

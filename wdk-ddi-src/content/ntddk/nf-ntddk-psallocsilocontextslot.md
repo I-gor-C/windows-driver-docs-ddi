@@ -55,7 +55,7 @@ NTSTATUS PsAllocSiloContextSlot(
 ## -parameters
 <dl>
 
-### -param <i>Reserved</i> [in]
+### -param Reserved [in]
 
 <dd>
 <p>This parameter is reserved for future use and <b>must be set to zero</b>. </p>
@@ -63,7 +63,7 @@ NTSTATUS PsAllocSiloContextSlot(
 <div> </div>
 </dd>
 
-### -param <i>ReturnedContextSlot</i> [out]
+### -param ReturnedContextSlot [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the newly allocated slot index. This parameter is required and it cannot be <b>NULL</b>.</p>

@@ -57,25 +57,25 @@ typedef struct _STORAGE_DEVICE_ID_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Indicates the version of the descriptor.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Indicates the size in bytes of the descriptor.</p>
 </dd>
 
-### -field <b>NumberOfIdentifiers</b>
+### -field NumberOfIdentifiers
 
 <dd>
 <p>Contains the number of identifiers reported by the device in the <b>Identifiers</b> array.</p>
 </dd>
 
-### -field <b>Identifiers</b>
+### -field Identifiers
 
 <dd>
 <p>Contains a variable-length array of identification descriptors.</p>

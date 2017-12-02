@@ -131,79 +131,79 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Specifies the size of the <b>PORT_CONFIGURATION_INFORMATION</b> structure, in bytes. Initialized by the Storport driver, this member also serves as the structure version.</p>
 </dd>
 
-### -field <b>SystemIoBusNumber</b>
+### -field SystemIoBusNumber
 
 <dd>
 <p>Specifies the system-assigned number of the I/O bus to which the HBA is connected. Miniport drivers must not modify this member. This Storport driver assigns this value because the platform might have several I/O buses of the specified <b>AdapterInterfaceType</b>.</p>
 </dd>
 
-### -field <b>AdapterInterfaceType</b>
+### -field AdapterInterfaceType
 
 <dd>
 <p>Identifies the I/O bus interface. The Storport driver initializes this member to the value specified by the miniport driver in the <a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a>  structure. Miniport drivers must not modify this member.  </p>
 </dd>
 
-### -field <b>BusInterruptLevel</b>
+### -field BusInterruptLevel
 
 <dd>
 <p>Specifies the bus-relative interrupt request level. The Storport port driver makes no assumptions about the HBA's interrupt usage, so the default value is zero. The Storport driver initializes this member and miniport drivers must not modify it.</p>
 </dd>
 
-### -field <b>BusInterruptVector</b>
+### -field BusInterruptVector
 
 <dd>
 <p>Specifies the bus-relative vector returned by the HBA. The Storport driver makes no assumptions about the HBA's interrupt usage, so the default value is zero. This member is irrelevant to drivers that set up the <b>BusInterruptLevel</b> member for their HBAs. It is pertinent for HBAs on types of I/O buses that use interrupt vectors, such as <b>PCIBus</b>. The Storport driver initializes this member and miniport drivers must not modify it.</p>
 </dd>
 
-### -field <b>InterruptMode</b>
+### -field InterruptMode
 
 <dd>
 <p>Specifies whether the HBA uses <b>LevelSensitive</b> or <b>Latched</b> (sometimes called "edge-triggered") interrupts. The Storport driver initializes this member to an appropriate value for the bus and the device—for example, <b>LevelSensitive</b> for <b>PCIBus</b>. The Storport driver initializes this member and miniport drivers must not modify it.</p>
 </dd>
 
-### -field <b>MaximumTransferLength</b>
+### -field MaximumTransferLength
 
 <dd>
 <p>Specifies the maximum number of bytes the HBA can transfer in a single transfer operation. By default, the value of this member is SP_UNINITIALIZED_VALUE, which indicates an unlimited maximum transfer size. If its HBA has more limited transfer support, a miniport driver must reset this member according to the HBA's transfer capacity. If a miniport driver's <a href="storage.hwstorinterrupt">HwStorInterrupt</a> routine cannot disable interrupts on the HBA, this member can be adjusted during driver development to ensure that time spent in that miniport driver's ISR does not degrade overall system performance.</p>
 </dd>
 
-### -field <b>NumberOfPhysicalBreaks</b>
+### -field NumberOfPhysicalBreaks
 
 <dd>
 <p>Specifies the maximum number of physical pages the storage adapter can manage in a single transfer (in other words, the extent of its scatter/gather support). By default, the value of this member is 0x11. The miniport driver must reset this member according to the storage adapter's capability.</p>
 </dd>
 
-### -field <b>DmaChannel</b>
+### -field DmaChannel
 
 <dd>
 <p>Specifies the DMA channel used by a subordinate HBA. By default, the value of this member is SP_UNINITIALIZED_VALUE. The Storport driver initializes this member and miniport drivers must not modify it.</p>
 </dd>
 
-### -field <b>DmaPort</b>
+### -field DmaPort
 
 <dd>
 <p>Specifies the DMA port used by a subordinate HBA. By default, the value of this member is SP_UNINITIALIZED_VALUE. The Storport driver initializes this member and miniport drivers must not modify it.</p>
 </dd>
 
-### -field <b>DmaWidth</b>
+### -field DmaWidth
 
 <dd>
 <p>Specifies the width of DMA transfers if the HBA uses DMA. By default, the value of this member is zero. The Storport driver initializes this member and miniport drivers must not modify it.</p>
 </dd>
 
-### -field <b>DmaSpeed</b>
+### -field DmaSpeed
 
 <dd>
 <p>Specifies the DMA data-transfer speed for <b>Eisa</b> HBAs. The Storport driver initializes this member and miniport drivers must not modify it.</p>
 </dd>
 
-### -field <b>AlignmentMask</b>
+### -field AlignmentMask
 
 <dd>
 <p>Contains a mask indicating the alignment restrictions for buffers required by the HBA for transfer operations. Some example valid mask values are 0 (byte aligned), 1 (word aligned), 3 (DWORD aligned) and 7 (double DWORD aligned). The miniport driver should set this mask if the HBA supports scatter/gather. </p>
@@ -212,113 +212,113 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 </p>
 <dl>
 
-### -field <a id="FILE_BYTE_ALIGNMENT"></a><a id="file_byte_alignment"></a><b>FILE_BYTE_ALIGNMENT</b> (0x00000000)
+### -field FILE_BYTE_ALIGNMENT (0x00000000)
 
 
-### -field <a id="FILE_WORD_ALIGNMENT"></a><a id="file_word_alignment"></a><b>FILE_WORD_ALIGNMENT</b> (0x00000001)
+### -field FILE_WORD_ALIGNMENT (0x00000001)
 
 
-### -field <a id="FILE_LONG_ALIGNMENT"></a><a id="file_long_alignment"></a><b>FILE_LONG_ALIGNMENT</b> (0x00000003)
+### -field FILE_LONG_ALIGNMENT (0x00000003)
 
 
-### -field <a id="FILE_QUAD_ALIGNMENT"></a><a id="file_quad_alignment"></a><b>FILE_QUAD_ALIGNMENT</b> (0x00000007)
+### -field FILE_QUAD_ALIGNMENT (0x00000007)
 
 
-### -field <a id="FILE_OCTA_ALIGNMENT"></a><a id="file_octa_alignment"></a><b>FILE_OCTA_ALIGNMENT</b> (0x0000000f)
+### -field FILE_OCTA_ALIGNMENT (0x0000000f)
 
 
-### -field <a id="FILE_32_BYTE_ALIGNMENT"></a><a id="file_32_byte_alignment"></a><b>FILE_32_BYTE_ALIGNMENT</b> (0x0000001f)
+### -field FILE_32_BYTE_ALIGNMENT (0x0000001f)
 
 
-### -field <a id="FILE_64_BYTE_ALIGNMENT"></a><a id="file_64_byte_alignment"></a><b>FILE_64_BYTE_ALIGNMENT</b> (0x0000003f)
+### -field FILE_64_BYTE_ALIGNMENT (0x0000003f)
 
 
-### -field <a id="FILE_128_BYTE_ALIGNMENT"></a><a id="file_128_byte_alignment"></a><b>FILE_128_BYTE_ALIGNMENT</b> (0x0000007f)
+### -field FILE_128_BYTE_ALIGNMENT (0x0000007f)
 
 
-### -field <a id="FILE_256_BYTE_ALIGNMENT"></a><a id="file_256_byte_alignment"></a><b>FILE_256_BYTE_ALIGNMENT</b> (0x000000ff)
+### -field FILE_256_BYTE_ALIGNMENT (0x000000ff)
 
 
-### -field <a id="FILE_512_BYTE_ALIGNMENT"></a><a id="file_512_byte_alignment"></a><b>FILE_512_BYTE_ALIGNMENT</b> (0x000001ff)
+### -field FILE_512_BYTE_ALIGNMENT (0x000001ff)
 
 </dl>
 </dd>
 
-### -field <b>NumberOfAccessRanges</b>
+### -field NumberOfAccessRanges
 
 <dd>
 <p>Specifies the number of <b>AccessRanges</b> elements in the array, described next. </p>
 </dd>
 
-### -field <b>(*AccessRanges)</b>
+### -field (*AccessRanges)
 
 <dd>
 <p>Pointer to an array of <a href="..\srb\ns-srb--access-range.md">ACCESS_RANGE</a>-type elements. The Storport driver allocates memory for the access ranges and initializes this member. Mniport drivers must not modify this member.</p>
 </dd>
 
-### -field <b>MiniportDumpData</b>
+### -field MiniportDumpData
 
 <dd>
 <p>Pointer to a dump context used during a crashdump or a hibernation.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>NumberOfBuses</b>
+### -field NumberOfBuses
 
 <dd>
 <p>Specifies the number of buses controlled by the adapter. By default, the value of this member is zero. This member has a maximum value of SCSI_MAXIMUM_BUSES_PER_ADAPTER. </p>
 </dd>
 
-### -field <b>InitiatorBusId</b>
+### -field InitiatorBusId
 
 <dd>
 <p>Indicates the initiator bus ID. If the input <b>InitiatorBusId</b>[0] has the value SP_UNINITIALIZED_VALUE, the miniport driver can assign a default value if its HBA does not require the use of particular value(s) determined by querying the HBA. Otherwise, the miniport driver should use any nonzero value assigned by the port driver if possible. Typically, this value is bounded by the value set for <b>MaximumNumberOfTargets</b>. </p>
 </dd>
 
-### -field <b>ScatterGather</b>
+### -field ScatterGather
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the HBA supports scatter/gather. The Storport driver initializes this member to <b>TRUE</b>, because its miniport drivers must support scatter/gather. Miniport drivers that work with the Storport driver must <i>not</i> modify this value.</p>
 <p>Starting in Windows Server 2008 R2 and Windows 7, the Storport driver initializes this member to <b>TRUE</b>. In prior versions of Windows, however, the value is set to <b>FALSE</b>. In this case, miniport drivers must set this member to <b>TRUE</b>. Otherwise, not setting this member to <b>TRUE</b> will cause the HBA device to fail to start.</p>
 </dd>
 
-### -field <b>Master</b>
+### -field Master
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the HBA is a bus master. The Storport driver initializes this member to <b>TRUE</b>, because its miniport drivers must support bus-mastering DMA. Miniport drivers that work with the Storport driver must <i>not</i> modify this value. </p>
 <p>Starting in Windows Server 2008 R2 and Windows 7, the Storport driver initializes this member to <b>TRUE</b>. In prior versions of Windows, however, the value is set to <b>FALSE</b>. In this case, miniport drivers must set this member to <b>TRUE</b>. Otherwise, not setting this member to <b>TRUE</b> will cause the HBA device to fail to start.</p>
 </dd>
 
-### -field <b>CachesData</b>
+### -field CachesData
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the HBA caches data or maintains cached state on the peripherals. When <b>FALSE</b> the HBA does not cache data or maintain cached state on the peripherals. By default, the value of this member is <b>FALSE</b>. If this is reset to <b>TRUE</b>, the Storport port driver notifies the miniport driver when certain system events occur, such as file system cache flushes. </p>
 </dd>
 
-### -field <b>AdapterScansDown</b>
+### -field AdapterScansDown
 
 <dd>
 <p>The Storport driver ignores this member. </p>
 </dd>
 
-### -field <b>AtdiskPrimaryClaimed</b>
+### -field AtdiskPrimaryClaimed
 
 <dd>
 <p>The Storport driver does not use this member, and its miniport drivers must not set it. </p>
 </dd>
 
-### -field <b>AtdiskSecondaryClaimed</b>
+### -field AtdiskSecondaryClaimed
 
 <dd>
 <p>The Storport driver does not use this member, and its miniport drivers must not set it. </p>
 </dd>
 
-### -field <b>Dma32BitAddresses</b>
+### -field Dma32BitAddresses
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the HBA has 32 address lines and can access memory with physical addresses greater than 0x00FFFFFF. The Storport driver initializes this member to <b>TRUE</b>, because its miniport drivers must support bus-width DMA. Miniport drivers must not modify this value since this the default DMA addressing if a value for <b>Dma64BitAddresses</b> is not set. </p>
@@ -326,13 +326,13 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 <div> </div>
 </dd>
 
-### -field <b>DemandMode</b>
+### -field DemandMode
 
 <dd>
 <p>Indicates the system DMA controller should be programmed for demand-mode rather than single-cycle operations. The Storport driver initializes this member to <b>FALSE</b>, because it does not support subordinate-mode DMA. Miniport drivers must not modify this value.</p>
 </dd>
 
-### -field <b>MapBuffers</b>
+### -field MapBuffers
 
 <dd>
 <p>Indicates whether the Storport driver maps SRB data buffer addresses to system virtual addresses. The miniport driver sets this member to one of the following values to control mapping for SRB data buffer addresses.</p>
@@ -344,7 +344,7 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 <tr>
 <td width="40%"><a id="STOR_MAP_NO_BUFFERS"></a><a id="stor_map_no_buffers"></a><dl>
 
-### -field <b>STOR_MAP_NO_BUFFERS</b>
+### -field STOR_MAP_NO_BUFFERS
 
 </dl>
 </td>
@@ -355,7 +355,7 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 <tr>
 <td width="40%"><a id="STOR_MAP_ALL_BUFFERS"></a><a id="stor_map_all_buffers"></a><dl>
 
-### -field <b>STOR_MAP_ALL_BUFFERS</b>
+### -field STOR_MAP_ALL_BUFFERS
 
 </dl>
 </td>
@@ -366,7 +366,7 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 <tr>
 <td width="40%"><a id="STOR_MAP_NON_READ_WRITE_BUFFERS"></a><a id="stor_map_non_read_write_buffers"></a><dl>
 
-### -field <b>STOR_MAP_NON_READ_WRITE_BUFFERS</b>
+### -field STOR_MAP_NON_READ_WRITE_BUFFERS
 
 </dl>
 </td>
@@ -377,7 +377,7 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 <tr>
 <td width="40%"><a id="STOR_MAP_ALL_BUFFERS_INCLUDING_READ_WRITE"></a><a id="stor_map_all_buffers_including_read_write"></a><dl>
 
-### -field <b>STOR_MAP_ALL_BUFFERS_INCLUDING_READ_WRITE</b>
+### -field STOR_MAP_ALL_BUFFERS_INCLUDING_READ_WRITE
 
 </dl>
 </td>
@@ -394,55 +394,55 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>NeedPhysicalAddresses</b>
+### -field NeedPhysicalAddresses
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the miniport driver must translate virtual addresses to physical addresses, as required by the HBA. The Storport driver initializes this member to <b>TRUE</b>, because its miniport drivers must support scatter/gather lists. Miniport must not modify this value. </p>
 </dd>
 
-### -field <b>TaggedQueuing</b>
+### -field TaggedQueuing
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the HBA supports queuing of multiple requests with SCSI tags. The Storport driver initializes this member to <b>TRUE</b>, because its miniport drivers must support tagged-queuing. Miniport drivers must not modify this value.</p>
 </dd>
 
-### -field <b>AutoRequestSense</b>
+### -field AutoRequestSense
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the HBA supports auto request sense. The Storport driver initializes this member to <b>TRUE</b>, because its miniport drivers must support auto-request sense. Miniport drivers must not modify this value. </p>
 </dd>
 
-### -field <b>MultipleRequestPerLu</b>
+### -field MultipleRequestPerLu
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the HBA supports multiple requests per logical unit. The Storport driver initializes this member to <b>TRUE</b>, because its miniport drivers must support multiple requests issued to a logical unit at time. Miniport drivers must not modify this value. </p>
 </dd>
 
-### -field <b>ReceiveEvent</b>
+### -field ReceiveEvent
 
 <dd>
 <p>The Storport driver does not use this member, and its miniport drivers must not set it. </p>
 </dd>
 
-### -field <b>RealModeInitialized</b>
+### -field RealModeInitialized
 
 <dd>
 <p>The Storport driver does not use this member, and its miniport drivers must not set it. </p>
 </dd>
 
-### -field <b>BufferAccessScsiPortControlled</b>
+### -field BufferAccessScsiPortControlled
 
 <dd>
 <p>The Storport driver does not use this member, and its miniport drivers must not set it. </p>
 </dd>
 
-### -field <b>MaximumNumberOfTargets</b>
+### -field MaximumNumberOfTargets
 
 <dd>
 <p>Specifies the number of target peripherals the adapter can control. By default, the value of this member is SCSI_MAXIMUM_TARGETS_PER_BUS. A miniport driver can reset this member to a lesser value if the HBA has more limited capabilities or to a greater value, indicating that the HBA has extended bus capabilities. The maximum value for this member is 255.</p>
 </dd>
 
-### -field <b>SrbType</b>
+### -field SrbType
 
 <dd>
 <p>The type of SRBs to be sent to the miniport driver. This is set to either of these values:</p>
@@ -454,7 +454,7 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 <tr>
 <td width="40%"><a id="SRB_TYPE_SCSI_REQUEST_BLOCK"></a><a id="srb_type_scsi_request_block"></a><dl>
 
-### -field <b>SRB_TYPE_SCSI_REQUEST_BLOCK</b>
+### -field SRB_TYPE_SCSI_REQUEST_BLOCK
 
 </dl>
 </td>
@@ -465,7 +465,7 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 <tr>
 <td width="40%"><a id="SRB_TYPE_STORAGE_REQUEST_BLOCK"></a><a id="srb_type_storage_request_block"></a><dl>
 
-### -field <b>SRB_TYPE_STORAGE_REQUEST_BLOCK</b>
+### -field SRB_TYPE_STORAGE_REQUEST_BLOCK
 
 </dl>
 </td>
@@ -477,7 +477,7 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>AddressType</b>
+### -field AddressType
 
 <dd>
 <p>The address type used between Storport and the miniport driver. Currently, only on address type is supported and member is  set to STORAGE_ADDRESS_TYPE_BTL8.</p>
@@ -489,7 +489,7 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 <tr>
 <td width="40%"><a id="STORAGE_ADDRESS_TYPE_BTL8"></a><a id="storage_address_type_btl8"></a><dl>
 
-### -field <b>STORAGE_ADDRESS_TYPE_BTL8</b>
+### -field STORAGE_ADDRESS_TYPE_BTL8
 
 </dl>
 </td>
@@ -501,81 +501,81 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>ReservedUchars</b>
+### -field ReservedUchars
 
 <dd>
 <p>Reserved for system use. </p>
 </dd>
 
-### -field <b>SlotNumber</b>
+### -field SlotNumber
 
 <dd>
 <p>Initialized and reserved for use by the Storport driver. Miniport drivers must not modify this member.</p>
 </dd>
 
-### -field <b>BusInterruptLevel2</b>
+### -field BusInterruptLevel2
 
 <dd>
 <p>Initialized and reserved for use by the Storport driver. Miniport drivers must not modify this member.</p>
 </dd>
 
-### -field <b>BusInterruptVector2</b>
+### -field BusInterruptVector2
 
 <dd>
 <p>Initialized and reserved for use by the Storport driver. Miniport drivers must not modify this member.</p>
 </dd>
 
-### -field <b>InterruptMode2</b>
+### -field InterruptMode2
 
 <dd>
 <p>Initialized and reserved for use by the Storport driver. Miniport drivers must not modify this member.</p>
 </dd>
 
-### -field <b>DmaChannel2</b>
+### -field DmaChannel2
 
 <dd>
 <p>Initialized and reserved for use by the Storport driver. Miniport drivers must not modify this member.</p>
 </dd>
 
-### -field <b>DmaPort2</b>
+### -field DmaPort2
 
 <dd>
 <p>Initialized and reserved for use by the Storport driver. Miniport drivers must not modify this member.</p>
 </dd>
 
-### -field <b>DmaWidth2</b>
+### -field DmaWidth2
 
 <dd>
 <p>Initialized and reserved for use by the Storport driver. Miniport drivers must not modify this member.</p>
 </dd>
 
-### -field <b>DmaSpeed2</b>
+### -field DmaSpeed2
 
 <dd>
 <p>Initialized and reserved for use by the Storport driver. Miniport drivers must not modify this member.</p>
 </dd>
 
-### -field <b>DeviceExtensionSize</b>
+### -field DeviceExtensionSize
 
 <dd>
 <p>Specifies the size, in bytes, required by the miniport driver for its per-adapter device extension. A miniport driver uses its device extension as storage for driver-determined host bus adapter (HBA) information. The operating system-specific port driver initializes each device extension one time, when it first allocates the extension, and fills it with zeros. It passes a pointer to the HBA-specific device extension in every call to a miniport driver. The given size does not include any miniport driver-requested per-logical-unit storage. The size of per-logical-unit storage is specified via the <b>SpecificLuExtensionSize</b> field, described later in this topic.</p>
 <p>Although SCSIPort re-initializes the device extension whenever the adapter is stopped and thus subsequent calls to <a href="storage.hwscsifindadapter">HwScsiFindAdapter</a> receive a zeroed-out device extension, Storport does not follow that model. Rather, Storport resets the device extension to zero only when it is first allocated, so only the first call to <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> for a given adapter receives a zeroed-out device extension. Subsequent calls to <b>HwStorFindAdapter</b> and other miniport functions receive the device extension as last modified by the miniport driver. This allows the miniport driver to maintain knowledge about the state of the adapter between Plug and Play (PnP) stops and restarts, possibly enabling the miniport driver to optimize it's initialization procedure.</p>
 </dd>
 
-### -field <b>SpecificLuExtensionSize</b>
+### -field SpecificLuExtensionSize
 
 <dd>
 <p>This member specifies the size in bytes required by the miniport driver for its per-logical-unit-storage, if any, to handle data transfers larger than 64K. The Storport driver initializes this member to the value in the same member of the <a href="storage.hw_initialization_data__storport_">HW_INITIALIAZATION_DATA</a> structure sent in the <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a> routine.  Set this member to zero if the miniport driver does not maintain per-LU information for which it requires storage. This value is based on the assumption that the HBA is able to receive 32-bit addresses, regardless of what the controller can actually support. If additional space is needed in the LUN or SRB extensions to handle 64-bit addresses, then appropriate adjustments must be made to this value before using it with routines such as <a href="..\storport\nf-storport-storportgetuncachedextension.md">StorPortGetUncachedExtension</a>
 </p>
 </dd>
 
-### -field <b>SrbExtensionSize</b>
+### -field SrbExtensionSize
 
 <dd>
 <p>Specifies the size in bytes required by the miniport driver for its per-request storage, if any, to handle data transfers larger than 64K.  The Storport driver initializes this member to the value in the same member of the <a href="storage.hw_initialization_data__storport_">HW_INITIALIAZATION_DATA</a> structure sent in the <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a> routine. Set this member before calling <a href="..\storport\nf-storport-storportgetuncachedextension.md">StorPortGetUncachedExtension</a> to change the size of per-request storage based on <b>NumberOfPhysicalBreaks</b>. Set this member to zero if the miniport driver does not maintain per-SRB information for which it requires storage. This value is based on the assumption that the HBA is able to receive 32-bit addresses, regardless of what the controller can actually support. If additional space is needed in the LUN or SRB extensions to handle 64-bit addresses, then appropriate adjustments must be made to this value before using it with routines such as <b>StorPortGetUncachedExtension</b></p>
 </dd>
 
-### -field <b>Dma64BitAddresses</b>
+### -field Dma64BitAddresses
 
 <dd>
 <p>Indicates whether the HBA is able to access addresses greater than 4 GB. Storport adapters are required to support bus-width DMA. Therefore, on a 64-bit or PAE machine, the Storport driver initializes this member to <b>SCSI_DMA64_SYSTEM_SUPPORTED</b> indicating that the adapter can access the full range of addresses. When miniport drivers detect this value, they must return one of the values in the following table in the same member to indicate to the port driver that the miniport driver supports 64-bit DMA. If the miniport fails to do this, it might severely degrade the performance of the adapter. </p>
@@ -589,7 +589,7 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 <tr>
 <td width="40%"><a id="SCSI_DMA64_MINIPORT_SUPPORTED"></a><a id="scsi_dma64_miniport_supported"></a><dl>
 
-### -field <b>SCSI_DMA64_MINIPORT_SUPPORTED</b>
+### -field SCSI_DMA64_MINIPORT_SUPPORTED
 
 </dl>
 </td>
@@ -600,7 +600,7 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 <tr>
 <td width="40%"><a id="SCSI_DMA64_MINIPORT_FULL64BIT_SUPPORTED"></a><a id="scsi_dma64_miniport_full64bit_supported"></a><dl>
 
-### -field <b>SCSI_DMA64_MINIPORT_FULL64BIT_SUPPORTED</b>
+### -field SCSI_DMA64_MINIPORT_FULL64BIT_SUPPORTED
 
 </dl>
 </td>
@@ -616,7 +616,7 @@ Allocations are restricted to 4GB boundary alignment in order to prevent them fr
 <tr>
 <td width="40%"><a id="SCSI_DMA64_MINIPORT_FULL64BIT_NO_BOUNDARY_REQ_SUPPORTED"></a><a id="scsi_dma64_miniport_full64bit_no_boundary_req_supported"></a><dl>
 
-### -field <b>SCSI_DMA64_MINIPORT_FULL64BIT_NO_BOUNDARY_REQ_SUPPORTED</b>
+### -field SCSI_DMA64_MINIPORT_FULL64BIT_NO_BOUNDARY_REQ_SUPPORTED
 
 </dl>
 </td>
@@ -632,7 +632,7 @@ Allocations have no boundary alignment requirement.
 <tr>
 <td width="40%"><a id="SCSI_DMA64_MINIPORT_64BIT_ONE_4GB_SUPPORTED"></a><a id="scsi_dma64_miniport_64bit_one_4gb_supported"></a><dl>
 
-### -field <b>SCSI_DMA64_MINIPORT_64BIT_ONE_4GB_SUPPORTED</b>
+### -field SCSI_DMA64_MINIPORT_64BIT_ONE_4GB_SUPPORTED
 
 </dl>
 </td>
@@ -646,26 +646,26 @@ I/O requests, uncached extension, <b>SenseInfo</b>, and <b>SrbExtension</b> may 
 <p> </p>
 </dd>
 
-### -field <b>ResetTargetSupported</b>
+### -field ResetTargetSupported
 
 <dd>
 <p>Obsolete. Do not use this member.</p>
 </dd>
 
-### -field <b>MaximumNumberOfLogicalUnits</b>
+### -field MaximumNumberOfLogicalUnits
 
 <dd>
 <p>Specifies the maximum number of logical units per target the HBA can control. By default, the value of this member is SCSI_MAXIMUM_LOGICAL_UNITS. A miniport driver can reset this member to a lesser value if the HBA has more limited capabilities or to a greater value, indicating that the HBA has extended  capabilities. The maximum value for this member is SCSI_MAXIMUM_LUNS_PER_TARGET.</p>
 </dd>
 
-### -field <b>WmiDataProvider</b>
+### -field WmiDataProvider
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the miniport driver responds to Windows Management Instrumentation (WMI) requests. The Storport driver initializes this member to <b>TRUE</b>, because its miniport drivers must support WMI. Additionally, miniport drivers for fibre channel adapters are expected to support the SAN Management HBA API through WMI, and miniport drivers for host-based RAID adapters are required to support the RAID Management Interface. </p>
 <p>Miniport drivers must not modify this value.</p>
 </dd>
 
-### -field <b>SynchronizationModel</b>
+### -field SynchronizationModel
 
 <dd>
 <p>Specifies the I/O synchronization model the miniport driver supports. The possible values are as follows:</p>
@@ -694,37 +694,37 @@ I/O requests, uncached extension, <b>SenseInfo</b>, and <b>SrbExtension</b> may 
 <p> </p>
 </dd>
 
-### -field <b>HwMSInterruptRoutine</b>
+### -field HwMSInterruptRoutine
 
 <dd>
 <p>A pointer to the miniport driver's <a href="storage.hwmsinterruptroutine">HwMSInterruptRoutine</a>. This is a required routine for any miniport driver of an HBA that generates message signaled interrupts (MSIs). A miniport driver sets this member to <b>NULL</b> if the HBA does not generate MSIs.</p>
 </dd>
 
-### -field <b>InterruptSynchronizationMode</b>
+### -field InterruptSynchronizationMode
 
 <dd>
 <p>A value of type <a href="..\storport\ne-storport--interrupt-synchronization-mode.md">INTERRUPT_SYNCHRONIZATION_MODE</a> that specifies the interrupt synchronization mode. The interrupt synchronization mode determines how the port driver synchronizes message signaled interrupts.</p>
 </dd>
 
-### -field <b>DumpRegion</b>
+### -field DumpRegion
 
 <dd>
 <p>A structure of type <a href="..\storport\ns-storport--memory-region.md">MEMORY_REGION</a> that describes a region of physically contiguous memory that miniport drivers can use during a crash dump or hibernation.</p>
 </dd>
 
-### -field <b>RequestedDumpBufferSize</b>
+### -field RequestedDumpBufferSize
 
 <dd>
 <p>Size of the uncached extension to be allocated for use during dump/hibernation.</p>
 </dd>
 
-### -field <b>VirtualDevice</b>
+### -field VirtualDevice
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that there is no real hardware behind this device (for example, no DMA object, interrupt, I/O ports). Storport behaves differently in some circumstances when it supports a "virtual" miniport instead of a miniport that is controlling real hardware.</p>
 </dd>
 
-### -field <b>DumpMode</b>
+### -field DumpMode
 
 <dd>
 <p>A value indicating the use of the miniport during dump mode. This member is included starting with Windows 8. It can have one of the following values.</p>
@@ -736,7 +736,7 @@ I/O requests, uncached extension, <b>SenseInfo</b>, and <b>SrbExtension</b> may 
 <tr>
 <td width="40%"><a id="DUMP_MODE_CRASH"></a><a id="dump_mode_crash"></a><dl>
 
-### -field <b>DUMP_MODE_CRASH</b>
+### -field DUMP_MODE_CRASH
 
 </dl>
 </td>
@@ -747,7 +747,7 @@ I/O requests, uncached extension, <b>SenseInfo</b>, and <b>SrbExtension</b> may 
 <tr>
 <td width="40%"><a id="DUMP_MODE_HIBER"></a><a id="dump_mode_hiber"></a><dl>
 
-### -field <b>DUMP_MODE_HIBER</b>
+### -field DUMP_MODE_HIBER
 
 </dl>
 </td>
@@ -758,7 +758,7 @@ I/O requests, uncached extension, <b>SenseInfo</b>, and <b>SrbExtension</b> may 
 <tr>
 <td width="40%"><a id="DUMP_MODE_MARK_MEMORY"></a><a id="dump_mode_mark_memory"></a><dl>
 
-### -field <b>DUMP_MODE_MARK_MEMORY</b>
+### -field DUMP_MODE_MARK_MEMORY
 
 </dl>
 </td>
@@ -769,7 +769,7 @@ I/O requests, uncached extension, <b>SenseInfo</b>, and <b>SrbExtension</b> may 
 <tr>
 <td width="40%"><a id="DUMP_MODE_RESUME"></a><a id="dump_mode_resume"></a><dl>
 
-### -field <b>DUMP_MODE_RESUME</b>
+### -field DUMP_MODE_RESUME
 
 </dl>
 </td>
@@ -781,13 +781,13 @@ I/O requests, uncached extension, <b>SenseInfo</b>, and <b>SrbExtension</b> may 
 <p> </p>
 </dd>
 
-### -field <b>ExtendedFlags1</b>
+### -field ExtendedFlags1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>MaxNumberOfIO</b>
+### -field MaxNumberOfIO
 
 <dd>
 <p>The maximum number of outstanding I/O operations supported by the HBA. The default is set to 1000 by Storport. If the HBA does not support 1000 outstanding I/O operations, the miniport should adjust this to an appropriate smaller value.</p>
@@ -800,7 +800,7 @@ I/O requests, uncached extension, <b>SenseInfo</b>, and <b>SrbExtension</b> may 
 <p>Prior to Windows 8, this member is reserved.</p>
 </dd>
 
-### -field <b>MaxIOsPerLun</b>
+### -field MaxIOsPerLun
 
 <dd>
 <p>The maximum number of I/O requests supported on a LUN. The Storport driver will set this to a default value of 255. If a LUN does not support 255 outstanding I/O requests, the miniport should adjust this to an appropriate smaller value. This member must be &lt;= <b>MaxNumberOfIO</b>.</p>
@@ -808,19 +808,19 @@ I/O requests, uncached extension, <b>SenseInfo</b>, and <b>SrbExtension</b> may 
 <div> </div>
 </dd>
 
-### -field <b>InitialLunQueueDepth</b>
+### -field InitialLunQueueDepth
 
 <dd>
 <p>The initial LUN I/O queue depth. Storport set this to a default value of 20 for physical miniports and to 250 for virtual miniports. This member adjusts the initial queue depth for all LUNs on the adapter. The queue depth for an individual LUN is set by calling <a href="..\storport\nf-storport-storportsetdevicequeuedepth.md">StorPortSetDeviceQueueDepth</a>. This member is typically set to the same value as <b>MaxIOsPerLun</b>.</p>
 </dd>
 
-### -field <b>BusResetHoldTime</b>
+### -field BusResetHoldTime
 
 <dd>
 <p>The amount of time, in microseconds, to pause the adapter after a reset is detected. Set this value to 0 if no wait time is needed after a bus reset.</p>
 </dd>
 
-### -field <b>FeatureSupport</b>
+### -field FeatureSupport
 
 <dd>
 <p>Storport features requested for the adapter.</p>
@@ -832,7 +832,7 @@ I/O requests, uncached extension, <b>SenseInfo</b>, and <b>SrbExtension</b> may 
 <tr>
 <td width="40%"><a id="STOR_ADAPTER_FEATURE_RESERVED"></a><a id="stor_adapter_feature_reserved"></a><dl>
 
-### -field <b>STOR_ADAPTER_FEATURE_RESERVED</b>
+### -field STOR_ADAPTER_FEATURE_RESERVED
 
 </dl>
 </td>
@@ -843,7 +843,7 @@ I/O requests, uncached extension, <b>SenseInfo</b>, and <b>SrbExtension</b> may 
 <tr>
 <td width="40%"><a id="STOR_ADAPTER_FEATURE_STOP_UNIT_DURING_POWER_DOWN"></a><a id="stor_adapter_feature_stop_unit_during_power_down"></a><dl>
 
-### -field <b>STOR_ADAPTER_FEATURE_STOP_UNIT_DURING_POWER_DOWN</b>
+### -field STOR_ADAPTER_FEATURE_STOP_UNIT_DURING_POWER_DOWN
 
 </dl>
 </td>

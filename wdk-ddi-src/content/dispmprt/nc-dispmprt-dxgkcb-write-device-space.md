@@ -62,38 +62,38 @@ NTSTATUS DxgkCbWriteDeviceSpace(
 ## -parameters
 <dl>
 
-### -param <i>DeviceHandle</i> [in]
+### -param DeviceHandle [in]
 
 <dd>
 <p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
 </dd>
 
-### -param <i>DataType</i> [in]
+### -param DataType [in]
 
 <dd>
 <p>The type of write transaction to be performed. This parameter must be one of the following values, which are defined in <i>Dispmprt.h</i>:</p>
 <p></p>
 <dl>
 
-### -param <a id="DXGK_WHICHSPACE_BRIDGE"></a><a id="dxgk_whichspace_bridge"></a>DXGK_WHICHSPACE_BRIDGE
+### -param DXGK_WHICHSPACE_BRIDGE
 
 <dd>
 <p>Write to the parent bus device's configuration space.</p>
 </dd>
 
-### -param <a id="DXGK_WHICHSPACE_CONFIG"></a><a id="dxgk_whichspace_config"></a>DXGK_WHICHSPACE_CONFIG
+### -param DXGK_WHICHSPACE_CONFIG
 
 <dd>
 <p>Write to the display adapter's configuration space.</p>
 </dd>
 
-### -param <a id="DXGK_WHICHSPACE_MCH"></a><a id="dxgk_whichspace_mch"></a>DXGK_WHICHSPACE_MCH
+### -param DXGK_WHICHSPACE_MCH
 
 <dd>
 <p>Write to the configuration space of a memory controller hub that is a peer to the adapter's parent bus.</p>
 </dd>
 
-### -param <a id="DXGK_WHICHSPACE_ROM"></a><a id="dxgk_whichspace_rom"></a>DXGK_WHICHSPACE_ROM
+### -param DXGK_WHICHSPACE_ROM
 
 <dd>
 <p>Write to the display adapter's expansion ROM.</p>
@@ -101,25 +101,25 @@ NTSTATUS DxgkCbWriteDeviceSpace(
 </dl>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to a buffer that supplies the data to be written to the configuration space.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>The offset, in bytes, into the configuration space, at which the write transaction begins.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The number of bytes to be written.</p>
 </dd>
 
-### -param <i>BytesWritten</i> [out]
+### -param BytesWritten [out]
 
 <dd>
 <p>A pointer to a ULONG-typed variable that receives the number of bytes actually written.</p>

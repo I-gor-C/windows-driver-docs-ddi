@@ -7,7 +7,7 @@ old-location: netvista\ril_setcallbarringstatus.htm
 old-project: netvista
 ms.assetid: 2012944f-b889-4084-92c8-95c1340599f3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SetCallBarringStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,35 +64,35 @@ HRESULT  RIL_SetCallBarringStatus(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>dwType</i> 
+### -param dwType 
 
 <dd></dd>
 
-### -param <i>fAllClasses</i> 
+### -param fAllClasses 
 
 <dd></dd>
 
-### -param <i>dwInfoClasses</i> 
+### -param dwInfoClasses 
 
 <dd></dd>
 
-### -param <i>lpszPassword</i> 
+### -param lpszPassword 
 
 <dd></dd>
 
-### -param <i>dwStatus</i> 
+### -param dwStatus 
 
 <dd></dd>
 </dl>

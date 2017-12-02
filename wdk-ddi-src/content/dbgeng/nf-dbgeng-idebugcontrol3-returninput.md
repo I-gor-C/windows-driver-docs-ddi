@@ -7,7 +7,7 @@ old-location: debugger\returninput.htm
 old-project: debugger
 ms.assetid: 1f4c63da-8583-4382-a208-8279b4fe0906
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl3, ReturnInput, IDebugControl3::ReturnInput
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT ReturnInput(
 ## -parameters
 <dl>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Specifies the input string being sent to the engine.</p>
@@ -70,7 +70,7 @@ HRESULT ReturnInput(
 
 <p> </p>
 
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p>
 
 ## -remarks
 <p>For an overview of input in the debugger engine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.</p>

@@ -57,25 +57,25 @@ typedef struct _D3D12DDI_VIDEO_DECODE_REFERENCE_FRAMES_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>hDrvTexture2Ds</b>
+### -field hDrvTexture2Ds
 
 <dd>
 <p>Texture.</p>
 </dd>
 
-### -field <b>pSubresources</b>
+### -field pSubresources
 
 <dd>
 <p>Subresources.</p>
 </dd>
 
-### -field <b>hDrvVideoDecoderHeaps</b>
+### -field hDrvVideoDecoderHeaps
 
 <dd>
 <p>Video decoder heaps.</p>
 </dd>
 
-### -field <b>NumTexture2Ds</b>
+### -field NumTexture2Ds
 
 <dd>
 <p>The number of textures.</p>

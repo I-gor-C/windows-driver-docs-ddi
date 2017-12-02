@@ -64,37 +64,37 @@ NTSTATUS SeAssignSecurityEx(
 ## -parameters
 <dl>
 
-### -param <i>ParentDescriptor</i> [in, optional]
+### -param ParentDescriptor [in, optional]
 
 <dd>
 <p>Pointer to the <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> of the parent object that contains the new object being created. <i>ParentDescriptor</i> can be <b>NULL</b>, or have a <b>NULL</b> system access control list (<a href="wdkgloss.s#wdkgloss.sacl#wdkgloss.sacl">SACL</a>) or a <b>NULL</b> discretionary access control list (<a href="wdkgloss.d#wdkgloss.dacl#wdkgloss.dacl">DACL</a>).</p>
 </dd>
 
-### -param <i>ExplicitDescriptor</i> [in, optional]
+### -param ExplicitDescriptor [in, optional]
 
 <dd>
 <p>Pointer to an explicit <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> that is applied to the new object. <i>ExplicitDescriptor</i> can be <b>NULL</b>, or have a <b>NULL</b> SACL or a <b>NULL</b> DACL.</p>
 </dd>
 
-### -param <i>NewDescriptor</i> [out]
+### -param NewDescriptor [out]
 
 <dd>
 <p>Receives a pointer to the returned <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a>.  <b>SeAssignSecurityEx</b> allocates the buffer from the paged memory pool.</p>
 </dd>
 
-### -param <i>ObjectType</i> [in, optional]
+### -param ObjectType [in, optional]
 
 <dd>
 <p>Pointer to a GUID for the type of object being created. If the object does not have a GUID, <i>ObjectType</i> must be set to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>IsDirectoryObject</i> [in]
+### -param IsDirectoryObject [in]
 
 <dd>
 <p>Specifies whether the new object is a directory object. If <i>IsDirectoryObject</i> is set to <b>TRUE</b>, the new object is a directory object, otherwise the new object is not a directory object.</p>
 </dd>
 
-### -param <i>AutoInheritFlags</i> [in]
+### -param AutoInheritFlags [in]
 
 <dd>
 <p>Specifies the type of automatic inheritance that is applied to access control entries (<a href="wdkgloss.a#wdkgloss.ace#wdkgloss.ace">ACE</a>) in the access control lists (<a href="wdkgloss.a#wdkgloss.acl#wdkgloss.acl">ACL</a>) specified by <i>ParentDescriptor</i>. <i>AutoInheritFlags</i> also controls privilege checking, owner checking, and setting a default owner and group for <i>NewDescriptor</i>. <i>AutoInheritFlags</i> must be set to a logical OR of one or more of the following values:</p>
@@ -224,19 +224,19 @@ NTSTATUS SeAssignSecurityEx(
 </ol>
 </dd>
 
-### -param <i>SubjectContext</i> [in]
+### -param SubjectContext [in]
 
 <dd>
 <p>Pointer to a security context of the subject that is creating the object. <i>SubjectContext</i> is used to retrieve default security information for the new object, including the default owner, the primary group, and discretionary access control.</p>
 </dd>
 
-### -param <i>GenericMapping</i> [in]
+### -param GenericMapping [in]
 
 <dd>
 <p>Pointer to an array of access mask values that specify the mapping between each generic rights to object-specific rights.</p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>This parameter is unused.  The buffer to hold the new security descriptor is always allocated from paged pool.</p>

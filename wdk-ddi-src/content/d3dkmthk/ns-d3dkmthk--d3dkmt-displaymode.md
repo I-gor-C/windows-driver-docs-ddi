@@ -62,55 +62,55 @@ typedef struct _D3DKMT_DISPLAYMODE {
 ## -struct-fields
 <dl>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>[out] The screen width of the display mode, in pixels.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[out] The screen height of the display mode, in pixels.</p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>[out] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the display mode.</p>
 </dd>
 
-### -field <b>IntegerRefreshRate</b>
+### -field IntegerRefreshRate
 
 <dd>
 <p>[out] A UINT value that indicates the refresh rate of the display mode. </p>
 </dd>
 
-### -field <b>RefreshRate</b>
+### -field RefreshRate
 
 <dd>
 <p>[out] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-rational.md">D3DDDI_RATIONAL</a> structure that indicates the refresh rate of the display mode. </p>
 </dd>
 
-### -field <b>ScanLineOrdering</b>
+### -field ScanLineOrdering
 
 <dd>
 <p>[out] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-video-signal-scanline-ordering.md">D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING</a>-typed value that indicates how scan lines are ordered in the display mode.</p>
 </dd>
 
-### -field <b>DisplayOrientation</b>
+### -field DisplayOrientation
 
 <dd>
 <p>[out] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-rotation.md">D3DDDI_ROTATION</a>-typed value that identifies the orientation of the display mode.</p>
 </dd>
 
-### -field <b>DisplayFixedOutput</b>
+### -field DisplayFixedOutput
 
 <dd>
 <p>[out] The fixed output of the display mode.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmdt-displaymode-flags.md">D3DKMDT_DISPLAYMODE_FLAGS</a> structure that indicates information about the display mode.</p>

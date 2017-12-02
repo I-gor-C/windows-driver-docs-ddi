@@ -61,19 +61,19 @@ NTSTATUS RegisterForDataRateNotifications(
 ## -parameters
 <dl>
 
-### -param <i>hMiracastDeviceHandle</i> [in]
+### -param hMiracastDeviceHandle [in]
 
 <dd>
 <p>A handle that represents a Miracast device. The Miracast user-mode driver previously obtained this handle as the <i>hMiracastDeviceHandle</i> parameter in a call to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-create-miracast-context.md">CreateMiracastContext</a> function.</p>
 </dd>
 
-### -param <i>pNotificationContext</i> [in, optional]
+### -param pNotificationContext [in, optional]
 
 <dd>
 <p>The context that will be passed to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-datarate-notification.md">pfnDataRateNotify</a> function when the Miracast data rate changes.</p>
 </dd>
 
-### -param <i>pfnDataRateNotify</i> [in, optional]
+### -param pfnDataRateNotify [in, optional]
 
 <dd>
 <p>A pointer to the driver routine that will be called when the bit rate of the Miracast network link has changed. See Remarks for more info.</p>

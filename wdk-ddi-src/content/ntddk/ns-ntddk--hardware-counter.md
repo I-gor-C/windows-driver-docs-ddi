@@ -56,7 +56,7 @@ typedef struct _HARDWARE_COUNTER {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Specifies the type of the hardware counter. Set this member to the following <a href="..\ntddk\ne-ntddk--hardware-counter-type.md">HARDWARE_COUNTER_TYPE</a> enumeration value:</p>
@@ -67,13 +67,13 @@ typedef struct _HARDWARE_COUNTER {
 </ul>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for use by the operating system. Initialize this member to zero. </p>
 </dd>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>Specifies the hardware counter index. Each hardware counter in a performance monitoring unit (PMU) for a processor is identified by an index.</p>

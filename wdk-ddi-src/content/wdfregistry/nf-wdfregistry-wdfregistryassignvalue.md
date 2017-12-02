@@ -7,7 +7,7 @@ old-location: wdf\wdfregistryassignvalue.htm
 old-project: wdf
 ms.assetid: 3c7592ad-f4ed-496f-90bb-638f68efe4f7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfRegistryAssignValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ NTSTATUS WdfRegistryAssignValue(
 ## -parameters
 <dl>
 
-### -param <i>Key</i> [in]
+### -param Key [in]
 
 <dd>
 <p>A handle to a registry-key object that represents an opened registry key.</p>
 </dd>
 
-### -param <i>ValueName</i> [in]
+### -param ValueName [in]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains a value name. </p>
 </dd>
 
-### -param <i>ValueType</i> [in]
+### -param ValueType [in]
 
 <dd>
 <p>A value that identifies the data type. For a list of data type values, see the <b>Type</b> member of <a href="..\wdm\ns-wdm--key-value-basic-information.md">KEY_VALUE_BASIC_INFORMATION</a>.</p>
 </dd>
 
-### -param <i>ValueLength</i> [in]
+### -param ValueLength [in]
 
 <dd>
 <p>The length, in bytes, of the buffer that <i>Value</i> points to.</p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>A pointer to a buffer that contains driver-supplied data.</p>
@@ -209,4 +209,4 @@ NTSTATUS WdfRegistryAssignValue(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRegistryAssignValue method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRegistryAssignValue method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

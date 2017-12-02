@@ -62,32 +62,32 @@ typedef struct _DXVADDI_VIDEOPROCESSORCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>InputPool</b>
+### -field InputPool
 
 <dd>
 <p>[out] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-pool.md">D3DDDI_POOL</a>-typed value that indicates the memory pool from which the interlaced source surfaces should be allocated. </p>
 </dd>
 
-### -field <b>NumForwardRefSamples</b>
+### -field NumForwardRefSamples
 
 <dd>
 <p>[out] The required number of forward reference samples for the defined deinterlace mode. The samples are in subsequent fields. This value is zero for bob and line blending and can be other values (such as 1, 2, or 3) for adaptive deinterlacing and frame-rate conversion.</p>
 </dd>
 
-### -field <b>NumBackwardRefSamples</b>
+### -field NumBackwardRefSamples
 
 <dd>
 <p>[out] The required backward reference samples for the defined deinterlace mode. The samples are in former fields. This value is zero for bob, 1 for line blending and can be other values (such as 1, 2, or 3) for adaptive deinterlacing and frame-rate conversion.</p>
 </dd>
 
-### -field <b>OutputFormat</b>
+### -field OutputFormat
 
 <dd>
 <p>[out] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the uncompressed output frames. Typically, a deinterlace algorithm outputs frames in a pixel format that matches the input sample format. This member ensures that the Video Mixing Renderer (VMR) or other video renderer is able to supply the correct output frame surfaces to the deinterlacing hardware.</p>
 <p>Note that if the DXVADDI_VIDEOPROCESS_YUV2RGB value is returned in the <b>VideoProcessorOperations</b> member, the VMR determines that valid output formats are specified by this member as well as an D3DFMT_X8R8G8B8 format.</p>
 </dd>
 
-### -field <b>DeinterlaceTechnology</b>
+### -field DeinterlaceTechnology
 
 <dd>
 <p>[out] A bitwise OR of the following values to indicate the underlying deinterlacing technology that is used to implement the deinterlacing algorithm. The values can be combined as required to most closely match the algorithm's implementation.</p>
@@ -180,7 +180,7 @@ typedef struct _DXVADDI_VIDEOPROCESSORCAPS {
 <p> </p>
 </dd>
 
-### -field <b>ProcAmpControlCaps</b>
+### -field ProcAmpControlCaps
 
 <dd>
 <p>[out] A bitwise OR of the following values to indicate the ProcAmp operations that the hardware supports.</p>
@@ -233,7 +233,7 @@ typedef struct _DXVADDI_VIDEOPROCESSORCAPS {
 <p> </p>
 </dd>
 
-### -field <b>VideoProcessorOperations</b>
+### -field VideoProcessorOperations
 
 <dd>
 <p>[out] A bitwise OR of the following values to indicate which additional video processing operations the hardware can perform concurrently with the requested <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-videoprocessblt.md">VideoProcessBlt</a> operation.</p>
@@ -382,7 +382,7 @@ typedef struct _DXVADDI_VIDEOPROCESSORCAPS {
 <p> </p>
 </dd>
 
-### -field <b>NoiseFilterTechnology</b>
+### -field NoiseFilterTechnology
 
 <dd>
 <p>[out] A bitwise OR of the following values to indicate the underlying technology that is used to implement noise filtering. The values can be combined as required to most closely match the noise-filter implementation. </p>
@@ -443,7 +443,7 @@ typedef struct _DXVADDI_VIDEOPROCESSORCAPS {
 <p> </p>
 </dd>
 
-### -field <b>DetailFilterTechnology</b>
+### -field DetailFilterTechnology
 
 <dd>
 <p>[out] A bitwise OR of the following values to indicate the underlying technology that is used to implement detail filtering. The values can be combined as required to most closely match the detail-filter implementation.  </p>

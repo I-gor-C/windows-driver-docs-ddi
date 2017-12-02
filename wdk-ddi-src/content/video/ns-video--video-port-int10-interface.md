@@ -64,61 +64,61 @@ typedef struct _VIDEO_PORT_INT10_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size in bytes of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the interface to be returned by the video port driver. The current interface version is defined in <i>video.h</i> and has the form VIDEO_PORT_INT10_INTERFACE_<i>N</i>.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Pointer to a video port driver-defined context for the interface.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>Pointer to the video port driver-implemented reference routine for this interface.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>Pointer to the video port driver-implemented dereference routine for this interface.</p>
 </dd>
 
-### -field <b>Int10AllocateBuffer</b>
+### -field Int10AllocateBuffer
 
 <dd>
 <p>Pointer to the video port driver-implemented <a href="..\video\nc-video-pint10-allocate-buffer.md">Int10AllocateBuffer</a> routine.</p>
 </dd>
 
-### -field <b>Int10FreeBuffer</b>
+### -field Int10FreeBuffer
 
 <dd>
 <p>Pointer to the video port driver-implemented <a href="..\video\nc-video-pint10-free-buffer.md">Int10FreeBuffer</a> routine.</p>
 </dd>
 
-### -field <b>Int10ReadMemory</b>
+### -field Int10ReadMemory
 
 <dd>
 <p>Pointer to the video port driver-implemented <a href="..\video\nc-video-pint10-read-memory.md">Int10ReadMemory</a> routine.</p>
 </dd>
 
-### -field <b>Int10WriteMemory</b>
+### -field Int10WriteMemory
 
 <dd>
 <p>Pointer to the video port driver-implemented <a href="..\video\nc-video-pint10-write-memory.md">Int10WriteMemory</a> routine.</p>
 </dd>
 
-### -field <b>Int10CallBios</b>
+### -field Int10CallBios
 
 <dd>
 <p>Pointer to the video port driver-implemented <a href="..\video\nc-video-pint10-call-bios.md">Int10CallBios</a> routine.</p>

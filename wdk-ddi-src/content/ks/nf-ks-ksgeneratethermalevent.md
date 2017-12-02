@@ -56,13 +56,13 @@ void KSDDKAPI NTSTATUS NTAPI KsGenerateThermalEvent(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>Can be  <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a>, <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a>, or <a href="..\ks\ns-ks--kspin.md">KSPIN</a>. Depending on the object passed, the thermal notification is sent device-wide, filter-wide, or to the pin.</p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>KSDEVICE_THERMAL_STATE_LOW or KSDEVICE_THERMAL_STATE_HIGH</p>

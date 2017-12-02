@@ -56,19 +56,19 @@ typedef struct D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU {
 ## -struct-fields
 <dl>
 
-### -field <b>ObjectCount</b>
+### -field ObjectCount
 
 <dd>
 <p>[in] The number of synchronization objects in the <b>ObjectHandleArray</b> and fence values in the <b>FenceValueArray</b>. </p>
 </dd>
 
-### -field <b>ObjectHandleArray</b>
+### -field ObjectHandleArray
 
 <dd>
 <p>[in] An array of kernel-mode handles to the synchronization events to signal.</p>
 </dd>
 
-### -field <b>FenceValueArray</b>
+### -field FenceValueArray
 
 <dd>
 <p>[in] An array of 64 bit monitored fence values to signal, each corresponding to an object in the <b>ObjectHandleArray</b>.</p>

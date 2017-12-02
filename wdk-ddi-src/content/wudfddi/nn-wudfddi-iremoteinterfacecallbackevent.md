@@ -7,7 +7,7 @@ old-location: wdf\iremoteinterfacecallbackevent.htm
 old-project: wdf
 ms.assetid: 72b68ed0-d14c-44b1-b848-40c427fe6c9a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

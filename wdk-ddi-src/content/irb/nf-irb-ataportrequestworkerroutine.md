@@ -55,13 +55,13 @@ BOOLEAN __inline AtaPortRequestWorkerRoutine(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the channel extension. </p>
 </dd>
 
-### -param <i>WorkerRoutine</i> [in]
+### -param WorkerRoutine [in]
 
 <dd>
 <p>A pointer of type IDE_HW_DPC to the worker routine to call. </p>

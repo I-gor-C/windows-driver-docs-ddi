@@ -58,13 +58,13 @@ typedef struct _VPCI_READ_BLOCK_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>BlockId</b>
+### -field BlockId
 
 <dd>
 <p>A <b>ULONG</b> value that specifies the VF configuration block to be read.  This value is defined by the driver for the PCIe physical function (PF) of the device.</p>
 </dd>
 
-### -field <b>BytesRequested</b>
+### -field BytesRequested
 
 <dd>
 <p>The size, in bytes, of the buffer that receives the block.</p>

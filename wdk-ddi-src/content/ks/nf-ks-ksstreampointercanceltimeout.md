@@ -54,7 +54,7 @@ void KsStreamPointerCancelTimeout(
 ## -parameters
 <dl>
 
-### -param <i>StreamPointer</i> [in]
+### -param StreamPointer [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure representing the stream pointer for which to cancel a registered time-out callback.</p>

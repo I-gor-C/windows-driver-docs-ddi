@@ -7,7 +7,7 @@ old-location: ifsk\rxcequeryinformation.htm
 old-project: ifsk
 ms.assetid: 58dd579c-3fb8-45c7-a7bc-ca0919166153
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxCeQueryInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,38 +58,38 @@ NTSTATUS RxCeQueryInformation(
 ## -parameters
 <dl>
 
-### -param <i>pVc</i> [in]
+### -param pVc [in]
 
 <dd>
 <p>A pointer to the virtual circuit associated with this connection.</p>
 </dd>
 
-### -param <i>InformationClass</i> [in]
+### -param InformationClass [in]
 
 <dd>
 <p>The desired information class for this query type. The value specified for <i>InformationClass</i> determines the type of information that is returned. This parameter is an enumeration defined in <i>rxcehdlr.h</i> and can be one of the following values:</p>
 <p></p>
 <dl>
 
-### -param <a id="RxCeTransportProviderInformation"></a><a id="rxcetransportproviderinformation"></a><a id="RXCETRANSPORTPROVIDERINFORMATION"></a>RxCeTransportProviderInformation
+### -param RxCeTransportProviderInformation
 
 <dd>
 <p>Query the transport for provider information. An RXCE_TRANSPORT_PROVIDER_INFO structure is copied to the <i>pInformation</i> buffer on success. Note that RXCE_TRANSPORT_PROVIDER_INFO is a typedef for TDI_PROVIDER_INFO.</p>
 </dd>
 
-### -param <a id="RxCeConnectionInformation"></a><a id="rxceconnectioninformation"></a><a id="RXCECONNECTIONINFORMATION"></a>RxCeConnectionInformation
+### -param RxCeConnectionInformation
 
 <dd>
 <p>Query For information about the connection. An RXCE_CONNECTION_INFORMATION structure is copied to the <i>pInformation</i> buffer on success. Note that RXCE_CONNECTION_INFORMATION is a typedef for TDI_CONNECTION_INFORMATION.</p>
 </dd>
 
-### -param <a id="RxCeConnectionEndpointInformation"></a><a id="rxceconnectionendpointinformation"></a><a id="RXCECONNECTIONENDPOINTINFORMATION"></a>RxCeConnectionEndpointInformation
+### -param RxCeConnectionEndpointInformation
 
 <dd>
 <p>Query the transport For information about the connection endpoint. An RXCE_CONNECTION_INFO structure is copied to the <i>pInformation</i> buffer on success. Note that RXCE_CONNECTION_INFO is a typedef for TDI_CONNECTION_INFO.</p>
 </dd>
 
-### -param <a id="RxCeRemoteAddressInformation"></a><a id="rxceremoteaddressinformation"></a><a id="RXCEREMOTEADDRESSINFORMATION"></a>RxCeRemoteAddressInformation
+### -param RxCeRemoteAddressInformation
 
 <dd>
 <p>Query the transport For information about the remote address. A  TDI_ADDRESS_INFO structure is copied to the <i>pInformation</i> buffer on success. </p>
@@ -97,13 +97,13 @@ NTSTATUS RxCeQueryInformation(
 </dl>
 </dd>
 
-### -param <i>pInformation</i> [out]
+### -param pInformation [out]
 
 <dd>
 <p>The caller-supplied buffer for returning information. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length of  the buffer. </p>
@@ -191,4 +191,4 @@ NTSTATUS RxCeQueryInformation(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCeQueryInformation function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCeQueryInformation function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

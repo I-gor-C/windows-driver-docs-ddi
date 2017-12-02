@@ -7,7 +7,7 @@ old-location: ieee\irb_req_bus_reset_notification.htm
 old-project: IEEE
 ms.assetid: 3EF9BB26-81B2-4ED7-A934-AF3E73B650A0
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_BUS_RESET_NOTIFICATION, IRB_REQ_BUS_RESET_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct _IRB_REQ_BUS_RESET_NOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>fulFlags</b>
+### -field fulFlags
 
 <dd>
 <p>Specifies whether a callback should be registered or deactivated. Use REGISTER_NOTIFICATION_ROUTINE to register <b>ResetRoutine</b> as the callback. Use DEREGISTER_NOTIFICATION_ROUTINE to deactivate any previously registered callback.</p>
@@ -65,7 +65,7 @@ typedef struct _IRB_REQ_BUS_RESET_NOTIFICATION {
 <div> </div>
 </dd>
 
-### -field <b>ResetRoutine</b>
+### -field ResetRoutine
 
 <dd>
 <p>Points to the notification routine for bus resets. The notification routine parameters follow this prototype:</p>
@@ -82,7 +82,7 @@ typedef struct _IRB_REQ_BUS_RESET_NOTIFICATION {
 </table></span></div>
 </dd>
 
-### -field <b>ResetContext</b>
+### -field ResetContext
 
 <dd>
 <p>Specifies the argument to be passed to the notification routine.</p>

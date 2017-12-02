@@ -60,19 +60,19 @@ ULONG EvtSerCx2PioTransmitWriteBuffer(
 ## -parameters
 <dl>
 
-### -param <i>PioTransmit</i> [in]
+### -param PioTransmit [in]
 
 <dd>
 <p>A <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> method to create this object.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to the write buffer. This parameter is the virtual address of a locked-down buffer in system memory.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The number of bytes in the write buffer that are available to be transmitted.</p>
@@ -97,15 +97,15 @@ ULONG EvtSerCx2PioTransmitWriteBuffer(
 
 <p>If the driver implements an <a href="..\sercx\nc-sercx-evt-sercx2-pio-transmit-initialize-transaction.md">EvtSerCx2PioTransmitInitializeTransaction</a> function, SerCx2 calls this function at the start of a PIO-transmit transaction, before the first call to the <i>EvtSerCx2PioTransmitWriteBuffer</i> function. If the driver implements an <a href="..\sercx\nc-sercx-evt-sercx2-pio-transmit-cleanup-transaction.md">EvtSerCx2PioTransmitCleanupTransaction</a> function, SerCx2 calls this function at the end of a PIO-transmit transaction, after the last <i>EvtSerCx2PioTransmitWriteBuffer</i> call, and after any calls to the <a href="..\sercx\nc-sercx-evt-sercx2-pio-transmit-drain-fifo.md">EvtSerCx2PioTransmitDrainFifo</a>, <a href="..\sercx\nc-sercx-evt-sercx2-pio-transmit-cancel-drain-fifo.md">EvtSerCx2PioTransmitCancelDrainFifo</a>, and <a href="..\sercx\nc-sercx-evt-sercx2-pio-transmit-purge-fifo.md">EvtSerCx2PioTransmitPurgeFifo</a> functions, if they are implemented.</p>
 
-<p>For more information about PIO-transmit transactions, see <a href="NULL">SerCx2 PIO-Transmit Transactions</a>.</p>
+<p>For more information about PIO-transmit transactions, see <a href="https://msdn.microsoft.com/3BEF9A3D-1FEF-4626-B07F-1670359062AF">SerCx2 PIO-Transmit Transactions</a>.</p>
 
-<p>To define an <i>EvtSerCx2PioTransmitWriteBuffer</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define an <i>EvtSerCx2PioTransmitWriteBuffer</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define an <i>EvtSerCx2PioTransmitWriteBuffer</i> callback function that is named <code>MyPioTransmitWriteBuffer</code>, use the <b>EVT_SERCX2_PIO_TRANSMIT_WRITE_BUFFER</b> function type, as shown in this code example:</p>
 
 <p>Then, implement your callback function as follows:</p>
 
-<p>The <b>EVT_SERCX2_PIO_TRANSMIT_WRITE_BUFFER</b> function type is defined in the Sercx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_SERCX2_PIO_TRANSMIT_WRITE_BUFFER</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.</p>
+<p>The <b>EVT_SERCX2_PIO_TRANSMIT_WRITE_BUFFER</b> function type is defined in the Sercx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_SERCX2_PIO_TRANSMIT_WRITE_BUFFER</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.</p>
 
 ## -requirements
 <table>

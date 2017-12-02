@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>StartOfFrameTimestamp</b>
+### -field StartOfFrameTimestamp
 
 <dd>
 <p>Contains  start of frame timestamp information.</p>
 </dd>
 
-### -field <b>EndOfFrameTimestamp</b>
+### -field EndOfFrameTimestamp
 
 <dd>
 <p>Contains end of frame timestamp information.</p>

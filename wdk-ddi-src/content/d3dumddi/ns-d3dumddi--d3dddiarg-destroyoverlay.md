@@ -54,7 +54,7 @@ typedef struct _D3DDDIARG_DESTROYOVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>hOverlay</b>
+### -field hOverlay
 
 <dd>
 <p>[in] A handle to the overlay to disable.</p>

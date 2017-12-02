@@ -60,20 +60,20 @@ typedef struct _DXGK_DISCARDCONTENTFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>AllocationIsIdle</b>
+### -field AllocationIsIdle
 
 <dd>
 <p>[in] A UINT value that specifies whether the allocation that is referenced in the call to <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a> is idle. If this member is not set, the driver should determine that the allocation is either currently busy or might become busy. If this member is set, the video memory manager guarantees that the allocation remains idle for the duration of the call to <i>DxgkDdiBuildPagingBuffer</i>.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] A member in the union that DXGK_DISCARDCONTENTFLAGS contains that can hold a 32-bit value that identifies the discard-content-operation type.</p>

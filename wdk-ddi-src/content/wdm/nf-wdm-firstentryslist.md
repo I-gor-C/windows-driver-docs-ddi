@@ -55,7 +55,7 @@ PSLIST_ENTRY FirstEntrySList(
 ## -parameters
 <dl>
 
-### -param <i>SListHead</i> [in]
+### -param SListHead [in]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563810">SLIST_HEADER</a> structure that serves as the header for the sequenced singly linked list.</p>

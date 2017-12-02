@@ -7,7 +7,7 @@ old-location: wdf\iwdfdeviceinitialize_getpnpcapability.htm
 old-project: wdf
 ms.assetid: 64f15528-e934-4bdd-a9f7-6790eef7c7c5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFDeviceInitialize, GetPnpCapability, IWDFDeviceInitialize::GetPnpCapability
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ WDF_TRI_STATE GetPnpCapability(
 ## -parameters
 <dl>
 
-### -param <i>Capability</i> [in]
+### -param Capability [in]
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-pnp-capability.md">WDF_PNP_CAPABILITY</a>-typed value that identifies the PnP capability to retrieve status about. </p>
@@ -141,4 +141,4 @@ WDF_TRI_STATE GetPnpCapability(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDeviceInitialize::GetPnpCapability method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDeviceInitialize::GetPnpCapability method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

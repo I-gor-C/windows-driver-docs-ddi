@@ -7,7 +7,7 @@ old-location: wdf\wdf_power_framework_settings.htm
 old-project: wdf
 ms.assetid: 2512682A-4E1C-453F-8C46-E8979E46B8EF
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_POWER_FRAMEWORK_SETTINGS, WDF_POWER_FRAMEWORK_SETTINGS, *PWDF_POWER_FRAMEWORK_SETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,56 +65,56 @@ typedef struct _WDF_POWER_FRAMEWORK_SETTINGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>EvtDeviceWdmPostPoFxRegisterDevice</b>
+### -field EvtDeviceWdmPostPoFxRegisterDevice
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdfdevice-wdm-post-po-fx-register-device.md">EvtDeviceWdmPostPoFxRegisterDevice</a> event callback function, or NULL.</p>
 </dd>
 
-### -field <b>EvtDeviceWdmPrePoFxUnregisterDevice</b>
+### -field EvtDeviceWdmPrePoFxUnregisterDevice
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdfdevice-wdm-pre-po-fx-unregister-device.md">EvtDeviceWdmPrePoFxUnregisterDevice</a> event callback function, or NULL.</p>
 </dd>
 
-### -field <b>Component</b>
+### -field Component
 
 <dd>
 <p>A pointer to a <a href="kernel.po_fx_component">PO_FX_COMPONENT</a> structure that describes the only component
      in the single-component device, or NULL. If NULL, KMDF defaults to F0 support only for this component. This structure specifies the number and attributes of the F-states that the component supports, as well as the deepest Fx state from which the component can awaken.</p>
 </dd>
 
-### -field <b>ComponentActiveConditionCallback</b>
+### -field ComponentActiveConditionCallback
 
 <dd>
 <p>A pointer to the driver's <a href="kernel.componentactiveconditioncallback">ComponentActiveConditionCallback</a> callback routine, or NULL. The power management framework (PoFx) calls this callback function when a component becomes active. While in the Active condition, the component is guaranteed to be in F0.</p>
 </dd>
 
-### -field <b>ComponentIdleConditionCallback</b>
+### -field ComponentIdleConditionCallback
 
 <dd>
 <p>A pointer to the driver's <a href="kernel.componentidleconditioncallback">ComponentIdleConditionCallback</a> callback function, or NULL. PoFx calls this callback function when a component becomes idle. While in the Idle condition, the component may be in any F-state, including F0.</p>
 </dd>
 
-### -field <b>ComponentIdleStateCallback</b>
+### -field ComponentIdleStateCallback
 
 <dd>
 <p>A pointer to the driver's <a href="kernel.componentidlestatecallback">ComponentIdleStateCallback</a> callback function, or NULL. PoFx calls this callback function when the F-state of the component changes.</p>
 </dd>
 
-### -field <b>PowerControlCallback</b>
+### -field PowerControlCallback
 
 <dd>
 <p>A pointer to the client driver's <a href="kernel.powercontrolcallback">PowerControlCallback</a> callback function, or NULL. PoFx calls this routine to pass a request for a power control operation directly to the driver. If your driver does not support any power control codes, set this parameter to NULL.</p>
 </dd>
 
-### -field <b>PoFxDeviceContext</b>
+### -field PoFxDeviceContext
 
 <dd>
 <p>A context pointer that the framework supplies to  <a href="kernel.componentactiveconditioncallback">ComponentActiveConditionCallback</a>, 
@@ -171,4 +171,4 @@ typedef struct _WDF_POWER_FRAMEWORK_SETTINGS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_POWER_FRAMEWORK_SETTINGS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_POWER_FRAMEWORK_SETTINGS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

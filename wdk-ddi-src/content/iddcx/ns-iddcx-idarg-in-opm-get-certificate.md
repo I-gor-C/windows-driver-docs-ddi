@@ -58,7 +58,7 @@ typedef struct IDARG_IN_OPM_GET_CERTIFICATE {
 ## -struct-fields
 <dl>
 
-### -field <b>CertificateType</b>
+### -field CertificateType
 
 <dd>
 <p>
@@ -66,7 +66,7 @@ typedef struct IDARG_IN_OPM_GET_CERTIFICATE {
                  </p>
 </dd>
 
-### -field <b>CertificateBufferSizeInBytes</b>
+### -field CertificateBufferSizeInBytes
 
 <dd>
 <p>
@@ -74,7 +74,7 @@ typedef struct IDARG_IN_OPM_GET_CERTIFICATE {
                  </p>
 </dd>
 
-### -field <b>pCertificate</b>
+### -field pCertificate
 
 <dd>
 <p>

@@ -56,19 +56,19 @@ typedef struct _SendRNID_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. </p>
 </dd>
 
-### -field <b>ResponseBufferCount</b>
+### -field ResponseBufferCount
 
 <dd>
 <p>Contains the size in bytes of the results of the request node identification data (RNID) command. </p>
 </dd>
 
-### -field <b>ResponseBuffer</b>
+### -field ResponseBuffer
 
 <dd>
 <p>Contains the results of the RNID command. </p>

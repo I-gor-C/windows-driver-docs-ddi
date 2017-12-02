@@ -58,31 +58,31 @@ typedef enum _DXVA_SampleFlags {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVA_SampleFlagsMask"></a><a id="dxva_sampleflagsmask"></a><a id="DXVA_SAMPLEFLAGSMASK"></a><b>DXVA_SampleFlagsMask</b>
+### -field DXVA_SampleFlagsMask
 
 <dd>
 <p>Specifies the sample-flag mask, which consists of the first 4 bits of a DWORD. </p>
 </dd>
 
-### -field <a id="DXVA_SampleFlag_Palette_Changed"></a><a id="dxva_sampleflag_palette_changed"></a><a id="DXVA_SAMPLEFLAG_PALETTE_CHANGED"></a><b>DXVA_SampleFlag_Palette_Changed</b>
+### -field DXVA_SampleFlag_Palette_Changed
 
 <dd>
 <p>Indicates that the palette of the sample frame changed. </p>
 </dd>
 
-### -field <a id="DXVA_SampleFlag_SrcRect_Changed"></a><a id="dxva_sampleflag_srcrect_changed"></a><a id="DXVA_SAMPLEFLAG_SRCRECT_CHANGED"></a><b>DXVA_SampleFlag_SrcRect_Changed</b>
+### -field DXVA_SampleFlag_SrcRect_Changed
 
 <dd>
 <p>Indicates that the source rectangle of the sample frame changed. </p>
 </dd>
 
-### -field <a id="DXVA_SampleFlag_DstRect_Changed"></a><a id="dxva_sampleflag_dstrect_changed"></a><a id="DXVA_SAMPLEFLAG_DSTRECT_CHANGED"></a><b>DXVA_SampleFlag_DstRect_Changed</b>
+### -field DXVA_SampleFlag_DstRect_Changed
 
 <dd>
 <p>Indicates that the destination rectangle of the sample frame changed. </p>
 </dd>
 
-### -field <a id="DXVA_SampleFlag_ColorData_Changed"></a><a id="dxva_sampleflag_colordata_changed"></a><a id="DXVA_SAMPLEFLAG_COLORDATA_CHANGED"></a><b>DXVA_SampleFlag_ColorData_Changed</b>
+### -field DXVA_SampleFlag_ColorData_Changed
 
 <dd>
 <p>Indicates that the color data of the sample frame changed.</p>

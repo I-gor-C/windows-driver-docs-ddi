@@ -7,7 +7,7 @@ old-location: ifsk\rtlfreeheap.htm
 old-project: ifsk
 ms.assetid: 5e8b6bd7-71e7-45ad-985c-fe197693ce05
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlFreeHeap
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ BOOLEAN RtlFreeHeap(
 ## -parameters
 <dl>
 
-### -param <i>HeapHandle</i> [in]
+### -param HeapHandle [in]
 
 <dd>
 <p>A handle for the heap whose memory block is to be freed. This parameter is a handle returned by <a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>. </p>
 </dd>
 
-### -param <i>Flags</i> [in, optional]
+### -param Flags [in, optional]
 
 <dd>
 <p>A set of flags that controls aspects of freeing a memory block. Specifying the following value overrides the corresponding value that was specified in the <i>Flags</i> parameter when the heap was created by <a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>. </p>
@@ -83,7 +83,7 @@ BOOLEAN RtlFreeHeap(
 <p> </p>
 </dd>
 
-### -param <i>HeapBase</i> [in]
+### -param HeapBase [in]
 
 <dd>
 <p>A pointer to the memory block to free. This pointer is returned by <a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>. </p>
@@ -175,4 +175,4 @@ BOOLEAN RtlFreeHeap(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlFreeHeap routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlFreeHeap routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

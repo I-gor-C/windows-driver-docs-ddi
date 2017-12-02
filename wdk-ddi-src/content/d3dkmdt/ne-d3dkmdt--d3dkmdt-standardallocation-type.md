@@ -57,25 +57,25 @@ typedef enum _D3DKMDT_STANDARDALLOCATION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_STANDARDALLOCATION_SHAREDPRIMARYSURFACE"></a><a id="d3dkmdt_standardallocation_sharedprimarysurface"></a><b>D3DKMDT_STANDARDALLOCATION_SHAREDPRIMARYSURFACE</b>
+### -field D3DKMDT_STANDARDALLOCATION_SHAREDPRIMARYSURFACE
 
 <dd>
 <p>Indicates that the surface is a shared primary surface, which is opened by multiple applications that all require direct central processing unit (CPU) access to it.</p>
 </dd>
 
-### -field <a id="D3DKMDT_STANDARDALLOCATION_SHADOWSURFACE"></a><a id="d3dkmdt_standardallocation_shadowsurface"></a><b>D3DKMDT_STANDARDALLOCATION_SHADOWSURFACE</b>
+### -field D3DKMDT_STANDARDALLOCATION_SHADOWSURFACE
 
 <dd>
 <p>Indicates that the surface is a shadow surface.</p>
 </dd>
 
-### -field <a id="D3DKMDT_STANDARDALLOCATION_STAGINGSURFACE"></a><a id="d3dkmdt_standardallocation_stagingsurface"></a><b>D3DKMDT_STANDARDALLOCATION_STAGINGSURFACE</b>
+### -field D3DKMDT_STANDARDALLOCATION_STAGINGSURFACE
 
 <dd>
 <p>Indicates that the surface is a staging surface.</p>
 </dd>
 
-### -field <a id="D3DKMDT_STANDARDALLOCATION_GDISURFACE"></a><a id="d3dkmdt_standardallocation_gdisurface"></a><b>D3DKMDT_STANDARDALLOCATION_GDISURFACE</b>
+### -field D3DKMDT_STANDARDALLOCATION_GDISURFACE
 
 <dd>
 <p>Indicates that the surface is used for GDI hardware acceleration and Desktop Windows Manager (DWM) redirection.</p>

@@ -7,7 +7,7 @@ old-location: netvista\tcp_offload_stats.htm
 old-project: netvista
 ms.assetid: 959bc46a-c574-4130-a83d-22a695d0d891
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TCP_OFFLOAD_STATS, TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ typedef struct _TCP_OFFLOAD_STATS {
 ## -struct-fields
 <dl>
 
-### -field <b>InSegments</b>
+### -field InSegments
 
 <dd>
 <p>The total number of segments received on offloaded TCP connections, including those received in
@@ -73,7 +73,7 @@ typedef struct _TCP_OFFLOAD_STATS {
      <i>tcpInSegs</i> in RFC 1156.</p>
 </dd>
 
-### -field <b>OutSegments</b>
+### -field OutSegments
 
 <dd>
 <p>The total number of segments sent on offloaded TCP connections, including those on current
@@ -81,7 +81,7 @@ typedef struct _TCP_OFFLOAD_STATS {
      <i>tcpOutSegs</i> in RFC 1156.</p>
 </dd>
 
-### -field <b>CurrentlyEstablished</b>
+### -field CurrentlyEstablished
 
 <dd>
 <p>The number of TCP connections for which the current state is either ESTABLISHED or CLOSE-WAIT. See
@@ -89,14 +89,14 @@ typedef struct _TCP_OFFLOAD_STATS {
      <i>tcpCurrEstab</i> in RFC 1156.</p>
 </dd>
 
-### -field <b>ResetEstablished</b>
+### -field ResetEstablished
 
 <dd>
 <p>The number of times that offloaded TCP connections have made a direct transition to the CLOSED
      state from either the ESTABLISHED state or the CLOSE-WAIT state.</p>
 </dd>
 
-### -field <b>RetransmittedSegments</b>
+### -field RetransmittedSegments
 
 <dd>
 <p>The total number of segments retransmitted on offloaded TCP connections--that is, the number of
@@ -104,7 +104,7 @@ typedef struct _TCP_OFFLOAD_STATS {
      <i>tcpRetransSegs</i> in RFC 1156.</p>
 </dd>
 
-### -field <b>InErrors</b>
+### -field InErrors
 
 <dd>
 <p>The number of packets received on offloaded TCP connections that contained one or more
@@ -112,7 +112,7 @@ typedef struct _TCP_OFFLOAD_STATS {
      <i>ifInErrors</i> in RFC 1156.</p>
 </dd>
 
-### -field <b>OutResets</b>
+### -field OutResets
 
 <dd>
 <p>The number of segments transmitted on offloaded TCP connections with the RST bit set in the TCP
@@ -188,4 +188,4 @@ typedef struct _TCP_OFFLOAD_STATS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

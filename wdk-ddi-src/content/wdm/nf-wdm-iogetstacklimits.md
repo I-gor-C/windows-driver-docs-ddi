@@ -56,13 +56,13 @@ VOID IoGetStackLimits(
 ## -parameters
 <dl>
 
-### -param <i>LowLimit</i> [out]
+### -param LowLimit [out]
 
 <dd>
 <p>Pointer to a caller-supplied variable in which this routine returns the lower offset of the current thread's stack frame.</p>
 </dd>
 
-### -param <i>HighLimit</i> [out]
+### -param HighLimit [out]
 
 <dd>
 <p>Pointer to a caller-supplied variable in which this routine returns the higher offset of the current thread's stack frame.</p>

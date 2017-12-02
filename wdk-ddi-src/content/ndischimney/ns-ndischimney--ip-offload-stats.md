@@ -7,7 +7,7 @@ old-location: netvista\ip_offload_stats.htm
 old-project: netvista
 ms.assetid: f40c5734-2546-40c3-a6fb-58f728c3cc5e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IP_OFFLOAD_STATS, IP_OFFLOAD_STATS, *PIP_OFFLOAD_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ typedef struct _IP_OFFLOAD_STATS {
 ## -struct-fields
 <dl>
 
-### -field <b>InReceives</b>
+### -field InReceives
 
 <dd>
 <p>The total number of input IP datagrams that have been received from the interface on offloaded TCP
@@ -75,7 +75,7 @@ typedef struct _IP_OFFLOAD_STATS {
      "ipInReceives" in RFC 2011.</p>
 </dd>
 
-### -field <b>InOctets</b>
+### -field InOctets
 
 <dd>
 <p>The total number of octets (bytes) in input IP datagrams that have been received from the
@@ -84,7 +84,7 @@ typedef struct _IP_OFFLOAD_STATS {
      <b>InOctets</b> must include the number of bytes in the IP header and payload.</p>
 </dd>
 
-### -field <b>InDelivers</b>
+### -field InDelivers
 
 <dd>
 <p>The number of input IP datagrams that were successfully delivered to offloaded TCP connections.
@@ -92,7 +92,7 @@ typedef struct _IP_OFFLOAD_STATS {
      "ipInDelivers" in RFC 2011.</p>
 </dd>
 
-### -field <b>OutRequests</b>
+### -field OutRequests
 
 <dd>
 <p>The number of IP datagrams that the offload target supplied to its IP layer in requests for
@@ -100,7 +100,7 @@ typedef struct _IP_OFFLOAD_STATS {
      "ipOutRequests" in RFC 2011.</p>
 </dd>
 
-### -field <b>OutOctets</b>
+### -field OutOctets
 
 <dd>
 <p>The total number of octets (bytes) in IP datagrams that the offload target supplied to its IP
@@ -109,7 +109,7 @@ typedef struct _IP_OFFLOAD_STATS {
      <b>OutOctets</b> must include the number of bytes in the IP header and payload.</p>
 </dd>
 
-### -field <b>InHeaderErrors</b>
+### -field InHeaderErrors
 
 <dd>
 <p>The number of input IP datagrams received on offloaded TCP connections that were discarded because
@@ -120,7 +120,7 @@ typedef struct _IP_OFFLOAD_STATS {
      "ipInHdrErrors" in RFC 2011.</p>
 </dd>
 
-### -field <b>InTruncatedPackets</b>
+### -field InTruncatedPackets
 
 <dd>
 <p>The number of input IP datagrams discarded because the datagram frame didn't carry enough data. 
@@ -130,7 +130,7 @@ typedef struct _IP_OFFLOAD_STATS {
      <b>InHeaderErrors</b> .</p>
 </dd>
 
-### -field <b>InDiscards</b>
+### -field InDiscards
 
 <dd>
 <p>The number of input IP datagrams received on offloaded TCP connections that contained nothing to
@@ -139,7 +139,7 @@ typedef struct _IP_OFFLOAD_STATS {
      "ipInDiscards" in RFC 2011.</p>
 </dd>
 
-### -field <b>OutDiscards</b>
+### -field OutDiscards
 
 <dd>
 <p>The number of output IP datagrams that the offload target supplied to its IP layer for which no
@@ -148,7 +148,7 @@ typedef struct _IP_OFFLOAD_STATS {
      "ipOutDiscards" in RFC 2011.</p>
 </dd>
 
-### -field <b>OutNoRoutes</b>
+### -field OutNoRoutes
 
 <dd>
 <p>The number of output IP datagrams that the offload target supplied to its IP layer that were
@@ -227,4 +227,4 @@ typedef struct _IP_OFFLOAD_STATS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IP_OFFLOAD_STATS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IP_OFFLOAD_STATS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -55,7 +55,7 @@ VOID IoFreeIrp(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to the IRP that is to be released.</p>

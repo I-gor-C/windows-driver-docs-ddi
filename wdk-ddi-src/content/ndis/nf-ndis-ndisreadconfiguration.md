@@ -7,7 +7,7 @@ old-location: netvista\ndisreadconfiguration.htm
 old-project: netvista
 ms.assetid: 74560229-9e97-40b9-961c-6bf726586e27
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisReadConfiguration
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ VOID NdisReadConfiguration(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [out]
+### -param Status [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which this function returns the status of the call as
@@ -74,7 +74,7 @@ VOID NdisReadConfiguration(
 <tr>
 <td width="40%"><a id="NDIS_STATUS_SUCCESS"></a><a id="ndis_status_success"></a><dl>
 
-### -param <b>NDIS_STATUS_SUCCESS</b>
+### -param NDIS_STATUS_SUCCESS
 
 </dl>
 </td>
@@ -86,7 +86,7 @@ VOID NdisReadConfiguration(
 <tr>
 <td width="40%"><a id="NDIS_STATUS_RESOURCES"></a><a id="ndis_status_resources"></a><dl>
 
-### -param <b>NDIS_STATUS_RESOURCES</b>
+### -param NDIS_STATUS_RESOURCES
 
 </dl>
 </td>
@@ -98,7 +98,7 @@ VOID NdisReadConfiguration(
 <tr>
 <td width="40%"><a id="NDIS_STATUS_FAILURE"></a><a id="ndis_status_failure"></a><dl>
 
-### -param <b>NDIS_STATUS_FAILURE</b>
+### -param NDIS_STATUS_FAILURE
 
 </dl>
 </td>
@@ -111,7 +111,7 @@ VOID NdisReadConfiguration(
 <p> </p>
 </dd>
 
-### -param <i>ParameterValue</i> [out]
+### -param ParameterValue [out]
 
 <dd>
 <p>A pointer to a memory location where NDIS supplies a pointer to an 
@@ -123,7 +123,7 @@ VOID NdisReadConfiguration(
      NDIS_CONFIGURATION_PARAMETER</b> structure.</p>
 </dd>
 
-### -param <i>ConfigurationHandle</i> [in]
+### -param ConfigurationHandle [in]
 
 <dd>
 <p>The handle to a registry key that was returned by the 
@@ -134,7 +134,7 @@ VOID NdisReadConfiguration(
      NdisOpenConfigurationKeyByName</a> function.</p>
 </dd>
 
-### -param <i>Keyword</i> [in]
+### -param Keyword [in]
 
 <dd>
 <p>A pointer to a caller-supplied NDIS_STRING type describing a counted string, in the system-default
@@ -182,7 +182,7 @@ VOID NdisReadConfiguration(
 <p> </p>
 </dd>
 
-### -param <i>ParameterType</i> [in]
+### -param ParameterType [in]
 
 <dd>
 <p>The type of the value entry that is specified as one of the 
@@ -355,4 +355,4 @@ VOID NdisReadConfiguration(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReadConfiguration function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReadConfiguration function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

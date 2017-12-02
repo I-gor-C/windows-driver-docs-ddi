@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbacks_getinterestmask.htm
 old-project: debugger
 ms.assetid: 165c83cb-c0be-4a09-9220-a5208f660308
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugEventCallbacks, GetInterestMask, IDebugEventCallbacks::GetInterestMask
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetInterestMask(
 ## -parameters
 <dl>
 
-### -param <i>Mask</i> [out]
+### -param Mask [out]
 
 <dd>
 <p>Receives a bitmask that indicates which events the object is interested in.  The engine will call only those methods that correspond to the bit flags set by <b>GetInterestMask</b>.  For a description of the bit flags and their corresponding methods, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541478">DEBUG_EVENT_XXX</a>.</p>

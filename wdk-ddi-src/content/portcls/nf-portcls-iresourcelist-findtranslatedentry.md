@@ -55,13 +55,13 @@ PCM_PARTIAL_RESOURCE_DESCRIPTOR FindTranslatedEntry(
 ## -parameters
 <dl>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>Identifies the resource type of the entry to find. For a list of valid resource-type values, see the <b>Type</b> member of the <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure.</p>
 </dd>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>Specifies the index of the entry to find. If the <a href="audio.iresourcelist_numberofentriesoftype">IResourceList::NumberOfEntriesOfType</a> method returns a value <i>n</i> for the number of entries of type <i>Type</i>, valid indices range from 0 to <i>n</i>-1. If <i>Index</i> is zero, for example, the method returns a pointer to the translated version of the first occurrence of an entry of the specified type from the resource list.</p>

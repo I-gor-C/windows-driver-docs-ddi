@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbacks_createthread.htm
 old-project: debugger
 ms.assetid: c3b2cbaa-33b9-4784-922d-d1209fc23dfd
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugEventCallbacks, CreateThread, IDebugEventCallbacks::CreateThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ HRESULT CreateThread(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Specifies the handle for the thread whose creation caused the event.  If this information is not available, <i>Handle</i> will be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>DataOffset</i> [in]
+### -param DataOffset [in]
 
 <dd>
 <p>Specifies a block of data that the operating system maintains for this thread. The actual data in the block is operating system-specific.  If the operating system does not have such a block, <i>DataOffset</i> will be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>StartOffset</i> [in]
+### -param StartOffset [in]
 
 <dd>
 <p>Specifies the starting location in the target's virtual address space of the thread.  If this information is not available, <i>StartOffset</i> will be <b>NULL</b>.</p>
@@ -76,7 +76,7 @@ HRESULT CreateThread(
 </dl>
 
 ## -returns
-<p>This method returns a <a href="debugger.debug_status_xxx">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
+<p>This method returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541651">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
 
 ## -remarks
 <p>This method is only called by the engine if the DEBUG_EVENT_CREATE_THREAD flag is set in the mask returned by <a href="debugger.idebugeventcallbacks_getinterestmask">IDebugEventCallbacks::GetInterestMask</a>.</p>

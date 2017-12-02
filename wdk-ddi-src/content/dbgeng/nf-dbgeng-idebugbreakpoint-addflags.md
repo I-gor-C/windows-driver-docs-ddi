@@ -7,7 +7,7 @@ old-location: debugger\addflags.htm
 old-project: debugger
 ms.assetid: 92161111-5e02-4a97-9656-9a297e9ea1af
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugBreakpoint, AddFlags, IDebugBreakpoint::AddFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT AddFlags(
 ## -parameters
 <dl>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Additional flags to add to the breakpoint.  <i>Flags</i> is a bit field that is combined together with the existing flags by using a bitwise OR.  For more information about the flag bit field and an explanation of each flag, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.  You cannot modify the DEBUG_BREAKPOINT_DEFERRED flag in the <a href="debugger.e#engine#engine">engine</a>. This bit in <i>Flags</i> must always be zero.</p>
@@ -68,7 +68,7 @@ HRESULT AddFlags(
 
 <p> </p>
 
-<p>This method can also return error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
+<p>This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.</p>
 
 ## -remarks
 <p>For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>

@@ -7,7 +7,7 @@ old-location: debugger\getoffsetinformation.htm
 old-project: debugger
 ms.assetid: 5ef00c92-7b32-473a-8401-4c02e864c181
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugDataSpaces4, GetOffsetInformation, IDebugDataSpaces4::GetOffsetInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,20 +59,20 @@ HRESULT GetOffsetInformation(
 ## -parameters
 <dl>
 
-### -param <i>Space</i> [in]
+### -param Space [in]
 
 <dd>
 <p>Specifies the data space to which the <i>Offset </i>parameter applies.  The allowed values depend on the <i>Which</i> parameter.</p>
 </dd>
 
-### -param <i>Which</i> [in]
+### -param Which [in]
 
 <dd>
 <p>Specifies which information about the data is being queried.  This determines the possible values for <i>Space</i> and the type of the data returned in <i>Buffer</i>.  Possible values are:</p>
 <p></p>
 <dl>
 
-### -param <a id="DEBUG_OFFSINFO_VIRTUAL_SOURCE"></a><a id="debug_offsinfo_virtual_source"></a>DEBUG_OFFSINFO_VIRTUAL_SOURCE
+### -param DEBUG_OFFSINFO_VIRTUAL_SOURCE
 
 <dd>
 <p>Returns the source of the target's virtual memory at <i>Offset</i>.  This is where the debugger engine reads the memory from.  <i>Space</i> must be set to DEBUG_DATA_SPACE_VIRTUAL.  A ULONG is returned to <i>Buffer</i>.  This ULONG can take the values listed in the following table.</p>
@@ -112,25 +112,25 @@ HRESULT GetOffsetInformation(
 </dl>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the offset in the target's data space for which the information is returned.</p>
 </dd>
 
-### -param <i>Buffer</i> [out, optional]
+### -param Buffer [out, optional]
 
 <dd>
 <p>Specifies the buffer to receive the information.  The type of the data returned depends on the value of <i>Which</i>.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the <i>Buffer </i>buffer.</p>
 </dd>
 
-### -param <i>InfoSize</i> [out, optional]
+### -param InfoSize [out, optional]
 
 <dd>
 <p>Receives the size, in bytes, of the information that is returned.  If <i>InfoSize</i> is <b>NULL</b>, this information is not returned.</p>
@@ -138,7 +138,7 @@ HRESULT GetOffsetInformation(
 </dl>
 
 ## -returns
-<p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

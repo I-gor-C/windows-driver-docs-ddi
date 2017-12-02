@@ -54,7 +54,7 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="ISCSI_ADAPTER_TARGETS_CHANGED"></a><a id="iscsi_adapter_targets_changed"></a><b>ISCSI_ADAPTER_TARGETS_CHANGED</b>
+### -field ISCSI_ADAPTER_TARGETS_CHANGED
 
 <dd>
 <p>An adapter discovered that its list of targets changed. </p>

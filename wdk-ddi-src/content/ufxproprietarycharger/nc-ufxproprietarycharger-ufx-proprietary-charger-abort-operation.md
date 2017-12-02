@@ -60,7 +60,7 @@ typedef UFX_PROPRIETARY_CHARGER_ABORT_OPERATION PFN_UFX_PROPRIETARY_CHARGER_ABOR
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>    A pointer to a driver-defined context.</p>

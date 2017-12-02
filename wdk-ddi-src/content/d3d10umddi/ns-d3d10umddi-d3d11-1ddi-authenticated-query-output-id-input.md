@@ -57,13 +57,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Input</b>
+### -field Input
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-input.md">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> structure that contains the GUID for the query and other data.</p>
 </dd>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>A handle to the device.
@@ -71,13 +71,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_INPUT {
 </p>
 </dd>
 
-### -field <b>CryptoSessionHandle</b>
+### -field CryptoSessionHandle
 
 <dd>
 <p>A handle to the cryptographic session.</p>
 </dd>
 
-### -field <b>OutputIDIndex</b>
+### -field OutputIDIndex
 
 <dd>
 <p>The index of the output ID.</p>

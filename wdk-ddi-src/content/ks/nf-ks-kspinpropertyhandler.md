@@ -58,31 +58,31 @@ NTSTATUS KsPinPropertyHandler(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP handling the connection request.</p>
 </dd>
 
-### -param <i>Property</i> [in]
+### -param Property [in]
 
 <dd>
 <p>Specifies the specific property information.</p>
 </dd>
 
-### -param <i>Data</i> [in, out]
+### -param Data [in, out]
 
 <dd>
 <p>Specifies the data parameter mapped to a system address. This is the same parameter passed to a property handler through a <a href="..\ks\nf-ks-kspropertyhandler.md">KsPropertyHandler</a> callback.</p>
 </dd>
 
-### -param <i>DescriptorsCount</i> [in]
+### -param DescriptorsCount [in]
 
 <dd>
 <p>Specifies the number of pin descriptors being passed.</p>
 </dd>
 
-### -param <i>Descriptor</i> [in]
+### -param Descriptor [in]
 
 <dd>
 <p>Specifies the pointer to the list of pin descriptors.</p>

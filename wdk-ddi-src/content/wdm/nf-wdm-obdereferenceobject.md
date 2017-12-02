@@ -55,7 +55,7 @@ VOID ObDereferenceObject(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>Pointer to the object's body. </p>

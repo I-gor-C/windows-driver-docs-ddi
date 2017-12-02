@@ -58,7 +58,7 @@ typedef struct _PEP_PPM_PARK_SELECTION_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>AdditionalUnparkedProcessors</b>
+### -field AdditionalUnparkedProcessors
 
 <dd>
 <p>[in] The number of additional processors that need to be unparked.</p>
@@ -66,25 +66,25 @@ typedef struct _PEP_PPM_PARK_SELECTION_V2 {
 <p>This number does not include processors in the <b>Processors</b> array for which the operating system sets the <b>PoPreference</b> value to PROCESSOR_PARK_PREFERENCE_PARKED.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>[in] The number of elements in the array pointed to by the <b>Processors</b> member.</p>
 </dd>
 
-### -field <b>Processors</b>
+### -field Processors
 
 <dd>
 <p>[in/out] A pointer to an array of <a href="..\pepfx\ns-pepfx--pep-processor-park-preference.md">PEP_PROCESSOR_PARK_PREFERENCE</a> structures. Each array element indicates the parking preferences for a particular processor. The <b>Count</b> member specifies the number of elements in the array.</p>
 </dd>
 
-### -field <b>EvaluationTime</b>
+### -field EvaluationTime
 
 <dd>
 <p>The interrupt time of the performance check evaluation that initiated this notification.</p>
 </dd>
 
-### -field <b>EvaluationType</b>
+### -field EvaluationType
 
 <dd>
 <p>The type of evaluation being performed. This can be one of the following values:</p>
@@ -96,7 +96,7 @@ typedef struct _PEP_PPM_PARK_SELECTION_V2 {
 <tr>
 <td width="40%"><a id="PROCESSOR_PARK_TYPE_CORE_PARKING"></a><a id="processor_park_type_core_parking"></a><dl>
 
-### -field <b>PROCESSOR_PARK_TYPE_CORE_PARKING</b>
+### -field PROCESSOR_PARK_TYPE_CORE_PARKING
 
 
 ### -field 0x00
@@ -110,7 +110,7 @@ typedef struct _PEP_PPM_PARK_SELECTION_V2 {
 <tr>
 <td width="40%"><a id="PROCESSOR_PARK_TYPE_INTERRUPT_STEERING"></a><a id="processor_park_type_interrupt_steering"></a><dl>
 
-### -field <b>PROCESSOR_PARK_TYPE_INTERRUPT_STEERING</b>
+### -field PROCESSOR_PARK_TYPE_INTERRUPT_STEERING
 
 
 ### -field 0x01

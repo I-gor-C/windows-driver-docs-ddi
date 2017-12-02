@@ -59,37 +59,37 @@ typedef struct _D3DKMDT_MONITOR_SOURCE_MODE {
 ## -struct-fields
 <dl>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>An integer that identifies the monitor source mode.</p>
 </dd>
 
-### -field <b>VideoSignalInfo</b>
+### -field VideoSignalInfo
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-video-signal-info.md">D3DKMDT_VIDEO_SIGNAL_INFO</a> enumerator that indicates the video mode standard (if any) that defines the mode.</p>
 </dd>
 
-### -field <b>ColorBasis</b>
+### -field ColorBasis
 
 <dd>
 <p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-color-basis.md">D3DKMDT_COLOR_BASIS</a> enumerator that indicates the color basis of the mode.</p>
 </dd>
 
-### -field <b>ColorCoeffDynamicRanges</b>
+### -field ColorCoeffDynamicRanges
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-color-coeff-dynamic-ranges.md">D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES</a> structure that contains the dynamic ranges for the color channels in the mode's color basis.</p>
 </dd>
 
-### -field <b>Origin</b>
+### -field Origin
 
 <dd>
 <p>A value from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-capabilities-origin.md">D3DKMDT_MONITOR_CAPABILITIES_ORIGIN</a> enumeration that indicates the source of the mode information. For example the mode information could be from a default monitor profile or it could be from an override in an INF file.</p>
 </dd>
 
-### -field <b>Preference</b>
+### -field Preference
 
 <dd>
 <p>A value from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-mode-preference.md">D3DKMDT_MODE_PREFERENCE</a> enumeration that indicates whether the mode is the preferred mode in a <a href="display.monitor_source_mode_set_interface">monitor source mode set</a>.</p>

@@ -56,13 +56,13 @@ NTSTATUS PcwRegister(
 ## -parameters
 <dl>
 
-### -param <i>Registration</i> [out]
+### -param Registration [out]
 
 <dd>
 <p>A pointer to a PCW_REGISTRATION structure. Receives the handle to the newly allocated registration. The pointer is referenced before the function returns. The caller is responsible to dereference the pointer.</p>
 </dd>
 
-### -param <i>Info</i> [in]
+### -param Info [in]
 
 <dd>
 <p>A pointer to a PCW_REGISTRATION_INFORMATION structure that contains the details about the counter set being registered.</p>

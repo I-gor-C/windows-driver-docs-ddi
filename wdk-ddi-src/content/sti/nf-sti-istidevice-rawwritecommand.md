@@ -7,7 +7,7 @@ old-location: image\istidevice_rawwritecommand.htm
 old-project: image
 ms.assetid: 6260fd33-96b3-43d7-a7eb-35322247076b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDevice, RawWriteCommand, IStiDevice::RawWriteCommand
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ HRESULT RawWriteCommand(
 ## -parameters
 <dl>
 
-### -param <i>lpBuffer</i> [in]
+### -param lpBuffer [in]
 
 <dd>
 <p>Caller-supplied pointer to a buffer containing data to be sent to the device.</p>
 </dd>
 
-### -param <i>nNumberOfBytes</i> 
+### -param nNumberOfBytes 
 
 <dd>
 <p>Caller-supplied number of bytes to be written. This is the number of bytes in the buffer pointed to by <i>lpBuffer</i>.</p>
 </dd>
 
-### -param <i>lpOverlapped</i> [in, optional]
+### -param lpOverlapped [in, optional]
 
 <dd>
 <p>Optional, caller-supplied pointer to an OVERLAPPED structure (described in the Microsoft Windows SDK documentation).</p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains information about the USB device’s characteristics, such as the maximum send and receive delays for any request.  This structure is used in the <a href="buses._ioctl_usb_get_device_characteristics">IOCTL_USB_GET_DEVICE_CHARACTERISTICS</a> request.</p>
+<p>Contains information about the USB device’s characteristics, such as the maximum send and receive delays for any request.  This structure is used in the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-device-characteristics.md">IOCTL_USB_GET_DEVICE_CHARACTERISTICS</a> request.</p>
 
 
 ## -syntax
@@ -59,20 +59,20 @@ typedef struct _USB_DEVICE_CHARACTERISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>                    Version</b>
+### -field                     Version
 
 <dd>
 <p>The version should be set to USB_DEVICE_CHARACTERISTICS_VERSION_1. 
 </p>
 </dd>
 
-### -field <b>                    Reserved</b>
+### -field                     Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>                    UsbDeviceCharacteristicsFlags</b>
+### -field                     UsbDeviceCharacteristicsFlags
 
 <dd>
 <p>A bitmask of flags that indicates to  the client driver the transport characteristics that are available and are returned by this structure. 
@@ -83,7 +83,7 @@ flag is set, <b>MaximumSendPathDelayInMilliSeconds</b> and <b>MaximumCompletionP
 </p>
 </dd>
 
-### -field <b>                    MaximumSendPathDelayInMilliSeconds</b>
+### -field                     MaximumSendPathDelayInMilliSeconds
 
 <dd>
 <p>Contains the maximum delay in milliseconds for any request that is submitted by the client driver and is received by the USB driver stack to the time it is programmed in the host controller, including the maximum delay associated with the network medium if it is a MA-USB host controller. 
@@ -91,7 +91,7 @@ flag is set, <b>MaximumSendPathDelayInMilliSeconds</b> and <b>MaximumCompletionP
 </p>
 </dd>
 
-### -field <b>                    MaximumCompletionPathDelayInMilliSeconds</b>
+### -field                     MaximumCompletionPathDelayInMilliSeconds
 
 <dd>
 <p>Contains the maximum delay in milliseconds the host controller completes any request for the device to the time the request is completed and sent back to the client driver.  For a MA-USB controller this includes any delay associated with the network medium. 
@@ -119,7 +119,7 @@ flag is set, <b>MaximumSendPathDelayInMilliSeconds</b> and <b>MaximumCompletionP
 ## -see-also
 <dl>
 <dt>
-<a href="buses._ioctl_usb_get_device_characteristics">IOCTL_USB_GET_DEVICE_CHARACTERISTICS</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-device-characteristics.md">IOCTL_USB_GET_DEVICE_CHARACTERISTICS</a>
 </dt>
 </dl>
 <p> </p>

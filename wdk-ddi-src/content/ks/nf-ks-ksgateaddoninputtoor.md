@@ -54,7 +54,7 @@ void __inline KsGateAddOnInputToOr(
 ## -parameters
 <dl>
 
-### -param <i>OrGate</i> [in]
+### -param OrGate [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksgate.md">KSGATE</a> structure representing the OR gate to which to add a new ON input.</p>

@@ -59,31 +59,31 @@ typedef enum _KBUGCHECK_CALLBACK_REASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="KbCallbackInvalid"></a><a id="kbcallbackinvalid"></a><a id="KBCALLBACKINVALID"></a><b>KbCallbackInvalid</b>
+### -field KbCallbackInvalid
 
 <dd>
 <p>Reserved for system use. Do not use.</p>
 </dd>
 
-### -field <a id="KbCallbackReserved1"></a><a id="kbcallbackreserved1"></a><a id="KBCALLBACKRESERVED1"></a><b>KbCallbackReserved1</b>
+### -field KbCallbackReserved1
 
 <dd>
 <p>Reserved for system use. Do not use.</p>
 </dd>
 
-### -field <a id="KbCallbackSecondaryDumpData"></a><a id="kbcallbacksecondarydumpdata"></a><a id="KBCALLBACKSECONDARYDUMPDATA"></a><b>KbCallbackSecondaryDumpData</b>
+### -field KbCallbackSecondaryDumpData
 
 <dd>
 <p>Specifies that the callback is executed to provide data that the system appends to the secondary section of the crash dump file. For more information about this type of callback, see <a href="..\wdm\nc-wdm-kbugcheck-reason-callback-routine.md">BugCheckSecondaryDumpDataCallback</a>.</p>
 </dd>
 
-### -field <a id="KbCallbackDumpIo"></a><a id="kbcallbackdumpio"></a><a id="KBCALLBACKDUMPIO"></a><b>KbCallbackDumpIo</b>
+### -field KbCallbackDumpIo
 
 <dd>
 <p>Specifies that the callback is executed each time a section of the dump file is written. For more information about this type of callback, see <a href="..\wdm\nc-wdm-kbugcheck-reason-callback-routine.md">BugCheckDumpIoCallback</a>.</p>
 </dd>
 
-### -field <a id="KbCallbackAddPages"></a><a id="kbcallbackaddpages"></a><a id="KBCALLBACKADDPAGES"></a><b>KbCallbackAddPages</b>
+### -field KbCallbackAddPages
 
 <dd>
 <p>Specifies that the callback is executed to provide one or more pages of data that the system adds to the primary section of the crash dump file. For more information about this type of callback, see <a href="kernel.bugcheckaddpagescallback">BugCheckAddPagesCallback</a>. This enumeration value is supported in Windows Server 2008 and later versions of Windows.</p>

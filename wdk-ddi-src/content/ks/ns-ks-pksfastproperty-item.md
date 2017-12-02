@@ -63,37 +63,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>PropertyId</b>
+### -field PropertyId
 
 <dd>
 <p>Specifies the identifier of the specific property within the set.</p>
 </dd>
 
-### -field <b>GetPropertyHandler</b>
+### -field GetPropertyHandler
 
 <dd>
 <p>Points to a driver-supplied <a href="stream.kstrfasthandler">KStrFastHandler</a> routine that specifies the fast handler for retrieving the property. If this is <b>NULL</b>, the property cannot be read with a fast handler.</p>
 </dd>
 
-### -field <b>GetSupported</b>
+### -field GetSupported
 
 <dd>
 <p>A boolean value that indicates if the driver has supplied a get property handler.</p>
 </dd>
 
-### -field <b>SetPropertyHandler</b>
+### -field SetPropertyHandler
 
 <dd>
 <p>Points to a driver-supplied <a href="stream.kstrfasthandler">KStrFastHandler</a> routine that specifies the fast handler for setting the property. If this is <b>NULL</b>, the property cannot be set with a fast handler.</p>
 </dd>
 
-### -field <b>SetSupported</b>
+### -field SetSupported
 
 <dd>
 <p>A boolean value that indicates if the driver has supplied a set property handler.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved and set to zero.</p>

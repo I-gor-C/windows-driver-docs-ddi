@@ -7,7 +7,7 @@ old-location: netvista\ndis_rw_lock_refcount.htm
 old-project: netvista
 ms.assetid: 1b2c93dd-a80e-4197-bc4f-cad12f6d6c77
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_RW_LOCK_REFCOUNT, NDIS_RW_LOCK_REFCOUNT
 ms.prod: windows-hardware
 ms.technology: windows-devices

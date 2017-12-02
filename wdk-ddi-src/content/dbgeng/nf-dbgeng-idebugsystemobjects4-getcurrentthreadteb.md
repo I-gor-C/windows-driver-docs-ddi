@@ -7,7 +7,7 @@ old-location: debugger\getcurrentthreadteb.htm
 old-project: debugger
 ms.assetid: f5acd64c-c5a8-4977-8059-cc0bd12ef0c0
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSystemObjects4, GetCurrentThreadTeb, IDebugSystemObjects4::GetCurrentThreadTeb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetCurrentThreadTeb(
 ## -parameters
 <dl>
 
-### -param <i>Offset</i> [out]
+### -param Offset [out]
 
 <dd>
 <p>Receives the location in the target's virtual address space of the TEB for the current thread.</p>
@@ -62,7 +62,7 @@ HRESULT GetCurrentThreadTeb(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

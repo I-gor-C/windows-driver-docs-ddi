@@ -57,19 +57,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="FramingProp_Uninitialized"></a><a id="framingprop_uninitialized"></a><a id="FRAMINGPROP_UNINITIALIZED"></a><b>FramingProp_Uninitialized</b>
+### -field FramingProp_Uninitialized
 
 <dd></dd>
 
-### -field <a id="FramingProp_None"></a><a id="framingprop_none"></a><a id="FRAMINGPROP_NONE"></a><b>FramingProp_None</b>
+### -field FramingProp_None
 
 <dd></dd>
 
-### -field <a id="FramingProp_Old"></a><a id="framingprop_old"></a><a id="FRAMINGPROP_OLD"></a><b>FramingProp_Old</b>
+### -field FramingProp_Old
 
 <dd></dd>
 
-### -field <a id="FramingProp_Ex"></a><a id="framingprop_ex"></a><a id="FRAMINGPROP_EX"></a><b>FramingProp_Ex</b>
+### -field FramingProp_Ex
 
 <dd></dd>
 </dl>

@@ -57,25 +57,25 @@ typedef struct _HBAFCPID {
 ## -struct-fields
 <dl>
 
-### -field <b>Fcid</b>
+### -field Fcid
 
 <dd>
 <p>Contains the identifier that indicates which port is to be queried for information about the logical unit. For a discussion of the values that this member have, see the T11 committee's <i>Fibre Channel HBA API</i> specification.</p>
 </dd>
 
-### -field <b>NodeWWN</b>
+### -field NodeWWN
 
 <dd>
 <p>Contains the 64 bit world-wide name (WWN) of the node (machine) to which the logical unit is connected. If an HBA has multiple ports and is associated with more than one node, this member will contain a name chosen from among the names of the associated nodes. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.</p>
 </dd>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>Contains the 64 bit world-wide name of the port to be queried for information about the logical unit. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.</p>
 </dd>
 
-### -field <b>FcpLun</b>
+### -field FcpLun
 
 <dd>
 <p>Contains a 64-bit fibre channel protocol (FCP) number for the logical unit. </p>

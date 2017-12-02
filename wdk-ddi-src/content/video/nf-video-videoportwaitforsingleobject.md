@@ -57,19 +57,19 @@ VP_STATUS VideoPortWaitForSingleObject(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>Pointer to the event object.</p>
 </dd>
 
-### -param <i>Timeout</i> [in]
+### -param Timeout [in]
 
 <dd>
 <p>(Optional) Pointer to a time-out value that specifies the absolute or relative time at which the wait is to be completed. A negative value specifies a wait interval relative to the current time. The value should be expressed in units of 100 nanoseconds. Absolute expiration times track any changes in the system time; relative expiration times are not affected by system time changes.</p>

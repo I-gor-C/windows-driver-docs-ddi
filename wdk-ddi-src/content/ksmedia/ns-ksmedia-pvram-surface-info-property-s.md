@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>This member specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>pVramSurfaceInfo</b>
+### -field pVramSurfaceInfo
 
 <dd>
 <p>This member specifies a pointer to a structure of type <a href="stream.vram_surface_info">VRAM_SURFACE_INFO</a>.</p>

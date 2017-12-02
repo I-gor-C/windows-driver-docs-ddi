@@ -69,67 +69,67 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_PIN_CINSTANCES"></a><a id="ksproperty_pin_cinstances"></a><b>KSPROPERTY_PIN_CINSTANCES</b>
+### -field KSPROPERTY_PIN_CINSTANCES
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_PIN_CTYPES"></a><a id="ksproperty_pin_ctypes"></a><b>KSPROPERTY_PIN_CTYPES</b>
+### -field KSPROPERTY_PIN_CTYPES
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_PIN_DATAFLOW"></a><a id="ksproperty_pin_dataflow"></a><b>KSPROPERTY_PIN_DATAFLOW</b>
+### -field KSPROPERTY_PIN_DATAFLOW
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_PIN_DATARANGES"></a><a id="ksproperty_pin_dataranges"></a><b>KSPROPERTY_PIN_DATARANGES</b>
+### -field KSPROPERTY_PIN_DATARANGES
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_PIN_DATAINTERSECTION"></a><a id="ksproperty_pin_dataintersection"></a><b>KSPROPERTY_PIN_DATAINTERSECTION</b>
+### -field KSPROPERTY_PIN_DATAINTERSECTION
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_PIN_INTERFACES"></a><a id="ksproperty_pin_interfaces"></a><b>KSPROPERTY_PIN_INTERFACES</b>
+### -field KSPROPERTY_PIN_INTERFACES
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_PIN_MEDIUMS"></a><a id="ksproperty_pin_mediums"></a><b>KSPROPERTY_PIN_MEDIUMS</b>
+### -field KSPROPERTY_PIN_MEDIUMS
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_PIN_COMMUNICATION"></a><a id="ksproperty_pin_communication"></a><b>KSPROPERTY_PIN_COMMUNICATION</b>
+### -field KSPROPERTY_PIN_COMMUNICATION
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_PIN_GLOBALCINSTANCES"></a><a id="ksproperty_pin_globalcinstances"></a><b>KSPROPERTY_PIN_GLOBALCINSTANCES</b>
+### -field KSPROPERTY_PIN_GLOBALCINSTANCES
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_PIN_NECESSARYINSTANCES"></a><a id="ksproperty_pin_necessaryinstances"></a><b>KSPROPERTY_PIN_NECESSARYINSTANCES</b>
+### -field KSPROPERTY_PIN_NECESSARYINSTANCES
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_PIN_PHYSICALCONNECTION"></a><a id="ksproperty_pin_physicalconnection"></a><b>KSPROPERTY_PIN_PHYSICALCONNECTION</b>
+### -field KSPROPERTY_PIN_PHYSICALCONNECTION
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_PIN_CATEGORY"></a><a id="ksproperty_pin_category"></a><b>KSPROPERTY_PIN_CATEGORY</b>
+### -field KSPROPERTY_PIN_CATEGORY
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_PIN_NAME"></a><a id="ksproperty_pin_name"></a><b>KSPROPERTY_PIN_NAME</b>
+### -field KSPROPERTY_PIN_NAME
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_PIN_CONSTRAINEDDATARANGES"></a><a id="ksproperty_pin_constraineddataranges"></a><b>KSPROPERTY_PIN_CONSTRAINEDDATARANGES</b>
+### -field KSPROPERTY_PIN_CONSTRAINEDDATARANGES
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_PIN_PROPOSEDATAFORMAT"></a><a id="ksproperty_pin_proposedataformat"></a><b>KSPROPERTY_PIN_PROPOSEDATAFORMAT</b>
+### -field KSPROPERTY_PIN_PROPOSEDATAFORMAT
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_PIN_PROPOSEDATAFORMAT2"></a><a id="ksproperty_pin_proposedataformat2"></a><b>KSPROPERTY_PIN_PROPOSEDATAFORMAT2</b>
+### -field KSPROPERTY_PIN_PROPOSEDATAFORMAT2
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest_getdeviceiocontrolparameters.htm
 old-project: wdf
 ms.assetid: 96de6f7a-da1d-44a6-b1f7-44859312a662
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFIoRequest, GetDeviceIoControlParameters, IWDFIoRequest::GetDeviceIoControlParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,21 +58,21 @@ void  GetDeviceIoControlParameters(
 ## -parameters
 <dl>
 
-### -param <i>pControlCode</i> [out]
+### -param pControlCode [out]
 
 <dd>
 <p>A pointer to a variable that receives the control code that identifies the specific operation to be performed.</p>
 <p>This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information. </p>
 </dd>
 
-### -param <i>pInBufferSize</i> [out]
+### -param pInBufferSize [out]
 
 <dd>
 <p>A pointer to a variable that receives the size, in bytes, of the input data buffer for the request. To retrieve the input data buffer, the driver calls the <a href="wdf.iwdfiorequest_getinputmemory">IWDFIoRequest::GetInputMemory</a> method.</p>
 <p>This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information. </p>
 </dd>
 
-### -param <i>pOutBufferSize</i> [out]
+### -param pOutBufferSize [out]
 
 <dd>
 <p>A pointer to a variable that receives the size, in bytes, of the output data buffer for the request. To retrieve the output data buffer, the driver calls the <a href="wdf.iwdfiorequest_getoutputmemory">IWDFIoRequest::GetOutputMemory</a> method.</p>
@@ -152,4 +152,4 @@ void  GetDeviceIoControlParameters(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::GetDeviceIoControlParameters method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::GetDeviceIoControlParameters method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

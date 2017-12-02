@@ -7,7 +7,7 @@ old-location: debugger\debug_symbol_source_entry.htm
 old-project: debugger
 ms.assetid: 595d5a90-6ec8-4841-a38b-c0cbf26ed082
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: DEBUG_SYMBOL_SOURCE_ENTRY, DEBUG_SYMBOL_SOURCE_ENTRY, *PDEBUG_SYMBOL_SOURCE_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,73 +65,73 @@ typedef struct _DEBUG_SYMBOL_SOURCE_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>ModuleBase</b>
+### -field ModuleBase
 
 <dd>
 <p>The base address, in the target's virtual address space, of the module that the source symbol came from.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>The location of the memory corresponding to the source code in the target's virtual address space.</p>
 </dd>
 
-### -field <b>FileNameId</b>
+### -field FileNameId
 
 <dd>
 <p>Identifier for the source code file name. If this information is not available, <b>FieldNameId</b> is set to zero.</p>
 </dd>
 
-### -field <b>EngineInternal</b>
+### -field EngineInternal
 
 <dd>
 <p>Reserved for internal debugger engine use.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of the region of memory corresponding to the source code. If this information is not available, <b>Size</b> is set to one.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Set to zero.</p>
 </dd>
 
-### -field <b>FileNameSize</b>
+### -field FileNameSize
 
 <dd>
 <p>The number of characters in the source filename, including the terminator. </p>
 </dd>
 
-### -field <b>StartLine</b>
+### -field StartLine
 
 <dd>
 <p>The line number of the start of the region of source code in the file. The number of the first line in the file is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.</p>
 </dd>
 
-### -field <b>EndLine</b>
+### -field EndLine
 
 <dd>
 <p>The line number of the end of the region of source code in the file. The number of the first line in the file is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.</p>
 </dd>
 
-### -field <b>StartColumn</b>
+### -field StartColumn
 
 <dd>
 <p>The column number of the start of the region of source code. The number of the first column is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.</p>
 </dd>
 
-### -field <b>EndColumn</b>
+### -field EndColumn
 
 <dd>
 <p>The column number of the end of the region of source code. The number of the first column is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

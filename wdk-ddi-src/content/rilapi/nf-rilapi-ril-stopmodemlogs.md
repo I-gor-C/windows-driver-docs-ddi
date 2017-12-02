@@ -7,7 +7,7 @@ old-location: netvista\ril_stopmodemlogs.htm
 old-project: netvista
 ms.assetid: 1d1f092c-e867-49f7-8f17-90fbf73733fb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_StopModemLogs
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,11 +58,11 @@ HRESULT  RIL_StopModemLogs(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 </dl>

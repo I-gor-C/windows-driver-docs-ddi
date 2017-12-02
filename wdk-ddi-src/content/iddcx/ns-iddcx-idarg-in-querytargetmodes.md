@@ -56,7 +56,7 @@ typedef struct IDARG_IN_QUERYTARGETMODES {
 ## -struct-fields
 <dl>
 
-### -field <b>MonitorDescription</b>
+### -field MonitorDescription
 
 <dd>
 <p>
@@ -65,14 +65,14 @@ typedef struct IDARG_IN_QUERYTARGETMODES {
 <div> </div>
 </dd>
 
-### -field <b>TargetModeBufferInputCount</b>
+### -field TargetModeBufferInputCount
 
 <dd>
 <p>
                      [in] The number of target modes the <b>pTargetModes</b> buffer passed to the driver can hold. If the value is zero, then the driver should not copy the target mode list to <b>pTargetModes.</b></p>
 </dd>
 
-### -field <b>pTargetModes</b>
+### -field pTargetModes
 
 <dd>
 <p>

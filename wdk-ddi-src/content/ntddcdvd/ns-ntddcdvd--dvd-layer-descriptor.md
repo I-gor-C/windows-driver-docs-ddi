@@ -68,13 +68,13 @@ typedef struct _DVD_LAYER_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>BookVersion</b>
+### -field BookVersion
 
 <dd>
 <p>Specifies the version of the specified book that this media complies with.</p>
 </dd>
 
-### -field <b>BookType</b>
+### -field BookType
 
 <dd>
 <p>Specifies the DVD book this media complies with. This member can have one of the following values:</p>
@@ -127,7 +127,7 @@ typedef struct _DVD_LAYER_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>MinimumRate</b>
+### -field MinimumRate
 
 <dd>
 <p>Specifies the read rate to use for the media. This member can have one of the following values:</p>
@@ -180,13 +180,13 @@ typedef struct _DVD_LAYER_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>DiskSize</b>
+### -field DiskSize
 
 <dd>
 <p>Specifies the physical size of the media. A value of zero indicates 120 mm. A value of 1 indicates a size of 80 mm.</p>
 </dd>
 
-### -field <b>LayerType</b>
+### -field LayerType
 
 <dd>
 <p>Indicates the type of layer. This member can have one of the following values:</p>
@@ -223,25 +223,25 @@ typedef struct _DVD_LAYER_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>TrackPath</b>
+### -field TrackPath
 
 <dd>
 <p>Specifies the direction of the layers when more than one layer is used. If the <b>TrackPath</b> member is zero, this media uses a parallel track path (PTP). With PTP, each layer is independent and has its own lead-in and lead-out areas. If <b>TrackPath</b> is 1, the media uses opposite track path (OTP). With opposite track path, the two layers are united, and there is only one lead-in and lead-out area. For further details, see the <i>SCSI Multimedia Commands - 3 (MMC-3) </i>specification. </p>
 </dd>
 
-### -field <b>NumberOfLayers</b>
+### -field NumberOfLayers
 
 <dd>
 <p>Specifies the number of layers present on the side of the media being read. A value of zero indicates that the media has one layer. A value of 1 indicates that the media has two layers. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>TrackDensity</b>
+### -field TrackDensity
 
 <dd>
 <p>Indicates the track width used for this media in units of micrometers per track. This member can have one of the following values:</p>
@@ -278,7 +278,7 @@ typedef struct _DVD_LAYER_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>LinearDensity</b>
+### -field LinearDensity
 
 <dd>
 <p>Indicates the minimum/maximum pit length used for this layer in units of micrometers per bit. This member can have one of the following values:</p>
@@ -331,7 +331,7 @@ typedef struct _DVD_LAYER_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>StartingDataSector</b>
+### -field StartingDataSector
 
 <dd>
 <p>Specifies the first block that contains user data. This member can have one of the following values:</p>
@@ -360,25 +360,25 @@ typedef struct _DVD_LAYER_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>EndDataSector</b>
+### -field EndDataSector
 
 <dd>
 <p>Specifies the last sector of the user data in the last layer of the media. </p>
 </dd>
 
-### -field <b>EndLayerZeroSector</b>
+### -field EndLayerZeroSector
 
 <dd>
 <p>Specifies the last sector of the user data in layer zero. If this media does not use the opposite track path method and contains multiple layers, this value is set to zero.</p>
 </dd>
 
-### -field <b>Reserved5</b>
+### -field Reserved5
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>BCAFlag</b>
+### -field BCAFlag
 
 <dd>
 <p>Indicates, if set to 1, the presence of data in the burst cutting area (BCA). If set to zero, it indicates that there is no BCA data.</p>

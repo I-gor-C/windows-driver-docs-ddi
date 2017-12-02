@@ -7,7 +7,7 @@ old-location: ifsk\rxcebuildaddress.htm
 old-project: ifsk
 ms.assetid: e8845b15-4427-45ea-9192-352d82c89c6a
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxCeBuildAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ NTSTATUS RxCeBuildAddress(
 ## -parameters
 <dl>
 
-### -param <i>pAddress</i> [in, out]
+### -param pAddress [in, out]
 
 <dd>
 <p>On input, this parameter contains a pointer to an uninitialized RDBSS connection engine address structure. On output when this call is successful, the data members in the RXCE_ADDRESS structure will be properly initialized.</p>
 </dd>
 
-### -param <i>pTransport</i> [in]
+### -param pTransport [in]
 
 <dd>
 <p>A pointer to the transport with which this address is to be associated.</p>
 </dd>
 
-### -param <i>pTransportAddress</i> [in]
+### -param pTransportAddress [in]
 
 <dd>
 <p>A pointer to the transport address to be associated with the binding.</p>
 </dd>
 
-### -param <i>pHandler</i> [in]
+### -param pHandler [in]
 
 <dd>
 <p>A pointer to the event handler associated with the registration.</p>
 </dd>
 
-### -param <i>pEventContext</i> [in]
+### -param pEventContext [in]
 
 <dd>
 <p>A pointer to the context parameter to be passed back to the event handler.</p>
@@ -142,4 +142,4 @@ NTSTATUS RxCeBuildAddress(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCeBuildAddress function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCeBuildAddress function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -58,13 +58,13 @@ void PassiveCooling(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in, out, optional]
+### -param Context [in, out, optional]
 
 <dd>
 <p>A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="..\poclass\ns-poclass--thermal-cooling-interface.md">THERMAL_COOLING_INTERFACE</a> structure that the driver previously supplied to the caller.</p>
 </dd>
 
-### -param <i>Percentage</i> [in]
+### -param Percentage [in]
 
 <dd>
 <p>The percentage of full performance at which the device is permitted to operate. A parameter value of 100 indicates that the device is under no cooling restrictions and can operate at full performance level. A parameter value of zero indicates that the device must operate at its lowest thermal level. A parameter value between 0 and 100 indicates the degree to which the device's performance must be throttled to reduce heat generation. This parameter value is a threshold that the device must not exceed.</p>

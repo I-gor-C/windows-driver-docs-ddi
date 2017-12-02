@@ -7,7 +7,7 @@ old-location: netvista\riluiccappinfo_2.htm
 old-project: netvista
 ms.assetid: 7673163e-3663-4dc0-b454-bf358b87d62d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUICCAPPINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,43 +64,43 @@ typedef struct _RILUICCAPPINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwUiccAppType</b>
+### -field dwUiccAppType
 
 <dd></dd>
 
-### -field <b>dwAppIdLength</b>
+### -field dwAppIdLength
 
 <dd></dd>
 
-### -field <b>bAppId</b>
+### -field bAppId
 
 <dd></dd>
 
-### -field <b>dwAppNameLength</b>
+### -field dwAppNameLength
 
 <dd></dd>
 
-### -field <b>cszAppName</b>
+### -field cszAppName
 
 <dd></dd>
 
-### -field <b>dwNumPins</b>
+### -field dwNumPins
 
 <dd></dd>
 
-### -field <b>bPinRef</b>
+### -field bPinRef
 
 <dd></dd>
 </dl>

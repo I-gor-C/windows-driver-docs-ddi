@@ -55,7 +55,7 @@ BOOL WINAPI SplDeleteSpoolerPortStart(
 ## -parameters
 <dl>
 
-### -param <i>pPortName</i> [in]
+### -param pPortName [in]
 
 <dd></dd>
 </dl>

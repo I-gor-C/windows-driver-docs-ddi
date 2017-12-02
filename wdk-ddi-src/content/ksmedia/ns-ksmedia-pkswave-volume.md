@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>LeftAttenuation</b>
+### -field LeftAttenuation
 
 <dd>
 <p>Specifies the amount of left attenuation.</p>
 </dd>
 
-### -field <b>RightAttenuation</b>
+### -field RightAttenuation
 
 <dd>
 <p>Specifies the amount of right attenuation.</p>

@@ -7,7 +7,7 @@ old-location: sensors\isensorclassextension_postevent.htm
 old-project: sensors
 ms.assetid: 201a4558-8755-4a28-9982-c02ce5b5d8e7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorClassExtension, PostEvent, ISensorClassExtension::PostEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ HRESULT PostEvent(
 ## -parameters
 <dl>
 
-### -param <i>pwszSensorID</i> 
+### -param pwszSensorID 
 
 <dd>
 <p>LPWSTR that contains the ID for the sensor for which the driver is raising the event.</p>
 </dd>
 
-### -param <i>pEventCollection</i> 
+### -param pEventCollection 
 
 <dd>
 <p>Pointer to an IPortableDeviceValuesCollection interface that contains the list of events being posted and their associated data.</p>
@@ -99,7 +99,7 @@ HRESULT PostEvent(
 
 <p>To specify the event type, use the SENSOR_EVENT_PARAMETER_EVENT_ID <b>PROPERTYKEY</b> with the appropriate <b>GUID</b> value. </p>
 
-<p>For an example of a class that creates an event thread, see <a href="NULL">Raising sensor events</a>
+<p>For an example of a class that creates an event thread, see <a href="https://msdn.microsoft.com/a6e428f8-1613-4e8d-813d-5a54824dab82">Raising sensor events</a>
 </p>
 
 <p><a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=131487">IPortableDeviceValuesCollection</a> are documented in Windows Portable Devices.</p>

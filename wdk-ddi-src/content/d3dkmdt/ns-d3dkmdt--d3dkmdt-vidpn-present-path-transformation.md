@@ -57,26 +57,26 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Scaling</b>
+### -field Scaling
 
 <dd>
 <p>A value from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-present-path-scaling.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING</a> enumeration that indicates the type of scaling (or centering) that is currently set for the path. If this member is equal to <b>D3DKMDT_VPPS_IDENTITY</b>, <b>D3DKMDT_VPPS_CENTERED</b>, <b>D3DKMDT_VPPS_STRETCHED</b>, <b>D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX</b>, or <b>D3DKMDT_VPPS_CUSTOM</b>, then the indicated scaling type is considered pinned for the path. If this member is equal to any other value, then no scaling type is pinned for the path.</p>
 <p>For more information on how to use this member, see the Remarks section.</p>
 </dd>
 
-### -field <b>ScalingSupport</b>
+### -field ScalingSupport
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path-scaling-support.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT</a> structure that holds a set of flags that indicate the types of scaling that are supported by the path.</p>
 </dd>
 
-### -field <b>Rotation</b>
+### -field Rotation
 
 <dd>
 <p>A value from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-present-path-rotation.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> enumeration that indicates the type of rotation that is currently set for the path. If this member is equal to <b>D3DKMDT_VPPR_IDENTITY</b>, <b>D3DKMDT_VPPR_ROTATE90</b>, <b>D3DKMDT_VPPR_ROTATE180</b> or <b>D3DKMDT_VPPR_ROTATE270</b>, then the indicated rotation type is considered pinned for the path. If this member is equal to any other value, then no rotation type is pinned for the path.</p>
 </dd>
 
-### -field <b>RotationSupport</b>
+### -field RotationSupport
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path-rotation-support.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</a> structure that holds a set of flags that indicate the types of rotation that are supported by the path.</p>

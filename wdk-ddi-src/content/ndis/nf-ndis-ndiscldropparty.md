@@ -7,7 +7,7 @@ old-location: netvista\ndiscldropparty.htm
 old-project: netvista
 ms.assetid: f5d04730-a7eb-4670-9b47-f8c52267aea8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisClDropParty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ NDIS_STATUS NdisClDropParty(
 ## -parameters
 <dl>
 
-### -param <i>NdisPartyHandle</i> [in]
+### -param NdisPartyHandle [in]
 
 <dd>
 <p>Specifies the handle identifying the party to be dropped on the multipoint connection. The client
@@ -65,7 +65,7 @@ NDIS_STATUS NdisClDropParty(
      <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>.</p>
 </dd>
 
-### -param <i>Buffer</i> [in, optional]
+### -param Buffer [in, optional]
 
 <dd>
 <p>Pointer to a caller-allocated buffer containing any data to be transmitted to close the multipoint
@@ -73,7 +73,7 @@ NDIS_STATUS NdisClDropParty(
      <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Size</i> [in, optional]
+### -param Size [in, optional]
 
 <dd>
 <p>Specifies the size in bytes at 
@@ -243,4 +243,4 @@ NDIS_STATUS NdisClDropParty(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClDropParty function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClDropParty function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

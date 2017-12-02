@@ -56,19 +56,19 @@ PVOID AtaPortGetDeviceBase(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the channel extension.</p>
 </dd>
 
-### -param <i>IoAddress</i> [in]
+### -param IoAddress [in]
 
 <dd>
 <p>Specifies the base address to map.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the range that the mappings should cover. The value for this parameter can be obtained from the <b>IdeAccessRange</b> member of the <a href="..\irb\ns-irb--ide-miniport-resources.md">IDE_MINIPORT_RESOURCES</a> structure.</p>

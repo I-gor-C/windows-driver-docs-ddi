@@ -55,13 +55,13 @@ NTSTATUS ZwTerminateProcess(
 ## -parameters
 <dl>
 
-### -param <i>ProcessHandle</i> [in, optional]
+### -param ProcessHandle [in, optional]
 
 <dd>
 <p>A handle to the process object that represents the process to be terminated. </p>
 </dd>
 
-### -param <i>ExitStatus</i> [in]
+### -param ExitStatus [in]
 
 <dd>
 <p>An NTSTATUS value that the operating system uses as the final status for the process and each of its threads. </p>

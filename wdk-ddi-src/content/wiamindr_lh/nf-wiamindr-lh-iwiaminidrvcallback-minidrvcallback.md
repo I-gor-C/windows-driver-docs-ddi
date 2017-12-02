@@ -7,7 +7,7 @@ old-location: image\iwiaminidrvcallback_minidrvcallback.htm
 old-project: image
 ms.assetid: 7d1c0d8a-65db-47fd-ad6a-a83c7ed3acd9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IWiaMiniDrvCallBack, MiniDrvCallback, IWiaMiniDrvCallBack::MiniDrvCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ HRESULT MiniDrvCallback(
 ## -parameters
 <dl>
 
-### -param <i>lReason</i> [in]
+### -param lReason [in]
 
 <dd>
 <p>Specifies a constant value that designates a callback status message. This value is used to determine the purpose of the callback, and can be one of the following values:</p>
@@ -138,7 +138,7 @@ HRESULT MiniDrvCallback(
 <p> </p>
 </dd>
 
-### -param <i>lStatus</i> [in]
+### -param lStatus [in]
 
 <dd>
 <p>Specifies the status of the transfer. This parameter is a bitwise OR of the following values:</p>
@@ -175,31 +175,31 @@ HRESULT MiniDrvCallback(
 <p> </p>
 </dd>
 
-### -param <i>lPercentComplete</i> [in]
+### -param lPercentComplete [in]
 
 <dd>
 <p>Specifies the current percentage of data transferred.</p>
 </dd>
 
-### -param <i>lOffset</i> [in]
+### -param lOffset [in]
 
 <dd>
 <p>Specifies the current offset (in bytes) into the transfer buffer from the beginning of the buffer.</p>
 </dd>
 
-### -param <i>lLength</i> [in]
+### -param lLength [in]
 
 <dd>
 <p>Specifies the number of bytes contained in the transfer.</p>
 </dd>
 
-### -param <i>pTranCtx</i> [in]
+### -param pTranCtx [in]
 
 <dd>
 <p>Points to a <a href="..\wiamindr_lh\ns-wiamindr-lh--minidrv-transfer-context.md">MINIDRV_TRANSFER_CONTEXT</a> structure containing the data transfer values.</p>
 </dd>
 
-### -param <i>lReserved</i> [in]
+### -param lReserved [in]
 
 <dd>
 <p>Reserved. Set to zero.</p>
@@ -254,4 +254,4 @@ HRESULT MiniDrvCallback(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaMiniDrvCallBack::MiniDrvCallback method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaMiniDrvCallBack::MiniDrvCallback method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

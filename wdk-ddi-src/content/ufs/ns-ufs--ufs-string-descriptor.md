@@ -57,19 +57,19 @@ typedef struct _UFS_STRING_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>Specifies the length, in bytes, of this descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorIDN</b>
+### -field bDescriptorIDN
 
 <dd>
 <p>Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_STRING_IDN</b>.</p>
 </dd>
 
-### -field <b>String</b>
+### -field String
 
 <dd>
 <p>Contains either the Manufacturer Name, Product Name, OEM ID, or Serial Number as a string.</p>

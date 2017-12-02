@@ -7,7 +7,7 @@ old-location: netvista\wwan_cdma_mrl_info.htm
 old-project: netvista
 ms.assetid: D8633E80-C7A3-4050-8E8E-8AE459F905D5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_CDMA_MRL_INFO, WWAN_CDMA_MRL_INFO, *PWWAN_CDMA_MRL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,55 +63,55 @@ typedef struct _WWAN_CDMA_MRL_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ServingCellFlag</b>
+### -field ServingCellFlag
 
 <dd>
 <p>Indicates whether this is a serving cell. A value of 1 indicates a serving cell, while a value of 0 indicates a neighboring cell. There may be more than one serving cell at a time (notably while in a call).</p>
 </dd>
 
-### -field <b>NID</b>
+### -field NID
 
 <dd>
 <p>The Network ID (0-65535). Use 0xFFFFFFFF when this information is not available.</p>
 </dd>
 
-### -field <b>SID</b>
+### -field SID
 
 <dd>
 <p>The System ID (0-32767). Use 0xFFFFFFFF when this information is not available.</p>
 </dd>
 
-### -field <b>BaseStationId</b>
+### -field BaseStationId
 
 <dd>
 <p>The Base Station ID (0-65535). Use 0xFFFFFFFF when this information is not available.</p>
 </dd>
 
-### -field <b>BaseLatitude</b>
+### -field BaseLatitude
 
 <dd>
 <p>The Base Station Latitude (0-4194303). This is encoded in units of 0.25 seconds, expressed in two’s complement representation within the low 22 bits of the DWORD. As a signed value, North latitudes are positive. Use 0xFFFFFFFF when this information is not available.</p>
 </dd>
 
-### -field <b>BaseLongitude</b>
+### -field BaseLongitude
 
 <dd>
 <p>The Base Station Longitude (0-8388607). This is encoded in units of 0.25 seconds, expressed in two’s complement representation within the low 23 bits of the DWORD. As a signed value, East longitudes are positive. Use 0xFFFFFFFF when this information is not available.</p>
 </dd>
 
-### -field <b>RefPn</b>
+### -field RefPn
 
 <dd>
 <p>The Base Station PN Number (0-511). Use 0xFFFFFFFF when this information is not available.</p>
 </dd>
 
-### -field <b>GPSSeconds</b>
+### -field GPSSeconds
 
 <dd>
 <p>The GPS seconds, or the time at which this arrived from the base station. Use 0xFFFFFFFF when this information is not available.</p>
 </dd>
 
-### -field <b>PilotStrength</b>
+### -field PilotStrength
 
 <dd>
 <p>The Signal Strength of the pilot (0-63). Use 0xFFFFFFFF when this information is not available.</p>
@@ -157,4 +157,4 @@ typedef struct _WWAN_CDMA_MRL_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CDMA_MRL_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CDMA_MRL_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

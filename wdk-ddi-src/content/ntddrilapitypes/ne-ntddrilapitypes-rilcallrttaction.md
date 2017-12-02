@@ -7,7 +7,7 @@ old-location: netvista\rilcallrttaction.htm
 old-project: netvista
 ms.assetid: c080c4da-097d-4ae3-b1ca-96d9b5b6e8c9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILCALLRTTACTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLRTTACTION_REJECT"></a><a id="ril_callrttaction_reject"></a><b>RIL_CALLRTTACTION_REJECT</b>
+### -field RIL_CALLRTTACTION_REJECT
 
 <dd></dd>
 
-### -field <a id="RIL_CALLRTTACTION_ASK"></a><a id="ril_callrttaction_ask"></a><b>RIL_CALLRTTACTION_ASK</b>
+### -field RIL_CALLRTTACTION_ASK
 
 <dd></dd>
 
-### -field <a id="RIL_CALLRTTACTION_ACCEPT"></a><a id="ril_callrttaction_accept"></a><b>RIL_CALLRTTACTION_ACCEPT</b>
+### -field RIL_CALLRTTACTION_ACCEPT
 
 <dd></dd>
 
-### -field <a id="RIL_CALLRTTACTION_MAX"></a><a id="ril_callrttaction_max"></a><b>RIL_CALLRTTACTION_MAX</b>
+### -field RIL_CALLRTTACTION_MAX
 
 <dd></dd>
 </dl>

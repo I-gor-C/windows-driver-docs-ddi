@@ -57,20 +57,20 @@ NTSTATUS ZwFreeVirtualMemory(
 ## -parameters
 <dl>
 
-### -param <i>ProcessHandle</i> [in]
+### -param ProcessHandle [in]
 
 <dd>
 <p>A handle for the process in whose context the pages to be freed reside. Use the <b>NtCurrentProcess</b> macro, defined in Ntddk.h, to specify the current process.</p>
 </dd>
 
-### -param <i>BaseAddress</i> [in, out]
+### -param BaseAddress [in, out]
 
 <dd>
 <p>A pointer to a variable that will receive the virtual address of the freed region of pages. </p>
 <p>If the MEM_RELEASE flag is set in the <i>FreeType</i> parameter, <i>BaseAddress</i> must be the base address returned by <a href="..\ntifs\nf-ntifs-zwallocatevirtualmemory.md">ZwAllocateVirtualMemory</a> when the region was reserved.</p>
 </dd>
 
-### -param <i>RegionSize</i> [in, out]
+### -param RegionSize [in, out]
 
 <dd>
 <p>A pointer to a variable that will receive the actual size, in bytes, of the freed region of pages. The routine rounds the initial value of this variable up to the next host page size boundary and writes the rounded value back to this variable.</p>
@@ -91,7 +91,7 @@ NTSTATUS ZwFreeVirtualMemory(
 </ul>
 </dd>
 
-### -param <i>FreeType</i> [in]
+### -param FreeType [in]
 
 <dd>
 <p>A bitmask that contains flags that describe the type of free operation that <b>ZwFreeVirtualMemory</b> will perform for the specified region of pages. The possible values are listed in the following table.</p>

@@ -54,7 +54,7 @@ NTSTATUS RtlUnicodeStringValidate(
 ## -parameters
 <dl>
 
-### -param <i>SourceString</i> [in]
+### -param SourceString [in]
 
 <dd>
 <p>A pointer to a <b>UNICODE_STRING</b> structure to be validated. </p>

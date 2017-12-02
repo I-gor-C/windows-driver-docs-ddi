@@ -61,25 +61,25 @@ typedef struct _DXGK_CREATEPROCESSFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>SystemProcess</b>
+### -field SystemProcess
 
 <dd>
 <p>Indicates that a system process is being created.</p>
 </dd>
 
-### -field <b>GdiProcess</b>
+### -field GdiProcess
 
 <dd>
 <p>Indicates that a GDI process is being created.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The consolidated value of the bitfield members of the structure.</p>

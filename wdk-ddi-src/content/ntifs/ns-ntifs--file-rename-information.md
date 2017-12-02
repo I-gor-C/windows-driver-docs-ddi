@@ -7,7 +7,7 @@ old-location: ifsk\file_rename_information.htm
 old-project: ifsk
 ms.assetid: 25a195ab-faf1-488d-a9b2-65ae88b57ebd
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILE_RENAME_INFORMATION, FILE_RENAME_INFORMATION, *PFILE_RENAME_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ typedef struct _FILE_RENAME_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>ReplaceIfExists</b>
+### -field ReplaceIfExists
 
 <dd>
 <p>Set to <b>TRUE</b> to specify that if a file with the given name already exists, it should be replaced with the given file. Set to <b>FALSE</b> if the rename operation should fail if a file with the given name already exists. </p>
 </dd>
 
-### -field <b>RootDirectory</b>
+### -field RootDirectory
 
 <dd>
 <p>If the file is not being moved to a different directory, or if the <b>FileName</b> member contains the full pathname, this member is <b>NULL</b>. Otherwise, it is a handle for the root directory under which the file will reside after it is renamed. </p>
 </dd>
 
-### -field <b>FileNameLength</b>
+### -field FileNameLength
 
 <dd>
 <p>Length, in bytes, of the new name for the file. </p>
 </dd>
 
-### -field <b>FileName</b>
+### -field FileName
 
 <dd>
 <p>The first character of a wide-character string containing the new name for the file. This is followed in memory by the remainder of the string. If the <b>RootDirectory</b> member is <b>NULL</b>, and the file is being moved to a different directory, this member specifies the full pathname to be assigned to the file. Otherwise, it specifies only the file name or a relative pathname. </p>
@@ -167,4 +167,4 @@ typedef struct _FILE_RENAME_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_RENAME_INFORMATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_RENAME_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

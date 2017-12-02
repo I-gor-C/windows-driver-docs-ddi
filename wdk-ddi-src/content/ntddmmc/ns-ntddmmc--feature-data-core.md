@@ -59,31 +59,31 @@ typedef struct _FEATURE_DATA_CORE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>PhysicalInterface</b>
+### -field PhysicalInterface
 
 <dd>
 <p>Must be set to the current communication path between initiator and device, as defined in the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. The bytes of this array are arranged in big-endian order. <b>PhysicalInterface</b>[0] contains the most significant byte, and <b>PhysicalInterface</b>[3] contains the least significant byte.</p>
 </dd>
 
-### -field <b>DeviceBusyEvent</b>
+### -field DeviceBusyEvent
 
 <dd></dd>
 
-### -field <b>INQUIRY2</b>
+### -field INQUIRY2
 
 <dd></dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd></dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd></dd>
 </dl>

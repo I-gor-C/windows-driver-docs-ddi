@@ -59,31 +59,31 @@ typedef struct _CM_KEYBOARD_DEVICE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of this structure.</p>
 </dd>
 
-### -field <b>Revision</b>
+### -field Revision
 
 <dd>
 <p>The revision of this structure.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of the keyboard.</p>
 </dd>
 
-### -field <b>Subtype</b>
+### -field Subtype
 
 <dd>
 <p>The subtype of the keyboard.</p>
 </dd>
 
-### -field <b>KeyboardFlags</b>
+### -field KeyboardFlags
 
 <dd>
 <p>Defined by x86 BIOS INT 16h, function 02 as:</p>

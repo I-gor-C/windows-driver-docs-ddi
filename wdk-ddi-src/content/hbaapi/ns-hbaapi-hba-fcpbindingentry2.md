@@ -58,7 +58,7 @@ typedef struct HBA_FCPBindingEntry2 {
 ## -struct-fields
 <dl>
 
-### -field <b>type</b>
+### -field type
 
 <dd>
 <p>Contains a binding type that indicates how the target is specified in the binding. This member can have any of the following values: </p>
@@ -113,25 +113,25 @@ typedef struct HBA_FCPBindingEntry2 {
 <p>For a more detailed description of the values that this member can have, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
-### -field <b>ScsiId</b>
+### -field ScsiId
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-scsiid.md">HBA_ScsiId</a> that contains the information that uniquely identifies a logical unit for the operating system.</p>
 </dd>
 
-### -field <b>FcpId</b>
+### -field FcpId
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fcpid.md">HBA_FcpId</a> that contains the FCP identifier for the logical unit and information about the port to be queried for information about the device.</p>
 </dd>
 
-### -field <b>LUID</b>
+### -field LUID
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-luid.md">HBA_LUID</a> that holds a logical unit descriptor for the device that the operating system derives from SCSI inquiry data. </p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>Contains, on return, a status value that indicates the condition of the HBA. The status values that can be returned in this member correspond to the values associated with the <a href="storage.hba_status">HBA_STATUS</a> WMI property qualifier. </p>

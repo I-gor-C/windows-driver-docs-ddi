@@ -59,19 +59,19 @@ __checkReturn HRESULT APIENTRY SetIndicesUM(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>IndexSize</i> [in]
+### -param IndexSize [in]
 
 <dd>
 <p> The size, in bytes, of the indices that are contained in the index buffer. The value of this parameter is 2 if the indices are 16-bit quantities or 4 if the indices are 32-bit quantities. </p>
 </dd>
 
-### -param <i>pUMBuffer</i> [in]
+### -param pUMBuffer [in]
 
 <dd>
 <p> A pointer to the user-memory buffer that supplies the indices for the index buffer.</p>

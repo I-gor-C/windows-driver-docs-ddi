@@ -56,19 +56,19 @@ HBA_STATUS HBA_API HBA_RemovePersistentBinding(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
 </dd>
 
-### -param <i>HbaPortWWN</i> [in]
+### -param HbaPortWWN [in]
 
 <dd>
 <p>Contains a 64-bit worldwide name (WWN) that uniquely identifies the local HBA port for which to remove all persistent bindings. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
-### -param <i>Binding</i> [in]
+### -param Binding [in]
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fcpbinding2.md">HBA_FCPBinding2</a> that contains an array of bindings between operating system identifiers, SCSI logical unit ID descriptors (LUIDs) and fibre channel protocol (FCP) identifiers for a set of logical units. </p>

@@ -54,7 +54,7 @@ BOOLEAN WheaIsValidErrorRecordSignature(
 ## -parameters
 <dl>
 
-### -param <i>Record</i> [in]
+### -param Record [in]
 
 <dd>
 <p>A pointer to a WHEA <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a> that is formatted as a <a href="..\ntddk\ns-ntddk--whea-error-record.md">WHEA_ERROR_RECORD</a> structure.</p>

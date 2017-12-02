@@ -56,7 +56,7 @@ LPMONITOREX InitializePrintMonitor(
 ## -parameters
 <dl>
 
-### -param <i>pRegistryRoot</i> [in]
+### -param pRegistryRoot [in]
 
 <dd>
 <p>Caller-supplied pointer to a string identifying a registry path that the print monitor can use to store monitor-specific values.</p>
@@ -67,7 +67,7 @@ LPMONITOREX InitializePrintMonitor(
 <p>If the operation succeeds, the function should return a pointer to a <a href="..\winsplp\ns-winsplp--monitorex.md">MONITOREX</a> structure. Otherwise the function should call SetLastError (described in the Microsoft Windows SDK documentation) to set an error code, and return <b>NULL</b>.</p>
 
 ## -remarks
-<p>The <b>InitializePrintMonitor</b> function must be exported by <a href="NULL">language monitors</a> and by port monitor server DLLs. The function is called immediately after the monitor DLL is loaded, and is not called again until the DLL is reloaded. Its purposes are to allow the monitor to initialize itself, and to provide the spooler with pointers to internal monitor functions. Function pointers are contained in a <a href="..\winsplp\ns-winsplp--monitor.md">MONITOR</a> structure, which is referenced through the <a href="..\winsplp\ns-winsplp--monitorex.md">MONITOREX</a> function.</p>
+<p>The <b>InitializePrintMonitor</b> function must be exported by <a href="https://msdn.microsoft.com/26ba1c22-390a-4187-b67a-3f3497964f8e">language monitors</a> and by port monitor server DLLs. The function is called immediately after the monitor DLL is loaded, and is not called again until the DLL is reloaded. Its purposes are to allow the monitor to initialize itself, and to provide the spooler with pointers to internal monitor functions. Function pointers are contained in a <a href="..\winsplp\ns-winsplp--monitor.md">MONITOR</a> structure, which is referenced through the <a href="..\winsplp\ns-winsplp--monitorex.md">MONITOREX</a> function.</p>
 
 <p>The <i>pRegistryRoot</i> parameter supplies a pointer a string representing the path to a <i>MonitorName</i> registry key, where <i>MonitorName</i> is the monitor name that was specified when the spooler's <b>AddMonitor</b> function was called to add the monitor. The monitor can use this key to store monitor-specific value names and values. When the spooler's <b>DeleteMonitor</b> function is called, the spooler deletes the <i>MonitorName</i> key and all values stored underneath it. (The <b>AddMonitor</b> and <b>DeleteMonitor</b> functions are described in the Windows SDK documentation.)</p>
 

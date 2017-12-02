@@ -57,25 +57,25 @@ typedef struct _PEP_COORDINATED_IDLE_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Latency</b>
+### -field Latency
 
 <dd>
 <p>The latency of waking from this idle state, in 100ns units.</p>
 </dd>
 
-### -field <b>BreakEvenDuration</b>
+### -field BreakEvenDuration
 
 <dd>
 <p>Supplies the minimum time the state must be entered to amortize the cost of entering/exiting the state. Idle durations longer than this period should save power when compared to entering a lighter state for the same period.</p>
 </dd>
 
-### -field <b>DependencyCount</b>
+### -field DependencyCount
 
 <dd>
 <p>Supplies the number of dependencies this coordinated state has on other coordinated states or on processors.</p>
 </dd>
 
-### -field <b>MaximumDependencySize</b>
+### -field MaximumDependencySize
 
 <dd>
 <p>Supplies the maximum size of a single dependency.</p>

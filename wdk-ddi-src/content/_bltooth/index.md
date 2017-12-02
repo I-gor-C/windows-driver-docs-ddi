@@ -67,6 +67,11 @@ For the programming guide, see [Bluetooth](===404===https://docs.microsoft.com/e
 
 | Title   | Description   |
 | ---- |:---- |
+| [PBYTESWAPUINT128 callback](..\bthsdpddi\nc-bthsdpddi-pbyteswapuint128.md) | The Bluetooth SdpByteSwapUint128 function is used to reverse the byte order of an unsigned 128-bit integer. |
+| [PBYTESWAPUINT64 callback](..\bthsdpddi\nc-bthsdpddi-pbyteswapuint64.md) | The Bluetooth SdpByteSwapUint64 function is used to reverse the byte order of an unsigned 64-bit integer. |
+| [PBYTESWAPUUID128 callback](..\bthsdpddi\nc-bthsdpddi-pbyteswapuuid128.md) | The Bluetooth SdpByteSwapUuid128 function is used to reverse the byte order of a 128-bit universally unique identifier (UUID). |
+| [PCONVERTSTREAMTOTREE callback](..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md) | The Bluetooth SdpConvertStreamToTree function is used to create a Microsoft proprietary tree-based representation of an SDP record, while leaving the original stream-based representation unmodified. |
+| [PCONVERTTREETOSTREAM callback](..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md) | The Bluetooth SdpConvertTreeToStream function is used to produce a raw bytestream representation of an SDP record from a tree representation. The raw bytestream version is suitable for publication on a local SDP server. |
 | [PFNBTHPORT_INDICATION_CALLBACK callback](..\bthddi\nc-bthddi-pfnbthport-indication-callback.md) | Profile drivers implement a L2CAP callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about incoming L2CAP connection requests from remote devices, and any changes to the status of a currently open L2CAP connection. |
 | [PFNBTHPORT_INDICATION_CALLBACK_ENHANCED callback](..\bthddi\nc-bthddi-pfnbthport-indication-callback-enhanced.md) | Profile drivers implement an enhanced L2CAP callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about any changes to the status of a currently open L2CAP or eL2CAP connection. |
 | [PFNBTH_ALLOCATE_BRB callback](..\bthddi\nc-bthddi-pfnbth-allocate-brb.md) | The BthAllocateBrb function allocates a Bluetooth request block (BRB) of the specified type. |
@@ -75,6 +80,9 @@ For the programming guide, see [Bluetooth](===404===https://docs.microsoft.com/e
 | [PFNBTH_IS_BLUETOOTH_VERSION_AVAILABLE callback](..\bthddi\nc-bthddi-pfnbth-is-bluetooth-version-available.md) | The IsBluetoothVersionAvailable function checks whether a given Bluetooth version is supported by the operating system. |
 | [PFNBTH_REUSE_BRB callback](..\bthddi\nc-bthddi-pfnbth-reuse-brb.md) | The BthReuseBrb function reinitializes a Bluetooth request block (BRB) to be reused. |
 | [PFNSCO_INDICATION_CALLBACK callback](..\bthddi\nc-bthddi-pfnsco-indication-callback.md) | Profile drivers implement a SCO callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about incoming SCO connection requests from remote devices, and any changes to the status of a currently open SCO connection. |
+| [PGETNEXTELEMENT callback](..\bthsdpddi\nc-bthsdpddi-pgetnextelement.md) | The Bluetooth SdpGetNextElement function is used to iterate through the entries found in an SDP record stream. |
+| [PRETRIEVEUINT64 callback](..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md) | The Bluetooth SdpRetrieveUint128 function is used to copy an unaligned 128-bit integer from an SDP stream. |
+| [PRETRIEVEUUID128 callback](..\bthsdpddi\nc-bthsdpddi-pretrieveuuid128.md) | The Bluetooth SdpRetrieveUuid128 function is used to copy an unaligned 128-bit universally unique identifier (UUID) from an SDP stream. |
 
 ## Structures
 

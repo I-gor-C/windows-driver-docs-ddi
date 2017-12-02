@@ -58,25 +58,25 @@ typedef struct _KBUGCHECK_DUMP_IO {
 ## -struct-fields
 <dl>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Specifies the current offset in the crash dump file, or -1 if the crash dump file is being written sequentially.</p>
 </dd>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>Pointer to a buffer that contains the current data to be written to the dump file.</p>
 </dd>
 
-### -field <b>BufferLength</b>
+### -field BufferLength
 
 <dd>
 <p>Specifies the length of the buffer, in bytes, that is specified by the <b>Buffer</b> member.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Specifies the <a href="..\wdm\ne-wdm--kbugcheck-dump-io-type.md">KBUGCHECK_DUMP_IO_TYPE</a> value that signifies the type of data to be written to the dump file.</p>

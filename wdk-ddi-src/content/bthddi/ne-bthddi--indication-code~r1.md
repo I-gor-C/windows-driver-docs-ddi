@@ -66,21 +66,21 @@ typedef enum _INDICATION_CODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="IndicationAddReference"></a><a id="indicationaddreference"></a><a id="INDICATIONADDREFERENCE"></a><b>IndicationAddReference</b>
+### -field IndicationAddReference
 
 <dd>
 <p>Indicates to a profile driver to add a reference to its device object because it may be called at
      any time.</p>
 </dd>
 
-### -field <a id="IndicationReleaseReference"></a><a id="indicationreleasereference"></a><a id="INDICATIONRELEASEREFERENCE"></a><b>IndicationReleaseReference</b>
+### -field IndicationReleaseReference
 
 <dd>
 <p>Indicates to a profile driver to release a reference to its device object and that it will no
      longer be called.</p>
 </dd>
 
-### -field <a id="IndicationRemoteConnect"></a><a id="indicationremoteconnect"></a><a id="INDICATIONREMOTECONNECT"></a><b>IndicationRemoteConnect</b>
+### -field IndicationRemoteConnect
 
 <dd>
 <p>Indicates to a server profile driver that a remote device is connecting to the PSM that the
@@ -94,7 +94,7 @@ typedef enum _INDICATION_CODE {
      INDICATION_PARAMETERS</a> structure.</p>
 </dd>
 
-### -field <a id="IndicationRemoteDisconnect"></a><a id="indicationremotedisconnect"></a><a id="INDICATIONREMOTEDISCONNECT"></a><b>IndicationRemoteDisconnect</b>
+### -field IndicationRemoteDisconnect
 
 <dd>
 <p>Indicates to a registered profile driver that a remote device disconnecting from the local radio.
@@ -103,7 +103,7 @@ typedef enum _INDICATION_CODE {
      <b>Disconnect</b> member of the INDICATION_PARAMETERS structure.</p>
 </dd>
 
-### -field <a id="IndicationRemoteConfigRequest"></a><a id="indicationremoteconfigrequest"></a><a id="INDICATIONREMOTECONFIGREQUEST"></a><b>IndicationRemoteConfigRequest</b>
+### -field IndicationRemoteConfigRequest
 
 <dd>
 <p>Indicates to a client profile driver that a remote device is performing a configuration request.
@@ -112,7 +112,7 @@ typedef enum _INDICATION_CODE {
      <b>ConfigRequest</b> member of the INDICATION_PARAMETERS structure.</p>
 </dd>
 
-### -field <a id="IndicationRemoteConfigResponse"></a><a id="indicationremoteconfigresponse"></a><a id="INDICATIONREMOTECONFIGRESPONSE"></a><b>IndicationRemoteConfigResponse</b>
+### -field IndicationRemoteConfigResponse
 
 <dd>
 <p>Indicates to a client profile driver that a remote device is responding to a configuration
@@ -121,13 +121,13 @@ typedef enum _INDICATION_CODE {
      <b>ConfigResponse</b> member of the INDICATION_PARAMETERS structure.</p>
 </dd>
 
-### -field <a id="IndicationFreeExtraOptions"></a><a id="indicationfreeextraoptions"></a><a id="INDICATIONFREEEXTRAOPTIONS"></a><b>IndicationFreeExtraOptions</b>
+### -field IndicationFreeExtraOptions
 
 <dd>
 <p>Reserved for future use. Do not use.</p>
 </dd>
 
-### -field <a id="IndicationRecvPacket"></a><a id="indicationrecvpacket"></a><a id="INDICATIONRECVPACKET"></a><b>IndicationRecvPacket</b>
+### -field IndicationRecvPacket
 
 <dd>
 <p>Indicates to a registered profile driver that a packet has been received on the specified PSM. The
@@ -140,28 +140,28 @@ typedef enum _INDICATION_CODE {
      INDICATION_PARAMETERS</a> structure.</p>
 </dd>
 
-### -field <a id="IndicationPairDevice"></a><a id="indicationpairdevice"></a><a id="INDICATIONPAIRDEVICE"></a><b>IndicationPairDevice</b>
+### -field IndicationPairDevice
 
 <dd>
 <p>Indicates to a registered driver that the local radio has bonded to a specific remote
      radio.</p>
 </dd>
 
-### -field <a id="IndicationUnpairDevice"></a><a id="indicationunpairdevice"></a><a id="INDICATIONUNPAIRDEVICE"></a><b>IndicationUnpairDevice</b>
+### -field IndicationUnpairDevice
 
 <dd>
 <p>Indicates to a registered driver that the local radio is no longer bonded to a specific remote
      radio.</p>
 </dd>
 
-### -field <a id="IndicationUnpersonalizeDevice"></a><a id="indicationunpersonalizedevice"></a><a id="INDICATIONUNPERSONALIZEDEVICE"></a><b>IndicationUnpersonalizeDevice</b>
+### -field IndicationUnpersonalizeDevice
 
 <dd>
 <p>Indicates to a registered driver that the specified remote radio has been removed from the list of
      personal devices.</p>
 </dd>
 
-### -field <a id="IndicationRemoteConnectLE"></a><a id="indicationremoteconnectle"></a><a id="INDICATIONREMOTECONNECTLE"></a><b>IndicationRemoteConnectLE</b>
+### -field IndicationRemoteConnectLE
 
 <dd>
 <p>Indicates to a server profile driver that a low energy (LE) remote device is connecting to the PSM that the

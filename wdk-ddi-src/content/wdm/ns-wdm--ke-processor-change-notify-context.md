@@ -58,26 +58,26 @@ typedef struct _KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>The state of the processor add operation. Possible values are as follows:</p>
 <p></p>
 <dl>
 
-### -field <a id="KeProcessorAddStartNotify"></a><a id="keprocessoraddstartnotify"></a><a id="KEPROCESSORADDSTARTNOTIFY"></a><b>KeProcessorAddStartNotify</b>
+### -field KeProcessorAddStartNotify
 
 <dd>
 <p>The operating system is about to add the processor. At this state, a device driver that receives this notification can allocate any per-processor data structures and perform any other required tasks to prepare the driver for execution on the new processor.</p>
 </dd>
 
-### -field <a id="KeProcessorAddCompleteNotify"></a><a id="keprocessoraddcompletenotify"></a><a id="KEPROCESSORADDCOMPLETENOTIFY"></a><b>KeProcessorAddCompleteNotify</b>
+### -field KeProcessorAddCompleteNotify
 
 <dd>
 <p>The operating system has successfully added the processor. At this state, a device driver that receives this notification can start scheduling threads on the new processor.</p>
 </dd>
 
-### -field <a id="KeProcessorAddFailureNotify"></a><a id="keprocessoraddfailurenotify"></a><a id="KEPROCESSORADDFAILURENOTIFY"></a><b>KeProcessorAddFailureNotify</b>
+### -field KeProcessorAddFailureNotify
 
 <dd>
 <p>The operating system failed to add the processor. If a device driver receives this notification, it should free any per-processor data structures that it allocated for the new processor when it received the <b>KeProcessorAddStartNotify</b> notification.</p>
@@ -85,19 +85,19 @@ typedef struct _KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT {
 </dl>
 </dd>
 
-### -field <b>NtNumber</b>
+### -field NtNumber
 
 <dd>
 <p>The processor index of the new processor. For information about the relationship between a processor index and a processor number, see <a href="..\wdm\nf-wdm-kegetprocessornumberfromindex.md">KeGetProcessorNumberFromIndex</a>.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>If the <b>State</b> member contains <b>KeProcessorAddFailureNotify</b>, this member contains the error status that indicates why the processor add operation failed.</p>
 </dd>
 
-### -field <b>ProcNumber</b>
+### -field ProcNumber
 
 <dd>
 <p>The processor number of the new processor. This member is a <a href="..\miniport\ns-miniport--processor-number.md">PROCESSOR_NUMBER</a> structure that specifies a group number and a group-relative processor number.</p>

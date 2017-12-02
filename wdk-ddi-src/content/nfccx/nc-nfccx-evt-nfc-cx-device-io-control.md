@@ -61,31 +61,31 @@ void EvtNfcCxDeviceIoControl(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object.</p>
 </dd>
 
-### -param <i>OutputBufferLength</i> [in]
+### -param OutputBufferLength [in]
 
 <dd>
 <p>The length, in bytes, of the request's output buffer, if an output buffer is available.</p>
 </dd>
 
-### -param <i>InputBufferLength</i> [in]
+### -param InputBufferLength [in]
 
 <dd>
 <p>The length, in bytes, of the request's input buffer, if an input buffer is available.</p>
 </dd>
 
-### -param <i>IoControlCode</i> [in]
+### -param IoControlCode [in]
 
 <dd>
 <p>The driver-defined or system-defined I/O control code (<a href="wdkgloss.i#wdkgloss.ioctl#wdkgloss.ioctl">IOCTL</a>) that is associated with the request.</p>

@@ -62,31 +62,31 @@ NTSTATUS AllocateContiguousDmaBuffer(
 ## -parameters
 <dl>
 
-### -param <i>context</i> [in]
+### -param context [in]
 
 <dd>
 <p>Specifies the context value from the <b>Context</b> member of the <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a> structure.</p>
 </dd>
 
-### -param <i>handle</i> [in]
+### -param handle [in]
 
 <dd>
 <p>Handle identifying the DMA engine. This handle value was obtained from a previous call to <a href="..\hdaudio\nc-hdaudio-pallocate-capture-dma-engine.md">AllocateCaptureDmaEngine</a> or <a href="..\hdaudio\nc-hdaudio-pallocate-render-dma-engine.md">AllocateRenderDmaEngine</a>.</p>
 </dd>
 
-### -param <i>requestedBufferSize</i> 
+### -param requestedBufferSize 
 
 <dd>
 <p>Specifies the requested buffer size in bytes.</p>
 </dd>
 
-### -param <i>dataBuffer</i> [out]
+### -param dataBuffer [out]
 
 <dd>
 <p>Retrieves the data buffer. This parameter points to a caller-allocated PVOID variable into which the routine writes the system virtual address of the data buffer.</p>
 </dd>
 
-### -param <i>bdl</i> [out]
+### -param bdl [out]
 
 <dd>
 <p>Retrieves the buffer descriptor list (BDL). This parameter points to a caller-allocated PVOID variable into which the routine writes the system virtual address of the BDL. The BDL allocation size is exactly one memory page and the BDL begins on a page boundary.</p>

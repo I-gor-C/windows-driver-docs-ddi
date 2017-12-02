@@ -55,13 +55,13 @@ typedef struct _GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>BankId</b>
+### -field BankId
 
 <dd>
 <p>The identifier for the bank of GPIO pins to query for enabled interrupts. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.</p>
 </dd>
 
-### -field <b>EnabledMask</b>
+### -field EnabledMask
 
 <dd>
 <p>A 64-bit mask that indicates which interrupts are enabled in the specified bank. A bit in the mask that is set to 1 identifies an interrupt pin that is enabled for interrupts. All other bits in the mask are 0. If N is the number of pins in this bank, the pins are numbered 0 to N–1. Bit 0 (the least significant bit) in the mask represents pin 0, bit 1 represents pin 1, and so on.</p>

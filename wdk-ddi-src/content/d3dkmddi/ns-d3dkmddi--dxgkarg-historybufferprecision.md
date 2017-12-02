@@ -54,7 +54,7 @@ typedef struct _DXGKARG_HISTORYBUFFERPRECISION {
 ## -struct-fields
 <dl>
 
-### -field <b>PrecisionBits</b>
+### -field PrecisionBits
 
 <dd>
 <p>The number of valid bits that are used in each time stamp. This number doesn't include bits used for junk values.</p>

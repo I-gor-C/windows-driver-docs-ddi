@@ -7,7 +7,7 @@ old-location: wdf\wdf_tri_state.htm
 old-project: wdf
 ms.assetid: 8ea6e373-225d-4fcd-abcf-c19b07f9f5d8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _WDF_TRI_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfFalse"></a><a id="wdffalse"></a><a id="WDFFALSE"></a><b>WdfFalse</b>
+### -field WdfFalse
 
 <dd>
 <p>The meaning of this enumerator is specific to its use as a structure member or function parameter.</p>
 </dd>
 
-### -field <a id="WdfTrue"></a><a id="wdftrue"></a><a id="WDFTRUE"></a><b>WdfTrue</b>
+### -field WdfTrue
 
 <dd>
 <p>The meaning of this enumerator is specific to its use as a structure member or function parameter.</p>
 </dd>
 
-### -field <a id="WdfUseDefault"></a><a id="wdfusedefault"></a><a id="WDFUSEDEFAULT"></a><b>WdfUseDefault</b>
+### -field WdfUseDefault
 
 <dd>
 <p>The meaning of this enumerator is specific to its use as a structure member or function parameter.</p>

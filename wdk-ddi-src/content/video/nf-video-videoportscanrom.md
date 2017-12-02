@@ -59,25 +59,25 @@ BOOLEAN VideoPortScanRom(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>RomBase</i> 
+### -param RomBase 
 
 <dd>
 <p>Specifies the base ROM address at which the search should start. The given <i>RomBase</i> must be in a mapped range returned by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.</p>
 </dd>
 
-### -param <i>RomLength</i> 
+### -param RomLength 
 
 <dd>
 <p>Specifies the size in bytes of the mapped ROM to be searched.</p>
 </dd>
 
-### -param <i>String</i> 
+### -param String 
 
 <dd>
 <p>Pointer to the driver-allocated string to search for.</p>

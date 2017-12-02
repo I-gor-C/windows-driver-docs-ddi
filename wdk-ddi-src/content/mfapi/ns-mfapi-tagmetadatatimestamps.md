@@ -56,19 +56,19 @@ typedef struct tagMetadataTimeStamps {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Bitwise OR of the <b>MF_METADATATIMESTAMPS_*</b> flags.</p>
 </dd>
 
-### -field <b>Device</b>
+### -field Device
 
 <dd>
 <p>QPC time for the sample  the face rectangle is derived from (in 100ns).</p>
 </dd>
 
-### -field <b>Presentation</b>
+### -field Presentation
 
 <dd>
 <p>PTS for the sample  the face rectangle is derived from (in 100ns).</p>

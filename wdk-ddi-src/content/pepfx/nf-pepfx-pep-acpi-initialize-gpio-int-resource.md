@@ -67,85 +67,85 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE(
 ## -parameters
 <dl>
 
-### -param <i>InterruptType</i> [in]
+### -param InterruptType [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--kinterrupt-mode.md">KINTERRUPT_MODE</a> enumeration value that identifies the interrupt type.</p>
 </dd>
 
-### -param <i>LevelType</i> [in]
+### -param LevelType [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--kinterrupt-polarity.md">KINTERRUPT_POLARITY</a> enumeration value that identifies how a device signals an interrupt request on an interrupt line.</p>
 </dd>
 
-### -param <i>Shareable</i> [in]
+### -param Shareable [in]
 
 <dd>
 <p>Indicates if the device can be shared.</p>
 </dd>
 
-### -param <i>CanWake</i> [in]
+### -param CanWake [in]
 
 <dd>
 <p>Indicates if the device can be woken from a low-power state.</p>
 </dd>
 
-### -param <i>PinConfig</i> [in]
+### -param PinConfig [in]
 
 <dd>
 <p>A <a href="..\pepfx\ne-pepfx--gpio-pin-config-type.md">GPIO_PIN_CONFIG_TYPE</a> enumeration value that identifies the GPIO pin configuration type.</p>
 </dd>
 
-### -param <i>DebounceTimeout</i> [in]
+### -param DebounceTimeout [in]
 
 <dd>
 <p>Specifies the hardware debounce wait time, in hundredths of milliseconds.</p>
 </dd>
 
-### -param <i>ResourceSourceIndex</i> [in]
+### -param ResourceSourceIndex [in]
 
 <dd>
 <p>This parameter should always be zero.</p>
 </dd>
 
-### -param <i>ResourceSourceName</i> [in]
+### -param ResourceSourceName [in]
 
 <dd>
 <p>This parameter should always be "ResourceConsumer."</p>
 </dd>
 
-### -param <i>ResourceUsage</i> [in]
+### -param ResourceUsage [in]
 
 <dd>
 <p>Indicates if this device is in use.</p>
 </dd>
 
-### -param <i>VendorData</i> [in]
+### -param VendorData [in]
 
 <dd>
 <p>A pointer to a raw data buffer containing vendor-defined byte data to be decoded by the OS driver. </p>
 </dd>
 
-### -param <i>VendorDataLength</i> [in]
+### -param VendorDataLength [in]
 
 <dd>
 <p>The size of the buffer in the <i>VendorData</i> partameter.</p>
 </dd>
 
-### -param <i>PinTable</i> [in]
+### -param PinTable [in]
 
 <dd>
 <p>A list of pin numbers on the resource. </p>
 </dd>
 
-### -param <i>PinCount</i> [in]
+### -param PinCount [in]
 
 <dd>
 <p>The number of pins described by the <i>PinTable</i> parameter.</p>
 </dd>
 
-### -param <i>Resource</i> [out]
+### -param Resource [out]
 
 <dd>
 <p>A pointer to the resource. The structure behind the pointer is of type <a href="..\pepfx\ns-pepfx--pep-acpi-gpio-resource.md">PEP_ACPI_GPIO_RESOURCE</a>. </p>

@@ -56,16 +56,16 @@ NTSTATUS IoCallDriver(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to a <a href="wdkgloss.d#wdkgloss.device_object#wdkgloss.device_object"><i>device object</i></a>, representing the target device for the requested I/O operation.</p>
 </dd>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
-<p>Pointer to the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a>. </p>
+<p>Pointer to the <a href="..\wdm\ns-wdm--irp.md">IRP</a>. </p>
 </dd>
 </dl>
 
@@ -79,7 +79,7 @@ NTSTATUS IoCallDriver(
 
 <p>An IRP passed in a call to <b>IoCallDriver</b> becomes inaccessible to the higher-level driver, unless the higher-level driver has called <a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a> to set up an <a href="..\wdm\nc-wdm-io-completion-routine.md">IoCompletion</a> routine for the IRP. If it has, the IRP input to the <i>IoCompletion</i> routine has its I/O status block set by the lower drivers, and all lower-level drivers' I/O stack locations are filled with zeros.</p>
 
-<p>Drivers for Windows Server 2003, Windows XP, and Windows 2000 must use <a href="..\ntifs\nf-ntifs-pocalldriver.md">PoCallDriver</a> rather than <b>IoCallDriver</b> to pass power IRPs (<a href="https://msdn.microsoft.com/library/windows/hardware/ff550784">IRP_MJ_POWER</a>). For more information, see <a href="https://msdn.microsoft.com/a47e2310-e89b-4552-bbe3-d4984ae8b564">Calling IoCallDriver vs. Calling PoCallDriver</a>. </p>
+<p>Drivers for Windows Server 2003, Windows XP, and Windows 2000 must use <a href="..\wdm\nf-wdm-pocalldriver.md">PoCallDriver</a> rather than <b>IoCallDriver</b> to pass power IRPs (<a href="https://msdn.microsoft.com/library/windows/hardware/ff550784">IRP_MJ_POWER</a>). For more information, see <a href="https://msdn.microsoft.com/a47e2310-e89b-4552-bbe3-d4984ae8b564">Calling IoCallDriver vs. Calling PoCallDriver</a>. </p>
 
 ## -requirements
 <table>
@@ -167,7 +167,7 @@ NTSTATUS IoCallDriver(
 <a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-pocalldriver.md">PoCallDriver</a>
+<a href="..\wdm\nf-wdm-pocalldriver.md">PoCallDriver</a>
 </dt>
 </dl>
 <p> </p>

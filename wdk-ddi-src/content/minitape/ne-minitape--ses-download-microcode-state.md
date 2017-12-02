@@ -58,31 +58,31 @@ typedef enum _SES_DOWNLOAD_MICROCODE_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="SesDownloadMcStateNoneInProgress"></a><a id="sesdownloadmcstatenoneinprogress"></a><a id="SESDOWNLOADMCSTATENONEINPROGRESS"></a><b>SesDownloadMcStateNoneInProgress</b>
+### -field SesDownloadMcStateNoneInProgress
 
 <dd>
 <p>Specifies no microcode download operation is in progress.</p>
 </dd>
 
-### -field <a id="SesDownloadMcStateInProgress"></a><a id="sesdownloadmcstateinprogress"></a><a id="SESDOWNLOADMCSTATEINPROGRESS"></a><b>SesDownloadMcStateInProgress</b>
+### -field SesDownloadMcStateInProgress
 
 <dd>
 <p>Specifies a microcode download operation is in progress.</p>
 </dd>
 
-### -field <a id="SesDownloadMcStateCompletedPendingReset"></a><a id="sesdownloadmcstatecompletedpendingreset"></a><a id="SESDOWNLOADMCSTATECOMPLETEDPENDINGRESET"></a><b>SesDownloadMcStateCompletedPendingReset</b>
+### -field SesDownloadMcStateCompletedPendingReset
 
 <dd>
 <p>Specifies a microcode download operations completed and is waiting for a hard reset.</p>
 </dd>
 
-### -field <a id="SesDownloadMcStateCompletedPendingPowerOn"></a><a id="sesdownloadmcstatecompletedpendingpoweron"></a><a id="SESDOWNLOADMCSTATECOMPLETEDPENDINGPOWERON"></a><b>SesDownloadMcStateCompletedPendingPowerOn</b>
+### -field SesDownloadMcStateCompletedPendingPowerOn
 
 <dd>
 <p>Specifies a microcode download operations completed and is waiting for a power on.</p>
 </dd>
 
-### -field <a id="SesDownloadMcStateCompletedPendingActivation"></a><a id="sesdownloadmcstatecompletedpendingactivation"></a><a id="SESDOWNLOADMCSTATECOMPLETEDPENDINGACTIVATION"></a><b>SesDownloadMcStateCompletedPendingActivation</b>
+### -field SesDownloadMcStateCompletedPendingActivation
 
 <dd>
 <p>Specifies a microcode download operations completed and is waiting for activation.</p>

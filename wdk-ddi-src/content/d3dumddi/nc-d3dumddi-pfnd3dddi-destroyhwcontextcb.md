@@ -55,13 +55,13 @@ _Check_return_ HRESULT APIENTRY CALLBACK PFND3DDDI_DESTROYHWCONTEXTCB(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the device.</p>
 </dd>
 
-### -param <i>destroyHwContext</i> [in]
+### -param destroyHwContext [in]
 
 <dd>
 <p>A pointer to the structure holding information to destroy the hardware context.</p>

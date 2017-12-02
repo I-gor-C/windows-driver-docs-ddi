@@ -7,7 +7,7 @@ old-location: ifsk\file_information_class.htm
 old-project: ifsk
 ms.assetid: aec0655b-7cc0-48b6-828c-b9d39c71e5b6
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -121,84 +121,84 @@ typedef enum _FILE_INFORMATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="FileDirectoryInformation"></a><a id="filedirectoryinformation"></a><a id="FILEDIRECTORYINFORMATION"></a><b>FileDirectoryInformation</b>
+### -field FileDirectoryInformation
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--file-directory-information.md">FILE_DIRECTORY_INFORMATION</a> structure.  </p>
 </dd>
 
-### -field <a id="FileFullDirectoryInformation"></a><a id="filefulldirectoryinformation"></a><a id="FILEFULLDIRECTORYINFORMATION"></a><b>FileFullDirectoryInformation</b>
+### -field FileFullDirectoryInformation
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--file-full-dir-information.md">FILE_FULL_DIR_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="FileBothDirectoryInformation"></a><a id="filebothdirectoryinformation"></a><a id="FILEBOTHDIRECTORYINFORMATION"></a><b>FileBothDirectoryInformation</b>
+### -field FileBothDirectoryInformation
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--file-both-dir-information.md">FILE_BOTH_DIR_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="FileBasicInformation"></a><a id="filebasicinformation"></a><a id="FILEBASICINFORMATION"></a><b>FileBasicInformation</b>
+### -field FileBasicInformation
 
 <dd>
 <p>A <a href="..\wdm\ns-wdm--file-basic-information.md">FILE_BASIC_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="FileStandardInformation"></a><a id="filestandardinformation"></a><a id="FILESTANDARDINFORMATION"></a><b>FileStandardInformation</b>
+### -field FileStandardInformation
 
 <dd>
 <p>A <a href="..\wdm\ns-wdm--file-standard-information.md">FILE_STANDARD_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="FileInternalInformation"></a><a id="fileinternalinformation"></a><a id="FILEINTERNALINFORMATION"></a><b>FileInternalInformation</b>
+### -field FileInternalInformation
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--file-internal-information.md">FILE_INTERNAL_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="FileEaInformation"></a><a id="fileeainformation"></a><a id="FILEEAINFORMATION"></a><b>FileEaInformation</b>
+### -field FileEaInformation
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--file-ea-information.md">FILE_EA_INFORMATION</a> structure.
 </p>
 </dd>
 
-### -field <a id="FileAccessInformation"></a><a id="fileaccessinformation"></a><a id="FILEACCESSINFORMATION"></a><b>FileAccessInformation</b>
+### -field FileAccessInformation
 
 <dd>
 <p>
 A <a href="..\ntifs\ns-ntifs--file-access-information.md">FILE_ACCESS_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="FileNameInformation"></a><a id="filenameinformation"></a><a id="FILENAMEINFORMATION"></a><b>FileNameInformation</b>
+### -field FileNameInformation
 
 <dd>
 <p>
 A <a href="..\ntddk\ns-ntddk--file-name-information.md">FILE_NAME_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="FileRenameInformation"></a><a id="filerenameinformation"></a><a id="FILERENAMEINFORMATION"></a><b>FileRenameInformation</b>
+### -field FileRenameInformation
 
 <dd>
 <p>
 A <a href="..\ntifs\ns-ntifs--file-rename-information.md">FILE_RENAME_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="FileLinkInformation"></a><a id="filelinkinformation"></a><a id="FILELINKINFORMATION"></a><b>FileLinkInformation</b>
+### -field FileLinkInformation
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--file-link-information.md">FILE_LINK_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="FileNamesInformation"></a><a id="filenamesinformation"></a><a id="FILENAMESINFORMATION"></a><b>FileNamesInformation</b>
+### -field FileNamesInformation
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--file-names-information.md">FILE_NAMES_INFORMATION</a> structure.
 </p>
 </dd>
 
-### -field <a id="FileDispositionInformation"></a><a id="filedispositioninformation"></a><a id="FILEDISPOSITIONINFORMATION"></a><b>FileDispositionInformation</b>
+### -field FileDispositionInformation
 
 <dd>
 <p>
@@ -206,7 +206,7 @@ A <a href="..\ntddk\ns-ntddk--file-disposition-information.md">FILE_DISPOSITION_
 </p>
 </dd>
 
-### -field <a id="FilePositionInformation"></a><a id="filepositioninformation"></a><a id="FILEPOSITIONINFORMATION"></a><b>FilePositionInformation</b>
+### -field FilePositionInformation
 
 <dd>
 <p>
@@ -214,7 +214,7 @@ A <a href="..\wdm\ns-wdm--file-position-information.md">FILE_POSITION_INFORMATIO
 </p>
 </dd>
 
-### -field <a id="FileFullEaInformation"></a><a id="filefulleainformation"></a><a id="FILEFULLEAINFORMATION"></a><b>FileFullEaInformation</b>
+### -field FileFullEaInformation
 
 <dd>
 <p>
@@ -222,7 +222,7 @@ A <a href="..\wdm\ns-wdm--file-full-ea-information.md">FILE_FULL_EA_INFORMATION<
 </p>
 </dd>
 
-### -field <a id="FileModeInformation"></a><a id="filemodeinformation"></a><a id="FILEMODEINFORMATION"></a><b>FileModeInformation</b>
+### -field FileModeInformation
 
 <dd>
 <p>
@@ -230,14 +230,14 @@ A <a href="..\ntifs\ns-ntifs--file-mode-information.md">FILE_MODE_INFORMATION</a
 </p>
 </dd>
 
-### -field <a id="FileAlignmentInformation"></a><a id="filealignmentinformation"></a><a id="FILEALIGNMENTINFORMATION"></a><b>FileAlignmentInformation</b>
+### -field FileAlignmentInformation
 
 <dd>
 <p>
 A <a href="..\ntddk\ns-ntddk--file-alignment-information.md">FILE_ALIGNMENT_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="FileAllInformation"></a><a id="fileallinformation"></a><a id="FILEALLINFORMATION"></a><b>FileAllInformation</b>
+### -field FileAllInformation
 
 <dd>
 <p>
@@ -245,14 +245,14 @@ A <a href="..\ntifs\ns-ntifs--file-all-information.md">FILE_ALL_INFORMATION</a> 
 </p>
 </dd>
 
-### -field <a id="FileAllocationInformation"></a><a id="fileallocationinformation"></a><a id="FILEALLOCATIONINFORMATION"></a><b>FileAllocationInformation</b>
+### -field FileAllocationInformation
 
 <dd>
 <p>
 A <a href="..\ntifs\ns-ntifs--file-allocation-information.md">FILE_ALLOCATION_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="FileEndOfFileInformation"></a><a id="fileendoffileinformation"></a><a id="FILEENDOFFILEINFORMATION"></a><b>FileEndOfFileInformation</b>
+### -field FileEndOfFileInformation
 
 <dd>
 <p>
@@ -260,7 +260,7 @@ A <a href="..\ntddk\ns-ntddk--file-end-of-file-information.md">FILE_END_OF_FILE_
 </p>
 </dd>
 
-### -field <a id="FileAlternateNameInformation"></a><a id="filealternatenameinformation"></a><a id="FILEALTERNATENAMEINFORMATION"></a><b>FileAlternateNameInformation</b>
+### -field FileAlternateNameInformation
 
 <dd>
 <p>
@@ -268,7 +268,7 @@ A <a href="..\ntddk\ns-ntddk--file-name-information.md">FILE_NAME_INFORMATION</a
 </p>
 </dd>
 
-### -field <a id="FileStreamInformation"></a><a id="filestreaminformation"></a><a id="FILESTREAMINFORMATION"></a><b>FileStreamInformation</b>
+### -field FileStreamInformation
 
 <dd>
 <p>
@@ -276,7 +276,7 @@ A message buffer that contains one or more <a href="..\ntifs\ns-ntifs--file-stre
 </p>
 </dd>
 
-### -field <a id="FilePipeInformation"></a><a id="filepipeinformation"></a><a id="FILEPIPEINFORMATION"></a><b>FilePipeInformation</b>
+### -field FilePipeInformation
 
 <dd>
 <p>
@@ -284,7 +284,7 @@ A <a href="..\ntifs\ns-ntifs--file-pipe-information.md">FILE_PIPE_INFORMATION</a
 </p>
 </dd>
 
-### -field <a id="FilePipeLocalInformation"></a><a id="filepipelocalinformation"></a><a id="FILEPIPELOCALINFORMATION"></a><b>FilePipeLocalInformation</b>
+### -field FilePipeLocalInformation
 
 <dd>
 <p>
@@ -292,7 +292,7 @@ A <a href="..\ntifs\ns-ntifs--file-pipe-local-information.md">FILE_PIPE_LOCAL_IN
 </p>
 </dd>
 
-### -field <a id="FilePipeRemoteInformation"></a><a id="filepiperemoteinformation"></a><a id="FILEPIPEREMOTEINFORMATION"></a><b>FilePipeRemoteInformation</b>
+### -field FilePipeRemoteInformation
 
 <dd>
 <p>
@@ -300,7 +300,7 @@ A <a href="..\ntifs\ns-ntifs--file-pipe-remote-information.md">FILE_PIPE_REMOTE_
 </p>
 </dd>
 
-### -field <a id="FileMailslotQueryInformation"></a><a id="filemailslotqueryinformation"></a><a id="FILEMAILSLOTQUERYINFORMATION"></a><b>FileMailslotQueryInformation</b>
+### -field FileMailslotQueryInformation
 
 <dd>
 <p>
@@ -308,7 +308,7 @@ A <a href="..\ntifs\ns-ntifs--file-mailslot-query-information.md">FILE_MAILSLOT_
 </p>
 </dd>
 
-### -field <a id="FileMailslotSetInformation"></a><a id="filemailslotsetinformation"></a><a id="FILEMAILSLOTSETINFORMATION"></a><b>FileMailslotSetInformation</b>
+### -field FileMailslotSetInformation
 
 <dd>
 <p>
@@ -316,7 +316,7 @@ A <a href="..\ntifs\ns-ntifs--file-mailslot-set-information.md">FILE_MAILSLOT_SE
 </p>
 </dd>
 
-### -field <a id="FileCompressionInformation"></a><a id="filecompressioninformation"></a><a id="FILECOMPRESSIONINFORMATION"></a><b>FileCompressionInformation</b>
+### -field FileCompressionInformation
 
 <dd>
 <p>
@@ -324,7 +324,7 @@ A <a href="..\ntifs\ns-ntifs--file-compression-information.md">FILE_COMPRESSION_
 </p>
 </dd>
 
-### -field <a id="FileObjectIdInformation"></a><a id="fileobjectidinformation"></a><a id="FILEOBJECTIDINFORMATION"></a><b>FileObjectIdInformation</b>
+### -field FileObjectIdInformation
 
 <dd>
 <p>
@@ -332,55 +332,55 @@ A <a href="..\ntifs\ns-ntifs--file-objectid-information.md">FILE_OBJECTID_INFORM
  </p>
 </dd>
 
-### -field <a id="FileCompletionInformation"></a><a id="filecompletioninformation"></a><a id="FILECOMPLETIONINFORMATION"></a><b>FileCompletionInformation</b>
+### -field FileCompletionInformation
 
 <dd>
 <p>This value is reserved for system use.
  </p>
 </dd>
 
-### -field <a id="FileMoveClusterInformation"></a><a id="filemoveclusterinformation"></a><a id="FILEMOVECLUSTERINFORMATION"></a><b>FileMoveClusterInformation</b>
+### -field FileMoveClusterInformation
 
 <dd>
 <p>This value is reserved for system use.
 </p>
 </dd>
 
-### -field <a id="FileQuotaInformation"></a><a id="filequotainformation"></a><a id="FILEQUOTAINFORMATION"></a><b>FileQuotaInformation</b>
+### -field FileQuotaInformation
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--file-quota-information.md">FILE_QUOTA_INFORMATION</a> structure.  
 </p>
 </dd>
 
-### -field <a id="FileReparsePointInformation"></a><a id="filereparsepointinformation"></a><a id="FILEREPARSEPOINTINFORMATION"></a><b>FileReparsePointInformation</b>
+### -field FileReparsePointInformation
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--file-reparse-point-information.md">FILE_REPARSE_POINT_INFORMATION</a> structure.
 </p>
 </dd>
 
-### -field <a id="FileNetworkOpenInformation"></a><a id="filenetworkopeninformation"></a><a id="FILENETWORKOPENINFORMATION"></a><b>FileNetworkOpenInformation</b>
+### -field FileNetworkOpenInformation
 
 <dd>
 <p>A <a href="..\wdm\ns-wdm--file-network-open-information.md">FILE_NETWORK_OPEN_INFORMATION</a> structure.
 </p>
 </dd>
 
-### -field <a id="FileAttributeTagInformation"></a><a id="fileattributetaginformation"></a><a id="FILEATTRIBUTETAGINFORMATION"></a><b>FileAttributeTagInformation</b>
+### -field FileAttributeTagInformation
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--file-attribute-tag-information.md">FILE_ATTRIBUTE_TAG_INFORMATION</a> structure.
 </p>
 </dd>
 
-### -field <a id="FileTrackingInformation"></a><a id="filetrackinginformation"></a><a id="FILETRACKINGINFORMATION"></a><b>FileTrackingInformation</b>
+### -field FileTrackingInformation
 
 <dd>
 <p>This value is reserved for system use.</p>
 </dd>
 
-### -field <a id="FileIdBothDirectoryInformation"></a><a id="fileidbothdirectoryinformation"></a><a id="FILEIDBOTHDIRECTORYINFORMATION"></a><b>FileIdBothDirectoryInformation</b>
+### -field FileIdBothDirectoryInformation
 
 <dd>
 <p>
@@ -388,21 +388,21 @@ A <a href="..\ntifs\ns-ntifs--file-id-both-dir-information.md">FILE_ID_BOTH_DIR_
 </p>
 </dd>
 
-### -field <a id="FileIdFullDirectoryInformation"></a><a id="fileidfulldirectoryinformation"></a><a id="FILEIDFULLDIRECTORYINFORMATION"></a><b>FileIdFullDirectoryInformation</b>
+### -field FileIdFullDirectoryInformation
 
 <dd>
 <p>
 A <a href="..\ntifs\ns-ntifs--file-id-full-dir-information.md">FILE_ID_FULL_DIR_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="FileValidDataLengthInformation"></a><a id="filevaliddatalengthinformation"></a><a id="FILEVALIDDATALENGTHINFORMATION"></a><b>FileValidDataLengthInformation</b>
+### -field FileValidDataLengthInformation
 
 <dd>
 <p>
 A <a href="..\ntddk\ns-ntddk--file-valid-data-length-information.md">FILE_VALID_DATA_LENGTH_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="FileShortNameInformation"></a><a id="fileshortnameinformation"></a><a id="FILESHORTNAMEINFORMATION"></a><b>FileShortNameInformation</b>
+### -field FileShortNameInformation
 
 <dd>
 <p>
@@ -410,7 +410,7 @@ A <a href="..\ntddk\ns-ntddk--file-name-information.md">FILE_NAME_INFORMATION</a
 </p>
 </dd>
 
-### -field <a id="FileIoCompletionNotificationInformation"></a><a id="fileiocompletionnotificationinformation"></a><a id="FILEIOCOMPLETIONNOTIFICATIONINFORMATION"></a><b>FileIoCompletionNotificationInformation</b>
+### -field FileIoCompletionNotificationInformation
 
 <dd>
 <p>
@@ -418,60 +418,60 @@ This value is reserved for system use. This value is available starting with Win
 </p>
 </dd>
 
-### -field <a id="FileIoStatusBlockRangeInformation"></a><a id="fileiostatusblockrangeinformation"></a><a id="FILEIOSTATUSBLOCKRANGEINFORMATION"></a><b>FileIoStatusBlockRangeInformation</b>
+### -field FileIoStatusBlockRangeInformation
 
 <dd>
 <p>This value is reserved for system use. This value is available starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="FileIoPriorityHintInformation"></a><a id="fileiopriorityhintinformation"></a><a id="FILEIOPRIORITYHINTINFORMATION"></a><b>FileIoPriorityHintInformation</b>
+### -field FileIoPriorityHintInformation
 
 <dd>
 <p>A <a href="..\wdm\ns-wdm--file-io-priority-hint-information.md">FILE_IO_PRIORITY_HINT_INFORMATION</a> structure. This value is available starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="FileSfioReserveInformation"></a><a id="filesfioreserveinformation"></a><a id="FILESFIORESERVEINFORMATION"></a><b>FileSfioReserveInformation</b>
+### -field FileSfioReserveInformation
 
 <dd>
 <p>This value is reserved for system use. This value is available starting with Windows Vista.
 </p>
 </dd>
 
-### -field <a id="FileSfioVolumeInformation"></a><a id="filesfiovolumeinformation"></a><a id="FILESFIOVOLUMEINFORMATION"></a><b>FileSfioVolumeInformation</b>
+### -field FileSfioVolumeInformation
 
 <dd>
 <p>This value is reserved for system use. This value is available starting with Windows Vista.
 </p>
 </dd>
 
-### -field <a id="FileHardLinkInformation"></a><a id="filehardlinkinformation"></a><a id="FILEHARDLINKINFORMATION"></a><b>FileHardLinkInformation</b>
+### -field FileHardLinkInformation
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--file-links-information.md">FILE_LINKS_INFORMATION</a> structure. This value is available starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="FileProcessIdsUsingFileInformation"></a><a id="fileprocessidsusingfileinformation"></a><a id="FILEPROCESSIDSUSINGFILEINFORMATION"></a><b>FileProcessIdsUsingFileInformation</b>
+### -field FileProcessIdsUsingFileInformation
 
 <dd>
 <p>
 A <b>FILE_PROCESS_IDS_USING_FILE_INFORMATION</b> structure. This value is reserved for system use. This value is available starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="FileNormalizedNameInformation"></a><a id="filenormalizednameinformation"></a><a id="FILENORMALIZEDNAMEINFORMATION"></a><b>FileNormalizedNameInformation</b>
+### -field FileNormalizedNameInformation
 
 <dd>
 <p>A <a href="..\fltkernel\ns-fltkernel--flt-file-name-information.md">FILE_NAME_INFORMATION</a> structure. This value is defined starting with Windows Vista. It is supported starting with Windows 8.
 </p>
 </dd>
 
-### -field <a id="FileNetworkPhysicalNameInformation"></a><a id="filenetworkphysicalnameinformation"></a><a id="FILENETWORKPHYSICALNAMEINFORMATION"></a><b>FileNetworkPhysicalNameInformation</b>
+### -field FileNetworkPhysicalNameInformation
 
 <dd>
 <p>
 A <a href="..\ntifs\ns-ntifs--file-network-physical-name-information.md">FILE_NETWORK_PHYSICAL_NAME_INFORMATION</a> structure. This value is available starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="FileIdGlobalTxDirectoryInformation"></a><a id="fileidglobaltxdirectoryinformation"></a><a id="FILEIDGLOBALTXDIRECTORYINFORMATION"></a><b>FileIdGlobalTxDirectoryInformation</b>
+### -field FileIdGlobalTxDirectoryInformation
 
 <dd>
 <p>
@@ -479,40 +479,40 @@ A <a href="..\ntifs\ns-ntifs--file-id-global-tx-dir-information.md">FILE_ID_GLOB
 </p>
 </dd>
 
-### -field <a id="FileIsRemoteDeviceInformation"></a><a id="fileisremotedeviceinformation"></a><a id="FILEISREMOTEDEVICEINFORMATION"></a><b>FileIsRemoteDeviceInformation</b>
+### -field FileIsRemoteDeviceInformation
 
 <dd>
 <p>A <b>FILE_IS_REMOTE_DEVICE_INFORMATION</b> structure. This value is reserved for system use. This value is available starting with Windows 7.
 </p>
 </dd>
 
-### -field <a id="FileUnusedInformation"></a><a id="fileunusedinformation"></a><a id="FILEUNUSEDINFORMATION"></a><b>FileUnusedInformation</b>
+### -field FileUnusedInformation
 
 <dd>
 <p>This value is reserved for system use. This value is available starting with Windows 7.
 </p>
 </dd>
 
-### -field <a id="FileNumaNodeInformation"></a><a id="filenumanodeinformation"></a><a id="FILENUMANODEINFORMATION"></a><b>FileNumaNodeInformation</b>
+### -field FileNumaNodeInformation
 
 <dd>
 <p>A <b>FILE_NUMA_NODE_INFORMATION</b> structure. This value is reserved for system use. This value is available starting with Windows 7.</p>
 </dd>
 
-### -field <a id="FileStandardLinkInformation"></a><a id="filestandardlinkinformation"></a><a id="FILESTANDARDLINKINFORMATION"></a><b>FileStandardLinkInformation</b>
+### -field FileStandardLinkInformation
 
 <dd>
 <p>A <b>FILE_STANDARD_LINK_INFORMATION</b> structure. This value is reserved for system use. This value is available starting with Windows 7.
 </p>
 </dd>
 
-### -field <a id="FileRemoteProtocolInformation"></a><a id="fileremoteprotocolinformation"></a><a id="FILEREMOTEPROTOCOLINFORMATION"></a><b>FileRemoteProtocolInformation</b>
+### -field FileRemoteProtocolInformation
 
 <dd>
 <p>A <b>FILE_REMOTE_PROTOCOL_INFORMATION</b> structure. This value is reserved for system use. This value is available starting with Windows 7.</p>
 </dd>
 
-### -field <a id="FileRenameInformationBypassAccessCheck"></a><a id="filerenameinformationbypassaccesscheck"></a><a id="FILERENAMEINFORMATIONBYPASSACCESSCHECK"></a><b>FileRenameInformationBypassAccessCheck</b>
+### -field FileRenameInformationBypassAccessCheck
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--file-rename-information.md">FILE_RENAME_INFORMATION</a> structure. This value is available starting with Windows 10. </p>
@@ -523,7 +523,7 @@ A <a href="..\ntifs\ns-ntifs--file-id-global-tx-dir-information.md">FILE_ID_GLOB
 </p>
 </dd>
 
-### -field <a id="FileLinkInformationBypassAccessCheck"></a><a id="filelinkinformationbypassaccesscheck"></a><a id="FILELINKINFORMATIONBYPASSACCESSCHECK"></a><b>FileLinkInformationBypassAccessCheck</b>
+### -field FileLinkInformationBypassAccessCheck
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--file-link-information.md">FILE_LINK_INFORMATION</a> structure. This value is available starting with Windows 10.</p>
@@ -534,56 +534,56 @@ A <a href="..\ntifs\ns-ntifs--file-id-global-tx-dir-information.md">FILE_ID_GLOB
 </p>
 </dd>
 
-### -field <a id="FileVolumeNameInformation"></a><a id="filevolumenameinformation"></a><a id="FILEVOLUMENAMEINFORMATION"></a><b>FileVolumeNameInformation</b>
+### -field FileVolumeNameInformation
 
 <dd>
 <p>A <b>FILE_VOLUME_NAME_INFORMATION</b> structure. This value is reserved for system use. This value is available starting with Windows 10.</p>
 </dd>
 
-### -field <a id="FileIdInformation"></a><a id="fileidinformation"></a><a id="FILEIDINFORMATION"></a><b>FileIdInformation</b>
+### -field FileIdInformation
 
 <dd>
 <p>A <b>FILE_ID_INFORMATION</b> structure. This value is reserved for system use. This value is available starting with Windows 10.</p>
 </dd>
 
-### -field <a id="FileIdExtdDirectoryInformation"></a><a id="fileidextddirectoryinformation"></a><a id="FILEIDEXTDDIRECTORYINFORMATION"></a><b>FileIdExtdDirectoryInformation</b>
+### -field FileIdExtdDirectoryInformation
 
 <dd>
 <p>A <b>FILE_ID_EXTD_DIR_INFORMATION</b> structure. This value is reserved for system use. This value is available starting with Windows 10.</p>
 </dd>
 
-### -field <a id="FileReplaceCompletionInformation"></a><a id="filereplacecompletioninformation"></a><a id="FILEREPLACECOMPLETIONINFORMATION"></a><b>FileReplaceCompletionInformation</b>
+### -field FileReplaceCompletionInformation
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--file-completion-information.md">FILE_COMPLETION_INFORMATION</a> structure to change or remove the completion port associated with a file handle. This value is available starting with Windows 8.1.</p>
 </dd>
 
-### -field <a id="FileHardLinkFullIdInformation"></a><a id="filehardlinkfullidinformation"></a><a id="FILEHARDLINKFULLIDINFORMATION"></a><b>FileHardLinkFullIdInformation</b>
+### -field FileHardLinkFullIdInformation
 
 <dd>
 <p>A <b>FILE_LINK_ENTRY_FULL_ID_INFORMATION</b> structure. This value is reserved for system use. This value is available starting with Windows 10.</p>
 </dd>
 
-### -field <a id="____FileIdExtdBothDirectoryInformation"></a><a id="____fileidextdbothdirectoryinformation"></a><a id="____FILEIDEXTDBOTHDIRECTORYINFORMATION"></a><b>    FileIdExtdBothDirectoryInformation</b>
+### -field     FileIdExtdBothDirectoryInformation
 
 <dd>
 <p>A <b>FILE_ID_EXTD_BOTH_DIR_INFORMATION</b> structure. This value is reserved for system use. This value is available starting with Windows 10.</p>
 </dd>
 
-### -field <a id="____FileDispositionInformationEx"></a><a id="____filedispositioninformationex"></a><a id="____FILEDISPOSITIONINFORMATIONEX"></a><b>    FileDispositionInformationEx</b>
+### -field     FileDispositionInformationEx
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--file-disposition-information-ex.md">FILE_DISPOSITION_INFORMATION_EX</a> structure that indicates how the operating system should delete a file. This value is available starting with Windows 10, version 1709.</p>
 </dd>
 
-### -field <a id="FileRenameInformationEx"></a><a id="filerenameinformationex"></a><a id="FILERENAMEINFORMATIONEX"></a><b>FileRenameInformationEx</b>
+### -field FileRenameInformationEx
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--file-rename-information.md">FILE_RENAME_INFORMATION</a> structure which contains additional flags. This value is available starting with Windows 10, version 1709. </p>
 <p></p>
 </dd>
 
-### -field <a id="FileRenameInformationExBypassAccessCheck"></a><a id="filerenameinformationexbypassaccesscheck"></a><a id="FILERENAMEINFORMATIONEXBYPASSACCESSCHECK"></a><b>FileRenameInformationExBypassAccessCheck</b>
+### -field FileRenameInformationExBypassAccessCheck
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--file-rename-information.md">FILE_RENAME_INFORMATION</a> structure which contains additional flags. This value is available starting with Windows 10, version 1709. </p>
@@ -594,7 +594,7 @@ A <a href="..\ntifs\ns-ntifs--file-id-global-tx-dir-information.md">FILE_ID_GLOB
 </p>
 </dd>
 
-### -field <a id="FileMaximumInformation"></a><a id="filemaximuminformation"></a><a id="FILEMAXIMUMINFORMATION"></a><b>FileMaximumInformation</b>
+### -field FileMaximumInformation
 
 <dd>
 <p>

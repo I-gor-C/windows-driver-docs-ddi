@@ -7,7 +7,7 @@ old-location: netvista\offload_security_association.htm
 old-project: netvista
 ms.assetid: 2c392a13-4db4-4b22-aacf-4450eb1e191c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: OFFLOAD_SECURITY_ASSOCIATION,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct _OFFLOAD_SECURITY_ASSOCIATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Operation</b>
+### -field Operation
 
 <dd>
 <p>The Internet Protocol security (IPsec) operation for which the SA is to be used. The following
@@ -67,13 +67,13 @@ typedef struct _OFFLOAD_SECURITY_ASSOCIATION {
 <p></p>
 <dl>
 
-### -field <a id="AUTHENTICATE"></a><a id="authenticate"></a><b>AUTHENTICATE</b>
+### -field AUTHENTICATE
 
 <dd>
 <p>The SA will be used for authentication (integrity checking).</p>
 </dd>
 
-### -field <a id="ENCRYPT"></a><a id="encrypt"></a><b>ENCRYPT</b>
+### -field ENCRYPT
 
 <dd>
 <p>The SA will be used for encryption/decryption (confidentiality).</p>
@@ -81,27 +81,27 @@ typedef struct _OFFLOAD_SECURITY_ASSOCIATION {
 </dl>
 </dd>
 
-### -field <b>SPI</b>
+### -field SPI
 
 <dd>
 <p>The Security Parameters Index (SPI) for the SA.</p>
 </dd>
 
-### -field <b>IntegrityAlgo</b>
+### -field IntegrityAlgo
 
 <dd>
 <p>The integrity (authentication) algorithm for the SA, formatted as an 
      <a href="..\ntddndis\ns-ntddndis--offload-algo-info.md">OFFLOAD_ALGO_INFO</a> structure.</p>
 </dd>
 
-### -field <b>ConfAlgo</b>
+### -field ConfAlgo
 
 <dd>
 <p>The confidentiality (encryption/decryption) algorithm for the SA, formatted as an
      OFFLOAD_ALGO_INFO structure.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved.</p>
@@ -143,4 +143,4 @@ typedef struct _OFFLOAD_SECURITY_ASSOCIATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20OFFLOAD_SECURITY_ASSOCIATION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20OFFLOAD_SECURITY_ASSOCIATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

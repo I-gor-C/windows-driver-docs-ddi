@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies the property. This parameter is a structure of type <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.</p>
 </dd>
 
-### -field <b>PinCategory</b>
+### -field PinCategory
 
 <dd>
 <p>Specifies a category for the created pin. This parameter is a KSCATEGORY_<i>Xxx</i> GUID.</p>
 </dd>
 
-### -field <b>PinName</b>
+### -field PinName
 
 <dd>
 <p>Specifies a name for the created pin. If the <i>PinCategory</i> parameter uniquely identifies the pin to create, set <i>PinName</i> to the same GUID as <i>PinCategory</i>. Otherwise, set <i>PinName</i> to a pin-name GUID that uniquely distinguishes the target pin from other pins of type KSCATEGORY_<i>Xxx</i>.</p>

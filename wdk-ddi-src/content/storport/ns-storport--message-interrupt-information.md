@@ -60,37 +60,37 @@ typedef struct _MESSAGE_INTERRUPT_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>MessageId</b>
+### -field MessageId
 
 <dd>
 <p>An identifier identifies the MSI interrupt. A miniport driver can pass this value to <a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a> in the <i>MessageId</i> parameter to obtain a spin lock for synchronization purposes. </p>
 </dd>
 
-### -field <b>MessageData</b>
+### -field MessageData
 
 <dd>
 <p>The data associated with the message. </p>
 </dd>
 
-### -field <b>MessageAddress</b>
+### -field MessageAddress
 
 <dd>
 <p>The physical address associated with the message. </p>
 </dd>
 
-### -field <b>InterruptVector</b>
+### -field InterruptVector
 
 <dd>
 <p>The interrupt vector associated with the message. </p>
 </dd>
 
-### -field <b>InterruptLevel</b>
+### -field InterruptLevel
 
 <dd>
 <p>The interrupt level associated with the message. </p>
 </dd>
 
-### -field <b>InterruptMode</b>
+### -field InterruptMode
 
 <dd>
 <p>A value of type <a href="..\wdm\ne-wdm--kinterrupt-mode.md">KINTERRUPT_MODE</a> that specifies the interrupt mode associated with the message.  </p>

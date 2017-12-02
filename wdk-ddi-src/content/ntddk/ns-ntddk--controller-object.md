@@ -55,7 +55,7 @@ typedef struct _CONTROLLER_OBJECT {
 ## -struct-fields
 <dl>
 
-### -field <b>ControllerExtension</b>
+### -field ControllerExtension
 
 <dd>
 <p>Pointer to the controller extension. The structure and contents of the controller extension are driver-defined. The size is driver-determined, specified in the driver's call to <b>IoCreateController</b>. Usually, drivers maintain common state about I/O operations in the controller extension and device-specific state about I/O for a target device in the corresponding device extension. </p>

@@ -54,7 +54,7 @@ typedef struct _RemoveRADIUSServer_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>RADIUSIPAddress</b>
+### -field RADIUSIPAddress
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that specifies the address of the RADIUS server to remove.</p>

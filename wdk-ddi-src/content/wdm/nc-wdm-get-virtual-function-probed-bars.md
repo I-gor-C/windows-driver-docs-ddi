@@ -60,13 +60,13 @@ NTSTATUS GetVirtualFunctionProbedBars(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in, out]
+### -param Context [in, out]
 
 <dd>
 <p>A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\wdm\ns-wdm--pci-virtualization-interface.md">PCI_VIRTUALIZATION_INTERFACE</a> structure for the interface.</p>
 </dd>
 
-### -param <i>BaseRegisterValues</i> [out]
+### -param BaseRegisterValues [out]
 
 <dd>
 <p>A pointer to an array of ULONG values. The <i>GetVirtualFunctionProbedBars</i> routine returns a value for each BAR of the device.</p>

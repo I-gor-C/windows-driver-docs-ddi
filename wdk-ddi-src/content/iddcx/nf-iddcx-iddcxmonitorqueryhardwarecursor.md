@@ -58,19 +58,19 @@ NTSTATUS IddCxMonitorQueryHardwareCursor(
 ## -parameters
 <dl>
 
-### -param <i>MonitorObject</i> [in]
+### -param MonitorObject [in]
 
 <dd>
 <p>This is the OS context handle for this monitor returned by the <a href="..\iddcx\nf-iddcx-iddcxmonitorarrival.md">IddCxMonitorArrival</a> call</p>
 </dd>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>Input arguments of the function</p>
 </dd>
 
-### -param <i>pOutArgs</i> [out]
+### -param pOutArgs [out]
 
 <dd>
 <p>Output arguments of the function</p>

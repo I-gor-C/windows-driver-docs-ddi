@@ -55,7 +55,7 @@ PSLIST_ENTRY ExInterlockedFlushSList(
 ## -parameters
 <dl>
 
-### -param <i>ListHead</i> [in, out]
+### -param ListHead [in, out]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563810">SLIST_HEADER</a> structure that serves as the header for the sequenced singly linked list.</p>

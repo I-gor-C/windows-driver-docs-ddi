@@ -7,7 +7,7 @@ old-location: netvista\tcp_offload_state_const.htm
 old-project: netvista
 ms.assetid: 3e80f963-a494-475a-a246-abe5674dbcb6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TCP_OFFLOAD_STATE_CONST, TCP_OFFLOAD_STATE_CONST, *PTCP_OFFLOAD_STATE_CONST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ typedef struct _TCP_OFFLOAD_STATE_CONST {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>An 
@@ -75,7 +75,7 @@ typedef struct _TCP_OFFLOAD_STATE_CONST {
      <b>Header</b> is reserved.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitmask that can be set to zero or any of the following flags, combined with bitwise OR:
@@ -83,7 +83,7 @@ typedef struct _TCP_OFFLOAD_STATE_CONST {
 <p></p>
 <dl>
 
-### -field <a id="TCP_FLAG_TIMESTAMP_ENABLED"></a><a id="tcp_flag_timestamp_enabled"></a>TCP_FLAG_TIMESTAMP_ENABLED
+### -field TCP_FLAG_TIMESTAMP_ENABLED
 
 <dd>
 <p>The host stack sets this flag to enable the TCP timestamp option on the connection. (For more
@@ -92,7 +92,7 @@ typedef struct _TCP_OFFLOAD_STATE_CONST {
        disable the TCP timestamp option on the connection.</p>
 </dd>
 
-### -field <a id="TCP_FLAG_SACK_ENABLED"></a><a id="tcp_flag_sack_enabled"></a>TCP_FLAG_SACK_ENABLED
+### -field TCP_FLAG_SACK_ENABLED
 
 <dd>
 <p>The host stack sets this flag to enable selective acknowledgments (SACKs) on the connection.
@@ -101,7 +101,7 @@ typedef struct _TCP_OFFLOAD_STATE_CONST {
        SACKs on the connection.</p>
 </dd>
 
-### -field <a id="TCP_FLAG_WINDOW_SCALING_ENABLED"></a><a id="tcp_flag_window_scaling_enabled"></a>TCP_FLAG_WINDOW_SCALING_ENABLED
+### -field TCP_FLAG_WINDOW_SCALING_ENABLED
 
 <dd>
 <p>The host stack sets this flag to cause the offload target to use scale factors (SndWindScale and
@@ -112,38 +112,38 @@ typedef struct _TCP_OFFLOAD_STATE_CONST {
 </dl>
 </dd>
 
-### -field <b>RemotePort</b>
+### -field RemotePort
 
 <dd>
 <p>The destination port number (see RFC 793).</p>
 </dd>
 
-### -field <b>LocalPort</b>
+### -field LocalPort
 
 <dd>
 <p>The source port number (see RFC 793).</p>
 </dd>
 
-### -field <b>SndWindScale</b>
+### -field SndWindScale
 
 <dd>
 <p>The send window scale factor (see RFC 1323).</p>
 </dd>
 
-### -field <b>RcvWindScale</b>
+### -field RcvWindScale
 
 <dd>
 <p>The receive window scale factor (see RFC 1323).</p>
 </dd>
 
-### -field <b>RemoteMss</b>
+### -field RemoteMss
 
 <dd>
 <p>The initial maximum segment size (MSS) advertised by the remote endpoint during TCP connection
      setup. (For more information about MSS, see RFC 2581.)</p>
 </dd>
 
-### -field <b>HashValue</b>
+### -field HashValue
 
 <dd>
 <p>A 32-bit hash value that the offload target uses for 
@@ -201,4 +201,4 @@ typedef struct _TCP_OFFLOAD_STATE_CONST {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATE_CONST structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATE_CONST structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

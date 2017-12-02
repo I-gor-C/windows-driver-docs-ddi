@@ -7,7 +7,7 @@ old-location: netvista\rilradiostateitem_2.htm
 old-project: netvista
 ms.assetid: 1cfc3e62-3398-435a-b603-fb7638ed8ce9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILRADIOSTATEITEM,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -81,111 +81,111 @@ typedef struct _RILRADIOSTATEITEM {
 ## -struct-fields
 <dl>
 
-### -field <b>dwItemId</b>
+### -field dwItemId
 
 <dd></dd>
 
-### -field <b>dwItemFlag</b>
+### -field dwItemFlag
 
 <dd></dd>
 
-### -field <b>dwItemAttributes</b>
+### -field dwItemAttributes
 
 <dd></dd>
 
-### -field <b>RILITEMVALUEUNION</b>
+### -field RILITEMVALUEUNION
 
 <dd></dd>
 
-### -field <b>itemValueUnion</b>
+### -field itemValueUnion
 
 <dd></dd>
 
-### -field <b>switch_is</b>
+### -field switch_is
 
 <dd></dd>
 
-### -field <b>dwItemFlag</b>
+### -field dwItemFlag
 
 <dd></dd>
 
-### -field <b>intVal</b>
+### -field intVal
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_RADIOSTATE_ITEMFLAG_USE_INTVAL</b>
+### -field RIL_RADIOSTATE_ITEMFLAG_USE_INTVAL
 
 <dd></dd>
 
-### -field <b>uintVal</b>
+### -field uintVal
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_RADIOSTATE_ITEMFLAG_USE_UINTVAL</b>
+### -field RIL_RADIOSTATE_ITEMFLAG_USE_UINTVAL
 
 <dd></dd>
 
-### -field <b>wszVal</b>
+### -field wszVal
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_RADIOSTATE_ITEMFLAG_USE_WSZVAL</b>
+### -field RIL_RADIOSTATE_ITEMFLAG_USE_WSZVAL
 
 <dd></dd>
 
-### -field <b>intArray</b>
+### -field intArray
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY</b>
+### -field RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY
 
 <dd></dd>
 
-### -field <b>uintArray</b>
+### -field uintArray
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_RADIOSTATE_ITEMFLAG_USE_UINTARRAY</b>
+### -field RIL_RADIOSTATE_ITEMFLAG_USE_UINTARRAY
 
 <dd></dd>
 
-### -field <b>byteArray</b>
+### -field byteArray
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_RADIOSTATE_ITEMFLAG_USE_BYTEARRAY</b>
+### -field RIL_RADIOSTATE_ITEMFLAG_USE_BYTEARRAY
 
 <dd></dd>
 
-### -field <b>wszFriendlyName</b>
+### -field wszFriendlyName
 
 <dd></dd>
 
-### -field <b>wszItemValueOptions</b>
+### -field wszItemValueOptions
 
 <dd></dd>
 </dl>

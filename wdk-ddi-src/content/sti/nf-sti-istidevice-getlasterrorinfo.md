@@ -7,7 +7,7 @@ old-location: image\istidevice_getlasterrorinfo.htm
 old-project: image
 ms.assetid: de2f8897-c75f-4c37-aecb-f36d0f9933f9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDevice, GetLastErrorInfo, IStiDevice::GetLastErrorInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT GetLastErrorInfo(
 ## -parameters
 <dl>
 
-### -param <i>pLastErrorInf</i> [out]
+### -param pLastErrorInf [out]
 
 <dd>
 <p>Caller-supplied pointer to an <a href="image.sti_error_info">STI_ERROR_INFO</a> structure to receive error information.</p>

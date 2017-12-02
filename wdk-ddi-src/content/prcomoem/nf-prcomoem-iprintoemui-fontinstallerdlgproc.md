@@ -58,25 +58,25 @@ HRESULT FontInstallerDlgProc(
 ## -parameters
 <dl>
 
-### -param <i>hWnd</i> 
+### -param hWnd 
 
 <dd>
 <p>Window handle.</p>
 </dd>
 
-### -param <i>usMsg</i> 
+### -param usMsg 
 
 <dd>
 <p>Message identifier.</p>
 </dd>
 
-### -param <i>wParam</i> 
+### -param wParam 
 
 <dd>
 <p>First message parameter.</p>
 </dd>
 
-### -param <i>lParam</i> 
+### -param lParam 
 
 <dd>
 <p>Second message parameter.</p>
@@ -95,7 +95,7 @@ HRESULT FontInstallerDlgProc(
 <p> </p>
 
 ## -remarks
-<p>A user interface plug-in can implement the <code>IPrintOemUI::FontInstallerDlgProc</code> method as a means of replacing Unidrv's font installer. For more information, see <a href="NULL">Customized Font Installers for Unidrv</a>.</p>
+<p>A user interface plug-in can implement the <code>IPrintOemUI::FontInstallerDlgProc</code> method as a means of replacing Unidrv's font installer. For more information, see <a href="https://msdn.microsoft.com/d753368d-b1c8-454e-a02b-131dc778e723">Customized Font Installers for Unidrv</a>.</p>
 
 <p>The <code>IPrintOemUI::FontInstallerDlgProc</code> method is used by Unidrv as a dialog box procedure, and its address is passed to <b>DialogBoxParam</b> (described in the Microsoft Windows SDK documentation) when a user invokes the font installer from Unidrv's user interface.</p>
 

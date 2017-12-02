@@ -55,7 +55,7 @@ VOID IoRequestDeviceEject(
 ## -parameters
 <dl>
 
-### -param <i>PhysicalDeviceObject</i> [in]
+### -param PhysicalDeviceObject [in]
 
 <dd>
 <p>Pointer to the PDO for the device. </p>

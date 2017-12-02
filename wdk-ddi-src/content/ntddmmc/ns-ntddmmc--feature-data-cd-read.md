@@ -59,33 +59,33 @@ typedef struct _FEATURE_DATA_CD_READ {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>CDText</b>
+### -field CDText
 
 <dd>
 <p>Indicates, when set to 1, that the device supports format code 0x05 of the READ/TOC/PMA/ATIP command, as defined in the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. When set to zero, CD-Text is not supported. </p>
 </dd>
 
-### -field <b>C2ErrorData</b>
+### -field C2ErrorData
 
 <dd>
 <p>Indicates, when set to 1, that the device supports the C2 error pointers as described in the <i>MMC-3 </i>specification. When set to zero, it indicates that the device does not support C2 error pointers.</p>
 </dd>
 
-### -field <b>Reserved01</b>
+### -field Reserved01
 
 <dd></dd>
 
-### -field <b>DigitalAudioPlay</b>
+### -field DigitalAudioPlay
 
 <dd></dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. </p>

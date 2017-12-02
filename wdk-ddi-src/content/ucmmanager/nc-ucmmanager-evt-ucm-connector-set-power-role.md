@@ -61,16 +61,16 @@ typedef EVT_UCM_CONNECTOR_SET_POWER_ROLE PFN_UCM_CONNECTOR_SET_POWER_ROLE;
 ## -parameters
 <dl>
 
-### -param <i>Connector</i> [in]
+### -param Connector [in]
 
 <dd>
-<p>Handle to the connector that the client driver received in a previous call to  the <a href="buses.ucmconnectorcreate">UcmConnectorCreate</a> method.</p>
+<p>Handle to the connector that the client driver received in a previous call to  the <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a> method.</p>
 </dd>
 
-### -param <i>PowerRole</i> [in]
+### -param PowerRole [in]
 
 <dd>
-<p>A <a href="buses.ucm_power_role">UCM_POWER_ROLE</a>-typed flag that specifies the role to set.</p>
+<p>A <a href="..\ucmtypes\ne-ucmtypes--ucm-power-role.md">UCM_POWER_ROLE</a>-typed flag that specifies the role to set.</p>
 </dd>
 </dl>
 
@@ -78,9 +78,9 @@ typedef EVT_UCM_CONNECTOR_SET_POWER_ROLE PFN_UCM_CONNECTOR_SET_POWER_ROLE;
 <p>If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it must return a status value for which NT_SUCCESS(status) equals FALSE.</p>
 
 ## -remarks
-<p>To register an <i>EVT_UCM_CONNECTOR_SET_POWER_ROLE</i> callback function, the client must call <a href="buses.ucmconnectorcreate">UcmConnectorCreate</a>.</p>
+<p>To register an <i>EVT_UCM_CONNECTOR_SET_POWER_ROLE</i> callback function, the client must call <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>.</p>
 
-<p>The USB connector manager framework extension (UcmCx) can request either <b>UcmPowerRoleSink</b> or  <b>UcmPowerRoleSource</b>. If the port is already in the requested role, the client driver can complete the request without any changes. Otherwise, it starts a power-role swap operation (PR_Swap). The driver calls <a href="buses.ucmconnectorpowerdirectionchanged">UcmConnectorPowerDirectionChanged</a> to notify UcmCx about the success or failure of that operation. 
+<p>The USB connector manager framework extension (UcmCx) can request either <b>UcmPowerRoleSink</b> or  <b>UcmPowerRoleSource</b>. If the port is already in the requested role, the client driver can complete the request without any changes. Otherwise, it starts a power-role swap operation (PR_Swap). The driver calls <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorpowerdirectionchanged.md">UcmConnectorPowerDirectionChanged</a> to notify UcmCx about the success or failure of that operation. 
 The driver can call that method within the callback function.</p>
 
 <p>The role persists for the current connection.  </p>
@@ -146,7 +146,7 @@ The driver can call that method within the callback function.</p>
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmconnectorcreate">UcmConnectorCreate</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
 </dt>
 </dl>
 <p> </p>

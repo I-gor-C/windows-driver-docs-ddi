@@ -55,13 +55,13 @@ typedef struct _SECURE_ELEMENT_ENDPOINT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>guidSecureElementId</b>
+### -field guidSecureElementId
 
 <dd>
 <p>This is a unique identifier for the secure element.</p>
 </dd>
 
-### -field <b>eSecureElementType</b>
+### -field eSecureElementType
 
 <dd>
 <p>Type of secure element endpoint (NFCEE).</p>

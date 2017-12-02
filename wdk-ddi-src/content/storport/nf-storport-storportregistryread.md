@@ -60,25 +60,25 @@ BOOLEAN StorPortRegistryRead(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. The miniport driver must be running at IRQL PASSIVE_LEVEL when it calls this routine.</p>
 </dd>
 
-### -param <i>ValueName</i> 
+### -param ValueName 
 
 <dd>
 <p>Pointer to a UCHAR that specifies the registry value name whose content is to be read. </p>
 </dd>
 
-### -param <i>Global</i> 
+### -param Global 
 
 <dd>
 <p>Indicates, when nonzero, that the port driver reads the contents of the registry value specified by <i>ValueName</i> under the Parameters\Device subkey. The values under the Device key apply to all adapters in the system. When <i>Global</i> is zero, the port driver reads the contents of the registry value specified by <i>ValueName</i> under the Parameters\Device(d) subkey, where (d) is a decimal value that corresponds to the port number of a particular adapter. In this case, the data retrieved is adapter-specific. </p>
 </dd>
 
-### -param <i>Type</i> 
+### -param Type 
 
 <dd>
 <p>Indicates the data type of registry value. This parameter must have one of the values in the following table.</p>
@@ -204,13 +204,13 @@ BOOLEAN StorPortRegistryRead(
 <p> </p>
 </dd>
 
-### -param <i>Buffer</i> 
+### -param Buffer 
 
 <dd>
 <p>Pointer to the buffer where the retrieved registry information is to be reported. </p>
 </dd>
 
-### -param <i>BufferLength</i> 
+### -param BufferLength 
 
 <dd>
 <p>Pointer to a ULONG that contains the size, in bytes, of the registry data returned. </p>

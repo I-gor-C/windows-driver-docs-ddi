@@ -7,7 +7,7 @@ old-location: netvista\dot11_cipher_default_key_value.htm
 old-project: netvista
 ms.assetid: 7362b20a-6ec4-4b22-8981-3a4b647a3cfa
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_CIPHER_DEFAULT_KEY_VALUE, DOT11_CIPHER_DEFAULT_KEY_VALUE, *PDOT11_CIPHER_DEFAULT_KEY_VALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_CIPHER_DEFAULT_KEY_VALUE structure. This member is
@@ -72,19 +72,19 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
 <p></p>
 <dl>
 
-### -field <a id="Type"></a><a id="type"></a><a id="TYPE"></a><b>Type</b>
+### -field Type
 
 <dd>
 <p>This member must be set to NDIS_OBJECT_TYPE_DEFAULT.</p>
 </dd>
 
-### -field <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a><b>Revision</b>
+### -field Revision
 
 <dd>
 <p>This member must be set to DOT11_CIPHER_DEFAULT_KEY_VALUE_REVISION_1.</p>
 </dd>
 
-### -field <a id="Size"></a><a id="size"></a><a id="SIZE"></a><b>Size</b>
+### -field Size
 
 <dd>
 <p>This member must be set to 
@@ -95,7 +95,7 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>uKeyIndex</b>
+### -field uKeyIndex
 
 <dd>
 <p>The index of the key in the 802.11 station's default key array. 
@@ -109,7 +109,7 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
      (<i>x</i> + 1).</p>
 </dd>
 
-### -field <b>AlgorithmId</b>
+### -field AlgorithmId
 
 <dd>
 <p>The value of the cipher algorithm that uses this key. For more information about values for cipher
@@ -121,7 +121,7 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
      <b>bDelete</b> is <b>TRUE</b>.</p>
 </dd>
 
-### -field <b>MacAddr</b>
+### -field MacAddr
 
 <dd>
 <p>The media access control (MAC) address, which identifies the default key table to add or remove
@@ -160,7 +160,7 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
      OID_DOT11_DESIRED_BSS_TYPE</a>.</p>
 </dd>
 
-### -field <b>bDelete</b>
+### -field bDelete
 
 <dd>
 <p>A Boolean value that specifies whether the miniport driver should delete the default key.
@@ -170,7 +170,7 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
      <b>uKeyIndex</b> .</p>
 </dd>
 
-### -field <b>bStatic</b>
+### -field bStatic
 
 <dd>
 <p>A Boolean value that specifies whether the miniport driver should delete the default key following
@@ -204,14 +204,14 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
 </ul>
 </dd>
 
-### -field <b>usKeyLength</b>
+### -field usKeyLength
 
 <dd>
 <p>The length, in bytes, of the key material in the 
      <b>ucKey</b> array.</p>
 </dd>
 
-### -field <b>ucKey</b>
+### -field ucKey
 
 <dd>
 <p>The key material. 
@@ -296,4 +296,4 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_DEFAULT_KEY_VALUE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_DEFAULT_KEY_VALUE structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

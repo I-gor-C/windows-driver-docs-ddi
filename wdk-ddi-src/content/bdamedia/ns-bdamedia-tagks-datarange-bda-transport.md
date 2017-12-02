@@ -55,13 +55,13 @@ typedef struct tagKS_DATARANGE_BDA_TRANSPORT {
 ## -struct-fields
 <dl>
 
-### -field <b>DataRange</b>
+### -field DataRange
 
 <dd>
 <p>KSDATARANGE structure that describes a range of data formats.</p>
 </dd>
 
-### -field <b>BdaTransportInfo</b>
+### -field BdaTransportInfo
 
 <dd>
 <p>BDA_TRANSPORT_INFO structure that describes formatting for a BDA transport stream connection. </p>

@@ -60,37 +60,37 @@ PVOID MmMapLockedPagesSpecifyCache(
 ## -parameters
 <dl>
 
-### -param <i>MemoryDescriptorList</i> [in]
+### -param MemoryDescriptorList [in]
 
 <dd>
 <p>A pointer to the MDL that is to be mapped. This MDL must describe physical pages that are locked down. A locked-down MDL can be built by the <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a> or <a href="..\wdm\nf-wdm-mmallocatepagesformdlex.md">MmAllocatePagesForMdlEx</a> routine. For mappings to user space, MDLs that are built by the <a href="..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md">MmBuildMdlForNonPagedPool</a> routine can be used.</p>
 </dd>
 
-### -param <i>AccessMode</i> [in]
+### -param AccessMode [in]
 
 <dd>
 <p>Specifies the access mode in which to map the MDL: <b>KernelMode</b> or <b>UserMode</b>. Almost all drivers should use <b>KernelMode</b>.</p>
 </dd>
 
-### -param <i>CacheType</i> [in]
+### -param CacheType [in]
 
 <dd>
 <p>Specifies a <a href="..\wdm\ne-wdm--memory-caching-type.md">MEMORY_CACHING_TYPE</a> value, which indicates the cache attribute to use to map the MDL. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>BaseAddress</i> [in, optional]
+### -param BaseAddress [in, optional]
 
 <dd>
 <p>If <i>AccessMode</i> = <b>UserMode</b>, this parameter specifies the starting user virtual address to map the MDL to, or set to <b>NULL</b> to allow the system to choose the starting address. The system might round down the requested address to fit address boundary requirements, so callers must check the return value.</p>
 </dd>
 
-### -param <i>BugCheckOnFailure</i> [in]
+### -param BugCheckOnFailure [in]
 
 <dd>
 <p>Specifies the behavior of the routine for <i>AccessMode</i> = <b>KernelMode</b> if the MDL cannot be mapped because of low system resources. If <b>TRUE</b>, the system issues a bug check. If <b>FALSE</b>, the routine returns <b>NULL</b>. Drivers must set this parameter to <b>FALSE</b>. </p>
 </dd>
 
-### -param <i>Priority</i> [in]
+### -param Priority [in]
 
 <dd>
 <p>An <b>MM_PAGE_PRIORITY</b> value that indicates the importance of success when page table entries (PTEs) are scarce. Starting with Windows 8, the specified priority value can be bitwise-ORed with the <b>MdlMappingNoWrite</b> or <b>MdlMappingNoExecute</b> flags to specify memory in which writes or instruction execution are disabled. For more information about the possible values for <i>Priority</i>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>. </p>

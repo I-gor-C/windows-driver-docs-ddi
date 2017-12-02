@@ -63,31 +63,31 @@ typedef struct _USB_DESCRIPTOR_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>ConnectionIndex</b>
+### -field ConnectionIndex
 
 <dd>
 <p>The port whose descriptors are retrieved.</p>
 </dd>
 
-### -field <b>SetupPacket</b>
+### -field SetupPacket
 
 <dd>
 <p>The members of the <b>SetupPacket</b> structure are as follows:</p>
 <dl>
 
-### -field <b>bmRequest</b>
+### -field bmRequest
 
 <dd>
 <p>The type of USB device request (standard, class, or vendor), the direction of the data transfer, and the type of data recipient (device, interface, or endpoint). On input to the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-descriptor-from-node-connection.md">IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION</a> I/O control request, the USB stack ignores the value of <b>bmRequest</b> and inserts a value of 0x80. This value indicates a standard USB device request and a device-to-host data transfer. For more information about this member, see Universal Serial Bus Specification.</p>
 </dd>
 
-### -field <b>bRequest</b>
+### -field bRequest
 
 <dd>
 <p>The request number. On input to the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-descriptor-from-node-connection.md">IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION</a> I/O control request, the USB stack ignores the value of <b>bRequest</b> and inserts a value of 0x06. This value indicates a request of <b>GET_DESCRIPTOR</b>. For more information about this member see Universal Serial Bus Specification.</p>
 </dd>
 
-### -field <b>wValue</b>
+### -field wValue
 
 <dd>
 <p>On input to the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-descriptor-from-node-connection.md">IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION</a> I/O control request, the caller should specify the type of descriptor to retrieve in the high byte of <b>wValue</b> and the descriptor index in the low byte. The following table lists the possible descriptor types.</p>
@@ -140,13 +140,13 @@ typedef struct _USB_DESCRIPTOR_REQUEST {
 <p> </p>
 </dd>
 
-### -field <b>wIndex</b>
+### -field wIndex
 
 <dd>
 <p>The device-specific index of the descriptor that is to be retrieved. For more information about this member, see Universal Serial Bus Specification.</p>
 </dd>
 
-### -field <b>wLength</b>
+### -field wLength
 
 <dd>
 <p>The length of the data that is transferred during the second phase of the control transfer. For more information about this member, see Universal Serial Bus Specification.</p>
@@ -154,7 +154,7 @@ typedef struct _USB_DESCRIPTOR_REQUEST {
 </dl>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>On output from the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-descriptor-from-node-connection.md">IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION</a> I/O control request, this member contains the retrieved descriptors.</p>

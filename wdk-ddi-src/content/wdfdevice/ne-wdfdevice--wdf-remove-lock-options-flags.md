@@ -7,7 +7,7 @@ old-location: wdf\wdf_remove_lock_options_flags.htm
 old-project: wdf
 ms.assetid: 3822B8A2-1EFB-45C7-A7DB-FBCE76A06336
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ typedef enum _WDF_REMOVE_LOCK_OPTIONS_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDF_REMOVE_LOCK_OPTION_ACQUIRE_FOR_IO"></a><a id="wdf_remove_lock_option_acquire_for_io"></a><b>WDF_REMOVE_LOCK_OPTION_ACQUIRE_FOR_IO</b>
+### -field WDF_REMOVE_LOCK_OPTION_ACQUIRE_FOR_IO
 
 <dd>
 <p>Specifies that the framework should acquire a remove lock before delivering an IRP of any type to the driver.</p>
@@ -102,4 +102,4 @@ typedef enum _WDF_REMOVE_LOCK_OPTIONS_FLAGS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REMOVE_LOCK_OPTIONS_FLAGS enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REMOVE_LOCK_OPTIONS_FLAGS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

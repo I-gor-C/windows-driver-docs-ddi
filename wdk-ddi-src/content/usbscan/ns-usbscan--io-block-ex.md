@@ -7,7 +7,7 @@ old-location: image\io_block_ex.htm
 old-project: image
 ms.assetid: 2474a49b-e275-4b4d-b762-c296b92bab4c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IO_BLOCK_EX, IO_BLOCK_EX, *PIO_BLOCK_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,43 +61,43 @@ typedef struct _IO_BLOCK_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>uOffset</b>
+### -field uOffset
 
 <dd>
 <p>Used as the <b>Value</b> field of a USB Device Request.</p>
 </dd>
 
-### -field <b>uLength</b>
+### -field uLength
 
 <dd>
 <p>Length of the buffer to transfer.</p>
 </dd>
 
-### -field <b>pbyData</b>
+### -field pbyData
 
 <dd>
 <p>Pointer to a data buffer with a length of <b>uLength</b>.</p>
 </dd>
 
-### -field <b>uIndex</b>
+### -field uIndex
 
 <dd>
 <p>Used as the <b>Index</b> field of a USB Device Request.</p>
 </dd>
 
-### -field <b>bRequest</b>
+### -field bRequest
 
 <dd>
 <p>Used as the <b>bRequest</b> field of a USB Device Request.</p>
 </dd>
 
-### -field <b>bmRequestType</b>
+### -field bmRequestType
 
 <dd>
 <p>Used as the <b>bmRequestType</b> field of a USB Device Request.</p>
 </dd>
 
-### -field <b>fTransferDirectionIn</b>
+### -field fTransferDirectionIn
 
 <dd>
 <p><b>TRUE</b> for transfers from device to host; <b>FALSE</b> for transfers from host to device.</p>

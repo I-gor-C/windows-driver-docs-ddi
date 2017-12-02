@@ -60,25 +60,25 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>A handle to the allocation.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>The zero-based video present network source identification number of the input for which the support levels are queried.</p>
 </dd>
 
-### -field <b>LayerIndex</b>
+### -field LayerIndex
 
 <dd>
 <p>The index of the layer being queried.</p>
 </dd>
 
-### -field <b>PlaneAttributes</b>
+### -field PlaneAttributes
 
 <dd>
 <p>A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-attributes2.md">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2</a> structure that specifies overlay plane attributes.</p>

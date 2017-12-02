@@ -63,61 +63,61 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_MetadataAlignment_16"></a><a id="kscamera_extendedprop_metadataalignment_16"></a><a id="KSCAMERA_EXTENDEDPROP_METADATAALIGNMENT_16"></a><b>KSCAMERA_EXTENDEDPROP_MetadataAlignment_16</b>
+### -field KSCAMERA_EXTENDEDPROP_MetadataAlignment_16
 
 <dd>
 <p>This identifies an alignment of 16 bytes.</p>
 </dd>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_MetadataAlignment_32"></a><a id="kscamera_extendedprop_metadataalignment_32"></a><a id="KSCAMERA_EXTENDEDPROP_METADATAALIGNMENT_32"></a><b>KSCAMERA_EXTENDEDPROP_MetadataAlignment_32</b>
+### -field KSCAMERA_EXTENDEDPROP_MetadataAlignment_32
 
 <dd>
 <p>This identifies an alignment of 32 bytes.</p>
 </dd>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_MetadataAlignment_64"></a><a id="kscamera_extendedprop_metadataalignment_64"></a><a id="KSCAMERA_EXTENDEDPROP_METADATAALIGNMENT_64"></a><b>KSCAMERA_EXTENDEDPROP_MetadataAlignment_64</b>
+### -field KSCAMERA_EXTENDEDPROP_MetadataAlignment_64
 
 <dd>
 <p>This identifies an alignment of 64 bytes.</p>
 </dd>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_MetadataAlignment_128"></a><a id="kscamera_extendedprop_metadataalignment_128"></a><a id="KSCAMERA_EXTENDEDPROP_METADATAALIGNMENT_128"></a><b>KSCAMERA_EXTENDEDPROP_MetadataAlignment_128</b>
+### -field KSCAMERA_EXTENDEDPROP_MetadataAlignment_128
 
 <dd>
 <p>This identifies an alignment of 128 bytes.</p>
 </dd>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_MetadataAlignment_256"></a><a id="kscamera_extendedprop_metadataalignment_256"></a><a id="KSCAMERA_EXTENDEDPROP_METADATAALIGNMENT_256"></a><b>KSCAMERA_EXTENDEDPROP_MetadataAlignment_256</b>
+### -field KSCAMERA_EXTENDEDPROP_MetadataAlignment_256
 
 <dd>
 <p>This identifies an alignment of 256 bytes.</p>
 </dd>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_MetadataAlignment_512"></a><a id="kscamera_extendedprop_metadataalignment_512"></a><a id="KSCAMERA_EXTENDEDPROP_METADATAALIGNMENT_512"></a><b>KSCAMERA_EXTENDEDPROP_MetadataAlignment_512</b>
+### -field KSCAMERA_EXTENDEDPROP_MetadataAlignment_512
 
 <dd>
 <p>This identifies an alignment of 512 bytes.</p>
 </dd>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_MetadataAlignment_1024"></a><a id="kscamera_extendedprop_metadataalignment_1024"></a><a id="KSCAMERA_EXTENDEDPROP_METADATAALIGNMENT_1024"></a><b>KSCAMERA_EXTENDEDPROP_MetadataAlignment_1024</b>
+### -field KSCAMERA_EXTENDEDPROP_MetadataAlignment_1024
 
 <dd>
 <p>This identifies an alignment of 1024 bytes.</p>
 </dd>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_MetadataAlignment_2048"></a><a id="kscamera_extendedprop_metadataalignment_2048"></a><a id="KSCAMERA_EXTENDEDPROP_METADATAALIGNMENT_2048"></a><b>KSCAMERA_EXTENDEDPROP_MetadataAlignment_2048</b>
+### -field KSCAMERA_EXTENDEDPROP_MetadataAlignment_2048
 
 <dd>
 <p>This identifies an alignment of 2048 bytes.</p>
 </dd>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_MetadataAlignment_4096"></a><a id="kscamera_extendedprop_metadataalignment_4096"></a><a id="KSCAMERA_EXTENDEDPROP_METADATAALIGNMENT_4096"></a><b>KSCAMERA_EXTENDEDPROP_MetadataAlignment_4096</b>
+### -field KSCAMERA_EXTENDEDPROP_MetadataAlignment_4096
 
 <dd>
 <p>This identifies an alignment of 4096 bytes.</p>
 </dd>
 
-### -field <a id="KSCAMERA_EXTENDEDPROP_MetadataAlignment_8192"></a><a id="kscamera_extendedprop_metadataalignment_8192"></a><a id="KSCAMERA_EXTENDEDPROP_METADATAALIGNMENT_8192"></a><b>KSCAMERA_EXTENDEDPROP_MetadataAlignment_8192</b>
+### -field KSCAMERA_EXTENDEDPROP_MetadataAlignment_8192
 
 <dd>
 <p>This identifies an alignment of 8192 bytes.</p>

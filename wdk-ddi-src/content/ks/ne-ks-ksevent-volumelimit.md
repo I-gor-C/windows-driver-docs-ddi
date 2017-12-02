@@ -55,7 +55,7 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSEVENT_VOLUMELIMIT_CHANGED_"></a><a id="ksevent_volumelimit_changed_"></a><b>KSEVENT_VOLUMELIMIT_CHANGED
+### -field KSEVENT_VOLUMELIMIT_CHANGED
 </b>
 
 <dd></dd>

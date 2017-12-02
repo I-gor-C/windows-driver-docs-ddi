@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>Specifies whether to enable the ITD algorithm. A nonzero value enables the algorithm. Zero disables it. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>LeftParams</b>
+### -field LeftParams
 
 <dd>
 <p>Specifies the ITD parameters for the left channel (channel 0). This parameter is a structure of type <a href="audio.ksds3d_itd_params">KSDS3D_ITD_PARAMS</a>.</p>
 </dd>
 
-### -field <b>RightParams</b>
+### -field RightParams
 
 <dd>
 <p>Specifies the ITD parameters for the right channel (channel 1). This parameter is a structure of type KSDS3D_ITD_PARAMS.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Set to zero.</p>

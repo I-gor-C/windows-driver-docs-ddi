@@ -55,13 +55,13 @@ typedef struct _GetPersistentBinding2_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>Contains a worldwide name that indicates the port whose persistent bindings are to be retrieved. </p>
 </dd>
 
-### -field <b>InEntryCount</b>
+### -field InEntryCount
 
 <dd>
 <p>Indicates the number of binding entries that the WMI provider can report.</p>

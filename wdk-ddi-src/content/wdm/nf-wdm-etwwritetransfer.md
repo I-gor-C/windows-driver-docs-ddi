@@ -60,37 +60,37 @@ NTSTATUS EtwWriteTransfer(
 ## -parameters
 <dl>
 
-### -param <i>RegHandle</i> [in]
+### -param RegHandle [in]
 
 <dd>
 <p>A pointer to the event provider registration handle, which is returned by the <b>EtwRegister</b> function if the event provider registration is successful.</p>
 </dd>
 
-### -param <i>EventDescriptor</i> [in]
+### -param EventDescriptor [in]
 
 <dd>
 <p>A pointer to the EVENT_DESCRIPTOR structure. </p>
 </dd>
 
-### -param <i>ActivityId</i> [in, optional]
+### -param ActivityId [in, optional]
 
 <dd>
 <p>The identifier that indicates the activity associated with the event. The <i>ActivityId</i> provides a way to group related events and is used in end-to-end tracing. This identifier is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>RelatedActivityId</i> [in, optional]
+### -param RelatedActivityId [in, optional]
 
 <dd>
 <p>The identifier that indicates related activity associated with the event. The <i>RelatedActivityID</i> provides a way to group related events and is used in end-to-end tracing. </p>
 </dd>
 
-### -param <i>UserDataCount</i> [in]
+### -param UserDataCount [in]
 
 <dd>
 <p>The number of elements in an array of EVENT_DATA_DESCRIPTOR structures. </p>
 </dd>
 
-### -param <i>UserData</i> [in, optional]
+### -param UserData [in, optional]
 
 <dd>
 <p>The pointer to the first element in an array of EVENT_DATA_DESCRIPTOR structures. </p>

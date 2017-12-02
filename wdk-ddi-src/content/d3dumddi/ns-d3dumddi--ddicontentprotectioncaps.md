@@ -55,20 +55,20 @@ typedef struct _DDICONTENTPROTECTIONCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>CryptoType</b>
+### -field CryptoType
 
 <dd>
 <p>[in] A GUID that indicates the encryption type that the driver uses. The currently defined GUIDs are:</p>
 <p></p>
 <dl>
 
-### -field <a id="D3DCRYPTOTYPE_AES128_CTR"></a><a id="d3dcryptotype_aes128_ctr"></a>D3DCRYPTOTYPE_AES128_CTR
+### -field D3DCRYPTOTYPE_AES128_CTR
 
 <dd>
 <p>A GUID that indicates the 128-bit AES-CRT block cipher.</p>
 </dd>
 
-### -field <a id="D3DCRYPTOTYPE_PROPRIETARY"></a><a id="d3dcryptotype_proprietary"></a>D3DCRYPTOTYPE_PROPRIETARY
+### -field D3DCRYPTOTYPE_PROPRIETARY
 
 <dd>
 <p>A GUID that indicates a proprietary encryption algorithm. </p>
@@ -77,7 +77,7 @@ typedef struct _DDICONTENTPROTECTIONCAPS {
 <p>A <b>NULL</b> value indicates that no encryption is used. </p>
 </dd>
 
-### -field <b>DecodeProfile</b>
+### -field DecodeProfile
 
 <dd>
 <p>[in] A GUID that indicates the DirectX Video Acceleration (DirectX VA) decode profile that the driver uses along with the encryption type, which the <b>CryptoType</b> member specifies. Not all drivers allow all types of encryption. For example, MPEG2 IDCT frequently requires that the private libraries, which the hardware vendor supplies, perform the proprietary encryption. A <b>NULL</b> value indicates that DirectX VA decode profile is not used. </p>

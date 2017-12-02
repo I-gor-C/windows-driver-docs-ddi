@@ -74,115 +74,115 @@ typedef union _WHEA_ERROR_INJECTION_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>ProcessorCorrectable</b>
+### -field ProcessorCorrectable
 
 <dd>
 <p>A single bit that indicates that a correctable processor error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>ProcessorUncorrectableNonFatal</b>
+### -field ProcessorUncorrectableNonFatal
 
 <dd>
 <p>A single bit that indicates that an uncorrectable nonfatal processor error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>ProcessorUncorrectableFatal</b>
+### -field ProcessorUncorrectableFatal
 
 <dd>
 <p>A single bit that indicates that an uncorrectable fatal processor error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>MemoryCorrectable</b>
+### -field MemoryCorrectable
 
 <dd>
 <p>A single bit that indicates that a correctable memory error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>MemoryUncorrectableNonFatal</b>
+### -field MemoryUncorrectableNonFatal
 
 <dd>
 <p>A single bit that indicates that an uncorrectable nonfatal memory error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>MemoryUncorrectableFatal</b>
+### -field MemoryUncorrectableFatal
 
 <dd>
 <p>A single bit that indicates that an uncorrectable fatal memory error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>PCIExpressCorrectable</b>
+### -field PCIExpressCorrectable
 
 <dd>
 <p>A single bit that indicates that a correctable PCI Express (PCIe) error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>PCIExpressUncorrectableNonFatal</b>
+### -field PCIExpressUncorrectableNonFatal
 
 <dd>
 <p>A single bit that indicates that an uncorrectable nonfatal PCI Express (PCIe) error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>PCIExpressUncorrectableFatal</b>
+### -field PCIExpressUncorrectableFatal
 
 <dd>
 <p>A single bit that indicates that an uncorrectable fatal PCI Express (PCIe) error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>PlatformCorrectable</b>
+### -field PlatformCorrectable
 
 <dd>
 <p>A single bit that indicates that a correctable platform error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>PlatformUncorrectableNonFatal</b>
+### -field PlatformUncorrectableNonFatal
 
 <dd>
 <p>A single bit that indicates that an uncorrectable nonfatal platform error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>PlatformUncorrectableFatal</b>
+### -field PlatformUncorrectableFatal
 
 <dd>
 <p>A single bit that indicates that an uncorrectable fatal platform error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>IA64Corrected</b>
+### -field IA64Corrected
 
 <dd>
 <p>A single bit that indicates that a corrected IA64 error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>IA64Recoverable</b>
+### -field IA64Recoverable
 
 <dd>
 <p>A single bit that indicates that a recoverable IA64 error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>IA64Fatal</b>
+### -field IA64Fatal
 
 <dd>
 <p>A single bit that indicates that a fatal IA64 error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>IA64RecoverableCache</b>
+### -field IA64RecoverableCache
 
 <dd>
 <p>A single bit that indicates that a recoverable IA64 cache error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>IA64RecoverableRegFile</b>
+### -field IA64RecoverableRegFile
 
 <dd>
 <p>A single bit that indicates that a recoverable IA64 register file error can be injected into the hardware platform.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the WHEA_ERROR_INJECTION_CAPABILITIES union.</p>

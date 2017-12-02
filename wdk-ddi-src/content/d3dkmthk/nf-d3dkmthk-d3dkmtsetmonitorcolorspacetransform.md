@@ -56,7 +56,7 @@ NTSTATUS  D3DKMTSetMonitorColorSpaceTransform(
 ## -parameters
 <dl>
 
-### -param <i>D3dkmt_set_colorspace_transform</i> 
+### -param D3dkmt_set_colorspace_transform 
 
 <dd>
 <p>Used to set the colorspace transform.</p>

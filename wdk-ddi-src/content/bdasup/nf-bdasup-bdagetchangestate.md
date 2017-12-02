@@ -55,13 +55,13 @@ NTSTATUS BdaGetChangeState(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Points to the IRP for the request to get the current change state. The BDA minidriver receives this IRP with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563417">KSMETHOD_BDA_GET_CHANGE_STATE</a> request.</p>
 </dd>
 
-### -param <i>pChangeState</i> [out, optional]
+### -param pChangeState [out, optional]
 
 <dd>
 <p>Points to a variable that receives the current change state of BDA topology. The BDA change state can be one of the following values from the <a href="stream.bda_change_state">BDA_CHANGE_STATE</a> enumerated type:</p>

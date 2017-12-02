@@ -54,7 +54,7 @@ HRESULT GetImageProperties(
 ## -parameters
 <dl>
 
-### -param <i>pContentType</i> [out]
+### -param pContentType [out]
 
 <dd>
 <p>The type of content for the image.</p>

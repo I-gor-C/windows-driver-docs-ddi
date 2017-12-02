@@ -56,13 +56,13 @@ HRESULT GetAt(
 ## -parameters
 <dl>
 
-### -param <i>ulIndex</i> [in]
+### -param ulIndex [in]
 
 <dd>
 <p>Index of the <b>IPrintSchemaOption</b> object within the collection.</p>
 </dd>
 
-### -param <i>ppOption</i> [out, retval, optional]
+### -param ppOption [out, retval, optional]
 
 <dd>
 <p>Pointer to an <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> object.</p>

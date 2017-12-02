@@ -56,19 +56,19 @@ typedef enum _FILTER_DUMP_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DumpTypeUndefined"></a><a id="dumptypeundefined"></a><a id="DUMPTYPEUNDEFINED"></a><b>DumpTypeUndefined</b>
+### -field DumpTypeUndefined
 
 <dd>
 <p>This dump type is undefined.</p>
 </dd>
 
-### -field <a id="DumpTypeCrashdump"></a><a id="dumptypecrashdump"></a><a id="DUMPTYPECRASHDUMP"></a><b>DumpTypeCrashdump</b>
+### -field DumpTypeCrashdump
 
 <dd>
 <p>This dump type is for the crash dump stack.</p>
 </dd>
 
-### -field <a id="DumpTypeHibernation"></a><a id="dumptypehibernation"></a><a id="DUMPTYPEHIBERNATION"></a><b>DumpTypeHibernation</b>
+### -field DumpTypeHibernation
 
 <dd>
 <p>This dump type is for hibernation.</p>

@@ -56,13 +56,13 @@ LONG FASTCALL VideoPortInterlockedExchange(
 ## -parameters
 <dl>
 
-### -param <i>Target</i> [in, out]
+### -param Target [in, out]
 
 <dd>
 <p>Pointer to a user-defined lock variable that is used to control access to a memory buffer. </p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>Specifies the value to be stored in <i>Target</i>, which indicates whether the memory buffer is to be locked or unlocked. Use <b>TRUE</b> to lock the memory buffer, and <b>FALSE</b> to unlock the memory buffer. </p>

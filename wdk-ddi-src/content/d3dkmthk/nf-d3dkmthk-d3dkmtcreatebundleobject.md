@@ -56,7 +56,7 @@ NTSTATUS  D3DKMTCreateBundleObject(
 ## -parameters
 <dl>
 
-### -param <i>D3dkmt_createbundleobject</i> [in, out]
+### -param D3dkmt_createbundleobject [in, out]
 
 <dd>
 <p>Holds information to create a bundle object.</p>

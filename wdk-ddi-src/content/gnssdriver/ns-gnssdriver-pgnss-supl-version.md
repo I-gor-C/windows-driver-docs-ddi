@@ -7,7 +7,7 @@ old-location: sensors\gnss_supl_version.htm
 old-project: sensors
 ms.assetid: D004DAEF-F25F-442D-9A6D-91FB8A18E0DB
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_SUPL_VERSION, GNSS_SUPL_VERSION, *PGNSS_SUPL_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>MajorVersion</b>
+### -field MajorVersion
 
 <dd>
 <p>Major version number.</p>
 </dd>
 
-### -field <b>MinorVersion</b>
+### -field MinorVersion
 
 <dd>
 <p>Minor version number.</p>

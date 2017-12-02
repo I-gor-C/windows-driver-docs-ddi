@@ -60,13 +60,13 @@ typedef PHDAUDIO_UNSOLICITED_RESPONSE_CALLBACK HDAudioUnsolicitedResponseCallbac
 ## -parameters
 <dl>
 
-### -param <i>HDAudioCodecResponse</i> 
+### -param HDAudioCodecResponse 
 
 <dd>
 <p>This is a structure of type <a href="..\hdaudio\ns-hdaudio--hdaudio-codec-response.md">HDAUDIO_CODEC_RESPONSE</a> that specifies the codec's response to the command. This structure is passed by value.  </p>
 </dd>
 
-### -param <i>Context</i> 
+### -param Context 
 
 <dd>
 <p>This is the callbackContext value that was passed previously to <a href="..\hdaudio\nc-hdaudio-pregister-event-callback.md">PREGISTER_EVENT_CALLBACK</a>.</p>

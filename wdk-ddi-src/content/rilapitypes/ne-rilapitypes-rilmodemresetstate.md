@@ -7,7 +7,7 @@ old-location: netvista\rilmodemresetstate_2.htm
 old-project: netvista
 ms.assetid: 9cdc6548-393f-4af6-a8ee-bb96deb0f228
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILMODEMRESETSTATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MODEMRESETSTATE_RECOVERED"></a><a id="ril_modemresetstate_recovered"></a><b>RIL_MODEMRESETSTATE_RECOVERED</b>
+### -field RIL_MODEMRESETSTATE_RECOVERED
 
 <dd></dd>
 
-### -field <a id="RIL_MODEMRESETSTATE_FAILED"></a><a id="ril_modemresetstate_failed"></a><b>RIL_MODEMRESETSTATE_FAILED</b>
+### -field RIL_MODEMRESETSTATE_FAILED
 
 <dd></dd>
 
-### -field <a id="RIL_MODEMRESETSTATE_MAX"></a><a id="ril_modemresetstate_max"></a><b>RIL_MODEMRESETSTATE_MAX</b>
+### -field RIL_MODEMRESETSTATE_MAX
 
 <dd></dd>
 </dl>

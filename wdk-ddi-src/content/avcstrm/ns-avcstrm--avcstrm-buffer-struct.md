@@ -58,31 +58,31 @@ typedef struct _AVCSTRM_BUFFER_STRUCT {
 ## -struct-fields
 <dl>
 
-### -field <b>ClockProvider</b>
+### -field ClockProvider
 
 <dd>
 <p>Indicates whether the subunit driver itself serves as a clock provider. This is <b>TRUE</b> if this stream also serves as a clock provider, Otherwise, this is <b>FALSE</b>.</p>
 </dd>
 
-### -field <b>ClockHandle</b>
+### -field ClockHandle
 
 <dd>
 <p>Specifies a handle to a clock provider other than the subunit driver itself.</p>
 </dd>
 
-### -field <b>StreamHeader</b>
+### -field StreamHeader
 
 <dd>
 <p>Pointer to a kernel streaming header that describes a packet of data to be read from or written to a streaming driver pin.</p>
 </dd>
 
-### -field <b>FrameBuffer</b>
+### -field FrameBuffer
 
 <dd>
 <p>Pointer to a nonpaged system-space virtual address for the buffer described by the MDL.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Pointer to a client context value.</p>

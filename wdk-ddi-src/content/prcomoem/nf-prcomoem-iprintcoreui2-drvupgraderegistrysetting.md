@@ -57,19 +57,19 @@ STDMETHOD DrvUpgradeRegistrySetting(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter </i> 
+### -param hPrinter  
 
 <dd>
 <p>Caller-supplied printer handle.</p>
 </dd>
 
-### -param <i>pFeature</i> 
+### -param pFeature 
 
 <dd>
 <p>Caller-supplied pointer to a string identifying a printer feature name contained in the printer's GPD or PPD file.</p>
 </dd>
 
-### -param <i>pOption</i> 
+### -param pOption 
 
 <dd>
 <p>Caller-supplied pointer to a string identifying an option name, associated with the specified feature, contained in the printer's GPD or PPD file.</p>
@@ -88,7 +88,7 @@ STDMETHOD DrvUpgradeRegistrySetting(
 <p> </p>
 
 ## -remarks
-<p>This method is inherited from the <a href="NULL">IPrintOemDriverUI COM Interface</a>, which includes a <code>DrvUpgradeRegistrySetting</code> method. The behavior of this method is exactly the same as that of <a href="print.iprintoemdriverui_drvupgraderegistrysetting">IPrintOemDriverUI::DrvUpgradeRegistrySetting</a>. </p>
+<p>This method is inherited from the <a href="https://msdn.microsoft.com/ed11789f-750d-4f29-b5e0-ab299a1388db">IPrintOemDriverUI COM Interface</a>, which includes a <code>DrvUpgradeRegistrySetting</code> method. The behavior of this method is exactly the same as that of <a href="print.iprintoemdriverui_drvupgraderegistrysetting">IPrintOemDriverUI::DrvUpgradeRegistrySetting</a>. </p>
 
 <p>This method should be called only by the OEM's <a href="print.iprintoemui_upgradeprinter">IPrintOemUI::UpgradePrinter</a> method.</p>
 

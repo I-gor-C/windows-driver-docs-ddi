@@ -55,13 +55,13 @@ typedef struct _DXGKARG_DESTROYPERIODICFRAMENOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>hNotification</b>
+### -field hNotification
 
 <dd>
 <p>A handle to the notification object created by the KMD.</p>
 </dd>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>A handle to the adapter that the notification object was created for.</p>

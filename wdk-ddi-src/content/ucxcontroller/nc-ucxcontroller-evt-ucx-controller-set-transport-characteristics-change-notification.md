@@ -61,16 +61,16 @@ typedef EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION *PF
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>ChangeNotificationFlags</i> [in]
+### -param ChangeNotificationFlags [in]
 
 <dd>
-<p> A bitwise option of flags that indicate the type transport characteristics in which UCX is interested. The flags are defined in <a href="buses.ucx_controller_transport_characteristics_change_flags">UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS</a>.</p>
+<p> A bitwise option of flags that indicate the type transport characteristics in which UCX is interested. The flags are defined in <a href="..\ucxcontroller\ns-ucxcontroller--ucx-controller-transport-characteristics-change-flags.md">UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS</a>.</p>
 </dd>
 </dl>
 

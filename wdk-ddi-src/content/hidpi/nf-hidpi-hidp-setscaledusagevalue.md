@@ -61,49 +61,49 @@ NTSTATUS __stdcall HidP_SetScaledUsageValue(
 ## -parameters
 <dl>
 
-### -param <i>ReportType</i> [in]
+### -param ReportType [in]
 
 <dd>
 <p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report located at <i>Report</i>.</p>
 </dd>
 
-### -param <i>UsagePage</i> [in]
+### -param UsagePage [in]
 
 <dd>
 <p>Specifies the <a href="hid.hid_usages#usage_page#usage_page">usage page</a> of a usage.</p>
 </dd>
 
-### -param <i>LinkCollection</i> [in]
+### -param LinkCollection [in]
 
 <dd>
 <p>Specifies the <a href="https://msdn.microsoft.com/3f934661-c33c-4c08-82ac-ee2e0f519c8e">link collection</a> that contains the usage. If <i>LinkCollection</i> is nonzero, the routine only sets the usage, if one exists, in this link collection. If <i>LinkCollection</i> is zero, the routine sets the first usage it finds in the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> associated with <i>PreparsedData</i>.</p>
 </dd>
 
-### -param <i>Usage</i> [in]
+### -param Usage [in]
 
 <dd>
 <p>Specifies the usage.</p>
 </dd>
 
-### -param <i>UsageValue</i> [in]
+### -param UsageValue [in]
 
 <dd>
 <p>Specifies the signed and scaled physical number, which the routine converts to the usage's logical value.</p>
 </dd>
 
-### -param <i>PreparsedData</i> [in]
+### -param PreparsedData [in]
 
 <dd>
-<p>Pointer to a top-level's <a href="NULL">preparsed data</a>.</p>
+<p>Pointer to a top-level's <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.</p>
 </dd>
 
-### -param <i>Report</i> [in, out]
+### -param Report [in, out]
 
 <dd>
 <p>Pointer to a HID report.</p>
 </dd>
 
-### -param <i>ReportLength</i> [in]
+### -param ReportLength [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the HID report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a> returns in a collection's <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure.</p>
@@ -136,9 +136,9 @@ NTSTATUS __stdcall HidP_SetScaledUsageValue(
 ## -remarks
 <p><b>HidP_SetScaledUsageValue</b> sets the sign bit.</p>
 
-<p>If the routine returns HIDP_STATUS_INCOMPATIBLE_REPORT_ID, the specified report does contain the usage. However, a user-mode application or kernel-mode driver can set the usage in a zero-initialized report. See <a href="NULL">Initializing HID Reports</a>.</p>
+<p>If the routine returns HIDP_STATUS_INCOMPATIBLE_REPORT_ID, the specified report does contain the usage. However, a user-mode application or kernel-mode driver can set the usage in a zero-initialized report. See <a href="https://msdn.microsoft.com/14229315-3928-4421-a8d8-c3f7837bf1c3">Initializing HID Reports</a>.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

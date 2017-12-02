@@ -7,7 +7,7 @@ old-location: sensors\gnss_ni_request_param.htm
 old-project: sensors
 ms.assetid: 0528EEE6-31D6-4CF6-8192-3557C28B4D10
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_NI_REQUEST_PARAM, GNSS_NI_REQUEST_PARAM, *PGNSS_NI_REQUEST_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,67 +66,67 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>RequestId</b>
+### -field RequestId
 
 <dd>
 <p>The ID that uniquely identifies the NI request. It is used later by the NI response to identify the request to respond to.</p>
 </dd>
 
-### -field <b>RequestType</b>
+### -field RequestType
 
 <dd>
 <p>A <a href="..\gnssdriver\ne-gnssdriver-gnss-ni-request-type.md">GNSS_NI_REQUEST_TYPE</a> enumeration value that specifies the request type.</p>
 </dd>
 
-### -field <b>NotificationType</b>
+### -field NotificationType
 
 <dd>
 <p>A <a href="..\gnssdriver\ne-gnssdriver-gnss-ni-notification-type.md">GNSS_NI_NOTIFICATION_TYPE</a> enumeration value that specifies the notification type.</p>
 </dd>
 
-### -field <b>RequestPlaneType</b>
+### -field RequestPlaneType
 
 <dd>
 <p>A <a href="..\gnssdriver\ne-gnssdriver-gnss-ni-plane-type.md">GNSS_NI_PLANE_TYPE</a> enumeration value that specifies the plane type.</p>
 </dd>
 
-### -field <b>SuplNiInfo</b>
+### -field SuplNiInfo
 
 <dd>
 <p>The <a href="sensors.gnss_supl_ni_info">GNSS_SUPL_NI_INFO</a> structure that contains the SUPL NI information.</p>
 </dd>
 
-### -field <b>CpNiInfo</b>
+### -field CpNiInfo
 
 <dd>
 <p>The <a href="sensors.gnss_cp_ni_info">GNSS_CP_NI_INFO</a> structure that contains CP NI information.</p>
 </dd>
 
-### -field <b>V2UplNiInfo</b>
+### -field V2UplNiInfo
 
 <dd>
 <p>V2Upl NI request information.</p>
 </dd>
 
-### -field <b>ResponseTimeInSec</b>
+### -field ResponseTimeInSec
 
 <dd>
 <p>The required response time, in seconds.</p>
 </dd>
 
-### -field <b>EmergencyLocation</b>
+### -field EmergencyLocation
 
 <dd>
 <p>Indicates an emergency request, so an existing NI dialog will be dismissed and the new request will be processed immediately.</p>

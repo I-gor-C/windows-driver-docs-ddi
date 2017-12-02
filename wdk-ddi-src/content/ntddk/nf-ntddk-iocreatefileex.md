@@ -7,7 +7,7 @@ old-location: ifsk\iocreatefileex.htm
 old-project: ifsk
 ms.assetid: 47d5e7e2-bc97-4413-b1ca-ef958288902c
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: IoCreateFileEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,13 +68,13 @@ NTSTATUS IoCreateFileEx(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [out]
+### -param FileHandle [out]
 
 <dd>
 <p>A pointer to a variable that receives the file handle if the call is successful. The driver must close the handle with <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> as soon as the handle is no longer being used.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>A bitmask of flags (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>) that specifies the type of access that the caller requires to the file or directory. This set of system-defined <i>DesiredAccess</i> flags determines the following specific access rights for file objects.</p>
@@ -249,7 +249,7 @@ NTSTATUS IoCreateFileEx(
 <p>The FILE_READ_DATA, FILE_WRITE_DATA, FILE_EXECUTE, and FILE_APPEND_DATA <i>DesiredAccess</i> flags are incompatible with creating or opening a directory file.</p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in]
+### -param ObjectAttributes [in]
 
 <dd>
 <p>
@@ -304,7 +304,7 @@ NTSTATUS IoCreateFileEx(
 <p> </p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>A pointer to a variable of type <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> that receives the final completion status and information about the requested operation. On return from <b>IoCreateFileEx</b>, the <b>Information</b> member of the variable contains one of the following values:</p>
@@ -318,13 +318,13 @@ NTSTATUS IoCreateFileEx(
 </ul>
 </dd>
 
-### -param <i>AllocationSize</i> [in, optional]
+### -param AllocationSize [in, optional]
 
 <dd>
 <p>Optionally specifies the initial allocation size, in bytes, for the file. A nonzero value has no effect unless the file is being created, overwritten, or superseded.</p>
 </dd>
 
-### -param <i>FileAttributes</i> [in]
+### -param FileAttributes [in]
 
 <dd>
 <p>Explicitly specified attributes are applied only when the file is created, superseded, or, in some cases, overwritten. By default, this value is FILE_ATTRIBUTE_NORMAL, which can be overridden by any other flag or by a combination (through a bitwise OR operation) of compatible flags. Possible <i>FileAttributes</i> flags include the following.</p>
@@ -385,7 +385,7 @@ NTSTATUS IoCreateFileEx(
 <p> </p>
 </dd>
 
-### -param <i>ShareAccess</i> [in]
+### -param ShareAccess [in]
 
 <dd>
 <p>Specifies the type of share access to the file that the caller would like, as zero, or one, or a combination of the following flags. To request exclusive access, set this parameter to zero. If the IO_IGNORE_SHARE_ACCESS_CHECK flag is specified in the <i>Options</i> parameter, the I/O manager ignores the <i>ShareAccess</i> parameter. However, the file system might still perform access checks. Thus, it is important to specify the sharing mode you would like for this parameter, even when you use the IO_IGNORE_SHARE_ACCESS_CHECK flag. To help you avoid sharing violation errors, specify all the following share access flags.</p>
@@ -423,7 +423,7 @@ NTSTATUS IoCreateFileEx(
 <p>Device drivers and intermediate drivers usually set <i>ShareAccess</i> to zero, which gives the caller exclusive access to the open file.</p>
 </dd>
 
-### -param <i>Disposition</i> [in]
+### -param Disposition [in]
 
 <dd>
 <p>One of the following values can be used to specify how the file should be handled when the file already exists.</p>
@@ -484,7 +484,7 @@ NTSTATUS IoCreateFileEx(
 <p> </p>
 </dd>
 
-### -param <i>CreateOptions</i> [in]
+### -param CreateOptions [in]
 
 <dd>
 <p>Specifies the options to be applied when creating or opening the file, as a compatible combination of the following flags.</p>
@@ -635,31 +635,31 @@ NTSTATUS IoCreateFileEx(
 <p> </p>
 </dd>
 
-### -param <i>EaBuffer</i> [in, optional]
+### -param EaBuffer [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied variable of type <a href="..\wdm\ns-wdm--file-full-ea-information.md">FILE_FULL_EA_INFORMATION</a> that contains extended attribute (EA) information to be applied to the file.  For device and intermediate drivers, this parameter must be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>EaLength</i> [in]
+### -param EaLength [in]
 
 <dd>
 <p>Length, in bytes, of <i>EaBuffer</i>.  For device drivers and intermediate drivers, this parameter must be zero.</p>
 </dd>
 
-### -param <i>CreateFileType</i> [in]
+### -param CreateFileType [in]
 
 <dd>
 <p>Drivers must set this parameter to CreateFileTypeNone.</p>
 </dd>
 
-### -param <i>InternalParameters</i> [in, optional]
+### -param InternalParameters [in, optional]
 
 <dd>
 <p>Drivers must set this parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Options</i> [in]
+### -param Options [in]
 
 <dd>
 <p>Specifies options to be used during the generation of the create request. Zero or more of the following bit flag values can be used.</p>
@@ -712,7 +712,7 @@ NTSTATUS IoCreateFileEx(
 <p> </p>
 </dd>
 
-### -param <i>DriverContext</i> [in, optional]
+### -param DriverContext [in, optional]
 
 <dd>
 <p>An optional pointer to an <a href="..\ntddk\ns-ntddk--io-driver-create-context.md">IO_DRIVER_CREATE_CONTEXT</a> structure that was previously initialized by the <a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a> routine.  The IO_DRIVER_CREATE_CONTEXT structure can be used to pass additional parameters to the <b>IoCreateFileEx</b> and <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a> routines.  See the following Remarks section for more information.</p>
@@ -950,4 +950,4 @@ NTSTATUS IoCreateFileEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoCreateFileEx routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoCreateFileEx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

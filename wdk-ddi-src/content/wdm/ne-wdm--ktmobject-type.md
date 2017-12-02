@@ -59,31 +59,31 @@ typedef enum _KTMOBJECT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="KTMOBJECT_TRANSACTION"></a><a id="ktmobject_transaction"></a><b>KTMOBJECT_TRANSACTION</b>
+### -field KTMOBJECT_TRANSACTION
 
 <dd>
 <p>KTM transaction objects.</p>
 </dd>
 
-### -field <a id="KTMOBJECT_TRANSACTION_MANAGER"></a><a id="ktmobject_transaction_manager"></a><b>KTMOBJECT_TRANSACTION_MANAGER</b>
+### -field KTMOBJECT_TRANSACTION_MANAGER
 
 <dd>
 <p>KTM transaction manager objects.</p>
 </dd>
 
-### -field <a id="KTMOBJECT_RESOURCE_MANAGER"></a><a id="ktmobject_resource_manager"></a><b>KTMOBJECT_RESOURCE_MANAGER</b>
+### -field KTMOBJECT_RESOURCE_MANAGER
 
 <dd>
 <p>KTM resource manager objects.</p>
 </dd>
 
-### -field <a id="KTMOBJECT_ENLISTMENT"></a><a id="ktmobject_enlistment"></a><b>KTMOBJECT_ENLISTMENT</b>
+### -field KTMOBJECT_ENLISTMENT
 
 <dd>
 <p>KTM enlistment objects.</p>
 </dd>
 
-### -field <a id="KTMOBJECT_INVALID"></a><a id="ktmobject_invalid"></a><b>KTMOBJECT_INVALID</b>
+### -field KTMOBJECT_INVALID
 
 <dd>
 <p>Invalid object type.</p>

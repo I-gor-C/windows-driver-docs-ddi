@@ -59,31 +59,31 @@ typedef struct _PEP_ACPI_SPB_UART_RESOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>SpbCommon</b>
+### -field SpbCommon
 
 <dd>
 <p>A <a href="..\pepfx\ns-pepfx--pep-acpi-spb-resource.md">PEP_ACPI_SPB_RESOURCE</a> structure describing this resource.</p>
 </dd>
 
-### -field <b>BaudRate</b>
+### -field BaudRate
 
 <dd>
 <p>The baud rate of the connection.</p>
 </dd>
 
-### -field <b>RxBufferSize</b>
+### -field RxBufferSize
 
 <dd>
 <p>The maximum receive buffer size, in bytes, that is supported by this connection.</p>
 </dd>
 
-### -field <b>TxBufferSize</b>
+### -field TxBufferSize
 
 <dd>
 <p>The maximum transmit buffer size, in bytes, that is supported by this connection.</p>
 </dd>
 
-### -field <b>Parity</b>
+### -field Parity
 
 <dd>
 <p>Indicates the parity of the connection.</p>
@@ -156,7 +156,7 @@ typedef struct _PEP_ACPI_SPB_UART_RESOURCE {
 <p> </p>
 </dd>
 
-### -field <b>LinesInUse</b>
+### -field LinesInUse
 
 <dd>
 <p>Flag indicating the serial lines that are enabled. A value of 1 in the bit positions indicates that the line is enabled.</p>
@@ -168,7 +168,7 @@ typedef struct _PEP_ACPI_SPB_UART_RESOURCE {
 <tr>
 <td width="40%"><a id="0"></a><dl>
 
-### -field <b>0</b>
+### -field 0
 
 </dl>
 </td>
@@ -179,7 +179,7 @@ typedef struct _PEP_ACPI_SPB_UART_RESOURCE {
 <tr>
 <td width="40%"><a id="1"></a><dl>
 
-### -field <b>1</b>
+### -field 1
 
 </dl>
 </td>
@@ -190,7 +190,7 @@ typedef struct _PEP_ACPI_SPB_UART_RESOURCE {
 <tr>
 <td width="40%"><a id="2"></a><dl>
 
-### -field <b>2</b>
+### -field 2
 
 </dl>
 </td>
@@ -201,7 +201,7 @@ typedef struct _PEP_ACPI_SPB_UART_RESOURCE {
 <tr>
 <td width="40%"><a id="3"></a><dl>
 
-### -field <b>3</b>
+### -field 3
 
 </dl>
 </td>
@@ -212,7 +212,7 @@ typedef struct _PEP_ACPI_SPB_UART_RESOURCE {
 <tr>
 <td width="40%"><a id="4"></a><dl>
 
-### -field <b>4</b>
+### -field 4
 
 </dl>
 </td>
@@ -223,7 +223,7 @@ typedef struct _PEP_ACPI_SPB_UART_RESOURCE {
 <tr>
 <td width="40%"><a id="5"></a><dl>
 
-### -field <b>5</b>
+### -field 5
 
 </dl>
 </td>
@@ -234,7 +234,7 @@ typedef struct _PEP_ACPI_SPB_UART_RESOURCE {
 <tr>
 <td width="40%"><a id="6"></a><dl>
 
-### -field <b>6</b>
+### -field 6
 
 </dl>
 </td>
@@ -245,7 +245,7 @@ typedef struct _PEP_ACPI_SPB_UART_RESOURCE {
 <tr>
 <td width="40%"><a id="7"></a><dl>
 
-### -field <b>7</b>
+### -field 7
 
 </dl>
 </td>

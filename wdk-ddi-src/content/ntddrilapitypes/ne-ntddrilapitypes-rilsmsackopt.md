@@ -7,7 +7,7 @@ old-location: netvista\rilsmsackopt.htm
 old-project: netvista
 ms.assetid: 652315db-0cdc-4c32-8fa0-3a538c917497
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef enum _RILSMSACKOPT {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SMSACKOPT_IMS"></a><a id="ril_smsackopt_ims"></a><b>RIL_SMSACKOPT_IMS</b>
+### -field RIL_SMSACKOPT_IMS
 
 <dd></dd>
 </dl>

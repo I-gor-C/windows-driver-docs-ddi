@@ -56,19 +56,19 @@ typedef struct _CHANGER_SET_POSITION {
 ## -struct-fields
 <dl>
 
-### -field <b>Transport</b>
+### -field Transport
 
 <dd>
 <p>Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a> that indicates the transport element to move. The <b>ElementType</b> member of the CHANGER_ELEMENT structure must be assigned a value of <b>ChangerTransport</b>. </p>
 </dd>
 
-### -field <b>Destination</b>
+### -field Destination
 
 <dd>
 <p>Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a> that indicates the final destination of the transport element. <b>ElementType</b> must be <b>ChangerSlot</b>, <b>ChangerDrive</b>, or <b>ChangerIEPort</b>.</p>
 </dd>
 
-### -field <b>Flip</b>
+### -field Flip
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the <b>Transport</b> should be flipped. When <b>FALSE</b> this member indicates that the transport is not ready to be flipped. This member is applicable only if CHANGER_MEDIUM_FLIP is set in the <b>Features0</b> member of the <a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a> structure.</p>

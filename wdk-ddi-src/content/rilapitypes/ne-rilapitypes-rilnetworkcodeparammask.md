@@ -7,7 +7,7 @@ old-location: netvista\rilnetworkcodeparammask_2.htm
 old-project: netvista
 ms.assetid: 944a4974-cb1d-4c0c-bca6-2741f16d2b3e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef enum _RILNETWORKCODEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_NETWORKCODE_MCC"></a><a id="ril_param_networkcode_mcc"></a><b>RIL_PARAM_NETWORKCODE_MCC</b>
+### -field RIL_PARAM_NETWORKCODE_MCC
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_NETWORKCODE_MNC"></a><a id="ril_param_networkcode_mnc"></a><b>RIL_PARAM_NETWORKCODE_MNC</b>
+### -field RIL_PARAM_NETWORKCODE_MNC
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_NETWORKCODE_SID"></a><a id="ril_param_networkcode_sid"></a><b>RIL_PARAM_NETWORKCODE_SID</b>
+### -field RIL_PARAM_NETWORKCODE_SID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_NETWORKCODE_NID"></a><a id="ril_param_networkcode_nid"></a><b>RIL_PARAM_NETWORKCODE_NID</b>
+### -field RIL_PARAM_NETWORKCODE_NID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_NETWORKCODE_RI"></a><a id="ril_param_networkcode_ri"></a><b>RIL_PARAM_NETWORKCODE_RI</b>
+### -field RIL_PARAM_NETWORKCODE_RI
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_NETWORKCODE_ALL"></a><a id="ril_param_networkcode_all"></a><b>RIL_PARAM_NETWORKCODE_ALL</b>
+### -field RIL_PARAM_NETWORKCODE_ALL
 
 <dd></dd>
 </dl>

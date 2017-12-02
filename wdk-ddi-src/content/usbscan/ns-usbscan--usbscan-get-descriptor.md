@@ -7,7 +7,7 @@ old-location: image\usbscan_get_descriptor.htm
 old-project: image
 ms.assetid: 250c0022-ceaa-40c6-8431-9ec53438fdb9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: USBSCAN_GET_DESCRIPTOR, USBSCAN_GET_DESCRIPTOR, *PUSBSCAN_GET_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _USBSCAN_GET_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>DescriptorType</b>
+### -field DescriptorType
 
 <dd>
 <p>Same as the <i>DescriptorType</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff538943">UsbBuildGetDescriptorRequest</a>.</p>
 </dd>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>Same as the <i>Index</i> parameter to <b>UsbBuildGetDescriptorRequest</b>.</p>
 </dd>
 
-### -field <b>LanguageId</b>
+### -field LanguageId
 
 <dd>
 <p>Same as the <i>LanguageId</i> parameter to <b>UsbBuildGetDescriptorRequest</b>.</p>

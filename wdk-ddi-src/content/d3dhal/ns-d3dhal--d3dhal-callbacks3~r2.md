@@ -59,13 +59,13 @@ typedef struct _D3DHAL_CALLBACKS3 {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size in bytes of this structure.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Indicates the callbacks associated with this structure that the driver has implemented. For every bit the driver sets in <b>dwFlags</b>, the driver must initialize the corresponding function pointer member of this structure. This member can be the bitwise-OR of one or more of the following flags:</p>
@@ -110,25 +110,25 @@ typedef struct _D3DHAL_CALLBACKS3 {
 <p> </p>
 </dd>
 
-### -field <b>Clear2</b>
+### -field Clear2
 
 <dd>
 <p>Must be set to <b>NULL</b>. This was a pointer to the driver-supplied <b>D3dClear2</b> callback that is no longer used for DirectX 7.0 and beyond. Instead the driver should respond to the D3DDP2OP_CLEAR command stream token in its implementation of <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>.</p>
 </dd>
 
-### -field <b>lpvReserved</b>
+### -field lpvReserved
 
 <dd>
 <p>Specifies a reserved field and must be set to <b>NULL</b> in a Windows 2000 and later driver.</p>
 </dd>
 
-### -field <b>ValidateTextureStageState</b>
+### -field ValidateTextureStageState
 
 <dd>
 <p>Points to the driver-supplied <a href="display.d3dvalidatetexturestagestate">D3dValidateTextureStageState</a> callback, or <b>NULL</b>. Drivers that support multitexturing must implement the callback that this member points to.</p>
 </dd>
 
-### -field <b>DrawPrimitives2</b>
+### -field DrawPrimitives2
 
 <dd>
 <p>Points to the driver-supplied <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a> callback. A driver must implement the callback that this member points to.</p>

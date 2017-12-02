@@ -58,19 +58,19 @@ HRESULT GetBytes(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd>
 <p>The property to read.</p>
 </dd>
 
-### -param <i>pcbValue</i> [out]
+### -param pcbValue [out]
 
 <dd>
 <p>The number of bytes read.</p>
 </dd>
 
-### -param <i>rgbValue</i> [out]
+### -param rgbValue [out]
 
 <dd>
 <p>The returned array. This array must be freed by using CoTaskFree.</p>

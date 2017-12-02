@@ -58,13 +58,13 @@ __checkResult HRESULT APIENTRY CALLBACK pfnCreateSynchronizationObjectCb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (that is, the graphics context) that will own the synchronization object that <b>pfnCreateSynchronizationObjectCb</b> creates.</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-createsynchronizationobject.md">D3DDDICB_CREATESYNCHRONIZATIONOBJECT</a> structure that describes the synchronization object to create.</p>

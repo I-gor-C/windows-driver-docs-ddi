@@ -7,7 +7,7 @@ old-location: ifsk\sid_name_use.htm
 old-project: ifsk
 ms.assetid: c3dd02d1-c259-4c17-8bd5-ee304e576a39
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: VOLUME_READ_PLEX_INPUT, VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,61 +63,61 @@ typedef enum _SID_NAME_USE {
 ## -enum-fields
 <dl>
 
-### -field <a id="SidTypeUser"></a><a id="sidtypeuser"></a><a id="SIDTYPEUSER"></a><b>SidTypeUser</b>
+### -field SidTypeUser
 
 <dd>
 <p>This value indicates a user SID.</p>
 </dd>
 
-### -field <a id="SidTypeGroup"></a><a id="sidtypegroup"></a><a id="SIDTYPEGROUP"></a><b>SidTypeGroup</b>
+### -field SidTypeGroup
 
 <dd>
 <p>This value indicates a group SID.</p>
 </dd>
 
-### -field <a id="SidTypeDomain"></a><a id="sidtypedomain"></a><a id="SIDTYPEDOMAIN"></a><b>SidTypeDomain</b>
+### -field SidTypeDomain
 
 <dd>
 <p>This value indicates a domain SID.</p>
 </dd>
 
-### -field <a id="SidTypeAlias"></a><a id="sidtypealias"></a><a id="SIDTYPEALIAS"></a><b>SidTypeAlias</b>
+### -field SidTypeAlias
 
 <dd>
 <p>This value indicates an alias SID.</p>
 </dd>
 
-### -field <a id="SidTypeWellKnownGroup"></a><a id="sidtypewellknowngroup"></a><a id="SIDTYPEWELLKNOWNGROUP"></a><b>SidTypeWellKnownGroup</b>
+### -field SidTypeWellKnownGroup
 
 <dd>
 <p>This value indicates an SID for a well-known group.</p>
 </dd>
 
-### -field <a id="SidTypeDeletedAccount"></a><a id="sidtypedeletedaccount"></a><a id="SIDTYPEDELETEDACCOUNT"></a><b>SidTypeDeletedAccount</b>
+### -field SidTypeDeletedAccount
 
 <dd>
 <p>This value indicates a SID for a deleted account.</p>
 </dd>
 
-### -field <a id="SidTypeInvalid"></a><a id="sidtypeinvalid"></a><a id="SIDTYPEINVALID"></a><b>SidTypeInvalid</b>
+### -field SidTypeInvalid
 
 <dd>
 <p>This value indicates an invalid SID.</p>
 </dd>
 
-### -field <a id="SidTypeUnknown"></a><a id="sidtypeunknown"></a><a id="SIDTYPEUNKNOWN"></a><b>SidTypeUnknown</b>
+### -field SidTypeUnknown
 
 <dd>
 <p>This value indicates an unknown SID type.</p>
 </dd>
 
-### -field <a id="SidTypeComputer"></a><a id="sidtypecomputer"></a><a id="SIDTYPECOMPUTER"></a><b>SidTypeComputer</b>
+### -field SidTypeComputer
 
 <dd>
 <p>This value indicates a SID for a computer.</p>
 </dd>
 
-### -field <a id="SidTypeLabel"></a><a id="sidtypelabel"></a><a id="SIDTYPELABEL"></a><b>SidTypeLabel</b>
+### -field SidTypeLabel
 
 <dd></dd>
 </dl>
@@ -150,4 +150,4 @@ typedef enum _SID_NAME_USE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SID_NAME_USE enumeration%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SID_NAME_USE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

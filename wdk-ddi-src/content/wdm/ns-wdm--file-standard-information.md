@@ -59,31 +59,31 @@ typedef struct _FILE_STANDARD_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>AllocationSize</b>
+### -field AllocationSize
 
 <dd>
 <p>The file allocation size in bytes. Usually, this value is a multiple of the sector or cluster size of the underlying physical device. </p>
 </dd>
 
-### -field <b>EndOfFile</b>
+### -field EndOfFile
 
 <dd>
 <p>The end of file location as a byte offset.</p>
 </dd>
 
-### -field <b>NumberOfLinks</b>
+### -field NumberOfLinks
 
 <dd>
 <p>The number of hard links to the file.</p>
 </dd>
 
-### -field <b>DeletePending</b>
+### -field DeletePending
 
 <dd>
 <p>The delete pending status. <b>TRUE</b> indicates that a file deletion has been requested.</p>
 </dd>
 
-### -field <b>Directory</b>
+### -field Directory
 
 <dd>
 <p>The file directory status. <b>TRUE</b> indicates the file object represents a directory. </p>

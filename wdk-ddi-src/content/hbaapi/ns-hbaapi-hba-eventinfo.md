@@ -59,7 +59,7 @@ typedef struct HBA_EventInfo {
 ## -struct-fields
 <dl>
 
-### -field <b>EventCode</b>
+### -field EventCode
 
 <dd>
 <p>Contains a code indicating the type of event. The following table lists the values that this member can have:</p>
@@ -120,24 +120,24 @@ typedef struct HBA_EventInfo {
 <p> </p>
 </dd>
 
-### -field <b>Event</b>
+### -field Event
 
 <dd>
 <dl>
 
-### -field <b>Link_EventInfo</b>
+### -field Link_EventInfo
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-link-eventinfo.md">HBA_Link_EventInfo</a> that holds information associated with a link event. </p>
 </dd>
 
-### -field <b>RSCN_EventInfo</b>
+### -field RSCN_EventInfo
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-rscn-eventinfo.md">HBA_RSCN_EventInfo</a> that holds information associated with a link event.</p>
 </dd>
 
-### -field <b>Pty_EventInfo</b>
+### -field Pty_EventInfo
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-pty-eventinfo.md">HBA_Pty_EventInfo</a> that holds information associated with a link event.</p>

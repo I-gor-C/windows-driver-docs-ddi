@@ -57,25 +57,25 @@ typedef enum _GPIO_PIN_CONFIG_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PullDefault"></a><a id="pulldefault"></a><a id="PULLDEFAULT"></a><b>PullDefault</b>
+### -field PullDefault
 
 <dd>
 <p>Indicates that no configuration is applied to this pin.</p>
 </dd>
 
-### -field <a id="PullUp"></a><a id="pullup"></a><a id="PULLUP"></a><b>PullUp</b>
+### -field PullUp
 
 <dd>
 <p>Indicates that this pin is configured to use a pull-up resistor.</p>
 </dd>
 
-### -field <a id="PullDown"></a><a id="pulldown"></a><a id="PULLDOWN"></a><b>PullDown</b>
+### -field PullDown
 
 <dd>
 <p>Indicates that this pin is configured to use a pull-down resistor.</p>
 </dd>
 
-### -field <a id="PullNone"></a><a id="pullnone"></a><a id="PULLNONE"></a><b>PullNone</b>
+### -field PullNone
 
 <dd>
 <p>Indicates that this pin is not configured to use a pull-up or pull-down resistor.</p>

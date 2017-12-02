@@ -59,37 +59,37 @@ typedef enum _DXVA_VideoTransferMatrix {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVA_VideoTransferMatrixShift"></a><a id="dxva_videotransfermatrixshift"></a><a id="DXVA_VIDEOTRANSFERMATRIXSHIFT"></a><b>DXVA_VideoTransferMatrixShift</b>
+### -field DXVA_VideoTransferMatrixShift
 
 <dd>
 <p>Specifies to shift bits by 15 positions (DXVA_ExtColorData_ShiftBase + 7, or 8 + 7).</p>
 </dd>
 
-### -field <a id="DXVA_VideoTransferMatrixMask"></a><a id="dxva_videotransfermatrixmask"></a><a id="DXVA_VIDEOTRANSFERMATRIXMASK"></a><b>DXVA_VideoTransferMatrixMask</b>
+### -field DXVA_VideoTransferMatrixMask
 
 <dd>
 <p>Specifies the video transfer matrix mask. 3 (0x00038000) bits of a DWORD can be used to specify video transfer matrix.</p>
 </dd>
 
-### -field <a id="DXVA_VideoTransferMatrix_Unknown"></a><a id="dxva_videotransfermatrix_unknown"></a><a id="DXVA_VIDEOTRANSFERMATRIX_UNKNOWN"></a><b>DXVA_VideoTransferMatrix_Unknown</b>
+### -field DXVA_VideoTransferMatrix_Unknown
 
 <dd>
 <p>Specifies that the video transfer matrix is not specified. The default is BT601 for standard definition (SD) video and BT709 for high definition (HD) video.</p>
 </dd>
 
-### -field <a id="DXVA_VideoTransferMatrix_BT709"></a><a id="dxva_videotransfermatrix_bt709"></a><a id="DXVA_VIDEOTRANSFERMATRIX_BT709"></a><b>DXVA_VideoTransferMatrix_BT709</b>
+### -field DXVA_VideoTransferMatrix_BT709
 
 <dd>
 <p>Specifies the BT709 transfer matrix.</p>
 </dd>
 
-### -field <a id="DXVA_VideoTransferMatrix_BT601"></a><a id="dxva_videotransfermatrix_bt601"></a><a id="DXVA_VIDEOTRANSFERMATRIX_BT601"></a><b>DXVA_VideoTransferMatrix_BT601</b>
+### -field DXVA_VideoTransferMatrix_BT601
 
 <dd>
 <p>Specifies the BT601 transfer matrix.</p>
 </dd>
 
-### -field <a id="DXVA_VideoTransferMatrix_SMPTE240M"></a><a id="dxva_videotransfermatrix_smpte240m"></a><a id="DXVA_VIDEOTRANSFERMATRIX_SMPTE240M"></a><b>DXVA_VideoTransferMatrix_SMPTE240M</b>
+### -field DXVA_VideoTransferMatrix_SMPTE240M
 
 <dd>
 <p>Specifies a HD video standard rarely used in Japan.</p>

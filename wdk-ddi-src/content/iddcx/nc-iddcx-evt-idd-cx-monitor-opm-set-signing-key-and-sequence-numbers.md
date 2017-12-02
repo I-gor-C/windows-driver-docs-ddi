@@ -60,7 +60,7 @@ typedef EVT_IDD_CX_MONITOR_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS PFN_IDD_CX_M
 ## -parameters
 <dl>
 
-### -param <i>OpmCxtObject</i> [in]
+### -param OpmCxtObject [in]
 
 <dd>
 <p>
@@ -68,7 +68,7 @@ typedef EVT_IDD_CX_MONITOR_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS PFN_IDD_CX_M
                 The object for the OPM context whose signing key and sequence number will be set.</p>
 </dd>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>

@@ -68,43 +68,43 @@ typedef struct _D3DKMT_CREATECONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the device to create the device context on. </p>
 </dd>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>[in] The zero-based index of the node that the context is scheduled on.</p>
 </dd>
 
-### -field <b>EngineAffinity</b>
+### -field EngineAffinity
 
 <dd>
 <p>[in] The engine affinity for the context.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-createcontextflags.md">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context. </p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in] A pointer to private data that is passed to the display miniport driver. </p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.</p>
 </dd>
 
-### -field <b>ClientHint</b>
+### -field ClientHint
 
 <dd>
 <p>[in] A D3DKMT_CLIENTHINT-typed value that indicates the type of client that creates the context. The following table lists the possible values.</p>
@@ -173,53 +173,53 @@ typedef struct _D3DKMT_CREATECONTEXT {
 <p> </p>
 </dd>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[out] A handle to the device context that the DirectX graphics kernel subsystem (<i>Dxgkrnl.sys</i>) supplied and that is returned from the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function.</p>
 </dd>
 
-### -field <b>pCommandBuffer</b>
+### -field pCommandBuffer
 
 <dd>
 <p>[out] A pointer to command buffer memory that the OpenGL ICD places commands into. The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this memory pointer.</p>
 </dd>
 
-### -field <b>CommandBufferSize</b>
+### -field CommandBufferSize
 
 <dd>
 <p>[out] The size, in bytes, of the memory block that <b>pCommandBuffer</b> points to. The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this size value.</p>
 </dd>
 
-### -field <b>pAllocationList</b>
+### -field pAllocationList
 
 <dd>
 <p>[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-allocationlist.md">D3DDDI_ALLOCATIONLIST</a> structures that the OpenGL ICD inserts referenced allocations in.</p>
 <p>The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this array. </p>
 </dd>
 
-### -field <b>AllocationListSize</b>
+### -field AllocationListSize
 
 <dd>
 <p>[out] The number of elements in the array of allocations that <b>pAllocationList</b> points to. This quantity of allocations is available when the DirectX graphics kernel subsystem submits the command buffer that is pointed to by <b>pCommandBuffer</b> to the display miniport driver. </p>
 <p>The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this number. </p>
 </dd>
 
-### -field <b>pPatchLocationList</b>
+### -field pPatchLocationList
 
 <dd>
 <p>[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures that the OpenGL ICD inserts patching information in.</p>
 <p>The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this array. </p>
 </dd>
 
-### -field <b>PatchLocationListSize</b>
+### -field PatchLocationListSize
 
 <dd>
 <p>[out] The number of elements in the patch-location list that <b>pPatchLocationList</b> points to. This quantity of patch locations is available when the DirectX graphics kernel subsystem submits the command buffer that is pointed to by <b>pCommandBuffer</b> to the display miniport driver. </p>
 <p>The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this number. </p>
 </dd>
 
-### -field <b>CommandBuffer</b>
+### -field CommandBuffer
 
 <dd>
 <p>[out] A pointer to command buffer memory that the OpenGL ICD places commands into. The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this memory pointer.</p>

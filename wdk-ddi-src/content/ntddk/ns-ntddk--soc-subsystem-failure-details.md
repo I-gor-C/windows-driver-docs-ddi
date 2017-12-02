@@ -60,31 +60,31 @@ typedef struct _SOC_SUBSYSTEM_FAILURE_DETAILS {
 ## -struct-fields
 <dl>
 
-### -field <b>SubsysType</b>
+### -field SubsysType
 
 <dd>
 <p>A value in the <a href="whea.soc_sybsystem_type">SOC_SYBSYSTEM_TYPE</a> enumeration or a vendor-defined subsystem type. Subsystem types in the range 0x10000 through 0x80000000 are reserved for independent hardware vendors. </p>
 </dd>
 
-### -field <b>FirmwareVersion</b>
+### -field FirmwareVersion
 
 <dd>
 <p>A vendor-defined SoC firmware version number.</p>
 </dd>
 
-### -field <b>HardwareVersion</b>
+### -field HardwareVersion
 
 <dd>
 <p>A  vendor-defined SoC hardware version number.</p>
 </dd>
 
-### -field <b>UnifiedFailureRegionSize</b>
+### -field UnifiedFailureRegionSize
 
 <dd>
 <p>The size, in bytes, of the <b>UnifiedFailureRegion</b> string including the <b>NULL</b> terminator.</p>
 </dd>
 
-### -field <b>UnifiedFailureRegion</b>
+### -field UnifiedFailureRegion
 
 <dd>
 <p>A null-terminated string, defined by the vendor, that  contains classification details about the error that occurred.</p>

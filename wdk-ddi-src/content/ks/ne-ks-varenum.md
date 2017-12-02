@@ -101,191 +101,191 @@ enum VARENUM {
 ## -enum-fields
 <dl>
 
-### -field <a id="VT_EMPTY"></a><a id="vt_empty"></a><b>VT_EMPTY</b>
+### -field VT_EMPTY
 
 <dd></dd>
 
-### -field <a id="VT_NULL"></a><a id="vt_null"></a><b>VT_NULL</b>
+### -field VT_NULL
 
 <dd></dd>
 
-### -field <a id="VT_I2"></a><a id="vt_i2"></a><b>VT_I2</b>
+### -field VT_I2
 
 <dd></dd>
 
-### -field <a id="VT_I4"></a><a id="vt_i4"></a><b>VT_I4</b>
+### -field VT_I4
 
 <dd></dd>
 
-### -field <a id="VT_R4"></a><a id="vt_r4"></a><b>VT_R4</b>
+### -field VT_R4
 
 <dd></dd>
 
-### -field <a id="VT_R8"></a><a id="vt_r8"></a><b>VT_R8</b>
+### -field VT_R8
 
 <dd></dd>
 
-### -field <a id="VT_CY"></a><a id="vt_cy"></a><b>VT_CY</b>
+### -field VT_CY
 
 <dd></dd>
 
-### -field <a id="VT_DATE"></a><a id="vt_date"></a><b>VT_DATE</b>
+### -field VT_DATE
 
 <dd></dd>
 
-### -field <a id="VT_BSTR"></a><a id="vt_bstr"></a><b>VT_BSTR</b>
+### -field VT_BSTR
 
 <dd></dd>
 
-### -field <a id="VT_DISPATCH"></a><a id="vt_dispatch"></a><b>VT_DISPATCH</b>
+### -field VT_DISPATCH
 
 <dd></dd>
 
-### -field <a id="VT_ERROR"></a><a id="vt_error"></a><b>VT_ERROR</b>
+### -field VT_ERROR
 
 <dd></dd>
 
-### -field <a id="VT_BOOL"></a><a id="vt_bool"></a><b>VT_BOOL</b>
+### -field VT_BOOL
 
 <dd></dd>
 
-### -field <a id="VT_VARIANT"></a><a id="vt_variant"></a><b>VT_VARIANT</b>
+### -field VT_VARIANT
 
 <dd></dd>
 
-### -field <a id="VT_UNKNOWN"></a><a id="vt_unknown"></a><b>VT_UNKNOWN</b>
+### -field VT_UNKNOWN
 
 <dd></dd>
 
-### -field <a id="VT_DECIMAL"></a><a id="vt_decimal"></a><b>VT_DECIMAL</b>
+### -field VT_DECIMAL
 
 <dd></dd>
 
-### -field <a id="VT_I1"></a><a id="vt_i1"></a><b>VT_I1</b>
+### -field VT_I1
 
 <dd></dd>
 
-### -field <a id="VT_UI1"></a><a id="vt_ui1"></a><b>VT_UI1</b>
+### -field VT_UI1
 
 <dd></dd>
 
-### -field <a id="VT_UI2"></a><a id="vt_ui2"></a><b>VT_UI2</b>
+### -field VT_UI2
 
 <dd></dd>
 
-### -field <a id="VT_UI4"></a><a id="vt_ui4"></a><b>VT_UI4</b>
+### -field VT_UI4
 
 <dd></dd>
 
-### -field <a id="VT_I8"></a><a id="vt_i8"></a><b>VT_I8</b>
+### -field VT_I8
 
 <dd></dd>
 
-### -field <a id="VT_UI8"></a><a id="vt_ui8"></a><b>VT_UI8</b>
+### -field VT_UI8
 
 <dd></dd>
 
-### -field <a id="VT_INT"></a><a id="vt_int"></a><b>VT_INT</b>
+### -field VT_INT
 
 <dd></dd>
 
-### -field <a id="VT_UINT"></a><a id="vt_uint"></a><b>VT_UINT</b>
+### -field VT_UINT
 
 <dd></dd>
 
-### -field <a id="VT_VOID"></a><a id="vt_void"></a><b>VT_VOID</b>
+### -field VT_VOID
 
 <dd></dd>
 
-### -field <a id="VT_HRESULT"></a><a id="vt_hresult"></a><b>VT_HRESULT</b>
+### -field VT_HRESULT
 
 <dd></dd>
 
-### -field <a id="VT_PTR"></a><a id="vt_ptr"></a><b>VT_PTR</b>
+### -field VT_PTR
 
 <dd></dd>
 
-### -field <a id="VT_SAFEARRAY"></a><a id="vt_safearray"></a><b>VT_SAFEARRAY</b>
+### -field VT_SAFEARRAY
 
 <dd></dd>
 
-### -field <a id="VT_CARRAY"></a><a id="vt_carray"></a><b>VT_CARRAY</b>
+### -field VT_CARRAY
 
 <dd></dd>
 
-### -field <a id="VT_USERDEFINED"></a><a id="vt_userdefined"></a><b>VT_USERDEFINED</b>
+### -field VT_USERDEFINED
 
 <dd></dd>
 
-### -field <a id="VT_LPSTR"></a><a id="vt_lpstr"></a><b>VT_LPSTR</b>
+### -field VT_LPSTR
 
 <dd></dd>
 
-### -field <a id="VT_LPWSTR"></a><a id="vt_lpwstr"></a><b>VT_LPWSTR</b>
+### -field VT_LPWSTR
 
 <dd></dd>
 
-### -field <a id="VT_FILETIME"></a><a id="vt_filetime"></a><b>VT_FILETIME</b>
+### -field VT_FILETIME
 
 <dd></dd>
 
-### -field <a id="VT_BLOB"></a><a id="vt_blob"></a><b>VT_BLOB</b>
+### -field VT_BLOB
 
 <dd></dd>
 
-### -field <a id="VT_STREAM"></a><a id="vt_stream"></a><b>VT_STREAM</b>
+### -field VT_STREAM
 
 <dd></dd>
 
-### -field <a id="VT_STORAGE"></a><a id="vt_storage"></a><b>VT_STORAGE</b>
+### -field VT_STORAGE
 
 <dd></dd>
 
-### -field <a id="VT_STREAMED_OBJECT"></a><a id="vt_streamed_object"></a><b>VT_STREAMED_OBJECT</b>
+### -field VT_STREAMED_OBJECT
 
 <dd></dd>
 
-### -field <a id="VT_STORED_OBJECT"></a><a id="vt_stored_object"></a><b>VT_STORED_OBJECT</b>
+### -field VT_STORED_OBJECT
 
 <dd></dd>
 
-### -field <a id="VT_BLOB_OBJECT"></a><a id="vt_blob_object"></a><b>VT_BLOB_OBJECT</b>
+### -field VT_BLOB_OBJECT
 
 <dd></dd>
 
-### -field <a id="VT_CF"></a><a id="vt_cf"></a><b>VT_CF</b>
+### -field VT_CF
 
 <dd></dd>
 
-### -field <a id="VT_CLSID"></a><a id="vt_clsid"></a><b>VT_CLSID</b>
+### -field VT_CLSID
 
 <dd></dd>
 
-### -field <a id="_VT_VECTOR"></a><a id="_vt_vector"></a><b> VT_VECTOR</b>
+### -field  VT_VECTOR
 
 <dd></dd>
 
-### -field <a id="VT_ARRAY"></a><a id="vt_array"></a><b>VT_ARRAY</b>
+### -field VT_ARRAY
 
 <dd></dd>
 
-### -field <a id="VT_BYREF"></a><a id="vt_byref"></a><b>VT_BYREF</b>
+### -field VT_BYREF
 
 <dd></dd>
 
-### -field <a id="_VT_RESERVED"></a><a id="_vt_reserved"></a><b> VT_RESERVED</b>
+### -field  VT_RESERVED
 
 <dd></dd>
 
-### -field <a id="VT_ILLEGAL"></a><a id="vt_illegal"></a><b>VT_ILLEGAL</b>
+### -field VT_ILLEGAL
 
 <dd></dd>
 
-### -field <a id="VT_ILLEGALMASKED"></a><a id="vt_illegalmasked"></a><b>VT_ILLEGALMASKED</b>
+### -field VT_ILLEGALMASKED
 
 <dd></dd>
 
-### -field <a id="VT_TYPEMASK"></a><a id="vt_typemask"></a><b>VT_TYPEMASK</b>
+### -field VT_TYPEMASK
 
 <dd></dd>
 </dl>

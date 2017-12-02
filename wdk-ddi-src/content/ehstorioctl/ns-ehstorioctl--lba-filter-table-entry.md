@@ -57,25 +57,25 @@ typedef struct _LBA_FILTER_TABLE_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>StartLba</b>
+### -field StartLba
 
 <dd>
 <p>The starting LBA of the LBA range for this entry.</p>
 </dd>
 
-### -field <b>LbaCount</b>
+### -field LbaCount
 
 <dd>
 <p>The number of LBAs in the LBA range.</p>
 </dd>
 
-### -field <b>ReadLock</b>
+### -field ReadLock
 
 <dd>
 <p>Set to TRUE if the LBA range in this entry is  not readable. Otherwise, this member is FALSE and the LBA range is readable.</p>
 </dd>
 
-### -field <b>WriteLock</b>
+### -field WriteLock
 
 <dd>
 <p>Set to TRUE if the LBA range in this entry is  not writeable. Otherwise, this member is FALSE and the LBA range is writable</p>

@@ -60,25 +60,25 @@ typedef struct _REGISTER_COMPOSITE_DEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure. <a href="..\usbdlib\nf-usbdlib-usbd-buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure. <a href="..\usbdlib\nf-usbdlib-usbd-buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. <a href="..\usbdlib\nf-usbdlib-usbd-buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.</p>
 </dd>
 
-### -field <b>CapabilityFlags</b>
+### -field CapabilityFlags
 
 <dd>
 <p>The capabilities that are supported by the composite driver.
@@ -86,7 +86,7 @@ To specify that function suspend is supported by the composite driver, first ini
 member of <b>COMPOSITE_DEVICE_CAPABILITIES</b> to 1. Finally, call <a href="..\usbdlib\nf-usbdlib-usbd-buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> and pass the initialized structure in the  <i>CapabilityFlags</i> parameter.</p>
 </dd>
 
-### -field <b>FunctionCount</b>
+### -field FunctionCount
 
 <dd>
 <p>The number of functions supported by the composite device. The <b>FunctionCount</b> value must not exceed 255.</p>

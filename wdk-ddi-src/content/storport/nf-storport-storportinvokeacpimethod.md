@@ -62,49 +62,49 @@ ULONG StorPortInvokeAcpiMethod(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Address</i> [in, optional]
+### -param Address [in, optional]
 
 <dd>
 <p>The address of the target device. This parameter is optional. If <i>Address</i> is set to <b>NULL</b>, the adapter is the target.</p>
 </dd>
 
-### -param <i>MethodName</i> [in]
+### -param MethodName [in]
 
 <dd>
 <p>A four-byte name for the ACPI method. For example, ((ULONG) 'DDS_') would name the _SDD, or 'Set Device Data',  ACPI method for an AHCI controller.</p>
 </dd>
 
-### -param <i>InputBuffer</i> [in, optional]
+### -param InputBuffer [in, optional]
 
 <dd>
 <p>A pointer to the input data to the method.</p>
 </dd>
 
-### -param <i>InputBufferLength</i> [in]
+### -param InputBufferLength [in]
 
 <dd>
 <p>The length, in bytes, of the buffer in <i>InputBuffer</i>.</p>
 </dd>
 
-### -param <i>OutputBuffer</i> [in, optional]
+### -param OutputBuffer [in, optional]
 
 <dd>
 <p>A pointer to the output data from the method.</p>
 </dd>
 
-### -param <i>OutputBufferLength</i> [in]
+### -param OutputBufferLength [in]
 
 <dd>
 <p>The length, in bytes, of the buffer in <i>OutputBuffer</i>.</p>
 </dd>
 
-### -param <i>BytesReturned</i> [out, optional]
+### -param BytesReturned [out, optional]
 
 <dd>
 <p>A pointer to the length, in bytes, of the data returned in <i>OutputBuffer</i>.</p>

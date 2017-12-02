@@ -59,23 +59,23 @@ req.product: Windows 10 or later.
 ## -parameters
 <dl>
 
-### -param <i>hNotify</i> [in]
+### -param hNotify [in]
 
 <dd></dd>
 
-### -param <i>dwColor</i> 
+### -param dwColor 
 
 <dd></dd>
 
-### -param <i>fdwFlags</i> 
+### -param fdwFlags 
 
 <dd></dd>
 
-### -param <i>pdwResult</i> [out]
+### -param pdwResult [out]
 
 <dd></dd>
 
-### -param <i>pPrinterNotifyInfo</i> [in]
+### -param pPrinterNotifyInfo [in]
 
 <dd></dd>
 </dl>

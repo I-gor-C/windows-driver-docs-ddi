@@ -55,13 +55,13 @@ typedef struct _GetPresharedKeyForId_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>On output from <b>GetPresharedKeyForId</b>, the status of the <b>GetPresharedKeyForId</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.  </p>
 </dd>
 
-### -field <b>SecurityFlags</b>
+### -field SecurityFlags
 
 <dd>
 <p>A bitwise OR of flags that indicate the security requirements of a target.  For a list of possible values for this member, see <a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>.</p>

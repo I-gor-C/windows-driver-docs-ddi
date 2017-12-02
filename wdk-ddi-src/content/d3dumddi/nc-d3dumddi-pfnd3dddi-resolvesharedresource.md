@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY ResolveSharedResource(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (that is, the graphics context) that is associated with the shared surface or GDI interoperable surface. </p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-resolvesharedresource.md">D3DDDIARG_RESOLVESHAREDRESOURCE</a> structure that contains a handle to the surface. </p>

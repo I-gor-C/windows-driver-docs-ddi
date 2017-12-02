@@ -56,13 +56,13 @@ HRESULT GetInt32(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd>
 <p>The property to read.</p>
 </dd>
 
-### -param <i>pnValue</i> [out, retval]
+### -param pnValue [out, retval]
 
 <dd>
 <p>The value read.</p>

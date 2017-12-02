@@ -55,13 +55,13 @@ typedef struct _PEP_PPM_QUERY_DISCRETE_PERF_STATES {
 ## -struct-fields
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>On input, the size of the array pointed to by <i>States</i>. </p>
 </dd>
 
-### -field <b>States</b>
+### -field States
 
 <dd>
 <p>On output, an array of <a href="kernel._pep_processor_perf_state">PEP_PROCESSOR_PERF_STATE</a> structures that indicates performance states that is filled by  PEP. </p>

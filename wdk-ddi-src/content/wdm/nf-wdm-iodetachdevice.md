@@ -55,7 +55,7 @@ VOID IoDetachDevice(
 ## -parameters
 <dl>
 
-### -param <i>TargetDevice</i> [in, out]
+### -param TargetDevice [in, out]
 
 <dd>
 <p>Pointer to the lower driver's device object. The caller previously called <a href="..\wdm\nf-wdm-ioattachdevice.md">IoAttachDevice</a> or <a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a> successfully to get this pointer. </p>

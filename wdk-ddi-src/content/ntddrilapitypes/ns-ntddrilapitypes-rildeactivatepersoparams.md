@@ -7,7 +7,7 @@ old-location: netvista\rildeactivatepersoparams.htm
 old-project: netvista
 ms.assetid: 408ae5d4-f83f-4e4a-9850-a7bae70a2da2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILDEACTIVATEPERSOPARAMS, RILDEACTIVATEPERSOPARAMS, *LPRILDEACTIVATEPERSOPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILDEACTIVATEPERSOPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwPersoFeature</b>
+### -field dwPersoFeature
 
 <dd></dd>
 
-### -field <b>szPassword</b>
+### -field szPassword
 
 <dd></dd>
 </dl>

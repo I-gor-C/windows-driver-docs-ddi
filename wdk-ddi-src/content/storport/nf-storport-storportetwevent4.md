@@ -70,31 +70,31 @@ ULONG StorPortEtwEvent4(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Address</i> [in, optional]
+### -param Address [in, optional]
 
 <dd>
 <p>The storage unit device address. This parameter is NULL for adapter devices.</p>
 </dd>
 
-### -param <i>EventId</i> [in]
+### -param EventId [in]
 
 <dd>
 <p>A miniport defined identifier for the ETW event.</p>
 </dd>
 
-### -param <i>EventDescription</i> [in]
+### -param EventDescription [in]
 
 <dd>
 <p>The description text for the event. This text string must be &lt;= STORPORT_ETW_MAX_DESCRIPTION_LENGTH.</p>
 </dd>
 
-### -param <i>EventKeywords</i> [in]
+### -param EventKeywords [in]
 
 <dd>
 <p>Keyword flags for event categorization. Set to 0 if no keyword is desired. The keywords are a bitwise OR combination of the following.</p>
@@ -106,7 +106,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="STORPORT_ETW_EVENT_KEYWORD_IO"></a><a id="storport_etw_event_keyword_io"></a><dl>
 
-### -param <b>STORPORT_ETW_EVENT_KEYWORD_IO</b>
+### -param STORPORT_ETW_EVENT_KEYWORD_IO
 
 </dl>
 </td>
@@ -117,7 +117,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="STORPORT_ETW_EVENT_KEYWORD_PERFORMANCE"></a><a id="storport_etw_event_keyword_performance"></a><dl>
 
-### -param <b>STORPORT_ETW_EVENT_KEYWORD_PERFORMANCE</b>
+### -param STORPORT_ETW_EVENT_KEYWORD_PERFORMANCE
 
 </dl>
 </td>
@@ -128,7 +128,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="STORPORT_ETW_EVENT_KEYWORD_POWER"></a><a id="storport_etw_event_keyword_power"></a><dl>
 
-### -param <b>STORPORT_ETW_EVENT_KEYWORD_POWER</b>
+### -param STORPORT_ETW_EVENT_KEYWORD_POWER
 
 </dl>
 </td>
@@ -139,7 +139,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="STORPORT_ETW_EVENT_KEYWORD_ENUMERATION"></a><a id="storport_etw_event_keyword_enumeration"></a><dl>
 
-### -param <b>STORPORT_ETW_EVENT_KEYWORD_ENUMERATION</b>
+### -param STORPORT_ETW_EVENT_KEYWORD_ENUMERATION
 
 </dl>
 </td>
@@ -151,7 +151,7 @@ ULONG StorPortEtwEvent4(
 <p> </p>
 </dd>
 
-### -param <i>EventLevel</i> [in]
+### -param EventLevel [in]
 
 <dd>
 <p>The event level. This value can indicate the importance or severity of the event. This is one of the following values.</p>
@@ -163,7 +163,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwLevelLogAlways"></a><a id="storportetwlevellogalways"></a><a id="STORPORTETWLEVELLOGALWAYS"></a><dl>
 
-### -param <b>StorportEtwLevelLogAlways</b>
+### -param StorportEtwLevelLogAlways
 
 </dl>
 </td>
@@ -174,7 +174,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwLevelCritical"></a><a id="storportetwlevelcritical"></a><a id="STORPORTETWLEVELCRITICAL"></a><dl>
 
-### -param <b>StorportEtwLevelCritical</b>
+### -param StorportEtwLevelCritical
 
 </dl>
 </td>
@@ -185,7 +185,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwLevelError"></a><a id="storportetwlevelerror"></a><a id="STORPORTETWLEVELERROR"></a><dl>
 
-### -param <b>StorportEtwLevelError</b>
+### -param StorportEtwLevelError
 
 </dl>
 </td>
@@ -196,7 +196,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwLevelWarning"></a><a id="storportetwlevelwarning"></a><a id="STORPORTETWLEVELWARNING"></a><dl>
 
-### -param <b>StorportEtwLevelWarning</b>
+### -param StorportEtwLevelWarning
 
 </dl>
 </td>
@@ -207,7 +207,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwLevelInformational"></a><a id="storportetwlevelinformational"></a><a id="STORPORTETWLEVELINFORMATIONAL"></a><dl>
 
-### -param <b>StorportEtwLevelInformational</b>
+### -param StorportEtwLevelInformational
 
 </dl>
 </td>
@@ -218,7 +218,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwLevelVerbose"></a><a id="storportetwlevelverbose"></a><a id="STORPORTETWLEVELVERBOSE"></a><dl>
 
-### -param <b>StorportEtwLevelVerbose</b>
+### -param StorportEtwLevelVerbose
 
 </dl>
 </td>
@@ -230,7 +230,7 @@ ULONG StorPortEtwEvent4(
 <p> </p>
 </dd>
 
-### -param <i>EventOpcode</i> [in]
+### -param EventOpcode [in]
 
 <dd>
 <p>The operational nature of the event. This is one of the following values.</p>
@@ -242,7 +242,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwEventOpcodeInfo"></a><a id="storportetweventopcodeinfo"></a><a id="STORPORTETWEVENTOPCODEINFO"></a><dl>
 
-### -param <b>StorportEtwEventOpcodeInfo</b>
+### -param StorportEtwEventOpcodeInfo
 
 </dl>
 </td>
@@ -253,7 +253,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwEventOpcodeStart"></a><a id="storportetweventopcodestart"></a><a id="STORPORTETWEVENTOPCODESTART"></a><dl>
 
-### -param <b>StorportEtwEventOpcodeStart</b>
+### -param StorportEtwEventOpcodeStart
 
 </dl>
 </td>
@@ -264,7 +264,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwEventOpcodeStop"></a><a id="storportetweventopcodestop"></a><a id="STORPORTETWEVENTOPCODESTOP"></a><dl>
 
-### -param <b>StorportEtwEventOpcodeStop</b>
+### -param StorportEtwEventOpcodeStop
 
 </dl>
 </td>
@@ -275,7 +275,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwEventOpcodeDC_Start"></a><a id="storportetweventopcodedc_start"></a><a id="STORPORTETWEVENTOPCODEDC_START"></a><dl>
 
-### -param <b>StorportEtwEventOpcodeDC_Start</b>
+### -param StorportEtwEventOpcodeDC_Start
 
 </dl>
 </td>
@@ -286,7 +286,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwEventOpcodeDC_Stop"></a><a id="storportetweventopcodedc_stop"></a><a id="STORPORTETWEVENTOPCODEDC_STOP"></a><dl>
 
-### -param <b>StorportEtwEventOpcodeDC_Stop</b>
+### -param StorportEtwEventOpcodeDC_Stop
 
 </dl>
 </td>
@@ -297,7 +297,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwEventOpcodeExtension"></a><a id="storportetweventopcodeextension"></a><a id="STORPORTETWEVENTOPCODEEXTENSION"></a><dl>
 
-### -param <b>StorportEtwEventOpcodeExtension</b>
+### -param StorportEtwEventOpcodeExtension
 
 </dl>
 </td>
@@ -308,7 +308,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwEventOpcodeReply"></a><a id="storportetweventopcodereply"></a><a id="STORPORTETWEVENTOPCODEREPLY"></a><dl>
 
-### -param <b>StorportEtwEventOpcodeReply</b>
+### -param StorportEtwEventOpcodeReply
 
 </dl>
 </td>
@@ -319,7 +319,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwEventOpcodeResume"></a><a id="storportetweventopcoderesume"></a><a id="STORPORTETWEVENTOPCODERESUME"></a><dl>
 
-### -param <b>StorportEtwEventOpcodeResume</b>
+### -param StorportEtwEventOpcodeResume
 
 </dl>
 </td>
@@ -330,7 +330,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwEventOpcodeSuspend"></a><a id="storportetweventopcodesuspend"></a><a id="STORPORTETWEVENTOPCODESUSPEND"></a><dl>
 
-### -param <b>StorportEtwEventOpcodeSuspend</b>
+### -param StorportEtwEventOpcodeSuspend
 
 </dl>
 </td>
@@ -341,7 +341,7 @@ ULONG StorPortEtwEvent4(
 <tr>
 <td width="40%"><a id="StorportEtwEventOpcodeReceive"></a><a id="storportetweventopcodereceive"></a><a id="STORPORTETWEVENTOPCODERECEIVE"></a><dl>
 
-### -param <b>StorportEtwEventOpcodeReceive</b>
+### -param StorportEtwEventOpcodeReceive
 
 </dl>
 </td>
@@ -353,55 +353,55 @@ ULONG StorPortEtwEvent4(
 <p> </p>
 </dd>
 
-### -param <i>Srb</i> [in, optional]
+### -param Srb [in, optional]
 
 <dd>
 <p>A pointer to the SRB associated with the logged event. If this parameter contains a valid SRB, this SRB pointer and the associated SRB pointer are logged.</p>
 </dd>
 
-### -param <i>Parameter1Name</i> [in, optional]
+### -param Parameter1Name [in, optional]
 
 <dd>
 <p>A description of the of the meaning of <i>Parameter1Value</i>. This parameter name string must be &lt;= STORPORT_ETW_MAX_PARAM_NAME_LENGTH.</p>
 </dd>
 
-### -param <i>Parameter1Value</i> [in]
+### -param Parameter1Value [in]
 
 <dd>
 <p>The value for parameter 1.</p>
 </dd>
 
-### -param <i>Parameter2Name</i> [in, optional]
+### -param Parameter2Name [in, optional]
 
 <dd>
 <p>A description of the of the meaning of <i>Parameter2Value</i>. This parameter name string must be &lt;= STORPORT_ETW_MAX_PARAM_NAME_LENGTH.</p>
 </dd>
 
-### -param <i>Parameter2Value</i> [in]
+### -param Parameter2Value [in]
 
 <dd>
 <p>The value for parameter 2.</p>
 </dd>
 
-### -param <i>Parameter3Name</i> [in, optional]
+### -param Parameter3Name [in, optional]
 
 <dd>
 <p>A description of the of the meaning of <i>Parameter3Value</i>. This parameter name string must be &lt;= STORPORT_ETW_MAX_PARAM_NAME_LENGTH.</p>
 </dd>
 
-### -param <i>Parameter3Value</i> [in]
+### -param Parameter3Value [in]
 
 <dd>
 <p>The value for parameter 3.</p>
 </dd>
 
-### -param <i>Parameter4Name</i> [in, optional]
+### -param Parameter4Name [in, optional]
 
 <dd>
 <p>A description of the of the meaning of <i>Parameter4Value</i>. This parameter name string must be &lt;= STORPORT_ETW_MAX_PARAM_NAME_LENGTH.</p>
 </dd>
 
-### -param <i>Parameter4Value</i> [in]
+### -param Parameter4Value [in]
 
 <dd>
 <p>The value for parameter 4.</p>

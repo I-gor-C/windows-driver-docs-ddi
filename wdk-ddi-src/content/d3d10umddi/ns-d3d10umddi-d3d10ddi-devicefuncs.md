@@ -154,607 +154,607 @@ typedef struct D3D10DDI_DEVICEFUNCS {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnDefaultConstantBufferUpdateSubresourceUP</b>
+### -field pfnDefaultConstantBufferUpdateSubresourceUP
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourceupdatesubresourceup.md">DefaultConstantBufferUpdateSubresourceUP</a> function.</p>
 </dd>
 
-### -field <b>pfnVsSetConstantBuffers</b>
+### -field pfnVsSetConstantBuffers
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setconstantbuffers.md">VsSetConstantBuffers</a> function.</p>
 </dd>
 
-### -field <b>pfnPsSetShaderResources</b>
+### -field pfnPsSetShaderResources
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setshaderresources.md">PsSetShaderResources</a> function.</p>
 </dd>
 
-### -field <b>pfnPsSetShader</b>
+### -field pfnPsSetShader
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setshader.md">PsSetShader</a> function. </p>
 </dd>
 
-### -field <b>pfnPsSetSamplers</b>
+### -field pfnPsSetSamplers
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setsamplers.md">PsSetSamplers</a> function.</p>
 </dd>
 
-### -field <b>pfnVsSetShader</b>
+### -field pfnVsSetShader
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setshader.md">VsSetShader</a> function.</p>
 </dd>
 
-### -field <b>pfnDrawIndexed</b>
+### -field pfnDrawIndexed
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-drawindexed.md">DrawIndexed</a> function.</p>
 </dd>
 
-### -field <b>pfnDraw</b>
+### -field pfnDraw
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-draw.md">Draw</a> function.</p>
 </dd>
 
-### -field <b>pfnDynamicIABufferMapNoOverwrite</b>
+### -field pfnDynamicIABufferMapNoOverwrite
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourcemap.md">ResourceMap</a> function. For more information about whether to implement a separate <b>DynamicIABufferMapNoOverwrite</b> function or to point to the multipurpose <b>ResourceMap</b>, see the Remarks section of <b>ResourceMap</b>. </p>
 </dd>
 
-### -field <b>pfnDynamicIABufferUnmap</b>
+### -field pfnDynamicIABufferUnmap
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourceunmap.md">ResourceUnmap</a> function. For more information about whether to implement a separate <b>DynamicIABufferUnmap</b> function or to point to the multipurpose <b>ResourceUnmap</b>, see the Remarks section of <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourcemap.md">ResourceMap</a>. </p>
 </dd>
 
-### -field <b>pfnDynamicConstantBufferMapDiscard</b>
+### -field pfnDynamicConstantBufferMapDiscard
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourcemap.md">ResourceMap</a> function. For more information about whether to implement a separate <b>DynamicConstantBufferMapDiscard</b> function or to point to the multipurpose <b>ResourceMap</b>, see the Remarks section of <b>ResourceMap</b>. </p>
 </dd>
 
-### -field <b>pfnDynamicIABufferMapDiscard</b>
+### -field pfnDynamicIABufferMapDiscard
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourcemap.md">ResourceMap</a> function. For more information about whether to implement a separate <b>DynamicIABufferMapDiscard</b> function or to point to the multipurpose <b>ResourceMap</b>, see the Remarks section of <b>ResourceMap</b>. </p>
 </dd>
 
-### -field <b>pfnDynamicConstantBufferUnmap</b>
+### -field pfnDynamicConstantBufferUnmap
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourceunmap.md">ResourceUnmap</a> function. For more information about whether to implement a separate <b>DynamicConstantBufferUnmap</b> function or to point to the multipurpose <b>ResourceUnmap</b>, see the Remarks section of <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourcemap.md">ResourceMap</a>. </p>
 </dd>
 
-### -field <b>pfnPsSetConstantBuffers</b>
+### -field pfnPsSetConstantBuffers
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setconstantbuffers.md">PsSetConstantBuffers</a> function.</p>
 </dd>
 
-### -field <b>pfnIaSetInputLayout</b>
+### -field pfnIaSetInputLayout
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setinputlayout.md">IaSetInputLayout</a> function.</p>
 </dd>
 
-### -field <b>pfnIaSetVertexBuffers</b>
+### -field pfnIaSetVertexBuffers
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-ia-setvertexbuffers.md">IaSetVertexBuffers</a> function.</p>
 </dd>
 
-### -field <b>pfnIaSetIndexBuffer</b>
+### -field pfnIaSetIndexBuffer
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-ia-setindexbuffer.md">IaSetIndexBuffer</a> function.</p>
 </dd>
 
-### -field <b>pfnDrawIndexedInstanced</b>
+### -field pfnDrawIndexedInstanced
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-drawindexedinstanced.md">DrawIndexedInstanced</a> function.</p>
 </dd>
 
-### -field <b>pfnDrawInstanced</b>
+### -field pfnDrawInstanced
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-drawinstanced.md">DrawInstanced</a> function.</p>
 </dd>
 
-### -field <b>pfnDynamicResourceMapDiscard</b>
+### -field pfnDynamicResourceMapDiscard
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourcemap.md">ResourceMap</a> function. For more information about whether to implement a separate <b>DynamicResourceMapDiscard</b> function or to point to the multipurpose <b>ResourceMap</b>, see the Remarks section of <b>ResourceMap</b>. </p>
 </dd>
 
-### -field <b>pfnDynamicResourceUnmap</b>
+### -field pfnDynamicResourceUnmap
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourceunmap.md">ResourceUnmap</a> function. For more information about whether to implement a separate <b>DynamicResourceUnmap</b> function or to point to the multipurpose <b>ResourceUnmap</b>, see the Remarks section of <b>ResourceUnmap</b>. </p>
 </dd>
 
-### -field <b>pfnGsSetConstantBuffers</b>
+### -field pfnGsSetConstantBuffers
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setconstantbuffers.md">GsSetConstantBuffers</a> function.</p>
 </dd>
 
-### -field <b>pfnGsSetShader</b>
+### -field pfnGsSetShader
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setshader.md">GsSetShader</a> function.</p>
 </dd>
 
-### -field <b>pfnIaSetTopology</b>
+### -field pfnIaSetTopology
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-ia-settopology.md">IaSetTopology</a> function.</p>
 </dd>
 
-### -field <b>pfnStagingResourceMap</b>
+### -field pfnStagingResourceMap
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourcemap.md">ResourceMap</a> function. For more information about whether to implement a separate <b>StagingResourceMap</b> function or to point to the multipurpose <b>ResourceMap</b>, see the Remarks section of <b>ResourceMap</b>. </p>
 </dd>
 
-### -field <b>pfnStagingResourceUnmap</b>
+### -field pfnStagingResourceUnmap
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourceunmap.md">ResourceUnmap</a> function. For more information about whether to implement a separate <b>StagingResourceUnmap</b> function or to point to the multipurpose <b>ResourceUnmap</b>, see the Remarks section of <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourcemap.md">ResourceMap</a>. </p>
 </dd>
 
-### -field <b>pfnVsSetShaderResources</b>
+### -field pfnVsSetShaderResources
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setshaderresources.md">VsSetShaderResources</a> function.</p>
 </dd>
 
-### -field <b>pfnVsSetSamplers</b>
+### -field pfnVsSetSamplers
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setsamplers.md">VsSetSamplers</a> function.</p>
 </dd>
 
-### -field <b>pfnGsSetShaderResources</b>
+### -field pfnGsSetShaderResources
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setshaderresources.md">GsSetShaderResources</a> function.</p>
 </dd>
 
-### -field <b>pfnGsSetSamplers</b>
+### -field pfnGsSetSamplers
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setsamplers.md">GsSetSamplers</a> function.</p>
 </dd>
 
-### -field <b>pfnSetRenderTargets</b>
+### -field pfnSetRenderTargets
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setrendertargets.md">SetRenderTargets</a> function.</p>
 </dd>
 
-### -field <b>pfnShaderResourceViewReadAfterWriteHazard</b>
+### -field pfnShaderResourceViewReadAfterWriteHazard
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-shaderresourceviewreadafterwritehazard.md">ShaderResourceViewReadAfterWriteHazard</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceReadAfterWriteHazard</b>
+### -field pfnResourceReadAfterWriteHazard
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourcereadafterwritehazard.md">ResourceReadAfterWriteHazard</a> function.</p>
 </dd>
 
-### -field <b>pfnSetBlendState</b>
+### -field pfnSetBlendState
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setblendstate.md">SetBlendState</a> function.</p>
 </dd>
 
-### -field <b>pfnSetDepthStencilState</b>
+### -field pfnSetDepthStencilState
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setdepthstencilstate.md">SetDepthStencilState</a> function.</p>
 </dd>
 
-### -field <b>pfnSetRasterizerState</b>
+### -field pfnSetRasterizerState
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setrasterizerstate.md">SetRasterizerState</a> function.</p>
 </dd>
 
-### -field <b>pfnQueryEnd</b>
+### -field pfnQueryEnd
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-queryend.md">QueryEnd</a> function.</p>
 </dd>
 
-### -field <b>pfnQueryBegin</b>
+### -field pfnQueryBegin
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-querybegin.md">QueryBegin</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceCopyRegion</b>
+### -field pfnResourceCopyRegion
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourcecopyregion.md">ResourceCopyRegion</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceUpdateSubresourceUP</b>
+### -field pfnResourceUpdateSubresourceUP
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourceupdatesubresourceup.md">ResourceUpdateSubresourceUP</a> function.</p>
 </dd>
 
-### -field <b>pfnSoSetTargets</b>
+### -field pfnSoSetTargets
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-so-settargets.md">SoSetTargets</a> function.</p>
 </dd>
 
-### -field <b>pfnDrawAuto</b>
+### -field pfnDrawAuto
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-drawauto.md">DrawAuto</a> function.</p>
 </dd>
 
-### -field <b>pfnSetViewports</b>
+### -field pfnSetViewports
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setviewports.md">SetViewports</a> function.</p>
 </dd>
 
-### -field <b>pfnSetScissorRects</b>
+### -field pfnSetScissorRects
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setscissorrects.md">SetScissorRects</a> function.</p>
 </dd>
 
-### -field <b>pfnClearRenderTargetView</b>
+### -field pfnClearRenderTargetView
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-clearrendertargetview.md">ClearRenderTargetView</a> function.</p>
 </dd>
 
-### -field <b>pfnClearDepthStencilView</b>
+### -field pfnClearDepthStencilView
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-cleardepthstencilview.md">ClearDepthStencilView</a> function.</p>
 </dd>
 
-### -field <b>pfnSetPredication</b>
+### -field pfnSetPredication
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setpredication.md">SetPredication</a> function.</p>
 </dd>
 
-### -field <b>pfnQueryGetData</b>
+### -field pfnQueryGetData
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-querygetdata.md">QueryGetData</a> function.</p>
 </dd>
 
-### -field <b>pfnFlush</b>
+### -field pfnFlush
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-flush.md">Flush(D3D10)</a> function.</p>
 </dd>
 
-### -field <b>pfnGenMips</b>
+### -field pfnGenMips
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-genmips.md">GenMips</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceCopy</b>
+### -field pfnResourceCopy
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourcecopy.md">ResourceCopy</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceResolveSubresource</b>
+### -field pfnResourceResolveSubresource
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourceresolvesubresource.md">ResourceResolveSubresource</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceMap</b>
+### -field pfnResourceMap
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourcemap.md">ResourceMap</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceUnmap</b>
+### -field pfnResourceUnmap
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourceunmap.md">ResourceUnmap</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceIsStagingBusy</b>
+### -field pfnResourceIsStagingBusy
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourceisstagingbusy.md">ResourceIsStagingBusy</a> function.</p>
 </dd>
 
-### -field <b>pfnRelocateDeviceFuncs</b>
+### -field pfnRelocateDeviceFuncs
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-relocatedevicefuncs.md">RelocateDeviceFuncs</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateResourceSize</b>
+### -field pfnCalcPrivateResourceSize
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivateresourcesize.md">CalcPrivateResourceSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateOpenedResourceSize</b>
+### -field pfnCalcPrivateOpenedResourceSize
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivateopenedresourcesize.md">CalcPrivateOpenedResourceSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateResource</b>
+### -field pfnCreateResource
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createresource.md">CreateResource(D3D10)</a> function.</p>
 </dd>
 
-### -field <b>pfnOpenResource</b>
+### -field pfnOpenResource
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-openresource.md">OpenResource(D3D10)</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyResource</b>
+### -field pfnDestroyResource
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroyresource.md">DestroyResource(D3D10)</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateShaderResourceViewSize</b>
+### -field pfnCalcPrivateShaderResourceViewSize
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivateshaderresourceviewsize.md">CalcPrivateShaderResourceViewSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateShaderResourceView</b>
+### -field pfnCreateShaderResourceView
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createshaderresourceview.md">CreateShaderResourceView</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyShaderResourceView</b>
+### -field pfnDestroyShaderResourceView
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroyshaderresourceview.md">DestroyShaderResourceView</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateRenderTargetViewSize</b>
+### -field pfnCalcPrivateRenderTargetViewSize
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivaterendertargetviewsize.md">CalcPrivateRenderTargetViewSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateRenderTargetView</b>
+### -field pfnCreateRenderTargetView
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createrendertargetview.md">CreateRenderTargetView</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyRenderTargetView</b>
+### -field pfnDestroyRenderTargetView
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroyrendertargetview.md">DestroyRenderTargetView</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateDepthStencilViewSize</b>
+### -field pfnCalcPrivateDepthStencilViewSize
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivatedepthstencilviewsize.md">CalcPrivateDepthStencilViewSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateDepthStencilView</b>
+### -field pfnCreateDepthStencilView
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdepthstencilview.md">CreateDepthStencilView</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyDepthStencilView</b>
+### -field pfnDestroyDepthStencilView
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroydepthstencilview.md">DestroyDepthStencilView</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateElementLayoutSize</b>
+### -field pfnCalcPrivateElementLayoutSize
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivateelementlayoutsize.md">CalcPrivateElementLayoutSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateElementLayout</b>
+### -field pfnCreateElementLayout
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createelementlayout.md">CreateElementLayout</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyElementLayout</b>
+### -field pfnDestroyElementLayout
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroyelementlayout.md">DestroyElementLayout</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateBlendStateSize</b>
+### -field pfnCalcPrivateBlendStateSize
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivateblendstatesize.md">CalcPrivateBlendStateSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateBlendState</b>
+### -field pfnCreateBlendState
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createblendstate.md">CreateBlendState</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyBlendState</b>
+### -field pfnDestroyBlendState
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroyblendstate.md">DestroyBlendState</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateDepthStencilStateSize</b>
+### -field pfnCalcPrivateDepthStencilStateSize
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivatedepthstencilstatesize.md">CalcPrivateDepthStencilStateSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateDepthStencilState</b>
+### -field pfnCreateDepthStencilState
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdepthstencilstate.md">CreateDepthStencilState</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyDepthStencilState</b>
+### -field pfnDestroyDepthStencilState
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroydepthstencilstate.md">DestroyDepthStencilState</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateRasterizerStateSize</b>
+### -field pfnCalcPrivateRasterizerStateSize
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivaterasterizerstatesize.md">CalcPrivateRasterizerStateSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateRasterizerState</b>
+### -field pfnCreateRasterizerState
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createrasterizerstate.md">CreateRasterizerState</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyRasterizerState</b>
+### -field pfnDestroyRasterizerState
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroyrasterizerstate.md">DestroyRasterizerState</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateShaderSize</b>
+### -field pfnCalcPrivateShaderSize
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivateshadersize.md">CalcPrivateShaderSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateVertexShader</b>
+### -field pfnCreateVertexShader
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createvertexshader.md">CreateVertexShader(D3D10)</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateGeometryShader</b>
+### -field pfnCreateGeometryShader
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-creategeometryshader.md">CreateGeometryShader</a> function.</p>
 </dd>
 
-### -field <b>pfnCreatePixelShader</b>
+### -field pfnCreatePixelShader
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createpixelshader.md">CreatePixelShader(D3D10)</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateGeometryShaderWithStreamOutput</b>
+### -field pfnCalcPrivateGeometryShaderWithStreamOutput
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivategeometryshaderwithstreamoutput.md">CalcPrivateGeometryShaderWithStreamOutput</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateGeometryShaderWithStreamOutput</b>
+### -field pfnCreateGeometryShaderWithStreamOutput
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-creategeometryshaderwithstreamoutput.md">CreateGeometryShaderWithStreamOutput</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyShader</b>
+### -field pfnDestroyShader
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroyshader.md">DestroyShader</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateSamplerSize</b>
+### -field pfnCalcPrivateSamplerSize
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivatesamplersize.md">CalcPrivateSamplerSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateSampler</b>
+### -field pfnCreateSampler
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createsampler.md">CreateSampler</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroySampler</b>
+### -field pfnDestroySampler
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroysampler.md">DestroySampler</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateQuerySize</b>
+### -field pfnCalcPrivateQuerySize
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivatequerysize.md">CalcPrivateQuerySize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateQuery</b>
+### -field pfnCreateQuery
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createquery.md">CreateQuery(D3D10)</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyQuery</b>
+### -field pfnDestroyQuery
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroyquery.md">DestroyQuery(D3D10)</a> function.</p>
 </dd>
 
-### -field <b>pfnCheckFormatSupport</b>
+### -field pfnCheckFormatSupport
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-checkformatsupport.md">CheckFormatSupport</a> function.</p>
 </dd>
 
-### -field <b>pfnCheckMultisampleQualityLevels</b>
+### -field pfnCheckMultisampleQualityLevels
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-checkmultisamplequalitylevels.md">CheckMultisampleQualityLevels</a> function.</p>
 </dd>
 
-### -field <b>pfnCheckCounterInfo</b>
+### -field pfnCheckCounterInfo
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-checkcounterinfo.md">CheckCounterInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnCheckCounter</b>
+### -field pfnCheckCounter
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-checkcounter.md">CheckCounter</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyDevice</b>
+### -field pfnDestroyDevice
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroydevice.md">DestroyDevice(D3D10)</a> function.</p>
 </dd>
 
-### -field <b>pfnSetTextFilterSize</b>
+### -field pfnSetTextFilterSize
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-settextfiltersize.md">SetTextFilterSize</a> function.</p>

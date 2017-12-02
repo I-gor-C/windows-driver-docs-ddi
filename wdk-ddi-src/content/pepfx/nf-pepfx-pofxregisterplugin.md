@@ -55,13 +55,13 @@ NTSTATUS PoFxRegisterPlugin(
 ## -parameters
 <dl>
 
-### -param <i>PepInformation</i> [in]
+### -param PepInformation [in]
 
 <dd>
 <p>A pointer to a <a href="..\pepfx\ns-pepfx--pep-information.md">PEP_INFORMATION</a> structure.</p>
 </dd>
 
-### -param <i>KernelInformation</i> [in, out]
+### -param KernelInformation [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\pepfx\ns-pepfx--pep-kernel-information-struct-v3.md">PEP_KERNEL_INFORMATION_STRUCT_V3</a> structure.</p>

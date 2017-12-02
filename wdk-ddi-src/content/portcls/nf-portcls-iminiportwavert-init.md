@@ -39,7 +39,7 @@ req.iface: IMiniportWaveRT
 
 
 ## -description
-<p>The <code>Init</code> method initializes the <a href="NULL">WaveRT miniport driver</a> object.</p>
+<p>The <code>Init</code> method initializes the <a href="https://msdn.microsoft.com/154dc921-424f-4021-8f17-5482ceef99a8">WaveRT miniport driver</a> object.</p>
 
 
 ## -syntax
@@ -56,19 +56,19 @@ NTSTATUS Init(
 ## -parameters
 <dl>
 
-### -param <i>UnknownAdapter</i> [in]
+### -param UnknownAdapter [in]
 
 <dd>
 <p>Pointer to the <b>IUnknown</b> interface of the adapter driver object whose miniport driver object is being initialized.</p>
 </dd>
 
-### -param <i>ResourceList</i> [in]
+### -param ResourceList [in]
 
 <dd>
 <p>Pointer to the <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a> interface of a resource-list object. This object specifies the list of hardware resources that the adapter driver has allocated to the miniport driver. The WaveRT port driver can examine the contents of the resource list, but it does not modify the list.</p>
 </dd>
 
-### -param <i>Port</i> [in]
+### -param Port [in]
 
 <dd>
 <p>Pointer to the <a href="..\portcls\nn-portcls-iportwavert.md">IPortWaveRT</a> interface of the WaveRT port driver. The caller specifies a valid, non-NULL pointer value for this parameter.</p>

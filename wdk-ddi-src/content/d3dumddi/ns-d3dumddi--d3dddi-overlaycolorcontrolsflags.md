@@ -66,62 +66,62 @@ typedef struct _D3DDDI_OVERLAYCOLORCONTROLSFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Brightness</b>
+### -field Brightness
 
 <dd>
 <p>A UINT value that specifies whether brightness adjustments to the overlay are enabled. </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Contrast</b>
+### -field Contrast
 
 <dd>
 <p>A UINT value that specifies whether contrast adjustments to the overlay are enabled. </p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>Hue</b>
+### -field Hue
 
 <dd>
 <p>A UINT value that specifies whether hue adjustments to the overlay are enabled. </p>
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>Saturation</b>
+### -field Saturation
 
 <dd>
 <p>A UINT value that specifies whether saturation adjustments to the overlay are enabled.</p>
 <p>Setting this member is equivalent to setting the fourth bit of the 32-bit <b>Value</b> member (0x00000008).</p>
 </dd>
 
-### -field <b>Sharpness</b>
+### -field Sharpness
 
 <dd>
 <p>A UINT value that specifies whether sharpness adjustments to the overlay are enabled.</p>
 <p>Setting this member is equivalent to setting the fifth bit of the 32-bit <b>Value</b> member (0x00000010).</p>
 </dd>
 
-### -field <b>Gamma</b>
+### -field Gamma
 
 <dd>
 <p>A UINT value that specifies whether gamma adjustments to the overlay are enabled.</p>
 <p>Setting this member is equivalent to setting the sixth bit of the 32-bit <b>Value</b> member (0x00000020).</p>
 </dd>
 
-### -field <b>ColorEnable</b>
+### -field ColorEnable
 
 <dd>
 <p>A UINT value that specifies whether color-enable adjustments to the overlay are enabled.</p>
 <p>Setting this member is equivalent to setting the seventh bit of the 32-bit <b>Value</b> member (0x00000040).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 25 bits (0xFFFFFF80) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that is contained in D3DDDI_OVERLAYCOLORCONTROLSFLAGS that can hold one 32-bit value that identifies color-control settings that the overlay hardware supports.</p>

@@ -7,7 +7,7 @@ old-location: netvista\notifyfn1.htm
 old-project: netvista
 ms.assetid: 3f377049-cc5f-427d-9b09-5e49e4b305c5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NTSTATUS NTAPI notifyFn1(
 ## -parameters
 <dl>
 
-### -param <i>notifyType</i> [in]
+### -param notifyType [in]
 
 <dd>
 <p>A value that indicates the type of notification that the filter engine is sending to the callout.
@@ -70,21 +70,21 @@ NTSTATUS NTAPI notifyFn1(
 <p></p>
 <dl>
 
-### -param <a id="FWPS_CALLOUT_NOTIFY_ADD_FILTER"></a><a id="fwps_callout_notify_add_filter"></a>FWPS_CALLOUT_NOTIFY_ADD_FILTER
+### -param FWPS_CALLOUT_NOTIFY_ADD_FILTER
 
 <dd>
 <p>A filter is being added to the filter engine that specifies the callout for the filter's
        action.</p>
 </dd>
 
-### -param <a id="FWPS_CALLOUT_NOTIFY_DELETE_FILTER"></a><a id="fwps_callout_notify_delete_filter"></a>FWPS_CALLOUT_NOTIFY_DELETE_FILTER
+### -param FWPS_CALLOUT_NOTIFY_DELETE_FILTER
 
 <dd>
 <p>A filter is being deleted from the filter engine that specifies the callout for the filter's
        action.</p>
 </dd>
 
-### -param <a id="FWPS_CALLOUT_NOTIFY_TYPE_MAX"></a><a id="fwps_callout_notify_type_max"></a>FWPS_CALLOUT_NOTIFY_TYPE_MAX
+### -param FWPS_CALLOUT_NOTIFY_TYPE_MAX
 
 <dd>
 <p>A maximum value for testing purposes.</p>
@@ -92,7 +92,7 @@ NTSTATUS NTAPI notifyFn1(
 </dl>
 </dd>
 
-### -param <i>filterKey</i> [in]
+### -param filterKey [in]
 
 <dd>
 <p>A pointer to the management identifier for the filter, as specified by the application or driver
@@ -100,7 +100,7 @@ NTSTATUS NTAPI notifyFn1(
      <i>notifyType</i> parameter is set to FWPS_CALLOUT_NOTIFY_DELETE_FILTER. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>filter</i> [in]
+### -param filter [in]
 
 <dd>
 <p>A pointer to an 
@@ -167,7 +167,7 @@ NTSTATUS NTAPI notifyFn1(
     <i>notifyFn1</i> function and passes FWP_CALLOUT_NOTIFY_DELETE_FILTER in the 
     <i>notifyType</i> parameter and <b>NULL</b> in the 
     <i>filterKey</i> parameter. For more information, see 
-    <a href="NULL">Processing Notify Callouts</a>.</p>
+    <a href="netvista.processing_notify_callouts">Processing Notify Callouts</a>.</p>
 
 ## -requirements
 <table>
@@ -225,4 +225,4 @@ NTSTATUS NTAPI notifyFn1(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_NOTIFY_FN1 callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_NOTIFY_FN1 callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

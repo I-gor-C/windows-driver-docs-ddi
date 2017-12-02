@@ -60,43 +60,43 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>MaximumChannelsPerConnection</b>
+### -field MaximumChannelsPerConnection
 
 <dd>
 <p>Specifies the maximum channels per connection.</p>
 </dd>
 
-### -field <b>MinimumBitsPerSample</b>
+### -field MinimumBitsPerSample
 
 <dd>
 <p>Specifies the minimum bits per sample.</p>
 </dd>
 
-### -field <b>MaximumBitsPerSample</b>
+### -field MaximumBitsPerSample
 
 <dd>
 <p>Specifies the maximum bits per sample.</p>
 </dd>
 
-### -field <b>MinimumSampleFrequency</b>
+### -field MinimumSampleFrequency
 
 <dd>
 <p>Specifies the minimum sampling frequency.</p>
 </dd>
 
-### -field <b>MaximumSampleFrequency</b>
+### -field MaximumSampleFrequency
 
 <dd>
 <p>Specifies the maximum sampling frequency.</p>
 </dd>
 
-### -field <b>TotalConnections</b>
+### -field TotalConnections
 
 <dd>
 <p>Indicates the total number of connections.</p>
 </dd>
 
-### -field <b>ActiveConnections</b>
+### -field ActiveConnections
 
 <dd>
 <p>Indicates the number of active connections.</p>

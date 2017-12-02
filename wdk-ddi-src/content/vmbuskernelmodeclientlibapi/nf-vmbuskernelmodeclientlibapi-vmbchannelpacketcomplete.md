@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelpacketcomplete.htm
 old-project: netvista
 ms.assetid: 1DC215DF-1F53-4910-84D5-17E13BE6202A
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbChannelPacketComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,21 +60,21 @@ VOID VmbChannelPacketComplete(
 ## -parameters
 <dl>
 
-### -param <i>PacketCompletionContext</i> [in]
+### -param PacketCompletionContext [in]
 
 <dd>
 <p>A  handle that identifies the incoming packet and is used to refer to the packet
 once processing is finished.  </p>
 </dd>
 
-### -param <i>PacketCompletionBuffer</i> [in]
+### -param PacketCompletionBuffer [in]
 
 <dd>
 <p>A buffer of completion data to be sent back to the originating endpoint.  Although this usually contains just a status value, the contents are up to the client driver.
 </p>
 </dd>
 
-### -param <i>BufSize</i> [in]
+### -param BufSize [in]
 
 <dd>
 <p>The size, in bytes, of the completion buffer.</p>

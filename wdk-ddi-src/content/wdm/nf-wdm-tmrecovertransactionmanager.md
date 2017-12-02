@@ -56,13 +56,13 @@ NTSTATUS TmRecoverTransactionManager(
 ## -parameters
 <dl>
 
-### -param <i>Tm</i> [in]
+### -param Tm [in]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/af53cda4-e2ab-47df-9311-a4da2a2ee08d">transaction manager object</a>. To obtain this pointer, your TPS component must call <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="..\wdm\nf-wdm-zwcreatetransactionmanager.md">ZwCreateTransactionManager</a> or <a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a> provided.</p>
 </dd>
 
-### -param <i>TargetVirtualClock</i> [in]
+### -param TargetVirtualClock [in]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/de01b0f1-86b1-4e7d-af22-84dbbe3a3f83">virtual clock value</a>. This parameter is optional and can be <b>NULL</b>. For more information about this parameter, see the following Remarks section. For Windows Vista, this parameter must be <b>NULL</b>.</p>

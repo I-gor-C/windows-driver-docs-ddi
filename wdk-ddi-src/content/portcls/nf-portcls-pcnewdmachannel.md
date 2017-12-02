@@ -58,31 +58,31 @@ NTSTATUS PcNewDmaChannel(
 ## -parameters
 <dl>
 
-### -param <i>OutDmaChannel</i> [out]
+### -param OutDmaChannel [out]
 
 <dd>
 <p>Output pointer for the DMA-channel object created by this function. This parameter points to a caller-allocated pointer variable into which the function outputs a reference to the newly created <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a> object. Specify a valid, non-<b>NULL</b> pointer value for this parameter.</p>
 </dd>
 
-### -param <i>OuterUnknown</i> [in, optional]
+### -param OuterUnknown [in, optional]
 
 <dd>
 <p>Pointer to the <a href="com.iunknown">IUnknown</a> interface of an object that needs to aggregate the object. Unless aggregation is required, set this parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>Specifies the type of storage pool from which the object is to be allocated. This is a <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a> enumeration value. Specify a nonpaged pool type for this parameter.</p>
 </dd>
 
-### -param <i>DeviceDescription</i> [in]
+### -param DeviceDescription [in]
 
 <dd>
 <p>Pointer to a description of the physical device for which the caller is requesting a DMA object. This parameter points to a structure of type <a href="..\wdm\ns-wdm--device-description.md">DEVICE_DESCRIPTION</a>.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object for the physical adapter device. This parameter points to a system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
@@ -107,11 +107,11 @@ NTSTATUS PcNewDmaChannel(
 <a href="audio.iportwavecyclic_newslavedmachannel">IPortWaveCyclic::NewSlaveDmaChannel</a>
 </p>
 
-<p>For the sake of backward compatibility, the PortCls system driver will continue to support <b>PcNewDmaChannel</b>, and existing drivers can continue to use this function. For more information, see <a href="NULL">DirectSound Hardware Acceleration in 64-Bit Versions of Windows XP</a>.</p>
+<p>For the sake of backward compatibility, the PortCls system driver will continue to support <b>PcNewDmaChannel</b>, and existing drivers can continue to use this function. For more information, see <a href="https://msdn.microsoft.com/0497acff-1e7f-45b9-b5ec-f1783ea7e900">DirectSound Hardware Acceleration in 64-Bit Versions of Windows XP</a>.</p>
 
 <p>Specify the <i>PoolType</i> parameter to be one of the nonpaged pool types defined in the POOL_TYPE enumeration. The DMA-channel object must not reside in paged memory because several of the methods in the <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a> interface can be called from IRQL DISPATCH_LEVEL.</p>
 
-<p>The <i>OutDmaChannel</i> and <i>OuterUnknown </i>parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>OutDmaChannel</i> and <i>OuterUnknown </i>parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

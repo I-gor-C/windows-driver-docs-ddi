@@ -56,13 +56,13 @@ VOID RtlPrefetchMemoryNonTemporal(
 ## -parameters
 <dl>
 
-### -param <i>Source</i> [in]
+### -param Source [in]
 
 <dd>
 <p>A pointer to the buffer to be moved into the processor cache. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length of the buffer to be moved. </p>

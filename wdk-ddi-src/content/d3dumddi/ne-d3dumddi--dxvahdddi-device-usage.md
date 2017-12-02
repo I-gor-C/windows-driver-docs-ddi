@@ -56,19 +56,19 @@ typedef enum _DXVAHDDDI_DEVICE_USAGE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVAHDDDI_DEVICE_USAGE_PLAYBACK_NORMAL"></a><a id="dxvahdddi_device_usage_playback_normal"></a><b>DXVAHDDDI_DEVICE_USAGE_PLAYBACK_NORMAL</b>
+### -field DXVAHDDDI_DEVICE_USAGE_PLAYBACK_NORMAL
 
 <dd>
 <p>A value that specifies that the device plays video at normal speed. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_DEVICE_USAGE_OPTIMAL_SPEED"></a><a id="dxvahdddi_device_usage_optimal_speed"></a><b>DXVAHDDDI_DEVICE_USAGE_OPTIMAL_SPEED</b>
+### -field DXVAHDDDI_DEVICE_USAGE_OPTIMAL_SPEED
 
 <dd>
 <p>A value that specifies that the device plays video at optimal speed. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_DEVICE_USAGE_OPTIMAL_QUALITY"></a><a id="dxvahdddi_device_usage_optimal_quality"></a><b>DXVAHDDDI_DEVICE_USAGE_OPTIMAL_QUALITY</b>
+### -field DXVAHDDDI_DEVICE_USAGE_OPTIMAL_QUALITY
 
 <dd>
 <p>A value that specifies that the device plays video at optimal quality. </p>

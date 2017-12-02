@@ -61,49 +61,49 @@ typedef struct _DXVAHDDDI_STREAM_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>[in] A Boolean value that specifies whether the input stream is enabled. The number of input streams that the runtime enables must not be more than the number, which the driver sets in the <b>MaxStreamStates</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure.  </p>
 </dd>
 
-### -field <b>OutputIndex</b>
+### -field OutputIndex
 
 <dd>
 <p>[in] A zero-based cyclic frame index number of the output frames that are composed. </p>
 </dd>
 
-### -field <b>InputFrameOrField</b>
+### -field InputFrameOrField
 
 <dd>
 <p>[in] A zero-based frame number of the input frames or fields that are processed.</p>
 </dd>
 
-### -field <b>PastFrames</b>
+### -field PastFrames
 
 <dd>
 <p>[in] The number of past reference frames. This number must not be more than the number that the driver sets in the <b>PastFrames</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpcaps.md">DXVAHDDDI_VPCAPS</a> structure.  </p>
 </dd>
 
-### -field <b>FutureFrames</b>
+### -field FutureFrames
 
 <dd>
 <p>[in] The number of future reference frames. This number must not be more than the number that the driver sets in the <b>FutureFrames</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpcaps.md">DXVAHDDDI_VPCAPS</a> structure.  </p>
 </dd>
 
-### -field <b>pPastSurfaces</b>
+### -field pPastSurfaces
 
 <dd>
 <p>[in] An array of <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-surface.md">DXVAHDDDI_SURFACE</a> structures that describe the past reference surfaces. </p>
 </dd>
 
-### -field <b>InputSurface</b>
+### -field InputSurface
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-surface.md">DXVAHDDDI_SURFACE</a> structure that describes the input surface. </p>
 </dd>
 
-### -field <b>pFutureSurfaces</b>
+### -field pFutureSurfaces
 
 <dd>
 <p>[in] An array of <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-surface.md">DXVAHDDDI_SURFACE</a> structures that describe the future reference surfaces. </p>

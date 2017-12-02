@@ -60,25 +60,25 @@ __checkReturn HRESULT APIENTRY GetInfo(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>DevInfoID</i> 
+### -param DevInfoID 
 
 <dd>
 <p> An identifier for the type of device information to retrieve.</p>
 </dd>
 
-### -param <i>pDevInfoStruct</i> 
+### -param pDevInfoStruct 
 
 <dd>
 <p> A pointer to a buffer of the type that <i>DevInfoID</i> specifies that receives information about the device.</p>
 </dd>
 
-### -param <i>DevInfoSize</i> 
+### -param DevInfoSize 
 
 <dd>
 <p> The size, in bytes, of the buffer that is supplied by <i>pDevInfoStruct</i>.</p>

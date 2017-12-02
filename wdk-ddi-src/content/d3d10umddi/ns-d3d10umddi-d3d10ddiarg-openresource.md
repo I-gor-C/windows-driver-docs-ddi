@@ -65,32 +65,32 @@ typedef struct D3D10DDIARG_OPENRESOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of elements in the array that the <b>pOpenAllocationInfo</b> member specifies. <b>NumAllocations</b> represents the number of allocations to open.</p>
 </dd>
 
-### -field <b>pOpenAllocationInfo</b>
+### -field pOpenAllocationInfo
 
 <dd>
 <p>[in] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.</p>
 </dd>
 
-### -field <b>pOpenAllocationInfo2</b>
+### -field pOpenAllocationInfo2
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>This member is available beginning with Windows 7.</p>
 </dd>
 
-### -field <b>pOpenAllocationInfo</b>
+### -field pOpenAllocationInfo
 
 <dd>
 <p>[in] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.</p>
 </dd>
 
-### -field <b>hKMResource</b>
+### -field hKMResource
 
 <dd>
 <p>[in] A D3D10DDI_HKMRESOURCE data type that represents a kernel-mode handle to the resource that is associated with the allocations. </p>
@@ -98,13 +98,13 @@ typedef struct D3D10DDIARG_OPENRESOURCE {
 <p>The user-mode display driver can insert the kernel-mode resource handle in the command stream for subsequent use by the display miniport driver.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in] A pointer to private data that was passed to the display miniport driver when the resource was created. This data is per resource and not per allocation like the private data in each allocation's <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structure. </p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.</p>

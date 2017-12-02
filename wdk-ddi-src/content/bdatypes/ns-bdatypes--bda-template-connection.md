@@ -57,25 +57,25 @@ typedef struct _BDA_TEMPLATE_CONNECTION {
 ## -struct-fields
 <dl>
 
-### -field <b>FromNodeType</b>
+### -field FromNodeType
 
 <dd>
 <p>Index of the element in the zero-based array of internal node types (KSNODE_DESCRIPTOR array) that indicates the node type where the connection begins or −1 to indicate that the connection begins at an upstream filter. </p>
 </dd>
 
-### -field <b>FromNodePinType</b>
+### -field FromNodePinType
 
 <dd>
 <p>Index of the element in the zero-based array of pin types (KSPIN_DESCRIPTOR_EX array) that indicates the pin type where the connection begins. The array of pin types is the list of pin types that are available in the filter's template topology. </p>
 </dd>
 
-### -field <b>ToNodeType</b>
+### -field ToNodeType
 
 <dd>
 <p>Index of the element in the zero-based array of internal node types (KSNODE_DESCRIPTOR array) that indicates the node type where the connection ends or −1 to indicate that the connection ends at a downstream filter. </p>
 </dd>
 
-### -field <b>ToNodePinType</b>
+### -field ToNodePinType
 
 <dd>
 <p>Index of the element in the zero-based array of pin types (KSPIN_DESCRIPTOR_EX array) that indicates the pin type where the connection ends. The array of pin types is the list of pin types that are available in the filter's template topology. </p>

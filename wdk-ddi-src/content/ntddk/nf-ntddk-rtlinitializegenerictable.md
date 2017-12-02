@@ -7,7 +7,7 @@ old-location: ifsk\rtlinitializegenerictable.htm
 old-project: ifsk
 ms.assetid: 99a91bb4-4fcd-4b49-bd1e-4551027b5d1f
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlInitializeGenericTable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ VOID RtlInitializeGenericTable(
 ## -parameters
 <dl>
 
-### -param <i>Table</i> [out]
+### -param Table [out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer, which must be at least <b>sizeof</b>(<a href="..\ntddk\ns-ntddk--rtl-generic-table.md">RTL_GENERIC_TABLE</a>) bytes in size, to contain the initialized generic table structure. </p>
 </dd>
 
-### -param <i>CompareRoutine</i> [in]
+### -param CompareRoutine [in]
 
 <dd>
 <p>An entry point of a comparison callback routine, declared as follows:</p>
@@ -87,19 +87,19 @@ VOID RtlInitializeGenericTable(
 <p></p>
 <dl>
 
-### -param <a id="Table"></a><a id="table"></a><a id="TABLE"></a><i>Table</i>
+### -param Table
 
 <dd>
 <p>A pointer to the generic table.</p>
 </dd>
 
-### -param <a id="FirstStruct"></a><a id="firststruct"></a><a id="FIRSTSTRUCT"></a><i>FirstStruct</i>
+### -param FirstStruct
 
 <dd>
 <p>A pointer to the first item to be compared.</p>
 </dd>
 
-### -param <a id="SecondStruct"></a><a id="secondstruct"></a><a id="SECONDSTRUCT"></a><i>SecondStruct</i>
+### -param SecondStruct
 
 <dd>
 <p>A pointer to the second item to be compared.</p>
@@ -109,7 +109,7 @@ VOID RtlInitializeGenericTable(
 <p>Given two such key values, the <i>CompareRoutine</i> returns <b>GenericLessThan</b>, <b>GenericGreaterThan</b>, or <b>GenericEqual</b>. </p>
 </dd>
 
-### -param <i>AllocateRoutine</i> [in]
+### -param AllocateRoutine [in]
 
 <dd>
 <p>An entry point of an allocation callback routine, declared as follows:</p>
@@ -131,13 +131,13 @@ VOID RtlInitializeGenericTable(
 <p></p>
 <dl>
 
-### -param <a id="Table"></a><a id="table"></a><a id="TABLE"></a><i>Table</i>
+### -param Table
 
 <dd>
 <p>A pointer to the generic table.</p>
 </dd>
 
-### -param <a id="ByteSize"></a><a id="bytesize"></a><a id="BYTESIZE"></a><i>ByteSize</i>
+### -param ByteSize
 
 <dd>
 <p>The number of bytes to allocate.</p>
@@ -146,7 +146,7 @@ VOID RtlInitializeGenericTable(
 <p>For each new element, the <i>AllocateRoutine</i> is called to allocate memory for caller-supplied data plus some additional memory for use by the <i>Rtl...GenericTable</i> routines. Note that because of this "additional memory," caller-supplied routines must not access the first (<b>sizeof</b>(RTL_SPLAY_LINKS) + <b>sizeof</b>(LIST_ENTRY)) bytes of any element in the generic table. </p>
 </dd>
 
-### -param <i>FreeRoutine</i> [in]
+### -param FreeRoutine [in]
 
 <dd>
 <p>An entry point of a deallocation callback routine, declared as follows:</p>
@@ -168,13 +168,13 @@ VOID RtlInitializeGenericTable(
 <p></p>
 <dl>
 
-### -param <a id="Table"></a><a id="table"></a><a id="TABLE"></a><i>Table</i>
+### -param Table
 
 <dd>
 <p>A pointer to the generic table.</p>
 </dd>
 
-### -param <a id="Buffer"></a><a id="buffer"></a><a id="BUFFER"></a><i>Buffer</i>
+### -param Buffer
 
 <dd>
 <p>A pointer to the element that is being deleted.</p>
@@ -183,7 +183,7 @@ VOID RtlInitializeGenericTable(
 <p><i>Rtl...GenericTable</i> routines call the <i>FreeRoutine</i> to deallocate memory for elements to be deleted from the generic table. The <i>FreeRoutine</i> is the opposite of the <i>AllocateRoutine</i>. </p>
 </dd>
 
-### -param <i>TableContext</i> [in, optional]
+### -param TableContext [in, optional]
 
 <dd>
 <p>An optional pointer to a caller-supplied context for the generic table. This parameter can be <b>NULL</b>.</p>
@@ -297,4 +297,4 @@ VOID RtlInitializeGenericTable(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInitializeGenericTable routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInitializeGenericTable routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY CreateLight(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createlight.md">D3DDDIARG_CREATELIGHT</a> structure that contains the index into the light array.</p>

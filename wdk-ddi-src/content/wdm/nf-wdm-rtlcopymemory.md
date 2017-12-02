@@ -57,19 +57,19 @@ VOID RtlCopyMemory(
 ## -parameters
 <dl>
 
-### -param <i>Destination</i> [out]
+### -param Destination [out]
 
 <dd>
 <p>A pointer to the destination memory block to copy the bytes to.</p>
 </dd>
 
-### -param <i>Source</i> [in]
+### -param Source [in]
 
 <dd>
 <p>A pointer to the source memory block to copy the bytes from.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The number of bytes to copy from the source to the destination.</p>

@@ -61,31 +61,31 @@ VOID APIENTRY DrawInstanced(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>VertexCountPerInstance</i> [in]
+### -param VertexCountPerInstance [in]
 
 <dd>
 <p> The number of vertices per instance of the buffer that vertices are read from to draw the primitives. </p>
 </dd>
 
-### -param <i>InstanceCount</i> [in]
+### -param InstanceCount [in]
 
 <dd>
 <p> The number of instances of the buffer that vertices are read from to draw the primitives. </p>
 </dd>
 
-### -param <i>StartVertexLocation</i> [in]
+### -param StartVertexLocation [in]
 
 <dd>
 <p> The first vertex in the buffer that vertices are read from to draw the primitives. </p>
 </dd>
 
-### -param <i>StartInstanceLocation</i> [in]
+### -param StartInstanceLocation [in]
 
 <dd>
 <p> The first instance of the buffer that vertices are read from to draw the primitives. </p>

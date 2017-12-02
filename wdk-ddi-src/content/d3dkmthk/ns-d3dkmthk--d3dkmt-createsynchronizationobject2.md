@@ -56,19 +56,19 @@ typedef struct _D3DKMT_CREATESYNCHRONIZATIONOBJECT2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the device that the synchronization object is associated with. </p>
 </dd>
 
-### -field <b>Info</b>
+### -field Info
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-synchronizationobjectinfo2.md">D3DDDI_SYNCHRONIZATIONOBJECTINFO2</a> structure that describes information about the kernel-mode synchronization object. </p>
 </dd>
 
-### -field <b>hSyncObject</b>
+### -field hSyncObject
 
 <dd>
 <p>[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the kernel-mode synchronization object. </p>

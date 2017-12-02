@@ -62,31 +62,31 @@ VOID PowerCompletion(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to the target <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> for the completed power IRP.</p>
 </dd>
 
-### -param <i>MinorFunction</i> [in]
+### -param MinorFunction [in]
 
 <dd>
 <p>Specifies the minor function code in the power IRP. For more information, see the list of supported <b>IRP_MN_<i>XXX</i></b> codes in the Remarks section.</p>
 </dd>
 
-### -param <i>PowerState</i> [in]
+### -param PowerState [in]
 
 <dd>
 <p>Specifies the <a href="https://msdn.microsoft.com/2229f34c-9b88-4e3e-802e-f7be2c7ef168">device power state</a> or <a href="https://msdn.microsoft.com/bb30bc89-d1f2-4cb3-bcfb-fb76c69dba27">system power state</a> that was passed to the <a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a> routine.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>A pointer to the context that was passed to <b>PoRequestPowerIrp</b>.</p>
 </dd>
 
-### -param <i>IoStatus</i> [in]
+### -param IoStatus [in]
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure for the completed IRP.</p>
@@ -106,7 +106,7 @@ VOID PowerCompletion(
 <p>In Windows 2000 and later versions of Windows, the <i>PowerCompletion</i> routine is called at IRQL = PASSIVE_LEVEL or IRQL = DISPATCH_LEVEL. In Windows 98/Me, the <i>PowerCompletion</i> routine is always called at IRQL = PASSIVE_LEVEL, and drivers must complete IRPs at IRQL = PASSIVE_LEVEL.
 </p>
 
-<p>To define a <i>PowerCompletion</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define a <i>PowerCompletion</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define a <i>PowerCompletion</i> callback routine that is named <code>MyPowerCompletion</code>, use the REQUEST_POWER_COMPLETE type as shown in this code example:</p>
 

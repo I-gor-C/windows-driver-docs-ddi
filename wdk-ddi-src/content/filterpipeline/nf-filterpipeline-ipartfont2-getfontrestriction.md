@@ -54,7 +54,7 @@ HRESULT GetFontRestriction(
 ## -parameters
 <dl>
 
-### -param <i>pRestriction</i> [out]
+### -param pRestriction [out]
 
 <dd></dd>
 </dl>

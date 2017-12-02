@@ -64,61 +64,61 @@ HRESULT DrvUniTextOut(
 ## -parameters
 <dl>
 
-### -param <i>pso</i> 
+### -param pso 
 
 <dd>
 <p>Pointer to a <a href="display.surfobj">SURFOBJ</a> structure that describes the surface on which to write. </p>
 </dd>
 
-### -param <i>pstro</i> 
+### -param pstro 
 
 <dd>
 <p>Pointer to a <a href="display.strobj">STROBJ</a> structure that defines the glyphs to be rendered and the positions in which to place them. </p>
 </dd>
 
-### -param <i>pfo</i> 
+### -param pfo 
 
 <dd>
 <p>Pointer to a <a href="display.fontobj">FONTOBJ</a> structure from which to retrieve information about the font and its glyphs. </p>
 </dd>
 
-### -param <i>pco</i> 
+### -param pco 
 
 <dd>
 <p>Pointer to a <a href="display.clipobj">CLIPOBJ</a> structure that defines the clip region through which all rendering must be done. The driver cannot affect any pixels outside the clip region. </p>
 </dd>
 
-### -param <i>prclExtra</i> 
+### -param prclExtra 
 
 <dd>
 <p>Pointer to a RECTL structure. GDI always sets this parameter to <b>NULL</b> in calls to this function. It should be ignored by the driver. </p>
 </dd>
 
-### -param <i>prclOpaque</i> 
+### -param prclOpaque 
 
 <dd>
 <p>Pointer to a <a href="display.rectl">RECTL</a> structure that represents a single opaque rectangle. This rectangle is bottom-right exclusive. Pixels within this rectangle (those that are not foreground and not clipped) are to be rendered with the opaque brush. This rectangle always bounds the text to be drawn. If this parameter is <b>NULL</b>, no opaque pixels are to be rendered. </p>
 </dd>
 
-### -param <i>pboFore</i> 
+### -param pboFore 
 
 <dd>
 <p>Pointer to a <a href="display.brushobj">BRUSHOBJ</a> structure that represents the brush object to be used for the foreground pixels. This brush will always be a solid color brush.</p>
 </dd>
 
-### -param <i>pboOpaque</i> 
+### -param pboOpaque 
 
 <dd>
 <p>Pointer to a BRUSHOBJ structure that represents the opaque pixels. Both the foreground and background mix modes for this brush are assumed to be R2_COPYPEN. Unless the driver sets the GCAPS_ARBRUSHOPAQUE capabilities bit in the <b>flGraphicsCaps</b> member of the DEVINFO structure, it will always be called with a solid color brush. </p>
 </dd>
 
-### -param <i>pptlBrushOrg</i> 
+### -param pptlBrushOrg 
 
 <dd>
 <p>Pointer to a <a href="display.pointl">POINTL</a> structure that defines the brush origin for both brushes.</p>
 </dd>
 
-### -param <i>mix</i> 
+### -param mix 
 
 <dd>
 <p>The foreground and background raster operations (mix modes) for <i>pboFore</i>. </p>
@@ -141,7 +141,7 @@ HRESULT DrvUniTextOut(
 
 <p>If <code>IPrintOemDriverUni::DrvUniTextOut</code> cannot create the text string, either because the font is not available or is rotated, it calls the rendering plug-in's <a href="print.iprintoemuni_textoutasbitmap">IPrintOemUni::TextOutAsBitmap</a> method, which draws the text string as a bitmap.</p>
 
-<p>For more information, see <a href="NULL">Handling Device-Managed Surfaces</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/4403165f-c528-450e-9c96-77a9ce0778aa">Handling Device-Managed Surfaces</a>.</p>
 
 ## -requirements
 <table>

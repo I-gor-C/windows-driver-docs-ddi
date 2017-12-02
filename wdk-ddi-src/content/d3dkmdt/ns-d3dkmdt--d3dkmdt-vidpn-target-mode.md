@@ -56,19 +56,19 @@ typedef struct _D3DKMDT_VIDPN_TARGET_MODE {
 ## -struct-fields
 <dl>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>An integer that identifies the target mode. The identifier is generated and filled in by the VidPN manager. However, the display miniport driver has the option of overwriting the identifier. For more information, see <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntargetmodeset-createnewmodeinfo.md">pfnCreateNewModeInfo</a>.</p>
 </dd>
 
-### -field <b>VideoSignalInfo</b>
+### -field VideoSignalInfo
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-video-signal-info.md">D3DKMDT_VIDEO_SIGNAL_INFO</a> structure that contains information about the target mode (for example, video standard, resolution, refresh rate).</p>
 </dd>
 
-### -field <b>Preference</b>
+### -field Preference
 
 <dd>
 <p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-mode-preference.md">D3DKMDT_MODE_PREFERENCE</a> enumerator that indicates whether a particular mode is one of the modes that is preferred by the monitor that is connected to the video present target.</p>

@@ -62,31 +62,31 @@ VP_STATUS HwVidQueryNamedValueCallback(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.</p>
 </dd>
 
-### -param <i>Context</i> 
+### -param Context 
 
 <dd>
 <p>Pointer to a driver-determined context specified as input to the <a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a> function.</p>
 </dd>
 
-### -param <i>ValueName</i> 
+### -param ValueName 
 
 <dd>
 <p>Pointer to a NULL-terminated Unicode string naming the entry.</p>
 </dd>
 
-### -param <i>ValueData</i> 
+### -param ValueData 
 
 <dd>
 <p>Pointer to the buffered data associated with <i>ValueName</i>, supplied by <b>VideoPortGetRegistryParameters</b>.</p>
 </dd>
 
-### -param <i>ValueLength</i> 
+### -param ValueLength 
 
 <dd>
 <p>Specifies the size in bytes of the buffer at <i>ValueData</i>.</p>

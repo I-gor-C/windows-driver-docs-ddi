@@ -55,13 +55,13 @@ PHYSICAL_ADDRESS GetPhysicalPageAddress(
 ## -parameters
 <dl>
 
-### -param <i>MemoryDescriptorList</i> [in]
+### -param MemoryDescriptorList [in]
 
 <dd>
 <p>Pointer to the MDL.</p>
 </dd>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>Index to the target page within the MDL.</p>

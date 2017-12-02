@@ -55,13 +55,13 @@ typedef struct _D3DKMT_ENUMADAPTERS {
 ## -struct-fields
 <dl>
 
-### -field <b>NumAdapters</b>
+### -field NumAdapters
 
 <dd>
 <p>[in] The number of graphics adapters.</p>
 </dd>
 
-### -field <b>Adapters</b>
+### -field Adapters
 
 <dd>
 <p>An array of <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-adapterinfo.md">D3DKMT_ADAPTERINFO</a> structures that supply configuration information for each adapter. The maximum number of adapters that can be enumerated is 16.</p>

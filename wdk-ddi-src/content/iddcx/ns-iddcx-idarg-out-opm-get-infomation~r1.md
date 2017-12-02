@@ -56,7 +56,7 @@ typedef struct IDARG_OUT_OPM_GET_INFOMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>RequestedInformation</b>
+### -field RequestedInformation
 
 <dd>
 <p>

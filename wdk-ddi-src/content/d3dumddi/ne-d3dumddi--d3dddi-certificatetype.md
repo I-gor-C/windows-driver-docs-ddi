@@ -55,13 +55,13 @@ typedef enum _D3DDDI_CERTIFICATETYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_CERTTYPE_AUTHENTICATED_CHANNEL"></a><a id="d3dddi_certtype_authenticated_channel"></a><b>D3DDDI_CERTTYPE_AUTHENTICATED_CHANNEL</b>
+### -field D3DDDI_CERTTYPE_AUTHENTICATED_CHANNEL
 
 <dd>
 <p>The value specifies that the certificate type is an authenticated channel. </p>
 </dd>
 
-### -field <a id="D3DDDI_CERTTYPE_CRYPTOSESSION"></a><a id="d3dddi_certtype_cryptosession"></a><b>D3DDDI_CERTTYPE_CRYPTOSESSION</b>
+### -field D3DDDI_CERTTYPE_CRYPTOSESSION
 
 <dd>
 <p>The value specifies that the certificate type is an encryption session. </p>

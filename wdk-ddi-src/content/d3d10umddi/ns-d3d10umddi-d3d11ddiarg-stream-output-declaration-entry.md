@@ -57,25 +57,25 @@ typedef struct D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>Stream</b>
+### -field Stream
 
 <dd>
 <p>[in] The stream to output from, which is a value between zero and the maximum number of streams that are specified by the driver. </p>
 </dd>
 
-### -field <b>OutputSlot</b>
+### -field OutputSlot
 
 <dd>
 <p>[in] The number of the slot for the portion of the stream output. </p>
 </dd>
 
-### -field <b>RegisterIndex</b>
+### -field RegisterIndex
 
 <dd>
 <p>[in] The number of the register for the portion of the stream output. </p>
 </dd>
 
-### -field <b>RegisterMask</b>
+### -field RegisterMask
 
 <dd>
 <p>[in] The xyzw register mask for the portion of the stream output. That is, the four least significant bits (LSBs) of the mask represent xyzw respectively. </p>

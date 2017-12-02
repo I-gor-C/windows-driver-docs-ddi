@@ -55,13 +55,13 @@ LARGE_INTEGER TapeClassLiDiv(
 ## -parameters
 <dl>
 
-### -param <i>Dividend</i> [in]
+### -param Dividend [in]
 
 <dd>
 <p>Contains the dividend.</p>
 </dd>
 
-### -param <i>Divisor</i> [in]
+### -param Divisor [in]
 
 <dd>
 <p>Contains the divisor.</p>

@@ -7,7 +7,7 @@ old-location: wdf\wdffdoinitsetdefaultchildlistconfig.htm
 old-project: wdf
 ms.assetid: 656a0c58-dd12-4417-a781-464d1670592c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfFdoInitSetDefaultChildListConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ VOID WdfFdoInitSetDefaultChildListConfig(
 ## -parameters
 <dl>
 
-### -param <i>DeviceInit</i> [in, out]
+### -param DeviceInit [in, out]
 
 <dd>
 <p>A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure that the driver obtained from its <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> callback function.</p>
 </dd>
 
-### -param <i>Config</i> [in]
+### -param Config [in]
 
 <dd>
 <p>A pointer to a driver-allocated <a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-list-config.md">WDF_CHILD_LIST_CONFIG</a> structure.</p>
 </dd>
 
-### -param <i>DefaultChildListAttributes</i> [in, optional]
+### -param DefaultChildListAttributes [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains object attributes for the child-list object that represents the driver's default child list. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.</p>
@@ -156,4 +156,4 @@ VOID WdfFdoInitSetDefaultChildListConfig(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfFdoInitSetDefaultChildListConfig method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfFdoInitSetDefaultChildListConfig method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -63,32 +63,32 @@ NTSTATUS* DxgkDdiMiracastIoControl(
 ## -parameters
 <dl>
 
-### -param <i>DriverContext</i> [in]
+### -param DriverContext [in]
 
 <dd>
 <p>A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>MiracastContext</i> [in]
+### -param MiracastContext [in]
 
 <dd>
 <p>The Miracast device context, supplied by the operating system. This context was provided by the display miniport driver in a call to the <a href="..\dispmprt\nc-dispmprt-dxgkddi-miracast-create-context.md">DxgkDdiMiracastCreateContext</a> function.</p>
 </dd>
 
-### -param <i>InputBufferSize</i> [in]
+### -param InputBufferSize [in]
 
 <dd>
 <p>Supplied by the operating system as the size, in bytes, of the input buffer pointed to by <i>pInputBuffer</i>. This value originated as the user-mode <a href="..\netdispumdddi\nc-netdispumdddi-pfn-miracast-io-control.md">MiracastIoControl</a> function's <i>InputBufferSize</i> parameter.</p>
 </dd>
 
-### -param <i>pInputBuffer</i> [in]
+### -param pInputBuffer [in]
 
 <dd>
 <p>Supplied by the operating system as a pointer to the input buffer. This value originated as the user-mode <a href="..\netdispumdddi\nc-netdispumdddi-pfn-miracast-io-control.md">MiracastIoControl</a> function's <i>InputBufferSize</i> parameter.</p>
 <p><i>InputBufferSize</i> specifies the size of the buffer.</p>
 </dd>
 
-### -param <i>OutBufferSize</i> [in]
+### -param OutBufferSize [in]
 
 <dd>
 <p>Supplied by the operating system as the size, in bytes, of the output buffer pointed to by <i>pOutputBuffer</i>.
@@ -96,14 +96,14 @@ NTSTATUS* DxgkDdiMiracastIoControl(
 This value originated as the user-mode <a href="..\netdispumdddi\nc-netdispumdddi-pfn-miracast-io-control.md">MiracastIoControl</a> function's <i>OutputBufferSize</i> parameter.</p>
 </dd>
 
-### -param <i>pOutputBuffer</i> [out]
+### -param pOutputBuffer [out]
 
 <dd>
 <p>Supplied by the operating system as a pointer to the output buffer. This value originated as the user-mode <a href="..\netdispumdddi\nc-netdispumdddi-pfn-miracast-io-control.md">MiracastIoControl</a> function's <i>pOutputBuffer</i> parameter.</p>
 <p><i>OutBufferSize</i> specifies the size of the buffer.</p>
 </dd>
 
-### -param <i>BytesReturned</i> [out]
+### -param BytesReturned [out]
 
 <dd>
 <p>Supplied by the operating system as a pointer to a buffer that holds a <b>ULONG</b>-type value that is the number of bytes that the display miniport driver returned in the buffer pointed to by <i>pOutputBuffer</i>.</p>

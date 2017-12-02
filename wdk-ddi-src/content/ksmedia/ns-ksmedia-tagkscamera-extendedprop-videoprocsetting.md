@@ -59,7 +59,7 @@ typedef struct _KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
 ## -struct-fields
 <dl>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>The video processing mode type. Currently, this member is used to control white balance. The possible values for <b>Mode</b> are the following.</p>
@@ -71,7 +71,7 @@ typedef struct _KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
 <tr>
 <td width="40%"><a id="KSCAMERA_EXTENDEDPROP_WHITEBALANCE_TEMPERATURE"></a><a id="kscamera_extendedprop_whitebalance_temperature"></a><dl>
 
-### -field <b>KSCAMERA_EXTENDEDPROP_WHITEBALANCE_TEMPERATURE</b>
+### -field KSCAMERA_EXTENDEDPROP_WHITEBALANCE_TEMPERATURE
 
 </dl>
 </td>
@@ -82,7 +82,7 @@ typedef struct _KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
 <tr>
 <td width="40%"><a id="KSCAMERA_EXTENDEDPROP_WHITEBALANCE_PRESET"></a><a id="kscamera_extendedprop_whitebalance_preset"></a><dl>
 
-### -field <b>KSCAMERA_EXTENDEDPROP_WHITEBALANCE_PRESET</b>
+### -field KSCAMERA_EXTENDEDPROP_WHITEBALANCE_PRESET
 
 </dl>
 </td>
@@ -95,19 +95,19 @@ typedef struct _KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
 <p>This member is not used for <a href="https://msdn.microsoft.com/library/windows/hardware/dn567573">KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/dn567576">KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE</a>. In these cases it must be set to 0.</p>
 </dd>
 
-### -field <b>Min</b>
+### -field Min
 
 <dd>
 <p>The minum range value for the setting in <b>VideoProc</b>.</p>
 </dd>
 
-### -field <b>Max</b>
+### -field Max
 
 <dd>
 <p>The maximum range value for the setting in <b>VideoProc</b>.</p>
 </dd>
 
-### -field <b>Step</b>
+### -field Step
 
 <dd>
 <p>The maximum range value for the setting in <b>VideoProc</b>.</p>
@@ -116,7 +116,7 @@ typedef struct _KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
 <p>The increment in value, when applicable, for the setting in <b>VideoProc</b> when setting exposure is set manually with KSCAMERA_EXTENDEDPROP_VIDEOPROCFLAG_MANUAL.</p>
 </dd>
 
-### -field <b>VideoProc</b>
+### -field VideoProc
 
 <dd>
 <p>Using the <a href="https://msdn.microsoft.com/library/windows/hardware/dn567588">KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE</a> property, when <b>Mode</b> is set to KSCAMERA_EXTENDEDPROP_WHITEBALANCE_PRESET, the <b>VideoProc.Value.ul</b> value is one of the following.</p>
@@ -128,7 +128,7 @@ typedef struct _KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
 <tr>
 <td width="40%"><a id="KSCAMERA_EXTENDEDPROP_WBPRESET_CLOUDY"></a><a id="kscamera_extendedprop_wbpreset_cloudy"></a><dl>
 
-### -field <b>KSCAMERA_EXTENDEDPROP_WBPRESET_CLOUDY</b>
+### -field KSCAMERA_EXTENDEDPROP_WBPRESET_CLOUDY
 
 </dl>
 </td>
@@ -139,7 +139,7 @@ typedef struct _KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
 <tr>
 <td width="40%"><a id="KSCAMERA_EXTENDEDPROP_WBPRESET_DAYLIGHT"></a><a id="kscamera_extendedprop_wbpreset_daylight"></a><dl>
 
-### -field <b>KSCAMERA_EXTENDEDPROP_WBPRESET_DAYLIGHT</b>
+### -field KSCAMERA_EXTENDEDPROP_WBPRESET_DAYLIGHT
 
 </dl>
 </td>
@@ -150,7 +150,7 @@ typedef struct _KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
 <tr>
 <td width="40%"><a id="KSCAMERA_EXTENDEDPROP_WBPRESET_FLASH"></a><a id="kscamera_extendedprop_wbpreset_flash"></a><dl>
 
-### -field <b>KSCAMERA_EXTENDEDPROP_WBPRESET_FLASH</b>
+### -field KSCAMERA_EXTENDEDPROP_WBPRESET_FLASH
 
 </dl>
 </td>
@@ -161,7 +161,7 @@ typedef struct _KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
 <tr>
 <td width="40%"><a id="KSCAMERA_EXTENDEDPROP_WBPRESET_FLUORESCENT"></a><a id="kscamera_extendedprop_wbpreset_fluorescent"></a><dl>
 
-### -field <b>KSCAMERA_EXTENDEDPROP_WBPRESET_FLUORESCENT</b>
+### -field KSCAMERA_EXTENDEDPROP_WBPRESET_FLUORESCENT
 
 </dl>
 </td>
@@ -172,7 +172,7 @@ typedef struct _KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
 <tr>
 <td width="40%"><a id="KSCAMERA_EXTENDEDPROP_WBPRESET_TUNGSTEN"></a><a id="kscamera_extendedprop_wbpreset_tungsten"></a><dl>
 
-### -field <b>KSCAMERA_EXTENDEDPROP_WBPRESET_TUNGSTEN</b>
+### -field KSCAMERA_EXTENDEDPROP_WBPRESET_TUNGSTEN
 
 </dl>
 </td>
@@ -183,7 +183,7 @@ typedef struct _KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
 <tr>
 <td width="40%"><a id="KSCAMERA_EXTENDEDPROP_WBPRESET_CANDLELIGHT"></a><a id="kscamera_extendedprop_wbpreset_candlelight"></a><dl>
 
-### -field <b>KSCAMERA_EXTENDEDPROP_WBPRESET_CANDLELIGHT</b>
+### -field KSCAMERA_EXTENDEDPROP_WBPRESET_CANDLELIGHT
 
 </dl>
 </td>
@@ -198,7 +198,7 @@ typedef struct _KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
 <p>Using the <a href="https://msdn.microsoft.com/library/windows/hardware/dn567576">KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE</a> property, this member contains the focal length value for manual focus mode,  KSCAMERA_EXTENDEDPROP_VIDEOPROCFLAG_MANUAL.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>

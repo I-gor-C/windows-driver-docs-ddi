@@ -56,50 +56,50 @@ NTSTATUS MmProtectMdlSystemAddress(
 ## -parameters
 <dl>
 
-### -param <i>MemoryDescriptorList</i> [in]
+### -param MemoryDescriptorList [in]
 
 <dd>
 <p>Specifies the memory address range to set the protection type for. </p>
 </dd>
 
-### -param <i>NewProtect</i> [in]
+### -param NewProtect [in]
 
 <dd>
 <p>Specifies the new protection setting for the memory pages. Drivers should specify one of the following values:</p>
 <p></p>
 <dl>
 
-### -param <a id="PAGE_NOACCESS"></a><a id="page_noaccess"></a>PAGE_NOACCESS
+### -param PAGE_NOACCESS
 
 <dd>
 <p>The underlying memory pages cannot be read or written. </p>
 </dd>
 
-### -param <a id="PAGE_READONLY"></a><a id="page_readonly"></a>PAGE_READONLY
+### -param PAGE_READONLY
 
 <dd>
 <p>The underlying memory pages can only be read, not written. </p>
 </dd>
 
-### -param <a id="PAGE_READWRITE"></a><a id="page_readwrite"></a>PAGE_READWRITE
+### -param PAGE_READWRITE
 
 <dd>
 <p>The underlying memory pages can be read or written. </p>
 </dd>
 
-### -param <a id="PAGE_EXECUTE"></a><a id="page_execute"></a>PAGE_EXECUTE
+### -param PAGE_EXECUTE
 
 <dd>
 <p>The underlying memory pages can be executed, but not read or written.</p>
 </dd>
 
-### -param <a id="PAGE_EXECUTE_READ"></a><a id="page_execute_read"></a>PAGE_EXECUTE_READ
+### -param PAGE_EXECUTE_READ
 
 <dd>
 <p>The underlying memory pages can be executed or read, but not written.</p>
 </dd>
 
-### -param <a id="PAGE_EXECUTE_READWRITE"></a><a id="page_execute_readwrite"></a>PAGE_EXECUTE_READWRITE
+### -param PAGE_EXECUTE_READWRITE
 
 <dd>
 <p>The underlying memory pages can be executed, read, or written.</p>

@@ -7,7 +7,7 @@ old-location: wdf\iwdfmemory_copytobuffer.htm
 old-project: wdf
 ms.assetid: c5b34168-b3b8-4559-8b41-982f0a66f01d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFMemory, CopyToBuffer, IWDFMemory::CopyToBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ HRESULT CopyToBuffer(
 ## -parameters
 <dl>
 
-### -param <i>SourceOffset</i> [in]
+### -param SourceOffset [in]
 
 <dd>
 <p>The offset, in bytes, into the memory object to start to copy data from. </p>
 </dd>
 
-### -param <i>pTargetBuffer</i> [out]
+### -param pTargetBuffer [out]
 
 <dd>
 <p>A pointer to the target buffer that data is copied to.</p>
 </dd>
 
-### -param <i>NumOfBytesToCopyTo</i> [in]
+### -param NumOfBytesToCopyTo [in]
 
 <dd>
 <p>The number of bytes to copy to the buffer that <i>pTargetBuffer</i> points to.</p>
@@ -143,4 +143,4 @@ HRESULT CopyToBuffer(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFMemory::CopyToBuffer method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFMemory::CopyToBuffer method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

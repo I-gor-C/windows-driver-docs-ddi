@@ -57,28 +57,28 @@ NTSTATUS __stdcall HidP_GetValueCaps(
 ## -parameters
 <dl>
 
-### -param <i>ReportType</i> [in]
+### -param ReportType [in]
 
 <dd>
 <p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.</p>
 </dd>
 
-### -param <i>ValueCaps</i> [out]
+### -param ValueCaps [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer in which the routine returns a value capability array for the specified report type.</p>
 </dd>
 
-### -param <i>ValueCapsLength</i> [in, out]
+### -param ValueCapsLength [in, out]
 
 <dd>
 <p>Specifies the length, on input, in array elements, of the <i>ValueCaps </i>buffer. On output, the routine sets <i>ValueCapsLength</i> to the number of elements that the it actually returns.</p>
 </dd>
 
-### -param <i>PreparsedData</i> [in]
+### -param PreparsedData [in]
 
 <dd>
-<p>Pointer to a top-level collection's <a href="NULL">preparsed data</a>.</p>
+<p>Pointer to a top-level collection's <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.</p>
 </dd>
 </dl>
 
@@ -94,9 +94,9 @@ NTSTATUS __stdcall HidP_GetValueCaps(
 ## -remarks
 <p>The correct length for <i>ValueCapsLength</i> is specified by the <b>Number</b><i>Xxx</i><b>ValueCaps </b>members of a top-level collection's <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure.</p>
 
-<p>For more information about a collection's capability, see <a href="NULL">Obtaining Collection Information</a>.</p>
+<p>For more information about a collection's capability, see <a href="https://msdn.microsoft.com/0568993b-ff50-48ac-a875-95ab643d6c28">Obtaining Collection Information</a>.</p>
 
-<p>See also <a href="NULL">HID Collections</a>. </p>
+<p>See also <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

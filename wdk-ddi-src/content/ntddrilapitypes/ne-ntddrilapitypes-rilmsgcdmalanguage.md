@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmalanguage.htm
 old-project: netvista
 ms.assetid: b774fed4-533e-47ec-9e0a-da0e8fe2cfb0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,35 +61,35 @@ typedef enum _RILMSGCDMALANGUAGE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGCDMALANG_ENGLISH"></a><a id="ril_msgcdmalang_english"></a><b>RIL_MSGCDMALANG_ENGLISH</b>
+### -field RIL_MSGCDMALANG_ENGLISH
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCDMALANG_FRENCH"></a><a id="ril_msgcdmalang_french"></a><b>RIL_MSGCDMALANG_FRENCH</b>
+### -field RIL_MSGCDMALANG_FRENCH
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCDMALANG_SPANISH"></a><a id="ril_msgcdmalang_spanish"></a><b>RIL_MSGCDMALANG_SPANISH</b>
+### -field RIL_MSGCDMALANG_SPANISH
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCDMALANG_JAPANESE"></a><a id="ril_msgcdmalang_japanese"></a><b>RIL_MSGCDMALANG_JAPANESE</b>
+### -field RIL_MSGCDMALANG_JAPANESE
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCDMALANG_KOREAN"></a><a id="ril_msgcdmalang_korean"></a><b>RIL_MSGCDMALANG_KOREAN</b>
+### -field RIL_MSGCDMALANG_KOREAN
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCDMALANG_CHINESE"></a><a id="ril_msgcdmalang_chinese"></a><b>RIL_MSGCDMALANG_CHINESE</b>
+### -field RIL_MSGCDMALANG_CHINESE
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCDMALANG_HEBREW"></a><a id="ril_msgcdmalang_hebrew"></a><b>RIL_MSGCDMALANG_HEBREW</b>
+### -field RIL_MSGCDMALANG_HEBREW
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCDMALANG_MAX"></a><a id="ril_msgcdmalang_max"></a><b>RIL_MSGCDMALANG_MAX</b>
+### -field RIL_MSGCDMALANG_MAX
 
 <dd></dd>
 </dl>

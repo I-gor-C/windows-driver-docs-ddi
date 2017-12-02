@@ -41,8 +41,8 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-                 Used in the client driver's call to <a href="buses.ucmtcpcideviceinitialize">UcmTcpciDeviceInitialize</a>. 
-             Call <a href="buses.ucmtcpci_device_config_init">UCMTCPCI_DEVICE_CONFIG_INIT</a> to initialize this structure.
+                 Used in the client driver's call to <a href="..\ucmtcpcidevice\nf-ucmtcpcidevice-ucmtcpcideviceinitialize.md">UcmTcpciDeviceInitialize</a>. 
+             Call <a href="..\ucmtcpcidevice\nf-ucmtcpcidevice-ucmtcpci-device-config-init.md">UCMTCPCI_DEVICE_CONFIG_INIT</a> to initialize this structure.
              </p>
 
 
@@ -58,7 +58,7 @@ typedef struct _UCMTCPCI_DEVICE_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of this structure.
@@ -86,7 +86,7 @@ typedef struct _UCMTCPCI_DEVICE_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmtcpcideviceinitialize">UcmTcpciDeviceInitialize</a>
+<a href="..\ucmtcpcidevice\nf-ucmtcpcidevice-ucmtcpcideviceinitialize.md">UcmTcpciDeviceInitialize</a>
 </dt>
 </dl>
 <p> </p>

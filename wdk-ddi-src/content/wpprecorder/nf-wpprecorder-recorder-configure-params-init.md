@@ -55,7 +55,7 @@ FORCEINLINE void RECORDER_CONFIGURE_PARAMS_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Params</i> [out]
+### -param Params [out]
 
 <dd>
 <p>A pointer to the <a href="..\wpprecorder\ns-wpprecorder--recorder-configure-params.md">RECORDER_CONFIGURE_PARAMS</a> structure to initialize.</p>

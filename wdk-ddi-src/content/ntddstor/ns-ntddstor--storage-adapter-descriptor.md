@@ -67,79 +67,79 @@ typedef struct _STORAGE_ADAPTER_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Contains the version of the structure <b>STORAGE_ADAPTER_DESCRIPTOR</b>. The value of this member will change as members are added to the structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the total size of the descriptor, in bytes.</p>
 </dd>
 
-### -field <b>MaximumTransferLength</b>
+### -field MaximumTransferLength
 
 <dd>
 <p>Specifies the maximum number of bytes the host bus adapter (HBA) can transfer in a single operation.</p>
 </dd>
 
-### -field <b>MaximumPhysicalPages</b>
+### -field MaximumPhysicalPages
 
 <dd>
 <p>Specifies the maximum number of discontinuous physical pages the HBA can manage in a single transfer (in other words, the extent of its scatter/gather support).</p>
 </dd>
 
-### -field <b>AlignmentMask</b>
+### -field AlignmentMask
 
 <dd>
 <p>Specifies the HBA's alignment requirements for transfers. A storage class driver sets the <b>AlignmentRequirement</b> field in its device objects to this value. The alignment mask indicates alignment restrictions for buffers required by the HBA for transfer operations. The valid mask values are 0 (byte aligned), 1 (word aligned), 3 (DWORD aligned), and 7 (double DWORD aligned). </p>
 </dd>
 
-### -field <b>AdapterUsesPio</b>
+### -field AdapterUsesPio
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the HBA uses Programmed Input/Output (PIO) and requires the use of system-space virtual addresses mapped to physical memory for data buffers. When <b>FALSE</b>, the HBA does not use PIO.</p>
 </dd>
 
-### -field <b>AdapterScansDown</b>
+### -field AdapterScansDown
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the HBA scans down for BIOS devices, that is, the HBA begins scanning with the highest device number rather than the lowest. When <b>FALSE</b>, the HBA begins scanning with the lowest device number. This member is reserved for legacy miniport drivers.</p>
 </dd>
 
-### -field <b>CommandQueueing</b>
+### -field CommandQueueing
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the HBA supports SCSI-tagged queuing and/or per-logical-unit internal queues, or the non-SCSI equivalent. When <b>FALSE</b>, the HBA neither supports SCSI-tagged queuing nor per-logical-unit internal queues. </p>
 </dd>
 
-### -field <b>AcceleratedTransfer</b>
+### -field AcceleratedTransfer
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the HBA supports synchronous transfers as a way of speeding up I/O. When <b>FALSE</b>, the HBA does not support synchronous transfers as a way of speeding up I/O. </p>
 </dd>
 
-### -field <b>BusType</b>
+### -field BusType
 
 <dd>
 <p>Specifies a value of type <a href="storage.storage_bus_type">STORAGE_BUS_TYPE</a> that indicates the type of bus to which the device is connected.</p>
 </dd>
 
-### -field <b>BusMajorVersion</b>
+### -field BusMajorVersion
 
 <dd>
 <p>Specifies the major version number, if any, of the HBA. </p>
 </dd>
 
-### -field <b>BusMinorVersion</b>
+### -field BusMinorVersion
 
 <dd>
 <p>Specifies the minor version number, if any, of the HBA.</p>
 </dd>
 
-### -field <b>SrbType</b>
+### -field SrbType
 
 <dd>
 <p>Specifies the SCSI request block (SRB) type used by the HBA.</p>
@@ -151,7 +151,7 @@ typedef struct _STORAGE_ADAPTER_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="SRB_TYPE_SCSI_REQUEST_BLOCK"></a><a id="srb_type_scsi_request_block"></a><dl>
 
-### -field <b>SRB_TYPE_SCSI_REQUEST_BLOCK</b>
+### -field SRB_TYPE_SCSI_REQUEST_BLOCK
 
 </dl>
 </td>
@@ -162,7 +162,7 @@ typedef struct _STORAGE_ADAPTER_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="SRB_TYPE_STORAGE_REQUEST_BLOCK"></a><a id="srb_type_storage_request_block"></a><dl>
 
-### -field <b>SRB_TYPE_STORAGE_REQUEST_BLOCK</b>
+### -field SRB_TYPE_STORAGE_REQUEST_BLOCK
 
 </dl>
 </td>
@@ -175,7 +175,7 @@ typedef struct _STORAGE_ADAPTER_DESCRIPTOR {
 <p>This member is valid starting with Windows 8.</p>
 </dd>
 
-### -field <b>AddressType</b>
+### -field AddressType
 
 <dd>
 <p>Specifies the address type of the HBA.</p>
@@ -187,7 +187,7 @@ typedef struct _STORAGE_ADAPTER_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="STORAGE_ADDRESS_TYPE_BTL8"></a><a id="storage_address_type_btl8"></a><dl>
 
-### -field <b>STORAGE_ADDRESS_TYPE_BTL8</b>
+### -field STORAGE_ADDRESS_TYPE_BTL8
 
 </dl>
 </td>

@@ -58,20 +58,20 @@ typedef struct _ST_PARAMETER_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Timestamp</b>
+### -field Timestamp
 
 <dd>
 <p>Specifies the value to which a device clock shall be initialized. The timestamp
 should be the number of milliseconds that have elapsed since midnight, 1 January 1970 UT.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for future use.</p>

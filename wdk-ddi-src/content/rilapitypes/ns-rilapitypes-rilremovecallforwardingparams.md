@@ -7,7 +7,7 @@ old-location: netvista\rilremovecallforwardingparams_2.htm
 old-project: netvista
 ms.assetid: 5bdd8542-e1ef-42ac-99d7-c004039d2f33
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILREMOVECALLFORWARDINGPARAMS, RILREMOVECALLFORWARDINGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILREMOVECALLFORWARDINGPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwReason</b>
+### -field dwReason
 
 <dd></dd>
 
-### -field <b>dwInfoClasses</b>
+### -field dwInfoClasses
 
 <dd></dd>
 </dl>

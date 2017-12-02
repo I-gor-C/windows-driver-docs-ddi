@@ -59,13 +59,13 @@ VP_STATUS HwVidQueryInterface(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.</p>
 </dd>
 
-### -param <i>QueryInterface</i> 
+### -param QueryInterface 
 
 <dd>
 <p>Pointer to a <a href="..\video\ns-video--query-interface.md">QUERY_INTERFACE</a> structure in which the miniport driver should return information about the interface it supports.</p>

@@ -56,19 +56,19 @@ VOID MmFreeContiguousMemorySpecifyCache(
 ## -parameters
 <dl>
 
-### -param <i>BaseAddress</i> [in]
+### -param BaseAddress [in]
 
 <dd>
 <p>Specifies the base address of the buffer to be freed. Must match the address returned by the <b>MmAllocateContiguousMemorySpecifyCache<i>Xxx</i></b> call that allocated the buffer.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>Specifies the size in bytes of the buffer to be freed. Must match the size requested when the buffer was allocated by the <b>MmAllocateContiguousMemorySpecifyCache<i>Xxx</i></b> routine.</p>
 </dd>
 
-### -param <i>CacheType</i> [in]
+### -param CacheType [in]
 
 <dd>
 <p>Specifies the cache type of the buffer to be freed. Must match the cache type requested when the buffer was allocated by the <b>MmAllocateContiguousMemorySpecifyCache<i>Xxx</i></b> routine.</p>

@@ -7,7 +7,7 @@ old-location: wdf\wdfobjectreferenceactual.htm
 old-project: wdf
 ms.assetid: d0bb58c1-1036-496a-b108-c0d5e5de3bc2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfObjectReferenceActual
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ VOID WdfObjectReferenceActual(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>A handle to a framework object.</p>
 </dd>
 
-### -param <i>Tag</i> [in, optional]
+### -param Tag [in, optional]
 
 <dd>
 <p>A driver-defined value that the framework stores as an identification tag for the object reference.</p>
 </dd>
 
-### -param <i>Line</i> [in]
+### -param Line [in]
 
 <dd>
 <p>A numeric value that represents a line number in a driver source file.</p>
 </dd>
 
-### -param <i>File</i> [in]
+### -param File [in]
 
 <dd>
 <p>A pointer to a null-terminated constant character string that represents the name of a driver source file. This parameter is optional and can be <b>NULL</b>.</p>
@@ -175,4 +175,4 @@ VOID WdfObjectReferenceActual(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfObjectReferenceActual method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfObjectReferenceActual method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -73,121 +73,121 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>MaximumChannelsPerConnection</b>
+### -field MaximumChannelsPerConnection
 
 <dd>
 <p>Specifies the maximum number of channels per connection.</p>
 </dd>
 
-### -field <b>MinimumBitsPerSample</b>
+### -field MinimumBitsPerSample
 
 <dd>
 <p>Specifies the minimum bits per sample.</p>
 </dd>
 
-### -field <b>MaximumBitsPerSample</b>
+### -field MaximumBitsPerSample
 
 <dd>
 <p>Specifies the maximum bits per sample.</p>
 </dd>
 
-### -field <b>MinimumSampleFrequency</b>
+### -field MinimumSampleFrequency
 
 <dd>
 <p>Specifies the minimum sampling frequency.</p>
 </dd>
 
-### -field <b>MaximumSampleFrequency</b>
+### -field MaximumSampleFrequency
 
 <dd>
 <p>Specifies the maximum sampling frequency.</p>
 </dd>
 
-### -field <b>TotalConnections</b>
+### -field TotalConnections
 
 <dd>
 <p>Indicates the total number of connections.</p>
 </dd>
 
-### -field <b>StaticConnections</b>
+### -field StaticConnections
 
 <dd>
 <p>Indicates the number of static connections.</p>
 </dd>
 
-### -field <b>StreamingConnections</b>
+### -field StreamingConnections
 
 <dd>
 <p>Indicates the number of streaming connections.</p>
 </dd>
 
-### -field <b>ActiveConnections</b>
+### -field ActiveConnections
 
 <dd>
 <p>Indicates the number of active connections.</p>
 </dd>
 
-### -field <b>ActiveStaticConnections</b>
+### -field ActiveStaticConnections
 
 <dd>
 <p>Indicates the number of active static connections.</p>
 </dd>
 
-### -field <b>ActiveStreamingConnections</b>
+### -field ActiveStreamingConnections
 
 <dd>
 <p>Indicates the number of active streaming connections.</p>
 </dd>
 
-### -field <b>Total3DConnections</b>
+### -field Total3DConnections
 
 <dd>
 <p>Indicates the total number of 3D connections.</p>
 </dd>
 
-### -field <b>Static3DConnections</b>
+### -field Static3DConnections
 
 <dd>
 <p>Indicates the number of static 3D connections.</p>
 </dd>
 
-### -field <b>Streaming3DConnections</b>
+### -field Streaming3DConnections
 
 <dd>
 <p>Indicates the number of streaming 3D connections.</p>
 </dd>
 
-### -field <b>Active3DConnections</b>
+### -field Active3DConnections
 
 <dd>
 <p>Indicates the number of active 3D connections.</p>
 </dd>
 
-### -field <b>ActiveStatic3DConnections</b>
+### -field ActiveStatic3DConnections
 
 <dd>
 <p>Indicates the number of static 3D connections.</p>
 </dd>
 
-### -field <b>ActiveStreaming3DConnections</b>
+### -field ActiveStreaming3DConnections
 
 <dd>
 <p>Indicates the number of streaming 3D connections.</p>
 </dd>
 
-### -field <b>TotalSampleMemory</b>
+### -field TotalSampleMemory
 
 <dd>
 <p>Specifies the total amount of sample memory.</p>
 </dd>
 
-### -field <b>FreeSampleMemory</b>
+### -field FreeSampleMemory
 
 <dd>
 <p>Specifies the available free sample memory.</p>
 </dd>
 
-### -field <b>LargestFreeContiguousSampleMemory</b>
+### -field LargestFreeContiguousSampleMemory
 
 <dd>
 <p>Specifies the largest, free contiguous amount of sample memory.</p>

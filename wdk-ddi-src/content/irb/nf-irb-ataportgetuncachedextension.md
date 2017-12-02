@@ -56,19 +56,19 @@ PVOID AtaPortGetUnCachedExtension(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the channel extension. </p>
 </dd>
 
-### -param <i>UncachedExtensionSize</i> [in]
+### -param UncachedExtensionSize [in]
 
 <dd>
 <p>Specifies the length, in bytes, of the uncached common buffer. Set this parameter to 0 if the miniport driver does not require an uncached extension.</p>
 </dd>
 
-### -param <i>IrbExtensionSize</i> [in]
+### -param IrbExtensionSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, that is required by the miniport driver for its per request storage, if any. </p>

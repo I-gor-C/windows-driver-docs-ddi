@@ -55,13 +55,13 @@ typedef enum _MP_STORAGE_DIAGNOSTIC_LEVEL {
 ## -enum-fields
 <dl>
 
-### -field <a id="StorageDiagnosticLevelDefault"></a><a id="storagediagnosticleveldefault"></a><a id="STORAGEDIAGNOSTICLEVELDEFAULT"></a><b>StorageDiagnosticLevelDefault</b>
+### -field StorageDiagnosticLevelDefault
 
 <dd>
 <p>Specifies the default diagnostic level.</p>
 </dd>
 
-### -field <a id="StorageDiagnosticLevelMax"></a><a id="storagediagnosticlevelmax"></a><a id="STORAGEDIAGNOSTICLEVELMAX"></a><b>StorageDiagnosticLevelMax</b>
+### -field StorageDiagnosticLevelMax
 
 <dd>
 <p>Specifies the max diagnostic level.</p>

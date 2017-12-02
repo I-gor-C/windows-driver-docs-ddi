@@ -162,193 +162,193 @@ typedef enum _D3DDDIFORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDIFMT_UNKNOWN"></a><a id="d3dddifmt_unknown"></a><b>D3DDDIFMT_UNKNOWN</b>
+### -field D3DDDIFMT_UNKNOWN
 
 <dd>
 <p>An unknown format.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_R8G8B8"></a><a id="d3dddifmt_r8g8b8"></a><b>D3DDDIFMT_R8G8B8</b>
+### -field D3DDDIFMT_R8G8B8
 
 <dd>
 <p>24-bit RGB unsigned pixel format with 8 bits for each channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A8R8G8B8"></a><a id="d3dddifmt_a8r8g8b8"></a><b>D3DDDIFMT_A8R8G8B8</b>
+### -field D3DDDIFMT_A8R8G8B8
 
 <dd>
 <p>32-bit ARGB unsigned pixel format with alpha that uses 8 bits for each channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_X8R8G8B8"></a><a id="d3dddifmt_x8r8g8b8"></a><b>D3DDDIFMT_X8R8G8B8</b>
+### -field D3DDDIFMT_X8R8G8B8
 
 <dd>
 <p>32-bit RGB unsigned pixel format, where 8 bits are reserved for each color.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_R5G6B5"></a><a id="d3dddifmt_r5g6b5"></a><b>D3DDDIFMT_R5G6B5</b>
+### -field D3DDDIFMT_R5G6B5
 
 <dd>
 <p>16-bit RGB unsigned pixel format with 5 bits for red, 6 bits for green, and 5 bits for blue.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_X1R5G5B5"></a><a id="d3dddifmt_x1r5g5b5"></a><b>D3DDDIFMT_X1R5G5B5</b>
+### -field D3DDDIFMT_X1R5G5B5
 
 <dd>
 <p>16-bit unsigned pixel format where 5 bits are reserved for each color.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A1R5G5B5"></a><a id="d3dddifmt_a1r5g5b5"></a><b>D3DDDIFMT_A1R5G5B5</b>
+### -field D3DDDIFMT_A1R5G5B5
 
 <dd>
 <p>16-bit unsigned pixel format where 5 bits are reserved for each color and 1 bit is reserved for alpha.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A4R4G4B4"></a><a id="d3dddifmt_a4r4g4b4"></a><b>D3DDDIFMT_A4R4G4B4</b>
+### -field D3DDDIFMT_A4R4G4B4
 
 <dd>
 <p>16-bit ARGB unsigned pixel format with 4 bits for each channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_R3G3B2"></a><a id="d3dddifmt_r3g3b2"></a><b>D3DDDIFMT_R3G3B2</b>
+### -field D3DDDIFMT_R3G3B2
 
 <dd>
 <p>8-bit RGB unsigned texture format that uses 3 bits for red, 3 bits for green, and 2 bits for blue.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A8"></a><a id="d3dddifmt_a8"></a><b>D3DDDIFMT_A8</b>
+### -field D3DDDIFMT_A8
 
 <dd>
 <p>8-bit alpha only.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A8R3G3B2"></a><a id="d3dddifmt_a8r3g3b2"></a><b>D3DDDIFMT_A8R3G3B2</b>
+### -field D3DDDIFMT_A8R3G3B2
 
 <dd>
 <p>16-bit ARGB unsigned texture format that uses 8 bits for alpha, 3 bits each for red and green, and 2 bits for blue.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_X4R4G4B4"></a><a id="d3dddifmt_x4r4g4b4"></a><b>D3DDDIFMT_X4R4G4B4</b>
+### -field D3DDDIFMT_X4R4G4B4
 
 <dd>
 <p>16-bit RGB unsigned pixel format that uses 4 bits for each color.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A2B10G10R10"></a><a id="d3dddifmt_a2b10g10r10"></a><b>D3DDDIFMT_A2B10G10R10</b>
+### -field D3DDDIFMT_A2B10G10R10
 
 <dd>
 <p>32-bit unsigned pixel format that uses 10 bits for each color and 2 bits for alpha.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A8B8G8R8"></a><a id="d3dddifmt_a8b8g8r8"></a><b>D3DDDIFMT_A8B8G8R8</b>
+### -field D3DDDIFMT_A8B8G8R8
 
 <dd>
 <p>32-bit ARGB unsigned pixel format with alpha that uses 8 bits for each channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_X8B8G8R8"></a><a id="d3dddifmt_x8b8g8r8"></a><b>D3DDDIFMT_X8B8G8R8</b>
+### -field D3DDDIFMT_X8B8G8R8
 
 <dd>
 <p>32-bit RGB unsigned pixel format, where 8 bits are reserved for each color.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_G16R16"></a><a id="d3dddifmt_g16r16"></a><b>D3DDDIFMT_G16R16</b>
+### -field D3DDDIFMT_G16R16
 
 <dd>
 <p>32-bit unsigned pixel format that uses 16 bits each for green and red.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A2R10G10B10"></a><a id="d3dddifmt_a2r10g10b10"></a><b>D3DDDIFMT_A2R10G10B10</b>
+### -field D3DDDIFMT_A2R10G10B10
 
 <dd>
 <p>32-bit unsigned pixel format that uses 10 bits for each color and 2 bits for alpha.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A16B16G16R16"></a><a id="d3dddifmt_a16b16g16r16"></a><b>D3DDDIFMT_A16B16G16R16</b>
+### -field D3DDDIFMT_A16B16G16R16
 
 <dd>
 <p>64-bit unsigned pixel format that uses 16 bits for each component.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A8P8"></a><a id="d3dddifmt_a8p8"></a><b>D3DDDIFMT_A8P8</b>
+### -field D3DDDIFMT_A8P8
 
 <dd>
 <p>8-bit color indexed with 8 bits of alpha.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_P8"></a><a id="d3dddifmt_p8"></a><b>D3DDDIFMT_P8</b>
+### -field D3DDDIFMT_P8
 
 <dd>
 <p>8-bit color indexed.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_L8"></a><a id="d3dddifmt_l8"></a><b>D3DDDIFMT_L8</b>
+### -field D3DDDIFMT_L8
 
 <dd>
 <p>8-bit luminance only.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A8L8"></a><a id="d3dddifmt_a8l8"></a><b>D3DDDIFMT_A8L8</b>
+### -field D3DDDIFMT_A8L8
 
 <dd>
 <p>16-bit format that uses 8 bits each for alpha and luminance.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A4L4"></a><a id="d3dddifmt_a4l4"></a><b>D3DDDIFMT_A4L4</b>
+### -field D3DDDIFMT_A4L4
 
 <dd>
 <p>8-bit format that uses 4 bits each for alpha and luminance.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_V8U8"></a><a id="d3dddifmt_v8u8"></a><b>D3DDDIFMT_V8U8</b>
+### -field D3DDDIFMT_V8U8
 
 <dd>
 <p>16-bit signed bump-map format that uses 8 bits each for u and v data.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_L6V5U5"></a><a id="d3dddifmt_l6v5u5"></a><b>D3DDDIFMT_L6V5U5</b>
+### -field D3DDDIFMT_L6V5U5
 
 <dd>
 <p>16-bit mixed signed and unsigned bump-map format with luminance that uses 6 bits for luminance and 5 bits each for v and u data.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_X8L8V8U8"></a><a id="d3dddifmt_x8l8v8u8"></a><b>D3DDDIFMT_X8L8V8U8</b>
+### -field D3DDDIFMT_X8L8V8U8
 
 <dd>
 <p>32-bit mixed signed and unsigned bump-map format with luminance that uses 8 bits for each channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_Q8W8V8U8"></a><a id="d3dddifmt_q8w8v8u8"></a><b>D3DDDIFMT_Q8W8V8U8</b>
+### -field D3DDDIFMT_Q8W8V8U8
 
 <dd>
 <p>32-bit signed bump-map format that uses 8 bits for each channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_V16U16"></a><a id="d3dddifmt_v16u16"></a><b>D3DDDIFMT_V16U16</b>
+### -field D3DDDIFMT_V16U16
 
 <dd>
 <p>32-bit signed bump-map format using 16 bits each for u and v data.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_W11V11U10"></a><a id="d3dddifmt_w11v11u10"></a><b>D3DDDIFMT_W11V11U10</b>
+### -field D3DDDIFMT_W11V11U10
 
 <dd>
 <p>32-bit signed bump-map format that uses 11 bits each for w and v and 10 bits for u.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A2W10V10U10"></a><a id="d3dddifmt_a2w10v10u10"></a><b>D3DDDIFMT_A2W10V10U10</b>
+### -field D3DDDIFMT_A2W10V10U10
 
 <dd>
 <p>32-bit mixed signed and unsigned bump-map format that uses 2 bits for alpha and 10 bits each for w, v, and u.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_UYVY"></a><a id="d3dddifmt_uyvy"></a><b>D3DDDIFMT_UYVY</b>
+### -field D3DDDIFMT_UYVY
 
 <dd>
 <p>UYVY FOURCC format (MAKEFOURCC('U', 'Y', 'V', 'Y')).</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_R8G8_B8G8"></a><a id="d3dddifmt_r8g8_b8g8"></a><b>D3DDDIFMT_R8G8_B8G8</b>
+### -field D3DDDIFMT_R8G8_B8G8
 
 <dd>
 <p>RGBG FOURCC format (MAKEFOURCC('R', 'G', 'B', 'G')).</p>
@@ -356,13 +356,13 @@ typedef enum _D3DDDIFORMAT {
 <p>The texture sampler does not normalize the colors when looking up into a pixel shader; they remain in the range from 0.0f through 255.0f. This situation occurs for all programmable pixel shader models. For the fixed function pixel shader, the hardware should normalize to the range from 0.f through 1.f and treat it as the YUY2 texture. Hardware that exposes this format must have the <b>PixelShader1xMaxValue</b> member of the D3DCAPS9 structure set to a value that is capable of handling that range (0.f through 1.f).</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_YUY2"></a><a id="d3dddifmt_yuy2"></a><b>D3DDDIFMT_YUY2</b>
+### -field D3DDDIFMT_YUY2
 
 <dd>
 <p>YUY2 FOURCC format (MAKEFOURCC('Y', 'U', 'Y', '2')).</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_G8R8_G8B8"></a><a id="d3dddifmt_g8r8_g8b8"></a><b>D3DDDIFMT_G8R8_G8B8</b>
+### -field D3DDDIFMT_G8R8_G8B8
 
 <dd>
 <p>GRGB FOURCC format (MAKEFOURCC('G', 'R', 'G', 'B')).</p>
@@ -370,440 +370,440 @@ typedef enum _D3DDDIFORMAT {
 <p>The texture sampler does not normalize the colors when looking up into a pixel shader; they remain in the range from 0.0f through 255.0f. This situation occurs for all programmable pixel shader models. For the fixed function pixel shader, the hardware should normalize to the range from 0.f through 1.f and treat it as the YUY2 texture. Hardware that exposes this format must have the <b>PixelShader1xMaxValue</b> member of D3DCAPS9 set to a value that is capable of handling that range (0.f through 1.f).</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXT1"></a><a id="d3dddifmt_dxt1"></a><b>D3DDDIFMT_DXT1</b>
+### -field D3DDDIFMT_DXT1
 
 <dd>
 <p>DXT1 FOURCC compression texture format (MAKEFOURCC('D', 'X', 'T', '1')).</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXT2"></a><a id="d3dddifmt_dxt2"></a><b>D3DDDIFMT_DXT2</b>
+### -field D3DDDIFMT_DXT2
 
 <dd>
 <p>DXT2 FOURCC compression texture format (MAKEFOURCC('D', 'X', 'T', '2')).</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXT3"></a><a id="d3dddifmt_dxt3"></a><b>D3DDDIFMT_DXT3</b>
+### -field D3DDDIFMT_DXT3
 
 <dd>
 <p>DXT3 FOURCC compression texture format (MAKEFOURCC('D', 'X', 'T', '3')).</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXT4"></a><a id="d3dddifmt_dxt4"></a><b>D3DDDIFMT_DXT4</b>
+### -field D3DDDIFMT_DXT4
 
 <dd>
 <p>DXT4 FOURCC compression texture format (MAKEFOURCC('D', 'X', 'T', '4')).</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXT5"></a><a id="d3dddifmt_dxt5"></a><b>D3DDDIFMT_DXT5</b>
+### -field D3DDDIFMT_DXT5
 
 <dd>
 <p>DXT5 FOURCC compression texture format (MAKEFOURCC('D', 'X', 'T', '5')).</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_D16_LOCKABLE"></a><a id="d3dddifmt_d16_lockable"></a><b>D3DDDIFMT_D16_LOCKABLE</b>
+### -field D3DDDIFMT_D16_LOCKABLE
 
 <dd>
 <p>16-bit z-buffer bit depth.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_D32"></a><a id="d3dddifmt_d32"></a><b>D3DDDIFMT_D32</b>
+### -field D3DDDIFMT_D32
 
 <dd>
 <p>32-bit z-buffer bit depth.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_D15S1"></a><a id="d3dddifmt_d15s1"></a><b>D3DDDIFMT_D15S1</b>
+### -field D3DDDIFMT_D15S1
 
 <dd>
 <p>16-bit z-buffer bit depth where 15 bits are reserved for the depth channel and 1 bit is reserved for the stencil channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_D24S8"></a><a id="d3dddifmt_d24s8"></a><b>D3DDDIFMT_D24S8</b>
+### -field D3DDDIFMT_D24S8
 
 <dd>
 <p>32-bit z-buffer bit depth that uses 24 bits for the depth channel and 8 bits for the stencil channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_D24X8"></a><a id="d3dddifmt_d24x8"></a><b>D3DDDIFMT_D24X8</b>
+### -field D3DDDIFMT_D24X8
 
 <dd>
 <p>32-bit z-buffer bit depth that uses 24 bits for the depth channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_D24X4S4"></a><a id="d3dddifmt_d24x4s4"></a><b>D3DDDIFMT_D24X4S4</b>
+### -field D3DDDIFMT_D24X4S4
 
 <dd>
 <p>32-bit z-buffer bit depth that uses 24 bits for the depth channel and 4 bits for the stencil channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_D16"></a><a id="d3dddifmt_d16"></a><b>D3DDDIFMT_D16</b>
+### -field D3DDDIFMT_D16
 
 <dd>
 <p>16-bit z-buffer bit depth.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_D32F_LOCKABLE"></a><a id="d3dddifmt_d32f_lockable"></a><b>D3DDDIFMT_D32F_LOCKABLE</b>
+### -field D3DDDIFMT_D32F_LOCKABLE
 
 <dd>
 <p>A lockable buffer format where the depth value is represented as a standard IEEE floating-point number.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_D24FS8"></a><a id="d3dddifmt_d24fs8"></a><b>D3DDDIFMT_D24FS8</b>
+### -field D3DDDIFMT_D24FS8
 
 <dd>
 <p>A non-lockable buffer format that contains 24 bits of depth (in a 24-bit floating point format: - 20e4) and 8 bits of stencil.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_D32_LOCKABLE"></a><a id="d3dddifmt_d32_lockable"></a><b>D3DDDIFMT_D32_LOCKABLE</b>
+### -field D3DDDIFMT_D32_LOCKABLE
 
 <dd>
 <p>A lockable buffer format that uses 32 bits for the depth channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_S8_LOCKABLE"></a><a id="d3dddifmt_s8_lockable"></a><b>D3DDDIFMT_S8_LOCKABLE</b>
+### -field D3DDDIFMT_S8_LOCKABLE
 
 <dd>
 <p>A lockable buffer format that uses 8 bits for the stencil channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_S1D15"></a><a id="d3dddifmt_s1d15"></a><b>D3DDDIFMT_S1D15</b>
+### -field D3DDDIFMT_S1D15
 
 <dd>
 <p>16-bit z-buffer bit depth where 15 bits are reserved for the depth channel and 1 bit is reserved for the stencil channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_S8D24"></a><a id="d3dddifmt_s8d24"></a><b>D3DDDIFMT_S8D24</b>
+### -field D3DDDIFMT_S8D24
 
 <dd>
 <p>32-bit z-buffer bit depth that uses 24 bits for the depth channel and 8 bits for the stencil channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_X8D24"></a><a id="d3dddifmt_x8d24"></a><b>D3DDDIFMT_X8D24</b>
+### -field D3DDDIFMT_X8D24
 
 <dd>
 <p>32-bit z-buffer bit depth that uses 24 bits for the depth channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_X4S4D24"></a><a id="d3dddifmt_x4s4d24"></a><b>D3DDDIFMT_X4S4D24</b>
+### -field D3DDDIFMT_X4S4D24
 
 <dd>
 <p>32-bit z-buffer bit depth that uses 24 bits for the depth channel and 4 bits for the stencil channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_L16"></a><a id="d3dddifmt_l16"></a><b>D3DDDIFMT_L16</b>
+### -field D3DDDIFMT_L16
 
 <dd>
 <p>16-bit luminance only.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_G8R8"></a><a id="d3dddifmt_g8r8"></a><b>D3DDDIFMT_G8R8</b>
+### -field D3DDDIFMT_G8R8
 
 <dd>
 <p>A two-component, 16-bit unsigned-normalized-integer format that supports 8 bits for the red channel and 8 bits for the green channel. Equivalent to <b>DXGI_FORMAT_R8G8_UNORM</b> from the <a href="direct3ddxgi.dxgi_format">DXGI_FORMAT</a> enumeration.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_R8"></a><a id="d3dddifmt_r8"></a><b>D3DDDIFMT_R8</b>
+### -field D3DDDIFMT_R8
 
 <dd>
 <p>A single-component, 8-bit unsigned-normalized-integer format that supports 8 bits for the red channel. Equivalent to <b>DXGI_FORMAT_R8_UNORM</b> from the <a href="direct3ddxgi.dxgi_format">DXGI_FORMAT</a> enumeration.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_VERTEXDATA"></a><a id="d3dddifmt_vertexdata"></a><b>D3DDDIFMT_VERTEXDATA</b>
+### -field D3DDDIFMT_VERTEXDATA
 
 <dd>
 <p>A vertex buffer surface.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_INDEX16"></a><a id="d3dddifmt_index16"></a><b>D3DDDIFMT_INDEX16</b>
+### -field D3DDDIFMT_INDEX16
 
 <dd>
 <p>16-bit index buffer bit depth.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_INDEX32"></a><a id="d3dddifmt_index32"></a><b>D3DDDIFMT_INDEX32</b>
+### -field D3DDDIFMT_INDEX32
 
 <dd>
 <p>32-bit index buffer bit depth.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_Q16W16V16U16"></a><a id="d3dddifmt_q16w16v16u16"></a><b>D3DDDIFMT_Q16W16V16U16</b>
+### -field D3DDDIFMT_Q16W16V16U16
 
 <dd>
 <p>64-bit signed bump-map format that uses 16 bits for each channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_MULTI2_ARGB8"></a><a id="d3dddifmt_multi2_argb8"></a><b>D3DDDIFMT_MULTI2_ARGB8</b>
+### -field D3DDDIFMT_MULTI2_ARGB8
 
 <dd>
 <p>MultiElement FOURCC noncompressed texture (MAKEFOURCC('M','E','T','1')).</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_R16F"></a><a id="d3dddifmt_r16f"></a><b>D3DDDIFMT_R16F</b>
+### -field D3DDDIFMT_R16F
 
 <dd>
 <p>16-bit s10e5 floating-point surface format that uses 16 bits for the red channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_G16R16F"></a><a id="d3dddifmt_g16r16f"></a><b>D3DDDIFMT_G16R16F</b>
+### -field D3DDDIFMT_G16R16F
 
 <dd>
 <p>32-bit s10e5 floating-point surface format that uses 16 bits for the red channel and 16 bits for the green channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A16B16G16R16F"></a><a id="d3dddifmt_a16b16g16r16f"></a><b>D3DDDIFMT_A16B16G16R16F</b>
+### -field D3DDDIFMT_A16B16G16R16F
 
 <dd>
 <p>64-bit s10e5 floating-point surface format that uses 16 bits for each channel (alpha, blue, green, and red).</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_R32F"></a><a id="d3dddifmt_r32f"></a><b>D3DDDIFMT_R32F</b>
+### -field D3DDDIFMT_R32F
 
 <dd>
 <p>32-bit s23e8 floating-point surface format that uses 32 bits for the red channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_G32R32F"></a><a id="d3dddifmt_g32r32f"></a><b>D3DDDIFMT_G32R32F</b>
+### -field D3DDDIFMT_G32R32F
 
 <dd>
 <p>64-bit s23e8 floating-point surface format that uses 32 bits for the red channel and 32 bits for the green channel.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A32B32G32R32F"></a><a id="d3dddifmt_a32b32g32r32f"></a><b>D3DDDIFMT_A32B32G32R32F</b>
+### -field D3DDDIFMT_A32B32G32R32F
 
 <dd>
 <p>128-bit s23e8 floating-point surface format that uses 32 bits for the each channel (alpha, blue, green, and red).</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_CxV8U8"></a><a id="d3dddifmt_cxv8u8"></a><a id="D3DDDIFMT_CXV8U8"></a><b>D3DDDIFMT_CxV8U8</b>
+### -field D3DDDIFMT_CxV8U8
 
 <dd>
 <p>16-bit signed normal compression format. The texture sampler computes the C channel from: C = sqrt(1 - U2 - V2).</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A1"></a><a id="d3dddifmt_a1"></a><b>D3DDDIFMT_A1</b>
+### -field D3DDDIFMT_A1
 
 <dd>
 <p>A monochrome 1-bit per pixel format. </p>
 </dd>
 
-### -field <a id="D3DDDIFMT_A2B10G10R10_XR_BIAS"></a><a id="d3dddifmt_a2b10g10r10_xr_bias"></a><b>D3DDDIFMT_A2B10G10R10_XR_BIAS</b>
+### -field D3DDDIFMT_A2B10G10R10_XR_BIAS
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>
 <p>32-bit unsigned pixel format that uses 10 bits for each color and 2 bits for alpha along with 2.8 biased fixed point. </p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVACOMPBUFFER_BASE"></a><a id="d3dddifmt_dxvacompbuffer_base"></a><b>D3DDDIFMT_DXVACOMPBUFFER_BASE</b>
+### -field D3DDDIFMT_DXVACOMPBUFFER_BASE
 
 <dd>
 <p>A base compressed buffer format value. </p>
 </dd>
 
-### -field <a id="D3DDDIFMT_PICTUREPARAMSDATA"></a><a id="d3dddifmt_pictureparamsdata"></a><b>D3DDDIFMT_PICTUREPARAMSDATA</b>
+### -field D3DDDIFMT_PICTUREPARAMSDATA
 
 <dd>
 <p>Picture parameters decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_MACROBLOCKDATA"></a><a id="d3dddifmt_macroblockdata"></a><b>D3DDDIFMT_MACROBLOCKDATA</b>
+### -field D3DDDIFMT_MACROBLOCKDATA
 
 <dd>
 <p>Macroblock control command decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_RESIDUALDIFFERENCEDATA"></a><a id="d3dddifmt_residualdifferencedata"></a><b>D3DDDIFMT_RESIDUALDIFFERENCEDATA</b>
+### -field D3DDDIFMT_RESIDUALDIFFERENCEDATA
 
 <dd>
 <p>Residual block difference decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DEBLOCKINGDATA"></a><a id="d3dddifmt_deblockingdata"></a><b>D3DDDIFMT_DEBLOCKINGDATA</b>
+### -field D3DDDIFMT_DEBLOCKINGDATA
 
 <dd>
 <p>Deblocking filter control command decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_INVERSEQUANTIZATIONDATA"></a><a id="d3dddifmt_inversequantizationdata"></a><b>D3DDDIFMT_INVERSEQUANTIZATIONDATA</b>
+### -field D3DDDIFMT_INVERSEQUANTIZATIONDATA
 
 <dd>
 <p>Inverse-quantization matrix decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_SLICECONTROLDATA"></a><a id="d3dddifmt_slicecontroldata"></a><b>D3DDDIFMT_SLICECONTROLDATA</b>
+### -field D3DDDIFMT_SLICECONTROLDATA
 
 <dd>
 <p>Slice-control decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_BITSTREAMDATA"></a><a id="d3dddifmt_bitstreamdata"></a><b>D3DDDIFMT_BITSTREAMDATA</b>
+### -field D3DDDIFMT_BITSTREAMDATA
 
 <dd>
 <p>Bitstream data decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_MOTIONVECTORBUFFER"></a><a id="d3dddifmt_motionvectorbuffer"></a><b>D3DDDIFMT_MOTIONVECTORBUFFER</b>
+### -field D3DDDIFMT_MOTIONVECTORBUFFER
 
 <dd>
 <p>Motion-vector decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_FILMGRAINBUFFER"></a><a id="d3dddifmt_filmgrainbuffer"></a><b>D3DDDIFMT_FILMGRAINBUFFER</b>
+### -field D3DDDIFMT_FILMGRAINBUFFER
 
 <dd>
 <p>Film-grain decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED9"></a><a id="d3dddifmt_dxva_reserved9"></a><b>D3DDDIFMT_DXVA_RESERVED9</b>
+### -field D3DDDIFMT_DXVA_RESERVED9
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED10"></a><a id="d3dddifmt_dxva_reserved10"></a><b>D3DDDIFMT_DXVA_RESERVED10</b>
+### -field D3DDDIFMT_DXVA_RESERVED10
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED11"></a><a id="d3dddifmt_dxva_reserved11"></a><b>D3DDDIFMT_DXVA_RESERVED11</b>
+### -field D3DDDIFMT_DXVA_RESERVED11
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED12"></a><a id="d3dddifmt_dxva_reserved12"></a><b>D3DDDIFMT_DXVA_RESERVED12</b>
+### -field D3DDDIFMT_DXVA_RESERVED12
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED13"></a><a id="d3dddifmt_dxva_reserved13"></a><b>D3DDDIFMT_DXVA_RESERVED13</b>
+### -field D3DDDIFMT_DXVA_RESERVED13
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED14"></a><a id="d3dddifmt_dxva_reserved14"></a><b>D3DDDIFMT_DXVA_RESERVED14</b>
+### -field D3DDDIFMT_DXVA_RESERVED14
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED15"></a><a id="d3dddifmt_dxva_reserved15"></a><b>D3DDDIFMT_DXVA_RESERVED15</b>
+### -field D3DDDIFMT_DXVA_RESERVED15
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED16"></a><a id="d3dddifmt_dxva_reserved16"></a><b>D3DDDIFMT_DXVA_RESERVED16</b>
+### -field D3DDDIFMT_DXVA_RESERVED16
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED17"></a><a id="d3dddifmt_dxva_reserved17"></a><b>D3DDDIFMT_DXVA_RESERVED17</b>
+### -field D3DDDIFMT_DXVA_RESERVED17
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED18"></a><a id="d3dddifmt_dxva_reserved18"></a><b>D3DDDIFMT_DXVA_RESERVED18</b>
+### -field D3DDDIFMT_DXVA_RESERVED18
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED19"></a><a id="d3dddifmt_dxva_reserved19"></a><b>D3DDDIFMT_DXVA_RESERVED19</b>
+### -field D3DDDIFMT_DXVA_RESERVED19
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED20"></a><a id="d3dddifmt_dxva_reserved20"></a><b>D3DDDIFMT_DXVA_RESERVED20</b>
+### -field D3DDDIFMT_DXVA_RESERVED20
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED21"></a><a id="d3dddifmt_dxva_reserved21"></a><b>D3DDDIFMT_DXVA_RESERVED21</b>
+### -field D3DDDIFMT_DXVA_RESERVED21
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED22"></a><a id="d3dddifmt_dxva_reserved22"></a><b>D3DDDIFMT_DXVA_RESERVED22</b>
+### -field D3DDDIFMT_DXVA_RESERVED22
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED23"></a><a id="d3dddifmt_dxva_reserved23"></a><b>D3DDDIFMT_DXVA_RESERVED23</b>
+### -field D3DDDIFMT_DXVA_RESERVED23
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED24"></a><a id="d3dddifmt_dxva_reserved24"></a><b>D3DDDIFMT_DXVA_RESERVED24</b>
+### -field D3DDDIFMT_DXVA_RESERVED24
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED25"></a><a id="d3dddifmt_dxva_reserved25"></a><b>D3DDDIFMT_DXVA_RESERVED25</b>
+### -field D3DDDIFMT_DXVA_RESERVED25
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED26"></a><a id="d3dddifmt_dxva_reserved26"></a><b>D3DDDIFMT_DXVA_RESERVED26</b>
+### -field D3DDDIFMT_DXVA_RESERVED26
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED27"></a><a id="d3dddifmt_dxva_reserved27"></a><b>D3DDDIFMT_DXVA_RESERVED27</b>
+### -field D3DDDIFMT_DXVA_RESERVED27
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED28"></a><a id="d3dddifmt_dxva_reserved28"></a><b>D3DDDIFMT_DXVA_RESERVED28</b>
+### -field D3DDDIFMT_DXVA_RESERVED28
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED29"></a><a id="d3dddifmt_dxva_reserved29"></a><b>D3DDDIFMT_DXVA_RESERVED29</b>
+### -field D3DDDIFMT_DXVA_RESERVED29
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED30"></a><a id="d3dddifmt_dxva_reserved30"></a><b>D3DDDIFMT_DXVA_RESERVED30</b>
+### -field D3DDDIFMT_DXVA_RESERVED30
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVA_RESERVED31"></a><a id="d3dddifmt_dxva_reserved31"></a><b>D3DDDIFMT_DXVA_RESERVED31</b>
+### -field D3DDDIFMT_DXVA_RESERVED31
 
 <dd>
 <p>Reserved for a DirectX VA format type.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_DXVACOMPBUFFER_MAX"></a><a id="d3dddifmt_dxvacompbuffer_max"></a><b>D3DDDIFMT_DXVACOMPBUFFER_MAX</b>
+### -field D3DDDIFMT_DXVACOMPBUFFER_MAX
 
 <dd>
 <p>Indicates that the maximum compressed buffer format value was reached.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_BINARYBUFFER"></a><a id="d3dddifmt_binarybuffer"></a><b>D3DDDIFMT_BINARYBUFFER</b>
+### -field D3DDDIFMT_BINARYBUFFER
 
 <dd>
 <p>A binary-buffer format.</p>
 </dd>
 
-### -field <a id="D3DDDIFMT_FORCE_UINT"></a><a id="d3dddifmt_force_uint"></a><b>D3DDDIFMT_FORCE_UINT</b>
+### -field D3DDDIFMT_FORCE_UINT
 
 <dd>
 <p>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</p>

@@ -58,25 +58,25 @@ HRESULT DrvUpdateUISetting(
 ## -parameters
 <dl>
 
-### -param <i>pci</i> 
+### -param pci 
 
 <dd>
 <p>Caller-supplied pointer to an <a href="..\printoem\ns-printoem--oemuiobj.md">OEMUIOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pOptItem</i> 
+### -param pOptItem 
 
 <dd>
 <p>Caller-supplied pointer to an <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structure describing a user interface option item.</p>
 </dd>
 
-### -param <i>dwPreviousSelection</i> 
+### -param dwPreviousSelection 
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -param <i>dwMode</i> 
+### -param dwMode 
 
 <dd>
 <p>Caller-supplied integer constant indicating to which property sheet page the supplied option item belongs. The following constants are valid.</p>

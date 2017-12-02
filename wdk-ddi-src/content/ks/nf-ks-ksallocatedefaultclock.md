@@ -54,7 +54,7 @@ NTSTATUS KsAllocateDefaultClock(
 ## -parameters
 <dl>
 
-### -param <i>DefaultClock</i> [out]
+### -param DefaultClock [out]
 
 <dd>
 <p>Specifies the caller-allocated shared default clock structure. The current time is set to zero and the state is set to KSSTATE_STOP. Upon successful completion of this routine, the structure indicated by this pointer will contain a reference to the default clock. The data returned should be treated as opaque and reserved for system use.</p>

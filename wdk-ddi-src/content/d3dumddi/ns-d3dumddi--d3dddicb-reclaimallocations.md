@@ -57,7 +57,7 @@ typedef struct _D3DDDICB_RECLAIMALLOCATIONS {
 ## -struct-fields
 <dl>
 
-### -field <b>pResources</b>
+### -field pResources
 
 <dd>
 <p>[in] A pointer to an array of handles to the resources that are to be reclaimed.</p>
@@ -66,14 +66,14 @@ typedef struct _D3DDDICB_RECLAIMALLOCATIONS {
 <div> </div>
 </dd>
 
-### -field <b>HandleList</b>
+### -field HandleList
 
 <dd>
 <p>[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations that are to be reclaimed.</p>
 <p>If <b>HandleList</b> is not <b>NULL</b>, the <b>pResources</b> member must be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>pDiscarded</b>
+### -field pDiscarded
 
 <dd>
 <p>[out] An  array of Boolean values that specify whether each resource or allocation was discarded.</p>
@@ -82,7 +82,7 @@ typedef struct _D3DDDICB_RECLAIMALLOCATIONS {
 <p>The value of <b>pDiscarded</b> can be <b>NULL</b>. If the driver sets it to <b>NULL</b>, the content of the resource or allocation can be assumed to be lost. If the driver does not need the content of the resource or allocation, setting <b>pDiscarded</b> to <b>NULL</b> might improve performance.</p>
 </dd>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of items in the <b>pResources</b>, <b>HandleList</b>, or  <b>pDiscarded</b> members, whichever is not <b>NULL</b>.</p>

@@ -68,91 +68,91 @@ typedef struct _MPIO_DSM_Path_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>DsmPathId</b>
+### -field DsmPathId
 
 <dd>
 <p>An unsigned 64-bitfield that is used as a unique identifier to distinguish paths known to the DSM.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Should be zero.</p>
 </dd>
 
-### -field <b>PathWeight</b>
+### -field PathWeight
 
 <dd>
 <p>An unsigned 32-bitfield that holds the weight associated with the given path.</p>
 </dd>
 
-### -field <b>PrimaryPath</b>
+### -field PrimaryPath
 
 <dd>
 <p>An unsigned 32-bitfield that is used as a flag to indicate the path state when accessing a particular LUN.</p>
 </dd>
 
-### -field <b>OptimizedPath</b>
+### -field OptimizedPath
 
 <dd>
 <p>An unsigned 32-bitfield that is used in conjunction with <i>PrimaryPath</i> to indicate the path state for accessing a LUN.</p>
 </dd>
 
-### -field <b>PreferredPath</b>
+### -field PreferredPath
 
 <dd>
 <p>An unsigned 32-bitfield that is used as a flag to indicate whether this is the preferred path for accessing the LUN.</p>
 </dd>
 
-### -field <b>FailedPath</b>
+### -field FailedPath
 
 <dd>
 <p>A 32-bit unsigned field that is used as a flag to indicate if the path has failed.</p>
 </dd>
 
-### -field <b>TargetPortGroup_State</b>
+### -field TargetPortGroup_State
 
 <dd>
 <p>An unsigned 32-bitfield that is used to indicate the access state of the target port group to which this instance of the LUN belongs.</p>
 </dd>
 
-### -field <b>ALUASupport</b>
+### -field ALUASupport
 
 <dd>
 <p>An unsigned 32-bitfield that returns the Asymmetrical Logical Unit Access (ALUA) state transition support that is indicated by the LUN.</p>
 </dd>
 
-### -field <b>SymmetricLUA</b>
+### -field SymmetricLUA
 
 <dd>
 <p>An unsigned 8-bitfield that is used as a flag to indicate to the application if logical unit access is symmetric.</p>
 </dd>
 
-### -field <b>TargetPortGroup_Preferred</b>
+### -field TargetPortGroup_Preferred
 
 <dd>
 <p>An unsigned 8-bitfield that is used as a flag. This field indicates if the LUN's target port group that corresponds to this path is preferred for the LUN access.</p>
 </dd>
 
-### -field <b>TargetPortGroup_Identifier</b>
+### -field TargetPortGroup_Identifier
 
 <dd>
 <p>An unsigned 16-bitfield that contains the identifier of the LUN's target port group that corresponds to this path.</p>
 </dd>
 
-### -field <b>TargetPort_Identifier</b>
+### -field TargetPort_Identifier
 
 <dd>
 <p>An unsigned 32-bitfield that contains the identifier of the target port that corresponds to this path through which the LUN has been exposed.</p>
 </dd>
 
-### -field <b>Reserved32</b>
+### -field Reserved32
 
 <dd>
 <p>Should be zero.</p>
 </dd>
 
-### -field <b>Reserved64</b>
+### -field Reserved64
 
 <dd>
 <p>Should be zero.</p>

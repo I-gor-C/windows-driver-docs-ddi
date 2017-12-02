@@ -57,13 +57,13 @@ typedef struct _USBSIDEBANDAUDIO_SIDETONE_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved 0</b>
+### -field Reserved 0
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <b>Reserved 1</b>
+### -field Reserved 1
 
 <dd>
 <p>TBD</p>

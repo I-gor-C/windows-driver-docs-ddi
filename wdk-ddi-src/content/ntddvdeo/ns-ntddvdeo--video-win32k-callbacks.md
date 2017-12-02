@@ -58,31 +58,31 @@ typedef struct _VIDEO_WIN32K_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>PhysDisp</b>
+### -field PhysDisp
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Callout</b>
+### -field Callout
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>bACPI</b>
+### -field bACPI
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>pPhysDeviceObject</b>
+### -field pPhysDeviceObject
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>DualviewFlags</b>
+### -field DualviewFlags
 
 <dd>
 <p>Reserved for system use.</p>

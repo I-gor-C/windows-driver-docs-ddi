@@ -57,25 +57,25 @@ typedef struct _D3DDDIARG_VIEWPORTINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>X</b>
+### -field X
 
 <dd>
 <p>[in] The x coordinate, in screen coordinates, for the upper-left corner of the view-clipping rectangle.</p>
 </dd>
 
-### -field <b>Y</b>
+### -field Y
 
 <dd>
 <p>[in] The y coordinate, in screen coordinates, for the upper-left corner of the view-clipping rectangle.</p>
 </dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>[in] The width, in screen coordinates, of the view-clipping rectangle where the application is rendering.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[in] The height, in screen coordinates, of the view-clipping rectangle where the application is rendering.</p>

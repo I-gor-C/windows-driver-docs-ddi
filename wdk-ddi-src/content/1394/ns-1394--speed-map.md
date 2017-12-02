@@ -7,7 +7,7 @@ old-location: ieee\speed_map.htm
 old-project: IEEE
 ms.assetid: 52b2b97e-217b-445b-9c7a-093808f37aba
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: SPEED_MAP, SPEED_MAP, *PSPEED_MAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,25 +56,25 @@ typedef struct _SPEED_MAP {
 ## -struct-fields
 <dl>
 
-### -field <b>SPD_Length</b>
+### -field SPD_Length
 
 <dd>
 <p>Specifies the number of quadlets in the speed map.</p>
 </dd>
 
-### -field <b>SPD_CRC</b>
+### -field SPD_CRC
 
 <dd>
 <p>Specifies the CRC value for the speed map.</p>
 </dd>
 
-### -field <b>SPD_Generation</b>
+### -field SPD_Generation
 
 <dd>
 <p>Specifies the generation count for the bus reset that corresponds to this speed map.</p>
 </dd>
 
-### -field <b>SPD_Speed_Code</b>
+### -field SPD_Speed_Code
 
 <dd>
 <p>Specifies an array of speed codes. Currently, the possible values are:</p>
@@ -117,4 +117,4 @@ typedef struct _SPEED_MAP {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20SPEED_MAP structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20SPEED_MAP structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\ril_getcellbroadcastmsgconfig.htm
 old-project: netvista
 ms.assetid: eeb6392c-a399-4e08-b4f8-54577beddf19
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetCellBroadcastMsgConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_GetCellBroadcastMsgConfig(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 </dl>

@@ -58,7 +58,7 @@ req.iface:
 ## -parameters
 <dl>
 
-### -param <i>CorrelationVector</i> [in, out]
+### -param CorrelationVector [in, out]
 
 <dd>
 <p>A pointer to a  <a href="..\ntddk\ns-ntddk-correlation-vector.md">CORRELATION_VECTOR</a> structure that represents the correlation vector to be extended.</p>

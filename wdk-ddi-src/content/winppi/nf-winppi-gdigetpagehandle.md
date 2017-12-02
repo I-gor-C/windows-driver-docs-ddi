@@ -57,19 +57,19 @@ HANDLE GdiGetPageHandle(
 ## -parameters
 <dl>
 
-### -param <i>SpoolFileHandle</i> 
+### -param SpoolFileHandle 
 
 <dd>
 <p>Caller-supplied spool file handle, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>.</p>
 </dd>
 
-### -param <i>Page</i> 
+### -param Page 
 
 <dd>
 <p>Caller-supplied page number.</p>
 </dd>
 
-### -param <i>pdwPageType</i> 
+### -param pdwPageType 
 
 <dd>
 <p>Caller-supplied pointer to a location that receives the page type. The possible page types are shown in the following table:</p>
@@ -107,7 +107,7 @@ HANDLE GdiGetPageHandle(
 
 <p>Print processors must obtain a page handle before calling <a href="..\winppi\nf-winppi-gdiplaypageemf.md">GdiPlayPageEMF</a> to draw a page. If a Page value is specified that is too large, the function returns ERROR_NO_MORE_ITEMS.</p>
 
-<p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.</p>
 
 ## -requirements
 <table>

@@ -54,7 +54,7 @@ VOID KsDiscardEvent(
 ## -parameters
 <dl>
 
-### -param <i>EventEntry</i> [in]
+### -param EventEntry [in]
 
 <dd>
 <p>Specifies the pointer to the entry to discard. This pointer is no longer valid after a successful call to this function.</p>

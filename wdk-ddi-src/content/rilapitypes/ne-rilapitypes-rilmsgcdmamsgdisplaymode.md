@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmamsgdisplaymode_2.htm
 old-project: netvista
 ms.assetid: 6ec37cf6-0d07-445b-9a5b-8d560069c612
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILMSGCDMAMSGDISPLAYMODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGDISPLAYMODE_MOBILEDEFAULT"></a><a id="ril_msgdisplaymode_mobiledefault"></a><b>RIL_MSGDISPLAYMODE_MOBILEDEFAULT</b>
+### -field RIL_MSGDISPLAYMODE_MOBILEDEFAULT
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDISPLAYMODE_USERDEFAULT"></a><a id="ril_msgdisplaymode_userdefault"></a><b>RIL_MSGDISPLAYMODE_USERDEFAULT</b>
+### -field RIL_MSGDISPLAYMODE_USERDEFAULT
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDISPLAYMODE_MAX"></a><a id="ril_msgdisplaymode_max"></a><b>RIL_MSGDISPLAYMODE_MAX</b>
+### -field RIL_MSGDISPLAYMODE_MAX
 
 <dd></dd>
 </dl>

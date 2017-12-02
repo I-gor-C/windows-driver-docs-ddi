@@ -56,13 +56,13 @@ NTSTATUS TmRenameTransactionManager (
 ## -parameters
 <dl>
 
-### -param <i>LogFileName</i> [in]
+### -param LogFileName [in]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the path and file name of a <a href="https://msdn.microsoft.com/4da3cb49-dc20-4713-813b-ff458c99ab90">CLFS</a> log file stream to be associated with the transaction manager object.</p>
 </dd>
 
-### -param <i>ExistingTransactionManagerGuid</i> [in]
+### -param ExistingTransactionManagerGuid [in]
 
 <dd>
 <p>A pointer to a GUID structure that represents the current name of the transaction manager object.</p>

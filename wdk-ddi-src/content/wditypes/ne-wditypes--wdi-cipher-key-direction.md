@@ -7,7 +7,7 @@ old-location: netvista\wdi_cipher_key_direction.htm
 old-project: netvista
 ms.assetid: BE054858-F61A-488B-87A3-615A646C27F0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _WDI_CIPHER_KEY_DIRECTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_CIPHER_KEY_DIRECTION_INBOUND"></a><a id="wdi_cipher_key_direction_inbound"></a><b>WDI_CIPHER_KEY_DIRECTION_INBOUND</b>
+### -field WDI_CIPHER_KEY_DIRECTION_INBOUND
 
 <dd>
 <p>The cipher key decrypts packets received from a peer.</p>
 </dd>
 
-### -field <a id="WDI_CIPHER_KEY_DIRECTION_OUTBOUND"></a><a id="wdi_cipher_key_direction_outbound"></a><b>WDI_CIPHER_KEY_DIRECTION_OUTBOUND</b>
+### -field WDI_CIPHER_KEY_DIRECTION_OUTBOUND
 
 <dd>
 <p>The cipher key decrypts packets transmitted to a peer.</p>
 </dd>
 
-### -field <a id="WDI_CIPHER_KEY_DIRECTION_BOTH"></a><a id="wdi_cipher_key_direction_both"></a><b>WDI_CIPHER_KEY_DIRECTION_BOTH</b>
+### -field WDI_CIPHER_KEY_DIRECTION_BOTH
 
 <dd>
 <p>The cipher key  decrypts packets received from or transmitted to a peer.</p>

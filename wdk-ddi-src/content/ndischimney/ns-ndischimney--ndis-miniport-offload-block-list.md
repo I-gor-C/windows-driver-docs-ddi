@@ -7,7 +7,7 @@ old-location: netvista\ndis_miniport_offload_block_list.htm
 old-project: netvista
 ms.assetid: ebc98e65-5d11-4c3d-aea1-dfad1434c093
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_MINIPORT_OFFLOAD_BLOCK_LIST, NDIS_MINIPORT_OFFLOAD_BLOCK_LIST, *PNDIS_MINIPORT_OFFLOAD_BLOCK_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The header of the NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure. The header is formatted as an 
@@ -88,7 +88,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 <p></p>
 <dl>
 
-### -field <a id="NeighborOffloadConstState"></a><a id="neighboroffloadconststate"></a><a id="NEIGHBOROFFLOADCONSTSTATE"></a><b>NeighborOffloadConstState</b>
+### -field NeighborOffloadConstState
 
 <dd>
 <p>Specifies the constant neighbor state. This state is formatted as a 
@@ -96,7 +96,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        NEIGHBOR_OFFLOAD_STATE_CONST</a> structure.</p>
 </dd>
 
-### -field <a id="NeighborOffloadCachedState"></a><a id="neighboroffloadcachedstate"></a><a id="NEIGHBOROFFLOADCACHEDSTATE"></a><b>NeighborOffloadCachedState</b>
+### -field NeighborOffloadCachedState
 
 <dd>
 <p>Specifies the cached neighbor state. This state is formatted as a 
@@ -104,7 +104,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        NEIGHBOR_OFFLOAD_STATE_CACHED</a> structure.</p>
 </dd>
 
-### -field <a id="NeighborOffloadDelegatedState"></a><a id="neighboroffloaddelegatedstate"></a><a id="NEIGHBOROFFLOADDELEGATEDSTATE"></a><b>NeighborOffloadDelegatedState</b>
+### -field NeighborOffloadDelegatedState
 
 <dd>
 <p>Specifies the delegated neighbor state. This state is formatted as a 
@@ -112,7 +112,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        NEIGHBOR_OFFLOAD_STATE_DELEGATED</a> structure.</p>
 </dd>
 
-### -field <a id="NeighborOffloadState"></a><a id="neighboroffloadstate"></a><a id="NEIGHBOROFFLOADSTATE"></a><b>NeighborOffloadState</b>
+### -field NeighborOffloadState
 
 <dd>
 <p>Specifies all of the neighbor state information, including the constant, cached, and delegated
@@ -121,7 +121,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        structure.</p>
 </dd>
 
-### -field <a id="Ip4OffloadConstState"></a><a id="ip4offloadconststate"></a><a id="IP4OFFLOADCONSTSTATE"></a><b>Ip4OffloadConstState</b>
+### -field Ip4OffloadConstState
 
 <dd>
 <p>Specifies the constant path state (IPv4). This state is formatted as a 
@@ -129,7 +129,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        PATH_OFFLOAD_STATE_CONST</a> structure.</p>
 </dd>
 
-### -field <a id="Ip4OffloadCachedState"></a><a id="ip4offloadcachedstate"></a><a id="IP4OFFLOADCACHEDSTATE"></a><b>Ip4OffloadCachedState</b>
+### -field Ip4OffloadCachedState
 
 <dd>
 <p>Specifies the cached path state (IPv4). This state is formatted as a 
@@ -137,7 +137,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        PATH_OFFLOAD_STATE_CACHED</a> structure.</p>
 </dd>
 
-### -field <a id="Ip4OffloadDelegatedState"></a><a id="ip4offloaddelegatedstate"></a><a id="IP4OFFLOADDELEGATEDSTATE"></a><b>Ip4OffloadDelegatedState</b>
+### -field Ip4OffloadDelegatedState
 
 <dd>
 <p>Specifies the delegated path state (IPv4). This state is formatted as a 
@@ -146,7 +146,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        PATH_OFFLOAD_STATE_DELEGATED structure does not contain any variables.</p>
 </dd>
 
-### -field <a id="Ip4OffloadState"></a><a id="ip4offloadstate"></a><a id="IP4OFFLOADSTATE"></a><b>Ip4OffloadState</b>
+### -field Ip4OffloadState
 
 <dd>
 <p>Specifies all of the path state (IPv4), including the constant, cached, and delegated path
@@ -154,21 +154,21 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        PATH_OFFLOAD_STATE_CACHED structure, followed by a PATH_OFFLOAD_STATE_DELEGATED structure.</p>
 </dd>
 
-### -field <a id="Ip6OffloadConstState"></a><a id="ip6offloadconststate"></a><a id="IP6OFFLOADCONSTSTATE"></a><b>Ip6OffloadConstState</b>
+### -field Ip6OffloadConstState
 
 <dd>
 <p>Specifies the constant path state (IPv6). This state is formatted as a PATH_OFFLOAD_STATE_CONST
        structure.</p>
 </dd>
 
-### -field <a id="Ip6OffloadCachedState"></a><a id="ip6offloadcachedstate"></a><a id="IP6OFFLOADCACHEDSTATE"></a><b>Ip6OffloadCachedState</b>
+### -field Ip6OffloadCachedState
 
 <dd>
 <p>Specifies the cached path state (IPv6). This state is formatted as a PATH_OFFLOAD_STATE_CACHED
        structure.</p>
 </dd>
 
-### -field <a id="Ip6OffloadDelegatedState"></a><a id="ip6offloaddelegatedstate"></a><a id="IP6OFFLOADDELEGATEDSTATE"></a><b>Ip6OffloadDelegatedState</b>
+### -field Ip6OffloadDelegatedState
 
 <dd>
 <p>Specifies the delegated path state (IPv6). This state is formatted as a
@@ -176,7 +176,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        PATH_OFFLOAD_STATE_DELEGATED structure does not contain any variables.</p>
 </dd>
 
-### -field <a id="Ip6OffloadState"></a><a id="ip6offloadstate"></a><a id="IP6OFFLOADSTATE"></a><b>Ip6OffloadState</b>
+### -field Ip6OffloadState
 
 <dd>
 <p>Specifies all of the path state information(IPv6), including the constant, cached, and delegated
@@ -184,7 +184,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        PATH_OFFLOAD_STATE_CACHED structure, followed by a PATH_OFFLOAD_STATE_DELEGATED structure.</p>
 </dd>
 
-### -field <a id="TcpOffloadConstState"></a><a id="tcpoffloadconststate"></a><a id="TCPOFFLOADCONSTSTATE"></a><b>TcpOffloadConstState</b>
+### -field TcpOffloadConstState
 
 <dd>
 <p>Specifies the constant TCP state. This state is formatted as a 
@@ -192,7 +192,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        TCP_OFFLOAD_STATE_CONST</a> structure.</p>
 </dd>
 
-### -field <a id="TcpOffloadCachedState"></a><a id="tcpoffloadcachedstate"></a><a id="TCPOFFLOADCACHEDSTATE"></a><b>TcpOffloadCachedState</b>
+### -field TcpOffloadCachedState
 
 <dd>
 <p>Specifies the cached TCP state. This state is formatted as a 
@@ -200,7 +200,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        TCP_OFFLOAD_STATE_CACHED</a> structure.</p>
 </dd>
 
-### -field <a id="TcpOffloadDelegatedState"></a><a id="tcpoffloaddelegatedstate"></a><a id="TCPOFFLOADDELEGATEDSTATE"></a><b>TcpOffloadDelegatedState</b>
+### -field TcpOffloadDelegatedState
 
 <dd>
 <p>Specifies the delegated TCP state. This state is formatted as a 
@@ -208,14 +208,14 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        TCP_OFFLOAD_STATE_DELEGATED</a> structure.</p>
 </dd>
 
-### -field <a id="TcpOffloadResourceState"></a><a id="tcpoffloadresourcestate"></a><a id="TCPOFFLOADRESOURCESTATE"></a><b>TcpOffloadResourceState</b>
+### -field TcpOffloadResourceState
 
 <dd>
 <p>Reserved. This OFFLOAD_STATE_TYPE value, as well as the TCP_OFFLOAD_RESOURCE_STATE structure,
        are currently not used.</p>
 </dd>
 
-### -field <a id="TcpOffloadState"></a><a id="tcpoffloadstate"></a><a id="TCPOFFLOADSTATE"></a><b>TcpOffloadState</b>
+### -field TcpOffloadState
 
 <dd>
 <p>Specifies all of the TCP state information, including the constant, cached, and delegated TCP
@@ -223,7 +223,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        TCP_OFFLOAD_STATE_CACHED structure, followed by a TCP_OFFLOAD_STATE_DELEGATED structure.</p>
 </dd>
 
-### -field <a id="FilterReservedOffloadState"></a><a id="filterreservedoffloadstate"></a><a id="FILTERRESERVEDOFFLOADSTATE"></a><b>FilterReservedOffloadState</b>
+### -field FilterReservedOffloadState
 
 <dd>
 <p>Reserved for filter drivers.</p>
@@ -231,7 +231,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 </dl>
 </dd>
 
-### -field <b>NextBlock</b>
+### -field NextBlock
 
 <dd>
 <p>A pointer to the next NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure at the offload state layer
@@ -243,7 +243,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure at this level.</p>
 </dd>
 
-### -field <b>DependentBlockList</b>
+### -field DependentBlockList
 
 <dd>
 <p>A pointer to an NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure that is at a dependent layer of the
@@ -271,7 +271,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The completion status of an initiate offload, query offload, update offload, invalidate offload,
@@ -283,7 +283,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_STATUS_SUCCESS"></a><a id="ndis_status_success"></a>NDIS_STATUS_SUCCESS
+### -field NDIS_STATUS_SUCCESS
 
 <dd>
 <p>Initiate offload: The offload target successfully offloaded the state associated with the
@@ -295,7 +295,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        structure.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_OFFLOAD_PARTIAL_SUCCESS"></a><a id="ndis_status_offload_partial_success"></a>NDIS_STATUS_OFFLOAD_PARTIAL_SUCCESS
+### -field NDIS_STATUS_OFFLOAD_PARTIAL_SUCCESS
 
 <dd>
 <p>Initiate offload: The offload target successfully offloaded the state associated with the
@@ -305,7 +305,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 <p>Query, update, invalidate, or terminate offload: Not an allowed status value.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_FAILURE"></a><a id="ndis_status_failure"></a>NDIS_STATUS_FAILURE
+### -field NDIS_STATUS_FAILURE
 
 <dd>
 <p>Initiate offload: The offload target failed to offload the state associated with the
@@ -316,7 +316,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
        structure.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_RESOURCES"></a><a id="ndis_status_resources"></a>NDIS_STATUS_RESOURCES
+### -field NDIS_STATUS_RESOURCES
 
 <dd>
 <p>Initiate offload: The offload target failed to offload the state associated with the
@@ -326,7 +326,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 <p>Query, update, invalidate, or terminate offload: Not an allowed status value.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_OFFLOAD_TCP_ENTRIES"></a><a id="ndis_status_offload_tcp_entries"></a>NDIS_STATUS_OFFLOAD_TCP_ENTRIES
+### -field NDIS_STATUS_OFFLOAD_TCP_ENTRIES
 
 <dd>
 <p>Initiate offload: The offload target failed to offload the state associated with the
@@ -336,7 +336,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 <p>Query, update, invalidate, or terminate offload: Not an allowed status value.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_OFFLOAD_PATH_ENTRIES"></a><a id="ndis_status_offload_path_entries"></a>NDIS_STATUS_OFFLOAD_PATH_ENTRIES
+### -field NDIS_STATUS_OFFLOAD_PATH_ENTRIES
 
 <dd>
 <p>Initiate offload: The offload target failed to offload the state associated with the
@@ -346,7 +346,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 <p>Query, update, invalidate, or terminate offload: Not an allowed status value.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_OFFLOAD_NEIGHBOR_ENTRIES"></a><a id="ndis_status_offload_neighbor_entries"></a>NDIS_STATUS_OFFLOAD_NEIGHBOR_ENTRIES
+### -field NDIS_STATUS_OFFLOAD_NEIGHBOR_ENTRIES
 
 <dd>
 <p>Initiate offload: The offload target failed to offload the state associated with the
@@ -356,7 +356,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 <p>Query, update, invalidate, or terminate offload: Not an allowed status value.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_OFFLOAD_HW_ADDRESS_ENTRIES"></a><a id="ndis_status_offload_hw_address_entries"></a>NDIS_STATUS_OFFLOAD_HW_ADDRESS_ENTRIES
+### -field NDIS_STATUS_OFFLOAD_HW_ADDRESS_ENTRIES
 
 <dd>
 <p>Initiate offload: The offload target failed to offload the state associated with the
@@ -368,7 +368,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 <p>Query, update, invalidate, or terminate offload: Not an allowed status value.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_OFFLOAD_IP_ADDRESS_ENTRIES"></a><a id="ndis_status_offload_ip_address_entries"></a>NDIS_STATUS_OFFLOAD_IP_ADDRESS_ENTRIES
+### -field NDIS_STATUS_OFFLOAD_IP_ADDRESS_ENTRIES
 
 <dd>
 <p>Initiate offload: The offload target failed to offload the state associated with the
@@ -381,7 +381,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 <p>Query, update, invalidate, or terminate offload: Not an allowed status value.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_OFFLOAD_TCP_XMIT_BUFFER"></a><a id="ndis_status_offload_tcp_xmit_buffer"></a>NDIS_STATUS_OFFLOAD_TCP_XMIT_BUFFER
+### -field NDIS_STATUS_OFFLOAD_TCP_XMIT_BUFFER
 
 <dd>
 <p>Initiate offload: The offload target failed to offload the state associated with the
@@ -391,7 +391,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 <p>Query, update, invalidate, or terminate offload: Not an allowed status value.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_OFFLOAD_TCP_RCV_BUFFER"></a><a id="ndis_status_offload_tcp_rcv_buffer"></a>NDIS_STATUS_OFFLOAD_TCP_RCV_BUFFER
+### -field NDIS_STATUS_OFFLOAD_TCP_RCV_BUFFER
 
 <dd>
 <p>Initiate offload: The offload target failed to offload the state associated with the
@@ -401,7 +401,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 <p>Query, update, invalidate, or terminate offload: Not an allowed status value.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_OFFLOAD_TCP_RCV_WINDOW"></a><a id="ndis_status_offload_tcp_rcv_window"></a>NDIS_STATUS_OFFLOAD_TCP_RCV_WINDOW
+### -field NDIS_STATUS_OFFLOAD_TCP_RCV_WINDOW
 
 <dd>
 <p>Initiate offload: The offload target failed to offload the state associated with the
@@ -413,7 +413,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 <p>Query, update, invalidate, or terminate offload: Not an allowed status value.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_OFFLOAD_VLAN_ENTRIES"></a><a id="ndis_status_offload_vlan_entries"></a>NDIS_STATUS_OFFLOAD_VLAN_ENTRIES
+### -field NDIS_STATUS_OFFLOAD_VLAN_ENTRIES
 
 <dd>
 <p>Initiate offload: The offload target has run out of resources for tracking additional VLAN IDs. 
@@ -421,7 +421,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 <p>Query, update, invalidate, or terminate offload: Not an allowed status value.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_OFFLOAD_VLAN_MISMATCH"></a><a id="ndis_status_offload_vlan_mismatch"></a>NDIS_STATUS_OFFLOAD_VLAN_MISMATCH
+### -field NDIS_STATUS_OFFLOAD_VLAN_MISMATCH
 
 <dd>
 <p>Initiate offload: The neighbor 
@@ -430,7 +430,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 <p>Query, update, invalidate, or terminate offload: Not an allowed status value.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_OFFLOAD_PATH_MTU"></a><a id="ndis_status_offload_path_mtu"></a>NDIS_STATUS_OFFLOAD_PATH_MTU
+### -field NDIS_STATUS_OFFLOAD_PATH_MTU
 
 <dd>
 <p>The path MTU for the TCP connection is larger than the offload target supports.
@@ -440,13 +440,13 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 </dl>
 </dd>
 
-### -field <b>NdisReserved</b>
+### -field NdisReserved
 
 <dd>
 <p>Reserved for use by NDIS.</p>
 </dd>
 
-### -field <b>MiniportOffloadContext</b>
+### -field MiniportOffloadContext
 
 <dd>
 <p>A pointer to a memory location into which the offload target writes a PVOID value. The PVOID value
@@ -460,7 +460,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
      placeholder in the offload state tree.</p>
 </dd>
 
-### -field <b>NdisOffloadHandle</b>
+### -field NdisOffloadHandle
 
 <dd>
 <p>The handle that the offload target supplies in subsequent calls to the 
@@ -471,42 +471,42 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
      with this NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure.</p>
 </dd>
 
-### -field <b>ProtocolReserved</b>
+### -field ProtocolReserved
 
 <dd>
 <p>Reserved for use by protocol drivers, which can use this area for their own purposes. Offload
      targets must not modify this value.</p>
 </dd>
 
-### -field <b>MiniportReserved</b>
+### -field MiniportReserved
 
 <dd>
 <p>Reserved for use by offload targets, which can use this area for their own purposes, such as
      queuing up the offload state associated with the NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure.</p>
 </dd>
 
-### -field <b>ImReserved</b>
+### -field ImReserved
 
 <dd>
 <p>Reserved for use by intermediate drivers, which can use this area for their own purposes. Offload
      targets must not modify this value.</p>
 </dd>
 
-### -field <b>Scratch</b>
+### -field Scratch
 
 <dd>
 <p>The offload target can use this area for internal tracking. The information in this area is valid
      only while the offload target has ownership of the NDIS_MINIPORT_OFFLOAD_BLOCK_LIST.</p>
 </dd>
 
-### -field <b>SourceHandle</b>
+### -field SourceHandle
 
 <dd>
 <p>This member is not significant for an offload target. An offload target must not modify this
      member.</p>
 </dd>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>A port number that identifies a miniport adapter port. To assign a miniport adapter port number,
@@ -516,7 +516,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
      not allocated ports for the specified adapter.</p>
 </dd>
 
-### -field <b>NetBufferListChain</b>
+### -field NetBufferListChain
 
 <dd>
 <p>When the host stack specifies a <b>NULL</b> value, 
@@ -536,7 +536,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
      back to the host stack by calling the appropriate 
      <b>NdisTcpOffload<i>Xxx</i>Complete</b> function. At present, the linked list can contain just one type of data:
      outstanding send data. For more information, see 
-     <a href="NULL">Handling Outstanding Send Data During and After an Offload Operation</a>.</p>
+     <a href="netvista.handling_outstanding_send_data_during_and_after_an_offload_operation">Handling Outstanding Send Data During and After an Offload Operation</a>.</p>
 <p>An offload target can pass outstanding send data to the host stack when terminating the offload of a
      TCP connection. In this case, the offload target specifies a non-<b>NULL</b> value for the 
      <b>NetBufferListChain</b> member when calling the 
@@ -550,7 +550,7 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 ## -remarks
 <p>NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structures can be linked together to build the framework of a TCP
     chimney 
-    <a href="NULL">offload state tree</a>.</p>
+    <a href="netvista.offload_state_tree">offload state tree</a>.</p>
 
 <p>Through NDIS, the host stack passes an 
     <i>OffloadBlockList</i> pointer, which references an offload state tree to one of the following functions
@@ -716,4 +716,4 @@ typedef struct _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

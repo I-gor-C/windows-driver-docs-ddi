@@ -56,13 +56,13 @@ LONGLONG VideoPortQueryPerformanceCounter(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>PerformanceFrequency</i> [out, optional]
+### -param PerformanceFrequency [out, optional]
 
 <dd>
 <p>Specifies an optional pointer to a variable that is to receive the performance counter frequency.</p>

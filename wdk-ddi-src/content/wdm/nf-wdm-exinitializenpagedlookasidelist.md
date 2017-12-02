@@ -61,13 +61,13 @@ VOID ExInitializeNPagedLookasideList(
 ## -parameters
 <dl>
 
-### -param <i>Lookaside</i> [out]
+### -param Lookaside [out]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556431">NPAGED_LOOKASIDE_LIST</a> structure to initialize. The caller must use nonpaged system space for the structure. On 64-bit platforms, this structure must be 16-byte aligned.</p>
 </dd>
 
-### -param <i>Allocate</i> [in, optional]
+### -param Allocate [in, optional]
 
 <dd>
 <p>A pointer to either a caller-supplied function for allocating an entry when the lookaside list is empty, or to <b>NULL</b>. If non-<b>NULL</b>, the pointer is to a function with the prototype:</p>
@@ -88,7 +88,7 @@ VOID ExInitializeNPagedLookasideList(
 <p>If the <i>Allocate</i> parameter is <b>NULL</b>, subsequent calls to <a href="..\wdm\nf-wdm-exallocatefromnpagedlookasidelist.md">ExAllocateFromNPagedLookasideList</a> automatically allocate entries whenever the lookaside list is empty.</p>
 </dd>
 
-### -param <i>Free</i> [in, optional]
+### -param Free [in, optional]
 
 <dd>
 <p>A pointer to either a caller-supplied function for freeing an entry whenever the lookaside list is full, or to <b>NULL</b>. If non-<b>NULL</b>, the pointer is to a function with the prototype:</p>
@@ -107,7 +107,7 @@ VOID ExInitializeNPagedLookasideList(
 <p>If the <i>Free</i> parameter is <b>NULL</b>, subsequent calls to <a href="..\wdm\nf-wdm-exfreetonpagedlookasidelist.md">ExFreeToNPagedLookasideList</a> automatically release the given entry back to nonpaged pool whenever the list is full, that is, currently holding the system-determined maximum number of entries.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Starting in Windows 8, this parameter specifies an optional flag value to modify the default behavior of the <b>ExInitializeNPagedLookasideList</b> routine. Compatible flag bits include the following.</p>
@@ -137,19 +137,19 @@ VOID ExInitializeNPagedLookasideList(
 <p>Before Windows 8, this parameter is not used and must be zero.</p>
 </dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>Specifies the size, in bytes, for each nonpaged entry to be allocated subsequently. This parameter must not be less than the required minimum size, LOOKASIDE_MINIMUM_BLOCK_SIZE, which is defined in the Wdm.h header file.</p>
 </dd>
 
-### -param <i>Tag</i> [in]
+### -param Tag [in]
 
 <dd>
 <p>Specifies the pool tag to use when allocating lookaside list entries. For more information about pool tags, see the <i>Tag</i> parameter of <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>.</p>
 </dd>
 
-### -param <i>Depth</i> [in]
+### -param Depth [in]
 
 <dd>
 <p>Reserved. Must be zero.</p>
@@ -166,7 +166,7 @@ VOID ExInitializeNPagedLookasideList(
 
 <p>Zero-initializes the counters to be maintained for entries.</p>
 
-<p>Stores the entry points of the caller-supplied <b><i>Xxx</i>Allocate</b> and <b><i>Xxx</i>Free</b> routines, if any, or sets these entry points to <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a> and <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>, respectively.</p>
+<p>Stores the entry points of the caller-supplied <b><i>Xxx</i>Allocate</b> and <b><i>Xxx</i>Free</b> routines, if any, or sets these entry points to <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a> and <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>, respectively.</p>
 
 <p>Initializes a system spin lock to control allocations from and frees to the lookaside list in a multiprocessor-safe manner if necessary.</p>
 
@@ -265,7 +265,7 @@ VOID ExInitializeNPagedLookasideList(
 <a href="..\wdm\nf-wdm-exfreetonpagedlookasidelist.md">ExFreeToNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-exinitializelookasidelistex.md">ExInitializeLookasideListEx</a>

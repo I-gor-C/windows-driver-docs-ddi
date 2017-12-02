@@ -58,31 +58,31 @@ typedef struct _ScsiReportLuns_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The status of the <b>ScsiReportLuns</b> method. This member will contain 0 if the REPORT LUNS operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the REPORT LUNS operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.  </p>
 </dd>
 
-### -field <b>ResponseBufferSize</b>
+### -field ResponseBufferSize
 
 <dd>
 <p>The size, in bytes, of the buffer at <b>ResponseBuffer</b><i>.</i></p>
 </dd>
 
-### -field <b>ScsiStatus</b>
+### -field ScsiStatus
 
 <dd>
 <p>The status of the SCSI REPORT LUNS command. </p>
 </dd>
 
-### -field <b>SenseBuffer</b>
+### -field SenseBuffer
 
 <dd>
 <p>A buffer that holds the SCSI sense data that the SCSI REPORT LUNS command received. </p>
 </dd>
 
-### -field <b>ResponseBuffer</b>
+### -field ResponseBuffer
 
 <dd>
 <p>A buffer that holds the response data that the SCSI REPORT LUNS command received. </p>
@@ -121,7 +121,7 @@ typedef struct _ScsiReportLuns_OUT {
 <a href="storage.scsireportluns">ScsiReportLuns</a>
 </dt>
 <dt>
-<a href="..\hbapiwmi\ns-hbapiwmi--scsireportluns-in.md">ScsiReportLuns_IN</a>
+<a href="..\iscsiop\ns-iscsiop--scsireportluns-in.md">ScsiReportLuns_IN</a>
 </dt>
 </dl>
 <p> </p>

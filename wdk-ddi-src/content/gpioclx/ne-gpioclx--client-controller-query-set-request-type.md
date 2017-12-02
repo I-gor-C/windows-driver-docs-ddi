@@ -57,25 +57,25 @@ typedef enum _CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="QueryBankPowerInformation"></a><a id="querybankpowerinformation"></a><a id="QUERYBANKPOWERINFORMATION"></a><b>QueryBankPowerInformation</b>
+### -field QueryBankPowerInformation
 
 <dd>
 <p>Power attributes. For this attribute type, the <b>BankPowerInformation</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh698238">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</a> structure specifies a GPIO bank, and the <b>BankPowerInformation</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh698239">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</a> structure contains the power attributes of the specified bank.</p>
 </dd>
 
-### -field <a id="QueryBankInterruptBindingInformation"></a><a id="querybankinterruptbindinginformation"></a><a id="QUERYBANKINTERRUPTBINDINGINFORMATION"></a><b>QueryBankInterruptBindingInformation</b>
+### -field QueryBankInterruptBindingInformation
 
 <dd>
 <p>Interrupt-binding attributes. For this attribute type, the <b>BankInterruptBinding</b> member of the <b>CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</b> structure contains the raw and translated hardware resources assigned to the GPIO controller, and the <b>BankInterruptBinding</b> member of the <b>CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</b> structure describes the binding of interrupt resources to GPIO banks.</p>
 </dd>
 
-### -field <a id="QueryControllerFunctionBankMappingInformation"></a><a id="querycontrollerfunctionbankmappinginformation"></a><a id="QUERYCONTROLLERFUNCTIONBANKMAPPINGINFORMATION"></a><b>QueryControllerFunctionBankMappingInformation</b>
+### -field QueryControllerFunctionBankMappingInformation
 
 <dd>
 <p>Function-mapping attributes. For this attribute type, the <b>ControllerFunctionBankMapping</b> member of the <b>CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</b> structure specifies an I/O control request (IOCTL), and the <b>ControllerFunctionBankMapping</b> member of the <b>CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</b> structure indicates which GPIO banks must be in the F0 (fully on) power state to handle the specified IOCTL.</p>
 </dd>
 
-### -field <a id="QuerySetRequestMaximumType"></a><a id="querysetrequestmaximumtype"></a><a id="QUERYSETREQUESTMAXIMUMTYPE"></a><b>QuerySetRequestMaximumType</b>
+### -field QuerySetRequestMaximumType
 
 <dd>
 <p>Reserved for use by the operating system.</p>

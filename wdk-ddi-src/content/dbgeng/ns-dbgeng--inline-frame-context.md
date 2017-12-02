@@ -7,7 +7,7 @@ old-location: debugger\inline_frame_context.htm
 old-project: debugger
 ms.assetid: 6EB52227-8685-4096-882F-64550A84DE4F
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: INLINE_FRAME_CONTEXT, INLINE_FRAME_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ typedef union _INLINE_FRAME_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>ContextValue</b>
+### -field ContextValue
 
 <dd>
 <p>A context value. </p>
 </dd>
 
-### -field <b>{
+### -field {
         BYTE FrameId;
         BYTE FrameType;
         WORD FrameSignature;

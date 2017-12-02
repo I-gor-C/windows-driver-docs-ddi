@@ -56,13 +56,13 @@ typedef struct _CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>LBA</b>
+### -field LBA
 
 <dd>
 <p>The LBA field  indicates that there is a seek delay between the logical block address (LBA) and the preceding LBA (LBA -1).</p>
 </dd>
 
-### -field <b>Time</b>
+### -field Time
 
 <dd>
 <p>The Time field indicates the expected additional seek delay between LBA and the preceding LBA (LBA - 1) from nominal, in units of tenths

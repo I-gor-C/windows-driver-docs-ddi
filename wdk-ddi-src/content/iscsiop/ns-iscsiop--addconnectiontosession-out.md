@@ -55,13 +55,13 @@ typedef struct _AddConnectionToSession_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The status of the <b>AddConnectionToSession </b>operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.  </p>
 </dd>
 
-### -field <b>UniqueConnectionId</b>
+### -field UniqueConnectionId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies the connection across the entire network.</p>

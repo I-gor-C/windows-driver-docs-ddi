@@ -64,67 +64,67 @@ typedef enum _WHEA_RAW_DATA_FORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="WheaRawDataFormatIPFSalRecord"></a><a id="whearawdataformatipfsalrecord"></a><a id="WHEARAWDATAFORMATIPFSALRECORD"></a><b>WheaRawDataFormatIPFSalRecord</b>
+### -field WheaRawDataFormatIPFSalRecord
 
 <dd>
 <p>The raw data in the hardware error packet contains an Itanium processor family system abstraction layer (SAL) error record. For more information about the format of a SAL error record, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=72212">Intel Itanium Processor Family System Abstraction Layer Specification</a>.</p>
 </dd>
 
-### -field <a id="WheaRawDataFormatIA32MCA"></a><a id="whearawdataformatia32mca"></a><a id="WHEARAWDATAFORMATIA32MCA"></a><b>WheaRawDataFormatIA32MCA</b>
+### -field WheaRawDataFormatIA32MCA
 
 <dd>
 <p>The raw data in the hardware error packet contains an MCA_EXCEPTION structure. For more information about the MCA_EXCEPTION structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540659">HalQuerySystemInformation</a>.</p>
 </dd>
 
-### -field <a id="WheaRawDataFormatIntel64MCA"></a><a id="whearawdataformatintel64mca"></a><a id="WHEARAWDATAFORMATINTEL64MCA"></a><b>WheaRawDataFormatIntel64MCA</b>
+### -field WheaRawDataFormatIntel64MCA
 
 <dd>
 <p>The raw data in the hardware error packet contains an MCA_EXCEPTION structure. For more information about the MCA_EXCEPTION structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540659">HalQuerySystemInformation</a>.</p>
 </dd>
 
-### -field <a id="WheaRawDataFormatAMD64MCA"></a><a id="whearawdataformatamd64mca"></a><a id="WHEARAWDATAFORMATAMD64MCA"></a><b>WheaRawDataFormatAMD64MCA</b>
+### -field WheaRawDataFormatAMD64MCA
 
 <dd>
 <p>The raw data in the hardware error packet contains an MCA_EXCEPTION structure. For more information about the MCA_EXCEPTION structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540659">HalQuerySystemInformation</a>.</p>
 </dd>
 
-### -field <a id="WheaRawDataFormatMemory"></a><a id="whearawdataformatmemory"></a><a id="WHEARAWDATAFORMATMEMORY"></a><b>WheaRawDataFormatMemory</b>
+### -field WheaRawDataFormatMemory
 
 <dd>
 <p>The raw data in the hardware error packet contains memory error data. The format of this error data is memory architecture-dependent.</p>
 </dd>
 
-### -field <a id="WheaRawDataFormatPCIExpress"></a><a id="whearawdataformatpciexpress"></a><a id="WHEARAWDATAFORMATPCIEXPRESS"></a><b>WheaRawDataFormatPCIExpress</b>
+### -field WheaRawDataFormatPCIExpress
 
 <dd>
 <p>The raw data in the hardware error packet contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a> structure.</p>
 </dd>
 
-### -field <a id="WheaRawDataFormatNMIPort"></a><a id="whearawdataformatnmiport"></a><a id="WHEARAWDATAFORMATNMIPORT"></a><b>WheaRawDataFormatNMIPort</b>
+### -field WheaRawDataFormatNMIPort
 
 <dd>
 <p>The raw data in the hardware error packet contains the data that was read from the nonmaskable interrupt (NMI) I/O ports by the NMI low-level hardware error handler (LLHEH).</p>
 </dd>
 
-### -field <a id="WheaRawDataFormatPCIXBus"></a><a id="whearawdataformatpcixbus"></a><a id="WHEARAWDATAFORMATPCIXBUS"></a><b>WheaRawDataFormatPCIXBus</b>
+### -field WheaRawDataFormatPCIXBus
 
 <dd>
 <p>The raw data in the hardware error packet contains PCI/PCI-X bus error data. The format of this error data is specific to the implementation.</p>
 </dd>
 
-### -field <a id="WheaRawDataFormatPCIXDevice"></a><a id="whearawdataformatpcixdevice"></a><a id="WHEARAWDATAFORMATPCIXDEVICE"></a><b>WheaRawDataFormatPCIXDevice</b>
+### -field WheaRawDataFormatPCIXDevice
 
 <dd>
 <p>The raw data in the hardware error packet contains a PCI/PCI-X device error data. The format of this error data is specific to the implementation.</p>
 </dd>
 
-### -field <a id="WheaRawDataFormatGeneric"></a><a id="whearawdataformatgeneric"></a><a id="WHEARAWDATAFORMATGENERIC"></a><b>WheaRawDataFormatGeneric</b>
+### -field WheaRawDataFormatGeneric
 
 <dd>
 <p>The raw data in the hardware error packet contains a <a href="..\ntddk\ns-ntddk--whea-generic-error.md">WHEA_GENERIC_ERROR</a> structure.</p>
 </dd>
 
-### -field <a id="WheaRawDataFormatMax"></a><a id="whearawdataformatmax"></a><a id="WHEARAWDATAFORMATMAX"></a><b>WheaRawDataFormatMax</b>
+### -field WheaRawDataFormatMax
 
 <dd>
 <p>The maximum number of formats of raw hardware error data.</p>

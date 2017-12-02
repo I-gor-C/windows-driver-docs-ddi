@@ -7,7 +7,7 @@ old-location: wdf\wdfioqueuegetstate.htm
 old-project: wdf
 ms.assetid: 83bfddd5-fc4d-4f5c-9904-7564810f5b4c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfIoQueueGetState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ WDF_IO_QUEUE_STATE WdfIoQueueGetState(
 ## -parameters
 <dl>
 
-### -param <i>Queue</i> [in]
+### -param Queue [in]
 
 <dd>
 <p>A handle to a framework queue object.</p>
 </dd>
 
-### -param <i>QueueRequests</i> [out, optional]
+### -param QueueRequests [out, optional]
 
 <dd>
 <p>A pointer to a location that receives the number of I/O requests that are currently in the I/O queue and have not been delivered to the driver. This pointer is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>DriverRequests</i> [out, optional]
+### -param DriverRequests [out, optional]
 
 <dd>
 <p>A pointer to a location that receives the number of I/O requests that have been delivered to the driver but that the driver has not completed or canceled. This pointer is optional and can be <b>NULL</b>.</p>
@@ -186,4 +186,4 @@ WDF_IO_QUEUE_STATE WdfIoQueueGetState(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueGetState method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueGetState method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

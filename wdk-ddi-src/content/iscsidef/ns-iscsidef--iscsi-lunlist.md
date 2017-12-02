@@ -56,19 +56,19 @@ typedef struct _ISCSI_LUNList {
 ## -struct-fields
 <dl>
 
-### -field <b>TargetLUN</b>
+### -field TargetLUN
 
 <dd>
 <p>A LUN that is globally valid anywhere in the network.</p>
 </dd>
 
-### -field <b>OSLUN</b>
+### -field OSLUN
 
 <dd>
 <p>The SCSI LUN (which is valid in the local operating system) that the remote LUN is mapped to.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for Microsoft use only. </p>

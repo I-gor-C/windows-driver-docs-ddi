@@ -54,7 +54,7 @@ typedef struct _FILE_VALID_DATA_LENGTH_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>ValidDataLength</b>
+### -field ValidDataLength
 
 <dd>
 <p>Specifies the new valid data length for the file. This parameter must be a positive value that is greater than the current valid data length, but less than or equal to the current file size. </p>

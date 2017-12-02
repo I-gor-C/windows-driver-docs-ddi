@@ -56,19 +56,19 @@ FORCEINLINE NTSTATUS  HwNRegisterClient(
 ## -parameters
 <dl>
 
-### -param <i>Driver</i> [in]
+### -param Driver [in]
 
 <dd>
 <p>Handle to the client drivers framework driver object. </p>
 </dd>
 
-### -param <i>RegistrationPacket</i> [in, out]
+### -param RegistrationPacket [in, out]
 
 <dd>
 <p>Pointer to the <a href="gpiobtn.hwn_client_registration_packet">HWN_CLIENT_REGISTRATION_PACKET</a> structure that contains function pointers to the callback functions defined in the client driver implementation and required by the class extension.</p>
 </dd>
 
-### -param <i>RegistryPath</i> [in]
+### -param RegistryPath [in]
 
 <dd>
 <p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the path to the client driver’s registry key. </p>

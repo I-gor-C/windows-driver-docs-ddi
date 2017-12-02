@@ -55,13 +55,13 @@ typedef struct _PEP_ACPI_ABANDON_DEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>AcpiDeviceName</b>
+### -field AcpiDeviceName
 
 <dd>
-<p>[in] A pointer to an <a href="kernel.ansi_string">ANSI_STRING</a> structure that contains the fully qualified BIOS name for the device. This name specifies the the path and name of the device in the ACPI namespace. For more information, see <a href="NULL">Enumerating Child Devices and Control Methods</a>.</p>
+<p>[in] A pointer to an <a href="kernel.ansi_string">ANSI_STRING</a> structure that contains the fully qualified BIOS name for the device. This name specifies the the path and name of the device in the ACPI namespace. For more information, see <a href="https://msdn.microsoft.com/fe0553df-a5b9-46c4-8e1d-8b89a7d4ad67">Enumerating Child Devices and Control Methods</a>.</p>
 </dd>
 
-### -field <b>DeviceAccepted</b>
+### -field DeviceAccepted
 
 <dd>
 <p>[out] Whether the PEP claims ownership of the device specified by the <b>AcpiDeviceName</b> member. Set to TRUE if the PEP claims ownership, and to FALSE if the PEP does not own the device.</p>

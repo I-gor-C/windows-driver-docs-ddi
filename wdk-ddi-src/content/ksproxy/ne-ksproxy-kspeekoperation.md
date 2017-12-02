@@ -55,11 +55,11 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KsPeekOperation_PeekOnly"></a><a id="kspeekoperation_peekonly"></a><a id="KSPEEKOPERATION_PEEKONLY"></a><b>KsPeekOperation_PeekOnly</b>
+### -field KsPeekOperation_PeekOnly
 
 <dd></dd>
 
-### -field <a id="KsPeekOperation_AddRef"></a><a id="kspeekoperation_addref"></a><a id="KSPEEKOPERATION_ADDREF"></a><b>KsPeekOperation_AddRef</b>
+### -field KsPeekOperation_AddRef
 
 <dd></dd>
 </dl>

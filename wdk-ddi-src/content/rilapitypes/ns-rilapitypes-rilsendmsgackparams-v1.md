@@ -7,7 +7,7 @@ old-location: netvista\rilsendmsgackparams_v1_2.htm
 old-project: netvista
 ms.assetid: 6e1f0283-76de-4c21-8205-cab83250dfae
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSENDMSGACKPARAMS_V1, RILSENDMSGACKPARAMS_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef struct _RILSENDMSGACKPARAMS_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwAckID</b>
+### -field dwAckID
 
 <dd></dd>
 
-### -field <b>dwMsgStatus</b>
+### -field dwMsgStatus
 
 <dd></dd>
 </dl>

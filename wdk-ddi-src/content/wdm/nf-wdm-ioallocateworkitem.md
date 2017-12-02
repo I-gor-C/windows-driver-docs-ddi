@@ -55,7 +55,7 @@ PIO_WORKITEM IoAllocateWorkItem(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the caller's driver object or to one of the caller's device objects. If the caller will later pass the work item to <a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a>, <i>DeviceObject</i> must point to a device object.</p>

@@ -64,67 +64,67 @@ typedef struct _FEATURE_DATA_CD_TRACK_AT_ONCE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.</p>
 </dd>
 
-### -field <b>RWSubchannelsRecordable</b>
+### -field RWSubchannelsRecordable
 
 <dd>
 <p>Indicates, when set to 1, that the device can record the read/write subchannels with user-supplied data. </p>
 </dd>
 
-### -field <b>CdRewritable</b>
+### -field CdRewritable
 
 <dd>
 <p>Indicates, when set to 1, that the device supports overwriting a Track-at-Once track with another track's information. </p>
 </dd>
 
-### -field <b>TestWriteOk</b>
+### -field TestWriteOk
 
 <dd>
 <p>Indicates, when set to 1, that the device can perform test writes. </p>
 </dd>
 
-### -field <b>RWSubchannelPackedOk</b>
+### -field RWSubchannelPackedOk
 
 <dd>
 <p>Indicates, when set to 1, that the device supports writing R-W sub code in the packed mode. </p>
 </dd>
 
-### -field <b>RWSubchannelRawOk</b>
+### -field RWSubchannelRawOk
 
 <dd>
 <p>Indicates, when set to 1, that the device supports writing R-W sub code in the raw mode. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>BufferUnderrunFree</b>
+### -field BufferUnderrunFree
 
 <dd>
 <p>Indicates, when set to 1, that the device is capable of zero-loss linking.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>DataTypeSupported</b>
+### -field DataTypeSupported
 
 <dd>
 <p>Indicates the data types that the device supports. See the <i>SCSI Multimedia 3</i> (<i>MMC-3</i>) specification for a description of the values that this member can take. <b>DataTypeSupported</b>[0] holds the most significant byte of value that indicates the data types. <b>DataTypeSupported</b>[1] holds the least significant byte of that value. </p>

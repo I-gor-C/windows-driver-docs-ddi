@@ -57,19 +57,19 @@ VOID ScsiPortReadRegisterBufferUshort(
 ## -parameters
 <dl>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>Pointer to the register. The given <i>Register</i> must be in a mapped memory-space range returned by <b>ScsiPortGetDeviceBase</b>.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to the buffer.</p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>Specifies the number of USHORT values to be read from the HBA.</p>

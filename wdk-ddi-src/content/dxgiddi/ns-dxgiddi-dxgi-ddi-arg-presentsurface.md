@@ -55,13 +55,13 @@ typedef struct DXGI_DDI_ARG_PRESENTSURFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>hSurface</b>
+### -field hSurface
 
 <dd>
 <p>[in] A handle to the resource that contains the surface. </p>
 </dd>
 
-### -field <b>SubResourceIndex</b>
+### -field SubResourceIndex
 
 <dd>
 <p>The zero-based index into the resource, which the handle in the <b>hSurface</b> member specifies. The <b>SubResourceIndex</b> index indicates the surface.</p>

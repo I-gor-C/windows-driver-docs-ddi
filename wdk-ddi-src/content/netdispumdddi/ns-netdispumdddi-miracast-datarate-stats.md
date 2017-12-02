@@ -59,37 +59,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>EncoderBitRate</b>
+### -field EncoderBitRate
 
 <dd>
 <p>The bit rate, in bits per second, that the operating system recommends that the audio/video encoder uses.</p>
 </dd>
 
-### -field <b>CurrentMaxTxDataRate</b>
+### -field CurrentMaxTxDataRate
 
 <dd>
 <p>The theoretical maximum speed, in bits per second, reported by the Wi-Fi driver.</p>
 </dd>
 
-### -field <b>TransmittedFrameCount</b>
+### -field TransmittedFrameCount
 
 <dd>
 <p>The total number of Wi-Fi frames that were sent with zero retries since the previous time step.</p>
 </dd>
 
-### -field <b>FailedFrameCount</b>
+### -field FailedFrameCount
 
 <dd>
 <p>The total number of Wi-Fi frames that exhausted the maximum number of retries since the previous time step.</p>
 </dd>
 
-### -field <b>RetriedFrameCount</b>
+### -field RetriedFrameCount
 
 <dd>
 <p>The total number of Wi-Fi frames that succeeded after a single retry since the previous time step.</p>
 </dd>
 
-### -field <b>MultipleRetryFrameCount</b>
+### -field MultipleRetryFrameCount
 
 <dd>
 <p>The total number of Wi-Fi frames that succeeded after more than one retry since the previous time step.</p>

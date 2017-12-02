@@ -62,55 +62,55 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure. This is set to <b>sizeof</b>(DEVICE_MANAGE_DATA_SET_ATTRIBUTES_OUTPUT).</p>
 </dd>
 
-### -field <b>Action</b>
+### -field Action
 
 <dd>
 <p>The action related to the instance of this structure. This is a value from the <a href="..\ntddstor\ns-ntddstor--device-manage-data-set-attributes.md">DEVICE_DATA_MANAGEMENT_SET_ACTION</a> enumeration.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags for the data set management action. See the <b>Flags</b> member of <a href="..\ntddstor\ni-ntddstor-ioctl-storage-manage-data-set-attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a>.</p>
 </dd>
 
-### -field <b>OperationStatus</b>
+### -field OperationStatus
 
 <dd>
 <p>An status resulting from the operation a performed for <b>Action</b>.</p>
 </dd>
 
-### -field <b>ExtendedError</b>
+### -field ExtendedError
 
 <dd>
 <p>An extended error value originating from Windows or a driver.</p>
 </dd>
 
-### -field <b>TargetDetailedError</b>
+### -field TargetDetailedError
 
 <dd>
 <p>An error value resulting from a failure execute the operation for <b>Action</b> at the target.</p>
 </dd>
 
-### -field <b>ReservedStatus</b>
+### -field ReservedStatus
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>OutputBlockOffset</b>
+### -field OutputBlockOffset
 
 <dd>
 <p>The position, after the beginning of this structure, where action-specific data is located.</p>
 </dd>
 
-### -field <b>OutputBlockLength</b>
+### -field OutputBlockLength
 
 <dd>
 <p>The length of the action-specific data.</p>

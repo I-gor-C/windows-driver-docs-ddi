@@ -55,13 +55,13 @@ typedef struct _MPIO_REGISTERED_DSM {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberDSMs</b>
+### -field NumberDSMs
 
 <dd>
 <p>An unsigned 32-bitfield that specifies the number of DSMs that are registered in the system.</p>
 </dd>
 
-### -field <b>DsmParameters</b>
+### -field DsmParameters
 
 <dd>
 <p>An array that returns information about each of the registered DSMs. The number of elements in the array is given by <i>NumberDSMs</i> and each element is an instance of the DSM_PARAMETERS structure.</p>

@@ -7,7 +7,7 @@ old-location: wdf\wdf_dma_enabler_config_flags.htm
 old-project: wdf
 ms.assetid: 8F8C97B2-5C77-4AD0-9434-22108111F5A8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_REMOVE_LOCK_OPTIONS, WDF_REMOVE_LOCK_OPTIONS, *PWDF_REMOVE_LOCK_OPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef enum _WDF_DMA_ENABLER_CONFIG_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION"></a><a id="wdf_dma_enabler_config_no_sglist_preallocation"></a><b>WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION</b>
+### -field WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION
 
 <dd>
 <p>
@@ -78,7 +78,7 @@ typedef enum _WDF_DMA_ENABLER_CONFIG_FLAGS {
 <p>Setting <b>WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION</b> can result in reduced memory usage, particularly when the maximum transfer length is large. However, setting this flag may cause failure to perform DMA operations in low memory conditions. To guarantee forward progress when <b>WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION</b> is set, a driver might use a separate DMA enabler, or bounce transfers through a common buffer.</p>
 </dd>
 
-### -field <a id="WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER"></a><a id="wdf_dma_enabler_config_require_single_transfer"></a><b>WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER</b>
+### -field WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER
 
 <dd>
 <p>The <b>WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER</b> flag is available starting in version 1.19 of KMDF.  This flag also requires DMA version 3.
@@ -128,4 +128,4 @@ typedef enum _WDF_DMA_ENABLER_CONFIG_FLAGS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DMA_ENABLER_CONFIG_FLAGS enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DMA_ENABLER_CONFIG_FLAGS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

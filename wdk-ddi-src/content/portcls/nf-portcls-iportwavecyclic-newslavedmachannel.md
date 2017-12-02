@@ -60,43 +60,43 @@ NTSTATUS NewSlaveDmaChannel(
 ## -parameters
 <dl>
 
-### -param <i>DmaChannel</i> [out]
+### -param DmaChannel [out]
 
 <dd>
 <p>Pointer to a caller-allocated pointer variable into which the method writes a pointer to the new DMA-channel object's <a href="..\portcls\nn-portcls-idmachannelslave.md">IDmaChannelSlave</a> interface. Specify a valid, non-<b>NULL</b> pointer value for this parameter.</p>
 </dd>
 
-### -param <i>OuterUnknown</i> [in]
+### -param OuterUnknown [in]
 
 <dd>
 <p>Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate the DMA-channel object. This parameter is optional. If aggregation is not required, specify this parameter as <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ResourceList</i> [in]
+### -param ResourceList [in]
 
 <dd>
 <p>Pointer to an <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a> object. This resource list contains the resource that describes the DMA channel.</p>
 </dd>
 
-### -param <i>DmaIndex</i> [in]
+### -param DmaIndex [in]
 
 <dd>
 <p>Index in the resource list of the DMA-channel descriptor. The function uses this value as a call parameter to the <i>ResourceList</i> object's IResourceList::Find<i>xxx</i>Entry method.</p>
 </dd>
 
-### -param <i>MaximumLength</i> [in]
+### -param MaximumLength [in]
 
 <dd>
 <p>Maximum length in bytes of the cyclic DMA buffer that will be associated with this channel.</p>
 </dd>
 
-### -param <i>DemandMode</i> [in]
+### -param DemandMode [in]
 
 <dd>
 <p>Indicates whether the device associated with the DMA channel supports demand mode.</p>
 </dd>
 
-### -param <i>DmaSpeed</i> [in]
+### -param DmaSpeed [in]
 
 <dd>
 <p>The DMA speed can be specified as one of the following DMA_SPEED enumeration values: <b>Compatible</b>, <b>TypeA</b>, <b>TypeB</b>, <b>TypeC</b>, or <b>TypeF</b>.</p>
@@ -111,7 +111,7 @@ NTSTATUS NewSlaveDmaChannel(
 
 <p>A WaveCyclic device that lacks DMA-hardware capabilities is referred to as a <i>subordinate device</i>. In contrast, a <i>master device</i> has built-in bus-mastering DMA hardware. A subordinate device has to rely on the system DMA controller to perform any data transfers that it requires. The <code>NewSlaveDmaChannel</code> method creates a DMA-channel object for a subordinate device. To create a DMA-channel object for a master device, call the <a href="audio.iportwavecyclic_newmasterdmachannel">IPortWaveCyclic::NewMasterDmaChannel</a> method instead. The sb16 sample audio driver in the Microsoft Windows Driver Kit (WDK) is an example of a WaveCyclic miniport driver for a subordinate device. For more information about master and subordinate devices, see <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a> and <a href="..\portcls\nn-portcls-idmachannelslave.md">IDmaChannelSlave</a>.</p>
 
-<p>The <i>DmaChannel</i>, <i>OuterUnknown</i>, and <i>ResourceList</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>DmaChannel</i>, <i>OuterUnknown</i>, and <i>ResourceList</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

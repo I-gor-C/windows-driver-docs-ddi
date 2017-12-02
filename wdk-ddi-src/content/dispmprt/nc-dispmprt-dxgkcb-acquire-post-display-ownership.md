@@ -59,13 +59,13 @@ NTSTATUS APIENTRY* DxgkCbAcquirePostDisplayOwnership(
 ## -parameters
 <dl>
 
-### -param <i>DeviceHandle</i> [in]
+### -param DeviceHandle [in]
 
 <dd>
 <p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
 </dd>
 
-### -param <i>DisplayInfo</i> [out]
+### -param DisplayInfo [out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-display-information.md">DXGK_DISPLAY_INFORMATION</a> structure that is allocated by the display miniport driver. If <i>DxgkCbAcquirePostDisplayOwnership</i> returns STATUS_SUCCESS, this structure contains display information for the current display device that is used for POST operations.</p>

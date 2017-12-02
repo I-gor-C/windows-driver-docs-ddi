@@ -60,19 +60,19 @@ NTSTATUS IoCompletion(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure. This is the device object for the target device, previously created by the driver's <a href="kernel.adddevice">AddDevice</a> routine.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>Caller-supplied pointer to an <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure that describes the I/O operation.</p>
+<p>Caller-supplied pointer to an <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure that describes the I/O operation.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Caller-supplied pointer to driver-specific context information, previously supplied when calling <a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a> or <a href="..\wdm\nf-wdm-iosetcompletionroutineex.md">IoSetCompletionRoutineEx</a>. Context information must be stored in nonpaged memory, since an <i>IoCompletion</i> routine can be called at DISPATCH_LEVEL. For more information, see the following Remarks section.</p>
@@ -95,7 +95,7 @@ NTSTATUS IoCompletion(
 
 <p>For more information about implementing <i>IoCompletion</i> routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542018">Completing IRPs</a>.</p>
 
-<p>To define an <i>IoCompletion</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define an <i>IoCompletion</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define an <i>IoCompletion</i> callback routine that is named <code>MyIoCompletion</code>, use the IO_COMPLETION_ROUTINE type as shown in this code example:</p>
 

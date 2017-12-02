@@ -7,7 +7,7 @@ old-location: acpi\gic_its.htm
 old-project: acpi
 ms.assetid: C0DA1B09-230E-4DE6-98CD-F80243D63B95
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: GIC_ITS, GIC_ITS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,37 +58,37 @@ typedef struct _GIC_ITS {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Defines the <b>UCHAR</b> member <b>Type</b>.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Defines the <b>UCHAR</b> member <b>Length</b>.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Identifier</b>
+### -field Identifier
 
 <dd>
 <p>Defines the <b>ULONG</b> member <b>Identifier</b>.</p>
 </dd>
 
-### -field <b>PhysicalAddress</b>
+### -field PhysicalAddress
 
 <dd>
 <p>Defines the <b>ULONGLONG</b> member <b>PhysicalAddress</b>.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for future use.</p>

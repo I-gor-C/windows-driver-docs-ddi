@@ -59,31 +59,31 @@ NTSTATUS WmiCompleteRequest(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
 </dd>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>A pointer to the IRP. </p>
 </dd>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>Specifies the status to return for the IRP. </p>
 </dd>
 
-### -param <i>BufferUsed</i> [in]
+### -param BufferUsed [in]
 
 <dd>
 <p>Specifies the number of bytes needed in the buffer passed to the driver's <i>DpWmiXxx</i> routine. If the buffer is too small, the driver sets <i>Status</i> to STATUS_BUFFER_TOO_SMALL and sets <i>BufferUsed</i> to the number of bytes needed for the data to be returned. If the buffer passed is large enough, the driver sets <i>BufferUsed</i> to the number of bytes actually used. </p>
 </dd>
 
-### -param <i>PriorityBoost </i> [in]
+### -param PriorityBoost  [in]
 
 <dd>
 <p>Specifies a system-defined constant by which to increment the run-time priority of the original thread that requested the operation. WMI calls <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a> with <i>PriorityBoost</i> when it completes the IRP. See <b>IoCompleteRequest</b> for more information on <i>PriorityBoost</i>. </p>

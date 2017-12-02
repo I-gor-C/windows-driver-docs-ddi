@@ -57,7 +57,7 @@ enum D3DWDDM1_3DDI_TILE_RANGE_FLAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DWDDM_1_3DDI_TILE_RANGE_NULL"></a><a id="d3dwddm_1_3ddi_tile_range_null"></a><b>D3DWDDM_1_3DDI_TILE_RANGE_NULL</b>
+### -field D3DWDDM_1_3DDI_TILE_RANGE_NULL
 
 <dd>
 <p>The tile range is <b>NULL</b>.</p>
@@ -65,14 +65,14 @@ enum D3DWDDM1_3DDI_TILE_RANGE_FLAG {
 number of tiles in all the tile regions, and the <i>pTilePoolStartOffsets</i> parameter is ignored.</p>
 </dd>
 
-### -field <a id="D3DWDDM_1_3DDI_TILE_RANGE_SKIP"></a><a id="d3dwddm_1_3ddi_tile_range_skip"></a><b>D3DWDDM_1_3DDI_TILE_RANGE_SKIP</b>
+### -field D3DWDDM_1_3DDI_TILE_RANGE_SKIP
 
 <dd>
 <p>Tiles should be skipped over, and existing tile mappings should be left unchanged.</p>
 <p>If this flag is set in the UpdateTileMappings function's <i>pRangeFlags</i> parameter, the <i>pRangeTileCounts</i> parameter specifies how many tiles from the tile regions to skip over, and the <i>pTilePoolStartOffsets</i> parameter is ignored.</p>
 </dd>
 
-### -field <a id="D3DWDDM_1_3DDI_TILE_RANGE_REUSE_SINGLE_TILE"></a><a id="d3dwddm_1_3ddi_tile_range_reuse_single_tile"></a><b>D3DWDDM_1_3DDI_TILE_RANGE_REUSE_SINGLE_TILE</b>
+### -field D3DWDDM_1_3DDI_TILE_RANGE_REUSE_SINGLE_TILE
 
 <dd>
 <p>A single tile in the tile pool should be reused.</p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a>  structure by interpreting Power Data Object values and sets each field correctly.
+<p>Initializes a <a href="..\ucmtypes\ns-ucmtypes--ucm-pd-power-data-object.md">UCM_PD_POWER_DATA_OBJECT</a>  structure by interpreting Power Data Object values and sets each field correctly.
 </p>
 
 
@@ -57,16 +57,16 @@ FORCEINLINE void UCM_PD_POWER_DATA_OBJECT_INIT_ULONG(
 ## -parameters
 <dl>
 
-### -param <i>Pdo</i> [out]
+### -param Pdo [out]
 
 <dd>
-<p>A pointer to a <a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a> structure.</p>
+<p>A pointer to a <a href="..\ucmtypes\ns-ucmtypes--ucm-pd-power-data-object.md">UCM_PD_POWER_DATA_OBJECT</a> structure.</p>
 </dd>
 
-### -param <i>UlongInLittleEndian</i> [in]
+### -param UlongInLittleEndian [in]
 
 <dd>
-<p>The ULONG value to set in the <b>Ul</b> member of   <a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a>.</p>
+<p>The ULONG value to set in the <b>Ul</b> member of   <a href="..\ucmtypes\ns-ucmtypes--ucm-pd-power-data-object.md">UCM_PD_POWER_DATA_OBJECT</a>.</p>
 </dd>
 </dl>
 
@@ -74,11 +74,11 @@ FORCEINLINE void UCM_PD_POWER_DATA_OBJECT_INIT_ULONG(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>A Power Data Object, as defined by the Power Delivery specification,  is a 32-bit value. The hardware is expected to retrieve the Power Data Objects as 32-bit values. This utility function initializes a <a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a>  structure by interpreting those values and setting each field correctly.
+<p>A Power Data Object, as defined by the Power Delivery specification,  is a 32-bit value. The hardware is expected to retrieve the Power Data Objects as 32-bit values. This utility function initializes a <a href="..\ucmtypes\ns-ucmtypes--ucm-pd-power-data-object.md">UCM_PD_POWER_DATA_OBJECT</a>  structure by interpreting those values and setting each field correctly.
 </p>
 
 <p>The 4 byte value is expected to be in little-endian format.
-The  structure is 4 bytes and the client driver can memcopy the Power Data Objects from the hardware into an array of <a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a> structures.
+The  structure is 4 bytes and the client driver can memcopy the Power Data Objects from the hardware into an array of <a href="..\ucmtypes\ns-ucmtypes--ucm-pd-power-data-object.md">UCM_PD_POWER_DATA_OBJECT</a> structures.
 </p>
 
 ## -requirements
@@ -130,7 +130,7 @@ The  structure is 4 bytes and the client driver can memcopy the Power Data Objec
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a>
+<a href="..\ucmtypes\ns-ucmtypes--ucm-pd-power-data-object.md">UCM_PD_POWER_DATA_OBJECT</a>
 </dt>
 </dl>
 <p> </p>

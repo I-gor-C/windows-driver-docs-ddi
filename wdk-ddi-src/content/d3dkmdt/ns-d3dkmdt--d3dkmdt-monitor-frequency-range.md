@@ -60,37 +60,37 @@ typedef struct _D3DKMDT_MONITOR_FREQUENCY_RANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>Origin</b>
+### -field Origin
 
 <dd>
 <p>A value from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-capabilities-origin.md">D3DKMDT_MONITOR_CAPABILITIES_ORIGIN</a> enumeration that indicates the source of the frequency range information.</p>
 </dd>
 
-### -field <b>RangeLimits</b>
+### -field RangeLimits
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-frequency-range.md">D3DKMDT_FREQUENCY_RANGE</a> structure that contains the minimum and maximum refresh rates supported by the monitor.</p>
 </dd>
 
-### -field <b>ConstraintType</b>
+### -field ConstraintType
 
 <dd>
 <p>A value from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-frequency-range-constraint.md">D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT</a> enumeration that specifies the type of constraint under which the frequency range is supported.</p>
 </dd>
 
-### -field <b>Constraint</b>
+### -field Constraint
 
 <dd>
 <p>A union that contains either the active region size or the maximum pixel rate in the following members.</p>
 <dl>
 
-### -field <b>ActiveSize</b>
+### -field ActiveSize
 
 <dd>
 <p>If <b>ConstraintType</b> is equal to D3DKMDT_MFRC_ACTIVESIZE, then this member specifies the maximum active region size for which the frequency range is supported.</p>
 </dd>
 
-### -field <b>MaxPixelRate</b>
+### -field MaxPixelRate
 
 <dd>
 <p>If <b>ConstraintType</b> is equal to D3DKMDT_MFRC_MAXPIXELRATE, then this member specifies the maximum pixel rate for which the frequency range is supported.</p>

@@ -72,37 +72,37 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>SizeOfThisPacket</b>
+### -field SizeOfThisPacket
 
 <dd>
 <p>The size of this structure, in bytes. The class driver fills in this member.</p>
 </dd>
 
-### -field <b>HwDeviceExtension</b>
+### -field HwDeviceExtension
 
 <dd>
 <p>Pointer to the minidriver's device extension. The minidriver may use this buffer to record private information global to the minidriver. The minidriver sets the size of this buffer in the <a href="..\strmini\ns-strmini--hw-initialization-data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver also passes pointers to this buffer in the <b>HwDeviceExtension</b> member of the <a href="..\strmini\ns-strmini--hw-stream-object~r1.md">HW_STREAM_OBJECT</a>, <a href="..\strmini\ns-strmini--hw-stream-request-block.md">HW_STREAM_REQUEST_BLOCK</a>, and <a href="..\strmini\ns-strmini--hw-time-context.md">HW_TIME_CONTEXT</a> structures it passes to the minidriver.</p>
 </dd>
 
-### -field <b>ClassDeviceObject</b>
+### -field ClassDeviceObject
 
 <dd>
 <p>Points to the class-driver-provided functional device object (FDO) for the driver's device.</p>
 </dd>
 
-### -field <b>PhysicalDeviceObject</b>
+### -field PhysicalDeviceObject
 
 <dd>
 <p>Points to the device object for the driver at the top of the driver stack when the class driver attaches to the driver stack. Drivers use this member when calling <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a> to communicate with the driver stack. The <b>RealPhysicalDeviceObject</b> member points to the actual PDO for the driver's device.</p>
 </dd>
 
-### -field <b>SystemIoBusNumber</b>
+### -field SystemIoBusNumber
 
 <dd>
 <p>The class driver fills in this member with the system bus ID number of the device. Bus 0 is the primary system bus. </p>
 </dd>
 
-### -field <b>AdapterInterfaceType</b>
+### -field AdapterInterfaceType
 
 <dd>
 <dl>
@@ -112,73 +112,73 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 </dl>
 </dd>
 
-### -field <b>BusInterruptLevel</b>
+### -field BusInterruptLevel
 
 <dd>
 <p>The class driver fills in this member with the IRQL for interrupts on this bus.</p>
 </dd>
 
-### -field <b>BusInterruptVector</b>
+### -field BusInterruptVector
 
 <dd>
 <p>The class driver fills in this member with the interrupt vector used by the device.</p>
 </dd>
 
-### -field <b>InterruptMode</b>
+### -field InterruptMode
 
 <dd>
 <p>The class driver fills in this member with the interrupt mode, either Latched or LevelSensitive.</p>
 </dd>
 
-### -field <b>DmaChannel</b>
+### -field DmaChannel
 
 <dd>
 <p>If the device connects to the ISA bus, the class driver fills in this member with the DMA channel of the device.</p>
 </dd>
 
-### -field <b>NumberOfAccessRanges</b>
+### -field NumberOfAccessRanges
 
 <dd>
 <p>The number of entries in the <b>AccessRanges</b> array.</p>
 </dd>
 
-### -field <b>AccessRanges</b>
+### -field AccessRanges
 
 <dd>
 <p>The number of entries in the <b>AccessRanges</b> array.</p>
 </dd>
 
-### -field <b>StreamDescriptorSize</b>
+### -field StreamDescriptorSize
 
 <dd>
 <p>The minidriver fills in this member with the size of its <a href="..\strmini\ns-strmini--hw-stream-descriptor.md">HW_STREAM_DESCRIPTOR</a> structure.</p>
 </dd>
 
-### -field <b>Irp</b>
+### -field Irp
 
 <dd>
 <p>Pointer to the PnP device start IRP that triggered this SRB_INITIALIZE_DEVICE request.</p>
 </dd>
 
-### -field <b>InterruptObject</b>
+### -field InterruptObject
 
 <dd>
 <p>If the device uses interrupts, the class driver fills in this member with a pointer to the associated Interrupt object. </p>
 </dd>
 
-### -field <b>DmaAdapterObject</b>
+### -field DmaAdapterObject
 
 <dd>
 <p>If the device uses DMA, the class driver fills in this member with a pointer to the associated DmaAdapter object.</p>
 </dd>
 
-### -field <b>RealPhysicalDeviceObject</b>
+### -field RealPhysicalDeviceObject
 
 <dd>
 <p>Pointer to the PDO for the driver's device.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. Do not use.</p>

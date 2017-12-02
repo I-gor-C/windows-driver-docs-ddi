@@ -67,82 +67,82 @@ typedef struct _UCX_USBDEVICE_EVENT_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size in bytes of this structure.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceEndpointsConfigure</b>
+### -field EvtUsbDeviceEndpointsConfigure
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_usbdevice_endpoints_configure">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-endpoints-configure.md">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a> callback function.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceEnable</b>
+### -field EvtUsbDeviceEnable
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_usbdevice_enable">EVT_UCX_USBDEVICE_ENABLE</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-enable.md">EVT_UCX_USBDEVICE_ENABLE</a> callback function.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceDisable</b>
+### -field EvtUsbDeviceDisable
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_usbdevice_disable">EVT_UCX_USBDEVICE_DISABLE</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-disable.md">EVT_UCX_USBDEVICE_DISABLE</a> callback function.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceReset</b>
+### -field EvtUsbDeviceReset
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_usbdevice_reset">EVT_UCX_USBDEVICE_RESET</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-reset.md">EVT_UCX_USBDEVICE_RESET</a> callback function.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceAddress</b>
+### -field EvtUsbDeviceAddress
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_usbdevice_address">EVT_UCX_USBDEVICE_ADDRESS</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-address.md">EVT_UCX_USBDEVICE_ADDRESS</a> callback function.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceUpdate</b>
+### -field EvtUsbDeviceUpdate
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_usbdevice_update">EVT_UCX_USBDEVICE_UPDATE</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-update.md">EVT_UCX_USBDEVICE_UPDATE</a> callback function.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceHubInfo</b>
+### -field EvtUsbDeviceHubInfo
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_usbdevice_hub_info">EVT_UCX_USBDEVICE_HUB_INFO</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-hub-info.md">EVT_UCX_USBDEVICE_HUB_INFO</a> callback function.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceDefaultEndpointAdd</b>
+### -field EvtUsbDeviceDefaultEndpointAdd
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_usbdevice_default_endpoint_add">EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-default-endpoint-add.md">EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD</a> callback function.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceEndpointAdd</b>
+### -field EvtUsbDeviceEndpointAdd
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_usbdevice_endpoint_add">EVT_UCX_USBDEVICE_ENDPOINT_ADD</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-endpoint-add.md">EVT_UCX_USBDEVICE_ENDPOINT_ADD</a> callback function.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceSuspend</b>
+### -field EvtUsbDeviceSuspend
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_usbdevice_suspend">EVT_UCX_USBDEVICE_SUSPEND</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-suspend.md">EVT_UCX_USBDEVICE_SUSPEND</a> callback function.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceResume</b>
+### -field EvtUsbDeviceResume
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_usbdevice_resume">EVT_UCX_USBDEVICE_RESUME</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-resume.md">EVT_UCX_USBDEVICE_RESUME</a> callback function.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceGetCharacteristic</b>
+### -field EvtUsbDeviceGetCharacteristic
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_usbdevice_get_characteristic">EVT_UCX_USBDEVICE_GET_CHARACTERISTIC</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-get-characteristic.md">EVT_UCX_USBDEVICE_GET_CHARACTERISTIC</a> callback function.</p>
 </dd>
 </dl>
 
@@ -166,10 +166,10 @@ typedef struct _UCX_USBDEVICE_EVENT_CALLBACKS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._ucx_usbdevice_event_callbacks_init">UCX_USBDEVICE_EVENT_CALLBACKS_INIT</a>
+<a href="..\ucxusbdevice\nf-ucxusbdevice-ucx-usbdevice-event-callbacks-init.md">UCX_USBDEVICE_EVENT_CALLBACKS_INIT</a>
 </dt>
 <dt>
-<a href="buses._ucxusbdeviceinitseteventcallbacks">UcxUsbDeviceInitSetEventCallbacks</a>
+<a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdeviceinitseteventcallbacks.md">UcxUsbDeviceInitSetEventCallbacks</a>
 </dt>
 </dl>
 <p> </p>

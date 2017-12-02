@@ -57,19 +57,19 @@ LARGE_INTEGER ExInterlockedAddLargeInteger(
 ## -parameters
 <dl>
 
-### -param <i>Addend</i> [in, out]
+### -param Addend [in, out]
 
 <dd>
 <p>A pointer to the variable to be adjusted by the <i>Increment</i> value. </p>
 </dd>
 
-### -param <i>Increment</i> [in]
+### -param Increment [in]
 
 <dd>
 <p>Specifies a value to be added to <i>Addend</i>. </p>
 </dd>
 
-### -param <i>Lock</i> [in, out]
+### -param Lock [in, out]
 
 <dd>
 <p>A pointer to a spin lock to be used to synchronize access to <i>Addend</i>. </p>

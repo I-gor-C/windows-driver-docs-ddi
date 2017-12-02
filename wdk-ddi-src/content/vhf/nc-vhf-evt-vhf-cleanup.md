@@ -58,7 +58,7 @@ void EvtVhfCleanup(
 ## -parameters
 <dl>
 
-### -param <i>VhfClientContext</i> [in]
+### -param VhfClientContext [in]
 
 <dd>
 <p>Pointer to the HID source driver-defined context structure that the driver passed in the previous call to <a href="..\vhf\nf-vhf-vhfcreate.md">VhfCreate</a> to create the virtual HID device.</p>
@@ -126,7 +126,7 @@ void EvtVhfCleanup(
 ## -see-also
 <dl>
 <dt>
-<a href="NULL">Write a HID source driver by using Virtual HID Framework (VHF)</a>
+<a href="https://msdn.microsoft.com/26964963-792F-4529-B4FC-110BF5C65B35">Write a HID source driver by using Virtual HID Framework (VHF)</a>
 </dt>
 </dl>
 <p> </p>

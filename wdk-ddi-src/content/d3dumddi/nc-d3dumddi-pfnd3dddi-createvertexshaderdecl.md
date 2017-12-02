@@ -59,19 +59,19 @@ __checkReturn HRESULT APIENTRY CreateVertexShaderDecl(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createvertexshaderdecl.md">D3DDDIARG_CREATEVERTEXSHADERDECL</a> structure that retrieves the shader handle that is associated with the vertex shader declaration that is specified by <i>pVertexElements</i>.</p>
 </dd>
 
-### -param <i>pVertexElements</i> [in]
+### -param pVertexElements [in]
 
 <dd>
 <p> An array of <a href="..\d3dumddi\ns-d3dumddi--d3dddivertexelement.md">D3DDDIVERTEXELEMENT</a> structures that make up the vertex shader declaration.</p>

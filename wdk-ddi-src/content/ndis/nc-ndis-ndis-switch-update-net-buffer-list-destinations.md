@@ -7,7 +7,7 @@ old-location: netvista\UpdateNetBufferListDestinations.htm
 old-project: netvista
 ms.assetid: 9A740524-0FC1-4585-8059-F678D4777F66
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,13 +63,13 @@ NDIS_STATUS UpdateNetBufferListDestinations(
 ## -parameters
 <dl>
 
-### -param <i>NdisSwitchContext</i> [in]
+### -param NdisSwitchContext [in]
 
 <dd>
 <p>An NDIS_SWITCH_CONTEXT value that contains the handle of the extensible switch module to which the Hyper-V extensible switch extension is attached. When the extension calls <a href="..\ndis\nf-ndis-ndisfgetoptionalswitchhandlers.md">NdisFGetOptionalSwitchHandlers</a>,  this handle is returned through the <i>NdisSwitchContext</i> parameter.</p>
 </dd>
 
-### -param <i>NetBufferList</i> [in, out]
+### -param NetBufferList [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure for a single packet.</p>
@@ -77,13 +77,13 @@ NDIS_STATUS UpdateNetBufferListDestinations(
 <div> </div>
 </dd>
 
-### -param <i>NumberOfNewDestinations</i> [in]
+### -param NumberOfNewDestinations [in]
 
 <dd>
 <p>A UINT32 value that specifies the number of new destination ports that were added to the packet.</p>
 </dd>
 
-### -param <i>Destinations</i> [in]
+### -param Destinations [in]
 
 <dd>
 <p>A pointer to an <a href="..\ndis\ns-ndis--ndis-switch-forwarding-destination-array.md">NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</a> structure. This structure specifies the extensible switch destination ports of the packet.</p>
@@ -104,19 +104,19 @@ NDIS_STATUS UpdateNetBufferListDestinations(
 
 <p>Add additional <a href="..\ndis\ns-ndis--ndis-switch-port-destination.md">NDIS_SWITCH_PORT_DESTINATION</a> elements in the array.</p>
 
-<p>For more information, see <a href="NULL">Adding Extensible Switch Destination Port Data to a Packet</a>.</p>
+<p>For more information, see <a href="netvista.adding_extensible_switch_destination_port_data_to_a_packet">Adding Extensible Switch Destination Port Data to a Packet</a>.</p>
 
 <p>Modify existing <a href="..\ndis\ns-ndis--ndis-switch-port-destination.md">NDIS_SWITCH_PORT_DESTINATION</a> elements of the array to exclude a packet from being forwarded to a specified port.</p>
 
-<p>For more information, see <a href="NULL">Excluding Packet Delivery to Extensible Switch Destination Ports</a>.</p>
+<p>For more information, see <a href="netvista.excluding_packet_delivery_to_extensible_switch_destination_ports">Excluding Packet Delivery to Extensible Switch Destination Ports</a>.</p>
 
 <p>If the extension adds or modifies destination ports in the <a href="..\ndis\ns-ndis--ndis-switch-forwarding-destination-array.md">NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</a> structure, the extension must call the <i>UpdateNetBufferListDestinations</i> function to commit those changes to the packet's <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 
 <p>If the call to <i>UpdateNetBufferListDestinations</i> returns NDIS_STATUS_SUCCESS, the extensible switch interface guarantees that the extensible switch port and network adapter connection that are referenced in the destination ports will not be deleted until the packet's send or receive operation is completed. </p>
 
-<p>Also, after the changes for destination ports have been committed, destination ports cannot be removed, and only the <b>IsExcluded</b>  member of a destination port's <a href="..\ndis\ns-ndis--ndis-switch-port-destination.md">NDIS_SWITCH_PORT_DESTINATION</a> structure can be changed. For more information, see <a href="NULL">Excluding Packet Delivery to Extensible Switch Destination Ports</a>.</p>
+<p>Also, after the changes for destination ports have been committed, destination ports cannot be removed, and only the <b>IsExcluded</b>  member of a destination port's <a href="..\ndis\ns-ndis--ndis-switch-port-destination.md">NDIS_SWITCH_PORT_DESTINATION</a> structure can be changed. For more information, see <a href="netvista.excluding_packet_delivery_to_extensible_switch_destination_ports">Excluding Packet Delivery to Extensible Switch Destination Ports</a>.</p>
 
-<p>For more information about the extensible switch forwarding context, see <a href="NULL">Hyper-V Extensible Switch Forwarding Context</a>.</p>
+<p>For more information about the extensible switch forwarding context, see <a href="netvista.hyper_v_extensible_switch_forwarding_context">Hyper-V Extensible Switch Forwarding Context</a>.</p>
 
 ## -requirements
 <table>
@@ -188,4 +188,4 @@ NDIS_STATUS UpdateNetBufferListDestinations(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_UPDATE_NET_BUFFER_LIST_DESTINATIONS callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_UPDATE_NET_BUFFER_LIST_DESTINATIONS callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

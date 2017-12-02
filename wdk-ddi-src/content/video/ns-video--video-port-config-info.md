@@ -83,178 +83,178 @@ typedef struct _VIDEO_PORT_CONFIG_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Is the size in bytes of this structure. The video port driver always initializes the <b>Length</b> member. In effect, its value indicates the version of VIDEO_PORT_CONFIG_INFO being used by the system. Because this structure might grow from one version of the system to the next, a miniport driver should check this member to determine whether it is at least <b>sizeof</b>(VIDEO_PORT_CONFIG_INFO) that the miniport driver uses to configure its adapter.</p>
 </dd>
 
-### -field <b>SystemIoBusNumber</b>
+### -field SystemIoBusNumber
 
 <dd>
 <p>Specifies the system-assigned number of the I/O bus on which the miniport driver's adapter might be connected. The video port driver always initializes this member.</p>
 </dd>
 
-### -field <b>AdapterInterfaceType</b>
+### -field AdapterInterfaceType
 
 <dd>
 <p>Specifies the type of bus interface. The video port driver always sets this member based on the bus on which the PnP manager detected the device.</p>
 </dd>
 
-### -field <b>BusInterruptLevel</b>
+### -field BusInterruptLevel
 
 <dd>
 <p>This member is irrelevant if the video hardware does not generate interrupts, indicated by setting the <b>HwInterrupt</b> member in the <a href="..\video\ns-video--video-hw-initialization-data.md">VIDEO_HW_INITIALIZATION_DATA</a> structure to <b>NULL</b>. Otherwise, it specifies the bus-relative IRQL that corresponds to the interrupt request on <b>Isa</b> or <b>MicroChannel</b> type buses. The preset default value for this member is zero. A miniport driver must supply the correct value if it handles interrupts for a video adapter on an <b>Isa</b> or <b>MicroChannel</b> type bus, or for a video adapter configured for level-sensitive interrupts on an <b>Eisa</b> type bus.</p>
 <p>If a miniport driver's <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a> function finds that the video adapter does not generate interrupts or that it cannot determine a valid interrupt vector/level for the adapter, <i>HwVidFindAdapter</i> should set both <b>BusInterruptLevel</b> and <b>BusInterruptVector</b> to zero.</p>
 </dd>
 
-### -field <b>BusInterruptVector</b>
+### -field BusInterruptVector
 
 <dd>
 <p>This member is irrelevant if the video hardware does not generate interrupts, indicated by setting the <b>HwInterrupt</b> member in the VIDEO_HW_INITIALIZATION_DATA structure to <b>NULL</b>. Otherwise, it specifies the bus-relative vector used by the video hardware on I/O buses that use interrupt vectors, such as PCI buses. The preset default value for this member is zero.</p>
 <p>If a miniport driver's <i>HwVidFindAdapter</i> function finds that the video adapter does not generate interrupts or that it cannot determine a valid interrupt vector/level for the adapter, <i>HwVidFindAdapter</i> should set both <b>BusInterruptVector</b> and <b>BusInterruptLevel</b> to zero.</p>
 </dd>
 
-### -field <b>InterruptMode</b>
+### -field InterruptMode
 
 <dd>
 <p>Indicates whether the video hardware uses <b>Latched</b> or <b>LevelSensitive</b> interrupts. The video port driver initializes this member if it is relevant, but a miniport driver with an ISR should check that it contains the correct value and reset it if necessary.</p>
 </dd>
 
-### -field <b>NumEmulatorAccessEntries</b>
+### -field NumEmulatorAccessEntries
 
 <dd>
 <p>This member and all subsequent members through <b>HardwareStateSize</b> are irrelevant to miniport drivers that do not declare themselves to be VGA-compatible miniport drivers on x86-based NT-based operating system platforms. For miniport drivers that do not support VGA-compatible SVGA adapters on x86-based machines, this member should be zero. Otherwise, it specifies the number of EMULATOR_ACCESS_RANGE-type elements in the following array.</p>
 </dd>
 
-### -field <b>EmulatorAccessEntries</b>
+### -field EmulatorAccessEntries
 
 <dd>
 <p>Pointer to an array of emulator access ranges set up by the VGA-compatible miniport driver. Each emulator access range must be a proper subset of the miniport driver's <a href="..\video\ns-video--video-access-range.md">VIDEO_ACCESS_RANGE</a>-type array. Each element specifies a range of I/O ports to be hooked out by the V86 emulator and, possibly, monitored by a driver-supplied SvgaHwIoPortXxx function whenever an MS-DOS application, running full screen, attempts to write directly to the video adapter registers. Usually, this array describes all I/O port ranges in the corresponding access ranges array. If the miniport driver defines its array of emulator access entries statically in the driver itself, the port driver initializes this pointer to that array. If <i>NumEmulatorAccessEntries</i> is zero, this member is <b>NULL</b>. 
 </p>
 </dd>
 
-### -field <b>EmulatorAccessEntriesContext</b>
+### -field EmulatorAccessEntriesContext
 
 <dd>
 <p>Specifies a value passed with each call to an <i>SvgaHwIoPortXxx</i> function described in the <b>EmulatorAccessEntries</b> array. Usually, a VGA-compatible miniport driver sets the value of this member to the <b>HwDeviceExtension</b> pointer, or to an offset within the device extension, so the miniport driver can maintain state, such as batched application-issued instructions, in its <i>SvgaHwIoPortXxx</i> functions.</p>
 </dd>
 
-### -field <b>VdmPhysicalVideoMemoryAddress</b>
+### -field VdmPhysicalVideoMemoryAddress
 
 <dd>
 <p>Specifies the base (mapped) logical address of a range of video memory to be mapped into a VDM's address space for x86 BIOS INT10 support. For miniport drivers that do not support VGA-compatible adapters on x86-based machines, this member should be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>VdmPhysicalVideoMemoryLength</b>
+### -field VdmPhysicalVideoMemoryLength
 
 <dd>
 <p>Specifies the size in bytes of the range be mapped into a VDM's address space for x86 BIOS support. For miniport drivers that do not support VGA-compatible adapters on x86-based machines, this member should be zero.</p>
 </dd>
 
-### -field <b>HardwareStateSize</b>
+### -field HardwareStateSize
 
 <dd>
 <p>Specifies the minimum size in bytes required to store hardware state information in response to an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-save-hardware-state.md">IOCTL_VIDEO_SAVE_HARDWARE_STATE</a> request, which must be supported only by VGA-compatible miniport drivers on x86-based machines. The initialized value for this member is zero. A VGA-compatible miniport driver must set this member to the number of bytes it requires to hold saved adapter state.</p>
 </dd>
 
-### -field <b>DmaChannel</b>
+### -field DmaChannel
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>DmaPort</b>
+### -field DmaPort
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>DmaShareable</b>
+### -field DmaShareable
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>InterruptShareable</b>
+### -field InterruptShareable
 
 <dd>
 <p>If the miniport driver's device interrupts, this member should be set to zero if the interrupt cannot be shared with another device, or set to one if the interrupt can be shared. Otherwise, a miniport driver can ignore this member.</p>
 </dd>
 
-### -field <b>Master</b>
+### -field Master
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>DmaWidth</b>
+### -field DmaWidth
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>DmaSpeed</b>
+### -field DmaSpeed
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>bMapBuffers</b>
+### -field bMapBuffers
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>NeedPhysicalAddresses</b>
+### -field NeedPhysicalAddresses
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>DemandMode</b>
+### -field DemandMode
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>MaximumTransferLength</b>
+### -field MaximumTransferLength
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>NumberOfPhysicalBreaks</b>
+### -field NumberOfPhysicalBreaks
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>ScatterGather</b>
+### -field ScatterGather
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>MaximumScatterGatherChunkSize</b>
+### -field MaximumScatterGatherChunkSize
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>VideoPortGetProcAddress</b>
+### -field VideoPortGetProcAddress
 
 <dd>
 <p>Pointer to the <a href="..\video\nc-video-pvideo-port-get-proc-address.md">VideoPortGetProcAddress</a> callback routine. This member is used to find the address of a video port driver function that the video miniport driver can use without linking to it directly. This enables a driver binary to run on an earlier version of Windows. For details, see <a href="https://msdn.microsoft.com/48dace7e-7ba3-48bf-9788-469ff42f6fe3">Using VideoPortGetProcAddress</a>.</p>
 </dd>
 
-### -field <b>DriverRegistryPath</b>
+### -field DriverRegistryPath
 
 <dd>
 <p>Pointer to the registry path containing the device's service. The display driver can use this information in any way it deems useful.</p>
 </dd>
 
-### -field <b>SystemMemorySize</b>
+### -field SystemMemorySize
 
 <dd>
 <p>Indicates to a driver the amount, in bytes, of physical memory in the system.</p>

@@ -58,31 +58,31 @@ typedef struct _GET_BAND_METADATA_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>StructSize</b>
+### -field StructSize
 
 <dd>
 <p>The size of this structure in bytes. Set to <b>sizeof</b>(GET_BAND_METADATA_PARAMETERS).</p>
 </dd>
 
-### -field <b>BandId</b>
+### -field BandId
 
 <dd>
 <p>The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId.</b> To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.</p>
 </dd>
 
-### -field <b>BandStart</b>
+### -field BandStart
 
 <dd>
 <p>The starting byte location on the storage device to begin a band search. An attempt is made to match a band at or after <b>BandStart</b>.</p>
 </dd>
 
-### -field <b>MetadataOffset</b>
+### -field MetadataOffset
 
 <dd>
 <p>The offset from the start of the band metadata property  to retrieve  data from.</p>
 </dd>
 
-### -field <b>MetadataSize</b>
+### -field MetadataSize
 
 <dd>
 <p>The length of metadata bytes to retrieve.</p>

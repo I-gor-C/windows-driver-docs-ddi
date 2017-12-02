@@ -60,43 +60,43 @@ typedef struct _SET_BAND_METADATA_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>StructSize</b>
+### -field StructSize
 
 <dd>
 <p>The size of this structure in bytes. Set to <b>sizeof</b>(SET_BAND_METADATA_PARAMETERS).</p>
 </dd>
 
-### -field <b>BandId</b>
+### -field BandId
 
 <dd>
 <p>The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId.</b> To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.</p>
 </dd>
 
-### -field <b>BandStart</b>
+### -field BandStart
 
 <dd>
 <p>The starting byte location on the storage device to begin a band search. An attempt is made to match a band at or after <b>BandStart</b>.</p>
 </dd>
 
-### -field <b>MetadataOffset</b>
+### -field MetadataOffset
 
 <dd>
 <p>The offset from the start of the band metadata property  to set the new   data.</p>
 </dd>
 
-### -field <b>MetadataSize</b>
+### -field MetadataSize
 
 <dd>
 <p>The length of metadata bytes to set. This size is limited by the value of <b>MetadataOffset</b> subtracted from the <b>BandMetadataSize</b> member of the <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-management-capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a> structure.</p>
 </dd>
 
-### -field <b>BufferOffset</b>
+### -field BufferOffset
 
 <dd>
 <p>The offset, in bytes, from the beginning of <b>SET_BAND_METADATA_PARAMETERS </b> to the location of the new metadata.</p>
 </dd>
 
-### -field <b>AuthKeyOffset</b>
+### -field AuthKeyOffset
 
 <dd>
 <p>The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the authorization key for the band. The offset is from the beginning of <b>SET_BAND_METADATA_PARAMETERS</b>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.</p>
@@ -117,13 +117,13 @@ typedef struct _SET_BAND_METADATA_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="KeySize"></a><a id="keysize"></a><a id="KEYSIZE"></a>KeySize
+### -field KeySize
 
 <dd>
 <p>Size of the key, in bytes, of the key data at <b>Key</b>. If <b>KeySize</b> is set to 0, a default key is used.</p>
 </dd>
 
-### -field <a id="Key"></a><a id="key"></a><a id="KEY"></a>Key
+### -field Key
 
 <dd>
 <p>A variable-length byte array that contains the key data.</p>

@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Earliest</b>
+### -field Earliest
 
 <dd>
 <p>Pointer to a variable that receives the earliest time for efficient seeking.</p>
 </dd>
 
-### -field <b>Latest</b>
+### -field Latest
 
 <dd>
 <p>Pointer to a variable that receives the latest time for efficient seeking.</p>

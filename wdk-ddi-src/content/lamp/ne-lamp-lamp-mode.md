@@ -55,13 +55,13 @@ typedef enum _LAMP_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="LAMP_MODE_WHITE"></a><a id="lamp_mode_white"></a><b>LAMP_MODE_WHITE</b>
+### -field LAMP_MODE_WHITE
 
 <dd>
 <p>Required. White light only.</p>
 </dd>
 
-### -field <a id="LAMP_MODE_COLOR"></a><a id="lamp_mode_color"></a><b>LAMP_MODE_COLOR</b>
+### -field LAMP_MODE_COLOR
 
 <dd>
 <p>Optional. Color light.</p>

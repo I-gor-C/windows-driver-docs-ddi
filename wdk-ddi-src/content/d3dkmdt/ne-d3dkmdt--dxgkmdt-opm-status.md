@@ -58,32 +58,32 @@ typedef enum _DXGKMDT_OPM_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKMDT_OPM_STATUS_NORMAL"></a><a id="dxgkmdt_opm_status_normal"></a><b>DXGKMDT_OPM_STATUS_NORMAL</b>
+### -field DXGKMDT_OPM_STATUS_NORMAL
 
 <dd>
 <p>Indicates that the protected output is working correctly. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_STATUS_LINK_LOST"></a><a id="dxgkmdt_opm_status_link_lost"></a><b>DXGKMDT_OPM_STATUS_LINK_LOST</b>
+### -field DXGKMDT_OPM_STATUS_LINK_LOST
 
 <dd>
 <p>Indicates that although the protected output detected no tampering, an output protection technology unexpectedly stopped working. </p>
 <p>This status bit must be set if DXGKMDT_OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED is also set. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_STATUS_RENEGOTIATION_REQUIRED"></a><a id="dxgkmdt_opm_status_renegotiation_required"></a><b>DXGKMDT_OPM_STATUS_RENEGOTIATION_REQUIRED</b>
+### -field DXGKMDT_OPM_STATUS_RENEGOTIATION_REQUIRED
 
 <dd>
 <p>Indicates that the end user caused the configuration of the physical connector to change. Therefore, a renegotiation is required. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_STATUS_TAMPERING_DETECTED"></a><a id="dxgkmdt_opm_status_tampering_detected"></a><b>DXGKMDT_OPM_STATUS_TAMPERING_DETECTED</b>
+### -field DXGKMDT_OPM_STATUS_TAMPERING_DETECTED
 
 <dd>
 <p>Indicates that tampering with the graphics adapter or the adapter's display miniport driver has occurred. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED"></a><a id="dxgkmdt_opm_status_revoked_hdcp_device_attached"></a><b>DXGKMDT_OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED</b>
+### -field DXGKMDT_OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED
 
 <dd>
 <p>Indicates that a revoked High-bandwidth Digital Content Protection (HDCP) device is directly or indirectly attached to a protected output. If HDCP is not enabled, the protected output is not required to detect revoked devices. If HDCP is enabled, the protected output must detect revoked devices. The driver sets this status value only from a call to its <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a> function to determine if HDCP is enabled. </p>

@@ -60,32 +60,32 @@ typedef struct _SES_CONFIGURATION_DIAGNOSTIC_PAGE {
 ## -struct-fields
 <dl>
 
-### -field <b>PageCode</b>
+### -field PageCode
 
 <dd>
 <p>Specifies the diagnostic page being sent or requested based on the value. For a Microcode Control diagnostic page, the value should be 0x01.</p>
 </dd>
 
-### -field <b>NumberOfSecondarySubEnclosures</b>
+### -field NumberOfSecondarySubEnclosures
 
 <dd>
 <p>Specifies the number of separate subenclosures included in
 the enclosure descriptor list, not including the primary subenclosure. If this is set to zero, only the primary subenclosure exists.</p>
 </dd>
 
-### -field <b>PageLength</b>
+### -field PageLength
 
 <dd>
 <p>Specifies the length of the diagnostic page, in bytes.</p>
 </dd>
 
-### -field <b>GenerationCode</b>
+### -field GenerationCode
 
 <dd>
 <p>Specifies the value of the generation code.</p>
 </dd>
 
-### -field <b>Descriptors</b>
+### -field Descriptors
 
 <dd>
 <p>Specifies the enclosure descriptors for the primary and secondary enclosures. The primary enclosure is the first index.</p>

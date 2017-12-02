@@ -63,7 +63,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>MemoryType</b>
+### -field MemoryType
 
 <dd>
 <p>Specifies the type of memory used for buffers and data frames. There is a partial correspondence between this member and the <b>PoolType</b> member in the <a href="stream.ksallocator_framing">KSALLOCATOR_FRAMING</a> structure. The two members differ in that <b>PoolType</b> allows only paged or nonpaged pool. <b>MemoryType</b> can have any of the values listed in the following table.</p>
@@ -124,7 +124,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>BusType</b>
+### -field BusType
 
 <dd>
 <p>Specifies the physical bus accessing the physical memory specified by <i>MemoryType</i>. Use this field to determine a compatible memory type based on the bus that is used for the connection medium. This distinction is crucial when a pin exposes different memory types based on the connection medium. <b>BusType</b> can have any of the values listed in the following table.</p>
@@ -177,66 +177,66 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>MemoryFlags</b>
+### -field MemoryFlags
 
 <dd>
 <p>Specifies that the connection point is responsible for frame allocation. Should be set to KSALLOCATOR_REQUIREMENTF_MUST_ALLOCATE.</p>
 </dd>
 
-### -field <b>BusFlags</b>
+### -field BusFlags
 
 <dd>
 <p>Not used.  </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Similar to the <b>OptionsFlags</b> and <b>RequirementsFlags</b> union in the <a href="stream.ksallocator_framing">KSALLOCATOR_FRAMING</a> structure, with the addition of the following flags that add support for pipes.</p>
 <dl>
 
-### -field <a id="KSALLOCATOR_FLAG_PARTIAL_READ_SUPPORT"></a><a id="ksallocator_flag_partial_read_support"></a><b>KSALLOCATOR_FLAG_PARTIAL_READ_SUPPORT</b> (Indicates that the filter supports partial fill of frames.)
+### -field KSALLOCATOR_FLAG_PARTIAL_READ_SUPPORT (Indicates that the filter supports partial fill of frames.)
 
 
-### -field <a id="KSALLOCATOR_FLAG_DEVICE_SPECIFIC"></a><a id="ksallocator_flag_device_specific"></a><b>KSALLOCATOR_FLAG_DEVICE_SPECIFIC</b> (Indicates that the physical memory type is device-specific.)
+### -field KSALLOCATOR_FLAG_DEVICE_SPECIFIC (Indicates that the physical memory type is device-specific.)
 
 
-### -field <a id="KSALLOCATOR_FLAG_CAN_ALLOCATE"></a><a id="ksallocator_flag_can_allocate"></a><b>KSALLOCATOR_FLAG_CAN_ALLOCATE</b> (Indicates that the filter is capable of allocating device-specific memory. See additional information below.)
+### -field KSALLOCATOR_FLAG_CAN_ALLOCATE (Indicates that the filter is capable of allocating device-specific memory. See additional information below.)
 
 
-### -field <a id="KSALLOCATOR_FLAG_INSIST_ON_FRAMESIZE_RATIO"></a><a id="ksallocator_flag_insist_on_framesize_ratio"></a><b>KSALLOCATOR_FLAG_INSIST_ON_FRAMESIZE_RATIO</b> (Indicates that the frame ratio defined in the <a href="stream.ks_compression">KS_COMPRESSION</a> structure must be maintained.)
+### -field KSALLOCATOR_FLAG_INSIST_ON_FRAMESIZE_RATIO (Indicates that the frame ratio defined in the KS_COMPRESSION structure must be maintained.)
 
 
-### -field <a id="KSALLOCATOR_REQUIREMENTF_PREFERENCES_ONLY"></a><a id="ksallocator_requirementf_preferences_only"></a><b>KSALLOCATOR_REQUIREMENTF_PREFERENCES_ONLY</b> (Indicates that the Requirements flags are preferences only and the connection point is able to allocate frames that do not meet those preferred specifications.)
+### -field KSALLOCATOR_REQUIREMENTF_PREFERENCES_ONLY (Indicates that the Requirements flags are preferences only and the connection point is able to allocate frames that do not meet those preferred specifications.)
 
 </dl>
 </dd>
 
-### -field <b>Frames</b>
+### -field Frames
 
 <dd>
 <p>Specifies the total number of allowable outstanding frames. Corresponds to the <b>Frames</b> member of the <a href="stream.ksallocator_framing">KSALLOCATOR_FRAMING</a> structure.</p>
 </dd>
 
-### -field <b>FileAlignment</b>
+### -field FileAlignment
 
 <dd>
 <p>Requirement for frame alignment. Corresponds to the <b>FileAlignment</b> member of the <a href="stream.ksallocator_framing">KSALLOCATOR_FRAMING</a> structure.</p>
 </dd>
 
-### -field <b>MemoryTypeWeight</b>
+### -field MemoryTypeWeight
 
 <dd>
 <p>A value of type ULONG that specifies the pin-wide weight of this memory type.</p>
 </dd>
 
-### -field <b>PhysicalRange</b>
+### -field PhysicalRange
 
 <dd>
 <p>A structure of type <a href="stream.ks_framing_range">KS_FRAMING_RANGE</a> that specifies the physical limit of frame sizes.</p>
 </dd>
 
-### -field <b>FramingRange</b>
+### -field FramingRange
 
 <dd>
 <p>A structure of type <a href="stream.ks_framing_range_weighted">KS_FRAMING_RANGE_WEIGHTED</a> that specifies the optimal range of frame sizes.</p>

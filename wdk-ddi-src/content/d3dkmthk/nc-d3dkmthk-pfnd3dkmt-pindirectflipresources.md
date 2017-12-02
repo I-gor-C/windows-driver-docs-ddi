@@ -57,7 +57,7 @@ _Check_return_ NTSTATUS APIENTRY* D3DKMTPinDirectFlipResources(
 ## -parameters
 <dl>
 
-### -param <i>pResources</i> [in]
+### -param pResources [in]
 
 <dd></dd>
 </dl>

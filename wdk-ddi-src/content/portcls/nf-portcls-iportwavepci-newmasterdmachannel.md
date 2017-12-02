@@ -65,73 +65,73 @@ NTSTATUS NewMasterDmaChannel(
 ## -parameters
 <dl>
 
-### -param <i>DmaChannel</i> [out]
+### -param DmaChannel [out]
 
 <dd>
 <p>Output pointer for the DMA channel. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the new DMA-channel object's <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a> interface.</p>
 </dd>
 
-### -param <i>OuterUnknown</i> [in, optional]
+### -param OuterUnknown [in, optional]
 
 <dd>
 <p>Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate the DMA-channel object. This parameter is optional. If aggregation is not required, specify this parameter as <b>NULL</b>.</p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>Specifies the type of storage pool from which the object is to be allocated. This is a <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a> enumeration value. Specify a nonpaged pool type for this parameter.</p>
 </dd>
 
-### -param <i>ResourceList</i> [in, optional]
+### -param ResourceList [in, optional]
 
 <dd>
 <p>Pointer to the miniport driver's resource list, which is an <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a> object. This parameter is optional and can be specified as <b>NULL</b>. The <code>NewMasterDmaChannel</code> method currently makes no use of this parameter.</p>
 </dd>
 
-### -param <i>ScatterGather</i> [in]
+### -param ScatterGather [in]
 
 <dd>
 <p>Requests that the DMA channel support scatter/gather DMA. Always set this parameter to <b>TRUE</b>.</p>
 </dd>
 
-### -param <i>Dma32BitAddresses</i> [in]
+### -param Dma32BitAddresses [in]
 
 <dd>
 <p>Specifies the use of 32-bit addresses for DMA operations.</p>
 </dd>
 
-### -param <i>Dma64BitAddresses</i> [in]
+### -param Dma64BitAddresses [in]
 
 <dd>
 <p>Specifies the use of 64-bit addresses for DMA operations.</p>
 </dd>
 
-### -param <i>IgnoreCount</i> [in]
+### -param IgnoreCount [in]
 
 <dd>
 <p>Indicates whether to ignore the DMA controller's transfer counter. Set to <b>TRUE</b> if the DMA controller in this platform does not maintain an accurate transfer counter, and therefore requires a workaround.</p>
 </dd>
 
-### -param <i>DmaWidth</i> [in]
+### -param DmaWidth [in]
 
 <dd>
 <p>Not used. Set to (DMA_WIDTH)(-1).</p>
 </dd>
 
-### -param <i>DmaSpeed</i> [in]
+### -param DmaSpeed [in]
 
 <dd>
 <p>Not used. Set to (DMA_SPEED)(-1).</p>
 </dd>
 
-### -param <i>MaximumLength</i> [in]
+### -param MaximumLength [in]
 
 <dd>
 <p>Maximum number of bytes in the buffer that will be associated with this DMA channel.</p>
 </dd>
 
-### -param <i>DmaPort</i> [in]
+### -param DmaPort [in]
 
 <dd>
 <p>Not used. Set to 0.</p>
@@ -146,7 +146,7 @@ NTSTATUS NewMasterDmaChannel(
 
 <p>Specify the <i>PoolType</i> parameter to be one of the nonpaged pool types defined in the POOL_TYPE enumeration. The DMA-channel object must not reside in paged memory because several of the methods in the <b>IDmaChannel</b> interface can be called from IRQL DISPATCH_LEVEL.</p>
 
-<p>The <i>DmaChannel</i>, <i>OuterUnknown</i>, and <i>ResourceList</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>DmaChannel</i>, <i>OuterUnknown</i>, and <i>ResourceList</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

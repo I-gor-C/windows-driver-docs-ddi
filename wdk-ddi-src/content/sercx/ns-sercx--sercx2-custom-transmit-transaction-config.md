@@ -58,25 +58,25 @@ typedef struct _SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2customtransmittransactioncreate.md">SerCx2CustomTransmitTransactionCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
-### -field <b>EvtSerCx2CustomTransmitTransactionInitialize</b>
+### -field EvtSerCx2CustomTransmitTransactionInitialize
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-custom-transmit-transaction-initialize.md">EvtSerCx2CustomTransmitTransactionInitialize</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>
 </dd>
 
-### -field <b>EvtSerCx2CustomTransmitTransactionStart</b>
+### -field EvtSerCx2CustomTransmitTransactionStart
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-custom-transmit-transaction-start.md">EvtSerCx2CustomTransmitTransactionStart</a> event callback function. This member must point to a valid function.</p>
 </dd>
 
-### -field <b>EvtSerCx2CustomTransmitTransactionCleanup</b>
+### -field EvtSerCx2CustomTransmitTransactionCleanup
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-custom-transmit-transaction-cleanup.md">EvtSerCx2CustomTransmitTransactionCleanup</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>

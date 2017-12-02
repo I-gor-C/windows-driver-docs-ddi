@@ -55,7 +55,7 @@ VOID PcwUnregister(
 ## -parameters
 <dl>
 
-### -param <i>Registration</i> [in]
+### -param Registration [in]
 
 <dd>
 <p>A pointer to the registration being removed.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_restart_attributes.htm
 old-project: netvista
 ms.assetid: 1f9f4b91-bd1f-4daa-ac98-6372bf55c2ab
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_RESTART_ATTRIBUTES,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct _NDIS_RESTART_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Next</b>
+### -field Next
 
 <dd>
 <p>A pointer to an NDIS_RESTART_ATTRIBUTES structure that you can use to access the next set of
@@ -66,7 +66,7 @@ typedef struct _NDIS_RESTART_ATTRIBUTES {
      is <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Oid</b>
+### -field Oid
 
 <dd>
 <p>The NDIS object identifier for the information that is in the 
@@ -79,14 +79,14 @@ typedef struct _NDIS_RESTART_ATTRIBUTES {
      NDIS_RESTART_GENERAL_ATTRIBUTES</a> structure.</p>
 </dd>
 
-### -field <b>DataLength</b>
+### -field DataLength
 
 <dd>
 <p>The length, in bytes, of the information that is stored in the 
      <b>Data</b> member.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>A buffer that contains the information that is associated with the OID that is specified in the 
@@ -198,4 +198,4 @@ typedef struct _NDIS_RESTART_ATTRIBUTES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RESTART_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RESTART_ATTRIBUTES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

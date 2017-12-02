@@ -58,13 +58,13 @@ NTSTATUS APIENTRY pfnAddMode(
 ## -parameters
 <dl>
 
-### -param <i>hMonitorSourceModeSet</i> [in]
+### -param hMonitorSourceModeSet [in]
 
 <dd>
 <p>[in] A handle to a monitor source mode set object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-acquiremonitorsourcemodeset.md">pfnAcquireMonitorSourceModeSet</a> function of the <a href="display.monitor_interface">Monitor interface</a>.</p>
 </dd>
 
-### -param <i>pMonitorSourceModeInfo</i> [in]
+### -param pMonitorSourceModeInfo [in]
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-monitor-source-mode.md">D3DKMDT_MONITOR_SOURCE_MODE</a> structure that describes the monitor source mode. The display miniport driver previously obtained this structure by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-createnewmodeinfo.md">pfnCreateNewModeInfo</a>.</p>

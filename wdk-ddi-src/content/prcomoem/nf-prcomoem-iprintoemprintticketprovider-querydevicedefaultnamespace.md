@@ -55,7 +55,7 @@ HRESULT QueryDeviceDefaultNamespace(
 ## -parameters
 <dl>
 
-### -param <i>pbstrNamespaceUri</i> [out]
+### -param pbstrNamespaceUri [out]
 
 <dd>
 <p>A pointer to a BSTR that receives the namespace URI. The plug-in places the namespace URI in the buffer that is pointed to by <i>pbstrNamespaceUri</i>. <code>IPrintOemPrintTicketProvider::QueryDeviceDefaultNamespace</code> is responsible for allocating the string by means of a call to <b>SysAllocString</b> (described in the Microsoft Windows SDK documentation), but the caller is responsible for freeing the string.</p>

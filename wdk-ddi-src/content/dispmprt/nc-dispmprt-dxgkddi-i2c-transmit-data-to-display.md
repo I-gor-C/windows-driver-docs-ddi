@@ -61,31 +61,31 @@ NTSTATUS DxgkDdiI2CTransmitDataToDisplay(
 ## -parameters
 <dl>
 
-### -param <i>MiniportDeviceContext</i> [in]
+### -param MiniportDeviceContext [in]
 
 <dd>
 <p>A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>VidPnTargetId</i> [in]
+### -param VidPnTargetId [in]
 
 <dd>
 <p>An integer that identifies one of the video present targets on the display adapter.</p>
 </dd>
 
-### -param <i>SevenBitI2CAddress</i> [in]
+### -param SevenBitI2CAddress [in]
 
 <dd>
 <p>The address of the I2C device to which data will be transmitted.</p>
 </dd>
 
-### -param <i>DataLength</i> [in]
+### -param DataLength [in]
 
 <dd>
 <p>The length, in bytes, of the data to be transmitted. This parameter must be between 1 and 64, inclusive.</p>
 </dd>
 
-### -param <i>Data</i> [in]
+### -param Data [in]
 
 <dd>
 <p>A pointer to a buffer that holds the data to be transmitted.</p>

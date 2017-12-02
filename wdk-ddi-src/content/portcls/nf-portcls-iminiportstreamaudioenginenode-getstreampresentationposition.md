@@ -54,7 +54,7 @@ NTSTATUS GetStreamPresentationPosition(
 ## -parameters
 <dl>
 
-### -param <i>pPresentationPosition</i> [out]
+### -param pPresentationPosition [out]
 
 <dd>
 <p>A <a href="audio.ksaudio_presentation_position">KSAUDIO_PRESENTATION_POSITION</a> structure that represents the current cursor position in the audio data stream.</p>

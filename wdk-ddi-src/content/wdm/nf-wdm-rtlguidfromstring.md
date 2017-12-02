@@ -56,13 +56,13 @@ NTSTATUS RtlGUIDFromString(
 ## -parameters
 <dl>
 
-### -param <i>GuidString</i> [in]
+### -param GuidString [in]
 
 <dd>
 <p>Pointer to the buffered Unicode string to be converted to a GUID. </p>
 </dd>
 
-### -param <i>Guid</i> [out]
+### -param Guid [out]
 
 <dd>
 <p>Pointer to a caller-supplied variable in which the GUID is returned. </p>

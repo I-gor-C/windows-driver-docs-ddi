@@ -60,13 +60,13 @@ HRESULT DrvGetGPDData(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>dwType</i> 
+### -param dwType 
 
 <dd>
 <p>Caller-supplied flag indicating the type of GPD data being requested. Currently, the following flag is the only one defined:</p>
@@ -87,25 +87,25 @@ HRESULT DrvGetGPDData(
 <p> </p>
 </dd>
 
-### -param <i>pInputData</i> 
+### -param pInputData 
 
 <dd>
 <p>Reserved. Must be zero.</p>
 </dd>
 
-### -param <i>pBuffer</i> 
+### -param pBuffer 
 
 <dd>
 <p>Caller-supplied pointer to a buffer to receive the requested information.</p>
 </dd>
 
-### -param <i>cbSize</i> 
+### -param cbSize 
 
 <dd>
 <p>Caller-supplied size, in bytes, of the buffer pointed to by <i>pBuffer</i>.</p>
 </dd>
 
-### -param <i>pcbNeeded</i> 
+### -param pcbNeeded 
 
 <dd>
 <p>Receives the driver-supplied minimum buffer size, in bytes, required to contain the requested information.</p>

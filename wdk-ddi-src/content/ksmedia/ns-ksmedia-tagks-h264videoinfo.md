@@ -87,7 +87,7 @@ typedef struct _KS_H264VIDEOINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>wWidth</b>
+### -field wWidth
 
 <dd>
 <p>Specifies the width in pixels of pictures output from the decoding process. </p>
@@ -95,7 +95,7 @@ typedef struct _KS_H264VIDEOINFO {
 <div> </div>
 </dd>
 
-### -field <b>wHeight</b>
+### -field wHeight
 
 <dd>
 <p>Specifies the height in pixels of pictures output from the decoding process.</p>
@@ -103,7 +103,7 @@ typedef struct _KS_H264VIDEOINFO {
 <div> </div>
 </dd>
 
-### -field <b>wSARwidth</b>
+### -field wSARwidth
 
 <dd>
 <p>Specifies the sample aspect ratio width as defined in the H.264 Annex E. </p>
@@ -111,7 +111,7 @@ typedef struct _KS_H264VIDEOINFO {
 <div> </div>
 </dd>
 
-### -field <b>wSARheight</b>
+### -field wSARheight
 
 <dd>
 <p>Specifies the sample aspect ratio height as defined in the H.264 Annex E. </p>
@@ -119,7 +119,7 @@ typedef struct _KS_H264VIDEOINFO {
 <div> </div>
 </dd>
 
-### -field <b>wProfile</b>
+### -field wProfile
 
 <dd>
 <p>Specifies the first two bytes of the sequence parameter set as described by profile_idc and constraint flags in the H.264 specification. </p>
@@ -167,7 +167,7 @@ typedef struct _KS_H264VIDEOINFO {
 <p> </p>
 </dd>
 
-### -field <b>bLevelIDC</b>
+### -field bLevelIDC
 
 <dd>
 <p>Specifies the level as described by the level_idc flag.</p>
@@ -191,7 +191,7 @@ typedef struct _KS_H264VIDEOINFO {
 <p> </p>
 </dd>
 
-### -field <b>wConstrainedToolset</b>
+### -field wConstrainedToolset
 
 <dd>
 <p>Constrains the features allowed by <b>wProfile</b>.</p>
@@ -224,7 +224,7 @@ typedef struct _KS_H264VIDEOINFO {
 <p> </p>
 </dd>
 
-### -field <b>bmSupportedUsages</b>
+### -field bmSupportedUsages
 
 <dd>
 <p>Defines the bitmap that specifies the supported usages.</p>
@@ -293,7 +293,7 @@ typedef struct _KS_H264VIDEOINFO {
 <p> </p>
 </dd>
 
-### -field <b>bmCapabilities</b>
+### -field bmCapabilities
 
 <dd>
 <p>Defines the bitmap that specifies the capabilities for this frame descriptor.</p>
@@ -334,7 +334,7 @@ typedef struct _KS_H264VIDEOINFO {
 <p> </p>
 </dd>
 
-### -field <b>bmSVCCapabilities</b>
+### -field bmSVCCapabilities
 
 <dd>
 <p>Defines the bitmap that specifies the Scalable Video Coding (SVC) capabilities.</p>
@@ -375,7 +375,7 @@ typedef struct _KS_H264VIDEOINFO {
 <p> </p>
 </dd>
 
-### -field <b>bmMVCCapabilities</b>
+### -field bmMVCCapabilities
 
 <dd>
 <p>Defines the bitmap that specifies the Multicast Video Coding (MVC) capabilities. </p>
@@ -400,7 +400,7 @@ typedef struct _KS_H264VIDEOINFO {
 <p> </p>
 </dd>
 
-### -field <b>dwFrameInterval</b>
+### -field dwFrameInterval
 
 <dd>
 <p>Specifies the supported frame interval.</p>
@@ -408,13 +408,13 @@ typedef struct _KS_H264VIDEOINFO {
 <div> </div>
 </dd>
 
-### -field <b>bMaxCodecConfigDelay</b>
+### -field bMaxCodecConfigDelay
 
 <dd>
 <p>Specifies the maximum number of frames the encoder takes to respond to a command.</p>
 </dd>
 
-### -field <b>bmSupportedSliceModes</b>
+### -field bmSupportedSliceModes
 
 <dd>
 <p>Defines the bitmap that specifies the slice modes.</p>
@@ -439,11 +439,11 @@ typedef struct _KS_H264VIDEOINFO {
 <p> </p>
 </dd>
 
-### -field <b>bmSupportedSyncFrameTypes</b>
+### -field bmSupportedSyncFrameTypes
 
 <dd></dd>
 
-### -field <b>bDynamicResolutionScaling</b>
+### -field bDynamicResolutionScaling
 
 <dd>
 <p>Defines the bitmap that specifies the synchronization frame types.</p>
@@ -476,7 +476,7 @@ typedef struct _KS_H264VIDEOINFO {
 <p> </p>
 </dd>
 
-### -field <b>bSimulcastSupport</b>
+### -field bSimulcastSupport
 
 <dd>
 <p>Specifies the number of H.264 video streaming endpoints and the number of streams this endpoint supports.</p>
@@ -497,7 +497,7 @@ typedef struct _KS_H264VIDEOINFO {
 <p> </p>
 </dd>
 
-### -field <b>bmSupportedRateControlModes</b>
+### -field bmSupportedRateControlModes
 
 <dd>
 <p>Defines the bitmap that specifies the rate control modes. </p>
@@ -534,97 +534,97 @@ typedef struct _KS_H264VIDEOINFO {
 <p> </p>
 </dd>
 
-### -field <b>dwMaxMBperSecOneResolutionNoScalability</b>
+### -field dwMaxMBperSecOneResolutionNoScalability
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for non-scalable Advanced Video Coding (AVC) streams, summing up across all layers when all layers have the same resolution.</p>
 </dd>
 
-### -field <b>dwMaxMBperSecTwoResolutionsNoScalability</b>
+### -field dwMaxMBperSecTwoResolutionsNoScalability
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for non-scalable AVC streams, summing up across all layers when all layers consist of two different resolutions.</p>
 </dd>
 
-### -field <b>dwMaxMBperSecThreeResolutionsNoScalability</b>
+### -field dwMaxMBperSecThreeResolutionsNoScalability
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for non-scalable AVC streams, summing up across all layers when all layers consist of three different resolutions.</p>
 </dd>
 
-### -field <b>dwMaxMBperSecFourResolutionsNoScalability</b>
+### -field dwMaxMBperSecFourResolutionsNoScalability
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for non-scalable AVC streams, summing up across all layers when all layers consist of four different resolutions.</p>
 </dd>
 
-### -field <b>dwMaxMBperSecOneResolutionTemporalScalability</b>
+### -field dwMaxMBperSecOneResolutionTemporalScalability
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for temporal scalable streams, summing up across all layers when all layers have the same resolution.</p>
 </dd>
 
-### -field <b>dwMaxMBperSecTwoResolutionsTemporalScalablility</b>
+### -field dwMaxMBperSecTwoResolutionsTemporalScalablility
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for temporal scalable streams, summing up across all layers when all layers consist of two different resolutions.</p>
 </dd>
 
-### -field <b>dwMaxMBperSecThreeResolutionsTemporalScalability</b>
+### -field dwMaxMBperSecThreeResolutionsTemporalScalability
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for temporal scalable streams, summing up across all layers when all layers consist of three different resolutions.</p>
 </dd>
 
-### -field <b>dwMaxMBperSecFourResolutionsTemporalScalability</b>
+### -field dwMaxMBperSecFourResolutionsTemporalScalability
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for temporal scalable streams, summing up across all layers when all layers consist of four different resolutions.</p>
 </dd>
 
-### -field <b>dwMaxMBperSecOneResolutionTemporalQualityScalability</b>
+### -field dwMaxMBperSecOneResolutionTemporalQualityScalability
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for temporal and quality scalable SVC streams, summing up across all layers when all layers have the same resolution.</p>
 </dd>
 
-### -field <b>dwMaxMBperSecTwoResolutionsTemporalQualityScalability</b>
+### -field dwMaxMBperSecTwoResolutionsTemporalQualityScalability
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for temporal and quality scalable SVC streams, summing up across all layers when all layers consist of two different resolutions.</p>
 </dd>
 
-### -field <b>dwMaxMBperSecThreeResolutionsTemporalQualityScalablity</b>
+### -field dwMaxMBperSecThreeResolutionsTemporalQualityScalablity
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for temporal and quality scalable SVC streams, summing up across all layers when all layers consist of three different resolutions.</p>
 </dd>
 
-### -field <b>dwMaxMBperSecFourResolutionsTemporalQualityScalability</b>
+### -field dwMaxMBperSecFourResolutionsTemporalQualityScalability
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for temporal and quality scalable SVC streams, summing up across all layers when all layers consist of four different resolutions.</p>
 </dd>
 
-### -field <b>dwMaxMBperSecOneResolutionFullScalability</b>
+### -field dwMaxMBperSecOneResolutionFullScalability
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for fully scalable streams, summing up across all layers when all layers have the same resolution.</p>
 </dd>
 
-### -field <b>dwMaxMBperSecTwoResolutionsFullScalability</b>
+### -field dwMaxMBperSecTwoResolutionsFullScalability
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for fully scalable streams, summing up across all layers when all layers consist of two different resolutions.</p>
 </dd>
 
-### -field <b>dwMaxMBperSecThreeResolutionsFullScalability</b>
+### -field dwMaxMBperSecThreeResolutionsFullScalability
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for fully scalable streams, summing up across all layers when all layers consist of three different resolutions.</p>
 </dd>
 
-### -field <b>dwMaxMBperSecFourResolutionsFullScalability</b>
+### -field dwMaxMBperSecFourResolutionsFullScalability
 
 <dd>
 <p>Specifies the maximum macroblock processing rate allowed for fully scalable streams, summing up across all layers when all layers consist of four different resolutions.</p>

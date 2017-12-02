@@ -7,7 +7,7 @@ old-location: ifsk\public_object_basic_information.htm
 old-project: ifsk
 ms.assetid: 2190f88e-6905-4e58-9523-2b6d4864c776
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: PUBLIC_OBJECT_BASIC_INFORMATION, PUBLIC_OBJECT_BASIC_INFORMATION, *PPUBLIC_OBJECT_BASIC_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ typedef struct _PUBLIC_OBJECT_BASIC_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Attributes</b>
+### -field Attributes
 
 <dd>
 <p>Specifies the attributes of the object.</p>
 </dd>
 
-### -field <b>GrantedAccess</b>
+### -field GrantedAccess
 
 <dd>
 <p>Specifies a mask that represents the granted access to the object.</p>
 </dd>
 
-### -field <b>HandleCount</b>
+### -field HandleCount
 
 <dd>
 <p>Specifies the number of handles to the object.</p>
 </dd>
 
-### -field <b>PointerCount</b>
+### -field PointerCount
 
 <dd>
 <p>Specifies the number of pointers at an object.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>

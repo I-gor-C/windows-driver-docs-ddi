@@ -7,7 +7,7 @@ old-location: netvista\rilmsgindeliver.htm
 old-project: netvista
 ms.assetid: a4bfdc26-46a9-404e-9cd0-10dabba01dc2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMSGINDELIVER, RILMSGINDELIVER, *LPRILMSGINDELIVER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,39 +62,39 @@ typedef struct _RILMSGINDELIVER {
 ## -struct-fields
 <dl>
 
-### -field <b>raOrigAddress</b>
+### -field raOrigAddress
 
 <dd></dd>
 
-### -field <b>dwProtocolID</b>
+### -field dwProtocolID
 
 <dd></dd>
 
-### -field <b>rmdDataCoding</b>
+### -field rmdDataCoding
 
 <dd></dd>
 
-### -field <b>stSCReceiveTime</b>
+### -field stSCReceiveTime
 
 <dd></dd>
 
-### -field <b>dwMsgID</b>
+### -field dwMsgID
 
 <dd></dd>
 
-### -field <b>cbHdrLength</b>
+### -field cbHdrLength
 
 <dd></dd>
 
-### -field <b>cchMsgLength</b>
+### -field cchMsgLength
 
 <dd></dd>
 
-### -field <b>rgbHdr</b>
+### -field rgbHdr
 
 <dd></dd>
 
-### -field <b>rgbMsg</b>
+### -field rgbMsg
 
 <dd></dd>
 </dl>

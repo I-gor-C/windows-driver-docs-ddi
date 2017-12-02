@@ -54,7 +54,7 @@ NTSTATUS SetTechnology(
 ## -parameters
 <dl>
 
-### -param <i>Technology</i> [in]
+### -param Technology [in]
 
 <dd>
 <p>Specifies a technology GUID. This parameter should point to one of the GUIDs that are defined for the <b>Technology</b> member of the <a href="audio.ksdatarange_music">KSDATARANGE_MUSIC</a> structure.</p>
@@ -89,7 +89,7 @@ NTSTATUS SetTechnology(
 
 <p>MOD_SWSYNTH</p>
 
-<p>For more information, see <a href="NULL">Music Technology GUIDs</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/3b7c2907-e67f-458e-809d-080dcc30be1a">Music Technology GUIDs</a>.</p>
 
 ## -requirements
 <table>

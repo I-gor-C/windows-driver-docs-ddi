@@ -66,14 +66,14 @@ typedef struct _DXGK_GDIARG_CLEARTYPEBLEND {
 ## -struct-fields
 <dl>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure that defines the rectangular area to be modified. This rectangle is specified in the coordinate system of the destination surface and is defined by two points: upper left and lower right. The rectangle is lower-right exclusive; that is, its lower and right edges are not a part of the bit-block transfer. The two points that define the rectangle are always well ordered. </p>
 <p>The destination rectangle defined by <b>DstRect</b> can exceed the bounds of the destination surface, but sub-rectangles cannot. Additionally, all sub-rectangles are guaranteed to fit inside the destination surface. Sub-rectangles can be constrained further by a bounding rectangle that is smaller than the destination rectangle.</p>
 </dd>
 
-### -field <b>TmpSurfAllocationIndex</b>
+### -field TmpSurfAllocationIndex
 
 <dd>
 <p>
@@ -81,7 +81,7 @@ typedef struct _DXGK_GDIARG_CLEARTYPEBLEND {
      </p>
 </dd>
 
-### -field <b>GammaSurfAllocationIndex</b>
+### -field GammaSurfAllocationIndex
 
 <dd>
 <p>
@@ -89,7 +89,7 @@ typedef struct _DXGK_GDIARG_CLEARTYPEBLEND {
      </p>
 </dd>
 
-### -field <b>AlphaSurfAllocationIndex</b>
+### -field AlphaSurfAllocationIndex
 
 <dd>
 <p>
@@ -97,7 +97,7 @@ typedef struct _DXGK_GDIARG_CLEARTYPEBLEND {
      </p>
 </dd>
 
-### -field <b>DstAllocationIndex</b>
+### -field DstAllocationIndex
 
 <dd>
 <p>
@@ -105,7 +105,7 @@ typedef struct _DXGK_GDIARG_CLEARTYPEBLEND {
      </p>
 </dd>
 
-### -field <b>DstToAlphaOffsetX</b>
+### -field DstToAlphaOffsetX
 
 <dd>
 <p>
@@ -113,7 +113,7 @@ typedef struct _DXGK_GDIARG_CLEARTYPEBLEND {
      </p>
 </dd>
 
-### -field <b>DstToAlphaOffsetY</b>
+### -field DstToAlphaOffsetY
 
 <dd>
 <p>
@@ -121,7 +121,7 @@ typedef struct _DXGK_GDIARG_CLEARTYPEBLEND {
      </p>
 </dd>
 
-### -field <b>Color</b>
+### -field Color
 
 <dd>
 <p>
@@ -129,7 +129,7 @@ typedef struct _DXGK_GDIARG_CLEARTYPEBLEND {
      </p>
 </dd>
 
-### -field <b>Gamma</b>
+### -field Gamma
 
 <dd>
 <p>
@@ -137,7 +137,7 @@ typedef struct _DXGK_GDIARG_CLEARTYPEBLEND {
      </p>
 </dd>
 
-### -field <b>NumSubRects</b>
+### -field NumSubRects
 
 <dd>
 <p>
@@ -145,7 +145,7 @@ typedef struct _DXGK_GDIARG_CLEARTYPEBLEND {
      </p>
 </dd>
 
-### -field <b>pSubRects</b>
+### -field pSubRects
 
 <dd>
 <p>
@@ -153,7 +153,7 @@ typedef struct _DXGK_GDIARG_CLEARTYPEBLEND {
      </p>
 </dd>
 
-### -field <b>AlphaSurfPitch</b>
+### -field AlphaSurfPitch
 
 <dd>
 <p>
@@ -161,7 +161,7 @@ typedef struct _DXGK_GDIARG_CLEARTYPEBLEND {
      </p>
 </dd>
 
-### -field <b>Color2</b>
+### -field Color2
 
 <dd>
 <p>

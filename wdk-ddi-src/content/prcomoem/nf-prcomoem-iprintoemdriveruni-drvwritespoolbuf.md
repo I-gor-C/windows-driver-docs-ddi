@@ -58,25 +58,25 @@ HRESULT DrvWriteSpoolBuf(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pBuffer</i> 
+### -param pBuffer 
 
 <dd>
 <p>Caller-supplied pointer to a buffer containing data to be sent to the print spooler.</p>
 </dd>
 
-### -param <i>cbSize</i> 
+### -param cbSize 
 
 <dd>
 <p>Caller-supplied value representing the size, in bytes, of the buffer pointed to by <i>pBuffer</i>.</p>
 </dd>
 
-### -param <i>pdwResult</i> [out]
+### -param pdwResult [out]
 
 <dd>
 <p>Receives a method-supplied value representing the number of bytes sent to the spooler.</p>
@@ -97,7 +97,7 @@ HRESULT DrvWriteSpoolBuf(
 ## -remarks
 <p>OEMs use the Unidrv helper function <code>IPrintOemDriverUni::DrvWriteSpoolBuf</code> to send output to the printer. If a print job is terminated by the user, <code>IPrintOemDriverUni::DrvWriteSpoolBuf</code> returns E_FAIL and can no longer be used to send any data to the printer. When this occurs, certain printers must have a clean-up code fragment sent to them, resetting their states before they can start new print jobs. For these printers, <a href="print.iprintoemdriveruni_drvwriteabortbuf">IPrintOemDriverUni::DrvWriteAbortBuf</a> can be used to send this code fragment to the printer. </p>
 
-<p>Rendering plug-ins are described in <a href="NULL">Customizing Microsoft's Printer Drivers</a>.</p>
+<p>Rendering plug-ins are described in <a href="https://msdn.microsoft.com/b7761209-1f6f-4288-af47-4ed855c2e629">Customizing Microsoft's Printer Drivers</a>.</p>
 
 ## -requirements
 <table>

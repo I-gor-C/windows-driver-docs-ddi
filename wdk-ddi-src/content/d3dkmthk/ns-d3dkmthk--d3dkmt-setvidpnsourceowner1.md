@@ -55,13 +55,13 @@ typedef struct _D3DKMT_SETVIDPNSOURCEOWNER1 {
 ## -struct-fields
 <dl>
 
-### -field <b>Version0</b>
+### -field Version0
 
 <dd>
 <p>A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setvidpnsourceowner.md">D3DKMT_SETVIDPNSOURCEOWNER</a> structure that contains information needed to set or release the video present source.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-vidpnsourceowner-flags.md">D3DKMT_VIDPNSOURCEOWNER_FLAGS</a> structure that specifies output duplication options.</p>

@@ -55,13 +55,13 @@ NTSTATUS IoWritePartitionTableEx(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object representing the disk whose partition tables are to be written.</p>
 </dd>
 
-### -param <i>PartitionBuffer</i> [in]
+### -param PartitionBuffer [in]
 
 <dd>
 <p>Pointer to the drive layout buffer that contains the partition list entries. For more detailed information see <a href="..\ntdddisk\ns-ntdddisk--drive-layout-information-ex.md">DRIVE_LAYOUT_INFORMATION_EX</a>.</p>

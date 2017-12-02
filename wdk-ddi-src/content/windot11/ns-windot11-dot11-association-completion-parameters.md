@@ -7,7 +7,7 @@ old-location: netvista\dot11_association_completion_parameters.htm
 old-project: netvista
 ms.assetid: 770962e3-0339-46f8-a789-7c9bbf9e058f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_ASSOCIATION_COMPLETION_PARAMETERS, DOT11_ASSOCIATION_COMPLETION_PARAMETERS, *PDOT11_ASSOCIATION_COMPLETION_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,7 +78,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure. This member
@@ -90,19 +90,19 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="Type"></a><a id="type"></a><a id="TYPE"></a><b>Type</b>
+### -field Type
 
 <dd>
 <p>This member must be set to NDIS_OBJECT_TYPE_DEFAULT.</p>
 </dd>
 
-### -field <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a><b>Revision</b>
+### -field Revision
 
 <dd>
 <p>This member must be set to DOT11_ASSOCIATION_COMPLETION_PARAMETERS_REVISION_1.</p>
 </dd>
 
-### -field <a id="Size"></a><a id="size"></a><a id="SIZE"></a><b>Size</b>
+### -field Size
 
 <dd>
 <p>This member must be set to 
@@ -113,7 +113,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>MacAddr</b>
+### -field MacAddr
 
 <dd>
 <p>The media access control (MAC) address of the access point (AP) (for infrastructure BSS networks)
@@ -121,14 +121,14 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
      to.</p>
 </dd>
 
-### -field <b>uStatus</b>
+### -field uStatus
 
 <dd>
 <p>The completion status of the association operation, as specified by a value defined for 
      <a href="netvista.dot11_assoc_status">DOT11_ASSOC_STATUS</a>.</p>
 </dd>
 
-### -field <b>bReAssocReq</b>
+### -field bReAssocReq
 
 <dd>
 <p>A Boolean value that indicates whether the 802.11 station sent an 802.11 Association or
@@ -141,7 +141,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
      <b>dot11_BSS_type_infrastructure</b>.</p>
 </dd>
 
-### -field <b>bReAssocResp</b>
+### -field bReAssocResp
 
 <dd>
 <p>A Boolean value that indicates whether the 802.11 station received an 802.11 Association or
@@ -155,7 +155,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
      <b>dot11_BSS_type_infrastructure</b>.</p>
 </dd>
 
-### -field <b>uAssocReqOffset</b>
+### -field uAssocReqOffset
 
 <dd>
 <p>The offset of the request frame that is used in the association operation. The frame does not
@@ -191,7 +191,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
       <b>uAssocReqSize</b> to zero.</p>
 </dd>
 
-### -field <b>uAssocReqSize</b>
+### -field uAssocReqSize
 
 <dd>
 <p>The length of the request frame that is used in the association operation. The length of the frame
@@ -203,7 +203,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
      <b>uAssocReqSize</b> member to zero.</p>
 </dd>
 
-### -field <b>uAssocRespOffset</b>
+### -field uAssocRespOffset
 
 <dd>
 <p>The offset of the response frame that is used in the association operation. The frame does not
@@ -236,7 +236,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
       operation.</p>
 </dd>
 
-### -field <b>uAssocRespSize</b>
+### -field uAssocRespSize
 
 <dd>
 <p>The length of the response frame that is used in the association operation. The length of the frame
@@ -247,7 +247,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
       <b>uAssocRespSize</b> member to zero.</p>
 </dd>
 
-### -field <b>uBeaconOffset</b>
+### -field uBeaconOffset
 
 <dd>
 <p>The offset of the last received 802.11 Beacon or Probe Response frames. The miniport driver must
@@ -264,14 +264,14 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>uBeaconSize</b>
+### -field uBeaconSize
 
 <dd>
 <p>The length of the last received 802.11 Beacon frame. The length of the frame does not include the
      802.11 MAC header.</p>
 </dd>
 
-### -field <b>uIHVDataOffset</b>
+### -field uIHVDataOffset
 
 <dd>
 <p>The offset of a block of data in a proprietary format that is defined by the IHV. The IHV can use
@@ -286,7 +286,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
       <b>uIHVDataOffset</b> to zero.</p>
 </dd>
 
-### -field <b>uIHVDataSize</b>
+### -field uIHVDataSize
 
 <dd>
 <p>The length of the block of data that is used by the IHV for the 
@@ -296,7 +296,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
      <b>uIHVDataSize</b> to zero.</p>
 </dd>
 
-### -field <b>AuthAlgo</b>
+### -field AuthAlgo
 
 <dd>
 <p>The authentication algorithm that the 802.11 station resolved with the AP or peer station during
@@ -308,7 +308,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
      <b>uStatus</b> is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.</p>
 </dd>
 
-### -field <b>UnicastCipher</b>
+### -field UnicastCipher
 
 <dd>
 <p>The unicast cipher algorithm that the 802.11 station resolved with the AP or peer station during
@@ -320,7 +320,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
      <b>uStatus</b> is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.</p>
 </dd>
 
-### -field <b>MulticastCipher</b>
+### -field MulticastCipher
 
 <dd>
 <p>The multicast cipher algorithm that the 802.11 station resolved with the AP or peer station during
@@ -332,7 +332,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
      <b>uStatus</b> is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.</p>
 </dd>
 
-### -field <b>uActivePhyListOffset</b>
+### -field uActivePhyListOffset
 
 <dd>
 <p>The offset of the list of PHY identifiers (IDs) that the 802.11 station uses to send or receive
@@ -361,7 +361,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
       <b>uStatus</b> is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.</p>
 </dd>
 
-### -field <b>uActivePhyListSize</b>
+### -field uActivePhyListSize
 
 <dd>
 <p>The length of the active PHY list. The 
@@ -369,7 +369,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
      <code>sizeof(ULONG)</code>.</p>
 </dd>
 
-### -field <b>bFourAddressSupported</b>
+### -field bFourAddressSupported
 
 <dd>
 <p>A Boolean value that, if set to <b>TRUE</b>, specifies that the 802.11 station has associated with an AP
@@ -396,7 +396,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 </ul>
 </dd>
 
-### -field <b>bPortAuthorized</b>
+### -field bPortAuthorized
 
 <dd>
 <p>A Boolean value that, if set to <b>TRUE</b>, specifies that the 802.11 station has successfully performed
@@ -419,7 +419,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
      Access</a>.</p>
 </dd>
 
-### -field <b>ucActiveQoSProtocol</b>
+### -field ucActiveQoSProtocol
 
 <dd>
 <p>A flag that specifies the quality of service (QoS) protocol that is currently active for this
@@ -429,13 +429,13 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="DOT11_QOS_PROTOCOL_FLAG_WMM"></a><a id="dot11_qos_protocol_flag_wmm"></a>DOT11_QOS_PROTOCOL_FLAG_WMM
+### -field DOT11_QOS_PROTOCOL_FLAG_WMM
 
 <dd>
 <p>The NIC is using the 802.11 WMM QoS protocol.</p>
 </dd>
 
-### -field <a id="DOT11_QOS_PROTOCOL_FLAG_11E"></a><a id="dot11_qos_protocol_flag_11e"></a>DOT11_QOS_PROTOCOL_FLAG_11E
+### -field DOT11_QOS_PROTOCOL_FLAG_11E
 
 <dd>
 <p>The NIC is using the 802.11e QoS protocol.</p>
@@ -443,7 +443,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>DSInfo</b>
+### -field DSInfo
 
 <dd>
 <p>A DOT11_DS_INFO value that specifies whether the 802.11 station is connected to the same DS from
@@ -455,21 +455,21 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="DOT11_DS_CHANGED________"></a><a id="dot11_ds_changed________"></a>DOT11_DS_CHANGED
+### -field DOT11_DS_CHANGED
        
 
 <dd>
 <p>The 802.11 station has connected to a new DS after the association operation.</p>
 </dd>
 
-### -field <a id="DOT11_DS_UNCHANGED________"></a><a id="dot11_ds_unchanged________"></a>DOT11_DS_UNCHANGED
+### -field DOT11_DS_UNCHANGED
        
 
 <dd>
 <p>The 802.11 station is connected to the same DS from the association operation.</p>
 </dd>
 
-### -field <a id="DOT11_DS_UNKNOWN________"></a><a id="dot11_ds_unknown________"></a>DOT11_DS_UNKNOWN
+### -field DOT11_DS_UNKNOWN
        
 
 <dd>
@@ -485,7 +485,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>uEncapTableOffset</b>
+### -field uEncapTableOffset
 
 <dd>
 <p>The offset of the list of IEEE EtherType encapsulations for the BSS association.</p>
@@ -499,19 +499,19 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
       Encapsulation</a>.</p>
 </dd>
 
-### -field <b>uEncapTableSize</b>
+### -field uEncapTableSize
 
 <dd>
 <p>The length of the EtherType encapsulation list.</p>
 </dd>
 
-### -field <b>MulticastMgmtCipher</b>
+### -field MulticastMgmtCipher
 
 <dd>
 <p>The multicast cipher algorithm the NIC chooses (negotiates) for the association for management frame protection (MFP). If MFP is negotiated, this member should be DOT11_CIPHER_ALGO_BIP. If MFP is not negotiated, this field should be DOT11_CIPHER_ALGO_NONE.</p>
 </dd>
 
-### -field <b>uAssocComebackTime</b>
+### -field uAssocComebackTime
 
 <dd>
 <p>When a (re)association fails with 802.11 reason code 30 ("Association request rejected temporarily, try again later.") this member indicates the value of the association comeback time requested by the access point (AP). The 802.11 disassociation reason code is present in the lowest 16 bits of <b>uStatus</b> when responding to an association request.</p>
@@ -539,7 +539,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569142">OID_DOT11_DESIRED_BSS_TYPE</a>.</p>
 
 <p>For more information about the association operation, see 
-    <a href="NULL">Association Operations</a>.</p>
+    <a href="netvista.association_operations">Association Operations</a>.</p>
 
 <p>Management Frame Protection is negotiated when an access point (AP) and STA set the Management Frame Protection Capable (MFPC) field to 1 in their respective RSN IEs during the (re)association procedure (i.e. Beacon or Probe Response for AP and (re)association request for STA), and both parties confirm the Management Frame Protection Capable bit set to 1 in the 4-Way Handshake (Messages M2 and M3 of the 802.11i 4-way handshake).</p>
 
@@ -606,4 +606,4 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

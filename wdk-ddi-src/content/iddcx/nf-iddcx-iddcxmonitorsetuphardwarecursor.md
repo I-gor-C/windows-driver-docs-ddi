@@ -57,13 +57,13 @@ NTSTATUS IddCxMonitorSetupHardwareCursor(
 ## -parameters
 <dl>
 
-### -param <i>MonitorObject</i> [in]
+### -param MonitorObject [in]
 
 <dd>
 <p>The handle the OS provided to identify the monitor</p>
 </dd>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>Input arguments of function</p>

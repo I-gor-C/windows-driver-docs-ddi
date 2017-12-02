@@ -59,7 +59,7 @@ typedef struct _D3DKM_TRANSPARENTBLTFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>HonorAlpha</b>
+### -field HonorAlpha
 
 <dd>
 <p>[in] A UINT value that specifies in a hardware-accelerated transparent bit-block transfer whether the alpha channel should be used during comparison:</p>
@@ -74,7 +74,7 @@ typedef struct _D3DKM_TRANSPARENTBLTFLAGS {
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] A member in the union that D3DKM_TRANSPARENTBLTFLAGS contains. This member can hold a 32-bit value that specifies the display adapter's ability to perform hardware-accelerated bit-block transfer with transparency.</p>

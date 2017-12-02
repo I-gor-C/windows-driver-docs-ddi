@@ -7,7 +7,7 @@ old-location: ifsk\fltwritefileex.htm
 old-project: ifsk
 ms.assetid: 18B2B486-5525-4132-96E8-EEA74342E0EA
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltWriteFileEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,19 +64,19 @@ NTSTATUS FltWriteFileEx(
 ## -parameters
 <dl>
 
-### -param <i>InitiatingInstance</i> [in]
+### -param InitiatingInstance [in]
 
 <dd>
 <p>An opaque instance pointer for the minifilter driver instance that is initiating the write request. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>A pointer to a file object for the file that the data is to be written to. This file object must be currently open. Calling <b>FltWriteFileEx</b> when the file object is not yet open or is no longer open (for example, in a pre-create or post-cleanup callback routine) causes the system to ASSERT on a checked build. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>ByteOffset</i> [in, optional]
+### -param ByteOffset [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated variable that specifies the starting byte offset within the file where the write operation is to begin. </p>
@@ -89,20 +89,20 @@ NTSTATUS FltWriteFileEx(
 </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The size, in bytes, of the buffer that the <i>Buffer</i> parameter points to. </p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to a buffer that contains the data to be written to the file. If the file is opened for noncached I/O, this buffer be must be aligned in accordance with the alignment requirement of the underlying storage device. Minifilter drivers can allocate such an aligned buffer by calling <a href="..\fltkernel\nf-fltkernel-fltallocatepoolalignedwithtag.md">FltAllocatePoolAlignedWithTag</a>. </p>
 <p>If an MDL is provided in <i>Mdl</i>, <i>Buffer</i> must be NULL.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A bitmask of flags that specify the type of write operation to be performed. </p>
@@ -148,31 +148,31 @@ NTSTATUS FltWriteFileEx(
 <p> </p>
 </dd>
 
-### -param <i>BytesWritten</i> [out, optional]
+### -param BytesWritten [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the number of bytes written to the file. If <i>CallbackRoutine</i> is not <b>NULL</b>, this parameter is ignored. Otherwise, this parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>CallbackRoutine</i> [in, optional]
+### -param CallbackRoutine [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\fltkernel\nc-fltkernel-pflt-completed-async-io-callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>-typed callback routine to call when the write operation is complete. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>CallbackContext</i> [in, optional]
+### -param CallbackContext [in, optional]
 
 <dd>
 <p>A context pointer to be passed to the routine in <i>CallbackRoutine</i> if one is present. This parameter is optional and can be <b>NULL</b>. If <i>CallbackRoutine</i> is <b>NULL</b>, this parameter is ignored. </p>
 </dd>
 
-### -param <i>Key</i> [in, optional]
+### -param Key [in, optional]
 
 <dd>
 <p>An optional key associated with a file object lock.</p>
 </dd>
 
-### -param <i>Mdl</i> [in, optional]
+### -param Mdl [in, optional]
 
 <dd>
 <p>An optional MDL that describes the data to write. If a buffer is provided in <i>Buffer</i>, then <i>Mdl</i> must be NULL.</p>
@@ -298,4 +298,4 @@ NTSTATUS FltWriteFileEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltWriteFileEx function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltWriteFileEx function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -58,31 +58,31 @@ BOOL WcsEnumColorProfiles(
 ## -parameters
 <dl>
 
-### -param <i>profileManagementScope</i> [in]
+### -param profileManagementScope [in]
 
 <dd>
 <p>A <a href="..\icm\ne-icm-wcs-profile-management-scope.md">WCS_PROFILE_MANAGEMENT_SCOPE</a> value that specifies the scope of this profile management operation.</p>
 </dd>
 
-### -param <i>pEnumRecord</i> [in]
+### -param pEnumRecord [in]
 
 <dd>
 <p>A pointer to a structure that specifies the enumeration criteria.</p>
 </dd>
 
-### -param <i>pBuffer</i> [out]
+### -param pBuffer [out]
 
 <dd>
 <p>A pointer to a buffer in which the profile names are to be enumerated. A MULTI_SZ string that consists of profile names that satisfy the criteria specified in <i>*pEnumRecord</i> will be placed in this buffer.</p>
 </dd>
 
-### -param <i>dwSize</i> [in]
+### -param dwSize [in]
 
 <dd>
 <p>A variable that contains the size, in bytes, of the buffer pointed to by <i>pBuffer</i>. See Remarks.</p>
 </dd>
 
-### -param <i>pnProfiles</i> [out, optional]
+### -param pnProfiles [out, optional]
 
 <dd>
 <p>An optional pointer to a variable that receives the number of profile names actually copied to the buffer pointed to by <i>pBuffer</i>. Can be <b>NULL</b> if this information is not needed.</p>

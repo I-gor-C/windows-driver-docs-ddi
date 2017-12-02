@@ -62,31 +62,31 @@ VP_STATUS HwVidFindAdapter(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the driver's per-device storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.</p>
 </dd>
 
-### -param <i>HwContext</i> 
+### -param HwContext 
 
 <dd>
 <p>Is <b>NULL</b> and should be ignored by the miniport driver.</p>
 </dd>
 
-### -param <i>ArgumentString</i> 
+### -param ArgumentString 
 
 <dd>
 <p>Pointer to a null-terminated ASCII string that originates with the user. This pointer can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ConfigInfo</i> 
+### -param ConfigInfo 
 
 <dd>
 <p>Pointer to a <a href="..\video\ns-video--video-port-config-info.md">VIDEO_PORT_CONFIG_INFO</a> structure. The video port driver allocates memory for and initializes this structure with any known configuration information, such as the system IO bus number and values that the miniport driver set in the <a href="..\video\ns-video--video-hw-initialization-data.md">VIDEO_HW_INITIALIZATION_DATA</a> structure.</p>
 </dd>
 
-### -param <i>Again</i> 
+### -param Again 
 
 <dd>
 <p>Should be ignored by the miniport driver.</p>

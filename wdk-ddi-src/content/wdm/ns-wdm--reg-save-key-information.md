@@ -60,19 +60,19 @@ typedef struct _REG_SAVE_KEY_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Object</b>
+### -field Object
 
 <dd>
 <p>A pointer to a registry key object for the key whose information is about to be saved.</p>
 </dd>
 
-### -field <b>FileHandle</b>
+### -field FileHandle
 
 <dd>
 <p>A handle to the file to which the hive information will be saved.</p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>The format in which the key or hive is saved. This member can have one of the following values.</p>
@@ -97,19 +97,19 @@ typedef struct _REG_SAVE_KEY_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>CallContext</b>
+### -field CallContext
 
 <dd>
 <p>Optional driver-defined context information that the driver's <a href="kernel.registrycallback">RegistryCallback</a> routine can supply. This member is defined starting with Windows Vista.</p>
 </dd>
 
-### -field <b>ObjectContext</b>
+### -field ObjectContext
 
 <dd>
 <p>A pointer to driver-defined context information, which the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined starting with Windows Vista.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved for future use. This member is defined starting with Windows Vista.</p>

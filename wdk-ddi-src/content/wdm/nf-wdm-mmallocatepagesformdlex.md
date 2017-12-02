@@ -60,37 +60,37 @@ PMDL MmAllocatePagesForMdlEx(
 ## -parameters
 <dl>
 
-### -param <i>LowAddress</i> [in]
+### -param LowAddress [in]
 
 <dd>
 <p>Specifies the physical address of the start of the first address range from which the allocated pages can come. If <b>MmAllocatePagesForMdlEx</b> cannot allocate the requested number of bytes in the first address range, it iterates through additional address ranges to get more pages. At each iteration, <b>MmAllocatePagesForMdlEx</b> adds the value of <i>SkipBytes</i> to the previous start address to obtain the start of the next address range.</p>
 </dd>
 
-### -param <i>HighAddress</i> [in]
+### -param HighAddress [in]
 
 <dd>
 <p>Specifies the physical address of the end of the first address range that the allocated pages can come from.</p>
 </dd>
 
-### -param <i>SkipBytes</i> [in]
+### -param SkipBytes [in]
 
 <dd>
 <p>Specifies the number of bytes to skip from the start of the previous address range that the allocated pages can come from. <i>SkipBytes</i> must be an integer multiple of the virtual memory page size, in bytes.</p>
 </dd>
 
-### -param <i>TotalBytes</i> [in]
+### -param TotalBytes [in]
 
 <dd>
 <p>Specifies the total number of bytes to allocate for the MDL.</p>
 </dd>
 
-### -param <i>CacheType</i> [in]
+### -param CacheType [in]
 
 <dd>
 <p>Specifies a <a href="..\wdm\ne-wdm--memory-caching-type.md">MEMORY_CACHING_TYPE</a> value, which indicates the type of caching that is allowed for the requested memory.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies flags for this operation. Set this parameter to zero or to the bitwise OR of one or more of the following <b>MM_ALLOCATE_<i>XXX</i></b> flag bits:</p>
@@ -103,7 +103,7 @@ PMDL MmAllocatePagesForMdlEx(
 <tr>
 <td width="40%"><a id="MM_DONT_ZERO_ALLOCATION"></a><a id="mm_dont_zero_allocation"></a><dl>
 
-### -param <b>MM_DONT_ZERO_ALLOCATION</b>
+### -param MM_DONT_ZERO_ALLOCATION
 
 
 ### -param 0x00000001
@@ -117,7 +117,7 @@ PMDL MmAllocatePagesForMdlEx(
 <tr>
 <td width="40%"><a id="MM_ALLOCATE_FROM_LOCAL_NODE_ONLY"></a><a id="mm_allocate_from_local_node_only"></a><dl>
 
-### -param <b>MM_ALLOCATE_FROM_LOCAL_NODE_ONLY</b>
+### -param MM_ALLOCATE_FROM_LOCAL_NODE_ONLY
 
 
 ### -param 0x00000002
@@ -131,7 +131,7 @@ PMDL MmAllocatePagesForMdlEx(
 <tr>
 <td width="40%"><a id="MM_ALLOCATE_FULLY_REQUIRED"></a><a id="mm_allocate_fully_required"></a><dl>
 
-### -param <b>MM_ALLOCATE_FULLY_REQUIRED</b>
+### -param MM_ALLOCATE_FULLY_REQUIRED
 
 
 ### -param 0x00000004
@@ -145,7 +145,7 @@ PMDL MmAllocatePagesForMdlEx(
 <tr>
 <td width="40%"><a id="MM_ALLOCATE_NO_WAIT"></a><a id="mm_allocate_no_wait"></a><dl>
 
-### -param <b>MM_ALLOCATE_NO_WAIT</b>
+### -param MM_ALLOCATE_NO_WAIT
 
 
 ### -param 0x00000008
@@ -159,7 +159,7 @@ PMDL MmAllocatePagesForMdlEx(
 <tr>
 <td width="40%"><a id="MM_ALLOCATE_PREFER_CONTIGUOUS"></a><a id="mm_allocate_prefer_contiguous"></a><dl>
 
-### -param <b>MM_ALLOCATE_PREFER_CONTIGUOUS</b>
+### -param MM_ALLOCATE_PREFER_CONTIGUOUS
 
 
 ### -param 0x00000010
@@ -173,7 +173,7 @@ PMDL MmAllocatePagesForMdlEx(
 <tr>
 <td width="40%"><a id="MM_ALLOCATE_REQUIRE_CONTIGUOUS_CHUNKS"></a><a id="mm_allocate_require_contiguous_chunks"></a><dl>
 
-### -param <b>MM_ALLOCATE_REQUIRE_CONTIGUOUS_CHUNKS</b>
+### -param MM_ALLOCATE_REQUIRE_CONTIGUOUS_CHUNKS
 
 
 ### -param 0x00000020
@@ -205,7 +205,7 @@ PMDL MmAllocatePagesForMdlEx(
 
 <p>Depending on how much physical memory is currently available in the requested ranges, <b>MmAllocatePagesForMdlEx</b> might return an MDL that describes less memory than was requested. The routine also might return <b>NULL</b> if no memory was allocated. The caller should check the amount of memory that is actually allocated to the MDL.</p>
 
-<p>The caller must use <a href="..\wdm\nf-wdm-mmfreepagesfrommdl.md">MmFreePagesFromMdl</a> to release the memory pages that are described by an MDL that was created by <b>MmAllocatePagesForMdlEx</b>. After calling <b>MmFreePagesFromMdl</b>, the caller must also call <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> to release the memory that is allocated for the MDL structure.</p>
+<p>The caller must use <a href="..\wdm\nf-wdm-mmfreepagesfrommdl.md">MmFreePagesFromMdl</a> to release the memory pages that are described by an MDL that was created by <b>MmAllocatePagesForMdlEx</b>. After calling <b>MmFreePagesFromMdl</b>, the caller must also call <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> to release the memory that is allocated for the MDL structure.</p>
 
 <p>By default, <b>MmAllocatePagesForMdlEx</b> fills the pages that it allocates with zeros. The caller can specify the MM_DONT_ZERO_ALLOCATION flag to override this default and to possibly improve performance.</p>
 
@@ -284,7 +284,7 @@ PMDL MmAllocatePagesForMdlEx(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
 <a href="..\wdm\ne-wdm--memory-caching-type.md">MEMORY_CACHING_TYPE</a>

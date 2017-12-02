@@ -55,13 +55,13 @@ typedef struct _IDE_TASK_FILE {
 ## -struct-fields
 <dl>
 
-### -field <b>Current</b>
+### -field Current
 
 <dd>
 <p>Contains a structure of type <a href="..\irb\ns-irb--ideregisters.md">IDEREGISTERS</a> that holds the current contents of the ATA task file registers.</p>
 </dd>
 
-### -field <b>Previous</b>
+### -field Previous
 
 <dd>
 <p>Contains a structure of type <a href="..\irb\ns-irb--ideregisters.md">IDEREGISTERS</a> that holds the previous contents of the ATA task file registers in the case of a 48-bit LBA command.</p>

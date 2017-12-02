@@ -54,7 +54,7 @@ PUNKNOWN KsGetOuterUnknown(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>A pointer to an AVStream object for which to return the outer <b>IUnknown</b> interface.</p>
@@ -137,7 +137,7 @@ PUNKNOWN KsGetOuterUnknown(
 <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
 </dt>
 <dt>
-<a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 </dt>
 </dl>
 <p> </p>

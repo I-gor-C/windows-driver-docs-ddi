@@ -55,7 +55,7 @@ PVOID VideoPortGetAssociatedDeviceExtension(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Is the device object of a child device.</p>

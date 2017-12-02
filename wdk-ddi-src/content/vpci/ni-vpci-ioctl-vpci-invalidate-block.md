@@ -81,9 +81,9 @@ Otherwise, Status to the appropriate error condition as a NTSTATUS code.
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 ## -remarks
-<p>The driver must first allocate or reuse an I/O request packet (<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>). You can use the <a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a> routine to specifically allocate an IOCTL IRP. You can also use general-purpose IRP creation and initialization routines, such as <a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>, <a href="..\wdm\nf-wdm-ioreuseirp.md">IoReuseIrp</a>, or <a href="..\wdm\nf-wdm-ioinitializeirp.md">IoInitializeIrp</a>. For more information about IRP allocation, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542899">Creating IRPs for Lower-Level Drivers</a>.</p>
+<p>The driver must first allocate or reuse an I/O request packet (<a href="..\wdm\ns-wdm--irp.md">IRP</a>). You can use the <a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a> routine to specifically allocate an IOCTL IRP. You can also use general-purpose IRP creation and initialization routines, such as <a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>, <a href="..\wdm\nf-wdm-ioreuseirp.md">IoReuseIrp</a>, or <a href="..\wdm\nf-wdm-ioinitializeirp.md">IoInitializeIrp</a>. For more information about IRP allocation, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542899">Creating IRPs for Lower-Level Drivers</a>.</p>
 
-<p>The driver must then set the  members of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure as described in the following table.</p>
+<p>The driver must then set the  members of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure as described in the following table.</p>
 
 <p><b>NULL</b></p>
 
@@ -151,7 +151,7 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550766">IRP_MJ_INTERNAL_DEVICE_CONTROL</a>

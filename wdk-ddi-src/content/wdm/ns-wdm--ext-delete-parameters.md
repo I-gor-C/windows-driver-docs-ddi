@@ -58,19 +58,19 @@ typedef struct _EXT_DELETE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of this <b>EXT_DELETE_PARAMETERS</b> structure. The <a href="..\wdm\nf-wdm-exinitializedeletetimerparameters.md">ExInitializeDeleteTimerParameters</a> routine sets this member to the correct version number.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Set to zero. The <b>ExInitializeDeleteTimerParameters</b> routine sets this member to zero.</p>
 </dd>
 
-### -field <b>DeleteCallback</b>
+### -field DeleteCallback
 
 <dd>
 <p>A pointer to a driver-implemented <a href="kernel.extimerdeletecallback">ExTimerDeleteCallback</a> callback routine. The operating system calls this routine when the timer is deleted. This parameter is optional and can be <b>NULL</b> if no timer-deletion callback routine is needed.
@@ -78,7 +78,7 @@ typedef struct _EXT_DELETE_PARAMETERS {
 The <b>ExInitializeDeleteTimerParameters</b> routine sets this member to <b>NULL</b>. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>DeleteContext</b>
+### -field DeleteContext
 
 <dd>
 <p>A context value for the timer-deletion callback routine. The operating system passes this value as a parameter to the timer-deletion callback routine, if one is specified. This parameter is typically a pointer to a caller-defined structure that contains context information used by the callback routine. This parameter is optional and can be set to <b>NULL</b> if no context information is needed. 

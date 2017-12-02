@@ -57,15 +57,15 @@ typedef enum _NOTIFICATION_CALLBACK_COMMANDS {
 ## -enum-fields
 <dl>
 
-### -field <a id="NOTIFICATION_COMMAND_NOTIFY"></a><a id="notification_command_notify"></a><b>NOTIFICATION_COMMAND_NOTIFY</b>
+### -field NOTIFICATION_COMMAND_NOTIFY
 
 <dd></dd>
 
-### -field <a id="NOTIFICATION_COMMAND_CONTEXT_ACQUIRE"></a><a id="notification_command_context_acquire"></a><b>NOTIFICATION_COMMAND_CONTEXT_ACQUIRE</b>
+### -field NOTIFICATION_COMMAND_CONTEXT_ACQUIRE
 
 <dd></dd>
 
-### -field <a id="NOTIFICATION_COMMAND_CONTEXT_RELEASE"></a><a id="notification_command_context_release"></a><b>NOTIFICATION_COMMAND_CONTEXT_RELEASE</b>
+### -field NOTIFICATION_COMMAND_CONTEXT_RELEASE
 
 <dd></dd>
 </dl>

@@ -62,55 +62,55 @@ typedef enum _DXVA_DeinterlaceTech {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVA_DeinterlaceTech_Unknown"></a><a id="dxva_deinterlacetech_unknown"></a><a id="DXVA_DEINTERLACETECH_UNKNOWN"></a><b>DXVA_DeinterlaceTech_Unknown</b>
+### -field DXVA_DeinterlaceTech_Unknown
 
 <dd>
 <p>Indicates that the algorithm is unknown or proprietary to the hardware manufacturer. </p>
 </dd>
 
-### -field <a id="DXVA_DeinterlaceTech_BOBLineReplicate"></a><a id="dxva_deinterlacetech_boblinereplicate"></a><a id="DXVA_DEINTERLACETECH_BOBLINEREPLICATE"></a><b>DXVA_DeinterlaceTech_BOBLineReplicate</b>
+### -field DXVA_DeinterlaceTech_BOBLineReplicate
 
 <dd>
 <p>Indicates that the algorithm creates the missing lines by repeating the line either above or below it. This method looks jagged and is not recommended. </p>
 </dd>
 
-### -field <a id="DXVA_DeinterlaceTech_BOBVerticalStretch"></a><a id="dxva_deinterlacetech_bobverticalstretch"></a><a id="DXVA_DEINTERLACETECH_BOBVERTICALSTRETCH"></a><b>DXVA_DeinterlaceTech_BOBVerticalStretch</b>
+### -field DXVA_DeinterlaceTech_BOBVerticalStretch
 
 <dd>
 <p>Specifies an algorithm that creates the missing lines by vertically stretching each video field by a factor of two. Vertical adjustments are made to ensure that the resulting image does not move up and down. </p>
 </dd>
 
-### -field <a id="DXVA_DeinterlaceTech_BOBVerticalStretch4Tap"></a><a id="dxva_deinterlacetech_bobverticalstretch4tap"></a><a id="DXVA_DEINTERLACETECH_BOBVERTICALSTRETCH4TAP"></a><b>DXVA_DeinterlaceTech_BOBVerticalStretch4Tap</b>
+### -field DXVA_DeinterlaceTech_BOBVerticalStretch4Tap
 
 <dd>
 <p>Creates the missing lines by vertically stretching each video field by a factor of two, using a 4-tap filter.</p>
 </dd>
 
-### -field <a id="DXVA_DeinterlaceTech_MedianFiltering"></a><a id="dxva_deinterlacetech_medianfiltering"></a><a id="DXVA_DEINTERLACETECH_MEDIANFILTERING"></a><b>DXVA_DeinterlaceTech_MedianFiltering</b>
+### -field DXVA_DeinterlaceTech_MedianFiltering
 
 <dd>
 <p>Specifies that the pixels in the missing line are recreated by a median filtering operation. </p>
 </dd>
 
-### -field <a id="DXVA_DeinterlaceTech_EdgeFiltering"></a><a id="dxva_deinterlacetech_edgefiltering"></a><a id="DXVA_DEINTERLACETECH_EDGEFILTERING"></a><b>DXVA_DeinterlaceTech_EdgeFiltering</b>
+### -field DXVA_DeinterlaceTech_EdgeFiltering
 
 <dd>
 <p>Specifies that pixels in the missing line are recreated by an edge filter. In this process, spatial directional filters are applied to determine the orientation of edges in the picture content, and missing pixels are created by filtering along (rather than across) the detected edges. </p>
 </dd>
 
-### -field <a id="DXVA_DeinterlaceTech_FieldAdaptive"></a><a id="dxva_deinterlacetech_fieldadaptive"></a><a id="DXVA_DEINTERLACETECH_FIELDADAPTIVE"></a><b>DXVA_DeinterlaceTech_FieldAdaptive</b>
+### -field DXVA_DeinterlaceTech_FieldAdaptive
 
 <dd>
 <p>Specifies that pixels in the missing line are recreated by switching on a field-by-field basis between either spatial or temporal interpolation, depending on the amount of motion. </p>
 </dd>
 
-### -field <a id="DXVA_DeinterlaceTech_PixelAdaptive"></a><a id="dxva_deinterlacetech_pixeladaptive"></a><a id="DXVA_DEINTERLACETECH_PIXELADAPTIVE"></a><b>DXVA_DeinterlaceTech_PixelAdaptive</b>
+### -field DXVA_DeinterlaceTech_PixelAdaptive
 
 <dd>
 <p>Specifies that pixels in the missing line are recreated by switching on a pixel-by-pixel basis between either spatial or temporal interpolation, depending on the amount of motion. </p>
 </dd>
 
-### -field <a id="DXVA_DeinterlaceTech_MotionVectorSteered"></a><a id="dxva_deinterlacetech_motionvectorsteered"></a><a id="DXVA_DEINTERLACETECH_MOTIONVECTORSTEERED"></a><b>DXVA_DeinterlaceTech_MotionVectorSteered</b>
+### -field DXVA_DeinterlaceTech_MotionVectorSteered
 
 <dd>
 <p>Identifies objects within a sequence of video fields. The missing pixels are recreated after first aligning the movement axis of the individual objects in the scene to make them parallel with the time axis.</p>

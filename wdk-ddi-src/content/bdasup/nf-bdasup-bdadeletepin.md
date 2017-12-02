@@ -55,13 +55,13 @@ NTSTATUS BdaDeletePin(
 ## -parameters
 <dl>
 
-### -param <i>pKSFilter</i> [in]
+### -param pKSFilter [in]
 
 <dd>
 <p>Points to the filter in which to delete a pin.</p>
 </dd>
 
-### -param <i>pulPinId</i> [out, optional]
+### -param pulPinId [out, optional]
 
 <dd>
 <p>Points to a variable that contains the identifier for the pin to delete. </p>

@@ -7,7 +7,7 @@ old-location: image\raw_pipe_type.htm
 old-project: image
 ms.assetid: 6af4161c-7caa-4d80-8938-303380ee3058
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: USB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS, *PUSB_TRANSPORT_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef enum _RAW_PIPE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="USBSCAN_PIPE_CONTROL"></a><a id="usbscan_pipe_control"></a><b>USBSCAN_PIPE_CONTROL</b>
+### -field USBSCAN_PIPE_CONTROL
 
 <dd>
 <p>Identifies the control pipe.</p>
 </dd>
 
-### -field <a id="USBSCAN_PIPE_ISOCHRONOUS"></a><a id="usbscan_pipe_isochronous"></a><b>USBSCAN_PIPE_ISOCHRONOUS</b>
+### -field USBSCAN_PIPE_ISOCHRONOUS
 
 <dd>
 <p>Identifies an isochronous pipe.</p>
 </dd>
 
-### -field <a id="USBSCAN_PIPE_BULK"></a><a id="usbscan_pipe_bulk"></a><b>USBSCAN_PIPE_BULK</b>
+### -field USBSCAN_PIPE_BULK
 
 <dd>
 <p>Identifies a bulk IN or bulk OUT pipe.</p>
 </dd>
 
-### -field <a id="USBSCAN_PIPE_INTERRUPT"></a><a id="usbscan_pipe_interrupt"></a><b>USBSCAN_PIPE_INTERRUPT</b>
+### -field USBSCAN_PIPE_INTERRUPT
 
 <dd>
 <p>Identifies an interrupt pipe.</p>

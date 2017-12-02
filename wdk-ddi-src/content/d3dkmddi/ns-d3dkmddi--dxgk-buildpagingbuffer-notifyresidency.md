@@ -59,25 +59,25 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>The kernel mode driver handle returned from <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a>.</p>
 </dd>
 
-### -field <b>PhysicalAddress</b>
+### -field PhysicalAddress
 
 <dd>
 <p>The physical address of the allocation. The physical address (0, 0) is invalid and is used when the allocation is being evicted.  </p>
 </dd>
 
-### -field <b>Resident</b>
+### -field Resident
 
 <dd>
 <p>Set to 0 when the allocation is evicted and set to 1 when the allocation is committed.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is not used and should be set to zero.</p>

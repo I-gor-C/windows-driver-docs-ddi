@@ -60,43 +60,43 @@ typedef struct _DXGK_MONITORSOURCEMODESET_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnGetNumModes</b>
+### -field pfnGetNumModes
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-getnummodes.md">pfnGetNumModes</a> function.</p>
 </dd>
 
-### -field <b>pfnAcquirePreferredModeInfo</b>
+### -field pfnAcquirePreferredModeInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-acquirepreferredmodeinfo.md">pfnAcquirePreferredModeInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnAcquireFirstModeInfo</b>
+### -field pfnAcquireFirstModeInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-acquirefirstmodeinfo.md">pfnAcquireFirstModeInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnAcquireNextModeInfo</b>
+### -field pfnAcquireNextModeInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-acquirenextmodeinfo.md">pfnAcquireNextModeInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateNewModeInfo</b>
+### -field pfnCreateNewModeInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-createnewmodeinfo.md">pfnCreateNewModeInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnAddMode</b>
+### -field pfnAddMode
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-addmode.md">pfnAddMode</a> function.</p>
 </dd>
 
-### -field <b>pfnReleaseModeInfo</b>
+### -field pfnReleaseModeInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-releasemodeinfo.md">pfnReleaseModeInfo</a> function.</p>

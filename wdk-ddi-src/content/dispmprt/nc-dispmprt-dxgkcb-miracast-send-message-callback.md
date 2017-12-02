@@ -58,13 +58,13 @@ VOID* DxgkCbMiracastSendMessageCallback(
 ## -parameters
 <dl>
 
-### -param <i>CallbackContext</i> [in]
+### -param CallbackContext [in]
 
 <dd>
 <p>A pointer to the driver-supplied callback context. The operating system passes this context to the driver-supplied callback routine after the operation has completed.</p>
 </dd>
 
-### -param <i>pIoStatusBlock</i> [in]
+### -param pIoStatusBlock [in]
 
 <dd>
 <p>A pointer to a driver-supplied buffer to hold the returned <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure for the completed or canceled user-mode message. This structure holds the status of the I/O call and the number of bytes that the user-mode driver wrote to the output buffer.</p>

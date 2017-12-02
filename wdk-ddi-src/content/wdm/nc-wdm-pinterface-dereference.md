@@ -58,7 +58,7 @@ VOID InterfaceDereference(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure for the interface.</p>

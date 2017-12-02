@@ -56,19 +56,19 @@ void KsSetDevicePnpAndBaseObject(
 ## -parameters
 <dl>
 
-### -param <i>Header </i> [in]
+### -param Header  [in]
 
 <dd>
 <p>Points to a header previously allocated by <b>KsAllocateDeviceHeader</b> in which to put the PnP device object.</p>
 </dd>
 
-### -param <i>PnpDeviceObject </i> [in]
+### -param PnpDeviceObject  [in]
 
 <dd>
 <p>Specifies the PnP device object to place in the device header, overwriting any previously set device object.</p>
 </dd>
 
-### -param <i>BaseDevice </i> [in]
+### -param BaseDevice  [in]
 
 <dd>
 <p>Specifies the base device object to which this device header is attached. This must be set if <b>KsRecalculateStackDepth</b> is used.</p>

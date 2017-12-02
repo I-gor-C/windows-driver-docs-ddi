@@ -56,13 +56,13 @@ HRESULT GetBool(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd>
 <p>The name of the property.</p>
 </dd>
 
-### -param <i>pbValue</i> [out, retval]
+### -param pbValue [out, retval]
 
 <dd>
 <p>The returned property value.</p>

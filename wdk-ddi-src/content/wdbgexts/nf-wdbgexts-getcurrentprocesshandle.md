@@ -7,13 +7,13 @@ old-location: debugger\getcurrentprocesshandle.htm
 old-project: debugger
 ms.assetid: b6780f1c-e093-4d91-8909-dabb1ecaefaa
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: GetCurrentProcessHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -55,7 +55,7 @@ __inline VOID GetCurrentProcessHandle(
 ## -parameters
 <dl>
 
-### -param <i>hp</i> 
+### -param hp 
 
 <dd>
 <p>Receives the system handle for the current process.</p>
@@ -86,7 +86,7 @@ __inline VOID GetCurrentProcessHandle(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

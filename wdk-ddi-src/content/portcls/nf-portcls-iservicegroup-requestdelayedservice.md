@@ -54,7 +54,7 @@ void RequestDelayedService(
 ## -parameters
 <dl>
 
-### -param <i>ulDelay</i> [in]
+### -param ulDelay [in]
 
 <dd>
 <p>Specifies the absolute or relative time at which the timer is to expire. If the value of <i>ulDelay</i> is negative, the expiration time is relative to the current system time. Otherwise, the expiration time is absolute. The expiration time is expressed in system time units (100-nanosecond intervals). Absolute expiration times track any changes in the system time; relative expiration times are not affected by system time changes. </p>

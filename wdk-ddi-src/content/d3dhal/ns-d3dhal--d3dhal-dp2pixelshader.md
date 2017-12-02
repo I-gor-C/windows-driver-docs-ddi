@@ -57,7 +57,7 @@ typedef struct _D3DHAL_DP2PIXELSHADER {
 ## -struct-fields
 <dl>
 
-### -field <b>dwHandle</b>
+### -field dwHandle
 
 <dd>
 <p>Specifies the handle to the pixel shader that is assigned by the runtime. For delete requests, the handle is guaranteed to be subzero. For set requests, the handle can be zero. If set to zero, the driver should reset any programmable pixel state and revert to fixed function pixel processing behavior (for example, by using render states).</p>

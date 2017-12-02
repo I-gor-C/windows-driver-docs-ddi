@@ -7,7 +7,7 @@ old-location: netvista\rilgppcause_2.htm
 old-project: netvista
 ms.assetid: 33e54af8-4ff1-44e2-926f-8f045e15b000
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILGPPCAUSE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILGPPCAUSE {
 ## -struct-fields
 <dl>
 
-### -field <b>dwLocation</b>
+### -field dwLocation
 
 <dd></dd>
 
-### -field <b>dwCauseValue</b>
+### -field dwCauseValue
 
 <dd></dd>
 </dl>

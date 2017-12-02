@@ -60,23 +60,23 @@ typedef struct _D3DKMT_DMM_ESCAPE {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd></dd>
 
-### -field <b>ProvidedBufferSize</b>
+### -field ProvidedBufferSize
 
 <dd>
 <p>actual size of Data[] array, in bytes.</p>
 </dd>
 
-### -field <b>MinRequiredBufferSize</b>
+### -field MinRequiredBufferSize
 
 <dd>
 <p>minimum required size of Data[] array to contain requested data.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd></dd>
 </dl>

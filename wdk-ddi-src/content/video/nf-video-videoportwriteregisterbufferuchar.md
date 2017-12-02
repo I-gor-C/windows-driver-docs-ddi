@@ -57,19 +57,19 @@ VOID VideoPortWriteRegisterBufferUchar(
 ## -parameters
 <dl>
 
-### -param <i>Register</i> 
+### -param Register 
 
 <dd>
 <p>Pointer to the register. The given <i>Register</i> must be in a mapped memory-space range returned by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to a buffer containing the bytes to be written.</p>
 </dd>
 
-### -param <i>Count</i> 
+### -param Count 
 
 <dd>
 <p>Specifies the number of bytes to be transferred to the adapter.</p>

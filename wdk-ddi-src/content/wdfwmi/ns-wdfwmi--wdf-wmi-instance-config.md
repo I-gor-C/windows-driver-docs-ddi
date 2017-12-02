@@ -7,7 +7,7 @@ old-location: wdf\wdf_wmi_instance_config.htm
 old-project: wdf
 ms.assetid: b2b2fd0c-c331-4132-b037-05c816626563
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WMI_INSTANCE_CONFIG, WDF_WMI_INSTANCE_CONFIG, *PWDF_WMI_INSTANCE_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,56 +64,56 @@ typedef struct _WDF_WMI_INSTANCE_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Provider</b>
+### -field Provider
 
 <dd>
 <p>A handle to a WMI provider object that a driver obtained by calling <a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidercreate.md">WdfWmiProviderCreate</a>. If this member is <b>NULL</b>, the <b>ProviderConfig</b> member must not be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>ProviderConfig</b>
+### -field ProviderConfig
 
 <dd>
 <p>A pointer to a <a href="..\wdfwmi\ns-wdfwmi--wdf-wmi-provider-config.md">WDF_WMI_PROVIDER_CONFIG</a> structure. If this member is <b>NULL</b>, the <b>Provider</b> member must not be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>UseContextForQuery</b>
+### -field UseContextForQuery
 
 <dd>
 <p>A Boolean value that, if <b>TRUE</b>, indicates that the driver will store instance data in the WMI instance object's context space and will not provide an <a href="..\wdfwmi\nc-wdfwmi-evt-wdf-wmi-instance-query-instance.md">EvtWmiInstanceQueryInstance</a> callback function. Instead, the framework will service a WMI client's request for instance data by sending the contents of the context space to WMI. If this member is <b>FALSE</b>, the driver must provide an <i>EvtWmiInstanceQueryInstance</i> callback function (unless the instance data is write-only).</p>
 <p>If <b>UseContextForQuery</b> is <b>TRUE</b>, the instance data must be read-only and therefore the driver cannot provide <a href="..\wdfwmi\nc-wdfwmi-evt-wdf-wmi-instance-set-instance.md">EvtWmiInstanceSetInstance</a> or <a href="..\wdfwmi\nc-wdfwmi-evt-wdf-wmi-instance-set-item.md">EvtWmiInstanceSetItem</a> callback functions.</p>
 </dd>
 
-### -field <b>Register</b>
+### -field Register
 
 <dd>
 <p>A Boolean value that, if <b>TRUE</b>, indicates that the framework will register the provider instance with the system's WMI service after it creates a WMI instance object. If this member is <b>FALSE</b>, the driver must call <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstanceregister.md">WdfWmiInstanceRegister</a> to register the provider instance. </p>
 </dd>
 
-### -field <b>EvtWmiInstanceQueryInstance</b>
+### -field EvtWmiInstanceQueryInstance
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfwmi\nc-wdfwmi-evt-wdf-wmi-instance-query-instance.md">EvtWmiInstanceQueryInstance</a> callback function for the provider instance, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtWmiInstanceSetInstance</b>
+### -field EvtWmiInstanceSetInstance
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfwmi\nc-wdfwmi-evt-wdf-wmi-instance-set-instance.md">EvtWmiInstanceSetInstance</a> callback function for the provider instance, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtWmiInstanceSetItem</b>
+### -field EvtWmiInstanceSetItem
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfwmi\nc-wdfwmi-evt-wdf-wmi-instance-set-item.md">EvtWmiInstanceSetItem</a> callback function for the provider instance, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtWmiInstanceExecuteMethod</b>
+### -field EvtWmiInstanceExecuteMethod
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfwmi\nc-wdfwmi-evt-wdf-wmi-instance-execute-method.md">EvtWmiInstanceExecuteMethod</a> callback function for the provider instance, or <b>NULL</b>.</p>
@@ -182,4 +182,4 @@ typedef struct _WDF_WMI_INSTANCE_CONFIG {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_WMI_INSTANCE_CONFIG structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_WMI_INSTANCE_CONFIG structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

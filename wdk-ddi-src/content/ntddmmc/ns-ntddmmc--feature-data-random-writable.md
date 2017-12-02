@@ -60,43 +60,43 @@ typedef struct _FEATURE_DATA_RANDOM_WRITABLE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>LastLBA</b>
+### -field LastLBA
 
 <dd>
 <p>Contains the logical block address of the last addressable block on the medium. The bytes of this array are arranged in big-endian order. <b>LastLBA</b>[0] contains the most significant byte, and <b>LastLBA</b>[3] contains the least significant byte. </p>
 </dd>
 
-### -field <b>LogicalBlockSize</b>
+### -field LogicalBlockSize
 
 <dd>
 <p>Specifies the number of bytes per logical block. The bytes of this array are arranged in big-endian order. <b>LogicalBlockSize</b>[0] contains the most significant byte, and <b>LogicalBlockSize</b>[3] contains the least significant byte. </p>
 </dd>
 
-### -field <b>Blocking</b>
+### -field Blocking
 
 <dd>
 <p>Indicates the number of logical blocks per device. The bytes of this array are arranged in big-endian order. <b>Blocking</b>[0] contains the most significant byte, and <b>Blocking</b>[1] contains the least significant byte. </p>
 </dd>
 
-### -field <b>ErrorRecoveryPagePresent</b>
+### -field ErrorRecoveryPagePresent
 
 <dd>
 <p>Indicates, when set to zero, that the Read/Write Error Recovery Mode Page might not be present. See the <i>SCSI Multimedia -3 </i>(<i>MMC-3</i>) specification for an explanation of this page. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. </p>

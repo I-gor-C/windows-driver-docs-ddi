@@ -55,13 +55,13 @@ VOID UnmapAllocatedPages(
 ## -parameters
 <dl>
 
-### -param <i>BaseAddress</i> [in]
+### -param BaseAddress [in]
 
 <dd>
 <p>Pointer to the base virtual address to which the physical pages were mapped.</p>
 </dd>
 
-### -param <i>MemoryDescriptorList</i> [in]
+### -param MemoryDescriptorList [in]
 
 <dd>
 <p>Pointer to a memory descriptor list (<a href="..\wdm\ns-wdm--mdl.md">MDL</a>) that describes the physical pages.</p>

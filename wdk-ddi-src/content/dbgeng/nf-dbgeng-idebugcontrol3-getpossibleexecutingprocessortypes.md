@@ -7,7 +7,7 @@ old-location: debugger\getpossibleexecutingprocessortypes.htm
 old-project: debugger
 ms.assetid: fb11b655-2528-447f-9f5e-3c9e4e040156
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl3, GetPossibleExecutingProcessorTypes, IDebugControl3::GetPossibleExecutingProcessorTypes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ HRESULT GetPossibleExecutingProcessorTypes(
 ## -parameters
 <dl>
 
-### -param <i>Start</i> [in]
+### -param Start [in]
 
 <dd>
 <p>Specifies the index of the first processor type to return.  The processor types are indexed by numbers zero through to the number of processor types supported by the current target minus one.  The number of processor types supported by the current target can be found using <a href="debugger.getnumberpossibleexecutingprocessortypes">GetNumberPossibleExecutingProcessorTypes</a>.</p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>Specifies how many processor types to return.</p>
 </dd>
 
-### -param <i>Types</i> [out]
+### -param Types [out]
 
 <dd>
 <p>Receives the list of processor types.  The number of elements this array holds is <i>Count</i>.  For a description of the processor types see <a href="debugger.getactualprocessortype">GetActualProcessorType</a>.</p>
@@ -76,7 +76,7 @@ HRESULT GetPossibleExecutingProcessorTypes(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 
@@ -129,4 +129,4 @@ HRESULT GetPossibleExecutingProcessorTypes(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::GetPossibleExecutingProcessorTypes method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::GetPossibleExecutingProcessorTypes method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

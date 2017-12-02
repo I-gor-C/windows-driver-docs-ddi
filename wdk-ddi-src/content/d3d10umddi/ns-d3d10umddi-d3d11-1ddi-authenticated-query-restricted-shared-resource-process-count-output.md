@@ -55,13 +55,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS
 ## -struct-fields
 <dl>
 
-### -field <b>Output</b>
+### -field Output
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure that contains a Message Authentication Code (MAC) and other data.</p>
 </dd>
 
-### -field <b>RestrictedSharedResourceProcessCount</b>
+### -field RestrictedSharedResourceProcessCount
 
 <dd>
 <p>The number of processes that are allowed to open shared resources that have restricted access. A process cannot open such a resource unless the process has been granted access.</p>

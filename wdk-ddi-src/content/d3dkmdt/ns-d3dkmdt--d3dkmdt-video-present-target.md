@@ -58,31 +58,31 @@ typedef struct _D3DKMDT_VIDEO_PRESENT_TARGET {
 ## -struct-fields
 <dl>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>An integer that uniquely identifies the video present target.</p>
 </dd>
 
-### -field <b>VideoOutputTechnology</b>
+### -field VideoOutputTechnology
 
 <dd>
 <p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-video-output-technology.md">D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY</a> enumerator that indicates the target's output technology (for example HD15, DVI, HDMI).</p>
 </dd>
 
-### -field <b>VideoOutputHpdAwareness</b>
+### -field VideoOutputHpdAwareness
 
 <dd>
 <p>A value from the <a href="..\d3dkmdt\ne-d3dkmdt--dxgk-child-device-hpd-awareness.md">DXGK_CHILD_DEVICE_HPD_AWARENESS</a> enumeration that indicates the target's ability to detect that a monitor has been hot plugged or unplugged.</p>
 </dd>
 
-### -field <b>MonitorOrientationAwareness</b>
+### -field MonitorOrientationAwareness
 
 <dd>
 <p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-orientation-awareness.md">D3DKMDT_MONITOR_ORIENTATION_AWARENESS</a> enumerator that indicates the target's ability to detect that a connected monitor (or other display device) has been rotated.</p>
 </dd>
 
-### -field <b>SupportsSdtvModes</b>
+### -field SupportsSdtvModes
 
 <dd>
 <p>Indicates whether the video output supports standard definition TV (SDTV) modes.</p>

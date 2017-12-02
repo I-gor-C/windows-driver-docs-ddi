@@ -69,7 +69,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>NotificationType</b>
+### -field NotificationType
 
 <dd>
 <p>Contains flags indicating what type of notification should be performed. The following table lists all the possible values for the NotificationType member.</p>
@@ -138,18 +138,18 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>EventHandle</b>
+### -field EventHandle
 
 <dd>
 <dl>
 
-### -field <b>Event</b>
+### -field Event
 
 <dd>
 <p>Contains a handle to a synchronization event when the KSEVENT_EVENT_HANDLE flag is set.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved and set to zero.</p>
@@ -157,24 +157,24 @@ typedef struct {
 </dl>
 </dd>
 
-### -field <b>SemaphoreHandle</b>
+### -field SemaphoreHandle
 
 <dd>
 <dl>
 
-### -field <b>Semaphore</b>
+### -field Semaphore
 
 <dd>
 <p>Contains a handle to a semaphore when the KSEVENT_SEMAPHORE_HANDLE flag is set.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved and set to zero.</p>
 </dd>
 
-### -field <b>Adjustment</b>
+### -field Adjustment
 
 <dd>
 <p>Contains the adjustment to the semaphore when it is released.</p>
@@ -182,18 +182,18 @@ typedef struct {
 </dl>
 </dd>
 
-### -field <b>Alignment</b>
+### -field Alignment
 
 <dd>
 <dl>
 
-### -field <b>Unused</b>
+### -field Unused
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>Alignment</b>
+### -field Alignment
 
 <dd>
 <p>Reserved for internal use by AVStream. Minidrivers should not manipulate this member.</p>
@@ -203,7 +203,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>For more information, see <a href="NULL">KS Events</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/3eaa1d65-8417-4a07-b358-823394baec9b">KS Events</a>.</p>
 
 ## -requirements
 <table>

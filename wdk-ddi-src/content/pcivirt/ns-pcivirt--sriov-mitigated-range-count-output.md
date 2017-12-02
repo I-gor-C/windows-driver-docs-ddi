@@ -55,7 +55,7 @@ typedef struct _SRIOV_MITIGATED_RANGE_COUNT_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>RangeCount</b>
+### -field RangeCount
 
 <dd>
 <p>Array of ranges of memory-mapped I/O space

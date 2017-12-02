@@ -66,19 +66,19 @@ typedef struct _DXGKARGCB_CREATECONTEXTALLOCATION {
 ## -struct-fields
 <dl>
 
-### -field <b>ContextAllocationFlags</b>
+### -field ContextAllocationFlags
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-createcontextallocationflags.md">DXGK_CREATECONTEXTALLOCATIONFLAGS</a> structure that specifies the properties of the allocation.</p>
 </dd>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[in] A handle to the graphics adapter for which the context allocation is created.</p>
 </dd>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the display device that was originally passed by the DirectX graphics subsystem to the display miniport driver's <a href="display.dxgkddicreatedevice">DxgkDdiCreateDevice</a> function.</p>
@@ -86,7 +86,7 @@ typedef struct _DXGKARGCB_CREATECONTEXTALLOCATION {
 <div> </div>
 </dd>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] If <b>ContextAllocationFlags.SharedAcrossContexts</b> is set to a value of 0,
@@ -97,56 +97,56 @@ typedef struct _DXGKARGCB_CREATECONTEXTALLOCATION {
 <div> </div>
 </dd>
 
-### -field <b>hDriverAllocation</b>
+### -field hDriverAllocation
 
 <dd>
 <p>A handle created by the display miniport driver that identifies the created allocation. The value of this member is subsequently passed as the <b>Transfer.hAllocation</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a> structure that is pointed to by the <i>pBuildPagingBuffer</i> parameter of the <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a> function.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>[in] The size, in bytes, that is required for the allocation.</p>
 </dd>
 
-### -field <b>Alignment</b>
+### -field Alignment
 
 <dd>
 <p>[in] The required alignment, in bytes, for the allocation.
 </p>
 </dd>
 
-### -field <b>SupportedSegmentSet</b>
+### -field SupportedSegmentSet
 
 <dd>
 <p>[in] Segment identifiers that the display miniport driver can set in the <b>PreferredSegment</b> member for read or write operations.</p>
 </dd>
 
-### -field <b>EvictionSegmentSet</b>
+### -field EvictionSegmentSet
 
 <dd>
 <p>[in] Identifiers of segments that can be used for eviction.</p>
 </dd>
 
-### -field <b>PreferredSegment</b>
+### -field PreferredSegment
 
 <dd>
 <p>[in] A <a href="display.dxgk_segmentpreference">DXGK_SEGMENTPREFERENCE</a> structure that indicates the preferred segment identifiers that the display miniport driver requests that the video memory manager use to page-in the allocation.</p>
 </dd>
 
-### -field <b>HintedBank</b>
+### -field HintedBank
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentbankpreference.md">DXGK_SEGMENTBANKPREFERENCE</a> structure that indicates the bank ordering preferences that the display miniport driver requests that the video memory manager use to page-in the allocation.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a> structure that identifies properties for an allocation in bit-field flags. These properties indicate the type of allocation to create. The display miniport driver specifies these flags for the video memory manager. See Remarks for restrictions on flag values.</p>
 </dd>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[out] A handle that has been assigned by the DirectX graphics subsystem to the allocation. This value is subsequently passed as the <b>hAllocation</b> parameter of the  <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-destroycontextallocation.md">DxgkCbDestroyContextAllocation</a> function.</p>

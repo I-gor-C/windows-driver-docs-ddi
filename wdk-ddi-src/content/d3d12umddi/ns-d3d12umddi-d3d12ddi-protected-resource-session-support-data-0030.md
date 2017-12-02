@@ -55,13 +55,13 @@ typedef struct _D3D12DDI_PROTECTED_RESOURCE_SESSION_SUPPORT_DATA_0030 {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeIndex</b>
+### -field NodeIndex
 
 <dd>
 <p>Node index.</p>
 </dd>
 
-### -field <b>Support</b>
+### -field Support
 
 <dd>
 <p>Support.</p>

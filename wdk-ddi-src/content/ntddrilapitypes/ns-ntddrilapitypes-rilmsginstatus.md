@@ -7,7 +7,7 @@ old-location: netvista\rilmsginstatus.htm
 old-project: netvista
 ms.assetid: 383ed544-c8c8-42a0-a7de-57f0f4072611
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMSGINSTATUS, RILMSGINSTATUS, *LPRILMSGINSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,51 +65,51 @@ typedef struct _RILMSGINSTATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwMsgID</b>
+### -field dwMsgID
 
 <dd></dd>
 
-### -field <b>raTgtRecipAddress</b>
+### -field raTgtRecipAddress
 
 <dd></dd>
 
-### -field <b>stTgtSCReceiveTime</b>
+### -field stTgtSCReceiveTime
 
 <dd></dd>
 
-### -field <b>stTgtDischargeTime</b>
+### -field stTgtDischargeTime
 
 <dd></dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd></dd>
 
-### -field <b>dwTgtDlvStatus</b>
+### -field dwTgtDlvStatus
 
 <dd></dd>
 
-### -field <b>dwProtocolID</b>
+### -field dwProtocolID
 
 <dd></dd>
 
-### -field <b>rmdDataCoding</b>
+### -field rmdDataCoding
 
 <dd></dd>
 
-### -field <b>cbHdrLength</b>
+### -field cbHdrLength
 
 <dd></dd>
 
-### -field <b>cchMsgLength</b>
+### -field cchMsgLength
 
 <dd></dd>
 
-### -field <b>rgbHdr</b>
+### -field rgbHdr
 
 <dd></dd>
 
-### -field <b>rgbMsg</b>
+### -field rgbMsg
 
 <dd></dd>
 </dl>

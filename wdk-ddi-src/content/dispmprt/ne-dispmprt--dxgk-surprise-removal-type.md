@@ -54,7 +54,7 @@ typedef enum _DXGK_SURPRISE_REMOVAL_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DxgkRemovalHibernation"></a><a id="dxgkremovalhibernation"></a><a id="DXGKREMOVALHIBERNATION"></a><b>DxgkRemovalHibernation</b>
+### -field DxgkRemovalHibernation
 
 <dd>
 <p>The disconnected external display device was in hibernation mode.</p>

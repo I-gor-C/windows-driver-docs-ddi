@@ -55,13 +55,13 @@ typedef enum _HARDWARE_COUNTER_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PMCCounter"></a><a id="pmccounter"></a><a id="PMCCOUNTER"></a><b>PMCCounter</b>
+### -field PMCCounter
 
 <dd>
 <p>Performance monitor counter. This type of counter is used by thread-profiling applications. </p>
 </dd>
 
-### -field <a id="MaxHardwareCounterType"></a><a id="maxhardwarecountertype"></a><a id="MAXHARDWARECOUNTERTYPE"></a><b>MaxHardwareCounterType</b>
+### -field MaxHardwareCounterType
 
 <dd>
 <p>The maximum value in this enumeration type.</p>

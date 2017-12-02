@@ -54,7 +54,7 @@ typedef struct tagKS_DATARANGE_BDA_ANTENNA {
 ## -struct-fields
 <dl>
 
-### -field <b>DataRange</b>
+### -field DataRange
 
 <dd>
 <p>KSDATARANGE structure that describes a range of data formats with the <b>MajorFormat</b> member specified as STATIC_KSDATAFORMAT_TYPE_BDA_ANTENNA.</p>

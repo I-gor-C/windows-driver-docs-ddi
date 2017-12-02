@@ -7,7 +7,7 @@ old-location: wdf\wdf_request_send_options_flags.htm
 old-project: wdf
 ms.assetid: 68be1034-62f0-4444-b4c9-097277a7561f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfRegistryWdmGetHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ typedef enum _WDF_REQUEST_SEND_OPTIONS_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDF_REQUEST_SEND_OPTION_TIMEOUT"></a><a id="wdf_request_send_option_timeout"></a><b>WDF_REQUEST_SEND_OPTION_TIMEOUT</b>
+### -field WDF_REQUEST_SEND_OPTION_TIMEOUT
 
 <dd>
 <p>If the driver sets this flag, the <b>Timeout</b> member of the WDF_REQUEST_SEND_OPTIONS structure is valid.</p>
 </dd>
 
-### -field <a id="WDF_REQUEST_SEND_OPTION_SYNCHRONOUS"></a><a id="wdf_request_send_option_synchronous"></a><b>WDF_REQUEST_SEND_OPTION_SYNCHRONOUS</b>
+### -field WDF_REQUEST_SEND_OPTION_SYNCHRONOUS
 
 <dd>
 <p>If the driver sets this flag, the framework handles the associated I/O request synchronously. (The driver does not have to set this flag if it is calling an object method whose name ends with "Synchronously", such as <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendreadsynchronously.md">WdfIoTargetSendReadSynchronously</a>.)</p>
 </dd>
 
-### -field <a id="WDF_REQUEST_SEND_OPTION_IGNORE_TARGET_STATE"></a><a id="wdf_request_send_option_ignore_target_state"></a><b>WDF_REQUEST_SEND_OPTION_IGNORE_TARGET_STATE</b>
+### -field WDF_REQUEST_SEND_OPTION_IGNORE_TARGET_STATE
 
 <dd>
 <p>If the driver sets this flag, the framework sends the I/O request to the I/O target, regardless of the I/O target's state. If not set, the framework queues the request if the target is stopped. Setting this flag allows a driver to send a request, such as a request to reset a USB pipe, to a device after the driver has called <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a>.</p>
 </dd>
 
-### -field <a id="WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET"></a><a id="wdf_request_send_option_send_and_forget"></a><b>WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET</b>
+### -field WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET
 
 <dd>
 <p>If the driver sets this flag, the driver is sending the request asynchronously and does not need to be notified when the request is completed or canceled. The framework sends the I/O request to the I/O target, regardless of the I/O target's state. The driver does not set a <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a> callback function or call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a> for the request. If the driver sets this flag, it cannot set any other flags. For more information about this flag, see the following Remarks section.</p>
 </dd>
 
-### -field <a id="WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT"></a><a id="wdf_request_send_option_impersonate_client"></a><b>WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT</b>
+### -field WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT
 
 <dd>
 <p>This flag applies to UMDF only. If set, and if the I/O request type is <b>WdfRequestTypeCreate</b>, the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a> method attempts to pass the client's impersonation level to the driver's I/O target. The <b>WdfRequestSend</b> method returns an error code if the impersonation attempt fails, unless the driver also sets the <b>WDF_REQUEST_SEND_OPTION_IMPERSONATION_IGNORE_FAILURE</b> flag.</p>
 </dd>
 
-### -field <a id="WDF_REQUEST_SEND_OPTION_IMPERSONATION_IGNORE_FAILURE"></a><a id="wdf_request_send_option_impersonation_ignore_failure"></a><b>WDF_REQUEST_SEND_OPTION_IMPERSONATION_IGNORE_FAILURE</b>
+### -field WDF_REQUEST_SEND_OPTION_IMPERSONATION_IGNORE_FAILURE
 
 <dd>
 <p>This flag applies to UMDF only. If set, the framework still sends the request even if impersonation fails.  You can use this value only with <b>WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT</b>.</p>
@@ -154,4 +154,4 @@ typedef enum _WDF_REQUEST_SEND_OPTIONS_FLAGS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_SEND_OPTIONS_FLAGS enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_SEND_OPTIONS_FLAGS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

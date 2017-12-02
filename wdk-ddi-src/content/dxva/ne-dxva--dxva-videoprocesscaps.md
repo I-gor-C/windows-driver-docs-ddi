@@ -63,13 +63,13 @@ typedef enum _DXVA_VideoProcessCaps {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVA_VideoProcess_None"></a><a id="dxva_videoprocess_none"></a><a id="DXVA_VIDEOPROCESS_NONE"></a><b>DXVA_VideoProcess_None</b>
+### -field DXVA_VideoProcess_None
 
 <dd>
 <p>Indicates that the deinterlace hardware can only perform basic deinterlace operations. That is, deinterlace operations that are not combined with other operations, like-color conversion, alpha blend, stretch, subsection, or substream. </p>
 </dd>
 
-### -field <a id="DXVA_VideoProcess_YUV2RGB"></a><a id="dxva_videoprocess_yuv2rgb"></a><a id="DXVA_VIDEOPROCESS_YUV2RGB"></a><b>DXVA_VideoProcess_YUV2RGB</b>
+### -field DXVA_VideoProcess_YUV2RGB
 
 <dd>
 <p>Indicates that the deinterlace hardware can convert video from the YUV color space to the RGB color space. The RGB format will have at least 8 bits of precision for each color component. If possible, a buffer copy within the VMR can be avoided. All drivers should be able to support this operation for the bob deinterlace mode. 
@@ -77,7 +77,7 @@ typedef enum _DXVA_VideoProcessCaps {
 <p>Not used with the <a href="display.dxva_deinterlacebobdeviceclass_deinterlacebltex">DeinterlaceBltEx</a> function.</p>
 </dd>
 
-### -field <a id="DXVA_VideoProcess_StretchX"></a><a id="dxva_videoprocess_stretchx"></a><a id="DXVA_VIDEOPROCESS_STRETCHX"></a><b>DXVA_VideoProcess_StretchX</b>
+### -field DXVA_VideoProcess_StretchX
 
 <dd>
 <p>Indicates that aspect ratio correction can be performed simultaneously as the video is being deinterlaced if the deinterlacer is able to stretch or shrink horizontally. The enumerator should be supported for the bob deinterlace mode.</p>
@@ -85,7 +85,7 @@ typedef enum _DXVA_VideoProcessCaps {
 </p>
 </dd>
 
-### -field <a id="DXVA_VideoProcess_StretchY"></a><a id="dxva_videoprocess_stretchy"></a><a id="DXVA_VIDEOPROCESS_STRETCHY"></a><b>DXVA_VideoProcess_StretchY</b>
+### -field DXVA_VideoProcess_StretchY
 
 <dd>
 <p>Indicates that aspect ratio adjustment is combined with a general picture resizing operation to scale the video image.</p>
@@ -93,7 +93,7 @@ typedef enum _DXVA_VideoProcessCaps {
 </p>
 </dd>
 
-### -field <a id="DXVA_VideoProcess_AlphaBlend"></a><a id="dxva_videoprocess_alphablend"></a><a id="DXVA_VIDEOPROCESS_ALPHABLEND"></a><b>DXVA_VideoProcess_AlphaBlend</b>
+### -field DXVA_VideoProcess_AlphaBlend
 
 <dd>
 <p>Indicates that the VMR will not perform a buffer copy when an alpha value is changed. It is rare that applications alter the constant alpha value associated with the video stream, so this is a low priority feature. The enumerator should be supported for the bob deinterlace mode.
@@ -102,13 +102,13 @@ typedef enum _DXVA_VideoProcessCaps {
 </p>
 </dd>
 
-### -field <a id="DXVA_VideoProcess_SubRects"></a><a id="dxva_videoprocess_subrects"></a><a id="DXVA_VIDEOPROCESS_SUBRECTS"></a><b>DXVA_VideoProcess_SubRects</b>
+### -field DXVA_VideoProcess_SubRects
 
 <dd>
 <p>Indicates that the deinterlace hardware can deinterlace just a subrectangle region of the video image to the specified destination position. This is useful if the video image must be cropped before being processed further as the size of the output frame is reduced. </p>
 </dd>
 
-### -field <a id="DXVA_VideoProcess_SubStreams"></a><a id="dxva_videoprocess_substreams"></a><a id="DXVA_VIDEOPROCESS_SUBSTREAMS"></a><b>DXVA_VideoProcess_SubStreams</b>
+### -field DXVA_VideoProcess_SubStreams
 
 <dd>
 <p>Windows Server 2003 SP1 and later and Windows XP SP2 and later versions only.
@@ -118,7 +118,7 @@ typedef enum _DXVA_VideoProcessCaps {
 <p>Must use with the <a href="display.dxva_deinterlacebobdeviceclass_deinterlacebltex">DeinterlaceBltEx</a> function.</p>
 </dd>
 
-### -field <a id="DXVA_VideoProcess_SubStreamsExtended"></a><a id="dxva_videoprocess_substreamsextended"></a><a id="DXVA_VIDEOPROCESS_SUBSTREAMSEXTENDED"></a><b>DXVA_VideoProcess_SubStreamsExtended</b>
+### -field DXVA_VideoProcess_SubStreamsExtended
 
 <dd>
 <p>Windows Server 2003 SP1 and later and Windows XP SP2 and later versions only.
@@ -127,7 +127,7 @@ typedef enum _DXVA_VideoProcessCaps {
 <p>Must use with the <a href="display.dxva_deinterlacebobdeviceclass_deinterlacebltex">DeinterlaceBltEx</a> function.</p>
 </dd>
 
-### -field <a id="DXVA_VideoProcess_YUV2RGBExtended"></a><a id="dxva_videoprocess_yuv2rgbextended"></a><a id="DXVA_VIDEOPROCESS_YUV2RGBEXTENDED"></a><b>DXVA_VideoProcess_YUV2RGBExtended</b>
+### -field DXVA_VideoProcess_YUV2RGBExtended
 
 <dd>
 <p>Windows Server 2003 SP1 and later and Windows XP SP2 and later versions only.
@@ -137,7 +137,7 @@ typedef enum _DXVA_VideoProcessCaps {
 <p>Must use with the <a href="display.dxva_deinterlacebobdeviceclass_deinterlacebltex">DeinterlaceBltEx</a> function.</p>
 </dd>
 
-### -field <a id="DXVA_VideoProcess_AlphaBlendExtended"></a><a id="dxva_videoprocess_alphablendextended"></a><a id="DXVA_VIDEOPROCESS_ALPHABLENDEXTENDED"></a><b>DXVA_VideoProcess_AlphaBlendExtended</b>
+### -field DXVA_VideoProcess_AlphaBlendExtended
 
 <dd>
 <p>Windows Server 2003 SP1 and later and Windows XP SP2 and later versions only.

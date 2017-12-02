@@ -55,13 +55,13 @@ typedef struct _DISK_GROW_PARTITION {
 ## -struct-fields
 <dl>
 
-### -field <b>PartitionNumber</b>
+### -field PartitionNumber
 
 <dd>
 <p>Specifies a number identifying the partition to be enlarged.</p>
 </dd>
 
-### -field <b>BytesToGrow</b>
+### -field BytesToGrow
 
 <dd>
 <p>Indicates the number of bytes that the partition should be extended by. Note that this value is not the new size of the partition.</p>

@@ -56,7 +56,7 @@ typedef struct IDARG_IN_GETMOVEREGIONS {
 ## -struct-fields
 <dl>
 
-### -field <b>MoveRegionInCount</b>
+### -field MoveRegionInCount
 
 <dd>
 <p>
@@ -64,7 +64,7 @@ typedef struct IDARG_IN_GETMOVEREGIONS {
                  </p>
 </dd>
 
-### -field <b>pMoveRegions</b>
+### -field pMoveRegions
 
 <dd>
 <p>

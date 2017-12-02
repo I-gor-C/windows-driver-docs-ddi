@@ -59,37 +59,37 @@ typedef struct _MPIO_ADAPTER_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>PathId</b>
+### -field PathId
 
 <dd>
 <p>An unsigned 64-bitfield that represents an identifier that is assigned to a particular path. This field will match the PathIdentifier field in the instance(s) of the PDO_INFORMATION class that represent device(s) exposed via this path.</p>
 </dd>
 
-### -field <b>BusNumber</b>
+### -field BusNumber
 
 <dd>
 <p>An unsigned 8-bitfield that corresponds to the bus number that is assigned by PCI to the host bus adapter through which this path is exposed.</p>
 </dd>
 
-### -field <b>DeviceNumber</b>
+### -field DeviceNumber
 
 <dd>
 <p>An unsigned 8-bitfield that corresponds to the device number that is assigned by PCI to the host bus adapter through which this path is exposed.</p>
 </dd>
 
-### -field <b>FunctionNumber</b>
+### -field FunctionNumber
 
 <dd>
 <p>An unsigned 8-bitfield that corresponds to the function number that is assigned by PCI to the host bus adapter through which this path is exposed.</p>
 </dd>
 
-### -field <b>Pad</b>
+### -field Pad
 
 <dd>
 <p>Should be zero.</p>
 </dd>
 
-### -field <b>AdapterName</b>
+### -field AdapterName
 
 <dd>
 <p>A string field that returns the friendly name of the host bus adapter through which this path is exposed.</p>

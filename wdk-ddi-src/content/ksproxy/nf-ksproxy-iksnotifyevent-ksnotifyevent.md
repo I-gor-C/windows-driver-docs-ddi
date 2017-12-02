@@ -57,19 +57,19 @@ HRESULT KsNotifyEvent(
 ## -parameters
 <dl>
 
-### -param <i>Event</i> [in]
+### -param Event [in]
 
 <dd>
 <p>Identifies the type of DirectShow event. </p>
 </dd>
 
-### -param <i>lParam1</i> [in]
+### -param lParam1 [in]
 
 <dd>
 <p>Specifies the first data parameter for the event.</p>
 </dd>
 
-### -param <i>lParam2</i> [in]
+### -param lParam2 [in]
 
 <dd>
 <p>Specifies the second data parameter for the event.</p>

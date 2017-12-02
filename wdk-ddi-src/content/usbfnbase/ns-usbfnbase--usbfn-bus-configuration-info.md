@@ -58,20 +58,20 @@ typedef struct _USBFN_BUS_CONFIGURATION_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b> ConfigurationName</b>
+### -field  ConfigurationName
 
 <dd>
 <p>A NULL-terminated string that indicates the name of a configuration.</p>
 </dd>
 
-### -field <b> IsCurrent</b>
+### -field  IsCurrent
 
 <dd>
 <p>Indicates whether this configuration is the 
     current configuration.</p>
 </dd>
 
-### -field <b> IsActive</b>
+### -field  IsActive
 
 <dd>
 <p>    Indicates whether the configuration is active. This is a read-only information that is returned by USB function class extension (UFX) and is ignored in requests sent to UFX.

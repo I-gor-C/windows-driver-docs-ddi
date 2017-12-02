@@ -60,7 +60,7 @@ typedef SRIOV_READ_CONFIG *PSRIOV_READ_CONFIG;
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to a driver-defined context.
@@ -68,25 +68,25 @@ typedef SRIOV_READ_CONFIG *PSRIOV_READ_CONFIG;
                 </p>
 </dd>
 
-### -param <i>Data</i> [out]
+### -param Data [out]
 
 <dd>
 <p>A pointer to buffer that contains the configuration information to be read from the VF's configuration space.</p>
 </dd>
 
-### -param <i>VfIndex</i> [in]
+### -param VfIndex [in]
 
 <dd>
 <p>A zero-based index of the VF to which this read operation applies.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>An offset in bytes to the start of the VF’s configuration space where the read begins.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length, in bytes, of the data to read from the configuration space.</p>

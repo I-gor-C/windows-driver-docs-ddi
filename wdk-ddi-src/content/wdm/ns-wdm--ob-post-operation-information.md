@@ -67,20 +67,20 @@ typedef struct _OB_POST_OPERATION_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Operation</b>
+### -field Operation
 
 <dd>
 <p>The type of handle operation. This member might be one of the following values:</p>
 <p></p>
 <dl>
 
-### -field <a id="OB_OPERATION_HANDLE_CREATE"></a><a id="ob_operation_handle_create"></a>OB_OPERATION_HANDLE_CREATE
+### -field OB_OPERATION_HANDLE_CREATE
 
 <dd>
 <p>A new handle to a process or thread was created. Use <b>Parameters-&gt;CreateHandleInformation</b> for create-specific information.</p>
 </dd>
 
-### -field <a id="OB_OPERATION_HANDLE_DUPLICATE"></a><a id="ob_operation_handle_duplicate"></a>OB_OPERATION_HANDLE_DUPLICATE
+### -field OB_OPERATION_HANDLE_DUPLICATE
 
 <dd>
 <p>A process or thread handle was duplicated. Use <b>Parameters-&gt;DuplicateHandleInformation</b> for duplicate-specific information.</p>
@@ -88,49 +88,49 @@ typedef struct _OB_POST_OPERATION_INFORMATION {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved. Use the <b>KernelHandle</b> member instead. </p>
 </dd>
 
-### -field <b>KernelHandle</b>
+### -field KernelHandle
 
 <dd>
 <p>A ULONG value that specifies whether the handle is a kernel handle. If this value is <b>TRUE</b>, the handle is a kernel handle. Otherwise, the handle is not a kernel handle.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Object</b>
+### -field Object
 
 <dd>
 <p>A pointer to the process or thread object that is the target of the handle operation.</p>
 </dd>
 
-### -field <b>ObjectType</b>
+### -field ObjectType
 
 <dd>
 <p>A pointer to the object type of the object. This type can be <b>PsProcessType</b> for a process or <b>PsThreadType</b> for a thread. </p>
 </dd>
 
-### -field <b>CallContext</b>
+### -field CallContext
 
 <dd>
 <p>A pointer to driver-specific context information for the operation. This value is the value that the <i>OperationInformation</i>-&gt;<b>CallContext</b> member specifies to the <a href="kernel.objectprecallback">ObjectPreCallback</a> routine. </p>
 </dd>
 
-### -field <b>ReturnStatus</b>
+### -field ReturnStatus
 
 <dd>
 <p>The NTSTATUS value for the handle operation.</p>
 </dd>
 
-### -field <b>Parameters</b>
+### -field Parameters
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--ob-post-operation-parameters.md">OB_POST_OPERATION_PARAMETERS</a> union that contains operation-specific information. The <b>Operation</b> member determines which member of the union is valid. The pointer is valid only when <b>ReturnStatus</b> is a success code.</p>

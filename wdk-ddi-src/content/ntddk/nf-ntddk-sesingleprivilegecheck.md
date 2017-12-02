@@ -56,13 +56,13 @@ BOOLEAN SeSinglePrivilegeCheck(
 ## -parameters
 <dl>
 
-### -param <i>PrivilegeValue</i> [in]
+### -param PrivilegeValue [in]
 
 <dd>
 <p>Specifies the <a href="kernel.luid">LUID</a> value of the privilege being checked.</p>
 </dd>
 
-### -param <i>PreviousMode</i> [in]
+### -param PreviousMode [in]
 
 <dd>
 <p>Specifies the previous execution mode, one of <b>UserMode</b> or <b>KernelMode</b>.</p>

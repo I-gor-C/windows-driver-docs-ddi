@@ -56,13 +56,13 @@ ULONG StorPortFreeWorker(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>WorkItem</i> [in]
+### -param WorkItem [in]
 
 <dd>
 <p>A pointer to an opaque buffer for the work item context returned by <a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>.</p>

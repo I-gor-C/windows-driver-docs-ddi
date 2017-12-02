@@ -59,19 +59,19 @@ void SetCreateProcessNotifyRoutineEx(
 ## -parameters
 <dl>
 
-### -param <i>ParentId</i> [in]
+### -param ParentId [in]
 
 <dd>
 <p>The process ID of the parent process.</p>
 </dd>
 
-### -param <i>ProcessId</i> [in]
+### -param ProcessId [in]
 
 <dd>
 <p>The process ID of the process.</p>
 </dd>
 
-### -param <i>CreateInfo</i> [in, out, optional]
+### -param CreateInfo [in, out, optional]
 
 <dd>
 <p>A pointer to a <a href="..\ntddk\ns-ntddk--ps-create-notify-info.md">PS_CREATE_NOTIFY_INFO</a> structure that contains information about the new process. </p>

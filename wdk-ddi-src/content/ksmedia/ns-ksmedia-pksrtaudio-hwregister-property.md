@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>A <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that the client initializes appropriately prior to calling KSPROPERTY_RTAUDIO_POSITIONREGISTER or KSPROPERTY_RTAUDIO_CLOCKREGISTER.</p>
 </dd>
 
-### -field <b>BaseAddress</b>
+### -field BaseAddress
 
 <dd>
 <p>Specifies the buffer base address.  Unless the client specifies a base address, this parameter is set to <b>NULL</b>.</p>

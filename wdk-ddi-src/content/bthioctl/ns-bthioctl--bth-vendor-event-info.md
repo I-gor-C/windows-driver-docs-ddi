@@ -57,19 +57,19 @@ typedef struct _BTH_VENDOR_EVENT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>BthAddress</b>
+### -field BthAddress
 
 <dd>
 <p>The address of the local radio that is associated with the event.</p>
 </dd>
 
-### -field <b>EventSize</b>
+### -field EventSize
 
 <dd>
 <p>The size, in bytes, of the event buffer. The size includes the event header.</p>
 </dd>
 
-### -field <b>EventInfo</b>
+### -field EventInfo
 
 <dd>
 <p>A UCHAR array for the event buffer. The buffer includes the event header.</p>

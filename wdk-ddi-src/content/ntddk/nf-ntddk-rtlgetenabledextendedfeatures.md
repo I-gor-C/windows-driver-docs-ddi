@@ -54,7 +54,7 @@ ULONG64 RtlGetEnabledExtendedFeatures(
 ## -parameters
 <dl>
 
-### -param <i>FeatureMask</i> [in]
+### -param FeatureMask [in]
 
 <dd>
 <p>A 64-bit feature mask. This parameter indicates a set of extended processor features for which the caller requests information about whether the features are enabled. If a mask bit is one, the caller requests information about the feature that corresponds to this mask bit. The caller sets all other mask bits to zero. Set this parameter to (ULONG64)(-1) to get the mask of all enabled features. To determine whether a particular set of features is enabled, set this parameter to the bitwise OR of one or more of the following <b>XSTATE_MASK_<i>XXX</i></b> flag bits:</p>
@@ -66,7 +66,7 @@ ULONG64 RtlGetEnabledExtendedFeatures(
 <tr>
 <td width="40%"><a id="XSTATE_MASK_LEGACY_FLOATING_POINT"></a><a id="xstate_mask_legacy_floating_point"></a><dl>
 
-### -param <b>XSTATE_MASK_LEGACY_FLOATING_POINT</b>
+### -param XSTATE_MASK_LEGACY_FLOATING_POINT
 
 </dl>
 </td>
@@ -77,7 +77,7 @@ ULONG64 RtlGetEnabledExtendedFeatures(
 <tr>
 <td width="40%"><a id="XSTATE_MASK_LEGACY_SSE"></a><a id="xstate_mask_legacy_sse"></a><dl>
 
-### -param <b>XSTATE_MASK_LEGACY_SSE</b>
+### -param XSTATE_MASK_LEGACY_SSE
 
 </dl>
 </td>
@@ -88,7 +88,7 @@ ULONG64 RtlGetEnabledExtendedFeatures(
 <tr>
 <td width="40%"><a id="XSTATE_MASK_LEGACY"></a><a id="xstate_mask_legacy"></a><dl>
 
-### -param <b>XSTATE_MASK_LEGACY</b>
+### -param XSTATE_MASK_LEGACY
 
 </dl>
 </td>
@@ -99,7 +99,7 @@ ULONG64 RtlGetEnabledExtendedFeatures(
 <tr>
 <td width="40%"><a id="XSTATE_MASK_GSSE"></a><a id="xstate_mask_gsse"></a><dl>
 
-### -param <b>XSTATE_MASK_GSSE</b>
+### -param XSTATE_MASK_GSSE
 
 </dl>
 </td>

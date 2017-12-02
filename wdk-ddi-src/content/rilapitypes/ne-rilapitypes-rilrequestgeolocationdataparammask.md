@@ -7,7 +7,7 @@ old-location: netvista\rilrequestgeolocationdataparammask_2.htm
 old-project: netvista
 ms.assetid: b81cbf26-7164-4082-a505-2a849ec3d1ea
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef enum _RILREQUESTGEOLOCATIONDATAPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_REQUESTGEOLOCATIONDATA_SIZE"></a><a id="ril_param_requestgeolocationdata_size"></a><b>RIL_PARAM_REQUESTGEOLOCATIONDATA_SIZE</b>
+### -field RIL_PARAM_REQUESTGEOLOCATIONDATA_SIZE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_REQUESTGEOLOCATIONDATA_EXECUTOR"></a><a id="ril_param_requestgeolocationdata_executor"></a><b>RIL_PARAM_REQUESTGEOLOCATIONDATA_EXECUTOR</b>
+### -field RIL_PARAM_REQUESTGEOLOCATIONDATA_EXECUTOR
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_REQUESTGEOLOCATIONDATA_MASK"></a><a id="ril_param_requestgeolocationdata_mask"></a><b>RIL_PARAM_REQUESTGEOLOCATIONDATA_MASK</b>
+### -field RIL_PARAM_REQUESTGEOLOCATIONDATA_MASK
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_REQUESTGEOLOCATIONDATA_REQUESTACCCURACY"></a><a id="ril_param_requestgeolocationdata_requestacccuracy"></a><b>RIL_PARAM_REQUESTGEOLOCATIONDATA_REQUESTACCCURACY</b>
+### -field RIL_PARAM_REQUESTGEOLOCATIONDATA_REQUESTACCCURACY
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_REQUESTGEOLOCATIONDATA_REQUESTINFORMATION"></a><a id="ril_param_requestgeolocationdata_requestinformation"></a><b>RIL_PARAM_REQUESTGEOLOCATIONDATA_REQUESTINFORMATION</b>
+### -field RIL_PARAM_REQUESTGEOLOCATIONDATA_REQUESTINFORMATION
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_REQUESTGEOLOCATIONDATA_ALL"></a><a id="ril_param_requestgeolocationdata_all"></a><b>RIL_PARAM_REQUESTGEOLOCATIONDATA_ALL</b>
+### -field RIL_PARAM_REQUESTGEOLOCATIONDATA_ALL
 
 <dd></dd>
 </dl>

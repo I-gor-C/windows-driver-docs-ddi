@@ -54,7 +54,7 @@ void __inline KsGateRemoveOnInputFromOr(
 ## -parameters
 <dl>
 
-### -param <i>OrGate</i> [in]
+### -param OrGate [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksgate.md">KSGATE</a> structure representing the OR gate from which to remove an ON input.</p>
@@ -65,7 +65,7 @@ void __inline KsGateRemoveOnInputFromOr(
 <p>None</p>
 
 ## -remarks
-<p>Removing the last ON input from a given OR gate results in the gate closing and the transition being propagated to any gates connected to <i>OrGate</i>. For more information, see <a href="NULL">Flow Control Gates in AVStream</a>.</p>
+<p>Removing the last ON input from a given OR gate results in the gate closing and the transition being propagated to any gates connected to <i>OrGate</i>. For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.</p>
 
 <p><b>KsGateRemoveOnInputFromOr</b> should only be used on gates that were specifically created as AND gates; AVStream does not verify that the given gate is an AND gate.</p>
 

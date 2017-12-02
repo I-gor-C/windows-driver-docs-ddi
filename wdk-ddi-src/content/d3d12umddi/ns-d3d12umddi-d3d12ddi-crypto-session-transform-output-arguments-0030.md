@@ -56,19 +56,19 @@ typedef struct _D3D12DDI_CRYPTO_SESSION_TRANSFORM_OUTPUT_ARGUMENTS_0030 {
 ## -struct-fields
 <dl>
 
-### -field <b>Decrypt</b>
+### -field Decrypt
 
 <dd>
 <p>Decrypt.</p>
 </dd>
 
-### -field <b>Transcrypt</b>
+### -field Transcrypt
 
 <dd>
 <p>Transcrypt.</p>
 </dd>
 
-### -field <b>ClearHeader</b>
+### -field ClearHeader
 
 <dd>
 <p>Clear header.</p>

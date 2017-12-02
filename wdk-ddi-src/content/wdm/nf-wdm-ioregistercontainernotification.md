@@ -59,7 +59,7 @@ NTSTATUS IoRegisterContainerNotification(
 ## -parameters
 <dl>
 
-### -param <i>NotificationClass</i> [in]
+### -param NotificationClass [in]
 
 <dd>
 <p>Specifies the class of events for which the caller (driver) requests notifications. Set this parameter to the following <a href="..\wdm\ne-wdm--io-container-notification-class.md">IO_CONTAINER_NOTIFICATION_CLASS</a> enumeration value:</p>
@@ -71,25 +71,25 @@ NTSTATUS IoRegisterContainerNotification(
 <p>For more information, see the following Remarks section. </p>
 </dd>
 
-### -param <i>CallbackFunction</i> [in]
+### -param CallbackFunction [in]
 
 <dd>
 <p>A pointer to a callback function that is implemented by the caller (driver). The I/O manager calls this function to notify the caller when an event of the class indicated by <i>NotificationClass</i> occurs. For <i>NotificationClass</i> = <b>IoSessionStateNotification</b>, this parameter is a pointer to a caller-supplied <a href="..\wdm\nc-wdm-io-session-notification-function.md">IO_SESSION_NOTIFICATION_FUNCTION</a> function. However, the caller should cast this function pointer to type PIO_CONTAINER_NOTIFICATION_FUNCTION to match the parameter type. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>NotificationInformation</i> [in, optional]
+### -param NotificationInformation [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that contains the notification information structure for an event of the class specified by <i>NotificationClass</i>. For <i>NotificationClass</i> = <b>IoSessionStateNotification</b>, <i>NotificationInformation</i> points to an <a href="..\wdm\ns-wdm--io-session-state-notification.md">IO_SESSION_STATE_NOTIFICATION</a> structure. The caller must fill out this structure before it calls <b>IoRegisterContainerNotification</b>. During this call, <b>IoRegisterContainerNotification</b> copies the data from this structure, and the I/O manager does not access the driver's copy of the structure after the call returns.</p>
 </dd>
 
-### -param <i>NotificationInformationLength</i> [in]
+### -param NotificationInformationLength [in]
 
 <dd>
 <p>The size, in bytes, of the notification information structure contained in the buffer that is pointed to by <i>NotificationInformation</i>. For <i>NotificationClass</i> = <b>IoSessionStateNotification</b>, set this parameter to <b>sizeof</b>(<b>IO_SESSION_STATE_NOTIFICATION</b>).</p>
 </dd>
 
-### -param <i>CallbackRegistration</i> [out]
+### -param CallbackRegistration [out]
 
 <dd>
 <p>A pointer to a location into which this routine writes the address of a container notification registration object. This object is an opaque, system object in which the I/O manager stores information about the caller's container notification registration. When notifications are no longer required, the caller cancels the registration by passing this object pointer to the <a href="..\wdm\nf-wdm-iounregistercontainernotification.md">IoUnregisterContainerNotification</a> routine.</p>

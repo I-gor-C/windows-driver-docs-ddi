@@ -7,13 +7,13 @@ old-location: debugger\translatevirtualtophysical.htm
 old-project: debugger
 ms.assetid: 803f766a-e02f-4b9c-bfe0-6197e0f2855c
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: TranslateVirtualToPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: 
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -56,13 +56,13 @@ __inline BOOL TranslateVirtualToPhysical(
 ## -parameters
 <dl>
 
-### -param <i>Virtual</i> 
+### -param Virtual 
 
 <dd>
 <p>Specifies the virtual memory address to translate.</p>
 </dd>
 
-### -param <i>Physical</i> 
+### -param Physical 
 
 <dd>
 <p>Receives the physical memory address.</p>
@@ -74,6 +74,8 @@ __inline BOOL TranslateVirtualToPhysical(
 
 ## -remarks
 <p>This function is only available in kernel-mode debugging.</p>
+
+<p>If you are writing a WdbgExts extension, include wdbgexts.h. If you are writing a DbgEng extension that calls this function, include wdbgexts.h before dbgeng.h (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details.)</p>
 
 ## -requirements
 <table>
@@ -93,7 +95,7 @@ __inline BOOL TranslateVirtualToPhysical(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (If you are writing a WdbgExts extension, include wdbgexts.h. If you are writing a DbgEng extension that calls this function, include wdbgexts.h before dbgeng.h (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details.))</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

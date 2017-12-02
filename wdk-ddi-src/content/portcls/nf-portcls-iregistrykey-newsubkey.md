@@ -59,37 +59,37 @@ NTSTATUS NewSubKey(
 ## -parameters
 <dl>
 
-### -param <i>RegistrySubKey</i> [out]
+### -param RegistrySubKey [out]
 
 <dd>
 <p>Output pointer for the new subkey. This parameter points to a caller-allocated pointer variable into which the method writes the pointer to the new <b>IRegistryKey</b> object. This object represents the subkey being opened or created. Specify a valid, non-<b>NULL</b> pointer value for this parameter.</p>
 </dd>
 
-### -param <i>OuterUnknown</i> [in]
+### -param OuterUnknown [in]
 
 <dd>
 <p>Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate the registry key object. This parameter is optional. If aggregation is not required, specify this parameter as <b>NULL</b>.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies the type of access that the caller requires to the subkey that is being opened or created. This parameter is of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>SubKeyName</i> [in]
+### -param SubKeyName [in]
 
 <dd>
 <p>Pointer to the name that is to be assigned to the subkey. This parameter must be a valid, non-<b>NULL</b> pointer to an initialized structure of type <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>.</p>
 </dd>
 
-### -param <i>CreateOptions</i> [in]
+### -param CreateOptions [in]
 
 <dd>
 <p>Flags indicating the create options. Can be zero if none are desired. This parameter is required if the value of <i>RegistryKeyType</i> is <b>GeneralRegistryKey</b>; otherwise, the method does not use this parameter. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>Disposition</i> [out, optional]
+### -param Disposition [out, optional]
 
 <dd>
 <p>Output pointer for the disposition value. This parameter points to a caller-allocated ULONG variable into which the method writes a status value indicating whether a new key was created or an existing key was opened. This parameter is optional and can be specified as <b>NULL</b> if the caller does not need it. For more information, see the following Remarks section.</p>
@@ -106,7 +106,7 @@ NTSTATUS NewSubKey(
 
 <p>The <i>DesiredAccess</i> parameter is an access-control mask that specifies the type of access control that the caller needs to have to the subkey when accessing it through the <i>RegistrySubKey</i> object. This mask should not be confused with the ACL (access control list) that controls access by users to the registry subkey. When the <b>PcNewRegistryKey</b> function or <a href="audio.iport_newregistrykey">IPort::NewRegistryKey</a> method creates a registry key of type <b>GeneralRegistryKey</b>, the <i>ObjectAttributes</i> parameter specifies the key's attributes, including a security descriptor that contains the ACL. When the <code>NewSubKey</code> method creates a new registry subkey, however, that subkey simply inherits the ACL from its parent key. The <code>NewSubKey</code> method provides no means to specify an ACL that differs from that of the parent key.</p>
 
-<p>The <i>RegistrySubKey</i> and <i>OuterUnknown</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>RegistrySubKey</i> and <i>OuterUnknown</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

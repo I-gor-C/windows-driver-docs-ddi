@@ -63,53 +63,53 @@ typedef struct _DRIVER_OBJECT {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceObject</b>
+### -field DeviceObject
 
 <dd>
 <p>Pointer to the device objects created by the driver. This member is automatically updated when the driver calls <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> successfully. A driver can use this member and the <b>NextDevice</b> member of <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> to step through a list of all the device objects that the driver created.</p>
 </dd>
 
-### -field <b>DriverExtension</b>
+### -field DriverExtension
 
 <dd>
 <p>Pointer to the driver extension. The only accessible member of the driver extension is <b>DriverExtension-&gt;AddDevice</b>, into which a driver's <b>DriverEntry</b> routine stores the driver's <a href="kernel.adddevice">AddDevice</a> routine.</p>
 </dd>
 
-### -field <b>HardwareDatabase</b>
+### -field HardwareDatabase
 
 <dd>
 <p>Pointer to the <b>\Registry\Machine\Hardware</b> path to the hardware configuration information in the registry.</p>
 </dd>
 
-### -field <b>FastIoDispatch</b>
+### -field FastIoDispatch
 
 <dd>
 <p>Pointer to a structure defining the driver's fast I/O entry points. This member is used only by FSDs and network transport drivers.</p>
 </dd>
 
-### -field <b>DriverInit</b>
+### -field DriverInit
 
 <dd>
 <p>The entry point for the <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine, which is set up by the I/O manager.</p>
 </dd>
 
-### -field <b>DriverStartIo</b>
+### -field DriverStartIo
 
 <dd>
 <p>The entry point for the driver's <a href="kernel.startio">StartIo</a> routine, if any, which is set by the <b>DriverEntry</b> routine when the driver initializes. If a driver has no <i>StartIo</i> routine, this member is <b>NULL</b>.</p>
 </dd>
 
-### -field <b>DriverUnload</b>
+### -field DriverUnload
 
 <dd>
 <p>The entry point for the driver's <a href="kernel.unload">Unload</a> routine, if any, which is set by the <b>DriverEntry</b> routine when the driver initializes. If a driver has no <i>Unload</i> routine, this member is <b>NULL</b>.</p>
 </dd>
 
-### -field <b>MajorFunction</b>
+### -field MajorFunction
 
 <dd>
 <p>A dispatch table consisting of an array of entry points for the driver's <i>DispatchXxx</i> routines. The array's index values are the <b>IRP_MJ_<i>XXX</i></b> values representing each <a href="https://msdn.microsoft.com/11c5b1a9-74c0-47fb-8cce-a008ece9efae">IRP major function code</a>. Each driver must set entry points in this array for the <b>IRP_MJ_<i>XXX</i></b> requests that the driver handles. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566407">Writing Dispatch Routines</a>.</p>
-<p>To help <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools, each <i>DispatchXxx</i> routine is declared using the DRIVER_DISPATCH type, as shown in this code example:</p>
+<p>To help <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools, each <i>DispatchXxx</i> routine is declared using the DRIVER_DISPATCH type, as shown in this code example:</p>
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>

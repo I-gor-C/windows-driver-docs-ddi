@@ -7,7 +7,7 @@ old-location: netvista\rilsupservicedata.htm
 old-project: netvista
 ms.assetid: 1cb4afae-75ad-4c9b-8b21-f9aade2c5fd8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSUPSERVICEDATA, RILSUPSERVICEDATA, *LPRILSUPSERVICEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,39 +62,39 @@ typedef struct _RILSUPSERVICEDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwStatus</b>
+### -field dwStatus
 
 <dd></dd>
 
-### -field <b>dwNetworkSSErrorCause</b>
+### -field dwNetworkSSErrorCause
 
 <dd></dd>
 
-### -field <b>dwNetworkCCErrorCause</b>
+### -field dwNetworkCCErrorCause
 
 <dd></dd>
 
-### -field <b>dwVendorErrorCause</b>
+### -field dwVendorErrorCause
 
 <dd></dd>
 
-### -field <b>dwDataSize</b>
+### -field dwDataSize
 
 <dd></dd>
 
-### -field <b>wszData</b>
+### -field wszData
 
 <dd></dd>
 </dl>

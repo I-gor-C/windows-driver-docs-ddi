@@ -61,19 +61,19 @@ typedef struct _STORAGE_HW_FIRMWARE_DOWNLOAD {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_DOWNLOAD).</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure and the download image buffer.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags associated with this download. The following are valid flags that this member can hold.</p>
@@ -94,31 +94,31 @@ typedef struct _STORAGE_HW_FIRMWARE_DOWNLOAD {
 <p> </p>
 </dd>
 
-### -field <b>Slot</b>
+### -field Slot
 
 <dd>
 <p>The slot number that the firmware image will be downloaded to.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>The offset in this buffer of where the Image file begins. This should be aligned to ImagePayloadAlignment from <a href="..\ntddstor\ns-ntddstor--storage-hw-firmware-info.md">STORAGE_HW_FIRMWARE_INFO</a>.</p>
 </dd>
 
-### -field <b>BufferSize</b>
+### -field BufferSize
 
 <dd>
 <p>The buffer size of the ImageBuffer. This should be a multiple of ImagePayloadAlignment from <a href="..\ntddstor\ns-ntddstor--storage-hw-firmware-info.md">STORAGE_HW_FIRMWARE_INFO</a>.</p>
 </dd>
 
-### -field <b>ImageBuffer</b>
+### -field ImageBuffer
 
 <dd>
 <p>The firmware image file.</p>

@@ -7,13 +7,13 @@ old-location: debugger\setthreadforoperation.htm
 old-project: debugger
 ms.assetid: b5bae644-6c8d-4346-87bd-211efcf27748
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: SetThreadForOperation
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -55,7 +55,7 @@ __inline VOID SetThreadForOperation(
 ## -parameters
 <dl>
 
-### -param <i>Thread</i> 
+### -param Thread 
 
 <dd>
 <p>Points to a thread object to be used for the next stack trace.</p>
@@ -88,7 +88,7 @@ __inline VOID SetThreadForOperation(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

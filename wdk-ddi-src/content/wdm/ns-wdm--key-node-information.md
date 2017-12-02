@@ -60,37 +60,37 @@ typedef struct _KEY_NODE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>LastWriteTime</b>
+### -field LastWriteTime
 
 <dd>
 <p>The last time this key or any of its values changed. This time value is expressed in absolute system time format. Absolute system time is the number of 100-nanosecond intervals since the start of the year 1601 in the Gregorian calendar.</p>
 </dd>
 
-### -field <b>TitleIndex</b>
+### -field TitleIndex
 
 <dd>
 <p>Device and intermediate drivers should ignore this member.</p>
 </dd>
 
-### -field <b>ClassOffset</b>
+### -field ClassOffset
 
 <dd>
 <p>The byte offset from the start of this structure to the class name string, which is located in the <b>Name</b> array immediately following the key name string. Like the key name string, the class name string is not null-terminated.</p>
 </dd>
 
-### -field <b>ClassLength</b>
+### -field ClassLength
 
 <dd>
 <p>The size, in bytes, in the class name string.</p>
 </dd>
 
-### -field <b>NameLength</b>
+### -field NameLength
 
 <dd>
 <p>The size, in bytes, of the key name string contained in the <b>Name</b> array.</p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>An array of wide characters that contains the name of the registry key. This character string is <u>not</u> null-terminated. Only the first element in this array is included in the <b>KEY_NODE_INFORMATION</b> structure definition. The storage for the remaining elements in the array immediately follows this element.</p>

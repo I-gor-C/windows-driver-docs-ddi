@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestcreatefromirp.htm
 old-project: wdf
 ms.assetid: 7fc67320-6943-4e39-8474-28c24265eae2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfRequestCreateFromIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ NTSTATUS WdfRequestCreateFromIrp(
 ## -parameters
 <dl>
 
-### -param <i>RequestAttributes</i> [in, optional]
+### -param RequestAttributes [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the request object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES. </p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>A pointer to an <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure that contains a WDM I/O request packet.</p>
+<p>A pointer to an <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure that contains a WDM I/O request packet.</p>
 </dd>
 
-### -param <i>RequestFreesIrp</i> [in]
+### -param RequestFreesIrp [in]
 
 <dd>
 <p>A Boolean value that, if <b>TRUE</b>, indicates that the framework removes the IRP when the request handle is destroyed. If <b>FALSE</b>, the driver must call <a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a> to remove the IRP, using the steps that the following Examples section demonstrates.</p>
 </dd>
 
-### -param <i>Request</i> [out]
+### -param Request [out]
 
 <dd>
 <p>A pointer to a location that receives a handle to a framework request object. </p>
@@ -103,7 +103,7 @@ NTSTATUS WdfRequestCreateFromIrp(
 
 <p>For more information about creating framework request objects, see <a href="wdf.creating_framework_request_objects">Creating Framework Request Objects</a>.</p>
 
-<p>Framework-based drivers must not use the <b>Tail.Overlay.DriverContext</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure, because the framework uses this member.</p>
+<p>Framework-based drivers must not use the <b>Tail.Overlay.DriverContext</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure, because the framework uses this member.</p>
 
 <p><b>Example 1</b></p>
 
@@ -194,4 +194,4 @@ NTSTATUS WdfRequestCreateFromIrp(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestCreateFromIrp method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestCreateFromIrp method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

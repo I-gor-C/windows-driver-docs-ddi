@@ -68,7 +68,7 @@ typedef struct _DXGK_GDIARG_STRETCHBLT {
 ## -struct-fields
 <dl>
 
-### -field <b>SrcRect</b>
+### -field SrcRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure that defines the rectangular area to be copied. This rectangle is specified in the coordinate system of the source surface and is defined by two points: upper left and lower right. The two points that define the rectangle are always well ordered. </p>
@@ -77,7 +77,7 @@ typedef struct _DXGK_GDIARG_STRETCHBLT {
 <p>For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure that defines the rectangular area to be modified. This rectangle is specified in the coordinate system of the destination surface and is defined by two points: upper left and lower right. The rectangle is lower-right exclusive; that is, its lower and right edges are not a part of the bit-block transfer. The two points that define the rectangle are always well ordered. </p>
@@ -85,7 +85,7 @@ typedef struct _DXGK_GDIARG_STRETCHBLT {
 <p>For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>DstAllocationIndex</b>
+### -field DstAllocationIndex
 
 <dd>
 <p>
@@ -93,7 +93,7 @@ typedef struct _DXGK_GDIARG_STRETCHBLT {
      </p>
 </dd>
 
-### -field <b>SrcAllocationIndex</b>
+### -field SrcAllocationIndex
 
 <dd>
 <p>
@@ -101,7 +101,7 @@ typedef struct _DXGK_GDIARG_STRETCHBLT {
      </p>
 </dd>
 
-### -field <b>NumSubRects</b>
+### -field NumSubRects
 
 <dd>
 <p>
@@ -109,7 +109,7 @@ typedef struct _DXGK_GDIARG_STRETCHBLT {
      </p>
 </dd>
 
-### -field <b>pSubRects</b>
+### -field pSubRects
 
 <dd>
 <p>
@@ -117,7 +117,7 @@ typedef struct _DXGK_GDIARG_STRETCHBLT {
      </p>
 </dd>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>
@@ -133,7 +133,7 @@ typedef struct _DXGK_GDIARG_STRETCHBLT {
 <tr>
 <td width="40%"><a id="BLACKONWHITE"></a><a id="blackonwhite"></a><dl>
 
-### -field <b>BLACKONWHITE</b>
+### -field BLACKONWHITE
 
 </dl>
 </td>
@@ -144,7 +144,7 @@ typedef struct _DXGK_GDIARG_STRETCHBLT {
 <tr>
 <td width="40%"><a id="WHITEONBLACK"></a><a id="whiteonblack"></a><dl>
 
-### -field <b>WHITEONBLACK</b>
+### -field WHITEONBLACK
 
 </dl>
 </td>
@@ -158,7 +158,7 @@ typedef struct _DXGK_GDIARG_STRETCHBLT {
         This type of operation will be processed only if the driver has set the <b>SupportMonoStretchBltModes</b> member in the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-presentationcaps.md">DXGK_PRESENTATIONCAPS</a> structure.</p>
 </dd>
 
-### -field <b>MirrorX</b>
+### -field MirrorX
 
 <dd>
 <p>
@@ -166,7 +166,7 @@ typedef struct _DXGK_GDIARG_STRETCHBLT {
        </p>
 </dd>
 
-### -field <b>MirrorY</b>
+### -field MirrorY
 
 <dd>
 <p>
@@ -174,7 +174,7 @@ typedef struct _DXGK_GDIARG_STRETCHBLT {
        </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>
@@ -182,7 +182,7 @@ typedef struct _DXGK_GDIARG_STRETCHBLT {
       </p>
 </dd>
 
-### -field <b>SrcPitch</b>
+### -field SrcPitch
 
 <dd>
 <p>

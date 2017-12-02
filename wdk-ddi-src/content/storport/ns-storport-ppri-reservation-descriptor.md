@@ -60,37 +60,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>ReservationKey</b>
+### -field ReservationKey
 
 <dd>
 <p>The reservation key under which the persistent reservation is held.</p>
 </dd>
 
-### -field <b>ScopeSpecificAddress</b>
+### -field ScopeSpecificAddress
 
 <dd>
 <p>The ScopeSpecificAddress field contains the element address, that has zeros placed in the most significant bits to fit the field.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Must be zero.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of the persistent reservation as present in the Persistent Reserve Out command that created the persistent reservation.</p>
 </dd>
 
-### -field <b>Scope</b>
+### -field Scope
 
 <dd>
 <p>The scope of the persistent reservation as present in the Persistent Reserve Out command that created the persistent reservation.</p>
 </dd>
 
-### -field <b>Obsolete</b>
+### -field Obsolete
 
 <dd>
 <p>Reserved. Must be zero.</p>

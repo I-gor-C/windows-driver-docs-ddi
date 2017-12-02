@@ -56,19 +56,19 @@ NTSTATUS GPIO_CLX_ProcessAddDevicePreDeviceCreate(
 ## -parameters
 <dl>
 
-### -param <i>Driver</i> [in]
+### -param Driver [in]
 
 <dd>
 <p>A WDFDRIVER handle to the framework driver object for the GPIO controller driver.</p>
 </dd>
 
-### -param <i>DeviceInit</i> [in, out]
+### -param DeviceInit [in, out]
 
 <dd>
 <p>A pointer to a framework-allocated <a href="kmdf.wdfdevice_init">WDFDEVICE_INIT</a> structure. This method loads initialization information into this structure. On return, this structure is ready to be used as an input parameter to the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> method.</p>
 </dd>
 
-### -param <i>FdoAttributes</i> [out]
+### -param FdoAttributes [out]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure. This method loads initialization information into this structure. On return, this structure is ready to be used as an input parameter to the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> method.</p>

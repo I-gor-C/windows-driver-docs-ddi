@@ -58,25 +58,25 @@ typedef enum _UDECX_ENDPOINTS_CONFIGURE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UdecxEndpointsConfigureTypeDeviceInitialize"></a><a id="udecxendpointsconfiguretypedeviceinitialize"></a><a id="UDECXENDPOINTSCONFIGURETYPEDEVICEINITIALIZE"></a><b>UdecxEndpointsConfigureTypeDeviceInitialize</b>
+### -field UdecxEndpointsConfigureTypeDeviceInitialize
 
 <dd>
 <p>Reserved for internal use.</p>
 </dd>
 
-### -field <a id="UdecxEndpointsConfigureTypeDeviceConfigurationChange"></a><a id="udecxendpointsconfiguretypedeviceconfigurationchange"></a><a id="UDECXENDPOINTSCONFIGURETYPEDEVICECONFIGURATIONCHANGE"></a><b>UdecxEndpointsConfigureTypeDeviceConfigurationChange</b>
+### -field UdecxEndpointsConfigureTypeDeviceConfigurationChange
 
 <dd>
 <p>The requested change applies to the USB device configuration.</p>
 </dd>
 
-### -field <a id="UdecxEndpointsConfigureTypeInterfaceSettingChange"></a><a id="udecxendpointsconfiguretypeinterfacesettingchange"></a><a id="UDECXENDPOINTSCONFIGURETYPEINTERFACESETTINGCHANGE"></a><b>UdecxEndpointsConfigureTypeInterfaceSettingChange</b>
+### -field UdecxEndpointsConfigureTypeInterfaceSettingChange
 
 <dd>
 <p>The requested change applies to an alternate setting of a USB interface.</p>
 </dd>
 
-### -field <a id="UdecxEndpointsConfigureTypeEndpointsReleasedOnly"></a><a id="udecxendpointsconfiguretypeendpointsreleasedonly"></a><a id="UDECXENDPOINTSCONFIGURETYPEENDPOINTSRELEASEDONLY"></a><b>UdecxEndpointsConfigureTypeEndpointsReleasedOnly</b>
+### -field UdecxEndpointsConfigureTypeEndpointsReleasedOnly
 
 <dd>
 <p>The requested change applies to an endpoint of an interface setting.</p>
@@ -103,10 +103,10 @@ typedef enum _UDECX_ENDPOINTS_CONFIGURE_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_udecx_usb_device_endpoints_configure">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a>
+<a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-endpoints-configure.md">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a>
 </dt>
 <dt>
-<a href="buses.udecx_endpoints_configure_params">UDECX_ENDPOINTS_CONFIGURE_PARAMS</a>
+<a href="..\udecxusbdevice\ns-udecxusbdevice--udecx-endpoints-configure-params.md">UDECX_ENDPOINTS_CONFIGURE_PARAMS</a>
 </dt>
 </dl>
 <p> </p>

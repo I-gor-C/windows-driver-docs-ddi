@@ -54,7 +54,7 @@ typedef struct _AVC_IRB {
 ## -struct-fields
 <dl>
 
-### -field <b>Function</b>
+### -field Function
 
 <dd>
 <p>Value from the AVC_FUNCTION enumeration specifying a function number.</p>

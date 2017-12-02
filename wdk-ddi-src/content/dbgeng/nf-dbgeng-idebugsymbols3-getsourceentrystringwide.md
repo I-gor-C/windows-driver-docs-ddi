@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols3_getsourceentrystringwide.htm
 old-project: debugger
 ms.assetid: CDB72C6A-43E5-463B-97E5-44D22214C071
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSymbols3, GetSourceEntryStringWide, IDebugSymbols3::GetSourceEntryStringWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ HRESULT GetSourceEntryStringWide(
 ## -parameters
 <dl>
 
-### -param <i>Entry</i> [in]
+### -param Entry [in]
 
 <dd>
 <p>An entry as a <a href="..\dbgeng\ns-dbgeng--debug-symbol-source-entry.md">DEBUG_SYMBOL_SOURCE_ENTRY</a> structure. </p>
 </dd>
 
-### -param <i>Which</i> [in]
+### -param Which [in]
 
 <dd>
 <p>A value that determines which types to return.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p> A pointer to a Unicode character string buffer for the results.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>The size of the buffer.</p>
 </dd>
 
-### -param <i>StringSize</i> [out, optional]
+### -param StringSize [out, optional]
 
 <dd>
 <p>Pointer to the size of the string. </p>
@@ -119,4 +119,4 @@ HRESULT GetSourceEntryStringWide(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetSourceEntryStringWide method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetSourceEntryStringWide method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,19 +56,19 @@ typedef struct _D3DKMT_SEGMENTSIZEINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>DedicatedVideoMemorySize</b>
+### -field DedicatedVideoMemorySize
 
 <dd>
 <p>[out] The size, in bytes, of memory that is dedicated from video memory.</p>
 </dd>
 
-### -field <b>DedicatedSystemMemorySize</b>
+### -field DedicatedSystemMemorySize
 
 <dd>
 <p>[out] The size, in bytes, of memory that is dedicated from system memory.</p>
 </dd>
 
-### -field <b>SharedSystemMemorySize</b>
+### -field SharedSystemMemorySize
 
 <dd>
 <p>[out] The size, in bytes, of memory from system memory that can be shared by many users.</p>

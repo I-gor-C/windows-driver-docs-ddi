@@ -65,7 +65,7 @@ USHORT KeQueryMaximumGroupCount(void);
 
 <p>In Windows 7, the maximum number of groups in a multiprocessor system is four, but this value might change in future versions of Windows. The safest way to determine the maximum number of groups in Windows 7 or a later versions of the Windows operating system is to call <b>KeQueryMaximumGroupCount</b>. Kernel-mode drivers that call <b>KeQueryMaximumGroupCount</b> will not require code changes if the formula that is used to calculate the maximum number of groups changes in a future version of Windows.</p>
 
-<p>To obtain the number of active groups in a multiprocessor system, call the <a href="..\ntddk\nf-ntddk-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a> routine.</p>
+<p>To obtain the number of active groups in a multiprocessor system, call the <a href="..\wdm\nf-wdm-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a> routine.</p>
 
 ## -requirements
 <table>
@@ -130,7 +130,7 @@ USHORT KeQueryMaximumGroupCount(void);
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a>
+<a href="..\wdm\nf-wdm-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: sensors\gnss_distancetracking_param.htm
 old-project: sensors
 ms.assetid: B37B3C59-225C-40BC-BCA4-9ABF2500AFC0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_DISTANCETRACKING_PARAM, GNSS_DISTANCETRACKING_PARAM, *PGNSS_DISTANCETRACKING_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>MovementThreshold</b>
+### -field MovementThreshold
 
 <dd>
 <p>If the device moves beyond this threshold, a fix will be generated/recorded. A value of zero indicates that a fix should be reported whenever the device moves. This value is specified in meters.</p>

@@ -58,34 +58,34 @@ NTSTATUS PoRegisterPowerSettingCallback(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in, optional]
+### -param DeviceObject [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that is associated with the caller of this routine. This parameter is optional. It is used internally only for debugging purposes. If this parameter is not supplied, it must be set to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>SettingGuid</i> [in]
+### -param SettingGuid [in]
 
 <dd>
 <p>A pointer to the GUID that represents the power setting for this registration. When the specified power setting changes, the power manager calls the callback routine to notify the driver of the change and to supply the new value of the setting. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>Callback</i> [in]
+### -param Callback [in]
 
 <dd>
 <p>A pointer to a caller-implemented power-setting callback routine that the power manager calls when the specified power setting changes. For the functional prototype for the callback routine, see <a href="#power_setting_callback">Power-Setting Callback</a>.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>A pointer to the context for the callback routine. This parameter is optional. It is provided so that a driver or device context can be passed to the callback routine. If this parameter is not used, it must be set to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Handle</i> [out]
+### -param Handle [out]
 
 <dd>
-<p>A handle that the power manager uses to represent the callback routine. A driver must subsequently supply this handle in a call to <a href="..\ntifs\nf-ntifs-pounregisterpowersettingcallback.md">PoUnregisterPowerSettingCallback</a> to unregister the callback routine.</p>
+<p>A handle that the power manager uses to represent the callback routine. A driver must subsequently supply this handle in a call to <a href="..\wdm\nf-wdm-pounregisterpowersettingcallback.md">PoUnregisterPowerSettingCallback</a> to unregister the callback routine.</p>
 </dd>
 </dl>
 
@@ -103,7 +103,7 @@ NTSTATUS PoRegisterPowerSettingCallback(
 
 <p>A driver should call <b>PoRegisterPowerSettingCallback</b> for each power setting that the driver needs to monitor. Drivers should call this routine in their <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine during initialization. Typically, most drivers pass a pointer to a device extension in the <i>Context</i> parameter.</p>
 
-<p>To unregister a power-setting callback, call the <a href="..\ntifs\nf-ntifs-pounregisterpowersettingcallback.md">PoUnregisterPowerSettingCallback</a> routine.</p>
+<p>To unregister a power-setting callback, call the <a href="..\wdm\nf-wdm-pounregisterpowersettingcallback.md">PoUnregisterPowerSettingCallback</a> routine.</p>
 
 <p>Typically, Kernel-Mode Driver Framework (KMDF) drivers should call <b>PoRegisterPowerSettingCallback</b> from their <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-self-managed-io-init.md">EvtDeviceSelfManagedIoInit</a> callback function, and should call <b>PoUnregisterPowerSettingCallback</b> from their <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-self-managed-io-cleanup.md">EvtDeviceSelfManagedIoCleanup</a> callback function. These drivers should <u>not</u> call <b>PoRegisterPowerSettingCallback</b> from their <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> callback function; otherwise, the power-setting callback routine might be called before the driver stack is completely built.</p>
 
@@ -129,7 +129,7 @@ NTSTATUS PoRegisterPowerSettingCallback(
 
 <p>The power manager calls a power-setting callback at IRQL = PASSIVE_LEVEL.</p>
 
-<p>To define a power-setting callback routine, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
+<p>To define a power-setting callback routine, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define a power-setting callback routine that is named <code>MyPowerSettingCallback</code>, use the POWER_SETTING_CALLBACK type as shown in this code example:</p>
 
@@ -212,7 +212,7 @@ NTSTATUS PoRegisterPowerSettingCallback(
 <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-pounregisterpowersettingcallback.md">PoUnregisterPowerSettingCallback</a>
+<a href="..\wdm\nf-wdm-pounregisterpowersettingcallback.md">PoUnregisterPowerSettingCallback</a>
 </dt>
 </dl>
 <p> </p>

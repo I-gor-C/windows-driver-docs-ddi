@@ -56,13 +56,13 @@ enum _DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DIDDT1_Progressive"></a><a id="diddt1_progressive"></a><a id="DIDDT1_PROGRESSIVE"></a><b>DIDDT1_Progressive</b>
+### -field DIDDT1_Progressive
 
 <dd>
 <p>Indicates a progressive scanning mode.</p>
 </dd>
 
-### -field <a id="DIDDT1_Interlaced"></a><a id="diddt1_interlaced"></a><a id="DIDDT1_INTERLACED"></a><b>DIDDT1_Interlaced</b>
+### -field DIDDT1_Interlaced
 
 <dd>
 <p>Indicates an interlaced scanning mode.</p>

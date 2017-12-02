@@ -57,7 +57,7 @@ typedef struct tagKS_MPEAUDIOINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Specifies the time base for audio timestamps. Reject the connection if undefined bits are not 0. The following flag is defined.</p>
@@ -78,19 +78,19 @@ typedef struct tagKS_MPEAUDIOINFO {
 <p> </p>
 </dd>
 
-### -field <b>dwReserved1</b>
+### -field dwReserved1
 
 <dd>
 <p>Must be 0; otherwise, reject the connection.</p>
 </dd>
 
-### -field <b>dwReserved2</b>
+### -field dwReserved2
 
 <dd>
 <p>Must be 0; otherwise, reject the connection.</p>
 </dd>
 
-### -field <b>dwReserved3</b>
+### -field dwReserved3
 
 <dd>
 <p>Must be 0; otherwise, reject the connection.</p>

@@ -54,7 +54,7 @@ HRESULT SendXpsUnknown(
 ## -parameters
 <dl>
 
-### -param <i>pUnknown</i> [in]
+### -param pUnknown [in]
 
 <dd>
 <p>A pointer to an unrecognized document part interface.</p>

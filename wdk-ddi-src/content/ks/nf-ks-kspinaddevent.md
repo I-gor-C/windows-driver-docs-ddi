@@ -55,13 +55,13 @@ void _inline KsPinAddEvent(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure to which to add a specified event.</p>
 </dd>
 
-### -param <i>EventEntry</i> [in]
+### -param EventEntry [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a> structure describing the event to add to <i>Pin</i>.</p>

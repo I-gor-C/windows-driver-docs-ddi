@@ -54,7 +54,7 @@ void __inline KsGateRemoveOffInputFromAnd(
 ## -parameters
 <dl>
 
-### -param <i>AndGate</i> [in]
+### -param AndGate [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksgate.md">KSGATE</a> structure representing the AND gate from which to remove an OFF input.</p>
@@ -65,7 +65,7 @@ void __inline KsGateRemoveOffInputFromAnd(
 <p>None</p>
 
 ## -remarks
-<p>Removing the last OFF input from the gate results in the gate opening and the transition being propagated to any gates connected to <i>AndGate</i>. For more information, see <a href="NULL">Flow Control Gates in AVStream</a>.</p>
+<p>Removing the last OFF input from the gate results in the gate opening and the transition being propagated to any gates connected to <i>AndGate</i>. For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.</p>
 
 <p><b>KsGateRemoveOffInputFromAnd</b> should only be used on gates that were specifically created as AND gates; AVStream does not verify that the given gate is an AND gate.</p>
 

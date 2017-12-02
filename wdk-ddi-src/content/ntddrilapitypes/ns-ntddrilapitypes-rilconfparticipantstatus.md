@@ -7,7 +7,7 @@ old-location: netvista\rilconfparticipantstatus.htm
 old-project: netvista
 ms.assetid: 7eb0e06b-85f0-4b61-9ed0-2f35156fbb8c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCONFPARTICIPANTSTATUS, RILCONFPARTICIPANTSTATUS, *LPRILCONFPARTICIPANTSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,35 +61,35 @@ typedef struct _RILCONFPARTICIPANTSTATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwID</b>
+### -field dwID
 
 <dd></dd>
 
-### -field <b>bCallTransfer</b>
+### -field bCallTransfer
 
 <dd></dd>
 
-### -field <b>raAddress</b>
+### -field raAddress
 
 <dd></dd>
 
-### -field <b>dwParticipantOp</b>
+### -field dwParticipantOp
 
 <dd></dd>
 
-### -field <b>dwSIPStatus</b>
+### -field dwSIPStatus
 
 <dd></dd>
 </dl>

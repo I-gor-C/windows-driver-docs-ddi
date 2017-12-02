@@ -61,43 +61,43 @@ NTSTATUS IoCsqInitialize(
 ## -parameters
 <dl>
 
-### -param <i>Csq</i> [out]
+### -param Csq [out]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550560">IO_CSQ</a> structure to be initialized by <b>IoCsqInitialize</b>.</p>
 </dd>
 
-### -param <i>CsqInsertIrp</i> [in]
+### -param CsqInsertIrp [in]
 
 <dd>
 <p>Pointer to the driver-defined <a href="..\wdm\nc-wdm-io-csq-insert-irp.md">CsqInsertIrp</a> function for the driver's cancel-safe IRP queue.</p>
 </dd>
 
-### -param <i>CsqRemoveIrp</i> [in]
+### -param CsqRemoveIrp [in]
 
 <dd>
 <p>Pointer to the driver-defined <a href="..\wdm\nc-wdm-io-csq-remove-irp.md">CsqRemoveIrp</a> function for the driver's cancel-safe IRP queue.</p>
 </dd>
 
-### -param <i>CsqPeekNextIrp</i> [in]
+### -param CsqPeekNextIrp [in]
 
 <dd>
 <p>Pointer to the driver-defined <a href="..\wdm\nc-wdm-io-csq-peek-next-irp.md">CsqPeekNextIrp</a> function for the driver's cancel-safe IRP queue.</p>
 </dd>
 
-### -param <i>CsqAcquireLock</i> [in]
+### -param CsqAcquireLock [in]
 
 <dd>
 <p>Pointer to the driver-defined <a href="..\wdm\nc-wdm-io-csq-acquire-lock.md">CsqAcquireLock</a> function for the driver's cancel-safe IRP queue.</p>
 </dd>
 
-### -param <i>CsqReleaseLock</i> [in]
+### -param CsqReleaseLock [in]
 
 <dd>
 <p>Pointer to the driver-defined <a href="..\wdm\nc-wdm-io-csq-release-lock.md">CsqReleaseLock</a> function for the driver's cancel-safe IRP queue.</p>
 </dd>
 
-### -param <i>CsqCompleteCanceledIrp</i> [in]
+### -param CsqCompleteCanceledIrp [in]
 
 <dd>
 <p>Pointer to the driver-defined <a href="..\wdm\nc-wdm-io-csq-complete-canceled-irp.md">CsqCompleteCanceledIrp</a> function for the driver's cancel-safe IRP queue. </p>

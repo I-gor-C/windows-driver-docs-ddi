@@ -56,13 +56,13 @@ typedef struct _COMPOSITE_DEVICE_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b> CapabilityFunctionSuspend</b>
+### -field  CapabilityFunctionSuspend
 
 <dd>
 <p>If set to 1, indicates that the composite driver supports the USB function suspend feature. </p>
 </dd>
 
-### -field <b> Reserved</b>
+### -field  Reserved
 
 <dd>
 <p>Reserved.</p>

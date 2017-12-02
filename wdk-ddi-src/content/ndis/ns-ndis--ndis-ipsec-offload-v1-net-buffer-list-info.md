@@ -7,7 +7,7 @@ old-location: netvista\ndis_ipsec_offload_v1_net_buffer_list_info.htm
 old-project: netvista
 ms.assetid: 990b3df6-5ef7-4201-a09d-d94822d0a8bb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, *PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,13 +66,13 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Transmit</b>
+### -field Transmit
 
 <dd>
 <p>A structure that contains the following members:</p>
 <dl>
 
-### -field <b>OffloadHandle</b>
+### -field OffloadHandle
 
 <dd>
 <p>A handle to the outbound security association (SA) for a packet that has just one IPsec payload,
@@ -82,13 +82,13 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
 </dl>
 </dd>
 
-### -field <b>Receive</b>
+### -field Receive
 
 <dd>
 <p>A structure that contains the following members:</p>
 <dl>
 
-### -field <b>SaDeleteReq</b>
+### -field SaDeleteReq
 
 <dd>
 <p>A USHORT value that, when set, indicates that the TCP/IP transport should issue the 
@@ -99,7 +99,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
        OID_TCP_TASK_IPSEC_DELETE_SA request.</p>
 </dd>
 
-### -field <b>CryptoDone</b>
+### -field CryptoDone
 
 <dd>
 <p>A USHORT value that, when set, indicates that a NIC performed IPsec checking on at least one
@@ -107,7 +107,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
        perform IPsec checking on the packet.</p>
 </dd>
 
-### -field <b>NextCryptoDone</b>
+### -field NextCryptoDone
 
 <dd>
 <p>A USHORT value that, when set, indicates that a NIC performed IPsec checking on both the tunnel
@@ -117,13 +117,13 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
        <b>NextCryptoDone</b> is set to zero.</p>
 </dd>
 
-### -field <b>Pad</b>
+### -field Pad
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>CryptoStatus</b>
+### -field CryptoStatus
 
 <dd>
 <p>The result of IPsec checking that a NIC performed on a receive packet. This result can be
@@ -137,7 +137,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
 <tr>
 <td width="40%"><a id="___________CRYPTO_SUCCESS"></a><a id="___________crypto_success"></a><dl>
 
-### -field <b>
+### -field 
           CRYPTO_SUCCESS</b>
 
 </dl>
@@ -151,7 +151,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
 <tr>
 <td width="40%"><a id="___________CRYPTO_GENERIC_ERROR"></a><a id="___________crypto_generic_error"></a><dl>
 
-### -field <b>
+### -field 
           CRYPTO_GENERIC_ERROR</b>
 
 </dl>
@@ -163,7 +163,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
 <tr>
 <td width="40%"><a id="___________CRYPTO_TRANSPORT_AH_AUTH_FAILED"></a><a id="___________crypto_transport_ah_auth_failed"></a><dl>
 
-### -field <b>
+### -field 
           CRYPTO_TRANSPORT_AH_AUTH_FAILED</b>
 
 </dl>
@@ -175,7 +175,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
 <tr>
 <td width="40%"><a id="___________CRYPTO_TRANSPORT_ESP_AUTH_FAILED"></a><a id="___________crypto_transport_esp_auth_failed"></a><dl>
 
-### -field <b>
+### -field 
           CRYPTO_TRANSPORT_ESP_AUTH_FAILED</b>
 
 </dl>
@@ -187,7 +187,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
 <tr>
 <td width="40%"><a id="___________CRYPTO_TUNNEL_AH_AUTH_FAILED"></a><a id="___________crypto_tunnel_ah_auth_failed"></a><dl>
 
-### -field <b>
+### -field 
           CRYPTO_TUNNEL_AH_AUTH_FAILED</b>
 
 </dl>
@@ -199,7 +199,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
 <tr>
 <td width="40%"><a id="___________CRYPTO_TUNNEL_ESP_AUTH_FAILED"></a><a id="___________crypto_tunnel_esp_auth_failed"></a><dl>
 
-### -field <b>
+### -field 
           CRYPTO_TUNNEL_ESP_AUTH_FAILED</b>
 
 </dl>
@@ -211,7 +211,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
 <tr>
 <td width="40%"><a id="___________CRYPTO_INVALID_PACKET_SYNTAX"></a><a id="___________crypto_invalid_packet_syntax"></a><dl>
 
-### -field <b>
+### -field 
           CRYPTO_INVALID_PACKET_SYNTAX</b>
 
 </dl>
@@ -223,7 +223,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
 <tr>
 <td width="40%"><a id="___________CRYPTO_INVALID_PROTOCOL"></a><a id="___________crypto_invalid_protocol"></a><dl>
 
-### -field <b>
+### -field 
           CRYPTO_INVALID_PROTOCOL</b>
 
 </dl>
@@ -336,4 +336,4 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

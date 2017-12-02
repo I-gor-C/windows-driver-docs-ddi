@@ -58,25 +58,25 @@ HRESULT KsProcessMediaSamples(
 ## -parameters
 <dl>
 
-### -param <i>KsDataTypeHandler</i> [in]
+### -param KsDataTypeHandler [in]
 
 <dd>
 <p>Pointer to the <a href="..\ksproxy\nn-ksproxy-iksdatatypehandler.md">IKsDataTypeHandler</a> interface for the data type handler that handles the type of media listed at <i>SampleList</i>. This data type handler has specific information about the media type being streamed.</p>
 </dd>
 
-### -param <i>SampleList</i> [in]
+### -param SampleList [in]
 
 <dd>
 <p>Pointer to a buffer that contains an array of pointers to the <b>IMediaSample</b> interfaces for the list of media samples to process. </p>
 </dd>
 
-### -param <i>SampleCount</i> [in, out]
+### -param SampleCount [in, out]
 
 <dd>
 <p>Pointer to a variable that initially contains the number of samples in the list at <i>SampleList</i> and, on return, receives the actual number of samples processed.</p>
 </dd>
 
-### -param <i>IoOperation</i> [in]
+### -param IoOperation [in]
 
 <dd>
 <p>Value that specifies the type of I/O operation. This value can be one of the following values from the KSIOOPERATION enumerated type:</p>
@@ -105,7 +105,7 @@ HRESULT KsProcessMediaSamples(
 <p> </p>
 </dd>
 
-### -param <i>StreamSegment</i> [out]
+### -param StreamSegment [out]
 
 <dd>
 <p>Pointer to a buffer that receives a pointer to a <a href="..\ksproxy\ns-ksproxy--ksstream-segment.md">KSSTREAM_SEGMENT</a> structure that contains header information for a stream segment that is sent to the kernel-mode pin. </p>

@@ -56,22 +56,22 @@ NTSTATUS GPIO_CLX_RegisterClient(
 ## -parameters
 <dl>
 
-### -param <i>Driver</i> [in]
+### -param Driver [in]
 
 <dd>
 <p>A WDFDRIVER handle to the framework driver object for the GPIO controller driver.</p>
 </dd>
 
-### -param <i>RegistrationPacket</i> [in, out]
+### -param RegistrationPacket [in, out]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/hh439479">GPIO_CLIENT_REGISTRATION_PACKET</a> structure that contains the caller's registration information. This structure contains pointers to the event callback functions that the GPIO controller driver implements. Additionally, this structure specifies the size of the device context that the GPIO controller driver requires for its internal configuration data and state information.</p>
 </dd>
 
-### -param <i>RegistryPath</i> [in]
+### -param RegistryPath [in]
 
 <dd>
-<p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the path name of the registry key for the  GPIO controller driver. This parameter should be the registry path name that was passed to the driver's <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine. For more information about driver registry keys, see <a href="NULL">Registry Trees for Devices and Drivers</a>.</p>
+<p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the path name of the registry key for the  GPIO controller driver. This parameter should be the registry path name that was passed to the driver's <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine. For more information about driver registry keys, see <a href="devinst.overview_of_registry_trees_and_keys">Registry Trees for Devices and Drivers</a>.</p>
 </dd>
 </dl>
 

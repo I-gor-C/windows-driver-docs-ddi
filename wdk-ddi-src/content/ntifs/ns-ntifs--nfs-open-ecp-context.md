@@ -7,7 +7,7 @@ old-location: ifsk\nfs_open_ecp_context.htm
 old-project: ifsk
 ms.assetid: f3600dca-d246-41b5-99b4-4054e677b03b
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: NFS_OPEN_ECP_CONTEXT, NFS_OPEN_ECP_CONTEXT, *PNFS_OPEN_ECP_CONTEXT, **PPNFS_OPEN_ECP_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ typedef struct _NFS_OPEN_ECP_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>ExportAlias</b>
+### -field ExportAlias
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that supplies the export alias (share name) for the NFS server that contains the files to be opened. This member is a hint and can be a name, <b>NULL</b>, or a zero-length string. </p>
 </dd>
 
-### -field <b>ClientSocketAddress</b>
+### -field ClientSocketAddress
 
 <dd>
 <p>A pointer to a <a href="..\ntifs\ns-ntifs-sockaddr-storage.md">SOCKADDR_STORAGE</a> structure that specifies the transport address of the client computer. This client originates the open file request. </p>
@@ -106,4 +106,4 @@ typedef struct _NFS_OPEN_ECP_CONTEXT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20NFS_OPEN_ECP_CONTEXT structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20NFS_OPEN_ECP_CONTEXT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

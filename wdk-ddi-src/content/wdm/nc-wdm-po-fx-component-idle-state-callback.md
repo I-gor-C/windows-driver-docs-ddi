@@ -60,19 +60,19 @@ VOID ComponentIdleStateCallback(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to the device context. The device driver uses this context to store information about the current power state of the device. The device driver specified this pointer in the <b>DeviceContext</b> member of the <a href="kernel.po_fx_device">PO_FX_DEVICE</a> structure that the driver used to register the device with the power management framework (PoFx). This context is opaque to PoFx.</p>
 </dd>
 
-### -param <i>Component</i> [in]
+### -param Component [in]
 
 <dd>
 <p>Specifies the component number. This parameter is an index into the <b>Components</b> array in the <b>PO_FX_DEVICE</b> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N-1.</p>
 </dd>
 
-### -param <i>State</i> [in]
+### -param State [in]
 
 <dd>
 <p>Specifies the new Fx power state that the component will change to. If this parameter is zero, the new state is F0; if this parameter is one, the new state is F1; and so on.</p>
@@ -95,7 +95,7 @@ VOID ComponentIdleStateCallback(
 
 <p>PoFx never calls the <i>ComponentIdleStateCallback</i> routine to switch directly from one low-power Fx state to another low-power Fx state. For example, PoFx might need to switch a component from one low-power Fx state to another in response to a call to the <a href="..\wdm\nf-wdm-pofxsetcomponentlatency.md">PoFxSetComponentLatency</a>, <a href="..\wdm\nf-wdm-pofxsetcomponentresidency.md">PoFxSetComponentResidency</a>, or <a href="..\wdm\nf-wdm-pofxsetcomponentwake.md">PoFxSetComponentWake</a> routine. In this case, PoFx first calls the <i>ComponentIdleStateCallback</i> routine to switch from the old Fx state to F0, and then calls the <i>ComponentIdleStateCallback</i> routine a second time to switch from F0 to the new Fx state.</p>
 
-<p>To define a <i>ComponentIdleStateCallback</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define a <i>ComponentIdleStateCallback</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define a <i>ComponentIdleStateCallback</i> callback routine that is named <code>MyComponentIdleStateCallback</code>, use the PO_FX_COMPONENT_IDLE_STATE_CALLBACK type as shown in this code example:</p>
 

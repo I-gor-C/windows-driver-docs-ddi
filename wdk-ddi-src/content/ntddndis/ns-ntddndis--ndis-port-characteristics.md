@@ -7,7 +7,7 @@ old-location: netvista\ndis_port_characteristics.htm
 old-project: netvista
 ms.assetid: fd602dd6-c216-413a-a4da-292739774937
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PORT_CHARACTERISTICS, NDIS_PORT_CHARACTERISTICS, *PNDIS_PORT_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>NDIS_PORT_CHARACTERISTICS</b> structure specifies the characteristics of an NDIS port. For more information about NDIS ports, see <a href="NULL">NDIS Ports</a>.</p>
+<p>The <b>NDIS_PORT_CHARACTERISTICS</b> structure specifies the characteristics of an NDIS port. For more information about NDIS ports, see <a href="netvista.ndis_ports">NDIS Ports</a>.</p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -77,7 +77,7 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
      <b>Size</b> member to NDIS_SIZEOF_PORT_CHARACTERISTICS_REVISION_1.</p>
 </dd>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>The number of the NDIS port that is associated with this <b>NDIS_PORT_CHARACTERISTICS</b> structure. The 
@@ -85,7 +85,7 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
      through 0xffffff, where zero is reserved for the default port.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitwise OR combination of the port characteristics flags, or zero if no flags are set. There is
@@ -99,39 +99,39 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
      with the default authentication state settings.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
-<p>The type of NDIS port. For more information, see <a href="NULL">Types of NDIS Ports</a>. This type can be one of the following values:
+<p>The type of NDIS port. For more information, see <a href="netvista.types_of_ndis_ports">Types of NDIS Ports</a>. This type can be one of the following values:
      </p>
 <p></p>
 <dl>
 
-### -field <a id="NdisPortTypeUndefined"></a><a id="ndisporttypeundefined"></a><a id="NDISPORTTYPEUNDEFINED"></a><b>NdisPortTypeUndefined</b>
+### -field NdisPortTypeUndefined
 
 <dd>
 <p>The default port type.</p>
 </dd>
 
-### -field <a id="NdisPortTypeBridge"></a><a id="ndisporttypebridge"></a><a id="NDISPORTTYPEBRIDGE"></a><b>NdisPortTypeBridge</b>
+### -field NdisPortTypeBridge
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="NdisPortTypeRasConnection"></a><a id="ndisporttyperasconnection"></a><a id="NDISPORTTYPERASCONNECTION"></a><b>NdisPortTypeRasConnection</b>
+### -field NdisPortTypeRasConnection
 
 <dd>
 <p>A Remote Access Service (RAS) connection.</p>
 </dd>
 
-### -field <a id="NdisPortType8021xSupplicant"></a><a id="ndisporttype8021xsupplicant"></a><a id="NDISPORTTYPE8021XSUPPLICANT"></a><b>NdisPortType8021xSupplicant</b>
+### -field NdisPortType8021xSupplicant
 
 <dd>
 <p>A remote wireless station that is associated with an access point on this host computer.</p>
 </dd>
 
-### -field <a id="NdisPortTypeNdisImPlatform"></a><a id="ndisporttypendisimplatform"></a><a id="NDISPORTTYPENDISIMPLATFORM"></a><b>NdisPortTypeNdisImPlatform</b>
+### -field NdisPortTypeNdisImPlatform
 
 <dd>
 <p>Reserved for system use.</p>
@@ -141,7 +141,7 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
 </dl>
 </dd>
 
-### -field <b>MediaConnectState</b>
+### -field MediaConnectState
 
 <dd>
 <p>The media connection state of the port. This state is the same information that the 
@@ -149,21 +149,21 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
      OID_GEN_MEDIA_CONNECT_STATUS_EX</a> OID returns.</p>
 </dd>
 
-### -field <b>XmitLinkSpeed</b>
+### -field XmitLinkSpeed
 
 <dd>
 <p>The transmit link speed of the port in bits per second. A value of -1 in this member indicates
      that the transmit link speed is unknown.</p>
 </dd>
 
-### -field <b>RcvLinkSpeed</b>
+### -field RcvLinkSpeed
 
 <dd>
 <p>The receive link speed of the port, in bits per second. A value of -1 in this member indicates
      that the receive link speed is unknown.</p>
 </dd>
 
-### -field <b>Direction</b>
+### -field Direction
 
 <dd>
 <p>A 
@@ -171,7 +171,7 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
      interface direction type.</p>
 </dd>
 
-### -field <b>SendControlState</b>
+### -field SendControlState
 
 <dd>
 <p>The control state of the port for send operations. This member must contain one of the following
@@ -180,20 +180,20 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
 <p></p>
 <dl>
 
-### -field <a id="NdisPortControlStateUnknown"></a><a id="ndisportcontrolstateunknown"></a><a id="NDISPORTCONTROLSTATEUNKNOWN"></a><b>NdisPortControlStateUnknown</b>
+### -field NdisPortControlStateUnknown
 
 <dd>
 <p>The port's control state for send operations is unknown.</p>
 </dd>
 
-### -field <a id="NdisPortControlStateControlled"></a><a id="ndisportcontrolstatecontrolled"></a><a id="NDISPORTCONTROLSTATECONTROLLED"></a><b>NdisPortControlStateControlled</b>
+### -field NdisPortControlStateControlled
 
 <dd>
 <p>The port is in a controlled state for send operations. That is, the port requires
        authorization.</p>
 </dd>
 
-### -field <a id="NdisPortControlStateUncontrolled"></a><a id="ndisportcontrolstateuncontrolled"></a><a id="NDISPORTCONTROLSTATEUNCONTROLLED"></a><b>NdisPortControlStateUncontrolled</b>
+### -field NdisPortControlStateUncontrolled
 
 <dd>
 <p>The port is in an uncontrolled state for send operations. That is, the port does not require
@@ -202,7 +202,7 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
 </dl>
 </dd>
 
-### -field <b>RcvControlState</b>
+### -field RcvControlState
 
 <dd>
 <p>The control state of the port for receive operations. This member must contain one of the
@@ -211,13 +211,13 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
 <p></p>
 <dl>
 
-### -field <a id="NdisPortControlStateUnknown"></a><a id="ndisportcontrolstateunknown"></a><a id="NDISPORTCONTROLSTATEUNKNOWN"></a><b>NdisPortControlStateUnknown</b>
+### -field NdisPortControlStateUnknown
 
 <dd>
 <p>The port's control state for receive operations is unknown.</p>
 </dd>
 
-### -field <a id="NdisPortControlStateControlled"></a><a id="ndisportcontrolstatecontrolled"></a><a id="NDISPORTCONTROLSTATECONTROLLED"></a><b>NdisPortControlStateControlled</b>
+### -field NdisPortControlStateControlled
 
 <dd>
 <p>The port is in a controlled state for receive operations (that is, the port requires
@@ -225,7 +225,7 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
        <b>SendAuthorizationState</b> member determines the authentication state.</p>
 </dd>
 
-### -field <a id="NdisPortControlStateUncontrolled"></a><a id="ndisportcontrolstateuncontrolled"></a><a id="NDISPORTCONTROLSTATEUNCONTROLLED"></a><b>NdisPortControlStateUncontrolled</b>
+### -field NdisPortControlStateUncontrolled
 
 <dd>
 <p>The port is in an uncontrolled state for receive operations. Therefore, authentication does not
@@ -234,7 +234,7 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
 </dl>
 </dd>
 
-### -field <b>SendAuthorizationState</b>
+### -field SendAuthorizationState
 
 <dd>
 <p>The authorization state of the port for send operations. Ignore this member if the 
@@ -245,25 +245,25 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
 <p></p>
 <dl>
 
-### -field <a id="NdisPortAuthorizationUnknown"></a><a id="ndisportauthorizationunknown"></a><a id="NDISPORTAUTHORIZATIONUNKNOWN"></a><b>NdisPortAuthorizationUnknown</b>
+### -field NdisPortAuthorizationUnknown
 
 <dd>
 <p>The port's authorization state for send operations is unknown.</p>
 </dd>
 
-### -field <a id="NdisPortAuthorized"></a><a id="ndisportauthorized"></a><a id="NDISPORTAUTHORIZED"></a><b>NdisPortAuthorized</b>
+### -field NdisPortAuthorized
 
 <dd>
 <p>The port is authorized for send operations.</p>
 </dd>
 
-### -field <a id="NdisPortUnauthorized"></a><a id="ndisportunauthorized"></a><a id="NDISPORTUNAUTHORIZED"></a><b>NdisPortUnauthorized</b>
+### -field NdisPortUnauthorized
 
 <dd>
 <p>The port is not authorized for send operations.</p>
 </dd>
 
-### -field <a id="NdisPortReauthorizing"></a><a id="ndisportreauthorizing"></a><a id="NDISPORTREAUTHORIZING"></a><b>NdisPortReauthorizing</b>
+### -field NdisPortReauthorizing
 
 <dd>
 <p>The port is re-authorizing for send operations.</p>
@@ -271,7 +271,7 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
 </dl>
 </dd>
 
-### -field <b>RcvAuthorizationState</b>
+### -field RcvAuthorizationState
 
 <dd>
 <p>The authorization state of the port for receive operations. Ignore this member if the 
@@ -282,25 +282,25 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
 <p></p>
 <dl>
 
-### -field <a id="NdisPortAuthorizationUnknown"></a><a id="ndisportauthorizationunknown"></a><a id="NDISPORTAUTHORIZATIONUNKNOWN"></a><b>NdisPortAuthorizationUnknown</b>
+### -field NdisPortAuthorizationUnknown
 
 <dd>
 <p>The port's authorization state for receive operations is unknown.</p>
 </dd>
 
-### -field <a id="NdisPortAuthorized"></a><a id="ndisportauthorized"></a><a id="NDISPORTAUTHORIZED"></a><b>NdisPortAuthorized</b>
+### -field NdisPortAuthorized
 
 <dd>
 <p>The port is authorized for receive operations.</p>
 </dd>
 
-### -field <a id="NdisPortUnauthorized"></a><a id="ndisportunauthorized"></a><a id="NDISPORTUNAUTHORIZED"></a><b>NdisPortUnauthorized</b>
+### -field NdisPortUnauthorized
 
 <dd>
 <p>The port is not authorized for receive operations.</p>
 </dd>
 
-### -field <a id="NdisPortReauthorizing"></a><a id="ndisportreauthorizing"></a><a id="NDISPORTREAUTHORIZING"></a><b>NdisPortReauthorizing</b>
+### -field NdisPortReauthorizing
 
 <dd>
 <p>The port is re-authorizing for receive operations.</p>
@@ -373,12 +373,12 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569605">OID_GEN_MEDIA_CONNECT_STATUS_EX</a>
 </dt>
 <dt>
-<a href="NULL">NDIS Ports</a>
+<a href="netvista.ndis_ports">NDIS Ports</a>
 </dt>
 <dt>
-<a href="NULL">Types of NDIS Ports</a>
+<a href="netvista.types_of_ndis_ports">Types of NDIS Ports</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PORT_CHARACTERISTICS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PORT_CHARACTERISTICS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

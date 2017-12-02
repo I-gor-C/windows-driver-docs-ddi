@@ -7,7 +7,7 @@ old-location: netvista\rildisplayinfotype_2.htm
 old-project: netvista
 ms.assetid: 0a1afab7-66e3-4880-9124-abf411682eaa
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

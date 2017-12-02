@@ -56,16 +56,16 @@ FORCEINLINE void UdecxUsbDeviceInitSetSpeed(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbDeviceInit</i> [in, out]
+### -param UdecxUsbDeviceInit [in, out]
 
 <dd>
-<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>. </p>
+<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>. </p>
 </dd>
 
-### -param <i>UsbDeviceSpeed</i> [in]
+### -param UsbDeviceSpeed [in]
 
 <dd>
-<p>A <a href="buses.udecx_usb_device_speed">UDECX_USB_DEVICE_SPEED</a>-type value that indicates the USB speed to set.</p>
+<p>A <a href="..\udecxusbdevice\ne-udecxusbdevice--udecx-usb-device-speed.md">UDECX_USB_DEVICE_SPEED</a>-type value that indicates the USB speed to set.</p>
 </dd>
 </dl>
 

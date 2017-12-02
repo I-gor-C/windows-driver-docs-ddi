@@ -59,19 +59,19 @@ void APIENTRY pfnStateCsConstBufCb(
 ## -parameters
 <dl>
 
-### -param <i>hRuntimeDevice</i> [in]
+### -param hRuntimeDevice [in]
 
 <dd>
 <p> A handle to a context for the core Direct3D runtime. This handle is supplied to the driver in a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function. </p>
 </dd>
 
-### -param <i>Base</i> [in]
+### -param Base [in]
 
 <dd>
 <p> The beginning constant buffer for which the runtime should refresh state. </p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p> The total number of constant buffers. The number can be -1, which specifies that the Direct3D runtime uses its high watermarks to substitute an optimal value (which is typically less than the maximum valid value for <i>Count</i>). However, no non-NULL binding exists in a slot larger than the optimal <i>Count</i> value.</p>

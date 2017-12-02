@@ -64,13 +64,13 @@ struct _URB_CONTROL_TRANSFER_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>Hdr</b>
+### -field Hdr
 
 <dd>
 <p>Pointer to a <a href="buses._urb_header">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_CONTROL_TRANSFER_EX, and <b>Hdr.Length</b> must be <code>sizeof(_URB_CONTROL_TRANSFER_EX)</code>.</p>
 </dd>
 
-### -field <b>PipeHandle</b>
+### -field PipeHandle
 
 <dd>
 <p>Handle for the pipe.</p>
@@ -78,7 +78,7 @@ struct _URB_CONTROL_TRANSFER_EX {
 <p>If target is a non-default control endpoint, <b>PipeHandle</b> specifies an opaque handle for the control pipe. The host controller driver returns this handle when the client driver selects the device configuration with a URB of type URB_FUNCTION_SELECT_CONFIGURATION or when the client driver changes the settings for an interface with a URB of type URB_FUNCTION_SELECT_INTERFACE.   </p>
 </dd>
 
-### -field <b>TransferFlags</b>
+### -field TransferFlags
 
 <dd>
 <p>
@@ -92,7 +92,7 @@ struct _URB_CONTROL_TRANSFER_EX {
 <tr>
 <td width="40%"><a id="USBD_TRANSFER_DIRECTION_IN"></a><a id="usbd_transfer_direction_in"></a><dl>
 
-### -field <b>USBD_TRANSFER_DIRECTION_IN</b>
+### -field USBD_TRANSFER_DIRECTION_IN
 
 </dl>
 </td>
@@ -103,7 +103,7 @@ struct _URB_CONTROL_TRANSFER_EX {
 <tr>
 <td width="40%"><a id="USBD_TRANSFER_DIRECTION_OUT"></a><a id="usbd_transfer_direction_out"></a><dl>
 
-### -field <b>USBD_TRANSFER_DIRECTION_OUT</b>
+### -field USBD_TRANSFER_DIRECTION_OUT
 
 </dl>
 </td>
@@ -114,7 +114,7 @@ struct _URB_CONTROL_TRANSFER_EX {
 <tr>
 <td width="40%"><a id="USBD_SHORT_TRANSFER_OK"></a><a id="usbd_short_transfer_ok"></a><dl>
 
-### -field <b>USBD_SHORT_TRANSFER_OK</b>
+### -field USBD_SHORT_TRANSFER_OK
 
 </dl>
 </td>
@@ -133,7 +133,7 @@ struct _URB_CONTROL_TRANSFER_EX {
 <tr>
 <td width="40%"><a id="USBD_DEFAULT_PIPE_TRANSFER"></a><a id="usbd_default_pipe_transfer"></a><dl>
 
-### -field <b>USBD_DEFAULT_PIPE_TRANSFER</b>
+### -field USBD_DEFAULT_PIPE_TRANSFER
 
 </dl>
 </td>
@@ -145,43 +145,43 @@ struct _URB_CONTROL_TRANSFER_EX {
 <p> </p>
 </dd>
 
-### -field <b>TransferBufferLength</b>
+### -field TransferBufferLength
 
 <dd>
 <p>Specifies the length, in bytes, of the buffer specified in <b>TransferBuffer</b> or described in <b>TransferBufferMDL</b>. The host controller driver returns the number of bytes sent to or read from the pipe in this member.</p>
 </dd>
 
-### -field <b>TransferBuffer</b>
+### -field TransferBuffer
 
 <dd>
 <p>Pointer to a resident buffer for the transfer or is <b>NULL</b> if an MDL is supplied in <b>TransferBufferMDL</b>. The contents of this buffer depend on the value of <b>TransferFlags</b>. If USBD_TRANSFER_DIRECTION_IN is specified this buffer will contain data read from the device on return from the host controller driver. Otherwise, this buffer contains driver-supplied data for transfer to the device.</p>
 </dd>
 
-### -field <b>TransferBufferMDL</b>
+### -field TransferBufferMDL
 
 <dd>
 <p>Pointer to an MDL that describes a resident buffer or is <b>NULL</b> if a buffer is supplied in <b>TransferBuffer</b>. The contents of the buffer depend on the value of <b>TransferFlags</b>. If USBD_TRANSFER_DIRECTION_IN is specified, the described buffer will contain data read from the device on return from the host controller driver. Otherwise, the buffer contains driver-supplied data for transfer to the device. This MDL must be allocated from nonpaged pool.</p>
 </dd>
 
-### -field <b>Timeout</b>
+### -field Timeout
 
 <dd>
 <p>Indicates the time, in milliseconds, before the URB times out. A value of 0 indicates that there is no timeout for this URB. </p>
 </dd>
 
-### -field <b>Pad</b>
+### -field Pad
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>hca</b>
+### -field hca
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>SetupPacket</b>
+### -field SetupPacket
 
 <dd>
 <p>Specifies a USB-defined request setup packet. The format of a USB request setup packet is found in the USB core specification.</p>

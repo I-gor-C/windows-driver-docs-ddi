@@ -58,13 +58,13 @@ HRESULT APIENTRY CreateDevice(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> 
+### -param hAdapter 
 
 <dd>
 <p> A handle to the graphics adapter object that was created with the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-openadapter.md">OpenAdapter10</a> function.</p>
 </dd>
 
-### -param <i>pCreateData</i> [in, out]
+### -param pCreateData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure. On input, this structure contains information that the driver can use. On output, the driver specifies information in the structure that the Microsoft Direct3D runtime can use.</p>

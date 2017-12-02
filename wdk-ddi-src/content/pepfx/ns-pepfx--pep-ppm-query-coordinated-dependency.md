@@ -59,37 +59,37 @@ typedef struct _PEP_PPM_QUERY_COORDINATED_DEPENDENCY {
 ## -struct-fields
 <dl>
 
-### -field <b>StateIndex</b>
+### -field StateIndex
 
 <dd>
 <p>[in] The index of the coordinated idle state which is having its dependencies queried.</p>
 </dd>
 
-### -field <b>DependencyIndex</b>
+### -field DependencyIndex
 
 <dd>
 <p>[in] The index of the dependency being queried.</p>
 </dd>
 
-### -field <b>DependencySize</b>
+### -field DependencySize
 
 <dd>
 <p>[in] The size of the <b>Dependencies</b> array.</p>
 </dd>
 
-### -field <b>DependencySizeUsed</b>
+### -field DependencySizeUsed
 
 <dd>
 <p>[out] The number of elements of the <b>Dependencies</b> array filled in by the PEP.</p>
 </dd>
 
-### -field <b>TargetProcessor</b>
+### -field TargetProcessor
 
 <dd>
 <p>[out] The <b>POHANDLE</b> corresponding to the processor being targeted by this dependency, or <b>NULL</b> if this is a coordinated state dependency.</p>
 </dd>
 
-### -field <b>Options</b>
+### -field Options
 
 <dd>
 <p>[out] A list of <a href="..\pepfx\ns-pepfx--pep-coordinated-dependency-option.md">PEP_COORDINATED_DEPENDENCY_OPTION</a> structures describing dependency options, one of which must be satisfied for this coordinated state to be entered.</p>

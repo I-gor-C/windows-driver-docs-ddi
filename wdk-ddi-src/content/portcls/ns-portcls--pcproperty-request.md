@@ -63,33 +63,33 @@ typedef struct _PCPROPERTY_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>MajorTarget</b>
+### -field MajorTarget
 
 <dd>
 <p>
 <a href="com.iunknown">IUnknown</a> pointer to the main miniport object. This member contains the <i>UnknownMiniport</i> parameter value that the adapter driver previously passed to the <a href="audio.iport_init">IPort::Init</a> method.</p>
 </dd>
 
-### -field <b>MinorTarget</b>
+### -field MinorTarget
 
 <dd>
 <p>
 <a href="com.iunknown">IUnknown</a> pointer to a stream object that is associated with the <b>MajorTarget</b> miniport object. If the target for the property request is a pin instance, this member contains the stream-object pointer that the IMiniport <i>Xxx</i>::NewStream method previously output to the port driver (for example, the <a href="audio.iminiportwavecyclic_newstream">IMiniportWaveCyclic::NewStream</a> method's <i>Stream</i> parameter). Otherwise (if the target for the property request is a filter instance), this member is <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Node</b>
+### -field Node
 
 <dd>
 <p>Specifies a node ID. This member identifies the target node for the request. If the target is not a node, this member is set to ULONG(-1).</p>
 </dd>
 
-### -field <b>PropertyItem</b>
+### -field PropertyItem
 
 <dd>
 <p>Pointer to the property item, which is a structure of type <a href="audio.pcproperty_item">PCPROPERTY_ITEM</a>.</p>
 </dd>
 
-### -field <b>Verb</b>
+### -field Verb
 
 <dd>
 <p>Specifies the type of property request. <b>Verb</b> is set to the bitwise OR of one or more of the following flag bits from header file ks.h:</p>
@@ -134,34 +134,34 @@ typedef struct _PCPROPERTY_REQUEST {
 <p>These flags are described in <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.</p>
 </dd>
 
-### -field <b>InstanceSize</b>
+### -field InstanceSize
 
 <dd>
 <p>Specifies the size in bytes of the property-instance buffer.</p>
 </dd>
 
-### -field <b>Instance</b>
+### -field Instance
 
 <dd>
 <p>Pointer to the property-instance buffer</p>
 </dd>
 
-### -field <b>ValueSize</b>
+### -field ValueSize
 
 <dd>
 <p>Specifies the size in bytes of the property-value buffer.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>Pointer to the property-value buffer</p>
 </dd>
 
-### -field <b>Irp</b>
+### -field Irp
 
 <dd>
-<p>Pointer to the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> containing the client's original property request</p>
+<p>Pointer to the <a href="..\wdm\ns-wdm--irp.md">IRP</a> containing the client's original property request</p>
 </dd>
 </dl>
 
@@ -170,7 +170,7 @@ typedef struct _PCPROPERTY_REQUEST {
 
 <p>In WDM audio, the target of a property request can be either a filter instance or a pin instance. The target can also include a node ID.</p>
 
-<p>In the client's original property request, the property-instance data always begins with a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> or <a href="audio.ksnodeproperty">KSNODEPROPERTY</a> structure, but can include additional information. The port driver adjusts the <b>PCPROPERTY_REQUEST</b> structure's <b>Instance</b> member to point to this additional information, if it exists. For details, see <a href="NULL">Audio Property Handlers</a>.</p>
+<p>In the client's original property request, the property-instance data always begins with a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> or <a href="audio.ksnodeproperty">KSNODEPROPERTY</a> structure, but can include additional information. The port driver adjusts the <b>PCPROPERTY_REQUEST</b> structure's <b>Instance</b> member to point to this additional information, if it exists. For details, see <a href="https://msdn.microsoft.com/4bf176ae-b3fd-47e6-9802-a92ef5e9904f">Audio Property Handlers</a>.</p>
 
 <p>The <b>MajorTarget</b> and <b>MinorTarget</b> members are <a href="com.iunknown">IUnknown</a> pointers to the main miniport object and an associated stream object, respectively. The property handler can query these objects for their miniport and stream interfaces. If the target for the property request is a filter instance, <b>MajorTarget</b> points to the miniport object for that filter instance, and <b>MinorTarget</b> is <b>NULL</b>. If the target is a pin instance, <b>MinorTarget</b> points to the stream object for that pin, and <b>MajorTarget</b> points to the miniport object for the filter that the pin is attached to.</p>
 

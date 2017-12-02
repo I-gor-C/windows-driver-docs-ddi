@@ -58,19 +58,19 @@ typedef union _PEP_UNMASKED_INTERRUPT_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field ( <i>unnamed struct</i> )
+### -field ( unnamed struct )
 
 <dd>
 <p>A structure that contains the bitfields for the individual unmasked interrupt flags.</p>
 <dl>
 
-### -field <b>SecondaryInterrupt</b>
+### -field SecondaryInterrupt
 
 <dd>
-<p>Whether this interrupt is a primary interrupt or a secondary interrupt. This bitfield is 0 if the interrupt source is a primary interrupt, and is 1 is the interrupt source is a secondary interrupt. For more information, see <a href="NULL">Primary and Secondary Interrupts</a>.</p>
+<p>Whether this interrupt is a primary interrupt or a secondary interrupt. This bitfield is 0 if the interrupt source is a primary interrupt, and is 1 is the interrupt source is a secondary interrupt. For more information, see <a href="https://msdn.microsoft.com/731B0E36-4480-4B69-931E-1F7B40B18911">Primary and Secondary Interrupts</a>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>
@@ -78,7 +78,7 @@ typedef union _PEP_UNMASKED_INTERRUPT_FLAGS {
 </dl>
 </dd>
 
-### -field <b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>A USHORT value that contains all of the unmasked interrupt flags.</p>

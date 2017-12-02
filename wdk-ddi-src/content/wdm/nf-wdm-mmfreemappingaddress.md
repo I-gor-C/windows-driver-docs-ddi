@@ -56,13 +56,13 @@ VOID MmFreeMappingAddress(
 ## -parameters
 <dl>
 
-### -param <i>BaseAddress</i> [in]
+### -param BaseAddress [in]
 
 <dd>
 <p>Pointer to the beginning of the reserved memory buffer to free. This must be an address previously returned by <a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a>.</p>
 </dd>
 
-### -param <i>PoolTag</i> [in]
+### -param PoolTag [in]
 
 <dd>
 <p>Specifies the pool tag for the reserved memory buffer. This must be identical to the value specified in the <i>PoolTag</i> parameter of the call to <a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a> that reserved the buffer. </p>

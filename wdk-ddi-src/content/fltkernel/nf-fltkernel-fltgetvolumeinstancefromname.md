@@ -7,7 +7,7 @@ old-location: ifsk\fltgetvolumeinstancefromname.htm
 old-project: ifsk
 ms.assetid: 25455faa-2197-4b2a-bce8-db9764153e51
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltGetVolumeInstanceFromName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ NTSTATUS FltGetVolumeInstanceFromName(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in, optional]
+### -param Filter [in, optional]
 
 <dd>
 <p>Opaque filter pointer for the minifilter driver that owns the instance. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>Volume</i> [in]
+### -param Volume [in]
 
 <dd>
 <p>Opaque pointer for the volume that the instance is attached to. Must be a valid volume handle. This parameter is required and cannot be <b>NULL</b>. (Setting this parameter to an invalid value causes the system to ASSERT on a checked build.) </p>
 </dd>
 
-### -param <i>InstanceName</i> [in, optional]
+### -param InstanceName [in, optional]
 
 <dd>
 <p>Pointer to a caller-allocated <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the instance name for the instance on the volume. (This is the <i>InstanceName</i> value that was passed to <a href="..\fltkernel\nf-fltkernel-fltattachvolume.md">FltAttachVolume</a> or <a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a> when the instance was created.) This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, <b>FltGetVolumeInstanceFromName</b> returns the highest matching instance that is found. </p>
 </dd>
 
-### -param <i>RetInstance</i> [out]
+### -param RetInstance [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives an opaque instance pointer for the instance that matches the values for <i>Filter</i>, <i>Volume</i>, and <i>InstanceName</i>. This parameter is required and cannot be <b>NULL</b>. </p>
@@ -171,4 +171,4 @@ NTSTATUS FltGetVolumeInstanceFromName(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetVolumeInstanceFromName routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetVolumeInstanceFromName routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

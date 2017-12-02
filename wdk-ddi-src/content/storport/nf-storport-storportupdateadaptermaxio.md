@@ -58,13 +58,13 @@ ULONG StorPortUpdateAdapterMaxIO(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>A pointer to miniport's device extension.</p>
 </dd>
 
-### -param <i>MaxIoCount</i> 
+### -param MaxIoCount 
 
 <dd>
 <p>Maximum IO's supported by the adapter.</p>

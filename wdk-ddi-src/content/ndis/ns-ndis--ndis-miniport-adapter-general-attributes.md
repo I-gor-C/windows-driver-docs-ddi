@@ -7,7 +7,7 @@ old-location: netvista\ndis_miniport_adapter_general_attributes.htm
 old-project: netvista
 ms.assetid: 5423d073-02a5-468b-b91e-713ac67a5253
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -89,7 +89,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -103,7 +103,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES_REVISION_2"></a><a id="ndis_miniport_adapter_general_attributes_revision_2"></a>NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES_REVISION_2
+### -field NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES_REVISION_2
 
 <dd>
 <p>Added the 
@@ -111,7 +111,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
 <p>Set the <b>Size</b> member to <b>NDIS_SIZEOF_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES_REVISION_2</b>.</p>
 </dd>
 
-### -field <a id="NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES_REVISION_1"></a><a id="ndis_miniport_adapter_general_attributes_revision_1"></a>NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES_REVISION_1
+### -field NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.0 and NDIS 6,1.</p>
@@ -122,13 +122,13 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>MediaType</b>
+### -field MediaType
 
 <dd>
 <p>The 
@@ -136,7 +136,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
      <a href="..\ntddndis\ne-ntddndis--ndis-medium.md">NDIS_MEDIUM</a>.</p>
 </dd>
 
-### -field <b>PhysicalMediumType</b>
+### -field PhysicalMediumType
 
 <dd>
 <p>The physical medium type for the miniport adapter. For more information, see 
@@ -144,42 +144,42 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
 </p>
 </dd>
 
-### -field <b>MtuSize</b>
+### -field MtuSize
 
 <dd>
 <p>The maximum transfer unit (MTU) size. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569598">OID_GEN_MAXIMUM_FRAME_SIZE</a>.</p>
 </dd>
 
-### -field <b>MaxXmitLinkSpeed</b>
+### -field MaxXmitLinkSpeed
 
 <dd>
 <p>The maximum transmit link speed of the adapter in bits per second. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569602">OID_GEN_MAX_LINK_SPEED</a>.</p>
 </dd>
 
-### -field <b>XmitLinkSpeed</b>
+### -field XmitLinkSpeed
 
 <dd>
 <p>The current transmit link speed of the adapter in bits per second. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569594">OID_GEN_LINK_SPEED_EX</a>.</p>
 </dd>
 
-### -field <b>MaxRcvLinkSpeed</b>
+### -field MaxRcvLinkSpeed
 
 <dd>
 <p>The maximum receive link speed of the adapter in bits per second. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569602">OID_GEN_MAX_LINK_SPEED</a>.</p>
 </dd>
 
-### -field <b>RcvLinkSpeed</b>
+### -field RcvLinkSpeed
 
 <dd>
 <p>The current receive link speed of the adapter in bits per second. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569594">OID_GEN_LINK_SPEED_EX</a>.</p>
 </dd>
 
-### -field <b>MediaConnectState</b>
+### -field MediaConnectState
 
 <dd>
 <p>The media connect state for the miniport adapter. For more information, see 
@@ -187,21 +187,21 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
      OID_GEN_MEDIA_CONNECT_STATUS_EX</a>.</p>
 </dd>
 
-### -field <b>MediaDuplexState</b>
+### -field MediaDuplexState
 
 <dd>
 <p>The media duplex state for the miniport adapter. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569606">OID_GEN_MEDIA_DUPLEX_STATE</a>.</p>
 </dd>
 
-### -field <b>LookaheadSize</b>
+### -field LookaheadSize
 
 <dd>
 <p>The lookahead size for the miniport adapter. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569574">OID_GEN_CURRENT_LOOKAHEAD</a>.</p>
 </dd>
 
-### -field <b>PowerManagementCapabilities</b>
+### -field PowerManagementCapabilities
 
 <dd>
 <p>The Plug and Play (PnP) capabilities of the miniport adapter. For more information about PnP
@@ -212,14 +212,14 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
      <b>PowerManagementCapabilitiesEx</b> member instead.</p>
 </dd>
 
-### -field <b>MacOptions</b>
+### -field MacOptions
 
 <dd>
 <p>The MAC options for the miniport adapter. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569597">OID_GEN_MAC_OPTIONS</a>.</p>
 </dd>
 
-### -field <b>SupportedPacketFilters</b>
+### -field SupportedPacketFilters
 
 <dd>
 <p>The packet filter flags for the miniport adapter. For more information, see 
@@ -227,7 +227,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
      OID_GEN_SUPPORTED_PACKET_FILTERS</a>.</p>
 </dd>
 
-### -field <b>MaxMulticastListSize</b>
+### -field MaxMulticastListSize
 
 <dd>
 <p>The multicast address list size for the miniport adapter. For more information, see 
@@ -235,13 +235,13 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
      OID_802_3_MAXIMUM_LIST_SIZE</a>.</p>
 </dd>
 
-### -field <b>MacAddressLength</b>
+### -field MacAddressLength
 
 <dd>
 <p>The MAC address length, in bytes. The MAC address length is specific to the type of media.</p>
 </dd>
 
-### -field <b>PermanentMacAddress</b>
+### -field PermanentMacAddress
 
 <dd>
 <p>The permanent MAC address. For example, the 
@@ -249,7 +249,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
      specifies the permanent MAC address for IEEE 802.3 drivers.</p>
 </dd>
 
-### -field <b>CurrentMacAddress</b>
+### -field CurrentMacAddress
 
 <dd>
 <p>The current MAC address. For example, the 
@@ -257,7 +257,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
      specifies the current MAC address for IEEE 802.3 drivers.</p>
 </dd>
 
-### -field <b>RecvScaleCapabilities</b>
+### -field RecvScaleCapabilities
 
 <dd>
 <p>The receive side scaling (RSS) capabilities of the NIC. If the miniport adapter does not support
@@ -267,7 +267,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
      OID_GEN_RECEIVE_SCALE_CAPABILITIES</a>.</p>
 </dd>
 
-### -field <b>AccessType</b>
+### -field AccessType
 
 <dd>
 <p>A 
@@ -275,7 +275,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
      access type.</p>
 </dd>
 
-### -field <b>DirectionType</b>
+### -field DirectionType
 
 <dd>
 <p>A 
@@ -283,7 +283,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
      interface direction type.</p>
 </dd>
 
-### -field <b>ConnectionType</b>
+### -field ConnectionType
 
 <dd>
 <p>A 
@@ -291,7 +291,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
      interface connection type.</p>
 </dd>
 
-### -field <b>IfType</b>
+### -field IfType
 
 <dd>
 <p>The Internet Assigned Numbers Authority (IANA) interface type. For example,
@@ -300,14 +300,14 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff565767">NDIS Interface Types</a>.</p>
 </dd>
 
-### -field <b>IfConnectorPresent</b>
+### -field IfConnectorPresent
 
 <dd>
 <p>A Boolean value that indicates if a connector is present. Set this value to <b>TRUE</b> if there is a
      physical adapter.</p>
 </dd>
 
-### -field <b>SupportedStatistics</b>
+### -field SupportedStatistics
 
 <dd>
 <p>The supported statistics.
@@ -320,14 +320,14 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_STATISTICS_DIRECTED_FRAMES_RCV_SUPPORTED"></a><a id="ndis_statistics_directed_frames_rcv_supported"></a>NDIS_STATISTICS_DIRECTED_FRAMES_RCV_SUPPORTED
+### -field NDIS_STATISTICS_DIRECTED_FRAMES_RCV_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifHCInUcastPkts</b> member is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_MULTICAST_FRAMES_RCV_SUPPORTED"></a><a id="ndis_statistics_multicast_frames_rcv_supported"></a>NDIS_STATISTICS_MULTICAST_FRAMES_RCV_SUPPORTED
+### -field NDIS_STATISTICS_MULTICAST_FRAMES_RCV_SUPPORTED
 
 <dd>
 <p>The data in the 
@@ -335,112 +335,112 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
        NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_BROADCAST_FRAMES_RCV_SUPPORTED"></a><a id="ndis_statistics_broadcast_frames_rcv_supported"></a>NDIS_STATISTICS_BROADCAST_FRAMES_RCV_SUPPORTED
+### -field NDIS_STATISTICS_BROADCAST_FRAMES_RCV_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifHCInBroadcastPkts</b> member of NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_BYTES_RCV_SUPPORTED"></a><a id="ndis_statistics_bytes_rcv_supported"></a>NDIS_STATISTICS_BYTES_RCV_SUPPORTED
+### -field NDIS_STATISTICS_BYTES_RCV_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifHCInOctets</b> member of NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_RCV_DISCARDS_SUPPORTED"></a><a id="ndis_statistics_rcv_discards_supported"></a>NDIS_STATISTICS_RCV_DISCARDS_SUPPORTED
+### -field NDIS_STATISTICS_RCV_DISCARDS_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifInDiscards</b> member of NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_RCV_ERROR_SUPPORTED"></a><a id="ndis_statistics_rcv_error_supported"></a>NDIS_STATISTICS_RCV_ERROR_SUPPORTED
+### -field NDIS_STATISTICS_RCV_ERROR_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifInErrors</b> member of NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_DIRECTED_FRAMES_XMIT_SUPPORTED"></a><a id="ndis_statistics_directed_frames_xmit_supported"></a>NDIS_STATISTICS_DIRECTED_FRAMES_XMIT_SUPPORTED
+### -field NDIS_STATISTICS_DIRECTED_FRAMES_XMIT_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifHCOutUcastPkts</b> member of NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_MULTICAST_FRAMES_XMIT_SUPPORTED"></a><a id="ndis_statistics_multicast_frames_xmit_supported"></a>NDIS_STATISTICS_MULTICAST_FRAMES_XMIT_SUPPORTED
+### -field NDIS_STATISTICS_MULTICAST_FRAMES_XMIT_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifHCOutMulticastPkts</b> member of NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_BROADCAST_FRAMES_XMIT_SUPPORTED"></a><a id="ndis_statistics_broadcast_frames_xmit_supported"></a>NDIS_STATISTICS_BROADCAST_FRAMES_XMIT_SUPPORTED
+### -field NDIS_STATISTICS_BROADCAST_FRAMES_XMIT_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifHCOutBroadcastPkts</b> member of NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_BYTES_XMIT_SUPPORTED"></a><a id="ndis_statistics_bytes_xmit_supported"></a>NDIS_STATISTICS_BYTES_XMIT_SUPPORTED
+### -field NDIS_STATISTICS_BYTES_XMIT_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifHCOutOctets</b> member of NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_XMIT_ERROR_SUPPORTED"></a><a id="ndis_statistics_xmit_error_supported"></a>NDIS_STATISTICS_XMIT_ERROR_SUPPORTED
+### -field NDIS_STATISTICS_XMIT_ERROR_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifOutErrors</b> member of NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_XMIT_DISCARDS_SUPPORTED"></a><a id="ndis_statistics_xmit_discards_supported"></a>NDIS_STATISTICS_XMIT_DISCARDS_SUPPORTED
+### -field NDIS_STATISTICS_XMIT_DISCARDS_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifOutDiscards</b> member of NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_DIRECTED_BYTES_RCV_SUPPORTED"></a><a id="ndis_statistics_directed_bytes_rcv_supported"></a>NDIS_STATISTICS_DIRECTED_BYTES_RCV_SUPPORTED
+### -field NDIS_STATISTICS_DIRECTED_BYTES_RCV_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifHCInUcastOctets</b> member of NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_MULTICAST_BYTES_RCV_SUPPORTED"></a><a id="ndis_statistics_multicast_bytes_rcv_supported"></a>NDIS_STATISTICS_MULTICAST_BYTES_RCV_SUPPORTED
+### -field NDIS_STATISTICS_MULTICAST_BYTES_RCV_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifHCInMulticastOctets</b> member of NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_BROADCAST_BYTES_RCV_SUPPORTED"></a><a id="ndis_statistics_broadcast_bytes_rcv_supported"></a>NDIS_STATISTICS_BROADCAST_BYTES_RCV_SUPPORTED
+### -field NDIS_STATISTICS_BROADCAST_BYTES_RCV_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifHCInBroadcastOctets</b> member of NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_DIRECTED_BYTES_XMIT_SUPPORTED"></a><a id="ndis_statistics_directed_bytes_xmit_supported"></a>NDIS_STATISTICS_DIRECTED_BYTES_XMIT_SUPPORTED
+### -field NDIS_STATISTICS_DIRECTED_BYTES_XMIT_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifHCOutUcastOctets</b> member of NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_MULTICAST_BYTES_XMIT_SUPPORTED"></a><a id="ndis_statistics_multicast_bytes_xmit_supported"></a>NDIS_STATISTICS_MULTICAST_BYTES_XMIT_SUPPORTED
+### -field NDIS_STATISTICS_MULTICAST_BYTES_XMIT_SUPPORTED
 
 <dd>
 <p>The data in the 
        <b>ifHCOutMulticastOctets</b> member of NDIS_STATISTICS_INFO is valid.</p>
 </dd>
 
-### -field <a id="NDIS_STATISTICS_BROADCAST_BYTES_XMIT_SUPPORTED"></a><a id="ndis_statistics_broadcast_bytes_xmit_supported"></a>NDIS_STATISTICS_BROADCAST_BYTES_XMIT_SUPPORTED
+### -field NDIS_STATISTICS_BROADCAST_BYTES_XMIT_SUPPORTED
 
 <dd>
 <p>The data in the 
@@ -449,7 +449,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
 </dl>
 </dd>
 
-### -field <b>SupportedPauseFunctions</b>
+### -field SupportedPauseFunctions
 
 <dd>
 <p>Support for the IEEE 802.3 pause frames as one of the following pause functions:
@@ -457,34 +457,34 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="NdisPauseFunctionsUnsupported"></a><a id="ndispausefunctionsunsupported"></a><a id="NDISPAUSEFUNCTIONSUNSUPPORTED"></a><b>NdisPauseFunctionsUnsupported</b>
+### -field NdisPauseFunctionsUnsupported
 
 <dd>
 <p>Indicates that the adapter or link partner does not support pause frames.</p>
 </dd>
 
-### -field <a id="NdisPauseFunctionsSendOnly"></a><a id="ndispausefunctionssendonly"></a><a id="NDISPAUSEFUNCTIONSSENDONLY"></a><b>NdisPauseFunctionsSendOnly</b>
+### -field NdisPauseFunctionsSendOnly
 
 <dd>
 <p>Indicates that the adapter and link partner only support sending pause frames from the adapter
        to the link partner.</p>
 </dd>
 
-### -field <a id="NdisPauseFunctionsReceiveOnly"></a><a id="ndispausefunctionsreceiveonly"></a><a id="NDISPAUSEFUNCTIONSRECEIVEONLY"></a><b>NdisPauseFunctionsReceiveOnly</b>
+### -field NdisPauseFunctionsReceiveOnly
 
 <dd>
 <p>Indicates that the adapter and link partner only support sending pause frames from the link
        partner to the adapter</p>
 </dd>
 
-### -field <a id="NdisPauseFunctionsSendAndReceive"></a><a id="ndispausefunctionssendandreceive"></a><a id="NDISPAUSEFUNCTIONSSENDANDRECEIVE"></a><b>NdisPauseFunctionsSendAndReceive</b>
+### -field NdisPauseFunctionsSendAndReceive
 
 <dd>
 <p>Indicates that the adapter and link partner support sending and receiving pause frames in both
        transint and receive directions.</p>
 </dd>
 
-### -field <a id="NdisPauseFunctionsUnknown"></a><a id="ndispausefunctionsunknown"></a><a id="NDISPAUSEFUNCTIONSUNKNOWN"></a><b>NdisPauseFunctionsUnknown</b>
+### -field NdisPauseFunctionsUnknown
 
 <dd>
 <p>Indicates that pause frame negotiation is in progress. The pause frame support that the link
@@ -493,33 +493,33 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
 </dl>
 </dd>
 
-### -field <b>DataBackFillSize</b>
+### -field DataBackFillSize
 
 <dd>
 <p>The required data backfill size, in bytes, of the driver.</p>
 </dd>
 
-### -field <b>ContextBackFillSize</b>
+### -field ContextBackFillSize
 
 <dd>
 <p>The required context backfill size, in bytes, of the driver.</p>
 </dd>
 
-### -field <b>SupportedOidList</b>
+### -field SupportedOidList
 
 <dd>
 <p>A list of OIDs that the miniport driver supports. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569642">OID_GEN_SUPPORTED_LIST</a>.</p>
 </dd>
 
-### -field <b>SupportedOidListLength</b>
+### -field SupportedOidListLength
 
 <dd>
 <p>The size, in bytes, of the OID list at 
      <b>SupportedOidList</b> .</p>
 </dd>
 
-### -field <b>AutoNegotiationFlags</b>
+### -field AutoNegotiationFlags
 
 <dd>
 <p>The auto-negotiation settings for the miniport adapter. This member is created from a bitwise OR
@@ -528,25 +528,25 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_LINK_STATE_XMIT_LINK_SPEED_AUTO_NEGOTIATED"></a><a id="ndis_link_state_xmit_link_speed_auto_negotiated"></a>NDIS_LINK_STATE_XMIT_LINK_SPEED_AUTO_NEGOTIATED
+### -field NDIS_LINK_STATE_XMIT_LINK_SPEED_AUTO_NEGOTIATED
 
 <dd>
 <p>The adapter has auto-negotiated the transmit link speed with the link partner.</p>
 </dd>
 
-### -field <a id="NDIS_LINK_STATE_RCV_LINK_SPEED_AUTO_NEGOTIATED"></a><a id="ndis_link_state_rcv_link_speed_auto_negotiated"></a>NDIS_LINK_STATE_RCV_LINK_SPEED_AUTO_NEGOTIATED
+### -field NDIS_LINK_STATE_RCV_LINK_SPEED_AUTO_NEGOTIATED
 
 <dd>
 <p>The adapter has auto-negotiated the receive link speed with the link partner.</p>
 </dd>
 
-### -field <a id="NDIS_LINK_STATE_DUPLEX_AUTO_NEGOTIATED"></a><a id="ndis_link_state_duplex_auto_negotiated"></a>NDIS_LINK_STATE_DUPLEX_AUTO_NEGOTIATED
+### -field NDIS_LINK_STATE_DUPLEX_AUTO_NEGOTIATED
 
 <dd>
 <p>The adapter has auto-negotiated the duplex state with the link partner.</p>
 </dd>
 
-### -field <a id="NDIS_LINK_STATE_PAUSE_FUNCTIONS_AUTO_NEGOTIATED"></a><a id="ndis_link_state_pause_functions_auto_negotiated"></a>NDIS_LINK_STATE_PAUSE_FUNCTIONS_AUTO_NEGOTIATED
+### -field NDIS_LINK_STATE_PAUSE_FUNCTIONS_AUTO_NEGOTIATED
 
 <dd>
 <p>The adapter has auto-negotiated the pause functions with the link partner.</p>
@@ -554,7 +554,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
 </dl>
 </dd>
 
-### -field <b>PowerManagementCapabilitiesEx</b>
+### -field PowerManagementCapabilitiesEx
 
 <dd>
 <p>A pointer to an 
@@ -681,4 +681,4 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

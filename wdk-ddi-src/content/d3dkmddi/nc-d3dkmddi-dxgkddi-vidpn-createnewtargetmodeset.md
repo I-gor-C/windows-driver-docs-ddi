@@ -60,25 +60,25 @@ NTSTATUS APIENTRY pfnCreateNewTargetModeSet(
 ## -parameters
 <dl>
 
-### -param <i>hVidPn</i> [in]
+### -param hVidPn [in]
 
 <dd>
 <p>[in] A handle to a VidPN object. The VidPN manager previously provided this handle to the display miniport driver by calling <a href="display.dxgkddienumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>, <a href="display.dxgkddiissupportedvidpn">DxgkDdiIsSupportedVidPn</a>, or <a href="display.dxgkddirecommendfunctionalvidpn">DxgkDdiRecommendFunctionalVidPn</a>.</p>
 </dd>
 
-### -param <i>VidPnTargetId</i> [in]
+### -param VidPnTargetId [in]
 
 <dd>
 <p>[in] An integer that identifies one of the video present targets associated with the VidPN object.</p>
 </dd>
 
-### -param <i>phNewVidPnTargetModeSet</i> [out]
+### -param phNewVidPnTargetModeSet [out]
 
 <dd>
 <p>[out] A pointer to a variable that receives a handle to the newly created target mode set object.</p>
 </dd>
 
-### -param <i>ppVidPnTargetModeSetInterace</i> [out]
+### -param ppVidPnTargetModeSetInterace [out]
 
 <dd>
 <p>[out] A pointer to a variable that receives a pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpntargetmodeset-interface.md">DXGK_VIDPNTARGETMODESET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the target mode set object.</p>

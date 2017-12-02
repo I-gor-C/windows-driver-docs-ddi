@@ -59,37 +59,37 @@ HRESULT CreateNodeInstance(
 ## -parameters
 <dl>
 
-### -param <i>NodeId</i> [in]
+### -param NodeId [in]
 
 <dd>
 <p>Identifier for the topology node object to open. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A bitmask enumerating the type of topology node object. No flags are currently defined.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> bitmask specifying the type of access that the caller requires to the topology node object. See <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> for a description of each access-right value.</p>
 </dd>
 
-### -param <i>UnkOuter</i> [in, optional]
+### -param UnkOuter [in, optional]
 
 <dd>
 <p>Pointer to an <b>IUnknown</b> interface that supports the topology node interface.</p>
 </dd>
 
-### -param <i>InterfaceId</i> [in]
+### -param InterfaceId [in]
 
 <dd>
 <p>Identifier of the topology node interface being requested.</p>
 </dd>
 
-### -param <i>Interface</i> [out]
+### -param Interface [out]
 
 <dd>
 <p>Pointer to a variable that receives the interface pointer requested in <i>InterfaceId</i>. Upon successful return, *<i>Interface</i> contains the requested interface pointer to the object. If the object does not support the interface specified in <i>InterfaceId</i>, *<i>Interface</i> is set to <b>NULL</b>.</p>

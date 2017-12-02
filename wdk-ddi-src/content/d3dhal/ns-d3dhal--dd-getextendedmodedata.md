@@ -59,19 +59,19 @@ typedef struct _DD_GETEXTENDEDMODEDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>gdi2</b>
+### -field gdi2
 
 <dd>
 <p>Specifies a <a href="..\d3dhal\ns-d3dhal--dd-getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.</p>
 </dd>
 
-### -field <b>dwModeIndex</b>
+### -field dwModeIndex
 
 <dd>
 <p>Specifies the index of the display mode to return.</p>
 </dd>
 
-### -field <b>mode</b>
+### -field mode
 
 <dd>
 <p>Receives a D3DDISPLAYMODE structure that specifies the actual display mode.</p>

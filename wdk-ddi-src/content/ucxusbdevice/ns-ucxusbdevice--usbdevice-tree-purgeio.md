@@ -59,10 +59,10 @@ typedef struct __USBDEVICE_TREE_PURGEIO {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
-<p>A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
+<p>A <a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-mgmt-header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
 </dd>
 </dl>
 
@@ -86,7 +86,7 @@ typedef struct __USBDEVICE_TREE_PURGEIO {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._usbdevice_purgeio">USBDEVICE_PURGEIO</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-purgeio.md">USBDEVICE_PURGEIO</a>
 </dt>
 </dl>
 <p> </p>

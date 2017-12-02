@@ -59,31 +59,31 @@ NTSTATUS EtwWrite(
 ## -parameters
 <dl>
 
-### -param <i>RegHandle</i> [in]
+### -param RegHandle [in]
 
 <dd>
 <p>A pointer to the event provider registration handle, which is returned by the <a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a> function if the event provider registration is successful.</p>
 </dd>
 
-### -param <i>EventDescriptor</i> [in]
+### -param EventDescriptor [in]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/cfe84b3d-fed2-4624-9899-8451e5b39de0">EVENT_DESCRIPTOR</a> structure. </p>
 </dd>
 
-### -param <i>ActivityId</i> [in, optional]
+### -param ActivityId [in, optional]
 
 <dd>
 <p>The identifier that indicates the activity associated with the event. The <i>ActivityID</i> provides a way to group related events and is used in end-to-end tracing. </p>
 </dd>
 
-### -param <i>UserDataCount</i> [in]
+### -param UserDataCount [in]
 
 <dd>
 <p>The number of EVENT_DATA_DESCRIPTOR structures in <i>UserData</i>.</p>
 </dd>
 
-### -param <i>UserData</i> [in, optional]
+### -param UserData [in, optional]
 
 <dd>
 <p>A pointer to the array of EVENT_DATA_DESCRIPTOR structures. </p>

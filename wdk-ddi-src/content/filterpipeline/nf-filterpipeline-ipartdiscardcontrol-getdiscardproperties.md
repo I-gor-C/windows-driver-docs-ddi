@@ -55,13 +55,13 @@ HRESULT GetDiscardProperties(
 ## -parameters
 <dl>
 
-### -param <i>uriSentinelPage</i> [out]
+### -param uriSentinelPage [out]
 
 <dd>
 <p>The URI of the first fixed page that no longer needs the identified resource to be processed. </p>
 </dd>
 
-### -param <i>uriPartToDiscard</i> [out]
+### -param uriPartToDiscard [out]
 
 <dd>
 <p>The URI of the resource that the consumer can discard.</p>

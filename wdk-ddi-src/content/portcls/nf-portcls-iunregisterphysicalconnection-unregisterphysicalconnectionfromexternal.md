@@ -58,31 +58,31 @@ NTSTATUS UnregisterPhysicalConnectionFromExternal(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object for the adapter device. This parameter must point to a system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
 </dd>
 
-### -param <i>FromString</i> [in]
+### -param FromString [in]
 
 <dd>
 <p>Pointer to a null-terminated Unicode string that contains the name of the external filter that supplies the connection's data source pin.</p>
 </dd>
 
-### -param <i>FromPin</i> [in]
+### -param FromPin [in]
 
 <dd>
 <p>Specifies a pin ID. This parameter identifies the data source (output) pin on the external filter that is named by the <i>FromString</i> parameter.</p>
 </dd>
 
-### -param <i>ToUnknown</i> [in]
+### -param ToUnknown [in]
 
 <dd>
 <p>Pointer to the <a href="..\portcls\nn-portcls-iport.md">IPort</a> interface of a port driver object. The port driver object that is associated with <i>ToUnknown</i> is bound to the subdevice that supplies the connection's data sink pin.</p>
 </dd>
 
-### -param <i>ToPin</i> [in]
+### -param ToPin [in]
 
 <dd>
 <p>Specifies a pin ID. This parameter identifies the data sink (input) pin on the filter that is associated with the <i>ToUnknown</i> interface.</p>
@@ -93,7 +93,7 @@ NTSTATUS UnregisterPhysicalConnectionFromExternal(
 <p><b>UnregisterPhysicalConnectionFromExternal</b> returns STATUS_SUCCESS if the call was successful. Otherwise, it returns an appropriate error code.</p>
 
 ## -remarks
-<p>For more information, see <a href="NULL">Dynamic Audio Subdevices</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890-aae1-5ecf58f2e22a">Dynamic Audio Subdevices</a>.</p>
 
 ## -requirements
 <table>

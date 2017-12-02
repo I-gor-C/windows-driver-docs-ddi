@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <code>IPrintOemDriverUni::DrvGetStandardVariable</code> method is provided by the Unidrv driver so that rendering plug-ins can obtain the current value of Unidrv's <a href="NULL">standard variables</a>.</p>
+<p>The <code>IPrintOemDriverUni::DrvGetStandardVariable</code> method is provided by the Unidrv driver so that rendering plug-ins can obtain the current value of Unidrv's <a href="https://msdn.microsoft.com/d3f85c0f-7387-4301-8b1e-904471aed4b0">standard variables</a>.</p>
 
 
 ## -syntax
@@ -59,31 +59,31 @@ HRESULT DrvGetStandardVariable(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>dwIndex</i> 
+### -param dwIndex 
 
 <dd>
 <p>Caller-supplied, SVI_-prefixed index into the list of Unidrv's standard variables. The SVI_-prefixed index values are defined in printoem.h.</p>
 </dd>
 
-### -param <i>pBuffer</i> 
+### -param pBuffer 
 
 <dd>
 <p>Caller-supplied pointer to a DWORD to receive the standard variable's current value.</p>
 </dd>
 
-### -param <i>cbSize</i> 
+### -param cbSize 
 
 <dd>
 <p>Caller-supplied size of the buffer pointed to by <i>pBuffer</i>.</p>
 </dd>
 
-### -param <i>pcbNeeded</i> 
+### -param pcbNeeded 
 
 <dd>
 <p>Caller-supplied pointer to a location to receive the minimum buffer size required to contain the requested information.</p>

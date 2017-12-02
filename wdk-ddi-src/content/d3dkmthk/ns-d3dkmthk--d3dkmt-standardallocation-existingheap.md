@@ -54,7 +54,7 @@ typedef struct _D3DKMT_STANDARDALLOCATION_EXISTINGHEAP {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size in bytes of the existing heap.</p>

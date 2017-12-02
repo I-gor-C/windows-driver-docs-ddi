@@ -60,31 +60,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_SEEKING_NoPositioning"></a><a id="ks_seeking_nopositioning"></a><a id="KS_SEEKING_NOPOSITIONING"></a><b>KS_SEEKING_NoPositioning</b>
+### -field KS_SEEKING_NoPositioning
 
 <dd></dd>
 
-### -field <a id="KS_SEEKING_AbsolutePositioning"></a><a id="ks_seeking_absolutepositioning"></a><a id="KS_SEEKING_ABSOLUTEPOSITIONING"></a><b>KS_SEEKING_AbsolutePositioning</b>
+### -field KS_SEEKING_AbsolutePositioning
 
 <dd></dd>
 
-### -field <a id="KS_SEEKING_RelativePositioning"></a><a id="ks_seeking_relativepositioning"></a><a id="KS_SEEKING_RELATIVEPOSITIONING"></a><b>KS_SEEKING_RelativePositioning</b>
+### -field KS_SEEKING_RelativePositioning
 
 <dd></dd>
 
-### -field <a id="KS_SEEKING_IncrementalPositioning"></a><a id="ks_seeking_incrementalpositioning"></a><a id="KS_SEEKING_INCREMENTALPOSITIONING"></a><b>KS_SEEKING_IncrementalPositioning</b>
+### -field KS_SEEKING_IncrementalPositioning
 
 <dd></dd>
 
-### -field <a id="KS_SEEKING_PositioningBitsMask"></a><a id="ks_seeking_positioningbitsmask"></a><a id="KS_SEEKING_POSITIONINGBITSMASK"></a><b>KS_SEEKING_PositioningBitsMask</b>
+### -field KS_SEEKING_PositioningBitsMask
 
 <dd></dd>
 
-### -field <a id="KS_SEEKING_SeekToKeyFrame"></a><a id="ks_seeking_seektokeyframe"></a><a id="KS_SEEKING_SEEKTOKEYFRAME"></a><b>KS_SEEKING_SeekToKeyFrame</b>
+### -field KS_SEEKING_SeekToKeyFrame
 
 <dd></dd>
 
-### -field <a id="KS_SEEKING_ReturnTime"></a><a id="ks_seeking_returntime"></a><a id="KS_SEEKING_RETURNTIME"></a><b>KS_SEEKING_ReturnTime</b>
+### -field KS_SEEKING_ReturnTime
 
 <dd></dd>
 </dl>

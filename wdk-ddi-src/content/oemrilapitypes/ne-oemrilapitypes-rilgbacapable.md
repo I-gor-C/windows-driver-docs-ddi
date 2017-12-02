@@ -7,7 +7,7 @@ old-location: netvista\rilgbacapable.htm
 old-project: netvista
 ms.assetid: c1acc574-6e9e-40a1-8892-00572fcc545c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RtlUnicodeStringVPrintfEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILGBACAPABLE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_GBA_UNKNOWN"></a><a id="ril_gba_unknown"></a><b>RIL_GBA_UNKNOWN</b>
+### -field RIL_GBA_UNKNOWN
 
 <dd></dd>
 
-### -field <a id="RIL_GBA_NOT_SUPPORTED"></a><a id="ril_gba_not_supported"></a><b>RIL_GBA_NOT_SUPPORTED</b>
+### -field RIL_GBA_NOT_SUPPORTED
 
 <dd></dd>
 
-### -field <a id="RIL_GBA_ME_SUPPORTED"></a><a id="ril_gba_me_supported"></a><b>RIL_GBA_ME_SUPPORTED</b>
+### -field RIL_GBA_ME_SUPPORTED
 
 <dd></dd>
 
-### -field <a id="RIL_GBA_U_SUPPORTED"></a><a id="ril_gba_u_supported"></a><b>RIL_GBA_U_SUPPORTED</b>
+### -field RIL_GBA_U_SUPPORTED
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: netvista\miniporttcpoffloadreceive.htm
 old-project: netvista
 ms.assetid: 9c9c033d-e892-4d8a-8f12-4ca34cdc9ea1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: BINARY_DATA, BINARY_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ NDIS_STATUS MiniportTcpOffloadReceive(
 ## -parameters
 <dl>
 
-### -param <i>MiniportAdapterContext</i> [in]
+### -param MiniportAdapterContext [in]
 
 <dd>
 <p>The handle to an offload-target allocated context area in which the offload target maintains state
@@ -74,7 +74,7 @@ NDIS_STATUS MiniportTcpOffloadReceive(
      MiniportInitializeEx</a> function.</p>
 </dd>
 
-### -param <i>MiniportOffloadContext</i> [in]
+### -param MiniportOffloadContext [in]
 
 <dd>
 <p>A pointer to a memory location that contains a PVOID value. This PVOID value references the
@@ -83,7 +83,7 @@ NDIS_STATUS MiniportTcpOffloadReceive(
      connection state object.</p>
 </dd>
 
-### -param <i>NetBufferList</i> [in]
+### -param NetBufferList [in]
 
 <dd>
 <p>A pointer to a 
@@ -108,7 +108,7 @@ NDIS_STATUS MiniportTcpOffloadReceive(
     these requests to transfer data received on the connection to the client application. If receive requests
     are posted on a connection, the offload target should always use them to transfer data that is received
     on the connection. For more information, see 
-    <a href="NULL">Delivery Algorithm</a>.</p>
+    <a href="netvista.delivery_algorithm">Delivery Algorithm</a>.</p>
 
 <p>The offload target queues the posted NET_BUFFER_LIST structures in first in, first out (FIFO) order.
     The offload target uses the 
@@ -151,7 +151,7 @@ NDIS_STATUS MiniportTcpOffloadReceive(
 <p>If the receive request is in push mode, the offload target retrieves the value of 
     <b>TcpReceiveBytesTransferred</b> by calling the NET_BUFFER_LIST_INFO macro. If this value is non-zero,
     the offload target immediately starts the 
-    <a href="NULL">push timer</a> for the connection. If this value is
+    <a href="netvista.push_timer">push timer</a> for the connection. If this value is
     zero, the offload target starts the push timer for the connection as soon as the offload target places
     the first byte of receive data into the receive request. The offload target always completes filled
     receive requests immediately. The offload target completes a partially filled receive request that is in
@@ -211,4 +211,4 @@ NDIS_STATUS MiniportTcpOffloadReceive(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_RECEIVE_HANDLER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_RECEIVE_HANDLER callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

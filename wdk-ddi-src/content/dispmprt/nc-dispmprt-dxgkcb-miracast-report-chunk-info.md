@@ -60,25 +60,25 @@ NTSTATUS* DxgkCbReportChunkInfo(
 ## -parameters
 <dl>
 
-### -param <i>MiracastHandle</i> [in]
+### -param MiracastHandle [in]
 
 <dd>
 <p>A driver-supplied handle to the Miracast display device. This handle was originally passed in the <b>MiracastHandle</b> member of the <a href="..\dispmprt\ns-dispmprt--dxgk-miracast-display-callbacks.md">DXGK_MIRACAST_DISPLAY_CALLBACKS</a> structure in a call to the <a href="..\dispmprt\nc-dispmprt-dxgkddi-miracast-create-context.md">DxgkDdiMiracastCreateContext</a> function.</p>
 </dd>
 
-### -param <i>pChunkInfo</i> [in]
+### -param pChunkInfo [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt-dxgk-miracast-chunk-info.md">DXGK_MIRACAST_CHUNK_INFO</a> structure that contains chunk information that is to be reported by the display miniport driver.</p>
 </dd>
 
-### -param <i>pPrivateDriverData</i> [in]
+### -param pPrivateDriverData [in]
 
 <dd>
 <p>Reserved for system use. Must be set to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>PrivateDataDriverSize</i> [in]
+### -param PrivateDataDriverSize [in]
 
 <dd>
 <p>Reserved for system use. Must be set to zero.</p>

@@ -54,7 +54,7 @@ HRESULT KsGetCorrelatedPhysicalTime(
 ## -parameters
 <dl>
 
-### -param <i>CorrelatedTime</i> [out]
+### -param CorrelatedTime [out]
 
 <dd>
 <p>Pointer to a variable that receives a <a href="stream.kscorrelated_time">KSCORRELATED_TIME</a> structure that contains the physical clock time along with the correlated system time.</p>

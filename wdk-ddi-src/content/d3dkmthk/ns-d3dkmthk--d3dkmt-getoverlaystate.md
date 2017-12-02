@@ -56,19 +56,19 @@ typedef struct _D3DKMT_GETOVERLAYSTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device that the overlay is associated with.</p>
 </dd>
 
-### -field <b>hOverlay</b>
+### -field hOverlay
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to retrieve status about. </p>
 </dd>
 
-### -field <b>OverlayEnabled</b>
+### -field OverlayEnabled
 
 <dd>
 <p>[out] A Boolean variable that receives <b>TRUE</b> if the overlay is enabled and <b>FALSE</b> if the overlay is disabled. </p>

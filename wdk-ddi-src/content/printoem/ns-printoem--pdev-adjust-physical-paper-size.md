@@ -55,7 +55,7 @@ typedef struct _PDEV_ADJUST_PHYSICAL_PAPER_SIZE {
 ## -struct-fields
 <dl>
 
-### -field <b>szlPhysicalPaperSize</b>
+### -field szlPhysicalPaperSize
 
 <dd>
 <p>A SIZEL structure that specifies the physical paper size, in graphics device units (pixels).</p>

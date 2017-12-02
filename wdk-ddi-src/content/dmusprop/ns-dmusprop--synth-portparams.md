@@ -60,44 +60,44 @@ typedef struct _SYNTH_PORTPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>ValidParams</b>
+### -field ValidParams
 
 <dd>
 <p>Specifies which of the SYNTH_PORTPARAMS structure members contain valid data. This member is a bitfield whose value is either zero or the bitwise OR of one or more of the following flag bits:</p>
 <p></p>
 <dl>
 
-### -field <a id="SYNTH_PORTPARAMS_VOICES_"></a><a id="synth_portparams_voices_"></a>SYNTH_PORTPARAMS_VOICES 
+### -field SYNTH_PORTPARAMS_VOICES 
 
 <dd>
 <p>The <b>Voices</b> field is valid.</p>
 </dd>
 
-### -field <a id="SYNTH_PORTPARAMS_CHANNELGROUPS_"></a><a id="synth_portparams_channelgroups_"></a>SYNTH_PORTPARAMS_CHANNELGROUPS 
+### -field SYNTH_PORTPARAMS_CHANNELGROUPS 
 
 <dd>
 <p>The <b>ChannelGroups</b> field is valid.</p>
 </dd>
 
-### -field <a id="SYNTH_PORTPARAMS_AUDIOCHANNELS_"></a><a id="synth_portparams_audiochannels_"></a>SYNTH_PORTPARAMS_AUDIOCHANNELS 
+### -field SYNTH_PORTPARAMS_AUDIOCHANNELS 
 
 <dd>
 <p>The <b>AudioChannels</b> field is valid.</p>
 </dd>
 
-### -field <a id="SYNTH_PORTPARAMS_SAMPLERATE_"></a><a id="synth_portparams_samplerate_"></a>SYNTH_PORTPARAMS_SAMPLERATE 
+### -field SYNTH_PORTPARAMS_SAMPLERATE 
 
 <dd>
 <p>The <b>SampleRate</b> field is valid.</p>
 </dd>
 
-### -field <a id="SYNTH_PORTPARAMS_EFFECT"></a><a id="synth_portparams_effect"></a>SYNTH_PORTPARAMS_EFFECT
+### -field SYNTH_PORTPARAMS_EFFECT
 
 <dd>
 <p>The <b>EffectsFlags</b> flag is valid.</p>
 </dd>
 
-### -field <a id="SYNTH_PORTPARAMS_SHARE"></a><a id="synth_portparams_share"></a>SYNTH_PORTPARAMS_SHARE
+### -field SYNTH_PORTPARAMS_SHARE
 
 <dd>
 <p>The <b>Share</b> field is valid.</p>
@@ -105,50 +105,50 @@ typedef struct _SYNTH_PORTPARAMS {
 </dl>
 </dd>
 
-### -field <b>Voices</b>
+### -field Voices
 
 <dd>
 <p>Specifies the maximum number of simultaneous voices that the application wishes to play on this port.</p>
 </dd>
 
-### -field <b>ChannelGroups</b>
+### -field ChannelGroups
 
 <dd>
 <p>Specifies the number of channel groups requested for this port. Each channel group contains 16 channels.</p>
 </dd>
 
-### -field <b>AudioChannels</b>
+### -field AudioChannels
 
 <dd>
 <p>Specifies the number of audio channels.</p>
 </dd>
 
-### -field <b>SampleRate</b>
+### -field SampleRate
 
 <dd>
 <p>Specifies the number of samples per second for the audio data produced by the port.</p>
 </dd>
 
-### -field <b>EffectsFlags</b>
+### -field EffectsFlags
 
 <dd>
 <p>Specifies the type of effects produced for audio output from this port. This member is a bitfield whose value is either zero or the bitwise OR of one or more of the following flag bits:</p>
 <p></p>
 <dl>
 
-### -field <a id="SYNTH_EFFECT_REVERB"></a><a id="synth_effect_reverb"></a>SYNTH_EFFECT_REVERB
+### -field SYNTH_EFFECT_REVERB
 
 <dd>
 <p>Reverb is enabled.</p>
 </dd>
 
-### -field <a id="SYNTH_EFFECT_CHORUS"></a><a id="synth_effect_chorus"></a>SYNTH_EFFECT_CHORUS
+### -field SYNTH_EFFECT_CHORUS
 
 <dd>
 <p>Chorus effect is enabled.</p>
 </dd>
 
-### -field <a id="SYNTH_EFFECT_DELAY"></a><a id="synth_effect_delay"></a>SYNTH_EFFECT_DELAY
+### -field SYNTH_EFFECT_DELAY
 
 <dd>
 <p>Delay effect is enabled.</p>
@@ -157,7 +157,7 @@ typedef struct _SYNTH_PORTPARAMS {
 <p>If no effects are enabled, this member is set to SYNTH_EFFECT_NONE, which is zero.</p>
 </dd>
 
-### -field <b>Share</b>
+### -field Share
 
 <dd>
 <p>Specifies whether the port's channel groups are shared. When this member is <b>TRUE</b>, all ports use the channel groups assigned to this port. When this member is <b>FALSE</b>, the port is opened in exclusive mode and the use of the same channel groups by other ports is not allowed.</p>

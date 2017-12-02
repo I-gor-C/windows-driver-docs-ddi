@@ -65,73 +65,73 @@ typedef struct _AVC_STREAM_REQUEST_BLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>SizeOfThisBlock</b>
+### -field SizeOfThisBlock
 
 <dd>
 <p>Specifies the size of the request block in bytes. Do not set this value directly. Instead, use the <a href="..\avcstrm\nf-avcstrm-init-avcstrm-header.md">INIT_AVCSTRM_HEADER</a> macro.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of <i>avcstrm.sys</i> device driver interface (DDI) to service a request. Do not set this value directly. Instead, use the <a href="..\avcstrm\nf-avcstrm-init-avcstrm-header.md">INIT_AVCSTRM_HEADER</a> macro.</p>
 </dd>
 
-### -field <b>Function</b>
+### -field Function
 
 <dd>
 <p>Indicates the request (function code) <i>avcstrm.sys</i> services. This must be a value from the <a href="..\avcstrm\ne-avcstrm--avcstrm-function.md">AVCSTRM_FUNCTION</a> enumeration. Do not set this value directly. Instead, use the <a href="..\avcstrm\nf-avcstrm-init-avcstrm-header.md">INIT_AVCSTRM_HEADER</a> macro.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Special flags to indicate special service or deviation from standard service. This is currently not used.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>Final status of this request.</p>
 </dd>
 
-### -field <b>AVCStreamContext</b>
+### -field AVCStreamContext
 
 <dd>
 <p>This is context (handle) of a stream. Set this to <b>NULL</b> for the <b>AVCSTRM_OPEN</b> function code. For other function codes, this must be set to a valid value retrieved from an earlier call to AVCSTRM_OPEN.</p>
 </dd>
 
-### -field <b>Context1</b>
+### -field Context1
 
 <dd>
 <p>The context pointers of the client.</p>
 </dd>
 
-### -field <b>Context2</b>
+### -field Context2
 
 <dd>
 <p>The context pointers of the client.</p>
 </dd>
 
-### -field <b>Context3</b>
+### -field Context3
 
 <dd>
 <p>The context pointers of the client.</p>
 </dd>
 
-### -field <b>Context4</b>
+### -field Context4
 
 <dd>
 <p>The context pointers of the client.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>CommandData</b>
+### -field CommandData
 
 <dd>
 <p>This is a union of command data to be passed to <i>avcstrm.sys</i> for service.</p>

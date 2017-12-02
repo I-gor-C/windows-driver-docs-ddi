@@ -7,7 +7,7 @@ old-location: netvista\vmbpacketgetchannel.htm
 old-project: netvista
 ms.assetid: BE5BB8CD-6B2F-4CFE-8A1E-B13BD9D7DBE7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbPacketGetChannel
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ VMBCHANNEL VmbPacketGetChannel(
 ## -parameters
 <dl>
 
-### -param <i>PacketObject</i> [in]
+### -param PacketObject [in]
 
 <dd>
 <p>The packet object.</p>

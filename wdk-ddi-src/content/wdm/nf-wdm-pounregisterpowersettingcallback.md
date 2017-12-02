@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>PoUnregisterPowerSettingCallback</b> routine unregisters a power-setting callback routine that a driver previously registered by calling the <a href="..\ntifs\nf-ntifs-poregisterpowersettingcallback.md">PoRegisterPowerSettingCallback</a> routine.</p>
+<p>The <b>PoUnregisterPowerSettingCallback</b> routine unregisters a power-setting callback routine that a driver previously registered by calling the <a href="..\wdm\nf-wdm-poregisterpowersettingcallback.md">PoRegisterPowerSettingCallback</a> routine.</p>
 
 
 ## -syntax
@@ -55,7 +55,7 @@ NTSTATUS PoUnregisterPowerSettingCallback(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in, out]
+### -param Handle [in, out]
 
 <dd>
 <p>A handle to a callback routine that a driver registered by calling <b>PoRegisterPowerSettingCallback</b>.</p>
@@ -139,7 +139,7 @@ NTSTATUS PoUnregisterPowerSettingCallback(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\nf-ntifs-poregisterpowersettingcallback.md">PoRegisterPowerSettingCallback</a>
+<a href="..\wdm\nf-wdm-poregisterpowersettingcallback.md">PoRegisterPowerSettingCallback</a>
 </dt>
 </dl>
 <p> </p>

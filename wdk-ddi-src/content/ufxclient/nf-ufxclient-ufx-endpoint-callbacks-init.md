@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>UFX_ENDPOINT_CALLBACKS_INIT</b> macro initializes the <a href="buses.ufx_endpoint_callbacks">UFX_ENDPOINT_CALLBACKS</a> structure.<div class="alert"><b>Note</b>  <p class="note">Note that there are currently no endpoint callback functions defined in the <a href="buses.ufx_endpoint_callbacks">UFX_ENDPOINT_CALLBACKS</a> structure. </p>
+<p>The <b>UFX_ENDPOINT_CALLBACKS_INIT</b> macro initializes the <a href="..\ufxclient\ns-ufxclient--ufx-endpoint-callbacks.md">UFX_ENDPOINT_CALLBACKS</a> structure.<div class="alert"><b>Note</b>  <p class="note">Note that there are currently no endpoint callback functions defined in the <a href="..\ufxclient\ns-ufxclient--ufx-endpoint-callbacks.md">UFX_ENDPOINT_CALLBACKS</a> structure. </p>
 </div>
 <div> </div>
 </p>
@@ -58,10 +58,10 @@ FORCEINLINE void UFX_ENDPOINT_CALLBACKS_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Callbacks</i> [out]
+### -param Callbacks [out]
 
 <dd>
-<p>A pointer to the <a href="buses.ufx_endpoint_callbacks">UFX_ENDPOINT_CALLBACKS</a> structure.</p>
+<p>A pointer to the <a href="..\ufxclient\ns-ufxclient--ufx-endpoint-callbacks.md">UFX_ENDPOINT_CALLBACKS</a> structure.</p>
 </dd>
 </dl>
 
@@ -69,7 +69,7 @@ FORCEINLINE void UFX_ENDPOINT_CALLBACKS_INIT(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>The <b>UFX_ENDPOINT_CALLBACKS_INIT</b> macro will set all fields of the <a href="buses.ufx_endpoint_callbacks">UFX_ENDPOINT_CALLBACKS</a> structure to zero and set the size field appropriately.</p>
+<p>The <b>UFX_ENDPOINT_CALLBACKS_INIT</b> macro will set all fields of the <a href="..\ufxclient\ns-ufxclient--ufx-endpoint-callbacks.md">UFX_ENDPOINT_CALLBACKS</a> structure to zero and set the size field appropriately.</p>
 
 ## -requirements
 <table>

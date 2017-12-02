@@ -54,7 +54,7 @@ PMDL KsStreamPointerGetMdl(
 ## -parameters
 <dl>
 
-### -param <i>StreamPointer</i> [in]
+### -param StreamPointer [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure that references the frame for which to return the associated MDL.</p>
@@ -67,7 +67,7 @@ PMDL KsStreamPointerGetMdl(
 ## -remarks
 <p>The stream pointer <b>must</b> be locked in order for <b>KsStreamPointerGetMdl </b>to execute successfully.</p>
 
-<p>Also see <a href="NULL">Stream Pointers</a>.</p>
+<p>Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736f">Stream Pointers</a>.</p>
 
 ## -requirements
 <table>

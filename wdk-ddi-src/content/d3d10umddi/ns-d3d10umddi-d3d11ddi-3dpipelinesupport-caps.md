@@ -54,7 +54,7 @@ typedef struct D3D11DDI_3DPIPELINESUPPORT_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>Caps</b>
+### -field Caps
 
 <dd>
 <p>[in] A value that identifies the pipeline capabilities of the driver. </p>

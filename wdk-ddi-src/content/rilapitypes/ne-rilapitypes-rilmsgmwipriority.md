@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwipriority_2.htm
 old-project: netvista
 ms.assetid: a9efeb68-8838-476f-8ffb-11c8c71163fc
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef enum _RILMSGMWIPRIORITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGMWIPRIORITY_LOW"></a><a id="ril_msgmwipriority_low"></a><b>RIL_MSGMWIPRIORITY_LOW</b>
+### -field RIL_MSGMWIPRIORITY_LOW
 
 <dd></dd>
 
-### -field <a id="RIL_MSGMWIPRIORITY_NORMAL"></a><a id="ril_msgmwipriority_normal"></a><b>RIL_MSGMWIPRIORITY_NORMAL</b>
+### -field RIL_MSGMWIPRIORITY_NORMAL
 
 <dd></dd>
 
-### -field <a id="RIL_MSGMWIPRIORITY_URGENT"></a><a id="ril_msgmwipriority_urgent"></a><b>RIL_MSGMWIPRIORITY_URGENT</b>
+### -field RIL_MSGMWIPRIORITY_URGENT
 
 <dd></dd>
 
-### -field <a id="RIL_MSGMWIPRIORITY_EMERGENCY"></a><a id="ril_msgmwipriority_emergency"></a><b>RIL_MSGMWIPRIORITY_EMERGENCY</b>
+### -field RIL_MSGMWIPRIORITY_EMERGENCY
 
 <dd></dd>
 
-### -field <a id="RIL_MSGMWIPRIORITY_MAX"></a><a id="ril_msgmwipriority_max"></a><b>RIL_MSGMWIPRIORITY_MAX</b>
+### -field RIL_MSGMWIPRIORITY_MAX
 
 <dd></dd>
 </dl>

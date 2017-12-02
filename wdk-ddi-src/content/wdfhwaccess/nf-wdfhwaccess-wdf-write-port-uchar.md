@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_port_uchar.htm
 old-project: wdf
 ms.assetid: F7F40415-87E9-4870-8B10-83009159543E
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WRITE_PORT_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,20 +59,20 @@ void WDF_WRITE_PORT_UCHAR(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>Port</i> [in]
+### -param Port [in]
 
 <dd>
 <p>A pointer to the port, which must be a mapped memory range in I/O space.
 </p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>Specifies a byte to be written to the port.</p>

@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="ISCSI_NO_AUTH_TYPE"></a><a id="iscsi_no_auth_type"></a><b>ISCSI_NO_AUTH_TYPE</b>
+### -field ISCSI_NO_AUTH_TYPE
 
 <dd>
 <p>No authentication type was specified. </p>
 </dd>
 
-### -field <a id="ISCSI_CHAP_AUTH_TYPE"></a><a id="iscsi_chap_auth_type"></a><b>ISCSI_CHAP_AUTH_TYPE</b>
+### -field ISCSI_CHAP_AUTH_TYPE
 
 <dd>
 <p>Challenge handshake authentication protocol (CHAP).</p>
 </dd>
 
-### -field <a id="ISCSI_MUTUAL_CHAP_AUTH_TYPE"></a><a id="iscsi_mutual_chap_auth_type"></a><b>ISCSI_MUTUAL_CHAP_AUTH_TYPE</b>
+### -field ISCSI_MUTUAL_CHAP_AUTH_TYPE
 
 <dd>
 <p>Mutual (2-way) CHAP authentication.</p>

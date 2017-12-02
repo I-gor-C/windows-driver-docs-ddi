@@ -56,19 +56,19 @@ typedef enum _PC_EXIT_LATENCY {
 ## -enum-fields
 <dl>
 
-### -field <a id="PcExitLatencyInstant"></a><a id="pcexitlatencyinstant"></a><a id="PCEXITLATENCYINSTANT"></a><b>PcExitLatencyInstant</b>
+### -field PcExitLatencyInstant
 
 <dd>
 <p>Indicates a 0-millisecond latency. This means "Do not power down" and it  will only be sent when a device is in the D0 state.</p>
 </dd>
 
-### -field <a id="PcExitLatencyFast"></a><a id="pcexitlatencyfast"></a><a id="PCEXITLATENCYFAST"></a><b>PcExitLatencyFast</b>
+### -field PcExitLatencyFast
 
 <dd>
 <p>Indicates a 35-millisecond resume latency.</p>
 </dd>
 
-### -field <a id="PcExitLatencyResponsive"></a><a id="pcexitlatencyresponsive"></a><a id="PCEXITLATENCYRESPONSIVE"></a><b>PcExitLatencyResponsive</b>
+### -field PcExitLatencyResponsive
 
 <dd>
 <p>Indicates a 300-millisecond resume latency.</p>

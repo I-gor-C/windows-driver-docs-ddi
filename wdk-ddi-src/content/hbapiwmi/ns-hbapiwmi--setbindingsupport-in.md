@@ -55,13 +55,13 @@ typedef struct _SetBindingSupport_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>Contains a worldwide name that indicates the port whose persistent bindings are to be retrieved. </p>
 </dd>
 
-### -field <b>BindType</b>
+### -field BindType
 
 <dd>
 <p>Contains a bitmap that indicates the ability of an HBA and its miniport driver to provide a specific set of features related to persistent binding. For a list of values that this parameter can have, see the description of the HBA_BIND_TYPE WMI class qualifier.</p>

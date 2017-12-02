@@ -63,49 +63,49 @@ typedef union {
 ## -struct-fields
 <dl>
 
-### -field <b>FormatSize</b>
+### -field FormatSize
 
 <dd>
 <p>Specifies the size, in bytes, of this structure. This must be at least <b>sizeof</b>(KSDATARANGE), but can be larger for specific settings of <b>MajorFormat</b>, <b>SubFormat</b>, and <b>Specifier</b>. See the descriptions for these members for more information. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Set Flags to KSDATARANGE_ATTRIBUTES (0x2) to indicate that the following KSDATARANGE is to be interpreted as an attribute list that uses the <a href="stream.ksattribute_list">KSATTRIBUTE_LIST</a> structure.</p>
 </dd>
 
-### -field <b>SampleSize</b>
+### -field SampleSize
 
 <dd>
 <p>This member is ignored.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Drivers must set this member to zero.</p>
 </dd>
 
-### -field <b>MajorFormat</b>
+### -field MajorFormat
 
 <dd>
 <p>Specifies either the specific major format of a data format that this data range matches, or KSDATAFORMAT_TYPE_WILDCARD if this data range matches all major formats. When <b>MajorFormat</b> has this value, both <b>SubFormat</b> and <b>Specifier</b> must also take on their wild card values. For more information about this member, see <b>Remarks</b>.</p>
 </dd>
 
-### -field <b>SubFormat</b>
+### -field SubFormat
 
 <dd>
 <p>Specifies either the specific subformat of a data format that this data range matches, or KSDATAFORMAT_SUBTYPE_WILDCARD if this data range matches all subformats. (In this instance, the specifier is not required to be its wild card value, unless <b>MajorFormat</b> is KSDATAFORMAT_TYPE_WILDCARD.) For more information about this member, see <b>Remarks</b>.</p>
 </dd>
 
-### -field <b>Specifier</b>
+### -field Specifier
 
 <dd>
 <p>Specifies either the specifier of the data format that this data range matches, or KSDATAFORMAT_SPECIFIER_WILDCARD if this data range matches all specifier values. For more information about this member, see <b>Remarks</b>.</p>
 </dd>
 
-### -field <b>Alignment</b>
+### -field Alignment
 
 <dd>
 <p>This member specifies the memory alignment in bytes for this buffer.</p>
@@ -115,7 +115,7 @@ typedef union {
 ## -remarks
 <p>Drivers use data ranges to describe the ranges of data formats they support.</p>
 
-<p>For a list of <b>MajorFormat</b>, <b>SubFormat</b>, and <b>Specifier</b> GUIDs, see <a href="NULL">Stream Categories</a> and its subtopics.</p>
+<p>For a list of <b>MajorFormat</b>, <b>SubFormat</b>, and <b>Specifier</b> GUIDs, see <a href="https://msdn.microsoft.com/dc2af282-4976-42d8-b07b-13b2a6dfb7d5">Stream Categories</a> and its subtopics.</p>
 
 ## -requirements
 <table>
@@ -134,7 +134,7 @@ typedef union {
 ## -see-also
 <dl>
 <dt>
-<a href="NULL">Stream Categories</a>
+<a href="https://msdn.microsoft.com/dc2af282-4976-42d8-b07b-13b2a6dfb7d5">Stream Categories</a>
 </dt>
 </dl>
 <p> </p>

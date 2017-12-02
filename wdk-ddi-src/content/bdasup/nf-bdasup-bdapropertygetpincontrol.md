@@ -56,19 +56,19 @@ NTSTATUS BdaPropertyGetPinControl(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Points to the IRP for the request to retrieve pin information. The BDA minidriver receives this IRP with either the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564348">KSPROPERTY_BDA_PIN_ID</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff564350">KSPROPERTY_BDA_PIN_TYPE</a> request.</p>
 </dd>
 
-### -param <i>pKSProperty</i> [in]
+### -param pKSProperty [in]
 
 <dd>
 <p>Points to a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property and request type of the property request.</p>
 </dd>
 
-### -param <i>pulProperty</i> [out, optional]
+### -param pulProperty [out, optional]
 
 <dd>
 <p>Points to a variable that receives either the identifier or type of a pin. </p>

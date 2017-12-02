@@ -54,7 +54,7 @@ PCONTROLLER_OBJECT IoCreateController(
 ## -parameters
 <dl>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>Specifies the number of bytes to be allocated for the controller extension.</p>

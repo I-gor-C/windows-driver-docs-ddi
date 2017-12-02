@@ -60,43 +60,43 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>StreamIndex</b>
+### -field StreamIndex
 
 <dd>
 <p>Specifies the zero-based index of the stream being queried.</p>
 </dd>
 
-### -field <b>DefaultKeyFrameRate</b>
+### -field DefaultKeyFrameRate
 
 <dd>
 <p>Indicates the estimated number of frames per key frame.</p>
 </dd>
 
-### -field <b>DefaultPFrameRate</b>
+### -field DefaultPFrameRate
 
 <dd>
 <p>Indicates the predicted number of frames per key frame.</p>
 </dd>
 
-### -field <b>DefaultQuality</b>
+### -field DefaultQuality
 
 <dd>
 <p>Specifies the default quality value. This value should be in the range from 0 through 10000. </p>
 </dd>
 
-### -field <b>NumberOfQualitySettings</b>
+### -field NumberOfQualitySettings
 
 <dd>
 <p>Indicates the number of discrete compression quality settings the device supports.</p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Specifies the compression capabilities of the device. This member can be one or more (logically ORed) of the values from the <a href="..\ksmedia\ne-ksmedia-ks-compressioncaps.md">KS_CompressionCaps</a> enumeration.</p>

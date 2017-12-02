@@ -7,7 +7,7 @@ old-location: netvista\rilcalldisconnectdetails_2.htm
 old-project: netvista
 ms.assetid: 57b4d120-e12a-4821-a379-a392b804590c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLDISCONNECTDETAILS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -77,95 +77,95 @@ typedef struct _RILCALLDISCONNECTDETAILS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwDisconnectGroup</b>
+### -field dwDisconnectGroup
 
 <dd></dd>
 
-### -field <b>RILCAUSEUNION</b>
+### -field RILCAUSEUNION
 
 <dd></dd>
 
-### -field <b>causeUnion</b>
+### -field causeUnion
 
 <dd></dd>
 
-### -field <b>switch_is</b>
+### -field switch_is
 
 <dd></dd>
 
-### -field <b>dwDisconnectGroup</b>
+### -field dwDisconnectGroup
 
 <dd></dd>
 
-### -field <b>unGPPCause</b>
+### -field unGPPCause
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_CD_3GPP_NETWORK_CAUSE</b>
+### -field RIL_CD_3GPP_NETWORK_CAUSE
 
 <dd></dd>
 
-### -field <b>unGPPRejectCause</b>
+### -field unGPPRejectCause
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_CD_3GPP_REJECT_CAUSE</b>
+### -field RIL_CD_3GPP_REJECT_CAUSE
 
 <dd></dd>
 
-### -field <b>unGPP2Cause</b>
+### -field unGPP2Cause
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_CD_3GPP2_VENDOR_CAUSE</b>
+### -field RIL_CD_3GPP2_VENDOR_CAUSE
 
 <dd></dd>
 
-### -field <b>unIMSSIPCause</b>
+### -field unIMSSIPCause
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_CD_IMS_SIP_CAUSE</b>
+### -field RIL_CD_IMS_SIP_CAUSE
 
 <dd></dd>
 
-### -field <b>dwASCode</b>
+### -field dwASCode
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_CD_AS_CAUSE</b>
+### -field RIL_CD_AS_CAUSE
 
 <dd></dd>
 
-### -field <b>dwOtherCode</b>
+### -field dwOtherCode
 
 <dd></dd>
 
-### -field <b>case</b>
+### -field case
 
 <dd></dd>
 
-### -field <b>RIL_CD_OTHER_CAUSE</b>
+### -field RIL_CD_OTHER_CAUSE
 
 <dd></dd>
 </dl>

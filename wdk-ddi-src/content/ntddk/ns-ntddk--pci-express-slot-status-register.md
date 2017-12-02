@@ -66,50 +66,50 @@ typedef union _PCI_EXPRESS_SLOT_STATUS_REGISTER {
 ## -struct-fields
 <dl>
 
-### -field <b>AttentionButtonPressed</b>
+### -field AttentionButtonPressed
 
 <dd>
 <p>A single bit that indicates that the attention button for the slot is being pressed.</p>
 </dd>
 
-### -field <b>PowerFaultDetected</b>
+### -field PowerFaultDetected
 
 <dd>
 <p>A single bit that indicates that a power fault at the slot has been detected.</p>
 </dd>
 
-### -field <b>MRLSensorChanged</b>
+### -field MRLSensorChanged
 
 <dd>
 <p>A single bit that indicates that the state of the slot's manually operated retention latch (MRL) sensor has changed.</p>
 </dd>
 
-### -field <b>PresenceDetectChanged</b>
+### -field PresenceDetectChanged
 
 <dd>
 <p>A single bit that indicates that the card presence detection state for the slot has changed.</p>
 </dd>
 
-### -field <b>CommandCompleted</b>
+### -field CommandCompleted
 
 <dd>
 <p>A single bit that indicates that a command has been completed by the slot's hot-plug controller.</p>
 </dd>
 
-### -field <b>MRLSensorState</b>
+### -field MRLSensorState
 
 <dd>
 <p>The slot's manually operated retention latch (MRL) sensor state. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="MRLClosed"></a><a id="mrlclosed"></a><a id="MRLCLOSED"></a><b>MRLClosed</b>
+### -field MRLClosed
 
 <dd>
 <p>The MRL is closed.</p>
 </dd>
 
-### -field <a id="MRLOpen"></a><a id="mrlopen"></a><a id="MRLOPEN"></a><b>MRLOpen</b>
+### -field MRLOpen
 
 <dd>
 <p>The MRL is open.</p>
@@ -117,20 +117,20 @@ typedef union _PCI_EXPRESS_SLOT_STATUS_REGISTER {
 </dl>
 </dd>
 
-### -field <b>PresenceDetectState</b>
+### -field PresenceDetectState
 
 <dd>
 <p>The slot's card presence detection state. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="SlotEmpty"></a><a id="slotempty"></a><a id="SLOTEMPTY"></a><b>SlotEmpty</b>
+### -field SlotEmpty
 
 <dd>
 <p>The slot is empty.</p>
 </dd>
 
-### -field <a id="CardPresent"></a><a id="cardpresent"></a><a id="CARDPRESENT"></a><b>CardPresent</b>
+### -field CardPresent
 
 <dd>
 <p>A card is present in the slot.</p>
@@ -138,25 +138,25 @@ typedef union _PCI_EXPRESS_SLOT_STATUS_REGISTER {
 </dl>
 </dd>
 
-### -field <b>ElectromechanicalLockEngaged</b>
+### -field ElectromechanicalLockEngaged
 
 <dd>
 <p>A single bit that indicates if the slot's electromechanical interlock is engaged.</p>
 </dd>
 
-### -field <b>DataLinkStateChanged</b>
+### -field DataLinkStateChanged
 
 <dd>
 <p>A single bit that indicates that the data link layer active bit of the PCIe link status register of the PCIe capability structure has changed.</p>
 </dd>
 
-### -field <b>Rsvd</b>
+### -field Rsvd
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>A USHORT representation of the contents of the PCI_EXPRESS_SLOT_STATUS_REGISTER structure.</p>

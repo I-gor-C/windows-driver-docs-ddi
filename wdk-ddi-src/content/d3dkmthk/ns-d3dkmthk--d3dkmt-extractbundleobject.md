@@ -57,25 +57,25 @@ typedef struct _D3DKMT_EXTRACTBUNDLEOBJECT {
 ## -struct-fields
 <dl>
 
-### -field <b>hNtBundleHandle</b>
+### -field hNtBundleHandle
 
 <dd>
 <p>The NT bundle handle.</p>
 </dd>
 
-### -field <b>cObjects</b>
+### -field cObjects
 
 <dd>
 <p>The number of the DXGK object to be unbundled.</p>
 </dd>
 
-### -field <b>pdwDesiredAccess</b>
+### -field pdwDesiredAccess
 
 <dd>
 <p>The desired access for each NT handle for DXGK objects.</p>
 </dd>
 
-### -field <b>phNtHandles</b>
+### -field phNtHandles
 
 <dd>
 <p>The pointer to an array of NT handles for each DXGK object.</p>

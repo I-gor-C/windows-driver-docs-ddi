@@ -7,7 +7,7 @@ old-location: netvista\ndisoffloadtcpreceive.htm
 old-project: netvista
 ms.assetid: 021f41c4-6ba9-418e-bc18-131ce6d90877
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisOffloadTcpReceive
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ NDIS_STATUS NdisOffloadTcpReceive(
 ## -parameters
 <dl>
 
-### -param <i>NdisOffloadHandle</i> [in]
+### -param NdisOffloadHandle [in]
 
 <dd>
 <p>A handle to an 
@@ -68,7 +68,7 @@ NDIS_STATUS NdisOffloadTcpReceive(
      Referencing Offloaded State Through an Intermediate Driver</a>.</p>
 </dd>
 
-### -param <i>NetBufferList</i> [in]
+### -param NetBufferList [in]
 
 <dd>
 <p>A pointer to a 
@@ -93,7 +93,7 @@ NDIS_STATUS NdisOffloadTcpReceive(
     MiniportTcpOffloadReceive</a> function, an intermediate driver calls the 
     <b>NdisOffloadTcpReceive</b> function to propagate the receive operation to the underlying intermediate
     driver or offload target. For more information, see 
-    <a href="NULL">Propagating I/O Operations</a>.</p>
+    <a href="netvista.propagating_i_o_operations">Propagating I/O Operations</a>.</p>
 
 <p>To the 
     <b>NdisOffloadTcpReceive</b> function, the intermediate driver passes the following:</p>
@@ -172,4 +172,4 @@ NDIS_STATUS NdisOffloadTcpReceive(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOffloadTcpReceive function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOffloadTcpReceive function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -55,13 +55,13 @@ typedef union _DXGK_MONITORLINKINFO_USAGEHINTS {
 ## -struct-fields
 <dl>
 
-### -field <b>Hidden</b>
+### -field Hidden
 
 <dd>
 <p>If TRUE, DxgKrnl will hide this display from Win32 so it cannot be a part of the desktop.</p>
 </dd>
 
-### -field <b>Reserved </b>
+### -field Reserved 
 
 <dd>
 <p>This value is reserved for system use.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilgetpreferencedoperatorlistformat_2.htm
 old-project: netvista
 ms.assetid: 1193174e-9247-4854-94d8-7404b2b15e5c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILGETPREFERENCEDOPERATORLISTFORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_OPFORMAT_SHORT"></a><a id="ril_opformat_short"></a><b>RIL_OPFORMAT_SHORT</b>
+### -field RIL_OPFORMAT_SHORT
 
 <dd></dd>
 
-### -field <a id="RIL_OPFORMAT_NUM"></a><a id="ril_opformat_num"></a><b>RIL_OPFORMAT_NUM</b>
+### -field RIL_OPFORMAT_NUM
 
 <dd></dd>
 
-### -field <a id="RIL_OPFORMAT_MAX"></a><a id="ril_opformat_max"></a><b>RIL_OPFORMAT_MAX</b>
+### -field RIL_OPFORMAT_MAX
 
 <dd></dd>
 </dl>

@@ -54,7 +54,7 @@ BOOL DeleteProperty(
 ## -parameters
 <dl>
 
-### -param <i>pszName</i> [in]
+### -param pszName [in]
 
 <dd>
 <p>The name of the property to delete from the property bag.</p>

@@ -55,13 +55,13 @@ HBA_STATUS HBA_API HBA_RemoveAllPersistentBindings(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
 </dd>
 
-### -param <i>HbaPortWWN</i> [in]
+### -param HbaPortWWN [in]
 
 <dd>
 <p>Contains a 64-bit worldwide name (WWN) that uniquely identifies the local HBA port for which to remove all persistent bindings. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>

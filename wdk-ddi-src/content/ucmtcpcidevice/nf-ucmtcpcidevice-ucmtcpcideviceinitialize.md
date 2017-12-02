@@ -58,16 +58,16 @@ NTSTATUS UcmTcpciDeviceInitialize(
 ## -parameters
 <dl>
 
-### -param <i>WdfDevice</i> 
+### -param WdfDevice 
 
 <dd>
 <p>A handle to a framework device object that the client driver received in the previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. </p>
 </dd>
 
-### -param <i>Config</i> 
+### -param Config 
 
 <dd>
-<p>A pointer to a caller-supplied <a href="buses.ucmtcpci_device_config">UCMTCPCI_DEVICE_CONFIG</a> structure that is initialized by calling <a href="buses.ucmtcpci_device_config_init">UCMTCPCI_DEVICE_CONFIG_INIT</a>. This value cannot be NULL.</p>
+<p>A pointer to a caller-supplied <a href="..\ucmtcpcidevice\ns-ucmtcpcidevice--ucmtcpci-device-config.md">UCMTCPCI_DEVICE_CONFIG</a> structure that is initialized by calling <a href="..\ucmtcpcidevice\nf-ucmtcpcidevice-ucmtcpci-device-config-init.md">UCMTCPCI_DEVICE_CONFIG_INIT</a>. This value cannot be NULL.</p>
 </dd>
 </dl>
 
@@ -76,9 +76,9 @@ NTSTATUS UcmTcpciDeviceInitialize(
 (NTSTATUS) The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code.
                     </p><dl>
 <dt><b>STATUS_INFO_LENGTH_MISMATCH</b></dt>
-</dl><p>Invalid size for the structure pointed to by <i>Config</i>. Must be size of <a href="buses.ucmtcpci_device_config">UCMTCPCI_DEVICE_CONFIG</a>. </p><dl>
+</dl><p>Invalid size for the structure pointed to by <i>Config</i>. Must be size of <a href="..\ucmtcpcidevice\ns-ucmtcpcidevice--ucmtcpci-device-config.md">UCMTCPCI_DEVICE_CONFIG</a>. </p><dl>
 <dt><b>STATUS_INVALID_DEVICE_STATE</b></dt>
-</dl><p>The Plug and Play state of the framework device object's is uninitialized. Call <a href="buses.ucmtcpcideviceinitialize">UcmTcpciDeviceInitialize</a> within the driver's implementation of <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EVT_WDF_DRIVER_DEVICE_ADD</a>.</p>
+</dl><p>The Plug and Play state of the framework device object's is uninitialized. Call <a href="..\ucmtcpcidevice\nf-ucmtcpcidevice-ucmtcpcideviceinitialize.md">UcmTcpciDeviceInitialize</a> within the driver's implementation of <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EVT_WDF_DRIVER_DEVICE_ADD</a>.</p>
 
 <p> </p>
 

@@ -60,25 +60,25 @@ typedef struct _D3DHAL_DP2SETSTREAMSOURCE2 {
 ## -struct-fields
 <dl>
 
-### -field <b>dwStream</b>
+### -field dwStream
 
 <dd>
 <p>Specifies the stream being bound. It has a value between zero and the maximum number of streams specified by the driver.</p>
 </dd>
 
-### -field <b>dwVBHandle</b>
+### -field dwVBHandle
 
 <dd>
 <p>Specifies the vertex buffer handle. It is legal for the vertex buffer handle to be zero, in which case the stream is no longer bound to a vertex buffer.</p>
 </dd>
 
-### -field <b>dwOffset</b>
+### -field dwOffset
 
 <dd>
 <p>Specifies the offset of the first vertex size in bytes.</p>
 </dd>
 
-### -field <b>dwStride</b>
+### -field dwStride
 
 <dd>
 <p>Specifies the vertex size in bytes.</p>

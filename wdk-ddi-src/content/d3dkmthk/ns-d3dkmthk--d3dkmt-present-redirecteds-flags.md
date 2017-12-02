@@ -59,13 +59,13 @@ typedef struct _D3DKMT_PRESENT_REDIRECTEDS_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for use by the operating system.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>This value is used to operate over the other members.</p>

@@ -54,7 +54,7 @@ HRESULT SetImageContent(
 ## -parameters
 <dl>
 
-### -param <i>contentType</i> [in]
+### -param contentType [in]
 
 <dd>
 <p>The type of content of the image.</p>

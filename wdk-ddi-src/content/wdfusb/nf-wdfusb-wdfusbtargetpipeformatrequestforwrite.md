@@ -7,7 +7,7 @@ old-location: wdf\wdfusbtargetpipeformatrequestforwrite.htm
 old-project: wdf
 ms.assetid: cf880701-d1e9-4bda-8d6c-35f35b707e9b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfUsbTargetPipeFormatRequestForWrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ NTSTATUS WdfUsbTargetPipeFormatRequestForWrite(
 ## -parameters
 <dl>
 
-### -param <i>Pipe</i> [in]
+### -param Pipe [in]
 
 <dd>
 <p>A handle to a framework pipe object that was obtained by calling <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>. </p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>WriteMemory</i> [in, optional]
+### -param WriteMemory [in, optional]
 
 <dd>
 <p>A handle to a framework memory object. This object represents a buffer that contains data that will be sent to the pipe. For more information about this buffer, see the following Remarks section.</p>
 </dd>
 
-### -param <i>WriteOffset</i> [in, optional]
+### -param WriteOffset [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wudfddi_types\ns-wudfddi-types--wdfmemory-offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address and length, within the write buffer, for the data transfer. If this pointer is <b>NULL</b>, the data transfer begins at the beginning of the buffer, and the transfer size is the buffer size.</p>
@@ -95,7 +95,7 @@ NTSTATUS WdfUsbTargetPipeFormatRequestForWrite(
 <dt><b>STATUS_INTEGER_OVERFLOW</b></dt>
 </dl><p>The offset that the <i>Offset</i> parameter specified was invalid.</p><dl>
 <dt><b>STATUS_REQUEST_NOT_ACCEPTED</b></dt>
-</dl><p>The I/O request packet (<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>) that the <i>Request</i> parameter represents does not provide enough <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> structures to allow the driver to forward the request.</p>
+</dl><p>The I/O request packet (<a href="..\wdm\ns-wdm--irp.md">IRP</a>) that the <i>Request</i> parameter represents does not provide enough <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> structures to allow the driver to forward the request.</p>
 
 <p> </p>
 
@@ -221,4 +221,4 @@ NTSTATUS WdfUsbTargetPipeFormatRequestForWrite(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetPipeFormatRequestForWrite method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetPipeFormatRequestForWrite method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

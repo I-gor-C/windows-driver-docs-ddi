@@ -55,7 +55,7 @@ typedef struct IDARG_OUT_OPM_GET_CERTIFICATE_SIZE {
 ## -struct-fields
 <dl>
 
-### -field <b>CertificateSize</b>
+### -field CertificateSize
 
 <dd>
 <p>

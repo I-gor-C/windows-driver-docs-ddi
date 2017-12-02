@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest2_getcreateparametersex.htm
 old-project: wdf
 ms.assetid: bc34d86b-fa0e-419e-9342-61df12a8e484
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFIoRequest2, GetCreateParametersEx, IWDFIoRequest2::GetCreateParametersEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ void GetCreateParametersEx(
 ## -parameters
 <dl>
 
-### -param <i>pOptions</i> [out, optional]
+### -param pOptions [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives bit flags that indicate file creation options. These FILE_XXXX-named bit flags are defined in Wdm.h. </p>
@@ -68,21 +68,21 @@ void GetCreateParametersEx(
 <p>This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>pFileAttributes</i> [out, optional]
+### -param pFileAttributes [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives bit flags that indicate file attributes. These FILE_ATTRIBUTE_XXXX-named bit flags are defined in Wdm.h. For more information about these bit flags, see the description of the <i>FileAttributes</i> parameter of <b>ZwCreateFile</b>.</p>
 <p>This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>pShareAccess</i> [out, optional]
+### -param pShareAccess [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives bit flags that indicate file sharing options. These FILE_SHARE_XXXX-named bit flags are defined in Wdm.h. For more information about these bit flags, see the description of the <i>ShareAccess</i> parameter of <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>.</p>
 <p>This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>pDesiredAccess</i> [out, optional]
+### -param pDesiredAccess [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> structure that specifies the requested access to the file. For more information about this parameter, see the <i>DesiredAccess</i> parameter of <b>ZwCreateFile</b>. </p>
@@ -164,4 +164,4 @@ void GetCreateParametersEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest2::GetCreateParametersEx method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest2::GetCreateParametersEx method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

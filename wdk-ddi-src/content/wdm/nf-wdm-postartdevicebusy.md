@@ -55,10 +55,10 @@ VOID PoStartDeviceBusy(
 ## -parameters
 <dl>
 
-### -param <i>IdlePointer</i> [in, out]
+### -param IdlePointer [in, out]
 
 <dd>
-<p>A pointer to an idle counter. This is a pointer value that was previously returned by the <a href="..\ntifs\nf-ntifs-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a> routine. Because <b>PoRegisterDeviceForIdleDetection</b> might return a <b>NULL</b> pointer, the caller must verify that the pointer is non-<b>NULL</b> before it calls <b>PoStartDeviceBusy</b>.</p>
+<p>A pointer to an idle counter. This is a pointer value that was previously returned by the <a href="..\wdm\nf-wdm-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a> routine. Because <b>PoRegisterDeviceForIdleDetection</b> might return a <b>NULL</b> pointer, the caller must verify that the pointer is non-<b>NULL</b> before it calls <b>PoStartDeviceBusy</b>.</p>
 </dd>
 </dl>
 
@@ -66,11 +66,11 @@ VOID PoStartDeviceBusy(
 <p>None</p>
 
 ## -remarks
-<p>The <b>PoStartDeviceBusy</b> and <a href="..\ntifs\nf-ntifs-poenddevicebusy.md">PoEndDeviceBusy</a> routines mark the start and end of a time period in which a device is busy. Each call to <b>PoStartDeviceBusy</b> must be followed by a corresponding call to <b>PoEndDeviceBusy</b>.</p>
+<p>The <b>PoStartDeviceBusy</b> and <a href="..\wdm\nf-wdm-poenddevicebusy.md">PoEndDeviceBusy</a> routines mark the start and end of a time period in which a device is busy. Each call to <b>PoStartDeviceBusy</b> must be followed by a corresponding call to <b>PoEndDeviceBusy</b>.</p>
 
 <p>For each device, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> maintains a count of the number of outstanding <b>PoStartDeviceBusy</b> calls for which it has not yet received a corresponding <b>PoEndDeviceBusy</b> call. A <b>PoStartDeviceBusy</b> call increments the busy count by one. A <b>PoEndDeviceBusy</b> call decrements the busy count by one. A nonzero busy count disables the idle counter for the device. After the busy count reaches zero, the power manager resets the idle counter to the time-out period and enables the counter.</p>
 
-<p>Rather than use the <b>PoStartDeviceBusy</b> and <b>PoEndDeviceBusy</b> routines to reset the idle counter, you can call the <a href="..\ntifs\nf-ntifs-posetdevicebusyex.md">PoSetDeviceBusyEx</a> routine (or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559755">PoSetDeviceBusy</a> macro). To disable the idle counter during an extended busy period, a driver can call the <b>PoRegisterDeviceForIdleDetection</b> routine to disable and enable idle notifications at the start and end of the busy period. However, <b>PoStartDeviceBusy</b> and <b>PoEndDeviceBusy</b> are typically more convenient to use for this purpose, and you should consider using these routines in new code that you write for Windows 7 and later versions of Windows.</p>
+<p>Rather than use the <b>PoStartDeviceBusy</b> and <b>PoEndDeviceBusy</b> routines to reset the idle counter, you can call the <a href="..\wdm\nf-wdm-posetdevicebusyex.md">PoSetDeviceBusyEx</a> routine (or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559755">PoSetDeviceBusy</a> macro). To disable the idle counter during an extended busy period, a driver can call the <b>PoRegisterDeviceForIdleDetection</b> routine to disable and enable idle notifications at the start and end of the busy period. However, <b>PoStartDeviceBusy</b> and <b>PoEndDeviceBusy</b> are typically more convenient to use for this purpose, and you should consider using these routines in new code that you write for Windows 7 and later versions of Windows.</p>
 
 ## -requirements
 <table>
@@ -135,10 +135,10 @@ VOID PoStartDeviceBusy(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\nf-ntifs-poenddevicebusy.md">PoEndDeviceBusy</a>
+<a href="..\wdm\nf-wdm-poenddevicebusy.md">PoEndDeviceBusy</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a>
+<a href="..\wdm\nf-wdm-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559755">PoSetDeviceBusy</a>

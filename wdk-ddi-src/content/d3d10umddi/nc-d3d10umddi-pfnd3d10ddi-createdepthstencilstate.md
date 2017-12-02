@@ -60,25 +60,25 @@ VOID APIENTRY CreateDepthStencilState(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pDepthStencilDesc</i> [in]
+### -param pDepthStencilDesc [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-depth-stencil-desc.md">D3D10_DDI_DEPTH_STENCIL_DESC</a> structure that describes the parameters that the user-mode display driver uses to create a depth stencil state. </p>
 </dd>
 
-### -param <i>hDepthStencilState</i> [in]
+### -param hDepthStencilState [in]
 
 <dd>
 <p> A handle to the driver's private data for the depth stencil state. The driver returns the size, in bytes, of the memory region that the Microsoft Direct3D runtime must allocate for the private data from a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivatedepthstencilstatesize.md">CalcPrivateDepthStencilStateSize</a> function. The handle is really just a pointer to a region of memory, the size of which the driver requested. The driver uses this region of memory to store internal data structures that are related to its depth stencil state object.</p>
 </dd>
 
-### -param <i>hRTDepthStencilState</i> [in]
+### -param hRTDepthStencilState [in]
 
 <dd>
 <p> A handle to the depth stencil state that the driver should use anytime it calls back into the Direct3D runtime. </p>

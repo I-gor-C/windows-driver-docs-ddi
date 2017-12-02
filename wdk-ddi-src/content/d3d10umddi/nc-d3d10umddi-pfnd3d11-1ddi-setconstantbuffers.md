@@ -62,37 +62,37 @@ VOID APIENTRY* CsSetConstantBuffers(D3D11_1)(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>StartBuffer</i> [in]
+### -param StartBuffer [in]
 
 <dd>
 <p> The starting constant buffer to set. </p>
 </dd>
 
-### -param <i>NumBuffers</i> [in]
+### -param NumBuffers [in]
 
 <dd>
 <p> The total number of buffers to set. </p>
 </dd>
 
-### -param <i>phBuffers</i> [in]
+### -param phBuffers [in]
 
 <dd>
 <p> An array of handles to the constant buffers, beginning with the buffer that <i>StartBuffer</i> specifies.</p>
 </dd>
 
-### -param <i>pFirstConstant</i> [in, optional]
+### -param pFirstConstant [in, optional]
 
 <dd>
 <p>A pointer to the first constant in the buffer pointed to by <i>StartBuffer</i>.</p>
 </dd>
 
-### -param <i>pNumConstants</i> [in, optional]
+### -param pNumConstants [in, optional]
 
 <dd>
 <p>The number of constants in the  buffer pointed to by  <i>StartBuffer</i>.</p>

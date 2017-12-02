@@ -55,13 +55,13 @@ typedef struct _MOUNTMGR_DRIVE_LETTER_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>DriveLetterWasAssigned</b>
+### -field DriveLetterWasAssigned
 
 <dd>
 <p>Indicates when <b>TRUE</b> that member <b>CurrentDriveLetter</b> contains a drive letter. When <b>FALSE</b>, a driver letter was not assigned to the device. </p>
 </dd>
 
-### -field <b>CurrentDriveLetter</b>
+### -field CurrentDriveLetter
 
 <dd>
 <p>Contains either an existing or a newly assigned drive letter in the form of a single ASCII character (for example, "D") if <b>DriveLetterWasAssigned</b> is <b>TRUE</b>. </p>
@@ -69,7 +69,7 @@ typedef struct _MOUNTMGR_DRIVE_LETTER_INFORMATION {
 </dl>
 
 ## -remarks
-<p>For a general discussion of the mount manager and how it communicates with its clients, see <a href="NULL">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
+<p>For a general discussion of the mount manager and how it communicates with its clients, see <a href="storage.supporting_mount_manager_requests_in_a_storage_class_driver">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
 
 ## -requirements
 <table>

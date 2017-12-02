@@ -63,49 +63,49 @@ NTSTATUS ClfsReserveAndAppendLog(
 ## -parameters
 <dl>
 
-### -param <i>pvMarshalContext</i> [in]
+### -param pvMarshalContext [in]
 
 <dd>
 <p>A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.</p>
 </dd>
 
-### -param <i>rgWriteEntries</i> [in, optional]
+### -param rgWriteEntries [in, optional]
 
 <dd>
 <p>A pointer to an array of <a href="kernel.clfs_write_entry">CLFS_WRITE_ENTRY</a> structures, each of which holds a pointer to a buffer of data that will become part of the record that is appended to the log. This parameter can be <b>NULL</b> if <i>cWriteEntries</i> is zero.</p>
 </dd>
 
-### -param <i>cWriteEntries</i> [in]
+### -param cWriteEntries [in]
 
 <dd>
 <p>The number of elements in the array pointed to by <i>rgWriteEntries</i>. This parameter must be zero if <i>rgWriteEntries</i> is <b>NULL</b>.</p>
 </dd>
 
-### -param <i>plsnUndoNext</i> [in, optional]
+### -param plsnUndoNext [in, optional]
 
 <dd>
 <p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that supplies the undo-next LSN of the record to be appended.</p>
 </dd>
 
-### -param <i>plsnPrevious</i> [in, optional]
+### -param plsnPrevious [in, optional]
 
 <dd>
 <p>A pointer to a CLFS_LSN structure that supplies the previous LSN of the record to be appended.</p>
 </dd>
 
-### -param <i>cReserveRecords</i> [in]
+### -param cReserveRecords [in]
 
 <dd>
 <p>The number of elements in the array pointed to by <i>rgcbReservation</i>. This parameter must be zero if <i>rgcbReservation</i> is <b>NULL</b> or the CLFS_FLAG_USE_RESERVATION flag of <i>fFlags</i> is set.</p>
 </dd>
 
-### -param <i>rgcbReservation</i> [in, out]
+### -param rgcbReservation [in, out]
 
 <dd>
 <p>A pointer to an array of LONGLONG-typed variables. The caller sets each element of the array to the size, in bytes, of a record that must have space reserved for it. On return, each array element receives that actual size of the space reserved for the record. This includes the space required for headers and alignment. If the reservation value is negative, a reserved record that most nearly matches the absolute value of the provided negative value will be freed. This parameter can be <b>NULL</b> if <i>cReserveRecords</i> is zero and must be <b>NULL</b> if the CLFS_FLAG_USE_RESERVATION flag of <i>fFlags</i> is set.</p>
 </dd>
 
-### -param <i>fFlags</i> [in]
+### -param fFlags [in]
 
 <dd>
 <p>This parameter can be zero or any combination of the following flags.</p>
@@ -142,7 +142,7 @@ NTSTATUS ClfsReserveAndAppendLog(
 <p> </p>
 </dd>
 
-### -param <i>plsn</i> [out, optional]
+### -param plsn [out, optional]
 
 <dd>
 <p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that receives the LSN of the appended record. This parameter can be <b>NULL</b> if <i>cWriteEntries</i> is zero.</p>

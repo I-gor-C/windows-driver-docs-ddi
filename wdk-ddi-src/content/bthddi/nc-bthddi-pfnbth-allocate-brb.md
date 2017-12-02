@@ -59,7 +59,7 @@ PBRB BthAllocateBrb(
 ## -parameters
 <dl>
 
-### -param <i>brbType</i> [in]
+### -param brbType [in]
 
 <dd>
 <p>Specifies a value from the 
@@ -67,7 +67,7 @@ PBRB BthAllocateBrb(
      with.</p>
 </dd>
 
-### -param <i>tag</i> [in]
+### -param tag [in]
 
 <dd>
 <p>Specifies a 4-byte 

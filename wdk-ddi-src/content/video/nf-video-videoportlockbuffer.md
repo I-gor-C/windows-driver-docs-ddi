@@ -58,25 +58,25 @@ PVOID VideoPortLockBuffer(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>BaseAddress</i> [in]
+### -param BaseAddress [in]
 
 <dd>
 <p>Specifies the virtual address of the buffer to be locked.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the length in bytes of the buffer to be locked.</p>
 </dd>
 
-### -param <i>Operation</i> [in]
+### -param Operation [in]
 
 <dd>
 <p>Specifies the type of operation for which the caller wants the access rights probed and the pages locked. The operation can be one of the following: <b>VpReadAccess</b>, <b>VpWriteAccess</b>, or <b>VpModifyAccess</b>.</p>

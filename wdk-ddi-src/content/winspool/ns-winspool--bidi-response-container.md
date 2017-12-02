@@ -58,25 +58,25 @@ typedef struct _BIDI_RESPONSE_CONTAINER {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the bidi API Schema, which is currently 1.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Is a set of flags reserved for system use. This must be zero.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Specifies the number of responses in the <b>aData</b> member.</p>
 </dd>
 
-### -field <b>aData</b>
+### -field aData
 
 <dd>
 <p>Is an array of <a href="..\winspool\ns-winspool--bidi-response-data.md">BIDI_RESPONSE_DATA</a> structures, each containing a single bidi response.</p>

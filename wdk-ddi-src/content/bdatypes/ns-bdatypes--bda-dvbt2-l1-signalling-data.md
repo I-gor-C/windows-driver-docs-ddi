@@ -67,59 +67,59 @@ typedef struct _BDA_DVBT2_L1_SIGNALLING_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>L1Pre_TYPE</b>
+### -field L1Pre_TYPE
 
 <dd></dd>
 
-### -field <b>L1Pre_BWT_S1_S2</b>
+### -field L1Pre_BWT_S1_S2
 
 <dd></dd>
 
-### -field <b>L1Pre_REPETITION_GUARD_PAPR</b>
+### -field L1Pre_REPETITION_GUARD_PAPR
 
 <dd></dd>
 
-### -field <b>L1Pre_MOD_COD_FEC</b>
+### -field L1Pre_MOD_COD_FEC
 
 <dd></dd>
 
-### -field <b>L1Pre_POSTSIZE_INFO_PILOT</b>
+### -field L1Pre_POSTSIZE_INFO_PILOT
 
 <dd></dd>
 
-### -field <b>L1Pre_TX_ID_AVAIL</b>
+### -field L1Pre_TX_ID_AVAIL
 
 <dd></dd>
 
-### -field <b>L1Pre_CELL_ID</b>
+### -field L1Pre_CELL_ID
 
 <dd></dd>
 
-### -field <b>L1Pre_NETWORK_ID</b>
+### -field L1Pre_NETWORK_ID
 
 <dd></dd>
 
-### -field <b>L1Pre_T2SYSTEM_ID</b>
+### -field L1Pre_T2SYSTEM_ID
 
 <dd></dd>
 
-### -field <b>L1Pre_NUM_T2_FRAMES</b>
+### -field L1Pre_NUM_T2_FRAMES
 
 <dd></dd>
 
-### -field <b>L1Pre_NUM_DATA_REGENFLAG_L1POSTEXT</b>
+### -field L1Pre_NUM_DATA_REGENFLAG_L1POSTEXT
 
 <dd></dd>
 
-### -field <b>L1Pre_NUMRF_CURRENTRF_RESERVED</b>
+### -field L1Pre_NUMRF_CURRENTRF_RESERVED
 
 <dd></dd>
 
-### -field <b>L1Pre_CRC32</b>
+### -field L1Pre_CRC32
 
 <dd></dd>
 
-### -field <b>L1PostData</b>
+### -field L1PostData
 
 <dd></dd>
 </dl>

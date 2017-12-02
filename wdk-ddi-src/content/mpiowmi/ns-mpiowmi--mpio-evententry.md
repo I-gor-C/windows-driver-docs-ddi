@@ -57,25 +57,25 @@ typedef struct _MPIO_EventEntry {
 ## -struct-fields
 <dl>
 
-### -field <b>TimeStamp</b>
+### -field TimeStamp
 
 <dd>
 <p>A 64-bitfield that specifies the timestamp for the event entry.</p>
 </dd>
 
-### -field <b>Severity</b>
+### -field Severity
 
 <dd>
 <p>A 32-bitfield that indicates the severity of the reported event.</p>
 </dd>
 
-### -field <b>Component</b>
+### -field Component
 
 <dd>
 <p>A string that indicates the component to which this event belongs.</p>
 </dd>
 
-### -field <b>EventDescription</b>
+### -field EventDescription
 
 <dd>
 <p>A string that indicates the event description.</p>

@@ -55,13 +55,13 @@ typedef struct _DXGKARG_SETTARGETGAMMA {
 ## -struct-fields
 <dl>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>The identifier of a display adapter's video present target.</p>
 </dd>
 
-### -field <b>GammaRamp</b>
+### -field GammaRamp
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-gamma-ramp.md">D3DKMDT_GAMMA_RAMP</a> struct which describes the type of gamma ramp to set and the buffer containing the ramp data.</p>

@@ -7,7 +7,7 @@ old-location: netvista\dot11_extap_attributes.htm
 old-project: netvista
 ms.assetid: 0460357c-7180-45f0-a7ab-83c46c24ba68
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_EXTAP_ATTRIBUTES,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_EXTAP_ATTRIBUTES structure. This member is formatted as
@@ -78,19 +78,19 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="Type"></a><a id="type"></a><a id="TYPE"></a>Type
+### -field Type
 
 <dd>
 <p>This member must be set to NDIS_OBJECT_TYPE_DEFAULT.</p>
 </dd>
 
-### -field <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a>Revision
+### -field Revision
 
 <dd>
 <p>This member must be set to DOT11_EXTAP_ATTRIBUTES_REVISION_1.</p>
 </dd>
 
-### -field <a id="Size"></a><a id="size"></a><a id="SIZE"></a>Size
+### -field Size
 
 <dd>
 <p>This member must be set to 
@@ -101,7 +101,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>uScanSSIDListSize</b>
+### -field uScanSSIDListSize
 
 <dd>
 <p>The maximum number of service set identifiers (SSIDs) supported by the 802.11 station for scan
@@ -112,7 +112,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
      set.</p>
 </dd>
 
-### -field <b>uDesiredSSIDListSize</b>
+### -field uDesiredSSIDListSize
 
 <dd>
 <p>The maximum number of entries in the desired list of basic service set identifiers (BSSIDs)
@@ -123,7 +123,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
      OID_DOT11_DESIRED_BSSID_LIST</a>.</p>
 </dd>
 
-### -field <b>uPrivacyExemptionListSize</b>
+### -field uPrivacyExemptionListSize
 
 <dd>
 <p>The maximum number of entries in the privacy exemption list supported by the 802.11 station. The
@@ -134,7 +134,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
      OID_DOT11_PRIVACY_EXEMPTION_LIST</a>.</p>
 </dd>
 
-### -field <b>uAssociationTableSize</b>
+### -field uAssociationTableSize
 
 <dd>
 <p>The maximum number of associations that the 802.11 station can support simultaneously. The 802.11
@@ -142,11 +142,11 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
      support at least 32 associations simultaneously.
      </p>
 <p>If the NIC supports any authentication and cipher algorithms that require 
-     <a href="NULL">key-Mapping keys</a>, it must support at least
+     <a href="netvista.key_mapping_keys">key-Mapping keys</a>, it must support at least
      the number of entries in its key-mapping key table.</p>
 </dd>
 
-### -field <b>uDefaultKeyTableSize</b>
+### -field uDefaultKeyTableSize
 
 <dd>
 <p>The maximum number of cipher keys the 802.11 station supports for the default key and per-station
@@ -157,7 +157,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
      can be four or greater.</p>
 </dd>
 
-### -field <b>uWEPKeyValueMaxLength</b>
+### -field uWEPKeyValueMaxLength
 
 <dd>
 <p>The maximum length, in bytes, of a WEP cipher key supported by the 802.11 station.
@@ -217,7 +217,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
 <p> </p>
 </dd>
 
-### -field <b>bStrictlyOrderedServiceClassImplemented</b>
+### -field bStrictlyOrderedServiceClassImplemented
 
 <dd>
 <p>A Boolean value that, if set to <b>TRUE</b>, specifies that the 802.11 station supports the IEEE 802.11
@@ -227,7 +227,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
      802.11-2012 standard.</p>
 </dd>
 
-### -field <b>uNumSupportedCountryOrRegionStrings</b>
+### -field uNumSupportedCountryOrRegionStrings
 
 <dd>
 <p>The number of country or region strings supported by the 802.11 station. If the 802.11 station
@@ -238,7 +238,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
      <b>uNumSupportedCountryOrRegionStrings</b> to zero.</p>
 </dd>
 
-### -field <b>pSupportedCountryOrRegionStrings</b>
+### -field pSupportedCountryOrRegionStrings
 
 <dd>
 <p>A pointer to an array of 802.11d country or region strings that are supported by the 802.11
@@ -247,7 +247,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
      DOT11_COUNTRY_OR_REGION_STRING</a> structure.</p>
 </dd>
 
-### -field <b>uInfraNumSupportedUcastAlgoPairs</b>
+### -field uInfraNumSupportedUcastAlgoPairs
 
 <dd>
 <p>The number of authentication and cipher algorithms supported by the 802.11 station for sending and
@@ -259,7 +259,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
      <b>pInfraSupportedUcastAlgoPairs</b> member.</p>
 </dd>
 
-### -field <b>pInfraSupportedUcastAlgoPairs</b>
+### -field pInfraSupportedUcastAlgoPairs
 
 <dd>
 <p>A pointer to an array of authentication and cipher algorithms supported by the 802.11 station for
@@ -269,7 +269,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
      DOT11_AUTH_CIPHER_PAIR</a> structure.</p>
 </dd>
 
-### -field <b>uInfraNumSupportedMcastAlgoPairs</b>
+### -field uInfraNumSupportedMcastAlgoPairs
 
 <dd>
 <p>The number of authentication and cipher algorithms supported by the 802.11 station for sending and
@@ -281,7 +281,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
      <b>pInfraSupportedMcastAlgoPairs</b> member.</p>
 </dd>
 
-### -field <b>pInfraSupportedMcastAlgoPairs</b>
+### -field pInfraSupportedMcastAlgoPairs
 
 <dd>
 <p>A pointer to an array of authentication and cipher algorithms supported by the 802.11 station for
@@ -349,4 +349,4 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTAP_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTAP_ATTRIBUTES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

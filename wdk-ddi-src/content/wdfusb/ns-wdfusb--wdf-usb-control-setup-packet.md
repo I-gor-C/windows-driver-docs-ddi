@@ -7,7 +7,7 @@ old-location: wdf\wdf_usb_control_setup_packet.htm
 old-project: wdf
 ms.assetid: f50ee559-3df7-4e15-b5a6-d6b85277c461
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_USB_CONTROL_SETUP_PACKET, WDF_USB_CONTROL_SETUP_PACKET, *PWDF_USB_CONTROL_SETUP_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,40 +85,40 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 ## -struct-fields
 <dl>
 
-### -field <b>Packet</b>
+### -field Packet
 
 <dd>
 <dl>
 
-### -field <b>bm</b>
+### -field bm
 
 <dd>
 <dl>
 
-### -field <b>Request</b>
+### -field Request
 
 <dd>
 <dl>
 
-### -field <b>Recipient</b>
+### -field Recipient
 
 <dd>
 <p>A bit field that is specified by a <a href="..\wdfusb\ne-wdfusb--wdf-usb-bmrequest-recipient.md">WDF_USB_BMREQUEST_RECIPIENT</a>-typed value.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>A reserved bit field. Do not use this member.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A bit field that is specified by a <a href="..\wdfusb\ne-wdfusb--wdf-usb-bmrequest-type.md">WDF_USB_BMREQUEST_TYPE</a>-typed value.</p>
 </dd>
 
-### -field <b>Dir</b>
+### -field Dir
 
 <dd>
 <p>A bit field that is specified by a <a href="..\wdfusb\ne-wdfusb--wdf-usb-bmrequest-direction.md">WDF_USB_BMREQUEST_DIRECTION</a>-typed value.</p>
@@ -126,7 +126,7 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 </dl>
 </dd>
 
-### -field <b>Byte</b>
+### -field Byte
 
 <dd>
 <p>A byte-sized bitmap that contains the <b>Request.Recipient</b>, <b>Request.Reserved</b>, <b>Request.Type</b>, and <b>Request.Dir</b> bit fields. Use this member as an alternative to specifying the individual bit fields.</p>
@@ -134,29 +134,29 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 </dl>
 </dd>
 
-### -field <b>bRequest</b>
+### -field bRequest
 
 <dd>
 <p>A request type. Request type constants are defined in <i>Usb100.h</i>. For more information about request types, see the USB specification.</p>
 </dd>
 
-### -field <b>wValue</b>
+### -field wValue
 
 <dd>
 <dl>
 
-### -field <b>Bytes</b>
+### -field Bytes
 
 <dd>
 <dl>
 
-### -field <b>LowByte</b>
+### -field LowByte
 
 <dd>
 <p>The low byte of a 2-byte, request-specific value. For more information about specifying <b>wValue</b>, see the USB specification.</p>
 </dd>
 
-### -field <b>HiByte</b>
+### -field HiByte
 
 <dd>
 <p>The high byte of a 2-byte, request-specific value. </p>
@@ -164,7 +164,7 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 </dl>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A 2-byte value that contains the <b>Bytes.LowByte</b> and <b>Bytes.HiByte</b> values. Use this member as an alternative to specifying individual low-byte and high-byte values.</p>
@@ -172,23 +172,23 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 </dl>
 </dd>
 
-### -field <b>wIndex</b>
+### -field wIndex
 
 <dd>
 <dl>
 
-### -field <b>Bytes</b>
+### -field Bytes
 
 <dd>
 <dl>
 
-### -field <b>LowByte</b>
+### -field LowByte
 
 <dd>
 <p>The low byte of a 2-byte, request-specific value. For more information about specifying <b>wValue</b>, see the USB specification.</p>
 </dd>
 
-### -field <b>HiByte</b>
+### -field HiByte
 
 <dd>
 <p>The high byte of a 2-byte, request-specific value. </p>
@@ -196,7 +196,7 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 </dl>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A 2-byte value that contains the <b>Bytes.LowByte</b> and <b>Bytes.HiByte</b> values. Use this member as an alternative to specifying individual low-byte and high-byte values.</p>
@@ -204,7 +204,7 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 </dl>
 </dd>
 
-### -field <b>wLength</b>
+### -field wLength
 
 <dd>
 <p>The number of bytes to transfer, if applicable. For more information about this value, see the USB specification. The framework sets this value.</p>
@@ -212,12 +212,12 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 </dl>
 </dd>
 
-### -field <b>Generic</b>
+### -field Generic
 
 <dd>
 <dl>
 
-### -field <b>Bytes</b>
+### -field Bytes
 
 <dd>
 <p>An 8-byte value that represents the entire setup packet. You can use this member as an alternative to specifying individual structure members.</p>
@@ -301,4 +301,4 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_CONTROL_SETUP_PACKET union%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_CONTROL_SETUP_PACKET union%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

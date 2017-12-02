@@ -54,7 +54,7 @@ typedef struct _DXGK_QUERYDISPLAYIDIN {
 ## -struct-fields
 <dl>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>The ID being queried.</p>

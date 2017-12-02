@@ -67,79 +67,79 @@ typedef struct _SERCX_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
-### -field <b>PowerManaged</b>
+### -field PowerManaged
 
 <dd>
 <p>Whether the controller queue should be power-managed. If set to <b>WdfTrue</b>, the controller queue should be power-managed.  If set to <b>WdfFalse</b>, the controller queue not be power-managed. If set to <b>WdfDefault</b>, the controller queue should be power-managed unless the driver calls the <a href="..\wdffdo\nf-wdffdo-wdffdoinitsetfilter.md">WdfFdoInitSetFilter</a> method. For more information, see the description of the <b>PowerManaged</b> member in <a href="..\wdfio\ns-wdfio--wdf-io-queue-config.md">WDF_IO_QUEUE_CONFIG</a>.</p>
 </dd>
 
-### -field <b>EvtSerCxFileOpen</b>
+### -field EvtSerCxFileOpen
 
 <dd>
 <p>A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt-sercx-fileopen.md">EvtSerCxFileOpen</a> callback function. This member is optional and can be set to NULL.</p>
 </dd>
 
-### -field <b>EvtSerCxFileClose</b>
+### -field EvtSerCxFileClose
 
 <dd>
 <p>A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt-sercx-fileclose.md">EvtSerCxFileClose</a> callback function. This member is optional and can be set to NULL.</p>
 </dd>
 
-### -field <b>EvtSerCxFileCleanup</b>
+### -field EvtSerCxFileCleanup
 
 <dd>
 <p>A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt-sercx-filecleanup.md">EvtSerCxFileCleanup</a> callback function. This member is optional and can be set to NULL.</p>
 </dd>
 
-### -field <b>EvtSerCxTransmit</b>
+### -field EvtSerCxTransmit
 
 <dd>
 <p>A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt-sercx-transmit.md">EvtSerCxTransmit</a> callback function. This member is required to point to a valid callback function.</p>
 </dd>
 
-### -field <b>EvtSerCxReceive</b>
+### -field EvtSerCxReceive
 
 <dd>
 <p>A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt-sercx-receive.md">EvtSerCxReceive</a> callback function. This member is required to point to a valid callback function.</p>
 </dd>
 
-### -field <b>EvtSerCxWaitmask</b>
+### -field EvtSerCxWaitmask
 
 <dd>
 <p>A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt-sercx-waitmask.md">EvtSerCxWaitmask</a> callback function. This member is required to point to a valid callback function.</p>
 </dd>
 
-### -field <b>EvtSerCxPurge</b>
+### -field EvtSerCxPurge
 
 <dd>
 <p>A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt-sercx-purge.md">EvtSerCxPurge</a> callback function. This member is optional and can be set to NULL.</p>
 </dd>
 
-### -field <b>EvtSerCxControl</b>
+### -field EvtSerCxControl
 
 <dd>
 <p>A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt-sercx-control.md">EvtSerCxControl</a> callback function. This member is required to point to a valid callback function.</p>
 </dd>
 
-### -field <b>EvtSerCxApplyConfig</b>
+### -field EvtSerCxApplyConfig
 
 <dd>
 <p>A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt-sercx-apply-config.md">EvtSerCxApplyConfig</a> callback function. This member is required to point to a valid callback function.</p>
 </dd>
 
-### -field <b>EvtSerCxTransmitCancel</b>
+### -field EvtSerCxTransmitCancel
 
 <dd>
 <p>A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt-sercx-transmit-cancel.md">EvtSerCxTransmitCancel</a> callback function. This member is optional and can be set to NULL.</p>
 </dd>
 
-### -field <b>EvtSerCxReceiveCancel</b>
+### -field EvtSerCxReceiveCancel
 
 <dd>
 <p>A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt-sercx-receive-cancel.md">EvtSerCxReceiveCancel</a> callback function. This member is optional and can be set to NULL.</p>

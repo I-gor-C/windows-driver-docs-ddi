@@ -54,7 +54,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>InterleavedCapPossible</b>
+### -field InterleavedCapPossible
 
 <dd>
 <p>Indicates whether interleaved capture is possible. Any nonzero value indicates that interleaved capture is possible. A value of zero indicates interleaved capture is not possible.</p>

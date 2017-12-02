@@ -7,7 +7,7 @@ old-location: wdf\wdfregistryqueryvalue.htm
 old-project: wdf
 ms.assetid: 1d61e35a-64c6-42e0-b20d-969ded8b9750
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfRegistryQueryValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ NTSTATUS WdfRegistryQueryValue(
 ## -parameters
 <dl>
 
-### -param <i>Key</i> [in]
+### -param Key [in]
 
 <dd>
 <p>A handle to a registry-key object that represents an opened registry key.</p>
 </dd>
 
-### -param <i>ValueName</i> [in]
+### -param ValueName [in]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains a value name. </p>
 </dd>
 
-### -param <i>ValueLength</i> [in]
+### -param ValueLength [in]
 
 <dd>
 <p>The length, in bytes, of the buffer that <i>Value</i> points to.</p>
 </dd>
 
-### -param <i>Value</i> [out, optional]
+### -param Value [out, optional]
 
 <dd>
 <p>A pointer to a driver-allocated buffer that receives the registry value's data. If this pointer is <b>NULL</b>, <b>WdfRegistryQueryValue</b> retrieves the data length but not the data.</p>
 </dd>
 
-### -param <i>ValueLengthQueried</i> [out, optional]
+### -param ValueLengthQueried [out, optional]
 
 <dd>
 <p>A pointer to a location that receives the registry value's data length. This pointer is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ValueType</i> [out, optional]
+### -param ValueType [out, optional]
 
 <dd>
 <p>A pointer to a location that receives the registry value's data type. For a list of data type values, see the <b>Type</b> member of <a href="..\wdm\ns-wdm--key-value-basic-information.md">KEY_VALUE_BASIC_INFORMATION</a>. This pointer is optional and can be <b>NULL</b>.</p>
@@ -223,4 +223,4 @@ NTSTATUS WdfRegistryQueryValue(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRegistryQueryValue method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRegistryQueryValue method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

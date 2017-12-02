@@ -60,37 +60,37 @@ typedef struct _PCW_MASK_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>CounterMask</b>
+### -field CounterMask
 
 <dd>
 <p>A bitmask. If the <i>x</i>-th bit is set, counter <i>x</i>^2 is included in the query. The <b>CounterMask</b> is assigned to identify the counters that are exposed in a registration.</p>
 </dd>
 
-### -field <b>InstanceMask</b>
+### -field InstanceMask
 
 <dd>
 <p>A Unicode string that contains a wildcard specification of the instance. That is, "*" and "?" have the usual meaning of zero-or-more-characters and any-character respectively. The <b>InstanceMask</b> identifies the name of the instance (or wildcard) that is used to filter the instances that will be collected.</p>
 </dd>
 
-### -field <b>InstanceId</b>
+### -field InstanceId
 
 <dd>
 <p>The numeric value that identifies the instance(s) to be collected. If the value is PCW_ANY_INSTANCE_ID, no specific instance identifier is required.</p>
 </dd>
 
-### -field <b>CollectMultiple</b>
+### -field CollectMultiple
 
 <dd>
 <p>The BOOLEAN value that indicates whether multiple instances should be collected or just one. </p>
 </dd>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>A pointer to the consumer buffer to which the instance of the counter set will be added. Depending on the purpose of the buffer, the function either adds an instance or collects data.</p>
 </dd>
 
-### -field <b>CancelEvent</b>
+### -field CancelEvent
 
 <dd>
 <p>A pointer to an initialized event object that indicates whether the request (either to collect data or enumerate instances) was canceled. </p>

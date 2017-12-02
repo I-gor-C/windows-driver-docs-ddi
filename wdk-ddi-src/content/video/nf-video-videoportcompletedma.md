@@ -58,25 +58,25 @@ VP_STATUS VideoPortCompleteDma(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>VpDmaAdapter</i> [in]
+### -param VpDmaAdapter [in]
 
 <dd>
 <p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure was returned by a call to <a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>.</p>
 </dd>
 
-### -param <i>VpScatterGather</i> [in]
+### -param VpScatterGather [in]
 
 <dd>
 <p>Pointer to the <a href="..\video\ns-video--vp-scatter-gather-list.md">VP_SCATTER_GATHER_LIST</a> structure previously passed to the miniport driver callback routine, <a href="..\video\nc-video-pexecute-dma.md">HwVidExecuteDma</a>.</p>
 </dd>
 
-### -param <i>WriteToDevice</i> [in]
+### -param WriteToDevice [in]
 
 <dd>
 <p>Specifies the direction of the DMA transfer. A value of <b>TRUE</b> denotes a transfer from the buffer to the device, and a value of <b>FALSE</b> denotes a transfer from the device to the buffer.</p>

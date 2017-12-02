@@ -56,13 +56,13 @@ NTSTATUS ZwUnmapViewOfSection(
 ## -parameters
 <dl>
 
-### -param <i>ProcessHandle</i> [in]
+### -param ProcessHandle [in]
 
 <dd>
 <p>Handle to a process object that was previously passed to <a href="..\wdm\nf-wdm-zwmapviewofsection.md">ZwMapViewOfSection</a>.</p>
 </dd>
 
-### -param <i>BaseAddress</i> [in, optional]
+### -param BaseAddress [in, optional]
 
 <dd>
 <p>Pointer to the base virtual address of the view to unmap. This value can be any virtual address within the view.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ndisfreesharedmemory.htm
 old-project: netvista
 ms.assetid: 5d0a1790-cec0-4c28-85dd-5f4d7d518d63
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisFreeSharedMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ VOID NdisFreeSharedMemory(
 ## -parameters
 <dl>
 
-### -param <i>NdisHandle</i> [in]
+### -param NdisHandle [in]
 
 <dd>
 <p>An NDIS driver or instance handle that was obtained during caller initialization. This should be
@@ -67,7 +67,7 @@ VOID NdisFreeSharedMemory(
      NdisAllocateSharedMemory</a> function when the shared memory was allocated.</p>
 </dd>
 
-### -param <i>AllocationHandle</i> [in]
+### -param AllocationHandle [in]
 
 <dd>
 <p>A handle for a context area that identifies the shared memory block. This is the handle that NDIS
@@ -153,4 +153,4 @@ VOID NdisFreeSharedMemory(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeSharedMemory function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeSharedMemory function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

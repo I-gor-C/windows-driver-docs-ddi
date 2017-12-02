@@ -55,13 +55,13 @@ typedef struct _D3D12DDI_VIEW_INSTANCE_LOCATION {
 ## -struct-fields
 <dl>
 
-### -field <b>ViewportArrayIndex</b>
+### -field ViewportArrayIndex
 
 <dd>
 <p>Viewport array index.</p>
 </dd>
 
-### -field <b>RenderTargetArrayIndex</b>
+### -field RenderTargetArrayIndex
 
 <dd>
 <p>Render target array index.</p>

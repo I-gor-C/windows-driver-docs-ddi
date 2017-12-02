@@ -57,27 +57,27 @@ typedef struct _WHEA_XPF_PROCESSOR_ERROR_SECTION {
 ## -struct-fields
 <dl>
 
-### -field <b>ValidBits</b>
+### -field ValidBits
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-xpf-processor-error-section-validbits.md">WHEA_XPF_PROCESSOR_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data and the number of structures that are contained in the <b>VariableInfo</b> member.</p>
 </dd>
 
-### -field <b>LocalAPICId</b>
+### -field LocalAPICId
 
 <dd>
 <p>The value programmed into the local APIC ID register.</p>
 <p>This member contains valid data only if the <b>ValidBits.LocalAPICId</b> bit is set.</p>
 </dd>
 
-### -field <b>CpuId</b>
+### -field CpuId
 
 <dd>
 <p>A 48-byte buffer that contains the results of executing the CPUID instruction. For more information about the CPUID instruction, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.</p>
 <p>This member contains valid data only if the <b>ValidBits.CpuId </b>bit is set.</p>
 </dd>
 
-### -field <b>VariableInfo</b>
+### -field VariableInfo
 
 <dd>
 <p>A variable length buffer that contains zero or more <a href="..\ntddk\ns-ntddk--whea-xpf-procinfo.md">WHEA_XPF_PROCINFO</a> structures followed by zero or more <a href="..\ntddk\ns-ntddk--whea-xpf-context-info.md">WHEA_XPF_CONTEXT_INFO</a> structures. The number of WHEA_XPF_PROCINFO structures is specified in <b>ValidBits.ProcInfoCount</b>. The number of WHEA_XPF_CONTEXT_INFO structures is specified in <b>ValidBits.ContextInfoCount</b>. For a diagram that shows how these data structures are stored in the buffer, see the Remarks section.</p>

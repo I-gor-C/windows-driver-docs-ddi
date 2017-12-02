@@ -64,67 +64,67 @@ typedef struct DXGI_DDI_ARG_BLT {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the display device (graphics context) on which the driver performs the bitblt. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function to create the display device. </p>
 </dd>
 
-### -field <b>hDstResource</b>
+### -field hDstResource
 
 <dd>
 <p>[in] A handle to the destination resource. </p>
 </dd>
 
-### -field <b>DstSubresource</b>
+### -field DstSubresource
 
 <dd>
 <p>[in] The index to the destination surface within the resource. </p>
 </dd>
 
-### -field <b>DstLeft</b>
+### -field DstLeft
 
 <dd>
 <p>[in] The <i>x</i>-coordinate of the upper-left corner of the destination rectangle. </p>
 </dd>
 
-### -field <b>DstTop</b>
+### -field DstTop
 
 <dd>
 <p>[in] The <i>y</i>-coordinate of the upper-left corner of the destination rectangle. </p>
 </dd>
 
-### -field <b>DstRight</b>
+### -field DstRight
 
 <dd>
 <p>[in] The <i>x</i>-coordinate of the lower-right corner of the destination rectangle. </p>
 </dd>
 
-### -field <b>DstBottom</b>
+### -field DstBottom
 
 <dd>
 <p>[in] The <i>y</i>-coordinate of the lower-right corner of the destination rectangle. </p>
 </dd>
 
-### -field <b>hSrcResource</b>
+### -field hSrcResource
 
 <dd>
 <p>[in] A handle to the source resource. </p>
 </dd>
 
-### -field <b>SrcSubresource</b>
+### -field SrcSubresource
 
 <dd>
 <p>[in] The index to the source surface within the resource. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-arg-blt-flags.md">DXGI_DDI_ARG_BLT_FLAGS</a> structure that identifies the type of bitblt to perform. </p>
 </dd>
 
-### -field <b>Rotate</b>
+### -field Rotate
 
 <dd>
 <p>[in] A <a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-mode-rotation.md">DXGI_DDI_MODE_ROTATION</a>-typed value that identifies the orientation of the display mode.</p>

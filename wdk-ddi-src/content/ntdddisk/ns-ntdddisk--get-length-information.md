@@ -54,7 +54,7 @@ typedef struct _GET_LENGTH_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Contains the length, in bytes, of a disk, partition, or volume.</p>

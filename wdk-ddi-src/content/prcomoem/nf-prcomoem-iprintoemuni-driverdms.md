@@ -58,25 +58,25 @@ HRESULT DriverDMS(
 ## -parameters
 <dl>
 
-### -param <i>pDevObj</i> 
+### -param pDevObj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pBuffer</i> 
+### -param pBuffer 
 
 <dd>
 <p>Caller-supplied pointer to a buffer to receive method-specified flags. (See the following Remarks section.)</p>
 </dd>
 
-### -param <i>cbSize</i> 
+### -param cbSize 
 
 <dd>
 <p>Caller-supplied size, in bytes, of the buffer pointed to by <i>pBuffer</i>.</p>
 </dd>
 
-### -param <i>pcbNeeded</i> 
+### -param pcbNeeded 
 
 <dd>
 <p>Caller-supplied pointer to a location to receive the required minimum <i>pBuffer</i> size.</p>
@@ -97,7 +97,7 @@ HRESULT DriverDMS(
 
 <p>The <code>IPrintOemUni::DriverDMS</code> method allows a rendering plug-in to indicate that it will be using a device-managed drawing surface instead of the default GDI-managed surface.</p>
 
-<p>The method must specify HOOK_-prefixed flags in the buffer pointed to by <i>pBuffer</i>, indicating which of the plug-in's graphics DDI hooking functions are to be called for the drawing surface. The HOOK_-prefixed flags are defined in winddi.h and described in the <a href="display.engassociatesurface">EngAssociateSurface</a> function's description. Flags specified by <code>IPrintOemUni::DriverDMS</code> are passed by Unidrv to <b>EngAssociateSurface</b>. (Note that to support a device-managed surface, the rendering plug-in must hook out all drawing functions.) For more information, see <a href="NULL">Handling Device-Managed Surfaces</a>.</p>
+<p>The method must specify HOOK_-prefixed flags in the buffer pointed to by <i>pBuffer</i>, indicating which of the plug-in's graphics DDI hooking functions are to be called for the drawing surface. The HOOK_-prefixed flags are defined in winddi.h and described in the <a href="display.engassociatesurface">EngAssociateSurface</a> function's description. Flags specified by <code>IPrintOemUni::DriverDMS</code> are passed by Unidrv to <b>EngAssociateSurface</b>. (Note that to support a device-managed surface, the rendering plug-in must hook out all drawing functions.) For more information, see <a href="https://msdn.microsoft.com/4403165f-c528-450e-9c96-77a9ce0778aa">Handling Device-Managed Surfaces</a>.</p>
 
 <p>If <code>IPrintOemUni::DriverDMS</code> sets flags in the buffer pointed to by <i>pBuffer</i>, Unidrv creates a device-managed surface by calling <a href="display.engcreatedevicesurface">EngCreateDeviceSurface</a>. If <code>IPrintOemUni::DriverDMS</code> does not set any flags, Unidrv creates a GDI-managed surface by calling <a href="display.engcreatebitmap">EngCreateBitmap</a>. In either of these cases, <code>IPrintOemUni::DriverDMS</code> should return S_OK.</p>
 

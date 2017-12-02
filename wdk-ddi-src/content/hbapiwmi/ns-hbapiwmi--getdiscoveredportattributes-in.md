@@ -55,13 +55,13 @@ typedef struct _GetDiscoveredPortAttributes_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortIndex</b>
+### -field PortIndex
 
 <dd>
 <p>Indicates the index within the specified HBA of the port of type Nx_Port to query. For a definition of Nx_Port, see the T11 committee's specification for <i>Fibre Channel HBA API</i> (FC-HBA).</p>
 </dd>
 
-### -field <b>DiscoveredPortIndex</b>
+### -field DiscoveredPortIndex
 
 <dd>
 <p>Indicates the index within the specified HBA of the port of type FC_Port to query. For a definition of FC_Port, see the T11 committee's specification for <i>Fibre Channel HBA API</i> (FC-HBA).</p>

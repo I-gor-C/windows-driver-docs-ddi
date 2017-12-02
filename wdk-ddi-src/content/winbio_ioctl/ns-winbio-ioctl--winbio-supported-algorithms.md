@@ -58,25 +58,25 @@ typedef struct _WINBIO_SUPPORTED_ALGORITHMS {
 ## -struct-fields
 <dl>
 
-### -field <b>PayloadSize</b>
+### -field PayloadSize
 
 <dd>
 <p>Specifies the total size of the payload, which includes the fixed length structure and any variable data at the end.</p>
 </dd>
 
-### -field <b>WinBioHresult</b>
+### -field WinBioHresult
 
 <dd>
 <p>Specifies the HRESULT status of the I/O operation.</p>
 </dd>
 
-### -field <b>NumberOfAlgorithms</b>
+### -field NumberOfAlgorithms
 
 <dd>
 <p>Specifies the number of algorithms in the data block.</p>
 </dd>
 
-### -field <b>AlgorithmData</b>
+### -field AlgorithmData
 
 <dd>
 <p>Specifies a structure of type <a href="..\winbio_ioctl\ns-winbio-ioctl--winbio-data.md">WINBIO_DATA</a> that contains NULL-terminated UTF-8 OID strings that represent the algorithms supported by the device.</p>

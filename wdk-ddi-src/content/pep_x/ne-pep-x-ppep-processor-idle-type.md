@@ -56,19 +56,19 @@ typedef enum _PEP_PROCESSOR_IDLE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PepIdleTypeProcessor"></a><a id="pepidletypeprocessor"></a><a id="PEPIDLETYPEPROCESSOR"></a><b>PepIdleTypeProcessor</b>
+### -field PepIdleTypeProcessor
 
 <dd>
 <p>Apply to current processor.</p>
 </dd>
 
-### -field <a id="PepIdleTypePlatform"></a><a id="pepidletypeplatform"></a><a id="PEPIDLETYPEPLATFORM"></a><b>PepIdleTypePlatform</b>
+### -field PepIdleTypePlatform
 
 <dd>
 <p>Apply to all processors.</p>
 </dd>
 
-### -field <a id="PepIdleTypeMax"></a><a id="pepidletypemax"></a><a id="PEPIDLETYPEMAX"></a><b>PepIdleTypeMax</b>
+### -field PepIdleTypeMax
 
 <dd>
 <p>Reserved for use by operating system.</p>

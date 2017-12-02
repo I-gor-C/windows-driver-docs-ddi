@@ -61,49 +61,49 @@ typedef struct _DXVA_ProcAmpControlBlt {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size of this structure in bytes.</p>
 </dd>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd>
 <p>Specifies the destination rectangle as a <a href="display.rect">RECT</a> structure. The destination rectangle is required for subrectangle stretching. Support for stretching is optional and is reported by the <a href="..\dxva\ns-dxva--dxva-procampcontrolcaps.md">DXVA_ProcAmpControlCaps</a> structure. Support for subrectangles is optional.</p>
 </dd>
 
-### -field <b>SrcRect</b>
+### -field SrcRect
 
 <dd>
 <p>Specifies the source rectangle as a RECT structure. The source rectangle is required for subrectangle stretching.sub Support for stretching is optional and is reported by the DXVA_ProcAmpControlCaps structure. Support for subrectangles is also optional.</p>
 </dd>
 
-### -field <b>Alpha</b>
+### -field Alpha
 
 <dd>
 <p>Specifies the transparency of the output image as it is written to the destination surface. A value of 0.0F indicates transparent. A value of 1.0F indicates opaque.</p>
 </dd>
 
-### -field <b>Brightness</b>
+### -field Brightness
 
 <dd>
 <p>Specifies the brightness of the output image as it is written to the destination surface.</p>
 </dd>
 
-### -field <b>Contrast</b>
+### -field Contrast
 
 <dd>
 <p>Specifies the contrast of the output image as it is written to the destination surface.</p>
 </dd>
 
-### -field <b>Hue</b>
+### -field Hue
 
 <dd>
 <p>Specifies the hue of the output image as it is written to the destination surface.</p>
 </dd>
 
-### -field <b>Saturation</b>
+### -field Saturation
 
 <dd>
 <p>Specifies the saturation of the output image as it is written to the destination surface.</p>

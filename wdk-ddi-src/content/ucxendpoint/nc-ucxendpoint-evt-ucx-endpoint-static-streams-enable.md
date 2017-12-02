@@ -62,19 +62,19 @@ typedef EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE PFN_UCM_CONNECTOR_GET_OPERATING_M
 ## -parameters
 <dl>
 
-### -param <i>Endpoint</i> [in]
+### -param Endpoint [in]
 
 <dd>
 <p>A handle to a UCXENDPOINT object that represents the endpoint.</p>
 </dd>
 
-### -param <i>UcxStaticStreams</i> [in]
+### -param UcxStaticStreams [in]
 
 <dd>
 <p>A handle to a UCX object that represents the static streams.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>Contains the URB for the <b>URB_FUNCTION_OPEN_STATIC_STREAMS</b>.</p>
@@ -85,7 +85,7 @@ typedef EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE PFN_UCM_CONNECTOR_GET_OPERATING_M
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
+<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
  method.</p>
 
 <p>The client driver returns completion status in <i>Request</i> and in the USBD_STATUS

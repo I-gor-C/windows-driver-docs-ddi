@@ -55,13 +55,13 @@ PVOID IoRegisterBootDriverCallback(
 ## -parameters
 <dl>
 
-### -param <i>CallbackFunction</i> [in]
+### -param CallbackFunction [in]
 
 <dd>
 <p>A pointer to the <b>BOOT_DRIVER_CALLBACK_FUNCTION</b> routine to be called when initializing a boot-start driver or DLL.</p>
 </dd>
 
-### -param <i>CallbackContext</i> [in, optional]
+### -param CallbackContext [in, optional]
 
 <dd>
 <p>A driver-defined context to be passed to the <b>BOOT_DRIVER_CALLBACK_FUNCTION</b> routine pointed to by <i>CallbackFunction</i>.</p>

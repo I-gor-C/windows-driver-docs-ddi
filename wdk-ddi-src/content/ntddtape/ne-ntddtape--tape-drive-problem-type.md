@@ -67,85 +67,85 @@ typedef enum _TAPE_DRIVE_PROBLEM_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="TapeDriveProblemNone"></a><a id="tapedriveproblemnone"></a><a id="TAPEDRIVEPROBLEMNONE"></a><b>TapeDriveProblemNone</b>
+### -field TapeDriveProblemNone
 
 <dd>
 <p>Indicates that there is no tape drive problem.</p>
 </dd>
 
-### -field <a id="TapeDriveReadWriteWarning"></a><a id="tapedrivereadwritewarning"></a><a id="TAPEDRIVEREADWRITEWARNING"></a><b>TapeDriveReadWriteWarning</b>
+### -field TapeDriveReadWriteWarning
 
 <dd>
 <p>Indicates that the tape drive is having problems doing reads or writes. This is a warning.</p>
 </dd>
 
-### -field <a id="TapeDriveReadWriteError"></a><a id="tapedrivereadwriteerror"></a><a id="TAPEDRIVEREADWRITEERROR"></a><b>TapeDriveReadWriteError</b>
+### -field TapeDriveReadWriteError
 
 <dd>
 <p>Indicates that the tape drive is having problems doing reads or writes. This is a severe error.</p>
 </dd>
 
-### -field <a id="TapeDriveReadWarning"></a><a id="tapedrivereadwarning"></a><a id="TAPEDRIVEREADWARNING"></a><b>TapeDriveReadWarning</b>
+### -field TapeDriveReadWarning
 
 <dd>
 <p>Indicates that the tape drive is having problems doing reads. This is a warning.</p>
 </dd>
 
-### -field <a id="TapeDriveWriteWarning"></a><a id="tapedrivewritewarning"></a><a id="TAPEDRIVEWRITEWARNING"></a><b>TapeDriveWriteWarning</b>
+### -field TapeDriveWriteWarning
 
 <dd>
 <p>Indicates that the tape drive is having problems doing writes. This is a warning.</p>
 </dd>
 
-### -field <a id="TapeDriveReadError"></a><a id="tapedrivereaderror"></a><a id="TAPEDRIVEREADERROR"></a><b>TapeDriveReadError</b>
+### -field TapeDriveReadError
 
 <dd>
 <p>Indicates that the tape drive is having problems doing reads. This is a severe error.</p>
 </dd>
 
-### -field <a id="TapeDriveWriteError"></a><a id="tapedrivewriteerror"></a><a id="TAPEDRIVEWRITEERROR"></a><b>TapeDriveWriteError</b>
+### -field TapeDriveWriteError
 
 <dd>
 <p>Indicates that the tape drive is having problems doing writes. This is a severe error.</p>
 </dd>
 
-### -field <a id="TapeDriveHardwareError"></a><a id="tapedrivehardwareerror"></a><a id="TAPEDRIVEHARDWAREERROR"></a><b>TapeDriveHardwareError</b>
+### -field TapeDriveHardwareError
 
 <dd>
 <p>Indicates that the tape drive had a hardware error.</p>
 </dd>
 
-### -field <a id="TapeDriveUnsupportedMedia"></a><a id="tapedriveunsupportedmedia"></a><a id="TAPEDRIVEUNSUPPORTEDMEDIA"></a><b>TapeDriveUnsupportedMedia</b>
+### -field TapeDriveUnsupportedMedia
 
 <dd>
 <p>Indicates that the media format is not supported.</p>
 </dd>
 
-### -field <a id="TapeDriveScsiConnectionError"></a><a id="tapedrivescsiconnectionerror"></a><a id="TAPEDRIVESCSICONNECTIONERROR"></a><b>TapeDriveScsiConnectionError</b>
+### -field TapeDriveScsiConnectionError
 
 <dd>
 <p>Indicates that there is a SCSI cable or connection error.</p>
 </dd>
 
-### -field <a id="TapeDriveTimetoClean"></a><a id="tapedrivetimetoclean"></a><a id="TAPEDRIVETIMETOCLEAN"></a><b>TapeDriveTimetoClean</b>
+### -field TapeDriveTimetoClean
 
 <dd>
 <p>Indicates that the tape drive requires cleaning.</p>
 </dd>
 
-### -field <a id="TapeDriveCleanDriveNow"></a><a id="tapedrivecleandrivenow"></a><a id="TAPEDRIVECLEANDRIVENOW"></a><b>TapeDriveCleanDriveNow</b>
+### -field TapeDriveCleanDriveNow
 
 <dd>
 <p>Indicates that the tape drive requires cleaning.</p>
 </dd>
 
-### -field <a id="TapeDriveMediaLifeExpired"></a><a id="tapedrivemedialifeexpired"></a><a id="TAPEDRIVEMEDIALIFEEXPIRED"></a><b>TapeDriveMediaLifeExpired</b>
+### -field TapeDriveMediaLifeExpired
 
 <dd>
 <p>Indicates that the media life has expired. Media needs to be replaced.</p>
 </dd>
 
-### -field <a id="TapeDriveSnappedTape"></a><a id="tapedrivesnappedtape"></a><a id="TAPEDRIVESNAPPEDTAPE"></a><b>TapeDriveSnappedTape</b>
+### -field TapeDriveSnappedTape
 
 <dd>
 <p>Indicates that the tape has snapped.</p>

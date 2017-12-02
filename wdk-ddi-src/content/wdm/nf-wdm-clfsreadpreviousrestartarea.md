@@ -58,25 +58,25 @@ NTSTATUS ClfsReadPreviousRestartArea(
 ## -parameters
 <dl>
 
-### -param <i>pvReadContext</i> [in]
+### -param pvReadContext [in]
 
 <dd>
 <p>A pointer to a read context obtained by a previous call to <a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>.</p>
 </dd>
 
-### -param <i>ppvRestartBuffer</i> [out]
+### -param ppvRestartBuffer [out]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to the data buffer of the restart record that is read.</p>
 </dd>
 
-### -param <i>pcbRestartBuffer</i> [out]
+### -param pcbRestartBuffer [out]
 
 <dd>
 <p>A pointer to a ULONG-typed variable that receives the size, in bytes, of the buffer pointed to by *<i>ppvRestartBuffer</i>. This is the length of the data buffer of the restart record that is read.</p>
 </dd>
 
-### -param <i>plsnRestart</i> [out]
+### -param plsnRestart [out]
 
 <dd>
 <p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that receives the previous LSN of the restart record that was read.</p>

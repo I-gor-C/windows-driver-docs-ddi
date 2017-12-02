@@ -54,7 +54,7 @@ void __inline KsGateTerminateOr(
 ## -parameters
 <dl>
 
-### -param <i>OrGate</i> [in]
+### -param OrGate [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksgate.md">KSGATE</a> structure that is the OR gate to delete. This gate must be at the beginning of a gate chain.</p>
@@ -65,7 +65,7 @@ void __inline KsGateTerminateOr(
 <p>None</p>
 
 ## -remarks
-<p>Logical gates should be deleted in a front to back manner. <b>KsGateTerminateOr</b> does not update the gate chain for gates that are deleted at the end or in the middle. For more information, see <a href="NULL">Flow Control Gates in AVStream</a>.</p>
+<p>Logical gates should be deleted in a front to back manner. <b>KsGateTerminateOr</b> does not update the gate chain for gates that are deleted at the end or in the middle. For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.</p>
 
 ## -requirements
 <table>

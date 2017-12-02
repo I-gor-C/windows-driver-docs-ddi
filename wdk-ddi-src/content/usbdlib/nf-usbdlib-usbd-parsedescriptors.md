@@ -59,44 +59,44 @@ PUSB_COMMON_DESCRIPTOR USBD_ParseDescriptors(
 ## -parameters
 <dl>
 
-### -param <i>DescriptorBuffer</i> [in]
+### -param DescriptorBuffer [in]
 
 <dd>
 <p>Pointer to a configuration descriptor that contains the descriptor for which to search.</p>
 </dd>
 
-### -param <i>TotalLength</i> [in]
+### -param TotalLength [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer pointed to by <i>DescriptorBuffer</i>.</p>
 </dd>
 
-### -param <i>StartPosition</i> [in]
+### -param StartPosition [in]
 
 <dd>
 <p>Pointer to the address within the configuration descriptor, provided at <i>DescriptorBuffer</i>, to begin searching from. To search from the beginning of the configuration descriptor, the parameters <i>DescriptorBuffer</i> and <i>StartPosition</i> must be the same address.</p>
 </dd>
 
-### -param <i>DescriptorType</i> [in]
+### -param DescriptorType [in]
 
 <dd>
 <p>Specifies the descriptor type code as assigned by USB. The following values are valid for USB-defined descriptor types:</p>
 <p></p>
 <dl>
 
-### -param <a id="USB_STRING_DESCRIPTOR_TYPE"></a><a id="usb_string_descriptor_type"></a>USB_STRING_DESCRIPTOR_TYPE
+### -param USB_STRING_DESCRIPTOR_TYPE
 
 <dd>
 <p>Specifies that the descriptor being searched for is a string descriptor.</p>
 </dd>
 
-### -param <a id="USB_INTERFACE_DESCRIPTOR_TYPE"></a><a id="usb_interface_descriptor_type"></a>USB_INTERFACE_DESCRIPTOR_TYPE
+### -param USB_INTERFACE_DESCRIPTOR_TYPE
 
 <dd>
 <p>Specifies that the descriptor being searched for is an interface descriptor.</p>
 </dd>
 
-### -param <a id="USB_ENDPOINT_DESCRIPTOR_TYPE"></a><a id="usb_endpoint_descriptor_type"></a>USB_ENDPOINT_DESCRIPTOR_TYPE
+### -param USB_ENDPOINT_DESCRIPTOR_TYPE
 
 <dd>
 <p>Specifies that the descriptor being searched for is an endpoint descriptor.</p>

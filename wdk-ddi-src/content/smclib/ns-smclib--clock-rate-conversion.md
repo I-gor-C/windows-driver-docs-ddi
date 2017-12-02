@@ -56,13 +56,13 @@ typedef struct _CLOCK_RATE_CONVERSION {
 ## -struct-fields
 <dl>
 
-### -field <b>F</b>
+### -field F
 
 <dd>
 <p>Contains a value that calculates the elementary time unit (ETU). The ETU indicates the space of transmission time that is occupied by a single bit of data. For more information, see the <i>ISO 7816-3 Specification</i>. </p>
 </dd>
 
-### -field <b>fs</b>
+### -field fs
 
 <dd>
 <p>Contains the maximum clock frequency that is allowed.  For more information, see the <i>ISO 7816-3 Specification</i>. </p>

@@ -57,25 +57,25 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Output</b>
+### -field Output
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure that contains a Message Authentication Code (MAC) and other data.</p>
 </dd>
 
-### -field <b>DecodeHandle</b>
+### -field DecodeHandle
 
 <dd>
 <p>A handle to a decode device.</p>
 </dd>
 
-### -field <b>CryptoSessionHandle</b>
+### -field CryptoSessionHandle
 
 <dd>
 <p>A handle to the cryptographic session that is associated with the decode device.</p>
 </dd>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>A handle to the Direct3D device that is associated with the decode device.</p>

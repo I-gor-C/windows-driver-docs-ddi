@@ -56,19 +56,19 @@ typedef struct _PEP_DEVICE_PLATFORM_CONSTRAINTS {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>MinimumDStates</b>
+### -field MinimumDStates
 
 <dd>
 <p>[in] A pointer to an array of <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a> enumeration values that indicate the lowest-powered D<i>x</i> (device power) state the device can enter for each platform idle state.</p>
 </dd>
 
-### -field <b>PlatformStateCount</b>
+### -field PlatformStateCount
 
 <dd>
 <p>[in] The number of elements in the array pointed to by the <b>MinimumDStates</b> member. This member contains the platform state count that the PEP supplied in response to a previous <a href="kernel.pep_notify_ppm_query_platform_states">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES</a> notification.</p>

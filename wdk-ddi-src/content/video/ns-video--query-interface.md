@@ -59,33 +59,33 @@ typedef struct _QUERY_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>InterfaceType</b>
+### -field InterfaceType
 
 <dd>
 <p>Pointer to a GUID that identifies the interface being requested. If the miniport driver does not support the specified <b>InterfaceType</b>, it should fail the call and return immediately.</p>
 <p>The parent generates this GUID with <i>uuidgen.exe</i>. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff542998">Defining and Exporting New GUIDs</a> for details.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size in bytes of the <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure to which <b>Interface</b> points. The miniport driver must not return an INTERFACE structure larger than <b>Size</b> bytes.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the interface being requested.</p>
 <p>If a parent supports more than one version of an interface, its driver should return the specified version or, if possible, the closest supported version without exceeding the requested version. It is the querying driver's responsibility to examine the returned <b>Version</b> and determine what to do based on that value.</p>
 </dd>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>Pointer to an <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure in which the miniport driver returns the requested interface information. The querying driver is responsible for allocating this structure before calling <a href="..\video\nc-video-pvideo-hw-query-interface.md">HwVidQueryInterface</a>.</p>
 </dd>
 
-### -field <b>InterfaceSpecificData</b>
+### -field InterfaceSpecificData
 
 <dd>
 <p>Specifies additional information about the interface being requested. Typically, this member is <b>NULL</b>, and the <b>InterfaceType</b> and <b>Version</b> members are sufficient for the parent to identify the interface being requested.</p>

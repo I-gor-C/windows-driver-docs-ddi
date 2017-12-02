@@ -56,13 +56,13 @@ NTSTATUS IoCreateUnprotectedSymbolicLink(
 ## -parameters
 <dl>
 
-### -param <i>SymbolicLinkName</i> [in]
+### -param SymbolicLinkName [in]
 
 <dd>
 <p>Supplies the symbolic link name as a Unicode string. </p>
 </dd>
 
-### -param <i>DeviceName</i> [in]
+### -param DeviceName [in]
 
 <dd>
 <p>Supplies the name of the device object to which the symbolic link name refers. </p>

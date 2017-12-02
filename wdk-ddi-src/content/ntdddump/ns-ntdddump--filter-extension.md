@@ -59,37 +59,37 @@ typedef struct _FILTER_EXTENSION {
 ## -struct-fields
 <dl>
 
-### -field <b>DumpType</b>
+### -field DumpType
 
 <dd>
 <p>This parameter indicates the type of dump that this instance of the filter driver is loaded on.</p>
 </dd>
 
-### -field <b>DeviceObject</b>
+### -field DeviceObject
 
 <dd>
 <p>A pointer to the device object of the dump volume. This pointer points to the top of the dump volume stack.</p>
 </dd>
 
-### -field <b>Geometry</b>
+### -field Geometry
 
 <dd>
 <p>The disk geometry of the dump device in <a href="..\ntdddisk\ns-ntdddisk--disk-geometry.md">DISK_GEOMETRY</a> format.</p>
 </dd>
 
-### -field <b>DiskSize</b>
+### -field DiskSize
 
 <dd>
 <p>Size of the disk.</p>
 </dd>
 
-### -field <b>PartitionInfo</b>
+### -field PartitionInfo
 
 <dd>
 <p>The partition information in <a href="..\ntdddisk\ns-ntdddisk--disk-partition-info.md">DISK_PARTITION_INFO</a> format.</p>
 </dd>
 
-### -field <b>DumpData</b>
+### -field DumpData
 
 <dd>
 <p>A pointer to the context data that is provided by the filter driver in <a href="..\ntdddump\ns-ntdddump--filter-initialization-data.md">FILTER_INITIALIZATION_DATA</a>.</p>

@@ -59,37 +59,37 @@ typedef enum _D3DKMDT_MONITOR_CAPABILITIES_ORIGIN {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_MCO_UNINITIALIZED"></a><a id="d3dkmdt_mco_uninitialized"></a><b>D3DKMDT_MCO_UNINITIALIZED</b>
+### -field D3DKMDT_MCO_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_MONITOR_CAPABILITIES_ORIGIN has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MCO_DEFAULTMONITORPROFILE"></a><a id="d3dkmdt_mco_defaultmonitorprofile"></a><b>D3DKMDT_MCO_DEFAULTMONITORPROFILE</b>
+### -field D3DKMDT_MCO_DEFAULTMONITORPROFILE
 
 <dd>
 <p>Indicates that the capability information was obtained from the default monitor profile.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MCO_MONITORDESCRIPTOR"></a><a id="d3dkmdt_mco_monitordescriptor"></a><b>D3DKMDT_MCO_MONITORDESCRIPTOR</b>
+### -field D3DKMDT_MCO_MONITORDESCRIPTOR
 
 <dd>
 <p>Indicates that the capability information was obtained from an Extended Display Information Data (EDID) descriptor.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MCO_MONITORDESCRIPTOR_REGISTRYOVERRIDE"></a><a id="d3dkmdt_mco_monitordescriptor_registryoverride"></a><b>D3DKMDT_MCO_MONITORDESCRIPTOR_REGISTRYOVERRIDE</b>
+### -field D3DKMDT_MCO_MONITORDESCRIPTOR_REGISTRYOVERRIDE
 
 <dd>
 <p>Indicates that the capability information was obtained from an INF file section that overrides the monitor's EDID descriptor.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MCO_SPECIFICCAP_REGISTRYOVERRIDE"></a><a id="d3dkmdt_mco_specificcap_registryoverride"></a><b>D3DKMDT_MCO_SPECIFICCAP_REGISTRYOVERRIDE</b>
+### -field D3DKMDT_MCO_SPECIFICCAP_REGISTRYOVERRIDE
 
 <dd>
 <p>Indicates that the capability information was obtained from an INF file section that overrides a single capability.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MCO_DRIVER"></a><a id="d3dkmdt_mco_driver"></a><b>D3DKMDT_MCO_DRIVER</b>
+### -field D3DKMDT_MCO_DRIVER
 
 <dd>
 <p>Indicates that the capability information was obtained by a call to the display miniport driver's <a href="display.dxgkddirecommendmonitormodes">DxgkDdiRecommendMonitorModes</a> function.</p>

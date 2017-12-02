@@ -59,38 +59,38 @@ BOOL DrvConvertDevMode(
 ## -parameters
 <dl>
 
-### -param <i>pPrinterName</i> [in]
+### -param pPrinterName [in]
 
 <dd>
 <p>Caller-supplied pointer to a printer name string. For more information about this parameter, see the following Remarks section.</p>
 </dd>
 
-### -param <i>pdmIn</i> [in]
+### -param pdmIn [in]
 
 <dd>
 <p>Caller-supplied pointer to an input DEVMODEW structure. If <i>fMode</i> is CDM_DRIVER_DEFAULT, this pointer is <b>NULL</b>.</p>
 </dd>
 
-### -param <i>pdmOut</i> [out]
+### -param pdmOut [out]
 
 <dd>
 <p>Caller-supplied pointer to a buffer to receive an output DEVMODEW structure. If <i>fMode</i> is CDM_CONVERT the buffer contains, on input, a valid DEVMODEW structure indicating the target driver version.</p>
 </dd>
 
-### -param <i>pcbNeeded</i> [in, out]
+### -param pcbNeeded [in, out]
 
 <dd>
 <p>Caller-supplied pointer to the size, in bytes, of the buffer pointed to by <i>pdmOut</i>. On output, the printer interface DLL should overwrite the received size value with the actual size of the converted DEVMODEW structure. If the received buffer is too small, the printer interface DLL should overwrite the received size value with the required buffer size.</p>
 </dd>
 
-### -param <i>fMode</i> [in]
+### -param fMode [in]
 
 <dd>
 <p>Caller-supplied bit flag indicating the type of operation to be performed. This can be one of the following flags:</p>
 <p></p>
 <dl>
 
-### -param <a id="CDM_CONVERT"></a><a id="cdm_convert"></a>CDM_CONVERT
+### -param CDM_CONVERT
 
 <dd>
 <p>The function should convert the contents of the input DEVMODEW structure (pointed to by <i>pdmIn</i>) into a new DEVMODEW structure, and place the result in the DEVMODEW structure pointed to by <i>pdmOut</i>. The initial contents of the received output DEVMODEW structure (pointed to by <i>pdmOut</i>) should be used to determine the output version.</p>
@@ -99,7 +99,7 @@ BOOL DrvConvertDevMode(
 <p></p>
 <dl>
 
-### -param <a id="CDM_CONVERT351"></a><a id="cdm_convert351"></a>CDM_CONVERT351
+### -param CDM_CONVERT351
 
 <dd>
 <p>The function should convert the contents of the input DEVMODEW structure (pointed to by <i>pdmIn</i>), creating an output DEVMODEW structure that is compatible with Windows NT 3.51, and place the result in the DEVMODEW structure pointed to by <i>pdmOut</i>.</p>
@@ -109,7 +109,7 @@ BOOL DrvConvertDevMode(
 <p></p>
 <dl>
 
-### -param <a id="CDM_DRIVER_DEFAULT"></a><a id="cdm_driver_default"></a>CDM_DRIVER_DEFAULT
+### -param CDM_DRIVER_DEFAULT
 
 <dd>
 <p>The function should copy the current version of its default DEVMODEW structure to the buffer pointed to by <i>pdmOut</i>.</p>

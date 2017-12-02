@@ -7,7 +7,7 @@ old-location: image\wiasgetchildrencontexts.htm
 old-project: image
 ms.assetid: a69216f4-1272-488f-8d06-8dc3b6a88452
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiasGetChildrenContexts
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ HRESULT _stdcall wiasGetChildrenContexts(
 ## -parameters
 <dl>
 
-### -param <i>pParentContext</i> [in]
+### -param pParentContext [in]
 
 <dd>
 <p>Pointer to the parent item.</p>
 </dd>
 
-### -param <i>pulNumChildren</i> [out]
+### -param pulNumChildren [out]
 
 <dd>
 <p>Pointer to a memory location that receives the number of children contexts.</p>
 </dd>
 
-### -param <i>pppChildren</i> [out]
+### -param pppChildren [out]
 
 <dd>
 <p>Pointer to a memory location that points to an array whose elements are addresses of <b>IWiaItem</b> objects (described in the Microsoft Windows SDK documentation). Each <b>IWiaItem</b> object represents one child context.</p>

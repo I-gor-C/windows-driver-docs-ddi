@@ -7,7 +7,7 @@ old-location: ieee\cip_notify_info.htm
 old-project: IEEE
 ms.assetid: 60b0d44b-0178-43ce-a1ad-7f5825bed3ba
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: CIP_NOTIFY_INFO, CIP_NOTIFY_INFO, *PCIP_NOTIFY_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef struct _CIP_NOTIFY_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>hConnect</b>
+### -field hConnect
 
 <dd>
 <p>A handle to the connection.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Points to the context provided by the caller at <b>NotifyContext</b> in the input CIP_FRAME structure.</p>
 </dd>
 
-### -field <b>Frame</b>
+### -field Frame
 
 <dd>
 <p>Points to the completed frame.</p>
@@ -99,4 +99,4 @@ typedef struct _CIP_NOTIFY_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CIP_NOTIFY_INFO structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CIP_NOTIFY_INFO structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

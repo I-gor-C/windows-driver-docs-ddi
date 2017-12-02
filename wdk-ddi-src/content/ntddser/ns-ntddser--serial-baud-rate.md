@@ -54,7 +54,7 @@ typedef struct _SERIAL_BAUD_RATE {
 ## -struct-fields
 <dl>
 
-### -field <b>BaudRate</b>
+### -field BaudRate
 
 <dd>
 <p>The baud rate. This parameter specifies the number of bits per second that a serial port is currently configured to transmit or receive. For example, a <b>BaudRate</b> value of 115200 indicates that the port is configured to transfer 115,200 bits per second.</p>

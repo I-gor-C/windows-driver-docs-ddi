@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitsetiotypeex.htm
 old-project: wdf
 ms.assetid: 3746D618-C92C-43AB-A45A-2188D572105D
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceInitSetIoTypeEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ void WdfDeviceInitSetIoTypeEx(
 ## -parameters
 <dl>
 
-### -param <i>DeviceInit</i> [in]
+### -param DeviceInit [in]
 
 <dd>
 <p>A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure.</p>
 </dd>
 
-### -param <i>IoTypeConfig</i> [in]
+### -param IoTypeConfig [in]
 
 <dd>
 <p>Pointer to <a href="..\wdfdevice\ns-wdfdevice--wdf-io-type-config.md">WDF_IO_TYPE_CONFIG</a> structure initialized using WDF_IO_TYPE_CONFIG_INIT macro.</p>
@@ -175,4 +175,4 @@ void WdfDeviceInitSetIoTypeEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceInitSetIoTypeEx method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceInitSetIoTypeEx method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

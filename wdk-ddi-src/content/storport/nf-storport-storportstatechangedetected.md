@@ -60,13 +60,13 @@ ULONG StorPortStateChangeDetected(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device.</p>
 </dd>
 
-### -param <i>ChangedEntity</i> [in]
+### -param ChangedEntity [in]
 
 <dd>
 <p>Flags indicating the entities whose state has changed. This is a bitwise <b>OR</b> combination of these values:</p>
@@ -78,7 +78,7 @@ ULONG StorPortStateChangeDetected(
 <tr>
 <td width="40%"><a id="STATE_CHANGE_LUN"></a><a id="state_change_lun"></a><dl>
 
-### -param <b>STATE_CHANGE_LUN</b>
+### -param STATE_CHANGE_LUN
 
 
 ### -param 1 (0x1)
@@ -92,7 +92,7 @@ ULONG StorPortStateChangeDetected(
 <tr>
 <td width="40%"><a id="STATE_CHANGE_TARGET"></a><a id="state_change_target"></a><dl>
 
-### -param <b>STATE_CHANGE_TARGET</b>
+### -param STATE_CHANGE_TARGET
 
 
 ### -param 2 (0x2)
@@ -106,7 +106,7 @@ ULONG StorPortStateChangeDetected(
 <tr>
 <td width="40%"><a id="STATE_CHANGE_BUS"></a><a id="state_change_bus"></a><dl>
 
-### -param <b>STATE_CHANGE_BUS</b>
+### -param STATE_CHANGE_BUS
 
 
 ### -param 4 (0x4)
@@ -121,13 +121,13 @@ ULONG StorPortStateChangeDetected(
 <p> </p>
 </dd>
 
-### -param <i>Address</i> [in]
+### -param Address [in]
 
 <dd>
 <p>The address of the entity with the state change. <i>Address</i> value cannot change until the callback at  <i>HwStateChange</i> is invoked. If <i>Address</i> is allocated in memory, the memory should be freed by the callback routine.</p>
 </dd>
 
-### -param <i>Attributes</i> [in]
+### -param Attributes [in]
 
 <dd>
 <p>Attributes associated with the entity. These are a bitwise <b>OR</b> combination of the following:</p>
@@ -139,7 +139,7 @@ ULONG StorPortStateChangeDetected(
 <tr>
 <td width="40%"><a id="ATTRIBUTE_VM_PASSTHROUGH_LUN"></a><a id="attribute_vm_passthrough_lun"></a><dl>
 
-### -param <b>ATTRIBUTE_VM_PASSTHROUGH_LUN</b>
+### -param ATTRIBUTE_VM_PASSTHROUGH_LUN
 
 </dl>
 </td>
@@ -151,13 +151,13 @@ ULONG StorPortStateChangeDetected(
 <p> </p>
 </dd>
 
-### -param <i>HwStateChange</i> [in, optional]
+### -param HwStateChange [in, optional]
 
 <dd>
 <p>A pointer to a callback routine supplied by the miniport. If present, the Storport driver will call this routine when the driver is finished processing this state change notification.</p>
 </dd>
 
-### -param <i>HwStateChangeContext</i> [in, optional]
+### -param HwStateChangeContext [in, optional]
 
 <dd>
 <p>A miniport-supplied context value that is included when the routine set in <i>HwStateChange</i> is called.</p>

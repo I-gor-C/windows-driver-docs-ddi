@@ -56,19 +56,19 @@ typedef struct tagHistogramGrid {
 ## -struct-fields
 <dl>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>Width of the sensor output that histogram is collected from.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>Height of the sensor output that histogram is collected from.</p>
 </dd>
 
-### -field <b>Region</b>
+### -field Region
 
 <dd>
 <p>Absolute coordinates of the region on the sensor output that the histogram is collected for.</p>

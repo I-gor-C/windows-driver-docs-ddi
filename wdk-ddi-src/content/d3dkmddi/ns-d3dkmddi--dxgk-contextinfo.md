@@ -65,27 +65,27 @@ typedef struct _DXGK_CONTEXTINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>DmaBufferSize</b>
+### -field DmaBufferSize
 
 <dd>
 <p>The size, in bytes, of the buffer of hardware commands that is sent through direct memory access (DMA) to the graphics processing unit (GPU).</p>
 <p>The DMA buffer can grow and shrink after the context is created; however, the DMA buffer can never shrink smaller than the starting size that <b>DmaBufferSize</b> specifies.  </p>
 </dd>
 
-### -field <b>DmaBufferSegmentSet</b>
+### -field DmaBufferSegmentSet
 
 <dd>
 <p> The identifiers of the segments where the DMA buffer should be made accessible to the GPU. </p>
 </dd>
 
-### -field <b>DmaBufferPrivateDataSize</b>
+### -field DmaBufferPrivateDataSize
 
 <dd>
 <p>The size, in bytes, of the driver-resident private data structure that is associated with each DMA buffer. Memory for this private data structure is allocated from nonpaged pool. If the driver specifies zero in <b>DmaBufferPrivateDataSize</b>, no memory is allocated for the private data structure.</p>
 <p>The private data structure that is associated with a DMA buffer is initialized to zero when the DMA buffer is created. During the lifetime of the DMA buffer, the video memory manager never accesses the private data structure that is associated with the DMA buffer. </p>
 </dd>
 
-### -field <b>AllocationListSize</b>
+### -field AllocationListSize
 
 <dd>
 <p>The starting number of elements in an array of allocations (that is, an array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationlist.md">DXGK_ALLOCATIONLIST</a> structures). This number is the starting number of allocations that the driver requests to be in the <b>pAllocationList</b> members of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-present.md">DXGKARG_PRESENT</a> and <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-render.md">DXGKARG_RENDER</a> structures in calls to the driver's <a href="display.dxgkddipresent">DxgkDdiPresent</a> and <a href="display.dxgkddirender">DxgkDdiRender</a> functions, respectively.</p>
@@ -94,28 +94,28 @@ typedef struct _DXGK_CONTEXTINFO {
 <div> </div>
 </dd>
 
-### -field <b>PatchLocationListSize</b>
+### -field PatchLocationListSize
 
 <dd>
 <p> The starting number of elements in an array of patch locations (that is, an array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures) for the device in user mode and kernel mode. This number is the starting number of patch locations that the driver requests to be in the <b>pPatchLocationListIn</b> members of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-render.md">DXGKARG_RENDER</a> structures in calls to its <a href="display.dxgkddirender">DxgkDdiRender</a> function.</p>
 <p>The patch-location list can grow and shrink after the context is created; however, the patch-location list can never shrink smaller than the starting size that <b>PatchLocationListSize</b> specifies. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>This member is available beginning with Windows 7.</p>
 </dd>
 
-### -field <b>Caps</b>
+### -field Caps
 
 <dd>
 <p>Describes optional features supported by the context.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>PagingCompanionNodeId</b>
+### -field PagingCompanionNodeId
 
 <dd>
 <p>Specifies the zero-based engine identifier of the engine to use for this context paging companion.</p>

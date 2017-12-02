@@ -7,7 +7,7 @@ old-location: ifsk\iocreatefilespecifydeviceobjecthint.htm
 old-project: ifsk
 ms.assetid: b7374625-6997-44db-b43b-748dab813fcd
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: IoCreateFileSpecifyDeviceObjectHint
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,13 +68,13 @@ NTSTATUS IoCreateFileSpecifyDeviceObjectHint(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [out]
+### -param FileHandle [out]
 
 <dd>
 <p>A pointer to a variable that receives a handle for the file object if this call is successful. </p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>A bitmask of flags that specify the type of access that the caller requires to the file or directory. The set of system-defined <i>DesiredAccess</i> flags determines the following specific access rights for file objects.</p>
@@ -271,7 +271,7 @@ NTSTATUS IoCreateFileSpecifyDeviceObjectHint(
 </dl>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in]
+### -param ObjectAttributes [in]
 
 <dd>
 <p>A pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure already initialized by the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> routine. If the caller is running in the system process context, this parameter (<i>ObjectAttributes</i>) can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to the <b>InitializeObjectAttributes</b> routine. Members of the OBJECT_ATTRIBUTES structure for a file object include the following.</p>
@@ -324,7 +324,7 @@ NTSTATUS IoCreateFileSpecifyDeviceObjectHint(
 <p> </p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. On return from <b>IoCreateFileSpecifyDeviceObjectHint</b>, the <b>Information</b> member contains one of the following values:</p>
@@ -336,13 +336,13 @@ NTSTATUS IoCreateFileSpecifyDeviceObjectHint(
 <p>FILE_DOES_NOT_EXIST</p>
 </dd>
 
-### -param <i>AllocationSize</i> [in, optional]
+### -param AllocationSize [in, optional]
 
 <dd>
 <p>Optionally specifies the initial allocation size, in bytes, for the file. A nonzero value has no effect unless the file is being created, overwritten, or superseded. </p>
 </dd>
 
-### -param <i>FileAttributes</i> [in]
+### -param FileAttributes [in]
 
 <dd>
 <p>Explicitly specified attributes are applied only when the file is created, superseded, or, in some cases, overwritten. By default, this value is FILE_ATTRIBUTE_NORMAL, which can be overridden by any other flag or by an ORed combination of compatible flags. Possible <i>FileAttributes</i> flags include the following. </p>
@@ -403,7 +403,7 @@ NTSTATUS IoCreateFileSpecifyDeviceObjectHint(
 <p> </p>
 </dd>
 
-### -param <i>ShareAccess</i> [in]
+### -param ShareAccess [in]
 
 <dd>
 <p>Specifies the type of share access to the file that the caller would like, as zero, or one, or a combination of the following flags. To request exclusive access, set this parameter to zero. If the IO_IGNORE_SHARE_ACCESS_CHECK flag is specified in the <i>Options</i> parameter, the I/O manager ignores this parameter. However, the file system might still perform access checks. Thus, it is important to specify the sharing mode you would like for this parameter, even when using the IO_IGNORE_SHARE_ACCESS_CHECK flag. For the greatest chance of avoiding sharing violation errors, specify all of the following share access flags. </p>
@@ -440,7 +440,7 @@ NTSTATUS IoCreateFileSpecifyDeviceObjectHint(
 <p> </p>
 </dd>
 
-### -param <i>Disposition</i> [in]
+### -param Disposition [in]
 
 <dd>
 <p>Specifies a value that determines the action to be taken, depending on whether the file already exists. The value can be any of those described following.</p>
@@ -501,7 +501,7 @@ NTSTATUS IoCreateFileSpecifyDeviceObjectHint(
 <p> </p>
 </dd>
 
-### -param <i>CreateOptions</i> [in]
+### -param CreateOptions [in]
 
 <dd>
 <p>Specifies the options to be applied when creating or opening the file. These options are specified as a compatible combination of the following flags.</p>
@@ -652,31 +652,31 @@ NTSTATUS IoCreateFileSpecifyDeviceObjectHint(
 <p> </p>
 </dd>
 
-### -param <i>EaBuffer</i> [in, optional]
+### -param EaBuffer [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied <a href="..\wdm\ns-wdm--file-full-ea-information.md">FILE_FULL_EA_INFORMATION</a>-structured buffer containing extended attribute (EA) information to be applied to the file. </p>
 </dd>
 
-### -param <i>EaLength</i> [in]
+### -param EaLength [in]
 
 <dd>
 <p>The length, in bytes, of <i>EaBuffer</i>. </p>
 </dd>
 
-### -param <i>CreateFileType</i> [in]
+### -param CreateFileType [in]
 
 <dd>
 <p>Drivers must set this parameter to CreateFileTypeNone. </p>
 </dd>
 
-### -param <i>InternalParameters</i> [in, optional]
+### -param InternalParameters [in, optional]
 
 <dd>
 <p>Drivers must set this parameter to <b>NULL</b>. </p>
 </dd>
 
-### -param <i>Options</i> [in]
+### -param Options [in]
 
 <dd>
 <p>Specifies options to be used during the creation of the create request. The following table lists the available options.</p>
@@ -705,7 +705,7 @@ NTSTATUS IoCreateFileSpecifyDeviceObjectHint(
 <p> </p>
 </dd>
 
-### -param <i>DeviceObject</i> [in, optional]
+### -param DeviceObject [in, optional]
 
 <dd>
 <p>A pointer to the device object to which the create request is to be sent. The device object must be a filter or file system device object in the file system driver stack for the volume on which the file or directory resides. This parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request will be sent to the device object at the top of the driver stack. </p>
@@ -915,4 +915,4 @@ NTSTATUS IoCreateFileSpecifyDeviceObjectHint(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoCreateFileSpecifyDeviceObjectHint routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoCreateFileSpecifyDeviceObjectHint routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

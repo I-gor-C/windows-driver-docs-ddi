@@ -60,7 +60,7 @@ typedef struct _DXVA_ConfigAlphaCombine {
 ## -struct-fields
 <dl>
 
-### -field <b>dwFunction</b>
+### -field dwFunction
 
 <dd>
 <p>Indicates the type of query or response when using probing and locking commands. The most significant 24 bits of <b>dwFunction</b> is the <a href="https://msdn.microsoft.com/bfb1a98e-b9f0-4baa-b486-b2ff33a8bac5">DXVA_ConfigQueryOrReplyFlag</a> variable.</p>
@@ -68,38 +68,38 @@ typedef struct _DXVA_ConfigAlphaCombine {
 <p>The least significant 8 bits of <b>dwFunction</b> is the <a href="https://msdn.microsoft.com/6db9fa71-7bc2-4eb6-afcb-b16df48f7e8b">bDXVA_Func variable</a> that, in this case, is equal to 3.</p>
 </dd>
 
-### -field <b>dwReservedBits</b>
+### -field dwReservedBits
 
 <dd>
 <p>Specifies the reserved bits used for packing and alignment. This member must be zero.</p>
 </dd>
 
-### -field <b>bConfigBlendType</b>
+### -field bConfigBlendType
 
 <dd>
 <p>Specifies the type of alpha-blend combinations to be performed. Zero indicates front-end buffer-to-buffer blend, and 1 indicates back-end hardware blend.</p>
 <p>The preferred value for an accelerator to support is zero.</p>
 </dd>
 
-### -field <b>bConfigPictureResizing</b>
+### -field bConfigPictureResizing
 
 <dd>
 <p>Specifies whether the <b>PictureSourceRect16thPel</b> member of <a href="..\dxva\ns-dxva--dxva-blendcombination.md">DXVA_BlendCombination</a> for graphic blending may differ in width and height from the <b>PictureDestinationRect</b> member of DXVA_BlendCombination (adjusted for the one-sixteenth sample scaling of <b>PictureSourceRect16thPel</b>). This member also specifies whether the values in <b>PictureSourceRect16thPel</b> are multiples of 16, thus requiring the source picture to be resampled by the accelerator. A value of 1 indicates that resampling (whether for resizing or for subpixel accuracy) is supported; a value of zero indicates that it is not.</p>
 </dd>
 
-### -field <b>bConfigOnlyUsePicDestRectArea</b>
+### -field bConfigOnlyUsePicDestRectArea
 
 <dd>
 <p>Specifies whether the decoder can perform operations that use values for areas of a destination picture outside the area defined by the <b>PictureDestinationRect</b> member of the DXVA_BlendCombination structure. The value zero indicates that areas outside of <b>PictureDestinationRect</b> can be specified and displayed by the blend combination commands. The value 1 indicates that the decoder cannot rely on the values of, or display, any region of the blended surface outside of the area specified by <b>PictureDestinationRect</b>.</p>
 </dd>
 
-### -field <b>bConfigGraphicResizing</b>
+### -field bConfigGraphicResizing
 
 <dd>
 <p>Indicates whether alpha blending is supported in graphic image resizing. A value of 1 indicates that it is; a value of zero indicates that it is not. <b>bConfigGraphicResizing</b> specifies whether the <b>GraphicSourceRect</b> member of <a href="..\dxva\ns-dxva--dxva-blendcombination.md">DXVA_BlendCombination</a> (for subpicture blending) may differ in size from the <b>GraphicDestinationRect</b> member of DXVA_BlendCombination. If these values are different, the alpha-blending graphic must be resampled by the accelerator.</p>
 </dd>
 
-### -field <b>bConfigWholePlaneAlpha</b>
+### -field bConfigWholePlaneAlpha
 
 <dd>
 <p>Specifies whether a whole-plane alpha opacity value can be applied to the graphic image. A value of 1 indicates that a whole-plane alpha can be applied; a value of zero indicates that it cannot.</p>

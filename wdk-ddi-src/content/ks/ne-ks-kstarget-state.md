@@ -55,11 +55,11 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSTARGET_STATE_DISABLED"></a><a id="kstarget_state_disabled"></a><b>KSTARGET_STATE_DISABLED</b>
+### -field KSTARGET_STATE_DISABLED
 
 <dd></dd>
 
-### -field <a id="KSTARGET_STATE_ENABLED"></a><a id="kstarget_state_enabled"></a><b>KSTARGET_STATE_ENABLED</b>
+### -field KSTARGET_STATE_ENABLED
 
 <dd></dd>
 </dl>

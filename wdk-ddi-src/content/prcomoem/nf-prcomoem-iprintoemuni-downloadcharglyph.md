@@ -59,31 +59,31 @@ HRESULT DownloadCharGlyph(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pUFObj</i> 
+### -param pUFObj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--unifontobj.md">UNIFONTOBJ</a> structure.</p>
 </dd>
 
-### -param <i>hGlyph</i> 
+### -param hGlyph 
 
 <dd>
 <p>Caller-supplied glyph handle.</p>
 </dd>
 
-### -param <i>pdwWidth</i> 
+### -param pdwWidth 
 
 <dd>
 <p>Caller-supplied pointer to receive the method-supplied width of the character.</p>
 </dd>
 
-### -param <i>pdwResult</i> [out]
+### -param pdwResult [out]
 
 <dd>
 <p>Receives a method-supplied value representing the amount of printer memory, in bytes, required to store the character glyph. If the operation fails, the returned value should be zero.</p>
@@ -104,7 +104,7 @@ HRESULT DownloadCharGlyph(
 ## -remarks
 <p>The <code>IPrintOemUni::DownloadCharGlyph</code> method is used for supporting soft fonts on printers that do not accept <a href="wdkgloss.p#wdkgloss.pcl#wdkgloss.pcl"><i>PCL</i></a> commands. Its purpose is to enable a rendering plug-in to send a character glyph to the printer.</p>
 
-<p>If a rendering plug-in implements the  <code>IPrintOemUni::DownloadCharGlyph</code> method, Unidrv calls the method immediately after sending the command string specified by the CmdSetCharCode command entry, which is contained in the printer's <a href="wdkgloss.g#wdkgloss.generic_printer_description__gpd_#wdkgloss.generic_printer_description__gpd_"><i>GPD</i></a> file. (GPD files are described in <a href="NULL">Microsoft Universal Printer Driver</a>.) The method should do the following:</p>
+<p>If a rendering plug-in implements the  <code>IPrintOemUni::DownloadCharGlyph</code> method, Unidrv calls the method immediately after sending the command string specified by the CmdSetCharCode command entry, which is contained in the printer's <a href="wdkgloss.g#wdkgloss.generic_printer_description__gpd_#wdkgloss.generic_printer_description__gpd_"><i>GPD</i></a> file. (GPD files are described in <a href="https://msdn.microsoft.com/1f5d68a1-3552-44a9-a0c5-b3ec5fe22a22">Microsoft Universal Printer Driver</a>.) The method should do the following:</p>
 
 <p>Call the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> function to obtain the glyph image specified by <i>hGlyph</i>.</p>
 
@@ -118,7 +118,7 @@ HRESULT DownloadCharGlyph(
 
 <p>If you implement the <code>IPrintOemUni::DownloadCharGlyph</code> method, you must also implement the <a href="print.iprintoemuni_downloadfontheader">IPrintOemUni::DownloadFontHeader</a> method.</p>
 
-<p>For additional information see <a href="NULL">Customized Font Management</a>.</p>
+<p>For additional information see <a href="https://msdn.microsoft.com/6e643703-ace1-4660-990c-3a9ca735829d">Customized Font Management</a>.</p>
 
 ## -requirements
 <table>

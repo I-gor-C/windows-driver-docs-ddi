@@ -57,25 +57,25 @@ typedef struct _DXGKARG_PREEMPTCOMMAND {
 ## -struct-fields
 <dl>
 
-### -field <b>PreemptionFenceId</b>
+### -field PreemptionFenceId
 
 <dd>
 <p>[in] A unique identifier that the display miniport driver must patch into the fence command at the end of the DMA buffer to preempt the previously submitted DMA buffer. The display miniport driver uses the identifier in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-notify-dpc.md">DxgkCbNotifyDpc</a> function to inform the graphics processing unit (GPU) scheduler about the preemption at deferred-procedure-call (DPC) time.</p>
 </dd>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>[in] The index of the node for the preemption request. </p>
 </dd>
 
-### -field <b>EngineOrdinal</b>
+### -field EngineOrdinal
 
 <dd>
 <p>[in] The index of the engine for the preemption request.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-preemptcommandflags.md">DXGK_PREEMPTCOMMANDFLAGS</a> structure with a reserved member or a 32-bit value. No flags are currently defined for this structure.</p>

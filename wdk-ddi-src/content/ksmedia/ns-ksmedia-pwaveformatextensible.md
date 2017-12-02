@@ -61,30 +61,30 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>Specifies the stream's wave-data format. This member is a structure of type <a href="audio.waveformatex">WAVEFORMATEX</a>. The <b>wFormat</b> member of WAVEFORMATEX should be set to WAVE_FORMAT_EXTENSIBLE. The <b>wBitsPerSample</b> member of WAVEFORMATEX is defined unambiguously as the size of the container for each sample. Sample containers are always byte-aligned, and <b>wBitsPerSample</b> must be a multiple of eight.</p>
 </dd>
 
-### -field <b>Samples</b>
+### -field Samples
 
 <dd>
 <dl>
 
-### -field <b>wValidBitsPerSample</b>
+### -field wValidBitsPerSample
 
 <dd>
 <p>Specifies the precision of the sample in bits. The value of this member should be less than or equal to the container size specified in the <b>Format</b>.<b>wBitsPerSample</b> member. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>wSamplesPerBlock</b>
+### -field wSamplesPerBlock
 
 <dd>
 <p>Specifies the number of samples contained in one compressed block. This value is useful for estimating buffer requirements for compressed formats that have a fixed number of samples within each block. Set this member to zero if each block of compressed audio data contains a variable number of samples. In this case, buffer-estimation and buffer-position information must be obtained in other ways.</p>
 </dd>
 
-### -field <b>wReserved</b>
+### -field wReserved
 
 <dd>
 <p>Reserved for internal use by operating system. Initialize to zero.</p>
@@ -92,13 +92,13 @@ typedef struct {
 </dl>
 </dd>
 
-### -field <b>dwChannelMask</b>
+### -field dwChannelMask
 
 <dd>
 <p>Specifies the assignment of channels in the multichannel stream to speaker positions. The encoding is the same as that used for the <b>ActiveSpeakerPositions</b> member of the <a href="audio.ksaudio_channel_config">KSAUDIO_CHANNEL_CONFIG</a> structure. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>SubFormat</b>
+### -field SubFormat
 
 <dd>
 <p>Specifies the subformat. For more information, see the following Remarks section.</p>
@@ -106,7 +106,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>WAVEFORMATEXTENSIBLE is an extended form of the <a href="audio.waveformatex">WAVEFORMATEX</a> structure. WAVEFORMATEX can unambiguously describe only a subset of the formats that can be described by WAVEFORMATEXTENSIBLE. WAVEFORMATEXTENSIBLE is not subject to the limitations of WAVEFORMATEX, which is unable to unambiguously specify formats with more than two channels or for which the number of valid bits per sample does not equal the sample container size. For more information, see <a href="NULL">Audio Data Formats and Data Ranges</a>.</p>
+<p>WAVEFORMATEXTENSIBLE is an extended form of the <a href="audio.waveformatex">WAVEFORMATEX</a> structure. WAVEFORMATEX can unambiguously describe only a subset of the formats that can be described by WAVEFORMATEXTENSIBLE. WAVEFORMATEXTENSIBLE is not subject to the limitations of WAVEFORMATEX, which is unable to unambiguously specify formats with more than two channels or for which the number of valid bits per sample does not equal the sample container size. For more information, see <a href="https://msdn.microsoft.com/85aa74b4-8e33-49f4-82e7-561baa55c265">Audio Data Formats and Data Ranges</a>.</p>
 
 <p>Frequently, the <b>wValidBitsPerSample</b> member, which specifies the sample precision, contains the same value as the <b>Format</b>.<b>wBitsPerSample</b> member, which specifies the sample container size. However, these values can be different. For example, if the wave data originated from a 20-bit A/D converter, then <b>wValidBitsPerSample</b> should be 20 but <b>Format</b>.<b>wBitsPerSample</b> might be 24 or 32. If <b>wValidBitsPerSample</b> is less than <b>Format</b>.<b>wBitsPerSample</b>, the valid bits (the actual PCM data) are left-aligned within the container. The unused bits in the least-significant portion of the container should be set to zero.</p>
 
@@ -250,7 +250,7 @@ typedef struct {
 
 <p>KSDATAFORMAT_SUBTYPE_ADPCM</p>
 
-<p>For more information, see <a href="NULL">Converting Between Format Tags and Subformat GUIDs</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/299ad5d3-df62-41cf-a18f-daa83cc60ef3">Converting Between Format Tags and Subformat GUIDs</a>.</p>
 
 <p>Because WAVEFORMATEXTENSIBLE is an extended version of WAVEFORMATEX, it can describe additional formats that cannot be described by WAVEFORMATEX alone. Vendors are free to define their own <b>SubFormat</b> GUIDs to identify proprietary formats for which no wave-format tags exist.</p>
 

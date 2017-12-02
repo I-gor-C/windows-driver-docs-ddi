@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelinitsetflags.htm
 old-project: netvista
 ms.assetid: 12525F3C-12D6-477E-8C7D-3DE9AAA044AE
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbChannelInitSetFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,14 +57,14 @@ NTSTATUS VmbChannelInitSetFlags(
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>A handle for the channel.
 </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A collection of bit flags to set.</p>

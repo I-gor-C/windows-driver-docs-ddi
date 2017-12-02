@@ -60,19 +60,19 @@ typedef struct _D3DKMT_POLLDISPLAYCHILDREN {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the graphics adapter to query for connectivity status of child devices.</p>
 </dd>
 
-### -field <b>NonDestructiveOnly</b>
+### -field NonDestructiveOnly
 
 <dd>
 <p>[in] A UINT value that specifies whether the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtpolldisplaychildren.md">D3DKMTPollDisplayChildren</a> function should be only nondestructive. A nonzero value indicates only a nondestructive call; a zero value indicates the call can be destructive (that is, the call can cause visual artifacts on the screen). </p>
 </dd>
 
-### -field <b>SynchronousPolling</b>
+### -field SynchronousPolling
 
 <dd>
 <p>Supported beginning with Windows 7 operating system.</p>
@@ -80,21 +80,21 @@ typedef struct _D3DKMT_POLLDISPLAYCHILDREN {
 <p>If the display miniport driver needs to poll child devices after receiving notice of an ACPI event, the runtime should set <b>SynchronousPolling</b> to a nonzero value.</p>
 </dd>
 
-### -field <b>DisableModeReset</b>
+### -field DisableModeReset
 
 <dd>
 <p>Supported beginning with Windows 7 operating system.</p>
 <p>[in] A UINT value that specifies whether any reactions of the display miniport driver to discoveries of new child devices are disabled during the polling interval. If set to a nonzero value, such reactions of the driver are disabled during the polling interval. In this case, set the <b>SynchronousPolling</b>parameter when setting <b>DisableModeReset</b>. Otherwise, normal reactions of the driver to discoveries of new child devices are allowed.</p>
 </dd>
 
-### -field <b>PollAllAdapters</b>
+### -field PollAllAdapters
 
 <dd>
 <p>Supported beginning with Windows 7 operating system.</p>
 <p>[in] A UINT value that specifies whether all child devices are polled. If set to a nonzero value, all child devices are polled. Otherwise, only the child devices that are on the specified adapter are discovered in the polling.</p>
 </dd>
 
-### -field <b>PollInterruptible</b>
+### -field PollInterruptible
 
 <dd>
 <p>Supported beginning with Windows 7 operating system.</p>
@@ -103,7 +103,7 @@ typedef struct _D3DKMT_POLLDISPLAYCHILDREN {
 <p>For more information on HPD-aware devices, see <a href="https://msdn.microsoft.com/170d2d5d-fd46-431d-9672-61fa048f7dd2">Monitor Hot Plug Detection</a>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Supported beginning with Windows 7 operating system.</p>

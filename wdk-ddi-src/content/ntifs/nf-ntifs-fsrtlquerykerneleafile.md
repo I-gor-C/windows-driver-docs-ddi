@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlquerykerneleafile.htm
 old-project: ifsk
 ms.assetid: B57BC3A4-6116-48EA-905A-CFA7AC0A5E8F
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FsRtlQueryKernelEaFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,59 +64,59 @@ NTSTATUS FsRtlQueryKernelEaFile(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>A pointer to a <b>FileObject</b> to send the QueryEA request to.</p>
 </dd>
 
-### -param <i>ReturnedEaData</i> [out]
+### -param ReturnedEaData [out]
 
 <dd>
 <p>A pointer to a caller-supplied <a href="..\wdm\ns-wdm--file-full-ea-information.md">FILE_FULL_EA_INFORMATION</a>-structured output buffer, where the extended attribute values are to be returned.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the length, in bytes, of <b>ReturnedEaData</b></p>
 </dd>
 
-### -param <i>ReturnSingleEntry</i> [in]
+### -param ReturnSingleEntry [in]
 
 <dd>
 <p>Specifies whether only a single entry should be returned
         rather than filling the buffer with as many EAs as possible.</p>
 </dd>
 
-### -param <i>EaList</i> [in]
+### -param EaList [in]
 
 <dd>
 <p>A pointer to a caller-supplied <a href="..\ntifs\ns-ntifs--file-get-ea-information.md">FILE_GET_EA_INFORMATION</a>-structured input buffer, which specifies the extended attributes to be queried. This parameter is optional and can be<b> NULL</b>.</p>
 </dd>
 
-### -param <i>EaListLength</i> [in]
+### -param EaListLength [in]
 
 <dd>
 <p>Specifies the length of <b>EaList</b>, if an EA list was
         supplied.</p>
 </dd>
 
-### -param <i>EaIndex</i> [in, optional]
+### -param EaIndex [in, optional]
 
 <dd>
 <p>Supplies the optional index of an EA whose value is to be
         returned.  If specified, then only that EA is returned.</p>
 </dd>
 
-### -param <i>RestartScan</i> [in]
+### -param RestartScan [in]
 
 <dd>
 <p>Specifies whether the scan of the EAs should be restarted
         from the beginning.</p>
 </dd>
 
-### -param <i>LengthReturned</i> [out, optional]
+### -param LengthReturned [out, optional]
 
 <dd>
 <p>Specifies the amount of valid data that is returned in the
@@ -184,4 +184,4 @@ NTSTATUS FsRtlQueryKernelEaFile(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlQueryKernelEaFile routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlQueryKernelEaFile routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

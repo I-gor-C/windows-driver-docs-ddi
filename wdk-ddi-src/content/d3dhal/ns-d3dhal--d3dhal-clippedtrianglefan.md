@@ -59,19 +59,19 @@ typedef struct _D3DHAL_CLIPPEDTRIANGLEFAN {
 ## -struct-fields
 <dl>
 
-### -field <b>FirstVertexOffset</b>
+### -field FirstVertexOffset
 
 <dd>
 <p>Specifies the byte offset into stream 0 of the start of the vertex data (not the index of the vertex).</p>
 </dd>
 
-### -field <b>dwEdgeFlags</b>
+### -field dwEdgeFlags
 
 <dd>
 <p>Specifies a bitmask that identifies what edges are to be drawn when rendering wire frame (to prevent the drawing of edges introduced by clipping). For more information about this bitmask, see the Remarks section of the <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2trianglefan-imm.md">D3DHAL_DP2TRIANGLEFAN_IMM</a> structure.</p>
 </dd>
 
-### -field <b>PrimitiveCount</b>
+### -field PrimitiveCount
 
 <dd>
 <p>Specifies the number of triangles in the given triangle fan.</p>

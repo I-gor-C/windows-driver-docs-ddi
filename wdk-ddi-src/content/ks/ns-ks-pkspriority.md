@@ -55,7 +55,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>PriorityClass</b>
+### -field PriorityClass
 
 <dd>
 <p>Specifies a number ranging from 1 to 0xFFFFFFFF, where 1 is least priority and 0xFFFFFFFF is the highest priority. Zero is reserved for future use. When setting a class value, 0xFFFFFFFF is used to indicate exclusive access to the resources consumed by the pin. Possible values are listed in the following table.</p>
@@ -100,7 +100,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>PrioritySubClass</b>
+### -field PrioritySubClass
 
 <dd>
 <p>Specifies a number ranging from 1 to 0xFFFFFFFF, where 1 is the least priority within the class and 0xFFFFFFFF is the most priority. Zero is reserved for future use.</p>

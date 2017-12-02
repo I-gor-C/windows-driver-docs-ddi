@@ -55,7 +55,7 @@ NTSTATUS PoFxRegisterCrashdumpDevice(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> 
+### -param Handle 
 
 <dd>
 <p>A handle that represents the registration of the crash-dump device with the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx). The device driver previously received this handle from the <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a> routine.</p>

@@ -59,19 +59,19 @@ ULONG RunOnceInitialization(
 ## -parameters
 <dl>
 
-### -param <i>RunOnce</i> [in, out]
+### -param RunOnce [in, out]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a> one-time initialization structure that the driver previously passed as a parameter to the <a href="..\ntddk\nf-ntddk-rtlrunonceexecuteonce.md">RtlRunOnceExecuteOnce</a> routine that called this <i>RunOnceInitialization</i> routine.</p>
 </dd>
 
-### -param <i>Parameter</i> [in, out]
+### -param Parameter [in, out]
 
 <dd>
 <p>The <i>Parameter</i> value that the driver passed to the <b>RtlRunOnceExecuteOnce</b> routine that called this <i>RunOnceInitialization</i> routine.</p>
 </dd>
 
-### -param <i>Context</i> [out]
+### -param Context [out]
 
 <dd>
 <p>A pointer to a PVOID variable to which the routine writes the initialization data.</p>
@@ -87,7 +87,7 @@ ULONG RunOnceInitialization(
 
 <p>A small number of low-order bits in the location pointed to by the <i>Context</i> parameter are reserved for use by the operating system. Your driver's <i>RunOnceInitialization</i> routine should set these reserved bits to zero in the output value that it writes to *<i>Context</i>. The RTL_RUN_ONCE_CTX_RESERVED_BITS constant defined in Ntddk.h specifies the number of low-order bits that are reserved. Currently, RTL_RUN_ONCE_CTX_RESERVED_BITS is defined to be two, which means that the driver must set the two least significant bits of the PVOID value pointed to by <i>Context</i> to zero.</p>
 
-<p>To define a <i>RunOnceInitialization</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define a <i>RunOnceInitialization</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define a <i>RunOnceInitialization</i> callback routine that is named <code>MyRunOnceInitialization</code>, use the RTL_RUN_ONCE_INIT_FN type as shown in this code example:</p>
 

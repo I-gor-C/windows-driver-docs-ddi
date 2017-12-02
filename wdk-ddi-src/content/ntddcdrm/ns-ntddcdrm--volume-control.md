@@ -54,7 +54,7 @@ typedef struct _VOLUME_CONTROL {
 ## -struct-fields
 <dl>
 
-### -field <b>PortVolume</b>
+### -field PortVolume
 
 <dd>
 <p>Pointer to an array of volume values, one for each of the ports, with a maximum of four ports. </p>

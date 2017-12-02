@@ -7,7 +7,7 @@ old-location: netvista\rilsetexecutorrfstateparams.htm
 old-project: netvista
 ms.assetid: d7f36cbd-56bb-470e-b965-369b9e49f5e2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSETEXECUTORRFSTATEPARAMS, RILSETEXECUTORRFSTATEPARAMS, *LPRILSETEXECUTORRFSTATEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILSETEXECUTORRFSTATEPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>fExecutorRFState</b>
+### -field fExecutorRFState
 
 <dd></dd>
 </dl>

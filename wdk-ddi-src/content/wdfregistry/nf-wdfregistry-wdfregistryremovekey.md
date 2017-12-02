@@ -7,7 +7,7 @@ old-location: wdf\wdfregistryremovekey.htm
 old-project: wdf
 ms.assetid: b23d1c2f-15f0-4b9e-8a10-9b81056fa509
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfRegistryRemoveKey
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ NTSTATUS WdfRegistryRemoveKey(
 ## -parameters
 <dl>
 
-### -param <i>Key</i> [in]
+### -param Key [in]
 
 <dd>
 <p>A handle to a registry-key object that represents an opened registry key.</p>

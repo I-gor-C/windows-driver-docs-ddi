@@ -56,19 +56,19 @@ typedef struct _PEP_PROCESSOR_IDLE_CONSTRAINTS {
 ## -struct-fields
 <dl>
 
-### -field <b>IdleDuration</b>
+### -field IdleDuration
 
 <dd>
 <p>The length of time, in 100-nanosecond units, for which the processor is expected to stay in the selected idle state. This is the operating system's current best estimate and might vary over time without further notification.</p>
 </dd>
 
-### -field <b>Interruptible</b>
+### -field Interruptible
 
 <dd>
 <p>Whether the processor must be able to respond to interrupts in the selected idle state. A value of TRUE indicates that the processor must be interruptible in this idle state. A value of FALSE indicates that the processor is not required to be interruptible in this idle state.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="kernel.pep_processor_idle_type">PEP_PROCESSOR_IDLE_TYPE</a> enumeration value that indicates whether these idle constraints apply to just the current processor (<b>Type</b> = <b>PepIdleTypeProcessor</b>) or to all processors in the hardware platform (<b>Type</b> = <b>PepIdleTypePlatform</b>).</p>

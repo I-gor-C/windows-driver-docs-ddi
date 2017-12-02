@@ -59,37 +59,37 @@ NTSTATUS KsLoadResource(
 ## -parameters
 <dl>
 
-### -param <i>ImageBase</i> [in]
+### -param ImageBase [in]
 
 <dd>
 <p>Pointer to the image base</p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>Pool type to use when copying resource</p>
 </dd>
 
-### -param <i>ResourceName</i> [in]
+### -param ResourceName [in]
 
 <dd>
 <p>Resource name.</p>
 </dd>
 
-### -param <i>ResourceType</i> [in]
+### -param ResourceType [in]
 
 <dd>
 <p>Resource type</p>
 </dd>
 
-### -param <i>Resource</i> [out]
+### -param Resource [out]
 
 <dd>
 <p>Pointer to resultant resource memory.</p>
 </dd>
 
-### -param <i>ResourceSize</i> [out, optional]
+### -param ResourceSize [out, optional]
 
 <dd>
 <p>Pointer to ULONG value to receive the size of the resource.</p>

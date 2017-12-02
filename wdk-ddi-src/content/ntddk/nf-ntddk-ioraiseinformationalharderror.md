@@ -56,19 +56,19 @@ BOOLEAN IoRaiseInformationalHardError(
 ## -parameters
 <dl>
 
-### -param <i>ErrorStatus</i> [in]
+### -param ErrorStatus [in]
 
 <dd>
 <p>The error status code (IO_ERR_<i>XXX</i>). </p>
 </dd>
 
-### -param <i>String</i> [in, optional]
+### -param String [in, optional]
 
 <dd>
 <p>A pointer to a Unicode string, which provides additional information about the error. Some NT status codes require a string parameter, such as a file or directory name. If the specified <i>ErrorStatus</i> value does not require a string parameter, set <i>String</i> to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Thread</i> [in, optional]
+### -param Thread [in, optional]
 
 <dd>
 <p>A pointer to the thread whose IRP was failed due to the error specified by the <i>ErrorStatus</i> parameter.</p>
@@ -164,7 +164,7 @@ BOOLEAN IoRaiseInformationalHardError(
 <a href="..\ntddk\nf-ntddk-iosetthreadharderrormode.md">IoSetThreadHardErrorMode</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 </dl>
 <p> </p>

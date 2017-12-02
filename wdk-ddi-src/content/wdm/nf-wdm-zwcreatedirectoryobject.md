@@ -57,13 +57,13 @@ NTSTATUS ZwCreateDirectoryObject(
 ## -parameters
 <dl>
 
-### -param <i>DirectoryHandle</i> [out]
+### -param DirectoryHandle [out]
 
 <dd>
 <p>Pointer to a HANDLE variable that receives a handle to the object directory.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that determines the requested access to the object. In addition to the access rights that are defined for all types of objects (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>), the caller can specify one or more of the following access rights, which are specific to object directories:</p>
@@ -116,7 +116,7 @@ NTSTATUS ZwCreateDirectoryObject(
 <p> </p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in]
+### -param ObjectAttributes [in]
 
 <dd>
 <p>Pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that contains the object's attributes, which you must have already initialized by calling <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>. </p>

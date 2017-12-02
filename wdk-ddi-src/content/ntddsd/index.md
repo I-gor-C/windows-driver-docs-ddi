@@ -21,6 +21,7 @@ Ntddsd.h contain these programming interfaces:
 | ---- |:---- |
 | [PSDBUS_ACKNOWLEDGE_INT_ROUTINE callback](nc-ntddsd-psdbus-acknowledge-int-routine.md) | The PSDBUS_ACKNOWLEDGE_INT_ROUTINE prototype declares the routine that a Secure Digital (SD) device driver must call to acknowledge to the bus driver that it has finished processing the interrupt. |
 | [PSDBUS_INITIALIZE_INTERFACE_ROUTINE callback](nc-ntddsd-psdbus-initialize-interface-routine.md) | The PSDBUS_INITIALIZE_INTERFACE_ROUTINE prototype declares the routine that a Secure Digital (SD) device driver uses to initialize an interface instance that it creates with the SdBusOpenInterface routine. |
+| [SDBUS_CALLBACK_ROUTINE callback](nc-ntddsd-sdbus-callback-routine.md) | The PSDBUS_CALLBACK_ROUTINE prototype declares the Secure Digital (SD) driver callback routine that the SD bus driver uses to report device interrupts to the driver. |
 
 ## Enumerations
 

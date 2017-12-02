@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_AMVP_DO_NOT_CARE"></a><a id="ks_amvp_do_not_care"></a><b>KS_AMVP_DO_NOT_CARE</b>
+### -field KS_AMVP_DO_NOT_CARE
 
 <dd>
 <p>The format does not matter.</p>
 </dd>
 
-### -field <a id="KS_AMVP_BEST_BANDWIDTH"></a><a id="ks_amvp_best_bandwidth"></a><b>KS_AMVP_BEST_BANDWIDTH</b>
+### -field KS_AMVP_BEST_BANDWIDTH
 
 <dd>
 <p>Use the largest available bandwidth.</p>
 </dd>
 
-### -field <a id="KS_AMVP_INPUT_SAME_AS_OUTPUT"></a><a id="ks_amvp_input_same_as_output"></a><b>KS_AMVP_INPUT_SAME_AS_OUTPUT</b>
+### -field KS_AMVP_INPUT_SAME_AS_OUTPUT
 
 <dd>
 <p>Use the same format for output as input.</p>

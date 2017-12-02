@@ -7,7 +7,7 @@ old-location: netvista\ndis_configuration_object.htm
 old-project: netvista
 ms.assetid: 8fa80414-c87a-4f05-b99c-5153f08a0862
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_CONFIGURATION_OBJECT, NDIS_CONFIGURATION_OBJECT, *PNDIS_CONFIGURATION_OBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct _NDIS_CONFIGURATION_OBJECT {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -71,13 +71,13 @@ typedef struct _NDIS_CONFIGURATION_OBJECT {
      <b>Size</b> member to NDIS_SIZEOF_CONFIGURATION_OBJECT_REVISION_1.</p>
 </dd>
 
-### -field <b>NdisHandle</b>
+### -field NdisHandle
 
 <dd>
 <p>An NDIS handle that the caller obtained during initialization.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitwise OR of the following flags:
@@ -85,7 +85,7 @@ typedef struct _NDIS_CONFIGURATION_OBJECT {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_CONFIG_FLAG_FILTER_INSTANCE_CONFIGURATION"></a><a id="ndis_config_flag_filter_instance_configuration"></a>NDIS_CONFIG_FLAG_FILTER_INSTANCE_CONFIGURATION
+### -field NDIS_CONFIG_FLAG_FILTER_INSTANCE_CONFIGURATION
 
 <dd>
 <p>Set this flag if a monitoring filter driver must access the filter module configuration for a
@@ -135,4 +135,4 @@ typedef struct _NDIS_CONFIGURATION_OBJECT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CONFIGURATION_OBJECT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CONFIGURATION_OBJECT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

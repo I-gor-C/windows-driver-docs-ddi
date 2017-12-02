@@ -7,7 +7,7 @@ old-location: netvista\ndis_pd_receive_queue_counter.htm
 old-project: netvista
 ms.assetid: E42705A4-D018-435E-BA98-3EE5BA5EDE66
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PD_RECEIVE_QUEUE_COUNTER, NDIS_PD_RECEIVE_QUEUE_COUNTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef struct _NDIS_PD_RECEIVE_QUEUE_COUNTER {
 ## -struct-fields
 <dl>
 
-### -field <b>PacketsReceived</b>
+### -field PacketsReceived
 
 <dd>
 <p>The amount of packets received.</p>
 </dd>
 
-### -field <b>BytesReceived</b>
+### -field BytesReceived
 
 <dd>
 <p>The amount of bytes received.</p>
 </dd>
 
-### -field <b>PacketsDropped</b>
+### -field PacketsDropped
 
 <dd>
 <p>The amount of packets dropped.</p>

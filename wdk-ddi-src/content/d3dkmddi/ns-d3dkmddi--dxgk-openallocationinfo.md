@@ -57,25 +57,25 @@ typedef struct _DXGK_OPENALLOCATIONINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the nondevice-specific allocation that the <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function created. The Microsoft DirectX graphics kernel subsystem (which is part of <i>Dxgkrnl.sys</i>) assigned this handle for the allocation.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in/out] A pointer to a block of private data that is passed between the user-mode display driver and the display miniport driver. This block of private data is the same allocation-specific data that is passed in the <b>pPrivateDriverData</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a> structure in the call to the <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function. The display miniport driver's <a href="display.dxgkddiopenallocation">DxgkDdiOpenAllocation</a> function can modify this block of private data if the <b>Create</b> bit-field flag is set in the <b>Flags</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-openallocation.md">DXGKARG_OPENALLOCATION</a> structure. The user-mode display driver can access modifications to the block of private data.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.</p>
 </dd>
 
-### -field <b>hDeviceSpecificAllocation</b>
+### -field hDeviceSpecificAllocation
 
 <dd>
 <p>[out] A handle to the device-specific allocation that corresponds to the non device-specific allocation that <b>hAllocation</b> specifies. The display miniport driver must set <b>hDeviceSpecificAllocation</b> to a handle value that it can use to refer to its private tracking structure for the allocation.</p>

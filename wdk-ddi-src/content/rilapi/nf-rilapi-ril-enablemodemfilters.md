@@ -7,7 +7,7 @@ old-location: netvista\ril_enablemodemfilters.htm
 old-project: netvista
 ms.assetid: 11fc231e-4b65-4cbb-8c0f-58b1165c08dd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_EnableModemFilters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_EnableModemFilters(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>filterID</i> 
+### -param filterID 
 
 <dd></dd>
 </dl>

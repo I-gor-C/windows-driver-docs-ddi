@@ -7,7 +7,7 @@ old-location: wdf\wdfgettriageinfo.htm
 old-project: wdf
 ms.assetid: F6B1DC49-B691-45E4-8DE9-ADCD73D90ADE
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfGetTriageInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: ifsk\file_stream_information.htm
 old-project: ifsk
 ms.assetid: 03472920-cb22-42e1-b0e5-488c0319fc03
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILE_STREAM_INFORMATION, FILE_STREAM_INFORMATION, *PFILE_STREAM_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ typedef struct _FILE_STREAM_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NextEntryOffset</b>
+### -field NextEntryOffset
 
 <dd>
 <p>The offset of the next FILE_STREAM_INFORMATION entry. This member is zero if no other entries follow this one. </p>
 </dd>
 
-### -field <b>StreamNameLength</b>
+### -field StreamNameLength
 
 <dd>
 <p>Length, in bytes, of the <b>StreamName</b> string. </p>
 </dd>
 
-### -field <b>StreamSize</b>
+### -field StreamSize
 
 <dd>
 <p>Size, in bytes, of the stream. </p>
 </dd>
 
-### -field <b>StreamAllocationSize</b>
+### -field StreamAllocationSize
 
 <dd>
 <p>File stream allocation size, in bytes. Usually this value is a multiple of the sector or cluster size of the underlying physical device. </p>
 </dd>
 
-### -field <b>StreamName</b>
+### -field StreamName
 
 <dd>
 <p>Unicode string that contains the name of the stream. </p>
@@ -158,4 +158,4 @@ typedef struct _FILE_STREAM_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_STREAM_INFORMATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_STREAM_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: ifsk\instance_full_information.htm
 old-project: ifsk
 ms.assetid: 6c034749-c110-4623-8a7b-a19235cad298
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: INSTANCE_FULL_INFORMATION, INSTANCE_FULL_INFORMATION, *PINSTANCE_FULL_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,55 +62,55 @@ typedef struct _INSTANCE_FULL_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NextEntryOffset</b>
+### -field NextEntryOffset
 
 <dd>
 <p>A byte offset of the next INSTANCE_FULL_INFORMATION entry. If multiple entries are present in a buffer, the last entry contains a zero.  </p>
 </dd>
 
-### -field <b>InstanceNameLength</b>
+### -field InstanceNameLength
 
 <dd>
 <p>The length, in bytes, of the instance name. </p>
 </dd>
 
-### -field <b>InstanceNameBufferOffset</b>
+### -field InstanceNameBufferOffset
 
 <dd>
 <p>A byte offset of the first character of the instance name string. This character is followed in memory by the remainder of the string. </p>
 </dd>
 
-### -field <b>AltitudeLength</b>
+### -field AltitudeLength
 
 <dd>
 <p>The length, in bytes, of the altitude string. </p>
 </dd>
 
-### -field <b>AltitudeBufferOffset</b>
+### -field AltitudeBufferOffset
 
 <dd>
 <p>A byte offset of the first character of the altitude string. This character is followed in memory by the remainder of the string. </p>
 </dd>
 
-### -field <b>VolumeNameLength</b>
+### -field VolumeNameLength
 
 <dd>
 <p>The length, in bytes, of the volume name. </p>
 </dd>
 
-### -field <b>VolumeNameBufferOffset</b>
+### -field VolumeNameBufferOffset
 
 <dd>
 <p>A byte offset of the first character of the volume name string. This character is followed in memory by the remainder of the string (for example, "\Device\HarddiskVolume1"). </p>
 </dd>
 
-### -field <b>FilterNameLength</b>
+### -field FilterNameLength
 
 <dd>
 <p>The length, in bytes, of the minifilter name. </p>
 </dd>
 
-### -field <b>FilterNameBufferOffset</b>
+### -field FilterNameBufferOffset
 
 <dd>
 <p>A byte offset of the first character of the minifilter name string. This character is followed in memory by the remainder of the string. </p>
@@ -182,4 +182,4 @@ typedef struct _INSTANCE_FULL_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20INSTANCE_FULL_INFORMATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20INSTANCE_FULL_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

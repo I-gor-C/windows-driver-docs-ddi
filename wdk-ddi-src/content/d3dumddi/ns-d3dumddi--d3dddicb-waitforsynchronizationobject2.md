@@ -57,27 +57,27 @@ typedef struct _D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] A handle to a Direct3D context that waits for the synchronization objects in the array that the <b>ObjectHandleArray</b> member specifies to occur.</p>
 </dd>
 
-### -field <b>ObjectCount</b>
+### -field ObjectCount
 
 <dd>
 <p>[in] The number of synchronization objects in the <b>ObjectHandleArray</b> array.</p>
 <p><b>ObjectHandleArray</b> must be set to 1 if the GPU synchronization object is of type <b>D3DDDI_FENCE</b>—namely, the <b>Type</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-synchronizationobjectinfo2.md">D3DDDI_SYNCHRONIZATIONOBJECTINFO2</a> structure has a value of <b>D3DDDI_FENCE</b>.</p>
 </dd>
 
-### -field <b>ObjectHandleArray</b>
+### -field ObjectHandleArray
 
 <dd>
 <p>[in] An array of handles to the GPU synchronization objects that are to be signaled. The <b>D3DDDI_MAX_OBJECT_WAITED_ON</b> constant, which is defined as 32, indicates the maximum number of synchronization objects that the context can wait for.</p>
 <p>All synchronization objects must be created on a logical adapter that has its context specified by the <b>hContext</b> member.</p>
 </dd>
 
-### -field <b>FenceValue</b>
+### -field FenceValue
 
 <dd>
 <p>[in] A 64-bit value that specifies the current fence value of the GPU synchronization object that is to be waited on.</p>

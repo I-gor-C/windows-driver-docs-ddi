@@ -56,19 +56,19 @@ ULONG AtaPortInitializeEx(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>A pointer to the miniport driver object.</p>
 </dd>
 
-### -param <i>RegistryPath</i> [in]
+### -param RegistryPath [in]
 
 <dd>
 <p>Contains a Unicode string that indicates the location in the registry where the miniport driver configuration information is stored.</p>
 </dd>
 
-### -param <i>ControllerInterface</i> [in]
+### -param ControllerInterface [in]
 
 <dd>
 <p>Contains the entry points for the <b><i>AtaAdapterControl</i></b>, <b><i>AtaChannelInitRoutine</i></b>, <b><i>AtaControllerChannelEnabled</i></b>, and <b><i>AtaControllerTransferModeSelect</i></b> routines.</p>

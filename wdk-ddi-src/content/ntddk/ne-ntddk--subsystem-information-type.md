@@ -56,13 +56,13 @@ typedef enum _SUBSYSTEM_INFORMATION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="SubsystemInformationTypeWin32"></a><a id="subsysteminformationtypewin32"></a><a id="SUBSYSTEMINFORMATIONTYPEWIN32"></a><b>SubsystemInformationTypeWin32</b>
+### -field SubsystemInformationTypeWin32
 
 <dd>
 <p>The subsystem type for the process or thread is Win32.</p>
 </dd>
 
-### -field <a id="SubsystemInformationTypeWSL"></a><a id="subsysteminformationtypewsl"></a><a id="SUBSYSTEMINFORMATIONTYPEWSL"></a><b>SubsystemInformationTypeWSL</b>
+### -field SubsystemInformationTypeWSL
 
 <dd>
 <p>The subsystem type for the process or thread is Windows Subsystem for Linux (WSL). For this process, these members of  the <a href="..\ntddk\ns-ntddk--ps-create-notify-info.md">PS_CREATE_NOTIFY_INFO</a> structure are set as follows:</p>
@@ -74,7 +74,7 @@ typedef enum _SUBSYSTEM_INFORMATION_TYPE {
 <p> The preceding member values may be NULL.</p>
 </dd>
 
-### -field <a id="MaxSubsystemInformationType"></a><a id="maxsubsysteminformationtype"></a><a id="MAXSUBSYSTEMINFORMATIONTYPE"></a><b>MaxSubsystemInformationType</b>
+### -field MaxSubsystemInformationType
 
 <dd>
 <p>Reserved.</p>

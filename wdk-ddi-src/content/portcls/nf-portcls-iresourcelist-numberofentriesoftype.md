@@ -54,7 +54,7 @@ ULONG NumberOfEntriesOfType(
 ## -parameters
 <dl>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>Identifies the resource type of the entries that are to be counted. For a list of valid resource-type values, see the <b>Type</b> member of the <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure.</p>

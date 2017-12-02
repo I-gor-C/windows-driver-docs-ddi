@@ -58,7 +58,7 @@ typedef struct D3D11_1DDIARG_SIGNATURE_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>SystemValue</b>
+### -field SystemValue
 
 <dd>
 <p>[in] The <b>D3D10_SB_NAME</b>-typed value that indicates the system name of the signature entry. The <b>D3D10_SB_NAME</b> enumeration is defined in the D3d10tokenizedprogramformat.hpp header file. One of the following values can be set.</p>
@@ -151,26 +151,26 @@ typedef struct D3D11_1DDIARG_SIGNATURE_ENTRY {
 <p> </p>
 </dd>
 
-### -field <b>Register</b>
+### -field Register
 
 <dd>
 <p>[in] The number of the register for the signature entry.</p>
 </dd>
 
-### -field <b>Mask</b>
+### -field Mask
 
 <dd>
 <p>[in] The xyzw mask for the signature entry. The four least significant bits (LSBs) of the mask represent xyzw respectively.</p>
 </dd>
 
-### -field <b>RegisterComponentType</b>
+### -field RegisterComponentType
 
 <dd>
 <p>A  <b>D3D10_SB_REGISTER_COMPONENT_TYPE</b> type that indicates the register component type.</p>
 <p>The <b>D3D10_SB_REGISTER_COMPONENT_TYPE</b> enumeration is defined in the D3d10tokenizedprogramformat.hpp header file.</p>
 </dd>
 
-### -field <b>MinPrecision</b>
+### -field MinPrecision
 
 <dd>
 <p>A <b>D3D11_SB_OPERAND_MIN_PRECISION</b> type that indicates a minimum precision of source and destination operands.</p>

@@ -55,13 +55,13 @@ BOOL SetCPSUIUserData(
 ## -parameters
 <dl>
 
-### -param <i>hDlg</i> 
+### -param hDlg 
 
 <dd>
 <p>Caller-supplied handle to a property sheet dialog box. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>CPSUIUserData</i> 
+### -param CPSUIUserData 
 
 <dd>
 <p>Caller-supplied value to be stored.</p>

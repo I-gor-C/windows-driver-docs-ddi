@@ -62,55 +62,55 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="DvdChallengeKey"></a><a id="dvdchallengekey"></a><a id="DVDCHALLENGEKEY"></a><b>DvdChallengeKey</b>
+### -field DvdChallengeKey
 
 <dd>
 <p>Gets a challenge key. This is used during the authentication key exchange process.</p>
 </dd>
 
-### -field <a id="DvdBusKey1"></a><a id="dvdbuskey1"></a><a id="DVDBUSKEY1"></a><b>DvdBusKey1</b>
+### -field DvdBusKey1
 
 <dd>
 <p>Gets the first bus key. </p>
 </dd>
 
-### -field <a id="DvdBusKey2"></a><a id="dvdbuskey2"></a><a id="DVDBUSKEY2"></a><b>DvdBusKey2</b>
+### -field DvdBusKey2
 
 <dd>
 <p>Gets the second bus key. </p>
 </dd>
 
-### -field <a id="DvdTitleKey"></a><a id="dvdtitlekey"></a><a id="DVDTITLEKEY"></a><b>DvdTitleKey</b>
+### -field DvdTitleKey
 
 <dd>
 <p>Gets a title key that is obfuscated by a bus key.</p>
 </dd>
 
-### -field <a id="DvdAsf"></a><a id="dvdasf"></a><a id="DVDASF"></a><b>DvdAsf</b>
+### -field DvdAsf
 
 <dd>
 <p>Gets the current state of the authentication success flag (ASF).</p>
 </dd>
 
-### -field <a id="DvdSetRpcKey"></a><a id="dvdsetrpckey"></a><a id="DVDSETRPCKEY"></a><b>DvdSetRpcKey</b>
+### -field DvdSetRpcKey
 
 <dd>
 <p>Sets the region playback contents (RPC) for the logical unit. </p>
 </dd>
 
-### -field <a id="DvdGetRpcKey"></a><a id="dvdgetrpckey"></a><a id="DVDGETRPCKEY"></a><b>DvdGetRpcKey</b>
+### -field DvdGetRpcKey
 
 <dd>
 <p>Gets the region playback contents (RPC) for the logical unit. </p>
 </dd>
 
-### -field <a id="DvdDiskKey"></a><a id="dvddiskkey"></a><a id="DVDDISKKEY"></a><b>DvdDiskKey</b>
+### -field DvdDiskKey
 
 <dd>
 <p>Gets the disc key. </p>
 </dd>
 
-### -field <a id="DvdInvalidateAGID"></a><a id="dvdinvalidateagid"></a><a id="DVDINVALIDATEAGID"></a><b>DvdInvalidateAGID</b>
+### -field DvdInvalidateAGID
 
 <dd>
 <p>Invalidates the specified authentication grant ID (AGID).</p>

@@ -60,37 +60,37 @@ typedef struct _MONITORINIT {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Size, in bytes, of the MONITORINIT structure.</p>
 </dd>
 
-### -field <b>hSpooler</b>
+### -field hSpooler
 
 <dd>
 <p>Spooler handle, for use as input to functions identified by the MONITORREG structure.</p>
 </dd>
 
-### -field <b>hckRegistryRoot</b>
+### -field hckRegistryRoot
 
 <dd>
 <p>Registry handle, for use as input to functions identified by the MONITORREG structure.</p>
 </dd>
 
-### -field <b>pMonitorReg</b>
+### -field pMonitorReg
 
 <dd>
 <p>Pointer to a <a href="..\winsplp\ns-winsplp--monitorreg.md">MONITORREG</a> structure.</p>
 </dd>
 
-### -field <b>bLocal</b>
+### -field bLocal
 
 <dd>
 <p><b>TRUE</b> if the monitor is being called by a local node spooler. <b>FALSE</b> if the monitor is being called by a cluster spooler. (Monitors can usually ignore this member.)</p>
 </dd>
 
-### -field <b>pszServerName</b>
+### -field pszServerName
 
 <dd>
 <p>Caller-supplied pointer to a string representing a server name.</p>

@@ -64,31 +64,31 @@ typedef struct _DISK_PARTITION_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>SizeOfPartitionInfo</b>
+### -field SizeOfPartitionInfo
 
 <dd>
 <p>Size of this structure in bytes. Set to <b>sizeof</b>(DISK_PARTITION_INFO).</p>
 </dd>
 
-### -field <b>PartitionStyle</b>
+### -field PartitionStyle
 
 <dd>
 <p>Takes a <a href="storage.partition_style">PARTITION_STYLE</a> enumerated value that specifies the type of partition table the disk contains.</p>
 </dd>
 
-### -field <b>Mbr</b>
+### -field Mbr
 
 <dd>
 <p>If <b>PartitionStyle</b> == MBR</p>
 <dl>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>Specifies the signature value, which uniquely identifies the disk. The <b>Mbr</b> member of the union is used to specify the disk signature data for a disk formatted with a Master Boot Record (MBR) format partition table. Any other value indicates that the partition is not a boot partition. This member is valid when <b>PartitionStyle</b> is <b>PARTITION_STYLE_MBR</b>. </p>
 </dd>
 
-### -field <b>CheckSum</b>
+### -field CheckSum
 
 <dd>
 <p>Specifies the checksum for the master boot record. The <b>Mbr</b> member of the union is used to specify the disk signature data for a disk formatted with a Master Boot Record (MBR) format partition table. This member is valid when <b>PartitionStyle</b> is <b>PARTITION_STYLE_MBR</b>. </p>
@@ -96,13 +96,13 @@ typedef struct _DISK_PARTITION_INFO {
 </dl>
 </dd>
 
-### -field <b>Gpt</b>
+### -field Gpt
 
 <dd>
 <p>If <b>PartitionStyle</b> == GPT</p>
 <dl>
 
-### -field <b>DiskId</b>
+### -field DiskId
 
 <dd>
 <p>Specifies the GUID that uniquely identifies the disk. The <b>Gpt</b> member of the union is used to specify the disk signature data for a disk that is formatted with a GUID Partition Table (GPT) format partition table. This member is valid when <b>PartitionStyle</b> is <b>PARTITION_STYLE_GPT</b>. The GUID data type is described on the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565392">Using GUIDs in Drivers</a> reference page.</p>

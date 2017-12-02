@@ -54,7 +54,7 @@ typedef struct _D3DDDI_FRAMELATENCYESCAPE {
 ## -struct-fields
 <dl>
 
-### -field <b>RequestedLatency</b>
+### -field RequestedLatency
 
 <dd>
 <p>[in] The frame latency requested by the driver, specified as the number of frames that are allowed to be stored in a queue, before submission for rendering.</p>

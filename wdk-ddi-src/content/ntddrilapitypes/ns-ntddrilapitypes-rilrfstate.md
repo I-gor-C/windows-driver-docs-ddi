@@ -7,7 +7,7 @@ old-location: netvista\rilrfstate.htm
 old-project: netvista
 ms.assetid: 7eb78864-d20c-4993-8b33-63096bf971fa
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILRFSTATE, RILRFSTATE, *LPRILRFSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef struct _RILRFSTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwRFState</b>
+### -field dwRFState
 
 <dd></dd>
 
-### -field <b>dwRFDataSize</b>
+### -field dwRFDataSize
 
 <dd></dd>
 
-### -field <b>bRFData</b>
+### -field bRFData
 
 <dd></dd>
 </dl>

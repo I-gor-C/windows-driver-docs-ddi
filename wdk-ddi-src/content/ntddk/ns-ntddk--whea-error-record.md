@@ -55,13 +55,13 @@ typedef struct _WHEA_ERROR_RECORD {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-error-record-header.md">WHEA_ERROR_RECORD_HEADER</a> structure that describes general information about the hardware error condition.</p>
 </dd>
 
-### -field <b>SectionDescriptor</b>
+### -field SectionDescriptor
 
 <dd>
 <p>A variable sized array of <a href="..\ntddk\ns-ntddk--whea-error-record-section-descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe each of the sections of error information that are contained in the error record. The number of structures in the array is specified by the <b>Header.SectionCount</b> member of the WHEA_ERROR_RECORD structure.</p>
@@ -73,7 +73,7 @@ typedef struct _WHEA_ERROR_RECORD {
 
 <p>The format of the error records that are used by WHEA are based on the <i>Common Platform Error Record</i> as described in Appendix N of version 2.2 of the <a href="http://go.microsoft.com/fwlink/p/?linkid=69484">Unified Extensible Firmware Interface (UEFI) Specification</a>.</p>
 
-<p>A user-mode application can retrieve the error record from the hardware error event for analysis. For more information about how to develop an application to retrieve error records from hardware error events, see <a href="NULL">WHEA Hardware Error Event Processing Applications</a>.</p>
+<p>A user-mode application can retrieve the error record from the hardware error event for analysis. For more information about how to develop an application to retrieve error records from hardware error events, see <a href="https://msdn.microsoft.com/df1790ec-5a7f-41c2-94df-757621e67ade">WHEA Hardware Error Event Processing Applications</a>.</p>
 
 ## -requirements
 <table>

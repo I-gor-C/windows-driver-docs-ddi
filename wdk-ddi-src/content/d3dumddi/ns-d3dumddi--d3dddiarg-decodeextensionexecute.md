@@ -59,37 +59,37 @@ typedef struct _D3DDDIARG_DECODEEXTENSIONEXECUTE {
 ## -struct-fields
 <dl>
 
-### -field <b>hDecode</b>
+### -field hDecode
 
 <dd>
 <p>[in] A handle to the DirectX VA decode device. The user-mode display driver returns this handle in a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createdecodedevice.md">CreateDecodeDevice</a> function.</p>
 </dd>
 
-### -field <b>Function</b>
+### -field Function
 
 <dd>
 <p>[in] A specific decode operation to perform. The possible values for this member are defined by the nonstandard decode device.</p>
 </dd>
 
-### -field <b>pPrivateInput</b>
+### -field pPrivateInput
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-privatedata.md">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to perform the decode operation.</p>
 </dd>
 
-### -field <b>pPrivateOutput</b>
+### -field pPrivateOutput
 
 <dd>
 <p>[out] A pointer to a DXVADDI_PRIVATEDATA structure that contains data about the decode operation that the driver returns.</p>
 </dd>
 
-### -field <b>NumBuffers</b>
+### -field NumBuffers
 
 <dd>
 <p>[in] The number of buffers in the list that is pointed to by <b>pBuffers</b>.</p>
 </dd>
 
-### -field <b>pBuffers</b>
+### -field pBuffers
 
 <dd>
 <p>

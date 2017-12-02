@@ -55,13 +55,13 @@ NTSTATUS BdaFilterFactoryUpdateCacheData(
 ## -parameters
 <dl>
 
-### -param <i>pFilterFactory</i> [in]
+### -param pFilterFactory [in]
 
 <dd>
 <p>Points to the <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> for which to update the pin data cache.</p>
 </dd>
 
-### -param <i>pFilterDescriptor</i> [in, optional]
+### -param pFilterDescriptor [in, optional]
 
 <dd>
 <p>Points to an optional <a href="..\ks\ns-ks--ksfilter-descriptor.md">KSFILTER_DESCRIPTOR</a> for which the pin data cache will be updated. If <b>NULL</b>, <i>pFilterFactory</i>'s descriptor is used instead. This parameter enables dynamic pin creation, that is, pin creation that occurs after a filter's create dispatch routine completes.</p>

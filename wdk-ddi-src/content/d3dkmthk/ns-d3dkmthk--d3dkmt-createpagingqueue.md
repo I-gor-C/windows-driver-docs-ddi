@@ -59,37 +59,37 @@ typedef struct _D3DKMT_CREATEPAGINGQUEUE {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] Device to create a new paging queue object for.</p>
 </dd>
 
-### -field <b>Priority</b>
+### -field Priority
 
 <dd>
 <p>[in] Scheduling priority relative to other paging queues on this device. Paging queues with higher priority values will be processed ahead of paging queues with lower priority values.</p>
 </dd>
 
-### -field <b>hPagingQueue</b>
+### -field hPagingQueue
 
 <dd>
 <p>[out] A paging queue handle that will be used to synchronize paging operations.</p>
 </dd>
 
-### -field <b>hSyncObject</b>
+### -field hSyncObject
 
 <dd>
 <p>[out] Handle to the monitored fence object used to synchronize paging operations for this paging queue. Destroying the paging queue (either implicitly or explicitly) will automatically destroy this sync object.</p>
 </dd>
 
-### -field <b>FenceValueCPUVirtualAddress</b>
+### -field FenceValueCPUVirtualAddress
 
 <dd>
 <p>[out] A read-only mapping of the paging fence object value for the CPU. This is a user mode address readable from the process that created the monitored fence object.</p>
 </dd>
 
-### -field <b>PhysicalAdapterIndex</b>
+### -field PhysicalAdapterIndex
 
 <dd>
 <p>[in] Physical adapter index (engine ordinal) for the queue.</p>

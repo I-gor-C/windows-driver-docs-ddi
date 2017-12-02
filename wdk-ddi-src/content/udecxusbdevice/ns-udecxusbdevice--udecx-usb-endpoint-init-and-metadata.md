@@ -58,25 +58,25 @@ typedef struct _UDECX_USB_ENDPOINT_INIT_AND_METADATA {
 ## -struct-fields
 <dl>
 
-### -field <b>UdecxUsbEndpointInit</b>
+### -field UdecxUsbEndpointInit
 
 <dd>
-<p>A pointer to a <b>UDECXUSBDEVICE_INIT</b> structure that contains initialization parameters for the virtual USB device. The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>.</p>
+<p>A pointer to a <b>UDECXUSBDEVICE_INIT</b> structure that contains initialization parameters for the virtual USB device. The client driver retrieved this pointer in the previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>.</p>
 </dd>
 
-### -field <b>EndpointDescriptorBufferLength</b>
+### -field EndpointDescriptorBufferLength
 
 <dd>
 <p>The length of the endpoint descriptor.</p>
 </dd>
 
-### -field <b>EndpointDescriptor</b>
+### -field EndpointDescriptor
 
 <dd>
 <p>Required. A buffer containing the endpoint descriptor. The descriptor is described in a <a href="..\usbspec\ns-usbspec--usb-endpoint-descriptor.md">USB_ENDPOINT_DESCRIPTOR</a> structure.</p>
 </dd>
 
-### -field <b>SuperSpeedEndpointCompanionDescriptor</b>
+### -field SuperSpeedEndpointCompanionDescriptor
 
 <dd>
 <p>Optional. A USB-defined SuperSpeed Endpoint Companion descriptor. For more information, see section 9.6.7 and Table 9-20 in the official USB 3.0 specification. The descriptor is described in a <a href="..\usbspec\ns-usbspec--usb-superspeed-endpoint-companion-descriptor.md">USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</a> structure.</p>
@@ -103,7 +103,7 @@ typedef struct _UDECX_USB_ENDPOINT_INIT_AND_METADATA {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_udecx_usb_device_endpoint_add">EVT_UDECX_USB_DEVICE_ENDPOINT_ADD</a>
+<a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-endpoint-add.md">EVT_UDECX_USB_DEVICE_ENDPOINT_ADD</a>
 </dt>
 </dl>
 <p> </p>

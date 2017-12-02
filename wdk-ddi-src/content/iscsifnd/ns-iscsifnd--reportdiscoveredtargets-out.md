@@ -56,19 +56,19 @@ typedef struct _ReportDiscoveredTargets_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>On output, the status of the <b>ReportDiscoveredTargets</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>. </p>
 </dd>
 
-### -field <b>TargetCount</b>
+### -field TargetCount
 
 <dd>
 <p>On output, the number of targets that are discovered. </p>
 </dd>
 
-### -field <b>Targets</b>
+### -field Targets
 
 <dd>
 <p>On output, an array of <a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtarget.md">ISCSI_DiscoveredTarget</a> structures, which provide information that is related to discovered targets. </p>

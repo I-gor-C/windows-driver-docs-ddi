@@ -55,7 +55,7 @@ typedef struct IDARG_OUT_OPM_GET_RANDOM_NUMBER {
 ## -struct-fields
 <dl>
 
-### -field <b>RandomNumber</b>
+### -field RandomNumber
 
 <dd>
 <p>

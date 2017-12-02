@@ -61,7 +61,7 @@ typedef enum _IDDCX_UPDATE_REASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="IDDCX_UPDATE_REASON_UNINITIALIZED"></a><a id="iddcx_update_reason_uninitialized"></a><b>IDDCX_UPDATE_REASON_UNINITIALIZED</b>
+### -field IDDCX_UPDATE_REASON_UNINITIALIZED
 
 <dd>
 <p>
@@ -69,7 +69,7 @@ typedef enum _IDDCX_UPDATE_REASON {
                     Indicates that an <b>IDDCX_UPDATE_REASON</b> variable has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="IDDCX_UPDATE_REASON_POWER_CONSTRAINTS"></a><a id="iddcx_update_reason_power_constraints"></a><b>IDDCX_UPDATE_REASON_POWER_CONSTRAINTS</b>
+### -field IDDCX_UPDATE_REASON_POWER_CONSTRAINTS
 
 <dd>
 <p>
@@ -77,7 +77,7 @@ typedef enum _IDDCX_UPDATE_REASON {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_UPDATE_REASON_HOST_LINK_BANDWIDTH"></a><a id="iddcx_update_reason_host_link_bandwidth"></a><b>IDDCX_UPDATE_REASON_HOST_LINK_BANDWIDTH</b>
+### -field IDDCX_UPDATE_REASON_HOST_LINK_BANDWIDTH
 
 <dd>
 <p>
@@ -85,7 +85,7 @@ typedef enum _IDDCX_UPDATE_REASON {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_UPDATE_REASON_DISPLAY_LINK_BANDWIDTH"></a><a id="iddcx_update_reason_display_link_bandwidth"></a><b>IDDCX_UPDATE_REASON_DISPLAY_LINK_BANDWIDTH</b>
+### -field IDDCX_UPDATE_REASON_DISPLAY_LINK_BANDWIDTH
 
 <dd>
 <p>
@@ -93,7 +93,7 @@ typedef enum _IDDCX_UPDATE_REASON {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_UPDATE_REASON_CONFIGURATION_CONSTRAINTS"></a><a id="iddcx_update_reason_configuration_constraints"></a><b>IDDCX_UPDATE_REASON_CONFIGURATION_CONSTRAINTS</b>
+### -field IDDCX_UPDATE_REASON_CONFIGURATION_CONSTRAINTS
 
 <dd>
 <p>
@@ -101,7 +101,7 @@ typedef enum _IDDCX_UPDATE_REASON {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_UPDATE_REASON_OTHER"></a><a id="iddcx_update_reason_other"></a><b>IDDCX_UPDATE_REASON_OTHER</b>
+### -field IDDCX_UPDATE_REASON_OTHER
 
 <dd>
 <p>

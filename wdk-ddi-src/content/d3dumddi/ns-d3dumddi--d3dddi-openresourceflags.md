@@ -61,27 +61,27 @@ typedef struct _D3DDDI_OPENRESOURCEFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Fullscreen</b>
+### -field Fullscreen
 
 <dd>
 <p>A UINT value that specifies whether the shared primary resource is used with a full-screen device.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>AlphaOverride</b>
+### -field AlphaOverride
 
 <dd>
 <p>A UINT value that specifies whether to use the alpha channel in the shared primary resource. If <b>AlphaOverride</b> is set, the alpha channel should not be used.</p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 30 bits (0xFFFFFFFC) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that is contained in D3DDDI_OPENRESOURCEFLAGS that can hold one 32-bit value that identifies the type of resource to open.</p>

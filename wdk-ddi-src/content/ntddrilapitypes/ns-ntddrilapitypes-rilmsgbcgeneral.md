@@ -7,7 +7,7 @@ old-location: netvista\rilmsgbcgeneral.htm
 old-project: netvista
 ms.assetid: d1570dc0-1587-4d02-a655-724c999d10a2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMSGBCGENERAL, RILMSGBCGENERAL, *LPRILMSGBCGENERAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,63 +68,63 @@ typedef struct _RILMSGBCGENERAL {
 ## -struct-fields
 <dl>
 
-### -field <b>dwGeoScope</b>
+### -field dwGeoScope
 
 <dd></dd>
 
-### -field <b>dwMsgCode</b>
+### -field dwMsgCode
 
 <dd></dd>
 
-### -field <b>dwUpdateNumber</b>
+### -field dwUpdateNumber
 
 <dd></dd>
 
-### -field <b>dwID</b>
+### -field dwID
 
 <dd></dd>
 
-### -field <b>dwSerialNumber</b>
+### -field dwSerialNumber
 
 <dd></dd>
 
-### -field <b>rmdDataCoding</b>
+### -field rmdDataCoding
 
 <dd></dd>
 
-### -field <b>dwTotalPages</b>
+### -field dwTotalPages
 
 <dd></dd>
 
-### -field <b>dwPageNumber</b>
+### -field dwPageNumber
 
 <dd></dd>
 
-### -field <b>dwWarningType</b>
+### -field dwWarningType
 
 <dd></dd>
 
-### -field <b>bEmergencyUserAlert</b>
+### -field bEmergencyUserAlert
 
 <dd></dd>
 
-### -field <b>bMessagePopup</b>
+### -field bMessagePopup
 
 <dd></dd>
 
-### -field <b>stSCReceiveTime</b>
+### -field stSCReceiveTime
 
 <dd></dd>
 
-### -field <b>digSig</b>
+### -field digSig
 
 <dd></dd>
 
-### -field <b>cchMsgLength</b>
+### -field cchMsgLength
 
 <dd></dd>
 
-### -field <b>rgbMsg</b>
+### -field rgbMsg
 
 <dd></dd>
 </dl>

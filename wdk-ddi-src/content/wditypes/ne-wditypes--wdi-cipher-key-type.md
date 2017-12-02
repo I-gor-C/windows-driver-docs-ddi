@@ -7,7 +7,7 @@ old-location: netvista\wdi_cipher_key_type.htm
 old-project: netvista
 ms.assetid: 09874F77-5A9C-4C98-996F-29BB90CAE4B6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _WDI_CIPHER_KEY_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_CIPHER_KEY_TYPE_PAIRWISE_KEY"></a><a id="wdi_cipher_key_type_pairwise_key"></a><b>WDI_CIPHER_KEY_TYPE_PAIRWISE_KEY</b>
+### -field WDI_CIPHER_KEY_TYPE_PAIRWISE_KEY
 
 <dd>
 <p>The key is a pairwise key to another station.</p>
 </dd>
 
-### -field <a id="WDI_CIPHER_KEY_TYPE_GROUP_KEY"></a><a id="wdi_cipher_key_type_group_key"></a><b>WDI_CIPHER_KEY_TYPE_GROUP_KEY</b>
+### -field WDI_CIPHER_KEY_TYPE_GROUP_KEY
 
 <dd>
 <p>The key is a group key.</p>
 </dd>
 
-### -field <a id="WDI_CIPHER_KEY_TYPE_IGTK"></a><a id="wdi_cipher_key_type_igtk"></a><b>WDI_CIPHER_KEY_TYPE_IGTK</b>
+### -field WDI_CIPHER_KEY_TYPE_IGTK
 
 <dd>
 <p>The key is an IGTK.</p>

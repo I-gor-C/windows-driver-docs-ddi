@@ -62,7 +62,7 @@ VOID APIENTRY* EncryptionBlt(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).
@@ -70,19 +70,19 @@ VOID APIENTRY* EncryptionBlt(
 </p>
 </dd>
 
-### -param <i>hCryptoSession</i> [in]
+### -param hCryptoSession [in]
 
 <dd>
 <p>A handle to the driver's private data for the cryptographic session. This handle was created by the Direct3D runtime and passed to the driver in the call to the <a href="display.createcryptosession1">CreateCryptoSession</a> function.</p>
 </dd>
 
-### -param <i>hSrcResource</i> [in]
+### -param hSrcResource [in]
 
 <dd>
 <p>A handle to the resource that contains the source data.</p>
 </dd>
 
-### -param <i>hDstResource</i> [in]
+### -param hDstResource [in]
 
 <dd>
 <p>A pointer to the resource where the encrypted data is to be written.
@@ -90,13 +90,13 @@ VOID APIENTRY* EncryptionBlt(
 </p>
 </dd>
 
-### -param <i>IVSize</i> [in]
+### -param IVSize [in]
 
 <dd>
 <p>The size, in bytes, of the initialization vector (IV).</p>
 </dd>
 
-### -param <i>pIV</i> [in]
+### -param pIV [in]
 
 <dd>
 <p>A pointer to a block of memory that contains the initialization vector that is required to encrypt the bitblt data. For more information, see the Remarks section.</p>

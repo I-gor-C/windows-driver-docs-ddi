@@ -61,49 +61,49 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO"></a><a id="dxgi_ddi_multiplane_overlay_stereo_format_mono"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO
 
 <dd>
 <p>The overplay plane data is presented in mono (non-stereo) format.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_HORIZONTAL"></a><a id="dxgi_ddi_multiplane_overlay_stereo_format_horizontal"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_HORIZONTAL</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_HORIZONTAL
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_VERTICAL"></a><a id="dxgi_ddi_multiplane_overlay_stereo_format_vertical"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_VERTICAL</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_VERTICAL
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_SEPARATE"></a><a id="dxgi_ddi_multiplane_overlay_stereo_format_separate"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_SEPARATE</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_SEPARATE
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO_OFFSET"></a><a id="dxgi_ddi_multiplane_overlay_stereo_format_mono_offset"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO_OFFSET</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO_OFFSET
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_ROW_INTERLEAVED"></a><a id="dxgi_ddi_multiplane_overlay_stereo_format_row_interleaved"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_ROW_INTERLEAVED</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_ROW_INTERLEAVED
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_COLUMN_INTERLEAVED"></a><a id="dxgi_ddi_multiplane_overlay_stereo_format_column_interleaved"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_COLUMN_INTERLEAVED</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_COLUMN_INTERLEAVED
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_CHECKERBOARD"></a><a id="dxgi_ddi_multiplane_overlay_stereo_format_checkerboard"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_CHECKERBOARD</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_CHECKERBOARD
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>

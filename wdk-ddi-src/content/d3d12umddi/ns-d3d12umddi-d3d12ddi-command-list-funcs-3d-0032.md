@@ -110,343 +110,343 @@ typedef struct _D3D12DDI_COMMAND_LIST_FUNCS_3D_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnCloseCommandList</b>
+### -field pfnCloseCommandList
 
 <dd>
 <p>Close the command list.</p>
 </dd>
 
-### -field <b>pfnResetCommandList</b>
+### -field pfnResetCommandList
 
 <dd>
 <p>Reset the command list.</p>
 </dd>
 
-### -field <b>pfnDrawInstanced</b>
+### -field pfnDrawInstanced
 
 <dd>
 <p>Draw instanced.</p>
 </dd>
 
-### -field <b>pfnDrawIndexedInstanced</b>
+### -field pfnDrawIndexedInstanced
 
 <dd>
 <p>Draw indexed instanced.</p>
 </dd>
 
-### -field <b>pfnDispatch</b>
+### -field pfnDispatch
 
 <dd>
 <p>Dispatch.</p>
 </dd>
 
-### -field <b>pfnClearUnorderedAccessViewUint</b>
+### -field pfnClearUnorderedAccessViewUint
 
 <dd>
 <p>Clear the unordered access view of UINT values.</p>
 </dd>
 
-### -field <b>pfnClearUnorderedAccessViewFloat</b>
+### -field pfnClearUnorderedAccessViewFloat
 
 <dd>
 <p>Clear the unordered access view of FLOAT values.</p>
 </dd>
 
-### -field <b>pfnClearRenderTargetView</b>
+### -field pfnClearRenderTargetView
 
 <dd>
 <p>Clear the render target view.</p>
 </dd>
 
-### -field <b>pfnClearDepthStencilView</b>
+### -field pfnClearDepthStencilView
 
 <dd>
 <p>Clear the depth stencil view.</p>
 </dd>
 
-### -field <b>pfnDiscardResource</b>
+### -field pfnDiscardResource
 
 <dd>
 <p>Discard resource.</p>
 </dd>
 
-### -field <b>pfnCopyTextureRegion</b>
+### -field pfnCopyTextureRegion
 
 <dd>
 <p>Copy texture region.</p>
 </dd>
 
-### -field <b>pfnResourceCopy</b>
+### -field pfnResourceCopy
 
 <dd>
 <p>Resource copy.</p>
 </dd>
 
-### -field <b>pfnCopyTiles</b>
+### -field pfnCopyTiles
 
 <dd>
 <p>Copy tiles.</p>
 </dd>
 
-### -field <b>pfnCopyBufferRegion</b>
+### -field pfnCopyBufferRegion
 
 <dd>
 <p>Copy buffer region.</p>
 </dd>
 
-### -field <b>pfnResourceResolveSubresource</b>
+### -field pfnResourceResolveSubresource
 
 <dd>
 <p>Resource resolve subresource.</p>
 </dd>
 
-### -field <b>pfnExecuteBundle</b>
+### -field pfnExecuteBundle
 
 <dd>
 <p>Execute bundle.</p>
 </dd>
 
-### -field <b>pfnExecuteIndirect</b>
+### -field pfnExecuteIndirect
 
 <dd>
 <p>Execute indirect.</p>
 </dd>
 
-### -field <b>pfnResourceBarrier</b>
+### -field pfnResourceBarrier
 
 <dd>
 <p>Resource barrier.</p>
 </dd>
 
-### -field <b>pfnBlt</b>
+### -field pfnBlt
 
 <dd>
 <p>Blt.</p>
 </dd>
 
-### -field <b>pfnPresent</b>
+### -field pfnPresent
 
 <dd>
 <p>Present.</p>
 </dd>
 
-### -field <b>pfnBeginQuery</b>
+### -field pfnBeginQuery
 
 <dd>
 <p>Begin query.</p>
 </dd>
 
-### -field <b>pfnEndQuery</b>
+### -field pfnEndQuery
 
 <dd>
 <p>End query.</p>
 </dd>
 
-### -field <b>pfnResolveQueryData</b>
+### -field pfnResolveQueryData
 
 <dd>
 <p>Resolve query data.</p>
 </dd>
 
-### -field <b>pfnSetPredication</b>
+### -field pfnSetPredication
 
 <dd>
 <p>Set predication.</p>
 </dd>
 
-### -field <b>pfnIaSetTopology</b>
+### -field pfnIaSetTopology
 
 <dd>
 <p>Set topology.</p>
 </dd>
 
-### -field <b>pfnRsSetViewports</b>
+### -field pfnRsSetViewports
 
 <dd>
 <p>Set view ports.</p>
 </dd>
 
-### -field <b>pfnRsSetScissorRects</b>
+### -field pfnRsSetScissorRects
 
 <dd>
 <p>Set scissor rectangles.</p>
 </dd>
 
-### -field <b>pfnOmSetBlendFactor</b>
+### -field pfnOmSetBlendFactor
 
 <dd>
 <p>Set blend factor.</p>
 </dd>
 
-### -field <b>pfnOmSetStencilRef</b>
+### -field pfnOmSetStencilRef
 
 <dd>
 <p>Set stencil reference.</p>
 </dd>
 
-### -field <b>pfnSetPipelineState</b>
+### -field pfnSetPipelineState
 
 <dd>
 <p>Set pipeline state.</p>
 </dd>
 
-### -field <b>pfnSetDescriptorHeaps</b>
+### -field pfnSetDescriptorHeaps
 
 <dd>
 <p>Set descriptor heaps.</p>
 </dd>
 
-### -field <b>pfnSetComputeRootSignature</b>
+### -field pfnSetComputeRootSignature
 
 <dd>
 <p>Set compute root signature.</p>
 </dd>
 
-### -field <b>pfnSetGraphicsRootSignature</b>
+### -field pfnSetGraphicsRootSignature
 
 <dd>
 <p>Set graphics root signature.</p>
 </dd>
 
-### -field <b>pfnSetComputeRootDescriptorTable</b>
+### -field pfnSetComputeRootDescriptorTable
 
 <dd>
 <p>Set compute root descriptor table.</p>
 </dd>
 
-### -field <b>pfnSetGraphicsRootDescriptorTable</b>
+### -field pfnSetGraphicsRootDescriptorTable
 
 <dd>
 <p>Set graphic root descriptor table.</p>
 </dd>
 
-### -field <b>pfnSetComputeRoot32BitConstant</b>
+### -field pfnSetComputeRoot32BitConstant
 
 <dd>
 <p>Set compute root 32-bit constant.</p>
 </dd>
 
-### -field <b>pfnSetGraphicsRoot32BitConstant</b>
+### -field pfnSetGraphicsRoot32BitConstant
 
 <dd>
 <p>Set graphics root 32-bit constant.</p>
 </dd>
 
-### -field <b>pfnSetComputeRoot32BitConstants</b>
+### -field pfnSetComputeRoot32BitConstants
 
 <dd>
 <p>Set compute root 32-bit constants.</p>
 </dd>
 
-### -field <b>pfnSetGraphicsRoot32BitConstants</b>
+### -field pfnSetGraphicsRoot32BitConstants
 
 <dd>
 <p>Set graphics root 32-bit constants.</p>
 </dd>
 
-### -field <b>pfnSetComputeRootConstantBufferView</b>
+### -field pfnSetComputeRootConstantBufferView
 
 <dd>
 <p>Set compute root constant buffer view.</p>
 </dd>
 
-### -field <b>pfnSetGraphicsRootConstantBufferView</b>
+### -field pfnSetGraphicsRootConstantBufferView
 
 <dd>
 <p>Set graphics root constant buffer view.</p>
 </dd>
 
-### -field <b>pfnSetComputeRootShaderResourceView</b>
+### -field pfnSetComputeRootShaderResourceView
 
 <dd>
 <p>Set compute root shader resource view.</p>
 </dd>
 
-### -field <b>pfnSetGraphicsRootShaderResourceView</b>
+### -field pfnSetGraphicsRootShaderResourceView
 
 <dd>
 <p>Set graphics root shader resource view.</p>
 </dd>
 
-### -field <b>pfnSetComputeRootUnorderedAccessView</b>
+### -field pfnSetComputeRootUnorderedAccessView
 
 <dd>
 <p>Set compute root unordered access view.</p>
 </dd>
 
-### -field <b>pfnSetGraphicsRootUnorderedAccessView</b>
+### -field pfnSetGraphicsRootUnorderedAccessView
 
 <dd>
 <p>Set graphics root unordered access view.</p>
 </dd>
 
-### -field <b>pfnIASetIndexBuffer</b>
+### -field pfnIASetIndexBuffer
 
 <dd>
 <p>Set index buffer.</p>
 </dd>
 
-### -field <b>pfnIASetVertexBuffers</b>
+### -field pfnIASetVertexBuffers
 
 <dd>
 <p>Set vertex buffers.</p>
 </dd>
 
-### -field <b>pfnSOSetTargets</b>
+### -field pfnSOSetTargets
 
 <dd>
 <p>Set targets.</p>
 </dd>
 
-### -field <b>pfnOMSetRenderTargets</b>
+### -field pfnOMSetRenderTargets
 
 <dd>
 <p>Set render targets.</p>
 </dd>
 
-### -field <b>pfnSetMarker</b>
+### -field pfnSetMarker
 
 <dd>
 <p>Set marker.</p>
 </dd>
 
-### -field <b>pfnClearRootArguments</b>
+### -field pfnClearRootArguments
 
 <dd>
 <p>Clear root arguments.</p>
 </dd>
 
-### -field <b>pfnAtomicCopyBufferRegion</b>
+### -field pfnAtomicCopyBufferRegion
 
 <dd>
 <p>Atomic copy the buffer region.</p>
 </dd>
 
-### -field <b>pfnOMSetDepthBounds</b>
+### -field pfnOMSetDepthBounds
 
 <dd>
 <p>Set depth bounds.</p>
 </dd>
 
-### -field <b>pfnSetSamplePositions</b>
+### -field pfnSetSamplePositions
 
 <dd>
 <p>Set sample positions.</p>
 </dd>
 
-### -field <b>pfnResourceResolveSubresourceRegion</b>
+### -field pfnResourceResolveSubresourceRegion
 
 <dd>
 <p>Resource resolve subresource region.</p>
 </dd>
 
-### -field <b>pfnSetProtectedResourceSession</b>
+### -field pfnSetProtectedResourceSession
 
 <dd>
 <p>Set protected resource session.</p>
 </dd>
 
-### -field <b>pfnWriteBufferImmediate</b>
+### -field pfnWriteBufferImmediate
 
 <dd>
 <p>Write buffer immediate.</p>

@@ -55,11 +55,11 @@ typedef enum _D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE_FLIP_SUBMITTED"></a><a id="d3dkmt_flipmodel_independent_flip_stage_flip_submitted"></a><b>D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE_FLIP_SUBMITTED</b>
+### -field D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE_FLIP_SUBMITTED
 
 <dd></dd>
 
-### -field <a id="D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE_FLIP_COMPLETE"></a><a id="d3dkmt_flipmodel_independent_flip_stage_flip_complete"></a><b>D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE_FLIP_COMPLETE</b>
+### -field D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE_FLIP_COMPLETE
 
 <dd></dd>
 </dl>

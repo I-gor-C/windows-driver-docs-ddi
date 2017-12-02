@@ -7,7 +7,7 @@ old-location: debugger\returninputwide.htm
 old-project: debugger
 ms.assetid: 6e7f0995-14d0-4dd3-b598-2f988a2ec4fd
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl4, ReturnInputWide, IDebugControl4::ReturnInputWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT ReturnInputWide(
 ## -parameters
 <dl>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Specifies the input string being sent to the engine.</p>
@@ -70,7 +70,7 @@ HRESULT ReturnInputWide(
 
 <p> </p>
 
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p>
 
 ## -remarks
 <p>For an overview of input in the debugger engine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.</p>

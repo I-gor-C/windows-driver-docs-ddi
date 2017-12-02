@@ -58,13 +58,13 @@ BOOLEAN EnumerateInterruptSource(
 ## -parameters
 <dl>
 
-### -param <i>CallbackContext</i> [in]
+### -param CallbackContext [in]
 
 <dd>
 <p>A pointer to a callback context. The PEP specified this pointer value as a parameter in the <a href="kernel.enumerateunmaskedinterrupts">EnumerateUnmaskedInterrupts</a> call that initiated the enumeration of interrupt sources.</p>
 </dd>
 
-### -param <i>InterruptInformation</i> [in]
+### -param InterruptInformation [in]
 
 <dd>
 <p>A pointer to a <a href="..\pepfx\ns-pepfx--pep-unmasked-interrupt-information.md">PEP_UNMASKED_INTERRUPT_INFORMATION</a> structure that contains information about the interrupt source.</p>

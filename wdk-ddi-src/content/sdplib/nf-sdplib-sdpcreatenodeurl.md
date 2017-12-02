@@ -59,19 +59,19 @@ PSDP_NODE SdpCreateNodeUrl(
 ## -parameters
 <dl>
 
-### -param <i>url</i> [in]
+### -param url [in]
 
 <dd>
 <p>A pointer to the URL value that is used to initialize the SDP_NODE structure.</p>
 </dd>
 
-### -param <i>urlLength</i> 
+### -param urlLength 
 
 <dd>
 <p>An unsigned long integer value that holds the length of the URL.</p>
 </dd>
 
-### -param <i>tag</i> [in]
+### -param tag [in]
 
 <dd>
 <p>A profile driver defined tag to associate with the node.</p>

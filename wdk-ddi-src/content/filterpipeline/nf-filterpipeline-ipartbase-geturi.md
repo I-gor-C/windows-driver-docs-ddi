@@ -54,7 +54,7 @@ HRESULT GetUri(
 ## -parameters
 <dl>
 
-### -param <i>uri</i> [out]
+### -param uri [out]
 
 <dd>
 <p>The URI of the part.</p>

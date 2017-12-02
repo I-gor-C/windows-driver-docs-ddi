@@ -56,15 +56,15 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd></dd>
 
-### -field <b>DefaultClock</b>
+### -field DefaultClock
 
 <dd></dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd></dd>
 </dl>

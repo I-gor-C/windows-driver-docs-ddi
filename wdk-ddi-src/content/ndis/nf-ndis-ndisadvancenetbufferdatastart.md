@@ -7,7 +7,7 @@ old-location: netvista\ndisadvancenetbufferdatastart.htm
 old-project: netvista
 ms.assetid: 49b69282-137d-4bb5-92f5-4d27cedbb6d4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisAdvanceNetBufferDataStart
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,14 +61,14 @@ VOID NdisAdvanceNetBufferDataStart(
 ## -parameters
 <dl>
 
-### -param <i>NetBuffer</i> [in]
+### -param NetBuffer [in]
 
 <dd>
 <p>A pointer to a previously allocated 
      <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure.</p>
 </dd>
 
-### -param <i>DataOffsetDelta</i> [in]
+### -param DataOffsetDelta [in]
 
 <dd>
 <p>The amount of 
@@ -76,7 +76,7 @@ VOID NdisAdvanceNetBufferDataStart(
      <b>DataOffset</b> member of the NET_BUFFER structure accordingly.</p>
 </dd>
 
-### -param <i>FreeMdl</i> [in]
+### -param FreeMdl [in]
 
 <dd>
 <p>A BOOLEAN value that, if <b>TRUE</b>, requests NDIS to free any MDLs that become unused in the advance
@@ -84,7 +84,7 @@ VOID NdisAdvanceNetBufferDataStart(
      <i>FreeMdl</i> is <b>FALSE</b>, NDIS retains unused MDLs for use in subsequent retreat operations.</p>
 </dd>
 
-### -param <i>FreeMdlHandler</i> [in, optional]
+### -param FreeMdlHandler [in, optional]
 
 <dd>
 <p>An optional entry point for an 
@@ -196,4 +196,4 @@ VOID NdisAdvanceNetBufferDataStart(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAdvanceNetBufferDataStart function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAdvanceNetBufferDataStart function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -59,37 +59,37 @@ typedef struct _MITIGABLE_DEVICE_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version of this structure</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Driver-defined context passed by the driver.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="kernel.interfacereference">InterfaceReference</a>. </p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="kernel.interfacedereference">InterfaceDereference</a>. </p>
 </dd>
 
-### -field <b>ReadWriteMitigatedRegister</b>
+### -field ReadWriteMitigatedRegister
 
 <dd>
 <p>Pointer to the driver's implementation of the <a href="buses.read_write_mitigated_register">READ_WRITE_MITIGATED_REGISTER</a> callback function.</p>

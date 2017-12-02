@@ -57,7 +57,7 @@ typedef struct IDDCX_MOVEREGION {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -65,7 +65,7 @@ typedef struct IDDCX_MOVEREGION {
                  </p>
 </dd>
 
-### -field <b>SourcePoint</b>
+### -field SourcePoint
 
 <dd>
 <p>
@@ -74,7 +74,7 @@ typedef struct IDDCX_MOVEREGION {
                  </p>
 </dd>
 
-### -field <b>DestRect</b>
+### -field DestRect
 
 <dd>
 <p>

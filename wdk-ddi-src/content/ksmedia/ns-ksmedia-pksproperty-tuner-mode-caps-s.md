@@ -62,13 +62,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>Specifies the tuner mode that the caller is requesting capability information about. It can be one of the following tuner modes from the KSPROPERTY_TUNER_MODES enumeration that is defined in <i>ksmedia.h</i>:</p>
@@ -121,43 +121,43 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>StandardsSupported</b>
+### -field StandardsSupported
 
 <dd>
 <p>Describes the analog video standards supported. If <b>Mode</b> is set to KSPROPERTY_TUNER_MODE_TV, this member may be set to one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks-analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.</p>
 </dd>
 
-### -field <b>MinFrequency</b>
+### -field MinFrequency
 
 <dd>
 <p>Specifies the lowest frequency supported by the tuner. This value is in hertz (Hz).</p>
 </dd>
 
-### -field <b>MaxFrequency</b>
+### -field MaxFrequency
 
 <dd>
 <p>Specifies the highest frequency supported by the tuner. This value is in hertz (Hz).</p>
 </dd>
 
-### -field <b>TuningGranularity</b>
+### -field TuningGranularity
 
 <dd>
 <p>Specifies the smallest possible step size between two settings of the tuning frequency. This value is in hertz (Hz).</p>
 </dd>
 
-### -field <b>NumberOfInputs</b>
+### -field NumberOfInputs
 
 <dd>
 <p>Specifies the number of inputs on the tuner.</p>
 </dd>
 
-### -field <b>SettlingTime</b>
+### -field SettlingTime
 
 <dd>
 <p>Specifies the time, in milliseconds, for a new frequency setting to become stable.</p>
 </dd>
 
-### -field <b>Strategy</b>
+### -field Strategy
 
 <dd>
 <p>Specifies the tuning method. This member must be set to only one of the values from the <a href="..\ksmedia\ne-ksmedia-ks-tuner-strategy.md">KS_TUNER_STRATEGY</a> enumeration.</p>

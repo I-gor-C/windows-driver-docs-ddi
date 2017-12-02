@@ -63,7 +63,7 @@ typedef struct _DXVA_BufferDescription {
 ## -struct-fields
 <dl>
 
-### -field <b>dwTypeIndex</b>
+### -field dwTypeIndex
 
 <dd>
 <p>Identifies the type of buffer passed to the accelerator. The following table lists the numeric identifiers and the associated buffer type.</p>
@@ -197,25 +197,25 @@ typedef struct _DXVA_BufferDescription {
 <p> </p>
 </dd>
 
-### -field <b>dwBufferIndex</b>
+### -field dwBufferIndex
 
 <dd>
 <p>Specifies the sequence number of the buffer within the buffers of the same type that were passed in the same <a href="https://msdn.microsoft.com/7d820491-2df2-4036-8f3d-e6bcff4cd1f6">buffer description list</a>.</p>
 </dd>
 
-### -field <b>dwDataOffset</b>
+### -field dwDataOffset
 
 <dd>
 <p>Specifies the offset of the relevant data from the beginning of the buffer in bytes. The use of this member is currently restricted to the value zero. </p>
 </dd>
 
-### -field <b>dwDataSize</b>
+### -field dwDataSize
 
 <dd>
 <p>Specifies the amount of relevant data in the buffer in bytes. The location of the last byte of content in the buffer is <b>dwDataOffset</b>, plus <b>dwDataSize</b> minus 1.</p>
 </dd>
 
-### -field <b>dwFirstMBaddress</b>
+### -field dwFirstMBaddress
 
 <dd>
 <p>Specifies the macroblock address of the first macroblock in the buffer passed to the accelerator. The macroblock address is given in raster scan order. The address is determined by the members of <a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a>. Examples of macroblock addresses are as follows.</p>
@@ -262,7 +262,7 @@ typedef struct _DXVA_BufferDescription {
 <p>If the data buffer is a residual difference block data buffer, <b>dwFirstMBaddress</b> must have the same value as for the corresponding macroblock control command buffer. See <a href="https://msdn.microsoft.com/7a416992-04d3-4307-83b3-9fb94c17d60e">Macroblock-Oriented Picture Decoding</a> for more information.</p>
 </dd>
 
-### -field <b>dwNumMBsInBuffer</b>
+### -field dwNumMBsInBuffer
 
 <dd>
 <p>Specifies the number of macroblocks of data in the buffer. This count includes skipped macroblocks. Must be zero if the data buffer is among the following types: picture decoding parameters, inverse-quantization matrix, AYUV, IA44/AI44, DPXD, Highlight, or DCCMD.</p>
@@ -308,25 +308,25 @@ typedef struct _DXVA_BufferDescription {
 <p> </p>
 </dd>
 
-### -field <b>dwWidth</b>
+### -field dwWidth
 
 <dd>
 <p>Specifies the width of the data in the buffer as the number of units of bits for the following types of data: AYUV (data is specified in 32-bit units), IA44/AI44 (data is specified in 8-bit units), or DPXD (data is specified in 2-bit units). This member must be zero if the data buffer is not among the preceding types.</p>
 </dd>
 
-### -field <b>dwHeight</b>
+### -field dwHeight
 
 <dd>
 <p>Specifies the height of the data in the buffer as the number of units of bits for the following types of data: AYUV (data is specified in 32-bit units), IA44/AI44 (data is specified in 8-bit units), or DPXD (data is specified in 2-bit units).This member must be zero if the data buffer is not among the preceding types.</p>
 </dd>
 
-### -field <b>dwStride</b>
+### -field dwStride
 
 <dd>
 <p>Specifies the stride of the data in the buffer as the number of units of bits for the following types of data: AYUV (data is specified in 32-bit units), IA44/AI44 (data is specified in 8-bit units), or DPXD (data is specified in 2-bit units). The stride for the applicable buffer types is determined from the buffer allocation setup performed by the accelerator. This member must be zero if the data buffer is not among the preceding types.</p>
 </dd>
 
-### -field <b>dwReservedBits</b>
+### -field dwReservedBits
 
 <dd>
 <p>Reserved bits used for packing and alignment. Must be zero.</p>

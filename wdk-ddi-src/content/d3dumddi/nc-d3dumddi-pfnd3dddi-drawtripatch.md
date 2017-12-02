@@ -60,25 +60,25 @@ __checkReturn HRESULT APIENTRY DrawTriPatch(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-drawtripatch.md">D3DDDIARG_DRAWTRIPATCH</a> structure that describes the triangular patch to draw.</p>
 </dd>
 
-### -param <i>pInfo</i> [in]
+### -param pInfo [in]
 
 <dd>
 <p> Optional. A pointer to a D3DDDITRIPATCH_INFO structure that describes information about the triangular patch.</p>
 </dd>
 
-### -param <i>pPatch</i> [in]
+### -param pPatch [in]
 
 <dd>
 <p> Optional. A pointer to a buffer that contains three floating-point values (D3DFLOAT[3]) that provide the segment counts for each of the three edges of the triangular patch.</p>

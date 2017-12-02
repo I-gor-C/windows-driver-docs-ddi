@@ -57,19 +57,19 @@ VOID KeQueryNodeActiveAffinity(
 ## -parameters
 <dl>
 
-### -param <i>NodeNumber</i> [in]
+### -param NodeNumber [in]
 
 <dd>
-<p>The node number. If a multiprocessor system contains <i>n</i> nodes, the nodes are numbered from 0 to <i>n</i>-1. To obtain the highest node number (<i>n</i>-1) in the system, call the <a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine. </p>
+<p>The node number. If a multiprocessor system contains <i>n</i> nodes, the nodes are numbered from 0 to <i>n</i>-1. To obtain the highest node number (<i>n</i>-1) in the system, call the <a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine. </p>
 </dd>
 
-### -param <i>Affinity</i> [out, optional]
+### -param Affinity [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer into which the routine writes a <a href="..\miniport\ns-miniport--group-affinity.md">GROUP_AFFINITY</a> structure. This structure contains the group number of the group that contains the node that is identified by <i>NodeNumber</i>, and an affinity mask that indicates which logical processors in the node are active. You can set this parameter to <b>NULL</b> if you do not need this information. </p>
 </dd>
 
-### -param <i>Count</i> [out, optional]
+### -param Count [out, optional]
 
 <dd>
 <p>A pointer to a location into which the routine writes the number of active processors that are represented in the node affinity mask that is pointed to by <i>Affinity</i>. You can set this parameter to <b>NULL</b> if you do not need this information. </p>
@@ -86,7 +86,7 @@ VOID KeQueryNodeActiveAffinity(
 
 <p>The number of processors in a node cannot exceed the number of bits in the affinity mask in the structure that is pointed to by <i>Affinity</i>. The affinity mask also determines the maximum number of processors in a group.</p>
 
-<p>If, during system initialization, Windows encounters a NUMA hardware node that contains more logical processors than will fit into a group, Windows splits the node into smaller, logical nodes. Each of these nodes does not exceed the maximum group size. The <i>NodeNumber</i> parameter identifies a logical node. To obtain the maximum number of processors per group, call the <a href="..\ntddk\nf-ntddk-kequerymaximumprocessorcountex.md">KeQueryMaximumProcessorCountEx</a> routine.</p>
+<p>If, during system initialization, Windows encounters a NUMA hardware node that contains more logical processors than will fit into a group, Windows splits the node into smaller, logical nodes. Each of these nodes does not exceed the maximum group size. The <i>NodeNumber</i> parameter identifies a logical node. To obtain the maximum number of processors per group, call the <a href="..\wdm\nf-wdm-kequerymaximumprocessorcountex.md">KeQueryMaximumProcessorCountEx</a> routine.</p>
 
 ## -requirements
 <table>
@@ -154,10 +154,10 @@ VOID KeQueryNodeActiveAffinity(
 <a href="..\miniport\ns-miniport--group-affinity.md">GROUP_AFFINITY</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
+<a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequerymaximumprocessorcountex.md">KeQueryMaximumProcessorCountEx</a>
+<a href="..\wdm\nf-wdm-kequerymaximumprocessorcountex.md">KeQueryMaximumProcessorCountEx</a>
 </dt>
 </dl>
 <p> </p>

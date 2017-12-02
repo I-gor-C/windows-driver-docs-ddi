@@ -59,37 +59,37 @@ typedef struct _HID_COLLECTION_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>DescriptorSize</b>
+### -field DescriptorSize
 
 <dd>
-<p>Specifies the size, in bytes, of a collection's <a href="NULL">preparsed data</a>.</p>
+<p>Specifies the size, in bytes, of a collection's <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.</p>
 </dd>
 
-### -field <b>Polled</b>
+### -field Polled
 
 <dd>
 <p>Indicates, if <b>TRUE</b>, that the HID class driver must poll the device to receive data. Otherwise, if <b>Polled</b> is <b>FALSE</b>, the device uses asynchronous interrupts to signal the host that the device has HID reports to send to the host.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for internal system use.</p>
 </dd>
 
-### -field <b>VendorID</b>
+### -field VendorID
 
 <dd>
 <p>Specifies a HID device's vendor ID.</p>
 </dd>
 
-### -field <b>ProductID</b>
+### -field ProductID
 
 <dd>
 <p>Specifies a HID device's product ID.</p>
 </dd>
 
-### -field <b>VersionNumber</b>
+### -field VersionNumber
 
 <dd>
 <p>Specifies the manufacturer's revision number for a HID device.</p>

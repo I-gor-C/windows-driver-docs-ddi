@@ -60,25 +60,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure.</p>
 </dd>
 
-### -field <b>PinId</b>
+### -field PinId
 
 <dd>
 <p>Specifies the pin type ID.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Should be set to zero.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Pin flags. This is set to either 0 or the following.</p>
@@ -90,7 +90,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="KSPROPERTY_PIN_FLAGS_ATTRIBUTE_RANGE_AWARE"></a><a id="ksproperty_pin_flags_attribute_range_aware"></a><dl>
 
-### -field <b>KSPROPERTY_PIN_FLAGS_ATTRIBUTE_RANGE_AWARE</b>
+### -field KSPROPERTY_PIN_FLAGS_ATTRIBUTE_RANGE_AWARE
 
 </dl>
 </td>
@@ -102,7 +102,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Should be set to zero.</p>

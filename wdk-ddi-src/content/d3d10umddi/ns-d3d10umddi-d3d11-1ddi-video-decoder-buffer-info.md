@@ -56,20 +56,20 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of buffer, specified as a constant value of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-ddi-video-decoder-buffer-type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a> enumeration.</p>
 <p>In D3d10umddi.h, <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-ddi-video-decoder-buffer-type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a> and <b>D3D11_1DDI_VIDEO_DECODER_BUFFER_TYPE</b> are defined as the same type.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of the buffer, in bytes.</p>
 </dd>
 
-### -field <b>Usage</b>
+### -field Usage
 
 <dd>
 <p>A value from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-usage.md">D3D11_1DDI_VIDEO_USAGE</a> enumeration that identifies how the decode device plays video.</p>

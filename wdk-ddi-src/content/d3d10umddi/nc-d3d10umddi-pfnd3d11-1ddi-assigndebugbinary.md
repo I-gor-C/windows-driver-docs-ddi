@@ -60,25 +60,25 @@ VOID APIENTRY* AssignDebugBinary(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hShader</i> 
+### -param hShader 
 
 <dd>
 <p>A handle to the driver's private data for the shader object.</p>
 </dd>
 
-### -param <i>uBinarySize</i> 
+### -param uBinarySize 
 
 <dd>
 <p>The size, in bytes, of the full shader binary.</p>
 </dd>
 
-### -param <i>pBinary</i> [in]
+### -param pBinary [in]
 
 <dd>
 <p>A pointer to the full shader binary.</p>

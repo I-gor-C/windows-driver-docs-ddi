@@ -56,13 +56,13 @@ __inline DUID_MATCH_STATUS CompareStorageDuids(
 ## -parameters
 <dl>
 
-### -param <i>Duid1</i> [in]
+### -param Duid1 [in]
 
 <dd>
 <p>A pointer to a DUID to compare with the DUID that <i>Duid2</i> points to.</p>
 </dd>
 
-### -param <i>Duid2</i> [in]
+### -param Duid2 [in]
 
 <dd>
 <p>A pointer to a DUID to compare with the DUID that <i>Duid1</i> points to.</p>

@@ -7,7 +7,7 @@ old-location: ieee\self_id_more.htm
 old-project: IEEE
 ms.assetid: d3c164a6-4830-4f1f-9fa5-5cd61e796e31
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: SELF_ID_MORE, SELF_ID_MORE, *PSELF_ID_MORE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,19 +67,19 @@ typedef struct _SELF_ID_MORE {
 ## -struct-fields
 <dl>
 
-### -field <b>SID_Phys_ID</b>
+### -field SID_Phys_ID
 
 <dd>
 <p>Specifies the device node number. This member specifies bits 0-10 of the node address. This member contains bits 0-5 of byte 0 of the self ID packet. </p>
 </dd>
 
-### -field <b>SID_Packet_ID</b>
+### -field SID_Packet_ID
 
 <dd>
 <p>Must be PHY_PACKET_ID_SELF_ID. This member specifies bits 0-10 of the node address. This member contains bits 6-7 of byte 0 of the self ID packet. </p>
 </dd>
 
-### -field <b>SID_PortA</b>
+### -field SID_PortA
 
 <dd>
 <p>Specifies port status. Possible values are:</p>
@@ -100,25 +100,25 @@ typedef struct _SELF_ID_MORE {
 <p>This member contains bits 0-1 of byte 1 of the self ID packet. </p>
 </dd>
 
-### -field <b>SID_Reserved2</b>
+### -field SID_Reserved2
 
 <dd>
 <p>Reserved. This member contains bits 2-3 of byte 1 of the self ID packet. </p>
 </dd>
 
-### -field <b>SID_Sequence</b>
+### -field SID_Sequence
 
 <dd>
 <p>Specifies the packet number in sequence (the first SELF_ID_MORE packet is packet zero). This member contains bits 4-5 of byte 1 of the self ID packet. </p>
 </dd>
 
-### -field <b>SID_One</b>
+### -field SID_One
 
 <dd>
 <p>Always a 1. This member contains bit 6 of byte 1 of the self ID packet. </p>
 </dd>
 
-### -field <b>SID_PortE</b>
+### -field SID_PortE
 
 <dd>
 <p>Specifies port status. Possible values are:</p>
@@ -139,7 +139,7 @@ typedef struct _SELF_ID_MORE {
 <p>This member specifies bits 0-1 of byte 2 of the self ID packet. </p>
 </dd>
 
-### -field <b>SID_PortD</b>
+### -field SID_PortD
 
 <dd>
 <p>Specifies port status. Possible values are:</p>
@@ -160,7 +160,7 @@ typedef struct _SELF_ID_MORE {
 <p>This member specifies bits 2-3 of byte 2 of the self ID packet. </p>
 </dd>
 
-### -field <b>SID_PortC</b>
+### -field SID_PortC
 
 <dd>
 <p>Specifies port status. Possible values are:</p>
@@ -181,7 +181,7 @@ typedef struct _SELF_ID_MORE {
 <p>This member contains bits 4-5 of byte 2 of the self ID packet. </p>
 </dd>
 
-### -field <b>SID_PortB</b>
+### -field SID_PortB
 
 <dd>
 <p>Specifies port status. Possible values are:</p>
@@ -202,19 +202,19 @@ typedef struct _SELF_ID_MORE {
 <p>This member contains bits 6-7 of byte 2 of the self ID packet. </p>
 </dd>
 
-### -field <b>SID_More_Packets</b>
+### -field SID_More_Packets
 
 <dd>
 <p>One if this packet will be followed by more SELF_ID_MORE packets, zero otherwise. This member contains bit 0 of byte 3 of the self ID packet. </p>
 </dd>
 
-### -field <b>SID_Reserved3</b>
+### -field SID_Reserved3
 
 <dd>
 <p>Reserved. This member contains bit 1 of byte 3 of the self ID packet.</p>
 </dd>
 
-### -field <b>SID_PortH</b>
+### -field SID_PortH
 
 <dd>
 <p>Specifies port status. Possible values are:</p>
@@ -235,7 +235,7 @@ typedef struct _SELF_ID_MORE {
 <p>This member contains bits 2-3 of byte 3 of the self ID packet. </p>
 </dd>
 
-### -field <b>SID_PortG</b>
+### -field SID_PortG
 
 <dd>
 <p>Specifies port status. Possible values are:</p>
@@ -256,7 +256,7 @@ typedef struct _SELF_ID_MORE {
 <p>This member contains bits 4-5 of byte 3 of the self ID packet. </p>
 </dd>
 
-### -field <b>SID_PortF</b>
+### -field SID_PortF
 
 <dd>
 <p>Specifies port status. Possible values are:</p>
@@ -303,4 +303,4 @@ typedef struct _SELF_ID_MORE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20SELF_ID_MORE structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20SELF_ID_MORE structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

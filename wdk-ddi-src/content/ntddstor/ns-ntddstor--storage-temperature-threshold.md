@@ -60,19 +60,19 @@ typedef struct _STORAGE_TEMPERATURE_THRESHOLD {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure. This should be set to sizeof(<b>STORAGE_TEMPERATURE_THRESHOLD</b>).</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags set for this request. The following are valid flags.</p>
@@ -89,25 +89,25 @@ typedef struct _STORAGE_TEMPERATURE_THRESHOLD {
 <p> </p>
 </dd>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>Identifies the instance of temperature information. Starts from 0. Index 0 may indicate a composite value.</p>
 </dd>
 
-### -field <b>Threshold</b>
+### -field Threshold
 
 <dd>
 <p>A signed value that indicates the temperature of the threshold, in degrees Celsius.</p>
 </dd>
 
-### -field <b>OverThreshold</b>
+### -field OverThreshold
 
 <dd>
 <p>Indicates if the <i>Threshold</i> specifies the over or under temperature threshold. If <b>true</b>, set the <b>OverThreshold</b> temperature value of the device; otherwise, set the <b>UnderThreshold</b> temperature value. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

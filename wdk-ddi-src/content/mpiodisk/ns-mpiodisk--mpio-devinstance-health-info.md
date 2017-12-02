@@ -56,19 +56,19 @@ typedef struct _MPIO_DEVINSTANCE_HEALTH_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberDevInstancePackets</b>
+### -field NumberDevInstancePackets
 
 <dd>
 <p>An unsigned 32-bitfield that returns the number of health packets that are available and that correspond to the number of available path instances associated with all multi-path disks.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Should be zero.</p>
 </dd>
 
-### -field <b>DevInstanceHealthPackets</b>
+### -field DevInstanceHealthPackets
 
 <dd>
 <p>A field that returns an array with health information about all the available instances of multi-path disks. The number of elements of the array is given by <i>NbrDevInfoPkts</i> and each element of the array is an instance of the MPIO_DEVINSTANCE_HEALTH_CLASS structure.</p>

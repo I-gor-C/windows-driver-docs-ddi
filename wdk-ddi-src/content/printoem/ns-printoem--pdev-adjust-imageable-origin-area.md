@@ -56,13 +56,13 @@ typedef struct _PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA {
 ## -struct-fields
 <dl>
 
-### -field <b>ptImageOrigin</b>
+### -field ptImageOrigin
 
 <dd>
 <p>A POINT structure that specifies the origin of the imageable area, in graphics device units (pixels).</p>
 </dd>
 
-### -field <b>szlImageableArea</b>
+### -field szlImageableArea
 
 <dd>
 <p>A SIZEL structure that specifies the size of the image area, in graphics device units (pixels).</p>

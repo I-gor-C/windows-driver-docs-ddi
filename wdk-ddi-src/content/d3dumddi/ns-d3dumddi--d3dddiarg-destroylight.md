@@ -54,7 +54,7 @@ typedef struct _D3DDDIARG_DESTROYLIGHT {
 ## -struct-fields
 <dl>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>[in] The index of the light to destroy.</p>

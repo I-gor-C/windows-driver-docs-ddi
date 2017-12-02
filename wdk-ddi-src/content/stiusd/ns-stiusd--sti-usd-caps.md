@@ -7,7 +7,7 @@ old-location: image\sti_usd_caps.htm
 old-project: image
 ms.assetid: 24dda069-5f93-469d-8ce3-87b488019b88
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: STI_USD_CAPS, STI_USD_CAPS, *PSTI_USD_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,20 +56,20 @@ typedef struct _STI_USD_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwVersion</b>
+### -field dwVersion
 
 <dd>
 <p>STI version number. This value must be STI_VERSION, defined in <i>Sti.h</i>.</p>
 </dd>
 
-### -field <b>dwGenericCaps</b>
+### -field dwGenericCaps
 
 <dd>
 <p>Bit flags indicating driver capabilities. The following flags are defined in <i>Stiusd.h</i>.</p>
 <p></p>
 <dl>
 
-### -field <a id="STI_USD_GENCAP_NATIVE_PUSHSUPPORT"></a><a id="sti_usd_gencap_native_pushsupport"></a>STI_USD_GENCAP_NATIVE_PUSHSUPPORT
+### -field STI_USD_GENCAP_NATIVE_PUSHSUPPORT
 
 <dd>
 <p>The driver supports asynchronous device notifications.</p>
@@ -78,7 +78,7 @@ typedef struct _STI_USD_CAPS {
 <p></p>
 <dl>
 
-### -field <a id="STI_USD_GENCAP_OPEN_DEVICE_FOR_ME"></a><a id="sti_usd_gencap_open_device_for_me"></a>STI_USD_GENCAP_OPEN_DEVICE_FOR_ME
+### -field STI_USD_GENCAP_OPEN_DEVICE_FOR_ME
 
 <dd>
 <p><i>Not used.</i></p>

@@ -7,7 +7,7 @@ old-location: netvista\rilsupservicedataparammask_2.htm
 old-project: netvista
 ms.assetid: 65901068-d45e-4c3a-b1ee-340427506c7f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef enum _RILSUPSERVICEDATAPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_SSDI_STATUS"></a><a id="ril_param_ssdi_status"></a><b>RIL_PARAM_SSDI_STATUS</b>
+### -field RIL_PARAM_SSDI_STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSDI_SS_ERROR"></a><a id="ril_param_ssdi_ss_error"></a><b>RIL_PARAM_SSDI_SS_ERROR</b>
+### -field RIL_PARAM_SSDI_SS_ERROR
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSDI_CC_ERROR"></a><a id="ril_param_ssdi_cc_error"></a><b>RIL_PARAM_SSDI_CC_ERROR</b>
+### -field RIL_PARAM_SSDI_CC_ERROR
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSDI_VENDOR_ERROR"></a><a id="ril_param_ssdi_vendor_error"></a><b>RIL_PARAM_SSDI_VENDOR_ERROR</b>
+### -field RIL_PARAM_SSDI_VENDOR_ERROR
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSDI_DATASIZE"></a><a id="ril_param_ssdi_datasize"></a><b>RIL_PARAM_SSDI_DATASIZE</b>
+### -field RIL_PARAM_SSDI_DATASIZE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSDI_DATA"></a><a id="ril_param_ssdi_data"></a><b>RIL_PARAM_SSDI_DATA</b>
+### -field RIL_PARAM_SSDI_DATA
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSDI_ALL"></a><a id="ril_param_ssdi_all"></a><b>RIL_PARAM_SSDI_ALL</b>
+### -field RIL_PARAM_SSDI_ALL
 
 <dd></dd>
 </dl>

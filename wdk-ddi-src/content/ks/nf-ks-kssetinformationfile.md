@@ -57,25 +57,25 @@ NTSTATUS KsSetInformationFile(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Specifies the file object to set the standard information on.</p>
 </dd>
 
-### -param <i>FileInformation</i> [in]
+### -param FileInformation [in]
 
 <dd>
 <p>Indicates the place in which to put the file information. The file information is assumed to be a valid or probed address.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the correct length of the <i>FileInformation</i> buffer.</p>
 </dd>
 
-### -param <i>FileInformationClass</i> [in]
+### -param FileInformationClass [in]
 
 <dd>
 <p>Specifies the class of information being set.</p>

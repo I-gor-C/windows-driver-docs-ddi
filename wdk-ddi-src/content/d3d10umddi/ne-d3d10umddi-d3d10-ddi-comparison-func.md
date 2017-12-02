@@ -61,49 +61,49 @@ typedef enum D3D10_DDI_COMPARISON_FUNC {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D10_DDI_COMPARISON_NEVER"></a><a id="d3d10_ddi_comparison_never"></a><b>D3D10_DDI_COMPARISON_NEVER</b>
+### -field D3D10_DDI_COMPARISON_NEVER
 
 <dd>
 <p>The comparison never succeeds.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_COMPARISON_LESS"></a><a id="d3d10_ddi_comparison_less"></a><b>D3D10_DDI_COMPARISON_LESS</b>
+### -field D3D10_DDI_COMPARISON_LESS
 
 <dd>
 <p>The comparison is a less-than operation.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_COMPARISON_EQUAL"></a><a id="d3d10_ddi_comparison_equal"></a><b>D3D10_DDI_COMPARISON_EQUAL</b>
+### -field D3D10_DDI_COMPARISON_EQUAL
 
 <dd>
 <p>The comparison is an equal-to operation.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_COMPARISON_LESS_EQUAL"></a><a id="d3d10_ddi_comparison_less_equal"></a><b>D3D10_DDI_COMPARISON_LESS_EQUAL</b>
+### -field D3D10_DDI_COMPARISON_LESS_EQUAL
 
 <dd>
 <p>The comparison is a less-than or equal-to operation.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_COMPARISON_GREATER"></a><a id="d3d10_ddi_comparison_greater"></a><b>D3D10_DDI_COMPARISON_GREATER</b>
+### -field D3D10_DDI_COMPARISON_GREATER
 
 <dd>
 <p>The comparison is a greater-than operation.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_COMPARISON_NOT_EQUAL"></a><a id="d3d10_ddi_comparison_not_equal"></a><b>D3D10_DDI_COMPARISON_NOT_EQUAL</b>
+### -field D3D10_DDI_COMPARISON_NOT_EQUAL
 
 <dd>
 <p>The comparison is a not-equal-to operation.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_COMPARISON_GREATER_EQUAL"></a><a id="d3d10_ddi_comparison_greater_equal"></a><b>D3D10_DDI_COMPARISON_GREATER_EQUAL</b>
+### -field D3D10_DDI_COMPARISON_GREATER_EQUAL
 
 <dd>
 <p>The comparison is a greater-than or equal-to operation.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_COMPARISON_ALWAYS"></a><a id="d3d10_ddi_comparison_always"></a><b>D3D10_DDI_COMPARISON_ALWAYS</b>
+### -field D3D10_DDI_COMPARISON_ALWAYS
 
 <dd>
 <p>The comparison always succeeds.</p>

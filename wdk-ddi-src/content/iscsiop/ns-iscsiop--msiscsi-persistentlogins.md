@@ -56,19 +56,19 @@ typedef struct _MSiSCSI_PersistentLogins {
 ## -struct-fields
 <dl>
 
-### -field <b>PersistentLoginCount</b>
+### -field PersistentLoginCount
 
 <dd>
 <p>The number of persistent target logon sessions that the initiator manages.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for Microsoft use only.</p>
 </dd>
 
-### -field <b>PersistentLogins</b>
+### -field PersistentLogins
 
 <dd>
 <p>A variable length array of <a href="..\iscsiop\ns-iscsiop--iscsi-persistent-login.md">ISCSI_Persistent_Login</a> structures, each of which contains information that is associated with a particular persistent logon session that the initiator maintains.</p>

@@ -7,7 +7,7 @@ old-location: ifsk\ccmapdata.htm
 old-project: ifsk
 ms.assetid: dccc79ba-68d9-41cf-b86d-37adb83558a0
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: CcMapData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ BOOLEAN CcMapData(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to a file object for the file whose data is to be mapped for read access.</p>
 </dd>
 
-### -param <i>FileOffset</i> [in]
+### -param FileOffset [in]
 
 <dd>
 <p>Pointer to a variable that specifies the starting byte offset within the cached file where the desired data resides.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Length of desired data in bytes.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Bitmask of flags specifying how the mapping operation is to be performed. This is a bitwise OR combination of one or more of the following values: </p>
@@ -109,7 +109,7 @@ BOOLEAN CcMapData(
 <p></p>
 <dl>
 
-### -param <a id="Wait"></a><a id="wait"></a><a id="WAIT"></a><i>Wait</i>
+### -param Wait
 
 <dd>
 <p>Set to <b>TRUE</b> if the caller can be put into a wait state until the data has been mapped, <b>FALSE</b> otherwise.</p>
@@ -117,13 +117,13 @@ BOOLEAN CcMapData(
 </dl>
 </dd>
 
-### -param <i>Bcb</i> [out]
+### -param Bcb [out]
 
 <dd>
 <p>On the first call this returns a pointer to a buffer control block (BCB) structure. This pointer must be supplied as input on all subsequent calls, for this buffer.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Pointer to a buffer containing the mapped data.</p>
@@ -222,4 +222,4 @@ BOOLEAN CcMapData(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcMapData routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcMapData routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

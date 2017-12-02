@@ -7,7 +7,7 @@ old-location: netvista\ril_deletephonebookentry.htm
 old-project: netvista
 ms.assetid: 110c542a-c98a-450d-b943-d8449dcac668
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_DeletePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,27 +62,27 @@ HRESULT  RIL_DeletePhonebookEntry(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>hUiccApp</i> 
+### -param hUiccApp 
 
 <dd></dd>
 
-### -param <i>dwStoreLocation</i> 
+### -param dwStoreLocation 
 
 <dd></dd>
 
-### -param <i>dwIndex</i> 
+### -param dwIndex 
 
 <dd></dd>
 
-### -param <i>lpLockVerification</i> 
+### -param lpLockVerification 
 
 <dd></dd>
 </dl>

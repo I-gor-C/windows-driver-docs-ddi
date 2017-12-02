@@ -59,25 +59,25 @@ PVOID ScsiPortWmiSetData(
 ## -parameters
 <dl>
 
-### -param <i>RequestContext</i> [in]
+### -param RequestContext [in]
 
 <dd>
 <p>Pointer to a structure of type <a href="storage.scsiwmi_request_context">SCSIWMI_REQUEST_CONTEXT</a> that contains the request context for a WMI SRB. </p>
 </dd>
 
-### -param <i>InstanceIndex</i> [in]
+### -param InstanceIndex [in]
 
 <dd>
 <p>Contains an index that indicates the instance for which the position and length of the instance data are to be specified. </p>
 </dd>
 
-### -param <i>DataLength</i> [in]
+### -param DataLength [in]
 
 <dd>
 <p>Specifies the number of bytes  of data required to describe the instance. </p>
 </dd>
 
-### -param <i>BufferAvail</i> [out]
+### -param BufferAvail [out]
 
 <dd>
 <p>Must contain, on input, the number of bytes of buffer space in the <a href="kernel.wnode_all_data">WNODE_ALL_DATA</a> structure that can be used for describing instance names and data. On return, this member contains the number of bytes of buffer space that remain. </p>
@@ -93,7 +93,7 @@ PVOID ScsiPortWmiSetData(
 <p>If there is not enough memory available to add new instance data of size <i>DataLength</i> bytes<i>, </i>a zero will be returned in the <i>BufferAvail</i> member. </p>
 </dd>
 
-### -param <i>SizeNeeded</i> [in, out]
+### -param SizeNeeded [in, out]
 
 <dd>
 <p>Indicates, on input,  the number of bytes needed to describe the entire WNODE <i>before </i>adding the descriptive data for the instance specified by <i>InstanceIndex</i>. On return, this member will contain the size of the WNODE, including the data for the new instance. </p>

@@ -62,31 +62,31 @@ ULONG SetVirtualFunctionData(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in, out]
+### -param Context [in, out]
 
 <dd>
 <p>A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\wdm\ns-wdm--pci-virtualization-interface.md">PCI_VIRTUALIZATION_INTERFACE</a> structure for the interface.</p>
 </dd>
 
-### -param <i>VirtualFunction</i> [in]
+### -param VirtualFunction [in]
 
 <dd>
 <p>A zero-based value that specifies the VF on the device from which data is to be written.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to the buffer that contains the configuration information to be written to the PCIe configuration space of the VF.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>The offset into the PCIe configuration space data of the VF. This member specifies where this write operation begins.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length, in bytes, of the data to be written. </p>

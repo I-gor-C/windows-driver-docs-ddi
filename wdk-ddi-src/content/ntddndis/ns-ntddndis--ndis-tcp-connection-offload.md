@@ -7,7 +7,7 @@ old-location: netvista\ndis_tcp_connection_offload.htm
 old-project: netvista
 ms.assetid: d37a773d-0a83-4592-9c21-3ceaa6454549
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_TCP_CONNECTION_OFFLOAD, NDIS_TCP_CONNECTION_OFFLOAD, *PNDIS_TCP_CONNECTION_OFFLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -80,20 +80,20 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD {
      <b>NDIS_SIZEOF_TCP_CONNECTION_OFFLOAD_REVISION_1</b>.</p>
 </dd>
 
-### -field <b>Encapsulation</b>
+### -field Encapsulation
 
 <dd>
 <p>Encapsulation settings for TCP chimney offload. For more information about this member, see the following Remarks section.</p>
 </dd>
 
-### -field <b>SupportIPv4</b>
+### -field SupportIPv4
 
 <dd>
 <p>A ULONG value that an offload target sets to indicate that it supports IPv4. The TCP/IP driver
      stack sets this member to enable IPv4.</p>
 </dd>
 
-### -field <b>SupportIPv6</b>
+### -field SupportIPv6
 
 <dd>
 <p>A ULONG value that an offload target sets to indicate that it supports IPv6. The TCP/IP driver
@@ -101,7 +101,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD {
      IPv6.</p>
 </dd>
 
-### -field <b>SupportIPv6ExtensionHeaders</b>
+### -field SupportIPv6ExtensionHeaders
 
 <dd>
 <p>A ULONG value that an offload target sets to indicate that it supports IPv6 extension headers
@@ -109,7 +109,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD {
      destination options). The TCP/IP driver stack sets this member to enable IPv6 extension headers.</p>
 </dd>
 
-### -field <b>SupportSack</b>
+### -field SupportSack
 
 <dd>
 <p>A ULONG value that an offload target sets to indicate that it supports TCP selective
@@ -122,7 +122,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD {
      SACK option and process the rest of the TCP segment normally.</p>
 </dd>
 
-### -field <b>CongestionAlgorithm</b>
+### -field CongestionAlgorithm
 
 <dd>
 <p>Reserved for future use.
@@ -132,14 +132,14 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD {
      <a href="mailto:offloadt@microsoft.com">External TCP Offload Triage</a>.</p>
 </dd>
 
-### -field <b>TcpConnectionOffloadCapacity</b>
+### -field TcpConnectionOffloadCapacity
 
 <dd>
 <p>A ULONG value that an offload target sets to indicate the maximum number of offloaded TCP
      connections that it supports. This number includes both IPv4 and IPv6 connections.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved.</p>
@@ -301,7 +301,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD {
 <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-offload.md">NDIS_OFFLOAD</a>
 </dt>
 <dt>
 <a href="netvista.ndis_status_tcp_connection_offload_hardware_capabilities">
@@ -322,4 +322,4 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_CONNECTION_OFFLOAD structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_CONNECTION_OFFLOAD structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -58,13 +58,13 @@ NTSTATUS RequestCommon(
 ## -parameters
 <dl>
 
-### -param <i>RequestId</i> [in]
+### -param RequestId [in]
 
 <dd>
 <p>A request ID that specifies the operation being requested. </p>
 </dd>
 
-### -param <i>Data</i> [in, out, optional]
+### -param Data [in, out, optional]
 
 <dd>
 <p>A pointer to a data structure that contains the input data and/or result data for the request specified by the <i>RequestId</i> parameter. </p>

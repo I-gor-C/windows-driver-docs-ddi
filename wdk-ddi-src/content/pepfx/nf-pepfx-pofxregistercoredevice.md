@@ -56,19 +56,19 @@ NTSTATUS PoFxRegisterCoreDevice(
 ## -parameters
 <dl>
 
-### -param <i>Id</i> [in]
+### -param Id [in]
 
 <dd>
 <p>A string that uniquely identifies the core system resource. This member is a pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains a <a href="devinst.device_identification_strings">device identification string</a>.</p>
 </dd>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A pointer to a <a href="..\pepfx\ns-pepfx--po-fx-core-device.md">PO_FX_CORE_DEVICE</a> structure that describes the power characteristics of the core system resource.</p>
 </dd>
 
-### -param <i>Handle</i> [out]
+### -param Handle [out]
 
 <dd>
 <p>A pointer to a location to which the routine writes a POHANDLE value. This handle represents the registration of the core system resource with PoFx.</p>

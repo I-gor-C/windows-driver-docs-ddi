@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTLock2(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-lock2.md">D3DKMT_LOCK2</a> structure that describes parameters for locking an allocation.</p>

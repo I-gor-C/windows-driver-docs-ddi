@@ -55,13 +55,13 @@ NTSTATUS PsSetCreateThreadNotifyRoutineEx(
 ## -parameters
 <dl>
 
-### -param <i>NotifyType</i> [in]
+### -param NotifyType [in]
 
 <dd>
 <p>A <a href="..\ntddk\ne-ntddk--pscreatethreadnotifytype.md">PSCREATETHREADNOTIFYTYPE</a> value that   indicates the type of thread notification. </p>
 </dd>
 
-### -param <i>NotifyInformation</i> [in]
+### -param NotifyInformation [in]
 
 <dd>
 <p>Provides the address of the notification information

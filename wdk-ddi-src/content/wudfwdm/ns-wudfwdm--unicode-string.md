@@ -57,19 +57,19 @@ typedef struct _UNICODE_STRING {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The length, in bytes, of the string stored in <b>Buffer</b>.</p>
 </dd>
 
-### -field <b>MaximumLength</b>
+### -field MaximumLength
 
 <dd>
 <p>The length, in bytes, of <b>Buffer</b>.</p>
 </dd>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>Pointer to a buffer used to contain a string of wide characters.</p>

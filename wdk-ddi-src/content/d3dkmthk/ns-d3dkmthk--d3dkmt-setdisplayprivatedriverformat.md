@@ -56,19 +56,19 @@ typedef struct _D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the device that requests to change the private-format attribute of a video present source.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology to set a private-format attribute on (that is, the identifier of the primary surface to set a private-format attribute on). </p>
 </dd>
 
-### -field <b>PrivateDriverFormatAttribute</b>
+### -field PrivateDriverFormatAttribute
 
 <dd>
 <p>[in] A UINT value that specifies the private-format attribute to set for the video present source that the <b>VidPnSourceId</b> member specifies. </p>

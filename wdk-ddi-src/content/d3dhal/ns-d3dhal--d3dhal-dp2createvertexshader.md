@@ -59,19 +59,19 @@ typedef struct _D3DHAL_DP2CREATEVERTEXSHADER {
 ## -struct-fields
 <dl>
 
-### -field <b>dwHandle</b>
+### -field dwHandle
 
 <dd>
 <p>Specifies the handle to the vertex shader that is assigned by the runtime. This value is guaranteed to be subzero. Furthermore, although flexible vertex format (FVF) codes are part of the shader handle namespace, it is guaranteed that the handle passed will not be an FVF code.</p>
 </dd>
 
-### -field <b>dwDeclSize</b>
+### -field dwDeclSize
 
 <dd>
 <p>Specifies the shader declaration size in bytes.</p>
 </dd>
 
-### -field <b>dwCodeSize</b>
+### -field dwCodeSize
 
 <dd>
 <p>Specifies the shader code size in bytes.</p>

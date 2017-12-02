@@ -55,7 +55,7 @@ typedef struct IDDCX_OPM_CONFIGURE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -63,7 +63,7 @@ typedef struct IDDCX_OPM_CONFIGURE_PARAMETERS {
                  </p>
 </dd>
 
-### -field <b>ConfigParameters</b>
+### -field ConfigParameters
 
 <dd>
 <p>

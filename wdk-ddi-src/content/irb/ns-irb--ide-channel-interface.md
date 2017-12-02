@@ -63,25 +63,25 @@ typedef struct _IDE_CHANNEL_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The port driver sets this member to sizeof(IDE_CHANNEL_INTERFACE). The miniport driver should verify that the version is greater than or equal to the one it is using.</p>
 </dd>
 
-### -field <b>ChannelNumber</b>
+### -field ChannelNumber
 
 <dd>
 <p>The port driver sets this field to the number assigned for this channel. For non-native mode controllers, the primary channel will always be assigned 0 and the secondary channel will always be assigned 1.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use. The miniport driver must not use this field.</p>
 </dd>
 
-### -field <b>ReservedUlong</b>
+### -field ReservedUlong
 
 <dd>
 <dl>
@@ -90,27 +90,27 @@ typedef struct _IDE_CHANNEL_INTERFACE {
 </dl>
 </dd>
 
-### -field <b>IdeHwInitialize</b>
+### -field IdeHwInitialize
 
 <dd></dd>
 
-### -field <b>IdeHwBuildIo</b>
+### -field IdeHwBuildIo
 
 <dd></dd>
 
-### -field <b>IdeHwStartIo</b>
+### -field IdeHwStartIo
 
 <dd></dd>
 
-### -field <b>IdeHwInterrupt</b>
+### -field IdeHwInterrupt
 
 <dd></dd>
 
-### -field <b>IdeHwReset</b>
+### -field IdeHwReset
 
 <dd></dd>
 
-### -field <b>IdeHwControl</b>
+### -field IdeHwControl
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: netvista\ril_getmsgserviceoptions.htm
 old-project: netvista
 ms.assetid: 53e8be7b-dad2-4060-99b1-eca7b7fdb8ff
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetMsgServiceOptions
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_GetMsgServiceOptions(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>hUiccApp</i> 
+### -param hUiccApp 
 
 <dd></dd>
 </dl>

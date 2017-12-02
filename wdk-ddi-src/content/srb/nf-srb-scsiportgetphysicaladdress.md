@@ -58,25 +58,25 @@ SCSI_PHYSICAL_ADDRESS ScsiPortGetPhysicalAddress(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
-### -param <i>Srb</i> [in]
+### -param Srb [in]
 
 <dd>
 <p>Pointer to the SCSI request block if the <i>VirtualAddress</i> to be converted comes from that SRB's <b>DataBuffer</b> member or, possibly, from the <b>SenseInfoBuffer</b>. Otherwise, this parameter must be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>VirtualAddress</i> [in]
+### -param VirtualAddress [in]
 
 <dd>
 <p>Pointer to the base virtual address to be converted. If this virtual address falls within the range for an SRB-supplied <b>DataBuffer</b>, the caller also must provide the <i>Srb</i> pointer.</p>
 </dd>
 
-### -param <i>Length</i> [out]
+### -param Length [out]
 
 <dd>
 <p>Returns the number of bytes mapped, starting at the returned physical address.</p>

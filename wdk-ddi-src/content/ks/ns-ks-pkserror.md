@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Specifies a context parameter that was originally passed to the connection.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>Specifies the NTSTATUS error.</p>
@@ -69,7 +69,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>Streaming error notifications can be generated against the Quality Management sink, if assigned. The same method of proxying Quality Management complaints is used for forwarding error reports for DirectShow graphs. For more information, see <a href="NULL">Quality Management</a>.</p>
+<p>Streaming error notifications can be generated against the Quality Management sink, if assigned. The same method of proxying Quality Management complaints is used for forwarding error reports for DirectShow graphs. For more information, see <a href="https://msdn.microsoft.com/359e6e12-903f-4037-8f35-b090ce41f770">Quality Management</a>.</p>
 
 ## -requirements
 <table>

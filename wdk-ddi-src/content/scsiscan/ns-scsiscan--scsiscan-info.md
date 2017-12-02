@@ -7,7 +7,7 @@ old-location: image\scsiscan_info.htm
 old-project: image
 ms.assetid: 5fd9b381-c0e3-45bf-9061-da816da5e29f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: SCSISCAN_INFO, SCSISCAN_INFO, *PSCSISCAN_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,49 +62,49 @@ typedef struct _SCSISCAN_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size, in bytes, of the SCSISCAN_INFO structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Not used, must be zero.</p>
 </dd>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>SCSI adapter number.</p>
 </dd>
 
-### -field <b>PathId</b>
+### -field PathId
 
 <dd>
 <p>Host SCSI ID.</p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>Target SCSI ID.</p>
 </dd>
 
-### -field <b>Lun</b>
+### -field Lun
 
 <dd>
 <p>Target logical unit number (LUN).</p>
 </dd>
 
-### -field <b>AdapterName</b>
+### -field AdapterName
 
 <dd>
 <p><i>For internal use only.</i></p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p><i>For internal use only.</i></p>

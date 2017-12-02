@@ -61,50 +61,50 @@ typedef struct _PEP_UNMASKED_INTERRUPT_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
-<p>A <a href="..\pepfx\ns-pepfx--pep-unmasked-interrupt-flags.md">PEP_UNMASKED_INTERRUPT_FLAGS</a> union that indicates whether the interrupt is a primary or secondary interrupt. For more information, see <a href="NULL">Primary and Secondary Interrupts</a>.</p>
+<p>A <a href="..\pepfx\ns-pepfx--pep-unmasked-interrupt-flags.md">PEP_UNMASKED_INTERRUPT_FLAGS</a> union that indicates whether the interrupt is a primary or secondary interrupt. For more information, see <a href="https://msdn.microsoft.com/731B0E36-4480-4B69-931E-1F7B40B18911">Primary and Secondary Interrupts</a>.</p>
 </dd>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--kinterrupt-mode.md">KINTERRUPT_MODE</a> enumeration value. This member indicates whether the interrupt is edge-triggered or level-triggered.</p>
 </dd>
 
-### -field <b>Polarity</b>
+### -field Polarity
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--kinterrupt-polarity.md">KINTERRUPT_POLARITY</a> enumeration value. This member indicates which edge or level of the interrupt signal triggers the interrupt.</p>
 </dd>
 
-### -field <b>Gsiv</b>
+### -field Gsiv
 
 <dd>
 <p>The global system interrupt vector (GSIV) number that identifies this interrupt. The ACPI firmware assigns GSIV numbers to all primary interrupt lines. For secondary (GPIO) interrupt lines, the GSIV number is dynamically assigned by the operating system.</p>
 </dd>
 
-### -field <b>PinNumber</b>
+### -field PinNumber
 
 <dd>
 <p>For secondary interrupt sources, this member identifies the number of the pin on the general-purpose I/O (GPIO) controller that is connected to the interrupt signal line from the interrupting device. For primary interrupt sources, this member is undefined.</p>
 <p>If a GPIO controller has N GPIO pins, the pins are numbered 0 to N–1. One or more of these GPIO pins might be configured as interrupt inputs.</p>
 </dd>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>For secondary interrupt sources, this member contains the PEP device handle for the GPIO controller that is the source for this interrupt. For primary interrupt sources, this field is undefined.</p>

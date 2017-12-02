@@ -7,7 +7,7 @@ old-location: netvista\rilmsgbcgeneralwarningtype.htm
 old-project: netvista
 ms.assetid: c9d1a52e-e133-4fb5-a7a1-75699fe35cac
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,27 +59,27 @@ typedef enum _RILMSGBCGENERALWARNINGTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_WARNINGTYPE_TSUNAMI"></a><a id="ril_warningtype_tsunami"></a><b>RIL_WARNINGTYPE_TSUNAMI</b>
+### -field RIL_WARNINGTYPE_TSUNAMI
 
 <dd></dd>
 
-### -field <a id="RIL_WARNINGTYPE_EARTHQUAKETSUNAMI"></a><a id="ril_warningtype_earthquaketsunami"></a><b>RIL_WARNINGTYPE_EARTHQUAKETSUNAMI</b>
+### -field RIL_WARNINGTYPE_EARTHQUAKETSUNAMI
 
 <dd></dd>
 
-### -field <a id="RIL_WARNINGTYPE_TEST"></a><a id="ril_warningtype_test"></a><b>RIL_WARNINGTYPE_TEST</b>
+### -field RIL_WARNINGTYPE_TEST
 
 <dd></dd>
 
-### -field <a id="RIL_WARNINGTYPE_OTHER"></a><a id="ril_warningtype_other"></a><b>RIL_WARNINGTYPE_OTHER</b>
+### -field RIL_WARNINGTYPE_OTHER
 
 <dd></dd>
 
-### -field <a id="RIL_WARNINGTYPE_RESERVED"></a><a id="ril_warningtype_reserved"></a><b>RIL_WARNINGTYPE_RESERVED</b>
+### -field RIL_WARNINGTYPE_RESERVED
 
 <dd></dd>
 
-### -field <a id="RIL_WARNINGTYPE_MAX"></a><a id="ril_warningtype_max"></a><b>RIL_WARNINGTYPE_MAX</b>
+### -field RIL_WARNINGTYPE_MAX
 
 <dd></dd>
 </dl>

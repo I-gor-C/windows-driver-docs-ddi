@@ -70,44 +70,44 @@ typedef struct _DXVADDI_CONFIGPICTUREDECODE {
 ## -struct-fields
 <dl>
 
-### -field <b>guidConfigBitstreamEncryption</b>
+### -field guidConfigBitstreamEncryption
 
 <dd>
 <p>[in] The encryption GUID for configuring a bitstream. </p>
 </dd>
 
-### -field <b>guidConfigMBcontrolEncryption</b>
+### -field guidConfigMBcontrolEncryption
 
 <dd>
 <p>[in] The encryption GUID for configuring macroblock control. </p>
 </dd>
 
-### -field <b>guidConfigResidDiffEncryption</b>
+### -field guidConfigResidDiffEncryption
 
 <dd>
 <p>[in] The encryption GUID for configuring residual difference decoding.</p>
 </dd>
 
-### -field <b>ConfigBitstreamRaw</b>
+### -field ConfigBitstreamRaw
 
 <dd>
 <p>[in] The bitstream processing indicator. A value of 1 in this member indicates that picture data is sent in bitstream buffers as raw bitstream content. A value of zero indicates that picture data is sent by using macroblock control command buffers. </p>
 <p>Set this member to zero if the <b>ConfigResidDiffHost</b> or <b>ConfigResidDiffAccelerator</b> member is 1. A value of zero in <b>ConfigBitstreamRaw </b>is the basic level of support. The value of 1 is preferred. </p>
 </dd>
 
-### -field <b>ConfigMBcontrolRasterOrder</b>
+### -field ConfigMBcontrolRasterOrder
 
 <dd>
 <p>[in] A UINT value that specifies whether macroblock control commands are in raster scan order or in arbitrary order. A value of 1 in this member specifies that the macroblock control commands within each macroblock control command buffer are in raster scan order. A value of zero indicates arbitrary order. A driver can restrict support to raster scan order; however, a driver should support both arbitrary and raster scan order.</p>
 </dd>
 
-### -field <b>ConfigResidDiffHost</b>
+### -field ConfigResidDiffHost
 
 <dd>
 <p>[in] The host residual difference configuration. A value of 1 in this member specifies that some residual difference decoding data is possibly sent as blocks in the spatial domain from the host. A value of zero specifies that spatial domain data is not sent. Set this member to zero if the <b>ConfigBitstreamRaw</b> member is 1. An accelerator should support both zero and 1.</p>
 </dd>
 
-### -field <b>ConfigSpatialResid8</b>
+### -field ConfigSpatialResid8
 
 <dd>
 <p>[in] The word size that is used to represent residual difference spatial-domain blocks for predicted (nonintra) pictures when using host-based residual difference decoding (that is, when the <b>ConfigResidDiffHost</b> member is set to 1).</p>
@@ -135,25 +135,25 @@ typedef struct _DXVADDI_CONFIGPICTUREDECODE {
 <div> </div>
 </dd>
 
-### -field <b>ConfigResid8Subtraction</b>
+### -field ConfigResid8Subtraction
 
 <dd>
 <p>[in] A UINT value that specifies whether 8-bit difference overflow blocks are subtracted or added. If this member is set to 1, 8-bit difference overflow blocks are subtracted rather than added. This member must be zero unless <b>ConfigSpatialResid8</b> is 1. If <b>ConfigSpatialResid8</b> is 1, the preferred value for <b>ConfigResid8Subtraction</b> is 1. The ability to subtract differences rather than to add them enables 8-bit difference decoding to be fully compliant with the range from -255 through +255 of values that are required in video decoder specifications. This ability enables full compliance because +255 cannot be represented as the addition of two signed 8-bit numbers but any number in the range from -255 through +255 can be represented as the difference between two signed 8-bit numbers (+255 is equal to +127 minus âˆ’128).</p>
 </dd>
 
-### -field <b>ConfigSpatialHost8or9Clipping</b>
+### -field ConfigSpatialHost8or9Clipping
 
 <dd>
 <p>[in] A UINT value that specifies whether clipping is performed by the host. If this member set to 1, spatial-domain blocks for intra macroblocks are clipped to an 8-bit range on the host and spatial-domain blocks for nonintra macroblocks are clipped to a 9-bit range on the host. A value of zero indicates that no such clipping is performed by the host. This member must be zero unless <b>ConfigSpatialResid8</b> is set to zero and <b>ConfigResidDiffHost</b> is set to 1. The preferred value for <b>ConfigSpatialHost8or9Clipping</b> is zero.</p>
 </dd>
 
-### -field <b>ConfigSpatialResidInterleaved</b>
+### -field ConfigSpatialResidInterleaved
 
 <dd>
 <p>[in] A UINT value that specifies whether spatial-domain residual difference data is sent in a chrominance-interleaved form. If this member is set to 1, any spatial-domain residual difference data is sent in a chrominance-interleaved form that matches the YUV format chrominance interleaving pattern. This member must be zero unless <b>ConfigResidDiffHost</b> is 1 and the YUV format is NV12 or NV21. The preferred value for <b>ConfigSpatialResidInterleaved</b> is zero.</p>
 </dd>
 
-### -field <b>ConfigIntraResidUnsigned</b>
+### -field ConfigIntraResidUnsigned
 
 <dd>
 <p>[in] The method of representation of spatial-domain blocks of residual difference data for intra blocks when using host-based difference decoding (that is, when the <b>ConfigResidDiffHost</b> member is equal to 1).</p>
@@ -178,7 +178,7 @@ typedef struct _DXVADDI_CONFIGPICTUREDECODE {
 <p><b>ConfigIntraResidUnsigned</b> must be zero unless <b>ConfigResidDiffHost</b> is 1. The preferred value for <b>ConfigIntraResidUnsigned</b> is zero.</p>
 </dd>
 
-### -field <b>ConfigResidDiffAccelerator</b>
+### -field ConfigResidDiffAccelerator
 
 <dd>
 <p>[in] The accelerator residual difference configuration. A value of 1 in this member indicates that transform-domain blocks of coefficient data can be sent from the host for accelerator-based IDCT. A value of zero indicates that accelerator-based IDCT is not used. </p>
@@ -187,14 +187,14 @@ typedef struct _DXVADDI_CONFIGPICTUREDECODE {
 <p>If <b>ConfigResidDiffAccelerator</b> and <b>ConfigResidDiffHost</b> are set to 1, residual difference decoding can be shared between the host and accelerator on a macroblock basis. This sharing is an even higher level of accelerator capability than when <b>ConfigResidDiffAccelerator</b> is set to 1 and <b>ConfigResidDiffHost</b> is set to zero.</p>
 </dd>
 
-### -field <b>ConfigHostInverseScan</b>
+### -field ConfigHostInverseScan
 
 <dd>
 <p>[in] A UINT value that specifies whether the inverse scan for transform-domain block processing is performed on the host or the accelerator. A value of 1 in this member indicates that the inverse scan for transform-domain block processing is performed on the host, and absolute indexes are sent instead for any transform coefficients. A value of zero indicates that inverse scan is performed on the accelerator. <b>ConfigHostInverseScan</b> must be zero if <b>ConfigResidDiffAccelerator</b> is zero or if the <b>Config4GroupedCoefs</b> member is 1.</p>
 <p>The preferred value for <b>ConfigHostInverseScan</b> is 1 if <b>ConfigResidDiffAccelerator</b> is 1.</p>
 </dd>
 
-### -field <b>ConfigSpecificIDCT</b>
+### -field ConfigSpecificIDCT
 
 <dd>
 <p>[in] A UINT value that specifies the use of a specific <a href="wdkgloss.i#wdkgloss.idct#wdkgloss.idct"><i>IDCT</i></a> method for off-host IDCT. A value of 1 in this member indicates the use of the IDCT that is specified in Annex W of ITU-T Recommendation H.263, which you can learn about from the <a href="http://go.microsoft.com/fwlink/p/?linkid=8741">International Telecommunication Union</a> website. A value of zero indicates that any compliant IDCT can be used for off-host IDCT. (Values other than zero and 1 are reserved.)</p>
@@ -203,20 +203,20 @@ typedef struct _DXVADDI_CONFIGPICTUREDECODE {
 <div> </div>
 </dd>
 
-### -field <b>Config4GroupedCoefs</b>
+### -field Config4GroupedCoefs
 
 <dd>
 <p>[in] A UINT value that specifies how transform coefficients for off-host IDCT are sent. A value of 1 in this member indicates that transform coefficients for off-host IDCT are sent by using the <a href="..\dxva\ns-dxva--dxva-tcoef4group.md">DXVA_TCoef4Group</a> structure rather than the <a href="..\dxva\ns-dxva--dxva-tcoefsingle.md">DXVA_TCoefSingle</a> structure. <b>Config4GroupedCoefs</b> is zero if <b>ConfigResidDiffAccelerator</b> is zero or if <b>ConfigHostInverseScan</b> is 1.</p>
 <p>The preferred value for <b>Config4GroupedCoefs</b> is zero if <b>ConfigResidDiffAccelerator</b> is 1.</p>
 </dd>
 
-### -field <b>ConfigMinRenderTargetBuffCount</b>
+### -field ConfigMinRenderTargetBuffCount
 
 <dd>
 <p>[in] A USHORT value that specifies the minimum number of render target buffers.</p>
 </dd>
 
-### -field <b>ConfigDecoderSpecific</b>
+### -field ConfigDecoderSpecific
 
 <dd>
 <p>[in] A USHORT value that specifies decoder-specific features to configure. For information about a decoder's features, see the specification for that decoder. For a list of decoders, see <a href="https://msdn.microsoft.com/bffcc0da-7b1a-4f70-98f5-4841c8df9f12">Providing Capabilities for Video Decoding</a>. </p>

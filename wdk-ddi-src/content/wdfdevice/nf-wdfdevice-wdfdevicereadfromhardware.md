@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicereadfromhardware.htm
 old-project: wdf
 ms.assetid: 3E9ECB09-39DD-4A16-B096-24AAD96D52E9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceReadFromHardware
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,27 +61,27 @@ SIZE_T WdfDeviceReadFromHardware(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd></dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd></dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd></dd>
 
-### -param <i>TargetAddress</i> [in]
+### -param TargetAddress [in]
 
 <dd></dd>
 
-### -param <i>Buffer</i> [out, optional]
+### -param Buffer [out, optional]
 
 <dd></dd>
 
-### -param <i>Count</i> [in, optional]
+### -param Count [in, optional]
 
 <dd></dd>
 </dl>
@@ -156,4 +156,4 @@ SIZE_T WdfDeviceReadFromHardware(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceReadFromHardware method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceReadFromHardware method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

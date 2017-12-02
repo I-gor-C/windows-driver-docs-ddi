@@ -58,31 +58,31 @@ typedef struct D3DWDDM2_0DDI_CHECK_VIDEO_PROCESSOR_FORMAT_CONVERSION {
 ## -struct-fields
 <dl>
 
-### -field <b>InputFormat</b>
+### -field InputFormat
 
 <dd>
 <p>Indicates the format of the video processor input.</p>
 </dd>
 
-### -field <b>InputColorSpace</b>
+### -field InputColorSpace
 
 <dd>
 <p>Indicates the colorspace of the video processor input.</p>
 </dd>
 
-### -field <b>OutputFormat</b>
+### -field OutputFormat
 
 <dd>
 <p>Indicates the format of the video processor output.</p>
 </dd>
 
-### -field <b>OutputColorSpace</b>
+### -field OutputColorSpace
 
 <dd>
 <p>Indicates the colorspace of the video processor output.</p>
 </dd>
 
-### -field <b>Supported</b>
+### -field Supported
 
 <dd>
 <p>The driver sets this to <b>TRUE</b> if the conversion between the input format/color space and the output format/color space is supported.</p>

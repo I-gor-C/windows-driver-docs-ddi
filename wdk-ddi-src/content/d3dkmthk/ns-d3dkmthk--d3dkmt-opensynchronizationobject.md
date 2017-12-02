@@ -56,19 +56,19 @@ typedef struct _D3DKMT_OPENSYNCHRONIZATIONOBJECT {
 ## -struct-fields
 <dl>
 
-### -field <b>hSharedHandle</b>
+### -field hSharedHandle
 
 <dd>
 <p>[in] A shared handle to the synchronization object to be opened. </p>
 </dd>
 
-### -field <b>hSyncObject</b>
+### -field hSyncObject
 
 <dd>
 <p>[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the kernel-mode synchronization object in the current process. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] An array of 64-bit values that are reserved for future use. </p>

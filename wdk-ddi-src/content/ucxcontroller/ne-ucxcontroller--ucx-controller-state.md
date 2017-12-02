@@ -56,13 +56,13 @@ typedef enum _UCX_CONTROLLER_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UcxControllerStateLost"></a><a id="ucxcontrollerstatelost"></a><a id="UCXCONTROLLERSTATELOST"></a><b>UcxControllerStateLost</b>
+### -field UcxControllerStateLost
 
 <dd>
 <p>Indicates the controller state was lost after reset.</p>
 </dd>
 
-### -field <a id="UcxControllerStatePreserved"></a><a id="ucxcontrollerstatepreserved"></a><a id="UCXCONTROLLERSTATEPRESERVED"></a><b>UcxControllerStatePreserved</b>
+### -field UcxControllerStatePreserved
 
 <dd>
 <p>Indicates the controller state was preserved after reset.</p>
@@ -89,7 +89,7 @@ typedef enum _UCX_CONTROLLER_STATE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._ucx_controller_reset_complete_info">UCX_CONTROLLER_RESET_COMPLETE_INFO</a>
+<a href="..\ucxcontroller\ns-ucxcontroller--ucx-controller-reset-complete-info.md">UCX_CONTROLLER_RESET_COMPLETE_INFO</a>
 </dt>
 </dl>
 <p> </p>

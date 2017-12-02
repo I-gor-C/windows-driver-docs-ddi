@@ -56,13 +56,13 @@ VOID VideoPortFreePool(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>Ptr</i> [in]
+### -param Ptr [in]
 
 <dd>
 <p>Pointer to the first byte of the memory to be freed.</p>

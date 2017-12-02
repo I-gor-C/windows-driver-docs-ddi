@@ -59,35 +59,35 @@ typedef enum _HWN_CLX_EXPORT_INDEX {
 ## -enum-fields
 <dl>
 
-### -field <a id="RegisterClientIndex"></a><a id="registerclientindex"></a><a id="REGISTERCLIENTINDEX"></a><b>RegisterClientIndex</b>
+### -field RegisterClientIndex
 
 <dd>
 <p>Position of the <a href="..\hwnclx\nf-hwnclx-hwnregisterclient.md">HwNRegisterClient</a> hardware notification in the export table.
 </p>
 </dd>
 
-### -field <a id="UnregisterClientIndex"></a><a id="unregisterclientindex"></a><a id="UNREGISTERCLIENTINDEX"></a><b>UnregisterClientIndex</b>
+### -field UnregisterClientIndex
 
 <dd>
 <p>Position of the <a href="..\hwnclx\nf-hwnclx-hwnunregisterclient.md">HwNUnregisterClient</a> hardware notification in the export table.
 </p>
 </dd>
 
-### -field <a id="AddDevicePreDeviceCreateIndex"></a><a id="adddevicepredevicecreateindex"></a><a id="ADDDEVICEPREDEVICECREATEINDEX"></a><b>AddDevicePreDeviceCreateIndex</b>
+### -field AddDevicePreDeviceCreateIndex
 
 <dd>
 <p>Position of the <a href="..\hwnclx\nf-hwnclx-hwnprocessadddevicepredevicecreate.md">HwNProcessAddDevicePreDeviceCreate</a> hardware notification in the export table.
 </p>
 </dd>
 
-### -field <a id="AddDevicePostDeviceCreateIndex"></a><a id="adddevicepostdevicecreateindex"></a><a id="ADDDEVICEPOSTDEVICECREATEINDEX"></a><b>AddDevicePostDeviceCreateIndex</b>
+### -field AddDevicePostDeviceCreateIndex
 
 <dd>
 <p>Position of the <a href="..\hwnclx\nf-hwnclx-hwnprocessadddevicepostdevicecreate.md">HwNProcessAddDevicePostDeviceCreate</a> hardware notification in the export table.
 </p>
 </dd>
 
-### -field <a id="HwNExportLastExportIndex"></a><a id="hwnexportlastexportindex"></a><a id="HWNEXPORTLASTEXPORTINDEX"></a><b>HwNExportLastExportIndex</b>
+### -field HwNExportLastExportIndex
 
 <dd>
 <p>Position of the last hardware notification in the export table.

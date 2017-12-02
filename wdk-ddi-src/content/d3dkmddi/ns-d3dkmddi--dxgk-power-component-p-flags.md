@@ -59,11 +59,11 @@ typedef struct _DXGK_POWER_COMPONENT_P_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd></dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd></dd>
 </dl>

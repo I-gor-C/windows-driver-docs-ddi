@@ -7,7 +7,7 @@ old-location: netvista\ndis_nic_switch_capabilities.htm
 old-project: netvista
 ms.assetid: bc4b56bd-583f-4b41-b5a7-90958ce65f42
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_NIC_SWITCH_CAPABILITIES, NDIS_NIC_SWITCH_CAPABILITIES, *PNDIS_NIC_SWITCH_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,7 +90,7 @@ typedef struct _NDIS_NIC_SWITCH_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -98,7 +98,7 @@ typedef struct _NDIS_NIC_SWITCH_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_NIC_SWITCH_CAPABILITIES_REVISION_3"></a><a id="ndis_nic_switch_capabilities_revision_3"></a>NDIS_NIC_SWITCH_CAPABILITIES_REVISION_3
+### -field NDIS_NIC_SWITCH_CAPABILITIES_REVISION_3
 
 <dd>
 <p>Added the RSS interface members for NDIS 6.60.<div class="alert"><b>Note</b>  Revision 3 of this structure is  supported only on Windows Server 2016  and later versions of Windows Server.</div>
@@ -107,7 +107,7 @@ typedef struct _NDIS_NIC_SWITCH_CAPABILITIES {
 <p>Set the <b>Size</b> member to NDIS_SIZEOF_NIC_SWITCH_CAPABILITIES_REVISION_3.</p>
 </dd>
 
-### -field <a id="NDIS_NIC_SWITCH_CAPABILITIES_REVISION_2"></a><a id="ndis_nic_switch_capabilities_revision_2"></a>NDIS_NIC_SWITCH_CAPABILITIES_REVISION_2
+### -field NDIS_NIC_SWITCH_CAPABILITIES_REVISION_2
 
 <dd>
 <p>Added the single root I/O virtualization (SR-IOV) interface members for NDIS 6.30.<div class="alert"><b>Note</b>  Revision 2 of this structure is  supported only on Windows Server 2012 and later versions of Windows Server.</div>
@@ -116,7 +116,7 @@ typedef struct _NDIS_NIC_SWITCH_CAPABILITIES {
 <p>Set the <b>Size</b> member to NDIS_SIZEOF_NIC_SWITCH_CAPABILITIES_REVISION_2.</p>
 </dd>
 
-### -field <a id="NDIS_NIC_SWITCH_CAPABILITIES_REVISION_1"></a><a id="ndis_nic_switch_capabilities_revision_1"></a>NDIS_NIC_SWITCH_CAPABILITIES_REVISION_1
+### -field NDIS_NIC_SWITCH_CAPABILITIES_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.20.</p>
@@ -125,19 +125,19 @@ typedef struct _NDIS_NIC_SWITCH_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>NdisReserved1</b>
+### -field NdisReserved1
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>NumTotalMacAddresses</b>
+### -field NumTotalMacAddresses
 
 <dd>
 <p>A ULONG value that contains the total number of media access control (MAC) addresses that the network adapter supports.</p>
@@ -145,7 +145,7 @@ typedef struct _NDIS_NIC_SWITCH_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <b>NumMacAddressesPerPort</b>
+### -field NumMacAddressesPerPort
 
 <dd>
 <p>A ULONG value that contains the number of MAC addresses that are supported for each port.</p>
@@ -153,7 +153,7 @@ typedef struct _NDIS_NIC_SWITCH_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <b>NumVlansPerPort</b>
+### -field NumVlansPerPort
 
 <dd>
 <p>A ULONG value that contains the number of VLANs that are supported for each port.</p>
@@ -161,26 +161,26 @@ typedef struct _NDIS_NIC_SWITCH_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <b>NdisReserved2</b>
+### -field NdisReserved2
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>NdisReserved3</b>
+### -field NdisReserved3
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>NicSwitchCapabilities</b>
+### -field NicSwitchCapabilities
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of the following flags that specify the capabilities of the NIC switch: </p>
 <p></p>
 <dl>
 
-### -field <a id="NDIS_NIC_SWITCH_CAPS_VLAN_SUPPORTED"></a><a id="ndis_nic_switch_caps_vlan_supported"></a>NDIS_NIC_SWITCH_CAPS_VLAN_SUPPORTED
+### -field NDIS_NIC_SWITCH_CAPS_VLAN_SUPPORTED
 
 <dd>
 <p>This flag specifies that the NIC switch supports hardware packet filtering based on the virtual local area network (VLAN) identifier (ID). </p>
@@ -188,13 +188,13 @@ typedef struct _NDIS_NIC_SWITCH_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_NIC_SWITCH_CAPS_PER_VPORT_INTERRUPT_MODERATION_SUPPORTED"></a><a id="ndis_nic_switch_caps_per_vport_interrupt_moderation_supported"></a>NDIS_NIC_SWITCH_CAPS_PER_VPORT_INTERRUPT_MODERATION_SUPPORTED
+### -field NDIS_NIC_SWITCH_CAPS_PER_VPORT_INTERRUPT_MODERATION_SUPPORTED
 
 <dd>
 <p>This flag specifies that the NIC switch can support interrupt moderation configuration on individual VPorts. </p>
 </dd>
 
-### -field <a id="NDIS_NIC_SWITCH_CAPS_ASYMMETRIC_QUEUE_PAIRS_FOR_NONDEFAULT_VPORT_SUPPORTED"></a><a id="ndis_nic_switch_caps_asymmetric_queue_pairs_for_nondefault_vport_supported"></a>NDIS_NIC_SWITCH_CAPS_ASYMMETRIC_QUEUE_PAIRS_FOR_NONDEFAULT_VPORT_SUPPORTED
+### -field NDIS_NIC_SWITCH_CAPS_ASYMMETRIC_QUEUE_PAIRS_FOR_NONDEFAULT_VPORT_SUPPORTED
 
 <dd>
 <p>This flag specifies that the NIC switch can configure a different number of queue pairs for each nondefault VPort. This means that each nondefault VPort can be configured asymmetrically to have a different number of queue pairs. </p>
@@ -204,11 +204,11 @@ typedef struct _NDIS_NIC_SWITCH_CAPABILITIES {
 One or more queue pairs are configured on a nondefault VPort through an OID method request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>.
 </div>
 <div> </div>
-<p>For more information, see <a href="NULL">Symmetric and Asymmetric Assignment of Queue Pairs</a>.</p>
+<p>For more information, see <a href="netvista.symmetric_and_asymmetric_assignment_of_queue_pairs">Symmetric and Asymmetric Assignment of Queue Pairs</a>.</p>
 <p></p>
 </dd>
 
-### -field <a id="NDIS_NIC_SWITCH_CAPS_VF_RSS_SUPPORTED"></a><a id="ndis_nic_switch_caps_vf_rss_supported"></a>NDIS_NIC_SWITCH_CAPS_VF_RSS_SUPPORTED
+### -field NDIS_NIC_SWITCH_CAPS_VF_RSS_SUPPORTED
 
 <dd>
 <p>This flag specifies that queue pairs from nondefault VPorts that are attached to a PCI Express (PCIe) Virtual Function (VF) can be used for receive side scaling (RSS). The VF miniport driver runs in the guest operating system of a Hyper-V child partition. </p>
@@ -217,24 +217,24 @@ One or more queue pairs are configured on a nondefault VPort through an OID meth
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_NIC_SWITCH_CAPS_SINGLE_VPORT_POOL"></a><a id="ndis_nic_switch_caps_single_vport_pool"></a>NDIS_NIC_SWITCH_CAPS_SINGLE_VPORT_POOL
+### -field NDIS_NIC_SWITCH_CAPS_SINGLE_VPORT_POOL
 
 <dd>
 <p>This flag specifies that the nondefault VPorts can be created in a non-reserved manner from the VPort pool on the network adapter. This allows available nondefault VPorts to be created and assigned on an as-needed basis to the PF and allocated VFs. If the network adapter supports the virtual machine queue (VMQ) interface, nondefault VPorts that are assigned to the PF can also be used for VM receive queues.</p>
 <div class="alert"><b>Note</b>  The default VPort is always reserved for assignment to the PF.</div>
 <div> </div>
 <p>If this flag is set, available nondefault VPorts are created and assigned to the PF and allocated VFs. However, this mechanism does not reserve nondefault VPorts for VF creation and assignment. As a result, situations may occur where a VF may not be assigned a VPort if the pool has been exhausted of available VPorts.</p>
-<div class="alert"><b>Note</b>  If a VF cannot be assigned a VPort, packet traffic over the VF occurs over the SR-IOV synthetic data path. For more information about this data path, see <a href="NULL">SR-IOV Data Paths</a>.</div>
+<div class="alert"><b>Note</b>  If a VF cannot be assigned a VPort, packet traffic over the VF occurs over the SR-IOV synthetic data path. For more information about this data path, see <a href="netvista.sr-iov_data_paths">SR-IOV Data Paths</a>.</div>
 <div> </div>
 <p>If this flag is not set, the creation and assignment of nondefault VPorts is reserved for VF assignment.  Additional nondefault VPorts  can be created and assigned to the PF. </p>
-<p>For more information about VMQ, see <a href="NULL">Virtual Machine Queue (VMQ)</a>.</p>
-<p>For more information about VPorts, see <a href="NULL">Managing Virtual Ports</a>.
+<p>For more information about VMQ, see <a href="netvista.virtual_machine_queue__vmq_">Virtual Machine Queue (VMQ)</a>.</p>
+<p>For more information about VPorts, see <a href="netvista.managing_virtual_ports">Managing Virtual Ports</a>.
 </p>
 </dd>
 </dl>
 </dd>
 
-### -field <b>MaxNumSwitches</b>
+### -field MaxNumSwitches
 
 <dd>
 <p>A ULONG value that specifies the maximum number of switches that can be created on the network adapter's PCI Express (PCIe) Physical Function (PF).</p>
@@ -243,7 +243,7 @@ One or more queue pairs are configured on a nondefault VPort through an OID meth
 <div> </div>
 </dd>
 
-### -field <b>MaxNumVPorts</b>
+### -field MaxNumVPorts
 
 <dd>
 <p>A ULONG value that specifies the maximum number of VPorts that can be created on a network adapter. This includes the default VPort that is always attached to the PF. </p>
@@ -251,22 +251,22 @@ One or more queue pairs are configured on a nondefault VPort through an OID meth
 <div> </div>
 </dd>
 
-### -field <b>NdisReserved4</b>
+### -field NdisReserved4
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>MaxNumVFs</b>
+### -field MaxNumVFs
 
 <dd>
 <p>A ULONG value that specifies the maximum number of VFs that can be created on the NIC switch. </p>
 <div class="alert"><b>Note</b>  Depending on the available hardware resources on the network adapter, the miniport driver can set the <b>MaxNumVFs</b> member to a value that is less than its <b>*NumVFs</b>
-keyword. For more information about this keyword, see <a href="NULL">Standardized INF Keywords for SR-IOV</a>.</div>
+keyword. For more information about this keyword, see <a href="netvista.standardized_inf_keywords_for_sr-iov">Standardized INF Keywords for SR-IOV</a>.</div>
 <div> </div>
 </dd>
 
-### -field <b>MaxNumQueuePairs</b>
+### -field MaxNumQueuePairs
 
 <dd>
 <p>A ULONG value that specifies the maximum number of queue pairs that can be assigned to all VPorts. This includes the default VPort that is attached to the PF.</p>
@@ -274,62 +274,62 @@ keyword. For more information about this keyword, see <a href="NULL">Standardize
 <div> </div>
 </dd>
 
-### -field <b>NdisReserved5</b>
+### -field NdisReserved5
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>NdisReserved6</b>
+### -field NdisReserved6
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>NdisReserved7</b>
+### -field NdisReserved7
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>MaxNumQueuePairsPerNonDefaultVPort</b>
+### -field MaxNumQueuePairsPerNonDefaultVPort
 
 <dd>
 <p>A ULONG value that specifies the maximum number of queue pairs that can be assigned to a nondefault VPort. </p>
-<p>This value is specified in powers of 2, and provides for asymmetric configuration and assignment of queue pairs to VPorts. For more information, see <a href="NULL">Symmetric and Asymmetric Assignment of Queue Pairs</a>.</p>
+<p>This value is specified in powers of 2, and provides for asymmetric configuration and assignment of queue pairs to VPorts. For more information, see <a href="netvista.symmetric_and_asymmetric_assignment_of_queue_pairs">Symmetric and Asymmetric Assignment of Queue Pairs</a>.</p>
 </dd>
 
-### -field <b>NdisReserved8</b>
+### -field NdisReserved8
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>NdisReserved9</b>
+### -field NdisReserved9
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>NdisReserved10</b>
+### -field NdisReserved10
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>NdisReserved11</b>
+### -field NdisReserved11
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>NdisReserved12</b>
+### -field NdisReserved12
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>MaxNumMacAddresses</b>
+### -field MaxNumMacAddresses
 
 <dd>
 <p>A ULONG value that specifies the maximum number of unicast MAC address filters that are available on the NIC switch.  </p>
@@ -337,59 +337,59 @@ keyword. For more information about this keyword, see <a href="NULL">Standardize
 <div> </div>
 </dd>
 
-### -field <b>NdisReserved13</b>
+### -field NdisReserved13
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>NdisReserved14</b>
+### -field NdisReserved14
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>NdisReserved15</b>
+### -field NdisReserved15
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>NdisReserved16</b>
+### -field NdisReserved16
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>NdisReserved17</b>
+### -field NdisReserved17
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>MaxNumRssCapableNonDefaultPFVPorts</b>
+### -field MaxNumRssCapableNonDefaultPFVPorts
 
 <dd>
 <p>A ULONG value that specifies the maximum number of RSS-capable non-default PFVPorts. </p>
 </dd>
 
-### -field <b>NumberOfIndirectionTableEntriesForDefaultVPort</b>
+### -field NumberOfIndirectionTableEntriesForDefaultVPort
 
 <dd>
 <p>A ULONG value that specifies the number of indirection table entries for the default VPort.</p>
 </dd>
 
-### -field <b>NumberOfIndirectionTableEntriesPerNonDefaultPFVPort</b>
+### -field NumberOfIndirectionTableEntriesPerNonDefaultPFVPort
 
 <dd>
 <p>A ULONG value that specifies the number of indirection table entries for each non-default PFVPort.</p>
 </dd>
 
-### -field <b>MaxNumQueuePairsForDefaultVPort</b>
+### -field MaxNumQueuePairsForDefaultVPort
 
 <dd>
 <p>A ULONG value that specifies the maximum number of queue pairs that can be assigned to the default VPort. </p>
-<p>This value is specified in powers of 2, and provides for asymmetric configuration and assignment of queue pairs to VPorts. For more information, see <a href="NULL">Symmetric and Asymmetric Assignment of Queue Pairs</a>.</p>
+<p>This value is specified in powers of 2, and provides for asymmetric configuration and assignment of queue pairs to VPorts. For more information, see <a href="netvista.symmetric_and_asymmetric_assignment_of_queue_pairs">Symmetric and Asymmetric Assignment of Queue Pairs</a>.</p>
 </dd>
 </dl>
 
@@ -463,4 +463,4 @@ keyword. For more information about this keyword, see <a href="NULL">Standardize
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_CAPABILITIES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_CAPABILITIES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

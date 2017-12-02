@@ -58,19 +58,19 @@ typedef struct _D3DHAL_DP2RENDERSTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>RenderState</b>
+### -field RenderState
 
 <dd>
 <p>Specifies a D3DRENDERSTATETYPE enumerated type that indicates the render state to be updated. Render states that are requested at the application level are described in the DirectX SDK documentation. Render states that are exclusively used by drivers are described in <a href="..\d3d9types\ne-d3d9types--d3drenderstatetype.md">D3DRENDERSTATETYPE</a>.</p>
 </dd>
 
-### -field <b>dvState</b>
+### -field dvState
 
 <dd>
 <p>Specifies the value that the driver should update the render state identified by the <b>RenderState</b> member with. This member is valid when <b>RenderState</b> requires a D3DVALUE. </p>
 </dd>
 
-### -field <b>dwState</b>
+### -field dwState
 
 <dd>
 <p>Specifies the value that the driver should update the render state identified by <b>RenderState</b> to. This member is valid when <b>RenderState</b> requires a DWORD.</p>

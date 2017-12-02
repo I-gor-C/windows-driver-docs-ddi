@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_port_feature_status_type.htm
 old-project: netvista
 ms.assetid: bdf19090-5688-4496-8f9a-3a1c422ede60
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT, *PGET_CONFIGURATION_IOCTL_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,13 +63,13 @@ typedef enum _NDIS_SWITCH_PORT_FEATURE_STATUS_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="NdisSwitchPortFeatureStatusTypeUndefined"></a><a id="ndisswitchportfeaturestatustypeundefined"></a><a id="NDISSWITCHPORTFEATURESTATUSTYPEUNDEFINED"></a><b>NdisSwitchPortFeatureStatusTypeUndefined</b>
+### -field NdisSwitchPortFeatureStatusTypeUndefined
 
 <dd>
 <p>The port feature status information is not defined.</p>
 </dd>
 
-### -field <a id="NdisSwitchPortFeatureStatusTypeCustom"></a><a id="ndisswitchportfeaturestatustypecustom"></a><a id="NDISSWITCHPORTFEATURESTATUSTYPECUSTOM"></a><b>NdisSwitchPortFeatureStatusTypeCustom</b>
+### -field NdisSwitchPortFeatureStatusTypeCustom
 
 <dd>
 <p>The feature status information is for a custom extensible switch port feature that is provided by an ISV.
@@ -77,7 +77,7 @@ typedef enum _NDIS_SWITCH_PORT_FEATURE_STATUS_TYPE {
 </p>
 </dd>
 
-### -field <a id="NdisSwitchPortFeatureStatusTypeMaximum"></a><a id="ndisswitchportfeaturestatustypemaximum"></a><a id="NDISSWITCHPORTFEATURESTATUSTYPEMAXIMUM"></a><b>NdisSwitchPortFeatureStatusTypeMaximum</b>
+### -field NdisSwitchPortFeatureStatusTypeMaximum
 
 <dd>
 <p>The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.
@@ -89,7 +89,7 @@ typedef enum _NDIS_SWITCH_PORT_FEATURE_STATUS_TYPE {
 ## -remarks
 <p>The <b>FeatureStatusType</b> member of the  <a href="..\ntddndis\ns-ntddndis--ndis-switch-port-feature-status-parameters.md">NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS</a> structure is an <b>NDIS_SWITCH_PORT_FEATURE_STATUS_TYPE</b> enumeration data type.</p>
 
-<p>For more information about extensible switch port policies, see <a href="NULL">Hyper-V Extensible Switch Policies</a>.
+<p>For more information about extensible switch port policies, see <a href="netvista.hyper_v_extensible_switch_policies">Hyper-V Extensible Switch Policies</a>.
 
 </p>
 
@@ -124,4 +124,4 @@ typedef enum _NDIS_SWITCH_PORT_FEATURE_STATUS_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_FEATURE_STATUS_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_FEATURE_STATUS_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -57,7 +57,7 @@ typedef struct _UCMTCPCI_DRIVER_GLOBALS {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>

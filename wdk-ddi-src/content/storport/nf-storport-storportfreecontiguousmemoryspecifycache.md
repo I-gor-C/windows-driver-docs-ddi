@@ -58,25 +58,25 @@ ULONG StorPortFreeContiguousMemorySpecifyCache(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>BaseAddress</i> [in]
+### -param BaseAddress [in]
 
 <dd>
 <p>The base virtual address to free.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>The number of bytes that are allocated to the request. This must be the same number that was supplied as a parameter when the <a href="..\storport\nf-storport-storportallocatecontiguousmemoryspecifycachenode.md">StorPortAllocateContiguousMemorySpecifyCacheNode</a> routine was previously called.</p>
 </dd>
 
-### -param <i>CacheType</i> [in]
+### -param CacheType [in]
 
 <dd>
 <p>The cache type that is used in the call to the <a href="..\storport\nf-storport-storportallocatecontiguousmemoryspecifycachenode.md">StorPortAllocateContiguousMemorySpecifyCacheNode</a> routine.</p>

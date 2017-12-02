@@ -7,7 +7,7 @@ old-location: debugger\createsymbolgroup.htm
 old-project: debugger
 ms.assetid: f55aa290-5e57-48d8-9454-370c494bbd65
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSymbols3, CreateSymbolGroup, IDebugSymbols3::CreateSymbolGroup
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT CreateSymbolGroup(
 ## -parameters
 <dl>
 
-### -param <i>Group</i> [out]
+### -param Group [out]
 
 <dd>
 <p>Receives an interface pointer for the new <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a> object.</p>
@@ -68,7 +68,7 @@ HRESULT CreateSymbolGroup(
 
 <p> </p>
 
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p>
 
 ## -remarks
 <p>The newly created symbol group is empty; it does not contain any <a href="debugger.symbols#symbols#symbols">symbols</a>.  Symbols may be added to the symbol group using <a href="debugger.addsymbol">IDebugSymbolGroup::AddSymbol</a>.</p>
@@ -121,4 +121,4 @@ HRESULT CreateSymbolGroup(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols::CreateSymbolGroup method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols::CreateSymbolGroup method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

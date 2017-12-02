@@ -54,7 +54,7 @@ NTSTATUS D3DKMTOpenAdapterFromGdiDisplayName(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p> A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openadapterfromgdidisplayname.md">D3DKMT_OPENADAPTERFROMGDIDISPLAYNAME</a> structure that describes the parameters that are required to perform the mapping.</p>

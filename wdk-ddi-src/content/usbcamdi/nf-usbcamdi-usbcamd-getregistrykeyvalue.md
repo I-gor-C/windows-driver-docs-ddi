@@ -59,31 +59,31 @@ NTSTATUS USBCAMD_GetRegistryKeyValue(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Handle to a valid and open device registry key.</p>
 </dd>
 
-### -param <i>KeyNameString</i> [in]
+### -param KeyNameString [in]
 
 <dd>
 <p>Pointer to the string buffer describing the key type.</p>
 </dd>
 
-### -param <i>KeyNameStringLength</i> [in]
+### -param KeyNameStringLength [in]
 
 <dd>
 <p>Specifies the length, in characters, of <i>KeyNameString</i>.</p>
 </dd>
 
-### -param <i>Data</i> [in]
+### -param Data [in]
 
 <dd>
 <p>Pointer to a caller-specified value or structure.</p>
 </dd>
 
-### -param <i>DataLength</i> [in]
+### -param DataLength [in]
 
 <dd>
 <p>Specifies the length, in bytes, of the value or structure at <i>Data.</i></p>

@@ -7,7 +7,7 @@ old-location: netvista\ril3gpp2tone.htm
 old-project: netvista
 ms.assetid: bf19de84-1c2d-4e9b-8061-888634dc2147
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,51 +65,51 @@ typedef enum _RIL3GPP2TONE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_3GPP2TONE_DIAL"></a><a id="ril_3gpp2tone_dial"></a><b>RIL_3GPP2TONE_DIAL</b>
+### -field RIL_3GPP2TONE_DIAL
 
 <dd></dd>
 
-### -field <a id="RIL_3GPP2TONE_RINGBACK"></a><a id="ril_3gpp2tone_ringback"></a><b>RIL_3GPP2TONE_RINGBACK</b>
+### -field RIL_3GPP2TONE_RINGBACK
 
 <dd></dd>
 
-### -field <a id="RIL_3GPP2TONE_INTERCEPT"></a><a id="ril_3gpp2tone_intercept"></a><b>RIL_3GPP2TONE_INTERCEPT</b>
+### -field RIL_3GPP2TONE_INTERCEPT
 
 <dd></dd>
 
-### -field <a id="RIL_3GPP2TONE_ABRVINTERCEPT"></a><a id="ril_3gpp2tone_abrvintercept"></a><b>RIL_3GPP2TONE_ABRVINTERCEPT</b>
+### -field RIL_3GPP2TONE_ABRVINTERCEPT
 
 <dd></dd>
 
-### -field <a id="RIL_3GPP2TONE_REORDER"></a><a id="ril_3gpp2tone_reorder"></a><b>RIL_3GPP2TONE_REORDER</b>
+### -field RIL_3GPP2TONE_REORDER
 
 <dd></dd>
 
-### -field <a id="RIL_3GPP2TONE_ABRVREORDER"></a><a id="ril_3gpp2tone_abrvreorder"></a><b>RIL_3GPP2TONE_ABRVREORDER</b>
+### -field RIL_3GPP2TONE_ABRVREORDER
 
 <dd></dd>
 
-### -field <a id="RIL_3GPP2TONE_BUSY"></a><a id="ril_3gpp2tone_busy"></a><b>RIL_3GPP2TONE_BUSY</b>
+### -field RIL_3GPP2TONE_BUSY
 
 <dd></dd>
 
-### -field <a id="RIL_3GPP2TONE_CONFIRM"></a><a id="ril_3gpp2tone_confirm"></a><b>RIL_3GPP2TONE_CONFIRM</b>
+### -field RIL_3GPP2TONE_CONFIRM
 
 <dd></dd>
 
-### -field <a id="RIL_3GPP2TONE_ANSWER"></a><a id="ril_3gpp2tone_answer"></a><b>RIL_3GPP2TONE_ANSWER</b>
+### -field RIL_3GPP2TONE_ANSWER
 
 <dd></dd>
 
-### -field <a id="RIL_3GPP2TONE_CALLWAITING"></a><a id="ril_3gpp2tone_callwaiting"></a><b>RIL_3GPP2TONE_CALLWAITING</b>
+### -field RIL_3GPP2TONE_CALLWAITING
 
 <dd></dd>
 
-### -field <a id="RIL_3GPP2TONE_PIP"></a><a id="ril_3gpp2tone_pip"></a><b>RIL_3GPP2TONE_PIP</b>
+### -field RIL_3GPP2TONE_PIP
 
 <dd></dd>
 
-### -field <a id="RIL_3GPP2TONE_MAX"></a><a id="ril_3gpp2tone_max"></a><b>RIL_3GPP2TONE_MAX</b>
+### -field RIL_3GPP2TONE_MAX
 
 <dd></dd>
 </dl>

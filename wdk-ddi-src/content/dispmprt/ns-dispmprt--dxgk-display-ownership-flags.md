@@ -59,13 +59,13 @@ typedef struct _DXGK_DISPLAY_OWNERSHIP_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>FrameBufferState</b>
+### -field FrameBufferState
 
 <dd>
 <p>Value indicating the state of the frame buffer.  See definition of DXGK_FRAMEBUFFER_STATE enum for details.  </p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The value used to operate over the combined bitfields.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilcbcdmaconfiginfo_2.htm
 old-project: netvista
 ms.assetid: a12254b0-fb4d-49ff-a046-cae99c12f535
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCBCDMACONFIGINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILCBCDMACONFIGINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>fAccept</b>
+### -field fAccept
 
 <dd></dd>
 
-### -field <b>dwBroadcastMsgLang</b>
+### -field dwBroadcastMsgLang
 
 <dd></dd>
 
-### -field <b>dwBroadcastServiceCategory</b>
+### -field dwBroadcastServiceCategory
 
 <dd></dd>
 </dl>

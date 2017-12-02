@@ -58,13 +58,13 @@ _Check_return_ HRESULT APIENTRY* pfnPresentMultiPlaneOverlay(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pPresent</i> [in]
+### -param pPresent [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-presentmultiplaneoverlay.md">D3DDDIARG_PRESENTMULTIPLANEOVERLAY</a> structure that describes how to display to the destination surface. </p>

@@ -60,37 +60,37 @@ typedef enum _KEY_VALUE_INFORMATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="KeyValueBasicInformation"></a><a id="keyvaluebasicinformation"></a><a id="KEYVALUEBASICINFORMATION"></a><b>KeyValueBasicInformation</b>
+### -field KeyValueBasicInformation
 
 <dd>
 <p>The information is stored as a <a href="..\wdm\ns-wdm--key-value-basic-information.md">KEY_VALUE_BASIC_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="KeyValueFullInformation"></a><a id="keyvaluefullinformation"></a><a id="KEYVALUEFULLINFORMATION"></a><b>KeyValueFullInformation</b>
+### -field KeyValueFullInformation
 
 <dd>
 <p>The information is stored as a <a href="..\wdm\ns-wdm--key-value-full-information.md">KEY_VALUE_FULL_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="KeyValuePartialInformation"></a><a id="keyvaluepartialinformation"></a><a id="KEYVALUEPARTIALINFORMATION"></a><b>KeyValuePartialInformation</b>
+### -field KeyValuePartialInformation
 
 <dd>
 <p>The information is stored as a <a href="..\wdm\ns-wdm--key-value-partial-information.md">KEY_VALUE_PARTIAL_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="KeyValueFullInformationAlign64"></a><a id="keyvaluefullinformationalign64"></a><a id="KEYVALUEFULLINFORMATIONALIGN64"></a><b>KeyValueFullInformationAlign64</b>
+### -field KeyValueFullInformationAlign64
 
 <dd>
 <p>The information is stored as a <b>KEY_VALUE_FULL_INFORMATION</b> structure that is aligned to a 64-bit (that is, 8-byte) boundary in memory. If the caller-supplied buffer does not start on a 64-bit boundary, the information is stored starting at the first 64-bit boundary in the buffer.</p>
 </dd>
 
-### -field <a id="KeyValuePartialInformationAlign64"></a><a id="keyvaluepartialinformationalign64"></a><a id="KEYVALUEPARTIALINFORMATIONALIGN64"></a><b>KeyValuePartialInformationAlign64</b>
+### -field KeyValuePartialInformationAlign64
 
 <dd>
 <p>The information is stored as a <b>KEY_VALUE_PARTIAL_INFORMATION</b> structure that is aligned to a 64-bit (that is, 8-byte) boundary in memory. If the caller-supplied buffer does not start on a 64-bit boundary, the information is stored starting at the first 64-bit boundary in the buffer.</p>
 </dd>
 
-### -field <a id="MaxKeyValueInfoClass"></a><a id="maxkeyvalueinfoclass"></a><a id="MAXKEYVALUEINFOCLASS"></a><b>MaxKeyValueInfoClass</b>
+### -field MaxKeyValueInfoClass
 
 <dd>
 <p>The maximum value in this enumeration type.</p>

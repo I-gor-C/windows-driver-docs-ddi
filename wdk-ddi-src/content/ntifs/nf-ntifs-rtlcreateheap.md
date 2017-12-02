@@ -7,7 +7,7 @@ old-location: ifsk\rtlcreateheap.htm
 old-project: ifsk
 ms.assetid: 77ba5ba3-11d3-4c28-86e6-91f3189b5403
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlCreateHeap
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ PVOID RtlCreateHeap(
 ## -parameters
 <dl>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Flags specifying optional attributes of the heap. These options affect subsequent access to the new heap through calls to the heap functions (<a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a> and <a href="..\ntifs\nf-ntifs-rtlfreeheap.md">RtlFreeHeap</a>). </p>
@@ -68,19 +68,19 @@ PVOID RtlCreateHeap(
 <p></p>
 <dl>
 
-### -param <a id="HEAP_GENERATE_EXCEPTIONS"></a><a id="heap_generate_exceptions"></a>HEAP_GENERATE_EXCEPTIONS
+### -param HEAP_GENERATE_EXCEPTIONS
 
 <dd>
 <p>Specifies that the system will indicate a heap failure by raising an exception, such as STATUS_NO_MEMORY, instead of returning <b>NULL</b>. </p>
 </dd>
 
-### -param <a id="HEAP_GROWABLE"></a><a id="heap_growable"></a>HEAP_GROWABLE
+### -param HEAP_GROWABLE
 
 <dd>
 <p>Specifies that the heap is growable. Must be specified if <i>HeapBase</i> is <b>NULL</b>. </p>
 </dd>
 
-### -param <a id="HEAP_NO_SERIALIZE"></a><a id="heap_no_serialize"></a>HEAP_NO_SERIALIZE
+### -param HEAP_NO_SERIALIZE
 
 <dd>
 <p>Specifies that mutual exclusion will not be used when the heap functions allocate and free memory from this heap. The default, when HEAP_NO_SERIALIZE is not specified, is to serialize access to the heap. Serialization of heap access allows two or more threads to simultaneously allocate and free memory from the same heap. </p>
@@ -88,7 +88,7 @@ PVOID RtlCreateHeap(
 </dl>
 </dd>
 
-### -param <i>HeapBase</i> [in, optional]
+### -param HeapBase [in, optional]
 
 <dd>
 <p>Specifies one of two actions:</p>
@@ -96,7 +96,7 @@ PVOID RtlCreateHeap(
 <p>If <i>HeapBase</i> is <b>NULL</b>, <b>RtlCreateHeap</b> allocates system memory for the heap from the process's virtual address space. </p>
 </dd>
 
-### -param <i>ReserveSize</i> [in, optional]
+### -param ReserveSize [in, optional]
 
 <dd>
 <p>If <i>ReserveSize</i> is a nonzero value, it specifies the initial amount of memory, in bytes, to reserve for the heap. <b>RtlCreateHeap</b> rounds <i>ReserveSize</i> up to the next page boundary, and then reserves a block of that size for the heap. </p>
@@ -142,20 +142,20 @@ PVOID RtlCreateHeap(
 <p> </p>
 </dd>
 
-### -param <i>CommitSize</i> [in, optional]
+### -param CommitSize [in, optional]
 
 <dd>
 <p>If <i>CommitSize</i> is a nonzero value, it specifies the initial amount of memory, in bytes, to commit for the heap. <b>RtlCreateHeap</b> rounds <i>CommitSize</i> up to the next page boundary, and then commits a block of that size in the process's virtual address space for the heap. </p>
 <p>This parameter is optional and can be zero. </p>
 </dd>
 
-### -param <i>Lock</i> [in, optional]
+### -param Lock [in, optional]
 
 <dd>
 <p>Pointer to an opaque ERESOURCE structure to be used as a resource lock. This parameter is optional and can be <b>NULL</b>. When provided by the caller, the structure must be allocated from nonpaged pool and initialized by calling <a href="..\wdm\nf-wdm-exinitializeresourcelite.md">ExInitializeResourceLite</a> or <a href="..\wdm\nf-wdm-exreinitializeresourcelite.md">ExReinitializeResourceLite</a>. If the HEAP_NO_SERIALIZE flag is set, this parameter must be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Parameters</i> [in, optional]
+### -param Parameters [in, optional]
 
 <dd>
 <p>Pointer to a RTL_HEAP_PARAMETERS structure that contains parameters to be applied when creating the heap. This parameter is optional and can be <b>NULL</b>. </p>
@@ -416,4 +416,4 @@ PVOID RtlCreateHeap(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlCreateHeap routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlCreateHeap routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

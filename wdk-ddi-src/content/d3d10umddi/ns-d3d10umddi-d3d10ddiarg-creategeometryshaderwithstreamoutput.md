@@ -57,25 +57,25 @@ typedef struct D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>pShaderCode</b>
+### -field pShaderCode
 
 <dd>
 <p>[in] An array of CONST UINT tokens that make up the geometry shader code.</p>
 </dd>
 
-### -field <b>pOutputStreamDecl</b>
+### -field pOutputStreamDecl
 
 <dd>
 <p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-stream-output-declaration-entry.md">D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY</a> structures that describes the stream output for the geometry shader. </p>
 </dd>
 
-### -field <b>NumEntries</b>
+### -field NumEntries
 
 <dd>
 <p>[in] The number of elements in that array that the <b>pOutputStreamDecl</b> member specifies. </p>
 </dd>
 
-### -field <b>StreamOutputStrideInBytes</b>
+### -field StreamOutputStrideInBytes
 
 <dd>
 <p>[in] The size, in bytes, from one vertex to the next vertex.</p>

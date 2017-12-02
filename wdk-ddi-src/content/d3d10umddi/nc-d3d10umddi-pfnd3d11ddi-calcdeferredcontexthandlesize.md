@@ -59,19 +59,19 @@ SIZE_T APIENTRY CalcDeferredContextHandleSize(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>HandleType</i> [in]
+### -param HandleType [in]
 
 <dd>
 <p> A <a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi-handletype.md">D3D11DDI_HANDLETYPE</a>-typed value that indicates the type of deferred context handle to determine the size of the memory region for. </p>
 </dd>
 
-### -param <i>pICObject</i> [in]
+### -param pICObject [in]
 
 <dd>
 <p> A pointer to the object for the immediate context.</p>

@@ -7,7 +7,7 @@ old-location: sensors\isensorclassextension_initialize.htm
 old-project: sensors
 ms.assetid: 9b5b9cdf-06a9-410f-87c3-b87318c25a11
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorClassExtension, Initialize, ISensorClassExtension::Initialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ HRESULT Initialize(
 ## -parameters
 <dl>
 
-### -param <i>pWdfDeviceUnknown</i> 
+### -param pWdfDeviceUnknown 
 
 <dd>
 <p>IUnknown pointer for the driver class that implements the IWDFDevice interface.</p>
 </dd>
 
-### -param <i>pSensorDriverUnknown</i> 
+### -param pSensorDriverUnknown 
 
 <dd>
 <p>IUnknown pointer for the object that implements the ISensorDriver callback interface.</p>

@@ -7,7 +7,7 @@ old-location: netvista\wwan_auth_sim_response.htm
 old-project: netvista
 ms.assetid: C259CA95-D119-47EB-A32D-9C9E284B6CD4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_AUTH_SIM_RESPONSE, WWAN_AUTH_SIM_RESPONSE, *PWWAN_AUTH_SIM_RESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,43 +61,43 @@ typedef struct _WWAN_AUTH_SIM_RESPONSE {
 ## -struct-fields
 <dl>
 
-### -field <b>Sres1[WWAN_AUTH_SRES_LEN]</b>
+### -field Sres1[WWAN_AUTH_SRES_LEN]
 
 <dd>
 <p>Response 1 of 32 bit. This member represents a multi-byte value in little-endian format.</p>
 </dd>
 
-### -field <b>Kc1[WWAN_AUTH_KC_LEN]</b>
+### -field Kc1[WWAN_AUTH_KC_LEN]
 
 <dd>
 <p>Encryption key 1 of 64 bit. This member represents a multi-byte value in little-endian format.</p>
 </dd>
 
-### -field <b>Sres2[WWAN_AUTH_SRES_LEN]</b>
+### -field Sres2[WWAN_AUTH_SRES_LEN]
 
 <dd>
 <p>Response 2 of 32 bit. This member represents a multi-byte value in little-endian format.</p>
 </dd>
 
-### -field <b>Kc2[WWAN_AUTH_KC_LEN]</b>
+### -field Kc2[WWAN_AUTH_KC_LEN]
 
 <dd>
 <p>Encryption key 2 of 64 bit. This member represents a multi-byte value in little-endian format.</p>
 </dd>
 
-### -field <b>Sres3[WWAN_AUTH_SRES_LEN]</b>
+### -field Sres3[WWAN_AUTH_SRES_LEN]
 
 <dd>
 <p>Response 3 of 32 bit. This member represents a multi-byte value in little-endian format.</p>
 </dd>
 
-### -field <b>Kc3[WWAN_AUTH_KC_LEN]</b>
+### -field Kc3[WWAN_AUTH_KC_LEN]
 
 <dd>
 <p>Encryption key 3 of 64 bit. This member represents a multi-byte value in little-endian format.</p>
 </dd>
 
-### -field <b>n</b>
+### -field n
 
 <dd>
 <p>The number of responses.</p>
@@ -139,4 +139,4 @@ typedef struct _WWAN_AUTH_SIM_RESPONSE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_AUTH_SIM_RESPONSE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_AUTH_SIM_RESPONSE structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

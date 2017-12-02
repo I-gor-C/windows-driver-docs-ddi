@@ -7,7 +7,7 @@ old-location: wdf\wdf_retrieve_child_flags.htm
 old-project: wdf
 ms.assetid: 43294943-cc73-45d4-8e0b-e7d29420bb7e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO, *PWDBGEXTS_THREAD_OS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ typedef enum _WDF_RETRIEVE_CHILD_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfRetrieveUnspecified"></a><a id="wdfretrieveunspecified"></a><a id="WDFRETRIEVEUNSPECIFIED"></a><b>WdfRetrieveUnspecified</b>
+### -field WdfRetrieveUnspecified
 
 <dd>
 <p>Reserved for internal use only.</p>
 </dd>
 
-### -field <a id="WdfRetrievePresentChildren"></a><a id="wdfretrievepresentchildren"></a><a id="WDFRETRIEVEPRESENTCHILDREN"></a><b>WdfRetrievePresentChildren</b>
+### -field WdfRetrievePresentChildren
 
 <dd>
 <p>Calls to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> will retrieve child devices for which a framework device object exists.</p>
 </dd>
 
-### -field <a id="WdfRetrieveMissingChildren"></a><a id="wdfretrievemissingchildren"></a><a id="WDFRETRIEVEMISSINGCHILDREN"></a><b>WdfRetrieveMissingChildren</b>
+### -field WdfRetrieveMissingChildren
 
 <dd>
 <p>Calls to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> will retrieve child devices that are marked as missing. </p>
 </dd>
 
-### -field <a id="WdfRetrievePendingChildren"></a><a id="wdfretrievependingchildren"></a><a id="WDFRETRIEVEPENDINGCHILDREN"></a><b>WdfRetrievePendingChildren</b>
+### -field WdfRetrievePendingChildren
 
 <dd>
 <p>Calls to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> will retrieve child devices that the driver has reported as present, but for which a framework device object has not been created (because the framework has not called the driver's <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-create-device.md">EvtChildListCreateDevice</a> callback function). </p>
 </dd>
 
-### -field <a id="WdfRetrieveAddedChildren"></a><a id="wdfretrieveaddedchildren"></a><a id="WDFRETRIEVEADDEDCHILDREN"></a><b>WdfRetrieveAddedChildren</b>
+### -field WdfRetrieveAddedChildren
 
 <dd>
 <p>Calls to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> will retrieve child devices that are present or pending.</p>
 </dd>
 
-### -field <a id="WdfRetrieveAllChildren"></a><a id="wdfretrieveallchildren"></a><a id="WDFRETRIEVEALLCHILDREN"></a><b>WdfRetrieveAllChildren</b>
+### -field WdfRetrieveAllChildren
 
 <dd>
 <p>Calls to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> will retrieve child devices that are present, pending, or missing.</p>
@@ -140,4 +140,4 @@ typedef enum _WDF_RETRIEVE_CHILD_FLAGS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_RETRIEVE_CHILD_FLAGS enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_RETRIEVE_CHILD_FLAGS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

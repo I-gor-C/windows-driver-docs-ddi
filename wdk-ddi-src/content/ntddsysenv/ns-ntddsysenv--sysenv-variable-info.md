@@ -57,19 +57,19 @@ typedef struct _SYSENV_VARIABLE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>MaximumVariableStorageSize</b>
+### -field MaximumVariableStorageSize
 
 <dd>
 <p>The size of the variable.</p>
 </dd>
 
-### -field <b>RemainingVariableStorageSize</b>
+### -field RemainingVariableStorageSize
 
 <dd>
 <p>The remaining size of the variable.</p>
 </dd>
 
-### -field <b>MaximumVariableSize</b>
+### -field MaximumVariableSize
 
 <dd>
 <p>The maximum size of the variable.</p>

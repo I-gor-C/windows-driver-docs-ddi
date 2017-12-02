@@ -59,7 +59,7 @@ void PsDetachSiloFromCurrentThread(
 ## -parameters
 <dl>
 
-### -param <i>PreviousSilo</i> [in]
+### -param PreviousSilo [in]
 
 <dd>
 <p>The value returned from the silo attach call.</p>

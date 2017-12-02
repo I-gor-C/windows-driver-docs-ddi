@@ -56,13 +56,13 @@ VOID KeInitializeMutex(
 ## -parameters
 <dl>
 
-### -param <i>Mutex</i> [out]
+### -param Mutex [out]
 
 <dd>
 <p>Pointer to a mutex object, for which the caller provides the storage. The storage must be 4-byte aligned on 32-bit platforms, and 8-byte aligned on 64-bit platforms.</p>
 </dd>
 
-### -param <i>Level</i> [in]
+### -param Level [in]
 
 <dd>
 <p>Reserved. Drivers set this to zero.</p>

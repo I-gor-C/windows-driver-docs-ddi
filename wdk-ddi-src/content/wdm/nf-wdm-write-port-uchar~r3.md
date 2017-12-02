@@ -56,13 +56,13 @@ req.product: Windows 10 or later.
 ## -parameters
 <dl>
 
-### -param <i>Port</i> [in]
+### -param Port [in]
 
 <dd>
 <p>Pointer to the port, which must be a mapped memory range in I/O space.</p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>Specifies a byte to be written to the port. </p>

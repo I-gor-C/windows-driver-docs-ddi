@@ -54,7 +54,7 @@ HRESULT GetStream(
 ## -parameters
 <dl>
 
-### -param <i>ppStream</i> [out]
+### -param ppStream [out]
 
 <dd>
 <p>The stream object that contains the part data to be read.</p>

@@ -59,25 +59,25 @@ typedef struct _MPIO_PASS_THROUGH_PATH {
 ## -struct-fields
 <dl>
 
-### -field <b>PassThrough</b>
+### -field PassThrough
 
 <dd>
 <p>Contains a <a href="..\ntddscsi\ns-ntddscsi--scsi-pass-through.md">SCSI_PASS_THROUGH</a> structure that is set up in the same way as it is for an <a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-pass-through.md">IOCTL_SCSI_PASS_THROUGH</a> request.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Should be zero.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The size of the <b>MPIO_PASS_THROUGH_PATH</b> structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <dl>
@@ -124,13 +124,13 @@ typedef struct _MPIO_PASS_THROUGH_PATH {
 </dl>
 </dd>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>The port number if MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set. Otherwise, this member is zero. If MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set, the <b>PathId</b> and <b>TargetId</b> values are taken from the embedded <a href="..\ntddscsi\ns-ntddscsi--scsi-pass-through.md">SCSI_PASS_THROUGH</a> structure.</p>
 </dd>
 
-### -field <b>MpioPathId</b>
+### -field MpioPathId
 
 <dd>
 <p>The <b>PathId</b> for the real LUN. This value can be obtained by using a WMI request for the PDO_INFORMATION that is associated with the real LUN. This value is set only if MPIO_IOCTL_FLAG_USE_PATHID is set.</p>

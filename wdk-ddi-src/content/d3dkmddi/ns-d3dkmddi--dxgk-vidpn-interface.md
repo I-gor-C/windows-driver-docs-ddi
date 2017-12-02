@@ -64,67 +64,67 @@ typedef struct _DXGK_VIDPN_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>A <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-vidpn-interface-version.md">DXGK_VIDPN_INTERFACE_VERSION</a> enumerator that specifies the version of the interface.</p>
 </dd>
 
-### -field <b>pfnGetTopology</b>
+### -field pfnGetTopology
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-gettopology.md">pfnGetTopology</a> function.</p>
 </dd>
 
-### -field <b>pfnAcquireSourceModeSet</b>
+### -field pfnAcquireSourceModeSet
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-acquiresourcemodeset.md">pfnAcquireSourceModeSet</a> function.</p>
 </dd>
 
-### -field <b>pfnReleaseSourceModeSet</b>
+### -field pfnReleaseSourceModeSet
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-releasesourcemodeset.md">pfnReleaseSourceModeSet</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateNewSourceModeSet</b>
+### -field pfnCreateNewSourceModeSet
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-createnewsourcemodeset.md">pfnCreateNewSourceModeSet</a> function.</p>
 </dd>
 
-### -field <b>pfnAssignSourceModeSet</b>
+### -field pfnAssignSourceModeSet
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-assignsourcemodeset.md">pfnAssignSourceModeSet</a> function.</p>
 </dd>
 
-### -field <b>pfnAssignMultisamplingMethodSet</b>
+### -field pfnAssignMultisamplingMethodSet
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-assignmultisamplingmethodset.md">pfnAssignMultisamplingMethodSet</a> function.</p>
 </dd>
 
-### -field <b>pfnAcquireTargetModeSet</b>
+### -field pfnAcquireTargetModeSet
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-acquiretargetmodeset.md">pfnAcquireTargetModeSet</a> function.</p>
 </dd>
 
-### -field <b>pfnReleaseTargetModeSet</b>
+### -field pfnReleaseTargetModeSet
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-releasetargetmodeset.md">pfnReleaseTargetModeSet</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateNewTargetModeSet</b>
+### -field pfnCreateNewTargetModeSet
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-createnewtargetmodeset.md">pfnCreateNewTargetModeSet</a> function.</p>
 </dd>
 
-### -field <b>pfnAssignTargetModeSet</b>
+### -field pfnAssignTargetModeSet
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-assigntargetmodeset.md">pfnAssignTargetModeSet</a> function.</p>

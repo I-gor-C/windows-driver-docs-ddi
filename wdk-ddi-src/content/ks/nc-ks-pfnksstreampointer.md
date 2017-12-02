@@ -57,7 +57,7 @@ void AVStrMiniCancelCallback(
 ## -parameters
 <dl>
 
-### -param <i>StreamPointer</i> [in]
+### -param StreamPointer [in]
 
 <dd>
 <p>A pointer to the clone <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> that is associated with the IRP that was canceled. <i>StreamPointer</i> was created by a call to <a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>.</p>

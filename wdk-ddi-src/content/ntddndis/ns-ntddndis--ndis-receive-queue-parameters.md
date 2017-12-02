@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_queue_parameters.htm
 old-project: netvista
 ms.assetid: fba87554-766d-45e2-8257-584ee78dd873
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_RECEIVE_QUEUE_PARAMETERS, NDIS_RECEIVE_QUEUE_PARAMETERS, *PNDIS_RECEIVE_QUEUE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,7 @@ typedef struct _NDIS_RECEIVE_QUEUE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_RECEIVE_QUEUE_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -77,14 +77,14 @@ typedef struct _NDIS_RECEIVE_QUEUE_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_QUEUE_PARAMETERS_REVISION_2"></a><a id="ndis_receive_queue_parameters_revision_2"></a>NDIS_RECEIVE_QUEUE_PARAMETERS_REVISION_2
+### -field NDIS_RECEIVE_QUEUE_PARAMETERS_REVISION_2
 
 <dd>
 <p>Added additional members for NDIS 6.30.</p>
 <p>Set the <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_QUEUE_PARAMETERS_REVISION_2</b>.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_QUEUE_PARAMETERS_REVISION_1"></a><a id="ndis_receive_queue_parameters_revision_1"></a>NDIS_RECEIVE_QUEUE_PARAMETERS_REVISION_1
+### -field NDIS_RECEIVE_QUEUE_PARAMETERS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.20.</p>
@@ -93,7 +93,7 @@ typedef struct _NDIS_RECEIVE_QUEUE_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise <b>OR</b> of the following flags. The following flags are valid for the 
@@ -104,7 +104,7 @@ typedef struct _NDIS_RECEIVE_QUEUE_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_QUEUE_PARAMETERS_PER_QUEUE_RECEIVE_INDICATION"></a><a id="ndis_receive_queue_parameters_per_queue_receive_indication"></a>NDIS_RECEIVE_QUEUE_PARAMETERS_PER_QUEUE_RECEIVE_INDICATION
+### -field NDIS_RECEIVE_QUEUE_PARAMETERS_PER_QUEUE_RECEIVE_INDICATION
 
 <dd>
 <p>The miniport driver must not mix network packets for other receive queues with the packets for
@@ -113,7 +113,7 @@ typedef struct _NDIS_RECEIVE_QUEUE_PARAMETERS {
        NdisMIndicateReceiveNetBufferLists</a> function.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_QUEUE_PARAMETERS_LOOKAHEAD_SPLIT_REQUIRED"></a><a id="ndis_receive_queue_parameters_lookahead_split_required"></a>NDIS_RECEIVE_QUEUE_PARAMETERS_LOOKAHEAD_SPLIT_REQUIRED
+### -field NDIS_RECEIVE_QUEUE_PARAMETERS_LOOKAHEAD_SPLIT_REQUIRED
 
 <dd>
 <p>The network adapter must split a received packet at an offset equal to or greater than the
@@ -129,28 +129,28 @@ typedef struct _NDIS_RECEIVE_QUEUE_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_QUEUE_PARAMETERS_FLAGS_CHANGED"></a><a id="ndis_receive_queue_parameters_flags_changed"></a>NDIS_RECEIVE_QUEUE_PARAMETERS_FLAGS_CHANGED
+### -field NDIS_RECEIVE_QUEUE_PARAMETERS_FLAGS_CHANGED
 
 <dd>
 <p>The setting in the 
        <b>Flags</b> member changed.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_QUEUE_PARAMETERS_PROCESSOR_AFFINITY_CHANGED"></a><a id="ndis_receive_queue_parameters_processor_affinity_changed"></a>NDIS_RECEIVE_QUEUE_PARAMETERS_PROCESSOR_AFFINITY_CHANGED
+### -field NDIS_RECEIVE_QUEUE_PARAMETERS_PROCESSOR_AFFINITY_CHANGED
 
 <dd>
 <p>The setting in the 
        <b>ProcessorAffinity</b> member changed.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_QUEUE_PARAMETERS_SUGGESTED_RECV_BUFFER_NUMBERS_CHANGED"></a><a id="ndis_receive_queue_parameters_suggested_recv_buffer_numbers_changed"></a>NDIS_RECEIVE_QUEUE_PARAMETERS_SUGGESTED_RECV_BUFFER_NUMBERS_CHANGED
+### -field NDIS_RECEIVE_QUEUE_PARAMETERS_SUGGESTED_RECV_BUFFER_NUMBERS_CHANGED
 
 <dd>
 <p>The setting in the 
        <b>NumSuggestedReceiveBuffers</b> member changed.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_QUEUE_PARAMETERS_NAME_CHANGED"></a><a id="ndis_receive_queue_parameters_name_changed"></a>NDIS_RECEIVE_QUEUE_PARAMETERS_NAME_CHANGED
+### -field NDIS_RECEIVE_QUEUE_PARAMETERS_NAME_CHANGED
 
 <dd>
 <p>The setting in the 
@@ -161,7 +161,7 @@ typedef struct _NDIS_RECEIVE_QUEUE_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>QueueType</b>
+### -field QueueType
 
 <dd>
 <p>An 
@@ -169,19 +169,19 @@ typedef struct _NDIS_RECEIVE_QUEUE_PARAMETERS {
      value that specifies the type of the receive queue.</p>
 </dd>
 
-### -field <b>QueueId</b>
+### -field QueueId
 
 <dd>
 <p>An <b>NDIS_RECEIVE_QUEUE_ID</b> type value that contains a receive queue identifier. This identifier is an integer value between zero and the number of queues that the network adapter supports. A value of <b>NDIS_DEFAULT_RECEIVE_QUEUE_ID</b> specifies the default receive queue.</p>
 </dd>
 
-### -field <b>QueueGroupId</b>
+### -field QueueGroupId
 
 <dd>
 <p>This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>ProcessorAffinity</b>
+### -field ProcessorAffinity
 
 <dd>
 <p>A <b>GROUP_AFFINITY</b> value that specifies the group number and a bitmap of the CPUs that this queue
@@ -189,7 +189,7 @@ typedef struct _NDIS_RECEIVE_QUEUE_PARAMETERS {
      zero.</p>
 </dd>
 
-### -field <b>NumSuggestedReceiveBuffers</b>
+### -field NumSuggestedReceiveBuffers
 
 <dd>
 <p>A <b>ULONG</b> value that contains a suggested value for the number of receive buffers that the network adapter should use to support the queue. This number can be adjusted relative to the resources that the
@@ -198,13 +198,13 @@ typedef struct _NDIS_RECEIVE_QUEUE_PARAMETERS {
      value.</p>
 </dd>
 
-### -field <b>MSIXTableEntry</b>
+### -field MSIXTableEntry
 
 <dd>
 <p>This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>LookaheadSize</b>
+### -field LookaheadSize
 
 <dd>
 <p>A <b>ULONG</b> value for the size, in bytes, of the lookahead size requirement for this queue. A network adapter that supports lookahead in VM queues splits a received packet at an offset equal to or greater
@@ -221,19 +221,19 @@ typedef struct _NDIS_RECEIVE_QUEUE_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>VmName</b>
+### -field VmName
 
 <dd>
 <p>An <b>NDIS_VM_NAME</b> value that contains the description of the virtual machine that users read.</p>
 </dd>
 
-### -field <b>QueueName</b>
+### -field QueueName
 
 <dd>
 <p>An <b>NDIS_QUEUE_NAME</b> value that contains the description of the queue that users read.</p>
 </dd>
 
-### -field <b>PortId</b>
+### -field PortId
 
 <dd>
 <p>A ULONG value that contains the unique identifier of a port on the Hyper-V extensible switch to which the VM queue is attached.
@@ -241,7 +241,7 @@ typedef struct _NDIS_RECEIVE_QUEUE_PARAMETERS {
 </p>
 </dd>
 
-### -field <b>InterruptCoalescingDomainId</b>
+### -field InterruptCoalescingDomainId
 
 <dd>
 <p>This member is reserved for NDIS.</p>
@@ -305,4 +305,4 @@ typedef struct _NDIS_RECEIVE_QUEUE_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_QUEUE_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_QUEUE_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

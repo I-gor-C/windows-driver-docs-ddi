@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvperformpreassociate.htm
 old-project: netvista
 ms.assetid: 5bf7a1ce-bff0-481e-8053-584fb6319146
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ DWORD APIENTRY Dot11ExtIhvPerformPreAssociate(
 ## -parameters
 <dl>
 
-### -param <i>hIhvExtAdapter</i> [in, optional]
+### -param hIhvExtAdapter [in, optional]
 
 <dd>
 <p>The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) adapter. This
@@ -71,14 +71,14 @@ DWORD APIENTRY Dot11ExtIhvPerformPreAssociate(
      Handler function.</p>
 </dd>
 
-### -param <i>hConnectSession</i> [in, optional]
+### -param hConnectSession [in, optional]
 
 <dd>
 <p>The handle used by the operating system to reference the connection session with the basic service
      set (BSS) network.</p>
 </dd>
 
-### -param <i>pIhvProfileParams</i> [in, optional]
+### -param pIhvProfileParams [in, optional]
 
 <dd>
 <p>A pointer to a 
@@ -87,7 +87,7 @@ DWORD APIENTRY Dot11ExtIhvPerformPreAssociate(
      set (BSS) network to which the profile extensions will be applied.</p>
 </dd>
 
-### -param <i>pIhvConnProfile</i> [in]
+### -param pIhvConnProfile [in]
 
 <dd>
 <p>A pointer to a 
@@ -96,7 +96,7 @@ DWORD APIENTRY Dot11ExtIhvPerformPreAssociate(
      profile.</p>
 </dd>
 
-### -param <i>pIhvSecProfile</i> [in]
+### -param pIhvSecProfile [in]
 
 <dd>
 <p>A pointer to a 
@@ -105,7 +105,7 @@ DWORD APIENTRY Dot11ExtIhvPerformPreAssociate(
      profile.</p>
 </dd>
 
-### -param <i>pConnectableBssid</i> [in]
+### -param pConnectableBssid [in]
 
 <dd>
 <p>A pointer to a 
@@ -114,7 +114,7 @@ DWORD APIENTRY Dot11ExtIhvPerformPreAssociate(
      with which the DLL will perform the pre-association operation.</p>
 </dd>
 
-### -param <i>pdwReasonCode</i> [out]
+### -param pdwReasonCode [out]
 
 <dd>
 <p>A pointer to a DWORD value, which provides additional information for the return value of the 
@@ -138,7 +138,7 @@ DWORD APIENTRY Dot11ExtIhvPerformPreAssociate(
     Extensions DLL. The operating system initiates this operation before it initiates a connection operation
     with a basic service set (BSS) network through the WLAN adapter. For more information about the
     connection operation, see 
-    <a href="NULL">Connection Operations</a>.</p>
+    <a href="netvista.connection_operations">Connection Operations</a>.</p>
 
 <p>The pre-association operation must be completed asynchronously from the call to 
     <i>Dot11ExtIhvPerformPreAssociate</i>. After the pre-association operation completes, the IHV Extensions
@@ -236,4 +236,4 @@ DWORD APIENTRY Dot11ExtIhvPerformPreAssociate(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_PERFORM_PRE_ASSOCIATE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_PERFORM_PRE_ASSOCIATE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

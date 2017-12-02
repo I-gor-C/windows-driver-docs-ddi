@@ -61,13 +61,13 @@ typedef struct _DISK_DETECTION_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>SizeOfDetectInfo</b>
+### -field SizeOfDetectInfo
 
 <dd>
 <p>Contains the quantity, in bytes, of retrieved detect information.</p>
 </dd>
 
-### -field <b>DetectionType</b>
+### -field DetectionType
 
 <dd>
 <p>Indicates one of three possible detection types:</p>
@@ -85,19 +85,19 @@ typedef struct _DISK_DETECTION_INFO {
 <p>See the structure <a href="..\ntdddisk\ne-ntdddisk--detection-type.md">DETECTION_TYPE</a> for further information.</p>
 </dd>
 
-### -field ( <i>unnamed struct</i> )
+### -field ( unnamed struct )
 
 <dd>
 <p>Contains the quantity, in bytes, of retrieved detect information.</p>
 <dl>
 
-### -field <b>Int13</b>
+### -field Int13
 
 <dd>
 <p>Contains <a href="..\ntdddisk\ns-ntdddisk--disk-int13-info.md">DISK_INT13_INFO</a> structure with the disk parameters for INT 13 type partitions. This member is used if <b>DetectionType </b>== <b>DetectInt13</b>.</p>
 </dd>
 
-### -field <b>ExInt13</b>
+### -field ExInt13
 
 <dd>
 <p>Contains a <a href="..\ntdddisk\ns-ntdddisk--disk-ex-int13-info.md">DISK_EX_INT13_INFO</a> structure with the disk parameters for extended INT 13 type partitions. This member is used if <b>DetectionType</b> == <b>DetectExInt13</b>.</p>

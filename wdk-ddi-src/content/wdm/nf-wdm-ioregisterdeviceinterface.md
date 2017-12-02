@@ -58,19 +58,19 @@ NTSTATUS IoRegisterDeviceInterface(
 ## -parameters
 <dl>
 
-### -param <i>PhysicalDeviceObject</i> [in]
+### -param PhysicalDeviceObject [in]
 
 <dd>
 <p>A pointer to the PDO for the device.</p>
 </dd>
 
-### -param <i>InterfaceClassGuid</i> [in]
+### -param InterfaceClassGuid [in]
 
 <dd>
 <p>A pointer to the class GUID that identifies the functionality (the device interface class) being registered.</p>
 </dd>
 
-### -param <i>ReferenceString</i> [in, optional]
+### -param ReferenceString [in, optional]
 
 <dd>
 <p>Optionally points to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>. The string must not contain any path separator characters ("/" or "\"). Function drivers typically specify <b>NULL</b> for this parameter. Filter drivers must specify <b>NULL</b>.</p>
@@ -78,7 +78,7 @@ NTSTATUS IoRegisterDeviceInterface(
 <p>On Microsoft Windows 98/Me systems, the <i>ReferenceString</i> value can be no longer than MAX_PATH characters. There is no length limit on Windows 2000 and later versions of Windows.</p>
 </dd>
 
-### -param <i>SymbolicLinkName</i> [out]
+### -param SymbolicLinkName [out]
 
 <dd>
 <p>A pointer to a Unicode string structure allocated by the caller. If this routine is successful, it initializes the Unicode string and allocates the string buffer containing the kernel-mode path to the symbolic link for an instance of the specified device interface class. </p>

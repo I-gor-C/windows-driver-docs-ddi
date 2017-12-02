@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlgetsupportedfeatures.htm
 old-project: ifsk
 ms.assetid: 24852B9A-5156-41BB-87F9-81B147A85AC2
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FsRtlGetSupportedFeatures
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ NTSTATUS FsRtlGetSupportedFeatures(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>The target device object attached to a volume.</p>
 </dd>
 
-### -param <i>SupportedFeatures</i> [out]
+### -param SupportedFeatures [out]
 
 <dd>
 <p>A pointer to a caller supplied <b>ULONG</b> value. On return, this value contains the supported feature flags for the attached volume.</p>
@@ -76,7 +76,7 @@ NTSTATUS FsRtlGetSupportedFeatures(
 <tr>
 <td width="40%"><a id="SUPPORTED_FS_FEATURES_OFFLOAD_READ"></a><a id="supported_fs_features_offload_read"></a><dl>
 
-### -param <b>SUPPORTED_FS_FEATURES_OFFLOAD_READ</b>
+### -param SUPPORTED_FS_FEATURES_OFFLOAD_READ
 
 
 ### -param 0x00000001
@@ -90,7 +90,7 @@ NTSTATUS FsRtlGetSupportedFeatures(
 <tr>
 <td width="40%"><a id="SUPPORTED_FS_FEATURES_OFFLOAD_WRITE"></a><a id="supported_fs_features_offload_write"></a><dl>
 
-### -param <b>SUPPORTED_FS_FEATURES_OFFLOAD_WRITE</b>
+### -param SUPPORTED_FS_FEATURES_OFFLOAD_WRITE
 
 
 ### -param 0x00000002

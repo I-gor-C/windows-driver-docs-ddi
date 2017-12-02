@@ -55,13 +55,13 @@ typedef struct _D3DKMT_CHECKMONITORPOWERSTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[in] A handle to the graphics adapter.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the monitor is connected to.</p>

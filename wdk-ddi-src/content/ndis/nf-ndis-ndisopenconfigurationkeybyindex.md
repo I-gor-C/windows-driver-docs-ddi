@@ -7,7 +7,7 @@ old-location: netvista\ndisopenconfigurationkeybyindex.htm
 old-project: netvista
 ms.assetid: e405853a-cf25-4214-82a9-bc3d76334413
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisOpenConfigurationKeyByIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ VOID NdisOpenConfigurationKeyByIndex(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [out]
+### -param Status [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which this function returns the status of its attempt
@@ -69,7 +69,7 @@ VOID NdisOpenConfigurationKeyByIndex(
 <p></p>
 <dl>
 
-### -param <a id="NDIS_STATUS_SUCCESS"></a><a id="ndis_status_success"></a>NDIS_STATUS_SUCCESS
+### -param NDIS_STATUS_SUCCESS
 
 <dd>
 <p>NDIS has initialized accessed to the subkey specified by 
@@ -77,7 +77,7 @@ VOID NdisOpenConfigurationKeyByIndex(
        <i>Index</i> .</p>
 </dd>
 
-### -param <a id="NDIS_STATUS_FAILURE"></a><a id="ndis_status_failure"></a>NDIS_STATUS_FAILURE
+### -param NDIS_STATUS_FAILURE
 
 <dd>
 <p>The key could not be opened.</p>
@@ -85,7 +85,7 @@ VOID NdisOpenConfigurationKeyByIndex(
 </dl>
 </dd>
 
-### -param <i>ConfigurationHandle</i> [in]
+### -param ConfigurationHandle [in]
 
 <dd>
 <p>The handle to a registry key for which a subkey is to be opened. Typically, 
@@ -94,7 +94,7 @@ VOID NdisOpenConfigurationKeyByIndex(
      NdisOpenConfigurationEx</a> function.</p>
 </dd>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>The index of the subkey to be opened. This zero-based value designates the subkey to be opened
@@ -102,7 +102,7 @@ VOID NdisOpenConfigurationKeyByIndex(
      <i>ConfigurationHandle</i> .</p>
 </dd>
 
-### -param <i>KeyName</i> [out]
+### -param KeyName [out]
 
 <dd>
 <p>A pointer to an NDIS_STRING type containing a caller-supplied buffer in which this functions
@@ -112,7 +112,7 @@ VOID NdisOpenConfigurationKeyByIndex(
      <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> type.</p>
 </dd>
 
-### -param <i>KeyHandle</i> [out]
+### -param KeyHandle [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which this function returns a handle to the opened
@@ -250,4 +250,4 @@ VOID NdisOpenConfigurationKeyByIndex(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOpenConfigurationKeyByIndex function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOpenConfigurationKeyByIndex function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: image\istidevice_diagnostic.htm
 old-project: image
 ms.assetid: eee5c6d7-17a3-461f-85e0-17f6b7114b19
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDevice, Diagnostic, IStiDevice::Diagnostic
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT Diagnostic(
 ## -parameters
 <dl>
 
-### -param <i>pBuffer</i> [in, out]
+### -param pBuffer [in, out]
 
 <dd>
 <p>Caller-supplied pointer to an <a href="..\sti\ns-sti--sti-diag.md">STI_DIAG</a> structure specifying the type of tests to be run. On return, the structure contains status information.</p>

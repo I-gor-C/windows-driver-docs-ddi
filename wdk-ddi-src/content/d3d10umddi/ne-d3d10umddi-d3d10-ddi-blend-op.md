@@ -58,31 +58,31 @@ typedef enum D3D10_DDI_BLEND_OP {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D10_DDI_BLEND_OP_ADD"></a><a id="d3d10_ddi_blend_op_add"></a><b>D3D10_DDI_BLEND_OP_ADD</b>
+### -field D3D10_DDI_BLEND_OP_ADD
 
 <dd>
 <p>The result is the destination added to the source (Result = Source + Destination). </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_OP_SUBTRACT"></a><a id="d3d10_ddi_blend_op_subtract"></a><b>D3D10_DDI_BLEND_OP_SUBTRACT</b>
+### -field D3D10_DDI_BLEND_OP_SUBTRACT
 
 <dd>
 <p>The result is the destination subtracted from to the source (Result = Source - Destination). </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_OP_REV_SUBTRACT"></a><a id="d3d10_ddi_blend_op_rev_subtract"></a><b>D3D10_DDI_BLEND_OP_REV_SUBTRACT</b>
+### -field D3D10_DDI_BLEND_OP_REV_SUBTRACT
 
 <dd>
 <p>The result is the source subtracted from the destination (Result = Destination - Source). </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_OP_MIN"></a><a id="d3d10_ddi_blend_op_min"></a><b>D3D10_DDI_BLEND_OP_MIN</b>
+### -field D3D10_DDI_BLEND_OP_MIN
 
 <dd>
 <p>The result is the minimum of the source and destination (Result = MIN(Source, Destination)) </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_OP_MAX"></a><a id="d3d10_ddi_blend_op_max"></a><b>D3D10_DDI_BLEND_OP_MAX</b>
+### -field D3D10_DDI_BLEND_OP_MAX
 
 <dd>
 <p>The result is the maximum of the source and destination (Result = MAX(Source, Destination)) </p>

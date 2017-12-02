@@ -63,61 +63,61 @@ typedef struct _FEATURE_DATA_CD_MASTERING {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>RWSubchannelsRecordable</b>
+### -field RWSubchannelsRecordable
 
 <dd>
 <p>Indicates, when set to 1, that the device can record the R-W subchannels with user-supplied information. </p>
 </dd>
 
-### -field <b>CdRewritable</b>
+### -field CdRewritable
 
 <dd>
 <p>Indicates, when set to 1, that the device can do mastering and TAO recording on rewritable media. </p>
 </dd>
 
-### -field <b>TestWriteOk</b>
+### -field TestWriteOk
 
 <dd>
 <p>Indicates, when set to 1, that the device can perform test writes. </p>
 </dd>
 
-### -field <b>RawRecordingOk</b>
+### -field RawRecordingOk
 
 <dd>
 <p>Indicates, when set to 1, that the device can record using the raw write type. </p>
 </dd>
 
-### -field <b>RawMultiSessionOk</b>
+### -field RawMultiSessionOk
 
 <dd>
 <p>Indicates, when set to 1, that the device can record multisession in raw mode. </p>
 </dd>
 
-### -field <b>SessionAtOnceOk</b>
+### -field SessionAtOnceOk
 
 <dd>
 <p>Indicates, when set to 1, that the device can record using the Session-at-Once recording mode. </p>
 </dd>
 
-### -field <b>BufferUnderrunFree</b>
+### -field BufferUnderrunFree
 
 <dd>
 <p>Indicates, when set to 1, that the device is capable of zero-loss linking.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>MaximumCueSheetLength</b>
+### -field MaximumCueSheetLength
 
 <dd>
 <p>Indicates the maximum length of a Cue Sheet that can be accepted by the device for Session at Once recording. <b>MaximumCueSheetLength</b>[0] holds the most significant byte of the 3-byte value for the length. <b>MaximumCueSheetLength</b>[2] holds the least significant byte. </p>

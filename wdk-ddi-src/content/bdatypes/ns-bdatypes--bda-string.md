@@ -56,15 +56,15 @@ typedef struct _BDA_STRING {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>ulStringSize</b>
+### -field ulStringSize
 
 <dd></dd>
 
-### -field <b>argbString</b>
+### -field argbString
 
 <dd></dd>
 </dl>

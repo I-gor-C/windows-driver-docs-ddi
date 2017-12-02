@@ -57,25 +57,25 @@ NTSTATUS KsMergeAutomationTables(
 ## -parameters
 <dl>
 
-### -param <i>AutomationTableAB</i> [out]
+### -param AutomationTableAB [out]
 
 <dd>
 <p>A pointer to the location at which a pointer to a <a href="stream.ksautomation_table">KSAUTOMATION_TABLE</a> is deposited. This structure is the resulting merged automation table.</p>
 </dd>
 
-### -param <i>AutomationTableA</i> [in, optional]
+### -param AutomationTableA [in, optional]
 
 <dd>
 <p>A pointer to a <a href="stream.ksautomation_table">KSAUTOMATION_TABLE</a> structure representing the first of the two automation tables to merge. This table is the dominant table with respect to duplicate entries. If <b>NULL</b>, <i>AutomationTableB</i> is copied into <i>AutomationTableAB</i> and optionally placed in <i>Bag</i>.</p>
 </dd>
 
-### -param <i>AutomationTableB</i> [in, optional]
+### -param AutomationTableB [in, optional]
 
 <dd>
 <p>A pointer to a <a href="stream.ksautomation_table">KSAUTOMATION_TABLE</a> structure representing the second of the two automation tables to merge. If <b>NULL</b>, <i>AutomationTableA</i> is copied into <i>AutomationTableAB</i> and optionally placed in <i>Bag</i>.</p>
 </dd>
 
-### -param <i>Bag</i> [in, optional]
+### -param Bag [in, optional]
 
 <dd>
 <p>The newly created automation table is placed in this KSOBJECT_BAG (equivalent to type PVOID) for later clean up. This parameter is optional.</p>
@@ -92,9 +92,9 @@ NTSTATUS KsMergeAutomationTables(
 
 <p>If an input table is in an object bag at call-time, <i>AVStream removes the table from the object bag</i> before <b>KsMergeAutomationTables</b> returns.</p>
 
-<p>If the <i>Bag</i> parameter is not <b>NULL</b>, the minidriver should take the mutex associated with the object bag prior to calling this routine. If the bag is associated with a pin or a filter, then the control mutex must be held. If the bag is associated with a filter factory or a device, then the device mutex should be held. For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>If the <i>Bag</i> parameter is not <b>NULL</b>, the minidriver should take the mutex associated with the object bag prior to calling this routine. If the bag is associated with a pin or a filter, then the control mutex must be held. If the bag is associated with a filter factory or a device, then the device mutex should be held. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
-<p>Also see <a href="NULL">Object Bags</a>  and <a href="NULL">Defining Automation Tables</a>.</p>
+<p>Also see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a>  and <a href="https://msdn.microsoft.com/1c0dace6-b618-4705-bf5d-65457d14c072">Defining Automation Tables</a>.</p>
 
 ## -requirements
 <table>

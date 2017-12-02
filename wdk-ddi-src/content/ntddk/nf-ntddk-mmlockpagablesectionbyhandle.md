@@ -54,7 +54,7 @@ VOID MmLockPagableSectionByHandle(
 ## -parameters
 <dl>
 
-### -param <i>ImageSectionHandle</i> [in]
+### -param ImageSectionHandle [in]
 
 <dd>
 <p>The handle to a pageable code or data section. The caller obtained this handle from a previous call to the <a href="..\wdm\nf-wdm-mmlockpagablecodesection.md">MmLockPagableCodeSection</a> or <a href="..\wdm\nf-wdm-mmlockpagabledatasection.md">MmLockPagableDataSection</a> routine.</p>

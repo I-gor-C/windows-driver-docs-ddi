@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetpipe2_configurecontinuousreader.htm
 old-project: wdf
 ms.assetid: accb2690-0ab7-4623-8493-545e6e722a7a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFUsbTargetPipe2, ConfigureContinuousReader, IWDFUsbTargetPipe2::ConfigureContinuousReader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,49 +63,49 @@ HRESULT ConfigureContinuousReader(
 ## -parameters
 <dl>
 
-### -param <i>TransferLength</i> [in]
+### -param TransferLength [in]
 
 <dd>
 <p>The maximum length, in bytes, of data that can be received from the device.</p>
 </dd>
 
-### -param <i>HeaderLength</i> [in]
+### -param HeaderLength [in]
 
 <dd>
 <p>An offset, in bytes, into the buffer that receives data from the device. The framework will store data from the device in a read buffer, beginning at the offset value. In other words, this space precedes the <i>TransferLength</i>-sized space in which the framework stores data from the device.</p>
 </dd>
 
-### -param <i>TrailerLength</i> [in]
+### -param TrailerLength [in]
 
 <dd>
 <p>The length, in bytes, of a trailing buffer space. This space follows the <i>TransferLength</i>-sized space in which the framework stores data from the device.</p>
 </dd>
 
-### -param <i>NumPendingReads</i> [in]
+### -param NumPendingReads [in]
 
 <dd>
 <p>The number of read requests that the framework will queue to receive data from the I/O target. If this value is zero, the framework uses a default number of read requests. If the specified value is greater than the permitted maximum value, the framework uses the permitted maximum value. For more information about the <i>NumPendingReads</i> parameter, see the following Remarks section.</p>
 </dd>
 
-### -param <i>pMemoryCleanupCallbackInterface</i> [in, optional]
+### -param pMemoryCleanupCallbackInterface [in, optional]
 
 <dd>
 <p>A pointer to a driver-supplied <b>IUnkown</b> interface that the framework uses to access an optional <a href="wdf.iobjectcleanup_oncleanup">IObjectCleanup::OnCleanup</a> callback function. The framework calls the callback function when it deallocates the read buffer that it creates to handle the continuous read operation. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>pOnCompletion</i> [in]
+### -param pOnCompletion [in]
 
 <dd>
 <p>A pointer to a driver-supplied <a href="..\wudfusb\nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete.md">IUsbTargetPipeContinuousReaderCallbackReadComplete</a> interface that provides an <a href="wdf.iusbtargetpipecontinuousreadercallbackreadcomplete_onreadercompletion">OnReaderCompletion</a> callback function. </p>
 </dd>
 
-### -param <i>pCompletionContext</i> [in, optional]
+### -param pCompletionContext [in, optional]
 
 <dd>
 <p>An untyped pointer to driver-defined context information that the framework passes to the driver's <a href="wdf.iusbtargetpipecontinuousreadercallbackreadcomplete_onreadercompletion">IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion</a> callback function. </p>
 </dd>
 
-### -param <i>pOnFailure</i> [in, optional]
+### -param pOnFailure [in, optional]
 
 <dd>
 <p>A pointer to a driver-supplied <a href="..\wudfusb\nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed.md">IUsbTargetPipeContinuousReaderCallbackReadersFailed</a> interface that provides an <a href="wdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure">OnReaderFailure</a> callback function. </p>
@@ -239,4 +239,4 @@ HRESULT ConfigureContinuousReader(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetPipe2::ConfigureContinuousReader method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetPipe2::ConfigureContinuousReader method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

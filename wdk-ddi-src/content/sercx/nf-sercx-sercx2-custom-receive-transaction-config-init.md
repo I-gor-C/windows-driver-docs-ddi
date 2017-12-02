@@ -58,25 +58,25 @@ VOID SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
 <p>A pointer to the <a href="..\sercx\ns-sercx--sercx2-custom-receive-transaction-config.md">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</a> structure that is to be initialized.</p>
 </dd>
 
-### -param <i>EvtSerCx2CustomReceiveTransactionStart</i> [in]
+### -param EvtSerCx2CustomReceiveTransactionStart [in]
 
 <dd>
 <p>The value to load into the <b>EvtSerCx2CustomReceiveTransactionStart</b> member of the <b>SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-custom-receive-transaction-config.md">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</a>.</p>
 </dd>
 
-### -param <i>EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</i> [in, optional]
+### -param EvtSerCx2CustomReceiveTransactionEnableNewDataNotification [in, optional]
 
 <dd>
 <p>The value to load into the <b>EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</b> member of the <b>SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-custom-receive-transaction-config.md">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</a>.</p>
 </dd>
 
-### -param <i>EvtSerCx2CustomReceiveTransactionQueryProgress</i> [in]
+### -param EvtSerCx2CustomReceiveTransactionQueryProgress [in]
 
 <dd>
 <p>The value to load into the <b>EvtSerCx2CustomReceiveTransactionQueryProgress</b> member of the <b>SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-custom-receive-transaction-config.md">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</a>.</p>

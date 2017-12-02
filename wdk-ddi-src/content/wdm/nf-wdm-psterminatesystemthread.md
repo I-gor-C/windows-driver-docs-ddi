@@ -55,7 +55,7 @@ NTSTATUS PsTerminateSystemThread(
 ## -parameters
 <dl>
 
-### -param <i>ExitStatus</i> [in]
+### -param ExitStatus [in]
 
 <dd>
 <p>Specifies the status of the terminating system thread. </p>

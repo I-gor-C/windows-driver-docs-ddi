@@ -7,7 +7,7 @@ old-location: debugger\writebusdata.htm
 old-project: debugger
 ms.assetid: bd4e762d-b3d5-4a4c-bdeb-998cd72783b4
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugDataSpaces4, WriteBusData, IDebugDataSpaces4::WriteBusData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,43 +60,43 @@ HRESULT WriteBusData(
 ## -parameters
 <dl>
 
-### -param <i>BusDataType</i> [in]
+### -param BusDataType [in]
 
 <dd>
 <p>Specifies the bus data type of the bus to write to.  For details of allowed values see the documentation for the BUS_DATA_TYPE enumeration in the Microsoft Windows SDK.</p>
 </dd>
 
-### -param <i>BusNumber</i> [in]
+### -param BusNumber [in]
 
 <dd>
 <p>Specifies the system-assigned number of the bus.  This is usually zero, unless the system has more than one bus of the same bus data type.</p>
 </dd>
 
-### -param <i>SlotNumber</i> [in]
+### -param SlotNumber [in]
 
 <dd>
 <p>Specifies the logical slot number on the bus.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the offset in the bus data to start writing to.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Specifies the data to write to the bus.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size in bytes of the buffer <i>Buffer</i>.  This is the maximum number of bytes that will be written.</p>
 </dd>
 
-### -param <i>BytesWritten</i> [out, optional]
+### -param BytesWritten [out, optional]
 
 <dd>
 <p>Receives the number of bytes written to the bus.  If <i>BytesWritten</i> is <b>NULL</b>, this information is not returned.</p>
@@ -104,7 +104,7 @@ HRESULT WriteBusData(
 </dl>
 
 ## -returns
-<p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

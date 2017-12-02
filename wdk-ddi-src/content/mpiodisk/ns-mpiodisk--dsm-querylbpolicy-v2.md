@@ -54,7 +54,7 @@ typedef struct _DSM_QueryLBPolicy_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>LoadBalancePolicy</b>
+### -field LoadBalancePolicy
 
 <dd>
 <p>An instance of the DSM_Load_Balance_Policy_V2 structure that has information about the current load balance policy that is being applied by the DSM on the targeted pseudo-LUN.</p>

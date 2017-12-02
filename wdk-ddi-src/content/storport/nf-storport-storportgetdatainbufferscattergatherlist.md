@@ -57,19 +57,19 @@ ULONG StorPortGetDataInBufferScatterGatherList(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Srb</i> [in]
+### -param Srb [in]
 
 <dd>
 <p>The request block to containing the input data buffer for the scatter-gather list.</p>
 </dd>
 
-### -param <i>SgList</i> [out]
+### -param SgList [out]
 
 <dd>
 <p>A pointer to  an scatter-gather list structure address to receive the scatter-gather list for the input data buffer in <i>Srb</i>.</p>

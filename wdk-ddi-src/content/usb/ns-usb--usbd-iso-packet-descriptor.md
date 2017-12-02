@@ -57,19 +57,19 @@ typedef struct _USBD_ISO_PACKET_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Specifies the offset, in bytes, of the buffer for this packet from the beginning of the entire isochronous transfer buffer.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p> Set by the host controller to indicate the actual number of bytes received from the device for isochronous IN transfers. <b>Length</b> not used for isochronous OUT transfers.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>Contains the status, on return from the host controller driver, of this transfer packet.</p>

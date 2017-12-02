@@ -54,7 +54,7 @@ typedef struct LAMP_CAPABILITIES_WHITE {
 ## -struct-fields
 <dl>
 
-### -field <b>IsLightIntensityAdjustable</b>
+### -field IsLightIntensityAdjustable
 
 <dd>
 <p>If this field evaluates <b>TRUE</b>, a client can get/set light intensity by calling <a href="stream.ioctl_lamp_get__intensity_white">IOCTL_LAMP_GET_INTENSITY_WHITE</a>  and <a href="..\lamp\ni-lamp-ioctl-lamp-set-intensity-white.md">IOCTL_LAMP_SET_INTENSITY_WHITE</a>.</p>

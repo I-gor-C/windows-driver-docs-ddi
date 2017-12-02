@@ -60,43 +60,43 @@ NTSTATUS KsMoveIrpsOnCancelableQueue(
 ## -parameters
 <dl>
 
-### -param <i>SourceList</i> [in, out]
+### -param SourceList [in, out]
 
 <dd>
 <p>Specifies the head of the queue from which to remove the IRPs.</p>
 </dd>
 
-### -param <i>SourceLock</i> [in]
+### -param SourceLock [in]
 
 <dd>
 <p>Pointer to the driver's spin lock for source queue access.</p>
 </dd>
 
-### -param <i>DestinationList</i> [in, out]
+### -param DestinationList [in, out]
 
 <dd>
 <p>Specifies the head of the queue on which to add the IRPs.</p>
 </dd>
 
-### -param <i>DestinationLock</i> [in, optional]
+### -param DestinationLock [in, optional]
 
 <dd>
 <p>Optionally contains a pointer to driver's spin lock for destination queue access. If this is not provided, the <i>SourceLock</i> parameter is assumed to control both queues. If provided, this lock is always acquired after the <i>SourceLock</i> parameter. If the destination list has a separate spin lock, the system-wide Cancel Spin Lock is first acquired in order to move IRPs and allow the KSQUEUE_SPINLOCK_IRP_STORAGE() spin lock to be updated.</p>
 </dd>
 
-### -param <i>ListLocation</i> [in]
+### -param ListLocation [in]
 
 <dd>
 <p>Indicates whether the IRPs should be enumerated from the head or the tail of the source queue. Any IRPs that are moved are placed on the destination queue's opposite end so that ordering is maintained.</p>
 </dd>
 
-### -param <i>ListCallback </i> [in]
+### -param ListCallback  [in]
 
 <dd>
 <p>Specifies the minidriver-defined <a href="stream.kstrirplistcallback">KStrIrpListCallback</a> function to call to indicate whether a specific IRP should be moved from <i>SourceList</i> to <i>DestinationList</i>, or if enumeration should be terminated.</p>
 </dd>
 
-### -param <i>Context </i> [in]
+### -param Context  [in]
 
 <dd>
 <p>Context passed to <i>ListCallback</i>.</p>

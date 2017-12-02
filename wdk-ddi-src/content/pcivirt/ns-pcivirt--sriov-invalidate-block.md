@@ -55,13 +55,13 @@ typedef struct _SRIOV_INVALIDATE_BLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>VfIndex</b>
+### -field VfIndex
 
 <dd>
 <p>Zero-based index of the virtual function (VF) from the first VF exposed by this physical function (PF).</p>
 </dd>
 
-### -field <b>BlockMask</b>
+### -field BlockMask
 
 <dd>
 <p>a block of configuration data.</p>

@@ -7,7 +7,7 @@ old-location: spb\spb_transfer_descriptor.htm
 old-project: SPB
 ms.assetid: 3D370646-3879-4415-8D80-04D0B23839B0
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/30/2017
 ms.keywords: SPB_TRANSFER_DESCRIPTOR,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ typedef struct _SPB_TRANSFER_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of the entire structure.  Used for versioning.</p>
 </dd>
 
-### -field <b>Direction</b>
+### -field Direction
 
 <dd>
 <p>The direction of the transfer.  This member is set to one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a> enumeration values:</p>
@@ -74,13 +74,13 @@ typedef struct _SPB_TRANSFER_DESCRIPTOR {
 </ul>
 </dd>
 
-### -field <b>TransferLength</b>
+### -field TransferLength
 
 <dd>
 <p>The number of bytes of data to be transferred.</p>
 </dd>
 
-### -field <b>DelayInUs</b>
+### -field DelayInUs
 
 <dd>
 <p>An optional delay, in microseconds, before this transfer begins. For more information, see the following Remarks section.</p>
@@ -128,4 +128,4 @@ typedef struct _SPB_TRANSFER_DESCRIPTOR {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_DESCRIPTOR structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_DESCRIPTOR structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

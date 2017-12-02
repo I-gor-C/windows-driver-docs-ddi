@@ -7,7 +7,7 @@ old-location: netvista\wwan_ussd_request_type.htm
 old-project: netvista
 ms.assetid: 773490EE-ECFC-4089-869D-19683A76E4FA
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _WWAN_USSD_REQUEST_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanUssdRequestInitiate"></a><a id="wwanussdrequestinitiate"></a><a id="WWANUSSDREQUESTINITIATE"></a><b>WwanUssdRequestInitiate</b>
+### -field WwanUssdRequestInitiate
 
 <dd>
 <p>Indicates a request to create a new USSD session and to transmit the accompanying USSD string.</p>
 </dd>
 
-### -field <a id="WwanUssdRequestContinue"></a><a id="wwanussdrequestcontinue"></a><a id="WWANUSSDREQUESTCONTINUE"></a><b>WwanUssdRequestContinue</b>
+### -field WwanUssdRequestContinue
 
 <dd>
 <p>Indicates a request to send the accompanying USSD string using the existing USSD session.</p>
 </dd>
 
-### -field <a id="WwanUssdRequestCancel"></a><a id="wwanussdrequestcancel"></a><a id="WWANUSSDREQUESTCANCEL"></a><b>WwanUssdRequestCancel</b>
+### -field WwanUssdRequestCancel
 
 <dd>
 <p>Indicates a request to terminate the existing USSD session.</p>

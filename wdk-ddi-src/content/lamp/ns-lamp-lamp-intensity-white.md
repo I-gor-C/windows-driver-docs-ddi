@@ -54,7 +54,7 @@ typedef struct LAMP_INTENSITY_WHITE {
 ## -struct-fields
 <dl>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>White light intensity in percentage (0-100).</p>

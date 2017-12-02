@@ -56,13 +56,13 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="UcmTcpciPortControllerHPDStatusLow"></a><a id="ucmtcpciportcontrollerhpdstatuslow"></a><a id="UCMTCPCIPORTCONTROLLERHPDSTATUSLOW"></a><b>UcmTcpciPortControllerHPDStatusLow</b>
+### -field UcmTcpciPortControllerHPDStatusLow
 
 <dd>
 <p>The DisplayPort device is unplugged.</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerHPDStatusHigh"></a><a id="ucmtcpciportcontrollerhpdstatushigh"></a><a id="UCMTCPCIPORTCONTROLLERHPDSTATUSHIGH"></a><b>UcmTcpciPortControllerHPDStatusHigh</b>
+### -field UcmTcpciPortControllerHPDStatusHigh
 
 <dd>
 <p>A DisplayPort device such as a monitor is plugged in.</p>
@@ -89,7 +89,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ioctl_ucmtcpci_port_controller_displayport_hpd_status_changed">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS_CHANGED</a>
+<a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl-ucmtcpci-port-controller-displayport-hpd-status-changed.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS_CHANGED</a>
 </dt>
 </dl>
 <p> </p>

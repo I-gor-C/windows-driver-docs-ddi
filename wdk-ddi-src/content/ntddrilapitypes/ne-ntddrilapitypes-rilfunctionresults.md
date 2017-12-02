@@ -7,7 +7,7 @@ old-location: netvista\rilfunctionresults.htm
 old-project: netvista
 ms.assetid: 9a2b3bdd-4955-4293-b4e7-65da20b0d369
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef enum _RILFUNCTIONRESULTS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_RESULT_ERROR"></a><a id="ril_result_error"></a><b>RIL_RESULT_ERROR</b>
+### -field RIL_RESULT_ERROR
 
 <dd></dd>
 </dl>

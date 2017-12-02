@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Front</b>
+### -field Front
 
 <dd>
 <p>Specifies the front orientation vector of the 3D listener. This member is a structure of type <a href="..\ksmedia\ns-ksmedia--ds3dvector.md">DS3DVECTOR</a>.</p>
 </dd>
 
-### -field <b>Top</b>
+### -field Top
 
 <dd>
 <p>Specifies the top orientation vector of the 3D listener. This member is a structure of type DS3DVECTOR.</p>

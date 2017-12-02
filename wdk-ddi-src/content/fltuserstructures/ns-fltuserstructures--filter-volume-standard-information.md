@@ -7,7 +7,7 @@ old-location: ifsk\filter_volume_standard_information.htm
 old-project: ifsk
 ms.assetid: 51f2f837-7d67-4a9d-a365-d9d1b24977e5
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILTER_VOLUME_STANDARD_INFORMATION, FILTER_VOLUME_STANDARD_INFORMATION, *PFILTER_VOLUME_STANDARD_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ typedef struct _FILTER_VOLUME_STANDARD_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NextEntryOffset</b>
+### -field NextEntryOffset
 
 <dd>
 <p>Read-only offset, in bytes, of the next FILTER_VOLUME_STANDARD_INFORMATION structure if multiple structures are present in the buffer. This member is zero if no other structures follow this one.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A read-only bitmask of system-defined flags that describe attributes of the volume. The following are valid flag values.</p>
@@ -86,25 +86,25 @@ typedef struct _FILTER_VOLUME_STANDARD_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>FrameID</b>
+### -field FrameID
 
 <dd>
 <p>Read-only member used to identify the filter manager frame that the volume is in.</p>
 </dd>
 
-### -field <b>FileSystemType</b>
+### -field FileSystemType
 
 <dd>
 <p>Read-only member used to identify the type of file system being used on the volume.  The possible values for this member are listed in <a href="..\fltuserstructures\ne-fltuserstructures--flt-filesystem-type.md">FLT_FILESYSTEM_TYPE</a>.</p>
 </dd>
 
-### -field <b>FilterVolumeNameLength</b>
+### -field FilterVolumeNameLength
 
 <dd>
 <p>Read-only length, in bytes, of the volume name.</p>
 </dd>
 
-### -field <b>FilterVolumeName</b>
+### -field FilterVolumeName
 
 <dd>
 <p>Read-only name of the volume of <b>FilterVolumeNameLength</b> length.  This Unicode string is not NULL-terminated.</p>
@@ -163,4 +163,4 @@ typedef struct _FILTER_VOLUME_STANDARD_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILTER_VOLUME_STANDARD_INFORMATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILTER_VOLUME_STANDARD_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

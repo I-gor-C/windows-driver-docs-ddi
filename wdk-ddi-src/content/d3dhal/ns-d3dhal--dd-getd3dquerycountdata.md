@@ -58,13 +58,13 @@ typedef struct _DD_GETD3DQUERYCOUNTDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>gdi2</b>
+### -field gdi2
 
 <dd>
 <p>Specifies a <a href="..\d3dhal\ns-d3dhal--dd-getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data for the query.</p>
 </dd>
 
-### -field <b>dwNumQueries</b>
+### -field dwNumQueries
 
 <dd>
 <p>Receives the number of supported query types.</p>

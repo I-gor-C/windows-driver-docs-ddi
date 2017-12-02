@@ -54,7 +54,7 @@ typedef struct _AVC_PIN_COUNT {
 ## -struct-fields
 <dl>
 
-### -field <b>PinCount</b>
+### -field PinCount
 
 <dd>
 <p>This value is filled in by <i>avc.sys</i> on return from the <b>AVC_FUNCTION_GET_PIN_COUNT</b> function.</p>

@@ -55,7 +55,7 @@ VOID VideoPortQuerySystemTime(
 ## -parameters
 <dl>
 
-### -param <i>CurrentTime</i> [out]
+### -param CurrentTime [out]
 
 <dd>
 <p>Pointer to a memory location that will receive the current system time.</p>

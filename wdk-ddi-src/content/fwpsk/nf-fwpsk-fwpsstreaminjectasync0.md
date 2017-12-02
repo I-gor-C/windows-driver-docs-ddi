@@ -7,7 +7,7 @@ old-location: netvista\fwpsstreaminjectasync0.htm
 old-project: netvista
 ms.assetid: d72c3067-21df-40ee-a898-100fcdc5eaca
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsStreamInjectAsync0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ NTSTATUS NTAPI FwpsStreamInjectAsync0(
 ## -parameters
 <dl>
 
-### -param <i>injectionHandle</i> [in]
+### -param injectionHandle [in]
 
 <dd>
 <p>An injection handle that was previously created by a call to the 
@@ -73,19 +73,19 @@ NTSTATUS NTAPI FwpsStreamInjectAsync0(
      FwpsInjectionHandleCreate0</a> function.</p>
 </dd>
 
-### -param <i>injectionContext</i> [in, optional]
+### -param injectionContext [in, optional]
 
 <dd>
 <p>An optional handle to the injection context.</p>
 </dd>
 
-### -param <i>flags</i> [in]
+### -param flags [in]
 
 <dd>
 <p>Reserved. Callout drivers should set this parameter to zero.</p>
 </dd>
 
-### -param <i>flowId</i> [in]
+### -param flowId [in]
 
 <dd>
 <p>A run-time identifier that specifies the data flow into which to inject the data. The run-time
@@ -94,7 +94,7 @@ NTSTATUS NTAPI FwpsStreamInjectAsync0(
      <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function.</p>
 </dd>
 
-### -param <i>calloutId</i> [in]
+### -param calloutId [in]
 
 <dd>
 <p>The run-time identifier for the callout in the filter engine. This identifier was returned when
@@ -104,7 +104,7 @@ NTSTATUS NTAPI FwpsStreamInjectAsync0(
      register the callout with the filter engine.</p>
 </dd>
 
-### -param <i>layerId</i> [in]
+### -param layerId [in]
 
 <dd>
 <p>The run-time identifier for the filtering layer at which the data stream is being processed. This
@@ -116,7 +116,7 @@ NTSTATUS NTAPI FwpsStreamInjectAsync0(
      <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function.</p>
 </dd>
 
-### -param <i>streamFlags</i> [in]
+### -param streamFlags [in]
 
 <dd>
 <p>Flags that specify characteristics of the data stream into which the data is to be injected.
@@ -126,14 +126,14 @@ NTSTATUS NTAPI FwpsStreamInjectAsync0(
 <p></p>
 <dl>
 
-### -param <a id="FWPS_STREAM_FLAG_RECEIVE"></a><a id="fwps_stream_flag_receive"></a><b>FWPS_STREAM_FLAG_RECEIVE</b>
+### -param FWPS_STREAM_FLAG_RECEIVE
 
 <dd>
 <p>Specifies that the data is to be injected into the inbound data stream. This flag is required
        when injecting data into an inbound data stream.</p>
 </dd>
 
-### -param <a id="FWPS_STREAM_FLAG_RECEIVE_DISCONNECT"></a><a id="fwps_stream_flag_receive_disconnect"></a><b>FWPS_STREAM_FLAG_RECEIVE_DISCONNECT</b>
+### -param FWPS_STREAM_FLAG_RECEIVE_DISCONNECT
 
 <dd>
 <p>Specifies that the FIN flag is to be set in the TCP header for the data being injected into the
@@ -142,14 +142,14 @@ NTSTATUS NTAPI FwpsStreamInjectAsync0(
 <div> </div>
 </dd>
 
-### -param <a id="FWPS_STREAM_FLAG_RECEIVE_EXPEDITED"></a><a id="fwps_stream_flag_receive_expedited"></a><b>FWPS_STREAM_FLAG_RECEIVE_EXPEDITED</b>
+### -param FWPS_STREAM_FLAG_RECEIVE_EXPEDITED
 
 <dd>
 <p>Specifies that the data being injected into the inbound data stream is high-priority,
        out-of-band data.</p>
 </dd>
 
-### -param <a id="FWPS_STREAM_FLAG_RECEIVE_PUSH"></a><a id="fwps_stream_flag_receive_push"></a><b>FWPS_STREAM_FLAG_RECEIVE_PUSH</b>
+### -param FWPS_STREAM_FLAG_RECEIVE_PUSH
 
 <dd>
 <p>Specifies that the inbound data has arrived with the PUSH flag set in the TCP header, which
@@ -162,28 +162,28 @@ NTSTATUS NTAPI FwpsStreamInjectAsync0(
 <p></p>
 <dl>
 
-### -param <a id="FWPS_STREAM_FLAG_SEND"></a><a id="fwps_stream_flag_send"></a><b>FWPS_STREAM_FLAG_SEND</b>
+### -param FWPS_STREAM_FLAG_SEND
 
 <dd>
 <p>Specifies that the data is to be injected into the outbound data stream. This flag is required
        when injecting data into an outbound data stream.</p>
 </dd>
 
-### -param <a id="FWPS_STREAM_FLAG_SEND_EXPEDITED"></a><a id="fwps_stream_flag_send_expedited"></a><b>FWPS_STREAM_FLAG_SEND_EXPEDITED</b>
+### -param FWPS_STREAM_FLAG_SEND_EXPEDITED
 
 <dd>
 <p>Specifies that the data being injected into the outbound data stream is high-priority,
        out-of-band data.</p>
 </dd>
 
-### -param <a id="FWPS_STREAM_FLAG_SEND_NODELAY"></a><a id="fwps_stream_flag_send_nodelay"></a><b>FWPS_STREAM_FLAG_SEND_NODELAY</b>
+### -param FWPS_STREAM_FLAG_SEND_NODELAY
 
 <dd>
 <p>Specifies that the callout driver requests that there is no buffering of the data being injected
        into the outbound data stream.</p>
 </dd>
 
-### -param <a id="FWPS_STREAM_FLAG_SEND_DISCONNECT"></a><a id="fwps_stream_flag_send_disconnect"></a><b>FWPS_STREAM_FLAG_SEND_DISCONNECT</b>
+### -param FWPS_STREAM_FLAG_SEND_DISCONNECT
 
 <dd>
 <p>Specifies that the stream is to be disconnected after the data being injected into the outbound
@@ -195,7 +195,7 @@ NTSTATUS NTAPI FwpsStreamInjectAsync0(
 </dl>
 </dd>
 
-### -param <i>netBufferList</i> [in, out]
+### -param netBufferList [in, out]
 
 <dd>
 <p>A pointer to a 
@@ -211,13 +211,13 @@ NTSTATUS NTAPI FwpsStreamInjectAsync0(
      <i>netBufferList</i> can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>dataLength</i> [in]
+### -param dataLength [in]
 
 <dd>
 <p>The number of bytes of data being injected into the data stream.</p>
 </dd>
 
-### -param <i>completionFn</i> [in]
+### -param completionFn [in]
 
 <dd>
 <p>A pointer to a 
@@ -233,7 +233,7 @@ NTSTATUS NTAPI FwpsStreamInjectAsync0(
 <p>This parameter is required and cannot be <b>NULL</b>. If it is <b>NULL</b>, <b>STATUS_FWP_NULL_POINTER</b> will be returned.</p>
 </dd>
 
-### -param <i>completionContext</i> [in, optional]
+### -param completionContext [in, optional]
 
 <dd>
 <p>A pointer to a callout driver–provided context that is passed to the callout function pointed to
@@ -396,4 +396,4 @@ NTSTATUS NTAPI FwpsStreamInjectAsync0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsStreamInjectAsync0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsStreamInjectAsync0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

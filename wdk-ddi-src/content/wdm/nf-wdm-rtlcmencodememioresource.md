@@ -58,25 +58,25 @@ NTSTATUS RtlCmEncodeMemIoResource(
 ## -parameters
 <dl>
 
-### -param <i>Descriptor</i> [in]
+### -param Descriptor [in]
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure to update. </p>
 </dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>The resource type of the memory. This parameter can be <b>CmResourceTypeMemory</b>, <b>CmResourceTypeMemoryLarge</b>, or <b>CmResourceTypePort</b>.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length, in bytes, of the range of allocated addresses.</p>
 </dd>
 
-### -param <i>Start</i> [in]
+### -param Start [in]
 
 <dd>
 <p>The starting address of the range of memory or I/O port addresses.</p>

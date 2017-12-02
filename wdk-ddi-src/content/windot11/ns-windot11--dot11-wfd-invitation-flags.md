@@ -7,7 +7,7 @@ old-location: netvista\dot11_wfd_invitation_flags.htm
 old-project: netvista
 ms.assetid: 9743FF37-0E8A-499F-AADB-9CD7BDC381E0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_WFD_INVITATION_FLAGS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef struct _DOT11_WFD_INVITATION_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>InvitationType:1</b>
+### -field InvitationType:1
 
 <dd>
 <p>The type of group invitation. The invitation types have the following meanings.</p>
@@ -66,7 +66,7 @@ typedef struct _DOT11_WFD_INVITATION_FLAGS {
 <tr>
 <td width="40%"><a id="Join"></a><a id="join"></a><a id="JOIN"></a><dl>
 
-### -field <b>Join</b>
+### -field Join
 
 
 ### -field 0
@@ -80,7 +80,7 @@ typedef struct _DOT11_WFD_INVITATION_FLAGS {
 <tr>
 <td width="40%"><a id="Reinvoke"></a><a id="reinvoke"></a><a id="REINVOKE"></a><dl>
 
-### -field <b>Reinvoke</b>
+### -field Reinvoke
 
 
 ### -field 1
@@ -95,7 +95,7 @@ typedef struct _DOT11_WFD_INVITATION_FLAGS {
 <p> </p>
 </dd>
 
-### -field <b>Reserved:7</b>
+### -field Reserved:7
 
 <dd>
 <p>Reserved.</p>

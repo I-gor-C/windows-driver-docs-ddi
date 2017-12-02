@@ -64,50 +64,50 @@ NTSTATUS ZwQueryDirectoryFileEx(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [in]
+### -param FileHandle [in]
 
 <dd>
 <p>A handle returned by <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> or <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a> for the file object that represents the directory for which information is being requested. The file object must have been opened for asynchronous I/O if the caller specifies a non-<b>NULL</b> value for <i>Event</i> or <i>ApcRoutine</i>.</p>
 </dd>
 
-### -param <i>Event</i> [in, optional]
+### -param Event [in, optional]
 
 <dd>
 <p>An optional handle for a caller-created event. If this parameter is supplied, the caller will be put into a wait state until the requested operation is completed and the given event is set to the Signaled state. This parameter is optional and can be <b>NULL</b>. It must be <b>NULL</b> if the caller will wait for the <i>FileHandle</i> to be set to the Signaled state.</p>
 </dd>
 
-### -param <i>ApcRoutine</i> [in, optional]
+### -param ApcRoutine [in, optional]
 
 <dd>
 <p>An address of an optional, caller-supplied Asynchronous Procedure Call (APC) routine to be called when the requested operation completes. This parameter is optional and can be <b>NULL</b>. If there is an I/O completion object associated with the file object, this parameter must be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ApcContext</i> [in, optional]
+### -param ApcContext [in, optional]
 
 <dd>
 <p>An optional pointer to a caller-determined context area if the caller supplies an APC or if an I/O completion object is associated with the file object. When the operation completes, this context is passed to the APC, if one was specified, or is included as part of the completion message that the I/O Manager posts to the associated I/O completion object. </p>
 <p>This parameter is optional and can be <b>NULL</b>. It must be <b>NULL</b> if <i>ApcRoutine</i> is <b>NULL</b> and there is no I/O completion object associated with the file object.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the operation. For successful calls that return data, the number of bytes written to the <i>FileInformation</i> buffer is returned in the structure's <b>Information</b> member.</p>
 </dd>
 
-### -param <i>FileInformation</i> [out]
+### -param FileInformation [out]
 
 <dd>
 <p>A pointer to a buffer that receives the desired information about the file. The structure of the information returned in the buffer is defined by the <i>FileInformationClass</i> parameter.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The size, in bytes, of the buffer pointed to by <i>FileInformation</i>. The caller should set this parameter according to the given <i>FileInformationClass</i>.</p>
 </dd>
 
-### -param <i>FileInformationClass</i> [in]
+### -param FileInformationClass [in]
 
 <dd>
 <p>Specifies the type of information to be returned about files in the directory. The legal values are as follows:</p>
@@ -216,13 +216,13 @@ NTSTATUS ZwQueryDirectoryFileEx(
 <p> </p>
 </dd>
 
-### -param <i>QueryFlags</i> [in]
+### -param QueryFlags [in]
 
 <dd>
 <p> One or more of the flags contained in SL_QUERY_DIRECTORY_MASK.</p>
 </dd>
 
-### -param <i>FileName</i> [in, optional]
+### -param FileName [in, optional]
 
 <dd>
 <p>An optional pointer to a caller-allocated Unicode string containing the name of a file (or multiple files, if wildcards are used) within the directory specified by <i>FileHandle</i>. This parameter is optional and can be <b>NULL</b>. </p>

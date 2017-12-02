@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY OpenResource(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context) that is used to open the resource.</p>
 </dd>
 
-### -param <i>pResource</i> [in, out]
+### -param pResource [in, out]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-openresource.md">D3DDDIARG_OPENRESOURCE</a> structure that describes the resource that is opened.</p>

@@ -59,37 +59,37 @@ typedef struct _D3DDDIVERTEXELEMENT {
 ## -struct-fields
 <dl>
 
-### -field <b>Stream</b>
+### -field Stream
 
 <dd>
 <p>[in] The number of the stream.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>[in] The offset (if any), in bytes, from the beginning of the stream to the start of the data.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>[in] One of several predefined data types that define the data size. For more information about these types, see the D3DDECLTYPE enumeration type in the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -field <b>Method</b>
+### -field Method
 
 <dd>
 <p>[in] The tessellator processing method. This method determines how the tessellator interprets and operates on the vertex data. For more information about these methods, see the D3DDECLMETHOD enumeration type in the Windows SDK documentation.</p>
 </dd>
 
-### -field <b>Usage</b>
+### -field Usage
 
 <dd>
 <p>[in] The intended use of the vertex data. For more information about the possible uses, see the D3DDECLUSAGE enumeration type in the Windows SDK documentation.</p>
 </dd>
 
-### -field <b>UsageIndex</b>
+### -field UsageIndex
 
 <dd>
 <p>[in] A modification to the usage data that is specified in the <b>Usage</b> member. This modification enables multiple usage types to be specified.</p>

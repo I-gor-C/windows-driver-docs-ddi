@@ -57,25 +57,25 @@ typedef struct _SendCTPassThru_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. </p>
 </dd>
 
-### -field <b>TotalResponseBufferCount</b>
+### -field TotalResponseBufferCount
 
 <dd>
 <p>Contains the size in bytes of the results common transport (CT) command. </p>
 </dd>
 
-### -field <b>ActualResponseBufferCount</b>
+### -field ActualResponseBufferCount
 
 <dd>
 <p>Contains the size in bytes of the data that was actually retrieved. </p>
 </dd>
 
-### -field <b>ResponseBuffer</b>
+### -field ResponseBuffer
 
 <dd>
 <p>Contains the results of the common transport command. </p>

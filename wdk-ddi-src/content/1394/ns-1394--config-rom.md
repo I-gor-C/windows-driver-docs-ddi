@@ -7,7 +7,7 @@ old-location: ieee\config_rom.htm
 old-project: IEEE
 ms.assetid: 0ab96bc2-a89f-42cf-9ee2-020b47dff4cf
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: CONFIG_ROM, CONFIG_ROM, *PCONFIG_ROM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,31 +57,31 @@ typedef struct _CONFIG_ROM {
 ## -struct-fields
 <dl>
 
-### -field <b>CR_Info</b>
+### -field CR_Info
 
 <dd>
 <p>Specifies the first 4 bytes of the configuration ROM. </p>
 </dd>
 
-### -field <b>CR_Signiture</b>
+### -field CR_Signiture
 
 <dd>
 <p>Specifies a signature that will be the same for all 1394 devices.</p>
 </dd>
 
-### -field <b>CR_BusInfoBlockCaps</b>
+### -field CR_BusInfoBlockCaps
 
 <dd>
 <p>Specifies the bus capabilities of the device.</p>
 </dd>
 
-### -field <b>CR_Node_UniqueID</b>
+### -field CR_Node_UniqueID
 
 <dd>
 <p>Specifies the node's 64-bit vendor-assigned unique ID.</p>
 </dd>
 
-### -field <b>CR_Root_Info</b>
+### -field CR_Root_Info
 
 <dd>
 <p>Specifies the first 4 bytes of the root directory information.</p>

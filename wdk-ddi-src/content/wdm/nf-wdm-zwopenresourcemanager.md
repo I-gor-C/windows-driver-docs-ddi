@@ -59,31 +59,31 @@ NTSTATUS ZwOpenResourceManager(
 ## -parameters
 <dl>
 
-### -param <i>ResourceManagerHandle</i> [out]
+### -param ResourceManagerHandle [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the resource manager handle if the call to <b>ZwOpenResourceManager</b> succeeds.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that specifies the caller's requested access to the resource manager object. For more information about how to specify this parameter, see the <i>DesiredAccess</i> parameter of <a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a>. This parameter cannot be zero.</p>
 </dd>
 
-### -param <i>TmHandle</i> [in]
+### -param TmHandle [in]
 
 <dd>
 <p>A handle to a transaction manager object that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreatetransactionmanager.md">ZwCreateTransactionManager</a> or <a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>. </p>
 </dd>
 
-### -param <i>ResourceManagerGuid</i> [in]
+### -param ResourceManagerGuid [in]
 
 <dd>
 <p>A pointer to the GUID that identifies the resource manager to open. </p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in, optional]
+### -param ObjectAttributes [in, optional]
 
 <dd>
 <p>A pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object's attributes. Use the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> routine to initialize this structure, but specify only that routine's <i>InitializedAttributes</i> and <i>Attributes</i> parameters. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE flag in the <i>Attributes</i> parameter. This parameter is optional and can be <b>NULL</b>. </p>

@@ -7,7 +7,7 @@ old-location: netvista\fwpsinjectmacsendasync0.htm
 old-project: netvista
 ms.assetid: 9964D11C-C1A6-4BE7-A8A4-5A0E71801610
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsInjectMacSendAsync0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ NTSTATUS NTAPI FwpsInjectMacSendAsync0(
 ## -parameters
 <dl>
 
-### -param <i>injectionHandle</i> [in]
+### -param injectionHandle [in]
 
 <dd>
 <p>An injection handle that was previously obtained by a call to  the <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a> function with the <i>flags</i> parameter set to FWPS_INJECTION_TYPE_L2. </p>
@@ -72,7 +72,7 @@ NTSTATUS NTAPI FwpsInjectMacSendAsync0(
 <div> </div>
 </dd>
 
-### -param <i>injectionContext</i> [in, optional]
+### -param injectionContext [in, optional]
 
 <dd>
 <p>An optional handle to the injection context. If specified, it can be obtained by calling the 
@@ -82,31 +82,31 @@ NTSTATUS NTAPI FwpsInjectMacSendAsync0(
      <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b>.</p>
 </dd>
 
-### -param <i>flags</i> [in]
+### -param flags [in]
 
 <dd>
 <p>Reserved. Must be set to zero.</p>
 </dd>
 
-### -param <i>layerId</i> [in]
+### -param layerId [in]
 
 <dd>
 <p>The run-time identifier for the filtering layer at which the data stream is being processed. </p>
 </dd>
 
-### -param <i>interfaceIndex</i> [in]
+### -param interfaceIndex [in]
 
 <dd>
 <p>The interface index that is passed to the callout driver's <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> incoming value FWPS_FIELD_<i>Xxx</i>_MAC_FRAME_<i>Xxx</i>_INTERFACE_INDEX.</p>
 </dd>
 
-### -param <i>NdisPortNumber</i> [in]
+### -param NdisPortNumber [in]
 
 <dd>
 <p>The NDIS port number  that is passed to the callout driver's <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> incoming value FWPS_FIELD_<i>Xxx</i>_MAC_FRAME_<i>Xxx</i>_NDIS_PORT.</p>
 </dd>
 
-### -param <i>netBufferLists</i> [in, out]
+### -param netBufferLists [in, out]
 
 <dd>
 <p>A pointer to a 
@@ -120,7 +120,7 @@ NTSTATUS NTAPI FwpsInjectMacSendAsync0(
      IP header.</p>
 </dd>
 
-### -param <i>completionFn</i> [in]
+### -param completionFn [in]
 
 <dd>
 <p>A pointer to a 
@@ -129,7 +129,7 @@ NTSTATUS NTAPI FwpsInjectMacSendAsync0(
      <i>netBufferLists</i> parameter, has been injected into the network stack. This pointer must be specified when injecting cloned or created NET_BUFFER_LIST structures. When injecting original  NET_BUFFER_LIST structures, this parameter can be NULL if the  original structures  are not altered.</p>
 </dd>
 
-### -param <i>completionContext</i> [in, optional]
+### -param completionContext [in, optional]
 
 <dd>
 <p>A pointer to a callout driver–provided context that is passed to the callout function pointed to
@@ -250,4 +250,4 @@ NTSTATUS NTAPI FwpsInjectMacSendAsync0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectMacSendAsync0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectMacSendAsync0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

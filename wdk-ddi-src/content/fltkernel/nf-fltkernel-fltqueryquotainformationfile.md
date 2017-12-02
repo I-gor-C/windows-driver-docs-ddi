@@ -7,7 +7,7 @@ old-location: ifsk\fltqueryquotainformationfile.htm
 old-project: ifsk
 ms.assetid: B460BE83-7050-469A-9AD6-68A47F03EB4B
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltQueryQuotaInformationFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,67 +64,67 @@ NTSTATUS FltQueryQuotaInformationFile(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>An opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>A file object pointer for an open file, directory, storage device, or volume. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>A caller-supplied <b>IO_STATUS_BLOCK</b> to receive the result of the call to <b>FltQueryQuotaInformationFile</b>. If the call  fails because of an invalid <b>SID</b> list, the <b>Information</b> field will contain the location in <i>SidList</i> where the error occurred.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>A pointer to a caller-supplied <a href="..\ntifs\ns-ntifs--file-get-ea-information.md"> FILE_GET_QUOTA_INFORMATION</a>-structured input buffer where the quota information values are to be returned. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length, in bytes, of the buffer that the <i>Buffer</i> parameter points to. </p>
 </dd>
 
-### -param <i>ReturnSingleEntry</i> [in]
+### -param ReturnSingleEntry [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if <b>FltQueryQuotaInformationFile</b> should return only the first entry that is found. </p>
 </dd>
 
-### -param <i>SidList</i> [in, optional]
+### -param SidList [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied <a href="..\ntifs\ns-ntifs--file-get-quota-information.md">FILE_GET_QUOTA_INFORMATION</a>-structured input buffer that specifies the quota information to be queried. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>SidListLength</i> [in]
+### -param SidListLength [in]
 
 <dd>
 <p>The length, in bytes, of the buffer that the <i>SidList</i> parameter points to. </p>
 </dd>
 
-### -param <i>StartSid</i> [in, optional]
+### -param StartSid [in, optional]
 
 <dd>
 <p>The index of the entry at which to begin scanning the file's quota information list. This parameter is ignored if the <i>SidList</i> parameter points to a nonempty list. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>RestartScan</i> [in]
+### -param RestartScan [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if <b>FltQueryQuotaInformationFile</b> should begin the scan at the first entry in the file's quota information list. If this parameter is not set to <b>TRUE</b>, the scan is resumed from a previous call to <b>FltQueryQuotaInformationFile</b>. </p>
 </dd>
 
-### -param <i>LengthReturned</i> [out, optional]
+### -param LengthReturned [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the size, in bytes, of the information returned in <i>Buffer</i>. This parameter is optional and can be <b>NULL</b>. </p>
@@ -215,4 +215,4 @@ NTSTATUS FltQueryQuotaInformationFile(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryQuotaInformationFile function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryQuotaInformationFile function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

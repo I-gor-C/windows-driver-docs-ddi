@@ -58,26 +58,26 @@ typedef struct _D3DKMT_RECLAIMALLOCATIONS {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a handle to the device that created the allocations.</p>
 </dd>
 
-### -field <b>pResources</b>
+### -field pResources
 
 <dd>
 <p>[in] An array of <b>D3DKMT_HANDLE</b> data types that represent Direct3D runtime resource handles.</p>
 </dd>
 
-### -field <b>HandleList</b>
+### -field HandleList
 
 <dd>
 <p>[in] An array of <b>D3DKMT_HANDLE</b> data types that represent kernel-mode handles to the allocations that are to be reclaimed.</p>
 <p>If <b>HandleList</b> is not <b>NULL</b>, the <b>pResources</b> member must be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>pDiscarded</b>
+### -field pDiscarded
 
 <dd>
 <p>[out] An  array of Boolean values that specify whether each resource or allocation was discarded.</p>
@@ -86,7 +86,7 @@ typedef struct _D3DKMT_RECLAIMALLOCATIONS {
 <p>The value of <b>pDiscarded</b> can be <b>NULL</b>. If the driver sets it to <b>NULL</b>, the content of the resource or allocation can be assumed to be lost. If the driver does not need the content of the resource or allocation, setting <b>pDiscarded</b> to <b>NULL</b> might improve performance.</p>
 </dd>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of items in the <b>pResources</b>, <b>HandleList</b>, or  <b>pDiscarded</b> members, whichever is not <b>NULL</b>.</p>

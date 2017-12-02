@@ -64,7 +64,7 @@ KAFFINITY KeQueryActiveProcessors(void);
 
 <p>Callers must also be aware that the value returned by <b>KeQueryActiveProcessors</b> can change during runtime on versions of Windows that support hot-add CPU functionality.</p>
 
-<p>Windows 7 and later versions of Windows support processor groups. Drivers that are designed to handle information about processor groups should use the <a href="..\ntddk\nf-ntddk-kequerygroupaffinity.md">KeQueryGroupAffinity</a> routine, which specifies a processor group, instead of <b>KeQueryActiveProcessors</b>, which does not. However, the implementation of <b>KeQueryActiveProcessors</b> in Windows 7 and later versions of Windows provides compatibility for drivers that were written for earlier versions of Windows, which do not support processor groups. In this implementation, <b>KeQueryActiveProcessors</b> returns an affinity mask that specifies the set of active logical processors in group 0.</p>
+<p>Windows 7 and later versions of Windows support processor groups. Drivers that are designed to handle information about processor groups should use the <a href="..\wdm\nf-wdm-kequerygroupaffinity.md">KeQueryGroupAffinity</a> routine, which specifies a processor group, instead of <b>KeQueryActiveProcessors</b>, which does not. However, the implementation of <b>KeQueryActiveProcessors</b> in Windows 7 and later versions of Windows provides compatibility for drivers that were written for earlier versions of Windows, which do not support processor groups. In this implementation, <b>KeQueryActiveProcessors</b> returns an affinity mask that specifies the set of active logical processors in group 0.</p>
 
 <p>In Windows Vista and later versions of Windows, this routine can be called at any IRQL. However, in Windows Server 2003 and earlier versions of Windows, this routine must be called at IRQL &lt;= APC_LEVEL.</p>
 
@@ -74,7 +74,7 @@ KAFFINITY KeQueryActiveProcessors(void);
 
 <p>For example, if a KAFFINITY value identifies the active processors in a group, the mask bit for a processor is one if the processor is active, and is zero if the processor is not active.</p>
 
-<p>The number of bits in the affinity mask determines the maximum number of logical processors in a group. For a 64-bit version of Windows, the maximum number of processors per group is 64. For a 32-bit version of Windows, the maximum number of processors per group is 32. Call the <a href="..\ntddk\nf-ntddk-kequerymaximumprocessorcountex.md">KeQueryMaximumProcessorCountEx</a> routine to obtain the maximum number of processors per group. This number depends on the hardware configuration of the multiprocessor system, but can never exceed the fixed 64-processor and 32-processor limits that are set by the 64-bit and 32-bit versions of Windows, respectively.</p>
+<p>The number of bits in the affinity mask determines the maximum number of logical processors in a group. For a 64-bit version of Windows, the maximum number of processors per group is 64. For a 32-bit version of Windows, the maximum number of processors per group is 32. Call the <a href="..\wdm\nf-wdm-kequerymaximumprocessorcountex.md">KeQueryMaximumProcessorCountEx</a> routine to obtain the maximum number of processors per group. This number depends on the hardware configuration of the multiprocessor system, but can never exceed the fixed 64-processor and 32-processor limits that are set by the 64-bit and 32-bit versions of Windows, respectively.</p>
 
 <p>The <a href="..\miniport\ns-miniport--group-affinity.md">GROUP_AFFINITY</a> structure contains an affinity mask and a group number. The group number identifies the group to which the affinity mask applies.</p>
 
@@ -88,7 +88,7 @@ KAFFINITY KeQueryActiveProcessors(void);
 
 <p>Review any code that currently references <b>KeNumberProcessors</b> to make sure that it accommodates changes to CPU count in hot-add CPU environments.</p>
 
-<p>You can use the <a href="NULL">PNPCPU</a> tool to simulate hot adding a CPU for testing purposes.</p>
+<p>You can use the <a href="https://msdn.microsoft.com/397283e6-0691-4e55-9507-483bb311b524">PNPCPU</a> tool to simulate hot adding a CPU for testing purposes.</p>
 
 <p>Starting with Windows XP, <b>KeNumberProcessors</b> is an 8-bit integer value that indicates the number of processors in the platform. In earlier versions of Windows, <b>KeNumberProcessors</b> is a pointer to an 8-bit integer value that indicates the number of processors in the platform.</p>
 
@@ -166,7 +166,7 @@ KAFFINITY KeQueryActiveProcessors(void);
 <a href="..\ntddk\nf-ntddk-kequeryactiveprocessorcount.md">KeQueryActiveProcessorCount</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequerygroupaffinity.md">KeQueryGroupAffinity</a>
+<a href="..\wdm\nf-wdm-kequerygroupaffinity.md">KeQueryGroupAffinity</a>
 </dt>
 </dl>
 <p> </p>

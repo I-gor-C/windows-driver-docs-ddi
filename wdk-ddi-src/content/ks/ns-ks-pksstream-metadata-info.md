@@ -59,37 +59,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>BufferSize</b>
+### -field BufferSize
 
 <dd>
 <p>This value is set by the user mode component and is equal to the MaxMetadataBufferSize supplied by the driver.</p>
 </dd>
 
-### -field <b>UsedSize</b>
+### -field UsedSize
 
 <dd>
 <p>The size of the metadata written by the driver in the SystemVa buffer.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>The metadata buffer that is passed down by the user mode component. This is mapped to <i>SystemVa</i>.</p>
 </dd>
 
-### -field <b>SystemVa</b>
+### -field SystemVa
 
 <dd>
 <p>The buffer that is used by the driver to fill with metadata.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Set to KSCAMERA_EXTENDEDPROP_METADATA_SYSTEMMEMORY if the metadata buffer is allocated from the system memory.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>

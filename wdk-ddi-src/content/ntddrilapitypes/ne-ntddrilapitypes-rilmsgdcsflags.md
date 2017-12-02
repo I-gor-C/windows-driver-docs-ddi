@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcsflags.htm
 old-project: netvista
 ms.assetid: 9c69d290-0cc6-4444-b9cb-a9555526e9ed
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILMSGDCSFLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DCSFLAG_COMPRESSED"></a><a id="ril_dcsflag_compressed"></a><b>RIL_DCSFLAG_COMPRESSED</b>
+### -field RIL_DCSFLAG_COMPRESSED
 
 <dd></dd>
 
-### -field <a id="RIL_DCSFLAG_INDICATIONACTIVE"></a><a id="ril_dcsflag_indicationactive"></a><b>RIL_DCSFLAG_INDICATIONACTIVE</b>
+### -field RIL_DCSFLAG_INDICATIONACTIVE
 
 <dd></dd>
 
-### -field <a id="RIL_DCSFLAG_DISCARD"></a><a id="ril_dcsflag_discard"></a><b>RIL_DCSFLAG_DISCARD</b>
+### -field RIL_DCSFLAG_DISCARD
 
 <dd></dd>
 
-### -field <a id="RIL_DCSFLAG_ALL"></a><a id="ril_dcsflag_all"></a><b>RIL_DCSFLAG_ALL</b>
+### -field RIL_DCSFLAG_ALL
 
 <dd></dd>
 </dl>

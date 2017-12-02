@@ -58,31 +58,31 @@ typedef struct _INTERNAL_I8042_HOOK_MOUSE {
 ## -struct-fields
 <dl>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Pointer, if non-<b>NULL</b>, to the context that must be used with the <b>IsrRoutine</b> routine. Otherwise, <b>Context</b> is <b>NULL</b>. </p>
 </dd>
 
-### -field <b>IsrRoutine</b>
+### -field IsrRoutine
 
 <dd>
 <p>Pointer, if non-<b>NULL</b>, to an optional <a href="..\ntdd8042\nc-ntdd8042-pi8042-mouse-isr.md">PI8042_MOUSE_ISR</a> callback that customizes the operation of the I8042prt mouse ISR. Otherwise, <b>IsrRoutine </b>is <b>NULL</b>. </p>
 </dd>
 
-### -field <b>IsrWritePort</b>
+### -field IsrWritePort
 
 <dd>
 <p>Pointer to the system-supplied mouse <a href="..\ntdd8042\nc-ntdd8042-pi8042-isr-write-port.md">PI8042_ISR_WRITE_PORT</a> callback, which writes data to a mouse.</p>
 </dd>
 
-### -field <b>QueueMousePacket</b>
+### -field QueueMousePacket
 
 <dd>
 <p>Pointer to the system-supplied mouse <a href="..\ntdd8042\nc-ntdd8042-pi8042-queue-packet.md">PI8042_QUEUE_PACKET</a> callback, which queues a mouse input data packet for processing by the mouse's ISR deferred procedure call. </p>
 </dd>
 
-### -field <b>CallContext</b>
+### -field CallContext
 
 <dd>
 <p>Pointer to the context that must be used with the <b>IsrWritePort</b> and <b>QueueMousePacket</b> routines. </p>

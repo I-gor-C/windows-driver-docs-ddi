@@ -7,7 +7,7 @@ old-location: wdf\wdfdmatransactiondmacompletedfinal.htm
 old-project: wdf
 ms.assetid: de16eaf4-11f0-428b-8833-1d1e6ef78853
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDmaTransactionDmaCompletedFinal
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ BOOLEAN WdfDmaTransactionDmaCompletedFinal(
 ## -parameters
 <dl>
 
-### -param <i>DmaTransaction</i> [in]
+### -param DmaTransaction [in]
 
 <dd>
 <p>A handle to a DMA transaction object that the driver obtained from a previous call to <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>.</p>
 </dd>
 
-### -param <i>FinalTransferredLength</i> [in]
+### -param FinalTransferredLength [in]
 
 <dd>
 <p>The number of bytes that the device transferred.</p>
 </dd>
 
-### -param <i>Status</i> [out]
+### -param Status [out]
 
 <dd>
 <p>A pointer to a location that receives the status of the DMA transfer. For more information, see the Remarks section for <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompleted.md">WdfDmaTransactionDmaCompleted</a>.</p>
@@ -93,7 +93,7 @@ BOOLEAN WdfDmaTransactionDmaCompletedFinal(
 
 <p>When your driver calls <b>WdfDmaTransactionDmaCompletedFinal</b>, the driver supplies the number of bytes that were transferred. The return value is always <b>TRUE</b>, because the framework will not attempt to transfer any more bytes for the specified transaction. </p>
 
-<p>For more information about completing DMA transfers, see <a href="NULL">Completing a DMA Transfer</a>. </p>
+<p>For more information about completing DMA transfers, see <a href="wdf.completing_a_dma_transfer">Completing a DMA Transfer</a>. </p>
 
 <p>The following code example notifies the framework that a device's DMA transfer operation has completed with an underrun condition.</p>
 
@@ -169,4 +169,4 @@ BOOLEAN WdfDmaTransactionDmaCompletedFinal(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionDmaCompletedFinal method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionDmaCompletedFinal method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

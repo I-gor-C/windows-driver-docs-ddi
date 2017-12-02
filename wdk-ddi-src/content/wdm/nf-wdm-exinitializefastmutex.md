@@ -55,7 +55,7 @@ VOID ExInitializeFastMutex(
 ## -parameters
 <dl>
 
-### -param <i>FastMutex</i> [out]
+### -param FastMutex [out]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff545715">FAST_MUTEX</a> structure, which represents the fast mutex, in the nonpaged memory pool. The allocation must be 4-byte aligned on 32-bit platforms, and 8-byte aligned on 64-bit platforms.</p>

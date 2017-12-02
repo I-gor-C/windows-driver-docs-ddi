@@ -56,13 +56,13 @@ VOID ExSetResourceOwnerPointer(
 ## -parameters
 <dl>
 
-### -param <i>Resource</i> [in, out]
+### -param Resource [in, out]
 
 <dd>
 <p>A pointer to an executive resource owned by the current thread.</p>
 </dd>
 
-### -param <i>OwnerPointer</i> [in]
+### -param OwnerPointer [in]
 
 <dd>
 <p>A pointer to an owner thread pointer of type ERESOURCE_THREAD (for additional requirements, see the following Remarks section).</p>

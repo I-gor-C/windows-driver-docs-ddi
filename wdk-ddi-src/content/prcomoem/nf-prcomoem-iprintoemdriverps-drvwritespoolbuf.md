@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <code>IPrintOemDriverPS::DrvWriteSpoolBuf</code> method is provided by the Pscript5 driver so that <a href="NULL">rendering plug-ins</a> can send printer data to the spooler.</p>
+<p>The <code>IPrintOemDriverPS::DrvWriteSpoolBuf</code> method is provided by the Pscript5 driver so that <a href="https://msdn.microsoft.com/e55ca083-2790-4929-9e5b-6fce49eb0404">rendering plug-ins</a> can send printer data to the spooler.</p>
 
 
 ## -syntax
@@ -58,25 +58,25 @@ HRESULT DrvWriteSpoolBuf(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pBuffer</i> 
+### -param pBuffer 
 
 <dd>
 <p>Caller-supplied pointer to a buffer containing data to be sent to the print spooler.</p>
 </dd>
 
-### -param <i>cbSize</i> 
+### -param cbSize 
 
 <dd>
 <p>Caller-supplied value representing the size, in bytes, of the buffer pointed to by <i>pBuffer</i>.</p>
 </dd>
 
-### -param <i>pdwResult</i> [out]
+### -param pdwResult [out]
 
 <dd>
 <p>Receives a method-supplied value representing the number of bytes sent to the spooler.</p>
@@ -95,7 +95,7 @@ HRESULT DrvWriteSpoolBuf(
 <p> </p>
 
 ## -remarks
-<p>Rendering plug-ins are described in <a href="NULL">Customizing Microsoft's Printer Drivers</a>.</p>
+<p>Rendering plug-ins are described in <a href="https://msdn.microsoft.com/b7761209-1f6f-4288-af47-4ed855c2e629">Customizing Microsoft's Printer Drivers</a>.</p>
 
 ## -requirements
 <table>

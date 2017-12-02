@@ -59,37 +59,37 @@ typedef struct tagKS_BDA_FRAME_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ExtendedHeaderSize</b>
+### -field ExtendedHeaderSize
 
 <dd>
 <p>Size, in bytes, of the BDA extensions described in this extended header structure.</p>
 </dd>
 
-### -field <b>dwFrameFlags</b>
+### -field dwFrameFlags
 
 <dd>
 <p>Flags specific to BDA extensions. </p>
 </dd>
 
-### -field <b>ulEvent</b>
+### -field ulEvent
 
 <dd>
 <p>Identifier of an event.</p>
 </dd>
 
-### -field <b>ulChannelNumber</b>
+### -field ulChannelNumber
 
 <dd>
 <p>Channel number of a television program.</p>
 </dd>
 
-### -field <b>ulSubchannelNumber</b>
+### -field ulSubchannelNumber
 
 <dd>
 <p>Subchannel number of a television program.</p>
 </dd>
 
-### -field <b>ulReason</b>
+### -field ulReason
 
 <dd>
 <p>Identifies the reason the packet was transferred.</p>

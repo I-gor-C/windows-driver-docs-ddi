@@ -7,7 +7,7 @@ old-location: image\iwiaerrorhandler_reportstatus.htm
 old-project: image
 ms.assetid: c244d5a1-d3c1-4f8f-9b55-3729e5f13887
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IWiaErrorHandler, ReportStatus, IWiaErrorHandler::ReportStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ HRESULT ReportStatus(
 ## -parameters
 <dl>
 
-### -param <i>lFlags</i> [in]
+### -param lFlags [in]
 
 <dd>
 <p>Currently unused. Should be set to zero. </p>
 </dd>
 
-### -param <i>hwndParent</i> [in]
+### -param hwndParent [in]
 
 <dd>
 <p>Caller supplied handle of the window that should be used as the parent window for any dialog boxes. If this is set to <b>NULL</b>, no dialog boxes should be displayed.</p>
 </dd>
 
-### -param <i>pWiaItem2</i> [in]
+### -param pWiaItem2 [in]
 
 <dd>
 <p>Pointer to the <b>IWiaItem2</b> item being transferred. <b>IWiaItem2</b> is described in the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -param <i>hrStatus</i> [in]
+### -param hrStatus [in]
 
 <dd>
 <p>HRESULT variable that contains the status code received by the WIA transfer method, for example the <b>IWiaDataCallback::BandedDataCallback</b> method (described in the Windows SDK documentation).</p>
 </dd>
 
-### -param <i>lPercentComplete</i> [in]
+### -param lPercentComplete [in]
 
 <dd>
 <p>Size of the data, in bytes, the <i>pbData</i> pointer refers to.</p>
@@ -148,4 +148,4 @@ HRESULT ReportStatus(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaErrorHandler::ReportStatus method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaErrorHandler::ReportStatus method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

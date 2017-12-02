@@ -55,13 +55,13 @@ NTSTATUS KsCreateDefaultSecurity(
 ## -parameters
 <dl>
 
-### -param <i>ParentSecurity</i> [in, optional]
+### -param ParentSecurity [in, optional]
 
 <dd>
 <p>Points to the parent object's security descriptor, describing inherited security parameters. This argument is optional.</p>
 </dd>
 
-### -param <i>DefaultSecurity</i> [out]
+### -param DefaultSecurity [out]
 
 <dd>
 <p>Points to the place in which to put the returned default security descriptor.</p>

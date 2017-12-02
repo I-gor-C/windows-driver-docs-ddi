@@ -58,31 +58,31 @@ NTSTATUS KsMethodHandlerWithAllocator(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP with the method request being handled.</p>
 </dd>
 
-### -param <i>MethodSetsCount</i> [in]
+### -param MethodSetsCount [in]
 
 <dd>
 <p>Indicates the number of method set structures being passed.</p>
 </dd>
 
-### -param <i>MethodSet</i> [in]
+### -param MethodSet [in]
 
 <dd>
 <p>Specifies the pointer to the list of method set information.</p>
 </dd>
 
-### -param <i>Allocator</i> [in, optional]
+### -param Allocator [in, optional]
 
 <dd>
 <p>Optionally points to an allocation function that will be used to allocate memory to store the method parameters.</p>
 </dd>
 
-### -param <i>MethodItemSize</i> [in, optional]
+### -param MethodItemSize [in, optional]
 
 <dd>
 <p>Optionally contains the size of each KSMETHOD_ITEM structure in each list of methods. The method item may be extended in order to store private information. If this parameter is zero, the structure size is assumed to be normal. If it is greater than or equal to a method item structure, the KSMETHOD_ITEM_IRP_STORAGE macro can be used to return a pointer to the method item so the custom data can be retrieved. On 64-bit platforms, this parameter must be a multiple of 8.</p>

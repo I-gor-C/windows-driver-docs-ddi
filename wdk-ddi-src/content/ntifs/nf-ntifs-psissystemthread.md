@@ -54,7 +54,7 @@ BOOLEAN PsIsSystemThread(
 ## -parameters
 <dl>
 
-### -param <i>Thread</i> [in]
+### -param Thread [in]
 
 <dd>
 <p>Pointer to the thread to be checked. </p>
@@ -133,7 +133,7 @@ BOOLEAN PsIsSystemThread(
 <a href="..\ntifs\nf-ntifs-ioissystemthread.md">IoIsSystemThread</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 </dl>
 <p> </p>

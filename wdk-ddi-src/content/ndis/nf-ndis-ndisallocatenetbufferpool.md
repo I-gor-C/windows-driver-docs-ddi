@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatenetbufferpool.htm
 old-project: netvista
 ms.assetid: bc27758a-a793-48a1-a6ab-bd193aa9c61a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisAllocateNetBufferPool
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ NDIS_HANDLE NdisAllocateNetBufferPool(
 ## -parameters
 <dl>
 
-### -param <i>NdisHandle</i> [in, optional]
+### -param NdisHandle [in, optional]
 
 <dd>
 <p>An NDIS handle that was obtained during caller initialization.</p>
 </dd>
 
-### -param <i>Parameters</i> [in]
+### -param Parameters [in]
 
 <dd>
 <p>A pointer to a NET_BUFFER_POOL_PARAMETERS structure that defines the parameters for the pool. The
@@ -87,7 +87,7 @@ NDIS_HANDLE NdisAllocateNetBufferPool(
 <p></p>
 <dl>
 
-### -param <a id="Header"></a><a id="header"></a><a id="HEADER"></a><b>Header</b>
+### -param Header
 
 <dd>
 <p>The 
@@ -99,7 +99,7 @@ NDIS_HANDLE NdisAllocateNetBufferPool(
        <b>Size</b> member to NDIS_SIZEOF_NET_BUFFER_POOL_PARAMETERS_REVISION_1.</p>
 </dd>
 
-### -param <a id="PoolTag"></a><a id="pooltag"></a><a id="POOLTAG"></a><b>PoolTag</b>
+### -param PoolTag
 
 <dd>
 <p>A kernel pool tag that the caller uses when it allocates 
@@ -109,7 +109,7 @@ NDIS_HANDLE NdisAllocateNetBufferPool(
        are allocated from this pool.</p>
 </dd>
 
-### -param <a id="DataSize"></a><a id="datasize"></a><a id="DATASIZE"></a><b>DataSize</b>
+### -param DataSize
 
 <dd>
 <p>The default data size for data buffers associated with this pool. The caller must set this value
@@ -240,4 +240,4 @@ NDIS_HANDLE NdisAllocateNetBufferPool(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferPool function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferPool function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

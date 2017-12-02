@@ -55,13 +55,13 @@ NTSTATUS UnregisterSubdevice(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object for the adapter device. This parameter must point to a system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
 </dd>
 
-### -param <i>Unknown</i> [in]
+### -param Unknown [in]
 
 <dd>
 <p>Pointer to the <a href="..\portcls\nn-portcls-iport.md">IPort</a> interface of the port driver object that is bound to the subdevice.</p>
@@ -72,7 +72,7 @@ NTSTATUS UnregisterSubdevice(
 <p><b>UnregisterSubdevice</b> returns STATUS_SUCCESS if the call was successful. Otherwise, it returns an appropriate error code.</p>
 
 ## -remarks
-<p>For more information, see <a href="NULL">Dynamic Audio Subdevices</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890-aae1-5ecf58f2e22a">Dynamic Audio Subdevices</a>.</p>
 
 ## -requirements
 <table>

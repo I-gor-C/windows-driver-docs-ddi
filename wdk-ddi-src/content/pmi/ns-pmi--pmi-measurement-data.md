@@ -55,13 +55,13 @@ typedef struct _PMI_MEASUREMENT_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>A value that specifies the version of this structure. For Windows 7, Windows Server 2008 R2, and later versions of Windows, this value must be 1.</p>
 </dd>
 
-### -field <b>CurrentPower</b>
+### -field CurrentPower
 
 <dd>
 <p>A value, in units of milliwatts (mW), that specifies the current power meter measurement.</p>

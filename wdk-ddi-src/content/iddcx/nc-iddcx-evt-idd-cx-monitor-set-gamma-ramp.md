@@ -60,7 +60,7 @@ typedef EVT_IDD_CX_MONITOR_SET_GAMMA_RAMP PFN_IDD_CX_MONITOR_SET_GAMMA_RAMP;
 ## -parameters
 <dl>
 
-### -param <i>MonitorObject</i> [in]
+### -param MonitorObject [in]
 
 <dd>
 <p>
@@ -68,7 +68,7 @@ typedef EVT_IDD_CX_MONITOR_SET_GAMMA_RAMP PFN_IDD_CX_MONITOR_SET_GAMMA_RAMP;
                 A handle by the OS to identify the monitor to set a gamma ramp for.</p>
 </dd>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>

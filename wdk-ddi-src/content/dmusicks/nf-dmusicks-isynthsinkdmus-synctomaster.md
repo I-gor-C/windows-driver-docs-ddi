@@ -55,13 +55,13 @@ NTSTATUS SyncToMaster(
 ## -parameters
 <dl>
 
-### -param <i>rtTime</i> [in]
+### -param rtTime [in]
 
 <dd>
 <p>Specifies the reference time from the master clock. Reference time is measured in 100-nanosecond units.</p>
 </dd>
 
-### -param <i>fStart</i> [in]
+### -param fStart [in]
 
 <dd>
 <p>Specifies whether the sample clock is to be reset to zero with this reference time. If <b>TRUE</b>, the sample clock must be reset to zero at time <i>rtTime</i>. If <b>FALSE</b>, the sample clock is not reset.</p>

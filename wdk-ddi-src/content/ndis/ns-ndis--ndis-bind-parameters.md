@@ -7,7 +7,7 @@ old-location: netvista\ndis_bind_parameters.htm
 old-project: netvista
 ms.assetid: 0a4866a8-a2f2-447b-8aa9-73203b7fc4bb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_BIND_PARAMETERS, NDIS_BIND_PARAMETERS, *PNDIS_BIND_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -105,7 +105,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -119,7 +119,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_BIND_PARAMETERS_REVISION_4"></a><a id="ndis_bind_parameters_revision_4"></a>NDIS_BIND_PARAMETERS_REVISION_4
+### -field NDIS_BIND_PARAMETERS_REVISION_4
 
 <dd>
 <p>Added various members for NDIS 6.30.</p>
@@ -127,7 +127,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
         <b>Size</b> member to NDIS_SIZEOF_BIND_PARAMETERS_REVISION_4.</p>
 </dd>
 
-### -field <a id="NDIS_BIND_PARAMETERS_REVISION_3"></a><a id="ndis_bind_parameters_revision_3"></a>NDIS_BIND_PARAMETERS_REVISION_3
+### -field NDIS_BIND_PARAMETERS_REVISION_3
 
 <dd>
 <p>Added the 
@@ -138,7 +138,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
         <b>Size</b> member to NDIS_SIZEOF_BIND_PARAMETERS_REVISION_3.</p>
 </dd>
 
-### -field <a id="NDIS_BIND_PARAMETERS_REVISION_2"></a><a id="ndis_bind_parameters_revision_2"></a>NDIS_BIND_PARAMETERS_REVISION_2
+### -field NDIS_BIND_PARAMETERS_REVISION_2
 
 <dd>
 <p>Added the 
@@ -147,7 +147,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
         <b>Size</b> member to NDIS_SIZEOF_BIND_PARAMETERS_REVISION_2.</p>
 </dd>
 
-### -field <a id="NDIS_BIND_PARAMETERS_REVISION_1"></a><a id="ndis_bind_parameters_revision_1"></a>NDIS_BIND_PARAMETERS_REVISION_1
+### -field NDIS_BIND_PARAMETERS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.0.</p>
@@ -157,7 +157,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>ProtocolSection</b>
+### -field ProtocolSection
 
 <dd>
 <p>A pointer to a Unicode string that contains a registry path. The path starts from the protocol
@@ -173,20 +173,20 @@ typedef struct _NDIS_BIND_PARAMETERS {
      the binding between the driver and the underlying miniport adapter.</p>
 </dd>
 
-### -field <b>AdapterName</b>
+### -field AdapterName
 
 <dd>
 <p>A pointer to a Unicode string that contains the name of the underlying miniport adapter to which 
      <i>ProtocolBindAdapterEx</i> should bind.</p>
 </dd>
 
-### -field <b>PhysicalDeviceObject</b>
+### -field PhysicalDeviceObject
 
 <dd>
 <p>The physical device object for the underlying miniport adapter.</p>
 </dd>
 
-### -field <b>MediaType</b>
+### -field MediaType
 
 <dd>
 <p>The 
@@ -196,14 +196,14 @@ typedef struct _NDIS_BIND_PARAMETERS {
      <a href="..\ntddndis\ne-ntddndis--ndis-medium.md">NDIS_MEDIUM</a>.</p>
 </dd>
 
-### -field <b>MtuSize</b>
+### -field MtuSize
 
 <dd>
 <p>The maximum transfer unit (MTU) size. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569598">OID_GEN_MAXIMUM_FRAME_SIZE</a>.</p>
 </dd>
 
-### -field <b>MaxXmitLinkSpeed</b>
+### -field MaxXmitLinkSpeed
 
 <dd>
 <p>The maximum transmit link speed of the underlying adapter in bits per second. For more
@@ -211,7 +211,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569602">OID_GEN_MAX_LINK_SPEED</a>.</p>
 </dd>
 
-### -field <b>XmitLinkSpeed</b>
+### -field XmitLinkSpeed
 
 <dd>
 <p>The current transmit link speed of the underlying adapter in bits per second. For more
@@ -219,7 +219,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569594">OID_GEN_LINK_SPEED_EX</a>.</p>
 </dd>
 
-### -field <b>MaxRcvLinkSpeed</b>
+### -field MaxRcvLinkSpeed
 
 <dd>
 <p>The maximum receive link speed of the underlying adapter in bits per second. For more information,
@@ -227,7 +227,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569602">OID_GEN_MAX_LINK_SPEED</a>.</p>
 </dd>
 
-### -field <b>RcvLinkSpeed</b>
+### -field RcvLinkSpeed
 
 <dd>
 <p>The current receive link speed of the underlying adapter in bits per second. For more information,
@@ -235,7 +235,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569594">OID_GEN_LINK_SPEED_EX</a>.</p>
 </dd>
 
-### -field <b>MediaConnectState</b>
+### -field MediaConnectState
 
 <dd>
 <p>The media connect state for the underlying miniport adapter. For more information, see 
@@ -243,21 +243,21 @@ typedef struct _NDIS_BIND_PARAMETERS {
      OID_GEN_MEDIA_CONNECT_STATUS_EX</a>.</p>
 </dd>
 
-### -field <b>MediaDuplexState</b>
+### -field MediaDuplexState
 
 <dd>
 <p>The media duplex state for the underlying miniport adapter. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569606">OID_GEN_MEDIA_DUPLEX_STATE</a>.</p>
 </dd>
 
-### -field <b>LookaheadSize</b>
+### -field LookaheadSize
 
 <dd>
 <p>The lookahead size for the underlying miniport adapter. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569574">OID_GEN_CURRENT_LOOKAHEAD</a>.</p>
 </dd>
 
-### -field <b>PowerManagementCapabilities</b>
+### -field PowerManagementCapabilities
 
 <dd>
 <p>The Plug and Play capabilities of the underlying miniport adapter. For more information, see 
@@ -266,7 +266,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      <b>PowerManagementCapabilitiesEx</b> member instead.</p>
 </dd>
 
-### -field <b>SupportedPacketFilters</b>
+### -field SupportedPacketFilters
 
 <dd>
 <p>A set of flags that identify the types of network packets that the underlying miniport adapter can
@@ -275,7 +275,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      OID_GEN_SUPPORTED_PACKET_FILTERS</a>.</p>
 </dd>
 
-### -field <b>MaxMulticastListSize</b>
+### -field MaxMulticastListSize
 
 <dd>
 <p>The multicast address list size for the underlying miniport adapter. For more information, see 
@@ -283,13 +283,13 @@ typedef struct _NDIS_BIND_PARAMETERS {
      OID_802_3_MAXIMUM_LIST_SIZE</a>.</p>
 </dd>
 
-### -field <b>MacAddressLength</b>
+### -field MacAddressLength
 
 <dd>
 <p>The MAC address length, in bytes. The MAC address length is specific to the type of media.</p>
 </dd>
 
-### -field <b>CurrentMacAddress</b>
+### -field CurrentMacAddress
 
 <dd>
 <p>The current MAC address. For example, the 
@@ -297,14 +297,14 @@ typedef struct _NDIS_BIND_PARAMETERS {
      specifies the current MAC address for IEEE 802.3 drivers.</p>
 </dd>
 
-### -field <b>PhysicalMediumType</b>
+### -field PhysicalMediumType
 
 <dd>
 <p>The physical medium type for the miniport adapter. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569621">OID_GEN_PHYSICAL_MEDIUM</a>.</p>
 </dd>
 
-### -field <b>RcvScaleCapabilities</b>
+### -field RcvScaleCapabilities
 
 <dd>
 <p>The <a href="netvista.ndis_receive_side_scaling2">receive side scaling (RSS)</a> capabilities of the NIC. For more information, see 
@@ -312,7 +312,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      OID_GEN_RECEIVE_SCALE_CAPABILITIES</a>.</p>
 </dd>
 
-### -field <b>BoundIfNetluid</b>
+### -field BoundIfNetluid
 
 <dd>
 <p>The NDIS 
@@ -324,7 +324,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      module.</p>
 </dd>
 
-### -field <b>BoundIfIndex</b>
+### -field BoundIfIndex
 
 <dd>
 <p>The NDIS network interface index of the highest level interface that is stacked on the miniport
@@ -332,7 +332,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      adapter, this is the ifIndex of the highest level virtual miniport or filter module.</p>
 </dd>
 
-### -field <b>LowestIfNetluid</b>
+### -field LowestIfNetluid
 
 <dd>
 <p>The NDIS 
@@ -342,14 +342,14 @@ typedef struct _NDIS_BIND_PARAMETERS {
      NDIS network interface of the miniport adapter at the bottom of a filter stack.</p>
 </dd>
 
-### -field <b>LowestIfIndex</b>
+### -field LowestIfIndex
 
 <dd>
 <p>The NDIS network interface index of lowest level interface on a binding. That is, the NDIS network
      interface of the miniport adapter at the bottom of a filter stack.</p>
 </dd>
 
-### -field <b>AccessType</b>
+### -field AccessType
 
 <dd>
 <p>A 
@@ -357,7 +357,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      access type.</p>
 </dd>
 
-### -field <b>DirectionType</b>
+### -field DirectionType
 
 <dd>
 <p>A 
@@ -365,7 +365,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      interface direction type.</p>
 </dd>
 
-### -field <b>ConnectionType</b>
+### -field ConnectionType
 
 <dd>
 <p>The NDIS network interface connection type. Use <b>NET_IF_CONNECTION_DEDICATED</b> for a typical Ethernet
@@ -374,21 +374,21 @@ typedef struct _NDIS_BIND_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NET_IF_CONNECTION_DEDICATED"></a><a id="net_if_connection_dedicated"></a>NET_IF_CONNECTION_DEDICATED
+### -field NET_IF_CONNECTION_DEDICATED
 
 <dd>
 <p>Specifies the dedicated connection type. The connection comes up automatically when media sense
        is <b>TRUE</b>. For example, an Ethernet connection is dedicated.</p>
 </dd>
 
-### -field <a id="NET_IF_CONNECTION_PASSIVE"></a><a id="net_if_connection_passive"></a>NET_IF_CONNECTION_PASSIVE
+### -field NET_IF_CONNECTION_PASSIVE
 
 <dd>
 <p>Specifies the passive connection type. The other end must bring up the connection to the local
        station. For example, the RAS interface is passive.</p>
 </dd>
 
-### -field <a id="NET_IF_CONNECTION_DEMAND"></a><a id="net_if_connection_demand"></a>NET_IF_CONNECTION_DEMAND
+### -field NET_IF_CONNECTION_DEMAND
 
 <dd>
 <p>Specifies the demand-dial connection type. A demand-dial connection comes up in response to a
@@ -397,7 +397,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>IfType</b>
+### -field IfType
 
 <dd>
 <p>The Internet Assigned Numbers Authority (IANA) interface type. For example,
@@ -407,39 +407,39 @@ typedef struct _NDIS_BIND_PARAMETERS {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff565767">NDIS Interface Types</a>.</p>
 </dd>
 
-### -field <b>IfConnectorPresent</b>
+### -field IfConnectorPresent
 
 <dd>
 <p>A Boolean value that indicates if a connector is present. NDIS sets this value to <b>TRUE</b> if there is
      a physical adapter.</p>
 </dd>
 
-### -field <b>ActivePorts</b>
+### -field ActivePorts
 
 <dd>
 <p>To be determined.</p>
 </dd>
 
-### -field <b>DataBackFillSize</b>
+### -field DataBackFillSize
 
 <dd>
 <p>The required data backfill size, in bytes, of the underlying driver stack.</p>
 </dd>
 
-### -field <b>ContextBackFillSize</b>
+### -field ContextBackFillSize
 
 <dd>
 <p>The required context backfill size, in bytes, of the underlying driver stack.</p>
 </dd>
 
-### -field <b>MacOptions</b>
+### -field MacOptions
 
 <dd>
 <p>The MAC options for the miniport adapter. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569597">OID_GEN_MAC_OPTIONS</a>.</p>
 </dd>
 
-### -field <b>CompartmentId</b>
+### -field CompartmentId
 
 <dd>
 <p>The compartment to which the underlying interface belongs or one of the following values:
@@ -447,13 +447,13 @@ typedef struct _NDIS_BIND_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NET_IF_COMPARTMENT_ID_UNSPECIFIED"></a><a id="net_if_compartment_id_unspecified"></a>NET_IF_COMPARTMENT_ID_UNSPECIFIED
+### -field NET_IF_COMPARTMENT_ID_UNSPECIFIED
 
 <dd>
 <p>Specifies that the compartment identifier is not used or specified.</p>
 </dd>
 
-### -field <a id="NET_IF_COMPARTMENT_ID_PRIMARY"></a><a id="net_if_compartment_id_primary"></a>NET_IF_COMPARTMENT_ID_PRIMARY
+### -field NET_IF_COMPARTMENT_ID_PRIMARY
 
 <dd>
 <p>Specifies the default compartment identifier. Third party interface providers must always
@@ -463,17 +463,17 @@ typedef struct _NDIS_BIND_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>DefaultOffloadConfiguration</b>
+### -field DefaultOffloadConfiguration
 
 <dd>
 <p>A pointer to an 
-     <a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a> structure. This structure
+     <a href="..\ntddndis\ns-ntddndis--ndis-offload.md">NDIS_OFFLOAD</a> structure. This structure
      specifies the capabilities for a task-offload-capable miniport adapter. For more information, see 
      <a href="netvista.oid_tcp_offload_current_config">
      OID_TCP_OFFLOAD_CURRENT_CONFIG</a>.</p>
 </dd>
 
-### -field <b>TcpConnectionOffloadCapabilities</b>
+### -field TcpConnectionOffloadCapabilities
 
 <dd>
 <p>A pointer to an 
@@ -482,7 +482,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      provided by the underlying miniport adapter.</p>
 </dd>
 
-### -field <b>BoundAdapterName</b>
+### -field BoundAdapterName
 
 <dd>
 <p>A pointer to a Unicode string that contains the name of the highest-level miniport adapter that is
@@ -491,7 +491,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      filter intermediate driver virtual miniport.</p>
 </dd>
 
-### -field <b>HDSplitCurrentConfig</b>
+### -field HDSplitCurrentConfig
 
 <dd>
 <p>A pointer to an 
@@ -501,7 +501,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
       not support header-data split.</p>
 </dd>
 
-### -field <b>ReceiveFilterCapabilities</b>
+### -field ReceiveFilterCapabilities
 
 <dd>
 <p>A pointer to an 
@@ -511,7 +511,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      support receive filtering.</p>
 </dd>
 
-### -field <b>PowerManagementCapabilitiesEx</b>
+### -field PowerManagementCapabilitiesEx
 
 <dd>
 <p>A pointer to an 
@@ -520,7 +520,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      NDIS 6.20 and later drivers.</p>
 </dd>
 
-### -field <b>NicSwitchCapabilities</b>
+### -field NicSwitchCapabilities
 
 <dd>
 <p>A pointer to an 
@@ -530,25 +530,25 @@ typedef struct _NDIS_BIND_PARAMETERS {
      switch features.</p>
 </dd>
 
-### -field <b>NDKEnabled</b>
+### -field NDKEnabled
 
 <dd>
 <p>NDIS sets this value to <b>TRUE</b> if the network direct kernel provider interface (NDKPI) is currently enabled on the underlying miniport adapter.</p>
 </dd>
 
-### -field <b>NDKCapabilities</b>
+### -field NDKCapabilities
 
 <dd>
 <p>A pointer to an <a href="..\ntddndis\ns-ntddndis--ndis-ndk-capabilities.md">NDIS_NDK_CAPABILITIES</a> structure. This structure specifies the NDKPI capabilities that are currently enabled on the underlying miniport adapter. This value can be <b>NULL</b> if the miniport adapter does not support NDKPI.</p>
 </dd>
 
-### -field <b>SriovCapabilities</b>
+### -field SriovCapabilities
 
 <dd>
 <p>A pointer to an <a href="..\ntddndis\ns-ntddndis--ndis-sriov-capabilities.md">NDIS_SRIOV_CAPABILITIES</a> structure. This structure specifies the single root I/O virtualization (SR-IOV) capabilities that are currently enabled on the underlying miniport adapter. This value can be <b>NULL</b> if the miniport adapter does not support SR-IOV features.</p>
 </dd>
 
-### -field <b>NicSwitchArray</b>
+### -field NicSwitchArray
 
 <dd>
 <p>A pointer to an <a href="..\ntddndis\ns-ntddndis--ndis-nic-switch-info-array.md">NDIS_NIC_SWITCH_INFO_ARRAY</a> structure.  This array enumerates the NIC switches that have been created on the miniport adapter. NIC switches can only be created if SR-IOV is supported and enabled on the adapter. </p>
@@ -603,7 +603,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
 <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-offload.md">NDIS_OFFLOAD</a>
 </dt>
 <dt>
 <a href="..\ntddndis\ns-ntddndis--ndis-pm-capabilities.md">NDIS_PM_CAPABILITIES</a>
@@ -680,4 +680,4 @@ typedef struct _NDIS_BIND_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_BIND_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_BIND_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

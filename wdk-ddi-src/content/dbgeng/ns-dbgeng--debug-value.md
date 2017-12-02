@@ -7,7 +7,7 @@ old-location: debugger\debug_value.htm
 old-project: debugger
 ms.assetid: 568469ad-79c4-4437-aefe-a29e77e5143a
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: DEBUG_VALUE, DEBUG_VALUE, *PDEBUG_VALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -84,43 +84,43 @@ typedef struct _DEBUG_VALUE {
 ## -struct-fields
 <dl>
 
-### -field ( <i>unnamed union</i> )
+### -field ( unnamed union )
 
 <dd>
 <p> </p>
 <dl>
 
-### -field <b>I8</b>
+### -field I8
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>I16</b>
+### -field I16
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>I32</b>
+### -field I32
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field ( <i>unnamed struct</i> )
+### -field ( unnamed struct )
 
 <dd>
 <p> </p>
 <dl>
 
-### -field <b>I64</b>
+### -field I64
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>Nat</b>
+### -field Nat
 
 <dd>
 <p>See Remarks.</p>
@@ -128,85 +128,85 @@ typedef struct _DEBUG_VALUE {
 </dl>
 </dd>
 
-### -field <b>F32</b>
+### -field F32
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>F64</b>
+### -field F64
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>F80Bytes</b>
+### -field F80Bytes
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>F82Bytes</b>
+### -field F82Bytes
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>F128Bytes</b>
+### -field F128Bytes
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>VI8</b>
+### -field VI8
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>VI16</b>
+### -field VI16
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>VI32</b>
+### -field VI32
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>VI64</b>
+### -field VI64
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>VF32</b>
+### -field VF32
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>VF64</b>
+### -field VF64
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>I64Parts32</b>
+### -field I64Parts32
 
 <dd>
 <p>See Remarks.</p>
 <dl>
 
-### -field <b>LowPart</b>
+### -field LowPart
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>HighPart</b>
+### -field HighPart
 
 <dd>
 <p>See Remarks.</p>
@@ -214,27 +214,19 @@ typedef struct _DEBUG_VALUE {
 </dl>
 </dd>
 
-### -field <b>F128Parts64</b>
+### -field F128Parts64
 
 <dd>
 <p>See Remarks.</p>
 <dl>
 
-### -field <b>LowPart</b>
+### -field LowPart
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>HighPart</b>
-
-<dd>
-<p>See Remarks.</p>
-</dd>
-</dl>
-</dd>
-
-### -field <b>RawBytes</b>
+### -field HighPart
 
 <dd>
 <p>See Remarks.</p>
@@ -242,13 +234,21 @@ typedef struct _DEBUG_VALUE {
 </dl>
 </dd>
 
-### -field <b>TailOfRawBytes</b>
+### -field RawBytes
+
+<dd>
+<p>See Remarks.</p>
+</dd>
+</dl>
+</dd>
+
+### -field TailOfRawBytes
 
 <dd>
 <p>See Remarks.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>See Remarks.</p>

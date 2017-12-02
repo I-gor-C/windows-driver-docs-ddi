@@ -56,13 +56,13 @@ VOID AppendTailList(
 ## -parameters
 <dl>
 
-### -param <i>ListHead</i> [in, out]
+### -param ListHead [in, out]
 
 <dd>
 <p>A pointer to the head of the list to which the list pointed to by <i>ListToAppend</i> is to be appended. This parameter must be a valid, non-NULL pointer to the <a href="kernel.list_entry">LIST_ENTRY</a> structure that is the head of a list. This list can be empty.</p>
 </dd>
 
-### -param <i>ListToAppend</i> [in, out]
+### -param ListToAppend [in, out]
 
 <dd>
 <p>A pointer to the first entry in the list to append to the list pointed to by <i>ListHead</i>. This parameter must be a valid, non-NULL pointer to the <a href="kernel.list_entry">LIST_ENTRY</a> structure that is the first entry in a headless list. For more information, see Remarks.</p>

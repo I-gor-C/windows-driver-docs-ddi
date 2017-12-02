@@ -54,7 +54,7 @@ void KsAcquireControl(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>A pointer to the object for which to acquire the filter control mutex. This should be a pointer to either a <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> or a <a href="..\ks\ns-ks--kspin.md">KSPIN</a>, cast to PVOID.</p>
@@ -67,7 +67,7 @@ void KsAcquireControl(
 ## -remarks
 <p>Minidrivers typically do not call this function directly, but instead call either <a href="..\ks\nf-ks-ksfilteracquirecontrol.md">KsFilterAcquireControl</a> or <a href="..\ks\nf-ks-kspinacquirecontrol.md">KsPinAcquireControl</a>. These functions provide the necessary typecasting to PVOID automatically.</p>
 
-<p>For more information, see <a href="NULL">Mutexes in AVStream</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>. </p>
 
 ## -requirements
 <table>

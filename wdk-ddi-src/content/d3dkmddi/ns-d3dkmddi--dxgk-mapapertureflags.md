@@ -60,20 +60,20 @@ typedef struct _DXGK_MAPAPERTUREFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>CacheCoherent</b>
+### -field CacheCoherent
 
 <dd>
 <p>[in] A UINT value that specifies whether cache coherency is required for pages that are mapped in a call to <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a>. If this member is set, the driver must ensure that cache coherency is enforced on the pages that are mapped. If this member is not set, cache coherency is not required for the pages that are mapped. </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] A member in the union that DXGK_MAPAPERTUREFLAGS contains that can hold a 32-bit value that identifies the type of map-aperture-segment-operation.</p>

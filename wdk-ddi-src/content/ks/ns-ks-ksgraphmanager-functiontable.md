@@ -54,7 +54,7 @@ typedef struct _KSGRAPHMANAGER_FUNCTIONTABLE {
 ## -struct-fields
 <dl>
 
-### -field <b>NotifyEvent</b>
+### -field NotifyEvent
 
 <dd></dd>
 </dl>

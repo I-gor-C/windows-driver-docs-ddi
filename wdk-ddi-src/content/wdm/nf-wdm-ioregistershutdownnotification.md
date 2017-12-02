@@ -55,7 +55,7 @@ NTSTATUS IoRegisterShutdownNotification(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object of the device for which the driver requests shutdown notification. The system passes this pointer to the driver's <a href="kernel.dispatchshutdown">DispatchShutdown</a> routine. </p>

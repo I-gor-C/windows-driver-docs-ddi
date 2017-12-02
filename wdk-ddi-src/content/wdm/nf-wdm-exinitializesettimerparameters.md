@@ -55,7 +55,7 @@ VOID ExInitializeSetTimerParameters(
 ## -parameters
 <dl>
 
-### -param <i>Parameters</i> [out]
+### -param Parameters [out]
 
 <dd>
 <p>A pointer to the <b>EXT_SET_PARAMETER</b> structure that is to be initialized.</p>

@@ -57,19 +57,19 @@ typedef struct _MM_COPY_ADDRESS {
 ## -struct-fields
 <dl>
 
-### -field ( <i>unnamed union</i> )
+### -field ( unnamed union )
 
 <dd>
 <p>Either a virtual address or a physical address.</p>
 <dl>
 
-### -field <b>VirtualAddress</b>
+### -field VirtualAddress
 
 <dd>
 <p>A virtual memory address.</p>
 </dd>
 
-### -field <b>PhysicalAddress</b>
+### -field PhysicalAddress
 
 <dd>
 <p>A physical memory address.</p>

@@ -54,7 +54,7 @@ _Check_return_ NTSTATUS APIENTRY D3DKMTGetContextInProcessSchedulingPriority(
 ## -parameters
 <dl>
 
-### -param <i>pContextPriority</i> [in, out]
+### -param pContextPriority [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getcontextinprocessschedulingpriority.md">D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY</a> structure that describes information that is required to retrieve the scheduling priority for a device context.</p>

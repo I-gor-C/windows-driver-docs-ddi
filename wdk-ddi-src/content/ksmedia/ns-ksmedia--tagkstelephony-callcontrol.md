@@ -55,13 +55,13 @@ typedef struct _tagKSTELEPHONY_CALLCONTROL {
 ## -struct-fields
 <dl>
 
-### -field <b>CallType</b>
+### -field CallType
 
 <dd>
 <p>Specifies the type of phone call (circuit-switched, LTE packet-switched, or WLAN packet-switched).</p>
 </dd>
 
-### -field <b>CallControlOp</b>
+### -field CallControlOp
 
 <dd>
 <p>Specifies the call control operation (enable or disable).</p>

@@ -62,31 +62,31 @@ typedef struct _DMA_ADAPTER_INFO_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>ReadDmaCounterAvailable</b>
+### -field ReadDmaCounterAvailable
 
 <dd>
 <p>Whether the counter value in each DMA channel can be read. This member is <b>TRUE</b> if the counter can be read, and is <b>FALSE</b> if it cannot be read.</p>
 </dd>
 
-### -field <b>ScatterGatherLimit</b>
+### -field ScatterGatherLimit
 
 <dd>
 <p>The maximum number of elements in a scatter/gather list that the DMA controller can process in a single scatter/gather DMA transfer.</p>
 </dd>
 
-### -field <b>DmaAddressWidth</b>
+### -field DmaAddressWidth
 
 <dd>
 <p>The memory address width, in bits, of the DMA controller. The width is expressed as the number of bits in a DMA address. If the DMA address width is less than the memory address width, the platform hardware drives the remaining, high-order memory address bits to zero during a DMA transfer.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A set of flags that describe the capabilities of the DMA adapter. No flags are currently defined for this member.</p>
 </dd>
 
-### -field <b>MinimumTransferUnit</b>
+### -field MinimumTransferUnit
 
 <dd>
 <p>The size, in bytes, of the minimum transfer unit. The number of bytes specified by an element in a scatter/gather list must be an integer multiple of the minimum transfer unit.</p>

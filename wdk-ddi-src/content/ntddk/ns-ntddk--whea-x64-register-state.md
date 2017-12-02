@@ -88,193 +88,193 @@ typedef struct _WHEA_X64_REGISTER_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Rax</b>
+### -field Rax
 
 <dd>
 <p>The accumulator register.</p>
 </dd>
 
-### -field <b>Rbx</b>
+### -field Rbx
 
 <dd>
 <p>The base register.</p>
 </dd>
 
-### -field <b>Rcx</b>
+### -field Rcx
 
 <dd>
 <p>The count register.</p>
 </dd>
 
-### -field <b>Rdx</b>
+### -field Rdx
 
 <dd>
 <p>The data register.</p>
 </dd>
 
-### -field <b>Rsi</b>
+### -field Rsi
 
 <dd>
 <p>The source index register.</p>
 </dd>
 
-### -field <b>Rdi</b>
+### -field Rdi
 
 <dd>
 <p>The destination index register.</p>
 </dd>
 
-### -field <b>Rbp</b>
+### -field Rbp
 
 <dd>
 <p>The base pointer register.</p>
 </dd>
 
-### -field <b>Rsp</b>
+### -field Rsp
 
 <dd>
 <p>The stack pointer register.</p>
 </dd>
 
-### -field <b>R8</b>
+### -field R8
 
 <dd>
 <p>The general purpose register R8.</p>
 </dd>
 
-### -field <b>R9</b>
+### -field R9
 
 <dd>
 <p>The general purpose register R9.</p>
 </dd>
 
-### -field <b>R10</b>
+### -field R10
 
 <dd>
 <p>The general purpose register R10.</p>
 </dd>
 
-### -field <b>R11</b>
+### -field R11
 
 <dd>
 <p>The general purpose register R11.</p>
 </dd>
 
-### -field <b>R12</b>
+### -field R12
 
 <dd>
 <p>The general purpose register R12.</p>
 </dd>
 
-### -field <b>R13</b>
+### -field R13
 
 <dd>
 <p>The general purpose register R13.</p>
 </dd>
 
-### -field <b>R14</b>
+### -field R14
 
 <dd>
 <p>The general purpose register R14.</p>
 </dd>
 
-### -field <b>R15</b>
+### -field R15
 
 <dd>
 <p>The general purpose register R15.</p>
 </dd>
 
-### -field <b>Cs</b>
+### -field Cs
 
 <dd>
 <p>The code segment register.</p>
 </dd>
 
-### -field <b>Ds</b>
+### -field Ds
 
 <dd>
 <p>The data segment register.</p>
 </dd>
 
-### -field <b>Ss</b>
+### -field Ss
 
 <dd>
 <p>The stack segment register.</p>
 </dd>
 
-### -field <b>Es</b>
+### -field Es
 
 <dd>
 <p>The extra segment register.</p>
 </dd>
 
-### -field <b>Fs</b>
+### -field Fs
 
 <dd>
 <p>The general purpose segment register FS.</p>
 </dd>
 
-### -field <b>Gs</b>
+### -field Gs
 
 <dd>
 <p>The general purpose segment register GS.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Rflags</b>
+### -field Rflags
 
 <dd>
 <p>The flags register.</p>
 </dd>
 
-### -field <b>Eip</b>
+### -field Eip
 
 <dd>
 <p>The instruction pointer register.</p>
 </dd>
 
-### -field <b>Cr0</b>
+### -field Cr0
 
 <dd>
 <p>The control register 0.</p>
 </dd>
 
-### -field <b>Cr1</b>
+### -field Cr1
 
 <dd>
 <p>The control register 1.</p>
 </dd>
 
-### -field <b>Cr2</b>
+### -field Cr2
 
 <dd>
 <p>The control register 2.</p>
 </dd>
 
-### -field <b>Cr3</b>
+### -field Cr3
 
 <dd>
 <p>The control register 3.</p>
 </dd>
 
-### -field <b>Cr4</b>
+### -field Cr4
 
 <dd>
 <p>The control register 4.</p>
 </dd>
 
-### -field <b>Cr8</b>
+### -field Cr8
 
 <dd>
 <p>The control register 8.</p>
 </dd>
 
-### -field <b>Gdtr</b>
+### -field Gdtr
 
 <dd>
 <p>A WHEA128A structure that contains the state of the global descriptor table register. The WHEA128A structure describes a 128-bit value and is defined as follows:</p>
@@ -294,13 +294,13 @@ typedef struct _WHEA_X64_REGISTER_STATE {
 <p></p>
 <dl>
 
-### -field <a id="Low"></a><a id="low"></a><a id="LOW"></a><b>Low</b>
+### -field Low
 
 <dd>
 <p>The low order 64 bits of the 128-bit value.</p>
 </dd>
 
-### -field <a id="High"></a><a id="high"></a><a id="HIGH"></a><b>High</b>
+### -field High
 
 <dd>
 <p>The high order 64 bits of the 128-bit value.</p>
@@ -308,19 +308,19 @@ typedef struct _WHEA_X64_REGISTER_STATE {
 </dl>
 </dd>
 
-### -field <b>Idtr</b>
+### -field Idtr
 
 <dd>
 <p>A WHEA128A structure that contains the state of the interrupt descriptor table register. For a description of the WHEA128A structure, see the description for the <b>Gdtr</b> member.</p>
 </dd>
 
-### -field <b>Ldtr</b>
+### -field Ldtr
 
 <dd>
 <p>The local descriptor table register.</p>
 </dd>
 
-### -field <b>Tr</b>
+### -field Tr
 
 <dd>
 <p>The task register.</p>

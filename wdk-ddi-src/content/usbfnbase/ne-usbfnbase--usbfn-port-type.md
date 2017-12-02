@@ -61,43 +61,43 @@ typedef enum _USBFN_PORT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UsbfnUnknownPort"></a><a id="usbfnunknownport"></a><a id="USBFNUNKNOWNPORT"></a><b>UsbfnUnknownPort</b>
+### -field UsbfnUnknownPort
 
 <dd>
 <p>Port detection was unable to determine the port type.</p>
 </dd>
 
-### -field <a id="UsbfnStandardDownstreamPort"></a><a id="usbfnstandarddownstreamport"></a><a id="USBFNSTANDARDDOWNSTREAMPORT"></a><b>UsbfnStandardDownstreamPort</b>
+### -field UsbfnStandardDownstreamPort
 
 <dd>
 <p>The upstream port has been detected as a standard downstream port (SDP) (as defined in the Battery Charging Specification, revision 1.2).</p>
 </dd>
 
-### -field <a id="UsbfnChargingDownstreamPort"></a><a id="usbfnchargingdownstreamport"></a><a id="USBFNCHARGINGDOWNSTREAMPORT"></a><b>UsbfnChargingDownstreamPort</b>
+### -field UsbfnChargingDownstreamPort
 
 <dd>
 <p>The upstream port has been detected as a charging downstream port (CDP), as defined in the Battery Charging Specification, revision 1.2.</p>
 </dd>
 
-### -field <a id="UsbfnDedicatedChargingPort"></a><a id="usbfndedicatedchargingport"></a><a id="USBFNDEDICATEDCHARGINGPORT"></a><b>UsbfnDedicatedChargingPort</b>
+### -field UsbfnDedicatedChargingPort
 
 <dd>
 <p>The upstream port has been detected as a dedicated charging port (DCP) (as defined in the Battery Charging Specification, revision 1.2).</p>
 </dd>
 
-### -field <a id="UsbfnInvalidDedicatedChargingPort"></a><a id="usbfninvaliddedicatedchargingport"></a><a id="USBFNINVALIDDEDICATEDCHARGINGPORT"></a><b>UsbfnInvalidDedicatedChargingPort</b>
+### -field UsbfnInvalidDedicatedChargingPort
 
 <dd>
 <p>The upstream port has been detected as a dedicated charging port that does not comply with the Battery Charging Specification, revision 1.2.</p>
 </dd>
 
-### -field <a id="UsbfnProprietaryDedicatedChargingPort"></a><a id="usbfnproprietarydedicatedchargingport"></a><a id="USBFNPROPRIETARYDEDICATEDCHARGINGPORT"></a><b>UsbfnProprietaryDedicatedChargingPort</b>
+### -field UsbfnProprietaryDedicatedChargingPort
 
 <dd>
 <p>A proprietary charger was attached.</p>
 </dd>
 
-### -field <a id="UsbfnPortTypeMaximum"></a><a id="usbfnporttypemaximum"></a><a id="USBFNPORTTYPEMAXIMUM"></a><b>UsbfnPortTypeMaximum</b>
+### -field UsbfnPortTypeMaximum
 
 <dd>
 <p>The maximum value of the enumeration.</p>
@@ -124,7 +124,7 @@ typedef enum _USBFN_PORT_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbfn_get_attach_action">USBFN_GET_ATTACH_ACTION</a>
+<a href="..\usbfnattach\nc-usbfnattach-usbfn-get-attach-action.md">USBFN_GET_ATTACH_ACTION</a>
 </dt>
 </dl>
 <p> </p>

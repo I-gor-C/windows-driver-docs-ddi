@@ -83,175 +83,175 @@ typedef struct _DMA_OPERATIONS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this <b>DMA_OPERATIONS</b> structure.</p>
 </dd>
 
-### -field <b>PutDmaAdapter</b>
+### -field PutDmaAdapter
 
 <dd>
-<p>A pointer to a system-defined routine to free a <a href="..\ntddk\ns-ntddk--dma-adapter.md">DMA_ADAPTER</a> structure. For more information, see <a href="kernel.putdmaadapter">PutDmaAdapter</a>.</p>
+<p>A pointer to a system-defined routine to free a <a href="..\wdm\ns-wdm--dma-adapter.md">DMA_ADAPTER</a> structure. For more information, see <a href="kernel.putdmaadapter">PutDmaAdapter</a>.</p>
 </dd>
 
-### -field <b>AllocateCommonBuffer</b>
+### -field AllocateCommonBuffer
 
 <dd>
 <p>A pointer to a system-defined routine to allocate a physically contiguous DMA buffer. For more information, see <a href="kernel.allocatecommonbuffer">AllocateCommonBuffer</a>.</p>
 </dd>
 
-### -field <b>FreeCommonBuffer</b>
+### -field FreeCommonBuffer
 
 <dd>
 <p>A pointer to a system-defined routine to free a physically contiguous DMA buffer previously allocated by <b>AllocateCommonBuffer</b>. For more information, see <a href="kernel.freecommonbuffer">FreeCommonBuffer</a>.</p>
 </dd>
 
-### -field <b>AllocateAdapterChannel</b>
+### -field AllocateAdapterChannel
 
 <dd>
 <p>A pointer to a system-defined routine to allocate a channel for DMA operations. For more information, see <a href="kernel.allocateadapterchannel">AllocateAdapterChannel</a>.</p>
 </dd>
 
-### -field <b>FlushAdapterBuffers</b>
+### -field FlushAdapterBuffers
 
 <dd>
 <p>A pointer to a system-defined routine to flush data from the system or bus-master adapter's internal cache after a DMA operation. For more information, see <a href="kernel.flushadapterbuffers">FlushAdapterBuffers</a>.</p>
 </dd>
 
-### -field <b>FreeAdapterChannel</b>
+### -field FreeAdapterChannel
 
 <dd>
 <p>A pointer to a system-defined routine to free a channel previously allocated for DMA operations by <b>AllocateAdapterChannel</b>. For more information, see <a href="kernel.freeadapterchannel">FreeAdapterChannel</a>.</p>
 </dd>
 
-### -field <b>FreeMapRegisters</b>
+### -field FreeMapRegisters
 
 <dd>
 <p>A pointer to a system-defined routine to free map registers allocated for DMA operations. For more information, see <a href="kernel.freemapregisters">FreeMapRegisters</a>.</p>
 </dd>
 
-### -field <b>MapTransfer</b>
+### -field MapTransfer
 
 <dd>
 <p>A pointer to a system-defined routine to begin a DMA operation. For more information, see <a href="kernel.maptransfer">MapTransfer</a>.</p>
 </dd>
 
-### -field <b>GetDmaAlignment</b>
+### -field GetDmaAlignment
 
 <dd>
 <p>A pointer to a system-defined routine to obtain the DMA alignment requirements of the controller. For more information, see <a href="kernel.getdmaalignment">GetDmaAlignment</a>.</p>
 </dd>
 
-### -field <b>ReadDmaCounter</b>
+### -field ReadDmaCounter
 
 <dd>
 <p>A pointer to a system-defined routine to obtain the current transfer count for a DMA operation. For more information, see <a href="kernel.readdmacounter">ReadDmaCounter</a>.</p>
 </dd>
 
-### -field <b>GetScatterGatherList</b>
+### -field GetScatterGatherList
 
 <dd>
 <p>A pointer to a system-defined routine that allocates map registers and creates a scatter/gather list for DMA. For more information, see <a href="kernel.getscattergatherlist">GetScatterGatherList</a>.</p>
 </dd>
 
-### -field <b>PutScatterGatherList</b>
+### -field PutScatterGatherList
 
 <dd>
 <p>A pointer to a system-defined routine that frees map registers and a scatter/gather list after a DMA operation is complete. For more information, see <a href="kernel.putscattergatherlist">PutScatterGatherList</a>.</p>
 </dd>
 
-### -field <b>CalculateScatterGatherList</b>
+### -field CalculateScatterGatherList
 
 <dd>
 <p>A pointer to a system-defined routine that determines the buffer size needed to hold the scatter/gather list that describes an I/O data  buffer. This member is available only in versions 2 and later of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.calculatescattergatherlist">CalculateScatterGatherList</a>.</p>
 </dd>
 
-### -field <b>BuildScatterGatherList</b>
+### -field BuildScatterGatherList
 
 <dd>
 <p>A pointer to a system-defined routine that allocates map registers and creates a scatter/gather list for DMA in a driver-supplied buffer. This member is available only in versions 2 and later of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.buildscattergatherlist">BuildScatterGatherList</a>.</p>
 </dd>
 
-### -field <b>BuildMdlFromScatterGatherList</b>
+### -field BuildMdlFromScatterGatherList
 
 <dd>
 <p>A pointer to a system-defined routine that builds an MDL corresponding to a scatter/gather list. This member is available only in versions 2 and later of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.buildmdlfromscattergatherlist">BuildMdlFromScatterGatherList</a>.</p>
 </dd>
 
-### -field <b>GetDmaAdapterInfo</b>
+### -field GetDmaAdapterInfo
 
 <dd>
 <p>A pointer to a system-defined routine that describes the capabilities of a bus-master DMA device or a system DMA controller. <b>GetDmaAdapterInfo</b> is available only in version 3 of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.getdmaadapterinfo">GetDmaAdapterInfo</a>.</p>
 </dd>
 
-### -field <b>GetDmaTransferInfo</b>
+### -field GetDmaTransferInfo
 
 <dd>
 <p>A pointer to a system-defined routine that describes the allocation requirements for a scatter/gather list. This routine replaces <a href="kernel.calculatescattergatherlist">CalculateScatterGatherList</a>. <b>GetDmaTransferInfo</b> is available only in version 3 of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.getdmatransferinfo">GetDmaTransferInfo</a>.</p>
 </dd>
 
-### -field <b>InitializeDmaTransferContext</b>
+### -field InitializeDmaTransferContext
 
 <dd>
 <p>A pointer to a system-defined routine that initializes an opaque DMA transfer context. The operating system stores the internal status of a DMA transfer in this context. <b>InitializeDmaTransferContext</b> is available only in version 3 of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.initializedmatransfercontext">InitializeDmaTransferContext</a>.</p>
 </dd>
 
-### -field <b>AllocateCommonBufferEx</b>
+### -field AllocateCommonBufferEx
 
 <dd>
 <p>A pointer to a system-defined routine that allocates memory for a common buffer and maps this memory so that it can accessed both by the processor and by a DMA device. <b>AllocateCommonBufferEx</b> is available only in version 3 of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.allocatecommonbufferex">AllocateCommonBufferEx</a>.</p>
 </dd>
 
-### -field <b>AllocateAdapterChannelEx</b>
+### -field AllocateAdapterChannelEx
 
 <dd>
 <p>A pointer to a system-defined routine that allocates the resources required for a DMA transfer and then calls the driver-supplied <i>AdapterControl</i> routine to initiate the DMA transfer. <b>AllocateAdapterChannelEx</b> is available only in version 3 of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.allocateadapterchannelex">AllocateAdapterChannelEx</a>.</p>
 </dd>
 
-### -field <b>ConfigureAdapterChannel</b>
+### -field ConfigureAdapterChannel
 
 <dd>
 <p>A pointer to a system-defined routine enables a custom function that is implemented by the DMA controller. <b>ConfigureAdapterChannel</b> is available only in version 3 of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.configureadapterchannel">ConfigureAdapterChannel</a>.</p>
 </dd>
 
-### -field <b>CancelAdapterChannel</b>
+### -field CancelAdapterChannel
 
 <dd>
 <p>A pointer to a system-defined routine that tries to cancel a pending request to allocate a DMA channel. <b>CancelAdapterChannel</b> is available only in version 3 of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.canceladapterchannel">CancelAdapterChannel</a>.</p>
 </dd>
 
-### -field <b>MapTransferEx</b>
+### -field MapTransferEx
 
 <dd>
 <p>A pointer to a system-defined routine that sets up map registers to map the physical addresses in a scatter/gather list to the logical addresses that are required to do a DMA transfer. <b>MapTransferEx</b> is available only in version 3 of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.maptransferex">MapTransferEx</a>.</p>
 </dd>
 
-### -field <b>GetScatterGatherListEx</b>
+### -field GetScatterGatherListEx
 
 <dd>
 <p>A pointer to a system-defined routine that   allocates resources required for a DMA transfer, builds a scatter/gather list, and then calls the driver-supplied <a href="kernel.adapterlistcontrol">AdapterListControl</a> routine to initiate the DMA transfer. <b>GetScatterGatherListEx</b> is available only in version 3 of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.getscattergatherlistex">GetScatterGatherListEx</a>. This routine is a wrapper of <b>AllocateAdapterChannelEx</b> and <b>MapTransferEx</b>.</p>
 </dd>
 
-### -field <b>BuildScatterGatherListEx</b>
+### -field BuildScatterGatherListEx
 
 <dd>
 <p>A pointer to a system-defined routine that   builds a scatter/gather list in a caller-allocated buffer, and then calls the driver-supplied <i>AdapterListControl</i> routine to initiate the DMA transfer. <b>BuildScatterGatherListEx</b> is available only in version 3 of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.buildscattergatherlistex">BuildScatterGatherListEx</a>.</p>
 </dd>
 
-### -field <b>FlushAdapterBuffersEx</b>
+### -field FlushAdapterBuffersEx
 
 <dd>
 <p>A pointer to a system-defined routine that  flushes any data that remains in the system DMA controller's internal cache or in a bus-master adapter's internal cache at the end of a DMA transfer. For a device that uses a system DMA controller, this routine cancels the current DMA transfer on the controller if the transfer is not complete. <b>FlushAdapterBuffersEx</b> is available only in version 3 of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.flushadapterbuffersex">FlushAdapterBuffersEx</a>.</p>
 </dd>
 
-### -field <b>FreeAdapterObject</b>
+### -field FreeAdapterObject
 
 <dd>
 <p>A pointer to a system-defined routine that releases the specified adapter object after a driver has completed all DMA operations. <b>FreeAdapterObject</b> is available only in version 3 of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.freeadapterobject">FreeAdapterObject</a>.</p>
 </dd>
 
-### -field <b>CancelMappedTransfer</b>
+### -field CancelMappedTransfer
 
 <dd>
 <p>A pointer to a system-defined routine that cancels a mapped transfer. <b>CancelMappedTransfer</b> is available only in version 3 of <b>DMA_OPERATIONS</b>. For more information, see <a href="kernel.cancelmappedtransfer">CancelMappedTransfer</a>.</p>

@@ -57,13 +57,13 @@ typedef struct _DXVAHDDDI_STREAM_STATE_PRIVATE_IVTC_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>[in/out] A Boolean value that indicates whether to capture the statistics is enabled. By enabling the capture of statistics, the driver resets all the statistics data to zero. The default value is <b>FALSE</b>, which indicates that capturing the statistics is disabled. </p>
 </dd>
 
-### -field <b>ITelecineFlags</b>
+### -field ITelecineFlags
 
 <dd>
 <p>[out] One of the following DXVAHDDDI_ITELECINE_CAPS enumeration values that indicates the telecine type that the driver detected while reversing the telecined frames.</p>
@@ -156,13 +156,13 @@ typedef struct _DXVAHDDDI_STREAM_STATE_PRIVATE_IVTC_DATA {
 <p> </p>
 </dd>
 
-### -field <b>Frames</b>
+### -field Frames
 
 <dd>
 <p>[out] The number of consecutive frames that the driver detects for the telecined frames. </p>
 </dd>
 
-### -field <b>InputField</b>
+### -field InputField
 
 <dd>
 <p>[out] The last field number of the input stream that was processed (so far). The driver updates this member after the driver has processed the input field that is specified in the <b>InputFrameOrField</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-data.md">DXVAHDDDI_STREAM_DATA</a> structure. </p>

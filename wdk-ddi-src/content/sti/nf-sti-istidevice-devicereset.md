@@ -7,7 +7,7 @@ old-location: image\istidevice_devicereset.htm
 old-project: image
 ms.assetid: 8a52c452-9a80-45d5-9bc8-85e17654eb6a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDevice, DeviceReset, IStiDevice::DeviceReset
 ms.prod: windows-hardware
 ms.technology: windows-devices

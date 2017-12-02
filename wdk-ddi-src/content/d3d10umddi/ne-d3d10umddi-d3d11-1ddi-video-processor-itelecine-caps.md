@@ -63,61 +63,61 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_32"></a><a id="d3d11_1ddi_video_processor_itelecine_caps_32"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_32</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_32
 
 <dd>
 <p>The video processor can reverse 3:2 pulldown.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_22"></a><a id="d3d11_1ddi_video_processor_itelecine_caps_22"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_22</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_22
 
 <dd>
 <p>The video processor can reverse 2:2 pulldown.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_2224"></a><a id="d3d11_1ddi_video_processor_itelecine_caps_2224"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_2224</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_2224
 
 <dd>
 <p>The video processor can reverse 2:2:2:4 pulldown.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_2332"></a><a id="d3d11_1ddi_video_processor_itelecine_caps_2332"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_2332</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_2332
 
 <dd>
 <p>The video processor can reverse 2:3:3:2 pulldown.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_32322"></a><a id="d3d11_1ddi_video_processor_itelecine_caps_32322"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_32322</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_32322
 
 <dd>
 <p>The video processor can reverse 3:2:3:2:2 pulldown.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_55"></a><a id="d3d11_1ddi_video_processor_itelecine_caps_55"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_55</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_55
 
 <dd>
 <p>The video processor can reverse 5:5 pulldown.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_64"></a><a id="d3d11_1ddi_video_processor_itelecine_caps_64"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_64</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_64
 
 <dd>
 <p>The video processor can reverse 6:4 pulldown.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_87"></a><a id="d3d11_1ddi_video_processor_itelecine_caps_87"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_87</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_87
 
 <dd>
 <p>The video processor can reverse 8:7 pulldown.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_222222222223"></a><a id="d3d11_1ddi_video_processor_itelecine_caps_222222222223"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_222222222223</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_222222222223
 
 <dd>
 <p>The video processor can reverse 2:2:2:2:2:2:2:2:2:2:2:3 pulldown.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_OTHER"></a><a id="d3d11_1ddi_video_processor_itelecine_caps_other"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_OTHER</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_OTHER
 
 <dd>
 <p>The video processor can reverse other telecine modes not listed here.</p>

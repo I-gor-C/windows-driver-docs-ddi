@@ -58,31 +58,31 @@ typedef struct _CHANGER_PRODUCT_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>VendorId</b>
+### -field VendorId
 
 <dd>
 <p>Specifies the name of the device manufacturer. </p>
 </dd>
 
-### -field <b>ProductId</b>
+### -field ProductId
 
 <dd>
 <p>Specifies the product identification as defined by the vendor.</p>
 </dd>
 
-### -field <b>Revision</b>
+### -field Revision
 
 <dd>
 <p>Specifies the product revision as defined by the vendor.</p>
 </dd>
 
-### -field <b>SerialNumber</b>
+### -field SerialNumber
 
 <dd>
 <p>Specifies the value defined by the vendor to identify this device. Serial numbers are unique for all changers of a given type, but are not necessarily unique across vendor and product lines. For a SCSI changer, this value might be from Vital Product Data. If <b>SerialNumber</b> is not unique, the miniclass driver should not set the CHANGER_SERIAL_NUMBER_VALID flag in the <b>Features0</b> member of the <a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a> structure. </p>
 </dd>
 
-### -field <b>DeviceType</b>
+### -field DeviceType
 
 <dd>
 <p>Specifies the device type of the changer. This member must be MEDIUM_CHANGER.</p>

@@ -7,7 +7,7 @@ old-location: image\sti_diag.htm
 old-project: image
 ms.assetid: 07caa8b0-849c-4ad9-9adb-b1726edc9234
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: STI_DIAG, STI_DIAG, *LPSTI_DIAG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ typedef struct _STI_DIAG {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Caller-supplied size, in bytes, of the STI_DIAG structure.</p>
 </dd>
 
-### -field <b>dwBasicDiagCode</b>
+### -field dwBasicDiagCode
 
 <dd>
 <p>Bit flag indicating the type of test to be performed. Currently this must be STI_DIAGCODE_HWPRESENCE<i>.</i></p>
 </dd>
 
-### -field <b>dwVendorDiagCode</b>
+### -field dwVendorDiagCode
 
 <dd>
 <p>Optional, vendor-defined diagnostic request code.</p>
 </dd>
 
-### -field <b>dwStatusMask</b>
+### -field dwStatusMask
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>sErrorInfo</b>
+### -field sErrorInfo
 
 <dd>
 <p>Structure of type <a href="image.sti_error_info">STI_ERROR_INFO</a>.</p>

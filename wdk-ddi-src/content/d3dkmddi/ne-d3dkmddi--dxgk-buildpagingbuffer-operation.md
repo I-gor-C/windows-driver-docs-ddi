@@ -76,67 +76,67 @@ typedef enum _DXGK_BUILDPAGINGBUFFER_OPERATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_OPERATION_TRANSFER"></a><a id="dxgk_operation_transfer"></a><b>DXGK_OPERATION_TRANSFER</b>
+### -field DXGK_OPERATION_TRANSFER
 
 <dd>
 <p>Perform a transfer operation that moves the content of an allocation from one location to another.</p>
 </dd>
 
-### -field <a id="DXGK_OPERATION_FILL"></a><a id="dxgk_operation_fill"></a><b>DXGK_OPERATION_FILL</b>
+### -field DXGK_OPERATION_FILL
 
 <dd>
 <p>Fill an allocation with a specified pattern.</p>
 </dd>
 
-### -field <a id="DXGK_OPERATION_DISCARD_CONTENT"></a><a id="dxgk_operation_discard_content"></a><b>DXGK_OPERATION_DISCARD_CONTENT</b>
+### -field DXGK_OPERATION_DISCARD_CONTENT
 
 <dd>
 <p>Notifies the driver that an allocation is discarded from the allocation's current location in a memory segment (that is, the allocation is evicted and not copied back to system memory).</p>
 </dd>
 
-### -field <a id="DXGK_OPERATION_READ_PHYSICAL"></a><a id="dxgk_operation_read_physical"></a><b>DXGK_OPERATION_READ_PHYSICAL</b>
+### -field DXGK_OPERATION_READ_PHYSICAL
 
 <dd>
 <p>Perform a read-physical operation that reads from a specified physical memory address.</p>
 </dd>
 
-### -field <a id="DXGK_OPERATION_WRITE_PHYSICAL"></a><a id="dxgk_operation_write_physical"></a><b>DXGK_OPERATION_WRITE_PHYSICAL</b>
+### -field DXGK_OPERATION_WRITE_PHYSICAL
 
 <dd>
 <p>Perform a write-physical operation that writes to a specified physical memory address.</p>
 </dd>
 
-### -field <a id="DXGK_OPERATION_MAP_APERTURE_SEGMENT"></a><a id="dxgk_operation_map_aperture_segment"></a><b>DXGK_OPERATION_MAP_APERTURE_SEGMENT</b>
+### -field DXGK_OPERATION_MAP_APERTURE_SEGMENT
 
 <dd>
 <p>Perform a map-aperture-segment operation that maps a memory descriptor list (MDL) into a range of an aperture segment.</p>
 </dd>
 
-### -field <a id="DXGK_OPERATION_UNMAP_APERTURE_SEGMENT"></a><a id="dxgk_operation_unmap_aperture_segment"></a><b>DXGK_OPERATION_UNMAP_APERTURE_SEGMENT</b>
+### -field DXGK_OPERATION_UNMAP_APERTURE_SEGMENT
 
 <dd>
 <p>Perform an unmap-aperture-segment operation that unmaps a previously mapped range of an aperture segment.</p>
 </dd>
 
-### -field <a id="DXGK_OPERATION_SPECIAL_LOCK_TRANSFER"></a><a id="dxgk_operation_special_lock_transfer"></a><b>DXGK_OPERATION_SPECIAL_LOCK_TRANSFER</b>
+### -field DXGK_OPERATION_SPECIAL_LOCK_TRANSFER
 
 <dd>
 <p>Perform a special transfer operation that moves the content of an allocation from one location to another. In this operation, the content of the allocation is transferred from or to the alternate virtual address that was set up for the allocation (that is, when the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lockcb.md">pfnLockCb</a> function was called with the <b>UseAlternateVA</b> bit-field flag set).</p>
 </dd>
 
-### -field <a id="DXGK_OPERATION_VIRTUAL_TRANSFER"></a><a id="dxgk_operation_virtual_transfer"></a><b>DXGK_OPERATION_VIRTUAL_TRANSFER</b>
+### -field DXGK_OPERATION_VIRTUAL_TRANSFER
 
 <dd>
 <p>The operation is used to transfer allocation content between locations in memory. </p>
 </dd>
 
-### -field <a id="DXGK_OPERATION_VIRTUAL_FILL"></a><a id="dxgk_operation_virtual_fill"></a><b>DXGK_OPERATION_VIRTUAL_FILL</b>
+### -field DXGK_OPERATION_VIRTUAL_FILL
 
 <dd>
 <p>The operation is used to fill an allocation with a pattern.</p>
 </dd>
 
-### -field <a id="DXGK_OPERATION_INIT_CONTEXT_RESOURCE"></a><a id="dxgk_operation_init_context_resource"></a><b>DXGK_OPERATION_INIT_CONTEXT_RESOURCE</b>
+### -field DXGK_OPERATION_INIT_CONTEXT_RESOURCE
 
 <dd>
 <p>Perform an context initialization operation for a GPU context or device-specific context. This value is supported beginning with Windows 8.
@@ -145,37 +145,37 @@ typedef enum _DXGK_BUILDPAGINGBUFFER_OPERATION {
 <div> </div>
 </dd>
 
-### -field <a id="DXGK_OPERATION_UPDATE_PAGE_TABLE"></a><a id="dxgk_operation_update_page_table"></a><b>DXGK_OPERATION_UPDATE_PAGE_TABLE</b>
+### -field DXGK_OPERATION_UPDATE_PAGE_TABLE
 
 <dd>
 <p>The operation is called to allow the kernel mode driver to build a command buffer to update a page table. </p>
 </dd>
 
-### -field <a id="DXGK_OPERATION_FLUSH_TLB"></a><a id="dxgk_operation_flush_tlb"></a><b>DXGK_OPERATION_FLUSH_TLB</b>
+### -field DXGK_OPERATION_FLUSH_TLB
 
 <dd>
 <p>This operation instructs GPU to flush <i>translation look-aside buffer</i> entries, which belong to the given root page table. </p>
 </dd>
 
-### -field <a id="DXGK_OPERATION_UPDATE_CONTEXT_ALLOCATION"></a><a id="dxgk_operation_update_context_allocation"></a><b>DXGK_OPERATION_UPDATE_CONTEXT_ALLOCATION</b>
+### -field DXGK_OPERATION_UPDATE_CONTEXT_ALLOCATION
 
 <dd>
 <p>This operation is used to update the content of a context or device allocation. </p>
 </dd>
 
-### -field <a id="DXGK_OPERATION_COPY_PAGE_TABLE_ENTRIES"></a><a id="dxgk_operation_copy_page_table_entries"></a><b>DXGK_OPERATION_COPY_PAGE_TABLE_ENTRIES</b>
+### -field DXGK_OPERATION_COPY_PAGE_TABLE_ENTRIES
 
 <dd>
 <p>This operation is called to copy page table entries from one location to another.</p>
 </dd>
 
-### -field <a id="DXGK_OPERATION_NOTIFY_RESIDENCY"></a><a id="dxgk_operation_notify_residency"></a><b>DXGK_OPERATION_NOTIFY_RESIDENCY</b>
+### -field DXGK_OPERATION_NOTIFY_RESIDENCY
 
 <dd>
 <p>The paging operation is issued every time an allocation residency is changed (when allocation is evicted or committed).</p>
 </dd>
 
-### -field <a id=""></a><b></b>
+### -field 
 
 <dd></dd>
 </dl>

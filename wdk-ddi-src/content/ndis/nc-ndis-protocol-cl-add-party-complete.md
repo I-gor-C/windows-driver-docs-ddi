@@ -7,7 +7,7 @@ old-location: netvista\protocolcladdpartycomplete.htm
 old-project: netvista
 ms.assetid: ea3ebbe9-fd94-44b8-8801-639d099c5158
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ VOID ProtocolClAddPartyComplete(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>Specifies final status of the client-initiated add-party operation, which can be one of the
@@ -75,19 +75,19 @@ VOID ProtocolClAddPartyComplete(
 <p></p>
 <dl>
 
-### -param <a id="NDIS_STATUS_SUCCESS"></a><a id="ndis_status_success"></a>NDIS_STATUS_SUCCESS
+### -param NDIS_STATUS_SUCCESS
 
 <dd>
 <p>The given party was added on the client's active multipoint VC.</p>
 </dd>
 
-### -param <a id="NDIS_STATUS_RESOURCES"></a><a id="ndis_status_resources"></a>NDIS_STATUS_RESOURCES
+### -param NDIS_STATUS_RESOURCES
 
 <dd>
 <p>NDIS could not allocate sufficient resources to track the new party.</p>
 </dd>
 
-### -param <a id="NDIS_STATUS_FAILURE"></a><a id="ndis_status_failure"></a>NDIS_STATUS_FAILURE
+### -param NDIS_STATUS_FAILURE
 
 <dd>
 <p>The client passed an invalid 
@@ -95,7 +95,7 @@ VOID ProtocolClAddPartyComplete(
        <b>NdisClAddParty</b>.</p>
 </dd>
 
-### -param <a id="NDIS_STATUS_XXX"></a><a id="ndis_status_xxx"></a>NDIS_STATUS_<i>XXX</i>
+### -param NDIS_STATUS_XXX
 
 <dd>
 <p>The call manager's 
@@ -105,14 +105,14 @@ VOID ProtocolClAddPartyComplete(
 </dl>
 </dd>
 
-### -param <i>ProtocolPartyContext</i> [in]
+### -param ProtocolPartyContext [in]
 
 <dd>
 <p>Specifies the client-supplied handle originally passed to 
      <b>NdisClAddParty</b>.</p>
 </dd>
 
-### -param <i>NdisPartyHandle</i> [in]
+### -param NdisPartyHandle [in]
 
 <dd>
 <p>If 
@@ -121,7 +121,7 @@ VOID ProtocolClAddPartyComplete(
      client should consider this parameter an invalid handle.</p>
 </dd>
 
-### -param <i>CallParameters</i> [in]
+### -param CallParameters [in]
 
 <dd>
 <p>Pointer to a structure of type 
@@ -175,13 +175,13 @@ VOID ProtocolClAddPartyComplete(
     each time it calls 
     <b>NdisClAddParty</b>.</p>
 
-<p>To define a <i>ProtocolClAddPartyComplete</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define a <i>ProtocolClAddPartyComplete</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define a <i>ProtocolClAddPartyComplete</i> function that is named "MyClAddPartyComplete", use the <b>PROTOCOL_CL_ADD_PARTY_COMPLETE</b> type as shown in this code example:</p>
 
 <p>Then, implement your function as follows:</p>
 
-<p>The <b>PROTOCOL_CL_ADD_PARTY_COMPLETE</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>PROTOCOL_CL_ADD_PARTY_COMPLETE</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
+<p>The <b>PROTOCOL_CL_ADD_PARTY_COMPLETE</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>PROTOCOL_CL_ADD_PARTY_COMPLETE</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. </p>
 
@@ -248,4 +248,4 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_ADD_PARTY_COMPLETE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_ADD_PARTY_COMPLETE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

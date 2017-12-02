@@ -7,7 +7,7 @@ old-location: netvista\wsksocketconnect.htm
 old-project: netvista
 ms.assetid: b1482160-49db-4490-b347-ff9396abf2ff
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,7 @@ NTSTATUS WSKAPI * WskSocketConnect(
 ## -parameters
 <dl>
 
-### -param <i>Client</i> [in]
+### -param Client [in]
 
 <dd>
 <p>A pointer to a 
@@ -80,7 +80,7 @@ NTSTATUS WSKAPI * WskSocketConnect(
      WskCaptureProviderNPI</a> function.</p>
 </dd>
 
-### -param <i>SocketType</i> [in]
+### -param SocketType [in]
 
 <dd>
 <p>The type of the socket that is being created. The following socket types are supported:
@@ -88,19 +88,19 @@ NTSTATUS WSKAPI * WskSocketConnect(
 <p></p>
 <dl>
 
-### -param <a id="SOCK_STREAM"></a><a id="sock_stream"></a>SOCK_STREAM
+### -param SOCK_STREAM
 
 <dd>
 <p>Supports reliable connection-oriented byte stream communication.</p>
 </dd>
 
-### -param <a id="SOCK_DGRAM"></a><a id="sock_dgram"></a>SOCK_DGRAM
+### -param SOCK_DGRAM
 
 <dd>
 <p>Supports unreliable connectionless datagram communication.</p>
 </dd>
 
-### -param <a id="SOCK_RAW"></a><a id="sock_raw"></a>SOCK_RAW
+### -param SOCK_RAW
 
 <dd>
 <p>Supports raw access to the transport protocol.</p>
@@ -111,7 +111,7 @@ NTSTATUS WSKAPI * WskSocketConnect(
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571151">WSK Address Families</a>.</p>
 </dd>
 
-### -param <i>Protocol</i> [in]
+### -param Protocol [in]
 
 <dd>
 <p>The transport protocol for the socket that is being created. For more information about the
@@ -119,7 +119,7 @@ NTSTATUS WSKAPI * WskSocketConnect(
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571151">WSK Address Families</a>.</p>
 </dd>
 
-### -param <i>LocalAddress</i> [in]
+### -param LocalAddress [in]
 
 <dd>
 <p>A pointer to a structure that specifies the local transport address to which to bind the socket.
@@ -127,7 +127,7 @@ NTSTATUS WSKAPI * WskSocketConnect(
      the address family for the socket that is being created.</p>
 </dd>
 
-### -param <i>RemoteAddress</i> [in]
+### -param RemoteAddress [in]
 
 <dd>
 <p>A pointer to a structure that specifies the remote transport address to which to connect the
@@ -135,14 +135,14 @@ NTSTATUS WSKAPI * WskSocketConnect(
      corresponds to the address family for the socket that is being created.</p>
 </dd>
 
-### -param <i>Flags</i> 
+### -param Flags 
 
 <dd>
 <p>This parameter is reserved for system use. WSK applications must set this parameter to
      zero.</p>
 </dd>
 
-### -param <i>SocketContext</i> [in, optional]
+### -param SocketContext [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied context for the socket that is being created. The WSK subsystem
@@ -151,7 +151,7 @@ NTSTATUS WSKAPI * WskSocketConnect(
      event callback functions on the new socket, it should set this pointer to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Dispatch</i> [in, optional]
+### -param Dispatch [in, optional]
 
 <dd>
 <p>A pointer to a constant 
@@ -163,7 +163,7 @@ NTSTATUS WSKAPI * WskSocketConnect(
      enabling any event callback functions on the new socket, it should set this pointer to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>OwningProcess</i> [in, optional]
+### -param OwningProcess [in, optional]
 
 <dd>
 <p>A pointer to the process from which the WSK subsystem will retrieve the security context to use
@@ -172,7 +172,7 @@ NTSTATUS WSKAPI * WskSocketConnect(
      application sets this pointer to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>OwningThread</i> [in, optional]
+### -param OwningThread [in, optional]
 
 <dd>
 <p>A pointer to a specific thread from which the WSK subsystem will retrieve the security context to
@@ -181,7 +181,7 @@ NTSTATUS WSKAPI * WskSocketConnect(
      specify a specific thread, it sets this pointer to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>SecurityDescriptor</i> [in, optional]
+### -param SecurityDescriptor [in, optional]
 
 <dd>
 <p>A pointer to a SECURITY_DESCRIPTOR structure that specifies the security descriptor to apply to
@@ -198,7 +198,7 @@ NTSTATUS WSKAPI * WskSocketConnect(
      SECURITY_DESCRIPTOR in the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the creation of the
@@ -339,4 +339,4 @@ NTSTATUS WSKAPI * WskSocketConnect(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_SOCKET_CONNECT callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_SOCKET_CONNECT callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

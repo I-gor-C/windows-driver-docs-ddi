@@ -63,42 +63,42 @@ typedef struct D3DDDIARG_COPYFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>NoOverwrite</b>
+### -field NoOverwrite
 
 <dd>
 <p>Specifies that the caller guarantees that the portion of the surface that is being written to with new data is not currently being referenced or accessed by any previous render operation. The driver can take advantage of this capability to optimize performance and memory usage.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Discard</b>
+### -field Discard
 
 <dd>
 <p>Specifies that the user-mode display driver can discard previous contents of the entire resource. The driver can take advantage of this capability to optimize performance and memory usage.</p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Setting this member to zero is equivalent to setting bits 3 through 24 (0x00FFFFFC) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>BoxValid</b>
+### -field BoxValid
 
 <dd>
 <p>Specifies that a destination region of the subresource to be copied to is valid. When not set, the entire subresource must be updated.</p>
 <p>Setting this member is equivalent to setting the twenty-fifth bit of the 32-bit <b>Value</b> member (0x01000000).</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Setting this member to zero is equivalent to setting bits 26 through 32 (0xFE000000) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that <b>D3DDDIARG_COPYFLAGS</b> contains that can hold a 32-bit value that identifies how to handle the existing contents of a resource during a copy or update operation.</p>

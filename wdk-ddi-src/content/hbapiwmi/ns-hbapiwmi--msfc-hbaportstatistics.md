@@ -68,91 +68,91 @@ typedef struct _MSFC_HBAPortStatistics {
 ## -struct-fields
 <dl>
 
-### -field <b>SecondsSinceLastReset</b>
+### -field SecondsSinceLastReset
 
 <dd>
 <p>Contains the number of seconds since the statistics were last reset.</p>
 </dd>
 
-### -field <b>TxFrames</b>
+### -field TxFrames
 
 <dd>
 <p>Contains the number of total transmitted fibre channel frames across all protocols and classes.</p>
 </dd>
 
-### -field <b>TxWords</b>
+### -field TxWords
 
 <dd>
 <p>Contains the number of total transmitted fibre channel words across all protocols and classes.</p>
 </dd>
 
-### -field <b>RxFrames</b>
+### -field RxFrames
 
 <dd>
 <p>Contains the number of received fibre channel frames across all protocols and classes.</p>
 </dd>
 
-### -field <b>RxWords</b>
+### -field RxWords
 
 <dd>
 <p>Contains the number of received fibre channel words across all protocols and classes.</p>
 </dd>
 
-### -field <b>LIPCount</b>
+### -field LIPCount
 
 <dd>
 <p>Contains the number of loop initialization primitive sequence (LIP) events that have occurred on a arbitrated loop.</p>
 </dd>
 
-### -field <b>NOSCount</b>
+### -field NOSCount
 
 <dd>
 <p>Contains the number of nonoperational state primitive sequence (NOS) events that have occurred on the switched fabric.</p>
 </dd>
 
-### -field <b>ErrorFrames</b>
+### -field ErrorFrames
 
 <dd>
 <p>Contains the number of frames that have been received in error.</p>
 </dd>
 
-### -field <b>DumpedFrames</b>
+### -field DumpedFrames
 
 <dd>
 <p>Contains the number of frames that were lost due to a lack of host buffers available.</p>
 </dd>
 
-### -field <b>LinkFailureCount</b>
+### -field LinkFailureCount
 
 <dd>
 <p>Contains the link failure count. </p>
 </dd>
 
-### -field <b>LossOfSyncCount</b>
+### -field LossOfSyncCount
 
 <dd>
 <p>Contains the loss of synchronization count. </p>
 </dd>
 
-### -field <b>LossOfSignalCount</b>
+### -field LossOfSignalCount
 
 <dd>
 <p>Contains the loss of signal count. </p>
 </dd>
 
-### -field <b>PrimitiveSeqProtocolErrCount</b>
+### -field PrimitiveSeqProtocolErrCount
 
 <dd>
 <p>Contains the primitive sequence protocol error count. </p>
 </dd>
 
-### -field <b>InvalidTxWordCount</b>
+### -field InvalidTxWordCount
 
 <dd>
 <p>Contains a count of the number of invalid transmissions. </p>
 </dd>
 
-### -field <b>InvalidCRCCount</b>
+### -field InvalidCRCCount
 
 <dd>
 <p>Contains a count of the number frames with invalid cyclic redundancy checksums. </p>

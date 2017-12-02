@@ -7,7 +7,7 @@ old-location: wdf\wdfusbtargetdeviceformatrequestforurb.htm
 old-project: wdf
 ms.assetid: 886120f0-da2a-4a00-b440-ce1274c516d4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfUsbTargetDeviceFormatRequestForUrb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,26 +59,26 @@ NTSTATUS WdfUsbTargetDeviceFormatRequestForUrb(
 ## -parameters
 <dl>
 
-### -param <i>UsbDevice</i> [in]
+### -param UsbDevice [in]
 
 <dd>
 <p>A handle to a USB device object that was obtained from a previous call to <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>UrbMemory</i> [in]
+### -param UrbMemory [in]
 
 <dd>
 <p>A handle to a framework memory object that contains a <a href="..\usb\ns-usb--urb.md">URB</a> structure or one of the structure's union members. (All of the URB structure's union members contain the <a href="buses._urb_header">_URB_HEADER</a> structure.) </p>
 <p>If the driver previously called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a> to create <i>UsbDevice</i>, the driver must use <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreateurb.md">WdfUsbTargetDeviceCreateUrb</a> or <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreateisochurb.md">WdfUsbTargetDeviceCreateIsochUrb</a> to create the URB contained in this memory object. Otherwise, a bug check occurs.</p>
 </dd>
 
-### -param <i>UrbMemoryOffset</i> [in, optional]
+### -param UrbMemoryOffset [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wudfddi_types\ns-wudfddi-types--wdfmemory-offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address of the URB within the memory that <i>UrbMemory</i> specifies. If this pointer is <b>NULL</b>, the URB is located at the beginning of the <i>UrbMemory</i> memory. </p>
@@ -202,4 +202,4 @@ NTSTATUS WdfUsbTargetDeviceFormatRequestForUrb(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceFormatRequestForUrb method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceFormatRequestForUrb method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

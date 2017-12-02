@@ -78,141 +78,141 @@ typedef enum _D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_VOT_UNINITIALIZED"></a><a id="d3dkmdt_vot_uninitialized"></a><b>D3DKMDT_VOT_UNINITIALIZED</b>
+### -field D3DKMDT_VOT_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_OTHER"></a><a id="d3dkmdt_vot_other"></a><b>D3DKMDT_VOT_OTHER</b>
+### -field D3DKMDT_VOT_OTHER
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through a connector that is not one of the types that is indicated by the following values in this enumeration.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_HD15"></a><a id="d3dkmdt_vot_hd15"></a><b>D3DKMDT_VOT_HD15</b>
+### -field D3DKMDT_VOT_HD15
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through an HD15 (VGA) connector.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_SVIDEO"></a><a id="d3dkmdt_vot_svideo"></a><b>D3DKMDT_VOT_SVIDEO</b>
+### -field D3DKMDT_VOT_SVIDEO
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through an S-video connector.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_COMPOSITE_VIDEO"></a><a id="d3dkmdt_vot_composite_video"></a><b>D3DKMDT_VOT_COMPOSITE_VIDEO</b>
+### -field D3DKMDT_VOT_COMPOSITE_VIDEO
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through composite video connectors.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_COMPONENT_VIDEO"></a><a id="d3dkmdt_vot_component_video"></a><b>D3DKMDT_VOT_COMPONENT_VIDEO</b>
+### -field D3DKMDT_VOT_COMPONENT_VIDEO
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through component video connectors.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_DVI"></a><a id="d3dkmdt_vot_dvi"></a><b>D3DKMDT_VOT_DVI</b>
+### -field D3DKMDT_VOT_DVI
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through a Digital Video Interface (DVI) connector.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_HDMI"></a><a id="d3dkmdt_vot_hdmi"></a><b>D3DKMDT_VOT_HDMI</b>
+### -field D3DKMDT_VOT_HDMI
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through an High-Definition Multimedia Interface (HDMI) connector.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_LVDS"></a><a id="d3dkmdt_vot_lvds"></a><b>D3DKMDT_VOT_LVDS</b>
+### -field D3DKMDT_VOT_LVDS
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through an Low Voltage Differential Swing (LVDS) or Mobile Industry Processor Interface (MIPI) Digital Serial Interface (DSI) connector.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_D_JPN"></a><a id="d3dkmdt_vot_d_jpn"></a><b>D3DKMDT_VOT_D_JPN</b>
+### -field D3DKMDT_VOT_D_JPN
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through a D-Jpn connector. </p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_SDI"></a><a id="d3dkmdt_vot_sdi"></a><b>D3DKMDT_VOT_SDI</b>
+### -field D3DKMDT_VOT_SDI
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through an SDI connector. </p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_DISPLAYPORT_EXTERNAL"></a><a id="d3dkmdt_vot_displayport_external"></a><b>D3DKMDT_VOT_DISPLAYPORT_EXTERNAL</b>
+### -field D3DKMDT_VOT_DISPLAYPORT_EXTERNAL
 
 <dd>
 <p>Indicates that the connector type is an external display port. </p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_DISPLAYPORT_EMBEDDED"></a><a id="d3dkmdt_vot_displayport_embedded"></a><b>D3DKMDT_VOT_DISPLAYPORT_EMBEDDED</b>
+### -field D3DKMDT_VOT_DISPLAYPORT_EMBEDDED
 
 <dd>
 <p>Indicates that the connector type is an embedded display port. </p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_UDI_EXTERNAL"></a><a id="d3dkmdt_vot_udi_external"></a><b>D3DKMDT_VOT_UDI_EXTERNAL</b>
+### -field D3DKMDT_VOT_UDI_EXTERNAL
 
 <dd>
 <p>Indicates that the connector type is an external Unified Display Interface (UDI). </p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_UDI_EMBEDDED"></a><a id="d3dkmdt_vot_udi_embedded"></a><b>D3DKMDT_VOT_UDI_EMBEDDED</b>
+### -field D3DKMDT_VOT_UDI_EMBEDDED
 
 <dd>
 <p>Indicates that the connector type is an embedded UDI. </p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_SDTVDONGLE"></a><a id="d3dkmdt_vot_sdtvdongle"></a><b>D3DKMDT_VOT_SDTVDONGLE</b>
+### -field D3DKMDT_VOT_SDTVDONGLE
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through a dongle cable that supports SDTV. </p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_MIRACAST"></a><a id="d3dkmdt_vot_miracast"></a><b>D3DKMDT_VOT_MIRACAST</b>
+### -field D3DKMDT_VOT_MIRACAST
 
 <dd>
 <p>Indicates that the video output device connects to an external display device wirelessly through a Miracast connected session. For more info, see <a href="https://msdn.microsoft.com/1645E14A-EC4A-4EB8-9AFA-6DF0466D2B1A">Wireless displays (Miracast)</a>.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_INTERNAL"></a><a id="d3dkmdt_vot_internal"></a><b>D3DKMDT_VOT_INTERNAL</b>
+### -field D3DKMDT_VOT_INTERNAL
 
 <dd>
 <p>Indicates that the video output device connects internally to a display device (for example, the internal connection in a laptop computer).</p>
 <p>This constant value is not a bit-field value. Instead, it's a standalone video output type.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_SVIDEO_4PIN"></a><a id="d3dkmdt_vot_svideo_4pin"></a><b>D3DKMDT_VOT_SVIDEO_4PIN</b>
+### -field D3DKMDT_VOT_SVIDEO_4PIN
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through a 4-pin S-video connector.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_SVIDEO_7PIN"></a><a id="d3dkmdt_vot_svideo_7pin"></a><b>D3DKMDT_VOT_SVIDEO_7PIN</b>
+### -field D3DKMDT_VOT_SVIDEO_7PIN
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through a 7-pin S-video connector.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_RF"></a><a id="d3dkmdt_vot_rf"></a><b>D3DKMDT_VOT_RF</b>
+### -field D3DKMDT_VOT_RF
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through an RF connector.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_RCA_3COMPONENT"></a><a id="d3dkmdt_vot_rca_3component"></a><b>D3DKMDT_VOT_RCA_3COMPONENT</b>
+### -field D3DKMDT_VOT_RCA_3COMPONENT
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through a set of three RCA connectors.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VOT_BNC"></a><a id="d3dkmdt_vot_bnc"></a><b>D3DKMDT_VOT_BNC</b>
+### -field D3DKMDT_VOT_BNC
 
 <dd>
 <p>Indicates that the video output device connects to an external display device through a BNC connector.</p>

@@ -60,25 +60,25 @@ HRESULT APIENTRY* pfnCreateCommandQueue(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>The handle of a device.</p>
 </dd>
 
-### -param <i>CreateCommandQueue</i> [in]
+### -param CreateCommandQueue [in]
 
 <dd>
 <p>An argument used to create a command queue. </p>
 </dd>
 
-### -param <i>hDrvCommandQueue</i> 
+### -param hDrvCommandQueue 
 
 <dd>
 <p>The handle of a command queue.</p>
 </dd>
 
-### -param <i>hRTCommandQueue</i> 
+### -param hRTCommandQueue 
 
 <dd>
 <p>The handle of the command queue for the driver to use when it calls back into the runtime.</p>

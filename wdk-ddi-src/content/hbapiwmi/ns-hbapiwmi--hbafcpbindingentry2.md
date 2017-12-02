@@ -57,7 +57,7 @@ typedef struct _HBAFCPBindingEntry2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Indicates the binding type. For a description of the values that this member can have, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
@@ -111,19 +111,19 @@ typedef struct _HBAFCPBindingEntry2 {
 <p>For information about what needs to be included to use the symbols that represent the binding types, see the Headers section.</p>
 </dd>
 
-### -field <b>FCPId</b>
+### -field FCPId
 
 <dd>
 <p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpid.md">HBAFCPID</a> that contains the FCP identifier for the logical unit and information about the port to be queried for information about the device.</p>
 </dd>
 
-### -field <b>Luid[256]</b>
+### -field Luid[256]
 
 <dd>
 <p>Contains the logical unit descriptor for the device that the operating system derives from SCSI inquiry data. </p>
 </dd>
 
-### -field <b>ScsiId</b>
+### -field ScsiId
 
 <dd>
 <p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbascsiid.md">HBAScsiID</a> that contains the information that uniquely identifies a logical unit for the operating system.</p>

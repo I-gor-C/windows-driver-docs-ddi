@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this header, all the item headers, value payloads, custom items, and custom data for this frame.</p>
 </dd>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>The frame ID in the range of 0 and KSCAMERA_PERFRAMESETTING_HEADER.FrameCount - 1.</p>
 </dd>
 
-### -field <b>ItemCount</b>
+### -field ItemCount
 
 <dd>
 <p>The number of item settings for this frame. The value 0 indicates using global settings for this frame.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

@@ -57,25 +57,25 @@ NTSTATUS KsHandleSizedListQuery(
 ## -parameters
 <dl>
 
-### -param <i>Irp </i> [in]
+### -param Irp  [in]
 
 <dd>
 <p>Specifies the IRP with the identifier list request.</p>
 </dd>
 
-### -param <i>DataItemsCount </i> [in]
+### -param DataItemsCount  [in]
 
 <dd>
 <p>Specifies the number of items in the identifier list.</p>
 </dd>
 
-### -param <i>DataItemSize </i> [in]
+### -param DataItemSize  [in]
 
 <dd>
 <p>Specifies the size of a data item.</p>
 </dd>
 
-### -param <i>DataItems </i> [in]
+### -param DataItems  [in]
 
 <dd>
 <p>Specifies the list of data items.</p>

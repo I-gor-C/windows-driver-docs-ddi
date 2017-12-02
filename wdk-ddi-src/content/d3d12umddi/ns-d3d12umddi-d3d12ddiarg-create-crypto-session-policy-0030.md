@@ -55,13 +55,13 @@ typedef struct _D3D12DDIARG_CREATE_CRYPTO_SESSION_POLICY_0030 {
 ## -struct-fields
 <dl>
 
-### -field <b>pKeyInfo</b>
+### -field pKeyInfo
 
 <dd>
 <p>The key info.</p>
 </dd>
 
-### -field <b>KeyInfoSize</b>
+### -field KeyInfoSize
 
 <dd>
 <p>The key info size.</p>

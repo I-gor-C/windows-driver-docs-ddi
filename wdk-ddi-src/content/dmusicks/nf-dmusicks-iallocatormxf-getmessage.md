@@ -54,7 +54,7 @@ NTSTATUS GetMessage(
 ## -parameters
 <dl>
 
-### -param <i>ppDMKEvt</i> [out]
+### -param ppDMKEvt [out]
 
 <dd>
 <p>Output pointer for the MIDI event. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the event structure being retrieved from the allocator. The structure itself is empty (zeroed by the allocator).</p>
@@ -69,7 +69,7 @@ NTSTATUS GetMessage(
 
 <p>In the case of a MIDI capture stream, the port driver retrieves capture events from the miniport driver when prompted by the usual Service DPC.</p>
 
-<p>For more information about the allocator, see <a href="NULL">Allocator</a>.</p>
+<p>For more information about the allocator, see <a href="https://msdn.microsoft.com/8f263288-2f79-4f1d-b740-d78d40f47b32">Allocator</a>.</p>
 
 ## -requirements
 <table>

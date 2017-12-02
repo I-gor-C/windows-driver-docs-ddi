@@ -54,7 +54,7 @@ HRESULT KsQueryExtendedSize(
 ## -parameters
 <dl>
 
-### -param <i>ExtendedSize</i> [out]
+### -param ExtendedSize [out]
 
 <dd>
 <p>Pointer to a variable that receives the extended header size in bytes.</p>

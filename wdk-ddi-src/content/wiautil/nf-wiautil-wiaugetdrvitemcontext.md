@@ -7,7 +7,7 @@ old-location: image\wiaugetdrvitemcontext.htm
 old-project: image
 ms.assetid: 6d4b7a25-436f-4547-8969-66dd45fa46fd
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiauGetDrvItemContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ HRESULT _stdcall wiauGetDrvItemContext(
 ## -parameters
 <dl>
 
-### -param <i>pWiasContext</i> [in]
+### -param pWiasContext [in]
 
 <dd>
 <p>Pointer to a WIA item context.</p>
 </dd>
 
-### -param <i>ppItemCtx</i> [in, out]
+### -param ppItemCtx [in, out]
 
 <dd>
 <p>Pointer to a memory location that receives a pointer to the driver item context.</p>
 </dd>
 
-### -param <i>ppDrvItem</i> [in, out]
+### -param ppDrvItem [in, out]
 
 <dd>
 <p><i>Optional</i>. Pointer to a memory location that receives a pointer to a driver item. The default value of this parameter is <b>NULL</b>, which means that when this function returns, no change is made to this parameter.</p>

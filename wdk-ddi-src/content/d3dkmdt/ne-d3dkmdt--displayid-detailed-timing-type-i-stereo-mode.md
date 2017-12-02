@@ -57,19 +57,19 @@ enum _DISPLAYID_DETAILED_TIMING_TYPE_I_STEREO_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DIDDT1_Monoscopic"></a><a id="diddt1_monoscopic"></a><a id="DIDDT1_MONOSCOPIC"></a><b>DIDDT1_Monoscopic</b>
+### -field DIDDT1_Monoscopic
 
 <dd>
 <p>Indicates monoscopic mode (no stereo vision).</p>
 </dd>
 
-### -field <a id="DIDDT1_Stereo"></a><a id="diddt1_stereo"></a><a id="DIDDT1_STEREO"></a><b>DIDDT1_Stereo</b>
+### -field DIDDT1_Stereo
 
 <dd>
 <p>Indicates stereo mode.</p>
 </dd>
 
-### -field <a id="DIDDT1_Dependent"></a><a id="diddt1_dependent"></a><a id="DIDDT1_DEPENDENT"></a><b>DIDDT1_Dependent</b>
+### -field DIDDT1_Dependent
 
 <dd>
 <p>Indicates that the mode depends upon user action.</p>

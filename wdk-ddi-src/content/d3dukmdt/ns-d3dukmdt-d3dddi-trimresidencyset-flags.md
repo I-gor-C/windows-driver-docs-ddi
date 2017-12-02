@@ -62,7 +62,7 @@ typedef struct D3DDDI_TRIMRESIDENCYSET_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>PeriodicTrim</b>
+### -field PeriodicTrim
 
 <dd>
 <p>When <b>PeriodicTrim</b> flag is set, the driver is required to performed the following operations:
@@ -74,27 +74,27 @@ typedef struct D3DDDI_TRIMRESIDENCYSET_FLAGS {
 </ul>
 </dd>
 
-### -field <b>RestartPeriodicTrim</b>
+### -field RestartPeriodicTrim
 
 <dd>
 <p>May not be set together with <b>PeriodicTrim</b> flag.
                                                 Reset the last periodic trim context fence to the last completed context fence.</p>
 </dd>
 
-### -field <b>TrimToBudget</b>
+### -field TrimToBudget
 
 <dd>
 <p>Indicates that the application usage is over the memory budget
                                                 and that <b>NumBytesToTrim</b> bytes should be trimmed to fit in the new memory budget.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The consolidated value of the bit-fields in the structure.</p>

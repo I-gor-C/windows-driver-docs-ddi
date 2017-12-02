@@ -57,25 +57,25 @@ typedef struct _DDIMULTISAMPLEQUALITYLEVELSDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the surface format of the multiple-sampled render target.</p>
 </dd>
 
-### -field <b>Flip</b>
+### -field Flip
 
 <dd>
 <p>[in] A Boolean value that specifies whether the resolution is flip or bit-block transfer (blt) style. <b>TRUE</b> indicates flip-style resolution; <b>FALSE</b> indicates blt-style resolution.</p>
 </dd>
 
-### -field <b>MsType</b>
+### -field MsType
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddimultisample-type.md">D3DDDIMULTISAMPLE_TYPE</a>-typed value that indicates the level of full-scene multiple sampling. If the display device supports maskable multiple sampling (that is, more than one sample for a multiple-sample render-target format plus antialias support), the user-mode display driver must provide the number of quality levels for the D3DDDIMULTISAMPLE_NONMASKABLE (1) value.</p>
 </dd>
 
-### -field <b>QualityLevels</b>
+### -field QualityLevels
 
 <dd>
 <p>[in] The number of multiple-sample quality levels that the user-mode display driver supports for the render-target format that is specified by the <b>Format</b>, <b>bFlip</b>, and <b>MSType</b> members.</p>

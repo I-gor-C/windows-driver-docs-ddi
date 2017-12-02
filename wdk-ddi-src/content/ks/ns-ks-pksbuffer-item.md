@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>DpcItem</b>
+### -field DpcItem
 
 <dd>
 <p>A structure of type <a href="stream.ksdpc_item">KSDPC_ITEM</a>. May be used by internal DPCs; do not use for data buffering.</p>
 </dd>
 
-### -field <b>BufferList</b>
+### -field BufferList
 
 <dd>
 <p>Specifies the head of a list of pool allocated buffers that are created by calls to <a href="..\ks\nf-ks-ksgeneratedataevent.md">KsGenerateDataEvent</a> for events that have buffering enabled.</p>

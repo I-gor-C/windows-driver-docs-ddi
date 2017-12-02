@@ -55,13 +55,13 @@ PVOID MmAllocateContiguousMemory(
 ## -parameters
 <dl>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>The size, in bytes, of the block of contiguous memory to allocate. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>HighestAcceptableAddress</i> [in]
+### -param HighestAcceptableAddress [in]
 
 <dd>
 <p>The highest valid physical address the caller can use. For example, if a device can address only locations in the first 16 megabytes of the processor's physical memory address range, the driver for this device should set <i>HighestAcceptableAddress</i> to 0x0000000000FFFFFF.</p>

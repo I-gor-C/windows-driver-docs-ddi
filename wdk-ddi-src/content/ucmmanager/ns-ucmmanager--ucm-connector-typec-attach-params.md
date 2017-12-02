@@ -58,33 +58,33 @@ typedef struct _UCM_CONNECTOR_TYPEC_ATTACH_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of the <b>UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</b> structure. </p>
 </dd>
 
-### -field <b>PortPartnerType</b>
+### -field PortPartnerType
 
 <dd>
-<p>The type of partner attached to the connector, indicated by a <a href="buses.ucm_type_c_port_state">UCM_TYPEC_PARTNER</a> value.</p>
+<p>The type of partner attached to the connector, indicated by a <a href="..\ucmtypes\ne-ucmtypes--ucm-typec-partner.md">UCM_TYPEC_PARTNER</a> value.</p>
 </dd>
 
-### -field <b>CurrentAdvertisement</b>
+### -field CurrentAdvertisement
 
 <dd>
 <p>Power sourcing capabilities of: the partner port when <b>PortPartnerType</b> is <b>UcmTypeCPortStateDfp</b>; the local port when <b>PortPartnerType</b> is not <b>UcmTypeCPortStateDfp</b>. </p>
 </dd>
 
-### -field <b>ChargingState</b>
+### -field ChargingState
 
 <dd>
-<p>Optional. Charging state of the port indicated by one of the <a href="buses.ucm_charging_state">UCM_CHARGING_STATE</a>-typed flags. </p>
+<p>Optional. Charging state of the port indicated by one of the <a href="..\ucmtypes\ne-ucmtypes--ucm-charging-state.md">UCM_CHARGING_STATE</a>-typed flags. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Initialize this structure by calling <a href="buses.ucm_connector_typec_attach_params_init">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT</a>. An initialized <b>UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</b> structure is an input parameter value to <a href="buses.ucmconnectortypecattach">UcmConnectorTypeCAttach</a> that is used by the client driver to notify UcmCx about the Attached state of the port.</p>
+<p>Initialize this structure by calling <a href="..\ucmmanager\nf-ucmmanager-ucm-connector-typec-attach-params-init.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT</a>. An initialized <b>UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</b> structure is an input parameter value to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a> that is used by the client driver to notify UcmCx about the Attached state of the port.</p>
 
 ## -requirements
 <table>
@@ -135,7 +135,7 @@ typedef struct _UCM_CONNECTOR_TYPEC_ATTACH_PARAMS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmconnectortypecattach">UcmConnectorTypeCAttach</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
 </dt>
 </dl>
 <p> </p>

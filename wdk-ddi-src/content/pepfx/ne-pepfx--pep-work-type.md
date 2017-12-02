@@ -63,61 +63,61 @@ typedef enum _PEP_WORK_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PepWorkActiveComplete"></a><a id="pepworkactivecomplete"></a><a id="PEPWORKACTIVECOMPLETE"></a><b>PepWorkActiveComplete</b>
+### -field PepWorkActiveComplete
 
 <dd>
 <p>Reserved for use by the operating system.</p>
 </dd>
 
-### -field <a id="PepWorkRequestIdleState"></a><a id="pepworkrequestidlestate"></a><a id="PEPWORKREQUESTIDLESTATE"></a><b>PepWorkRequestIdleState</b>
+### -field PepWorkRequestIdleState
 
 <dd>
 <p>Reserved for use by the operating system.</p>
 </dd>
 
-### -field <a id="PepWorkDevicePower"></a><a id="pepworkdevicepower"></a><a id="PEPWORKDEVICEPOWER"></a><b>PepWorkDevicePower</b>
+### -field PepWorkDevicePower
 
 <dd>
 <p>Reserved for use by the operating system.</p>
 </dd>
 
-### -field <a id="PepWorkRequestPowerControl"></a><a id="pepworkrequestpowercontrol"></a><a id="PEPWORKREQUESTPOWERCONTROL"></a><b>PepWorkRequestPowerControl</b>
+### -field PepWorkRequestPowerControl
 
 <dd>
 <p>A request for the device driver to perform a custom power-control operation that uses a device-specific context that the PEP provides for the operation. The driver handles this request in its <a href="kernel.powercontrolcallback">PowerControlCallback</a> routine.</p>
 </dd>
 
-### -field <a id="PepWorkDeviceIdle"></a><a id="pepworkdeviceidle"></a><a id="PEPWORKDEVICEIDLE"></a><b>PepWorkDeviceIdle</b>
+### -field PepWorkDeviceIdle
 
 <dd>
 <p>A request for the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) either to start ignoring idle time-outs for the specified device, or to start monitoring these time-outs.</p>
 </dd>
 
-### -field <a id="PepWorkCompleteIdleState"></a><a id="pepworkcompleteidlestate"></a><a id="PEPWORKCOMPLETEIDLESTATE"></a><b>PepWorkCompleteIdleState</b>
+### -field PepWorkCompleteIdleState
 
 <dd>
 <p>A notification to PoFx that the PEP has asynchronously completed the transition of a component to an idle state. PoFx previously initiated this transition by sending a <a href="kernel.pep_dpm_notify_component_idle_state">PEP_DPM_NOTIFY_COMPONENT_IDLE_STATE</a> notification to the PEP.</p>
 </dd>
 
-### -field <a id="PepWorkCompletePerfState"></a><a id="pepworkcompleteperfstate"></a><a id="PEPWORKCOMPLETEPERFSTATE"></a><b>PepWorkCompletePerfState</b>
+### -field PepWorkCompletePerfState
 
 <dd>
 <p>A notification to PoFx that the PEP has asynchronously completed the transition of a component to a P-state. PoFx previously initiated this transition by sending a <a href="kernel.pep_dpm_request_component_perf_state">PEP_DPM_REQUEST_COMPONENT_PERF_STATE</a> notification to the PEP.</p>
 </dd>
 
-### -field <a id="PepWorkAcpiNotify"></a><a id="pepworkacpinotify"></a><a id="PEPWORKACPINOTIFY"></a><b>PepWorkAcpiNotify</b>
+### -field PepWorkAcpiNotify
 
 <dd>
 <p>An ACPI Notify code to describe to PoFx a hardware event that the specified device has generated.</p>
 </dd>
 
-### -field <a id="PepWorkAcpiEvaluateControlMethodComplete"></a><a id="pepworkacpievaluatecontrolmethodcomplete"></a><a id="PEPWORKACPIEVALUATECONTROLMETHODCOMPLETE"></a><b>PepWorkAcpiEvaluateControlMethodComplete</b>
+### -field PepWorkAcpiEvaluateControlMethodComplete
 
 <dd>
 <p>A notification to PoFx that the PEP has asynchronously finished evaluating an ACPI control method. PoFx previously initiated the evaluation of this method by sending a <a href="kernel.pep_notify_acpi_evaluate_control_method">PEP_NOTIFY_ACPI_EVALUATE_CONTROL_METHOD</a> notification to the PEP.</p>
 </dd>
 
-### -field <a id="PepWorkMax"></a><a id="pepworkmax"></a><a id="PEPWORKMAX"></a><b>PepWorkMax</b>
+### -field PepWorkMax
 
 <dd>
 <p>Reserved for use by operating system.</p>

@@ -59,13 +59,13 @@ typedef struct _DELETE_BAND_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>StructSize</b>
+### -field StructSize
 
 <dd>
 <p>The size of this structure in bytes. Set to <b>sizeof</b>(DELETE_BAND_PARAMETERS).</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Delete operation flags. This value is a bitwise OR combination of the following.</p>
@@ -77,7 +77,7 @@ typedef struct _DELETE_BAND_PARAMETERS {
 <tr>
 <td width="40%"><a id="DELBAND_ERASE_BEFORE_DELETE"></a><a id="delband_erase_before_delete"></a><dl>
 
-### -field <b>DELBAND_ERASE_BEFORE_DELETE</b>
+### -field DELBAND_ERASE_BEFORE_DELETE
 
 </dl>
 </td>
@@ -89,25 +89,25 @@ typedef struct _DELETE_BAND_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>BandId</b>
+### -field BandId
 
 <dd>
 <p>The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId</b>. To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.</p>
 </dd>
 
-### -field <b>BandStart</b>
+### -field BandStart
 
 <dd>
 <p>The starting byte location on the storage device to begin a band search. An attempt is made to match a band at or after <b>BandStart</b>.</p>
 </dd>
 
-### -field <b>AuthKeyOffset</b>
+### -field AuthKeyOffset
 
 <dd>
 <p>The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the authorization key for the band. The offset is from the beginning of <b>DELETE_BAND_PARAMETERS</b>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.</p>
@@ -128,13 +128,13 @@ typedef struct _DELETE_BAND_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="KeySize"></a><a id="keysize"></a><a id="KEYSIZE"></a>KeySize
+### -field KeySize
 
 <dd>
 <p>The size of the key, in bytes, of the key data at <b>Key</b>. If <b>KeySize</b> is set to 0, a default key is used.</p>
 </dd>
 
-### -field <a id="Key"></a><a id="key"></a><a id="KEY"></a>Key
+### -field Key
 
 <dd>
 <p>A variable-length byte array containing the key data.</p>

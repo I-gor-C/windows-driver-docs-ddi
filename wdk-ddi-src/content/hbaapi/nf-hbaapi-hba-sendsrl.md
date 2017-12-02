@@ -59,37 +59,37 @@ HBA_STATUS HBA_API HBA_SendSRL(
 ## -parameters
 <dl>
 
-### -param <i>handle</i> [in]
+### -param handle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA through which the request is sent. </p>
 </dd>
 
-### -param <i>hbaPortWWN</i> [in]
+### -param hbaPortWWN [in]
 
 <dd>
 <p>Contains a 64-bit worldwide name (WWN) that uniquely identifies the port through which the SRL request is sent. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
-### -param <i>wwn</i> [in]
+### -param wwn [in]
 
 <dd>
 <p>Contains a 64-bit WWN that uniquely identifies the FL_Port port that is associated with the loop that is scanned. The SRL request is sent to this port. If this member is <b>NULL</b>, it is ignored, and the SRL request is sent to the domain controller that is associated with the loop. The domain controller is identified by the value in <i>domain. </i></p>
 </dd>
 
-### -param <i>domain</i> [in]
+### -param domain [in]
 
 <dd>
 <p>Indicates the number of the domain controller associated with the loops to scan. If <i>wwn</i> is nonzero, this member is ignored.</p>
 </dd>
 
-### -param <i>pRspBuffer</i> [out]
+### -param pRspBuffer [out]
 
 <dd>
 <p>Pointer to a buffer that receives the output data of the SRL request. </p>
 </dd>
 
-### -param <i>pRspBufferSize</i> [in, out]
+### -param pRspBufferSize [in, out]
 
 <dd>
 <p>On input, indicates the size, in bytes, of the buffer at <i>pRspBuffer</i>. On output, this member contains the number of bytes of data retrieved in <i>pRspBuffer</i>. If the buffer is not large enough to receive all of the response data, the data is truncated to the size of the buffer. Eight bytes is sufficient buffer space for any response. </p>

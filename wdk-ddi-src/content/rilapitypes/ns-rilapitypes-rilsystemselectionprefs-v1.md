@@ -7,7 +7,7 @@ old-location: netvista\rilsystemselectionprefs_v1_2.htm
 old-project: netvista
 ms.assetid: 19af0039-a2dd-49a4-ad93-1858288d00cd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSYSTEMSELECTIONPREFS_V1, RILSYSTEMSELECTIONPREFS_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef struct _RILSYSTEMSELECTIONPREFS_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwSystemTypes</b>
+### -field dwSystemTypes
 
 <dd></dd>
 
-### -field <b>dwMode</b>
+### -field dwMode
 
 <dd></dd>
 
-### -field <b>plmnInfo</b>
+### -field plmnInfo
 
 <dd></dd>
 
-### -field <b>dwRoamingMode</b>
+### -field dwRoamingMode
 
 <dd></dd>
 </dl>

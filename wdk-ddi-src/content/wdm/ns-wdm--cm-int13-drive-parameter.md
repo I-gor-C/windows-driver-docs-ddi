@@ -59,31 +59,31 @@ typedef struct _CM_INT13_DRIVE_PARAMETER {
 ## -struct-fields
 <dl>
 
-### -field <b>DriveSelect</b>
+### -field DriveSelect
 
 <dd>
 <p>The drive selected value.</p>
 </dd>
 
-### -field <b>MaxCylinders</b>
+### -field MaxCylinders
 
 <dd>
 <p>The maximum number of cylinders.</p>
 </dd>
 
-### -field <b>SectorsPerTrack</b>
+### -field SectorsPerTrack
 
 <dd>
 <p>The number of sectors per track.</p>
 </dd>
 
-### -field <b>MaxHeads</b>
+### -field MaxHeads
 
 <dd>
 <p>The maximum number of heads.</p>
 </dd>
 
-### -field <b>NumberDrives</b>
+### -field NumberDrives
 
 <dd>
 <p>The number of drives. </p>

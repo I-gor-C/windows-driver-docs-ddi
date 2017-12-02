@@ -59,37 +59,37 @@ typedef struct _FEATURE_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>FeatureCode</b>
+### -field FeatureCode
 
 <dd>
 <p>Contains a value between zero and 0xffff that indicates a feature. The <a href="..\ntddmmc\ne-ntddmmc--feature-number.md">FEATURE_NUMBER</a> enumeration provides a list of currently supported feature numbers. <b>FeatureCode</b>[0] contains the most significant byte of the feature number. <b>FeatureCode</b>[1] contains the least significant byte. </p>
 </dd>
 
-### -field <b>Current</b>
+### -field Current
 
 <dd>
 <p>Indicates, when set to 1, that this feature is currently active and the data reported for the feature is valid. When set to zero, this bit indicates that the feature is not currently active and that the data reported for the feature might not be valid. </p>
 </dd>
 
-### -field <b>Persistent</b>
+### -field Persistent
 
 <dd>
 <p>Indicates, when set to 1, that the feature is always active. When set to zero, this bit indicates that the feature is not always active. </p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Must be set to zero unless otherwise specified within the description for a particular feature.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AdditionalLength</b>
+### -field AdditionalLength
 
 <dd>
 <p>Indicates the number of bytes of feature information that follow this header. This member must be an integral multiple of 4. The total size of the data related to this feature will be <b>AdditionalLength</b> + <b>sizeof</b>(FEATURE_HEADER).</p>

@@ -54,7 +54,7 @@ VOID PshedFreeMemory(
 ## -parameters
 <dl>
 
-### -param <i>Address</i> [in]
+### -param Address [in]
 
 <dd>
 <p>A pointer to the block of memory being freed.</p>

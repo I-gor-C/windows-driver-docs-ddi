@@ -58,26 +58,26 @@ BOOLEAN ScsiPortWmiSetInstanceCount(
 ## -parameters
 <dl>
 
-### -param <i>RequestContext</i> [in]
+### -param RequestContext [in]
 
 <dd>
 <p>Pointer to a structure of type <a href="storage.scsiwmi_request_context">SCSIWMI_REQUEST_CONTEXT</a> that contains the request context for a WMI SRB. </p>
 </dd>
 
-### -param <i>InstanceCount</i> [in]
+### -param InstanceCount [in]
 
 <dd>
 <p>Contains the number of instances for which the minidriver will provide data. </p>
 </dd>
 
-### -param <i>BufferAvail</i> [out]
+### -param BufferAvail [out]
 
 <dd>
 <p>Contains, on return, the number of bytes of buffer space available for describing instance names and data. The value that is returned in this member can be passed to routines <a href="..\scsiwmi\nf-scsiwmi-scsiportwmisetdata.md">ScsiPortWmiSetData</a> and <a href="..\scsiwmi\nf-scsiwmi-scsiportwmisetinstancename.md">ScsiPortWmiSetInstanceName</a> in the <i>BufferAvail </i>parameter of those routines. </p>
 <p>The <b>ScsiPortWmiSetInstanceCount</b> routine initializes an array of pointers to data buffers, with one array element for each instance. If there is not enough memory available in the WNODE to initialize an array of size <i>InstanceCount</i>, a zero will be returned in this member. </p>
 </dd>
 
-### -param <i>SizeNeeded</i> [out]
+### -param SizeNeeded [out]
 
 <dd>
 <p>Indicates, on input, the number of bytes needed to describe the entire WNODE <i>before </i>configuring the internal arrays in the WNODE. On return, this member will contain the size of the entire WNODE, including the newly initialized arrays within the WNODE. </p>

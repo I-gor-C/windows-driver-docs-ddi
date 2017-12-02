@@ -61,37 +61,37 @@ typedef struct D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU {
 ## -struct-fields
 <dl>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] A kernel-mode handle to the context stream in which a wait for the synchronization events in the array that the <b>ObjectHandleArray</b> member specifies is inserted.</p>
 </dd>
 
-### -field <b>ObjectCount</b>
+### -field ObjectCount
 
 <dd>
 <p>[in] The number of synchronization events in the <b>ObjectHandleArray</b> array and fence values in <b>MonitoredFenceValueArray</b> arrays.</p>
 </dd>
 
-### -field <b>ObjectHandleArray</b>
+### -field ObjectHandleArray
 
 <dd>
 <p>[in] An array of kernel-mode handles to the synchronization events that the context that is specified by the <b>hContext</b> member waits for.</p>
 </dd>
 
-### -field <b>MonitoredFenceValueArray</b>
+### -field MonitoredFenceValueArray
 
 <dd>
 <p>[in] An array of 64-bit monitored fence values to wait for, each value corresponding to a synchronization object in <b>ObjectHandleArray</b>.</p>
 </dd>
 
-### -field <b>FenceValue</b>
+### -field FenceValue
 
 <dd>
 <p>[in] Fence value to wait for when the input object is of type <b>D3DDDI_FENCE</b>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>

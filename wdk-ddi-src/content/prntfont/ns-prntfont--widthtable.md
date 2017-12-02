@@ -57,19 +57,19 @@ typedef struct _WIDTHTABLE {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes, of the WIDTHTABLE structure, including the <b>WidthRun</b> array.</p>
 </dd>
 
-### -field <b>dwRunNum</b>
+### -field dwRunNum
 
 <dd>
 <p>Specifies the number of elements in the <b>WidthRun</b> array.</p>
 </dd>
 
-### -field <b>WidthRun</b>
+### -field WidthRun
 
 <dd>
 <p>Is an array of <a href="..\prntfont\ns-prntfont--widthrun.md">WIDTHRUN</a> structures.</p>

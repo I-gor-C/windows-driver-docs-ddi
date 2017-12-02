@@ -60,19 +60,19 @@ typedef struct D3D12DDIARG_RESOURCE_BARRIER_0022 {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of resource barrier as a <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi-resource-barrier-type.md">D3D12DDI_RESOURCE_BARRIER_TYPE</a> value.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A barrier flag as a <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi-resource-barrier-flags.md">D3D12DDI_RESOURCE_BARRIER_FLAGS</a> value.</p>
 </dd>
 
-### -field <b>    {
+### -field     {
         D3D12DDI_RESOURCE_TRANSITION_BARRIER_0003 Transition;
         D3D12DDI_RESOURCE_UAV_BARRIER             UAV;
         D3D12DDI_RESOURCE_RANGED_BARRIER_0022     Ranged;

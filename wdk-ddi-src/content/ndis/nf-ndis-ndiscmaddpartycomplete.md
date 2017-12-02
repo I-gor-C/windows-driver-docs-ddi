@@ -7,7 +7,7 @@ old-location: netvista\ndiscmaddpartycomplete.htm
 old-project: netvista
 ms.assetid: 00833038-1fff-4103-9508-07cb8cbfa846
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisCmAddPartyComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,21 +58,21 @@ VOID NdisCmAddPartyComplete(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>Specifies the final status of the call manager's add-party operation, either NDIS_STATUS_SUCCESS
      or any NDIS_STATUS_<i>XXX</i> except NDIS_STATUS_PENDING.</p>
 </dd>
 
-### -param <i>NdisPartyHandle</i> [in]
+### -param NdisPartyHandle [in]
 
 <dd>
 <p>Specifies the handle identifying the party. This handle was input to the call manager's 
      <a href="..\ndis\nc-ndis-protocol-cm-add-party.md">ProtocolCmAddParty</a> function.</p>
 </dd>
 
-### -param <i>CallMgrPartyContext</i> [in, optional]
+### -param CallMgrPartyContext [in, optional]
 
 <dd>
 <p>Specifies the handle to a caller-allocated resident context area in which the call manager will
@@ -80,7 +80,7 @@ VOID NdisCmAddPartyComplete(
      parameter can be <b>NULL</b> because it is ignored.</p>
 </dd>
 
-### -param <i>CallParameters</i> [in]
+### -param CallParameters [in]
 
 <dd>
 <p>Pointer to a structure of type 
@@ -229,4 +229,4 @@ VOID NdisCmAddPartyComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmAddPartyComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmAddPartyComplete function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

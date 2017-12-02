@@ -7,7 +7,7 @@ old-location: wdf\wdfusbinterfacegetconfiguredpipe.htm
 old-project: wdf
 ms.assetid: 0836a969-e484-485f-9b65-202c177b4f43
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfUsbInterfaceGetConfiguredPipe
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ WDFUSBPIPE WdfUsbInterfaceGetConfiguredPipe(
 ## -parameters
 <dl>
 
-### -param <i>UsbInterface</i> [in]
+### -param UsbInterface [in]
 
 <dd>
 <p>A handle to a USB interface object that was obtained by calling <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>. </p>
 </dd>
 
-### -param <i>PipeIndex</i> [in]
+### -param PipeIndex [in]
 
 <dd>
 <p>A zero-based index into the set of framework pipe objects that are associated with the specified interface object.</p>
 </dd>
 
-### -param <i>PipeInfo</i> [out, optional]
+### -param PipeInfo [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfusb\ns-wdfusb--wdf-usb-pipe-information.md">WDF_USB_PIPE_INFORMATION</a> structure that the framework fills in. This parameter is optional and can be <b>NULL</b>.</p>
@@ -175,4 +175,4 @@ WDFUSBPIPE WdfUsbInterfaceGetConfiguredPipe(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbInterfaceGetConfiguredPipe method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbInterfaceGetConfiguredPipe method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -77,19 +77,19 @@ typedef enum D3D10_DDI_RESOURCE_BIND_FLAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D10_DDI_BIND_VERTEX_BUFFER"></a><a id="d3d10_ddi_bind_vertex_buffer"></a><b>D3D10_DDI_BIND_VERTEX_BUFFER</b>
+### -field D3D10_DDI_BIND_VERTEX_BUFFER
 
 <dd>
 <p>The resource can be bound as a vertex buffer in a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-ia-setvertexbuffers.md">IaSetVertexBuffers</a> function. </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BIND_INDEX_BUFFER"></a><a id="d3d10_ddi_bind_index_buffer"></a><b>D3D10_DDI_BIND_INDEX_BUFFER</b>
+### -field D3D10_DDI_BIND_INDEX_BUFFER
 
 <dd>
 <p>The resource can be bound as an index buffer in a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-ia-setindexbuffer.md">IaSetIndexBuffer</a> function. </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BIND_CONSTANT_BUFFER"></a><a id="d3d10_ddi_bind_constant_buffer"></a><b>D3D10_DDI_BIND_CONSTANT_BUFFER</b>
+### -field D3D10_DDI_BIND_CONSTANT_BUFFER
 
 <dd>
 <p>
@@ -97,25 +97,25 @@ typedef enum D3D10_DDI_RESOURCE_BIND_FLAG {
      </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BIND_SHADER_RESOURCE"></a><a id="d3d10_ddi_bind_shader_resource"></a><b>D3D10_DDI_BIND_SHADER_RESOURCE</b>
+### -field D3D10_DDI_BIND_SHADER_RESOURCE
 
 <dd>
 <p>The resource can be bound as a shader resource in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setshaderresources.md">GsSetShaderResources</a>, <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setshaderresources.md">PsSetShaderResources</a>, or <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setshaderresources.md">VsSetShaderResources</a> function.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_BIND_STREAM_OUTPUT"></a><a id="d3d10_ddi_bind_stream_output"></a><b>D3D10_DDI_BIND_STREAM_OUTPUT</b>
+### -field D3D10_DDI_BIND_STREAM_OUTPUT
 
 <dd>
 <p>The resource can be bound as a stream output.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_BIND_RENDER_TARGET"></a><a id="d3d10_ddi_bind_render_target"></a><b>D3D10_DDI_BIND_RENDER_TARGET</b>
+### -field D3D10_DDI_BIND_RENDER_TARGET
 
 <dd>
 <p>The resource can be bound as a render target.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_BIND_DEPTH_STENCIL"></a><a id="d3d10_ddi_bind_depth_stencil"></a><b>D3D10_DDI_BIND_DEPTH_STENCIL</b>
+### -field D3D10_DDI_BIND_DEPTH_STENCIL
 
 <dd>
 <p>
@@ -123,32 +123,32 @@ typedef enum D3D10_DDI_RESOURCE_BIND_FLAG {
      </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BIND_PIPELINE_MASK"></a><a id="d3d10_ddi_bind_pipeline_mask"></a><b>D3D10_DDI_BIND_PIPELINE_MASK</b>
+### -field D3D10_DDI_BIND_PIPELINE_MASK
 
 <dd>
 <p>A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combination of the first seven values from this enumeration.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_BIND_PRESENT"></a><a id="d3d10_ddi_bind_present"></a><b>D3D10_DDI_BIND_PRESENT</b>
+### -field D3D10_DDI_BIND_PRESENT
 
 <dd>
 <p>The resource can be used in a call to the <a href="display.presentdxgi">PresentDXGI</a> function (that is, the resource can be used as a back buffer).</p>
 </dd>
 
-### -field <a id="D3D10_DDI_BIND_MASK"></a><a id="d3d10_ddi_bind_mask"></a><b>D3D10_DDI_BIND_MASK</b>
+### -field D3D10_DDI_BIND_MASK
 
 <dd>
 <p>A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combination of the Direct3D version 10 values from this enumeration.</p>
 </dd>
 
-### -field <a id="D3D11_DDI_BIND_UNORDERED_ACCESS"></a><a id="d3d11_ddi_bind_unordered_access"></a><b>D3D11_DDI_BIND_UNORDERED_ACCESS</b>
+### -field D3D11_DDI_BIND_UNORDERED_ACCESS
 
 <dd>
 <p>The resource can be bound as an unordered-access buffer.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="D3D11_DDI_BIND_DECODER"></a><a id="d3d11_ddi_bind_decoder"></a><b>D3D11_DDI_BIND_DECODER</b>
+### -field D3D11_DDI_BIND_DECODER
 
 <dd>
 <p>The resource is a two-dimensional (2-D) texture that is filled by the video decoder engine.</p>
@@ -156,7 +156,7 @@ typedef enum D3D10_DDI_RESOURCE_BIND_FLAG {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="D3D11_DDI_BIND_VIDEO_ENCODER"></a><a id="d3d11_ddi_bind_video_encoder"></a><b>D3D11_DDI_BIND_VIDEO_ENCODER</b>
+### -field D3D11_DDI_BIND_VIDEO_ENCODER
 
 <dd>
 <p>The resource is used as an input for a hardware-encode Media Foundation Transform (MFT).</p>
@@ -170,7 +170,7 @@ typedef enum D3D10_DDI_RESOURCE_BIND_FLAG {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="D3D11_DDI_BIND_CAPTURE"></a><a id="d3d11_ddi_bind_capture"></a><b>D3D11_DDI_BIND_CAPTURE</b>
+### -field D3D11_DDI_BIND_CAPTURE
 
 <dd>
 <p>The 2-D texture is used to receive data from the capture interface.</p>
@@ -188,35 +188,35 @@ typedef enum D3D10_DDI_RESOURCE_BIND_FLAG {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="D3D11_DDI_BIND_PIPELINE_MASK"></a><a id="d3d11_ddi_bind_pipeline_mask"></a><b>D3D11_DDI_BIND_PIPELINE_MASK</b>
+### -field D3D11_DDI_BIND_PIPELINE_MASK
 
 <dd>
 <p>A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combination of the first nine values from this enumeration.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="D3D11_DDI_BIND_MASK"></a><a id="d3d11_ddi_bind_mask"></a><b>D3D11_DDI_BIND_MASK</b>
+### -field D3D11_DDI_BIND_MASK
 
 <dd>
 <p>A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combination of the Direct3D version 11 and version 10 values from this enumeration.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="D3D11_DDI_BIND_UNORDERED_ACCESS"></a><a id="d3d11_ddi_bind_unordered_access"></a><b>D3D11_DDI_BIND_UNORDERED_ACCESS</b>
+### -field D3D11_DDI_BIND_UNORDERED_ACCESS
 
 <dd>
 <p>The resource can be bound as an unordered-access buffer.</p>
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <a id="D3D11_DDI_BIND_PIPELINE_MASK"></a><a id="d3d11_ddi_bind_pipeline_mask"></a><b>D3D11_DDI_BIND_PIPELINE_MASK</b>
+### -field D3D11_DDI_BIND_PIPELINE_MASK
 
 <dd>
 <p>A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combination of the first nine values from this enumeration.</p>
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <a id="D3D11_DDI_BIND_MASK"></a><a id="d3d11_ddi_bind_mask"></a><b>D3D11_DDI_BIND_MASK</b>
+### -field D3D11_DDI_BIND_MASK
 
 <dd>
 <p>A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combination of the Direct3D version 11 and version 10 values from this enumeration.</p>

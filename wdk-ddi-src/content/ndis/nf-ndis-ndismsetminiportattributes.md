@@ -7,7 +7,7 @@ old-location: netvista\ndismsetminiportattributes.htm
 old-project: netvista
 ms.assetid: 861626af-23ea-40dc-a91a-7da42d4b0a1c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMSetMiniportAttributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ NDIS_STATUS NdisMSetMiniportAttributes(
 ## -parameters
 <dl>
 
-### -param <i>NdisMiniportAdapterHandle</i> [in]
+### -param NdisMiniportAdapterHandle [in]
 
 <dd>
 <p>The miniport adapter handle that NDIS passed to the 
@@ -67,7 +67,7 @@ NDIS_STATUS NdisMSetMiniportAttributes(
      <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>.</p>
 </dd>
 
-### -param <i>MiniportAttributes</i> [in]
+### -param MiniportAttributes [in]
 
 <dd>
 <p>A pointer to an 
@@ -217,12 +217,12 @@ NDIS_STATUS NdisMSetMiniportAttributes(
    NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="NULL">Initializing a Miniport Adapter</a>
+<a href="netvista.initializing_a_miniport_adapter">Initializing a Miniport Adapter</a>
 </dt>
 <dt>
-<a href="NULL">Setting the NDIS 6.0 Miniport Adapter Attributes</a>
+<a href="netvista.setting_the_ndis_6_0_miniport_adapter_attributes">Setting the NDIS 6.0 Miniport Adapter Attributes</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMSetMiniportAttributes function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMSetMiniportAttributes function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

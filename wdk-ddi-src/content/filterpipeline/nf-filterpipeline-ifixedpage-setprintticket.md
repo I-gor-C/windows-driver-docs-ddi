@@ -54,7 +54,7 @@ HRESULT SetPrintTicket(
 ## -parameters
 <dl>
 
-### -param <i>pPrintTicket</i> [in]
+### -param pPrintTicket [in]
 
 <dd>
 <p>The print ticket object.</p>

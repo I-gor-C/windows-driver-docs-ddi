@@ -63,55 +63,55 @@ HRESULT DeviceCapabilities(
 ## -parameters
 <dl>
 
-### -param <i>poemuiobj</i> 
+### -param poemuiobj 
 
 <dd>
 <p>Caller-supplied pointer to an <a href="..\printoem\ns-printoem--oemuiobj.md">OEMUIOBJ</a> structure.</p>
 </dd>
 
-### -param <i>hPrinter</i> 
+### -param hPrinter 
 
 <dd>
 <p>Caller-supplied handle to the printer device.</p>
 </dd>
 
-### -param <i>pDeviceName</i> 
+### -param pDeviceName 
 
 <dd>
 <p>Caller-supplied pointer to a string representing the device name.</p>
 </dd>
 
-### -param <i>wCapability</i> 
+### -param wCapability 
 
 <dd>
 <p>Caller-supplied flag indicating the type of information the method should return. For a list of flags, see the description of the <a href="..\winddiui\nf-winddiui-drvdevicecapabilities.md">DrvDeviceCapabilities</a> function.</p>
 </dd>
 
-### -param <i>pOutput</i> 
+### -param pOutput 
 
 <dd>
 <p>Caller-supplied pointer to a buffer to receive the requested information. The type of information returned is dependent on the flag specified by <i>wCapability</i>.</p>
 </dd>
 
-### -param <i>pPublicDM</i> 
+### -param pPublicDM 
 
 <dd>
 <p>Caller-supplied pointer to a validated <a href="display.devmodew">DEVMODEW</a> structure.</p>
 </dd>
 
-### -param <i>pOEMDM</i> 
+### -param pOEMDM 
 
 <dd>
 <p>Caller-supplied pointer to the user interface plug-in's private DEVMODEW structure members.</p>
 </dd>
 
-### -param <i>dwOld</i> 
+### -param dwOld 
 
 <dd>
 <p>Caller-supplied return value from the printer driver's <a href="..\winddiui\nf-winddiui-drvdevicecapabilities.md">DrvDeviceCapabilities</a> function, or from another user interface plug-in. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>dwResult</i> 
+### -param dwResult 
 
 <dd>
 <p>A return value that is dependent on the flag specified by <i>wCapability</i>. For more information, see the description of the <a href="..\winddiui\nf-winddiui-drvdevicecapabilities.md">DrvDeviceCapabilities</a> function and the following Remarks section.</p>
@@ -180,7 +180,7 @@ HRESULT DeviceCapabilities(
 
 <p>DC_ENUMRESOLUTIONS</p>
 
-<p>For more information about creating and installing user interface plug-ins, see <a href="NULL">Customizing Microsoft's Printer Drivers</a>.</p>
+<p>For more information about creating and installing user interface plug-ins, see <a href="https://msdn.microsoft.com/b7761209-1f6f-4288-af47-4ed855c2e629">Customizing Microsoft's Printer Drivers</a>.</p>
 
 ## -requirements
 <table>

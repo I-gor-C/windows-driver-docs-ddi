@@ -7,7 +7,7 @@ old-location: debugger\debug_module_parameters.htm
 old-project: debugger
 ms.assetid: 3f10997f-263f-4d1b-ab0a-d44201aaaf37
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: DEBUG_MODULE_PARAMETERS, DEBUG_MODULE_PARAMETERS, *PDEBUG_MODULE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,31 +65,31 @@ typedef struct _DEBUG_MODULE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Base</b>
+### -field Base
 
 <dd>
 <p>The location in the target's virtual address space of the module's base.  If the value of <b>Base</b> is DEBUG_INVALID_OFFSET, the structure is invalid.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of the memory range that is occupied by the module.</p>
 </dd>
 
-### -field <b>TimeDateStamp</b>
+### -field TimeDateStamp
 
 <dd>
 <p>The date and time stamp of the module's executable file.  This is the number of seconds elapsed since midnight (00:00:00), January 1, 1970 Coordinated Universal Time (UTC) as stored in the image file header.</p>
 </dd>
 
-### -field <b>Checksum</b>
+### -field Checksum
 
 <dd>
 <p>The checksum of the image.  This value can be zero.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bit-set that contains the module's flags.  The bit-flags that can be present are as follows. </p>
@@ -126,7 +126,7 @@ typedef struct _DEBUG_MODULE_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>SymbolType</b>
+### -field SymbolType
 
 <dd>
 <p>The type of symbols that are loaded for the module.  This member can have one of the following values.</p>
@@ -203,37 +203,37 @@ typedef struct _DEBUG_MODULE_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>ImageNameSize</b>
+### -field ImageNameSize
 
 <dd>
 <p>The size of the file name for the module. The size is measured in characters, including the terminator.</p>
 </dd>
 
-### -field <b>ModuleNameSize</b>
+### -field ModuleNameSize
 
 <dd>
 <p>The size of the module name of the module. The size is measured in characters, including the terminator.</p>
 </dd>
 
-### -field <b>LoadedImageNameSize</b>
+### -field LoadedImageNameSize
 
 <dd>
 <p>The size of the loaded image name for the module. The size is measured in characters, including the terminator.</p>
 </dd>
 
-### -field <b>SymbolFileNameSize</b>
+### -field SymbolFileNameSize
 
 <dd>
 <p>The size of the symbol file name for the module. The size is measured in characters, including the terminator.</p>
 </dd>
 
-### -field <b>MappedImageNameSize</b>
+### -field MappedImageNameSize
 
 <dd>
 <p>The size of the mapped image name of the module. The size is measured in characters, including the terminator.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>

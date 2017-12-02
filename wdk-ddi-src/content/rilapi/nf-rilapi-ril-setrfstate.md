@@ -7,7 +7,7 @@ old-location: netvista\ril_setrfstate.htm
 old-project: netvista
 ms.assetid: 0020b136-ba18-4dd6-83c4-742c49e624b5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SetRFState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_SetRFState(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>lpRFState</i> 
+### -param lpRFState 
 
 <dd></dd>
 </dl>

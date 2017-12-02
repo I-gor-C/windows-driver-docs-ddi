@@ -54,7 +54,7 @@ typedef enum _CDROM_PERFORMANCE_TOLERANCE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="_Cdrom10Nominal20Exceptions_"></a><a id="_cdrom10nominal20exceptions_"></a><a id="_CDROM10NOMINAL20EXCEPTIONS_"></a><b> Cdrom10Nominal20Exceptions </b>
+### -field  Cdrom10Nominal20Exceptions 
 
 <dd>
 <p>Specifies that the descriptors returned have a 10% performance tolerance for the nominal performance and a 20% time tolerance for the exception list.</p>

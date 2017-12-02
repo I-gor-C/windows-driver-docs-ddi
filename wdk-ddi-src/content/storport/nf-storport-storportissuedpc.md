@@ -58,25 +58,25 @@ BOOLEAN StorPortIssueDpc(
 ## -parameters
 <dl>
 
-### -param <i>DeviceExtension</i> [in]
+### -param DeviceExtension [in]
 
 <dd>
 <p>Pointer to the per-adapter device extension. </p>
 </dd>
 
-### -param <i>Dpc</i> [in]
+### -param Dpc [in]
 
 <dd>
 <p>Pointer to a buffer containing an initialized DPC object of type <a href="..\storport\ns-storport--stor-dpc.md">STOR_DPC</a> returned by the <a href="..\storport\nf-storport-storportinitializedpc.md">StorPortInitializeDpc</a> routine. </p>
 </dd>
 
-### -param <i>SystemArgument1</i> [in]
+### -param SystemArgument1 [in]
 
 <dd>
 <p>Pointer to caller-supplied information that will be passed to the deferred routine. </p>
 </dd>
 
-### -param <i>SystemArgument2</i> [in]
+### -param SystemArgument2 [in]
 
 <dd>
 <p>Pointer to caller-supplied information that will be passed to the deferred routine. </p>

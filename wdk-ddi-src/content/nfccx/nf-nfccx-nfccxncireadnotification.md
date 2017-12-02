@@ -55,13 +55,13 @@ NTSTATUS NfcCxNciReadNotification(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> 
+### -param Device 
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>Memory</i> 
+### -param Memory 
 
 <dd>
 <p>A handle to a framework memory object.</p>

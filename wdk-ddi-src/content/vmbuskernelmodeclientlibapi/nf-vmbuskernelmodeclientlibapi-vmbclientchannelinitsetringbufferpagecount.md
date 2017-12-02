@@ -7,7 +7,7 @@ old-location: netvista\vmbclientchannelinitsetringbufferpagecount.htm
 old-project: netvista
 ms.assetid: 560A7CD9-5D9D-434B-ACEE-5852CC9A2CC3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbClientChannelInitSetRingBufferPageCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,20 +60,20 @@ NTSTATUS
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>A handle for a channel.  </p>
 </dd>
 
-### -param <i>IncomingPageCount</i> [in]
+### -param IncomingPageCount [in]
 
 <dd>
 <p>Number of pages to allocate for the incoming ring     buffer.
 </p>
 </dd>
 
-### -param <i>OutgoingPageCount</i> [in]
+### -param OutgoingPageCount [in]
 
 <dd>
 <p>Number of pages to allocate for the outgoing ring

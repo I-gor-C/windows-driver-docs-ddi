@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="buses.ucm_connector_pd_conn_state_changed_params">UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS</a> structure.</p>
+<p>Initializes a <a href="..\ucmmanager\ns-ucmmanager--ucm-connector-pd-conn-state-changed-params.md">UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS</a> structure.</p>
 
 
 ## -syntax
@@ -56,16 +56,16 @@ void UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Params</i> [out]
+### -param Params [out]
 
 <dd>
-<p>Pointer to a caller-allocated <a href="buses.ucm_connector_pd_conn_state_changed_params">UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS</a> structure to initialize.</p>
+<p>Pointer to a caller-allocated <a href="..\ucmmanager\ns-ucmmanager--ucm-connector-pd-conn-state-changed-params.md">UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS</a> structure to initialize.</p>
 </dd>
 
-### -param <i>PdConnState</i> [in]
+### -param PdConnState [in]
 
 <dd>
-<p>A <a href="buses.ucm_pd_conn_state">UCM_PD_CONN_STATE</a>-typed flag that indicates the connection state of the partner port.</p>
+<p>A <a href="..\ucmtypes\ne-ucmtypes--ucm-pd-conn-state.md">UCM_PD_CONN_STATE</a>-typed flag that indicates the connection state of the partner port.</p>
 </dd>
 </dl>
 
@@ -124,7 +124,7 @@ void UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmconnectorpdconnectionstatechanged">UcmConnectorPdConnectionStateChanged</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorpdconnectionstatechanged.md">UcmConnectorPdConnectionStateChanged</a>
 </dt>
 </dl>
 <p> </p>

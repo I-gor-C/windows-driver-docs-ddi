@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcs_2.htm
 old-project: netvista
 ms.assetid: 50ef03af-3890-40dd-b0ed-7cf048f8530d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMSGDCS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,35 +62,35 @@ typedef struct _RILMSGDCS {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwType</b>
+### -field dwType
 
 <dd></dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd></dd>
 
-### -field <b>dwMsgClass</b>
+### -field dwMsgClass
 
 <dd></dd>
 
-### -field <b>dwAlphabet</b>
+### -field dwAlphabet
 
 <dd></dd>
 
-### -field <b>dwIndication</b>
+### -field dwIndication
 
 <dd></dd>
 
-### -field <b>dwLanguage</b>
+### -field dwLanguage
 
 <dd></dd>
 </dl>

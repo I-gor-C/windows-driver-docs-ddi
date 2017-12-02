@@ -56,13 +56,13 @@ VOID ExReleaseSpinLockExclusive (
 ## -parameters
 <dl>
 
-### -param <i>SpinLock</i> [in, out]
+### -param SpinLock [in, out]
 
 <dd>
 <p> A pointer to the spin lock to release. The caller must own this spin lock for exclusive access.</p>
 </dd>
 
-### -param <i>OldIrql</i> [in]
+### -param OldIrql [in]
 
 <dd>
 <p>The interrupt request level (IRQL) to restore. Set this parameter to the KIRQL value that was returned by the <a href="kernel.exacquirespinlockexclusive">ExAcquireSpinLockExclusive</a> call that acquired the spin lock.</p>

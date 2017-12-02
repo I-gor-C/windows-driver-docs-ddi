@@ -58,31 +58,31 @@ typedef struct _DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>LayerIndex</b>
+### -field LayerIndex
 
 <dd>
 <p>The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.</p>
 </dd>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>Indicates whether the overlay plane specified by <b>LayerIndex</b> is enabled for display.</p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>A handle to the resource that is displayed by using the overlay plane.</p>
 </dd>
 
-### -field <b>SubResourceIndex</b>
+### -field SubResourceIndex
 
 <dd>
 <p>The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource, or surface, on which an overlay plane is to be displayed.</p>
 </dd>
 
-### -field <b>PlaneAttributes</b>
+### -field PlaneAttributes
 
 <dd>
 <p>A structure of type <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-multiplane-overlay-attributes.md">DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a>  that specifies overlay plane attributes.</p>

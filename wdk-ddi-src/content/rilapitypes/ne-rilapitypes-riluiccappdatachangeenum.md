@@ -7,7 +7,7 @@ old-location: netvista\riluiccappdatachangeenum_2.htm
 old-project: netvista
 ms.assetid: 66d5596b-5f5b-46a6-9151-074c4713940f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef enum _RILUICCAPPDATACHANGEENUM {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_UICCAPP_DATACHANGE_MBDN"></a><a id="ril_uiccapp_datachange_mbdn"></a><b>RIL_UICCAPP_DATACHANGE_MBDN</b>
+### -field RIL_UICCAPP_DATACHANGE_MBDN
 
 <dd></dd>
 
-### -field <a id="RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_UNSET"></a><a id="ril_uiccapp_datachange_ef_csp_plmn_unset"></a><b>RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_UNSET</b>
+### -field RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_UNSET
 
 <dd></dd>
 
-### -field <a id="RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_SET"></a><a id="ril_uiccapp_datachange_ef_csp_plmn_set"></a><b>RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_SET</b>
+### -field RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_SET
 
 <dd></dd>
 
-### -field <a id="RIL_UICCAPP_DATACHANGE_ESNME"></a><a id="ril_uiccapp_datachange_esnme"></a><b>RIL_UICCAPP_DATACHANGE_ESNME</b>
+### -field RIL_UICCAPP_DATACHANGE_ESNME
 
 <dd></dd>
 
-### -field <a id="RIL_UICCAPP_DATACHANGE_MAX"></a><a id="ril_uiccapp_datachange_max"></a><b>RIL_UICCAPP_DATACHANGE_MAX</b>
+### -field RIL_UICCAPP_DATACHANGE_MAX
 
 <dd></dd>
 </dl>

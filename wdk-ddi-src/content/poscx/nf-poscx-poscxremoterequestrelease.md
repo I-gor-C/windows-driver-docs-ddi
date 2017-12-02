@@ -57,13 +57,13 @@ NTSTATUS PosCxRemoteRequestRelease(
 ## -parameters
 <dl>
 
-### -param <i>device</i> [in]
+### -param device [in]
 
 <dd>
 <p>A handle to a framework device object that represents the device.</p>
 </dd>
 
-### -param <i>deviceInterfaceTag</i> [in]
+### -param deviceInterfaceTag [in]
 
 <dd>
 <p>The device interface that initiated the release request.</p>

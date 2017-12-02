@@ -60,43 +60,43 @@ typedef struct _D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeMask</b>
+### -field NodeMask
 
 <dd>
 <p>Represents the set of nodes.</p>
 </dd>
 
-### -field <b>Configuration</b>
+### -field Configuration
 
 <dd>
 <p>The video decode configuration.</p>
 </dd>
 
-### -field <b>DecodeWidth</b>
+### -field DecodeWidth
 
 <dd>
 <p>The decode width.</p>
 </dd>
 
-### -field <b>DecodeHeight</b>
+### -field DecodeHeight
 
 <dd>
 <p>The decode height.</p>
 </dd>
 
-### -field <b>MaxDecodePictureBufferCount</b>
+### -field MaxDecodePictureBufferCount
 
 <dd>
 <p>The max decode picture buffer count.</p>
 </dd>
 
-### -field <b>FrameRate</b>
+### -field FrameRate
 
 <dd>
 <p>The frame rate.</p>
 </dd>
 
-### -field <b>BitRate</b>
+### -field BitRate
 
 <dd>
 <p>The bitrate.</p>

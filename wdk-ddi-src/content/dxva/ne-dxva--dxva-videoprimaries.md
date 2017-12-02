@@ -64,67 +64,67 @@ typedef enum _DXVA_VideoPrimaries {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVA_VideoPrimariesShift"></a><a id="dxva_videoprimariesshift"></a><a id="DXVA_VIDEOPRIMARIESSHIFT"></a><b>DXVA_VideoPrimariesShift</b>
+### -field DXVA_VideoPrimariesShift
 
 <dd>
 <p>Specifies to shift bits by 22 positions (DXVA_ExtColorData_ShiftBase + 14, or 8 + 14).</p>
 </dd>
 
-### -field <a id="DXVA_VideoPrimariesMask"></a><a id="dxva_videoprimariesmask"></a><a id="DXVA_VIDEOPRIMARIESMASK"></a><b>DXVA_VideoPrimariesMask</b>
+### -field DXVA_VideoPrimariesMask
 
 <dd>
 <p>Specifies the color primaries mask. 5 (0x07C00000) bits of a DWORD can be used to specify color primaries.</p>
 </dd>
 
-### -field <a id="DXVA_VideoPrimaries_Unknown"></a><a id="dxva_videoprimaries_unknown"></a><a id="DXVA_VIDEOPRIMARIES_UNKNOWN"></a><b>DXVA_VideoPrimaries_Unknown</b>
+### -field DXVA_VideoPrimaries_Unknown
 
 <dd>
 <p>Specifies that color primaries are not specified. The default is BT709.</p>
 </dd>
 
-### -field <a id="DXVA_VideoPrimaries_reserved"></a><a id="dxva_videoprimaries_reserved"></a><a id="DXVA_VIDEOPRIMARIES_RESERVED"></a><b>DXVA_VideoPrimaries_reserved</b>
+### -field DXVA_VideoPrimaries_reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <a id="DXVA_VideoPrimaries_BT709"></a><a id="dxva_videoprimaries_bt709"></a><a id="DXVA_VIDEOPRIMARIES_BT709"></a><b>DXVA_VideoPrimaries_BT709</b>
+### -field DXVA_VideoPrimaries_BT709
 
 <dd>
 <p>Specifies BT709 primaries (including sRGB, scRGB).</p>
 </dd>
 
-### -field <a id="DXVA_VideoPrimaries_BT470_2_SysM"></a><a id="dxva_videoprimaries_bt470_2_sysm"></a><a id="DXVA_VIDEOPRIMARIES_BT470_2_SYSM"></a><b>DXVA_VideoPrimaries_BT470_2_SysM</b>
+### -field DXVA_VideoPrimaries_BT470_2_SysM
 
 <dd>
 <p>Specifies BT470-2 SysM primaries, which are the original NTSC primaries. </p>
 </dd>
 
-### -field <a id="DXVA_VideoPrimaries_BT470_2_SysBG"></a><a id="dxva_videoprimaries_bt470_2_sysbg"></a><a id="DXVA_VIDEOPRIMARIES_BT470_2_SYSBG"></a><b>DXVA_VideoPrimaries_BT470_2_SysBG</b>
+### -field DXVA_VideoPrimaries_BT470_2_SysBG
 
 <dd>
 <p>Specifies BT470-2 SysBG primaries. </p>
 </dd>
 
-### -field <a id="DXVA_VideoPrimaries_SMPTE170M"></a><a id="dxva_videoprimaries_smpte170m"></a><a id="DXVA_VIDEOPRIMARIES_SMPTE170M"></a><b>DXVA_VideoPrimaries_SMPTE170M</b>
+### -field DXVA_VideoPrimaries_SMPTE170M
 
 <dd>
 <p>Specifies SMPTE170M primaries, which are rarely used analog NTSC primaries (also known as SMPTE RP 145).</p>
 </dd>
 
-### -field <a id="DXVA_VideoPrimaries_SMPTE240M"></a><a id="dxva_videoprimaries_smpte240m"></a><a id="DXVA_VIDEOPRIMARIES_SMPTE240M"></a><b>DXVA_VideoPrimaries_SMPTE240M</b>
+### -field DXVA_VideoPrimaries_SMPTE240M
 
 <dd>
 <p>Specifies SMPTE240M primaries. </p>
 </dd>
 
-### -field <a id="DXVA_VideoPrimaries_EBU3213"></a><a id="dxva_videoprimaries_ebu3213"></a><a id="DXVA_VIDEOPRIMARIES_EBU3213"></a><b>DXVA_VideoPrimaries_EBU3213</b>
+### -field DXVA_VideoPrimaries_EBU3213
 
 <dd>
 <p>Specifies EBU3213 primaries. </p>
 </dd>
 
-### -field <a id="DXVA_VideoPrimaries_SMPTE_C"></a><a id="dxva_videoprimaries_smpte_c"></a><a id="DXVA_VIDEOPRIMARIES_SMPTE_C"></a><b>DXVA_VideoPrimaries_SMPTE_C</b>
+### -field DXVA_VideoPrimaries_SMPTE_C
 
 <dd>
 <p>Specifies SMPTE_C primaries, which are analog '79 NTSC primaries.</p>

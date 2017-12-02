@@ -7,7 +7,7 @@ old-location: netvista\fwps_vswitch_filter_engine_reorder_callback0.htm
 old-project: netvista
 ms.assetid: 2526E8BD-316F-4B8D-9CC4-66F4E3B7D708
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,14 +65,14 @@ NTSTATUS NTAPI vSwitchFilterEngineReorderNotifyRn(
 ## -parameters
 <dl>
 
-### -param <i>notifyContext</i> [in, optional]
+### -param notifyContext [in, optional]
 
 <dd>
 <p>A pointer to a context provided by the callout driver. The driver passed this pointer to the <i>notifyContext</i> parameter of the <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a>
  function. This parameter is optional and can be NULL.</p>
 </dd>
 
-### -param <i>completionContext</i> [in]
+### -param completionContext [in]
 
 <dd>
 <p>A pointer to a completion context provided by the callout driver. This parameter is optional and can be NULL.
@@ -80,13 +80,13 @@ NTSTATUS NTAPI vSwitchFilterEngineReorderNotifyRn(
 </p>
 </dd>
 
-### -param <i>isInRequiredPosition</i> [in]
+### -param isInRequiredPosition [in]
 
 <dd>
 <p>A BOOLEAN value that is set to TRUE if the filter is in the required position in the filter stack or FALSE if it is not.</p>
 </dd>
 
-### -param <i>vSwitchExtensionLwfList</i> [in]
+### -param vSwitchExtensionLwfList [in]
 
 <dd>
 <p>An <a href="..\ndis\ns-ndis--ndis-enum-filters.md">NDIS_ENUM_FILTERS</a> structure that specifies a list of the virtual switch extension NDIS filter drivers.</p>
@@ -183,4 +183,4 @@ However, because an administrator can reorder any virtual switch extensions of t
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0 callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0 callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

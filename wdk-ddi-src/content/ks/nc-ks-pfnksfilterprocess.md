@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>An AVStream minidriver's <i>AVStrMiniFilterProcess</i> routine is called when the filter is meant to process frames. It is used to perform <a href="NULL">Filter-Centric Processing</a>.</p>
+<p>An AVStream minidriver's <i>AVStrMiniFilterProcess</i> routine is called when the filter is meant to process frames. It is used to perform <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>.</p>
 
 
 ## -prototype
@@ -58,13 +58,13 @@ NTSTATUS AVStrMiniFilterProcess(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>Pointer to the <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure that must process frames.</p>
 </dd>
 
-### -param <i>ProcessPinsIndex</i> [in]
+### -param ProcessPinsIndex [in]
 
 <dd>
 <p>Pointer to an array of <a href="..\ks\ns-ks--ksprocesspin-indexentry.md">KSPROCESSPIN_INDEXENTRY</a> structures that AVStream orders by pin ID.</p>
@@ -79,7 +79,7 @@ NTSTATUS AVStrMiniFilterProcess(
 
 <p>The routine is called at either IRQL = DISPATCH_LEVEL or PASSIVE_LEVEL depending on the preference expressed in the filter descriptor. Filter descriptors that specify KSFILTER_FLAG_DISPATCH_LEVEL_PROCESSING may have their process callback at DISPATCH_LEVEL; filter descriptors that do not specify this flag will have their process callback at PASSIVE_LEVEL.</p>
 
-<p>For more information, see <a href="NULL">Filter-Centric Processing</a> and <a href="NULL">Restarting Processing in AVStream</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a> and <a href="https://msdn.microsoft.com/f60d4dbd-61e6-4ae2-aa43-9edc8f36c3ff">Restarting Processing in AVStream</a>.</p>
 
 <p>This routine is optional.</p>
 

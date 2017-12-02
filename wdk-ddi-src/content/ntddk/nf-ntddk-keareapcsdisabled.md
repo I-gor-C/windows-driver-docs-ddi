@@ -136,10 +136,10 @@ BOOLEAN KeAreApcsDisabled(void);
 <a href="..\wdm\nf-wdm-keareallapcsdisabled.md">KeAreAllApcsDisabled</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a>
+<a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
+<a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
 </dt>
 </dl>
 <p> </p>

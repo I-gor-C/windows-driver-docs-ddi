@@ -63,7 +63,7 @@ struct _URB_OS_FEATURE_DESCRIPTOR_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b> Hdr</b>
+### -field  Hdr
 
 <dd>
 <p>Pointer to a <a href="buses._urb_header">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR.
@@ -71,31 +71,31 @@ struct _URB_OS_FEATURE_DESCRIPTOR_REQUEST {
 </p>
 </dd>
 
-### -field <b>TransferBufferLength</b>
+### -field TransferBufferLength
 
 <dd>
 <p>Specifies the length, in bytes, of the buffer specified in <b>TransferBuffer</b> or described in <b>TransferBufferMDL</b>. The host controller driver returns the number of bytes read in this member.  Current implementation of this function limits the maximum MS OS Feature Descriptor size to 4 Kilobytes.</p>
 </dd>
 
-### -field <b>TransferBuffer</b>
+### -field TransferBuffer
 
 <dd>
 <p>Pointer to a resident buffer for the transfer or is <b>NULL</b> if an MDL is supplied in <b>TransferBufferMDL</b>. </p>
 </dd>
 
-### -field <b>TransferBufferMDL</b>
+### -field TransferBufferMDL
 
 <dd>
 <p>Pointer to an MDL that describes a resident buffer or is <b>NULL</b> if a buffer is supplied in <b>TransferBuffer</b>. This MDL must be allocated from nonpaged pool.</p>
 </dd>
 
-### -field <b>UrbLink</b>
+### -field UrbLink
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>Recipient</b>
+### -field Recipient
 
 <dd>
 <p>Specifies whether the recipient is the USB device or an interface on the USB device.  One of the following values must be specified:</p>
@@ -109,19 +109,19 @@ struct _URB_OS_FEATURE_DESCRIPTOR_REQUEST {
 </ul>
 </dd>
 
-### -field <b>InterfaceNumber</b>
+### -field InterfaceNumber
 
 <dd>
 <p>Indicates the interface number that is the recipient of the request, if the <b>Recipient</b> member value is 1. Must be set to 0 if the USB device is the recipient.</p>
 </dd>
 
-### -field <b>MS_PageIndex</b>
+### -field MS_PageIndex
 
 <dd>
 <p>Must be set to 0. Page index of the 64K page of the MS OS Feature Descriptor to be returned.  Current implementation only supports a maximum descriptor size of 4K.</p>
 </dd>
 
-### -field <b>MS_FeatureDescriptorIndex</b>
+### -field MS_FeatureDescriptorIndex
 
 <dd>
 <p>Index for MS OS Feature Descriptor to be requested.</p>

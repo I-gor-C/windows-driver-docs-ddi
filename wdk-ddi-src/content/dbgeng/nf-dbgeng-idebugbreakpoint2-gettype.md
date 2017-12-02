@@ -7,7 +7,7 @@ old-location: debugger\gettype.htm
 old-project: debugger
 ms.assetid: c6aa6560-3183-4e3a-a625-80d1c5072af5
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugBreakpoint2, GetType, IDebugBreakpoint2::GetType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT GetType(
 ## -parameters
 <dl>
 
-### -param <i>BreakType</i> [out]
+### -param BreakType [out]
 
 <dd>
 <p>The type of the breakpoint.  The type can be one of the following  values.</p>
@@ -84,7 +84,7 @@ HRESULT GetType(
 <p> </p>
 </dd>
 
-### -param <i>ProcType</i> [out]
+### -param ProcType [out]
 
 <dd>
 <p>The type of the processor that the breakpoint is set for.</p>
@@ -98,7 +98,7 @@ HRESULT GetType(
 
 <p> </p>
 
-<p>This method can also return error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
+<p>This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.</p>
 
 ## -remarks
 <p>If changes are made to the breakpoint, the processor type might change.</p>

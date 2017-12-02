@@ -65,34 +65,34 @@ typedef struct _SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE {
 ## -struct-fields
 <dl>
 
-### -field <b>PageCode</b>
+### -field PageCode
 
 <dd>
 <p>Specifies the diagnostic page being sent or requested based on the value. For a Microcode Control diagnostic page, the value should be 0x0E.</p>
 </dd>
 
-### -field <b>SubEnclosureId</b>
+### -field SubEnclosureId
 
 <dd>
 <p>Specifies the sub enclosure to which the application client is
-sending the microcode image. If the value does not match a valid SUBENCLOSURE_IDENTIFIER field value found in the <a href="..\minitape\ns-minitape--ses-configuration-diagnostic-page.md">SES_CONFIGURATION_DIAGNOSTIC_PAGE</a>, then the enclosure services
+sending the microcode image. If the value does not match a valid SUBENCLOSURE_IDENTIFIER field value found in the <a href="..\storport\ns-storport--ses-configuration-diagnostic-page.md">SES_CONFIGURATION_DIAGNOSTIC_PAGE</a>, then the enclosure services
 process shall abort the download microcode operation with a status of 0x80.</p>
 </dd>
 
-### -field <b>PageLength</b>
+### -field PageLength
 
 <dd>
 <p>Specifies the number of bytes that follow in the diagnostic page.</p>
 </dd>
 
-### -field <b>ExpectedGenerationCode</b>
+### -field ExpectedGenerationCode
 
 <dd>
 <p>Specifies the expected value of the generation code. If this parameter is not set to the current generation code, then the enclosure services
 process shall abort the download microcode operation with a status of 0x80. </p>
 </dd>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>Specifies which mode to download the microcode with. </p>
@@ -104,7 +104,7 @@ process shall abort the download microcode operation with a status of 0x80. </p>
 <tr>
 <td width="40%"><a id="Download_microcode_with_offsets__save__and_activate"></a><a id="download_microcode_with_offsets__save__and_activate"></a><a id="DOWNLOAD_MICROCODE_WITH_OFFSETS__SAVE__AND_ACTIVATE"></a><dl>
 
-### -field <b>Download
+### -field Download
 microcode
 with
 offsets,
@@ -137,7 +137,7 @@ requested,  and activate the new microcode image after power on.</li>
 <tr>
 <td width="40%"><a id="Download_microcode_with_offsets__save__and_defer_activate"></a><a id="download_microcode_with_offsets__save__and_defer_activate"></a><a id="DOWNLOAD_MICROCODE_WITH_OFFSETS__SAVE__AND_DEFER_ACTIVATE"></a><dl>
 
-### -field <b>Download
+### -field Download
 microcode
 with
 offsets,
@@ -171,7 +171,7 @@ microcode)</li>
 <tr>
 <td width="40%"><a id="Activate_deferred_microcode"></a><a id="activate_deferred_microcode"></a><a id="ACTIVATE_DEFERRED_MICROCODE"></a><dl>
 
-### -field <b>Activate
+### -field Activate
 deferred
 microcode</b>
 
@@ -189,7 +189,7 @@ enclosure services process shall activate the deferred microcode image, if any.
 <tr>
 <td width="40%"><a id="Reserved"></a><a id="reserved"></a><a id="RESERVED"></a><dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 
 ### -field All other values
@@ -204,13 +204,13 @@ enclosure services process shall activate the deferred microcode image, if any.
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>BufferID</b>
+### -field BufferID
 
 <dd>
 <p>Specifies a specific buffer within the enclosure services process to receive the microcode
@@ -222,26 +222,26 @@ enclosure services process receives an unsupported buffer ID code, then it shall
 microcode operation and set the <i>Status</i> field in <a href="storage._ses_download_microcode_status_descriptor">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>  to 0x80 in the <a href="storage._ses_download_microcode_status_diagnostic_page">SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE</a> structure.</p>
 </dd>
 
-### -field <b>BufferOffset</b>
+### -field BufferOffset
 
 <dd>
 <p>Specifies the offset in bytes within the buffer to which the microcode data is written in multiples of four. The enclosure services process may require that this  field be contiguously increasing in consecutive SEND DIAGNOSTIC commands. </p>
 </dd>
 
-### -field <b>ImageLength</b>
+### -field ImageLength
 
 <dd>
 <p>specifies the total number of bytes in the microcode image the application
 intends to send to the specified <i>BufferID</i>.</p>
 </dd>
 
-### -field <b>DataLength</b>
+### -field DataLength
 
 <dd>
 <p>Specifies the length of <i>Data</i>, in bytes.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>Contains part of the vendor specific microcode image.</p>

@@ -7,7 +7,7 @@ old-location: netvista\riluiccslotinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 003c888b-5935-460d-8b89-13f4ab69dc85
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILUICCSLOTINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_SLOTINFO_SLOTSTATE"></a><a id="ril_param_slotinfo_slotstate"></a><b>RIL_PARAM_SLOTINFO_SLOTSTATE</b>
+### -field RIL_PARAM_SLOTINFO_SLOTSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SLOTINFO_ALL"></a><a id="ril_param_slotinfo_all"></a><b>RIL_PARAM_SLOTINFO_ALL</b>
+### -field RIL_PARAM_SLOTINFO_ALL
 
 <dd></dd>
 </dl>

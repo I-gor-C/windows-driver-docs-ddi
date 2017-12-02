@@ -56,7 +56,7 @@ HRESULT IddCxSwapChainFinishedProcessingFrame(
 ## -parameters
 <dl>
 
-### -param <i>SwapChainObject</i> [in]
+### -param SwapChainObject [in]
 
 <dd>
 <p>The swap-chain object whose current frame is being queried.</p>

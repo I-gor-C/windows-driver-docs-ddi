@@ -56,19 +56,19 @@ typedef enum _DXVAHDDDI_FRAME_FORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVAHDDDI_FRAME_FORMAT_PROGRESSIVE"></a><a id="dxvahdddi_frame_format_progressive"></a><b>DXVAHDDDI_FRAME_FORMAT_PROGRESSIVE</b>
+### -field DXVAHDDDI_FRAME_FORMAT_PROGRESSIVE
 
 <dd>
 <p>A value that specifies that the frame format is progressive. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST"></a><a id="dxvahdddi_frame_format_interlaced_top_field_first"></a><b>DXVAHDDDI_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST</b>
+### -field DXVAHDDDI_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST
 
 <dd>
 <p>A value that specifies that the frame format is interlaced with two fields. The top (even) field is displayed first. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST"></a><a id="dxvahdddi_frame_format_interlaced_bottom_field_first"></a><b>DXVAHDDDI_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST</b>
+### -field DXVAHDDDI_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST
 
 <dd>
 <p>A value that specifies that the frame format is interlaced with two fields. The bottom (odd) field is displayed first. </p>

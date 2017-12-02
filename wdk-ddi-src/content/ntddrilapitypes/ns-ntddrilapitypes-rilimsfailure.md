@@ -7,7 +7,7 @@ old-location: netvista\rilimsfailure.htm
 old-project: netvista
 ms.assetid: 8be10470-3761-4120-8987-00d6fcc9a989
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILIMSFAILURE, RILIMSFAILURE, *LPRILIMSFAILURE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef struct _RILIMSFAILURE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwMessageType</b>
+### -field dwMessageType
 
 <dd></dd>
 
-### -field <b>dwMessageSubType</b>
+### -field dwMessageSubType
 
 <dd></dd>
 
-### -field <b>dwErrorCode</b>
+### -field dwErrorCode
 
 <dd></dd>
 
-### -field <b>wszErrorString</b>
+### -field wszErrorString
 
 <dd></dd>
 </dl>

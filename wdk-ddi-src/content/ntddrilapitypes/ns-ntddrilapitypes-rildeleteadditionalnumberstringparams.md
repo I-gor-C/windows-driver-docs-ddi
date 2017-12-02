@@ -7,7 +7,7 @@ old-location: netvista\rildeleteadditionalnumberstringparams.htm
 old-project: netvista
 ms.assetid: 89ae70b9-56d9-4169-8bbd-0eb2d916a928
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILDELETEADDITIONALNUMBERSTRINGPARAMS, RILDELETEADDITIONALNUMBERSTRINGPARAMS, *LPRILDELETEADDITIONALNUMBERSTRINGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILDELETEADDITIONALNUMBERSTRINGPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwNumId</b>
+### -field dwNumId
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: wdf\wdfdmatransactionsetdeviceaddressoffset.htm
 old-project: wdf
 ms.assetid: A45231E0-0807-41AA-B20F-6335067BE99A
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDmaTransactionSetDeviceAddressOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ void WdfDmaTransactionSetDeviceAddressOffset(
 ## -parameters
 <dl>
 
-### -param <i>DmaTransaction</i> [in]
+### -param DmaTransaction [in]
 
 <dd>
 <p>A handle to a DMA transaction object that specifies the transaction to modify.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>The offset of the register, from the <b>DeviceAddress</b> specified in <a href="..\wdfdmaenabler\ns-wdfdmaenabler--wdf-dma-system-profile-config.md">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>, to or from which DMA should be performed.</p>
@@ -164,4 +164,4 @@ void WdfDmaTransactionSetDeviceAddressOffset(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionSetDeviceAddressOffset method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionSetDeviceAddressOffset method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

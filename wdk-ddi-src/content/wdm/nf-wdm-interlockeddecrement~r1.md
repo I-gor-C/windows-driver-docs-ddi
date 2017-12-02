@@ -55,7 +55,7 @@ LONG InterlockedDecrement(
 ## -parameters
 <dl>
 
-### -param <i>Addend</i> [in, out]
+### -param Addend [in, out]
 
 <dd>
 <p>A pointer to a variable to be decremented. </p>

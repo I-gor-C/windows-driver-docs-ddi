@@ -55,14 +55,14 @@ typedef struct _D3DKMT_FLIPINFOFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>FlipInterval</b>
+### -field FlipInterval
 
 <dd>
 <p>A UINT value that specifies whether the display miniport driver natively supports the scheduling of a flip command to take effect after two, three or four vertical syncs occur. Regardless of whether the display miniport driver supports a flip interval of two or greater, the driver must support an immediate flip and a flip interval of one.</p>
 <p>Setting this member is equivalent to setting the first bit of a 32-bit value (0x00000001).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of a 32-bit value to zeros. </p>

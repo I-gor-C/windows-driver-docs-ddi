@@ -7,7 +7,7 @@ old-location: ifsk\flt_tag_data_buffer.htm
 old-project: ifsk
 ms.assetid: a101e0c8-7121-42b6-aa0e-299f37af8e47
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FLT_TAG_DATA_BUFFER, FLT_TAG_DATA_BUFFER, *PFLT_TAG_DATA_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,66 +80,66 @@ typedef struct _FLT_TAG_DATA_BUFFER {
 ## -struct-fields
 <dl>
 
-### -field <b>FileTag</b>
+### -field FileTag
 
 <dd>
 <p>Reparse point tag. </p>
 </dd>
 
-### -field <b>TagDataLength</b>
+### -field TagDataLength
 
 <dd>
 <p>Size, in bytes, of the reparse data pointed to by the <b>DataBuffer</b> member.</p>
 </dd>
 
-### -field <b>UnparsedNameLength</b>
+### -field UnparsedNameLength
 
 <dd>
 <p>Length, in bytes, of the unparsed portion of the file name pointed to by the <b>FileName</b> member of the associated file object.  For more information about the <b>FileName</b> member, see <a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a>.</p>
 </dd>
 
-### -field ( <i>unnamed union</i> )
+### -field ( unnamed union )
 
 <dd>
 <p> </p>
 <dl>
 
-### -field <b>SymbolicLinkReparseBuffer</b>
+### -field SymbolicLinkReparseBuffer
 
 <dd>
 <dl>
 
-### -field <b>SubstituteNameOffset</b>
+### -field SubstituteNameOffset
 
 <dd>
 <p>Offset, in bytes, of the substitute name string in the <b>PathBuffer</b> array. Note that this offset must be divided by <b>sizeof(</b>WCHAR<b>)</b> to get the array index. </p>
 </dd>
 
-### -field <b>SubstituteNameLength</b>
+### -field SubstituteNameLength
 
 <dd>
 <p>Length, in bytes, of the substitute name string. If the substitute name string is NULL-terminated, <b>SubstituteNameLength</b> does not include space for the UNICODE_NULL terminator. </p>
 </dd>
 
-### -field <b>PrintNameOffset</b>
+### -field PrintNameOffset
 
 <dd>
 <p>Offset, in bytes, of the print name string in the <b>PathBuffer</b> array. Note that this offset must be divided by <b>sizeof(</b>WCHAR<b>)</b> to get the array index. </p>
 </dd>
 
-### -field <b>PrintNameLength</b>
+### -field PrintNameLength
 
 <dd>
 <p>Length, in bytes, of the print name string. If the print name string is NULL-terminated, <b>PrintNameLength</b> does not include space for the UNICODE_NULL terminator. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>If the SYMLINK_FLAG_RELATIVE flag is set, the <b>PathBuffer</b> path is relative to the path contained in the <b>FileName</b> member of the associated file object.</p>
 </dd>
 
-### -field <b>PathBuffer</b>
+### -field PathBuffer
 
 <dd>
 <p>First character of the path string. This character is followed in memory by the remainder of the string. </p>
@@ -147,36 +147,36 @@ typedef struct _FLT_TAG_DATA_BUFFER {
 </dl>
 </dd>
 
-### -field <b>MountPointReparseBuffer</b>
+### -field MountPointReparseBuffer
 
 <dd>
 <dl>
 
-### -field <b>SubstituteNameOffset</b>
+### -field SubstituteNameOffset
 
 <dd>
 <p>Offset, in bytes, of the substitute name string in the <b>PathBuffer</b> array. Note that this offset must be divided by <b>sizeof(</b>WCHAR<b>)</b> to get the array index. </p>
 </dd>
 
-### -field <b>SubstituteNameLength</b>
+### -field SubstituteNameLength
 
 <dd>
 <p>Length, in bytes, of the substitute name string. If the substitute name string is NULL-terminated, <b>SubstituteNameLength</b> does not include space for the UNICODE_NULL terminator. </p>
 </dd>
 
-### -field <b>PrintNameOffset</b>
+### -field PrintNameOffset
 
 <dd>
 <p>Offset, in bytes, of the print name string in the <b>PathBuffer</b> array. Note that this offset must be divided by <b>sizeof(</b>WCHAR<b>)</b> to get the array index. </p>
 </dd>
 
-### -field <b>PrintNameLength</b>
+### -field PrintNameLength
 
 <dd>
 <p>Length, in bytes, of the print name string. If the print name string is NULL-terminated, <b>PrintNameLength</b> does not include space for the UNICODE_NULL terminator. </p>
 </dd>
 
-### -field <b>PathBuffer</b>
+### -field PathBuffer
 
 <dd>
 <p>First character of the path string. This character is followed in memory by the remainder of the string. </p>
@@ -184,12 +184,12 @@ typedef struct _FLT_TAG_DATA_BUFFER {
 </dl>
 </dd>
 
-### -field <b>GenericReparseBuffer</b>
+### -field GenericReparseBuffer
 
 <dd>
 <dl>
 
-### -field <b>DataBuffer</b>
+### -field DataBuffer
 
 <dd>
 <p>Pointer to a buffer that contains user-defined data for the reparse point. </p>
@@ -197,18 +197,18 @@ typedef struct _FLT_TAG_DATA_BUFFER {
 </dl>
 </dd>
 
-### -field <b>GenericGUIDReparseBuffer</b>
+### -field GenericGUIDReparseBuffer
 
 <dd>
 <dl>
 
-### -field <b>TagGuid</b>
+### -field TagGuid
 
 <dd>
 <p>Globally unique identifier (GUID) that uniquely identifies the type of reparse point. If <b>FileTag</b> is not a Microsoft tag, this member cannot be <b>NULL</b>. </p>
 </dd>
 
-### -field <b>DataBuffer</b>
+### -field DataBuffer
 
 <dd>
 <p>Pointer to a buffer that contains user-defined data for the reparse point. </p>
@@ -257,4 +257,4 @@ typedef struct _FLT_TAG_DATA_BUFFER {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_TAG_DATA_BUFFER structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_TAG_DATA_BUFFER structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

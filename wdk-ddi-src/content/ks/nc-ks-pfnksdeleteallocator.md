@@ -57,7 +57,7 @@ VOID AVStrMiniDeleteAllocator(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to the allocator's context structure created by <a href="stream.avstrminiinitializeallocator">AVStrMiniInitializeAllocator</a>.</p>
@@ -72,7 +72,7 @@ VOID AVStrMiniDeleteAllocator(
 
 <p>Once this function is called, AVStream will no longer use the allocator to allocate and free memory. This handler should release all system resources reserved by the allocator.</p>
 
-<p>For more information, see <a href="NULL">KS Allocators</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/07812703-a66f-450a-b28e-4cf765267c4a">KS Allocators</a>.</p>
 
 ## -requirements
 <table>

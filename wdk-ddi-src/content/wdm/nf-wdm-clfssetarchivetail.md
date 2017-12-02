@@ -56,13 +56,13 @@ NTSTATUS ClfsSetArchiveTail(
 ## -parameters
 <dl>
 
-### -param <i>plfoLog</i> [in]
+### -param plfoLog [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents a CLFS log. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>.</p>
 </dd>
 
-### -param <i>plsnArchiveTail</i> [in]
+### -param plsnArchiveTail [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that specifies the LSN that is to become the new archive tail. This must be the exact LSN of a record in the log.</p>

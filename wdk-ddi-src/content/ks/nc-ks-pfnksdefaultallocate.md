@@ -57,7 +57,7 @@ PVOID AVStrMiniAllocate(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to the allocator's context structure created in <i>AVStrMiniInitializeAllocator</i>.</p>
@@ -72,7 +72,7 @@ PVOID AVStrMiniAllocate(
 
 <p>AVStream calls this routine to allocate a frame. The handler should allocate a frame as described by the allocator framing context passed into the initialization dispatch.</p>
 
-<p>For more information, see <a href="NULL">KS Allocators</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/07812703-a66f-450a-b28e-4cf765267c4a">KS Allocators</a>.</p>
 
 ## -requirements
 <table>

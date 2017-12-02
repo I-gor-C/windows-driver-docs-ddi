@@ -57,25 +57,25 @@ typedef struct _GetFcpTargetMapping_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. </p>
 </dd>
 
-### -field <b>TotalEntryCount</b>
+### -field TotalEntryCount
 
 <dd>
 <p>Indicates the total number of persistent bindings associated with the HBA..</p>
 </dd>
 
-### -field <b>OutEntryCount</b>
+### -field OutEntryCount
 
 <dd>
 <p>Indicates the total number of mappings retrieved by the <a href="storage.getfcptargetmapping">GetFcpTargetMapping</a> WMI method. This value will be less than or equal to <b>TotalEntryCount</b>. </p>
 </dd>
 
-### -field <b>Entry</b>
+### -field Entry
 
 <dd>
 <p>Contains an array of structures of type <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpscsientry.md">HBAFCPScsiEntry</a> that describe an HBA's bindings between operating system and fibre channel protocol (FCP) identifiers. </p>

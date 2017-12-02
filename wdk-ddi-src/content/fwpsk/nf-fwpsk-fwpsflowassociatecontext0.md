@@ -7,7 +7,7 @@ old-location: netvista\fwpsflowassociatecontext0.htm
 old-project: netvista
 ms.assetid: 0a339457-77df-480b-adb8-9406507ec8d8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsFlowAssociateContext0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ NTSTATUS NTAPI FwpsFlowAssociateContext0(
 ## -parameters
 <dl>
 
-### -param <i>flowId</i> [in]
+### -param flowId [in]
 
 <dd>
 <p>A run-time identifier that specifies the data flow with which to associate the context. The
@@ -68,7 +68,7 @@ NTSTATUS NTAPI FwpsFlowAssociateContext0(
      <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function.</p>
 </dd>
 
-### -param <i>layerId</i> [in]
+### -param layerId [in]
 
 <dd>
 <p>The run-time identifier for the filtering layer with which the context is being associated. The context will be associated only with the specified filtering layer. For
@@ -77,7 +77,7 @@ NTSTATUS NTAPI FwpsFlowAssociateContext0(
      Identifiers</a>.</p>
 </dd>
 
-### -param <i>calloutId</i> [in]
+### -param calloutId [in]
 
 <dd>
 <p>The run-time identifier for the callout in the filter engine. This identifier was returned when
@@ -87,7 +87,7 @@ NTSTATUS NTAPI FwpsFlowAssociateContext0(
      register the callout with the filter engine.</p>
 </dd>
 
-### -param <i>flowContext</i> [in]
+### -param flowContext [in]
 
 <dd>
 <p>The callout driver-defined context to be associated with the data flow. This parameter must not be
@@ -135,7 +135,7 @@ NTSTATUS NTAPI FwpsFlowAssociateContext0(
 
 <p>You can associate multiple contexts with a flow. However, each context must be associated with a different callout. The new callout can be at the same layer as the previous one or at a different layer.</p>
 
-<p>For more information and sample code, see <a href="NULL">Associating Context with a Data Flow</a>
+<p>For more information and sample code, see <a href="netvista.associating_context_with_a_data_flow">Associating Context with a Data Flow</a>
 and the <a href="http://go.microsoft.com/fwlink/p/?LinkId=618934">Windows Filtering Platform Sample</a>.</p>
 
 ## -requirements
@@ -209,10 +209,10 @@ and the <a href="http://go.microsoft.com/fwlink/p/?LinkId=618934">Windows Filter
 <a href="..\fwpsk\nf-fwpsk-fwpsflowremovecontext0.md">FwpsFlowRemoveContext0</a>
 </dt>
 <dt>
-<a href="NULL">Associating Context with a Data Flow</a>
+<a href="netvista.associating_context_with_a_data_flow">Associating Context with a Data Flow</a>
 </dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?LinkId=618934">Windows Filtering Platform Sample</a></dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsFlowAssociateContext0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsFlowAssociateContext0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

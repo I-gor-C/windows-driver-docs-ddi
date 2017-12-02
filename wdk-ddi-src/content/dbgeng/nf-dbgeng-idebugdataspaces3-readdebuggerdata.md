@@ -7,7 +7,7 @@ old-location: debugger\readdebuggerdata.htm
 old-project: debugger
 ms.assetid: 54e4d3b9-db9d-4844-938f-c8ca8819d182
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugDataSpaces3, ReadDebuggerData, IDebugDataSpaces3::ReadDebuggerData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ HRESULT ReadDebuggerData(
 ## -parameters
 <dl>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>Specifies the index of the data to retrieve.  The following values are valid:</p>
@@ -1273,19 +1273,19 @@ HRESULT ReadDebuggerData(
 <p> </p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Receives the value of the specified debugger data.  The "Return Type" column in the above table specifies the data type that is returned.  The data can be accessed by casting <i>Buffer</i> to a pointer to that type.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size in bytes of the buffer <i>Buffer</i>.</p>
 </dd>
 
-### -param <i>DataSize</i> [out, optional]
+### -param DataSize [out, optional]
 
 <dd>
 <p>Receives the number of bytes used in the buffer <i>Buffer</i>.  If <i>DataSize</i> is <b>NULL</b>, this information is not returned.</p>
@@ -1299,7 +1299,7 @@ HRESULT ReadDebuggerData(
 
 <p> </p>
 
-<p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
+<p>This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p>
 
 ## -remarks
 <p>Some or all of the values may be unavailable in certain debugging sessions.  For example, some of the values are only available for particular versions of the operating system.</p>

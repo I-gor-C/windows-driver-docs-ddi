@@ -56,19 +56,19 @@ NTSTATUS RegisterPowerControlCallback(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>The device object.</p>
 </dd>
 
-### -param <i>Callback</i> [in]
+### -param Callback [in]
 
 <dd>
 <p>The callback object.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>The callback context.</p>

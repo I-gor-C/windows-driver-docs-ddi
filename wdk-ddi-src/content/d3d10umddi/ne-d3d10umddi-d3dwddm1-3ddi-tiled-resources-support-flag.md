@@ -55,13 +55,13 @@ typedef enum _D3DWDDM1_3DDI_TILED_RESOURCES_SUPPORT_FLAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DWDDM1_3DDI_TILED_RESOURCES_TIER_1_SUPPORTED"></a><a id="d3dwddm1_3ddi_tiled_resources_tier_1_supported"></a><b>D3DWDDM1_3DDI_TILED_RESOURCES_TIER_1_SUPPORTED</b>
+### -field D3DWDDM1_3DDI_TILED_RESOURCES_TIER_1_SUPPORTED
 
 <dd>
 <p>Tiled resources are supported to a  minimal level.</p>
 </dd>
 
-### -field <a id="D3DWDDM1_3DDI_TILED_RESOURCES_TIER_2_SUPPORTED"></a><a id="d3dwddm1_3ddi_tiled_resources_tier_2_supported"></a><b>D3DWDDM1_3DDI_TILED_RESOURCES_TIER_2_SUPPORTED</b>
+### -field D3DWDDM1_3DDI_TILED_RESOURCES_TIER_2_SUPPORTED
 
 <dd>
 <p>Tiled resources are supported to a greater extent than for <b>D3DWDDM1_3DDI_TILED_RESOURCES_TIER_1_SUPPORTED</b>.</p>

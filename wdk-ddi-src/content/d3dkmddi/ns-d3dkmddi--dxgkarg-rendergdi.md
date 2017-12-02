@@ -63,61 +63,61 @@ typedef struct _DXGKARG_RENDERGDI {
 ## -struct-fields
 <dl>
 
-### -field <b>pCommand</b>
+### -field pCommand
 
 <dd>
 <p>A pointer to the start of the command buffer.</p>
 </dd>
 
-### -field <b>CommandLength</b>
+### -field CommandLength
 
 <dd>
 <p>The size, in bytes, of the command buffer that <b>pCommand</b> points to.</p>
 </dd>
 
-### -field <b>pDmaBuffer</b>
+### -field pDmaBuffer
 
 <dd>
 <p>A pointer to the start of the DMA buffer, which is aligned on 4 KB. </p>
 </dd>
 
-### -field <b>DmaBufferGpuVirtualAddress</b>
+### -field DmaBufferGpuVirtualAddress
 
 <dd>
 <p>A <b>D3DGPU_VIRTUAL_ADDRESS</b> data type that indicates the virtual address where the DMA buffer was paged in. If the physical address is zero, the DMA buffer is not correctly paged in.</p>
 </dd>
 
-### -field <b>DmaSize</b>
+### -field DmaSize
 
 <dd>
 <p>The size, in bytes, of the DMA buffer that <b>pDmaBuffer</b> points to.</p>
 </dd>
 
-### -field <b>pDmaBufferPrivateData</b>
+### -field pDmaBufferPrivateData
 
 <dd>
 <p>A pointer to a driver-resident private data structure that is used for generating the DMA buffer that <b>pDmaBuffer</b> points to.</p>
 </dd>
 
-### -field <b>DmaBufferPrivateDataSize</b>
+### -field DmaBufferPrivateDataSize
 
 <dd>
 <p>The number of bytes that remain in the private data structure that <b>pDmaBufferPrivateData</b> points to for the current operation.</p>
 </dd>
 
-### -field <b>pAllocationList</b>
+### -field pAllocationList
 
 <dd>
 <p>An array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationlist.md">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that the DMA buffer references. Each allocation that is referenced should appear once for optimal performance.</p>
 </dd>
 
-### -field <b>AllocationListSize</b>
+### -field AllocationListSize
 
 <dd>
 <p>The available number of elements in the array that <b>pAllocationList</b> specifies, which represents the number of allocation specifications to send through DMA to the graphics hardware.</p>
 </dd>
 
-### -field <b>MultipassOffset</b>
+### -field MultipassOffset
 
 <dd>
 <p>A value that specifies the progress of the rendering operation.</p>

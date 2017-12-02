@@ -67,13 +67,13 @@ typedef struct _BDCB_IMAGE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Classification</b>
+### -field Classification
 
 <dd>
 <p>The classification of the boot start image.</p>
 </dd>
 
-### -field <b>ImageFlags</b>
+### -field ImageFlags
 
 <dd>
 <p>Bit flags that describe the image. The following values are defined.
@@ -111,43 +111,43 @@ typedef struct _BDCB_IMAGE_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>ImageName</b>
+### -field ImageName
 
 <dd>
 <p>The name of the boot-start driver's binary image.</p>
 </dd>
 
-### -field <b>RegistryPath</b>
+### -field RegistryPath
 
 <dd>
 <p>The path in the registry where the boot-start driver is registered.</p>
 </dd>
 
-### -field <b>CertificatePublisher</b>
+### -field CertificatePublisher
 
 <dd>
 <p>The publisher of the image's certificate. If the image is not signed, the string is empty ("").</p>
 </dd>
 
-### -field <b>CertificateIssuer</b>
+### -field CertificateIssuer
 
 <dd>
 <p>The issuer of the image's certificate. If the image is not signed, the string is empty ("").</p>
 </dd>
 
-### -field <b>ImageHash</b>
+### -field ImageHash
 
 <dd>
 <p>The Authenticode hash of the image, which can be calculated by  using SignTool.exe (Sign Tool). </p>
 </dd>
 
-### -field <b>CertificateThumbprint</b>
+### -field CertificateThumbprint
 
 <dd>
 <p>The hash of the certificate of the signer to be signed. Run <b>certutil –dump x,cer</b> to view this value as  "Signature Hash".</p>
 </dd>
 
-### -field <b>ImageHashAlgorithm</b>
+### -field ImageHashAlgorithm
 
 <dd>
 <p>The algorithm of the image hash. The following values are listed for reference.
@@ -220,19 +220,19 @@ typedef struct _BDCB_IMAGE_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>ThumbprintHashAlgorithm</b>
+### -field ThumbprintHashAlgorithm
 
 <dd>
 <p>The algorithm of the certificate thumbprint. This member should be ignored if <b>CertificateThumbprint</b> is NULL.</p>
 </dd>
 
-### -field <b>ImageHashLength</b>
+### -field ImageHashLength
 
 <dd>
 <p>The length of data pointed to by the <b>ImageHash</b> member.</p>
 </dd>
 
-### -field <b>CertificateThumbprintLength</b>
+### -field CertificateThumbprintLength
 
 <dd>
 <p>The length of data pointed to by the <b>CertificateThumbprint</b> member.</p>

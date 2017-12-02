@@ -58,31 +58,31 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>PastFrames</b>
+### -field PastFrames
 
 <dd>
 <p>The number of past reference frames required to perform the optimal video processing.</p>
 </dd>
 
-### -field <b>FutureFrames</b>
+### -field FutureFrames
 
 <dd>
 <p>The number of future reference frames required to perform the optimal video processing.</p>
 </dd>
 
-### -field <b>ConversionCaps</b>
+### -field ConversionCaps
 
 <dd>
 <p>A bitwise <b>OR</b> of zero or more member values from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-conversion-caps.md">D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS</a> structure.</p>
 </dd>
 
-### -field <b>ITelecineCaps</b>
+### -field ITelecineCaps
 
 <dd>
 <p>A bitwise <b>OR</b> of zero or more constant values from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-itelecine-caps.md">D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS</a> enumeration.</p>
 </dd>
 
-### -field <b>CustomRateCount</b>
+### -field CustomRateCount
 
 <dd>
 <p>The number of custom frame rates that the driver supports. To get the list of custom frame rates, call the <a href="display.getvideoprocessorcustomrate">GetVideoProcessorCustomRate</a> function.</p>

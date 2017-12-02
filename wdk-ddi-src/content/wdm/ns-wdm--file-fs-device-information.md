@@ -56,13 +56,13 @@ typedef struct _FILE_FS_DEVICE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceType</b>
+### -field DeviceType
 
 <dd>
 <p>Set when a driver calls <b>IoCreateDevice</b> as appropriate for the type of underlying device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a>.</p>
 </dd>
 
-### -field <b>Characteristics</b>
+### -field Characteristics
 
 <dd>
 <p>The device characteristics. For a description of relevant values, see <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>

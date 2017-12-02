@@ -7,7 +7,7 @@ old-location: netvista\rilsystemselectionprefsmode.htm
 old-project: netvista
 ms.assetid: f2d9bb70-cb0c-4e4b-be7a-11a89df739be
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILSYSTEMSELECTIONPREFSMODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_OPSELMODE_MANUAL"></a><a id="ril_opselmode_manual"></a><b>RIL_OPSELMODE_MANUAL</b>
+### -field RIL_OPSELMODE_MANUAL
 
 <dd></dd>
 
-### -field <a id="RIL_OPSELMODE_MAX"></a><a id="ril_opselmode_max"></a><b>RIL_OPSELMODE_MAX</b>
+### -field RIL_OPSELMODE_MAX
 
 <dd></dd>
 </dl>

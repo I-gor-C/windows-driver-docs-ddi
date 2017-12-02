@@ -7,7 +7,7 @@ old-location: acpi\sdev_secure_acpi_info_entry.htm
 old-project: acpi
 ms.assetid: A3FDE9B0-DD6E-4FF5-AD9A-7DF7BF276EFA
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: SDEV_SECURE_ACPI_INFO_ENTRY, SDEV_SECURE_ACPI_INFO_ENTRY, *PSDEV_SECURE_ACPI_INFO_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,31 +57,31 @@ typedef struct _SDEV_SECURE_ACPI_INFO_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>A header. </p>
 </dd>
 
-### -field <b>IdentifierOffset</b>
+### -field IdentifierOffset
 
 <dd>
 <p>An identifier offset value.</p>
 </dd>
 
-### -field <b>IdentifierLength</b>
+### -field IdentifierLength
 
 <dd>
 <p>The length of the identifier.</p>
 </dd>
 
-### -field <b>VendorInfoOffset</b>
+### -field VendorInfoOffset
 
 <dd>
 <p>A vendor information offset value.</p>
 </dd>
 
-### -field <b>VendorInfoLength</b>
+### -field VendorInfoLength
 
 <dd>
 <p>The length of the vendor information. </p>

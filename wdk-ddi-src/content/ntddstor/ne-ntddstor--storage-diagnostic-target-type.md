@@ -58,31 +58,31 @@ typedef enum _STORAGE_DIAGNOSTIC_TARGET_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="StorageDiagnosticTargetTypeUndefined"></a><a id="storagediagnostictargettypeundefined"></a><a id="STORAGEDIAGNOSTICTARGETTYPEUNDEFINED"></a><b>StorageDiagnosticTargetTypeUndefined</b>
+### -field StorageDiagnosticTargetTypeUndefined
 
 <dd>
 <p>Specifies the target type is undefined.</p>
 </dd>
 
-### -field <a id="StorageDiagnosticTargetTypePort"></a><a id="storagediagnostictargettypeport"></a><a id="STORAGEDIAGNOSTICTARGETTYPEPORT"></a><b>StorageDiagnosticTargetTypePort</b>
+### -field StorageDiagnosticTargetTypePort
 
 <dd>
 <p>Specifies the target type is a port driver.</p>
 </dd>
 
-### -field <a id="StorageDiagnosticTargetTypeMiniport"></a><a id="storagediagnostictargettypeminiport"></a><a id="STORAGEDIAGNOSTICTARGETTYPEMINIPORT"></a><b>StorageDiagnosticTargetTypeMiniport</b>
+### -field StorageDiagnosticTargetTypeMiniport
 
 <dd>
 <p>Specifies the target type is a Miniport driver.</p>
 </dd>
 
-### -field <a id="StorageDiagnosticTargetTypeHbaFirmware"></a><a id="storagediagnostictargettypehbafirmware"></a><a id="STORAGEDIAGNOSTICTARGETTYPEHBAFIRMWARE"></a><b>StorageDiagnosticTargetTypeHbaFirmware</b>
+### -field StorageDiagnosticTargetTypeHbaFirmware
 
 <dd>
 <p>Specifies the target type is a Hba Firmware driver.</p>
 </dd>
 
-### -field <a id="StorageDiagnosticTargetTypeMax"></a><a id="storagediagnostictargettypemax"></a><a id="STORAGEDIAGNOSTICTARGETTYPEMAX"></a><b>StorageDiagnosticTargetTypeMax</b>
+### -field StorageDiagnosticTargetTypeMax
 
 <dd>
 <p>Specifies the target type is a Max driver.</p>

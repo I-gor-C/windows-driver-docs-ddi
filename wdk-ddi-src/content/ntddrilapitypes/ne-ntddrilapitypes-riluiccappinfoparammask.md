@@ -7,7 +7,7 @@ old-location: netvista\riluiccappinfoparammask.htm
 old-project: netvista
 ms.assetid: 0e3bac55-6de7-4572-963f-dead9664cf1d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,35 +61,35 @@ typedef enum _RILUICCAPPINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_UICCAPPINFO_APPTYPE"></a><a id="ril_param_uiccappinfo_apptype"></a><b>RIL_PARAM_UICCAPPINFO_APPTYPE</b>
+### -field RIL_PARAM_UICCAPPINFO_APPTYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UICCAPPINFO_APPIDLENGTH"></a><a id="ril_param_uiccappinfo_appidlength"></a><b>RIL_PARAM_UICCAPPINFO_APPIDLENGTH</b>
+### -field RIL_PARAM_UICCAPPINFO_APPIDLENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UICCAPPINFO_APPID"></a><a id="ril_param_uiccappinfo_appid"></a><b>RIL_PARAM_UICCAPPINFO_APPID</b>
+### -field RIL_PARAM_UICCAPPINFO_APPID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UICCAPPINFO_APPNAMELENGTH"></a><a id="ril_param_uiccappinfo_appnamelength"></a><b>RIL_PARAM_UICCAPPINFO_APPNAMELENGTH</b>
+### -field RIL_PARAM_UICCAPPINFO_APPNAMELENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UICCAPPINFO_APPNAME"></a><a id="ril_param_uiccappinfo_appname"></a><b>RIL_PARAM_UICCAPPINFO_APPNAME</b>
+### -field RIL_PARAM_UICCAPPINFO_APPNAME
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UICCAPPINFO_NUMPINS"></a><a id="ril_param_uiccappinfo_numpins"></a><b>RIL_PARAM_UICCAPPINFO_NUMPINS</b>
+### -field RIL_PARAM_UICCAPPINFO_NUMPINS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UICCAPPINFO_PINREF"></a><a id="ril_param_uiccappinfo_pinref"></a><b>RIL_PARAM_UICCAPPINFO_PINREF</b>
+### -field RIL_PARAM_UICCAPPINFO_PINREF
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_UICCAPPINFO_ALL"></a><a id="ril_param_uiccappinfo_all"></a><b>RIL_PARAM_UICCAPPINFO_ALL</b>
+### -field RIL_PARAM_UICCAPPINFO_ALL
 
 <dd></dd>
 </dl>

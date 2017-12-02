@@ -7,7 +7,7 @@ old-location: netvista\ril_getradiostategroups.htm
 old-project: netvista
 ms.assetid: 7143e3a1-f383-4ea8-8e97-d9d7a9089db4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetRadioStateGroups
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_GetRadioStateGroups(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwParentGroupId</i> 
+### -param dwParentGroupId 
 
 <dd></dd>
 </dl>

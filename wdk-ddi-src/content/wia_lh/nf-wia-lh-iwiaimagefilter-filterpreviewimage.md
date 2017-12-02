@@ -7,7 +7,7 @@ old-location: image\iwiaimagefilter_filterpreviewimage.htm
 old-project: image
 ms.assetid: 92e4ea13-156b-4d5e-8268-ddb45f6d7b50
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IWiaImageFilter, FilterPreviewImage, IWiaImageFilter::FilterPreviewImage
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,20 +58,20 @@ HRESULT  FilterPreviewImage(
 ## -parameters
 <dl>
 
-### -param <i>pWiaChildItem2</i> [in]
+### -param pWiaChildItem2 [in]
 
 <dd>
 <p>Pointer to the item that the image process is to process. This item must be a child item of the item specified in the pWiaItem2 parameter, which was passed into the <a href="image.iwiaimagefilter_initializefilter">IWiaImageFilter::InitializeFilter</a> method. 
 </p>
 </dd>
 
-### -param <i>InputImageExtents</i> [in]
+### -param InputImageExtents [in]
 
 <dd>
 <p>Structure that contains the upper-left and lower-right coordinates of a rectangle that represents the boundaries of the preview image on the flatbed's platen. This is also the coordinates for the image data that is passed into the <i>pInputStream</i> parameter .</p>
 </dd>
 
-### -param <i>pInputStream
+### -param pInputStream
     </i> [in]
 
 <dd>

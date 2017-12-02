@@ -55,13 +55,13 @@ HRESULT IBidiSpl2::SendRecvXMLString(
 ## -parameters
 <dl>
 
-### -param <i>bstrRequest</i> [in]
+### -param bstrRequest [in]
 
 <dd>
 <p>The bidi communication request as a Unicode string that complies with one of the <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schemas</a>.</p>
 </dd>
 
-### -param <i>pbstrResponse</i> [out]
+### -param pbstrResponse [out]
 
 <dd>
 <p>A pointer to the printer's response as a Unicode string that complies with one of the <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schemas</a>.</p>

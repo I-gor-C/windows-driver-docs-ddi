@@ -61,43 +61,43 @@ typedef enum _UCM_TYPEC_PARTNER {
 ## -enum-fields
 <dl>
 
-### -field <a id="UcmTypeCPartnerStateInvalid_"></a><a id="ucmtypecpartnerstateinvalid_"></a><a id="UCMTYPECPARTNERSTATEINVALID_"></a><b>UcmTypeCPartnerStateInvalid </b>
+### -field UcmTypeCPartnerStateInvalid 
 
 <dd>
 <p>The partner port state is invalid.</p>
 </dd>
 
-### -field <a id="UcmTypeCPartnerStateUfp_"></a><a id="ucmtypecpartnerstateufp_"></a><a id="UCMTYPECPARTNERSTATEUFP_"></a><b>UcmTypeCPartnerStateUfp </b>
+### -field UcmTypeCPartnerStateUfp 
 
 <dd>
 <p>The partner is an Upstream Facing Port (UFP).</p>
 </dd>
 
-### -field <a id="UcmTypeCPartnerStateDfp_"></a><a id="ucmtypecpartnerstatedfp_"></a><a id="UCMTYPECPARTNERSTATEDFP_"></a><b>UcmTypeCPartnerStateDfp </b>
+### -field UcmTypeCPartnerStateDfp 
 
 <dd>
 <p>The partner is a Downstream Facing Port (DFP).</p>
 </dd>
 
-### -field <a id="UcmTypeCPartnerStatePoweredCableNoUfp_"></a><a id="ucmtypecpartnerstatepoweredcablenoufp_"></a><a id="UCMTYPECPARTNERSTATEPOWEREDCABLENOUFP_"></a><b>UcmTypeCPartnerStatePoweredCableNoUfp </b>
+### -field UcmTypeCPartnerStatePoweredCableNoUfp 
 
 <dd>
 <p>The partner is a powered cable that requires VConn, that currently does not have a UFP attached on the other end.</p>
 </dd>
 
-### -field <a id="UcmTypeCPartnerStatePoweredCableWithUfp_"></a><a id="ucmtypecpartnerstatepoweredcablewithufp_"></a><a id="UCMTYPECPARTNERSTATEPOWEREDCABLEWITHUFP_"></a><b>UcmTypeCPartnerStatePoweredCableWithUfp </b>
+### -field UcmTypeCPartnerStatePoweredCableWithUfp 
 
 <dd>
 <p>The partner is a powered and upstream facing.</p>
 </dd>
 
-### -field <a id="UcmTypeCPartnerStateAudioAccessory"></a><a id="ucmtypecpartnerstateaudioaccessory"></a><a id="UCMTYPECPARTNERSTATEAUDIOACCESSORY"></a><b>UcmTypeCPartnerStateAudioAccessory</b>
+### -field UcmTypeCPartnerStateAudioAccessory
 
 <dd>
 <p>The partner is used as an audio accessory.</p>
 </dd>
 
-### -field <a id="UcmTypeCPartnerStateDebugAccessory"></a><a id="ucmtypecpartnerstatedebugaccessory"></a><a id="UCMTYPECPARTNERSTATEDEBUGACCESSORY"></a><b>UcmTypeCPartnerStateDebugAccessory</b>
+### -field UcmTypeCPartnerStateDebugAccessory
 
 <dd>
 <p>The partner is a debug accessory.</p>
@@ -156,10 +156,10 @@ typedef enum _UCM_TYPEC_PARTNER {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucm_connector_typec_attach_params">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a>
+<a href="..\ucmmanager\ns-ucmmanager--ucm-connector-typec-attach-params.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a>
 </dt>
 <dt>
-<a href="buses.ucmconnectortypecattach">UcmConnectorTypeCAttach</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
 </dt>
 </dl>
 <p> </p>

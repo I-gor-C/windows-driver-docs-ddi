@@ -56,13 +56,13 @@ typedef struct _WINBIO_SET_INDICATOR {
 ## -struct-fields
 <dl>
 
-### -field <b>PayloadSize</b>
+### -field PayloadSize
 
 <dd>
 <p>Specifies the total size of the payload, which includes the fixed length structure and any variable data at the end.</p>
 </dd>
 
-### -field <b>IndicatorStatus</b>
+### -field IndicatorStatus
 
 <dd>
 <p>Specifies a WINBIO_INDICATOR_STATUS that indicates whether the indicator light should be set on or off.</p>

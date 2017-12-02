@@ -69,43 +69,43 @@ typedef struct _SCSI_PASS_THROUGH_DIRECT_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure. Set to 0.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The size of the this structure. Set to <b>sizeof</b>(SCSI_PASS_THROUGH_DIRECT_EX).</p>
 </dd>
 
-### -field <b>CdbLength</b>
+### -field CdbLength
 
 <dd>
 <p>Indicates the size in bytes of the SCSI command descriptor block in <b>Cdb</b>.</p>
 </dd>
 
-### -field <b>StorAddressLength</b>
+### -field StorAddressLength
 
 <dd>
 <p>The length of the storage device address structure at the offset of <b>StorAddressOffset</b> after this structure. This is set to <b>sizeof</b>(STOR_ADDR_BTL8).</p>
 </dd>
 
-### -field <b>ScsiStatus</b>
+### -field ScsiStatus
 
 <dd>
 <p>Reports the SCSI status that was returned by the HBA or the target device.</p>
 </dd>
 
-### -field <b>SenseInfoLength</b>
+### -field SenseInfoLength
 
 <dd>
 <p>Indicates the size in bytes of the request-sense buffer. This member is optional and can be set to 0.</p>
 </dd>
 
-### -field <b>DataDirection</b>
+### -field DataDirection
 
 <dd>
 <dl>
@@ -160,55 +160,55 @@ typedef struct _SCSI_PASS_THROUGH_DIRECT_EX {
 </dl>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Set to 0.</p>
 </dd>
 
-### -field <b>TimeOutValue</b>
+### -field TimeOutValue
 
 <dd>
 <p>Indicates the interval in seconds that the request can execute before the port driver considers it timed out.</p>
 </dd>
 
-### -field <b>StorAddressOffset</b>
+### -field StorAddressOffset
 
 <dd>
-<p>The location of the target device's <a href="..\scsi\ns-scsi--stor-addr-btl8.md">STOR_ADDR_BTL8</a> address structure, in bytes, from the beginning of this structure.</p>
+<p>The location of the target device's <a href="..\storport\ns-storport--stor-addr-btl8.md">STOR_ADDR_BTL8</a> address structure, in bytes, from the beginning of this structure.</p>
 </dd>
 
-### -field <b>SenseInfoOffset</b>
+### -field SenseInfoOffset
 
 <dd>
 <p>Offset from the beginning of this structure to the request-sense buffer. Set to 0 if no request-sense buffer is present.</p>
 </dd>
 
-### -field <b>DataOutTransferLength</b>
+### -field DataOutTransferLength
 
 <dd>
 <p>Indicates the size in bytes of the output data buffer. Many devices transfer chunks of data of predefined length. The value in <b>DataOutTransferLength</b> must be an integral multiple of this predefined, minimum length that is specified by the device. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred. If no output data buffer is present, this member is set to 0.</p>
 </dd>
 
-### -field <b>DataInTransferLength</b>
+### -field DataInTransferLength
 
 <dd>
 <p>Indicates the size in bytes of the input data buffer. Many devices transfer chunks of data of predefined length. The value in <b>DataInTransferLength</b> must be an integral multiple of this predefined, minimum length that is specified by the device. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred. If no input data buffer is present, this member is set to 0.</p>
 </dd>
 
-### -field <b>DataOutBuffer</b>
+### -field DataOutBuffer
 
 <dd>
 <p>A pointer to a output data buffer.</p>
 </dd>
 
-### -field <b>DataInBuffer</b>
+### -field DataInBuffer
 
 <dd>
 <p>A pointer to a input data buffer.</p>
 </dd>
 
-### -field <b>Cdb</b>
+### -field Cdb
 
 <dd>
 <p>Specifies the SCSI command descriptor block to be sent to the target device.</p>
@@ -252,7 +252,7 @@ typedef struct _SCSI_PASS_THROUGH_DIRECT_EX {
 <a href="..\ntddscsi\ns-ntddscsi--scsi-pass-through-direct.md">SCSI_PASS_THROUGH_DIRECT</a>
 </dt>
 <dt>
-<a href="..\scsi\ns-scsi--stor-addr-btl8.md">STOR_ADDR_BTL8</a>
+<a href="..\storport\ns-storport--stor-addr-btl8.md">STOR_ADDR_BTL8</a>
 </dt>
 </dl>
 <p> </p>

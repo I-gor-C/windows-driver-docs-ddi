@@ -61,43 +61,43 @@ typedef struct _FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>DataTypeSupported</b>
+### -field DataTypeSupported
 
 <dd>
 <p>Indicates the supported data type. See the <i>SCSI Multimedia - 4 (MMC-4)</i> specification for an explanation of the values that this member can take. <b>DataTypeSupported</b>[0] must hold the most significant byte of the number of the data type. <b>DataTypeSupported</b>[1] must hold the least significant byte of the number.</p>
 </dd>
 
-### -field <b>BufferUnderrunFree</b>
+### -field BufferUnderrunFree
 
 <dd>
 <p>Indicates, when set to one, that the logical unit is capable of zero-loss linking.</p>
 </dd>
 
-### -field <b>AddressModeReservation</b>
+### -field AddressModeReservation
 
 <dd></dd>
 
-### -field <b>TrackRessourceInformation</b>
+### -field TrackRessourceInformation
 
 <dd></dd>
 
-### -field <b>Reserved01</b>
+### -field Reserved01
 
 <dd></dd>
 
-### -field <b>NumberOfLinkSizes</b>
+### -field NumberOfLinkSizes
 
 <dd>
 <p>Specifies the number of link sizes available for the current media. See the <i>MMC-3</i> specification for an explanation of the values that this member can take. </p>
 </dd>
 
-### -field <b>LinkSize</b>
+### -field LinkSize
 
 <dd>
 <p>Contains an array that indicates the number of logical blocks per link. </p>

@@ -57,19 +57,19 @@ typedef enum _STOR_SPINLOCK {
 ## -enum-fields
 <dl>
 
-### -field <a id="DpcLock"></a><a id="dpclock"></a><a id="DPCLOCK"></a><b>DpcLock</b>
+### -field DpcLock
 
 <dd>
 <p>Indicates a DPC spinlock. </p>
 </dd>
 
-### -field <a id="StartIoLock"></a><a id="startiolock"></a><a id="STARTIOLOCK"></a><b>StartIoLock</b>
+### -field StartIoLock
 
 <dd>
 <p>Indicates a StartIo spinlock.  </p>
 </dd>
 
-### -field <a id="InterruptLock"></a><a id="interruptlock"></a><a id="INTERRUPTLOCK"></a><b>InterruptLock</b>
+### -field InterruptLock
 
 <dd>
 <p>Indicates an Interrupt spinlock.</p>

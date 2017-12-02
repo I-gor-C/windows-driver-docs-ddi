@@ -7,7 +7,7 @@ old-location: spb\spb_transfer_buffer_format.htm
 old-project: SPB
 ms.assetid: EAC78940-318D-4785-9D7E-410B8AB2F4C7
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/30/2017
 ms.keywords: VENDOR_ATTR, VENDOR_ATTR, *PVENDOR_ATTR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,37 +60,37 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="SpbTransferBufferFormatInvalid"></a><a id="spbtransferbufferformatinvalid"></a><a id="SPBTRANSFERBUFFERFORMATINVALID"></a><b>SpbTransferBufferFormatInvalid</b>
+### -field SpbTransferBufferFormatInvalid
 
 <dd>
 <p>Reserved for use by the operating system.</p>
 </dd>
 
-### -field <a id="SpbTransferBufferFormatSimple"></a><a id="spbtransferbufferformatsimple"></a><a id="SPBTRANSFERBUFFERFORMATSIMPLE"></a><b>SpbTransferBufferFormatSimple</b>
+### -field SpbTransferBufferFormatSimple
 
 <dd>
 <p>The transfer buffer is described by a simple user-mode or kernel-mode pointer and a length.</p>
 </dd>
 
-### -field <a id="SpbTransferBufferFormatList"></a><a id="spbtransferbufferformatlist"></a><a id="SPBTRANSFERBUFFERFORMATLIST"></a><b>SpbTransferBufferFormatList</b>
+### -field SpbTransferBufferFormatList
 
 <dd>
 <p>The transfer buffer is described by a pointer to a list of buffers and a count of the number of buffers in the list.</p>
 </dd>
 
-### -field <a id="SpbTransferBufferFormatSimpleNonPaged"></a><a id="spbtransferbufferformatsimplenonpaged"></a><a id="SPBTRANSFERBUFFERFORMATSIMPLENONPAGED"></a><b>SpbTransferBufferFormatSimpleNonPaged</b>
+### -field SpbTransferBufferFormatSimpleNonPaged
 
 <dd>
 <p>The transfer buffer is described by a simple user-mode or kernel-mode pointer and a length. The buffer resides in nonpaged memory. This format value is valid only if the client that originates the I/O request is a kernel-mode driver.</p>
 </dd>
 
-### -field <a id="SpbTransferBufferFormatMdl"></a><a id="spbtransferbufferformatmdl"></a><a id="SPBTRANSFERBUFFERFORMATMDL"></a><b>SpbTransferBufferFormatMdl</b>
+### -field SpbTransferBufferFormatMdl
 
 <dd>
 <p>The transfer buffer is described by a pointer to an MDL. This format value is valid only if the client that originates the I/O request is a kernel-mode driver.</p>
 </dd>
 
-### -field <a id="SpbTransferBufferFormatMax"></a><a id="spbtransferbufferformatmax"></a><a id="SPBTRANSFERBUFFERFORMATMAX"></a><b>SpbTransferBufferFormatMax</b>
+### -field SpbTransferBufferFormatMax
 
 <dd>
 <p>Reserved for use by the operating system.</p>
@@ -130,4 +130,4 @@ typedef enum  {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_BUFFER_FORMAT enumeration%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_BUFFER_FORMAT enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -54,7 +54,7 @@ PESILO PsGetEffectiveServerSilo(
 ## -parameters
 <dl>
 
-### -param <i>Silo</i> [in]
+### -param Silo [in]
 
 <dd>
 <p> A pointer to a silo.</p>

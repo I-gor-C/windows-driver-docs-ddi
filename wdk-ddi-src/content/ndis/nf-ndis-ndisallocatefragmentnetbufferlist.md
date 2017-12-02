@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatefragmentnetbufferlist.htm
 old-project: netvista
 ms.assetid: 40b6596b-7ab8-4336-8c38-21b9f32d8558
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisAllocateFragmentNetBufferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,13 +64,13 @@ PNET_BUFFER_LIST NdisAllocateFragmentNetBufferList(
 ## -parameters
 <dl>
 
-### -param <i>OriginalNetBufferList</i> [in]
+### -param OriginalNetBufferList [in]
 
 <dd>
 <p>A pointer to an existing NET_BUFFER_LIST structure.</p>
 </dd>
 
-### -param <i>NetBufferListPoolHandle</i> [in, optional]
+### -param NetBufferListPoolHandle [in, optional]
 
 <dd>
 <p>A handle that was obtained from a call to the 
@@ -78,7 +78,7 @@ PNET_BUFFER_LIST NdisAllocateFragmentNetBufferList(
      NdisAllocateNetBufferListPool</a> function.</p>
 </dd>
 
-### -param <i>NetBufferPoolHandle</i> [in, optional]
+### -param NetBufferPoolHandle [in, optional]
 
 <dd>
 <p>A NET_BUFFER structure pool handle that was previously returned from a call to 
@@ -86,7 +86,7 @@ PNET_BUFFER_LIST NdisAllocateFragmentNetBufferList(
      NdisAllocateNetBufferPool</a>.</p>
 </dd>
 
-### -param <i>StartOffset</i> [in]
+### -param StartOffset [in]
 
 <dd>
 <p>An additional byte offset from the start of the data in each 
@@ -95,21 +95,21 @@ PNET_BUFFER_LIST NdisAllocateFragmentNetBufferList(
      <b>DataOffset</b> member specified in each NET_BUFFER structure.</p>
 </dd>
 
-### -param <i>MaximumLength</i> [in]
+### -param MaximumLength [in]
 
 <dd>
 <p>The maximum length, in bytes, for each fragment in the new NET_BUFFER_LIST structure. Each
      fragment is described by a NET_BUFFER structure.</p>
 </dd>
 
-### -param <i>DataOffsetDelta</i> [in]
+### -param DataOffsetDelta [in]
 
 <dd>
 <p>The additional amount of 
      <i>used data space</i> that NDIS should make available in the new NET_BUFFER structures.</p>
 </dd>
 
-### -param <i>DataBackFill</i> [in]
+### -param DataBackFill [in]
 
 <dd>
 <p>The amount of data space in addition to the value of the 
@@ -119,7 +119,7 @@ PNET_BUFFER_LIST NdisAllocateFragmentNetBufferList(
      <i>DataBackFill</i> specifies.</p>
 </dd>
 
-### -param <i>AllocateFragmentFlags</i> [in]
+### -param AllocateFragmentFlags [in]
 
 <dd>
 <p>NDIS flags that can be combined with an OR operation. Set this parameter to zero. There are
@@ -265,4 +265,4 @@ PNET_BUFFER_LIST NdisAllocateFragmentNetBufferList(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateFragmentNetBufferList function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateFragmentNetBufferList function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

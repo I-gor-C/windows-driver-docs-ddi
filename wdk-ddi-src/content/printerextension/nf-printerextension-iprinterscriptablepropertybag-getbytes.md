@@ -56,13 +56,13 @@ HRESULT GetBytes(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd>
 <p>The property to read.</p>
 </dd>
 
-### -param <i>ppdispArray</i> [out, retval]
+### -param ppdispArray [out, retval]
 
 <dd>
 <p>The returned JavaScript array.</p>

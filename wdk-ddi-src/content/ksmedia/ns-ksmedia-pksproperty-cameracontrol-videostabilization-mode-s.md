@@ -55,41 +55,41 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>VideoStabilizationMode</b>
+### -field VideoStabilizationMode
 
 <dd>
 <p>Indicates the selected video stabilization modes. This member has one of these possible values:</p>
 <dl class="indent">
 
-### -field <a id="KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_OFF"></a><a id="ksproperty_cameracontrol_videostabilization_mode_off"></a><p><a id="KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_OFF"></a><a id="ksproperty_cameracontrol_videostabilization_mode_off"></a><b>KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_OFF</b></p>
+### -field KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_OFF
 
 
 <dd>
 <p>The video stabilization mode should not activate.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_AUTO"></a><a id="ksproperty_cameracontrol_videostabilization_mode_auto"></a><p><a id="KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_AUTO"></a><a id="ksproperty_cameracontrol_videostabilization_mode_auto"></a><b>KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_AUTO</b></p>
+### -field KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_AUTO
 
 
 <dd>
 <p>The device automatically controls video stabilization.  This value is valid only if <b>KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_AUTO</b> is set in the <b>Capabilities</b> member.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_LOW"></a><a id="ksproperty_cameracontrol_videostabilization_mode_low"></a><p><a id="KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_LOW"></a><a id="ksproperty_cameracontrol_videostabilization_mode_low"></a><b>KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_LOW</b></p>
+### -field KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_LOW
 
 
 <dd>
 <p>Video stabilization is set at a low level.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_MEDIUM"></a><a id="ksproperty_cameracontrol_videostabilization_mode_medium"></a><p><a id="KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_MEDIUM"></a><a id="ksproperty_cameracontrol_videostabilization_mode_medium"></a><b>KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_MEDIUM</b></p>
+### -field KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_MEDIUM
 
 
 <dd>
 <p>Video stabilization is set at a medium level.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_HIGH"></a><a id="ksproperty_cameracontrol_videostabilization_mode_high"></a><p><a id="KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_HIGH"></a><a id="ksproperty_cameracontrol_videostabilization_mode_high"></a><b>KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_HIGH</b></p>
+### -field KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_HIGH
 
 
 <dd>
@@ -98,20 +98,20 @@ typedef struct {
 </dl>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Indicates whether the device and driver support setting video stabilization control automatically or manually. This member a bitwise <b>OR</b> of these possible values:</p>
 <dl class="indent">
 
-### -field <a id="KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_AUTO"></a><a id="ksproperty_cameracontrol_videostabilization_mode_flags_auto"></a><p><a id="KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_AUTO"></a><a id="ksproperty_cameracontrol_videostabilization_mode_flags_auto"></a><b>KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_AUTO</b></p>
+### -field KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_AUTO
 
 
 <dd>
 <p>The device and driver can automatically control video stabilization.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_MANUAL"></a><a id="ksproperty_cameracontrol_videostabilization_mode_flags_manual"></a><p><a id="KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_MANUAL"></a><a id="ksproperty_cameracontrol_videostabilization_mode_flags_manual"></a><b>KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_MANUAL</b></p>
+### -field KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_MANUAL
 
 
 <dd>

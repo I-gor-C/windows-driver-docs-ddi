@@ -57,19 +57,19 @@ BOOL SpoolerCopyFileEvent(
 ## -parameters
 <dl>
 
-### -param <i>pszPrinterName</i> [in]
+### -param pszPrinterName [in]
 
 <dd>
 <p>Caller-supplied pointer to a string representing the printer name.</p>
 </dd>
 
-### -param <i>pszKey</i> [in]
+### -param pszKey [in]
 
 <dd>
 <p>Caller-supplied pointer to a string representing a subkey under the printer's <b>CopyFiles</b> registry key. This subkey identifies the component to which the Point and Print DLL belongs.</p>
 </dd>
 
-### -param <i>dwCopyFileEvent</i> [in]
+### -param dwCopyFileEvent [in]
 
 <dd>
 <p>Caller-supplied flag that identifies the event being reported. Valid flag values are contained in the following table.</p>
@@ -143,7 +143,7 @@ BOOL SpoolerCopyFileEvent(
 <p>If the function encounters errors, the function should return <b>FALSE</b>. Otherwise, it should return <b>TRUE</b>.</p>
 
 ## -remarks
-<p>All <a href="NULL">Point and Print DLLs</a> must export a <code>SpoolerCopyFileEvent</code> function, which is called by the print spooler. Its purpose is to allow a Point and Print DLL to be notified of events related to the downloading of print queue-associated files, from a print server to a client system, when an application on the client connects to the server. For a complete description of the steps involved in creating a Point and Print connection, see <a href="NULL">Supporting Point and Print</a>.</p>
+<p>All <a href="https://msdn.microsoft.com/7ead940e-8426-4756-890f-f3607dc1f9ca">Point and Print DLLs</a> must export a <code>SpoolerCopyFileEvent</code> function, which is called by the print spooler. Its purpose is to allow a Point and Print DLL to be notified of events related to the downloading of print queue-associated files, from a print server to a client system, when an application on the client connects to the server. For a complete description of the steps involved in creating a Point and Print connection, see <a href="https://msdn.microsoft.com/a41bed5e-a006-4b9e-aa71-d2bcd154fae2">Supporting Point and Print</a>.</p>
 
 <p>A Point and Print DLL executes on both the server and the client. The <code>SpoolerCopyFileEvent</code> function can determine where it is executing by reading the contents of <i>dwCopyFileEvent</i>, which supplies a flag indicating the event. The function should process the event and return. If no processing is necessary, the function should just return <b>TRUE</b>.</p>
 

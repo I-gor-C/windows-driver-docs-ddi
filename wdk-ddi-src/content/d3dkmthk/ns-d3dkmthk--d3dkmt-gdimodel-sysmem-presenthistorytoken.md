@@ -56,19 +56,19 @@ typedef struct _D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN {
 ## -struct-fields
 <dl>
 
-### -field <b>hlsurf</b>
+### -field hlsurf
 
 <dd>
 <p>[in] A 64-bit value that specifies the handle to a logical surface to copy from. </p>
 </dd>
 
-### -field <b>dwDirtyFlags</b>
+### -field dwDirtyFlags
 
 <dd>
 <p>[in] A set of flags in a 32-bit value that identifies the active rectangles (dirty regions) of the GDI surface. </p>
 </dd>
 
-### -field <b>uiCookie</b>
+### -field uiCookie
 
 <dd>
 <p>[in] A 64-bit value that specifies the handle to a physical surface to copy to. </p>

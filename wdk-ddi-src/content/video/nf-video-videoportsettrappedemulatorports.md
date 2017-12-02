@@ -57,19 +57,19 @@ VP_STATUS VideoPortSetTrappedEmulatorPorts(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>NumAccessRanges</i> 
+### -param NumAccessRanges 
 
 <dd>
 <p>Specifies the number of elements in the <i>AccessRange</i> array.</p>
 </dd>
 
-### -param <i>AccessRange</i> [in]
+### -param AccessRange [in]
 
 <dd>
 <p>Pointer to an array of <a href="..\video\ns-video--video-access-range.md">VIDEO_ACCESS_RANGE</a> elements. Each element describes a proper subrange of the <b>EmulatorAccessEntries</b> that the miniport driver set up in <a href="..\video\ns-video--video-port-config-info.md">VIDEO_PORT_CONFIG_INFO</a>. Setting the <b>RangeVisible</b> member of an <i>AccessRange</i> element to <b>TRUE</b> enables direct access to the I/O port range by the full-screen MS-DOS application. Setting a <b>RangeVisible</b> member to <b>FALSE</b> causes application-issued <b>IN</b>s, <b>INSB/INSW/INSD</b>s, <b>OUT</b>s and/or <b>OUTSB/OUTSW/OUTSD</b>s to that range to be trapped and forwarded to the corresponding miniport driver <i>SvgaHwIoPortXxx</i> function for validation.</p>

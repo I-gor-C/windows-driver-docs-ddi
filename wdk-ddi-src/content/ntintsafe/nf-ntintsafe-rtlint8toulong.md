@@ -55,13 +55,13 @@ NTSTATUS RtlInt8ToULong(
 ## -parameters
 <dl>
 
-### -param <i>i8Operand</i> [in]
+### -param i8Operand [in]
 
 <dd>
 <p>The value to be converted.</p>
 </dd>
 
-### -param <i>pulResult</i> [out]
+### -param pulResult [out]
 
 <dd>
 <p>A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

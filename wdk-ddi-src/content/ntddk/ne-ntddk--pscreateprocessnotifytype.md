@@ -54,7 +54,7 @@ typedef enum _PSCREATEPROCESSNOTIFYTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PsCreateProcessNotifySubsystems"></a><a id="pscreateprocessnotifysubsystems"></a><a id="PSCREATEPROCESSNOTIFYSUBSYSTEMS"></a><b>PsCreateProcessNotifySubsystems</b>
+### -field PsCreateProcessNotifySubsystems
 
 <dd>
 <p>Indicates that the driver-registered callback is invoked for processes of all subsystems, including the Win32 subsystem. Drivers can call <a href="base.ntqueryinformationprocess">NtQueryInformationProcess</a> to determine the underlying subsystem. The query retrieves a  <a href="..\ntddk\ne-ntddk--subsystem-information-type.md">SUBSYSTEM_INFORMATION_TYPE</a> value.</p>

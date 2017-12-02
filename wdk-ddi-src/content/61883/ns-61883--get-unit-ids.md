@@ -7,7 +7,7 @@ old-location: ieee\get_unit_ids.htm
 old-project: IEEE
 ms.assetid: 8ffa85ee-cad6-476e-91ab-1897a6b43ca1
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: GET_UNIT_IDS, GET_UNIT_IDS, *PGET_UNIT_IDS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,61 +62,61 @@ typedef struct _GET_UNIT_IDS {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueID</b>
+### -field UniqueID
 
 <dd>
 <p>The unique ID for the device from the bus information block within the configuration ROM of the unit. </p>
 </dd>
 
-### -field <b>VendorID</b>
+### -field VendorID
 
 <dd>
 <p>The vendor ID for the device.</p>
 </dd>
 
-### -field <b>ModelID</b>
+### -field ModelID
 
 <dd>
 <p>The model ID for the device. This value is retrieved from the root directory within the device's Configuration ROM.</p>
 </dd>
 
-### -field <b>ulVendorLength</b>
+### -field ulVendorLength
 
 <dd>
 <p>The length, in bytes, of the vendor text string, including the terminating UNICODE_NULL. If <b>ulVendorLength</b> is not zero in the input GET_UNIT_IDS structure, <b>VendorText</b> must point to a buffer whose size is <b>sizeof(ulVendorLength)</b>.</p>
 </dd>
 
-### -field <b>VendorText</b>
+### -field VendorText
 
 <dd>
 <p>Points to a buffer that receives the "friendly name" for the vendor as a Unicode string terminated with a UNICODE_NULL. If <b>ulVendorLength</b> is zero in the input GET_UNIT_IDS structure, <b>VendorText</b> is <b>NULL</b>. </p>
 </dd>
 
-### -field <b>ulModelLength</b>
+### -field ulModelLength
 
 <dd>
 <p>The length, in bytes, of the model text string, including the terminating UNICODE_NULL. If <b>ulModelLength</b> is not zero in the input GET_UNIT_IDS structure, <b>ModelText</b> must point to a buffer whose size is <b>sizeof(ulModelLength)</b>. </p>
 </dd>
 
-### -field <b>ModelText</b>
+### -field ModelText
 
 <dd>
 <p>Points to a buffer to receive the "friendly name" for the model as a Unicode string terminated with a UNICODE_NULL. If <b>ulModelLength</b> is zero in the input GET_UNIT_IDS structure, <b>ModelText</b> is <b>NULL</b>. This value is retrieved from the root directory within the device's Configuration ROM. </p>
 </dd>
 
-### -field <b>UnitModelID</b>
+### -field UnitModelID
 
 <dd>
 <p>The model ID for the device. This value is retrieved from the unit directory within the device's Configuration ROM. </p>
 </dd>
 
-### -field <b>ulUnitModelLength</b>
+### -field ulUnitModelLength
 
 <dd>
 <p>The length, in bytes, of the model text string, including the terminating UNICODE_NULL. If <b>ulUnitModelLength</b> is not zero in the input GET_UNIT_IDS structure, <b>UnitModelText</b> must point to a buffer whose size is <b>sizeof(ulUnitModelLength)</b>. </p>
 </dd>
 
-### -field <b>UnitModelText</b>
+### -field UnitModelText
 
 <dd>
 <p>Points to a buffer that receives the "friendly name" for the model represented as a Unicode string terminated with a UNICODE_NULL. If <b>ulUnitModelLength</b> is zero in the input GET_UNIT_IDS structure, <b>UnitModelText</b> will be <b>NULL</b>. This value is retrieved from the unit directory within the device's Configuration ROM.</p>
@@ -148,4 +148,4 @@ typedef struct _GET_UNIT_IDS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20GET_UNIT_IDS structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20GET_UNIT_IDS structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

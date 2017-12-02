@@ -69,7 +69,7 @@ ULONGLONG KeQueryUnbiasedInterruptTime(void);
 
 <p>Unlike the <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a> routine, <b>KeQueryUnbiasedInterruptTime</b> returns a count value that is not affected by operations that set or reset the system time. In addition, the system time that is reported by <b>KeQuerySystemTime</b> is typically updated approximately every ten milliseconds. In contrast, the count that is returned by <b>KeQueryUnbiasedInterruptTime</b> is updated at least once per system clock tick.</p>
 
-<p>In Windows 2000 and later versions of the Windows operating system, the <a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a> routine provides the finest grained running count that is available from the operating system.</p>
+<p>In Windows 2000 and later versions of the Windows operating system, the <a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a> routine provides the finest grained running count that is available from the operating system.</p>
 
 ## -requirements
 <table>
@@ -140,7 +140,7 @@ ULONGLONG KeQueryUnbiasedInterruptTime(void);
 <a href="..\wdm\nf-wdm-kequeryinterrupttimeprecise.md">KeQueryInterruptTimePrecise</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>

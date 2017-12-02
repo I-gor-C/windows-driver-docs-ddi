@@ -55,7 +55,7 @@ typedef enum _UCX_ENDPOINT_CHARACTERISTIC_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UCX_ENDPOINT_CHARACTERISTIC_TYPE_PRIORITY"></a><a id="ucx_endpoint_characteristic_type_priority"></a><b>UCX_ENDPOINT_CHARACTERISTIC_TYPE_PRIORITY</b>
+### -field UCX_ENDPOINT_CHARACTERISTIC_TYPE_PRIORITY
 
 <dd>
 <p>The type of characteristic of the endpoint.</p>
@@ -98,7 +98,7 @@ typedef enum _UCX_ENDPOINT_CHARACTERISTIC_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucx_endpoint_characteristic">UCX_ENDPOINT_CHARACTERISTIC</a>
+<a href="..\ucxendpoint\ns-ucxendpoint--ucx-endpoint-characteristic.md">UCX_ENDPOINT_CHARACTERISTIC</a>
 </dt>
 </dl>
 <p> </p>

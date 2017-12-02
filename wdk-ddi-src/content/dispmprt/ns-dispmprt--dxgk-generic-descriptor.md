@@ -57,25 +57,25 @@ typedef struct _DXGK_GENERIC_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>HardwareId</b>
+### -field HardwareId
 
 <dd>
 <p>A single wide-character string, terminated by two wide NULL characters, that holds the hardware ID of the child device.</p>
 </dd>
 
-### -field <b>InstanceId</b>
+### -field InstanceId
 
 <dd>
 <p>A single wide-character string, terminated by two wide NULL characters, that holds the instance ID of the child device.</p>
 </dd>
 
-### -field <b>CompatibleId</b>
+### -field CompatibleId
 
 <dd>
 <p>A sequence of wide-character strings, each of which is terminated by a single wide NULL character. The last string in the sequence is terminated by two wide NULL characters.</p>
 </dd>
 
-### -field <b>DeviceText</b>
+### -field DeviceText
 
 <dd>
 <p>A single wide-character string, terminated by two wide NULL characters, that holds the device text of the child device.</p>

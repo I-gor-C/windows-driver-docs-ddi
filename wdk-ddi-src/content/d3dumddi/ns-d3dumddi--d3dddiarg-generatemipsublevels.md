@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_GENERATEMIPSUBLEVELS {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A handle to the MIP-map texture surface.</p>
 </dd>
 
-### -field <b>Filter</b>
+### -field Filter
 
 <dd>
 <p>[in] A D3DDDITEXTUREFILTERTYPE-typed value that indicates the texture magnification or minification filter type that is used in generating the sublevels of the MIP-map texture. This member can be one of the following values.</p>

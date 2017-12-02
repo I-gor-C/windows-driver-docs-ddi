@@ -70,71 +70,71 @@ typedef enum _DXGKMDT_OPM_CONNECTOR_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_OTHER"></a><a id="dxgkmdt_opm_connector_type_other"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_OTHER</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_OTHER
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_HD15"></a><a id="dxgkmdt_opm_connector_type_hd15"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_HD15</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_HD15
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_SVIDEO"></a><a id="dxgkmdt_opm_connector_type_svideo"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_SVIDEO</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_SVIDEO
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_COMPOSITE_VIDEO"></a><a id="dxgkmdt_opm_connector_type_composite_video"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_COMPOSITE_VIDEO</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_COMPOSITE_VIDEO
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_COMPONENT_VIDEO"></a><a id="dxgkmdt_opm_connector_type_component_video"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_COMPONENT_VIDEO</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_COMPONENT_VIDEO
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_DVI"></a><a id="dxgkmdt_opm_connector_type_dvi"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_DVI</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_DVI
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_HDMI"></a><a id="dxgkmdt_opm_connector_type_hdmi"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_HDMI</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_HDMI
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_LVDS"></a><a id="dxgkmdt_opm_connector_type_lvds"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_LVDS</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_LVDS
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_D_JPN"></a><a id="dxgkmdt_opm_connector_type_d_jpn"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_D_JPN</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_D_JPN
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_SDI"></a><a id="dxgkmdt_opm_connector_type_sdi"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_SDI</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_SDI
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_DISPLAYPORT_EXTERNAL"></a><a id="dxgkmdt_opm_connector_type_displayport_external"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_DISPLAYPORT_EXTERNAL</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_DISPLAYPORT_EXTERNAL
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_DISPLAYPORT_EMBEDDED"></a><a id="dxgkmdt_opm_connector_type_displayport_embedded"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_DISPLAYPORT_EMBEDDED</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_DISPLAYPORT_EMBEDDED
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_UDI_EXTERNAL"></a><a id="dxgkmdt_opm_connector_type_udi_external"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_UDI_EXTERNAL</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_UDI_EXTERNAL
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_UDI_EMBEDDED"></a><a id="dxgkmdt_opm_connector_type_udi_embedded"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_UDI_EMBEDDED</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_UDI_EMBEDDED
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_RESERVED"></a><a id="dxgkmdt_opm_connector_type_reserved"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_RESERVED</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_RESERVED
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_CONNECTOR_TYPE_MIRACAST"></a><a id="dxgkmdt_opm_connector_type_miracast"></a><b>DXGKMDT_OPM_CONNECTOR_TYPE_MIRACAST</b>
+### -field DXGKMDT_OPM_CONNECTOR_TYPE_MIRACAST
 
 <dd></dd>
 
-### -field <a id="DXGKMDT_OPM_COPP_COMPATIBLE_CONNECTOR_TYPE_INTERNAL"></a><a id="dxgkmdt_opm_copp_compatible_connector_type_internal"></a><b>DXGKMDT_OPM_COPP_COMPATIBLE_CONNECTOR_TYPE_INTERNAL</b>
+### -field DXGKMDT_OPM_COPP_COMPATIBLE_CONNECTOR_TYPE_INTERNAL
 
 <dd></dd>
 </dl>

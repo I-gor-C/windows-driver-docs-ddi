@@ -56,10 +56,10 @@ void UdecxUsbDeviceSignalWake(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbDevice</i> [in]
+### -param UdecxUsbDevice [in]
 
 <dd>
-<p>A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.</p>
+<p>A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a>.</p>
 </dd>
 </dl>
 
@@ -67,7 +67,7 @@ void UdecxUsbDeviceSignalWake(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>The client driver for the device must have enabled wake capability in the most recent <a href="buses.evt_udecx_usb_device_d0_exit">EVT_UDECX_USB_DEVICE_D0_EXIT</a> call.
+<p>The client driver for the device must have enabled wake capability in the most recent <a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-d0-exit.md">EVT_UDECX_USB_DEVICE_D0_EXIT</a> call.
 </p>
 
 ## -requirements
@@ -129,7 +129,7 @@ void UdecxUsbDeviceSignalWake(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_udecx_usb_device_d0_exit">EVT_UDECX_USB_DEVICE_D0_EXIT</a>
+<a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-d0-exit.md">EVT_UDECX_USB_DEVICE_D0_EXIT</a>
 </dt>
 <dt>
 <a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>

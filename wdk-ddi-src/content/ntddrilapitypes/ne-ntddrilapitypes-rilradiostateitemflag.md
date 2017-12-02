@@ -7,7 +7,7 @@ old-location: netvista\rilradiostateitemflag.htm
 old-project: netvista
 ms.assetid: dcbd0b16-4960-4cc1-b76b-6d971ba6a192
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,27 +59,27 @@ typedef enum _RILRADIOSTATEITEMFLAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_RADIOSTATE_ITEMFLAG_USE_UINTVAL"></a><a id="ril_radiostate_itemflag_use_uintval"></a><b>RIL_RADIOSTATE_ITEMFLAG_USE_UINTVAL</b>
+### -field RIL_RADIOSTATE_ITEMFLAG_USE_UINTVAL
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOSTATE_ITEMFLAG_USE_WSZVAL"></a><a id="ril_radiostate_itemflag_use_wszval"></a><b>RIL_RADIOSTATE_ITEMFLAG_USE_WSZVAL</b>
+### -field RIL_RADIOSTATE_ITEMFLAG_USE_WSZVAL
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY"></a><a id="ril_radiostate_itemflag_use_intarray"></a><b>RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY</b>
+### -field RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOSTATE_ITEMFLAG_USE_UINTARRAY"></a><a id="ril_radiostate_itemflag_use_uintarray"></a><b>RIL_RADIOSTATE_ITEMFLAG_USE_UINTARRAY</b>
+### -field RIL_RADIOSTATE_ITEMFLAG_USE_UINTARRAY
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOSTATE_ITEMFLAG_USE_BYTEARRAY"></a><a id="ril_radiostate_itemflag_use_bytearray"></a><b>RIL_RADIOSTATE_ITEMFLAG_USE_BYTEARRAY</b>
+### -field RIL_RADIOSTATE_ITEMFLAG_USE_BYTEARRAY
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOSTATE_ITEMFLAG_USE_MAX"></a><a id="ril_radiostate_itemflag_use_max"></a><b>RIL_RADIOSTATE_ITEMFLAG_USE_MAX</b>
+### -field RIL_RADIOSTATE_ITEMFLAG_USE_MAX
 
 <dd></dd>
 </dl>

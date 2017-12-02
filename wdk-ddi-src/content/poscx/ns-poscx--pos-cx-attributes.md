@@ -59,25 +59,25 @@ typedef struct _POS_CX_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>EvtDeviceOwnershipChange</b>
+### -field EvtDeviceOwnershipChange
 
 <dd>
 <p>A pointer to an <a href="..\poscx\nc-poscx-evt-pos-cx-device-ownership-change.md">EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE</a> callback function.</p>
 </dd>
 
-### -field <b>EvtDeviceRemoteClaim</b>
+### -field EvtDeviceRemoteClaim
 
 <dd>
 <p>A pointer to an <a href="..\poscx\nc-poscx-evt-pos-cx-device-remote-claim.md">EVT_POS_CX_DEVICE_REMOTE_CLAIM</a> callback function.</p>
 </dd>
 
-### -field <b>EvtDeviceRemoteRelease</b>
+### -field EvtDeviceRemoteRelease
 
 <dd>
 <p>A pointer to an <a href="..\poscx\nc-poscx-evt-pos-cx-device-remote-release.md">EVT_POS_CX_DEVICE_REMOTE_RELEASE</a> callback function.</p>
 </dd>
 
-### -field <b>EvtDeviceRemoteRetain</b>
+### -field EvtDeviceRemoteRetain
 
 <dd>
 <p>A pointer to an <a href="..\poscx\nc-poscx-evt-pos-cx-device-remote-retain.md">EVT_POS_CX_DEVICE_REMOTE_RETAIN</a> callback function.</p>

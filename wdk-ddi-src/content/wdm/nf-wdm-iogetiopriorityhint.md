@@ -55,7 +55,7 @@ IO_PRIORITY_HINT IoGetIoPriorityHint(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP to obtain the priority hint from.</p>

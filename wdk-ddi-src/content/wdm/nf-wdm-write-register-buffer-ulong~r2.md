@@ -57,19 +57,19 @@ VOID WRITE_REGISTER_BUFFER_ULONG(
 ## -parameters
 <dl>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>Pointer to the register, which must be a mapped range in memory space.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to a buffer from which an array of ULONG values is to be written.</p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>Specifies the number of ULONG values to be written to the register. </p>

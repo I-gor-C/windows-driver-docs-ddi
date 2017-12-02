@@ -57,13 +57,13 @@ FORCEINLINE NTSTATUS UrsIoResourceListAppendDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>IoResourceList</i> [in]
+### -param IoResourceList [in]
 
 <dd>
 <p> A role's I/O resource list object to which the resource descriptor is appended. This object is allocated by the framework and passed to the client driver when the framework invokes the driver's <a href="buses.evt_urs_device_filter_resource_requirements">EVT_URS_DEVICE_FILTER_RESOURCE_REQUIREMENTS</a> implementation.</p>
 </dd>
 
-### -param <i>Descriptor</i> [in]
+### -param Descriptor [in]
 
 <dd>
 <p>A pointer to  IO_RESOURCE_DESCRIPTOR that contains the resource descriptor for the role.</p>
@@ -74,7 +74,7 @@ FORCEINLINE NTSTATUS UrsIoResourceListAppendDescriptor(
 <p>The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code. </p>
 
 ## -remarks
-<p>After the client driver calls <a href="buses.ursdeviceinitialize">UrsDeviceInitialize</a>, the framework allocates memory for the <i>resource requirements list</i>. When the USB dual-role class extension  invokes the client driver's implementation of <a href="buses.evt_urs_device_filter_resource_requirements">EVT_URS_DEVICE_FILTER_RESOURCE_REQUIREMENTS</a>, it passes a WDFIORESREQLIST handle to that requirements list along with URSIORESLIST handles for host and function role <i>resource lists</i>. In the implementation, the client driver is expected to enumerate through the requirements list and add the resource descriptor (if it wants to use that resource)  to the resource list for each role.</p>
+<p>After the client driver calls <a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a>, the framework allocates memory for the <i>resource requirements list</i>. When the USB dual-role class extension  invokes the client driver's implementation of <a href="buses.evt_urs_device_filter_resource_requirements">EVT_URS_DEVICE_FILTER_RESOURCE_REQUIREMENTS</a>, it passes a WDFIORESREQLIST handle to that requirements list along with URSIORESLIST handles for host and function role <i>resource lists</i>. In the implementation, the client driver is expected to enumerate through the requirements list and add the resource descriptor (if it wants to use that resource)  to the resource list for each role.</p>
 
 <p>To add a resource descriptors for a role, the driver calls <b>UrsIoResourceListAppendDescriptor</b> and specifies the descriptor and the resource list to which the resource must be added. </p>
 
@@ -141,7 +141,7 @@ FORCEINLINE NTSTATUS UrsIoResourceListAppendDescriptor(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ursdeviceinitialize">UrsDeviceInitialize</a>
+<a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a>
 </dt>
 <dt>
 <a href="buses.evt_urs_device_filter_resource_requirements">EVT_URS_DEVICE_FILTER_RESOURCE_REQUIREMENTS</a>

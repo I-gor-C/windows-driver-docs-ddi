@@ -57,25 +57,25 @@ typedef struct _D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN {
 ## -struct-fields
 <dl>
 
-### -field <b>hLogicalSurface</b>
+### -field hLogicalSurface
 
 <dd>
 <p>[in] A 64-bit value that specifies the handle to a logical surface to copy from. </p>
 </dd>
 
-### -field <b>hPhysicalSurface</b>
+### -field hPhysicalSurface
 
 <dd>
 <p>[in] A 64-bit value that specifies the handle to a physical surface to copy to. </p>
 </dd>
 
-### -field <b>EventId</b>
+### -field EventId
 
 <dd>
 <p>[in] A 64-bit value that identifies the bitblt event. </p>
 </dd>
 
-### -field <b>DirtyRegions</b>
+### -field DirtyRegions
 
 <dd>
 <p>[in] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-dirtyregions.md">D3DKMT_DIRTYREGIONS</a> structure that identifies the active rectangles (dirty regions) of the bitblt surface. </p>

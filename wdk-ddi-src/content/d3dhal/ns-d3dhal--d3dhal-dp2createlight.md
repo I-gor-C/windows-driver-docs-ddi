@@ -54,7 +54,7 @@ typedef struct _D3DHAL_DP2CREATELIGHT {
 ## -struct-fields
 <dl>
 
-### -field <b>dwIndex</b>
+### -field dwIndex
 
 <dd>
 <p>Specifies the index of the light being created.</p>

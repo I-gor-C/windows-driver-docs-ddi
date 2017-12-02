@@ -60,43 +60,43 @@ typedef enum _DXVAHDDDI_FILTER {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVAHDDDI_FILTER_BRIGHTNESS"></a><a id="dxvahdddi_filter_brightness"></a><b>DXVAHDDDI_FILTER_BRIGHTNESS</b>
+### -field DXVAHDDDI_FILTER_BRIGHTNESS
 
 <dd>
 <p>A value that specifies the filter range of the brightness ProcAmp. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FILTER_CONTRAST"></a><a id="dxvahdddi_filter_contrast"></a><b>DXVAHDDDI_FILTER_CONTRAST</b>
+### -field DXVAHDDDI_FILTER_CONTRAST
 
 <dd>
 <p>A value that specifies the filter range of the contrast ProcAmp. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FILTER_HUE"></a><a id="dxvahdddi_filter_hue"></a><b>DXVAHDDDI_FILTER_HUE</b>
+### -field DXVAHDDDI_FILTER_HUE
 
 <dd>
 <p>A value that specifies the filter range of the hue ProcAmp. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FILTER_SATURATION"></a><a id="dxvahdddi_filter_saturation"></a><b>DXVAHDDDI_FILTER_SATURATION</b>
+### -field DXVAHDDDI_FILTER_SATURATION
 
 <dd>
 <p>A value that specifies the filter range of the saturation ProcAmp. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FILTER_NOISE_REDUCTION"></a><a id="dxvahdddi_filter_noise_reduction"></a><b>DXVAHDDDI_FILTER_NOISE_REDUCTION</b>
+### -field DXVAHDDDI_FILTER_NOISE_REDUCTION
 
 <dd>
 <p>A value that specifies the filter range of the noise reduction filter. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FILTER_EDGE_ENHANCEMENT"></a><a id="dxvahdddi_filter_edge_enhancement"></a><b>DXVAHDDDI_FILTER_EDGE_ENHANCEMENT</b>
+### -field DXVAHDDDI_FILTER_EDGE_ENHANCEMENT
 
 <dd>
 <p>A value that specifies the filter range of the edge enhancement filter. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FILTER_ANAMORPHIC_SCALING"></a><a id="dxvahdddi_filter_anamorphic_scaling"></a><b>DXVAHDDDI_FILTER_ANAMORPHIC_SCALING</b>
+### -field DXVAHDDDI_FILTER_ANAMORPHIC_SCALING
 
 <dd>
 <p>A value that specifies that the filter range of anamorphic scaling. </p>

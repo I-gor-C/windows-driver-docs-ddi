@@ -59,13 +59,13 @@ NTSTATUS EvtSerCxApplyConfig(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A WDFDEVICE handle to the framework device object that represents the serial controller.</p>
 </dd>
 
-### -param <i>ConnectionParameters</i> [in]
+### -param ConnectionParameters [in]
 
 <dd>
 <p>A pointer to the connection parameters structure.  This function must cast this parameter to the appropriate pointer type, parse the data structure to obtain the configuration settings, and apply these settings to the serial controller hardware. The connection parameters structure is defined by the hardware platform vendor and is opaque to both the serial framework extension (SerCx) and the operating system.</p>
@@ -88,7 +88,7 @@ NTSTATUS EvtSerCxApplyConfig(
 
 <p>The function type for this callback is declared in Sercx.h, as follows.</p>
 
-<p>To define an <i>EvtSerCxApplyConfig</i> callback function that is named <code>MyEvtSerCxApplyConfig</code>, you must first provide a function declaration that <a href="NULL">Static Driver Verifier</a> (SDV) and other verification tools require, as follows.</p>
+<p>To define an <i>EvtSerCxApplyConfig</i> callback function that is named <code>MyEvtSerCxApplyConfig</code>, you must first provide a function declaration that <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV) and other verification tools require, as follows.</p>
 
 <p>Then, implement your callback function as follows.</p>
 

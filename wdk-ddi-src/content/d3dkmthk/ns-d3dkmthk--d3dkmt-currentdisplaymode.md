@@ -55,13 +55,13 @@ typedef struct _D3DKMT_CURRENTDISPLAYMODE {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the display mode applies to.</p>
 </dd>
 
-### -field <b>DisplayMode</b>
+### -field DisplayMode
 
 <dd>
 <p>[out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-displaymode.md">D3DKMT_DISPLAYMODE</a> structure that represents the current display mode.</p>

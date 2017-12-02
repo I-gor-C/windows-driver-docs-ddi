@@ -7,7 +7,7 @@ old-location: netvista\rildmconfiginfoitem_2.htm
 old-project: netvista
 ms.assetid: b7239fae-253c-4ac9-ba96-8e10cce5598d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,147 +90,147 @@ typedef enum _RILDMCONFIGINFOITEM {
 ## -enum-fields
 <dl>
 
-### -field <a id="RILDMCONFIG_SIP_TIMER_T2"></a><a id="rildmconfig_sip_timer_t2"></a><b>RILDMCONFIG_SIP_TIMER_T2</b>
+### -field RILDMCONFIG_SIP_TIMER_T2
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_SIP_TIMER_F"></a><a id="rildmconfig_sip_timer_f"></a><b>RILDMCONFIG_SIP_TIMER_F</b>
+### -field RILDMCONFIG_SIP_TIMER_F
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_SMS_FORMAT_TYPE"></a><a id="rildmconfig_sms_format_type"></a><b>RILDMCONFIG_SMS_FORMAT_TYPE</b>
+### -field RILDMCONFIG_SMS_FORMAT_TYPE
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_DOMAIN_NAME"></a><a id="rildmconfig_domain_name"></a><b>RILDMCONFIG_DOMAIN_NAME</b>
+### -field RILDMCONFIG_DOMAIN_NAME
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_SMS_OVER_IP_NW_INDICATION"></a><a id="rildmconfig_sms_over_ip_nw_indication"></a><b>RILDMCONFIG_SMS_OVER_IP_NW_INDICATION</b>
+### -field RILDMCONFIG_SMS_OVER_IP_NW_INDICATION
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_IMS_TEST_MODE_STATUS"></a><a id="rildmconfig_ims_test_mode_status"></a><b>RILDMCONFIG_IMS_TEST_MODE_STATUS</b>
+### -field RILDMCONFIG_IMS_TEST_MODE_STATUS
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_PCSCF_ADDRESS"></a><a id="rildmconfig_pcscf_address"></a><b>RILDMCONFIG_PCSCF_ADDRESS</b>
+### -field RILDMCONFIG_PCSCF_ADDRESS
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_PCSCF_PORT_NUMBER"></a><a id="rildmconfig_pcscf_port_number"></a><b>RILDMCONFIG_PCSCF_PORT_NUMBER</b>
+### -field RILDMCONFIG_PCSCF_PORT_NUMBER
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_MD5_AUTH"></a><a id="rildmconfig_md5_auth"></a><b>RILDMCONFIG_MD5_AUTH</b>
+### -field RILDMCONFIG_MD5_AUTH
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_MULTIPARTY_SERVER"></a><a id="rildmconfig_multiparty_server"></a><b>RILDMCONFIG_MULTIPARTY_SERVER</b>
+### -field RILDMCONFIG_MULTIPARTY_SERVER
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_REQUEST_CONTEXT"></a><a id="rildmconfig_request_context"></a><b>RILDMCONFIG_REQUEST_CONTEXT</b>
+### -field RILDMCONFIG_REQUEST_CONTEXT
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_IMS_NAI"></a><a id="rildmconfig_ims_nai"></a><b>RILDMCONFIG_IMS_NAI</b>
+### -field RILDMCONFIG_IMS_NAI
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_SIP_SESSION_TIMER"></a><a id="rildmconfig_sip_session_timer"></a><b>RILDMCONFIG_SIP_SESSION_TIMER</b>
+### -field RILDMCONFIG_SIP_SESSION_TIMER
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_SIP_SESSION_TIMER_MIN"></a><a id="rildmconfig_sip_session_timer_min"></a><b>RILDMCONFIG_SIP_SESSION_TIMER_MIN</b>
+### -field RILDMCONFIG_SIP_SESSION_TIMER_MIN
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_AMR_WB_ENABLE"></a><a id="rildmconfig_amr_wb_enable"></a><b>RILDMCONFIG_AMR_WB_ENABLE</b>
+### -field RILDMCONFIG_AMR_WB_ENABLE
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_AMR_SRC_CTL_RATE"></a><a id="rildmconfig_amr_src_ctl_rate"></a><b>RILDMCONFIG_AMR_SRC_CTL_RATE</b>
+### -field RILDMCONFIG_AMR_SRC_CTL_RATE
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_AMR_WB_SRC_CTL_RATE"></a><a id="rildmconfig_amr_wb_src_ctl_rate"></a><b>RILDMCONFIG_AMR_WB_SRC_CTL_RATE</b>
+### -field RILDMCONFIG_AMR_WB_SRC_CTL_RATE
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_AMR_MODE_SET"></a><a id="rildmconfig_amr_mode_set"></a><b>RILDMCONFIG_AMR_MODE_SET</b>
+### -field RILDMCONFIG_AMR_MODE_SET
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_AMR_WB_MODE_SET"></a><a id="rildmconfig_amr_wb_mode_set"></a><b>RILDMCONFIG_AMR_WB_MODE_SET</b>
+### -field RILDMCONFIG_AMR_WB_MODE_SET
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_RINGING_TIMER"></a><a id="rildmconfig_ringing_timer"></a><b>RILDMCONFIG_RINGING_TIMER</b>
+### -field RILDMCONFIG_RINGING_TIMER
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_RINGBACK_TIMER"></a><a id="rildmconfig_ringback_timer"></a><b>RILDMCONFIG_RINGBACK_TIMER</b>
+### -field RILDMCONFIG_RINGBACK_TIMER
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_RTC_INACTIVITY_TIMER"></a><a id="rildmconfig_rtc_inactivity_timer"></a><b>RILDMCONFIG_RTC_INACTIVITY_TIMER</b>
+### -field RILDMCONFIG_RTC_INACTIVITY_TIMER
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_UDP_KEEPALIVE_TIMER"></a><a id="rildmconfig_udp_keepalive_timer"></a><b>RILDMCONFIG_UDP_KEEPALIVE_TIMER</b>
+### -field RILDMCONFIG_UDP_KEEPALIVE_TIMER
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_IMS_VOICE_ENABLED"></a><a id="rildmconfig_ims_voice_enabled"></a><b>RILDMCONFIG_IMS_VOICE_ENABLED</b>
+### -field RILDMCONFIG_IMS_VOICE_ENABLED
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_IMS_VIDEO_ENABLED"></a><a id="rildmconfig_ims_video_enabled"></a><b>RILDMCONFIG_IMS_VIDEO_ENABLED</b>
+### -field RILDMCONFIG_IMS_VIDEO_ENABLED
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_IMS_NW_ENABLED_FLAGS"></a><a id="rildmconfig_ims_nw_enabled_flags"></a><b>RILDMCONFIG_IMS_NW_ENABLED_FLAGS</b>
+### -field RILDMCONFIG_IMS_NW_ENABLED_FLAGS
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_IMS_IRAT_REG_DELAY"></a><a id="rildmconfig_ims_irat_reg_delay"></a><b>RILDMCONFIG_IMS_IRAT_REG_DELAY</b>
+### -field RILDMCONFIG_IMS_IRAT_REG_DELAY
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_1XRTT_FALLBACK_REDIAL_TIMER"></a><a id="rildmconfig_1xrtt_fallback_redial_timer"></a><b>RILDMCONFIG_1XRTT_FALLBACK_REDIAL_TIMER</b>
+### -field RILDMCONFIG_1XRTT_FALLBACK_REDIAL_TIMER
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_1XRTT_FALLBACK_REDIAL_ENABLE"></a><a id="rildmconfig_1xrtt_fallback_redial_enable"></a><b>RILDMCONFIG_1XRTT_FALLBACK_REDIAL_ENABLE</b>
+### -field RILDMCONFIG_1XRTT_FALLBACK_REDIAL_ENABLE
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_IMS_PRESENCE_ENABLED"></a><a id="rildmconfig_ims_presence_enabled"></a><b>RILDMCONFIG_IMS_PRESENCE_ENABLED</b>
+### -field RILDMCONFIG_IMS_PRESENCE_ENABLED
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_IMS_ROAMING_ENABLED"></a><a id="rildmconfig_ims_roaming_enabled"></a><b>RILDMCONFIG_IMS_ROAMING_ENABLED</b>
+### -field RILDMCONFIG_IMS_ROAMING_ENABLED
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_IMS_XCAP_ENABLED"></a><a id="rildmconfig_ims_xcap_enabled"></a><b>RILDMCONFIG_IMS_XCAP_ENABLED</b>
+### -field RILDMCONFIG_IMS_XCAP_ENABLED
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_EPDG_ADDRESS"></a><a id="rildmconfig_epdg_address"></a><b>RILDMCONFIG_EPDG_ADDRESS</b>
+### -field RILDMCONFIG_EPDG_ADDRESS
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_VOWIFI_ENTITLEMENT_CHECK"></a><a id="rildmconfig_vowifi_entitlement_check"></a><b>RILDMCONFIG_VOWIFI_ENTITLEMENT_CHECK</b>
+### -field RILDMCONFIG_VOWIFI_ENTITLEMENT_CHECK
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_RTT_MODE"></a><a id="rildmconfig_rtt_mode"></a><b>RILDMCONFIG_RTT_MODE</b>
+### -field RILDMCONFIG_RTT_MODE
 
 <dd></dd>
 
-### -field <a id="RILDMCONFIG_MAX"></a><a id="rildmconfig_max"></a><b>RILDMCONFIG_MAX</b>
+### -field RILDMCONFIG_MAX
 
 <dd></dd>
 </dl>

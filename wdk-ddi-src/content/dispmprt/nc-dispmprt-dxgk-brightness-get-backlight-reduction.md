@@ -58,13 +58,13 @@ NTSTATUS* DxgkDdiGetBacklightReduction(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A handle to a <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> context block that is associated with a display adapter. The display miniport driver's  function previously provided this handle to the DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>BacklightInfo</i> [out]
+### -param BacklightInfo [out]
 
 <dd>
 <p>A value of type <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-backlight-info.md">DXGK_BACKLIGHT_INFO</a> that provides the current absolute level of backlight reduction.</p>

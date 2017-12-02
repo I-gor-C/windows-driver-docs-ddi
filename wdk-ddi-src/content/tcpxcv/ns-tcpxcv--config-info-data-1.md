@@ -56,13 +56,13 @@ typedef struct _CONFIG_INFO_DATA_1 {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Is reserved for system use. This member should be set to a zero-length string.</p>
 </dd>
 
-### -field <b>dwVersion</b>
+### -field dwVersion
 
 <dd>
 <p>Specifies the version of the PORT_DATA_1 structure (currently equal to 1) that will contain the configuration information.</p>
@@ -72,7 +72,7 @@ typedef struct _CONFIG_INFO_DATA_1 {
 ## -remarks
 <p>When the <a href="print.xcvdata">XcvData</a> function is called to obtain port configuration information, its <i>pInputData</i> parameter must be set with the address of a CONFIG_INFO_DATA_1 structure, and its <i>pOutputData</i> parameter must be set with the address of a <a href="..\tcpxcv\ns-tcpxcv--port-data-1.md">PORT_DATA_1</a> structure, which will be filled in when the function returns. Set this function's <i>pszDataName</i> parameter to the string L"GetConfigInfo". </p>
 
-<p>See <a href="NULL">TCPMON Xcv Interface</a> for more information.</p>
+<p>See <a href="https://msdn.microsoft.com/7b2b1cff-ab8f-44e0-9327-dc60a0072bf5">TCPMON Xcv Interface</a> for more information.</p>
 
 ## -requirements
 <table>

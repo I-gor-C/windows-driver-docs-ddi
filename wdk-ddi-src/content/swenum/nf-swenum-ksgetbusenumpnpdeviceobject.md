@@ -57,13 +57,13 @@ NTSTATUS KsGetBusEnumPnpDeviceObject(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object from which to retrieve the Plug and Play device object.</p>
 </dd>
 
-### -param <i>PnpDeviceObject</i> [out]
+### -param PnpDeviceObject [out]
 
 <dd>
 <p>Pointer to the device object to receive the Plug and Play device object pointer.</p>

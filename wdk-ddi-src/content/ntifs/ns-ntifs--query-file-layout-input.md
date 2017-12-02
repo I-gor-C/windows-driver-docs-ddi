@@ -7,7 +7,7 @@ old-location: ifsk\query_file_layout_input.htm
 old-project: ifsk
 ms.assetid: 7404BFC3-8942-4927-9F5B-9FA860F9F95F
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: QUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INPUT, *PQUERY_FILE_LAYOUT_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,13 +61,13 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfPairs</b>
+### -field NumberOfPairs
 
 <dd>
 <p>The number of filter ranges present in the <b>Filter</b> array.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Indicates which file layout entries are included in the query results. <b>Flags</b> is set to a valid combination of these values:</p>
@@ -79,7 +79,7 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 <tr>
 <td width="40%"><a id="QUERY_FILE_LAYOUT_INCLUDE_EXTENTS"></a><a id="query_file_layout_include_extents"></a><dl>
 
-### -field <b>QUERY_FILE_LAYOUT_INCLUDE_EXTENTS</b>
+### -field QUERY_FILE_LAYOUT_INCLUDE_EXTENTS
 
 </dl>
 </td>
@@ -90,7 +90,7 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 <tr>
 <td width="40%"><a id="QUERY_FILE_LAYOUT_INCLUDE_EXTRA_INFO"></a><a id="query_file_layout_include_extra_info"></a><dl>
 
-### -field <b>QUERY_FILE_LAYOUT_INCLUDE_EXTRA_INFO</b>
+### -field QUERY_FILE_LAYOUT_INCLUDE_EXTRA_INFO
 
 </dl>
 </td>
@@ -101,7 +101,7 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 <tr>
 <td width="40%"><a id="QUERY_FILE_LAYOUT_INCLUDE_NAMES"></a><a id="query_file_layout_include_names"></a><dl>
 
-### -field <b>QUERY_FILE_LAYOUT_INCLUDE_NAMES</b>
+### -field QUERY_FILE_LAYOUT_INCLUDE_NAMES
 
 </dl>
 </td>
@@ -112,7 +112,7 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 <tr>
 <td width="40%"><a id="QUERY_FILE_LAYOUT_INCLUDE_STREAMS"></a><a id="query_file_layout_include_streams"></a><dl>
 
-### -field <b>QUERY_FILE_LAYOUT_INCLUDE_STREAMS</b>
+### -field QUERY_FILE_LAYOUT_INCLUDE_STREAMS
 
 </dl>
 </td>
@@ -123,7 +123,7 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 <tr>
 <td width="40%"><a id="QUERY_FILE_LAYOUT_RESTART"></a><a id="query_file_layout_restart"></a><dl>
 
-### -field <b>QUERY_FILE_LAYOUT_RESTART</b>
+### -field QUERY_FILE_LAYOUT_RESTART
 
 </dl>
 </td>
@@ -134,7 +134,7 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 <tr>
 <td width="40%"><a id="QUERY_FILE_LAYOUT_INCLUDE_STREAMS_WITH_NO_CLUSTERS_ALLOCATED"></a><a id="query_file_layout_include_streams_with_no_clusters_allocated"></a><dl>
 
-### -field <b>QUERY_FILE_LAYOUT_INCLUDE_STREAMS_WITH_NO_CLUSTERS_ALLOCATED</b>
+### -field QUERY_FILE_LAYOUT_INCLUDE_STREAMS_WITH_NO_CLUSTERS_ALLOCATED
 
 </dl>
 </td>
@@ -146,7 +146,7 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 <p> </p>
 </dd>
 
-### -field <b>FilterType</b>
+### -field FilterType
 
 <dd>
 <p>Specifies a filtering method to restrict returned layout information. May be one of these values:</p>
@@ -158,7 +158,7 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 <tr>
 <td width="40%"><a id="QUERY_FILE_LAYOUT_FILTER_TYPE_NONE"></a><a id="query_file_layout_filter_type_none"></a><dl>
 
-### -field <b>QUERY_FILE_LAYOUT_FILTER_TYPE_NONE</b>
+### -field QUERY_FILE_LAYOUT_FILTER_TYPE_NONE
 
 </dl>
 </td>
@@ -169,7 +169,7 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 <tr>
 <td width="40%"><a id="QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS"></a><a id="query_file_layout_filter_type_clusters"></a><dl>
 
-### -field <b>QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS</b>
+### -field QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS
 
 </dl>
 </td>
@@ -180,7 +180,7 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 <tr>
 <td width="40%"><a id="QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID"></a><a id="query_file_layout_filter_type_fileid"></a><dl>
 
-### -field <b>QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID</b>
+### -field QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID
 
 </dl>
 </td>
@@ -192,20 +192,20 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Filter</b>
+### -field Filter
 
 <dd>
 <p>An array of filter structures used to select specific layout information. These contain either cluster or file reference ranges. The array length is specified by the <b>NumberOfPairs</b> member. Each range must be distinct and cannot overlap with any other range.</p>
 <p>This member is ignored if <b>QUERY_FILE_LAYOUT_FILTER_TYPE_NONE</b> is specified in <b>FilterType</b>.</p>
 <dl>
 
-### -field <b>ClusterRanges</b>
+### -field ClusterRanges
 
 <dd>
 <p>Specifies a set of cluster ranges to filter layout information. The range structure has the following format.</p>
@@ -226,7 +226,7 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 </p>
 </dd>
 
-### -field <b>FileReferenceRanges</b>
+### -field FileReferenceRanges
 
 <dd>
 <p>Specifies a set of file reference ranges to filter layout information. The range structure has the following format.</p>
@@ -292,4 +292,4 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20QUERY_FILE_LAYOUT_INPUT structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20QUERY_FILE_LAYOUT_INPUT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

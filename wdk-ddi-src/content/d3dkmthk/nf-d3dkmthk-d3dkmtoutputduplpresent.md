@@ -54,7 +54,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOutputDuplPresent(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-outputduplpresent.md">D3DKMT_OUTPUTDUPLPRESENT</a> structure that describes parameters for the present operation.</p>

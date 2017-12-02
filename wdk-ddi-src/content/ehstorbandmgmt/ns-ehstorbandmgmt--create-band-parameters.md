@@ -58,13 +58,13 @@ typedef struct _CREATE_BAND_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>StructSize</b>
+### -field StructSize
 
 <dd>
 <p>The size of this structure in bytes. Set to <b>sizeof</b>(CREATE_BAND_PARAMETERS).</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Band creation flags. This value is a bitwise OR combination of the following.</p>
@@ -76,7 +76,7 @@ typedef struct _CREATE_BAND_PARAMETERS {
 <tr>
 <td width="40%"><a id="CREATEBAND_AUTHKEY_CACHING_ENABLED"></a><a id="createband_authkey_caching_enabled"></a><dl>
 
-### -field <b>CREATEBAND_AUTHKEY_CACHING_ENABLED</b>
+### -field CREATEBAND_AUTHKEY_CACHING_ENABLED
 
 </dl>
 </td>
@@ -88,19 +88,19 @@ typedef struct _CREATE_BAND_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>BandLocationInfoOffset</b>
+### -field BandLocationInfoOffset
 
 <dd>
 <p>The offset, in bytes, of a <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-location-info.md">BAND_LOCATION_INFO</a> structure. The offset is from the beginning of <b>CREATE_BAND_PARAMETERS</b>.</p>
 </dd>
 
-### -field <b>BandSecurityInfoOffset</b>
+### -field BandSecurityInfoOffset
 
 <dd>
 <p>The offset, in bytes, of a <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-security-info.md">BAND_SECURITY_INFO</a> structure. The offset is from the beginning of <b>CREATE_BAND_PARAMETERS</b>. If this value is 0, meaning band security info is not present, key manager metadata for the band is set to all zeros. Also, when this member is 0, the read and write lock states default to PERSISTANT_UNLOCK.</p>
 </dd>
 
-### -field <b>AuthKeyOffset</b>
+### -field AuthKeyOffset
 
 <dd>
 <p>The offset, in bytes, of an  <b> AUTH_KEY</b> structure that contains the authorization key for the new band. The offset is from the beginning of <b>CREATE_BAND_PARAMETERS</b>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.</p>
@@ -121,13 +121,13 @@ typedef struct _CREATE_BAND_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="KeySize"></a><a id="keysize"></a><a id="KEYSIZE"></a>KeySize
+### -field KeySize
 
 <dd>
 <p>The size of the key, in bytes, of the key data at <b>Key</b>. If <b>KeySize</b> is set to 0, a default key is used.</p>
 </dd>
 
-### -field <a id="Key"></a><a id="key"></a><a id="KEY"></a>Key
+### -field Key
 
 <dd>
 <p>A variable length byte array that contains the key data.</p>

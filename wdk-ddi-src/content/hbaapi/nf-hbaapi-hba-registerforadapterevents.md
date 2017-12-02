@@ -57,25 +57,25 @@ HBA_STATUS HBA_API HBA_RegisterForAdapterEvents(
 ## -parameters
 <dl>
 
-### -param <i>callback</i> 
+### -param callback 
 
 <dd>
 <p>Pointer to a callback routine of type <a href="storage.hba_adapter_callback">HBA_ADAPTER_CALLBACK</a> that is called when an adapter is added to the system.</p>
 </dd>
 
-### -param <i>userData</i> 
+### -param userData 
 
 <dd>
 <p>Pointer to a buffer that is passed to the callback routine with each event. This data correlates the event with the source of the event registration. </p>
 </dd>
 
-### -param <i>handle</i> 
+### -param handle 
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA for which the adapter events are generated. </p>
 </dd>
 
-### -param <i>callbackHandle</i> 
+### -param callbackHandle 
 
 <dd>
 <p>Contains an opaque identifier that the user must pass to <a href="..\hbaapi\nf-hbaapi-hba-removecallback.md">HBA_RemoveCallback</a> to de-register the callback routine.</p>

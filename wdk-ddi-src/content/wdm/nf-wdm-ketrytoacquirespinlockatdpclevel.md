@@ -55,7 +55,7 @@ BOOLEAN KeTryToAcquireSpinLockAtDpcLevel(
 ## -parameters
 <dl>
 
-### -param <i>SpinLock</i> [in, out]
+### -param SpinLock [in, out]
 
 <dd>
 <p>Specifies the spin lock to acquire. The spin lock must have already been initialized by <a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>.</p>

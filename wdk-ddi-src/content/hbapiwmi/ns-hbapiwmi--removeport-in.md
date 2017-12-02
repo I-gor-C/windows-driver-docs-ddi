@@ -54,7 +54,7 @@ typedef struct _RemovePort_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>Contains a worldwide name that indicates the port that should be removed from the list of ports whose events are reported to the WMI client.. </p>

@@ -56,19 +56,19 @@ NTSTATUS DrmCreateContentMixed(
 ## -parameters
 <dl>
 
-### -param <i>paContentId</i> [in]
+### -param paContentId [in]
 
 <dd>
 <p>Pointer to an array of DRM content IDs. Each array element is of type ULONG and contains a content ID that represents a protected KS audio stream. If <i>cContentId</i> is zero, <i>paContentID</i> can be <b>NULL</b>. A content ID of zero is a special value that represents an audio stream with default DRM content rights (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536254">DEFINE_DRMRIGHTS_DEFAULT</a>).</p>
 </dd>
 
-### -param <i>cContentId</i> [in]
+### -param cContentId [in]
 
 <dd>
 <p>Specifies the number of DRM content IDs in the <i>paContentId</i> array. The array can hold zero or more content IDs.</p>
 </dd>
 
-### -param <i>pMixedContentId</i> [out]
+### -param pMixedContentId [out]
 
 <dd>
 <p>Output pointer for the composite content ID. This parameter points to a caller-allocated ULONG variable into which the function writes the new content ID for the composite KS audio stream. If <i>cContentId</i> is zero, the function assigns default DRM content rights to the new content ID.</p>
@@ -89,7 +89,7 @@ NTSTATUS DrmCreateContentMixed(
 
 <p>After a KS audio filter finishes using a content ID that it created using <code>DrmCreateContentMixed</code>, the filter must call <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a> to delete the content ID. However, before deleting an old content ID, the KS audio filter must first successfully forward a new content ID to all the streams to which it previously forwarded the old content ID. The KS audio filter forwards a content ID by calling a <b>DrmForwardContentTo</b><i>Xxx</i> function.</p>
 
-<p><code>DrmCreateContentMixed</code> performs the same function as <a href="..\portcls\nf-portcls-pccreatecontentmixed.md">PcCreateContentMixed</a> and <a href="audio.idrmport_createcontentmixed">IDrmPort::CreateContentMixed</a>. For more information, see <a href="NULL">DRM Functions and Interfaces</a>.</p>
+<p><code>DrmCreateContentMixed</code> performs the same function as <a href="..\portcls\nf-portcls-pccreatecontentmixed.md">PcCreateContentMixed</a> and <a href="audio.idrmport_createcontentmixed">IDrmPort::CreateContentMixed</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.</p>
 
 ## -requirements
 <table>

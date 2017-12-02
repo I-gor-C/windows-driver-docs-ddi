@@ -58,25 +58,25 @@ typedef enum _TRANSACTION_INFORMATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="TransactionBasicInformation"></a><a id="transactionbasicinformation"></a><a id="TRANSACTIONBASICINFORMATION"></a><b>TransactionBasicInformation</b>
+### -field TransactionBasicInformation
 
 <dd>
 <p>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm--transaction-basic-information.md">TRANSACTION_BASIC_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="TransactionPropertiesInformation"></a><a id="transactionpropertiesinformation"></a><a id="TRANSACTIONPROPERTIESINFORMATION"></a><b>TransactionPropertiesInformation</b>
+### -field TransactionPropertiesInformation
 
 <dd>
 <p>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm--transaction-properties-information.md">TRANSACTION_PROPERTIES_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="TransactionEnlistmentInformation"></a><a id="transactionenlistmentinformation"></a><a id="TRANSACTIONENLISTMENTINFORMATION"></a><b>TransactionEnlistmentInformation</b>
+### -field TransactionEnlistmentInformation
 
 <dd>
 <p>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm--transaction-enlistments-information.md">TRANSACTION_ENLISTMENTS_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <a id="TransactionSuperiorEnlistmentInformation"></a><a id="transactionsuperiorenlistmentinformation"></a><a id="TRANSACTIONSUPERIORENLISTMENTINFORMATION"></a><b>TransactionSuperiorEnlistmentInformation</b>
+### -field TransactionSuperiorEnlistmentInformation
 
 <dd>
 <p>Information about a transaction manager object is stored in a <b>TRANSACTION_SUPERIOR_ENLISTMENT_INFORMATION</b> structure.</p>

@@ -58,13 +58,13 @@ VOID APIENTRY DestroyRasterizerState(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hRasterizerState</i> [in]
+### -param hRasterizerState [in]
 
 <dd>
 <p> A handle to the driver's private data for the rasterizer state object to destroy. The Microsoft Direct3D runtime will free the memory region that it previously allocated for the object. Therefore, the driver can no longer access this memory region. </p>

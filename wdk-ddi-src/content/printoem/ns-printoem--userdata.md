@@ -58,25 +58,25 @@ typedef struct _USERDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Size, in bytes, of the USERDATA structure.</p>
 </dd>
 
-### -field <b>dwItemID</b>
+### -field dwItemID
 
 <dd>
 <p>Printer feature identifier.</p>
 </dd>
 
-### -field <b>pKeyWordName</b>
+### -field pKeyWordName
 
 <dd>
 <p>Pointer to a nonlocalized text string identifying a printer feature.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Reserved.</p>

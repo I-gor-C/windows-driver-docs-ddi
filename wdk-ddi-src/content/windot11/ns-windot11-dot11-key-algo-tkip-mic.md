@@ -7,7 +7,7 @@ old-location: netvista\dot11_key_algo_tkip_mic.htm
 old-project: netvista
 ms.assetid: 2f6e08e3-50cf-4d2e-aac8-185a5c0b38ed
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_KEY_ALGO_TKIP_MIC, DOT11_KEY_ALGO_TKIP_MIC, *PDOT11_KEY_ALGO_TKIP_MIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef struct DOT11_KEY_ALGO_TKIP_MIC {
 ## -struct-fields
 <dl>
 
-### -field <b>ucIV48Counter</b>
+### -field ucIV48Counter
 
 <dd>
 <p>The initial 48-bit value of the TKIP Sequence Counter (TSC), which is used for replay protection.
      For more information about the TSC, see 
-     <a href="NULL">TKIP</a>.</p>
+     <a href="https://msdn.microsoft.com/4f0c45f0-3125-4b19-82c1-3681b2e31c96">TKIP</a>.</p>
 </dd>
 
-### -field <b>ulTKIPKeyLength</b>
+### -field ulTKIPKeyLength
 
 <dd>
 <p>The length, in bytes, of the TKIP key material in the 
@@ -72,7 +72,7 @@ typedef struct DOT11_KEY_ALGO_TKIP_MIC {
      system, this member will always have a value of 16.</p>
 </dd>
 
-### -field <b>ulMICKeyLength</b>
+### -field ulMICKeyLength
 
 <dd>
 <p>The length, in bytes, of the MIC key material in the 
@@ -81,7 +81,7 @@ typedef struct DOT11_KEY_ALGO_TKIP_MIC {
      received packets and the last 8 bytes will be the MIC key used for transmitted packets.</p>
 </dd>
 
-### -field <b>ucTKIPMICKeys</b>
+### -field ucTKIPMICKeys
 
 <dd>
 <p>The TKIP and MIC key material.</p>
@@ -136,9 +136,9 @@ typedef struct DOT11_KEY_ALGO_TKIP_MIC {
    OID_DOT11_CIPHER_KEY_MAPPING_KEY</a>
 </dt>
 <dt>
-<a href="NULL">TKIP</a>
+<a href="https://msdn.microsoft.com/4f0c45f0-3125-4b19-82c1-3681b2e31c96">TKIP</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_KEY_ALGO_TKIP_MIC structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_KEY_ALGO_TKIP_MIC structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

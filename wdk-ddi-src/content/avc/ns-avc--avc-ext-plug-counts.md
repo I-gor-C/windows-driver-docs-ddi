@@ -55,13 +55,13 @@ typedef struct _AVC_EXT_PLUG_COUNTS {
 ## -struct-fields
 <dl>
 
-### -field <b>ExtInputs</b>
+### -field ExtInputs
 
 <dd>
 <p>Ignored on input. On output, this contains the count of external input plugs.</p>
 </dd>
 
-### -field <b>ExtOutputs</b>
+### -field ExtOutputs
 
 <dd>
 <p>Ignored on input. On output, this contains the count of external output plugs.</p>

@@ -56,19 +56,19 @@ typedef struct _ISCSI_DiscoveredTargetPortal {
 ## -struct-fields
 <dl>
 
-### -field <b>Socket</b>
+### -field Socket
 
 <dd>
 <p>The socket number of the portal. </p>
 </dd>
 
-### -field <b>Address</b>
+### -field Address
 
 <dd>
 <p>The network address of the portal. </p>
 </dd>
 
-### -field <b>SymbolicName</b>
+### -field SymbolicName
 
 <dd>
 <p>A wide character string that indicates the portal's symbolic name.</p>

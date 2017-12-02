@@ -54,7 +54,7 @@ typedef enum _D3DDDI_FLUSH_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_TRIM_MEMORY"></a><a id="d3dddi_trim_memory"></a><b>D3DDDI_TRIM_MEMORY</b>
+### -field D3DDDI_TRIM_MEMORY
 
 <dd>
 <p>The driver should free as much memory as it can. However, it should not free any memory that the driver requires to continue operating. Using this constant value therefore should not introduce new opportunities to run out of memory.</p>

@@ -57,19 +57,19 @@ typedef struct _RESOURCEMANAGER_BASIC_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>ResourceManagerId</b>
+### -field ResourceManagerId
 
 <dd>
 <p>A GUID that KTM assigned to the resource manager.</p>
 </dd>
 
-### -field <b>DescriptionLength</b>
+### -field DescriptionLength
 
 <dd>
 <p>The length, in bytes, of the character array that the <b>Description</b> member provides.</p>
 </dd>
 
-### -field <b>Description</b>
+### -field Description
 
 <dd>
 <p>A caller-allocated array of characters that receives a resource manager's description string. </p>

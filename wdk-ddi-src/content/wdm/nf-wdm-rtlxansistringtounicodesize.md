@@ -55,7 +55,7 @@ ULONG RtlxAnsiStringToUnicodeSize(
 ## -parameters
 <dl>
 
-### -param <i>AnsiString</i> [in]
+### -param AnsiString [in]
 
 <dd>
 <p>Pointer to the ANSI string for which to compute the number of bytes that are required for an equivalent null-terminated Unicode string. </p>

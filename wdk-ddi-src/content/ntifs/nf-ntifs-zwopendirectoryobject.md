@@ -56,13 +56,13 @@ NTSTATUS ZwOpenDirectoryObject(
 ## -parameters
 <dl>
 
-### -param <i>DirectoryHandle</i> [out]
+### -param DirectoryHandle [out]
 
 <dd>
 <p>Handle for the newly opened directory object. </p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> structure specifying the requested types of access being requested for this directory object. A caller can specify one or a combination of the following.</p>
@@ -116,7 +116,7 @@ NTSTATUS ZwOpenDirectoryObject(
 <p>These requested access types are compared with the object's discretionary access-control list (<a href="..\ntifs\ns-ntifs--acl.md">DACL</a>) to determine which accesses are granted or denied.</p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in]
+### -param ObjectAttributes [in]
 
 <dd>
 <p>Specified attributes for the directory object supplied by the caller. This parameter is initialized by calling the <b>InitializeObjectAttributes</b> macro. </p>

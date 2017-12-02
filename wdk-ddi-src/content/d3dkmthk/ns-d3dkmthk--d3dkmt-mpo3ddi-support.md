@@ -54,7 +54,7 @@ typedef struct _D3DKMT_MPO3DDI_SUPPORT {
 ## -struct-fields
 <dl>
 
-### -field <b>Supported</b>
+### -field Supported
 
 <dd>
 <p>Indicates whether support exists.</p>

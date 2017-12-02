@@ -59,32 +59,32 @@ HRESULT BindPrinter(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd>
 <p>The spooler's print handle, which is supplied by Unidrv. The provider should not close this handle at any time, because the client of the provider is responsible for managing the lifetime of this handle. The provider can cache the print handle; all future calls on this object are relative to the printer that is associated with this handle.</p>
 </dd>
 
-### -param <i>version</i> [in]
+### -param version [in]
 
 <dd>
 <p>The major version number of the print schema. Windows Vista supports only version 1.</p>
 </dd>
 
-### -param <i>pOptions</i> [out]
+### -param pOptions [out]
 
 <dd>
 <p>A pointer to a variable that receives one of the following enumerated values: </p>
 <p></p>
 <dl>
 
-### -param <a id="OEMPT_DEFAULT"></a><a id="oempt_default"></a>OEMPT_DEFAULT
+### -param OEMPT_DEFAULT
 
 <dd>
 <p>The system places a binary encoding (a binary large object [BLOB]) of the private <a href="display.devmodew">DEVMODEW</a> structure into the print ticket in a conversion of a DEVMODEW to a print ticket. </p>
 </dd>
 
-### -param <a id="OEMPT_NOSNAPSHOT"></a><a id="oempt_nosnapshot"></a>OEMPT_NOSNAPSHOT
+### -param OEMPT_NOSNAPSHOT
 
 <dd>
 <p>The system will not place a binary encoding (a BLOB) of the private DEVMODEW structure into the print ticket in a conversion of a DEVMODEW to a print ticket. Use this value if all of the public and private DEVMODEW members are fully represented in the print ticket.</p>
@@ -93,13 +93,13 @@ HRESULT BindPrinter(
 <p>The OEM object that is being called should set the value pointed to by this parameter.</p>
 </dd>
 
-### -param <i>cNamespaces</i> [out]
+### -param cNamespaces [out]
 
 <dd>
 <p>A pointer to a variable that receives the number of private namespace URIs that are used in the plug-in. This number represents the count of strings in the array that is pointed to by *<i>ppNamespaces</i>.</p>
 </dd>
 
-### -param <i>ppNamespaces</i> [out]
+### -param ppNamespaces [out]
 
 <dd>
 <p>A pointer to a variable that receives the address of the first element of a BSTR array. The plug-in fills each array position with a namespace URI. For more information about this parameter, see the following Remarks section.</p>

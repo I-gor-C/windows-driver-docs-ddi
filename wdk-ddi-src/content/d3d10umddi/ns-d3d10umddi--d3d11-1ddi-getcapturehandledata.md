@@ -58,34 +58,34 @@ typedef struct _D3D11_1DDI_GETCAPTUREHANDLEDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] The handle to the resource for which the allocation handle is to be obtained.</p>
 <p>The Direct3D version 11 and later runtime will have already verified that this resource was created using the <b>D3D11_DDI_BIND_CAPTURE</b> value in the <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-bind-flag.md">D3D10_DDI_RESOURCE_BIND_FLAG</a> enumeration.</p>
 </dd>
 
-### -field <b>ArrayIndex</b>
+### -field ArrayIndex
 
 <dd>
 <p>[in] The array element from which the data is to be obtained.</p>
 <p>If the resource was not created as a texture array, this value is zero. For a texture array, the Direct3D version 11 and later runtime will have already verified that the array is valid.</p>
 </dd>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[out] The driver-provided address of the kernel mode allocation handle associated with this allocation.</p>
 </dd>
 
-### -field <b>DataOffset</b>
+### -field DataOffset
 
 <dd>
 <p>[out] The driver-provided offset of the requested data within the allocation.</p>
 <p>If the resource was not created as a texture array, this value is typically zero.  For a texture array, this value is the offset of the array element data within the allocation.</p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>[out] The driver-provided size of the requested data within the allocation.</p>

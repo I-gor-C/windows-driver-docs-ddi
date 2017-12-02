@@ -56,13 +56,13 @@ HRESULT SetFontSubstitution(
 ## -parameters
 <dl>
 
-### -param <i>pszTrueTypeFontName</i> [in]
+### -param pszTrueTypeFontName [in]
 
 <dd>
 <p>A pointer to a null-terminated Unicode string that contains a valid TrueType font name. This parameter must not be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>pszDevFontName</i> [in]
+### -param pszDevFontName [in]
 
 <dd>
 <p>A pointer to a null-terminated Unicode string that contains the name of the device font. </p>

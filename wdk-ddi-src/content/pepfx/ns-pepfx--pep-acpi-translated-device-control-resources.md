@@ -58,31 +58,31 @@ struct PEP_ACPI_TRANSLATED_DEVICE_CONTROL_RESOURCES {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] A PEPHANDLE value that identifies the device's registration for ACPI services. The platform extension plug-in (PEP) supplied this handle in response to a previous <a href="kernel.pep_notify_acpi_register_device">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>RequestFlags</b>
+### -field RequestFlags
 
 <dd>
 <p>[in] A set of input flags. No flags are currently defined for this member, which is always set to PEP_ACPI_TDCR_FLAG_NONE (0x0).</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>[out] An NTSTATUS value that indicates the status of the resource translation. The PEP sets this member to STATUS_SUCCESS to indicate that the PEP successfully received the translated resources. Otherwise, the PEP sets this member to an appropriate error status code.</p>
 </dd>
 
-### -field <b>ResourceBufferSize</b>
+### -field ResourceBufferSize
 
 <dd>
 <p>[in] The size in bytes of the input buffer that contains both this structure and the resource-list data that follows this structure.</p>
 </dd>
 
-### -field <b>TranslatedResources</b>
+### -field TranslatedResources
 
 <dd>
 <p>[in] A <a href="..\wdm\ns-wdm--cm-resource-list.md">CM_RESOURCE_LIST</a> structure that serves as the header for the resource list. The remainder of the resource list immediately follows this header.</p>

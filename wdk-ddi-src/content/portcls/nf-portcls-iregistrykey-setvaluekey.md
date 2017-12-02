@@ -57,13 +57,13 @@ NTSTATUS SetValueKey(
 ## -parameters
 <dl>
 
-### -param <i>ValueName</i> [in, optional]
+### -param ValueName [in, optional]
 
 <dd>
 <p>Pointer to a string containing the name of the value entry to set. The name string is specified by a structure of type <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>. If the value entry has no name, set this parameter to <b>NULL</b>. If the caller specifies a name string but the given name is not unique relative to its containing key, the method replaces the data for an existing value entry.</p>
 </dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>Specifies the type of the data to be written for <i>ValueName</i>. Set this parameter to one of the following system-defined types:</p>
@@ -108,13 +108,13 @@ NTSTATUS SetValueKey(
 <p>These parameter types are explained in <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>.</p>
 </dd>
 
-### -param <i>Data</i> [in]
+### -param Data [in]
 
 <dd>
 <p>Pointer to a buffer containing the data. This parameter points to a user-supplied structure or value appropriate to the function.</p>
 </dd>
 
-### -param <i>DataSize</i> [in]
+### -param DataSize [in]
 
 <dd>
 <p>Specifies the size in bytes of <i>Data</i>. This parameter specifies how many bytes of data the method will copy from the buffer that <i>Data</i> points to.</p>

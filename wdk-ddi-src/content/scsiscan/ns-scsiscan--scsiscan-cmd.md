@@ -7,7 +7,7 @@ old-location: image\scsiscan_cmd.htm
 old-project: image
 ms.assetid: 412c35b2-eb08-43a3-b776-053645806f5d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: SCSISCAN_CMD, SCSISCAN_CMD, *PSCSISCAN_CMD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,67 +65,67 @@ typedef struct _SCSISCAN_CMD {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Caller-supplied size, in bytes, of the SCSISCAN_CMD structure.</p>
 </dd>
 
-### -field <b>SrbFlags</b>
+### -field SrbFlags
 
 <dd>
 <p>Caller-supplied SRB_FLAGS-prefixed bit flag specifying the requested operation. Flags are defined in <i>srb.h</i>.</p>
 </dd>
 
-### -field <b>CdbLength</b>
+### -field CdbLength
 
 <dd>
 <p>Length, in bytes, of the <a href="wdkgloss.c#wdkgloss.cdb#wdkgloss.cdb"><i>CDB</i></a> contained in the <b>Cdb</b> member.</p>
 </dd>
 
-### -field <b>SenseLength</b>
+### -field SenseLength
 
 <dd>
 <p>Length, in bytes, of the sense buffer the <b>pSenseBuffer</b> member points to.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>TransferLength</b>
+### -field TransferLength
 
 <dd>
 <p>Length, in bytes, of the buffer to be transferred. This should match the value specified for the <a href="base.deviceiocontrol">DeviceIoControl</a> function's <i>nOutBufferSize</i> parameter.</p>
 </dd>
 
-### -field <b>Cdb</b>
+### -field Cdb
 
 <dd>
 <p>Caller-supplied <a href="wdkgloss.c#wdkgloss.cdb#wdkgloss.cdb"><i>CDB</i></a> data. (The CDB structure is declared in <i>scsi.h</i>.)</p>
 </dd>
 
-### -field <b>pSrbStatus</b>
+### -field pSrbStatus
 
 <dd>
 <p>Caller-supplied pointer that will receive one of the SRB_STATUS-prefixed status values defined in <i>srb.h</i>.</p>
 </dd>
 
-### -field <b>pSenseBuffer</b>
+### -field pSenseBuffer
 
 <dd>
 <p>Caller-supplied pointer to a request-sense buffer, to be filled in by the kernel-mode driver.</p>

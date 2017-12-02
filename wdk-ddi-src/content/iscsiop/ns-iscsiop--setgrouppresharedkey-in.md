@@ -55,13 +55,13 @@ typedef struct _SetGroupPresharedKey_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>KeySize</b>
+### -field KeySize
 
 <dd>
 <p>The size, in bytes, of the key in <b>Key</b><i>.</i></p>
 </dd>
 
-### -field <b>Key</b>
+### -field Key
 
 <dd>
 <p>The preshared group key<i>.</i></p>

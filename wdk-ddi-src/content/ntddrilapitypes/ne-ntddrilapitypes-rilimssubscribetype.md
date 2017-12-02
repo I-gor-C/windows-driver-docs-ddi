@@ -7,7 +7,7 @@ old-location: netvista\rilimssubscribetype.htm
 old-project: netvista
 ms.assetid: 347b42c1-7585-471c-af42-44218da48fa3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILIMSSUBSCRIBETYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_IMSSUBSCRIBETYPE_MWI"></a><a id="ril_imssubscribetype_mwi"></a><b>RIL_IMSSUBSCRIBETYPE_MWI</b>
+### -field RIL_IMSSUBSCRIBETYPE_MWI
 
 <dd></dd>
 
-### -field <a id="RIL_IMSSUBSCRIBETYPE_CONFERENCE"></a><a id="ril_imssubscribetype_conference"></a><b>RIL_IMSSUBSCRIBETYPE_CONFERENCE</b>
+### -field RIL_IMSSUBSCRIBETYPE_CONFERENCE
 
 <dd></dd>
 
-### -field <a id="RIL_IMSSUBSCRIBETYPE_MAX"></a><a id="ril_imssubscribetype_max"></a><b>RIL_IMSSUBSCRIBETYPE_MAX</b>
+### -field RIL_IMSSUBSCRIBETYPE_MAX
 
 <dd></dd>
 </dl>

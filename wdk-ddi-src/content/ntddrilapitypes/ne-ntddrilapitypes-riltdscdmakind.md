@@ -7,7 +7,7 @@ old-location: netvista\riltdscdmakind.htm
 old-project: netvista
 ms.assetid: 61b5d7f8-bd45-448b-b7a1-3e52909a63cb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef enum _RILTDSCDMAKIND {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_TDSCDMAKIND_HSDPA"></a><a id="ril_tdscdmakind_hsdpa"></a><b>RIL_TDSCDMAKIND_HSDPA</b>
+### -field RIL_TDSCDMAKIND_HSDPA
 
 <dd></dd>
 
-### -field <a id="RIL_TDSCDMAKIND_HSUPA"></a><a id="ril_tdscdmakind_hsupa"></a><b>RIL_TDSCDMAKIND_HSUPA</b>
+### -field RIL_TDSCDMAKIND_HSUPA
 
 <dd></dd>
 
-### -field <a id="RIL_TDSCDMAKIND_HSPAPLUS"></a><a id="ril_tdscdmakind_hspaplus"></a><b>RIL_TDSCDMAKIND_HSPAPLUS</b>
+### -field RIL_TDSCDMAKIND_HSPAPLUS
 
 <dd></dd>
 
-### -field <a id="RIL_TDSCDMAKIND_DC_HSPAPLUS"></a><a id="ril_tdscdmakind_dc_hspaplus"></a><b>RIL_TDSCDMAKIND_DC_HSPAPLUS</b>
+### -field RIL_TDSCDMAKIND_DC_HSPAPLUS
 
 <dd></dd>
 
-### -field <a id="RIL_TDSCDMAKIND_MAX"></a><a id="ril_tdscdmakind_max"></a><b>RIL_TDSCDMAKIND_MAX</b>
+### -field RIL_TDSCDMAKIND_MAX
 
 <dd></dd>
 </dl>

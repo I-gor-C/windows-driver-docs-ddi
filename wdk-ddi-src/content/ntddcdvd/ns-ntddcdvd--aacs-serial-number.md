@@ -55,13 +55,13 @@ typedef struct _AACS_SERIAL_NUMBER {
 ## -struct-fields
 <dl>
 
-### -field <b>PrerecordedSerialNumber</b>
+### -field PrerecordedSerialNumber
 
 <dd>
 <p>The serial number.</p>
 </dd>
 
-### -field <b>MAC</b>
+### -field MAC
 
 <dd>
 <p>The message authentication code (MAC) that the client uses to verify that the serial number is for the current AACS authentication sequence.</p>

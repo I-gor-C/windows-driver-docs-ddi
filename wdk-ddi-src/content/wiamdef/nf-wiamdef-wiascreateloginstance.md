@@ -7,7 +7,7 @@ old-location: image\wiascreateloginstance.htm
 old-project: image
 ms.assetid: 7a340187-51c5-4997-b4d0-5b89ea8e16c0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiasCreateLogInstance
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ HRESULT _stdcall wiasCreateLogInstance(
 ## -parameters
 <dl>
 
-### -param <i>pModuleHandle</i> [in]
+### -param pModuleHandle [in]
 
 <dd>
 <p>Pointer to the module handle, which is used to filter output.</p>
 </dd>
 
-### -param <i>ppIWiaLogEx</i> [out]
+### -param ppIWiaLogEx [out]
 
 <dd>
 <p>Pointer to a memory location that receives the address of the logging interface.</p>

@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvprocesssessionchange.htm
 old-project: netvista
 ms.assetid: 17d5ab30-141a-4b7b-93f1-113fb1a39ba6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ DWORD APIENTRY Dot11ExtIhvProcessSessionChange(
 ## -parameters
 <dl>
 
-### -param <i>uEventType</i> [in]
+### -param uEventType [in]
 
 <dd>
 <p>The type of event. This parameter can have one of the following values.
@@ -145,7 +145,7 @@ DWORD APIENTRY Dot11ExtIhvProcessSessionChange(
 <p> </p>
 </dd>
 
-### -param <i>pSessionNotification</i> [in]
+### -param pSessionNotification [in]
 
 <dd>
 <p>A pointer to a WTSSESSION_NOTIFICATION structure, which provides information about the session

@@ -7,7 +7,7 @@ old-location: sensors\gnss_ni_notification_type.htm
 old-project: sensors
 ms.assetid: EC5FB722-F182-44A5-944C-ED81E43492AE
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="GNSS_NI_NoNotifyNoVerify"></a><a id="gnss_ni_nonotifynoverify"></a><a id="GNSS_NI_NONOTIFYNOVERIFY"></a><b>GNSS_NI_NoNotifyNoVerify</b>
+### -field GNSS_NI_NoNotifyNoVerify
 
 <dd>
 <p>No notification and no verification.</p>
 </dd>
 
-### -field <a id="GNSS_NI_NotifyOnly"></a><a id="gnss_ni_notifyonly"></a><a id="GNSS_NI_NOTIFYONLY"></a><b>GNSS_NI_NotifyOnly</b>
+### -field GNSS_NI_NotifyOnly
 
 <dd>
 <p>Notification only.</p>
 </dd>
 
-### -field <a id="GNSS_NI_NotifyVerifyDefaultAllow"></a><a id="gnss_ni_notifyverifydefaultallow"></a><a id="GNSS_NI_NOTIFYVERIFYDEFAULTALLOW"></a><b>GNSS_NI_NotifyVerifyDefaultAllow</b>
+### -field GNSS_NI_NotifyVerifyDefaultAllow
 
 <dd>
 <p>Notification and verification allowed on no answer.</p>
 </dd>
 
-### -field <a id="GNSS_NI_NotifyVerifyDefaultNotAllow"></a><a id="gnss_ni_notifyverifydefaultnotallow"></a><a id="GNSS_NI_NOTIFYVERIFYDEFAULTNOTALLOW"></a><b>GNSS_NI_NotifyVerifyDefaultNotAllow</b>
+### -field GNSS_NI_NotifyVerifyDefaultNotAllow
 
 <dd>
 <p>Notification and verification denied on no answer.</p>
 </dd>
 
-### -field <a id="GNSS_NI_PrivacyOverride"></a><a id="gnss_ni_privacyoverride"></a><a id="GNSS_NI_PRIVACYOVERRIDE"></a><b>GNSS_NI_PrivacyOverride</b>
+### -field GNSS_NI_PrivacyOverride
 
 <dd>
 <p>Privacy override.</p>

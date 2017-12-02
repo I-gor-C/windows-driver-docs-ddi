@@ -72,97 +72,97 @@ typedef union _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK {
 ## -struct-fields
 <dl>
 
-### -field <b>TargetAbortOnSplitCompletion</b>
+### -field TargetAbortOnSplitCompletion
 
 <dd>
 <p>A single bit that indicates that the reporting of target aborts on split completion is masked.</p>
 </dd>
 
-### -field <b>MasterAbortOnSplitCompletion</b>
+### -field MasterAbortOnSplitCompletion
 
 <dd>
 <p>A single bit that indicates that the reporting of master aborts on split completion is masked.</p>
 </dd>
 
-### -field <b>ReceivedTargetAbort</b>
+### -field ReceivedTargetAbort
 
 <dd>
 <p>A single bit that indicates that the reporting of target aborts is masked.</p>
 </dd>
 
-### -field <b>ReceivedMasterAbort</b>
+### -field ReceivedMasterAbort
 
 <dd>
 <p>A single bit that indicates that the reporting of master aborts is masked.</p>
 </dd>
 
-### -field <b>RsvdZ</b>
+### -field RsvdZ
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>UnexpectedSplitCompletionError</b>
+### -field UnexpectedSplitCompletionError
 
 <dd>
 <p>A single bit that indicates that the reporting of unexpected split completion errors is masked.</p>
 </dd>
 
-### -field <b>UncorrectableSplitCompletion</b>
+### -field UncorrectableSplitCompletion
 
 <dd>
 <p>A single bit that indicates that the reporting of uncorrectable split completion message data errors is masked.</p>
 </dd>
 
-### -field <b>UncorrectableDataError</b>
+### -field UncorrectableDataError
 
 <dd>
 <p>A single bit that indicates that the reporting of uncorrectable data errors is masked.</p>
 </dd>
 
-### -field <b>UncorrectableAttributeError</b>
+### -field UncorrectableAttributeError
 
 <dd>
 <p>A single bit that indicates that the reporting of uncorrectable attribute errors is masked.</p>
 </dd>
 
-### -field <b>UncorrectableAddressError</b>
+### -field UncorrectableAddressError
 
 <dd>
 <p>A single bit that indicates that the reporting of uncorrectable address errors is masked.</p>
 </dd>
 
-### -field <b>DelayedTransactionDiscardTimerExpired</b>
+### -field DelayedTransactionDiscardTimerExpired
 
 <dd>
 <p>A single bit that indicates that the reporting of the expiration of the delayed transaction discard timer is masked.</p>
 </dd>
 
-### -field <b>PERRAsserted</b>
+### -field PERRAsserted
 
 <dd>
 <p>A single bit that indicates that the reporting of PERR# assertions is masked.</p>
 </dd>
 
-### -field <b>SERRAsserted</b>
+### -field SERRAsserted
 
 <dd>
 <p>A single bit that indicates that the reporting of SERR# assertions is masked.</p>
 </dd>
 
-### -field <b>InternalBridgeError</b>
+### -field InternalBridgeError
 
 <dd>
 <p>A single bit that indicates that the reporting of internal bridge errors is masked.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK structure.</p>

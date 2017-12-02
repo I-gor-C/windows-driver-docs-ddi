@@ -55,11 +55,11 @@ typedef enum _D3DKMT_OUTPUTDUPL_METADATATYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_OUTPUTDUPL_METADATATYPE_DIRTY_RECTS"></a><a id="d3dkmt_outputdupl_metadatatype_dirty_rects"></a><b>D3DKMT_OUTPUTDUPL_METADATATYPE_DIRTY_RECTS</b>
+### -field D3DKMT_OUTPUTDUPL_METADATATYPE_DIRTY_RECTS
 
 <dd></dd>
 
-### -field <a id="D3DKMT_OUTPUTDUPL_METADATATYPE_MOVE_RECTS"></a><a id="d3dkmt_outputdupl_metadatatype_move_rects"></a><b>D3DKMT_OUTPUTDUPL_METADATATYPE_MOVE_RECTS</b>
+### -field D3DKMT_OUTPUTDUPL_METADATATYPE_MOVE_RECTS
 
 <dd></dd>
 </dl>

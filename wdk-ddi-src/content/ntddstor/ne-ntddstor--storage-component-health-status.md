@@ -59,37 +59,37 @@ typedef enum _STORAGE_COMPONENT_HEALTH_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="HealthStatusUnknown"></a><a id="healthstatusunknown"></a><a id="HEALTHSTATUSUNKNOWN"></a><b>HealthStatusUnknown</b>
+### -field HealthStatusUnknown
 
 <dd>
 <p>The storage device health status is unknown.</p>
 </dd>
 
-### -field <a id="HealthStatusNormal"></a><a id="healthstatusnormal"></a><a id="HEALTHSTATUSNORMAL"></a><b>HealthStatusNormal</b>
+### -field HealthStatusNormal
 
 <dd>
 <p>The storage device is operating normally.</p>
 </dd>
 
-### -field <a id="HealthStatusThrottled"></a><a id="healthstatusthrottled"></a><a id="HEALTHSTATUSTHROTTLED"></a><b>HealthStatusThrottled</b>
+### -field HealthStatusThrottled
 
 <dd>
 <p>The storage device has been throttled.</p>
 </dd>
 
-### -field <a id="HealthStatusWarning"></a><a id="healthstatuswarning"></a><a id="HEALTHSTATUSWARNING"></a><b>HealthStatusWarning</b>
+### -field HealthStatusWarning
 
 <dd>
 <p>The storage device has issued a warning.</p>
 </dd>
 
-### -field <a id="HealthStatusDisabled"></a><a id="healthstatusdisabled"></a><a id="HEALTHSTATUSDISABLED"></a><b>HealthStatusDisabled</b>
+### -field HealthStatusDisabled
 
 <dd>
 <p>The storage device has been disabled.</p>
 </dd>
 
-### -field <a id="HealthStatusFailed"></a><a id="healthstatusfailed"></a><a id="HEALTHSTATUSFAILED"></a><b>HealthStatusFailed</b>
+### -field HealthStatusFailed
 
 <dd>
 <p>The storage device has failed.</p>

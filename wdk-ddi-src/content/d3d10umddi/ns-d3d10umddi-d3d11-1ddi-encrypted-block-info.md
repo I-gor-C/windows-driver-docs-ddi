@@ -56,19 +56,19 @@ typedef struct D3D11_1DDI_ENCRYPTED_BLOCK_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>NumEncryptedBytesAtBeginning</b>
+### -field NumEncryptedBytesAtBeginning
 
 <dd>
 <p>The number of bytes that are encrypted at the start of the buffer.</p>
 </dd>
 
-### -field <b>NumBytesInSkipPattern</b>
+### -field NumBytesInSkipPattern
 
 <dd>
 <p>The number of bytes that are skipped after the first <b>NumEncryptedBytesAtBeginning</b> bytes, and then after each block of <b>NumBytesInEncryptPattern</b> bytes. Skipped bytes are not encrypted.</p>
 </dd>
 
-### -field <b>NumBytesInEncryptPattern</b>
+### -field NumBytesInEncryptPattern
 
 <dd>
 <p>The number of bytes that are encrypted after each block of skipped bytes.</p>

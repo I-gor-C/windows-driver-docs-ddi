@@ -58,13 +58,13 @@ VOID APIENTRY CALLBACK* DxgkCbHardwareContentProtectionTeardown(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> 
+### -param hAdapter 
 
 <dd>
 <p>A handle to the graphics adapter where the tear-down event is occurring.</p>
 </dd>
 
-### -param <i>Flags</i> 
+### -param Flags 
 
 <dd>
 <p>Additional flags defined by <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-hardware-content-protection-teardown-flags.md">DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS</a> enumeration.</p>

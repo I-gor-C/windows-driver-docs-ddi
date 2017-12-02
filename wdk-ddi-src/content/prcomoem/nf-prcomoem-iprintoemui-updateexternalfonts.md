@@ -57,19 +57,19 @@ HRESULT UpdateExternalFonts(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> 
+### -param hPrinter 
 
 <dd>
 <p>Caller-supplied printer handle.</p>
 </dd>
 
-### -param <i>hHeap</i> 
+### -param hHeap 
 
 <dd>
 <p>Caller-supplied handle to heap memory the method can use for local storage.</p>
 </dd>
 
-### -param <i>pwstrCartridges</i> 
+### -param pwstrCartridges 
 
 <dd>
 <p>Caller-supplied pointer to an array of strings representing the names of all cartridges currently installed on the printer.</p>
@@ -88,7 +88,7 @@ HRESULT UpdateExternalFonts(
 <p> </p>
 
 ## -remarks
-<p>A user interface plug-in must implement the <code>IPrintOemUI::UpdateExternalFonts</code> method if the plug-in is replacing Unidrv's default font installer. For more information, see <a href="NULL">Customized Font Installers for Unidrv</a>.</p>
+<p>A user interface plug-in must implement the <code>IPrintOemUI::UpdateExternalFonts</code> method if the plug-in is replacing Unidrv's default font installer. For more information, see <a href="https://msdn.microsoft.com/d753368d-b1c8-454e-a02b-131dc778e723">Customized Font Installers for Unidrv</a>.</p>
 
 <p>The <code>IPrintOemUI::UpdateExternalFonts</code> method's purpose is to examine the list of installed cartridges (supplied by <i>pwstrCartridges</i>) and ensure that the .uff file specified by the "ExternalFontFile" registry value contains font descriptions for only the cartridge fonts contained in the installed cartridges. (This .uff file can also contain descriptions of <a href="wdkgloss.p#wdkgloss.pcl#wdkgloss.pcl"><i>PCL</i></a>-downloadable soft fonts.)</p>
 

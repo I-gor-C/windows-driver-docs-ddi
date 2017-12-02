@@ -56,19 +56,19 @@ typedef struct _D3DDDICB_LOCK2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[in] A driver specified <b>D3DKMT_HANDLE</b> to the allocation to lock.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A set of flags to pass to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock2.md">Lock2</a> kernel function which will determine how the allocation is locked. See <a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-lock2flags.md">D3DDDICB_LOCK2FLAGS</a> for details.</p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>[out] A CPU virtual address pointing a valid memory location pointing to the CPU backing store or the GPU frame buffer.</p>

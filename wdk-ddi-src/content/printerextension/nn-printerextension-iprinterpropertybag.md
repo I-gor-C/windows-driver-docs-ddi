@@ -236,7 +236,7 @@ req.product: Windows 10 or later.
 <a href="..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md">IPrinterScriptablePropertyBag</a>
 </dt>
 <dt>
-<a href="NULL">V4 Printer Driver Property Bags</a>
+<a href="https://msdn.microsoft.com/4E20303A-BEB3-4928-BA5A-356D978FA2BE">V4 Printer Driver Property Bags</a>
 </dt>
 </dl>
 <p> </p>

@@ -54,7 +54,7 @@ void RegisterServiceGroup(
 ## -parameters
 <dl>
 
-### -param <i>pServiceGroup </i> [in]
+### -param pServiceGroup  [in]
 
 <dd>
 <p>Pointer to an <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> object. This is the service group that is to be registered.</p>
@@ -75,7 +75,7 @@ void RegisterServiceGroup(
 
 <p>See the DMusUART sample audio driver in the Microsoft Windows Driver Kit (WDK) for a code example that shows how the miniport driver calls <code>RegisterServiceSink</code> from within its <b>IMiniportDMus::Init</b> method.</p>
 
-<p>The <i>pServiceGroup</i> parameter follows the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>pServiceGroup</i> parameter follows the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

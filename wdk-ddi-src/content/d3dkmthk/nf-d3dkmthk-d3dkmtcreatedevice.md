@@ -54,7 +54,7 @@ NTSTATUS D3DKMTCreateDevice(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createdevice.md">D3DKMT_CREATEDEVICE</a> structure that describes the kernel-mode device context.</p>

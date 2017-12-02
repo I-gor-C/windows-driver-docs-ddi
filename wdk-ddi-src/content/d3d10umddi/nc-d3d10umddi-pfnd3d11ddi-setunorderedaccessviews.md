@@ -61,31 +61,31 @@ VOID APIENTRY CsSetUnorderedAccessViews(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p> The offset to the first view to set. </p>
 </dd>
 
-### -param <i>NumViews</i> [in]
+### -param NumViews [in]
 
 <dd>
 <p> The total number of views to set. </p>
 </dd>
 
-### -param <i>phUnorderedAccessView</i> [in]
+### -param phUnorderedAccessView [in]
 
 <dd>
 <p> An array of handles to the driver's private data for unordered access view objects to set. Note that some handle values can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>pUAVInitialCounts</i> [in]
+### -param pUAVInitialCounts [in]
 
 <dd>
 <p>An array of append and consume buffer offsets. A value of -1 indicates that the current offset should be kept. Any other values set the hidden counter for that appendable and consumable UAV. <i>pUAVInitialCounts</i> is only relevant for UAVs  of the <i>phUnorderedAccessView</i> array that were created with either <b>D3D11_DDI_BUFFER_UAV_FLAG_APPEND</b>  or <b>D3D11_DDI_BUFFER_UAV_FLAG_COUNTER</b> specified in the <b>Flags</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-buffer-unorderedaccessview.md">D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW</a> structure when the UAV was created; otherwise, the argument is ignored.</p>

@@ -7,7 +7,7 @@ old-location: netvista\riluiccfiles_2.htm
 old-project: netvista
 ms.assetid: 282cd191-03c5-4599-9a61-e84221ef9143
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUICCFILES,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILUICCFILES {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwNumFiles</b>
+### -field dwNumFiles
 
 <dd></dd>
 
-### -field <b>filePath</b>
+### -field filePath
 
 <dd></dd>
 </dl>

@@ -63,61 +63,61 @@ typedef enum _PEP_ACPI_RESOURCE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PepAcpiMemory"></a><a id="pepacpimemory"></a><a id="PEPACPIMEMORY"></a><b>PepAcpiMemory</b>
+### -field PepAcpiMemory
 
 <dd>
 <p>Indicates that the resource is an ACPI memory resource.</p>
 </dd>
 
-### -field <a id="PepAcpiIoPort"></a><a id="pepacpiioport"></a><a id="PEPACPIIOPORT"></a><b>PepAcpiIoPort</b>
+### -field PepAcpiIoPort
 
 <dd>
 <p>Indicates that the resource is an ACPI IO port resource.</p>
 </dd>
 
-### -field <a id="PepAcpiInterrupt"></a><a id="pepacpiinterrupt"></a><a id="PEPACPIINTERRUPT"></a><b>PepAcpiInterrupt</b>
+### -field PepAcpiInterrupt
 
 <dd>
 <p>Indicates that the resource is an ACPI interrupt resource.</p>
 </dd>
 
-### -field <a id="PepAcpiGpioIo"></a><a id="pepacpigpioio"></a><a id="PEPACPIGPIOIO"></a><b>PepAcpiGpioIo</b>
+### -field PepAcpiGpioIo
 
 <dd>
 <p>Indicates that the resource is an ACPI GPIO resource.</p>
 </dd>
 
-### -field <a id="PepAcpiGpioInt"></a><a id="pepacpigpioint"></a><a id="PEPACPIGPIOINT"></a><b>PepAcpiGpioInt</b>
+### -field PepAcpiGpioInt
 
 <dd>
 <p>Indicates that the resource is an ACPI GPIO interrupt resource.</p>
 </dd>
 
-### -field <a id="PepAcpiSpbI2c"></a><a id="pepacpispbi2c"></a><a id="PEPACPISPBI2C"></a><b>PepAcpiSpbI2c</b>
+### -field PepAcpiSpbI2c
 
 <dd>
 <p>Indicates that the resource is an ACPI I2C serial bus resource.</p>
 </dd>
 
-### -field <a id="PepAcpiSpbSpi"></a><a id="pepacpispbspi"></a><a id="PEPACPISPBSPI"></a><b>PepAcpiSpbSpi</b>
+### -field PepAcpiSpbSpi
 
 <dd>
 <p>Indicates that the resource is an ACPI SPI serial bus resource.</p>
 </dd>
 
-### -field <a id="PepAcpiSpbUart"></a><a id="pepacpispbuart"></a><a id="PEPACPISPBUART"></a><b>PepAcpiSpbUart</b>
+### -field PepAcpiSpbUart
 
 <dd>
 <p>Indicates that the resource is an ACPI UART serial bus resource.</p>
 </dd>
 
-### -field <a id="PepAcpiExtendedMemory"></a><a id="pepacpiextendedmemory"></a><a id="PEPACPIEXTENDEDMEMORY"></a><b>PepAcpiExtendedMemory</b>
+### -field PepAcpiExtendedMemory
 
 <dd>
 <p>Indicates that the resource is an ACPI extended memory resource.</p>
 </dd>
 
-### -field <a id="PepAcpiExtendedIo"></a><a id="pepacpiextendedio"></a><a id="PEPACPIEXTENDEDIO"></a><b>PepAcpiExtendedIo</b>
+### -field PepAcpiExtendedIo
 
 <dd>
 <p>Indicates that the resource is an ACPI extended IO resource.</p>

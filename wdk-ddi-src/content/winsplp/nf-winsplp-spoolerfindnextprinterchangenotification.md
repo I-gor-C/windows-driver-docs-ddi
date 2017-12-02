@@ -58,19 +58,19 @@ BOOL WINAPI SpoolerFindNextPrinterChangeNotification(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd></dd>
 
-### -param <i>pfdwChange</i> [out]
+### -param pfdwChange [out]
 
 <dd></dd>
 
-### -param <i>pPrinterNotifyOptions</i> [in, optional]
+### -param pPrinterNotifyOptions [in, optional]
 
 <dd></dd>
 
-### -param <i>ppPrinterNotifyInfo</i> [in, out, optional]
+### -param ppPrinterNotifyInfo [in, out, optional]
 
 <dd></dd>
 </dl>

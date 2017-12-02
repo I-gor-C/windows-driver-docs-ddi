@@ -57,25 +57,25 @@ typedef struct tagTIMECODE_SAMPLE {
 ## -struct-fields
 <dl>
 
-### -field <b>qwTick</b>
+### -field qwTick
 
 <dd>
 <p>Specifies a reference time, in 100-nanosecond units.</p>
 </dd>
 
-### -field <b>timecode</b>
+### -field timecode
 
 <dd>
 <p>Specifies the <a href="..\ksmedia\ns-ksmedia--timecode.md">TIMECODE</a> structure.</p>
 </dd>
 
-### -field <b>dwUser</b>
+### -field dwUser
 
 <dd>
 <p>Specifies packed SMPTE user-bits.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Specifies any optional timecode flag masks.</p>

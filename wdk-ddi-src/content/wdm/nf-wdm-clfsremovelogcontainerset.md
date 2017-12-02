@@ -58,25 +58,25 @@ NTSTATUS ClfsRemoveLogContainerSet(
 ## -parameters
 <dl>
 
-### -param <i>plfoLog</i> [in]
+### -param plfoLog [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents the CLFS log from which the containers will be removed. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>. </p>
 </dd>
 
-### -param <i>cContainers</i> [in]
+### -param cContainers [in]
 
 <dd>
 <p>The number of containers in the set. This is the number of elements in the <i>rgwszContainerPath</i> array.</p>
 </dd>
 
-### -param <i>rgwszContainerPath</i> [in]
+### -param rgwszContainerPath [in]
 
 <dd>
 <p>A pointer to an array of <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structures, each of which supplies the path name for one of the containers to be removed. The number of elements in the array is given by <i>cContainers</i>. A given path can be absolute or relative to the location of the base log file for the CLFS log represented by <i>plfoLog</i>. Paths that are relative to the base log file must begin with CLFS_CONTAINER_RELATIVE_PREFIX, which is the string literal (L"%BLF%\\"). The directories "." and ".." are not allowed in a relative path.</p>
 </dd>
 
-### -param <i>fForce</i> [in]
+### -param fForce [in]
 
 <dd>
 <p>A Boolean value that specifies whether the container removal is forced (<b>TRUE</b>) or lazy (<b>FALSE</b>).</p>

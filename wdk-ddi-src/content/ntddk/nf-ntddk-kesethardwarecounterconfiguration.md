@@ -55,13 +55,13 @@ NTSTATUS KeSetHardwareCounterConfiguration(
 ## -parameters
 <dl>
 
-### -param <i>CounterArray</i> [in]
+### -param CounterArray [in]
 
 <dd>
 <p>A pointer to a <a href="..\ntddk\ns-ntddk--hardware-counter.md">HARDWARE_COUNTER</a> array that describes the hardware counter configuration to use for thread profiling. Each array element is a structure that describes a hardware counter. Before the routine returns, it copies the contents of this array into its internal data structures.</p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>Specifies the number of elements in the array that is pointed to by the <i>CounterArray</i> parameter.</p>

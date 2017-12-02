@@ -7,7 +7,7 @@ old-location: ifsk\secmakespnex.htm
 old-project: ifsk
 ms.assetid: 5000be89-144c-405c-93ea-3e9372e0a677
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: SecMakeSPNEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,55 +62,55 @@ NTSTATUS SecMakeSPNEx(
 ## -parameters
 <dl>
 
-### -param <i>ServiceClass</i> [in]
+### -param ServiceClass [in]
 
 <dd>
 <p>A pointer to a Unicode string specifying the service class for the security service provider. </p>
 </dd>
 
-### -param <i>ServiceName</i> [in]
+### -param ServiceName [in]
 
 <dd>
 <p>A pointer to a Unicode string specifying the service name for the security service provider. </p>
 </dd>
 
-### -param <i>InstanceName</i> [in]
+### -param InstanceName [in]
 
 <dd>
 <p>A pointer to an optional Unicode string specifying the instance name for connecting with the security service provider. </p>
 </dd>
 
-### -param <i>InstancePort</i> [in]
+### -param InstancePort [in]
 
 <dd>
 <p>An optional variable specifying the instance port for connecting with the security service provider. </p>
 </dd>
 
-### -param <i>Referrer</i> [in]
+### -param Referrer [in]
 
 <dd>
 <p>A pointer to an optional Unicode string specifying the referrer name for connecting with the security service provider. </p>
 </dd>
 
-### -param <i>TargetInfo</i> [in]
+### -param TargetInfo [in]
 
 <dd>
 <p>A pointer to an optional Unicode string specifying target information for connecting with the security service provider. </p>
 </dd>
 
-### -param <i>Spn</i> [in, out]
+### -param Spn [in, out]
 
 <dd>
 <p>A pointer to a Unicode string for storing the security service provider name string created by this function.</p>
 </dd>
 
-### -param <i>Length</i> [out]
+### -param Length [out]
 
 <dd>
 <p>A pointer to an optional variable for storing the length of the security service provider name string created by this function.</p>
 </dd>
 
-### -param <i>Allocate</i> [in]
+### -param Allocate [in]
 
 <dd>
 <p>A Boolean variable indicating if the memory for storing the <i>Spn</i> Unicode string should be allocated by this function. If this parameter is true, memory for <i>Spn</i> will be allocated from paged pool.</p>
@@ -196,4 +196,4 @@ NTSTATUS SecMakeSPNEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SecMakeSPNEx function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SecMakeSPNEx function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

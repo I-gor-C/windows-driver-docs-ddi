@@ -7,7 +7,7 @@ old-location: netvista\net_dma_descriptor.htm
 old-project: netvista
 ms.assetid: 0465a8d7-1cdd-4647-9b78-557256f60c05
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NET_DMA_DESCRIPTOR, NET_DMA_DESCRIPTOR, *PNET_DMA_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,7 +79,7 @@ typedef struct _NET_DMA_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>TransferSize</b>
+### -field TransferSize
 
 <dd>
 <p>The size, in bytes, of the memory block that is associated with this DMA descriptor. 
@@ -93,13 +93,13 @@ typedef struct _NET_DMA_DESCRIPTOR {
       (DCA)</a>.</p>
 </dd>
 
-### -field <b>DCAContext32</b>
+### -field DCAContext32
 
 <dd>
 <p>A 32 bit DCA context.</p>
 <dl>
 
-### -field <b>DCAContext</b>
+### -field DCAContext
 
 <dd>
 <p>A DCA context.</p>
@@ -107,19 +107,19 @@ typedef struct _NET_DMA_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>DCAContext16</b>
+### -field DCAContext16
 
 <dd>
 <p>A 16 bit DCA context.</p>
 <dl>
 
-### -field <b>DCAContext</b>
+### -field DCAContext
 
 <dd>
 <p>A DCA context.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved bits.</p>
@@ -127,19 +127,19 @@ typedef struct _NET_DMA_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>DCAContext8</b>
+### -field DCAContext8
 
 <dd>
 <p>An 8 bit DCA context.</p>
 <dl>
 
-### -field <b>DCAContext</b>
+### -field DCAContext
 
 <dd>
 <p>A DCA context.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved bits.</p>
@@ -147,7 +147,7 @@ typedef struct _NET_DMA_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>ControlFlags</b>
+### -field ControlFlags
 
 <dd>
 <p>A set of flags that specify the operations that the DMA engine should perform for this DMA
@@ -161,7 +161,7 @@ typedef struct _NET_DMA_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="NET_DMA_SOURCE_PAGE_BREAK"></a><a id="net_dma_source_page_break"></a><dl>
 
-### -field <b>NET_DMA_SOURCE_PAGE_BREAK</b>
+### -field NET_DMA_SOURCE_PAGE_BREAK
 
 </dl>
 </td>
@@ -176,7 +176,7 @@ typedef struct _NET_DMA_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="NET_DMA_DESTINATION_PAGE_BREAK"></a><a id="net_dma_destination_page_break"></a><dl>
 
-### -field <b>NET_DMA_DESTINATION_PAGE_BREAK</b>
+### -field NET_DMA_DESTINATION_PAGE_BREAK
 
 </dl>
 </td>
@@ -191,7 +191,7 @@ typedef struct _NET_DMA_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="NET_DMA_OP_TYPE_CONTEXT_CHANGE"></a><a id="net_dma_op_type_context_change"></a><dl>
 
-### -field <b>NET_DMA_OP_TYPE_CONTEXT_CHANGE</b>
+### -field NET_DMA_OP_TYPE_CONTEXT_CHANGE
 
 </dl>
 </td>
@@ -218,7 +218,7 @@ typedef struct _NET_DMA_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="NET_DMA_DESTINATION_DCA_ENABLE"></a><a id="net_dma_destination_dca_enable"></a><dl>
 
-### -field <b>NET_DMA_DESTINATION_DCA_ENABLE</b>
+### -field NET_DMA_DESTINATION_DCA_ENABLE
 
 </dl>
 </td>
@@ -233,7 +233,7 @@ typedef struct _NET_DMA_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="NET_DMA_INTERRUPT_ON_COMPLETION"></a><a id="net_dma_interrupt_on_completion"></a><dl>
 
-### -field <b>NET_DMA_INTERRUPT_ON_COMPLETION</b>
+### -field NET_DMA_INTERRUPT_ON_COMPLETION
 
 </dl>
 </td>
@@ -247,7 +247,7 @@ typedef struct _NET_DMA_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="NET_DMA_SOURCE_NO_SNOOP"></a><a id="net_dma_source_no_snoop"></a><dl>
 
-### -field <b>NET_DMA_SOURCE_NO_SNOOP</b>
+### -field NET_DMA_SOURCE_NO_SNOOP
 
 </dl>
 </td>
@@ -262,7 +262,7 @@ typedef struct _NET_DMA_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="NET_DMA_DESTINATION_NO_SNOOP"></a><a id="net_dma_destination_no_snoop"></a><dl>
 
-### -field <b>NET_DMA_DESTINATION_NO_SNOOP</b>
+### -field NET_DMA_DESTINATION_NO_SNOOP
 
 </dl>
 </td>
@@ -277,7 +277,7 @@ typedef struct _NET_DMA_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="NET_DMA_STATUS_UPDATE_ON_COMPLETION"></a><a id="net_dma_status_update_on_completion"></a><dl>
 
-### -field <b>NET_DMA_STATUS_UPDATE_ON_COMPLETION</b>
+### -field NET_DMA_STATUS_UPDATE_ON_COMPLETION
 
 </dl>
 </td>
@@ -299,7 +299,7 @@ typedef struct _NET_DMA_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="NET_DMA_SERIALIZE_TRANSFER"></a><a id="net_dma_serialize_transfer"></a><dl>
 
-### -field <b>NET_DMA_SERIALIZE_TRANSFER</b>
+### -field NET_DMA_SERIALIZE_TRANSFER
 
 </dl>
 </td>
@@ -314,7 +314,7 @@ typedef struct _NET_DMA_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="NET_DMA_NULL_TRANSFER"></a><a id="net_dma_null_transfer"></a><dl>
 
-### -field <b>NET_DMA_NULL_TRANSFER</b>
+### -field NET_DMA_NULL_TRANSFER
 
 </dl>
 </td>
@@ -346,7 +346,7 @@ typedef struct _NET_DMA_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="NET_DMA_OP_TYPE_MASK"></a><a id="net_dma_op_type_mask"></a><dl>
 
-### -field <b>NET_DMA_OP_TYPE_MASK</b>
+### -field NET_DMA_OP_TYPE_MASK
 
 </dl>
 </td>
@@ -358,7 +358,7 @@ typedef struct _NET_DMA_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="NET_DMA_RESERVED_MASK"></a><a id="net_dma_reserved_mask"></a><dl>
 
-### -field <b>NET_DMA_RESERVED_MASK</b>
+### -field NET_DMA_RESERVED_MASK
 
 </dl>
 </td>
@@ -371,19 +371,19 @@ typedef struct _NET_DMA_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>SourceAddress</b>
+### -field SourceAddress
 
 <dd>
 <p>The physical address of a memory block that is a source for the DMA transfer.</p>
 </dd>
 
-### -field <b>DestinationAddress</b>
+### -field DestinationAddress
 
 <dd>
 <p>The physical address of a memory block that is a destination for the DMA transfer.</p>
 </dd>
 
-### -field <b>NextDescriptor</b>
+### -field NextDescriptor
 
 <dd>
 <p>The physical address of the next NET_DMA_DESCRIPTOR structure in the linked list of descriptors.
@@ -391,7 +391,7 @@ typedef struct _NET_DMA_DESCRIPTOR {
      <b>NextDescriptor</b> is <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>A ULONG64 value that is reserved for the DMA engine or the DMA provider driver to use. NetDMA 2.0
@@ -402,14 +402,14 @@ typedef struct _NET_DMA_DESCRIPTOR {
       Break</a>.</p>
 </dd>
 
-### -field <b>NextSourceAddress</b>
+### -field NextSourceAddress
 
 <dd>
 <p>The physical address of the second page of source address that is used in source page
       break.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>A ULONG64 value that is reserved for use the DMA engine or the DMA provider driver to use. NetDMA
@@ -420,20 +420,20 @@ typedef struct _NET_DMA_DESCRIPTOR {
       Break</a>.</p>
 </dd>
 
-### -field <b>NextDestinationAddress</b>
+### -field NextDestinationAddress
 
 <dd>
 <p>The physical address of the second page of destination address that is used in destination page
       break.</p>
 </dd>
 
-### -field <b>UserContext1</b>
+### -field UserContext1
 
 <dd>
 <p>A ULONG64 value that is reserved for the NetDMA interface to use.</p>
 </dd>
 
-### -field <b>UserContext2</b>
+### -field UserContext2
 
 <dd>
 <p>A ULONG64 value that is reserved for the NetDMA interface to use.</p>
@@ -497,4 +497,4 @@ typedef struct _NET_DMA_DESCRIPTOR {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_DESCRIPTOR structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_DESCRIPTOR structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

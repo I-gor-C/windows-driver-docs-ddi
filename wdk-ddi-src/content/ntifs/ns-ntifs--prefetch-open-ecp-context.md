@@ -7,7 +7,7 @@ old-location: ifsk\prefetch_open_ecp_context.htm
 old-project: ifsk
 ms.assetid: 199a3003-a7dd-48a3-aa76-550332be26f3
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: PREFETCH_OPEN_ECP_CONTEXT, PREFETCH_OPEN_ECP_CONTEXT, *PPREFETCH_OPEN_ECP_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef struct _PREFETCH_OPEN_ECP_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to an opaque context that is associated with the open request. </p>

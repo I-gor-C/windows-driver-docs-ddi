@@ -7,7 +7,7 @@ old-location: netvista\dot11ext_ihv_security_profile.htm
 old-project: netvista
 ms.assetid: cbfeace3-6492-4011-9ca8-c40ba4f47d22
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11EXT_IHV_SECURITY_PROFILE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,13 +54,13 @@ typedef struct _DOT11EXT_IHV_SECURITY_PROFILE {
 ## -struct-fields
 <dl>
 
-### -field <b>pszXmlFragmentIhvSecurity</b>
+### -field pszXmlFragmentIhvSecurity
 
 <dd>
 <p>A pointer to the string that defines the IHV security profile.</p>
 </dd>
 
-### -field <b>bUseMSOnex</b>
+### -field bUseMSOnex
 
 <dd>
 <p>A flag that indicates whether the IHV security profile is using the Microsoft 802.1X

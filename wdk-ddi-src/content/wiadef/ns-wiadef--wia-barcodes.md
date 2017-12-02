@@ -7,7 +7,7 @@ old-location: image\wia_barcodes.htm
 old-project: image
 ms.assetid: 2B89FF49-4376-49A7-B7CC-1C67D89C7E7A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: WIA_BARCODES, WIA_BARCODES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ typedef struct _WIA_BARCODES {
 ## -struct-fields
 <dl>
 
-### -field <b>Tag</b>
+### -field Tag
 
 <dd>
 <p>Must be the literal 'WBAR', 4 single byte ASCII characters. </p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Must be the value 0x00010000 (Version 1.0).</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The complete size of this <b>WIA_BARCODES</b> header structure, in bytes, including the complete size of the <a href="..\wiadef\ns-wiadef--wia-barcode-info.md">WIA_BARCODE_INFO</a> list.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Specifies the number of <a href="..\wiadef\ns-wiadef--wia-barcode-info.md">WIA_BARCODE_INFO</a> elements in the Barcodes sequence.</p>
 </dd>
 
-### -field <b>Barcodes</b>
+### -field Barcodes
 
 <dd>
 <p>Placeholder for  a sequence of <b>Count</b> contiguous <a href="..\wiadef\ns-wiadef--wia-barcode-info.md">WIA_BARCODE_INFO</a> structures.</p>

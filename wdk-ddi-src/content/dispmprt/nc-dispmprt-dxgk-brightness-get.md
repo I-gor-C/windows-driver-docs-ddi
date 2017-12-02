@@ -58,13 +58,13 @@ NTSTATUS* DxgkDdiGetBrightness(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>Brightness</i> [in]
+### -param Brightness [in]
 
 <dd>
 <p>A pointer to a variable that receives the brightness level. </p>

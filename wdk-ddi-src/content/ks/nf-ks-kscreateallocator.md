@@ -56,19 +56,19 @@ NTSTATUS KsCreateAllocator(
 ## -parameters
 <dl>
 
-### -param <i>ConnectionHandle</i> [in]
+### -param ConnectionHandle [in]
 
 <dd>
 <p>Specifies the handle to the sink connection on which to create the allocator.</p>
 </dd>
 
-### -param <i>AllocatorFraming</i> [in]
+### -param AllocatorFraming [in]
 
 <dd>
 <p>Specified framing for the allocator.</p>
 </dd>
 
-### -param <i>AllocatorHandle</i> [out]
+### -param AllocatorHandle [out]
 
 <dd>
 <p>Specifies the pointer to a handle to store the allocator handle.</p>

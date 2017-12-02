@@ -58,25 +58,25 @@ typedef struct _FEATURE_DATA_TIMEOUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.</p>
 </dd>
 
-### -field <b>Group3</b>
+### -field Group3
 
 <dd></dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd></dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd></dd>
 
-### -field <b>UnitLength</b>
+### -field UnitLength
 
 <dd></dd>
 </dl>

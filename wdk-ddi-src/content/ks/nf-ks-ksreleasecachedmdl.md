@@ -56,19 +56,19 @@ void _Must_inspect_result_ _IRQL_requires_max_(PASSIVE_LEVEL) KSDDKAPI NTSTATUS 
 ## -parameters
 <dl>
 
-### -param <i>Guid</i> [in]
+### -param Guid [in]
 
 <dd>
 <p>The GUID extracted from the <b>MFSampleExtension_MDLCacheCookie</b> attribute item of the <b>IMFSample</b> passed by the pipeline.</p>
 </dd>
 
-### -param <i>MdlAddr</i> [in]
+### -param MdlAddr [in]
 
 <dd>
 <p>MDL address retrieved in the <a href="..\ks\nf-ks-ksacquirecachedmdl.md">KsAcquireCachedMdl</a> call. This should not be touched after the <b>KsReleaseCachedMdl</b> call.</p>
 </dd>
 
-### -param <i>ReleaseContext</i> [in]
+### -param ReleaseContext [in]
 
 <dd>
 <p>The context passed as an output in the <a href="..\ks\nf-ks-ksacquirecachedmdl.md">KsAcquireCachedMdl</a> call.</p>

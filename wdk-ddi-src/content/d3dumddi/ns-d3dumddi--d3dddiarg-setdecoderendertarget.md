@@ -56,19 +56,19 @@ typedef struct _D3DDDIARG_SETDECODERENDERTARGET {
 ## -struct-fields
 <dl>
 
-### -field <b>hDecode</b>
+### -field hDecode
 
 <dd>
 <p>[in] A handle to the Microsoft DirectX Video Acceleration (DirectX VA) decode device. The user-mode display driver returns this handle in a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createdecodedevice.md">CreateDecodeDevice</a> function.</p>
 </dd>
 
-### -field <b>hRenderTarget</b>
+### -field hRenderTarget
 
 <dd>
 <p>[in] A handle to the decode render target surface.</p>
 </dd>
 
-### -field <b>SubResourceIndex</b>
+### -field SubResourceIndex
 
 <dd>
 <p>[in] An index into the resource for the decode render target surface.</p>

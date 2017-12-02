@@ -55,13 +55,13 @@ typedef struct _PMI_THRESHOLD_CONFIGURATION {
 ## -struct-fields
 <dl>
 
-### -field <b>LowerThreshold</b>
+### -field LowerThreshold
 
 <dd>
 <p>The lower threshold of the power meter, in units of milliwatts (mW).</p>
 </dd>
 
-### -field <b>UpperThreshold</b>
+### -field UpperThreshold
 
 <dd>
 <p>The upper threshold of the power meter, in units of milliwatts (mW).</p>

@@ -60,43 +60,43 @@ typedef enum _DXVADDI_NOMINALRANGE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVADDI_NominalRangeMask"></a><a id="dxvaddi_nominalrangemask"></a><a id="DXVADDI_NOMINALRANGEMASK"></a><b>DXVADDI_NominalRangeMask</b>
+### -field DXVADDI_NominalRangeMask
 
 <dd>
 <p>The nominal range mask. The first 3 (0x07) bits of a DWORD can be used to specify nominal range.</p>
 </dd>
 
-### -field <a id="DXVADDI_NominalRange_Unknown"></a><a id="dxvaddi_nominalrange_unknown"></a><a id="DXVADDI_NOMINALRANGE_UNKNOWN"></a><b>DXVADDI_NominalRange_Unknown</b>
+### -field DXVADDI_NominalRange_Unknown
 
 <dd>
 <p>The nominal range is not specified.</p>
 </dd>
 
-### -field <a id="DXVADDI_NominalRange_Normal"></a><a id="dxvaddi_nominalrange_normal"></a><a id="DXVADDI_NOMINALRANGE_NORMAL"></a><b>DXVADDI_NominalRange_Normal</b>
+### -field DXVADDI_NominalRange_Normal
 
 <dd>
 <p>Normalized chroma [0..1] maps to [0..255] (8bit) or [0..1023] (10 bit).</p>
 </dd>
 
-### -field <a id="DXVADDI_NominalRange_Wide"></a><a id="dxvaddi_nominalrange_wide"></a><a id="DXVADDI_NOMINALRANGE_WIDE"></a><b>DXVADDI_NominalRange_Wide</b>
+### -field DXVADDI_NominalRange_Wide
 
 <dd>
 <p>Normalized chroma [0..1] maps to [16..235] (8bit) or [64..940] (10 bit).</p>
 </dd>
 
-### -field <a id="DXVADDI_NominalRange_0_255"></a><a id="dxvaddi_nominalrange_0_255"></a><a id="DXVADDI_NOMINALRANGE_0_255"></a><b>DXVADDI_NominalRange_0_255</b>
+### -field DXVADDI_NominalRange_0_255
 
 <dd>
 <p>Normalized chroma [0..1] maps explicitly to [0..255] (8bit).</p>
 </dd>
 
-### -field <a id="DXVADDI_NominalRange_16_235"></a><a id="dxvaddi_nominalrange_16_235"></a><a id="DXVADDI_NOMINALRANGE_16_235"></a><b>DXVADDI_NominalRange_16_235</b>
+### -field DXVADDI_NominalRange_16_235
 
 <dd>
 <p>Normalized chroma [0..1] maps explicitly to [16..235] (8bit).</p>
 </dd>
 
-### -field <a id="DXVADDI_NominalRange_48_208"></a><a id="dxvaddi_nominalrange_48_208"></a><a id="DXVADDI_NOMINALRANGE_48_208"></a><b>DXVADDI_NominalRange_48_208</b>
+### -field DXVADDI_NominalRange_48_208
 
 <dd>
 <p>Normalized chroma [0..1] maps explicitly to [48..208] (8bit).</p>

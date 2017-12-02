@@ -58,13 +58,13 @@ _Check_return_ NTSTATUS APIENTRY DxgkDdiCheckMultiPlaneOverlaySupport(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function.</p>
 </dd>
 
-### -param <i>pCheckMultiPlaneOverlaySupport</i> [in, out]
+### -param pCheckMultiPlaneOverlaySupport [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-checkmultiplaneoverlaysupport.md">DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT</a> structure that provides details on hardware support for multiplane overlays.</p>

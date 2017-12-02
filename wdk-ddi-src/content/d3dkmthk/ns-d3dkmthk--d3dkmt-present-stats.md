@@ -58,31 +58,31 @@ typedef struct _D3DKMT_PRESENT_STATS {
 ## -struct-fields
 <dl>
 
-### -field <b>PresentCount</b>
+### -field PresentCount
 
 <dd>
 <p>[out] A UINT value that indicates the number of times that the OpenGL installable client driver (ICD) called the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtpresent.md">D3DKMTPresent</a> function on a rendering device or swap chain. After the maximum value is reached, <b>PresentCount</b> starts over at zero. When a new rendering device is created, <b>PresentCount</b> is initialized to zero. The operating system maintains a present counter for each swap chain that is created.</p>
 </dd>
 
-### -field <b>PresentRefreshCount</b>
+### -field PresentRefreshCount
 
 <dd>
 <p>[out] A UINT value that indicates the number of times the display controller outputs a new video frame, which occurs at the beginning of each vertical retrace period. The operating system maintains a present refresh counter for each video display controller output in the operating system. <b>PresentRefreshCount</b> is initialized to an unspecified value. </p>
 </dd>
 
-### -field <b>SyncRefreshCount</b>
+### -field SyncRefreshCount
 
 <dd>
 <p>[out] A UINT value that indicates the number of the most recent capture of the timing information in the <b>SyncQPCTime</b> and <b>SyncGPUTime</b> members.</p>
 </dd>
 
-### -field <b>SyncQPCTime</b>
+### -field SyncQPCTime
 
 <dd>
 <p>[out] The computer processing unit (CPU) time that the current video frame was output at (that is, the CPU time that the vertical retrace started).</p>
 </dd>
 
-### -field <b>SyncGPUTime</b>
+### -field SyncGPUTime
 
 <dd>
 <p>[out] The graphics processing unit (GPU) time that the current video frame was output at (that is, the GPU time that the vertical retrace started).</p>

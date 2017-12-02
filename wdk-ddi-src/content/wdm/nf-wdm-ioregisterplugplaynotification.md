@@ -61,26 +61,26 @@ NTSTATUS IoRegisterPlugPlayNotification(
 ## -parameters
 <dl>
 
-### -param <i>EventCategory</i> [in]
+### -param EventCategory [in]
 
 <dd>
 <p>The category of PnP event for which the callback routine is being registered. <i>EventCategory</i> must be one of the following: </p>
 <p></p>
 <dl>
 
-### -param <a id="EventCategoryDeviceInterfaceChange"></a><a id="eventcategorydeviceinterfacechange"></a><a id="EVENTCATEGORYDEVICEINTERFACECHANGE"></a><b>EventCategoryDeviceInterfaceChange</b>
+### -param EventCategoryDeviceInterfaceChange
 
 <dd>
 <p>PnP events in this category include the arrival (enabling) of a new instance of a <a href="https://msdn.microsoft.com/C989D2D3-E8DE-4D64-86EE-3D3B3906390D">device interface class</a> (GUID_DEVICE_INTERFACE_ARRIVAL), or the removal (disabling) of an existing device interface instance (GUID_DEVICE_INTERFACE_REMOVAL).</p>
 </dd>
 
-### -param <a id="EventCategoryHardwareProfileChange"></a><a id="eventcategoryhardwareprofilechange"></a><a id="EVENTCATEGORYHARDWAREPROFILECHANGE"></a><b>EventCategoryHardwareProfileChange</b>
+### -param EventCategoryHardwareProfileChange
 
 <dd>
 <p>PnP events in this category include query-change (GUID_HWPROFILE_QUERY_CHANGE), change-complete (GUID_HWPROFILE_CHANGE_COMPLETE), and change-cancel (GUID_HWPROFILE_CHANGE_CANCELLED) of a hardware profile.</p>
 </dd>
 
-### -param <a id="EventCategoryTargetDeviceChange"></a><a id="eventcategorytargetdevicechange"></a><a id="EVENTCATEGORYTARGETDEVICECHANGE"></a><b>EventCategoryTargetDeviceChange</b>
+### -param EventCategoryTargetDeviceChange
 
 <dd>
 <p>PnP events in this category include events related to removing a device: the device's drivers received a query-remove IRP (GUID_TARGET_DEVICE_QUERY_REMOVE), the drivers completed a remove IRP (GUID_TARGET_DEVICE_REMOVE_COMPLETE), or the drivers received a cancel-remove IRP (GUID_TARGET_DEVICE_REMOVE_CANCELLED). This category is also used for custom notification events.</p>
@@ -88,14 +88,14 @@ NTSTATUS IoRegisterPlugPlayNotification(
 </dl>
 </dd>
 
-### -param <i>EventCategoryFlags</i> [in]
+### -param EventCategoryFlags [in]
 
 <dd>
 <p>Flag bits that modify the registration operation. Possible values include:</p>
 <p></p>
 <dl>
 
-### -param <a id="PNPNOTIFY_DEVICE_INTERFACE_INCLUDE_EXISTING_INTERFACES"></a><a id="pnpnotify_device_interface_include_existing_interfaces"></a>PNPNOTIFY_DEVICE_INTERFACE_INCLUDE_EXISTING_INTERFACES
+### -param PNPNOTIFY_DEVICE_INTERFACE_INCLUDE_EXISTING_INTERFACES
 
 <dd>
 <p>Only valid with an <i>EventCategory</i> of <b>EventCategoryDeviceInterfaceChange</b>. If set, the PnP manager calls the driver callback routine for each device interface instance that is currently registered and active and registers the callback routine for future arrivals or removals of device interface instances.</p>
@@ -103,7 +103,7 @@ NTSTATUS IoRegisterPlugPlayNotification(
 </dl>
 </dd>
 
-### -param <i>EventCategoryData</i> [in, optional]
+### -param EventCategoryData [in, optional]
 
 <dd>
 <p>A pointer to further information about the events for which <i>CallbackRoutine</i> is being registered. The information varies for different <i>EventCategory</i> values:</p>
@@ -120,14 +120,14 @@ NTSTATUS IoRegisterPlugPlayNotification(
 </ul>
 </dd>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>A pointer to the caller's driver object.</p>
 <p>To ensure that the driver remains loaded while it is registered for PnP notification, this call increments the reference count on <i>DriverObject</i>. The PnP manager decrements the reference count when this registration is removed.</p>
 </dd>
 
-### -param <i>CallbackRoutine</i> [in]
+### -param CallbackRoutine [in]
 
 <dd>
 <p>A pointer to the PnP notification callback routine to be called when the specified PnP event occurs.</p>
@@ -185,17 +185,17 @@ NTSTATUS IoRegisterPlugPlayNotification(
 </table>
 <p> </p>
 <p>The callback routine's <i>Context</i> parameter contains the context data the driver supplied during registration.</p>
-<p>For information about including a function declaration for the callback routine  that meets the requirements of <a href="NULL">Static Driver Verifier</a> (SDV), see Examples.</p>
+<p>For information about including a function declaration for the callback routine  that meets the requirements of <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), see Examples.</p>
 <p>The PnP manager calls driver callback routines at IRQL = PASSIVE_LEVEL.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer containing context that the PnP manager passes to the callback routine.</p>
 </dd>
 
-### -param <i>NotificationEntry</i> [out]
+### -param NotificationEntry [out]
 
 <dd>
 <p>A pointer to an opaque value returned by this call that identifies the registration. Pass this value to the <a href="..\wdm\nf-wdm-iounregisterplugplaynotificationex.md">IoUnregisterPlugPlayNotificationEx</a> routine to remove the registration. (In versions of Windows before Windows 7, call the <a href="..\wdm\nf-wdm-iounregisterplugplaynotification.md">IoUnregisterPlugPlayNotification</a> routine instead of <b>IoUnregisterPlugPlayNotificationEx</b>.)</p>
@@ -218,7 +218,7 @@ NTSTATUS IoRegisterPlugPlayNotification(
 
 <p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565480">Using PnP Notification</a>.</p>
 
-<p>To define a PnP notification callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define a PnP notification callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define a PnP notification callback routine that is named <code>MyCallbackRoutine</code>, use the DRIVER_NOTIFICATION_CALLBACK_ROUTINE type as shown in this code example:</p>
 

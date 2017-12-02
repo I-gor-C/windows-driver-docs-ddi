@@ -56,19 +56,19 @@ VOID AtaPortWriteRegisterBufferUshort(
 ## -parameters
 <dl>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>Contains the destination register address where the transfer should begin. This address value must be within the range of mapped I/O space addresses that are obtained by a call to <a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to the source buffer.</p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>Specifies the number of USHORT values to write to the HBA.</p>

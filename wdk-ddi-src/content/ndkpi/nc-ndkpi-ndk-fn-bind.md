@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_bind.htm
 old-project: netvista
 ms.assetid: F363C538-A5D7-4A08-B7CD-CA7D7346AC10
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,44 +63,44 @@ NTSTATUS NdkBind(
 ## -parameters
 <dl>
 
-### -param <i>pNdkQp</i> [in]
+### -param pNdkQp [in]
 
 <dd>
 <p>A pointer to an NDK queue pair (QP) object (<a href="..\ndkpi\ns-ndkpi--ndk-qp.md">NDK_QP</a>).</p>
 </dd>
 
-### -param <i>RequestContext</i> [in, optional]
+### -param RequestContext [in, optional]
 
 <dd>
 <p>A context value to return in the <b>RequestContext</b> member of the <a href="..\ndkpi\ns-ndkpi--ndk-result.md">NDK_RESULT</a> structure for this request.</p>
 </dd>
 
-### -param <i>pMr</i> [in]
+### -param pMr [in]
 
 <dd>
 <p>A pointer to an NDK memory region (MR) object (<a href="..\ndkpi\ns-ndkpi--ndk-mr.md">NDK_MR</a>).</p>
 </dd>
 
-### -param <i>pMw</i> [in]
+### -param pMw [in]
 
 <dd>
 <p>A pointer to an NDK memory window (MW) object (<a href="..\ndkpi\ns-ndkpi--ndk-mw.md">NDK_MW</a>).</p>
 </dd>
 
-### -param <i>VirtualAddress</i> [in]
+### -param VirtualAddress [in]
 
 <dd>
 <p>A virtual address that must be greater than or equal to the virtual address of the MDL for the MR and less than the virtual address of the MDL for the MR plus the value in the <i>Length</i> parameter.</p>
 <p>Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554539">MmGetMdlVirtualAddress</a> macro to obtain the virtual address of the MDL for the MR.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length of the MR to bind to the MW. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A bitwise OR of flags which specifies the operations that are allowed. The following flags are supported:</p>
@@ -112,7 +112,7 @@ NTSTATUS NdkBind(
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_SILENT_SUCCESS"></a><a id="ndk_op_flag_silent_success"></a><dl>
 
-### -param <b>NDK_OP_FLAG_SILENT_SUCCESS</b>
+### -param NDK_OP_FLAG_SILENT_SUCCESS
 
 
 ### -param 0x00000001
@@ -126,7 +126,7 @@ NTSTATUS NdkBind(
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_READ_FENCE"></a><a id="ndk_op_flag_read_fence"></a><dl>
 
-### -param <b>NDK_OP_FLAG_READ_FENCE</b>
+### -param NDK_OP_FLAG_READ_FENCE
 
 
 ### -param 0x00000002
@@ -140,7 +140,7 @@ NTSTATUS NdkBind(
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_ALLOW_REMOTE_READ"></a><a id="ndk_op_flag_allow_remote_read"></a><dl>
 
-### -param <b>NDK_OP_FLAG_ALLOW_REMOTE_READ</b>
+### -param NDK_OP_FLAG_ALLOW_REMOTE_READ
 
 
 ### -param 0x00000008
@@ -154,7 +154,7 @@ NTSTATUS NdkBind(
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_ALLOW_REMOTE_WRITE"></a><a id="ndk_op_flag_allow_remote_write"></a><dl>
 
-### -param <b>NDK_OP_FLAG_ALLOW_REMOTE_WRITE</b>
+### -param NDK_OP_FLAG_ALLOW_REMOTE_WRITE
 
 
 ### -param 0x00000030
@@ -168,7 +168,7 @@ NTSTATUS NdkBind(
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_DEFER"></a><a id="ndk_op_flag_defer"></a><dl>
 
-### -param <b>NDK_OP_FLAG_DEFER</b>
+### -param NDK_OP_FLAG_DEFER
 
 
 ### -param 0x00000200
@@ -176,7 +176,7 @@ NTSTATUS NdkBind(
 </dl>
 </td>
 <td width="60%">
-<p>Indicates to the NDK provider that it may defer indicating the request to hardware for processing. For more information about this flag, see <a href="NULL">NDKPI Deferred Processing Scheme</a>.</p>
+<p>Indicates to the NDK provider that it may defer indicating the request to hardware for processing. For more information about this flag, see <a href="netvista.ndkpi_deferred_processing_scheme">NDKPI Deferred Processing Scheme</a>.</p>
 <p><b>Note</b>  This flag is supported only in NDKPI 1.2 (Windows Server 2012 R2) and later.</p>
 </td>
 </tr>
@@ -276,12 +276,12 @@ NTSTATUS NdkBind(
 <a href="..\ndkpi\ns-ndkpi--ndk-result.md">NDK_RESULT</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Deferred Processing Scheme</a>
+<a href="netvista.ndkpi_deferred_processing_scheme">NDKPI Deferred Processing Scheme</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Work Request Posting Requirements</a>
+<a href="netvista.ndkpi_work_request_posting_requirements">NDKPI Work Request Posting Requirements</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_BIND callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_BIND callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

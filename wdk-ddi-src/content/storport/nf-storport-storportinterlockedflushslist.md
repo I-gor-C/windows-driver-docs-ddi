@@ -57,19 +57,19 @@ ULONG StorPortInterlockedFlushSList(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>SListHead</i> [in, out]
+### -param SListHead [in, out]
 
 <dd>
 <p>A pointer to an <b>STOR_SLIST_HEADER</b> structure that represents the head of a singly linked list. This structure is considered opaque and is for use by the Storport driver only.</p>
 </dd>
 
-### -param <i>Result</i> [out]
+### -param Result [out]
 
 <dd>
 <p>A pointer to a list entry pointer. The value returned is a pointer to  the items removed from the list. If the list is empty, then <b>NULL</b> is returned in value pointed to by <i>Result</i>.</p>

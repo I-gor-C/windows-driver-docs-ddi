@@ -55,13 +55,13 @@ typedef struct tagACT_AUTHZ_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>ACT</b>
+### -field ACT
 
 <dd>
 <p>This member is ignored.</p>
 </dd>
 
-### -field <b>fAuthorized</b>
+### -field fAuthorized
 
 <dd>
 <p>This member may be either <b>TRUE</b> (authorized) or <b>FALSE</b> (not authorized).</p>

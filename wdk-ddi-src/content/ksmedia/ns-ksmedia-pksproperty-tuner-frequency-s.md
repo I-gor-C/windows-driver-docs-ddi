@@ -61,49 +61,49 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>Frequency</b>
+### -field Frequency
 
 <dd>
 <p>Specifies the frequency of the tuner. If the request is a Get request, the minidriver returns the current frequency of the tuner. If the request is a Set request, the minidriver should set the frequency of the tuner to the specified value. This value is specified in hertz (Hz).</p>
 </dd>
 
-### -field <b>LastFrequency</b>
+### -field LastFrequency
 
 <dd>
 <p>Specifies the last frequency tuned.</p>
 </dd>
 
-### -field <b>TuningFlags</b>
+### -field TuningFlags
 
 <dd>
 <p>Specifies tuning flags that describe the granularity of a tuning operation. If the request is a Get request, the minidriver returns the current tuning flags. If the request is a Set request, the minidriver should use the specified tuning method. This member must be set to one of the values from the <a href="..\ksmedia\ne-ksmedia-ks-tuner-tuning-flags.md">KS_TUNER_TUNING_FLAGS</a> enumeration.</p>
 </dd>
 
-### -field <b>VideoSubChannel</b>
+### -field VideoSubChannel
 
 <dd>
 <p>Specifies the video subchannel of a digital television source. If the request is a Get request, the minidriver should return the video subchannel for the digital television source to the specified value. If the request is a Set request, the minidriver should set the video subchannel for the digital television source. This member is only used by devices that support the DSS tuner mode (KSPROPERTY_TUNER_MODE_DSS).</p>
 </dd>
 
-### -field <b>AudioSubChannel</b>
+### -field AudioSubChannel
 
 <dd>
 <p>Specifies the audio subchannel of a digital television source. If the request is a Get request, the minidriver should return the audio subchannel for the digital television source. If the request is a Set request, the minidriver should set the audio subchannel for the digital television source. This member is only used by devices that support the DSS tuner mode (KSPROPERTY_TUNER_MODE_DSS).</p>
 </dd>
 
-### -field <b>Channel</b>
+### -field Channel
 
 <dd>
 <p>Specifies the video subchannel of a digital television source. If the request is a Get request, the minidriver should return the video subchannel for the digital television source to the specified value. If the request is a Set request, the minidriver should set the video subchannel for the digital television source. This member is only used by devices that support the DSS tuner mode (KSPROPERTY_TUNER_MODE_DSS).</p>
 </dd>
 
-### -field <b>Country</b>
+### -field Country
 
 <dd>
 <p>Specifies the current country code for the tuning operation. Country codes follow the Telephony API (TAPI) region code values that correspond to the international long distance dialing codes. </p>

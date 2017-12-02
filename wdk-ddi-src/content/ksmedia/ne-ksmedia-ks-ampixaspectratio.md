@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_PixAspectRatio_NTSC4x3"></a><a id="ks_pixaspectratio_ntsc4x3"></a><a id="KS_PIXASPECTRATIO_NTSC4X3"></a><b>KS_PixAspectRatio_NTSC4x3</b>
+### -field KS_PixAspectRatio_NTSC4x3
 
 <dd>
 <p>Specifies a 4 × 3 NTSC pixel aspect ratio.</p>
 </dd>
 
-### -field <a id="KS_PixAspectRatio_NTSC16x9"></a><a id="ks_pixaspectratio_ntsc16x9"></a><a id="KS_PIXASPECTRATIO_NTSC16X9"></a><b>KS_PixAspectRatio_NTSC16x9</b>
+### -field KS_PixAspectRatio_NTSC16x9
 
 <dd>
 <p>Specifies a 16 × 9 NTSC pixel aspect ratio.</p>
 </dd>
 
-### -field <a id="KS_PixAspectRatio_PAL4x3"></a><a id="ks_pixaspectratio_pal4x3"></a><a id="KS_PIXASPECTRATIO_PAL4X3"></a><b>KS_PixAspectRatio_PAL4x3</b>
+### -field KS_PixAspectRatio_PAL4x3
 
 <dd>
 <p>Specifies a 4 × 3 PAL pixel aspect ratio.</p>
 </dd>
 
-### -field <a id="KS_PixAspectRatio_PAL16x9"></a><a id="ks_pixaspectratio_pal16x9"></a><a id="KS_PIXASPECTRATIO_PAL16X9"></a><b>KS_PixAspectRatio_PAL16x9</b>
+### -field KS_PixAspectRatio_PAL16x9
 
 <dd>
 <p>Specifies a 16 × 9 PAL pixel aspect ratio.</p>

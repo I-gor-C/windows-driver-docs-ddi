@@ -59,22 +59,22 @@ typedef struct _UCX_USBDEVICE_CHARACTERISTIC {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of this structure.</p>
 </dd>
 
-### -field <b>CharacteristicType</b>
+### -field CharacteristicType
 
 <dd>
-<p>A <a href="buses.ucx_usbdevice_characteristic_type">UCX_USBDEVICE_CHARACTERISTIC_TYPE</a>-type value that indicates the type of device characteristic.</p>
+<p>A <a href="..\ucxusbdevice\ne-ucxusbdevice--ucx-usbdevice-characteristic-type.md">UCX_USBDEVICE_CHARACTERISTIC_TYPE</a>-type value that indicates the type of device characteristic.</p>
 </dd>
 
-### -field <b>PathDelay</b>
+### -field PathDelay
 
 <dd>
-<p>A <a href="buses.ucx_usbdevice_characteristic_path_delay">UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY</a>-typed value that indicates the path delay values for the endpoint.</p>
+<p>A <a href="..\ucxusbdevice\ns-ucxusbdevice--ucx-usbdevice-characteristic-path-delay.md">UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY</a>-typed value that indicates the path delay values for the endpoint.</p>
 </dd>
 </dl>
 
@@ -114,7 +114,7 @@ typedef struct _UCX_USBDEVICE_CHARACTERISTIC {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_ucx_usbdevice_get_characteristic">EVT_UCX_USBDEVICE_GET_CHARACTERISTIC</a>
+<a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-get-characteristic.md">EVT_UCX_USBDEVICE_GET_CHARACTERISTIC</a>
 </dt>
 </dl>
 <p> </p>

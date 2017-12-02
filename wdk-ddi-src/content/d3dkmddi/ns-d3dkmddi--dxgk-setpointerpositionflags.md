@@ -61,14 +61,14 @@ typedef struct _DXGK_SETPOINTERPOSITIONFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Visible</b>
+### -field Visible
 
 <dd>
 <p>[in] A <b>UINT</b> value that specifies whether the mouse pointer is visible. If this member is set, the mouse pointer is visible; if this member is not set, the mouse pointer is invisible. The driver should ignore the values in the <b>X</b> and <b>Y</b> members of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-setpointerposition.md">DXGKARG_SETPOINTERPOSITION</a> structure if <b>Visible</b> is not set (that is, <b>Visible</b> is set to 0). </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Procedural</b>
+### -field Procedural
 
 <dd>
 <p>[in] A <b>UINT</b> value that specifies whether the mouse pointer position was set by an application with the <a href="menurc.setcursorpos">SetCursorPos</a> or similar cursor function instead of coming from user device input.</p>
@@ -76,13 +76,13 @@ typedef struct _DXGK_SETPOINTERPOSITIONFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting remaining 30 bits (0xFFFFFFFC) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] A member in the union that <b>DXGK_SETPOINTERPOSITIONFLAGS</b> contains that can hold one 32-bit value that indicates information about a mouse pointer.</p>

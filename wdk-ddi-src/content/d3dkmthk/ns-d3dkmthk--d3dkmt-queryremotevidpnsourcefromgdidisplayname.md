@@ -55,13 +55,13 @@ typedef struct _D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceName</b>
+### -field DeviceName
 
 <dd>
 <p>[in] The name of the GDI device on which to open an adapter instance.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[out] The zero-based video present network (VidPN) source identifier for the display device that is represented by the <b>DeviceName</b> member.</p>

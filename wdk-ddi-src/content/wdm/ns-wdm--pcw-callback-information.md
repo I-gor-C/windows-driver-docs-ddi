@@ -58,25 +58,25 @@ typedef union _PCW_CALLBACK_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>AddCounter</b>
+### -field AddCounter
 
 <dd>
 <p>The PCW_COUNTER_INFORMATION structure that identifies the counter being added. </p>
 </dd>
 
-### -field <b>RemoveCounter</b>
+### -field RemoveCounter
 
 <dd>
 <p>The PCW_COUNTER_INFORMATION structure that identifies the counter being removed. </p>
 </dd>
 
-### -field <b>EnumerateInstances</b>
+### -field EnumerateInstances
 
 <dd>
 <p>The PCW_MASK_INFORMATION structure that identifies the instances of the counter set.</p>
 </dd>
 
-### -field <b>CollectData</b>
+### -field CollectData
 
 <dd>
 <p>The PCW_MASK_INFORMATION structure that identifies the instance of the counter set and its buffer.</p>

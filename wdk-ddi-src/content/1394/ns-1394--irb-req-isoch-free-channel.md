@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_free_channel.htm
 old-project: IEEE
 ms.assetid: 949D165B-1F42-40EA-B050-38847E14B968
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_ISOCH_FREE_CHANNEL, IRB_REQ_ISOCH_FREE_CHANNEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,7 +53,7 @@ typedef struct _IRB_REQ_ISOCH_FREE_CHANNEL {
 ## -struct-fields
 <dl>
 
-### -field <b>nChannel</b>
+### -field nChannel
 
 <dd>
 <p>Specifies which allocated channel to release.</p>
@@ -61,7 +61,7 @@ typedef struct _IRB_REQ_ISOCH_FREE_CHANNEL {
 </dl>
 
 ## -remarks
-
+<p>If successful, the bus driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS, and the isochronous channel is returned to the pool of available channels.</p>
 
 ## -requirements
 <table>

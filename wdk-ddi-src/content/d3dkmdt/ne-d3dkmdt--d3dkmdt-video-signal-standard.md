@@ -86,199 +86,199 @@ typedef enum _D3DKMDT_VIDEO_SIGNAL_STANDARD {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_VSS_UNINITIALIZED"></a><a id="d3dkmdt_vss_uninitialized"></a><b>D3DKMDT_VSS_UNINITIALIZED</b>
+### -field D3DKMDT_VSS_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_VIDEO_SIGNAL_STANDARD has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_VESA_DMT"></a><a id="d3dkmdt_vss_vesa_dmt"></a><b>D3DKMDT_VSS_VESA_DMT</b>
+### -field D3DKMDT_VSS_VESA_DMT
 
 <dd>
 <p>Represents the Video Electronics Standards Association (VESA) Display Monitor Timing (DMT) standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_VESA_GTF"></a><a id="d3dkmdt_vss_vesa_gtf"></a><b>D3DKMDT_VSS_VESA_GTF</b>
+### -field D3DKMDT_VSS_VESA_GTF
 
 <dd>
 <p>Represents the VESA Generalized Timing Formula (GTF) standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_VESA_CVT"></a><a id="d3dkmdt_vss_vesa_cvt"></a><b>D3DKMDT_VSS_VESA_CVT</b>
+### -field D3DKMDT_VSS_VESA_CVT
 
 <dd>
 <p>Represents the VESA Coordinated Video Timing (CVT) standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_IBM"></a><a id="d3dkmdt_vss_ibm"></a><b>D3DKMDT_VSS_IBM</b>
+### -field D3DKMDT_VSS_IBM
 
 <dd>
 <p>Represents the IBM standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_APPLE"></a><a id="d3dkmdt_vss_apple"></a><b>D3DKMDT_VSS_APPLE</b>
+### -field D3DKMDT_VSS_APPLE
 
 <dd>
 <p>Represents the Apple standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_NTSC_M"></a><a id="d3dkmdt_vss_ntsc_m"></a><b>D3DKMDT_VSS_NTSC_M</b>
+### -field D3DKMDT_VSS_NTSC_M
 
 <dd>
 <p>Represents the National Television Standards Committee (NTSC) standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_NTSC_J"></a><a id="d3dkmdt_vss_ntsc_j"></a><b>D3DKMDT_VSS_NTSC_J</b>
+### -field D3DKMDT_VSS_NTSC_J
 
 <dd>
 <p>Represents the NTSC standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_NTSC_443"></a><a id="d3dkmdt_vss_ntsc_443"></a><b>D3DKMDT_VSS_NTSC_443</b>
+### -field D3DKMDT_VSS_NTSC_443
 
 <dd>
 <p>Represents the NTSC standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_PAL_B"></a><a id="d3dkmdt_vss_pal_b"></a><b>D3DKMDT_VSS_PAL_B</b>
+### -field D3DKMDT_VSS_PAL_B
 
 <dd>
 <p>Represents the Phase Alteration Line (PAL) standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_PAL_B1"></a><a id="d3dkmdt_vss_pal_b1"></a><b>D3DKMDT_VSS_PAL_B1</b>
+### -field D3DKMDT_VSS_PAL_B1
 
 <dd>
 <p>Represents the PAL standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_PAL_G"></a><a id="d3dkmdt_vss_pal_g"></a><b>D3DKMDT_VSS_PAL_G</b>
+### -field D3DKMDT_VSS_PAL_G
 
 <dd>
 <p>Represents the PAL standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_PAL_H"></a><a id="d3dkmdt_vss_pal_h"></a><b>D3DKMDT_VSS_PAL_H</b>
+### -field D3DKMDT_VSS_PAL_H
 
 <dd>
 <p>Represents the PAL standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_PAL_I"></a><a id="d3dkmdt_vss_pal_i"></a><b>D3DKMDT_VSS_PAL_I</b>
+### -field D3DKMDT_VSS_PAL_I
 
 <dd>
 <p>Represents the PAL standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_PAL_D"></a><a id="d3dkmdt_vss_pal_d"></a><b>D3DKMDT_VSS_PAL_D</b>
+### -field D3DKMDT_VSS_PAL_D
 
 <dd>
 <p>Represents the PAL standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_PAL_N"></a><a id="d3dkmdt_vss_pal_n"></a><b>D3DKMDT_VSS_PAL_N</b>
+### -field D3DKMDT_VSS_PAL_N
 
 <dd>
 <p>Represents the PAL standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_PAL_NC"></a><a id="d3dkmdt_vss_pal_nc"></a><b>D3DKMDT_VSS_PAL_NC</b>
+### -field D3DKMDT_VSS_PAL_NC
 
 <dd>
 <p>Represents the PAL standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_SECAM_B"></a><a id="d3dkmdt_vss_secam_b"></a><b>D3DKMDT_VSS_SECAM_B</b>
+### -field D3DKMDT_VSS_SECAM_B
 
 <dd>
 <p>Represents the Systeme Electronic Pour Couleur Avec Memoire (SECAM) standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_SECAM_D"></a><a id="d3dkmdt_vss_secam_d"></a><b>D3DKMDT_VSS_SECAM_D</b>
+### -field D3DKMDT_VSS_SECAM_D
 
 <dd>
 <p>Represents the SECAM standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_SECAM_G"></a><a id="d3dkmdt_vss_secam_g"></a><b>D3DKMDT_VSS_SECAM_G</b>
+### -field D3DKMDT_VSS_SECAM_G
 
 <dd>
 <p>Represents the SECAM standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_SECAM_H"></a><a id="d3dkmdt_vss_secam_h"></a><b>D3DKMDT_VSS_SECAM_H</b>
+### -field D3DKMDT_VSS_SECAM_H
 
 <dd>
 <p>Represents the SECAM standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_SECAM_K"></a><a id="d3dkmdt_vss_secam_k"></a><b>D3DKMDT_VSS_SECAM_K</b>
+### -field D3DKMDT_VSS_SECAM_K
 
 <dd>
 <p>Represents the SECAM standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_SECAM_K1"></a><a id="d3dkmdt_vss_secam_k1"></a><b>D3DKMDT_VSS_SECAM_K1</b>
+### -field D3DKMDT_VSS_SECAM_K1
 
 <dd>
 <p>Represents the SECAM standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_SECAM_L"></a><a id="d3dkmdt_vss_secam_l"></a><b>D3DKMDT_VSS_SECAM_L</b>
+### -field D3DKMDT_VSS_SECAM_L
 
 <dd>
 <p>Represents the SECAM standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_SECAM_L1"></a><a id="d3dkmdt_vss_secam_l1"></a><b>D3DKMDT_VSS_SECAM_L1</b>
+### -field D3DKMDT_VSS_SECAM_L1
 
 <dd>
 <p>Represents the SECAM standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_EIA_861"></a><a id="d3dkmdt_vss_eia_861"></a><b>D3DKMDT_VSS_EIA_861</b>
+### -field D3DKMDT_VSS_EIA_861
 
 <dd>
 <p>Represents the Electronics Industries Association (EIA) standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_EIA_861A"></a><a id="d3dkmdt_vss_eia_861a"></a><b>D3DKMDT_VSS_EIA_861A</b>
+### -field D3DKMDT_VSS_EIA_861A
 
 <dd>
 <p>Represents the EIA standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_EIA_861B"></a><a id="d3dkmdt_vss_eia_861b"></a><b>D3DKMDT_VSS_EIA_861B</b>
+### -field D3DKMDT_VSS_EIA_861B
 
 <dd>
 <p>Represents the EIA standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_PAL_K"></a><a id="d3dkmdt_vss_pal_k"></a><b>D3DKMDT_VSS_PAL_K</b>
+### -field D3DKMDT_VSS_PAL_K
 
 <dd>
 <p>Represents the PAL standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_PAL_K1"></a><a id="d3dkmdt_vss_pal_k1"></a><b>D3DKMDT_VSS_PAL_K1</b>
+### -field D3DKMDT_VSS_PAL_K1
 
 <dd>
 <p>Represents the PAL standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_PAL_L"></a><a id="d3dkmdt_vss_pal_l"></a><b>D3DKMDT_VSS_PAL_L</b>
+### -field D3DKMDT_VSS_PAL_L
 
 <dd>
 <p>Represents the PAL standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_PAL_M"></a><a id="d3dkmdt_vss_pal_m"></a><b>D3DKMDT_VSS_PAL_M</b>
+### -field D3DKMDT_VSS_PAL_M
 
 <dd>
 <p>Represents the PAL standard.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VSS_OTHER"></a><a id="d3dkmdt_vss_other"></a><b>D3DKMDT_VSS_OTHER</b>
+### -field D3DKMDT_VSS_OTHER
 
 <dd>
 <p>Represents any video standard other than those represented by the previous constants in this enumeration.</p>

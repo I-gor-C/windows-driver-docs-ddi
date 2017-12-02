@@ -7,7 +7,7 @@ old-location: netvista\rilremotepartyinfovalueparam_2.htm
 old-project: netvista
 ms.assetid: eeea39eb-898a-47fe-befe-39c95dd1fc90
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef enum _RILREMOTEPARTYINFOVALUEPARAM {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_RPI_ADDRESS"></a><a id="ril_param_rpi_address"></a><b>RIL_PARAM_RPI_ADDRESS</b>
+### -field RIL_PARAM_RPI_ADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_RPI_SUBADDRESS"></a><a id="ril_param_rpi_subaddress"></a><b>RIL_PARAM_RPI_SUBADDRESS</b>
+### -field RIL_PARAM_RPI_SUBADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_RPI_DESCRIPTION"></a><a id="ril_param_rpi_description"></a><b>RIL_PARAM_RPI_DESCRIPTION</b>
+### -field RIL_PARAM_RPI_DESCRIPTION
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_RPI_NUM_PRES_IND"></a><a id="ril_param_rpi_num_pres_ind"></a><b>RIL_PARAM_RPI_NUM_PRES_IND</b>
+### -field RIL_PARAM_RPI_NUM_PRES_IND
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_RPI_NAME_PRES_IND"></a><a id="ril_param_rpi_name_pres_ind"></a><b>RIL_PARAM_RPI_NAME_PRES_IND</b>
+### -field RIL_PARAM_RPI_NAME_PRES_IND
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_RPI_ID"></a><a id="ril_param_rpi_id"></a><b>RIL_PARAM_RPI_ID</b>
+### -field RIL_PARAM_RPI_ID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_RPI_ALL"></a><a id="ril_param_rpi_all"></a><b>RIL_PARAM_RPI_ALL</b>
+### -field RIL_PARAM_RPI_ALL
 
 <dd></dd>
 </dl>

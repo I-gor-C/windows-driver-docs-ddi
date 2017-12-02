@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmateleservice_2.htm
 old-project: netvista
 ms.assetid: 35d3e419-ad21-403d-8590-f49cf6fd3b25
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,63 +69,63 @@ typedef enum _RILMSGCDMATELESERVICE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGTELESERVICE_MESSAGING_OLD"></a><a id="ril_msgteleservice_messaging_old"></a><b>RIL_MSGTELESERVICE_MESSAGING_OLD</b>
+### -field RIL_MSGTELESERVICE_MESSAGING_OLD
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTELESERVICE_VOICEMAIL_OLD"></a><a id="ril_msgteleservice_voicemail_old"></a><b>RIL_MSGTELESERVICE_VOICEMAIL_OLD</b>
+### -field RIL_MSGTELESERVICE_VOICEMAIL_OLD
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTELESERVICE_WAP_OLD"></a><a id="ril_msgteleservice_wap_old"></a><b>RIL_MSGTELESERVICE_WAP_OLD</b>
+### -field RIL_MSGTELESERVICE_WAP_OLD
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTELESERVICE_BROADCAST_OLD"></a><a id="ril_msgteleservice_broadcast_old"></a><b>RIL_MSGTELESERVICE_BROADCAST_OLD</b>
+### -field RIL_MSGTELESERVICE_BROADCAST_OLD
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTELESERVICE_SELFREG_OLD"></a><a id="ril_msgteleservice_selfreg_old"></a><b>RIL_MSGTELESERVICE_SELFREG_OLD</b>
+### -field RIL_MSGTELESERVICE_SELFREG_OLD
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTELESERVICE_PAGING"></a><a id="ril_msgteleservice_paging"></a><b>RIL_MSGTELESERVICE_PAGING</b>
+### -field RIL_MSGTELESERVICE_PAGING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTELESERVICE_MESSAGING"></a><a id="ril_msgteleservice_messaging"></a><b>RIL_MSGTELESERVICE_MESSAGING</b>
+### -field RIL_MSGTELESERVICE_MESSAGING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTELESERVICE_WEMT"></a><a id="ril_msgteleservice_wemt"></a><b>RIL_MSGTELESERVICE_WEMT</b>
+### -field RIL_MSGTELESERVICE_WEMT
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTELESERVICE_VOICEMAIL_VMN_95"></a><a id="ril_msgteleservice_voicemail_vmn_95"></a><b>RIL_MSGTELESERVICE_VOICEMAIL_VMN_95</b>
+### -field RIL_MSGTELESERVICE_VOICEMAIL_VMN_95
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTELESERVICE_VOICEMAIL_MWI"></a><a id="ril_msgteleservice_voicemail_mwi"></a><b>RIL_MSGTELESERVICE_VOICEMAIL_MWI</b>
+### -field RIL_MSGTELESERVICE_VOICEMAIL_MWI
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTELESERVICE_WAP"></a><a id="ril_msgteleservice_wap"></a><b>RIL_MSGTELESERVICE_WAP</b>
+### -field RIL_MSGTELESERVICE_WAP
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTELESERVICE_WAP_CT_MMS"></a><a id="ril_msgteleservice_wap_ct_mms"></a><b>RIL_MSGTELESERVICE_WAP_CT_MMS</b>
+### -field RIL_MSGTELESERVICE_WAP_CT_MMS
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTELESERVICE_WAP_CT_OMA"></a><a id="ril_msgteleservice_wap_ct_oma"></a><b>RIL_MSGTELESERVICE_WAP_CT_OMA</b>
+### -field RIL_MSGTELESERVICE_WAP_CT_OMA
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTELESERVICE_BROADCAST"></a><a id="ril_msgteleservice_broadcast"></a><b>RIL_MSGTELESERVICE_BROADCAST</b>
+### -field RIL_MSGTELESERVICE_BROADCAST
 
 <dd></dd>
 
-### -field <a id="RIL_MSGTELESERVICE_SELFREG"></a><a id="ril_msgteleservice_selfreg"></a><b>RIL_MSGTELESERVICE_SELFREG</b>
+### -field RIL_MSGTELESERVICE_SELFREG
 
 <dd></dd>
 </dl>

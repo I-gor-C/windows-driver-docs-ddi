@@ -7,7 +7,7 @@ old-location: netvista\rilresetmodemimsenablementstate.htm
 old-project: netvista
 ms.assetid: 50fae043-3575-4eff-869a-fae94168a4a1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef enum _RILRESETMODEMIMSENABLEMENTSTATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_RESETMODEM_ENABLED"></a><a id="ril_resetmodem_enabled"></a><b>RIL_RESETMODEM_ENABLED</b>
+### -field RIL_RESETMODEM_ENABLED
 
 <dd></dd>
 </dl>

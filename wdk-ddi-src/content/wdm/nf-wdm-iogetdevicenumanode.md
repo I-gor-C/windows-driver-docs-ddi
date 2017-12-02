@@ -56,13 +56,13 @@ NTSTATUS IoGetDeviceNumaNode(
 ## -parameters
 <dl>
 
-### -param <i>Pdo</i> [in]
+### -param Pdo [in]
 
 <dd>
 <p>A pointer to a physical device object (PDO). This parameter points to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that represents a physical device. </p>
 </dd>
 
-### -param <i>NodeNumber</i> [out]
+### -param NodeNumber [out]
 
 <dd>
 <p>A pointer to a location into which the routine writes the node number, if the node number is known. </p>
@@ -83,7 +83,7 @@ NTSTATUS IoGetDeviceNumaNode(
 
 <p>A device (for example, a network controller or storage controller) that is connected to a particular node can access the memory in this node faster than it can access the memory in other nodes. The <i>Pdo</i> parameter points to a PDO that represents the bus connection between the device and the node.</p>
 
-<p>If a NUMA multiprocessor system contains <i>n</i> nodes, the nodes are numbered from 0 to <i>n</i>-1. To obtain the highest node number, call the <a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine.</p>
+<p>If a NUMA multiprocessor system contains <i>n</i> nodes, the nodes are numbered from 0 to <i>n</i>-1. To obtain the highest node number, call the <a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine.</p>
 
 <p>After the system is initialized, the node count remains fixed while the system continues to run. This count might include memory-only nodes, which are nodes that contain memory but no active logical processors. A node in which all the logical processors are inactive is effectively a memory-only node until the first processor in the node starts to run. Do not assume that the node that a device is connected to contains active processors.</p>
 
@@ -163,7 +163,7 @@ NTSTATUS IoGetDeviceNumaNode(
 <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
+<a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
 </dt>
 </dl>
 <p> </p>

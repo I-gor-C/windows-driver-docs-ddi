@@ -54,7 +54,7 @@ HRESULT KsGetPhysicalTime(
 ## -parameters
 <dl>
 
-### -param <i>Time</i> [out]
+### -param Time [out]
 
 <dd>
 <p>Pointer to a variable that receives the current physical time.</p>

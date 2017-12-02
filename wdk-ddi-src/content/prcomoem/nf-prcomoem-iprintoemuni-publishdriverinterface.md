@@ -55,10 +55,10 @@ HRESULT PublishDriverInterface(
 ## -parameters
 <dl>
 
-### -param <i>pIUnknown</i> 
+### -param pIUnknown 
 
 <dd>
-<p>Caller-supplied pointer to the <b>IUnknown</b> interface of the driver's <a href="NULL">IPrintOemDriverUni COM Interface</a> or <a href="print.iprintcorehelperuni_interface">IPrintCoreHelperUni interface</a>.</p>
+<p>Caller-supplied pointer to the <b>IUnknown</b> interface of the driver's <a href="https://msdn.microsoft.com/84b3f43c-039a-4e9d-b596-41c08f1e0284">IPrintOemDriverUni COM Interface</a> or <a href="print.iprintcorehelperuni_interface">IPrintCoreHelperUni interface</a>.</p>
 </dd>
 </dl>
 
@@ -76,7 +76,7 @@ HRESULT PublishDriverInterface(
 
 <p>The method should return information on its supported Unidrv interfaces as follows:</p>
 
-<p>The Unidrv driver first calls the <code>IPrintOemUI::PublishDriverInterface</code> method with the <i>pIUnknown</i> pointer set to the <b>IPrintOemDriverUni</b> instance's <b>IUnknown</b> interface. If the rendering plug-in will be calling <b>IPrintOemDriverUni</b> interface methods, it must use the received <b>IUnknown</b> interface pointer to call <b>IUnknown::QueryInterface </b>(described in the Microsoft Windows SDK documentation) in order to obtain a pointer to the driver's supported version of the <b>IPrintOemDriverUni</b> interface. For more information, see <a href="NULL">Interface Identifiers for Printer Drivers</a>.</p>
+<p>The Unidrv driver first calls the <code>IPrintOemUI::PublishDriverInterface</code> method with the <i>pIUnknown</i> pointer set to the <b>IPrintOemDriverUni</b> instance's <b>IUnknown</b> interface. If the rendering plug-in will be calling <b>IPrintOemDriverUni</b> interface methods, it must use the received <b>IUnknown</b> interface pointer to call <b>IUnknown::QueryInterface </b>(described in the Microsoft Windows SDK documentation) in order to obtain a pointer to the driver's supported version of the <b>IPrintOemDriverUni</b> interface. For more information, see <a href="https://msdn.microsoft.com/8182cba5-4461-4ca0-8b01-342519609b1f">Interface Identifiers for Printer Drivers</a>.</p>
 
 <p>If the plug-in's <a href="print.iprintoemuni_getinfo">IPrintOemUni::GetInfo</a> method has returned a value of OEMPUBLISH_IPRINTCOREHELPER in <i>pBuffer</i> in response to a call with <i>dwMode</i> set to OEMGI_GETREQUESTEDHELPERINTERFACES, the Unidrv driver calls the <code>IPrintOemUni::PublishDriverInterface</code> method again, but with the <i>pIUnknown</i> pointer set to an object that implements the <b>IPrintCoreHelperUni</b> and <b>IPrintCoreHelper</b> interfaces. If the plug-in retains a pointer to the object, the method should return S_OK. Otherwise, the method should return E_FAIL.</p>
 

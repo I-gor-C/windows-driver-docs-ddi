@@ -67,85 +67,85 @@ typedef struct _PEP_ACPI_GPIO_RESOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="..\pepfx\ne-pepfx--pep-acpi-resource-type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value that identifies the resource type for this ACPI resource.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <a href="..\pepfx\ns-pepfx--pep-acpi-resource-flags.md">PEP_ACPI_RESOURCE_FLAGS</a> structure that describes the capabilities of this ACPI resource.</p>
 </dd>
 
-### -field <b>InterruptType</b>
+### -field InterruptType
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--kinterrupt-mode.md">KINTERRUPT_MODE</a> enumeration value that identifies the interrupt type.</p>
 </dd>
 
-### -field <b>InterruptPolarity</b>
+### -field InterruptPolarity
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--kinterrupt-polarity.md">KINTERRUPT_POLARITY</a> enumeration value that identifies how a device signals an interrupt request on an interrupt line.</p>
 </dd>
 
-### -field <b>PinConfig</b>
+### -field PinConfig
 
 <dd>
 <p>A <a href="..\pepfx\ne-pepfx--gpio-pin-config-type.md">GPIO_PIN_CONFIG_TYPE</a> enumeration value that identifies the GPIO pin configuration type.</p>
 </dd>
 
-### -field <b>IoRestrictionType</b>
+### -field IoRestrictionType
 
 <dd>
 <p>A <a href="..\pepfx\ne-pepfx--gpio-pin-iorestriction-type.md">GPIO_PIN_IORESTRICTION_TYPE</a> enumeration value that identifies the type of IO that the pin supports.</p>
 </dd>
 
-### -field <b>DriveStrength</b>
+### -field DriveStrength
 
 <dd>
 <p>Specifies the output drive capability of the pin, in hundredths of milliamperes. </p>
 </dd>
 
-### -field <b>DebounceTimeout</b>
+### -field DebounceTimeout
 
 <dd>
 <p>Specifies the hardware debounce wait time, in hundredths of milliseconds.</p>
 </dd>
 
-### -field <b>PinTable</b>
+### -field PinTable
 
 <dd>
 <p>A list of pin numbers on the resource that are described by this descriptor. </p>
 </dd>
 
-### -field <b>PinCount</b>
+### -field PinCount
 
 <dd>
 <p>The number of pins in <b>PinTable</b>.</p>
 </dd>
 
-### -field <b>ResourceSourceIndex</b>
+### -field ResourceSourceIndex
 
 <dd>
 <p>This member is always zero.</p>
 </dd>
 
-### -field <b>ResourceSourceName</b>
+### -field ResourceSourceName
 
 <dd>
 <p>This member is always set to "ResourceConsumer."</p>
 </dd>
 
-### -field <b>VendorData</b>
+### -field VendorData
 
 <dd>
 <p>A pointer to a raw data buffer containing vendor-defined byte data to be decoded by the OS driver. </p>
 </dd>
 
-### -field <b>VendorDataLength</b>
+### -field VendorDataLength
 
 <dd>
 <p>The size of the <b>VendorData</b> buffer.</p>

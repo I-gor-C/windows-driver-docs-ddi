@@ -60,37 +60,37 @@ typedef struct _USB_ENDPOINT_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>Specifies the length, in bytes, of this descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorType</b>
+### -field bDescriptorType
 
 <dd>
 <p>Specifies the descriptor type. Must be set to USB_ENDPOINT_DESCRIPTOR_TYPE.</p>
 </dd>
 
-### -field <b>bEndpointAddress</b>
+### -field bEndpointAddress
 
 <dd>
 <p>Specifies the USB-defined endpoint address. The four low-order bits specify the endpoint number. The high-order bit specifies the direction of data flow on this endpoint: 1 for in, 0 for out.</p>
 </dd>
 
-### -field <b>bmAttributes</b>
+### -field bmAttributes
 
 <dd>
 <p>The two low-order bits specify the endpoint type, one of USB_ENDPOINT_TYPE_CONTROL, USB_ENDPOINT_TYPE_ISOCHRONOUS, USB_ENDPOINT_TYPE_BULK, or USB_ENDPOINT_TYPE_INTERRUPT.</p>
 </dd>
 
-### -field <b>wMaxPacketSize</b>
+### -field wMaxPacketSize
 
 <dd>
 <p>Specifies the maximum packet size that can be sent from or to this endpoint.</p>
 </dd>
 
-### -field <b>bInterval</b>
+### -field bInterval
 
 <dd>
 <p>The  <b>bInterval</b> value contains the polling interval for interrupt and isochronous endpoints. For other types of endpoint, this value should be ignored. This value reflects the device's configuration in firmware. Drivers cannot change it.</p>

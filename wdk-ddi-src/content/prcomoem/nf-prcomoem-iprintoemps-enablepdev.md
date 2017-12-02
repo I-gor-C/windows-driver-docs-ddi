@@ -64,61 +64,61 @@ STDMETHOD EnablePDEV(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pPrinterName</i> 
+### -param pPrinterName 
 
 <dd>
 <p>Caller-supplied pointer to a text string representing the logical address of the printer.</p>
 </dd>
 
-### -param <i>cPatterns</i> 
+### -param cPatterns 
 
 <dd>
 <p>Caller-supplied value representing the number of HSURF-typed surface handles contained in the buffer pointed to by <i>phsurfPatterns</i>.</p>
 </dd>
 
-### -param <i>phsurfPatterns</i> 
+### -param phsurfPatterns 
 
 <dd>
 <p>Caller-supplied pointer to a buffer that is large enough to contain <i>cPatterns</i> number of HSURF-typed surface handles. The handles represent surface fill patterns.</p>
 </dd>
 
-### -param <i>cjGdiInfo</i> 
+### -param cjGdiInfo 
 
 <dd>
 <p>Caller-supplied value representing the size of the structure pointed to by <i>pGdiInfo</i>.</p>
 </dd>
 
-### -param <i>pGdiInfo</i> 
+### -param pGdiInfo 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="display.gdiinfo">GDIINFO</a> structure.</p>
 </dd>
 
-### -param <i>cjDevInfo</i> 
+### -param cjDevInfo 
 
 <dd>
 <p>Caller-supplied value representing the size of the structure pointed to by <i>pDevInfo</i>.</p>
 </dd>
 
-### -param <i>pDevInfo</i> 
+### -param pDevInfo 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="display.devinfo">DEVINFO</a> structure.</p>
 </dd>
 
-### -param <i>pded</i> 
+### -param pded 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="display.drvenabledata">DRVENABLEDATA</a> structure containing the addresses of the printer driver's graphics DDI hooking functions. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>pDevOem</i> [out]
+### -param pDevOem [out]
 
 <dd>
 <p>Receives a method-supplied pointer to a private PDEV structure. (For more information, see the following Remarks section.)</p>
@@ -139,7 +139,7 @@ STDMETHOD EnablePDEV(
 <p>If the operation fails, the method should call <b>SetLastError</b> to set an error code.</p>
 
 ## -remarks
-<p>The <code>IPrintOemPS::EnablePDEV</code> method performs the same types of operations as the <a href="display.drvenablepdev">DrvEnablePDEV</a> function that is exported by a printer graphics DLL. Its purpose is to allow a rendering plug-in to create its own PDEV structure. (For more information about PDEV structures, see <a href="NULL">Customized PDEV Structures</a>.)</p>
+<p>The <code>IPrintOemPS::EnablePDEV</code> method performs the same types of operations as the <a href="display.drvenablepdev">DrvEnablePDEV</a> function that is exported by a printer graphics DLL. Its purpose is to allow a rendering plug-in to create its own PDEV structure. (For more information about PDEV structures, see <a href="https://msdn.microsoft.com/e5c51b9a-5f73-4411-88d8-931981a8450c">Customized PDEV Structures</a>.)</p>
 
 <p>If you provide a rendering plug-in that exports the <code>IPrintOemPS::EnablePDEV</code> method, Pscript5's printer graphics DLL calls the method from within its <a href="display.drvenablepdev">DrvEnablePDEV</a> function. </p>
 
@@ -149,7 +149,7 @@ STDMETHOD EnablePDEV(
 
 <p>The structures pointed to by the <i>phsurfPatterns</i>, <i>pGdiInfo</i>, and <i>pDevInfo</i> parameter values are the same ones that Pscript5's <b>DrvEnablePDEV</b> function receives. The rendering plug-in can modify the structure contents as necessary. It can supply surface fill patterns by obtaining HSURF-typed surface handles and placing them in the buffer pointed to by <i>phsurfPatterns</i>. Fill pattern types and handle order are listed in the description of <a href="display.drvenablepdev">DrvEnablePDEV</a>.</p>
 
-<p>The <a href="display.drvenabledata">DRVENABLEDATA</a> structure pointed to by <i>pded</i> contains the addresses of graphics DDI functions provided by Pscript5's printer graphics DLL. You are allowed to provide customized hooking functions in your plug-in for these graphics DDI functions. The DRVENABLEDATA structure's contents enable your customized hooking functions to call back to the driver's graphics DDI functions. For more information, see <a href="NULL">Customized Graphics DDI Functions</a>.</p>
+<p>The <a href="display.drvenabledata">DRVENABLEDATA</a> structure pointed to by <i>pded</i> contains the addresses of graphics DDI functions provided by Pscript5's printer graphics DLL. You are allowed to provide customized hooking functions in your plug-in for these graphics DDI functions. The DRVENABLEDATA structure's contents enable your customized hooking functions to call back to the driver's graphics DDI functions. For more information, see <a href="https://msdn.microsoft.com/33d7d567-5371-4873-a4ef-cd2b06f65d73">Customized Graphics DDI Functions</a>.</p>
 
 ## -requirements
 <table>

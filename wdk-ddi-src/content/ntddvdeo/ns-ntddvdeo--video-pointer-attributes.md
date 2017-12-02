@@ -61,7 +61,7 @@ typedef struct _VIDEO_POINTER_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A set of flags that specify certain attributes of the pointer. <b>Flags</b> can be a combination of the following values:</p>
@@ -73,7 +73,7 @@ typedef struct _VIDEO_POINTER_ATTRIBUTES {
 <tr>
 <td width="40%"><a id="VIDEO_MODE_ASYNC_POINTER"></a><a id="video_mode_async_pointer"></a><dl>
 
-### -field <b>VIDEO_MODE_ASYNC_POINTER</b>
+### -field VIDEO_MODE_ASYNC_POINTER
 
 </dl>
 </td>
@@ -84,7 +84,7 @@ typedef struct _VIDEO_POINTER_ATTRIBUTES {
 <tr>
 <td width="40%"><a id="VIDEO_MODE_MONO_POINTER"></a><a id="video_mode_mono_pointer"></a><dl>
 
-### -field <b>VIDEO_MODE_MONO_POINTER</b>
+### -field VIDEO_MODE_MONO_POINTER
 
 </dl>
 </td>
@@ -95,7 +95,7 @@ typedef struct _VIDEO_POINTER_ATTRIBUTES {
 <tr>
 <td width="40%"><a id="VIDEO_MODE_COLOR_POINTER"></a><a id="video_mode_color_pointer"></a><dl>
 
-### -field <b>VIDEO_MODE_COLOR_POINTER</b>
+### -field VIDEO_MODE_COLOR_POINTER
 
 </dl>
 </td>
@@ -106,7 +106,7 @@ typedef struct _VIDEO_POINTER_ATTRIBUTES {
 <tr>
 <td width="40%"><a id="VIDEO_MODE_ANIMATE_START"></a><a id="video_mode_animate_start"></a><dl>
 
-### -field <b>VIDEO_MODE_ANIMATE_START</b>
+### -field VIDEO_MODE_ANIMATE_START
 
 </dl>
 </td>
@@ -117,7 +117,7 @@ typedef struct _VIDEO_POINTER_ATTRIBUTES {
 <tr>
 <td width="40%"><a id="VIDEO_MODE_ANIMATE_UPDATE"></a><a id="video_mode_animate_update"></a><dl>
 
-### -field <b>VIDEO_MODE_ANIMATE_UPDATE</b>
+### -field VIDEO_MODE_ANIMATE_UPDATE
 
 </dl>
 </td>
@@ -129,43 +129,43 @@ typedef struct _VIDEO_POINTER_ATTRIBUTES {
 <p> </p>
 </dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>Specifies the width of the pointer in pixels.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>Specifies the height of the pointer in pixels.</p>
 </dd>
 
-### -field <b>WidthInBytes</b>
+### -field WidthInBytes
 
 <dd>
 <p>Specifies the width of the pointer in bytes.</p>
 </dd>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>Specifies whether the pointer is visible. A nonzero value specifies that the pointer is visible. A value of zero specifies that the pointer is not visible.</p>
 </dd>
 
-### -field <b>Column</b>
+### -field Column
 
 <dd>
 <p>Horizontal coordinate of the pointer's hot spot.</p>
 </dd>
 
-### -field <b>Row</b>
+### -field Row
 
 <dd>
 <p>Vertical coordinate of the pointer's hot spot.</p>
 </dd>
 
-### -field <b>Pixels</b>
+### -field Pixels
 
 <dd>
 <p>The pointer data, in device-compatible DIB format. Mask data is always in 1-bpp DIB format.</p>

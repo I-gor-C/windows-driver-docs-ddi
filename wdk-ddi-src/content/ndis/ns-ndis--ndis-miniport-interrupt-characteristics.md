@@ -7,7 +7,7 @@ old-location: netvista\ndis_miniport_interrupt_characteristics.htm
 old-project: netvista
 ms.assetid: f4176e2d-d8d2-4e75-bccb-0c452da4d703
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, *PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,7 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -81,7 +81,7 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
      <b>Size</b> member to NDIS_SIZEOF_MINIPORT_INTERRUPT_CHARACTERISTICS_REVISION_1.</p>
 </dd>
 
-### -field <b>InterruptHandler</b>
+### -field InterruptHandler
 
 <dd>
 <p>The entry point for the 
@@ -89,7 +89,7 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
      associated with this interrupt.</p>
 </dd>
 
-### -field <b>InterruptDpcHandler</b>
+### -field InterruptDpcHandler
 
 <dd>
 <p>The entry point for the 
@@ -97,7 +97,7 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
      that is associated with this interrupt.</p>
 </dd>
 
-### -field <b>DisableInterruptHandler</b>
+### -field DisableInterruptHandler
 
 <dd>
 <p>The entry point for the 
@@ -105,7 +105,7 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
      MiniportDisableInterruptEx</a> function.</p>
 </dd>
 
-### -field <b>EnableInterruptHandler</b>
+### -field EnableInterruptHandler
 
 <dd>
 <p>The entry point for the 
@@ -113,7 +113,7 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
      MiniportEnableInterruptEx</a> function.</p>
 </dd>
 
-### -field <b>MsiSupported</b>
+### -field MsiSupported
 
 <dd>
 <p>Set this member to <b>TRUE</b> if the miniport driver supports message-signaled interrupt (MSI) service
@@ -123,7 +123,7 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
      points should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>MsiSyncWithAllMessages</b>
+### -field MsiSyncWithAllMessages
 
 <dd>
 <p>Set this member to <b>TRUE</b> if the miniport driver must serialize all MSI service functions. 
@@ -132,7 +132,7 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
      interrupt service functions that handle different messages to run concurrently.</p>
 </dd>
 
-### -field <b>MessageInterruptHandler</b>
+### -field MessageInterruptHandler
 
 <dd>
 <p>The entry point for the 
@@ -141,7 +141,7 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
      driver does not support message interrupts, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>MessageInterruptDpcHandler</b>
+### -field MessageInterruptDpcHandler
 
 <dd>
 <p>The entry point for the 
@@ -150,7 +150,7 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
      driver does not support message-signaled interrupts, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>DisableMessageInterruptHandler</b>
+### -field DisableMessageInterruptHandler
 
 <dd>
 <p>The entry point for the 
@@ -159,7 +159,7 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
      interrupts, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EnableMessageInterruptHandler</b>
+### -field EnableMessageInterruptHandler
 
 <dd>
 <p>The entry point for the 
@@ -168,7 +168,7 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
      interrupts, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>InterruptType</b>
+### -field InterruptType
 
 <dd>
 <p>A variable of type <b>NDIS_INTERRUPT_TYPE</b>. NDIS sets this variable to indicate which kind of
@@ -181,7 +181,7 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
      <b>MessageInfoTable</b> to obtain the interrupt information.</p>
 </dd>
 
-### -field <b>MessageInfoTable</b>
+### -field MessageInfoTable
 
 <dd>
 <p>An NDIS-supplied pointer to an 
@@ -271,4 +271,4 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

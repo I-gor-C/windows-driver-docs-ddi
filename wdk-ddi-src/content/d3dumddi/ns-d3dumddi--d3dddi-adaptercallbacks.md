@@ -55,13 +55,13 @@ typedef struct _D3DDDI_ADAPTERCALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnQueryAdapterInfoCb</b>
+### -field pfnQueryAdapterInfoCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-queryadapterinfocb.md">pfnQueryAdapterInfoCb</a> function, which the user-mode display driver uses to query the display miniport driver for adapter configuration information.</p>
 </dd>
 
-### -field <b>pfnGetMultisampleMethodListCb</b>
+### -field pfnGetMultisampleMethodListCb
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getmultisamplemethodlistcb.md">pfnGetMultisampleMethodListCb</a> function, which the user-mode display driver uses to retrieve the list of multiple-sampling methods that are used for an allocation.</p>

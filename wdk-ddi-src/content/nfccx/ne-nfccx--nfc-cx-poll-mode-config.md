@@ -60,35 +60,35 @@ typedef enum _NFC_CX_POLL_MODE_CONFIG {
 ## -enum-fields
 <dl>
 
-### -field <a id="NFC_CX_POLL_NFC_A"></a><a id="nfc_cx_poll_nfc_a"></a><b>NFC_CX_POLL_NFC_A</b>
+### -field NFC_CX_POLL_NFC_A
 
 <dd></dd>
 
-### -field <a id="NFC_CX_POLL_NFC_B"></a><a id="nfc_cx_poll_nfc_b"></a><b>NFC_CX_POLL_NFC_B</b>
+### -field NFC_CX_POLL_NFC_B
 
 <dd></dd>
 
-### -field <a id="NFC_CX_POLL_NFC_F_212"></a><a id="nfc_cx_poll_nfc_f_212"></a><b>NFC_CX_POLL_NFC_F_212</b>
+### -field NFC_CX_POLL_NFC_F_212
 
 <dd>
 <p>NFC-F poll mode (212 kbps)</p>
 </dd>
 
-### -field <a id="NFC_CX_POLL_NFC_F_424"></a><a id="nfc_cx_poll_nfc_f_424"></a><b>NFC_CX_POLL_NFC_F_424</b>
+### -field NFC_CX_POLL_NFC_F_424
 
 <dd>
 <p>NFC-F poll mode (424 kbps)</p>
 </dd>
 
-### -field <a id="NFC_CX_POLL_NFC_15693"></a><a id="nfc_cx_poll_nfc_15693"></a><b>NFC_CX_POLL_NFC_15693</b>
+### -field NFC_CX_POLL_NFC_15693
 
 <dd></dd>
 
-### -field <a id="NFC_CX_POLL_NFC_ACTIVE"></a><a id="nfc_cx_poll_nfc_active"></a><b>NFC_CX_POLL_NFC_ACTIVE</b>
+### -field NFC_CX_POLL_NFC_ACTIVE
 
 <dd></dd>
 
-### -field <a id="NFC_CX_POLL_DEFAULT"></a><a id="nfc_cx_poll_default"></a><b>NFC_CX_POLL_DEFAULT</b>
+### -field NFC_CX_POLL_DEFAULT
 
 <dd></dd>
 </dl>

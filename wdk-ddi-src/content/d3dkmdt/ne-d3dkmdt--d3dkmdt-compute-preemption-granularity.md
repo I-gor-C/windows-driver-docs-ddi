@@ -59,7 +59,7 @@ typedef enum _D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_COMPUTE_PREEMPTION_NONE"></a><a id="d3dkmdt_compute_preemption_none"></a><b>D3DKMDT_COMPUTE_PREEMPTION_NONE</b>
+### -field D3DKMDT_COMPUTE_PREEMPTION_NONE
 
 <dd>
 <p>The driver does not support the preemption of GPU compute shader operations.</p>
@@ -67,31 +67,31 @@ typedef enum _D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY {
 <div> </div>
 </dd>
 
-### -field <a id="D3DKMDT_COMPUTE_PREEMPTION_DMA_BUFFER_BOUNDARY"></a><a id="d3dkmdt_compute_preemption_dma_buffer_boundary"></a><b>D3DKMDT_COMPUTE_PREEMPTION_DMA_BUFFER_BOUNDARY</b>
+### -field D3DKMDT_COMPUTE_PREEMPTION_DMA_BUFFER_BOUNDARY
 
 <dd>
 <p>The driver cannot stop currently running DMA buffers of a specified type but can prevent all pending DMA buffers in the hardware queue from running.</p>
 </dd>
 
-### -field <a id="D3DKMDT_COMPUTE_PREEMPTION_DISPATCH_BOUNDARY"></a><a id="d3dkmdt_compute_preemption_dispatch_boundary"></a><b>D3DKMDT_COMPUTE_PREEMPTION_DISPATCH_BOUNDARY</b>
+### -field D3DKMDT_COMPUTE_PREEMPTION_DISPATCH_BOUNDARY
 
 <dd>
 <p>The driver cannot stop currently executing compute shader commands that were dispatched from a thread group but can prevent all pending commands from being dispatched.</p>
 </dd>
 
-### -field <a id="D3DKMDT_COMPUTE_PREEMPTION_THREAD_GROUP_BOUNDARY"></a><a id="d3dkmdt_compute_preemption_thread_group_boundary"></a><b>D3DKMDT_COMPUTE_PREEMPTION_THREAD_GROUP_BOUNDARY</b>
+### -field D3DKMDT_COMPUTE_PREEMPTION_THREAD_GROUP_BOUNDARY
 
 <dd>
 <p>The driver cannot stop currently executing compute shader commands that were dispatched from a thread group but can prevent a thread group from dispatching other commands.</p>
 </dd>
 
-### -field <a id="D3DKMDT_COMPUTE_PREEMPTION_THREAD_BOUNDARY"></a><a id="d3dkmdt_compute_preemption_thread_boundary"></a><b>D3DKMDT_COMPUTE_PREEMPTION_THREAD_BOUNDARY</b>
+### -field D3DKMDT_COMPUTE_PREEMPTION_THREAD_BOUNDARY
 
 <dd>
 <p>The driver cannot stop currently executing compute shader commands that were dispatched from a thread in a thread group but can prevent a thread from dispatching other commands.</p>
 </dd>
 
-### -field <a id="D3DKMDT_COMPUTE_PREEMPTION_SHADER_BOUNDARY"></a><a id="d3dkmdt_compute_preemption_shader_boundary"></a><b>D3DKMDT_COMPUTE_PREEMPTION_SHADER_BOUNDARY</b>
+### -field D3DKMDT_COMPUTE_PREEMPTION_SHADER_BOUNDARY
 
 <dd>
 <p>The driver cannot stop currently running shader commands of a specified type but can prevent all shader commands in the hardware queue from running.</p>

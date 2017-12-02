@@ -54,7 +54,7 @@ PFILE_OBJECT KsPinGetConnectedPinFileObject(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure that is the AVStream pin object for which to acquire the file object for the connected pin.</p>

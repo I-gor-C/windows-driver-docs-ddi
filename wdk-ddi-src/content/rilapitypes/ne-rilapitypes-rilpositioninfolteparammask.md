@@ -7,7 +7,7 @@ old-location: netvista\rilpositioninfolteparammask_2.htm
 old-project: netvista
 ms.assetid: 9c71420f-8b85-4f31-9a08-7f363be75cc0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,39 +63,39 @@ typedef enum _RILPOSITIONINFOLTEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_POSITION_LTE_MNC"></a><a id="ril_param_position_lte_mnc"></a><b>RIL_PARAM_POSITION_LTE_MNC</b>
+### -field RIL_PARAM_POSITION_LTE_MNC
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_POSITION_LTE_CELLID"></a><a id="ril_param_position_lte_cellid"></a><b>RIL_PARAM_POSITION_LTE_CELLID</b>
+### -field RIL_PARAM_POSITION_LTE_CELLID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_POSITION_LTE_EARFCN"></a><a id="ril_param_position_lte_earfcn"></a><b>RIL_PARAM_POSITION_LTE_EARFCN</b>
+### -field RIL_PARAM_POSITION_LTE_EARFCN
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_POSITION_LTE_PHYSCELLID"></a><a id="ril_param_position_lte_physcellid"></a><b>RIL_PARAM_POSITION_LTE_PHYSCELLID</b>
+### -field RIL_PARAM_POSITION_LTE_PHYSCELLID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_POSITION_LTE_TAC"></a><a id="ril_param_position_lte_tac"></a><b>RIL_PARAM_POSITION_LTE_TAC</b>
+### -field RIL_PARAM_POSITION_LTE_TAC
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_POSITION_LTE_RSRP"></a><a id="ril_param_position_lte_rsrp"></a><b>RIL_PARAM_POSITION_LTE_RSRP</b>
+### -field RIL_PARAM_POSITION_LTE_RSRP
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_POSITION_LTE_RSRQ"></a><a id="ril_param_position_lte_rsrq"></a><b>RIL_PARAM_POSITION_LTE_RSRQ</b>
+### -field RIL_PARAM_POSITION_LTE_RSRQ
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_POSITION_LTE_TA"></a><a id="ril_param_position_lte_ta"></a><b>RIL_PARAM_POSITION_LTE_TA</b>
+### -field RIL_PARAM_POSITION_LTE_TA
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_POSITION_LTE_ALL"></a><a id="ril_param_position_lte_all"></a><b>RIL_PARAM_POSITION_LTE_ALL</b>
+### -field RIL_PARAM_POSITION_LTE_ALL
 
 <dd></dd>
 </dl>

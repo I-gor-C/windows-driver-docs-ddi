@@ -7,7 +7,7 @@ old-location: netvista\rilsubaddressparammask.htm
 old-project: netvista
 ms.assetid: 12684719-f263-4909-bcb7-b75381cc7e43
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILSUBADDRESSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_SA_SUBADDRESS"></a><a id="ril_param_sa_subaddress"></a><b>RIL_PARAM_SA_SUBADDRESS</b>
+### -field RIL_PARAM_SA_SUBADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SA_ALL"></a><a id="ril_param_sa_all"></a><b>RIL_PARAM_SA_ALL</b>
+### -field RIL_PARAM_SA_ALL
 
 <dd></dd>
 </dl>

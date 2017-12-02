@@ -7,7 +7,7 @@ old-location: netvista\rilsmsreadystate_2.htm
 old-project: netvista
 ms.assetid: 4b1fd540-85cf-45b3-9f39-984bb3b9e200
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILSMSREADYSTATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SMSREADY_SERVICEREADY_3GPP2"></a><a id="ril_smsready_serviceready_3gpp2"></a><b>RIL_SMSREADY_SERVICEREADY_3GPP2</b>
+### -field RIL_SMSREADY_SERVICEREADY_3GPP2
 
 <dd></dd>
 
-### -field <a id="RIL_SMSREADY_UICCREADY"></a><a id="ril_smsready_uiccready"></a><b>RIL_SMSREADY_UICCREADY</b>
+### -field RIL_SMSREADY_UICCREADY
 
 <dd></dd>
 
-### -field <a id="RIL_SMSREADYSTATE_ALL"></a><a id="ril_smsreadystate_all"></a><b>RIL_SMSREADYSTATE_ALL</b>
+### -field RIL_SMSREADYSTATE_ALL
 
 <dd></dd>
 </dl>

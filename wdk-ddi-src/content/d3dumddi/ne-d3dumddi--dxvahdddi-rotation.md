@@ -57,25 +57,25 @@ typedef enum _DXVAHDDDI_ROTATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVAHDDDI_ROTATION_IDENTITY"></a><a id="dxvahdddi_rotation_identity"></a><b>DXVAHDDDI_ROTATION_IDENTITY</b>
+### -field DXVAHDDDI_ROTATION_IDENTITY
 
 <dd>
 <p>Indicates that rotation is 0 degrees—landscape mode.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_ROTATION_90"></a><a id="dxvahdddi_rotation_90"></a><b>DXVAHDDDI_ROTATION_90</b>
+### -field DXVAHDDDI_ROTATION_90
 
 <dd>
 <p>Indicates that rotation is 90 degrees clockwise—portrait mode.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_ROTATION_180"></a><a id="dxvahdddi_rotation_180"></a><b>DXVAHDDDI_ROTATION_180</b>
+### -field DXVAHDDDI_ROTATION_180
 
 <dd>
 <p>Indicates that rotation is 180 degrees clockwise—inverted landscape mode.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_ROTATION_270"></a><a id="dxvahdddi_rotation_270"></a><b>DXVAHDDDI_ROTATION_270</b>
+### -field DXVAHDDDI_ROTATION_270
 
 <dd>
 <p>Indicates that rotation is 270 degrees clockwise—inverted portrait mode.</p>

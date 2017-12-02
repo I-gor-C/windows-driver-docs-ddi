@@ -54,7 +54,7 @@ HRESULT SetFontOptions(
 ## -parameters
 <dl>
 
-### -param <i>options</i> [in]
+### -param options [in]
 
 <dd>
 <p>An <a href="print.expsfontoptions">ExpsFontOptions</a>-typed value that describes the options for the font.</p>

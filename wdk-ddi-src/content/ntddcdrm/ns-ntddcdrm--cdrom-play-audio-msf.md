@@ -59,37 +59,37 @@ typedef struct _CDROM_PLAY_AUDIO_MSF {
 ## -struct-fields
 <dl>
 
-### -field <b>StartingM</b>
+### -field StartingM
 
 <dd>
 <p>Contains an integer between 0 and 74 that indicates the starting minute. </p>
 </dd>
 
-### -field <b>StartingS</b>
+### -field StartingS
 
 <dd>
 <p>Contains an integer between 0 and 59 that indicates the starting second. </p>
 </dd>
 
-### -field <b>StartingF</b>
+### -field StartingF
 
 <dd>
 <p>Contains an integer between 0 and 74 that indicates the starting frame. </p>
 </dd>
 
-### -field <b>EndingM</b>
+### -field EndingM
 
 <dd>
 <p>Contains an integer between 0 and 74 that indicates the ending minute. </p>
 </dd>
 
-### -field <b>EndingS</b>
+### -field EndingS
 
 <dd>
 <p>Contains an integer between 0 and 59 that indicates the ending second. </p>
 </dd>
 
-### -field <b>EndingF</b>
+### -field EndingF
 
 <dd>
 <p>Contains an integer between 0 and 74 that indicates the ending frame.</p>

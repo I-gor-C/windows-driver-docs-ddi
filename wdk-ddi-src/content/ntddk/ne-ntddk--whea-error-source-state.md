@@ -55,13 +55,13 @@ typedef enum _WHEA_ERROR_SOURCE_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WheaErrSrcStateStopped"></a><a id="wheaerrsrcstatestopped"></a><a id="WHEAERRSRCSTATESTOPPED"></a><b>WheaErrSrcStateStopped</b>
+### -field WheaErrSrcStateStopped
 
 <dd>
 <p>The error source is stopped.</p>
 </dd>
 
-### -field <a id="WheaErrSrcStateStarted"></a><a id="wheaerrsrcstatestarted"></a><a id="WHEAERRSRCSTATESTARTED"></a><b>WheaErrSrcStateStarted</b>
+### -field WheaErrSrcStateStarted
 
 <dd>
 <p>The error source is started.</p>

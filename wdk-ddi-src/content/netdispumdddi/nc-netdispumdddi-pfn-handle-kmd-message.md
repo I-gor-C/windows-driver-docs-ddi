@@ -62,38 +62,38 @@ NTSTATUS HandleKernelModeMessage(
 ## -parameters
 <dl>
 
-### -param <i>pMiracastContext</i> [in]
+### -param pMiracastContext [in]
 
 <dd>
 <p>A pointer to a context associated with a display adapter.</p>
 <p>The operating system obtained the context when it called the Miracast user-mode driver's <a href="..\netdispumdddi\nc-netdispumdddi-pfn-create-miracast-context.md">CreateMiracastContext</a> function.</p>
 </dd>
 
-### -param <i>InputBufferSize</i> [in]
+### -param InputBufferSize [in]
 
 <dd>
 <p>The size of the input buffer <i>pInputBuffer</i>, supplied by the operating system.</p>
 </dd>
 
-### -param <i>pInputBuffer</i> [in]
+### -param pInputBuffer [in]
 
 <dd>
 <p>A pointer to the input buffer, supplied by the operating system.</p>
 </dd>
 
-### -param <i>OutputBufferSize</i> [in]
+### -param OutputBufferSize [in]
 
 <dd>
 <p>The size of the output buffer <i>pOutputBuffer</i>, supplied by the operating system.</p>
 </dd>
 
-### -param <i>pOutputBuffer</i> [out]
+### -param pOutputBuffer [out]
 
 <dd>
 <p>A pointer to the output buffer, supplied by the operating system.</p>
 </dd>
 
-### -param <i>pBytesReturned</i> [out]
+### -param pBytesReturned [out]
 
 <dd>
 <p>A pointer to a buffer, supplied by the operating system, that holds the number of returned bytes that the display miniport driver wrote in <i>pOutputBuffer</i>.</p>

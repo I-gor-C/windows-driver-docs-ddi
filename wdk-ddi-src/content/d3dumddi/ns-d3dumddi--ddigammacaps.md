@@ -54,7 +54,7 @@ typedef struct _DDIGAMMACAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>GammaCaps</b>
+### -field GammaCaps
 
 <dd>
 <p>[out] A valid bitwise OR of the following capability bits that the driver supports.</p>

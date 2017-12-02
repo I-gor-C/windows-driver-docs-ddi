@@ -58,27 +58,27 @@ typedef enum _SCO_DISCONNECT_REASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="ScoHciDisconnect"></a><a id="scohcidisconnect"></a><a id="SCOHCIDISCONNECT"></a><b>ScoHciDisconnect</b>
+### -field ScoHciDisconnect
 
 <dd>
 <p>This value specifies to the profile driver that the Bluetooth driver stack has received a
      disconnect notification from the host controller interface (HCI) layer.</p>
 </dd>
 
-### -field <a id="ScoDisconnectRequest"></a><a id="scodisconnectrequest"></a><a id="SCODISCONNECTREQUEST"></a><b>ScoDisconnectRequest</b>
+### -field ScoDisconnectRequest
 
 <dd>
 <p>This value specifies to the profile driver that a disconnect request has been received from the
      remote device.</p>
 </dd>
 
-### -field <a id="ScoRadioPoweredDown"></a><a id="scoradiopowereddown"></a><a id="SCORADIOPOWEREDDOWN"></a><b>ScoRadioPoweredDown</b>
+### -field ScoRadioPoweredDown
 
 <dd>
 <p>This value specifies to the profile driver that the local radio has been turned off.</p>
 </dd>
 
-### -field <a id="ScoHardwareRemoval"></a><a id="scohardwareremoval"></a><a id="SCOHARDWAREREMOVAL"></a><b>ScoHardwareRemoval</b>
+### -field ScoHardwareRemoval
 
 <dd>
 <p>This value specifies to the profile driver that the local radio has been physically

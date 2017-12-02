@@ -58,25 +58,25 @@ STORPORT_API ULONG StorPortInitialize(
 ## -parameters
 <dl>
 
-### -param <i>Argument1</i> [in]
+### -param Argument1 [in]
 
 <dd>
 <p>The first pointer with which the operating system called the miniport's <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine. </p>
 </dd>
 
-### -param <i>Argument2</i> [in]
+### -param Argument2 [in]
 
 <dd>
 <p>The second pointer with which the operating system called the miniports's <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine. </p>
 </dd>
 
-### -param <i>HwInitializationData</i> [in]
+### -param HwInitializationData [in]
 
 <dd>
 <p>Pointer to the initialization and configuration information set by the miniport driver in it's <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine. </p>
 </dd>
 
-### -param <i>HwContext</i> [in, optional]
+### -param HwContext [in, optional]
 
 <dd>
 <p>Is the address of a context value to be passed to the miniport driver's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine. Only legacy miniport drivers that scan the bus for HBAs rather than receiving configuration information from the port driver can use this parameter to store state between calls to <b>HwStorFindAdapter</b>. </p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="buses._ucx_controller_config">UCX_CONTROLLER_CONFIG</a> structure with the specified values for the controller with ACPI as the parent. </p>
+<p>Initializes a <a href="..\ucxcontroller\ns-ucxcontroller--ucx-controller-config.md">UCX_CONTROLLER_CONFIG</a> structure with the specified values for the controller with ACPI as the parent. </p>
 
 
 ## -syntax
@@ -59,25 +59,25 @@ void UCX_CONTROLLER_CONFIG_SET_ACPI_INFO(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> 
+### -param Config 
 
 <dd>
-<p>A pointer to a <a href="buses._ucx_controller_config">UCX_CONTROLLER_CONFIG</a> structure to initialize.</p>
+<p>A pointer to a <a href="..\ucxcontroller\ns-ucxcontroller--ucx-controller-config.md">UCX_CONTROLLER_CONFIG</a> structure to initialize.</p>
 </dd>
 
-### -param <i>VendorId</i> 
+### -param VendorId 
 
 <dd>
 <p>A string that contains the vendor identifier for the device.</p>
 </dd>
 
-### -param <i>DeviceId</i> 
+### -param DeviceId 
 
 <dd>
 <p>A string that specifies the device identifier assigned by the manufacturer.</p>
 </dd>
 
-### -param <i>RevisionId</i> 
+### -param RevisionId 
 
 <dd>
 <p>A string that Specifies the revision level of the device described by the <b>DeviceID</b> member.</p>
@@ -118,7 +118,7 @@ void UCX_CONTROLLER_CONFIG_SET_ACPI_INFO(
 <a href="buses._ucxcontrollercreate">UcxControllerCreate</a>
 </dt>
 <dt>
-<a href="buses._ucx_controller_config">UCX_CONTROLLER_CONFIG</a>
+<a href="..\ucxcontroller\ns-ucxcontroller--ucx-controller-config.md">UCX_CONTROLLER_CONFIG</a>
 </dt>
 </dl>
 <p> </p>

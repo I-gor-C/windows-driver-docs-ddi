@@ -58,31 +58,31 @@ NTSTATUS PcAddAdapterDevice(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>Pointer to the driver object. This pointer is passed as a parameter to the adapter's <a href="kernel.adddevice">AddDevice</a> handler. The driver object is a system structure of type <a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a>.</p>
 </dd>
 
-### -param <i>PhysicalDeviceObject</i> [in]
+### -param PhysicalDeviceObject [in]
 
 <dd>
 <p>Pointer to the device's <a href="wdkgloss.p#wdkgloss.physical_device_object__pdo_#wdkgloss.physical_device_object__pdo_"><i>physical device object (PDO)</i></a>. PortCls passes this pointer as a call parameter to the adapter's <i>AddDevice</i> handler. The PDO is a system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
 </dd>
 
-### -param <i>StartDevice</i> [in]
+### -param StartDevice [in]
 
 <dd>
 <p>Pointer to the function that the operating system calls in order to start the device. For more information, see the following <b>Remarks</b> section.</p>
 </dd>
 
-### -param <i>MaxObjects</i> [in]
+### -param MaxObjects [in]
 
 <dd>
 <p>Specifies the maximum number of subdevices to be registered by calls to <a href="..\portcls\nf-portcls-pcregistersubdevice.md">PcRegisterSubdevice</a>. This count sets the upper limit to the total number of miniport objects that the adapter driver can instantiate.</p>
 </dd>
 
-### -param <i>DeviceExtensionSize</i> [in]
+### -param DeviceExtensionSize [in]
 
 <dd>
 <p>Specifies the device extension size. Use zero for default size. See the following <b>Remarks</b> section for user-supplied extension sizes.</p>
@@ -101,11 +101,11 @@ NTSTATUS PcAddAdapterDevice(
 
 <p>The <i>StartDevice</i> parameter points to a function of type PCPFNSTARTDEVICE, which header file <i>portcls.h </i>defines as:</p>
 
-<p>For more information about <b>PcAddAdapterDevice</b> and the adapter driver's device-startup and <i>AddDevice </i>routines, see <a href="NULL">Startup Sequence</a>.</p>
+<p>For more information about <b>PcAddAdapterDevice</b> and the adapter driver's device-startup and <i>AddDevice </i>routines, see <a href="https://msdn.microsoft.com/bf88b9de-f4c4-4f9c-9355-603789b9ad3d">Startup Sequence</a>.</p>
 
 <p>The following example code shows how an adapter driver can use the <i>DeviceExtensionSize </i>parameter to append 64 bytes of device-specific extension data to the end of the storage block that PortCls allocates for the device context:</p>
 
-<p>The <b>PcAddAdapterDevice</b> call above is similar to the example in <a href="NULL">Startup Sequence</a>, except that the last parameter that is passed to <b>PcAddAdapterDevice</b> is nonzero.</p>
+<p>The <b>PcAddAdapterDevice</b> call above is similar to the example in <a href="https://msdn.microsoft.com/bf88b9de-f4c4-4f9c-9355-603789b9ad3d">Startup Sequence</a>, except that the last parameter that is passed to <b>PcAddAdapterDevice</b> is nonzero.</p>
 
 <p>The adapter driver can then access the device-specific extension data, as shown in the following code fragment:</p>
 

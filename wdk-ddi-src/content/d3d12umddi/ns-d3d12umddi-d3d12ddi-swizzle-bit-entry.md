@@ -56,19 +56,19 @@ typedef struct D3D12DDI_SWIZZLE_BIT_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>Valid</b>
+### -field Valid
 
 <dd>
 <p>A valid value.</p>
 </dd>
 
-### -field <b>ChannelIndex</b>
+### -field ChannelIndex
 
 <dd>
 <p>The channel index. Specify zero (0) for X, one (1) for Y, two (2) for Z, and three (3) for SS.</p>
 </dd>
 
-### -field <b>SourceBitIndex</b>
+### -field SourceBitIndex
 
 <dd>
 <p>Index of source bit address.</p>

@@ -57,19 +57,19 @@ typedef struct _USBDEVICE_MGMT_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size in bytes of this structure.</p>
 </dd>
 
-### -field <b>Hub</b>
+### -field Hub
 
 <dd>
 <p>The handle to the USB hub that is physically connected to the bus.</p>
 </dd>
 
-### -field <b>UsbDevice</b>
+### -field UsbDevice
 
 <dd>
 <p>The handle for the USB device that is physically connected to the bus.</p>

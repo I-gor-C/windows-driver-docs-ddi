@@ -57,25 +57,25 @@ typedef struct _D3DKMDT_SHADOWSURFACEDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>[in] The width of the surface, in pixels. The driver returns the width value.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[in] The height of the surface, in pixels. The driver returns the height value.</p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface. The driver returns the format value.</p>
 </dd>
 
-### -field <b>Pitch</b>
+### -field Pitch
 
 <dd>
 <p>[out] The width of the surface, in bytes. The driver must return the pitch value because the shadow surface is lockable.</p>

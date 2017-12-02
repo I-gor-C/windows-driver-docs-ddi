@@ -7,7 +7,7 @@ old-location: netvista\rilgetmsginuiccstatusparams_2.htm
 old-project: netvista
 ms.assetid: 9e51f87a-42ae-4ee7-ae34-b49b40109e8b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILGETMSGINUICCSTATUSPARAMS, RILGETMSGINUICCSTATUSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILGETMSGINUICCSTATUSPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwIndex</b>
+### -field dwIndex
 
 <dd></dd>
 </dl>

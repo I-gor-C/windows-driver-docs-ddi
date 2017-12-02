@@ -93,7 +93,7 @@ typedef struct _DXGK_ALLOCATIONINFOFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>CpuVisible</b>
+### -field CpuVisible
 
 <dd>
 <p>[out] A UINT value that specifies whether the allocation is directly accessible by the CPU. The display miniport driver must set this flag for the user-mode display driver to successfully call the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lockcb.md">pfnLockCb</a> function on the allocation. If this flag is not set on the allocation, <b>pfnLockCb</b> returns an error.</p>
@@ -101,7 +101,7 @@ typedef struct _DXGK_ALLOCATIONINFOFLAGS {
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>PermanentSysMem</b>
+### -field PermanentSysMem
 
 <dd>
 <p>[out] A UINT value that specifies whether a copy of the allocation should be kept in system memory even when the content is located in a memory segment. By default, a surface system memory backing store is lost when transferring an allocation to a memory segment. When the <b>PermanentSysMem</b> flag is specified and the allocation is evicted from a memory segment, the content of the allocation is discarded and not paged out if the allocation is not dirty (that is, the allocation was not the target of a write operation since it was paged in). </p>
@@ -109,7 +109,7 @@ typedef struct _DXGK_ALLOCATIONINFOFLAGS {
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>Cached</b>
+### -field Cached
 
 <dd>
 <p>[out] A UINT value that specifies whether the allocation backing store should be allocated as cached memory; by default, the allocation backing store is stored as write-combined memory. When a cached-memory allocation is used in a segment that is not cache coherent (for example, a memory segment or AGP segment), the video memory manager ensures coherency for the content of the allocation by flushing it from the processor's cache at the appropriate time. </p>
@@ -118,14 +118,14 @@ typedef struct _DXGK_ALLOCATIONINFOFLAGS {
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>Protected</b>
+### -field Protected
 
 <dd>
 <p>[out] A UINT value that specifies whether the allocation backing store should be allocated in kernel memory instead of user address space to protect the allocation from potential direct CPU access by an application. The driver cannot set this member in combination with the <b>PermanentSysMem</b>, <b>ExistingSysMem</b>, or <b>ExistingKernelSysMem</b> member. The driver must not set <b>Protected</b> on the primary surface.</p>
 <p>Setting this member is equivalent to setting the fourth bit of the 32-bit <b>Value</b> member (0x00000008).</p>
 </dd>
 
-### -field <b>ExistingSysMem</b>
+### -field ExistingSysMem
 
 <dd>
 <p>[out] A UINT value that specifies whether the video memory manager should use the existing system memory range as a backing store for the allocation. The system memory range must be a valid user-mode address for the current process for the size of the allocation. The system memory range must also be page aligned and must be a page multiple in size. </p>
@@ -135,7 +135,7 @@ typedef struct _DXGK_ALLOCATIONINFOFLAGS {
 <p>Setting this member is equivalent to setting the fifth bit of the 32-bit <b>Value</b> member (0x00000010).</p>
 </dd>
 
-### -field <b>ExistingKernelSysMem</b>
+### -field ExistingKernelSysMem
 
 <dd>
 <p>[out] A UINT value that specifies whether the video memory manager should use the existing system memory range as a backing store for the allocation. The system memory range must be a valid kernel-mode address that is aligned on a page and a page multiple in size. </p>
@@ -145,42 +145,42 @@ typedef struct _DXGK_ALLOCATIONINFOFLAGS {
 <p>Setting this member is equivalent to setting the sixth bit of the 32-bit <b>Value</b> member (0x00000020).</p>
 </dd>
 
-### -field <b>FromEndOfSegment</b>
+### -field FromEndOfSegment
 
 <dd>
 <p>[out] A UINT value that specifies whether the allocation should be allocated from the end of a segment during paging. The video memory manager scans a segment address space and looks for room for the allocation from the end of the segment instead of scanning from the start of the segment (which is the default behavior). However, the hinted and preferred segment information takes precedent over this flag.</p>
 <p>Setting this member is equivalent to setting the seventh bit of the 32-bit <b>Value</b> member (0x00000040).</p>
 </dd>
 
-### -field <b>Swizzled</b>
+### -field Swizzled
 
 <dd>
 <p>[out] A UINT value that specifies whether the allocation is swizzled and requires special support by the video memory manager to lock the allocation. For more information about swizzled allocations, see <a href="https://msdn.microsoft.com/c9be52d9-36b2-4a0f-9629-01b31293af38">Locking Swizzled Allocations</a>.</p>
 <p>Setting this member is equivalent to setting the eighth bit of the 32-bit <b>Value</b> member (0x00000080).</p>
 </dd>
 
-### -field <b>Overlay</b>
+### -field Overlay
 
 <dd>
 <p>[out] A UINT value that specifies whether the allocation is for an overlay operation. Overlay allocations are pinned in memory, and the video memory manager cannot evict them unless the Timeout Detection and Recovery (TDR) process, Plug and Play (PnP) stop, or <a href="https://msdn.microsoft.com/780d37d9-40c6-4737-9042-473810868227">level three synchronization</a> occurs. Note that before level three synchronization occurs, overlays are typically destroyed. By default, overlay allocations are limited and cannot occupy more than the last 20 percent of a segment. If an overlay allocation is allocated in an aperture segment, the display miniport driver should limit the size of any other allocation that uses that aperture segment as an eviction segment to 80 percent of the segment size. The display miniport driver indicates that an allocation can use a segment for eviction by specifying the appropriate bit for the segment in the <b>EvictionSegmentSet</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a> structure for the allocation. If the display miniport driver does not limit the size of another allocation, the video memory manager cannot evict that allocation through the segment because the pinned allocation (that is, the overlay allocation) occupies the area that is required for eviction. In this case, the content of the other allocation that is being evicted is lost, and the application that owns the lost allocation can no longer render with that allocation. </p>
 <p>Setting this member is equivalent to setting the ninth bit of the 32-bit <b>Value</b> member (0x00000100).</p>
 </dd>
 
-### -field <b>Capture</b>
+### -field Capture
 
 <dd>
 <p>[out] A UINT value that specifies whether the allocation is used for a capture operation. Capture allocations are pinned in memory similarly to overlay allocations. Therefore, the issues that apply to overlay allocations also apply to capture allocations. For more information about these issues, see the description of the <b>Overlay</b> flag. Note that before <a href="https://msdn.microsoft.com/780d37d9-40c6-4737-9042-473810868227">level three synchronization</a> occurs, captures are typically stopped. </p>
 <p>Setting this member is equivalent to setting the tenth bit of the 32-bit <b>Value</b> member (0x00000200).</p>
 </dd>
 
-### -field <b>UseAlternateVA</b>
+### -field UseAlternateVA
 
 <dd>
 <p>[out] A UINT value that specifies whether the primary allocation can be locked. <b>UseAlternateVA</b> is valid only for the primary allocation. If <b>UseAlternateVA</b> is specified for any other allocation, the allocation is not created. When a primary allocation is created by using <b>UseAlternateVA</b>, a swizzling range for the primary allocation is set up when the allocation is created. </p>
 <p>Setting this member is equivalent to setting the eleventh bit of the 32-bit <b>Value</b> member (0x00000400).</p>
 </dd>
 
-### -field <b>SynchronousPaging</b>
+### -field SynchronousPaging
 
 <dd>
 <p>[out] A UINT value that specifies whether the allocation should be paged in synchronously. If the display miniport driver sets this bit for an allocation, the video memory manager will wait until the allocation is no longer busy (that is, the video memory manager will wait until the graphics processing unit (GPU) reports all of the fences that reference the allocation) before the video memory manager submits a paging buffer that references the allocation. </p>
@@ -188,21 +188,21 @@ typedef struct _DXGK_ALLOCATIONINFOFLAGS {
 <p>Setting this member is equivalent to setting the twelfth bit of the 32-bit <b>Value</b> member (0x00000800).</p>
 </dd>
 
-### -field <b>LinkMirrored</b>
+### -field LinkMirrored
 
 <dd>
 <p>[out] A UINT value that specifies whether a single instance of an allocation should be replicated across all physical adapters in a logical adapter (that is, a link). The video memory manager calls the driver to page in and evict the allocation on all physical adapters with a single shared backing store in system memory.</p>
 <p>Setting this member is equivalent to setting the thirteenth bit of the 32-bit <b>Value</b> member (0x00001000).</p>
 </dd>
 
-### -field <b>LinkInstanced</b>
+### -field LinkInstanced
 
 <dd>
 <p>[out] A UINT value that specifies whether different instances of an allocation will be paged in and evicted from all physical adapters in a logical adapter (that is, a link). One system memory backing store exists per physical adapter in a logical adapter.</p>
 <p>Setting this member is equivalent to setting the fourteenth bit of the 32-bit <b>Value</b> member (0x00002000).</p>
 </dd>
 
-### -field <b>HistoryBuffer</b>
+### -field HistoryBuffer
 
 <dd>
 <p>[out] A UINT value that specifies whether the  user-mode display driver allocates a history buffer. The display miniport driver must set this flag to indicate that the user-mode driver can manage the creation and destruction of history buffers.</p>
@@ -211,7 +211,7 @@ typedef struct _DXGK_ALLOCATIONINFOFLAGS {
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>AccessedPhysically</b>
+### -field AccessedPhysically
 
 <dd>
 <p>The kernel mode driver sets the flag on allocations, which are accessed by their physical address. Such allocation will be allocated contiguously from GPU memory segments. The allocations will not be contiguous when allocated from system memory.</p>
@@ -219,7 +219,7 @@ typedef struct _DXGK_ALLOCATIONINFOFLAGS {
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>ExplicitResidencyNotification</b>
+### -field ExplicitResidencyNotification
 
 <dd>
 <p>When this flags is specified, the driver receives a <b>NotifyResidency</b> paging buffer operation when the allocation residency is changed (evicted, commited). The flag can only be set when the <b>AccessedPhysically</b> flag is set.</p>
@@ -227,110 +227,110 @@ typedef struct _DXGK_ALLOCATIONINFOFLAGS {
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting 4 bits, from the sixteenth bit to the nineteenth bit (0x00078000), of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>DXGK_ALLOC_RESERVED16</b>
+### -field DXGK_ALLOC_RESERVED16
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DXGK_ALLOC_RESERVED15</b>
+### -field DXGK_ALLOC_RESERVED15
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DXGK_ALLOC_RESERVED14</b>
+### -field DXGK_ALLOC_RESERVED14
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DXGK_ALLOC_RESERVED13</b>
+### -field DXGK_ALLOC_RESERVED13
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DXGK_ALLOC_RESERVED12</b>
+### -field DXGK_ALLOC_RESERVED12
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DXGK_ALLOC_RESERVED11</b>
+### -field DXGK_ALLOC_RESERVED11
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DXGK_ALLOC_RESERVED10</b>
+### -field DXGK_ALLOC_RESERVED10
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DXGK_ALLOC_RESERVED9</b>
+### -field DXGK_ALLOC_RESERVED9
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DXGK_ALLOC_RESERVED4</b>
+### -field DXGK_ALLOC_RESERVED4
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DXGK_ALLOC_RESERVED3</b>
+### -field DXGK_ALLOC_RESERVED3
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DXGK_ALLOC_RESERVED2</b>
+### -field DXGK_ALLOC_RESERVED2
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DXGK_ALLOC_RESERVED1</b>
+### -field DXGK_ALLOC_RESERVED1
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DXGK_ALLOC_RESERVED0</b>
+### -field DXGK_ALLOC_RESERVED0
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[out] A member in the union that <b>DXGK_ALLOCATIONINFOFLAGS</b> contains that can hold a 32-bit value that identifies properties of the allocation. </p>

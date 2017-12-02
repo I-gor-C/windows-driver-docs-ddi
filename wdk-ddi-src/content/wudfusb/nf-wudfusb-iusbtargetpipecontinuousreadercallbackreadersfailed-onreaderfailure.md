@@ -7,7 +7,7 @@ old-location: wdf\iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfa
 old-project: wdf
 ms.assetid: ad91208e-e57a-4b80-b1a1-13b9f7eb1119
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IUsbTargetPipeContinuousReaderCallbackReadersFailed, OnReaderFailure, IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ BOOL OnReaderFailure(
 ## -parameters
 <dl>
 
-### -param <i>pPipe</i> [in]
+### -param pPipe [in]
 
 <dd>
 <p>A pointer to the <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a> interface for the USB pipe on which the driver has enabled a continuous reader.</p>
 </dd>
 
-### -param <i>hrStatus</i> [in]
+### -param hrStatus [in]
 
 <dd>
 <p>The HRESULT-typed status value that the USB pipe's I/O target returned.</p>
@@ -139,4 +139,4 @@ BOOL OnReaderFailure(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

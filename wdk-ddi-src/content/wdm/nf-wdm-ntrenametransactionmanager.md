@@ -56,11 +56,11 @@ NTSTATUS NtRenameTransactionManager(
 ## -parameters
 <dl>
 
-### -param <i>LogFileName</i> [in]
+### -param LogFileName [in]
 
 <dd></dd>
 
-### -param <i>ExistingTransactionManagerGuid</i> [in]
+### -param ExistingTransactionManagerGuid [in]
 
 <dd></dd>
 </dl>

@@ -59,37 +59,37 @@ typedef struct _D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>FrameArguments</b>
+### -field FrameArguments
 
 <dd>
 <p>Frame arguments.</p>
 </dd>
 
-### -field <b>NumFrameArguments</b>
+### -field NumFrameArguments
 
 <dd>
 <p>The number of frame arguments.</p>
 </dd>
 
-### -field <b>ReferenceFrames</b>
+### -field ReferenceFrames
 
 <dd>
 <p>Reference frames.</p>
 </dd>
 
-### -field <b>CompressedBitstream</b>
+### -field CompressedBitstream
 
 <dd>
 <p>Compressed bitstream.</p>
 </dd>
 
-### -field <b>DecryptionParameters</b>
+### -field DecryptionParameters
 
 <dd>
 <p>Decryption parameters.</p>
 </dd>
 
-### -field <b>hDrvVideoDecoderHeap</b>
+### -field hDrvVideoDecoderHeap
 
 <dd>
 <p>Video decoder heap.</p>

@@ -60,25 +60,25 @@ typedef struct tag_video_geterrortext_parms {
 ## -struct-fields
 <dl>
 
-### -field <b>dwError</b>
+### -field dwError
 
 <dd>
 <p>Specifies the error number to identify.</p>
 </dd>
 
-### -field <b>lpText</b>
+### -field lpText
 
 <dd>
 <p>Specifies the text buffer to fill.</p>
 </dd>
 
-### -field <b>lpText</b>
+### -field lpText
 
 <dd>
 <p>Specifies the text buffer to fill.</p>
 </dd>
 
-### -field <b>dwLength</b>
+### -field dwLength
 
 <dd>
 <p>Specifies the size of the text buffer in characters.</p>

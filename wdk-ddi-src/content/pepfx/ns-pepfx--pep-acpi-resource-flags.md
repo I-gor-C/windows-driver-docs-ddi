@@ -63,55 +63,55 @@ typedef union _PEP_ACPI_RESOURCE_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>AsULong</b>
+### -field AsULong
 
 <dd>
 <p>The consolidated values of the flags in <b>DUMMYSTRUCTNAME</b>.</p>
 </dd>
 
-### -field <b>DUMMYSTRUCTNAME</b>
+### -field DUMMYSTRUCTNAME
 
 <dd>
 <p> A structure containing ACPI resource flags.</p>
 <dl>
 
-### -field <b>Shared</b>
+### -field Shared
 
 <dd>
 <p>When set, indicates that this is a shared device.</p>
 </dd>
 
-### -field <b>Wake</b>
+### -field Wake
 
 <dd>
 <p>When set, indicates that this device can be woken from a low-power state.</p>
 </dd>
 
-### -field <b>ResourceUsage</b>
+### -field ResourceUsage
 
 <dd>
 <p>When set, indicates that this device is in use.</p>
 </dd>
 
-### -field <b>SlaveMode</b>
+### -field SlaveMode
 
 <dd>
 <p>When set, indicates that this device is in slave mode.</p>
 </dd>
 
-### -field <b>AddressingMode</b>
+### -field AddressingMode
 
 <dd>
 <p>When set, indicates that this device is in addressing mode.</p>
 </dd>
 
-### -field <b>SharedMode</b>
+### -field SharedMode
 
 <dd>
 <p>When set, indicates that this device is in shared mode.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>

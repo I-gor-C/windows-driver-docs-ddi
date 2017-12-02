@@ -7,7 +7,7 @@ old-location: netvista\dot11_encap_entry.htm
 old-project: netvista
 ms.assetid: d17547c5-47a3-4d10-b27f-6a3bbf7aad03
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_ENCAP_ENTRY, DOT11_ENCAP_ENTRY, *PDOT11_ENCAP_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef struct DOT11_ENCAP_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>usEtherType</b>
+### -field usEtherType
 
 <dd>
 <p>The value of the IEEE EtherType in big-endian byte order. 
@@ -66,7 +66,7 @@ typedef struct DOT11_ENCAP_ENTRY {
      list.</p>
 </dd>
 
-### -field <b>usEncapType</b>
+### -field usEncapType
 
 <dd>
 <p>The type of encapsulation that is performed on the EtherType specified by the 
@@ -76,13 +76,13 @@ typedef struct DOT11_ENCAP_ENTRY {
 <p></p>
 <dl>
 
-### -field <a id="DOT11_ENCAP_RFC_1042"></a><a id="dot11_encap_rfc_1042"></a>DOT11_ENCAP_RFC_1042
+### -field DOT11_ENCAP_RFC_1042
 
 <dd>
 <p>The encapsulation that is defined through IETF RFC 1042.</p>
 </dd>
 
-### -field <a id="DOT11_ENCAP_802_IH"></a><a id="dot11_encap_802_ih"></a>DOT11_ENCAP_802_IH
+### -field DOT11_ENCAP_802_IH
 
 <dd>
 <p>The encapsulation that is defined through the IEEE 802.1h-1997 standard.</p>
@@ -99,7 +99,7 @@ typedef struct DOT11_ENCAP_ENTRY {
     (BSS) network.</p>
 
 <p>For more information about 802.11 packet payload encapsulation, see 
-    <a href="NULL">802.11 Payload Encapsulation</a>.</p>
+    <a href="netvista.802_11_payload_encapsulation">802.11 Payload Encapsulation</a>.</p>
 
 ## -requirements
 <table>
@@ -137,4 +137,4 @@ typedef struct DOT11_ENCAP_ENTRY {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_ENCAP_ENTRY structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_ENCAP_ENTRY structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

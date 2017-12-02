@@ -57,21 +57,21 @@ typedef struct _D3DHAL_DP2VIEWPORTINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>dwX</b>
+### -field dwX
 
 <dd></dd>
 
-### -field <b>dwY</b>
+### -field dwY
 
 <dd>
 <p>Specify the location, in screen coordinates, of the upper-left corner of the subrectangle.</p>
 </dd>
 
-### -field <b>dwWidth</b>
+### -field dwWidth
 
 <dd></dd>
 
-### -field <b>dwHeight</b>
+### -field dwHeight
 
 <dd>
 <p>Specify the width and height, respectively, of the subrectangle where the application is rendering. These members are specified in screen coordinates.</p>

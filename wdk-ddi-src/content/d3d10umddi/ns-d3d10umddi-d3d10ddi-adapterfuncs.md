@@ -56,19 +56,19 @@ typedef struct D3D10DDI_ADAPTERFUNCS {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnCalcPrivateDeviceSize</b>
+### -field pfnCalcPrivateDeviceSize
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivatedevicesize.md">CalcPrivateDeviceSize</a> function that specifies the size of a memory block that the user-mode display driver requires from the Microsoft Direct3D runtime to store frequently-accessed data.</p>
 </dd>
 
-### -field <b>pfnCreateDevice</b>
+### -field pfnCreateDevice
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function that creates a representation of a display device that handles a collection of rendering state.</p>
 </dd>
 
-### -field <b>pfnCloseAdapter</b>
+### -field pfnCloseAdapter
 
 <dd>
 <p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-closeadapter.md">CloseAdapter(D3D10)</a> function that releases resources for a graphics adapter object.</p>

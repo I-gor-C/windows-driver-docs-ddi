@@ -55,13 +55,13 @@ NTSTATUS BdaInitFilter(
 ## -parameters
 <dl>
 
-### -param <i>pKSFilter</i> [in]
+### -param pKSFilter [in]
 
 <dd>
 <p>Points to the filter in which to initialize the BDA filter context.</p>
 </dd>
 
-### -param <i>pBdaFilterTemplate</i> [in]
+### -param pBdaFilterTemplate [in]
 
 <dd>
 <p>Points to a <a href="..\bdasup\ns-bdasup--bda-filter-template.md">BDA_FILTER_TEMPLATE</a> structure that describes the filter template for the BDA device. To determine topology for and configure the initialized filter, the network provider uses information referenced in this BDA_FILTER_TEMPLATE structure. </p>

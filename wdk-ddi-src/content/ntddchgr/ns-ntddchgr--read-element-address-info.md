@@ -55,13 +55,13 @@ typedef struct _READ_ELEMENT_ADDRESS_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfElements</b>
+### -field NumberOfElements
 
 <dd>
 <p>Indicates the number of elements that matched the criteria specified by <b>ActionCode</b> and <b>VolumeTemplateID</b> in the <a href="..\ntddchgr\ns-ntddchgr--changer-send-volume-tag-information.md">CHANGER_SEND_VOLUME_TAG_INFORMATION</a> structure passed to the driver. If no element matches the criteria, this member is zero.</p>
 </dd>
 
-### -field <b>ElementStatus</b>
+### -field ElementStatus
 
 <dd>
 <p>Contains an array holding the first <a href="..\ntddchgr\ns-ntddchgr--changer-element-status.md">CHANGER_ELEMENT_STATUS</a> structure that matched the criteria in the CHANGER_SEND_VOLUME_TAG_INFORMATION structure passed to the driver. </p>

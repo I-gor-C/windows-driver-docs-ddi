@@ -57,19 +57,19 @@ NTSTATUS IoAttachDevice(
 ## -parameters
 <dl>
 
-### -param <i>SourceDevice</i> [in]
+### -param SourceDevice [in]
 
 <dd>
 <p>Pointer to the caller-created device object.</p>
 </dd>
 
-### -param <i>TargetDevice</i> [in]
+### -param TargetDevice [in]
 
 <dd>
 <p>Pointer to a buffer containing the name of the device object to which the specified <i>SourceDevice</i> is to be attached.</p>
 </dd>
 
-### -param <i>AttachedDevice</i> [out]
+### -param AttachedDevice [out]
 
 <dd>
 <p>Pointer to caller-allocated storage for a pointer. On return, contains a pointer to the target device object if the attachment succeeds.</p>

@@ -2,10 +2,10 @@
 UID: NC.usbfnattach.USBFN_SET_DEVICE_STATE
 title: USBFN_SET_DEVICE_STATE
 author: windows-driver-content
-description: The filter driver's implementation to abort an attach-detect operation.
-old-location: buses\usbfn_get_attach_action_abort.htm
+description: The filter driver's implementation to set the device state and operating bus speed.
+old-location: buses\usbfn_set_device_state.htm
 old-project: usbref
-ms.assetid: 0A44551A-F379-442D-99E9-87231F5FB178
+ms.assetid: EAEFEE8A-D96B-40D8-A4F0-FEFA670E1E6E
 ms.author: windowsdriverdev
 ms.date: 11/20/2017
 ms.keywords: USBD_INTERFACE_LIST_ENTRY, USBD_INTERFACE_LIST_ENTRY, *PUSBD_INTERFACE_LIST_ENTRY
@@ -19,7 +19,7 @@ req.target-min-winverclnt:
 req.target-min-winversvr: 
 req.kmdf-ver: 1.0
 req.umdf-ver: 2.0
-req.alt-api: USBFN_SET_DEVICE_STATE
+req.alt-api: PFN_USBFN_SET_DEVICE_STATE
 req.alt-loc: usbfnattach.h
 req.ddi-compliance: 
 req.unicode-ansi: 
@@ -40,30 +40,44 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The filter driver's implementation to abort an attach-detect operation.</p>
+<p>The filter driver's implementation to set the device state and operating bus speed.</p>
 
 
 ## -prototype
 
 ````
-USBFN_GET_ATTACH_ACTION_ABORT UsbFnGetAttachActionAbort;
+USBFN_SET_DEVICE_STATE UsbFnSetDeviceState;
 
-NTSTATUS UsbFnGetAttachActionAbort(
-  _In_ PVOID Context
+NTSTATUS UsbFnSetDeviceState(
+  _In_ PVOID              Context,
+  _In_ USBFN_DEVICE_STATE DeviceState,
+  _In_ USBFN_BUS_SPEED    BusSpeed
 )
 { ... }
 
-typedef PFN_USBFN_SET_DEVICE_STATE USBFN_SET_DEVICE_STATE;
+typedef USBFN_SET_DEVICE_STATE PFN_USBFN_SET_DEVICE_STATE;
 ````
 
 
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>    A pointer to a driver-defined context.</p>
+</dd>
+
+### -param DeviceState [in]
+
+<dd>
+<p>    A <a href="..\usbfnbase\ne-usbfnbase--usbfn-device-state.md">USBFN_DEVICE_STATE</a>-typed flag that indicates the state of the device.</p>
+</dd>
+
+### -param BusSpeed [in]
+
+<dd>
+<p>A <a href="..\usbfnbase\ne-usbfnbase--usbfn-bus-speed.md">USBFN_BUS_SPEED</a>-typed flag that indicates the bus speed.</p>
 </dd>
 </dl>
 
@@ -72,6 +86,8 @@ typedef PFN_USBFN_SET_DEVICE_STATE USBFN_SET_DEVICE_STATE;
 
 ## -remarks
 <p>To support attach and detatch detection, the USB lower filter driver must publish its support. During the publishing process, the driver also registers its implementation of this  callback function. For more information, see <a href="buses.usb_filter_driver_for_proprietary_charging">USB filter driver for supporting proprietary chargers</a>.</p>
+
+<p>The lower filter driver might implement  a <i>USBFN_SET_DEVICE_STATE</i> even callback function if it requires notification of device state changes to properly configure charging when attached to a host, or in lab scenarios where charging via USB must be disabled.</p>
 
 ## -requirements
 <table>
@@ -119,4 +135,4 @@ typedef PFN_USBFN_SET_DEVICE_STATE USBFN_SET_DEVICE_STATE;
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBFN_GET_ATTACH_ACTION_ABORT callback function%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBFN_SET_DEVICE_STATE callback function%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

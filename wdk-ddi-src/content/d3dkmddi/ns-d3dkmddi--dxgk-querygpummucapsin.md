@@ -54,7 +54,7 @@ typedef struct _DXGK_QUERYGPUMMUCAPSIN {
 ## -struct-fields
 <dl>
 
-### -field <b>PhysicalAdapterIndex</b>
+### -field PhysicalAdapterIndex
 
 <dd>
 <p>A zero-based physical adapter index (engine ordinal) for which the data is queried.</p>

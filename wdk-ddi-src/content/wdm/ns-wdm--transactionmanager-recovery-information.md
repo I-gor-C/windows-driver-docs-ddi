@@ -55,7 +55,7 @@ typedef struct _TRANSACTIONMANAGER_RECOVERY_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>LastRecoveredLsn</b>
+### -field LastRecoveredLsn
 
 <dd>
 <p>The last <a href="https://msdn.microsoft.com/4637fa0c-2f19-4f0c-bf13-f4ccac2e7284">log sequence number</a> of the last log record that KTM obtained from <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">CLFS</a> during the most recent recovery operation.</p>

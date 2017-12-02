@@ -55,7 +55,7 @@ ULONG ScsiPortConvertPhysicalAddressToUlong(
 ## -parameters
 <dl>
 
-### -param <i>Address</i> [in]
+### -param Address [in]
 
 <dd>
 <p>Specifies a value of type SCSI_PHYSICAL_ADDRESS.</p>

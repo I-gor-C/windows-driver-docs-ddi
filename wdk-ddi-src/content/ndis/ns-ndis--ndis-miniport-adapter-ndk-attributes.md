@@ -7,7 +7,7 @@ old-location: netvista\ndis_miniport_adapter_ndk_attributes.htm
 old-project: netvista
 ms.assetid: 615A190E-D8F5-4E84-A475-FFF38077BC09
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>A <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure that describes this <b>NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES</b> structure. 
@@ -69,13 +69,13 @@ Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:</p>
 </ul>
 </dd>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>If the miniport adapter's NDK functionality is enabled, this member is <b>TRUE</b>. Otherwise, it is <b>FALSE</b>.</p>
 </dd>
 
-### -field <b>NdkCapabilities</b>
+### -field NdkCapabilities
 
 <dd>
 <p>A pointer to an <a href="..\ntddndis\ns-ntddndis--ndis-ndk-capabilities.md">NDIS_NDK_CAPABILITIES</a> structure that specifies the capabilities of an NDK adapter.  </p>
@@ -85,7 +85,7 @@ Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:</p>
 ## -remarks
 <p>An NDK-capable adapter must indicate its NDK capabilities in its <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> function, even if its NDK functionality is currently disabled.</p>
 
-<p>To report its NDK capabilities, the miniport adapter stores an  <b>NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES</b> structure in the <b>NDKAttributes</b> member of the <a href="..\ndis\ns-ndis--ndis-miniport-adapter-attributes.md">NDIS_MINIPORT_ADAPTER_ATTRIBUTES</a> union and passes  the <b>NDIS_MINIPORT_ADAPTER_ATTRIBUTES</b> union  to the <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a> function. For more information, see <a href="NULL">Initializing an NDK Miniport Adapter</a>.</p>
+<p>To report its NDK capabilities, the miniport adapter stores an  <b>NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES</b> structure in the <b>NDKAttributes</b> member of the <a href="..\ndis\ns-ndis--ndis-miniport-adapter-attributes.md">NDIS_MINIPORT_ADAPTER_ATTRIBUTES</a> union and passes  the <b>NDIS_MINIPORT_ADAPTER_ATTRIBUTES</b> union  to the <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a> function. For more information, see <a href="netvista.initializing_an_ndk_miniport_adapter">Initializing an NDK Miniport Adapter</a>.</p>
 
 ## -requirements
 <table>
@@ -143,9 +143,9 @@ Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:</p>
 <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
-<a href="NULL">Initializing an NDK Miniport Adapter</a>
+<a href="netvista.initializing_an_ndk_miniport_adapter">Initializing an NDK Miniport Adapter</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

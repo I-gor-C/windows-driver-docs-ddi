@@ -57,19 +57,19 @@ VOID __cdecl StreamClassDebugPrint(
 ## -parameters
 <dl>
 
-### -param <i>DebugPrintLevel</i> [in]
+### -param DebugPrintLevel [in]
 
 <dd>
 <p>Specifies an enumeration of type <a href="..\strmini\ne-strmini-stream-debug-level.md">STREAM_DEBUG_LEVEL</a>. The debugger prints messages if this parameter is less than or equal to the <i>StreamDebug</i> variable in <i>stream.sys</i> symbols.</p>
 </dd>
 
-### -param <i>DebugMessage</i> [in]
+### -param DebugMessage [in]
 
 <dd>
 <p>Points to a <b>NULL</b>-terminated string containing the message to print to the application window and to the Debugger Command window.</p>
 </dd>
 
-### -param <i>arguments</i> 
+### -param arguments 
 
 <dd>
 <p>Specifies a variable argument list containing optional arguments for the format string, as in <b>printf</b>.</p>
@@ -80,7 +80,7 @@ VOID __cdecl StreamClassDebugPrint(
 <p>None</p>
 
 ## -remarks
-<p>For more information, see <a href="NULL">Stream Class Debugging</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/544b922b-58e4-4cbb-a76c-d8e13ae17e55">Stream Class Debugging</a>.</p>
 
 ## -requirements
 <table>

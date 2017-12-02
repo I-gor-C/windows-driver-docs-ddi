@@ -59,13 +59,13 @@ typedef struct _WINBIO_CAPTURE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>PayloadSize</b>
+### -field PayloadSize
 
 <dd>
 <p> The total size of the payload.  This includes the fixed length structure and any variable data at the end.</p>
 </dd>
 
-### -field <b>WinBioHresult</b>
+### -field WinBioHresult
 
 <dd>
 <p>The status detail of the I/O operation.  This is where WINBIO error and information codes will be passed. The following table shows possible values for this member.</p>
@@ -150,7 +150,7 @@ typedef struct _WINBIO_CAPTURE_DATA {
 <p> </p>
 </dd>
 
-### -field <b>SensorStatus</b>
+### -field SensorStatus
 
 <dd>
 <p>The WINBIO_SENSOR_STATUS status of the sensor after the capture has occurred. It specifies the operating status of the sensor.</p>
@@ -220,7 +220,7 @@ typedef struct _WINBIO_CAPTURE_DATA {
 <p> </p>
 </dd>
 
-### -field <b>RejectDetail</b>
+### -field RejectDetail
 
 <dd>
 <p>If the sensor status was WINBIO_SENSOR_REJECT, this member contains a WINBIO_REJECT_DETAIL value. WINBIO_SENSOR_REJECT specifies the reason a biometric sampling operation failed.</p>
@@ -248,7 +248,7 @@ typedef struct _WINBIO_CAPTURE_DATA {
 </table></span></div>
 </dd>
 
-### -field <b>CaptureData</b>
+### -field CaptureData
 
 <dd>
 <p>A structure of type <a href="..\winbio_ioctl\ns-winbio-ioctl--winbio-data.md">WINBIO_DATA</a> that contains data captured by the device, of the format specified. The <b>Data</b> array member of the WINBIO_DATA structure should contain a <a href="..\winbio_types\ns-winbio-types--winbio-bir.md">WINBIO_BIR</a> structure.</p>

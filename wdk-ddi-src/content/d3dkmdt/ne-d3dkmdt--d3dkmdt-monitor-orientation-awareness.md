@@ -57,25 +57,25 @@ typedef enum _D3DKMDT_MONITOR_ORIENTATION_AWARENESS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_MOA_UNINITIALIZED"></a><a id="d3dkmdt_moa_uninitialized"></a><b>D3DKMDT_MOA_UNINITIALIZED</b>
+### -field D3DKMDT_MOA_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_MONITOR_ORIENTATION_AWARENESS has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MOA_NONE"></a><a id="d3dkmdt_moa_none"></a><b>D3DKMDT_MOA_NONE</b>
+### -field D3DKMDT_MOA_NONE
 
 <dd>
 <p>Indicates that the video output device is unable to determine the orientation of a connected external display device.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MOA_POLLED"></a><a id="d3dkmdt_moa_polled"></a><b>D3DKMDT_MOA_POLLED</b>
+### -field D3DKMDT_MOA_POLLED
 
 <dd>
 <p>Indicates that the video output device can determine the orientation of a connected external display device, and the display miniport driver can be aware of changes in orientation by polling the video output device.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MOA_INTERRUPTIBLE"></a><a id="d3dkmdt_moa_interruptible"></a><b>D3DKMDT_MOA_INTERRUPTIBLE</b>
+### -field D3DKMDT_MOA_INTERRUPTIBLE
 
 <dd>
 <p>Indicates that the video output device can generate an interrupt when the orientation of a connected external display device changes.</p>

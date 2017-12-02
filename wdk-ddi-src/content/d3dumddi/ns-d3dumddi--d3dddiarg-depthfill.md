@@ -57,25 +57,25 @@ typedef struct _D3DDDIARG_DEPTHFILL {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A handle to the resource.</p>
 </dd>
 
-### -field <b>SubResourceIndex</b>
+### -field SubResourceIndex
 
 <dd>
 <p>[in] The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource, or buffer, on which a rectangular area is depth-filled.</p>
 </dd>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd>
 <p>[in] A <a href="display.rectl">RECTL</a> structure that indicates the upper-left and lower-right points of a rectangle on the buffer to depth fill. </p>
 </dd>
 
-### -field <b>Depth</b>
+### -field Depth
 
 <dd>
 <p>A pixel value that is specified in native format for the fill depth. </p>

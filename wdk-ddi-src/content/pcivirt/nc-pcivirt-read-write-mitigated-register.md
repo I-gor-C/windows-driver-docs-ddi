@@ -65,7 +65,7 @@ typedef READ_WRITE_MITIGATED_REGISTER *PREAD_WRITE_MITIGATED_REGISTER;
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to a driver-defined context.
@@ -73,13 +73,13 @@ typedef READ_WRITE_MITIGATED_REGISTER *PREAD_WRITE_MITIGATED_REGISTER;
                 </p>
 </dd>
 
-### -param <i>VfIndex</i> [in]
+### -param VfIndex [in]
 
 <dd>
 <p>A zero-based index of the VF to which this read/write operation applies.</p>
 </dd>
 
-### -param <i>Read</i> [in]
+### -param Read [in]
 
 <dd>
 <p>
@@ -87,19 +87,19 @@ typedef READ_WRITE_MITIGATED_REGISTER *PREAD_WRITE_MITIGATED_REGISTER;
                 A boolean that indicates whether to perform a read or a write operation. TRUE indicates read, FALSE otherwise.</p>
 </dd>
 
-### -param <i>BarIndex</i> [in]
+### -param BarIndex [in]
 
 <dd>
 <p>The BAR that maps the address space being mitigated.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>The offset in number of bytes into the BAR at which this access begins.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>
@@ -107,7 +107,7 @@ typedef READ_WRITE_MITIGATED_REGISTER *PREAD_WRITE_MITIGATED_REGISTER;
                 The length in bytes of this read or write operation.</p>
 </dd>
 
-### -param <i>Data</i> [in, out]
+### -param Data [in, out]
 
 <dd>
 <p>A pointer to a buffer that contains the data to read or write.</p>

@@ -58,19 +58,19 @@ typedef struct _NOTIFICATION_CONFIG_1 {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>fdwFlags</b>
+### -field fdwFlags
 
 <dd></dd>
 
-### -field <b>pfnNotifyCallback</b>
+### -field pfnNotifyCallback
 
 <dd></dd>
 
-### -field <b>pContext</b>
+### -field pContext
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: netvista\ndismenablevirtualization.htm
 old-project: netvista
 ms.assetid: 5a82dfe6-8844-4b18-8f54-7bf143fcd2ff
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMEnableVirtualization
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ NDIS_STATUS NdisMEnableVirtualization(
 ## -parameters
 <dl>
 
-### -param <i>NdisMiniportHandle</i> [in]
+### -param NdisMiniportHandle [in]
 
 <dd>
 <p>The network adapter handle that NDIS passed to the 
@@ -66,7 +66,7 @@ NDIS_STATUS NdisMEnableVirtualization(
      <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>.</p>
 </dd>
 
-### -param <i>NumVFs</i> [in]
+### -param NumVFs [in]
 
 <dd>
 <p>A USHORT value that contains the number of  Virtual Functions (VFs) that are to be enabled for the network adapter.  <b>NdisMEnableVirtualization</b> sets the <b>NumVFs</b> member of the SR-IOV Extended Capability structure to the value of the <i>NumVFs</i> parameter. </p>
@@ -74,19 +74,19 @@ NDIS_STATUS NdisMEnableVirtualization(
 <div> </div>
 </dd>
 
-### -param <i>EnableVFMigration</i> [in]
+### -param EnableVFMigration [in]
 
 <dd>
 <p> This parameter is reserved for NDIS and must be set to FALSE.</p>
 </dd>
 
-### -param <i>EnableMigrationInterrupt</i> [in]
+### -param EnableMigrationInterrupt [in]
 
 <dd>
 <p> This parameter is reserved for NDIS and must be set to FALSE.</p>
 </dd>
 
-### -param <i>EnableVirtualization</i> [in]
+### -param EnableVirtualization [in]
 
 <dd>
 <p>A BOOLEAN value that specifies whether  virtualization should be enabled in the PCI configuration space of the network adapter.  If <i>EnableVirtualization</i> is TRUE, <b>NdisMEnableVirtualization</b> sets the <b>VF Enable</b> bit  of the SR-IOV Control member. <b>NdisMEnableVirtualization</b> clears this bit if <i>EnableVirtualization</i> is FALSE.</p>
@@ -127,9 +127,9 @@ NDIS_STATUS NdisMEnableVirtualization(
 
 <p>Set to FALSE.</p>
 
-<p>For more information on how to create a NIC switch, see <a href="NULL">Creating a NIC Switch</a>.</p>
+<p>For more information on how to create a NIC switch, see <a href="netvista.creating_a_nic_switch">Creating a NIC Switch</a>.</p>
 
-<p>For more information about the SR-IOV interface, see 	<a href="NULL">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
+<p>For more information about the SR-IOV interface, see 	<a href="netvista.overview_of_single_root_i_o_virtualization__sr-iov_">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
 
 <p>If an independent hardware vendor (IHV) provides a virtual bus driver (VBD) as part of its SR-IOV <a href="devinst.driver_packages">driver package</a>, its miniport driver must not call <b>NdisMEnableVirtualization</b>. Instead, the driver must interface with the VBD through a private communication channel, and request that the VBD call <a href="..\wdm\nc-wdm-enable-virtualization.md">EnableVirtualization</a>. This function is provided by the <a href="kernel.guid_pci_virtualization_interface">GUID_PCI_VIRTUALIZATION_INTERFACE</a> interface that is supported by the underlying PCI bus driver. </p>
 
@@ -203,4 +203,4 @@ NDIS_STATUS NdisMEnableVirtualization(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMEnableVirtualization function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMEnableVirtualization function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

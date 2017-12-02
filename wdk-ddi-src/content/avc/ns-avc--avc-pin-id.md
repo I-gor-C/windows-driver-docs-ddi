@@ -54,7 +54,7 @@ typedef struct _AVC_PIN_ID {
 ## -struct-fields
 <dl>
 
-### -field <b>PinId</b>
+### -field PinId
 
 <dd>
 <p>Specifies the offset (or ID) of the pin.</p>

@@ -56,13 +56,13 @@ PIRP IoAllocateIrp(
 ## -parameters
 <dl>
 
-### -param <i>StackSize</i> [in]
+### -param StackSize [in]
 
 <dd>
 <p>Specifies the number of I/O stack locations to be allocated for the IRP. This value must be at least equal to the <b>StackSize</b> of the next-lower driver's device object, but can be one greater than this value. The calling driver need not allocate a stack location in the IRP for itself.</p>
 </dd>
 
-### -param <i>ChargeQuota</i> [in]
+### -param ChargeQuota [in]
 
 <dd>
 <p>Setting this to <b>TRUE</b> causes the memory allocated for the IRP to be charged against the quota for the current process. Should be set to <b>FALSE</b> by intermediate drivers. This can be set to <b>TRUE</b> only by highest-level drivers that are called in the context of the thread that originates the I/O request for which the driver is allocating another IRP.</p>
@@ -176,7 +176,7 @@ PIRP IoAllocateIrp(
 <a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 </dl>
 <p> </p>

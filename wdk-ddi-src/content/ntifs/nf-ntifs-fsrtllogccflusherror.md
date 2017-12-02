@@ -7,7 +7,7 @@ old-location: ifsk\fsrtllogccflusherror.htm
 old-project: ifsk
 ms.assetid: e516758d-d1fe-4977-93bb-f427972fdd3c
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FsRtlLogCcFlushError
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ NTSTATUS FsRtlLogCcFlushError(
 ## -parameters
 <dl>
 
-### -param <i>FileName</i> [in]
+### -param FileName [in]
 
 <dd>
 <p>The name of the file that could not be flushed.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to the device object that this log entry should be filed against.</p>
 </dd>
 
-### -param <i>SectionObjectPointer</i> [in]
+### -param SectionObjectPointer [in]
 
 <dd>
 <p>A pointer to the section object for the file on which the flush failed.</p>
 </dd>
 
-### -param <i>FlushError</i> [in]
+### -param FlushError [in]
 
 <dd>
 <p>The error returned by the call to <a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A value of 0 or a bitwise combination of one or more of the following flags:</p>
@@ -116,7 +116,7 @@ NTSTATUS FsRtlLogCcFlushError(
 <p>The <b>FsRtlLogCcFlushError</b> routine returns STATUS_SUCCESS on success or another NTSTATUS value, such as STATUS_INSUFFICIENT_RESOURCES.</p>
 
 ## -remarks
-<p>Unless the call includes appropriate <i>Flags</i>, the <b>FsRtlLogCcFlushError</b> routine uses <a href="..\ntddk\nf-ntddk-ioraiseinformationalharderror.md">IoRaiseInformationalHardError</a> to display a dialog box to the user, including the specific error and <i>FileName</i>, and uses <a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a> logs the error. </p>
+<p>Unless the call includes appropriate <i>Flags</i>, the <b>FsRtlLogCcFlushError</b> routine uses <a href="..\ntddk\nf-ntddk-ioraiseinformationalharderror.md">IoRaiseInformationalHardError</a> to display a dialog box to the user, including the specific error and <i>FileName</i>, and uses <a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a> logs the error. </p>
 
 <p>If the entire <i>FileName</i> cannot fit within the log buffer, the routine inserts an ellipsis into the file name.</p>
 
@@ -193,9 +193,9 @@ NTSTATUS FsRtlLogCcFlushError(
 <a href="..\ntddk\nf-ntddk-ioraiseinformationalharderror.md">IoRaiseInformationalHardError</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
+<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlLogCcFlushError routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlLogCcFlushError routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

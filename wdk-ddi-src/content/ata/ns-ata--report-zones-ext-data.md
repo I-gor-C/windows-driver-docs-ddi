@@ -62,43 +62,43 @@ typedef struct _REPORT_ZONES_EXT_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>ZoneListLength</b>
+### -field ZoneListLength
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>SAME</b>
+### -field SAME
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>MaxLBA</b>
+### -field MaxLBA
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved for future use.</p>

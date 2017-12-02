@@ -55,7 +55,7 @@ PIO_STACK_LOCATION IoGetNextIrpStackLocation(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>A pointer to the IRP. </p>

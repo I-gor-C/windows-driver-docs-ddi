@@ -58,13 +58,13 @@ NTSTATUS QueryValueKey(
 ## -parameters
 <dl>
 
-### -param <i>ValueName</i> [in]
+### -param ValueName [in]
 
 <dd>
 <p>Pointer to the manufacturer-supplied name of the value entry. The name string is specified by a structure of type <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>.</p>
 </dd>
 
-### -param <i>KeyValueInformationClass</i> [in]
+### -param KeyValueInformationClass [in]
 
 <dd>
 <p>Specifies the type of information to be returned in the buffer. Set this parameter to one of the following KEY_VALUE_INFORMATION_CLASS enumeration values:</p>
@@ -81,19 +81,19 @@ NTSTATUS QueryValueKey(
 </ul>
 </dd>
 
-### -param <i>KeyValueInformation</i> [out]
+### -param KeyValueInformation [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer into which the method writes the requested data. The buffer contains a structure of type <a href="..\wdm\ns-wdm--key-value-basic-information.md">KEY_VALUE_BASIC_INFORMATION</a>, <a href="..\wdm\ns-wdm--key-value-full-information.md">KEY_VALUE_FULL_INFORMATION</a>, or <a href="..\wdm\ns-wdm--key-value-partial-information.md">KEY_VALUE_PARTIAL_INFORMATION</a>, depending on the value of <i>KeyValueInformationClass</i>. The structure is followed by additional data whose size depends on the data type of the key value.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Size in bytes of the <i>KeyValueInformation</i> buffer, which the caller must set according to the given <i>KeyValueInformationClass</i>. To receive all the requested data, the buffer must be at least as large as the size of the requested data.</p>
 </dd>
 
-### -param <i>ResultLength</i> [out]
+### -param ResultLength [out]
 
 <dd>
 <p>Output pointer for the length of the resulting data. This parameter points to a caller-allocated ULONG variable into which the method writes a count specifying the number of bytes actually written into the <i>KeyValueInformation</i> buffer. If the specified buffer length is too small to contain the information, however, the method instead outputs the required buffer size and returns STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL. For more information, see the following Remarks section.</p>

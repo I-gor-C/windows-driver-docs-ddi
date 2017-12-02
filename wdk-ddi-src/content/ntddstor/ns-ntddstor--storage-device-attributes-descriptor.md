@@ -56,19 +56,19 @@ typedef struct _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Contains the version of the data reported. </p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Indicates the quantity of data reported, in bytes. This is the <code>sizeof(STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR)</code>.</p>
 </dd>
 
-### -field <b>Attributes</b>
+### -field Attributes
 
 <dd>
 <table>
@@ -79,7 +79,7 @@ typedef struct _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="STORAGE_ATTRIBUTE_BYTE_ADDRESSABLE_IO"></a><a id="storage_attribute_byte_addressable_io"></a><dl>
 
-### -field <b>STORAGE_ATTRIBUTE_BYTE_ADDRESSABLE_IO</b>
+### -field STORAGE_ATTRIBUTE_BYTE_ADDRESSABLE_IO
 
 
 ### -field 0x01
@@ -93,7 +93,7 @@ typedef struct _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="STORAGE_ATTRIBUTE_BLOCK_IO"></a><a id="storage_attribute_block_io"></a><dl>
 
-### -field <b>STORAGE_ATTRIBUTE_BLOCK_IO</b>
+### -field STORAGE_ATTRIBUTE_BLOCK_IO
 
 
 ### -field 0x02
@@ -107,7 +107,7 @@ typedef struct _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="STORAGE_ATTRIBUTE_DYNAMIC_PERSISTENCE"></a><a id="storage_attribute_dynamic_persistence"></a><dl>
 
-### -field <b>STORAGE_ATTRIBUTE_DYNAMIC_PERSISTENCE</b>
+### -field STORAGE_ATTRIBUTE_DYNAMIC_PERSISTENCE
 
 
 ### -field 0x04
@@ -121,7 +121,7 @@ typedef struct _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="STORAGE_ATTRIBUTE_VOLATILE"></a><a id="storage_attribute_volatile"></a><dl>
 
-### -field <b>STORAGE_ATTRIBUTE_VOLATILE</b>
+### -field STORAGE_ATTRIBUTE_VOLATILE
 
 
 ### -field 0x08
@@ -135,7 +135,7 @@ typedef struct _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="STORAGE_ATTRIBUTE_ASYNC_EVENT_NOTIFICATION"></a><a id="storage_attribute_async_event_notification"></a><dl>
 
-### -field <b>STORAGE_ATTRIBUTE_ASYNC_EVENT_NOTIFICATION</b>
+### -field STORAGE_ATTRIBUTE_ASYNC_EVENT_NOTIFICATION
 
 
 ### -field 0x10
@@ -149,7 +149,7 @@ typedef struct _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="STORAGE_ATTRIBUTE_PERF_SIZE_INDEPENDENT"></a><a id="storage_attribute_perf_size_independent"></a><dl>
 
-### -field <b>STORAGE_ATTRIBUTE_PERF_SIZE_INDEPENDENT</b>
+### -field STORAGE_ATTRIBUTE_PERF_SIZE_INDEPENDENT
 
 
 ### -field 0x20

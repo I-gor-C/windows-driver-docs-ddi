@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>Stores information about hot plug detect status of the DisplayPort connection. This structure is used in the 
-             <a href="buses.ioctl_ucmtcpci_port_controller_displayport_hpd_status_changed">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS_CHANGED</a>  request. </p>
+             <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl-ucmtcpci-port-controller-displayport-hpd-status-changed.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS_CHANGED</a>  request. </p>
 
 
 ## -syntax
@@ -57,16 +57,16 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS_CHANGED_IN_PARAM
 ## -struct-fields
 <dl>
 
-### -field <b>PortControllerObject</b>
+### -field PortControllerObject
 
 <dd>
-<p>Handle to the port controller object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.</p>
+<p>Handle to the port controller object that the client driver received in the previous call to <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>.</p>
 </dd>
 
-### -field <b>HPDStatus</b>
+### -field HPDStatus
 
 <dd>
-<p>A <a href="buses.ucmtcpci_port_controller_displayport_hpd_status">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS</a>-type value that indicates status.</p>
+<p>A <a href="..\ucmtcpciportcontrollerrequests\ne-ucmtcpciportcontrollerrequests--ucmtcpci-port-controller-displayport-hpd-status.md">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS</a>-type value that indicates status.</p>
 </dd>
 </dl>
 
@@ -90,7 +90,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS_CHANGED_IN_PARAM
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ioctl_ucmtcpci_port_controller_displayport_hpd_status_changed">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS_CHANGED</a>
+<a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl-ucmtcpci-port-controller-displayport-hpd-status-changed.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS_CHANGED</a>
 </dt>
 </dl>
 <p> </p>

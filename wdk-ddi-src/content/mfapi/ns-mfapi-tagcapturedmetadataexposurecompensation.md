@@ -55,13 +55,13 @@ typedef struct tagCapturedMetadataExposureCompensation {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A KSCAMERA_EXTENDEDPROP_EVCOMP_XXX step flag.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The EV compensation value in units of the step specified.</p>

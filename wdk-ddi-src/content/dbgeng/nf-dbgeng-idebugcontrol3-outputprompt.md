@@ -7,7 +7,7 @@ old-location: debugger\outputprompt.htm
 old-project: debugger
 ms.assetid: 463d6fbd-cbe4-4de1-a01a-52a5002f24b8
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl3, OutputPrompt, IDebugControl3::OutputPrompt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ HRESULT OutputPrompt(
 ## -parameters
 <dl>
 
-### -param <i>OutputControl</i> [in]
+### -param OutputControl [in]
 
 <dd>
-<p>Specifies an output control that determines which of the client's output callbacks will receive the output.  For possible values, see <a href="debugger.debug_outctl_xxx">DEBUG_OUTCTL_XXX</a>.</p>
+<p>Specifies an output control that determines which of the client's output callbacks will receive the output.  For possible values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541517">DEBUG_OUTCTL_XXX</a>.</p>
 </dd>
 
-### -param <i>Format</i> [in, optional]
+### -param Format [in, optional]
 
 <dd>
 <p>Specifies the format string, as in <b>printf</b>.  Typically, conversion characters work exactly as they do in C. For the floating-point conversion characters, the 64-bit argument is interpreted as a 32-bit floating-point number unless the <b>l</b>  modifier is used.</p>
@@ -205,7 +205,7 @@ HRESULT OutputPrompt(
 <p>If <i>Format</i> is <b>NULL</b>, only the standard prompt text is sent to the output callbacks.</p>
 </dd>
 
-### -param <i>...</i> 
+### -param ... 
 
 <dd>
 <p>Specifies additional parameters that represent values to be inserted into the output during formatting.</p>
@@ -219,14 +219,14 @@ HRESULT OutputPrompt(
 
 <p> </p>
 
-<p>This method can also return error values. See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
+<p>This method can also return error values. See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p>
 
 ## -remarks
 <p><b>OutputPrompt</b> and <b>OutputPromptWide</b> can be used to prompt the user for input.</p>
 
 <p>The standard prompt will be sent to the output callbacks before the formatted text described by <i>Format</i>.  The contents of the standard prompt is returned by the method <a href="debugger.getprompttext">GetPromptText</a>.</p>
 
-<p>The prompt text is sent to the output callbacks with the <a href="debugger.debug_output_xxx">DEBUG_OUTPUT_PROMPT</a> output mask set.</p>
+<p>The prompt text is sent to the output callbacks with the <a href="https://msdn.microsoft.com/0c500a2e-0817-45de-8607-4cd4a29d5813">DEBUG_OUTPUT_PROMPT</a> output mask set.</p>
 
 <p>For more information about prompting the user, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560116">Using Input and Output</a>.</p>
 
@@ -275,9 +275,9 @@ HRESULT OutputPrompt(
 <a href="debugger.controlledoutput">ControlledOutput</a>
 </dt>
 <dt>
-<a href="debugger.debug_output_xxx">DEBUG_OUTPUT_XXX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541518">DEBUG_OUTPUT_XXX</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::OutputPrompt method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::OutputPrompt method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

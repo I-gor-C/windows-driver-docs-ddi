@@ -7,7 +7,7 @@ old-location: wdf\wdfcontrolfinishinitializing.htm
 old-project: wdf
 ms.assetid: 13375ae1-6908-44d8-b775-4375f4fdde4d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfControlFinishInitializing
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ VOID WdfControlFinishInitializing(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a control device object.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilmanagecallparamscommand.htm
 old-project: netvista
 ms.assetid: d0344812-811e-47f6-a03b-bb753cce912a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,67 +69,67 @@ typedef enum _RILMANAGECALLPARAMSCOMMAND {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLCMD_RELEASECALL"></a><a id="ril_callcmd_releasecall"></a><b>RIL_CALLCMD_RELEASECALL</b>
+### -field RIL_CALLCMD_RELEASECALL
 
 <dd></dd>
 
-### -field <a id="RIL_CALLCMD_HOLDACTIVE_ACCEPTHELD"></a><a id="ril_callcmd_holdactive_acceptheld"></a><b>RIL_CALLCMD_HOLDACTIVE_ACCEPTHELD</b>
+### -field RIL_CALLCMD_HOLDACTIVE_ACCEPTHELD
 
 <dd></dd>
 
-### -field <a id="RIL_CALLCMD_HOLDALLBUTONE"></a><a id="ril_callcmd_holdallbutone"></a><b>RIL_CALLCMD_HOLDALLBUTONE</b>
+### -field RIL_CALLCMD_HOLDALLBUTONE
 
 <dd></dd>
 
-### -field <a id="RIL_CALLCMD_ADDHELDTOCONF"></a><a id="ril_callcmd_addheldtoconf"></a><b>RIL_CALLCMD_ADDHELDTOCONF</b>
+### -field RIL_CALLCMD_ADDHELDTOCONF
 
 <dd></dd>
 
-### -field <a id="RIL_CALLCMD_ADDHELDTOCONF_DISCONNECT"></a><a id="ril_callcmd_addheldtoconf_disconnect"></a><b>RIL_CALLCMD_ADDHELDTOCONF_DISCONNECT</b>
+### -field RIL_CALLCMD_ADDHELDTOCONF_DISCONNECT
 
 <dd></dd>
 
-### -field <a id="RIL_CALLCMD_RELEASEPROCEEDING"></a><a id="ril_callcmd_releaseproceeding"></a><b>RIL_CALLCMD_RELEASEPROCEEDING</b>
+### -field RIL_CALLCMD_RELEASEPROCEEDING
 
 <dd></dd>
 
-### -field <a id="RIL_CALLCMD_RELEASEALLCALLS"></a><a id="ril_callcmd_releaseallcalls"></a><b>RIL_CALLCMD_RELEASEALLCALLS</b>
+### -field RIL_CALLCMD_RELEASEALLCALLS
 
 <dd></dd>
 
-### -field <a id="RIL_CALLCMD_RELEASEHELDCONFCALL"></a><a id="ril_callcmd_releaseheldconfcall"></a><b>RIL_CALLCMD_RELEASEHELDCONFCALL</b>
+### -field RIL_CALLCMD_RELEASEHELDCONFCALL
 
 <dd></dd>
 
-### -field <a id="RIL_CALLCMD_ACCEPTINCOMINGCALL"></a><a id="ril_callcmd_acceptincomingcall"></a><b>RIL_CALLCMD_ACCEPTINCOMINGCALL</b>
+### -field RIL_CALLCMD_ACCEPTINCOMINGCALL
 
 <dd></dd>
 
-### -field <a id="RIL_CALLCMD_OFFERMEDIA"></a><a id="ril_callcmd_offermedia"></a><b>RIL_CALLCMD_OFFERMEDIA</b>
+### -field RIL_CALLCMD_OFFERMEDIA
 
 <dd></dd>
 
-### -field <a id="RIL_CALLCMD_ANSWERMEDIAOFFER"></a><a id="ril_callcmd_answermediaoffer"></a><b>RIL_CALLCMD_ANSWERMEDIAOFFER</b>
+### -field RIL_CALLCMD_ANSWERMEDIAOFFER
 
 <dd></dd>
 
-### -field <a id="RIL_CALLCMD_BLINDCALLTRANSFER"></a><a id="ril_callcmd_blindcalltransfer"></a><b>RIL_CALLCMD_BLINDCALLTRANSFER</b>
+### -field RIL_CALLCMD_BLINDCALLTRANSFER
 
 <dd></dd>
 
-### -field <a id="RIL_CALLCMD_ASSUREDCALLTRANSFER"></a><a id="ril_callcmd_assuredcalltransfer"></a><b>RIL_CALLCMD_ASSUREDCALLTRANSFER</b>
+### -field RIL_CALLCMD_ASSUREDCALLTRANSFER
 
 <dd></dd>
 
-### -field <a id="RIL_CALLCMD_CONSULTATIVECALLTRANSFER"></a><a id="ril_callcmd_consultativecalltransfer"></a><b>RIL_CALLCMD_CONSULTATIVECALLTRANSFER</b>
+### -field RIL_CALLCMD_CONSULTATIVECALLTRANSFER
 
 <dd></dd>
 
-### -field <a id="RIL_CALLCMD_RTT"></a><a id="ril_callcmd_rtt"></a><b>RIL_CALLCMD_RTT</b>
+### -field RIL_CALLCMD_RTT
 
 <dd></dd>
 
-### -field <a id="RIL_CALLCMD_MAX"></a><a id="ril_callcmd_max"></a><b>RIL_CALLCMD_MAX</b>
+### -field RIL_CALLCMD_MAX
 
 <dd></dd>
 </dl>

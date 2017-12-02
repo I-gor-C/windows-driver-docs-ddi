@@ -67,43 +67,43 @@ typedef struct _CM_EISA_FUNCTION_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>CompressedId</b>
+### -field CompressedId
 
 <dd>
 <p>The EISA compressed identification of the device at this slot. The value is identical to the <b>CompressedId</b> member of the <a href="..\wdm\ns-wdm--cm-eisa-slot-information.md">CM_EISA_SLOT_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <b>IdSlotFlags1</b>
+### -field IdSlotFlags1
 
 <dd>
 <p>The EISA slot identification flags.</p>
 </dd>
 
-### -field <b>IdSlotFlags2</b>
+### -field IdSlotFlags2
 
 <dd>
 <p>The EISA slot identification flags.</p>
 </dd>
 
-### -field <b>MinorRevision</b>
+### -field MinorRevision
 
 <dd>
 <p>Information supplied by the manufacturer. </p>
 </dd>
 
-### -field <b>MajorRevision</b>
+### -field MajorRevision
 
 <dd>
 <p>Information supplied by the manufacturer. </p>
 </dd>
 
-### -field <b>Selections</b>
+### -field Selections
 
 <dd>
 <p>The EISA selections for the device.</p>
 </dd>
 
-### -field <b>FunctionFlags</b>
+### -field FunctionFlags
 
 <dd>
 <p>Indicates which of the members has available information. Callers can use the following system-defined masks to determine whether a particular type of configuration information can be or has been returned by <b>HalGetBusData</b> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>:</p>
@@ -156,13 +156,13 @@ typedef struct _CM_EISA_FUNCTION_INFORMATION {
 </dl>
 </dd>
 
-### -field <b>TypeString</b>
+### -field TypeString
 
 <dd>
 <p>Specifies the type of device.</p>
 </dd>
 
-### -field <b>EisaMemory</b>
+### -field EisaMemory
 
 <dd>
 <p>Describes the EISA device memory configuration information, defined as follows:</p>
@@ -184,7 +184,7 @@ typedef struct _CM_EISA_FUNCTION_INFORMATION {
 </table></span></div>
 </dd>
 
-### -field <b>EisaIrq</b>
+### -field EisaIrq
 
 <dd>
 <p>Describes the EISA interrupt configuration information, defined as follows:</p>
@@ -203,7 +203,7 @@ typedef struct _CM_EISA_FUNCTION_INFORMATION {
 </table></span></div>
 </dd>
 
-### -field <b>EisaDma</b>
+### -field EisaDma
 
 <dd>
 <p>Describes the EISA DMA configuration information, defined as follows:</p>
@@ -222,7 +222,7 @@ typedef struct _CM_EISA_FUNCTION_INFORMATION {
 </table></span></div>
 </dd>
 
-### -field <b>EisaPort</b>
+### -field EisaPort
 
 <dd>
 <p>Describes the EISA device port configuration information, defined as follows:</p>
@@ -241,7 +241,7 @@ typedef struct _CM_EISA_FUNCTION_INFORMATION {
 </table></span></div>
 </dd>
 
-### -field <b>InitializationData</b>
+### -field InitializationData
 
 <dd>
 <p>Vendor-supplied, device-specific initialization data, if any. </p>

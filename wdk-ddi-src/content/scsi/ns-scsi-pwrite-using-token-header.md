@@ -63,55 +63,55 @@ typedef struct _WRITE_USING_TOKEN_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>WriteUsingTokenDataLength</b>
+### -field WriteUsingTokenDataLength
 
 <dd>
 <p>The length of this structure beginning with the <i>Immediate</i> parameter and include all of the elements of the <b>BlockDeviceRangeDescriptor</b> array.</p>
 </dd>
 
-### -field <b>Immediate</b>
+### -field Immediate
 
 <dd>
 <p>If set, the status of the WRITE USING TOKEN command is returned immediately after receipt and validation of the token ROD and range descriptors. Otherwise, status is returned after all command processing is complete.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved bits.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>BlockOffsetIntoToken</b>
+### -field BlockOffsetIntoToken
 
 <dd>
 <p>The offset, in logical blocks,  in the ROD for <b>Token</b> indicating the start of the source data for the offload write data operation.</p>
 </dd>
 
-### -field <b>Token</b>
+### -field Token
 
 <dd>
 <p>A token created by a previous the POPULATE TOKEN command operation.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>BlockDeviceRangeDescriptorListLength</b>
+### -field BlockDeviceRangeDescriptorListLength
 
 <dd>
 <p>The length, in bytes, for all  of the <a href="storage.block_device_range_descriptor">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures in the <b>BlockDeviceRangeDescriptor</b> array.</p>
 </dd>
 
-### -field <b>BlockDeviceRangeDescriptor</b>
+### -field BlockDeviceRangeDescriptor
 
 <dd>
 <p>An array of <a href="storage.block_device_range_descriptor">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the destination data blocks for the offload write data transfer.</p>

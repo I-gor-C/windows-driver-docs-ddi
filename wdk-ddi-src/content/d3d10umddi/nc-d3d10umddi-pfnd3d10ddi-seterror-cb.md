@@ -58,13 +58,13 @@ void APIENTRY pfnSetErrorCb(
 ## -parameters
 <dl>
 
-### -param <i>hRuntimeDevice</i> [in]
+### -param hRuntimeDevice [in]
 
 <dd>
 <p> A handle to a context for the core Microsoft Direct3D 10 runtime. This handle is supplied to the driver in a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function. </p>
 </dd>
 
-### -param <i>hResult</i> [in]
+### -param hResult [in]
 
 <dd>
 <p> An HRESULT value that specifies the error to set for a driver function. </p>

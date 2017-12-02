@@ -46,16 +46,16 @@ req.product: Windows 10 or later.
 ## -ioctlparameters
 
 ### -input-buffer
-<p>A pointer to a <a href="buses.usb_stop_tracking_for_time_sync_information">USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION</a> structure that contains the time tracking handle previously received through the <a href="buses.ioctl_usb_start_tracking_for_time_sync">IOCTL_USB_START_TRACKING_FOR_TIME_SYNC</a> request.</p>
+<p>A pointer to a <a href="..\usbioctl\ns-usbioctl--usb-stop-tracking-for-time-sync-information.md">USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION</a> structure that contains the time tracking handle previously received through the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-start-tracking-for-time-sync.md">IOCTL_USB_START_TRACKING_FOR_TIME_SYNC</a> request.</p>
 
-<p>A pointer to a <a href="buses.usb_stop_tracking_for_time_sync_information">USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION</a> structure that contains the time tracking handle previously received through the <a href="buses.ioctl_usb_start_tracking_for_time_sync">IOCTL_USB_START_TRACKING_FOR_TIME_SYNC</a> request.</p>
+<p>A pointer to a <a href="..\usbioctl\ns-usbioctl--usb-stop-tracking-for-time-sync-information.md">USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION</a> structure that contains the time tracking handle previously received through the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-start-tracking-for-time-sync.md">IOCTL_USB_START_TRACKING_FOR_TIME_SYNC</a> request.</p>
 
 ### -input-buffer-length
-<p>The size of the <a href="buses.usb_stop_tracking_for_time_sync_information">USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION</a> structure.</p>
+<p>The size of the <a href="..\usbioctl\ns-usbioctl--usb-stop-tracking-for-time-sync-information.md">USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION</a> structure.</p>
 
-<p>The size of the <a href="buses.usb_stop_tracking_for_time_sync_information">USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION</a> structure.</p>
+<p>The size of the <a href="..\usbioctl\ns-usbioctl--usb-stop-tracking-for-time-sync-information.md">USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION</a> structure.</p>
 
-<p>The size of the <a href="buses.usb_stop_tracking_for_time_sync_information">USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION</a> structure.</p>
+<p>The size of the <a href="..\usbioctl\ns-usbioctl--usb-stop-tracking-for-time-sync-information.md">USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION</a> structure.</p>
 
 ### -output-buffer
 

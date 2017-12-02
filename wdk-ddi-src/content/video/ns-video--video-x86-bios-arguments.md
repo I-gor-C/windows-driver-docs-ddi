@@ -61,31 +61,31 @@ typedef struct _VIDEO_X86_BIOS_ARGUMENTS {
 ## -struct-fields
 <dl>
 
-### -field <b>Eax</b>
+### -field Eax
 
 <dd></dd>
 
-### -field <b>Ebx</b>
+### -field Ebx
 
 <dd></dd>
 
-### -field <b>Ecx</b>
+### -field Ecx
 
 <dd></dd>
 
-### -field <b>Edx</b>
+### -field Edx
 
 <dd></dd>
 
-### -field <b>Esi</b>
+### -field Esi
 
 <dd></dd>
 
-### -field <b>Edi</b>
+### -field Edi
 
 <dd></dd>
 
-### -field <b>Ebp</b>
+### -field Ebp
 
 <dd>
 <p>Are the seven x86 microprocessor registers.</p>

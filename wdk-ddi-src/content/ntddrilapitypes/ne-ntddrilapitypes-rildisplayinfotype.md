@@ -7,7 +7,7 @@ old-location: netvista\rildisplayinfotype.htm
 old-project: netvista
 ms.assetid: 0da424f5-2970-497c-8965-af627fd582ff
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -59,19 +59,19 @@ typedef struct D3D10_DDI_VIEWPORT {
 ## -struct-fields
 <dl>
 
-### -field <b>TopLeftX</b>
+### -field TopLeftX
 
 <dd>
 <p>[in] A single-precision float vector for the top-left x-coordinate of the viewport.</p>
 </dd>
 
-### -field <b>TopLeftY</b>
+### -field TopLeftY
 
 <dd>
 <p>[in] A single-precision float vector for the top-left y-coordinate of the viewport.</p>
 </dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>
@@ -79,19 +79,19 @@ typedef struct D3D10_DDI_VIEWPORT {
      </p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[in] A single-precision float vector for the height of the viewport.</p>
 </dd>
 
-### -field <b>MinDepth</b>
+### -field MinDepth
 
 <dd>
 <p>[in] A single-precision float vector for the minimum depth of the viewport.</p>
 </dd>
 
-### -field <b>MaxDepth</b>
+### -field MaxDepth
 
 <dd>
 <p>[in] A single-precision float vector for the maximum depth of the viewport.</p>

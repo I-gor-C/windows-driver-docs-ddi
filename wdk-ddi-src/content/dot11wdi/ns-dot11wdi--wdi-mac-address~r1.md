@@ -7,7 +7,7 @@ old-location: netvista\wdi_mac_address.htm
 old-project: netvista
 ms.assetid: e170b797-f8bb-4d3c-a3ee-5fd1a817a500
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDI_MAC_ADDRESS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef struct _WDI_MAC_ADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>Address</b>
+### -field Address
 
 <dd>
 <p>A Wi-Fi MAC address.</p>

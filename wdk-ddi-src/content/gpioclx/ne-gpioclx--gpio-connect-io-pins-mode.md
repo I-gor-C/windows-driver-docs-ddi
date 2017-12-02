@@ -57,25 +57,25 @@ typedef enum _GPIO_CONNECT_IO_PINS_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="ConnectModeInvalid"></a><a id="connectmodeinvalid"></a><a id="CONNECTMODEINVALID"></a><b>ConnectModeInvalid</b>
+### -field ConnectModeInvalid
 
 <dd>
 <p>The connection mode (input or output) for this set of GPIO pins is uninitialized.</p>
 </dd>
 
-### -field <a id="ConnectModeInput"></a><a id="connectmodeinput"></a><a id="CONNECTMODEINPUT"></a><b>ConnectModeInput</b>
+### -field ConnectModeInput
 
 <dd>
 <p>This set of GPIO pins is configured as data inputs.</p>
 </dd>
 
-### -field <a id="ConnectModeOutput"></a><a id="connectmodeoutput"></a><a id="CONNECTMODEOUTPUT"></a><b>ConnectModeOutput</b>
+### -field ConnectModeOutput
 
 <dd>
 <p>This set of GPIO pins is configured as data outputs.</p>
 </dd>
 
-### -field <a id="ConnectModeMaximum"></a><a id="connectmodemaximum"></a><a id="CONNECTMODEMAXIMUM"></a><b>ConnectModeMaximum</b>
+### -field ConnectModeMaximum
 
 <dd>
 <p>The maximum value in the enumeration.</p>

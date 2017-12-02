@@ -58,31 +58,31 @@ typedef enum _PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="ResourceTypeSingle"></a><a id="resourcetypesingle"></a><a id="RESOURCETYPESINGLE"></a><b>ResourceTypeSingle</b>
+### -field ResourceTypeSingle
 
 <dd>
 <p>A single hardware counter. The counter is described by the <b>u.CounterIndex</b> member of the <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure.</p>
 </dd>
 
-### -field <a id="ResourceTypeRange"></a><a id="resourcetyperange"></a><a id="RESOURCETYPERANGE"></a><b>ResourceTypeRange</b>
+### -field ResourceTypeRange
 
 <dd>
 <p>A range of counter indexes. The counter indexes are described by the <b>u.Range</b> member of the <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure.</p>
 </dd>
 
-### -field <a id="ResourceTypeExtendedCounterConfiguration"></a><a id="resourcetypeextendedcounterconfiguration"></a><a id="RESOURCETYPEEXTENDEDCOUNTERCONFIGURATION"></a><b>ResourceTypeExtendedCounterConfiguration</b>
+### -field ResourceTypeExtendedCounterConfiguration
 
 <dd>
 <p>An extended counter configuration register address. The register address is contained in the <b>u.ExtendedRegisterAddress</b> member of the <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure. This value is used only on Intel NetBurst systems.</p>
 </dd>
 
-### -field <a id="ResourceTypeOverflow"></a><a id="resourcetypeoverflow"></a><a id="RESOURCETYPEOVERFLOW"></a><b>ResourceTypeOverflow</b>
+### -field ResourceTypeOverflow
 
 <dd>
 <p>A counter overflow interrupt. The <b>u</b> member of the <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure is not used for this counter resource type.</p>
 </dd>
 
-### -field <a id="ResourceTypeMax"></a><a id="resourcetypemax"></a><a id="RESOURCETYPEMAX"></a><b>ResourceTypeMax</b>
+### -field ResourceTypeMax
 
 <dd>
 <p>The maximum value in this enumeration type. </p>

@@ -58,31 +58,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_CompressionCaps_CanQuality"></a><a id="ks_compressioncaps_canquality"></a><a id="KS_COMPRESSIONCAPS_CANQUALITY"></a><b>KS_CompressionCaps_CanQuality</b>
+### -field KS_CompressionCaps_CanQuality
 
 <dd>
 <p>The video compressor supports quality settings.</p>
 </dd>
 
-### -field <a id="KS_CompressionCaps_CanCrunch"></a><a id="ks_compressioncaps_cancrunch"></a><a id="KS_COMPRESSIONCAPS_CANCRUNCH"></a><b>KS_CompressionCaps_CanCrunch</b>
+### -field KS_CompressionCaps_CanCrunch
 
 <dd>
 <p>The video compressor can compress the video to a specified data rate. If a minidriver supports this capability, the <b>dwBitRate</b> member of the <a href="stream.ks_videoinfoheader">KS_VIDEOINFOHEADER</a> structure specifies the default data rate.</p>
 </dd>
 
-### -field <a id="KS_CompressionCaps_CanKeyFrame"></a><a id="ks_compressioncaps_cankeyframe"></a><a id="KS_COMPRESSIONCAPS_CANKEYFRAME"></a><b>KS_CompressionCaps_CanKeyFrame</b>
+### -field KS_CompressionCaps_CanKeyFrame
 
 <dd>
 <p>The video compressor supports a user-specified key-frame rate.</p>
 </dd>
 
-### -field <a id="KS_CompressionCaps_CanBFrame"></a><a id="ks_compressioncaps_canbframe"></a><a id="KS_COMPRESSIONCAPS_CANBFRAME"></a><b>KS_CompressionCaps_CanBFrame</b>
+### -field KS_CompressionCaps_CanBFrame
 
 <dd>
 <p>The video compressor supports a user-specified P frame interval. The frames that occur between the key frames and P frames are bidirectional (B) frames.</p>
 </dd>
 
-### -field <a id="KS_CompressionCaps_CanWindow"></a><a id="ks_compressioncaps_canwindow"></a><a id="KS_COMPRESSIONCAPS_CANWINDOW"></a><b>KS_CompressionCaps_CanWindow</b>
+### -field KS_CompressionCaps_CanWindow
 
 <dd>
 <p>The video compressor supports a user-specified window size (that is, the number of frames whose average size cannot exceed the specified data rate).</p>

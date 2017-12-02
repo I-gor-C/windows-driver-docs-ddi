@@ -56,13 +56,13 @@ typedef enum _DXGK_PROTECTED_SESSION_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_PROTECTED_SESSION_STATUS_OK"></a><a id="dxgk_protected_session_status_ok"></a><b>DXGK_PROTECTED_SESSION_STATUS_OK</b>
+### -field DXGK_PROTECTED_SESSION_STATUS_OK
 
 <dd>
 <p>Indicates that the status is okay.</p>
 </dd>
 
-### -field <a id="DXGK_PROTECTED_SESSION_STATUS_INVALID"></a><a id="dxgk_protected_session_status_invalid"></a><b>DXGK_PROTECTED_SESSION_STATUS_INVALID</b>
+### -field DXGK_PROTECTED_SESSION_STATUS_INVALID
 
 <dd>
 <p>Indicates that the status is invalid.</p>

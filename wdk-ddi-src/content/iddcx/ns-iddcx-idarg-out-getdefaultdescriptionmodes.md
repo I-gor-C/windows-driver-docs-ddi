@@ -55,7 +55,7 @@ typedef struct IDARG_OUT_GETDEFAULTDESCRIPTIONMODES {
 ## -struct-fields
 <dl>
 
-### -field <b>DefaultMonitorModeBufferOutputCount</b>
+### -field DefaultMonitorModeBufferOutputCount
 
 <dd>
 <p>
@@ -64,7 +64,7 @@ typedef struct IDARG_OUT_GETDEFAULTDESCRIPTIONMODES {
                  </p>
 </dd>
 
-### -field <b>PreferredMonitorModeIdx</b>
+### -field PreferredMonitorModeIdx
 
 <dd>
 <p>

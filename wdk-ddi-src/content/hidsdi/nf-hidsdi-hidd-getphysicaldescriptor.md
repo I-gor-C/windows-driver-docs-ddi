@@ -56,19 +56,19 @@ BOOLEAN __stdcall HidD_GetPhysicalDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>HidDeviceObject</i> [in]
+### -param HidDeviceObject [in]
 
 <dd>
 <p>Specifies an open handle to a top-level collection.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that the routine uses to return the requested physical descriptor.</p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>Specifies the length, in bytes, of the buffer at <i>Buffer</i>.</p>
@@ -81,7 +81,7 @@ BOOLEAN __stdcall HidD_GetPhysicalDescriptor(
 ## -remarks
 <p>Only user-mode applications can call <b>HidD_GetPhysicalDescriptor</b>. Kernel-mode drivers can use an <a href="..\hidclass\ni-hidclass-ioctl-get-physical-descriptor.md">IOCTL_GET_PHYSICAL_DESCRIPTOR</a> request.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

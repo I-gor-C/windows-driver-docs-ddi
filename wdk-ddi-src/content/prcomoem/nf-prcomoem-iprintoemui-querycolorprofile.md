@@ -62,31 +62,31 @@ HRESULT QueryColorProfile(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> 
+### -param hPrinter 
 
 <dd>
 <p>Caller-supplied printer handle.</p>
 </dd>
 
-### -param <i>poemuiobj</i> 
+### -param poemuiobj 
 
 <dd>
 <p>Caller-supplied pointer to an <a href="..\printoem\ns-printoem--oemuiobj.md">OEMUIOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pPublicDM</i> 
+### -param pPublicDM 
 
 <dd>
 <p>Caller-supplied pointer to a validated <a href="display.devmodew">DEVMODEW</a> structure.</p>
 </dd>
 
-### -param <i>pOEMDM</i> 
+### -param pOEMDM 
 
 <dd>
 <p>Caller-supplied pointer to the user interface plug-in's private DEVMODEW structure members.</p>
 </dd>
 
-### -param <i>ulQueryMode</i> 
+### -param ulQueryMode 
 
 <dd>
 <p>One of the following caller-supplied bit flags, indicating the type of profile to be specified.</p>
@@ -115,19 +115,19 @@ HRESULT QueryColorProfile(
 <p> </p>
 </dd>
 
-### -param <i>pvProfileData</i> 
+### -param pvProfileData 
 
 <dd>
 <p>Caller-supplied pointer to a buffer to receive profile information.</p>
 </dd>
 
-### -param <i>pcbProfileData</i> 
+### -param pcbProfileData 
 
 <dd>
 <p>Caller-supplied pointer to a value representing the size, in bytes, of the buffer pointed to by <i>pvProfileData</i>.</p>
 </dd>
 
-### -param <i>pflProfileData</i> 
+### -param pflProfileData 
 
 <dd>
 <p>One of the following method-supplied bit flags, indicating the type of information the method is returning.</p>
@@ -175,7 +175,7 @@ HRESULT QueryColorProfile(
 
 <p>If <code>IPrintOemUI::QueryColorProfile</code> methods are exported by multiple user interface plug-ins, the methods are called in the order that the plug-ins are specified for installation.</p>
 
-<p>For more information about creating and installing user interface plug-ins, see <a href="NULL">Customizing Microsoft's Printer Drivers</a>.</p>
+<p>For more information about creating and installing user interface plug-ins, see <a href="https://msdn.microsoft.com/b7761209-1f6f-4288-af47-4ed855c2e629">Customizing Microsoft's Printer Drivers</a>.</p>
 
 ## -requirements
 <table>

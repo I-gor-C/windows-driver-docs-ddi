@@ -66,79 +66,79 @@ typedef struct HBA_AdapterAttributes {
 ## -struct-fields
 <dl>
 
-### -field <b>Manufacturer</b>
+### -field Manufacturer
 
 <dd>
 <p>Contains a string not exceeding 64 bytes in length that indicates the name of the manufacturer of the HBA..</p>
 </dd>
 
-### -field <b>SerialNumber</b>
+### -field SerialNumber
 
 <dd>
 <p>Contains a string not exceeding 64 bytes in length that indicates the serial number of the HBA. </p>
 </dd>
 
-### -field <b>Model</b>
+### -field Model
 
 <dd>
 <p>Contains a string not exceeding 256 bytes in length that indicates a vendor specific name or identifying text for the HBA model.  </p>
 </dd>
 
-### -field <b>ModelDescription</b>
+### -field ModelDescription
 
 <dd>
 <p>Contains a string not exceeding 256 bytes in length that provides a description of the HBA model.</p>
 </dd>
 
-### -field <b>NodeWWN</b>
+### -field NodeWWN
 
 <dd>
 <p>Contains the 64 bit world-wide name that indicates the name of the node (machine) that the HBA is located on. If an HBA has multiple ports associated with more than one node, the member will contain a name chosen by vendor-specific means from among the names of the associated nodes. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.</p>
 </dd>
 
-### -field <b>NodeSymbolicName</b>
+### -field NodeSymbolicName
 
 <dd>
 <p>Contains a string not exceeding 256 bytes in length that indicates the symbolic name of the fibre channel node (machine) that the adapter is located on. </p>
 </dd>
 
-### -field <b>HardwareVersion</b>
+### -field HardwareVersion
 
 <dd>
 <p>Contains a string not exceeding 256 bytes in length that indicates the hardware revision level of the HBA.</p>
 </dd>
 
-### -field <b>DriverVersion</b>
+### -field DriverVersion
 
 <dd>
 <p>Contains a string not exceeding 256 bytes in length that indicates version of the driver that manages the HBA.</p>
 </dd>
 
-### -field <b>OptionROMVersion</b>
+### -field OptionROMVersion
 
 <dd>
 <p>Contains a string not exceeding 256 bytes in length that specifies the option ROM or the version of the BIOS of the HBA. </p>
 </dd>
 
-### -field <b>FirmwareVersion</b>
+### -field FirmwareVersion
 
 <dd>
 <p>Contains a string not exceeding 256 bytes in length that identifies the version of the HBA's firmware.</p>
 </dd>
 
-### -field <b>VendorSpecificID</b>
+### -field VendorSpecificID
 
 <dd>
 <p>Contains a vendor-specified ID. </p>
 </dd>
 
-### -field <b>NumberOfPorts</b>
+### -field NumberOfPorts
 
 <dd>
 <p>Indicates the number of ports on the HBA. </p>
 </dd>
 
-### -field <b>DriverName</b>
+### -field DriverName
 
 <dd>
 <p>Contains a string not exceeding 256 bytes in length that indicates name of the file that contains the binary image of the device driver for the HBA. </p>

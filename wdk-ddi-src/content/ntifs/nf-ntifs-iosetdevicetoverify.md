@@ -7,7 +7,7 @@ old-location: ifsk\iosetdevicetoverify.htm
 old-project: ifsk
 ms.assetid: 509eb91d-7f34-4ebb-bc37-56889c15a1b3
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: IoSetDeviceToVerify
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ VOID IoSetDeviceToVerify(
 ## -parameters
 <dl>
 
-### -param <i>Thread</i> [in]
+### -param Thread [in]
 
 <dd>
 <p>A pointer to the thread.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in, optional]
+### -param DeviceObject [in, optional]
 
 <dd>
 <p>A pointer to the device object for a removable-media device. Can be <b>NULL</b>.</p>
@@ -146,10 +146,10 @@ VOID IoSetDeviceToVerify(
 <a href="..\ntifs\nf-ntifs-iogetdevicetoverify.md">IoGetDeviceToVerify</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 <dt>
 <a href="..\ntifs\nf-ntifs-ioverifyvolume.md">IoVerifyVolume</a>
@@ -157,4 +157,4 @@ VOID IoSetDeviceToVerify(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoSetDeviceToVerify routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoSetDeviceToVerify routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

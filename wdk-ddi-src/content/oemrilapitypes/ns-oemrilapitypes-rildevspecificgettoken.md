@@ -7,7 +7,7 @@ old-location: netvista\rildevspecificgettoken.htm
 old-project: netvista
 ms.assetid: b0a534e0-1527-4ef3-a53f-c18cacbb5445
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILDEVSPECIFICGETTOKEN, RILDEVSPECIFICGETTOKEN, *LPRILDEVSPECIFICGETTOKEN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,27 +59,27 @@ typedef struct _RILDEVSPECIFICGETTOKEN {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwTimeout</b>
+### -field dwTimeout
 
 <dd></dd>
 
-### -field <b>bProtocolId</b>
+### -field bProtocolId
 
 <dd></dd>
 
-### -field <b>cbHeaderSize</b>
+### -field cbHeaderSize
 
 <dd></dd>
 
-### -field <b>bHeader</b>
+### -field bHeader
 
 <dd></dd>
 </dl>

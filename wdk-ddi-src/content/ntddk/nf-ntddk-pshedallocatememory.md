@@ -54,7 +54,7 @@ PVOID PshedAllocateMemory(
 ## -parameters
 <dl>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>The size, in bytes, of the block of memory being allocated.</p>

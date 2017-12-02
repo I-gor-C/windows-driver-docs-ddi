@@ -7,7 +7,7 @@ old-location: ifsk\srv_open_ecp_context.htm
 old-project: ifsk
 ms.assetid: 6860f512-758d-4a75-88e4-17310b3e6349
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: SRV_OPEN_ECP_CONTEXT, SRV_OPEN_ECP_CONTEXT, *PSRV_OPEN_ECP_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ typedef struct _SRV_OPEN_ECP_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>ShareName</b>
+### -field ShareName
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that supplies the share name for the server that contains the files to be open. </p>
 </dd>
 
-### -field <b>SocketAddress</b>
+### -field SocketAddress
 
 <dd>
 <p>A pointer to a <a href="..\ntifs\ns-ntifs-sockaddr-storage.md">SOCKADDR_STORAGE</a> structure that specifies the transport address of a client computer. This client originates the open file request. </p>
 </dd>
 
-### -field <b>OplockBlockState</b>
+### -field OplockBlockState
 
 <dd>
 <p>A Boolean value that indicates whether the Server Message Block (SMB) server blocks the open thread that is waiting for the oplock break. <b>TRUE</b> indicates that the open thread is in the blocking state and <b>FALSE</b> otherwise. </p>
 </dd>
 
-### -field <b>OplockAppState</b>
+### -field OplockAppState
 
 <dd>
 <p>A Boolean value that indicates whether the SMB server requests an oplock with the current open thread. Set to <b>TRUE</b> to request the oplock and <b>FALSE</b> otherwise. </p>
 </dd>
 
-### -field <b>OplockFinalState</b>
+### -field OplockFinalState
 
 <dd>
 <p>A Boolean value that indicates whether a file-open operation is the final file-open operation to request the oplock. <b>TRUE</b> indicates the final file-open operation to obtain the oplock and <b>FALSE</b> indicates otherwise. </p>
@@ -129,4 +129,4 @@ typedef struct _SRV_OPEN_ECP_CONTEXT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SRV_OPEN_ECP_CONTEXT structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SRV_OPEN_ECP_CONTEXT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

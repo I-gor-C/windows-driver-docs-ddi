@@ -55,13 +55,13 @@ NTSTATUS ZwSetEvent(
 ## -parameters
 <dl>
 
-### -param <i>EventHandle</i> [in]
+### -param EventHandle [in]
 
 <dd>
 <p>A handle to an event object.</p>
 </dd>
 
-### -param <i>PreviousState</i> [out, optional]
+### -param PreviousState [out, optional]
 
 <dd>
 <p>An optional pointer to a variable where the previous state of the event object is stored on output. </p>

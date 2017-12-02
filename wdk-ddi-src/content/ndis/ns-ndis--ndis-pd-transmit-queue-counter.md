@@ -7,7 +7,7 @@ old-location: netvista\ndis_pd_transmit_queue_counter.htm
 old-project: netvista
 ms.assetid: 944E824D-8092-4165-97A6-A35858EA0CEB
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PD_TRANSMIT_QUEUE_COUNTER, NDIS_PD_TRANSMIT_QUEUE_COUNTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ typedef struct _NDIS_PD_TRANSMIT_QUEUE_COUNTER {
 ## -struct-fields
 <dl>
 
-### -field <b>PacketsTransmitted</b>
+### -field PacketsTransmitted
 
 <dd>
 <p>The amount of packets transmitted.</p>
 </dd>
 
-### -field <b>BytesTransmitted</b>
+### -field BytesTransmitted
 
 <dd>
 <p>The amount of bytes transmitted.</p>

@@ -55,7 +55,7 @@ BOOLEAN RemoveEntryList(
 ## -parameters
 <dl>
 
-### -param <i>Entry</i> [in]
+### -param Entry [in]
 
 <dd>
 <p>Pointer to the <a href="kernel.list_entry">LIST_ENTRY</a> structure that represents the entry to be removed.</p>

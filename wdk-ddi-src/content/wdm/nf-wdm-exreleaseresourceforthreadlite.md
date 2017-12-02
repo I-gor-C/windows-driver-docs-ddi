@@ -56,13 +56,13 @@ VOID ExReleaseResourceForThreadLite(
 ## -parameters
 <dl>
 
-### -param <i>Resource</i> [in, out]
+### -param Resource [in, out]
 
 <dd>
 <p>A pointer to the resource to release.</p>
 </dd>
 
-### -param <i>ResourceThreadId</i> [in]
+### -param ResourceThreadId [in]
 
 <dd>
 <p>Identifies the thread that originally acquired the resource. If this is not the currently executing thread, the caller must have transferred ownership of the resource by calling the <a href="..\wdm\nf-wdm-exsetresourceownerpointerex.md">ExSetResourceOwnerPointerEx</a> routine first on the thread that originally acquired the resource.</p>
@@ -75,7 +75,7 @@ VOID ExReleaseResourceForThreadLite(
 ## -remarks
 <p>If this is not the currently executing thread, the caller must have transferred ownership of the resource by calling the <a href="..\wdm\nf-wdm-exsetresourceownerpointerex.md">ExSetResourceOwnerPointerEx</a> routine first on the thread that originally acquired the resource. This is to ensure that thread A does not get terminated or deleted before thread B has a chance to release the resource.</p>
 
-<p>Unless the caller is running in a system thread, the caller must explicitly disable the delivery of normal kernel APCs before calling this routine. This requirement prevents threads from being suspended while they manipulate or hold a resource. The caller can disable normal kernel APC delivery by calling the <a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a> routine. Delivery must remain disabled until the resource is released, at which point it can be reenabled by calling the <a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a> routine. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543219">Disabling APCs</a>.</p>
+<p>Unless the caller is running in a system thread, the caller must explicitly disable the delivery of normal kernel APCs before calling this routine. This requirement prevents threads from being suspended while they manipulate or hold a resource. The caller can disable normal kernel APC delivery by calling the <a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a> routine. Delivery must remain disabled until the resource is released, at which point it can be reenabled by calling the <a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a> routine. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543219">Disabling APCs</a>.</p>
 
 <p>This requirement does not apply to calls made to <b>ExReleaseResourceForThreadLite</b> from a system thread. A caller running in a system thread does not need to explicitly disable APCs before calling this routine.</p>
 

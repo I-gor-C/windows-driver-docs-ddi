@@ -56,19 +56,19 @@ typedef struct _PEP_PROCESSOR_PERF_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Performance</b>
+### -field Performance
 
 <dd>
 <p>On output, the performance level (on the scale returned by the <a href="..\pepfx\ns-pepfx--pep-query-component-perf-capabilities.md">PEP_QUERY_COMPONENT_PERF_CAPABILITIES</a> notification) of this performance state.</p>
 </dd>
 
-### -field <b>Frequency</b>
+### -field Frequency
 
 <dd>
 <p>On output, the frequency (in MHz) of this performance state. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>

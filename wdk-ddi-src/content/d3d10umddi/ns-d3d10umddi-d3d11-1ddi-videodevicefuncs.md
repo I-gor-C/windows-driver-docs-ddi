@@ -134,487 +134,487 @@ typedef struct D3D11_1DDI_VIDEODEVICEFUNCS {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnGetVideoDecoderProfileCount</b>
+### -field pfnGetVideoDecoderProfileCount
 
 <dd>
 <p>The entry point for the driver's <a href="display.getvideodecoderprofilecount">VideoDecoderProfileCount</a> function.</p>
 </dd>
 
-### -field <b>pfnGetVideoDecoderProfile</b>
+### -field pfnGetVideoDecoderProfile
 
 <dd>
 <p>The entry point for the driver's <a href="display.getvideodecoderprofile">VideoDecoderProfile</a> function.</p>
 </dd>
 
-### -field <b>pfnCheckVideoDecoderFormat</b>
+### -field pfnCheckVideoDecoderFormat
 
 <dd>
 <p>The entry point for the driver's <a href="display.checkvideodecoderformat">CheckVideoDecoderFormat</a> function.</p>
 </dd>
 
-### -field <b>pfnGetVideoDecoderConfigCount</b>
+### -field pfnGetVideoDecoderConfigCount
 
 <dd>
 <p>The entry point for the driver's <a href="display.getvideodecoderconfigcount">GetVideoDecoderConfig</a> function.</p>
 </dd>
 
-### -field <b>pfnGetVideoDecoderConfig</b>
+### -field pfnGetVideoDecoderConfig
 
 <dd>
 <p>The entry point for the driver's <a href="display.getvideodecoderconfig">GetVideoDecoderConfig</a> function.</p>
 </dd>
 
-### -field <b>pfnGetVideoDecoderBufferTypeCount</b>
+### -field pfnGetVideoDecoderBufferTypeCount
 
 <dd>
 <p>The entry point for the driver's <a href="display.getvideodecoderbuffertypecount">GetVideoDecoderBufferTypeCount</a> function.</p>
 </dd>
 
-### -field <b>pfnGetVideoDecoderBufferInfo</b>
+### -field pfnGetVideoDecoderBufferInfo
 
 <dd>
 <p>The entry point for the driver's <a href="display.getvideodecoderbufferinfo">GetVideoDecoderBufferInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateVideoDecoderSize</b>
+### -field pfnCalcPrivateVideoDecoderSize
 
 <dd>
 <p>The entry point for the driver's <a href="display.calcprivatevideodecodersize">CalcPrivateVideoDecoderSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateVideoDecoder</b>
+### -field pfnCreateVideoDecoder
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createvideodecoder.md">CreateVideoDecoder</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyVideoDecoder</b>
+### -field pfnDestroyVideoDecoder
 
 <dd>
 <p>The entry point for the driver's <a href="display.destroyvideodecoder">DestroyVideoDecoder</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoDecoderExtension</b>
+### -field pfnVideoDecoderExtension
 
 <dd>
 <p>The entry point for the driver's <a href="display.videodecoderextension">VideoDecoderExtension</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoDecoderBeginFrame</b>
+### -field pfnVideoDecoderBeginFrame
 
 <dd>
 <p>The entry point for the driver's <a href="display.videodecoderbeginframe">VideoDecoderBeginFrame</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoDecoderEndFrame</b>
+### -field pfnVideoDecoderEndFrame
 
 <dd>
 <p>The entry point for the driver's <a href="display.videodecoderendframe">VideoDecoderEndFrame</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoDecoderSubmitBuffers</b>
+### -field pfnVideoDecoderSubmitBuffers
 
 <dd>
 <p>The entry point for the driver's <a href="display.videodecodersubmitbuffers">VideoDecoderSubmitBuffers</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateVideoProcessorEnumSize</b>
+### -field pfnCalcPrivateVideoProcessorEnumSize
 
 <dd>
 <p>The entry point for the driver's <a href="display.calcprivatevideoprocessorenumsize">CalcPrivateVideoProcessorEnumSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateVideoProcessorEnum</b>
+### -field pfnCreateVideoProcessorEnum
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createvideoprocessorenum.md">CreateVideoProcessorEnum</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyVideoProcessorEnum</b>
+### -field pfnDestroyVideoProcessorEnum
 
 <dd>
 <p>The entry point for the driver's <a href="display.destroyvideoprocessorenum">DestroyVideoProcessorEnum</a> function.</p>
 </dd>
 
-### -field <b>pfnCheckVideoProcessorFormat</b>
+### -field pfnCheckVideoProcessorFormat
 
 <dd>
 <p>The entry point for the driver's <a href="display.checkvideoprocessorformat">CheckVideoProcessorFormat</a> function.</p>
 </dd>
 
-### -field <b>pfnGetVideoProcessorCaps</b>
+### -field pfnGetVideoProcessorCaps
 
 <dd>
 <p>The entry point for the driver's <a href="display.getvideoprocessorcaps">GetVideoProcessorCaps</a> function.</p>
 </dd>
 
-### -field <b>pfnGetVideoProcessorRateConversionCaps</b>
+### -field pfnGetVideoProcessorRateConversionCaps
 
 <dd>
 <p>The entry point for the driver's <a href="display.getvideoprocessorrateconversioncaps">GetVideoProcessorRateConversionCaps</a> function.</p>
 </dd>
 
-### -field <b>pfnGetVideoProcessorCustomRate</b>
+### -field pfnGetVideoProcessorCustomRate
 
 <dd>
 <p>The entry point for the driver's <a href="display.getvideoprocessorcustomrate">GetVideoProcessorCustomRate</a> function.</p>
 </dd>
 
-### -field <b>pfnGetVideoProcessorFilterRange</b>
+### -field pfnGetVideoProcessorFilterRange
 
 <dd>
 <p>The entry point for the driver's <a href="display.getvideoprocessorfilterrange">GetVideoProcessorFilterRange</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateVideoProcessorSize</b>
+### -field pfnCalcPrivateVideoProcessorSize
 
 <dd>
 <p>The entry point for the driver's <a href="display.calcprivatevideoprocessorsize">CalcPrivateVideoProcessorSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateVideoProcessor</b>
+### -field pfnCreateVideoProcessor
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createvideoprocessor.md">CreateVideoProcessor</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyVideoProcessor</b>
+### -field pfnDestroyVideoProcessor
 
 <dd>
 <p>The entry point for the driver's <a href="display.destroyvideoprocessor1">DestroyVideoProcessor</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetOutputTargetRect</b>
+### -field pfnVideoProcessorSetOutputTargetRect
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetoutputtargetrect">VideoProcessorSetOutputTargetRect</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetOutputBackgroundColor</b>
+### -field pfnVideoProcessorSetOutputBackgroundColor
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetoutputbackgroundcolor">VideoProcessorSetOutputBackgroundColor</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetOutputColorSpace</b>
+### -field pfnVideoProcessorSetOutputColorSpace
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetoutputcolorspace">VideoProcessorSetOutputColorSpace</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetOutputAlphaFillMode</b>
+### -field pfnVideoProcessorSetOutputAlphaFillMode
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetoutputalphafillmode">VideoProcessorSetOutputAlphaFillMode</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetOutputConstriction</b>
+### -field pfnVideoProcessorSetOutputConstriction
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetoutputconstriction">VideoProcessorSetOutputConstriction</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetOutputStereoMode</b>
+### -field pfnVideoProcessorSetOutputStereoMode
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetoutputstereomode">VideoProcessorSetOutputStereoMode</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetOutputExtension</b>
+### -field pfnVideoProcessorSetOutputExtension
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetoutputextension">VideoProcessorSetOutputExtension</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorGetOutputExtension</b>
+### -field pfnVideoProcessorGetOutputExtension
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorgetoutputextension">VideoProcessorGetOutputExtension</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetStreamFrameFormat</b>
+### -field pfnVideoProcessorSetStreamFrameFormat
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetstreamframeformat">VideoProcessorSetStreamFrameFormat</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetStreamColorSpace</b>
+### -field pfnVideoProcessorSetStreamColorSpace
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetstreamcolorspace">VideoProcessorSetStreamColorSpace</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetStreamOutputRate</b>
+### -field pfnVideoProcessorSetStreamOutputRate
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetstreamoutputrate">VideoProcessorSetStreamOutputRate</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetStreamSourceRect</b>
+### -field pfnVideoProcessorSetStreamSourceRect
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetstreamsourcerect">VideoProcessorSetStreamSourceRect</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetStreamDestRect</b>
+### -field pfnVideoProcessorSetStreamDestRect
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetstreamdestrect">VideoProcessorSetStreamDestRect</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetStreamAlpha</b>
+### -field pfnVideoProcessorSetStreamAlpha
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetstreamalpha">VideoProcessorSetStreamAlpha</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetStreamPalette</b>
+### -field pfnVideoProcessorSetStreamPalette
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetstreampalette">VideoProcessorSetStreamPalette</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetStreamPixelAspectRatio</b>
+### -field pfnVideoProcessorSetStreamPixelAspectRatio
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetstreampixelaspectratio">VideoProcessorSetStreamPixelAspectRatio</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetStreamLumaKey</b>
+### -field pfnVideoProcessorSetStreamLumaKey
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetstreamlumakey">VideoProcessorSetStreamLumaKey</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetStreamStereoFormat</b>
+### -field pfnVideoProcessorSetStreamStereoFormat
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetstreamstereoformat">VideoProcessorSetStreamStereoFormat</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetStreamAutoProcessingMode</b>
+### -field pfnVideoProcessorSetStreamAutoProcessingMode
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetstreamautoprocessingmode">VideoProcessorSetStreamAutoProcessingMode</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetStreamFilter</b>
+### -field pfnVideoProcessorSetStreamFilter
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetstreamfilter">VideoProcessorSetStreamFilter</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetStreamExtension</b>
+### -field pfnVideoProcessorSetStreamExtension
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetstreamextension">VideoProcessorSetStreamExtension</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorGetStreamExtension</b>
+### -field pfnVideoProcessorGetStreamExtension
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorgetstreamextension">VideoProcessorGetStreamExtension</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorBlt</b>
+### -field pfnVideoProcessorBlt
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorblt">VideoProcessorBlt</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateVideoDecoderOutputViewSize</b>
+### -field pfnCalcPrivateVideoDecoderOutputViewSize
 
 <dd>
 <p>The entry point for the driver's <a href="display.calcprivatevideodecoderoutputviewsize">CalcPrivateVideoDecoderOutputViewSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateVideoDecoderOutputView</b>
+### -field pfnCreateVideoDecoderOutputView
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createvideodecoderoutputview.md">CreateVideoDecoderOutputView</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyVideoDecoderOutputView</b>
+### -field pfnDestroyVideoDecoderOutputView
 
 <dd>
 <p>The entry point for the driver's <a href="display.destroyvideodecoderoutputview">DestroyVideoDecoderOutputView</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateVideoProcessorInputViewSize</b>
+### -field pfnCalcPrivateVideoProcessorInputViewSize
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-calcprivatevideoprocessorinputviewsize.md">CalcPrivateVideoProcessorInputViewSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateVideoProcessorInputView</b>
+### -field pfnCreateVideoProcessorInputView
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createvideoprocessorinputview.md">CreateVideoProcessorInputView</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyVideoProcessorInputView</b>
+### -field pfnDestroyVideoProcessorInputView
 
 <dd>
 <p>The entry point for the driver's <a href="display.destroyvideoprocessorinputview">DestroyVideoProcessorInputView</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateVideoProcessorOutputViewSize</b>
+### -field pfnCalcPrivateVideoProcessorOutputViewSize
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-calcprivatevideoprocessoroutputviewsize.md">CalcPrivateVideoProcessorOutputViewSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateVideoProcessorOutputView</b>
+### -field pfnCreateVideoProcessorOutputView
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createvideoprocessoroutputview.md">CreateVideoProcessorOutputView</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyVideoProcessorOutputView</b>
+### -field pfnDestroyVideoProcessorOutputView
 
 <dd>
 <p>The entry point for the driver's <a href="display.destroyvideoprocessoroutputview">DestroyVideoProcessorOutputView</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorInputViewReadAfterWriteHazard</b>
+### -field pfnVideoProcessorInputViewReadAfterWriteHazard
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorinputviewreadafterwritehazard">VideoProcessorInputViewReadAfterWriteHazard</a> function.</p>
 </dd>
 
-### -field <b>pfnGetContentProtectionCaps</b>
+### -field pfnGetContentProtectionCaps
 
 <dd>
 <p>The entry point for the driver's <a href="display.getcontentprotectioncaps">GetContentProtectionCaps</a> function.</p>
 </dd>
 
-### -field <b>pfnGetCryptoKeyExchangeType</b>
+### -field pfnGetCryptoKeyExchangeType
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-getcryptokeyexchangetype.md">GetCryptoKeyExchangeType</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateCryptoSessionSize</b>
+### -field pfnCalcPrivateCryptoSessionSize
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-calcprivatecryptosessionsize.md">CalcPrivateCryptoSessionSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateCryptoSession</b>
+### -field pfnCreateCryptoSession
 
 <dd>
 <p>The entry point for the driver's <a href="display.createcryptosession1">CreateCryptoSession</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyCryptoSession</b>
+### -field pfnDestroyCryptoSession
 
 <dd>
 <p>The entry point for the driver's <a href="display.destroycryptosession1">DestroyCryptoSession</a> function.</p>
 </dd>
 
-### -field <b>pfnGetCertificateSize</b>
+### -field pfnGetCertificateSize
 
 <dd>
 <p>The entry point for the driver's <a href="display.getcertificatesize">GetCertificateSize</a> function.</p>
 </dd>
 
-### -field <b>pfnGetCertificate</b>
+### -field pfnGetCertificate
 
 <dd>
 <p>The entry point for the driver's <a href="display.getcertificate">GetCertificate</a> function.</p>
 </dd>
 
-### -field <b>pfnNegotiateCryptoSessionKeyExchange</b>
+### -field pfnNegotiateCryptoSessionKeyExchange
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-negotiatecryptosessionkeyeschange.md">NegotiateCryptoSessionKeyExchange</a> function.</p>
 </dd>
 
-### -field <b>pfnEncryptionBlt</b>
+### -field pfnEncryptionBlt
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-encryptionblt.md">EncryptionBlt(D3D11_1)</a> function.</p>
 </dd>
 
-### -field <b>pfnDecryptionBlt</b>
+### -field pfnDecryptionBlt
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-decryptionblt.md">DecryptionBlt(D3D11_1)</a> function.</p>
 </dd>
 
-### -field <b>pfnStartSessionKeyRefresh</b>
+### -field pfnStartSessionKeyRefresh
 
 <dd>
 <p>The entry point for the driver's <a href="display.startsessionkeyrefresh1">StartSessionKeyRefresh</a> function.</p>
 </dd>
 
-### -field <b>pfnFinishSessionKeyRefresh</b>
+### -field pfnFinishSessionKeyRefresh
 
 <dd>
 <p>The entry point for the driver's <a href="display.finishsessionkeyrefresh1">FinishSessionKeyRefresh</a> function.</p>
 </dd>
 
-### -field <b>pfnGetEncryptionBltKey</b>
+### -field pfnGetEncryptionBltKey
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3dumddi\ns-d3dumddi--getencryptionbltkey.md">GetEncryptionBltKey</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateAuthenticatedChannelSize</b>
+### -field pfnCalcPrivateAuthenticatedChannelSize
 
 <dd>
 <p>The entry point for the driver's <a href="display.calcprivateauthenticatedchannelsize">CalcPrivateAuthenticatedChannelSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateAuthenticatedChannel</b>
+### -field pfnCreateAuthenticatedChannel
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createauthenticatedchannel.md">CreateAuthenticatedChannel(D3D11_1)</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyAuthenticatedChannel</b>
+### -field pfnDestroyAuthenticatedChannel
 
 <dd>
 <p>The entry point for the driver's <a href="display.destroyauthenticatedchannel1">DestroyAuthenticatedChannel</a> function.</p>
 </dd>
 
-### -field <b>pfnNegotiateAuthenticatedChannelKeyExchange</b>
+### -field pfnNegotiateAuthenticatedChannelKeyExchange
 
 <dd>
 <p>The entry point for the driver's <a href="display.negotiateauthenticatedchannelkeyexchange">NegotiateAuthenticatedChannelKeyExchange</a> function.</p>
 </dd>
 
-### -field <b>pfnQueryAuthenticatedChannel</b>
+### -field pfnQueryAuthenticatedChannel
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-queryauthenticatedchannel.md">QueryAuthenticatedChannel(D3D11_1)</a> function.</p>
 </dd>
 
-### -field <b>pfnConfigureAuthenticatedChannel</b>
+### -field pfnConfigureAuthenticatedChannel
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-configureauthenticatedchannel.md">ConfigureAuthenticatedChannel(D3D11_1)</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoDecoderGetHandle</b>
+### -field pfnVideoDecoderGetHandle
 
 <dd>
 <p>The entry point for the driver's <a href="display.videodecodergethandle">VideoDecoderGetHandle</a> function.</p>
 </dd>
 
-### -field <b>pfnCryptoSessionGetHandle</b>
+### -field pfnCryptoSessionGetHandle
 
 <dd>
 <p>The entry point for the driver's <a href="display.cryptosessiongethandle">CryptoSessionGetHandle</a> function.</p>
 </dd>
 
-### -field <b>pfnVideoProcessorSetStreamRotation</b>
+### -field pfnVideoProcessorSetStreamRotation
 
 <dd>
 <p>The entry point for the driver's <a href="display.videoprocessorsetstreamrotation">VideoProcessorSetStreamRotation</a> function.</p>
 </dd>
 
-### -field <b>pfnGetCaptureHandle</b>
+### -field pfnGetCaptureHandle
 
 <dd>
 <p>The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-getcapturehandle.md">GetCaptureHandle</a> function.</p>

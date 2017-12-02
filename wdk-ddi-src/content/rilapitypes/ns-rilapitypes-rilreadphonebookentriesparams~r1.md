@@ -7,7 +7,7 @@ old-location: netvista\rilreadphonebookentriesparams_2.htm
 old-project: netvista
 ms.assetid: 4cf1b9ab-0082-4ad3-9fd5-a29b51ca6bc0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILREADPHONEBOOKENTRIESPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef struct _RILREADPHONEBOOKENTRIESPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwStoreLocation</b>
+### -field dwStoreLocation
 
 <dd></dd>
 
-### -field <b>dwStartIndex</b>
+### -field dwStartIndex
 
 <dd></dd>
 
-### -field <b>dwEndIndex</b>
+### -field dwEndIndex
 
 <dd></dd>
 </dl>

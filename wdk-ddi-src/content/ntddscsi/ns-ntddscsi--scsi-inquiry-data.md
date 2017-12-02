@@ -60,43 +60,43 @@ typedef struct _SCSI_INQUIRY_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>PathId</b>
+### -field PathId
 
 <dd>
 <p>Indicates the number of the bus the device is located on.</p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>Indicates the number of the device on the bus. </p>
 </dd>
 
-### -field <b>Lun</b>
+### -field Lun
 
 <dd>
 <p>Indicates the logical unit number of the logical unit on the target device. </p>
 </dd>
 
-### -field <b>DeviceClaimed</b>
+### -field DeviceClaimed
 
 <dd>
 <p>When <b>TRUE</b>, indicates that the device has been claimed by a class driver. </p>
 </dd>
 
-### -field <b>InquiryDataLength</b>
+### -field InquiryDataLength
 
 <dd>
 <p>Indicates the length in bytes of inquiry data. </p>
 </dd>
 
-### -field <b>NextInquiryDataOffset</b>
+### -field NextInquiryDataOffset
 
 <dd>
 <p>Contains an offset to the inquiry data for the next logical unit on the target device. </p>
 </dd>
 
-### -field <b>InquiryData</b>
+### -field InquiryData
 
 <dd>
 <p>Pointer to buffer containing the inquiry data for the logical unit. </p>

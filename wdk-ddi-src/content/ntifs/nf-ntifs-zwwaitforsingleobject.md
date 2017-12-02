@@ -56,19 +56,19 @@ NTSTATUS ZwWaitForSingleObject(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>A handle to the object.</p>
 </dd>
 
-### -param <i>Alertable</i> [in]
+### -param Alertable [in]
 
 <dd>
 <p>A boolean value that specifies whether the wait is alertable.</p>
 </dd>
 
-### -param <i>Timeout</i> [in, optional]
+### -param Timeout [in, optional]
 
 <dd>
 <p>An optional pointer to a time-out value that specifies the absolute or relative time at which the wait is to be completed. A negative value specifies an interval relative to the current time. The value should be expressed in units of 100 nanoseconds. Absolute expiration times track any changes in the system time. Relative expiration times are not affected by system time changes.</p>

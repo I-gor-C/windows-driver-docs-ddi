@@ -56,38 +56,38 @@ VOID KeSetImportanceDpc(
 ## -parameters
 <dl>
 
-### -param <i>Dpc</i> [in, out]
+### -param Dpc [in, out]
 
 <dd>
 <p>Pointer to the caller's DPC object, which <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a> already initialized. </p>
 </dd>
 
-### -param <i>Importance</i> [in]
+### -param Importance [in]
 
 <dd>
 <p>Specifies one of the following system-defined values to determine the behavior of <a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a> and <a href="..\wdm\nf-wdm-iorequestdpc.md">IoRequestDpc</a> when either routine is used to queue the DPC.</p>
 <p></p>
 <dl>
 
-### -param <a id="LowImportance"></a><a id="lowimportance"></a><a id="LOWIMPORTANCE"></a>LowImportance
+### -param LowImportance
 
 <dd>
 <p>Place the DPC at the end of the DPC queue, and do not begin processing of the queue. </p>
 </dd>
 
-### -param <a id="MediumImportance"></a><a id="mediumimportance"></a><a id="MEDIUMIMPORTANCE"></a>MediumImportance
+### -param MediumImportance
 
 <dd>
 <p>Place the DPC at the end of the DPC queue. If the DPC is assigned to the current processor's DPC queue, begin processing the queue immediately. <b>MediumImportance</b> is the default value for <i>Importance</i>. </p>
 </dd>
 
-### -param <a id="MediumHighImportance"></a><a id="mediumhighimportance"></a><a id="MEDIUMHIGHIMPORTANCE"></a>MediumHighImportance
+### -param MediumHighImportance
 
 <dd>
 <p>Place the DPC at the end of the DPC queue, and begin processing the queue immediately. MediumHighImportance is available only on Windows Vista and later versions of Windows.</p>
 </dd>
 
-### -param <a id="HighImportance"></a><a id="highimportance"></a><a id="HIGHIMPORTANCE"></a>HighImportance
+### -param HighImportance
 
 <dd>
 <p>Place the DPC at the beginning of the DPC queue, and begin processing the queue immediately. </p>
@@ -106,7 +106,7 @@ VOID KeSetImportanceDpc(
 
 <p>When the system begins processing the DPC queue. Typically, <b>KeInsertQueueDpc</b> and <b>IoRequestDpc</b> immediately begin processing the DPC queue for the current processor. Drivers can specify different values for <i>Importance</i> to change this behavior.</p>
 
-<p>By default, DPCs are assigned to the DPC queue for the current processor, so specifying <b>MediumImportance</b> or <b>MediumHighImportance</b> for <i>Importance</i> has the same effect. However, drivers can use <a href="..\ntddk\nf-ntddk-kesettargetprocessordpc.md">KeSetTargetProcessorDpc</a> to change the processor that the DPC will be assigned to.</p>
+<p>By default, DPCs are assigned to the DPC queue for the current processor, so specifying <b>MediumImportance</b> or <b>MediumHighImportance</b> for <i>Importance</i> has the same effect. However, drivers can use <a href="..\wdm\nf-wdm-kesettargetprocessordpc.md">KeSetTargetProcessorDpc</a> to change the processor that the DPC will be assigned to.</p>
 
 <p>For Windows Vista and later versions of the Windows operating system, you can use <b>KeSetImportanceDpc</b> for threaded DPCs. If the caller sets <i>Importance</i> to <b>HighImportance</b>, the DPC is placed at the beginning of the queue; otherwise, it is placed at the end. The routine does not affect when the threaded DPC queue is processed. Threaded DPCs are always processed by a dedicated thread at IRQL = PASSIVE_LEVEL. For more information about threaded DPCs, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564621">Threaded DPCs</a>.</p>
 
@@ -186,7 +186,7 @@ VOID KeSetImportanceDpc(
 <a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kesettargetprocessordpc.md">KeSetTargetProcessorDpc</a>
+<a href="..\wdm\nf-wdm-kesettargetprocessordpc.md">KeSetTargetProcessorDpc</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-kesynchronizeexecution.md">KeSynchronizeExecution</a>

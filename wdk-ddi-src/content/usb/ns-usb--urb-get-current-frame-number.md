@@ -56,13 +56,13 @@ struct _URB_GET_CURRENT_FRAME_NUMBER {
 ## -struct-fields
 <dl>
 
-### -field <b>Hdr</b>
+### -field Hdr
 
 <dd>
 <p>Pointer to a <a href="buses._urb_header">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_GET_CURRENT_FRAME_NUMBER, and <b>Hdr.Length</b> must be <code>sizeof(_URB_GET_CURRENT_FRAME_NUMBER)</code>.</p>
 </dd>
 
-### -field <b>FrameNumber</b>
+### -field FrameNumber
 
 <dd>
 <p>Contains the current 32-bit frame number, on the USB bus, on return from the host controller driver.</p>

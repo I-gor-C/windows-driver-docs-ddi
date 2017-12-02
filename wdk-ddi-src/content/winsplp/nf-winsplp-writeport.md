@@ -58,25 +58,25 @@ BOOL WritePort(
 ## -parameters
 <dl>
 
-### -param <i>hPort</i> [in]
+### -param hPort [in]
 
 <dd>
 <p>Caller-supplied port handle.</p>
 </dd>
 
-### -param <i>pBuffer</i> [in]
+### -param pBuffer [in]
 
 <dd>
 <p>Caller-supplied pointer to a buffer containing data to be written to the port.</p>
 </dd>
 
-### -param <i>cbBuf</i> 
+### -param cbBuf 
 
 <dd>
 <p>Caller-supplied size, in bytes, of <i>pBuffer</i>.</p>
 </dd>
 
-### -param <i>pcbWritten</i> [out]
+### -param pcbWritten [out]
 
 <dd>
 <p>Caller-supplied pointer to a location to receive the number of bytes successfully written to the port.</p>
@@ -88,7 +88,7 @@ BOOL WritePort(
 
 ## -remarks
 <p>
-<a href="NULL">Language monitors</a> and port monitor server DLLs are required to define a <code>WritePort</code> function and include the function's address in a <a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a> structure.</p>
+<a href="https://msdn.microsoft.com/26ba1c22-390a-4187-b67a-3f3497964f8e">Language monitors</a> and port monitor server DLLs are required to define a <code>WritePort</code> function and include the function's address in a <a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a> structure.</p>
 
 <p>The handle received as the function's <i>hPort</i> argument is the port handle that the monitor's <a href="..\winsplp\nf-winsplp-openport.md">OpenPort</a> or <a href="print.openportex">OpenPortEx</a> function supplied.</p>
 

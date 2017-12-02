@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>PoCallDriver</b> routine passes a power <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> to the next-lower driver in the device stack. (Windows Server 2003, Windows XP, and Windows 2000 only.)</p>
+<p>The <b>PoCallDriver</b> routine passes a power <a href="..\wdm\ns-wdm--irp.md">IRP</a> to the next-lower driver in the device stack. (Windows Server 2003, Windows XP, and Windows 2000 only.)</p>
 
 
 ## -syntax
@@ -56,13 +56,13 @@ NTSTATUS PoCallDriver(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to the driver-created <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> to which the IRP is to be routed.</p>
 </dd>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>A pointer to an IRP. </p>
@@ -73,7 +73,7 @@ NTSTATUS PoCallDriver(
 <p><b>PoCallDriver</b> returns STATUS_SUCCESS to indicate success. It returns STATUS_PENDING if it has queued the IRP.</p>
 
 ## -remarks
-<p>Beginning with Windows Vista, drivers should call <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>, not <b>PoCallDriver</b> to pass a power IRP to the next-lower driver. However, on Windows Server 2003, Windows XP, and Windows 2000, drivers must call <b>PoCallDriver</b>, not <b>IoCallDriver</b>  to pass a power IRP to the next-lower driver. On Windows Server 2003, Windows XP, an Windows 2000, drivers must also call <a href="..\ntifs\nf-ntifs-postartnextpowerirp.md">PoStartNextPowerIrp</a> before calling <b>PoCallDriver</b>.</p>
+<p>Beginning with Windows Vista, drivers should call <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>, not <b>PoCallDriver</b> to pass a power IRP to the next-lower driver. However, on Windows Server 2003, Windows XP, and Windows 2000, drivers must call <b>PoCallDriver</b>, not <b>IoCallDriver</b>  to pass a power IRP to the next-lower driver. On Windows Server 2003, Windows XP, an Windows 2000, drivers must also call <a href="..\wdm\nf-wdm-postartnextpowerirp.md">PoStartNextPowerIrp</a> before calling <b>PoCallDriver</b>.</p>
 
 <p>A driver that requires a new IRP should call <a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a>. A driver must not allocate its own power IRP.</p>
 
@@ -174,7 +174,7 @@ NTSTATUS PoCallDriver(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550355">IoSkipCurrentIrpStackLocation</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a>
@@ -186,7 +186,7 @@ NTSTATUS PoCallDriver(
 <a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-postartnextpowerirp.md">PoStartNextPowerIrp</a>
+<a href="..\wdm\nf-wdm-postartnextpowerirp.md">PoStartNextPowerIrp</a>
 </dt>
 </dl>
 <p> </p>

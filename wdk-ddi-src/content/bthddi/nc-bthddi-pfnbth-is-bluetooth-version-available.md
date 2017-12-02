@@ -60,13 +60,13 @@ BOOLEAN IsBluetoothVersionAvailable(
 ## -parameters
 <dl>
 
-### -param <i>MajorVersion</i> [in]
+### -param MajorVersion [in]
 
 <dd>
 <p>This parameter specifies the major version number of Bluetooth that is requested.</p>
 </dd>
 
-### -param <i>MinorVersion</i> [in]
+### -param MinorVersion [in]
 
 <dd>
 <p>This parameter specifies the minor version number of Bluetooth that is requested.</p>

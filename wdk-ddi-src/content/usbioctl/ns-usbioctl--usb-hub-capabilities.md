@@ -55,7 +55,7 @@ typedef struct _USB_HUB_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>HubIs2xCapable</b>
+### -field HubIs2xCapable
 
 <dd>
 <p>If <b>TRUE</b>, the hub is capable of running at high speed.</p>

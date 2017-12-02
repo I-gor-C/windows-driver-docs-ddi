@@ -66,79 +66,79 @@ typedef enum _NFC_CX_SEQUENCE {
 ## -enum-fields
 <dl>
 
-### -field <a id="SequencePreInit"></a><a id="sequencepreinit"></a><a id="SEQUENCEPREINIT"></a><b>SequencePreInit</b>
+### -field SequencePreInit
 
 <dd>
 <p>This sequence is invoked by CX during the idle to init state transition, that is, prior to start of initialization by NFC CX. No NCI commands including CORE_RESET_CMD have been sent to the NFC controller by NFC CX. In this sequence, the client can invoke any non-NCI command. NCI commands should not be sent to the controller because neither CORE_RESET_CMD nor CORE_INIT_CMD has been sent to the controller.</p>
 </dd>
 
-### -field <a id="SequenceInitComplete"></a><a id="sequenceinitcomplete"></a><a id="SEQUENCEINITCOMPLETE"></a><b>SequenceInitComplete</b>
+### -field SequenceInitComplete
 
 <dd>
 <p>This sequence is invoked by CX during the idle to init state transition, that is, prior to start of initialization by NFC CX. No NCI commands including CORE_RESET_CMD has been sent to the NFC controller by NFC CX. In this sequence, the client can invoke any non-NCI command. NCI commands should not be sent to the controller since neither CORE_RESET_CMD nor CORE_INIT_CMD has been sent to the controller.</p>
 </dd>
 
-### -field <a id="SequencePreRfDiscStart"></a><a id="sequenceprerfdiscstart"></a><a id="SEQUENCEPRERFDISCSTART"></a><b>SequencePreRfDiscStart</b>
+### -field SequencePreRfDiscStart
 
 <dd>
 <p>This sequence is invoked by CX prior to start of RF discovery i.e. through RF_DISCOVER_CMD. The client driver can use this opportunity to perform any related RF configuration including any optimizations to the discovery loop.</p>
 </dd>
 
-### -field <a id="SequenceRfDiscStartComplete"></a><a id="sequencerfdiscstartcomplete"></a><a id="SEQUENCERFDISCSTARTCOMPLETE"></a><b>SequenceRfDiscStartComplete</b>
+### -field SequenceRfDiscStartComplete
 
 <dd>
 <p>This sequence is invoked by CX immediately after the start of RF discovery. Any configuration post-discovery start can be supported through this extensibility point.</p>
 </dd>
 
-### -field <a id="SequencePreRfDiscStop"></a><a id="sequenceprerfdiscstop"></a><a id="SEQUENCEPRERFDISCSTOP"></a><b>SequencePreRfDiscStop</b>
+### -field SequencePreRfDiscStop
 
 <dd>
 <p>This sequence is invoked by CX prior to stopping the RF discovery loop.</p>
 </dd>
 
-### -field <a id="SequenceRfDiscStopComplete"></a><a id="sequencerfdiscstopcomplete"></a><a id="SEQUENCERFDISCSTOPCOMPLETE"></a><b>SequenceRfDiscStopComplete</b>
+### -field SequenceRfDiscStopComplete
 
 <dd>
 <p>This sequence is invoked immediately after discovery loop is stopped. The client driver can use this extensibility point to enable any standby mode configuration.</p>
 </dd>
 
-### -field <a id="SequencePreNfceeDisc"></a><a id="sequenceprenfceedisc"></a><a id="SEQUENCEPRENFCEEDISC"></a><b>SequencePreNfceeDisc</b>
+### -field SequencePreNfceeDisc
 
 <dd>
 <p>This sequence is invoked by CX prior to start of NFCEE discovery. The NFCEE discovery happens with the discovery loop deactivated. The client driver can use this sequence to enable any internal NFC-NFCEE interfaces which could have been disabled post-initialization for power optimizations. </p>
 </dd>
 
-### -field <a id="SequenceNfceeDiscComplete"></a><a id="sequencenfceedisccomplete"></a><a id="SEQUENCENFCEEDISCCOMPLETE"></a><b>SequenceNfceeDiscComplete</b>
+### -field SequenceNfceeDiscComplete
 
 <dd>
 <p>This sequence is invoked immediately post-NFCEE discovery operation.</p>
 </dd>
 
-### -field <a id="SequencePreShutdown"></a><a id="sequencepreshutdown"></a><a id="SEQUENCEPRESHUTDOWN"></a><b>SequencePreShutdown</b>
+### -field SequencePreShutdown
 
 <dd>
 <p>This sequence is invoked prior to start of shutdown.</p>
 </dd>
 
-### -field <a id="SequenceShutdownComplete"></a><a id="sequenceshutdowncomplete"></a><a id="SEQUENCESHUTDOWNCOMPLETE"></a><b>SequenceShutdownComplete</b>
+### -field SequenceShutdownComplete
 
 <dd>
 <p>This sequence is invoked by CX after shutdown sequence is complete. The client driver can clean up any NCI state maintained.</p>
 </dd>
 
-### -field <a id="SequencePreRecovery"></a><a id="sequenceprerecovery"></a><a id="SEQUENCEPRERECOVERY"></a><b>SequencePreRecovery</b>
+### -field SequencePreRecovery
 
 <dd>
 <p>This sequence is invoked by CX if it needs to perform a recovery sequence due to a fatal failure. The client driver can use this sequence to capture RAM dumps for diagnostic purposes.</p>
 </dd>
 
-### -field <a id="SequenceRecoveryComplete"></a><a id="sequencerecoverycomplete"></a><a id="SEQUENCERECOVERYCOMPLETE"></a><b>SequenceRecoveryComplete</b>
+### -field SequenceRecoveryComplete
 
 <dd>
 <p>This sequence is invoked by the CX after the completion of the recovery sequence and when the driver is back to the work-state.</p>
 </dd>
 
-### -field <a id="SequenceMaximum"></a><a id="sequencemaximum"></a><a id="SEQUENCEMAXIMUM"></a><b>SequenceMaximum</b>
+### -field SequenceMaximum
 
 <dd></dd>
 </dl>

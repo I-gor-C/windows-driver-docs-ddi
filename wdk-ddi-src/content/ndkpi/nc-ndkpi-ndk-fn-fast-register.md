@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_fast_register.htm
 old-project: netvista
 ms.assetid: 4A37BEF6-8526-430D-AAE6-294363D0EDE7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,56 +65,56 @@ NTSTATUS NdkFastRegister(
 ## -parameters
 <dl>
 
-### -param <i>pNdkQp</i> [in]
+### -param pNdkQp [in]
 
 <dd>
 <p>A pointer to an NDK queue pair (QP) object (<a href="..\ndkpi\ns-ndkpi--ndk-qp.md">NDK_QP</a>).</p>
 </dd>
 
-### -param <i>RequestContext</i> [in, optional]
+### -param RequestContext [in, optional]
 
 <dd>
 <p>A  context value to return in the <b>RequestContext</b> member of the <a href="..\ndkpi\ns-ndkpi--ndk-result.md">NDK_RESULT</a> structure for this request.
 </p>
 </dd>
 
-### -param <i>pMr</i> [in]
+### -param pMr [in]
 
 <dd>
 <p>A pointer to an NDK memory region (MR) object (<a href="..\ndkpi\ns-ndkpi--ndk-mr.md">NDK_MR</a>) that was initialized for fast registration.</p>
 </dd>
 
-### -param <i>AdapterPageCount</i> [in]
+### -param AdapterPageCount [in]
 
 <dd>
 <p>The number of pages in the <i>AdapterPageArray</i> parameter. The size of each page in the <i>AdapterPageArray</i> is <b>PAGE_SIZE</b> bytes.</p>
 </dd>
 
-### -param <i>AdapterPageArray</i> 
+### -param AdapterPageArray 
 
 <dd>
 <p>An array of adapter logical addresses (<a href="..\ndkpi\ns-ndkpi--ndk-logical-address-mapping.md">NDK_LOGICAL_ADDRESS</a>) where each address is the starting logical address for a page. Each address must be aligned  pages that are <b>PAGE_SIZE</b> bytes in length. Consecutive addresses in the array are not necessarily consecutive in terms of the logical address space, but the array as a whole represents a virtually contiguous memory region from the perspective of the host system.</p>
 </dd>
 
-### -param <i>FBO</i> [in]
+### -param FBO [in]
 
 <dd>
 <p>The first byte offset (FBO) within the first page. The registered region starts at this offset.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length, in bytes, of the region being registered starting at the FBO. The length must be less than or equal to the total number of bytes that are represented by the first set (<i>AdapterPageCount</i>) of pages that are contained in the <i>AdapterPageArray</i> array minus the FBO.</p>
 </dd>
 
-### -param <i>BaseVirtualAddress</i> [in]
+### -param BaseVirtualAddress [in]
 
 <dd>
 <p>The consumer-specified virtual address value to refer to the first byte location of the memory region. This value must be a multiple of <b>PAGE_SIZE</b> plus FBO. So, the allowed values include  FBO, or FBO plus  n times the <b>PAGE_SIZE</b> where n is greater than or equal to zero. Zero is a valid value only if FBO is zero.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A bitwise OR of flags which specifies the operations that are allowed. The following flags are supported:</p>
@@ -126,7 +126,7 @@ NTSTATUS NdkFastRegister(
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_SILENT_SUCCESS"></a><a id="ndk_op_flag_silent_success"></a><dl>
 
-### -param <b>NDK_OP_FLAG_SILENT_SUCCESS</b>
+### -param NDK_OP_FLAG_SILENT_SUCCESS
 
 
 ### -param 0x00000001
@@ -140,7 +140,7 @@ NTSTATUS NdkFastRegister(
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_READ_FENCE"></a><a id="ndk_op_flag_read_fence"></a><dl>
 
-### -param <b>NDK_OP_FLAG_READ_FENCE</b>
+### -param NDK_OP_FLAG_READ_FENCE
 
 
 ### -param 0x00000002
@@ -154,7 +154,7 @@ NTSTATUS NdkFastRegister(
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_ALLOW_REMOTE_READ"></a><a id="ndk_op_flag_allow_remote_read"></a><dl>
 
-### -param <b>NDK_OP_FLAG_ALLOW_REMOTE_READ</b>
+### -param NDK_OP_FLAG_ALLOW_REMOTE_READ
 
 
 ### -param 0x00000008
@@ -168,7 +168,7 @@ NTSTATUS NdkFastRegister(
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_ALLOW_LOCAL_WRITE"></a><a id="ndk_op_flag_allow_local_write"></a><dl>
 
-### -param <b>NDK_OP_FLAG_ALLOW_LOCAL_WRITE</b>
+### -param NDK_OP_FLAG_ALLOW_LOCAL_WRITE
 
 
 ### -param 0x00000010
@@ -182,7 +182,7 @@ NTSTATUS NdkFastRegister(
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_ALLOW_REMOTE_WRITE"></a><a id="ndk_op_flag_allow_remote_write"></a><dl>
 
-### -param <b>NDK_OP_FLAG_ALLOW_REMOTE_WRITE</b>
+### -param NDK_OP_FLAG_ALLOW_REMOTE_WRITE
 
 
 ### -param 0x00000030
@@ -196,7 +196,7 @@ NTSTATUS NdkFastRegister(
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_DEFER"></a><a id="ndk_op_flag_defer"></a><dl>
 
-### -param <b>NDK_OP_FLAG_DEFER</b>
+### -param NDK_OP_FLAG_DEFER
 
 
 ### -param 0x00000200
@@ -204,7 +204,7 @@ NTSTATUS NdkFastRegister(
 </dl>
 </td>
 <td width="60%">
-<p>Indicates to the NDK provider that it may defer indicating the request to hardware for processing. For more information about this flag, see <a href="NULL">NDKPI Deferred Processing Scheme</a>.</p>
+<p>Indicates to the NDK provider that it may defer indicating the request to hardware for processing. For more information about this flag, see <a href="netvista.ndkpi_deferred_processing_scheme">NDKPI Deferred Processing Scheme</a>.</p>
 <p><b>Note</b>  This flag is supported only in NDKPI 1.2 (Windows Server 2012 R2) and later.</p>
 </td>
 </tr>
@@ -305,12 +305,12 @@ NTSTATUS NdkFastRegister(
 <a href="..\ndkpi\ns-ndkpi--ndk-result.md">NDK_RESULT</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Deferred Processing Scheme</a>
+<a href="netvista.ndkpi_deferred_processing_scheme">NDKPI Deferred Processing Scheme</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Work Request Posting Requirements</a>
+<a href="netvista.ndkpi_work_request_posting_requirements">NDKPI Work Request Posting Requirements</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_FAST_REGISTER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_FAST_REGISTER callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

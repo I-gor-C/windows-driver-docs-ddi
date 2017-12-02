@@ -7,7 +7,7 @@ old-location: netvista\ril_emergencymodecontrol.htm
 old-project: netvista
 ms.assetid: 011b8b11-5e75-4db9-ba3d-6483a90788ac
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_EmergencyModeControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_EmergencyModeControl(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>dwEmergencyModeControl</i> 
+### -param dwEmergencyModeControl 
 
 <dd></dd>
 </dl>

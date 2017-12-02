@@ -59,19 +59,19 @@ SIZE_T APIENTRY* CalcPrivateShaderSize(D3D11_1)(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pShaderCode</i> [in]
+### -param pShaderCode [in]
 
 <dd>
 <p>A pointer to an array of CONST UINT tokens that make up the shader code.</p>
 </dd>
 
-### -param <i>pSignatures</i> [in]
+### -param pSignatures [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-stage-io-signatures.md">D3D11_1DDIARG_STAGE_IO_SIGNATURES</a> structure that makes up the shader's signature.</p>

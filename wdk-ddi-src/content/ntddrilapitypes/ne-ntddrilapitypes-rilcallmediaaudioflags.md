@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediaaudioflags.htm
 old-project: netvista
 ms.assetid: 457d0bee-4746-424d-bd22-4e968048bdb9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILCALLMEDIAAUDIOFLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLMEDIAAUDIOFLAG_TEMPORARILY_UNAVAILABLE"></a><a id="ril_callmediaaudioflag_temporarily_unavailable"></a><b>RIL_CALLMEDIAAUDIOFLAG_TEMPORARILY_UNAVAILABLE</b>
+### -field RIL_CALLMEDIAAUDIOFLAG_TEMPORARILY_UNAVAILABLE
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIAAUDIOFLAG_ALL"></a><a id="ril_callmediaaudioflag_all"></a><b>RIL_CALLMEDIAAUDIOFLAG_ALL</b>
+### -field RIL_CALLMEDIAAUDIOFLAG_ALL
 
 <dd></dd>
 </dl>

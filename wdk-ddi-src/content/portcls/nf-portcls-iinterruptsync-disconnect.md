@@ -54,7 +54,7 @@ void Disconnect(
 ## -parameters
 <dl>
 
-### -param <i>None</i> 
+### -param None 
 
 <dd></dd>
 </dl>

@@ -57,25 +57,25 @@ typedef struct _DVD_REGION {
 ## -struct-fields
 <dl>
 
-### -field <b>CopySystem</b>
+### -field CopySystem
 
 <dd>
 <p>Indicates the copyright protection type. For more information about copyright protection types, see the <i>SCSI Multimedia Commands - 3</i> (MMC-3) specification.</p>
 </dd>
 
-### -field <b>RegionData</b>
+### -field RegionData
 
 <dd>
 <p>Indicates the region code of the currently mounted DVD media. This is an eight-bit bitmask, with one bit for each DVD region. A value of 0x00 means that no region is specified. </p>
 </dd>
 
-### -field <b>SystemRegion</b>
+### -field SystemRegion
 
 <dd>
 <p>Indicates the region code of the DVD player. This is an eight-bit bitmask, with one bit for each system region. A value of 0x00 means that no region is specified. </p>
 </dd>
 
-### -field <b>ResetCount</b>
+### -field ResetCount
 
 <dd>
 <p>Indicates the remaining number of times the DVD device's region code can be changed by the user. This member can hold a value between 0 and 7.</p>

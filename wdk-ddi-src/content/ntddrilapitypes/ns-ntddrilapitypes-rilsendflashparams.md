@@ -7,7 +7,7 @@ old-location: netvista\rilsendflashparams.htm
 old-project: netvista
 ms.assetid: e45b8f47-4e46-4265-9c56-055e753eb6e6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSENDFLASHPARAMS, RILSENDFLASHPARAMS, *LPRILSENDFLASHPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILSENDFLASHPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>raAddress</b>
+### -field raAddress
 
 <dd></dd>
 </dl>

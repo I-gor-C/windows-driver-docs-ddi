@@ -55,13 +55,13 @@ BOOLEAN TapeClassAllocateSrbBuffer(
 ## -parameters
 <dl>
 
-### -param <i>Srb</i> [in, out]
+### -param Srb [in, out]
 
 <dd>
 <p>Pointer to the SRB.</p>
 </dd>
 
-### -param <i>SrbBufferSize</i> [in]
+### -param SrbBufferSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the <b>DataBuffer</b> to be allocated.</p>

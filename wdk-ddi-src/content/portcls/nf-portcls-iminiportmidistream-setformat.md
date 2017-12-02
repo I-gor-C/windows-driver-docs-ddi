@@ -54,7 +54,7 @@ NTSTATUS SetFormat(
 ## -parameters
 <dl>
 
-### -param <i>DataFormat</i> [in]
+### -param DataFormat [in]
 
 <dd>
 <p>Specifies the new format for the stream. This parameter is a pointer to a structure of type <a href="stream.ksdataformat">KSDATAFORMAT</a>.</p>

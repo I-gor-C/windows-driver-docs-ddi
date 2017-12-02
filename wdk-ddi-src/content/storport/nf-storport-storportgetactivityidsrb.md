@@ -57,19 +57,19 @@ ULONG StorPortGetActivityIdSrb(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Srb</i> [in]
+### -param Srb [in]
 
 <dd>
 <p>The request block to retrieve the ETW activity ID for.</p>
 </dd>
 
-### -param <i>ActivityId</i> [out]
+### -param ActivityId [out]
 
 <dd>
 <p>A pointer to a caller-supplied GUID to receive the ETW activity ID.</p>

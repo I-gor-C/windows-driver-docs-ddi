@@ -55,7 +55,7 @@ PVOID MmLockPagableCodeSection(
 ## -parameters
 <dl>
 
-### -param <i>AddressWithinSection</i> [in]
+### -param AddressWithinSection [in]
 
 <dd>
 <p>Specifies a symbolic address. This address is typically the name of a driver function within a section of driver code that has been marked with something like <b>#pragma alloc_text (PAGExxxx, driverfunction)</b>. All functions in the <b>PAGExxxx</b> section are then guaranteed to be locked down when this function returns. </p>

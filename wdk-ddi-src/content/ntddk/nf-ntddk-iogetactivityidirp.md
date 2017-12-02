@@ -55,13 +55,13 @@ NTSTATUS IoGetActivityIdIrp(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>The IRP from which to retrieve the activity ID.</p>
 </dd>
 
-### -param <i>Guid</i> [out]
+### -param Guid [out]
 
 <dd>
 <p>A pointer to a location  to store the retrieved GUID.</p>

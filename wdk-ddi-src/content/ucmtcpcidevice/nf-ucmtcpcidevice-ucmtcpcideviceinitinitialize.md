@@ -57,7 +57,7 @@ NTSTATUS UcmTcpciDeviceInitInitialize(
 ## -parameters
 <dl>
 
-### -param <i>DeviceInit</i> [in]
+### -param DeviceInit [in]
 
 <dd>
 <p>A pointer to a framework-allocated <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure. </p>

@@ -58,13 +58,13 @@ SIZE_T APIENTRY CalcPrivateOpenedResourceSize(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pOpenResource</i> [in]
+### -param pOpenResource [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-openresource.md">D3D10DDIARG_OPENRESOURCE</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the shared memory region. </p>

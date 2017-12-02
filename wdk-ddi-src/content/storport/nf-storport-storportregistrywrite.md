@@ -60,25 +60,25 @@ STORPORT_API BOOLEAN StorPortRegistryWrite(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. The miniport driver must be running at IRQL PASSIVE_LEVEL when it calls this routine.</p>
 </dd>
 
-### -param <i>ValueName</i> [in]
+### -param ValueName [in]
 
 <dd>
 <p>Pointer to a string that specifies the value name.</p>
 </dd>
 
-### -param <i>Global</i> [in]
+### -param Global [in]
 
 <dd>
 <p>Indicates whether the operation is to be adapter specific or to relate to all adapters.</p>
 </dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>One of the following registry data types.</p>
@@ -195,13 +195,13 @@ STORPORT_API BOOLEAN StorPortRegistryWrite(
 <p> </p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to a buffer that contains the registry data to be written.</p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>Specifies the size of the buffer pointed to by <i>Buffer</i>.</p>

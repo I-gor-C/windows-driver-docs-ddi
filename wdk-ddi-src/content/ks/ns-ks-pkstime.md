@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Time</b>
+### -field Time
 
 <dd>
 <p>Specifies a time value. When using unscaled time, <b>Time</b> is in units of 100-nanoseconds. When using scaled time, <b>Time</b> is in units governed by the scale factor expressed in the <b>Numerator</b> and <b>Denominator</b> members. For more information about scaled and unscaled time, see <b>Remarks</b>.</p>
 </dd>
 
-### -field <b>Numerator</b>
+### -field Numerator
 
 <dd>
 <p>Specifies the numerator of the scaling factor for a scaled time value. For a nonscaled value, this should be one. <b>Numerator</b> must not be zero.</p>
 </dd>
 
-### -field <b>Denominator</b>
+### -field Denominator
 
 <dd>
 <p>Specifies the denominator of the scaling factor for a scaled time value. For a nonscaled value, this should be one. <b>Denominator</b> must not be zero.</p>

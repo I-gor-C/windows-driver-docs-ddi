@@ -65,49 +65,49 @@ typedef struct _PCI_EXPRESS_ROOTPORT_AER_CAPABILITY {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537466">PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER</a> structure that describes the header for this structure.</p>
 </dd>
 
-### -field <b>UncorrectableErrorStatus</b>
+### -field UncorrectableErrorStatus
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537572">PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS</a> structure that describes the PCIe uncorrectable error status register of the PCIe AER capability structure.</p>
 </dd>
 
-### -field <b>UncorrectableErrorMask</b>
+### -field UncorrectableErrorMask
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537567">PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK</a> structure that describes the PCIe uncorrectable error mask register of the PCIe AER capability structure.</p>
 </dd>
 
-### -field <b>UncorrectableErrorSeverity</b>
+### -field UncorrectableErrorSeverity
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537570">PCI_EXPRESS_UNCORRECTABLE_ERROR_SEVERITY</a> structure that describes the PCIe uncorrectable error severity register of the PCIe AER capability structure.</p>
 </dd>
 
-### -field <b>CorrectableErrorStatus</b>
+### -field CorrectableErrorStatus
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537572">PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS</a> structure that describes the PCIe uncorrectable error status register of the PCIe AER capability structure.</p>
 </dd>
 
-### -field <b>CorrectableErrorMask</b>
+### -field CorrectableErrorMask
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537567">PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK</a> structure that describes the PCIe uncorrectable error mask register of the PCIe AER capability structure.</p>
 </dd>
 
-### -field <b>CapabilitiesAndControl</b>
+### -field CapabilitiesAndControl
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537456">PCI_EXPRESS_AER_CAPABILITIES</a> structure that describes the PCIe advanced error capabilities and control register of the PCIe AER capability structure.</p>
 </dd>
 
-### -field <b>HeaderLog</b>
+### -field HeaderLog
 
 <dd>
 <p>An array of four 32-bit values that together contain the header for the transaction layer packet (TLP) that corresponds to a detected error.</p>
@@ -115,19 +115,19 @@ typedef struct _PCI_EXPRESS_ROOTPORT_AER_CAPABILITY {
 <div> </div>
 </dd>
 
-### -field <b>RootErrorCommand</b>
+### -field RootErrorCommand
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537475">PCI_EXPRESS_ROOT_ERROR_COMMAND</a> structure that describes the PCIe root error command register of the PCIe AER capability structure.</p>
 </dd>
 
-### -field <b>RootErrorStatus</b>
+### -field RootErrorStatus
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537476">PCI_EXPRESS_ROOT_ERROR_STATUS</a> structure that describes the PCIe root error status register of the PCIe AER capability structure.</p>
 </dd>
 
-### -field <b>ErrorSourceId</b>
+### -field ErrorSourceId
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537467">PCI_EXPRESS_ERROR_SOURCE_ID</a> structure that describes the PCIe error source identification register of the PCIe AER capability structure.</p>

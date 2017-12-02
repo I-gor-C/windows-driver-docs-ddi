@@ -7,7 +7,7 @@ old-location: netvista\ndk_connector_dispatch.htm
 old-project: netvista
 ms.assetid: BBC24A32-4CB6-47AB-BD1D-298159EC9919
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDK_CONNECTOR_DISPATCH, NDK_CONNECTOR_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,67 +64,67 @@ typedef struct _NDK_CONNECTOR_DISPATCH {
 ## -struct-fields
 <dl>
 
-### -field <b>NdkCloseConnector</b>
+### -field NdkCloseConnector
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-close-object.md">NDK_FN_CLOSE_OBJECT</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkQueryExtension</b>
+### -field NdkQueryExtension
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-query-extension-interface.md">NDK_FN_QUERY_EXTENSION_INTERFACE</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkConnect</b>
+### -field NdkConnect
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-connect.md">NDK_FN_CONNECT</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkConnectWithSharedEndpoint</b>
+### -field NdkConnectWithSharedEndpoint
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-connect-with-shared-endpoint.md">NDK_FN_CONNECT_WITH_SHARED_ENDPOINT</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkCompleteConnect</b>
+### -field NdkCompleteConnect
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-complete-connect.md">NDK_FN_COMPLETE_CONNECT</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkAccept</b>
+### -field NdkAccept
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-accept.md">NDK_FN_ACCEPT</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkReject</b>
+### -field NdkReject
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-reject.md">NDK_FN_REJECT</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkGetConnectionData</b>
+### -field NdkGetConnectionData
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-get-connection-data.md">NDK_FN_GET_CONNECTION_DATA</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkGetLocalAddress</b>
+### -field NdkGetLocalAddress
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-get-local-address.md">NDK_FN_GET_LOCAL_ADDRESS</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkGetPeerAddress</b>
+### -field NdkGetPeerAddress
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-get-peer-address.md">NDK_FN_GET_PEER_ADDRESS</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkDisconnect</b>
+### -field NdkDisconnect
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-disconnect.md">NDK_FN_DISCONNECT</a> dispatch function.</p>
@@ -213,4 +213,4 @@ typedef struct _NDK_CONNECTOR_DISPATCH {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_CONNECTOR_DISPATCH structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_CONNECTOR_DISPATCH structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

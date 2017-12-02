@@ -54,7 +54,7 @@ typedef struct _D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN {
 ## -struct-fields
 <dl>
 
-### -field <b>hLogicalSurface</b>
+### -field hLogicalSurface
 
 <dd>
 <p>The logical surface that the token is being presented for.</p>

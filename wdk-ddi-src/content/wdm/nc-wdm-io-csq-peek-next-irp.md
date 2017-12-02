@@ -60,19 +60,19 @@ PIRP CsqPeekNextIrp(
 ## -parameters
 <dl>
 
-### -param <i>Csq</i> [in]
+### -param Csq [in]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550560">IO_CSQ</a> structure for the cancel-safe IRP queue.</p>
 </dd>
 
-### -param <i>Irp</i> [in, optional]
+### -param Irp [in, optional]
 
 <dd>
 <p>Pointer to an IRP in the driver's IRP queue, or <b>NULL</b> to specify the beginning of the queue.</p>
 </dd>
 
-### -param <i>PeekContext</i> [in, optional]
+### -param PeekContext [in, optional]
 
 <dd>
 <p>Pointer to driver-defined context information. The <i>CsqPeekNextIrp</i> routine returns the first IRP that follows <i>Irp</i> and matches <i>PeekContext</i>.</p>
@@ -87,7 +87,7 @@ PIRP CsqPeekNextIrp(
 
 <p>The system uses <i>CsqPeekNextIrp</i> to iterate through the IRPs in the driver's IRP queue. For example, the <a href="..\wdm\nf-wdm-iocsqremovenextirp.md">IoCsqRemoveNextIrp</a> routine uses this routine to find the IRP to be removed.</p>
 
-<p>To define a <i>CsqPeekNextIrp</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define a <i>CsqPeekNextIrp</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define a <i>CsqPeekNextIrp</i> callback routine that is named <code>MyCsqPeekNextIrp</code>, use the IO_CSQ_PEEK_NEXT_IRP type as shown in this code example:</p>
 

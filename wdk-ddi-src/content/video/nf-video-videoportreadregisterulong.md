@@ -55,7 +55,7 @@ ULONG VideoPortReadRegisterUlong(
 ## -parameters
 <dl>
 
-### -param <i>Register</i> 
+### -param Register 
 
 <dd>
 <p>Pointer to the register. The given <i>Register</i> must be in a mapped memory-space range returned by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.</p>

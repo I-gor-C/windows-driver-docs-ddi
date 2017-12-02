@@ -55,13 +55,13 @@ typedef enum _D3DKMT_PNP_KEY_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_PNP_KEY_HARDWARE"></a><a id="d3dkmt_pnp_key_hardware"></a><b>D3DKMT_PNP_KEY_HARDWARE</b>
+### -field D3DKMT_PNP_KEY_HARDWARE
 
 <dd>
 <p>Indicates that the key is a hardware key..</p>
 </dd>
 
-### -field <a id="D3DKMT_PNP_KEY_SOFTWARE"></a><a id="d3dkmt_pnp_key_software"></a><b>D3DKMT_PNP_KEY_SOFTWARE</b>
+### -field D3DKMT_PNP_KEY_SOFTWARE
 
 <dd>
 <p>Indicates that the key is a software key.</p>

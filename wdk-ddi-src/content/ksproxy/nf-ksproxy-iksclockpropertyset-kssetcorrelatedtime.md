@@ -54,7 +54,7 @@ HRESULT KsSetCorrelatedTime(
 ## -parameters
 <dl>
 
-### -param <i>CorrelatedTime</i> [in]
+### -param CorrelatedTime [in]
 
 <dd>
 <p>Pointer to a <a href="stream.kscorrelated_time">KSCORRELATED_TIME</a> structure that contains the current clock time along with the correlated system time to which to set the underlying clock. </p>

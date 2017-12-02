@@ -55,7 +55,7 @@ PDEVICE_OBJECT IoGetAttachedDeviceReference(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object for which the topmost attached device object is retrieved. </p>

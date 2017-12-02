@@ -7,7 +7,7 @@ old-location: netvista\ril_dial.htm
 old-project: netvista
 ms.assetid: 755a834b-6590-4289-99b1-058690c1ad4f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_Dial
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,31 +63,31 @@ HRESULT  RIL_Dial(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>lpraAddress</i> 
+### -param lpraAddress 
 
 <dd></dd>
 
-### -param <i>dwOptions</i> 
+### -param dwOptions 
 
 <dd></dd>
 
-### -param <i>dwType</i> 
+### -param dwType 
 
 <dd></dd>
 
-### -param <i>lprcmOfferAnswer</i> 
+### -param lprcmOfferAnswer 
 
 <dd></dd>
 </dl>

@@ -59,31 +59,31 @@ typedef struct _FEATURE_DATA_MRW {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>Write</b>
+### -field Write
 
 <dd>
 <p>Indicates, if set to 1, that the device can format discs using the MRW format and write to discs that have been formatted in this manner. See the <i>SCSI Multimedia - 4 (MMC-4)</i> specification for more information. </p>
 </dd>
 
-### -field <b>DvdPlusRead</b>
+### -field DvdPlusRead
 
 <dd></dd>
 
-### -field <b>DvdPlusWrite</b>
+### -field DvdPlusWrite
 
 <dd></dd>
 
-### -field <b>Reserved01</b>
+### -field Reserved01
 
 <dd></dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. </p>

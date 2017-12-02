@@ -7,7 +7,7 @@ old-location: netvista\rilresetmodemparams.htm
 old-project: netvista
 ms.assetid: 6fde91f1-375e-4eaa-af48-67099b3e3227
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILRESETMODEMPARAMS, RILRESETMODEMPARAMS, *LPRILRESETMODEMPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef struct _RILRESETMODEMPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwResetKind</b>
+### -field dwResetKind
 
 <dd></dd>
 
-### -field <b>dwNumberOfConfigItems</b>
+### -field dwNumberOfConfigItems
 
 <dd></dd>
 
-### -field <b>rmciModemConfigItems</b>
+### -field rmciModemConfigItems
 
 <dd></dd>
 </dl>

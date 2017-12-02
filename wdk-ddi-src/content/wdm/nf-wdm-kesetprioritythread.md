@@ -56,13 +56,13 @@ KPRIORITY KeSetPriorityThread(
 ## -parameters
 <dl>
 
-### -param <i>Thread</i> [in, out]
+### -param Thread [in, out]
 
 <dd>
 <p>Pointer to the driver-created thread.</p>
 </dd>
 
-### -param <i>Priority</i> [in]
+### -param Priority [in]
 
 <dd>
 <p>Specifies the priority of the driver-created thread, usually to the real-time priority value, LOW_REALTIME_PRIORITY. The value LOW_PRIORITY is reserved for system use. </p>

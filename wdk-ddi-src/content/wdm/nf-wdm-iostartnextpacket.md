@@ -56,13 +56,13 @@ VOID IoStartNextPacket(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object for which the IRP is to be dequeued.</p>
 </dd>
 
-### -param <i>Cancelable</i> [in]
+### -param Cancelable [in]
 
 <dd>
 <p>Specifies whether IRPs in the device queue can be canceled. </p>
@@ -79,7 +79,7 @@ VOID IoStartNextPacket(
 
 <p>Drivers that do not have a <i>StartIo</i> routine cannot call <b>IoStartNextPacket</b>.</p>
 
-<p>Drivers that call <b>IoStartNextPacket </b>from their <i>StartIo</i> routine should be aware of recursion issues. If a driver can call <b>IoStartNextPacket</b> on a large number of requests in succession from its <i>StartIo</i> routine (for example, when a device error occurs and the driver is clearing out it device queue), you should set the <i>DeferredStartIo</i> attribute for the device by using <a href="..\ntifs\nf-ntifs-iosetstartioattributes.md">IoSetStartIoAttributes</a> routine. This attribute ensures that the next packet will not be issued until the previous <i>StartIo</i> call returns.</p>
+<p>Drivers that call <b>IoStartNextPacket </b>from their <i>StartIo</i> routine should be aware of recursion issues. If a driver can call <b>IoStartNextPacket</b> on a large number of requests in succession from its <i>StartIo</i> routine (for example, when a device error occurs and the driver is clearing out it device queue), you should set the <i>DeferredStartIo</i> attribute for the device by using <a href="..\wdm\nf-wdm-iosetstartioattributes.md">IoSetStartIoAttributes</a> routine. This attribute ensures that the next packet will not be issued until the previous <i>StartIo</i> call returns.</p>
 
 <p>Callers of <b>IoStartNextPacket</b> must be running at IRQL = DISPATCH_LEVEL. Usually, this routine is called from a device driver's <a href="kernel.dpcforisr">DpcForIsr</a> or <a href="kernel.customdpc">CustomDpc</a> routine, both of which are run at IRQL = DISPATCH_LEVEL.</p>
 
@@ -157,13 +157,13 @@ VOID IoStartNextPacket(
 <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iosetstartioattributes.md">IoSetStartIoAttributes</a>
+<a href="..\wdm\nf-wdm-iosetstartioattributes.md">IoSetStartIoAttributes</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iostartnextpacketbykey.md">IoStartNextPacketByKey</a>
+<a href="..\wdm\nf-wdm-iostartnextpacketbykey.md">IoStartNextPacketByKey</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iostartpacket.md">IoStartPacket</a>
+<a href="..\wdm\nf-wdm-iostartpacket.md">IoStartPacket</a>
 </dt>
 </dl>
 <p> </p>

@@ -68,25 +68,25 @@ typedef struct _PS_CREATE_NOTIFY_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. The operating system uses this size to indicate the type of structure that it passes to <a href="kernel.createprocessnotifyex">CreateProcessNotifyEx</a>. Currently, this member is always <b>sizeof</b>(<b>PS_CREATE_NOTIFY_INFO</b>).</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved. Use the <b>FileOpenNameAvailable</b> member instead. </p>
 </dd>
 
-### -field <b>FileOpenNameAvailable</b>
+### -field FileOpenNameAvailable
 
 <dd>
 <p>A Boolean value that specifies whether the <b>ImageFileName</b> member contains the exact file name that is used to open the process executable file.</p>
 </dd>
 
-### -field <b>IsSubsystemProcess </b>
+### -field IsSubsystemProcess 
 
 <dd>
 <p>A Boolean value that indicates the type of process subsystem is a subsystem other than Win32. </p>
@@ -96,25 +96,25 @@ For more information, see <a href="base.ntqueryinformationprocess">NtQueryInform
 <div> </div>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>ParentProcessId</b>
+### -field ParentProcessId
 
 <dd>
 <p>The process ID of the parent process for the new process. Note that the parent process is not necessarily the same process as the process that created the new process. The new process can inherit certain properties of the parent process, such as handles or shared memory. (The process ID of the process creator is given by <b>CreatingThreadId</b>-&gt;<b>UniqueProcess</b>.)</p>
 </dd>
 
-### -field <b>CreatingThreadId</b>
+### -field CreatingThreadId
 
 <dd>
 <p>The process ID and thread ID of the process and thread that created the new process. <b>CreatingThreadId</b>-&gt;<b>UniqueProcess</b> contains the process ID, and <b>CreatingThreadId</b>-&gt;<b>UniqueThread</b> contains the thread ID.</p>
 </dd>
 
-### -field <b>FileObject</b>
+### -field FileObject
 
 <dd>
 <p>A pointer to the file object for the process executable file. </p>
@@ -123,7 +123,7 @@ For more information, see <a href="base.ntqueryinformationprocess">NtQueryInform
 <div> </div>
 </dd>
 
-### -field <b>ImageFileName</b>
+### -field ImageFileName
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> string that holds the file name of the executable. If the <b>FileOpenNameAvailable</b> member is <b>TRUE</b>, the string specifies the exact file name that is used to open the executable file. If <b>FileOpenNameAvailable</b> is <b>FALSE</b>, the operating system might provide only a partial name.</p>
@@ -132,7 +132,7 @@ For more information, see <a href="base.ntqueryinformationprocess">NtQueryInform
 <div> </div>
 </dd>
 
-### -field <b>CommandLine</b>
+### -field CommandLine
 
 <dd>
 <p>A pointer to a <b>UNICODE_STRING</b> string that holds the command that is used to execute the process. If the command is not available, <b>CommandLine</b> is <b>NULL</b>.</p>
@@ -141,7 +141,7 @@ For more information, see <a href="base.ntqueryinformationprocess">NtQueryInform
 <div> </div>
 </dd>
 
-### -field <b>CreationStatus</b>
+### -field CreationStatus
 
 <dd>
 <p>The NTSTATUS value to return for the process-creation operation. Drivers can change this value to an error code to prevent the process from being created.</p>

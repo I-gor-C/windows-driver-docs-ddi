@@ -56,7 +56,7 @@ NTAPI KdBreakPointWithStatus(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>Specifies a ULONG value to be sent to the debugger (for example, a status code or an address).</p>

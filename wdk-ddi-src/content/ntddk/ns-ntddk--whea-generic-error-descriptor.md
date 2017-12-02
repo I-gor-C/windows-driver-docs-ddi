@@ -64,92 +64,92 @@ typedef struct _WHEA_GENERIC_ERROR_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_GENERIC.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>A Boolean value that indicates if the error source is enabled.</p>
 </dd>
 
-### -field <b>ErrStatusBlockLength</b>
+### -field ErrStatusBlockLength
 
 <dd>
 <p>The size, in bytes, of the block of error status registers that contain the error data for the error source.</p>
 </dd>
 
-### -field <b>RelatedErrorSourceId</b>
+### -field RelatedErrorSourceId
 
 <dd>
 <p>The identifier of the related error source. If the generic error source does not relate back to another error source, this member is not used.</p>
 </dd>
 
-### -field <b>ErrStatusAddressSpaceID</b>
+### -field ErrStatusAddressSpaceID
 
 <dd>
 <p>The address space of the address that is specified in the <b>ErrStatusAddress</b> member. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="0x00"></a><a id="0X00"></a><b>0x00</b>
+### -field 0x00
 
 <dd>
 <p>System memory space</p>
 </dd>
 
-### -field <a id="0x01"></a><a id="0X01"></a><b>0x01</b>
+### -field 0x01
 
 <dd>
 <p>System I/O space</p>
 </dd>
 
-### -field <a id="0x02"></a><a id="0X02"></a><b>0x02</b>
+### -field 0x02
 
 <dd>
 <p>PCI configuration space</p>
 </dd>
 
-### -field <a id="0x03"></a><a id="0X03"></a><b>0x03</b>
+### -field 0x03
 
 <dd>
 <p>Embedded controller address space</p>
 </dd>
 
-### -field <a id="0x04"></a><a id="0X04"></a><b>0x04</b>
+### -field 0x04
 
 <dd>
 <p>System management bus (SMBus) address space</p>
 </dd>
 
-### -field <a id="0x05_-_0x7E"></a><a id="0x05_-_0x7e"></a><a id="0X05_-_0X7E"></a><b>0x05 - 0x7E</b>
+### -field 0x05 - 0x7E
 
 <dd>
 <p>Reserved</p>
 </dd>
 
-### -field <a id="0x7F"></a><a id="0x7f"></a><a id="0X7F"></a><b>0x7F</b>
+### -field 0x7F
 
 <dd>
 <p>Functional fixed hardware address space</p>
 </dd>
 
-### -field <a id="0x80_-_0xBF"></a><a id="0x80_-_0xbf"></a><a id="0X80_-_0XBF"></a><b>0x80 - 0xBF</b>
+### -field 0x80 - 0xBF
 
 <dd>
 <p>Reserved</p>
 </dd>
 
-### -field <a id="0xC0_-_0xFF"></a><a id="0xc0_-_0xff"></a><a id="0XC0_-_0XFF"></a><b>0xC0 - 0xFF</b>
+### -field 0xC0 - 0xFF
 
 <dd>
 <p>OEM defined address space</p>
@@ -157,50 +157,50 @@ typedef struct _WHEA_GENERIC_ERROR_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>ErrStatusAddressBitWidth</b>
+### -field ErrStatusAddressBitWidth
 
 <dd>
 <p>The size, in bits, of the register at the address that is specified in the <b>ErrStatusAddress</b> member.</p>
 </dd>
 
-### -field <b>ErrStatusAddressBitOffset</b>
+### -field ErrStatusAddressBitOffset
 
 <dd>
 <p>The offset, in bits, of the register at the address that is specified in the <b>ErrStatusAddress</b> member.</p>
 </dd>
 
-### -field <b>ErrStatusAddressAccessSize</b>
+### -field ErrStatusAddressAccessSize
 
 <dd>
 <p>The access size for reading the register at the address that is specified in the <b>ErrStatusAddress</b> member. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="0"></a><b>0</b>
+### -field 0
 
 <dd>
 <p>Undefined</p>
 </dd>
 
-### -field <a id="1"></a><b>1</b>
+### -field 1
 
 <dd>
 <p>Byte access</p>
 </dd>
 
-### -field <a id="2"></a><b>2</b>
+### -field 2
 
 <dd>
 <p>Word access</p>
 </dd>
 
-### -field <a id="3"></a><b>3</b>
+### -field 3
 
 <dd>
 <p>Double word access</p>
 </dd>
 
-### -field <a id="4"></a><b>4</b>
+### -field 4
 
 <dd>
 <p>Quad word access</p>
@@ -208,13 +208,13 @@ typedef struct _WHEA_GENERIC_ERROR_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>ErrStatusAddress</b>
+### -field ErrStatusAddress
 
 <dd>
 <p>The 64-bit address of a register that contains the physical address of a block of memory that contains the error status data for the error source. This block of memory must reside in firmware reserved memory so that it is not reclaimed by the operating system's memory manager. The error status data contained in this block of memory is described by a <a href="..\ntddk\ns-ntddk--whea-generic-error.md">WHEA_GENERIC_ERROR</a> structure.</p>
 </dd>
 
-### -field <b>Notify</b>
+### -field Notify
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-notification-descriptor.md">WHEA_NOTIFICATION_DESCRIPTOR</a> structure that describes the notification mechanism that is used by the error source.</p>

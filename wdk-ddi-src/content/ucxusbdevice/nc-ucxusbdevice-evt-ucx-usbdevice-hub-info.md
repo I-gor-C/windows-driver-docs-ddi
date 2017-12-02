@@ -62,16 +62,16 @@ typedef EVT_UCX_USBDEVICE_HUB_INFO PEVT_UCX_USBDEVICE_HUB_INFO;
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
-<p>Contains the <a href="buses._usbdevice_hub_info">USBDEVICE_HUB_INFO</a> structure.</p>
+<p>Contains the <a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-hub-info.md">USBDEVICE_HUB_INFO</a> structure.</p>
 </dd>
 </dl>
 
@@ -79,7 +79,7 @@ typedef EVT_UCX_USBDEVICE_HUB_INFO PEVT_UCX_USBDEVICE_HUB_INFO;
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a> method.</p>
+<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a> method.</p>
 
 <p>If the USB device is not a hub, do not provide this callback.</p>
 
@@ -126,16 +126,16 @@ typedef EVT_UCX_USBDEVICE_HUB_INFO PEVT_UCX_USBDEVICE_HUB_INFO;
 ## -see-also
 <dl>
 <dt>
-<a href="buses._ucx_usbdevice_event_callbacks">UCX_USBDEVICE_EVENT_CALLBACKS</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--ucx-usbdevice-event-callbacks.md">UCX_USBDEVICE_EVENT_CALLBACKS</a>
 </dt>
 <dt>
-<a href="buses._ucx_usbdevice_event_callbacks_init">UCX_USBDEVICE_EVENT_CALLBACKS_INIT</a>
+<a href="..\ucxusbdevice\nf-ucxusbdevice-ucx-usbdevice-event-callbacks-init.md">UCX_USBDEVICE_EVENT_CALLBACKS_INIT</a>
 </dt>
 <dt>
-<a href="buses._usbdevice_hub_info">USBDEVICE_HUB_INFO</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-hub-info.md">USBDEVICE_HUB_INFO</a>
 </dt>
 <dt>
-<a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a>
+<a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a>
 </dt>
 </dl>
 <p> </p>

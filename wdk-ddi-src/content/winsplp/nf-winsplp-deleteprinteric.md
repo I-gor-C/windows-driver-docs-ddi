@@ -55,7 +55,7 @@ BOOL WINAPI DeletePrinterIC(
 ## -parameters
 <dl>
 
-### -param <i>hPrinterIC</i> [in]
+### -param hPrinterIC [in]
 
 <dd></dd>
 </dl>

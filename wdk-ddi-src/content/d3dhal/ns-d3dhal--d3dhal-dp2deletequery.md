@@ -57,7 +57,7 @@ typedef struct _D3DHAL_DP2DELETEQUERY {
 ## -struct-fields
 <dl>
 
-### -field <b>dwQueryID</b>
+### -field dwQueryID
 
 <dd>
 <p>Identifies the query for which the driver releases resources.</p>

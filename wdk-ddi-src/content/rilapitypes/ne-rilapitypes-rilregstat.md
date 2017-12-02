@@ -7,7 +7,7 @@ old-location: netvista\rilregstat_2.htm
 old-project: netvista
 ms.assetid: 6ab187d9-7995-46ad-a12f-47d5b8fa40f0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef enum _RILREGSTAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_REGSTAT_UNREGISTERED"></a><a id="ril_regstat_unregistered"></a><b>RIL_REGSTAT_UNREGISTERED</b>
+### -field RIL_REGSTAT_UNREGISTERED
 
 <dd></dd>
 
-### -field <a id="RIL_REGSTAT_HOME"></a><a id="ril_regstat_home"></a><b>RIL_REGSTAT_HOME</b>
+### -field RIL_REGSTAT_HOME
 
 <dd></dd>
 
-### -field <a id="RIL_REGSTAT_ATTEMPTING"></a><a id="ril_regstat_attempting"></a><b>RIL_REGSTAT_ATTEMPTING</b>
+### -field RIL_REGSTAT_ATTEMPTING
 
 <dd></dd>
 
-### -field <a id="RIL_REGSTAT_DENIED"></a><a id="ril_regstat_denied"></a><b>RIL_REGSTAT_DENIED</b>
+### -field RIL_REGSTAT_DENIED
 
 <dd></dd>
 
-### -field <a id="RIL_REGSTAT_ROAMING"></a><a id="ril_regstat_roaming"></a><b>RIL_REGSTAT_ROAMING</b>
+### -field RIL_REGSTAT_ROAMING
 
 <dd></dd>
 
-### -field <a id="RIL_REGSTAT_ROAMING_DOMESTIC"></a><a id="ril_regstat_roaming_domestic"></a><b>RIL_REGSTAT_ROAMING_DOMESTIC</b>
+### -field RIL_REGSTAT_ROAMING_DOMESTIC
 
 <dd></dd>
 
-### -field <a id="RIL_REGSTAT_MAX"></a><a id="ril_regstat_max"></a><b>RIL_REGSTAT_MAX</b>
+### -field RIL_REGSTAT_MAX
 
 <dd></dd>
 </dl>

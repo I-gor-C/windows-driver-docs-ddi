@@ -60,43 +60,43 @@ typedef enum _AVCSTRM_FORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="AVCSTRM_FORMAT_SDDV_NTSC"></a><a id="avcstrm_format_sddv_ntsc"></a><b>AVCSTRM_FORMAT_SDDV_NTSC</b>
+### -field AVCSTRM_FORMAT_SDDV_NTSC
 
 <dd>
 <p>Specifies the 61883-2 specification for SD-DVCR data transmission, Standard Definition NTSC.</p>
 </dd>
 
-### -field <a id="AVCSTRM_FORMAT_SDDV_PAL"></a><a id="avcstrm_format_sddv_pal"></a><b>AVCSTRM_FORMAT_SDDV_PAL</b>
+### -field AVCSTRM_FORMAT_SDDV_PAL
 
 <dd>
 <p>Specifies the 61883-2 specification for SD-DVCR data transmission, Standard Definition PAL.</p>
 </dd>
 
-### -field <a id="AVCSTRM_FORMAT_MPEG2TS"></a><a id="avcstrm_format_mpeg2ts"></a><b>AVCSTRM_FORMAT_MPEG2TS</b>
+### -field AVCSTRM_FORMAT_MPEG2TS
 
 <dd>
 <p>Specifies the 61883-4 specification for MPEG2-TS data transmission.</p>
 </dd>
 
-### -field <a id="AVCSTRM_FORMAT_HDDV_NTSC"></a><a id="avcstrm_format_hddv_ntsc"></a><b>AVCSTRM_FORMAT_HDDV_NTSC</b>
+### -field AVCSTRM_FORMAT_HDDV_NTSC
 
 <dd>
 <p>Specifies the 61883-3 specification for HD-DVCR data transmission, High Definition NTSC. This format is not supported.</p>
 </dd>
 
-### -field <a id="AVCSTRM_FORMAT_HDDV_PAL"></a><a id="avcstrm_format_hddv_pal"></a><b>AVCSTRM_FORMAT_HDDV_PAL</b>
+### -field AVCSTRM_FORMAT_HDDV_PAL
 
 <dd>
 <p>Specifies the 61883-3 specification for HD-DVCR data transmission, High Definition PAL. This format is not supported.</p>
 </dd>
 
-### -field <a id="AVCSTRM_FORMAT_SDLDV_NTSC"></a><a id="avcstrm_format_sdldv_ntsc"></a><b>AVCSTRM_FORMAT_SDLDV_NTSC</b>
+### -field AVCSTRM_FORMAT_SDLDV_NTSC
 
 <dd>
 <p>Specifies the 61883-5 specification for SDL-DVCR data transmission. NTSC. This format is not supported.</p>
 </dd>
 
-### -field <a id="AVCSTRM_FORMAT_SDLDV_PAL"></a><a id="avcstrm_format_sdldv_pal"></a><b>AVCSTRM_FORMAT_SDLDV_PAL</b>
+### -field AVCSTRM_FORMAT_SDLDV_PAL
 
 <dd>
 <p>Specifies the 61883-5 specification for SDL-DVCR data transmission. PAL. This format is not supported.</p>

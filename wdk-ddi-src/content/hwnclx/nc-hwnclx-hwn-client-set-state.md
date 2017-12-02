@@ -63,25 +63,25 @@ typedef HWN_CLIENT_SET_STATE *PHWN_CLIENT_SET_STATE;
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to the client driver's context information. This memory space is available for use by the client driver. It is allocated as part of the framework object context space by <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. For more information, see <a href="gpiobtn.hwn_client_registration_packet">HWN_CLIENT_REGISTRATION_PACKET</a> and  <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/framework-object-context-space">Framework Object Context Space</a>.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Buffer of <i>BufferLength</i> bytes containing a <a href="gpiobtn.hwn_header">HWN_HEADER</a> structure including one or more <a href="gpiobtn.hwn_settings">HWN_SETTINGS</a> structures that specify the hardware notifications to be set.</p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>The size of <i>Buffer</i> in bytes.</p>
 </dd>
 
-### -param <i>BytesWritten</i> [out]
+### -param BytesWritten [out]
 
 <dd>
 <p>Pointer to a variable that indicates the number of bytes written by the function.</p>

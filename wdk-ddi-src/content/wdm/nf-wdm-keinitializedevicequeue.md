@@ -55,7 +55,7 @@ VOID KeInitializeDeviceQueue(
 ## -parameters
 <dl>
 
-### -param <i>DeviceQueue</i> [out]
+### -param DeviceQueue [out]
 
 <dd>
 <p>Pointer to a device queue object for which the caller provides the storage. </p>

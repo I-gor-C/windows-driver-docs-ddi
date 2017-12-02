@@ -57,19 +57,19 @@ ULONG StorPortLogTelemetry(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension </i> [in]
+### -param HwDeviceExtension  [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>StorAddress</i> [in, optional]
+### -param StorAddress [in, optional]
 
 <dd>
 <p>The storage unit device address. This parameter is NULL for adapter devices.</p>
 </dd>
 
-### -param <i>Event</i> [in]
+### -param Event [in]
 
 <dd>
 <p>Pointer to the <a href="..\storport\ns-storport--storport-telemetry-event.md">STORPORT_TELEMETRY_EVENT</a> structure that contains the telemetry data payload.</p>

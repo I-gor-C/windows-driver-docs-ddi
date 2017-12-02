@@ -56,7 +56,7 @@ typedef struct _USBD_VERSION_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>USBDI_Version</b>
+### -field USBDI_Version
 
 <dd>
 <p>Contains a binary-coded decimal USB interface version number. Released interface versions are listed in the following table.</p>
@@ -119,7 +119,7 @@ typedef struct _USBD_VERSION_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>Supported_USB_Version</b>
+### -field Supported_USB_Version
 
 <dd>
 <p>Contains a binary-coded decimal USB specification version number. </p>

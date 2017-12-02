@@ -54,7 +54,7 @@ NTSTATUS UnregisterWMIProvider(
 ## -parameters
 <dl>
 
-### -param <i>pDeviceObject</i> 
+### -param pDeviceObject 
 
 <dd>
 <p>Specifies a pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter driver.</p>

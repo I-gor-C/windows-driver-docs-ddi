@@ -1,11 +1,11 @@
 # Wdm.h header
 
 
-This header is used by Windows kernel, Installable file system, PCI, Driver test tools. For more information, see
+This header is used by Windows kernel, PCI, Driver test tools, Installable file system. For more information, see
 - [Windows kernel](../_kernel/index.md)
-- [Installable file system](../_ifsk/index.md)
 - [PCI](../_PCI/index.md)
 - [Driver test tools](../_devtest/index.md)
+- [Installable file system](../_ifsk/index.md)
 
 Wdm.h contain these programming interfaces:
 

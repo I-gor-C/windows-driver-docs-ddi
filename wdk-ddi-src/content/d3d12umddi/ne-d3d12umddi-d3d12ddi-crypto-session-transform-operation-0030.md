@@ -59,37 +59,37 @@ typedef enum _D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030 {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_NONE"></a><a id="d3d12ddi_crypto_session_transform_operation_0030_none"></a><b>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_NONE</b>
+### -field D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_NONE
 
 <dd>
 <p>The crypto session transform operation type is not available.</p>
 </dd>
 
-### -field <a id="D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT"></a><a id="d3d12ddi_crypto_session_transform_operation_0030_decrypt"></a><b>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT</b>
+### -field D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT
 
 <dd>
 <p>The crypto session transform operation is decrypt.</p>
 </dd>
 
-### -field <a id="D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT_WITH_HEADER"></a><a id="d3d12ddi_crypto_session_transform_operation_0030_decrypt_with_header"></a><b>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT_WITH_HEADER</b>
+### -field D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT_WITH_HEADER
 
 <dd>
 <p>The crypto session transform operation is decrypt with header.</p>
 </dd>
 
-### -field <a id="D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_TRANSCRYPT"></a><a id="d3d12ddi_crypto_session_transform_operation_0030_transcrypt"></a><b>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_TRANSCRYPT</b>
+### -field D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_TRANSCRYPT
 
 <dd>
 <p>The crypto session transform operation is transcrypt.</p>
 </dd>
 
-### -field <a id="D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_TRANSCRYPT_WITH_HEADER"></a><a id="d3d12ddi_crypto_session_transform_operation_0030_transcrypt_with_header"></a><b>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_TRANSCRYPT_WITH_HEADER</b>
+### -field D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_TRANSCRYPT_WITH_HEADER
 
 <dd>
 <p>The crypto session transform operation is transcrypt with header.</p>
 </dd>
 
-### -field <a id="D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT_HEADER"></a><a id="d3d12ddi_crypto_session_transform_operation_0030_decrypt_header"></a><b>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT_HEADER</b>
+### -field D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT_HEADER
 
 <dd>
 <p>The crypto session transform operation is decrypt header.</p>

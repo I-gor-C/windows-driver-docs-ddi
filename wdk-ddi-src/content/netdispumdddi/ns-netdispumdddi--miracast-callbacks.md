@@ -58,31 +58,31 @@ typedef struct _MIRACAST_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>ReportSessionStatus</b>
+### -field ReportSessionStatus
 
 <dd>
 <p>A pointer to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-report-session-status.md">ReportSessionStatus</a>   function.</p>
 </dd>
 
-### -field <b>MiracastIoControl</b>
+### -field MiracastIoControl
 
 <dd>
 <p>A pointer to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-miracast-io-control.md">MiracastIoControl</a>   function.</p>
 </dd>
 
-### -field <b>ReportStatistic</b>
+### -field ReportStatistic
 
 <dd>
 <p>A pointer to the    <a href="..\netdispumdddi\nc-netdispumdddi-pfn-report-statistic.md">ReportStatistic</a> function.</p>
 </dd>
 
-### -field <b>GetNextChunkData</b>
+### -field GetNextChunkData
 
 <dd>
 <p>A pointer to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-get-next-chunk-data.md">GetNextChunkData</a>    function.</p>
 </dd>
 
-### -field <b>RegisterForDataRateNotifications</b>
+### -field RegisterForDataRateNotifications
 
 <dd>
 <p>A pointer to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-register-datarate-notifications.md">RegisterForDataRateNotifications</a>    function.</p>

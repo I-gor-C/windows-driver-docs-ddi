@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY Lock(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-lock.md">D3DDDIARG_LOCK</a> structure that describes the resource or surface within the resource to lock.</p>

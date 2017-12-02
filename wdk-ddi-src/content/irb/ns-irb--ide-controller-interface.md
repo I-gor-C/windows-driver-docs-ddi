@@ -62,55 +62,55 @@ typedef struct _IDE_CONTROLLER_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The port driver sets this field to indicate the version of the port driver. The port driver sets the version to sizeof(IDE_CONTROLLER_INTERFACE). The miniport driver should verify that the version is greater than or equal to the one it is using.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use. The miniport driver shall not use this field.</p>
 </dd>
 
-### -field <b>ControllerExtensionSize</b>
+### -field ControllerExtensionSize
 
 <dd>
 <p>Specifies the size in bytes required by a miniport driver for its controller device extension.</p>
 </dd>
 
-### -field <b>ChannelExtensionSize</b>
+### -field ChannelExtensionSize
 
 <dd>
 <p>Specifies the size in bytes required by a miniport driver for its per-channel device extension.</p>
 </dd>
 
-### -field <b>AlignmentMask</b>
+### -field AlignmentMask
 
 <dd>
 <p>Contains a mask indicating the alignment restrictions for buffers required by the HBA for transfer operations. Valid mask values are also restricted by characteristics of the memory managers on different versions of Windows. Under Windows 2000 and Windows XP, the valid mask values are 0 (byte-aligned), 1 (word-aligned), 3 (DWORD-aligned) and 7 (double DWORD-aligned). The miniport driver should set this mask if the HBA supports scatter/gather.</p>
 </dd>
 
-### -field <b>AtaChannelInitRoutine</b>
+### -field AtaChannelInitRoutine
 
 <dd>
 <p>Pointer to the miniport's <b>AtaChannelInitRoutine</b> routine. The miniport needs to set this entry point only if it supports the Channel Interface.</p>
 </dd>
 
-### -field <b>AtaControllerChannelEnabled</b>
+### -field AtaControllerChannelEnabled
 
 <dd>
 <p>Pointer to the miniport's <b>AtaControllerChannelEnabled</b> routine. This is an optional entry point.</p>
 </dd>
 
-### -field <b>AtaControllerTransferModeSelect</b>
+### -field AtaControllerTransferModeSelect
 
 <dd>
 <p>Pointer to the miniport's <b>AtaControllerTransferModeSelect</b> routine. This is an optional entry point.</p>
 </dd>
 
-### -field <b>AtaAdapterControl</b>
+### -field AtaAdapterControl
 
 <dd>
 <p>Pointer to the miniport's <b>AtaControllerAdapterControl</b> routine. This is a required entry point.</p>

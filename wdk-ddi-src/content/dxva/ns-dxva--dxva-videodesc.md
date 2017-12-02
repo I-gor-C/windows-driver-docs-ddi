@@ -60,43 +60,43 @@ typedef struct _DXVA_VideoDesc {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size of this structure, in bytes.</p>
 </dd>
 
-### -field <b>SampleWidth</b>
+### -field SampleWidth
 
 <dd>
 <p>Specifies the width of the sample, in pixels.</p>
 </dd>
 
-### -field <b>SampleHeight</b>
+### -field SampleHeight
 
 <dd>
 <p>Specifies the height of the sample, in pixels.</p>
 </dd>
 
-### -field <b>SampleFormat</b>
+### -field SampleFormat
 
 <dd>
 <p>Specifies the format of the sample defined by the <a href="..\dxva\ne-dxva--dxva-sampleformat.md">DXVA_SampleFormat</a> structure.</p>
 </dd>
 
-### -field <b>d3dFormat</b>
+### -field d3dFormat
 
 <dd>
 <p>Specifies the Direct3D surface format of the sample.</p>
 </dd>
 
-### -field <b>InputSampleFreq</b>
+### -field InputSampleFreq
 
 <dd>
 <p>Specifies the frequency of incoming video defined by the <a href="..\dxva\ns-dxva--dxva-frequency.md">DXVA_Frequency</a> structure.</p>
 </dd>
 
-### -field <b>OutputFrameFreq</b>
+### -field OutputFrameFreq
 
 <dd>
 <p>Specifies the desired frame rate of output video as defined by <a href="..\dxva\ns-dxva--dxva-frequency.md">DXVA_Frequency</a>.</p>

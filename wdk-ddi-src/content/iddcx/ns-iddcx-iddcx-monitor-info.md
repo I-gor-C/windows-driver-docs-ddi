@@ -59,7 +59,7 @@ typedef struct IDDCX_MONITOR_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -67,14 +67,14 @@ typedef struct IDDCX_MONITOR_INFO {
                  </p>
 </dd>
 
-### -field <b>MonitorType</b>
+### -field MonitorType
 
 <dd>
 <p>The monitor connector type of the monitor
                  </p>
 </dd>
 
-### -field <b>ConnectorIndex</b>
+### -field ConnectorIndex
 
 <dd>
 <p>
@@ -84,7 +84,7 @@ typedef struct IDDCX_MONITOR_INFO {
 <div> </div>
 </dd>
 
-### -field <b>MonitorDescription</b>
+### -field MonitorDescription
 
 <dd>
 <p>
@@ -92,7 +92,7 @@ typedef struct IDDCX_MONITOR_INFO {
                  </p>
 </dd>
 
-### -field <b>MonitorContainerId</b>
+### -field MonitorContainerId
 
 <dd>
 <p>

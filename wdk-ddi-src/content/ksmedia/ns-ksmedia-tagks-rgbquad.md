@@ -57,25 +57,25 @@ typedef struct tagKS_RGBQUAD {
 ## -struct-fields
 <dl>
 
-### -field <b>rgbBlue</b>
+### -field rgbBlue
 
 <dd>
 <p>Specifies the intensity of blue in the color.</p>
 </dd>
 
-### -field <b>rgbGreen</b>
+### -field rgbGreen
 
 <dd>
 <p>Specifies the intensity of green in the color.</p>
 </dd>
 
-### -field <b>rgbRed</b>
+### -field rgbRed
 
 <dd>
 <p>Specifies the intensity of red in the color.</p>
 </dd>
 
-### -field <b>rgbReserved</b>
+### -field rgbReserved
 
 <dd>
 <p>Reserved. This member must be zero.</p>

@@ -55,13 +55,13 @@ typedef struct _PMI_METERED_HARDWARE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>MeteredHardwareCount</b>
+### -field MeteredHardwareCount
 
 <dd>
 <p>A value that specifies the number of device identifiers that are returned in the <b>MeteredHardware</b> member.</p>
 </dd>
 
-### -field <b>MeteredHardware</b>
+### -field MeteredHardware
 
 <dd>
 <p>A Unicode string that specifies the name of each device that is powered by the circuit on which the power meter provides measurement data. Individual device paths are delimited by a <b>NULL</b> character, and the whole list is terminated with a double <b>NULL</b>. The format of the device name is \\Device\xyz". </p>

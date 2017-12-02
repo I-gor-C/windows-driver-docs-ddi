@@ -55,11 +55,11 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KsListEntryTail"></a><a id="kslistentrytail"></a><a id="KSLISTENTRYTAIL"></a><b>KsListEntryTail</b>
+### -field KsListEntryTail
 
 <dd></dd>
 
-### -field <a id="KsListEntryHead"></a><a id="kslistentryhead"></a><a id="KSLISTENTRYHEAD"></a><b>KsListEntryHead</b>
+### -field KsListEntryHead
 
 <dd></dd>
 </dl>

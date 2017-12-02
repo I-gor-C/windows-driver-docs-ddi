@@ -62,55 +62,55 @@ NTSTATUS __stdcall HidP_GetUsageValueArray(
 ## -parameters
 <dl>
 
-### -param <i>ReportType</i> [in]
+### -param ReportType [in]
 
 <dd>
 <p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.</p>
 </dd>
 
-### -param <i>UsagePage</i> [in]
+### -param UsagePage [in]
 
 <dd>
 <p>Specifies the <a href="hid.hid_usages#usage_page#usage_page">usage page</a> of the usage value array.</p>
 </dd>
 
-### -param <i>LinkCollection</i> [in]
+### -param LinkCollection [in]
 
 <dd>
 <p>Specifies the <a href="https://msdn.microsoft.com/3f934661-c33c-4c08-82ac-ee2e0f519c8e">link collection</a> that contains the usage value array. If <i>LinkCollection</i> is nonzero, the routine only searches for a usage value array in this link collection; otherwise, if <i>LinkCollection</i> is zero, the routine searches for a usage value array in the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> associated with <i>PreparsedData</i>.</p>
 </dd>
 
-### -param <i>Usage</i> [in]
+### -param Usage [in]
 
 <dd>
 <p>Specifies the usage of the usage value array.</p>
 </dd>
 
-### -param <i>UsageValue</i> [in, out]
+### -param UsageValue [in, out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer in which the routine returns the data associated with the usage value array.</p>
 </dd>
 
-### -param <i>UsageValueByteLength</i> [in]
+### -param UsageValueByteLength [in]
 
 <dd>
 <p>Specifies the length, in bytes, of the buffer at <i>UsageValue</i>.</p>
 </dd>
 
-### -param <i>PreparsedData</i> [in]
+### -param PreparsedData [in]
 
 <dd>
-<p>Pointer to a top-level collection's <a href="NULL">preparsed data</a>.</p>
+<p>Pointer to a top-level collection's <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.</p>
 </dd>
 
-### -param <i>Report</i> [in]
+### -param Report [in]
 
 <dd>
 <p>Pointer to a report that contains values.</p>
 </dd>
 
-### -param <i>ReportLength</i> [in]
+### -param ReportLength [in]
 
 <dd>
 <p>Specifies the length, in bytes, of the report located at <i>Report</i>.</p>
@@ -145,7 +145,7 @@ NTSTATUS __stdcall HidP_GetUsageValueArray(
 
 <p><b>HidP_GetUsageValueArray</b> is designed to extract all the usage values for a usage whose report count is greater than 1. To extract a usage whose report count is equal to 1, use <b>HidP_GetUsageValue</b>. </p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

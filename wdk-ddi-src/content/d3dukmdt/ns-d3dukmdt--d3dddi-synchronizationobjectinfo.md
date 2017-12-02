@@ -66,19 +66,19 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-synchronizationobject-type.md">D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</a>-typed value that indicates the type of synchronization object.</p>
 </dd>
 
-### -field <b>SynchronizationMutex</b>
+### -field SynchronizationMutex
 
 <dd>
 <p>A structure that contains information about a synchronization mutex. If the <b>Type</b> member is equal to D3DDDI_SYNCHRONIZATION_MUTEX, the union in D3DDDI_SYNCHRONIZATIONOBJECTINFO holds a SynchronizationMutex structure, which contains the following member:</p>
 <dl>
 
-### -field <b>InitialState</b>
+### -field InitialState
 
 <dd>
 <p>A Boolean value that indicates whether the synchronization mutex is initially owned by an object. A value of <b>TRUE</b> indicates that the mutex is owned; <b>FALSE</b> indicates that the mutex is not owned. </p>
@@ -86,19 +86,19 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO {
 </dl>
 </dd>
 
-### -field <b>Semaphore</b>
+### -field Semaphore
 
 <dd>
 <p>A structure that contains information about a semaphore. If the <b>Type</b> member is equal to D3DDDI_SEMAPHORE, the union in D3DDDI_SYNCHRONIZATIONOBJECTINFO holds a Semaphore structure, which contains the following members:</p>
 <dl>
 
-### -field <b>MaxCount</b>
+### -field MaxCount
 
 <dd>
 <p>The maximum number of events that an object can be waiting for. </p>
 </dd>
 
-### -field <b>InitialCount</b>
+### -field InitialCount
 
 <dd>
 <p>The initial number of events that an object is waiting for. </p>
@@ -106,13 +106,13 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO {
 </dl>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>A structure that is reserved for future use. This structure contains the following member:</p>
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>An array of 32-bit values that are reserved for future use.</p>

@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTCheckSharedResourceAccess(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-checksharedresourceaccess.md">D3DKMT_CHECKSHAREDRESOURCEACCESS</a> structure that specifies parameters to determine if a process can access a shared resource. </p>

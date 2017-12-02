@@ -63,7 +63,7 @@ typedef struct _PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Indicates the type of counter resource described by the structure. Set this parameter to one of the following <a href="..\ntddk\ne-ntddk--physical-counter-resource-descriptor-type.md">PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE</a> enumeration constants:</p>
@@ -83,43 +83,43 @@ typedef struct _PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR {
 </ul>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>No flags are currently defined. Set this member to zero.</p>
 </dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <p>A union that can contain a <b>CounterIndex</b>, <b>ExtendedRegisterAddress</b>, or <b>Range</b> value.</p>
 <dl>
 
-### -field <b>CounterIndex</b>
+### -field CounterIndex
 
 <dd>
 <p>A physical counter index. </p>
 </dd>
 
-### -field <b>ExtendedRegisterAddress</b>
+### -field ExtendedRegisterAddress
 
 <dd>
 <p>An extended configuration register address. </p>
 </dd>
 
-### -field <b>Range</b>
+### -field Range
 
 <dd>
 <p>A range of counter indexes. </p>
 <dl>
 
-### -field <b>Begin</b>
+### -field Begin
 
 <dd>
 <p>The starting counter index of a block of contiguous counters. </p>
 </dd>
 
-### -field <b>End</b>
+### -field End
 
 <dd>
 <p>The ending counter index of a block of contiguous counters. </p>

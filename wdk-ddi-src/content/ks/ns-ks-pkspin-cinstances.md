@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>PossibleCount</b>
+### -field PossibleCount
 
 <dd>
 <p>Specifies the maximum number of pins the pin factory can instantiate on the filter, or KSINTANCE_INDETERMINATE if there is no maximum.</p>
 </dd>
 
-### -field <b>CurrentCount</b>
+### -field CurrentCount
 
 <dd>
 <p>Specifies the current number of pins the pin factory has instantiated on the filter.</p>

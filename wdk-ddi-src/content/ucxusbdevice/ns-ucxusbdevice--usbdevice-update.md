@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Passed by UCX to update the specified device. This structure is in the request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object passed in the <a href="buses.evt_ucx_usbdevice_update">EVT_UCX_USBDEVICE_UPDATE</a> callback function.</p>
+<p>Passed by UCX to update the specified device. This structure is in the request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object passed in the <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-update.md">EVT_UCX_USBDEVICE_UPDATE</a> callback function.</p>
 
 
 ## -syntax
@@ -68,61 +68,61 @@ typedef struct _USBDEVICE_UPDATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
-<p>A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
+<p>A <a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-mgmt-header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
 </dd>
 
-### -field <b><a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a></b>
+### -field USBDEVICE_MGMT_HEADER
 
 <dd>
-<p>A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
+<p>A <a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-mgmt-header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
-<p>A bitwise-OR of <a href="buses._usbdevice_update_flags">USBDEVICE_UPDATE_FLAGS</a> values that indicates the attributes that must be updated by the client driver.</p>
+<p>A bitwise-OR of <a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update-flags.md">USBDEVICE_UPDATE_FLAGS</a> values that indicates the attributes that must be updated by the client driver.</p>
 </dd>
 
-### -field <b>DeviceDescriptor</b>
+### -field DeviceDescriptor
 
 <dd>
 <p>A pointer a <a href="..\usbspec\ns-usbspec--usb-device-descriptor.md">USB_DEVICE_DESCRIPTOR</a> structure that contains the device descriptor.</p>
 </dd>
 
-### -field <b>BosDescriptor</b>
+### -field BosDescriptor
 
 <dd>
 <p>A pointer a <b>USB_BOS_DESCRIPTOR</b> structure that contains the device descriptor. See Usbspec.h.</p>
 </dd>
 
-### -field <b>MaxExitLatency</b>
+### -field MaxExitLatency
 
 <dd>
 <p>The maximum exit latency period.</p>
 </dd>
 
-### -field <b>IsHub</b>
+### -field IsHub
 
 <dd>
 <p>Indicates if the USB device to update is a USB hub (TRUE) or not (FALSE).</p>
 </dd>
 
-### -field <b>FailureFlags</b>
+### -field FailureFlags
 
 <dd>
-<p>A <a href="buses._usbdevice_update_failure_flags">USBDEVICE_UPDATE_FAILURE_FLAGS</a> structure that indicates the errors, if any, that occurred during the update operation. </p>
+<p>A <a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update-failure-flags.md">USBDEVICE_UPDATE_FAILURE_FLAGS</a> structure that indicates the errors, if any, that occurred during the update operation. </p>
 </dd>
 
-### -field <b>Usb20HardwareLpmParameters</b>
+### -field Usb20HardwareLpmParameters
 
 <dd>
-<p>A <a href="buses._usbdevice_update_20_hardware_lpm_parameters">USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS</a>  structure that describes the Link Power Management (LPM) features.</p>
+<p>A <a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update-20-hardware-lpm-parameters.md">USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS</a>  structure that describes the Link Power Management (LPM) features.</p>
 </dd>
 
-### -field <b>RootPortResumeTime</b>
+### -field RootPortResumeTime
 
 <dd>
 <p>The resume time for the root port.</p>
@@ -152,13 +152,13 @@ typedef struct _USBDEVICE_UPDATE {
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
 </dt>
 <dt>
-<a href="buses._usbdevice_update_flags">USBDEVICE_UPDATE_FLAGS</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update-flags.md">USBDEVICE_UPDATE_FLAGS</a>
 </dt>
 <dt>
-<a href="buses._usbdevice_update_failure_flags">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update-failure-flags.md">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
 </dt>
 <dt>
-<a href="buses._usbdevice_update_20_hardware_lpm_parameters">USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update-20-hardware-lpm-parameters.md">USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>

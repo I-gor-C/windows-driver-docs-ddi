@@ -7,7 +7,7 @@ old-location: wdf\wdf_pnp_capability.htm
 old-project: wdf
 ms.assetid: adcc5f64-b49c-47ca-8ef9-276537a0d7c6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,49 +63,49 @@ typedef enum _WDF_PNP_CAPABILITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfPnpCapInvalid"></a><a id="wdfpnpcapinvalid"></a><a id="WDFPNPCAPINVALID"></a><b>WdfPnpCapInvalid</b>
+### -field WdfPnpCapInvalid
 
 <dd>
 <p>Indicates whether PnP capabilities of the device are invalid.</p>
 </dd>
 
-### -field <a id="WdfPnpCapLockSupported"></a><a id="wdfpnpcaplocksupported"></a><a id="WDFPNPCAPLOCKSUPPORTED"></a><b>WdfPnpCapLockSupported</b>
+### -field WdfPnpCapLockSupported
 
 <dd>
 <p>Indicates whether the device can be locked in its slot to prevent ejection. (Setting this capability disables ejecting a device from its slot and does not disable ejecting media from a device.) </p>
 </dd>
 
-### -field <a id="WdfPnpCapEjectSupported"></a><a id="wdfpnpcapejectsupported"></a><a id="WDFPNPCAPEJECTSUPPORTED"></a><b>WdfPnpCapEjectSupported</b>
+### -field WdfPnpCapEjectSupported
 
 <dd>
 <p>Indicates whether the device can be ejected from its slot. (Setting this capability enables ejecting a device from its slot and does not enable ejecting media from a device.) </p>
 </dd>
 
-### -field <a id="WdfPnpCapRemovable"></a><a id="wdfpnpcapremovable"></a><a id="WDFPNPCAPREMOVABLE"></a><b>WdfPnpCapRemovable</b>
+### -field WdfPnpCapRemovable
 
 <dd>
 <p>Indicates whether the device can be removed while the computer is running. If <b>WdfPnpCapRemovable</b> is set to <b>WdfTrue</b> and <b>WdfPnpCapSurpriseRemovalOk</b> is set to <b>WdfFalse</b>, users should use the system's Unplug or Eject Hardware application. </p>
 </dd>
 
-### -field <a id="WdfPnpCapDockDevice"></a><a id="wdfpnpcapdockdevice"></a><a id="WDFPNPCAPDOCKDEVICE"></a><b>WdfPnpCapDockDevice</b>
+### -field WdfPnpCapDockDevice
 
 <dd>
 <p>Indicates whether the device is a docking station. </p>
 </dd>
 
-### -field <a id="WdfPnpCapSurpriseRemovalOk"></a><a id="wdfpnpcapsurpriseremovalok"></a><a id="WDFPNPCAPSURPRISEREMOVALOK"></a><b>WdfPnpCapSurpriseRemovalOk</b>
+### -field WdfPnpCapSurpriseRemovalOk
 
 <dd>
 <p>Indicates whether users can remove the device without using the computer's Unplug or Eject Hardware application.</p>
 </dd>
 
-### -field <a id="WdfPnpCapNoDisplayInUI"></a><a id="wdfpnpcapnodisplayinui"></a><a id="WDFPNPCAPNODISPLAYINUI"></a><b>WdfPnpCapNoDisplayInUI</b>
+### -field WdfPnpCapNoDisplayInUI
 
 <dd>
 <p>Indicates whether the device can be hidden (not displayed) in Device Manager.</p>
 </dd>
 
-### -field <a id="WdfPnpCapMaximum"></a><a id="wdfpnpcapmaximum"></a><a id="WDFPNPCAPMAXIMUM"></a><b>WdfPnpCapMaximum</b>
+### -field WdfPnpCapMaximum
 
 <dd>
 <p>Valid enumeration values were exceeded.</p>
@@ -140,4 +140,4 @@ typedef enum _WDF_PNP_CAPABILITY {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PNP_CAPABILITY enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PNP_CAPABILITY enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

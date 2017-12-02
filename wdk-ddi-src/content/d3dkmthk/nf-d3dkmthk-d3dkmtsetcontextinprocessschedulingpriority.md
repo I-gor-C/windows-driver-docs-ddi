@@ -54,7 +54,7 @@ _Check_return_ NTSTATUS APIENTRY D3DKMTSetContextInProcessSchedulingPriority(
 ## -parameters
 <dl>
 
-### -param <i>pContextPriority</i> [in]
+### -param pContextPriority [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setcontextinprocessschedulingpriority.md">D3DKMT_SETCONTEXTINPROCESSSCHEDULINGPRIORITY</a> structure that describes parameters for setting the scheduling priority for a device context.</p>

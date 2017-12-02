@@ -55,13 +55,13 @@ typedef struct _D3DKMT_DEVICEPRESENT_QUEUE_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>Indicates the present source id.</p>
 </dd>
 
-### -field <b>bQueuedPresentLimitReached</b>
+### -field bQueuedPresentLimitReached
 
 <dd>
 <p>Indicates whether the queued present limit has been reached.</p>

@@ -57,19 +57,19 @@ FORCEINLINE void RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER(
 ## -parameters
 <dl>
 
-### -param <i>Params</i> [out]
+### -param Params [out]
 
 <dd>
 <p>A pointer to a <a href="..\wpprecorder\ns-wpprecorder--recorder-log-create-params.md">RECORDER_LOG_CREATE_PARAMS</a> structure.</p>
 </dd>
 
-### -param <i>LogIdentifier</i> [in, optional]
+### -param LogIdentifier [in, optional]
 
 <dd>
 <p>String identifier for the log.</p>
 </dd>
 
-### -param <i>LogIdentifierAppendPointer</i> [in]
+### -param LogIdentifierAppendPointer [in]
 
 <dd>
 <p>A pointer from each debug message to its IFR’s metadata structure.</p>

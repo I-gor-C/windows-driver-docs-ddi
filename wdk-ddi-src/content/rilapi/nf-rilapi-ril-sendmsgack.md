@@ -7,7 +7,7 @@ old-location: netvista\ril_sendmsgack.htm
 old-project: netvista
 ms.assetid: 472ae963-1680-47f8-8802-83453d0c1413
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SendMsgAck
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,35 +64,35 @@ HRESULT  RIL_SendMsgAck(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>hUiccApp</i> 
+### -param hUiccApp 
 
 <dd></dd>
 
-### -param <i>dwAckID</i> 
+### -param dwAckID 
 
 <dd></dd>
 
-### -param <i>dwMsgStatus</i> 
+### -param dwMsgStatus 
 
 <dd></dd>
 
-### -param <i>dwSmsFormat</i> 
+### -param dwSmsFormat 
 
 <dd></dd>
 
-### -param <i>dwOptions</i> 
+### -param dwOptions 
 
 <dd></dd>
 </dl>

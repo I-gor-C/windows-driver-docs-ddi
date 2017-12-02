@@ -68,91 +68,91 @@ typedef struct HBA_PortStatistics {
 ## -struct-fields
 <dl>
 
-### -field <b>SecondsSinceLastReset</b>
+### -field SecondsSinceLastReset
 
 <dd>
 <p>Reports the number of seconds since the statistics were last reset.</p>
 </dd>
 
-### -field <b>TxFrames</b>
+### -field TxFrames
 
 <dd>
 <p>Reports the number of fibre channel frames transmitted for all protocols and classes.</p>
 </dd>
 
-### -field <b>TxWords</b>
+### -field TxWords
 
 <dd>
 <p>Reports the number of fibre channel words transmitted for all protocols and classes. </p>
 </dd>
 
-### -field <b>RxFrames</b>
+### -field RxFrames
 
 <dd>
 <p>Reports the number of fibre channel frames received for all protocols and classes. </p>
 </dd>
 
-### -field <b>RxWords</b>
+### -field RxWords
 
 <dd>
 <p>Reports the number of fibre channel words received for all protocols and classes. </p>
 </dd>
 
-### -field <b>LIPCount</b>
+### -field LIPCount
 
 <dd>
 <p>Reports the number of LIP events that have occurred on a arbitrated loop.</p>
 </dd>
 
-### -field <b>NOSCount</b>
+### -field NOSCount
 
 <dd>
 <p>Reports the number of NOS events that have occurred on the switched fabric.</p>
 </dd>
 
-### -field <b>ErrorFrames</b>
+### -field ErrorFrames
 
 <dd>
 <p>Reports the number of frames that have been received in error.</p>
 </dd>
 
-### -field <b>DumpedFrames</b>
+### -field DumpedFrames
 
 <dd>
 <p>Reports the number of frames that were lost due to a lack of host buffers available. </p>
 </dd>
 
-### -field <b>LinkFailureCount</b>
+### -field LinkFailureCount
 
 <dd>
 <p>Reports the link failure count field of the error status block for the port. </p>
 </dd>
 
-### -field <b>LossOfSyncCount</b>
+### -field LossOfSyncCount
 
 <dd>
 <p>Reports the value of the loss of synchronization count field of the link error status block for the port.  </p>
 </dd>
 
-### -field <b>LossOfSignalCount</b>
+### -field LossOfSignalCount
 
 <dd>
 <p>Reports the value of the loss of signal count field of the link error status block for the specified port. </p>
 </dd>
 
-### -field <b>PrimitiveSeqProtocolErrCount</b>
+### -field PrimitiveSeqProtocolErrCount
 
 <dd>
 <p>Reports the value of the primitive sequence protocol error field of the link error status block for the port. </p>
 </dd>
 
-### -field <b>InvalidTxWordCount</b>
+### -field InvalidTxWordCount
 
 <dd>
 <p>Reports the value of the invalid transmission word field of the link error status block for the specified port. </p>
 </dd>
 
-### -field <b>InvalidCRCCount</b>
+### -field InvalidCRCCount
 
 <dd>
 <p>Reports the value of the invalid CRC count field of the link error status block for the specified port. </p>

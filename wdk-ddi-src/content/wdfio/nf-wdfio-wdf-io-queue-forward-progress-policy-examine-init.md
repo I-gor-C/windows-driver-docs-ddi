@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_queue_forward_progress_policy_examine_init.htm
 old-project: wdf
 ms.assetid: 3d1d7242-ff26-47e0-a1f6-ae67b27acf22
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ VOID WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Policy</i> [out]
+### -param Policy [out]
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfio\ns-wdfio--wdf-io-queue-forward-progress-policy.md">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.</p>
 </dd>
 
-### -param <i>TotalForwardProgressRequests</i> [in]
+### -param TotalForwardProgressRequests [in]
 
 <dd>
 <p>The number of request objects that the framework will attempt to reserve for use in low-memory situations. This number must be greater than zero.</p>
 </dd>
 
-### -param <i>EvtIoWdmIrpForForwardProgress</i> [in]
+### -param EvtIoWdmIrpForForwardProgress [in]
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfio\nc-wdfio-evt-wdf-io-wdm-irp-for-forward-progress.md">EvtIoWdmIrpForForwardProgress</a> callback function.</p>
@@ -131,4 +131,4 @@ VOID WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

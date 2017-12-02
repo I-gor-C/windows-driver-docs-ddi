@@ -55,13 +55,13 @@ typedef struct _VOLUME_DISK_EXTENTS {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfDiskExtents</b>
+### -field NumberOfDiskExtents
 
 <dd>
 <p>Indicates the number of extents that comprise the volume, which can span multiple disks. </p>
 </dd>
 
-### -field <b>Extents</b>
+### -field Extents
 
 <dd>
 <p>Indicates the number of extents that comprise the volume, which can span multiple disks. </p>

@@ -60,19 +60,19 @@ typedef struct _D3DKMT_ESCAPE {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[in] A handle to the graphics adapter that information is exchanged on.</p>
 </dd>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to a display device that is optionally specified if the information to be exchanged is specific to a particular device.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>[in] A value of type D3DKMT_ESCAPETYPE that indicates either to exchange information with the display miniport driver or to control kernel-mode components. The following table shows the possible values.</p>
@@ -346,13 +346,13 @@ typedef struct _D3DKMT_ESCAPE {
 <p> </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-escapeflags.md">D3DDDI_ESCAPEFLAGS</a> structure that indicates, in bit-field flags, how to share information. The OpenGL ICD should specify the <b>HardwareAccess</b> bit-field flag to indicate that the display miniport driver must access graphics hardware in such a way that the operating system must perform the <a href="https://msdn.microsoft.com/2b7c1eae-6527-469e-a2fa-74d2a1246bd3">second level of synchronization</a> into the display miniport driver for the <a href="display.dxgkddiescape">DxgkDdiEscape</a> call. </p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in/out] A pointer to a buffer that the OpenGL ICD allocates that contains information that the OpenGL ICD either exchanges with the display miniport driver or uses to control kernel-mode components. The following table describes the content of the buffer that <b>pPrivateDriverData</b> points to, depending on the value of <b>Type</b>.</p>
@@ -427,13 +427,13 @@ typedef struct _D3DKMT_ESCAPE {
 <p> </p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to. The OpenGL ICD must specify the size of the buffer when it calls the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a> function.</p>
 </dd>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] A handle to a context that is optionally specified if the information to be exchanged is specific to a particular device context. If the OpenGL ICD sets <b>hContext</b> to a non-NULL value, the ICD must have also set <b>hDevice</b> to a non-NULL value, and <b>hDevice</b> must correspond to the device that owns the context.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ndismresetcomplete.htm
 old-project: netvista
 ms.assetid: 3da12a14-a90a-46a6-b67e-55044fdc3ca1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMResetComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,20 +58,20 @@ VOID NdisMResetComplete(
 ## -parameters
 <dl>
 
-### -param <i>MiniportAdapterHandle</i> [in]
+### -param MiniportAdapterHandle [in]
 
 <dd>
 <p>The miniport adapter handle that NDIS originally passed to the 
      <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> function.</p>
 </dd>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>The final status of the reset operation just completed</p>
 </dd>
 
-### -param <i>AddressingReset</i> [in]
+### -param AddressingReset [in]
 
 <dd>
 <p>A Boolean value that is <b>TRUE</b> if NDIS is responsible for restoring the settings for multicast
@@ -187,4 +187,4 @@ VOID NdisMResetComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMResetComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMResetComplete function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

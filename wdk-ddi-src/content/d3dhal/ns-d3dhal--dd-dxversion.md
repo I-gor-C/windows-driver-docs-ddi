@@ -59,19 +59,19 @@ typedef struct _DD_DXVERSION {
 ## -struct-fields
 <dl>
 
-### -field <b>gdi2</b>
+### -field gdi2
 
 <dd>
 <p>Specifies a <a href="..\d3dhal\ns-d3dhal--dd-getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.</p>
 </dd>
 
-### -field <b>dwDXVersion</b>
+### -field dwDXVersion
 
 <dd>
 <p>Specifies the version of DirectX. This member is set to DD_RUNTIME_VERSION, which is 0x00000700 for DirectX 7.0 and 0x00000800 for DirectX 8.0.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Reserved. Driver should not read or write.</p>

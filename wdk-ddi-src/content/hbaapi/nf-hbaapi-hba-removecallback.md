@@ -54,7 +54,7 @@ HBA_STATUS HBA_API HBA_RemoveCallback(
 ## -parameters
 <dl>
 
-### -param <i>callbackHandle</i> [in]
+### -param callbackHandle [in]
 
 <dd>
 <p>Contains an opaque handle specified with the call to <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the callback routine to de-register. </p>

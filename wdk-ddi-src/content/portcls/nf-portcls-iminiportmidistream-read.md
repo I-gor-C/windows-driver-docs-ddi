@@ -56,19 +56,19 @@ NTSTATUS Read(
 ## -parameters
 <dl>
 
-### -param <i>BufferAddress</i> [in]
+### -param BufferAddress [in]
 
 <dd>
 <p>Specifies the address of a caller-allocated buffer. The method copies the incoming MIDI data from the device to the buffer. The allocated size of this buffer must be greater than or equal to <i>BufferLength</i>.</p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>Specifies the length in bytes of the buffer pointed to by <i>BufferAddress</i>.</p>
 </dd>
 
-### -param <i>BytesRead</i> [out]
+### -param BytesRead [out]
 
 <dd>
 <p>Output pointer to a caller-allocated variable into which the method writes a count specifying the actual number of bytes successfully read from the device into the buffer.</p>

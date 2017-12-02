@@ -54,7 +54,7 @@ HRESULT WINAPI DrvPopulateFilterServices(
 ## -parameters
 <dl>
 
-### -param <i>pPropertyBag</i> [in]
+### -param pPropertyBag [in]
 
 <dd>
 <p>Pointer to a print pipeline property bag.</p>
@@ -65,7 +65,7 @@ HRESULT WINAPI DrvPopulateFilterServices(
 <p>This function returns an HRESULT value.</p>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/7567c514-3034-4db0-9622-31d14eb3772e">XPSDrv printer driver</a> can specify filter service provider module using the &lt;<i>FilterServiceProvider</i>&gt;  or &lt;<i>OptionalFilterServiceProvider</i>&gt; element in the <a href="NULL">filter pipeline configuration file</a>.   The service provider module must export the <b>DrvPopulateFilterServices</b> function.</p>
+<p>The <a href="https://msdn.microsoft.com/7567c514-3034-4db0-9622-31d14eb3772e">XPSDrv printer driver</a> can specify filter service provider module using the &lt;<i>FilterServiceProvider</i>&gt;  or &lt;<i>OptionalFilterServiceProvider</i>&gt; element in the <a href="https://msdn.microsoft.com/586247bd-6d06-4728-a5f0-ee3fe1d09321">filter pipeline configuration file</a>.   The service provider module must export the <b>DrvPopulateFilterServices</b> function.</p>
 
 ## -requirements
 <table>
@@ -94,7 +94,7 @@ HRESULT WINAPI DrvPopulateFilterServices(
 ## -see-also
 <dl>
 <dt>
-<a href="NULL">Filter pipeline configuration file</a>
+<a href="https://msdn.microsoft.com/586247bd-6d06-4728-a5f0-ee3fe1d09321">Filter pipeline configuration file</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554320">IPrintPipelinePropertyBag</a>

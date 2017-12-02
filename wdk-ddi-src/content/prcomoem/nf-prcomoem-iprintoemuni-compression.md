@@ -60,37 +60,37 @@ HRESULT Compression(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pInBuf</i> 
+### -param pInBuf 
 
 <dd>
 <p>Caller-supplied pointer to input scan line data.</p>
 </dd>
 
-### -param <i>pOutBuf</i> 
+### -param pOutBuf 
 
 <dd>
 <p>Caller-supplied pointer to an output buffer to receive compressed scan line data.</p>
 </dd>
 
-### -param <i>dwInLen</i> 
+### -param dwInLen 
 
 <dd>
 <p>Caller-supplied length of the input data.</p>
 </dd>
 
-### -param <i>dwOutLen</i> 
+### -param dwOutLen 
 
 <dd>
 <p>Caller-supplied length of the output buffer.</p>
 </dd>
 
-### -param <i>piResult</i> [out]
+### -param piResult [out]
 
 <dd>
 <p>Receives a method-supplied result value. If the operation succeeds, this value should be the number of compressed bytes, which must not be larger than the value received for <i>dwOutLen</i>. If an error occurs, or if the method cannot compress, the result value should be -1.</p>
@@ -111,7 +111,7 @@ HRESULT Compression(
 ## -remarks
 <p>The <code>IPrintOemUni::Compression</code> method is used by rendering plug-ins to compress scan line data before it is sent to the print spooler. The method's purpose is to provide support for printer-specific compression methods that are not supported by Unidrv.</p>
 
-<p>If the <code>IPrintOemUni::Compression</code> method is defined, and if the printer's <a href="wdkgloss.g#wdkgloss.generic_printer_description__gpd_#wdkgloss.generic_printer_description__gpd_"><i>GPD</i></a> file contains a CmdEnableOEMComp command entry, Unidrv calls the method each time a scan line is ready to be sent to the print spooler. (For information about the CmdEnableOEMComp command, see <a href="NULL">Raster Data Compression Commands</a>.)</p>
+<p>If the <code>IPrintOemUni::Compression</code> method is defined, and if the printer's <a href="wdkgloss.g#wdkgloss.generic_printer_description__gpd_#wdkgloss.generic_printer_description__gpd_"><i>GPD</i></a> file contains a CmdEnableOEMComp command entry, Unidrv calls the method each time a scan line is ready to be sent to the print spooler. (For information about the CmdEnableOEMComp command, see <a href="https://msdn.microsoft.com/fd88d009-7612-49cc-810a-b0d09b4b75b3">Raster Data Compression Commands</a>.)</p>
 
 <p>The <i>pInBuf</i> and <i>dwInLen</i> parameter values describe a buffer containing a scan line of image data to be compressed. The <i>pOutBuf</i> and <i>dwOutLen</i> parameter values describe the buffer into which the <code>IPrintOemUni::Compression</code> method should place the compressed data.</p>
 

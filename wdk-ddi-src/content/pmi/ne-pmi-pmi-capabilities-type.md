@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="PmiReportedCapabilities"></a><a id="pmireportedcapabilities"></a><a id="PMIREPORTEDCAPABILITIES"></a><b>PmiReportedCapabilities</b>
+### -field PmiReportedCapabilities
 
 <dd>
 <p>The PMI capabilities data, formatted as a <a href="..\pmi\ns-pmi--pmi-reported-capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure, specifies the power capabilities of the power meter.</p>
 </dd>
 
-### -field <a id="PmiMeteredHardware"></a><a id="pmimeteredhardware"></a><a id="PMIMETEREDHARDWARE"></a><b>PmiMeteredHardware</b>
+### -field PmiMeteredHardware
 
 <dd>
 <p>The PMI capabilities data, formatted as a <a href="..\pmi\ns-pmi--pmi-metered-hardware-information.md">PMI_METERED_HARDWARE_INFORMATION</a> structure, specifies the hardware devices that the power meter provides measurement data to.</p>
 </dd>
 
-### -field <a id="PmiCapabilitiesMax"></a><a id="pmicapabilitiesmax"></a><a id="PMICAPABILITIESMAX"></a><b>PmiCapabilitiesMax</b>
+### -field PmiCapabilitiesMax
 
 <dd>
 <p>The maximum number of PMI capability structures.</p>

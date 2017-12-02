@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR {
 ## -struct-fields
 <dl>
 
-### -field <b>pVPGuid</b>
+### -field pVPGuid
 
 <dd>
 <p>[in] A pointer to the GUID that represents a DirectX VA video processor to create. The Microsoft Direct3D runtime can call the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function to query (D3DDDICAPS_DXVAHD_GETVPCAPS) for the capabilities of the video processors that the driver supports. Each <b>VPGuid</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpcaps.md">DXVAHDDDI_VPCAPS</a> structure in the array that the driver's <b>GetCaps</b> returns specifies a video processor that the driver supports.  </p>
 </dd>
 
-### -field <b>hVideoProcessor</b>
+### -field hVideoProcessor
 
 <dd>
 <p>[out] A handle to the video processor. The user-mode display driver must set this handle to a value that the Microsoft Direct3D runtime can use to identify the video processor in subsequent calls. </p>

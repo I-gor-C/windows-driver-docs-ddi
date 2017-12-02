@@ -56,13 +56,13 @@ VOID ExInterlockedAddLargeStatistic(
 ## -parameters
 <dl>
 
-### -param <i>Addend</i> [in]
+### -param Addend [in]
 
 <dd>
 <p>A pointer to the LARGE_INTEGER variable that is incremented by the value of <i>Increment</i>.</p>
 </dd>
 
-### -param <i>Increment</i> [in]
+### -param Increment [in]
 
 <dd>
 <p>Specifies a ULONG value that is added to the variable that <i>Addend</i> points to. </p>

@@ -56,19 +56,19 @@ typedef enum _STORAGE_PROTOCOL_ATA_DATA_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="AtaDataTypeUnknown"></a><a id="atadatatypeunknown"></a><a id="ATADATATYPEUNKNOWN"></a><b>AtaDataTypeUnknown</b>
+### -field AtaDataTypeUnknown
 
 <dd>
 <p>Unknown data type.</p>
 </dd>
 
-### -field <a id="AtaDataTypeIdentify"></a><a id="atadatatypeidentify"></a><a id="ATADATATYPEIDENTIFY"></a><b>AtaDataTypeIdentify</b>
+### -field AtaDataTypeIdentify
 
 <dd>
 <p>Identify device data type.</p>
 </dd>
 
-### -field <a id="AtaDataTypeLogPage"></a><a id="atadatatypelogpage"></a><a id="ATADATATYPELOGPAGE"></a><b>AtaDataTypeLogPage</b>
+### -field AtaDataTypeLogPage
 
 <dd>
 <p>Log page data type.</p>

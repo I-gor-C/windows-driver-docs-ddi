@@ -59,31 +59,31 @@ typedef struct _FILE_FULL_EA_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NextEntryOffset</b>
+### -field NextEntryOffset
 
 <dd>
 <p>The offset of the next <b>FILE_FULL_EA_INFORMATION</b>-type entry. This member is zero if no other entries follow this one. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Can be zero or can be set with FILE_NEED_EA, indicating that the file to which the EA belongs cannot be interpreted without understanding the associated extended attributes.</p>
 </dd>
 
-### -field <b>EaNameLength</b>
+### -field EaNameLength
 
 <dd>
 <p>The length in bytes of the <b>EaName</b> array. This value does not include a null-terminator to <b>EaName</b>. </p>
 </dd>
 
-### -field <b>EaValueLength</b>
+### -field EaValueLength
 
 <dd>
 <p>The length in bytes of each EA value in the array.</p>
 </dd>
 
-### -field <b>EaName</b>
+### -field EaName
 
 <dd>
 <p>An array of characters naming the EA for this entry.</p>

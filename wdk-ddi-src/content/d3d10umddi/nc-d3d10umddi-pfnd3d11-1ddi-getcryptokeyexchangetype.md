@@ -61,7 +61,7 @@ HRESULT APIENTRY* GetCryptoKeyExchangeType(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).
@@ -69,25 +69,25 @@ HRESULT APIENTRY* GetCryptoKeyExchangeType(
 </p>
 </dd>
 
-### -param <i>pCryptoType</i> [in]
+### -param pCryptoType [in]
 
 <dd>
 <p>A pointer to a GUID that specifies the type of encryption algorithm to query.</p>
 </dd>
 
-### -param <i>pDecodeProfile</i> [in]
+### -param pDecodeProfile [in]
 
 <dd>
 <p>A pointer to a GUID that specifies the decoder profile to query.</p>
 </dd>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>The zero-based index of the key exchange type.</p>
 </dd>
 
-### -param <i>pKeyExchangeType</i> [out]
+### -param pKeyExchangeType [out]
 
 <dd>
 <p>A pointer to a GUID that specifies the supported key exchange type for the specified index.</p>

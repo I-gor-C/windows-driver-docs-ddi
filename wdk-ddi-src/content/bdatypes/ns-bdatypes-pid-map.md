@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>ulPID</b>
+### -field ulPID
 
 <dd>
 <p>Identifier of particular packets. </p>
 </dd>
 
-### -field <b>MediaSampleContent</b>
+### -field MediaSampleContent
 
 <dd>
 <p>MEDIA_SAMPLE_CONTENT enumerated type value that specifies the type of media content that packets contain. </p>

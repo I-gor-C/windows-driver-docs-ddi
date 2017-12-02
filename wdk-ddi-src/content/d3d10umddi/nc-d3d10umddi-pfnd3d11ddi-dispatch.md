@@ -60,25 +60,25 @@ VOID APIENTRY Dispatch(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>ThreadGroupCountX</i> [in]
+### -param ThreadGroupCountX [in]
 
 <dd>
 <p> The size, in thread groups, of the x-dimension of the thread-group grid.  The maximum size is 65535. </p>
 </dd>
 
-### -param <i>ThreadGroupCountY</i> [in]
+### -param ThreadGroupCountY [in]
 
 <dd>
 <p> The size, in thread groups, of the y-dimension of the thread-group grid.  The maximum size is 65535. </p>
 </dd>
 
-### -param <i>ThreadGroupCountZ</i> [in]
+### -param ThreadGroupCountZ [in]
 
 <dd>
 <p> The size, in thread groups, of the z-dimension of the thread-group grid.  The maximum size is 65535. </p>

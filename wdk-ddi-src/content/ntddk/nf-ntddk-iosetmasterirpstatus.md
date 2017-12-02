@@ -55,13 +55,13 @@ VOID IoSetMasterIrpStatus(
 ## -parameters
 <dl>
 
-### -param <i>MasterIrp</i> [in, out]
+### -param MasterIrp [in, out]
 
 <dd>
-<p>A pointer to the master <a href="..\ntifs\ns-ntifs--irp.md">IRP</a>. For more information, see Remarks.</p>
+<p>A pointer to the master <a href="..\wdm\ns-wdm--irp.md">IRP</a>. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>An NTSTATUS value to compare to the <b>Status</b> member of the <a href="https://msdn.microsoft.com/59147bd1-6cd7-4fbe-b7bc-52e09ab88576">I/O status block</a> in the master IRP.</p>
@@ -145,7 +145,7 @@ VOID IoSetMasterIrpStatus(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 </dl>
 <p> </p>

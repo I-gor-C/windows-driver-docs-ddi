@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The flags that are set by the client driver in the  <a href="buses.evt_ucx_usbdevice_update">EVT_UCX_USBDEVICE_UPDATE</a> callback function. Indicate errors, if any, that might have occurred while updating the device.</p>
+<p>The flags that are set by the client driver in the  <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-update.md">EVT_UCX_USBDEVICE_UPDATE</a> callback function. Indicate errors, if any, that might have occurred while updating the device.</p>
 
 
 ## -syntax
@@ -56,13 +56,13 @@ typedef struct _USBDEVICE_UPDATE_FAILURE_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>MaxExitLatencyTooLarge</b>
+### -field MaxExitLatencyTooLarge
 
 <dd>
 <p>The maximum exit latency is larger than expected.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Do not use.</p>
@@ -89,13 +89,13 @@ typedef struct _USBDEVICE_UPDATE_FAILURE_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._usbdevice_update">USBDEVICE_UPDATE</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update.md">USBDEVICE_UPDATE</a>
 </dt>
 <dt>
-<a href="buses._usbdevice_update_flags">USBDEVICE_UPDATE_FLAGS</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update-flags.md">USBDEVICE_UPDATE_FLAGS</a>
 </dt>
 <dt>
-<a href="buses._usbdevice_update_20_hardware_lpm_parameters">USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update-20-hardware-lpm-parameters.md">USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>

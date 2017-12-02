@@ -60,37 +60,37 @@ typedef struct _REENUMERATE_SELF_INTERFACE_STANDARD {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The driver-defined interface version.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to interface-specific context information.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to an <a href="kernel.interfacereference">InterfaceReference</a> routine that increments the interface's reference count.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to an <a href="kernel.interfacedereference">InterfaceDereference</a> routine that decrements the interface's reference count.</p>
 </dd>
 
-### -field <b>SurpriseRemoveAndReenumerateSelf</b>
+### -field SurpriseRemoveAndReenumerateSelf
 
 <dd>
 <p>A pointer to a <a href="kernel.reenumerateself">ReenumerateSelf</a> routine that requests device reenumeration.</p>

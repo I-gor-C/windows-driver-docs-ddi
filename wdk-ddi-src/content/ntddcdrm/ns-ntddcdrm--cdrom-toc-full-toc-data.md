@@ -57,25 +57,25 @@ typedef struct _CDROM_TOC_FULL_TOC_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Indicates the length, in bytes, of the table of contents data. This length value does not include the length of the <b>Length </b>member itself. </p>
 </dd>
 
-### -field <b>FirstCompleteSession</b>
+### -field FirstCompleteSession
 
 <dd>
 <p>Contains the number of the first complete session. </p>
 </dd>
 
-### -field <b>LastCompleteSession</b>
+### -field LastCompleteSession
 
 <dd>
 <p>Contains the number of last complete session. </p>
 </dd>
 
-### -field <b>Descriptors</b>
+### -field Descriptors
 
 <dd>
 <p>Contains zero or more track descriptors. See <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-full-toc-data-block.md">CDROM_TOC_FULL_TOC_DATA_BLOCK</a> for a description of the track descriptor. </p>

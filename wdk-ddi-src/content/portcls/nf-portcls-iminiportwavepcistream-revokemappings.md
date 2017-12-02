@@ -56,19 +56,19 @@ NTSTATUS RevokeMappings(
 ## -parameters
 <dl>
 
-### -param <i>FirstTag</i> [in]
+### -param FirstTag [in]
 
 <dd>
 <p>Specifies the tag value that identifies the first mapping that is being revoked.</p>
 </dd>
 
-### -param <i>LastTag</i> [in]
+### -param LastTag [in]
 
 <dd>
 <p>Specifies the tag value that identifies the last mapping that is being revoked.</p>
 </dd>
 
-### -param <i>MappingsRevoked</i> [out]
+### -param MappingsRevoked [out]
 
 <dd>
 <p>Output pointer for the count of revoked mappings. This parameter points to a ULONG variable into which the method writes the number of mappings actually revoked by the call. This number excludes any mappings in the range <i>FirstTag</i> to <i>LastTag</i> that the miniport driver has already released. Due to synchronization issues, some of the mappings in the range might be released between the time that the port driver determines the list of mappings to be revoked and the call to <code>RevokeMappings</code>. For more information, see the following Remarks section.</p>
@@ -91,7 +91,7 @@ NTSTATUS RevokeMappings(
 
 <p>The port driver can call <code>RevokeMappings</code> asynchronously with respect to the miniport driver's maintenance operations on the DMA controller's scatter/gather transfer queue. Access to this queue needs to be protected by a synchronization primitive. For example, in the ac97 sample audio driver in the Microsoft Windows Driver Kit (WDK), this is done by surrounding critical code sections with <a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a> and <a href="..\wdm\nf-wdm-kereleasespinlock.md">KeReleaseSpinLock</a> calls. Because the miniport driver can release mappings asynchronously with respect to the port driver's calls to <code>RevokeMappings</code>, the miniport driver might have previously released (see <a href="audio.iportwavepcistream_releasemapping">IPortWavePciStream::ReleaseMapping</a>) one or more of the mappings specified in the <code>RevokeMappings</code> call.</p>
 
-<p>For more information about mappings, see <a href="NULL">WavePci Latency</a>.</p>
+<p>For more information about mappings, see <a href="https://msdn.microsoft.com/6d83c015-cf8f-40b4-bf28-de865a5bfe2d">WavePci Latency</a>.</p>
 
 ## -requirements
 <table>

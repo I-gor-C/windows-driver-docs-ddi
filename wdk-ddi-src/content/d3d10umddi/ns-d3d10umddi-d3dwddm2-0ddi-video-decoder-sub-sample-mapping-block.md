@@ -55,13 +55,13 @@ typedef struct D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>ClearSize</b>
+### -field ClearSize
 
 <dd>
 <p>The number of clear (non-encrypted) bytes at the start of the block.</p>
 </dd>
 
-### -field <b>EncryptedSize</b>
+### -field EncryptedSize
 
 <dd>
 <p>The number of encrypted bytes following the clear bytes.</p>

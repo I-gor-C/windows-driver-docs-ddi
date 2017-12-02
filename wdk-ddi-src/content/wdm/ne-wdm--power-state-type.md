@@ -56,13 +56,13 @@ typedef enum _POWER_STATE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="SystemPowerState"></a><a id="systempowerstate"></a><a id="SYSTEMPOWERSTATE"></a><b>SystemPowerState</b>
+### -field SystemPowerState
 
 <dd>
 <p>Indicates a <a href="..\wdm\ne-wdm--system-power-state.md">SYSTEM_POWER_STATE</a> value.</p>
 </dd>
 
-### -field <a id="DevicePowerState"></a><a id="devicepowerstate"></a><a id="DEVICEPOWERSTATE"></a><b>DevicePowerState</b>
+### -field DevicePowerState
 
 <dd>
 <p>Indicates a <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a> value.</p>
@@ -70,7 +70,7 @@ typedef enum _POWER_STATE_TYPE {
 </dl>
 
 ## -remarks
-<p>The <b>POWER_STATE_TYPE</b> enumeration type is used in conjunction with a value of type <a href="..\wdm\ns-wdm--power-state.md">POWER_STATE</a> to indicate that the power state value is a system power state value or a device power state value. For an example, see <a href="..\ntifs\nf-ntifs-posetpowerstate.md">PoSetPowerState</a>.</p>
+<p>The <b>POWER_STATE_TYPE</b> enumeration type is used in conjunction with a value of type <a href="..\wdm\ns-wdm--power-state.md">POWER_STATE</a> to indicate that the power state value is a system power state value or a device power state value. For an example, see <a href="..\wdm\nf-wdm-posetpowerstate.md">PoSetPowerState</a>.</p>
 
 ## -requirements
 <table>
@@ -95,7 +95,7 @@ typedef enum _POWER_STATE_TYPE {
 <a href="..\wdm\ns-wdm--power-state.md">POWER_STATE</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-posetpowerstate.md">PoSetPowerState</a>
+<a href="..\wdm\nf-wdm-posetpowerstate.md">PoSetPowerState</a>
 </dt>
 <dt>
 <a href="..\wdm\ne-wdm--system-power-state.md">SYSTEM_POWER_STATE</a>

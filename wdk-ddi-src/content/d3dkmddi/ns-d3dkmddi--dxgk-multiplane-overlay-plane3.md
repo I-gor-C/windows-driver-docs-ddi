@@ -64,31 +64,31 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_PLANE3 {
 ## -struct-fields
 <dl>
 
-### -field <b>LayerIndex</b>
+### -field LayerIndex
 
 <dd>
 <p>The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.</p>
 </dd>
 
-### -field <b>PresentId</b>
+### -field PresentId
 
 <dd>
 <p>A 64 bit per-plane identifier used by the driver to report completion of the overlay command.</p>
 </dd>
 
-### -field <b>InputFlags</b>
+### -field InputFlags
 
 <dd>
 <p>A DXGK_PLANE_SPECIFIC_INPUT_FLAGS structure that identifies any plane specific display operations to perform.</p>
 </dd>
 
-### -field <b>OutputFlags</b>
+### -field OutputFlags
 
 <dd>
 <p>A DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS structure containing status returned by the driver.</p>
 </dd>
 
-### -field <b>MaxImmediateFlipLine</b>
+### -field MaxImmediateFlipLine
 
 <dd>
 <p>The display line delineating whether a VSYNC flip should be promoted to an immediate flip, where line 0 corresponds to the first active pixel of the frame. This value is ignored for non-VSYNC flips.
@@ -107,37 +107,37 @@ When a VSYNC flip is promoted to an immediate flip, the driver should set DXGK_P
 </p>
 </dd>
 
-### -field <b>ContextCount</b>
+### -field ContextCount
 
 <dd>
 <p>The number of contexts in the array that the Context member specifies.</p>
 </dd>
 
-### -field <b>pContext</b>
+### -field pContext
 
 <dd>
 <p>An array of handles to the contexts that contributed to a display operation.</p>
 </dd>
 
-### -field <b>pPrimaryData</b>
+### -field pPrimaryData
 
 <dd>
 <p>An array of DXGK_PRIMARYDATA structures that contain information on each allocation contributing to the display operation.</p>
 </dd>
 
-### -field <b>DriverPrivateDataSize</b>
+### -field DriverPrivateDataSize
 
 <dd>
 <p>The size of the private driver data.</p>
 </dd>
 
-### -field <b>pDriverPrivateData</b>
+### -field pDriverPrivateData
 
 <dd>
 <p>Private driver data.</p>
 </dd>
 
-### -field <b>PlaneAttributes</b>
+### -field PlaneAttributes
 
 <dd>
 <p>A structure of type DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3 that specifies overlay plane attributes.</p>

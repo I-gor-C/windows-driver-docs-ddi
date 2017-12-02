@@ -54,7 +54,7 @@ typedef struct _DXGKARG_STOPCAPTURE {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[in] A handle to the allocation that is used for a capture buffer. The display miniport driver stops the capture hardware from using the allocation.</p>

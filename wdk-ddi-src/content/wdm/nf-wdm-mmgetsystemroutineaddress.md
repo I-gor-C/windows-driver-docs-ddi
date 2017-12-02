@@ -55,7 +55,7 @@ PVOID MmGetSystemRoutineAddress(
 ## -parameters
 <dl>
 
-### -param <i>SystemRoutineName</i> [in]
+### -param SystemRoutineName [in]
 
 <dd>
 <p>Specifies the name of the system routine to resolve. </p>

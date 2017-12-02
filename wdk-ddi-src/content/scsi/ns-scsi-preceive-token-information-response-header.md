@@ -56,13 +56,13 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>TokenDescriptorsLength</b>
+### -field TokenDescriptorsLength
 
 <dd>
 <p>The length, in bytes, of the <b>TokenDescriptor</b> member.</p>
 </dd>
 
-### -field <b>TokenDescriptor</b>
+### -field TokenDescriptor
 
 <dd>
 <p>The data containing a token created as the offload read ROD.</p>

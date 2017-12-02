@@ -56,19 +56,19 @@ typedef struct _MPIO_GET_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberPdos</b>
+### -field NumberPdos
 
 <dd>
 <p>An unsigned 32-bitfield that returns the number of real instances of the pseudo-LUN through its various paths.</p>
 </dd>
 
-### -field <b>DeviceName</b>
+### -field DeviceName
 
 <dd>
 <p>A string field of maximum-length 63 characters that returns the device name that is created by MPIO for the LUN.</p>
 </dd>
 
-### -field <b>PdoInformation</b>
+### -field PdoInformation
 
 <dd>
 <p>A field that returns an array of PDO_INFORMATION structures, where the number of elements is given by <i>NumberPdos</i>, and each element represents an instance of the LUN that is exposed through a particular path.</p>

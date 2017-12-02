@@ -54,7 +54,7 @@ typedef struct _DXGKMDT_OPM_RANDOM_NUMBER {
 ## -struct-fields
 <dl>
 
-### -field <b>abRandomNumber</b>
+### -field abRandomNumber
 
 <dd>
 <p>A 16-byte array that comprises a 128-bit cryptographically secure random number. </p>

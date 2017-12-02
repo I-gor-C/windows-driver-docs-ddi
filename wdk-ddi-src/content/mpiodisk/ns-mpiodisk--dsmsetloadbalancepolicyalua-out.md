@@ -54,7 +54,7 @@ typedef struct _DsmSetLoadBalancePolicyALUA_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The status of the <a href="storage.dsmsetloadbalancepolicyalua">DsmSetLoadBalancePolicyALUA</a> operation.</p>

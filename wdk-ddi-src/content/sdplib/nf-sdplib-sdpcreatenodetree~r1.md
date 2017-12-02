@@ -57,7 +57,7 @@ PSDP_TREE_ROOT_NODE SdpCreateNodeTree(
 ## -parameters
 <dl>
 
-### -param <i>tag</i> [in]
+### -param tag [in]
 
 <dd>
 <p>A profile driver defined tag to associate with the node.</p>
@@ -80,7 +80,7 @@ PSDP_TREE_ROOT_NODE SdpCreateNodeTree(
     <a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a> function. 
     <b>SdpFreeTree</b> frees the root node and all child nodes that have been attached to it. Individual 
     <a href="..\sdpnode\ns-sdpnode--sdp-node.md">SDP_NODE</a> structures can be freed by calling the 
-    <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> driver support routine as long as they
+    <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> driver support routine as long as they
     are no longer part of a tree or other list.</p>
 
 <p>Bluetooth profile drivers can obtain a pointer to this function through the BTHDDI_SDP_NODE_INTERFACE
@@ -141,7 +141,7 @@ PSDP_TREE_ROOT_NODE SdpCreateNodeTree(
 <a href="..\sdpnode\ns-sdpnode--sdp-node.md">SDP_NODE</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilgetphonebookoptionsparams_2.htm
 old-project: netvista
 ms.assetid: ca82e408-6b22-4b0b-ac44-0650d3890674
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILGETPHONEBOOKOPTIONSPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILGETPHONEBOOKOPTIONSPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwStoreLocation</b>
+### -field dwStoreLocation
 
 <dd></dd>
 </dl>

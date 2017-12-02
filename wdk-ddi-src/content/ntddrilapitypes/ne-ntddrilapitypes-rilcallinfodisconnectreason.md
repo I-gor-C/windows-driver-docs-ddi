@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfodisconnectreason.htm
 old-project: netvista
 ms.assetid: 2e339b56-9130-4459-8ccd-171f721ae83e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,43 +63,43 @@ typedef enum _RILCALLINFODISCONNECTREASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DISCREASON_BUSY"></a><a id="ril_discreason_busy"></a><b>RIL_DISCREASON_BUSY</b>
+### -field RIL_DISCREASON_BUSY
 
 <dd></dd>
 
-### -field <a id="RIL_DISCREASON_NETWORKERROR"></a><a id="ril_discreason_networkerror"></a><b>RIL_DISCREASON_NETWORKERROR</b>
+### -field RIL_DISCREASON_NETWORKERROR
 
 <dd></dd>
 
-### -field <a id="RIL_DISCREASON_RADIOFADE"></a><a id="ril_discreason_radiofade"></a><b>RIL_DISCREASON_RADIOFADE</b>
+### -field RIL_DISCREASON_RADIOFADE
 
 <dd></dd>
 
-### -field <a id="RIL_DISCREASON_CONGESTION"></a><a id="ril_discreason_congestion"></a><b>RIL_DISCREASON_CONGESTION</b>
+### -field RIL_DISCREASON_CONGESTION
 
 <dd></dd>
 
-### -field <a id="RIL_DISCREASON_EMERGENCYONLY"></a><a id="ril_discreason_emergencyonly"></a><b>RIL_DISCREASON_EMERGENCYONLY</b>
+### -field RIL_DISCREASON_EMERGENCYONLY
 
 <dd></dd>
 
-### -field <a id="RIL_DISCREASON_NOSERVICE"></a><a id="ril_discreason_noservice"></a><b>RIL_DISCREASON_NOSERVICE</b>
+### -field RIL_DISCREASON_NOSERVICE
 
 <dd></dd>
 
-### -field <a id="RIL_DISCREASON_OTHEREXECUTORBUSY"></a><a id="ril_discreason_otherexecutorbusy"></a><b>RIL_DISCREASON_OTHEREXECUTORBUSY</b>
+### -field RIL_DISCREASON_OTHEREXECUTORBUSY
 
 <dd></dd>
 
-### -field <a id="RIL_DISCREASON_EMERGENCYFAILOVER"></a><a id="ril_discreason_emergencyfailover"></a><b>RIL_DISCREASON_EMERGENCYFAILOVER</b>
+### -field RIL_DISCREASON_EMERGENCYFAILOVER
 
 <dd></dd>
 
-### -field <a id="RIL_DISCREASON_HANDOVER_MERGE"></a><a id="ril_discreason_handover_merge"></a><b>RIL_DISCREASON_HANDOVER_MERGE</b>
+### -field RIL_DISCREASON_HANDOVER_MERGE
 
 <dd></dd>
 
-### -field <a id="RIL_DISCREASON_MAX"></a><a id="ril_discreason_max"></a><b>RIL_DISCREASON_MAX</b>
+### -field RIL_DISCREASON_MAX
 
 <dd></dd>
 </dl>

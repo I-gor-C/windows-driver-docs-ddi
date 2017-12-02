@@ -56,19 +56,19 @@ NTSTATUS RtlUIntMult(
 ## -parameters
 <dl>
 
-### -param <i>uMultiplicand</i> [in]
+### -param uMultiplicand [in]
 
 <dd>
 <p>The value to be multiplied by <i>uMultiplier</i>.</p>
 </dd>
 
-### -param <i>uMultiplier</i> [in]
+### -param uMultiplier [in]
 
 <dd>
 <p>The value by which to multiply <i>uMultiplicand</i>.</p>
 </dd>
 
-### -param <i>puResult</i> [out]
+### -param puResult [out]
 
 <dd>
 <p>A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

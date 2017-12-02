@@ -55,7 +55,7 @@ VOID KeQuerySystemTime(
 ## -parameters
 <dl>
 
-### -param <i>CurrentTime</i> [out]
+### -param CurrentTime [out]
 
 <dd>
 <p>Pointer to the current time on return from <b>KeQuerySystemTime</b>. </p>
@@ -134,10 +134,10 @@ VOID KeQuerySystemTime(
 <a href="..\wdm\nf-wdm-exsystemtimetolocaltime.md">ExSystemTimeToLocalTime</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequerytickcount.md">KeQueryTickCount</a>
+<a href="..\wdm\nf-wdm-kequerytickcount.md">KeQueryTickCount</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a>

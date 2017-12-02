@@ -61,49 +61,49 @@ typedef struct _KS_COLCON {
 ## -struct-fields
 <dl>
 
-### -field <b>emph1col</b>
+### -field emph1col
 
 <dd>
 <p>Indicates </p>
 </dd>
 
-### -field <b>emph2col</b>
+### -field emph2col
 
 <dd>
 <p>Indicates </p>
 </dd>
 
-### -field <b>backcol</b>
+### -field backcol
 
 <dd>
 <p>Indicates </p>
 </dd>
 
-### -field <b>patcol</b>
+### -field patcol
 
 <dd>
 <p>Indicates </p>
 </dd>
 
-### -field <b>emph1con</b>
+### -field emph1con
 
 <dd>
 <p>Indicates </p>
 </dd>
 
-### -field <b>emph2con</b>
+### -field emph2con
 
 <dd>
 <p>Indicates </p>
 </dd>
 
-### -field <b>backcon</b>
+### -field backcon
 
 <dd>
 <p>Indicates </p>
 </dd>
 
-### -field <b>patcon</b>
+### -field patcon
 
 <dd>
 <p>Indicates </p>

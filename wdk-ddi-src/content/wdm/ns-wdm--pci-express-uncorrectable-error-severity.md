@@ -72,97 +72,97 @@ typedef union _PCI_EXPRESS_UNCORRECTABLE_ERROR_SEVERITY {
 ## -struct-fields
 <dl>
 
-### -field <b>Undefined</b>
+### -field Undefined
 
 <dd>
 <p>A single bit that contains an undefined value. In versions of the <i>PCIe Specification</i> prior to version 1.1, this bit indicates that a reported link training error is a fatal error.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>DataLinkProtocolError</b>
+### -field DataLinkProtocolError
 
 <dd>
 <p>A single bit that indicates that a reported data link protocol error is a fatal error.</p>
 </dd>
 
-### -field <b>SurpriseDownError</b>
+### -field SurpriseDownError
 
 <dd>
 <p>A single bit that indicates that a reported surprise down error is a fatal error.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>PoisonedTLP</b>
+### -field PoisonedTLP
 
 <dd>
 <p>A single bit that indicates that a reported poisoned transaction layer packet (TLP) is a fatal error.</p>
 </dd>
 
-### -field <b>FlowControlProtocolError</b>
+### -field FlowControlProtocolError
 
 <dd>
 <p>A single bit that indicates that a reported flow control protocol error is a fatal error.</p>
 </dd>
 
-### -field <b>CompletionTimeout</b>
+### -field CompletionTimeout
 
 <dd>
 <p>A single bit that indicates that a reported completion timeout is a fatal error.</p>
 </dd>
 
-### -field <b>CompleterAbort</b>
+### -field CompleterAbort
 
 <dd>
 <p>A single bit that indicates that a reported completer abort is a fatal error.</p>
 </dd>
 
-### -field <b>UnexpectedCompletion</b>
+### -field UnexpectedCompletion
 
 <dd>
 <p>A single bit that indicates that a reported unexpected completion is a fatal error.</p>
 </dd>
 
-### -field <b>ReceiverOverflow</b>
+### -field ReceiverOverflow
 
 <dd>
 <p>A single bit that indicates that a reported receiver overflow is a fatal error.</p>
 </dd>
 
-### -field <b>MalformedTLP</b>
+### -field MalformedTLP
 
 <dd>
 <p>A single bit that indicates that a reported malformed transaction layer packet (TLP) is a fatal error.</p>
 </dd>
 
-### -field <b>ECRCError</b>
+### -field ECRCError
 
 <dd>
 <p>A single bit that indicates that a reported end-to-end cyclic redundancy check (ECRC) error is a fatal error.</p>
 </dd>
 
-### -field <b>UnsupportedRequestError</b>
+### -field UnsupportedRequestError
 
 <dd>
 <p>A single bit that indicates that a reported unsupported request error is a fatal error.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_UNCORRECTABLE_ERROR_SEVERITY structure.</p>

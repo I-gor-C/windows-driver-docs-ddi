@@ -58,25 +58,25 @@ VOID SERCX2_PIO_TRANSMIT_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>PioTransmitConfig</i> [out]
+### -param PioTransmitConfig [out]
 
 <dd>
 <p>A pointer to the <a href="..\sercx\ns-sercx--sercx2-pio-transmit-config.md">SERCX2_PIO_TRANSMIT_CONFIG</a> structure that is to be initialized.</p>
 </dd>
 
-### -param <i>EvtSerCx2PioTransmitWriteBuffer</i> [in]
+### -param EvtSerCx2PioTransmitWriteBuffer [in]
 
 <dd>
 <p>The value to load into the <b>EvtSerCx2PioTransmitWriteBuffer</b> member of the <b>SERCX2_PIO_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-pio-transmit-config.md">SERCX2_PIO_TRANSMIT_CONFIG</a>.</p>
 </dd>
 
-### -param <i>EvtSerCx2PioTransmitEnableReadyNotification</i> [in]
+### -param EvtSerCx2PioTransmitEnableReadyNotification [in]
 
 <dd>
 <p>The value to load into the <b>EvtSerCx2PioTransmitEnableReadyNotification</b> member of the <b>SERCX2_PIO_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-pio-transmit-config.md">SERCX2_PIO_TRANSMIT_CONFIG</a>.</p>
 </dd>
 
-### -param <i>EvtSerCx2PioTransmitCancelReadyNotification</i> [in]
+### -param EvtSerCx2PioTransmitCancelReadyNotification [in]
 
 <dd>
 <p>The value to load into the <b>EvtSerCx2PioTransmitCancelReadyNotification</b> member of the <b>SERCX2_PIO_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-pio-transmit-config.md">SERCX2_PIO_TRANSMIT_CONFIG</a>.</p>

@@ -56,7 +56,7 @@ HRESULT IBidiRequest::SetInputData(
 ## -parameters
 <dl>
 
-### -param <i>dwType</i> [in]
+### -param dwType [in]
 
 <dd>
 <p>The type of data to be sent. This parameter can be one of the following values.</p>
@@ -68,7 +68,7 @@ HRESULT IBidiRequest::SetInputData(
 <tr>
 <td width="40%"><a id="BIDI_NULL"></a><a id="bidi_null"></a><dl>
 
-### -param <b>BIDI_NULL</b>
+### -param BIDI_NULL
 
 </dl>
 </td>
@@ -79,7 +79,7 @@ HRESULT IBidiRequest::SetInputData(
 <tr>
 <td width="40%"><a id="BIDI_INT"></a><a id="bidi_int"></a><dl>
 
-### -param <b>BIDI_INT</b>
+### -param BIDI_INT
 
 </dl>
 </td>
@@ -90,7 +90,7 @@ HRESULT IBidiRequest::SetInputData(
 <tr>
 <td width="40%"><a id="BIDI_FLOAT"></a><a id="bidi_float"></a><dl>
 
-### -param <b>BIDI_FLOAT</b>
+### -param BIDI_FLOAT
 
 </dl>
 </td>
@@ -101,7 +101,7 @@ HRESULT IBidiRequest::SetInputData(
 <tr>
 <td width="40%"><a id="BIDI_BOOL"></a><a id="bidi_bool"></a><dl>
 
-### -param <b>BIDI_BOOL</b>
+### -param BIDI_BOOL
 
 </dl>
 </td>
@@ -112,7 +112,7 @@ HRESULT IBidiRequest::SetInputData(
 <tr>
 <td width="40%"><a id="BIDI_STRING"></a><a id="bidi_string"></a><dl>
 
-### -param <b>BIDI_STRING</b>
+### -param BIDI_STRING
 
 </dl>
 </td>
@@ -123,7 +123,7 @@ HRESULT IBidiRequest::SetInputData(
 <tr>
 <td width="40%"><a id="BIDI_TEXT"></a><a id="bidi_text"></a><dl>
 
-### -param <b>BIDI_TEXT</b>
+### -param BIDI_TEXT
 
 </dl>
 </td>
@@ -134,7 +134,7 @@ HRESULT IBidiRequest::SetInputData(
 <tr>
 <td width="40%"><a id="BIDI_ENUM"></a><a id="bidi_enum"></a><dl>
 
-### -param <b>BIDI_ENUM</b>
+### -param BIDI_ENUM
 
 </dl>
 </td>
@@ -145,7 +145,7 @@ HRESULT IBidiRequest::SetInputData(
 <tr>
 <td width="40%"><a id="BIDI_BLOB"></a><a id="bidi_blob"></a><dl>
 
-### -param <b>BIDI_BLOB</b>
+### -param BIDI_BLOB
 
 </dl>
 </td>
@@ -157,13 +157,13 @@ HRESULT IBidiRequest::SetInputData(
 <p> </p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to the byte array that contains the data. For example, if <i>dwType</i> is BIDI_BOOL, <i>pData</i> points to a buffer that contains a Boolean value and if <i>dwType</i> is BIDI_BLOB, <i>pData</i> points to a buffer that contains the binary data.</p>
 </dd>
 
-### -param <i>uSize</i> [in]
+### -param uSize [in]
 
 <dd>
 <p>Size, in bytes, of the byte array specified by <i>pData</i>.</p>

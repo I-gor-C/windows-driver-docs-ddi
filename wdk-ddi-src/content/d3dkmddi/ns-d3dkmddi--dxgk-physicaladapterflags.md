@@ -63,37 +63,37 @@ typedef struct _DXGK_PHYSICALADAPTERFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>IoMmuSupported</b>
+### -field IoMmuSupported
 
 <dd>
 <p>Indicates that the CPU and GPU share a common address space and common page tables.</p>
 </dd>
 
-### -field <b>GpuMmuSupported</b>
+### -field GpuMmuSupported
 
 <dd>
 <p>Indicates that the video memory manager manages the GPU memory management unit and underlying page tables to expose services to the user mode driver.</p>
 </dd>
 
-### -field <b>MovingPagingSupported</b>
+### -field MovingPagingSupported
 
 <dd>
 <p>Indicates that the device driver is capable of moving content to a new destination on the same memory segment.</p>
 </dd>
 
-### -field <b>VPRPagingContextRequired</b>
+### -field VPRPagingContextRequired
 
 <dd>
 <p>Indicates that the device driver requires that move paging operations done within a Video Protected Region occur on a different paging context than standard paging operations.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The consolidated  value of the bitfield members in this structure.</p>

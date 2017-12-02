@@ -57,7 +57,7 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL {
 ## -struct-fields
 <dl>
 
-### -field <b>ControlId</b>
+### -field ControlId
 
 <dd>
 <p>The ISP control ID. The following are valid values for this field. These values are defined in ksmedia.h.</p>
@@ -74,19 +74,19 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL {
 </ul>
 </dd>
 
-### -field <b>ROICount</b>
+### -field ROICount
 
 <dd>
 <p>The number of ROIs associated with this ISP control.</p>
 </dd>
 
-### -field <b>Result</b>
+### -field Result
 
 <dd>
 <p>The error results of the last SET operation for this ISP control.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

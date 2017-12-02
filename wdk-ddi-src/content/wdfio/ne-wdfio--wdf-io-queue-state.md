@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_queue_state.htm
 old-project: wdf
 ms.assetid: d89c4d4c-d3c2-47fc-9eb8-e2eb8424d5cc
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,32 +60,32 @@ typedef enum _WDF_IO_QUEUE_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfIoQueueAcceptRequests"></a><a id="wdfioqueueacceptrequests"></a><a id="WDFIOQUEUEACCEPTREQUESTS"></a><b>WdfIoQueueAcceptRequests</b>
+### -field WdfIoQueueAcceptRequests
 
 <dd>
 <p>If set, the I/O queue can accept new I/O requests from the I/O manager and requests that are forwarded by the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceconfigurerequestdispatching.md">WdfDeviceConfigureRequestDispatching</a> and <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoioqueue.md">WdfRequestForwardToIoQueue</a> (or <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoparentdeviceioqueue.md">WdfRequestForwardToParentDeviceIoQueue</a>) methods. </p>
 <p>If not set, the framework cancels requests from the I/O manager and <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceconfigurerequestdispatching.md">WdfDeviceConfigureRequestDispatching</a> and fails requests from <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoioqueue.md">WdfRequestForwardToIoQueue</a> (or <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoparentdeviceioqueue.md">WdfRequestForwardToParentDeviceIoQueue</a>) with STATUS_WDF_BUSY.</p>
 </dd>
 
-### -field <a id="WdfIoQueueDispatchRequests"></a><a id="wdfioqueuedispatchrequests"></a><a id="WDFIOQUEUEDISPATCHREQUESTS"></a><b>WdfIoQueueDispatchRequests</b>
+### -field WdfIoQueueDispatchRequests
 
 <dd>
 <p>If set, the framework delivers the queue's requests to the driver (unless the <b>WdfIoQueuePnpHeld</b> bit is also set). If not set, the driver cannot obtain requests from the queue. </p>
 </dd>
 
-### -field <a id="WdfIoQueueNoRequests"></a><a id="wdfioqueuenorequests"></a><a id="WDFIOQUEUENOREQUESTS"></a><b>WdfIoQueueNoRequests</b>
+### -field WdfIoQueueNoRequests
 
 <dd>
 <p>If set, the I/O queue is empty.</p>
 </dd>
 
-### -field <a id="WdfIoQueueDriverNoRequests"></a><a id="wdfioqueuedrivernorequests"></a><a id="WDFIOQUEUEDRIVERNOREQUESTS"></a><b>WdfIoQueueDriverNoRequests</b>
+### -field WdfIoQueueDriverNoRequests
 
 <dd>
 <p>If set, all requests that have been delivered to the driver have been completed. </p>
 </dd>
 
-### -field <a id="WdfIoQueuePnpHeld"></a><a id="wdfioqueuepnpheld"></a><a id="WDFIOQUEUEPNPHELD"></a><b>WdfIoQueuePnpHeld</b>
+### -field WdfIoQueuePnpHeld
 
 <dd>
 <p>If set, the framework has stopped delivering requests to the driver because the underlying device is not in its working (D0) state.</p>
@@ -147,4 +147,4 @@ typedef enum _WDF_IO_QUEUE_STATE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_QUEUE_STATE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_QUEUE_STATE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

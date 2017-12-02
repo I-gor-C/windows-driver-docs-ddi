@@ -60,44 +60,44 @@ HBA_STATUS HBA_API HBA_RegisterForAdapterPortStatEvents(
 ## -parameters
 <dl>
 
-### -param <i>callback</i> 
+### -param callback 
 
 <dd>
 <p>Pointer to a callback routine of type <a href="storage.hba_portstat_callback">HBA_PORTSTAT_CALLBACK</a> that is called when an adapter is added to the system.</p>
 </dd>
 
-### -param <i>userData</i> 
+### -param userData 
 
 <dd>
 <p>Pointer to a buffer that is passed to the callback routine with each event. This data correlates the event with the source of the event registration. </p>
 </dd>
 
-### -param <i>handle</i> 
+### -param handle 
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA for which the adapter events are generated. </p>
 </dd>
 
-### -param <i>PortWWN</i> 
+### -param PortWWN 
 
 <dd>
 <p>Contains a 64-bit worldwide name (WWN) that uniquely identifies the HBA port from which port events are reported. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.</p>
 </dd>
 
-### -param <i>stats</i> 
+### -param stats 
 
 <dd>
 <p>Pointer to a structure of type <a href="..\hbaapi\ns-hbaapi-hba-portstatistics.md">HBA_PortStatistics</a> that, on input, holds the statistical levels that determine when port statistics events are generated. On output, this member holds statistical data gathered for the port referenced by <i>PortWWN. </i></p>
 </dd>
 
-### -param <i>statType</i> 
+### -param statType 
 
 <dd>
 <p>Holds a value that indicates the mechanism used to trigger port statistics events. If the value is HBA_EVENT_PORT_STAT_THRESHOLD, then each non-NULL member of the HBA_PortStatistics structure pointed to by <i>stats </i>will indicate the threshold at which an event is generated for that particular statistical parameter. For example, if the <b>TxWords</b> member of the HBA_PortStatistics structure holds a value of 1,000,000, then an event will be generated once 1,000,000 words have been transmitted.</p>
 <p>If the value of <i>statType </i>is HBA_EVENT_PORT_STAT_GROWTH, then the values in the HBA_PortStatistics structure will be interpreted as growth-rate numbers. The T11 committee's <i>Fibre Channel HBA API</i> specification recommends that port statistics be checked once a minute, and if the value or a given statistics parameter has grown by more than the number indicated for that parameter in HBA_PortStatistics, an event is generated, but the actual frequency with which growth is monitored is hardware-specific.</p>
 </dd>
 
-### -param <i>callbackHandle</i> 
+### -param callbackHandle 
 
 <dd>
 <p>Pointer to an opaque identifier that the user must pass to <a href="..\hbaapi\nf-hbaapi-hba-removecallback.md">HBA_RemoveCallback</a> to de-register the callback routine.</p>

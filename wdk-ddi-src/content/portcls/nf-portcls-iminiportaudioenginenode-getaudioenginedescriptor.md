@@ -55,13 +55,13 @@ NTSTATUS GetAudioEngineDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>ulNodeId</i> [in]
+### -param ulNodeId [in]
 
 <dd>
 <p>The ID of the audio engine node.</p>
 </dd>
 
-### -param <i>pAudioEngineDescriptor</i> [out]
+### -param pAudioEngineDescriptor [out]
 
 <dd>
 <p>Audio engine descriptor object. This parameter is of type <a href="audio.ksaudioengine_descriptor">KSAUDIOENGINE_DESCRIPTOR</a>.</p>

@@ -55,13 +55,13 @@ HBA_STATUS HBA_API HBA_GetAdapterName(
 ## -parameters
 <dl>
 
-### -param <i>AdapterIndex</i> [in]
+### -param AdapterIndex [in]
 
 <dd>
 <p>Indicates the index of the HBA for which the name will be returned.</p>
 </dd>
 
-### -param <i>AdapterName</i> [in, out]
+### -param AdapterName [in, out]
 
 <dd>
 <p>Pointer to memory area in which the HBA name will be returned. The HBA name will be a string of the form</p>

@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>EventData</b>
+### -field EventData
 
 <dd>
 <p>A structure of type <a href="stream.kseventdata">KSEVENTDATA</a> that specifies the standard event structure.</p>
 </dd>
 
-### -field <b>TimeBase</b>
+### -field TimeBase
 
 <dd>
 <p>Specifies the initial clock time when the event should be signaled.</p>
 </dd>
 
-### -field <b>Interval</b>
+### -field Interval
 
 <dd>
 <p>Specifies the subsequent interval when the event should continue to be signaled.</p>

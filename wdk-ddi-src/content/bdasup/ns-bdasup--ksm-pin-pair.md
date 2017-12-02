@@ -57,25 +57,25 @@ typedef struct _KSM_PIN_PAIR {
 ## -struct-fields
 <dl>
 
-### -field <b>Method</b>
+### -field Method
 
 <dd>
 <p>KSMETHOD structure that describes a method and request type of a method request.</p>
 </dd>
 
-### -field <b>InputPinId</b>
+### -field InputPinId
 
 <dd>
 <p>Identifier of an input pin of the filter.</p>
 </dd>
 
-### -field <b>OutputPinId</b>
+### -field OutputPinId
 
 <dd>
 <p>Identifier of an output pin of the filter.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>

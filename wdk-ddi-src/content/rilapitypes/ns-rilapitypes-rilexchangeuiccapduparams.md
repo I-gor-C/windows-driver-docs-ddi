@@ -7,7 +7,7 @@ old-location: netvista\rilexchangeuiccapduparams_2.htm
 old-project: netvista
 ms.assetid: 0bbdfb04-70a9-4ded-9947-6f082940cfa0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef struct _RILEXCHANGEUICCAPDUPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSlotIndex</b>
+### -field dwSlotIndex
 
 <dd></dd>
 
-### -field <b>dwChannelId</b>
+### -field dwChannelId
 
 <dd></dd>
 
-### -field <b>dwAPDULength</b>
+### -field dwAPDULength
 
 <dd></dd>
 
-### -field <b>bAPDU</b>
+### -field bAPDU
 
 <dd></dd>
 </dl>

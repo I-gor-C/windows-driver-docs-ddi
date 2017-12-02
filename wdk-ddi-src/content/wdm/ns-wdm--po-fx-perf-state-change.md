@@ -59,19 +59,19 @@ typedef struct _PO_FX_PERF_STATE_CHANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>Set</b>
+### -field Set
 
 <dd>
 <p>The index of the performance state set that is being changed within the collection of performance state sets for the component.</p>
 </dd>
 
-### -field <b>StateIndex</b>
+### -field StateIndex
 
 <dd>
 <p>For sets that represent a discrete number of performance states (that is, where the <b>Type</b> member of the <a href="..\wdm\ns-wdm--po-fx-component-perf-set.md">PO_FX_COMPONENT_PERF_SET</a> is <b>PoFxPerfStateTypeDiscrete</b>), this member is the index of the performance state to use for the new performance level.</p>
 </dd>
 
-### -field <b>StateValue</b>
+### -field StateValue
 
 <dd>
 <p>For sets that represent a continuous distribution of performance states (that is, where the <b>Type</b> member of the <a href="..\wdm\ns-wdm--po-fx-component-perf-set.md">PO_FX_COMPONENT_PERF_SET</a> is <b>PoFxPerfStateTypeRange</b>), this member is the value of the performance state to use for the new performance level.</p>

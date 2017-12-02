@@ -7,7 +7,7 @@ old-location: netvista\wdi_tx_pause_reason.htm
 old-project: netvista
 ms.assetid: 2585d243-e3b0-414d-a932-28d91b69f1f4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ typedef enum _WDI_TX_PAUSE_REASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_TX_PAUSE_REASON_NULL"></a><a id="wdi_tx_pause_reason_null"></a><b>WDI_TX_PAUSE_REASON_NULL</b>
+### -field WDI_TX_PAUSE_REASON_NULL
 
 <dd>
 <p>Reserved.  This enum value does not represent a valid pause reason code.</p>
 </dd>
 
-### -field <a id="WDI_TX_PAUSE_REASON_CREDIT"></a><a id="wdi_tx_pause_reason_credit"></a><b>WDI_TX_PAUSE_REASON_CREDIT</b>
+### -field WDI_TX_PAUSE_REASON_CREDIT
 
 <dd>
 <p>General reason to use for the exhaustion of some IHV resource.</p>
 </dd>
 
-### -field <a id="WDI_TX_PAUSE_REASON_PEER_CREATE"></a><a id="wdi_tx_pause_reason_peer_create"></a><b>WDI_TX_PAUSE_REASON_PEER_CREATE</b>
+### -field WDI_TX_PAUSE_REASON_PEER_CREATE
 
 <dd>
 <p>All TIDs on a newly created peer are paused with this reason.  The IHV uses this reason code to restart these TIDs.  This is only applicable when the <b>TargetPriorityQueueing</b> capability is set to false.</p>
 </dd>
 
-### -field <a id="WDI_TX_PAUSE_REASON_PS"></a><a id="wdi_tx_pause_reason_ps"></a><b>WDI_TX_PAUSE_REASON_PS</b>
+### -field WDI_TX_PAUSE_REASON_PS
 
 <dd>
 <p>The peer is in Power Save Mode. This is only applicable when the <b>TargetPriorityQueueing</b> capability is set to false.</p>
 </dd>
 
-### -field <a id="WDI_TX_PAUSE_REASON_IHV_START"></a><a id="wdi_tx_pause_reason_ihv_start"></a><b>WDI_TX_PAUSE_REASON_IHV_START</b>
+### -field WDI_TX_PAUSE_REASON_IHV_START
 
 <dd>
 <p>Inclusive beginning of range of valid pause reasons for IHV use.</p>
 </dd>
 
-### -field <a id="WDI_TX_PAUSE_REASON_IHV_END"></a><a id="wdi_tx_pause_reason_ihv_end"></a><b>WDI_TX_PAUSE_REASON_IHV_END</b>
+### -field WDI_TX_PAUSE_REASON_IHV_END
 
 <dd>
 <p>Inclusive end of range of valid pause reasons for IHV use.</p>
@@ -137,4 +137,4 @@ typedef enum _WDI_TX_PAUSE_REASON {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDI_TX_PAUSE_REASON enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDI_TX_PAUSE_REASON enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

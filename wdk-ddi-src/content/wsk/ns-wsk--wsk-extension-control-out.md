@@ -7,7 +7,7 @@ old-location: netvista\wsk_extension_control_out.htm
 old-project: netvista
 ms.assetid: aec44058-13ad-4093-91b1-e5dca6f2e295
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WSK_EXTENSION_CONTROL_OUT, WSK_EXTENSION_CONTROL_OUT, *PWSK_EXTENSION_CONTROL_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct _WSK_EXTENSION_CONTROL_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>ProviderContext</b>
+### -field ProviderContext
 
 <dd>
 <p>A pointer to a WSK subsystem-supplied context for the registration of the extension interface on a
@@ -67,7 +67,7 @@ typedef struct _WSK_EXTENSION_CONTROL_OUT {
      socket's extension interface functions that require the WSK subsystem's registration context.</p>
 </dd>
 
-### -field <b>ProviderDispatch</b>
+### -field ProviderDispatch
 
 <dd>
 <p>A pointer to a structure that contains the WSK subsystem's dispatch table of functions for the
@@ -119,4 +119,4 @@ typedef struct _WSK_EXTENSION_CONTROL_OUT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_EXTENSION_CONTROL_OUT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_EXTENSION_CONTROL_OUT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

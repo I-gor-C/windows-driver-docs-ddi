@@ -86,7 +86,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has completed the IOCTL request successfully.</p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-measurement-data.md">PMI_MEASUREMENT_DATA</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-measurement-data.md">PMI_MEASUREMENT_DATA</a> structure.</p>
 
 <p>The <b>Information</b> member is set to the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-measurement-data.md">PMI_MEASUREMENT_DATA</a> structure.</p>
 
@@ -96,7 +96,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has completed the IOCTL request successfully.</p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-measurement-data.md">PMI_MEASUREMENT_DATA</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-measurement-data.md">PMI_MEASUREMENT_DATA</a> structure.</p>
 
 <p>The <b>Information</b> member is set to the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-measurement-data.md">PMI_MEASUREMENT_DATA</a> structure.</p>
 
@@ -106,7 +106,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has completed the IOCTL request successfully.</p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-measurement-data.md">PMI_MEASUREMENT_DATA</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-measurement-data.md">PMI_MEASUREMENT_DATA</a> structure.</p>
 
 <p>The <b>Information</b> member is set to the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-measurement-data.md">PMI_MEASUREMENT_DATA</a> structure.</p>
 
@@ -116,7 +116,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has completed the IOCTL request successfully.</p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-measurement-data.md">PMI_MEASUREMENT_DATA</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-measurement-data.md">PMI_MEASUREMENT_DATA</a> structure.</p>
 
 <p>The <b>Information</b> member is set to the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-measurement-data.md">PMI_MEASUREMENT_DATA</a> structure.</p>
 
@@ -126,7 +126,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has completed the IOCTL request successfully.</p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-measurement-data.md">PMI_MEASUREMENT_DATA</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-measurement-data.md">PMI_MEASUREMENT_DATA</a> structure.</p>
 
 ## -remarks
 <p>The <b>IOCTL_PMI_GET_MEASUREMENT</b> request queries the current measurement data from the power meter. This measurement data is sampled and averaged based on the power meter's measurement configuration parameters. The measurement configuration parameters are queried through the <a href="..\pmi\ni-pmi-ioctl-pmi-get-configuration.md">IOCTL_PMI_GET_CONFIGURATION</a> request with an input <a href="..\pmi\ne-pmi-pmi-configuration-type.md">PMI_CONFIGURATION_TYPE</a> value of <b>PmiMeasurementConfiguration</b>.</p>
@@ -165,7 +165,7 @@ I/O Status block
 <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\pmi\ne-pmi-pmi-configuration-type.md">PMI_CONFIGURATION_TYPE</a>

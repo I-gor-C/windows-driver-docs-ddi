@@ -55,7 +55,7 @@ USHORT RtlUshortByteSwap(
 ## -parameters
 <dl>
 
-### -param <i>Source</i> [in]
+### -param Source [in]
 
 <dd>
 <p>A USHORT value to convert to a byte-swapped version.</p>

@@ -57,25 +57,25 @@ typedef struct D3DWDDM2_0DDI_VIDEO_PROCESSOR_STREAM_BEHAVIOR_HINT {
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>Specifies whether this input stream is enabled. If <b>TRUE</b>,  <a href="display.videoprocessorgetbehaviorhints">VideoProcessorGetBehaviorHints</a> uses this stream to compute the behavior hints. Otherwise, this stream is not used.  </p>
 </dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>Specifies the width of the input stream.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>Specifies the height of the input stream.</p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>Indicates the input format for the specific stream.</p>

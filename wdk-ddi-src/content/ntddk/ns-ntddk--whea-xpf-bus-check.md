@@ -80,98 +80,98 @@ typedef union _WHEA_XPF_BUS_CHECK {
 ## -struct-fields
 <dl>
 
-### -field <b>TransactionTypeValid</b>
+### -field TransactionTypeValid
 
 <dd>
 <p>A single bit that indicates that the <b>TransactionType</b> member contains valid data.</p>
 </dd>
 
-### -field <b>OperationValid</b>
+### -field OperationValid
 
 <dd>
 <p>A single bit that indicates that the <b>Operation</b> member contains valid data.</p>
 </dd>
 
-### -field <b>LevelValid</b>
+### -field LevelValid
 
 <dd>
 <p>A single bit that indicates that the <b>Level</b> member contains valid data.</p>
 </dd>
 
-### -field <b>ProcessorContextCorruptValid</b>
+### -field ProcessorContextCorruptValid
 
 <dd>
 <p>A single bit that indicates that the <b>ProcessorContextCorrupt</b> member contains valid data.</p>
 </dd>
 
-### -field <b>UncorrectedValid</b>
+### -field UncorrectedValid
 
 <dd>
 <p>A single bit that indicates that the <b>Uncorrected </b>member contains valid data.</p>
 </dd>
 
-### -field <b>PreciseIPValid</b>
+### -field PreciseIPValid
 
 <dd>
 <p>A single bit that indicates that the <b>PreciseIP</b> member contains valid data.</p>
 </dd>
 
-### -field <b>RestartableIPValid</b>
+### -field RestartableIPValid
 
 <dd>
 <p>A single bit that indicates that the <b>RestartableIP</b> member contains valid data.</p>
 </dd>
 
-### -field <b>OverflowValid</b>
+### -field OverflowValid
 
 <dd>
 <p>A single bit that indicates that the <b>Overflow</b> member contains valid data.</p>
 </dd>
 
-### -field <b>ParticipationValid</b>
+### -field ParticipationValid
 
 <dd>
 <p>A single bit that indicates that the <b>Participation</b> member contains valid data.</p>
 </dd>
 
-### -field <b>TimeoutValid</b>
+### -field TimeoutValid
 
 <dd>
 <p>A single bit that indicates that the <b>Timeout</b> member contains valid data.</p>
 </dd>
 
-### -field <b>AddressSpaceValid</b>
+### -field AddressSpaceValid
 
 <dd>
 <p>A single bit that indicates that the <b>AddressSpace</b> member contains valid data.</p>
 </dd>
 
-### -field <b>ReservedValid</b>
+### -field ReservedValid
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>TransactionType</b>
+### -field TransactionType
 
 <dd>
 <p>The type of transaction that was in progress when the error occurred. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="XPF_BUS_CHECK_TRANSACTIONTYPE_INSTRUCTION"></a><a id="xpf_bus_check_transactiontype_instruction"></a>XPF_BUS_CHECK_TRANSACTIONTYPE_INSTRUCTION
+### -field XPF_BUS_CHECK_TRANSACTIONTYPE_INSTRUCTION
 
 <dd>
 <p>A processor instruction transaction.</p>
 </dd>
 
-### -field <a id="XPF_BUS_CHECK_TRANSACTIONTYPE_DATAACCESS"></a><a id="xpf_bus_check_transactiontype_dataaccess"></a>XPF_BUS_CHECK_TRANSACTIONTYPE_DATAACCESS
+### -field XPF_BUS_CHECK_TRANSACTIONTYPE_DATAACCESS
 
 <dd>
 <p>A data access transaction.</p>
 </dd>
 
-### -field <a id="XPF_BUS_CHECK_TRANSACTIONTYPE_GENERIC"></a><a id="xpf_bus_check_transactiontype_generic"></a>XPF_BUS_CHECK_TRANSACTIONTYPE_GENERIC
+### -field XPF_BUS_CHECK_TRANSACTIONTYPE_GENERIC
 
 <dd>
 <p>A generic transaction.</p>
@@ -180,50 +180,50 @@ typedef union _WHEA_XPF_BUS_CHECK {
 <p>This member contains valid data only if the <b>TransactionTypeValid</b> bit is set.</p>
 </dd>
 
-### -field <b>Operation</b>
+### -field Operation
 
 <dd>
 <p>The type of bus operation that caused the error. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="XPF_BUS_CHECK_OPERATION_GENERIC"></a><a id="xpf_bus_check_operation_generic"></a>XPF_BUS_CHECK_OPERATION_GENERIC
+### -field XPF_BUS_CHECK_OPERATION_GENERIC
 
 <dd>
 <p>The type of operation cannot be determined.</p>
 </dd>
 
-### -field <a id="XPF_BUS_CHECK_OPERATION_GENREAD"></a><a id="xpf_bus_check_operation_genread"></a>XPF_BUS_CHECK_OPERATION_GENREAD
+### -field XPF_BUS_CHECK_OPERATION_GENREAD
 
 <dd>
 <p>A generic read operation.</p>
 </dd>
 
-### -field <a id="XPF_BUS_CHECK_OPERATION_GENWRITE"></a><a id="xpf_bus_check_operation_genwrite"></a>XPF_BUS_CHECK_OPERATION_GENWRITE
+### -field XPF_BUS_CHECK_OPERATION_GENWRITE
 
 <dd>
 <p>A generic write operation.</p>
 </dd>
 
-### -field <a id="XPF_BUS_CHECK_OPERATION_DATAREAD"></a><a id="xpf_bus_check_operation_dataread"></a>XPF_BUS_CHECK_OPERATION_DATAREAD
+### -field XPF_BUS_CHECK_OPERATION_DATAREAD
 
 <dd>
 <p>A data read operation.</p>
 </dd>
 
-### -field <a id="XPF_BUS_CHECK_OPERATION_DATAWRITE"></a><a id="xpf_bus_check_operation_datawrite"></a>XPF_BUS_CHECK_OPERATION_DATAWRITE
+### -field XPF_BUS_CHECK_OPERATION_DATAWRITE
 
 <dd>
 <p>A data write operation.</p>
 </dd>
 
-### -field <a id="XPF_BUS_CHECK_OPERATION_INSTRUCTIONFETCH"></a><a id="xpf_bus_check_operation_instructionfetch"></a>XPF_BUS_CHECK_OPERATION_INSTRUCTIONFETCH
+### -field XPF_BUS_CHECK_OPERATION_INSTRUCTIONFETCH
 
 <dd>
 <p>An instruction fetch operation.</p>
 </dd>
 
-### -field <a id="XPF_BUS_CHECK_OPERATION_PREFETCH"></a><a id="xpf_bus_check_operation_prefetch"></a>XPF_BUS_CHECK_OPERATION_PREFETCH
+### -field XPF_BUS_CHECK_OPERATION_PREFETCH
 
 <dd>
 <p>An instruction prefetch operation.</p>
@@ -232,74 +232,74 @@ typedef union _WHEA_XPF_BUS_CHECK {
 <p>This member contains valid data only if the <b>OperationValid</b> bit is set.</p>
 </dd>
 
-### -field <b>Level</b>
+### -field Level
 
 <dd>
 <p>The level of the bus hierarchy where the error occurred.</p>
 <p>This member contains valid data only if the <b>LevelValid</b> bit is set.</p>
 </dd>
 
-### -field <b>ProcessorContextCorrupt</b>
+### -field ProcessorContextCorrupt
 
 <dd>
 <p>A single bit that indicates that the processor context might have been corrupted.</p>
 <p>This member contains valid data only if the <b>ProcessorContextCorruptValid</b> bit is set.</p>
 </dd>
 
-### -field <b>Uncorrected</b>
+### -field Uncorrected
 
 <dd>
 <p>A single bit that indicates that the error has not been corrected.</p>
 <p>This member contains valid data only if the <b>UncorrectedValid</b> bit is set.</p>
 </dd>
 
-### -field <b>PreciseIP</b>
+### -field PreciseIP
 
 <dd>
 <p>A single bit that indicates that the instruction pointer that is specified in the <b>InstructionPointer</b> member of the <a href="..\ntddk\ns-ntddk--whea-xpf-procinfo.md">WHEA_XPF_PROCINFO</a> structure that contains this WHEA_XPF_BUS_CHECK union is directly associated with the error.</p>
 <p>This member contains valid data only if the <b>PreciseIPValid</b> bit is set.</p>
 </dd>
 
-### -field <b>RestartableIP</b>
+### -field RestartableIP
 
 <dd>
 <p>A single bit that indicates that program execution can be restarted reliably at the instruction pointer that is specified in the <b>InstructionPointer</b> member of the <a href="..\ntddk\ns-ntddk--whea-xpf-procinfo.md">WHEA_XPF_PROCINFO</a> union that contains this WHEA_XPF_BUS_CHECK structure.</p>
 <p>This member contains valid data only if the <b>RestartableIPValid</b> bit is set.</p>
 </dd>
 
-### -field <b>Overflow</b>
+### -field Overflow
 
 <dd>
 <p>A single bit that indicates that an error overflow occurred.</p>
 <p>This member contains valid data only if the <b>OverflowValid</b> bit is set.</p>
 </dd>
 
-### -field <b>Participation</b>
+### -field Participation
 
 <dd>
 <p>The type of participation by the local processor. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="XPF_BUS_CHECK_PARTICIPATION_PROCORIGINATED"></a><a id="xpf_bus_check_participation_procoriginated"></a>XPF_BUS_CHECK_PARTICIPATION_PROCORIGINATED
+### -field XPF_BUS_CHECK_PARTICIPATION_PROCORIGINATED
 
 <dd>
 <p>The local processor originated the request.</p>
 </dd>
 
-### -field <a id="XPF_BUS_CHECK_PARTICIPATION_PROCRESPONDED"></a><a id="xpf_bus_check_participation_procresponded"></a>XPF_BUS_CHECK_PARTICIPATION_PROCRESPONDED
+### -field XPF_BUS_CHECK_PARTICIPATION_PROCRESPONDED
 
 <dd>
 <p>The local processor responded to the request.</p>
 </dd>
 
-### -field <a id="XPF_BUS_CHECK_PARTICIPATION_PROCOBSERVED"></a><a id="xpf_bus_check_participation_procobserved"></a>XPF_BUS_CHECK_PARTICIPATION_PROCOBSERVED
+### -field XPF_BUS_CHECK_PARTICIPATION_PROCOBSERVED
 
 <dd>
 <p>The local processor observed the request.</p>
 </dd>
 
-### -field <a id="XPF_BUS_CHECK_PARTICIPATION_GENERIC"></a><a id="xpf_bus_check_participation_generic"></a>XPF_BUS_CHECK_PARTICIPATION_GENERIC
+### -field XPF_BUS_CHECK_PARTICIPATION_GENERIC
 
 <dd>
 <p>A generic value for this member if none of the other values are applicable.</p>
@@ -308,39 +308,39 @@ typedef union _WHEA_XPF_BUS_CHECK {
 <p>This member contains valid data only if the <b>ParticipationValid</b> bit is set.</p>
 </dd>
 
-### -field <b>Timeout</b>
+### -field Timeout
 
 <dd>
 <p>A single bit that indicates that a timeout occurred.</p>
 <p>This member contains valid data only if the <b>TimeoutValid</b> bit is set.</p>
 </dd>
 
-### -field <b>AddressSpace</b>
+### -field AddressSpace
 
 <dd>
 <p>The type of address space that was associated with the transaction that caused the error. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="XPF_BUS_CHECK_ADDRESS_MEMORY"></a><a id="xpf_bus_check_address_memory"></a>XPF_BUS_CHECK_ADDRESS_MEMORY
+### -field XPF_BUS_CHECK_ADDRESS_MEMORY
 
 <dd>
 <p>Memory address space.</p>
 </dd>
 
-### -field <a id="XPF_BUS_CHECK_ADDRESS_RESERVED"></a><a id="xpf_bus_check_address_reserved"></a>XPF_BUS_CHECK_ADDRESS_RESERVED
+### -field XPF_BUS_CHECK_ADDRESS_RESERVED
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <a id="XPF_BUS_CHECK_ADDRESS_IO"></a><a id="xpf_bus_check_address_io"></a>XPF_BUS_CHECK_ADDRESS_IO
+### -field XPF_BUS_CHECK_ADDRESS_IO
 
 <dd>
 <p>I/O address space.</p>
 </dd>
 
-### -field <a id="XPF_BUS_CHECK_ADDRESS_OTHER"></a><a id="xpf_bus_check_address_other"></a>XPF_BUS_CHECK_ADDRESS_OTHER
+### -field XPF_BUS_CHECK_ADDRESS_OTHER
 
 <dd>
 <p>An unclassified type of address space.</p>
@@ -349,13 +349,13 @@ typedef union _WHEA_XPF_BUS_CHECK {
 <p>This member contains valid data only if the <b>AddressSpaceValid</b> bit is set.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>XpfBusCheck</b>
+### -field XpfBusCheck
 
 <dd>
 <p>A ULONGLONG representation of the contents of the WHEA_XPF_BUS_CHECK union.</p>

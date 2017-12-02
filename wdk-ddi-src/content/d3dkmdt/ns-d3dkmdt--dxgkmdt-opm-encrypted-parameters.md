@@ -54,7 +54,7 @@ typedef struct _DXGKMDT_OPM_ENCRYPTED_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>abEncryptedParameters</b>
+### -field abEncryptedParameters
 
 <dd>
 <p>A 256-byte array that comprises data that is encrypted with the public key from an appropriate certificate.</p>

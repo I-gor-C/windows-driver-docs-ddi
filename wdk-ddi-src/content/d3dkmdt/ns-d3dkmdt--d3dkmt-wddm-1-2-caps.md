@@ -70,55 +70,55 @@ typedef struct _D3DKMT_WDDM_1_2_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>PreemptionCaps</b>
+### -field PreemptionCaps
 
 <dd></dd>
 
-### -field <b>SupportNonVGA</b>
+### -field SupportNonVGA
 
 <dd></dd>
 
-### -field <b>SupportSmoothRotation</b>
+### -field SupportSmoothRotation
 
 <dd></dd>
 
-### -field <b>SupportPerEngineTDR</b>
+### -field SupportPerEngineTDR
 
 <dd></dd>
 
-### -field <b>SupportKernelModeCommandBuffer</b>
+### -field SupportKernelModeCommandBuffer
 
 <dd></dd>
 
-### -field <b>SupportCCD</b>
+### -field SupportCCD
 
 <dd></dd>
 
-### -field <b>SupportSoftwareDeviceBitmaps</b>
+### -field SupportSoftwareDeviceBitmaps
 
 <dd></dd>
 
-### -field <b>SupportGammaRamp</b>
+### -field SupportGammaRamp
 
 <dd></dd>
 
-### -field <b>SupportHWCursor</b>
+### -field SupportHWCursor
 
 <dd></dd>
 
-### -field <b>SupportHWVSync</b>
+### -field SupportHWVSync
 
 <dd></dd>
 
-### -field <b>SupportSurpriseRemovalInHibernation</b>
+### -field SupportSurpriseRemovalInHibernation
 
 <dd></dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd></dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd></dd>
 </dl>

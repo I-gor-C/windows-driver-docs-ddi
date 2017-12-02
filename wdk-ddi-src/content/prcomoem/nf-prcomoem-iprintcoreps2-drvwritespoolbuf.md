@@ -58,25 +58,25 @@ HRESULT DrvWriteSpoolBuf(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj </i> [in]
+### -param pdevobj  [in]
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pBuffer </i> [in]
+### -param pBuffer  [in]
 
 <dd>
 <p>Caller-supplied pointer to a buffer containing data to be sent to the print spooler.</p>
 </dd>
 
-### -param <i>cbSize </i> [in]
+### -param cbSize  [in]
 
 <dd>
 <p>Caller-supplied value representing the size, in bytes, of the buffer pointed to by <i>pBuffer</i>. </p>
 </dd>
 
-### -param <i>pdwResult </i> [out]
+### -param pdwResult  [out]
 
 <dd>
 <p>Receives a method-supplied value representing the number of bytes sent to the spooler.</p>

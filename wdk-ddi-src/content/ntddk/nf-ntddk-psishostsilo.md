@@ -54,7 +54,7 @@ BOOLEAN PsIsHostSilo(
 ## -parameters
 <dl>
 
-### -param <i>Silo</i> [in]
+### -param Silo [in]
 
 <dd>
 <p>The  silo to evaluate.</p>

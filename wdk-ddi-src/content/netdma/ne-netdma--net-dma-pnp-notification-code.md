@@ -7,7 +7,7 @@ old-location: netvista\net_dma_pnp_notification_code.htm
 old-project: netvista
 ms.assetid: 1c9c09ae-5b7a-4482-8f6b-1ad5ede5b3f5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: MIRACAST_WFD_CONNECTION_STATS, MIRACAST_WFD_CONNECTION_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,33 +58,33 @@ typedef enum _NET_DMA_PNP_NOTIFICATION_CODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="NetDmaNotificationProviderRegistered"></a><a id="netdmanotificationproviderregistered"></a><a id="NETDMANOTIFICATIONPROVIDERREGISTERED"></a><b>NetDmaNotificationProviderRegistered</b>
+### -field NetDmaNotificationProviderRegistered
 
 <dd>
 <p>The NetDMA provider is registered. NetDMA uses this event in the NetDMA client interface.</p>
 </dd>
 
-### -field <a id="NetDmaNotificationProviderArrival"></a><a id="netdmanotificationproviderarrival"></a><a id="NETDMANOTIFICATIONPROVIDERARRIVAL"></a><b>NetDmaNotificationProviderArrival</b>
+### -field NetDmaNotificationProviderArrival
 
 <dd>
 <p>The NetDMA provider is available for a client to use. NetDMA uses this event in the NetDMA client
      interface.</p>
 </dd>
 
-### -field <a id="NetDmaNotificationProviderRemoval"></a><a id="netdmanotificationproviderremoval"></a><a id="NETDMANOTIFICATIONPROVIDERREMOVAL"></a><b>NetDmaNotificationProviderRemoval</b>
+### -field NetDmaNotificationProviderRemoval
 
 <dd>
 <p>The NetDMA provider was removed. NetDMA uses this event in the NetDMA client interface.</p>
 </dd>
 
-### -field <a id="NetDmaNotificationChannelArrival"></a><a id="netdmanotificationchannelarrival"></a><a id="NETDMANOTIFICATIONCHANNELARRIVAL"></a><b>NetDmaNotificationChannelArrival</b>
+### -field NetDmaNotificationChannelArrival
 
 <dd>
 <p>The NetDMA channel is available for a client to use. NetDMA uses this event in the NetDMA client
      interface.</p>
 </dd>
 
-### -field <a id="NetDmaNotificationProviderPowerDown"></a><a id="netdmanotificationproviderpowerdown"></a><a id="NETDMANOTIFICATIONPROVIDERPOWERDOWN"></a><b>NetDmaNotificationProviderPowerDown</b>
+### -field NetDmaNotificationProviderPowerDown
 
 <dd>
 <p>The NetDMA provider is powering down. A NetDMA provider driver issues the 
@@ -92,7 +92,7 @@ typedef enum _NET_DMA_PNP_NOTIFICATION_CODE {
      state.</p>
 </dd>
 
-### -field <a id="NetDmaNotificationProviderPowerUp"></a><a id="netdmanotificationproviderpowerup"></a><a id="NETDMANOTIFICATIONPROVIDERPOWERUP"></a><b>NetDmaNotificationProviderPowerUp</b>
+### -field NetDmaNotificationProviderPowerUp
 
 <dd>
 <p>The NetDMA provider is powered up. NetDMA provider drivers issue the 
@@ -100,7 +100,7 @@ typedef enum _NET_DMA_PNP_NOTIFICATION_CODE {
      state.</p>
 </dd>
 
-### -field <a id="NetDmaNotificationMax"></a><a id="netdmanotificationmax"></a><a id="NETDMANOTIFICATIONMAX"></a><b>NetDmaNotificationMax</b>
+### -field NetDmaNotificationMax
 
 <dd>
 <p>The total number of supported NetDMA PnP events.</p>
@@ -142,4 +142,4 @@ typedef enum _NET_DMA_PNP_NOTIFICATION_CODE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_PNP_NOTIFICATION_CODE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_PNP_NOTIFICATION_CODE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

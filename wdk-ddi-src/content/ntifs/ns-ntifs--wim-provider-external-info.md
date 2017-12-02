@@ -7,7 +7,7 @@ old-location: ifsk\wim_provider_external_info.htm
 old-project: ifsk
 ms.assetid: CD51FBD6-A589-4135-8BF0-8F0075654A05
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: WIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_INFO, *PWIM_PROVIDER_EXTERNAL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ typedef struct _WIM_PROVIDER_EXTERNAL_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The WIM provider version. Set to WIM_PROVIDER_CURRENT_VERSION.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The status flags for the WIM provider. Set to 0 when active. Otherwise <b>Flags</b> is set to one of the following values.</p>
@@ -75,7 +75,7 @@ typedef struct _WIM_PROVIDER_EXTERNAL_INFO {
 <tr>
 <td width="40%"><a id="WIM_PROVIDER_EXTERNAL_FLAG_NOT_ACTIVE"></a><a id="wim_provider_external_flag_not_active"></a><dl>
 
-### -field <b>WIM_PROVIDER_EXTERNAL_FLAG_NOT_ACTIVE</b>
+### -field WIM_PROVIDER_EXTERNAL_FLAG_NOT_ACTIVE
 
 </dl>
 </td>
@@ -86,7 +86,7 @@ typedef struct _WIM_PROVIDER_EXTERNAL_INFO {
 <tr>
 <td width="40%"><a id="WIM_PROVIDER_EXTERNAL_FLAG_SUSPENDED"></a><a id="wim_provider_external_flag_suspended"></a><dl>
 
-### -field <b>WIM_PROVIDER_EXTERNAL_FLAG_SUSPENDED</b>
+### -field WIM_PROVIDER_EXTERNAL_FLAG_SUSPENDED
 
 </dl>
 </td>
@@ -98,13 +98,13 @@ typedef struct _WIM_PROVIDER_EXTERNAL_INFO {
 <p> </p>
 </dd>
 
-### -field <b>DataSourceId</b>
+### -field DataSourceId
 
 <dd>
 <p>An identifier value for the WIM file data source.</p>
 </dd>
 
-### -field <b>ResourceHash</b>
+### -field ResourceHash
 
 <dd>
 <p>An identifier for the object contained within the WIM.  Conventionally a hash of the contents of a file, stored within the WIM.</p>
@@ -149,4 +149,4 @@ typedef struct _WIM_PROVIDER_EXTERNAL_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20WIM_PROVIDER_EXTERNAL_INFO structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20WIM_PROVIDER_EXTERNAL_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

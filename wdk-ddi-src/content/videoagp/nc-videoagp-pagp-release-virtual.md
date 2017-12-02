@@ -59,13 +59,13 @@ VOID APIENTRY AgpReleaseVirtual(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>VirtualReserveContext</i> [in]
+### -param VirtualReserveContext [in]
 
 <dd>
 <p>Is the context handle that identifies the reserved virtual address range to be released. This context was obtained from <b>AgpReleaseVirtual</b>.</p>

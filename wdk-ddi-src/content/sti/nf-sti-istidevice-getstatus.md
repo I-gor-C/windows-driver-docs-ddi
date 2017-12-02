@@ -7,7 +7,7 @@ old-location: image\istidevice_getstatus.htm
 old-project: image
 ms.assetid: e9539565-e13f-42ea-9566-066e2c9ae2ae
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDevice, GetStatus, IStiDevice::GetStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT GetStatus(
 ## -parameters
 <dl>
 
-### -param <i>pDevStatus</i> [in, out]
+### -param pDevStatus [in, out]
 
 <dd>
 <p>Caller-supplied pointer to an <a href="..\sti\ns-sti--sti-device-status.md">STI_DEVICE_STATUS</a> structure. The caller must set the <b>dwSize</b> and <b>StatusMask</b> members.</p>

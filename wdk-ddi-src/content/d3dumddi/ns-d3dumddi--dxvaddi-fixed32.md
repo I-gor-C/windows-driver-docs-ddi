@@ -60,19 +60,19 @@ typedef struct _DXVADDI_FIXED32 {
 ## -struct-fields
 <dl>
 
-### -field <b>Fraction</b>
+### -field Fraction
 
 <dd>
 <p>[in] A USHORT value that specifies the 16 bits after the decimal point.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] A SHORT value that specifies the 16 bits before the decimal point. </p>
 </dd>
 
-### -field <b>ll</b>
+### -field ll
 
 <dd>
 <p>A 32-bit value that describes the 16.16 fixed-point number.</p>

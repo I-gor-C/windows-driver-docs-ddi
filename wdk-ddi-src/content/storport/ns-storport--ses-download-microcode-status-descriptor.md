@@ -62,20 +62,20 @@ typedef struct _SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>SubEnclosureId</b>
+### -field SubEnclosureId
 
 <dd>
 <p>Specifies the subenclosure to which the download microcode
 status descriptor applies to.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p> Specifies the status of download microcode
@@ -332,14 +332,14 @@ before a hard reset or power on</p>
 <p> </p>
 </dd>
 
-### -field <b>AdditionalStatus</b>
+### -field AdditionalStatus
 
 <dd>
 <p>Provides an additional status value for certain
 values of <i>Status</i> .</p>
 </dd>
 
-### -field <b>MaximumImageSize</b>
+### -field MaximumImageSize
 
 <dd>
 <p>Indicates the maximum size in bytes of the
@@ -347,20 +347,20 @@ microcode image that the enclosure services process accepts. The image may be de
 more <a href="storage._ses_download_microcode_control_diagnostic_page">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>ExpectedBufferId</b>
+### -field ExpectedBufferId
 
 <dd>
 <p>Indicates the next value that the
 enclosure services process expects in the <i>BufferId</i> field in <a href="storage._ses_download_microcode_control_diagnostic_page">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>.</p>
 </dd>
 
-### -field <b>ExpectedBufferOffset</b>
+### -field ExpectedBufferOffset
 
 <dd>
 <p>Indicates the next value that the

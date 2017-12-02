@@ -55,13 +55,13 @@ typedef struct _D3DKMT_SETDEVICELOSTSUPPORT {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>A handle to the device.</p>
 </dd>
 
-### -field <b>Support</b>
+### -field Support
 
 <dd>
 <p>Indicates whether or not the device can recover from losing the graphics device.</p>

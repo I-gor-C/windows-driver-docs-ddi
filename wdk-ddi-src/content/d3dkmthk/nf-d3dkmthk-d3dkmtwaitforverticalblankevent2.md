@@ -54,7 +54,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTWaitForVerticalBlankEvent2(
 ## -parameters
 <dl>
 
-### -param <i>pWait</i> [in]
+### -param pWait [in]
 
 <dd>
 <p>Specifies parameters for waiting on multiple wait objects, including a vertical blank event.</p>

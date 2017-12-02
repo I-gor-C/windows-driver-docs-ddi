@@ -7,7 +7,7 @@ old-location: debugger\inputwide.htm
 old-project: debugger
 ms.assetid: 79997d8c-4641-4953-a1a2-e5bde88cbc3f
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl4, InputWide, IDebugControl4::InputWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ HRESULT InputWide(
 ## -parameters
 <dl>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Receives the input string from the engine.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size, in characters, of the buffer that <i>Buffer</i> specifies.</p>
 </dd>
 
-### -param <i>InputSize</i> [out, optional]
+### -param InputSize [out, optional]
 
 <dd>
 <p>Receives the number of characters returned in <i>Buffer</i>.  If <i>InputSize</i> is <b>NULL</b>, this information is not returned.</p>
@@ -76,7 +76,7 @@ HRESULT InputWide(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>S_FALSE</b></dt>

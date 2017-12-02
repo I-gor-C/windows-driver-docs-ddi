@@ -7,7 +7,7 @@ old-location: image\istidevice_rawreadcommand.htm
 old-project: image
 ms.assetid: fc6b46af-d3e3-4a49-a354-c0effee6a005
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDevice, RawReadCommand, IStiDevice::RawReadCommand
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ HRESULT RawReadCommand(
 ## -parameters
 <dl>
 
-### -param <i>lpBuffer</i> [in, out]
+### -param lpBuffer [in, out]
 
 <dd>
 <p>Caller-supplied pointer to a buffer to receive data read from the device.</p>
 </dd>
 
-### -param <i>lpdwNumberOfBytes</i> [in, out]
+### -param lpdwNumberOfBytes [in, out]
 
 <dd>
 <p>Caller-supplied pointer to a DWORD. The caller must load the DWORD with the number of bytes in the buffer pointed to by <i>lpBuffer</i>. On return, it will contain the number of bytes actually read.</p>
 </dd>
 
-### -param <i>lpOverlapped</i> [in, optional]
+### -param lpOverlapped [in, optional]
 
 <dd>
 <p>Optional, caller-supplied pointer to an OVERLAPPED structure (described in the Microsoft Windows SDK documentation).</p>

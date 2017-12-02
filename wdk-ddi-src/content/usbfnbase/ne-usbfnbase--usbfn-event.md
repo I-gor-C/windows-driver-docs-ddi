@@ -67,25 +67,25 @@ typedef enum _USBFN_EVENT {
 ## -enum-fields
 <dl>
 
-### -field <a id="UsbfnEventMinimum"></a><a id="usbfneventminimum"></a><a id="USBFNEVENTMINIMUM"></a><b>UsbfnEventMinimum</b>
+### -field UsbfnEventMinimum
 
 <dd>
 <p>The minimum value in this enumeration.</p>
 </dd>
 
-### -field <a id="UsbfnEventAttach"></a><a id="usbfneventattach"></a><a id="USBFNEVENTATTACH"></a><b>UsbfnEventAttach</b>
+### -field UsbfnEventAttach
 
 <dd>
 <p>VBUS is powered. No action is required.</p>
 </dd>
 
-### -field <a id="UsbfnEventReset"></a><a id="usbfneventreset"></a><a id="USBFNEVENTRESET"></a><b>UsbfnEventReset</b>
+### -field UsbfnEventReset
 
 <dd>
 <p>USBFN has completed a USB Reset. If previously configured, class drivers should reset their state. Transfer requests will be cancelled.</p>
 </dd>
 
-### -field <a id="UsbfnEventDetach"></a><a id="usbfneventdetach"></a><a id="USBFNEVENTDETACH"></a><b>UsbfnEventDetach</b>
+### -field UsbfnEventDetach
 
 <dd>
 <p>    VBUS is no longer powered.
@@ -94,21 +94,21 @@ typedef enum _USBFN_EVENT {
     The <b>BusSpeed</b> field of the notification is set appropriately.</p>
 </dd>
 
-### -field <a id="UsbfnEventSuspend"></a><a id="usbfneventsuspend"></a><a id="USBFNEVENTSUSPEND"></a><b>UsbfnEventSuspend</b>
+### -field UsbfnEventSuspend
 
 <dd>
 <p>    There have been no SOF packets on the bus for 3ms.
     If a class driver wants to issue a remote wake up,
-     the driver must use <a href="buses.ioctl_usbfn_internal_signal_remote_wakeup">IOCTL_INTERNAL_USBFN_SIGNAL_REMOTE_WAKEUP</a> or <a href="buses._ioctl_internal_usbfn_transfer_in">IOCTL_INTERNAL_USBFN_TRANSFER_IN</a>.</p>
+     the driver must use <a href="..\usbfnioctl\ni-usbfnioctl-ioctl-internal-usbfn-signal-remote-wakeup.md">IOCTL_INTERNAL_USBFN_SIGNAL_REMOTE_WAKEUP</a> or <a href="..\usbfnioctl\ni-usbfnioctl-ioctl-internal-usbfn-transfer-in.md">IOCTL_INTERNAL_USBFN_TRANSFER_IN</a>.</p>
 </dd>
 
-### -field <a id="UsbfnEventResume"></a><a id="usbfneventresume"></a><a id="USBFNEVENTRESUME"></a><b>UsbfnEventResume</b>
+### -field UsbfnEventResume
 
 <dd>
 <p>USBFN has resumed from suspend to the previous state.</p>
 </dd>
 
-### -field <a id="UsbfnEventSetupPacket"></a><a id="usbfneventsetuppacket"></a><a id="USBFNEVENTSETUPPACKET"></a><b>UsbfnEventSetupPacket</b>
+### -field UsbfnEventSetupPacket
 
 <dd>
 <p>    USBFN has received a setup packet with
@@ -119,14 +119,14 @@ typedef enum _USBFN_EVENT {
 <p> The setup packet is available in the <b>SetupPacket</b> field of the
     event. If the control transfer does not require a data stage,
      class drivers should respond with
-    <a href="buses.ioctl_internal_usbfn_control_status_handshake_out">IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_OUT</a>.
+    <a href="..\usbfnioctl\ni-usbfnioctl-ioctl-internal-usbfn-control-status-handshake-out.md">IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_OUT</a>.
     If a data stage is required, class drivers should respond with
-    one or more <a href="buses._ioctl_internal_usbfn_transfer_in">IOCTL_INTERNAL_USBFN_TRANSFER_IN</a> or <a href="buses.ioctl_internal_usbfn_transfer_out">IOCTL_INTERNAL_USBFN_TRANSFER_OUT</a>, followed by
-    <a href="buses._ioctl_internal_usbfn_control_status_handshake_in">IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_IN</a> or <b>IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_OUT</b> in the opposite
+    one or more <a href="..\usbfnioctl\ni-usbfnioctl-ioctl-internal-usbfn-transfer-in.md">IOCTL_INTERNAL_USBFN_TRANSFER_IN</a> or <a href="..\usbfnioctl\ni-usbfnioctl-ioctl-internal-usbfn-transfer-out.md">IOCTL_INTERNAL_USBFN_TRANSFER_OUT</a>, followed by
+    <a href="..\usbfnioctl\ni-usbfnioctl-ioctl-internal-usbfn-control-status-handshake-in.md">IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_IN</a> or <b>IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_OUT</b> in the opposite
     direction.</p>
 </dd>
 
-### -field <a id="UsbfnEventConfigured"></a><a id="usbfneventconfigured"></a><a id="USBFNEVENTCONFIGURED"></a><b>UsbfnEventConfigured</b>
+### -field UsbfnEventConfigured
 
 <dd>
 <p>    USBFN has received a SET_CONFIGURATION setup packet. Transfer
@@ -134,7 +134,7 @@ typedef enum _USBFN_EVENT {
     The <b>ConfigurationValue</b> of the notification is set to <b>wValue.W</b>.</p>
 </dd>
 
-### -field <a id="UsbfnEventUnConfigured"></a><a id="usbfneventunconfigured"></a><a id="USBFNEVENTUNCONFIGURED"></a><b>UsbfnEventUnConfigured</b>
+### -field UsbfnEventUnConfigured
 
 <dd>
 <p>    USBFN has received a SET_CONFIGURATION setup packet with
@@ -142,19 +142,19 @@ typedef enum _USBFN_EVENT {
     reset their state. Transfer requests will be cancelled.</p>
 </dd>
 
-### -field <a id="UsbfnEventPortType"></a><a id="usbfneventporttype"></a><a id="USBFNEVENTPORTTYPE"></a><b>UsbfnEventPortType</b>
+### -field UsbfnEventPortType
 
 <dd>
 <p>Deprecated.</p>
 </dd>
 
-### -field <a id="UsbfnEventBusTearDown"></a><a id="usbfneventbusteardown"></a><a id="USBFNEVENTBUSTEARDOWN"></a><b>UsbfnEventBusTearDown</b>
+### -field UsbfnEventBusTearDown
 
 <dd>
 <p>Deprecated.</p>
 </dd>
 
-### -field <a id="UsbfnEventSetInterface"></a><a id="usbfneventsetinterface"></a><a id="USBFNEVENTSETINTERFACE"></a><b>UsbfnEventSetInterface</b>
+### -field UsbfnEventSetInterface
 
 <dd>
 <p>USBFN has received a SET_INTERFACE setup packet.  On receiving this
@@ -162,7 +162,7 @@ typedef enum _USBFN_EVENT {
     for the interface.</p>
 </dd>
 
-### -field <a id="UsbfnEventMaximum"></a><a id="usbfneventmaximum"></a><a id="USBFNEVENTMAXIMUM"></a><b>UsbfnEventMaximum</b>
+### -field UsbfnEventMaximum
 
 <dd>
 <p>The minimum value in this enumeration.</p>

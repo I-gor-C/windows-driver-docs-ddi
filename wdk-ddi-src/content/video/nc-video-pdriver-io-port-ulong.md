@@ -61,19 +61,19 @@ VP_STATUS SvgaHwIoPortUlong(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> 
+### -param Context 
 
 <dd>
 <p>Specifies the miniport driver-determined context value that was set in the <b>EmulatorAccessEntriesContext</b> member of VIDEO_PORT_CONFIG_INFO.</p>
 </dd>
 
-### -param <i>Port</i> 
+### -param Port 
 
 <dd>
 <p>Specifies the mapped I/O port to be trapped.</p>
 </dd>
 
-### -param <i>AccessMode</i> 
+### -param AccessMode 
 
 <dd>
 <p>Specifies the type of access allowed, which can be one or a combination (ORed) of the following values:</p>
@@ -89,7 +89,7 @@ VP_STATUS SvgaHwIoPortUlong(
 </p>
 </dd>
 
-### -param <i>Data</i> 
+### -param Data 
 
 <dd>
 <p>Pointer to the ULONG data to be transferred.</p>

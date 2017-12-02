@@ -58,25 +58,25 @@ typedef struct _CM_PARTIAL_RESOURCE_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of this structure. This value should be 1.</p>
 </dd>
 
-### -field <b>Revision</b>
+### -field Revision
 
 <dd>
 <p>The revision of this structure. This value should be 1.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>The number of elements contained in the <b>PartialDescriptors</b> array.</p>
 </dd>
 
-### -field <b>PartialDescriptors</b>
+### -field PartialDescriptors
 
 <dd>
 <p>The first element in an array of one or more <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structures.</p>

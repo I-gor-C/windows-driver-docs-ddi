@@ -61,49 +61,49 @@ typedef struct _IO_SCSI_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Contains the length in bytes of this structure. </p>
 </dd>
 
-### -field <b>MaximumTransferLength</b>
+### -field MaximumTransferLength
 
 <dd>
 <p>Contains the maximum size, in bytes, of a single SCSI request block (SRB). </p>
 </dd>
 
-### -field <b>MaximumPhysicalPages</b>
+### -field MaximumPhysicalPages
 
 <dd>
 <p>Contains the maximum number of physical pages per data buffer. </p>
 </dd>
 
-### -field <b>SupportedAsynchronousEvents</b>
+### -field SupportedAsynchronousEvents
 
 <dd>
 <p>When <b>TRUE</b>, indicates that the host adapter supports SCSI asynchronous receive-event operations. </p>
 </dd>
 
-### -field <b>AlignmentMask</b>
+### -field AlignmentMask
 
 <dd>
 <p>Contains the alignment mask for data transfers. The host adapter requires that data to be transferred must be aligned on an address that is an integer multiple of the value in this field. </p>
 </dd>
 
-### -field <b>TaggedQueuing</b>
+### -field TaggedQueuing
 
 <dd>
 <p>When <b>TRUE</b>, indicates that the host adapter supports tagged queuing.</p>
 </dd>
 
-### -field <b>AdapterScansDown</b>
+### -field AdapterScansDown
 
 <dd>
 <p>When <b>TRUE</b>, indicates that the host adapter scans down for BIOS devices. </p>
 </dd>
 
-### -field <b>AdapterUsesPio</b>
+### -field AdapterUsesPio
 
 <dd>
 <p>When <b>TRUE</b>, indicates that the host adapter uses programmed I/O. </p>

@@ -46,16 +46,16 @@ req.product: Windows 10 or later.
 ## -ioctlparameters
 
 ### -input-buffer
-<p>A pointer to a <a href="buses._ucmtcpci_port_controller_displayport_display_out_status_changed_in_params">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED_IN_PARAMS</a> structure that contains status information.</p>
+<p>A pointer to a <a href="..\ucmtcpciportcontrollerrequests\ns-ucmtcpciportcontrollerrequests--ucmtcpci-port-controller-displayport-display-out-status-changed-in-params.md">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED_IN_PARAMS</a> structure that contains status information.</p>
 
-<p>A pointer to a <a href="buses._ucmtcpci_port_controller_displayport_display_out_status_changed_in_params">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED_IN_PARAMS</a> structure that contains status information.</p>
+<p>A pointer to a <a href="..\ucmtcpciportcontrollerrequests\ns-ucmtcpciportcontrollerrequests--ucmtcpci-port-controller-displayport-display-out-status-changed-in-params.md">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED_IN_PARAMS</a> structure that contains status information.</p>
 
 ### -input-buffer-length
-<p>The size of the <a href="buses._ucmtcpci_port_controller_displayport_display_out_status_changed_in_params">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED_IN_PARAMS</a> structure.</p>
+<p>The size of the <a href="..\ucmtcpciportcontrollerrequests\ns-ucmtcpciportcontrollerrequests--ucmtcpci-port-controller-displayport-display-out-status-changed-in-params.md">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED_IN_PARAMS</a> structure.</p>
 
-<p>The size of the <a href="buses._ucmtcpci_port_controller_displayport_display_out_status_changed_in_params">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED_IN_PARAMS</a> structure.</p>
+<p>The size of the <a href="..\ucmtcpciportcontrollerrequests\ns-ucmtcpciportcontrollerrequests--ucmtcpci-port-controller-displayport-display-out-status-changed-in-params.md">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED_IN_PARAMS</a> structure.</p>
 
-<p>The size of the <a href="buses._ucmtcpci_port_controller_displayport_display_out_status_changed_in_params">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED_IN_PARAMS</a> structure.</p>
+<p>The size of the <a href="..\ucmtcpciportcontrollerrequests\ns-ucmtcpciportcontrollerrequests--ucmtcpci-port-controller-displayport-display-out-status-changed-in-params.md">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED_IN_PARAMS</a> structure.</p>
 
 ### -output-buffer
 

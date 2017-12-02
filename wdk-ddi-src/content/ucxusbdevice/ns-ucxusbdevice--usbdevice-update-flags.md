@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains request flags set by UCX that is  passed in the <a href="buses._usbdevice_update">USBDEVICE_UPDATE</a> structure when UCX invokes the client driver's <a href="buses.evt_ucx_usbdevice_update">EVT_UCX_USBDEVICE_UPDATE</a> callback function.</p>
+<p>Contains request flags set by UCX that is  passed in the <a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update.md">USBDEVICE_UPDATE</a> structure when UCX invokes the client driver's <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-update.md">EVT_UCX_USBDEVICE_UPDATE</a> callback function.</p>
 
 
 ## -syntax
@@ -62,49 +62,49 @@ typedef struct _USBDEVICE_UPDATE_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>UpdateDeviceDescriptor</b>
+### -field UpdateDeviceDescriptor
 
 <dd>
 <p>If set, indicates a request to update the USB device descriptor.</p>
 </dd>
 
-### -field <b>UpdateBosDescriptor</b>
+### -field UpdateBosDescriptor
 
 <dd>
 <p>If set, indicates a request to update the USB BOS descriptor.</p>
 </dd>
 
-### -field <b>UpdateMaxExitLatency</b>
+### -field UpdateMaxExitLatency
 
 <dd>
 <p>If set, indicates a request to update the maximum exit latency.</p>
 </dd>
 
-### -field <b>UpdateIsHub</b>
+### -field UpdateIsHub
 
 <dd>
 <p>If set, indicates a request to determine of the device is a hub.</p>
 </dd>
 
-### -field <b>UpdateAllowIoOnInvalidPipeHandles</b>
+### -field UpdateAllowIoOnInvalidPipeHandles
 
 <dd>
 <p>If set, indicates the USB device or hub has been updated to allow I/O with invalid pipe handles.</p>
 </dd>
 
-### -field <b>Update20HardwareLpmParameters</b>
+### -field Update20HardwareLpmParameters
 
 <dd>
 <p>If set, indicates a request to update the 2.0 LPM state.</p>
 </dd>
 
-### -field <b>UpdateRootPortResumeTime</b>
+### -field UpdateRootPortResumeTime
 
 <dd>
 <p>If set, indicates a request to  update the root port resume time.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Do not use. </p>
@@ -131,13 +131,13 @@ typedef struct _USBDEVICE_UPDATE_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._usbdevice_update">USBDEVICE_UPDATE</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update.md">USBDEVICE_UPDATE</a>
 </dt>
 <dt>
-<a href="buses._usbdevice_update_failure_flags">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update-failure-flags.md">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
 </dt>
 <dt>
-<a href="buses._usbdevice_update_20_hardware_lpm_parameters">USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-update-20-hardware-lpm-parameters.md">USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>

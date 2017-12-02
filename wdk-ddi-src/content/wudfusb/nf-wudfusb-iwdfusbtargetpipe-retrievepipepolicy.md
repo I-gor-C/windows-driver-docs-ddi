@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetpipe_retrievepipepolicy.htm
 old-project: wdf
 ms.assetid: 578f7633-307e-4cda-b8fe-ae73a095976f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFUsbTargetPipe, RetrievePipePolicy, IWDFUsbTargetPipe::RetrievePipePolicy
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ HRESULT RetrievePipePolicy(
 ## -parameters
 <dl>
 
-### -param <i>PolicyType</i> [in]
+### -param PolicyType [in]
 
 <dd>
 <p>The type of WinUsb pipe policy that the UMDF driver requests.</p>
 </dd>
 
-### -param <i>ValueLength</i> [in, out]
+### -param ValueLength [in, out]
 
 <dd>
 <p>A pointer to a variable that, on input, contains the size, in bytes, of the buffer that <b>RetrievePipePolicy</b> supplies for <i>Value</i>. On output, this parameter contains the size that <b>RetrievePipePolicy</b> requires for <i>Value</i>.</p>
 </dd>
 
-### -param <i>Value</i> [out]
+### -param Value [out]
 
 <dd>
 <p>A pointer that receives the buffer that contains the WinUsb pipe policy.</p>
@@ -163,4 +163,4 @@ HRESULT RetrievePipePolicy(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetPipe::RetrievePipePolicy method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetPipe::RetrievePipePolicy method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

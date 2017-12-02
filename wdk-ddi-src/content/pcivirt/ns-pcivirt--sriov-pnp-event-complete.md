@@ -54,7 +54,7 @@ typedef struct _SRIOV_PNP_EVENT_COMPLETE {
 ## -struct-fields
 <dl>
 
-### -field <b>QueryStatus</b>
+### -field QueryStatus
 
 <dd>
 <p>Indicates the status to be returned in the PnP query IRP that is currently pended in the PF driver.</p>

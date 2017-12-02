@@ -61,37 +61,37 @@ typedef enum _D3DKMT_DEVICESTATE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_DEVICESTATE_EXECUTION"></a><a id="d3dkmt_devicestate_execution"></a><b>D3DKMT_DEVICESTATE_EXECUTION</b>
+### -field D3DKMT_DEVICESTATE_EXECUTION
 
 <dd>
 <p>The device execution state is retrieved.</p>
 </dd>
 
-### -field <a id="D3DKMT_DEVICESTATE_PRESENT"></a><a id="d3dkmt_devicestate_present"></a><b>D3DKMT_DEVICESTATE_PRESENT</b>
+### -field D3DKMT_DEVICESTATE_PRESENT
 
 <dd>
 <p>The device present state is retrieved.</p>
 </dd>
 
-### -field <a id="D3DKMT_DEVICESTATE_RESET"></a><a id="d3dkmt_devicestate_reset"></a><b>D3DKMT_DEVICESTATE_RESET</b>
+### -field D3DKMT_DEVICESTATE_RESET
 
 <dd>
 <p>The device reset state is retrieved.</p>
 </dd>
 
-### -field <a id="D3DKMT_DEVICESTATE_PRESENT_DWM"></a><a id="d3dkmt_devicestate_present_dwm"></a><b>D3DKMT_DEVICESTATE_PRESENT_DWM</b>
+### -field D3DKMT_DEVICESTATE_PRESENT_DWM
 
 <dd>
 <p>The device present desktop window manager state is retrieved.</p>
 </dd>
 
-### -field <a id="D3DKMT_DEVICESTATE_PAGE_FAULT"></a><a id="d3dkmt_devicestate_page_fault"></a><b>D3DKMT_DEVICESTATE_PAGE_FAULT</b>
+### -field D3DKMT_DEVICESTATE_PAGE_FAULT
 
 <dd>
 <p>The device page fault state is retrieved.</p>
 </dd>
 
-### -field <a id=""></a><b></b>
+### -field 
 
 <dd></dd>
 </dl>

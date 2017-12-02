@@ -54,7 +54,7 @@ typedef struct _D3DKMT_CLOSEADAPTER {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[in] A handle to the graphics adapter to close.</p>

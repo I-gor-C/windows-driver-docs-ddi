@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>dwPitch</b>
+### -field dwPitch
 
 <dd>
 <p>Specifies the pitch (byte count between subsequent lines) of the video port surface.</p>
 </dd>
 
-### -field <b>dwXOrigin</b>
+### -field dwXOrigin
 
 <dd>
 <p>Indicates the x-origin of the video port surface.</p>
 </dd>
 
-### -field <b>dwYOrigin</b>
+### -field dwYOrigin
 
 <dd>
 <p>Indicates the y-origin of the video port surface.</p>

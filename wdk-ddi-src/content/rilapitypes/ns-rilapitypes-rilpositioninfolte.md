@@ -7,7 +7,7 @@ old-location: netvista\rilpositioninfolte_2.htm
 old-project: netvista
 ms.assetid: 4910571e-af1d-4bcf-a2d9-0d5383530171
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILPOSITIONINFOLTE, RILPOSITIONINFOLTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,43 +64,43 @@ typedef struct _RILPOSITIONINFOLTE {
 ## -struct-fields
 <dl>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwMobileCountryCode</b>
+### -field dwMobileCountryCode
 
 <dd></dd>
 
-### -field <b>dwMobileNetworkCode</b>
+### -field dwMobileNetworkCode
 
 <dd></dd>
 
-### -field <b>dwCellID</b>
+### -field dwCellID
 
 <dd></dd>
 
-### -field <b>dwEARFCN</b>
+### -field dwEARFCN
 
 <dd></dd>
 
-### -field <b>dwPhysCellID</b>
+### -field dwPhysCellID
 
 <dd></dd>
 
-### -field <b>dwTAC</b>
+### -field dwTAC
 
 <dd></dd>
 
-### -field <b>dwRSRP</b>
+### -field dwRSRP
 
 <dd></dd>
 
-### -field <b>dwRSRQ</b>
+### -field dwRSRQ
 
 <dd></dd>
 
-### -field <b>dwTimingAdvance</b>
+### -field dwTimingAdvance
 
 <dd></dd>
 </dl>

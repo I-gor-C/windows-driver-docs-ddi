@@ -54,7 +54,7 @@ typedef struct _AddPort_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>Contains a worldwide name that indicates the port whose events are to be reported. </p>

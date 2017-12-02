@@ -60,7 +60,7 @@ typedef EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE PFN_IDD_CX_MONITOR_OPM_GET_CERTIF
 ## -parameters
 <dl>
 
-### -param <i>AdapterObject</i> [in]
+### -param AdapterObject [in]
 
 <dd>
 <p>
@@ -68,7 +68,7 @@ typedef EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE PFN_IDD_CX_MONITOR_OPM_GET_CERTIF
                 The object for the adapter that the OPM certificate will be gotten for.</p>
 </dd>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>

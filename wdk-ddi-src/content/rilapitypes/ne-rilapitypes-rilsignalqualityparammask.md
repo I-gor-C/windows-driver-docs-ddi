@@ -7,7 +7,7 @@ old-location: netvista\rilsignalqualityparammask_2.htm
 old-project: netvista
 ms.assetid: be6c46bb-9c14-4daf-b76a-679d71269965
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef enum _RILSIGNALQUALITYPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_SQ_SYSTEMTYPE"></a><a id="ril_param_sq_systemtype"></a><b>RIL_PARAM_SQ_SYSTEMTYPE</b>
+### -field RIL_PARAM_SQ_SYSTEMTYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SQ_NUMSIGNALBARS"></a><a id="ril_param_sq_numsignalbars"></a><b>RIL_PARAM_SQ_NUMSIGNALBARS</b>
+### -field RIL_PARAM_SQ_NUMSIGNALBARS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SQ_SIGNALSTRENGTH"></a><a id="ril_param_sq_signalstrength"></a><b>RIL_PARAM_SQ_SIGNALSTRENGTH</b>
+### -field RIL_PARAM_SQ_SIGNALSTRENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SQ_SNR"></a><a id="ril_param_sq_snr"></a><b>RIL_PARAM_SQ_SNR</b>
+### -field RIL_PARAM_SQ_SNR
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SQ_ALL"></a><a id="ril_param_sq_all"></a><b>RIL_PARAM_SQ_ALL</b>
+### -field RIL_PARAM_SQ_ALL
 
 <dd></dd>
 </dl>

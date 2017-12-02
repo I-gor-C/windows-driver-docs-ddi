@@ -94,13 +94,13 @@ typedef struct _INQUIRYDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceType</b>
+### -field DeviceType
 
 <dd>
 <p>Specifies the type of device. For a complete list of symbolic constants that indicate the various device types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a>. </p>
 </dd>
 
-### -field <b>DeviceTypeQualifier</b>
+### -field DeviceTypeQualifier
 
 <dd>
 <p>Indicates whether the device is present or not. The values that this member can take are as follows:</p>
@@ -137,205 +137,205 @@ typedef struct _INQUIRYDATA {
 <p> </p>
 </dd>
 
-### -field <b>DeviceTypeModifier</b>
+### -field DeviceTypeModifier
 
 <dd>
 <p>Specifies the device type modifier, if any, as defined by SCSI. If no device type modifier exists, this member is zero.</p>
 </dd>
 
-### -field <b>RemovableMedia</b>
+### -field RemovableMedia
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the media is removable, and when <b>FALSE</b> that the media is not removable.</p>
 </dd>
 
-### -field <b>Versions</b>
+### -field Versions
 
 <dd>
 <p>Indicates the version of the inquiry data standard that this data conforms to. For more information about the version values allowed in this field, see the <i>SCSI Primary Commands - 2 (SPC-2)</i> specification. </p>
 </dd>
 
-### -field <b>ANSIVersion</b>
+### -field ANSIVersion
 
 <dd>
 <p>Indicates the ANSI version of the inquiry data standard that this data conforms to. For more information about the version values allowed in this field, see the <i>SCSI Primary Commands - 2 (SPC-2)</i> specification. </p>
 </dd>
 
-### -field <b>ECMAVersion</b>
+### -field ECMAVersion
 
 <dd>
 <p>Indicates the ECMA version of the inquiry data standard that this data conforms to. For more information about the version values allowed in this field, see the <i>SCSI Primary Commands - 2 (SPC-2)</i> specification. </p>
 </dd>
 
-### -field <b>ISOVersion</b>
+### -field ISOVersion
 
 <dd>
 <p>Indicates the ISO version of the inquiry data standard that this data conforms to. For more information about the version values allowed in this field, see the <i>SCSI Primary Commands - 2 (SPC-2)</i> specification. </p>
 </dd>
 
-### -field <b>ResponseDataFormat</b>
+### -field ResponseDataFormat
 
 <dd>
 <p>Indicates the SCSI standard that governs the response data format. The value of this member must be 2. </p>
 </dd>
 
-### -field <b>HiSupport</b>
+### -field HiSupport
 
 <dd>
 <p>Indicates, when zero, that the target does not use the hierarchical addressing model to assign LUNs to logical units. A value of 1 indicates the target uses the hierarchical addressing model to assign LUNs to logical units. </p>
 </dd>
 
-### -field <b>NormACA</b>
+### -field NormACA
 
 <dd>
 <p>Indicates, when set to one, that the operating system supports setting the NACA bit to one in the control byte of the command descriptor block (CDB). A value of zero indicates that the system does not support setting the NACA bit to one. For more information about the function of the NACA bit and the control byte in a CDB, see the <i>SCSI Primary Commands - 2 (SPC-2)</i> specification. </p>
 </dd>
 
-### -field <b>TerminateTask</b>
+### -field TerminateTask
 
 <dd>
 <p>Indicates, when set to one, that the target device supports the SCSI TERMINATE TASK task management function. A value of zero indicates that the target device does not support the TERMINATE TASK task management function. </p>
 </dd>
 
-### -field <b>AERC</b>
+### -field AERC
 
 <dd>
 <p>Indicates, when set to one, that the target device supports the asynchronous event reporting capability. A value of zero indicates that the target device does not support asynchronous event reports. Details of the asynchronous event reporting support are protocol-specific. For more information about asynchronous even reporting, see the <i>SCSI Primary Commands - 2 (SPC-2)</i> specification. </p>
 </dd>
 
-### -field <b>AdditionalLength</b>
+### -field AdditionalLength
 
 <dd>
 <p>Specifies the length in bytes of the parameters of the command descriptor block (CDB). </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Addr16</b>
+### -field Addr16
 
 <dd>
 <p>Indicates, when set to one, that the target supports 16-bit wide SCSI addresses. A value of zero indicates that the device does not support 32-bit wide SCSI addresses. </p>
 </dd>
 
-### -field <b>Addr32</b>
+### -field Addr32
 
 <dd>
 <p>Indicates, when set to one, that the target supports 32-bit wide SCSI addresses. A value of zero indicates that the device does not support 32-bit wide SCSI addresses. </p>
 </dd>
 
-### -field <b>AckReqQ</b>
+### -field AckReqQ
 
 <dd>
 <p>Indicates, when set to one, that the target supports a request and acknowledge data transfer handshake on the secondary bus. A value of zero indicates that the target does not support this function. </p>
 </dd>
 
-### -field <b>MediumChanger</b>
+### -field MediumChanger
 
 <dd>
 <p>Indicates, when set to one, that the device is embedded within or attached to a medium transport element. A value of zero indicates that the device is not embedded within or attached to a medium transport element.</p>
 </dd>
 
-### -field <b>MultiPort</b>
+### -field MultiPort
 
 <dd>
 <p>Indicates, when set to one, that the target device is a multiport (2 or more ports) device that conforms to the SCSI-3 multiport device requirements. A value of zero indicates that this device has a single port and does not implement the multiport requirements. </p>
 </dd>
 
-### -field <b>ReservedBit2</b>
+### -field ReservedBit2
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>EnclosureServices</b>
+### -field EnclosureServices
 
 <dd>
 <p>Indicates, when set to one, that the device contains an embedded enclosure services component. A value of zero indicates that the device does not contain an embedded enclosure services component. </p>
 </dd>
 
-### -field <b>ReservedBit3</b>
+### -field ReservedBit3
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>SoftReset</b>
+### -field SoftReset
 
 <dd>
 <p>Indicates, when set to one, that the target device supports soft resets. A value of zero indicates that the target does not support soft resets. </p>
 </dd>
 
-### -field <b>CommandQueue</b>
+### -field CommandQueue
 
 <dd>
 <p>Indicates, when set to one, that the target device supports command queuing for this logical unit. However, a value of zero does not necessarily indicate that the target device does not support command queuing. The meaning of these values depends on the values present in the SCSI inquiry data. For information about the meaning of the command queuing bit, see the <i>SCSI Primary Commands - 2 (SPC-2)</i> specification. </p>
 </dd>
 
-### -field <b>TransferDisable</b>
+### -field TransferDisable
 
 <dd>
 <p>Indicates, when set to one, that the target supports the SCSI CONTINUE TASK and TARGET TRANSFER DISABLE messages. A value of zero indicates that the device does not support one or both of these messages.  For more information about the CONTINUE TASK and TARGET TRANSFER DISABLE messages, see the <i>SCSI Primary Commands - 2 (SPC-2)</i> specification. </p>
 </dd>
 
-### -field <b>LinkedCommands</b>
+### -field LinkedCommands
 
 <dd>
 <p>Indicates, when set to one, that the operating system supports linked commands. A value of zero indicates the operating system does not support linked commands. </p>
 </dd>
 
-### -field <b>Synchronous</b>
+### -field Synchronous
 
 <dd>
 <p>Indicates, when set to one, that the target supports synchronous data transfer. A value of zero indicates that the target does not support synchronous data transfer. </p>
 </dd>
 
-### -field <b>Wide16Bit</b>
+### -field Wide16Bit
 
 <dd>
 <p>Indicates, when set to one, that the target supports 16-bit wide data transfers. A value of zero indicates that the device does not support 16-bit wide data transfers. </p>
 </dd>
 
-### -field <b>Wide32Bit</b>
+### -field Wide32Bit
 
 <dd>
 <p>Indicates, when set to one, that the target supports 32-bit wide data transfers. A value of zero indicates that the device does not support 32-bit wide data transfers. </p>
 </dd>
 
-### -field <b>RelativeAddressing</b>
+### -field RelativeAddressing
 
 <dd>
 <p>Indicates, when set to one, that the operating system supports the relative addressing mode. A value of zero indicates the operating system does not support relative addressing. </p>
 </dd>
 
-### -field <b>VendorId</b>
+### -field VendorId
 
 <dd>
 <p>Contains eight bytes of ASCII data that identifies the vendor of the product.</p>
 </dd>
 
-### -field <b>ProductId</b>
+### -field ProductId
 
 <dd>
 <p>Contains sixteen bytes of ASCII data that indicates the product ID, as defined by the vendor. The data shall be left-aligned within this field and the unused bytes filled with ASCII blanks.</p>
 </dd>
 
-### -field <b>ProductRevisionLevel</b>
+### -field ProductRevisionLevel
 
 <dd>
 <p>Contains four bytes of ASCII data that indicates the product revision level, as defined by the vendor. </p>
 </dd>
 
-### -field <b>VendorSpecific</b>
+### -field VendorSpecific
 
 <dd>
 <p>Contains 20 bytes of vendor-specific data. </p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved. </p>

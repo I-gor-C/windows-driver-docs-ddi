@@ -55,7 +55,7 @@ VOID KeReleaseSpinLockFromDpcLevel(
 ## -parameters
 <dl>
 
-### -param <i>SpinLock</i> [in, out]
+### -param SpinLock [in, out]
 
 <dd>
 <p>Pointer to an executive spin lock for which the caller provides the storage. </p>

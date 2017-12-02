@@ -65,55 +65,55 @@ typedef struct _OSVERSIONINFOEXW {
 ## -struct-fields
 <dl>
 
-### -field <b>dwOSVersionInfoSize</b>
+### -field dwOSVersionInfoSize
 
 <dd>
 <p>The size, in bytes, of an <b>RTL_OSVERSIONINFOEXW</b> structure. This member must be set before the structure is used with <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>.</p>
 </dd>
 
-### -field <b>dwMajorVersion</b>
+### -field dwMajorVersion
 
 <dd>
 <p>The major version number of the operating system. For example, for Windows 2000, the major version number is five. For more information, see the table in Remarks.</p>
 </dd>
 
-### -field <b>dwMinorVersion</b>
+### -field dwMinorVersion
 
 <dd>
 <p>The minor version number of the operating system. For example, for Windows 2000, the minor version number is zero. For more information, see the table in Remarks.</p>
 </dd>
 
-### -field <b>dwBuildNumber</b>
+### -field dwBuildNumber
 
 <dd>
 <p>The build number of the operating system.</p>
 </dd>
 
-### -field <b>dwPlatformId</b>
+### -field dwPlatformId
 
 <dd>
 <p>The operating system platform. For Win32 on NT-based operating systems, <b>RtlGetVersion</b> returns the value VER_PLATFORM_WIN32_NT.</p>
 </dd>
 
-### -field <b>szCSDVersion</b>
+### -field szCSDVersion
 
 <dd>
 <p>The service-pack version string. This member contains a null-terminated string, such as "Service Pack 3", which indicates the latest service pack installed on the system. If no service pack is installed, <b>RtlGetVersion</b> might not initialize this string. Initialize <i>szCSDVersion</i> to zero (empty string) before the call to <b>RtlGetVersion</b>.</p>
 </dd>
 
-### -field <b>wServicePackMajor</b>
+### -field wServicePackMajor
 
 <dd>
 <p>The major version number of the latest service pack installed on the system. For example, for Service Pack 3, the major version number is three. If no service pack has been installed, the value is zero.</p>
 </dd>
 
-### -field <b>wServicePackMinor</b>
+### -field wServicePackMinor
 
 <dd>
 <p>The minor version number of the latest service pack installed on the system. For example, for Service Pack 3, the minor version number is zero.</p>
 </dd>
 
-### -field <b>wSuiteMask</b>
+### -field wSuiteMask
 
 <dd>
 <p>The product suites available on the system. This member is set to zero or to the bitwise OR of one or more of the following values.</p>
@@ -233,7 +233,7 @@ typedef struct _OSVERSIONINFOEXW {
 <div> </div>
 </dd>
 
-### -field <b>wProductType</b>
+### -field wProductType
 
 <dd>
 <p>The product type. This member contains additional information about the system. This member can be one of the following values: </p>
@@ -270,7 +270,7 @@ typedef struct _OSVERSIONINFOEXW {
 <p> </p>
 </dd>
 
-### -field <b>wReserved</b>
+### -field wReserved
 
 <dd>
 <p>Reserved for future use.</p>

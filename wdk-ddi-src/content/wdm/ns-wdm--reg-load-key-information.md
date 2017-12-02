@@ -65,67 +65,67 @@ typedef struct _REG_LOAD_KEY_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Object</b>
+### -field Object
 
 <dd>
 <p>A pointer to the registry key object for the root key of the hive that is about to be loaded.</p>
 </dd>
 
-### -field <b>KeyName</b>
+### -field KeyName
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the name of the root key.</p>
 </dd>
 
-### -field <b>SourceFile</b>
+### -field SourceFile
 
 <dd>
 <p>A pointer to a <b>UNICODE_STRING</b> structure that contains the path name of a file that contains the registry hive information that is being loaded.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>TrustClassObject</b>
+### -field TrustClassObject
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>UserEvent</b>
+### -field UserEvent
 
 <dd>
 <p>A pointer to an event object that is signaled when the hive is unloaded.</p>
 </dd>
 
-### -field <b>DesiredAccess</b>
+### -field DesiredAccess
 
 <dd>
 <p>The access mask that was specified by the thread that is trying to load the registry key. For more information about this access mask, see the description of the <i>DesiredAccess</i> parameter of the <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> routine.</p>
 </dd>
 
-### -field <b>RootHandle</b>
+### -field RootHandle
 
 <dd>
 <p>An optional pointer to a location that receives the handle to the root of the hive that is being loaded. This member can be non-<b>NULL</b> if an application hive is  being loaded. In all other cases, this member should be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>CallContext</b>
+### -field CallContext
 
 <dd>
 <p>Optional driver-defined context information that the driver's <a href="kernel.registrycallback">RegistryCallback</a> routine can supply.</p>
 </dd>
 
-### -field <b>ObjectContext</b>
+### -field ObjectContext
 
 <dd>
 <p>A pointer to driver-defined context information that the driver has associated with a registry object by calling the <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a> routine.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>

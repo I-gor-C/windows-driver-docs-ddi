@@ -54,7 +54,7 @@ HRESULT GetStream(
 ## -parameters
 <dl>
 
-### -param <i>ppStream</i> [out]
+### -param ppStream [out]
 
 <dd>
 <p>A pointer to an <a href="print.iprintreadstream">IPrintReadStream</a> interface. The filter can use this interface to read the contents of the print ticket.</p>

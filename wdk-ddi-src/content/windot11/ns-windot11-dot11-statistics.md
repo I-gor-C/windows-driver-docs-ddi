@@ -7,7 +7,7 @@ old-location: netvista\dot11_statistics.htm
 old-project: netvista
 ms.assetid: 714ad442-596b-4e67-82ce-a50e1808a3af
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_STATISTICS, DOT11_STATISTICS, *PDOT11_STATISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct DOT11_STATISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_STATISTICS structure. This member is formatted as an 
@@ -70,19 +70,19 @@ typedef struct DOT11_STATISTICS {
 <p></p>
 <dl>
 
-### -field <a id="Type"></a><a id="type"></a><a id="TYPE"></a>Type
+### -field Type
 
 <dd>
 <p>This member must be set to NDIS_OBJECT_TYPE_DEFAULT.</p>
 </dd>
 
-### -field <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a>Revision
+### -field Revision
 
 <dd>
 <p>This member must be set to DOT11_STATISTICS_REVISION_1.</p>
 </dd>
 
-### -field <a id="Size"></a><a id="size"></a><a id="SIZE"></a>Size
+### -field Size
 
 <dd>
 <p>This member must be set to 
@@ -93,7 +93,7 @@ typedef struct DOT11_STATISTICS {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>ullFourWayHandshakeFailures</b>
+### -field ullFourWayHandshakeFailures
 
 <dd>
 <p>The number of four-way handshake failures that the 802.11 station encountered during Wi-Fi
@@ -103,7 +103,7 @@ typedef struct DOT11_STATISTICS {
      DOT11_STATISTICS_UNKNOWN.</p>
 </dd>
 
-### -field <b>ullTKIPCounterMeasuresInvoked</b>
+### -field ullTKIPCounterMeasuresInvoked
 
 <dd>
 <p>The number of times that the 802.11 station invoked countermeasures following a message integrity
@@ -113,14 +113,14 @@ typedef struct DOT11_STATISTICS {
      DOT11_STATISTICS_UNKNOWN.</p>
 </dd>
 
-### -field <b>ullReserved</b>
+### -field ullReserved
 
 <dd>
 <p>This member is reserved for use by the operating system. The miniport driver must not write to
      this member.</p>
 </dd>
 
-### -field <b>MacUcastCounters</b>
+### -field MacUcastCounters
 
 <dd>
 <p>The MAC layer counters based on unicast packets sent or received by the 802.11 station. The data
@@ -135,7 +135,7 @@ typedef struct DOT11_STATISTICS {
 <div> </div>
 </dd>
 
-### -field <b>MacMcastCounters</b>
+### -field MacMcastCounters
 
 <dd>
 <p>The MAC layer counters based on multicast or broadcast packets sent or received by the 802.11
@@ -151,7 +151,7 @@ typedef struct DOT11_STATISTICS {
 <div> </div>
 </dd>
 
-### -field <b>PhyCounters</b>
+### -field PhyCounters
 
 <dd>
 <p>An array of PHY layer counters. Each entry in this array is formatted as a 
@@ -183,7 +183,7 @@ typedef struct DOT11_STATISTICS {
       regardless of the type of reset operation specified in the set request.</p>
 
 <p>For more information about the statistics gathered by a Native 802.11 miniport driver, see 
-    <a href="NULL">Native 802.11 Statistics</a>.</p>
+    <a href="netvista.native_802_11_statistics">Native 802.11 Statistics</a>.</p>
 
 ## -requirements
 <table>
@@ -216,4 +216,4 @@ typedef struct DOT11_STATISTICS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_STATISTICS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_STATISTICS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

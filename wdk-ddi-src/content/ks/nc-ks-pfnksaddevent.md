@@ -59,19 +59,19 @@ NTSTATUS AVStrMiniAddEvent(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP describing the event add request.</p>
 </dd>
 
-### -param <i>EventData</i> [in]
+### -param EventData [in]
 
 <dd>
 <p>Pointer to a <a href="stream.kseventdata">KSEVENTDATA</a> structure describing the notification method for this event.</p>
 </dd>
 
-### -param <i>EventEntry</i> [in]
+### -param EventEntry [in]
 
 <dd>
 <p>Pointer to an AVStream-generated <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a> structure describing how the event is triggered.</p>
@@ -82,11 +82,11 @@ NTSTATUS AVStrMiniAddEvent(
 <p><i>AVStrMiniAddEvent</i> should return STATUS_SUCCESS or an error specific to the event being enabled.  </p>
 
 ## -remarks
-<p>If you do not provide an add event handler, AVStream adds the event to the object list. See <a href="NULL">Event Handling in AVStream</a>.</p>
+<p>If you do not provide an add event handler, AVStream adds the event to the object list. See <a href="https://msdn.microsoft.com/7add2055-8d3f-432d-8aa1-44459ac197dd">Event Handling in AVStream</a>.</p>
 
 <p>Frequently this callback implements vendor-specific behavior and then calls <a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a> or <a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>. The minidriver passes the <i>EventEntry</i> pointer received here in calls to <i>KsFilterAddEvent</i> or <i>KsPinAddEvent</i>.</p>
 
-<p>The minidriver specifies this routine's address in the <b>AddHandler</b> member of a <a href="stream.ksevent_item">KSEVENT_ITEM</a> structure. <a href="NULL">Event Handling in AVStream</a> describes how the minidriver provides this structure to the class driver.</p>
+<p>The minidriver specifies this routine's address in the <b>AddHandler</b> member of a <a href="stream.ksevent_item">KSEVENT_ITEM</a> structure. <a href="https://msdn.microsoft.com/7add2055-8d3f-432d-8aa1-44459ac197dd">Event Handling in AVStream</a> describes how the minidriver provides this structure to the class driver.</p>
 
 <p>If an AVStream minidriver specifies <b>AddHandler</b> as non-NULL, AVStream does not add the item to the object's event list. If minidriver specifies an <b>AddHandler</b> and does not add the event to the object's event list through <b>KsDefaultAddEventHandler()</b> or a <b>Ks*AddEvent </b>call, the minidriver is responsible for cleaning up the event.</p>
 

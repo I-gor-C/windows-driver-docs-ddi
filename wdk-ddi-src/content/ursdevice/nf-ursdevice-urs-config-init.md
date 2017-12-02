@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="buses.urs_config">URS_CONFIG</a> structure. </p>
+<p>Initializes a <a href="..\ursdevice\ns-ursdevice--urs-config.md">URS_CONFIG</a> structure. </p>
 
 
 ## -syntax
@@ -57,19 +57,19 @@ FORCEINLINE void URS_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
-<p> A pointer to a <a href="buses.urs_config">URS_CONFIG</a> structure to initialize.</p>
+<p> A pointer to a <a href="..\ursdevice\ns-ursdevice--urs-config.md">URS_CONFIG</a> structure to initialize.</p>
 </dd>
 
-### -param <i>HostInterfaceType</i> [in]
+### -param HostInterfaceType [in]
 
 <dd>
-<p> A <a href="buses.urs_host_interface_type">URS_HOST_INTERFACE_TYPE</a> type value that indicates the type of host controller that the dual-role controller implements.</p>
+<p> A <a href="..\urstypes\ne-urstypes--urs-host-interface-type.md">URS_HOST_INTERFACE_TYPE</a> type value that indicates the type of host controller that the dual-role controller implements.</p>
 </dd>
 
-### -param <i>EvtUrsFilterRemoveResourceRequirements</i> [in]
+### -param EvtUrsFilterRemoveResourceRequirements [in]
 
 <dd>
 <p> A  pointer to a <a href="buses.evt_urs_device_filter_resource_requirements">EVT_URS_DEVICE_FILTER_RESOURCE_REQUIREMENTS</a> callback function that is implemented by the  client driver.</p>
@@ -107,10 +107,10 @@ FORCEINLINE void URS_CONFIG_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.urs_config">URS_CONFIG</a>
+<a href="..\ursdevice\ns-ursdevice--urs-config.md">URS_CONFIG</a>
 </dt>
 <dt>
-<a href="buses.ursdeviceinitialize">UrsDeviceInitialize</a>
+<a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a>
 </dt>
 </dl>
 <p> </p>

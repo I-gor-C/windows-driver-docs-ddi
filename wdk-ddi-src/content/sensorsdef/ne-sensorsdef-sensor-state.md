@@ -7,7 +7,7 @@ old-location: sensors\sensor_state.htm
 old-project: sensors
 ms.assetid: F1E869AE-2FAF-402F-9C50-58D81E0EFF69
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef enum _SENSOR_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="SensorState_Initializing"></a><a id="sensorstate_initializing"></a><a id="SENSORSTATE_INITIALIZING"></a><b>SensorState_Initializing</b>
+### -field SensorState_Initializing
 
 <dd>
 <p>Indicates that the sensor is initializing.</p>
 </dd>
 
-### -field <a id="SensorState_Idle"></a><a id="sensorstate_idle"></a><a id="SENSORSTATE_IDLE"></a><b>SensorState_Idle</b>
+### -field SensorState_Idle
 
 <dd>
 <p>Indicates that the sensor is idle</p>
 </dd>
 
-### -field <a id="SensorState_Active"></a><a id="sensorstate_active"></a><a id="SENSORSTATE_ACTIVE"></a><b>SensorState_Active</b>
+### -field SensorState_Active
 
 <dd>
 <p>Indicates that the sensor is active.</p>
 </dd>
 
-### -field <a id="SensorState_Error"></a><a id="sensorstate_error"></a><a id="SENSORSTATE_ERROR"></a><b>SensorState_Error</b>
+### -field SensorState_Error
 
 <dd>
 <p>Indicates that the sensor is in an error state.</p>

@@ -7,7 +7,7 @@ old-location: debugger\idebugfailureanalysis2_setextensioncommand.htm
 old-project: debugger
 ms.assetid: 741B3D1F-FA7B-4260-AD0C-461D76605CBA
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugFailureAnalysis2, SetExtensionCommand, IDebugFailureAnalysis2::SetExtensionCommand
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ FA_ENTRY SetExtensionCommand(
 ## -parameters
 <dl>
 
-### -param <i>Tag</i> 
+### -param Tag 
 
 <dd>
 <p>A value in the <a href="https://msdn.microsoft.com/library/windows/hardware/jj991810">FA_TAG</a> enumeration.</p>
 </dd>
 
-### -param <i>Extension</i> 
+### -param Extension 
 
 <dd>
 <p>A pointer to a null-terminated string that is the extension command. An example of an extension command is "!analyze -v".</p>
@@ -117,4 +117,4 @@ FA_ENTRY SetExtensionCommand(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFailureAnalysis2::SetExtensionCommand method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFailureAnalysis2::SetExtensionCommand method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

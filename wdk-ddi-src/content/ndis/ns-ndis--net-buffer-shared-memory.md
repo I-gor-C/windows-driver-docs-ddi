@@ -7,7 +7,7 @@ old-location: netvista\net_buffer_shared_memory.htm
 old-project: netvista
 ms.assetid: 492bb1cd-fc3e-4e85-9074-32ebbf1fb837
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NET_BUFFER_SHARED_MEMORY,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,32 +59,32 @@ typedef struct _NET_BUFFER_SHARED_MEMORY {
 ## -struct-fields
 <dl>
 
-### -field <b>NextSharedMemorySegment</b>
+### -field NextSharedMemorySegment
 
 <dd>
 <p>A pointer to the next NET_BUFFER_SHARED_MEMORY structure in a NULL-terminated linked list of such
      structures.</p>
 </dd>
 
-### -field <b>SharedMemoryFlags</b>
+### -field SharedMemoryFlags
 
 <dd>
 <p>A ULONG value that contains shared memory flags. This member is reserved for future use.</p>
 </dd>
 
-### -field <b>SharedMemoryHandle</b>
+### -field SharedMemoryHandle
 
 <dd>
 <p>An NDIS_HANDLE that contains an NDIS shared memory handle.</p>
 </dd>
 
-### -field <b>SharedMemoryOffset</b>
+### -field SharedMemoryOffset
 
 <dd>
 <p>A ULONG value that contains the offset, in bytes, of the shared memory.</p>
 </dd>
 
-### -field <b>SharedMemoryLength</b>
+### -field SharedMemoryLength
 
 <dd>
 <p>A ULONG value for the length, in bytes, of the shared memory segment.</p>
@@ -156,4 +156,4 @@ typedef struct _NET_BUFFER_SHARED_MEMORY {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER_SHARED_MEMORY structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER_SHARED_MEMORY structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

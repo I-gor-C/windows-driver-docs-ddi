@@ -56,7 +56,7 @@ typedef struct _IDARG_IN_QUERY_HWCURSOR {
 ## -struct-fields
 <dl>
 
-### -field <b>MonitorDescription</b>
+### -field MonitorDescription
 
 <dd>
 <p>
@@ -64,14 +64,14 @@ typedef struct _IDARG_IN_QUERY_HWCURSOR {
                  </p>
 </dd>
 
-### -field <b>TargetModeBufferInputCount</b>
+### -field TargetModeBufferInputCount
 
 <dd>
 <p>
                      [in] Size of the cursor shape buffer <b>pShapeBuffer</b></p>
 </dd>
 
-### -field <b>pTargetModes</b>
+### -field pTargetModes
 
 <dd>
 <p>

@@ -62,57 +62,57 @@ typedef enum _DXVA_SampleFormat {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVA_SampleFormatMask"></a><a id="dxva_sampleformatmask"></a><a id="DXVA_SAMPLEFORMATMASK"></a><b>DXVA_SampleFormatMask</b>
+### -field DXVA_SampleFormatMask
 
 <dd>
 <p>Specifies the sample format mask. The first 8 (0x000000FF) bits of a DWORD can be used to specify input sample format. 
 </p>
 </dd>
 
-### -field <a id="DXVA_SampleUnknown"></a><a id="dxva_sampleunknown"></a><a id="DXVA_SAMPLEUNKNOWN"></a><b>DXVA_SampleUnknown</b>
+### -field DXVA_SampleUnknown
 
 <dd>
 <p>Specifies that the sample format is unknown. 
 </p>
 </dd>
 
-### -field <a id="DXVA_SamplePreviousFrame"></a><a id="dxva_samplepreviousframe"></a><a id="DXVA_SAMPLEPREVIOUSFRAME"></a><b>DXVA_SamplePreviousFrame</b>
+### -field DXVA_SamplePreviousFrame
 
 <dd>
 <p>Specifies that the sample contains the previous output frame.</p>
 </dd>
 
-### -field <a id="DXVA_SampleProgressiveFrame"></a><a id="dxva_sampleprogressiveframe"></a><a id="DXVA_SAMPLEPROGRESSIVEFRAME"></a><b>DXVA_SampleProgressiveFrame</b>
+### -field DXVA_SampleProgressiveFrame
 
 <dd>
 <p>Specifies that the sample contains a progressive frame.</p>
 </dd>
 
-### -field <a id="DXVA_SampleFieldInterleavedEvenFirst"></a><a id="dxva_samplefieldinterleavedevenfirst"></a><a id="DXVA_SAMPLEFIELDINTERLEAVEDEVENFIRST"></a><b>DXVA_SampleFieldInterleavedEvenFirst</b>
+### -field DXVA_SampleFieldInterleavedEvenFirst
 
 <dd>
 <p>Specifies that the sample contains two interleaved fields; the even field is temporally first.</p>
 </dd>
 
-### -field <a id="DXVA_SampleFieldInterleavedOddFirst"></a><a id="dxva_samplefieldinterleavedoddfirst"></a><a id="DXVA_SAMPLEFIELDINTERLEAVEDODDFIRST"></a><b>DXVA_SampleFieldInterleavedOddFirst</b>
+### -field DXVA_SampleFieldInterleavedOddFirst
 
 <dd>
 <p>Specifies that the sample contains two interleaved fields; the odd field is temporally first.</p>
 </dd>
 
-### -field <a id="DXVA_SampleFieldSingleEven"></a><a id="dxva_samplefieldsingleeven"></a><a id="DXVA_SAMPLEFIELDSINGLEEVEN"></a><b>DXVA_SampleFieldSingleEven</b>
+### -field DXVA_SampleFieldSingleEven
 
 <dd>
 <p>Specifies that the sample contains an even interleaved field.</p>
 </dd>
 
-### -field <a id="DXVA_SampleFieldSingleOdd"></a><a id="dxva_samplefieldsingleodd"></a><a id="DXVA_SAMPLEFIELDSINGLEODD"></a><b>DXVA_SampleFieldSingleOdd</b>
+### -field DXVA_SampleFieldSingleOdd
 
 <dd>
 <p>Specifies that the sample contains an odd interleaved field.</p>
 </dd>
 
-### -field <a id="DXVA_SampleSubStream"></a><a id="dxva_samplesubstream"></a><a id="DXVA_SAMPLESUBSTREAM"></a><b>DXVA_SampleSubStream</b>
+### -field DXVA_SampleSubStream
 
 <dd>
 <p>Windows Server 2003 SP1 and later and Windows XP SP2 and later versions only.</p>

@@ -61,49 +61,49 @@ typedef struct _VPCI_PNP_ID {
 ## -struct-fields
 <dl>
 
-### -field <b>VendorID</b>
+### -field VendorID
 
 <dd>
 <p>PCI SIG-assigned identifier for the vendor of the device.</p>
 </dd>
 
-### -field <b>DeviceID</b>
+### -field DeviceID
 
 <dd>
 <p>Vendor-defined identifier for the device.</p>
 </dd>
 
-### -field <b>RevisionID</b>
+### -field RevisionID
 
 <dd>
 <p>Vendor-defined revision number.</p>
 </dd>
 
-### -field <b>ProgIf</b>
+### -field ProgIf
 
 <dd>
 <p>Programming Interface code.</p>
 </dd>
 
-### -field <b>SubClass</b>
+### -field SubClass
 
 <dd>
 <p>Vendor-defined subclass code.</p>
 </dd>
 
-### -field <b>BaseClass</b>
+### -field BaseClass
 
 <dd>
 <p>Vendor-defined base class code from the configuration space.</p>
 </dd>
 
-### -field <b>SubVendorID</b>
+### -field SubVendorID
 
 <dd>
 <p>PCI SIG-assigned identifier for the vendor of the subsystem.</p>
 </dd>
 
-### -field <b>SubSystemID</b>
+### -field SubSystemID
 
 <dd>
 <p>Vendor-defined subsystem identifier.</p>

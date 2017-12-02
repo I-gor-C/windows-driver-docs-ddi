@@ -58,19 +58,19 @@ NTSTATUS IddCxMonitorCreate(
 ## -parameters
 <dl>
 
-### -param <i>AdapterObject</i> [in]
+### -param AdapterObject [in]
 
 <dd>
 <p>The adapter object that is hosting the newly arrived monitor</p>
 </dd>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>Input arguments to the function</p>
 </dd>
 
-### -param <i>pOutArgs</i> [out]
+### -param pOutArgs [out]
 
 <dd>
 <p>Output arguments to the function</p>

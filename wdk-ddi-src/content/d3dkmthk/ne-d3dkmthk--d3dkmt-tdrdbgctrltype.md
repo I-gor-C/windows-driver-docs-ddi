@@ -65,57 +65,57 @@ typedef enum _D3DKMT_TDRDBGCTRLTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_TDRDBGCTRLTYPE_FORCETDR"></a><a id="d3dkmt_tdrdbgctrltype_forcetdr"></a><b>D3DKMT_TDRDBGCTRLTYPE_FORCETDR</b>
+### -field D3DKMT_TDRDBGCTRLTYPE_FORCETDR
 
 <dd>
 <p>Simulate a TDR.</p>
 </dd>
 
-### -field <a id="D3DKMT_TDRDBGCTRLTYPE_DISABLEBREAK"></a><a id="d3dkmt_tdrdbgctrltype_disablebreak"></a><b>D3DKMT_TDRDBGCTRLTYPE_DISABLEBREAK</b>
+### -field D3DKMT_TDRDBGCTRLTYPE_DISABLEBREAK
 
 <dd>
 <p>Disable DebugBreak on timeout.</p>
 </dd>
 
-### -field <a id="D3DKMT_TDRDBGCTRLTYPE_ENABLEBREAK"></a><a id="d3dkmt_tdrdbgctrltype_enablebreak"></a><b>D3DKMT_TDRDBGCTRLTYPE_ENABLEBREAK</b>
+### -field D3DKMT_TDRDBGCTRLTYPE_ENABLEBREAK
 
 <dd>
 <p>Enable DebugBreak on timeout.</p>
 </dd>
 
-### -field <a id="D3DKMT_TDRDBGCTRLTYPE_UNCONDITIONAL"></a><a id="d3dkmt_tdrdbgctrltype_unconditional"></a><b>D3DKMT_TDRDBGCTRLTYPE_UNCONDITIONAL</b>
+### -field D3DKMT_TDRDBGCTRLTYPE_UNCONDITIONAL
 
 <dd>
 <p>Disables all safety conditions (e.g. check for consecutive recoveries).</p>
 </dd>
 
-### -field <a id="D3DKMT_TDRDBGCTRLTYPE_VSYNCTDR"></a><a id="d3dkmt_tdrdbgctrltype_vsynctdr"></a><b>D3DKMT_TDRDBGCTRLTYPE_VSYNCTDR</b>
+### -field D3DKMT_TDRDBGCTRLTYPE_VSYNCTDR
 
 <dd>
 <p>Simulate a Vsync TDR.</p>
 </dd>
 
-### -field <a id="D3DKMT_TDRDBGCTRLTYPE_GPUTDR"></a><a id="d3dkmt_tdrdbgctrltype_gputdr"></a><b>D3DKMT_TDRDBGCTRLTYPE_GPUTDR</b>
+### -field D3DKMT_TDRDBGCTRLTYPE_GPUTDR
 
 <dd>
 <p>Simulate a GPU TDR.</p>
 </dd>
 
-### -field <a id="D3DKMT_TDRDBGCTRLTYPE_FORCEDODTDR"></a><a id="d3dkmt_tdrdbgctrltype_forcedodtdr"></a><b>D3DKMT_TDRDBGCTRLTYPE_FORCEDODTDR</b>
+### -field D3DKMT_TDRDBGCTRLTYPE_FORCEDODTDR
 
 <dd>
 <p>Simulate a display-only present TDR.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="D3DKMT_TDRDBGCTRLTYPE_FORCEDODVSYNCTDR"></a><a id="d3dkmt_tdrdbgctrltype_forcedodvsynctdr"></a><b>D3DKMT_TDRDBGCTRLTYPE_FORCEDODVSYNCTDR</b>
+### -field D3DKMT_TDRDBGCTRLTYPE_FORCEDODVSYNCTDR
 
 <dd>
 <p>Simulate a display-only VSync TDR.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="D3DKMT_TDRDBGCTRLTYPE_ENGINETDR"></a><a id="d3dkmt_tdrdbgctrltype_enginetdr"></a><b>D3DKMT_TDRDBGCTRLTYPE_ENGINETDR</b>
+### -field D3DKMT_TDRDBGCTRLTYPE_ENGINETDR
 
 <dd>
 <p>Simulate an engine TDR.</p>

@@ -61,7 +61,7 @@ typedef struct IDDCX_METADATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -69,7 +69,7 @@ typedef struct IDDCX_METADATA {
                  </p>
 </dd>
 
-### -field <b>PresentationFrameNumber</b>
+### -field PresentationFrameNumber
 
 <dd>
 <p>
@@ -77,7 +77,7 @@ typedef struct IDDCX_METADATA {
                  </p>
 </dd>
 
-### -field <b>DirtyRectCount</b>
+### -field DirtyRectCount
 
 <dd>
 <p>
@@ -88,7 +88,7 @@ typedef struct IDDCX_METADATA {
 <div> </div>
 </dd>
 
-### -field <b>MoveRegionCount</b>
+### -field MoveRegionCount
 
 <dd>
 <p>
@@ -99,7 +99,7 @@ typedef struct IDDCX_METADATA {
 <div> </div>
 </dd>
 
-### -field <b>HwProtectedSurface</b>
+### -field HwProtectedSurface
 
 <dd>
 <p>
@@ -107,7 +107,7 @@ typedef struct IDDCX_METADATA {
                  </p>
 </dd>
 
-### -field <b>PresentDisplayQPCTime</b>
+### -field PresentDisplayQPCTime
 
 <dd>
 <p>
@@ -115,7 +115,7 @@ typedef struct IDDCX_METADATA {
                  </p>
 </dd>
 
-### -field <b>pSurface</b>
+### -field pSurface
 
 <dd>
 <p>

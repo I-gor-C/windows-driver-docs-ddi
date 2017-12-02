@@ -57,13 +57,13 @@ HRESULT GetNewEmptyPart(
 ## -parameters
 <dl>
 
-### -param <i>uri</i> [in]
+### -param uri [in]
 
 <dd>
 <p>The URI for the new part to be created.</p>
 </dd>
 
-### -param <i>riid</i> [in]
+### -param riid [in]
 
 <dd>
 <p>A reference identifier (REFIID) for one of the following interfaces: </p>
@@ -106,13 +106,13 @@ HRESULT GetNewEmptyPart(
 </ul>
 </dd>
 
-### -param <i>ppNewObject</i> [out]
+### -param ppNewObject [out]
 
 <dd>
 <p>A pointer to the new object to be created.</p>
 </dd>
 
-### -param <i>ppWriteStream</i> [out]
+### -param ppWriteStream [out]
 
 <dd>
 <p>A data stream object that the part will be written to. Each part is associated with a data stream object.</p>

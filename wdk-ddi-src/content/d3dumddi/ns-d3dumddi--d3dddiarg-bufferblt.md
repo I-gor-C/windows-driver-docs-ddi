@@ -57,25 +57,25 @@ typedef struct _D3DDDIARG_BUFFERBLT {
 ## -struct-fields
 <dl>
 
-### -field <b>hDstResource</b>
+### -field hDstResource
 
 <dd>
 <p>[in] A handle to the destination vertex or index buffer.</p>
 </dd>
 
-### -field <b>hSrcResource</b>
+### -field hSrcResource
 
 <dd>
 <p>[in] A handle to the source vertex or index buffer.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>[in] The offset, in bytes, of the destination buffer that the copy should be directed into.</p>
 </dd>
 
-### -field <b>SrcRange</b>
+### -field SrcRange
 
 <dd>
 <p>[in] A D3DDDIRANGE structure that indicates what range of the source buffer should be copied. This D3DDDIRANGE specifies an offset and size, in bytes.</p>

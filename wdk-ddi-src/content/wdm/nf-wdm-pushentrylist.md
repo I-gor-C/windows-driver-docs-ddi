@@ -56,13 +56,13 @@ VOID PushEntryList(
 ## -parameters
 <dl>
 
-### -param <i>ListHead</i> [in, out]
+### -param ListHead [in, out]
 
 <dd>
 <p>Pointer to the <a href="..\wdm\ns-wdm--single-list-entry.md">SINGLE_LIST_ENTRY</a> structure that serves as the list header.</p>
 </dd>
 
-### -param <i>Entry</i> [in, out]
+### -param Entry [in, out]
 
 <dd>
 <p>Pointer to SINGLE_LIST_ENTRY structure that represents the entry to be inserted on the list.</p>

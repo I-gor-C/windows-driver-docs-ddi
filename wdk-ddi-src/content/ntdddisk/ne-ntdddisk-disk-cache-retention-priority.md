@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="EqualPriority"></a><a id="equalpriority"></a><a id="EQUALPRIORITY"></a><b>EqualPriority</b>
+### -field EqualPriority
 
 <dd>
 <p>Indicates that no data is held in the cache on a preferential basis. All types of data have equal access to cache memory. </p>
 </dd>
 
-### -field <a id="KeepPrefetchedData"></a><a id="keepprefetcheddata"></a><a id="KEEPPREFETCHEDDATA"></a><b>KeepPrefetchedData</b>
+### -field KeepPrefetchedData
 
 <dd>
 <p>Indicates that a preference is to be given to prefetched data. </p>
 </dd>
 
-### -field <a id="KeepReadData"></a><a id="keepreaddata"></a><a id="KEEPREADDATA"></a><b>KeepReadData</b>
+### -field KeepReadData
 
 <dd>
 <p>Indicates that a preference is to be given to data cached from a READ operation.</p>

@@ -55,13 +55,13 @@ NTSTATUS APIENTRY DXGKDDI_QUERYCONNECTIONCHANGE(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>A handle that identifies the adapter.</p>
 </dd>
 
-### -param <i>pQueryConnectionChange</i> [in]
+### -param pQueryConnectionChange [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryconnectionchange.md">DXGKARG_QUERYCONNECTIONCHANGE</a> structure that provides the OS allocated buffer into which the oldest change should be copied by the driver. The oldest change is judged by lowest ConnectionChangeId.</p>

@@ -56,19 +56,19 @@ typedef enum _SRIOV_PF_EVENT {
 ## -enum-fields
 <dl>
 
-### -field <a id="SriovEventPfQueryStopDevice"></a><a id="srioveventpfquerystopdevice"></a><a id="SRIOVEVENTPFQUERYSTOPDEVICE"></a><b>SriovEventPfQueryStopDevice</b>
+### -field SriovEventPfQueryStopDevice
 
 <dd>
 <p>The SR-IOV device is stopped.</p>
 </dd>
 
-### -field <a id="SriovEventPfRestart"></a><a id="srioveventpfrestart"></a><a id="SRIOVEVENTPFRESTART"></a><b>SriovEventPfRestart</b>
+### -field SriovEventPfRestart
 
 <dd>
 <p>The SR-IOV device is restarted</p>
 </dd>
 
-### -field <a id="SriovEventPfMaximum"></a><a id="srioveventpfmaximum"></a><a id="SRIOVEVENTPFMAXIMUM"></a><b>SriovEventPfMaximum</b>
+### -field SriovEventPfMaximum
 
 <dd>
 <p>Reserved.</p>

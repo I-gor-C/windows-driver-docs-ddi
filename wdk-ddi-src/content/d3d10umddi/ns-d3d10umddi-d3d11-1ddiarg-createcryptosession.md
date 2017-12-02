@@ -56,7 +56,7 @@ typedef struct D3D11_1DDIARG_CREATECRYPTOSESSION {
 ## -struct-fields
 <dl>
 
-### -field <b>CryptoType</b>
+### -field CryptoType
 
 <dd>
 <p>a GUID that indicates the encryption type, which the driver uses for the encryption session that the driver's <a href="display.createcryptosession1">CreateCryptoSession</a> function creates. The GUID can be one of the following:</p>
@@ -68,7 +68,7 @@ typedef struct D3D11_1DDIARG_CREATECRYPTOSESSION {
 <tr>
 <td width="40%"><a id="D3D11_1DDI_CRYPTO_TYPE_AES128_CTR"></a><a id="d3d11_1ddi_crypto_type_aes128_ctr"></a><dl>
 
-### -field <b>D3D11_1DDI_CRYPTO_TYPE_AES128_CTR</b>
+### -field D3D11_1DDI_CRYPTO_TYPE_AES128_CTR
 
 </dl>
 </td>
@@ -79,7 +79,7 @@ typedef struct D3D11_1DDIARG_CREATECRYPTOSESSION {
 <tr>
 <td width="40%"><a id="D3D11_1DDI_CRYPTO_TYPE_PROPRIETARY"></a><a id="d3d11_1ddi_crypto_type_proprietary"></a><dl>
 
-### -field <b>D3D11_1DDI_CRYPTO_TYPE_PROPRIETARY</b>
+### -field D3D11_1DDI_CRYPTO_TYPE_PROPRIETARY
 
 </dl>
 </td>
@@ -91,13 +91,13 @@ typedef struct D3D11_1DDIARG_CREATECRYPTOSESSION {
 <p> </p>
 </dd>
 
-### -field <b>DecodeProfile</b>
+### -field DecodeProfile
 
 <dd>
 <p>A GUID that specifies the DirectX Video Acceleration (DXVA) decode profile that the driver uses for the encryption session that the driver's <a href="display.createcryptosession1">CreateCryptoSession</a> function creates. For a list of possible values, see <b>CreateCryptoSession</b>. If DXVA decoding will not be used, set this parameter to <b>NULL_GUID</b>.</p>
 </dd>
 
-### -field <b>KeyExchangeType</b>
+### -field KeyExchangeType
 
 <dd>
 <p>A GUID that specifies the type of key exchange.
@@ -110,7 +110,7 @@ The following GUID is defined.</p>
 <tr>
 <td width="40%"><a id="D3D11_1DDI_KEY_EXCHANGE_RSAES_OAEP"></a><a id="d3d11_1ddi_key_exchange_rsaes_oaep"></a><dl>
 
-### -field <b>D3D11_1DDI_KEY_EXCHANGE_RSAES_OAEP</b>
+### -field D3D11_1DDI_KEY_EXCHANGE_RSAES_OAEP
 
 </dl>
 </td>
@@ -121,7 +121,7 @@ The following GUID is defined.</p>
 <tr>
 <td width="40%"><a id="D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION"></a><a id="d3dwddm2_0ddi_key_exchange_hw_protection"></a><dl>
 
-### -field <b>D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION</b>
+### -field D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION
 
 </dl>
 </td>

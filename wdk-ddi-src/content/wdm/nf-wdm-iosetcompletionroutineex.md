@@ -61,43 +61,43 @@ NTSTATUS IoSetCompletionRoutineEx(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the driver's device object.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>Pointer to the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> that the driver is processing.</p>
+<p>Pointer to the <a href="..\wdm\ns-wdm--irp.md">IRP</a> that the driver is processing.</p>
 </dd>
 
-### -param <i>CompletionRoutine</i> [in]
+### -param CompletionRoutine [in]
 
 <dd>
 <p>Specifies the entry point for the driver-supplied <a href="..\wdm\nc-wdm-io-completion-routine.md">IoCompletion</a> routine, which is called when the next-lower driver completes the packet.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Pointer to a driver-determined context to pass to the <i>IoCompletion</i> routine. Context information must be stored in nonpaged memory, because the <i>IoCompletion</i> routine is called at IRQL &lt;= DISPATCH_LEVEL.</p>
 </dd>
 
-### -param <i>InvokeOnSuccess</i> [in]
+### -param InvokeOnSuccess [in]
 
 <dd>
 <p>Specifies whether the completion routine is called if the IRP is completed with a success status value in the IRP's <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure, based on results of the NT_SUCCESS macro (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS values</a>).</p>
 </dd>
 
-### -param <i>InvokeOnError</i> [in]
+### -param InvokeOnError [in]
 
 <dd>
 <p>Specifies whether the completion routine is called if the IRP is completed with a nonsuccess status value in the IRP's <b>IO_STATUS_BLOCK</b> structure.</p>
 </dd>
 
-### -param <i>InvokeOnCancel</i> [in]
+### -param InvokeOnCancel [in]
 
 <dd>
 <p>Specifies whether the completion routine is called if a driver or the kernel has called <a href="..\wdm\nf-wdm-iocancelirp.md">IoCancelIrp</a> to cancel the IRP.</p>
@@ -199,7 +199,7 @@ NTSTATUS IoSetCompletionRoutineEx(
 <a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>

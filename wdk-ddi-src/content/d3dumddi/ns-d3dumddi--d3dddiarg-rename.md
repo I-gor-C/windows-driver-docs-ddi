@@ -59,25 +59,25 @@ typedef struct _D3DDDIARG_RENAME {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A handle to the resource to be renamed. </p>
 </dd>
 
-### -field <b>SubResourceIndex</b>
+### -field SubResourceIndex
 
 <dd>
 <p>[in] The zero-based index into the resource that <b>hResource</b> specifies. This index indicates the subresource or surface to be renamed.</p>
 </dd>
 
-### -field <b>hCookie</b>
+### -field hCookie
 
 <dd>
 <p>[in] A handle that represents the renamed surface instance that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lockasync.md">LockAsync</a> function previously returned. </p>
 </dd>
 
-### -field <b>GpuVirtualAddress</b>
+### -field GpuVirtualAddress
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>

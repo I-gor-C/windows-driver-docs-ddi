@@ -54,7 +54,7 @@ void Notify(
 ## -parameters
 <dl>
 
-### -param <i>pServiceGroup (optional)</i> [in, optional]
+### -param pServiceGroup (optional) [in, optional]
 
 <dd>
 <p>Pointer to an <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> object. This parameter is optional and can be specified as <b>NULL</b>. For more information, see the following Remarks section.</p>
@@ -79,7 +79,7 @@ void Notify(
 
 <p>When an adapter driver installs an ISR, it submits a <i>ServiceContext</i> parameter along with the ISR's entry point (for details, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559930">Providing ISR Context Information</a>). When the interrupt occurs, the operating system calls the ISR and passes <i>ServiceContext</i> as a call parameter to the ISR. Although the meaning of the <i>ServiceContext</i> parameter is known only to the driver developer, it is typically a pointer to the miniport object. The ISR uses this pointer to access information about the miniport object.</p>
 
-<p>The <i>pServiceGroup</i> parameter follows the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>pServiceGroup</i> parameter follows the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

@@ -56,19 +56,19 @@ typedef struct _FEATURE_DATA_DVD_CPRM {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>CPRMVersion</b>
+### -field CPRMVersion
 
 <dd>
 <p>Contains the CPRM version number. Must be set to 1. </p>

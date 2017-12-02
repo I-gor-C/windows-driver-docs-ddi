@@ -86,25 +86,25 @@ typedef struct _HYBRID_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure. Set to HYBRID_REQUEST_INFO_STRUCTURE_VERSION.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure. Set to <b>sizeof</b>(HYBRID_INFORMATION).</p>
 </dd>
 
-### -field <b>HybridSupported</b>
+### -field HybridSupported
 
 <dd>
 <p>Miniport supports for hybrid disks. Set to <b>TRUE</b> if hybrid disks are supported. Otherwise, <b>FALSE</b>.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The status of the hybrid disk cache. This contains one of the following values.</p>
@@ -116,7 +116,7 @@ typedef struct _HYBRID_INFORMATION {
 <tr>
 <td width="40%"><a id="NvCacheStatusUnknown"></a><a id="nvcachestatusunknown"></a><a id="NVCACHESTATUSUNKNOWN"></a><dl>
 
-### -field <b>NvCacheStatusUnknown</b>
+### -field NvCacheStatusUnknown
 
 </dl>
 </td>
@@ -127,7 +127,7 @@ typedef struct _HYBRID_INFORMATION {
 <tr>
 <td width="40%"><a id="NvCacheStatusDisabling"></a><a id="nvcachestatusdisabling"></a><a id="NVCACHESTATUSDISABLING"></a><dl>
 
-### -field <b>NvCacheStatusDisabling</b>
+### -field NvCacheStatusDisabling
 
 </dl>
 </td>
@@ -138,7 +138,7 @@ typedef struct _HYBRID_INFORMATION {
 <tr>
 <td width="40%"><a id="NvCacheStatusDisabled"></a><a id="nvcachestatusdisabled"></a><a id="NVCACHESTATUSDISABLED"></a><dl>
 
-### -field <b>NvCacheStatusDisabled</b>
+### -field NvCacheStatusDisabled
 
 </dl>
 </td>
@@ -149,7 +149,7 @@ typedef struct _HYBRID_INFORMATION {
 <tr>
 <td width="40%"><a id="NvCacheStatusEnabled"></a><a id="nvcachestatusenabled"></a><a id="NVCACHESTATUSENABLED"></a><dl>
 
-### -field <b>NvCacheStatusEnabled</b>
+### -field NvCacheStatusEnabled
 
 </dl>
 </td>
@@ -161,7 +161,7 @@ typedef struct _HYBRID_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>CacheTypeEffective</b>
+### -field CacheTypeEffective
 
 <dd>
 <p>The non-volatile caching type currently set for hybrid disk. The effective cache type is one of the following values.</p>
@@ -173,7 +173,7 @@ typedef struct _HYBRID_INFORMATION {
 <tr>
 <td width="40%"><a id="NvCacheTypeUnknown"></a><a id="nvcachetypeunknown"></a><a id="NVCACHETYPEUNKNOWN"></a><dl>
 
-### -field <b>NvCacheTypeUnknown</b>
+### -field NvCacheTypeUnknown
 
 </dl>
 </td>
@@ -184,7 +184,7 @@ typedef struct _HYBRID_INFORMATION {
 <tr>
 <td width="40%"><a id="NvCacheNone"></a><a id="nvcachenone"></a><a id="NVCACHENONE"></a><dl>
 
-### -field <b>NvCacheNone</b>
+### -field NvCacheNone
 
 </dl>
 </td>
@@ -195,7 +195,7 @@ typedef struct _HYBRID_INFORMATION {
 <tr>
 <td width="40%"><a id="NvCacheTypeWriteBack"></a><a id="nvcachetypewriteback"></a><a id="NVCACHETYPEWRITEBACK"></a><dl>
 
-### -field <b>NvCacheTypeWriteBack</b>
+### -field NvCacheTypeWriteBack
 
 </dl>
 </td>
@@ -206,7 +206,7 @@ typedef struct _HYBRID_INFORMATION {
 <tr>
 <td width="40%"><a id="NvCacheTypeWriteThrough"></a><a id="nvcachetypewritethrough"></a><a id="NVCACHETYPEWRITETHROUGH"></a><dl>
 
-### -field <b>NvCacheTypeWriteThrough</b>
+### -field NvCacheTypeWriteThrough
 
 </dl>
 </td>
@@ -218,55 +218,55 @@ typedef struct _HYBRID_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>CacheTypeDefault</b>
+### -field CacheTypeDefault
 
 <dd>
 <p>The default caching type used by the hybrid disk. The possible values are the same as for <b>CacheTypeEffective</b>.</p>
 </dd>
 
-### -field <b>FractionBase</b>
+### -field FractionBase
 
 <dd>
 <p>The base value for fractional fields in this structure. This value is set to 255.</p>
 </dd>
 
-### -field <b>CacheSize</b>
+### -field CacheSize
 
 <dd>
 <p>The size, in LBAs, of the non-volatile on the hybrid disk.</p>
 </dd>
 
-### -field <b>Attributes</b>
+### -field Attributes
 
 <dd>
 <p>The hybrid disk attributes.</p>
 <dl>
 
-### -field <b>WriteCacheChangeable</b>
+### -field WriteCacheChangeable
 
 <dd>
 <p>Support for changes in write caching policy. The value is 1 policy changes are allowed. Otherwise, changes are ignored.</p>
 </dd>
 
-### -field <b>WriteThroughIoSupported</b>
+### -field WriteThroughIoSupported
 
 <dd>
 <p>Support for individual write operations when write-through caching is used. The value is 1 if individual writes are supported. Otherwise, the values is 0.</p>
 </dd>
 
-### -field <b>FlushCacheSupported</b>
+### -field FlushCacheSupported
 
 <dd>
 <p>Support for non-volatile cache flush. The value is 1 if flushes are supported. Otherwise, the value is 0.</p>
 </dd>
 
-### -field <b>Removable</b>
+### -field Removable
 
 <dd>
 <p>Support of removal of the non-volatile cache from the disk. The value is 1 if the cache is removable. Otherwise, the value is 0.</p>
 </dd>
 
-### -field <b>ReservedBits</b>
+### -field ReservedBits
 
 <dd>
 <p>Reserved.</p>
@@ -274,91 +274,91 @@ typedef struct _HYBRID_INFORMATION {
 </dl>
 </dd>
 
-### -field <b>Priorities</b>
+### -field Priorities
 
 <dd>
 <p>Priority settings for the hybrid disk.</p>
 <dl>
 
-### -field <b>PriorityLevelCount</b>
+### -field PriorityLevelCount
 
 <dd>
 <p>The number of priority levels supported by the cache. Currently, a non-zero value indicates support for all priorities.</p>
 </dd>
 
-### -field <b>MaxPriorityBehavior</b>
+### -field MaxPriorityBehavior
 
 <dd>
 <p>If <b>TRUE</b>, the disk I/O can fail at maximum priority if the cache is full.  Otherwise, if <b>FALSE</b>, the operation will complete to disk.</p>
 </dd>
 
-### -field <b>DirtyThresholdLow</b>
+### -field DirtyThresholdLow
 
 <dd>
 <p>The low threshold for a cache flush. This value is ratio in the range of <b>FractionBase</b>.</p>
 </dd>
 
-### -field <b>DirtyThresholdHigh</b>
+### -field DirtyThresholdHigh
 
 <dd>
 <p>The low threshold for a cache flush. This value is ratio in the range of <b>FractionBase</b>.</p>
 </dd>
 
-### -field <b>SupportedCommands</b>
+### -field SupportedCommands
 
 <dd>
 <p>Support for non-volatile cache specific commands to the hybrid disk.</p>
 <dl>
 
-### -field <b>CacheDisable</b>
+### -field CacheDisable
 
 <dd>
 <p>Support for changes in write caching policy. The value is 1 policy changes are allowed. Otherwise, changes are ignored.</p>
 </dd>
 
-### -field <b>SetDirtyThreshold</b>
+### -field SetDirtyThreshold
 
 <dd>
 <p>Support for individual write operations when write-through caching is used. The value is 1 if individual writes are supported. Otherwise, the values is 0.</p>
 </dd>
 
-### -field <b>PriorityDemoteBySize</b>
+### -field PriorityDemoteBySize
 
 <dd>
 <p>Support for non-volatile cache flush. The value is 1 if flushes are supported. Otherwise, the value is 0.</p>
 </dd>
 
-### -field <b>PriorityChangeByLbaRange</b>
+### -field PriorityChangeByLbaRange
 
 <dd>
 <p>Support for LBA range priority changes. The value is 1 if priority changes  are supported. Otherwise, the value is 0.</p>
 </dd>
 
-### -field <b>Evict</b>
+### -field Evict
 
 <dd>
 <p>Support of removal of the non-volatile cache from the disk. The value is 1 if the cache is removable. Otherwise, the value is 0.</p>
 </dd>
 
-### -field <b>ReservedBits</b>
+### -field ReservedBits
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>MaxEvictCommands</b>
+### -field MaxEvictCommands
 
 <dd>
 <p>The maximum concurrent Evict commands allowed that are outstanding. This value is valid when <b>Evict</b> is set to 1.</p>
 </dd>
 
-### -field <b>MaxLbaRangeCountForEvict</b>
+### -field MaxLbaRangeCountForEvict
 
 <dd>
 <p>The maximum number of LBA ranges possible to associate with an Evict command. This value is valid when <b>Evict</b> is set to 1.</p>
 </dd>
 
-### -field <b>MaxLbaRangeCountForChangeLba</b>
+### -field MaxLbaRangeCountForChangeLba
 
 <dd>
 <p>The maximum number of LBA ranges possible to associate with a Priority Change command. This value is valid when <b>PriorityChangeByLbaRange</b> is set to 1.</p>
@@ -366,7 +366,7 @@ typedef struct _HYBRID_INFORMATION {
 </dl>
 </dd>
 
-### -field <b>Priority</b>
+### -field Priority
 
 <dd>
 <p>An array of priority level descriptors. The number of descriptors present in the array is set in <b>PriorityLevelCount</b>.</p>

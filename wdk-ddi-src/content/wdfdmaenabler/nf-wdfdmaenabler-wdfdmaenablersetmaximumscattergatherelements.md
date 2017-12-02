@@ -7,7 +7,7 @@ old-location: wdf\wdfdmaenablersetmaximumscattergatherelements.htm
 old-project: wdf
 ms.assetid: fdfcb8bc-bc42-4c34-ae19-b40401bea41e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDmaEnablerSetMaximumScatterGatherElements
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ VOID WdfDmaEnablerSetMaximumScatterGatherElements(
 ## -parameters
 <dl>
 
-### -param <i>DmaEnabler</i> [in]
+### -param DmaEnabler [in]
 
 <dd>
 <p>A handle to a DMA enabler object that the driver obtained from a previous call to <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>. </p>
 </dd>
 
-### -param <i>MaximumFragments</i> [in]
+### -param MaximumFragments [in]
 
 <dd>
 <p>The maximum number of scatter/gather elements that the driver and device can support.   </p>
@@ -155,4 +155,4 @@ VOID WdfDmaEnablerSetMaximumScatterGatherElements(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaEnablerSetMaximumScatterGatherElements method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaEnablerSetMaximumScatterGatherElements method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

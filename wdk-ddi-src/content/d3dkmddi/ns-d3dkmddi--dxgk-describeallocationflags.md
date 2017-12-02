@@ -60,21 +60,21 @@ typedef struct _DXGK_DESCRIBEALLOCATIONFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>CheckDisplayMode</b>
+### -field CheckDisplayMode
 
 <dd>
 <p>[in] This member is reserved.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero. </p>
 <p>Setting this member to zero is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] A member in the union that <b>DXGK_DESCRIBEALLOCATIONFLAGS</b> contains that can hold a 32-bit value that identifies the type of allocation.</p>

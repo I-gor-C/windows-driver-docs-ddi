@@ -49,6 +49,7 @@ For the programming guide, see [Universal Serial Bus(USB)](https://docs.microsof
 | [UCM_CONNECTOR_PD_CONFIG_INIT function](..\ucmmanager\nf-ucmmanager-ucm-connector-pd-config-init.md) | Initializes a UCM_CONNECTOR_PD_CONFIG structure. |
 | [UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS_INIT function](..\ucmmanager\nf-ucmmanager-ucm-connector-pd-conn-state-changed-params-init.md) | Initializes a UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS structure. |
 | [UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT function](..\ucmmanager\nf-ucmmanager-ucm-connector-typec-attach-params-init.md) | Initializes a UCM_CONNECTOR_TYPEC_ATTACH_PARAMS structure. |
+| [UCM_CONNECTOR_TYPEC_CONFIG_INIT function](..\ucmmanager\nf-ucmmanager-ucm-connector-typec-config-init.md) | Initializes the UCM_CONNECTOR_TYPEC_CONFIG structure. |
 | [UCM_MANAGER_CONFIG_INIT function](..\ucmmanager\nf-ucmmanager-ucm-manager-config-init.md) | Initializes a UCM_MANAGER_CONFIG structure. |
 | [UCM_PD_POWER_DATA_OBJECT_GET_TYPE function](..\ucmtypes\nf-ucmtypes-ucm-pd-power-data-object-get-type.md) | Retrieves the type of Power Data Object from the UCM_PD_POWER_DATA_OBJECT structure. |
 | [UCM_PD_POWER_DATA_OBJECT_INIT_BATTERY function](..\ucmtypes\nf-ucmtypes-ucm-pd-power-data-object-init-battery.md) | Initializes a UCM_PD_POWER_DATA_OBJECT structure as a Battery Supply type Power Data Object. |
@@ -219,7 +220,7 @@ For the programming guide, see [Universal Serial Bus(USB)](https://docs.microsof
 | [USBC_START_DEVICE_CALLBACK callback](..\usbbusif\nc-usbbusif-usbc-start-device-callback.md) | The USBC_START_DEVICE_CALLBACK routine allows a USB client driver to provide a custom definition of the interface collections on a device. |
 | [USBFN_GET_ATTACH_ACTION callback](..\usbfnattach\nc-usbfnattach-usbfn-get-attach-action.md) | The filter driver's implementation that gets invoked when charger is attached to the port. |
 | [USBFN_GET_ATTACH_ACTION_ABORT callback](..\usbfnattach\nc-usbfnattach-usbfn-get-attach-action-abort.md) | The filter driver's implementation to abort an attach-detect operation. |
-| [USBFN_SET_DEVICE_STATE callback](..\usbfnattach\nc-usbfnattach-usbfn-set-device-state.md) | The filter driver's implementation to abort an attach-detect operation. |
+| [USBFN_SET_DEVICE_STATE callback](..\usbfnattach\nc-usbfnattach-usbfn-set-device-state.md) | The filter driver's implementation to set the device state and operating bus speed. |
 
 ## Structures
 
@@ -313,6 +314,7 @@ For the programming guide, see [Universal Serial Bus(USB)](https://docs.microsof
 | [URB_CONTROL_TRANSFER_EX structure](..\usb\ns-usb--urb-control-transfer-ex.md) | The _URB_CONTROL_TRANSFER_EX structure is used by USB client drivers to transfer data to or from a control pipe, with a timeout that limits the acceptable transfer time. |
 | [URB_CONTROL_VENDOR_OR_CLASS_REQUEST structure](..\usb\ns-usb--urb-control-vendor-or-class-request.md) | The _URB_CONTROL_VENDOR_OR_CLASS_REQUEST structure is used by USB client drivers to issue a vendor or class-specific command to a device, interface, endpoint, or other device-defined target. |
 | [URB_GET_CURRENT_FRAME_NUMBER structure](..\usb\ns-usb--urb-get-current-frame-number.md) | The _URB_GET_CURRENT_FRAME_NUMBER structure is used by USB client drivers to retrieve the current frame number. |
+| [URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS structure](..\usb\ns-usb--urb-get-isoch-pipe-transfer-path-delays.md) | The _URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS structure is used by USB client drivers to retrieve delays associated with isochronous transfer programming in the host controller and transfer completion so that the client driver can ensure that the device gets the isochronous packets in time. |
 | [URB_HEADER structure](..\usb\ns-usb--urb-header.md) | The _URB_HEADER structure is used by USB client drivers to provide basic information about the request being sent to the host controller driver. |
 | [URB_ISOCH_TRANSFER structure](..\usb\ns-usb--urb-isoch-transfer.md) | The _URB_ISOCH_TRANSFER structure is used by USB client drivers to send data to or retrieve data from an isochronous transfer pipe. |
 | [URB_OPEN_STATIC_STREAMS structure](..\usb\ns-usb--urb-open-static-streams.md) | The _URB_OPEN_STATIC_STREAMS structure is used by a USB client driver to open streams in the specified bulk endpoint. |
@@ -411,6 +413,7 @@ For the programming guide, see [Universal Serial Bus(USB)](https://docs.microsof
 
 | Title   | Description   |
 | ---- |:---- |
+| [CONTROLLER_TYPE enumeration](..\ucxroothub\ne-ucxroothub--controller-type.md) | This enumeration specifies if the USB host controller is an eXtensible Host Controller Interface (xHCI) controller. |
 | [ENDPOINT_RESET_FLAGS enumeration](..\ucxendpoint\ne-ucxendpoint--endpoint-reset-flags.md) | Defines parameters for a request to reset an endpoint. |
 | [TRISTATE enumeration](..\ucxroothub\ne-ucxroothub--tristate.md) | The TRISTATE enumeration indicates generic state values for true or false. |
 | [UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE enumeration](..\ucmtcpciportcontroller\ne-ucmtcpciportcontroller--ucmtcpci-port-controller-alert-type.md) | Defines generic alert values that are used to indicate the type of hardware alert received on the port controller. |

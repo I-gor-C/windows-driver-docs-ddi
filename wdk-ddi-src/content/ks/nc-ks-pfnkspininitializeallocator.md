@@ -59,19 +59,19 @@ NTSTATUS AVStrMiniInitializeAllocator(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>Pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure describing the pin with which the allocator is to be associated.</p>
 </dd>
 
-### -param <i>AllocatorFraming</i> [in]
+### -param AllocatorFraming [in]
 
 <dd>
 <p>Pointer to a <a href="stream.ksallocator_framing">KSALLOCATOR_FRAMING</a> structure describing the framing requirements that the allocator should use.</p>
 </dd>
 
-### -param <i>Context</i> [out]
+### -param Context [out]
 
 <dd>
 <p>Pointer to a context for the allocator that will be passed as a parameter to the other routines for this structure. For example, the driver could store pin or allocator framing structures for later reference by the other callback routines. Note that other routines for <a href="..\ks\ns-ks--ksallocator-dispatch.md">KSALLOCATOR_DISPATCH</a> must have at least an indirect way of referencing <i>Pin</i>. (For instance, <a href="stream.avstrminiallocate">AVStrMiniAllocate</a> will need to be able to access the <i>AllocatorFraming</i> information for <i>Pin</i>, and <i>Context</i> is the only parameter that AVStream will pass it.)</p>
@@ -88,7 +88,7 @@ NTSTATUS AVStrMiniInitializeAllocator(
 
 <p>AVStream calls <i>AVStrMiniInitializeAllocator</i> to initialize the given allocator. The handler for this routine should prepare to handle memory allocation and free requests.</p>
 
-<p>For more information, see <a href="NULL">KS Allocators</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/07812703-a66f-450a-b28e-4cf765267c4a">KS Allocators</a>.</p>
 
 ## -requirements
 <table>

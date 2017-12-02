@@ -67,19 +67,19 @@ typedef struct _DRIVER_UPGRADE_INFO_2 {
 ## -struct-fields
 <dl>
 
-### -field <b>pPrinterName</b>
+### -field pPrinterName
 
 <dd>
 <p>Pointer to a NULL-terminated string that specifies the name of the printer. For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>pOldDriverDirectory</b>
+### -field pOldDriverDirectory
 
 <dd>
 <p>Pointer to a NULL-terminated string that specifies the local directory in which the old printer driver files can be found.</p>
 </dd>
 
-### -field <b>cVersion</b>
+### -field cVersion
 
 <dd>
 <p>Specifies the operating system version for which the driver was written. </p>
@@ -124,61 +124,61 @@ typedef struct _DRIVER_UPGRADE_INFO_2 {
 <p> </p>
 </dd>
 
-### -field <b>pName</b>
+### -field pName
 
 <dd>
 <p>Pointer to a NULL-terminated string that specifies the name of the driver (for example, "QMS 810"). For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>pEnvironment</b>
+### -field pEnvironment
 
 <dd>
 <p>Pointer to a NULL-terminated string that specifies the environment for which the driver was written (for example, "Windows NT x86" or "Windows Itanium").</p>
 </dd>
 
-### -field <b>pDriverPath</b>
+### -field pDriverPath
 
 <dd>
 <p>Pointer to a NULL-terminated string that specifies a file name or full path and file name for the file that contains the device driver (for example, "pscript.dll").</p>
 </dd>
 
-### -field <b>pDataFile</b>
+### -field pDataFile
 
 <dd>
 <p>Pointer to a NULL-terminated string that specifies a file name or a full path and file name for the file that contains driver data (for example, "qms810.ppd").</p>
 </dd>
 
-### -field <b>pConfigFile</b>
+### -field pConfigFile
 
 <dd>
 <p>Pointer to a NULL-terminated string that specifies a file name or a full path and file name for the device driver's configuration dynamic-link library (for example, "pscrptui.dll"). </p>
 </dd>
 
-### -field <b>pHelpFile</b>
+### -field pHelpFile
 
 <dd>
 <p>Pointer to a null-terminated string that specifies a file name or a full path and file name for the device driver's help file.</p>
 </dd>
 
-### -field <b>pDependentFiles</b>
+### -field pDependentFiles
 
 <dd>
 <p>Pointer to a NULL-terminated string that specifies the files the driver depends on. Each file name in the string is also terminated with a null character (for example, "pscript.dll\0qms810.ppd\0pscrptui.dll\0pscrptui.hlp\0pstest.txt\0\0").</p>
 </dd>
 
-### -field <b>pMonitorName</b>
+### -field pMonitorName
 
 <dd>
 <p>Pointer to a NULL-terminated string that specifies a language monitor (for example, "PJL monitor"). This member can be <b>NULL</b> and should be specified as non-<b>NULL</b> only for printers capable of bidirectional communication.</p>
 </dd>
 
-### -field <b>pDefaultDataType</b>
+### -field pDefaultDataType
 
 <dd>
 <p>Pointer to a NULL-terminated string that specifies the default data type of the print job (for example, "EMF"). </p>
 </dd>
 
-### -field <b>pszzPreviousNames</b>
+### -field pszzPreviousNames
 
 <dd>
 <p>Pointer to a NULL-terminated string that specifies any previous printer driver names that are compatible with this driver (for example, "OldName1\0OldName2\0\0").</p>

@@ -58,24 +58,24 @@ typedef struct HBA_ipaddress {
 ## -struct-fields
 <dl>
 
-### -field <b>ipversion</b>
+### -field ipversion
 
 <dd>
 <p>Indicates the version of the IP protocol in use. </p>
 </dd>
 
-### -field <b>ipaddress</b>
+### -field ipaddress
 
 <dd>
 <dl>
 
-### -field <b>ipv4address</b>
+### -field ipv4address
 
 <dd>
 <p>Contains a dotted decimal IP4 address if version 4 of the IP protocol is in use. </p>
 </dd>
 
-### -field <b>ipv6address</b>
+### -field ipv6address
 
 <dd>
 <p>Contains a dotted decimal IP6 address if version 6 of the IP protocol is in use. </p>

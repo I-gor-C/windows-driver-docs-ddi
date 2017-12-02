@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_nic_parameters.htm
 old-project: netvista
 ms.assetid: 52B9DD8B-E96F-464C-9D98-5EF8B6C050C5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_SWITCH_NIC_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,7 +73,7 @@ typedef struct _NDIS_SWITCH_NIC_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -81,7 +81,7 @@ typedef struct _NDIS_SWITCH_NIC_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_SWITCH_NIC_PARAMETERS_REVISION_1"></a><a id="ndis_switch_nic_parameters_revision_1"></a>NDIS_SWITCH_NIC_PARAMETERS_REVISION_1
+### -field NDIS_SWITCH_NIC_PARAMETERS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30 and later.</p>
@@ -90,7 +90,7 @@ typedef struct _NDIS_SWITCH_NIC_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. The following flag value is defined.
@@ -104,7 +104,7 @@ typedef struct _NDIS_SWITCH_NIC_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_SWITCH_NIC_FLAGS_NIC_INITIALIZING"></a><a id="ndis_switch_nic_flags_nic_initializing"></a><dl>
 
-### -field <b>NDIS_SWITCH_NIC_FLAGS_NIC_INITIALIZING</b>
+### -field NDIS_SWITCH_NIC_FLAGS_NIC_INITIALIZING
 
 </dl>
 </td>
@@ -121,45 +121,45 @@ typedef struct _NDIS_SWITCH_NIC_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>NicName</b>
+### -field NicName
 
 <dd>
 <p> An NDIS_SWITCH_NIC_NAME value that specifies the unique internal name of the network adapter that is connected to an extensible switch port. </p>
 <p>For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>NicFriendlyName</b>
+### -field NicFriendlyName
 
 <dd>
 <p> An NDIS_SWITCH_NIC_FRIENDLYNAME value that specifies the user-friendly description of the network adapter.</p>
 </dd>
 
-### -field <b>PortId</b>
+### -field PortId
 
 <dd>
 <p>An NDIS_SWITCH_PORT_ID value that contains the unique identifier of the extensible switch port to which the network adapter is connected.</p>
 </dd>
 
-### -field <b>NicIndex</b>
+### -field NicIndex
 
 <dd>
 <p>An NDIS_SWITCH_NIC_INDEX value that specifies the index of the network adapter that is connected to the  extensible switch port specified by the <b>PortId</b> member.</p>
-<p>For more information on NDIS_SWITCH_NIC_INDEX values, see <a href="NULL">Network Adapter Index Values</a>.</p>
+<p>For more information on NDIS_SWITCH_NIC_INDEX values, see <a href="netvista.network_adapter_index_values">Network Adapter Index Values</a>.</p>
 </dd>
 
-### -field <b>NicType</b>
+### -field NicType
 
 <dd>
 <p>An <a href="..\ntddndis\ne-ntddndis--ndis-switch-nic-type.md">NDIS_SWITCH_NIC_TYPE</a> value that specifies the type of the network adapter that is connected to an extensible switch port.</p>
 </dd>
 
-### -field <b>NicState</b>
+### -field NicState
 
 <dd>
 <p>An <a href="..\ntddndis\ne-ntddndis--ndis-switch-nic-state.md">NDIS_SWITCH_NIC_STATE</a> value that specifies the current state of the network adapter.</p>
 </dd>
 
-### -field <b>VmName</b>
+### -field VmName
 
 <dd>
 <p>An NDIS_VM_NAME value that specifies the unique internal name of the Hyper-V child partition in which the guest operating system that exposes the network adapter is running.
@@ -170,7 +170,7 @@ typedef struct _NDIS_SWITCH_NIC_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>VMFriendlyName</b>
+### -field VMFriendlyName
 
 <dd>
 <p>An NDIS_VM_FRIENDLYNAME value that specifies the external name of the Hyper-V child partition that is attached to the VF. This member contains the user-friendly description of the partition.
@@ -178,7 +178,7 @@ typedef struct _NDIS_SWITCH_NIC_PARAMETERS {
 </p>
 </dd>
 
-### -field <b>NetCfgInstanceId</b>
+### -field NetCfgInstanceId
 
 <dd>
 <p>A GUID value that specifies the <b>NetCfgInstanceId</b> registry value of the
@@ -187,7 +187,7 @@ underlying network adapter.</p>
 <div> </div>
 </dd>
 
-### -field <b>MTU</b>
+### -field MTU
 
 <dd>
 <p>A <b>ULONG</b> value that specifies the maximum transmission unit (MTU) size, in bytes, for the network adapter.</p>
@@ -203,7 +203,7 @@ underlying network adapter.</p>
 <div> </div>
 </dd>
 
-### -field <b>NumaNodeId</b>
+### -field NumaNodeId
 
 <dd>
 <p>A <b>USHORT</b> value that specifies the identifier for the preferred Non-Uniform Memory Access (NUMA) node of a CPU. On computers that support NUMA architecture, the preferred NUMA node is the CPU that has the smallest distance to the network adapter.
@@ -213,19 +213,19 @@ underlying network adapter.</p>
 <div> </div>
 </dd>
 
-### -field <b>PermanentMacAddress</b>
+### -field PermanentMacAddress
 
 <dd>
 <p>A <b>UCHAR</b> array that specifies the media access control (MAC) address as configured on the host partition for  the network adapter. This can be different from the MAC address currently in use by the network adapter.</p>
 </dd>
 
-### -field <b>VMMacAddress</b>
+### -field VMMacAddress
 
 <dd>
 <p>A <b>UCHAR</b> array that specifies the MAC address that is configured on the network adapter inside the VM itself. The field is all zeros for non VM NICs. If <i>AllowMacSpoofing</i> (from <a href="..\ntddndis\ns-ntddndis--ndis-switch-port-property-security.md">NDIS_SWITCH_PORT_PROPERTY_SECURITY</a>) is TRUE, this address will also be applied to the <i>CurrentMacAddress.</i></p>
 </dd>
 
-### -field <b>CurrentMacAddress</b>
+### -field CurrentMacAddress
 
 <dd>
 <p>A <b>UCHAR</b> array that specifies the MAC address that is currently being used in the switch for the network adapter. If <i>AllowMacSpoofing</i> and <i>AllowTeaming</i> are both FALSE, then this value will be equal to <i>PermanentMacAddress</i>. If <i>AllowMacSpoofing</i> is TRUE, this value will be equal to the <i>VMMacAddress</i>. If <i>AllowTeaming</i> is TRUE and teaming failover has occurred inside the VM, the <i>CurrentMacAddress</i> will be equal to the MAC address that was failed over to the network adapter or <i>PermanentMacAddress</i> if no failover has occurred. 
@@ -233,7 +233,7 @@ underlying network adapter.</p>
 </p>
 </dd>
 
-### -field <b>VFAssigned</b>
+### -field VFAssigned
 
 <dd>
 <p>A <b>BOOLEAN</b> value that, if set to <b>TRUE</b>, specifies that the network adapter is attached to a PCI Express (PCIe) virtual function (VF). A VF is exposed by an underlying physical network adapter that supports the single root I/O virtualization (SR-IOV) interface.</p>
@@ -361,4 +361,4 @@ These types of network adapters are exposed in the guest operating system that r
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_NIC_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_NIC_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

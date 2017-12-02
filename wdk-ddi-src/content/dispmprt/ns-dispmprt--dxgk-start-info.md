@@ -58,19 +58,19 @@ typedef struct _DXGK_START_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>RequiredDmaQueueEntry</b>
+### -field RequiredDmaQueueEntry
 
 <dd>
 <p>The number of DMA buffers that the display miniport driver (or the display adapter) must be able to hold in a queue. The display miniport driver must preallocate all resources required to accommodate this number of DMA buffers. </p>
 </dd>
 
-### -field <b>AdapterGuid</b>
+### -field AdapterGuid
 
 <dd>
 <p>A GUID that will serve as an identifier for the adapter being started.</p>
 </dd>
 
-### -field <b>AdapterLuid</b>
+### -field AdapterLuid
 
 <dd>
 <p>Available starting with Windows 8.</p>

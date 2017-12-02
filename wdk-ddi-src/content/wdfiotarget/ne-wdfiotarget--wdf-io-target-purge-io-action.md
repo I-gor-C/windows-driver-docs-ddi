@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_target_purge_io_action.htm
 old-project: wdf
 ms.assetid: E282976A-4143-468C-B944-FBBAD5BBA388
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,20 +61,20 @@ typedef enum _WDF_IO_TARGET_PURGE_IO_ACTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfIoTargetPurgeIoUndefined"></a><a id="wdfiotargetpurgeioundefined"></a><a id="WDFIOTARGETPURGEIOUNDEFINED"></a><b>WdfIoTargetPurgeIoUndefined</b>
+### -field WdfIoTargetPurgeIoUndefined
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="WdfIoTargetPurgeIoAndWait"></a><a id="wdfiotargetpurgeioandwait"></a><a id="WDFIOTARGETPURGEIOANDWAIT"></a><b>WdfIoTargetPurgeIoAndWait</b>
+### -field WdfIoTargetPurgeIoAndWait
 
 <dd>
 <p>The framework attempts to cancel all of the I/O requests in the target's queue, and waits until all delivered requests are completed or canceled, before <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetpurge.md">WdfIoTargetPurge</a> returns. If the framework receives additional requests for the queue, it completes them with a completion status value of STATUS_INVALID_DEVICE_STATE.
 </p>
 </dd>
 
-### -field <a id="WdfIoTargetPurgeIo"></a><a id="wdfiotargetpurgeio"></a><a id="WDFIOTARGETPURGEIO"></a><b>WdfIoTargetPurgeIo</b>
+### -field WdfIoTargetPurgeIo
 
 <dd>
 <p>The framework attempts to cancel all of the target queue's I/O requests, before <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetpurge.md">WdfIoTargetPurge</a> returns.</p>
@@ -127,4 +127,4 @@ typedef enum _WDF_IO_TARGET_PURGE_IO_ACTION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_TARGET_PURGE_IO_ACTION enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_TARGET_PURGE_IO_ACTION enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

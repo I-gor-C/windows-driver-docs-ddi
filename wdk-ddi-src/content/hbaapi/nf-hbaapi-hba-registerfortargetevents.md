@@ -60,43 +60,43 @@ HBA_STATUS HBA_API HBA_RegisterForTargetEvents(
 ## -parameters
 <dl>
 
-### -param <i>callback</i> 
+### -param callback 
 
 <dd>
 <p>Pointer to a callback routine of type <a href="storage.hba_port_callback">HBA_PORT_CALLBACK</a> that is called when an adapter is added to the system.</p>
 </dd>
 
-### -param <i>userData</i> 
+### -param userData 
 
 <dd>
 <p>Pointer to a buffer that is passed to the callback routine with each event. This data correlates the event with the source of the event registration. </p>
 </dd>
 
-### -param <i>handle</i> 
+### -param handle 
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA for which the adapter events are generated. </p>
 </dd>
 
-### -param <i>hbaPortWWN</i> 
+### -param hbaPortWWN 
 
 <dd>
 <p>Contains a 64-bit worldwide name (WWN) that uniquely identifies the local HBA port from which the target was discovered. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
-### -param <i>discoveredPortWWN</i> 
+### -param discoveredPortWWN 
 
 <dd>
 <p>Contains a 64-bit WWN that uniquely identifies the remote HBA port from which target events are reported. </p>
 </dd>
 
-### -param <i>callbackHandle</i> 
+### -param callbackHandle 
 
 <dd>
 <p>Contains an opaque identifier that the user must pass to <a href="..\hbaapi\nf-hbaapi-hba-removecallback.md">HBA_RemoveCallback</a> to de-register the callback routine.</p>
 </dd>
 
-### -param <i>allTargets</i> 
+### -param allTargets 
 
 <dd>
 <p>Indicates, when nonzero, that the value in <i>discoveredPortWWN</i> will be ignored, and the callback will be called for events associated with all current and future discovered targets. If this member is 0, only events associated with the target specified by <i>discoveredPortWWN</i> will be reported. </p>

@@ -54,7 +54,7 @@ void Notify(
 ## -parameters
 <dl>
 
-### -param <i>ServiceGroup</i> [in]
+### -param ServiceGroup [in]
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> object.</p>
@@ -71,7 +71,7 @@ void Notify(
 
 <p>The port driver calls the <a href="audio.iminiportwavecyclicstream_setnotificationfreq">IMiniportWaveCyclicStream::SetNotificationFreq</a> method to specify the frequency with which the ISR should call the <code>Notify</code> method. In all current Windows releases, the port driver specifies a regular interval of 10 milliseconds between successive notifications. This value might change in a future release.</p>
 
-<p>The <i>ServiceGroup</i> parameter follows the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>ServiceGroup</i> parameter follows the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

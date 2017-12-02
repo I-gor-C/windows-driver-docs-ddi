@@ -58,14 +58,14 @@ void NTAPI* pfnDataRateNotify(
 ## -parameters
 <dl>
 
-### -param <i>context</i> [in]
+### -param context [in]
 
 <dd>
 <p>A  pointer to a context block associated with a display adapter.</p>
 <p>The context value is the value the driver passed in its call to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-register-datarate-notifications.md">RegisterForDataRateNotifications</a> function when it registered the <i>pfnDataRateNotify</i> function.</p>
 </dd>
 
-### -param <i>pDataRateStats</i> [in, optional]
+### -param pDataRateStats [in, optional]
 
 <dd>
 <p>An optional pointer to a <a href="..\netdispumdddi\ns-netdispumdddi-miracast-datarate-stats.md">MIRACAST_DATARATE_STATS</a> structure that contains info on the audio/video encoder bit rate and failed or retried Wi-Fi frames.</p>

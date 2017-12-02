@@ -22,6 +22,7 @@
 ### [NFC_CX_SEQUENCE enumeration](../nfccx/ne-nfccx--nfc-cx-sequence.md)
 ### [NFC_CX_TRANSPORT_TYPE enumeration](../nfccx/ne-nfccx--nfc-cx-transport-type.md)
 ### [NfcCxDeviceDeinitialize function](../nfccx/nf-nfccx-nfccxdevicedeinitialize.md)
+### [NfcCxDeviceInitConfig function](../nfccx/nf-nfccx-nfccxdeviceinitconfig.md)
 ### [NfcCxDeviceInitialize function](../nfccx/nf-nfccx-nfccxdeviceinitialize.md)
 ### [NfcCxHardwareEvent function](../nfccx/nf-nfccx-nfccxhardwareevent.md)
 ### [NfcCxNciReadNotification function](../nfccx/nf-nfccx-nfccxncireadnotification.md)

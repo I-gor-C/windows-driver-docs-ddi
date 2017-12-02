@@ -57,25 +57,25 @@ struct SendRPS_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. </p>
 </dd>
 
-### -field <b>TotalRspBufferSize</b>
+### -field TotalRspBufferSize
 
 <dd>
 <p>Contains the size in bytes of the results of the RPS command. </p>
 </dd>
 
-### -field <b>ActualRspBufferSize</b>
+### -field ActualRspBufferSize
 
 <dd>
 <p>Contains the size in bytes of the data that was actually retrieved. </p>
 </dd>
 
-### -field <b>RspBuffer</b>
+### -field RspBuffer
 
 <dd>
 <p>Contains the results of the RPS command. </p>

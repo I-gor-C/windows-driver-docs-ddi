@@ -61,7 +61,7 @@ typedef struct _STORAGE_DEVICE_RESILIENCY_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Contains the size of this structure, in bytes. The value of this member will change as members are added to 
@@ -69,45 +69,45 @@ typedef struct _STORAGE_DEVICE_RESILIENCY_DESCRIPTOR {
       <code>sizeof(STORAGE_DEVICE_RESILIENCY_DESCRIPTOR)</code>.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the total size of the data returned, in bytes. This may include data that follows this 
       structure.</p>
 </dd>
 
-### -field <b>NameOffset</b>
+### -field NameOffset
 
 <dd>
 <p>Byte offset to the null-terminated ASCII string containing the resiliency properties Name. For devices with 
       no Name property, this will be zero.</p>
 </dd>
 
-### -field <b>NumberOfLogicalCopies</b>
+### -field NumberOfLogicalCopies
 
 <dd>
 <p>Number of logical copies of data that are available.</p>
 </dd>
 
-### -field <b>NumberOfPhysicalCopies</b>
+### -field NumberOfPhysicalCopies
 
 <dd>
 <p>Number of complete copies of data that are stored.</p>
 </dd>
 
-### -field <b>PhysicalDiskRedundancy</b>
+### -field PhysicalDiskRedundancy
 
 <dd>
 <p>Number of disks that can fail without leading to data loss.</p>
 </dd>
 
-### -field <b>NumberOfColumns</b>
+### -field NumberOfColumns
 
 <dd>
 <p>Number of columns in the storage device.</p>
 </dd>
 
-### -field <b>Interleave</b>
+### -field Interleave
 
 <dd>
 <p>Size of a stripe unit of the storage device, in bytes. This is also referred to as the stripe width or 

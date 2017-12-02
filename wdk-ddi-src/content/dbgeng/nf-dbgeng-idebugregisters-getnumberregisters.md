@@ -7,7 +7,7 @@ old-location: debugger\getnumberregisters.htm
 old-project: debugger
 ms.assetid: 51c521fc-e89c-49c9-8110-de31af3bed83
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugRegisters, GetNumberRegisters, IDebugRegisters::GetNumberRegisters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetNumberRegisters(
 ## -parameters
 <dl>
 
-### -param <i>Number</i> [out]
+### -param Number [out]
 
 <dd>
 <p>Receives the number of registers on the target's computer.</p>
@@ -62,7 +62,7 @@ HRESULT GetNumberRegisters(
 </dl>
 
 ## -returns
-<p>This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="debugger.hresult_values">HRESULT Values</a>.</p><dl>
+<p>This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

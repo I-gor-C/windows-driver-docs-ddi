@@ -7,7 +7,7 @@ old-location: netvista\npdbrokeruninitialize.htm
 old-project: netvista
 ms.assetid: E1CC0E8D-B48E-4F02-AE26-82123A3722E6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ NTSTATUS NpdBrokerUninitialize(
 ## -parameters
 <dl>
 
-### -param <i>hBroker</i> [in]
+### -param hBroker [in]
 
 <dd>
 <p>Reserved.</p>

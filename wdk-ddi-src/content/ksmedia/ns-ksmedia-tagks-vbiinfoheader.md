@@ -64,67 +64,67 @@ typedef struct tagKS_VBIINFOHEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>StartLine</b>
+### -field StartLine
 
 <dd>
 <p>Specifies the line number of the first digitized VBI line.</p>
 </dd>
 
-### -field <b>EndLine</b>
+### -field EndLine
 
 <dd>
 <p>Specifies the line number of the last digitized VBI line.</p>
 </dd>
 
-### -field <b>SamplingFrequency</b>
+### -field SamplingFrequency
 
 <dd>
 <p>Specifies the sampling frequency in hertz (Hz).</p>
 </dd>
 
-### -field <b>MinLineStartTime</b>
+### -field MinLineStartTime
 
 <dd>
 <p>Specifies the shortest possible interval from the leading edge of H-sync in 10-nanosecond units (that is, in hundredths of microseconds).</p>
 </dd>
 
-### -field <b>MaxLineStartTime</b>
+### -field MaxLineStartTime
 
 <dd>
 <p>Specifies the longest possible interval from the leading edge of H-sync in 10-nanosecond units (that is, in hundredths of microseconds).</p>
 </dd>
 
-### -field <b>ActualLineStartTime</b>
+### -field ActualLineStartTime
 
 <dd>
 <p>Specifies the actual starting point of VBI digitization from the leading edge of H-sync in 10-nanosecond units (that is, in hundredths of microseconds).</p>
 </dd>
 
-### -field <b>ActualLineEndTime</b>
+### -field ActualLineEndTime
 
 <dd>
 <p>Specifies the actual ending point for VBI digitization from the leading edge of H-sync in 10-nanosecond units (that is, in hundredths of microseconds).</p>
 </dd>
 
-### -field <b>VideoStandard</b>
+### -field VideoStandard
 
 <dd>
 <p>Specifies one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks-analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.</p>
 </dd>
 
-### -field <b>SamplesPerLine</b>
+### -field SamplesPerLine
 
 <dd>
 <p>Specifies the number of samples digitized per video line.</p>
 </dd>
 
-### -field <b>StrideInBytes</b>
+### -field StrideInBytes
 
 <dd>
 <p>Specifies the stride in bytes between the first sample on a given line and the first sample on the next line. This value can be larger than <b>SamplesPerLine</b>.</p>
 </dd>
 
-### -field <b>BufferSize</b>
+### -field BufferSize
 
 <dd>
 <p>Specifies the size in bytes of the buffer to store the entire digitized VBI signal.</p>

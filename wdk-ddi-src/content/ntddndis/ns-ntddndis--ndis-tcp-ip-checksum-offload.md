@@ -7,7 +7,7 @@ old-location: netvista\ndis_tcp_ip_checksum_offload.htm
 old-project: netvista
 ms.assetid: bf5369c5-8656-41a4-a23f-79e40a60d111
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_TCP_IP_CHECKSUM_OFFLOAD, NDIS_TCP_IP_CHECKSUM_OFFLOAD, *PNDIS_TCP_IP_CHECKSUM_OFFLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>The NDIS_TCP_IP_CHECKSUM_OFFLOAD structure provides checksum task offload information in the 
-  <a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a> structure.</p>
+  <a href="..\ntddndis\ns-ntddndis--ndis-offload.md">NDIS_OFFLOAD</a> structure.</p>
 
 
 ## -syntax
@@ -84,7 +84,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
 ## -struct-fields
 <dl>
 
-### -field <b>IPv4Transmit</b>
+### -field IPv4Transmit
 
 <dd>
 <p>A structure within NDIS_TCP_IP_CHECKSUM_OFFLOAD that specifies IPv4 transmit information and that
@@ -93,14 +93,14 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
       </p>
 <dl>
 
-### -field <b>Encapsulation</b>
+### -field Encapsulation
 
 <dd>
 <p>Encapsulation settings for IPv4 transmit. For more information about this member, see the
        following Remarks section.</p>
 </dd>
 
-### -field <b>IpOptionsSupported</b>
+### -field IpOptionsSupported
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate an
@@ -108,7 +108,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
        enabled or disabled.</p>
 </dd>
 
-### -field <b>TcpOptionsSupported</b>
+### -field TcpOptionsSupported
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate a
@@ -116,7 +116,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
        enabled or disabled.</p>
 </dd>
 
-### -field <b>TcpChecksum</b>
+### -field TcpChecksum
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate a
@@ -124,7 +124,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
        or to indicate that this capability is enabled or disabled.</p>
 </dd>
 
-### -field <b>UdpChecksum</b>
+### -field UdpChecksum
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate a
@@ -132,7 +132,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
        disabled.</p>
 </dd>
 
-### -field <b>IpChecksum</b>
+### -field IpChecksum
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate an
@@ -141,7 +141,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
 </dl>
 </dd>
 
-### -field <b>IPv4Receive</b>
+### -field IPv4Receive
 
 <dd>
 <p>A structure within NDIS_TCP_IP_CHECKSUM_OFFLOAD that specifies IPv4 receive information and that
@@ -149,14 +149,14 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
      </p>
 <dl>
 
-### -field <b>Encapsulation</b>
+### -field Encapsulation
 
 <dd>
 <p>Encapsulation settings for IPv4 receive. For more information about this member, see the
        following Remarks section.</p>
 </dd>
 
-### -field <b>IpOptionsSupported</b>
+### -field IpOptionsSupported
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can validate an IP
@@ -164,7 +164,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
        enabled or disabled.</p>
 </dd>
 
-### -field <b>TcpOptionsSupported</b>
+### -field TcpOptionsSupported
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate a
@@ -172,7 +172,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
        is enabled or disabled.</p>
 </dd>
 
-### -field <b>TcpChecksum</b>
+### -field TcpChecksum
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can validate the
@@ -180,14 +180,14 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
        disabled.</p>
 </dd>
 
-### -field <b>UdpChecksum</b>
+### -field UdpChecksum
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can validate an
        IPv4 receive packet's UDP checksum or to indicate that this capability is enabled or disabled.</p>
 </dd>
 
-### -field <b>IpChecksum</b>
+### -field IpChecksum
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can validate an IP
@@ -196,7 +196,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
 </dl>
 </dd>
 
-### -field <b>IPv6Transmit</b>
+### -field IPv6Transmit
 
 <dd>
 <p>A structure within NDIS_TCP_IP_CHECKSUM_OFFLOAD that specifies IPv6 transmit information and that
@@ -204,21 +204,21 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
      </p>
 <dl>
 
-### -field <b>Encapsulation</b>
+### -field Encapsulation
 
 <dd>
 <p>Encapsulation settings for IPv6 transmit. For more information about this member, see the
        following Remarks section.</p>
 </dd>
 
-### -field <b>IpExtensionHeadersSupported</b>
+### -field IpExtensionHeadersSupported
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that the miniport adapter can calculate
        checksums on IPv6 packets that contain extension headers.</p>
 </dd>
 
-### -field <b>TcpOptionsSupported</b>
+### -field TcpOptionsSupported
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate a
@@ -226,7 +226,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
        enabled or disabled.</p>
 </dd>
 
-### -field <b>TcpChecksum</b>
+### -field TcpChecksum
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate a
@@ -234,7 +234,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
        disabled.</p>
 </dd>
 
-### -field <b>UdpChecksum</b>
+### -field UdpChecksum
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate a
@@ -244,7 +244,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
 </dl>
 </dd>
 
-### -field <b>IPv6Receive</b>
+### -field IPv6Receive
 
 <dd>
 <p>A structure within NDIS_TCP_IP_CHECKSUM_OFFLOAD that specifies IPv6 receive information and that
@@ -252,21 +252,21 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
      </p>
 <dl>
 
-### -field <b>Encapsulation</b>
+### -field Encapsulation
 
 <dd>
 <p>Encapsulation settings for IPv6 receive. For more information about this member, see the
        following Remarks section.</p>
 </dd>
 
-### -field <b>IpExtensionHeadersSupported</b>
+### -field IpExtensionHeadersSupported
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that the miniport adapter can validate
        checksums on IPv6 packets that contain extension headers.</p>
 </dd>
 
-### -field <b>TcpOptionsSupported</b>
+### -field TcpOptionsSupported
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can calculate a
@@ -274,14 +274,14 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
        capability is enabled or disabled.</p>
 </dd>
 
-### -field <b>TcpChecksum</b>
+### -field TcpChecksum
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can validate an
        IPv6 receive packet's TCP checksum or to indicate that this capability is enabled or disabled.</p>
 </dd>
 
-### -field <b>UdpChecksum</b>
+### -field UdpChecksum
 
 <dd>
 <p>A ULONG value that a miniport driver sets to indicate that a miniport adapter can validate a UDP
@@ -294,7 +294,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
 ## -remarks
 <p>The NDIS_TCP_IP_CHECKSUM_OFFLOAD structure is used in the 
     <b>Checksum</b> member of the 
-    <a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a> structure. The
+    <a href="..\ntddndis\ns-ntddndis--ndis-offload.md">NDIS_OFFLOAD</a> structure. The
     NDIS_TCP_IP_CHECKSUM_OFFLOAD structure specifies the current or supported services that a miniport
     adapter provides for calculating IP, TCP, or UDP checksums (or all of them) for send packets and
     validating such checksums for receive packets.</p>
@@ -414,7 +414,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
    NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-offload.md">NDIS_OFFLOAD</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
@@ -432,4 +432,4 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_IP_CHECKSUM_OFFLOAD structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_IP_CHECKSUM_OFFLOAD structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

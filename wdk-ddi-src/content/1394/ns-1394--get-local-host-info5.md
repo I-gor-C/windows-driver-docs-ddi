@@ -7,7 +7,7 @@ old-location: ieee\get_local_host_info5.htm
 old-project: IEEE
 ms.assetid: a0cdf40e-627e-4d39-9c7b-6defcc2f29c3
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: GET_LOCAL_HOST_INFO5, GET_LOCAL_HOST_INFO5, *PGET_LOCAL_HOST_INFO5
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,13 +54,13 @@ typedef struct _GET_LOCAL_HOST_INFO5 {
 ## -struct-fields
 <dl>
 
-### -field <b>ConfigRom</b>
+### -field ConfigRom
 
 <dd>
 <p>Pointer to the beginning of the buffer to be filled with the local host's configuration ROM.</p>
 </dd>
 
-### -field <b>ConfigRomLength</b>
+### -field ConfigRomLength
 
 <dd>
 <p>Specifies the length of the buffer pointed to by <b>ConfigRom</b>.</p>
@@ -92,4 +92,4 @@ typedef struct _GET_LOCAL_HOST_INFO5 {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20GET_LOCAL_HOST_INFO5 structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20GET_LOCAL_HOST_INFO5 structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

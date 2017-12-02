@@ -58,19 +58,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="UsbLowSpeed_"></a><a id="usblowspeed_"></a><a id="USBLOWSPEED_"></a><b>UsbLowSpeed </b>
+### -field UsbLowSpeed 
 
 <dd>
 <p>Indicates a low-speed USB 1.1-compliant device.</p>
 </dd>
 
-### -field <a id="UsbFullSpeed__"></a><a id="usbfullspeed__"></a><a id="USBFULLSPEED__"></a><b>UsbFullSpeed  </b>
+### -field UsbFullSpeed  
 
 <dd>
 <p>Indicates a full-speed USB 1.1-compliant device.</p>
 </dd>
 
-### -field <a id="UsbHighSpeed__"></a><a id="usbhighspeed__"></a><a id="USBHIGHSPEED__"></a><b>UsbHighSpeed  </b>
+### -field UsbHighSpeed  
 
 <dd>
 <p>Indicates a high-speed USB 2.0-compliant device. 
@@ -78,7 +78,7 @@ typedef enum  {
 </p>
 </dd>
 
-### -field <a id="UsbSuperSpeed"></a><a id="usbsuperspeed"></a><a id="USBSUPERSPEED"></a><b>UsbSuperSpeed</b>
+### -field UsbSuperSpeed
 
 <dd>
 <p>Indicates a SuperSpeed USB 3.0-compliant device. 

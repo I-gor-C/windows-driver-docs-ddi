@@ -7,7 +7,7 @@ old-location: netvista\ndis_net_buffer_list_info.htm
 old-project: netvista
 ms.assetid: 79327b2b-e97b-42dc-8d15-9d774c424cae
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -100,7 +100,7 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
 ## -enum-fields
 <dl>
 
-### -field <a id="TcpIpChecksumNetBufferListInfo"></a><a id="tcpipchecksumnetbufferlistinfo"></a><a id="TCPIPCHECKSUMNETBUFFERLISTINFO"></a><b>TcpIpChecksumNetBufferListInfo</b>
+### -field TcpIpChecksumNetBufferListInfo
 
 <dd>
 <p>Identifies checksum information that is used in offloading checksum tasks from the TCP/IP protocol
@@ -111,14 +111,14 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
      the checksum information to be accessed as a single <b>PVOID</b> value or as bit fields.</p>
 </dd>
 
-### -field <a id="TcpOffloadBytesTransferred"></a><a id="tcpoffloadbytestransferred"></a><a id="TCPOFFLOADBYTESTRANSFERRED"></a><b>TcpOffloadBytesTransferred</b>
+### -field TcpOffloadBytesTransferred
 
 <dd>
 <p>Identifies a <b>ULONG</b> value that is the number of data bytes that were transferred in a TCP chimney
      offload send, receive, or disconnect operation.</p>
 </dd>
 
-### -field <a id="IPsecOffloadV1NetBufferListInfo"></a><a id="ipsecoffloadv1netbufferlistinfo"></a><a id="IPSECOFFLOADV1NETBUFFERLISTINFO"></a><b>IPsecOffloadV1NetBufferListInfo</b>
+### -field IPsecOffloadV1NetBufferListInfo
 
 <dd>
 <p>Identifies Internet Protocol security (IPsec) information that is used in offloading IPsec tasks
@@ -128,7 +128,7 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
      NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO</a> structure.</p>
 </dd>
 
-### -field <a id="IPsecOffloadV2NetBufferListInfo"></a><a id="ipsecoffloadv2netbufferlistinfo"></a><a id="IPSECOFFLOADV2NETBUFFERLISTINFO"></a><b>IPsecOffloadV2NetBufferListInfo</b>
+### -field IPsecOffloadV2NetBufferListInfo
 
 <dd>
 <p>Specifies Internet protocol security offload version 2 (IPsecV2) information that is used in
@@ -138,7 +138,7 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
       NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO</a> structure.</p>
 </dd>
 
-### -field <a id="TcpLargeSendNetBufferListInfo"></a><a id="tcplargesendnetbufferlistinfo"></a><a id="TCPLARGESENDNETBUFFERLISTINFO"></a><b>TcpLargeSendNetBufferListInfo</b>
+### -field TcpLargeSendNetBufferListInfo
 
 <dd>
 <p>Identifies information that is used in offloading the segmentation of a large TCP packet from the
@@ -164,20 +164,20 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
      segmented from the large TCP packet.</p>
 </dd>
 
-### -field <a id="TcpReceiveNoPush"></a><a id="tcpreceivenopush"></a><a id="TCPRECEIVENOPUSH"></a><b>TcpReceiveNoPush</b>
+### -field TcpReceiveNoPush
 
 <dd>
 <p>Identifies a <b>Boolean</b> value that represents the push mode of a TCP chimney offload receive request.
      If <b>TRUE</b>, the receive request is in non-push mode. Otherwise, the receive request is in push mode.</p>
 </dd>
 
-### -field <a id="ClassificationHandleNetBufferListInfo"></a><a id="classificationhandlenetbufferlistinfo"></a><a id="CLASSIFICATIONHANDLENETBUFFERLISTINFO"></a><b>ClassificationHandleNetBufferListInfo</b>
+### -field ClassificationHandleNetBufferListInfo
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <a id="Ieee8021QNetBufferListInfo"></a><a id="ieee8021qnetbufferlistinfo"></a><a id="IEEE8021QNETBUFFERLISTINFO"></a><b>Ieee8021QNetBufferListInfo</b>
+### -field Ieee8021QNetBufferListInfo
 
 <dd>
 <p>Identifies 802.1Q information about a packet. When 
@@ -192,7 +192,7 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
      NDIS_NET_BUFFER_LIST_8021Q_INFO</b> structure for transmit and receive operations.</p>
 </dd>
 
-### -field <a id="NetBufferListCancelId"></a><a id="netbufferlistcancelid"></a><a id="NETBUFFERLISTCANCELID"></a><b>NetBufferListCancelId</b>
+### -field NetBufferListCancelId
 
 <dd>
 <p>Identifies a <b>ULONG_PTR</b> value that is a cancellation identifier for the 
@@ -206,7 +206,7 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
      cancellation identifier.</p>
 </dd>
 
-### -field <a id="MediaSpecificInformation"></a><a id="mediaspecificinformation"></a><a id="MEDIASPECIFICINFORMATION"></a><b>MediaSpecificInformation</b>
+### -field MediaSpecificInformation
 
 <dd>
 <p>Identifies a PVOID value that is the address of a driver-allocated buffer. This buffer contains
@@ -217,13 +217,13 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
      indication.</p>
 </dd>
 
-### -field <a id="NetBufferListFrameType"></a><a id="netbufferlistframetype"></a><a id="NETBUFFERLISTFRAMETYPE"></a><b>NetBufferListFrameType</b>
+### -field NetBufferListFrameType
 
 <dd>
 <p>Identifies a <b>USHORT</b> value that is the frame type of the received Ethernet packets.</p>
 </dd>
 
-### -field <a id="NetBufferListProtocolId"></a><a id="netbufferlistprotocolid"></a><a id="NETBUFFERLISTPROTOCOLID"></a><b>NetBufferListProtocolId</b>
+### -field NetBufferListProtocolId
 
 <dd>
 <p>Identifies a <b>UCHAR</b> value that is a protocol identifier as one of the following values: 
@@ -231,25 +231,25 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_PROTOCOL_ID_DEFAULT"></a><a id="ndis_protocol_id_default"></a>NDIS_PROTOCOL_ID_DEFAULT
+### -field NDIS_PROTOCOL_ID_DEFAULT
 
 <dd>
 <p>A default protocol driver identifier.</p>
 </dd>
 
-### -field <a id="NDIS_PROTOCOL_ID_TCP_IP"></a><a id="ndis_protocol_id_tcp_ip"></a>NDIS_PROTOCOL_ID_TCP_IP
+### -field NDIS_PROTOCOL_ID_TCP_IP
 
 <dd>
 <p>The TCP/IP protocol.</p>
 </dd>
 
-### -field <a id="NDIS_PROTOCOL_ID_IPX"></a><a id="ndis_protocol_id_ipx"></a>NDIS_PROTOCOL_ID_IPX
+### -field NDIS_PROTOCOL_ID_IPX
 
 <dd>
 <p>The IPX protocol.</p>
 </dd>
 
-### -field <a id="NDIS_PROTOCOL_ID_NBF"></a><a id="ndis_protocol_id_nbf"></a>NDIS_PROTOCOL_ID_NBF
+### -field NDIS_PROTOCOL_ID_NBF
 
 <dd>
 <p>The NetBEUI protocol.</p>
@@ -257,7 +257,7 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
 </dl>
 </dd>
 
-### -field <a id="NetBufferListHashValue"></a><a id="netbufferlisthashvalue"></a><a id="NETBUFFERLISTHASHVALUE"></a><b>NetBufferListHashValue</b>
+### -field NetBufferListHashValue
 
 <dd>
 <p>On the receive path, 
@@ -274,7 +274,7 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
      Data</a>.</p>
 </dd>
 
-### -field <a id="NetBufferListHashInfo"></a><a id="netbufferlisthashinfo"></a><a id="NETBUFFERLISTHASHINFO"></a><b>NetBufferListHashInfo</b>
+### -field NetBufferListHashInfo
 
 <dd>
 <p>Identifies a <b>ULONG</b> value that is the RSS hash information, which includes the hash function and
@@ -283,14 +283,14 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
      Data</a>.</p>
 </dd>
 
-### -field <a id="WfpNetBufferListInfo"></a><a id="wfpnetbufferlistinfo"></a><a id="WFPNETBUFFERLISTINFO"></a><b>WfpNetBufferListInfo</b>
+### -field WfpNetBufferListInfo
 
 <dd>
 <p>Reserved for use by the Windows Filtering Platform (WFP). No drivers, including WFP callout
      drivers, can store information by using this value.</p>
 </dd>
 
-### -field <a id="IPsecOffloadV2TunnelNetBufferListInfo"></a><a id="ipsecoffloadv2tunnelnetbufferlistinfo"></a><a id="IPSECOFFLOADV2TUNNELNETBUFFERLISTINFO"></a><b>IPsecOffloadV2TunnelNetBufferListInfo</b>
+### -field IPsecOffloadV2TunnelNetBufferListInfo
 
 <dd>
 <p>Specifies IPsecV2 tunnel information that is used in offloading IPsec tasks from the TCP/IP protocol
@@ -300,7 +300,7 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
       NDIS_IPSEC_OFFLOAD_V2_TUNNEL_NET_BUFFER_LIST_INFO</a> structure.</p>
 </dd>
 
-### -field <a id="IPsecOffloadV2HeaderNetBufferListInfo"></a><a id="ipsecoffloadv2headernetbufferlistinfo"></a><a id="IPSECOFFLOADV2HEADERNETBUFFERLISTINFO"></a><b>IPsecOffloadV2HeaderNetBufferListInfo</b>
+### -field IPsecOffloadV2HeaderNetBufferListInfo
 
 <dd>
 <p>Specifies IPsecV2 header information that is used in offloading IPsec tasks from the TCP/IP protocol
@@ -309,13 +309,13 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
       NDIS_IPSEC_OFFLOAD_V2_HEADER_NET_BUFFER_LIST_INFO</a> structure.</p>
 </dd>
 
-### -field <a id="NetBufferListCorrelationId"></a><a id="netbufferlistcorrelationid"></a><a id="NETBUFFERLISTCORRELATIONID"></a><b>NetBufferListCorrelationId</b>
+### -field NetBufferListCorrelationId
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <a id="NetBufferListFilteringInfo"></a><a id="netbufferlistfilteringinfo"></a><a id="NETBUFFERLISTFILTERINGINFO"></a><b>NetBufferListFilteringInfo</b>
+### -field NetBufferListFilteringInfo
 
 <dd>
 <p>Specifies filtering information that is used in the virtual machine queue (VMQ) interface, the single root I/O virtualization (SR-IOV) interface, and NDIS packet coalescing. When you specify 
@@ -329,7 +329,7 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
 <div> </div>
 </dd>
 
-### -field <a id="MediaSpecificInformationEx"></a><a id="mediaspecificinformationex"></a><a id="MEDIASPECIFICINFORMATIONEX"></a><b>MediaSpecificInformationEx</b>
+### -field MediaSpecificInformationEx
 
 <dd>
 <p>Identifies a pointer to a driver-allocated 
@@ -342,80 +342,80 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
      media-specific information.</p>
 </dd>
 
-### -field <a id="NblOriginalInterfaceIfIndex"></a><a id="nbloriginalinterfaceifindex"></a><a id="NBLORIGINALINTERFACEIFINDEX"></a><b>NblOriginalInterfaceIfIndex</b>
+### -field NblOriginalInterfaceIfIndex
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <a id="NblReAuthWfpFlowContext"></a><a id="nblreauthwfpflowcontext"></a><a id="NBLREAUTHWFPFLOWCONTEXT"></a><b>NblReAuthWfpFlowContext</b>
+### -field NblReAuthWfpFlowContext
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <a id="TcpReceiveBytesTransferred"></a><a id="tcpreceivebytestransferred"></a><a id="TCPRECEIVEBYTESTRANSFERRED"></a><b>TcpReceiveBytesTransferred</b>
+### -field TcpReceiveBytesTransferred
 
 <dd>
 <p>Identifies a <b>ULONG</b> value that is the number of data bytes that were received by the host stack and
      filled in the receive request that is being processed as a TCP chimney offload receive operation.</p>
 </dd>
 
-### -field <a id="SwitchForwardingReserved"></a><a id="switchforwardingreserved"></a><a id="SWITCHFORWARDINGRESERVED"></a><b>SwitchForwardingReserved</b>
+### -field SwitchForwardingReserved
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <a id="SwitchForwardingDetail"></a><a id="switchforwardingdetail"></a><a id="SWITCHFORWARDINGDETAIL"></a><b>SwitchForwardingDetail</b>
+### -field SwitchForwardingDetail
 
 <dd>
 <p>Identifies a pointer to a driver-allocated <a href="..\ndis\ns-ndis--ndis-switch-forwarding-detail-net-buffer-list-info.md">NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO</a> structure. This  structure specifies the information for forwarding a packet to one or more  ports of a Hyper-V extensible switch. The driver allocates this structure by calling <a href="netvista.AllocateNetBufferListForwardingContext">AllocateNetBufferListForwardingContext</a> and frees the structure by calling <a href="netvista.FreeNetBufferListForwardingContext">FreeNetBufferListForwardingContext</a>.</p>
 </dd>
 
-### -field <a id="VirtualSubnetInfo"></a><a id="virtualsubnetinfo"></a><a id="VIRTUALSUBNETINFO"></a><b>VirtualSubnetInfo</b>
+### -field VirtualSubnetInfo
 
 <dd>
 <p>Identifies a pointer to a driver-allocated <a href="..\ndis\ns-ndis--ndis-net-buffer-list-virtual-subnet-info.md">NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO</a> structure. </p>
 </dd>
 
-### -field <a id="IMReserved"></a><a id="imreserved"></a><a id="IMRESERVED"></a><b>IMReserved</b>
+### -field IMReserved
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <a id="TcpRecvSegCoalesceInfo"></a><a id="tcprecvsegcoalesceinfo"></a><a id="TCPRECVSEGCOALESCEINFO"></a><b>TcpRecvSegCoalesceInfo</b>
+### -field TcpRecvSegCoalesceInfo
 
 <dd>
 <p>Identifies a pointer to a driver-allocated <a href="..\ndis\ns-ndis--ndis-rsc-nbl-info.md">NDIS_RSC_NBL_INFO</a> union containing receive segment coalescing (RSC) counter information. For more information, see the <a href="..\ndis\ns-ndis--ndis-rsc-nbl-info.md">NDIS_RSC_NBL_INFO</a> documentation.</p>
 </dd>
 
-### -field <a id="RscTcpTimestampDelta"></a><a id="rsctcptimestampdelta"></a><a id="RSCTCPTIMESTAMPDELTA"></a><b>RscTcpTimestampDelta</b>
+### -field RscTcpTimestampDelta
 
 <dd>
 <p>Identifies a pointer to a driver-allocated <a href="..\ndis\ns-ndis--ndis-rsc-nbl-info.md">NDIS_RSC_NBL_INFO</a> union containing RSC timestamp information. For more information, see the <a href="..\ndis\ns-ndis--ndis-rsc-nbl-info.md">NDIS_RSC_NBL_INFO</a> documentation.</p>
 </dd>
 
-### -field <a id="TcpSendOffloadsSupplementalNetBufferListInfo"></a><a id="tcpsendoffloadssupplementalnetbufferlistinfo"></a><a id="TCPSENDOFFLOADSSUPPLEMENTALNETBUFFERLISTINFO"></a><b>TcpSendOffloadsSupplementalNetBufferListInfo</b>
+### -field TcpSendOffloadsSupplementalNetBufferListInfo
 
 <dd>
 <p>Identifies a pointer to a driver-allocated <a href="..\ndis\ns-ndis--ndis-tcp-send-offloads-supplemental-net-buffer-list-info.md">NDIS_TCP_SEND_OFFLOADS_SUPPLEMENTAL_NET_BUFFER_LIST_INFO</a> structure containing additional out-of-band information for encapsulated packets.</p>
 </dd>
 
-### -field <a id="NetBufferListInfoReserved1"></a><a id="netbufferlistinforeserved1"></a><a id="NETBUFFERLISTINFORESERVED1"></a><b>NetBufferListInfoReserved1</b>
+### -field NetBufferListInfoReserved1
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <a id="NetBufferListInfoReserved2"></a><a id="netbufferlistinforeserved2"></a><a id="NETBUFFERLISTINFORESERVED2"></a><b>NetBufferListInfoReserved2</b>
+### -field NetBufferListInfoReserved2
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <a id="MaxNetBufferListInfo"></a><a id="maxnetbufferlistinfo"></a><a id="MAXNETBUFFERLISTINFO"></a><b>MaxNetBufferListInfo</b>
+### -field MaxNetBufferListInfo
 
 <dd>
 <p>The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.
@@ -517,4 +517,4 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NET_BUFFER_LIST_INFO enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NET_BUFFER_LIST_INFO enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

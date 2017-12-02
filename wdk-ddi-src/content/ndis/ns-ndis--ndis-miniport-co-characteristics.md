@@ -7,7 +7,7 @@ old-location: netvista\ndis_miniport_co_characteristics.htm
 old-project: netvista
 ms.assetid: 9348c338-9fb4-4eee-a50f-f709748da56b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_MINIPORT_CO_CHARACTERISTICS, NDIS_MINIPORT_CO_CHARACTERISTICS, *PNDIS_MINIPORT_CO_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ typedef struct _NDIS_MINIPORT_CO_CHARACTERISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -75,13 +75,13 @@ typedef struct _NDIS_MINIPORT_CO_CHARACTERISTICS {
      <b>Size</b> member to NDIS_SIZEOF_MINIPORT_CO_CHARACTERISTICS_REVISION_1.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>CoCreateVcHandler</b>
+### -field CoCreateVcHandler
 
 <dd>
 <p>The entry point of the driver's 
@@ -95,7 +95,7 @@ typedef struct _NDIS_MINIPORT_CO_CHARACTERISTICS {
      NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS</a>.</p>
 </dd>
 
-### -field <b>CoDeleteVcHandler</b>
+### -field CoDeleteVcHandler
 
 <dd>
 <p>The entry point of the driver's 
@@ -109,7 +109,7 @@ typedef struct _NDIS_MINIPORT_CO_CHARACTERISTICS {
      NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS</a>.</p>
 </dd>
 
-### -field <b>CoActivateVcHandler</b>
+### -field CoActivateVcHandler
 
 <dd>
 <p>The entry point of the driver's 
@@ -117,7 +117,7 @@ typedef struct _NDIS_MINIPORT_CO_CHARACTERISTICS {
      MiniportCoActivateVc</a> function.</p>
 </dd>
 
-### -field <b>CoDeactivateVcHandler</b>
+### -field CoDeactivateVcHandler
 
 <dd>
 <p>The entry point of the driver's 
@@ -125,7 +125,7 @@ typedef struct _NDIS_MINIPORT_CO_CHARACTERISTICS {
      MiniportCoDeactivateVc</a> function.</p>
 </dd>
 
-### -field <b>CoSendNetBufferListsHandler</b>
+### -field CoSendNetBufferListsHandler
 
 <dd>
 <p>The entry point of the driver's 
@@ -133,7 +133,7 @@ typedef struct _NDIS_MINIPORT_CO_CHARACTERISTICS {
      MiniportCoSendNetBufferLists</a> function.</p>
 </dd>
 
-### -field <b>CoOidRequestHandler</b>
+### -field CoOidRequestHandler
 
 <dd>
 <p>The entry point of the driver's 
@@ -217,4 +217,4 @@ typedef struct _NDIS_MINIPORT_CO_CHARACTERISTICS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_CO_CHARACTERISTICS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_CO_CHARACTERISTICS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

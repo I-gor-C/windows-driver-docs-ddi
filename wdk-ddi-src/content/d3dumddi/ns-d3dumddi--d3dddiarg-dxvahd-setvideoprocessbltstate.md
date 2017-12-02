@@ -57,25 +57,25 @@ typedef struct _D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>hVideoProcessor</b>
+### -field hVideoProcessor
 
 <dd>
 <p>[in] A handle to the video processor whose bitblt state is changed.</p>
 </dd>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-blt-state.md">DXVAHDDDI_BLT_STATE</a>-typed value that indicates the type of bitblt to set.</p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>[in] The size, in bytes, of the data that is used to change the bitblt state.</p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>[in] A pointer to the data that is used to change the bitblt state. For more information about the types of data that <b>pData</b> can point to, see the values of the <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-blt-state.md">DXVAHDDDI_BLT_STATE</a> enumeration. </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookentry.htm
 old-project: netvista
 ms.assetid: 2741d992-624a-4fd1-a1b5-57fb39c42f84
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILPHONEBOOKENTRY, RILPHONEBOOKENTRY, *LPRILPHONEBOOKENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,59 +67,59 @@ typedef struct _RILPHONEBOOKENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwIndex</b>
+### -field dwIndex
 
 <dd></dd>
 
-### -field <b>raAddress</b>
+### -field raAddress
 
 <dd></dd>
 
-### -field <b>wszText</b>
+### -field wszText
 
 <dd></dd>
 
-### -field <b>wszSecondName</b>
+### -field wszSecondName
 
 <dd></dd>
 
-### -field <b>dwGroupIdCount</b>
+### -field dwGroupIdCount
 
 <dd></dd>
 
-### -field <b>rgdwGroupId</b>
+### -field rgdwGroupId
 
 <dd></dd>
 
-### -field <b>dwAdditionalNumCount</b>
+### -field dwAdditionalNumCount
 
 <dd></dd>
 
-### -field <b>dwAdditionalNumSize</b>
+### -field dwAdditionalNumSize
 
 <dd></dd>
 
-### -field <b>dwAdditionalNumOffset</b>
+### -field dwAdditionalNumOffset
 
 <dd></dd>
 
-### -field <b>dwEmailCount</b>
+### -field dwEmailCount
 
 <dd></dd>
 
-### -field <b>dwEmailSize</b>
+### -field dwEmailSize
 
 <dd></dd>
 
-### -field <b>dwEmailOffset</b>
+### -field dwEmailOffset
 
 <dd></dd>
 </dl>

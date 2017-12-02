@@ -71,7 +71,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p><b>IPrinterExtensionAsyncOperation</b> also helps to make it possible to perform device maintenance from a UWP device app or from a printer extension. For more information, see <a href="NULL">Device Maintenance</a>.</p>
+<p><b>IPrinterExtensionAsyncOperation</b> also helps to make it possible to perform device maintenance from a UWP device app or from a printer extension. For more information, see <a href="https://msdn.microsoft.com/310E92A9-F751-4346-9B2D-0578A136AD20">Device Maintenance</a>.</p>
 
 ## -requirements
 <table>
@@ -106,7 +106,7 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="NULL">Device Maintenance</a>
+<a href="https://msdn.microsoft.com/310E92A9-F751-4346-9B2D-0578A136AD20">Device Maintenance</a>
 </dt>
 <dt>
 <a href="print.iprinterqueue2_sendbidisetrequestasync">SendBidiSetRequestAsync</a>

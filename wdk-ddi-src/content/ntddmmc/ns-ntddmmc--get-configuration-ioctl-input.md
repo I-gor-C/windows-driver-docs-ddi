@@ -56,13 +56,13 @@ typedef struct _GET_CONFIGURATION_IOCTL_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Feature</b>
+### -field Feature
 
 <dd>
 <p>Contains an enumerator value of type FEATURE_NUMBER that indicates the type of feature.</p>
 </dd>
 
-### -field <b>RequestType</b>
+### -field RequestType
 
 <dd>
 <p>SCSI_GET_CONFIGURATION_REQUEST_TYPE_ALL - Instructs the device to report all of the profiles.</p>
@@ -70,7 +70,7 @@ typedef struct _GET_CONFIGURATION_IOCTL_INPUT {
 <p>SCSI_GET_CONFIGURATION_REQUEST_TYPE_ONE - Instructs the device to report one and only one of the profiles.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>

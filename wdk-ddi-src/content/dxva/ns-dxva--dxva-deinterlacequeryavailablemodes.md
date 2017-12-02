@@ -56,19 +56,19 @@ typedef struct _DXVA_DeinterlaceQueryAvailableModes {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Indicates the size of this structure.</p>
 </dd>
 
-### -field <b>NumGuids</b>
+### -field NumGuids
 
 <dd>
 <p>Indicates the number of GUIDs that are returned in the <b>Guids</b> member for the available modes.</p>
 </dd>
 
-### -field <b>Guids</b>
+### -field Guids
 
 <dd>
 <p>An array of GUIDs that are returned for the available deinterlace modes.</p>

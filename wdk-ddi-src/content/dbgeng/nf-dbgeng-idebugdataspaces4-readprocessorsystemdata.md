@@ -7,7 +7,7 @@ old-location: debugger\readprocessorsystemdata.htm
 old-project: debugger
 ms.assetid: 8cb63fe6-61da-4c37-975d-d82430195863
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugDataSpaces4, ReadProcessorSystemData, IDebugDataSpaces4::ReadProcessorSystemData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ HRESULT ReadProcessorSystemData(
 ## -parameters
 <dl>
 
-### -param <i>Processor</i> [in]
+### -param Processor [in]
 
 <dd>
 <p>Specifies the processor whose data is to be read.</p>
 </dd>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>Specifies the data type to read.  The following table contains the valid values.  After successful completion, the data returned in the buffer <i>Buffer</i> has the type specified by the middle column.</p>
@@ -131,19 +131,19 @@ HRESULT ReadProcessorSystemData(
 <p> </p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Receives the processor data.  Upon successful completion of the method, the contents of this buffer may be accessed by casting <i>Buffer</i> to the type specified in the above table.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size in bytes of the buffer <i>Buffer</i>.  This is the maximum number of bytes that will be returned.</p>
 </dd>
 
-### -param <i>DataSize</i> [out, optional]
+### -param DataSize [out, optional]
 
 <dd>
 <p>Receives the size of the data in bytes.  If <i>DataSize</i> is <b>NULL</b>, this information is not returned.</p>
@@ -157,7 +157,7 @@ HRESULT ReadProcessorSystemData(
 
 <p> </p>
 
-<p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
+<p>This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p>
 
 ## -remarks
 <p>This method is only available in kernel-mode debugging.</p>

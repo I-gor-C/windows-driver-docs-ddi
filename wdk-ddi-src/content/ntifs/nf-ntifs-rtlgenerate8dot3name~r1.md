@@ -7,7 +7,7 @@ old-location: ifsk\rtlgenerate8dot3name.htm
 old-project: ifsk
 ms.assetid: 7e8f84c4-c251-4f80-a8fc-465e44c14405
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlGenerate8dot3Name
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ NTSTATUS RtlGenerate8dot3Name(
 ## -parameters
 <dl>
 
-### -param <i>Name</i> [in]
+### -param Name [in]
 
 <dd>
 <p>Pointer to a Unicode string containing the long name for the file. Any leading periods in this file name are skipped during generation of a corresponding short name. </p>
 </dd>
 
-### -param <i>AllowExtendedCharacters</i> [in]
+### -param AllowExtendedCharacters [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if the generated short file name can contain extended characters. Set to <b>FALSE</b> if the generated short file name must contain only characters within the current code page's ANSI or OEM range from 0x20 (space) through 0x7f (DEL). </p>
 </dd>
 
-### -param <i>Context</i> [in, out]
+### -param Context [in, out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer for use by <b>RtlGenerate8dot3Name</b>. Before calling <b>RtlGenerate8dot3Name</b> for the first time to translate the given long file name, the caller is responsible for filling the buffer with zeros.</p>
 </dd>
 
-### -param <i>Name8dot3</i> [in, out]
+### -param Name8dot3 [in, out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer to receive the generated short file name. The size of this buffer must be at least 24 bytes (12 Unicode characters). </p>
@@ -172,4 +172,4 @@ NTSTATUS RtlGenerate8dot3Name(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGenerate8dot3Name routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGenerate8dot3Name routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

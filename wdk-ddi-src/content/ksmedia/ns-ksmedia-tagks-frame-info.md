@@ -72,13 +72,13 @@ typedef struct tagKS_FRAME_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ExtendedHeaderSize</b>
+### -field ExtendedHeaderSize
 
 <dd>
 <p>Specifies the size of this structure, in bytes.</p>
 </dd>
 
-### -field <b>dwFrameFlags</b>
+### -field dwFrameFlags
 
 <dd>
 <p>Specifies flags indicating additional information about the frame captured. During capture, the minidriver sets this member to one of the following values that are defined in <i>ksmedia.h</i>:</p>
@@ -139,67 +139,67 @@ typedef struct tagKS_FRAME_INFO {
 <p> </p>
 </dd>
 
-### -field <b>PictureNumber</b>
+### -field PictureNumber
 
 <dd>
 <p>Specifies a count representing the current picture number. Initialize or update this value on transition into KSSTATE_ACQUIRE.</p>
 </dd>
 
-### -field <b>DropCount</b>
+### -field DropCount
 
 <dd>
 <p>Specifies the number of pictures that were not captured. During capture, the minidriver sets this member. This counter should be incremented whenever a frame should have been captured but was not; this condition usually arises when no buffers were available during capture. Initialize or update this value on transition into KSSTATE_ACQUIRE.</p>
 </dd>
 
-### -field <b>hDirectDraw</b>
+### -field hDirectDraw
 
 <dd>
 <p>Specifies the user-mode handle to DirectDraw. This handle is only provided to the minidriver when capturing to a DirectDraw surface for preview or overlay purposes.</p>
 </dd>
 
-### -field <b>hSurfaceHandle</b>
+### -field hSurfaceHandle
 
 <dd>
 <p>Specifies the user-mode handle to the DirectDraw surface. This handle is only provided to the minidriver when capturing to a DirectDraw surface for preview or overlay purposes.</p>
 </dd>
 
-### -field <b>DirectDrawRect</b>
+### -field DirectDrawRect
 
 <dd>
 <p>Specifies the portion of the DirectDraw surface that has been locked. This is normally the entire surface.</p>
 </dd>
 
-### -field <b>lSurfacePitch</b>
+### -field lSurfacePitch
 
 <dd>
 <p>Contains surface pitch a.k.a stride</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved and should not be used by the minidriver.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved and should not be used by the minidriver.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved and should not be used by the minidriver.</p>
 </dd>
 
-### -field <b>Reserved4</b>
+### -field Reserved4
 
 <dd>
 <p>Reserved and should not be used by the minidriver.</p>
 </dd>
 
-### -field <b>FrameCompletionNumber</b>
+### -field FrameCompletionNumber
 
 <dd>
 <p>An identifying sequence number for the frame in the completed queue. This number is used to verify proper frame order. When this value is 0, the frame was cancelled.</p>
@@ -218,7 +218,7 @@ typedef struct tagKS_FRAME_INFO {
 
 <p>When calculating <b>PictureNumber</b> and <b>DropCount</b>, it is important to use the frame duration specified when the stream was opened, which may not necessarily match the rate at which the device is actually producing images. For example, a USB camera may only produce images at 7.5 fps, but a client could open the stream at 8 fps. In this case, all calculations should use the 8 fps number. </p>
 
-<p>For more information about updating <b>PictureNumber</b> and <b>DropCount</b> see <a href="NULL">Capturing Video</a>.</p>
+<p>For more information about updating <b>PictureNumber</b> and <b>DropCount</b> see <a href="https://msdn.microsoft.com/0adea8fe-1669-4daf-a858-05e014f00a72">Capturing Video</a>.</p>
 
 ## -requirements
 <table>

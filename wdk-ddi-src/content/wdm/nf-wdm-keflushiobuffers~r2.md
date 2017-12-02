@@ -57,19 +57,19 @@ VOID KeFlushIoBuffers(
 ## -parameters
 <dl>
 
-### -param <i>Mdl</i> [in]
+### -param Mdl [in]
 
 <dd>
 <p>A pointer to an MDL that describes the range for the I/O buffer.</p>
 </dd>
 
-### -param <i>ReadOperation</i> [in]
+### -param ReadOperation [in]
 
 <dd>
 <p>Specifies <b>TRUE</b> if the flush is being performed for a read operation, and <b>FALSE</b> for a write operation. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>DmaOperation</i> [in]
+### -param DmaOperation [in]
 
 <dd>
 <p>Specifies <b>TRUE</b> for a DMA transfer, <b>FALSE</b> for PIO.</p>

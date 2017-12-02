@@ -7,7 +7,7 @@ old-location: netvista\ndisinterlockedaddulong.htm
 old-project: netvista
 ms.assetid: d2e31f3c-7152-4df9-8206-a15dee9b641f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisInterlockedAddUlong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,21 +58,21 @@ VOID NdisInterlockedAddUlong(
 ## -parameters
 <dl>
 
-### -param <i>Addend</i> [in]
+### -param Addend [in]
 
 <dd>
 <p>A pointer to the variable for which the value is to be adjusted by the given 
      <i>Increment</i> .</p>
 </dd>
 
-### -param <i>Increment</i> [in]
+### -param Increment [in]
 
 <dd>
 <p>The value to be added to that at 
      <i>Addend</i> .</p>
 </dd>
 
-### -param <i>SpinLock</i> [in]
+### -param SpinLock [in]
 
 <dd>
 <p>A pointer to a caller-initialized spin lock.</p>
@@ -175,4 +175,4 @@ VOID NdisInterlockedAddUlong(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInterlockedAddUlong function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInterlockedAddUlong function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

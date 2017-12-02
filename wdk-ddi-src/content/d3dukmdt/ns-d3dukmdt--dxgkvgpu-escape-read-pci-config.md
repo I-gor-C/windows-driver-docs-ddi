@@ -56,19 +56,19 @@ typedef struct _DXGKVGPU_ESCAPE_READ_PCI_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The escape header being processed.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Offset in bytes in the PCI config space.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size in bytes to read.</p>

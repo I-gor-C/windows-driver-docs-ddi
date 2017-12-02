@@ -57,13 +57,13 @@ NTSTATUS IddCxAdapterInitAsync(
 ## -parameters
 <dl>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>Input arguments to the function</p>
 </dd>
 
-### -param <i>pOutArgs</i> [out]
+### -param pOutArgs [out]
 
 <dd>
 <p>Output arguments to the function</p>

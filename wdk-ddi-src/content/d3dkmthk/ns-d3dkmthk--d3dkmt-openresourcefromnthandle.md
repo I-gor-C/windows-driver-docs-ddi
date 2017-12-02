@@ -68,80 +68,80 @@ typedef struct _D3DKMT_OPENRESOURCEFROMNTHANDLE {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents the device.</p>
 </dd>
 
-### -field <b>hNtHandle</b>
+### -field hNtHandle
 
 <dd>
 <p>[in] An NT handle to the process.</p>
 </dd>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of allocations associated with the resource.</p>
 </dd>
 
-### -field <b>pOpenAllocationInfo2</b>
+### -field pOpenAllocationInfo2
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>PrivateRuntimeDataSize</b>
+### -field PrivateRuntimeDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the buffer pointed to by the <b>pPrivateRuntimeData</b> member.</p>
 </dd>
 
-### -field <b>pPrivateRuntimeData</b>
+### -field pPrivateRuntimeData
 
 <dd>
 <p>[in] A caller-supplied buffer where the runtime private data associated with this resource will be copied to.</p>
 </dd>
 
-### -field <b>ResourcePrivateDriverDataSize</b>
+### -field ResourcePrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the  buffer pointed to by the <b>pResourcePrivateDriverData</b> member.</p>
 </dd>
 
-### -field <b>pResourcePrivateDriverData</b>
+### -field pResourcePrivateDriverData
 
 <dd>
 <p>[in] A caller-supplied buffer where the driver private data associated with the resource will be copied to.</p>
 </dd>
 
-### -field <b>TotalPrivateDriverDataBufferSize</b>
+### -field TotalPrivateDriverDataBufferSize
 
 <dd>
 <p>[in] The size, in bytes, of the buffer pointed to by the <b>pTotalPrivateDriverDataBuffer</b> member.</p>
 <p>[out] The size, in bytes, of  the data written to <b>pTotalPrivateDriverDataBuffer</b>.</p>
 </dd>
 
-### -field <b>pTotalPrivateDriverDataBuffer</b>
+### -field pTotalPrivateDriverDataBuffer
 
 <dd>
 <p>[in] A pointer to a caller-supplied buffer where the driver private data will be stored.</p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[out] A handle to the resource in this process.</p>
 </dd>
 
-### -field <b>hKeyedMutex</b>
+### -field hKeyedMutex
 
 <dd>
 <p>[out] A handle to the keyed mutex in this process.</p>
 </dd>
 
-### -field <b>pKeyedMutexPrivateRuntimeData</b>
+### -field pKeyedMutexPrivateRuntimeData
 
 <dd>
 <p>[in] A buffer that contains initial private data.</p>
@@ -149,13 +149,13 @@ typedef struct _D3DKMT_OPENRESOURCEFROMNTHANDLE {
 <p>If this member has a value of <b>NULL</b>, the value of the <b>KeyedMutexPrivateRuntimeDataSize</b> member must be zero.</p>
 </dd>
 
-### -field <b>KeyedMutexPrivateRuntimeDataSize</b>
+### -field KeyedMutexPrivateRuntimeDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the buffer pointed to by the <b>pKeyedMutexPrivateRuntimeData</b> member.</p>
 </dd>
 
-### -field <b>hSyncObject</b>
+### -field hSyncObject
 
 <dd>
 <p>[out] A handle to the synchronization object in this process.</p>

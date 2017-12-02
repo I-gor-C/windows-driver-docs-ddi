@@ -7,7 +7,7 @@ old-location: netvista\rilsetgeolocationdataparams_2.htm
 old-project: netvista
 ms.assetid: 4e0d035b-5528-4e69-bd6c-9311bf0af4cf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSETGEOLOCATIONDATAPARAMS, RILSETGEOLOCATIONDATAPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILSETGEOLOCATIONDATAPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>locationInfo</b>
+### -field locationInfo
 
 <dd></dd>
 </dl>

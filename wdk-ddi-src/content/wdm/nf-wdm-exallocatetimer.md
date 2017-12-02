@@ -57,19 +57,19 @@ PEX_TIMER ExAllocateTimer(
 ## -parameters
 <dl>
 
-### -param <i>Callback</i> [in, optional]
+### -param Callback [in, optional]
 
 <dd>
 <p>A pointer to a driver-implemented <a href="kernel.extimercallback">ExTimerCallback</a> callback routine. The operating system calls this routine when the timer expires. This parameter is optional and can be <b>NULL</b> if no callback routine is needed.</p>
 </dd>
 
-### -param <i>CallbackContext</i> [in, optional]
+### -param CallbackContext [in, optional]
 
 <dd>
 <p>A context value for the callback routine pointed to by the <i>Callback</i> parameter. The operating system passes this value as a parameter to the <i>ExTimerCallback</i> callback routine, if one is specified. This parameter is typically a pointer to a caller-defined structure that contains context information used by the callback routine. This parameter is optional and can be set to <b>NULL</b> if no context information is needed.</p>
 </dd>
 
-### -param <i>Attributes</i> [in]
+### -param Attributes [in]
 
 <dd>
 <p>The timer attributes. Set this parameter to zero or to the bitwise-OR of one or more of the following timer flag bits.</p>

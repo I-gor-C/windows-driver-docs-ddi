@@ -7,7 +7,7 @@ old-location: netvista\wdiag_ihv_wlan_id.htm
 old-project: netvista
 ms.assetid: 72dc7128-fcbc-4ad8-ac81-e2767ac6ffa2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDIAG_IHV_WLAN_ID,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ typedef struct _WDIAG_IHV_WLAN_ID {
 ## -struct-fields
 <dl>
 
-### -field <b>strProfileName</b>
+### -field strProfileName
 
 <dd>
 <p>A string that defines the IHV profile name.</p>
 </dd>
 
-### -field <b>Ssid</b>
+### -field Ssid
 
 <dd>
 <p>The service set identifier (SSID) of the basic service set (BSS) network. The 
@@ -71,7 +71,7 @@ typedef struct _WDIAG_IHV_WLAN_ID {
      <a href="..\wlantypes\ns-wlantypes--dot11-ssid.md">DOT11_SSID</a> type.</p>
 </dd>
 
-### -field <b>BssType</b>
+### -field BssType
 
 <dd>
 <p>The type of the BSS network. The 
@@ -79,14 +79,14 @@ typedef struct _WDIAG_IHV_WLAN_ID {
      <a href="..\wlantypes\ne-wlantypes--dot11-bss-type.md">DOT11_BSS_TYPE</a> enumeration.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>A flag which, if set to WDIAG_IHV_WLAN_ID_FLAG_SECURITY_ENABLED, indicates that security is
      enabled for this IHV profile. Otherwise, security is not enabled.</p>
 </dd>
 
-### -field <b>dwReasonCode</b>
+### -field dwReasonCode
 
 <dd>
 <p>An error reason code, when available.</p>
@@ -130,4 +130,4 @@ typedef struct _WDIAG_IHV_WLAN_ID {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDIAG_IHV_WLAN_ID structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDIAG_IHV_WLAN_ID structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

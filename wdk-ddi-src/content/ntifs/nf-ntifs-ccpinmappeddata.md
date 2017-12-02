@@ -7,7 +7,7 @@ old-location: ifsk\ccpinmappeddata.htm
 old-project: ifsk
 ms.assetid: aa0903db-fced-4af9-bfc9-2769ed4962a1
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: CcPinMappedData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ BOOLEAN CcPinMappedData(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to a file object for the cached file in which a range of data is to be pinned.</p>
 </dd>
 
-### -param <i>FileOffset</i> [in]
+### -param FileOffset [in]
 
 <dd>
 <p>Pointer to a variable that specifies the starting byte offset within the cached file where the desired data resides.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Length in bytes of the data to be pinned.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Bitmask of flags specifying how the pinning operation is to be performed. ORed combination of one or more of the following values: </p>
@@ -121,7 +121,7 @@ BOOLEAN CcPinMappedData(
 <p> </p>
 </dd>
 
-### -param <i>Bcb</i> [in, out]
+### -param Bcb [in, out]
 
 <dd>
 <p>On the first call this returns a pointer to a buffer control block (BCB). This pointer must be supplied as input on all subsequent calls for this buffer. </p>
@@ -219,4 +219,4 @@ BOOLEAN CcPinMappedData(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcPinMappedData routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcPinMappedData routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

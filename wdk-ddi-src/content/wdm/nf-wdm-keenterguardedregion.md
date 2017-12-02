@@ -136,7 +136,7 @@ VOID KeEnterGuardedRegion(void);
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-keleaveguardedregion.md">KeLeaveGuardedRegion</a>
+<a href="..\wdm\nf-wdm-keleaveguardedregion.md">KeLeaveGuardedRegion</a>
 </dt>
 </dl>
 <p> </p>

@@ -55,13 +55,13 @@ typedef struct _DXVADDI_DECODEINPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>pGuid</b>
+### -field pGuid
 
 <dd>
 <p>[in] A pointer to the GUID that represents the DirectX VA decode type.</p>
 </dd>
 
-### -field <b>VideoDesc</b>
+### -field VideoDesc
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videodesc.md">DXVADDI_VIDEODESC</a> structure for the render target that is supported by the decode type that <b>pGuid</b> points to. </p>

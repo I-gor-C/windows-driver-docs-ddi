@@ -72,113 +72,113 @@ typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN {
 ## -struct-fields
 <dl>
 
-### -field <b>FenceValue</b>
+### -field FenceValue
 
 <dd>
 <p>[in] A 64-bit value that specifies the fence value that is used for the flip.</p>
 </dd>
 
-### -field <b>hLogicalSurface</b>
+### -field hLogicalSurface
 
 <dd>
 <p>[in] A 64-bit value that specifies the handle to a logical surface.</p>
 </dd>
 
-### -field <b>SwapChainIndex</b>
+### -field SwapChainIndex
 
 <dd>
 <p>[in] The index of the surface in the swap chain that is used for the flip.</p>
 </dd>
 
-### -field <b>PresentLimitSemaphoreId</b>
+### -field PresentLimitSemaphoreId
 
 <dd>
 <p>[in] A 64-bit value that identifies the present-limit semaphore.</p>
 </dd>
 
-### -field <b>FlipInterval</b>
+### -field FlipInterval
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi-flipinterval-type.md">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs).</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-flipmodel-presenthistorytokenflags.md">D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS</a> structure that identifies, in bit-field flags, attributes of a flip present-history operation.</p>
 </dd>
 
-### -field <b>hCompSurf</b>
+### -field hCompSurf
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>CompositionSyncKey</b>
+### -field CompositionSyncKey
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>RemainingTokens</b>
+### -field RemainingTokens
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>ScrollRect</b>
+### -field ScrollRect
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>ScrollOffset</b>
+### -field ScrollOffset
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>PresentCount</b>
+### -field PresentCount
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>RevealColor</b>
+### -field RevealColor
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Rotation</b>
+### -field Rotation
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>ScatterBlts</b>
+### -field ScatterBlts
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>hSyncObject</b>
+### -field hSyncObject
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>DirtyRegions</b>
+### -field DirtyRegions
 
 <dd>
 <p>[in] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-dirtyregions.md">D3DKMT_DIRTYREGIONS</a> structure that identifies the active rectangles (dirty regions) of the flip surface.</p>

@@ -58,19 +58,19 @@ typedef struct _ISCSI_DiscoveredTargetPortal2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Socket</b>
+### -field Socket
 
 <dd>
 <p>The socket number of the portal. </p>
 </dd>
 
-### -field <b>Address</b>
+### -field Address
 
 <dd>
 <p>The network address of the portal. </p>
 </dd>
 
-### -field <b>SecurityBitmap</b>
+### -field SecurityBitmap
 
 <dd>
 <p>A bitmap, which is defined in the <i>iSNS specification</i>, that indicates the security characteristics of logon connections that are made to this target portal. The following table describes possible security flag values. </p>
@@ -140,13 +140,13 @@ typedef struct _ISCSI_DiscoveredTargetPortal2 {
 <p>For more information about how to configure the default security characteristics that are assigned of the target portal in the registry, see the Remarks section.</p>
 </dd>
 
-### -field <b>KeySize</b>
+### -field KeySize
 
 <dd>
 <p>The size, in bytes, of the encryption key in the <b>Key</b> member.</p>
 </dd>
 
-### -field <b>Key</b>
+### -field Key
 
 <dd>
 <p>A variable-length array of characters that contains the encryption key that is associated with the portal address.</p>

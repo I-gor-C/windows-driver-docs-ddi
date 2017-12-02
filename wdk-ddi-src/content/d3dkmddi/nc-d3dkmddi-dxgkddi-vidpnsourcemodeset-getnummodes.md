@@ -58,13 +58,13 @@ NTSTATUS APIENTRY pfnGetNumModes(
 ## -parameters
 <dl>
 
-### -param <i>hVidPnSourceModeSet</i> [in]
+### -param hVidPnSourceModeSet [in]
 
 <dd>
 <p>[in] A handle to a VidPN source mode set object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-acquiresourcemodeset.md">pfnAcquireSourceModeSet</a> function of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpn-interface.md">DXGK_VIDPN_INTERFACE</a> interface.</p>
 </dd>
 
-### -param <i>pNumSourceModes</i> [out]
+### -param pNumSourceModes [out]
 
 <dd>
 <p>[out] A pointer to a SIZE_T-typed variable that receives the number of source modes in the set.</p>

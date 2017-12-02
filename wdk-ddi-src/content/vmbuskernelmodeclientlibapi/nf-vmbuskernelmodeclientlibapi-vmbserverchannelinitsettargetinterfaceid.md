@@ -7,7 +7,7 @@ old-location: netvista\vmbserverchannelinitsettargetinterfaceid.htm
 old-project: netvista
 ms.assetid: 09123845-F734-48B6-A593-0368CD195379
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbServerChannelInitSetTargetInterfaceId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,20 +59,20 @@ NTSTATUS
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>A handle for a channel.  </p>
 </dd>
 
-### -param <i>InterfaceType</i> [in]
+### -param InterfaceType [in]
 
 <dd>
 <p>A pointer to the interface type GUID.
 </p>
 </dd>
 
-### -param <i>InterfaceInstance</i> [in]
+### -param InterfaceInstance [in]
 
 <dd>
 <p>A pointer to the instance type GUID.</p>

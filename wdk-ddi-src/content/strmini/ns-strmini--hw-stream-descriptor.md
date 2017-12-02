@@ -56,13 +56,13 @@ typedef struct _HW_STREAM_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>StreamHeader</b>
+### -field StreamHeader
 
 <dd>
 <p>Contains the <a href="..\strmini\ns-strmini--hw-stream-header.md">HW_STREAM_HEADER</a> for the stream descriptor.</p>
 </dd>
 
-### -field <b>StreamInfo</b>
+### -field StreamInfo
 
 <dd>
 <p>Contains the <a href="..\strmini\ns-strmini--hw-stream-information.md">HW_STREAM_INFORMATION</a> block for the zero stream.</p>

@@ -60,25 +60,25 @@ VOID APIENTRY IaSetIndexBuffer(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hBuffer</i> [in]
+### -param hBuffer [in]
 
 <dd>
 <p> A handle to the index buffer to set.</p>
 </dd>
 
-### -param <i>Format</i> [in]
+### -param Format [in]
 
 <dd>
 <p> A DXGI_FORMAT-typed value that indicates the pixel format of the index buffer. Only the DXGI_FORMAT_R16_UINT and DXGI_FORMAT_R32_UINT formats are valid; all other formats are invalid. </p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p> The offset, in bytes, into the index buffer. </p>

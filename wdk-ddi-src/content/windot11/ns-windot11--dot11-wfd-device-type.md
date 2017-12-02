@@ -7,7 +7,7 @@ old-location: netvista\dot11_wfd_device_type.htm
 old-project: netvista
 ms.assetid: 4AE7C35B-D2EA-4987-8195-EDD472C39681
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_WFD_DEVICE_TYPE, DOT11_WFD_DEVICE_TYPE, *PDOT11_WFD_DEVICE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef struct _DOT11_WFD_DEVICE_TYPE {
 ## -struct-fields
 <dl>
 
-### -field <b>CategoryID</b>
+### -field CategoryID
 
 <dd>
 <p>The identifier of the main type category.</p>
 </dd>
 
-### -field <b>SubCategoryID</b>
+### -field SubCategoryID
 
 <dd>
 <p>The identifier of the type subcategory.</p>
 </dd>
 
-### -field <b>OUI[4]</b>
+### -field OUI[4]
 
 <dd>
 <p>The Organizationally Unique Identifier (OUI) assigned to a device.</p>

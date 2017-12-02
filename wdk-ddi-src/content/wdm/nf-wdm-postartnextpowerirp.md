@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>PoStartNextPowerIrp</b> routine signals the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> that the driver is ready to handle the next power <a href="..\ntifs\ns-ntifs--irp.md">IRP</a>. (Windows Server 2003, Windows XP, and Windows 2000 only.)</p>
+<p>The <b>PoStartNextPowerIrp</b> routine signals the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> that the driver is ready to handle the next power <a href="..\wdm\ns-wdm--irp.md">IRP</a>. (Windows Server 2003, Windows XP, and Windows 2000 only.)</p>
 
 
 ## -syntax
@@ -55,7 +55,7 @@ VOID PoStartNextPowerIrp(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>A pointer to an IRP in which the major function code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff550784">IRP_MJ_POWER</a>.</p>
@@ -70,7 +70,7 @@ VOID PoStartNextPowerIrp(
 
 <p>Although power IRPs are completed only once, typically by the bus driver for a device, each driver in the device stack must call <b>PoStartNextPowerIrp</b> as the IRP travels down or back up the stack. Even if a driver fails the IRP, the driver must nevertheless call <b>PoStartNextPowerIrp</b> to signal the power manager that it is ready to handle another power IRP.</p>
 
-<p>The driver must call <b>PoStartNextPowerIrp</b> while the current IRP stack location points to the current driver. Therefore, this routine must be called before <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550355">IoSkipCurrentIrpStackLocation</a>, and <a href="..\ntifs\nf-ntifs-pocalldriver.md">PoCallDriver</a>. As a general rule, a driver should call <b>PoStartNextPowerIrp</b> from its <i>IoCompletion</i> routine associated with the IRP or from the callback routine it passed to <a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a>.</p>
+<p>The driver must call <b>PoStartNextPowerIrp</b> while the current IRP stack location points to the current driver. Therefore, this routine must be called before <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550355">IoSkipCurrentIrpStackLocation</a>, and <a href="..\wdm\nf-wdm-pocalldriver.md">PoCallDriver</a>. As a general rule, a driver should call <b>PoStartNextPowerIrp</b> from its <i>IoCompletion</i> routine associated with the IRP or from the callback routine it passed to <a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a>.</p>
 
 <p>Bus drivers must call <b>PoStartNextPowerIrp</b> before completing each IRP.</p>
 
@@ -143,7 +143,7 @@ VOID PoStartNextPowerIrp(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550355">IoSkipCurrentIrpStackLocation</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550784">IRP_MJ_POWER</a>
@@ -155,7 +155,7 @@ VOID PoStartNextPowerIrp(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-pocalldriver.md">PoCallDriver</a>
+<a href="..\wdm\nf-wdm-pocalldriver.md">PoCallDriver</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a>

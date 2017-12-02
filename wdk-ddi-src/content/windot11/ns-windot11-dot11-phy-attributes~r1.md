@@ -7,7 +7,7 @@ old-location: netvista\dot11_phy_attributes.htm
 old-project: netvista
 ms.assetid: 9e81144e-e562-4f61-83de-7b7659106de8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_PHY_ATTRIBUTES,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,7 @@ typedef struct DOT11_PHY_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_PHY_ATTRIBUTES structure. This member is formatted as an 
@@ -80,19 +80,19 @@ typedef struct DOT11_PHY_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="Type"></a><a id="type"></a><a id="TYPE"></a>Type
+### -field Type
 
 <dd>
 <p>This member must be set to NDIS_OBJECT_TYPE_DEFAULT.</p>
 </dd>
 
-### -field <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a>Revision
+### -field Revision
 
 <dd>
 <p>This member must be set to DOT11_PHY_ATTRIBUTES_REVISION_1.</p>
 </dd>
 
-### -field <a id="Size"></a><a id="size"></a><a id="SIZE"></a>Size
+### -field Size
 
 <dd>
 <p>This member must be set to 
@@ -103,14 +103,14 @@ typedef struct DOT11_PHY_ATTRIBUTES {
       <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>PhyType</b>
+### -field PhyType
 
 <dd>
 <p>The type of the PHY as specified by a 
      <a href="..\windot11\ne-windot11--dot11-phy-type.md">DOT11_PHY_TYPE</a> enumerator value.</p>
 </dd>
 
-### -field <b>bHardwarePhyState</b>
+### -field bHardwarePhyState
 
 <dd>
 <p>A Boolean value that specifies the hardware power state of the PHY. If <b>TRUE</b>, the hardware power
@@ -124,7 +124,7 @@ typedef struct DOT11_PHY_ATTRIBUTES {
 <div> </div>
 </dd>
 
-### -field <b>bSoftwarePhyState</b>
+### -field bSoftwarePhyState
 
 <dd>
 <p>A Boolean value that specifies the software power state of the PHY. If <b>TRUE</b>, the software power
@@ -137,7 +137,7 @@ typedef struct DOT11_PHY_ATTRIBUTES {
 <div> </div>
 </dd>
 
-### -field <b>bCFPollable</b>
+### -field bCFPollable
 
 <dd>
 <p>A Boolean value that, if set to <b>TRUE</b>, indicates that the 802.11 station supports CF-Poll frames. For
@@ -146,7 +146,7 @@ typedef struct DOT11_PHY_ATTRIBUTES {
       when the NIC is in the ExtAP mode.</p>
 </dd>
 
-### -field <b>uMPDUMaxLength</b>
+### -field uMPDUMaxLength
 
 <dd>
 <p>The maximum length, in bytes, of a media access control (MAC) protocol data unit (MPDU) frame that
@@ -157,14 +157,14 @@ typedef struct DOT11_PHY_ATTRIBUTES {
 <div> </div>
 </dd>
 
-### -field <b>TempType</b>
+### -field TempType
 
 <dd>
 <p>The PHY's operating temperature range, defined through a 
       <a href="..\windot11\ne-windot11--dot11-temp-type.md">DOT11_TEMP_TYPE</a> enumeration value.</p>
 </dd>
 
-### -field <b>DiversitySupport</b>
+### -field DiversitySupport
 
 <dd>
 <p>The PHY's type of antenna diversity, defined through a 
@@ -172,7 +172,7 @@ typedef struct DOT11_PHY_ATTRIBUTES {
       value.</p>
 </dd>
 
-### -field <b>HRDSSSAttributes</b>
+### -field HRDSSSAttributes
 
 <dd>
 <p>The PHY-specific attributes of a high-rate direct-sequence spread spectrum (HRDSS) PHY type. The
@@ -180,7 +180,7 @@ typedef struct DOT11_PHY_ATTRIBUTES {
        <b>PhyType</b> member is set to dot11_phy_type_hrdsss.</p>
 </dd>
 
-### -field <b>OFDMAttributes</b>
+### -field OFDMAttributes
 
 <dd>
 <p>The PHY-specific attributes of an orthogonal frequency division multiplexing (OFDM) PHY type. The
@@ -188,7 +188,7 @@ typedef struct DOT11_PHY_ATTRIBUTES {
        <b>PhyType</b> member is set to dot11_phy_type_ofdm.</p>
 </dd>
 
-### -field <b>ERPAttributes</b>
+### -field ERPAttributes
 
 <dd>
 <p>The PHY-specific attributes of an extended-rate PHY (ERP) type. The miniport driver must use this
@@ -196,7 +196,7 @@ typedef struct DOT11_PHY_ATTRIBUTES {
        <b>PhyType</b> member is set to dot11_phy_type_erp.</p>
 </dd>
 
-### -field <b>uNumberSupportedPowerLevels</b>
+### -field uNumberSupportedPowerLevels
 
 <dd>
 <p>The number of power levels within the 
@@ -204,21 +204,21 @@ typedef struct DOT11_PHY_ATTRIBUTES {
       <b>uNumOfSupportedPowerLevels</b> must have a value from 1 through 8.</p>
 </dd>
 
-### -field <b>TxPowerLevels</b>
+### -field TxPowerLevels
 
 <dd>
 <p>An array of the supported transmit power levels in units of milliwatts (mWs). Each power level must
       be a value from 0 through 1000.</p>
 </dd>
 
-### -field <b>uNumDataRateMappingEntries</b>
+### -field uNumDataRateMappingEntries
 
 <dd>
 <p>The number of data rates within the 
       <b>DataRateMappingEntries</b> array.</p>
 </dd>
 
-### -field <b>DataRateMappingEntries</b>
+### -field DataRateMappingEntries
 
 <dd>
 <p>An array of the data rates supported by the PHY. Each entry is formatted as a 
@@ -226,7 +226,7 @@ typedef struct DOT11_PHY_ATTRIBUTES {
       DOT11_DATA_RATE_MAPPING_ENTRY</a> structure.</p>
 </dd>
 
-### -field <b>SupportedDataRatesValue</b>
+### -field SupportedDataRatesValue
 
 <dd>
 <p>An array of the following data rates supported by the PHY:</p>
@@ -323,4 +323,4 @@ typedef struct DOT11_PHY_ATTRIBUTES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_ATTRIBUTES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

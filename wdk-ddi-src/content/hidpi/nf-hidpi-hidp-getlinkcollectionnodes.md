@@ -56,19 +56,19 @@ NTSTATUS __stdcall HidP_GetLinkCollectionNodes(
 ## -parameters
 <dl>
 
-### -param <i>LinkCollectionNodes</i> [out]
+### -param LinkCollectionNodes [out]
 
 <dd>
 <p>Pointer to a caller-allocated array of HIDP_LINK_COLLECTION_NODE structures in which <b>HidP_GetLinkCollectionNodes</b> returns a top-level collection's link collection array.</p>
 </dd>
 
-### -param <i>LinkCollectionNodesLength</i> [in, out]
+### -param LinkCollectionNodesLength [in, out]
 
 <dd>
 <p>Specifies, on input, the length, in array elements, of the <i>LinkCollectionNodes</i> buffer. On output, the routine sets <i>LinkCollectionNodesLength</i> to the number of entries in the array that it set.</p>
 </dd>
 
-### -param <i>PreparsedData</i> [in]
+### -param PreparsedData [in]
 
 <dd>
 <p>Pointer to the preparsed data of the top-level collection for which this routine returns a link collection array.</p>
@@ -89,7 +89,7 @@ NTSTATUS __stdcall HidP_GetLinkCollectionNodes(
 
 <p>If <b>HidP_GetLinkCollectionNodes</b> returns the status value HIDP_STATUS_BUFFER_TOO_SMALL, it also sets <i>LinkCollectionNodesLength</i> to the length, in array elements, required to hold the link collection nodes information.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

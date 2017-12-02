@@ -59,19 +59,19 @@ BOOLEAN AcceptProcessorNotification(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>The device handle for the PEP for the target processor. If <b>NULL</b>,  the notification does not target a specific processor.</p>
 </dd>
 
-### -param <i>Notification</i> [in]
+### -param Notification [in]
 
 <dd>
 <p>The PPM notification ID. This parameter specifies the type of PPM notification that PoFx is sending. For a list of PPM notification IDs, see <a href="kernel.processor_power_management__ppm__notifications">Processor power management (PPM) notifications</a>.</p>
 </dd>
 
-### -param <i>Data</i> [in, out, optional]
+### -param Data [in, out, optional]
 
 <dd>
 <p>A pointer to a PoFx-allocated structure that contains the input and/or output data for this notification. The type of this structure depends on the notification ID specified by <i>Notification</i>. For a list of the structure types that are defined for the various PPM notification IDs, see <a href="kernel.processor_power_management__ppm__notifications">Processor power management (PPM) notifications</a>.</p>

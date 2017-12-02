@@ -7,7 +7,7 @@ old-location: ifsk\fltoplockfsctrl.htm
 old-project: ifsk
 ms.assetid: 50fba819-7a6c-472d-a8e3-5790bc6ec249
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltOplockFsctrl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ FLT_PREOP_CALLBACK_STATUS FltOplockFsctrl(
 ## -parameters
 <dl>
 
-### -param <i>Oplock</i> [in]
+### -param Oplock [in]
 
 <dd>
 <p>Opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>. </p>
 </dd>
 
-### -param <i>CallbackData</i> [in]
+### -param CallbackData [in]
 
 <dd>
 <p>Pointer to the callback data structure for the I/O operation (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>). This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>OpenCount</i> [in]
+### -param OpenCount [in]
 
 <dd>
 <p>Number of user handles for the file, if an exclusive oplock is being requested. Setting a nonzero value for a level 2, R, or RH oplock request indicates that there are byte-range locks on the file. For information about oplock types, see <a href="https://msdn.microsoft.com/e9a45ae0-0ec8-4d6c-8486-ae88bdaa1f8c">Oplock Semantics Overview</a>. </p>
@@ -241,4 +241,4 @@ FLT_PREOP_CALLBACK_STATUS FltOplockFsctrl(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltOplockFsctrl routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltOplockFsctrl routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

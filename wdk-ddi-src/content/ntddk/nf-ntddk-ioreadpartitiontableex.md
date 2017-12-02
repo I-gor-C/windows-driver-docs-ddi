@@ -55,13 +55,13 @@ NTSTATUS IoReadPartitionTableEx(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object for the disk whose partitions are to be read.</p>
 </dd>
 
-### -param <i>PartitionBuffer</i> [out]
+### -param PartitionBuffer [out]
 
 <dd>
 <p>Pointer to an uninitialized address. If successful, <b>IoReadPartitionTableEx</b> allocates the memory for this buffer from nonpaged pool and returns the drive layout information in it.</p>

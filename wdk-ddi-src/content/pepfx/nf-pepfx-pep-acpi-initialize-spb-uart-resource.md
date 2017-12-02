@@ -69,25 +69,25 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE(
 ## -parameters
 <dl>
 
-### -param <i>BaudRate</i> [in]
+### -param BaudRate [in]
 
 <dd>
 <p>Specifies the baud rate of the connection.</p>
 </dd>
 
-### -param <i>BitsPerByte</i> [in]
+### -param BitsPerByte [in]
 
 <dd>
 <p>Specifies the number of bits per byte of data.</p>
 </dd>
 
-### -param <i>StopBits</i> [in]
+### -param StopBits [in]
 
 <dd>
 <p>Specifies the stop bits used in the connection.</p>
 </dd>
 
-### -param <i>LinesInUse</i> [in]
+### -param LinesInUse [in]
 
 <dd>
 <p>Flag indicating the serial lines that are enabled. A value of 1 in the bit positions indicates that the line is enabled.</p>
@@ -99,7 +99,7 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE(
 <tr>
 <td width="40%"><a id="0"></a><dl>
 
-### -param <b>0</b>
+### -param 0
 
 </dl>
 </td>
@@ -110,7 +110,7 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE(
 <tr>
 <td width="40%"><a id="1"></a><dl>
 
-### -param <b>1</b>
+### -param 1
 
 </dl>
 </td>
@@ -121,7 +121,7 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE(
 <tr>
 <td width="40%"><a id="2"></a><dl>
 
-### -param <b>2</b>
+### -param 2
 
 </dl>
 </td>
@@ -132,7 +132,7 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE(
 <tr>
 <td width="40%"><a id="3"></a><dl>
 
-### -param <b>3</b>
+### -param 3
 
 </dl>
 </td>
@@ -143,7 +143,7 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE(
 <tr>
 <td width="40%"><a id="4"></a><dl>
 
-### -param <b>4</b>
+### -param 4
 
 </dl>
 </td>
@@ -154,7 +154,7 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE(
 <tr>
 <td width="40%"><a id="5"></a><dl>
 
-### -param <b>5</b>
+### -param 5
 
 </dl>
 </td>
@@ -165,7 +165,7 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE(
 <tr>
 <td width="40%"><a id="6"></a><dl>
 
-### -param <b>6</b>
+### -param 6
 
 </dl>
 </td>
@@ -176,7 +176,7 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE(
 <tr>
 <td width="40%"><a id="7"></a><dl>
 
-### -param <b>7</b>
+### -param 7
 
 </dl>
 </td>
@@ -188,13 +188,13 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE(
 <p> </p>
 </dd>
 
-### -param <i>IsBigEndian</i> [in]
+### -param IsBigEndian [in]
 
 <dd>
 <p>Indicates if the most significant bits of data are in the lowest address. </p>
 </dd>
 
-### -param <i>Parity</i> [in]
+### -param Parity [in]
 
 <dd>
 <p>Specifies the parity of the connection.</p>
@@ -267,25 +267,25 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE(
 <p> </p>
 </dd>
 
-### -param <i>FlowControl</i> [in]
+### -param FlowControl [in]
 
 <dd>
 <p>Specifies the type of flow control used by the connection.</p>
 </dd>
 
-### -param <i>RxSize</i> [in]
+### -param RxSize [in]
 
 <dd>
 <p>Specifies the maximum receive buffer size, in bytes, that is supported by this connection.</p>
 </dd>
 
-### -param <i>TxSize</i> [in]
+### -param TxSize [in]
 
 <dd>
 <p>Specifies the maximum transmit buffer size, in bytes, that is supported by this connection.</p>
 </dd>
 
-### -param <i>ResourceSource</i> [in]
+### -param ResourceSource [in]
 
 <dd>
 <p>The name of the serial bus controller device to which this
@@ -294,37 +294,37 @@ qualified path, a relative path, or a simple name segment
 that utilizes the namespace search rules.</p>
 </dd>
 
-### -param <i>ResourceSourceIndex</i> [in]
+### -param ResourceSourceIndex [in]
 
 <dd>
 <p>This parameter should always be zero.</p>
 </dd>
 
-### -param <i>ResourceUsage</i> [in]
+### -param ResourceUsage [in]
 
 <dd>
 <p>Indicates if this resource is in use.</p>
 </dd>
 
-### -param <i>SharedMode</i> [in]
+### -param SharedMode [in]
 
 <dd>
 <p>Indicates if this resource is shared.</p>
 </dd>
 
-### -param <i>VendorData</i> [in]
+### -param VendorData [in]
 
 <dd>
 <p>A pointer to optional data that is specific to the serial bus connection type.</p>
 </dd>
 
-### -param <i>VendorDataLength</i> [in]
+### -param VendorDataLength [in]
 
 <dd>
 <p>The length of the buffer pointed to by the <i>VendorData</i> parameter.</p>
 </dd>
 
-### -param <i>Resource</i> [out]
+### -param Resource [out]
 
 <dd>
 <p>A pointer to the resource. The structure behind the pointer is of type <a href="..\pepfx\ns-pepfx--pep-acpi-spb-uart-resource.md">PEP_ACPI_SPB_UART_RESOURCE</a>.</p>

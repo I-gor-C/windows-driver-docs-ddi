@@ -7,7 +7,7 @@ old-location: ifsk\fltreadfile.htm
 old-project: ifsk
 ms.assetid: 3ceacb96-1c60-4310-b96f-6fb396c1d6ce
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltReadFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,19 +62,19 @@ NTSTATUS FltReadFile(
 ## -parameters
 <dl>
 
-### -param <i>InitiatingInstance</i> [in]
+### -param InitiatingInstance [in]
 
 <dd>
 <p>Opaque instance pointer for the minifilter driver instance that is initiating the read request. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to a file object for the file that the data is to be read from. This file object must be currently open. Calling <b>FltReadFile</b> when the file object is not yet open or is no longer open (for example, in a pre-create or post-cleanup callback routine) causes the system to ASSERT on a checked build. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>ByteOffset</i> [in, optional]
+### -param ByteOffset [in, optional]
 
 <dd>
 <p>Pointer to a caller-allocated variable that specifies the starting byte offset within the file where the read operation is to begin. </p>
@@ -83,19 +83,19 @@ NTSTATUS FltReadFile(
 <p>If the file object that <i>FileObject</i> points to was opened for asynchronous I/O, this parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Size, in bytes, of the buffer that the <i>Buffer</i> parameter points to. </p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that receives the data that is read from the file. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Bitmask of flags specifying the type of read operation to be performed. </p>
@@ -142,19 +142,19 @@ NTSTATUS FltReadFile(
 <p> </p>
 </dd>
 
-### -param <i>BytesRead</i> [out, optional]
+### -param BytesRead [out, optional]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the number of bytes read from the file. If <i>CallbackRoutine</i> is not <b>NULL</b>, this parameter is ignored. Otherwise, this parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>CallbackRoutine</i> [in, optional]
+### -param CallbackRoutine [in, optional]
 
 <dd>
 <p>Pointer to a <a href="..\fltkernel\nc-fltkernel-pflt-completed-async-io-callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>-typed callback routine to call when the read operation is complete. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>CallbackContext</i> [in, optional]
+### -param CallbackContext [in, optional]
 
 <dd>
 <p>Context pointer to be passed to the <i>CallbackRoutine</i> if one is present. This parameter is optional and can be <b>NULL</b>. If <i>CallbackRoutine</i> is <b>NULL</b>, this parameter is ignored. </p>
@@ -275,4 +275,4 @@ NTSTATUS FltReadFile(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltReadFile function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltReadFile function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

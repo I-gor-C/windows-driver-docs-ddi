@@ -58,13 +58,13 @@ typedef struct _DMA_TRANSFER_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of the <b>DMA_TRANSFER_INFO_<i>XXX</i></b> structure that follows this member. For a <a href="..\wdm\ns-wdm--dma-transfer-info-v1.md">DMA_TRANSFER_INFO_V1</a> structure, set this member to DMA_TRANSFER_INFO_VERSION1 before calling the <a href="kernel.getdmatransferinfo">GetDmaTransferInfo</a> routine.</p>
 </dd>
 
-### -field <b>V1</b>
+### -field V1
 
 <dd>
 <p>The allocation requirements for a scatter/gather list. For more information, see <a href="..\wdm\ns-wdm--dma-transfer-info-v1.md">DMA_TRANSFER_INFO_V1</a>.</p>

@@ -58,19 +58,19 @@ HRESULT IddCxSwapChainGetDirtyRects(
 ## -parameters
 <dl>
 
-### -param <i>SwapChainObject</i> [in]
+### -param SwapChainObject [in]
 
 <dd>
 <p>The swap-chain object whose current frame is being queried.</p>
 </dd>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>Input arguments of the function</p>
 </dd>
 
-### -param <i>pOutArgs</i> [out]
+### -param pOutArgs [out]
 
 <dd>
 <p>Output  arguments of the function</p>

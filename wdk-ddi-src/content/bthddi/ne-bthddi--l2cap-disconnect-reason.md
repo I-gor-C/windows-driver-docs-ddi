@@ -58,27 +58,27 @@ typedef enum _L2CAP_DISCONNECT_REASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="HciDisconnect"></a><a id="hcidisconnect"></a><a id="HCIDISCONNECT"></a><b>HciDisconnect</b>
+### -field HciDisconnect
 
 <dd>
 <p>The value specifies for the profile driver that the Bluetooth driver stack has received a
      disconnect notification from the host controller interface (HCI) layer.</p>
 </dd>
 
-### -field <a id="L2capDisconnectRequest"></a><a id="l2capdisconnectrequest"></a><a id="L2CAPDISCONNECTREQUEST"></a><b>L2capDisconnectRequest</b>
+### -field L2capDisconnectRequest
 
 <dd>
 <p>This value specifies for the profile driver that a disconnect request has been received from a
      remote device.</p>
 </dd>
 
-### -field <a id="RadioPoweredDown"></a><a id="radiopowereddown"></a><a id="RADIOPOWEREDDOWN"></a><b>RadioPoweredDown</b>
+### -field RadioPoweredDown
 
 <dd>
 <p>This value specifies for the profile driver that the local radio has been turned off.</p>
 </dd>
 
-### -field <a id="HardwareRemoval"></a><a id="hardwareremoval"></a><a id="HARDWAREREMOVAL"></a><b>HardwareRemoval</b>
+### -field HardwareRemoval
 
 <dd>
 <p>This value specifies for the profile driver that the local radio has been physically

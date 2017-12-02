@@ -58,31 +58,31 @@ NTSTATUS ZwQueryObject(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in, optional]
+### -param Handle [in, optional]
 
 <dd>
 <p>A handle to the object to obtain information about.</p>
 </dd>
 
-### -param <i>ObjectInformationClass</i> [in]
+### -param ObjectInformationClass [in]
 
 <dd>
 <p>Specifies an <a href="..\ntifs\ne-ntifs--object-information-class.md">OBJECT_INFORMATION_CLASS</a> value that determines the type of information returned in the <i>ObjectInformation</i> buffer.</p>
 </dd>
 
-### -param <i>ObjectInformation</i> [out, optional]
+### -param ObjectInformation [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives the requested information.</p>
 </dd>
 
-### -param <i>ObjectInformationLength</i> [in]
+### -param ObjectInformationLength [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the <i>ObjectInformation</i> buffer.</p>
 </dd>
 
-### -param <i>ReturnLength</i> [out, optional]
+### -param ReturnLength [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives the size, in bytes, of the requested key information. If <b>ZwQueryObject</b> returns STATUS_SUCCESS, the variable contains the amount of data returned. If <b>ZwQueryObject</b> returns STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL, you can use the value of the variable to determine the required buffer size.</p>

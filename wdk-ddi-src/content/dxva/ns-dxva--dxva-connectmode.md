@@ -55,13 +55,13 @@ typedef struct _DXVA_ConnectMode {
 ## -struct-fields
 <dl>
 
-### -field <b>guidMode</b>
+### -field guidMode
 
 <dd>
 <p>Specifies the GUID associated with the <a href="https://msdn.microsoft.com/043d5867-d761-47eb-99de-5022a9ee6e7f">restricted profile</a> to be used. </p>
 </dd>
 
-### -field <b>wRestrictedMode</b>
+### -field wRestrictedMode
 
 <dd>
 <p>Specifies the numeric identifier of the restricted profile to be used. </p>

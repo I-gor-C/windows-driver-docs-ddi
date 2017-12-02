@@ -7,7 +7,7 @@ old-location: netvista\DereferenceSwitchNic.htm
 old-project: netvista
 ms.assetid: 58C72F81-07B9-45FE-A8BA-0405DBE4CA20
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,23 +62,23 @@ NDIS_STATUS DereferenceSwitchNic(
 ## -parameters
 <dl>
 
-### -param <i>NdisSwitchContext</i> [in]
+### -param NdisSwitchContext [in]
 
 <dd>
 <p>An NDIS_SWITCH_CONTEXT value that contains the handle of the extensible switch module to which the Hyper-V extensible switch extension is attached. When the extension calls <a href="..\ndis\nf-ndis-ndisfgetoptionalswitchhandlers.md">NdisFGetOptionalSwitchHandlers</a>,  this handle is returned through the <i>NdisSwitchContext</i> parameter.</p>
 </dd>
 
-### -param <i>SwitchPortId</i> [in]
+### -param SwitchPortId [in]
 
 <dd>
 <p>An NDIS_SWITCH_PORT_ID value that contains the unique identifier of the extensible switch port  to which the virtual network adapter is connected.</p>
 </dd>
 
-### -param <i>SwitchNicIndex</i> [in]
+### -param SwitchNicIndex [in]
 
 <dd>
 <p>An NDIS_SWITCH_NIC_INDEX value that specifies the index of the virtual network adapter for which the extensible switch reference counter is to be incremented.</p>
-<p>For more information on NDIS_SWITCH_NIC_INDEX values, see <a href="NULL">Network Adapter Index Values</a>.</p>
+<p>For more information on NDIS_SWITCH_NIC_INDEX values, see <a href="netvista.network_adapter_index_values">Network Adapter Index Values</a>.</p>
 </dd>
 </dl>
 
@@ -147,4 +147,4 @@ NDIS_STATUS DereferenceSwitchNic(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_DEREFERENCE_SWITCH_NIC callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_DEREFERENCE_SWITCH_NIC callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

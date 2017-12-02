@@ -57,19 +57,19 @@ typedef enum _UCM_POWER_ROLE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UcmPowerRoleInvalid"></a><a id="ucmpowerroleinvalid"></a><a id="UCMPOWERROLEINVALID"></a><b>UcmPowerRoleInvalid</b>
+### -field UcmPowerRoleInvalid
 
 <dd>
 <p>Indicates the power role state is invalid.</p>
 </dd>
 
-### -field <a id="UcmPowerRoleSink"></a><a id="ucmpowerrolesink"></a><a id="UCMPOWERROLESINK"></a><b>UcmPowerRoleSink</b>
+### -field UcmPowerRoleSink
 
 <dd>
 <p>Indicates the power role is set to sink power.</p>
 </dd>
 
-### -field <a id="UcmPowerRoleSource"></a><a id="ucmpowerrolesource"></a><a id="UCMPOWERROLESOURCE"></a><b>UcmPowerRoleSource</b>
+### -field UcmPowerRoleSource
 
 <dd>
 <p>Indicates the power role is set to source power. </p>
@@ -128,13 +128,13 @@ typedef enum _UCM_POWER_ROLE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucm_connector_pd_config">UCM_CONNECTOR_PD_CONFIG</a>
+<a href="..\ucmmanager\ns-ucmmanager--ucm-connector-pd-config.md">UCM_CONNECTOR_PD_CONFIG</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt187914">UcmConnectorPowerDirectionChanged</a>
 </dt>
 <dt>
-<a href="buses.evt_ucm_connector_set_power_role">EVT_UCM_CONNECTOR_SET_POWER_ROLE</a>
+<a href="..\ucmmanager\nc-ucmmanager-evt-ucm-connector-set-power-role.md">EVT_UCM_CONNECTOR_SET_POWER_ROLE</a>
 </dt>
 </dl>
 <p> </p>

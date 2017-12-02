@@ -54,7 +54,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTEnumAdapters(
 ## -parameters
 <dl>
 
-### -param <i>pEnumAdapters</i> [in, out]
+### -param pEnumAdapters [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-enumadapters.md">D3DKMT_ENUMADAPTERS</a> structure that lists all graphics adapters and their characteristics.</p>

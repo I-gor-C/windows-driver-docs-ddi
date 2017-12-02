@@ -56,13 +56,13 @@ typedef struct _MM_PHYSICAL_ADDRESS_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>PhysicalAddress</b>
+### -field PhysicalAddress
 
 <dd>
 <p>The starting physical address of the range. This address must be aligned to a page boundary in physical memory.</p>
 </dd>
 
-### -field <b>NumberOfBytes</b>
+### -field NumberOfBytes
 
 <dd>
 <p>The number of bytes in the range. This member must be nonzero and an integer multiple of the memory page size.</p>

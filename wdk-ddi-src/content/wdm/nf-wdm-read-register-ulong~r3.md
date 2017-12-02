@@ -55,7 +55,7 @@ ULONG READ_REGISTER_ULONG(
 ## -parameters
 <dl>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>Pointer to the register address, which must be a mapped range in memory space. </p>

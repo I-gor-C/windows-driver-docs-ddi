@@ -59,37 +59,37 @@ typedef struct _D3DDDIARG_DRAWINDEXEDPRIMITIVE {
 ## -struct-fields
 <dl>
 
-### -field <b>PrimitiveType</b>
+### -field PrimitiveType
 
 <dd>
 <p>[in] A D3DPRIMITIVETYPE-typed value that indicates the type of primitive to draw. This member can be one of the following values: D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP, or D3DPT_TRIANGLEFAN. For more information about D3DPRIMITIVETYPE, see the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -field <b>BaseVertexIndex</b>
+### -field BaseVertexIndex
 
 <dd>
 <p>[in] The number that should be added to each index that is referenced by the various primitives to determine the actual index of the vertex elements in each vertex stream.</p>
 </dd>
 
-### -field <b>MinIndex</b>
+### -field MinIndex
 
 <dd>
 <p>[in] The minimum index of a range of vertices that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.</p>
 </dd>
 
-### -field <b>NumVertices</b>
+### -field NumVertices
 
 <dd>
 <p>[in] The number of vertices in a range that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.</p>
 </dd>
 
-### -field <b>StartIndex</b>
+### -field StartIndex
 
 <dd>
 <p>[in] The first index in the index buffer from which indices are read to draw the primitives.</p>
 </dd>
 
-### -field <b>PrimitiveCount</b>
+### -field PrimitiveCount
 
 <dd>
 <p>[in] The number of triangles, lines, or points to draw for the given primitive. </p>

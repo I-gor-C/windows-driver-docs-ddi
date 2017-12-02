@@ -7,7 +7,7 @@ old-location: debugger\getexceptionfilterparameters.htm
 old-project: debugger
 ms.assetid: 6c3db06a-0305-480f-ab7f-38e4295ebe9b
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl, GetExceptionFilterParameters, IDebugControl::GetExceptionFilterParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ HRESULT GetExceptionFilterParameters(
 ## -parameters
 <dl>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>Specifies the number of exception filters for which to return parameters.</p>
 </dd>
 
-### -param <i>Codes</i> [in, optional]
+### -param Codes [in, optional]
 
 <dd>
 <p>Specifies an array of exception codes.  The parameters for the exception filters with these exception codes will be returned.  If <i>Codes</i> is <b>NULL</b>, <i>Start</i> is used instead.</p>
 </dd>
 
-### -param <i>Start</i> [in]
+### -param Start [in]
 
 <dd>
 <p>Specifies the index of the first exception filter.  The parameters for the exception filters starting at <i>Start</i> will be returned.  If <i>Codes</i> is not <b>NULL</b>, <i>Start</i> is ignored.</p>
 </dd>
 
-### -param <i>Params</i> [out]
+### -param Params [out]
 
 <dd>
 <p>Receives the parameters for the exception filters specified by <i>Codes</i> or <i>Start</i>.  <i>Params</i> is an array of elements of type <a href="..\dbgeng\ns-dbgeng--debug-exception-filter-parameters.md">DEBUG_EXCEPTION_FILTER_PARAMETERS</a>.</p>
@@ -83,7 +83,7 @@ HRESULT GetExceptionFilterParameters(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 
@@ -139,4 +139,4 @@ HRESULT GetExceptionFilterParameters(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::GetExceptionFilterParameters method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::GetExceptionFilterParameters method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

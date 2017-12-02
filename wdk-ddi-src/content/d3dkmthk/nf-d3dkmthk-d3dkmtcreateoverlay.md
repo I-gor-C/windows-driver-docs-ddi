@@ -54,7 +54,7 @@ NTSTATUS D3DKMTCreateOverlay(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createoverlay.md">D3DKMT_CREATEOVERLAY</a> structure that describes overlay hardware.</p>

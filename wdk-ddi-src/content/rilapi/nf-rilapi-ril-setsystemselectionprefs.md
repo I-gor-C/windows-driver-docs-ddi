@@ -7,7 +7,7 @@ old-location: netvista\ril_setsystemselectionprefs.htm
 old-project: netvista
 ms.assetid: 57384690-9fe0-4fee-a578-5451e57cfc6b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SetSystemSelectionPrefs
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_SetSystemSelectionPrefs(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwFlags</i> 
+### -param dwFlags 
 
 <dd></dd>
 
-### -param <i>lpRilSystemSelectionPrefs</i> 
+### -param lpRilSystemSelectionPrefs 
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilexecutorfocusstate.htm
 old-project: netvista
 ms.assetid: 74fc88c0-3edf-4831-a03b-4ace6ca2ec04
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILEXECUTORFOCUSSTATE, RILEXECUTORFOCUSSTATE, *LPRILEXECUTORFOCUSSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _RILEXECUTORFOCUSSTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwNumberOfExecutors</b>
+### -field dwNumberOfExecutors
 
 <dd></dd>
 
-### -field <b>fFocusStates</b>
+### -field fFocusStates
 
 <dd></dd>
 </dl>

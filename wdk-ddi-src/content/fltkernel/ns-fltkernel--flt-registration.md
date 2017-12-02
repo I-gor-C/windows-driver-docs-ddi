@@ -7,7 +7,7 @@ old-location: ifsk\flt_registration.htm
 old-project: ifsk
 ms.assetid: 3313af42-0e0a-4ad0-b0bb-0afb795e24fd
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FLT_REGISTRATION, FLT_REGISTRATION, *PFLT_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,19 +73,19 @@ typedef struct _FLT_REGISTRATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of the FLT_REGISTRATION structure. Minifilter drivers must set this member to <b>sizeof</b>(FLT_REGISTRATION). </p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The revision level of the FLT_REGISTRATION structure. Minifilter drivers must set this member to FLT_REGISTRATION_VERSION. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitmask of minifilter registration flags. This member can be <b>NULL</b> or a combination of the following. </p>
@@ -97,7 +97,7 @@ typedef struct _FLT_REGISTRATION {
 <tr>
 <td width="40%"><a id="FLTFL_REGISTRATION_DO_NOT_SUPPORT_SERVICE_STOP"></a><a id="fltfl_registration_do_not_support_service_stop"></a><dl>
 
-### -field <b>FLTFL_REGISTRATION_DO_NOT_SUPPORT_SERVICE_STOP</b>
+### -field FLTFL_REGISTRATION_DO_NOT_SUPPORT_SERVICE_STOP
 
 </dl>
 </td>
@@ -108,7 +108,7 @@ typedef struct _FLT_REGISTRATION {
 <tr>
 <td width="40%"><a id="FLTFL_REGISTRATION_SUPPORT_NPFS_MSFS"></a><a id="fltfl_registration_support_npfs_msfs"></a><dl>
 
-### -field <b>FLTFL_REGISTRATION_SUPPORT_NPFS_MSFS</b>
+### -field FLTFL_REGISTRATION_SUPPORT_NPFS_MSFS
 
 </dl>
 </td>
@@ -119,7 +119,7 @@ typedef struct _FLT_REGISTRATION {
 <tr>
 <td width="40%"><a id="FLTFL_REGISTRATION_SUPPORT_DAX_VOLUME"></a><a id="fltfl_registration_support_dax_volume"></a><dl>
 
-### -field <b>FLTFL_REGISTRATION_SUPPORT_DAX_VOLUME</b>
+### -field FLTFL_REGISTRATION_SUPPORT_DAX_VOLUME
 
 </dl>
 </td>
@@ -131,73 +131,73 @@ typedef struct _FLT_REGISTRATION {
 <p> </p>
 </dd>
 
-### -field <b>ContextRegistration</b>
+### -field ContextRegistration
 
 <dd>
 <p> A variable-length array of <a href="..\fltkernel\ns-fltkernel--flt-context-registration.md">FLT_CONTEXT_REGISTRATION</a> structures, one for each context type that the minifilter uses. The last element in the array must be {FLT_CONTEXT_END}. </p>
 </dd>
 
-### -field <b>OperationRegistration</b>
+### -field OperationRegistration
 
 <dd>
 <p>A variable-length array of <a href="..\fltkernel\ns-fltkernel--flt-operation-registration.md">FLT_OPERATION_REGISTRATION</a> structures, one for each type of I/O for which the minifilter registers preoperation (<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) and postoperation (<a href="..\fltkernel\nc-fltkernel-pflt-post-operation-callback.md">PFLT_POST_OPERATION_CALLBACK</a>) callback routines. The last element in the array must be {IRP_MJ_OPERATION_END}. </p>
 </dd>
 
-### -field <b>FilterUnloadCallback</b>
+### -field FilterUnloadCallback
 
 <dd>
 <p>A pointer to a routine of type <a href="..\fltkernel\nc-fltkernel-pflt-filter-unload-callback.md">PFLT_FILTER_UNLOAD_CALLBACK</a> to be registered as the minifilter's <i>FilterUnloadCallback</i> routine. This member is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -field <b>InstanceSetupCallback</b>
+### -field InstanceSetupCallback
 
 <dd>
 <p>A pointer to a routine of type <a href="..\fltkernel\nc-fltkernel-pflt-instance-setup-callback.md">PFLT_INSTANCE_SETUP_CALLBACK</a> to be registered as the minifilter's <i>InstanceSetupCallback</i> routine. This member is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -field <b>InstanceQueryTeardownCallback</b>
+### -field InstanceQueryTeardownCallback
 
 <dd>
 <p>A pointer to a routine of type <a href="..\fltkernel\nc-fltkernel-pflt-instance-query-teardown-callback.md">PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK</a> to be registered as the minifilter's <i>InstanceQueryTeardownCallback</i> routine. This member is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -field <b>InstanceTeardownStartCallback</b>
+### -field InstanceTeardownStartCallback
 
 <dd>
 <p>A pointer to a routine of type <a href="..\fltkernel\nc-fltkernel-pflt-instance-teardown-callback.md">PFLT_INSTANCE_TEARDOWN_CALLBACK</a> to be registered as the minifilter's <i>InstanceTeardownStartCallback</i> routine. This member is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -field <b>InstanceTeardownCompleteCallback</b>
+### -field InstanceTeardownCompleteCallback
 
 <dd>
 <p>A pointer to a routine of type <a href="..\fltkernel\nc-fltkernel-pflt-instance-teardown-callback.md">PFLT_INSTANCE_TEARDOWN_CALLBACK</a> to be registered as the minifilter's <i>InstanceTeardownCompleteCallback</i> routine. This member is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -field <b>GenerateFileNameCallback</b>
+### -field GenerateFileNameCallback
 
 <dd>
 <p>A pointer to a routine of type <a href="..\fltkernel\nc-fltkernel-pflt-generate-file-name.md">PFLT_GENERATE_FILE_NAME</a> to be registered as the minifilter's <i>GenerateFileNameCallback</i> routine. This member is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -field <b>NormalizeNameComponentCallback</b>
+### -field NormalizeNameComponentCallback
 
 <dd>
 <p>A pointer to a routine of type <a href="..\fltkernel\nc-fltkernel-pflt-normalize-name-component.md">PFLT_NORMALIZE_NAME_COMPONENT</a> to be registered as the minifilter's <i>NormalizeNameComponentCallback</i> routine. This member is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -field <b>NormalizeContextCleanupCallback</b>
+### -field NormalizeContextCleanupCallback
 
 <dd>
 <p>A pointer to a routine of type <a href="..\fltkernel\nc-fltkernel-pflt-normalize-context-cleanup.md">PFLT_NORMALIZE_CONTEXT_CLEANUP</a> to be registered as the minifilter's <i>NormalizeContextCleanupCallback</i> routine. This member is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -field <b>TransactionNotificationCallback</b>
+### -field TransactionNotificationCallback
 
 <dd>
 <p>(Windows Vista and later only.)  A pointer to a routine of type <a href="..\fltkernel\nc-fltkernel-pflt-transaction-notification-callback.md">PFLT_TRANSACTION_NOTIFICATION_CALLBACK</a> to be registered as the minifilter's <i>TransactionNotificationCallback</i> routine. This member is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -field <b>NormalizeNameComponentExCallback</b>
+### -field NormalizeNameComponentExCallback
 
 <dd>
 <p>(Windows Vista and later only.)   A pointer to a routine of type <a href="..\fltkernel\nc-fltkernel-pflt-normalize-name-component-ex.md">PFLT_NORMALIZE_NAME_COMPONENT_EX</a> to be registered as the minifilter driver's <i>NormalizeNameComponentExCallback</i> routine. This member is optional and can be <b>NULL</b>.  </p>
@@ -206,7 +206,7 @@ typedef struct _FLT_REGISTRATION {
 <p>A minifilter driver can provide both a <i>NormalizeNameComponentCallback</i> callback and a <i>NormalizeNameComponentExCallback</i> callback.  In this case, starting with Windows Vista, the filter manager will use only the <i>NormalizeNameComponentExCallback</i> callback; for Windows operating systems prior to Windows Vista, the filter manager will  use only the <i>NormalizeNameComponentCallback</i> callback. This allows the same minifilter driver binary to run under all versions of the operating system.</p>
 </dd>
 
-### -field <b>SectionNotificationCallback</b>
+### -field SectionNotificationCallback
 
 <dd>
 <p>Pointer to a routine of type <a href="..\fltkernel\nc-fltkernel-pflt-section-conflict-notification-callback.md">PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK</a> to be registered as the minifilter's <i>SectionNotificationCallback</i> routine. This member is optional and can be <b>NULL</b>. This callback is called for notifications of I/O failures for sections created with <a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDatascan</a>.</p>
@@ -277,4 +277,4 @@ typedef struct _FLT_REGISTRATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_REGISTRATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_REGISTRATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

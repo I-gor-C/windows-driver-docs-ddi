@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_scale_parameters_v2.htm
 old-project: netvista
 ms.assetid: 96EAB6EE-BF9A-46AD-8DED-5D9BD2B6F219
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_RECEIVE_SCALE_PARAMETERS_V2, NDIS_RECEIVE_SCALE_PARAMETERS_V2, *PNDIS_RECEIVE_SCALE_PARAMETERS_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -72,7 +72,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS_V2 {
      <b>Size</b> member to <b>sizeof(NDIS_RECEIVE_SCALE_PARAMETERS_V2)</b>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <b>ULONG</b> value that indicates which parameters are being changed. The driver can use these flags to quickly determine which parameters have changed and update
@@ -88,7 +88,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS_V2 {
 <tr>
 <td width="40%"><a id="NDIS_RECEIVE_SCALE_PARAM_ENABLE_RSS"></a><a id="ndis_receive_scale_param_enable_rss"></a><dl>
 
-### -field <b>NDIS_RECEIVE_SCALE_PARAM_ENABLE_RSS</b>
+### -field NDIS_RECEIVE_SCALE_PARAM_ENABLE_RSS
 
 </dl>
 </td>
@@ -100,7 +100,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS_V2 {
 <tr>
 <td width="40%"><a id="NDIS_RECEIVE_SCALE_PARAM_HASH_INFO_CHANGED"></a><a id="ndis_receive_scale_param_hash_info_changed"></a><dl>
 
-### -field <b>NDIS_RECEIVE_SCALE_PARAM_HASH_INFO_CHANGED</b>
+### -field NDIS_RECEIVE_SCALE_PARAM_HASH_INFO_CHANGED
 
 </dl>
 </td>
@@ -111,7 +111,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS_V2 {
 <tr>
 <td width="40%"><a id="NDIS_RECEIVE_SCALE_PARAM_HASH_KEY_CHANGED"></a><a id="ndis_receive_scale_param_hash_key_changed"></a><dl>
 
-### -field <b>NDIS_RECEIVE_SCALE_PARAM_HASH_KEY_CHANGED</b>
+### -field NDIS_RECEIVE_SCALE_PARAM_HASH_KEY_CHANGED
 
 </dl>
 </td>
@@ -122,7 +122,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS_V2 {
 <tr>
 <td width="40%"><a id="NDIS_RECEIVE_SCALE_PARAM_NUMBER_OF_QUEUES_CHANGED"></a><a id="ndis_receive_scale_param_number_of_queues_changed"></a><dl>
 
-### -field <b>NDIS_RECEIVE_SCALE_PARAM_NUMBER_OF_QUEUES_CHANGED</b>
+### -field NDIS_RECEIVE_SCALE_PARAM_NUMBER_OF_QUEUES_CHANGED
 
 </dl>
 </td>
@@ -133,7 +133,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS_V2 {
 <tr>
 <td width="40%"><a id="NDIS_RECEIVE_SCALE_PARAM_NUMBER_OF_ENTRIES_CHANGED"></a><a id="ndis_receive_scale_param_number_of_entries_changed"></a><dl>
 
-### -field <b>NDIS_RECEIVE_SCALE_PARAM_NUMBER_OF_ENTRIES_CHANGED</b>
+### -field NDIS_RECEIVE_SCALE_PARAM_NUMBER_OF_ENTRIES_CHANGED
 
 </dl>
 </td>
@@ -145,7 +145,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS_V2 {
 <p> </p>
 </dd>
 
-### -field <b>HashInformation</b>
+### -field HashInformation
 
 <dd>
 <p>In a set request, this member is the hash type and hash function that the NIC should use to compute the hash
@@ -164,20 +164,20 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS_V2 {
 <p>This parameter can be changed at the same time that RSS is enabled, or afterward.</p>
 </dd>
 
-### -field <b>HashSecretKeySize</b>
+### -field HashSecretKeySize
 
 <dd>
 <p>The size of the secret key array of the hash function, in bytes. The size of the array is 40 bytes for NdisHashFunctionToeplitz.</p>
 <p>This parameter can be changed at the same time that RSS is enabled, or afterward.</p>
 </dd>
 
-### -field <b>NumberOfQueues</b>
+### -field NumberOfQueues
 
 <dd>
 <p>The maximum number of queues for VPort running in RSSv2 mode, or the miniport adapter running in Native RSS mode. This parameter is an alias for the NUM_QUEUE_PAIRS variable of the <a href="..\ntddndis\ns-ntddndis--ndis-nic-switch-vport-parameters.md">NDIS_NIC_SWITCH_VPORT_PARAMETERS</a> structure, which can also be queried or set through the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a> OID. It can be changed when RSS is enabled or disabled.</p>
 </dd>
 
-### -field <b>NumberOfIndirectionTableEntries</b>
+### -field NumberOfIndirectionTableEntries
 
 <dd>
 <p>The number of indirection table entries (ITEs) for the VPort running in RSSv2 mode, or the miniport adapter running in Native RSS mode. This value is a power of two and cannot exceed the corresponding adapter's capabilities. It can be changed at the same time that RSS is enabled, or afterward.</p>
@@ -239,4 +239,4 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS_V2 {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_SCALE_PARAMETERS_V2 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_SCALE_PARAMETERS_V2 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

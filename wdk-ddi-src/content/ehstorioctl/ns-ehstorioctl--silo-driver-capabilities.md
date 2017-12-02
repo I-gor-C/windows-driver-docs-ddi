@@ -58,13 +58,13 @@ typedef struct _SILO_DRIVER_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>StructSize</b>
+### -field StructSize
 
 <dd>
 <p>The size of this structure. This is set to <b>sizeof</b>(SILO_DRIVER_CAPABILITIES).</p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Capability flags for the silo driver. This is a bitwise OR combination of the following.</p>
@@ -76,7 +76,7 @@ typedef struct _SILO_DRIVER_CAPABILITIES {
 <tr>
 <td width="40%"><a id="CAP_ON_DEMAND_AUTHENTICATION"></a><a id="cap_on_demand_authentication"></a><dl>
 
-### -field <b>CAP_ON_DEMAND_AUTHENTICATION</b>
+### -field CAP_ON_DEMAND_AUTHENTICATION
 
 </dl>
 </td>
@@ -87,7 +87,7 @@ typedef struct _SILO_DRIVER_CAPABILITIES {
 <tr>
 <td width="40%"><a id="CAP_BANDING_SUPPORT"></a><a id="cap_banding_support"></a><dl>
 
-### -field <b>CAP_BANDING_SUPPORT</b>
+### -field CAP_BANDING_SUPPORT
 
 </dl>
 </td>
@@ -99,19 +99,19 @@ typedef struct _SILO_DRIVER_CAPABILITIES {
 <p> </p>
 </dd>
 
-### -field <b>MaxLbaFilterCount</b>
+### -field MaxLbaFilterCount
 
 <dd>
 <p>Maximum number of LBA filter entries the silo driver can provide in a <a href="..\ehstorioctl\ni-ehstorioctl-ioctl-ehstor-driver-update-lba-filter-table.md">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a> request.</p>
 </dd>
 
-### -field <b>RedirectedIoctlListCount</b>
+### -field RedirectedIoctlListCount
 
 <dd>
 <p>The number of redirected IOCTLs in the list following this structure.</p>
 </dd>
 
-### -field <b>RedirectedIoctlListOffset</b>
+### -field RedirectedIoctlListOffset
 
 <dd>
 <p>The offset of the redirected IOCTL list from the beginning of this structure. This will typically be <b>sizeof</b>(SILO_DRIVER_CAPABILITIES).</p>

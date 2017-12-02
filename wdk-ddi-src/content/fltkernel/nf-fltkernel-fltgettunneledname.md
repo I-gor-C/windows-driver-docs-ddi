@@ -7,7 +7,7 @@ old-location: ifsk\fltgettunneledname.htm
 old-project: ifsk
 ms.assetid: 760ee574-5ca5-4db1-8b47-009a12398076
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltGetTunneledName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ NTSTATUS FltGetTunneledName(
 ## -parameters
 <dl>
 
-### -param <i>CallbackData</i> [in]
+### -param CallbackData [in]
 
 <dd>
 <p>Pointer to the callback data structure for the I/O operation (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>). This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>FileNameInformation</i> [in]
+### -param FileNameInformation [in]
 
 <dd>
 <p>Pointer to an <a href="..\fltkernel\ns-fltkernel--flt-file-name-information.md">FLT_FILE_NAME_INFORMATION</a> structure containing normalized name information returned by a previous call to  <a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformation.md">FltGetFileNameInformation</a>, <a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformationunsafe.md">FltGetFileNameInformationUnsafe</a>, or <a href="..\fltkernel\nf-fltkernel-fltgetdestinationfilenameinformation.md">FltGetDestinationFileNameInformation</a> for the file. </p>
 </dd>
 
-### -param <i>RetTunneledFileNameInformation</i> [out]
+### -param RetTunneledFileNameInformation [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the address of a newly allocated structure containing the tunneled file name. If no tunneled name is found, this variable receives <b>NULL</b>. This parameter is required and cannot be <b>NULL</b> on input. </p>
@@ -200,4 +200,4 @@ NTSTATUS FltGetTunneledName(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetTunneledName routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetTunneledName routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

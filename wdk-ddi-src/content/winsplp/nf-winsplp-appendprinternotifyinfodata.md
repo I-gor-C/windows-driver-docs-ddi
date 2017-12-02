@@ -57,26 +57,26 @@ BOOL AppendPrinterNotifyInfoData(
 ## -parameters
 <dl>
 
-### -param <i>pInfoDest</i> [in]
+### -param pInfoDest [in]
 
 <dd>
 <p>Caller-supplied pointer to a PRINTER_NOTIFY_INFO structure (defined in the Microsoft Windows SDK documentation).</p>
 </dd>
 
-### -param <i>pInfoDataSrc</i> [in, optional]
+### -param pInfoDataSrc [in, optional]
 
 <dd>
 <p>Caller-supplied pointer to a PRINTER_NOTIFY_INFO_DATA structure (defined in the Windows SDK documentation).</p>
 </dd>
 
-### -param <i>fdwFlags</i> 
+### -param fdwFlags 
 
 <dd>
 <p>Caller-supplied flags. The following flag is defined.</p>
 <p></p>
 <dl>
 
-### -param <a id="PRINTER_NOTIFY_INFO_DATA_COMPACT"></a><a id="printer_notify_info_data_compact"></a>PRINTER_NOTIFY_INFO_DATA_COMPACT
+### -param PRINTER_NOTIFY_INFO_DATA_COMPACT
 
 <dd>
 <p>If set, the function examines the <b>Type</b>, <b>Field</b>, and <b>Id</b> members of the supplied PRINTER_NOTIFY_INFO_DATA structure. If they all match an existing element of the PRINTER_NOTIFY_INFO_DATA structure array, the existing element is overwritten with the supplied element. If a match is not found, the function adds the specified structure to the end of the array.</p>
@@ -99,7 +99,7 @@ BOOL AppendPrinterNotifyInfoData(
 
 <p>(For more information about the PRINTER_NOTIFY_INFO_DISCARDED flag, see the description of FindNextPrinterChangeNotification in the Windows SDK documentation.)</p>
 
-<p>For additional information, see <a href="NULL">Supporting Printer Change Notifications</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/e75c6f89-9cef-4900-af89-edf1f7f786c7">Supporting Printer Change Notifications</a>.</p>
 
 ## -requirements
 <table>

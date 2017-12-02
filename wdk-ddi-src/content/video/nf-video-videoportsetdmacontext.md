@@ -57,19 +57,19 @@ VOID VideoPortSetDmaContext(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>pDma</i> [out]
+### -param pDma [out]
 
 <dd>
 <p>Pointer to a DMA handle. </p>
 </dd>
 
-### -param <i>InstanceContext</i> [in]
+### -param InstanceContext [in]
 
 <dd>
 <p>Pointer to the DMA context to set.</p>

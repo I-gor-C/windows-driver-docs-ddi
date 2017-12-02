@@ -61,25 +61,25 @@ BOOLEAN APIENTRY AgpCommitPhysical(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the device extension of the miniport driver.</p>
 </dd>
 
-### -param <i>PhysicalReserveContext</i> [in]
+### -param PhysicalReserveContext [in]
 
 <dd>
 <p>Identifies a reserved physical address range. The context handle is obtained from <a href="..\videoagp\nc-videoagp-pagp-reserve-physical.md">AgpReservePhysical</a>.</p>
 </dd>
 
-### -param <i>Pages</i> [in]
+### -param Pages [in]
 
 <dd>
 <p>Specifies the number of pages of system memory to commit.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the page offset at which to commit the pages. The offset is applied to the reserved physical address range associated with <b>PhysicalReserveContext</b>.</p>

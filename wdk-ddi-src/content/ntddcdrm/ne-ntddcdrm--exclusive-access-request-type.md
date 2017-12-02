@@ -56,19 +56,19 @@ typedef enum _EXCLUSIVE_ACCESS_REQUEST_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="ExclusiveAccessQueryState"></a><a id="exclusiveaccessquerystate"></a><a id="EXCLUSIVEACCESSQUERYSTATE"></a><b>ExclusiveAccessQueryState</b>
+### -field ExclusiveAccessQueryState
 
 <dd>
 <p>A query for the access state of a CD-ROM device.</p>
 </dd>
 
-### -field <a id="ExclusiveAccessLockDevice"></a><a id="exclusiveaccesslockdevice"></a><a id="EXCLUSIVEACCESSLOCKDEVICE"></a><b>ExclusiveAccessLockDevice</b>
+### -field ExclusiveAccessLockDevice
 
 <dd>
 <p>A request for the CD-ROM class driver to lock a CD-ROM device for exclusive access by the caller.</p>
 </dd>
 
-### -field <a id="ExclusiveAccessUnlockDevice"></a><a id="exclusiveaccessunlockdevice"></a><a id="EXCLUSIVEACCESSUNLOCKDEVICE"></a><b>ExclusiveAccessUnlockDevice</b>
+### -field ExclusiveAccessUnlockDevice
 
 <dd>
 <p>A request for the CD-ROM class driver to unlock a CD-ROM device that was previously locked for exclusive access.</p>

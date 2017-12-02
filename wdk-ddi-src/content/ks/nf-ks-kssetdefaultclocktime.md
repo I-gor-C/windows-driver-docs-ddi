@@ -56,13 +56,13 @@ VOID KsSetDefaultClockTime(
 ## -parameters
 <dl>
 
-### -param <i>DefaultClock</i> [in]
+### -param DefaultClock [in]
 
 <dd>
 <p>Specifies an initialize default clock structure that is shared among instances of the default clock for the parent. </p>
 </dd>
 
-### -param <i>Time</i> [in]
+### -param Time [in]
 
 <dd>
 <p>Specifies the new time to set the clock. </p>

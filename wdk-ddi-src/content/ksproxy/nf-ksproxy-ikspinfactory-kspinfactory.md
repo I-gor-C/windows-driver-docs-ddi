@@ -54,7 +54,7 @@ HRESULT KsPinFactory(
 ## -parameters
 <dl>
 
-### -param <i>PinFactory</i> [out]
+### -param PinFactory [out]
 
 <dd>
 <p>Pointer to a variable that receives the identifier of the pin factory.</p>

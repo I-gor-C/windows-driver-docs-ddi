@@ -58,13 +58,13 @@ typedef struct _UNIFONTOBJ {
 ## -struct-fields
 <dl>
 
-### -field <b>ulFontID</b>
+### -field ulFontID
 
 <dd>
 <p>Specifies a resource identifier for an RC_UFM resource contained in a Unidrv minidriver's resource DLL. Supplied by Unidrv.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Is a set of Unidrv-supplied bit flags. Flag definitions are as follows:</p>
@@ -135,13 +135,13 @@ typedef struct _UNIFONTOBJ {
 <p> </p>
 </dd>
 
-### -field <b>pIFIMetrics</b>
+### -field pIFIMetrics
 
 <dd>
 <p>Pointer to an <a href="display.ifimetrics">IFIMETRICS</a> structure. Supplied by Unidrv.</p>
 </dd>
 
-### -field <b>pfnGetInfo</b>
+### -field pfnGetInfo
 
 <dd>
 <p>Pointer to Unidrv's <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function. Supplied by Unidrv.</p>

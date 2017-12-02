@@ -68,28 +68,28 @@ typedef struct _DXGK_SETVIDPNSOURCEADDRESS_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>ModeChange</b>
+### -field ModeChange
 
 <dd>
 <p>A UINT value that specifies for the driver to switch the display mode. </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>FlipImmediate</b>
+### -field FlipImmediate
 
 <dd>
 <p>A UINT value that specifies for the driver to perform a flip operation that occurs without vertical sync.</p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>FlipOnNextVSync</b>
+### -field FlipOnNextVSync
 
 <dd>
 <p>A UINT value that specifies for the driver to perform a flip operation that occurs on the next vertical sync.</p>
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>FlipStereo</b>
+### -field FlipStereo
 
 <dd>
 <p>[in] Supported beginning with Windows 8.</p>
@@ -101,7 +101,7 @@ typedef struct _DXGK_SETVIDPNSOURCEADDRESS_FLAGS {
 <p>Setting this member is equivalent to setting the    fourth bit of the 32-bit <b>Value</b> member (0x00000008).</p>
 </dd>
 
-### -field <b>FlipStereoTemporaryMono</b>
+### -field FlipStereoTemporaryMono
 
 <dd>
 <p>[in] Supported beginning with Windows 8.</p>
@@ -113,7 +113,7 @@ typedef struct _DXGK_SETVIDPNSOURCEADDRESS_FLAGS {
 <p>Setting this member is equivalent to setting the    fifth bit of the 32-bit <b>Value</b> member (0x00000010).</p>
 </dd>
 
-### -field <b>FlipStereoPreferRight</b>
+### -field FlipStereoPreferRight
 
 <dd>
 <p>[in] Supported beginning with Windows 8.</p>
@@ -123,7 +123,7 @@ typedef struct _DXGK_SETVIDPNSOURCEADDRESS_FLAGS {
 <p>Setting this member is equivalent to setting the    sixth bit of the 32-bit <b>Value</b> member (0x00000020).</p>
 </dd>
 
-### -field <b>SharedPrimaryTransition</b>
+### -field SharedPrimaryTransition
 
 <dd>
 <p>[in] Supported beginning with Windows 8.</p>
@@ -137,7 +137,7 @@ typedef struct _DXGK_SETVIDPNSOURCEADDRESS_FLAGS {
 <p>Setting this member is equivalent to setting the    seventh bit of the 32-bit <b>Value</b> member (0x00000040).</p>
 </dd>
 
-### -field <b>IndependentFlipExclusive</b>
+### -field IndependentFlipExclusive
 
 <dd>
 <p>[in] Supported beginning with Windows 10.</p>
@@ -145,20 +145,20 @@ typedef struct _DXGK_SETVIDPNSOURCEADDRESS_FLAGS {
 </p>
 </dd>
 
-### -field <b>MoveFlip</b>
+### -field MoveFlip
 
 <dd>
 <p>[in] Supported beginning with Windows 10.</p>
 <p>When <b>MoveFlip</b> is set, the  driver is notified to use any state that has been saved from the previous flip to configure the new scanout request.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 23 bits (0xFFFFFF00) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that DXGK_SETVIDPNSOURCEADDRESS_FLAGS contains that can hold a 32-bit value that identifies operation type. </p>

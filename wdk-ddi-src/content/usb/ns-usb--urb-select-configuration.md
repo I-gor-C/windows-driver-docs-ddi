@@ -58,25 +58,25 @@ struct _URB_SELECT_CONFIGURATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Hdr</b>
+### -field Hdr
 
 <dd>
 <p>Pointer to a <a href="buses._urb_header">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_SELECT_CONFIGURATION, and <b>Hdr.Length</b> must be the size of the entire URB. Drivers may use the GET_SELECT_CONFIGURATION_REQUEST_SIZE macro defined in usbdlib.h to obtain the size of the URB. </p>
 </dd>
 
-### -field <b>ConfigurationDescriptor</b>
+### -field ConfigurationDescriptor
 
 <dd>
 <p>Pointer to an initialized USB configuration descriptor that identifies the configuration to be used on the device. If this member is <b>NULL</b>, the device will be set to an unconfigured state.</p>
 </dd>
 
-### -field <b>ConfigurationHandle</b>
+### -field ConfigurationHandle
 
 <dd>
 <p>Contains a handle that is used to access this configuration on return from the host controller driver. USB client drivers must treat this member as opaque.</p>
 </dd>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>Specifies a variable length array of <a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a> structures, each describing an interface supported by the configuration being selected.</p>

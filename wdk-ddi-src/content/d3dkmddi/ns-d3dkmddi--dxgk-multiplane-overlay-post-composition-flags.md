@@ -61,25 +61,25 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>VerticalFlip</b>
+### -field VerticalFlip
 
 <dd>
 <p>Indicates that the image should be flipped vertically.</p>
 </dd>
 
-### -field <b>HorizontalFlip</b>
+### -field HorizontalFlip
 
 <dd>
 <p>Indicates that the image should be flipped horizontally.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 30 bits (0xFFFFFFFC) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd></dd>
 </dl>

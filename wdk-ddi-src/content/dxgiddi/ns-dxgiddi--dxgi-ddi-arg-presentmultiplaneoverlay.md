@@ -63,49 +63,49 @@ typedef struct _DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the display device (graphics context) on which the driver performs the presentation. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function to create the display device. </p>
 </dd>
 
-### -field <b>pDXGIContext</b>
+### -field pDXGIContext
 
 <dd>
 <p>[in] A handle to the DXGI context. This handle is opaque to the driver. The driver should assign the handle in this member to the <b>pDXGIContext</b> member of the <a href="..\dxgiddi\ns-dxgiddi-dxgiddicb-present-multiplane-overlay.md">DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY</a> structure when the driver calls the <a href="display.pfnpresentmultiplaneoverlaycb_dxgi">pfnPresentMultiPlaneOverlayCb (DXGI)</a> function. </p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based video present network (VidPN) source identification number of the input that is to be displayed.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-present-flags.md">DXGI_DDI_PRESENT_FLAGS</a> structure that identifies, in bit-field flags, how to display.</p>
 </dd>
 
-### -field <b>FlipInterval</b>
+### -field FlipInterval
 
 <dd>
 <p>[in] A value of type <a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-flip-interval-type.md">DXGI_DDI_FLIP_INTERVAL_TYPE</a> that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs). </p>
 </dd>
 
-### -field <b>PresentPlaneCount</b>
+### -field PresentPlaneCount
 
 <dd>
 <p>[in] The number of overlay planes that are available to display.</p>
 </dd>
 
-### -field <b>pPresentPlanes</b>
+### -field pPresentPlanes
 
 <dd>
 <p>[in] A pointer to a structure of type <a href="..\dxgiddi\ns-dxgiddi--dxgi-ddi-present-multiplane-overlay.md">DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY</a> that  describes the overlay plane to display.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>

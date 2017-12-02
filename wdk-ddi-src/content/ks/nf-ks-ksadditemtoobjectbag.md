@@ -56,19 +56,19 @@ NTSTATUS KsAddItemToObjectBag(
 ## -parameters
 <dl>
 
-### -param <i>ObjectBag</i> [in]
+### -param ObjectBag [in]
 
 <dd>
 <p>The KSOBJECT_BAG (equivalent to type PVOID) to which to add the requested item. Every AVStream object (for example, <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> and <a href="..\ks\ns-ks--kspin.md">KSPIN</a>) contains a member called <i>Bag</i>. Pass that member in this parameter.</p>
 </dd>
 
-### -param <i>Item</i> [in]
+### -param Item [in]
 
 <dd>
 <p>A pointer to the item to add to the object bag.</p>
 </dd>
 
-### -param <i>Free</i> [in, optional]
+### -param Free [in, optional]
 
 <dd>
 <p>A function that is called when the item is removed from the object bag or when the object bag is deleted. This function typically is used to free any dynamic memory associated with <i>Item</i>. The function should be prototyped as follows:</p>
@@ -82,7 +82,7 @@ NTSTATUS KsAddItemToObjectBag(
 </td>
 </tr>
 </table></span></div>
-<p>If the caller does not specify this optional parameter, <i>Item</i> is freed with <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> when removed from the object bag or when the object bag is deleted.</p>
+<p>If the caller does not specify this optional parameter, <i>Item</i> is freed with <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> when removed from the object bag or when the object bag is deleted.</p>
 </dd>
 </dl>
 
@@ -92,7 +92,7 @@ NTSTATUS KsAddItemToObjectBag(
 ## -remarks
 <p>Before calling <b>KsAddItemToObjectBag</b>, the minidriver must acquire the mutex associated with the specific object bag. If <i>ObjectBag</i> is a member of a <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> or <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a>, acquire the device mutex. If the bag is a member of a <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a>, acquire the filter control mutex. If the bag is a member of a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> object, acquire the parent KSFILTER's filter control mutex.</p>
 
-<p>For more information, see <a href="NULL">Object Bags</a> and <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a> and <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 ## -requirements
 <table>
@@ -165,7 +165,7 @@ NTSTATUS KsAddItemToObjectBag(
 <a href="..\ks\nf-ks--ksedit.md">_KsEdit</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 </dl>
 <p> </p>

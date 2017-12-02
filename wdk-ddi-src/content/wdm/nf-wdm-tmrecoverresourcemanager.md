@@ -55,7 +55,7 @@ NTSTATUS TmRecoverResourceManager(
 ## -parameters
 <dl>
 
-### -param <i>ResourceManager</i> [in]
+### -param ResourceManager [in]
 
 <dd>
 <p>A pointer to a resource manager object. To obtain this pointer, your component must call <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a> or <a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a> provided.</p>

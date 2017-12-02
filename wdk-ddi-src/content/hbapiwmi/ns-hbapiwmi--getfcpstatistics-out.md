@@ -55,13 +55,13 @@ typedef struct _GetFCPStatistics_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains a value associated with the WMI class qualifier <a href="storage.hba_status">HBA_STATUS</a> that indicates the result of an HBA query operation.</p>
 </dd>
 
-### -field <b>FC4Statistics</b>
+### -field FC4Statistics
 
 <dd>
 <p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--msfc-fc4statistics.md">MSFC_FC4STATISTICS</a> that holds statistics for the specified FC-4 protocol.</p>

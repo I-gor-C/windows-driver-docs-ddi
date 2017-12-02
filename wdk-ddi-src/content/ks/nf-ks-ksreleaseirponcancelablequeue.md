@@ -55,13 +55,13 @@ VOID KsReleaseIrpOnCancelableQueue(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP to release.</p>
 </dd>
 
-### -param <i>DriverCancel</i> [in, optional]
+### -param DriverCancel [in, optional]
 
 <dd>
 <p>Optional parameter that specifies the cancel routine to use. If this is <b>NULL</b>, the standard <b>KsCancelRoutine</b> is used.</p>

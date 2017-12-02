@@ -59,13 +59,13 @@ void EvtUsbEndpointReset(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbEndpoint</i> [in]
+### -param UdecxUsbEndpoint [in]
 
 <dd>
-<p>A handle to a UDE endpoint object that represents the endpoint to reset. The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a>.</p>
+<p>A handle to a UDE endpoint object that represents the endpoint to reset. The client driver retrieved this pointer in the previous call to <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object that represents the request to reset the endpoint.</p>
@@ -76,7 +76,7 @@ void EvtUsbEndpointReset(
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The client driver registered this callback function in a previous call to <a href="buses.udecxusbendpointinitsetcallbacks">UdecxUsbEndpointInitSetCallbacks</a> by supplying a function pointer to its implementation.</p>
+<p>The client driver registered this callback function in a previous call to <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointinitsetcallbacks.md">UdecxUsbEndpointInitSetCallbacks</a> by supplying a function pointer to its implementation.</p>
 
 <p>The reset request clears the error condition in the endpoint that causes failed I/O transfers. At that time, UdeCx can invoke the  <i>EVT_UDECX_USB_ENDPOINT_RESET</i> callback function. That call is asynchronous. The client driver completes the request and signals completion with status by calling <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithinformation.md">WdfRequestCompleteWithInformation</a> method .  (this is the only way the UDECX client uses the request parameter).
 </p>

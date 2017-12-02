@@ -72,97 +72,97 @@ typedef union _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY {
 ## -struct-fields
 <dl>
 
-### -field <b>TargetAbortOnSplitCompletion</b>
+### -field TargetAbortOnSplitCompletion
 
 <dd>
 <p>A single bit that indicates that a reported target abort on split completion is a fatal error.</p>
 </dd>
 
-### -field <b>MasterAbortOnSplitCompletion</b>
+### -field MasterAbortOnSplitCompletion
 
 <dd>
 <p>A single bit that indicates that a reported master abort on split completion is a fatal error.</p>
 </dd>
 
-### -field <b>ReceivedTargetAbort</b>
+### -field ReceivedTargetAbort
 
 <dd>
 <p>A single bit that indicates that a reported target abort is a fatal error.</p>
 </dd>
 
-### -field <b>ReceivedMasterAbort</b>
+### -field ReceivedMasterAbort
 
 <dd>
 <p>A single bit that indicates that a reported master abort is a fatal error.</p>
 </dd>
 
-### -field <b>RsvdZ</b>
+### -field RsvdZ
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>UnexpectedSplitCompletionError</b>
+### -field UnexpectedSplitCompletionError
 
 <dd>
 <p>A single bit that indicates that a reported unexpected split completion error is a fatal error.</p>
 </dd>
 
-### -field <b>UncorrectableSplitCompletion</b>
+### -field UncorrectableSplitCompletion
 
 <dd>
 <p>A single bit that indicates that a reported uncorrectable split completion message data error is a fatal error.</p>
 </dd>
 
-### -field <b>UncorrectableDataError</b>
+### -field UncorrectableDataError
 
 <dd>
 <p>A single bit that indicates that a reported uncorrectable data error is a fatal error.</p>
 </dd>
 
-### -field <b>UncorrectableAttributeError</b>
+### -field UncorrectableAttributeError
 
 <dd>
 <p>A single bit that indicates that a reported uncorrectable attribute error is a fatal error.</p>
 </dd>
 
-### -field <b>UncorrectableAddressError</b>
+### -field UncorrectableAddressError
 
 <dd>
 <p>A single bit that indicates that a reported uncorrectable address error is a fatal error.</p>
 </dd>
 
-### -field <b>DelayedTransactionDiscardTimerExpired</b>
+### -field DelayedTransactionDiscardTimerExpired
 
 <dd>
 <p>A single bit that indicates that an expiration of the delayed transaction discard timer is a fatal error.</p>
 </dd>
 
-### -field <b>PERRAsserted</b>
+### -field PERRAsserted
 
 <dd>
 <p>A single bit that indicates that a reported PERR# assertion is a fatal error.</p>
 </dd>
 
-### -field <b>SERRAsserted</b>
+### -field SERRAsserted
 
 <dd>
 <p>A single bit that indicates that a reported SERR# assertion is a fatal error.</p>
 </dd>
 
-### -field <b>InternalBridgeError</b>
+### -field InternalBridgeError
 
 <dd>
 <p>A single bit that indicates that a reported internal bridge error is a fatal error.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS structure.</p>

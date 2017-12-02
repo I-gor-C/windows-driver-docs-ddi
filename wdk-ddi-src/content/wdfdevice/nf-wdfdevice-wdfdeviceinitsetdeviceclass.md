@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitsetdeviceclass.htm
 old-project: wdf
 ms.assetid: c87a8368-3804-4a07-92c8-65a453d0808f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceInitSetDeviceClass
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ VOID WdfDeviceInitSetDeviceClass(
 ## -parameters
 <dl>
 
-### -param <i>DeviceInit</i> [in]
+### -param DeviceInit [in]
 
 <dd>
 <p>A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure.</p>
 </dd>
 
-### -param <i>DeviceClassGuid</i> [in]
+### -param DeviceClassGuid [in]
 
 <dd>
 <p>Pointer to a GUID that identifies a section of the registry containing possible overrides for the <i>DefaultSDDLString</i>, <i>DeviceType</i>, <i>DeviceCharacteristics</i>, and <i>Exclusive</i> parameters.</p>

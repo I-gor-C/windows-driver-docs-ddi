@@ -57,19 +57,19 @@ BOOLEAN EtwProviderEnabled(
 ## -parameters
 <dl>
 
-### -param <i>RegHandle</i> [in]
+### -param RegHandle [in]
 
 <dd>
 <p>A pointer to the event provider registration handle, which is returned by the <b>EtwRegister</b> function if the event provider registration is successful.</p>
 </dd>
 
-### -param <i>Level</i> [in]
+### -param Level [in]
 
 <dd>
 <p>The level at which the provider is enabled.</p>
 </dd>
 
-### -param <i>Keyword</i> [in]
+### -param Keyword [in]
 
 <dd>
 <p>The keyword that indicates whether the provider is enabled.</p>

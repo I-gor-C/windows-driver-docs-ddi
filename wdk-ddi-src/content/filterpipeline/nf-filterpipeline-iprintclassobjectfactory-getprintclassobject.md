@@ -56,19 +56,19 @@ HRESULT GetPrintClassObject(
 ## -parameters
 <dl>
 
-### -param <i>pszPrinterName</i> [in]
+### -param pszPrinterName [in]
 
 <dd>
 <p>The printer name.</p>
 </dd>
 
-### -param <i>riid</i> [in]
+### -param riid [in]
 
 <dd>
 <p>The IID of the interface to create. Filters should use IID_IPrintAsyncNotify to create notification channels.</p>
 </dd>
 
-### -param <i>ppNewObject</i> [out]
+### -param ppNewObject [out]
 
 <dd>
 <p>The new object that this method creates.</p>

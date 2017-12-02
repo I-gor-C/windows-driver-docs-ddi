@@ -7,7 +7,7 @@ old-location: netvista\net_if_information.htm
 old-project: netvista
 ms.assetid: 5508650c-473c-4710-869e-053481e83f1b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NET_IF_INFORMATION, NET_IF_INFORMATION, *PNET_IF_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,7 +73,7 @@ typedef struct _NET_IF_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -85,7 +85,7 @@ typedef struct _NET_IF_INFORMATION {
      <b>Size</b> member to NDIS_SIZEOF_NET_IF_INFORMATION_REVISION_1.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags that provide information about the interface that this structure describes. These flags are
@@ -95,31 +95,31 @@ typedef struct _NET_IF_INFORMATION {
 <p></p>
 <dl>
 
-### -field <a id="NIIF_HARDWARE_INTERFACE"></a><a id="niif_hardware_interface"></a>NIIF_HARDWARE_INTERFACE
+### -field NIIF_HARDWARE_INTERFACE
 
 <dd>
 <p>Set if the network interface is for hardware.</p>
 </dd>
 
-### -field <a id="NIIF_FILTER_INTERFACE"></a><a id="niif_filter_interface"></a>NIIF_FILTER_INTERFACE
+### -field NIIF_FILTER_INTERFACE
 
 <dd>
 <p>Set if the network interface is for a filter module.</p>
 </dd>
 
-### -field <a id="NIIF_NDIS_RESERVED1"></a><a id="niif_ndis_reserved1"></a>NIIF_NDIS_RESERVED1
+### -field NIIF_NDIS_RESERVED1
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <a id="NIIF_NDIS_RESERVED2"></a><a id="niif_ndis_reserved2"></a>NIIF_NDIS_RESERVED2
+### -field NIIF_NDIS_RESERVED2
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <a id="NIIF_NDIS_RESERVED3"></a><a id="niif_ndis_reserved3"></a>NIIF_NDIS_RESERVED3
+### -field NIIF_NDIS_RESERVED3
 
 <dd>
 <p>Reserved for NDIS.</p>
@@ -127,7 +127,7 @@ typedef struct _NET_IF_INFORMATION {
 </dl>
 </dd>
 
-### -field <b>PhysicalLocation</b>
+### -field PhysicalLocation
 
 <dd>
 <p>The physical location for the hardware that is associated with an interface specified in a 
@@ -135,7 +135,7 @@ typedef struct _NET_IF_INFORMATION {
      NET_PHYSICAL_LOCATION</a> structure.</p>
 </dd>
 
-### -field <b>WanTunnelType</b>
+### -field WanTunnelType
 
 <dd>
 <p>The tunnelIfEncapsMethod (from 
@@ -143,13 +143,13 @@ typedef struct _NET_IF_INFORMATION {
      member to NIIF_WAN_TUNNEL_TYPE_UNKNOWN.</p>
 </dd>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>The NDIS port number for the interface.</p>
 </dd>
 
-### -field <b>AccessType</b>
+### -field AccessType
 
 <dd>
 <p>A 
@@ -157,7 +157,7 @@ typedef struct _NET_IF_INFORMATION {
      access type.</p>
 </dd>
 
-### -field <b>DirectionType</b>
+### -field DirectionType
 
 <dd>
 <p>A 
@@ -165,7 +165,7 @@ typedef struct _NET_IF_INFORMATION {
      interface direction type.</p>
 </dd>
 
-### -field <b>ConnectionType</b>
+### -field ConnectionType
 
 <dd>
 <p>A 
@@ -173,14 +173,14 @@ typedef struct _NET_IF_INFORMATION {
      interface connection type.</p>
 </dd>
 
-### -field <b>ifConnectorPresent</b>
+### -field ifConnectorPresent
 
 <dd>
 <p>A Boolean value that indicates if a connector is present. Set this value to <b>TRUE</b> if there is a
      physical adapter or <b>FALSE</b> if there is no physical adapter.</p>
 </dd>
 
-### -field <b>PhysAddressLength</b>
+### -field PhysAddressLength
 
 <dd>
 <p>The length, in bytes, of the physical address or MAC address. This length is the length of the
@@ -189,7 +189,7 @@ typedef struct _NET_IF_INFORMATION {
      <b>PermanentPhysAddressOffset</b> members specify.</p>
 </dd>
 
-### -field <b>PhysAddressOffset</b>
+### -field PhysAddressOffset
 
 <dd>
 <p>The offset of the current physical address, in bytes, from the beginning of this structure. The
@@ -199,7 +199,7 @@ typedef struct _NET_IF_INFORMATION {
      returns.</p>
 </dd>
 
-### -field <b>PermanentPhysAddressOffset</b>
+### -field PermanentPhysAddressOffset
 
 <dd>
 <p>The offset of the permanent physical address, in bytes, from the beginning of this structure. The
@@ -209,7 +209,7 @@ typedef struct _NET_IF_INFORMATION {
      returns.</p>
 </dd>
 
-### -field <b>FriendlyNameLength</b>
+### -field FriendlyNameLength
 
 <dd>
 <p>The length, in bytes, of the friendly name for the interface that this structure describes. This
@@ -217,7 +217,7 @@ typedef struct _NET_IF_INFORMATION {
      <b>FriendlyNameOffset</b> member.</p>
 </dd>
 
-### -field <b>FriendlyNameOffset</b>
+### -field FriendlyNameOffset
 
 <dd>
 <p>The offset of the beginning of the friendly name, in bytes, from the beginning of this structure.
@@ -226,7 +226,7 @@ typedef struct _NET_IF_INFORMATION {
      <b>FriendlyNameLength</b> member specifies the length of the array.</p>
 </dd>
 
-### -field <b>InterfaceGuid</b>
+### -field InterfaceGuid
 
 <dd>
 <p>The GUID that is associated with the interface. The interface provider generates the interface
@@ -238,7 +238,7 @@ typedef struct _NET_IF_INFORMATION {
      and reuse the GUID when it reregisters the interface after the computer restarts.</p>
 </dd>
 
-### -field <b>NetworkGuid</b>
+### -field NetworkGuid
 
 <dd>
 <p>The GUID that is associated with the network that the interface belongs to. If the interface
@@ -246,7 +246,7 @@ typedef struct _NET_IF_INFORMATION {
      interface in the default network of the primary compartment.</p>
 </dd>
 
-### -field <b>SupportedStatistics</b>
+### -field SupportedStatistics
 
 <dd>
 <p>The statistics that the interface supports. For more information, see the 
@@ -255,7 +255,7 @@ typedef struct _NET_IF_INFORMATION {
      NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a> structure .</p>
 </dd>
 
-### -field <b>MediaType</b>
+### -field MediaType
 
 <dd>
 <p>The 
@@ -263,7 +263,7 @@ typedef struct _NET_IF_INFORMATION {
      <a href="..\ntddndis\ne-ntddndis--ndis-medium.md">NDIS_MEDIUM</a>.</p>
 </dd>
 
-### -field <b>PhysicalMediumType</b>
+### -field PhysicalMediumType
 
 <dd>
 <p>The physical medium type for the interface. For more information, see 
@@ -355,4 +355,4 @@ typedef struct _NET_IF_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_IF_INFORMATION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_IF_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

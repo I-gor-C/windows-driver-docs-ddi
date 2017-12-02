@@ -60,19 +60,19 @@ ULONG StorPortRequestTimer(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>TimerHandle</i> [in]
+### -param TimerHandle [in]
 
 <dd>
 <p>A pointer to an opaque buffer for the timer context returned by <a href="..\storport\nf-storport-storportinitializetimer.md">StorPortInitializeTimer</a>.</p>
 </dd>
 
-### -param <i>TimerCallback</i> [in]
+### -param TimerCallback [in]
 
 <dd>
 <p>A pointer to a timer callback routine supplied by the miniport. The following is the prototype defined for <b>PHW_TIMER_EX</b>:</p>
@@ -93,19 +93,19 @@ VOID
 </table></span></div>
 </dd>
 
-### -param <i>CallbackContext</i> [in, optional]
+### -param CallbackContext [in, optional]
 
 <dd>
 <p>A pointer to a miniport provided context for the timer callback.</p>
 </dd>
 
-### -param <i>TimerValue</i> [in]
+### -param TimerValue [in]
 
 <dd>
 <p>The timeout value for the timer, in microseconds. Setting <i>TimerValue</i> to 0 will cancel the timer.</p>
 </dd>
 
-### -param <i>TolerableDelay</i> [in]
+### -param TolerableDelay [in]
 
 <dd>
 <p>The allowable delay for the timer in microseconds. Values less than 32 microseconds are ignored and <i>TolerableDelay</i> defaults to 0.</p>

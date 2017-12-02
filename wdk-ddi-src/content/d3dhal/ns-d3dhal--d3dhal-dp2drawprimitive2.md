@@ -59,19 +59,19 @@ typedef struct _D3DHAL_DP2DRAWPRIMITIVE2 {
 ## -struct-fields
 <dl>
 
-### -field <b>primType</b>
+### -field primType
 
 <dd>
 <p>Specifies the type of primitive to draw (one of D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP or D3DPT_TRIANGLEFAN).</p>
 </dd>
 
-### -field <b>FirstVertexOffset</b>
+### -field FirstVertexOffset
 
 <dd>
 <p>Specifies the offset, in bytes, in stream zero of the vertex data. This is in contrast to D3DDP2OP_DRAWPRIMITIVE where the start of the vertex data in the vertex stream is specified by a vertex index rather than an actual byte offset.</p>
 </dd>
 
-### -field <b>PrimitiveCount</b>
+### -field PrimitiveCount
 
 <dd>
 <p>Specifies the number of triangles, lines or points to draw for the given primitive.</p>

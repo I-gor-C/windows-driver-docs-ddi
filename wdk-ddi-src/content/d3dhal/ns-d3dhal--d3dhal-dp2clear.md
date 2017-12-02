@@ -58,7 +58,7 @@ typedef struct _D3DHAL_DP2CLEAR {
 ## -struct-fields
 <dl>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Specifies what buffers the driver should clear. This member can be a bitwise OR of the following values:</p>
@@ -104,25 +104,25 @@ typedef struct _D3DHAL_DP2CLEAR {
 <p> </p>
 </dd>
 
-### -field <b>dwFillColor</b>
+### -field dwFillColor
 
 <dd>
 <p>Specifies the color that the driver should clear the context's render target to.</p>
 </dd>
 
-### -field <b>dvFillDepth</b>
+### -field dvFillDepth
 
 <dd>
 <p>Specifies the value that the driver should use to set the depth in the context's depth buffer. This member can be a value in the interval 0.0 to 1.0. The driver should convert this value to an integer using the <b>dwZBitMask</b> member of the depth buffer's <a href="..\ksmedia\ns-ksmedia--ddpixelformat.md">DDPIXELFORMAT</a> structure.</p>
 </dd>
 
-### -field <b>dwFillStencil</b>
+### -field dwFillStencil
 
 <dd>
 <p>Specifies the value that the driver should clear the context's stencil buffer to. This member can be an integer in the interval 0 to 2ⁿ-1, where <i>n</i> is the number of bits in the stencil buffer.</p>
 </dd>
 
-### -field <b>Rects</b>
+### -field Rects
 
 <dd>
 <p>Specifies the rectangular areas of the buffer that the driver should clear. The rectangles are specified in screen coordinates. This member of the structure contains the first rectangle area to be blitted. The <b>wStateCount</b> member of the <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a> contains the total number of rectangle areas to be blitted. The other (<b>wStateCount</b>-1) RECT structures required follow the D3DHAL_DP2CLEAR structure without any padding.</p>

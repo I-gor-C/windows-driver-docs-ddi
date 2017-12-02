@@ -56,19 +56,19 @@ NTSTATUS ChangerClassInitialize(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>Pointer to the changer miniclass driver object.  This is passed as a parameter to the miniclass driver's <b>DriverEntry</b> routine. The format of this object is operating system-specific and should not be interpreted by the miniclass driver. </p>
 </dd>
 
-### -param <i>RegistryPath</i> [in]
+### -param RegistryPath [in]
 
 <dd>
 <p>Pointer to the registry path for changer miniclass driver. This is also passed as a parameter to the miniclass driver's <b>DriverEntry</b> routine. The format of this is operating system-specific and should not be interpreted by the miniclass driver.</p>
 </dd>
 
-### -param <i>MCDInitData</i> [in]
+### -param MCDInitData [in]
 
 <dd>
 <p>Pointer to an <a href="..\mcd\ns-mcd--mcd-init-data.md">MCD_INIT_DATA</a> structure containing miniclass driver-specific information such as the entry points for the changer miniclass driver's command processing routines. </p>

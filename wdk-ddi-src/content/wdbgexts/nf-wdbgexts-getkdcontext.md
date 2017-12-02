@@ -7,13 +7,13 @@ old-location: debugger\getkdcontext.htm
 old-project: debugger
 ms.assetid: cf795629-cf62-45fa-ad5e-e2eef576bcfd
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: GetKdContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -55,7 +55,7 @@ ULONG GetKdContext(
 ## -parameters
 <dl>
 
-### -param <i>ppi</i> 
+### -param ppi 
 
 <dd>
 <p>Points to the following structure:</p>
@@ -90,7 +90,7 @@ ULONG GetKdContext(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

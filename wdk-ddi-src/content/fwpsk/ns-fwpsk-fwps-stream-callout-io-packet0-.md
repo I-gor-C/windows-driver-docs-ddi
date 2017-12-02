@@ -7,7 +7,7 @@ old-location: netvista\fwps_stream_callout_io_packet0.htm
 old-project: netvista
 ms.assetid: 2c0539f0-116e-4344-9584-db7416d258e0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_STREAM_CALLOUT_IO_PACKET0_, FWPS_STREAM_CALLOUT_IO_PACKET0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
 ## -struct-fields
 <dl>
 
-### -field <b>streamData</b>
+### -field streamData
 
 <dd>
 <p>A pointer to an 
@@ -70,7 +70,7 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
      <a href="netvista.classifyfn">classifyFn</a> callout function for processing.</p>
 </dd>
 
-### -field <b>missedBytes</b>
+### -field missedBytes
 
 <dd>
 <p>The number of bytes in the data stream that are missing since the last time the callout driver's 
@@ -80,7 +80,7 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
      portion of the data stream.</p>
 </dd>
 
-### -field <b>countBytesRequired</b>
+### -field countBytesRequired
 
 <dd>
 <p>A value set by a callout's 
@@ -96,7 +96,7 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
      this member to zero.</p>
 </dd>
 
-### -field <b>countBytesEnforced</b>
+### -field countBytesEnforced
 
 <dd>
 <p>A value set by a callout's 
@@ -109,7 +109,7 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
      classifyFn callout function.</p>
 </dd>
 
-### -field <b>streamAction</b>
+### -field streamAction
 
 <dd>
 <p>An <b>FWPS_STREAM_ACTION_TYPE</b> value set by a callout's 
@@ -122,25 +122,25 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
 <p></p>
 <dl>
 
-### -field <a id="FWPS_STREAM_ACTION_NONE"></a><a id="fwps_stream_action_none"></a>FWPS_STREAM_ACTION_NONE
+### -field FWPS_STREAM_ACTION_NONE
 
 <dd>
 <p>No stream-specific action is required.</p>
 </dd>
 
-### -field <a id="FWPS_STREAM_ACTION_ALLOW_CONNECTION"></a><a id="fwps_stream_action_allow_connection"></a>FWPS_STREAM_ACTION_ALLOW_CONNECTION
+### -field FWPS_STREAM_ACTION_ALLOW_CONNECTION
 
 <dd>
 <p>Indicates that all future data segments belonging to a flow are permitted. In this case, WFP stops classifying any data segments to the callout and attempts to offload the flow to the hardware such that no more inspection overhead is incurred.</p>
 </dd>
 
-### -field <a id="FWPS_STREAM_ACTION_NEED_MORE_DATA"></a><a id="fwps_stream_action_need_more_data"></a>FWPS_STREAM_ACTION_NEED_MORE_DATA
+### -field FWPS_STREAM_ACTION_NEED_MORE_DATA
 
 <dd>
 <p>More stream data is required by the callout function.</p>
 </dd>
 
-### -field <a id="FWPS_STREAM_ACTION_DROP_CONNECTION"></a><a id="fwps_stream_action_drop_connection"></a>FWPS_STREAM_ACTION_DROP_CONNECTION
+### -field FWPS_STREAM_ACTION_DROP_CONNECTION
 
 <dd>
 <p>The stream connection should be dropped. A callout's 
@@ -157,7 +157,7 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
        <b>FWP_ACTION_CALLOUT_INSPECTION</b>, the connection will not be dropped.</p>
 </dd>
 
-### -field <a id="FWPS_STREAM_ACTION_DEFER"></a><a id="fwps_stream_action_defer"></a>FWPS_STREAM_ACTION_DEFER
+### -field FWPS_STREAM_ACTION_DEFER
 
 <dd>
 <p>Processing of the stream data will be deferred until the callout driver calls the 
@@ -216,9 +216,9 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
 <a href="..\fwpsk\nf-fwpsk-fwpsstreamcontinue0.md">FwpsStreamContinue0</a>
 </dt>
 <dt>
-<a href="NULL">Types of Callouts</a>
+<a href="netvista.types_of_callouts">Types of Callouts</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_STREAM_CALLOUT_IO_PACKET0 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_STREAM_CALLOUT_IO_PACKET0 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

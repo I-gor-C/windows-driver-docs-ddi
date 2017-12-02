@@ -58,13 +58,13 @@ typedef struct _D3DHAL_DP2RESPONSEQUERY {
 ## -struct-fields
 <dl>
 
-### -field <b>dwQueryID</b>
+### -field dwQueryID
 
 <dd>
 <p>Identifies the query for which response data is available.</p>
 </dd>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes, of the query information that the driver returns to the runtime.</p>

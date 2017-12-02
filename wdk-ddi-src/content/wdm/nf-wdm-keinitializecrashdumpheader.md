@@ -59,31 +59,31 @@ NTSTATUS KeInitializeCrashDumpHeader(
 ## -parameters
 <dl>
 
-### -param <i>DumpType</i> [in]
+### -param DumpType [in]
 
 <dd>
 <p>Specifies the type of dump file. The only valid value is DUMP_TYPE_FULL.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies flags for the dump file. The only valid value is 0.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Pointer to the buffer that receives the header information.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size in bytes of the buffer pointed to by <i>Buffer</i>.</p>
 </dd>
 
-### -param <i>BufferNeeded</i> [out, optional]
+### -param BufferNeeded [out, optional]
 
 <dd>
 <p>Optionally, a pointer to a variable that receives the size necessary to hold the complete header information.</p>

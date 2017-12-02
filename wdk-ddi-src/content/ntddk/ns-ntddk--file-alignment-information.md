@@ -54,7 +54,7 @@ typedef struct _FILE_ALIGNMENT_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>AlignmentRequirement</b>
+### -field AlignmentRequirement
 
 <dd>
 <p>The buffer alignment required by the underlying device. For a list of system-defined values, see <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>. The value must be one of the FILE_<i>XXX</i>_ALIGNMENT values defined in Wdm.h. For more information, see <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff547807">Initializing a Device Object</a>.</p>

@@ -57,19 +57,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>pDocumentName</b>
+### -field pDocumentName
 
 <dd>
 <p>Specifies the name of the print document.</p>
 </dd>
 
-### -field <b>pPrinterName</b>
+### -field pPrinterName
 
 <dd>
 <p>Specifies the print connection.</p>
 </dd>
 
-### -field <b>pExtraErrorInfo</b>
+### -field pExtraErrorInfo
 
 <dd>
 <p>Specifies the name of the client machine printing the job.</p>

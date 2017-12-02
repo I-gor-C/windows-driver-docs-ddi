@@ -56,13 +56,13 @@ typedef enum _IO_CONTAINER_NOTIFICATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="IoSessionStateNotification"></a><a id="iosessionstatenotification"></a><a id="IOSESSIONSTATENOTIFICATION"></a><b>IoSessionStateNotification</b>
+### -field IoSessionStateNotification
 
 <dd>
 <p>Session state notifications. The driver uses this enumeration constant to request notifications about changes in the state of user sessions that the driver is interested in.</p>
 </dd>
 
-### -field <a id="IoMaxContainerNotificationClass"></a><a id="iomaxcontainernotificationclass"></a><a id="IOMAXCONTAINERNOTIFICATIONCLASS"></a><b>IoMaxContainerNotificationClass</b>
+### -field IoMaxContainerNotificationClass
 
 <dd>
 <p>Specifies the maximum value in this enumeration type. </p>

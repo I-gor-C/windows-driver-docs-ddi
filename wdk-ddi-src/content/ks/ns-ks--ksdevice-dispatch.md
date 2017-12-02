@@ -67,85 +67,85 @@ typedef struct _KSDEVICE_DISPATCH {
 ## -struct-fields
 <dl>
 
-### -field <b>Add</b>
+### -field Add
 
 <dd>
 <p>Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminideviceadd">AVStrMiniDeviceAdd</a> callback routine.</p>
 </dd>
 
-### -field <b>Start</b>
+### -field Start
 
 <dd>
 <p>Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicestart">AVStrMiniDeviceStart</a> callback routine.</p>
 </dd>
 
-### -field <b>PostStart</b>
+### -field PostStart
 
 <dd>
 <p>Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicepoststart">AVStrMiniDevicePostStart</a> callback routine.</p>
 </dd>
 
-### -field <b>QueryStop</b>
+### -field QueryStop
 
 <dd>
 <p>Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicequerystop">AVStrMiniDeviceQueryStop</a> callback routine.</p>
 </dd>
 
-### -field <b>CancelStop</b>
+### -field CancelStop
 
 <dd>
 <p>Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicecancelstop">AVStrMiniDeviceCancelStop</a> callback routine.</p>
 </dd>
 
-### -field <b>Stop</b>
+### -field Stop
 
 <dd>
 <p>Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicestop">AVStrMiniDeviceStop</a> callback routine.</p>
 </dd>
 
-### -field <b>QueryRemove</b>
+### -field QueryRemove
 
 <dd>
 <p>Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicequeryremove">AVStrMiniDeviceQueryRemove</a> callback routine.</p>
 </dd>
 
-### -field <b>CancelRemove</b>
+### -field CancelRemove
 
 <dd>
 <p>Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicecancelremove">AVStrMiniDeviceCancelRemove</a> callback routine.</p>
 </dd>
 
-### -field <b>Remove</b>
+### -field Remove
 
 <dd>
 <p>Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminideviceremove">AVStrMiniDeviceRemove</a> callback routine.</p>
 </dd>
 
-### -field <b>QueryCapabilities</b>
+### -field QueryCapabilities
 
 <dd>
 <p>Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicequerycapabilities">AVStrMiniDeviceQueryCapabilities</a> callback routine.</p>
 </dd>
 
-### -field <b>SurpriseRemoval</b>
+### -field SurpriseRemoval
 
 <dd>
 <p>Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicesurpriseremoval">AVStrMiniDeviceSurpriseRemoval</a> callback routine.</p>
 </dd>
 
-### -field <b>QueryPower</b>
+### -field QueryPower
 
 <dd>
 <p>Optional. can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicequerypower">AVStrMiniDeviceQueryPower</a> callback routine.</p>
 </dd>
 
-### -field <b>SetPower</b>
+### -field SetPower
 
 <dd>
 <p>Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicesetpower">AVStrMiniDeviceSetPower</a> callback routine.</p>
 </dd>
 
-### -field <b>QueryInterface</b>
+### -field QueryInterface
 
 <dd>
 <p>Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicequeryinterface">AVStrMiniDeviceQueryInterface</a> callback routine.</p>

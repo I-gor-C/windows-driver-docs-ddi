@@ -56,13 +56,13 @@ typedef struct _BTH_COMMAND_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>OpCode</b>
+### -field OpCode
 
 <dd>
 <p>A USHORT value that specifies the operation code for the command.</p>
 </dd>
 
-### -field <b>TotalParameterLength</b>
+### -field TotalParameterLength
 
 <dd>
 <p>The size, in bytes, of the command payload, which is the data that follows the BTH_COMMAND_HEADER

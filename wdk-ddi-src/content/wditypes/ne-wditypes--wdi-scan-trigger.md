@@ -7,7 +7,7 @@ old-location: netvista\wdi_scan_trigger.htm
 old-project: netvista
 ms.assetid: 3E201A6D-3A5B-4A6B-8AED-258A96BBF869
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,37 +60,37 @@ typedef enum _WDI_SCAN_TRIGGER {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_SCAN_TRIGGER_MANUAL"></a><a id="wdi_scan_trigger_manual"></a><b>WDI_SCAN_TRIGGER_MANUAL</b>
+### -field WDI_SCAN_TRIGGER_MANUAL
 
 <dd>
 <p>The scan was initiated due to a user or application trigger. If this is set, the port must perform a complete scan on all supported channels. </p>
 </dd>
 
-### -field <a id="WDI_SCAN_TRIGGER_BACKGROUND"></a><a id="wdi_scan_trigger_background"></a><b>WDI_SCAN_TRIGGER_BACKGROUND</b>
+### -field WDI_SCAN_TRIGGER_BACKGROUND
 
 <dd>
 <p>The scan was initiated due to some background activity. If this is set, the port can perform a complete scan, a partial scan on a subset of supported channels, or no scan.</p>
 </dd>
 
-### -field <a id="WDI_SCAN_TRIGGER_ROAM"></a><a id="wdi_scan_trigger_roam"></a><b>WDI_SCAN_TRIGGER_ROAM</b>
+### -field WDI_SCAN_TRIGGER_ROAM
 
 <dd>
 <p>The scan was initiated for roaming purposes. If the adapter was doing background scans internally and has recent results, it can perform only a subset or no scan. If it does not have recent results, it should perform an appropriate scan.</p>
 </dd>
 
-### -field <a id="WDI_SCAN_TRIGGER_CONNECT"></a><a id="wdi_scan_trigger_connect"></a><b>WDI_SCAN_TRIGGER_CONNECT</b>
+### -field WDI_SCAN_TRIGGER_CONNECT
 
 <dd>
 <p>The scan was initiated for connecting. This connect may be a first time connect or a connect after a disconnection. The port must always honor this request to perform a scan.</p>
 </dd>
 
-### -field <a id="WDI_SCAN_TRIGGER_ANQP_QUERY"></a><a id="wdi_scan_trigger_anqp_query"></a><b>WDI_SCAN_TRIGGER_ANQP_QUERY</b>
+### -field WDI_SCAN_TRIGGER_ANQP_QUERY
 
 <dd>
 <p>The scan was initiated for performing an ANQP query.</p>
 </dd>
 
-### -field <a id="WDI_SCAN_TRIGGER_FAST_ROAM"></a><a id="wdi_scan_trigger_fast_roam"></a><b>WDI_SCAN_TRIGGER_FAST_ROAM</b>
+### -field WDI_SCAN_TRIGGER_FAST_ROAM
 
 <dd>
 <p>This scan was initiated for roaming purposes, and the host has additional information (for example, neighbor reports or instant connect last channel) to put in specific values in the scan request (such as SSID, BSSID, or band channel).</p>

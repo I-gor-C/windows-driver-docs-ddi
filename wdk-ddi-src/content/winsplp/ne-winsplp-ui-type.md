@@ -55,7 +55,7 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="kMessageBox"></a><a id="kmessagebox"></a><a id="KMESSAGEBOX"></a><b>kMessageBox</b>
+### -field kMessageBox
 
 <dd></dd>
 </dl>

@@ -55,13 +55,13 @@ typedef struct HBA_FCPBinding {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfEntries</b>
+### -field NumberOfEntries
 
 <dd>
 <p>Indicates the number of bindings.</p>
 </dd>
 
-### -field <b>entry</b>
+### -field entry
 
 <dd>
 <p>Contains a variable length array of structures of type <a href="..\hbaapi\ns-hbaapi-hba-fcpbindingentry.md">HBA_FCPBindingEntry</a> each of which defines a binding between a pair of operating system and fibre channel protocol (FCP) identifiers for a logical unit. </p>

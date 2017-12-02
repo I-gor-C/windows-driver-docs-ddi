@@ -55,13 +55,13 @@ NTSTATUS IoSetActivityIdIrp(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>The IRP to associate the activity ID with.</p>
 </dd>
 
-### -param <i>Guid</i> [in, optional]
+### -param Guid [in, optional]
 
 <dd>
 <p>A pointer to the GUID that represents the ID to store in the IRP.  If NULL, IoSetActivityIdIrp attempts to retrieve the activity ID from the current thread if it was the thread that originally issued the request.</p>

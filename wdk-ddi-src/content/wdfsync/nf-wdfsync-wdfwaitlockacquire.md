@@ -7,7 +7,7 @@ old-location: wdf\wdfwaitlockacquire.htm
 old-project: wdf
 ms.assetid: 6fe7465d-938a-400f-b141-76e8a5ffbe90
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfWaitLockAcquire
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ NTSTATUS WdfWaitLockAcquire(
 ## -parameters
 <dl>
 
-### -param <i>Lock</i> [in]
+### -param Lock [in]
 
 <dd>
 <p>A handle to a framework wait-lock object, obtained by a previous call to <a href="..\wdfsync\nf-wdfsync-wdfwaitlockcreate.md">WdfWaitLockCreate</a>.</p>
 </dd>
 
-### -param <i>Timeout</i> [in, optional]
+### -param Timeout [in, optional]
 
 <dd>
 <p>An optional pointer to a time-out value. The time-out value is specified in system time units (100-nanosecond intervals).</p>
@@ -109,7 +109,7 @@ NTSTATUS WdfWaitLockAcquire(
 ## -remarks
 <p>The <b>WdfWaitLockAcquire</b> method does not return until it acquires the wait lock or until the time-out period expires. </p>
 
-<p><b>WdfWaitLockAcquire</b> calls <a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a> before acquiring the wait lock.  As a result, when the method returns, <a href="https://msdn.microsoft.com/74ed953c-1b2a-40b9-9df3-16869b198b38">normal kernel APCs</a> are disabled. <b>WdfWaitLockAcquire</b> does not alter the caller's IRQL.</p>
+<p><b>WdfWaitLockAcquire</b> calls <a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a> before acquiring the wait lock.  As a result, when the method returns, <a href="https://msdn.microsoft.com/74ed953c-1b2a-40b9-9df3-16869b198b38">normal kernel APCs</a> are disabled. <b>WdfWaitLockAcquire</b> does not alter the caller's IRQL.</p>
 
 <p>If the <i>Timeout</i> pointer is <b>NULL</b>, or if the time-out value is not zero, <b>WdfWaitLockAcquire</b> must be called at IRQL = PASSIVE_LEVEL.</p>
 
@@ -189,7 +189,7 @@ NTSTATUS WdfWaitLockAcquire(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a>
+<a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a>
 </dt>
 <dt>
 <a href="..\wdfsync\nf-wdfsync-wdfwaitlockcreate.md">WdfWaitLockCreate</a>
@@ -200,4 +200,4 @@ NTSTATUS WdfWaitLockAcquire(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfWaitLockAcquire method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfWaitLockAcquire method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -54,7 +54,7 @@ HRESULT KsSetMediaType(
 ## -parameters
 <dl>
 
-### -param <i>MediaType</i> [in]
+### -param MediaType [in]
 
 <dd>
 <p>Pointer to a <b>CMediaType</b> object associated with the media type.</p>

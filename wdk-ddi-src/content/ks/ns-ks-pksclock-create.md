@@ -54,7 +54,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>CreateFlags</b>
+### -field CreateFlags
 
 <dd>
 <p>Currently consists of a flags item, which must be set to zero.</p>

@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>CX</b>
+### -field CX
 
 <dd>
 <p>Specifies the width of the overlay surface.</p>
 </dd>
 
-### -field <b>CY</b>
+### -field CY
 
 <dd>
 <p>Specifies the height of the overlay surface</p>

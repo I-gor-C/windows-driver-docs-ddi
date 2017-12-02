@@ -7,7 +7,7 @@ old-location: sensors\gnss_agnss_request_type.htm
 old-project: sensors
 ms.assetid: 31293354-D68B-475F-91BD-0504129207A5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="GNSS_AGNSS_TimeInjection"></a><a id="gnss_agnss_timeinjection"></a><a id="GNSS_AGNSS_TIMEINJECTION"></a><b>GNSS_AGNSS_TimeInjection</b>
+### -field GNSS_AGNSS_TimeInjection
 
 <dd>
 <p>Indicates the injection request is for time injection.</p>
 </dd>
 
-### -field <a id="GNSS_AGNSS_PositionInjection"></a><a id="gnss_agnss_positioninjection"></a><a id="GNSS_AGNSS_POSITIONINJECTION"></a><b>GNSS_AGNSS_PositionInjection</b>
+### -field GNSS_AGNSS_PositionInjection
 
 <dd>
 <p>Indicates the injection request is for position injection.</p>
 </dd>
 
-### -field <a id="GNSS_AGNSS_BlobInjection"></a><a id="gnss_agnss_blobinjection"></a><a id="GNSS_AGNSS_BLOBINJECTION"></a><b>GNSS_AGNSS_BlobInjection</b>
+### -field GNSS_AGNSS_BlobInjection
 
 <dd>
 <p>Indicates the injection request is for blob injection.</p>

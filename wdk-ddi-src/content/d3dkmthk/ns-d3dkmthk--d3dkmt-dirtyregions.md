@@ -55,13 +55,13 @@ typedef struct _D3DKMT_DIRTYREGIONS {
 ## -struct-fields
 <dl>
 
-### -field <b>NumRects</b>
+### -field NumRects
 
 <dd>
 <p>[in] The number of dirty regions in the array that the <b>Rects</b> member specifies. </p>
 </dd>
 
-### -field <b>Rects</b>
+### -field Rects
 
 <dd>
 <p>[in] An array of <a href="display.rect">RECT</a> structures that specifies the dirty regions of a surface.</p>

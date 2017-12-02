@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>UFX_DEVICE_CAPABILITIES_INIT</b> macro the initializes the <a href="buses.ufx_device_capabilities">UFX_DEVICE_CAPABILITIES</a> structure.</p>
+<p>The <b>UFX_DEVICE_CAPABILITIES_INIT</b> macro the initializes the <a href="..\ufxbase\ns-ufxbase--ufx-device-capabilities.md">UFX_DEVICE_CAPABILITIES</a> structure.</p>
 
 
 ## -syntax
@@ -55,10 +55,10 @@ void UFX_DEVICE_CAPABILITIES_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Capabilities</i> [out]
+### -param Capabilities [out]
 
 <dd>
-<p>Pointer to the <a href="buses.ufx_device_capabilities">UFX_DEVICE_CAPABILITIES</a> structure.</p>
+<p>Pointer to the <a href="..\ufxbase\ns-ufxbase--ufx-device-capabilities.md">UFX_DEVICE_CAPABILITIES</a> structure.</p>
 </dd>
 </dl>
 

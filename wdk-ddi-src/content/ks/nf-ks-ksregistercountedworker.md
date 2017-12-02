@@ -56,19 +56,19 @@ NTSTATUS KsRegisterCountedWorker(
 ## -parameters
 <dl>
 
-### -param <i>WorkQueueType</i> [in]
+### -param WorkQueueType [in]
 
 <dd>
 <p>Contains the priority of the work thread. This is normally one of the following: CriticalWorkQueue, DelayedWorkQueue, or HyperCriticalWorkQueue.</p>
 </dd>
 
-### -param <i>CountedWorkItem</i> [in]
+### -param CountedWorkItem [in]
 
 <dd>
 <p>Contains a pointer to the work queue item that will be queued as needed based on the current count value.</p>
 </dd>
 
-### -param <i>Worker</i> [out]
+### -param Worker [out]
 
 <dd>
 <p>Contains the opaque context that must be used when scheduling a work item. Also contains the queue type, and is used to synchronize completion of work items.</p>

@@ -56,19 +56,19 @@ typedef union _SUB_Q_CHANNEL_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>CurrentPosition</b>
+### -field CurrentPosition
 
 <dd>
 <p>Contains position information, such as the absolute and relative addresses, in a <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-current-position.md">SUB_Q_CURRENT_POSITION</a> structure. </p>
 </dd>
 
-### -field <b>MediaCatalog</b>
+### -field MediaCatalog
 
 <dd>
 <p>Contains the media catalog number in a <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-media-catalog-number.md">SUB_Q_MEDIA_CATALOG_NUMBER</a>  structure.</p>
 </dd>
 
-### -field <b>TrackIsrc</b>
+### -field TrackIsrc
 
 <dd>
 <p>Contains the TrackIsrc code in a <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-track-isrc.md">SUB_Q_TRACK_ISRC</a> structure. </p>

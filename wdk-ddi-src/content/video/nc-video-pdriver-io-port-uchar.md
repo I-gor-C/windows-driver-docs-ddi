@@ -61,19 +61,19 @@ VP_STATUS SvgaHwIoPortUchar(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> 
+### -param Context 
 
 <dd>
 <p>Specifies the miniport driver-defined context value that was set in the <b>EmulatorAccessEntriesContext</b> member of <a href="..\video\ns-video--video-port-config-info.md">VIDEO_PORT_CONFIG_INFO</a>.</p>
 </dd>
 
-### -param <i>Port</i> 
+### -param Port 
 
 <dd>
 <p>Specifies the mapped I/O port to be trapped.</p>
 </dd>
 
-### -param <i>AccessMode</i> 
+### -param AccessMode 
 
 <dd>
 <p>Specifies the type of access to be trapped, which can be one or a combination (ORed) of the following values:</p>
@@ -89,7 +89,7 @@ VP_STATUS SvgaHwIoPortUchar(
 </p>
 </dd>
 
-### -param <i>Data</i> 
+### -param Data 
 
 <dd>
 <p>Pointer to the byte to be transferred.</p>

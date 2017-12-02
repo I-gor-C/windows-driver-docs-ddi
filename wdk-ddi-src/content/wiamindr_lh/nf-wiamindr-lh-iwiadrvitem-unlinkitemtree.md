@@ -7,7 +7,7 @@ old-location: image\iwiadrvitem_unlinkitemtree.htm
 old-project: image
 ms.assetid: f6fb2929-177b-44cd-a313-8620ba9b2907
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IWiaDrvItem, UnlinkItemTree, IWiaDrvItem::UnlinkItemTree
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT UnlinkItemTree(
 ## -parameters
 <dl>
 
-### -param <i>lFlags</i> [in]
+### -param lFlags [in]
 
 <dd>
 <p>Indicates how the driver item tree should be unlinked. This parameter must be set to one of the following values. See the Microsoft Windows SDK documentation for a description of the WIA item type flags.</p>

@@ -55,7 +55,7 @@ VOID SERCX2_CUSTOM_TRANSMIT_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
 <p>A pointer to the <a href="..\sercx\ns-sercx--sercx2-custom-transmit-config.md">SERCX2_CUSTOM_TRANSMIT_CONFIG</a> structure that is to be initialized.</p>

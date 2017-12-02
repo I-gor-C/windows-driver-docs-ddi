@@ -63,62 +63,62 @@ NTSTATUS ZwFsControlFile(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [in]
+### -param FileHandle [in]
 
 <dd>
 <p>Handle returned by <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> or <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a> for the file object representing the file or directory on which the specified action is to be performed. The file object must have been opened for asynchronous I/O if the caller specifies an <i>Event</i>, <i>ApcRoutine</i>, and an APC context (in <i>ApcContext</i>), or a completion context (in <i>ApcContext</i>).</p>
 </dd>
 
-### -param <i>Event</i> [in, optional]
+### -param Event [in, optional]
 
 <dd>
 <p>Handle for a caller-created event. If this parameter is supplied, the caller will be put into a wait state until the requested operation is completed and the given event is set to the Signaled state. This parameter is optional and can be <b>NULL</b>. It must be <b>NULL</b> if the caller will wait for the <i>FileHandle</i> to be set to the Signaled state.</p>
 </dd>
 
-### -param <i>ApcRoutine</i> [in, optional]
+### -param ApcRoutine [in, optional]
 
 <dd>
 <p>Address of a caller-supplied APC routine to be called when the requested operation completes. This parameter is optional and can be <b>NULL</b>. It must be <b>NULL</b> if there is an I/O completion object associated with the file object.</p>
 </dd>
 
-### -param <i>ApcContext</i> [in, optional]
+### -param ApcContext [in, optional]
 
 <dd>
 <p>Pointer to a caller-determined context area. This parameter value is used as the APC context if the caller supplies an APC, or is used as the completion context if an I/O completion object has been associated with the file object. When the operation completes, either the APC context is passed to the APC, if one was specified, or the completion context is included as part of the completion message that the I/O Manager posts to the associated I/O completion object.</p>
 <p>This parameter is optional and can be <b>NULL</b>. It must be <b>NULL</b> if <i>ApcRoutine</i> is <b>NULL</b> and there is no I/O completion object associated with the file object.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>Pointer to an IO_STATUS_BLOCK structure that receives the final completion status and information about the operation. For successful calls that return data, the number of bytes written to the <i>OutputBuffer</i> is returned in the <b>Information</b> member of this structure.</p>
 </dd>
 
-### -param <i>FsControlCode</i> [in]
+### -param FsControlCode [in]
 
 <dd>
 <p>FSCTL_<i>XXX</i> code that indicates which file system control operation is to be carried out. The value of this parameter determines the formats and required lengths of the <i>InputBuffer</i> and <i>OutputBuffer</i>, as well as which of the following parameter pairs are required. For detailed information about the system-defined FSCTL_<i>XXX</i> codes, see the "Remarks" section of the reference entry for <a href="base.deviceiocontrol">DeviceIoControl</a> in the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -param <i>InputBuffer</i> [in, optional]
+### -param InputBuffer [in, optional]
 
 <dd>
 <p>Pointer to a caller-allocated input buffer that contains device-specific information to be given to the target driver. If <i>FsControlCode</i> specifies an operation that does not require input data, this pointer is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>InputBufferLength</i> [in]
+### -param InputBufferLength [in]
 
 <dd>
 <p>Size, in bytes, of the buffer at <i>InputBuffer</i>. This value is ignored if <i>InputBuffer</i> is <b>NULL</b>.</p>
 </dd>
 
-### -param <i>OutputBuffer</i> [out, optional]
+### -param OutputBuffer [out, optional]
 
 <dd>
 <p>Pointer to a caller-allocated output buffer in which information is returned from the target driver. If <i>FsControlCode</i> specifies an operation that does not produce output data, this pointer is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>OutputBufferLength</i> [in]
+### -param OutputBufferLength [in]
 
 <dd>
 <p>Size, in bytes, of the buffer at <i>OutputBuffer</i>. This value is ignored if <i>OutputBuffer</i> is <b>NULL</b>.</p>

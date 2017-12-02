@@ -7,7 +7,7 @@ old-location: netvista\ndis_pm_protocol_offload_type.htm
 old-project: netvista
 ms.assetid: ab9f98d3-1792-43be-b838-f9dd3953889c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT, *PGET_CONFIGURATION_IOCTL_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ typedef enum _NDIS_PM_PROTOCOL_OFFLOAD_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="NdisPMProtocolOffloadIdUnspecified"></a><a id="ndispmprotocoloffloadidunspecified"></a><a id="NDISPMPROTOCOLOFFLOADIDUNSPECIFIED"></a><b>NdisPMProtocolOffloadIdUnspecified</b>
+### -field NdisPMProtocolOffloadIdUnspecified
 
 <dd>
 <p>The offloaded protocol is not specified.</p>
 </dd>
 
-### -field <a id="NdisPMProtocolOffloadIdIPv4ARP"></a><a id="ndispmprotocoloffloadidipv4arp"></a><a id="NDISPMPROTOCOLOFFLOADIDIPV4ARP"></a><b>NdisPMProtocolOffloadIdIPv4ARP</b>
+### -field NdisPMProtocolOffloadIdIPv4ARP
 
 <dd>
 <p>An IPv4 ARP protocol offload. The parameters for this protocol offload type are specified in the 
@@ -74,7 +74,7 @@ typedef enum _NDIS_PM_PROTOCOL_OFFLOAD_TYPE {
      NDIS_PM_PROTOCOL_OFFLOAD</a> structure.</p>
 </dd>
 
-### -field <a id="NdisPMProtocolOffloadIdIPv6NS"></a><a id="ndispmprotocoloffloadidipv6ns"></a><a id="NDISPMPROTOCOLOFFLOADIDIPV6NS"></a><b>NdisPMProtocolOffloadIdIPv6NS</b>
+### -field NdisPMProtocolOffloadIdIPv6NS
 
 <dd>
 <p>An IPv6 Neighbor Solicitation (NS) protocol offload. The parameters for this protocol offload type
@@ -82,7 +82,7 @@ typedef enum _NDIS_PM_PROTOCOL_OFFLOAD_TYPE {
      <b>IPv6NSParameters</b> member of the <a href="..\ntddndis\ns-ntddndis--ndis-pm-protocol-offload.md">NDIS_PM_PROTOCOL_OFFLOAD</a> structure.</p>
 </dd>
 
-### -field <a id="NdisPMProtocolOffload80211RSNRekey"></a><a id="ndispmprotocoloffload80211rsnrekey"></a><a id="NDISPMPROTOCOLOFFLOAD80211RSNREKEY"></a><b>NdisPMProtocolOffload80211RSNRekey</b>
+### -field NdisPMProtocolOffload80211RSNRekey
 
 <dd>
 <p>An IEEE 802.11i Robust Security Network (RSN) 4-way and 2-way handshake protocol offload. This
@@ -90,7 +90,7 @@ typedef enum _NDIS_PM_PROTOCOL_OFFLOAD_TYPE {
      <b>Dot11RSNRekeyParameters</b> member of the <a href="..\ntddndis\ns-ntddndis--ndis-pm-protocol-offload.md">NDIS_PM_PROTOCOL_OFFLOAD</a> structure.</p>
 </dd>
 
-### -field <a id="NdisPMProtocolOffloadIdMaximum"></a><a id="ndispmprotocoloffloadidmaximum"></a><a id="NDISPMPROTOCOLOFFLOADIDMAXIMUM"></a><b>NdisPMProtocolOffloadIdMaximum</b>
+### -field NdisPMProtocolOffloadIdMaximum
 
 <dd>
 <p>The maximum value for this enumeration. This value might change in future versions of the NDIS
@@ -134,4 +134,4 @@ typedef enum _NDIS_PM_PROTOCOL_OFFLOAD_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PROTOCOL_OFFLOAD_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PROTOCOL_OFFLOAD_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

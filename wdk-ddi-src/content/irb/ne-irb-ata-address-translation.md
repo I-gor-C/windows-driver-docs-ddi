@@ -57,23 +57,23 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="UnknownMode"></a><a id="unknownmode"></a><a id="UNKNOWNMODE"></a><b>UnknownMode</b>
+### -field UnknownMode
 
 <dd></dd>
 
-### -field <a id="ChsMode"></a><a id="chsmode"></a><a id="CHSMODE"></a><b>ChsMode</b>
+### -field ChsMode
 
 <dd>
 <p>Indicates that sectors are to be addressed using cylinder/head/sector (CHS) values.</p>
 </dd>
 
-### -field <a id="LbaMode"></a><a id="lbamode"></a><a id="LBAMODE"></a><b>LbaMode</b>
+### -field LbaMode
 
 <dd>
 <p>Indicates that sectors are to be addressed using logical block addressing (LBA) values.</p>
 </dd>
 
-### -field <a id="Lba48BitMode"></a><a id="lba48bitmode"></a><a id="LBA48BITMODE"></a><b>Lba48BitMode</b>
+### -field Lba48BitMode
 
 <dd>
 <p>Indicates support for 48-bit LBAs.</p>

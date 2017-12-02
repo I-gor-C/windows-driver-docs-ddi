@@ -59,37 +59,37 @@ typedef struct _DXGKARG_ACQUIRESWIZZLINGRANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[in] A handle to the allocation that the display miniport driver assigned and that is returned through its <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function.</p>
 </dd>
 
-### -field <b>PrivateDriverData</b>
+### -field PrivateDriverData
 
 <dd>
 <p>[in] A UINT value of private data that the user-mode display driver sends when it calls the Microsoft Direct3D runtime's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lockcb.md">pfnLockCb</a> function. The private data should be an index that lets the display miniport driver determine the accessible part of the allocation (for example, the MIP level). This member should not contain a pointer.</p>
 </dd>
 
-### -field <b>RangeId</b>
+### -field RangeId
 
 <dd>
 <p>[in] The zero-based identifier of the swizzling range that the <a href="display.dxgkddiacquireswizzlingrange">DxgkDdiAcquireSwizzlingRange</a> function programs.</p>
 </dd>
 
-### -field <b>SegmentId</b>
+### -field SegmentId
 
 <dd>
 <p>[in] The identifier of a segment in which the allocation is currently paged.</p>
 </dd>
 
-### -field <b>RangeSize</b>
+### -field RangeSize
 
 <dd>
 <p>[in] The size, in bytes, of the range to acquire. This range size is identical to the size of the allocation that <a href="display.dxgkddiacquireswizzlingrange">DxgkDdiAcquireSwizzlingRange</a> acquires a range for. The driver can modify the value in <b>RangeSize</b> when the <b>UseAlternateVA</b> bit-field flag is specified in the <b>Flags</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-lockflags.md">D3DDDICB_LOCKFLAGS</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lockcb.md">pfnLockCb</a> function. If the <b>UseAlternateVA</b> flag is not specified, the driver cannot change <b>RangeSize</b>.</p>
 </dd>
 
-### -field <b>CPUTranslatedAddress</b>
+### -field CPUTranslatedAddress
 
 <dd>
 <p>[in/out] The base physical address where the CPU should map the allocation. The display miniport driver must set this information when a call to its <a href="display.dxgkddiacquireswizzlingrange">DxgkDdiAcquireSwizzlingRange</a> function succeeds. </p>

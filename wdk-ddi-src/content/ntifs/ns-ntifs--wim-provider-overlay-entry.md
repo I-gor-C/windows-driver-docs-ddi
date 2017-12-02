@@ -7,7 +7,7 @@ old-location: ifsk\wim_provider_overlay_entry.htm
 old-project: ifsk
 ms.assetid: 8D1C9C8B-0545-42D7-860F-E2263457E61F
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: WIM_PROVIDER_OVERLAY_ENTRY, WIM_PROVIDER_OVERLAY_ENTRY, *PWIM_PROVIDER_OVERLAY_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef struct _WIM_PROVIDER_OVERLAY_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>NextEntryOffset</b>
+### -field NextEntryOffset
 
 <dd>
 <p>The offset to the next WIM_PROVIDER_OVERLAY_ENTRY structure returned in the enumeration. Set to 0 if there are no further entries.</p>
 </dd>
 
-### -field <b>DataSourceId</b>
+### -field DataSourceId
 
 <dd>
 <p>The specific identifier an overlay entry. A single WIM GUID, such as in the <b>WimGuid</b> member, may have multiple  data source identifiers.</p>
 </dd>
 
-### -field <b>WimGuid</b>
+### -field WimGuid
 
 <dd>
 <p>A unique identifier of a WIM file.</p>
 </dd>
 
-### -field <b>WimFileNameOffset</b>
+### -field WimFileNameOffset
 
 <dd>
 <p>The offset, in bytes, from the beginning of this structure of the file name for the WIM file to add as a backing source. The file name is a NULL terminated string of <b>WCHAR</b> character values.</p>
 </dd>
 
-### -field <b>WimType</b>
+### -field WimType
 
 <dd>
 <p>The type of WIM file set as a backing source. The WIM file type is set to one of the following values.</p>
@@ -96,7 +96,7 @@ typedef struct _WIM_PROVIDER_OVERLAY_ENTRY {
 <tr>
 <td width="40%"><a id="_WIM_BOOT_OS_WIM"></a><a id="_wim_boot_os_wim"></a><dl>
 
-### -field <b> WIM_BOOT_OS_WIM</b>
+### -field  WIM_BOOT_OS_WIM
 
 </dl>
 </td>
@@ -107,7 +107,7 @@ typedef struct _WIM_PROVIDER_OVERLAY_ENTRY {
 <tr>
 <td width="40%"><a id="_WIM_BOOT_NOT_OS_WIM"></a><a id="_wim_boot_not_os_wim"></a><dl>
 
-### -field <b> WIM_BOOT_NOT_OS_WIM</b>
+### -field  WIM_BOOT_NOT_OS_WIM
 
 </dl>
 </td>
@@ -119,13 +119,13 @@ typedef struct _WIM_PROVIDER_OVERLAY_ENTRY {
 <p> </p>
 </dd>
 
-### -field <b>WimIndex</b>
+### -field WimIndex
 
 <dd>
 <p>The index of the image in the WIM file specified at <b>WimFileNameOffset</b>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The status flags for the WIM provider. Set to 0 when active. Otherwise <b>Flags</b> is set to one of the following values.</p>
@@ -137,7 +137,7 @@ typedef struct _WIM_PROVIDER_OVERLAY_ENTRY {
 <tr>
 <td width="40%"><a id="WIM_PROVIDER_EXTERNAL_FLAG_NOT_ACTIVE"></a><a id="wim_provider_external_flag_not_active"></a><dl>
 
-### -field <b>WIM_PROVIDER_EXTERNAL_FLAG_NOT_ACTIVE</b>
+### -field WIM_PROVIDER_EXTERNAL_FLAG_NOT_ACTIVE
 
 </dl>
 </td>
@@ -148,7 +148,7 @@ typedef struct _WIM_PROVIDER_OVERLAY_ENTRY {
 <tr>
 <td width="40%"><a id="WIM_PROVIDER_EXTERNAL_FLAG_SUSPENDED"></a><a id="wim_provider_external_flag_suspended"></a><dl>
 
-### -field <b>WIM_PROVIDER_EXTERNAL_FLAG_SUSPENDED</b>
+### -field WIM_PROVIDER_EXTERNAL_FLAG_SUSPENDED
 
 </dl>
 </td>
@@ -194,4 +194,4 @@ typedef struct _WIM_PROVIDER_OVERLAY_ENTRY {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20WIM_PROVIDER_OVERLAY_ENTRY structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20WIM_PROVIDER_OVERLAY_ENTRY structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

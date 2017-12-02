@@ -62,49 +62,49 @@ NTSTATUS IoGetDevicePropertyData(
 ## -parameters
 <dl>
 
-### -param <i>Pdo</i> [in]
+### -param Pdo [in]
 
 <dd>
 <p>A pointer to the physical device object (PDO) for the device that is being queried.</p>
 </dd>
 
-### -param <i>PropertyKey</i> [in]
+### -param PropertyKey [in]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a> structure that specifies the device property key.</p>
 </dd>
 
-### -param <i>Lcid</i> [in]
+### -param Lcid [in]
 
 <dd>
 <p>A locale identifier. Set this parameter either to a language-specific LCID value or to <b>LOCALE_NEUTRAL</b>. The <b>LOCALE_NEUTRAL</b> LCID specifies that the property is language-neutral (that is, not specific to any language). Do not set this parameter to <b>LOCALE_SYSTEM_DEFAULT</b> or <b>LOCALE_USER_DEFAULT</b>. For more information about language-specific LCID values, see <a href="http://msdn.microsoft.com/en-us/library/cc233968(PROT.10).aspx">LCID Structure</a>.</p>
 </dd>
 
-### -param <i>Flags</i> 
+### -param Flags 
 
 <dd>
 <p>Reserved for system use. Drivers should set this value to 0.</p>
 </dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>The size, in bytes, of the buffer that <i>Data</i> points to.</p>
 </dd>
 
-### -param <i>Data</i> [out]
+### -param Data [out]
 
 <dd>
 <p>A pointer to the device property data.</p>
 </dd>
 
-### -param <i>RequiredSize</i> [out]
+### -param RequiredSize [out]
 
 <dd>
 <p>A pointer to a ULONG to receive the size of the property information that is returned at <i>Data</i>. If <b>IoGetDevicePropertyData</b> returns STATUS_BUFFER_TOO_SMALL, the caller can use this value to allocate a buffer of the correct size.</p>
 </dd>
 
-### -param <i>Type</i> [out]
+### -param Type [out]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543546">DEVPROPTYPE</a> value. If <b>IoGetDevicePropertyData</b> completes successfully, the routine uses <i>Type</i> to supply the type of data that is returned in the <i>Data</i> buffer.</p>
@@ -123,7 +123,7 @@ NTSTATUS IoGetDevicePropertyData(
 <p> </p>
 
 ## -remarks
-<p>Kernel-mode drivers use the <b>IoGetDevicePropertyData</b> routine to retrieve device properties that are defined as part of the unified device property model. For more information about device properties, see <a href="NULL">Device Properties</a>.</p>
+<p>Kernel-mode drivers use the <b>IoGetDevicePropertyData</b> routine to retrieve device properties that are defined as part of the unified device property model. For more information about device properties, see <a href="https://msdn.microsoft.com/f41040c5-0eac-450d-b532-9165c543cc1a">Device Properties</a>.</p>
 
 <p>Drivers can use the <a href="..\wdm\nf-wdm-iosetdevicepropertydata.md">IoSetDevicePropertyData</a> routine to modify a device property.</p>
 

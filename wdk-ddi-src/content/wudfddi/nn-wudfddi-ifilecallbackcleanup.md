@@ -7,7 +7,7 @@ old-location: wdf\ifilecallbackcleanup.htm
 old-project: wdf
 ms.assetid: d42eb7d5-6bf6-4f0f-a249-a869db486b6f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

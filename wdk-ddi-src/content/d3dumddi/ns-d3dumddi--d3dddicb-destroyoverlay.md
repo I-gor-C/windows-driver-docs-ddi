@@ -54,7 +54,7 @@ typedef struct _D3DDDICB_DESTROYOVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>hKernelOverlay</b>
+### -field hKernelOverlay
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createoverlaycb.md">pfnCreateOverlayCb</a> function and that identifies the kernel-mode overlay object to destroy. </p>

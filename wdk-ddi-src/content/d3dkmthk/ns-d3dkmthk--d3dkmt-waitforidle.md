@@ -54,7 +54,7 @@ typedef struct _D3DKMT_WAITFORIDLE {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the display device. </p>

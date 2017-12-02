@@ -54,7 +54,7 @@ NTSTATUS GetAllocatorFraming(
 ## -parameters
 <dl>
 
-### -param <i>AllocatorFraming</i> [out]
+### -param AllocatorFraming [out]
 
 <dd>
 <p>Pointer to a <a href="stream.ksallocator_framing">KSALLOCATOR_FRAMING</a> structure into which the method writes the miniport driver's allocator-framing preferences for this stream.</p>
@@ -67,7 +67,7 @@ NTSTATUS GetAllocatorFraming(
 ## -remarks
 <p>The miniport driver should not assume that the actual allocator-framing parameters for the stream match those specified in the <code>GetAllocatorFraming</code> call. The port driver interprets the allocation-framing parameters from the <code>GetAllocatorFraming</code> as the miniport driver's preferences. Other factors might outweigh these preferences, however, when the <a href="audio.kernel_mode_wdm_audio_components#sysaudio_system_driver#sysaudio_system_driver">SysAudio system driver</a> builds the audio filter graph.</p>
 
-<p>See the discussion of allocator framing in <a href="NULL">WavePci Latency</a>.</p>
+<p>See the discussion of allocator framing in <a href="https://msdn.microsoft.com/6d83c015-cf8f-40b4-bf28-de865a5bfe2d">WavePci Latency</a>.</p>
 
 ## -requirements
 <table>

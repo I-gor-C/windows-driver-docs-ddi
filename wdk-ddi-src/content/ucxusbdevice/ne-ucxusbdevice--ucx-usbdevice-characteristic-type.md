@@ -55,7 +55,7 @@ typedef enum _UCX_USBDEVICE_CHARACTERISTIC_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UCX_USBDEVICE_CHARACTERISTIC_TYPE_PATH_DELAY"></a><a id="ucx_usbdevice_characteristic_type_path_delay"></a><b>UCX_USBDEVICE_CHARACTERISTIC_TYPE_PATH_DELAY</b>
+### -field UCX_USBDEVICE_CHARACTERISTIC_TYPE_PATH_DELAY
 
 <dd>
 <p>The type of characteristic of the device.</p>
@@ -98,10 +98,10 @@ typedef enum _UCX_USBDEVICE_CHARACTERISTIC_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucx_usbdevice_characteristic">UCX_USBDEVICE_CHARACTERISTIC</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--ucx-usbdevice-characteristic.md">UCX_USBDEVICE_CHARACTERISTIC</a>
 </dt>
 <dt>
-<a href="buses.evt_ucx_usbdevice_get_characteristic">EVT_UCX_USBDEVICE_GET_CHARACTERISTIC</a>
+<a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-get-characteristic.md">EVT_UCX_USBDEVICE_GET_CHARACTERISTIC</a>
 </dt>
 </dl>
 <p> </p>

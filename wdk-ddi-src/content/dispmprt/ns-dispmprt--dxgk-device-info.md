@@ -62,55 +62,55 @@ typedef struct _DXGK_DEVICE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>MiniportDeviceContext</b>
+### -field MiniportDeviceContext
 
 <dd>
 <p>A handle to a context block (created and maintained by the display miniport driver) associated with a display adapter.</p>
 </dd>
 
-### -field <b>PhysicalDeviceObject</b>
+### -field PhysicalDeviceObject
 
 <dd>
 <p>A pointer to the physical device object (PDO) that represents the display adapter.</p>
 </dd>
 
-### -field <b>DeviceRegistryPath</b>
+### -field DeviceRegistryPath
 
 <dd>
 <p>A Unicode string that holds the registry path of the software key for the display adapter. Registry data should be written only to this path.</p>
 </dd>
 
-### -field <b>TranslatedResourceList</b>
+### -field TranslatedResourceList
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--cm-resource-list.md">CM_RESOURCE_LIST</a> structure that holds the translated resources assigned to the display adapter.</p>
 </dd>
 
-### -field <b>SystemMemorySize</b>
+### -field SystemMemorySize
 
 <dd>
 <p>The size, in bytes, of system memory.</p>
 </dd>
 
-### -field <b>HighestPhysicalAddress</b>
+### -field HighestPhysicalAddress
 
 <dd>
 <p>The highest physical address of system memory (RAM).</p>
 </dd>
 
-### -field <b>AgpApertureBase</b>
+### -field AgpApertureBase
 
 <dd>
 <p>The base physical address of the AGP aperture. If 0, the display adapter is not an AGP adapter, or AGP resources were not found.</p>
 </dd>
 
-### -field <b>AgpApertureSize</b>
+### -field AgpApertureSize
 
 <dd>
 <p>The size, in bytes, of the AGP aperture. If 0, the display adapter is not an AGP adapter, or AGP resources were not found.</p>
 </dd>
 
-### -field <b>DockingState</b>
+### -field DockingState
 
 <dd>
 <p>The state of a portable computer that can be attached to a docking station.</p>

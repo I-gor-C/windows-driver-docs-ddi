@@ -7,7 +7,7 @@ old-location: ifsk\file_link_information.htm
 old-project: ifsk
 ms.assetid: c0c47dc7-d672-4094-af17-9de2b01886aa
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILE_LINK_INFORMATION, FILE_LINK_INFORMATION, *PFILE_LINK_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ typedef struct _FILE_LINK_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>ReplaceIfExists</b>
+### -field ReplaceIfExists
 
 <dd>
 <p>Set to <b>TRUE</b> to specify that if the link already exists, it should be replaced with the new link. Set to <b>FALSE</b> if the link creation operation should fail if the link already exists. </p>
 </dd>
 
-### -field <b>RootDirectory</b>
+### -field RootDirectory
 
 <dd>
 <p>If the link is to be created in the same directory as the file that is being linked to, or if the <b>FileName</b> member contains the full pathname for the link to be created, this is <b>NULL</b>. Otherwise it is a handle for the directory where the link is to be created. </p>
 </dd>
 
-### -field <b>FileNameLength</b>
+### -field FileNameLength
 
 <dd>
 <p>Length, in bytes, of the file name string. </p>
 </dd>
 
-### -field <b>FileName</b>
+### -field FileName
 
 <dd>
 <p>The first character of the name to be assigned to the newly created link. This is followed in memory by the remainder of the string. If the <b>RootDirectory</b> member is <b>NULL</b> and the link is to be created in a different directory from the file that is being linked to, this member specifies the full pathname for the link to be created. Otherwise, it specifies only the file name. (See the Remarks section for <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a> for details on the syntax of this file name string.) </p>
@@ -130,4 +130,4 @@ typedef struct _FILE_LINK_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_LINK_INFORMATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_LINK_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

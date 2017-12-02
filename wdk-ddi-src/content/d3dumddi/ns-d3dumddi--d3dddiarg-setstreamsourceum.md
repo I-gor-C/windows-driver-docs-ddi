@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_SETSTREAMSOURCEUM {
 ## -struct-fields
 <dl>
 
-### -field <b>Stream</b>
+### -field Stream
 
 <dd>
 <p>[in] The index, starting from zero, for the vertex stream to bind to a user-memory buffer.</p>
 </dd>
 
-### -field <b>Stride</b>
+### -field Stride
 
 <dd>
 <p>[in] The size, in bytes, from one vertex to the next vertex in the stream. In contrast to the call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setstreamsource.md">SetStreamSource</a> function, <b>Stride</b> cannot be set to zero. Because only one stream can be bound to a user memory buffer, each vertex in the stream must receive different data for processing.</p>

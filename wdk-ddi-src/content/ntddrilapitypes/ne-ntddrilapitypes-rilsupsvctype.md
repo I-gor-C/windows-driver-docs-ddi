@@ -7,7 +7,7 @@ old-location: netvista\rilsupsvctype.htm
 old-project: netvista
 ms.assetid: 3d9415f7-cc28-4e45-8d88-b8693aa57116
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,27 +59,27 @@ typedef enum _RILSUPSVCTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SUPSVCTYPE_CLIP"></a><a id="ril_supsvctype_clip"></a><b>RIL_SUPSVCTYPE_CLIP</b>
+### -field RIL_SUPSVCTYPE_CLIP
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCTYPE_CLIR"></a><a id="ril_supsvctype_clir"></a><b>RIL_SUPSVCTYPE_CLIR</b>
+### -field RIL_SUPSVCTYPE_CLIR
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCTYPE_COLP"></a><a id="ril_supsvctype_colp"></a><b>RIL_SUPSVCTYPE_COLP</b>
+### -field RIL_SUPSVCTYPE_COLP
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCTYPE_COLR"></a><a id="ril_supsvctype_colr"></a><b>RIL_SUPSVCTYPE_COLR</b>
+### -field RIL_SUPSVCTYPE_COLR
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCTYPE_CNAP"></a><a id="ril_supsvctype_cnap"></a><b>RIL_SUPSVCTYPE_CNAP</b>
+### -field RIL_SUPSVCTYPE_CNAP
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCTYPE_MAX"></a><a id="ril_supsvctype_max"></a><b>RIL_SUPSVCTYPE_MAX</b>
+### -field RIL_SUPSVCTYPE_MAX
 
 <dd></dd>
 </dl>

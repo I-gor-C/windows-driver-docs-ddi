@@ -58,34 +58,34 @@ typedef struct _UCM_CONNECTOR_PD_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of the <b>UCM_CONNECTOR_PD_CONFIG</b> structure. </p>
 </dd>
 
-### -field <b>IsSupported</b>
+### -field IsSupported
 
 <dd>
 <p>If TRUE, a PD role is supported. (Default).</p>
 <p>If FALSE, a PD role is not supported.</p>
 </dd>
 
-### -field <b>SupportedPowerRoles</b>
+### -field SupportedPowerRoles
 
 <dd>
-<p>Indicates the operating mode of the connector. This value is a bitwise OR of <a href="buses.ucm_power_role">UCM_POWER_ROLE</a>-typed flags.</p>
+<p>Indicates the operating mode of the connector. This value is a bitwise OR of <a href="..\ucmtypes\ne-ucmtypes--ucm-power-role.md">UCM_POWER_ROLE</a>-typed flags.</p>
 </dd>
 
-### -field <b>EvtSetPowerRole</b>
+### -field EvtSetPowerRole
 
 <dd>
-<p>A pointer to the Policy Manager's implementation of the <a href="buses.evt_ucm_connector_set_power_role">EVT_UCM_CONNECTOR_SET_POWER_ROLE</a> event callback.</p>
+<p>A pointer to the Policy Manager's implementation of the <a href="..\ucmmanager\nc-ucmmanager-evt-ucm-connector-set-power-role.md">EVT_UCM_CONNECTOR_SET_POWER_ROLE</a> event callback.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Initialize this structure by calling <a href="buses.ucm_connector_pd_config_init">UCM_CONNECTOR_PD_CONFIG_INIT</a>. An initialized <a href="buses.ucm_connector_type_c_config">UCM_CONNECTOR_TYPEC_CONFIG</a> structure is set to the <b>PdConfig</b> member of the <a href="buses.ucm_connector_config">UCM_CONNECTOR_CONFIG</a> structure, which is an input parameter value to <a href="buses.ucmconnectorcreate">UcmConnectorCreate</a> that is called by Policy Manager to create a connector object.</p>
+<p>Initialize this structure by calling <a href="..\ucmmanager\nf-ucmmanager-ucm-connector-pd-config-init.md">UCM_CONNECTOR_PD_CONFIG_INIT</a>. An initialized <a href="..\ucmmanager\ns-ucmmanager--ucm-connector-typec-config.md">UCM_CONNECTOR_TYPEC_CONFIG</a> structure is set to the <b>PdConfig</b> member of the <a href="..\ucmmanager\ns-ucmmanager--ucm-connector-config.md">UCM_CONNECTOR_CONFIG</a> structure, which is an input parameter value to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a> that is called by Policy Manager to create a connector object.</p>
 
 ## -requirements
 <table>
@@ -136,7 +136,7 @@ typedef struct _UCM_CONNECTOR_PD_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmconnectorcreate">UcmConnectorCreate</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
 </dt>
 </dl>
 <p> </p>

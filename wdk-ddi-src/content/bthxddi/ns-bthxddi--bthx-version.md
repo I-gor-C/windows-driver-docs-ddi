@@ -54,7 +54,7 @@ struct _BTHX_VERSION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Bitmask of supported versions. Currently, BTHX_DDI_VERSION_1   is the only supported version.</p>

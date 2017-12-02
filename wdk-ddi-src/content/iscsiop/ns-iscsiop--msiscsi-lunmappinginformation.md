@@ -58,31 +58,31 @@ typedef struct _MSiSCSI_LUNMappingInformation {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueAdapterId</b>
+### -field UniqueAdapterId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="..\iscsimgt\ns-iscsimgt--msiscsi-hbainformation.md">MSiSCSI_HBAInformation</a> structure.</p>
 </dd>
 
-### -field <b>UniqueSessionId</b>
+### -field UniqueSessionId
 
 <dd>
 <p>A session ID that uniquely identifies the session for which the LUN mapping is valid. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
 </dd>
 
-### -field <b>OSBus</b>
+### -field OSBus
 
 <dd>
 <p>The number that the operating system assigns to the bus that the adapter is attached to.</p>
 </dd>
 
-### -field <b>OSTarget</b>
+### -field OSTarget
 
 <dd>
 <p>The device number that the operating system assigns to the target.</p>
 </dd>
 
-### -field <b>OSLUN</b>
+### -field OSLUN
 
 <dd>
 <p>The logical unit number (LUN) that the operating system assigns to the logical unit.</p>

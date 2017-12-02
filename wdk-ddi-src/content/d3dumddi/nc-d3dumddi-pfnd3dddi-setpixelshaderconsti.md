@@ -59,19 +59,19 @@ __checkReturn HRESULT APIENTRY SetPixelShaderConstI(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setpixelshaderconst.md">D3DDDIARG_SETPIXELSHADERCONST</a> structure that describes how to set the pixel shader constant registers.</p>
 </dd>
 
-### -param <i>pRegisters</i> [in]
+### -param pRegisters [in]
 
 <dd>
 <p> A pointer to a buffer that contains INT values to copy.</p>

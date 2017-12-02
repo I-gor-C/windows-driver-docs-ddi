@@ -7,7 +7,7 @@ old-location: netvista\fwpsqueryconnectionsioformatredirectrecords0.htm
 old-project: netvista
 ms.assetid: AE24409D-AA60-4694-8855-AB2B0F6B1635
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsQueryConnectionSioFormatRedirectRecords0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>FwpsQueryConnectionSioFormatRedirectRecords0</b> function returns the connection redirect records for a redirected connection. For more information about redirection, see <a href="NULL">Using Bind or Connect Redirection</a>.<div class="alert"><b>Note</b>  <b>FwpsQueryConnectionSioFormatRedirectRecords0</b> is a specific version of <b>FwpsQueryConnectionSioFormatRedirectRecords</b>. See <a href="fwp.wfp_version-independent_names_and_targeting_specific_versions_of_windows">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information.</div>
+<p>The <b>FwpsQueryConnectionSioFormatRedirectRecords0</b> function returns the connection redirect records for a redirected connection. For more information about redirection, see <a href="netvista.using_bind_or_connect_redirection">Using Bind or Connect Redirection</a>.<div class="alert"><b>Note</b>  <b>FwpsQueryConnectionSioFormatRedirectRecords0</b> is a specific version of <b>FwpsQueryConnectionSioFormatRedirectRecords</b>. See <a href="fwp.wfp_version-independent_names_and_targeting_specific_versions_of_windows">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information.</div>
 <div> </div>
 </p>
 
@@ -59,26 +59,26 @@ NTSTATUS FwpsQueryConnectionSioFormatRedirectRecords0(
 ## -parameters
 <dl>
 
-### -param <i>RedirectRecords</i> [in]
+### -param RedirectRecords [in]
 
 <dd>
 <p>The redirect records handle that the  ALE_CONNECT_REDIRECT callout function received in the  <i>inMetaValues</i> parameter of its <a href="netvista.classifyfn">classifyFn</a> function. This handle can be found in the <b>redirectRecords</b>   member of the <a href="netvista.fwps_incoming_metadata_values0">FWPS_INCOMING_METADATA_VALUES0</a> structure.</p>
 <p>A WFP redirect record is a buffer of opaque data that WFP must set on an outbound proxy connection so that the redirected connection and the original connection are logically related.</p>
 </dd>
 
-### -param <i>OutputBuffer</i> [out, optional]
+### -param OutputBuffer [out, optional]
 
 <dd>
 <p>A pointer to an output buffer that receives the redirect records. The buffer must be pointer-aligned.</p>
 </dd>
 
-### -param <i>OutputBufferLength</i> [in]
+### -param OutputBufferLength [in]
 
 <dd>
 <p>The size, in bytes, of the output buffer.</p>
 </dd>
 
-### -param <i>BytesTransferred</i> [out, optional]
+### -param BytesTransferred [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives the number of bytes that were transferred. If the return value is <b>STATUS_BUFFER_TOO_SMALL</b>, this parameter receives the required buffer size.</p>
@@ -97,7 +97,7 @@ NTSTATUS FwpsQueryConnectionSioFormatRedirectRecords0(
 ## -remarks
 <p>The <b>FwpsQueryConnectionSioFormatRedirectRecords0</b> function applies only to local proxies.</p>
 
-<p>For more information about redirection, see <a href="NULL">Using Bind or Connect Redirection</a>.</p>
+<p>For more information about redirection, see <a href="netvista.using_bind_or_connect_redirection">Using Bind or Connect Redirection</a>.</p>
 
 <p>The <b>FwpsQueryConnectionSioFormatRedirectRecords0</b> function is designed to be used by a WFP connection redirection callout driver that doesn't accept the redirected connection until it has verified that it is able to connect to the actual remote endpoint.  To do this, the callout driver pends the redirected connection request at the <b>FWPS_LAYER_ALE_CONNECT_REDIRECT_V4</b> or <b>FWPS_LAYER_ALE_CONNECT_REDIRECT_V6</b> layer and calls <b>FwpsQueryConnectionSioFormatRedirectRecords0</b> to retrieve the connection redirect records, which the callout driver then sends to the proxy to be used in a call to   <a href="https://msdn.microsoft.com/library/windows/hardware/hh802474">SIO_SET_WFP_CONNECTION_REDIRECT_RECORDS</a>.</p>
 
@@ -162,7 +162,7 @@ NTSTATUS FwpsQueryConnectionSioFormatRedirectRecords0(
 ## -see-also
 <dl>
 <dt>
-<a href="NULL">Using Bind or Connect Redirection</a>
+<a href="netvista.using_bind_or_connect_redirection">Using Bind or Connect Redirection</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a>
@@ -182,4 +182,4 @@ NTSTATUS FwpsQueryConnectionSioFormatRedirectRecords0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsQueryConnectionSioFormatRedirectRecords0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsQueryConnectionSioFormatRedirectRecords0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

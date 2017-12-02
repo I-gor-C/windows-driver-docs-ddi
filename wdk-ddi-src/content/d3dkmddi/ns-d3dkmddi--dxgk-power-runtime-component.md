@@ -61,50 +61,50 @@ typedef struct _DXGK_POWER_RUNTIME_COMPONENT {
 ## -struct-fields
 <dl>
 
-### -field <b>StateCount</b>
+### -field StateCount
 
 <dd>
 <p>Defines the number of idle states (F-states) for the power component.</p>
 </dd>
 
-### -field <b>States</b>
+### -field States
 
 <dd>
 <p>A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-power-runtime-state.md">DXGK_POWER_RUNTIME_STATE</a> structure that defines information about every idle state. </p>
 <p><b>DXGK_MAX_F_STATES</b> is the maximum number of F-states that a power component can have. In Windows 8, <b>DXGK_MAX_F_STATES</b> is defined to have a value of 8.</p>
 </dd>
 
-### -field <b>ComponentMapping</b>
+### -field ComponentMapping
 
 <dd>
 <p>A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-power-component-mapping.md">DXGK_POWER_COMPONENT_MAPPING</a> structure that defines the standard component types of the DirectX graphics kernel subsystem (Dxgkrnl.sys) that describe the power component.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-power-component-flags.md">DXGK_POWER_COMPONENT_FLAGS</a> structure that specifies power state transition information.</p>
 </dd>
 
-### -field <b>ComponentGuid</b>
+### -field ComponentGuid
 
 <dd>
 <p>A GUID that identifies the power component. This GUID is used by the Power Engine Plug-in (PEP).</p>
 </dd>
 
-### -field <b>ComponentName</b>
+### -field ComponentName
 
 <dd>
 <p>A name for the power component. This name is used by GPU profiling tools and is not passed to the PEP.</p>
 </dd>
 
-### -field <b>ProviderCount</b>
+### -field ProviderCount
 
 <dd>
 <p>Defines the number of other power components that need to be active before this power component becomes active.</p>
 </dd>
 
-### -field <b>Providers</b>
+### -field Providers
 
 <dd>
 <p>Specifies the indices of other power components that need to be active before this power component becomes active. Each index value must be less than the total number of power components.</p>

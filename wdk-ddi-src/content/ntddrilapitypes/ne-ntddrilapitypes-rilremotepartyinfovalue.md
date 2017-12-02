@@ -7,7 +7,7 @@ old-location: netvista\rilremotepartyinfovalue.htm
 old-project: netvista
 ms.assetid: 9cc766c4-a2c0-4b84-a4d8-b005cddd9eea
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILREMOTEPARTYINFOVALUE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_REMOTEPARTYINFO_WITHHELD"></a><a id="ril_remotepartyinfo_withheld"></a><b>RIL_REMOTEPARTYINFO_WITHHELD</b>
+### -field RIL_REMOTEPARTYINFO_WITHHELD
 
 <dd></dd>
 
-### -field <a id="RIL_REMOTEPARTYINFO_UNAVAILABLE"></a><a id="ril_remotepartyinfo_unavailable"></a><b>RIL_REMOTEPARTYINFO_UNAVAILABLE</b>
+### -field RIL_REMOTEPARTYINFO_UNAVAILABLE
 
 <dd></dd>
 
-### -field <a id="RIL_REMOTEPARTYINFO_MAX"></a><a id="ril_remotepartyinfo_max"></a><b>RIL_REMOTEPARTYINFO_MAX</b>
+### -field RIL_REMOTEPARTYINFO_MAX
 
 <dd></dd>
 </dl>

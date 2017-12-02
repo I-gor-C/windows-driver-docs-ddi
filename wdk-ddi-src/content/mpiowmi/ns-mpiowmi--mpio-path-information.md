@@ -56,19 +56,19 @@ typedef struct _MPIO_PATH_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberPaths</b>
+### -field NumberPaths
 
 <dd>
 <p>An unsigned 32-bitfield that represents the total number of paths that MPIO is aware of.</p>
 </dd>
 
-### -field <b>Pad</b>
+### -field Pad
 
 <dd>
 <p>Should be zero.</p>
 </dd>
 
-### -field <b>PathList</b>
+### -field PathList
 
 <dd>
 <p>An array that returns information about each of the paths. The number of elements in the array is given by <i>NumberPaths</i> and each element of the array represents an instance of an MPIO_ADAPTER_INFORMATION structure.</p>

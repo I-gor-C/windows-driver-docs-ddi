@@ -55,7 +55,7 @@ NTSTATUS WppRecorderGetTriageInfo(
 ## -parameters
 <dl>
 
-### -param <i>WppTriageInfo</i> [out]
+### -param WppTriageInfo [out]
 
 <dd>
 <p>Pointer to a <a href="..\wpprecorder\ns-wpprecorder--wpp-triage-info.md">WPP_TRIAGE_INFO</a> structure.</p>

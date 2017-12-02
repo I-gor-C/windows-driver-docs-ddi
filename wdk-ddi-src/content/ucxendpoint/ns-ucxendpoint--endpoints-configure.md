@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Describes   endpoints to enable or disable endpoints. This structure is passed by UCX in the <a href="buses.evt_ucx_usbdevice_endpoints_configure">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a>  callback function.</p>
+<p>Describes   endpoints to enable or disable endpoints. This structure is passed by UCX in the <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-endpoints-configure.md">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a>  callback function.</p>
 
 
 ## -syntax
@@ -70,73 +70,73 @@ typedef struct _ENDPOINTS_CONFIGURE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
-<p>A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that stores handles to the USB hub or device whose endpoints.</p>
+<p>A <a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-mgmt-header.md">USBDEVICE_MGMT_HEADER</a> structure that stores handles to the USB hub or device whose endpoints.</p>
 </dd>
 
-### -field <b>EndpointsToEnableCount</b>
-
-<dd>
-<p>The number of endpoints to configure.</p>
-</dd>
-
-### -field <b>EndpointsToEnable</b>
-
-<dd>
-<p>A pointer to the first endpoint handle in the array of endpoints to  enable.</p>
-</dd>
-
-### -field <b>EndpointsToDisableCount</b>
+### -field EndpointsToEnableCount
 
 <dd>
 <p>The number of endpoints to configure.</p>
 </dd>
 
-### -field <b>EndpointsToDisable</b>
+### -field EndpointsToEnable
 
 <dd>
 <p>A pointer to the first endpoint handle in the array of endpoints to  enable.</p>
 </dd>
 
-### -field <b>EndpointsEnabledAndUnchangedCount</b>
+### -field EndpointsToDisableCount
+
+<dd>
+<p>The number of endpoints to configure.</p>
+</dd>
+
+### -field EndpointsToDisable
+
+<dd>
+<p>A pointer to the first endpoint handle in the array of endpoints to  enable.</p>
+</dd>
+
+### -field EndpointsEnabledAndUnchangedCount
 
 <dd>
 <p>The number of endpoints that were enabled and unchanged.</p>
 </dd>
 
-### -field <b>EndpointsEnabledAndUnchanged</b>
+### -field EndpointsEnabledAndUnchanged
 
 <dd>
 <p>A pointer to the first endpoint handle in the array of endpoints that have not been changed.</p>
 </dd>
 
-### -field <b>FailureFlags</b>
+### -field FailureFlags
 
 <dd>
 <p>The errors, if any, that might occur when attempting to configure endpoints for the USB device or hub.</p>
 </dd>
 
-### -field <b>ExitLatencyDelta</b>
+### -field ExitLatencyDelta
 
 <dd>
 <p>The Exit Latency Delta (ELD) value. For more information see section 4.6.6.1 of the eXtensible Host Controller Interface specification.</p>
 </dd>
 
-### -field <b>ConfigurationValue</b>
+### -field ConfigurationValue
 
 <dd>
 <p>The configuration number of the USB configuration that contains the endpoints. </p>
 </dd>
 
-### -field <b>InterfaceNumber</b>
+### -field InterfaceNumber
 
 <dd>
 <p>The interface number of the USB interface that contains the endpoints. </p>
 </dd>
 
-### -field <b>AlternateSetting</b>
+### -field AlternateSetting
 
 <dd>
 <p>The setting number of the alternate setting that contains the endpoints. </p>
@@ -163,7 +163,7 @@ typedef struct _ENDPOINTS_CONFIGURE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_ucx_usbdevice_endpoints_configure">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a>
+<a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-endpoints-configure.md">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\dot11_wfd_channel.htm
 old-project: netvista
 ms.assetid: FE05F3D9-B1F0-4DC3-9265-22A76209A3E1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_WFD_CHANNEL,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef struct _DOT11_WFD_CHANNEL {
 ## -struct-fields
 <dl>
 
-### -field <b>CountryRegionString</b>
+### -field CountryRegionString
 
 <dd>
 <p>The country or region code where <b>OperatingClass</b> and <b>ChannelNumber</b> are valid.</p>
 </dd>
 
-### -field <b>OperatingClass</b>
+### -field OperatingClass
 
 <dd>
 <p>The frequency band for <b>ChannelNumber</b>.</p>
 </dd>
 
-### -field <b>ChannelNumber</b>
+### -field ChannelNumber
 
 <dd>
 <p>The channel number for the P2P group.</p>

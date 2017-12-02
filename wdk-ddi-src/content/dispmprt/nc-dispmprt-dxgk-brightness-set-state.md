@@ -58,13 +58,13 @@ NTSTATUS* DxgkDdiSetBrightnessState(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>BrightnessState</i> [in]
+### -param BrightnessState [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-brightness-state.md">DXGK_BRIGHTNESS_STATE</a> structure that indicates that the display miniport driver should enable the smooth brightness control for the integrated display panel.</p>

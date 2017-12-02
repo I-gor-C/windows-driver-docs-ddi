@@ -55,7 +55,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS
 ## -struct-fields
 <dl>
 
-### -field <b>Input</b>
+### -field Input
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-input.md">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> structure that contains the GUID for the query and other data.
@@ -63,7 +63,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS
 </p>
 </dd>
 
-### -field <b>ProcessIndex</b>
+### -field ProcessIndex
 
 <dd>
 <p>The index of the process.</p>

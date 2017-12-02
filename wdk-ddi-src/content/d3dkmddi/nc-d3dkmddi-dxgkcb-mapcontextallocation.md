@@ -58,13 +58,13 @@ D3DGPU_VIRTUAL_ADDRESS APIENTRY CALLBACK* DxgkCbMapContextAllocation(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>A handle to the display adapter.</p>
 </dd>
 
-### -param <i>pArgs</i> [in]
+### -param pArgs [in]
 
 <dd>
 <p>The <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-mapcontextallocation.md">DXGKARGCB_MAPCONTEXTALLOCATION</a> structure that describes the operation.</p>

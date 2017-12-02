@@ -62,37 +62,37 @@ VOID APIENTRY* pfnCheckResourceAllocationInfo(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>A device handle. </p>
 </dd>
 
-### -param <i>CreateResource</i> [in]
+### -param CreateResource [in]
 
 <dd>
 <p>A pointer to a create resource.</p>
 </dd>
 
-### -param <i>ResourceOptimizationFlags</i> 
+### -param ResourceOptimizationFlags 
 
 <dd>
 <p>Resource optimization flags.</p>
 </dd>
 
-### -param <i>AlignmentRestriction</i> 
+### -param AlignmentRestriction 
 
 <dd>
 <p>An alignment restriction value.</p>
 </dd>
 
-### -param <i>VisibleNodeMask</i> 
+### -param VisibleNodeMask 
 
 <dd>
 <p>A visible node mask.</p>
 </dd>
 
-### -param <i>pInfo</i> [out]
+### -param pInfo [out]
 
 <dd>
 <p>Information for resource allocation.</p>

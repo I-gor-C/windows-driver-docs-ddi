@@ -57,25 +57,25 @@ typedef struct _SYNTH_REVERB_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>fInGain</b>
+### -field fInGain
 
 <dd>
 <p>Specifies the input gain in decibels (dB) to avoid output overflows.</p>
 </dd>
 
-### -field <b>fReverbMix</b>
+### -field fReverbMix
 
 <dd>
 <p>Specifies the reverb mix in dB. 0dB specifies 100% wet reverb (no direct signal). Negative values specify a less wet signal. The coefficients are calculated so that the overall output level stays approximately constant regardless of the amount of reverb mix. </p>
 </dd>
 
-### -field <b>fReverbTime</b>
+### -field fReverbTime
 
 <dd>
 <p>Specifies the reverb delay time in milliseconds.</p>
 </dd>
 
-### -field <b>fHighFreqRTRatio</b>
+### -field fHighFreqRTRatio
 
 <dd>
 <p>Specifies the ratio of the high frequencies to the global reverb time. Unless very 'splashy-bright' reverberations are desired, this should be set to a value less than 1.0. For example, if <b>dRevTime</b> is 1000ms and HHighFreqRTRatio is 0.1, then the decay time for high frequencies will be 100ms.</p>

@@ -61,32 +61,32 @@ VOID APIENTRY SoSetTargets(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>SOTargets</i> [in]
+### -param SOTargets [in]
 
 <dd>
 <p> The number of elements in the array that <i>phResource</i> specifies. </p>
 </dd>
 
-### -param <i>ClearTargets</i> [in]
+### -param ClearTargets [in]
 
 <dd>
 <p> The number of handles to stream output target resources that represents the difference between the previous number of stream output target resources (before the Microsoft Direct3D runtime calls <i>SoSetTargets</i>) and the new number of stream output target resources.</p>
 <p>Note that the number that i<i>ClearTargets</i> specifies is only an optimization aid because the user-mode display driver could calculate this number. </p>
 </dd>
 
-### -param <i>phResource</i> [in]
+### -param phResource [in]
 
 <dd>
 <p> An array of handles to the stream output target resources to set. Note that some handle values can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>pOffsets</i> [in]
+### -param pOffsets [in]
 
 <dd>
 <p> An array of offsets, in bytes, into the stream output target resources in the array that <i>phResource</i> specifies. </p>

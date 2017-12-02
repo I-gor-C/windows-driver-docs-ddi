@@ -56,13 +56,13 @@ NTSTATUS RtlAppendUnicodeStringToString(
 ## -parameters
 <dl>
 
-### -param <i>Destination</i> [in, out]
+### -param Destination [in, out]
 
 <dd>
 <p>Pointer to a buffered Unicode string.</p>
 </dd>
 
-### -param <i>Source</i> [in]
+### -param Source [in]
 
 <dd>
 <p>Pointer to the buffered string to be concatenated. </p>

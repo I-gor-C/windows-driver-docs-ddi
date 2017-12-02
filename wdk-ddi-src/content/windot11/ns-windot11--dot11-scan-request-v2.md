@@ -7,7 +7,7 @@ old-location: netvista\dot11_scan_request_v2.htm
 old-project: netvista
 ms.assetid: fd6dd2f4-ee58-46da-ba87-5aecaff35dd0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_SCAN_REQUEST_V2, DOT11_SCAN_REQUEST_V2, *PDOT11_SCAN_REQUEST_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>dot11BSSType</b>
+### -field dot11BSSType
 
 <dd>
 <p>The type of basic service set (BSS) networks for which the 802.11 station scans. The data type for
@@ -74,14 +74,14 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
      <a href="..\wlantypes\ne-wlantypes--dot11-bss-type.md">DOT11_BSS_TYPE</a> enumeration.</p>
 </dd>
 
-### -field <b>dot11BSSID</b>
+### -field dot11BSSID
 
 <dd>
 <p>The BSS identifier (BSSID) of a BSS network for which the 802.11 station scans. If this member is
      set to the wildcard BSSID (0xFFFFFFFFFFFF), the station scans for all BSSIDs.</p>
 </dd>
 
-### -field <b>dot11ScanType</b>
+### -field dot11ScanType
 
 <dd>
 <p>The type of scan that the 802.11 station performs. The data type for this member is the
@@ -90,7 +90,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
 <p></p>
 <dl>
 
-### -field <a id="dot11_scan_type_active________"></a><a id="DOT11_SCAN_TYPE_ACTIVE________"></a>dot11_scan_type_active
+### -field dot11_scan_type_active
        
 
 <dd>
@@ -99,7 +99,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
        also receives 802.11 Beacon frames sent on the channel.</p>
 </dd>
 
-### -field <a id="dot11_scan_type_passive________"></a><a id="DOT11_SCAN_TYPE_PASSIVE________"></a>dot11_scan_type_passive
+### -field dot11_scan_type_passive
        
 
 <dd>
@@ -107,7 +107,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
        Instead, it receives 802.11 Beacon or Probe Request frames sent on the channel.</p>
 </dd>
 
-### -field <a id="dot11_scan_type_auto________"></a><a id="DOT11_SCAN_TYPE_AUTO________"></a>dot11_scan_type_auto
+### -field dot11_scan_type_auto
        
 
 <dd>
@@ -137,7 +137,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
 <div> </div>
 </dd>
 
-### -field <b>bRestrictedScan</b>
+### -field bRestrictedScan
 
 <dd>
 <p>If this member is <b>TRUE</b>, the 802.11 station performs a scan restricted to the channel and PHY
@@ -154,7 +154,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
 </ul>
 </dd>
 
-### -field <b>udot11SSIDsOffset</b>
+### -field udot11SSIDsOffset
 
 <dd>
 <p>The offset in the 
@@ -168,7 +168,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
      list while scanning on a channel.</p>
 </dd>
 
-### -field <b>uNumOfdot11SSIDs</b>
+### -field uNumOfdot11SSIDs
 
 <dd>
 <p>The number of entries in the SSID list.
@@ -178,7 +178,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
      zero-length SSID.</p>
 </dd>
 
-### -field <b>bUseRequestIE</b>
+### -field bUseRequestIE
 
 <dd>
 <p>If this member is <b>TRUE</b>, the 802.11 station must include the list of request IDs (defined through
@@ -210,7 +210,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
 </ul>
 </dd>
 
-### -field <b>uRequestIDsOffset</b>
+### -field uRequestIDsOffset
 
 <dd>
 <p>The offset in the 
@@ -218,13 +218,13 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
      as a UCHAR data type.</p>
 </dd>
 
-### -field <b>uNumOfRequestIDs</b>
+### -field uNumOfRequestIDs
 
 <dd>
 <p>The number of entries in the request IDs list.</p>
 </dd>
 
-### -field <b>uPhyTypeInfosOffset</b>
+### -field uPhyTypeInfosOffset
 
 <dd>
 <p>The offset in the 
@@ -239,7 +239,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
      <b>bRestrictedScan</b> is set to <b>TRUE</b>.</p>
 </dd>
 
-### -field <b>uNumOfPhyTypeInfos</b>
+### -field uNumOfPhyTypeInfos
 
 <dd>
 <p>The number of entries in the list of PHY types.
@@ -249,7 +249,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
      PHYs.</p>
 </dd>
 
-### -field <b>uIEsOffset</b>
+### -field uIEsOffset
 
 <dd>
 <p>The offset in the 
@@ -263,13 +263,13 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
      <b>dot11_scan_type_passive</b>.</p>
 </dd>
 
-### -field <b>uIEsLength</b>
+### -field uIEsLength
 
 <dd>
 <p>The length, in bytes, of the list of IEs.</p>
 </dd>
 
-### -field <b>ucBuffer</b>
+### -field ucBuffer
 
 <dd>
 <p>The buffer containing optional data as specified through other members of this structure.</p>
@@ -324,4 +324,4 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SCAN_REQUEST_V2 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SCAN_REQUEST_V2 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

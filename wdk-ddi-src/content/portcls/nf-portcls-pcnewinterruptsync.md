@@ -58,31 +58,31 @@ NTSTATUS PcNewInterruptSync(
 ## -parameters
 <dl>
 
-### -param <i>OutInterruptSync</i> [out]
+### -param OutInterruptSync [out]
 
 <dd>
 <p>Output pointer for the interrupt-synchronization object created by this function. This parameter points to a caller-allocated pointer variable into which the function outputs a reference to the newly created <a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a> object. Specify a valid, non-<b>NULL</b> pointer value for this parameter.</p>
 </dd>
 
-### -param <i>OuterUnknown</i> [in, optional]
+### -param OuterUnknown [in, optional]
 
 <dd>
 <p>Pointer to the <a href="com.iunknown">IUnknown</a> interface of an object that needs to aggregate the object. Unless aggregation is required, set this parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ResourceList</i> [in]
+### -param ResourceList [in]
 
 <dd>
 <p>Pointer to the <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a> object that was provided to the miniport driver during initialization. The port driver will examine this resource list but will not modify it.</p>
 </dd>
 
-### -param <i>ResourceIndex</i> [in]
+### -param ResourceIndex [in]
 
 <dd>
 <p>Specifies the index of the interrupt resource in the resource list. If the <a href="audio.iresourcelist_numberofentriesoftype">IResourceList::NumberOfEntriesOfType</a> method returns a count of N for type CmResourceTypeInterrupt, <i>ResourceIndex</i> must be a value in the range 0 to N-1.</p>
 </dd>
 
-### -param <i>Mode</i> [in]
+### -param Mode [in]
 
 <dd>
 <p>Specifies the way that multiple ISRs are handled. Set this parameter to one of the INTERRUPTSYNCMODE enumeration values. For more information, see the following Remarks section.</p>
@@ -107,9 +107,9 @@ NTSTATUS PcNewInterruptSync(
 
 <p>Traverse the entire ISR list until a trip through the list occurs in which no ISR in the list returns STATUS_SUCCESS.</p>
 
-<p>For detailed descriptions of these three modes, see <a href="NULL">Interrupt Sync Objects</a>.</p>
+<p>For detailed descriptions of these three modes, see <a href="https://msdn.microsoft.com/c9e228e0-6178-442d-a82a-6b14ed67c9d2">Interrupt Sync Objects</a>.</p>
 
-<p>The <i>OutInterruptSync</i>, <i>OuterUnknown</i>, and <i>ResourceList</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>OutInterruptSync</i>, <i>OuterUnknown</i>, and <i>ResourceList</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

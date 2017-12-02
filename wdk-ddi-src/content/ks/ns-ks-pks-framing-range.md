@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>MinFrameSize</b>
+### -field MinFrameSize
 
 <dd>
 <p>Specifies a minimum frame size of type ULONG.</p>
 </dd>
 
-### -field <b>MaxFrameSize</b>
+### -field MaxFrameSize
 
 <dd>
 <p>Specifies a maximum frame size of type ULONG.</p>
 </dd>
 
-### -field <b>Stepping</b>
+### -field Stepping
 
 <dd>
 <p>Specifies the step value that should be used to create legal values within the range defined in <b>MinFrameSize</b> and <b>MaxFrameSize</b>.</p>

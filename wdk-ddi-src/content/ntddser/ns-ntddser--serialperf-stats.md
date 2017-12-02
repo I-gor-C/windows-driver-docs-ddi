@@ -59,37 +59,37 @@ typedef struct _SERIALPERF_STATS {
 ## -struct-fields
 <dl>
 
-### -field <b>ReceivedCount</b>
+### -field ReceivedCount
 
 <dd>
 <p>The number of characters received since either the serial port was opened or the last <a href="..\ntddser\ni-ntddser-ioctl-serial-clear-stats.md">IOCTL_SERIAL_CLEAR_STATS</a> request was processed.</p>
 </dd>
 
-### -field <b>TransmittedCount</b>
+### -field TransmittedCount
 
 <dd>
 <p>The number of characters transmitted since either the serial port was opened or the last <b>IOCTL_SERIAL_CLEAR_STATS</b> request was processed.</p>
 </dd>
 
-### -field <b>FrameErrorCount</b>
+### -field FrameErrorCount
 
 <dd>
 <p>The number of frame errors detected since either the serial port was opened or the last <b>IOCTL_SERIAL_CLEAR_STATS</b> request was processed.</p>
 </dd>
 
-### -field <b>SerialOverrunErrorCount</b>
+### -field SerialOverrunErrorCount
 
 <dd>
 <p>The number of serial overrun errors detected since either the serial port was opened or the last <b>IOCTL_SERIAL_CLEAR_STATS</b> request was processed.</p>
 </dd>
 
-### -field <b>BufferOverrunErrorCount</b>
+### -field BufferOverrunErrorCount
 
 <dd>
 <p>The number of buffer overrun errors detected since either the serial port was opened or the last <b>IOCTL_SERIAL_CLEAR_STATS</b> request was processed.</p>
 </dd>
 
-### -field <b>ParityErrorCount</b>
+### -field ParityErrorCount
 
 <dd>
 <p>The number of parity errors detected since either the serial port was opened or the last <b>IOCTL_SERIAL_CLEAR_STATS</b> request was processed.</p>

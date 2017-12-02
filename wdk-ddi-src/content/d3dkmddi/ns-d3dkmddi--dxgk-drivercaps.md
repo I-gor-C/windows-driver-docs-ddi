@@ -95,67 +95,67 @@ typedef struct _DXGK_DRIVERCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>HighestAcceptableAddress</b>
+### -field HighestAcceptableAddress
 
 <dd>
 <p>[out] A PHYSICAL_ADDRESS data type (which is defined as LARGE_INTEGER) that indicates the highest acceptable physical address of system memory (RAM) to use.</p>
 </dd>
 
-### -field <b>MaxAllocationListSlotId</b>
+### -field MaxAllocationListSlotId
 
 <dd>
 <p>[out] The maximum number of allocation-list slot identifiers. An allocation-list slot represents where an allocation is directed in direct memory access (DMA) buffering. </p>
 </dd>
 
-### -field <b>ApertureSegmentCommitLimit</b>
+### -field ApertureSegmentCommitLimit
 
 <dd>
 <p>[out] The maximum number of bytes of physical memory that the display miniport driver supports for mapping into an aperture segment. The video memory manager will not map more physical memory into an aperture segment than the limit that <b>ApertureSegmentCommitLimit</b> specifies. </p>
 </dd>
 
-### -field <b>MaxPointerWidth</b>
+### -field MaxPointerWidth
 
 <dd>
 <p>[out] The maximum width of the mouse pointer, in pixels.</p>
 </dd>
 
-### -field <b>MaxPointerHeight</b>
+### -field MaxPointerHeight
 
 <dd>
 <p>[out] The maximum height of the mouse pointer, in scan lines.</p>
 </dd>
 
-### -field <b>PointerCaps</b>
+### -field PointerCaps
 
 <dd>
 <p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-pointerflags.md">DXGK_POINTERFLAGS</a> structure that identifies the mouse pointer capabilities, in bit-field flags, that the driver can support.</p>
 </dd>
 
-### -field <b>InterruptMessageNumber</b>
+### -field InterruptMessageNumber
 
 <dd>
 <p>[out] The message number that is used if message-signaled interrupts are used and the driver calls the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-notify-interrupt.md">DxgkCbNotifyInterrupt</a> function from the interrupt handler corresponding to a fixed message number. </p>
 </dd>
 
-### -field <b>NumberOfSwizzlingRanges</b>
+### -field NumberOfSwizzlingRanges
 
 <dd>
 <p>[out] The number of swizzling ranges that the driver can support. </p>
 </dd>
 
-### -field <b>MaxOverlays</b>
+### -field MaxOverlays
 
 <dd>
 <p>[out] The maximum number of overlays that the driver can support.</p>
 </dd>
 
-### -field <b>GammaRampCaps</b>
+### -field GammaRampCaps
 
 <dd>
 <p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gammarampcaps.md">DXGK_GAMMARAMPCAPS</a> structure that identifies the gamma-ramp capabilities, in bit-field flags, that the driver can support.</p>
 </dd>
 
-### -field <b>ColorTransformCaps</b>
+### -field ColorTransformCaps
 
 <dd>
 <p>Flags to describe gamma and colorspace transform capabilities of the display pipelines.</p>
@@ -163,43 +163,43 @@ typedef struct _DXGK_DRIVERCAPS {
 <div> </div>
 </dd>
 
-### -field <b>PresentationCaps</b>
+### -field PresentationCaps
 
 <dd>
 <p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-presentationcaps.md">DXGK_PRESENTATIONCAPS</a> structure that identifies the presentation capabilities, in bit-field flags, that the driver can support.</p>
 </dd>
 
-### -field <b>MaxQueuedFlipOnVSync</b>
+### -field MaxQueuedFlipOnVSync
 
 <dd>
 <p>[out] The number of flips that can be queued and pending at the graphics hardware. Each flip is latched to a digital-to-analog converter (DAC) at every VSync interrupt, in order, as the graphics hardware queues the flip.</p>
 </dd>
 
-### -field <b>FlipCaps</b>
+### -field FlipCaps
 
 <dd>
 <p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-flipcaps.md">DXGK_FLIPCAPS</a> structure that identifies the flipping capabilities, in bit-field flags, that the driver can support.</p>
 </dd>
 
-### -field <b>SchedulingCaps</b>
+### -field SchedulingCaps
 
 <dd>
 <p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidschcaps.md">DXGK_VIDSCHCAPS</a> structure that identifies the graphics processing unit (GPU) scheduling capabilities, in bit-field flags, that the driver can support.</p>
 </dd>
 
-### -field <b>MemoryManagementCaps</b>
+### -field MemoryManagementCaps
 
 <dd>
 <p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidmmcaps.md">DXGK_VIDMMCAPS</a> structure that identifies the video memory management capabilities that the driver can support.</p>
 </dd>
 
-### -field <b>GpuEngineTopology</b>
+### -field GpuEngineTopology
 
 <dd>
 <p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gpuenginetopology.md">DXGK_GPUENGINETOPOLOGY</a> structure that describes the GPU-engine topology that the driver can support.</p>
 </dd>
 
-### -field <b>WDDMVersion</b>
+### -field WDDMVersion
 
 <dd>
 <p>[out] If a driver supports Windows 7 or later features (DXGKDDI_INTERFACE_VERSION ≥ DXGKDDI_INTERFACE_VERSION_WIN7), this member is reserved and should be set to zero.</p>
@@ -212,42 +212,42 @@ with the Windows 8 WDK, set this member to DXGKDDI_WDDMv1_2.</p>
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>VirtualAddressCaps</b>
+### -field VirtualAddressCaps
 
 <dd>
 <p>[out] This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>DmaBufferCaps</b>
+### -field DmaBufferCaps
 
 <dd>
 <p>[out] This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>PreemptionCaps</b>
+### -field PreemptionCaps
 
 <dd>
 <p>[out] A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-preemption-caps.md">D3DKMDT_PREEMPTION_CAPS</a> structure that describes the capabilities for the preemption of GPU graphics requests that the driver supports.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>SupportNonVGA</b>
+### -field SupportNonVGA
 
 <dd>
 <p>[out] If <b>TRUE</b>, the driver supports resetting the  display device and releasing ownership of the current  power-on self-test (POST)  device by using the <a href="display.dxgkddireleasepostdisplayownership">DxgkDdiStopDeviceAndReleasePostDisplayOwnership</a> function.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>SupportSmoothRotation</b>
+### -field SupportSmoothRotation
 
 <dd>
 <p>[out] If <b>TRUE</b>, the driver supports updating path rotation on the adapter by using the <a href="display.dxgkddiupdateactivevidpnpresentpath">DxgkDdiUpdateActiveVidPnPresentPath</a> function, while not requiring a new VidPN to be created and set.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>SupportPerEngineTDR</b>
+### -field SupportPerEngineTDR
 
 <dd>
 <p>[out] If <b>TRUE</b>, the driver supports resetting individual GPU engines.</p>
@@ -255,7 +255,7 @@ with the Windows 8 WDK, set this member to DXGKDDI_WDDMv1_2.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>SupportDirectFlip</b>
+### -field SupportDirectFlip
 
 <dd>
 <p>[out] If <b>TRUE</b>, the driver supports the creation and opening of shared managed primary allocations. A value of <b>TRUE</b> also indicates the following:</p>
@@ -267,14 +267,14 @@ with the Windows 8 WDK, set this member to DXGKDDI_WDDMv1_2.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>SupportMultiPlaneOverlay</b>
+### -field SupportMultiPlaneOverlay
 
 <dd>
 <p>[out] If <b>TRUE</b>, the display miniport driver supports multiplane overlays, and the driver should also set a value for the <b>MaxOverlayPlanes</b> member. If <b>FALSE</b>, the DirectX graphics kernel subsystem will not call multiplane overlay functions.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>SupportRuntimePowerManagement</b>
+### -field SupportRuntimePowerManagement
 
 <dd>
 <p>[out] If <b>TRUE</b>, the display miniport driver supports run-time power management.</p>
@@ -282,7 +282,7 @@ with the Windows 8 WDK, set this member to DXGKDDI_WDDMv1_2.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>SupportSurpriseRemovalInHibernation</b>
+### -field SupportSurpriseRemovalInHibernation
 
 <dd>
 <p>[out] If <b>TRUE</b>, the display miniport driver supports cleaning up software resources after an external display device in hibernation mode is disconnected from the system.</p>
@@ -291,7 +291,7 @@ with the Windows 8 WDK, set this member to DXGKDDI_WDDMv1_2.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>HybridDiscrete</b>
+### -field HybridDiscrete
 
 <dd>
 <p>[out] If <b>TRUE</b>, the display miniport driver is a discrete GPU in a <a href="display.using_cross-adapter_resources_in_a_hybrid_system#definition_of_a_hybrid_system#definition_of_a_hybrid_system">hybrid system</a>.</p>
@@ -305,26 +305,26 @@ with the Windows 8 WDK, set this member to DXGKDDI_WDDMv1_2.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>MaxOverlayPlanes</b>
+### -field MaxOverlayPlanes
 
 <dd>
 <p>[out] If <b>SupportRuntimePowerManagement</b> is <b>TRUE</b>, the display miniport driver should set <b>MaxOverlayPlanes</b> to the maximum number of overlay planes that can be simultaneously displayed on a single output, including the primary surface, that it can support. If the number of available planes will change when the operating mode changes, the driver should use a number that reflects the best-case scenario.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>SupportMultiPlaneOverlayImmediateFlip</b>
+### -field SupportMultiPlaneOverlayImmediateFlip
 
 <dd>
 <p>[out] If TRUE, the display miniport driver supports immediate flips to a multiplane overlay plane as long as the only value changing is the physical address to be displayed. </p>
 </dd>
 
-### -field <b>CursorScaledWithMultiPlaneOverlayPlane0</b>
+### -field CursorScaledWithMultiPlaneOverlayPlane0
 
 <dd>
 <p>[out] If TRUE, the display hardware will always apply the same scaling factor to the hardware cursor as is applied to plane 0 when per plane multiplane overlay stretching is applied.</p>
 </dd>
 
-### -field <b>MaxQueuedMultiPlaneOverlayFlipVSync</b>
+### -field MaxQueuedMultiPlaneOverlayFlipVSync
 
 <dd>
 <p>[out] Indicates the maximum number of updates to a single plane can be made within a single VSYNC period, where the most recent update overrides the previous update.</p>

@@ -58,31 +58,31 @@ typedef struct _DISK_INT13_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>DriveSelect</b>
+### -field DriveSelect
 
 <dd>
 <p>Corresponds to the Device/Head register defined in the <i>AT Attachment (ATA)</i> specification. When zero, the fourth bit of this register indicates that drive zero is selected. When 1, it indicates that drive one is selected. The values of bits 0, 1, 2, 3, and 6 depend on the command in the command register. Bits 5 and 7 are no longer used. For more information about the values that the Device/Head register can hold, see the ATA specification.</p>
 </dd>
 
-### -field <b>MaxCylinders</b>
+### -field MaxCylinders
 
 <dd>
 <p>Indicates the maximum number of cylinders on the disk. </p>
 </dd>
 
-### -field <b>SectorsPerTrack</b>
+### -field SectorsPerTrack
 
 <dd>
 <p>Indicates the number of sectors per track. </p>
 </dd>
 
-### -field <b>MaxHeads</b>
+### -field MaxHeads
 
 <dd>
 <p>Indicates the maximum number of disk heads. </p>
 </dd>
 
-### -field <b>NumberDrives</b>
+### -field NumberDrives
 
 <dd>
 <p>Indicates the number of drives. </p>

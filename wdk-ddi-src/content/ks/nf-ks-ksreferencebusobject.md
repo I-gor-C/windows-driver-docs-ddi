@@ -54,7 +54,7 @@ NTSTATUS KsReferenceBusObject(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [in]
+### -param Header [in]
 
 <dd>
 <p>Points to a header previously allocated by <b>KsAllocateDeviceHeader</b> that also contains the PnP device stack object.</p>

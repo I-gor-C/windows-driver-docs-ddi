@@ -7,7 +7,7 @@ old-location: netvista\ndisgetrssprocessorinformation.htm
 old-project: netvista
 ms.assetid: 0da022d5-7294-4780-bab8-119ff6385abf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisGetRssProcessorInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ NDIS_STATUS NdisGetRssProcessorInformation(
 ## -parameters
 <dl>
 
-### -param <i>NdisHandle</i> [in]
+### -param NdisHandle [in]
 
 <dd>
 <p>An NDIS instance handle that was obtained during caller initialization. NDIS drivers can use the
@@ -78,7 +78,7 @@ NDIS_STATUS NdisGetRssProcessorInformation(
 </dl>
 </dd>
 
-### -param <i>RssProcessorInfo</i> [out, optional]
+### -param RssProcessorInfo [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer where NDIS puts the 
@@ -89,7 +89,7 @@ NDIS_STATUS NdisGetRssProcessorInformation(
      <i>Size</i> parameter.</p>
 </dd>
 
-### -param <i>Size</i> [in, out]
+### -param Size [in, out]
 
 <dd>
 <p>A pointer to a value that is the size, in bytes, of the buffer that the caller provided. When the
@@ -193,4 +193,4 @@ NDIS_STATUS NdisGetRssProcessorInformation(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetRssProcessorInformation function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetRssProcessorInformation function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

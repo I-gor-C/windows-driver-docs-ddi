@@ -60,37 +60,37 @@ STORPORT_API BOOLEAN StorPortValidateRange(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
-### -param <i>BusType</i> [in]
+### -param BusType [in]
 
 <dd>
 <p>Contains a value of type <a href="storage.storage_bus_type">STORAGE_BUS_TYPE</a> that indicates the bus type. </p>
 </dd>
 
-### -param <i>SystemToBusNumber</i> [in]
+### -param SystemToBusNumber [in]
 
 <dd>
 <p>Contains an integer identifying a system bus.</p>
 </dd>
 
-### -param <i>IoAddress</i> [in]
+### -param IoAddress [in]
 
 <dd>
 <p>Contains the beginning address of the range of addresses to be validated. </p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>Contains the length in bytes of the range of addresses to be validated. </p>
 </dd>
 
-### -param <i>InIoSpace</i> [in]
+### -param InIoSpace [in]
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the address range is in I/O space. If <b>FALSE</b>, the address is in memory space. </p>

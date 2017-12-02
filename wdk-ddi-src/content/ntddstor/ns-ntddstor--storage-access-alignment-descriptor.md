@@ -60,43 +60,43 @@ typedef struct _STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Contains the size of the structure STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR. The value of this member will change as members are added to the structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the total size of the descriptor, in bytes.</p>
 </dd>
 
-### -field <b>BytesPerCacheLine</b>
+### -field BytesPerCacheLine
 
 <dd>
 <p>The number of bytes in a cache line of the device.</p>
 </dd>
 
-### -field <b>BytesOffsetForCacheAlignment</b>
+### -field BytesOffsetForCacheAlignment
 
 <dd>
 <p>The address offset necessary for proper cache access alignment, in bytes.</p>
 </dd>
 
-### -field <b>BytesPerLogicalSector</b>
+### -field BytesPerLogicalSector
 
 <dd>
 <p>The number of bytes in a logical sector of the device.</p>
 </dd>
 
-### -field <b>BytesPerPhysicalSector</b>
+### -field BytesPerPhysicalSector
 
 <dd>
 <p>The number of bytes in a physical sector of the device.</p>
 </dd>
 
-### -field <b>BytesOffsetForSectorAlignment</b>
+### -field BytesOffsetForSectorAlignment
 
 <dd>
 <p>The logical sector offset within the first physical sector where the first logical sector is placed, in bytes.</p>

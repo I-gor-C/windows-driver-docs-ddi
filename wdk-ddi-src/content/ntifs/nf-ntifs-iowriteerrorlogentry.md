@@ -54,7 +54,7 @@ VOID IoWriteErrorLogEntry(
 ## -parameters
 <dl>
 
-### -param <i>ElEntry</i> [in]
+### -param ElEntry [in]
 
 <dd>
 <p>Pointer to the error log packet the driver has allocated with <a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a> and filled in by the caller. </p>

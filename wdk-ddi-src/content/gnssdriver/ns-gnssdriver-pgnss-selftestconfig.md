@@ -7,7 +7,7 @@ old-location: sensors\gnss_selftestconfig.htm
 old-project: sensors
 ms.assetid: DE0D4A9A-F85D-4AA4-8A21-1BEC86837444
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_SELFTESTCONFIG, GNSS_SELFTESTCONFIG, *PGNSS_SELFTESTCONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>TestType</b>
+### -field TestType
 
 <dd>
 <p>The type of self-test requested.</p>
 </dd>
 
-### -field <b>Unused[512]</b>
+### -field Unused[512]
 
 <dd>
 <p>Padding buffer.</p>
 </dd>
 
-### -field <b>InBufLen</b>
+### -field InBufLen
 
 <dd>
 <p>The length of the buffer for passing in any additional information about the self-test.</p>
 </dd>
 
-### -field <b>InBuffer[ANYSIZE_ARRAY]</b>
+### -field InBuffer[ANYSIZE_ARRAY]
 
 <dd>
 <p>The buffer that will contain the additional information about the self-test.</p>

@@ -63,50 +63,50 @@ typedef union _DXGK_MONITORLINKINFO_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Stereo</b>
+### -field Stereo
 
 <dd>
 <p>If TRUE and resources are not constrained by other paths, stereo display modes are supported.</p>
 </dd>
 
-### -field <b>WideColorSpace</b>
+### -field WideColorSpace
 
 <dd>
 <p>If TRUE, the driver has the hardware capability to perform 3x3 rotation matrix to transform RGB values from the gamut defined by the sRGB/709 primaries to the panel’s primaries. The driver can also send any necessary control signaling to the connected display to indicate the correct interpretation of the pixel data being sent. This includes handling signed input in the range (-2.0 to 2.0). The driver must do this with all input surface formats 8888, 10-10-102, and fp16.</p>
 </dd>
 
-### -field <b>HighColorSpace</b>
+### -field HighColorSpace
 
 <dd>
 <p>If TRUE, the driver supports all of the above WideColorSpace gamut functionality and also has the ability to apply the appropriate transfer curve for that display. This means accepting canonical color space data in the range [-128.0 to 256.0] and sending any necessary control signaling to the connected display to indicate the correct interpretation.</p>
 </dd>
 
-### -field <b>DynamicColorSpace</b>
+### -field DynamicColorSpace
 
 <dd>
 <p>If TRUE, the display miniport driver supports seamless changing of the color space on this display if no other attributes are changed which would cause a glitch. If FALSE, seamless changing of color space is not supported. </p>
 </dd>
 
-### -field <b>DynamicBitsPerColorChannel</b>
+### -field DynamicBitsPerColorChannel
 
 <dd>
 <p>If TRUE, the display miniport driver supports seamless changing of the wire format bits per color channel on this display if no other attributes are changed which would cause a glitch. If FALSE, seamless changing of bits per color channel is not supported. </p>
 </dd>
 
-### -field <b>DynamicColorEncodingFormat</b>
+### -field DynamicColorEncodingFormat
 
 <dd>
 <p>If TRUE, the display miniport driver supports seamless changing of the wire format color encoding on this display if no other attributes are changed which would cause a glitch. If FALSE, seamless changing of color encoding is not supported. </p>
 </dd>
 
-### -field <b>DedicatedTimingGeneration</b>
+### -field DedicatedTimingGeneration
 
 <dd>
 <p>If TRUE, the timing generation for this display is independent from the timing generation of other displays such that mode enumeration for this target may be performed in isolation from other active targets. Changing timing on this display does not change the timings available for any other display and vice versa.</p>
 <p>In general, this flag is target based rather than based on the combination of the target and the attached display. However, there may be cases where some baseline capability is dedicated but beyond the baseline resources that are shared across targets.  In this case, if the attached display’s maximum requirements fit within the baseline, the driver would be able to report the timing generation as dedicated and therefore enable optimized enumeration of cofunctional timings.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use.</p>

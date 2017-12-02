@@ -55,13 +55,13 @@ typedef struct _ENG_EVENT {
 ## -struct-fields
 <dl>
 
-### -field <b>pKEvent</b>
+### -field pKEvent
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>fFlags</b>
+### -field fFlags
 
 <dd>
 <p>Reserved for system use.</p>

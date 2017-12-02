@@ -55,7 +55,7 @@ VOID IoStopTimer(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object with which the <a href="..\wdm\nc-wdm-io-timer-routine.md">IoTimer</a> routine is associated.</p>
@@ -126,7 +126,7 @@ VOID IoStopTimer(
 <a href="..\wdm\nf-wdm-ioinitializetimer.md">IoInitializeTimer</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iostarttimer.md">IoStartTimer</a>
+<a href="..\wdm\nf-wdm-iostarttimer.md">IoStartTimer</a>
 </dt>
 </dl>
 <p> </p>

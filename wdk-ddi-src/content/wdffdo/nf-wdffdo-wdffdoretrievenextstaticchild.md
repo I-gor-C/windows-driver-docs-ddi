@@ -7,7 +7,7 @@ old-location: wdf\wdffdoretrievenextstaticchild.htm
 old-project: wdf
 ms.assetid: ee0f458b-c8b3-46e7-87bd-25599d39203d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfFdoRetrieveNextStaticChild
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ WDFDEVICE WdfFdoRetrieveNextStaticChild(
 ## -parameters
 <dl>
 
-### -param <i>Fdo</i> [in]
+### -param Fdo [in]
 
 <dd>
 <p>A handle to a framework device object that represents the parent device.</p>
 </dd>
 
-### -param <i>PreviousChild</i> [in, optional]
+### -param PreviousChild [in, optional]
 
 <dd>
 <p>A handle to a framework device object that represents the child device that was returned by a previous call to <b>WdfFdoRetrieveNextStaticChild</b>. For the first call to <b>WdfFdoRetrieveNextStaticChild</b>, this value must be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A <a href="..\wdfchildlist\ne-wdfchildlist--wdf-retrieve-child-flags.md">WDF_RETRIEVE_CHILD_FLAGS</a>-typed enumerator value that identifies the type of child devices that the method should retrieve. This parameter cannot be zero. </p>
@@ -166,4 +166,4 @@ WDFDEVICE WdfFdoRetrieveNextStaticChild(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfFdoRetrieveNextStaticChild method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfFdoRetrieveNextStaticChild method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

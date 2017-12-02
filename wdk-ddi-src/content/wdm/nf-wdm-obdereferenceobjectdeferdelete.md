@@ -55,7 +55,7 @@ VOID ObDereferenceObjectDeferDelete(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>A pointer to the body of the object.</p>

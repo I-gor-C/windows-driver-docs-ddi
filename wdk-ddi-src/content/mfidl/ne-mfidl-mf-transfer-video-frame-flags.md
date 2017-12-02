@@ -56,15 +56,15 @@ typedef enum _MF_TRANSFER_VIDEO_FRAME_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="MF_TRANSFER_VIDEO_FRAME_DEFAULT"></a><a id="mf_transfer_video_frame_default"></a><b>MF_TRANSFER_VIDEO_FRAME_DEFAULT</b>
+### -field MF_TRANSFER_VIDEO_FRAME_DEFAULT
 
 <dd></dd>
 
-### -field <a id="MF_TRANSFER_VIDEO_FRAME_STRETCH"></a><a id="mf_transfer_video_frame_stretch"></a><b>MF_TRANSFER_VIDEO_FRAME_STRETCH</b>
+### -field MF_TRANSFER_VIDEO_FRAME_STRETCH
 
 <dd></dd>
 
-### -field <a id="MF_TRANSFER_VIDEO_FRAME_IGNORE_PAR"></a><a id="mf_transfer_video_frame_ignore_par"></a><b>MF_TRANSFER_VIDEO_FRAME_IGNORE_PAR</b>
+### -field MF_TRANSFER_VIDEO_FRAME_IGNORE_PAR
 
 <dd></dd>
 </dl>

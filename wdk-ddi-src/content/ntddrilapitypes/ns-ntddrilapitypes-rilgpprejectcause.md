@@ -7,7 +7,7 @@ old-location: netvista\rilgpprejectcause.htm
 old-project: netvista
 ms.assetid: 3008a69e-25d8-4e54-afb3-317a8ca82d34
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILGPPREJECTCAUSE, RILGPPREJECTCAUSE, *LPRILGPPREJECTCAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef struct _RILGPPREJECTCAUSE {
 ## -struct-fields
 <dl>
 
-### -field <b>dwCauseValue</b>
+### -field dwCauseValue
 
 <dd></dd>
 </dl>

@@ -57,25 +57,25 @@ typedef struct _D3DKMT_PRESENT_REDIRECTED {
 ## -struct-fields
 <dl>
 
-### -field <b>hSyncObj</b>
+### -field hSyncObj
 
 <dd>
 <p>The sync object that the PHT waits on.</p>
 </dd>
 
-### -field <b>WaitedFenceValue</b>
+### -field WaitedFenceValue
 
 <dd>
 <p>The fence value of hSyncObj that PHT waits on</p>
 </dd>
 
-### -field <b>PresentHistoryToken</b>
+### -field PresentHistoryToken
 
 <dd>
 <p>The present history token.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The flags needed to give the status of the present history token.</p>

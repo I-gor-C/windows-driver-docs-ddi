@@ -59,31 +59,31 @@ NTSTATUS ZwSetInformationFile(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [in]
+### -param FileHandle [in]
 
 <dd>
 <p>Handle to the file object. This handle is created by a successful call to <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> or <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>Pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. The <b>Information</b> member receives the number of bytes set on the file.</p>
 </dd>
 
-### -param <i>FileInformation</i> [in]
+### -param FileInformation [in]
 
 <dd>
 <p>Pointer to a buffer that contains the information to set for the file. The particular structure in this buffer is determined by the <i>FileInformationClass</i> parameter. Setting any member of the structure to zero tells <b>ZwSetInformationFile</b> to leave the current information about the file for that member unchanged.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The size, in bytes, of the <i>FileInformation</i> buffer.</p>
 </dd>
 
-### -param <i>FileInformationClass</i> [in]
+### -param FileInformationClass [in]
 
 <dd>
 <p>The type of information, supplied in the buffer pointed to by <i>FileInformation</i>, to set for the file. Device and intermediate drivers can specify any of the following <a href="..\wdm\ne-wdm--file-information-class.md">FILE_INFORMATION_CLASS</a> values.</p>

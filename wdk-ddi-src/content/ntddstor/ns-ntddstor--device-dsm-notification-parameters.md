@@ -58,20 +58,20 @@ typedef struct _DEVICE_DSM_NOTIFICATION_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the total size, in bytes, of this structure. The value of this member must include the total size, in bytes, of the <b>FileTypeIDs</b> member.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A flag that specifies the characteristics of the notification operation. The  <b>Flags</b> member must be set to one of the following values:</p>
 <p></p>
 <dl>
 
-### -field <a id="DEVICE_DSM_NOTIFY_FLAG_BEGIN"></a><a id="device_dsm_notify_flag_begin"></a><b>DEVICE_DSM_NOTIFY_FLAG_BEGIN</b>
+### -field DEVICE_DSM_NOTIFY_FLAG_BEGIN
 
 <dd>
 <p>The Logical Block Address (LBA) range is currently being used by the file types that are specified in the <b>FileTypeIDs</b> member. </p>
@@ -79,7 +79,7 @@ typedef struct _DEVICE_DSM_NOTIFICATION_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <a id="DEVICE_DSM_NOTIFY_FLAG_END"></a><a id="device_dsm_notify_flag_end"></a><b>DEVICE_DSM_NOTIFY_FLAG_END</b>
+### -field DEVICE_DSM_NOTIFY_FLAG_END
 
 <dd>
 <p>The LBA range is no longer being used by the file types that are specified in the <b>FileTypeIDs</b> member. </p>
@@ -87,13 +87,13 @@ typedef struct _DEVICE_DSM_NOTIFICATION_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>NumFileTypeIDs</b>
+### -field NumFileTypeIDs
 
 <dd>
 <p>The number of entries in the <b>FileTypeIDs</b> member.</p>
 </dd>
 
-### -field <b>FileTypeIDs</b>
+### -field FileTypeIDs
 
 <dd>
 <p>One or more <a href="wdkgloss.g#wdkgloss.guid#wdkgloss.guid"><i>GUID</i></a> values that specify the file type for the notification operation. The following table describes the <b>FileTypeIDs</b> GUID values.</p>

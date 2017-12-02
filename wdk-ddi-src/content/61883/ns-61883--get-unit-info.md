@@ -7,7 +7,7 @@ old-location: ieee\get_unit_info.htm
 old-project: IEEE
 ms.assetid: 2FE13A53-5B88-40B8-B129-8DD141F1B160
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: GET_UNIT_INFO, GET_UNIT_INFO, *PGET_UNIT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,7 +38,7 @@ req.irql:
 
 
 ## -description
-<p>This structure is used to get unit information.</p>
+<p>This structure is used to get unit information.The  request retrieves unit information about the device. The Plug and Play ID for a 61883 device is based on its VendorID, ModelID, and Character/Transaction Set. </p>
 
 
 ## -syntax
@@ -54,10 +54,10 @@ typedef struct _GET_UNIT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b><b>nLevel</b></b>
+### -field nLevel
 
 <dd>
-<p>The level of information to retrieve. Can be one of the following:</p>
+<p>On input, the level of information to retrieve. Can be one of the following:</p>
 <p>GET_UNIT_INFO_IDS</p>
 <p>GET_UNIT_INFO_CAPABILITIES</p>
 <p>GET_UNIT_INFO_ISOCH_PARAMS</p>
@@ -66,10 +66,10 @@ typedef struct _GET_UNIT_INFO {
 <p>GET_UNIT_DIAG_LEVEL</p>
 </dd>
 
-### -field <b><b>Information</b></b>
+### -field Information
 
 <dd>
-<p>Pointer to information supplied by the protocol driver about the device. </p>
+<p>In input, a pointer to information supplied by the protocol driver about the device. </p>
 <table>
 <tr>
 <th>Value of nLevel</th>
@@ -129,7 +129,7 @@ typedef struct _GET_UNIT_INFO {
 </dl>
 
 ## -remarks
-
+<p><b>Flags</b> in the request specifies either RETRIEVE_DEVICE_UNIT_INFO or RETRIEVE_LOCAL_UNIT_INFO. Only used when <b>nLevel</b> is set to GET_UNIT_INFO_CAPABILITIES.</p>
 
 ## -requirements
 <table>
@@ -153,4 +153,4 @@ typedef struct _GET_UNIT_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20GET_UNIT_INFO structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20GET_UNIT_INFO structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

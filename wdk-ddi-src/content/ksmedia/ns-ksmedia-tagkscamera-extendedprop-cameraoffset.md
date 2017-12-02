@@ -57,25 +57,25 @@ typedef struct _KSCAMERA_EXTENDEDPROP_CAMERAOFFSET {
 ## -struct-fields
 <dl>
 
-### -field <b>PitchAngle</b>
+### -field PitchAngle
 
 <dd>
 <p>The angle offset of the camera look direction from the horizontal axis of the camera facing direction.</p>
 </dd>
 
-### -field <b>YawAngle</b>
+### -field YawAngle
 
 <dd>
 <p>The angle offset of the camera look direction from the vertical axis of the camera facing direction.</p>
 </dd>
 
-### -field <b>Flag</b>
+### -field Flag
 
 <dd>
 <p>Reserved. Set to 0.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Set to 0.</p>

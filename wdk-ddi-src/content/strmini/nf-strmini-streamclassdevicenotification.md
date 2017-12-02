@@ -60,38 +60,38 @@ VOID  StreamClassDeviceNotification(
 ## -parameters
 <dl>
 
-### -param <i>NotificationType</i> [in]
+### -param NotificationType [in]
 
 <dd>
 <p>This is an enumeration value that contains the type of notification that the minidriver is sending.</p>
 <p></p>
 <dl>
 
-### -param <a id="DeviceRequestComplete"></a><a id="devicerequestcomplete"></a><a id="DEVICEREQUESTCOMPLETE"></a><b>DeviceRequestComplete</b>
+### -param DeviceRequestComplete
 
 <dd>
 <p>Indicates that the minidriver has completed its handling of the device stream request block pointed to by the optional third argument of this routine, <i>pSrb</i>. Once the minidriver calls <b>StreamClassDeviceNotification</b> with this value, the relevant SRB is owned by the class driver, which is free to deallocate it.</p>
 </dd>
 
-### -param <a id="ReadyForNextDeviceRequest"></a><a id="readyfornextdevicerequest"></a><a id="READYFORNEXTDEVICEREQUEST"></a><b>ReadyForNextDeviceRequest</b>
+### -param ReadyForNextDeviceRequest
 
 <dd>
 <p>Indicates that the minidriver is ready to receive another device request. </p>
 </dd>
 
-### -param <a id="SignalDeviceEvent"></a><a id="signaldeviceevent"></a><a id="SIGNALDEVICEEVENT"></a><b>SignalDeviceEvent</b>
+### -param SignalDeviceEvent
 
 <dd>
 <p>Signals that the event specified by the <i>EventEntry</i> parameter has occurred.</p>
 </dd>
 
-### -param <a id="SignalMultipleDeviceEvents"></a><a id="signalmultipledeviceevents"></a><a id="SIGNALMULTIPLEDEVICEEVENTS"></a><b>SignalMultipleDeviceEvents</b>
+### -param SignalMultipleDeviceEvents
 
 <dd>
 <p>Signals all events that match the criteria specified in the <i>EventSet</i> and <i>EventId</i> parameters.</p>
 </dd>
 
-### -param <a id="DeleteDeviceEvent"></a><a id="deletedeviceevent"></a><a id="DELETEDEVICEEVENT"></a><b>DeleteDeviceEvent</b>
+### -param DeleteDeviceEvent
 
 <dd>
 <p>Deletes the event specified by the <i>EventEntry</i> parameter. </p>
@@ -99,31 +99,31 @@ VOID  StreamClassDeviceNotification(
 </dl>
 </dd>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="..\strmini\ns-strmini--hw-initialization-data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="..\strmini\ns-strmini--hw-stream-request-block.md">HW_STREAM_REQUEST_BLOCK</a>, <a href="..\strmini\ns-strmini--hw-stream-object~r1.md">HW_STREAM_OBJECT</a>, <a href="..\strmini\ns-strmini--hw-time-context.md">HW_TIME_CONTEXT</a>, and <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.</p>
 </dd>
 
-### -param <i>pSrb</i> 
+### -param pSrb 
 
 <dd>
 <p>Pointer to an <a href="..\strmini\ns-strmini--hw-stream-request-block.md">HW_STREAM_REQUEST_BLOCK</a> structure. If <i>NotificationType</i> equals <b>DeviceRequestComplete</b>, this parameter points to the stream request block that the minidriver has completed processing. After <b>StreamClassDeviceNotification</b> completes, this address is no longer valid.</p>
 </dd>
 
-### -param <i>EventEntry</i> 
+### -param EventEntry 
 
 <dd>
 <p>If <i>NotificationType</i> equals either SignalDeviceEvent or DeleteDeviceEvent, points to a structure of type <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a> that specifies the event to be signaled or deleted. </p>
 </dd>
 
-### -param <i>EventSet</i> 
+### -param EventSet 
 
 <dd>
 <p>Specifies the event set to match against in the device event queue if <i>NotificationType</i> equals <b>SignalMultipleDeviceEvents</b>. </p>
 </dd>
 
-### -param <i>EventId</i> 
+### -param EventId 
 
 <dd>
 <p>Specifies the event ID to match against in the device event queue if <i>NotificationType</i> equals <b>SignalMultipleDeviceEvents</b>.</p>

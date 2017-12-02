@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_allocate_channel.htm
 old-project: IEEE
 ms.assetid: CE38C189-34C7-40FC-81BE-9688AC9A7420
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_ISOCH_ALLOCATE_CHANNEL, IRB_REQ_ISOCH_ALLOCATE_CHANNEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef struct _IRB_REQ_ISOCH_ALLOCATE_CHANNEL {
 ## -struct-fields
 <dl>
 
-### -field <b>nRequestedChannel</b>
+### -field nRequestedChannel
 
 <dd>
 <p>Specifies the particular channel to allocate, or ISOCH_ANY_CHANNEL for an arbitrary channel. </p>
 </dd>
 
-### -field <b>Channel</b>
+### -field Channel
 
 <dd>
 <p>Specifies the channel allocated, if the request succeeds.</p>
 </dd>
 
-### -field <b>ChannelsAvailable</b>
+### -field ChannelsAvailable
 
 <dd>
 <p>A bitmap specifying the available channels. The highest order bit (bit 63) specifies channel 0, the next bit (bit 62) specifies channel 1, and so on.</p>

@@ -7,7 +7,7 @@ old-location: netvista\wskcontrolclient.htm
 old-project: netvista
 ms.assetid: dad13c60-3511-4641-9182-71a1ce032a69
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ NTSTATUS WSKAPI * WskControlClient(
 ## -parameters
 <dl>
 
-### -param <i>Client</i> [in]
+### -param Client [in]
 
 <dd>
 <p>A pointer to a 
@@ -71,47 +71,47 @@ NTSTATUS WSKAPI * WskControlClient(
      the 
      <i>WskProviderNpi</i> parameter of the 
      <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">
-     WskCaptureProviderNPI</a> function.</p>
-</dd>
+     WskCaptureProviderNPI function.
 
-### -param <i>ControlCode</i> [in]
 
-<dd>
-<p>The control operation that is being performed. A WSK application can specify one of the following
+### -param ControlCode [in]
+
+
+The control operation that is being performed. A WSK application can specify one of the following
      control codes:
-     </p>
-<p></p>
-<dl>
-
-### -param <a id="WSK_TRANSPORT_LIST_QUERY"></a><a id="wsk_transport_list_query"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff571195">WSK_TRANSPORT_LIST_QUERY</a>
+     
 
 
-<dd>
-<p>Retrieve a list of available network transports.</p>
-</dd>
 
-### -param <a id="WSK_TRANSPORT_LIST_CHANGE"></a><a id="wsk_transport_list_change"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff571194">WSK_TRANSPORT_LIST_CHANGE</a>
+### -param WSK_TRANSPORT_LIST_QUERY
 
 
-<dd>
-<p>Receive notification of a change to the list of available network transports.</p>
-</dd>
 
-### -param <a id="WSK_CACHE_SD"></a><a id="wsk_cache_sd"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff571154">WSK_CACHE_SD</a>
+Retrieve a list of available network transports.
 
 
-<dd>
-<p>Obtain a cached copy of a security descriptor.</p>
-</dd>
-
-### -param <a id="WSK_RELEASE_SD"></a><a id="wsk_release_sd"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff571180">WSK_RELEASE_SD</a>
+### -param WSK_TRANSPORT_LIST_CHANGE
 
 
-<dd>
-<p>Release a cached copy of a security descriptor.</p>
-</dd>
 
-### -param <a id="_________WSK_SET_STATIC_EVENT_CALLBACKS"></a><a id="_________wsk_set_static_event_callbacks"></a><a href="netvista.wsk_set_static_event_callbacks">
+Receive notification of a change to the list of available network transports.
+
+
+### -param WSK_CACHE_SD
+
+
+
+Obtain a cached copy of a security descriptor.
+
+
+### -param WSK_RELEASE_SD
+
+
+
+Release a cached copy of a security descriptor.
+
+
+### -param 
         WSK_SET_STATIC_EVENT_CALLBACKS</a>
 
 
@@ -119,7 +119,7 @@ NTSTATUS WSKAPI * WskControlClient(
 <p>Enable specified event callback functions automatically on all sockets.</p>
 </dd>
 
-### -param <a id="WSK_TDI_DEVICENAME_MAPPING"></a><a id="wsk_tdi_devicename_mapping"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff571190">WSK_TDI_DEVICENAME_MAPPING</a>
+### -param WSK_TDI_DEVICENAME_MAPPING
 
 
 <dd>
@@ -127,7 +127,7 @@ NTSTATUS WSKAPI * WskControlClient(
        <a href="https://msdn.microsoft.com/3878053c-388a-4bbc-a30e-feb16eda2f99">TDI</a> transports.</p>
 </dd>
 
-### -param <a id="WSK_TDI_BEHAVIOR"></a><a id="wsk_tdi_behavior"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff571189">WSK_TDI_BEHAVIOR</a>
+### -param WSK_TDI_BEHAVIOR
 
 
 <dd>
@@ -137,14 +137,14 @@ NTSTATUS WSKAPI * WskControlClient(
 </dl>
 </dd>
 
-### -param <i>InputSize</i> [in]
+### -param InputSize [in]
 
 <dd>
 <p>The number of bytes of data in the buffer that is pointed to by the 
      <i>InputBuffer</i> parameter.</p>
 </dd>
 
-### -param <i>InputBuffer</i> [in, optional]
+### -param InputBuffer [in, optional]
 
 <dd>
 <p>A caller-allocated buffer that supplies any input data that is required to perform the specified
@@ -153,14 +153,14 @@ NTSTATUS WSKAPI * WskControlClient(
      <i>InputSize</i> parameter to zero.</p>
 </dd>
 
-### -param <i>OutputSize</i> [in]
+### -param OutputSize [in]
 
 <dd>
 <p>The size, in bytes, of the buffer that is pointed to by the 
      <i>OutputBuffer</i> parameter.</p>
 </dd>
 
-### -param <i>OutputBuffer</i> [out, optional]
+### -param OutputBuffer [out, optional]
 
 <dd>
 <p>A caller-allocated buffer that receives any output data that is returned by the specified control
@@ -169,7 +169,7 @@ NTSTATUS WSKAPI * WskControlClient(
      <i>OutputSize</i> parameter to zero.</p>
 </dd>
 
-### -param <i>OutputSizeReturned</i> [out, optional]
+### -param OutputSizeReturned [out, optional]
 
 <dd>
 <p>A pointer to a ULONG-typed variable that receives the number of bytes of data that is returned in
@@ -193,7 +193,7 @@ NTSTATUS WSKAPI * WskControlClient(
 </ul>
 </dd>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the control operation
@@ -309,4 +309,4 @@ NTSTATUS WSKAPI * WskControlClient(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONTROL_CLIENT callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONTROL_CLIENT callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

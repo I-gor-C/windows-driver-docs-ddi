@@ -57,25 +57,25 @@ typedef struct _DOT4_DRIVER_CMD {
 ## -struct-fields
 <dl>
 
-### -field <b>hChannelHandle</b>
+### -field hChannelHandle
 
 <dd>
 <p>Specifies the handle to the channel.</p>
 </dd>
 
-### -field <b>ulSize</b>
+### -field ulSize
 
 <dd>
 <p>Specifies the length of the request.</p>
 </dd>
 
-### -field <b>ulOffset</b>
+### -field ulOffset
 
 <dd>
 <p>Specifies the offset into the  buffer.</p>
 </dd>
 
-### -field <b>ulTimeout</b>
+### -field ulTimeout
 
 <dd>
 <p>Specifies the timeout of the operation. Can be INFINITE.</p>

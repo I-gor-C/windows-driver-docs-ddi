@@ -59,37 +59,37 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="PmiCapabilitiesChangedEvent"></a><a id="pmicapabilitieschangedevent"></a><a id="PMICAPABILITIESCHANGEDEVENT"></a><b>PmiCapabilitiesChangedEvent</b>
+### -field PmiCapabilitiesChangedEvent
 
 <dd>
 <p>The event was caused by a change in the PMI capabilities of the power meter.</p>
 </dd>
 
-### -field <a id="PmiThresholdEvent"></a><a id="pmithresholdevent"></a><a id="PMITHRESHOLDEVENT"></a><b>PmiThresholdEvent</b>
+### -field PmiThresholdEvent
 
 <dd>
 <p>The event was caused because the power level exceeded a configured threshold of the power meter.</p>
 </dd>
 
-### -field <a id="PmiConfigurationChangedEvent"></a><a id="pmiconfigurationchangedevent"></a><a id="PMICONFIGURATIONCHANGEDEVENT"></a><b>PmiConfigurationChangedEvent</b>
+### -field PmiConfigurationChangedEvent
 
 <dd>
 <p>The event was caused by a change in the PMI configuration of the power meter.</p>
 </dd>
 
-### -field <a id="PmiBudgetEvent"></a><a id="pmibudgetevent"></a><a id="PMIBUDGETEVENT"></a><b>PmiBudgetEvent</b>
+### -field PmiBudgetEvent
 
 <dd>
 <p>The event was caused because the power budget exceeded or fell below the configured budget of the power meter.</p>
 </dd>
 
-### -field <a id="PmiAveragingIntervalChangedEvent"></a><a id="pmiaveragingintervalchangedevent"></a><a id="PMIAVERAGINGINTERVALCHANGEDEVENT"></a><b>PmiAveragingIntervalChangedEvent</b>
+### -field PmiAveragingIntervalChangedEvent
 
 <dd>
 <p>The event was caused because the interval, during which the power meter averages power measurement data, was changed.</p>
 </dd>
 
-### -field <a id="PmiEventMax"></a><a id="pmieventmax"></a><a id="PMIEVENTMAX"></a><b>PmiEventMax</b>
+### -field PmiEventMax
 
 <dd>
 <p>The maximum number of PMI event types.</p>

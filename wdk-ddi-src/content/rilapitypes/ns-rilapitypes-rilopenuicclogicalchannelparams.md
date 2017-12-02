@@ -7,7 +7,7 @@ old-location: netvista\rilopenuicclogicalchannelparams_2.htm
 old-project: netvista
 ms.assetid: 067d33bf-33d5-49b7-9923-8c893d0b9184
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILOPENUICCLOGICALCHANNELPARAMS, RILOPENUICCLOGICALCHANNELPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef struct _RILOPENUICCLOGICALCHANNELPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSlotIndex</b>
+### -field dwSlotIndex
 
 <dd></dd>
 
-### -field <b>dwChannelGroup</b>
+### -field dwChannelGroup
 
 <dd></dd>
 
-### -field <b>dwAppIdLength</b>
+### -field dwAppIdLength
 
 <dd></dd>
 
-### -field <b>bAppId</b>
+### -field bAppId
 
 <dd></dd>
 
-### -field <b>dwSelectP2Arg</b>
+### -field dwSelectP2Arg
 
 <dd></dd>
 </dl>

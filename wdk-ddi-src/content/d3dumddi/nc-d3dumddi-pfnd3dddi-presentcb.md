@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnPresentCb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to a display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-present.md">D3DDDICB_PRESENT</a> structure that describes the source allocation that content is copied from.</p>

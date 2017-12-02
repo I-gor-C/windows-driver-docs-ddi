@@ -58,7 +58,7 @@ void UsbBuildOpenStaticStreamsRequest(
 ## -parameters
 <dl>
 
-### -param <i>Urb</i> [in, out]
+### -param Urb [in, out]
 
 <dd>
 <p>Pointer to the <a href="..\usb\ns-usb--urb.md">URB</a> structure to be formatted for the open-stream request (URB_FUNCTION_OPEN_STATIC_STREAMS). The caller must allocate nonpaged pool for this <b>URB</b>.
@@ -66,7 +66,7 @@ void UsbBuildOpenStaticStreamsRequest(
 </p>
 </dd>
 
-### -param <i>PipeHandle</i> [in]
+### -param PipeHandle [in]
 
 <dd>
 <p>An opaque handle for the pipe associated with the endpoint that contains the streams to open.
@@ -74,7 +74,7 @@ void UsbBuildOpenStaticStreamsRequest(
 The client driver obtains <b>PipeHandle</b> from a previous select-configuration request (URB_FUNCTION_SELECT_CONFIGURATION) or a select-interface request (URB_FUNCTION_SELECT_INTERFACE). </p>
 </dd>
 
-### -param <i>NumberOfStreams</i> [in]
+### -param NumberOfStreams [in]
 
 <dd>
 <p>The number of streams to open. The <b>NumberOfStreams</b> value indicates the number of elements in the array pointed to by <b>Streams</b>. This value must be greater than zero and less than or equal to the maximum number of streams supported by the host controller hardware. To get the maximum number of supported streams, call <a href="buses.usbd_getcapability">USBD_QueryUsbCapability</a>. </p>
@@ -82,7 +82,7 @@ The client driver obtains <b>PipeHandle</b> from a previous select-configuration
 <p>In the <b>NumberOfStreams</b> value, specify lesser of two values supported by the host controller and the USB device.</p>
 </dd>
 
-### -param <i>StreamInfoArray</i> [in]
+### -param StreamInfoArray [in]
 
 <dd>
 <p>Pointer to a caller-allocated, initialized array of <a href="..\usb\ns-usb--usbd-stream-information.md">USBD_STREAM_INFORMATION</a> structures. The length of the array depends on the number of streams to open and must be the same as the <b>NumberOfStreams</b> value.</p>

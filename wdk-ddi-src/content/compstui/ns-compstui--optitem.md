@@ -74,33 +74,33 @@ typedef struct _OPTITEM {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Size, in bytes, of the OPTITEM structure.</p>
 </dd>
 
-### -field <b>Level</b>
+### -field Level
 
 <dd>
 <p>Specifies the level of this option in the treeview. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>DlgPageIdx</b>
+### -field DlgPageIdx
 
 <dd>
 <p>Identifies the dialog to which the option belongs. Specifies an array index into the DLGPAGE array pointed to by the <b>pDlgPage</b> member of the <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> structure.</p>
 <p>If <b>pDlgPage</b> points to a CPSUI-supplied, predefined DLGPAGE structure, CPSUI supplies this index.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Optional bit flags that modify the option's characteristics. The OPTIF_CHANGEONCE flag is set by CPSUI; all other flags are set by the caller. Any combination of the following flags can be set.</p>
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_CALLBACK"></a><a id="optif_callback"></a>OPTIF_CALLBACK
+### -field OPTIF_CALLBACK
 
 <dd>
 <p>When a user modifies the option, CPSUI should call the <a href="..\compstui\nc-compstui--cpsuicallback.md">_CPSUICALLBACK</a>-typed callback function specified in the <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> structure.</p>
@@ -109,7 +109,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_CHANGED"></a><a id="optif_changed"></a>OPTIF_CHANGED
+### -field OPTIF_CHANGED
 
 <dd>
 <p>The <b>_CPSUICALLBACK</b>-typed callback function should set this flag if it modified the option, so that CPSUI will redisplay it.</p>
@@ -118,7 +118,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_CHANGEONCE"></a><a id="optif_changeonce"></a>OPTIF_CHANGEONCE
+### -field OPTIF_CHANGEONCE
 
 <dd>
 <p>CPSUI sets this bit if a user modified the option.</p>
@@ -127,7 +127,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_COLLAPSE"></a><a id="optif_collapse"></a>OPTIF_COLLAPSE
+### -field OPTIF_COLLAPSE
 
 <dd>
 <p>Collapse this option and its children so that it is not expanded in the treeview.</p>
@@ -136,7 +136,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_DISABLED"></a><a id="optif_disabled"></a>OPTIF_DISABLED
+### -field OPTIF_DISABLED
 
 <dd>
 <p>Disables the option so that it is not user-modifiable.</p>
@@ -145,7 +145,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_ECB_CHECKED"></a><a id="optif_ecb_checked"></a>OPTIF_ECB_CHECKED
+### -field OPTIF_ECB_CHECKED
 
 <dd>
 <p>The associated extended check box is in the checked state.</p>
@@ -154,7 +154,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_EXT_IS_EXTPUSH"></a><a id="optif_ext_is_extpush"></a>OPTIF_EXT_IS_EXTPUSH
+### -field OPTIF_EXT_IS_EXTPUSH
 
 <dd>
 <p>If set, the <b>pExtPush</b> member is valid (unless <b>NULL</b>).</p>
@@ -164,7 +164,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_EXT_DISABLED"></a><a id="optif_ext_disabled"></a>OPTIF_EXT_DISABLED
+### -field OPTIF_EXT_DISABLED
 
 <dd>
 <p>The extended check box or extended push button is not selectable.</p>
@@ -173,7 +173,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_EXT_HIDE"></a><a id="optif_ext_hide"></a>OPTIF_EXT_HIDE
+### -field OPTIF_EXT_HIDE
 
 <dd>
 <p>CPSUI will not display the extended check box or extended push button.</p>
@@ -182,7 +182,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_HAS_POIEXT"></a><a id="optif_has_poiext"></a>OPTIF_HAS_POIEXT
+### -field OPTIF_HAS_POIEXT
 
 <dd>
 <p>If set, the <b>pOIExt</b> member is valid.</p>
@@ -191,7 +191,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_HIDE"></a><a id="optif_hide"></a>OPTIF_HIDE
+### -field OPTIF_HIDE
 
 <dd>
 <p>CPSUI will not display this option in the treeview. CPSUI examines this flag only when initially creating the treeview, so changing the flag from its initial value has no effect.</p>
@@ -200,7 +200,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="_OPTIF_INITIAL_TVITEM"></a><a id="_optif_initial_tvitem"></a> OPTIF_INITIAL_TVITEM
+### -field  OPTIF_INITIAL_TVITEM
 
 <dd>
 <p>If set, CPSUI sets the initial window focus to this option when it displays the treeview. CPSUI expands tree nodes and scrolls the option into view as necessary. If the option is hidden, or if this flag is not set for any OPTITEM structure, CPSUI chooses the initial focus.</p>
@@ -209,7 +209,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_NO_GROUPBOX_NAME"></a><a id="optif_no_groupbox_name"></a>OPTIF_NO_GROUPBOX_NAME
+### -field OPTIF_NO_GROUPBOX_NAME
 
 <dd>
 <p>If not set, and <b>pOptype</b> is not zero, CPSUI uses the <b>pName</b> string as the groupbox title.</p>
@@ -219,7 +219,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_OVERLAY_NO_ICON"></a><a id="optif_overlay_no_icon"></a>OPTIF_OVERLAY_NO_ICON
+### -field OPTIF_OVERLAY_NO_ICON
 
 <dd>
 <p>If set CPSUI overlays its IDI_CPSUI_NO icon onto the icon associated with the option. (See the <b>Sel/pSel</b> member.)</p>
@@ -228,7 +228,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_OVERLAY_STOP_ICON"></a><a id="optif_overlay_stop_icon"></a>OPTIF_OVERLAY_STOP_ICON
+### -field OPTIF_OVERLAY_STOP_ICON
 
 <dd>
 <p>If set, CPSUI overlays its IDI_CPSUI_STOP icon onto the icon associated with the option. (See the <b>Sel/pSel</b> member.)</p>
@@ -237,7 +237,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_OVERLAY_WARNING_ICON"></a><a id="optif_overlay_warning_icon"></a>OPTIF_OVERLAY_WARNING_ICON
+### -field OPTIF_OVERLAY_WARNING_ICON
 
 <dd>
 <p>If set, CPSUI overlays its IDI_CPSUI_WARNING icon onto the icon associated with the option. (See the <b>Sel/pSel</b> member.)</p>
@@ -246,7 +246,7 @@ typedef struct _OPTITEM {
 <p></p>
 <dl>
 
-### -field <a id="OPTIF_SEL_AS_HICON"></a><a id="optif_sel_as_hicon"></a>OPTIF_SEL_AS_HICON
+### -field OPTIF_SEL_AS_HICON
 
 <dd>
 <p>If set, the <b>Sel</b> member contains an icon handle.</p>
@@ -256,59 +256,59 @@ typedef struct _OPTITEM {
 </dl>
 </dd>
 
-### -field <b>UserData</b>
+### -field UserData
 
 <dd>
 <p>Optional 32-bit value that can be set and used by the caller.</p>
 <p>(Printer interface DLLs for <a href="wdkgloss.u#wdkgloss.unidrv#wdkgloss.unidrv"><i>Unidrv</i></a> and <a href="wdkgloss.p#wdkgloss.pscript#wdkgloss.pscript"><i>Pscript</i></a> use this member to supply a pointer to a <a href="..\printoem\ns-printoem--userdata.md">USERDATA</a> structure. <a href="https://msdn.microsoft.com/22ac2af6-37d8-4913-95af-9c3dc8576d40">User interface plug-ins</a> can reference this structure.)</p>
 </dd>
 
-### -field <b>pName</b>
+### -field pName
 
 <dd>
 <p>String identifier representing a localized, displayable option name. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier, with HIWORD set to zero. (Also see the description of <b>DMPubID</b>, below.)</p>
 </dd>
 
-### -field <b>Sel</b>
+### -field Sel
 
 <dd>
 <p>This union indicates the option's currently selected parameter value. Its usage is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.</p>
 <p>If <b>pOptType</b> is <b>NULL</b>, the option has no parameters, so this union identifies an icon to be associated with the treeview node for the option. The icon identifier can be either an icon handle or an icon resource identifier, as indicated by OPTIF_SEL_AS_HICON in <b>Flags</b>.</p>
 </dd>
 
-### -field <b>pSel</b>
+### -field pSel
 
 <dd>
 <p>This union indicates the option's currently selected parameter value. Its usage is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.</p>
 <p>If <b>pOptType</b> is <b>NULL</b>, the option has no parameters, so this union identifies an icon to be associated with the treeview node for the option. The icon identifier can be either an icon handle or an icon resource identifier, as indicated by OPTIF_SEL_AS_HICON in <b>Flags</b>.</p>
 </dd>
 
-### -field <b>pExtChkBox</b>
+### -field pExtChkBox
 
 <dd>
 <p>Pointer to EXTCHKBOX structure</p>
 </dd>
 
-### -field <b>pExtPush</b>
+### -field pExtPush
 
 <dd>
 <p>This union can be a pointer to an <a href="..\compstui\ns-compstui--extchkbox.md">EXTCHKBOX</a> structure, a pointer to an <a href="..\compstui\ns-compstui--extpush.md">EXTPUSH</a> structure, or <b>NULL</b>.</p>
 <p>An OPTITEM structure can optionally have an EXTCHKBOX structure, an EXTPUSH structure, or neither, associated with it. If this union is not <b>NULL</b>, and if OPTIF_EXT_IS_EXTPUSH is set in <b>Flags</b>, <b>pExtPush</b> is valid. If the flag is not set, <b>pExtChkBox</b> is valid.</p>
 </dd>
 
-### -field <b>pOptType</b>
+### -field pOptType
 
 <dd>
 <p>Pointer to an <a href="..\compstui\ns-compstui--opttype.md">OPTTYPE</a> structure that describes the option's display type. If <b>NULL</b>, the option has no parameters and is used as a parent to options with a higher <b>Level</b> value. The child options must immediately follow the parent in the OPTITEM array. (See the following Remarks section.)</p>
 </dd>
 
-### -field <b>HelpIndex</b>
+### -field HelpIndex
 
 <dd>
 <p>Help file index, which identifies help text to be associated with the option. If zero, help file text does not exist for this option. Note that the <b>pOIExt</b> member of this structure must be set with the address of an <a href="..\compstui\ns-compstui--oiext.md">OIEXT</a> structure in order for help text functionality to exist.</p>
 </dd>
 
-### -field <b>DMPubID</b>
+### -field DMPubID
 
 <dd>
 <p>This member is meant for use by printer interface DLLs, when creating a <b>Document Properties</b> property sheet (see <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a>). It is a constant value specifying which, if any, public member of the <a href="display.devmodew">DEVMODEW</a> structure is associated with this option. The following table lists available constants, the associated DEVMODE structure member, and the required value for <b>pName</b> for each constant.</p>
@@ -533,25 +533,25 @@ typedef struct _OPTITEM {
 <p>For additional information about using the <b>DMPubID</b> member, see the following Remarks section.</p>
 </dd>
 
-### -field <b>UserItemID</b>
+### -field UserItemID
 
 <dd>
 <p>Optional application-supplied value that can be used for option identification purposes. Not referenced by CPSUI.</p>
 </dd>
 
-### -field <b>wReserved</b>
+### -field wReserved
 
 <dd>
 <p>Reserved, must be initialized to zero.</p>
 </dd>
 
-### -field <b>pOIExt</b>
+### -field pOIExt
 
 <dd>
 <p>Pointer to an optional <a href="..\compstui\ns-compstui--oiext.md">OIEXT</a> structure. The caller is responsible for allocating storage for this structure.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Reserved, must be initialized to zero.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_sriov_capabilities.htm
 old-project: netvista
 ms.assetid: 57cf980c-4477-4c12-8d82-7a8df8b2922f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_SRIOV_CAPABILITIES, NDIS_SRIOV_CAPABILITIES, *PNDIS_SRIOV_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ typedef struct _NDIS_SRIOV_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_SRIOV_CAPABILITIES</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -64,7 +64,7 @@ typedef struct _NDIS_SRIOV_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_SRIOV_CAPABILITIES__REVISION_1"></a><a id="ndis_sriov_capabilities__revision_1"></a>NDIS_SRIOV_CAPABILITIES _REVISION_1
+### -field NDIS_SRIOV_CAPABILITIES _REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30 and later.</p>
@@ -73,20 +73,20 @@ typedef struct _NDIS_SRIOV_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS</p>
 </dd>
 
-### -field <b>SriovCapabilities</b>
+### -field SriovCapabilities
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of the following flags:</p>
 <p></p>
 <dl>
 
-### -field <a id="NDIS_SRIOV_CAPS_SRIOV_SUPPORTED"></a><a id="ndis_sriov_caps_sriov_supported"></a>NDIS_SRIOV_CAPS_SRIOV_SUPPORTED
+### -field NDIS_SRIOV_CAPS_SRIOV_SUPPORTED
 
 <dd>
 <p>Specifies that the network adapter supports SR-IOV functionality. </p>
@@ -94,13 +94,13 @@ typedef struct _NDIS_SRIOV_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_SRIOV_CAPS_PF_MINIPORT"></a><a id="ndis_sriov_caps_pf_miniport"></a>NDIS_SRIOV_CAPS_PF_MINIPORT
+### -field NDIS_SRIOV_CAPS_PF_MINIPORT
 
 <dd>
 <p>Specifies that this is a PF  miniport driver. </p>
 </dd>
 
-### -field <a id="NDIS_SRIOV_CAPS_VF_MINIPORT"></a><a id="ndis_sriov_caps_vf_miniport"></a>NDIS_SRIOV_CAPS_VF_MINIPORT
+### -field NDIS_SRIOV_CAPS_VF_MINIPORT
 
 <dd>
 <p>Specifies that this is a PCIe  Virtual Function (VF) miniport driver. </p>
@@ -122,7 +122,7 @@ typedef struct _NDIS_SRIOV_CAPABILITIES {
 <p>When NDIS calls an overlying protocol driver's <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a>
  function, NDIS passes the network adapter's SR-IOV capabilities through the <i>BindParameters</i> parameter.  This parameter contains a pointer to an <a href="..\ndis\ns-ndis--ndis-filter-attach-parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a> structure. The <b>SriovCapabilities</b>  member of this structure contains a pointer to an <b>NDIS_SRIOV_CAPABILITIES</b> structure.</p>
 
-<p>For more information on how to report the SR-IOV capabilities of a network adapter, see <a href="NULL">Determining SR-IOV Capabilities</a>.</p>
+<p>For more information on how to report the SR-IOV capabilities of a network adapter, see <a href="netvista.determining_sr-iov_capabilities">Determining SR-IOV Capabilities</a>.</p>
 
 ## -requirements
 <table>
@@ -176,4 +176,4 @@ typedef struct _NDIS_SRIOV_CAPABILITIES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SRIOV_CAPABILITIES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SRIOV_CAPABILITIES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

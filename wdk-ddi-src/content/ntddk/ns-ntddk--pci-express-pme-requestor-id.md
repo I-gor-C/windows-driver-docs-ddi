@@ -59,25 +59,25 @@ typedef union _PCI_EXPRESS_PME_REQUESTOR_ID {
 ## -struct-fields
 <dl>
 
-### -field <b>FunctionNumber</b>
+### -field FunctionNumber
 
 <dd>
 <p>The function number of the requester.</p>
 </dd>
 
-### -field <b>DeviceNumber</b>
+### -field DeviceNumber
 
 <dd>
 <p>The device number of the requester.</p>
 </dd>
 
-### -field <b>BusNumber</b>
+### -field BusNumber
 
 <dd>
 <p>The bus number of the requester.</p>
 </dd>
 
-### -field <b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>A USHORT representation of the contents of the PCI_EXPRESS_PME_REQUESTOR_ID structure.</p>

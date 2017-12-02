@@ -57,19 +57,19 @@ VOID RtlFillMemory(
 ## -parameters
 <dl>
 
-### -param <i>Destination</i> [out]
+### -param Destination [out]
 
 <dd>
 <p>A pointer to the block of memory to be filled.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The number of bytes in the block of memory to be filled.</p>
 </dd>
 
-### -param <i>Fill</i> [in]
+### -param Fill [in]
 
 <dd>
 <p>The value to fill the destination memory block with. This value is copied to every byte in the memory block that is defined by <i>Destination</i> and <i>Length</i>.</p>

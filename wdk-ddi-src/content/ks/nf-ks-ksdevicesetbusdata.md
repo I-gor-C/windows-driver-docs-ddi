@@ -58,31 +58,31 @@ ULONG KsDeviceSetBusData(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> structure. This routine attempts to write data to the bus on which this device resides.</p>
 </dd>
 
-### -param <i>DataType</i> [in]
+### -param DataType [in]
 
 <dd>
 <p>This parameter indicates the type of bus data to be written. Zero corresponds to configuration space. For further information, see the discussion of <b>WhichSpace</b> in the reference page for <a href="https://msdn.microsoft.com/library/windows/hardware/ff551727">IRP_MN_READ_CONFIG</a>.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to a buffer that contains the data to write to the bus. Number of bytes in the buffer must be equal or greater than <i>Length</i>.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>This parameter contains the byte offset into the space specified by <i>DataType</i> where data is written.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>This parameter specifies the number of bytes of data to write to the bus from <i>Buffer.</i></p>

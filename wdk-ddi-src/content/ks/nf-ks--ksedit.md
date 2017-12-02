@@ -58,31 +58,31 @@ NTSTATUS _KsEdit(
 ## -parameters
 <dl>
 
-### -param <i>ObjectBag</i> [in]
+### -param ObjectBag [in]
 
 <dd>
 <p>The KSOBJECT_BAG (equivalent to type PVOID) to use in the check. If the item is not contained within the object bag, <b>_KsEdit</b> dynamically allocates sufficient memory for the item, copies the old contents, and places the newly allocated memory in this object bag.</p>
 </dd>
 
-### -param <i>PointerToPointerToItem</i> [in, out]
+### -param PointerToPointerToItem [in, out]
 
 <dd>
 <p>A pointer to a pointer to the item being edited.</p>
 </dd>
 
-### -param <i>NewSize</i> [in]
+### -param NewSize [in]
 
 <dd>
 <p>The number of bytes to allocate for the item.</p>
 </dd>
 
-### -param <i>OldSize</i> [in]
+### -param OldSize [in]
 
 <dd>
 <p>The number of bytes the item currently takes up.</p>
 </dd>
 
-### -param <i>Tag</i> [in]
+### -param Tag [in]
 
 <dd>
 <p>Contains the pool tag to use for the allocations. Drivers normally specify the pool tag as a string of up to four characters, delimited by single quotation marks. The string is usually specified in reversed order. The ASCII value of each character in the tag must be between 0 and 127.</p>
@@ -101,7 +101,7 @@ NTSTATUS _KsEdit(
 
 <p><b>KsEditSized</b> calls <b>_KsEdit</b> with the same parameters it receives, except that <i>Object</i> is replaced by <i>Object-&gt;Bag</i> and the pointer is typecast to PVOID.</p>
 
-<p>Note that when calling <b>_KsEdit</b>, a caller must hold the mutex associated with the bag. For more information, see <a href="NULL">Object Bags</a> and <a href="NULL">Mutexes in AVStream</a>. </p>
+<p>Note that when calling <b>_KsEdit</b>, a caller must hold the mutex associated with the bag. For more information, see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a> and <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>. </p>
 
 ## -requirements
 <table>

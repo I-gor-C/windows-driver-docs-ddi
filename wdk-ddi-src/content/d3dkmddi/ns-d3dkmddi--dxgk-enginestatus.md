@@ -60,19 +60,19 @@ typedef struct _DXGK_ENGINESTATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>Responsive</b>
+### -field Responsive
 
 <dd>
 <p>The display miniport driver must set this member to a value of 1 if the node and physical adapter are making progress in operations, or to 0 if the node and physical adapter are not responding to queries to report progress.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A 32-bit value that specifies the progress of the physical adapter.</p>

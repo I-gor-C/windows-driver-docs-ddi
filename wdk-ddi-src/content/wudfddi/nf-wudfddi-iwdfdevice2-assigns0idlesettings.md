@@ -7,7 +7,7 @@ old-location: wdf\iwdfdevice2_assigns0idlesettings.htm
 old-project: wdf
 ms.assetid: ffe91b9a-3b74-4dd9-b23d-096f1992485e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFDevice2, AssignS0IdleSettings, IWDFDevice2::AssignS0IdleSettings
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ HRESULT AssignS0IdleSettings(
 ## -parameters
 <dl>
 
-### -param <i>IdleCaps</i> [in]
+### -param IdleCaps [in]
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-power-policy-s0-idle-capabilities.md">WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</a>-typed enumerator that identifies the device's ability to wake itself after it is set to a low-power state, while the system remains in its working (S0) state.</p>
 </dd>
 
-### -param <i>DxState</i> [in]
+### -param DxState [in]
 
 <dd>
 <p>A <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a>-typed enumerator that identifies the low <a href="https://msdn.microsoft.com/2229f34c-9b88-4e3e-802e-f7be2c7ef168">device power state</a> that the device will enter after the idle timeout period ends. DEVICE_POWER_STATE values are defined in wdm.h.</p>
 </dd>
 
-### -param <i>IdleTimeout</i> [in]
+### -param IdleTimeout [in]
 
 <dd>
 <p>The amount of time, in milliseconds, that the device will remain idle before the framework places it in the <i>DxState</i>-supplied low-power state. To use the framework's default idle timeout value, specify <b>IdleTimeoutDefaultValue</b> For more information, see the Remarks section.</p>
 </dd>
 
-### -param <i>UserControlOfIdleSettings</i> [in]
+### -param UserControlOfIdleSettings [in]
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-power-policy-s0-idle-user-control.md">WDF_POWER_POLICY_S0_IDLE_USER_CONTROL</a>-typed enumerator that indicates whether users have the ability to modify the device's idle settings.</p>
 </dd>
 
-### -param <i>Enabled</i> [in]
+### -param Enabled [in]
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed enumerator that indicates whether the device will be powered down if it remains idle and while the system power is at S0. This member can have one of the following values:</p>
@@ -222,4 +222,4 @@ HRESULT AssignS0IdleSettings(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice2::AssignS0IdleSettings method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice2::AssignS0IdleSettings method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

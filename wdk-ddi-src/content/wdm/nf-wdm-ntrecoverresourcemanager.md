@@ -55,7 +55,7 @@ NTSTATUS ZwRecoverResourceManager(
 ## -parameters
 <dl>
 
-### -param <i>ResourceManagerHandle</i> [in]
+### -param ResourceManagerHandle [in]
 
 <dd>
 <p>A handle to a resource manager object that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a> or <a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a>. The handle must have RESOURCEMANAGER_RECOVER access to the object.</p>

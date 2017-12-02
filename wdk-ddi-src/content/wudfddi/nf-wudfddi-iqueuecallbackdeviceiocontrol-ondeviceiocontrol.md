@@ -7,7 +7,7 @@ old-location: wdf\iqueuecallbackdeviceiocontrol_ondeviceiocontrol.htm
 old-project: wdf
 ms.assetid: ed0eac1a-8e41-44c3-a538-9ec48492425f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IQueueCallbackDeviceIoControl, OnDeviceIoControl, IQueueCallbackDeviceIoControl::OnDeviceIoControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ void  OnDeviceIoControl(
 ## -parameters
 <dl>
 
-### -param <i>pWdfQueue</i> [in]
+### -param pWdfQueue [in]
 
 <dd>
 <p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a> interface for the I/O queue object that the request arrives from. </p>
 </dd>
 
-### -param <i>pWdfRequest</i> [in]
+### -param pWdfRequest [in]
 
 <dd>
 <p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a> interface that represents the framework request object. </p>
 </dd>
 
-### -param <i>ControlCode</i> [in]
+### -param ControlCode [in]
 
 <dd>
 <p>The driver-defined or system-defined I/O control code (IOCTL) that identifies the specific operation to be performed and that is associated with the request.</p>
 </dd>
 
-### -param <i>InBufferSize</i> [in]
+### -param InBufferSize [in]
 
 <dd>
 <p>The size, in bytes, of the input buffer for the request.</p>
 </dd>
 
-### -param <i>OutBufferSize</i> [in]
+### -param OutBufferSize [in]
 
 <dd>
 <p>The size, in bytes, of the output buffer for the request.</p>
@@ -139,4 +139,4 @@ void  OnDeviceIoControl(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IQueueCallbackDeviceIoControl::OnDeviceIoControl method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IQueueCallbackDeviceIoControl::OnDeviceIoControl method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

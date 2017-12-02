@@ -55,7 +55,7 @@ KAFFINITY KeSetSystemAffinityThreadEx(
 ## -parameters
 <dl>
 
-### -param <i>Affinity</i> [in]
+### -param Affinity [in]
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>-typed variable that specifies the new system affinity of the current thread.</p>

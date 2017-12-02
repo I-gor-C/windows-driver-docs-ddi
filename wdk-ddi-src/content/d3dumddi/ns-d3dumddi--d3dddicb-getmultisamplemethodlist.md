@@ -59,37 +59,37 @@ typedef struct _D3DDDICB_GETMULTISAMPLEMETHODLIST {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the allocation is on. </p>
 </dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>[in] The width of the allocation, in pixels.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[in] The height of the allocation, in pixels.</p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation.</p>
 </dd>
 
-### -field <b>pMethodList</b>
+### -field pMethodList
 
 <dd>
 <p>[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-multisamplingmethod.md">D3DDDI_MULTISAMPLINGMETHOD</a> structures that describe the list of multiple-sampling methods that are used for the allocation or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>MethodCount</b>
+### -field MethodCount
 
 <dd>
 <p>[in/out] On input, the number of elements that the buffer at <b>pMethodList</b> can hold. On output, this member specifies the required number of elements that the buffer at <b>pMethodList</b> should hold. </p>

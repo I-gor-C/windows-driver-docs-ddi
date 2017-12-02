@@ -56,13 +56,13 @@ NTSTATUS KsDispatchSpecificMethod(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP with the method request being dispatched.</p>
 </dd>
 
-### -param <i>Handler</i> [in]
+### -param Handler [in]
 
 <dd>
 <p>Specifies the pointer to the specific method handler.</p>

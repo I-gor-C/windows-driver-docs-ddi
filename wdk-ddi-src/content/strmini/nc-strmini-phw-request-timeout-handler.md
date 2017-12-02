@@ -58,7 +58,7 @@ VOID StrMiniRequestTimeout(
 ## -parameters
 <dl>
 
-### -param <i>pSrb</i> [in]
+### -param pSrb [in]
 
 <dd>
 <p>Pointer to the stream request that has timed out.</p>

@@ -58,31 +58,31 @@ typedef struct _ScsiInquiry_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The status of the <b>ScsiInquiry</b> operation. This member will contain 0 if the INQUIRY operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the INQUIRY operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.</p>
 </dd>
 
-### -field <b>ResponseBufferSize</b>
+### -field ResponseBufferSize
 
 <dd>
 <p>The response buffer size, in bytes<i>.</i></p>
 </dd>
 
-### -field <b>ScsiStatus</b>
+### -field ScsiStatus
 
 <dd>
 <p>The status of the SCSI INQUIRY command.</p>
 </dd>
 
-### -field <b>SenseBuffer</b>
+### -field SenseBuffer
 
 <dd>
 <p>A buffer that holds the SCSI sense data that the SCSI INQUIRY command received.</p>
 </dd>
 
-### -field <b>ResponseBuffer</b>
+### -field ResponseBuffer
 
 <dd>
 <p>A buffer that holds the response data that the SCSI INQUIRY command received. </p>
@@ -115,7 +115,7 @@ typedef struct _ScsiInquiry_OUT {
 <a href="storage.scsiinquiry">ScsiInquiry</a>
 </dt>
 <dt>
-<a href="..\hbapiwmi\ns-hbapiwmi--scsiinquiry-in.md">ScsiInquiry_IN</a>
+<a href="..\iscsiop\ns-iscsiop--scsiinquiry-in.md">ScsiInquiry_IN</a>
 </dt>
 </dl>
 <p> </p>

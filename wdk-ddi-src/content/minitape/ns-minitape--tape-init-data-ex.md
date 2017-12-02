@@ -77,7 +77,7 @@ typedef struct _TAPE_INIT_DATA_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>InitDataSize</b>
+### -field InitDataSize
 
 <dd>
 <dl>
@@ -88,139 +88,139 @@ typedef struct _TAPE_INIT_DATA_EX {
 </dl>
 </dd>
 
-### -field <b>VerifyInquiry</b>
+### -field VerifyInquiry
 
 <dd>
 <p>Specifies the entry point of the tape miniclass driver's <a href="storage.tapeminiverifyinquiry">TapeMiniVerifyInquiry</a> routine, which determines whether the driver supports a given device. This routine is required.</p>
 </dd>
 
-### -field <b>QueryModeCapabilitiesPage</b>
+### -field QueryModeCapabilitiesPage
 
 <dd>
 <p>Directs the tape class driver when <b>TRUE</b> to pass a mode capabilities page to the tape miniclass driver's <a href="storage.tapeminiverifyinquiry">TapeMiniVerifyInquiry</a> and <a href="storage.tapeminiextensioninit">TapeMiniExtensionInit</a> routines.</p>
 </dd>
 
-### -field <b>MinitapeExtensionSize</b>
+### -field MinitapeExtensionSize
 
 <dd>
 <p>Specifies the size, in bytes, of a driver-specific context area. If this member is nonzero, <b>ExtensionInit </b>must not be <b>NULL</b>. This value is optional and must be set to zero if not used. </p>
 </dd>
 
-### -field <b>ExtensionInit</b>
+### -field ExtensionInit
 
 <dd>
 <p>Pointer to the tape miniclass driver's <a href="storage.tapeminiextensioninit">TapeMiniExtensionInit</a> routine, which initializes an optional minitape extension, if any. If <b>MiniTapeExtensionSize</b> is zero, <b>ExtensionInit</b> must be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>DefaultTimeOutValue</b>
+### -field DefaultTimeOutValue
 
 <dd>
 <p>Specifies the number of seconds that the tape class driver waits for an SRB request before canceling it. If this value is zero, the tape class driver sets an appropriate default value. The tape class driver always uses the default time-out value for read and write requests. The routines contained in the TAPE_INIT_DATA_EX structure can override the default time-out value for device control requests by setting <b>TimeOutValue</b> in an SRB.</p>
 </dd>
 
-### -field <b>TapeError</b>
+### -field TapeError
 
 <dd>
 <p>Pointer to the tape miniclass driver's <a href="storage.tapeminitapeerror">TapeMiniTapeError</a> routine, which augments the error-handling activities of the tape class driver. This routine is optional. If one is not used, <b>TapeError</b> must be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>CommandExtensionSize</b>
+### -field CommandExtensionSize
 
 <dd>
 <p>Specifies the size, in bytes, of a command extension to be allocated before the start of each tape command. A tape miniclass driver uses the command extension to store context during the processing of tape commands. Its size and internal structure are defined by the tape miniclass driver. A command extension is optional. If one is not used, <b>CommandExtensionSize</b> must be set to zero.</p>
 </dd>
 
-### -field <b>CreatePartition</b>
+### -field CreatePartition
 
 <dd>
 <p>Pointer to the tape miniclass driver's <a href="storage.tapeminicreatepartition">TapeMiniCreatePartition</a> routine, which creates a partition on a tape. This routine is required.</p>
 </dd>
 
-### -field <b>Erase</b>
+### -field Erase
 
 <dd>
 <p>Pointer to the tape miniclass driver's <a href="storage.tapeminierase">TapeMiniErase</a> routine, which erases a tape. This routine is required.</p>
 </dd>
 
-### -field <b>GetDriveParameters</b>
+### -field GetDriveParameters
 
 <dd>
 <p>Pointer to the tape miniclass driver's <a href="storage.tapeminigetdriveparameters">TapeMiniGetDriveParameters</a> routine, which handles requests to get drive parameters. This routine is required.</p>
 </dd>
 
-### -field <b>GetMediaParameters</b>
+### -field GetMediaParameters
 
 <dd>
 <p>Pointer to the tape miniclass driver's <a href="storage.tapeminigetmediaparameters">TapeMiniGetMediaParameters</a> routine, which handles requests to get media parameters. This routine is required.</p>
 </dd>
 
-### -field <b>GetPosition</b>
+### -field GetPosition
 
 <dd>
 <p>Pointer to the tape miniclass driver's <a href="storage.tapeminigetposition">TapeMiniGetPosition</a> routine, which handles requests to get the position of a tape. This routine is required.</p>
 </dd>
 
-### -field <b>GetStatus</b>
+### -field GetStatus
 
 <dd>
 <p>Pointer to the tape miniclass driver's <a href="storage.tapeminigetstatus">TapeMiniGetStatus</a> routine, which handles requests for status. This routine is required.</p>
 </dd>
 
-### -field <b>Prepare</b>
+### -field Prepare
 
 <dd>
 <p>Pointer to the tape miniclass driver's <a href="storage.tapeminiprepare">TapeMiniPrepare</a> routine, which prepares a tape device. This routine is required.</p>
 </dd>
 
-### -field <b>SetDriveParameters</b>
+### -field SetDriveParameters
 
 <dd>
 <p>Pointer to the tape miniclass driver's <a href="storage.tapeminisetdriveparameters">TapeMiniSetDriveParameters</a> routine, which sets drive parameters. This routine is required.</p>
 </dd>
 
-### -field <b>SetMediaParameters</b>
+### -field SetMediaParameters
 
 <dd>
 <p>Pointer to the tape miniclass driver's <a href="storage.tapeminisetmediaparameters">TapeMiniSetMediaParameters</a> routine, which sets media parameters. This routine is required.</p>
 </dd>
 
-### -field <b>SetPosition</b>
+### -field SetPosition
 
 <dd>
 <p>Pointer to the tape miniclass driver's <a href="storage.tapeminisetposition">TapeMiniSetPosition</a> routine, which positions a tape. This routine is required.</p>
 </dd>
 
-### -field <b>WriteMarks</b>
+### -field WriteMarks
 
 <dd>
 <p>Pointer to the tape miniclass driver's <a href="storage.tapeminiwritemarks">TapeMiniWriteMarks</a> routine, which writes marks to tape. This routine is required.</p>
 </dd>
 
-### -field <b>PreProcessReadWrite</b>
+### -field PreProcessReadWrite
 
 <dd>
 <p>Pointer to the tape miniclass driver's <a href="storage.tapeminipreprocessreadwrite">TapeMiniPreProcessReadWrite</a> routine, which executes device-specific operations before all reads and writes. This routine is optional and is not needed by most drivers. If one is not used, <b>PreProcessReadWrite</b> must be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>TapeGetMediaTypes</b>
+### -field TapeGetMediaTypes
 
 <dd>
 <p>Pointer to the tape miniclass driver's <a href="storage.tapeminigetmediatypes">TapeMiniGetMediaTypes</a> routine, which gets a description of each media type supported by a tape device. This routine is required.</p>
 </dd>
 
-### -field <b>MediaTypesSupported</b>
+### -field MediaTypesSupported
 
 <dd>
 <p>Indicates the number of media types supported by the device.</p>
 </dd>
 
-### -field <b>TapeWMIOperations</b>
+### -field TapeWMIOperations
 
 <dd>
 <p>Pointer to the <a href="storage.tapeminiwmicontrol">TapeMiniWMIControl</a> routine. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. </p>

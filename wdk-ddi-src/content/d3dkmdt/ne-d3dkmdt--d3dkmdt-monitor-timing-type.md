@@ -60,43 +60,43 @@ typedef enum _D3DKMDT_MONITOR_TIMING_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_MTT_UNINITIALIZED"></a><a id="d3dkmdt_mtt_uninitialized"></a><b>D3DKMDT_MTT_UNINITIALIZED</b>
+### -field D3DKMDT_MTT_UNINITIALIZED
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MTT_ESTABLISHED"></a><a id="d3dkmdt_mtt_established"></a><b>D3DKMDT_MTT_ESTABLISHED</b>
+### -field D3DKMDT_MTT_ESTABLISHED
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MTT_STANDARD"></a><a id="d3dkmdt_mtt_standard"></a><b>D3DKMDT_MTT_STANDARD</b>
+### -field D3DKMDT_MTT_STANDARD
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MTT_EXTRASTANDARD"></a><a id="d3dkmdt_mtt_extrastandard"></a><b>D3DKMDT_MTT_EXTRASTANDARD</b>
+### -field D3DKMDT_MTT_EXTRASTANDARD
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MTT_DETAILED"></a><a id="d3dkmdt_mtt_detailed"></a><b>D3DKMDT_MTT_DETAILED</b>
+### -field D3DKMDT_MTT_DETAILED
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MTT_DEFAULTMONITORPROFILE"></a><a id="d3dkmdt_mtt_defaultmonitorprofile"></a><b>D3DKMDT_MTT_DEFAULTMONITORPROFILE</b>
+### -field D3DKMDT_MTT_DEFAULTMONITORPROFILE
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MTT_DRIVER"></a><a id="d3dkmdt_mtt_driver"></a><b>D3DKMDT_MTT_DRIVER</b>
+### -field D3DKMDT_MTT_DRIVER
 
 <dd>
 <p>Reserved for system use.</p>

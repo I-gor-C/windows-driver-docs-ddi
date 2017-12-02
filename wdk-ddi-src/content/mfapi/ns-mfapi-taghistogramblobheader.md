@@ -55,13 +55,13 @@ typedef struct tagHistogramBlobHeader {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of the entire histogram blob in bytes.</p>
 </dd>
 
-### -field <b>Histograms</b>
+### -field Histograms
 
 <dd>
 <p>Number of histograms in the blob. Each histogram is identified by a <a href="stream.histogramheader">HistogramHeader</a>.</p>

@@ -60,19 +60,19 @@ typedef struct _DXGK_SETVIDPNSOURCEADDRESS_OUTPUT_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>PrePresentNeeded</b>
+### -field PrePresentNeeded
 
 <dd>
 <p>Indicates that the driver must be called again at the PASSIVE_LEVEL to perform the requested operation.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd></dd>
 </dl>

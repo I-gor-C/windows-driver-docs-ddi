@@ -65,51 +65,51 @@ typedef struct _D3DDDI_PATCHLOCATIONLIST {
 ## -struct-fields
 <dl>
 
-### -field <b>AllocationIndex</b>
+### -field AllocationIndex
 
 <dd>
 <p>[in] An index of the element in the allocation list that specifies the allocation that is referenced by the patch location.</p>
 </dd>
 
-### -field <b>SlotId</b>
+### -field SlotId
 
 <dd>
 <p>[in/out] A UINT that identifies the slot where the allocation will reside. Resources with identical slot identifiers can replace each other.</p>
 <p>Setting this member is equivalent to setting bits in the first 24 bits of the 32-bit <b>Value</b> member (0x00FFFFFF). </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero. </p>
 <p>Setting this member to zero is equivalent to setting the remaining 8 bits (0xFF000000) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] A 32-bit value that identifies the location of an allocation to patch.</p>
 </dd>
 
-### -field <b>DriverId</b>
+### -field DriverId
 
 <dd>
 <p>[in/out] The driver-defined identifier of the allocation specification. </p>
 </dd>
 
-### -field <b>AllocationOffset</b>
+### -field AllocationOffset
 
 <dd>
 <p>[in/out] The starting offset, in bytes, within the allocation that is referenced. </p>
 </dd>
 
-### -field <b>PatchOffset</b>
+### -field PatchOffset
 
 <dd>
 <p>[in/out] The offset, in bytes, into the DMA buffer that must be patched.</p>
 </dd>
 
-### -field <b>SplitOffset</b>
+### -field SplitOffset
 
 <dd>
 <p>[in/out] The offset, in bytes, where the DMA buffer must be split if the allocation cannot be brought into video memory.</p>

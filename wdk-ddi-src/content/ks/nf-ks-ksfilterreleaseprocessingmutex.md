@@ -54,7 +54,7 @@ void KsFilterReleaseProcessingMutex(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure representing the AVStream filter for which to release the processing mutex.</p>
@@ -65,7 +65,7 @@ void KsFilterReleaseProcessingMutex(
 <p>None</p>
 
 ## -remarks
-<p>For more AVStream-specific information about mutexes, see <a href="NULL">Mutexes in AVStream</a> and <a href="NULL">Processing Mutex in AVStream</a>.</p>
+<p>For more AVStream-specific information about mutexes, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a> and <a href="https://msdn.microsoft.com/dd84fe3f-352e-4641-99d7-792ccecb0b40">Processing Mutex in AVStream</a>.</p>
 
 ## -requirements
 <table>

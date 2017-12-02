@@ -7,7 +7,7 @@ old-location: netvista\rilmessageparammask.htm
 old-project: netvista
 ms.assetid: 718c9d10-fd89-4d31-815e-da4dea0a3f34
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -114,247 +114,247 @@ typedef enum _RILMESSAGEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_M_TYPE"></a><a id="ril_param_m_type"></a><b>RIL_PARAM_M_TYPE</b>
+### -field RIL_PARAM_M_TYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_FLAGS"></a><a id="ril_param_m_flags"></a><b>RIL_PARAM_M_FLAGS</b>
+### -field RIL_PARAM_M_FLAGS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_ORIGADDRESS"></a><a id="ril_param_m_origaddress"></a><b>RIL_PARAM_M_ORIGADDRESS</b>
+### -field RIL_PARAM_M_ORIGADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_TGTRECIPADDRESS"></a><a id="ril_param_m_tgtrecipaddress"></a><b>RIL_PARAM_M_TGTRECIPADDRESS</b>
+### -field RIL_PARAM_M_TGTRECIPADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_DESTADDRESS"></a><a id="ril_param_m_destaddress"></a><b>RIL_PARAM_M_DESTADDRESS</b>
+### -field RIL_PARAM_M_DESTADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_SCRECEIVETIME"></a><a id="ril_param_m_screceivetime"></a><b>RIL_PARAM_M_SCRECEIVETIME</b>
+### -field RIL_PARAM_M_SCRECEIVETIME
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_TGTSCRECEIVETIME"></a><a id="ril_param_m_tgtscreceivetime"></a><b>RIL_PARAM_M_TGTSCRECEIVETIME</b>
+### -field RIL_PARAM_M_TGTSCRECEIVETIME
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_TGTDISCHARGETIME"></a><a id="ril_param_m_tgtdischargetime"></a><b>RIL_PARAM_M_TGTDISCHARGETIME</b>
+### -field RIL_PARAM_M_TGTDISCHARGETIME
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_PROTOCOLID"></a><a id="ril_param_m_protocolid"></a><b>RIL_PARAM_M_PROTOCOLID</b>
+### -field RIL_PARAM_M_PROTOCOLID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_DATACODING"></a><a id="ril_param_m_datacoding"></a><b>RIL_PARAM_M_DATACODING</b>
+### -field RIL_PARAM_M_DATACODING
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_TGTDLVSTATUS"></a><a id="ril_param_m_tgtdlvstatus"></a><b>RIL_PARAM_M_TGTDLVSTATUS</b>
+### -field RIL_PARAM_M_TGTDLVSTATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_VPFORMAT"></a><a id="ril_param_m_vpformat"></a><b>RIL_PARAM_M_VPFORMAT</b>
+### -field RIL_PARAM_M_VPFORMAT
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_VP"></a><a id="ril_param_m_vp"></a><b>RIL_PARAM_M_VP</b>
+### -field RIL_PARAM_M_VP
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_GEOSCOPE"></a><a id="ril_param_m_geoscope"></a><b>RIL_PARAM_M_GEOSCOPE</b>
+### -field RIL_PARAM_M_GEOSCOPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_MSGCODE"></a><a id="ril_param_m_msgcode"></a><b>RIL_PARAM_M_MSGCODE</b>
+### -field RIL_PARAM_M_MSGCODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_UPDATENUMBER"></a><a id="ril_param_m_updatenumber"></a><b>RIL_PARAM_M_UPDATENUMBER</b>
+### -field RIL_PARAM_M_UPDATENUMBER
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_ID"></a><a id="ril_param_m_id"></a><b>RIL_PARAM_M_ID</b>
+### -field RIL_PARAM_M_ID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_TOTALPAGES"></a><a id="ril_param_m_totalpages"></a><b>RIL_PARAM_M_TOTALPAGES</b>
+### -field RIL_PARAM_M_TOTALPAGES
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_PAGENUMBER"></a><a id="ril_param_m_pagenumber"></a><b>RIL_PARAM_M_PAGENUMBER</b>
+### -field RIL_PARAM_M_PAGENUMBER
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_HDRLENGTH"></a><a id="ril_param_m_hdrlength"></a><b>RIL_PARAM_M_HDRLENGTH</b>
+### -field RIL_PARAM_M_HDRLENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_SERIALNUMBER"></a><a id="ril_param_m_serialnumber"></a><b>RIL_PARAM_M_SERIALNUMBER</b>
+### -field RIL_PARAM_M_SERIALNUMBER
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_MSGLENGTH"></a><a id="ril_param_m_msglength"></a><b>RIL_PARAM_M_MSGLENGTH</b>
+### -field RIL_PARAM_M_MSGLENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_HDR"></a><a id="ril_param_m_hdr"></a><b>RIL_PARAM_M_HDR</b>
+### -field RIL_PARAM_M_HDR
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_MSG"></a><a id="ril_param_m_msg"></a><b>RIL_PARAM_M_MSG</b>
+### -field RIL_PARAM_M_MSG
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_WARNINGTYPE"></a><a id="ril_param_m_warningtype"></a><b>RIL_PARAM_M_WARNINGTYPE</b>
+### -field RIL_PARAM_M_WARNINGTYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_EUSERALERT"></a><a id="ril_param_m_euseralert"></a><b>RIL_PARAM_M_EUSERALERT</b>
+### -field RIL_PARAM_M_EUSERALERT
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_POPUP"></a><a id="ril_param_m_popup"></a><b>RIL_PARAM_M_POPUP</b>
+### -field RIL_PARAM_M_POPUP
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_MSGID"></a><a id="ril_param_m_msgid"></a><b>RIL_PARAM_M_MSGID</b>
+### -field RIL_PARAM_M_MSGID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_ORIGSUBADDRESS"></a><a id="ril_param_m_origsubaddress"></a><b>RIL_PARAM_M_ORIGSUBADDRESS</b>
+### -field RIL_PARAM_M_ORIGSUBADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_DESTSUBADDRESS"></a><a id="ril_param_m_destsubaddress"></a><b>RIL_PARAM_M_DESTSUBADDRESS</b>
+### -field RIL_PARAM_M_DESTSUBADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_DIGIT"></a><a id="ril_param_m_digit"></a><b>RIL_PARAM_M_DIGIT</b>
+### -field RIL_PARAM_M_DIGIT
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_PRIVACY"></a><a id="ril_param_m_privacy"></a><b>RIL_PARAM_M_PRIVACY</b>
+### -field RIL_PARAM_M_PRIVACY
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_PRIORITY"></a><a id="ril_param_m_priority"></a><b>RIL_PARAM_M_PRIORITY</b>
+### -field RIL_PARAM_M_PRIORITY
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_TELESERVICE"></a><a id="ril_param_m_teleservice"></a><b>RIL_PARAM_M_TELESERVICE</b>
+### -field RIL_PARAM_M_TELESERVICE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_LANG"></a><a id="ril_param_m_lang"></a><b>RIL_PARAM_M_LANG</b>
+### -field RIL_PARAM_M_LANG
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_VALIDITYPERIODABS"></a><a id="ril_param_m_validityperiodabs"></a><b>RIL_PARAM_M_VALIDITYPERIODABS</b>
+### -field RIL_PARAM_M_VALIDITYPERIODABS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_VALIDITYPERIODREL"></a><a id="ril_param_m_validityperiodrel"></a><b>RIL_PARAM_M_VALIDITYPERIODREL</b>
+### -field RIL_PARAM_M_VALIDITYPERIODREL
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_DEFERREDDELTIMEABS"></a><a id="ril_param_m_deferreddeltimeabs"></a><b>RIL_PARAM_M_DEFERREDDELTIMEABS</b>
+### -field RIL_PARAM_M_DEFERREDDELTIMEABS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_DEFERREDDELTIMEREL"></a><a id="ril_param_m_deferreddeltimerel"></a><b>RIL_PARAM_M_DEFERREDDELTIMEREL</b>
+### -field RIL_PARAM_M_DEFERREDDELTIMEREL
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_ENCODING"></a><a id="ril_param_m_encoding"></a><b>RIL_PARAM_M_ENCODING</b>
+### -field RIL_PARAM_M_ENCODING
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_USERRESPONSECODE"></a><a id="ril_param_m_userresponsecode"></a><b>RIL_PARAM_M_USERRESPONSECODE</b>
+### -field RIL_PARAM_M_USERRESPONSECODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_DISPLAYMODE"></a><a id="ril_param_m_displaymode"></a><b>RIL_PARAM_M_DISPLAYMODE</b>
+### -field RIL_PARAM_M_DISPLAYMODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_CALLBACKNUM"></a><a id="ril_param_m_callbacknum"></a><b>RIL_PARAM_M_CALLBACKNUM</b>
+### -field RIL_PARAM_M_CALLBACKNUM
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_NUMMSGS"></a><a id="ril_param_m_nummsgs"></a><b>RIL_PARAM_M_NUMMSGS</b>
+### -field RIL_PARAM_M_NUMMSGS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_CAUSECODE"></a><a id="ril_param_m_causecode"></a><b>RIL_PARAM_M_CAUSECODE</b>
+### -field RIL_PARAM_M_CAUSECODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_REPLYSEQNUMBER"></a><a id="ril_param_m_replyseqnumber"></a><b>RIL_PARAM_M_REPLYSEQNUMBER</b>
+### -field RIL_PARAM_M_REPLYSEQNUMBER
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_SERVICEID"></a><a id="ril_param_m_serviceid"></a><b>RIL_PARAM_M_SERVICEID</b>
+### -field RIL_PARAM_M_SERVICEID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_USERACK"></a><a id="ril_param_m_userack"></a><b>RIL_PARAM_M_USERACK</b>
+### -field RIL_PARAM_M_USERACK
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_DELIVERYACK"></a><a id="ril_param_m_deliveryack"></a><b>RIL_PARAM_M_DELIVERYACK</b>
+### -field RIL_PARAM_M_DELIVERYACK
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_ALERTONMSGDELIVERY"></a><a id="ril_param_m_alertonmsgdelivery"></a><b>RIL_PARAM_M_ALERTONMSGDELIVERY</b>
+### -field RIL_PARAM_M_ALERTONMSGDELIVERY
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_HDRLENGTHCDMA"></a><a id="ril_param_m_hdrlengthcdma"></a><b>RIL_PARAM_M_HDRLENGTHCDMA</b>
+### -field RIL_PARAM_M_HDRLENGTHCDMA
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_MSGSTATUSTYPE"></a><a id="ril_param_m_msgstatustype"></a><b>RIL_PARAM_M_MSGSTATUSTYPE</b>
+### -field RIL_PARAM_M_MSGSTATUSTYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_BEARERREPLYACK"></a><a id="ril_param_m_bearerreplyack"></a><b>RIL_PARAM_M_BEARERREPLYACK</b>
+### -field RIL_PARAM_M_BEARERREPLYACK
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_ALL_IN_DELIVER"></a><a id="ril_param_m_all_in_deliver"></a><b>RIL_PARAM_M_ALL_IN_DELIVER</b>
+### -field RIL_PARAM_M_ALL_IN_DELIVER
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_ALL_IN_STATUS"></a><a id="ril_param_m_all_in_status"></a><b>RIL_PARAM_M_ALL_IN_STATUS</b>
+### -field RIL_PARAM_M_ALL_IN_STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_ALL_OUT_SUBMIT"></a><a id="ril_param_m_all_out_submit"></a><b>RIL_PARAM_M_ALL_OUT_SUBMIT</b>
+### -field RIL_PARAM_M_ALL_OUT_SUBMIT
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_ALL_BC_GENERAL"></a><a id="ril_param_m_all_bc_general"></a><b>RIL_PARAM_M_ALL_BC_GENERAL</b>
+### -field RIL_PARAM_M_ALL_BC_GENERAL
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_ALL_IN_IS637DELIVER"></a><a id="ril_param_m_all_in_is637deliver"></a><b>RIL_PARAM_M_ALL_IN_IS637DELIVER</b>
+### -field RIL_PARAM_M_ALL_IN_IS637DELIVER
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_ALL_OUT_IS637SUBMIT"></a><a id="ril_param_m_all_out_is637submit"></a><b>RIL_PARAM_M_ALL_OUT_IS637SUBMIT</b>
+### -field RIL_PARAM_M_ALL_OUT_IS637SUBMIT
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_ALL_IN_IS637STATUS"></a><a id="ril_param_m_all_in_is637status"></a><b>RIL_PARAM_M_ALL_IN_IS637STATUS</b>
+### -field RIL_PARAM_M_ALL_IN_IS637STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_M_ALL_OUT_IS637STATUS"></a><a id="ril_param_m_all_out_is637status"></a><b>RIL_PARAM_M_ALL_OUT_IS637STATUS</b>
+### -field RIL_PARAM_M_ALL_OUT_IS637STATUS
 
 <dd></dd>
 </dl>

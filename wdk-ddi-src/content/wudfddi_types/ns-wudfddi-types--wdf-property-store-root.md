@@ -7,7 +7,7 @@ old-location: wdf\wdf_property_store_root.htm
 old-project: wdf
 ms.assetid: 431ae991-35e0-4cf7-a3e0-57591abfe5c5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_PROPERTY_STORE_ROOT, WDF_PROPERTY_STORE_ROOT, *PWDF_PROPERTY_STORE_ROOT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,29 +69,29 @@ typedef struct _WDF_PROPERTY_STORE_ROOT {
 ## -struct-fields
 <dl>
 
-### -field <b>LengthCb</b>
+### -field LengthCb
 
 <dd>
 <p>The length, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>RootClass</b>
+### -field RootClass
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-property-store-root-class.md">WDF_PROPERTY_STORE_ROOT_CLASS</a>-typed value that identifies a property store.</p>
 </dd>
 
-### -field <b>Qualifier</b>
+### -field Qualifier
 
 <dd>
 <dl>
 
-### -field <b>HardwareKey</b>
+### -field HardwareKey
 
 <dd>
 <dl>
 
-### -field <b>ServiceName</b>
+### -field ServiceName
 
 <dd>
 <p>A pointer to a <b>NULL</b>-terminated character string that identifies a driver-specific subkey under a device's <a href="wdf.using_the_registry_in_umdf_drivers">hardware key</a> in the registry. For more information about this member, see the following Remarks section.</p>
@@ -99,18 +99,18 @@ typedef struct _WDF_PROPERTY_STORE_ROOT {
 </dl>
 </dd>
 
-### -field <b>DeviceInterfaceKey</b>
+### -field DeviceInterfaceKey
 
 <dd>
 <dl>
 
-### -field <b>InterfaceGUID</b>
+### -field InterfaceGUID
 
 <dd>
 <p>A pointer to a GUID that identifies a device interface. The driver must have previously called <a href="wdf.iwdfdevice_createdeviceinterface">IWDFDevice::CreateDeviceInterface</a> to register the device interface.</p>
 </dd>
 
-### -field <b>ReferenceString</b>
+### -field ReferenceString
 
 <dd>
 <p>A pointer to a <b>NULL</b>-terminated character string that identifies a reference string for a device interface. The driver must specify this member if it specified a reference string when it called <a href="wdf.iwdfdevice_createdeviceinterface">IWDFDevice::CreateDeviceInterface</a>. Otherwise, this member must be <b>NULL</b>.</p>
@@ -118,12 +118,12 @@ typedef struct _WDF_PROPERTY_STORE_ROOT {
 </dl>
 </dd>
 
-### -field <b>LegacyHardwareKey</b>
+### -field LegacyHardwareKey
 
 <dd>
 <dl>
 
-### -field <b>LegacyMapName</b>
+### -field LegacyMapName
 
 <dd>
 <p>A pointer to a <b>NULL</b>-terminated character string that identifies a subkey under the <b>HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP</b> key in the registry. This key is used by only a few older drivers.</p>
@@ -228,4 +228,4 @@ typedef struct _WDF_PROPERTY_STORE_ROOT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PROPERTY_STORE_ROOT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PROPERTY_STORE_ROOT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

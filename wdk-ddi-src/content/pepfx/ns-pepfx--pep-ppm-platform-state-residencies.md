@@ -55,13 +55,13 @@ typedef struct _PEP_PPM_PLATFORM_STATE_RESIDENCIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>[in] The number of elements in the array pointed to by the <b>States</b> member. The number of array elements equals the number of platform idle states that the PEP previously provided in response to a <a href="kernel.pep_notify_ppm_query_platform_states">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES</a> notification.</p>
 </dd>
 
-### -field <b>States</b>
+### -field States
 
 <dd>
 <p>[in] A pointer to an output buffer to which the PEP writes an array of <a href="..\pepfx\ns-pepfx--pep-ppm-platform-state-residency.md">PEP_PPM_PLATFORM_STATE_RESIDENCY</a> structures. Each structure contains the accumulated residency and transition count information for a particular platform idle state. This buffer is guaranteed to be large enough to contain the number of array elements specified by the <b>Count</b> member. Each idle state is identified by its array index. If the array contains N elements, idle state indexes range from 0 to N-1.</p>

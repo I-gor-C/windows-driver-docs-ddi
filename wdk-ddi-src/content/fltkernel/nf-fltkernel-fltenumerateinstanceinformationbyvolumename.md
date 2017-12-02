@@ -7,7 +7,7 @@ old-location: ifsk\fltenumerateinstanceinformationbyvolumename.htm
 old-project: ifsk
 ms.assetid: BBABE50B-98FF-440E-B5B0-11C8F901D8FE
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltEnumerateInstanceInformationByVolumeName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ NTSTATUS FltEnumerateInstanceInformationByVolumeName(
 ## -parameters
 <dl>
 
-### -param <i>VolumeName</i> [in]
+### -param VolumeName [in]
 
 <dd>
 <p>The name of the volume to enumerate filter instances for.</p>
 </dd>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>Zero-based index of the minifilter driver instance or legacy filter driver for which the information is requested.</p>
 </dd>
 
-### -param <i>InformationClass</i> [in]
+### -param InformationClass [in]
 
 <dd>
 <p>Type of information to be returned for the minifilter driver instance or legacy filter driver. This parameter can have one of the following values.</p>
@@ -116,19 +116,19 @@ NTSTATUS FltEnumerateInstanceInformationByVolumeName(
 <p> </p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that receives the requested information. The type of the information returned in the buffer is defined by the <i>InformationClass</i> parameter.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Size, in bytes, of the buffer that the <i>Buffer</i> parameter points to. The caller should set this parameter according to the given <i>InformationClass</i> value.</p>
 </dd>
 
-### -param <i>BytesReturned</i> [out]
+### -param BytesReturned [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the number of bytes returned in the buffer that <i>Buffer </i>points to. If the input value of <i>BufferSize</i> is too small, <b>FltEnumerateInstanceInformationByVolumeName</b> returns <b>STATUS_BUFFER_TOO_SMALL</b> and sets this variable to the number of bytes required to store the requested information. This parameter is required and cannot be <b>NULL</b>.</p>
@@ -233,4 +233,4 @@ NTSTATUS FltEnumerateInstanceInformationByVolumeName(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnumerateInstanceInformationByVolumeName routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnumerateInstanceInformationByVolumeName routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -60,25 +60,25 @@ VOID APIENTRY CsSetShaderResources(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p> The offset to the first view to set. </p>
 </dd>
 
-### -param <i>NumViews</i> [in]
+### -param NumViews [in]
 
 <dd>
 <p> The total number of views to set. </p>
 </dd>
 
-### -param <i>phShaderResourceViews</i> [in]
+### -param phShaderResourceViews [in]
 
 <dd>
 <p> An array of handles to the shader resource views, beginning at the offset that <i>Offset</i> specifies.</p>

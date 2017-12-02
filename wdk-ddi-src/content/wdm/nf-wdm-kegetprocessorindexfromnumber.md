@@ -55,7 +55,7 @@ ULONG KeGetProcessorIndexFromNumber(
 ## -parameters
 <dl>
 
-### -param <i>ProcNumber</i> [in]
+### -param ProcNumber [in]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\miniport\ns-miniport--processor-number.md">PROCESSOR_NUMBER</a> structure that contains a group number and a group-relative processor number.</p>
@@ -70,7 +70,7 @@ ULONG KeGetProcessorIndexFromNumber(
 
 <p>For example, if a multiprocessor system contains two groups, and each group contains 64 logical processors, the processor numbers in each group range from 0 to 63, but the systemwide processor indexes range from 0 to 127.</p>
 
-<p>To obtain the total number of active logical processors in the system, call the <a href="..\ntddk\nf-ntddk-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a> routine and set this routine's <i>GroupNumber</i> parameter to ALL_PROCESSOR_GROUPS.</p>
+<p>To obtain the total number of active logical processors in the system, call the <a href="..\wdm\nf-wdm-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a> routine and set this routine's <i>GroupNumber</i> parameter to ALL_PROCESSOR_GROUPS.</p>
 
 <p>The <a href="..\wdm\nf-wdm-kegetprocessornumberfromindex.md">KeGetProcessorNumberFromIndex</a> routine converts a systemwide processor index to a group number and a group-relative processor number.</p>
 
@@ -140,7 +140,7 @@ ULONG KeGetProcessorIndexFromNumber(
 <a href="..\wdm\nf-wdm-kegetprocessornumberfromindex.md">KeGetProcessorNumberFromIndex</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a>
+<a href="..\wdm\nf-wdm-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a>
 </dt>
 <dt>
 <a href="..\miniport\ns-miniport--processor-number.md">PROCESSOR_NUMBER</a>

@@ -56,19 +56,19 @@ typedef struct _MSFC_FibrePortHBAStatistics {
 ## -struct-fields
 <dl>
 
-### -field <b>UniquePortId</b>
+### -field UniquePortId
 
 <dd>
 <p>Contains a unique identifier for the port. </p>
 </dd>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. </p>
 </dd>
 
-### -field <b>Statistics</b>
+### -field Statistics
 
 <dd>
 <p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--msfc-hbaportstatistics.md">MSFC_HBAPortStatistics</a> with statistical information about the port. </p>

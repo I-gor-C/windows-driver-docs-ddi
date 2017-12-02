@@ -55,13 +55,13 @@ typedef struct _BDA_RATING_PINRESET {
 ## -struct-fields
 <dl>
 
-### -field <b>bPinLength</b>
+### -field bPinLength
 
 <dd>
 <p>Specifies the buffer size including a null termination.</p>
 </dd>
 
-### -field <b>argbNewPin</b>
+### -field argbNewPin
 
 <dd>
 <p>Specifies null-terminated UTF8. Use an empty string if the pin is disabled.</p>

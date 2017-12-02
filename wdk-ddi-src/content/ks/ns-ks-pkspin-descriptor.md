@@ -70,79 +70,79 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>InterfacesCount</b>
+### -field InterfacesCount
 
 <dd>
 <p>Specifies the size of the array pointed to by <b>Interfaces</b>.</p>
 </dd>
 
-### -field <b>Interfaces</b>
+### -field Interfaces
 
 <dd>
 <p>An array of <a href="stream.kspin_interface">KSPIN_INTERFACE</a> structures specifying the interfaces supported by this pin type.</p>
 </dd>
 
-### -field <b>MediumsCount</b>
+### -field MediumsCount
 
 <dd>
 <p>Specifies the number of elements in the array pointed to by <b>Mediums</b>.</p>
 </dd>
 
-### -field <b>Mediums</b>
+### -field Mediums
 
 <dd>
 <p>An array of <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structures specifying the mediums supported by this pin type.</p>
 </dd>
 
-### -field <b>DataRangesCount</b>
+### -field DataRangesCount
 
 <dd>
 <p>Specifies the size of the array pointed to by <b>DataRanges</b>.</p>
 </dd>
 
-### -field <b>DataRanges</b>
+### -field DataRanges
 
 <dd>
 <p>An array of <a href="stream.ksdatarange">KSDATARANGE</a> structures specifying the data ranges supported by this pin type.</p>
 </dd>
 
-### -field <b>DataFlow</b>
+### -field DataFlow
 
 <dd>
 <p>Specifies either <b>KSPIN_DATAFLOW_IN</b> or KSPIN_DATAFLOW_OUT. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff565197">KSPROPERTY_PIN_DATAFLOW</a>.</p>
 </dd>
 
-### -field <b>Communication</b>
+### -field Communication
 
 <dd>
 <p>Specifies KSPIN_COMMUNICATION_NONE, KSPIN_COMMUNICATION_SINK, KSPIN_COMMUNICATION_SOURCE, KSPIN_COMMUNICATION_BOTH or KSPIN_COMMUNICATION_BRIDGE. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff565194">KSPROPERTY_PIN_COMMUNICATION</a> for the meaning of each value.</p>
 </dd>
 
-### -field <b>Category</b>
+### -field Category
 
 <dd>
-<p>Specifies a pointer to a KS pin category GUID. The KS pin category GUID identifies the general category of functionality that the pin provides. Examples of KS pin category GUIDs are KSNODETYPE_SPEAKER, KSNODETYPE_HEADPHONES, and KSNODETYPE_MICROPHONE, which are all defined in <i>Ksmedia.h</i>. Also see <a href="NULL">Pin Category Property</a>.</p>
+<p>Specifies a pointer to a KS pin category GUID. The KS pin category GUID identifies the general category of functionality that the pin provides. Examples of KS pin category GUIDs are KSNODETYPE_SPEAKER, KSNODETYPE_HEADPHONES, and KSNODETYPE_MICROPHONE, which are all defined in <i>Ksmedia.h</i>. Also see <a href="https://msdn.microsoft.com/fd4a4afd-2c17-4002-87ae-21501b1d75c1">Pin Category Property</a>.</p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>Specifies the GUID of the localized Unicode string name for the pin type, stored in the Registry.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Not used.  A member of an unnamed union used to force proper alignment on the unnamed structure.</p>
 </dd>
 
-### -field <b>ConstrainedDataRangesCount</b>
+### -field ConstrainedDataRangesCount
 
 <dd>
 <p>Specifies the number of entries in the array pointed to by <b>ConstrainedDataRanges</b>.</p>
 </dd>
 
-### -field <b>ConstrainedDataRanges</b>
+### -field ConstrainedDataRanges
 
 <dd>
 <p>Points to an array of <a href="stream.ksdatarange">KSDATARANGE</a> structures. Indicates the set of data ranges the pin type currently supports, based on the driver's internal state.</p>

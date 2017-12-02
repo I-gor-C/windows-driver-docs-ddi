@@ -7,7 +7,7 @@ old-location: netvista\ril_getradioconfiguration.htm
 old-project: netvista
 ms.assetid: 8e450e58-41e0-4df2-83d9-8975d437cdcb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetRadioConfiguration
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,11 +58,11 @@ HRESULT  RIL_GetRadioConfiguration(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 </dl>

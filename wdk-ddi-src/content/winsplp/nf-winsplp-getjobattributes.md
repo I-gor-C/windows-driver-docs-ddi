@@ -55,19 +55,19 @@ BOOL GetJobAttributes(
 ## -parameters
 <dl>
 
-### -param <i>pPrinterName</i> [in]
+### -param pPrinterName [in]
 
 <dd>
 <p>Caller-supplied pointer to a NULL-terminated Unicode string containing the printer name.</p>
 </dd>
 
-### -param <i>pDevmode</i> [in]
+### -param pDevmode [in]
 
 <dd>
 <p>Caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure that is passed to the print processor or printer driver.</p>
 </dd>
 
-### -param <i>pAttributeInfo</i> [out]
+### -param pAttributeInfo [out]
 
 <dd>
 <p>Caller-supplied pointer to an <a href="..\winddiui\ns-winddiui--attribute-info-3.md">ATTRIBUTE_INFO_3</a> structure that receives information about the print job.</p>

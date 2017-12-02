@@ -7,7 +7,7 @@ old-location: ifsk\open_reparse_list_entry_.htm
 old-project: ifsk
 ms.assetid: A6D28F60-FA38-45EA-9E3C-D2E6F899333E
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: OPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_LIST_ENTRY, *POPEN_REPARSE_LIST_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ typedef struct _OPEN_REPARSE_LIST_ENTRY  {
 ## -struct-fields
 <dl>
 
-### -field <b>OpenReparseListEntry</b>
+### -field OpenReparseListEntry
 
 <dd>
 <p>The entry in the open reparse list.</p>
 </dd>
 
-### -field <b>ReparseTag</b>
+### -field ReparseTag
 
 <dd>
 <p>The reparse tag that should be opened directly without returning <b>STATUS_REPARSE</b>. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags that control behavior when a reparse point is encountered on a directory that may be non-empty (one whose reparse tag is  recognized by <b>FsRtlIsNonEmptyDirectoryReparsePointAllowed</b>)
@@ -85,7 +85,7 @@ typedef struct _OPEN_REPARSE_LIST_ENTRY  {
 <tr>
 <td width="40%"><a id="OPEN_REPARSE_POINT_TAG_ENCOUNTERED"></a><a id="open_reparse_point_tag_encountered"></a><dl>
 
-### -field <b>OPEN_REPARSE_POINT_TAG_ENCOUNTERED</b>
+### -field OPEN_REPARSE_POINT_TAG_ENCOUNTERED
 
 
 ### -field 0x00000001
@@ -99,7 +99,7 @@ typedef struct _OPEN_REPARSE_LIST_ENTRY  {
 <tr>
 <td width="40%"><a id="OPEN_REPARSE_POINT_REPARSE_IF_CHILD_EXISTS"></a><a id="open_reparse_point_reparse_if_child_exists"></a><dl>
 
-### -field <b>OPEN_REPARSE_POINT_REPARSE_IF_CHILD_EXISTS</b>
+### -field OPEN_REPARSE_POINT_REPARSE_IF_CHILD_EXISTS
 
 
 ### -field 0x00000002
@@ -114,7 +114,7 @@ typedef struct _OPEN_REPARSE_LIST_ENTRY  {
 <tr>
 <td width="40%"><a id="OPEN_REPARSE_POINT_REPARSE_IF_CHILD_NOT_EXISTS"></a><a id="open_reparse_point_reparse_if_child_not_exists"></a><dl>
 
-### -field <b>OPEN_REPARSE_POINT_REPARSE_IF_CHILD_NOT_EXISTS</b>
+### -field OPEN_REPARSE_POINT_REPARSE_IF_CHILD_NOT_EXISTS
 
 
 ### -field 0x00000004
@@ -129,7 +129,7 @@ typedef struct _OPEN_REPARSE_LIST_ENTRY  {
 <tr>
 <td width="40%"><a id="OPEN_REPARSE_POINT_REPARSE_IF_DIRECTORY_FINAL_COMPONENT"></a><a id="open_reparse_point_reparse_if_directory_final_component"></a><dl>
 
-### -field <b>OPEN_REPARSE_POINT_REPARSE_IF_DIRECTORY_FINAL_COMPONENT</b>
+### -field OPEN_REPARSE_POINT_REPARSE_IF_DIRECTORY_FINAL_COMPONENT
 
 
 ### -field 0x00000008
@@ -145,7 +145,7 @@ and <b>FILE_OPEN_REPARSE_POINT</b> has not been specified.</p>
 <tr>
 <td width="40%"><a id="OPEN_REPARSE_POINT_VERSION_EX"></a><a id="open_reparse_point_version_ex"></a><dl>
 
-### -field <b>OPEN_REPARSE_POINT_VERSION_EX</b>
+### -field OPEN_REPARSE_POINT_VERSION_EX
 
 
 ### -field 0x80000000
@@ -162,19 +162,19 @@ and <b>FILE_OPEN_REPARSE_POINT</b> has not been specified.</p>
 <div> </div>
 </dd>
 
-### -field <b>ReparseGuid</b>
+### -field ReparseGuid
 
 <dd>
 <p>The GUID of the reparse tag that should be opened directly without returning <b>STATUS_REPARSE</b>.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure.</p>
 </dd>
 
-### -field <b>RemainingLength</b>
+### -field RemainingLength
 
 <dd>
 <p>The unprocessed path length when the reparse point was

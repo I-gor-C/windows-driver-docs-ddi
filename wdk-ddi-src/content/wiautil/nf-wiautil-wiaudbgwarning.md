@@ -7,7 +7,7 @@ old-location: image\wiaudbgwarning.htm
 old-project: image
 ms.assetid: f10f1c28-0bfd-44c5-a0aa-9f9227f775d2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiauDbgWarning
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ inline void __stdcall wiauDbgWarning(
 ## -parameters
 <dl>
 
-### -param <i>fname</i> 
+### -param fname 
 
 <dd>
 <p>Pointer to a string containing the name of the function or method into which the call to <b>wiauDbgWarning</b> is inserted.</p>
 </dd>
 
-### -param <i>fmt, ...</i> 
+### -param fmt, ... 
 
 <dd>
 <p>Pointer to a format string that specifies a variable argument list, which starts with an ANSI format string containing the warning message and any conversion specifiers. The ellipsis (...) specifies a variable number of arguments that are to be output.</p>
@@ -124,4 +124,4 @@ inline void __stdcall wiauDbgWarning(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiauDbgWarning function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiauDbgWarning function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

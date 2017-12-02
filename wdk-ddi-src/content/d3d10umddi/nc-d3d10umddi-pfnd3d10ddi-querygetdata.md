@@ -61,26 +61,26 @@ VOID APIENTRY QueryGetData(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hQuery</i> [in]
+### -param hQuery [in]
 
 <dd>
 <p>A handle to the query object to poll.
      </p>
 </dd>
 
-### -param <i>pData</i> [out]
+### -param pData [out]
 
 <dd>
 <p>A pointer to a region of memory that receives the data from a query operation. The user-mode display driver can set <i>pData</i> to <b>NULL</b> and set the <i>DataSize</i> parameter to zero. If <i>pData</i> is <b>NULL</b>, <i>QueryGetData</i> can indicate the state of the query operation (for example, whether the query operation is finished). </p>
 </dd>
 
-### -param <i>DataSize</i> [out]
+### -param DataSize [out]
 
 <dd>
 <p>
@@ -88,7 +88,7 @@ VOID APIENTRY QueryGetData(
      </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A bitwise OR of values. Currently, the D3D10_DDI_GET_DATA_DO_NOT_FLUSH (0x01L) value from the D3D10_DDI_GET_DATA_FLAG enumeration type is the only supported value. </p>

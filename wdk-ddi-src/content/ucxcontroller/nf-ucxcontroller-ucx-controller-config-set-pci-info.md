@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="buses._ucx_controller_config">UCX_CONTROLLER_CONFIG</a> structure with the specified values for the controller with PCI as the parent bus type.</p>
+<p>Initializes a <a href="..\ucxcontroller\ns-ucxcontroller--ucx-controller-config.md">UCX_CONTROLLER_CONFIG</a> structure with the specified values for the controller with PCI as the parent bus type.</p>
 
 
 ## -syntax
@@ -62,43 +62,43 @@ void UCX_CONTROLLER_CONFIG_SET_PCI_INFO(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [in]
+### -param Config [in]
 
 <dd>
-<p>A pointer to a <a href="buses._ucx_controller_config">UCX_CONTROLLER_CONFIG</a> structure to initialize.</p>
+<p>A pointer to a <a href="..\ucxcontroller\ns-ucxcontroller--ucx-controller-config.md">UCX_CONTROLLER_CONFIG</a> structure to initialize.</p>
 </dd>
 
-### -param <i>VendorId</i> [in]
+### -param VendorId [in]
 
 <dd>
 <p>Specifies the vendor identifier for the device as assigned by the PCI SIG.</p>
 </dd>
 
-### -param <i>DeviceId</i> [in]
+### -param DeviceId [in]
 
 <dd>
 <p>Specifies the device identifier assigned by the manufacturer. </p>
 </dd>
 
-### -param <i>RevisionId</i> [in]
+### -param RevisionId [in]
 
 <dd>
 <p>Specifies the revision level of the device described by the <b>DeviceID</b> member.</p>
 </dd>
 
-### -param <i>BusNumber</i> [in]
+### -param BusNumber [in]
 
 <dd>
 <p>Specifies the bus number that identifies the bus instance that a device instance is attached to.</p>
 </dd>
 
-### -param <i>DeviceNumber</i> [in]
+### -param DeviceNumber [in]
 
 <dd>
 <p>Specifies the device number that is assigned to the logical PCI slot. </p>
 </dd>
 
-### -param <i>FunctionNumber</i> [in]
+### -param FunctionNumber [in]
 
 <dd>
 <p>Specifies the specific function on the device that is located in the logical PCI slot. </p>
@@ -139,7 +139,7 @@ void UCX_CONTROLLER_CONFIG_SET_PCI_INFO(
 <a href="buses._ucxcontrollercreate">UcxControllerCreate</a>
 </dt>
 <dt>
-<a href="buses._ucx_controller_config">UCX_CONTROLLER_CONFIG</a>
+<a href="..\ucxcontroller\ns-ucxcontroller--ucx-controller-config.md">UCX_CONTROLLER_CONFIG</a>
 </dt>
 </dl>
 <p> </p>

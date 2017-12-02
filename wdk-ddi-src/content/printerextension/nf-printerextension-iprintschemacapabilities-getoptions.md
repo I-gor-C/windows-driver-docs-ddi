@@ -56,13 +56,13 @@ HRESULT GetOptions(
 ## -parameters
 <dl>
 
-### -param <i>pFeature</i> [in]
+### -param pFeature [in]
 
 <dd>
 <p>The specified feature.</p>
 </dd>
 
-### -param <i>ppOptions</i> [out, retval]
+### -param ppOptions [out, retval]
 
 <dd>
 <p>The returned options.</p>

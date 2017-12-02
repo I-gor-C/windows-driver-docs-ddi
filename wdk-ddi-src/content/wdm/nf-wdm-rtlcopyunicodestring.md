@@ -56,13 +56,13 @@ VOID RtlCopyUnicodeString(
 ## -parameters
 <dl>
 
-### -param <i>DestinationString</i> [in, out]
+### -param DestinationString [in, out]
 
 <dd>
 <p>A pointer to the destination string buffer. This parameter points to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure. </p>
 </dd>
 
-### -param <i>SourceString</i> [in, optional]
+### -param SourceString [in, optional]
 
 <dd>
 <p>A pointer to the source string buffer. This parameter points to a <b>UNICODE_STRING</b> structure. </p>

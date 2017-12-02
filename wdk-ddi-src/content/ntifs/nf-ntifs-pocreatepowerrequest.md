@@ -56,19 +56,19 @@ NTSTATUS PoCreatePowerRequest(
 ## -parameters
 <dl>
 
-### -param <i>PowerRequest</i> [out]
+### -param PowerRequest [out]
 
 <dd>
 <p>A pointer to a location into which the routine writes a pointer to the newly created power request object. If the call fails, the routine writes <b>NULL</b> to this location.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to the device object of the caller (a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure).</p>
 </dd>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--counted-reason-context.md">COUNTED_REASON_CONTEXT</a> structure that describes why the caller is creating the power request object. This parameter is optional and can be set to <b>NULL</b>.</p>
@@ -85,11 +85,11 @@ NTSTATUS PoCreatePowerRequest(
 <p> </p>
 
 ## -remarks
-<p>This routine creates a power request object. To enable power requests, the caller should create one power request object and use that object for all calls to the <a href="..\ntifs\nf-ntifs-posetpowerrequest.md">PoSetPowerRequest</a> and <a href="..\ntifs\nf-ntifs-poclearpowerrequest.md">PoClearPowerRequest</a> routines.</p>
+<p>This routine creates a power request object. To enable power requests, the caller should create one power request object and use that object for all calls to the <a href="..\wdm\nf-wdm-posetpowerrequest.md">PoSetPowerRequest</a> and <a href="..\wdm\nf-wdm-poclearpowerrequest.md">PoClearPowerRequest</a> routines.</p>
 
 <p>A driver can use power requests to override certain aspects of the computer's default power behavior. For example, a driver for a TV receiver device can use power requests to prevent the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> from automatically blanking the display during extended periods of time in which no user interaction occurs.</p>
 
-<p>When the power request object is no longer needed, the caller must delete the object by calling the <a href="..\ntifs\nf-ntifs-podeletepowerrequest.md">PoDeletePowerRequest</a> routine. The driver must delete the power request object before it deletes the device object that was used to create the power request object.</p>
+<p>When the power request object is no longer needed, the caller must delete the object by calling the <a href="..\wdm\nf-wdm-podeletepowerrequest.md">PoDeletePowerRequest</a> routine. The driver must delete the power request object before it deletes the device object that was used to create the power request object.</p>
 
 ## -requirements
 <table>
@@ -154,13 +154,13 @@ NTSTATUS PoCreatePowerRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\nf-ntifs-poclearpowerrequest.md">PoClearPowerRequest</a>
+<a href="..\wdm\nf-wdm-poclearpowerrequest.md">PoClearPowerRequest</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-podeletepowerrequest.md">PoDeletePowerRequest</a>
+<a href="..\wdm\nf-wdm-podeletepowerrequest.md">PoDeletePowerRequest</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-posetpowerrequest.md">PoSetPowerRequest</a>
+<a href="..\wdm\nf-wdm-posetpowerrequest.md">PoSetPowerRequest</a>
 </dt>
 </dl>
 <p> </p>

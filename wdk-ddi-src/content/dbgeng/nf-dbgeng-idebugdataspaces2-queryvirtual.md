@@ -7,7 +7,7 @@ old-location: debugger\queryvirtual.htm
 old-project: debugger
 ms.assetid: 2d607433-0d2d-4662-acd6-9adbce290b97
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugDataSpaces2, QueryVirtual, IDebugDataSpaces2::QueryVirtual
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ HRESULT QueryVirtual(
 ## -parameters
 <dl>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the location in the target's virtual address space of the pages whose information is requested.</p>
 </dd>
 
-### -param <i>Info</i> [out]
+### -param Info [out]
 
 <dd>
 <p>Receives the information about the memory page.</p>
@@ -69,7 +69,7 @@ HRESULT QueryVirtual(
 </dl>
 
 ## -returns
-<p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

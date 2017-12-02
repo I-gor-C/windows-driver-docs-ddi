@@ -7,7 +7,7 @@ old-location: image\wia_micr_info.htm
 old-project: image
 ms.assetid: E91F5D6F-40F9-4CE2-8C51-4CA7FB27F2C3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: WIA_MICR_INFO, WIA_MICR_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef struct _WIA_MICR_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The total size of this structure, in bytes.</p>
 </dd>
 
-### -field <b>Page</b>
+### -field Page
 
 <dd>
 <p>The page number where the MICR code was detected. A zero-based index referring to the current scan job.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Length of the MICR text, in characters, excluding the length of the NULL terminator.</p>
 </dd>
 
-### -field <b>Text</b>
+### -field Text
 
 <dd>
 <p>Placeholder for a NULL terminated character string containing the MICR text.</p>

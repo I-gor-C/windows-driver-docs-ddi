@@ -7,7 +7,7 @@ old-location: image\istidevice_getlasterror.htm
 old-project: image
 ms.assetid: 20ad609d-454a-4d43-a58e-184cbb8e8da7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDevice, GetLastError, IStiDevice::GetLastError
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT GetLastError(
 ## -parameters
 <dl>
 
-### -param <i>pdwLastDeviceError</i> [out]
+### -param pdwLastDeviceError [out]
 
 <dd>
 <p>Caller-supplied pointer to a buffer in which the error code will be stored.</p>

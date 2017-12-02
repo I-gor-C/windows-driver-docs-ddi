@@ -58,25 +58,25 @@ typedef struct _KSDEVICE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Dispatch</b>
+### -field Dispatch
 
 <dd>
 <p>A pointer to the client dispatch table for this device. This dispatch table contains client dispatch functions for PNP messages such as <b>Add</b>, <b>Start</b>, <b>Stop</b>, <b>Remove</b>. Clients are not required to supply a dispatch table unless they want to receive callbacks for the PNP messages described in the dispatch table. Any member of the dispatch table can be <b>NULL</b> to indicate that the client does not want to receive notification for that particular message. For more information, see <a href="..\ks\ns-ks--ksdevice-dispatch.md">KSDEVICE_DISPATCH</a>.</p>
 </dd>
 
-### -field <b>FilterDescriptorsCount</b>
+### -field FilterDescriptorsCount
 
 <dd>
 <p>This member contains the number of filter descriptors for this device that will be provided in the <b>FilterDescriptors</b> member. Zero is a legal value for this member; clients can create filter factories dynamically with the <a href="..\ks\nf-ks-kscreatefilterfactory.md">KsCreateFilterFactory</a> function instead of statically describing them in the device descriptor.</p>
 </dd>
 
-### -field <b>FilterDescriptors</b>
+### -field FilterDescriptors
 
 <dd>
 <p>A pointer to an array of filter descriptors that describe filters that can be created by this device. This member may be <b>NULL</b> if <b>FilterDescriptorsCount</b> is zero. For more information, see <a href="..\ks\ns-ks--ksfilter-descriptor.md">KSFILTER_DESCRIPTOR</a>.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>A value of type ULONG. This should be one and only one of the values in the following table, or set to zero if writing a pre-version 0x100 driver.</p>
@@ -105,7 +105,7 @@ typedef struct _KSDEVICE_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A value of type ULONG. There is only one flag currently defined.</p>

@@ -57,19 +57,19 @@ typedef struct _DEVICE_DATA_SET_REPAIR_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfRepairCopies</b>
+### -field NumberOfRepairCopies
 
 <dd>
 <p>The total  number of copies to repair.</p>
 </dd>
 
-### -field <b>SourceCopy</b>
+### -field SourceCopy
 
 <dd>
 <p>The source copy number.</p>
 </dd>
 
-### -field <b>RepairCopies</b>
+### -field RepairCopies
 
 <dd>
 <p>An array of copy numbers for the copies to repair.</p>

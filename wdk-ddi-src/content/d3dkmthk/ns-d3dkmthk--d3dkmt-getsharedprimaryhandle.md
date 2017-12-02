@@ -56,19 +56,19 @@ typedef struct _D3DKMT_GETSHAREDPRIMARYHANDLE {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[in] A handle to the graphics adapter that the primary surface is associated with.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that displays the primary surface.</p>
 </dd>
 
-### -field <b>hSharedPrimary</b>
+### -field hSharedPrimary
 
 <dd>
 <p>[out] A handle to the global shared primary surface if a shared handle currently exists. The shared handle is returned from the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetsharedprimaryhandle.md">D3DKMTGetSharedPrimaryHandle</a> function.</p>

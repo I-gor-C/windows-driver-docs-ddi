@@ -57,25 +57,25 @@ typedef struct _DXVA_VideoPropertyRange {
 ## -struct-fields
 <dl>
 
-### -field <b>MinValue</b>
+### -field MinValue
 
 <dd>
 <p>Specifies the minimum value allowed for a given property.</p>
 </dd>
 
-### -field <b>MaxValue</b>
+### -field MaxValue
 
 <dd>
 <p>Specifies the maximum value allowed for a given property.</p>
 </dd>
 
-### -field <b>DefaultValue</b>
+### -field DefaultValue
 
 <dd>
 <p>Specifies the default value for a given property.</p>
 </dd>
 
-### -field <b>StepSize</b>
+### -field StepSize
 
 <dd>
 <p>Specifies the step size increment for a given property.</p>

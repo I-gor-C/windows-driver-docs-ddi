@@ -56,13 +56,13 @@ typedef struct _PEP_PPM_QUERY_STATE_NAME {
 ## -struct-fields
 <dl>
 
-### -field <b>StateIndex</b>
+### -field StateIndex
 
 <dd>
 <p>[in] The index of the state that the OS is querying about.</p>
 </dd>
 
-### -field <b>NameSize</b>
+### -field NameSize
 
 <dd>
 <p>[in/out] If <b>Name</b> is <b>NULL</b>, returns the size of the buffer required to hold <b>Name</b> (including the trailing <b>UNICODE_NULL</b> character), in WCHARs.
@@ -70,7 +70,7 @@ If <b>Name</b> is not <b>NULL</b>, supplies the size of the <b>Name</b> buffer, 
 </p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>[in] A pointer to a buffer to copy the name of the state to, or <b>NULL</b>. </p>

@@ -59,37 +59,37 @@ typedef struct _INTERNAL_I8042_HOOK_KEYBOARD {
 ## -struct-fields
 <dl>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Pointer, if non-<b>NULL</b>, to the context that must be used with the <b>InitializationRoutine</b> and <b>IsrRoutine</b> routines. Otherwise, <b>Context</b> is <b>NULL</b>. </p>
 </dd>
 
-### -field <b>InitializationRoutine</b>
+### -field InitializationRoutine
 
 <dd>
 <p>Pointer, if non-<b>NULL</b>, to an optional <a href="..\ntdd8042\nc-ntdd8042-pi8042-keyboard-initialization-routine.md">PI8042_KEYBOARD_INITIALIZATION_ROUTINE</a>callback. I8042prt uses this callback to initialize a device after the device is reset. Otherwise, <b>IntializatonRoutine</b> is <b>NULL</b>.</p>
 </dd>
 
-### -field <b>IsrRoutine</b>
+### -field IsrRoutine
 
 <dd>
 <p>Pointer, if non-<b>NULL</b>, to an optional <a href="..\ntdd8042\nc-ntdd8042-pi8042-keyboard-isr.md">PI8042_KEYBOARD_ISR</a> callback that customizes the operation of the I8042prt keyboard ISR. Otherwise, <b>IsrRoutine </b>is <b>NULL</b>.</p>
 </dd>
 
-### -field <b>IsrWritePort</b>
+### -field IsrWritePort
 
 <dd>
 <p>Pointer to the system-supplied <a href="..\ntdd8042\nc-ntdd8042-pi8042-isr-write-port.md">PI8042_ISR_WRITE_PORT</a> callback, which writes data to a keyboard.</p>
 </dd>
 
-### -field <b>QueueKeyboardPacket</b>
+### -field QueueKeyboardPacket
 
 <dd>
 <p>Pointer to the system-supplied <a href="..\ntdd8042\nc-ntdd8042-pi8042-queue-packet.md">PI8042_QUEUE_PACKET</a> callback, which queues a keyboard input data packet for processing by the keyboard's ISR deferred procedure call.</p>
 </dd>
 
-### -field <b>CallContext</b>
+### -field CallContext
 
 <dd>
 <p>Pointer to the context that must be used with the <b>IsrWritePort</b> and <b>QueueKeyboardPacket</b> routines. </p>

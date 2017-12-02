@@ -58,13 +58,13 @@ NTSTATUS ZwCreateEvent(
 ## -parameters
 <dl>
 
-### -param <i>EventHandle</i> [out]
+### -param EventHandle [out]
 
 <dd>
 <p>A pointer to a variable that will receive the event object handle. The handle includes bookkeeping information, such as a reference count and security context.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the desired types of access for the event object. The following table contains the event-specific ACCESS_MASK values.</p>
@@ -89,19 +89,19 @@ NTSTATUS ZwCreateEvent(
 <p> </p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in, optional]
+### -param ObjectAttributes [in, optional]
 
 <dd>
 <p>A pointer to the object attributes structure supplied by the caller to be used for the specified object. These attributes would include the <b>ObjectName</b> and the <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a>, for example. This parameter is initialized by calling the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro.</p>
 </dd>
 
-### -param <i>EventType</i> [in]
+### -param EventType [in]
 
 <dd>
 <p>The type of the event, which can be <b>SynchronizationEvent</b> or a <b>NotificationEvent</b>. These values belong to the <b>EVENT_TYPE</b> enumeration, which is defined in the Ntdef.h header file.  The event type can be modified with the REALTIME_OBJECT_FLAG modifier to provide priority-ordered queuing of wait requests.</p>
 </dd>
 
-### -param <i>InitialState</i> [in]
+### -param InitialState [in]
 
 <dd>
 <p>The initial state of the event object. Set to <b>TRUE</b> to initialize the event object to the Signaled state. Set to <b>FALSE</b> to initialize the event object to the not-Signaled state.</p>

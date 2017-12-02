@@ -57,7 +57,7 @@ void USBD_QueryBusTime(
 ## -parameters
 <dl>
 
-### -param <i>RootHubPdo</i> [in]
+### -param RootHubPdo [in]
 
 <dd>
 <p>Obsolete.
@@ -65,7 +65,7 @@ void USBD_QueryBusTime(
 </p>
 </dd>
 
-### -param <i>CurrentFrame</i> [out]
+### -param CurrentFrame [out]
 
 <dd>
 <p>Obsolete.

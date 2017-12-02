@@ -7,7 +7,7 @@ old-location: ifsk\rtldecompressfragmentex.htm
 old-project: ifsk
 ms.assetid: A4FE108D-85CE-4F6A-A17A-E81684764FD3
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlDecompressFragmentEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ NTSTATUS RtlDecompressFragmentEx(
 ## -parameters
 <dl>
 
-### -param <i>CompressionFormat</i> [in]
+### -param CompressionFormat [in]
 
 <dd>
 <p>Bitmask specifying the compression format of the compressed buffer. This parameter must be set to COMPRESSION_FORMAT_LZNT1. The meaning of this and other related compression format values are as follows:</p>
@@ -99,49 +99,49 @@ NTSTATUS RtlDecompressFragmentEx(
 <p> </p>
 </dd>
 
-### -param <i>UncompressedFragment</i> [out]
+### -param UncompressedFragment [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer (allocated from paged or non-paged pool) receiving the decompressed data from <i>CompressedBuffer</i>. This parameter is required and cannot be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>UncompressedFragmentSize</i> [in]
+### -param UncompressedFragmentSize [in]
 
 <dd>
 <p>The size, in bytes, of the <i>UncompressedFragment</i> buffer.</p>
 </dd>
 
-### -param <i>CompressedBuffer</i> [in]
+### -param CompressedBuffer [in]
 
 <dd>
 <p>A pointer to the buffer containing the data to decompress. This parameter is required and cannot be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>CompressedBufferSize</i> [in]
+### -param CompressedBufferSize [in]
 
 <dd>
 <p>The size, in bytes, of the <i>CompressedBuffer</i> buffer.</p>
 </dd>
 
-### -param <i>FragmentOffset</i> [in]
+### -param FragmentOffset [in]
 
 <dd>
 <p>The zero-based offset, in bytes, where the uncompressed fragment is being extract from. This offset value is the position within the original uncompressed buffer.</p>
 </dd>
 
-### -param <i>UncompressedChunkSize</i> [in]
+### -param UncompressedChunkSize [in]
 
 <dd>
 <p>The size, in bytes, of each chunk within the compression buffer.  Valid values are 512, 1024, 2048 and 4096.</p>
 </dd>
 
-### -param <i>FinalUncompressedSize</i> [out]
+### -param FinalUncompressedSize [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable which receives the size, in bytes, of the decompressed data stored in <i>UncompressedFragment</i>. This parameter is required and cannot be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>WorkSpace</i> [in]
+### -param WorkSpace [in]
 
 <dd>
 <p>A pointer to a caller-allocated work space buffer used by the <b>RtlDecompressFragmentEx</b> function during decompression. Use the <a href="..\ntifs\nf-ntifs-rtlgetcompressionworkspacesize.md">RtlGetCompressionWorkSpaceSize</a> function to determine the correct work space buffer size.</p>
@@ -248,4 +248,4 @@ NTSTATUS RtlDecompressFragmentEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlDecompressFragmentEx routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlDecompressFragmentEx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

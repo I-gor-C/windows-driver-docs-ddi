@@ -56,13 +56,13 @@ VOID CmGetCallbackVersion(
 ## -parameters
 <dl>
 
-### -param <i>Major</i> [out, optional]
+### -param Major [out, optional]
 
 <dd>
 <p>A pointer to a location that receives the major version number.</p>
 </dd>
 
-### -param <i>Minor</i> [out, optional]
+### -param Minor [out, optional]
 
 <dd>
 <p>A pointer to a location that receives the minor version number.</p>

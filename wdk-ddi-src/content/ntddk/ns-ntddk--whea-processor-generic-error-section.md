@@ -70,7 +70,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 ## -struct-fields
 <dl>
 
-### -field <b>ValidBits</b>
+### -field ValidBits
 
 <dd>
 <p>A 
@@ -78,7 +78,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
       union that specifies which members of this structure contain valid data.</p>
 </dd>
 
-### -field <b>ProcessorType</b>
+### -field ProcessorType
 
 <dd>
 <p>The processor architecture of the processor.</p>
@@ -92,7 +92,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_PROCTYPE_XPF"></a><a id="genproc_proctype_xpf"></a><dl>
 
-### -field <b>GENPROC_PROCTYPE_XPF</b>
+### -field GENPROC_PROCTYPE_XPF
 
 </dl>
 </td>
@@ -103,7 +103,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_PROCTYPE_IPF"></a><a id="genproc_proctype_ipf"></a><dl>
 
-### -field <b>GENPROC_PROCTYPE_IPF</b>
+### -field GENPROC_PROCTYPE_IPF
 
 </dl>
 </td>
@@ -115,7 +115,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <p> </p>
 </dd>
 
-### -field <b>InstructionSet</b>
+### -field InstructionSet
 
 <dd>
 <p>The instruction set that was executing when the error occurred.</p>
@@ -129,7 +129,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_PROCISA_X86"></a><a id="genproc_procisa_x86"></a><dl>
 
-### -field <b>GENPROC_PROCISA_X86</b>
+### -field GENPROC_PROCISA_X86
 
 </dl>
 </td>
@@ -140,7 +140,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_PROCISA_IPF"></a><a id="genproc_procisa_ipf"></a><dl>
 
-### -field <b>GENPROC_PROCISA_IPF</b>
+### -field GENPROC_PROCISA_IPF
 
 </dl>
 </td>
@@ -151,7 +151,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_PROCISA_X64"></a><a id="genproc_procisa_x64"></a><dl>
 
-### -field <b>GENPROC_PROCISA_X64</b>
+### -field GENPROC_PROCISA_X64
 
 </dl>
 </td>
@@ -163,7 +163,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <p> </p>
 </dd>
 
-### -field <b>ErrorType</b>
+### -field ErrorType
 
 <dd>
 <p>The type of error that occurred.</p>
@@ -177,7 +177,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_PROCERRTYPE_UNKNOWN"></a><a id="genproc_procerrtype_unknown"></a><dl>
 
-### -field <b>GENPROC_PROCERRTYPE_UNKNOWN</b>
+### -field GENPROC_PROCERRTYPE_UNKNOWN
 
 </dl>
 </td>
@@ -188,7 +188,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_PROCERRTYPE_CACHE"></a><a id="genproc_procerrtype_cache"></a><dl>
 
-### -field <b>GENPROC_PROCERRTYPE_CACHE</b>
+### -field GENPROC_PROCERRTYPE_CACHE
 
 </dl>
 </td>
@@ -199,7 +199,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_PROCERRTYPE_TLB"></a><a id="genproc_procerrtype_tlb"></a><dl>
 
-### -field <b>GENPROC_PROCERRTYPE_TLB</b>
+### -field GENPROC_PROCERRTYPE_TLB
 
 </dl>
 </td>
@@ -210,7 +210,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_PROCERRTYPE_BUS"></a><a id="genproc_procerrtype_bus"></a><dl>
 
-### -field <b>GENPROC_PROCERRTYPE_BUS</b>
+### -field GENPROC_PROCERRTYPE_BUS
 
 </dl>
 </td>
@@ -221,7 +221,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_PROCERRTYPE_MAE"></a><a id="genproc_procerrtype_mae"></a><dl>
 
-### -field <b>GENPROC_PROCERRTYPE_MAE</b>
+### -field GENPROC_PROCERRTYPE_MAE
 
 </dl>
 </td>
@@ -233,7 +233,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <p> </p>
 </dd>
 
-### -field <b>Operation</b>
+### -field Operation
 
 <dd>
 <p>The type of operation that was executing when the error occurred.</p>
@@ -247,7 +247,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_OP_GENERIC"></a><a id="genproc_op_generic"></a><dl>
 
-### -field <b>GENPROC_OP_GENERIC</b>
+### -field GENPROC_OP_GENERIC
 
 </dl>
 </td>
@@ -258,7 +258,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_OP_DATAREAD"></a><a id="genproc_op_dataread"></a><dl>
 
-### -field <b>GENPROC_OP_DATAREAD</b>
+### -field GENPROC_OP_DATAREAD
 
 </dl>
 </td>
@@ -269,7 +269,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_OP_DATAWRITE"></a><a id="genproc_op_datawrite"></a><dl>
 
-### -field <b>GENPROC_OP_DATAWRITE</b>
+### -field GENPROC_OP_DATAWRITE
 
 </dl>
 </td>
@@ -280,7 +280,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_OP_INSTRUCTIONEXE"></a><a id="genproc_op_instructionexe"></a><dl>
 
-### -field <b>GENPROC_OP_INSTRUCTIONEXE</b>
+### -field GENPROC_OP_INSTRUCTIONEXE
 
 </dl>
 </td>
@@ -292,7 +292,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <p> </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bit-wise OR'ed combination of flags that provides additional information about the error.</p>
@@ -306,7 +306,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_FLAGS_RESTARTABLE"></a><a id="genproc_flags_restartable"></a><dl>
 
-### -field <b>GENPROC_FLAGS_RESTARTABLE</b>
+### -field GENPROC_FLAGS_RESTARTABLE
 
 </dl>
 </td>
@@ -317,7 +317,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_FLAGS_PRECISEIP"></a><a id="genproc_flags_preciseip"></a><dl>
 
-### -field <b>GENPROC_FLAGS_PRECISEIP</b>
+### -field GENPROC_FLAGS_PRECISEIP
 
 </dl>
 </td>
@@ -329,7 +329,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_FLAGS_OVERFLOW"></a><a id="genproc_flags_overflow"></a><dl>
 
-### -field <b>GENPROC_FLAGS_OVERFLOW</b>
+### -field GENPROC_FLAGS_OVERFLOW
 
 </dl>
 </td>
@@ -341,7 +341,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <tr>
 <td width="40%"><a id="GENPROC_FLAGS_CORRECTED"></a><a id="genproc_flags_corrected"></a><dl>
 
-### -field <b>GENPROC_FLAGS_CORRECTED</b>
+### -field GENPROC_FLAGS_CORRECTED
 
 </dl>
 </td>
@@ -353,7 +353,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <p> </p>
 </dd>
 
-### -field <b>Level</b>
+### -field Level
 
 <dd>
 <p>The level of the structure where the error occurred, with zero being the lowest level of cache.</p>
@@ -361,13 +361,13 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
        <b>ValidBits</b> member is set.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>CPUVersion</b>
+### -field CPUVersion
 
 <dd>
 <p>The CPU version, which includes the family, model, and stepping information.</p>
@@ -380,7 +380,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
        <b>ValidBits</b> member is set.</p>
 </dd>
 
-### -field <b>CPUBrandString</b>
+### -field CPUBrandString
 
 <dd>
 <p>The CPU brand string.</p>
@@ -396,7 +396,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
        <b>ValidBits</b> member is set.</p>
 </dd>
 
-### -field <b>ProcessorId</b>
+### -field ProcessorId
 
 <dd>
 <p>An identifier that uniquely identifies the logical processor in the system.</p>
@@ -409,7 +409,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
        <b>ValidBits</b> member is set.</p>
 </dd>
 
-### -field <b>TargetAddress</b>
+### -field TargetAddress
 
 <dd>
 <p>The target address associated with the error.</p>
@@ -417,7 +417,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
        <b>ValidBits</b> member is set.</p>
 </dd>
 
-### -field <b>RequesterId</b>
+### -field RequesterId
 
 <dd>
 <p>An identifier that uniquely identifies the requester associated with the error.</p>
@@ -425,7 +425,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
        <b>ValidBits</b> member is set.</p>
 </dd>
 
-### -field <b>ResponderId</b>
+### -field ResponderId
 
 <dd>
 <p>An identifier that uniquely identifies the responder associated with the error.</p>
@@ -433,7 +433,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
        <b>ValidBits</b> member is set.</p>
 </dd>
 
-### -field <b>InstructionPointer</b>
+### -field InstructionPointer
 
 <dd>
 <p>The instruction pointer at the time that the error occurred.</p>

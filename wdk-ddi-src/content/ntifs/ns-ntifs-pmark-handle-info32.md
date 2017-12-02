@@ -7,7 +7,7 @@ old-location: ifsk\mark_handle_info32.htm
 old-project: ifsk
 ms.assetid: BAC97D72-23C4-49A6-A13D-0F011113DB32
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: PMARK_HANDLE_INFO32, MARK_HANDLE_INFO32, *PMARK_HANDLE_INFO32
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>UsnSourceInfo</b>
+### -field UsnSourceInfo
 
 <dd>
 <p>The type of changes being made.</p>
@@ -85,7 +85,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="USN_SOURCE_DATA_MANAGEMENT"></a><a id="usn_source_data_management"></a><dl>
 
-### -field <b>USN_SOURCE_DATA_MANAGEMENT</b>
+### -field USN_SOURCE_DATA_MANAGEMENT
 
 
 ### -field 0x00000001
@@ -106,7 +106,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="USN_SOURCE_AUXILIARY_DATA"></a><a id="usn_source_auxiliary_data"></a><dl>
 
-### -field <b>USN_SOURCE_AUXILIARY_DATA</b>
+### -field USN_SOURCE_AUXILIARY_DATA
 
 
 ### -field 0x00000002
@@ -123,7 +123,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="USN_SOURCE_REPLICATION_MANAGEMENT"></a><a id="usn_source_replication_management"></a><dl>
 
-### -field <b>USN_SOURCE_REPLICATION_MANAGEMENT</b>
+### -field USN_SOURCE_REPLICATION_MANAGEMENT
 
 
 ### -field 0x00000004
@@ -140,7 +140,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>CopyNumber</b>
+### -field CopyNumber
 
 <dd>
 <p>The zero-based copy number to use for subsequent reads. This is for use on  on Storage Spaces and Streams on 
@@ -148,7 +148,7 @@ typedef struct {
 <p><b>Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:  </b>This member is not supported before Windows 8 and Windows Server 2012.</p>
 </dd>
 
-### -field <b>UsnSourceInfo</b>
+### -field UsnSourceInfo
 
 <dd>
 <p>The type of changes being made.</p>
@@ -166,7 +166,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="USN_SOURCE_DATA_MANAGEMENT"></a><a id="usn_source_data_management"></a><dl>
 
-### -field <b>USN_SOURCE_DATA_MANAGEMENT</b>
+### -field USN_SOURCE_DATA_MANAGEMENT
 
 
 ### -field 0x00000001
@@ -187,7 +187,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="USN_SOURCE_AUXILIARY_DATA"></a><a id="usn_source_auxiliary_data"></a><dl>
 
-### -field <b>USN_SOURCE_AUXILIARY_DATA</b>
+### -field USN_SOURCE_AUXILIARY_DATA
 
 
 ### -field 0x00000002
@@ -204,7 +204,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="USN_SOURCE_REPLICATION_MANAGEMENT"></a><a id="usn_source_replication_management"></a><dl>
 
-### -field <b>USN_SOURCE_REPLICATION_MANAGEMENT</b>
+### -field USN_SOURCE_REPLICATION_MANAGEMENT
 
 
 ### -field 0x00000004
@@ -221,7 +221,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>VolumeHandle</b>
+### -field VolumeHandle
 
 <dd>
 <p>The volume handle to the volume where the file or directory resides. For more information on obtaining a 
@@ -231,7 +231,7 @@ typedef struct {
         see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559863">Privileges</a>.</p>
 </dd>
 
-### -field <b>HandleInfo</b>
+### -field HandleInfo
 
 <dd>
 <p>The flag that specifies additional information about the file or directory identified by the handle value 
@@ -244,7 +244,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="MARK_HANDLE_PROTECT_CLUSTERS"></a><a id="mark_handle_protect_clusters"></a><dl>
 
-### -field <b>MARK_HANDLE_PROTECT_CLUSTERS</b>
+### -field MARK_HANDLE_PROTECT_CLUSTERS
 
 
 ### -field 0x00000001
@@ -258,7 +258,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="MARK_HANDLE_TXF_SYSTEM_LOG"></a><a id="mark_handle_txf_system_log"></a><dl>
 
-### -field <b>MARK_HANDLE_TXF_SYSTEM_LOG</b>
+### -field MARK_HANDLE_TXF_SYSTEM_LOG
 
 
 ### -field 0x00000004
@@ -272,7 +272,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="MARK_HANDLE_NOT_TXF_SYSTEM_LOG"></a><a id="mark_handle_not_txf_system_log"></a><dl>
 
-### -field <b>MARK_HANDLE_NOT_TXF_SYSTEM_LOG</b>
+### -field MARK_HANDLE_NOT_TXF_SYSTEM_LOG
 
 
 ### -field 0x00000008
@@ -286,7 +286,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="MARK_HANDLE_REALTIME"></a><a id="mark_handle_realtime"></a><dl>
 
-### -field <b>MARK_HANDLE_REALTIME</b>
+### -field MARK_HANDLE_REALTIME
 
 
 ### -field 0x00000020
@@ -301,7 +301,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="MARK_HANDLE_NOT_REALTIME"></a><a id="mark_handle_not_realtime"></a><dl>
 
-### -field <b>MARK_HANDLE_NOT_REALTIME</b>
+### -field MARK_HANDLE_NOT_REALTIME
 
 
 ### -field 0x00000040
@@ -359,4 +359,4 @@ typedef struct {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MARK_HANDLE_INFO32 structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MARK_HANDLE_INFO32 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

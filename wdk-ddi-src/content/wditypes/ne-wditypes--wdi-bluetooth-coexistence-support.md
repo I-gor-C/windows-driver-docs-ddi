@@ -7,7 +7,7 @@ old-location: netvista\wdi_bluetooth_coexistence_support.htm
 old-project: netvista
 ms.assetid: 88642615-D5DD-4C0E-BAAA-308EB6050E77
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ typedef enum _WDI_BLUETOOTH_COEXISTENCE_SUPPORT {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_BLUETOOTH_COEXISTENCE_UNKNOWN"></a><a id="wdi_bluetooth_coexistence_unknown"></a><b>WDI_BLUETOOTH_COEXISTENCE_UNKNOWN</b>
+### -field WDI_BLUETOOTH_COEXISTENCE_UNKNOWN
 
 <dd>
 <p>Unknown.</p>
 </dd>
 
-### -field <a id="WDI_BLUETOOTH_COEXISTENCE_PERFORMANCE_MAINTAINED"></a><a id="wdi_bluetooth_coexistence_performance_maintained"></a><b>WDI_BLUETOOTH_COEXISTENCE_PERFORMANCE_MAINTAINED</b>
+### -field WDI_BLUETOOTH_COEXISTENCE_PERFORMANCE_MAINTAINED
 
 <dd>
 <p>Wi-Fi and Bluetooth work at the same performance level during coexistence.</p>
 </dd>
 
-### -field <a id="WDI_BLUETOOTH_COEXISTENCE_WIFI_DEGRADED_TO_1x1"></a><a id="wdi_bluetooth_coexistence_wifi_degraded_to_1x1"></a><a id="WDI_BLUETOOTH_COEXISTENCE_WIFI_DEGRADED_TO_1X1"></a><b>WDI_BLUETOOTH_COEXISTENCE_WIFI_DEGRADED_TO_1x1</b>
+### -field WDI_BLUETOOTH_COEXISTENCE_WIFI_DEGRADED_TO_1x1
 
 <dd>
 <p>Wi-Fi centered. On a 2X2 device, Wi-Fi and Bluetooth coexists. Wi-Fi performance is reduced to 1X1 level.</p>
 </dd>
 
-### -field <a id="WDI_BLUETOOTH_COEXISTENCE_WIFI_THROUGHPUT_DEGRADED"></a><a id="wdi_bluetooth_coexistence_wifi_throughput_degraded"></a><b>WDI_BLUETOOTH_COEXISTENCE_WIFI_THROUGHPUT_DEGRADED</b>
+### -field WDI_BLUETOOTH_COEXISTENCE_WIFI_THROUGHPUT_DEGRADED
 
 <dd>
 <p>Bluetooth centered. When coexisting, Bluetooth has priority and restricts Wi-Fi performance.</p>
 </dd>
 
-### -field <a id="WDI_BLUETOOTH_COEXISTENCE_MUTUALLY_EXCLUSIVE"></a><a id="wdi_bluetooth_coexistence_mutually_exclusive"></a><b>WDI_BLUETOOTH_COEXISTENCE_MUTUALLY_EXCLUSIVE</b>
+### -field WDI_BLUETOOTH_COEXISTENCE_MUTUALLY_EXCLUSIVE
 
 <dd>
 <p>Wi-Fi and Bluetooth are mutually exclusive. One of the two stops working.</p>

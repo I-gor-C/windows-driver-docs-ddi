@@ -56,7 +56,7 @@ NTSTATUS RtlCheckRegistryKey(
 ## -parameters
 <dl>
 
-### -param <i>RelativeTo</i> [in]
+### -param RelativeTo [in]
 
 <dd>
 <p>Specifies whether <i>Path</i> is an absolute registry path or is relative to a predefined key path as one of the following.</p>
@@ -125,7 +125,7 @@ NTSTATUS RtlCheckRegistryKey(
 <p> </p>
 </dd>
 
-### -param <i>Path</i> [in]
+### -param Path [in]
 
 <dd>
 <p>Specifies the registry path according to the <i>RelativeTo</i> value. If RTL_REGISTRY_HANDLE is set, <i>Path</i> is a handle to be used directly.</p>

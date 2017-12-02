@@ -7,7 +7,7 @@ old-location: image\ioctl_scsiscan_lockdevice.htm
 old-project: image
 ms.assetid: 93e5d446-4f18-4468-9591-8951d3c85dd3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: PWRITE_USING_TOKEN_HEADER, WRITE_USING_TOKEN_HEADER, *PWRITE_USING_TOKEN_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices

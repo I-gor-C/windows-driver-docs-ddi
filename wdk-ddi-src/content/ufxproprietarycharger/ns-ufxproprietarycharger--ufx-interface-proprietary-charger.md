@@ -59,34 +59,34 @@ typedef struct _UFX_INTERFACE_PROPRIETARY_CHARGER {
 ## -struct-fields
 <dl>
 
-### -field <b>InterfaceHeader</b>
+### -field InterfaceHeader
 
 <dd>
 <p>The interface version number.</p>
 </dd>
 
-### -field <b>ProprietaryChargerDetect</b>
+### -field ProprietaryChargerDetect
 
 <dd>
-<p>A pointer to the driver's implementation of the <a href="buses.ufx_proprietary_charger_detect">UFX_PROPRIETARY_CHARGER_DETECT</a> callback function.</p>
+<p>A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx-proprietary-charger-detect.md">UFX_PROPRIETARY_CHARGER_DETECT</a> callback function.</p>
 </dd>
 
-### -field <b>ProprietaryChargerSetProperty</b>
+### -field ProprietaryChargerSetProperty
 
 <dd>
-<p>A pointer to the driver's implementation of the <a href="buses.ufx_proprietary_charger_set_property">UFX_PROPRIETARY_CHARGER_SET_PROPERTY</a> callback function.</p>
+<p>A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx-proprietary-charger-set-property.md">UFX_PROPRIETARY_CHARGER_SET_PROPERTY</a> callback function.</p>
 </dd>
 
-### -field <b>ProprietaryChargerAbortOperation</b>
+### -field ProprietaryChargerAbortOperation
 
 <dd>
-<p>A pointer to the driver's implementation of the <a href="buses.ufx_proprietary_charger_abort_operation">UFX_PROPRIETARY_CHARGER_ABORT_OPERATION</a> callback function.</p>
+<p>A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx-proprietary-charger-abort-operation.md">UFX_PROPRIETARY_CHARGER_ABORT_OPERATION</a> callback function.</p>
 </dd>
 
-### -field <b>ProprietaryChargerResetOperation</b>
+### -field ProprietaryChargerResetOperation
 
 <dd>
-<p>A pointer to the driver's implementation of the <a href="buses.ufx_proprietary_charger_reset_operation">UFX_PROPRIETARY_CHARGER_RESET_OPERATION</a> callback function.</p>
+<p>A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx-proprietary-charger-reset-operation.md">UFX_PROPRIETARY_CHARGER_RESET_OPERATION</a> callback function.</p>
 </dd>
 </dl>
 

@@ -56,19 +56,19 @@ typedef struct _DISK_EXTENT {
 ## -struct-fields
 <dl>
 
-### -field <b>DiskNumber</b>
+### -field DiskNumber
 
 <dd>
 <p>Specifies the number of the disk that contains this extent. This is the same disk number that is used to construct the name of the disk (for example, <i>PhysicalDriveX</i> or <i>HarddiskX</i>, where X is the disk number).</p>
 </dd>
 
-### -field <b>StartingOffset</b>
+### -field StartingOffset
 
 <dd>
 <p>Specifies the offset, in bytes, from the beginning of the disk.</p>
 </dd>
 
-### -field <b>ExtentLength</b>
+### -field ExtentLength
 
 <dd>
 <p>Specifies the number of bytes of this extent.</p>

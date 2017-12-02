@@ -56,19 +56,19 @@ typedef struct _D3D12DDI_VIDEO_DECODER_HEAP_SIZE_DATA_0033 {
 ## -struct-fields
 <dl>
 
-### -field <b>VideoDecoderHeapDesc</b>
+### -field VideoDecoderHeapDesc
 
 <dd>
 <p>The video decoder heap description.</p>
 </dd>
 
-### -field <b>MemoryPoolL0Size</b>
+### -field MemoryPoolL0Size
 
 <dd>
 <p>The memory pool L0 size.</p>
 </dd>
 
-### -field <b>MemoryPoolL1Size</b>
+### -field MemoryPoolL1Size
 
 <dd>
 <p>The memory pool L1 size.</p>

@@ -56,13 +56,13 @@ HRESULT SetInt32(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd>
 <p>The property to set.</p>
 </dd>
 
-### -param <i>nValue</i> [in]
+### -param nValue [in]
 
 <dd>
 <p>The new value to set.</p>

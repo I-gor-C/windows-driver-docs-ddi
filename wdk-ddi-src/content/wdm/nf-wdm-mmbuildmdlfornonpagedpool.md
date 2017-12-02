@@ -55,7 +55,7 @@ VOID MmBuildMdlForNonPagedPool(
 ## -parameters
 <dl>
 
-### -param <i>MemoryDescriptorList</i> [in, out]
+### -param MemoryDescriptorList [in, out]
 
 <dd>
 <p>A pointer to an MDL that specifies a virtual memory buffer in nonpaged memory. The caller used the <a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a> routine to create the MDL for this buffer. </p>

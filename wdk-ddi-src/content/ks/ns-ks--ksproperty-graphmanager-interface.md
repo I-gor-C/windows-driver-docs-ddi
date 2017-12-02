@@ -55,11 +55,11 @@ typedef struct _KSPROPERTY_GRAPHMANAGER_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>GraphManager</b>
+### -field GraphManager
 
 <dd></dd>
 
-### -field <b>FunctionTable</b>
+### -field FunctionTable
 
 <dd></dd>
 </dl>

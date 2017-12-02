@@ -58,13 +58,13 @@ typedef struct _KEY_VALUE_BASIC_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>TitleIndex</b>
+### -field TitleIndex
 
 <dd>
 <p>Device and intermediate drivers should ignore this member.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Specifies the system-defined type for the value entry in the registry key, which is one of the following:</p>
@@ -173,13 +173,13 @@ typedef struct _KEY_VALUE_BASIC_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>NameLength</b>
+### -field NameLength
 
 <dd>
 <p>Specifies the size in bytes of the following value entry name.</p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>A string of Unicode characters naming a value entry of the key.</p>

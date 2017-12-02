@@ -7,7 +7,7 @@ old-location: ifsk\token_information_class.htm
 old-project: ifsk
 ms.assetid: dd2323fa-2c58-462e-905f-3b201ef0c343
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: VOLUME_READ_PLEX_INPUT, VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -96,103 +96,103 @@ typedef enum _TOKEN_INFORMATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="TokenUser"></a><a id="tokenuser"></a><a id="TOKENUSER"></a><b>TokenUser</b>
+### -field TokenUser
 
 <dd>
 <p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-user.md">TOKEN_USER</a> structure containing the token's user account. </p>
 </dd>
 
-### -field <a id="TokenGroups"></a><a id="tokengroups"></a><a id="TOKENGROUPS"></a><b>TokenGroups</b>
+### -field TokenGroups
 
 <dd>
 <p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-groups.md">TOKEN_GROUPS</a> structure containing the group accounts associated with the token. </p>
 </dd>
 
-### -field <a id="TokenPrivileges"></a><a id="tokenprivileges"></a><a id="TOKENPRIVILEGES"></a><b>TokenPrivileges</b>
+### -field TokenPrivileges
 
 <dd>
 <p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-privileges.md">TOKEN_PRIVILEGES</a> structure containing the token's privileges. </p>
 </dd>
 
-### -field <a id="TokenOwner"></a><a id="tokenowner"></a><a id="TOKENOWNER"></a><b>TokenOwner</b>
+### -field TokenOwner
 
 <dd>
 <p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-owner.md">TOKEN_OWNER</a> structure containing the default owner SID for newly created objects. </p>
 </dd>
 
-### -field <a id="TokenPrimaryGroup"></a><a id="tokenprimarygroup"></a><a id="TOKENPRIMARYGROUP"></a><b>TokenPrimaryGroup</b>
+### -field TokenPrimaryGroup
 
 <dd>
 <p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-primary-group.md">TOKEN_PRIMARY_GROUP</a> structure containing the default primary group SID for newly created objects. </p>
 </dd>
 
-### -field <a id="TokenDefaultDacl"></a><a id="tokendefaultdacl"></a><a id="TOKENDEFAULTDACL"></a><b>TokenDefaultDacl</b>
+### -field TokenDefaultDacl
 
 <dd>
 <p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-default-dacl.md">TOKEN_DEFAULT_DACL</a> structure containing the default discretionary ACL (DACL)) for newly created objects. </p>
 </dd>
 
-### -field <a id="TokenSource"></a><a id="tokensource"></a><a id="TOKENSOURCE"></a><b>TokenSource</b>
+### -field TokenSource
 
 <dd>
 <p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-source.md">TOKEN_SOURCE</a> structure containing the source of the token. TOKEN_QUERY_SOURCE access is needed to retrieve this information. </p>
 </dd>
 
-### -field <a id="TokenType"></a><a id="tokentype"></a><a id="TOKENTYPE"></a><b>TokenType</b>
+### -field TokenType
 
 <dd>
 <p>The buffer receives a <a href="..\ntifs\ne-ntifs--token-type.md">TOKEN_TYPE</a> value indicating whether the token is a primary or impersonation token. </p>
 </dd>
 
-### -field <a id="TokenImpersonationLevel"></a><a id="tokenimpersonationlevel"></a><a id="TOKENIMPERSONATIONLEVEL"></a><b>TokenImpersonationLevel</b>
+### -field TokenImpersonationLevel
 
 <dd>
 <p>The buffer receives a <a href="..\wudfddi\ne-wudfddi--security-impersonation-level.md">SECURITY_IMPERSONATION_LEVEL</a> value indicating the impersonation level of the token. If the access token is not an impersonation token, the call to <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a> or <a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a> fails. </p>
 </dd>
 
-### -field <a id="TokenStatistics"></a><a id="tokenstatistics"></a><a id="TOKENSTATISTICS"></a><b>TokenStatistics</b>
+### -field TokenStatistics
 
 <dd>
 <p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-statistics.md">TOKEN_STATISTICS</a> structure containing various token statistics. </p>
 </dd>
 
-### -field <a id="TokenRestrictedSids"></a><a id="tokenrestrictedsids"></a><a id="TOKENRESTRICTEDSIDS"></a><b>TokenRestrictedSids</b>
+### -field TokenRestrictedSids
 
 <dd>
 <p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-groups.md">TOKEN_GROUPS</a> structure containing the list of restricting SIDs in a restricted token. This value is valid starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="TokenSessionId"></a><a id="tokensessionid"></a><a id="TOKENSESSIONID"></a><b>TokenSessionId</b>
+### -field TokenSessionId
 
 <dd>
 <p>The buffer receives a DWORD value that indicates the Terminal Services session identifier associated with the token. If the token is associated with the Terminal Server console session, the session identifier is zero. A nonzero session identifier indicates a Terminal Services client session. In a non-Terminal Services environment, the session identifier is zero. This value is valid starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="TokenGroupsAndPrivileges"></a><a id="tokengroupsandprivileges"></a><a id="TOKENGROUPSANDPRIVILEGES"></a><b>TokenGroupsAndPrivileges</b>
+### -field TokenGroupsAndPrivileges
 
 <dd>
 <p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-groups-and-privileges.md">TOKEN_GROUPS_AND_PRIVILEGES</a> structure that contains the user SID, the group accounts, the restricted SIDs, and the authentication ID associated with the token. This value is valid starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="TokenSessionReference"></a><a id="tokensessionreference"></a><a id="TOKENSESSIONREFERENCE"></a><b>TokenSessionReference</b>
+### -field TokenSessionReference
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="TokenSandBoxInert"></a><a id="tokensandboxinert"></a><a id="TOKENSANDBOXINERT"></a><b>TokenSandBoxInert</b>
+### -field TokenSandBoxInert
 
 <dd>
 <p>The buffer receives a DWORD value that is nonzero if the token includes the SANDBOX_INERT flag. This value is valid starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="TokenAuditPolicy"></a><a id="tokenauditpolicy"></a><a id="TOKENAUDITPOLICY"></a><b>TokenAuditPolicy</b>
+### -field TokenAuditPolicy
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="TokenOrigin"></a><a id="tokenorigin"></a><a id="TOKENORIGIN"></a><b>TokenOrigin</b>
+### -field TokenOrigin
 
 <dd>
 <p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-origin.md">TOKEN_ORIGIN</a> value. </p>
@@ -201,145 +201,145 @@ typedef enum _TOKEN_INFORMATION_CLASS {
 <p> This value is valid starting with Windows Server 2003.</p>
 </dd>
 
-### -field <a id="TokenLinkedToken"></a><a id="tokenlinkedtoken"></a><a id="TOKENLINKEDTOKEN"></a><b>TokenLinkedToken</b>
+### -field TokenLinkedToken
 
 <dd>
 <p>The buffer receives a <a href="security.token_linked_token">TOKEN_LINKED_TOKEN</a> structure that contains a handle to another token that is linked to this token. This value is valid starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="TokenElevation"></a><a id="tokenelevation"></a><a id="TOKENELEVATION"></a><b>TokenElevation</b>
+### -field TokenElevation
 
 <dd>
 <p>The buffer receives a <a href="security.token_elevation">TOKEN_ELEVATION</a> structure that specifies whether the token is elevated. This value is valid starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="TokenHasRestrictions"></a><a id="tokenhasrestrictions"></a><a id="TOKENHASRESTRICTIONS"></a><b>TokenHasRestrictions</b>
+### -field TokenHasRestrictions
 
 <dd>
 <p>The buffer receives a <b>DWORD</b> value that is nonzero if the token has ever been filtered. This value is valid starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="TokenAccessInformation"></a><a id="tokenaccessinformation"></a><a id="TOKENACCESSINFORMATION"></a><b>TokenAccessInformation</b>
+### -field TokenAccessInformation
 
 <dd>
 <p>The buffer receives a <a href="security.token_access_information">TOKEN_ACCESS_INFORMATION</a> structure that specifies  security information contained in the token. This value is valid starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="TokenVirtualizationAllowed"></a><a id="tokenvirtualizationallowed"></a><a id="TOKENVIRTUALIZATIONALLOWED"></a><b>TokenVirtualizationAllowed</b>
+### -field TokenVirtualizationAllowed
 
 <dd>
 <p>The buffer receives a <b>DWORD</b> value that is nonzero if  <a href="security.v_gly#_security_virtualization_gly#_security_virtualization_gly"><i>virtualization</i></a> is allowed for the token. This value is valid starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="TokenVirtualizationEnabled"></a><a id="tokenvirtualizationenabled"></a><a id="TOKENVIRTUALIZATIONENABLED"></a><b>TokenVirtualizationEnabled</b>
+### -field TokenVirtualizationEnabled
 
 <dd>
 <p>The buffer receives a <b>DWORD</b> value that is nonzero if  <a href="security.v_gly#_security_virtualization_gly#_security_virtualization_gly"><i>virtualization</i></a> is enabled for the token. This value is valid starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="TokenIntegrityLevel"></a><a id="tokenintegritylevel"></a><a id="TOKENINTEGRITYLEVEL"></a><b>TokenIntegrityLevel</b>
+### -field TokenIntegrityLevel
 
 <dd>
 <p>The buffer receives a <a href="security.token_mandatory_label">TOKEN_MANDATORY_LABEL</a> structure that specifies the token's integrity level. This value is valid starting with Windows Vista. For <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a> the output is the actual integrity level  (<b>DWORD</b>).</p>
 </dd>
 
-### -field <a id="TokenUIAccess"></a><a id="tokenuiaccess"></a><a id="TOKENUIACCESS"></a><b>TokenUIAccess</b>
+### -field TokenUIAccess
 
 <dd>
 <p>The buffer receives a <b>DWORD</b> value that is nonzero if  the token has the UIAccess flag set. This value is valid starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="TokenMandatoryPolicy"></a><a id="tokenmandatorypolicy"></a><a id="TOKENMANDATORYPOLICY"></a><b>TokenMandatoryPolicy</b>
+### -field TokenMandatoryPolicy
 
 <dd>
 <p>The buffer receives a <a href="security.token_mandatory_policy">TOKEN_MANDATORY_POLICY</a> structure that specifies the token's mandatory integrity policy. This value is valid starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="TokenLogonSid"></a><a id="tokenlogonsid"></a><a id="TOKENLOGONSID"></a><b>TokenLogonSid</b>
+### -field TokenLogonSid
 
 <dd>
 <p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-groups.md">TOKEN_GROUPS</a> structure that specifies the token's logon SID. This value is valid starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="TokenIsAppContainer"></a><a id="tokenisappcontainer"></a><a id="TOKENISAPPCONTAINER"></a><b>TokenIsAppContainer</b>
+### -field TokenIsAppContainer
 
 <dd>
 <p>The buffer receives a <b>DWORD</b> value that is nonzero if  the token has the application container flag set. This value is valid starting with Windows 8.</p>
 </dd>
 
-### -field <a id="TokenCapabilities"></a><a id="tokencapabilities"></a><a id="TOKENCAPABILITIES"></a><b>TokenCapabilities</b>
+### -field TokenCapabilities
 
 <dd>
 <p>The buffer receives a <b>TOKEN_GROUPS</b> structure and an array of <b>SID_AND_ATTRIBUTES</b> structures for each token capability. This value is valid starting with Windows 8.</p>
 </dd>
 
-### -field <a id="TokenAppContainerSid"></a><a id="tokenappcontainersid"></a><a id="TOKENAPPCONTAINERSID"></a><b>TokenAppContainerSid</b>
+### -field TokenAppContainerSid
 
 <dd>
 <p>The buffer receives a <b>TOKEN_APPCONTAINER_INFORMATION</b> structure that contains the AppContainerSid associated with the token. If the token is not associated with an app container, the TokenAppContainer member of the <b>TOKEN_APPCONTAINER_INFORMATION</b> structure points to NULL. This value is valid starting with Windows 8.</p>
 </dd>
 
-### -field <a id="TokenAppContainerNumber"></a><a id="tokenappcontainernumber"></a><a id="TOKENAPPCONTAINERNUMBER"></a><b>TokenAppContainerNumber</b>
+### -field TokenAppContainerNumber
 
 <dd>
 <p>The buffer receives a <b>DWORD</b> value that is the application container number. This value is valid starting with Windows 8.</p>
 </dd>
 
-### -field <a id="TokenUserClaimAttributes"></a><a id="tokenuserclaimattributes"></a><a id="TOKENUSERCLAIMATTRIBUTES"></a><b>TokenUserClaimAttributes</b>
+### -field TokenUserClaimAttributes
 
 <dd>
 <p>The buffer receives a <a href="security.token_mandatory_policy">CLAIM_SECURITY_ATTRIBUTES_INFORMATION</a> structure that specifies the user's claim attributes. This value is valid starting with Windows 8.</p>
 </dd>
 
-### -field <a id="TokenDeviceClaimAttributes"></a><a id="tokendeviceclaimattributes"></a><a id="TOKENDEVICECLAIMATTRIBUTES"></a><b>TokenDeviceClaimAttributes</b>
+### -field TokenDeviceClaimAttributes
 
 <dd>
 <p>The buffer receives a <a href="security.token_mandatory_policy">CLAIM_SECURITY_ATTRIBUTES_INFORMATION</a> structure that specifies the device's claim attributes. This value is valid starting with Windows 8.</p>
 </dd>
 
-### -field <a id="TokenRestrictedUserClaimAttributes"></a><a id="tokenrestricteduserclaimattributes"></a><a id="TOKENRESTRICTEDUSERCLAIMATTRIBUTES"></a><b>TokenRestrictedUserClaimAttributes</b>
+### -field TokenRestrictedUserClaimAttributes
 
 <dd>
 <p>Reserved for system use. </p>
 </dd>
 
-### -field <a id="TokenRestrictedDeviceClaimAttributes"></a><a id="tokenrestricteddeviceclaimattributes"></a><a id="TOKENRESTRICTEDDEVICECLAIMATTRIBUTES"></a><b>TokenRestrictedDeviceClaimAttributes</b>
+### -field TokenRestrictedDeviceClaimAttributes
 
 <dd>
 <p>Reserved for system use. </p>
 </dd>
 
-### -field <a id="TokenDeviceGroups"></a><a id="tokendevicegroups"></a><a id="TOKENDEVICEGROUPS"></a><b>TokenDeviceGroups</b>
+### -field TokenDeviceGroups
 
 <dd>
 <p>The buffer receives a <b>TOKEN_GROUPS</b> structure and an array of <b>SID_AND_ATTRIBUTES</b> structures for each device group. This value is valid starting with Windows 8.</p>
 </dd>
 
-### -field <a id="TokenRestrictedDeviceGroups"></a><a id="tokenrestricteddevicegroups"></a><a id="TOKENRESTRICTEDDEVICEGROUPS"></a><b>TokenRestrictedDeviceGroups</b>
+### -field TokenRestrictedDeviceGroups
 
 <dd>
 <p>Reserved for system use. </p>
 </dd>
 
-### -field <a id="TokenSecurityAttributes"></a><a id="tokensecurityattributes"></a><a id="TOKENSECURITYATTRIBUTES"></a><b>TokenSecurityAttributes</b>
+### -field TokenSecurityAttributes
 
 <dd>
 <p>Reserved for system use. </p>
 </dd>
 
-### -field <a id="TokenIsRestricted"></a><a id="tokenisrestricted"></a><a id="TOKENISRESTRICTED"></a><b>TokenIsRestricted</b>
+### -field TokenIsRestricted
 
 <dd>
 <p>Reserved for system use. </p>
 </dd>
 
-### -field <a id="TokenProcessTrustLevel"></a><a id="tokenprocesstrustlevel"></a><a id="TOKENPROCESSTRUSTLEVEL"></a><b>TokenProcessTrustLevel</b>
+### -field TokenProcessTrustLevel
 
 <dd>
 <p>Reserved for system use. </p>
 </dd>
 
-### -field <a id="MaxTokenInfoClass"></a><a id="maxtokeninfoclass"></a><a id="MAXTOKENINFOCLASS"></a><b>MaxTokenInfoClass</b>
+### -field MaxTokenInfoClass
 
 <dd>
 <p>The maximum value for this enumeration.</p>
@@ -422,4 +422,4 @@ typedef enum _TOKEN_INFORMATION_CLASS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TOKEN_INFORMATION_CLASS enumeration%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TOKEN_INFORMATION_CLASS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

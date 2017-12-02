@@ -55,7 +55,7 @@ BOOLEAN RtlIsNtDdiVersionAvailable(
 ## -parameters
 <dl>
 
-### -param <i>Version</i> [in]
+### -param Version [in]
 
 <dd>
 <p>The version of the Windows DDI that is available. The following table lists the possible values for the <i>Version</i> parameter.</p>

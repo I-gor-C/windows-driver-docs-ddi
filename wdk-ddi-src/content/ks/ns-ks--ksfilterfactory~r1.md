@@ -56,22 +56,22 @@ typedef struct _KSFILTERFACTORY {
 ## -struct-fields
 <dl>
 
-### -field <b>FilterDescriptor</b>
+### -field FilterDescriptor
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksfilter-descriptor.md">KSFILTER_DESCRIPTOR</a> structure that describes the characteristics of filters created by this factory.</p>
 </dd>
 
-### -field <b>Bag</b>
+### -field Bag
 
 <dd>
-<p>This member specifies the KSOBJECT_BAG (equivalent to type PVOID) associated with this filter factory. Object bags are structures used to associate dynamic memory with a specific AVStream object. Anything in the filter factory object bag is automatically cleaned up when the filter factory is deleted. See the conceptual section on <a href="NULL">Object Bags</a> for more information.</p>
+<p>This member specifies the KSOBJECT_BAG (equivalent to type PVOID) associated with this filter factory. Object bags are structures used to associate dynamic memory with a specific AVStream object. Anything in the filter factory object bag is automatically cleaned up when the filter factory is deleted. See the conceptual section on <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a> for more information.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
-<p>A pointer to a memory address that the client may use to associate context information with the filter factory. AVStream does not use this member in any way. Note that any dynamic memory associated with the filter factory should be placed in the object bag with <b>KsAddItemToObjectBag</b>. <b>Context</b> is initialized to the value of the <b>Context</b> member of the parent <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> at the time the factory is created. See <a href="NULL">AVStream Object Hierarchy</a>.</p>
+<p>A pointer to a memory address that the client may use to associate context information with the filter factory. AVStream does not use this member in any way. Note that any dynamic memory associated with the filter factory should be placed in the object bag with <b>KsAddItemToObjectBag</b>. <b>Context</b> is initialized to the value of the <b>Context</b> member of the parent <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> at the time the factory is created. See <a href="https://msdn.microsoft.com/b7d6f06d-6c97-414e-a453-d375e2d7ccf5">AVStream Object Hierarchy</a>.</p>
 </dd>
 </dl>
 
@@ -84,7 +84,7 @@ typedef struct _KSFILTERFACTORY {
 
 <p>For the purposes of synchronization, the lifetime of filter factories created implicitly is defined as the interval starting when the client's device create dispatch function is (or would be) called and ending after the client's device PnP remove dispatch function is (or would be) called. The lifetime of filter factories created explicitly by calling <a href="..\ks\nf-ks-kscreatefilterfactory.md">KsCreateFilterFactory</a> starts immediately after that call returns.</p>
 
-<p>Also see <a href="NULL">Object Bags</a>.</p>
+<p>Also see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a>.</p>
 
 ## -requirements
 <table>

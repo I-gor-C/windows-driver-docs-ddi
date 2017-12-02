@@ -59,37 +59,37 @@ typedef enum _D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_EPT_UNINITIALIZED"></a><a id="d3dkmdt_ept_uninitialized"></a><b>D3DKMDT_EPT_UNINITIALIZED</b>
+### -field D3DKMDT_EPT_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_EPT_VIDPNSOURCE"></a><a id="d3dkmdt_ept_vidpnsource"></a><b>D3DKMDT_EPT_VIDPNSOURCE</b>
+### -field D3DKMDT_EPT_VIDPNSOURCE
 
 <dd>
 <p>Indicates that a video present source is the pivot of the enumeration.</p>
 </dd>
 
-### -field <a id="D3DKMDT_EPT_VIDPNTARGET"></a><a id="d3dkmdt_ept_vidpntarget"></a><b>D3DKMDT_EPT_VIDPNTARGET</b>
+### -field D3DKMDT_EPT_VIDPNTARGET
 
 <dd>
 <p>Indicates that a video present target is the pivot of the enumeration.</p>
 </dd>
 
-### -field <a id="D3DKMDT_EPT_SCALING"></a><a id="d3dkmdt_ept_scaling"></a><b>D3DKMDT_EPT_SCALING</b>
+### -field D3DKMDT_EPT_SCALING
 
 <dd>
 <p>Indicates that the scaling transformation is the pivot of the enumeration.</p>
 </dd>
 
-### -field <a id="D3DKMDT_EPT_ROTATION"></a><a id="d3dkmdt_ept_rotation"></a><b>D3DKMDT_EPT_ROTATION</b>
+### -field D3DKMDT_EPT_ROTATION
 
 <dd>
 <p>Indicates that the rotatation transformation is the pivot of the enumeration.</p>
 </dd>
 
-### -field <a id="D3DKMDT_EPT_NOPIVOT"></a><a id="d3dkmdt_ept_nopivot"></a><b>D3DKMDT_EPT_NOPIVOT</b>
+### -field D3DKMDT_EPT_NOPIVOT
 
 <dd>
 <p>Indicates that the enumeration has no pivot.</p>

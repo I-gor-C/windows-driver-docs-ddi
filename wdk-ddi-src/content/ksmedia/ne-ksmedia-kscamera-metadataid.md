@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="MetadataId_Standard_Start"></a><a id="metadataid_standard_start"></a><a id="METADATAID_STANDARD_START"></a><b>MetadataId_Standard_Start</b>
+### -field MetadataId_Standard_Start
 
 <dd>
 <p>This represent the standard start metadata ID.</p>
 </dd>
 
-### -field <a id="MetadataId_PhotoConfirmation"></a><a id="metadataid_photoconfirmation"></a><a id="METADATAID_PHOTOCONFIRMATION"></a><b>MetadataId_PhotoConfirmation</b>
+### -field MetadataId_PhotoConfirmation
 
 <dd>
 <p>This represents the photo confirmation metadata ID</p>
 </dd>
 
-### -field <a id="MetadataId_Standard_End"></a><a id="metadataid_standard_end"></a><a id="METADATAID_STANDARD_END"></a><b>MetadataId_Standard_End</b>
+### -field MetadataId_Standard_End
 
 <dd>
 <p>This represent the standard end  metadata ID.</p>
 </dd>
 
-### -field <a id="MetadataId_Custom_Start"></a><a id="metadataid_custom_start"></a><a id="METADATAID_CUSTOM_START"></a><b>MetadataId_Custom_Start</b>
+### -field MetadataId_Custom_Start
 
 <dd>
 <p>This represents the lowest acceptable custom metadata ID.</p>

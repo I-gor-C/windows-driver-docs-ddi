@@ -54,7 +54,7 @@ typedef struct _D3DHAL_DP2TRIANGLEFAN_IMM {
 ## -struct-fields
 <dl>
 
-### -field <b>dwEdgeFlags</b>
+### -field dwEdgeFlags
 
 <dd>
 <p>Specifies a bitmask that identifies which of the fan's outside edges should be rendered when the fill mode is D3DFILL_WIREFRAME. A set bit indicates that its corresponding edge should be rendered. For more information about this bitmask, see the Remarks section.</p>

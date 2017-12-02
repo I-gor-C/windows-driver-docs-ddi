@@ -61,35 +61,35 @@ typedef enum D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO"></a><a id="dxgkmt_multiplane_overlay_stereo_format_mono"></a><b>DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO</b>
+### -field DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO
 
 <dd></dd>
 
-### -field <a id="D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_HORIZONTAL"></a><a id="d3dkmt_multiplane_overlay_stereo_format_horizontal"></a><b>D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_HORIZONTAL</b>
+### -field D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_HORIZONTAL
 
 <dd></dd>
 
-### -field <a id="D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_VERTICAL"></a><a id="d3dkmt_multiplane_overlay_stereo_format_vertical"></a><b>D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_VERTICAL</b>
+### -field D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_VERTICAL
 
 <dd></dd>
 
-### -field <a id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_SEPARATE"></a><a id="dxgkmt_multiplane_overlay_stereo_format_separate"></a><b>DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_SEPARATE</b>
+### -field DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_SEPARATE
 
 <dd></dd>
 
-### -field <a id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO_OFFSET"></a><a id="dxgkmt_multiplane_overlay_stereo_format_mono_offset"></a><b>DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO_OFFSET</b>
+### -field DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO_OFFSET
 
 <dd></dd>
 
-### -field <a id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_ROW_INTERLEAVED"></a><a id="dxgkmt_multiplane_overlay_stereo_format_row_interleaved"></a><b>DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_ROW_INTERLEAVED</b>
+### -field DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_ROW_INTERLEAVED
 
 <dd></dd>
 
-### -field <a id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_COLUMN_INTERLEAVED"></a><a id="dxgkmt_multiplane_overlay_stereo_format_column_interleaved"></a><b>DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_COLUMN_INTERLEAVED</b>
+### -field DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_COLUMN_INTERLEAVED
 
 <dd></dd>
 
-### -field <a id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_CHECKERBOARD"></a><a id="dxgkmt_multiplane_overlay_stereo_format_checkerboard"></a><b>DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_CHECKERBOARD</b>
+### -field DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_CHECKERBOARD
 
 <dd></dd>
 </dl>

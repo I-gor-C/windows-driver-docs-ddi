@@ -56,13 +56,13 @@ typedef struct _T0_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Lc</b>
+### -field Lc
 
 <dd>
 <p>Number of data bytes in the request.</p>
 </dd>
 
-### -field <b>Le</b>
+### -field Le
 
 <dd>
 <p>Number of expected bytes from the card.</p>

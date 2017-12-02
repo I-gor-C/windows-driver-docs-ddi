@@ -78,28 +78,28 @@ typedef struct _IRP {
 ## -struct-fields
 <dl>
 
-### -field <b>MdlAddress</b>
+### -field MdlAddress
 
 <dd>
 <p>Pointer to an MDL describing a user buffer, if the driver is using direct I/O, and the IRP major function code is one of the following:</p>
 <p></p>
 <dl>
 
-### -field <a id="IRP_MJ_READ"></a><a id="irp_mj_read"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
+### -field IRP_MJ_READ
 
 
 <dd>
 <p>The MDL describes an empty buffer that the device or driver fills in.</p>
 </dd>
 
-### -field <a id="IRP_MJ_WRITE"></a><a id="irp_mj_write"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
+### -field IRP_MJ_WRITE
 
 
 <dd>
 <p>The MDL describes a buffer that contains data for the device or driver.</p>
 </dd>
 
-### -field <a id="IRP_MJ_DEVICE_CONTROL_or_IRP_MJ_INTERNAL_DEVICE_CONTROL"></a><a id="irp_mj_device_control_or_irp_mj_internal_device_control"></a><a id="IRP_MJ_DEVICE_CONTROL_OR_IRP_MJ_INTERNAL_DEVICE_CONTROL"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff548649">IRP_MJ_DEVICE_CONTROL</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff550766">IRP_MJ_INTERNAL_DEVICE_CONTROL</a>
+### -field IRP_MJ_DEVICE_CONTROL or IRP_MJ_INTERNAL_DEVICE_CONTROL
 
 
 <dd>
@@ -111,7 +111,7 @@ typedef struct _IRP {
 <p>If the driver is not using direct I/O, this pointer is <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>File system drivers use this field, which is read-only for all drivers. Network and, possibly, highest-level device drivers also might read this field. This field is set either to zero or to the bitwise-OR of one or more of the following system-defined flag bits:</p>
@@ -170,18 +170,18 @@ typedef struct _IRP {
 </dl>
 </dd>
 
-### -field <b>AssociatedIrp</b>
+### -field AssociatedIrp
 
 <dd>
 <dl>
 
-### -field <b>MasterIrp</b>
+### -field MasterIrp
 
 <dd>
 <p>Pointer to the master IRP in an IRP that was created by a highest-level driver's call to <a href="..\ntddk\nf-ntddk-iomakeassociatedirp.md">IoMakeAssociatedIrp</a>.</p>
 </dd>
 
-### -field <b>SystemBuffer</b>
+### -field SystemBuffer
 
 <dd>
 <p>Pointer to a system-space buffer.</p>
@@ -189,21 +189,21 @@ typedef struct _IRP {
 <p></p>
 <dl>
 
-### -field <a id="IRP_MJ_READ"></a><a id="irp_mj_read"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
+### -field IRP_MJ_READ
 
 
 <dd>
 <p>The buffer receives data from the device or driver. The buffer's length is specified by <b>Parameters.Read.Length</b> in the driver's <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> structure.</p>
 </dd>
 
-### -field <a id="IRP_MJ_WRITE"></a><a id="irp_mj_write"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
+### -field IRP_MJ_WRITE
 
 
 <dd>
 <p>The buffer supplies data for the device or driver. The buffer's length is specified by <b>Parameters.Write.Length</b> in the driver's <b>IO_STACK_LOCATION</b> structure.</p>
 </dd>
 
-### -field <a id="IRP_MJ_DEVICE_CONTROL_or_IRP_MJ_INTERNAL_DEVICE_CONTROL"></a><a id="irp_mj_device_control_or_irp_mj_internal_device_control"></a><a id="IRP_MJ_DEVICE_CONTROL_OR_IRP_MJ_INTERNAL_DEVICE_CONTROL"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff548649">IRP_MJ_DEVICE_CONTROL</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff550766">IRP_MJ_INTERNAL_DEVICE_CONTROL</a>
+### -field IRP_MJ_DEVICE_CONTROL or IRP_MJ_INTERNAL_DEVICE_CONTROL
 
 
 <dd>
@@ -217,21 +217,21 @@ typedef struct _IRP {
 <p></p>
 <dl>
 
-### -field <a id="IRP_MJ_READ"></a><a id="irp_mj_read"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
+### -field IRP_MJ_READ
 
 
 <dd>
 <p><b>NULL</b>.</p>
 </dd>
 
-### -field <a id="IRP_MJ_WRITE"></a><a id="irp_mj_write"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
+### -field IRP_MJ_WRITE
 
 
 <dd>
 <p><b>NULL</b>.</p>
 </dd>
 
-### -field <a id="IRP_MJ_DEVICE_CONTROL_or_IRP_MJ_INTERNAL_DEVICE_CONTROL"></a><a id="irp_mj_device_control_or_irp_mj_internal_device_control"></a><a id="IRP_MJ_DEVICE_CONTROL_OR_IRP_MJ_INTERNAL_DEVICE_CONTROL"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff548649">IRP_MJ_DEVICE_CONTROL</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff550766">IRP_MJ_INTERNAL_DEVICE_CONTROL</a>
+### -field IRP_MJ_DEVICE_CONTROL or IRP_MJ_INTERNAL_DEVICE_CONTROL
 
 
 <dd>
@@ -244,43 +244,43 @@ typedef struct _IRP {
 </dl>
 </dd>
 
-### -field <b>IoStatus</b>
+### -field IoStatus
 
 <dd>
 <p>Contains the <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure in which a driver stores status and information before calling <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>.</p>
 </dd>
 
-### -field <b>RequestorMode</b>
+### -field RequestorMode
 
 <dd>
 <p>Indicates the execution mode of the original requester of the operation, one of <b>UserMode</b> or <b>KernelMode</b>. </p>
 </dd>
 
-### -field <b>PendingReturned</b>
+### -field PendingReturned
 
 <dd>
 <p>If set to <b>TRUE</b>, a driver has marked the IRP pending. Each <a href="..\wdm\nc-wdm-io-completion-routine.md">IoCompletion</a> routine should check the value of this flag. If the flag is <b>TRUE</b>, and if the IoCompletion routine will not return STATUS_MORE_PROCESSING_REQUIRED, the routine should call <a href="..\wdm\nf-wdm-iomarkirppending.md">IoMarkIrpPending</a> to propagate the pending status to drivers above it in the device stack.</p>
 </dd>
 
-### -field <b>Cancel</b>
+### -field Cancel
 
 <dd>
 <p>If set to <b>TRUE</b>, the IRP either is or should be canceled.</p>
 </dd>
 
-### -field <b>CancelIrql</b>
+### -field CancelIrql
 
 <dd>
 <p>Contains the IRQL at which a driver is running when <a href="kernel.ioacquirecancelspinlock">IoAcquireCancelSpinLock</a> is called.</p>
 </dd>
 
-### -field <b>CancelRoutine</b>
+### -field CancelRoutine
 
 <dd>
 <p>Contains the entry point for a driver-supplied <a href="kernel.cancel">Cancel</a> routine to be called if the IRP is canceled. <b>NULL</b> indicates that the IRP is not currently cancelable.</p>
 </dd>
 
-### -field <b>UserBuffer</b>
+### -field UserBuffer
 
 <dd>
 <p>Contains the address of an output buffer if both of the following conditions apply:</p>
@@ -291,35 +291,35 @@ typedef struct _IRP {
 <p>For METHOD_BUFFERED, the driver should use the buffer pointed to by <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> as the output buffer. When the driver completes the request, the I/O manager copies the contents of this buffer to the output buffer that is pointed to by <b>Irp-&gt;UserBuffer</b>. The driver should not write directly to the buffer pointed to by <b>Irp-&gt;UserBuffer</b>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540663">Buffer Descriptions for I/O Control Codes</a>.</p>
 </dd>
 
-### -field <b>Tail</b>
+### -field Tail
 
 <dd>
 <dl>
 
-### -field <b>Overlay</b>
+### -field Overlay
 
 <dd>
 <dl>
 
-### -field <b>DeviceQueueEntry</b>
+### -field DeviceQueueEntry
 
 <dd>
 <p>If IRPs are queued in the device queue associated with the driver's device object, this field links IRPs in the device queue. These links can be used only while the driver is processing the IRP.</p>
 </dd>
 
-### -field <b>DriverContext</b>
+### -field DriverContext
 
 <dd>
 <p>If IRPs are not queued in the device queue associated with the driver's device object, this field can be used by the driver to store up to four pointers. This field can be used only while the driver owns the IRP.</p>
 </dd>
 
-### -field <b>Thread</b>
+### -field Thread
 
 <dd>
 <p>A pointer to the caller's thread control block (TCB). For requests that originate in user-mode, the I/O manager always sets this field to point to the TCB of the thread that issued the request.</p>
 </dd>
 
-### -field <b>ListEntry</b>
+### -field ListEntry
 
 <dd>
 <p>If a driver manages its own internal queues of IRPs, it uses this field to link one IRP to the next. These links can be used only while the driver is holding the IRP in its queue or is processing the IRP.</p>

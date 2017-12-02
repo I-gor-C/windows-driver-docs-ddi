@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY DestroyQuery(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hQuery</i> [in]
+### -param hQuery [in]
 
 <dd>
 <p> A handle to the query that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createquery.md">CreateQuery</a> function created.</p>

@@ -57,19 +57,19 @@ typedef struct _CM_SERIAL_DEVICE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of this structure.</p>
 </dd>
 
-### -field <b>Revision</b>
+### -field Revision
 
 <dd>
 <p>The revision of this structure.</p>
 </dd>
 
-### -field <b>BaudClock</b>
+### -field BaudClock
 
 <dd>
 <p>The clock baud rate, in megahertz, at which data is transferred.</p>

@@ -54,7 +54,7 @@ typedef struct _SetLoadBalancePolicy_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>LoadBalancePolicies</b>
+### -field LoadBalancePolicies
 
 <dd>
 <p>A structure that contains the information that is required for setting the load balance policy.</p>

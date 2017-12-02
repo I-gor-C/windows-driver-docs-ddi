@@ -54,7 +54,7 @@ typedef struct _MOUNTMGR_CHANGE_NOTIFY_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>EpicNumber</b>
+### -field EpicNumber
 
 <dd>
 <p>Contains the value of a counter used by the mount manager to determine if a client has up-to-date information concerning changes in mount manager's persistent ID database. </p>
@@ -62,7 +62,7 @@ typedef struct _MOUNTMGR_CHANGE_NOTIFY_INFO {
 </dl>
 
 ## -remarks
-<p>For a general discussion of the mount manager and how it communicates with its clients, see <a href="NULL">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
+<p>For a general discussion of the mount manager and how it communicates with its clients, see <a href="storage.supporting_mount_manager_requests_in_a_storage_class_driver">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
 
 ## -requirements
 <table>

@@ -87,30 +87,30 @@ typedef struct _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>ZonedDeviceCapabilities</b>
+### -field ZonedDeviceCapabilities
 
 <dd>
 <dl>
 
-### -field <b>URSWRZ</b>
+### -field URSWRZ
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Valid</b>
+### -field Valid
 
 <dd>
 <p>N/A</p>
@@ -118,18 +118,18 @@ typedef struct _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO {
 </dl>
 </dd>
 
-### -field <b>ZonedDeviceSettings</b>
+### -field ZonedDeviceSettings
 
 <dd>
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Valid</b>
+### -field Valid
 
 <dd>
 <p>N/A</p>
@@ -137,24 +137,24 @@ typedef struct _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO {
 </dl>
 </dd>
 
-### -field <b>OptimalNumberOfOpenSequentialWritePreferredZones</b>
+### -field OptimalNumberOfOpenSequentialWritePreferredZones
 
 <dd>
 <dl>
 
-### -field <b>Number</b>
+### -field Number
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Valid</b>
+### -field Valid
 
 <dd>
 <p>N/A</p>
@@ -162,24 +162,24 @@ typedef struct _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO {
 </dl>
 </dd>
 
-### -field <b>OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZones</b>
+### -field OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZones
 
 <dd>
 <dl>
 
-### -field <b>Number</b>
+### -field Number
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Valid</b>
+### -field Valid
 
 <dd>
 <p>N/A</p>
@@ -187,24 +187,24 @@ typedef struct _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO {
 </dl>
 </dd>
 
-### -field <b>MaxNumberOfOpenSequentialWriteRequiredZones</b>
+### -field MaxNumberOfOpenSequentialWriteRequiredZones
 
 <dd>
 <dl>
 
-### -field <b>Number</b>
+### -field Number
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Valid</b>
+### -field Valid
 
 <dd>
 <p>N/A</p>
@@ -212,24 +212,24 @@ typedef struct _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO {
 </dl>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <dl>
 
-### -field <b>ZacMinorVersion</b>
+### -field ZacMinorVersion
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Valid</b>
+### -field Valid
 
 <dd>
 <p>N/A</p>
@@ -237,7 +237,7 @@ typedef struct _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO {
 </dl>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>N/A</p>

@@ -56,19 +56,19 @@ NTSTATUS IoReadDiskSignature(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Specifies the device object for the disk to read.</p>
 </dd>
 
-### -param <i>BytesPerSector</i> [in]
+### -param BytesPerSector [in]
 
 <dd>
 <p>Specifies the number of bytes per sector of the disk.</p>
 </dd>
 
-### -param <i>Signature</i> [out]
+### -param Signature [out]
 
 <dd>
 <p>Pointer to a <a href="..\ntddk\ns-ntddk--disk-signature.md">DISK_SIGNATURE</a> structure the routine uses to return the disk signature information.</p>

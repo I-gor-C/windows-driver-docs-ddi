@@ -65,67 +65,67 @@ typedef struct _KEY_FULL_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>LastWriteTime</b>
+### -field LastWriteTime
 
 <dd>
 <p>The last time this key or any of its values changed. This time value is expressed in absolute system time format. Absolute system time is the number of 100-nanosecond intervals since the start of the year 1601 in the Gregorian calendar.</p>
 </dd>
 
-### -field <b>TitleIndex</b>
+### -field TitleIndex
 
 <dd>
 <p>Device and intermediate drivers should ignore this member.</p>
 </dd>
 
-### -field <b>ClassOffset</b>
+### -field ClassOffset
 
 <dd>
 <p>The byte offset from the start of this structure to the <b>Class</b> member.</p>
 </dd>
 
-### -field <b>ClassLength</b>
+### -field ClassLength
 
 <dd>
 <p>The size, in bytes, of the key class name string in the <b>Class</b> array.</p>
 </dd>
 
-### -field <b>SubKeys</b>
+### -field SubKeys
 
 <dd>
 <p>The number of subkeys for this key.</p>
 </dd>
 
-### -field <b>MaxNameLen</b>
+### -field MaxNameLen
 
 <dd>
 <p>The maximum size, in bytes, of any name for a subkey.</p>
 </dd>
 
-### -field <b>MaxClassLen</b>
+### -field MaxClassLen
 
 <dd>
 <p>The maximum size, in bytes, of a class name.</p>
 </dd>
 
-### -field <b>Values</b>
+### -field Values
 
 <dd>
 <p>The number of value entries for this key.</p>
 </dd>
 
-### -field <b>MaxValueNameLen</b>
+### -field MaxValueNameLen
 
 <dd>
 <p>The maximum size, in bytes, of a value entry name.</p>
 </dd>
 
-### -field <b>MaxValueDataLen</b>
+### -field MaxValueDataLen
 
 <dd>
 <p>The maximum size, in bytes, of a value entry data field.</p>
 </dd>
 
-### -field <b>Class</b>
+### -field Class
 
 <dd>
 <p>An array of wide characters that contains the name of the class of the key. This character string is <u>not</u> null-terminated. Only the first element in this array is included in the <b>KEY_FULL_INFORMATION</b> structure definition. The storage for the remaining elements in the array immediately follows this element.</p>

@@ -61,49 +61,49 @@ typedef struct _STORAGE_PHYSICAL_NODE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeId</b>
+### -field NodeId
 
 <dd>
 <p>The hardware ID of the storage node.</p>
 </dd>
 
-### -field <b>AdapterCount</b>
+### -field AdapterCount
 
 <dd>
 <p>A value of 0 or 1 that indicates the adapter count in the storage node.</p>
 </dd>
 
-### -field <b>AdapterDataLength</b>
+### -field AdapterDataLength
 
 <dd>
 <p>The data length of the storage adapter in the storage node,  in units of kilobytes (1024 bytes).</p>
 </dd>
 
-### -field <b>AdapterDataOffset</b>
+### -field AdapterDataOffset
 
 <dd>
 <p>The data offset from the beginning of the data structure. The buffer contains an array of <a href="..\ntddstor\ns-ntddstor--storage-physical-adapter-data.md">STORAGE_PHYSICAL_ADAPTER_DATA</a>.</p>
 </dd>
 
-### -field <b>DeviceCount</b>
+### -field DeviceCount
 
 <dd>
 <p>A value less than or equal to 1.</p>
 </dd>
 
-### -field <b>DeviceDataLength</b>
+### -field DeviceDataLength
 
 <dd>
 <p>The data length of the storage device in the storage node,  in units of kilobytes (1024 bytes).</p>
 </dd>
 
-### -field <b>DeviceDataOffset</b>
+### -field DeviceDataOffset
 
 <dd>
 <p>The data offset from the beginning of the data structure. The buffer contains an array of <a href="..\ntddstor\ns-ntddstor--storage-physical-device-data.md">STORAGE_PHYSICAL_DEVICE_DATA</a>.</p>
 </dd>
 
-### -field <b>Reserved[3]</b>
+### -field Reserved[3]
 
 <dd>
 <p>Specifies if the storage adapter is reserved.</p>

@@ -55,7 +55,7 @@ typedef struct _PDEV_ADJUST_PAPER_MARGIN {
 ## -struct-fields
 <dl>
 
-### -field <b>rcImageableArea</b>
+### -field rcImageableArea
 
 <dd>
 <p>Is a <a href="display.rectl">RECTL</a> structure that specifies the rectangular region that can be printed in. This region is specified in units of 0.001 mm.</p>

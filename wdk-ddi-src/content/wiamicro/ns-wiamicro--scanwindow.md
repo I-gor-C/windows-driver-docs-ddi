@@ -7,7 +7,7 @@ old-location: image\scanwindow.htm
 old-project: image
 ms.assetid: c4b507ac-af32-4949-add0-e19c00e328fe
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: SCANWINDOW, SCANWINDOW, *PSCANWINDOW
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef struct _SCANWINDOW {
 ## -struct-fields
 <dl>
 
-### -field <b>xPos</b>
+### -field xPos
 
 <dd>
 <p>Specifies the horizontal position of the left edge of the scan window in pixels.</p>
 </dd>
 
-### -field <b>yPos</b>
+### -field yPos
 
 <dd>
 <p>Specifies the vertical position of the top edge of the scan window in pixels.</p>
 </dd>
 
-### -field <b>xExtent</b>
+### -field xExtent
 
 <dd>
 <p>Specifies the width of the scan window in pixels.</p>
 </dd>
 
-### -field <b>yExtent</b>
+### -field yExtent
 
 <dd>
 <p>Specifies the height of the scan window in pixels.</p>

@@ -7,7 +7,7 @@ old-location: image\device_descriptor.htm
 old-project: image
 ms.assetid: 15ad337a-0b33-48ba-98cf-6aff2698e2ba
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: DEVICE_DESCRIPTOR, DEVICE_DESCRIPTOR, *PDEVICE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef struct _DEVICE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>usVendorId</b>
+### -field usVendorId
 
 <dd>
 <p>Vendor identifier.</p>
 </dd>
 
-### -field <b>usProductId</b>
+### -field usProductId
 
 <dd>
 <p>Device product identifier.</p>
 </dd>
 
-### -field <b>usBcdDevice</b>
+### -field usBcdDevice
 
 <dd>
 <p>BCD-encoded device version number.</p>
 </dd>
 
-### -field <b>usLanguageId</b>
+### -field usLanguageId
 
 <dd>
 <p><i>Not used</i>.</p>

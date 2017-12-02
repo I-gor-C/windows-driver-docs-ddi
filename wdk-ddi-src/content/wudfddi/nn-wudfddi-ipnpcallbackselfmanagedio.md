@@ -7,7 +7,7 @@ old-location: wdf\ipnpcallbackselfmanagedio.htm
 old-project: wdf
 ms.assetid: 34971df0-4abc-41a1-8d2f-6e36df1daf20
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

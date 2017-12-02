@@ -7,7 +7,7 @@ old-location: netvista\rilopenuicclogicalchannelparammask.htm
 old-project: netvista
 ms.assetid: 28512a46-506b-40c2-a14d-165823bf94fb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILOPENUICCLOGICALCHANNELPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_OULC_SELECTRESPLENGTH"></a><a id="ril_param_oulc_selectresplength"></a><b>RIL_PARAM_OULC_SELECTRESPLENGTH</b>
+### -field RIL_PARAM_OULC_SELECTRESPLENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OULC_SELECTRESPONSE"></a><a id="ril_param_oulc_selectresponse"></a><b>RIL_PARAM_OULC_SELECTRESPONSE</b>
+### -field RIL_PARAM_OULC_SELECTRESPONSE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OULC_ALL"></a><a id="ril_param_oulc_all"></a><b>RIL_PARAM_OULC_ALL</b>
+### -field RIL_PARAM_OULC_ALL
 
 <dd></dd>
 </dl>

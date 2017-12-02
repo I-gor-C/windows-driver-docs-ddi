@@ -55,13 +55,13 @@ typedef struct _D3DKMT_CHECKSHAREDRESOURCEACCESS {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the shared resource to check. </p>
 </dd>
 
-### -field <b>ClientPid</b>
+### -field ClientPid
 
 <dd>
 <p>[in] A UINT value that represents the process identifier (PID) for the client process that requires access to the shared resource that the <b>hProcess</b> member specifies. </p>

@@ -61,31 +61,31 @@ typedef struct _SRBEX_DATA_PNP {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypePnp</b>.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Length of the data in this structure starting with the <b>PnPSubFunction</b> member. Set to SRBEX_DATA_PNP_LENGTH.</p>
 </dd>
 
-### -field <b>PnPSubFunction</b>
+### -field PnPSubFunction
 
 <dd>
 <p>This member is not currently used. Set to 0.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved. Set to 0.</p>
 </dd>
 
-### -field <b>PnPAction</b>
+### -field PnPAction
 
 <dd>
 <p>The plug and play action to perform. This member can have one of the following values:</p>
@@ -97,7 +97,7 @@ typedef struct _SRBEX_DATA_PNP {
 <tr>
 <td width="40%"><a id="StorStartDevice"></a><a id="storstartdevice"></a><a id="STORSTARTDEVICE"></a><dl>
 
-### -field <b>StorStartDevice</b>
+### -field StorStartDevice
 
 
 ### -field 0x00
@@ -111,7 +111,7 @@ typedef struct _SRBEX_DATA_PNP {
 <tr>
 <td width="40%"><a id="StorRemoveDevice"></a><a id="storremovedevice"></a><a id="STORREMOVEDEVICE"></a><dl>
 
-### -field <b>StorRemoveDevice</b>
+### -field StorRemoveDevice
 
 
 ### -field 0x02
@@ -125,7 +125,7 @@ typedef struct _SRBEX_DATA_PNP {
 <tr>
 <td width="40%"><a id="StorStopDevice"></a><a id="storstopdevice"></a><a id="STORSTOPDEVICE"></a><dl>
 
-### -field <b>StorStopDevice</b>
+### -field StorStopDevice
 
 
 ### -field 0x04
@@ -139,7 +139,7 @@ typedef struct _SRBEX_DATA_PNP {
 <tr>
 <td width="40%"><a id="StorQueryCapabilities"></a><a id="storquerycapabilities"></a><a id="STORQUERYCAPABILITIES"></a><dl>
 
-### -field <b>StorQueryCapabilities</b>
+### -field StorQueryCapabilities
 
 
 ### -field 0x09
@@ -153,7 +153,7 @@ typedef struct _SRBEX_DATA_PNP {
 <tr>
 <td width="40%"><a id="StorQueryResourceRequirements"></a><a id="storqueryresourcerequirements"></a><a id="STORQUERYRESOURCEREQUIREMENTS"></a><dl>
 
-### -field <b>StorQueryResourceRequirements</b>
+### -field StorQueryResourceRequirements
 
 
 ### -field 0x0B
@@ -167,7 +167,7 @@ typedef struct _SRBEX_DATA_PNP {
 <tr>
 <td width="40%"><a id="StorFilterResourceRequirements"></a><a id="storfilterresourcerequirements"></a><a id="STORFILTERRESOURCEREQUIREMENTS"></a><dl>
 
-### -field <b>StorFilterResourceRequirements</b>
+### -field StorFilterResourceRequirements
 
 
 ### -field 0x0D
@@ -181,7 +181,7 @@ typedef struct _SRBEX_DATA_PNP {
 <tr>
 <td width="40%"><a id="StorSupriseRemoval"></a><a id="storsupriseremoval"></a><a id="STORSUPRISEREMOVAL"></a><dl>
 
-### -field <b>StorSupriseRemoval</b>
+### -field StorSupriseRemoval
 
 
 ### -field 0x17
@@ -196,13 +196,13 @@ typedef struct _SRBEX_DATA_PNP {
 <p> </p>
 </dd>
 
-### -field <b>SrbPnPFlags</b>
+### -field SrbPnPFlags
 
 <dd>
-<p>Indicates that the PNP request is for the adapter if SRB_PNP_FLAGS_ADAPTER_REQUEST is set and that storage device address is reserved. Otherwise, <i>SrbPnPFlags</i> will be <b>NULL</b>, indicating that the request is for the storage device specified by an address at <b>AddressOffset</b> in the <a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a> structure.</p>
+<p>Indicates that the PNP request is for the adapter if SRB_PNP_FLAGS_ADAPTER_REQUEST is set and that storage device address is reserved. Otherwise, <i>SrbPnPFlags</i> will be <b>NULL</b>, indicating that the request is for the storage device specified by an address at <b>AddressOffset</b> in the <a href="..\storport\ns-storport--storage-request-block.md">STORAGE_REQUEST_BLOCK</a> structure.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>This member is reserved. Set to 0.</p>
@@ -237,7 +237,7 @@ typedef struct _SRBEX_DATA_PNP {
 ## -see-also
 <dl>
 <dt>
-<a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

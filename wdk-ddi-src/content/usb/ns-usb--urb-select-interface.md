@@ -57,19 +57,19 @@ struct _URB_SELECT_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Hdr</b>
+### -field Hdr
 
 <dd>
 <p>Pointer to a <a href="buses._urb_header">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_SELECT_INTERFACE, and <b>Hdr.Length</b> must be the size of the entire URB.</p>
 </dd>
 
-### -field <b>ConfigurationHandle</b>
+### -field ConfigurationHandle
 
 <dd>
 <p>Specifies the handle to the configuration that this interface belongs to. The host controller driver returns this handle when the client selects the configuration with an URB_FUNCTION_SELECT_CONFIGURATION request.</p>
 </dd>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>A variable-length <a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a> structure that specifies the interface and the new alternate setting for that interface, and if required, the new maximum packet sizes for the corresponding pipes. For more information, see Remarks.</p>

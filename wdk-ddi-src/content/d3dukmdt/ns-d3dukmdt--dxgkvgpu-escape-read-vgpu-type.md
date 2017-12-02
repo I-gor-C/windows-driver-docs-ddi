@@ -54,7 +54,7 @@ typedef struct _DXGKVGPU_ESCAPE_READ_VGPU_TYPE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The header that is being processed.</p>

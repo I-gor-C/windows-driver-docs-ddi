@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_create_cq.htm
 old-project: netvista
 ms.assetid: 25F820D4-04AF-488E-BBDA-1E9D82B7483E
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,49 +64,49 @@ NTSTATUS NdkCreateCq(
 ## -parameters
 <dl>
 
-### -param <i>pNdkAdapter</i> [in]
+### -param pNdkAdapter [in]
 
 <dd>
 <p>A pointer to an NDK adapter object (<a href="..\ndkpi\ns-ndkpi--ndk-adapter.md">NDK_ADAPTER</a>).</p>
 </dd>
 
-### -param <i>CqDepth</i> [in]
+### -param CqDepth [in]
 
 <dd>
 <p>The maximum number of completion entries that the CQ can hold. This value must be less than or equal  to the <b>MaxCqDepth</b> value that is specified  in the <a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a> structure.</p>
 </dd>
 
-### -param <i>CqNotification</i> [in]
+### -param CqNotification [in]
 
 <dd>
 <p>A pointer to the <i>NdkCqNotificationCallback</i> function   (<a href="..\ndkpi\nc-ndkpi-ndk-fn-cq-notification-callback.md">NDK_FN_CQ_NOTIFICATION_CALLBACK</a>) that the provider uses to notify the consumer when request completions are queued in the CQ. The provider will not call <i>NdkCqNotificationCallback</i> unless the consumer arms the notification with the <i>NdkArmCq</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-arm-cq.md">NDK_FN_ARM_CQ</a>) function.</p>
 </dd>
 
-### -param <i>CqNotificationContext</i> [in, optional]
+### -param CqNotificationContext [in, optional]
 
 <dd>
 <p>A context value that the NDK provider passes back to the <i>NdkCqNotificationCallback</i> function that is specified in the <i>CqNotification</i> parameter.</p>
 </dd>
 
-### -param <i>Affinity</i> [in, optional]
+### -param Affinity [in, optional]
 
 <dd>
 <p>An affinity mask (<a href="..\miniport\ns-miniport--group-affinity.md">GROUP_AFFINITY</a>) that provides preferred processors that the consumer would choose to run the <i>NdkCqNotificationCallback</i> callbacks. Providers should honor the processor preferences if their underlying hardware allows it, but consumers cannot assume that <i>NdkCqNotificationCallback</i> callbacks will occur only on the preferred processors. Set <i>Affinity</i> to NULL if there are no preferred processors.</p>
 </dd>
 
-### -param <i>CreateCompletion</i> [in]
+### -param CreateCompletion [in]
 
 <dd>
 <p>A pointer to an <i>NdkCreateCompletion</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-create-completion.md">NDK_FN_CREATE_COMPLETION</a>) function that completes the creation of an NDK object.</p>
 </dd>
 
-### -param <i>RequestContext</i> [in, optional]
+### -param RequestContext [in, optional]
 
 <dd>
 <p>A context value that the NDK provider passes back to the <i>NdkCreateCompletion</i> function that is specified in the <i>CreateCompletion</i> parameter.</p>
 </dd>
 
-### -param <i>ppNdkCq</i> 
+### -param ppNdkCq 
 
 <dd>
 <p>A pointer to a completion queue (CQ) object (<a href="..\ndkpi\ns-ndkpi--ndk-cq.md">NDK_CQ</a>) is returned in this location if the request succeeds without returning STATUS_PENDING. If <i>NdkCreateCq</i> returns STATUS_PENDING this parameter is ignored and the created object is returned  with the callback that is specified in the  <i>CreateCompletion</i> parameter.</p>
@@ -206,9 +206,9 @@ NTSTATUS NdkCreateCq(
 <a href="..\ndkpi\nc-ndkpi-ndk-fn-create-completion.md">NDK_FN_CREATE_COMPLETION</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Object Lifetime Requirements</a>
+<a href="netvista.ndkpi_object_lifetime_requirements">NDKPI Object Lifetime Requirements</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_CREATE_CQ callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_CREATE_CQ callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\dot11_peer_statistics.htm
 old-project: netvista
 ms.assetid: 08ea7f19-e086-4d5a-bfc7-de9178d815cd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_PEER_STATISTICS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,40 +58,40 @@ typedef struct _DOT11_PEER_STATISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>ullDecryptSuccessCount</b>
+### -field ullDecryptSuccessCount
 
 <dd>
 <p>The number of received encrypted packets that the peer station successfully decrypted.</p>
 </dd>
 
-### -field <b>ullDecryptFailureCount</b>
+### -field ullDecryptFailureCount
 
 <dd>
 <p>The number of encrypted packets that the peer station failed to decrypt.</p>
 </dd>
 
-### -field <b>ullTxPacketSuccessCount</b>
+### -field ullTxPacketSuccessCount
 
 <dd>
 <p>The number of MAC service data unit (MSDU) packets and MAC management protocol data unit (MMPDU)
      frames that the IEEE MAC sublayer of the peer station successfully transmitted.</p>
 </dd>
 
-### -field <b>ullTxPacketFailureCount</b>
+### -field ullTxPacketFailureCount
 
 <dd>
 <p>The number of MSDU packets and MMPDU frames that the IEEE MAC sublayer of the peer station
      attempted to transmit, but that failed to transmit.</p>
 </dd>
 
-### -field <b>ullRxPacketSuccessCount</b>
+### -field ullRxPacketSuccessCount
 
 <dd>
 <p>The number of MSDU packets and MMPDU frames that the IEEE MAC sublayer of the peer station
      successfully received.</p>
 </dd>
 
-### -field <b>ullRxPacketFailureCount</b>
+### -field ullRxPacketFailureCount
 
 <dd>
 <p>The number of MSDU packets and MMPDU frames that the IEEE MAC sublayer of the peer station
@@ -133,4 +133,4 @@ typedef struct _DOT11_PEER_STATISTICS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PEER_STATISTICS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PEER_STATISTICS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -121,49 +121,49 @@ typedef struct _MONITORREG {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Size, in bytes, of the MONITORREG structure.</p>
 </dd>
 
-### -field <b>fpCreateKey</b>
+### -field fpCreateKey
 
 <dd></dd>
 
-### -field <b>fpOpenKey</b>
+### -field fpOpenKey
 
 <dd></dd>
 
-### -field <b>fpCloseKey</b>
+### -field fpCloseKey
 
 <dd></dd>
 
-### -field <b>fpDeleteKey</b>
+### -field fpDeleteKey
 
 <dd></dd>
 
-### -field <b>fpEnumKey</b>
+### -field fpEnumKey
 
 <dd></dd>
 
-### -field <b>fpQueryInfoKey</b>
+### -field fpQueryInfoKey
 
 <dd></dd>
 
-### -field <b>fpSetValue</b>
+### -field fpSetValue
 
 <dd></dd>
 
-### -field <b>fpDeleteValue</b>
+### -field fpDeleteValue
 
 <dd></dd>
 
-### -field <b>fpEnumValue</b>
+### -field fpEnumValue
 
 <dd></dd>
 
-### -field <b>fpQueryValue</b>
+### -field fpQueryValue
 
 <dd></dd>
 </dl>
@@ -171,7 +171,7 @@ typedef struct _MONITORREG {
 ## -remarks
 <p>The MONITORREG structure's address is supplied in a <a href="..\winsplp\ns-winsplp--monitorinit.md">MONITORINIT</a> structure, which is passed to a print monitor's <a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a> function.</p>
 
-<p>When <a href="NULL">storing port configuration information</a>, print monitors must not explicitly call either the Win32 registry API or the cluster registry API. Instead, they must call equivalent spooler registry functions. The MONITORREG structure supplies the addresses of these functions. The following table lists each spooler registry function and its equivalent cluster registry function.</p>
+<p>When <a href="https://msdn.microsoft.com/b1c83729-d7d2-4920-9402-4e00baa12633">storing port configuration information</a>, print monitors must not explicitly call either the Win32 registry API or the cluster registry API. Instead, they must call equivalent spooler registry functions. The MONITORREG structure supplies the addresses of these functions. The following table lists each spooler registry function and its equivalent cluster registry function.</p>
 
 <p><b>CreateKey</b></p>
 

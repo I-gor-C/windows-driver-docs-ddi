@@ -56,19 +56,19 @@ NTSTATUS RtlSizeTSub(
 ## -parameters
 <dl>
 
-### -param <i>Minuend</i> [in]
+### -param Minuend [in]
 
 <dd>
 <p>The value from which <i>Subtrahend</i> is subtracted.</p>
 </dd>
 
-### -param <i>Subtrahend</i> [in]
+### -param Subtrahend [in]
 
 <dd>
 <p>The value to subtract from <i>Minuend</i>.</p>
 </dd>
 
-### -param <i>pResult</i> [out]
+### -param pResult [out]
 
 <dd>
 <p>A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

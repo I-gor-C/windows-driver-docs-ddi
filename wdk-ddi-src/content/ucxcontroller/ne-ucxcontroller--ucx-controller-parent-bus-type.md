@@ -57,19 +57,19 @@ typedef enum _UCX_CONTROLLER_PARENT_BUS_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UcxControllerParentBusTypeCustom"></a><a id="ucxcontrollerparentbustypecustom"></a><a id="UCXCONTROLLERPARENTBUSTYPECUSTOM"></a><b>UcxControllerParentBusTypeCustom</b>
+### -field UcxControllerParentBusTypeCustom
 
 <dd>
 <p>Custom bus type.</p>
 </dd>
 
-### -field <a id="UcxControllerParentBusTypePci"></a><a id="ucxcontrollerparentbustypepci"></a><a id="UCXCONTROLLERPARENTBUSTYPEPCI"></a><b>UcxControllerParentBusTypePci</b>
+### -field UcxControllerParentBusTypePci
 
 <dd>
 <p>Parent bus is PCI.</p>
 </dd>
 
-### -field <a id="UcxControllerParentBusTypeAcpi"></a><a id="ucxcontrollerparentbustypeacpi"></a><a id="UCXCONTROLLERPARENTBUSTYPEACPI"></a><b>UcxControllerParentBusTypeAcpi</b>
+### -field UcxControllerParentBusTypeAcpi
 
 <dd>
 <p>Parent is ACPI.</p>
@@ -96,7 +96,7 @@ typedef enum _UCX_CONTROLLER_PARENT_BUS_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._ucx_controller_config">UCX_CONTROLLER_CONFIG</a>
+<a href="..\ucxcontroller\ns-ucxcontroller--ucx-controller-config.md">UCX_CONTROLLER_CONFIG</a>
 </dt>
 </dl>
 <p> </p>

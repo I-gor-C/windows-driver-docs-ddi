@@ -58,19 +58,19 @@ HRESULT GetPrinterQueueView(
 ## -parameters
 <dl>
 
-### -param <i> ulViewOffset</i> [in]
+### -param  ulViewOffset [in]
 
 <dd>
 <p>Indicates the start of the range of jobs to be monitored.</p>
 </dd>
 
-### -param <i> ulViewSize</i> [in]
+### -param  ulViewSize [in]
 
 <dd>
 <p>Indicates the size or the range of jobs to be monitored.</p>
 </dd>
 
-### -param <i> ppJobView </i> [out, retval]
+### -param  ppJobView  [out, retval]
 
 <dd>
 <p>IPrinterQueueView object that shows the range of jobs to be monitored.</p>

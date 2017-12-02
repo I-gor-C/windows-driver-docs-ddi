@@ -62,49 +62,49 @@ HRESULT GetFeatureAttribute(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> [in]
+### -param pdevobj [in]
 
 <dd>
 <p>Pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>Is reserved and must be set to zero.</p>
 </dd>
 
-### -param <i>pszFeatureKeyword</i> [in]
+### -param pszFeatureKeyword [in]
 
 <dd>
 <p>Pointer to a caller-supplied buffer containing an ASCII string specifying the single feature keyword to query for. This value can be obtained from a prior call to <a href="print.iprintcoreps2_enumfeatures">IPrintCorePS2::EnumFeatures</a>.</p>
 </dd>
 
-### -param <i>pszAttribute</i> [in]
+### -param pszAttribute [in]
 
 <dd>
 <p>Pointer to a caller-supplied buffer containing an ASCII string specifying the single attribute requested. If this parameter is <b>NULL</b>, the caller is requesting a list of all supported feature attribute names, as opposed to specifying a specific feature attribute name.</p>
 </dd>
 
-### -param <i>pdwDataType</i> [out]
+### -param pdwDataType [out]
 
 <dd>
 <p>Pointer to a memory location that receives a value specifying the data type of the requested attribute. This value is an enumerator of the <a href="..\printoem\ne-printoem--eattribute-datatype.md">EATTRIBUTE_DATATYPE</a> enumeration, which is defined in printoem.h.</p>
 </dd>
 
-### -param <i>pbData</i> [out]
+### -param pbData [out]
 
 <dd>
 <p>Pointer to a caller-supplied buffer that receives the requested data. To simply query for the number of bytes needed to fulfill a request, set this parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>cbSize</i> [in]
+### -param cbSize [in]
 
 <dd>
 <p>Specifies the size, in bytes of the buffer pointed to by <i>pbData</i>.</p>
 </dd>
 
-### -param <i>pcbNeeded</i> [out]
+### -param pcbNeeded [out]
 
 <dd>
 <p>Pointer to a memory location that receives the actual size, in bytes, of the requested data.</p>
@@ -137,7 +137,7 @@ HRESULT GetFeatureAttribute(
 
 <p>This method is supported for any Pscript5 render plug-in.</p>
 
-<p>For more information, see <a href="NULL">Using GetFeatureAttribute</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/e5050cb1-c178-405d-bb0e-fd7827198bca">Using GetFeatureAttribute</a>.</p>
 
 ## -requirements
 <table>

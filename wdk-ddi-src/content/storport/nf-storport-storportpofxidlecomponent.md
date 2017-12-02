@@ -59,31 +59,31 @@ ULONG StorPortPoFxIdleComponent(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Address</i> [in, optional]
+### -param Address [in, optional]
 
 <dd>
 <p>The address of a storage device unit. This parameter is <b>NULL</b> when idling a storage adapter component.</p>
 </dd>
 
-### -param <i>Srb</i> [in, optional]
+### -param Srb [in, optional]
 
 <dd>
 <p>The SRB triggering the component deactivation. This parameter is <b>NULL</b> if the miniport is idling a device component internally.</p>
 </dd>
 
-### -param <i>Component</i> [in]
+### -param Component [in]
 
 <dd>
 <p>The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="..\storport\ns-storport--stor-pofx-device.md">STOR_POFX_DEVICE</a> structure that the miniport driver registered for the device with a call to <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Not used. Set to 0.</p>

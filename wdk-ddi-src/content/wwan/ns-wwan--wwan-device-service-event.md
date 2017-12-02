@@ -7,7 +7,7 @@ old-location: netvista\wwan_device_service_event.htm
 old-project: netvista
 ms.assetid: 7E02DDE0-7D55-4FBD-879E-EFBA6A517D86
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_DEVICE_SERVICE_EVENT, WWAN_DEVICE_SERVICE_EVENT, *PWWAN_DEVICE_SERVICE_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _WWAN_DEVICE_SERVICE_EVENT {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceServiceGuid</b>
+### -field DeviceServiceGuid
 
 <dd>
 <p>The GUID of the device service that the event originated from.</p>
 </dd>
 
-### -field <b>EventID</b>
+### -field EventID
 
 <dd>
 <p>The ID for the event.</p>
 </dd>
 
-### -field <b>uDataSize</b>
+### -field uDataSize
 
 <dd>
 <p>The size, in bytes, of the device service event data that follows the structure instance in memory. This value should not exceed the value of the <b>uMaxCommandDataSize</b> member of the <a href="..\wwan\ns-wwan--wwan-supported-device-services.md">WWAN_SUPPORTED_DEVICE_SERVICES</a> structure.</p>
@@ -109,4 +109,4 @@ typedef struct _WWAN_DEVICE_SERVICE_EVENT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DEVICE_SERVICE_EVENT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DEVICE_SERVICE_EVENT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: sensors\gnss_breadcrumb_list.htm
 old-project: sensors
 ms.assetid: 40C11C4B-2FFE-452F-AA08-2BCD4B6A4F7F
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_BREADCRUMB_LIST, GNSS_BREADCRUMB_LIST, *PGNSS_BREADCRUMB_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>NumCrumbs</b>
+### -field NumCrumbs
 
 <dd>
 <p>The number of breadcrumbs in the <b>IOCTL_GNSS_POP_BREADCRUMBS</b> response.</p>
 </dd>
 
-### -field <b> v1[50]</b>
+### -field  v1[50]
 
 <dd>
 <p>An array of individual breadcrumbs returned in the in the <b>IOCTL_GNSS_POP_BREADCRUMBS</b> response.</p>

@@ -55,7 +55,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>pMachineName</b>
+### -field pMachineName
 
 <dd>
 <p>Specifies the name of the print client.</p>

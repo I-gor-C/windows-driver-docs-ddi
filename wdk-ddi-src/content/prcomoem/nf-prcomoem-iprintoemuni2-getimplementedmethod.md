@@ -55,7 +55,7 @@ STDMETHOD GetImplementedMethod(
 ## -parameters
 <dl>
 
-### -param <i>pMethodName</i> 
+### -param pMethodName 
 
 <dd>
 <p>Caller-supplied pointer to a string that represents the name of an <b>IPrintOemUni2</b> interface method, such as "ImageProcessing" for <b>IPrintOemUni2::ImageProcessing</b> or "FilterGraphics" for <b>IPrintOemUni2::FilterGraphics</b>.</p>

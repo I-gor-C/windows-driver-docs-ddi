@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcsparammask.htm
 old-project: netvista
 ms.assetid: 2cd5afcd-1d69-475f-95ea-165a405d8ee8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,27 +59,27 @@ typedef enum _RILMSGDCSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_MDCS_FLAGS"></a><a id="ril_param_mdcs_flags"></a><b>RIL_PARAM_MDCS_FLAGS</b>
+### -field RIL_PARAM_MDCS_FLAGS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MDCS_MSGCLASS"></a><a id="ril_param_mdcs_msgclass"></a><b>RIL_PARAM_MDCS_MSGCLASS</b>
+### -field RIL_PARAM_MDCS_MSGCLASS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MDCS_ALPHABET"></a><a id="ril_param_mdcs_alphabet"></a><b>RIL_PARAM_MDCS_ALPHABET</b>
+### -field RIL_PARAM_MDCS_ALPHABET
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MDCS_INDICATION"></a><a id="ril_param_mdcs_indication"></a><b>RIL_PARAM_MDCS_INDICATION</b>
+### -field RIL_PARAM_MDCS_INDICATION
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MDCS_LANGUAGE"></a><a id="ril_param_mdcs_language"></a><b>RIL_PARAM_MDCS_LANGUAGE</b>
+### -field RIL_PARAM_MDCS_LANGUAGE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MDCS_ALL"></a><a id="ril_param_mdcs_all"></a><b>RIL_PARAM_MDCS_ALL</b>
+### -field RIL_PARAM_MDCS_ALL
 
 <dd></dd>
 </dl>

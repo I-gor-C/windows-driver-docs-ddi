@@ -58,13 +58,13 @@ typedef struct _D3DHAL_DP2ADDDIRTYBOX {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSurface</b>
+### -field dwSurface
 
 <dd>
 <p>Specifies the handle to the managed 3D resource that contains a dirtied volume texture.</p>
 </dd>
 
-### -field <b>DirtyBox</b>
+### -field DirtyBox
 
 <dd>
 <p>Specifies the volume texture that was marked as dirtied. This is a D3DBOX structure, which is described in the Microsoft Windows SDK documentation. </p>

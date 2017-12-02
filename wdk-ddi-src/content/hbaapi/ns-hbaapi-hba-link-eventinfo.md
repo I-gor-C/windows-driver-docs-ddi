@@ -55,13 +55,13 @@ typedef struct HBA_Link_EventInfo {
 ## -struct-fields
 <dl>
 
-### -field <b>PortFcId</b>
+### -field PortFcId
 
 <dd>
 <p>Indicates the port of type Nx_Port through which the event occurred. For a definition of Nx_Port, see the T11 committee's <i>Fibre Channel HBA API</i>.specification.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. </p>

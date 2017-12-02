@@ -7,7 +7,7 @@ old-location: wdf\wdffdoinitwdmgetphysicaldevice.htm
 old-project: wdf
 ms.assetid: eba64244-50ff-4c59-a30f-46874c683e63
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfFdoInitWdmGetPhysicalDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ PDEVICE_OBJECT WdfFdoInitWdmGetPhysicalDevice(
 ## -parameters
 <dl>
 
-### -param <i>DeviceInit</i> [in]
+### -param DeviceInit [in]
 
 <dd>
 <p>A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure that the driver obtained from its <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> callback function.</p>

@@ -57,25 +57,25 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT {
 ## -struct-fields
 <dl>
 
-### -field <b>NoProtection</b>
+### -field NoProtection
 
 <dd>
 <p>The path is not capable of providing any copy protection.</p>
 </dd>
 
-### -field <b>MacroVisionApsTrigger</b>
+### -field MacroVisionApsTrigger
 
 <dd>
 <p>The path is capable of providing Rovi (formerly Macrovision) analog protection support (APS). </p>
 </dd>
 
-### -field <b>MacroVisionFull</b>
+### -field MacroVisionFull
 
 <dd>
 <p>The path is capable of providing full Rovi (formerly Macrovision) copy protection.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

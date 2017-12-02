@@ -7,7 +7,7 @@ old-location: netvista\ril_setequipmentstate.htm
 old-project: netvista
 ms.assetid: 52b76027-5562-403b-9993-40d3d9a33e35
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SetEquipmentState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_SetEquipmentState(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwEquipmentState</i> 
+### -param dwEquipmentState 
 
 <dd></dd>
 </dl>

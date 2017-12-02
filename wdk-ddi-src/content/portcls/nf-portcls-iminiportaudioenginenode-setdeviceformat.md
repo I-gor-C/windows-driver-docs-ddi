@@ -56,19 +56,19 @@ NTSTATUS SetDeviceFormat(
 ## -parameters
 <dl>
 
-### -param <i>ulNodeId</i> [in]
+### -param ulNodeId [in]
 
 <dd>
 <p>The ID of the node that represents the device.</p>
 </dd>
 
-### -param <i>pFormat</i> [in]
+### -param pFormat [in]
 
 <dd>
 <p>A structure of type <a href="audio.ksdataformat_waveformatex">KSDATAFORMAT_WAVEFORMATEX</a> that represents the audio data format to be set for the device.</p>
 </dd>
 
-### -param <i>ulBufferSize</i> [in]
+### -param ulBufferSize [in]
 
 <dd>
 <p>The audio data buffer size.</p>

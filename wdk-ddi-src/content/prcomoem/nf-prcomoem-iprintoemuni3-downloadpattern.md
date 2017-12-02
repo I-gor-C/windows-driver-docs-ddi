@@ -57,19 +57,19 @@ HRESULT DownloadPattern(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>A pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>psoPattern</i> 
+### -param psoPattern 
 
 <dd>
 <p>A pointer to the <a href="display.surfobj">SURFOBJ</a> structure that contains the pattern to download.</p>
 </dd>
 
-### -param <i>lPatternID</i> 
+### -param lPatternID 
 
 <dd>
 <p>The ID of the pattern to download.</p>

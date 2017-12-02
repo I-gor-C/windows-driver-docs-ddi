@@ -7,7 +7,7 @@ old-location: debugger\getnumberthreads.htm
 old-project: debugger
 ms.assetid: f56da2d0-4c4c-4302-a87b-c672dec25d9f
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSystemObjects2, GetNumberThreads, IDebugSystemObjects2::GetNumberThreads
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetNumberThreads(
 ## -parameters
 <dl>
 
-### -param <i>Number</i> [out]
+### -param Number [out]
 
 <dd>
 <p>Receives the number of threads in the current process.</p>
@@ -62,7 +62,7 @@ HRESULT GetNumberThreads(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

@@ -76,133 +76,133 @@ typedef struct _UCX_CONTROLLER_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size in bytes of this structure.</p>
 </dd>
 
-### -field <b>NumberOfPresentedDeviceMgmtEvtCallbacks</b>
+### -field NumberOfPresentedDeviceMgmtEvtCallbacks
 
 <dd>
 <p>The number of device event callback functions provided by this structure.</p>
 </dd>
 
-### -field <b>EvtControllerQueryUsbCapability</b>
+### -field EvtControllerQueryUsbCapability
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_controller_query_usb_capability">EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt-ucx-controller-query-usb-capability.md">EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY</a> callback function.</p>
 </dd>
 
-### -field <b>Reserved1</b>
-
-<dd>
-<p>Do not use.</p>
-</dd>
-
-### -field <b>EvtControllerGetCurrentFrameNumber</b>
-
-<dd>
-<p>A pointer to an <a href="buses.evt_ucx_controller_get_current_framenumber">EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER</a> call back function.</p>
-</dd>
-
-### -field <b>EvtControllerUsbDeviceAdd</b>
-
-<dd>
-<p>A pointer to an <a href="buses.evt_ucx_controller_usbdevice_add">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a> callback function.</p>
-</dd>
-
-### -field <b>EvtControllerReset</b>
-
-<dd>
-<p>A pointer to an <a href="buses.evt_ucx_controller_reset">EVT_UCX_CONTROLLER_RESET</a> callback function.</p>
-</dd>
-
-### -field <b>Reserved2</b>
+### -field Reserved1
 
 <dd>
 <p>Do not use.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field EvtControllerGetCurrentFrameNumber
+
+<dd>
+<p>A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt-ucx-controller-get-current-framenumber.md">EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER</a> call back function.</p>
+</dd>
+
+### -field EvtControllerUsbDeviceAdd
+
+<dd>
+<p>A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt-ucx-controller-usbdevice-add.md">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a> callback function.</p>
+</dd>
+
+### -field EvtControllerReset
+
+<dd>
+<p>A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt-ucx-controller-reset.md">EVT_UCX_CONTROLLER_RESET</a> callback function.</p>
+</dd>
+
+### -field Reserved2
 
 <dd>
 <p>Do not use.</p>
 </dd>
 
-### -field <b>Reserved4</b>
+### -field Reserved3
 
 <dd>
 <p>Do not use.</p>
 </dd>
 
-### -field <b>ParentBusType</b>
+### -field Reserved4
+
+<dd>
+<p>Do not use.</p>
+</dd>
+
+### -field ParentBusType
 
 <dd>
 <p>The parent bus type of the USB controller.</p>
 </dd>
 
-### -field <b>PciDeviceInfo</b>
+### -field PciDeviceInfo
 
 <dd>
 <p>Information about the PCI USB controller (if present).</p>
 </dd>
 
-### -field <b>AcpiDeviceInfo</b>
+### -field AcpiDeviceInfo
 
 <dd>
 <p>Information about the advanced configuration and power interface (ACPI) USB controller (if present).</p>
 </dd>
 
-### -field <b>DeviceDescription</b>
+### -field DeviceDescription
 
 <dd>
 <p>A description for the device.</p>
 </dd>
 
-### -field <b>ManufacturerNameString</b>
+### -field ManufacturerNameString
 
 <dd>
 <p>String containing the manufacturer name.</p>
 </dd>
 
-### -field <b>ModelNameString</b>
+### -field ModelNameString
 
 <dd>
 <p>String containing the model name of the controller hardware.</p>
 </dd>
 
-### -field <b>ModelNumberString</b>
+### -field ModelNumberString
 
 <dd>
 <p>String containing the model number of the controller hardware.</p>
 </dd>
 
-### -field <b>EvtControllerGetTransportCharacteristics</b>
+### -field EvtControllerGetTransportCharacteristics
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_controller_get_transport_characteristics">EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt-ucx-controller-get-transport-characteristics.md">EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS</a> callback function.</p>
 </dd>
 
-### -field <b>EvtControllerSetTransportCharacteristicsChangeNotification</b>
+### -field EvtControllerSetTransportCharacteristicsChangeNotification
 
 <dd>
-<p>A pointer to an <a href="buses.evt_ucx_controller_set_transport_characteristics_change_notification">EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION</a> callback function.</p>
+<p>A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt-ucx-controller-set-transport-characteristics-change-notification.md">EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION</a> callback function.</p>
 </dd>
 
-### -field <b>Reserved5</b>
-
-<dd>
-<p>Do not use.</p>
-</dd>
-
-### -field <b>Reserved6</b>
+### -field Reserved5
 
 <dd>
 <p>Do not use.</p>
 </dd>
 
-### -field <b>Reserved7</b>
+### -field Reserved6
+
+<dd>
+<p>Do not use.</p>
+</dd>
+
+### -field Reserved7
 
 <dd>
 <p>Do not use.</p>

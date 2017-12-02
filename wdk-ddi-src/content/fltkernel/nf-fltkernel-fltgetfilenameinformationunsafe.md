@@ -7,7 +7,7 @@ old-location: ifsk\fltgetfilenameinformationunsafe.htm
 old-project: ifsk
 ms.assetid: 3c5ec515-d332-4fef-8b78-b2f04a672fd7
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltGetFileNameInformationUnsafe
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ NTSTATUS FltGetFileNameInformationUnsafe(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to a file object for the file or directory. The file object must be currently open. This parameter is required and cannot be set to <b>NULL</b>. </p>
 </dd>
 
-### -param <i>Instance</i> [in, optional]
+### -param Instance [in, optional]
 
 <dd>
 <p>Instance pointer for the caller. This parameter can be set to <b>NULL</b>. </p>
 </dd>
 
-### -param <i>NameOptions</i> [in]
+### -param NameOptions [in]
 
 <dd>
 <p>
@@ -140,7 +140,7 @@ NTSTATUS FltGetFileNameInformationUnsafe(
 <p> </p>
 </dd>
 
-### -param <i>FileNameInformation</i> [out]
+### -param FileNameInformation [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the address of a system-allocated FLT_FILE_NAME_INFORMATION structure. <b>FltGetFileNameInformationUnsafe</b> allocates this structure from paged pool. When this information is no longer needed, the caller must release the structure by calling <a href="..\fltkernel\nf-fltkernel-fltreleasefilenameinformation.md">FltReleaseFileNameInformation</a>. This parameter is required and cannot be set to <b>NULL</b>. </p>
@@ -265,4 +265,4 @@ NTSTATUS FltGetFileNameInformationUnsafe(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetFileNameInformationUnsafe routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetFileNameInformationUnsafe routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

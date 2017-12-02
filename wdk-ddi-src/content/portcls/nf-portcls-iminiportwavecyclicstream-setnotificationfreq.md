@@ -55,13 +55,13 @@ ULONG SetNotificationFreq(
 ## -parameters
 <dl>
 
-### -param <i>Interval</i> [in]
+### -param Interval [in]
 
 <dd>
 <p>Specifies the interval between notification interrupts. This parameter value is expressed in milliseconds.</p>
 </dd>
 
-### -param <i>FrameSize</i> [out]
+### -param FrameSize [out]
 
 <dd>
 <p>Output pointer for the frame size. This parameter points to a caller-allocated variable into which the method writes the maximum number of bytes that can be transferred in <i>Interval</i> milliseconds. This byte count determines the size of the buffer that needs to be allocated for the input or output stream.</p>

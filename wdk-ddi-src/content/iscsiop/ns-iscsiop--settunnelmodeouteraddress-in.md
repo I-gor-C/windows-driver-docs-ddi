@@ -56,19 +56,19 @@ typedef struct _SetTunnelModeOuterAddress_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>The number of the port to associate with the tunnel-mode address. A value of 0xffffffff associates the tunnel-mode address with all ports.</p>
 </dd>
 
-### -field <b>DestinationAddress</b>
+### -field DestinationAddress
 
 <dd>
 <p>An <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that indicates the destination IP address in a way that is independent of the version of IP protocol in use.  </p>
 </dd>
 
-### -field <b>TunnelModeOuterAddress</b>
+### -field TunnelModeOuterAddress
 
 <dd>
 <p>An ISCSI_IP_Address structure that indicates the IP address of the security gateway (tunnel-mode outer address) in a way that is independent of the version of IP protocol in use.</p>

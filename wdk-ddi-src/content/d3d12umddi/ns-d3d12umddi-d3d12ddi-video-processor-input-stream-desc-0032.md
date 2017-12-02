@@ -70,103 +70,103 @@ typedef struct _D3D12DDI_VIDEO_PROCESSOR_INPUT_STREAM_DESC_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>The DXGI format of the input texture and references.</p>
 </dd>
 
-### -field <b>ColorSpace</b>
+### -field ColorSpace
 
 <dd>
 <p>A DXGI_COLOR_SPACE_TYPE value that specifies the colorspace for the video processor input and reference surfaces.</p>
 </dd>
 
-### -field <b>SourceAspectRatio</b>
+### -field SourceAspectRatio
 
 <dd>
 <p>The source aspect ratio.</p>
 </dd>
 
-### -field <b>DestinationAspectRatio</b>
+### -field DestinationAspectRatio
 
 <dd>
 <p>The destination aspect ratio.</p>
 </dd>
 
-### -field <b>FrameRate</b>
+### -field FrameRate
 
 <dd>
 <p>The frame rate of the input video stream, specified as a DXGI_RATIONAL structure.</p>
 </dd>
 
-### -field <b>SourceSizeRange</b>
+### -field SourceSizeRange
 
 <dd>
 <p>Describes the minimum and maximum source rectangle size.  Video processor should allocate to handle all cases within the range.</p>
 </dd>
 
-### -field <b>DestinationSizeRanges</b>
+### -field DestinationSizeRanges
 
 <dd>
 <p>Describes the minimum and maximum destination rectangle size.  Video processor should allocate to handle all cases within the range.</p>
 </dd>
 
-### -field <b>EnableOrientation</b>
+### -field EnableOrientation
 
 <dd>
 <p>Enable all transforms specified in D3D12DDI_VIDEO_PROCESS_ORIENTATION.</p>
 </dd>
 
-### -field <b>FilterFlags</b>
+### -field FilterFlags
 
 <dd>
 <p>A bitwise OR of one or more flags from the D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS enumeration specifies the filters to enable.</p>
 </dd>
 
-### -field <b>StereoFormat</b>
+### -field StereoFormat
 
 <dd>
 <p>Specifies whether the stream is stereo or not. If D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_SEPARATE, we have two sets of input textures and references (for the stereo interlaced case).</p>
 </dd>
 
-### -field <b>FieldType</b>
+### -field FieldType
 
 <dd>
 <p>Specifies the frame format as progressive or interlaced for the input stream.  See D3D12DDI_VIDEO_FIELD_TYPE.</p>
 </dd>
 
-### -field <b>DeinterlaceMode</b>
+### -field DeinterlaceMode
 
 <dd>
 <p>The deinterlace mode to use.  See D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAGS.</p>
 </dd>
 
-### -field <b>EnableAlphaBlending</b>
+### -field EnableAlphaBlending
 
 <dd>
 <p>The planar alpha for an input stream on the video processor.  See D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING.</p>
 </dd>
 
-### -field <b>LumaKey</b>
+### -field LumaKey
 
 <dd>
 <p>The luma key for an input stream on the video processor.  See D3D12DDI_VIDEO_PROCESS_LUMA_KEY for more details.</p>
 </dd>
 
-### -field <b>NumPastFrames</b>
+### -field NumPastFrames
 
 <dd>
 <p>The number of past frames.</p>
 </dd>
 
-### -field <b>NumFutureFrames</b>
+### -field NumFutureFrames
 
 <dd>
 <p>The number of future frames.</p>
 </dd>
 
-### -field <b>EnableAutoProcessing</b>
+### -field EnableAutoProcessing
 
 <dd>
 <p>Enables or disables automatic processing features on the video processor.</p>

@@ -58,25 +58,25 @@ VOID IoBuildPartialMdl(
 ## -parameters
 <dl>
 
-### -param <i>SourceMdl</i> [in]
+### -param SourceMdl [in]
 
 <dd>
 <p>A pointer to an MDL that describes the original buffer, of which a subrange is to be mapped. </p>
 </dd>
 
-### -param <i>TargetMdl</i> [in, out]
+### -param TargetMdl [in, out]
 
 <dd>
 <p>A pointer to a caller-allocated MDL. This MDL must be large enough to describe the pages in the subrange that are specified by <i>VirtualAddress</i> and <i>Length</i>. </p>
 </dd>
 
-### -param <i>VirtualAddress</i> [in]
+### -param VirtualAddress [in]
 
 <dd>
 <p>A pointer to the base virtual address for the subrange to be described by the <i>TargetMdl</i>.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the length, in bytes, to be mapped by the <i>TargetMdl</i>. This value, in combination with <i>VirtualAddress</i>, must specify a buffer that is a proper subrange of the buffer that is described by <i>SourceMdl</i>. If <i>Length</i> is zero, the subrange to be mapped starts at <i>VirtualAddress</i> and includes the remaining range described by the <i>SourceMdl</i>. </p>

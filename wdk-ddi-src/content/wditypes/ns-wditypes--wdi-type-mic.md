@@ -7,7 +7,7 @@ old-location: netvista\wdi_type_mic.htm
 old-project: netvista
 ms.assetid: A21EEC35-98F2-4B68-A851-1C45D7F55194
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDI_TYPE_MIC, WDI_TYPE_MIC, *PWDI_TYPE_MIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef struct _WDI_TYPE_MIC {
 ## -struct-fields
 <dl>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The MIC.</p>

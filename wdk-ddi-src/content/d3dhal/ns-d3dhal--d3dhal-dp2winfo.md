@@ -55,11 +55,11 @@ typedef struct _D3DHAL_DP2WINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>dvWNear</b>
+### -field dvWNear
 
 <dd></dd>
 
-### -field <b>dvWFar</b>
+### -field dvWFar
 
 <dd>
 <p>Specify the near and far limit of the w-buffer, respectively. These members can be any valid floating-point values.</p>

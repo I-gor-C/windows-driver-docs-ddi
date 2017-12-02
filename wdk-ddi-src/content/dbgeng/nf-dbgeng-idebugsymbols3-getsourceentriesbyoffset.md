@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols3_getsourceentriesbyoffset.htm
 old-project: debugger
 ms.assetid: CA84F931-5EB9-49D0-9EA5-288900A8DE46
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSymbols3, GetSourceEntriesByOffset, IDebugSymbols3::GetSourceEntriesByOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ HRESULT GetSourceEntriesByOffset(
 ## -parameters
 <dl>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>The  offset of the entry.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A bit-set that contains options that affect the behavior of this method.</p>
 </dd>
 
-### -param <i>Entries</i> [out]
+### -param Entries [out]
 
 <dd>
 <p>A pointer to a returned entry as a <a href="..\dbgeng\ns-dbgeng--debug-symbol-source-entry.md">DEBUG_SYMBOL_SOURCE_ENTRY</a> structure.</p>
 </dd>
 
-### -param <i>EntriesCount</i> [in]
+### -param EntriesCount [in]
 
 <dd>
 <p>The number of entries.</p>
 </dd>
 
-### -param <i>EntriesAvail</i> [out, optional]
+### -param EntriesAvail [out, optional]
 
 <dd>
 <p>A pointer to the number of entries available. </p>
@@ -120,4 +120,4 @@ HRESULT GetSourceEntriesByOffset(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetSourceEntriesByOffset method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetSourceEntriesByOffset method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\dot11_bss_entry.htm
 old-project: netvista
 ms.assetid: 50661fc9-2f1f-4c9a-bc15-1cdf7c1f6d01
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_BSS_ENTRY, DOT11_BSS_ENTRY, *PDOT11_BSS_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ typedef struct DOT11_BSS_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>uPhyId</b>
+### -field uPhyId
 
 <dd>
 <p>The identifier (ID) of the PHY that the 802.11 station used to detect the BSS network. The PHY ID
@@ -75,7 +75,7 @@ typedef struct DOT11_BSS_ENTRY {
 <p>This ID must not be DOT11_PHY_ID_ANY.</p>
 </dd>
 
-### -field <b>PhySpecificInfo</b>
+### -field PhySpecificInfo
 
 <dd>
 <p>The attributes of the PHY referenced by the 
@@ -85,7 +85,7 @@ typedef struct DOT11_BSS_ENTRY {
      DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO</a> union.</p>
 </dd>
 
-### -field <b>dot11BSSID</b>
+### -field dot11BSSID
 
 <dd>
 <p>The media access control (MAC) address of the access point (AP) (for infrastructure BSS networks)
@@ -94,7 +94,7 @@ typedef struct DOT11_BSS_ENTRY {
      <a href="..\windot11\ns-windot11--dot11-mac-address.md">DOT11_MAC_ADDRESS</a> structure.</p>
 </dd>
 
-### -field <b>dot11BSSType</b>
+### -field dot11BSSType
 
 <dd>
 <p>The BSS network type. 
@@ -105,22 +105,22 @@ typedef struct DOT11_BSS_ENTRY {
      <b>dot11_BSS_type_any</b> value.</p>
 </dd>
 
-### -field <b>lRSSI</b>
+### -field lRSSI
 
 <dd>
 <p>The received signal strength indicator (RSSI) value, in units of decibels referenced to 1.0
      milliwatts (dBm), as detected by the 802.11 station for the AP or peer station.</p>
 </dd>
 
-### -field <b>uLinkQuality</b>
+### -field uLinkQuality
 
 <dd>
 <p>The link quality value ranging from 0 through 100. A value of 100 specifies the highest link
      quality. For more information about determining the link quality, see 
-     <a href="NULL">Link Quality Operations</a>.</p>
+     <a href="netvista.link_quality_operations">Link Quality Operations</a>.</p>
 </dd>
 
-### -field <b>bInRegDomain</b>
+### -field bInRegDomain
 
 <dd>
 <p>This member specifies whether the AP or peer station is operating within the regulatory domain as
@@ -158,19 +158,19 @@ typedef struct DOT11_BSS_ENTRY {
 </ul>
 </dd>
 
-### -field <b>usBeaconPeriod</b>
+### -field usBeaconPeriod
 
 <dd>
 <p>The value of the Beacon Interval field from the 802.11 Beacon or Probe Response frame.</p>
 </dd>
 
-### -field <b>ullTimestamp</b>
+### -field ullTimestamp
 
 <dd>
 <p>The value of the Timestamp field from the 802.11 Beacon or Probe Response frame.</p>
 </dd>
 
-### -field <b>ullHostTimestamp</b>
+### -field ullHostTimestamp
 
 <dd>
 <p>The timestamp, resolved through a call to 
@@ -178,14 +178,14 @@ typedef struct DOT11_BSS_ENTRY {
      records when the 802.11 station received the 802.11 Beacon or Probe Response frame.</p>
 </dd>
 
-### -field <b>usCapabilityInformation</b>
+### -field usCapabilityInformation
 
 <dd>
 <p>The value of the Capability Information field from the 802.11 Beacon or Probe Response
      frame.</p>
 </dd>
 
-### -field <b>uBufferLength</b>
+### -field uBufferLength
 
 <dd>
 <p>The length, in bytes, of the 
@@ -194,7 +194,7 @@ typedef struct DOT11_BSS_ENTRY {
      <b>ucBuffer</b> array and must not contain any padding for alignment.</p>
 </dd>
 
-### -field <b>ucBuffer</b>
+### -field ucBuffer
 
 <dd>
 <p>The variable-length information elements (IEs) from the 802.11 Beacon or Probe Response frames.
@@ -274,4 +274,4 @@ typedef struct DOT11_BSS_ENTRY {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_ENTRY structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_ENTRY structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

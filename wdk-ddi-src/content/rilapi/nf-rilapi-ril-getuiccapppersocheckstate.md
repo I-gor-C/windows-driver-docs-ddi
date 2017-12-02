@@ -7,7 +7,7 @@ old-location: netvista\ril_getuiccapppersocheckstate.htm
 old-project: netvista
 ms.assetid: 328f6ac4-e045-4197-a74c-607e98ba606c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetUiccAppPersoCheckState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_GetUiccAppPersoCheckState(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>hUiccApp</i> 
+### -param hUiccApp 
 
 <dd></dd>
 </dl>

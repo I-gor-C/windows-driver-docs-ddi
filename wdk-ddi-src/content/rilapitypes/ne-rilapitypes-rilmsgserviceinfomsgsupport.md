@@ -7,7 +7,7 @@ old-location: netvista\rilmsgserviceinfomsgsupport_2.htm
 old-project: netvista
 ms.assetid: e9e1f353-4501-487d-ba2d-ee1572d93507
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILMSGSERVICEINFOMSGSUPPORT {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSI_SMS_OUTGOING"></a><a id="ril_msi_sms_outgoing"></a><b>RIL_MSI_SMS_OUTGOING</b>
+### -field RIL_MSI_SMS_OUTGOING
 
 <dd></dd>
 
-### -field <a id="RIL_MSI_SMS_BROADCAST"></a><a id="ril_msi_sms_broadcast"></a><b>RIL_MSI_SMS_BROADCAST</b>
+### -field RIL_MSI_SMS_BROADCAST
 
 <dd></dd>
 </dl>

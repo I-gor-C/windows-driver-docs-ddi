@@ -43,4 +43,9 @@ For the programming guide, see [Battery](https://docs.microsoft.com/en-us/window
 
 | Title   | Description   |
 | ---- |:---- |
+| [IOCTL_CAD_DISABLE_CHARGING IOCTL](..\charging\ni-charging-ioctl-cad-disable-charging.md) | This IOCTL is for internal use only. |
+| [IOCTL_CAD_GET_BATTERY_PROVISIONING_STATUS IOCTL](..\charging\ni-charging-ioctl-cad-get-battery-provisioning-status.md) | This IOCTL is for internal use only. |
+| [IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE IOCTL](..\charging\ni-charging-ioctl-cad-get-charging-status-complete.md) | This IOCTL is for internal use only. |
+| [IOCTL_CAD_POWER_SOURCE_UPDATE_EX IOCTL](..\charging\ni-charging-ioctl-cad-power-source-update-ex.md) | This IOCTL is for internal use only. |
+| [IOCTL_INTERNAL_CAD_POWER_SOURCE_UPDATE IOCTL](..\charging\ni-charging-ioctl-internal-cad-power-source-update.md) | This IOCTL is for internal use only. |
 | [IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY IOCTL](..\charging\ni-charging-ioctl-internal-configure-charger-property.md) | The IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY control code is sent from a configurable charger to a device that handles configurable chargers. It configures charger properties. |

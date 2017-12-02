@@ -57,13 +57,13 @@ NTSTATUS APIENTRY DXGKDDI_SETTARGETCONTENTTYPE(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>A handle that identifies the adapter.</p>
 </dd>
 
-### -param <i>pSetTargetContentTypeArg</i> [in]
+### -param pSetTargetContentTypeArg [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-settargetcontenttype.md">DXGKARG_SETTARGETCONTENTTYPE</a> structure that provides the target to be modified and the new type of content being displayed on it.</p>

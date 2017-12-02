@@ -57,19 +57,19 @@ typedef struct _DD_GETFORMATDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>gdi2</b>
+### -field gdi2
 
 <dd>
 <p>Specifies a <a href="..\d3dhal\ns-d3dhal--dd-getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.</p>
 </dd>
 
-### -field <b>dwFormatIndex</b>
+### -field dwFormatIndex
 
 <dd>
 <p>Specifies the index of the pixel format to return.</p>
 </dd>
 
-### -field <b>format</b>
+### -field format
 
 <dd>
 <p>Receives the actual pixel format in a <a href="..\ksmedia\ns-ksmedia--ddpixelformat.md">DDPIXELFORMAT</a> structure.</p>

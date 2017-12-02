@@ -58,31 +58,31 @@ NTSTATUS PcRegisterPhysicalConnection(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object for the adapter device. This parameter must point to a system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
 </dd>
 
-### -param <i>FromUnknown</i> [in]
+### -param FromUnknown [in]
 
 <dd>
 <p>Pointer to the <a href="..\portcls\nn-portcls-iport.md">IPort</a> interface of a port driver object. The port driver object that is associated with <i>FromUnknown</i> is bound to the subdevice that supplies the connection's data source (output) pin.</p>
 </dd>
 
-### -param <i>FromPin</i> [in]
+### -param FromPin [in]
 
 <dd>
 <p>Specifies a pin ID. This parameter identifies the source (output) pin on the filter that is associated with the <i>FromUnknown</i> interface.</p>
 </dd>
 
-### -param <i>ToUnknown</i> [in]
+### -param ToUnknown [in]
 
 <dd>
 <p>Pointer to the <a href="..\portcls\nn-portcls-iport.md">IPort</a> interface of a port driver object. The port driver object that is associated with <i>ToUnknown</i> is bound to the subdevice that supplies the connection's data sink (input) pin.</p>
 </dd>
 
-### -param <i>ToPin</i> [in]
+### -param ToPin [in]
 
 <dd>
 <p>Specifies a pin ID. This parameter identifies the sink (input) pin on the filter that is associated with the <i>ToUnknown</i> interface.</p>
@@ -99,9 +99,9 @@ NTSTATUS PcRegisterPhysicalConnection(
 
 <p>Unlike a logical connection between two pins, which can be configured under software control, a physical connection is hardwired. For example, a typical adapter card might have a physical connection that carries the analog signal from the output pin of its wave-output filter to the input pin of its <a href="https://msdn.microsoft.com/1b3d35e9-5858-407c-9cd0-06307d82ce58">topology filter</a>.</p>
 
-<p>For an example of an adapter driver's device-startup routine (see <a href="NULL">Startup Sequence</a>) that uses the <b>PcRegisterPhysicalConnection</b> call to register an adapter's physical connections, see the source code for the SB16 sample audio driver in the Microsoft Windows Driver Kit (WDK).</p>
+<p>For an example of an adapter driver's device-startup routine (see <a href="https://msdn.microsoft.com/bf88b9de-f4c4-4f9c-9355-603789b9ad3d">Startup Sequence</a>) that uses the <b>PcRegisterPhysicalConnection</b> call to register an adapter's physical connections, see the source code for the SB16 sample audio driver in the Microsoft Windows Driver Kit (WDK).</p>
 
-<p>An adapter driver can call the <a href="audio.iunregisterphysicalconnection_unregisterphysicalconnection">IUnregisterPhysicalConnection::UnregisterPhysicalConnection</a> method to delete the registration of a physical connection that was registered by a previous call to <b>PcRegisterPhysicalConnection</b>. For more information, see <a href="NULL">Dynamic Audio Subdevices</a>.</p>
+<p>An adapter driver can call the <a href="audio.iunregisterphysicalconnection_unregisterphysicalconnection">IUnregisterPhysicalConnection::UnregisterPhysicalConnection</a> method to delete the registration of a physical connection that was registered by a previous call to <b>PcRegisterPhysicalConnection</b>. For more information, see <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890-aae1-5ecf58f2e22a">Dynamic Audio Subdevices</a>.</p>
 
 ## -requirements
 <table>

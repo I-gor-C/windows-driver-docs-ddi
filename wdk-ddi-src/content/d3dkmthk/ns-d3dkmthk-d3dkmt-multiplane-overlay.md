@@ -57,19 +57,19 @@ typedef struct D3DKMT_MULTIPLANE_OVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>LayerIndex</b>
+### -field LayerIndex
 
 <dd></dd>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd></dd>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd></dd>
 
-### -field <b>PlaneAttributes</b>
+### -field PlaneAttributes
 
 <dd></dd>
 </dl>

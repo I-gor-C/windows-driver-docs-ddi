@@ -7,13 +7,13 @@ old-location: debugger\getshortfield.htm
 old-project: debugger
 ms.assetid: f5f00e88-b758-4f37-9fe5-5db8f20835b1
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: GetShortField
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -57,20 +57,20 @@ __inline ULONG64 GetShortField(
 ## -parameters
 <dl>
 
-### -param <i>TypeAddress</i> [in]
+### -param TypeAddress [in]
 
 <dd>
 <p>The meaning of this parameter depends on the value of <i>StoreAddress</i>.</p>
 <p></p>
 <dl>
 
-### -param <a id="If_StoreAddress_is_non-zero_"></a><a id="if_storeaddress_is_non-zero_"></a><a id="IF_STOREADDRESS_IS_NON-ZERO_"></a>If <i>StoreAddress</i> is non-zero:
+### -param If StoreAddress is non-zero:
 
 <dd>
 <p>Specifies the address of the structure in the target's memory.  This address is used for subsequent calls when <i>StoreAddress</i> is zero. </p>
 </dd>
 
-### -param <a id="If_StoreAddress_is_zero_"></a><a id="if_storeaddress_is_zero_"></a><a id="IF_STOREADDRESS_IS_ZERO_"></a>If <i>StoreAddress</i> is zero:
+### -param If StoreAddress is zero:
 
 <dd>
 <p><i>TypeAddress</i> is ignored.  The value of <i>TypeAddress</i> from the last call when <i>StoreAddress</i> was non-zero is used to specify the address of the structure in the target's memory. </p>
@@ -78,20 +78,20 @@ __inline ULONG64 GetShortField(
 </dl>
 </dd>
 
-### -param <i>Name</i> [in]
+### -param Name [in]
 
 <dd>
 <p>The meaning of this parameter depends on the value of <i>StoreAddress</i>.</p>
 <p></p>
 <dl>
 
-### -param <a id="If_StoreAddress_is_non-zero_"></a><a id="if_storeaddress_is_non-zero_"></a><a id="IF_STOREADDRESS_IS_NON-ZERO_"></a>If <i>StoreAddress</i> is non-zero:
+### -param If StoreAddress is non-zero:
 
 <dd>
 <p>Specifies the name of the type of the structure at <i>TypeAddress</i>.</p>
 </dd>
 
-### -param <a id="If_StoreAddress_is_zero_"></a><a id="if_storeaddress_is_zero_"></a><a id="IF_STOREADDRESS_IS_ZERO_"></a>If <i>StoreAddress</i> is zero:
+### -param If StoreAddress is zero:
 
 <dd>
 <p>Specifies the name of the member in the structure to read.  The address and type of the structure are remembered from a previous call to this function with <i>StoreAddress</i> not equal to zero.  Submembers can be specified by using a period-separated path, for example, "myfield.mysubfield". </p>
@@ -99,21 +99,21 @@ __inline ULONG64 GetShortField(
 </dl>
 </dd>
 
-### -param <i>StoreAddress</i> [in]
+### -param StoreAddress [in]
 
 <dd>
 <p>Specifies the mode of this function.</p>
 <p></p>
 <dl>
 
-### -param <a id="If_StoreAddress_is_non-zero_"></a><a id="if_storeaddress_is_non-zero_"></a><a id="IF_STOREADDRESS_IS_NON-ZERO_"></a>If <i>StoreAddress</i> is non-zero:
+### -param If StoreAddress is non-zero:
 
 <dd>
 <p>Causes this function to initialize a structure for reading its members.  The address and type name for the structure is remembered.</p>
 <p>If the bit value 0x2 is set in <i>StoreAddress</i>, the address <i>TypeAddress</i> is considered a physical address; otherwise, it is considered a virtual address. </p>
 </dd>
 
-### -param <a id="If_StoreAddress_is_zero_"></a><a id="if_storeaddress_is_zero_"></a><a id="IF_STOREADDRESS_IS_ZERO_"></a>If <i>StoreAddress</i> is zero:
+### -param If StoreAddress is zero:
 
 <dd>
 <p>Causes this function to read a member from a previously initialized structure. </p>
@@ -156,7 +156,7 @@ __inline ULONG64 GetShortField(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>
@@ -176,4 +176,4 @@ __inline ULONG64 GetShortField(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20GetShortField function%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20GetShortField function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

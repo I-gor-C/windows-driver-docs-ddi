@@ -7,7 +7,7 @@ old-location: ifsk\reparse_data_buffer.htm
 old-project: ifsk
 ms.assetid: e906a874-51f1-4623-8f0b-afdfd8169ab2
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: REPARSE_DATA_BUFFER, REPARSE_DATA_BUFFER, *PREPARSE_DATA_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,66 +76,66 @@ typedef struct _REPARSE_DATA_BUFFER {
 ## -struct-fields
 <dl>
 
-### -field <b>ReparseTag</b>
+### -field ReparseTag
 
 <dd>
 <p>Reparse point tag. Must be a Microsoft reparse point tag. (See the following <b>Remarks</b> section.) </p>
 </dd>
 
-### -field <b>ReparseDataLength</b>
+### -field ReparseDataLength
 
 <dd>
 <p>Size, in bytes, of the reparse data in the <b>DataBuffer</b> member. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Length, in bytes, of the unparsed portion of the file name pointed to by the <b>FileName</b> member of the associated file object. For more information about the <b>FileName</b> member, see <a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a>. This member is only valid for create operations when the I/O fails with STATUS_REPARSE. For all other purposes, such as setting or querying a reparse point for the reparse data, this member is treated as reserved.</p>
 </dd>
 
-### -field ( <i>unnamed union</i> )
+### -field ( unnamed union )
 
 <dd>
 <p> </p>
 <dl>
 
-### -field <b>SymbolicLinkReparseBuffer</b>
+### -field SymbolicLinkReparseBuffer
 
 <dd>
 <dl>
 
-### -field <b>SubstituteNameOffset</b>
+### -field SubstituteNameOffset
 
 <dd>
 <p>Offset, in bytes, of the substitute name string in the <b>PathBuffer</b> array. Note that this offset must be divided by <b>sizeof</b>(WCHAR) to get the array index. </p>
 </dd>
 
-### -field <b>SubstituteNameLength</b>
+### -field SubstituteNameLength
 
 <dd>
 <p>Length, in bytes, of the substitute name string. If this string is NULL-terminated, <b>SubstituteNameLength</b> does not include space for the UNICODE_NULL character. </p>
 </dd>
 
-### -field <b>PrintNameOffset</b>
+### -field PrintNameOffset
 
 <dd>
 <p>Offset, in bytes, of the print name string in the <b>PathBuffer</b> array. Note that this offset must be divided by <b>sizeof</b>(WCHAR) to get the array index. </p>
 </dd>
 
-### -field <b>PrintNameLength</b>
+### -field PrintNameLength
 
 <dd>
 <p>Length, in bytes, of the print name string. If this string is NULL-terminated, <b>PrintNameLength</b> does not include space for the UNICODE_NULL character. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Used to indicate if the given symbolic link is an absolute or relative symbolic link.  If <b>Flags</b> contains SYMLINK_FLAG_RELATIVE, the symbolic link contained in the <b>PathBuffer</b> array (at offset <b>SubstitueNameOffset</b>) is processed as a relative symbolic link; otherwise, it is processed as an absolute symbolic link.</p>
 </dd>
 
-### -field <b>PathBuffer</b>
+### -field PathBuffer
 
 <dd>
 <p>First character of the path string. This is followed in memory by the remainder of the string. The path string contains the substitute name string and print name string. The substitute name and print name strings can appear in any order in the <b>PathBuffer</b>. (To locate the substitute name and print name strings in the <b>PathBuffer</b>, use the <b>SubstituteNameOffset</b>, <b>SubstituteNameLength</b>, <b>PrintNameOffset</b>, and <b>PrintNameLength</b> members.) </p>
@@ -143,36 +143,36 @@ typedef struct _REPARSE_DATA_BUFFER {
 </dl>
 </dd>
 
-### -field <b>MountPointReparseBuffer</b>
+### -field MountPointReparseBuffer
 
 <dd>
 <dl>
 
-### -field <b>SubstituteNameOffset</b>
+### -field SubstituteNameOffset
 
 <dd>
 <p>Offset, in bytes, of the substitute name string in the <b>PathBuffer</b> array. Note that this offset must be divided by <b>sizeof</b>(WCHAR) to get the array index. </p>
 </dd>
 
-### -field <b>SubstituteNameLength</b>
+### -field SubstituteNameLength
 
 <dd>
 <p>Length, in bytes, of the substitute name string. If this string is NULL-terminated, <b>SubstituteNameLength</b> does not include space for the UNICODE_NULL character. </p>
 </dd>
 
-### -field <b>PrintNameOffset</b>
+### -field PrintNameOffset
 
 <dd>
 <p>Offset, in bytes, of the print name string in the <b>PathBuffer</b> array. Note that this offset must be divided by <b>sizeof</b>(WCHAR) to get the array index. </p>
 </dd>
 
-### -field <b>PrintNameLength</b>
+### -field PrintNameLength
 
 <dd>
 <p>Length, in bytes, of the print name string. If this string is NULL-terminated, <b>PrintNameLength</b> does not include space for the UNICODE_NULL character. </p>
 </dd>
 
-### -field <b>PathBuffer</b>
+### -field PathBuffer
 
 <dd>
 <p>First character of the path string. This is followed in memory by the remainder of the string. The path string contains the substitute name string and print name string. The substitute name and print name strings can appear in any order in the <b>PathBuffer</b>. (To locate the substitute name and print name strings in the <b>PathBuffer</b>, use the <b>SubstituteNameOffset</b>, <b>SubstituteNameLength</b>, <b>PrintNameOffset</b>, and <b>PrintNameLength</b> members.) </p>
@@ -180,12 +180,12 @@ typedef struct _REPARSE_DATA_BUFFER {
 </dl>
 </dd>
 
-### -field <b>GenericReparseBuffer</b>
+### -field GenericReparseBuffer
 
 <dd>
 <dl>
 
-### -field <b>DataBuffer</b>
+### -field DataBuffer
 
 <dd>
 <p>Microsoft-defined data for the reparse point. </p>
@@ -265,4 +265,4 @@ typedef struct _REPARSE_DATA_BUFFER {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20REPARSE_DATA_BUFFER structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20REPARSE_DATA_BUFFER structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

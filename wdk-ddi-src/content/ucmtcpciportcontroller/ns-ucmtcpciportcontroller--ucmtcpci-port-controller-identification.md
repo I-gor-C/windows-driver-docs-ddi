@@ -41,8 +41,8 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>Contains identification information and USB specification version information (in BCD format) about the port controller.
-             This client driver must specify that information in the call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a> during initialization. 
-                 Call <a href="buses.ucmtcpci_port_controller_identification_init">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT</a> to initialize this structure.
+             This client driver must specify that information in the call to <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a> during initialization. 
+                 Call <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpci-port-controller-identification-init.md">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT</a> to initialize this structure.
              </p>
 
 
@@ -64,13 +64,13 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of this structure.</p>
 </dd>
 
-### -field <b>VendorId</b>
+### -field VendorId
 
 <dd>
 <p>Specifies the vendor identifier assigned by the USB specification committee.
@@ -78,7 +78,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION {
                  </p>
 </dd>
 
-### -field <b>ProductId</b>
+### -field ProductId
 
 <dd>
 <p>
@@ -86,7 +86,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION {
                  </p>
 </dd>
 
-### -field <b>DeviceId</b>
+### -field DeviceId
 
 <dd>
 <p>
@@ -94,7 +94,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION {
                  </p>
 </dd>
 
-### -field <b>TypeCRevisionInBcd</b>
+### -field TypeCRevisionInBcd
 
 <dd>
 <p>
@@ -102,7 +102,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION {
                  </p>
 </dd>
 
-### -field <b>PDRevisionAndVersionInBcd</b>
+### -field PDRevisionAndVersionInBcd
 
 <dd>
 <p>
@@ -111,7 +111,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION {
                  </p>
 </dd>
 
-### -field <b>PDInterfaceRevisionAndVersionInBcd</b>
+### -field PDInterfaceRevisionAndVersionInBcd
 
 <dd>
 <p>
@@ -141,7 +141,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>
+<a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>
 </dt>
 </dl>
 <p> </p>

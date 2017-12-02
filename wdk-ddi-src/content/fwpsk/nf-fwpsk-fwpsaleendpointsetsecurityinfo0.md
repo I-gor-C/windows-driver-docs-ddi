@@ -7,7 +7,7 @@ old-location: netvista\fwpsaleendpointsetsecurityinfo0.htm
 old-project: netvista
 ms.assetid: 7b7fed83-dcf8-466d-8bd7-42a5ed15cced
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsAleEndpointSetSecurityInfo0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NTSTATUS NTAPI FwpsAleEndpointSetSecurityInfo0(
 ## -parameters
 <dl>
 
-### -param <i>engineHandle</i> [in]
+### -param engineHandle [in]
 
 <dd>
 <p>A handle for an open session with the filter engine. This handle is obtained when a session is
@@ -69,7 +69,7 @@ NTSTATUS NTAPI FwpsAleEndpointSetSecurityInfo0(
      <a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>.</p>
 </dd>
 
-### -param <i>securityInfo</i> [in]
+### -param securityInfo [in]
 
 <dd>
 <p>A set of security information flags. For more information, see the 
@@ -77,25 +77,25 @@ NTSTATUS NTAPI FwpsAleEndpointSetSecurityInfo0(
      Installable File Systems driver documentation.</p>
 </dd>
 
-### -param <i>sidOwner</i> [in, optional]
+### -param sidOwner [in, optional]
 
 <dd>
 <p>The security identifier of the security owner.</p>
 </dd>
 
-### -param <i>sidGroup</i> [in, optional]
+### -param sidGroup [in, optional]
 
 <dd>
 <p>The security identifier of the security group.</p>
 </dd>
 
-### -param <i>dacl</i> [in, optional]
+### -param dacl [in, optional]
 
 <dd>
 <p>The discretionary access control list.</p>
 </dd>
 
-### -param <i>sacl</i> [in, optional]
+### -param sacl [in, optional]
 
 <dd>
 <p>The system access control list.</p>
@@ -180,4 +180,4 @@ NTSTATUS NTAPI FwpsAleEndpointSetSecurityInfo0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAleEndpointSetSecurityInfo0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAleEndpointSetSecurityInfo0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

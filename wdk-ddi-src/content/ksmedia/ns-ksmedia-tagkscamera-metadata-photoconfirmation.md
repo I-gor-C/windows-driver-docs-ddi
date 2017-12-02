@@ -56,19 +56,19 @@ typedef struct tagKSCAMERA_METADATA_PHOTOCONFIRMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains the header information for the metadata item</p>
 </dd>
 
-### -field <b>PhotoConfirmationIndex</b>
+### -field PhotoConfirmationIndex
 
 <dd>
 <p>Stores the index of the still confirmation frame. For single photo capture, this is always 0. For multishot, this corresponds to the index of the photo frame captured.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

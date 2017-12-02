@@ -58,25 +58,25 @@ typedef struct _SET_BAND_LOCATION_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>StructSize</b>
+### -field StructSize
 
 <dd>
 <p>The size of this structure in bytes. Set to <b>sizeof</b>(SET_BAND_LOCATION_PARAMETERS).</p>
 </dd>
 
-### -field <b>BandId</b>
+### -field BandId
 
 <dd>
 <p>The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId.</b> To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.</p>
 </dd>
 
-### -field <b>BandStart</b>
+### -field BandStart
 
 <dd>
 <p>The starting byte location on the storage device to begin a band search. An attempt is made to match a band at or after <b>BandStart</b>.</p>
 </dd>
 
-### -field <b>AuthKeyOffset</b>
+### -field AuthKeyOffset
 
 <dd>
 <p>The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the authorization key for the band. The offset is from the beginning of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--create-band-parameters.md">SET_BAND_LOCATION_PARAMETERS</a>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.</p>
@@ -97,13 +97,13 @@ typedef struct _SET_BAND_LOCATION_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="KeySize"></a><a id="keysize"></a><a id="KEYSIZE"></a>KeySize
+### -field KeySize
 
 <dd>
 <p>The size of the key, in bytes, of the key data at <b>Key</b>. If <b>KeySize</b> is set to 0, a default key is used.</p>
 </dd>
 
-### -field <a id="Key"></a><a id="key"></a><a id="KEY"></a>Key
+### -field Key
 
 <dd>
 <p>A variable-length byte array that contains the key data.</p>
@@ -112,7 +112,7 @@ typedef struct _SET_BAND_LOCATION_PARAMETERS {
 <p>To specify a default authorization key to the band, set   <b>AuthKeyOffset</b> = <b>EHSTOR_BANDMGR_NO_KEY</b>.</p>
 </dd>
 
-### -field <b>BandLocationInfoOffset</b>
+### -field BandLocationInfoOffset
 
 <dd>
 <p>The offset, in bytes, of a <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-location-info.md">BAND_LOCATION_INFO</a> structure. The offset is from the beginning of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--create-band-parameters.md">SET_BAND_LOCATION_PARAMETERS</a>.</p>

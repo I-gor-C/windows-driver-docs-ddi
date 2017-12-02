@@ -7,7 +7,7 @@ old-location: ifsk\iocreatestreamfileobjectex2.htm
 old-project: ifsk
 ms.assetid: 2F12F4E5-21C2-4DA8-9111-0087A16F0256
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: IoCreateStreamFileObjectEx2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ PFILE_OBJECT IoCreateStreamFileObjectEx(
 ## -parameters
 <dl>
 
-### -param <i>CreateOptions</i> [in]
+### -param CreateOptions [in]
 
 <dd>
 <p>Pointer a <b>IO_CREATE_STREAM_FILE_OPTIONS</b> structure containing the create options for the new stream file object.  <b>IO_CREATE_STREAM_FILE_OPTIONS</b> is defined in <i>ntifs.h</i> as the following.</p>
@@ -71,13 +71,13 @@ PFILE_OBJECT IoCreateStreamFileObjectEx(
 <p></p>
 <dl>
 
-### -param <a id="Size"></a><a id="size"></a><a id="SIZE"></a>Size
+### -param Size
 
 <dd>
 <p>Size of the stream options structure. Set to <b>sizeof</b>(IO_CREATE_STREAM_FILE_OPTIONS).</p>
 </dd>
 
-### -param <a id="Flags"></a><a id="flags"></a><a id="FLAGS"></a>Flags
+### -param Flags
 
 <dd>
 <p>The flags for the stream file create options. This value can be one of the following.</p>
@@ -108,7 +108,7 @@ PFILE_OBJECT IoCreateStreamFileObjectEx(
 <p> </p>
 </dd>
 
-### -param <a id="TargetDeviceObject"></a><a id="targetdeviceobject"></a><a id="TARGETDEVICEOBJECT"></a>TargetDeviceObject
+### -param TargetDeviceObject
 
 <dd>
 <p>A pointer to the device object to set as the target for operations on the file
@@ -118,25 +118,25 @@ PFILE_OBJECT IoCreateStreamFileObjectEx(
 </dl>
 </dd>
 
-### -param <i>FileObject</i> [in, optional]
+### -param FileObject [in, optional]
 
 <dd>
 <p>Pointer to the file object to which the new stream file is related. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>DeviceObject</i> [in, optional]
+### -param DeviceObject [in, optional]
 
 <dd>
 <p>Pointer to a device object for the device on which the stream file is to be opened. If the caller specifies a non-<b>NULL</b> value for <i>FileObject</i>, the value of <i>DeviceObject</i> is ignored. Otherwise, the caller must specify a non-<b>NULL</b> value for <i>DeviceObject</i>. </p>
 </dd>
 
-### -param <i>StreamFileObject</i> [out]
+### -param StreamFileObject [out]
 
 <dd>
 <p>Pointer to a device object pointer to receive the stream fille object.</p>
 </dd>
 
-### -param <i>FileHandle</i> [out, optional]
+### -param FileHandle [out, optional]
 
 <dd>
 <p>A pointer to a file handle for the stream on output. This parameter is optional and can be <b>NULL</b>. </p>
@@ -245,4 +245,4 @@ PFILE_OBJECT IoCreateStreamFileObjectEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoCreateStreamFileObjectEx2 routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoCreateStreamFileObjectEx2 routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -54,7 +54,7 @@ typedef struct _RemoveiSNSServer_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>iSNSServerName</b>
+### -field iSNSServerName
 
 <dd>
 <p>The name of the iSNS server to remove from the initiator's list.</p>

@@ -59,19 +59,19 @@ typedef struct _VPCI_WRITE_BLOCK_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>BlockId</b>
+### -field BlockId
 
 <dd>
 <p>A <b>ULONG</b> value that specifies the VF configuration block to be read.  This value is defined by the driver for the PCIe physical function (PF) of the device.</p>
 </dd>
 
-### -field <b>DataLength</b>
+### -field DataLength
 
 <dd>
 <p>The size, in bytes, of the data to be written from the <b>Data</b> member.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>A variable-size array that contains the data to be written to the configuration block that is specified by the <b>BlockId</b> member.</p>

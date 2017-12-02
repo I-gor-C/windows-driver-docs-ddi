@@ -54,13 +54,13 @@ HRESULT WINAPI AddPrintDeviceObject(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd>
 <p>A HANDLE to an open printer. This should be a HANDLE returned by the <b>AddPrinter</b> or <b>OpenPrinter</b> spooler functions.</p>
 </dd>
 
-### -param <i>phDeviceObject</i> [out]
+### -param phDeviceObject [out]
 
 <dd>
 <p>A HANDLE to the device object, if it was created successfully.</p>

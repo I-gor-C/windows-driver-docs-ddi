@@ -7,7 +7,7 @@ old-location: netvista\rilsystemcaps.htm
 old-project: netvista
 ms.assetid: ed0ecb71-22b4-4387-8d5a-4d6fd2c7047e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILSYSTEMCAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SYSTEMCAPS_VOICEDATA"></a><a id="ril_systemcaps_voicedata"></a><b>RIL_SYSTEMCAPS_VOICEDATA</b>
+### -field RIL_SYSTEMCAPS_VOICEDATA
 
 <dd></dd>
 
-### -field <a id="RIL_SYSTEMCAPS_ALL"></a><a id="ril_systemcaps_all"></a><b>RIL_SYSTEMCAPS_ALL</b>
+### -field RIL_SYSTEMCAPS_ALL
 
 <dd></dd>
 </dl>

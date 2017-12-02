@@ -69,7 +69,7 @@ typedef struct _STORAGE_DEVICE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Indicates the size of the 
@@ -77,27 +77,27 @@ typedef struct _STORAGE_DEVICE_DESCRIPTOR {
       value of this member will change as members are added to the structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the total size of the descriptor in bytes, including ID strings which are appended to the 
       structure.</p>
 </dd>
 
-### -field <b>DeviceType</b>
+### -field DeviceType
 
 <dd>
 <p>Specifies the device type as defined by the Small Computer Systems Interface (SCSI) specification.</p>
 </dd>
 
-### -field <b>DeviceTypeModifier</b>
+### -field DeviceTypeModifier
 
 <dd>
 <p>Specifies the device type modifier, if any, as defined by the SCSI specification. If no device type 
       modifier exists, this member is zero.</p>
 </dd>
 
-### -field <b>RemovableMedia</b>
+### -field RemovableMedia
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device's media (if any) is removable. If the device 
@@ -105,7 +105,7 @@ typedef struct _STORAGE_DEVICE_DESCRIPTOR {
       removable.</p>
 </dd>
 
-### -field <b>CommandQueueing</b>
+### -field CommandQueueing
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports multiple outstanding commands (SCSI 
@@ -113,21 +113,21 @@ typedef struct _STORAGE_DEVICE_DESCRIPTOR {
       queuing or the equivalent. The STORPORT driver is responsible for synchronizing the commands.</p>
 </dd>
 
-### -field <b>VendorIdOffset</b>
+### -field VendorIdOffset
 
 <dd>
 <p>Specifies the byte offset from the beginning of the structure to a <b>NULL</b>-terminated ASCII string that 
       contains the device's vendor ID. If the device has no vendor ID, this member is zero.</p>
 </dd>
 
-### -field <b>ProductIdOffset</b>
+### -field ProductIdOffset
 
 <dd>
 <p>Specifies the byte offset from the beginning of the structure to a <b>NULL</b>-terminated ASCII string that 
       contains the device's product ID. If the device has no product ID, this member is zero.</p>
 </dd>
 
-### -field <b>ProductRevisionOffset</b>
+### -field ProductRevisionOffset
 
 <dd>
 <p>Specifies the byte offset from the beginning of the structure to a <b>NULL</b>-terminated ASCII string that 
@@ -135,14 +135,14 @@ typedef struct _STORAGE_DEVICE_DESCRIPTOR {
       zero.</p>
 </dd>
 
-### -field <b>SerialNumberOffset</b>
+### -field SerialNumberOffset
 
 <dd>
 <p>Specifies the byte offset from the beginning of the structure to a <b>NULL</b>-terminated ASCII string that 
       contains the device's serial number. If the device has no serial number, this member is zero.</p>
 </dd>
 
-### -field <b>BusType</b>
+### -field BusType
 
 <dd>
 <p>Specifies an enumerator value of type 
@@ -151,13 +151,13 @@ typedef struct _STORAGE_DEVICE_DESCRIPTOR {
       structure (if any).</p>
 </dd>
 
-### -field <b>RawPropertiesLength</b>
+### -field RawPropertiesLength
 
 <dd>
 <p>Indicates the number of bytes of bus-specific data that have been appended to this descriptor.</p>
 </dd>
 
-### -field <b>RawDeviceProperties</b>
+### -field RawDeviceProperties
 
 <dd>
 <p>Contains an array of length one that serves as a place holder for the first byte of the bus specific 

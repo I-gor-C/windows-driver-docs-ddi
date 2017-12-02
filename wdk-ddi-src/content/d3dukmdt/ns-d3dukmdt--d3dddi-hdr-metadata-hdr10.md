@@ -60,43 +60,43 @@ typedef struct _D3DDDI_HDR_METADATA_HDR10 {
 ## -struct-fields
 <dl>
 
-### -field <b>RedPrimary</b>
+### -field RedPrimary
 
 <dd>
 <p>The chromaticity coordinates of the 1.0 red value. Index 0 contains the X coordinate and index 1 contains the Y coordinate. </p>
 </dd>
 
-### -field <b>GreenPrimary</b>
+### -field GreenPrimary
 
 <dd>
 <p>The chromaticity coordinates of the 1.0 green value. Index 0 contains the X coordinate and index 1 contains the Y coordinate. </p>
 </dd>
 
-### -field <b>BluePrimary</b>
+### -field BluePrimary
 
 <dd>
 <p>The chromaticity coordinates of the 1.0 blue value. Index 0 contains the X coordinate and index 1 contains the Y coordinate. </p>
 </dd>
 
-### -field <b>MaxMasteringLuminance</b>
+### -field MaxMasteringLuminance
 
 <dd>
 <p>The maximum number of nits of the display used to master the content. </p>
 </dd>
 
-### -field <b>MinMasteringLuminance</b>
+### -field MinMasteringLuminance
 
 <dd>
 <p>The minimum number of nits of the display used to master the content.</p>
 </dd>
 
-### -field <b>MaxContentLightLevel</b>
+### -field MaxContentLightLevel
 
 <dd>
 <p>The maximum nit value used anywhere in the content. </p>
 </dd>
 
-### -field <b>MaxFrameAverageLightLevel</b>
+### -field MaxFrameAverageLightLevel
 
 <dd>
 <p>The per-frame average of the maximum nit values. </p>

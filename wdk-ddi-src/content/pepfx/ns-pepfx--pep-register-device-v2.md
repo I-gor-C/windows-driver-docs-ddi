@@ -58,31 +58,31 @@ typedef struct _PEP_REGISTER_DEVICE_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceId</b>
+### -field DeviceId
 
 <dd>
 <p>[in] A string that uniquely identifies the device. This member is a pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains a <a href="devinst.device_identification_strings">device identification string</a>.</p>
 </dd>
 
-### -field <b>KernelHandle</b>
+### -field KernelHandle
 
 <dd>
 <p>[in] A POHANDLE value that represents the registration of the device with PoFx. The platform extension plug-in (PEP) previously received this handle from PoFx during the <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification that informed the PEP that the device's driver stack registered the device with PoFx.</p>
 </dd>
 
-### -field <b>Register</b>
+### -field Register
 
 <dd>
 <p>[in] A pointer to a <a href="..\pepfx\ns-pepfx--pep-device-register-v2.md">PEP_DEVICE_REGISTER_V2</a> structure that describes the power management attributes of all the components in the device. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[out] A PEPHANDLE value that the PEP creates to identify this device.  PoFx will use this handle to identify the device in future <a href="kernel.device_power_management__dpm__notifications">device power management (DPM) notifications</a>.</p>
 </dd>
 
-### -field <b>DeviceAccepted</b>
+### -field DeviceAccepted
 
 <dd>
 <p>[out] A <a href="..\pepfx\ne-pepfx--pep-device-acceptance-type.md">PEP_DEVICE_ACCEPTANCE_TYPE</a> enumeration value that indicates whether the PEP claims ownership of the device. The PEP that claims ownership is responsible for handling DPM notifications for the device.</p>

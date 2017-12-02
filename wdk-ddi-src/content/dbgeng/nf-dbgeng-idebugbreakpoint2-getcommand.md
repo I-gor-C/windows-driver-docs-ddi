@@ -7,7 +7,7 @@ old-location: debugger\getcommand.htm
 old-project: debugger
 ms.assetid: 3f7b704f-be73-459a-bb5a-bbe649751900
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugBreakpoint2, GetCommand, IDebugBreakpoint2::GetCommand
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ HRESULT GetCommand(
 ## -parameters
 <dl>
 
-### -param <i>Buffer</i> [out, optional]
+### -param Buffer [out, optional]
 
 <dd>
 <p>The command string that is executed when the breakpoint is triggered.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>The size, in characters, of the buffer that <i>Buffer</i> points to.</p>
 </dd>
 
-### -param <i>CommandSize</i> [out, optional]
+### -param CommandSize [out, optional]
 
 <dd>
 <p>The size of the command string.  If <i>CommandSize</i> is <b>NULL</b>, this information is not returned.</p>
@@ -84,7 +84,7 @@ HRESULT GetCommand(
 
 <p> </p>
 
-<p>This method can also return error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
+<p>This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.</p>
 
 ## -remarks
 <p>The command string is a list of debugger commands that are separated by semicolons.  These commands are executed every time that the breakpoint is triggered.  The commands are executed before the engine informs any event callbacks that the breakpoint has been triggered.</p>

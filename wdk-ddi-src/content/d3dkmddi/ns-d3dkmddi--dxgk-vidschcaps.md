@@ -73,14 +73,14 @@ typedef struct _DXGK_VIDSCHCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>MultiEngineAware</b>
+### -field MultiEngineAware
 
 <dd>
 <p>A UINT value that specifies whether the driver supports the creation and destruction of a device context (through the <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a> and <a href="display.dxgkddidestroycontext">DxgkDdiDestroyContext</a> functions) and the use of a device context (through the <a href="display.dxgkddipresent">DxgkDdiPresent</a> and <a href="display.dxgkddirender">DxgkDdiRender</a> functions). If the driver does not support context creation, for every call to the driver that would pass a handle to a context, the Microsoft DirectX graphics kernel subsystem replaces the handle to the context with a handle to the device.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>VSyncPowerSaveAware</b>
+### -field VSyncPowerSaveAware
 
 <dd>
 <p>A UINT value that specifies whether the driver supports vertical-sync power-saving functionality. 
@@ -90,7 +90,7 @@ typedef struct _DXGK_VIDSCHCAPS {
 <p>Supported starting with Windows Server 2008 and Windows Vista with SP1.</p>
 </dd>
 
-### -field <b>PreemptionAware</b>
+### -field PreemptionAware
 
 <dd>
 <p>A UINT value that specifies whether the driver supports the   GPU preemption policy of Windows 8 and later versions of Windows. With this policy, the operating system always issues preemption requests to the GPU before it initiates the <a href="https://msdn.microsoft.com/f410eec7-026f-41e0-8c60-72f651659ead">Timeout Detection and Recovery
@@ -104,7 +104,7 @@ typedef struct _DXGK_VIDSCHCAPS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>NoDmaPatching</b>
+### -field NoDmaPatching
 
 <dd>
 <p>A UINT value that specifies whether the driver disables leak detection for DMA buffers that are split into multiple parts. This detection is performed after the driver's <a href="display.dxgkddipatch">DxgkDdiPatch</a> function is called to assign, or <i>patch</i>, physical addresses to each part of the DMA buffer.</p>
@@ -118,7 +118,7 @@ typedef struct _DXGK_VIDSCHCAPS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>CancelCommandAware</b>
+### -field CancelCommandAware
 
 <dd>
 <p>A UINT value that specifies whether the driver supports cleaning up internal resources (through the <a href="display.dxgkddicancelcommand">DxgkDdiCancelCommand</a> function) after a command is removed from the hardware queue.</p>
@@ -129,7 +129,7 @@ typedef struct _DXGK_VIDSCHCAPS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>No64BitAtomics</b>
+### -field No64BitAtomics
 
 <dd>
 <table>
@@ -166,14 +166,14 @@ typedef struct _DXGK_VIDSCHCAPS {
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>
         This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>
@@ -182,14 +182,14 @@ typedef struct _DXGK_VIDSCHCAPS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. </p>
 <p>Setting this member to zero is equivalent to setting the remaining 30 bits (0xFFFFFFC) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that DXGK_VIDSCHCAPS contains that can hold a 32-bit value that identifies the GPU scheduling capabilities that the driver can support.</p>

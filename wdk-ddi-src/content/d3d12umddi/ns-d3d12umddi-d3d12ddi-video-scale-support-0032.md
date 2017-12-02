@@ -55,13 +55,13 @@ typedef struct _D3D12DDI_VIDEO_SCALE_SUPPORT_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>OutputSizeRange</b>
+### -field OutputSizeRange
 
 <dd>
 <p>Output size range.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags.</p>

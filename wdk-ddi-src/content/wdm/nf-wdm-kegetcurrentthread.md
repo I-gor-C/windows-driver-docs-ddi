@@ -61,7 +61,7 @@ PKTHREAD KeGetCurrentThread(void);
 <p><b>KeGetCurrentThread</b> returns a pointer to an opaque thread object. </p>
 
 ## -remarks
-<p>This routine is identical to <a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>.</p>
+<p>This routine is identical to <a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>.</p>
 
 <p>A caller of <b>KeGetCurrentThread</b> can use the returned pointer as an input parameter to <a href="..\wdm\nf-wdm-kequeryprioritythread.md">KeQueryPriorityThread</a>, <a href="..\ntddk\nf-ntddk-kesetbaseprioritythread.md">KeSetBasePriorityThread</a>, or <a href="..\wdm\nf-wdm-kesetprioritythread.md">KeSetPriorityThread</a>. However, the memory containing the thread object is opaque; that is, it is reserved for exclusive use by the operating system.</p>
 
@@ -137,7 +137,7 @@ PKTHREAD KeGetCurrentThread(void);
 <a href="..\wdm\nf-wdm-kesetprioritythread.md">KeSetPriorityThread</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 </dl>
 <p> </p>

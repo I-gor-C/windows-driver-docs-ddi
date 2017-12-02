@@ -7,7 +7,7 @@ old-location: ifsk\fltqueryvolumeinformation.htm
 old-project: ifsk
 ms.assetid: 57b65e87-7f2d-44fc-84b9-e029c8075be3
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltQueryVolumeInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ NTSTATUS FltQueryVolumeInformation(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>An opaque instance pointer for a minifilter driver instance that is attached to the volume. </p>
 </dd>
 
-### -param <i>Iosb</i> [out]
+### -param Iosb [out]
 
 <dd>
 <p>A pointer to caller-allocated IO_STATUS_BLOCK structure that receives the final completion status and information about the query operation. For successful calls that return data, the number of bytes written to the <i>FsInformation</i> buffer is returned in the structure's <b>Information</b> member. </p>
 </dd>
 
-### -param <i>FsInformation</i> [out]
+### -param FsInformation [out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives the desired information about the volume. The structure of the information returned in the buffer is defined by the <i>FsInformationClass</i> parameter. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The size in bytes of the buffer that <i>FsInformation</i> points to. The caller should set this parameter according to the given <i>FsInformationClass</i>. For example, if the value of <i>FsInformationClass</i> is FileFsControlInformation, <i>Length</i> must be at least <b>sizeof</b>(FILE_FS_CONTROL_INFORMATION). </p>
 </dd>
 
-### -param <i>FsInformationClass</i> [in]
+### -param FsInformationClass [in]
 
 <dd>
 <p>The type of information requested. One of the following value. </p>
@@ -94,7 +94,7 @@ NTSTATUS FltQueryVolumeInformation(
 <tr>
 <td width="40%"><a id="FileFsAttributeInformation"></a><a id="filefsattributeinformation"></a><a id="FILEFSATTRIBUTEINFORMATION"></a><dl>
 
-### -param <b>FileFsAttributeInformation</b>
+### -param FileFsAttributeInformation
 
 </dl>
 </td>
@@ -105,7 +105,7 @@ NTSTATUS FltQueryVolumeInformation(
 <tr>
 <td width="40%"><a id="FileFsControlInformation"></a><a id="filefscontrolinformation"></a><a id="FILEFSCONTROLINFORMATION"></a><dl>
 
-### -param <b>FileFsControlInformation</b>
+### -param FileFsControlInformation
 
 </dl>
 </td>
@@ -116,7 +116,7 @@ NTSTATUS FltQueryVolumeInformation(
 <tr>
 <td width="40%"><a id="FileFsDeviceInformation"></a><a id="filefsdeviceinformation"></a><a id="FILEFSDEVICEINFORMATION"></a><dl>
 
-### -param <b>FileFsDeviceInformation</b>
+### -param FileFsDeviceInformation
 
 </dl>
 </td>
@@ -127,7 +127,7 @@ NTSTATUS FltQueryVolumeInformation(
 <tr>
 <td width="40%"><a id="FileFsDriverPathInformation"></a><a id="filefsdriverpathinformation"></a><a id="FILEFSDRIVERPATHINFORMATION"></a><dl>
 
-### -param <b>FileFsDriverPathInformation</b>
+### -param FileFsDriverPathInformation
 
 </dl>
 </td>
@@ -138,7 +138,7 @@ NTSTATUS FltQueryVolumeInformation(
 <tr>
 <td width="40%"><a id="FileFsFullSizeInformation"></a><a id="filefsfullsizeinformation"></a><a id="FILEFSFULLSIZEINFORMATION"></a><dl>
 
-### -param <b>FileFsFullSizeInformation</b>
+### -param FileFsFullSizeInformation
 
 </dl>
 </td>
@@ -149,7 +149,7 @@ NTSTATUS FltQueryVolumeInformation(
 <tr>
 <td width="40%"><a id="FileFsObjectIdInformation"></a><a id="filefsobjectidinformation"></a><a id="FILEFSOBJECTIDINFORMATION"></a><dl>
 
-### -param <b>FileFsObjectIdInformation</b>
+### -param FileFsObjectIdInformation
 
 </dl>
 </td>
@@ -162,7 +162,7 @@ NTSTATUS FltQueryVolumeInformation(
 <tr>
 <td width="40%"><a id="FileFsSizeInformation"></a><a id="filefssizeinformation"></a><a id="FILEFSSIZEINFORMATION"></a><dl>
 
-### -param <b>FileFsSizeInformation</b>
+### -param FileFsSizeInformation
 
 </dl>
 </td>
@@ -173,7 +173,7 @@ NTSTATUS FltQueryVolumeInformation(
 <tr>
 <td width="40%"><a id="FileFsVolumeInformation"></a><a id="filefsvolumeinformation"></a><a id="FILEFSVOLUMEINFORMATION"></a><dl>
 
-### -param <b>FileFsVolumeInformation</b>
+### -param FileFsVolumeInformation
 
 </dl>
 </td>
@@ -184,7 +184,7 @@ NTSTATUS FltQueryVolumeInformation(
 <tr>
 <td width="40%"><a id="FileFsSectorSizeInformation"></a><a id="filefssectorsizeinformation"></a><a id="FILEFSSECTORSIZEINFORMATION"></a><dl>
 
-### -param <b>FileFsSectorSizeInformation</b>
+### -param FileFsSectorSizeInformation
 
 </dl>
 </td>
@@ -322,4 +322,4 @@ NTSTATUS FltQueryVolumeInformation(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryVolumeInformation routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryVolumeInformation routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

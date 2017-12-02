@@ -57,13 +57,13 @@ PURB USBD_CreateConfigurationRequest(
 ## -parameters
 <dl>
 
-### -param <i>ConfigurationDescriptor</i> [in]
+### -param ConfigurationDescriptor [in]
 
 <dd>
 <p>Pointer to a caller-allocated <a href="..\usbspec\ns-usbspec--usb-configuration-descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a> structure that contains the configuration descriptor for the configuration to be selected.</p>
 </dd>
 
-### -param <i>Siz
+### -param Siz
     </i> [in, out]
 
 <dd>

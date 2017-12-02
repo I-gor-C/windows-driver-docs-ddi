@@ -55,13 +55,13 @@ NTSTATUS KsDefaultDeviceIoCompletion(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Specifies the device object dispatched to.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP to return a default response to.</p>

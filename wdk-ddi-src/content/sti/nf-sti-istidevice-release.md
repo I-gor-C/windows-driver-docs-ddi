@@ -7,7 +7,7 @@ old-location: image\istidevice_release.htm
 old-project: image
 ms.assetid: cff05099-cf27-4cc6-a820-1d8a5c3ef88e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDevice, Release, IStiDevice::Release
 ms.prod: windows-hardware
 ms.technology: windows-devices

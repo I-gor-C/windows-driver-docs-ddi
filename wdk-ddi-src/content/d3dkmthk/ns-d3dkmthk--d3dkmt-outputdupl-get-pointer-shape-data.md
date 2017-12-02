@@ -59,27 +59,27 @@ typedef struct _D3DKMT_OUTPUTDUPL_GET_POINTER_SHAPE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd></dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd></dd>
 
-### -field <b>BufferSizeSupplied</b>
+### -field BufferSizeSupplied
 
 <dd></dd>
 
-### -field <b>pShapeBuffer</b>
+### -field pShapeBuffer
 
 <dd></dd>
 
-### -field <b>BufferSizeRequired</b>
+### -field BufferSizeRequired
 
 <dd></dd>
 
-### -field <b>ShapeInfo</b>
+### -field ShapeInfo
 
 <dd></dd>
 </dl>

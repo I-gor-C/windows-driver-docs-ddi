@@ -77,13 +77,13 @@ ULONG StorPortAllocateHostMemoryBuffer(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>MinimumBytes</i> [in]
+### -param MinimumBytes [in]
 
 <dd>
 <p>The minimum amount of memory that will be useful to the
@@ -91,39 +91,39 @@ ULONG StorPortAllocateHostMemoryBuffer(
         the preferred size is acceptable.</p>
 </dd>
 
-### -param <i>PreferredBytes</i> [in]
+### -param PreferredBytes [in]
 
 <dd>
 <p>The amount of memory the device prefers, in bytes.  This
         must be a multiple of the page size.</p>
 </dd>
 
-### -param <i>UtilizationBytes</i> [in]
+### -param UtilizationBytes [in]
 
 <dd>
 <p>The total number of blocks allocated on the device, in
         bytes.</p>
 </dd>
 
-### -param <i>AlignmentBytes</i> [in]
+### -param AlignmentBytes [in]
 
 <dd>
 <p>The Host Memory Buffer alignment requirement from the device.</p>
 </dd>
 
-### -param <i>LowestAcceptableAddress</i> [in]
+### -param LowestAcceptableAddress [in]
 
 <dd>
 <p>The lowest physical address that is valid for the allocation. For example, if the device can only reference physical memory in the 8 MB to 16 MB range, this value would be set to 0x800000 (8 MB).</p>
 </dd>
 
-### -param <i>HighestAcceptableAddress</i> [in]
+### -param HighestAcceptableAddress [in]
 
 <dd>
 <p>The highest physical address that is valid for the allocation. For example, if the device can only reference physical memory below 16 MB, this value would be set to 0xFFFFFF (16 MB - 1).</p>
 </dd>
 
-### -param <i>BoundaryAddressMultiple</i> [in, optional]
+### -param BoundaryAddressMultiple [in, optional]
 
 <dd>
 <p>The physical address multiple that this allocation must not cross.</p>
@@ -131,7 +131,7 @@ ULONG StorPortAllocateHostMemoryBuffer(
 <div> </div>
 </dd>
 
-### -param <i>PhysicalAddressRanges</i> 
+### -param PhysicalAddressRanges 
 
 <dd>
 <p>An array of physical address ranges that make up
@@ -139,7 +139,7 @@ ULONG StorPortAllocateHostMemoryBuffer(
         fill in the array with one or more physical address ranges.</p>
 </dd>
 
-### -param <i>PhysicalAddressRangeCount</i> [in, out]
+### -param PhysicalAddressRangeCount [in, out]
 
 <dd>
 <p> The number of entries in <b>PhysicalAddressRanges</b>. This function will update this parameter to indicate how

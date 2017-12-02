@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_enumerate_device_service_commands.htm
 old-project: netvista
 ms.assetid: 9D30F8BE-C376-48FD-A76C-6069F332BC11
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, *PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef struct _NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The header with type, revision, and size information about the NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
@@ -99,7 +99,7 @@ typedef struct _NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>DeviceServiceGuid</b>
+### -field DeviceServiceGuid
 
 <dd>
 <p>The GUID of the device service for which commands should be enumerated.</p>

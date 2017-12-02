@@ -54,7 +54,7 @@ NTSTATUS GetBuffer(
 ## -parameters
 <dl>
 
-### -param <i>ppbBuffer</i> [out]
+### -param ppbBuffer [out]
 
 <dd>
 <p>Output pointer for the buffer. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the buffer.</p>

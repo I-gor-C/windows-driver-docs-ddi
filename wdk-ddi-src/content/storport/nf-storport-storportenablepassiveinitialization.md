@@ -56,13 +56,13 @@ BOOLEAN StorPortEnablePassiveInitialization(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the per-adapter device extension. </p>
 </dd>
 
-### -param <i>HwPassiveInitialization</i> [in]
+### -param HwPassiveInitialization [in]
 
 <dd>
 <p>Pointer to a callback routine that the port driver calls at PASSIVE_LEVEL to initialize the DPCs that the miniport driver will use. For a description of this callback routine, see <a href="storage.hwstorpassiveinitializeroutine">HwStorPassiveInitializeRoutine</a>. </p>

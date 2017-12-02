@@ -57,19 +57,19 @@ typedef struct _STORAGE_HW_FIRMWARE_INFO_QUERY {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_INFO_QUERY)</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure as a buffer.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The flags associated with the query. The following are flags that can be set in this member.</p>
@@ -86,7 +86,7 @@ typedef struct _STORAGE_HW_FIRMWARE_INFO_QUERY {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

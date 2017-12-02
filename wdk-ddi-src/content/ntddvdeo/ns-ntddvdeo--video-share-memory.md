@@ -57,25 +57,25 @@ typedef struct _VIDEO_SHARE_MEMORY {
 ## -struct-fields
 <dl>
 
-### -field <b>ProcessHandle</b>
+### -field ProcessHandle
 
 <dd>
 <p>Is a handle to the current process. This member is usually set to <b>NtCurrentProcess</b>, a macro defined in <i>Ntddk.h</i>.</p>
 </dd>
 
-### -field <b>ViewOffset</b>
+### -field ViewOffset
 
 <dd>
 <p>Indicates the byte offset from the beginning of the <a href="wdkgloss.f#wdkgloss.frame_buffer#wdkgloss.frame_buffer"><i>frame buffer</i></a>. This member is usually set to 0.</p>
 </dd>
 
-### -field <b>ViewSize</b>
+### -field ViewSize
 
 <dd>
 <p>Indicates the size, in bytes, of the frame buffer.</p>
 </dd>
 
-### -field <b>RequestedVirtualAddress</b>
+### -field RequestedVirtualAddress
 
 <dd>
 <p>Indicates the location of the requested frame buffer in the process's memory. This member is normally set to <b>NULL</b>, which means the display driver writer does not care about the precise location of the requested memory. If this member is set to a non-<b>NULL</b> value, the display driver writer intends that the frame buffer be located at that address. In this case, the display driver writer must be certain that the location specified is not already in use for another purpose.</p>

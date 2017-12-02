@@ -7,7 +7,7 @@ old-location: wdf\wdf_memory_descriptor.htm
 old-project: wdf
 ms.assetid: 0683cb81-4ae7-4296-b46a-ad2e8b25a781
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR, *PWDF_MEMORY_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,31 +70,31 @@ typedef struct _WDF_MEMORY_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="..\wdfmemory\ne-wdfmemory--wdf-memory-descriptor-type.md">WDF_MEMORY_DESCRIPTOR_TYPE</a>-typed value that identifies the type of buffer description that this <b>WDF_MEMORY_DESCRIPTOR</b> structure contains.</p>
 </dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <p>A union of three structures, one of which describes a buffer.</p>
 <dl>
 
-### -field <b>BufferType</b>
+### -field BufferType
 
 <dd>
 <p>If the <b>Type</b> member is <b>WdfMemoryDescriptorTypeBuffer</b>, the members of the <b>BufferType</b> structure describe a buffer. This structure contains the following two members:</p>
 <dl>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>A pointer to a buffer. </p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The length, in bytes, of the buffer. </p>
@@ -102,19 +102,19 @@ typedef struct _WDF_MEMORY_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>MdlType</b>
+### -field MdlType
 
 <dd>
 <p>If the <b>Type</b> member is <b>WdfMemoryDescriptorTypeMdl</b>, the members of the <b>MdlType</b> structure describe a buffer. This structure contains the following two members:</p>
 <dl>
 
-### -field <b>Mdl</b>
+### -field Mdl
 
 <dd>
 <p>A pointer to a memory descriptor list (MDL). </p>
 </dd>
 
-### -field <b>BufferLength</b>
+### -field BufferLength
 
 <dd>
 <p>The length, in bytes, of the buffer.</p>
@@ -122,19 +122,19 @@ typedef struct _WDF_MEMORY_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>HandleType</b>
+### -field HandleType
 
 <dd>
 <p>If the <b>Type</b> member is <b>WdfMemoryDescriptorTypeHandle</b>, the members of the <b>HandleType</b> structure describe a buffer. This structure contains the following two members:</p>
 <dl>
 
-### -field <b>Memory</b>
+### -field Memory
 
 <dd>
 <p>A handle to a framework memory object. </p>
 </dd>
 
-### -field <b>Offsets</b>
+### -field Offsets
 
 <dd>
 <p>A pointer to a <a href="..\wudfddi_types\ns-wudfddi-types--wdfmemory-offset.md">WDFMEMORY_OFFSET</a> structure that describes a subsection of the buffer that is represented by the memory object. </p>
@@ -191,4 +191,4 @@ typedef struct _WDF_MEMORY_DESCRIPTOR {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_MEMORY_DESCRIPTOR structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_MEMORY_DESCRIPTOR structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

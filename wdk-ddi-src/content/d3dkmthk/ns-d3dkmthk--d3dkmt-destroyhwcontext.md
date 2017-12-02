@@ -54,7 +54,7 @@ typedef struct _D3DKMT_DESTROYHWCONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>hHwContext</b>
+### -field hHwContext
 
 <dd>
 <p>A handle that identifies the context being destroyed.

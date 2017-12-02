@@ -7,7 +7,7 @@ old-location: netvista\rilcallmodificationinfomodificationtype.htm
 old-project: netvista
 ms.assetid: 37b18047-7818-4e57-b25a-3c958106e215
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILCALLMODIFICATIONINFOMODIFICATIONTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLMODIFICATIONTYPE_BLOCKED"></a><a id="ril_callmodificationtype_blocked"></a><b>RIL_CALLMODIFICATIONTYPE_BLOCKED</b>
+### -field RIL_CALLMODIFICATIONTYPE_BLOCKED
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMODIFICATIONTYPE_MODIFIED"></a><a id="ril_callmodificationtype_modified"></a><b>RIL_CALLMODIFICATIONTYPE_MODIFIED</b>
+### -field RIL_CALLMODIFICATIONTYPE_MODIFIED
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMODIFICATIONTYPE_MAX"></a><a id="ril_callmodificationtype_max"></a><b>RIL_CALLMODIFICATIONTYPE_MAX</b>
+### -field RIL_CALLMODIFICATIONTYPE_MAX
 
 <dd></dd>
 </dl>

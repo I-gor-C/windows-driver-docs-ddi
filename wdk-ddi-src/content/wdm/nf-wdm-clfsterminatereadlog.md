@@ -55,7 +55,7 @@ NTSTATUS ClfsTerminateReadLog(
 ## -parameters
 <dl>
 
-### -param <i>pvCursorContext</i> [in]
+### -param pvCursorContext [in]
 
 <dd>
 <p>A pointer to the read context to be invalidated. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a> or <a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>.</p>

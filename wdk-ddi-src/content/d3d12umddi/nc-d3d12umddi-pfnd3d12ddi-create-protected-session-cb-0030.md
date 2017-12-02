@@ -56,19 +56,19 @@ HRESULT APIENTRY CALLBACK* PFND3D12DDI_CREATE_PROTECTED_SESSION_CB_0030(
 ## -parameters
 <dl>
 
-### -param <i>hRTDevice</i> 
+### -param hRTDevice 
 
 <dd>
 <p>The hardware device being processed.</p>
 </dd>
 
-### -param <i>hRTProtectedSession</i> 
+### -param hRTProtectedSession 
 
 <dd>
 <p>The protected session.</p>
 </dd>
 
-### -param <i>D3D12DDICB_CREATE_PROTECTED_RESOURCE_SESSION</i> [in]
+### -param D3D12DDICB_CREATE_PROTECTED_RESOURCE_SESSION [in]
 
 <dd>
 <p>Used to create a protected resource session</p>

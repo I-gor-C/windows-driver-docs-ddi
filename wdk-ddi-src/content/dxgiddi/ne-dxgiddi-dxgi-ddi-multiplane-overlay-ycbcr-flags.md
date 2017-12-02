@@ -56,19 +56,19 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_NOMINAL_RANGE"></a><a id="dxgi_ddi_multiplane_overlay_ycbcr_flag_nominal_range"></a><a id="DXGI_DDI_MULTIPLANE_OVERLAY_YCBCR_FLAG_NOMINAL_RANGE"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_NOMINAL_RANGE</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_NOMINAL_RANGE
 
 <dd>
 <p>YUV values range from 16 to 235, inclusive, instead of the default range of 0 to 255, inclusive.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_BT709"></a><a id="dxgi_ddi_multiplane_overlay_ycbcr_flag_bt709"></a><a id="DXGI_DDI_MULTIPLANE_OVERLAY_YCBCR_FLAG_BT709"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_BT709</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_BT709
 
 <dd>
 <p>YUV values should be converted using the BT.709 standard, instead of the default BT.601 conversion.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_xvYCC"></a><a id="dxgi_ddi_multiplane_overlay_ycbcr_flag_xvycc"></a><a id="DXGI_DDI_MULTIPLANE_OVERLAY_YCBCR_FLAG_XVYCC"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_xvYCC</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_xvYCC
 
 <dd>
 <p>YUV values contain xvYCC data, instead of conventional YCbCr data.</p>

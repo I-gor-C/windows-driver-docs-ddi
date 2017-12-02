@@ -61,37 +61,37 @@ typedef struct _DXGK_PRESENTMULTIPLANEOVERLAYLIST {
 ## -struct-fields
 <dl>
 
-### -field <b>LayerIndex</b>
+### -field LayerIndex
 
 <dd>
 <p>The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.</p>
 </dd>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>Indicates whether the overlay plane specified by <b>LayerIndex</b> is enabled for display.</p>
 </dd>
 
-### -field <b>hDeviceSpecificAllocation</b>
+### -field hDeviceSpecificAllocation
 
 <dd>
 <p>A handle to the device-specific allocation that corresponds to the non device-specific allocation. The display miniport driver must set <b>hDeviceSpecificAllocation</b> to a handle value that it can use to refer to its private tracking structure for the allocation.</p>
 </dd>
 
-### -field <b>SegmentId</b>
+### -field SegmentId
 
 <dd>
 <p>[in] The identifier of a segment that data is read from.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>PhysicalAddress</b>
+### -field PhysicalAddress
 
 <dd>
 <p>[in] A <b>PHYSICAL_ADDRESS</b> data type (which is defined as <b>LARGE_INTEGER</b>) that indicates the physical address, within the segment that <b>SegmentId</b> specifies, where the data is read.</p>

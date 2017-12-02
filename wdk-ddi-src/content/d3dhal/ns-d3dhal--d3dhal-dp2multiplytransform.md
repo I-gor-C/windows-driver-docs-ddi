@@ -58,7 +58,7 @@ typedef struct _D3DHAL_DP2MULTIPLYTRANSFORM {
 ## -struct-fields
 <dl>
 
-### -field <b>xfrmType</b>
+### -field xfrmType
 
 <dd>
 <p>Specifies the current transform being modified.</p>
@@ -95,7 +95,7 @@ typedef struct _D3DHAL_DP2MULTIPLYTRANSFORM {
 <p> </p>
 </dd>
 
-### -field <b>matrix</b>
+### -field matrix
 
 <dd>
 <p>Specifies the matrix used to modify the current transform.</p>

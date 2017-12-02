@@ -56,7 +56,7 @@ NTSTATUS  D3DKMTCreateProtectedSession(
 ## -parameters
 <dl>
 
-### -param <i>D3dkmt_createprotectedsession</i> [in, out]
+### -param D3dkmt_createprotectedsession [in, out]
 
 <dd>
 <p>Holds information to create a protected session.</p>

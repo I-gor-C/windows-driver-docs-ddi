@@ -56,19 +56,19 @@ typedef struct _D3D12DDI_VIDEO_DECODE_FORMAT_COUNT_DATA_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeIndex</b>
+### -field NodeIndex
 
 <dd>
 <p>Node index.</p>
 </dd>
 
-### -field <b>Configuration</b>
+### -field Configuration
 
 <dd>
 <p>Configuration.</p>
 </dd>
 
-### -field <b>FormatCount</b>
+### -field FormatCount
 
 <dd>
 <p>Format count.</p>

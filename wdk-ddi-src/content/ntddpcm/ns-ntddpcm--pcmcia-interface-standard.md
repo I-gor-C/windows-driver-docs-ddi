@@ -61,49 +61,49 @@ typedef struct _PCMCIA_INTERFACE_STANDARD {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Indicates the size of the returned interface. </p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Indicates the version of the returned interface. </p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>Pointer to the <a href="kernel.interfacereference">InterfaceReference</a> implementation. </p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>Pointer to the <a href="kernel.interfacedereference">InterfaceDereference</a> implementation. </p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Pointer to an opaque handle that contains interface context information. Drivers that call routines that belong to the <b>PCMCIA_INTERFACE_STANDARD</b> interface must pass this value to the interface routines when they call them. </p>
 </dd>
 
-### -field <b>ModifyMemoryWindow</b>
+### -field ModifyMemoryWindow
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537610">PCMCIA_MODIFY_MEMORY_WINDOW</a> interface routine. </p>
 </dd>
 
-### -field <b>SetVpp</b>
+### -field SetVpp
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537611">PCMCIA_SET_VPP</a> interface routine.</p>
 </dd>
 
-### -field <b>IsWriteProtected</b>
+### -field IsWriteProtected
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537609">PCMCIA_IS_WRITE_PROTECTED</a> interface routine.</p>

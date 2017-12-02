@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookadditionalnumberparammask.htm
 old-project: netvista
 ms.assetid: e4cebb97-29e4-4979-9fdc-8120850d8a1e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILPHONEBOOKADDITIONALNUMBERPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_PBAN_NUMID"></a><a id="ril_param_pban_numid"></a><b>RIL_PARAM_PBAN_NUMID</b>
+### -field RIL_PARAM_PBAN_NUMID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBAN_ALL"></a><a id="ril_param_pban_all"></a><b>RIL_PARAM_PBAN_ALL</b>
+### -field RIL_PARAM_PBAN_ALL
 
 <dd></dd>
 </dl>

@@ -58,32 +58,32 @@ typedef struct D3DDDICB_LOGUMDMARKER {
 ## -struct-fields
 <dl>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] A handle to a Direct3D context that signals ETW marker events. This is also the context that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a> function will be called on.</p>
 </dd>
 
-### -field <b>APISequenceNumber</b>
+### -field APISequenceNumber
 
 <dd>
 <p>The API sequence number that the marker event is associated with.</p>
 </dd>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>Indicates which API sequence call caused this marker event. If zero, the marker event corresponds to the latest API sequence number after a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setmarker.md">pfnSetMarker</a> function. If 1, the marker event is located at the following API sequence number. And so on.</p>
 <p>Should be -1 if no time stamps are associated with this marker event.</p>
 </dd>
 
-### -field <b>StringIndex</b>
+### -field StringIndex
 
 <dd>
 <p>The offset, in bytes, of the string table entry pointed to by <b>Info</b>. Can be negative if the string is passed along with the marker event.</p>
 </dd>
 
-### -field <b>Info</b>
+### -field Info
 
 <dd>
 <p>A custom text string embedded in the ETW packet. Can be <b>NULL</b>.</p>

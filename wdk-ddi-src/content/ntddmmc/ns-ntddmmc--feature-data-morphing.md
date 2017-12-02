@@ -58,27 +58,27 @@ typedef struct _FEATURE_DATA_MORPHING {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>Asynchronous</b>
+### -field Asynchronous
 
 <dd>
 <p>Indicates, when set to 1, that the initiator can request device status asynchronously. If set to zero, the initiator must use polling to request status. </p>
 </dd>
 
-### -field <b>OCEvent</b>
+### -field OCEvent
 
 <dd></dd>
 
-### -field <b>Reserved01</b>
+### -field Reserved01
 
 <dd></dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. </p>

@@ -58,25 +58,25 @@ PVOID MmMapLockedPagesWithReservedMapping(
 ## -parameters
 <dl>
 
-### -param <i>MappingAddress</i> [in]
+### -param MappingAddress [in]
 
 <dd>
 <p>Pointer to the beginning of the reserved virtual memory range. This must be an address previously returned by <a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a>.</p>
 </dd>
 
-### -param <i>PoolTag</i> [in]
+### -param PoolTag [in]
 
 <dd>
 <p>Specifies the pool tag for the reserved memory buffer. This must be identical to the value specified in the <i>PoolTag</i> parameter of the call to <a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a> that reserved the buffer. </p>
 </dd>
 
-### -param <i>MemoryDescriptorList</i> [in]
+### -param MemoryDescriptorList [in]
 
 <dd>
 <p>A pointer to the MDL that is to be mapped. This MDL must describe physical pages that are locked down. A locked-down MDL can be built by the <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a> or <a href="..\wdm\nf-wdm-mmallocatepagesformdlex.md">MmAllocatePagesForMdlEx</a> routine. </p>
 </dd>
 
-### -param <i>CacheType</i> [in]
+### -param CacheType [in]
 
 <dd>
 <p>Specifies the <a href="..\wdm\ne-wdm--memory-caching-type.md">MEMORY_CACHING_TYPE</a> value to use to create the mapping.</p>

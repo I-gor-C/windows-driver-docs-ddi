@@ -62,23 +62,23 @@ typedef struct _D3DKMT_WDDM_2_0_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>Support64BitAtomics</b>
+### -field Support64BitAtomics
 
 <dd></dd>
 
-### -field <b>GpuMmuSupported</b>
+### -field GpuMmuSupported
 
 <dd></dd>
 
-### -field <b>IoMmuSupported</b>
+### -field IoMmuSupported
 
 <dd></dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd></dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd></dd>
 </dl>

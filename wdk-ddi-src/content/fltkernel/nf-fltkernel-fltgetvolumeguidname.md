@@ -7,7 +7,7 @@ old-location: ifsk\fltgetvolumeguidname.htm
 old-project: ifsk
 ms.assetid: 911d8b07-1313-4c4b-8d16-188857943327
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltGetVolumeGuidName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ NTSTATUS FltGetVolumeGuidName(
 ## -parameters
 <dl>
 
-### -param <i>Volume</i> [in]
+### -param Volume [in]
 
 <dd>
 <p>Opaque pointer for the volume. Must be a local file system volume. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>VolumeGuidName</i> [out]
+### -param VolumeGuidName [out]
 
 <dd>
 <p>Pointer to a caller-allocated <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that receives the volume's GUID name. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>BufferSizeNeeded</i> [out, optional]
+### -param BufferSizeNeeded [out, optional]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the size, in bytes, of the requested volume GUID name. If <b>FltGetVolumeGuidName</b> returns STATUS_BUFFER_TOO_SMALL, you can use the value of the variable to determine the required size for the structure that the <i>VolumeGuidName</i> parameter points to. This parameter is optional and can be <b>NULL</b>. </p>
@@ -95,7 +95,7 @@ NTSTATUS FltGetVolumeGuidName(
 
 <p>where <i>GUID</i> is a globally unique identifier that identifies the volume. </p>
 
-<p>This format, which is the same as that used by the mount manager, is described in <a href="NULL">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
+<p>This format, which is the same as that used by the mount manager, is described in <a href="storage.supporting_mount_manager_requests_in_a_storage_class_driver">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
 
 <p><b>FltGetVolumeGuidName</b> cannot safely be called from a pre-mount or post-mount callback. It cannot safely be called because even when the post-mount callback is called, the mount processing has not been completed by the I/O manager, and this causes a deadlock with the mount manager in certain cases.</p>
 
@@ -178,4 +178,4 @@ NTSTATUS FltGetVolumeGuidName(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetVolumeGuidName routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetVolumeGuidName routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

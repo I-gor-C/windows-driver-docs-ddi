@@ -57,19 +57,19 @@ typedef struct _CM_FULL_RESOURCE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>InterfaceType</b>
+### -field InterfaceType
 
 <dd>
 <p>Specifies the type of bus to which the device is connected. This must be one of the types defined by <a href="..\wdm\ne-wdm--interface-type.md">INTERFACE_TYPE</a>, in Wdm.h or Ntddk.h. (Not used by WDM drivers.)</p>
 </dd>
 
-### -field <b>BusNumber</b>
+### -field BusNumber
 
 <dd>
 <p>The system-assigned, driver-supplied, zero-based number of the bus to which the device is connected. (Not used by WDM drivers.)  </p>
 </dd>
 
-### -field <b>PartialResourceList</b>
+### -field PartialResourceList
 
 <dd>
 <p>A <a href="..\wdm\ns-wdm--cm-partial-resource-list.md">CM_PARTIAL_RESOURCE_LIST</a> structure. </p>

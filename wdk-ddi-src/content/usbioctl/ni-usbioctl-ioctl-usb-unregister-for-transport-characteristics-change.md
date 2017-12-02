@@ -46,16 +46,16 @@ req.product: Windows 10 or later.
 ## -ioctlparameters
 
 ### -input-buffer
-<p>A pointer to a <a href="buses.usb_transport_characteristics_change_unregistration">USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION</a> structure that contains the registration handle previously received by the <a href="buses.ioctl_usb_register_for_transport_characteristics_change">IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a> request.</p>
+<p>A pointer to a <a href="..\usbioctl\ns-usbioctl--usb-transport-characteristics-change-unregistration.md">USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION</a> structure that contains the registration handle previously received by the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-register-for-transport-characteristics-change.md">IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a> request.</p>
 
-<p>A pointer to a <a href="buses.usb_transport_characteristics_change_unregistration">USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION</a> structure that contains the registration handle previously received by the <a href="buses.ioctl_usb_register_for_transport_characteristics_change">IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a> request.</p>
+<p>A pointer to a <a href="..\usbioctl\ns-usbioctl--usb-transport-characteristics-change-unregistration.md">USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION</a> structure that contains the registration handle previously received by the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-register-for-transport-characteristics-change.md">IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a> request.</p>
 
 ### -input-buffer-length
-<p>The size of the <a href="buses.usb_transport_characteristics_change_unregistration">USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION</a> structure.</p>
+<p>The size of the <a href="..\usbioctl\ns-usbioctl--usb-transport-characteristics-change-unregistration.md">USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION</a> structure.</p>
 
-<p>The size of the <a href="buses.usb_transport_characteristics_change_unregistration">USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION</a> structure.</p>
+<p>The size of the <a href="..\usbioctl\ns-usbioctl--usb-transport-characteristics-change-unregistration.md">USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION</a> structure.</p>
 
-<p>The size of the <a href="buses.usb_transport_characteristics_change_unregistration">USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION</a> structure.</p>
+<p>The size of the <a href="..\usbioctl\ns-usbioctl--usb-transport-characteristics-change-unregistration.md">USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION</a> structure.</p>
 
 ### -output-buffer
 

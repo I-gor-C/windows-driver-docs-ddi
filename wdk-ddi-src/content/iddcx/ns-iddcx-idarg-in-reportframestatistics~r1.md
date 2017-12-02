@@ -55,7 +55,7 @@ typedef struct IDARG_IN_REPORTFRAMESTATISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>FrameStatistics</b>
+### -field FrameStatistics
 
 <dd>
 <p>

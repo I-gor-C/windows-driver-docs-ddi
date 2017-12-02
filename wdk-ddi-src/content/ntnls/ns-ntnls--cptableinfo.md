@@ -65,73 +65,73 @@ typedef struct _CPTABLEINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>CodePage</b>
+### -field CodePage
 
 <dd>
 <p>Specifies the code page number.</p>
 </dd>
 
-### -field <b>MaximumCharacterSize</b>
+### -field MaximumCharacterSize
 
 <dd>
 <p>Specifies the maximum length in bytes of a character.</p>
 </dd>
 
-### -field <b>DefaultChar</b>
+### -field DefaultChar
 
 <dd>
 <p>Specifies the default character (MB).</p>
 </dd>
 
-### -field <b>UniDefaultChar</b>
+### -field UniDefaultChar
 
 <dd>
 <p>Specifies the default character (Unicode).</p>
 </dd>
 
-### -field <b>TransDefaultChar</b>
+### -field TransDefaultChar
 
 <dd>
 <p>Specifies the translation of the default character (Unicode).</p>
 </dd>
 
-### -field <b>TransUniDefaultChar</b>
+### -field TransUniDefaultChar
 
 <dd>
 <p>Specifies the translation of the Unicode default character (MB).</p>
 </dd>
 
-### -field <b>DBCSCodePage</b>
+### -field DBCSCodePage
 
 <dd>
 <p>Specifies non-zero for DBCS code pages.</p>
 </dd>
 
-### -field <b>LeadByte</b>
+### -field LeadByte
 
 <dd>
 <p>Specifies the lead byte ranges.</p>
 </dd>
 
-### -field <b>MultiByteTable</b>
+### -field MultiByteTable
 
 <dd>
 <p>Specifies a pointer to a MB translation table.</p>
 </dd>
 
-### -field <b>WideCharTable</b>
+### -field WideCharTable
 
 <dd>
 <p>Specifies a pointer to a WC translation table.</p>
 </dd>
 
-### -field <b>DBCSRanges</b>
+### -field DBCSRanges
 
 <dd>
 <p>Specifies a pointer to DBCS ranges.</p>
 </dd>
 
-### -field <b>DBCSOffsets</b>
+### -field DBCSOffsets
 
 <dd>
 <p>Specifies a pointer to DBCS offsets.</p>

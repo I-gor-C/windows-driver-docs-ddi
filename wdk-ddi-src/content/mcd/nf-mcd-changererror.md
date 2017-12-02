@@ -57,25 +57,25 @@ VOID ChangerError(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> 
+### -param DeviceObject 
 
 <dd>
 <p>Pointer to the device object that represents the changer. </p>
 </dd>
 
-### -param <i>Srb</i> 
+### -param Srb 
 
 <dd>
 <p>Pointer to the SCSI request block for the operation that failed.</p>
 </dd>
 
-### -param <i>Status</i> 
+### -param Status 
 
 <dd>
 <p>Specifies the address of the STATUS_<i>XXX</i> code set by the system. The changer miniclass driver can change the status or leave it as is.</p>
 </dd>
 
-### -param <i>Retry</i> 
+### -param Retry 
 
 <dd>
 <p>Pointer to a flag that indicates whether to retry the request. The changer miniclass driver can set this flag or leave it as is.</p>

@@ -58,13 +58,13 @@ VOID APIENTRY* pfnSetShaderCacheSession(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>The handle of a device.</p>
 </dd>
 
-### -param <i>hCacheSession</i> 
+### -param hCacheSession 
 
 <dd>
 <p>The handle of a cache session.</p>

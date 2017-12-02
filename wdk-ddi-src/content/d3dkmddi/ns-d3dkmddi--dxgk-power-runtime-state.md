@@ -56,21 +56,21 @@ typedef struct _DXGK_POWER_RUNTIME_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>TransitionLatency</b>
+### -field TransitionLatency
 
 <dd>
 <p>The amount of time, in 100-nanosecond units, that the component takes to return to the F0 state.
    This value should be zero for the F0 state.</p>
 </dd>
 
-### -field <b>ResidencyRequirement</b>
+### -field ResidencyRequirement
 
 <dd>
 <p>The minimal amount of time, in 100-nanosecond units, that is required to spend in
    this F-state to make it worthwhile. This value should be zero for the F0 state.</p>
 </dd>
 
-### -field <b>NominalPower</b>
+### -field NominalPower
 
 <dd>
 <p>The power draw, in microwatt units, of the component in this F-state. This  value should not be zero for the F0 state.</p>

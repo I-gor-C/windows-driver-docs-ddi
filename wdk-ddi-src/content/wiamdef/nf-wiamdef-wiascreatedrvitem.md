@@ -7,7 +7,7 @@ old-location: image\wiascreatedrvitem.htm
 old-project: image
 ms.assetid: bc91133a-ae6a-447a-8519-65fbe2929521
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiasCreateDrvItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,43 +61,43 @@ HRESULT _stdcall wiasCreateDrvItem(
 ## -parameters
 <dl>
 
-### -param <i>lObjectFlags</i> 
+### -param lObjectFlags 
 
 <dd>
 <p>Specifies the object item type, which must be WiaItemTypeFolder or WiaItemTypeFile (possibly the bitwise OR of these). These flags are described in the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -param <i>bstrItemName</i> 
+### -param bstrItemName 
 
 <dd>
 <p>Specifies a string that contains the item name without path information.</p>
 </dd>
 
-### -param <i>bstrFullItemName</i> 
+### -param bstrFullItemName 
 
 <dd>
 <p>Specifies a string that contains the item name with path information.</p>
 </dd>
 
-### -param <i>pIMiniDrv</i> [in, out]
+### -param pIMiniDrv [in, out]
 
 <dd>
 <p>Pointer to the <a href="image.iwiaminidrv_interface">IWiaMiniDrv Interface</a> of the current minidriver.</p>
 </dd>
 
-### -param <i>cbDevSpecContext</i> 
+### -param cbDevSpecContext 
 
 <dd>
 <p>Specifies the size in bytes of the device specific context.</p>
 </dd>
 
-### -param <i>ppDevSpecContext</i> [out]
+### -param ppDevSpecContext [out]
 
 <dd>
 <p>Pointer to a memory location that receives the address of the device specific context. Set this to <b>NULL</b> if the information is not needed.</p>
 </dd>
 
-### -param <i>ppIWiaDrvItem</i> [out]
+### -param ppIWiaDrvItem [out]
 
 <dd>
 <p>Pointer to a memory location that receives the address of an <a href="image.iwiadrvitem_interface">IWiaDrvItem Interface</a> for the newly created <b>IWiaDrvItem</b> object.</p>
@@ -108,7 +108,7 @@ HRESULT _stdcall wiasCreateDrvItem(
 <p>On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Windows SDK documentation).</p>
 
 ## -remarks
-<p>This function creates and initializes an <a href="NULL">IWiaDrvItem COM Interface</a> object with the specified name and attributes. It also creates a context for the <b>IWiaDrvItem</b> object. Minidrivers typically use this function to build a tree of device items.</p>
+<p>This function creates and initializes an <a href="https://msdn.microsoft.com/1be2265b-7ae8-4935-9559-588b885526d4">IWiaDrvItem COM Interface</a> object with the specified name and attributes. It also creates a context for the <b>IWiaDrvItem</b> object. Minidrivers typically use this function to build a tree of device items.</p>
 
 ## -requirements
 <table>
@@ -170,4 +170,4 @@ HRESULT _stdcall wiasCreateDrvItem(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasCreateDrvItem function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasCreateDrvItem function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

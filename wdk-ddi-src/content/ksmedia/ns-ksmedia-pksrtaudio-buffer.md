@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>BufferAddress</b>
+### -field BufferAddress
 
 <dd>
 <p>Specifies the base address of the cyclic buffer. This is a virtual memory address through which the user-mode client can directly access the buffer. The driver writes the actual base address of the allocated buffer into this member.</p>
 </dd>
 
-### -field <b>ActualBufferSize</b>
+### -field ActualBufferSize
 
 <dd>
 <p>Specifies the buffer size, in bytes. The driver sets this member to the actual size of the allocated buffer.</p>
 </dd>
 
-### -field <b>CallMemoryBarrier</b>
+### -field CallMemoryBarrier
 
 <dd>
 <p>Specifies a flag based on cache type of the allocated buffer. The driver sets this flag to <b>TRUE</b> if the cache type is <b>MmWriteCombined</b>; otherwise, the flag should be set to <b>FALSE</b>. For more information about <b>MmWriteCombined</b>, see <a href="..\wdm\ne-wdm--memory-caching-type.md">MEMORY_CACHING_TYPE </a>,</p>

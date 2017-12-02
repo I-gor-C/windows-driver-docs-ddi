@@ -63,43 +63,43 @@ typedef struct _STORAGE_ZONE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>ZoneType</b>
+### -field ZoneType
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>ResetWritePointerRecomend</b>
+### -field ResetWritePointerRecomend
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>ResetWritePointerRecomend</b>
+### -field ResetWritePointerRecomend
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>ZoneSize</b>
+### -field ZoneSize
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>WriterPointerOffset</b>
+### -field WriterPointerOffset
 
 <dd>
 <p>N/A</p>

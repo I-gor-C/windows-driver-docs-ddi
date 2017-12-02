@@ -7,7 +7,7 @@ old-location: debugger\request.htm
 old-project: debugger
 ms.assetid: efb3c93c-5405-418b-a063-afa8e5e9e59a
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugAdvanced3, Request, IDebugAdvanced3::Request
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ HRESULT Request(
 ## -parameters
 <dl>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>Specifies which operation to perform.  <b>Request</b> can be one of the values in the following table.  Details of each operation can be found by following the link in the "Request" column.</p>
@@ -202,31 +202,31 @@ HRESULT Request(
 <p> </p>
 </dd>
 
-### -param <i>InBuffer</i> [in, optional]
+### -param InBuffer [in, optional]
 
 <dd>
 <p>Specifies the input to this method.  The type and interpretation of the input depends on the <i>Request</i> parameter.</p>
 </dd>
 
-### -param <i>InBufferSize</i> [in]
+### -param InBufferSize [in]
 
 <dd>
 <p>Specifies the size of the input buffer <i>InBuffer</i>.  If the request requires no input, <i>InBufferSize</i> should be set to zero.</p>
 </dd>
 
-### -param <i>OutBuffer</i> [out, optional]
+### -param OutBuffer [out, optional]
 
 <dd>
 <p>Receives the output from this method.  The type and interpretation of the output depends on the <i>Request</i> parameter.  If <i>OutBuffer</i> is <b>NULL</b>, the output is not returned.</p>
 </dd>
 
-### -param <i>OutBufferSize</i> [in]
+### -param OutBufferSize [in]
 
 <dd>
 <p>Specifies the size of the output buffer <i>OutBufferSize</i>.  If the type of the output returned to <i>OutBuffer</i> has a known size, <i>OutBufferSize</i> is usually expected to be exactly that size, even if <i>OutBuffer</i> is set to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>OutSize</i> [out, optional]
+### -param OutSize [out, optional]
 
 <dd>
 <p>Receives the size of the output returned in the output buffer <i>OutBuffer</i>.  If <i>OutSize</i> is <b>NULL</b>, this information is not returned.</p>
@@ -244,7 +244,7 @@ HRESULT Request(
 
 <p> </p>
 
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p>
 
 ## -remarks
 
@@ -320,4 +320,4 @@ HRESULT Request(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugAdvanced2::Request method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugAdvanced2::Request method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

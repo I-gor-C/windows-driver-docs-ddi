@@ -61,13 +61,13 @@ NTSTATUS ResetDevice(
 ## -parameters
 <dl>
 
-### -param <i>InterfaceContext</i> [in]
+### -param InterfaceContext [in]
 
 <dd>
 <p>A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\wdm\ns-wdm--device-reset-interface-standard.md">DEVICE_RESET_INTERFACE_STANDARD</a> structure for the interface.</p>
 </dd>
 
-### -param <i>ResetType</i> [in]
+### -param ResetType [in]
 
 <dd>
 <p>The type of reset being  requested. Set this parameter to one of the following <a href="..\wdm\ne-wdm--device-reset-type.md">DEVICE_RESET_TYPE</a> enumeration values.</p>
@@ -78,13 +78,13 @@ NTSTATUS ResetDevice(
 <p>For more information about how function-level and platform-level resets are implemented in the device stack, see <a href="kernel.guid_device_reset_interface_standard">GUID_DEVICE_RESET_INTERFACE_STANDARD</a>.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Set to 0. Currently, no flags are defined for this routine.</p>
 </dd>
 
-### -param <i>ResetParameters</i> [in, optional]
+### -param ResetParameters [in, optional]
 
 <dd>
 <p>If the caller is requesting a  function-level device reset, this optional parameter can point to a <a href="..\wdm\ns-wdm--function-level-device-reset-parameters.md">FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS</a> structure that specifies a callback routine that is called when the reset is completed.</p>

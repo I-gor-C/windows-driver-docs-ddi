@@ -60,31 +60,31 @@ typedef union _WHEA_ERROR_RECORD_HEADER_VALIDBITS {
 ## -struct-fields
 <dl>
 
-### -field <b>PlatformId</b>
+### -field PlatformId
 
 <dd>
 <p>A single bit that indicates that the <b>PlatformId</b> member of the WHEA_ERROR_RECORD_HEADER structure contains valid data.</p>
 </dd>
 
-### -field <b>Timestamp</b>
+### -field Timestamp
 
 <dd>
 <p>A single bit that indicates that the <b>Timestamp</b> member of the WHEA_ERROR_RECORD_HEADER structure contains valid data.</p>
 </dd>
 
-### -field <b>PartitionId</b>
+### -field PartitionId
 
 <dd>
 <p>A single bit that indicates that the <b>PartitionId</b> member of the WHEA_ERROR_RECORD_HEADER structure contains valid data.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the WHEA_ERROR_RECORD_HEADER_VALIDBITS union.</p>

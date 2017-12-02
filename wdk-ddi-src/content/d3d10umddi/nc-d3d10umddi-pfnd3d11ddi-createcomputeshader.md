@@ -60,25 +60,25 @@ VOID APIENTRY CreateComputeShader(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pCode</i> [in]
+### -param pCode [in]
 
 <dd>
 <p> An array of CONST UINT tokens that form the shader code. The first token in the shader code stream is always the version token. The next token in the stream is the length token that determines the end of the shader code stream. For more information about the format of Direct3D version 11 shader code, see the comments inside the <i>D3d11tokenizedprogramformat.hpp</i> header file that is included with the WDK. </p>
 </dd>
 
-### -param <i>hShader</i> [in]
+### -param hShader [in]
 
 <dd>
 <p> A handle to the driver's private data for the compute shader. The driver returns the size, in bytes, of the memory region that the Microsoft Direct3D runtime must allocate for the private data from a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivateshadersize.md">CalcPrivateShaderSize</a> function. The handle is  just a pointer to a region of memory, the size of which the driver requested. The driver uses this region of memory to store internal data structures that are related to its shader object. </p>
 </dd>
 
-### -param <i>hRTShader</i> [in]
+### -param hRTShader [in]
 
 <dd>
 <p> A handle to the compute shader that the driver should use when it calls back into the Direct3D runtime. </p>

@@ -7,7 +7,7 @@ old-location: debugger\getparameters.htm
 old-project: debugger
 ms.assetid: 6b0e2a3d-2a62-4a79-a4e1-03168277caec
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugBreakpoint, GetParameters, IDebugBreakpoint::GetParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetParameters(
 ## -parameters
 <dl>
 
-### -param <i>Params</i> [out]
+### -param Params [out]
 
 <dd>
 <p>The breakpoint's parameters.  For more information about the parameters, see <a href="..\dbgeng\ns-dbgeng--debug-breakpoint-parameters.md">DEBUG_BREAKPOINT_PARAMETERS</a>.</p>
@@ -68,7 +68,7 @@ HRESULT GetParameters(
 
 <p> </p>
 
-<p>This method can also return error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
+<p>This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.</p>
 
 ## -remarks
 <p>The <b>GetParameters</b> method is a convenience method that returns most of the parameters that the other <a href="..\dbgeng\nn-dbgeng-idebugbreakpoint.md">IDebugBreakpoint</a> methods return.</p>

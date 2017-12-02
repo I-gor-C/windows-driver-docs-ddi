@@ -57,13 +57,13 @@ typedef struct _HIDP_GETCOLDESC_DBG {
 ## -struct-fields
 <dl>
 
-### -field <b>BreakOffset</b>
+### -field BreakOffset
 
 <dd>
 <p>The byte offset in the report descriptor where the parsing error occurred.</p>
 </dd>
 
-### -field <b>ErrorCode</b>
+### -field ErrorCode
 
 <dd>
 <p>Indicates the parsing error, if it’s not HIDP_GETCOLDESC_SUCCESS.
@@ -72,7 +72,7 @@ All possible values are defined in hidpddi.h, from HIDP_GETCOLDESC_SUCCESS to th
 </p>
 </dd>
 
-### -field <b>Args</b>
+### -field Args
 
 <dd>
 <p>Error-specific arguments. These are described as comments in the possible values for <b>ErrorCode</b> in hidpddi.h.</p>

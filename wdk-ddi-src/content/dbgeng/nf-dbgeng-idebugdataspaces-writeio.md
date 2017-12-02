@@ -7,7 +7,7 @@ old-location: debugger\writeio.htm
 old-project: debugger
 ms.assetid: 3bc84b15-7c13-4ad9-b9a1-6abd5a7389eb
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugDataSpaces, WriteIo, IDebugDataSpaces::WriteIo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,43 +60,43 @@ HRESULT WriteIo(
 ## -parameters
 <dl>
 
-### -param <i>InterfaceType</i> [in]
+### -param InterfaceType [in]
 
 <dd>
 <p>Specifies the interface type of the I/O bus.  This parameter may take values in the INTERFACE_TYPE enumeration defined in wdm.h.</p>
 </dd>
 
-### -param <i>BusNumber</i> [in]
+### -param BusNumber [in]
 
 <dd>
 <p>Specifies the system-assigned number of the bus.  This is usually zero, unless the system has more than one bus of the same interface type.</p>
 </dd>
 
-### -param <i>AddressSpace</i> [in]
+### -param AddressSpace [in]
 
 <dd>
 <p>Set to one.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the location of the requested data.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Specifies the data to write to the I/O bus.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size in bytes of the buffer <i>Buffer</i>.  This is the maximum number of bytes that will be written.</p>
 </dd>
 
-### -param <i>BytesWritten</i> [out, optional]
+### -param BytesWritten [out, optional]
 
 <dd>
 <p>Receives the number of bytes written to I/O bus.  If <i>BytesWritten</i> is <b>NULL</b>, this information is not returned.</p>
@@ -104,7 +104,7 @@ HRESULT WriteIo(
 </dl>
 
 ## -returns
-<p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

@@ -54,7 +54,7 @@ typedef struct IDARG_OUT_GETMOVEREGIONS {
 ## -struct-fields
 <dl>
 
-### -field <b>MoveRegionOutCount</b>
+### -field MoveRegionOutCount
 
 <dd>
 <p>

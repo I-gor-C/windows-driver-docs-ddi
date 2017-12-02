@@ -63,50 +63,50 @@ NTSTATUS NewStream(
 ## -parameters
 <dl>
 
-### -param <i>ppMXF</i> [out]
+### -param ppMXF [out]
 
 <dd>
 <p>Output pointer for the new stream. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the stream object's <a href="..\dmusicks\nn-dmusicks-imxf~r1.md">IMXF</a> interface.</p>
 </dd>
 
-### -param <i>pOuterUnknown</i> [in, optional]
+### -param pOuterUnknown [in, optional]
 
 <dd>
 <p>Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate the stream object. This parameter is optional. If aggregation is not required, the caller specifies this parameter as <b>NULL</b>.</p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter is set to one of the <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a> enumeration values.</p>
 </dd>
 
-### -param <i>uPinId</i> [in]
+### -param uPinId [in]
 
 <dd>
 <p>Specifies the pin ID. This parameter identifies the pin that is to be opened. If the DMus miniport driver's <a href="audio.iminiport_getdescription">IMiniport::GetDescription</a> method outputs a filter descriptor that specifies a total of <i>n</i> pin factories on the filter, then valid pin IDs are in the range 0 to <i>n</i>-1.</p>
 </dd>
 
-### -param <i>StreamType</i> [in]
+### -param StreamType [in]
 
 <dd>
 <p>Specifies the type of data stream to create. This parameter is set to one of the following DMUS_STREAM_TYPE enumeration values:</p>
 <p></p>
 <dl>
 
-### -param <a id="DMUS_STREAM_MIDI_RENDER"></a><a id="dmus_stream_midi_render"></a>DMUS_STREAM_MIDI_RENDER
+### -param DMUS_STREAM_MIDI_RENDER
 
 <dd>
 <p>Specifies a MIDI output (playback) stream.</p>
 </dd>
 
-### -param <a id="DMUS_STREAM_MIDI_CAPTURE"></a><a id="dmus_stream_midi_capture"></a>DMUS_STREAM_MIDI_CAPTURE
+### -param DMUS_STREAM_MIDI_CAPTURE
 
 <dd>
 <p>Specifies a MIDI input stream.</p>
 </dd>
 
-### -param <a id="DMUS_STREAM_WAVE_SINK"></a><a id="dmus_stream_wave_sink"></a>DMUS_STREAM_WAVE_SINK
+### -param DMUS_STREAM_WAVE_SINK
 
 <dd>
 <p>Specifies a wave output stream.</p>
@@ -115,31 +115,31 @@ NTSTATUS NewStream(
 <p>For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>pDataFormat </i> [in]
+### -param pDataFormat  [in]
 
 <dd>
 <p>Pointer to a kernel streaming <a href="stream.ksdataformat">KSDATAFORMAT</a> structure specifying the data format to use for this instance</p>
 </dd>
 
-### -param <i>ppServiceGroup </i> [out]
+### -param ppServiceGroup  [out]
 
 <dd>
 <p>Output pointer for service group. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> interface of the stream's service group object. This is the service group that is being registered for interrupt notification.</p>
 </dd>
 
-### -param <i>pAllocatorMXF</i> [in]
+### -param pAllocatorMXF [in]
 
 <dd>
 <p>Pointer to an <a href="..\dmusicks\nn-dmusicks-iallocatormxf~r1.md">IAllocatorMXF</a> object. This is the port driver's memory allocator, which is needed to recycle <a href="..\dmusicks\ns-dmusicks--dmus-kernel-event.md">DMUS_KERNEL_EVENT</a> structures.</p>
 </dd>
 
-### -param <i>pMasterClock</i> [in]
+### -param pMasterClock [in]
 
 <dd>
 <p>Pointer to an <a href="audio.imasterclock">IMasterClock</a> object. This master clock passes a wrapper for the KS clock to the miniport driver. The master-clock pointer is required to sync to reference time.</p>
 </dd>
 
-### -param <i>puuSchedulePreFetch</i> [out]
+### -param puuSchedulePreFetch [out]
 
 <dd>
 <p>Output pointer for the schedule-prefetch time. This parameter is a pointer to a caller-allocated ULONGLONG variable into which the method writes a time value that specifies how far ahead to query for events. The time is specified in 100-nanosecond units. The port driver is responsible for sequencing any events that exceed the amount of time that the miniport driver specifies here.</p>
@@ -150,7 +150,7 @@ NTSTATUS NewStream(
 <p><code>NewStream</code> returns S_OK if the call was successful. Otherwise, the method returns an appropriate error code.</p>
 
 ## -remarks
-<p>Note that the port driver creates the <b>IAllocatorMXF</b> object that the <code>NewStream</code> method inputs through the <i>pAllocatorMXF</i> parameter, but the miniport driver creates the <b>IMXF</b> object that the method outputs through the <i>ppMXF</i> parameter. For more information about <b>IMXF</b> and <b>IAllocatorMXF</b>, see <a href="NULL">MIDI Transport</a>.</p>
+<p>Note that the port driver creates the <b>IAllocatorMXF</b> object that the <code>NewStream</code> method inputs through the <i>pAllocatorMXF</i> parameter, but the miniport driver creates the <b>IMXF</b> object that the method outputs through the <i>ppMXF</i> parameter. For more information about <b>IMXF</b> and <b>IAllocatorMXF</b>, see <a href="https://msdn.microsoft.com/ce9ec589-0aea-4ed9-a60d-50f2ddfb0c13">MIDI Transport</a>.</p>
 
 <p>The meaning of the <code>IMiniportDMus::NewStream</code> method's <i>StreamType</i> parameter is similar to that of the <a href="audio.iminiportmidi_newstream">IMiniportMidi::NewStream</a> method's <i>Capture</i> parameter:</p>
 
@@ -158,9 +158,9 @@ NTSTATUS NewStream(
 
 <p>Similarly, when creating a stream on a MIDI or DirectMusic pin, the <code>IMiniportDMus::NewStream</code> method's <i>StreamType</i> parameter can indicate whether the pin is to serve as the sink for a MIDI render stream (<i>StreamType</i> = DMUS_STREAM_MIDI_RENDER) or as the source of a MIDI capture stream (<i>StreamType</i> = DMUS_STREAM_MIDI_CAPTURE).</p>
 
-<p>However, a pin on a DirectMusic filter can support a third option that is not available with a MIDI filter. A pin can serve as the source of a wave output stream (<i>StreamType</i> = DMUS_STREAM_WAVE_SINK). The DMus port driver implements the wave sink for this stream. After creating the wave output stream, the DMus port driver queries the stream object (which the port driver obtains through the <code>IMiniportDMus::NewStream</code> method's <i>ppMXF</i> output parameter) for its <a href="..\dmusicks\nn-dmusicks-isynthsinkdmus.md">ISynthSinkDMus</a> interface. The port driver's wave sink calls the <b>Render</b> method on this interface to pull wave data from the software synthesizer. For more information, see <a href="NULL">A Wave Sink for Kernel-Mode Software Synthesizers</a>.</p>
+<p>However, a pin on a DirectMusic filter can support a third option that is not available with a MIDI filter. A pin can serve as the source of a wave output stream (<i>StreamType</i> = DMUS_STREAM_WAVE_SINK). The DMus port driver implements the wave sink for this stream. After creating the wave output stream, the DMus port driver queries the stream object (which the port driver obtains through the <code>IMiniportDMus::NewStream</code> method's <i>ppMXF</i> output parameter) for its <a href="..\dmusicks\nn-dmusicks-isynthsinkdmus.md">ISynthSinkDMus</a> interface. The port driver's wave sink calls the <b>Render</b> method on this interface to pull wave data from the software synthesizer. For more information, see <a href="https://msdn.microsoft.com/37ba9ad5-8b35-4252-a6fd-46dead924294">A Wave Sink for Kernel-Mode Software Synthesizers</a>.</p>
 
-<p>The <i>ppMXF</i>, <i>pOuterUnknown</i>, <i>ppServiceGroup</i>, <i>pAllocatorMXF</i>, and <i>pMasterClock</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>. </p>
+<p>The <i>ppMXF</i>, <i>pOuterUnknown</i>, <i>ppServiceGroup</i>, <i>pAllocatorMXF</i>, and <i>pMasterClock</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>. </p>
 
 ## -requirements
 <table>

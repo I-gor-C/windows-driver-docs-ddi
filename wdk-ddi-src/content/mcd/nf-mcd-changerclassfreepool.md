@@ -54,7 +54,7 @@ VOID ChangerClassFreePool(
 ## -parameters
 <dl>
 
-### -param <i>PoolToFree</i> [in]
+### -param PoolToFree [in]
 
 <dd>
 <p>Pointer to the block of memory to be freed.</p>

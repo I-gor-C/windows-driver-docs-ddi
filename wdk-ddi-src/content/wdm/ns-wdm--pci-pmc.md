@@ -69,84 +69,84 @@ typedef struct _PCI_PMC {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Contains a 3-bit integer that indicates the version of the <i>PCI Power Management Interface Specification </i>that the device complies with. For a list of values that can be assigned to this member, see the <i>PCI Local Bus Specification</i>. </p>
 </dd>
 
-### -field <b>PMEClock</b>
+### -field PMEClock
 
 <dd>
 <p>Indicates, when 1, that the device relies on the presence of the PCI clock for operation of the PME signal. When this member is a "0", no PCI clock is required to generate the PME signal. </p>
 </dd>
 
-### -field <b>Rsvd1</b>
+### -field Rsvd1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>DeviceSpecificInitialization</b>
+### -field DeviceSpecificInitialization
 
 <dd>
 <p>Indicates when 1 that the device requires a special initialization. For more information about this value, see the <i>PCI Local Bus Specification</i>.</p>
 </dd>
 
-### -field <b>Rsvd2</b>
+### -field Rsvd2
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Support</b>
+### -field Support
 
 <dd>
 <dl>
 
-### -field <b>Rsvd2</b>
+### -field Rsvd2
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>D1</b>
+### -field D1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>D2</b>
+### -field D2
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>PMED0</b>
+### -field PMED0
 
 <dd>
 <p>Indicates that the device can assert the PME signal from D0. </p>
 </dd>
 
-### -field <b>PMED1</b>
+### -field PMED1
 
 <dd>
 <p>Indicates that the device can assert the PME signal from D1. </p>
 </dd>
 
-### -field <b>PMED2</b>
+### -field PMED2
 
 <dd>
 <p>Indicates that the device can assert the PME signal from D2. </p>
 </dd>
 
-### -field <b>PMED3Hot</b>
+### -field PMED3Hot
 
 <dd>
 <p>Indicates that the device can assert the PME signal from D3. </p>
 </dd>
 
-### -field <b>PMED3Cold</b>
+### -field PMED3Cold
 
 <dd>
 <p>Indicates that the device can assert the PME signal from D3. </p>

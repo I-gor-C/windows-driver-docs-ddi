@@ -60,38 +60,38 @@ HRESULT EnumOptions(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> [in]
+### -param pdevobj [in]
 
 <dd>
 <p>Pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>Is reserved and must be set to zero.</p>
 </dd>
 
-### -param <i>pszFeatureKeyword</i> [in]
+### -param pszFeatureKeyword [in]
 
 <dd>
 <p>Pointer to a caller-supplied buffer containing an ASCII string, specifying a feature keyword whose options are requested.</p>
 </dd>
 
-### -param <i>pmszOptionList</i> [out]
+### -param pmszOptionList [out]
 
 <dd>
 <p>Pointer to a caller-supplied buffer that receives a null-delimited list, in MULTI_SZ format, containing the option keywords for the feature keyword pointed to by <i>pszFeatureKeyword</i>. This list is terminated with two null characters. </p>
 <p>Set this parameter to <b>NULL</b> to simply query for the size (*<i>pcbNeeded</i>) of the option list without having the list filled in.</p>
 </dd>
 
-### -param <i>cbSize</i> [in]
+### -param cbSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer pointed to by <i>pmszOptionList</i>.</p>
 </dd>
 
-### -param <i>pcbNeeded</i> [out]
+### -param pcbNeeded [out]
 
 <dd>
 <p>Pointer to a memory location that receives the actual size, in bytes, of the requested data.</p>
@@ -126,7 +126,7 @@ HRESULT EnumOptions(
 
 <p>This method is supported for any Pscript5 render plug-in.</p>
 
-<p>For more information, see <a href="NULL">Using EnumOptions</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/6ce16d28-eff7-4701-a592-046f364cda44">Using EnumOptions</a>.</p>
 
 ## -requirements
 <table>

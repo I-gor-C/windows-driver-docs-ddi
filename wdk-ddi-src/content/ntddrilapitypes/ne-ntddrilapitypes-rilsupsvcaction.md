@@ -7,7 +7,7 @@ old-location: netvista\rilsupsvcaction.htm
 old-project: netvista
 ms.assetid: 14c9b97d-7f3f-45ef-9be2-c36495c69081
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef enum _RILSUPSVCACTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SUPSVCACTION_DEACTIVATE"></a><a id="ril_supsvcaction_deactivate"></a><b>RIL_SUPSVCACTION_DEACTIVATE</b>
+### -field RIL_SUPSVCACTION_DEACTIVATE
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCACTION_REGISTER"></a><a id="ril_supsvcaction_register"></a><b>RIL_SUPSVCACTION_REGISTER</b>
+### -field RIL_SUPSVCACTION_REGISTER
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCACTION_ERASE"></a><a id="ril_supsvcaction_erase"></a><b>RIL_SUPSVCACTION_ERASE</b>
+### -field RIL_SUPSVCACTION_ERASE
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCACTION_INTERROGATE"></a><a id="ril_supsvcaction_interrogate"></a><b>RIL_SUPSVCACTION_INTERROGATE</b>
+### -field RIL_SUPSVCACTION_INTERROGATE
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCACTION_REGISTER_PW"></a><a id="ril_supsvcaction_register_pw"></a><b>RIL_SUPSVCACTION_REGISTER_PW</b>
+### -field RIL_SUPSVCACTION_REGISTER_PW
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCACTION_USSD"></a><a id="ril_supsvcaction_ussd"></a><b>RIL_SUPSVCACTION_USSD</b>
+### -field RIL_SUPSVCACTION_USSD
 
 <dd></dd>
 
-### -field <a id="RIL_SUPSVCACTION_MAX"></a><a id="ril_supsvcaction_max"></a><b>RIL_SUPSVCACTION_MAX</b>
+### -field RIL_SUPSVCACTION_MAX
 
 <dd></dd>
 </dl>

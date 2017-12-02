@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>HidP_UsageListDifference</b> routine returns the differences between two arrays of <a href="NULL">HID usages</a>.</p>
+<p>The <b>HidP_UsageListDifference</b> routine returns the differences between two arrays of <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">HID usages</a>.</p>
 
 
 ## -syntax
@@ -58,31 +58,31 @@ NTSTATUS __stdcall HidP_UsageListDifference(
 ## -parameters
 <dl>
 
-### -param <i>PreviousUsageList</i> [in]
+### -param PreviousUsageList [in]
 
 <dd>
 <p>Pointer to a list of usages that the routine compares with the list of usages in <i>CurrentUsageList</i>.</p>
 </dd>
 
-### -param <i>CurrentUsageList</i> [in]
+### -param CurrentUsageList [in]
 
 <dd>
 <p>Pointer to a list of usages that the routine compares with the list of usages in <i>PreviousUsageList</i>.</p>
 </dd>
 
-### -param <i>BreakUsageList</i> [out]
+### -param BreakUsageList [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that, on return, contains a list of the usages that are in <i>PreviousUsageList</i>, but not in <i>CurrentUsageList</i>.</p>
 </dd>
 
-### -param <i>MakeUsageList</i> [out]
+### -param MakeUsageList [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that, on return, contains a list of the usages that are in <i>CurrentUsageList</i>, but not in <i>PreviousUsageList</i>.</p>
 </dd>
 
-### -param <i>UsageListLength</i> [in]
+### -param UsageListLength [in]
 
 <dd>
 <p>Specifies the length, in array elements, of the buffers provided at <i>CurrentUsageList </i>and <i>PreviousUsageList</i>.</p>
@@ -99,7 +99,7 @@ NTSTATUS __stdcall HidP_UsageListDifference(
 
 <p>The routine interprets a zero usage in an input usage list as a delimiter that ends the list. Any usages after a zero in a list are not processed. Unused usages in an output list are set to zero.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

@@ -76,37 +76,37 @@ typedef struct _SMARTCARD_EXTENSION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Indicates the version of this structure. </p>
 </dd>
 
-### -field <b>VendorAttr</b>
+### -field VendorAttr
 
 <dd>
 <p>Contains information that identifies the reader driver, such as the vendor name, unit number, and serial number. </p>
 </dd>
 
-### -field <b>ReaderFunction</b>
+### -field ReaderFunction
 
 <dd>
 <p>A pointer to an array of callback functions for readers.</p>
 </dd>
 
-### -field <b>CardCapabilities</b>
+### -field CardCapabilities
 
 <dd>
 <p>Contains capabilities of the inserted smart card. </p>
 </dd>
 
-### -field <b>LastError</b>
+### -field LastError
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>IoRequest</b>
+### -field IoRequest
 
 <dd>
 <p>
@@ -115,31 +115,31 @@ typedef struct _SMARTCARD_EXTENSION {
      </p>
 <dl>
 
-### -field <b>Information</b>
+### -field Information
 
 <dd>
 <p>Contains the number of bytes returned. </p>
 </dd>
 
-### -field <b>RequestBuffer</b>
+### -field RequestBuffer
 
 <dd>
 <p>A pointer to the data in the user's I/O request to be sent to the card. </p>
 </dd>
 
-### -field <b>RequestBufferLength</b>
+### -field RequestBufferLength
 
 <dd>
 <p>Indicates the number of bytes to send to the card. </p>
 </dd>
 
-### -field <b>ReplyBuffer</b>
+### -field ReplyBuffer
 
 <dd>
 <p>A pointer to the buffer that holds the data that is returned by the I/O request. </p>
 </dd>
 
-### -field <b>ReplyBufferLength</b>
+### -field ReplyBufferLength
 
 <dd>
 <p>Indicates the number of bytes of the data that are returned by the I/O request. </p>
@@ -147,61 +147,61 @@ typedef struct _SMARTCARD_EXTENSION {
 </dl>
 </dd>
 
-### -field <b>MajorIoControlCode</b>
+### -field MajorIoControlCode
 
 <dd>
 <p>Contains the major I/O control code. </p>
 </dd>
 
-### -field <b>MinorIoControlCode</b>
+### -field MinorIoControlCode
 
 <dd>
 <p>Contains the minor I/O control code. </p>
 </dd>
 
-### -field <b>OsData</b>
+### -field OsData
 
 <dd>
 <p>Contains information that is specific to the operating system and the driver type. </p>
 </dd>
 
-### -field <b>ReaderCapabilities</b>
+### -field ReaderCapabilities
 
 <dd>
 <p>Contains the capabilities of the keyboard reader. </p>
 </dd>
 
-### -field <b>ReaderExtension</b>
+### -field ReaderExtension
 
 <dd>
 <p>Contains data that is specifc to the smart card reader. </p>
 </dd>
 
-### -field <b>SmartcardReply</b>
+### -field SmartcardReply
 
 <dd>
 <p>Contains data that comes from the reader. </p>
 </dd>
 
-### -field <b>SmartcardRequest</b>
+### -field SmartcardRequest
 
 <dd>
 <p>Contains the current command and the data that is sent to the smart card. </p>
 </dd>
 
-### -field <b>T0</b>
+### -field T0
 
 <dd>
 <p>Contains the data for use with the T=0 protocol. </p>
 </dd>
 
-### -field <b>T1</b>
+### -field T1
 
 <dd>
 <p>Contains the data that is used with the T=1 protocol. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>

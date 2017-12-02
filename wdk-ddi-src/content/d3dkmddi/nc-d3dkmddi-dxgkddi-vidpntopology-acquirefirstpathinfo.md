@@ -58,13 +58,13 @@ NTSTATUS APIENTRY pfnAcquireFirstPathInfo(
 ## -parameters
 <dl>
 
-### -param <i>hVidPnTopology</i> [in]
+### -param hVidPnTopology [in]
 
 <dd>
 <p>[in] A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-gettopology.md">pfnGetTopology</a> function of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpn-interface.md">DXGK_VIDPN_INTERFACE</a> interface.</p>
 </dd>
 
-### -param <i>ppFirstVidPnPresentPathInfo</i> [out]
+### -param ppFirstVidPnPresentPathInfo [out]
 
 <dd>
 <p>[out] A pointer to a variable that receives a pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure. The structure contains a variety of information about the path, including the path's source and target identifiers.</p>

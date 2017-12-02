@@ -60,43 +60,43 @@ HBA_STATUS HBA_API HBA_SendReadCapacity(
 ## -parameters
 <dl>
 
-### -param <i>handle</i> [in]
+### -param handle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA through which the SCSI read capacity command is sent.</p>
 </dd>
 
-### -param <i>portWWN</i> [in]
+### -param portWWN [in]
 
 <dd>
 <p>Contains a 64-bit worldwide name (WWN) that uniquely identifies the remote target port to which the SCSI read capacity command is sent. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
-### -param <i>fcLUN</i> [in]
+### -param fcLUN [in]
 
 <dd>
 <p>Indicates the fibre channel logical unit number of the logical unit to which the SCSI read capacity command will be sent. </p>
 </dd>
 
-### -param <i>pRspBuffer</i> [out]
+### -param pRspBuffer [out]
 
 <dd>
 <p>Pointer to a buffer that receives the output data of the SCSI read capacity command.</p>
 </dd>
 
-### -param <i>RspBufferSize</i> [in]
+### -param RspBufferSize [in]
 
 <dd>
 <p>Indicates the size, in bytes, of the buffer at <i>pRspBuffer</i>.</p>
 </dd>
 
-### -param <i>pSenseBuffer</i> [out]
+### -param pSenseBuffer [out]
 
 <dd>
 <p>Pointer to a buffer that receives the SCSI sense data.</p>
 </dd>
 
-### -param <i>SenseBufferSize</i> [in]
+### -param SenseBufferSize [in]
 
 <dd>
 <p>On input, indicates on input the size, in bytes, of the buffer at <i>pSenseBuffer</i>. On output, this member indicates the number of bytes of sense data returned. </p>

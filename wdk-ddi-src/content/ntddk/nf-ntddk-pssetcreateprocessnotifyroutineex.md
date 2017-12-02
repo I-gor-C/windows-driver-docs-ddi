@@ -55,13 +55,13 @@ NTSTATUS PsSetCreateProcessNotifyRoutineEx(
 ## -parameters
 <dl>
 
-### -param <i>NotifyRoutine</i> [in]
+### -param NotifyRoutine [in]
 
 <dd>
 <p>A pointer to the <a href="..\ntddk\nc-ntddk-pcreate-process-notify-routine-ex.md">PCREATE_PROCESS_NOTIFY_ROUTINE_EX</a> routine to register or remove. The operating system calls this routine whenever a new process is created.</p>
 </dd>
 
-### -param <i>Remove</i> [in]
+### -param Remove [in]
 
 <dd>
 <p>A Boolean value that specifies whether <b>PsSetCreateProcessNotifyRoutineEx</b> will add or remove a specified routine from the list of callback routines. If this parameter is <b>TRUE</b>, the specified routine is removed from the list of callback routines. If this parameter is <b>FALSE</b>, the specified routine is added to the list of callback routines. If <i>Remove</i> is <b>TRUE</b>, the system also waits for all in-flight callback routines to complete before returning.</p>

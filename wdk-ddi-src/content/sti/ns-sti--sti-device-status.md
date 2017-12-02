@@ -7,7 +7,7 @@ old-location: image\sti_device_status.htm
 old-project: image
 ms.assetid: 40104e1f-b936-430b-9e8c-28738579f4c7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: STI_DEVICE_STATUS, STI_DEVICE_STATUS, *PSTI_DEVICE_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,13 +60,13 @@ typedef struct _STI_DEVICE_STATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Caller-supplied size, in bytes, of the STI_DEVICE_STATUS structure.</p>
 </dd>
 
-### -field <b>StatusMask</b>
+### -field StatusMask
 
 <dd>
 <p>One or more caller-supplied bit flags, indicating the type of status information being requested. The following flags are defined:</p>
@@ -95,7 +95,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p> </p>
 </dd>
 
-### -field <b>dwOnlineState</b>
+### -field dwOnlineState
 
 <dd>
 <p>Bit flags indicating the device's current status. The following flags are defined in <i>Sti.h</i>.</p>
@@ -103,7 +103,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_ONLINESTATE_BUSY"></a><a id="sti_onlinestate_busy"></a>STI_ONLINESTATE_BUSY
+### -field STI_ONLINESTATE_BUSY
 
 <dd>
 <p>The device is busy.</p>
@@ -112,7 +112,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_ONLINESTATE_ERROR"></a><a id="sti_onlinestate_error"></a>STI_ONLINESTATE_ERROR
+### -field STI_ONLINESTATE_ERROR
 
 <dd>
 <p>The device has reported an error.</p>
@@ -121,7 +121,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_ONLINESTATE_INITIALIZING"></a><a id="sti_onlinestate_initializing"></a>STI_ONLINESTATE_INITIALIZING
+### -field STI_ONLINESTATE_INITIALIZING
 
 <dd>
 <p>The device is being initialized.</p>
@@ -130,7 +130,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_ONLINESTATE_IO_ACTIVE"></a><a id="sti_onlinestate_io_active"></a>STI_ONLINESTATE_IO_ACTIVE
+### -field STI_ONLINESTATE_IO_ACTIVE
 
 <dd>
 <p>The device is active but not accepting commands.</p>
@@ -139,7 +139,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_ONLINESTATE_OFFLINE"></a><a id="sti_onlinestate_offline"></a>STI_ONLINESTATE_OFFLINE
+### -field STI_ONLINESTATE_OFFLINE
 
 <dd>
 <p>The device is off-line.</p>
@@ -148,7 +148,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_ONLINESTATE_OPERATIONAL"></a><a id="sti_onlinestate_operational"></a>STI_ONLINESTATE_OPERATIONAL
+### -field STI_ONLINESTATE_OPERATIONAL
 
 <dd>
 <p>The device is online and ready. If set, Control Panel indicates the device is ready. Otherwise, it indicates the device is off-line.</p>
@@ -157,7 +157,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_ONLINESTATE_PAPER_JAM"></a><a id="sti_onlinestate_paper_jam"></a>STI_ONLINESTATE_PAPER_JAM
+### -field STI_ONLINESTATE_PAPER_JAM
 
 <dd>
 <p>The device has reported a paper jam.</p>
@@ -166,7 +166,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_ONLINESTATE_PAPER_PROBLEM"></a><a id="sti_onlinestate_paper_problem"></a>STI_ONLINESTATE_PAPER_PROBLEM
+### -field STI_ONLINESTATE_PAPER_PROBLEM
 
 <dd>
 <p>The device has reported an unspecified paper problem.</p>
@@ -175,7 +175,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_ONLINESTATE_PAUSED"></a><a id="sti_onlinestate_paused"></a>STI_ONLINESTATE_PAUSED
+### -field STI_ONLINESTATE_PAUSED
 
 <dd>
 <p>The device is paused.</p>
@@ -184,7 +184,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_ONLINESTATE_PENDING"></a><a id="sti_onlinestate_pending"></a>STI_ONLINESTATE_PENDING
+### -field STI_ONLINESTATE_PENDING
 
 <dd>
 <p>I/O operations are pending.</p>
@@ -193,7 +193,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_ONLINESTATE_POWER_SAVE"></a><a id="sti_onlinestate_power_save"></a>STI_ONLINESTATE_POWER_SAVE
+### -field STI_ONLINESTATE_POWER_SAVE
 
 <dd>
 <p>The device is in power save mode.</p>
@@ -202,7 +202,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_ONLINESTATE_TRANSFERRING"></a><a id="sti_onlinestate_transferring"></a>STI_ONLINESTATE_TRANSFERRING
+### -field STI_ONLINESTATE_TRANSFERRING
 
 <dd>
 <p>The device is transferring data.</p>
@@ -211,7 +211,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_ONLINESTATE_USER_INTERVENTION"></a><a id="sti_onlinestate_user_intervention"></a>STI_ONLINESTATE_USER_INTERVENTION
+### -field STI_ONLINESTATE_USER_INTERVENTION
 
 <dd>
 <p>The device requires user intervention.</p>
@@ -220,7 +220,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_ONLINESTATE_WARMING_UP"></a><a id="sti_onlinestate_warming_up"></a>STI_ONLINESTATE_WARMING_UP
+### -field STI_ONLINESTATE_WARMING_UP
 
 <dd>
 <p>The device is warming up.</p>
@@ -228,20 +228,20 @@ typedef struct _STI_DEVICE_STATUS {
 </dl>
 </dd>
 
-### -field <b>dwHardwareStatusCode</b>
+### -field dwHardwareStatusCode
 
 <dd>
 <p>Optional device-specific, vendor-defined value.</p>
 </dd>
 
-### -field <b>dwEventHandlingState</b>
+### -field dwEventHandlingState
 
 <dd>
 <p>Contains bit flags indicating event status. The following flags are defined in <i>Sti.h</i>.</p>
 <p></p>
 <dl>
 
-### -field <a id="STI_EVENTHANDLING_ENABLED"></a><a id="sti_eventhandling_enabled"></a>STI_EVENTHANDLING_ENABLED
+### -field STI_EVENTHANDLING_ENABLED
 
 <dd>
 <p><i>Not used</i>.</p>
@@ -250,7 +250,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_EVENTHANDLING_PENDING"></a><a id="sti_eventhandling_pending"></a>STI_EVENTHANDLING_PENDING
+### -field STI_EVENTHANDLING_PENDING
 
 <dd>
 <p>A device event has occurred.</p>
@@ -259,7 +259,7 @@ typedef struct _STI_DEVICE_STATUS {
 <p></p>
 <dl>
 
-### -field <a id="STI_EVENTHANDLING_POLLING"></a><a id="sti_eventhandling_polling"></a>STI_EVENTHANDLING_POLLING
+### -field STI_EVENTHANDLING_POLLING
 
 <dd>
 <p><i>Not used</i>.</p>
@@ -267,7 +267,7 @@ typedef struct _STI_DEVICE_STATUS {
 </dl>
 </dd>
 
-### -field <b>dwPollingInterval</b>
+### -field dwPollingInterval
 
 <dd>
 <p>Time value, in milliseconds, indicating how often the device should be polled, if polling is required.</p>

@@ -56,13 +56,13 @@ PVOID IoAllocateErrorLogEntry(
 ## -parameters
 <dl>
 
-### -param <i>IoObject</i> [in]
+### -param IoObject [in]
 
 <dd>
 <p>Pointer to a device object representing the device on which an I/O error occurred, or to a driver object representing the driver that found an error.</p>
 </dd>
 
-### -param <i>EntrySize</i> [in]
+### -param EntrySize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the error log entry to be allocated. This value cannot exceed ERROR_LOG_MAXIMUM_SIZE. </p>
@@ -75,7 +75,7 @@ PVOID IoAllocateErrorLogEntry(
 <p><b>IoAllocateErrorLogEntry</b> returns a pointer to the error log entry, or <b>NULL</b> if a log entry could not be allocated.</p>
 
 ## -remarks
-<p>The driver must first fill in the packet with information about the error, then call <a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a> to post the entry to the error log. The error log entry buffer is automatically freed once the log entry is recorded. Entry buffers that are not going to be written to the log can be freed by using <a href="..\wdm\nf-wdm-iofreeerrorlogentry.md">IoFreeErrorLogEntry</a>.</p>
+<p>The driver must first fill in the packet with information about the error, then call <a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a> to post the entry to the error log. The error log entry buffer is automatically freed once the log entry is recorded. Entry buffers that are not going to be written to the log can be freed by using <a href="..\wdm\nf-wdm-iofreeerrorlogentry.md">IoFreeErrorLogEntry</a>.</p>
 
 <p>An error log entry consists of a variable-length <a href="..\wdm\ns-wdm--io-error-log-packet.md">IO_ERROR_LOG_PACKET</a> structure, possibly followed by one or more zero-counted Unicode strings. The Event Viewer inserts these strings into the error message it displays for the entry. <b>IO_ERROR_LOG_PACKET</b> contains one variable-length member, the <b>DumpData</b> member. Thus, the value for <i>EntrySize</i> must be <b>sizeof</b>(<b>IO_ERROR_LOG_PACKET</b>) + size of the <b>DumpData</b> member + combined size of any driver-supplied insertion strings.</p>
 
@@ -152,7 +152,7 @@ PVOID IoAllocateErrorLogEntry(
 <a href="..\wdm\nf-wdm-iofreeerrorlogentry.md">IoFreeErrorLogEntry</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
+<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
 </dt>
 </dl>
 <p> </p>

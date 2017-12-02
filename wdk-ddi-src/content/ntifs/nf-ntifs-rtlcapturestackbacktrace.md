@@ -7,7 +7,7 @@ old-location: ifsk\rtlcapturestackbacktrace.htm
 old-project: ifsk
 ms.assetid: e4ad1eac-1788-4dfe-9444-f40e0de156c4
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlCaptureStackBackTrace
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ USHORT RtlCaptureStackBackTrace(
 ## -parameters
 <dl>
 
-### -param <i>FramesToSkip</i> [in]
+### -param FramesToSkip [in]
 
 <dd>
 <p>The number of frames to skip from the start of the back trace.</p>
 </dd>
 
-### -param <i>FramesToCapture</i> [in]
+### -param FramesToCapture [in]
 
 <dd>
 <p>The number of frames to be captured. </p>
 </dd>
 
-### -param <i>BackTrace</i> [out]
+### -param BackTrace [out]
 
 <dd>
 <p>An array of pointers captured from the current stack trace.</p>
 </dd>
 
-### -param <i>BackTraceHash</i> [out, optional]
+### -param BackTraceHash [out, optional]
 
 <dd>
 <p>An optional value that can be used to organize hash tables. If this parameter is <b>NULL</b>, no hash value is computed.</p>

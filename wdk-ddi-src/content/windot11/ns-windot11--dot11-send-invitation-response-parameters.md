@@ -7,7 +7,7 @@ old-location: netvista\dot11_send_invitation_response_parameters.htm
 old-project: netvista
 ms.assetid: 0A041372-7EC0-44E3-AD1F-3EA0CBB21425
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_SEND_INVITATION_RESPONSE_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ typedef struct _DOT11_SEND_INVITATION_RESPONSE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Specifies the type, revision and size of the <b>DOT11_SEND_INVITATION_RESPONSE_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following:</p>
@@ -90,73 +90,73 @@ typedef struct _DOT11_SEND_INVITATION_RESPONSE_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>ReceiverDeviceAddress</b>
+### -field ReceiverDeviceAddress
 
 <dd>
 <p>The sender address received from the invitation request packet. This is the device address where the invitation response will be sent.</p>
 </dd>
 
-### -field <b>DialogToken</b>
+### -field DialogToken
 
 <dd>
 <p>The dialog token received from the invitation request packet. This dialog token will be used in  the invitation response  packet.</p>
 </dd>
 
-### -field <b>RequestContext</b>
+### -field RequestContext
 
 <dd>
 <p>Miniport context data included in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439793">NDIS_STATUS_DOT11_WFD_RECEIVED_INVITATION_REQUEST</a> indication.</p>
 </dd>
 
-### -field <b>uSendTimeout</b>
+### -field uSendTimeout
 
 <dd>
 <p>The maximum time, in milliseconds, allowed to send the invitation response. If the timeout expires before the miniport has successfully transmitted the provision discovery response, it should indicate the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439781">NDIS_STATUS_DOT11_WFD_INVITATION_RESPONSE_SEND_COMPLETE</a> with a failure status.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>Status information to include in the invitation response.</p>
 </dd>
 
-### -field <b>MinimumConfigTimeout</b>
+### -field MinimumConfigTimeout
 
 <dd>
 <p>The configuration timeout required by the system  to change its mode of operation to a Peer-to-Peer (P2P) Group Owner or a P2P Client. The miniport driver can set this with a larger value if necessary.</p>
 </dd>
 
-### -field <b>GroupBSSID</b>
+### -field GroupBSSID
 
 <dd>
 <p>The BSSID used by the P2P Group Owner for its P2P Group.</p>
 </dd>
 
-### -field <b>bUseGroupBSSID</b>
+### -field bUseGroupBSSID
 
 <dd>
 <p>If TRUE, the BSSID in <b>GroupBSSID</b> is included in the invitation response. Otherwise, <b>GroupBSSID</b> is not valid.</p>
 </dd>
 
-### -field <b>OperatingChannel</b>
+### -field OperatingChannel
 
 <dd>
 <p>The channel information to include in the Operating Channel attribute of the invitation response.</p>
 </dd>
 
-### -field <b>bUseSpecifiedOperatingChannel</b>
+### -field bUseSpecifiedOperatingChannel
 
 <dd>
 <p>If TRUE, the operatin channel specified in <b>OperatingChannel</b> is included in the invitation response. Otherwise, the miniport driver may choose its own operating channel if <b>Status</b> == <b>DOT11_WFD_STATUS_SUCCESS</b>. If <b>Status</b> != <b>DOT11_WFD_STATUS_SUCCESS</b>, the miniport must not include the operating channel attribute in the inivitation response. </p>
 </dd>
 
-### -field <b>uIEsOffset</b>
+### -field uIEsOffset
 
 <dd>
 <p>The offset, in bytes,  of the array of additional information elements (IEs) the Wi-Fi Direct (WFD) port must add to the invitation response packet. This offset is from the start of the buffer that contains this structure.</p>
 </dd>
 
-### -field <b>uIEsLength</b>
+### -field uIEsLength
 
 <dd>
 <p>The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.</p>
@@ -202,4 +202,4 @@ typedef struct _DOT11_SEND_INVITATION_RESPONSE_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SEND_INVITATION_RESPONSE_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SEND_INVITATION_RESPONSE_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

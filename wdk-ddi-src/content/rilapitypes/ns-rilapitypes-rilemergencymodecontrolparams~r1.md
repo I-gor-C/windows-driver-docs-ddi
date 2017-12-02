@@ -7,7 +7,7 @@ old-location: netvista\rilemergencymodecontrolparams_2.htm
 old-project: netvista
 ms.assetid: 240414c7-c035-462c-8319-d7ac192c712a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILEMERGENCYMODECONTROLPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILEMERGENCYMODECONTROLPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwEmergencyModeControl</b>
+### -field dwEmergencyModeControl
 
 <dd></dd>
 </dl>

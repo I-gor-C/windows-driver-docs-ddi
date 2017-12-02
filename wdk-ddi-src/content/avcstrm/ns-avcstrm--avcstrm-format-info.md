@@ -65,55 +65,55 @@ typedef struct _AVCSTRM_FORMAT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>SizeOfThisBlock</b>
+### -field SizeOfThisBlock
 
 <dd>
 <p>Specifies the size of this data structure, in bytes.</p>
 </dd>
 
-### -field <b>AVCStrmFormat</b>
+### -field AVCStrmFormat
 
 <dd>
 <p>Specifies one of the AV/C streaming subunit formats defined in <a href="..\avcstrm\ne-avcstrm--avcstrm-format.md">AVCSTRM_FORMAT</a>.</p>
 </dd>
 
-### -field <b>cipHdr1</b>
+### -field cipHdr1
 
 <dd>
 <p>Specifies the definition of the first quadlet of the two quadlet CIP header.</p>
 </dd>
 
-### -field <b>cipHdr2</b>
+### -field cipHdr2
 
 <dd>
 <p>Specifies the definition of the second quadlet of the two quadlet CIP header.</p>
 </dd>
 
-### -field <b>SrcPacketsPerFrame</b>
+### -field SrcPacketsPerFrame
 
 <dd>
 <p>Specifies the number of source packets to fill a data frame.</p>
 </dd>
 
-### -field <b>FrameSize</b>
+### -field FrameSize
 
 <dd>
 <p>Specifies the data buffer size.</p>
 </dd>
 
-### -field <b>NumOfRcvBuffers</b>
+### -field NumOfRcvBuffers
 
 <dd>
 <p>Specifies the number of receiving buffers.</p>
 </dd>
 
-### -field <b>NumOfXmtBuffers</b>
+### -field NumOfXmtBuffers
 
 <dd>
 <p>Specifies the number of transmitting buffers.</p>
 </dd>
 
-### -field <b>OptionFlags</b>
+### -field OptionFlags
 
 <dd>
 <p>Specifies any option flags. Currently, only one flag is defined:</p>
@@ -127,7 +127,7 @@ typedef struct _AVCSTRM_FORMAT_INFO {
 <p></p>
 <dl>
 
-### -field <a id="AVCSTRM_FORMAT_OPTION_STRIP_SPH"></a><a id="avcstrm_format_option_strip_sph"></a>AVCSTRM_FORMAT_OPTION_STRIP_SPH
+### -field AVCSTRM_FORMAT_OPTION_STRIP_SPH
 
 <dd></dd>
 </dl>
@@ -140,19 +140,19 @@ typedef struct _AVCSTRM_FORMAT_INFO {
 <p> </p>
 </dd>
 
-### -field <b>AvgTimePerFrame</b>
+### -field AvgTimePerFrame
 
 <dd>
 <p>Specifies the average time per frame in 100 nanosecond units.</p>
 </dd>
 
-### -field <b>BlockPeriod</b>
+### -field BlockPeriod
 
 <dd>
 <p>Specifies the block period. This is used for transmit only. It is calculated from 1/ BlockPerSecond * 1,000,000,000 picoseconds. For SDDV, it transmits one block per 1394 cycle. 1/(29.97 * 250) * 1,000,000,000,000 = 133,466,800 picoseconds.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Do not use. Must be set to 0.</p>

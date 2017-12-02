@@ -7,7 +7,7 @@ old-location: sensors\gnss_drivercommand_type.htm
 old-project: sensors
 ms.assetid: 61D7C52C-D8C9-4BBE-9DCA-B5E934A02FAE
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="GNSS_SetLocationServiceEnabled"></a><a id="gnss_setlocationserviceenabled"></a><a id="GNSS_SETLOCATIONSERVICEENABLED"></a><b>GNSS_SetLocationServiceEnabled</b>
+### -field GNSS_SetLocationServiceEnabled
 
 <dd>
 <p>Informs the driver whether location is enabled on the device. This command is issued each time the location service is enabled/disabled on the device. The associated command data is a <b>BOOL</b>.</p>
@@ -101,7 +101,7 @@ typedef enum  {
 <p>Unless this command is issued by the GNSS adapter, the driver must assume that the location service is disabled on the system. </p>
 </dd>
 
-### -field <a id="GNSS_SetLocationNIRequestAllowed"></a><a id="gnss_setlocationnirequestallowed"></a><a id="GNSS_SETLOCATIONNIREQUESTALLOWED"></a><b>GNSS_SetLocationNIRequestAllowed</b>
+### -field GNSS_SetLocationNIRequestAllowed
 
 <dd>
 <p>Informs the driver if it is allowed to entertain network initiated location requests coming from the mobile network. The command only needs to be supported if required by the mobile operator. As of Windows 10, Microsoft is not aware of any mobile operator requiring this any longer, but this remains to avoid  any blocking issues during commercialization. If the command is not implemented, the GNSS driver should simply keep its default behavior.</p>
@@ -120,7 +120,7 @@ typedef enum  {
 <p>The location requests for emergency services or for CALEA (for example, the case of privacy override being set) must be served regardless of the value of this setting.</p>
 </dd>
 
-### -field <a id="GNSS_ForceSatelliteSystem"></a><a id="gnss_forcesatellitesystem"></a><a id="GNSS_FORCESATELLITESYSTEM"></a><b>GNSS_ForceSatelliteSystem</b>
+### -field GNSS_ForceSatelliteSystem
 
 <dd>
 <p>This command causes the GNSS driver to use the specified satellite system(s) for getting fixes. The parameter is a <b>DWORD</b> with the following values:</p>
@@ -134,7 +134,7 @@ typedef enum  {
 <p>This is expected to be used only for test purposes. Some mobile operators do require validations using a single satellite system.</p>
 </dd>
 
-### -field <a id="GNSS_ForceOperationMode"></a><a id="gnss_forceoperationmode"></a><a id="GNSS_FORCEOPERATIONMODE"></a><b>GNSS_ForceOperationMode</b>
+### -field GNSS_ForceOperationMode
 
 <dd>
 <p>This command causes the GNSS driver to use the specified operation mode. The parameter is a <b>DWORD</b> with the following values:</p>
@@ -160,7 +160,7 @@ typedef enum  {
 <div> </div>
 </dd>
 
-### -field <a id="GNSS_ResetEngine"></a><a id="gnss_resetengine"></a><a id="GNSS_RESETENGINE"></a><b>GNSS_ResetEngine</b>
+### -field GNSS_ResetEngine
 
 <dd>
 <p>This command clears up the state of the GNSS engine. After this command is issued the engine will be ready for a cold start fix:</p>
@@ -178,7 +178,7 @@ typedef enum  {
 <p>This command should only be called when there is no active fix session. This command is typically used for recursively testing the GNSS time to first fix on cold start.</p>
 </dd>
 
-### -field <a id="GNSS_ClearAgnssData"></a><a id="gnss_clearagnssdata"></a><a id="GNSS_CLEARAGNSSDATA"></a><b>GNSS_ClearAgnssData</b>
+### -field GNSS_ClearAgnssData
 
 <dd>
 <p>This command clears the AGNSS assistance data from the GNSS engine. This is used mainly for testing purpose to ensure that the driver requests for assistance data when a fix is requested. The associated command data contains the specific <a href="..\gnssdriver\ne-gnssdriver-gnss-agnss-request-type.md">GNSS_AGNSS_REQUEST_TYPE</a> enumeration to indicate the specific data element to be cleared:</p>
@@ -196,7 +196,7 @@ typedef enum  {
 <p>It is highly recommended that this command is supported for test purposes even if the assistance data is not obtained from the OS location platform.</p>
 </dd>
 
-### -field <a id="GNSS_SetSuplVersion_"></a><a id="gnss_setsuplversion_"></a><a id="GNSS_SETSUPLVERSION_"></a><b>GNSS_SetSuplVersion </b>
+### -field GNSS_SetSuplVersion 
 
 <dd>
 <p>This command sets the SUPL version that the mobile operator wants supported. The command data contains a value of <a href="sensors.gnss_supl_version">GNSS_SUPL_VERSION</a> structure which includes both the major and the minor SUPL versions indicated by the mobile operator. The SUPL client should use the SUPL version as specifies in the OMA SUPL standards, summarizing:</p>
@@ -210,7 +210,7 @@ typedef enum  {
 </ul>
 </dd>
 
-### -field <a id="GNSS_SetNMEALogging"></a><a id="gnss_setnmealogging"></a><a id="GNSS_SETNMEALOGGING"></a><b>GNSS_SetNMEALogging</b>
+### -field GNSS_SetNMEALogging
 
 <dd>
 <p>This command sets the status for NMEA logging.</p>
@@ -222,26 +222,26 @@ typedef enum  {
 <p>This command has been introduced to support OEM testing. This command is not used by the location framework or by Microsoft test tools.</p>
 </dd>
 
-### -field <a id="GNSS_SetUplServerAccessInterval"></a><a id="gnss_setuplserveraccessinterval"></a><a id="GNSS_SETUPLSERVERACCESSINTERVAL"></a><b>GNSS_SetUplServerAccessInterval</b>
+### -field GNSS_SetUplServerAccessInterval
 
 <dd>
 <p>This command sets the minimum time in between requests to the server for assisted position to prevent service overload. The time interval is specified in seconds.</p>
 <p>Mobile operators may use the configuration service provider to tune this setting, if they require it.  If this parameter is not supported, if can be ignored, but the SUPL configuration commands must not fail.</p>
 </dd>
 
-### -field <a id="GNSS_SetNiTimeoutInterval"></a><a id="gnss_setnitimeoutinterval"></a><a id="GNSS_SETNITIMEOUTINTERVAL"></a><b>GNSS_SetNiTimeoutInterval</b>
+### -field GNSS_SetNiTimeoutInterval
 
 <dd>
 <p>This command sets how much time the device must wait for input from a user before it responds to the NI request executing the default action. The time interval is specified in seconds and the default value is 35 seconds. This timeout is 5 seconds larger than the timeout used by the operating system to wait for response from the user, and it is simply a failsafe in case of the operating system not responding. This command is applicable only to network initiated requests in which the verification from the user is requested. Mobile operators may use the configuration service provider to override the default value from the operating system. In such case the default values specified above should be replaced by the values provided by the mobile operator.</p>
 </dd>
 
-### -field <a id="GNSS_ResetGeofencesTracking"></a><a id="gnss_resetgeofencestracking"></a><a id="GNSS_RESETGEOFENCESTRACKING"></a><b>GNSS_ResetGeofencesTracking</b>
+### -field GNSS_ResetGeofencesTracking
 
 <dd>
 <p>This command resets the geofence tracking operation. The GNSS driver must delete all geofences from the GNSS engine, stop geofence tracking and stop monitoring for signal conditions. The geofence tracking operation will begin as usual only when the HLOS creates one or more new geofences.</p>
 </dd>
 
-### -field <a id="GNSS_CustomCommand"></a><a id="gnss_customcommand"></a><a id="GNSS_CUSTOMCOMMAND"></a><b>GNSS_CustomCommand</b>
+### -field GNSS_CustomCommand
 
 <dd>
 <p>Range for custom IHV-specific GNSS commands:  0x0100 – 0x01FF</p>

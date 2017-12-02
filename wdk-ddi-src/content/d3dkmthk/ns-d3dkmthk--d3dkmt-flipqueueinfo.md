@@ -56,19 +56,19 @@ typedef struct _D3DKMT_FLIPQUEUEINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>MaxHardwareFlipQueueLength</b>
+### -field MaxHardwareFlipQueueLength
 
 <dd>
 <p>[out] The maximum number of flip operations that can be queued for hardware-flip queuing.</p>
 </dd>
 
-### -field <b>MaxSoftwareFlipQueueLength</b>
+### -field MaxSoftwareFlipQueueLength
 
 <dd>
 <p>[out] The maximum number of flip operations that can be queued for software-flip queuing  on hardware that supports memory mapped I/O (MMIO)-based flips.</p>
 </dd>
 
-### -field <b>FlipFlags</b>
+### -field FlipFlags
 
 <dd>
 <p>[out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-flipinfoflags.md">D3DKMT_FLIPINFOFLAGS</a> structure that indicates, in bit-field flags, flipping capabilities.</p>

@@ -54,7 +54,7 @@ typedef struct _GetBindingSupport_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>Contains a worldwide name that indicates the port whose persistent bindings are to be retrieved. </p>

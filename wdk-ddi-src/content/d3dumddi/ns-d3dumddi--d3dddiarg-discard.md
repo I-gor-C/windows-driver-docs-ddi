@@ -58,31 +58,31 @@ typedef struct _D3DDDIARG_DISCARD {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>A handle to the resource in which subresources are to be discarded.</p>
 </dd>
 
-### -field <b>FirstSubResource</b>
+### -field FirstSubResource
 
 <dd>
 <p>The index of the first subresource to be discarded.</p>
 </dd>
 
-### -field <b>NumSubResources</b>
+### -field NumSubResources
 
 <dd>
 <p>The number of subresources to be discarded.</p>
 </dd>
 
-### -field <b>pRects</b>
+### -field pRects
 
 <dd>
 <p>An array of <a href="display.rect">RECT</a> structures for the rectangles in the resource view to discard. If <b>NULL</b>, the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-discard.md">Discard</a> function discards the entire surface.</p>
 </dd>
 
-### -field <b>NumRects</b>
+### -field NumRects
 
 <dd>
 <p>The number of rectangles in the array that the  <b>pRects</b> member specifies.</p>

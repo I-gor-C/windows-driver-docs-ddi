@@ -56,19 +56,19 @@ LONG RtlCompareString(
 ## -parameters
 <dl>
 
-### -param <i>String1</i> [in]
+### -param String1 [in]
 
 <dd>
 <p>Pointer to the first string.</p>
 </dd>
 
-### -param <i>String2</i> [in]
+### -param String2 [in]
 
 <dd>
 <p>Pointer to the second string.</p>
 </dd>
 
-### -param <i>CaseInSensitive</i> [in]
+### -param CaseInSensitive [in]
 
 <dd>
 <p>If <b>TRUE</b>, case should be ignored when doing the comparison.</p>

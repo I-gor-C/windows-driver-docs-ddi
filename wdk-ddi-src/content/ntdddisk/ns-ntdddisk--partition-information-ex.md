@@ -62,43 +62,43 @@ typedef struct _PARTITION_INFORMATION_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>PartitionStyle</b>
+### -field PartitionStyle
 
 <dd>
 <p>Takes a <a href="storage.partition_style">PARTITION_STYLE</a> enumerated value that specifies the type of partition table that contains the partition.</p>
 </dd>
 
-### -field <b>StartingOffset</b>
+### -field StartingOffset
 
 <dd>
 <p>Specifies the offset in bytes on drive where the partition begins.</p>
 </dd>
 
-### -field <b>PartitionLength</b>
+### -field PartitionLength
 
 <dd>
 <p>Specifies the length in bytes of the partition.</p>
 </dd>
 
-### -field <b>PartitionNumber</b>
+### -field PartitionNumber
 
 <dd>
 <p>Specifies the number of the partition.</p>
 </dd>
 
-### -field <b>RewritePartition</b>
+### -field RewritePartition
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the partition information has changed. When <b>FALSE</b>, the information has not changed. This member has a value of <b>TRUE</b> when the partition has changed as a result of an <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-set-drive-layout.md">IOCTL_DISK_SET_DRIVE_LAYOUT</a> IOCTL. This informs the system that the partition information needs to be rewritten.</p>
 </dd>
 
-### -field <b>Mbr</b>
+### -field Mbr
 
 <dd>
 <p>Contains a structure of type <a href="..\ntdddisk\ns-ntdddisk--partition-information-mbr.md">PARTITION_INFORMATION_MBR</a> containing information specific to a partition with a <b>PartitionStyle</b> member of PARTITION_STYLE_MBR.</p>
 </dd>
 
-### -field <b>Gpt</b>
+### -field Gpt
 
 <dd>
 <p>Contains a structure of type <a href="..\ntdddisk\ns-ntdddisk--partition-information-gpt.md">PARTITION_INFORMATION_GPT</a> containing information specific to a partition with a <b>PartitionStyle</b> member of PARTITION_STYLE_GPT.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilservicesettingsstatus_2.htm
 old-project: netvista
 ms.assetid: 4d193398-752f-4aef-8ae6-59c9afabd79a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILSERVICESETTINGSSTATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SVCSTAT_DISABLED"></a><a id="ril_svcstat_disabled"></a><b>RIL_SVCSTAT_DISABLED</b>
+### -field RIL_SVCSTAT_DISABLED
 
 <dd></dd>
 
-### -field <a id="RIL_SVCSTAT_ENABLED"></a><a id="ril_svcstat_enabled"></a><b>RIL_SVCSTAT_ENABLED</b>
+### -field RIL_SVCSTAT_ENABLED
 
 <dd></dd>
 
-### -field <a id="RIL_SVCSTAT_DEFAULT"></a><a id="ril_svcstat_default"></a><b>RIL_SVCSTAT_DEFAULT</b>
+### -field RIL_SVCSTAT_DEFAULT
 
 <dd></dd>
 
-### -field <a id="RIL_SVCSTAT_MAX"></a><a id="ril_svcstat_max"></a><b>RIL_SVCSTAT_MAX</b>
+### -field RIL_SVCSTAT_MAX
 
 <dd></dd>
 </dl>

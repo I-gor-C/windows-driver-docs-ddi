@@ -55,13 +55,13 @@ typedef struct _DXVAHDDDI_STREAM_STATE_FILTER_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>[in] A Boolean value that specifies whether the filter is enabled. The default value is <b>FALSE</b>, which indicates that the filter is disabled. </p>
 </dd>
 
-### -field <b>Level</b>
+### -field Level
 
 <dd>
 <p>[in] An INT value that specifies the filter level. The default value is the value from the <b>Default</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-filter-range-data.md">DXVAHDDDI_FILTER_RANGE_DATA</a> structure. </p>

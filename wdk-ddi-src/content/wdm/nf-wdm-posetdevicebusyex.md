@@ -55,10 +55,10 @@ VOID PoSetDeviceBusyEx(
 ## -parameters
 <dl>
 
-### -param <i>IdlePointer</i> [in, out]
+### -param IdlePointer [in, out]
 
 <dd>
-<p>A pointer to an idle counter. This is a pointer value that was previously returned by the <a href="..\ntifs\nf-ntifs-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a> routine. Because <b>PoRegisterDeviceForIdleDetection</b> might return a <b>NULL</b> pointer, the caller must verify that the pointer is non-<b>NULL</b> before it calls <b>PoSetDeviceBusyEx</b>.</p>
+<p>A pointer to an idle counter. This is a pointer value that was previously returned by the <a href="..\wdm\nf-wdm-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a> routine. Because <b>PoRegisterDeviceForIdleDetection</b> might return a <b>NULL</b> pointer, the caller must verify that the pointer is non-<b>NULL</b> before it calls <b>PoSetDeviceBusyEx</b>.</p>
 </dd>
 </dl>
 
@@ -72,7 +72,7 @@ VOID PoSetDeviceBusyEx(
 
 <p><b>PoSetDeviceBusyEx</b> reports that the device is busy, so that the power manager can restart its idle countdown. If the device is in a sleep state, <b>PoSetDeviceBusyEx</b> does not change the state of the device. That is, it does not cause the system to send an <b>IRP_MN_SET_POWER</b> request to awaken the device.</p>
 
-<p><b>PoSetDeviceBusyEx</b> is designed for use with I/O operations that are relatively brief compared to the time-out period of the idle counter. For longer operations that might exceed this period, use the <a href="..\ntifs\nf-ntifs-postartdevicebusy.md">PoStartDeviceBusy</a> and <a href="..\ntifs\nf-ntifs-poenddevicebusy.md">PoEndDeviceBusy</a> routines instead.</p>
+<p><b>PoSetDeviceBusyEx</b> is designed for use with I/O operations that are relatively brief compared to the time-out period of the idle counter. For longer operations that might exceed this period, use the <a href="..\wdm\nf-wdm-postartdevicebusy.md">PoStartDeviceBusy</a> and <a href="..\wdm\nf-wdm-poenddevicebusy.md">PoEndDeviceBusy</a> routines instead.</p>
 
 <p>A driver that makes multiple requests for brief I/O operations should call <b>PoSetDeviceBusyEx</b> for every I/O request that it makes.</p>
 
@@ -142,16 +142,16 @@ VOID PoSetDeviceBusyEx(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-poenddevicebusy.md">PoEndDeviceBusy</a>
+<a href="..\wdm\nf-wdm-poenddevicebusy.md">PoEndDeviceBusy</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a>
+<a href="..\wdm\nf-wdm-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559755">PoSetDeviceBusy</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-postartdevicebusy.md">PoStartDeviceBusy</a>
+<a href="..\wdm\nf-wdm-postartdevicebusy.md">PoStartDeviceBusy</a>
 </dt>
 </dl>
 <p> </p>

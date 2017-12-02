@@ -61,13 +61,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size in bytes of the structure.</p>
 </dd>
 
-### -field <b>Quality</b>
+### -field Quality
 
 <dd>
 <p>Specifies the HRTF filter quality level. Set this parameter to one of the following KSDS3D_HRTF_FILTER_QUALITY enumeration values:</p>
@@ -81,37 +81,37 @@ typedef struct {
 </ul>
 </dd>
 
-### -field <b>SampleRate</b>
+### -field SampleRate
 
 <dd>
 <p>Specifies the sample rate, in samples per second (hertz), at which each channel should be played. For example, a value of 22,050 specifies a sample rate of 22.05 kHz.</p>
 </dd>
 
-### -field <b>MaxFilterSize</b>
+### -field MaxFilterSize
 
 <dd>
 <p>Specifies the maximum filter size in bytes. If the filter is in direct form, the maximum size is the order of the filter (numerator and denominator have equal order). If the filter is in cascade form, the maximum size is the maximum number of biquadratic coefficients.</p>
 </dd>
 
-### -field <b>FilterTransientMuteLength</b>
+### -field FilterTransientMuteLength
 
 <dd>
 <p>Specifies how long to delay cross-fading to the new filter in order to avoid introducing the new filter's initial transient signal into the output signal. The delay is specified as a number of initial samples produced by the new filter. During this time, the output comes from the old filters only.</p>
 </dd>
 
-### -field <b>FilterOverlapBufferLength</b>
+### -field FilterOverlapBufferLength
 
 <dd>
 <p>Specifies the total number of samples over which to mute and cross-fade the filter outputs.</p>
 </dd>
 
-### -field <b>OutputOverlapBufferLength</b>
+### -field OutputOverlapBufferLength
 
 <dd>
 <p>Specifies the number of samples over which to cross-fade the output channels after a transition across azimuth angle zero. This member is used when cross-fading of the output channels is enabled by the <b>CrossFadeOutput</b> member of <a href="audio.ksds3d_hrtf_params_msg">KSDS3D_HRTF_PARAMS_MSG</a>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Set to zero.</p>

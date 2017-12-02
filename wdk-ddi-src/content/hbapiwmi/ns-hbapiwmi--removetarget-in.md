@@ -56,19 +56,19 @@ typedef struct _RemoveTarget_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>HbaPortWWN</b>
+### -field HbaPortWWN
 
 <dd>
 <p>Contains a worldwide name that indicates the local port that should be removed from the list of ports whose events are reported to the WMI client.. </p>
 </dd>
 
-### -field <b>DiscoveredPortWWN</b>
+### -field DiscoveredPortWWN
 
 <dd>
 <p>Contains a worldwide name that indicates the remote discovered port that should be removed from the list of ports whose events are reported to the WMI client.. </p>
 </dd>
 
-### -field <b>AllTargets</b>
+### -field AllTargets
 
 <dd>
 <p>Indicates the scope of the target events to cease reporting. If this member is zero, the WMI provider client will cease reporting events associated with the port that is indicated by <b>DiscoveredPortWWN</b>. If this member is nonzero, the WMI provider will cease reporting all events associated any target. </p>

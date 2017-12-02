@@ -56,19 +56,19 @@ HBA_STATUS HBA_API HBA_GetPortStatistics(
 ## -parameters
 <dl>
 
-### -param <i>HbaHandle</i> [in]
+### -param HbaHandle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
 </dd>
 
-### -param <i>PortIndex</i> [in]
+### -param PortIndex [in]
 
 <dd>
 <p>Contains an index that identifies which port on the HBA to query for statistics. </p>
 </dd>
 
-### -param <i>HbaPortStatistics</i> [out]
+### -param HbaPortStatistics [out]
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-portstatistics.md">HBA_PortStatistics</a> that holds the statistics that were retrieved for the port. </p>

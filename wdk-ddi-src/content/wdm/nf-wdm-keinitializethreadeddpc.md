@@ -57,19 +57,19 @@ VOID KeInitializeThreadedDpc(
 ## -parameters
 <dl>
 
-### -param <i>Dpc</i> [out]
+### -param Dpc [out]
 
 <dd>
 <p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a> structure that represents the DPC object to initialize. The caller must allocate storage for the structure from resident memory.</p>
 </dd>
 
-### -param <i>DeferredRoutine</i> [in]
+### -param DeferredRoutine [in]
 
 <dd>
 <p>Pointer to the <a href="kernel.customthreadeddpc">CustomThreadedDpc</a> routine to associate with the DPC.</p>
 </dd>
 
-### -param <i>DeferredContext</i> [in, optional]
+### -param DeferredContext [in, optional]
 
 <dd>
 <p>Specifies the value to pass as the <i>DeferredContext</i> parameter to <a href="kernel.customthreadeddpc">CustomThreadedDpc</a>.</p>

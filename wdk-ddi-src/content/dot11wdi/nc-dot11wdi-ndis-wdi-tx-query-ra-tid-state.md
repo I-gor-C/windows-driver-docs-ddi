@@ -7,7 +7,7 @@ old-location: netvista\ndiswditxqueryratidstate.htm
 old-project: netvista
 ms.assetid: 76949336-3349-4869-83C7-60D7D8A6BE24
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,37 +63,37 @@ VOID NdisWdiTxQueryRATIDState(
 ## -parameters
 <dl>
 
-### -param <i>NdisMiniportDataPathHandle</i> [in]
+### -param NdisMiniportDataPathHandle [in]
 
 <dd>
 <p>The NdisMiniportDataPathHandle passed to the IHV miniport in <a href="..\dot11wdi\nc-dot11wdi-miniport-wdi-tal-txrx-initialize.md">MiniportWdiTalTxRxInitialize</a>.</p>
 </dd>
 
-### -param <i>PortId</i> [in]
+### -param PortId [in]
 
 <dd>
 <p>The port ID.</p>
 </dd>
 
-### -param <i>PeerId</i> [in]
+### -param PeerId [in]
 
 <dd>
 <p>The peer ID.</p>
 </dd>
 
-### -param <i>ExTid</i> [in]
+### -param ExTid [in]
 
 <dd>
 <p>The Extended Traffic ID (TID)</p>
 </dd>
 
-### -param <i>pWifiStatus</i> [out]
+### -param pWifiStatus [out]
 
 <dd>
 <p>Indicates the result of the query operation.  See the <i>Remarks</i> section for more information.</p>
 </dd>
 
-### -param <i>pQueueLength</i> [out]
+### -param pQueueLength [out]
 
 <dd>
 <p>The number of backlogged frames in the specified RA/TID  or Port queue.</p>
@@ -158,4 +158,4 @@ VOID NdisWdiTxQueryRATIDState(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_TX_QUERY_RA_TID_STATE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_TX_QUERY_RA_TID_STATE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

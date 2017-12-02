@@ -65,73 +65,73 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_CONTENT_PROTECTION_STREAMING_0030 {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnCalcPrivateCryptoSessionSize</b>
+### -field pfnCalcPrivateCryptoSessionSize
 
 <dd>
 <p>Calculate private crypto session size.</p>
 </dd>
 
-### -field <b>pfnCreateCryptoSession</b>
+### -field pfnCreateCryptoSession
 
 <dd>
 <p>Create crypto session.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateOpenedCryptoSessionSize</b>
+### -field pfnCalcPrivateOpenedCryptoSessionSize
 
 <dd>
 <p>Calculate private opened crypto session size.</p>
 </dd>
 
-### -field <b>pfnOpenCryptoSession</b>
+### -field pfnOpenCryptoSession
 
 <dd>
 <p>Open crypto session.</p>
 </dd>
 
-### -field <b>pfnDestroyCryptoSession</b>
+### -field pfnDestroyCryptoSession
 
 <dd>
 <p>Destroy crypto session.</p>
 </dd>
 
-### -field <b>pfnGetKeyBaseData</b>
+### -field pfnGetKeyBaseData
 
 <dd>
 <p>Get key base data.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateCryptoSessionPolicySize</b>
+### -field pfnCalcPrivateCryptoSessionPolicySize
 
 <dd>
 <p>Calculate private crypto session policy size.</p>
 </dd>
 
-### -field <b>pfnCreateCryptoSessionPolicy</b>
+### -field pfnCreateCryptoSessionPolicy
 
 <dd>
 <p>Create crypto session policy.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateOpenedCryptoSessionPolicySize</b>
+### -field pfnCalcPrivateOpenedCryptoSessionPolicySize
 
 <dd>
 <p>Calculate private opened crypto session policy size.</p>
 </dd>
 
-### -field <b>pfnOpenCryptoSessionPolicy</b>
+### -field pfnOpenCryptoSessionPolicy
 
 <dd>
 <p>Open crypto session policy.</p>
 </dd>
 
-### -field <b>pfnDestroyCryptoSessionPolicy</b>
+### -field pfnDestroyCryptoSessionPolicy
 
 <dd>
 <p>Destroy crypto session policy.</p>
 </dd>
 
-### -field <b>pfnTransformEncryptedData</b>
+### -field pfnTransformEncryptedData
 
 <dd>
 <p>Transform encrypted data.</p>

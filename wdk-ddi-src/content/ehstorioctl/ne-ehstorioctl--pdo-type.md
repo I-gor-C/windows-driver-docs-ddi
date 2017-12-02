@@ -58,32 +58,32 @@ typedef enum _PDO_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PDO_TYPE_UNDEFINED"></a><a id="pdo_type_undefined"></a><b>PDO_TYPE_UNDEFINED</b>
+### -field PDO_TYPE_UNDEFINED
 
 <dd>
 <p>Types either enumerated or provided as filter parameter to <a href="..\ehstorioctl\ni-ehstorioctl-ioctl-ehstor-device-enumerate-pdos.md">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>
 </p>
 </dd>
 
-### -field <a id="PDO_TYPE_DISK"></a><a id="pdo_type_disk"></a><b>PDO_TYPE_DISK</b>
+### -field PDO_TYPE_DISK
 
 <dd>
 <p>This value indicates the PDO is for a logical disk device.</p>
 </dd>
 
-### -field <a id="PDO_TYPE_CONTROL"></a><a id="pdo_type_control"></a><b>PDO_TYPE_CONTROL</b>
+### -field PDO_TYPE_CONTROL
 
 <dd>
 <p>This value indicates the PDO is for a logical control device.</p>
 </dd>
 
-### -field <a id="PDO_TYPE_SILO"></a><a id="pdo_type_silo"></a><b>PDO_TYPE_SILO</b>
+### -field PDO_TYPE_SILO
 
 <dd>
 <p>This value indicates the PDO is for a logical silo device.</p>
 </dd>
 
-### -field <a id="PDO_TYPE_THIS"></a><a id="pdo_type_this"></a><b>PDO_TYPE_THIS</b>
+### -field PDO_TYPE_THIS
 
 <dd></dd>
 </dl>

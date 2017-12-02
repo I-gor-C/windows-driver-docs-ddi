@@ -59,19 +59,19 @@ typedef struct D3D10_DDI_BOX {
 ## -struct-fields
 <dl>
 
-### -field <b>left</b>
+### -field left
 
 <dd>
 <p>[in] The position of the left side of the box on the x-axis.</p>
 </dd>
 
-### -field <b>top</b>
+### -field top
 
 <dd>
 <p>[in] The position of the top of the box on the y-axis.</p>
 </dd>
 
-### -field <b>front</b>
+### -field front
 
 <dd>
 <p>
@@ -79,19 +79,19 @@ typedef struct D3D10_DDI_BOX {
      </p>
 </dd>
 
-### -field <b>right</b>
+### -field right
 
 <dd>
 <p>[in] The position of the right side of the box on the x-axis. Note that the width of the volume equals the value in the <b>right</b> member minus the value in the <b>left</b> member (that is, width = right – left). </p>
 </dd>
 
-### -field <b>bottom</b>
+### -field bottom
 
 <dd>
 <p>[in] The position of the bottom of the box on the y-axis. Note that the height of the volume equals the value in the <b>bottom</b> member minus the value in the <b>top</b> member (that is, height = bottom – top). </p>
 </dd>
 
-### -field <b>back</b>
+### -field back
 
 <dd>
 <p>[in] The position of the back of the box on the z-axis. Note that the depth of the volume equals the value in the <b>back</b> member minus the value in the <b>front</b> member (that is, depth = back – front). </p>

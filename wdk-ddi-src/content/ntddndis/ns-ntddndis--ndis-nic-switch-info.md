@@ -7,7 +7,7 @@ old-location: netvista\ndis_nic_switch_info.htm
 old-project: netvista
 ms.assetid: 0da6927f-c940-4e46-a63a-2127bd7fa63d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_NIC_SWITCH_INFO, NDIS_NIC_SWITCH_INFO, *PNDIS_NIC_SWITCH_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ typedef struct _NDIS_NIC_SWITCH_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_NIC_SWITCH_INFO</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -76,7 +76,7 @@ typedef struct _NDIS_NIC_SWITCH_INFO {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_NIC_SWITCH_INFO_REVISION_1"></a><a id="ndis_nic_switch_info_revision_1"></a>NDIS_NIC_SWITCH_INFO_REVISION_1
+### -field NDIS_NIC_SWITCH_INFO_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30.</p>
@@ -85,7 +85,7 @@ typedef struct _NDIS_NIC_SWITCH_INFO {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of configuration flags that are enabled on the switch.</p>
@@ -93,13 +93,13 @@ typedef struct _NDIS_NIC_SWITCH_INFO {
 <div> </div>
 </dd>
 
-### -field <b>SwitchType</b>
+### -field SwitchType
 
 <dd>
 <p>An <a href="..\ntddndis\ne-ntddndis--ndis-nic-switch-type.md">NDIS_NIC_SWITCH_TYPE</a> value that specifies the type of the switch.</p>
 </dd>
 
-### -field <b>SwitchId</b>
+### -field SwitchId
 
 <dd>
 <p>An NDIS_NIC_SWITCH_ID value that specifies a switch identifier. The switch identifier is an integer between zero and the number of switches that the network adapter supports. An NDIS_DEFAULT_SWITCH_ID value indicates the default network adapter switch.
@@ -109,7 +109,7 @@ typedef struct _NDIS_NIC_SWITCH_INFO {
 <div> </div>
 </dd>
 
-### -field <b>SwitchFriendlyName</b>
+### -field SwitchFriendlyName
 
 <dd>
 <p>An NDIS_NIC_SWITCH_FRIENDLY_NAME value that contains the user-friendly description of the switch.
@@ -117,20 +117,20 @@ typedef struct _NDIS_NIC_SWITCH_INFO {
 </p>
 </dd>
 
-### -field <b>NumVFs</b>
+### -field NumVFs
 
 <dd>
 <p>A ULONG value that specifies the number of PCI Express (PCIe) Virtual Functions (VFs) that are enabled on the network adapter. Enabled VFs can be in either an allocated or unallocated state.</p>
 </dd>
 
-### -field <b>NumAllocatedVFs</b>
+### -field NumAllocatedVFs
 
 <dd>
 <p>A ULONG value that specifies the number of VFs that have been allocated on the network adapter switch specified by <b>SwitchId</b>. VFs are allocated  through OID set requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451814">OID_NIC_SWITCH_ALLOCATE_VF</a>. 
 </p>
 </dd>
 
-### -field <b>NumVPorts</b>
+### -field NumVPorts
 
 <dd>
 <p>A ULONG value that specifies the  number of virtual ports (VPorts) that are configured on the network adapter switch specified by <b>SwitchId</b>.</p>
@@ -141,7 +141,7 @@ typedef struct _NDIS_NIC_SWITCH_INFO {
 </ul>
 </dd>
 
-### -field <b>NumActiveVPorts</b>
+### -field NumActiveVPorts
 
 <dd>
 <p>A ULONG value that specifies the number of VPorts that have been created on the network adapter switch specified by <b>SwitchId</b>. </p>
@@ -149,7 +149,7 @@ typedef struct _NDIS_NIC_SWITCH_INFO {
 <div> </div>
 </dd>
 
-### -field <b>NumQueuePairsForDefaultVPort</b>
+### -field NumQueuePairsForDefaultVPort
 
 <dd>
 <p>A ULONG value that specifies the number of queue pairs allocated for the default VPort.  The  default VPort is always attached to the PF.</p>
@@ -158,32 +158,32 @@ typedef struct _NDIS_NIC_SWITCH_INFO {
 <div> </div>
 </dd>
 
-### -field <b>NumQueuePairsForNonDefaultVPorts</b>
+### -field NumQueuePairsForNonDefaultVPorts
 
 <dd>
 <p>A ULONG value that specifies the number of queue pairs allocated for the nondefault VPorts. A nondefault VPort can be attached to either the PF or any VF of the network adapter.</p>
 <p>The miniport driver associates one or more queue pairs with a nondefault VPort through an OID method request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>.</p>
 </dd>
 
-### -field <b>NumActiveDefaultVPortMacAddresses</b>
+### -field NumActiveDefaultVPortMacAddresses
 
 <dd>
 <p>A ULONG value that specifies the number of unicast MAC address filters that are currently set on the default VPort that is attached to the PF of the network adapter.</p>
 </dd>
 
-### -field <b>NumActiveNonDefaultVPortMacAddresses</b>
+### -field NumActiveNonDefaultVPortMacAddresses
 
 <dd>
 <p>A ULONG value that specifies the number of unicast MAC address filters that are currently set on nondefault VPorts.</p>
 </dd>
 
-### -field <b>NumActiveDefaultVPortVlanIds</b>
+### -field NumActiveDefaultVPortVlanIds
 
 <dd>
 <p>A ULONG value that specifies the number of virtual local area network (VLAN) identifier filters that are currently set on the default VPort.</p>
 </dd>
 
-### -field <b>NumActiveNonDefaultVPortVlanIds</b>
+### -field NumActiveNonDefaultVPortVlanIds
 
 <dd>
 <p>A ULONG value that specifies the number of VLAN identifier filters that are currently set on the nondefault VPorts.</p>
@@ -195,7 +195,7 @@ typedef struct _NDIS_NIC_SWITCH_INFO {
 
 <p>An <b>NDIS_NIC_SWITCH_INFO</b> structure contains information about a network adapter switch that was previously created through an OID method request of OID_NIC_SWITCH_CREATE_SWITCH. </p>
 
-<p>For more information about the SR-IOV interface, see 	<a href="NULL">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
+<p>For more information about the SR-IOV interface, see 	<a href="netvista.overview_of_single_root_i_o_virtualization__sr-iov_">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
 
 ## -requirements
 <table>
@@ -237,4 +237,4 @@ typedef struct _NDIS_NIC_SWITCH_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

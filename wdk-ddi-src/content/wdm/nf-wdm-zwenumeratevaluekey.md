@@ -60,37 +60,37 @@ NTSTATUS ZwEnumerateValueKey(
 ## -parameters
 <dl>
 
-### -param <i>KeyHandle</i> [in]
+### -param KeyHandle [in]
 
 <dd>
 <p>Handle to the registry key that you want to enumerate value entries for. A successful call to <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> or <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a> creates this handle.</p>
 </dd>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>The zero-based index of the subkey that you want value information for.</p>
 </dd>
 
-### -param <i>KeyValueInformationClass</i> [in]
+### -param KeyValueInformationClass [in]
 
 <dd>
 <p>Specifies a <a href="..\wdm\ne-wdm--key-value-information-class.md">KEY_VALUE_INFORMATION_CLASS</a> value that determines the type of information returned in the <i>KeyValueInformation</i> buffer.</p>
 </dd>
 
-### -param <i>KeyValueInformation</i> [out, optional]
+### -param KeyValueInformation [out, optional]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that receives the requested information.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the <i>KeyValueInformation</i> buffer.</p>
 </dd>
 
-### -param <i>ResultLength</i> [out]
+### -param ResultLength [out]
 
 <dd>
 <p>Pointer to a variable that receives the size, in bytes, of the value information. If this routine returns STATUS_SUCCESS, the variable indicates the amount of data returned. If this routine returns STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL, the variable indicates the buffer size that is required to hold the value information. </p>

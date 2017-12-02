@@ -7,7 +7,7 @@ old-location: netvista\rilsenduicctoolkitenvelopeparams_2.htm
 old-project: netvista
 ms.assetid: 17bf24fe-bee5-4e08-8e3f-b9d4a03e147e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSENDUICCTOOLKITENVELOPEPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILSENDUICCTOOLKITENVELOPEPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSlotIndex</b>
+### -field dwSlotIndex
 
 <dd></dd>
 
-### -field <b>dwEnvelopeSize</b>
+### -field dwEnvelopeSize
 
 <dd></dd>
 
-### -field <b>bEnvelope</b>
+### -field bEnvelope
 
 <dd></dd>
 </dl>

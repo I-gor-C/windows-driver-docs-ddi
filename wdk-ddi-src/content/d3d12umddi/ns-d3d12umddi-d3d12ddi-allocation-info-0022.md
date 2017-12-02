@@ -62,55 +62,55 @@ typedef struct D3D12DDI_ALLOCATION_INFO_0022 {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>The handle of an allocation.</p>
 </dd>
 
-### -field <b>pSystemMem</b>
+### -field pSystemMem
 
 <dd>
 <p>Pointer to a system memory location that is preallocated. If the allocation uses video memory, specify null. </p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>Pointer to a buffer that contains optional private driver data.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>Size of the private driver data buffer. </p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>A zero-based ID of the video present source in a path of a video present network topology.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags that identify the type of the allocation information as a <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi-allocation-info-flags-0022.md">D3D12DDI_ALLOCATION_INFO_FLAGS_0022</a> value.</p>
 </dd>
 
-### -field <b>GpuVirtualAddress</b>
+### -field GpuVirtualAddress
 
 <dd>
 <p>A virtual address in the GPU.</p>
 </dd>
 
-### -field <b>Priority</b>
+### -field Priority
 
 <dd>
 <p>A priority for the allocation.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>

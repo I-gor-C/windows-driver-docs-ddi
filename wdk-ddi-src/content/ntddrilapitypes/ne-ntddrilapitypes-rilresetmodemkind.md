@@ -7,7 +7,7 @@ old-location: netvista\rilresetmodemkind.htm
 old-project: netvista
 ms.assetid: 4eb97a4f-dd95-4fd4-8315-efcb446f56cd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILRESETMODEMKIND {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_RESETMODEMKIND_ABRUPT"></a><a id="ril_resetmodemkind_abrupt"></a><b>RIL_RESETMODEMKIND_ABRUPT</b>
+### -field RIL_RESETMODEMKIND_ABRUPT
 
 <dd></dd>
 
-### -field <a id="RIL_RESETMODEMKIND_MAX"></a><a id="ril_resetmodemkind_max"></a><b>RIL_RESETMODEMKIND_MAX</b>
+### -field RIL_RESETMODEMKIND_MAX
 
 <dd></dd>
 </dl>

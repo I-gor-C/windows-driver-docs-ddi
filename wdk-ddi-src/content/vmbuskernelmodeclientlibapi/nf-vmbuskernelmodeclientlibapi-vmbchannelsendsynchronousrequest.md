@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelsendsynchronousrequest.htm
 old-project: netvista
 ms.assetid: 312DED8E-570E-4DEC-B084-36894970F49F
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbChannelSendSynchronousRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,47 +64,47 @@ NTSTATUS VmbChannelSendSynchronousRequest(
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>A handle for the channel.  </p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Data to send.
 </p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>The size, in bytes, of the data to send.
 </p>
 </dd>
 
-### -param <i>ExternalDataMdl</i> [in, optional]
+### -param ExternalDataMdl [in, optional]
 
 <dd>
 <p>A Memory Descriptor List (MDL) that describes an additional buffer to     send.
 </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Standard flags.</p>
 </dd>
 
-### -param <i>CompletionBuffer</i> [out]
+### -param CompletionBuffer [out]
 
 <dd>
 <p>Buffer in which to store completion packet results.
 </p>
 </dd>
 
-### -param <i>CompletionBufferSize</i> [in, out, optional]
+### -param CompletionBufferSize [in, out, optional]
 
 <dd>
 <p>The size, in bytes, of the <i>CompletionBuffer</i> value. This value must be     rounded up to nearest 8 bytes, or else the function fails. On success,
@@ -112,7 +112,7 @@ returns the number of bytes written into <i>CompletionBuffer</i>.
 </p>
 </dd>
 
-### -param <i>Timeout</i> [in, optional]
+### -param Timeout [in, optional]
 
 <dd>
 <p>A timeout in the style of the <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a> routing.
@@ -205,4 +205,4 @@ this if <code>*Timeout == 0</code> and the <b>VMBUS_CHANNEL_FORMAT_FLAG_WAIT_FOR
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20VmbChannelSendSynchronousRequest function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20VmbChannelSendSynchronousRequest function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

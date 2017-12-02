@@ -56,7 +56,7 @@ typedef struct IDARG_OUT_GETDIRTYRECTS {
 ## -struct-fields
 <dl>
 
-### -field <b>DirtyRectOutCount</b>
+### -field DirtyRectOutCount
 
 <dd>
 <p>

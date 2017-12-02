@@ -57,25 +57,25 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION {
 ## -struct-fields
 <dl>
 
-### -field <b>CopyProtectionType</b>
+### -field CopyProtectionType
 
 <dd>
 <p>A value from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-present-path-copyprotection-type.md">D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE</a> enumeration that indicates the type of copy protection that is active on the path.</p>
 </dd>
 
-### -field <b>APSTriggerBits</b>
+### -field APSTriggerBits
 
 <dd>
 <p>A value that describes copy protection for an OEM device. A value of 0 indicates no copy protection, and values of 1, 2, and 3 indicate low, medium, and high levels of copy protection, respectively. Values greater than 3 are not allowed.</p>
 </dd>
 
-### -field <b>OEMCopyProtection</b>
+### -field OEMCopyProtection
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>CopyProtectionSupport</b>
+### -field CopyProtectionSupport
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path-copyprotection-support.md">D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT</a> structure that indicates the types of copy protection that are supported by the path.</p>

@@ -61,49 +61,49 @@ typedef struct D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>IAVertices</b>
+### -field IAVertices
 
 <dd>
 <p>The number of input assembler (IA) veritces. </p>
 </dd>
 
-### -field <b>IAPrimitives</b>
+### -field IAPrimitives
 
 <dd>
 <p>The number of IA primitives. </p>
 </dd>
 
-### -field <b>VSInvocations</b>
+### -field VSInvocations
 
 <dd>
 <p>The number of vertex shader (VS) invocations. </p>
 </dd>
 
-### -field <b>GSInvocations</b>
+### -field GSInvocations
 
 <dd>
 <p>The number of geometry shader (GS) invocations. </p>
 </dd>
 
-### -field <b>GSPrimitives</b>
+### -field GSPrimitives
 
 <dd>
 <p>The number of GS primitives. </p>
 </dd>
 
-### -field <b>CInvocations</b>
+### -field CInvocations
 
 <dd>
 <p>The number of clipper invocations. </p>
 </dd>
 
-### -field <b>CPrimitives</b>
+### -field CPrimitives
 
 <dd>
 <p>The number of clipper primitives. </p>
 </dd>
 
-### -field <b>PSInvocations</b>
+### -field PSInvocations
 
 <dd>
 <p>The number of pixel shader (PS) invocations. </p>

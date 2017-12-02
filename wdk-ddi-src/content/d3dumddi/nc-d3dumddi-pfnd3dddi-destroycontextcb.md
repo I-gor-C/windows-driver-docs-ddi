@@ -58,13 +58,13 @@ _checkReturn HRESULT APIENTRY CALLBACK pfnDestroyContextCb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to a display device (that is, the graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-destroycontext.md">D3DDDICB_DESTROYCONTEXT</a> structure that contains a handle to the context to destroy.</p>

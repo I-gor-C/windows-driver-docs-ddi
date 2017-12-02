@@ -59,19 +59,19 @@ HRESULT APIENTRY GetSupportedVersions(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p> A handle that identifies the graphics adapter. </p>
 </dd>
 
-### -param <i>puEntries</i> [in, out]
+### -param puEntries [in, out]
 
 <dd>
 <p>A pointer to a variable that, on input, contains the number of entries that the <i>pSupportedDDIInterfaceVersions</i> array should return and, on output, the number of entries that the <i>pSupportedDDIInterfaceVersions</i> array actually returns. </p>
 </dd>
 
-### -param <i>pSupportedDDIInterfaceVersions</i> [out, optional]
+### -param pSupportedDDIInterfaceVersions [out, optional]
 
 <dd>
 <p> A pointer to a block of memory that receives the array of Direct3D interface versions that the driver supports.</p>

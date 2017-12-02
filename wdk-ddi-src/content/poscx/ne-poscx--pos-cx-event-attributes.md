@@ -57,19 +57,19 @@ typedef enum _POS_CX_EVENT_ATTRIBUTES {
 ## -enum-fields
 <dl>
 
-### -field <a id="POS_CX_EVENT_ATTR_DATA"></a><a id="pos_cx_event_attr_data"></a><b>POS_CX_EVENT_ATTR_DATA</b>
+### -field POS_CX_EVENT_ATTR_DATA
 
 <dd>
 <p>Data level priority delivered in FIFO to the claim owner handle.</p>
 </dd>
 
-### -field <a id="POS_CX_EVENT_ATTR_CONTROL"></a><a id="pos_cx_event_attr_control"></a><b>POS_CX_EVENT_ATTR_CONTROL</b>
+### -field POS_CX_EVENT_ATTR_CONTROL
 
 <dd>
 <p>Control level priority delivered in FIFO to the claim owner handle.</p>
 </dd>
 
-### -field <a id="POS_CX_EVENT_ATTR_BCAST_CONTROL"></a><a id="pos_cx_event_attr_bcast_control"></a><b>POS_CX_EVENT_ATTR_BCAST_CONTROL</b>
+### -field POS_CX_EVENT_ATTR_BCAST_CONTROL
 
 <dd>
 <p>Control level priority delivered in FIFO to ALL open handles on the driver.</p>

@@ -62,37 +62,37 @@ VOID APIENTRY ResourceResolveSubresource(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hDstResource</i> [in]
+### -param hDstResource [in]
 
 <dd>
 <p> A handle to the destination resource to resolve to. This resource must have been created as D3D10_USAGE_DEFAULT and single sampled.</p>
 </dd>
 
-### -param <i>DstSubresource</i> [in]
+### -param DstSubresource [in]
 
 <dd>
 <p> An index that indicates the destination subresource to resolve to. </p>
 </dd>
 
-### -param <i>hSrcResource</i> [in]
+### -param hSrcResource [in]
 
 <dd>
 <p> A handle to the source resource to resolve from.</p>
 </dd>
 
-### -param <i>SrcSubresource</i> [in]
+### -param SrcSubresource [in]
 
 <dd>
 <p> An index that indicates the source subresource to resolve from. </p>
 </dd>
 
-### -param <i>ResolveFormat</i> [in]
+### -param ResolveFormat [in]
 
 <dd>
 <p> A DXGI_FORMAT-typed value that indicates how to interpret the contents of the resolved resource.</p>

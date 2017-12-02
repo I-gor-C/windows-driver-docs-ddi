@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_DXVAHD_GETVIDEOPROCESSBLTSTATEPRIVATE {
 ## -struct-fields
 <dl>
 
-### -field <b>hVideoProcessor</b>
+### -field hVideoProcessor
 
 <dd>
 <p>[in] A handle to the video processor whose private bitblt state the runtime requests.</p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>[in/out] A pointer to <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-private-data.md">DXVAHDDDI_BLT_STATE_PRIVATE_DATA</a> structure that identifies the private bitblt state to retrieve. The driver uses DXVAHDDDI_BLT_STATE_PRIVATE_DATA to return the private bitblt data. </p>

@@ -55,13 +55,13 @@ HBA_STATUS HBA_API HBA_SetRNIDMgmtInfo(
 ## -parameters
 <dl>
 
-### -param <i>HbaHandle</i> [in]
+### -param HbaHandle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA whose RNID is set.  </p>
 </dd>
 
-### -param <i>HbaMgmtInfo</i> [in]
+### -param HbaMgmtInfo [in]
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-mgmtinfo.md">HBA_MgmtInfo</a> that specifies the RNID to associate with the HBA referenced by <i>HbaHandle. </i></p>

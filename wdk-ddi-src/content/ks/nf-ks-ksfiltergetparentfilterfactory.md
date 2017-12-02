@@ -54,7 +54,7 @@ PKSFILTERFACTORY __inline KsFilterGetParentFilterFactory(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure for which to return the parent filter factory.</p>
@@ -65,7 +65,7 @@ PKSFILTERFACTORY __inline KsFilterGetParentFilterFactory(
 <p><b>KsFilterGetParentFilterFactory</b> returns a pointer to the parent <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> structure of <i>Filter.</i> This is the AVStream filter factory from which <i>Filter</i> was created.</p>
 
 ## -remarks
-<p>This call is an inline function call to <a href="..\ks\nf-ks-ksgetparent.md">KsGetParent</a>. Note that the object hierarchy is only guaranteed stable while the appropriate mutex is held, in this case the device mutex. For more information about mutexes, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>This call is an inline function call to <a href="..\ks\nf-ks-ksgetparent.md">KsGetParent</a>. Note that the object hierarchy is only guaranteed stable while the appropriate mutex is held, in this case the device mutex. For more information about mutexes, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 ## -requirements
 <table>

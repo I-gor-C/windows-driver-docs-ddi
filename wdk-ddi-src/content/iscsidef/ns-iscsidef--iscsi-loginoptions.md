@@ -61,7 +61,7 @@ typedef struct _ISCSI_LoginOptions {
 ## -struct-fields
 <dl>
 
-### -field <b>InformationSpecified</b>
+### -field InformationSpecified
 
 <dd>
 <p>A bitmap that indicates which members of the ISCSI_LoginOptions structure contain valid data. The following table describes the possible values: </p>
@@ -138,37 +138,37 @@ typedef struct _ISCSI_LoginOptions {
 <p> </p>
 </dd>
 
-### -field <b>HeaderDigest</b>
+### -field HeaderDigest
 
 <dd>
 <p>A <a href="storage.iscsi_digest_types">ISCSI_DIGEST_TYPES</a> value that indicates the method that the initiator uses to verify the integrity of the header digest in a logon PDU.</p>
 </dd>
 
-### -field <b>DataDigest</b>
+### -field DataDigest
 
 <dd>
 <p>A <a href="storage.iscsi_digest_types">ISCSI_DIGEST_TYPES</a> value that indicates the method that the initiator uses to verify the integrity of the data digest in a logon PDU.</p>
 </dd>
 
-### -field <b>MaximumConnections</b>
+### -field MaximumConnections
 
 <dd>
 <p>A value between 1 and 65535 that specifies the maximum number of connections to target devices that can be associated with a single logon session. A value of 0 indicates that there is no limit to the number of connections. </p>
 </dd>
 
-### -field <b>DefaultTime2Wait</b>
+### -field DefaultTime2Wait
 
 <dd>
 <p>The minimum time to wait, in seconds, before the initiator attempts to reconnect or reassign a connection (or task) that has been dropped after an unexpected connection termination or reset. The initiator and target negotiate to determine this value.</p>
 </dd>
 
-### -field <b>DefaultTime2Retain</b>
+### -field DefaultTime2Retain
 
 <dd>
 <p>The maximum time, in seconds, to reassign a connection after the initial wait that is indicated in <b>DefaultTime2Wait</b> has elapsed. The initiator and target negotiate to determine this value.</p>
 </dd>
 
-### -field <b>LoginFlags</b>
+### -field LoginFlags
 
 <dd>
 <p>A bitwise OR of logon flags that define certain characteristics of the logon session. The following table indicates the values that you can assign to this member.</p>
@@ -229,7 +229,7 @@ typedef struct _ISCSI_LoginOptions {
 <p> </p>
 </dd>
 
-### -field <b>AuthType</b>
+### -field AuthType
 
 <dd>
 <p>A <a href="storage.iscsi_auth_types">ISCSI_AUTH_TYPES</a> value that indicates the authentication method that is used to establish a logon connection. </p>

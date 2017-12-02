@@ -7,7 +7,7 @@ old-location: netvista\wdi_phy_type.htm
 old-project: netvista
 ms.assetid: BDA90056-6DAA-4FC8-82EC-3062087E02C4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,55 +67,55 @@ typedef enum _WDI_PHY_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_PHY_TYPE_UNKNOWN"></a><a id="wdi_phy_type_unknown"></a><b>WDI_PHY_TYPE_UNKNOWN</b>
+### -field WDI_PHY_TYPE_UNKNOWN
 
 <dd>
 <p>Specifies an unknown or uninitialized PHY type.</p>
 </dd>
 
-### -field <a id="WDI_PHY_TYPE_ANY"></a><a id="wdi_phy_type_any"></a><b>WDI_PHY_TYPE_ANY</b>
+### -field WDI_PHY_TYPE_ANY
 
 <dd>
 <p>Specifies an unknown or uninitialized PHY type.</p>
 </dd>
 
-### -field <a id="WDI_PHY_TYPE_FHSS"></a><a id="wdi_phy_type_fhss"></a><b>WDI_PHY_TYPE_FHSS</b>
+### -field WDI_PHY_TYPE_FHSS
 
 <dd>
 <p>Specifies a frequency-hopping spread-spectrum (FHSS) PHY.</p>
 </dd>
 
-### -field <a id="WDI_PHY_TYPE_DSSS"></a><a id="wdi_phy_type_dsss"></a><b>WDI_PHY_TYPE_DSSS</b>
+### -field WDI_PHY_TYPE_DSSS
 
 <dd>
 <p>Specifies a direct sequence spread spectrum (DSSS) PHY.</p>
 </dd>
 
-### -field <a id="WDI_PHY_TYPE_IRBASEBAND"></a><a id="wdi_phy_type_irbaseband"></a><b>WDI_PHY_TYPE_IRBASEBAND</b>
+### -field WDI_PHY_TYPE_IRBASEBAND
 
 <dd>
 <p>Specifies an infrared (IR) baseband PHY.</p>
 </dd>
 
-### -field <a id="WDI_PHY_TYPE_OFDM"></a><a id="wdi_phy_type_ofdm"></a><b>WDI_PHY_TYPE_OFDM</b>
+### -field WDI_PHY_TYPE_OFDM
 
 <dd>
 <p>Specifies an orthogonal frequency division multiplexing (OFDM) 802.11a PHY.</p>
 </dd>
 
-### -field <a id="WDI_PHY_TYPE_HRDSSS"></a><a id="wdi_phy_type_hrdsss"></a><b>WDI_PHY_TYPE_HRDSSS</b>
+### -field WDI_PHY_TYPE_HRDSSS
 
 <dd>
 <p>Specifies a high-rate DSSS (HRDSSS) 802.11b PHY.</p>
 </dd>
 
-### -field <a id="WDI_PHY_TYPE_ERP"></a><a id="wdi_phy_type_erp"></a><b>WDI_PHY_TYPE_ERP</b>
+### -field WDI_PHY_TYPE_ERP
 
 <dd>
 <p>Specifies an extended-rate 802.11g PHY (ERP).</p>
 </dd>
 
-### -field <a id="WDI_PHY_TYPE_HT"></a><a id="wdi_phy_type_ht"></a><b>WDI_PHY_TYPE_HT</b>
+### -field WDI_PHY_TYPE_HT
 
 <dd>
 <p>Specifies a high-throughput (HT) 802.11n PHY. Each 802.11n PHY, whether dual-band or not, is specified as this PHY type.
@@ -123,20 +123,20 @@ typedef enum _WDI_PHY_TYPE {
 </p>
 </dd>
 
-### -field <a id="WDI_PHY_TYPE_VHT"></a><a id="wdi_phy_type_vht"></a><b>WDI_PHY_TYPE_VHT</b>
+### -field WDI_PHY_TYPE_VHT
 
 <dd>
 <p>Specifies a very high-throughput (VHT) 802.11ac PHY.</p>
 </dd>
 
-### -field <a id="WDI_PHY_TYPE_DMG"></a><a id="wdi_phy_type_dmg"></a><b>WDI_PHY_TYPE_DMG</b>
+### -field WDI_PHY_TYPE_DMG
 
 <dd>
 <p>Added in Windows 10, version 1607, WDI version 1.0.21.</p>
 <p>Specifies an 802.11ad PHY.</p>
 </dd>
 
-### -field <a id="WDI_PHY_TYPE_IHV_START"></a><a id="wdi_phy_type_ihv_start"></a><b>WDI_PHY_TYPE_IHV_START</b>
+### -field WDI_PHY_TYPE_IHV_START
 
 <dd>
 <p>Specifies the start of the range that is used to define proprietary PHY types that are developed by an independent hardware vendor (IHV). 
@@ -144,7 +144,7 @@ typedef enum _WDI_PHY_TYPE {
 </p>
 </dd>
 
-### -field <a id="WDI_PHY_TYPE_IHV_END"></a><a id="wdi_phy_type_ihv_end"></a><b>WDI_PHY_TYPE_IHV_END</b>
+### -field WDI_PHY_TYPE_IHV_END
 
 <dd>
 <p>Specifies the end of the range that is used to define proprietary PHY types that are developed by an IHV. 

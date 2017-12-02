@@ -59,31 +59,31 @@ typedef struct _DXGK_CHILD_CONTAINER_ID {
 ## -struct-fields
 <dl>
 
-### -field <b>ContainerId</b>
+### -field ContainerId
 
 <dd>
 <p>The container ID for the child device. For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>EldInfo</b>
+### -field EldInfo
 
 <dd>
 <p>This structure contains the information that the operating system used to generate the container ID for the child device.</p>
 <dl>
 
-### -field <b>PortId</b>
+### -field PortId
 
 <dd>
 <p>A ULONG64 value that contains the port ID for the child device. The operating system created this ID based on the name of the child device.</p>
 </dd>
 
-### -field <b>ManufacturerName</b>
+### -field ManufacturerName
 
 <dd>
 <p>A USHORT value that contains the manufacturer's name. The operating system obtains this data from the child device's descriptor.</p>
 </dd>
 
-### -field <b>ProductCode</b>
+### -field ProductCode
 
 <dd>
 <p>A USHORT value that contains the manufacturer's product code for the child device. The operating system obtains this data from the child device's descriptor.</p>

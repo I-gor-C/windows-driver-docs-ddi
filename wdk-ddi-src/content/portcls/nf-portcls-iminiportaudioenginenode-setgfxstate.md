@@ -55,13 +55,13 @@ NTSTATUS SetGfxState(
 ## -parameters
 <dl>
 
-### -param <i>ulNodeId</i> [in]
+### -param ulNodeId [in]
 
 <dd>
 <p>The ID of the GFX node.</p>
 </dd>
 
-### -param <i>bEnable</i> [in]
+### -param bEnable [in]
 
 <dd>
 <p>The state of the GFX node.</p>

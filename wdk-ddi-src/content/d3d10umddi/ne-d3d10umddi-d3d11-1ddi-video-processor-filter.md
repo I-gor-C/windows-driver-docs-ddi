@@ -61,49 +61,49 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FILTER {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FILTER_BRIGHTNESS"></a><a id="d3d11_1ddi_video_processor_filter_brightness"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_BRIGHTNESS</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_BRIGHTNESS
 
 <dd>
 <p>Brightness filter.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CONTRAST"></a><a id="d3d11_1ddi_video_processor_filter_contrast"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CONTRAST</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CONTRAST
 
 <dd>
 <p>Contrast filter.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FILTER_HUE"></a><a id="d3d11_1ddi_video_processor_filter_hue"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_HUE</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_HUE
 
 <dd>
 <p>Hue filter.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FILTER_SATURATION"></a><a id="d3d11_1ddi_video_processor_filter_saturation"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_SATURATION</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_SATURATION
 
 <dd>
 <p>Saturation filter.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FILTER_NOISE_REDUCTION"></a><a id="d3d11_1ddi_video_processor_filter_noise_reduction"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_NOISE_REDUCTION</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_NOISE_REDUCTION
 
 <dd>
 <p>Noise reduction filter.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FILTER_EDGE_ENHANCEMENT"></a><a id="d3d11_1ddi_video_processor_filter_edge_enhancement"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_EDGE_ENHANCEMENT</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_EDGE_ENHANCEMENT
 
 <dd>
 <p>Edge enhancement filter.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FILTER_ANAMORPHIC_SCALING"></a><a id="d3d11_1ddi_video_processor_filter_anamorphic_scaling"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_ANAMORPHIC_SCALING</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_ANAMORPHIC_SCALING
 
 <dd>
 <p>Anamorphic scaling filter.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FILTER_STEREO_ADJUSTMENT"></a><a id="d3d11_1ddi_video_processor_filter_stereo_adjustment"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_STEREO_ADJUSTMENT</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FILTER_STEREO_ADJUSTMENT
 
 <dd>
 <p>Stereo adjustment filter. When stereo 3-D video is enabled, this filter adjusts the offset between the left and right views, allowing the user to reduce potential eye strain.</p>

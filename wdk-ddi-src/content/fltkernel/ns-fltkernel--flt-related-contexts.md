@@ -7,7 +7,7 @@ old-location: ifsk\flt_related_contexts.htm
 old-project: ifsk
 ms.assetid: 9d9b4bba-0216-48cf-81aa-160b7252ba20
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FLT_RELATED_CONTEXTS, FLT_RELATED_CONTEXTS, *PFLT_RELATED_CONTEXTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ typedef struct _FLT_RELATED_CONTEXTS {
 ## -struct-fields
 <dl>
 
-### -field <b>VolumeContext</b>
+### -field VolumeContext
 
 <dd>
 <p>Opaque pointer to the minifilter's context for the volume that the <b>Volume</b> member of the <a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a> structure points to. </p>
 </dd>
 
-### -field <b>InstanceContext</b>
+### -field InstanceContext
 
 <dd>
 <p>Opaque pointer to the minifilter driver's context for the instance that the <b>Instance</b> member of the <a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a> structure points to. </p>
 </dd>
 
-### -field <b>FileContext</b>
+### -field FileContext
 
 <dd>
 <p>On Windows Vista and later, this member is an opaque pointer to the minifilter driver's per-file context for the stream handle that the <b>FileObject</b> member of the <a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a> structure points to. On Windows operating systems earlier than Windows Vista, this member is reserved for system use. </p>
 </dd>
 
-### -field <b>StreamContext</b>
+### -field StreamContext
 
 <dd>
 <p>Opaque pointer to the minifilter's stream context for the stream handle that the <b>FileObject</b> member of the <a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a> structure points to. </p>
 </dd>
 
-### -field <b>StreamHandleContext</b>
+### -field StreamHandleContext
 
 <dd>
 <p>Opaque pointer to the minifilter's stream handle context for the stream handle that the <b>FileObject</b> member of the <a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a> structure points to. </p>
 </dd>
 
-### -field <b>TransactionContext</b>
+### -field TransactionContext
 
 <dd>
 <p>On Windows Vista and later, this member is an opaque pointer to the minifilter's transaction context for the transaction that the <b>Transaction</b> member of the <a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a> structure points to. On Windows operating systems earlier than Windows Vista, this member is reserved for system use. </p>
@@ -139,4 +139,4 @@ typedef struct _FLT_RELATED_CONTEXTS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_RELATED_CONTEXTS structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_RELATED_CONTEXTS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

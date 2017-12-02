@@ -56,19 +56,19 @@ NTSTATUS DrmForwardContentToDeviceObject(
 ## -parameters
 <dl>
 
-### -param <i>ContentId</i> [in]
+### -param ContentId [in]
 
 <dd>
 <p>Specifies the DRM content ID. This parameter identifies a protected KS audio stream.</p>
 </dd>
 
-### -param <i>Reserved</i> [in, optional]
+### -param Reserved [in, optional]
 
 <dd>
 <p>Reserved for future use. Set to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>DrmForward</i> [in]
+### -param DrmForward [in]
 
 <dd>
 <p>Pointer to a <a href="audio.drmforward">DRMFORWARD</a> structure specifying a device object and file object that identify the target device and a KS audio pin on that device, respectively. The structure also contains the context value that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>set-property request passes to the device.</p>
@@ -93,7 +93,7 @@ NTSTATUS DrmForwardContentToDeviceObject(
 
 <p>The property request also contains the DRM content ID from parameter <i>ContentId</i> and the DRM content rights belonging to that content ID. <code>DrmForwardContentToDeviceObject</code> copies these values into the request's property value. <code>DrmForwardContentToDeviceObject</code> makes no further use of the device object after returning.</p>
 
-<p><code>DrmForwardContentToDeviceObject</code> performs the same function as <a href="..\portcls\nf-portcls-pcforwardcontenttodeviceobject.md">PcForwardContentToDeviceObject</a> and <a href="audio.idrmport2_forwardcontenttodeviceobject">IDrmPort2::ForwardContentToDeviceObject</a>. For more information, see <a href="NULL">DRM Functions and Interfaces</a>.</p>
+<p><code>DrmForwardContentToDeviceObject</code> performs the same function as <a href="..\portcls\nf-portcls-pcforwardcontenttodeviceobject.md">PcForwardContentToDeviceObject</a> and <a href="audio.idrmport2_forwardcontenttodeviceobject">IDrmPort2::ForwardContentToDeviceObject</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.</p>
 
 <p>The KSPROPERTY_DRMAUDIOSTREAM_CONTENTID property assigns the DRM content ID and DRM content rights to a KS audio pin.</p>
 

@@ -61,13 +61,13 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_MONO"></a><a id="d3d11_1ddi_video_processor_stereo_format_mono"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_MONO</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_MONO
 
 <dd>
 <p>The sample does not contain stereo data. If the stereo format is not specified, this value is the default.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_HORIZONTAL"></a><a id="d3d11_1ddi_video_processor_stereo_format_horizontal"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_HORIZONTAL</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_HORIZONTAL
 
 <dd>
 <p>Frame 0 and frame 1 are packed side-by-side, as shown in the following diagram.</p>
@@ -75,7 +75,7 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT {
 <p>All drivers that support stereo video must support this format.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_VERTICAL"></a><a id="d3d11_1ddi_video_processor_stereo_format_vertical"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_VERTICAL</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_VERTICAL
 
 <dd>
 <p>Frame 0 and frame 1 are packed top-to-bottom, as shown in the following diagram.</p>
@@ -83,14 +83,14 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT {
 <p>All drivers that support stereo video must support this format.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_SEPARATE"></a><a id="d3d11_1ddi_video_processor_stereo_format_separate"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_SEPARATE</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_SEPARATE
 
 <dd>
 <p>Frame 0 and frame 1 are placed in separate resources or in separate texture array elements within the same resource.</p>
 <p>All drivers that support stereo video must support this format.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_MONO_OFFSET"></a><a id="d3d11_1ddi_video_processor_stereo_format_mono_offset"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_MONO_OFFSET</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_MONO_OFFSET
 
 <dd>
 <p>The sample contains non-stereo data. However, the driver should create a left/right output of this sample using a specified offset.  The offset is specified in the <i>MonoOffset</i> parameter of the <a href="display.videoprocessorsetstreamstereoformat">VideoProcessorSetStreamStereoFormat</a> function. </p>
@@ -98,7 +98,7 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT {
 <p>Support for this stereo format is optional.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_ROW_INTERLEAVED"></a><a id="d3d11_1ddi_video_processor_stereo_format_row_interleaved"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_ROW_INTERLEAVED</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_ROW_INTERLEAVED
 
 <dd>
 <p>Frame 0 and frame 1 are packed into interleaved rows, as shown in the following diagram.</p>
@@ -106,7 +106,7 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT {
 <p>Support for this stereo format is optional.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_COLUMN_INTERLEAVED"></a><a id="d3d11_1ddi_video_processor_stereo_format_column_interleaved"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_COLUMN_INTERLEAVED</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_COLUMN_INTERLEAVED
 
 <dd>
 <p>Frame 0 and frame 1 are packed into interleaved columns, as shown in the following diagram.</p>
@@ -114,7 +114,7 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT {
 <p>Support for this stereo format is optional.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_CHECKERBOARD"></a><a id="d3d11_1ddi_video_processor_stereo_format_checkerboard"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_CHECKERBOARD</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_CHECKERBOARD
 
 <dd>
 <p>Frame 0 and frame 1 are packed in a checkerboard format, as shown in the following diagram.</p>

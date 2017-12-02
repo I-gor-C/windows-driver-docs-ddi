@@ -64,13 +64,13 @@ typedef struct _DXGK_COLORTRANSFORMCAPS  {
 ## -struct-fields
 <dl>
 
-### -field <b>Gamma_Rgb256x3x16</b>
+### -field Gamma_Rgb256x3x16
 
 <dd>
 <p>Indicates support for a GDI compatible gamma ramp.</p>
 </dd>
 
-### -field <b>Gamma_Dxgi1</b>
+### -field Gamma_Dxgi1
 
 <dd>
 <p>Indicates support for a DXGI1 gamma ramp.  These gamma ramps have been defined since WDDM 1.0 but were always required to be supported by any WDDM driver.
@@ -78,31 +78,31 @@ Full WDDM drivers are still required to support DXGI1 gamma so should set this f
 </p>
 </dd>
 
-### -field <b>Transform_3x4Matrix</b>
+### -field Transform_3x4Matrix
 
 <dd>
 <p>Indicates support for a 3 by 4 matrix color transform in the display pipeline hardware.</p>
 </dd>
 
-### -field <b>Transform_3x4Matrix_WideColor</b>
+### -field Transform_3x4Matrix_WideColor
 
 <dd>
 <p>Indicates support for a 3 by 4 matrix color transform in the display pipeline hardware when scanning out WideColor data.  Drivers which support this capability must also support Transform_3x4Matrix. The OS will NOT engage WideColorGamut mode unless both this bit and the WideColorSpace cap bits are set.</p>
 </dd>
 
-### -field <b>Transform_3x4Matrix_HighColor</b>
+### -field Transform_3x4Matrix_HighColor
 
 <dd>
 <p>Indicates support for a 3 by 4 matrix color transform in the display pipeline hardware when scanning out HighColor data.  Drivers which support this capability must also support Transform_3x4Matrix_WideColor.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The combined UINT value.</p>

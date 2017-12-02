@@ -7,7 +7,7 @@ old-location: netvista\rilcallrttcap.htm
 old-project: netvista
 ms.assetid: 7cb8618b-93da-4b6d-8f03-fb42a8d28fd0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLRTTCAP, RILCALLRTTCAP, *LPRILCALLRTTCAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILCALLRTTCAP {
 ## -struct-fields
 <dl>
 
-### -field <b>dwLocalRTTCap</b>
+### -field dwLocalRTTCap
 
 <dd></dd>
 
-### -field <b>dwPeerRTTCap</b>
+### -field dwPeerRTTCap
 
 <dd></dd>
 </dl>

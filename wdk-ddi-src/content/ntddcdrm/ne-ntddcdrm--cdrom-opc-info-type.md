@@ -54,7 +54,7 @@ typedef enum _CDROM_OPC_INFO_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="SimpleOpcInfo"></a><a id="simpleopcinfo"></a><a id="SIMPLEOPCINFO"></a><b>SimpleOpcInfo</b>
+### -field SimpleOpcInfo
 
 <dd>
 <p>Specifies the wrapper for the SEND OPC INFORMATION command from the Multimedia Commands (MMC) specification.</p>

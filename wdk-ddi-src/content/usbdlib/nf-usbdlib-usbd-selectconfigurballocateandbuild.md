@@ -62,25 +62,25 @@ NTSTATUS USBD_SelectConfigUrbAllocateAndBuild(
 ## -parameters
 <dl>
 
-### -param <i>USBDHandle</i> [in]
+### -param USBDHandle [in]
 
 <dd>
 <p>USBD handle that is retrieved by the client driver in a previous call to  the <a href="..\usbdlib\nf-usbdlib-usbd-createhandle.md">USBD_CreateHandle</a> routine.</p>
 </dd>
 
-### -param <i>ConfigurationDescriptor</i> [in]
+### -param ConfigurationDescriptor [in]
 
 <dd>
 <p>Pointer to a caller-allocated <a href="..\usbspec\ns-usbspec--usb-configuration-descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a> structure that contains the configuration descriptor for the configuration to be selected. Typically, the client driver submits an URB  of the type  URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE (see <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a>)     to retrieve information about configurations, interfaces, endpoints, the vendor, and class-specific descriptors from a USB device. When the client driver specifies USB_CONFIGURATION_DESCRIPTOR_TYPE as the descriptor type, the request retrieves all device information in a <b>USB_CONFIGURATION_DESCRIPTOR</b> structure. The driver then passes the received pointer to    the <b>USB_CONFIGURATION_DESCRIPTOR</b> structure in the <i>ConfigurationDescriptor</i> parameter.</p>
 </dd>
 
-### -param <i>InterfaceList</i> [in]
+### -param InterfaceList [in]
 
 <dd>
 <p>Pointer to the first element of a caller-allocated array of <a href="..\usbdlib\ns-usbdlib--usbd-interface-list-entry.md">USBD_INTERFACE_LIST_ENTRY</a>    structures. The length of the array depends on the number of interfaces in the configuration descriptor. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>Urb</i> [out]
+### -param Urb [out]
 
 <dd>
 <p>Pointer to a <a href="..\usb\ns-usb--urb.md">URB</a> structure that receives the URB allocated by <b>USBD_SelectConfigUrbAllocateAndBuild</b>. The client driver must free the URB when the driver has finished using it by calling <a href="..\usbdlib\nf-usbdlib-usbd-urbfree.md">USBD_UrbFree</a>.</p>

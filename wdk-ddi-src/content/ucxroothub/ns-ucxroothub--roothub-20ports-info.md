@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>This structure that has an array of 2.0 ports supported by the  root hub. This structure is provided by  UCX in a framework request in the  <a href="buses.evt_ucx_roothub_get_20port_info">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function.</p>
+<p>This structure that has an array of 2.0 ports supported by the  root hub. This structure is provided by  UCX in a framework request in the  <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-get-20port-info.md">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function.</p>
 
 
 ## -syntax
@@ -58,28 +58,28 @@ typedef struct _ROOTHUB_20PORTS_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size in bytes of this structure.</p>
 </dd>
 
-### -field <b>NumberOfPorts</b>
+### -field NumberOfPorts
 
 <dd>
 <p>The number of USB 2.0 ports connected to the root hub. </p>
 </dd>
 
-### -field <b>PortInfoSize</b>
+### -field PortInfoSize
 
 <dd>
 <p>The size of the <b>ROOTHUB_20PORTS_INFO</b> structure.</p>
 </dd>
 
-### -field <b>PortInfoArray</b>
+### -field PortInfoArray
 
 <dd>
-<p>A pointer to an array of <a href="buses._roothub_20port_info">PROOTHUB_20PORT_INFO</a> structures.</p>
+<p>A pointer to an array of <a href="..\ucxroothub\ns-ucxroothub--roothub-20port-info.md">PROOTHUB_20PORT_INFO</a> structures.</p>
 </dd>
 </dl>
 
@@ -103,7 +103,7 @@ typedef struct _ROOTHUB_20PORTS_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_ucx_roothub_get_20port_info">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a>
+<a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-get-20port-info.md">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a>
 </dt>
 </dl>
 <p> </p>

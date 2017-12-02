@@ -61,45 +61,45 @@ typedef struct _PMI_CONFIGURATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>A value that specifies the version of this structure. For Windows 7, Windows Server 2008 R2, and later versions of Windows, this value must be 1.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>A value, in units of bytes, that specifies the size of the structure.</p>
 </dd>
 
-### -field <b>ConfigurationType</b>
+### -field ConfigurationType
 
 <dd>
 <p>A <a href="..\pmi\ne-pmi-pmi-configuration-type.md">PMI_CONFIGURATION_TYPE</a> enumeration value that specifies the data type of the <b>Configuration</b> member.</p>
 </dd>
 
-### -field <b>Configuration</b>
+### -field Configuration
 
 <dd>
 <p>A union of the supported Power Meter Interface (PMI) configuration structures. Based on the value of the <b>ConfigurationType</b> member, one of the following <b>Configuration</b> submembers is used to reference the following PMI configuration structures:</p>
 <dl>
 
-### -field <b>MeasurementConfiguration</b>
+### -field MeasurementConfiguration
 
 <dd>
 <p>A <a href="..\pmi\ns-pmi--pmi-budgeting-configuration.md">PMI_BUDGETING_CONFIGURATION</a> structure that contains information about the budgeting configuration of the power meter.</p>
 <p>The <b>Configuration</b> member contains this structure if the <b>ConfigurationType</b> member is set to <b>PmiBudgetingConfiguration</b>.</p>
 </dd>
 
-### -field <b>BudgetingConfiguration</b>
+### -field BudgetingConfiguration
 
 <dd>
 <p>A <a href="..\pmi\ns-pmi--pmi-measurement-configuration.md">PMI_MEASUREMENT_CONFIGURATION</a> structure that contains information about the measurement configuration of the power meter.</p>
 <p>The <b>Configuration</b> member contains this structure if the <b>ConfigurationType</b> member is set to <b>PmiMeasurementConfiguration</b>.</p>
 </dd>
 
-### -field <b>ThresholdConfiguration</b>
+### -field ThresholdConfiguration
 
 <dd>
 <p>A <a href="..\pmi\ns-pmi--pmi-threshold-configuration.md">PMI_THRESHOLD_CONFIGURATION</a> structure that contains information about the threshold configuration of the power meter.</p>

@@ -59,31 +59,31 @@ ULONG StorPortGetLogicalProcessorRelationship(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>ProcessorNumber</i> [in, optional]
+### -param ProcessorNumber [in, optional]
 
 <dd>
 <p>An optional pointer to a processor number for which relationships are to be returned. If this parameter is not provided, information about all processors is returned.</p>
 </dd>
 
-### -param <i>RelationshipType</i> [in]
+### -param RelationshipType [in]
 
 <dd>
 <p>The type of relationship to be returned.</p>
 </dd>
 
-### -param <i>Information</i> [out]
+### -param Information [out]
 
 <dd>
 <p>A pointer to a buffer that receives the specified information.</p>
 </dd>
 
-### -param <i>Length</i> [in, out]
+### -param Length [in, out]
 
 <dd>
 <p>A pointer to the length of the information buffer, in bytes. Upon return, this value receives the number of bytes that are populated with relationship information.</p>

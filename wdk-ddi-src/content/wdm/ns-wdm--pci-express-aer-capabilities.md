@@ -63,43 +63,43 @@ typedef union _PCI_EXPRESS_AER_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>FirstErrorPointer</b>
+### -field FirstErrorPointer
 
 <dd>
 <p>The bit position of the first error that was reported in the PCIe uncorrectable error status register.</p>
 </dd>
 
-### -field <b>ECRCGenerationCapable</b>
+### -field ECRCGenerationCapable
 
 <dd>
 <p>A single bit that indicates that the device is capable of generating end-to-end cyclic redundancy checks (ECRC).</p>
 </dd>
 
-### -field <b>ECRCGenerationEnable</b>
+### -field ECRCGenerationEnable
 
 <dd>
 <p>A single bit that indicates that ECRC generation is enabled.</p>
 </dd>
 
-### -field <b>ECRCCheckCapable</b>
+### -field ECRCCheckCapable
 
 <dd>
 <p>A single bit that indicates that the device is capable of checking ECRC.</p>
 </dd>
 
-### -field <b>ECRCCheckEnable</b>
+### -field ECRCCheckEnable
 
 <dd>
 <p>A single bit that indicates that ECRC checking is enabled.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_AER_CAPABILITIES structure.</p>

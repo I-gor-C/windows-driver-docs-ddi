@@ -55,7 +55,7 @@ HRESULT OnDriverEvent(
 ## -parameters
 <dl>
 
-### -param <i>pEventArgs</i> [in]
+### -param pEventArgs [in]
 
 <dd>
 <p>The event arguments.</p>

@@ -56,19 +56,19 @@ VOID IoRaiseHardError(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to the IRP that failed because of a device I/O error. </p>
 </dd>
 
-### -param <i>Vpb</i> [in, optional]
+### -param Vpb [in, optional]
 
 <dd>
 <p>Pointer to the volume parameter block (VPB), if any, for the mounted file object. This parameter is <b>NULL</b> if no VPB is associated with the device object.</p>
 </dd>
 
-### -param <i>RealDeviceObject</i> [in]
+### -param RealDeviceObject [in]
 
 <dd>
 <p>Pointer to the device object that represents the physical device on which the I/O operation failed. </p>
@@ -81,7 +81,7 @@ VOID IoRaiseHardError(
 ## -remarks
 <p>Highest-level drivers, particularly file system drivers, call <b>IoRaiseHardError</b>.</p>
 
-<p>An upper-level filter driver calls <a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a> (which disables normal kernel APCs) and sends an I/O request to a file system driver. The filter driver waits on the completion of the request by the file system driver before the filter driver calls <a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a> (which reenables normal kernel APCs).</p>
+<p>An upper-level filter driver calls <a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a> (which disables normal kernel APCs) and sends an I/O request to a file system driver. The filter driver waits on the completion of the request by the file system driver before the filter driver calls <a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a> (which reenables normal kernel APCs).</p>
 
 <p>An error occurs on the file system, and the file system driver calls <b>IoRaiseHardError</b> to report the error to the user. The file system driver waits on the dialog box.</p>
 

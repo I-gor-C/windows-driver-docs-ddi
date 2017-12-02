@@ -60,37 +60,37 @@ HRESULT AdjustImageableArea(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> 
+### -param hPrinter 
 
 <dd>
 <p>A handle to the printer that is currently being queried.</p>
 </dd>
 
-### -param <i>cbDevMode</i> 
+### -param cbDevMode 
 
 <dd>
 <p>The size of the <a href="display.devmodew">DEVMODE</a> structure, in bytes, including appended data.</p>
 </dd>
 
-### -param <i>pDevMode</i> 
+### -param pDevMode 
 
 <dd>
 <p>A pointer to the DEVMODE structure that contains the current device settings.</p>
 </dd>
 
-### -param <i>cbOEMDM</i> 
+### -param cbOEMDM 
 
 <dd>
 <p>The number of bytes in the vendor-provided section of the DEVMODE structure.</p>
 </dd>
 
-### -param <i>pOEMDM</i> 
+### -param pOEMDM 
 
 <dd>
 <p>A pointer to the data that is contained in the vendor portion of the DEVMODE structure that <i>pDevMode</i> points to.</p>
 </dd>
 
-### -param <i>prclImageableArea</i> 
+### -param prclImageableArea 
 
 <dd>
 <p>A pointer to a <a href="display.rectl">RECTL</a> structure that contains the printable area. This parameter is populated by UnidrvUI.dll or PS5UI.dll with data from the corresponding GPD or PPD, before the parameter is passed to the plug-in. The plug-in can then update this data before returning. </p>

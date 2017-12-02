@@ -7,7 +7,7 @@ old-location: sensors\isensordriver_onclientsubscribetoevents.htm
 old-project: sensors
 ms.assetid: b0528932-d7a8-46d7-bd94-6fd729a9d7f2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorDriver, OnClientSubscribeToEvents, ISensorDriver::OnClientSubscribeToEvents
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ HRESULT OnClientSubscribeToEvents(
 ## -parameters
 <dl>
 
-### -param <i>pClientFile</i> 
+### -param pClientFile 
 
 <dd>
 <p>Pointer to an IWDFFile interface that represents the file object for the application requesting event notifications.</p>
 </dd>
 
-### -param <i>pwszSensorID</i> 
+### -param pwszSensorID 
 
 <dd>
 <p>LPWSTR that contains the ID for the sensor from which the client application is requesting event notifications.</p>
@@ -79,7 +79,7 @@ HRESULT OnClientSubscribeToEvents(
 
 <p>Platform-defined events are defined in sensors.h.</p>
 
-<p>For more information about how to use this method, see <a href="NULL">Filtering data</a>.</p>
+<p>For more information about how to use this method, see <a href="https://msdn.microsoft.com/1895EC5C-08C1-4976-83F2-CD5A2B55338D">Filtering data</a>.</p>
 
 ## -requirements
 <table>

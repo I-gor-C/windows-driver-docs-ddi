@@ -59,37 +59,37 @@ NTSTATUS ZwOpenFile(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [out]
+### -param FileHandle [out]
 
 <dd>
 <p>Pointer to a HANDLE variable that receives a handle to the file.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that determines the requested access to the object. For more information, see the <i>DesiredAccess</i> parameter of <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>.</p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in]
+### -param ObjectAttributes [in]
 
 <dd>
 <p>Pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>Pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation.</p>
 </dd>
 
-### -param <i>ShareAccess</i> [in]
+### -param ShareAccess [in]
 
 <dd>
 <p>Specifies the type of share access for the file. For more information, see the <i>ShareAccess</i> parameter of <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>.</p>
 </dd>
 
-### -param <i>OpenOptions</i> [in]
+### -param OpenOptions [in]
 
 <dd>
 <p>Specifies the options to apply when opening the file. For more information, see the <i>CreateOptions</i> parameter of <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>.</p>

@@ -57,25 +57,25 @@ NTSTATUS Init(
 ## -parameters
 <dl>
 
-### -param <i>UnknownAdapter</i> [in]
+### -param UnknownAdapter [in]
 
 <dd>
 <p>Pointer to the <b>IUnknown</b> interface of the adapter object whose miniport object is being initialized. This parameter is optional and can be specified as <b>NULL</b>. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>ResourceList</i> [in]
+### -param ResourceList [in]
 
 <dd>
 <p>Pointer to <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a> interface of the resource list object that is to be supplied to the miniport driver during initialization. After passing this reference to the miniport driver, the port driver is free to examine the contents of the resource list but will not modify the contents of this list. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>Port</i> [in]
+### -param Port [in]
 
 <dd>
 <p>Pointer to the <a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a> object that is bound to this miniport object. The caller specifies a valid, non-<b>NULL</b> pointer value for this parameter.</p>
 </dd>
 
-### -param <i>ServiceGroup</i> [out]
+### -param ServiceGroup [out]
 
 <dd>
 <p>Output pointer for the service group. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> interface of the miniport driver's service group object. This is the service group that is being registered for interrupt notification. The caller specifies a valid, non-<b>NULL</b> pointer value for this parameter.</p>
@@ -96,7 +96,7 @@ NTSTATUS Init(
 
 <p>The <i>UnknownAdapter</i> and <i>ResourceList</i> parameters are the same pointer values that the adapter driver earlier passed as parameters to the <b>IPortMidi</b> object's <b>Init</b> method (see <a href="audio.iport_init">IPort::Init</a>).</p>
 
-<p>The <i>UnknownAdapter</i>, <i>ResourceList</i>, <i>Port</i>, and <i>ServiceGroup</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>UnknownAdapter</i>, <i>ResourceList</i>, <i>Port</i>, and <i>ServiceGroup</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

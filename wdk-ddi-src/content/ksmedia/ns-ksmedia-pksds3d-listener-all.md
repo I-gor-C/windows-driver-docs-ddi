@@ -60,43 +60,43 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Position</b>
+### -field Position
 
 <dd>
 <p>Specifies the position vector of the 3D listener. This member is a structure of type <a href="..\ksmedia\ns-ksmedia--ds3dvector.md">DS3DVECTOR</a>.</p>
 </dd>
 
-### -field <b>Velocity</b>
+### -field Velocity
 
 <dd>
 <p>Specifies the velocity vector of the 3D listener. This member is a structure of type DS3DVECTOR.</p>
 </dd>
 
-### -field <b>OrientFront</b>
+### -field OrientFront
 
 <dd>
 <p>Specifies the front orientation vector of the 3D listener. This member is a structure of type DS3DVECTOR.</p>
 </dd>
 
-### -field <b>OrientTop</b>
+### -field OrientTop
 
 <dd>
 <p>Specifies the top orientation vector of the 3D listener. This member is a structure of type DS3DVECTOR.</p>
 </dd>
 
-### -field <b>DistanceFactor</b>
+### -field DistanceFactor
 
 <dd>
 <p>Specifies the distance factor for the 3D listener.</p>
 </dd>
 
-### -field <b>RolloffFactor</b>
+### -field RolloffFactor
 
 <dd>
 <p>Specifies the rolloff factor for the 3D listener.</p>
 </dd>
 
-### -field <b>DopplerFactor</b>
+### -field DopplerFactor
 
 <dd>
 <p>Specifies the Doppler factor for the 3D listener.</p>

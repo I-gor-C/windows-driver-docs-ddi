@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeProperty</b>
+### -field NodeProperty
 
 <dd>
 <p>Specifies both the target node and the property to <i>get</i>. This member is an initialized structure of type <a href="audio.ksnodeproperty">KSNODEPROPERTY</a>.</p>
 </dd>
 
-### -field <b>lOcularFocalLength</b>
+### -field lOcularFocalLength
 
 <dd>
 <p>Specifies a value of type LONG containing the focal length of the lens closest to the camera user.</p>
 </dd>
 
-### -field <b>lObjectiveFocalLengthMin</b>
+### -field lObjectiveFocalLengthMin
 
 <dd>
 <p>Specifies a value of type LONG containing the minimum focal length of the lens closest to the camera subject.</p>
 </dd>
 
-### -field <b>lObjectiveFocalLengthMax</b>
+### -field lObjectiveFocalLengthMax
 
 <dd>
 <p>Specifies a value of type LONG containing the maximum focal length of the lens closest to the camera subject.</p>

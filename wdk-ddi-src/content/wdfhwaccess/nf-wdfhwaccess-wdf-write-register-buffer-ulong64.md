@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_register_buffer_ulong64.htm
 old-project: wdf
 ms.assetid: 56DF217B-47AA-4D78-A7CC-0C50880AF7AF
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WRITE_REGISTER_BUFFER_ULONG64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ void WDF_WRITE_REGISTER_BUFFER_ULONG64(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>A pointer to the register, which must be a mapped range in memory space.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to a buffer into which an array of ULONG64 values is to be written.</p>
 </dd>
 
-### -param <i>Count </i> [in]
+### -param Count  [in]
 
 <dd>
 <p>Specifies the number of ULONG64 values to write to the register.</p>

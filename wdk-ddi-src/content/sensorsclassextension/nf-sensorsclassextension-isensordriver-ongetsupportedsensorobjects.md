@@ -7,7 +7,7 @@ old-location: sensors\isensordriver_ongetsupportedsensorobjects.htm
 old-project: sensors
 ms.assetid: a8ea63cf-24ba-467b-9c27-ab8e38be1c04
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorDriver, OnGetSupportedSensorObjects, ISensorDriver::OnGetSupportedSensorObjects
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT OnGetSupportedSensorObjects(
 ## -parameters
 <dl>
 
-### -param <i>ppSensorObjectCollection</i> 
+### -param ppSensorObjectCollection 
 
 <dd>
 <p>Address of an IPortableDeviceValuesCollection pointer that receives the list of sensors.</p>

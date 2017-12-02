@@ -63,37 +63,37 @@ NTSTATUS ClfsReadLogRecord(
 ## -parameters
 <dl>
 
-### -param <i>pvMarshalContext</i> [in]
+### -param pvMarshalContext [in]
 
 <dd>
 <p>A pointer to an opaque context that represents a marshalling area. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.</p>
 </dd>
 
-### -param <i>plsnFirst</i> [in, out]
+### -param plsnFirst [in, out]
 
 <dd>
 <p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that supplies the LSN of the target record in the log.</p>
 </dd>
 
-### -param <i>peContextMode</i> [in]
+### -param peContextMode [in]
 
 <dd>
 <p>A value from the <a href="..\wdm\ne-wdm--clfs-context-mode.md">CLFS_CONTEXT_MODE</a> enumeration that specifies the initial mode (ClfsContextUndoNext, ClfsContextPrevious, or ClfsContextForward) of the read context returned in <i>ppvReadContext</i>.</p>
 </dd>
 
-### -param <i>ppvReadBuffer</i> [out]
+### -param ppvReadBuffer [out]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to the data buffer of the target record.</p>
 </dd>
 
-### -param <i>pcbReadBuffer</i> [out]
+### -param pcbReadBuffer [out]
 
 <dd>
 <p>A pointer to a ULONG-typed variable that receives the size, in bytes, of the buffer pointed to by *<i>ppvReadBuffer</i>. This is the length of the data buffer of the target record.</p>
 </dd>
 
-### -param <i>peRecordType</i> [out]
+### -param peRecordType [out]
 
 <dd>
 <p>A pointer to a variable of type CLFS_RECORD_TYPE that receives one of the following values.</p>
@@ -122,19 +122,19 @@ NTSTATUS ClfsReadLogRecord(
 <p> </p>
 </dd>
 
-### -param <i>plsnUndoNext</i> [out]
+### -param plsnUndoNext [out]
 
 <dd>
 <p>A pointer to a <b>CLFS_LSN</b> structure that receives the undo-next LSN of the target record.</p>
 </dd>
 
-### -param <i>plsnPrevious</i> [out]
+### -param plsnPrevious [out]
 
 <dd>
 <p>A pointer to a <b>CLFS_LSN</b> structure that receives the previous LSN of the target record.</p>
 </dd>
 
-### -param <i>ppvReadContext</i> [out]
+### -param ppvReadContext [out]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to an opaque read context. The client repeatedly passes this context to  <a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a> to read the remaining records in a sequence. After the client has read all the records in the sequence, it calls <a href="..\wdm\nf-wdm-clfsterminatereadlog.md">ClfsTerminateReadLog</a> to free the read context.</p>

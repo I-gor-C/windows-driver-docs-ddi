@@ -7,7 +7,7 @@ old-location: netvista\ndis_hd_split_current_config.htm
 old-project: netvista
 ms.assetid: 866fe9e6-0cb1-45cd-84b4-4e2df9c9c45a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_HD_SPLIT_CURRENT_CONFIG, NDIS_HD_SPLIT_CURRENT_CONFIG, *PNDIS_HD_SPLIT_CURRENT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct _NDIS_HD_SPLIT_CURRENT_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -73,7 +73,7 @@ typedef struct _NDIS_HD_SPLIT_CURRENT_CONFIG {
      <b>Size</b> member to NDIS_SIZEOF_HD_SPLIT_CURRENT_CONFIG_REVISION_1.</p>
 </dd>
 
-### -field <b>HardwareCapabilities</b>
+### -field HardwareCapabilities
 
 <dd>
 <p>The header-data split hardware capabilities that the miniport adapter supports. These capabilities
@@ -84,14 +84,14 @@ typedef struct _NDIS_HD_SPLIT_CURRENT_CONFIG {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_HD_SPLIT_CAPS_SUPPORTS_HEADER_DATA_SPLIT"></a><a id="ndis_hd_split_caps_supports_header_data_split"></a>NDIS_HD_SPLIT_CAPS_SUPPORTS_HEADER_DATA_SPLIT
+### -field NDIS_HD_SPLIT_CAPS_SUPPORTS_HEADER_DATA_SPLIT
 
 <dd>
 <p>The miniport adapter can split the header and data into separate memory descriptor lists (MDLs)
        that meet the requirements for header-data split support.</p>
 </dd>
 
-### -field <a id="NDIS_HD_SPLIT_CAPS_SUPPORTS_IPV4_OPTIONS"></a><a id="ndis_hd_split_caps_supports_ipv4_options"></a>NDIS_HD_SPLIT_CAPS_SUPPORTS_IPV4_OPTIONS
+### -field NDIS_HD_SPLIT_CAPS_SUPPORTS_IPV4_OPTIONS
 
 <dd>
 <p>The miniport adapter can split IPv4 Ethernet frames that include IPv4 options. The miniport
@@ -103,7 +103,7 @@ typedef struct _NDIS_HD_SPLIT_CURRENT_CONFIG {
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_HD_SPLIT_CAPS_SUPPORTS_IPV6_EXTENSION_HEADERS"></a><a id="ndis_hd_split_caps_supports_ipv6_extension_headers"></a>NDIS_HD_SPLIT_CAPS_SUPPORTS_IPV6_EXTENSION_HEADERS
+### -field NDIS_HD_SPLIT_CAPS_SUPPORTS_IPV6_EXTENSION_HEADERS
 
 <dd>
 <p>The miniport adapter can split IPv6 Ethernet frames that include IPv6 extension headers. The
@@ -115,7 +115,7 @@ typedef struct _NDIS_HD_SPLIT_CURRENT_CONFIG {
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_HD_SPLIT_CAPS_SUPPORTS_TCP_OPTIONS"></a><a id="ndis_hd_split_caps_supports_tcp_options"></a>NDIS_HD_SPLIT_CAPS_SUPPORTS_TCP_OPTIONS
+### -field NDIS_HD_SPLIT_CAPS_SUPPORTS_TCP_OPTIONS
 
 <dd>
 <p>The miniport adapter can split TCP frames with other TCP options in addition to the timestamp
@@ -131,7 +131,7 @@ typedef struct _NDIS_HD_SPLIT_CURRENT_CONFIG {
 </dl>
 </dd>
 
-### -field <b>CurrentCapabilities</b>
+### -field CurrentCapabilities
 
 <dd>
 <p>The current header-data split capabilities that the miniport adapter supports. The miniport driver
@@ -140,7 +140,7 @@ typedef struct _NDIS_HD_SPLIT_CURRENT_CONFIG {
      that depend on the current configuration settings.</p>
 </dd>
 
-### -field <b>HDSplitFlags</b>
+### -field HDSplitFlags
 
 <dd>
 <p>A set of flags that reports the status of header-data split for a miniport adapter. NDIS sets this
@@ -149,7 +149,7 @@ typedef struct _NDIS_HD_SPLIT_CURRENT_CONFIG {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_HD_SPLIT_ENABLE_HEADER_DATA_SPLIT"></a><a id="ndis_hd_split_enable_header_data_split"></a>NDIS_HD_SPLIT_ENABLE_HEADER_DATA_SPLIT
+### -field NDIS_HD_SPLIT_ENABLE_HEADER_DATA_SPLIT
 
 <dd>
 <p>The miniport driver has enabled header-data split in the hardware. Otherwise, header-data split
@@ -158,7 +158,7 @@ typedef struct _NDIS_HD_SPLIT_CURRENT_CONFIG {
 </dl>
 </dd>
 
-### -field <b>HDSplitCombineFlags</b>
+### -field HDSplitCombineFlags
 
 <dd>
 <p>A set of flags that specify the current header-data split settings of a miniport adapter. The
@@ -168,7 +168,7 @@ typedef struct _NDIS_HD_SPLIT_CURRENT_CONFIG {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_HD_SPLIT_COMBINE_ALL_HEADERS"></a><a id="ndis_hd_split_combine_all_headers"></a>NDIS_HD_SPLIT_COMBINE_ALL_HEADERS
+### -field NDIS_HD_SPLIT_COMBINE_ALL_HEADERS
 
 <dd>
 <p>The miniport adapter is combining split frames. If header-data split is enabled in the hardware,
@@ -177,14 +177,14 @@ typedef struct _NDIS_HD_SPLIT_CURRENT_CONFIG {
 </dl>
 </dd>
 
-### -field <b>BackfillSize</b>
+### -field BackfillSize
 
 <dd>
 <p>The backfill size, in bytes, that the miniport driver is using for the data portion of a split
      frame.</p>
 </dd>
 
-### -field <b>MaxHeaderSize</b>
+### -field MaxHeaderSize
 
 <dd>
 <p>The maximum size, in bytes, that the miniport driver is using for the header portion of a split
@@ -242,4 +242,4 @@ typedef struct _NDIS_HD_SPLIT_CURRENT_CONFIG {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_HD_SPLIT_CURRENT_CONFIG structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_HD_SPLIT_CURRENT_CONFIG structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

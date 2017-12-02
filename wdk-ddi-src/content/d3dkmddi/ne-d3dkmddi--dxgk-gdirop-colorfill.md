@@ -61,49 +61,49 @@ typedef enum _DXGK_GDIROP_COLORFILL {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_GDIROPCF_INVALID"></a><a id="dxgk_gdiropcf_invalid"></a><b>DXGK_GDIROPCF_INVALID</b>
+### -field DXGK_GDIROPCF_INVALID
 
 <dd>
 <p>Indicates that the GDI raster operation is invalid.</p>
 </dd>
 
-### -field <a id="DXGK_GDIROPCF_PATCOPY"></a><a id="dxgk_gdiropcf_patcopy"></a><b>DXGK_GDIROPCF_PATCOPY</b>
+### -field DXGK_GDIROPCF_PATCOPY
 
 <dd>
 <p>Indicates that the specified color is copied into all pixels of the destination rectangle.</p>
 </dd>
 
-### -field <a id="DXGK_GDIROPCF_PATINVERT"></a><a id="dxgk_gdiropcf_patinvert"></a><b>DXGK_GDIROPCF_PATINVERT</b>
+### -field DXGK_GDIROPCF_PATINVERT
 
 <dd>
 <p>Indicates that the specified color is combined with the colors of the destination rectangle by using the Boolean <b>XOR</b> operator.</p>
 </dd>
 
-### -field <a id="DXGK_GDIROPCF_PDXN"></a><a id="dxgk_gdiropcf_pdxn"></a><b>DXGK_GDIROPCF_PDXN</b>
+### -field DXGK_GDIROPCF_PDXN
 
 <dd>
 <p>Indicates that the specified color is combined with the colors of the destination rectangle by using the Boolean <b>NOT(XOR)</b> operator.</p>
 </dd>
 
-### -field <a id="DXGK_GDIROPCF_DSTINVERT"></a><a id="dxgk_gdiropcf_dstinvert"></a><b>DXGK_GDIROPCF_DSTINVERT</b>
+### -field DXGK_GDIROPCF_DSTINVERT
 
 <dd>
 <p>Indicates that the destination rectangle is inverted.</p>
 </dd>
 
-### -field <a id="DXGK_GDIROPCF_PATAND"></a><a id="dxgk_gdiropcf_patand"></a><b>DXGK_GDIROPCF_PATAND</b>
+### -field DXGK_GDIROPCF_PATAND
 
 <dd>
 <p>Indicates that the specified color is combined with the colors of the destination rectangle by using the Boolean <b>AND</b> operator.</p>
 </dd>
 
-### -field <a id="DXGK_GDIROPCF_PATOR"></a><a id="dxgk_gdiropcf_pator"></a><b>DXGK_GDIROPCF_PATOR</b>
+### -field DXGK_GDIROPCF_PATOR
 
 <dd>
 <p>Indicates that the colors of the specified pattern are combined with the colors of the destination rectangle by using the Boolean <b>OR</b> operator.</p>
 </dd>
 
-### -field <a id="DXGK_GDIROPCF_ROP3"></a><a id="dxgk_gdiropcf_rop3"></a><b>DXGK_GDIROPCF_ROP3</b>
+### -field DXGK_GDIROPCF_ROP3
 
 <dd>
 <p>Indicates that a ternary GDI raster operation (ROP3) will be applied.</p>

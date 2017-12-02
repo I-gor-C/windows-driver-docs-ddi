@@ -59,13 +59,13 @@ VOID IoSetShareAccessEx(
 ## -parameters
 <dl>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the type of access requested for the file object. See <a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a> for a complete list of system-defined <i>DesiredAccess</i> flags.</p>
 </dd>
 
-### -param <i>DesiredShareAccess</i> [in]
+### -param DesiredShareAccess [in]
 
 <dd>
 <p>Specifies the type of share access to be set for the file object. This value can be zero, or any combination of the following flags:</p>
@@ -82,19 +82,19 @@ VOID IoSetShareAccessEx(
 </dl>
 </dd>
 
-### -param <i>FileObject</i> [in, out]
+### -param FileObject [in, out]
 
 <dd>
 <p>A pointer to the file object whose share access is being set or reset.</p>
 </dd>
 
-### -param <i>ShareAccess</i> [out]
+### -param ShareAccess [out]
 
 <dd>
 <p>A pointer to the <b>SHARE_ACCESS</b> structure that is associated with <i>FileObject</i>. Drivers should treat this structure as opaque.</p>
 </dd>
 
-### -param <i>WritePermission </i> [in, optional]
+### -param WritePermission  [in, optional]
 
 <dd>
 <p>A pointer to the value that specifies whether the file object has write permission. This value is <b>TRUE</b> if the share has write permission; otherwise, it is <b>FALSE</b>. If  the value is <b>FALSE</b>  and the caller attempts to take exclusive read access, the write permission is downgraded to FILE_SHARE_READ.</p>

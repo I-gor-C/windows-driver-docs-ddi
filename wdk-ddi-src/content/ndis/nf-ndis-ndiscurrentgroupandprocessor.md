@@ -7,7 +7,7 @@ old-location: netvista\ndiscurrentgroupandprocessor.htm
 old-project: netvista
 ms.assetid: 056f7f4b-152b-426a-b59e-0f6663b386a8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisCurrentGroupAndProcessor
 ms.prod: windows-hardware
 ms.technology: windows-devices

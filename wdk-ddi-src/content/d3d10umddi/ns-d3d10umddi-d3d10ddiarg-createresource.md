@@ -65,74 +65,74 @@ typedef struct D3D10DDIARG_CREATERESOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>pMipInfoList</b>
+### -field pMipInfoList
 
 <dd>
 <p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-mipinfo.md">D3D10DDI_MIPINFO</a> structures that contains dimensions for MIP levels. For resource formats where a single pixel or texel cannot be referenced directly with a byte address, the dimensions of the physical resource are typically larger or equal to the texel dimensions, in order to satisfy the necessary space requirements. For example, to create a fully mipped BC1 Texture2D, where the most detailed level is 8x8, the <b>pMipInfoList</b> array is:  { { 8, 8, 1, 8, 8, 1 }, { 4, 4, 1, 4, 4, 1 }, { 2, 2, 1, 4, 4, 1 }, { 1, 1, 1, 4, 4, 1 } }.</p>
 </dd>
 
-### -field <b>pInitialDataUP</b>
+### -field pInitialDataUP
 
 <dd>
 <p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddiarg-subresource-up.md">D3D10_DDIARG_SUBRESOURCE_UP</a> structures that provides initialization information for the resource's list of subresources.</p>
 </dd>
 
-### -field <b>ResourceDimension</b>
+### -field ResourceDimension
 
 <dd>
 <p>[in] A value of type <a href="display.d3d10ddiresource_type">D3D10DDIRESOURCE_TYPE</a> that indicates the resource type and dimensionality.</p>
 </dd>
 
-### -field <b>Usage</b>
+### -field Usage
 
 <dd>
 <p>[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-usage.md">D3D10_DDI_RESOURCE_USAGE</a> that indicates how the resource is used.</p>
 </dd>
 
-### -field <b>BindFlags</b>
+### -field BindFlags
 
 <dd>
 <p>[in] A valid bitwise OR of <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-bind-flag.md">D3D10_DDI_RESOURCE_BIND_FLAG</a> values that indicates how the resource is bound.</p>
 </dd>
 
-### -field <b>MapFlags</b>
+### -field MapFlags
 
 <dd>
 <p>[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-map.md">D3D10_DDI_MAP</a> that indicates the access level to map to the resource.</p>
 </dd>
 
-### -field <b>MiscFlags</b>
+### -field MiscFlags
 
 <dd>
 <p>[in] A valid bitwise OR of <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-misc-flag.md">D3D10_DDI_RESOURCE_MISC_FLAG</a> values that indicates miscellaneous information about the resource.</p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>[in] A value of type <a href="direct3ddxgi.dxgi_format">DXGI_FORMAT</a> that indicates the pixel format of the resource.</p>
 </dd>
 
-### -field <b>SampleDesc</b>
+### -field SampleDesc
 
 <dd>
 <p>[in] A value of type <a href="direct3ddxgi.dxgi_sample_desc">DXGI_SAMPLE_DESC</a> that describes the sample count and quality of the resource.</p>
 </dd>
 
-### -field <b>MipLevels</b>
+### -field MipLevels
 
 <dd>
 <p>[in] The number of MIP-map levels for the resource.</p>
 </dd>
 
-### -field <b>ArraySize</b>
+### -field ArraySize
 
 <dd>
 <p>[in] The number of array elements for a 2-D texture or 1-D texture. <b>ArraySize</b> must be set to 6 for a cube texture.</p>
 <p>Beginning in Windows 8, if the driver must create a stereo back buffer, it should set this member to a value of 2.</p>
 </dd>
 
-### -field <b>pPrimaryDesc</b>
+### -field pPrimaryDesc
 
 <dd>
 <p>[in, out] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-primary-desc.md">DXGI_DDI_PRIMARY_DESC</a> structure that describes a resource that is used as a primary.</p>

@@ -56,7 +56,7 @@ NTSTATUS  D3DKMTDestroyProtectedSession(
 ## -parameters
 <dl>
 
-### -param <i>D3dkmt_destroyprotectedsession</i> [in, out]
+### -param D3dkmt_destroyprotectedsession [in, out]
 
 <dd>
 <p>Holds information to destroy a protected session.</p>

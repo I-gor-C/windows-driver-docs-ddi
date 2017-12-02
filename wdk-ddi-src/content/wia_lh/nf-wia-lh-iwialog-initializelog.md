@@ -7,7 +7,7 @@ old-location: image\iwialog_initializelog.htm
 old-project: image
 ms.assetid: ef637329-a291-445b-8ac7-6e55d5d7931e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IWiaLog, InitializeLog, IWiaLog::InitializeLog
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ HRESULT InitializeLog(
 ## -parameters
 <dl>
 
-### -param <i>hInstance</i> [in]
+### -param hInstance [in]
 
 <dd>
 <p>Specifies the module handle. This parameter indicates which module is calling the method.</p>

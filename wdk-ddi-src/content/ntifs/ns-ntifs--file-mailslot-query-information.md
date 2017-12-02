@@ -7,7 +7,7 @@ old-location: ifsk\file_mailslot_query_information.htm
 old-project: ifsk
 ms.assetid: 8e3b782a-fe8c-42e1-9786-5f89831b4c10
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILE_MAILSLOT_QUERY_INFORMATION, FILE_MAILSLOT_QUERY_INFORMATION, *PFILE_MAILSLOT_QUERY_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct _FILE_MAILSLOT_QUERY_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>MaximumMessageSize</b>
+### -field MaximumMessageSize
 
 <dd>
 <p>
@@ -66,7 +66,7 @@ The maximum size, in bytes, of a single message that can be written to the mails
 </p>
 </dd>
 
-### -field <b>MailslotQuota</b>
+### -field MailslotQuota
 
 <dd>
 <p>
@@ -74,14 +74,14 @@ The size, in bytes, of the in-memory pool that is reserved for writes to this ma
 </p>
 </dd>
 
-### -field <b>NextMessageSize</b>
+### -field NextMessageSize
 
 <dd>
 <p>The next message size, in bytes.
 </p>
 </dd>
 
-### -field <b>MessagesAvailable</b>
+### -field MessagesAvailable
 
 <dd>
 <p>
@@ -90,7 +90,7 @@ The total number of messages waiting to be read from the mailslot.
 </p>
 </dd>
 
-### -field <b>ReadTimeout</b>
+### -field ReadTimeout
 
 <dd>
 <p>  

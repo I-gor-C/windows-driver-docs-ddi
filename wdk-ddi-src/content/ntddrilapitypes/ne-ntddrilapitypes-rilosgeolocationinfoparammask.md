@@ -7,7 +7,7 @@ old-location: netvista\rilosgeolocationinfoparammask.htm
 old-project: netvista
 ms.assetid: 9a155a35-d0fc-45bd-94fb-16200bcab1a6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,67 +69,67 @@ typedef enum _RILOSGEOLOCATIONINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_SIZE"></a><a id="ril_param_osgeolocationinfo_size"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_SIZE</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_SIZE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_LATLONG"></a><a id="ril_param_osgeolocationinfo_latlong"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_LATLONG</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_LATLONG
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_ALTITUDE"></a><a id="ril_param_osgeolocationinfo_altitude"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_ALTITUDE</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_ALTITUDE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_ACCURACY"></a><a id="ril_param_osgeolocationinfo_accuracy"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_ACCURACY</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_ACCURACY
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_MASK"></a><a id="ril_param_osgeolocationinfo_mask"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_MASK</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_MASK
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_ADDRESS1"></a><a id="ril_param_osgeolocationinfo_address1"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_ADDRESS1</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_ADDRESS1
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_ADDRESS2"></a><a id="ril_param_osgeolocationinfo_address2"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_ADDRESS2</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_ADDRESS2
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_CITY"></a><a id="ril_param_osgeolocationinfo_city"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_CITY</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_CITY
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_STATE"></a><a id="ril_param_osgeolocationinfo_state"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_STATE</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_STATE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_COUNTRY"></a><a id="ril_param_osgeolocationinfo_country"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_COUNTRY</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_COUNTRY
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_POSTALCODE"></a><a id="ril_param_osgeolocationinfo_postalcode"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_POSTALCODE</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_POSTALCODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_COUNTRYCODE"></a><a id="ril_param_osgeolocationinfo_countrycode"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_COUNTRYCODE</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_COUNTRYCODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_REGIONCODE"></a><a id="ril_param_osgeolocationinfo_regioncode"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_REGIONCODE</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_REGIONCODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_FORMATTEDADDRESS"></a><a id="ril_param_osgeolocationinfo_formattedaddress"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_FORMATTEDADDRESS</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_FORMATTEDADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_TIMESTAMP"></a><a id="ril_param_osgeolocationinfo_timestamp"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_TIMESTAMP</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_TIMESTAMP
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OSGEOLOCATIONINFO_ALL"></a><a id="ril_param_osgeolocationinfo_all"></a><b>RIL_PARAM_OSGEOLOCATIONINFO_ALL</b>
+### -field RIL_PARAM_OSGEOLOCATIONINFO_ALL
 
 <dd></dd>
 </dl>

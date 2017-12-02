@@ -55,13 +55,13 @@ NTSTATUS NfcCxUnregisterSequenceHandler(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> 
+### -param Device 
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>Sequence</i> 
+### -param Sequence 
 
 <dd>
 <p>An <a href="..\nfccx\ne-nfccx--nfc-cx-sequence.md">NFC_CX_SEQUENCE</a>-typed enumerator.</p>

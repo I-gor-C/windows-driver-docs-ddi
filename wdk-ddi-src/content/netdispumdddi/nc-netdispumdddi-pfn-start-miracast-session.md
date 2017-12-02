@@ -60,14 +60,14 @@ NTSTATUS StartMiracastSession(
 ## -parameters
 <dl>
 
-### -param <i>pMiracastContext</i> [in]
+### -param pMiracastContext [in]
 
 <dd>
 <p>A pointer to a context associated with a display adapter.</p>
 <p>The operating system obtained the context when it called the Miracast user-mode driver's <a href="..\netdispumdddi\nc-netdispumdddi-pfn-create-miracast-context.md">CreateMiracastContext</a> function.</p>
 </dd>
 
-### -param <i>MiracastRTSPSocket</i> [in]
+### -param MiracastRTSPSocket [in]
 
 <dd>
 <p>The operating system-supplied network socket handle of the Real Time Streaming Protocol (RTSP). </p>
@@ -75,13 +75,13 @@ NTSTATUS StartMiracastSession(
 <div> </div>
 </dd>
 
-### -param <i>pWfdConnectionStats</i> [in]
+### -param pWfdConnectionStats [in]
 
 <dd>
 <p>A pointer to a <a href="..\netdispumdddi\ns-netdispumdddi-miracast-wfd-connection-stats.md">MIRACAST_WFD_CONNECTION_STATS</a> structure that indicates the Wi-Fi Direct connection statistics.</p>
 </dd>
 
-### -param <i>pSessionInfo</i> [out]
+### -param pSessionInfo [out]
 
 <dd>
 <p>A pointer to a <a href="..\netdispumdddi\ns-netdispumdddi-miracast-session-info.md">MIRACAST_SESSION_INFO</a> structure that the Miracast user-mode driver should complete after it has obtained the capabilities of the Miracast sink.</p>

@@ -58,25 +58,25 @@ typedef struct _IO_RESOURCE_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of this structure. This value should be 1.</p>
 </dd>
 
-### -field <b>Revision</b>
+### -field Revision
 
 <dd>
 <p>The revision of this structure. This value should be 1.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>The number of elements in the <b>Descriptors</b> array.</p>
 </dd>
 
-### -field <b>Descriptors</b>
+### -field Descriptors
 
 <dd>
 <p>The first element in an array of one or more <a href="..\wdm\ns-wdm--io-resource-descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structures.</p>

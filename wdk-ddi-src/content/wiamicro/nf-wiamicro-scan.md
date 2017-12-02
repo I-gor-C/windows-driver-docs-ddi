@@ -7,7 +7,7 @@ old-location: image\scan.htm
 old-project: image
 ms.assetid: 057b548a-d9e4-4db4-b34f-d867b7be3971
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: Scan
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ WIAMICRO_API HRESULT Scan(
 ## -parameters
 <dl>
 
-### -param <i>pScanInfo</i> [in, out]
+### -param pScanInfo [in, out]
 
 <dd>
 <p>Specifies the <a href="..\wiamicro\ns-wiamicro--scaninfo.md">SCANINFO</a> structure that represents the microdriver's settings. This is stored by the WIA Flatbed driver to guarantee that the settings between the microdriver and the WIA Flatbed driver are synchronized. </p>
 </dd>
 
-### -param <i>lPhase</i> 
+### -param lPhase 
 
 <dd>
 <p>Specifies the scan phase requested. This parameter can be set to one of the following values.</p>
@@ -103,19 +103,19 @@ WIAMICRO_API HRESULT Scan(
 <p> </p>
 </dd>
 
-### -param <i>pBuffer</i> [out]
+### -param pBuffer [out]
 
 <dd>
 <p>Specifies the buffer that will be filled with scanned data by the microdriver. This buffer is allocated by the WIA Flatbed Driver and is guaranteed to be at least <i>lLength</i> bytes in length.</p>
 </dd>
 
-### -param <i>lLength</i> 
+### -param lLength 
 
 <dd>
 <p>Specifies the requested amount of data that will be scanned. The microdriver must never overfill the buffer pointed to by <i>pBuffer</i>.</p>
 </dd>
 
-### -param <i>pReceived</i> [out]
+### -param pReceived [out]
 
 <dd>
 <p>Specifies the amount of data actually scanned into <i>pBuffer</i>. This value should never exceed the value of <i>lLength</i>, but can be less.</p>
@@ -194,4 +194,4 @@ WIAMICRO_API HRESULT Scan(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20Scan function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20Scan function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

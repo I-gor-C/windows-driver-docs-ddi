@@ -56,13 +56,13 @@ NTSTATUS PoFxRegisterPluginEx(
 ## -parameters
 <dl>
 
-### -param <i>PepInformation</i> [in]
+### -param PepInformation [in]
 
 <dd>
 <p>A pointer to a <a href="..\pepfx\ns-pepfx--pep-information.md">PEP_INFORMATION</a> structure that contains pointers to one or more callback routines that are implemented by the PEP. These routines handle notifications that are sent to the PEP by PoFx.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A set of flag bits for configuring the PEP interface. Set this member to zero or to the following value.</p>
@@ -79,7 +79,7 @@ NTSTATUS PoFxRegisterPluginEx(
 <p> </p>
 </dd>
 
-### -param <i>KernelInformation</i> [in, out]
+### -param KernelInformation [in, out]
 
 <dd>
 <p>A pointer to a <a href="kernel.pep_kernel_information">PEP_KERNEL_INFORMATION</a> structure.</p>

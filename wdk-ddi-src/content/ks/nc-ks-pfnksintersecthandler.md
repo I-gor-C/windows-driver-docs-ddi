@@ -60,25 +60,25 @@ NTSTATUS KStrIntersectHandler(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP that handles the property request.</p>
 </dd>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>Specifies the specific property being queried and the pin factory identifier that was validated.</p>
 </dd>
 
-### -param <i>DataRange</i> [in]
+### -param DataRange [in]
 
 <dd>
 <p>Specifies the current data range to compare. The data range has been validated as either matching a particular range on the pin or as a wildcard match.</p>
 </dd>
 
-### -param <i>Data</i> [out, optional]
+### -param Data [out, optional]
 
 <dd>
 <p>Specifies the data format returned, or the size, in bytes, of the data format.</p>

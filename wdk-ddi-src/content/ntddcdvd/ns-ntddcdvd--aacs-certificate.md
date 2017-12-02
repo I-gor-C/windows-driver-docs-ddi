@@ -55,13 +55,13 @@ typedef struct _AACS_CERTIFICATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Nonce</b>
+### -field Nonce
 
 <dd>
 <p>A cryptographically random 160-bit nonce value.</p>
 </dd>
 
-### -field <b>Certificate</b>
+### -field Certificate
 
 <dd>
 <p>A 92-byte certificate.</p>

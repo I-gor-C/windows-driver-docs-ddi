@@ -7,7 +7,7 @@ old-location: netvista\rilpersodeactivationstatedepersostate.htm
 old-project: netvista
 ms.assetid: 81147a47-b5aa-4f00-812d-2c6cf9d5ab8b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILPERSODEACTIVATIONSTATEDEPERSOSTATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DEPERSOSTATE_CK_REQUIRED"></a><a id="ril_depersostate_ck_required"></a><b>RIL_DEPERSOSTATE_CK_REQUIRED</b>
+### -field RIL_DEPERSOSTATE_CK_REQUIRED
 
 <dd></dd>
 
-### -field <a id="RIL_DEPERSOSTATE_PUK_REQUIRED"></a><a id="ril_depersostate_puk_required"></a><b>RIL_DEPERSOSTATE_PUK_REQUIRED</b>
+### -field RIL_DEPERSOSTATE_PUK_REQUIRED
 
 <dd></dd>
 
-### -field <a id="RIL_DEPERSOSTATE_PUK_BLOCKED"></a><a id="ril_depersostate_puk_blocked"></a><b>RIL_DEPERSOSTATE_PUK_BLOCKED</b>
+### -field RIL_DEPERSOSTATE_PUK_BLOCKED
 
 <dd></dd>
 
-### -field <a id="RIL_DEPERSOSTATE_MAX"></a><a id="ril_depersostate_max"></a><b>RIL_DEPERSOSTATE_MAX</b>
+### -field RIL_DEPERSOSTATE_MAX
 
 <dd></dd>
 </dl>

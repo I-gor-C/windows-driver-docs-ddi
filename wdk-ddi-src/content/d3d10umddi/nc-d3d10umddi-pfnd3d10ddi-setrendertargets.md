@@ -61,32 +61,32 @@ VOID APIENTRY SetRenderTargets(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>phRenderTargetView</i> [in]
+### -param phRenderTargetView [in]
 
 <dd>
 <p> An array of handles to the render target view objects to set. Note that some handle values can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>RTargets</i> [in]
+### -param RTargets [in]
 
 <dd>
 <p> The number of elements in the array that <i>phRenderTargetView</i> specifies. </p>
 </dd>
 
-### -param <i>ClearTargets</i> [in]
+### -param ClearTargets [in]
 
 <dd>
 <p> The number of render target slots after the number of slots that <i>RTargets </i>specifies to be set to <b>NULL</b>. This number represents the difference between the previous number of render target view objects (that is, when the Microsoft Direct3D runtime previously called <i>SetRenderTargets</i>) and the new number of render target view objects. </p>
 <p>Note that the number that <i>ClearTargets</i> specifies is only an optimization aid because the user-mode display driver could calculate this number. </p>
 </dd>
 
-### -param <i>hDepthStencilView</i> [in]
+### -param hDepthStencilView [in]
 
 <dd>
 <p> A handle to the depth stencil buffer to set. </p>

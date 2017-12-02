@@ -58,13 +58,13 @@ VP_STATUS VideoPortCreateEvent(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>EventFlag</i> [in]
+### -param EventFlag [in]
 
 <dd>
 <p>Specifies the event type and initial event state. This can be an ORed combination of the following flags:</p>
@@ -93,13 +93,13 @@ VP_STATUS VideoPortCreateEvent(
 <p> </p>
 </dd>
 
-### -param <i>Unused</i> [in]
+### -param Unused [in]
 
 <dd>
 <p>Is currently ignored by the video port driver and must be set to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ppEvent</i> [out]
+### -param ppEvent [out]
 
 <dd>
 <p>Pointer to the memory location at which a pointer to the event object will be returned.</p>

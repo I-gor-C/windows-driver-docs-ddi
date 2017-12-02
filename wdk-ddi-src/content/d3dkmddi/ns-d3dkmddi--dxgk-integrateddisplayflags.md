@@ -59,7 +59,7 @@ typedef union _DXGK_INTEGRATEDDISPLAYFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>UndockedOrientation</b>
+### -field UndockedOrientation
 
 <dd>
 <p>Orientation of the integrated panel when the system is undocked.  
@@ -67,7 +67,7 @@ In most systems, the integrated panel is installed such that the native orientat
 </p>
 </dd>
 
-### -field <b>DockedOrientation</b>
+### -field DockedOrientation
 
 <dd>
 <p>Orientation of the integrated panel when the system is docked.  If the system does not support docking, this value will not be used.
@@ -76,13 +76,13 @@ In most systems, the integrated panel is installed such that the native orientat
 </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>UINT used to operate on the combined bit-fields.</p>

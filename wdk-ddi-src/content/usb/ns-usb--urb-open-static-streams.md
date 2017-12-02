@@ -61,14 +61,14 @@ struct _URB_OPEN_STATIC_STREAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>Hdr</b>
+### -field Hdr
 
 <dd>
 <p>The <a href="buses._urb_header">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_OPEN_STATIC_STREAMS, and <b>Hdr.Length</b> must be <code>sizeof(_URB_OPEN_STATIC_STREAMS)</code>.
 </p>
 </dd>
 
-### -field <b>PipeHandle</b>
+### -field PipeHandle
 
 <dd>
 <p>An opaque handle for the pipe associated with the endpoint that supports the streams to open.
@@ -76,26 +76,26 @@ struct _URB_OPEN_STATIC_STREAMS {
 The client driver obtains <b>PipeHandle</b> from the    URB_FUNCTION_SELECT_CONFIGURATION or URB_FUNCTION_SELECT_INTERFACE request. </p>
 </dd>
 
-### -field <b>NumberOfStreams</b>
+### -field NumberOfStreams
 
 <dd>
 <p>The number of streams to open. The <b>NumberOfStreams</b> value indicates the number of elements in the array pointed to by <b>Streams</b>. This value must be greater than zero and less than or equal to the maximum number of streams supported by the USB driver stack, the host controller, and the endpoint in the device. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>StreamInfoVersion</b>
+### -field StreamInfoVersion
 
 <dd>
 <p>Version of the <a href="..\usb\ns-usb--usbd-stream-information.md">USBD_STREAM_INFORMATION</a> structure.  Must be set to URB_OPEN_STATIC_STREAMS_VERSION_100; otherwise, the request fails and the URB status is  USBD_STATUS_INVALID_PARAMETER.</p>
 </dd>
 
-### -field <b>StreamInfoSize</b>
+### -field StreamInfoSize
 
 <dd>
 <p>Size of the <a href="..\usb\ns-usb--usbd-stream-information.md">USBD_STREAM_INFORMATION</a> structure.  <b>StreamInfoSize</b> must be <code>sizeof(USBD_STREAM_INFORMATION)</code>;
 otherwise, the request fails and the URB status is  USBD_STATUS_INFO_LENGTH_MISMATCH.  </p>
 </dd>
 
-### -field <b>Streams</b>
+### -field Streams
 
 <dd>
 <p>Pointer to a caller-allocated, initialized array of <a href="..\usb\ns-usb--usbd-stream-information.md">USBD_STREAM_INFORMATION</a> structures. The length of the array depends on the number of streams to open and must be the same as the <b>NumberOfStreams</b> value.   For more information, see Remarks. 

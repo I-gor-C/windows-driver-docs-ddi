@@ -60,25 +60,25 @@ NTSTATUS ZwSetValueKey(
 ## -parameters
 <dl>
 
-### -param <i>KeyHandle</i> [in]
+### -param KeyHandle [in]
 
 <dd>
 <p>Handle to the registry key to write a value entry for. This handle is created by a successful call to <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> or <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>. </p>
 </dd>
 
-### -param <i>ValueName</i> [in]
+### -param ValueName [in]
 
 <dd>
 <p>Pointer to the name of the value entry for which the data is to be written. This parameter can be a <b>NULL</b> pointer if the value entry has no name. If a name string is specified and the given name is not unique relative to its containing key, the data for an existing value entry is replaced.</p>
 </dd>
 
-### -param <i>TitleIndex</i> [in, optional]
+### -param TitleIndex [in, optional]
 
 <dd>
 <p>This parameter is reserved. Device and intermediate drivers should set this parameter to zero.</p>
 </dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>One of the following system-defined types of data to write.</p>
@@ -189,13 +189,13 @@ NTSTATUS ZwSetValueKey(
 <div> </div>
 </dd>
 
-### -param <i>Data</i> [in, optional]
+### -param Data [in, optional]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that contains the data for the value entry.</p>
 </dd>
 
-### -param <i>DataSize</i> [in]
+### -param DataSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the <i>Data</i> buffer. If <i>Type</i> is REG_<i>XXX</i>_SZ, this value must include space for any terminating zeros. </p>

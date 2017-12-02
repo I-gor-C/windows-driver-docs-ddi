@@ -7,7 +7,7 @@ old-location: netvista\rilradioconfigurationradiotype_2.htm
 old-project: netvista
 ms.assetid: 5ac7d462-53bb-4540-8889-f2f6c71d4823
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,47 +65,47 @@ typedef enum _RILRADIOCONFIGURATIONRADIOTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_RADIOTYPE_SINGLE"></a><a id="ril_radiotype_single"></a><b>RIL_RADIOTYPE_SINGLE</b>
+### -field RIL_RADIOTYPE_SINGLE
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOTYPE_MULTIMODE"></a><a id="ril_radiotype_multimode"></a><b>RIL_RADIOTYPE_MULTIMODE</b>
+### -field RIL_RADIOTYPE_MULTIMODE
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOTYPE_1XCSFB"></a><a id="ril_radiotype_1xcsfb"></a><b>RIL_RADIOTYPE_1XCSFB</b>
+### -field RIL_RADIOTYPE_1XCSFB
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOTYPE_SVLTE"></a><a id="ril_radiotype_svlte"></a><b>RIL_RADIOTYPE_SVLTE</b>
+### -field RIL_RADIOTYPE_SVLTE
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOTYPE_DUALSTANDBY"></a><a id="ril_radiotype_dualstandby"></a><b>RIL_RADIOTYPE_DUALSTANDBY</b>
+### -field RIL_RADIOTYPE_DUALSTANDBY
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOTYPE_DUALACTIVE"></a><a id="ril_radiotype_dualactive"></a><b>RIL_RADIOTYPE_DUALACTIVE</b>
+### -field RIL_RADIOTYPE_DUALACTIVE
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOTYPE_SGLTE"></a><a id="ril_radiotype_sglte"></a><b>RIL_RADIOTYPE_SGLTE</b>
+### -field RIL_RADIOTYPE_SGLTE
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOTYPE_SVLTE_DUALACTIVE"></a><a id="ril_radiotype_svlte_dualactive"></a><b>RIL_RADIOTYPE_SVLTE_DUALACTIVE</b>
+### -field RIL_RADIOTYPE_SVLTE_DUALACTIVE
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOTYPE_SGLTE_DUALACTIVE"></a><a id="ril_radiotype_sglte_dualactive"></a><b>RIL_RADIOTYPE_SGLTE_DUALACTIVE</b>
+### -field RIL_RADIOTYPE_SGLTE_DUALACTIVE
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOTYPE_SRLTE"></a><a id="ril_radiotype_srlte"></a><b>RIL_RADIOTYPE_SRLTE</b>
+### -field RIL_RADIOTYPE_SRLTE
 
 <dd></dd>
 
-### -field <a id="RIL_RADIOTYPE_MAX"></a><a id="ril_radiotype_max"></a><b>RIL_RADIOTYPE_MAX</b>
+### -field RIL_RADIOTYPE_MAX
 
 <dd></dd>
 </dl>

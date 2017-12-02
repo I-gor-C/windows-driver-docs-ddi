@@ -57,19 +57,19 @@ typedef enum _PO_FX_PERF_STATE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PoFxPerfStateTypeDiscrete"></a><a id="pofxperfstatetypediscrete"></a><a id="POFXPERFSTATETYPEDISCRETE"></a><b>PoFxPerfStateTypeDiscrete</b>
+### -field PoFxPerfStateTypeDiscrete
 
 <dd>
 <p>Indicates that the performance state set contains a discrete number of states.</p>
 </dd>
 
-### -field <a id="PoFxPerfStateTypeRange"></a><a id="pofxperfstatetyperange"></a><a id="POFXPERFSTATETYPERANGE"></a><b>PoFxPerfStateTypeRange</b>
+### -field PoFxPerfStateTypeRange
 
 <dd>
 <p>Indicates that the performance state set contains a continuous distribution of  states between a minimum and maximum value.</p>
 </dd>
 
-### -field <a id="PoFxPerfStateTypeMaximum"></a><a id="pofxperfstatetypemaximum"></a><a id="POFXPERFSTATETYPEMAXIMUM"></a><b>PoFxPerfStateTypeMaximum</b>
+### -field PoFxPerfStateTypeMaximum
 
 <dd>
 <p>This value is reserved for system use.</p>

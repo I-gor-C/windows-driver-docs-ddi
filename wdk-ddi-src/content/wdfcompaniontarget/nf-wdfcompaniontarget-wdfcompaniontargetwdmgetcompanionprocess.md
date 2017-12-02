@@ -7,7 +7,7 @@ old-location: wdf\wdfcompaniontargetwdmgetcompanionprocess.htm
 old-project: wdf
 ms.assetid: 589c5076-e283-4cf4-bd9f-52a465794b06
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfCompanionTargetWdmGetCompanionProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ PEPROCESS WdfCompanionTargetWdmGetCompanionProcess(
 ## -parameters
 <dl>
 
-### -param <i>CompanionTarget</i> [in]
+### -param CompanionTarget [in]
 
 <dd></dd>
 </dl>

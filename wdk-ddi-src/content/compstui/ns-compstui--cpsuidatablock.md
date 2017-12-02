@@ -55,13 +55,13 @@ typedef struct _CPSUIDATABLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>cbData</b>
+### -field cbData
 
 <dd>
 <p>Size, in bytes of the buffer pointed to by <b>pbData</b>.</p>
 </dd>
 
-### -field <b>pbData</b>
+### -field pbData
 
 <dd>
 <p>Pointer to a caller-allocated buffer.</p>

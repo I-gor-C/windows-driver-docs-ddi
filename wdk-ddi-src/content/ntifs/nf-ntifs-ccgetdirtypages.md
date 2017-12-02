@@ -7,7 +7,7 @@ old-location: ifsk\ccgetdirtypages.htm
 old-project: ifsk
 ms.assetid: 8ca0d683-318b-465c-95a7-dc2b5e29c9e7
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: CcGetDirtyPages
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ LARGE_INTEGER CcGetDirtyPages(
 ## -parameters
 <dl>
 
-### -param <i>LogHandle</i> [in]
+### -param LogHandle [in]
 
 <dd>
 <p>Log handle stored by a previous call to <b>CcSetLogHandleForFile</b>. </p>
 </dd>
 
-### -param <i>DirtyPageRoutine</i> [in]
+### -param DirtyPageRoutine [in]
 
 <dd>
 <p>Pointer to a callback routine that builds up a dirty page table from the pages found. This routine, which is called for each dirty page found, is declared as follows: </p>
@@ -89,43 +89,43 @@ VOID (*PDIRTY_PAGE_ROUTINE) (
 <p></p>
 <dl>
 
-### -param <a id="FileObject"></a><a id="fileobject"></a><a id="FILEOBJECT"></a><i>FileObject</i>
+### -param FileObject
 
 <dd>
 <p>Pointer to the file object for the file containing the dirty page. </p>
 </dd>
 
-### -param <a id="FileOffset"></a><a id="fileoffset"></a><a id="FILEOFFSET"></a><i>FileOffset</i>
+### -param FileOffset
 
 <dd>
 <p>Pointer to a variable that specifies the starting byte offset of the dirty page within the cached file. </p>
 </dd>
 
-### -param <a id="Length"></a><a id="length"></a><a id="LENGTH"></a><i>Length</i>
+### -param Length
 
 <dd>
 <p>Length, in bytes, of the dirty page. </p>
 </dd>
 
-### -param <a id="OldestLsn"></a><a id="oldestlsn"></a><a id="OLDESTLSN"></a><i>OldestLsn</i>
+### -param OldestLsn
 
 <dd>
 <p>Oldest logical sequence number (LSN) found in the dirty page. </p>
 </dd>
 
-### -param <a id="NewestLsn"></a><a id="newestlsn"></a><a id="NEWESTLSN"></a><i>NewestLsn</i>
+### -param NewestLsn
 
 <dd>
 <p>Newest LSN found in the dirty page. </p>
 </dd>
 
-### -param <a id="Context1"></a><a id="context1"></a><a id="CONTEXT1"></a><i>Context1</i>
+### -param Context1
 
 <dd>
 <p>First context parameter. </p>
 </dd>
 
-### -param <a id="Context2"></a><a id="context2"></a><a id="CONTEXT2"></a><i>Context2</i>
+### -param Context2
 
 <dd>
 <p>Second context parameter. </p>
@@ -133,13 +133,13 @@ VOID (*PDIRTY_PAGE_ROUTINE) (
 </dl>
 </dd>
 
-### -param <i>Context1</i> [in]
+### -param Context1 [in]
 
 <dd>
 <p>First context parameter to be passed to the <i>DirtyPageRoutine</i>. </p>
 </dd>
 
-### -param <i>Context2</i> [in]
+### -param Context2 [in]
 
 <dd>
 <p>Second context parameter to be passed to the <i>DirtyPageRoutine</i>. </p>
@@ -225,4 +225,4 @@ VOID (*PDIRTY_PAGE_ROUTINE) (
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcGetDirtyPages routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcGetDirtyPages routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

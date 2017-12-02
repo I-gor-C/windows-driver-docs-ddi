@@ -65,64 +65,64 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_VideoControlFlag_FlipHorizontal"></a><a id="ks_videocontrolflag_fliphorizontal"></a><a id="KS_VIDEOCONTROLFLAG_FLIPHORIZONTAL"></a><b>KS_VideoControlFlag_FlipHorizontal</b>
+### -field KS_VideoControlFlag_FlipHorizontal
 
 <dd>
 <p>The minidriver is capable of flipping the image horizontally.</p>
 </dd>
 
-### -field <a id="KS_VideoControlFlag_FlipVertical"></a><a id="ks_videocontrolflag_flipvertical"></a><a id="KS_VIDEOCONTROLFLAG_FLIPVERTICAL"></a><b>KS_VideoControlFlag_FlipVertical</b>
+### -field KS_VideoControlFlag_FlipVertical
 
 <dd>
 <p>The minidriver is capable of flipping the image vertically.</p>
 </dd>
 
-### -field <a id="KS_Obsolete_VideoControlFlag_ExternalTriggerEnable"></a><a id="ks_obsolete_videocontrolflag_externaltriggerenable"></a><a id="KS_OBSOLETE_VIDEOCONTROLFLAG_EXTERNALTRIGGERENABLE"></a><b>KS_Obsolete_VideoControlFlag_ExternalTriggerEnable</b>
+### -field KS_Obsolete_VideoControlFlag_ExternalTriggerEnable
 
 <dd>
 <p>This value is obsolete. Do not use.</p>
 </dd>
 
-### -field <a id="KS_Obsolete_VideoControlFlag_Trigger"></a><a id="ks_obsolete_videocontrolflag_trigger"></a><a id="KS_OBSOLETE_VIDEOCONTROLFLAG_TRIGGER"></a><b>KS_Obsolete_VideoControlFlag_Trigger</b>
+### -field KS_Obsolete_VideoControlFlag_Trigger
 
 <dd>
 <p>This value is obsolete. Do not use.</p>
 </dd>
 
-### -field <a id="KS_VideoControlFlag_ExternalTriggerEnable"></a><a id="ks_videocontrolflag_externaltriggerenable"></a><a id="KS_VIDEOCONTROLFLAG_EXTERNALTRIGGERENABLE"></a><b>KS_VideoControlFlag_ExternalTriggerEnable</b>
+### -field KS_VideoControlFlag_ExternalTriggerEnable
 
 <dd>
 <p>The minidriver can enable acquisition of a single video frame based on an external trigger. An external trigger typically is hardware-specific.</p>
 </dd>
 
-### -field <a id="KS_VideoControlFlag_Trigger"></a><a id="ks_videocontrolflag_trigger"></a><a id="KS_VIDEOCONTROLFLAG_TRIGGER"></a><b>KS_VideoControlFlag_Trigger</b>
+### -field KS_VideoControlFlag_Trigger
 
 <dd>
 <p>The minidriver can enable acquisition of a single video frame based on a programmatic trigger.</p>
 </dd>
 
-### -field <a id="KS_VideoControlFlag_IndependentImagePin"></a><a id="ks_videocontrolflag_independentimagepin"></a><a id="KS_VIDEOCONTROLFLAG_INDEPENDENTIMAGEPIN"></a><b>KS_VideoControlFlag_IndependentImagePin</b>
+### -field KS_VideoControlFlag_IndependentImagePin
 
 <dd>
 <p>Determines if the image pin is independent of the video pin.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="KS_VideoControlFlag_StillCapturePreviewFrame"></a><a id="ks_videocontrolflag_stillcapturepreviewframe"></a><a id="KS_VIDEOCONTROLFLAG_STILLCAPTUREPREVIEWFRAME"></a><b>KS_VideoControlFlag_StillCapturePreviewFrame</b>
+### -field KS_VideoControlFlag_StillCapturePreviewFrame
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="KS_VideoControlFlag_StartPhotoSequenceCapture"></a><a id="ks_videocontrolflag_startphotosequencecapture"></a><a id="KS_VIDEOCONTROLFLAG_STARTPHOTOSEQUENCECAPTURE"></a><b>KS_VideoControlFlag_StartPhotoSequenceCapture</b>
+### -field KS_VideoControlFlag_StartPhotoSequenceCapture
 
 <dd>
 <p>Begin photo sequence capture operation.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <a id="KS_VideoControlFlag_StopPhotoSequenceCapture"></a><a id="ks_videocontrolflag_stopphotosequencecapture"></a><a id="KS_VIDEOCONTROLFLAG_STOPPHOTOSEQUENCECAPTURE"></a><b>KS_VideoControlFlag_StopPhotoSequenceCapture</b>
+### -field KS_VideoControlFlag_StopPhotoSequenceCapture
 
 <dd>
 <p>Stop photo sequence operation.</p>

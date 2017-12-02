@@ -56,19 +56,19 @@ NTSTATUS KsDefaultAddEventHandler(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>The event <a href="..\ntifs\ns-ntifs--irp.md">IRP</a>. This contains the object into which the event is inserted.</p>
+<p>The event <a href="..\wdm\ns-wdm--irp.md">IRP</a>. This contains the object into which the event is inserted.</p>
 </dd>
 
-### -param <i>EventData</i> [in]
+### -param EventData [in]
 
 <dd>
 <p>A pointer to a <a href="stream.kseventdata">KSEVENTDATA</a> structure that describes an event notification method.</p>
 </dd>
 
-### -param <i>EventEntry</i> [in, out]
+### -param EventEntry [in, out]
 
 <dd>
 <p>The event entry that is to be inserted into the object's event list. The object is determined by <i>Irp</i>.</p>

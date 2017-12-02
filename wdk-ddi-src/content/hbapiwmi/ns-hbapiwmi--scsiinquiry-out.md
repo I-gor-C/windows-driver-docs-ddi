@@ -59,37 +59,37 @@ typedef struct _ScsiInquiry_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains a value associated with the WMI class qualifier <a href="storage.hba_status">HBA_STATUS</a> that indicates the result of an HBA query operation. </p>
 </dd>
 
-### -field <b>ResponseBufferSize</b>
+### -field ResponseBufferSize
 
 <dd>
 <p>Indicates the size in bytes of the buffer that will hold the results of the inquiry command. </p>
 </dd>
 
-### -field <b>SenseBufferSize</b>
+### -field SenseBufferSize
 
 <dd>
 <p>Indicates the size in bytes of the buffer that will hold the SCSI sense data that results from the inquiry command. </p>
 </dd>
 
-### -field <b>ScsiStatus</b>
+### -field ScsiStatus
 
 <dd>
 <p>Contains the status of the SCSI inquiry command. </p>
 </dd>
 
-### -field <b>ResponseBuffer</b>
+### -field ResponseBuffer
 
 <dd>
 <p>Contains the results of the SCSI inquiry command. </p>
 </dd>
 
-### -field <b>SenseBuffer</b>
+### -field SenseBuffer
 
 <dd>
 <p>Contains the SCSI sense data that results from the SCSI inquiry command. </p>

@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_power_policy_wake_settings.htm
 old-project: wdf
 ms.assetid: d7448873-aa96-4eac-a5be-16dff661ab40
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS, WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS, *PWDF_DEVICE_POWER_POLICY_WAKE_SETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,25 +61,25 @@ typedef struct _WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>DxState</b>
+### -field DxState
 
 <dd>
 <p>A <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a>-typed enumerator that identifies the low <a href="https://msdn.microsoft.com/2229f34c-9b88-4e3e-802e-f7be2c7ef168">device power state</a> that the device will enter when the system power state drops to a wakeable low-power state. The value of <b>DxState</b> cannot be <b>PowerDeviceD0</b>. <b>DEVICE_POWER_STATE</b> values are defined in <i>wdm.h</i>.</p>
 </dd>
 
-### -field <b>UserControlOfWakeSettings</b>
+### -field UserControlOfWakeSettings
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-power-policy-sx-wake-user-control.md">WDF_POWER_POLICY_SX_WAKE_USER_CONTROL</a>-typed enumerator that indicates whether users have the ability to modify the device's wake settings.</p>
 </dd>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed enumerator that indicates whether the device can wake the system (that is, restore the system to S0) when the system is in a low-power state. This member can have one of the following values:</p>
@@ -97,13 +97,13 @@ typedef struct _WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS {
 <p>If waking the system is enabled and the system is about to enter a low-power state, the framework calls the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-arm-wake-from-sx.md">EvtDeviceArmWakeFromSx</a> or <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-arm-wake-from-sx-with-reason.md">EvtDeviceArmWakeFromSxWithReason</a> callback function before the device enters a low-power state.</p>
 </dd>
 
-### -field <b>ArmForWakeIfChildrenAreArmedForWake</b>
+### -field ArmForWakeIfChildrenAreArmedForWake
 
 <dd>
 <p>A Boolean value that, if set to <b>TRUE</b>, indicates that a parent device's ability to wake itself and the system should be enabled when this ability is enabled for the device's child devices. For more information, see the following Remarks section. This member is available in version 1.7 and later versions of KMDF.</p>
 </dd>
 
-### -field <b>IndicateChildWakeOnParentWake</b>
+### -field IndicateChildWakeOnParentWake
 
 <dd>
 <p>A Boolean value that, if set to <b>TRUE</b>, indicates that the framework will provide wake-up status to child devices if a parent device detects a wake-up signal. For more information, see the following Remarks section. This member is available in version 1.7 and later versions of KMDF.</p>
@@ -206,4 +206,4 @@ typedef struct _WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

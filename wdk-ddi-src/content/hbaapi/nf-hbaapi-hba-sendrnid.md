@@ -58,31 +58,31 @@ HBA_STATUS HBA_API HBA_SendRNID(
 ## -parameters
 <dl>
 
-### -param <i>HbaHandle</i> [in]
+### -param HbaHandle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA that will route the command. The HBA routes this command to the appropriate fabric configuration server. </p>
 </dd>
 
-### -param <i>Wwn</i> [in]
+### -param Wwn [in]
 
 <dd>
 <p>Contains a 64-bit worldwide name (WWN) that uniquely identifies a port or a node from which the RNID command is issued. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
-### -param <i>WwnType</i> [in]
+### -param WwnType [in]
 
 <dd>
 <p>Contains an enumerator value of type <a href="..\hbaapi\ne-hbaapi-hba-wwntype.md">HBA_wwntype</a> that indicates whether the WWN specified by <i>Wwn </i>is a port or a node:</p>
 </dd>
 
-### -param <i>pRspBuffer</i> [out]
+### -param pRspBuffer [out]
 
 <dd>
 <p>Pointer to a buffer that contains, in big-endian (wire) format, the payload data from the reply to the node identification request. </p>
 </dd>
 
-### -param <i>RspBufferSize</i> [in, out]
+### -param RspBufferSize [in, out]
 
 <dd>
 <p>On input, indicates the size, in bytes, of the buffer pointed to by <i>pRspBuffer</i>. On return, this member indicates the size, in bytes, of the response data. </p>

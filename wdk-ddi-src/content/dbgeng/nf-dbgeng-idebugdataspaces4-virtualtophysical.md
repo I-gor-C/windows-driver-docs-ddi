@@ -7,7 +7,7 @@ old-location: debugger\virtualtophysical.htm
 old-project: debugger
 ms.assetid: e0b7bd4c-cb3f-4bc3-8359-241c9a245204
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugDataSpaces4, VirtualToPhysical, IDebugDataSpaces4::VirtualToPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ HRESULT VirtualToPhysical(
 ## -parameters
 <dl>
 
-### -param <i>Virtual</i> [in]
+### -param Virtual [in]
 
 <dd>
 <p>Specifies the location in the target's virtual address space to translate.</p>
 </dd>
 
-### -param <i>Physical</i> [out]
+### -param Physical [out]
 
 <dd>
 <p>Receives the physical memory address.</p>
@@ -77,7 +77,7 @@ HRESULT VirtualToPhysical(
 
 <p> </p>
 
-<p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
+<p>This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p>
 
 ## -remarks
 <p>This method is only available in kernel-mode debugging.</p>

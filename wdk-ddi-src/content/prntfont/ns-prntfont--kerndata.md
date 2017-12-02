@@ -57,19 +57,19 @@ typedef struct _KERNDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes, of KERNDATA structure, including the <b>KernPair</b> array.</p>
 </dd>
 
-### -field <b>dwKernPairNum</b>
+### -field dwKernPairNum
 
 <dd>
 <p>Specifies the number of elements in the <b>KernPair</b> array.</p>
 </dd>
 
-### -field <b>KernPair</b>
+### -field KernPair
 
 <dd>
 <p>Is an array of <a href="display.fd_kerningpair">FD_KERNINGPAIR</a> structures.</p>

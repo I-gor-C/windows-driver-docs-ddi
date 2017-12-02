@@ -58,31 +58,31 @@ typedef enum DXGI_DDI_MODE_ROTATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGI_DDI_MODE_ROTATION_UNSPECIFIED"></a><a id="dxgi_ddi_mode_rotation_unspecified"></a><b>DXGI_DDI_MODE_ROTATION_UNSPECIFIED</b>
+### -field DXGI_DDI_MODE_ROTATION_UNSPECIFIED
 
 <dd>
 <p>A DXGI_DDI_MODE_ROTATION-typed variable has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MODE_ROTATION_IDENTITY"></a><a id="dxgi_ddi_mode_rotation_identity"></a><b>DXGI_DDI_MODE_ROTATION_IDENTITY</b>
+### -field DXGI_DDI_MODE_ROTATION_IDENTITY
 
 <dd>
 <p>The display is not rotated.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MODE_ROTATION_ROTATE90"></a><a id="dxgi_ddi_mode_rotation_rotate90"></a><b>DXGI_DDI_MODE_ROTATION_ROTATE90</b>
+### -field DXGI_DDI_MODE_ROTATION_ROTATE90
 
 <dd>
 <p>The display is rotated 90 degrees.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MODE_ROTATION_ROTATE180"></a><a id="dxgi_ddi_mode_rotation_rotate180"></a><b>DXGI_DDI_MODE_ROTATION_ROTATE180</b>
+### -field DXGI_DDI_MODE_ROTATION_ROTATE180
 
 <dd>
 <p>The display is rotated 180 degrees.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MODE_ROTATION_ROTATE270"></a><a id="dxgi_ddi_mode_rotation_rotate270"></a><b>DXGI_DDI_MODE_ROTATION_ROTATE270</b>
+### -field DXGI_DDI_MODE_ROTATION_ROTATE270
 
 <dd>
 <p>The display is rotated 270 degrees.</p>

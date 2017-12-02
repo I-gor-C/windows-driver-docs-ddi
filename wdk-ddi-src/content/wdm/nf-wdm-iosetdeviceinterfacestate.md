@@ -56,13 +56,13 @@ NTSTATUS IoSetDeviceInterfaceState(
 ## -parameters
 <dl>
 
-### -param <i>SymbolicLinkName</i> [in]
+### -param SymbolicLinkName [in]
 
 <dd>
 <p>Pointer to a string that identifies the device interface instance that is being enabled or disabled. This string was obtained from a previous call to <a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a> or <a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>. </p>
 </dd>
 
-### -param <i>Enable</i> [in]
+### -param Enable [in]
 
 <dd>
 <p><b>TRUE</b> indicates that the device interface is being enabled. <b>FALSE</b> indicates that the device interface is being disabled. </p>

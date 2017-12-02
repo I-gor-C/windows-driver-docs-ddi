@@ -7,7 +7,7 @@ old-location: netvista\ndis_nic_switch_vport_info.htm
 old-project: netvista
 ms.assetid: 5effb179-18e8-4306-84c5-724cb5483449
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_NIC_SWITCH_VPORT_INFO, NDIS_NIC_SWITCH_VPORT_INFO, *PNDIS_NIC_SWITCH_VPORT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ typedef struct _NDIS_NIC_SWITCH_VPORT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_NIC_SWITCH_VPORT_INFO</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -73,7 +73,7 @@ typedef struct _NDIS_NIC_SWITCH_VPORT_INFO {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_NIC_SWITCH_VPORT_INFO_REVISION_1"></a><a id="ndis_nic_switch_vport_info_revision_1"></a>NDIS_NIC_SWITCH_VPORT_INFO_REVISION_1
+### -field NDIS_NIC_SWITCH_VPORT_INFO_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30 and later.</p>
@@ -82,7 +82,7 @@ typedef struct _NDIS_NIC_SWITCH_VPORT_INFO {
 </dl>
 </dd>
 
-### -field <b>VPortId</b>
+### -field VPortId
 
 <dd>
 <p>An NDIS_NIC_SWITCH_VPORT_ID value  that uniquely identifies the virtual port (VPort)  on the network adapter. </p>
@@ -93,7 +93,7 @@ VPort is always attached to the PCI Express (PCIe) Physical Function (PF) of the
 <div> </div>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.
@@ -101,7 +101,7 @@ VPort is always attached to the PCI Express (PCIe) Physical Function (PF) of the
 </p>
 </dd>
 
-### -field <b>SwitchId</b>
+### -field SwitchId
 
 <dd>
 <p>An NDIS_NIC_SWITCH_ID value that uniquely identifies  a network adapter switch that was created on the network adapter. The VPort identified through the <b>VPortId</b> member is created on the switch specified by the <b>SwitchId</b> member.</p>
@@ -112,13 +112,13 @@ VPort is always attached to the PCI Express (PCIe) Physical Function (PF) of the
 <div> </div>
 </dd>
 
-### -field <b>VPortName</b>
+### -field VPortName
 
 <dd>
 <p>An NDIS_VPORT_NAME value that  specifies the name of the VPort that was created on the network adapter switch. This member contains the user-friendly description of the VPort.</p>
 </dd>
 
-### -field <b>AttachedFunctionId</b>
+### -field AttachedFunctionId
 
 <dd>
 <p>An NDIS_SRIOV_FUNCTION_ID value that specifies the identifier of a VF or the PF to which the  VPort is attached. </p>
@@ -126,7 +126,7 @@ VPort is always attached to the PCI Express (PCIe) Physical Function (PF) of the
 <div> </div>
 </dd>
 
-### -field <b>NumQueuePairs</b>
+### -field NumQueuePairs
 
 <dd>
 <p>A ULONG value that specifies the number of queue pairs configured for this VPort.</p>
@@ -135,32 +135,32 @@ One or more queue pairs are configured on a nondefault VPort through an OID meth
 </p>
 </dd>
 
-### -field <b>InterruptModeration</b>
+### -field InterruptModeration
 
 <dd>
 <p>An <a href="..\ntddndis\ne-ntddndis--ndis-nic-switch-vport-interrupt-moderation.md">NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION</a> value that specifies the interrupt moderation setting of the VPort.</p>
 </dd>
 
-### -field <b>VPortState</b>
+### -field VPortState
 
 <dd>
 <p>An <a href="..\ntddndis\ne-ntddndis--ndis-nic-switch-vport-state.md">NDIS_NIC_SWITCH_VPORT_STATE</a> value that specifies the state of the VPort.  </p>
 </dd>
 
-### -field <b>ProcessorAffinity</b>
+### -field ProcessorAffinity
 
 <dd>
 <p>A <a href="..\miniport\ns-miniport--group-affinity.md">GROUP_AFFINITY</a> value that specifies the group number and a bitmap of the CPUs that this VPort can be associated with. </p>
 <p>This member is valid only for the VPorts attached to the PF. This field is not valid for nondefault VPorts that are attached to a VF. </p>
 </dd>
 
-### -field <b>LookaheadSize</b>
+### -field LookaheadSize
 
 <dd>
 <p>This member is reserved for future use. This member must be set to zero.</p>
 </dd>
 
-### -field <b>NumFilters</b>
+### -field NumFilters
 
 <dd>
 <p>A ULONG value that specifies the number of receive filters that have been configured on the network adapter.</p>
@@ -186,7 +186,7 @@ One or more queue pairs are configured on a nondefault VPort through an OID meth
 
 <p>One or more <b>NDIS_NIC_SWITCH_VPORT_INFO</b> structures are returned through the <a href="..\ntddndis\ns-ntddndis--ndis-nic-switch-vport-info-array.md">NDIS_NIC_SWITCH_VPORT_INFO_ARRAY</a> structure.</p>
 
-<p>For more information about the SR-IOV interface, see 	<a href="NULL">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
+<p>For more information about the SR-IOV interface, see 	<a href="netvista.overview_of_single_root_i_o_virtualization__sr-iov_">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
 
 ## -requirements
 <table>
@@ -228,4 +228,4 @@ One or more queue pairs are configured on a nondefault VPort through an OID meth
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VPORT_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VPORT_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

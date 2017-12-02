@@ -55,13 +55,13 @@ typedef struct _D3DKMT_ACTIVATE_SPECIFIC_DIAG_ESCAPE {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-escape.md">D3DKMT_ESCAPETYPE</a> escape type  that needs to be activated or deactivated.</p>
 </dd>
 
-### -field <b>Activate</b>
+### -field Activate
 
 <dd>
 <p>If <b>TRUE</b>, the escape type is to be activated. If <b>FALSE</b>, the escape type is to be deactivated.</p>

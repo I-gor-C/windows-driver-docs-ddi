@@ -63,25 +63,25 @@ typedef EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD PEVT_UCX_USBDEVICE_DEFAULT_ENDPOI
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>UcxUsbDevice</i> [in]
+### -param UcxUsbDevice [in]
 
 <dd>
 <p>A handle to a UCX object that represents the USB device.</p>
 </dd>
 
-### -param <i>MaxPacketSize</i> [in]
+### -param MaxPacketSize [in]
 
 <dd>
 <p>Maximum packet size for transfers on this endpoint.</p>
 </dd>
 
-### -param <i>EndpointInit</i> [in]
+### -param EndpointInit [in]
 
 <dd>
 <p>A pointer to an opaque structure containing initialization
@@ -94,9 +94,9 @@ typedef EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD PEVT_UCX_USBDEVICE_DEFAULT_ENDPOI
 <p>If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it must return a status value for which NT_SUCCESS(status) equals FALSE.</p>
 
 ## -remarks
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a> method.</p>
+<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a> method.</p>
 
-<p>The callback function calls <a href="buses._ucxendpointcreate">UcxEndpointCreate</a> to create a new default endpoint object and register its default endpoint object callback functions.</p>
+<p>The callback function calls <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a> to create a new default endpoint object and register its default endpoint object callback functions.</p>
 
 <p>Then, the callback  function typically creates a WDF queue associated with the endpoint
     object.   The  queue does not receive any requests until the class extension
@@ -143,16 +143,16 @@ typedef EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD PEVT_UCX_USBDEVICE_DEFAULT_ENDPOI
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucx_default_endpoint_event_callbacks_init">UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT</a>
+<a href="..\ucxendpoint\nf-ucxendpoint-ucx-default-endpoint-event-callbacks-init.md">UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT</a>
 </dt>
 <dt>
-<a href="buses._ucxdefaultendpointinitseteventcallbacks">UcxDefaultEndpointInitSetEventCallbacks</a>
+<a href="..\ucxendpoint\nf-ucxendpoint-ucxdefaultendpointinitseteventcallbacks.md">UcxDefaultEndpointInitSetEventCallbacks</a>
 </dt>
 <dt>
-<a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
+<a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
 </dt>
 <dt>
-<a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a>
+<a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a>
 </dt>
 <dt>
 <a href="..\wdfio\nf-wdfio-wdf-io-queue-config-init.md">WDF_IO_QUEUE_CONFIG_INIT</a>

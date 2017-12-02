@@ -7,7 +7,7 @@ old-location: netvista\ndis_tcp_ip_checksum_net_buffer_list_info.htm
 old-project: netvista
 ms.assetid: 989ecf50-18c4-4977-b845-b3fea0cade47
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, *PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,39 +82,39 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Transmit</b>
+### -field Transmit
 
 <dd>
 <p>A structure that contains the following members:</p>
 <dl>
 
-### -field <b>IsIPv4</b>
+### -field IsIPv4
 
 <dd>
 <p>Set by the TCP/IP transport to indicate that the send packet contains IPv4 addresses.</p>
 </dd>
 
-### -field <b>IsIPv6</b>
+### -field IsIPv6
 
 <dd>
 <p>Set by the TCP/IP transport to indicate that the send packet contains IPv6 addresses.</p>
 </dd>
 
-### -field <b>TcpChecksum</b>
+### -field TcpChecksum
 
 <dd>
 <p>Set by the TCP/IP transport to indicate that the NIC should calculate the packet's TCP
        checksum.</p>
 </dd>
 
-### -field <b>UdpChecksum</b>
+### -field UdpChecksum
 
 <dd>
 <p>Set by the TCP/IP transport to indicate that the NIC should calculate the packet's UDP
        checksum.</p>
 </dd>
 
-### -field <b>IpHeaderChecksum</b>
+### -field IpHeaderChecksum
 
 <dd>
 <p>Set by the TCP/IP transport to indicate that the NIC should calculate the IP checksum for the
@@ -122,13 +122,13 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO {
        header, the NIC should calculate the checksum for both IP headers.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>TcpHeaderOffset</b>
+### -field TcpHeaderOffset
 
 <dd>
 <p>The offset, in bytes, of the TCP header from the beginning of the packet for TCP packets.
@@ -139,27 +139,27 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO {
 </dl>
 </dd>
 
-### -field <b>Receive</b>
+### -field Receive
 
 <dd>
 <p>A structure that contains the following members:</p>
 <dl>
 
-### -field <b>TcpChecksumFailed</b>
+### -field TcpChecksumFailed
 
 <dd>
 <p>Set by the miniport driver to indicate that the TCP checksum calculated by the NIC did not match
        the checksum in the receive packet's TCP header.</p>
 </dd>
 
-### -field <b>UdpChecksumFailed</b>
+### -field UdpChecksumFailed
 
 <dd>
 <p>Set by the miniport driver to indicate that the UDP checksum calculated by the NIC did not match
        the checksum in the receive packet's UDP header.</p>
 </dd>
 
-### -field <b>IpChecksumFailed</b>
+### -field IpChecksumFailed
 
 <dd>
 <p>Set by the miniport driver to indicate that the IP checksum calculated by the NIC did not match
@@ -169,21 +169,21 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO {
 <div> </div>
 </dd>
 
-### -field <b>TcpChecksumSucceeded</b>
+### -field TcpChecksumSucceeded
 
 <dd>
 <p>Set by the miniport driver to indicate that the TCP checksum calculated by the NIC matched the
        checksum in the receive packet's TCP header.</p>
 </dd>
 
-### -field <b>UdpChecksumSucceeded</b>
+### -field UdpChecksumSucceeded
 
 <dd>
 <p>Set by the miniport driver to indicate that the UDP checksum calculated by the NIC matched the
        checksum in the receive packet's UDP header.</p>
 </dd>
 
-### -field <b>IpChecksumSucceeded</b>
+### -field IpChecksumSucceeded
 
 <dd>
 <p>Set by the miniport driver to indicate that the IP checksum calculated by the NIC matched the
@@ -193,26 +193,26 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO {
 <div> </div>
 </dd>
 
-### -field <b>Loopback</b>
+### -field Loopback
 
 <dd>
 <p>NDIS uses this bit. The miniport driver must not examine or set this bit; the miniport driver
        should just ignore this bit.</p>
 </dd>
 
-### -field <b>TcpChecksumValueInvalid</b>
+### -field TcpChecksumValueInvalid
 
 <dd>
-<p>A miniport driver that supports <a href="NULL">Receive Segment Coalescing (RSC)</a> sets this flag to indicate that the TCP header checksum was validated by the NIC but the TCP header checksum value in the packet is not valid. For more information, see <a href="NULL">Indicating Coalesced Segments</a>.</p>
+<p>A miniport driver that supports <a href="netvista.receive_segment_coalescing__rsc_">Receive Segment Coalescing (RSC)</a> sets this flag to indicate that the TCP header checksum was validated by the NIC but the TCP header checksum value in the packet is not valid. For more information, see <a href="netvista.indicating_coalesced_segments">Indicating Coalesced Segments</a>.</p>
 <p>Miniport drivers that do  not support RSC should set this flag to zero.</p>
 <div class="alert"><b>Note</b>  This flag is supported in NDIS 6.30 and later miniport drivers in Windows 8, Windows Server 2012, and later.</div>
 <div> </div>
 </dd>
 
-### -field <b>IpChecksumValueInvalid</b>
+### -field IpChecksumValueInvalid
 
 <dd>
-<p>A miniport driver that supports RSC sets this flag to indicate that for an IPv4 packet, the IP header checksum was validated by the NIC but the IP header checksum value in the packet is not valid. For a packet consisting of both a tunnel and a transport IP header, this bit is applicable only to the tunnel IP header. For more information, see <a href="NULL">Indicating Coalesced Segments</a>.</p>
+<p>A miniport driver that supports RSC sets this flag to indicate that for an IPv4 packet, the IP header checksum was validated by the NIC but the IP header checksum value in the packet is not valid. For a packet consisting of both a tunnel and a transport IP header, this bit is applicable only to the tunnel IP header. For more information, see <a href="netvista.indicating_coalesced_segments">Indicating Coalesced Segments</a>.</p>
 <p>Miniport drivers that do  not support RSC should set this flag to zero.</p>
 <div class="alert"><b>Note</b>  This flag is supported in NDIS 6.30 and later miniport drivers in Windows 8, Windows Server 2012, and later.</div>
 <div> </div>
@@ -220,7 +220,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO {
 </dl>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A <b>PVOID</b> version of the checksum information. Miniport drivers can use this member to access the
@@ -292,9 +292,9 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
 </dt>
 <dt>
-<a href="NULL">Indicating Coalesced Segments</a>
+<a href="netvista.indicating_coalesced_segments">Indicating Coalesced Segments</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

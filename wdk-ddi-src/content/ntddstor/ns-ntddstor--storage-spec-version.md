@@ -64,31 +64,31 @@ typedef union _STORAGE_SPEC_VERSION {
 ## -struct-fields
 <dl>
 
-### -field <b>DUMMYSTRUCTNAME</b>
+### -field DUMMYSTRUCTNAME
 
 <dd>
 <p>The major and minor version of the storage specification.</p>
 <dl>
 
-### -field <b>MinorVersion</b>
+### -field MinorVersion
 
 <dd>
 <p>The minor version of the storage specification.</p>
 <dl>
 
-### -field <b>DUMMYSTRUCTNAME</b>
+### -field DUMMYSTRUCTNAME
 
 <dd>
 <p>The minor and sub-minor version of the storage specification.</p>
 <dl>
 
-### -field <b>SubMinor</b>
+### -field SubMinor
 
 <dd>
 <p>The sub-minor version of the storage specification.</p>
 </dd>
 
-### -field <b>Minor</b>
+### -field Minor
 
 <dd>
 <p>The minor version of the storage specification.</p>
@@ -96,7 +96,7 @@ typedef union _STORAGE_SPEC_VERSION {
 </dl>
 </dd>
 
-### -field <b>AsUshort</b>
+### -field AsUshort
 
 <dd>
 <p>The combination of the <b>Minor</b> and <b>SubMinor</b> versions of the storage specification.</p>
@@ -104,7 +104,7 @@ typedef union _STORAGE_SPEC_VERSION {
 </dl>
 </dd>
 
-### -field <b>MajorVersion</b>
+### -field MajorVersion
 
 <dd>
 <p>The major version of the storage specification.</p>
@@ -112,7 +112,7 @@ typedef union _STORAGE_SPEC_VERSION {
 </dl>
 </dd>
 
-### -field <b>AsUlong</b>
+### -field AsUlong
 
 <dd>
 <p>The combination of the <b>MajorVersion</b> and <b>MinorVersion</b> versions of the storage specification.</p>

@@ -57,19 +57,19 @@ typedef enum _DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_NONE"></a><a id="dxgk_multiplane_overlay_stereo_flip_none"></a><b>DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_NONE</b>
+### -field DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_NONE
 
 <dd>
 <p>The overplay plane data is not presented in stereo mode.</p>
 </dd>
 
-### -field <a id="DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME0"></a><a id="dxgk_multiplane_overlay_stereo_flip_frame0"></a><b>DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME0</b>
+### -field DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME0
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>
 </dd>
 
-### -field <a id="DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME1"></a><a id="dxgk_multiplane_overlay_stereo_flip_frame1"></a><b>DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME1</b>
+### -field DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME1
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>

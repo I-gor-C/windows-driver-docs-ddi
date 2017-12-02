@@ -55,13 +55,13 @@ typedef struct _STORAGE_DESCRIPTOR_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Contains the version of the data reported. </p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Indicates the quantity of data reported, in bytes. </p>

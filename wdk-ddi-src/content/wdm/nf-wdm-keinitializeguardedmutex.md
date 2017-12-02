@@ -55,7 +55,7 @@ VOID KeInitializeGuardedMutex(
 ## -parameters
 <dl>
 
-### -param <i>Mutex</i> [out]
+### -param Mutex [out]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554235">KGUARDED_MUTEX</a> structure to initialize. The storage must be 4-byte aligned on 32-bit platforms, and 8-byte aligned on 64-bit platforms.</p>

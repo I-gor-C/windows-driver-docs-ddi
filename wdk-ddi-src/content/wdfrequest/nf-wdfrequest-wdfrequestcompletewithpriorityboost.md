@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestcompletewithpriorityboost.htm
 old-project: wdf
 ms.assetid: c09ea33d-a20e-4535-8b5c-4645a30841a7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfRequestCompleteWithPriorityBoost
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,32 +58,32 @@ VOID WdfRequestCompleteWithPriorityBoost(
 ## -parameters
 <dl>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to the framework request object that represents the I/O request that is being completed.</p>
 </dd>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS value</a> that represents the completion status of the request. Valid status values include, but are not limited to, the following:</p>
 <p></p>
 <dl>
 
-### -param <a id="STATUS_SUCCESS"></a><a id="status_success"></a>STATUS_SUCCESS
+### -param STATUS_SUCCESS
 
 <dd>
 <p>The driver successfully completed the request.</p>
 </dd>
 
-### -param <a id="STATUS_CANCELLED"></a><a id="status_cancelled"></a>STATUS_CANCELLED
+### -param STATUS_CANCELLED
 
 <dd>
 <p>The driver canceled the request.</p>
 </dd>
 
-### -param <a id="STATUS_UNSUCCESSFUL"></a><a id="status_unsuccessful"></a>STATUS_UNSUCCESSFUL
+### -param STATUS_UNSUCCESSFUL
 
 <dd>
 <p>The driver encountered an error while processing the request.</p>
@@ -91,7 +91,7 @@ VOID WdfRequestCompleteWithPriorityBoost(
 </dl>
 </dd>
 
-### -param <i>PriorityBoost</i> [in]
+### -param PriorityBoost [in]
 
 <dd>
 <p>A system-defined constant value by which to increment the run-time priority of the original thread that requested the operation. Constant values are device-type-specific and are defined in <i>Wdm.h</i>. The format for the constant names is <i>XXX</i>_INCREMENT. For more information about priority boost values, see <a href="wdf.specifying_priority_boosts_when_completing_i_o_requests">Specifying Priority Boosts When Completing I/O Requests</a>.</p>
@@ -186,4 +186,4 @@ VOID WdfRequestCompleteWithPriorityBoost(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestCompleteWithPriorityBoost method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestCompleteWithPriorityBoost method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

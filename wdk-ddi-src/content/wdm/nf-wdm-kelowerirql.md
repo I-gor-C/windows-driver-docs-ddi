@@ -55,7 +55,7 @@ req.product: Windows 10 or later.
 ## -parameters
 <dl>
 
-### -param <i>NewIrql</i> [in]
+### -param NewIrql [in]
 
 <dd>
 <p>Specifies the IRQL that was returned from <a href="..\wdm\nf-wdm-keraiseirql.md">KeRaiseIrql</a> or <a href="..\ntddk\nf-ntddk-keraiseirqltodpclevel.md">KeRaiseIrqlToDpcLevel</a>.</p>

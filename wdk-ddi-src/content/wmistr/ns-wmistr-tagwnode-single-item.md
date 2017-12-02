@@ -61,43 +61,43 @@ typedef struct tagWNODE_SINGLE_ITEM {
 ## -struct-fields
 <dl>
 
-### -field <b>WnodeHeader</b>
+### -field WnodeHeader
 
 <dd>
 <p>Is a <a href="..\wmistr\ns-wmistr--wnode-header.md">WNODE_HEADER</a> structure that contains information common to all <b>WNODE_<i>XXX</i></b> structures, such as the buffer size, the GUID that represents a data block associated with a request, and flags that provide information about the <b>WNODE_<i>XXX</i></b> data being passed or returned.</p>
 </dd>
 
-### -field <b>OffsetInstanceName</b>
+### -field OffsetInstanceName
 
 <dd>
 <p>Indicates the offset from the beginning of this structure to the dynamic instance name, if any, aligned on a USHORT boundary. This member is valid only if WNODE_FLAG_STATIC_INSTANCE_NAMES is clear in <b>WnodeHeader.Flags</b>. If the data block was registered with static instance names, WMI ignores <b>OffsetInstanceName</b>. </p>
 </dd>
 
-### -field <b>InstanceIndex</b>
+### -field InstanceIndex
 
 <dd>
 <p>Indicates the index into the driver's list of static instance names of this instance. This member is valid only if the data block was registered with static instance names and WNODE_FLAG_STATIC_INSTANCE_NAMES is set in <b>WnodeHeader.Flags</b>. If the data block was registered with dynamic instance names, WMI ignores <b>InstanceIndex</b>. </p>
 </dd>
 
-### -field <b>ItemId</b>
+### -field ItemId
 
 <dd>
 <p>Specifies the ID of the data item to set.</p>
 </dd>
 
-### -field <b>DataBlockOffset</b>
+### -field DataBlockOffset
 
 <dd>
 <p>Indicates the offset from the beginning of this structure to the new value for the data item. </p>
 </dd>
 
-### -field <b>SizeDataItem</b>
+### -field SizeDataItem
 
 <dd>
 <p>Indicates the size of the data item.</p>
 </dd>
 
-### -field <b>VariableData</b>
+### -field VariableData
 
 <dd>
 <p>Contains additional data, including the dynamic instance name if any, padding so the data value begins on an 8-byte boundary, and the new value for the data item. </p>

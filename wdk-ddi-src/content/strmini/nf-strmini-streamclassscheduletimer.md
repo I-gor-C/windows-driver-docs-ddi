@@ -59,25 +59,25 @@ VOID StreamClassScheduleTimer(
 ## -parameters
 <dl>
 
-### -param <i>StreamObject</i> [in, optional]
+### -param StreamObject [in, optional]
 
 <dd>
 <p>Specifies the stream that sets the timer, or <b>NULL</b> if the timer is set for the whole driver. The minidriver may only schedule one timer per stream, and one for the driver as a whole. This parameter is optional.</p>
 </dd>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="..\strmini\ns-strmini--hw-initialization-data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="..\strmini\ns-strmini--hw-stream-request-block.md">HW_STREAM_REQUEST_BLOCK</a>, <a href="..\strmini\ns-strmini--hw-stream-object~r1.md">HW_STREAM_OBJECT</a>, <a href="..\strmini\ns-strmini--hw-time-context.md">HW_TIME_CONTEXT</a>, and <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.</p>
 </dd>
 
-### -param <i>NumberOfMicroseconds</i> [in]
+### -param NumberOfMicroseconds [in]
 
 <dd>
 <p>Specifies the amount of time, in microseconds, before the timer expires.</p>
 </dd>
 
-### -param <i>TimerRoutine</i> [in]
+### -param TimerRoutine [in]
 
 <dd>
 <p>Specifies the routine called when the timer expires. The routine's prototype must be of the form:</p>
@@ -93,7 +93,7 @@ VOID StreamClassScheduleTimer(
 </table></span></div>
 </dd>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to a context that the class driver passes to the callback routine once the timer expires.</p>

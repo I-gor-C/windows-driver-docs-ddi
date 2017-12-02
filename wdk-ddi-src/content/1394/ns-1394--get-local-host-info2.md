@@ -7,7 +7,7 @@ old-location: ieee\get_local_host_info2.htm
 old-project: IEEE
 ms.assetid: 39cb4015-7745-4d13-bb31-76378b217cfd
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: GET_LOCAL_HOST_INFO2, GET_LOCAL_HOST_INFO2, *PGET_LOCAL_HOST_INFO2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef struct _GET_LOCAL_HOST_INFO2 {
 ## -struct-fields
 <dl>
 
-### -field <b>HostCapabilities</b>
+### -field HostCapabilities
 
 <dd>
 <p>Indicates the host capabilities. The following table lists the values that can be assigned to th is member:
@@ -108,13 +108,13 @@ typedef struct _GET_LOCAL_HOST_INFO2 {
 <p> </p>
 </dd>
 
-### -field <b>MaxAsyncReadRequest</b>
+### -field MaxAsyncReadRequest
 
 <dd>
 <p>The bus driver fills in this member with the maximum size asynchronous read request that the host controller supports.</p>
 </dd>
 
-### -field <b>MaxAsyncWriteRequest</b>
+### -field MaxAsyncWriteRequest
 
 <dd>
 <p>The bus driver fills in this member with the maximum size asynchronous write request that the host controller supports.</p>
@@ -159,4 +159,4 @@ typedef struct _GET_LOCAL_HOST_INFO2 {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20GET_LOCAL_HOST_INFO2 structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20GET_LOCAL_HOST_INFO2 structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

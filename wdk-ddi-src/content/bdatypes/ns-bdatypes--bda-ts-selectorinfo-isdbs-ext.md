@@ -54,7 +54,7 @@ typedef struct _BDA_TS_SELECTORINFO_ISDBS_EXT {
 ## -struct-fields
 <dl>
 
-### -field <b>bTMCC</b>
+### -field bTMCC
 
 <dd></dd>
 </dl>

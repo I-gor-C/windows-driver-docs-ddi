@@ -59,37 +59,37 @@ typedef enum _TRACK_MODE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="YellowMode2"></a><a id="yellowmode2"></a><a id="YELLOWMODE2"></a><b>YellowMode2</b>
+### -field YellowMode2
 
 <dd>
 <p>Indicates that CD-ROM mode should be used. This mode is used with read-only 120 mm Optical Data Discs (CD-ROM). For more information, see the ISO/IEC 10149 specification.</p>
 </dd>
 
-### -field <a id="XAForm2"></a><a id="xaform2"></a><a id="XAFORM2"></a><b>XAForm2</b>
+### -field XAForm2
 
 <dd>
 <p>Indicates that compact disc read-only memory extended architecture mode should be used. For more information see the specification for CD-ROM XA published by NV Philips and Sony Corporation.</p>
 </dd>
 
-### -field <a id="CDDA"></a><a id="cdda"></a><b>CDDA</b>
+### -field CDDA
 
 <dd>
 <p>Indicates that digital audio information mode should be used. For more information, see the IEC 908:1987 specification.</p>
 </dd>
 
-### -field <a id="RawWithC2AndSubCode"></a><a id="rawwithc2andsubcode"></a><a id="RAWWITHC2ANDSUBCODE"></a><b>RawWithC2AndSubCode</b>
+### -field RawWithC2AndSubCode
 
 <dd>
 <p>CD_RAW_SECTOR_WITH_C2_AND_SUBCODE_SIZE per sector</p>
 </dd>
 
-### -field <a id="RawWithC2"></a><a id="rawwithc2"></a><a id="RAWWITHC2"></a><b>RawWithC2</b>
+### -field RawWithC2
 
 <dd>
 <p>CD_RAW_SECTOR_WITH_C2_SIZE per sector</p>
 </dd>
 
-### -field <a id="RawWithSubCode"></a><a id="rawwithsubcode"></a><a id="RAWWITHSUBCODE"></a><b>RawWithSubCode</b>
+### -field RawWithSubCode
 
 <dd>
 <p>CD_RAW_SECTOR_WITH_SUBCODE_SIZE per sector</p>

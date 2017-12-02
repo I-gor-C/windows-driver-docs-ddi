@@ -7,7 +7,7 @@ old-location: spb\spb_transfer_buffer.htm
 old-project: SPB
 ms.assetid: E9C5B866-1EB0-4043-B22F-DF2F4CFAE64C
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/30/2017
 ms.keywords: SPB_TRANSFER_BUFFER,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ typedef struct _SPB_TRANSFER_BUFFER {
 ## -struct-fields
 <dl>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>The buffer format.  This member is set to one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/hh406216">SPB_TRANSFER_BUFFER_FORMAT</a> enumeration values:</p>
@@ -76,25 +76,25 @@ typedef struct _SPB_TRANSFER_BUFFER {
 <p><b>SpbTransferBufferFormatMdl</b> is a valid value only for I/O transfer sequences that are requested by clients of the SPB controller driver that are kernel-mode components.</p>
 </dd>
 
-### -field <b>Simple</b>
+### -field Simple
 
 <dd>
 <p>A SPB_TRANSFER_BUFFER_LIST_ENTRY  structure that specifies the base address and the length of a simple transfer buffer. Use this member of the union if <b>Format</b> is <b>SpbTransferBufferFormatSimple</b> or <b>SpbTransferBufferFormatSimpleNonPaged</b>. The <b>SpbTransferBufferFormatSimpleNonPaged</b> format is used only by kernel-mode clients.</p>
 </dd>
 
-### -field <b>BufferList</b>
+### -field BufferList
 
 <dd>
 <p>A scatter-gather list that consists of an array of buffer descriptors. Use this member of the union if <b>Format</b> is <b>SpbTransferBufferFormatList</b>.</p>
 <dl>
 
-### -field <b>List</b>
+### -field List
 
 <dd>
 <p>A pointer to an array of <b>SPB_TRANSFER_BUFFER_LIST_ENTRY</b> structures that describe the buffers in the scatter-gather list.</p>
 </dd>
 
-### -field <b>ListCe</b>
+### -field ListCe
 
 <dd>
 <p>The number of elements in the <b>List</b> array.</p>
@@ -102,7 +102,7 @@ typedef struct _SPB_TRANSFER_BUFFER {
 </dl>
 </dd>
 
-### -field <b>Mdl</b>
+### -field Mdl
 
 <dd>
 <p>A pointer to an MDL that describes the buffer. This member is used only by kernel-mode clients. Use this member of the union if <b>Format</b> is <b>SpbTransferBufferFormatMdl</b>. For more information, see Remarks.</p>
@@ -150,4 +150,4 @@ typedef struct _SPB_TRANSFER_BUFFER {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_BUFFER structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_BUFFER structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

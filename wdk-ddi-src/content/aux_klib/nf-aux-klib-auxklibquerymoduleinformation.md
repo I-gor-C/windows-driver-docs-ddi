@@ -56,19 +56,19 @@ NTSTATUS AuxKlibQueryModuleInformation(
 ## -parameters
 <dl>
 
-### -param <i>BufferSize</i> [in, out]
+### -param BufferSize [in, out]
 
 <dd>
 <p>A pointer to a location that contains or receives a buffer size, in bytes. If <i>QueryInfo</i> is <b>NULL</b>, the location receives the number of bytes that the driver must allocate for the array that receives the retrieved information. If <i>QueryInfo</i> is not <b>NULL</b>, the location must contain the specified number of bytes. </p>
 </dd>
 
-### -param <i>ElementSize</i> [in]
+### -param ElementSize [in]
 
 <dd>
 <p>The size, in bytes, of each element of the array that <i>QueryInfo</i> points to. This value must be <b>sizeof</b>(<b>AUX_MODULE_BASIC_INFO</b>) or <b>sizeof</b>(<b>AUX_MODULE_EXTENDED_INFO</b>).</p>
 </dd>
 
-### -param <i>QueryInfo</i> [out, optional]
+### -param QueryInfo [out, optional]
 
 <dd>
 <p>A pointer to an array of <a href="..\aux_klib\ns-aux-klib--aux-module-basic-info.md">AUX_MODULE_BASIC_INFO</a> or <a href="..\aux_klib\ns-aux-klib--aux-module-extended-info.md">AUX_MODULE_EXTENDED_INFO</a> structures that receives information about loaded image modules. If this pointer is <b>NULL</b>, <b>AuxKlibQueryModuleInformation</b> writes the required buffer size to the location that <i>BufferSize</i> points to.</p>

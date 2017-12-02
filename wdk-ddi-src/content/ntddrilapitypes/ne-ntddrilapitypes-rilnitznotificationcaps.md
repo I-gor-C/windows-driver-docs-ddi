@@ -7,7 +7,7 @@ old-location: netvista\rilnitznotificationcaps.htm
 old-project: netvista
 ms.assetid: fa678bfa-ebcc-4950-951a-47f9bba98131
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILNITZNOTIFICATIONCAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CAPS_NITZ_ENABLED"></a><a id="ril_caps_nitz_enabled"></a><b>RIL_CAPS_NITZ_ENABLED</b>
+### -field RIL_CAPS_NITZ_ENABLED
 
 <dd></dd>
 
-### -field <a id="RIL_CAPS_NITZ_MAX"></a><a id="ril_caps_nitz_max"></a><b>RIL_CAPS_NITZ_MAX</b>
+### -field RIL_CAPS_NITZ_MAX
 
 <dd></dd>
 </dl>

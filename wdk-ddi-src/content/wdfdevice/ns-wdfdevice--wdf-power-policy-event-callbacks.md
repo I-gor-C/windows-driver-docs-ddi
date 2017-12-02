@@ -7,7 +7,7 @@ old-location: wdf\wdf_power_policy_event_callbacks.htm
 old-project: wdf
 ms.assetid: 6932c938-e477-4a18-9ada-bb3864c6a6f1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_POWER_POLICY_EVENT_CALLBACKS, WDF_POWER_POLICY_EVENT_CALLBACKS, *PWDF_POWER_POLICY_EVENT_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,49 +63,49 @@ typedef struct _WDF_POWER_POLICY_EVENT_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>EvtDeviceArmWakeFromS0</b>
+### -field EvtDeviceArmWakeFromS0
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-arm-wake-from-s0.md">EvtDeviceArmWakeFromS0</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceDisarmWakeFromS0</b>
+### -field EvtDeviceDisarmWakeFromS0
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-disarm-wake-from-s0.md">EvtDeviceDisarmWakeFromS0</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceWakeFromS0Triggered</b>
+### -field EvtDeviceWakeFromS0Triggered
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-wake-from-s0-triggered.md">EvtDeviceWakeFromS0Triggered</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceArmWakeFromSx</b>
+### -field EvtDeviceArmWakeFromSx
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-arm-wake-from-sx.md">EvtDeviceArmWakeFromSx</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceDisarmWakeFromSx</b>
+### -field EvtDeviceDisarmWakeFromSx
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-disarm-wake-from-sx.md">EvtDeviceDisarmWakeFromSx</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceWakeFromSxTriggered</b>
+### -field EvtDeviceWakeFromSxTriggered
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-wake-from-sx-triggered.md">EvtDeviceWakeFromSxTriggered</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceArmWakeFromSxWithReason</b>
+### -field EvtDeviceArmWakeFromSxWithReason
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-arm-wake-from-sx-with-reason.md">EvtDeviceArmWakeFromSxWithReason</a> event callback function, or <b>NULL</b>.</p>
@@ -155,4 +155,4 @@ typedef struct _WDF_POWER_POLICY_EVENT_CALLBACKS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_POWER_POLICY_EVENT_CALLBACKS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_POWER_POLICY_EVENT_CALLBACKS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

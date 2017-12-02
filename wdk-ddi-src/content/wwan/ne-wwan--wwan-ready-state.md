@@ -7,7 +7,7 @@ old-location: netvista\wwan_ready_state.htm
 old-project: netvista
 ms.assetid: 46fec377-ba2c-469a-96be-23aa07079f8c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,43 +62,43 @@ typedef enum _WWAN_READY_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanReadyStateOff"></a><a id="wwanreadystateoff"></a><a id="WWANREADYSTATEOFF"></a><b>WwanReadyStateOff</b>
+### -field WwanReadyStateOff
 
 <dd>
 <p>The device firmware stack is OFF or has not yet completed its initialization.</p>
 </dd>
 
-### -field <a id="WwanReadyStateInitialized"></a><a id="wwanreadystateinitialized"></a><a id="WWANREADYSTATEINITIALIZED"></a><b>WwanReadyStateInitialized</b>
+### -field WwanReadyStateInitialized
 
 <dd>
 <p>The device is ready to turn on and register with the provider.</p>
 </dd>
 
-### -field <a id="WwanReadyStateSimNotInserted"></a><a id="wwanreadystatesimnotinserted"></a><a id="WWANREADYSTATESIMNOTINSERTED"></a><b>WwanReadyStateSimNotInserted</b>
+### -field WwanReadyStateSimNotInserted
 
 <dd>
 <p>The SIM card is not inserted into the device.</p>
 </dd>
 
-### -field <a id="WwanReadyStateBadSim"></a><a id="wwanreadystatebadsim"></a><a id="WWANREADYSTATEBADSIM"></a><b>WwanReadyStateBadSim</b>
+### -field WwanReadyStateBadSim
 
 <dd>
 <p>The SIM card inserted into the device is invalid.</p>
 </dd>
 
-### -field <a id="WwanReadyStateFailure"></a><a id="wwanreadystatefailure"></a><a id="WWANREADYSTATEFAILURE"></a><b>WwanReadyStateFailure</b>
+### -field WwanReadyStateFailure
 
 <dd>
 <p>A general device failure has occurred.</p>
 </dd>
 
-### -field <a id="WwanReadyStateNotActivated"></a><a id="wwanreadystatenotactivated"></a><a id="WWANREADYSTATENOTACTIVATED"></a><b>WwanReadyStateNotActivated</b>
+### -field WwanReadyStateNotActivated
 
 <dd>
 <p>The subscription is not activated.</p>
 </dd>
 
-### -field <a id="WwanReadyStateDeviceLocked"></a><a id="wwanreadystatedevicelocked"></a><a id="WWANREADYSTATEDEVICELOCKED"></a><b>WwanReadyStateDeviceLocked</b>
+### -field WwanReadyStateDeviceLocked
 
 <dd>
 <p>The device is locked and requires PIN1 or PUK1 to unlock.
@@ -145,4 +145,4 @@ typedef enum _WWAN_READY_STATE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_READY_STATE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_READY_STATE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

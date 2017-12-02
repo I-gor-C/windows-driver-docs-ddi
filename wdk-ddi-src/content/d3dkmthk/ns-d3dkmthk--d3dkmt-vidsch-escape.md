@@ -70,36 +70,36 @@ typedef struct _D3DKMT_VIDSCH_ESCAPE {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The escape type, of type <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-vidschescapetype.md">D3DKMT_VIDSCHESCAPETYPE</a>, which is reserved and should not be used in your driver.</p>
 </dd>
 
-### -field <b>PreemptionControl</b>
+### -field PreemptionControl
 
 <dd>
 <p>Enable or disable preemption.</p>
 </dd>
 
-### -field <b>EnableContextDelay</b>
+### -field EnableContextDelay
 
 <dd>
 <p>Enable or disable context delay.</p>
 </dd>
 
-### -field <b>TdrControl2</b>
+### -field TdrControl2
 
 <dd>
 <dl>
 
-### -field <b>TdrControl</b>
+### -field TdrControl
 
 <dd>
 <p>Control TDR.</p>
 </dd>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>Valid if <b>TdrControl</b> is set to a value of <b>D3DKMT_TDRDBGCTRLTYPE_ENGINETDR</b>.</p>
@@ -107,19 +107,19 @@ typedef struct _D3DKMT_VIDSCH_ESCAPE {
 </dl>
 </dd>
 
-### -field <b>SuspendScheduler</b>
+### -field SuspendScheduler
 
 <dd>
 <p>Suspend or resume scheduler (obsolete).</p>
 </dd>
 
-### -field <b>TdrControl</b>
+### -field TdrControl
 
 <dd>
 <p>Control TDR.</p>
 </dd>
 
-### -field <b>SuspendTime</b>
+### -field SuspendTime
 
 <dd>
 <p>Time period to suspend.</p>

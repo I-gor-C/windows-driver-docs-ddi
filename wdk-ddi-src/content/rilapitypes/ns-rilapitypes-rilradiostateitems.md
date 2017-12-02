@@ -7,7 +7,7 @@ old-location: netvista\rilradiostateitems_2.htm
 old-project: netvista
 ms.assetid: 41f8c9fc-7793-47c8-b381-4ef59dfde6b8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILRADIOSTATEITEMS, RILRADIOSTATEITEMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILRADIOSTATEITEMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwGroupId</b>
+### -field dwGroupId
 
 <dd></dd>
 
-### -field <b>dwCntItems</b>
+### -field dwCntItems
 
 <dd></dd>
 
-### -field <b>rilItems</b>
+### -field rilItems
 
 <dd></dd>
 </dl>

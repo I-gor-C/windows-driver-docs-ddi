@@ -59,37 +59,37 @@ typedef enum _DXGK_GLITCH_DURATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_GLITCH_DURATION_INDEFINITE"></a><a id="dxgk_glitch_duration_indefinite"></a><b>DXGK_GLITCH_DURATION_INDEFINITE</b>
+### -field DXGK_GLITCH_DURATION_INDEFINITE
 
 <dd>
 <p>Indicates that a glitch is unresolved.</p>
 </dd>
 
-### -field <a id="DXGK_GLITCH_DURATION_MULTI_FRAME"></a><a id="dxgk_glitch_duration_multi_frame"></a><b>DXGK_GLITCH_DURATION_MULTI_FRAME</b>
+### -field DXGK_GLITCH_DURATION_MULTI_FRAME
 
 <dd>
 <p>Indicates that a glitch lasted for multiple frames.</p>
 </dd>
 
-### -field <a id="DXGK_GLITCH_DURATION_SINGLE_FRAME"></a><a id="dxgk_glitch_duration_single_frame"></a><b>DXGK_GLITCH_DURATION_SINGLE_FRAME</b>
+### -field DXGK_GLITCH_DURATION_SINGLE_FRAME
 
 <dd>
 <p>Indicates that a glitch lasted for no more than one frame.</p>
 </dd>
 
-### -field <a id="DXGK_GLITCH_DURATION_MULTI_LINE"></a><a id="dxgk_glitch_duration_multi_line"></a><b>DXGK_GLITCH_DURATION_MULTI_LINE</b>
+### -field DXGK_GLITCH_DURATION_MULTI_LINE
 
 <dd>
 <p>Indicates that a glitch lasted for multiple lines within a frame.</p>
 </dd>
 
-### -field <a id="DXGK_GLITCH_DURATION_SINGLE_LINE"></a><a id="dxgk_glitch_duration_single_line"></a><b>DXGK_GLITCH_DURATION_SINGLE_LINE</b>
+### -field DXGK_GLITCH_DURATION_SINGLE_LINE
 
 <dd>
 <p>Indicates that a glitch lasted for no more than one line.</p>
 </dd>
 
-### -field <a id="DXGK_GLITCH_DURATION_NONE"></a><a id="dxgk_glitch_duration_none"></a><b>DXGK_GLITCH_DURATION_NONE</b>
+### -field DXGK_GLITCH_DURATION_NONE
 
 <dd>
 <p>Indicates that there was no user visible glitch.</p>

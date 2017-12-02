@@ -57,25 +57,25 @@ typedef struct _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnTargetId</b>
+### -field VidPnTargetId
 
 <dd>
 <p>[in] The zero-based identification number of the video present target in a path of a video present network (VidPN) topology. This number represents the video present target where the vertical sync occurs.</p>
 </dd>
 
-### -field <b>PhysicalAdapterMask</b>
+### -field PhysicalAdapterMask
 
 <dd>
 <p>[in] The physical adapter mask where the vertical sync occurs. If this member contains a valid value, the driver must also set the ValidPhysicalAdapterMask bit-field flag in the Flags member.</p>
 </dd>
 
-### -field <b>LayerIndex</b>
+### -field LayerIndex
 
 <dd>
 <p>[in] The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom. </p>
 </dd>
 
-### -field <b>PresentId</b>
+### -field PresentId
 
 <dd>
 <p>      [in] 64 bit integer value representing each flip request for a particular MPO plane.</p>

@@ -7,7 +7,7 @@ old-location: netvista\wdi_tx_metadata.htm
 old-project: netvista
 ms.assetid: 21833980-0098-43c2-822c-9d8292f7120a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDI_TX_METADATA, WDI_TX_METADATA, *PWDI_TX_METADATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,91 +69,91 @@ typedef struct _WDI_TX_METADATA {
 ## -struct-fields
 <dl>
 
-### -field <b>PortID</b>
+### -field PortID
 
 <dd>
 <p>Port ID of the frame.</p>
 </dd>
 
-### -field <b>PeerID</b>
+### -field PeerID
 
 <dd>
 <p>Peer ID of the frame (only if <b>TargetPriorityQueueing</b> is false).</p>
 </dd>
 
-### -field <b>ExTID</b>
+### -field ExTID
 
 <dd>
 <p>Extended TID of the frame (only if <b>TargetPriorityQueueing</b> is false).</p>
 </dd>
 
-### -field <b>IsUnicast</b>
+### -field IsUnicast
 
 <dd>
 <p>Specifies if the frame is for a unicast recipient address.</p>
 </dd>
 
-### -field <b>bAllowLegacyRates</b>
+### -field bAllowLegacyRates
 
 <dd>
 <p>Specifies if legacy rates should be used for transmitting the frame.</p>
 </dd>
 
-### -field <b>Ethertype</b>
+### -field Ethertype
 
 <dd>
 <p>Specifies the Ethertype of the frame.</p>
 </dd>
 
-### -field <b>bTxCompleteRequired</b>
+### -field bTxCompleteRequired
 
 <dd>
 <p>Specifies if an <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-tx-send-complete-ind.md">NdisWdiTxSendCompleteIndication</a> is required for this frame.</p>
 </dd>
 
-### -field <b>PnLength</b>
+### -field PnLength
 
 <dd>
 <p>Specifies the PnLength for the frame. This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.</p>
 </dd>
 
-### -field <b>TxCost</b>
+### -field TxCost
 
 <dd>
 <p>Specifies the number of credits required to dequeue the frame.</p>
 </dd>
 
-### -field <b>ExemptionAction</b>
+### -field ExemptionAction
 
 <dd>
 <p>Specifies the <a href="..\dot11wdi\ne-dot11wdi--wdi-exemption-action-type.md">WDI_EXEMPTION_ACTION_TYPE</a> value for this frame.</p>
 </dd>
 
-### -field <b>MpduPn</b>
+### -field MpduPn
 
 <dd>
 <p>Specifies the MpduPn for the frame. This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.</p>
 </dd>
 
-### -field <b>ReplayIHVReserved0</b>
+### -field ReplayIHVReserved0
 
 <dd>
 <p>Reserved for use by the IHV miniport for Requeued/Replayed TX frames. This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.  </p>
 </dd>
 
-### -field <b>ReplayIHVReserved1</b>
+### -field ReplayIHVReserved1
 
 <dd>
 <p>Reserved for use by the IHV miniport for Requeued/Replayed TX frames. This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.  </p>
 </dd>
 
-### -field <b>SeqCtl</b>
+### -field SeqCtl
 
 <dd>
 <p>Specifies the SeqCtl (if necessary). This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.</p>
 </dd>
 
-### -field <b>wPad</b>
+### -field wPad
 
 <dd>
 <p>Reserved.</p>
@@ -204,4 +204,4 @@ typedef struct _WDI_TX_METADATA {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDI_TX_METADATA structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDI_TX_METADATA structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

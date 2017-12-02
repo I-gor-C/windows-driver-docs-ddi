@@ -7,7 +7,7 @@ old-location: netvista\ndis_ipv4_header_field.htm
 old-project: netvista
 ms.assetid: 5B7C4107-1724-473C-8F36-C345A056F3DC
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT, *PGET_CONFIGURATION_IOCTL_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef enum _NDIS_IPV4_HEADER_FIELD {
 ## -enum-fields
 <dl>
 
-### -field <a id="NdisIPv4HeaderFieldUndefined"></a><a id="ndisipv4headerfieldundefined"></a><a id="NDISIPV4HEADERFIELDUNDEFINED"></a><b>NdisIPv4HeaderFieldUndefined</b>
+### -field NdisIPv4HeaderFieldUndefined
 
 <dd>
 <p>An undefined IPV4 header field.</p>
 </dd>
 
-### -field <a id="NdisIPv4HeaderFieldProtocol"></a><a id="ndisipv4headerfieldprotocol"></a><a id="NDISIPV4HEADERFIELDPROTOCOL"></a><b>NdisIPv4HeaderFieldProtocol</b>
+### -field NdisIPv4HeaderFieldProtocol
 
 <dd>
 <p>The IPv4 protocol field.</p>
 </dd>
 
-### -field <a id="NdisIPv4HeaderFieldMaximum"></a><a id="ndisipv4headerfieldmaximum"></a><a id="NDISIPV4HEADERFIELDMAXIMUM"></a><b>NdisIPv4HeaderFieldMaximum</b>
+### -field NdisIPv4HeaderFieldMaximum
 
 <dd>
 <p>The maximum value for this enumeration. This value might change in future versions of the NDIS
@@ -112,4 +112,4 @@ typedef enum _NDIS_IPV4_HEADER_FIELD {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPV4_HEADER_FIELD enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPV4_HEADER_FIELD enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

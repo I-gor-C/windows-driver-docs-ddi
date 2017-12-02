@@ -61,49 +61,49 @@ typedef enum _D3DKMT_PRESENT_MODEL {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_PM_UNINITIALIZED"></a><a id="d3dkmt_pm_uninitialized"></a><b>D3DKMT_PM_UNINITIALIZED</b>
+### -field D3DKMT_PM_UNINITIALIZED
 
 <dd>
 <p>The present-operation model is not initialized. </p>
 </dd>
 
-### -field <a id="D3DKMT_PM_REDIRECTED_GDI"></a><a id="d3dkmt_pm_redirected_gdi"></a><b>D3DKMT_PM_REDIRECTED_GDI</b>
+### -field D3DKMT_PM_REDIRECTED_GDI
 
 <dd>
 <p>The present-operation model is redirected GDI. </p>
 </dd>
 
-### -field <a id="D3DKMT_PM_REDIRECTED_FLIP"></a><a id="d3dkmt_pm_redirected_flip"></a><b>D3DKMT_PM_REDIRECTED_FLIP</b>
+### -field D3DKMT_PM_REDIRECTED_FLIP
 
 <dd>
 <p>The present-operation model is redirected flip. </p>
 </dd>
 
-### -field <a id="D3DKMT_PM_REDIRECTED_BLT"></a><a id="d3dkmt_pm_redirected_blt"></a><b>D3DKMT_PM_REDIRECTED_BLT</b>
+### -field D3DKMT_PM_REDIRECTED_BLT
 
 <dd>
 <p>The present-operation model is redirected bit-block transfer (bitblt). </p>
 </dd>
 
-### -field <a id="D3DKMT_PM_REDIRECTED_VISTABLT"></a><a id="d3dkmt_pm_redirected_vistablt"></a><b>D3DKMT_PM_REDIRECTED_VISTABLT</b>
+### -field D3DKMT_PM_REDIRECTED_VISTABLT
 
 <dd>
 <p>The present-operation model is redirected Windows Vista bitblt.</p>
 </dd>
 
-### -field <a id="D3DKMT_PM_SCREENCAPTUREFENCE"></a><a id="d3dkmt_pm_screencapturefence"></a><b>D3DKMT_PM_SCREENCAPTUREFENCE</b>
+### -field D3DKMT_PM_SCREENCAPTUREFENCE
 
 <dd>
 <p>The present-operation model is screen capture through a fence. </p>
 </dd>
 
-### -field <a id="D3DKMT_PM_REDIRECTED_GDI_SYSMEM"></a><a id="d3dkmt_pm_redirected_gdi_sysmem"></a><b>D3DKMT_PM_REDIRECTED_GDI_SYSMEM</b>
+### -field D3DKMT_PM_REDIRECTED_GDI_SYSMEM
 
 <dd>
 <p>The present-operation model is redirected system GDI. </p>
 </dd>
 
-### -field <a id="D3DKMT_PM_REDIRECTED_COMPOSITION"></a><a id="d3dkmt_pm_redirected_composition"></a><b>D3DKMT_PM_REDIRECTED_COMPOSITION</b>
+### -field D3DKMT_PM_REDIRECTED_COMPOSITION
 
 <dd>
 <p>The present-operation model is redirected composition swap chain presentation. This type of presentation is used for XAML-based apps.</p>

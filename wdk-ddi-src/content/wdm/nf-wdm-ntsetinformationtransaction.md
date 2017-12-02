@@ -58,25 +58,25 @@ NTSTATUS ZwSetInformationTransaction(
 ## -parameters
 <dl>
 
-### -param <i>TransactionHandle</i> [in]
+### -param TransactionHandle [in]
 
 <dd>
 <p>A handle to a <a href="https://msdn.microsoft.com/124105bd-70be-49b1-8ea4-af6ba1f3cf16">transaction object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a> or <a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>. The handle must have TRANSACTION_SET_INFORMATION access to the object.</p>
 </dd>
 
-### -param <i>TransactionInformationClass</i> [in]
+### -param TransactionInformationClass [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--transaction-information-class.md">TRANSACTION_INFORMATION_CLASS</a>-typed value that specifies the type of information to set. The value must be <b>TransactionPropertiesInformation</b>.</p>
 </dd>
 
-### -param <i>TransactionInformation</i> [in]
+### -param TransactionInformation [in]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that contains the information to set. The buffer's structure type must be <a href="..\wdm\ns-wdm--transaction-properties-information.md">TRANSACTION_PROPERTIES_INFORMATION</a>.</p>
 </dd>
 
-### -param <i>TransactionInformationLength</i> [in]
+### -param TransactionInformationLength [in]
 
 <dd>
 <p>The length, in bytes, of the buffer that the <i>TransactionInformation</i> parameter points to.</p>

@@ -56,19 +56,19 @@ typedef enum D3D11_DDI_CREATEDEPTHSTENCILVIEW_FLAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_DDI_CREATE_DSV_READ_ONLY_DEPTH"></a><a id="d3d11_ddi_create_dsv_read_only_depth"></a><b>D3D11_DDI_CREATE_DSV_READ_ONLY_DEPTH</b>
+### -field D3D11_DDI_CREATE_DSV_READ_ONLY_DEPTH
 
 <dd>
 <p>The driver should create a read-only depth view. </p>
 </dd>
 
-### -field <a id="D3D11_DDI_CREATE_DSV_READ_ONLY_STENCIL"></a><a id="d3d11_ddi_create_dsv_read_only_stencil"></a><b>D3D11_DDI_CREATE_DSV_READ_ONLY_STENCIL</b>
+### -field D3D11_DDI_CREATE_DSV_READ_ONLY_STENCIL
 
 <dd>
 <p>The driver should create a read-only stencil view.</p>
 </dd>
 
-### -field <a id="D3D11_DDI_CREATE_DSV_FLAG_MASK"></a><a id="d3d11_ddi_create_dsv_flag_mask"></a><b>D3D11_DDI_CREATE_DSV_FLAG_MASK</b>
+### -field D3D11_DDI_CREATE_DSV_FLAG_MASK
 
 <dd>
 <p>A mask value that indicates the valid bitfields in a bitwise OR combination of the values from this enumeration. </p>

@@ -7,7 +7,7 @@ old-location: netvista\wskreceive.htm
 old-project: netvista
 ms.assetid: 7fe65842-8ddb-4aca-931f-03b35dd2b039
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ NTSTATUS WSKAPI * WskReceive(
 ## -parameters
 <dl>
 
-### -param <i>Socket</i> [in]
+### -param Socket [in]
 
 <dd>
 <p>A pointer to a 
@@ -68,7 +68,7 @@ NTSTATUS WSKAPI * WskReceive(
      object for the socket from which to receive the data.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to an initialized 
@@ -76,7 +76,7 @@ NTSTATUS WSKAPI * WskReceive(
      that receives the data from the socket.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of a combination of the following flags:
@@ -84,7 +84,7 @@ NTSTATUS WSKAPI * WskReceive(
 <p></p>
 <dl>
 
-### -param <a id="WSK_FLAG_WAITALL"></a><a id="wsk_flag_waitall"></a>WSK_FLAG_WAITALL
+### -param WSK_FLAG_WAITALL
 
 <dd>
 <p>Wait until the data buffer is completely filled. If this flag is specified, the IRP specified in
@@ -111,7 +111,7 @@ NTSTATUS WSKAPI * WskReceive(
        by other transport protocols.</p>
 </dd>
 
-### -param <a id="WSK_FLAG_DRAIN"></a><a id="wsk_flag_drain"></a>WSK_FLAG_DRAIN
+### -param WSK_FLAG_DRAIN
 
 <dd>
 <p>Wait until the socket is disconnected, discarding any data that is received on the socket. If
@@ -142,7 +142,7 @@ NTSTATUS WSKAPI * WskReceive(
      specify both of these flags at the same time.</p>
 </dd>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the receive operation
@@ -299,4 +299,4 @@ NTSTATUS WSKAPI * WskReceive(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_RECEIVE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_RECEIVE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

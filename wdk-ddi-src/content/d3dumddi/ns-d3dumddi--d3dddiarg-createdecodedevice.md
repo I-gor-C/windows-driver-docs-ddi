@@ -57,25 +57,25 @@ typedef struct _D3DDDIARG_CREATEDECODEDEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>pGuid</b>
+### -field pGuid
 
 <dd>
 <p>[in] A pointer to the GUID that represents the DirectX VA decode type. The Microsoft Direct3D runtime calls the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function to query for the supported GUIDs.</p>
 </dd>
 
-### -field <b>VideoDesc</b>
+### -field VideoDesc
 
 <dd>
 <p>[in] The <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videodesc.md">DXVADDI_VIDEODESC</a> structure for the video stream that the decode device should decode.</p>
 </dd>
 
-### -field <b>pConfig</b>
+### -field pConfig
 
 <dd>
 <p>[in] A pointer to the <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-configpicturedecode.md">DXVADDI_CONFIGPICTUREDECODE</a> structure that contains the DirectX VA connection configuration data for compressed picture decoding that the decode device requires. The Direct3D runtime calls the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function to query for the supported configurations.</p>
 </dd>
 
-### -field <b>hDecode</b>
+### -field hDecode
 
 <dd>
 <p>[in/out] A handle to the decode device. The user-mode display driver must set this handle to a value that the Direct3D runtime can use to identify the decode device in subsequent calls.</p>

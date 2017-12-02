@@ -58,25 +58,25 @@ PVOID VideoPortGetRomImage(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>Unused1</i> [in]
+### -param Unused1 [in]
 
 <dd>
 <p>Currently ignored by the video port driver; should be set to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Unused2</i> [in]
+### -param Unused2 [in]
 
 <dd>
 <p>Currently ignored by the video port driver; should be set to zero.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Either the number of bytes of ROM data that the video port driver should read and return, or zero.</p>

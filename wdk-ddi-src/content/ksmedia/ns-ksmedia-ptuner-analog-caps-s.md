@@ -61,7 +61,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>The current tuner mode, which can be represented by one of the following tuner mode flags from the KSPROPERTY_TUNER_MODES enumeration that is defined in <i>Ksmedia.h.</i></p>
@@ -114,44 +114,44 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>StandardsSupported</b>
+### -field StandardsSupported
 
 <dd>
 <p>If the <b>Mode</b> member is set to KSPROPERTY_TUNER_MODE_TV or KSPROPERTY_TUNER_MODE_DSS, a bitwise OR of values from the <a href="..\ksmedia\ne-ksmedia-ks-analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration that indicates the analog video standards that the tuner supports. Otherwise, this member is ignored.</p>
 </dd>
 
-### -field <b>MinFrequency</b>
+### -field MinFrequency
 
 <dd>
 <p>The lowest frequency, in Hz, that the tuner supports. </p>
 </dd>
 
-### -field <b>MaxFrequency</b>
+### -field MaxFrequency
 
 <dd>
 <p>The highest frequency, in Hz, that the tuner supports. </p>
 </dd>
 
-### -field <b>TuningGranularity</b>
+### -field TuningGranularity
 
 <dd>
 <p>The smallest possible step size, in Hz, between two settings of the tuning frequency. </p>
 </dd>
 
-### -field <b>SettlingTime</b>
+### -field SettlingTime
 
 <dd>
 <p>The time, in milliseconds, for a new frequency setting to become stable.</p>
 <p><i>KsTvTune.ax</i> uses the value in <b>SettlingTime</b> to evaluate the total time its scanning algorithm might take so that it can determine wait time. The value in <b>SettlingTime</b> along with the number of stepping increments in the entire frequency range that is based on the sensing range should provide an estimate of the total time that is required for the scanning algorithm. </p>
 </dd>
 
-### -field <b>ScanSensingRange</b>
+### -field ScanSensingRange
 
 <dd>
 <p>The range that the tuning device provides and that the tuner filter uses to determine the presence of a signal. This range represents the larger step sizes that a signal search algorithm can use to advance through the range of frequencies to search. The driver can report the actual lock frequency of a signal and the lock status on the signal through a call to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff565893">KSPROPERTY_TUNER_SCAN_STATUS</a> property. If the driver reports the lock status as Tuner_LockType_Within_Scan_Sensing_Range in the <b>LockStatus</b> member of the <a href="stream.ksproperty_tuner_scan_status_s">KSPROPERTY_TUNER_SCAN_STATUS_S</a> structure, the increment step size changes to the smaller value in <b>FineTuneSensingRange</b> until the actual lock frequency is determined. </p>
 </dd>
 
-### -field <b>FineTuneSensingRange</b>
+### -field FineTuneSensingRange
 
 <dd>
 <p>The range that the tuning device provides and that the tuner filter uses to determine the actual frequency of a signal. The tuner filter uses this fine-tune-sensing range only when the underlying tuner hardware cannot support hardware-assisted scanning. The driver indicates such support by setting the <b>fSupportsHardwareAssistedScanning</b> member of the <a href="stream.ksproperty_tuner_scan_caps_s">KSPROPERTY_TUNER_SCAN_CAPS_S</a> structure to <b>TRUE</b> in a call to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff565887">KSPROPERTY_TUNER_SCAN_CAPS</a> property. When the tuner filter starts a scan, it initially probes the driver in increments within the range that the <b>ScanSensingRange</b> member specifies until the driver returns Tuner_LockType_Within_Scan_Sensing_Range. The tuner filter then switches into steps of <b>FineTuneSensingRange</b> until the driver reports a complete lock. </p>

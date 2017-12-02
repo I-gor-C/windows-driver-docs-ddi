@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwitype_2.htm
 old-project: netvista
 ms.assetid: 55f06d11-60b7-4dc0-8f78-eb9901d49d1a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef enum _RILMSGMWITYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGMWITYPE_VOICEMAIL"></a><a id="ril_msgmwitype_voicemail"></a><b>RIL_MSGMWITYPE_VOICEMAIL</b>
+### -field RIL_MSGMWITYPE_VOICEMAIL
 
 <dd></dd>
 
-### -field <a id="RIL_MSGMWITYPE_VIDEOMAIL"></a><a id="ril_msgmwitype_videomail"></a><b>RIL_MSGMWITYPE_VIDEOMAIL</b>
+### -field RIL_MSGMWITYPE_VIDEOMAIL
 
 <dd></dd>
 
-### -field <a id="RIL_MSGMWITYPE_FAX"></a><a id="ril_msgmwitype_fax"></a><b>RIL_MSGMWITYPE_FAX</b>
+### -field RIL_MSGMWITYPE_FAX
 
 <dd></dd>
 
-### -field <a id="RIL_MSGMWITYPE_PAGER"></a><a id="ril_msgmwitype_pager"></a><b>RIL_MSGMWITYPE_PAGER</b>
+### -field RIL_MSGMWITYPE_PAGER
 
 <dd></dd>
 
-### -field <a id="RIL_MSGMWITYPE_MULTIMEDIA"></a><a id="ril_msgmwitype_multimedia"></a><b>RIL_MSGMWITYPE_MULTIMEDIA</b>
+### -field RIL_MSGMWITYPE_MULTIMEDIA
 
 <dd></dd>
 
-### -field <a id="RIL_MSGMWITYPE_TEXT"></a><a id="ril_msgmwitype_text"></a><b>RIL_MSGMWITYPE_TEXT</b>
+### -field RIL_MSGMWITYPE_TEXT
 
 <dd></dd>
 
-### -field <a id="RIL_MSGMWITYPE_MAX"></a><a id="ril_msgmwitype_max"></a><b>RIL_MSGMWITYPE_MAX</b>
+### -field RIL_MSGMWITYPE_MAX
 
 <dd></dd>
 </dl>

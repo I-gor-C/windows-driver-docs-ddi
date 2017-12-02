@@ -56,19 +56,19 @@ LONG KePulseEvent(
 ## -parameters
 <dl>
 
-### -param <i>Event</i> [in, out]
+### -param Event [in, out]
 
 <dd>
 <p>A pointer to a dispatcher object of type KEVENT. </p>
 </dd>
 
-### -param <i>Increment</i> [in]
+### -param Increment [in]
 
 <dd>
 <p>Specifies the priority increment that is to be applied if setting the event causes a wait to be satisfied.</p>
 </dd>
 
-### -param <i>Wait</i> [in]
+### -param Wait [in]
 
 <dd>
 <p>Specifies a Boolean value that signifies whether the call to <b>KePulseEvent</b> will be immediately followed by a call to one of the <b>KeWait<i>Xxx</i></b> routines. If <b>TRUE</b>, the <b>KePulseEvent</b> call is immediately followed by a call to <a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>, <a href="kernel.kewaitformutexobject">KeWaitForMutexObject</a>, or <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>. For more information, see the following Remarks section.</p>

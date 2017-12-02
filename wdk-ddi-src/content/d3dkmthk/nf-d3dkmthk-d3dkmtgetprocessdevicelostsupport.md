@@ -56,7 +56,7 @@ NTSTATUS  D3DKMTGetProcessDeviceLostSupport(
 ## -parameters
 <dl>
 
-### -param <i>D3dkmt_getprocessdevicelostsupport</i> [in, out]
+### -param D3dkmt_getprocessdevicelostsupport [in, out]
 
 <dd>
 <p>Holds information to get the indicated process.</p>

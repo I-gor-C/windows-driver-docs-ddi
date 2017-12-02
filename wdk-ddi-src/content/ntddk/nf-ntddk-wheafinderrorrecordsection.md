@@ -57,26 +57,26 @@ NTSTATUS WheaFindErrorRecordSection(
 ## -parameters
 <dl>
 
-### -param <i>Record</i> [in]
+### -param Record [in]
 
 <dd>
 <p>A pointer to a WHEA <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a> that is formatted as a <a href="..\ntddk\ns-ntddk--whea-error-record.md">WHEA_ERROR_RECORD</a> structure.</p>
 </dd>
 
-### -param <i>SectionType</i> [in]
+### -param SectionType [in]
 
 <dd>
 <p>A GUID that specifies the <a href="..\ntddk\ns-ntddk--whea-error-record-section-descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structure to be located within the specified WHEA <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>.</p>
 </dd>
 
-### -param <i>SectionDescriptor</i> [out]
+### -param SectionDescriptor [out]
 
 <dd>
 <p>The address of a <a href="..\ntddk\ns-ntddk--whea-error-record-section-descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> pointer. </p>
 <p>If the <b>WheaFindErrorRecordSection</b> function locates the specified WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure, the function sets the <i>SectionDescriptor </i>parameter to the address of that structure within the specified WHEA <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>.</p>
 </dd>
 
-### -param <i>SectionData</i> [out, optional]
+### -param SectionData [out, optional]
 
 <dd>
 <p>The address of a PVOID pointer.</p>

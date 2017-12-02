@@ -60,37 +60,37 @@ typedef struct _PEP_QUERY_CURRENT_COMPONENT_PERF_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>Component</b>
+### -field Component
 
 <dd>
 <p>[in] The index that identifies the component. This member is an index into the <b>Components</b> array in the <a href="..\pepfx\ns-pepfx--pep-device-register-v2.md">PEP_DEVICE_REGISTER_V2</a> structure that the PEP previously supplied in response to the <b>PEP_DPM_REGISTER_DEVICE</b> notification for this device. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
 </dd>
 
-### -field <b>Set</b>
+### -field Set
 
 <dd>
 <p>[in] The index that identifies this P-state set. If M is the number of P-state sets for this component, P-state set indexes range from 0 to M–1. The PEP previously specified the number of P-state sets in response to a <a href="kernel.pep_dpm_query_component_perf_capabilities">PEP_DPM_QUERY_COMPONENT_PERF_CAPABILITIES</a> notification.</p>
 </dd>
 
-### -field ( <i>unnamed union</i> )
+### -field ( unnamed union )
 
 <dd>
 <p>The current performance level of this P-state set expressed either as an index into a set of discrete values or as a value in a range. In response to a previous <a href="kernel.pep_dpm_query_component_perf_set">PEP_DPM_QUERY_COMPONENT_PERF_SET</a> notification, the PEP indicated whether the performance values in the P-state set are of type <b>PoFxPerfStateTypeDiscrete</b> or <b>PoFxPerfStateTypeRange</b>.</p>
 <dl>
 
-### -field <b>StateIndex</b>
+### -field StateIndex
 
 <dd>
 <p>[out] The index of the current P-state for the specified P-state set. Write to this member if the performance values for the P-state set are of type <b>PoFxPerfStateTypeDiscrete</b>.</p>
 </dd>
 
-### -field <b>StateValue</b>
+### -field StateValue
 
 <dd>
 <p>[out] The value of the current P-state for the specified P-state set. Write to this member if the performance values for the P-state set are of type <b>PoFxPerfStateTypeRange</b>.</p>

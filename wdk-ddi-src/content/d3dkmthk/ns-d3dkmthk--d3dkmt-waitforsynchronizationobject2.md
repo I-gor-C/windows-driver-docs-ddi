@@ -62,31 +62,31 @@ typedef struct _D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] A kernel-mode handle to the context stream in which a wait for the synchronization events in the array that the <b>ObjectHandleArray</b> member specifies is inserted.</p>
 </dd>
 
-### -field <b>ObjectCount</b>
+### -field ObjectCount
 
 <dd>
 <p>[in] The number of synchronization events in the <b>ObjectHandleArray</b> array. </p>
 </dd>
 
-### -field <b>ObjectHandleArray</b>
+### -field ObjectHandleArray
 
 <dd>
 <p>[in] An array of kernel-mode handles to the synchronization events that the context that is specified by the <b>hContext</b> member waits for. The D3DDDI_MAX_OBJECT_WAITED_ON constant, which is defined as 32, indicates the maximum number of synchronization events that the context can wait for.</p>
 </dd>
 
-### -field <b>Fence</b>
+### -field Fence
 
 <dd>
 <p>A structure that contains information about a fence. The union in D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2 can hold a Fence structure, which contains the following member:</p>
 <dl>
 
-### -field <b>FenceValue</b>
+### -field FenceValue
 
 <dd>
 <p>A 64-bit value that specifies the fence value to wait for. </p>
@@ -94,7 +94,7 @@ typedef struct _D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2 {
 </dl>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>An array of 64-bit values that are reserved for future use. The union in D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2 can hold this array. </p>

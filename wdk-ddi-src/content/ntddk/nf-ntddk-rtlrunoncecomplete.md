@@ -56,26 +56,26 @@ NTSTATUS RtlRunOnceComplete(
 ## -parameters
 <dl>
 
-### -param <i>RunOnce</i> [in, out]
+### -param RunOnce [in, out]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a> one-time initialization structure.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Drivers can optionally specify one or more of the following flags:</p>
 <p></p>
 <dl>
 
-### -param <a id="RTL_RUN_ONCE_ASYNC"></a><a id="rtl_run_once_async"></a>RTL_RUN_ONCE_ASYNC
+### -param RTL_RUN_ONCE_ASYNC
 
 <dd>
 <p>Operate in asynchronous mode. This mode enables multiple completion attempts to execute in parallel. If this flag is used, subsequent calls to the <b>RtlRunOnceComplete</b> routine will fail unless this flag is also specified.</p>
 </dd>
 
-### -param <a id="RTL_RUN_ONCE_INIT_FAILED"></a><a id="rtl_run_once_init_failed"></a>RTL_RUN_ONCE_INIT_FAILED
+### -param RTL_RUN_ONCE_INIT_FAILED
 
 <dd>
 <p>The initialization attempt failed. </p>
@@ -83,7 +83,7 @@ NTSTATUS RtlRunOnceComplete(
 </dl>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Specifies the initialized data. </p>

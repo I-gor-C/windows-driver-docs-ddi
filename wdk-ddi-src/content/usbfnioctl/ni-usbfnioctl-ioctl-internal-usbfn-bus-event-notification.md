@@ -55,26 +55,26 @@ req.product: Windows 10 or later.
 <p>None.</p>
 
 ### -output-buffer
-<p>A pointer to a caller-allocated <a href="buses.usbfn_notification">USBFN_NOTIFICATION</a> 
+<p>A pointer to a caller-allocated <a href="..\usbfnbase\ns-usbfnbase--usbfn-notification.md">USBFN_NOTIFICATION</a> 
 			structure that UFX populates with the type of bus event and data associated with that event. </p>
 
-<p>A pointer to a caller-allocated <a href="buses.usbfn_notification">USBFN_NOTIFICATION</a> 
+<p>A pointer to a caller-allocated <a href="..\usbfnbase\ns-usbfnbase--usbfn-notification.md">USBFN_NOTIFICATION</a> 
 			structure that UFX populates with the type of bus event and data associated with that event. </p>
 
-<p>A pointer to a caller-allocated <a href="buses.usbfn_notification">USBFN_NOTIFICATION</a> 
+<p>A pointer to a caller-allocated <a href="..\usbfnbase\ns-usbfnbase--usbfn-notification.md">USBFN_NOTIFICATION</a> 
 			structure that UFX populates with the type of bus event and data associated with that event. </p>
 
 ### -output-buffer-length
-<p>The size of a <a href="buses.usbfn_notification">USBFN_NOTIFICATION</a> 
+<p>The size of a <a href="..\usbfnbase\ns-usbfnbase--usbfn-notification.md">USBFN_NOTIFICATION</a> 
 			structure.</p>
 
-<p>The size of a <a href="buses.usbfn_notification">USBFN_NOTIFICATION</a> 
+<p>The size of a <a href="..\usbfnbase\ns-usbfnbase--usbfn-notification.md">USBFN_NOTIFICATION</a> 
 			structure.</p>
 
-<p>The size of a <a href="buses.usbfn_notification">USBFN_NOTIFICATION</a> 
+<p>The size of a <a href="..\usbfnbase\ns-usbfnbase--usbfn-notification.md">USBFN_NOTIFICATION</a> 
 			structure.</p>
 
-<p>The size of a <a href="buses.usbfn_notification">USBFN_NOTIFICATION</a> 
+<p>The size of a <a href="..\usbfnbase\ns-usbfnbase--usbfn-notification.md">USBFN_NOTIFICATION</a> 
 			structure.</p>
 
 ### -in-out-buffer
@@ -117,10 +117,10 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbfn_event">USBFN_EVENT</a>
+<a href="..\usbfnbase\ne-usbfnbase--usbfn-event.md">USBFN_EVENT</a>
 </dt>
 <dt>
-<a href="buses.usbfn_notification">USBFN_NOTIFICATION</a>
+<a href="..\usbfnbase\ns-usbfnbase--usbfn-notification.md">USBFN_NOTIFICATION</a>
 </dt>
 </dl>
 <p> </p>

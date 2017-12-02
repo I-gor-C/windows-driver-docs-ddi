@@ -58,31 +58,31 @@ typedef struct _D3DKMT_RELEASEKEYEDMUTEX2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hKeyedMutex</b>
+### -field hKeyedMutex
 
 <dd>
 <p>[in] A value of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode handle to the keyed mutex object to release.</p>
 </dd>
 
-### -field <b>Key</b>
+### -field Key
 
 <dd>
 <p>[in] A 64-bit value that specifies the key value to release the mutex to.</p>
 </dd>
 
-### -field <b>FenceValue</b>
+### -field FenceValue
 
 <dd>
 <p>[in] A 64-bit value that specifies the current fence value of the GPU synchronization object.</p>
 </dd>
 
-### -field <b>pPrivateRuntimeData</b>
+### -field pPrivateRuntimeData
 
 <dd>
 <p>[in] A pointer to a caller-supplied buffer where the runtime private data associated with the resource is stored.</p>
 </dd>
 
-### -field <b>PrivateRuntimeDataSize</b>
+### -field PrivateRuntimeDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the buffer pointed to by the <b>pPrivateRuntimeData</b> member.</p>

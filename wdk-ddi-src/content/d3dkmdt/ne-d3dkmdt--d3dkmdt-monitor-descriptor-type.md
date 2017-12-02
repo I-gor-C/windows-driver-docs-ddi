@@ -57,25 +57,25 @@ typedef enum _D3DKMDT_MONITOR_DESCRIPTOR_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_MDT_UNINITIALIZED"></a><a id="d3dkmdt_mdt_uninitialized"></a><b>D3DKMDT_MDT_UNINITIALIZED</b>
+### -field D3DKMDT_MDT_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_MONITOR_DESCRIPTOR_TYPE has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MDT_VESA_EDID_V1_BASEBLOCK"></a><a id="d3dkmdt_mdt_vesa_edid_v1_baseblock"></a><b>D3DKMDT_MDT_VESA_EDID_V1_BASEBLOCK</b>
+### -field D3DKMDT_MDT_VESA_EDID_V1_BASEBLOCK
 
 <dd>
 <p>Indicates that the descriptor is an Extended Display Identification Data (EDID) base block.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MDT_VESA_EDID_V1_BLOCKMAP"></a><a id="d3dkmdt_mdt_vesa_edid_v1_blockmap"></a><b>D3DKMDT_MDT_VESA_EDID_V1_BLOCKMAP</b>
+### -field D3DKMDT_MDT_VESA_EDID_V1_BLOCKMAP
 
 <dd>
 <p>Indicates that the descriptor is an EDID block map.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MDT_OTHER"></a><a id="d3dkmdt_mdt_other"></a><b>D3DKMDT_MDT_OTHER</b>
+### -field D3DKMDT_MDT_OTHER
 
 <dd>
 <p>Indicates that the descriptor has a type other than those indicated by the previous values of this enumeration.</p>

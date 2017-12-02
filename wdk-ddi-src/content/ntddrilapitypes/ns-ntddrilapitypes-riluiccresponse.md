@@ -7,7 +7,7 @@ old-location: netvista\riluiccresponse.htm
 old-project: netvista
 ms.assetid: c584e508-b0f1-4809-808e-089e9a7fbcf9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUICCRESPONSE, RILUICCRESPONSE, *LPRILUICCRESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,27 +59,27 @@ typedef struct _RILUICCRESPONSE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwStatusWord1</b>
+### -field dwStatusWord1
 
 <dd></dd>
 
-### -field <b>dwStatusWord2</b>
+### -field dwStatusWord2
 
 <dd></dd>
 
-### -field <b>dwResponseSize</b>
+### -field dwResponseSize
 
 <dd></dd>
 
-### -field <b>pbResponse</b>
+### -field pbResponse
 
 <dd></dd>
 </dl>

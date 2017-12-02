@@ -61,51 +61,51 @@ typedef struct _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3 {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>An integer that identifies a video present source on the display adapter.</p>
 </dd>
 
-### -field <b>InputFlags</b>
+### -field InputFlags
 
 <dd>
 <p>A DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS structure that identifies the type of display operation to perform.</p>
 </dd>
 
-### -field <b>OutputFlags</b>
+### -field OutputFlags
 
 <dd>
 <p>A DXGK_SETVIPNSOURCEADDRESS_OUTPUT_FLAGS structure that returns information from the driver.</p>
 </dd>
 
-### -field <b>PlaneCount</b>
+### -field PlaneCount
 
 <dd>
 <p>The number of overlay planes in the ppPlanes list.</p>
 </dd>
 
-### -field <b>ppPlanes</b>
+### -field ppPlanes
 
 <dd>
 <p>An array of pointers to a DXGK_MULTIPLANE_OVERLAY_PLANE3 structures that specify the overlay planes to display.</p>
 </dd>
 
-### -field <b>pPostComposition</b>
+### -field pPostComposition
 
 <dd>
 <p>Pointer to a DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION structure containing virtual mode information and other transform information that should be applied after the planes have been composed.</p>
 <p>If NULL, no post composition transforms should be applied.</p>
 </dd>
 
-### -field <b>Duration</b>
+### -field Duration
 
 <dd>
 <p>The length of time, in units of 100 nanoseconds, between when the current present operation flips to the screen and the next vertical blanking interrupt occurs.</p>
 <p>If zero, the refresh rate should be the default rate based on the current mode.</p>
 </dd>
 
-### -field <b>pHDRMetaData</b>
+### -field pHDRMetaData
 
 <dd>
 <p>Pointer to a DXGK_HDR_METADATA structure indicating any metadata information that might be available. A NULL value indicates that no new metadata is available.</p>

@@ -58,34 +58,34 @@ typedef struct _HDAUDIO_DEVICE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size in bytes of the HDAUDIO_DEVICE_INFORMATION structure.</p>
 </dd>
 
-### -field <b>DeviceVersion</b>
+### -field DeviceVersion
 
 <dd>
 <p>Specifies the HD Audio controller device version.</p>
 </dd>
 
-### -field <b>DriverVersion</b>
+### -field DriverVersion
 
 <dd>
 <p>Specifies the HD Audio bus driver version.</p>
 </dd>
 
-### -field <b>CodecsDetected</b>
+### -field CodecsDetected
 
 <dd>
 <p>Specifies the number of codecs that the HD Audio controller detects on the HD Audio Link.</p>
 </dd>
 
-### -field <b>IsStripingSupported</b>
+### -field IsStripingSupported
 
 <dd>
-<p>Specifies whether the HD Audio controller supports <a href="NULL">striping</a>. If <b>TRUE</b>, it supports striping (with at least two SDO lines). If <b>FALSE</b>, it does not support striping.</p>
+<p>Specifies whether the HD Audio controller supports <a href="https://msdn.microsoft.com/29ab650c-0c3b-4693-a277-4d9ba63b7b66">striping</a>. If <b>TRUE</b>, it supports striping (with at least two SDO lines). If <b>FALSE</b>, it does not support striping.</p>
 </dd>
 </dl>
 

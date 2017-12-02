@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_register_mr.htm
 old-project: netvista
 ms.assetid: 082BBDE1-1B80-4306-96A1-DCD23910B0F7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,27 +62,27 @@ NTSTATUS NdkRegisterMr(
 ## -parameters
 <dl>
 
-### -param <i>pNdkMr</i> [in]
+### -param pNdkMr [in]
 
 <dd>
 <p>A pointer to an NDK memory region (MR) object
 (<a href="..\ndkpi\ns-ndkpi--ndk-mr.md">NDK_MR</a>).</p>
 </dd>
 
-### -param <i>Mdl</i> [in]
+### -param Mdl [in]
 
 <dd>
 <p>An MDL or chain of MDLs that represent a virtually contiguous memory region from the starting virtual address up to the number of bytes specified in the <i>Length</i> parameter.
 </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The number of bytes to register starting from the first MDL's virtual address. The first MDL's virtual address can be obtained by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554539">MmGetMdlVirtualAddress</a> macro. The length must not exceed the total number of bytes represented by the MDL chain.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A bitmask of flags that specify the access permissions for the registered memory region. The following flags can be set:</p>
@@ -94,7 +94,7 @@ NTSTATUS NdkRegisterMr(
 <tr>
 <td width="40%"><a id="NDK_MR_FLAG_ALLOW_LOCAL_READ"></a><a id="ndk_mr_flag_allow_local_read"></a><dl>
 
-### -param <b>NDK_MR_FLAG_ALLOW_LOCAL_READ</b>
+### -param NDK_MR_FLAG_ALLOW_LOCAL_READ
 
 
 ### -param 0x00000000
@@ -106,7 +106,7 @@ NTSTATUS NdkRegisterMr(
 <tr>
 <td width="40%"><a id="NDK_MR_FLAG_ALLOW_LOCAL_WRITE"></a><a id="ndk_mr_flag_allow_local_write"></a><dl>
 
-### -param <b>NDK_MR_FLAG_ALLOW_LOCAL_WRITE</b>
+### -param NDK_MR_FLAG_ALLOW_LOCAL_WRITE
 
 
 ### -param 0x00000001
@@ -118,7 +118,7 @@ NTSTATUS NdkRegisterMr(
 <tr>
 <td width="40%"><a id="NDK_MR_FLAG_ALLOW_REMOTE_READ"></a><a id="ndk_mr_flag_allow_remote_read"></a><dl>
 
-### -param <b>NDK_MR_FLAG_ALLOW_REMOTE_READ</b>
+### -param NDK_MR_FLAG_ALLOW_REMOTE_READ
 
 
 ### -param 0x00000002
@@ -130,7 +130,7 @@ NTSTATUS NdkRegisterMr(
 <tr>
 <td width="40%"><a id="NDK_MR_FLAG_ALLOW_REMOTE_WRITE"></a><a id="ndk_mr_flag_allow_remote_write"></a><dl>
 
-### -param <b>NDK_MR_FLAG_ALLOW_REMOTE_WRITE</b>
+### -param NDK_MR_FLAG_ALLOW_REMOTE_WRITE
 
 
 ### -param 0x00000005
@@ -142,7 +142,7 @@ NTSTATUS NdkRegisterMr(
 <tr>
 <td width="40%"><a id="NDK_MR_FLAG_RDMA_READ_SINK"></a><a id="ndk_mr_flag_rdma_read_sink"></a><dl>
 
-### -param <b>NDK_MR_FLAG_RDMA_READ_SINK</b>
+### -param NDK_MR_FLAG_RDMA_READ_SINK
 
 
 ### -param 0x00000008
@@ -155,13 +155,13 @@ NTSTATUS NdkRegisterMr(
 <p> </p>
 </dd>
 
-### -param <i>RequestCompletion</i> [in]
+### -param RequestCompletion [in]
 
 <dd>
 <p>A pointer to a request completion callback routine <i>NdkRequestCompletion</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-request-completion.md">NDK_FN_REQUEST_COMPLETION</a>).</p>
 </dd>
 
-### -param <i>RequestContext</i> [in, optional]
+### -param RequestContext [in, optional]
 
 <dd>
 <p>A context value to pass to the <i>Context</i> parameter of the  callback function that is specified in the <i>RequestCompletion</i> parameter.</p>
@@ -268,9 +268,9 @@ NTSTATUS NdkRegisterMr(
 <a href="..\ndkpi\ns-ndkpi--ndk-mr.md">NDK_MR</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Object Lifetime Requirements</a>
+<a href="netvista.ndkpi_object_lifetime_requirements">NDKPI Object Lifetime Requirements</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_REGISTER_MR callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_REGISTER_MR callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

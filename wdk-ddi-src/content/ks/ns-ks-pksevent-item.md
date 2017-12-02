@@ -59,37 +59,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>EventId</b>
+### -field EventId
 
 <dd>
 <p>Specifies the unique ID of the event within the event set.</p>
 </dd>
 
-### -field <b>DataInput</b>
+### -field DataInput
 
 <dd>
 <p>Specifies the size in bytes of event data. The event data begins with a <a href="stream.kseventdata">KSEVENTDATA</a> structure that describes how the client should be notified when the event occurs, optionally followed by any additional parameters that specify when the event occurs. Must be at least <b>sizeof</b>(KSEVENTDATA).</p>
 </dd>
 
-### -field <b>ExtraEntryData</b>
+### -field ExtraEntryData
 
 <dd>
 <p>Specifies the size in bytes of any additional memory that the system should allocate for each enable request for this event. The driver uses this memory to store any data it needs to keep track of the event request. The memory is allocated directly after the event enable request's <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a> structure.</p>
 </dd>
 
-### -field <b>AddHandler</b>
+### -field AddHandler
 
 <dd>
 <p>Pointer to a minidriver-supplied <a href="stream.avstrminiaddevent">AVStrMiniAddEvent</a> callback routine. Not used by the stream class driver. For AVStream minidrivers only.</p>
 </dd>
 
-### -field <b>RemoveHandler</b>
+### -field RemoveHandler
 
 <dd>
 <p>Pointer to a minidriver-supplied <a href="stream.avstrminiremoveevent">AVStrMiniRemoveEvent</a> callback routine. Not used by the stream class driver. For AVStream minidrivers only.</p>
 </dd>
 
-### -field <b>SupportHandler</b>
+### -field SupportHandler
 
 <dd>
 <p>Not used by the stream class driver.</p>

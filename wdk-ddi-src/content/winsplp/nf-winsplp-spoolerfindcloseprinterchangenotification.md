@@ -55,7 +55,7 @@ BOOL WINAPI SpoolerFindClosePrinterChangeNotification(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd></dd>
 </dl>

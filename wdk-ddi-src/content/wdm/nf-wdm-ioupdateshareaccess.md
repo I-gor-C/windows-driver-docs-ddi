@@ -56,13 +56,13 @@ VOID IoUpdateShareAccess(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to a referenced file object representing the file or associated device object for which to update the share access.</p>
 </dd>
 
-### -param <i>ShareAccess</i> [in, out]
+### -param ShareAccess [in, out]
 
 <dd>
 <p>Pointer to the common <b>SHARE_ACCESS</b> structure associated with the <i>FileObject</i>. Drivers should treat this structure as opaque.</p>

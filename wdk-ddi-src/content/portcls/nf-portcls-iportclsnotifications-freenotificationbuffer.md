@@ -55,7 +55,7 @@ NTSTATUS  FreeNotificationBuffer(
 ## -parameters
 <dl>
 
-### -param <i>Notification</i> [in]
+### -param Notification [in]
 
 <dd>
 <p>The address of the notification buffer returned in the <a href="audio.iportclsnotifications_allocnotification">IPortClsNotifications::AllocNotificationBuffer</a> call.</p>

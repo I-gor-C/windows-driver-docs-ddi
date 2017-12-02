@@ -7,7 +7,7 @@ old-location: netvista\rilmessagein_v1.htm
 old-project: netvista
 ms.assetid: c9de99e4-556c-4b3b-a442-53fc52553d3d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMESSAGEIN_V1, RILMESSAGEIN_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef struct _RILMESSAGEIN_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwAckID</b>
+### -field dwAckID
 
 <dd></dd>
 
-### -field <b>rm</b>
+### -field rm
 
 <dd></dd>
 </dl>

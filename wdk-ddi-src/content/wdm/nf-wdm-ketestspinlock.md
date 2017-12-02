@@ -55,7 +55,7 @@ BOOLEAN KeTestSpinLock(
 ## -parameters
 <dl>
 
-### -param <i>SpinLock</i> [in]
+### -param SpinLock [in]
 
 <dd>
 <p>A pointer to a spin lock. The spin lock must have been initialized by calling <a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>.</p>

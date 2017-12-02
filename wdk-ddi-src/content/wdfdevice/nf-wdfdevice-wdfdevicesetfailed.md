@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicesetfailed.htm
 old-project: wdf
 ms.assetid: 87fbceab-d08c-4da7-a257-1454f84c04b7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceSetFailed
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ VOID WdfDeviceSetFailed(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>FailedAction</i> [in]
+### -param FailedAction [in]
 
 <dd>
 <p>A <a href="..\wdfdevice\ne-wdfdevice--wdf-device-failed-action.md">WDF_DEVICE_FAILED_ACTION</a>-typed enumerator that indicates whether the framework should attempt to reload the specified device's drivers.</p>

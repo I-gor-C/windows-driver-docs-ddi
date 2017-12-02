@@ -7,7 +7,7 @@ old-location: sensors\isensordriver_onclientconnect.htm
 old-project: sensors
 ms.assetid: 0f64288b-5100-4529-af2f-3e867375da39
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorDriver, OnClientConnect, ISensorDriver::OnClientConnect
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ HRESULT OnClientConnect(
 ## -parameters
 <dl>
 
-### -param <i>pClientFile</i> 
+### -param pClientFile 
 
 <dd>
 <p>Pointer to an IWDFFile interface that represents the file object for the application requesting the connection.</p>
 </dd>
 
-### -param <i>pwszSensorID</i> 
+### -param pwszSensorID 
 
 <dd>
 <p>LPWSTR that contains the ID for the sensor to which the client application is connecting.</p>
@@ -79,7 +79,7 @@ HRESULT OnClientConnect(
 
 <p>You can use the pointer value (the address pointed to) provided by <i>pClientFile</i> as a kind of ID to keep track of connected applications. However, you must track these IDs separately for each sensor, not for each device, because the class extension may provide the same pointer value to multiple sensors on the same device.</p>
 
-<p>For more information about how to use this method, see <a href="NULL">Filtering data</a>.</p>
+<p>For more information about how to use this method, see <a href="https://msdn.microsoft.com/1895EC5C-08C1-4976-83F2-CD5A2B55338D">Filtering data</a>.</p>
 
 ## -requirements
 <table>

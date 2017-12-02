@@ -56,19 +56,19 @@ typedef enum _SECURE_ELEMENT_SET_CARD_EMULATION_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="EmulationOff"></a><a id="emulationoff"></a><a id="EMULATIONOFF"></a><b>EmulationOff</b>
+### -field EmulationOff
 
 <dd>
 <p>The secure element is not exposed.</p>
 </dd>
 
-### -field <a id="EmulationOnPowerIndependent"></a><a id="emulationonpowerindependent"></a><a id="EMULATIONONPOWERINDEPENDENT"></a><b>EmulationOnPowerIndependent</b>
+### -field EmulationOnPowerIndependent
 
 <dd>
 <p>The eSE secure element is exposed regardless of the power state of the device/battery and is the only secure element exposed. If the battery is removed, the device is powered off or otherwise power is not available. The secure element must remain exposed to the external reader.</p>
 </dd>
 
-### -field <a id="EmulationOnPowerDependent"></a><a id="emulationonpowerdependent"></a><a id="EMULATIONONPOWERDEPENDENT"></a><b>EmulationOnPowerDependent</b>
+### -field EmulationOnPowerDependent
 
 <dd>
 <p>The secure element is exposed only as long as the device is powered on, and is the only secure element exposed. If the battery is removed, the device is powered off, or if power is not available, the secure element must no longer be exposed to the external reader.</p>

@@ -56,19 +56,19 @@ typedef struct _DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1 {
 ## -struct-fields
 <dl>
 
-### -field <b>pDXGIContext</b>
+### -field pDXGIContext
 
 <dd>
 <p>A handle to the DXGI context. This handle is opaque to the driver. The driver should assign the handle from the pDXGIContext member DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY1 structure that the driver received in a call to its pfnPresentMultiplaneOverlay function to this member.</p>
 </dd>
 
-### -field <b>PresentPlaneCount</b>
+### -field PresentPlaneCount
 
 <dd>
 <p>The number of planes in the array that the ppPresentPlanes member specifies.</p>
 </dd>
 
-### -field <b>ppPresentPlanes</b>
+### -field ppPresentPlanes
 
 <dd>
 <p>An array of pointers to a structure of type DXGIDDI_MULTIPLANE_OVERLAY_PLANE_INFO that specify information about the multiplane overlay planes.</p>

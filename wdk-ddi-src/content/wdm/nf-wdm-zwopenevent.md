@@ -57,13 +57,13 @@ NTSTATUS ZwOpenEvent(
 ## -parameters
 <dl>
 
-### -param <i>EventHandle</i> [out]
+### -param EventHandle [out]
 
 <dd>
 <p>A pointer to a variable that will receive the event object handle. The handle includes bookkeeping information, such as a reference count and security context.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the desired types of access for the event object. The following table contains the event-specific ACCESS_MASK values.</p>
@@ -88,7 +88,7 @@ NTSTATUS ZwOpenEvent(
 <p> </p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in]
+### -param ObjectAttributes [in]
 
 <dd>
 <p>A pointer to the object attributes structure that the caller supplied to be used for the specified object. These attributes would include the <b>ObjectName</b> and the handle attributes, for example. This parameter is initialized by calling the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro. </p>

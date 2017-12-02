@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbacks.htm
 old-project: debugger
 ms.assetid: f5e51d0e-0967-4e35-b24b-4bd99c975569
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSystemObjects4, SetImplicitThreadDataOffset, IDebugSystemObjects4::SetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices

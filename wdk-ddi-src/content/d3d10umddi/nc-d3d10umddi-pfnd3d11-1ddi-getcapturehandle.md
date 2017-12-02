@@ -58,7 +58,7 @@ VOID APIENTRY* GetCaptureHandle(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).
@@ -66,7 +66,7 @@ VOID APIENTRY* GetCaptureHandle(
 </p>
 </dd>
 
-### -param <i>pHandleData</i> [in, out]
+### -param pHandleData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi--d3d11-1ddi-getcapturehandledata.md">D3D11_1DDI_GETCAPTUREHANDLEDATA</a> structure that defines the resource allocation. </p>

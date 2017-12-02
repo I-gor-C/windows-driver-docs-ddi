@@ -54,7 +54,7 @@ NTSTATUS D3DKMTCreateSynchronizationObject2(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createsynchronizationobject2.md">D3DKMT_CREATESYNCHRONIZATIONOBJECT2</a> structure that describes a synchronization object.</p>

@@ -77,28 +77,28 @@ typedef struct _DXGKARG_SUBMITCOMMAND {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] If the driver is not multiple-engine aware (that is, the driver does not support context creation), a handle to the display device (graphics context) that the submission request originated from. A device handle is supplied to the driver's <a href="display.dxgkddisubmitcommand">DxgkDdiSubmitCommand</a> function in the union that DXGKARG_SUBMITCOMMAND contains.</p>
 <p>For some paging operations, <b>hDevice</b> is <b>NULL</b> (for example, paging operations that evict the content of the entire frame buffer during power management). Paging operations are indicated by the <b>Paging</b> bit-field flag in the <b>Flags</b> member. </p>
 </dd>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] If the driver is multiple-engine aware (that is, the driver supports context creation), a handle to the device context that the submission request originated from. A context handle is supplied to the driver's <a href="display.dxgkddisubmitcommand">DxgkDdiSubmitCommand</a> function in the union that DXGKARG_SUBMITCOMMAND contains. </p>
 <p>For some paging operations, <b>hContext</b> is <b>NULL</b> (for example, paging operations that evict the content of the entire frame buffer during power management). Paging operations are indicated by the <b>Paging</b> bit-field flag in the <b>Flags</b> member.</p>
 </dd>
 
-### -field <b>DmaBufferSegmentId</b>
+### -field DmaBufferSegmentId
 
 <dd>
 <p>[in] The identifier of the memory segment that the DMA buffer was paged in. </p>
 <p>The identifier can be zero if the driver indicated not to map the DMA buffer into the segment by setting the <b>DmaBufferSegmentSet</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-contextinfo.md">DXGK_CONTEXTINFO</a> structure to 0 in a call to the driver's <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a> function. If <b>DmaBufferSegmentId</b> is zero, the DMA buffer was allocated as a contiguous block of system memory.  </p>
 </dd>
 
-### -field <b>DmaBufferPhysicalAddress</b>
+### -field DmaBufferPhysicalAddress
 
 <dd>
 <p>[in] A PHYSICAL_ADDRESS data type (which is defined as LARGE_INTEGER) that indicates the physical address where the DMA buffer was paged in. </p>
@@ -107,89 +107,89 @@ typedef struct _DXGKARG_SUBMITCOMMAND {
 <p>Note that <b>DmaBufferPhysicalAddress</b> always refers to the beginning of the DMA buffer even though the driver might be required to patch or submit a section of the DMA buffer that does not include the beginning of the DMA buffer (that is, if the <b>DmaBufferSubmissionStartOffset</b> member is nonzero). </p>
 </dd>
 
-### -field <b>DmaBufferSize</b>
+### -field DmaBufferSize
 
 <dd>
 <p>[in] The size, in bytes, of the DMA buffer.</p>
 <p>Note that <b>DmaBufferSize</b> represents the entire length of the DMA buffer; however, the request to patch or submit might refer to only a portion of the DMA buffer. </p>
 </dd>
 
-### -field <b>DmaBufferSubmissionStartOffset</b>
+### -field DmaBufferSubmissionStartOffset
 
 <dd>
 <p>[in] The offset, in bytes, from the beginning of the DMA buffer to the start of the portion of the DMA buffer that requires patching or submitting. The offset that is received at patch time matches the offset that is received at submission time. </p>
 </dd>
 
-### -field <b>DmaBufferSubmissionEndOffset</b>
+### -field DmaBufferSubmissionEndOffset
 
 <dd>
 <p>[in] The offset, in bytes, from the beginning of the DMA buffer to the end of the portion of the DMA buffer that requires patching or submitting. The offset that is received at patch time matches the offset that is received at submission time. </p>
 </dd>
 
-### -field <b>pDmaBufferPrivateData</b>
+### -field pDmaBufferPrivateData
 
 <dd>
 <p>[in] A pointer to the driver-resident private data that is associated with the DMA buffer that was filled during the <a href="display.dxgkddirender">DxgkDdiRender</a>, <a href="display.dxgkddipresent">DxgkDdiPresent</a>, or <a href="display.dxgkddipatch">DxgkDdiPatch</a> function. </p>
 <p>For paging operations, a single paging buffer is used for multiple independent submissions. In that scenario, the driver can indicate--by returning the appropriate private driver data pointer in a call to its <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a> function--to have either a single driver private data range for all of the submissions or one for each submission. </p>
 </dd>
 
-### -field <b>DmaBufferPrivateDataSize</b>
+### -field DmaBufferPrivateDataSize
 
 <dd>
 <p>[in] The size, in byte,s of the private driver data that <b>pDmaBufferPrivateData</b> points to.</p>
 <p>Note that <b>DmaBufferPrivateDataSize</b> represents the entire length of the private driver data buffer; however, the portion that is associated with the current submission might be smaller. </p>
 </dd>
 
-### -field <b>DmaBufferPrivateDataSubmissionStartOffset</b>
+### -field DmaBufferPrivateDataSubmissionStartOffset
 
 <dd>
 <p>[in] The offset, in bytes, from the beginning of the DMA buffer private data that <b>pDmaBufferPrivateData</b> specifies to the start of the portion of the private data that is associated with the current submission. <b>DmaBufferPrivateDataSubmissionStartOffset</b> is always zero for a nonpaging request. </p>
 </dd>
 
-### -field <b>DmaBufferPrivateDataSubmissionEndOffset</b>
+### -field DmaBufferPrivateDataSubmissionEndOffset
 
 <dd>
 <p>[in] The offset, in bytes, from the beginning of the DMA buffer private data that <b>pDmaBufferPrivateData</b> specifies to the end of the portion of the private data that is associated with the current submission. </p>
 </dd>
 
-### -field <b>SubmissionFenceId</b>
+### -field SubmissionFenceId
 
 <dd>
 <p>[in] A unique identifier that the driver can write into the fence command in the ring buffer, which is the buffer where DMA buffers are queued for the graphics processing unit (GPU) to run. For more information about these types of identifiers, see <a href="https://msdn.microsoft.com/0ec8a4eb-c441-47ae-b5de-d86e6065ffd4">Supplying Fence Identifiers</a>.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for a flip operation. This member is valid only when the <b>Flip</b> or <b>FlipWithNoWait</b> bit-field flag is set in the <b>Flags</b> member. </p>
 </dd>
 
-### -field <b>FlipInterval</b>
+### -field FlipInterval
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi-flipinterval-type.md">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs). <b>FlipInterval</b> is valid only if the <b>Flip</b> bit-field flag is set (that is, <b>TRUE</b>) in the <b>Flags</b> member.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-submitcommandflags.md">DXGK_SUBMITCOMMANDFLAGS</a> structure that identifies information about the DMA buffer to submit.</p>
 </dd>
 
-### -field <b>EngineOrdinal</b>
+### -field EngineOrdinal
 
 <dd>
 <p>[in] Reserved for future use.</p>
 </dd>
 
-### -field <b>DmaBufferVirtualAddress</b>
+### -field DmaBufferVirtualAddress
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>The zero-based index of the node that the context is created for. Identifies the node when the context is <b>NULL</b>.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ril_setgeolocationdata.htm
 old-project: netvista
 ms.assetid: d037ff74-a0fb-49a6-8e42-ceac1be61464
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SetGeolocationData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_SetGeolocationData(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>pGeolocationData</i> 
+### -param pGeolocationData 
 
 <dd></dd>
 </dl>

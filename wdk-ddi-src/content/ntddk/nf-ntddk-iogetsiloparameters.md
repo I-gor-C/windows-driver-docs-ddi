@@ -7,7 +7,7 @@ old-location: ifsk\iogetsiloparameters.htm
 old-project: ifsk
 ms.assetid: C8F42E83-2122-4871-972B-9FD06379C271
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: IoGetSiloParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ PIO_FOEXT_SILO_PARAMETERS IoGetSiloParameters(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>The file in question.</p>

@@ -57,25 +57,25 @@ typedef struct _AVC_PIN_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>PinId</b>
+### -field PinId
 
 <dd>
 <p>Specifies the offset (or ID) of the pin for which information is to be retrieved.</p>
 </dd>
 
-### -field <b>PinDescriptor</b>
+### -field PinDescriptor
 
 <dd>
 <p>Specifies a KSPIN_DESCRIPTOR structure. This structure is allocated in the nonpaged pool. The subunit driver must not free this pointer.</p>
 </dd>
 
-### -field <b>IntersectHandler</b>
+### -field IntersectHandler
 
 <dd>
 <p>An optional output parameter specifying a data range intersect handler associated with the <b>DataRanges</b> member of the <b>PinDescriptor</b> member.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>An optional output parameter specifying a value to be passed to the <b>IntersectHandler</b> when it is called during format negotiation. For more information about what an intersect handler is, see <a href="https://msdn.microsoft.com/44281574-8258-47a3-857d-fd44bb949f17">DataRange Intersections in AVStream</a>.</p>
@@ -108,7 +108,7 @@ typedef struct _AVC_PIN_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="stream.av_c_intersect_handler">AV/C Intersect Handler</a>
+<a href="..\avc\nc-avc-pfnavcintersecthandler.md">AV/C Intersect Handler</a>
 </dt>
 <dt>
 <a href="stream.kspin_descriptor">KSPIN_DESCRIPTOR</a>

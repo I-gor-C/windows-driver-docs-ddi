@@ -57,28 +57,28 @@ NTSTATUS __stdcall HidP_GetButtonCaps(
 ## -parameters
 <dl>
 
-### -param <i>ReportType</i> [in]
+### -param ReportType [in]
 
 <dd>
 <p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.</p>
 </dd>
 
-### -param <i>ButtonCaps</i> [out]
+### -param ButtonCaps [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that the routine uses to return a button capability array for the specified report type.</p>
 </dd>
 
-### -param <i>ButtonCapsLength</i> [in, out]
+### -param ButtonCapsLength [in, out]
 
 <dd>
 <p>Specifies the length on input, in array elements, of the buffer provided at <i>ButtonCaps</i>. On output, this parameter is set to the actual number of elements that the routine returns.</p>
 </dd>
 
-### -param <i>PreparsedData</i> [in]
+### -param PreparsedData [in]
 
 <dd>
-<p>Pointer to a top-level collection's <a href="NULL">preparsed data</a>.</p>
+<p>Pointer to a top-level collection's <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.</p>
 </dd>
 </dl>
 
@@ -98,9 +98,9 @@ NTSTATUS __stdcall HidP_GetButtonCaps(
 
 <p>To obtain a subset of button capabilities, selected by <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">usage</a>, <a href="hid.hid_usages#usage_page#usage_page">usage page</a>, or <a href="https://msdn.microsoft.com/3f934661-c33c-4c08-82ac-ee2e0f519c8e">link collection</a>, use <a href="..\hidpi\nf-hidpi-hidp-getspecificbuttoncaps.md">HidP_GetSpecificButtonCaps</a>.</p>
 
-<p>For more information about a collection's capability, see <a href="NULL">Obtaining Collection Information</a>.</p>
+<p>For more information about a collection's capability, see <a href="https://msdn.microsoft.com/0568993b-ff50-48ac-a875-95ab643d6c28">Obtaining Collection Information</a>.</p>
 
-<p>See also <a href="NULL">HID Collections</a>. </p>
+<p>See also <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

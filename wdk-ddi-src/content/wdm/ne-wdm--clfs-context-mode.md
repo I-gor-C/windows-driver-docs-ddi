@@ -58,25 +58,25 @@ typedef enum _CLFS_CONTEXT_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="ClfsContextNone"></a><a id="clfscontextnone"></a><a id="CLFSCONTEXTNONE"></a><b>ClfsContextNone</b>
+### -field ClfsContextNone
 
 <dd>
 <p>Indicates that a variable of type <b>CLFS_CONTEXT_MODE</b> has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="ClfsContextUndoNext"></a><a id="clfscontextundonext"></a><a id="CLFSCONTEXTUNDONEXT"></a><b>ClfsContextUndoNext</b>
+### -field ClfsContextUndoNext
 
 <dd>
 <p>Indicates that the next record in the sequence is pointed to by the <a href="https://msdn.microsoft.com/4637fa0c-2f19-4f0c-bf13-f4ccac2e7284">undo-next LSN</a> of the current record.</p>
 </dd>
 
-### -field <a id="ClfsContextPrevious"></a><a id="clfscontextprevious"></a><a id="CLFSCONTEXTPREVIOUS"></a><b>ClfsContextPrevious</b>
+### -field ClfsContextPrevious
 
 <dd>
 <p>Indicates that the next record in the sequence is pointed to by the <a href="https://msdn.microsoft.com/4637fa0c-2f19-4f0c-bf13-f4ccac2e7284">previous LSN</a> of the current record.</p>
 </dd>
 
-### -field <a id="ClfsContextForward"></a><a id="clfscontextforward"></a><a id="CLFSCONTEXTFORWARD"></a><b>ClfsContextForward</b>
+### -field ClfsContextForward
 
 <dd>
 <p>Indicates that the next record in the sequence is the record in the stream that immediately follows the current record.</p>

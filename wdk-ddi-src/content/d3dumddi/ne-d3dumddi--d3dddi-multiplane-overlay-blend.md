@@ -55,13 +55,13 @@ typedef enum _D3DDDI_MULTIPLANE_OVERLAY_BLEND {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_MULTIPLANE_OVERLAY_BLEND_OPAQUE"></a><a id="d3dddi_multiplane_overlay_blend_opaque"></a><b>D3DDDI_MULTIPLANE_OVERLAY_BLEND_OPAQUE</b>
+### -field D3DDDI_MULTIPLANE_OVERLAY_BLEND_OPAQUE
 
 <dd>
 <p>The overlay plane should ignore data in the alpha channel and make the blended plane entirely opaque.</p>
 </dd>
 
-### -field <a id="D3DDDI_MULTIPLANE_OVERLAY_BLEND_ALPHABLEND"></a><a id="d3dddi_multiplane_overlay_blend_alphablend"></a><b>D3DDDI_MULTIPLANE_OVERLAY_BLEND_ALPHABLEND</b>
+### -field D3DDDI_MULTIPLANE_OVERLAY_BLEND_ALPHABLEND
 
 <dd>
 <p>The overlay plane should use the pre-multiplied alpha channel in this plane to blend it with the plane beneath.</p>

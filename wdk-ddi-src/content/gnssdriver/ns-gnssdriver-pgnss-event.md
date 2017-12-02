@@ -7,7 +7,7 @@ old-location: sensors\gnss_event.htm
 old-project: sensors
 ms.assetid: FECF2444-CFF7-4B4D-AC3A-D3DD9B045AFD
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_EVENT, GNSS_EVENT, *PGNSS_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,93 +70,93 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>EventType</b>
+### -field EventType
 
 <dd>
 <p>Event type.</p>
 <p>Depending on the event type, a specific data element of the union will be filled.</p>
 </dd>
 
-### -field <b>EventDataSize</b>
+### -field EventDataSize
 
 <dd>
 <p>The size of the event data union contained in this event.</p>
 <p>The GNSS driver must fill in appropriate size to avoid excessive data-copy between the layers. The GNSS adapter will access only the initial bytes of the event data, as specified by this element.</p>
 </dd>
 
-### -field <b>Unused[512]</b>
+### -field Unused[512]
 
 <dd>
 <p>Padding buffer.</p>
 </dd>
 
-### -field <b>FixData</b>
+### -field FixData
 
 <dd>
 <p>This structure is filled if EventType is GNSS_Fix_Available.</p>
 </dd>
 
-### -field <b>AgnssRequest</b>
+### -field AgnssRequest
 
 <dd>
 <p>This structure is filled if EventType is GNSS_Require_Agnss.</p>
 </dd>
 
-### -field <b>NiRequest</b>
+### -field NiRequest
 
 <dd>
 <p>This structure is filled if EventType is GNSS_Event_Ni.</p>
 </dd>
 
-### -field <b>ErrorInformation</b>
+### -field ErrorInformation
 
 <dd>
 <p>This structure is filled if EventType is GNSS_Error.</p>
 </dd>
 
-### -field <b>NmeaData</b>
+### -field NmeaData
 
 <dd>
 <p>This structure is filled if EventType is GNSS_Event_NmeaData.</p>
 </dd>
 
-### -field <b>GeofenceAlertData</b>
+### -field GeofenceAlertData
 
 <dd>
 <p>This structure is filled if EventType is GNSS_Event_GeofenceAlertData.</p>
 </dd>
 
-### -field <b>BreadcrumbAlertData</b>
+### -field BreadcrumbAlertData
 
 <dd>
 <p>This structure contains alert information for when the breadcrumb buffer has reached a level where OS read operations should be performed.</p>
 </dd>
 
-### -field <b>GeofencesTrackingStatus</b>
+### -field GeofencesTrackingStatus
 
 <dd>
 <p>This structure is filled if EventType is GNSS_Event_GeofencesTrackingStatus.</p>
 </dd>
 
-### -field <b>DriverRequestData</b>
+### -field DriverRequestData
 
 <dd>
 <p>This structure is filled if EventType is GNSS_Event_DriverRequest.</p>
 </dd>
 
-### -field <b>CustomData[ANYSIZE_ARRAY]</b>
+### -field CustomData[ANYSIZE_ARRAY]
 
 <dd>
 <p>Custom data field.</p>

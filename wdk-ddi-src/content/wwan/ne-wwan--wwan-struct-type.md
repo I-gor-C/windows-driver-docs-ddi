@@ -7,7 +7,7 @@ old-location: netvista\wwan_struct_type.htm
 old-project: netvista
 ms.assetid: 43729964-9338-45ab-ad59-406176c1ae9f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,7 @@ typedef enum _WWAN_STRUCT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanStructTN"></a><a id="wwanstructtn"></a><a id="WWANSTRUCTTN"></a><b>WwanStructTN</b>
+### -field WwanStructTN
 
 <dd>
 <p>The elements are NULL-terminated strings of Telephone Number (TNs), with each string having
@@ -81,7 +81,7 @@ typedef enum _WWAN_STRUCT_TYPE {
      represent a list of TNs assigned to the device.</p>
 </dd>
 
-### -field <a id="WwanStructContext"></a><a id="wwanstructcontext"></a><a id="WWANSTRUCTCONTEXT"></a><b>WwanStructContext</b>
+### -field WwanStructContext
 
 <dd>
 <p>The elements are of type 
@@ -93,7 +93,7 @@ typedef enum _WWAN_STRUCT_TYPE {
      contexts.</p>
 </dd>
 
-### -field <a id="WwanStructProvider"></a><a id="wwanstructprovider"></a><a id="WWANSTRUCTPROVIDER"></a><b>WwanStructProvider</b>
+### -field WwanStructProvider
 
 <dd>
 <p>The elements are of type 
@@ -104,52 +104,52 @@ typedef enum _WWAN_STRUCT_TYPE {
      value to represent a list of network providers for WWAN 1.0 miniport drivers.</p>
 </dd>
 
-### -field <a id="WwanStructSmsPdu"></a><a id="wwanstructsmspdu"></a><a id="WWANSTRUCTSMSPDU"></a><b>WwanStructSmsPdu</b>
+### -field WwanStructSmsPdu
 
 <dd>
 <p>The elements are of type 
      <a href="..\wwan\ns-wwan--wwan-sms-pdu-record.md">WWAN_SMS_PDU_RECORD</a>.</p>
 </dd>
 
-### -field <a id="WwanStructReserved0"></a><a id="wwanstructreserved0"></a><a id="WWANSTRUCTRESERVED0"></a><b>WwanStructReserved0</b>
+### -field WwanStructReserved0
 
 <dd>
 <p>The value is reserved for future use. Do not use.</p>
 </dd>
 
-### -field <a id="WwanStructReserved1"></a><a id="wwanstructreserved1"></a><a id="WWANSTRUCTRESERVED1"></a><b>WwanStructReserved1</b>
+### -field WwanStructReserved1
 
 <dd>
 <p>The value is reserved for future use. Do not use.</p>
 </dd>
 
-### -field <a id="WwanStructReserved2"></a><a id="wwanstructreserved2"></a><a id="WWANSTRUCTRESERVED2"></a><b>WwanStructReserved2</b>
+### -field WwanStructReserved2
 
 <dd>
 <p>The value is reserved for future use. Do not use.</p>
 </dd>
 
-### -field <a id="WwanStructSmsCdma"></a><a id="wwanstructsmscdma"></a><a id="WWANSTRUCTSMSCDMA"></a><b>WwanStructSmsCdma</b>
+### -field WwanStructSmsCdma
 
 <dd>
 <p>The elements are of type 
      <a href="..\wwan\ns-wwan--wwan-sms-cdma-record.md">WWAN_SMS_CDMA_RECORD</a>.</p>
 </dd>
 
-### -field <a id="WwanStructReserved3"></a><a id="wwanstructreserved3"></a><a id="WWANSTRUCTRESERVED3"></a><b>WwanStructReserved3</b>
+### -field WwanStructReserved3
 
 <dd>
 <p>The value is reserved for future use. Do not use.</p>
 </dd>
 
-### -field <a id="WwanStructDeviceServiceEntry"></a><a id="wwanstructdeviceserviceentry"></a><a id="WWANSTRUCTDEVICESERVICEENTRY"></a><b>WwanStructDeviceServiceEntry</b>
+### -field WwanStructDeviceServiceEntry
 
 <dd>
 <p>The elements are of type 
      <a href="..\wwan\ns-wwan--wwan-device-service-entry.md">WWAN_DEVICE_SERVICE_ENTRY</a>.</p>
 </dd>
 
-### -field <a id="WwanStructProvider2"></a><a id="wwanstructprovider2"></a><a id="WWANSTRUCTPROVIDER2"></a><b>WwanStructProvider2</b>
+### -field WwanStructProvider2
 
 <dd>
 <p>The elements are of type 
@@ -166,20 +166,20 @@ typedef enum _WWAN_STRUCT_TYPE {
 </p>
 </dd>
 
-### -field <a id="WwanStructDeviceServiceGuid"></a><a id="wwanstructdeviceserviceguid"></a><a id="WWANSTRUCTDEVICESERVICEGUID"></a><b>WwanStructDeviceServiceGuid</b>
+### -field WwanStructDeviceServiceGuid
 
 <dd>
 <p>The elements are of type 
      GUID.</p>
 </dd>
 
-### -field <a id="WwanStructDeviceServiceCommandId"></a><a id="wwanstructdeviceservicecommandid"></a><a id="WWANSTRUCTDEVICESERVICECOMMANDID"></a><b>WwanStructDeviceServiceCommandId</b>
+### -field WwanStructDeviceServiceCommandId
 
 <dd>
 <p>The elements are of type ULONG.</p>
 </dd>
 
-### -field <a id="WwanStructDeviceCellularClass"></a><a id="wwanstructdevicecellularclass"></a><a id="WWANSTRUCTDEVICECELLULARCLASS"></a><b>WwanStructDeviceCellularClass</b>
+### -field WwanStructDeviceCellularClass
 
 <dd>
 <p>The elements are of type <a href="..\wwan\ne-wwan--wwan-cellular-class.md">WWAN_CELLULAR_CLASS</a>. </p>
@@ -187,7 +187,7 @@ typedef enum _WWAN_STRUCT_TYPE {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569824">OID_WWAN_DEVICE_CAPS</a> uses this value to represent multiple cellular classes supported by the miniport driver.</p>
 </dd>
 
-### -field <a id="WwanStructMax"></a><a id="wwanstructmax"></a><a id="WWANSTRUCTMAX"></a><b>WwanStructMax</b>
+### -field WwanStructMax
 
 <dd>
 <p>The total number of supported types.</p>
@@ -251,4 +251,4 @@ typedef enum _WWAN_STRUCT_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_STRUCT_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_STRUCT_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

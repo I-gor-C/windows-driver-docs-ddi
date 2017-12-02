@@ -58,13 +58,13 @@ NTSTATUS AVStrMiniFilterClose(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>Pointer to the <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure that was just closed.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a> for the filter.</p>
@@ -79,7 +79,7 @@ NTSTATUS AVStrMiniFilterClose(
 
 <p>At the point at which the routine is called, any registered events on the filter have been freed, but the object is otherwise intact.</p>
 
-<p>This routine is called at IRQL = PASSIVE_LEVEL with the device mutex held. For more information about mutexes, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>This routine is called at IRQL = PASSIVE_LEVEL with the device mutex held. For more information about mutexes, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 <p>This routine is optional.</p>
 

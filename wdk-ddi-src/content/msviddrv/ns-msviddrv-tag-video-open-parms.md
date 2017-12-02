@@ -62,55 +62,55 @@ typedef struct tag_video_open_parms {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Set to the size of the <b>VIDEO_OPEN_PARMS</b> structure.</p>
 </dd>
 
-### -field <b>fccType</b>
+### -field fccType
 
 <dd>
 <p>'vcap'</p>
 </dd>
 
-### -field <b>fccComp</b>
+### -field fccComp
 
 <dd>
 <p>This member is not used.</p>
 </dd>
 
-### -field <b>dwVersion</b>
+### -field dwVersion
 
 <dd>
 <p>Specifies the version of msvideo.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Specifies the type of channel.</p>
 </dd>
 
-### -field <b>dwError</b>
+### -field dwError
 
 <dd>
 <p>If open fails, specifies why it failed.</p>
 </dd>
 
-### -field <b>pV1Reserved</b>
+### -field pV1Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>pV2Reserved</b>
+### -field pV2Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>dnDevNode</b>
+### -field dnDevNode
 
 <dd>
 <p>Specifies the devnode for PnP devices.</p>

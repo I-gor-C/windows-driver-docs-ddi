@@ -7,7 +7,7 @@ old-location: acpi\bbrt_table.htm
 old-project: acpi
 ms.assetid: 0FC4D7BA-4292-4D87-8982-D20D267D6FA5
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: BBRT_TABLE, BBRT_TABLE, *PBBRT_TABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef struct _BBRT_TABLE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>A header.</p>
 </dd>
 
-### -field <b>Background</b>
+### -field Background
 
 <dd>
 <p>A background value.</p>
 </dd>
 
-### -field <b>Foreground</b>
+### -field Foreground
 
 <dd>
 <p>A foreground value. </p>

@@ -56,19 +56,19 @@ typedef struct _GROUP_AFFINITY {
 ## -struct-fields
 <dl>
 
-### -field <b>Mask</b>
+### -field Mask
 
 <dd>
 <p>Specifies the affinity mask. This parameter is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a> value. The bits in the affinity mask identify a set of processors within the group identified by <b>Group</b>.</p>
 </dd>
 
-### -field <b>Group</b>
+### -field Group
 
 <dd>
 <p>Specifies the group number. In Windows 7, the group number must be in the range from 0 to 3.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use. Set all three <b>Reserved</b> array elements to zero. </p>

@@ -60,37 +60,37 @@ HRESULT RouterRegisterForPrintAsyncNotifications(
 ## -parameters
 <dl>
 
-### -param <i>pName</i> [in]
+### -param pName [in]
 
 <dd>
 <p>A pointer to a null-terminated string that specifies the name of the printer or print server.</p>
 </dd>
 
-### -param <i>pNotificationType</i> [in]
+### -param pNotificationType [in]
 
 <dd>
 <p>A pointer to the GUID that represents the type of notifications of interest to the caller.</p>
 </dd>
 
-### -param <i>eNotifyFilter</i> [in]
+### -param eNotifyFilter [in]
 
 <dd>
 <p>The filter for the session or user of interest to the caller when receiving notifications.</p>
 </dd>
 
-### -param <i>eConversationStyle</i> [in]
+### -param eConversationStyle [in]
 
 <dd>
 <p>The type of communication: unidirectional or bidirectional.</p>
 </dd>
 
-### -param <i>pCallback</i> [in]
+### -param pCallback [in]
 
 <dd>
 <p>A pointer to the callback that is used deliver the notifications.</p>
 </dd>
 
-### -param <i>phNotify</i> [out]
+### -param phNotify [out]
 
 <dd>
 <p>A pointer to an opaque handle. The caller can use this handle to discontinue receiving notifications.</p>

@@ -56,13 +56,13 @@ typedef struct _POWER_THROTTLING_THREAD_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure. Set to THREAD_POWER_THROTTLING_CURRENT_VERSION.</p>
 </dd>
 
-### -field <b>ControlMask</b>
+### -field ControlMask
 
 <dd>
 <p>Flags that enable the caller to take control of the power throttling mechanism.</p>
@@ -71,7 +71,7 @@ typedef struct _POWER_THROTTLING_THREAD_STATE {
 </ul>
 </dd>
 
-### -field <b>StateMask</b>
+### -field StateMask
 
 <dd>
 <p>Flags that manage the power throttling mechanism on/off state.</p>

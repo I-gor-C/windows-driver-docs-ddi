@@ -57,25 +57,25 @@ typedef struct _D3DKMT_ADAPTERINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>A handle to the adapter.</p>
 </dd>
 
-### -field <b>AdapterLuid</b>
+### -field AdapterLuid
 
 <dd>
 <p>A LUID that serves as an identifier for the adapter.</p>
 </dd>
 
-### -field <b>NumOfSources</b>
+### -field NumOfSources
 
 <dd>
 <p>The number of video present sources supported by the adapter.</p>
 </dd>
 
-### -field <b>bPresentMoveRegionsPreferred</b>
+### -field bPresentMoveRegionsPreferred
 
 <dd>
 <p>If <b>TRUE</b>, the adapter prefers move regions.</p>

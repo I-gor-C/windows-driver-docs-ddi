@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_SETLIGHT {
 ## -struct-fields
 <dl>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>[in] An index into an array of lights.</p>
 </dd>
 
-### -field <b>DataType</b>
+### -field DataType
 
 <dd>
 <p>[in] A valid bitwise OR of the following flags that indicate the type of light data:</p>

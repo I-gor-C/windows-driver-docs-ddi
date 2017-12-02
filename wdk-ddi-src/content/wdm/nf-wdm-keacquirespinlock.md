@@ -56,13 +56,13 @@ VOID KeAcquireSpinLock(
 ## -parameters
 <dl>
 
-### -param <i>SpinLock</i> [in]
+### -param SpinLock [in]
 
 <dd>
 <p>Pointer to an initialized spin lock for which the caller provides the storage.</p>
 </dd>
 
-### -param <i>OldIrql</i> [out]
+### -param OldIrql [out]
 
 <dd>
 <p>Pointer to a variable that is set to the current IRQL when this call occurs.</p>

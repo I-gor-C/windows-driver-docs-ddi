@@ -57,15 +57,15 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="TIME_GET_STREAM_TIME"></a><a id="time_get_stream_time"></a><b>TIME_GET_STREAM_TIME</b>
+### -field TIME_GET_STREAM_TIME
 
 <dd></dd>
 
-### -field <a id="TIME_READ_ONBOARD_CLOCK"></a><a id="time_read_onboard_clock"></a><b>TIME_READ_ONBOARD_CLOCK</b>
+### -field TIME_READ_ONBOARD_CLOCK
 
 <dd></dd>
 
-### -field <a id="TIME_SET_ONBOARD_CLOCK"></a><a id="time_set_onboard_clock"></a><b>TIME_SET_ONBOARD_CLOCK</b>
+### -field TIME_SET_ONBOARD_CLOCK
 
 <dd></dd>
 </dl>

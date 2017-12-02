@@ -61,49 +61,49 @@ NTSTATUS KsSynchronousIoControlDevice(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Indicates the file object to fill in the first stack location with.</p>
 </dd>
 
-### -param <i>RequesorMode</i> [in]
+### -param RequesorMode [in]
 
 <dd>
 <p>Indicates the processor mode to place in the IRP if one needs to be generated.</p>
 </dd>
 
-### -param <i>IoControl</i> [in]
+### -param IoControl [in]
 
 <dd>
 <p>Specifies the I/O control to send.</p>
 </dd>
 
-### -param <i>InBuffer</i> [in]
+### -param InBuffer [in]
 
 <dd>
 <p>Points to the device input buffer.</p>
 </dd>
 
-### -param <i>InSize</i> [in]
+### -param InSize [in]
 
 <dd>
 <p>Specifies the size in bytes of the device input buffer.</p>
 </dd>
 
-### -param <i>OutBuffer</i> [out]
+### -param OutBuffer [out]
 
 <dd>
 <p>Points to the device output buffer.</p>
 </dd>
 
-### -param <i>OutSize</i> [in]
+### -param OutSize [in]
 
 <dd>
 <p>Specifies the size in bytes of the device output buffer.</p>
 </dd>
 
-### -param <i>BytesReturned</i> [out]
+### -param BytesReturned [out]
 
 <dd>
 <p>Points to the place in which to put the number of bytes returned.</p>

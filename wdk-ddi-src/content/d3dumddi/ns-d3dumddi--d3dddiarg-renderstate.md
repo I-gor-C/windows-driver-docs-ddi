@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_RENDERSTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>[in] A D3DDDIRENDERSTATETYPE-typed value that indicates the render state to be updated. For a definition of each value, see the corresponding value of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549036">D3DRENDERSTATETYPE</a> enumeration type in the DirectX documentation.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] The value to which the driver should update the render state that is identified by the <b>State</b> member. For more information about values that can be updated for each render state, see the definition of the corresponding render state in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549036">D3DRENDERSTATETYPE</a> enumeration type in the DirectX documentation.</p>

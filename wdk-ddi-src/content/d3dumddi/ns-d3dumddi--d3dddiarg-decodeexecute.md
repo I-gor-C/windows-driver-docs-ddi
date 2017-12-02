@@ -56,19 +56,19 @@ typedef struct _D3DDDIARG_DECODEEXECUTE {
 ## -struct-fields
 <dl>
 
-### -field <b>hDecode</b>
+### -field hDecode
 
 <dd>
 <p>[in] A handle to the DirectX VA decode device. The user-mode display driver returns this handle in a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createdecodedevice.md">CreateDecodeDevice</a> function.</p>
 </dd>
 
-### -field <b>NumCompBuffers</b>
+### -field NumCompBuffers
 
 <dd>
 <p>[in] The number of compressed buffer that are pointed to by the <b>pCompressedBuffers</b> member. </p>
 </dd>
 
-### -field <b>pCompressedBuffers</b>
+### -field pCompressedBuffers
 
 <dd>
 <p>[in] A pointer to a list of <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-decodebufferdesc.md">DXVADDI_DECODEBUFFERDESC</a> structures that describe the compressed buffers that are passed from the host decoder to the accelerator.</p>

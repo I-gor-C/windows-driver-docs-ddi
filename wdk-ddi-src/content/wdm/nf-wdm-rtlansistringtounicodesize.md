@@ -55,7 +55,7 @@ ULONG RtlAnsiStringToUnicodeSize(
 ## -parameters
 <dl>
 
-### -param <i>AnsiString</i> [in]
+### -param AnsiString [in]
 
 <dd>
 <p>Pointer to a buffer containing the ANSI string. </p>

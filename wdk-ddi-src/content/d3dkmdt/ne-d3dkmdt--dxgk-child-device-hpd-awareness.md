@@ -58,31 +58,31 @@ typedef enum _DXGK_CHILD_DEVICE_HPD_AWARENESS {
 ## -enum-fields
 <dl>
 
-### -field <a id="HpdAwarenessUninitialized"></a><a id="hpdawarenessuninitialized"></a><a id="HPDAWARENESSUNINITIALIZED"></a><b>HpdAwarenessUninitialized</b>
+### -field HpdAwarenessUninitialized
 
 <dd>
 <p>Indicates that a variable of type DXGK_CHILD_DEVICE_HPD_AWARENESS has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="HpdAwarenessAlwaysConnected"></a><a id="hpdawarenessalwaysconnected"></a><a id="HPDAWARENESSALWAYSCONNECTED"></a><b>HpdAwarenessAlwaysConnected</b>
+### -field HpdAwarenessAlwaysConnected
 
 <dd>
 <p>Indicates that the child device is always connected; that is, it does not serve as a connector for external devices.</p>
 </dd>
 
-### -field <a id="HpdAwarenessNone"></a><a id="hpdawarenessnone"></a><a id="HPDAWARENESSNONE"></a><b>HpdAwarenessNone</b>
+### -field HpdAwarenessNone
 
 <dd>
 <p>Reserved for system use. You should not use this value.</p>
 </dd>
 
-### -field <a id="HpdAwarenessPolled"></a><a id="hpdawarenesspolled"></a><a id="HPDAWARENESSPOLLED"></a><b>HpdAwarenessPolled</b>
+### -field HpdAwarenessPolled
 
 <dd>
 <p>Indicates that the display miniport driver is able to determine whether an external device is connected to the child device by polling the child device.</p>
 </dd>
 
-### -field <a id="HpdAwarenessInterruptible"></a><a id="hpdawarenessinterruptible"></a><a id="HPDAWARENESSINTERRUPTIBLE"></a><b>HpdAwarenessInterruptible</b>
+### -field HpdAwarenessInterruptible
 
 <dd>
 <p>Indicates that the child device is able to generate an interrupt when an external device is connected or disconnected.</p>

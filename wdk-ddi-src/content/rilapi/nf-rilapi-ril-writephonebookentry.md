@@ -7,7 +7,7 @@ old-location: netvista\ril_writephonebookentry.htm
 old-project: netvista
 ms.assetid: 03fc6240-ccc8-48de-87e0-b1ee5db3bac8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,27 +62,27 @@ HRESULT  RIL_WritePhonebookEntry(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>hUiccApp</i> 
+### -param hUiccApp 
 
 <dd></dd>
 
-### -param <i>dwStoreLocation</i> 
+### -param dwStoreLocation 
 
 <dd></dd>
 
-### -param <i>lpEntry</i> 
+### -param lpEntry 
 
 <dd></dd>
 
-### -param <i>lpLockVerification</i> 
+### -param lpLockVerification 
 
 <dd></dd>
 </dl>

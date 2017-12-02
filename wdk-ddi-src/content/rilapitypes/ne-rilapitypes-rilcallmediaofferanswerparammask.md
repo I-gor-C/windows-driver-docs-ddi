@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediaofferanswerparammask_2.htm
 old-project: netvista
 ms.assetid: 2dd7a85e-b284-42be-89d4-a4a7361d5c6d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef enum _RILCALLMEDIAOFFERANSWERPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_CMOA_CHANGE"></a><a id="ril_param_cmoa_change"></a><b>RIL_PARAM_CMOA_CHANGE</b>
+### -field RIL_PARAM_CMOA_CHANGE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CMOA_ACTION"></a><a id="ril_param_cmoa_action"></a><b>RIL_PARAM_CMOA_ACTION</b>
+### -field RIL_PARAM_CMOA_ACTION
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CMOA_OLD_STATE"></a><a id="ril_param_cmoa_old_state"></a><b>RIL_PARAM_CMOA_OLD_STATE</b>
+### -field RIL_PARAM_CMOA_OLD_STATE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CMOA_NEW_STATE"></a><a id="ril_param_cmoa_new_state"></a><b>RIL_PARAM_CMOA_NEW_STATE</b>
+### -field RIL_PARAM_CMOA_NEW_STATE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CMOA_ALL"></a><a id="ril_param_cmoa_all"></a><b>RIL_PARAM_CMOA_ALL</b>
+### -field RIL_PARAM_CMOA_ALL
 
 <dd></dd>
 </dl>

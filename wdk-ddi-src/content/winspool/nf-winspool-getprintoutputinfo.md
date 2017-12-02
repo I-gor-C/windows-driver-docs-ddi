@@ -58,19 +58,19 @@ HRESULT WINAPI GetPrintOutputInfo(
 ## -parameters
 <dl>
 
-### -param <i>hWnd</i> [in]
+### -param hWnd [in]
 
 <dd></dd>
 
-### -param <i>pszPrinter</i> [in]
+### -param pszPrinter [in]
 
 <dd></dd>
 
-### -param <i>phFile</i> [out]
+### -param phFile [out]
 
 <dd></dd>
 
-### -param <i>ppszOutputFile</i> [out]
+### -param ppszOutputFile [out]
 
 <dd></dd>
 </dl>

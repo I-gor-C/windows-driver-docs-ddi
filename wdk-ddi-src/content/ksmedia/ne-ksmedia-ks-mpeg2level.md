@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_MPEG2Level_Low"></a><a id="ks_mpeg2level_low"></a><a id="KS_MPEG2LEVEL_LOW"></a><b>KS_MPEG2Level_Low</b>
+### -field KS_MPEG2Level_Low
 
 <dd>
 <p>Specifies the low MPEG-2 resolution, or 352 × 240 at 30 frames per second.</p>
 </dd>
 
-### -field <a id="KS_MPEG2Level_Main"></a><a id="ks_mpeg2level_main"></a><a id="KS_MPEG2LEVEL_MAIN"></a><b>KS_MPEG2Level_Main</b>
+### -field KS_MPEG2Level_Main
 
 <dd>
 <p>Specifies the main MPEG-2 resolution, or 720 × 480 at 30 frames per second.</p>
 </dd>
 
-### -field <a id="KS_MPEG2Level_High1440"></a><a id="ks_mpeg2level_high1440"></a><a id="KS_MPEG2LEVEL_HIGH1440"></a><b>KS_MPEG2Level_High1440</b>
+### -field KS_MPEG2Level_High1440
 
 <dd>
 <p>Specifies the high-1440 MPEG-2 resolution, or 1440 × 1152 at 30 frames per second.</p>
 </dd>
 
-### -field <a id="KS_MPEG2Level_High"></a><a id="ks_mpeg2level_high"></a><a id="KS_MPEG2LEVEL_HIGH"></a><b>KS_MPEG2Level_High</b>
+### -field KS_MPEG2Level_High
 
 <dd>
 <p>Specifies the high MPEG-2 resolution, or 1920 × 1080 at 30 frames per second.</p>

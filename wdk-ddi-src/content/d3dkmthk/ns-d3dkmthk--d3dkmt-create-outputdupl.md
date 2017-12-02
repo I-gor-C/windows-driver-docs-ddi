@@ -58,23 +58,23 @@ typedef struct _D3DKMT_CREATE_OUTPUTDUPL {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd></dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd></dd>
 
-### -field <b>hSharedSurfaceGlobal</b>
+### -field hSharedSurfaceGlobal
 
 <dd></dd>
 
-### -field <b>hGPUFencefaceGlobal</b>
+### -field hGPUFencefaceGlobal
 
 <dd></dd>
 
-### -field <b>hKeyedMutexGlobal</b>
+### -field hKeyedMutexGlobal
 
 <dd></dd>
 </dl>

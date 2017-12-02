@@ -56,13 +56,13 @@ VOID IoInitializeWorkItem(
 ## -parameters
 <dl>
 
-### -param <i>IoObject</i> [in]
+### -param IoObject [in]
 
 <dd>
 <p>Pointer to the caller's driver object or to one of the caller's device objects. If the caller will later pass the work item to <a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a>, <i>IoObject</i> must point to a device object.</p>
 </dd>
 
-### -param <i>IoWorkItem</i> [in]
+### -param IoWorkItem [in]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550679">IO_WORKITEM</a> structure to initialize.</p>

@@ -59,25 +59,25 @@ typedef struct _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b> StartLba</b>
+### -field  StartLba
 
 <dd>
 <p>The StartLba field (Start LBA) contains the first logical block address of the extent described by this descriptor.</p>
 </dd>
 
-### -field <b>StartPerformance</b>
+### -field StartPerformance
 
 <dd>
 <p>The StartPerformance field (Start Performance) contains the nominal logical unit performance at the Start LBA in kilobytes per second. </p>
 </dd>
 
-### -field <b> EndLba</b>
+### -field  EndLba
 
 <dd>
 <p>The EndLba field (End LBA) contains the last logical block address of the extent described by this descriptor.</p>
 </dd>
 
-### -field <b> EndPerformance</b>
+### -field  EndPerformance
 
 <dd>
 <p>The EndPerformance field (End Performance) contains the nominal logical unit performance at the End LBA in kilobytes per second.</p>

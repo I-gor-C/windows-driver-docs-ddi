@@ -57,25 +57,25 @@ typedef struct _MSiSCSI_QueryLBPolicy {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueAdapterId</b>
+### -field UniqueAdapterId
 
 <dd>
 <p>This is a unique connection identifier that the initiator uses to identify a connection. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in the UniqueConnectionId parameter.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for Microsoft use only.</p>
 </dd>
 
-### -field <b>SessionCount</b>
+### -field SessionCount
 
 <dd>
 <p>This specifies the number of active sessions for this adapater ID.</p>
 </dd>
 
-### -field <b>LoadBalancePolicies</b>
+### -field LoadBalancePolicies
 
 <dd>
 <p>This is an enumeration that contains information required to set the load balance policy. For more information about how to set the load balance policy, see <a href="..\iscsimgt\ns-iscsimgt--iscsi-supported-lb-policies.md">ISCSI_Supported_LB_Policies</a>. There will be as many of these structures as the number of sessions available for this adapter.</p>

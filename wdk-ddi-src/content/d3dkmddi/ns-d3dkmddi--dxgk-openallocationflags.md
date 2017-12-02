@@ -61,14 +61,14 @@ typedef struct _DXGK_OPENALLOCATIONFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Create</b>
+### -field Create
 
 <dd>
 <p>A UINT value that specifies whether allocations should be created. If this member is not set, the allocations are opened. </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b>= member (0x00000001).</p>
 </dd>
 
-### -field <b>ReadOnly</b>
+### -field ReadOnly
 
 <dd>
 <p>A UINT value that specifies whether the allocation can only be read from. </p>
@@ -76,13 +76,13 @@ typedef struct _DXGK_OPENALLOCATIONFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 30 bits (0xFFFFFFFC) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that DXGK_OPENALLOCATIONFLAGS contains that can hold a 32-bit value that identifies the operation to perform for allocations.</p>

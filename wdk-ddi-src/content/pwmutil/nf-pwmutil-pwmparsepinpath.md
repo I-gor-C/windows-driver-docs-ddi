@@ -57,13 +57,13 @@ NTSTATUS PwmParsePinPath(
 ## -parameters
 <dl>
 
-### -param <i>PinPath</i> [in]
+### -param PinPath [in]
 
 <dd>
 <p>A pointer to pin path as a Unicode character string.</p>
 </dd>
 
-### -param <i>PinNumber</i> [out, optional]
+### -param PinNumber [out, optional]
 
 <dd>
 <p>A pointer to variable that receives a pin number.</p>

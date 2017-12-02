@@ -62,25 +62,25 @@ NTSTATUS ClfsReadNextLogRecord(
 ## -parameters
 <dl>
 
-### -param <i>pvReadContext</i> [in, out]
+### -param pvReadContext [in, out]
 
 <dd>
 <p>A pointer to a read context that the caller previously obtained by calling <a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a> or <a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>.</p>
 </dd>
 
-### -param <i>ppvBuffer</i> [out]
+### -param ppvBuffer [out]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to a buffer that contains the record data.</p>
 </dd>
 
-### -param <i>pcbBuffer</i> [out]
+### -param pcbBuffer [out]
 
 <dd>
 <p>A pointer to a ULONG-typed variable that receives the size, in bytes, of the buffer pointed to by *<i>ppvBuffer</i>. This is the length of the data buffer of the record read.</p>
 </dd>
 
-### -param <i>peRecordType</i> [in, out]
+### -param peRecordType [in, out]
 
 <dd>
 <p>A pointer to a variable of type CLFS_RECORD_TYPE. The caller must set this parameter to one of the following values.</p>
@@ -117,25 +117,25 @@ NTSTATUS ClfsReadNextLogRecord(
 <p> </p>
 </dd>
 
-### -param <i>plsnUser</i> [in, optional]
+### -param plsnUser [in, optional]
 
 <dd>
 <p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that supplies the LSN of the record to be read. The specified record is read instead of the record that would have been read according to the mode (<b>ClfsContextUndoNext</b>, <b>ClfsContextPrevious</b>, or <b>ClfsContextForward</b>) of the read context (<i>pvReadContext</i>). The LSN supplied in <i>plsnUser</i> must be less than the current LSN of the read context. This parameter can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>plsnUndoNext</i> [out]
+### -param plsnUndoNext [out]
 
 <dd>
 <p>A pointer to a <b>CLFS_LSN</b> structure that receives the undo-next LSN of the record that is read.</p>
 </dd>
 
-### -param <i>plsnPrevious</i> [out]
+### -param plsnPrevious [out]
 
 <dd>
 <p>A pointer to a <b>CLFS_LSN</b> structure that receives the previous LSN of the record that was read.</p>
 </dd>
 
-### -param <i>plsnRecord</i> [out]
+### -param plsnRecord [out]
 
 <dd>
 <p>A pointer to a <b>CLFS_LSN</b> structure that receives the LSN of the record that was read.</p>

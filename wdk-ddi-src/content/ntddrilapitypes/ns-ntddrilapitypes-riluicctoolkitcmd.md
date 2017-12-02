@@ -7,7 +7,7 @@ old-location: netvista\riluicctoolkitcmd.htm
 old-project: netvista
 ms.assetid: f5fc28df-ee06-4efd-8509-a05ed0ebf322
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUICCTOOLKITCMD, RILUICCTOOLKITCMD, *LPRILUICCTOOLKITCMD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef struct _RILUICCTOOLKITCMD {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwSlotIndex</b>
+### -field dwSlotIndex
 
 <dd></dd>
 
-### -field <b>fTerminalResponseNeeded</b>
+### -field fTerminalResponseNeeded
 
 <dd></dd>
 
-### -field <b>dwDetailsSize</b>
+### -field dwDetailsSize
 
 <dd></dd>
 
-### -field <b>bDetails</b>
+### -field bDetails
 
 <dd></dd>
 </dl>

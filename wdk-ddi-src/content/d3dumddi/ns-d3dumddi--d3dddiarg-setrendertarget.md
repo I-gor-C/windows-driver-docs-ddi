@@ -56,19 +56,19 @@ typedef struct _D3DDDIARG_SETRENDERTARGET {
 ## -struct-fields
 <dl>
 
-### -field <b>RenderTargetIndex</b>
+### -field RenderTargetIndex
 
 <dd>
 <p>[in] An index into the group of render target surfaces.</p>
 </dd>
 
-### -field <b>hRenderTarget</b>
+### -field hRenderTarget
 
 <dd>
 <p>[in] A handle to the render target surface or the group of render target surfaces.</p>
 </dd>
 
-### -field <b>SubResourceIndex</b>
+### -field SubResourceIndex
 
 <dd>
 <p>[in] An index into the resource for the render target.</p>

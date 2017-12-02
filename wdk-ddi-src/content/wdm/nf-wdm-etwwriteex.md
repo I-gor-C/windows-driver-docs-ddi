@@ -62,49 +62,49 @@ NTSTATUS EtwWriteEx(
 ## -parameters
 <dl>
 
-### -param <i>RegHandle</i> [in]
+### -param RegHandle [in]
 
 <dd>
 <p>A pointer to the event provider registration handle, which is returned by the <a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a> function if the event provider registration is successful.</p>
 </dd>
 
-### -param <i>EventDescriptor</i> [in]
+### -param EventDescriptor [in]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/cfe84b3d-fed2-4624-9899-8451e5b39de0">EVENT_DESCRIPTOR</a> structure. </p>
 </dd>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>The instance identifiers that identify the session to which the event will not written. That is, the value is a mask of sessions which should be excluded from logging (filtered out). Use a bitwise OR to specify multiple identifiers. Set to zero if you do not support filters or if the event is being written to all sessions (no filters failed). For information on getting the identifier for a session, see the <i>FilterData</i> parameter of your <a href="devtest.etwenablecallback">EtwEnableCallback</a> callback.  </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Reserved.  Must be  zero (0). </p>
 </dd>
 
-### -param <i>ActivityId</i> [in, optional]
+### -param ActivityId [in, optional]
 
 <dd>
 <p>The identifier that indicates the activity associated with the event. The <i>ActivityID</i> provides a way to group related events and is used in end-to-end tracing.  If NULL, ETW gets the identifier from the thread local storage. For details on getting this identifier, see <a href="..\wdm\nf-wdm-etwactivityidcontrol.md">EtwActivityIdControl</a>.</p>
 </dd>
 
-### -param <i>RelatedActivityId</i> [in, optional]
+### -param RelatedActivityId [in, optional]
 
 <dd>
 <p>Activity identifier from the previous component. Use this parameter to link your component's events to the previous component's events. To get the activity identifier that was set for the previous component, see the descriptions for the <i>ControlCode</i> parameter of the <a href="..\wdm\nf-wdm-etwactivityidcontrol.md">EtwActivityIdControl</a> function.</p>
 </dd>
 
-### -param <i>UserDataCount</i> [in]
+### -param UserDataCount [in]
 
 <dd>
 <p>Number of EVENT_DATA_DESCRIPTOR structures in <i>UserData</i>. The maximum number is 128.</p>
 </dd>
 
-### -param <i>UserData</i> [in, optional]
+### -param UserData [in, optional]
 
 <dd>
 <p>A pointer to the array of EVENT_DATA_DESCRIPTOR structures. Set this parameter to NULL if <i>UserDataCount</i> is zero. The data must be in the order specified in the manifest.</p>

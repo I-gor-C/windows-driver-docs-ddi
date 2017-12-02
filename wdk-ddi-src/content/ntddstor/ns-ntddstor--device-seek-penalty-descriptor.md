@@ -56,19 +56,19 @@ typedef struct _DEVICE_SEEK_PENALTY_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Contains the size of the structure DEVICE_SEEK_PENALTY_DESCRIPTOR. The value of this member will change as members are added to the structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the total size of the descriptor, in bytes.</p>
 </dd>
 
-### -field <b>IncursSeekPenalty</b>
+### -field IncursSeekPenalty
 
 <dd>
 <p>Specifies whether the device incurs a seek penalty.</p>

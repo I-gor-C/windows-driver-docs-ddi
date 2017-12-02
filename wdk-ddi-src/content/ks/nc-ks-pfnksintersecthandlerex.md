@@ -64,49 +64,49 @@ NTSTATUS AVStrMiniIntersectHandlerEx(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to the <b>Context</b> member of the corresponding <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>Pointer to the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> containing the intersection request.</p>
+<p>Pointer to the <a href="..\wdm\ns-wdm--irp.md">IRP</a> containing the intersection request.</p>
 </dd>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>Pointer to a structure of type <a href="stream.ksp_pin">KSP_PIN</a> that was passed in the intersection property request.</p>
 </dd>
 
-### -param <i>DataRange</i> [in]
+### -param DataRange [in]
 
 <dd>
 <p>Pointer to an array of <a href="stream.ksdatarange">KSDATARANGE</a> structures.</p>
 </dd>
 
-### -param <i>MatchingDataRange</i> [in]
+### -param MatchingDataRange [in]
 
 <dd>
 <p>Pointer to an array of <a href="stream.ksdatarange">KSDATARANGE</a> structures to match to <i>DataRange</i>.</p>
 </dd>
 
-### -param <i>DataBufferSize</i> [in]
+### -param DataBufferSize [in]
 
 <dd>
 <p>Specifies a value of type ULONG that contains the size of the data buffer.</p>
 </dd>
 
-### -param <i>Data</i> [out]
+### -param Data [out]
 
 <dd>
 <p>Pointer to an optional data buffer in which the minidriver outputs the intersection.</p>
 </dd>
 
-### -param <i>DataSize</i> [out]
+### -param DataSize [out]
 
 <dd>
 <p>Pointer to a value of type ULONG specifying the size of the data buffer.</p>

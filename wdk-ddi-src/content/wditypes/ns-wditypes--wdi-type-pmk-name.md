@@ -7,7 +7,7 @@ old-location: netvista\wdi_type_pmk_name.htm
 old-project: netvista
 ms.assetid: 71020A3E-0839-4D73-B1B7-8A979BD0F5E0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef struct _WDI_TYPE_PMK_NAME {
 ## -struct-fields
 <dl>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>the PMKR0Name or PMKR1Name.</p>

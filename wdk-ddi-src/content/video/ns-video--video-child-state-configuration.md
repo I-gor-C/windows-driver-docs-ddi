@@ -56,13 +56,13 @@ typedef struct _VIDEO_CHILD_STATE_CONFIGURATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Specifies the number of structures in the <b>ChildStateArray</b> member.</p>
 </dd>
 
-### -field <b>ChildStateArray</b>
+### -field ChildStateArray
 
 <dd>
 <p>Is an array of <a href="..\video\ns-video--video-child-state.md">VIDEO_CHILD_STATE</a> structures. Each element of this array contains the ID and state for a particular child device.</p>

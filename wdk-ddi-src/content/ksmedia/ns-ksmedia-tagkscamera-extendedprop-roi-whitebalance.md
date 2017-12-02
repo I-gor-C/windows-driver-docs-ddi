@@ -55,13 +55,13 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE {
 ## -struct-fields
 <dl>
 
-### -field <b>ROIInfo</b>
+### -field ROIInfo
 
 <dd>
 <p>See the <a href="stream.kscamera_extendedprop_roi_info">KSCAMERA_EXTENDEDPROP_ROI_INFO</a> structure for more information.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

@@ -57,25 +57,25 @@ typedef struct _PARTITION_INFORMATION_MBR {
 ## -struct-fields
 <dl>
 
-### -field <b>PartitionType</b>
+### -field PartitionType
 
 <dd>
 <p>Specifies the partition type. See <a href="..\ntdddisk\ns-ntdddisk--partition-information.md">PARTITION_INFORMATION</a> for a list of system-defined partition types.</p>
 </dd>
 
-### -field <b>BootIndicator</b>
+### -field BootIndicator
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the partition is bootable. When <b>FALSE</b>, the partition is not bootable.</p>
 </dd>
 
-### -field <b>RecognizedPartition</b>
+### -field RecognizedPartition
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that this is a partition with a recognized partition type. When <b>FALSE</b> this is a not a partition with a recognized partition.</p>
 </dd>
 
-### -field <b>HiddenSectors</b>
+### -field HiddenSectors
 
 <dd>
 <p>Contains the number of hidden sectors in the partition.</p>

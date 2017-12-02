@@ -56,13 +56,13 @@ typedef struct _PCW_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>A <b>const</b> pointer to a buffer of <b>Size</b> bytes.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>A numeric value that specifies the size, in bytes, associated with the instance of the counter set.</p>

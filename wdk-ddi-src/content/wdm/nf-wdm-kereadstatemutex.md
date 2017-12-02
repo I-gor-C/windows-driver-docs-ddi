@@ -55,7 +55,7 @@ LONG KeReadStateMutex(
 ## -parameters
 <dl>
 
-### -param <i>Mutex</i> [in]
+### -param Mutex [in]
 
 <dd>
 <p>Pointer to an initialized mutex object for which the caller provides the storage.</p>

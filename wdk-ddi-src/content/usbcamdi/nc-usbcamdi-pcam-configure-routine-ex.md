@@ -64,43 +64,43 @@ NTSTATUS CamConfigureEx(
 ## -parameters
 <dl>
 
-### -param <i>BusDeviceObject</i> 
+### -param BusDeviceObject 
 
 <dd>
 <p>Pointer to the camera minidriver's device object created by the USB hub.</p>
 </dd>
 
-### -param <i>DeviceContext</i> 
+### -param DeviceContext 
 
 <dd>
 <p>Pointer to the camera minidriver's device context.</p>
 </dd>
 
-### -param <i>Interface</i> 
+### -param Interface 
 
 <dd>
 <p>Pointer to the <a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a> structure initialized with the proper values for a SELECT_INTERFACE URB request. This interface structure corresponds to a single isochronous interface on the device.</p>
 </dd>
 
-### -param <i>ConfigurationDescriptor</i> 
+### -param ConfigurationDescriptor 
 
 <dd>
 <p>Pointer to the <a href="..\usbspec\ns-usbspec--usb-configuration-descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a> for this device.</p>
 </dd>
 
-### -param <i>PipeConfigListSize</i> 
+### -param PipeConfigListSize 
 
 <dd>
 <p>Specifies the number of elements in the <i>PipeConfig</i> array.</p>
 </dd>
 
-### -param <i>PipeConfig</i> 
+### -param PipeConfig 
 
 <dd>
 <p>Pointer to a <a href="stream.usbcamd_pipe_config_descriptor">USBCAMD_Pipe_Config_Descriptor</a> array describing the association between pipes and streams.</p>
 </dd>
 
-### -param <i>DeviceDescriptor</i> 
+### -param DeviceDescriptor 
 
 <dd>
 <p>Pointer to the <a href="..\usbspec\ns-usbspec--usb-device-descriptor.md">USB_DEVICE_DESCRIPTOR</a> for this device.</p>

@@ -60,43 +60,43 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSEVENTS_NONE"></a><a id="ksevents_none"></a><b>KSEVENTS_NONE</b>
+### -field KSEVENTS_NONE
 
 <dd>
 <p>No lock.</p>
 </dd>
 
-### -field <a id="KSEVENTS_SPINLOCK"></a><a id="ksevents_spinlock"></a><b>KSEVENTS_SPINLOCK</b>
+### -field KSEVENTS_SPINLOCK
 
 <dd>
 <p>Lock is assumed to be a KSPIN_LOCK.</p>
 </dd>
 
-### -field <a id="KSEVENTS_MUTEX"></a><a id="ksevents_mutex"></a><b>KSEVENTS_MUTEX</b>
+### -field KSEVENTS_MUTEX
 
 <dd>
 <p>Lock is assumed to be a KMUTEX.</p>
 </dd>
 
-### -field <a id="KSEVENTS_FMUTEX"></a><a id="ksevents_fmutex"></a><b>KSEVENTS_FMUTEX</b>
+### -field KSEVENTS_FMUTEX
 
 <dd>
 <p>Lock is assumed to be a FAST_MUTEX and is acquired by raising IRQL to APC_LEVEL.</p>
 </dd>
 
-### -field <a id="KSEVENTS_FMUTEXUNSAFE"></a><a id="ksevents_fmutexunsafe"></a><b>KSEVENTS_FMUTEXUNSAFE</b>
+### -field KSEVENTS_FMUTEXUNSAFE
 
 <dd>
 <p>Lock is assumed to be a FAST_MUTEX and is acquired without raising IRQL to APC_LEVEL.</p>
 </dd>
 
-### -field <a id="KSEVENTS_INTERRUPT"></a><a id="ksevents_interrupt"></a><b>KSEVENTS_INTERRUPT</b>
+### -field KSEVENTS_INTERRUPT
 
 <dd>
 <p>Lock is assumed to be an interrupt synchronization spin lock.</p>
 </dd>
 
-### -field <a id="KSEVENTS_ERESOURCE"></a><a id="ksevents_eresource"></a><b>KSEVENTS_ERESOURCE</b>
+### -field KSEVENTS_ERESOURCE
 
 <dd>
 <p>Lock is assumed to be an ERESOURCE.</p>

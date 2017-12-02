@@ -7,7 +7,7 @@ old-location: netvista\ril_removecallforwarding.htm
 old-project: netvista
 ms.assetid: d2ac3147-fe34-4643-b735-c795b6ba4768
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_RemoveCallForwarding
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,23 +61,23 @@ HRESULT  RIL_RemoveCallForwarding(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>dwReason</i> 
+### -param dwReason 
 
 <dd></dd>
 
-### -param <i>dwInfoClasses</i> 
+### -param dwInfoClasses 
 
 <dd></dd>
 </dl>

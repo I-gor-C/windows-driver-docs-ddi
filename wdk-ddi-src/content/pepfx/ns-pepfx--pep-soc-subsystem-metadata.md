@@ -55,7 +55,7 @@ typedef struct _PEP_SOC_SUBSYSTEM_METADATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Key</b>
+### -field Key
 
 <dd>
 <p>[in/out]  A buffer for the PEP to write the key portion of the metadata string-pair.  <b>Key</b> must be unique among all <b>Key</b> values reported by this subsystem.  
@@ -73,7 +73,7 @@ typedef struct _PEP_SOC_SUBSYSTEM_METADATA {
 Since this memory is pre-allocated, its size cannot be changed. The PEP is responsible for truncating the key string, if necessary, so that it does not exceed the length specified in <b>Key.MaximumLength</b> (including the terminating <b>UNICODE_NULL</b> character).</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in/out] A buffer for the PEP to write the value portion of the metadata string-pair.  </p>

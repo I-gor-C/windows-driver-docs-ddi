@@ -54,7 +54,7 @@ HANDLE PsGetProcessId(
 ## -parameters
 <dl>
 
-### -param <i>Process</i> [in]
+### -param Process [in]
 
 <dd>
 <p>A pointer to a process object structure. </p>

@@ -55,13 +55,13 @@ typedef struct tagKS_DATARANGE_MPEG2TS_AVC {
 ## -struct-fields
 <dl>
 
-### -field <b>DataRange</b>
+### -field DataRange
 
 <dd>
 <p>Specifies the range of supported AV/C MPEG2 formats.</p>
 </dd>
 
-### -field <b>ConnectInfo</b>
+### -field ConnectInfo
 
 <dd>
 <p>Specifies the AV/C preconnection info.</p>

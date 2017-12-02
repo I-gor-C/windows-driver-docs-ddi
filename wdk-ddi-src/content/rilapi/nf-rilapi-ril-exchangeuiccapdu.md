@@ -7,7 +7,7 @@ old-location: netvista\ril_exchangeuiccapdu.htm
 old-project: netvista
 ms.assetid: e0d0eaa5-8f3a-4522-b99b-76f42402dae9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_ExchangeUiccAPDU
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,27 +62,27 @@ HRESULT  RIL_ExchangeUiccAPDU(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwSlotIndex</i> 
+### -param dwSlotIndex 
 
 <dd></dd>
 
-### -param <i>dwChannelId</i> 
+### -param dwChannelId 
 
 <dd></dd>
 
-### -param <i>dwAPDULength</i> 
+### -param dwAPDULength 
 
 <dd></dd>
 
-### -param <i>bAPDU</i> 
+### -param bAPDU 
 
 <dd></dd>
 </dl>

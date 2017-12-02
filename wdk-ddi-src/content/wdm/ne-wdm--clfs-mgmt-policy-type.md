@@ -65,67 +65,67 @@ typedef enum _CLFS_MGMT_POLICY_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="ClfsMgmtPolicyMaximumSize"></a><a id="clfsmgmtpolicymaximumsize"></a><a id="CLFSMGMTPOLICYMAXIMUMSIZE"></a><b>ClfsMgmtPolicyMaximumSize</b>
+### -field ClfsMgmtPolicyMaximumSize
 
 <dd>
 <p>Indicates a policy that specifies the maximum size of a log. </p>
 </dd>
 
-### -field <a id="ClfsMgmtPolicyMinimumSize"></a><a id="clfsmgmtpolicyminimumsize"></a><a id="CLFSMGMTPOLICYMINIMUMSIZE"></a><b>ClfsMgmtPolicyMinimumSize</b>
+### -field ClfsMgmtPolicyMinimumSize
 
 <dd>
 <p>Indicates a policy that specifies the minimum size of a log. </p>
 </dd>
 
-### -field <a id="ClfsMgmtPolicyNewContainerSize"></a><a id="clfsmgmtpolicynewcontainersize"></a><a id="CLFSMGMTPOLICYNEWCONTAINERSIZE"></a><b>ClfsMgmtPolicyNewContainerSize</b>
+### -field ClfsMgmtPolicyNewContainerSize
 
 <dd>
 <p>Indicates a policy that specifies the size of new containers that are created.</p>
 </dd>
 
-### -field <a id="ClfsMgmtPolicyGrowthRate"></a><a id="clfsmgmtpolicygrowthrate"></a><a id="CLFSMGMTPOLICYGROWTHRATE"></a><b>ClfsMgmtPolicyGrowthRate</b>
+### -field ClfsMgmtPolicyGrowthRate
 
 <dd>
 <p>Indicates a policy that specifies how many new containers will be added to the log each time the log grows.</p>
 </dd>
 
-### -field <a id="ClfsMgmtPolicyLogTail"></a><a id="clfsmgmtpolicylogtail"></a><a id="CLFSMGMTPOLICYLOGTAIL"></a><b>ClfsMgmtPolicyLogTail</b>
+### -field ClfsMgmtPolicyLogTail
 
 <dd>
 <p>Indicates a policy that specifies how much free space will be requested when a client is notified to move its log tail. </p>
 </dd>
 
-### -field <a id="ClfsMgmtPolicyAutoShrink"></a><a id="clfsmgmtpolicyautoshrink"></a><a id="CLFSMGMTPOLICYAUTOSHRINK"></a><b>ClfsMgmtPolicyAutoShrink</b>
+### -field ClfsMgmtPolicyAutoShrink
 
 <dd>
 <p>Indicates a policy that specifies when the log will shrink based on the percentage of the log that is free.</p>
 </dd>
 
-### -field <a id="ClfsMgmtPolicyAutoGrow"></a><a id="clfsmgmtpolicyautogrow"></a><a id="CLFSMGMTPOLICYAUTOGROW"></a><b>ClfsMgmtPolicyAutoGrow</b>
+### -field ClfsMgmtPolicyAutoGrow
 
 <dd>
 <p>Indicates a policy that specifies whether the log should grow when fewer than two containers are free.</p>
 </dd>
 
-### -field <a id="ClfsMgmtPolicyNewContainerPrefix"></a><a id="clfsmgmtpolicynewcontainerprefix"></a><a id="CLFSMGMTPOLICYNEWCONTAINERPREFIX"></a><b>ClfsMgmtPolicyNewContainerPrefix</b>
+### -field ClfsMgmtPolicyNewContainerPrefix
 
 <dd>
 <p>Indicates a policy that specifies a prefix for the file name of each container, as well as the full path to the directory where the containers will be placed.</p>
 </dd>
 
-### -field <a id="ClfsMgmtPolicyNewContainerSuffix"></a><a id="clfsmgmtpolicynewcontainersuffix"></a><a id="CLFSMGMTPOLICYNEWCONTAINERSUFFIX"></a><b>ClfsMgmtPolicyNewContainerSuffix</b>
+### -field ClfsMgmtPolicyNewContainerSuffix
 
 <dd>
 <p>Indicates a policy that specifies a number to use as the starting suffix for container file names.</p>
 </dd>
 
-### -field <a id="ClfsMgmtPolicyNewContainerExtension"></a><a id="clfsmgmtpolicynewcontainerextension"></a><a id="CLFSMGMTPOLICYNEWCONTAINEREXTENSION"></a><b>ClfsMgmtPolicyNewContainerExtension</b>
+### -field ClfsMgmtPolicyNewContainerExtension
 
 <dd>
 <p>Indicates a policy that specifies an extension for the file name of each container.</p>
 </dd>
 
-### -field <a id="ClfsMgmtPolicyInvalid"></a><a id="clfsmgmtpolicyinvalid"></a><a id="CLFSMGMTPOLICYINVALID"></a><b>ClfsMgmtPolicyInvalid</b>
+### -field ClfsMgmtPolicyInvalid
 
 <dd>
 <p>Reserved for internal use.</p>

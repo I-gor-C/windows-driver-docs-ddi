@@ -66,49 +66,49 @@ typedef struct _SCSI_PASS_THROUGH_DIRECT {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Contains the value of <b>sizeof</b>(SCSI_PASS_THROUGH_DIRECT).  </p>
 </dd>
 
-### -field <b>ScsiStatus</b>
+### -field ScsiStatus
 
 <dd>
 <p>Reports the SCSI status that was returned by the HBA or the target device. </p>
 </dd>
 
-### -field <b>PathId</b>
+### -field PathId
 
 <dd>
 <p>Indicates the SCSI port or bus for the request. </p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>Indicates the target controller or device on the bus.  </p>
 </dd>
 
-### -field <b>Lun</b>
+### -field Lun
 
 <dd>
 <p>Indicates the logical unit number of the device. </p>
 </dd>
 
-### -field <b>CdbLength</b>
+### -field CdbLength
 
 <dd>
 <p>Indicates the size in bytes of the SCSI command descriptor block. </p>
 </dd>
 
-### -field <b>SenseInfoLength</b>
+### -field SenseInfoLength
 
 <dd>
 <p>Indicates the size in bytes of the request-sense buffer. </p>
 </dd>
 
-### -field <b>DataIn</b>
+### -field DataIn
 
 <dd>
 <dl>
@@ -155,31 +155,31 @@ typedef struct _SCSI_PASS_THROUGH_DIRECT {
 </dl>
 </dd>
 
-### -field <b>DataTransferLength</b>
+### -field DataTransferLength
 
 <dd>
 <p>Indicates the size in bytes of the data buffer. Many devices transfer chunks of data of predefined length. The value in <b>DataTransferLength</b> must be an integral multiple of this predefined, minimum length that is specified by the device. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred.</p>
 </dd>
 
-### -field <b>TimeOutValue</b>
+### -field TimeOutValue
 
 <dd>
 <p>Indicates the interval in seconds that the request can execute before the OS-specific port driver might consider it timed out.</p>
 </dd>
 
-### -field <b>DataBuffer</b>
+### -field DataBuffer
 
 <dd>
 <p>Pointer to the data buffer. </p>
 </dd>
 
-### -field <b>SenseInfoOffset</b>
+### -field SenseInfoOffset
 
 <dd>
 <p>Contains an offset from the beginning of this structure to the request-sense buffer. </p>
 </dd>
 
-### -field <b>Cdb</b>
+### -field Cdb
 
 <dd>
 <p>Specifies the SCSI command descriptor block to be sent to the target device. </p>

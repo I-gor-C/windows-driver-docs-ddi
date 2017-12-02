@@ -55,7 +55,7 @@ VOID InitializeListHead(
 ## -parameters
 <dl>
 
-### -param <i>ListHead</i> [out]
+### -param ListHead [out]
 
 <dd>
 <p>Pointer to a <a href="kernel.list_entry">LIST_ENTRY</a> structure that serves as the list header. </p>

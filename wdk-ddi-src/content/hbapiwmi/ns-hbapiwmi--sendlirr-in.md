@@ -57,25 +57,25 @@ typedef struct _SendLIRR_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>SourceWWN</b>
+### -field SourceWWN
 
 <dd>
 <p>Contains a worldwide name for the local port through which the link incident record registration (LIRR) command is sent. </p>
 </dd>
 
-### -field <b>DestWWN</b>
+### -field DestWWN
 
 <dd>
 <p>Contains a worldwide name for the destination port. </p>
 </dd>
 
-### -field <b>Function</b>
+### -field Function
 
 <dd>
 <p>Contains the code that identifies which registration function is to be performed. For an explanation of which values can be assigned to this member, see the T11 committee's <i>Fibre Channel Framing and Signaling</i> specification. </p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Indicates the device type for which link information is requested. For an explanation of which values can be assigned to this member, see the T11 committee's <i>Fibre Channel Framing and Signaling</i> specification. </p>

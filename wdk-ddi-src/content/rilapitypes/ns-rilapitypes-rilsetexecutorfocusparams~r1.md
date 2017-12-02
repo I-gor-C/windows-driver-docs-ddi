@@ -7,7 +7,7 @@ old-location: netvista\rilsetexecutorfocusparams_2.htm
 old-project: netvista
 ms.assetid: 724df793-72cb-4460-bec8-0136b86ff82d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSETEXECUTORFOCUSPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILSETEXECUTORFOCUSPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwNumberOfExecutors</b>
+### -field dwNumberOfExecutors
 
 <dd></dd>
 
-### -field <b>fFocusStates</b>
+### -field fFocusStates
 
 <dd></dd>
 </dl>

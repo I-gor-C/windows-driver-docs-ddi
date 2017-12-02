@@ -57,25 +57,25 @@ typedef struct _GetFcpPersistentBinding_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains the status of the operation. For a list of allowed values and their descriptions, see HBA_STATUS.</p>
 </dd>
 
-### -field <b>TotalEntryCount</b>
+### -field TotalEntryCount
 
 <dd>
 <p>Indicates the total number of persistent bindings retrieved by the <a href="storage.getfcppersistentbinding">GetFcpPersistentBinding</a> WMI method.</p>
 </dd>
 
-### -field <b>OutEntryCount</b>
+### -field OutEntryCount
 
 <dd>
 <p>Indicates the total number of mappings retrieved by the <a href="storage.getfcptargetmapping">GetFcpTargetMapping</a> WMI method. This value will be less than or equal to <b>TotalEntryCount</b>.</p>
 </dd>
 
-### -field <b>Entry</b>
+### -field Entry
 
 <dd>
 <p>Contains an array of structures of type HBAFCPBindingEntry that describe an HBA's bindings between operating system and fibre channel protocol (FCP) identifiers.</p>

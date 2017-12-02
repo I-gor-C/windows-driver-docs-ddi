@@ -57,7 +57,7 @@ typedef struct IDARG_IN_MONITORCREATE {
 ## -struct-fields
 <dl>
 
-### -field <b>ObjectAttributes</b>
+### -field ObjectAttributes
 
 <dd>
 <p>
@@ -65,7 +65,7 @@ typedef struct IDARG_IN_MONITORCREATE {
                  Indicates object attributes for the monitor.</p>
 </dd>
 
-### -field <b>pMonitorInfo</b>
+### -field pMonitorInfo
 
 <dd>
 <p>[in] Pointer to the information about this monitor.</p>

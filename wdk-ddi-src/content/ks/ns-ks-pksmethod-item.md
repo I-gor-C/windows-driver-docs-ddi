@@ -62,43 +62,43 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>MethodId</b>
+### -field MethodId
 
 <dd>
 <p>Specifies the identifier of this method within its method set.</p>
 </dd>
 
-### -field <b>MethodHandler</b>
+### -field MethodHandler
 
 <dd>
 <p>Pointer to a minidriver-supplied <a href="stream.kstrmethodhandler">KStrMethodHandler</a> callback routine.</p>
 </dd>
 
-### -field <b>MethodSupported</b>
+### -field MethodSupported
 
 <dd>
 <p>Specifies if this method is supported or not.</p>
 </dd>
 
-### -field <b>MinMethod</b>
+### -field MinMethod
 
 <dd>
 <p>Specifies the minimum size of buffer required to specify the method completely. This size is at least <b>sizeof</b>(KSMETHOD) bytes.</p>
 </dd>
 
-### -field <b>MinData</b>
+### -field MinData
 
 <dd>
 <p>Specifies the minimum size buffer required to specify the method data buffer. This buffer is used to read and/or write information related to the method.</p>
 </dd>
 
-### -field <b>SupportHandler</b>
+### -field SupportHandler
 
 <dd>
 <p>Pointer to a minidriver-supplied <a href="stream.kstrsupporthandler">KStrSupportHandler</a> callback routine.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies the request type of this method request.</p>
@@ -153,7 +153,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>A minidriver uses the KSMETHOD_ITEM structure to define methods in a method set. The minidriver implements methods and uses the <b>MethodHandler</b> member to point to these methods. A client can then use the IOCTL_KS_METHOD request along with the KSMETHOD structure to execute methods on a kernel streaming object that the minidriver handles. For more information, see <a href="NULL">KS Methods</a>.</p>
+<p>A minidriver uses the KSMETHOD_ITEM structure to define methods in a method set. The minidriver implements methods and uses the <b>MethodHandler</b> member to point to these methods. A client can then use the IOCTL_KS_METHOD request along with the KSMETHOD structure to execute methods on a kernel streaming object that the minidriver handles. For more information, see <a href="https://msdn.microsoft.com/1d7bd6f4-0aaf-4d77-8132-f551fd2ecbd2">KS Methods</a>.</p>
 
 ## -requirements
 <table>

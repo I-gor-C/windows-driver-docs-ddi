@@ -57,25 +57,25 @@ typedef struct _DXGKARG_QUERYVIDPNHWCAPABILITY {
 ## -struct-fields
 <dl>
 
-### -field <b>hFunctionalVidPn</b>
+### -field hFunctionalVidPn
 
 <dd>
 <p>[in] A handle to a functional VidPN object for which the hardware capabilities are being queried.</p>
 </dd>
 
-### -field <b>SourceId</b>
+### -field SourceId
 
 <dd>
 <p>[in] An integer that identifies a video present source on the display adapter.</p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>[in] An integer that identifies a video present target on the display adapter.</p>
 </dd>
 
-### -field <b>VidPnHWCaps</b>
+### -field VidPnHWCaps
 
 <dd>
 <p>[out] A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-hw-capability.md">D3DKMDT_VIDPN_HW_CAPABILITY</a> structure that describes the capabilities of the display miniport driver to perform display operations without dedicated GPU hardware support.</p>

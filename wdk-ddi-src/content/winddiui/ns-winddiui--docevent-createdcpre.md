@@ -58,25 +58,25 @@ typedef struct _DOCEVENT_CREATEDCPRE {
 ## -struct-fields
 <dl>
 
-### -field <b>pszDriver</b>
+### -field pszDriver
 
 <dd>
 <p>Reserved for system use. Set to zero.</p>
 </dd>
 
-### -field <b>pszDevice</b>
+### -field pszDevice
 
 <dd>
 <p>Pointer to the first byte of a Unicode string that contains either the device name or the port name, depending on whether print spooling is enabled or disabled. If the print job is being sent directly to the printer (spooling is disabled), this member contains the printer name. If a print job is being spooled, this member contains the port name. </p>
 </dd>
 
-### -field <b>pdm</b>
+### -field pdm
 
 <dd>
 <p>Pointer to a <a href="display.devmodew">DEVMODEW</a> structure passed to either CreateIC or CreateDC (both described in the Microsoft Windows SDK documentation). This member can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>bIC</b>
+### -field bIC
 
 <dd>
 <p>Specifies whether the DEVMODEW structure pointed to by the <b>pdm</b> member is being passed to CreateIC or CreateDC. If <b>TRUE</b>, CreateIC is being called. If <b>FALSE</b>, CreateDC is being called.</p>

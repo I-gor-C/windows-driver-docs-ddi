@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>MembersHeader</b>
+### -field MembersHeader
 
 <dd>
 <p>Indicates a structure of type <a href="stream.ksproperty_membersheader">KSPROPERTY_MEMBERSHEADER</a> that specifies the size and type of information contained in the <b>Members</b> array.</p>
 </dd>
 
-### -field <b>Members</b>
+### -field Members
 
 <dd>
 <p>Points to an array of entries that specify legal values or ranges for a property. Each entry describes a value or a set of a values.</p>

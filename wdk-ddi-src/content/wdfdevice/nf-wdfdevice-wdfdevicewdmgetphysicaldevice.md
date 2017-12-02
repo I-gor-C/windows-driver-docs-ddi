@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicewdmgetphysicaldevice.htm
 old-project: wdf
 ms.assetid: 88bd9cc7-6769-4fdf-b149-2193d765fc6c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceWdmGetPhysicalDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ PDEVICE_OBJECT WdfDeviceWdmGetPhysicalDevice(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>

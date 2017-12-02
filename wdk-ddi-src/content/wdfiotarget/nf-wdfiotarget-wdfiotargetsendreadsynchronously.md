@@ -7,7 +7,7 @@ old-location: wdf\wdfiotargetsendreadsynchronously.htm
 old-project: wdf
 ms.assetid: bc6ceaac-883b-44af-8ac5-20145a5a6af9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfIoTargetSendReadSynchronously
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ NTSTATUS WdfIoTargetSendReadSynchronously(
 ## -parameters
 <dl>
 
-### -param <i>IoTarget</i> [in]
+### -param IoTarget [in]
 
 <dd>
 <p>A handle to a local or remote I/O target object that was obtained from a previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a> or <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a> or from a method that a specialized I/O target supplies.</p>
 </dd>
 
-### -param <i>Request</i> [in, optional]
+### -param Request [in, optional]
 
 <dd>
 <p>A handle to a framework request object. This parameter is optional and can be <b>NULL</b>. For more information about this parameter, see the following Remarks section.</p>
 </dd>
 
-### -param <i>OutputBuffer</i> [in, optional]
+### -param OutputBuffer [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfmemory\ns-wdfmemory--wdf-memory-descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure that describes the buffer that will receive data from the device.This parameter is optional and can be <b>NULL</b>. For more information about this parameter, see the following Remarks section.</p>
 </dd>
 
-### -param <i>DeviceOffset</i> [in, optional]
+### -param DeviceOffset [in, optional]
 
 <dd>
 <p>A pointer to a location that specifies a starting offset for the transfer. The I/O target (that is, the next-lower driver) defines how to use this value. For example, the drivers in a disk's driver stack might specify an offset from the beginning of the disk. The I/O target obtains this information in the <b>Parameters.Read.DeviceOffset</b> member of the request's <a href="..\wdfrequest\ns-wdfrequest--wdf-request-parameters.md">WDF_REQUEST_PARAMETERS</a> structure. This pointer is optional. Most drivers set this pointer to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>RequestOptions</i> [in, optional]
+### -param RequestOptions [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfrequest\ns-wdfrequest--wdf-request-send-options.md">WDF_REQUEST_SEND_OPTIONS</a> structure that specifies options for the read request. This pointer is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>BytesRead</i> [out, optional]
+### -param BytesRead [out, optional]
 
 <dd>
 <p>A pointer to a location that receives the number of bytes read, if the operation succeeds. This pointer is optional and can be <b>NULL</b>.</p>
@@ -111,7 +111,7 @@ NTSTATUS WdfIoTargetSendReadSynchronously(
 <dt><b>STATUS_IO_TIMEOUT</b></dt>
 </dl><p>The driver supplied a time-out value and the request did not complete within the allotted time.</p><dl>
 <dt><b>STATUS_REQUEST_NOT_ACCEPTED</b></dt>
-</dl><p>The I/O request packet (<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>) that the <i>Request</i> parameter represents does not provide enough <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> structures to allow the driver to forward the request.</p>
+</dl><p>The I/O request packet (<a href="..\wdm\ns-wdm--irp.md">IRP</a>) that the <i>Request</i> parameter represents does not provide enough <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> structures to allow the driver to forward the request.</p>
 
 <p> </p>
 
@@ -305,4 +305,4 @@ NTSTATUS WdfIoTargetSendReadSynchronously(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoTargetSendReadSynchronously method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoTargetSendReadSynchronously method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

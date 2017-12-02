@@ -7,7 +7,7 @@ old-location: ifsk\rtlabsolutetoselfrelativesd.htm
 old-project: ifsk
 ms.assetid: e6247856-5abf-44ea-afe8-9be3f61271a4
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlAbsoluteToSelfRelativeSD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ NTSTATUS RtlAbsoluteToSelfRelativeSD(
 ## -parameters
 <dl>
 
-### -param <i>AbsoluteSecurityDescriptor</i> [in]
+### -param AbsoluteSecurityDescriptor [in]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that contains a <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> structure in absolute format. <b>RtlAbsoluteToSelfRelativeSD</b> creates a version of this security descriptor in self-relative format without modifying the original. </p>
 </dd>
 
-### -param <i>SelfRelativeSecurityDescriptor</i> [out]
+### -param SelfRelativeSecurityDescriptor [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that receives a security descriptor in self-relative format. </p>
 </dd>
 
-### -param <i>BufferLength</i> [in, out]
+### -param BufferLength [in, out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that specifies the size, in bytes, of the buffer pointed to by the <i>SelfRelativeSecurityDescriptor</i> parameter. If the buffer is not large enough to hold the security descriptor, <b>RtlAbsoluteToSelfRelativeSD</b> returns STATUS_BUFFER_TOO_SMALL and sets this variable to the minimum required size. </p>
@@ -178,4 +178,4 @@ NTSTATUS RtlAbsoluteToSelfRelativeSD(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlAbsoluteToSelfRelativeSD routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlAbsoluteToSelfRelativeSD routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

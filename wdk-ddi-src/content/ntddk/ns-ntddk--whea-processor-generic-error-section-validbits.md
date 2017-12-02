@@ -70,91 +70,91 @@ typedef union _WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS {
 ## -struct-fields
 <dl>
 
-### -field <b>ProcessorType</b>
+### -field ProcessorType
 
 <dd>
 <p>A single bit that indicates that the <b>ProcessorType</b> member of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>InstructionSet</b>
+### -field InstructionSet
 
 <dd>
 <p>A single bit that indicates that the <b>InstructionSet</b> member of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>ErrorType</b>
+### -field ErrorType
 
 <dd>
 <p>A single bit that indicates that the <b>ErrorType</b> member of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>Operation</b>
+### -field Operation
 
 <dd>
 <p>A single bit that indicates that the <b>Operation</b> member of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A single bit that indicates that the <b>Flags</b> member of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>Level</b>
+### -field Level
 
 <dd>
 <p>A single bit that indicates that the <b>Level</b> member of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>CPUVersion</b>
+### -field CPUVersion
 
 <dd>
 <p>A single bit that indicates that the <b>CPUVersion</b> member of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>CPUBrandString</b>
+### -field CPUBrandString
 
 <dd>
 <p>A single bit that indicates that the <b>CPUBrandString</b> member of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>ProcessorId</b>
+### -field ProcessorId
 
 <dd>
 <p>A single bit that indicates that the <b>ProcessorId</b> member of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>TargetAddress</b>
+### -field TargetAddress
 
 <dd>
 <p>A single bit that indicates that the <b>TargetAddress</b> member of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>RequesterId</b>
+### -field RequesterId
 
 <dd>
 <p>A single bit that indicates that the <b>RequesterId</b> member of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>ResponderId</b>
+### -field ResponderId
 
 <dd>
 <p>A single bit that indicates that the <b>ResponderId</b> member of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>InstructionPointer</b>
+### -field InstructionPointer
 
 <dd>
 <p>A single bit that indicates that the <b>InstructionPointer</b> member of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>ValidBits</b>
+### -field ValidBits
 
 <dd>
 <p>A ULONGLONG representation of the contents of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union.</p>

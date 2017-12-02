@@ -58,13 +58,13 @@ _Check_return_ HRESULT APIENTRY* OfferResources(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-offerresources.md">D3DDDIARG_OFFERRESOURCES</a> structure that defines the video memory resources that the driver offers.</p>

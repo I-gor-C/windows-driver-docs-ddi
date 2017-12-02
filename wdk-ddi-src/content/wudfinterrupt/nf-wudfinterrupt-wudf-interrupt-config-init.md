@@ -7,7 +7,7 @@ old-location: wdf\wudf_interrupt_config_init.htm
 old-project: wdf
 ms.assetid: 71011FDF-547E-4FF0-9015-E8E09FDF950E
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_INTERRUPT_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ void WUDF_INTERRUPT_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Configuration</i> [out]
+### -param Configuration [out]
 
 <dd>
 <p>A pointer to a <a href="..\wudfinterrupt\ns-wudfinterrupt--wudf-interrupt-config.md">WUDF_INTERRUPT_CONFIG</a> structure.</p>
 </dd>
 
-### -param <i>OnInterruptIsr</i> [in]
+### -param OnInterruptIsr [in]
 
 <dd>
 <p>A pointer to the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-isr.md">OnInterruptIsr</a> event callback function.</p>
 </dd>
 
-### -param <i>OnInterruptWorkItem</i> [in, optional]
+### -param OnInterruptWorkItem [in, optional]
 
 <dd>
 <p>A pointer to the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-workitem.md">OnInterruptWorkItem</a> event callback function, or NULL.</p>

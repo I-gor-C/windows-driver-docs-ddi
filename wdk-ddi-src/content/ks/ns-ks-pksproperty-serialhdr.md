@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>PropertySet</b>
+### -field PropertySet
 
 <dd>
 <p>Specifies the GUID of the property set contained in the serialized buffer.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Specifies the count of serialized properties to follow.</p>

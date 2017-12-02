@@ -7,7 +7,7 @@ old-location: ifsk\rxcebuildconnectionovermultipletransports.htm
 old-project: ifsk
 ms.assetid: 9ef9a5a5-e0ad-46c0-8193-8d2a18a21ea0
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxCeBuildConnectionOverMultipleTransports
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,32 +64,32 @@ NTSTATUS RxCeBuildConnectionOverMultipleTransports(
 ## -parameters
 <dl>
 
-### -param <i>pMiniRedirectorDeviceObject</i> [in, out]
+### -param pMiniRedirectorDeviceObject [in, out]
 
 <dd>
 <p>A pointer to the mini-redirector device object.</p>
 </dd>
 
-### -param <i>CreateOptions</i> [in]
+### -param CreateOptions [in]
 
 <dd>
 <p>Create options that determine which transport will be selected for establishing a connection. These options can be one of the following enumerations for RXCE_CONNECTION_CREATE_OPTIONS:</p>
 <p></p>
 <dl>
 
-### -param <a id="RxCeSelectFirstSuccessfulTransport"></a><a id="rxceselectfirstsuccessfultransport"></a><a id="RXCESELECTFIRSTSUCCESSFULTRANSPORT"></a>RxCeSelectFirstSuccessfulTransport
+### -param RxCeSelectFirstSuccessfulTransport
 
 <dd>
 <p>Select the first successful transport that responds.</p>
 </dd>
 
-### -param <a id="RxCeSelectBestSuccessfulTransport"></a><a id="rxceselectbestsuccessfultransport"></a><a id="RXCESELECTBESTSUCCESSFULTRANSPORT"></a>RxCeSelectBestSuccessfulTransport
+### -param RxCeSelectBestSuccessfulTransport
 
 <dd>
 <p>Select the best successful transport that responds.</p>
 </dd>
 
-### -param <a id="RxCeSelectAllSuccessfulTransports"></a><a id="rxceselectallsuccessfultransports"></a><a id="RXCESELECTALLSUCCESSFULTRANSPORTS"></a>RxCeSelectAllSuccessfulTransports
+### -param RxCeSelectAllSuccessfulTransports
 
 <dd>
 <p>Select all of the successful transports that respond.</p>
@@ -97,49 +97,49 @@ NTSTATUS RxCeBuildConnectionOverMultipleTransports(
 </dl>
 </dd>
 
-### -param <i>NumberOfAddresses</i> [in]
+### -param NumberOfAddresses [in]
 
 <dd>
 <p>The number of local addresses (transports).</p>
 </dd>
 
-### -param <i>pLocalAddressPointers</i> [in]
+### -param pLocalAddressPointers [in]
 
 <dd>
 <p>A pointer to an array of the local address handles.</p>
 </dd>
 
-### -param <i>pServerName</i> [in]
+### -param pServerName [in]
 
 <dd>
 <p>A pointer to the name of the server (for connection enumeration).</p>
 </dd>
 
-### -param <i>pConnectionInformation</i> [in]
+### -param pConnectionInformation [in]
 
 <dd>
 <p>A pointer to the connection information that specifies the remote address.</p>
 </dd>
 
-### -param <i>pHandler</i> [in]
+### -param pHandler [in]
 
 <dd>
 <p>A pointer to the event handler for processing receive indications.</p>
 </dd>
 
-### -param <i>pEventContext</i> [in]
+### -param pEventContext [in]
 
 <dd>
 <p>A pointer to the context parameter to be passed back to the event handler and used for indications.</p>
 </dd>
 
-### -param <i>pCompletionRoutine</i> [in]
+### -param pCompletionRoutine [in]
 
 <dd>
 <p>A pointer to a connection completion routine when this routine completed if STATUS_PENDING is initially returned.</p>
 </dd>
 
-### -param <i>pCompletionContext</i> [in, out]
+### -param pCompletionContext [in, out]
 
 <dd>
 <p>On input, this parameter contains a pointer to an uninitialized RXCE_CONNECTION_COMPLETION_CONTEXT structure. On output when this call is successful, the virtual circuit is associated with the connection and the virtual circuit and connection are properly initialized.</p>
@@ -214,4 +214,4 @@ NTSTATUS RxCeBuildConnectionOverMultipleTransports(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCeBuildConnectionOverMultipleTransports routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCeBuildConnectionOverMultipleTransports routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

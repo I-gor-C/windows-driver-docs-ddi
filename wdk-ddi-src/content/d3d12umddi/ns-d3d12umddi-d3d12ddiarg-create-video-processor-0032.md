@@ -57,25 +57,25 @@ typedef struct _D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeMask</b>
+### -field NodeMask
 
 <dd>
 <p>Represents the set of nodes.</p>
 </dd>
 
-### -field <b>OutputStream</b>
+### -field OutputStream
 
 <dd>
 <p>The output stream.</p>
 </dd>
 
-### -field <b>pInputStreams</b>
+### -field pInputStreams
 
 <dd>
 <p>The input stream.</p>
 </dd>
 
-### -field <b>NumInputStreams</b>
+### -field NumInputStreams
 
 <dd>
 <p>The number of input streams.</p>

@@ -56,13 +56,13 @@ HRESULT Write(
 ## -parameters
 <dl>
 
-### -param <i>pdispArray</i> [in]
+### -param pdispArray [in]
 
 <dd>
 <p>The array to write.</p>
 </dd>
 
-### -param <i>pcbWritten</i> [out, retval]
+### -param pcbWritten [out, retval]
 
 <dd>
 <p>The number of bytes written.</p>

@@ -56,20 +56,20 @@ typedef struct _DXVA_EncryptProtocolHeader {
 ## -struct-fields
 <dl>
 
-### -field <b>dwFunction</b>
+### -field dwFunction
 
 <dd>
 <p>Indicates whether encryption is being used and the operation to which encryption applies. The 24 most significant bits of <b>dwFunction</b> indicate that an encryption protocol is being used. These bits must be 0xFFFF00 when sent by the host software decoder, and 0xFFFF08 when sent by the accelerator. The 8 least significant bits of <b>dwFunction</b> contain a <a href="https://msdn.microsoft.com/6db9fa71-7bc2-4eb6-afcb-b16df48f7e8b">bDXVA_Func</a> variable that indicates the operation to which the encryption protocol applies. Currently, the only relevant defined value of <i>bDXVA_Func</i> for use in these bits is 1, which indicates that the encryption protocol applies to compressed picture decoding.</p>
 <p>There are only two possible values for <b>dwFunction</b> in this structure: 0xFFFF0001 when sent by a host software decoder, and 0xFFFF0801 when sent by the hardware accelerator.</p>
 </dd>
 
-### -field <b>ReservedBits</b>
+### -field ReservedBits
 
 <dd>
 <p>Reserved bits used for packing and alignment. This must be zero.</p>
 </dd>
 
-### -field <b>guidEncryptProtocol</b>
+### -field guidEncryptProtocol
 
 <dd>
 <p>Contains the GUID associated with the encryption protocol.</p>

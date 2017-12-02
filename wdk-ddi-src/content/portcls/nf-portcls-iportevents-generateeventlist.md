@@ -59,37 +59,37 @@ void GenerateEventList(
 ## -parameters
 <dl>
 
-### -param <i>Set</i> [in, optional]
+### -param Set [in, optional]
 
 <dd>
 <p>Identifies the event set that the event belongs to. This parameter is a pointer to a GUID. <i>Set</i> is an optional parameter. A <i>Set</i> value of <b>NULL</b> is a wild card that matches all event-set GUIDs in the list. Otherwise, only event entries with matching event-set GUIDs are signaled.</p>
 </dd>
 
-### -param <i>EventId</i> [in]
+### -param EventId [in]
 
 <dd>
 <p>Specifies an event ID. This parameter specifies the index of the event in the event set. If an event set contains <i>n</i> events, valid event IDs are in the range 0 to <i>n</i>-1. Only event entries with matching event IDs are signaled.</p>
 </dd>
 
-### -param <i>PinEvent</i> [in]
+### -param PinEvent [in]
 
 <dd>
 <p>Specifies whether <i>PinId</i> should be used in qualifying which event entries to signal. If <i>PinEvent</i> is <b>FALSE</b>, <i>PinId</i> is treated as a wild card that matches all pin IDs in the list.</p>
 </dd>
 
-### -param <i>PinId</i> [in]
+### -param PinId [in]
 
 <dd>
 <p>Specifies the pin ID of the event to be signaled. If <i>PinEvent</i> is <b>TRUE</b>, then only event entries with matching pin IDs are signaled.</p>
 </dd>
 
-### -param <i>NodeEvent</i> [in]
+### -param NodeEvent [in]
 
 <dd>
 <p>Indicates whether <i>NodeId</i> should be used in qualifying which event entries to signal. If <i>NodeEvent</i> is <b>FALSE</b>, <i>NodeId</i> is treated as a wild card that matches all node IDs in the list.</p>
 </dd>
 
-### -param <i>NodeId</i> [in]
+### -param NodeId [in]
 
 <dd>
 <p>Specifies the node ID of the event to be signaled. If <i>NodeEvent</i> is <b>TRUE</b>, then only event entries with matching node IDs are signaled.</p>

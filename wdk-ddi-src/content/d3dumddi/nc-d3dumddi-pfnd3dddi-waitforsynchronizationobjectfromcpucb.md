@@ -58,13 +58,13 @@ HRESULT APIENTRY CALLBACK* pfnWaitForSynchronizationObjectFromCpuCb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>A handle to the display device.</p>
 </dd>
 
-### -param <i>pData</i> 
+### -param pData 
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicb-signalsynchronizationobjectfromcpu.md">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU</a> structure that provides the details of the requested operation.</p>

@@ -56,13 +56,13 @@ ULONG StorPortInitializeWorker(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Worker</i> [out]
+### -param Worker [out]
 
 <dd>
 <p>A pointer to an opaque buffer that holds context information for the work item.</p>

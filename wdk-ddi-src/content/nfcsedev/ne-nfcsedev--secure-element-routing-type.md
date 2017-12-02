@@ -57,21 +57,21 @@ typedef enum _SECURE_ELEMENT_ROUTING_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RoutingTypeTech"></a><a id="routingtypetech"></a><a id="ROUTINGTYPETECH"></a><b>RoutingTypeTech</b>
+### -field RoutingTypeTech
 
 <dd>
 <p>NFC Forum technology-based routing type.
 </p>
 </dd>
 
-### -field <a id="RoutingTypeProtocol"></a><a id="routingtypeprotocol"></a><a id="ROUTINGTYPEPROTOCOL"></a><b>RoutingTypeProtocol</b>
+### -field RoutingTypeProtocol
 
 <dd>
 <p>NFC Forum protocol-based routing type.
 </p>
 </dd>
 
-### -field <a id="RoutingTypeAid"></a><a id="routingtypeaid"></a><a id="ROUTINGTYPEAID"></a><b>RoutingTypeAid</b>
+### -field RoutingTypeAid
 
 <dd>
 <p>NFC Forum AID-based routing type.

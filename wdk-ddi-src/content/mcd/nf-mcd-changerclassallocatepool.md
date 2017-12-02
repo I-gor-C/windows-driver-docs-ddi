@@ -55,13 +55,13 @@ PVOID ChangerClassAllocatePool(
 ## -parameters
 <dl>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>Indicates the type of pool memory to allocate. See <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a> for a list of types.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>Indicates number of bytes to allocate. </p>

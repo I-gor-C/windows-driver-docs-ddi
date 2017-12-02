@@ -7,7 +7,7 @@ old-location: netvista\rilcallbarringstatusparamsstatus_2.htm
 old-project: netvista
 ms.assetid: 0d7eff2c-7179-4517-a678-deb62315e53b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILCALLBARRINGSTATUSPARAMSSTATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_BARRINGSTATUS_ENABLED"></a><a id="ril_barringstatus_enabled"></a><b>RIL_BARRINGSTATUS_ENABLED</b>
+### -field RIL_BARRINGSTATUS_ENABLED
 
 <dd></dd>
 
-### -field <a id="RIL_BARRINGSTATUS_MAX"></a><a id="ril_barringstatus_max"></a><b>RIL_BARRINGSTATUS_MAX</b>
+### -field RIL_BARRINGSTATUS_MAX
 
 <dd></dd>
 </dl>

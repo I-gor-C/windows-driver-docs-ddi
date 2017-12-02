@@ -55,13 +55,13 @@ VOID APIENTRY* PFND3D12DDI_SETPROTECTEDRESOURCESESSION_0030(
 ## -parameters
 <dl>
 
-### -param <i>hCommandList</i> 
+### -param hCommandList 
 
 <dd>
 <p>The command list.</p>
 </dd>
 
-### -param <i>hProtectedResourceSession</i> 
+### -param hProtectedResourceSession 
 
 <dd>
 <p>The protected resource session.</p>

@@ -63,7 +63,7 @@ typedef struct _DXGK_GDIARG_BITBLT {
 ## -struct-fields
 <dl>
 
-### -field <b>SrcRect</b>
+### -field SrcRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure that defines the rectangular area to be copied. This rectangle is specified in the coordinate system of the source surface and is defined by two points: upper left and lower right. The two points that define the rectangle are always well ordered. </p>
@@ -72,7 +72,7 @@ typedef struct _DXGK_GDIARG_BITBLT {
 <p>For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure that defines the rectangular area to be modified. This rectangle is specified in the coordinate system of the destination surface and is defined by two points: upper left and lower right. The rectangle is lower-right exclusive; that is, its lower and right edges are not a part of the bit-block transfer. The two points that define the rectangle are always well ordered. </p>
@@ -80,7 +80,7 @@ typedef struct _DXGK_GDIARG_BITBLT {
 <p>For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>SrcAllocationIndex</b>
+### -field SrcAllocationIndex
 
 <dd>
 <p>
@@ -88,7 +88,7 @@ typedef struct _DXGK_GDIARG_BITBLT {
      </p>
 </dd>
 
-### -field <b>DstAllocationIndex</b>
+### -field DstAllocationIndex
 
 <dd>
 <p>
@@ -96,7 +96,7 @@ typedef struct _DXGK_GDIARG_BITBLT {
      </p>
 </dd>
 
-### -field <b>NumSubRects</b>
+### -field NumSubRects
 
 <dd>
 <p>
@@ -104,7 +104,7 @@ typedef struct _DXGK_GDIARG_BITBLT {
      </p>
 </dd>
 
-### -field <b>pSubRects</b>
+### -field pSubRects
 
 <dd>
 <p>
@@ -112,7 +112,7 @@ typedef struct _DXGK_GDIARG_BITBLT {
      </p>
 </dd>
 
-### -field <b>Rop</b>
+### -field Rop
 
 <dd>
 <p>
@@ -120,7 +120,7 @@ typedef struct _DXGK_GDIARG_BITBLT {
      </p>
 </dd>
 
-### -field <b>Rop3</b>
+### -field Rop3
 
 <dd>
 <p>
@@ -128,7 +128,7 @@ typedef struct _DXGK_GDIARG_BITBLT {
      </p>
 </dd>
 
-### -field <b>SrcPitch</b>
+### -field SrcPitch
 
 <dd>
 <p>
@@ -136,7 +136,7 @@ typedef struct _DXGK_GDIARG_BITBLT {
      </p>
 </dd>
 
-### -field <b>DstPitch</b>
+### -field DstPitch
 
 <dd>
 <p>

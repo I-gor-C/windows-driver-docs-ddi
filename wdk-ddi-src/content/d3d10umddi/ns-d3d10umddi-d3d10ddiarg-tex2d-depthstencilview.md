@@ -56,19 +56,19 @@ typedef struct D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW {
 ## -struct-fields
 <dl>
 
-### -field <b>MipSlice</b>
+### -field MipSlice
 
 <dd>
 <p>[in] The identifier of the MIP-map slice. </p>
 </dd>
 
-### -field <b>FirstArraySlice</b>
+### -field FirstArraySlice
 
 <dd>
 <p>[in] The identifier of the first array slice. </p>
 </dd>
 
-### -field <b>ArraySize</b>
+### -field ArraySize
 
 <dd>
 <p>[in] The number of array slices for the texture. </p>

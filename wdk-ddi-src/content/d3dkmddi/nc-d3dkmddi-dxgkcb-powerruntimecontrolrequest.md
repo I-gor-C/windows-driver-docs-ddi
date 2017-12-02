@@ -63,43 +63,43 @@ NTSTATUS APIENTRY CALLBACK* DxgkCbPowerRuntimeControlRequest(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>A handle to the display adapter. The display miniport driver receives the handle from the <b>DeviceHandle</b> member of the <a href="..\dispmprt\ns-dispmprt--dxgkrnl-interface.md">DXGKRNL_INTERFACE</a> structure in a call to its <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
 </dd>
 
-### -param <i>PowerControlCode</i> [in]
+### -param PowerControlCode [in]
 
 <dd>
 <p>A pointer to a GUID that defines the meaning of the display miniport driver's control request. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>InBuffer</i> [in, optional]
+### -param InBuffer [in, optional]
 
 <dd>
 <p>An optional pointer to an input buffer.</p>
 </dd>
 
-### -param <i>InBufferSize</i> [in]
+### -param InBufferSize [in]
 
 <dd>
 <p>The size, in bytes, of the buffer that <i>InBuffer</i> points to.</p>
 </dd>
 
-### -param <i>OutBuffer</i> [out, optional]
+### -param OutBuffer [out, optional]
 
 <dd>
 <p>An optional pointer to an output buffer.</p>
 </dd>
 
-### -param <i>OutBufferSize</i> [in]
+### -param OutBufferSize [in]
 
 <dd>
 <p>The size, in bytes, of the buffer that <i>OutBuffer</i> points to.</p>
 </dd>
 
-### -param <i>BytesReturned</i> [out, optional]
+### -param BytesReturned [out, optional]
 
 <dd>
 <p>An optional pointer to a buffer that contains the number of bytes that are written by the PEP to the output buffer.</p>

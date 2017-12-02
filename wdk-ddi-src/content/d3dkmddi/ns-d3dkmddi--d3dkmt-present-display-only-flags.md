@@ -60,7 +60,7 @@ typedef struct _D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Rotate</b>
+### -field Rotate
 
 <dd>
 <p>[in] A UINT value that specifies whether to rotate the presentation data to match the current orientation of the screen during the presentation bit-block transfer (bitblt). The current orientation of the screen is set in the <b>Rotation</b> member of a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path-transformation.md">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure, which is set in the <b>ContentTransformation</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure for the video present path.</p>
@@ -68,14 +68,14 @@ typedef struct _D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS {
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Setting this member to zero is equivalent to setting the remaining 31 bits (0xFFFFFFFF) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that <b>D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS</b> contains that can hold a 32-bit value that identifies the type of present operation to perform.</p>

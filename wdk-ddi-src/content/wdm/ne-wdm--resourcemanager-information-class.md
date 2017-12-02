@@ -56,13 +56,13 @@ typedef enum _RESOURCEMANAGER_INFORMATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="ResourceManagerBasicInformation"></a><a id="resourcemanagerbasicinformation"></a><a id="RESOURCEMANAGERBASICINFORMATION"></a><b>ResourceManagerBasicInformation</b>
+### -field ResourceManagerBasicInformation
 
 <dd>
 <p>Information about a resource manager object is stored in a <a href="..\wdm\ns-wdm--resourcemanager-basic-information.md">RESOURCEMANAGER_BASIC_INFORMATION</a> structure. </p>
 </dd>
 
-### -field <a id="ResourceManagerCompletionInformation"></a><a id="resourcemanagercompletioninformation"></a><a id="RESOURCEMANAGERCOMPLETIONINFORMATION"></a><b>ResourceManagerCompletionInformation</b>
+### -field ResourceManagerCompletionInformation
 
 <dd>
 <p>Information about a resource manager object is stored in a <a href="..\wdm\ns-wdm--resourcemanager-completion-information.md">RESOURCEMANAGER_COMPLETION_INFORMATION</a> structure. </p>

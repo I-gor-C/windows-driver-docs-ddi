@@ -62,55 +62,55 @@ typedef struct _FEATURE_DATA_EMBEDDED_CHANGER {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>SupportsDiscPresent</b>
+### -field SupportsDiscPresent
 
 <dd>
 <p>Indicates, when set to 1, that the device can report the contents of the slots after a reset or magazine change. When set to zero, this bit indicates that the device can report the contents of the slots after reset or magazine change. </p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>SideChangeCapable</b>
+### -field SideChangeCapable
 
 <dd>
 <p>Indicates, when set to 1, that the device is capable of selecting both sides of the media. When set to zero, this bit indicates that the device is not capable of selecting both sides of the media. </p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved4</b>
+### -field Reserved4
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>HighestSlotNumber</b>
+### -field HighestSlotNumber
 
 <dd>
 <p>Indicates the number of slots minus 1. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>

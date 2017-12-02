@@ -57,13 +57,13 @@ typedef struct _MSiSCSI_InitiatorNodeFailureEvent {
 ## -struct-fields
 <dl>
 
-### -field <b>FailureTime</b>
+### -field FailureTime
 
 <dd>
 <p>A timestamp that indicates when the node failure occurred.</p>
 </dd>
 
-### -field <b>FailureType</b>
+### -field FailureType
 
 <dd>
 <p>The type of node failure. This member can have the following integer values, which are defined in a ValueMap in <i>Mgmt.mof</i>.</p>
@@ -116,13 +116,13 @@ typedef struct _MSiSCSI_InitiatorNodeFailureEvent {
 <p> </p>
 </dd>
 
-### -field <b>TargetFailureName</b>
+### -field TargetFailureName
 
 <dd>
 <p>A wide character string that specifies the name of the target that a logon or logoff failed for.</p>
 </dd>
 
-### -field <b>TargetFailureAddr</b>
+### -field TargetFailureAddr
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that specifies the IP address of the target that a logon or logoff failed for.</p>

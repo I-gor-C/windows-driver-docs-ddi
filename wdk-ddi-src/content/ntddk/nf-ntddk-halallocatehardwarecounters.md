@@ -57,25 +57,25 @@ NTSTATUS HalAllocateHardwareCounters(
 ## -parameters
 <dl>
 
-### -param <i>GroupAffinity</i> [in]
+### -param GroupAffinity [in]
 
 <dd>
 <p>Reserved for future use. Set this parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>GroupCount</i> [in]
+### -param GroupCount [in]
 
 <dd>
 <p>Reserved for future use. Set this parameter to zero.</p>
 </dd>
 
-### -param <i>ResourceList</i> [in]
+### -param ResourceList [in]
 
 <dd>
 <p>Reserved for future use. Set this parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>CounterSetHandle</i> [out]
+### -param CounterSetHandle [out]
 
 <dd>
 <p>A pointer to a location into which the routine writes a handle to the allocated counter resources. To release these resources later, the caller must pass this handle to the <a href="..\ntddk\nf-ntddk-halfreehardwarecounters.md">HalFreeHardwareCounters</a> routine. If the requested counter resources are unavailable, <b>HalAllocateHardwareCounters</b> sets *<i>CounterSetHandle</i> = <b>NULL</b> and returns STATUS_INSUFFICIENT_RESOURCES.</p>

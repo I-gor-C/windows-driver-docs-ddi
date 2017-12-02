@@ -55,7 +55,7 @@ typedef enum _ENDPOINT_RESET_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="FlagEndpointResetPreserveTransferState"></a><a id="flagendpointresetpreservetransferstate"></a><a id="FLAGENDPOINTRESETPRESERVETRANSFERSTATE"></a><b>FlagEndpointResetPreserveTransferState</b>
+### -field FlagEndpointResetPreserveTransferState
 
 <dd>
 <p>The transfer state must be preserved after the endpoint reset operation is complete.</p>
@@ -82,10 +82,10 @@ typedef enum _ENDPOINT_RESET_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._endpoint_reset">ENDPOINT_RESET</a>
+<a href="..\ucxendpoint\ns-ucxendpoint--endpoint-reset.md">ENDPOINT_RESET</a>
 </dt>
 <dt>
-<a href="buses.evt_ucx_endpoint_reset">EVT_UCX_ENDPOINT_RESET</a>
+<a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-reset.md">EVT_UCX_ENDPOINT_RESET</a>
 </dt>
 </dl>
 <p> </p>

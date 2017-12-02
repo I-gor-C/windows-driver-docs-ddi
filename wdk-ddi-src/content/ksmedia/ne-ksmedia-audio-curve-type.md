@@ -55,13 +55,13 @@ typedef enum _AUDIO_CURVE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="AUDIO_CURVE_TYPE_NONE"></a><a id="audio_curve_type_none"></a><b>AUDIO_CURVE_TYPE_NONE</b>
+### -field AUDIO_CURVE_TYPE_NONE
 
 <dd>
 <p>Specifies that no curve algorithm will be applied.  When this curve is specified, the duration of the curve specified must be equal to 0.</p>
 </dd>
 
-### -field <a id="AUDIO_CURVE_TYPE_WINDOWS_FADE"></a><a id="audio_curve_type_windows_fade"></a><b>AUDIO_CURVE_TYPE_WINDOWS_FADE</b>
+### -field AUDIO_CURVE_TYPE_WINDOWS_FADE
 
 <dd>
 <p>Specifies that the algorithm that is applied to the volume setting must follow the curve shown in the diagram in the <b>Remarks</b> section.</p>

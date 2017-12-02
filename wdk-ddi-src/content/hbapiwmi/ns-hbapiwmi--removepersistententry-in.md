@@ -55,13 +55,13 @@ typedef struct _RemovePersistentEntry_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>Contains a worldwide name that indicates the port for which a persistent binding will be removed. </p>
 </dd>
 
-### -field <b>Binding</b>
+### -field Binding
 
 <dd>
 <p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpbindingentry2.md">HBAFCPBindingEntry2</a> that indicates the binding to be removed from the indicated port's list of bindings. </p>

@@ -67,55 +67,55 @@ ULONG CamProcessUSBPacketEx(
 ## -parameters
 <dl>
 
-### -param <i>BusDeviceObject</i> 
+### -param BusDeviceObject 
 
 <dd>
 <p>Pointer to the camera minidriver's device object created by the USB hub.</p>
 </dd>
 
-### -param <i>DeviceContext</i> 
+### -param DeviceContext 
 
 <dd>
 <p>Pointer to the camera minidriver's device context.</p>
 </dd>
 
-### -param <i>CurrentFrameContext</i> 
+### -param CurrentFrameContext 
 
 <dd>
 <p>Pointer to the camera minidriver's frame context.</p>
 </dd>
 
-### -param <i>SyncPacket</i> 
+### -param SyncPacket 
 
 <dd>
 <p>Pointer to a <a href="..\usb\ns-usb--usbd-iso-packet-descriptor.md">USBD_ISO_PACKET_DESCRIPTOR</a> structure from the sync pipe. This value is <b>NULL</b> if the interface has only one pipe.</p>
 </dd>
 
-### -param <i>SyncBuffer</i> 
+### -param SyncBuffer 
 
 <dd>
 <p>Pointer to the data for the <i>SyncPacket</i>.</p>
 </dd>
 
-### -param <i>DataPacket</i> 
+### -param DataPacket 
 
 <dd>
 <p>Specifies the isochronous packet descriptor from data pipe.</p>
 </dd>
 
-### -param <i>DataBuffer</i> 
+### -param DataBuffer 
 
 <dd>
 <p>Pointer to <i>DataPacket.</i></p>
 </dd>
 
-### -param <i>FrameComplete</i> 
+### -param FrameComplete 
 
 <dd>
 <p>Pointer to a BOOLEAN value that the camera minidriver sets to indicate whether this is the first data packet for a new video frame.</p>
 </dd>
 
-### -param <i>PacketFlag</i> 
+### -param PacketFlag 
 
 <dd>
 <p>Pointer to a value that the minidriver sets to indicate the contents of the current frame. It should be set to one of the following values:</p>
@@ -152,7 +152,7 @@ ULONG CamProcessUSBPacketEx(
 <p> </p>
 </dd>
 
-### -param <i>ValidDataOffset</i> 
+### -param ValidDataOffset 
 
 <dd>
 <p>Pointer to a ULONG value that indicates an offset from the beginning of the packet. USBCAMD should start the copy from this offset. This eliminates the extra buffer copy in the case of an in-band signal. If the camera is not using in-band signaling, <i>ValidDataOffset</i> should be set to zero.</p>

@@ -58,25 +58,25 @@ BOOL XcvOpenPort(
 ## -parameters
 <dl>
 
-### -param <i>hMonitor</i> 
+### -param hMonitor 
 
 <dd>
 <p>Caller supplied monitor instance handle. This is the handle returned by the monitor's <a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a> function. (This parameter does not exist if the print monitor supports <b>InitializePrintMonitor</b> instead of <b>InitializePrintMonitor2</b>.)</p>
 </dd>
 
-### -param <i>pszObject</i> 
+### -param pszObject 
 
 <dd>
 <p>Caller-supplied pointer to a string representing the name of the port. Can be <b>NULL</b>, and most monitors do not need this parameter.</p>
 </dd>
 
-### -param <i>GrantedAccess</i> 
+### -param GrantedAccess 
 
 <dd>
 <p>Caller-supplied ACCESS_MASK structure containing the access granted to the user during a print monitor UI DLL's call to the spooler's <b>OpenPrinter</b> function. See the following Remarks section.</p>
 </dd>
 
-### -param <i>phXcv</i> 
+### -param phXcv 
 
 <dd>
 <p>Caller-supplied pointer to a location to receive a function-supplied port handle.</p>

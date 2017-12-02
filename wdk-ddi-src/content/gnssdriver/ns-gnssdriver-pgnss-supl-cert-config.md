@@ -7,7 +7,7 @@ old-location: sensors\gnss_supl_cert_config.htm
 old-project: sensors
 ms.assetid: F974D5E2-7230-4F85-9C1A-7CE7E240DBE1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_SUPL_CERT_CONFIG, GNSS_SUPL_CERT_CONFIG, *PGNSS_SUPL_CERT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,19 +61,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>CertAction</b>
+### -field CertAction
 
 <dd>
 <p>A <a href="..\gnssdriver\ne-gnssdriver-gnss-supl-cert-action.md">GNSS_SUPL_CERT_ACTION</a> enumeration value that specifies the action to take on the certificate.</p>
@@ -108,32 +108,32 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>SuplCertName[MAX_PATH]</b>
+### -field SuplCertName[MAX_PATH]
 
 <dd>
 <p>String containing the certificate name.</p>
 </dd>
 
-### -field <b>IsRoot</b>
+### -field IsRoot
 
 <dd>
 <p>Specify whether the certificate is a root certificate.</p>
 <p>Multiple root certificates can be configured since some mobile operator require this functionality. An IHV supporting SUPL should have support for multiple certificates.</p>
 </dd>
 
-### -field <b>CertSize</b>
+### -field CertSize
 
 <dd>
 <p>The size of the certificate in bytes.</p>
 </dd>
 
-### -field <b>Unused[512]</b>
+### -field Unused[512]
 
 <dd>
 <p>Padding buffer.</p>
 </dd>
 
-### -field <b>CertData[ANYSIZE_ARRAY]</b>
+### -field CertData[ANYSIZE_ARRAY]
 
 <dd>
 <p>The binary content of the certificate.  The total size of the bytes is defined by <b>CertSize</b>. The certificate is Base64 encoded.</p>

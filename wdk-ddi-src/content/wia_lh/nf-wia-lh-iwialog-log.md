@@ -7,7 +7,7 @@ old-location: image\iwialog_log.htm
 old-project: image
 ms.assetid: bca012b4-76ae-4ba5-99b4-92a367774de7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IWiaLog, Log, IWiaLog::Log
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ HRESULT Log(
 ## -parameters
 <dl>
 
-### -param <i>lFlags</i> [in]
+### -param lFlags [in]
 
 <dd>
 <p>Specifies the type of diagnostic message. This parameter can be WIA_WARNING, WIA_TRACE or WIA_ERROR.</p>
 </dd>
 
-### -param <i>lResId</i> [in]
+### -param lResId [in]
 
 <dd>
 <p>Specifies the resource id. This parameter should be set to WIALOG_NO_RESOURCE_ID.</p>
 </dd>
 
-### -param <i>lDetail</i> [in]
+### -param lDetail [in]
 
 <dd>
 <p>Specifies the diagnostic detail level of the message. This parameter can be one of the following values.</p>
@@ -123,7 +123,7 @@ HRESULT Log(
 <p> </p>
 </dd>
 
-### -param <i>bstrText</i> [in]
+### -param bstrText [in]
 
 <dd>
 <p>Specifies the error text. The error text should be prefixed with the full name of the method or function and generate the message in the format of "class::method, error-text".</p>

@@ -59,13 +59,13 @@ NTSTATUS RtlStringCbCopyEx(
 ## -parameters
 <dl>
 
-### -param <i>pszDest</i> [out, optional]
+### -param pszDest [out, optional]
 
 <dd>
 <p>A pointer to a caller-supplied buffer that receives the copied string. The string at <i>pszSrc</i> is copied to the buffer at <i>pszDest</i> and terminated with a null character. The <i>pszDest</i> pointer can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>. </p>
 </dd>
 
-### -param <i>cbDest</i> [in]
+### -param cbDest [in]
 
 <dd>
 <p>The size, in bytes, of the destination buffer. The buffer must be large enough for the string and the terminating null character.</p>
@@ -74,25 +74,25 @@ NTSTATUS RtlStringCbCopyEx(
 <p>If <i>pszDest</i> is <b>NULL</b>, <i>cbDest</i> must be zero.</p>
 </dd>
 
-### -param <i>pszSrc</i> [in, optional]
+### -param pszSrc [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied, null-terminated string. The <i>pszSrc</i> pointer can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>. </p>
 </dd>
 
-### -param <i>ppszDestEnd</i> [out, optional]
+### -param ppszDestEnd [out, optional]
 
 <dd>
 <p>If the caller supplies a non-<b>NULL</b> address pointer, then after the copy operation completes, the function loads that address with a pointer to the destination buffer's resulting <b>NULL</b> string terminator. </p>
 </dd>
 
-### -param <i>pcbRemaining</i> [out, optional]
+### -param pcbRemaining [out, optional]
 
 <dd>
 <p>If the caller supplies a non-<b>NULL</b> address pointer, the function loads the address with the number of unused bytes that are in the buffer pointed to by <i>pszDest</i>, including bytes used for the terminating null character.</p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>One or more flags and, optionally, a fill byte. The flags are defined as follows: </p>
@@ -104,7 +104,7 @@ NTSTATUS RtlStringCbCopyEx(
 <tr>
 <td width="40%"><a id="STRSAFE_FILL_BEHIND_NULL_"></a><a id="strsafe_fill_behind_null_"></a><dl>
 
-### -param <b>STRSAFE_FILL_BEHIND_NULL </b>
+### -param STRSAFE_FILL_BEHIND_NULL 
 
 </dl>
 </td>
@@ -115,7 +115,7 @@ NTSTATUS RtlStringCbCopyEx(
 <tr>
 <td width="40%"><a id="STRSAFE_IGNORE_NULLS_"></a><a id="strsafe_ignore_nulls_"></a><dl>
 
-### -param <b>STRSAFE_IGNORE_NULLS </b>
+### -param STRSAFE_IGNORE_NULLS 
 
 </dl>
 </td>
@@ -126,7 +126,7 @@ NTSTATUS RtlStringCbCopyEx(
 <tr>
 <td width="40%"><a id="STRSAFE_FILL_ON_FAILURE_"></a><a id="strsafe_fill_on_failure_"></a><dl>
 
-### -param <b>STRSAFE_FILL_ON_FAILURE </b>
+### -param STRSAFE_FILL_ON_FAILURE 
 
 </dl>
 </td>
@@ -137,7 +137,7 @@ NTSTATUS RtlStringCbCopyEx(
 <tr>
 <td width="40%"><a id="STRSAFE_NULL_ON_FAILURE_"></a><a id="strsafe_null_on_failure_"></a><dl>
 
-### -param <b>STRSAFE_NULL_ON_FAILURE </b>
+### -param STRSAFE_NULL_ON_FAILURE 
 
 </dl>
 </td>
@@ -148,7 +148,7 @@ NTSTATUS RtlStringCbCopyEx(
 <tr>
 <td width="40%"><a id="STRSAFE_NO_TRUNCATION_"></a><a id="strsafe_no_truncation_"></a><dl>
 
-### -param <b>STRSAFE_NO_TRUNCATION </b>
+### -param STRSAFE_NO_TRUNCATION 
 
 </dl>
 </td>

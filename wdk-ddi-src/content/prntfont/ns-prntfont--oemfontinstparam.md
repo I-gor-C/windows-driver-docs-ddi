@@ -60,37 +60,37 @@ typedef struct _OEMFONTINSTPARAM {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Size, in bytes, of the OEMFONTINSTPARAM structure.</p>
 </dd>
 
-### -field <b>hPrinter</b>
+### -field hPrinter
 
 <dd>
 <p>Unidrv-supplied printer handle.</p>
 </dd>
 
-### -field <b>hModule</b>
+### -field hModule
 
 <dd>
 <p>Unidrv-supplied handle to the user interface plug-in.</p>
 </dd>
 
-### -field <b>hHeap</b>
+### -field hHeap
 
 <dd>
 <p>Unidrv-supplied handle to a heap from which space can be allocated by calling the <b>HeapAlloc</b> function (described in the Microsoft Windows SDK documentation).</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Unidrv-supplied flags. The only defined flag is FG_CANCHANGE which, if set, indicates the user interface should allow the user to change the installed fonts. Otherwise the user interface should be displayed in read-only mode.</p>
 </dd>
 
-### -field <b>pFontInstallerName</b>
+### -field pFontInstallerName
 
 <dd>
 <p>Pointer to a string representing the font installer's name. The <a href="print.iprintoemui_fontinstallerdlgproc">IPrintOemUI::FontInstallerDlgProc</a> method must supply this string if the received message is WM_USER+WM_FI_NAME. The string must be placed in memory allocated using <b>hHeap</b>.</p>

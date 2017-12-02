@@ -7,7 +7,7 @@ old-location: debugger\getexpressionsyntaxnameswide.htm
 old-project: debugger
 ms.assetid: 4d381718-366b-483b-804d-b12b31832b35
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl4, GetExpressionSyntaxNamesWide, IDebugControl4::GetExpressionSyntaxNamesWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,43 +60,43 @@ HRESULT GetExpressionSyntaxNamesWide(
 ## -parameters
 <dl>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>Specifies the index of the expression syntax.  <i>Index</i> should be between zero and the number of expression syntaxes returned by <a href="debugger.getnumberexpressionsyntaxes">GetNumberExpressionSyntaxes</a> minus one.</p>
 </dd>
 
-### -param <i>FullNameBuffer</i> [out, optional]
+### -param FullNameBuffer [out, optional]
 
 <dd>
 <p>Receives the full name of the expression syntax.  If <i>FullNameBuffer</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>FullNameBufferSize</i> [in]
+### -param FullNameBufferSize [in]
 
 <dd>
 <p>Specifies the size, in characters, of the buffer <i>FullNameBuffer</i>.</p>
 </dd>
 
-### -param <i>FullNameSize</i> [out, optional]
+### -param FullNameSize [out, optional]
 
 <dd>
 <p>Receives the size, in characters, of the full name of the expression syntax.  If <i>FullNameSize</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>AbbrevNameBuffer</i> [out, optional]
+### -param AbbrevNameBuffer [out, optional]
 
 <dd>
 <p>Receives the abbreviated name of the expression syntax.  If <i>AbbrevNameBuffer</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>AbbrevNameBufferSize</i> [in]
+### -param AbbrevNameBufferSize [in]
 
 <dd>
 <p>Specifies the size, in characters, of the buffer <i>AbbrevNameBufferSize</i>.</p>
 </dd>
 
-### -param <i>AbbrevNameSize</i> [out, optional]
+### -param AbbrevNameSize [out, optional]
 
 <dd>
 <p>Receives the size, in characters, of the abbreviated name of the expression syntax.  If <i>AbbrevNameSize</i> is <b>NULL</b>, this information is not returned.</p>
@@ -104,7 +104,7 @@ HRESULT GetExpressionSyntaxNamesWide(
 </dl>
 
 ## -returns
-<p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>S_FALSE</b></dt>
@@ -156,4 +156,4 @@ HRESULT GetExpressionSyntaxNamesWide(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::GetExpressionSyntaxNamesWide method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::GetExpressionSyntaxNamesWide method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

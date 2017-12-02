@@ -57,25 +57,25 @@ typedef struct _D3DKMT_PRESENT_RGNS {
 ## -struct-fields
 <dl>
 
-### -field <b>DirtyRectCount</b>
+### -field DirtyRectCount
 
 <dd>
 <p>The number of dirty rectangles.</p>
 </dd>
 
-### -field <b>pDirtyRects</b>
+### -field pDirtyRects
 
 <dd>
 <p>A pointer to an array of dirty rectangles (<a href="display.rect">RECT</a>s).</p>
 </dd>
 
-### -field <b>MoveRectCount</b>
+### -field MoveRectCount
 
 <dd>
 <p>The number of move rectangles.</p>
 </dd>
 
-### -field <b>pMoveRects</b>
+### -field pMoveRects
 
 <dd>
 <p>A pointer to an array of move rectangles (<a href="display.rect">RECT</a>s).</p>

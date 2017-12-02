@@ -7,7 +7,7 @@ old-location: netvista\net_buffer.htm
 old-project: netvista
 ms.assetid: 66a725f9-ae72-41b4-8840-63c9ff89ace7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NET_BUFFER,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,40 +67,40 @@ typedef struct _NET_BUFFER {
 ## -struct-fields
 <dl>
 
-### -field <b>NetBufferHeader</b>
+### -field NetBufferHeader
 
 <dd>
 <p>A 
      <a href="..\ndis\ns-ndis--net-buffer-header.md">NET_BUFFER_HEADER</a> structure.</p>
 </dd>
 
-### -field <b>ChecksumBias</b>
+### -field ChecksumBias
 
 <dd>
 <p>The number of bytes to skip over from the beginning of the data buffer when computing a checksum.
      This member is used by the TCP/IP protocol.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>NdisPoolHandle</b>
+### -field NdisPoolHandle
 
 <dd>
 <p>A pool handle that identifies the NET_BUFFER pool from which the NET_BUFFER structure was
      allocated.</p>
 </dd>
 
-### -field <b>NdisReserved</b>
+### -field NdisReserved
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>ProtocolReserved</b>
+### -field ProtocolReserved
 
 <dd>
 <p>Reserved for use by protocol drivers. Protocol drivers and NDIS intermediate drivers can use this
@@ -108,14 +108,14 @@ typedef struct _NET_BUFFER {
      use.</p>
 </dd>
 
-### -field <b>MiniportReserved</b>
+### -field MiniportReserved
 
 <dd>
 <p>Reserved for use by miniport drivers. Miniport drivers and NDIS intermediate drivers can use this
      area for their own purposes.</p>
 </dd>
 
-### -field <b>DataPhysicalAddress</b>
+### -field DataPhysicalAddress
 
 <dd>
 <div class="alert"><b>Note</b>  The name of this member is 
@@ -137,7 +137,7 @@ typedef struct _NET_BUFFER {
 <div> </div>
 </dd>
 
-### -field <b>SharedMemoryInfo</b>
+### -field SharedMemoryInfo
 
 <dd>
 <p>A pointer to an 
@@ -145,7 +145,7 @@ typedef struct _NET_BUFFER {
       NET_BUFFER_SHARED_MEMORY</a> structure.</p>
 </dd>
 
-### -field <b>ScatterGatherList</b>
+### -field ScatterGatherList
 
 <dd>
 <p>The SCATTER_GATHER_LIST structure describes a scatter/gather list for DMA.</p>
@@ -332,4 +332,4 @@ typedef struct _NET_BUFFER {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

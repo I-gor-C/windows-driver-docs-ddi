@@ -7,7 +7,7 @@ old-location: netvista\rilpersodeactivationstatedepersostate_2.htm
 old-project: netvista
 ms.assetid: e01aa9fb-a35e-41d4-994b-8a166372caaf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILPERSODEACTIVATIONSTATEDEPERSOSTATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DEPERSOSTATE_CK_REQUIRED"></a><a id="ril_depersostate_ck_required"></a><b>RIL_DEPERSOSTATE_CK_REQUIRED</b>
+### -field RIL_DEPERSOSTATE_CK_REQUIRED
 
 <dd></dd>
 
-### -field <a id="RIL_DEPERSOSTATE_PUK_REQUIRED"></a><a id="ril_depersostate_puk_required"></a><b>RIL_DEPERSOSTATE_PUK_REQUIRED</b>
+### -field RIL_DEPERSOSTATE_PUK_REQUIRED
 
 <dd></dd>
 
-### -field <a id="RIL_DEPERSOSTATE_PUK_BLOCKED"></a><a id="ril_depersostate_puk_blocked"></a><b>RIL_DEPERSOSTATE_PUK_BLOCKED</b>
+### -field RIL_DEPERSOSTATE_PUK_BLOCKED
 
 <dd></dd>
 
-### -field <a id="RIL_DEPERSOSTATE_MAX"></a><a id="ril_depersostate_max"></a><b>RIL_DEPERSOSTATE_MAX</b>
+### -field RIL_DEPERSOSTATE_MAX
 
 <dd></dd>
 </dl>

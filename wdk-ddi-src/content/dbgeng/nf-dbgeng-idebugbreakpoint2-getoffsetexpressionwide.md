@@ -7,7 +7,7 @@ old-location: debugger\getoffsetexpressionwide.htm
 old-project: debugger
 ms.assetid: bd4b32b1-e8ba-485f-bfb6-15c8c44926af
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugBreakpoint2, GetOffsetExpressionWide, IDebugBreakpoint2::GetOffsetExpressionWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ HRESULT GetOffsetExpressionWide(
 ## -parameters
 <dl>
 
-### -param <i>Buffer</i> [out, optional]
+### -param Buffer [out, optional]
 
 <dd>
 <p>The expression string that evaluates to the location on the target that triggers the breakpoint.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>The size, in characters, of the buffer that <i>Buffer </i>points to.</p>
 </dd>
 
-### -param <i>ExpressionSize</i> [out, optional]
+### -param ExpressionSize [out, optional]
 
 <dd>
 <p>The size, in characters, of the expression string.  If <i>ExpressionSize</i> is <b>NULL</b>, this information is not returned.</p>
@@ -84,7 +84,7 @@ HRESULT GetOffsetExpressionWide(
 
 <p> </p>
 
-<p>This method can also return error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
+<p>This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.</p>
 
 ## -remarks
 <p>The expression is evaluated every time that a module is loaded or unloaded.  If the debugger cannot evaluate the expression (for example, if the expression contains a symbol that cannot be interpreted), the breakpoint is flagged as deferred. (For more information about deferred breakpoints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.)</p>

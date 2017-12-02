@@ -7,7 +7,7 @@ old-location: sensors\isensorclassextension_uninitialize.htm
 old-project: sensors
 ms.assetid: 204a6126-bb69-4a96-acbf-3ad5b8ae0f04
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorClassExtension, Uninitialize, ISensorClassExtension::Uninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

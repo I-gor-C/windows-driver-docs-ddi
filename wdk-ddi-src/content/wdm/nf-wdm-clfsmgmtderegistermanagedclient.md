@@ -55,7 +55,7 @@ NTSTATUS ClfsMgmtDeregisterManagedClient(
 ## -parameters
 <dl>
 
-### -param <i>Client</i> [in]
+### -param Client [in]
 
 <dd>
 <p>A pointer to the client. This is the value that was obtained through a call to the <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a> routine.</p>

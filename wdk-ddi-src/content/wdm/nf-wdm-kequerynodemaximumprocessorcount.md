@@ -55,10 +55,10 @@ USHORT KeQueryNodeMaximumProcessorCount(
 ## -parameters
 <dl>
 
-### -param <i>NodeNumber</i> [in]
+### -param NodeNumber [in]
 
 <dd>
-<p>The node number. If a NUMA multiprocessor system contains <i>n</i> nodes, valid node numbers are in the range 0 to <i>n</i>-1. To get the highest node number (<i>n</i>-1) in the system, call the <a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine. </p>
+<p>The node number. If a NUMA multiprocessor system contains <i>n</i> nodes, valid node numbers are in the range 0 to <i>n</i>-1. To get the highest node number (<i>n</i>-1) in the system, call the <a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine. </p>
 </dd>
 </dl>
 
@@ -133,7 +133,7 @@ USHORT KeQueryNodeMaximumProcessorCount(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
+<a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
 </dt>
 </dl>
 <p> </p>

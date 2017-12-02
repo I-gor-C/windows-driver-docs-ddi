@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains information about the USB device. This structure is passed by UCX in the <a href="buses.evt_ucx_controller_usbdevice_add">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a> event callback function.</p>
+<p>Contains information about the USB device. This structure is passed by UCX in the <a href="..\ucxcontroller\nc-ucxcontroller-evt-ucx-controller-usbdevice-add.md">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a> event callback function.</p>
 
 
 ## -syntax
@@ -58,25 +58,25 @@ typedef struct _UCXUSBDEVICE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size in bytes of this structure.</p>
 </dd>
 
-### -field <b>DeviceSpeed</b>
+### -field DeviceSpeed
 
 <dd>
 <p>Defines the device speed of the USB device or hub.</p>
 </dd>
 
-### -field <b>TtHub</b>
+### -field TtHub
 
 <dd>
 <p>A handle to the USB  device object that represents the TT hub.</p>
 </dd>
 
-### -field <b>PortPath</b>
+### -field PortPath
 
 <dd>
 <p>The port path for the USB device or hub.</p>
@@ -103,7 +103,7 @@ typedef struct _UCXUSBDEVICE_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_ucx_controller_usbdevice_add">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a>
+<a href="..\ucxcontroller\nc-ucxcontroller-evt-ucx-controller-usbdevice-add.md">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a>
 </dt>
 </dl>
 <p> </p>

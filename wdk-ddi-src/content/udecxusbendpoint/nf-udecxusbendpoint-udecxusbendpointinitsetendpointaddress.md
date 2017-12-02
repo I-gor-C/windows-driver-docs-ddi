@@ -56,13 +56,13 @@ FORCEINLINE void UdecxUsbEndpointInitSetEndpointAddress(
 ## -parameters
 <dl>
 
-### -param <i>Init</i> [in, out]
+### -param Init [in, out]
 
 <dd>
-<p>A pointer to an <b>UDECXUSBENDPOINT_INIT</b> structure that the client driver retrieved in the previous call to <a href="buses.udecxusbsimpleendpointinitallocate">UdecxUsbSimpleEndpointInitAllocate</a>.</p>
+<p>A pointer to an <b>UDECXUSBENDPOINT_INIT</b> structure that the client driver retrieved in the previous call to <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbsimpleendpointinitallocate.md">UdecxUsbSimpleEndpointInitAllocate</a>.</p>
 </dd>
 
-### -param <i>EndpointAddress</i> [in]
+### -param EndpointAddress [in]
 
 <dd>
 <p>Specifies the USB-defined endpoint address. The four low-order bits specify the endpoint number. The high-order bit specifies the direction of data flow on this endpoint: 1 for in, 0 for out.</p>
@@ -134,7 +134,7 @@ FORCEINLINE void UdecxUsbEndpointInitSetEndpointAddress(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a>
+<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>
 </dt>
 <dt>
 <a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>

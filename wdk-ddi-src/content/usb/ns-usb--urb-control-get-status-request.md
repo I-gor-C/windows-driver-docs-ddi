@@ -65,7 +65,7 @@ struct _URB_CONTROL_GET_STATUS_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>Hdr</b>
+### -field Hdr
 
 <dd>
 <p>Pointer to a <a href="buses._urb_header">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Length</b> must be <code>sizeof(_URB_CONTROL_GET_STATUS_REQUEST)</code>, and <b>Hdr.Function</b> must be one of the following values:</p>
@@ -77,61 +77,61 @@ struct _URB_CONTROL_GET_STATUS_REQUEST {
 </dl>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>TransferBufferLength</b>
+### -field TransferBufferLength
 
 <dd>
 <p>Must be 2. This member specifies the length, in bytes, of the buffer specified in <b>TransferBuffer</b> or described in <b>TransferBufferMDL</b>. The host controller driver returns the number of bytes sent to or read from the pipe in this member.</p>
 </dd>
 
-### -field <b>TransferBuffer</b>
+### -field TransferBuffer
 
 <dd>
 <p>Pointer to a resident buffer for the transfer or is <b>NULL</b> if an MDL is supplied in <b>TransferBufferMDL</b>. The bus driver returns a single byte specifying the status for the target.  </p>
 </dd>
 
-### -field <b>TransferBufferMDL</b>
+### -field TransferBufferMDL
 
 <dd>
 <p>Pointer to an MDL that describes a resident buffer or is <b>NULL</b> if a buffer is supplied in <b>TransferBuffer</b>. The bus driver returns a single byte specifying the status for the target. This MDL must be allocated from nonpaged pool.</p>
 </dd>
 
-### -field <b>UrbLink</b>
+### -field UrbLink
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>hca</b>
+### -field hca
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>Specifies the device-defined index, returned by a successful configuration request, if the request is for an endpoint or interface. Otherwise, <b>Index</b> must be zero.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. Do not use.</p>

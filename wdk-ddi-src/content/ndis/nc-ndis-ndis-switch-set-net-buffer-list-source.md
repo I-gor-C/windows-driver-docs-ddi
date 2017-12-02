@@ -7,7 +7,7 @@ old-location: netvista\setnetbufferlistsource.htm
 old-project: netvista
 ms.assetid: 6537824A-F521-4916-AAC8-7C0E6E5F7331
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,34 +63,34 @@ NDIS_STATUS SetNetBufferListSource(
 ## -parameters
 <dl>
 
-### -param <i>NdisSwitchContext</i> [in]
+### -param NdisSwitchContext [in]
 
 <dd>
 <p>An NDIS_SWITCH_CONTEXT value that contains the handle of the extensible switch module to which the Hyper-V extensible switch extension is attached. When the extension calls <a href="..\ndis\nf-ndis-ndisfgetoptionalswitchhandlers.md">NdisFGetOptionalSwitchHandlers</a>,  this handle is returned through the <i>NdisSwitchContext</i> parameter.</p>
 </dd>
 
-### -param <i>NetBufferLists</i> [in, out]
+### -param NetBufferLists [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure for a single packet.  </p>
-<div class="alert"><b>Note</b>  This structure must contain  an extensible switch forwarding context that was previously allocated by calling the <a href="netvista.AllocateNetBufferListForwardingContext">AllocateNetBufferListForwardingContext</a> function. For more information about the extensible switch forwarding context, see <a href="NULL">Hyper-V Extensible Switch Forwarding Context</a>.</div>
+<div class="alert"><b>Note</b>  This structure must contain  an extensible switch forwarding context that was previously allocated by calling the <a href="netvista.AllocateNetBufferListForwardingContext">AllocateNetBufferListForwardingContext</a> function. For more information about the extensible switch forwarding context, see <a href="netvista.hyper_v_extensible_switch_forwarding_context">Hyper-V Extensible Switch Forwarding Context</a>.</div>
 <div> </div>
 </dd>
 
-### -param <i>PortId</i> [in]
+### -param PortId [in]
 
 <dd>
 <p>An NDIS_SWITCH_PORT_ID value that specifies the unique identifier of the source port on the extensible switch.</p>
 </dd>
 
-### -param <i>NicIndex</i> [in]
+### -param NicIndex [in]
 
 <dd>
 <p>An NDIS_SWITCH_NIC_INDEX value that specifies the index of the network adapter that is connected to the extensible switch port specified by the <i>PortId</i> parameter.</p>
-<p>For more information on NDIS_SWITCH_NIC_INDEX values, see <a href="NULL">Network Adapter Index Values</a>.
+<p>For more information on NDIS_SWITCH_NIC_INDEX values, see <a href="netvista.network_adapter_index_values">Network Adapter Index Values</a>.
 
 </p>
-<div class="alert"><b>Note</b>  This parameter must specify the index value of a network adapter that is in a connected state. Index values for network adapters that are in a created or disconnected state cannot be specified. For more information about network connection states, see <a href="NULL">Hyper-V Extensible Switch Port and Network Adapter States</a>.</div>
+<div class="alert"><b>Note</b>  This parameter must specify the index value of a network adapter that is in a connected state. Index values for network adapters that are in a created or disconnected state cannot be specified. For more information about network connection states, see <a href="netvista.hyper_v_extensible_switch_port_and_network_adapter_states">Hyper-V Extensible Switch Port and Network Adapter States</a>.</div>
 <div> </div>
 </dd>
 </dl>
@@ -111,7 +111,7 @@ NDIS_STATUS SetNetBufferListSource(
 
 <p>For example, a packet that has a source port identifier of <b>NDIS_SWITCH_DEFAULT_PORT_ID</b> is trusted and bypasses many extensible switch port policies. These policies include access control lists (ACLs) and quality of service (QoS). If the extension specifies a non-default source port for the packet, this allows the policies for that port to be applied to the packet.</p>
 
-<p>For more information on packet send and receive operations, see <a href="NULL">Filter Module Send and Receive Operations</a>.</p>
+<p>For more information on packet send and receive operations, see <a href="netvista.filter_module_send_and_receive_operations">Filter Module Send and Receive Operations</a>.</p>
 
 ## -requirements
 <table>
@@ -174,4 +174,4 @@ NDIS_STATUS SetNetBufferListSource(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_SET_NET_BUFFER_LIST_SOURCE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_SET_NET_BUFFER_LIST_SOURCE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

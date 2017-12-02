@@ -55,7 +55,7 @@ NTSTATUS KeSaveFloatingPointState(
 ## -parameters
 <dl>
 
-### -param <i>FloatSave</i> [out]
+### -param FloatSave [out]
 
 <dd>
 <p>Pointer to a caller-allocated resident buffer, which must be at least <b>sizeof</b>(<a href="https://msdn.microsoft.com/library/windows/hardware/ff554233">KFLOATING_SAVE</a>).</p>
@@ -76,7 +76,7 @@ NTSTATUS KeSaveFloatingPointState(
 
 <p>If the call to <b>KeSaveFloatingPointState</b> is successful, the data at <i>FloatSave</i> is opaque to the caller. The caller should not release the memory that it allocated for this data until after the call to <a href="..\wdm\nf-wdm-kerestorefloatingpointstate.md">KeRestoreFloatingPointState</a>.</p>
 
-<p>In Windows Vista and earlier versions of Windows, a <b>KeSaveFloatingPointState</b> call and the corresponding <b>KeRestoreFloatingPointState</b> call must occur in a guarded region. That is, the <a href="..\ntddk\nf-ntddk-keenterguardedregion.md">KeEnterGuardedRegion</a> routine must be called before <b>KeSaveFloatingPointState</b> is called, and the <a href="..\ntddk\nf-ntddk-keleaveguardedregion.md">KeLeaveGuardedRegion</a> routine must be called after <b>KeRestoreFloatingPointState</b> is called. No such requirement exists in Windows 7 and later versions of Windows.</p>
+<p>In Windows Vista and earlier versions of Windows, a <b>KeSaveFloatingPointState</b> call and the corresponding <b>KeRestoreFloatingPointState</b> call must occur in a guarded region. That is, the <a href="..\wdm\nf-wdm-keenterguardedregion.md">KeEnterGuardedRegion</a> routine must be called before <b>KeSaveFloatingPointState</b> is called, and the <a href="..\wdm\nf-wdm-keleaveguardedregion.md">KeLeaveGuardedRegion</a> routine must be called after <b>KeRestoreFloatingPointState</b> is called. No such requirement exists in Windows 7 and later versions of Windows.</p>
 
 <p>For performance reasons, drivers should avoid doing any floating-point operations unless absolutely necessary. The overhead of saving and restoring the current thread's nonvolatile floating-point state degrades the performance of any driver that does floating-point operations.</p>
 
@@ -151,13 +151,13 @@ NTSTATUS KeSaveFloatingPointState(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-keenterguardedregion.md">KeEnterGuardedRegion</a>
+<a href="..\wdm\nf-wdm-keenterguardedregion.md">KeEnterGuardedRegion</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-kegetcurrentthread.md">KeGetCurrentThread</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-keleaveguardedregion.md">KeLeaveGuardedRegion</a>
+<a href="..\wdm\nf-wdm-keleaveguardedregion.md">KeLeaveGuardedRegion</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-kerestorefloatingpointstate.md">KeRestoreFloatingPointState</a>

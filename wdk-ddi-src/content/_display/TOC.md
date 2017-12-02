@@ -2257,7 +2257,6 @@
 ### [DXGI_DDI_ARG_BLT1 structure](../dxgiddi/ns-dxgiddi-dxgi-ddi-arg-blt1.md)
 ### [DXGI_DDI_ARG_BLT_FLAGS structure](../dxgiddi/ns-dxgiddi-dxgi-ddi-arg-blt-flags.md)
 ### [DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT structure](../dxgiddi/ns-dxgiddi--dxgi-ddi-arg-checkmultiplaneoverlaysupport.md)
-### [DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT structure](../dxgiddi/ns-dxgiddi--dxgi-ddi-arg-checkpresentdurationsupport.md)
 ### [DXGI_DDI_ARG_GETMULTIPLANEOVERLAYCAPS structure](../dxgiddi/ns-dxgiddi--dxgi-ddi-arg-getmultiplaneoverlaycaps.md)
 ### [DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS structure](../dxgiddi/ns-dxgiddi--dxgi-ddi-arg-getmultiplaneoverlaygroupcaps.md)
 ### [DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS structure](../dxgiddi/ns-dxgiddi-dxgi-ddi-arg-get-gamma-control-caps.md)

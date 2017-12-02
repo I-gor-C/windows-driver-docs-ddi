@@ -56,13 +56,13 @@ typedef struct _TRANSACTIONMANAGER_LOGPATH_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>LogPathLength</b>
+### -field LogPathLength
 
 <dd>
 <p>The number of elements in the <b>LogPath</b> member's character array.</p>
 </dd>
 
-### -field <b>LogPath</b>
+### -field LogPath
 
 <dd>
 <p>A caller-allocated character array that receives the path and file name of the <a href="https://msdn.microsoft.com/d7ad0e16-d1f2-4c41-b647-95b5445c2708">log file stream</a> that is associated with a transaction manager.</p>

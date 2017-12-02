@@ -55,13 +55,13 @@ req.iface:
 ## -parameters
 <dl>
 
-### -param <i>FilterFactory</i> [in]
+### -param FilterFactory [in]
 
 <dd>
 <p>This is the same <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> used in the <a href="..\ks\nf-ks-ksinitializedeviceprofile.md">KsInitializeDeviceProfile</a> API.</p>
 </dd>
 
-### -param <i>Profile</i> [in]
+### -param Profile [in]
 
 <dd>
 <p>This is a camera profile of type <a href="..\ksmedia\ns-ksmedia--ksdevice-profile-info.md">KSDEVICE_PROFILE_INFO</a>.</p>

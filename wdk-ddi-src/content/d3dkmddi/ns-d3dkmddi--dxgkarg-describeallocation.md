@@ -64,57 +64,57 @@ typedef struct _DXGKARG_DESCRIBEALLOCATION {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[in] A handle to an allocation that information is requested for. The driver previously returned this handle in the <b>hAllocation</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a> structure from a call to the driver's <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function.</p>
 </dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>[out] The width of the allocation, in pixels. The driver returns the width value.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[out] The height of the allocation, in pixels. The driver returns the height value.</p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>[out] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation. The driver returns the format value.</p>
 </dd>
 
-### -field <b>MultisampleMethod</b>
+### -field MultisampleMethod
 
 <dd>
 <p>[out] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-multisamplingmethod.md">D3DDDI_MULTISAMPLINGMETHOD</a> structure that describes the multiple-sampling method that is used for the allocation. The driver returns the description.</p>
 </dd>
 
-### -field <b>RefreshRate</b>
+### -field RefreshRate
 
 <dd>
 <p>[out] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-rational.md">D3DDDI_RATIONAL</a> structure that indicates the refresh rate that the primary surface was created with, if applicable.</p>
 </dd>
 
-### -field <b>PrivateDriverFormatAttribute</b>
+### -field PrivateDriverFormatAttribute
 
 <dd>
 <p>[out] A UINT value that specifies a private format attribute for the allocation. The driver specifies surface format attributes (for example, the pixel layout of a tiled surface) that it otherwise cannot expose to the operating system. </p>
 <p>The operating system uses the information in <b>PrivateDriverFormatAttribute</b> to compare two surfaces. For example, an A8R8B8G8 800x600 surface and an X8R8B8G8 800x600 surface should have the same information in <b>PrivateDriverFormatAttribute</b> if they have the same format attributes, which includes pixel layout. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[out] This member is reserved.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Rotation</b>
+### -field Rotation
 
 <dd>
 <p>[out] This member is reserved.</p>

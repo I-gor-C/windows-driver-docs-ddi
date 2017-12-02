@@ -56,19 +56,19 @@ typedef struct _DXGKARG_RECOMMENDMONITORMODES {
 ## -struct-fields
 <dl>
 
-### -field <b>VideoPresentTargetId</b>
+### -field VideoPresentTargetId
 
 <dd>
 <p>An integer that identifies a video present target on the display adapter.</p>
 </dd>
 
-### -field <b>hMonitorSourceModeSet</b>
+### -field hMonitorSourceModeSet
 
 <dd>
 <p>A handle to a monitor source mode set object. This set contains a list of modes that are supported by the monitor that is connected to the video present target identified by <i>VideoPresentTargetId</i>.</p>
 </dd>
 
-### -field <b>pMonitorSourceModeSetInterface</b>
+### -field pMonitorSourceModeSetInterface
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitorsourcemodeset-interface.md">DXGK_MONITORSOURCEMODESET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can use to inspect, and possibly add modes to, the monitor source mode set.</p>

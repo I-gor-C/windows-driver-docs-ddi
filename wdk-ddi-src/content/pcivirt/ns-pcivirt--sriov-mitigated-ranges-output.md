@@ -57,25 +57,25 @@ typedef struct _SRIOV_MITIGATED_RANGES_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>BasePageNumber</b>
+### -field BasePageNumber
 
 <dd>
 <p>The base address of the allocated region of pages.</p>
 </dd>
 
-### -field <b>PageCount</b>
+### -field PageCount
 
 <dd>
 <p>Total number of pages.</p>
 </dd>
 
-### -field <b>InterceptReads</b>
+### -field InterceptReads
 
 <dd>
 <p>A boolean that indicates the reads intercept bit.</p>
 </dd>
 
-### -field <b>InterceptWrites</b>
+### -field InterceptWrites
 
 <dd>
 <p>A boolean that indicates the write intercept bit.</p>

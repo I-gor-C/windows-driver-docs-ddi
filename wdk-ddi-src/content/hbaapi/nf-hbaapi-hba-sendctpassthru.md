@@ -58,31 +58,31 @@ HBA_STATUS HBA_API HBA_SendCTPassThru(
 ## -parameters
 <dl>
 
-### -param <i>HbaHandle</i> [in]
+### -param HbaHandle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA that will route the CT command. The HBA routes the CT command to the server that runs the service requested by the CT command. </p>
 </dd>
 
-### -param <i>pReqBuffer</i> [in]
+### -param pReqBuffer [in]
 
 <dd>
 <p>Pointer to a buffer that contains the full frame of the common transport command in big-endian (wire) format.</p>
 </dd>
 
-### -param <i>ReqBufferSize</i> [in]
+### -param ReqBufferSize [in]
 
 <dd>
 <p>Indicates the size of the buffer pointed to by <i>pReqBuffer</i>:</p>
 </dd>
 
-### -param <i>pRspBuffer</i> [out]
+### -param pRspBuffer [out]
 
 <dd>
 <p>Pointer to a buffer that contains the payload data from the reply to the common transport command in big-endian (wire) format. </p>
 </dd>
 
-### -param <i>RspBufferSize</i> [in]
+### -param RspBufferSize [in]
 
 <dd>
 <p>Indicates the size of the buffer pointed to by <i>pRspBuffer</i>. </p>

@@ -261,19 +261,19 @@ typedef struct _IO_STACK_LOCATION {
 ## -struct-fields
 <dl>
 
-### -field <b>MajorFunction</b>
+### -field MajorFunction
 
 <dd>
 <p>The <a href="https://msdn.microsoft.com/11c5b1a9-74c0-47fb-8cce-a008ece9efae">IRP major function code</a> indicating the type of I/O operation to be performed.</p>
 </dd>
 
-### -field <b>MinorFunction</b>
+### -field MinorFunction
 
 <dd>
 <p>A subfunction code for <b>MajorFunction</b>. The PnP manager, the power manager, file system drivers, and SCSI class drivers set this member for some requests.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Request-type-specific values used almost exclusively by file system drivers. Removable-media device drivers check whether this member is set with SL_OVERRIDE_VERIFY_VOLUME for read requests to determine whether to continue the read operation even if the device object's <b>Flags</b> is set with DO_VERIFY_VOLUME. Intermediate drivers layered over a removable-media device driver must copy this member into the I/O stack location of the next-lower driver in all incoming <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> requests.</p>
@@ -345,13 +345,13 @@ than welcome to provide sector atomicity as long as there is no remapping.</div>
 </p>
 </dd>
 
-### -field <b>Control</b>
+### -field Control
 
 <dd>
 <p>Drivers can check this member to determine whether it is set with SL_PENDING_RETURNED. Drivers have read-only access to this member.</p>
 </dd>
 
-### -field <b>Parameters</b>
+### -field Parameters
 
 <dd>
 <p>A union that depends on the major and minor IRP function code values contained in <b>MajorFunction</b> and <b>MinorFunction</b>. The following table shows which IRPs use the individual members of the <b>Parameters</b> union.</p>
@@ -508,254 +508,254 @@ than welcome to provide sector atomicity as long as there is no remapping.</div>
 <p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550710">IRP Major Function Codes</a>.</p>
 <dl>
 
-### -field <b>Create</b>
+### -field Create
 
 <dd>
 </dd>
 
-### -field <b>CreatePipe</b>
+### -field CreatePipe
 
 <dd>
 </dd>
 
-### -field <b>CreateMailslot</b>
+### -field CreateMailslot
 
 <dd>
 </dd>
 
-### -field <b>Read</b>
+### -field Read
 
 <dd>
 </dd>
 
-### -field <b>Write</b>
+### -field Write
 
 <dd>
 </dd>
 
-### -field <b>QueryDirectory</b>
+### -field QueryDirectory
 
 <dd>
 </dd>
 
-### -field <b>NotifyDirectory</b>
+### -field NotifyDirectory
 
 <dd>
 </dd>
 
-### -field <b>QueryFile</b>
+### -field QueryFile
 
 <dd>
 </dd>
 
-### -field <b>SetFile</b>
-
-<dd>
-<dl>
-
-### -field <b>ReplaceIfExists</b>
-
-<dd></dd>
-
-### -field <b>AdvanceOnly</b>
-
-<dd></dd>
-
-### -field <b>ClusterCount</b>
-
-<dd></dd>
-
-### -field <b>DeleteHandle</b>
-
-<dd></dd>
-</dl>
-</dd>
-
-### -field <b>QueryEa</b>
-
-<dd>
-</dd>
-
-### -field <b>SetEa</b>
-
-<dd>
-</dd>
-
-### -field <b>QueryVolume</b>
-
-<dd>
-</dd>
-
-### -field <b>SetVolume</b>
-
-<dd>
-</dd>
-
-### -field <b>FileSystemControl</b>
-
-<dd>
-</dd>
-
-### -field <b>LockControl</b>
-
-<dd>
-</dd>
-
-### -field <b>DeviceIoControl</b>
-
-<dd>
-</dd>
-
-### -field <b>QuerySecurity</b>
-
-<dd>
-</dd>
-
-### -field <b>SetSecurity</b>
-
-<dd>
-</dd>
-
-### -field <b>MountVolume</b>
-
-<dd>
-</dd>
-
-### -field <b>VerifyVolume</b>
-
-<dd>
-</dd>
-
-### -field <b>Scsi</b>
-
-<dd>
-</dd>
-
-### -field <b>QueryQuota</b>
-
-<dd>
-</dd>
-
-### -field <b>SetQuota</b>
-
-<dd>
-</dd>
-
-### -field <b>QueryDeviceRelations</b>
-
-<dd>
-</dd>
-
-### -field <b>QueryInterface</b>
-
-<dd>
-</dd>
-
-### -field <b>DeviceCapabilities</b>
-
-<dd>
-</dd>
-
-### -field <b>FilterResourceRequirements</b>
-
-<dd>
-</dd>
-
-### -field <b>ReadWriteConfig</b>
-
-<dd>
-</dd>
-
-### -field <b>SetLock</b>
-
-<dd>
-</dd>
-
-### -field <b>QueryId</b>
-
-<dd>
-</dd>
-
-### -field <b>QueryDeviceText</b>
-
-<dd>
-</dd>
-
-### -field <b>UsageNotification</b>
-
-<dd>
-</dd>
-
-### -field <b>WaitWake</b>
-
-<dd>
-</dd>
-
-### -field <b>PowerSequence</b>
-
-<dd>
-</dd>
-
-### -field <b>Power</b>
+### -field SetFile
 
 <dd>
 <dl>
 
-### -field <b>SystemContext</b>
+### -field ReplaceIfExists
 
 <dd></dd>
 
-### -field <b>SystemPowerStateContext</b>
+### -field AdvanceOnly
+
+<dd></dd>
+
+### -field ClusterCount
+
+<dd></dd>
+
+### -field DeleteHandle
 
 <dd></dd>
 </dl>
 </dd>
 
-### -field <b>Power</b>
+### -field QueryEa
 
 <dd>
 </dd>
 
-### -field <b>StartDevice</b>
+### -field SetEa
 
 <dd>
 </dd>
 
-### -field <b>WMI</b>
+### -field QueryVolume
 
 <dd>
 </dd>
 
-### -field <b>Others</b>
+### -field SetVolume
+
+<dd>
+</dd>
+
+### -field FileSystemControl
+
+<dd>
+</dd>
+
+### -field LockControl
+
+<dd>
+</dd>
+
+### -field DeviceIoControl
+
+<dd>
+</dd>
+
+### -field QuerySecurity
+
+<dd>
+</dd>
+
+### -field SetSecurity
+
+<dd>
+</dd>
+
+### -field MountVolume
+
+<dd>
+</dd>
+
+### -field VerifyVolume
+
+<dd>
+</dd>
+
+### -field Scsi
+
+<dd>
+</dd>
+
+### -field QueryQuota
+
+<dd>
+</dd>
+
+### -field SetQuota
+
+<dd>
+</dd>
+
+### -field QueryDeviceRelations
+
+<dd>
+</dd>
+
+### -field QueryInterface
+
+<dd>
+</dd>
+
+### -field DeviceCapabilities
+
+<dd>
+</dd>
+
+### -field FilterResourceRequirements
+
+<dd>
+</dd>
+
+### -field ReadWriteConfig
+
+<dd>
+</dd>
+
+### -field SetLock
+
+<dd>
+</dd>
+
+### -field QueryId
+
+<dd>
+</dd>
+
+### -field QueryDeviceText
+
+<dd>
+</dd>
+
+### -field UsageNotification
+
+<dd>
+</dd>
+
+### -field WaitWake
+
+<dd>
+</dd>
+
+### -field PowerSequence
+
+<dd>
+</dd>
+
+### -field Power
+
+<dd>
+<dl>
+
+### -field SystemContext
+
+<dd></dd>
+
+### -field SystemPowerStateContext
+
+<dd></dd>
+</dl>
+</dd>
+
+### -field Power
+
+<dd>
+</dd>
+
+### -field StartDevice
+
+<dd>
+</dd>
+
+### -field WMI
+
+<dd>
+</dd>
+
+### -field Others
 
 <dd>
 </dd>
 </dl>
 </dd>
 
-### -field <b>DeviceObject</b>
+### -field DeviceObject
 
 <dd>
 <p>A pointer to the driver-created <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure representing the target physical, logical, or virtual device for which this driver is to handle the IRP.</p>
 </dd>
 
-### -field <b>FileObject</b>
+### -field FileObject
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a> structure that represents the file object, if any, that is associated with <b>DeviceObject</b> pointer. </p>
 </dd>
 
-### -field <b>CompletionRoutine</b>
+### -field CompletionRoutine
 
 <dd></dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd></dd>
 </dl>
 
 ## -remarks
-<p>For each IRP, there is one <b>IO_STACK_LOCATION</b> structure for each driver in a <a href="wdkgloss.d#wdkgloss.driver_stack#wdkgloss.driver_stack"><i>driver stack</i></a>. Each IRP's set of I/O stack locations is appended to the IRP, following the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure.</p>
+<p>For each IRP, there is one <b>IO_STACK_LOCATION</b> structure for each driver in a <a href="wdkgloss.d#wdkgloss.driver_stack#wdkgloss.driver_stack"><i>driver stack</i></a>. Each IRP's set of I/O stack locations is appended to the IRP, following the <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure.</p>
 
 <p>Every higher-level driver is responsible for setting up the I/O stack location for the next-lower driver in each IRP. A driver must call <a href="..\wdm\nf-wdm-iogetcurrentirpstacklocation.md">IoGetCurrentIrpStackLocation</a> to get a pointer to its own stack location for each IRP. Higher-level drivers can call <a href="..\wdm\nf-wdm-iogetnextirpstacklocation.md">IoGetNextIrpStackLocation</a> to get a pointer to the next-lower driver's stack location.</p>
 
@@ -808,7 +808,7 @@ than welcome to provide sector atomicity as long as there is no remapping.</div>
 <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 </dl>
 <p> </p>

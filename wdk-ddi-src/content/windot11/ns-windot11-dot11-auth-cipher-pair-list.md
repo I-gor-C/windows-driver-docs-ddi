@@ -7,7 +7,7 @@ old-location: netvista\dot11_auth_cipher_pair_list.htm
 old-project: netvista
 ms.assetid: e1440041-a7cd-45c6-8aa5-445d6de2bc20
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_AUTH_CIPHER_PAIR_LIST, DOT11_AUTH_CIPHER_PAIR_LIST, *PDOT11_AUTH_CIPHER_PAIR_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ typedef struct DOT11_AUTH_CIPHER_PAIR_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_AUTH_CIPHER_PAIR_LIST structure. This member is
@@ -68,19 +68,19 @@ typedef struct DOT11_AUTH_CIPHER_PAIR_LIST {
 <p></p>
 <dl>
 
-### -field <a id="Type"></a><a id="type"></a><a id="TYPE"></a><b>Type</b>
+### -field Type
 
 <dd>
 <p>This member must be set to NDIS_OBJECT_TYPE_DEFAULT.</p>
 </dd>
 
-### -field <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a><b>Revision</b>
+### -field Revision
 
 <dd>
 <p>This member must be set to DOT11_AUTH_CIPHER_PAIR_LIST_REVISION_1.</p>
 </dd>
 
-### -field <a id="Size"></a><a id="size"></a><a id="SIZE"></a><b>Size</b>
+### -field Size
 
 <dd>
 <p>This member must be set to 
@@ -91,21 +91,21 @@ typedef struct DOT11_AUTH_CIPHER_PAIR_LIST {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>uNumOfEntries</b>
+### -field uNumOfEntries
 
 <dd>
 <p>The number of entries in the 
      <b>AuthCipherPairs</b> array.</p>
 </dd>
 
-### -field <b>uTotalNumOfEntries</b>
+### -field uTotalNumOfEntries
 
 <dd>
 <p>The maximum number of entries that the 
      <b>AuthCipherPairs</b> array can contain.</p>
 </dd>
 
-### -field <b>AuthCipherPairs</b>
+### -field AuthCipherPairs
 
 <dd>
 <p>The list of 
@@ -173,7 +173,7 @@ typedef struct DOT11_AUTH_CIPHER_PAIR_LIST {
 
 <p>If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport driver must allow
     peer stations to associate with the Extensible AP by using 
-    <a href="NULL">Open System Authentication</a> or 
+    <a href="netvista.open_system_authentication">Open System Authentication</a> or 
     <a href="https://msdn.microsoft.com/41dd280b-e54c-4233-8051-45e7b1284d1d">Wired Equivalent Privacy (WEP)</a> algorithms, regardless of
     the enabled authorization and cipher algorithms. For more information about WPS and Extensible AP, see 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569436">OID_DOT11_WPS_ENABLED</a>.</p>
@@ -220,4 +220,4 @@ typedef struct DOT11_AUTH_CIPHER_PAIR_LIST {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_AUTH_CIPHER_PAIR_LIST structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_AUTH_CIPHER_PAIR_LIST structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

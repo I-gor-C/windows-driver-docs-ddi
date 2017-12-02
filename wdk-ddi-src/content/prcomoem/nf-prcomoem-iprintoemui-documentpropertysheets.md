@@ -56,13 +56,13 @@ HRESULT DocumentPropertySheets(
 ## -parameters
 <dl>
 
-### -param <i>pPSUIInfo</i> 
+### -param pPSUIInfo 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\compstui\ns-compstui--propsheetui-info.md">PROPSHEETUI_INFO</a> structure.</p>
 </dd>
 
-### -param <i>lParam</i> 
+### -param lParam 
 
 <dd>
 <p>Caller-supplied value that depends on the reason value in <i>pPSUIInfo</i>--&gt;<b>Reason</b>. The reason value can be one of the following constants, which are defined in compstui.h. For more information about these constants, see the Remarks section and <i>lParam</i> parameter description in the <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a> function type.</p>
@@ -90,7 +90,7 @@ HRESULT DocumentPropertySheets(
 
 <p>If one user interface plug-in supports several printer models, and if you only want the new page to be displayed for some of those models, the <code>IPrintOemUI::DocumentPropertySheets</code> method should just provide a success return value, without actually adding the page, for the models not requiring the page.</p>
 
-<p>For more information about creating and installing user interface plug-ins, see <a href="NULL">Customizing Microsoft's Printer Drivers</a>.</p>
+<p>For more information about creating and installing user interface plug-ins, see <a href="https://msdn.microsoft.com/b7761209-1f6f-4288-af47-4ed855c2e629">Customizing Microsoft's Printer Drivers</a>.</p>
 
 ## -requirements
 <table>

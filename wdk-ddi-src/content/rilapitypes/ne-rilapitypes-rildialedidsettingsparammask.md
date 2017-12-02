@@ -7,7 +7,7 @@ old-location: netvista\rildialedidsettingsparammask_2.htm
 old-project: netvista
 ms.assetid: c69d03b7-ef07-41b3-9659-79ab05ecd4e9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILDIALEDIDSETTINGSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_DIDS_PROVISIONING"></a><a id="ril_param_dids_provisioning"></a><b>RIL_PARAM_DIDS_PROVISIONING</b>
+### -field RIL_PARAM_DIDS_PROVISIONING
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_DIDS_STATUS"></a><a id="ril_param_dids_status"></a><b>RIL_PARAM_DIDS_STATUS</b>
+### -field RIL_PARAM_DIDS_STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_DIDS_ALL"></a><a id="ril_param_dids_all"></a><b>RIL_PARAM_DIDS_ALL</b>
+### -field RIL_PARAM_DIDS_ALL
 
 <dd></dd>
 </dl>

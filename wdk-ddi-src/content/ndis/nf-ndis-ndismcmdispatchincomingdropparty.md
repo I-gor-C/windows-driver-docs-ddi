@@ -7,7 +7,7 @@ old-location: netvista\ndismcmdispatchincomingdropparty.htm
 old-project: netvista
 ms.assetid: 4549b6f4-5138-4724-959c-a36b38c319fd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMCmDispatchIncomingDropParty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,14 +58,14 @@ VOID NdisMCmDispatchIncomingDropParty(
 ## -parameters
 <dl>
 
-### -param <i>DropStatus</i> [in]
+### -param DropStatus [in]
 
 <dd>
 <p>Indicates the reason this party is being dropped, usually NDIS_STATUS_SUCCESS if the remote party
      simply requested that its connection be closed.</p>
 </dd>
 
-### -param <i>NdisPartyHandle</i> [in]
+### -param NdisPartyHandle [in]
 
 <dd>
 <p>Specifies the handle that identifies the party to be dropped from the multipoint VC, which must
@@ -74,7 +74,7 @@ VOID NdisMCmDispatchIncomingDropParty(
      <a href="..\ndis\nc-ndis-protocol-cm-add-party.md">ProtocolCmAddParty</a> function.</p>
 </dd>
 
-### -param <i>Buffer</i> [in, optional]
+### -param Buffer [in, optional]
 
 <dd>
 <p>Pointer to a caller-allocated resident buffer containing additional protocol-specific data
@@ -82,7 +82,7 @@ VOID NdisMCmDispatchIncomingDropParty(
      <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>Specifies the size in bytes of the buffer, zero if 
@@ -196,4 +196,4 @@ VOID NdisMCmDispatchIncomingDropParty(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDispatchIncomingDropParty function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDispatchIncomingDropParty function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

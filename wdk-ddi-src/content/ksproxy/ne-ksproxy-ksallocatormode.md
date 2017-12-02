@@ -55,11 +55,11 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KsAllocatorMode_User"></a><a id="ksallocatormode_user"></a><a id="KSALLOCATORMODE_USER"></a><b>KsAllocatorMode_User</b>
+### -field KsAllocatorMode_User
 
 <dd></dd>
 
-### -field <a id="KsAllocatorMode_Kernel"></a><a id="ksallocatormode_kernel"></a><a id="KSALLOCATORMODE_KERNEL"></a><b>KsAllocatorMode_Kernel</b>
+### -field KsAllocatorMode_Kernel
 
 <dd></dd>
 </dl>

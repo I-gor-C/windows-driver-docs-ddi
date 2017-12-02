@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>IKsControl</b> interface is a COM-style interface implemented on AVStream filters and pins. It enables clients in kernel mode to access AVStream automation objects (properties, methods, and events). See the <a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a> kernel-streaming proxy COM interface for information about the kernel-mode equivalent of this interface.</p>
+<p>The <b>IKsControl</b> interface is a COM-style interface implemented on AVStream filters and pins. It enables clients in kernel mode to access AVStream automation objects (properties, methods, and events). See the <a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a> kernel-streaming proxy COM interface for information about the kernel-mode equivalent of this interface.</p>
 
 
 ## -syntax
@@ -121,7 +121,7 @@ req.iface:
 
 <p>However, a client that is written in C uses this code instead:</p>
 
-<p>For more information, see <a href="NULL">AVStream Overview</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/305039fe-0a00-4f3e-ae1a-61c50a2f2fb3">AVStream Overview</a>.</p>
 
 ## -requirements
 <table>
@@ -140,7 +140,7 @@ req.iface:
 ## -see-also
 <dl>
 <dt>
-<a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl (Kernel Streaming Proxy)</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl (Kernel Streaming Proxy)</a>
 </dt>
 <dt>
 <a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>

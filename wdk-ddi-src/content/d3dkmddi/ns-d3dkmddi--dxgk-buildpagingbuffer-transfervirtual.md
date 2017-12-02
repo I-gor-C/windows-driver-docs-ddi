@@ -62,37 +62,37 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>Kernel mode driver handle of the transferred allocation content. The handle is returned from <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a>. The allocation properties are needed to perform special transfers (as swizzle, de-swizzle, etc.).</p>
 </dd>
 
-### -field <b>AllocationOffsetInBytes</b>
+### -field AllocationOffsetInBytes
 
 <dd>
 <p>The offset in bytes from the start of the allocation being transferred. The offset should not be added to <b>SourceVirtualAddress</b> or <b>DesinationVirtualAddress</b>.</p>
 </dd>
 
-### -field <b>TransferSizeInBytes</b>
+### -field TransferSizeInBytes
 
 <dd>
 <p>The number of bytes to transfer.</p>
 </dd>
 
-### -field <b>SourceVirtualAddress</b>
+### -field SourceVirtualAddress
 
 <dd>
 <p>The virtual address of the source in the context of the paging process. </p>
 </dd>
 
-### -field <b>DestinationVirtualAddress</b>
+### -field DestinationVirtualAddress
 
 <dd>
 <p>The virtual address of the destination in the context of the paging process.</p>
 </dd>
 
-### -field <b>SourcePageTable</b>
+### -field SourcePageTable
 
 <dd>
 <p>The GPU virtual address of the page table that is used to map the <b>SourceVirtualAddress</b> address. </p>
@@ -100,19 +100,19 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL {
 <div> </div>
 </dd>
 
-### -field <b>TransferDirection</b>
+### -field TransferDirection
 
 <dd>
 <p>The <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-memory-transfer-direction.md">DXGK_MEMORY_TRANSFER_DIRECTION</a> structure describing the operation.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-transfervirtualflags.md">DXGK_TRANSFERVIRTUALFLAGS</a> structure describing the operation.</p>
 </dd>
 
-### -field <b>DestinationPageTable</b>
+### -field DestinationPageTable
 
 <dd>
 <p>The GPU virtual address of the page table that  is used to map the <b>DestinationVirtualAddress</b> address. The address is valid only when the <b>DXGK_GPUMMUCAPS.LegacyBehaviors.SourcePageTableVaInTransfer</b> cap is set.</p>

@@ -56,13 +56,13 @@ VOID ObReleaseObjectSecurity(
 ## -parameters
 <dl>
 
-### -param <i>SecurityDescriptor</i> [in]
+### -param SecurityDescriptor [in]
 
 <dd>
 <p>Pointer to the buffered <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> to be released. The caller obtained this parameter from <b>ObGetObjectSecurity</b></p>
 </dd>
 
-### -param <i>MemoryAllocated</i> [in]
+### -param MemoryAllocated [in]
 
 <dd>
 <p>Specifies the value also obtained from <b>ObGetObjectSecurity</b>. </p>

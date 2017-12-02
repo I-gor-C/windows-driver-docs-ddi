@@ -56,7 +56,7 @@ typedef struct _D3DHAL_DP2STATESET {
 ## -struct-fields
 <dl>
 
-### -field <b>dwOperation</b>
+### -field dwOperation
 
 <dd>
 <p>Specifies the operation to perform. The value of this member can be one of the following:</p>
@@ -118,13 +118,13 @@ typedef struct _D3DHAL_DP2STATESET {
 <p> </p>
 </dd>
 
-### -field <b>dwParam</b>
+### -field dwParam
 
 <dd>
 <p>Specifies the stateset handle that references the state block being manipulated with the current <b>dwOperation</b>.</p>
 </dd>
 
-### -field <b>sbType</b>
+### -field sbType
 
 <dd>
 <p>Specifies the state block type. The driver should ignore this member unless it implements render state extensions, or implements support for <a href="https://msdn.microsoft.com/6ad3412c-fd80-41c0-9abc-117aacc5ddae">pure devices</a> (DirectX 8.0 and later versions only).</p>

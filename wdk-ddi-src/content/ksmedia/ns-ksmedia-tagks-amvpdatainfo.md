@@ -66,79 +66,79 @@ typedef struct tagKS_AMVPDATAINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size of the structure, in bytes.</p>
 </dd>
 
-### -field <b>dwMicrosecondsPerField</b>
+### -field dwMicrosecondsPerField
 
 <dd>
 <p>Specifies the time taken by each field, in microseconds (millionths of a second).</p>
 </dd>
 
-### -field <b>amvpDimInfo</b>
+### -field amvpDimInfo
 
 <dd>
 <p>Describes the dimensional information of the video port, such as field and VBI dimensions.</p>
 </dd>
 
-### -field <b>dwPictAspectRatioX</b>
+### -field dwPictAspectRatioX
 
 <dd>
 <p>Indicates the picture aspect ratio in the horizontal dimension. For example, for a 16x9 aspect ratio this member would be 16.</p>
 </dd>
 
-### -field <b>dwPictAspectRatioY</b>
+### -field dwPictAspectRatioY
 
 <dd>
 <p>Indicates the picture aspect ratio in the vertical dimension. For example, for a 4x3 aspect ratio this member would be 3.</p>
 </dd>
 
-### -field <b>bEnableDoubleClock</b>
+### -field bEnableDoubleClock
 
 <dd>
 <p>Specifies if the video port should enable double clocking. </p>
 </dd>
 
-### -field <b>bEnableVACT</b>
+### -field bEnableVACT
 
 <dd>
 <p>Specifies if the video port should use an external VACT signal.</p>
 </dd>
 
-### -field <b>bDataIsInterlaced</b>
+### -field bDataIsInterlaced
 
 <dd>
 <p>Indicates that the signal is interlaced.</p>
 </dd>
 
-### -field <b>lHalfLinesOdd</b>
+### -field lHalfLinesOdd
 
 <dd>
 <p>Indicates the number of halflines in the odd field.</p>
 </dd>
 
-### -field <b>bFieldPolarityInverted</b>
+### -field bFieldPolarityInverted
 
 <dd>
 <p>Indicates if the device inverts the field polarity by default.</p>
 </dd>
 
-### -field <b>dwNumLinesInVREF</b>
+### -field dwNumLinesInVREF
 
 <dd>
 <p>Specifies the number of lines of data in VREF.</p>
 </dd>
 
-### -field <b>lHalfLinesEven</b>
+### -field lHalfLinesEven
 
 <dd>
 <p>Indicates the number of halflines in the even field.</p>
 </dd>
 
-### -field <b>dwReserved1</b>
+### -field dwReserved1
 
 <dd>
 <p>Reserved for future use. Do not use.</p>

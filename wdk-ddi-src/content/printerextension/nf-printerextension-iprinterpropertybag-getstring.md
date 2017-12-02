@@ -56,13 +56,13 @@ HRESULT GetString(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd>
 <p>The property to read.</p>
 </dd>
 
-### -param <i>pbstrValue</i> [out, retval]
+### -param pbstrValue [out, retval]
 
 <dd>
 <p>The value read.</p>

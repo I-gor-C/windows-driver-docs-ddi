@@ -56,19 +56,19 @@ typedef struct tagCapturedMetadataWhiteBalanceGains {
 ## -struct-fields
 <dl>
 
-### -field <b>R</b>
+### -field R
 
 <dd>
 <p>The  <b>R</b> value of the blob.</p>
 </dd>
 
-### -field <b>G</b>
+### -field G
 
 <dd>
 <p>The  <b>G</b> value of the blob.</p>
 </dd>
 
-### -field <b>B</b>
+### -field B
 
 <dd>
 <p>The  <b>B</b> value of the blob.</p>

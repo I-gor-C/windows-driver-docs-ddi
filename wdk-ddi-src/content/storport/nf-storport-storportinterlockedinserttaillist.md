@@ -60,31 +60,31 @@ ULONG StorPortInterlockedInsertTailList(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>ListHead</i> [in, out]
+### -param ListHead [in, out]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/mt790432">STOR_LIST_ENTRY</a> structure that represents the head of the list.</p>
 </dd>
 
-### -param <i>ListEntry</i> [in, out]
+### -param ListEntry [in, out]
 
 <dd>
 <p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt790432">STOR_LIST_ENTRY</a> structure that represents the entry to be inserted into the list. </p>
 </dd>
 
-### -param <i>*Result</i> [in, out]
+### -param *Result [in, out]
 
 <dd>
 <p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt790432">STOR_LIST_ENTRY</a> structure that represents the first entry of the list before the new entry was inserted.</p>
 </dd>
 
-### -param <i>Lock</i> [in, out]
+### -param Lock [in, out]
 
 <dd>
 <p>A pointer to a <b>STOR_KSPIN_LOCK</b> structure that serves as the spin lock used to synchronize access to the list. The storage for the spin lock must be resident and must have been initialized by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt790427">StorPortInitializeSpinLock</a>.</p>

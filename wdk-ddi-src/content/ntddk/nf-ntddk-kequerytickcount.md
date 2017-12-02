@@ -54,7 +54,7 @@ VOID KeQueryTickCount(
 ## -parameters
 <dl>
 
-### -param <i>TickCount</i> [out]
+### -param TickCount [out]
 
 <dd>
 <p>Pointer to the tick count value on return from <b>KeQueryTickCount</b>.</p>
@@ -139,7 +139,7 @@ VOID KeQueryTickCount(
 <a href="..\wdm\nf-wdm-kequeryinterrupttime.md">KeQueryInterruptTime</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a>

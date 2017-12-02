@@ -57,25 +57,25 @@ typedef struct _D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES {
 ## -struct-fields
 <dl>
 
-### -field <b>FirstChannel</b>
+### -field FirstChannel
 
 <dd>
 <p>The bit depth of the first color channel.</p>
 </dd>
 
-### -field <b>SecondChannel</b>
+### -field SecondChannel
 
 <dd>
 <p>The bit depth of the second color channel.</p>
 </dd>
 
-### -field <b>ThirdChannel</b>
+### -field ThirdChannel
 
 <dd>
 <p>The bit depth of the third color channel.</p>
 </dd>
 
-### -field <b>FourthChannel</b>
+### -field FourthChannel
 
 <dd>
 <p>Reserved.</p>

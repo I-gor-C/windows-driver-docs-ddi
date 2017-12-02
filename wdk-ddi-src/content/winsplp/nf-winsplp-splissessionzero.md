@@ -57,19 +57,19 @@ DWORD SplIsSessionZero(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd>
 <p>Is a handle to the printer.</p>
 </dd>
 
-### -param <i>JobID</i> [in]
+### -param JobID [in]
 
 <dd>
 <p>Specifies the print job.</p>
 </dd>
 
-### -param <i>pIsSessionZero</i> [out]
+### -param pIsSessionZero [out]
 
 <dd>
 <p>Pointer to a memory location that is set to <b>TRUE</b> if the SessionID for the session is zero; otherwise, this value is set to <b>FALSE</b>.</p>

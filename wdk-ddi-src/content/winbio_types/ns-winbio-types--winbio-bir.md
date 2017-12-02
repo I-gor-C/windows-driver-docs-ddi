@@ -58,25 +58,25 @@ typedef struct _WINBIO_BIR {
 ## -struct-fields
 <dl>
 
-### -field <b>HeaderBlock</b>
+### -field HeaderBlock
 
 <dd>
 <p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-bir-data.md">WINBIO_BIR_DATA</a> that contains size and offset information for a standard biometric header. This member is required.</p>
 </dd>
 
-### -field <b>StandardDataBlock</b>
+### -field StandardDataBlock
 
 <dd>
 <p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-bir-data.md">WINBIO_BIR_DATA</a> that contains size and offset information for a standard data block based on the ANSI 381 format. This member is optional. Set this member to 0,0 if you do not use it.</p>
 </dd>
 
-### -field <b>VendorDataBlock</b>
+### -field VendorDataBlock
 
 <dd>
 <p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-bir-data.md">WINBIO_BIR_DATA</a> that contains size and offset information for a vendor-specific data block.  This member is optional. Set this member to 0,0 if you do not use it.</p>
 </dd>
 
-### -field <b>SignatureBlock</b>
+### -field SignatureBlock
 
 <dd>
 <p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-bir-data.md">WINBIO_BIR_DATA</a> that contains size and offset information for a signature block. This member is optional. Set this member to 0,0 if you do not use it.</p>

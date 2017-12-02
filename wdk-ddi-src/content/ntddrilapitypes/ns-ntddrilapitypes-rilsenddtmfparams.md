@@ -7,7 +7,7 @@ old-location: netvista\rilsenddtmfparams.htm
 old-project: netvista
 ms.assetid: b08767f9-6b2d-4930-bd02-ebc89f2bdb7d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSENDDTMFPARAMS, RILSENDDTMFPARAMS, *LPRILSENDDTMFPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _RILSENDDTMFPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>szDTMF</b>
+### -field szDTMF
 
 <dd></dd>
 
-### -field <b>dwDigitOnTimeMs</b>
+### -field dwDigitOnTimeMs
 
 <dd></dd>
 
-### -field <b>dwDigitOffTimeMs</b>
+### -field dwDigitOffTimeMs
 
 <dd></dd>
 </dl>

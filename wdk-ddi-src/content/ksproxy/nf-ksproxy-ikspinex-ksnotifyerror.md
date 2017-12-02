@@ -55,13 +55,13 @@ VOID KsNotifyError(
 ## -parameters
 <dl>
 
-### -param <i>Sample</i> [in]
+### -param Sample [in]
 
 <dd>
 <p>Pointer to the <b>IMediaSample</b> interface for the associated media sample.</p>
 </dd>
 
-### -param <i>hr</i> [in]
+### -param hr [in]
 
 <dd>
 <p>Error value for notification. If ERROR_OPERATION_ABORTED (that is, the I/O was purposefully canceled), the filter graph is not notified. </p>

@@ -58,13 +58,13 @@ BOOLEAN AcceptDeviceNotification(
 ## -parameters
 <dl>
 
-### -param <i>Notification</i> [in]
+### -param Notification [in]
 
 <dd>
 <p>The DPM notification ID. This parameter specifies the type of DPM notification that PoFx is sending. For a list of DPM notification IDs, see <a href="kernel.device_power_management__dpm__notifications">Device power management (DPM) notifications</a>.</p>
 </dd>
 
-### -param <i>Data</i> [in, out, optional]
+### -param Data [in, out, optional]
 
 <dd>
 <p>A pointer to a PoFx-allocated structure that contains the input and/or output data for this notification. The type of this structure depends on the notification ID specified by <i>Notification</i>. For a list of the structure types that are defined for the various DPM notification IDs, see <a href="kernel.device_power_management__dpm__notifications">Device power management (DPM) notifications</a>.</p>

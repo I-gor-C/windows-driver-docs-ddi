@@ -57,19 +57,19 @@ typedef struct _DDC_CONTROL {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size, in bytes, of this DDC_CONTROL structure.</p>
 </dd>
 
-### -field <b>I2CCallbacks</b>
+### -field I2CCallbacks
 
 <dd>
 <p>Is an <a href="..\video\ns-video--i2c-callbacks.md">I2C_CALLBACKS</a> structure that contains pointers to functions, implemented by the video miniport driver, that read and write individual data bits to the I2C serial clock and data lines.</p>
 </dd>
 
-### -field <b>EdidSegment</b>
+### -field EdidSegment
 
 <dd>
 <p>Specifies the particular EDID segment. Currently, this member is meaningful only for EEDID (EDID Version 1.3); for other EDID versions, this member should always be set to 0. For EEDID (EDID Version 1.3), segment numbers can range from 0 through 127, where each segment is 256 bytes in length. Since the EDID version number is in segment 0, this member must be set to 0 the first time  the video miniport driver calls <a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a> regarding a particular monitor.</p>

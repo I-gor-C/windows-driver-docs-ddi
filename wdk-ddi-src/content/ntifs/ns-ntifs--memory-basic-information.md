@@ -61,19 +61,19 @@ typedef struct _MEMORY_BASIC_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>BaseAddress</b>
+### -field BaseAddress
 
 <dd>
 <p>A pointer to the base address of the region of pages.</p>
 </dd>
 
-### -field <b>AllocationBase</b>
+### -field AllocationBase
 
 <dd>
 <p>A pointer to the base address of a range of allocated pages. The page pointed to by the <b>BaseAddress</b> member is contained within this allocation range.</p>
 </dd>
 
-### -field <b>AllocationProtect</b>
+### -field AllocationProtect
 
 <dd>
 <p>The memory protection option when the region was initially allocated. This member can be one of the 
@@ -86,7 +86,7 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
 <tr>
 <td width="40%"><a id="PAGE_NOACCESS"></a><a id="page_noaccess"></a><dl>
 
-### -field <b>PAGE_NOACCESS</b>
+### -field PAGE_NOACCESS
 
 
 ### -field 0x01
@@ -102,7 +102,7 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
 <tr>
 <td width="40%"><a id="PAGE_EXECUTE"></a><a id="page_execute"></a><dl>
 
-### -field <b>PAGE_EXECUTE</b>
+### -field PAGE_EXECUTE
 
 
 ### -field 0x10
@@ -118,7 +118,7 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
 <tr>
 <td width="40%"><a id="PAGE_READONLY"></a><a id="page_readonly"></a><dl>
 
-### -field <b>PAGE_READONLY</b>
+### -field PAGE_READONLY
 
 
 ### -field 0x02
@@ -134,7 +134,7 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
 <tr>
 <td width="40%"><a id="PAGE_READWRITE"></a><a id="page_readwrite"></a><dl>
 
-### -field <b>PAGE_READWRITE</b>
+### -field PAGE_READWRITE
 
 
 ### -field 0x04
@@ -152,7 +152,7 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
 <tr>
 <td width="40%"><a id="PAGE_GUARD"></a><a id="page_guard"></a><dl>
 
-### -field <b>PAGE_GUARD</b>
+### -field PAGE_GUARD
 
 
 ### -field 0x100
@@ -169,7 +169,7 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
 <tr>
 <td width="40%"><a id="PAGE_NOCACHE"></a><a id="page_nocache"></a><dl>
 
-### -field <b>PAGE_NOCACHE</b>
+### -field PAGE_NOCACHE
 
 
 ### -field 0x200
@@ -184,7 +184,7 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
 <tr>
 <td width="40%"><a id="PAGE_WRITECOMBINE"></a><a id="page_writecombine"></a><dl>
 
-### -field <b>PAGE_WRITECOMBINE</b>
+### -field PAGE_WRITECOMBINE
 
 
 ### -field 0x400
@@ -201,7 +201,7 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
 <p> </p>
 </dd>
 
-### -field <b>RegionSize</b>
+### -field RegionSize
 
 <dd>
 <p>The size of the region in bytes beginning at
@@ -209,7 +209,7 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
                                identical attributes.</p>
 </dd>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>The state of the pages in the region. This member can be one of the following values. 
@@ -223,7 +223,7 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
 <tr>
 <td width="40%"><a id="MEM_COMMIT"></a><a id="mem_commit"></a><dl>
 
-### -field <b>MEM_COMMIT</b>
+### -field MEM_COMMIT
 
 
 ### -field 0x1000
@@ -237,7 +237,7 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
 <tr>
 <td width="40%"><a id="MEM_FREE"></a><a id="mem_free"></a><dl>
 
-### -field <b>MEM_FREE</b>
+### -field MEM_FREE
 
 
 ### -field 0x10000
@@ -251,7 +251,7 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
 <tr>
 <td width="40%"><a id="MEM_RESERVE"></a><a id="mem_reserve"></a><dl>
 
-### -field <b>MEM_RESERVE</b>
+### -field MEM_RESERVE
 
 
 ### -field 0x2000
@@ -266,13 +266,13 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
 <p> </p>
 </dd>
 
-### -field <b>Protect</b>
+### -field Protect
 
 <dd>
 <p>The access protection of the pages in the region. This member is one of the values listed for the <b>AllocationProtect</b> member.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of pages in the region. The following types are defined. 
@@ -286,7 +286,7 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
 <tr>
 <td width="40%"><a id="MEM_IMAGE"></a><a id="mem_image"></a><dl>
 
-### -field <b>MEM_IMAGE</b>
+### -field MEM_IMAGE
 
 
 ### -field 0x1000000
@@ -300,7 +300,7 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
 <tr>
 <td width="40%"><a id="MEM_MAPPED"></a><a id="mem_mapped"></a><dl>
 
-### -field <b>MEM_MAPPED</b>
+### -field MEM_MAPPED
 
 
 ### -field 0x40000
@@ -314,7 +314,7 @@ following constants defined in wdm.h, or 0 if the caller does not have access.</
 <tr>
 <td width="40%"><a id="MEM_PRIVATE"></a><a id="mem_private"></a><dl>
 
-### -field <b>MEM_PRIVATE</b>
+### -field MEM_PRIVATE
 
 
 ### -field 0x20000

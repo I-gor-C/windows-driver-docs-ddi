@@ -65,61 +65,61 @@ typedef union _WHEA_PROCESSOR_FAMILY_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Stepping</b>
+### -field Stepping
 
 <dd>
 <p>The stepping of the processor.</p>
 </dd>
 
-### -field <b>Model</b>
+### -field Model
 
 <dd>
 <p>The processor model identifier.</p>
 </dd>
 
-### -field <b>Family</b>
+### -field Family
 
 <dd>
 <p>The processor family identifier.</p>
 </dd>
 
-### -field <b>ProcessorType</b>
+### -field ProcessorType
 
 <dd>
 <p>The processor type identifier.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>ExtendedModel</b>
+### -field ExtendedModel
 
 <dd>
 <p>The extended processor model identifier.</p>
 </dd>
 
-### -field <b>ExtendedFamily</b>
+### -field ExtendedFamily
 
 <dd>
 <p>The extended processor family identifier.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>AsULONGLONG</b>
+### -field AsULONGLONG
 
 <dd>
 <p>A ULONGLONG representation of the contents of the WHEA_PROCESSOR_FAMILY_INFO union.</p>

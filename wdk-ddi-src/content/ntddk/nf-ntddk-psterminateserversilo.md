@@ -55,13 +55,13 @@ void PsTerminateServerSilo(
 ## -parameters
 <dl>
 
-### -param <i>ServerSilo</i> [in]
+### -param ServerSilo [in]
 
 <dd>
 <p>A pointer to the silo being terminated.</p>
 </dd>
 
-### -param <i>ExistStatus</i> [in]
+### -param ExistStatus [in]
 
 <dd>
 <p>The exit status for the silo.</p>

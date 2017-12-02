@@ -7,7 +7,7 @@ old-location: netvista\ndismsetupdmatransfer.htm
 old-project: netvista
 ms.assetid: 2a7ebedd-0042-4624-9c9b-721cccfb0c4f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMSetupDmaTransfer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ VOID NdisMSetupDmaTransfer(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [out]
+### -param Status [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which this function returns the status of the request,
@@ -69,14 +69,14 @@ VOID NdisMSetupDmaTransfer(
 <p></p>
 <dl>
 
-### -param <a id="NDIS_STATUS_SUCCESS"></a><a id="ndis_status_success"></a>NDIS_STATUS_SUCCESS
+### -param NDIS_STATUS_SUCCESS
 
 <dd>
 <p>The DMA controller has been set up to transfer the specified data, which has been flushed to or
        from the device to maintain data integrity.</p>
 </dd>
 
-### -param <a id="NDIS_STATUS_RESOURCES"></a><a id="ndis_status_resources"></a>NDIS_STATUS_RESOURCES
+### -param NDIS_STATUS_RESOURCES
 
 <dd>
 <p>An attempt to set up the DMA controller for the transfer has failed, either because the channel
@@ -87,7 +87,7 @@ VOID NdisMSetupDmaTransfer(
 </dl>
 </dd>
 
-### -param <i>MiniportDmaHandle</i> [in]
+### -param MiniportDmaHandle [in]
 
 <dd>
 <p>The DMA handle returned by the 
@@ -95,14 +95,14 @@ VOID NdisMSetupDmaTransfer(
      during initialization.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to the buffer descriptor mapping the range of host memory from which or into which the
      data will be transferred.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>The byte offset within the mapped buffer at which the transfer should start. Zero indicates the
@@ -110,7 +110,7 @@ VOID NdisMSetupDmaTransfer(
      <i>Buffer</i> .</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The number of bytes of data to be transferred. The range specified by 
@@ -119,7 +119,7 @@ VOID NdisMSetupDmaTransfer(
      <i>Buffer</i> .</p>
 </dd>
 
-### -param <i>WriteToDevice</i> [in]
+### -param WriteToDevice [in]
 
 <dd>
 <p>A boolean value that is <b>TRUE</b> for an outbound transfer from the system through the NIC. Otherwise,
@@ -230,4 +230,4 @@ VOID NdisMSetupDmaTransfer(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMSetupDmaTransfer function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMSetupDmaTransfer function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

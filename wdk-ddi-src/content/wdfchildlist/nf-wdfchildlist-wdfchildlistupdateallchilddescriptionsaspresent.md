@@ -7,7 +7,7 @@ old-location: wdf\wdfchildlistupdateallchilddescriptionsaspresent.htm
 old-project: wdf
 ms.assetid: 598d2b4f-9b49-480a-9cf8-25661c24483f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfChildListUpdateAllChildDescriptionsAsPresent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ VOID WdfChildListUpdateAllChildDescriptionsAsPresent(
 ## -parameters
 <dl>
 
-### -param <i>ChildList</i> [in]
+### -param ChildList [in]
 
 <dd>
 <p>A handle to a child list object.</p>

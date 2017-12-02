@@ -58,13 +58,13 @@ typedef struct _DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>NumPlanes</b>
+### -field NumPlanes
 
 <dd>
 <p>Specifies the number of overlay planes that are supported by the overlay planes within the capability group.</p>
 </dd>
 
-### -field <b>MaxStretchFactor</b>
+### -field MaxStretchFactor
 
 <dd>
 <p>Specifies the maximum stretch factor that is supported by the overlay planes within the capability group.</p>
@@ -72,7 +72,7 @@ typedef struct _DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS {
 <p>It's not guaranteed that this stretch factor can be applied in all scenarios. For example, it might be possible to stretch only one overlay plane out of several using this factor.</p>
 </dd>
 
-### -field <b>MaxShrinkFactor</b>
+### -field MaxShrinkFactor
 
 <dd>
 <p>Specifies the maximum shrink factor that is supported by the overlay planes within the capability group.</p>
@@ -80,13 +80,13 @@ typedef struct _DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS {
 <p>It's not guaranteed that this shrink factor can be applied in all scenarios. For example, it might be possible to shrink only one overlay plane out of several using this factor.</p>
 </dd>
 
-### -field <b>OverlayCaps</b>
+### -field OverlayCaps
 
 <dd>
 <p>The overlay capabilities, given as a bitwise <b>OR</b> of values from the <a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-multiplane-overlay-feature-caps.md">DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS</a> enumeration.</p>
 </dd>
 
-### -field <b>StereoCaps</b>
+### -field StereoCaps
 
 <dd>
 <p>Reserved for system use. Set this value to zero.</p>

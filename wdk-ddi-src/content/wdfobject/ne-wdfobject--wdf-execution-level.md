@@ -7,7 +7,7 @@ old-location: wdf\wdf_execution_level.htm
 old-project: wdf
 ms.assetid: 82b1fe8e-054c-4710-9a32-d620a62a070e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDriverMiniportUnload
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ typedef enum _WDF_EXECUTION_LEVEL {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfExecutionLevelInvalid"></a><a id="wdfexecutionlevelinvalid"></a><a id="WDFEXECUTIONLEVELINVALID"></a><b>WdfExecutionLevelInvalid</b>
+### -field WdfExecutionLevelInvalid
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="WdfExecutionLevelInheritFromParent"></a><a id="wdfexecutionlevelinheritfromparent"></a><a id="WDFEXECUTIONLEVELINHERITFROMPARENT"></a><b>WdfExecutionLevelInheritFromParent</b>
+### -field WdfExecutionLevelInheritFromParent
 
 <dd>
 <p>The framework uses the maximum IRQL value of the object's parent, unless the object is one that requires IRQL = DISPATCH_LEVEL (such as a DPC object). This value is the default if a driver does not specify a WDF_EXECUTION_LEVEL-typed value.</p>
 </dd>
 
-### -field <a id="WdfExecutionLevelPassive"></a><a id="wdfexecutionlevelpassive"></a><a id="WDFEXECUTIONLEVELPASSIVE"></a><b>WdfExecutionLevelPassive</b>
+### -field WdfExecutionLevelPassive
 
 <dd>
 <p>The framework always calls the object's callback functions at IRQL = PASSIVE_LEVEL.</p>
 </dd>
 
-### -field <a id="WdfExecutionLevelDispatch"></a><a id="wdfexecutionleveldispatch"></a><a id="WDFEXECUTIONLEVELDISPATCH"></a><b>WdfExecutionLevelDispatch</b>
+### -field WdfExecutionLevelDispatch
 
 <dd>
 <p>The framework calls the object's callback functions at IRQL &lt;= DISPATCH_LEVEL. Not available in UMDF.</p>
@@ -147,4 +147,4 @@ typedef enum _WDF_EXECUTION_LEVEL {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_EXECUTION_LEVEL enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_EXECUTION_LEVEL enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

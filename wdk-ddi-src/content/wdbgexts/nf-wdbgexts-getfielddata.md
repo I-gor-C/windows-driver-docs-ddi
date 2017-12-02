@@ -7,13 +7,13 @@ old-location: debugger\getfielddata.htm
 old-project: debugger
 ms.assetid: e60c2288-fe25-4da5-9b17-6e95a30e7c1c
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: GetFieldData
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -59,33 +59,33 @@ __inline ULONG GetFieldData(
 ## -parameters
 <dl>
 
-### -param <i>TypeAddress</i> [in]
+### -param TypeAddress [in]
 
 <dd>
 <p>Specifies the address of the structure in the target's memory.</p>
 </dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>Specifies the name of the type of the structure.  This can be qualified with a module name, for example, <b>mymodule!mystruct</b>.</p>
 </dd>
 
-### -param <i>Field</i> [in]
+### -param Field [in]
 
 <dd>
 <p>Specifies the name of the member in the structure whose value will be returned.  Submembers can be specified by using a period-separated path, for example, "myfield.mysubfield".</p>
 <p>If the size of the structure pointed to by <i>TypeAddress</i> is less than 8 bytes, <i>Field</i> can be <b>NULL</b>; in this case, the entire structure is copied to <i>pOutValue</i>.</p>
 </dd>
 
-### -param <i>OutSize</i> [in]
+### -param OutSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer <i>pOutValue</i>.</p>
 <p>If <i>OutSize</i> is smaller than the size of the value returned, an error message is printed and an exception is raised; if the exception is handled or ignored, the return value is zero. In this case, the data beyond the end of the buffer referred to by <i>pOutValue</i> might be overwritten.</p>
 </dd>
 
-### -param <i>pOutValue</i> [out]
+### -param pOutValue [out]
 
 <dd>
 <p>Receives the value of the member.  Or, the value of the type, if <i>Field</i> is <b>NULL</b>.</p>
@@ -117,7 +117,7 @@ __inline ULONG GetFieldData(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

@@ -7,7 +7,7 @@ old-location: netvista\rilgetpreferredoperatorlistparams.htm
 old-project: netvista
 ms.assetid: b1cc3a45-cfd9-4a7f-94e7-bc5c0d2a4e80
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILGETPREFERREDOPERATORLISTPARAMS, RILGETPREFERREDOPERATORLISTPARAMS, *LPRILGETPREFERREDOPERATORLISTPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILGETPREFERREDOPERATORLISTPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwFormat</b>
+### -field dwFormat
 
 <dd></dd>
 </dl>

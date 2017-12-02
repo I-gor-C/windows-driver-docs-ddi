@@ -57,19 +57,19 @@ typedef struct _D3DKMT_GETPROCESSDEVICELOSTSUPPORT {
 ## -struct-fields
 <dl>
 
-### -field <b>hProcess</b>
+### -field hProcess
 
 <dd>
 <p>A handle to the process.</p>
 </dd>
 
-### -field <b>AdapterLuid</b>
+### -field AdapterLuid
 
 <dd>
 <p>LUID of Adapter that is potentially being detached</p>
 </dd>
 
-### -field <b>Support</b>
+### -field Support
 
 <dd>
 <p>Indicates whether or not all devices of the process using the adapter can recover from graphics device lost.</p>

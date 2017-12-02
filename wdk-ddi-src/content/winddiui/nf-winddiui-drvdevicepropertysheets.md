@@ -56,13 +56,13 @@ LONG DrvDevicePropertySheets(
 ## -parameters
 <dl>
 
-### -param <i>pPSUIInfo</i> [in, optional]
+### -param pPSUIInfo [in, optional]
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\compstui\ns-compstui--propsheetui-info.md">PROPSHEETUI_INFO</a> structure.</p>
 </dd>
 
-### -param <i>lParam</i> 
+### -param lParam 
 
 <dd>
 <p>Caller-supplied integer value that is dependent on the contents of the <b>Reason</b> member of the PROPSHEETUI_INFO structure, as listed in the following table.</p>

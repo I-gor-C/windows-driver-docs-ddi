@@ -58,25 +58,25 @@ NTSTATUS TmInitializeTransactionManager (
 ## -parameters
 <dl>
 
-### -param <i>TransactionManager</i> [in]
+### -param TransactionManager [in]
 
 <dd>
 <p>A pointer to the transaction manager object to initialize.</p>
 </dd>
 
-### -param <i>LogFileName</i> [in, optional]
+### -param LogFileName [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the path and file name of a <a href="https://msdn.microsoft.com/4da3cb49-dc20-4713-813b-ff458c99ab90">CLFS</a> log file stream associated with the transaction manager object. </p>
 </dd>
 
-### -param <i>TmId</i> [in]
+### -param TmId [in]
 
 <dd>
 <p>Specifies a pointer to a GUID that identifies  the name of the transaction manager object to initialize.</p>
 </dd>
 
-### -param <i>CreateOptions</i> [in, optional]
+### -param CreateOptions [in, optional]
 
 <dd>
 <p>Optional object creation flags. The following table contains the available flags.</p>

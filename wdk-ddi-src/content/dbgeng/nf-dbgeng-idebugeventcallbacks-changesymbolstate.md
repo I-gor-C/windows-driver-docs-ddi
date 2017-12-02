@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbacks_changesymbolstate.htm
 old-project: debugger
 ms.assetid: 5383bd49-df44-48dd-8385-c782a1b1f80a
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugEventCallbacks, ChangeSymbolState, IDebugEventCallbacks::ChangeSymbolState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT ChangeSymbolState(
 ## -parameters
 <dl>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies a bit-set indicating the nature of the change to the symbol state.  The following bit flags might be set.</p>
@@ -116,44 +116,44 @@ HRESULT ChangeSymbolState(
 <p> </p>
 </dd>
 
-### -param <i>Argument</i> [in]
+### -param Argument [in]
 
 <dd>
 <p>Provides additional information about the change to the symbol state.   If more than one bit flag is set in the <i>Flags</i> parameter, the <i>Argument</i> parameter is not used.  Otherwise, the value of <i>Argument</i> depends on the value of <i>Flags</i>:</p>
 <p></p>
 <dl>
 
-### -param <a id="DEBUG_CSS_LOADS"></a><a id="debug_css_loads"></a>DEBUG_CSS_LOADS
+### -param DEBUG_CSS_LOADS
 
 <dd>
 <p>The value of <i>Argument</i> is the base location (in the target's memory address space) of the module image that the engine loaded symbols for.</p>
 </dd>
 
-### -param <a id="DEBUG_CSS_UNLOADS"></a><a id="debug_css_unloads"></a>DEBUG_CSS_UNLOADS
+### -param DEBUG_CSS_UNLOADS
 
 <dd>
 <p>The value of <i>Argument</i> is the base location (in the target's memory address space) of the module image that the engine unloaded symbols for.  If the engine unloaded symbols for more than one image, the value of <i>Argument</i> is zero.</p>
 </dd>
 
-### -param <a id="DEBUG_CSS_SCOPE"></a><a id="debug_css_scope"></a>DEBUG_CSS_SCOPE
+### -param DEBUG_CSS_SCOPE
 
 <dd>
 <p>The value of <i>Argument</i> is zero.</p>
 </dd>
 
-### -param <a id="DEBUG_CSS_PATHS"></a><a id="debug_css_paths"></a>DEBUG_CSS_PATHS
+### -param DEBUG_CSS_PATHS
 
 <dd>
 <p>The value of <i>Argument</i> is zero.</p>
 </dd>
 
-### -param <a id="DEBUG_CSS_SYMBOL_OPTIONS"></a><a id="debug_css_symbol_options"></a>DEBUG_CSS_SYMBOL_OPTIONS
+### -param DEBUG_CSS_SYMBOL_OPTIONS
 
 <dd>
 <p>The value of <i>Argument</i> is the symbol options.</p>
 </dd>
 
-### -param <a id="DEBUG_CSS_TYPE_OPTIONS"></a><a id="debug_css_type_options"></a>DEBUG_CSS_TYPE_OPTIONS
+### -param DEBUG_CSS_TYPE_OPTIONS
 
 <dd>
 <p>The value of <i>Argument</i> is zero.</p>

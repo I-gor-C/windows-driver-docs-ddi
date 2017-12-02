@@ -7,7 +7,7 @@ old-location: netvista\ndis_frame_header.htm
 old-project: netvista
 ms.assetid: 8897ae0c-6068-4fea-8944-1340595dbff3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT, *PGET_CONFIGURATION_IOCTL_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,44 +60,44 @@ typedef enum _NDIS_FRAME_HEADER {
 ## -enum-fields
 <dl>
 
-### -field <a id="NdisFrameHeaderUndefined"></a><a id="ndisframeheaderundefined"></a><a id="NDISFRAMEHEADERUNDEFINED"></a><b>NdisFrameHeaderUndefined</b>
+### -field NdisFrameHeaderUndefined
 
 <dd>
 <p>An undefined frame header type.</p>
 </dd>
 
-### -field <a id="NdisFrameHeaderMac"></a><a id="ndisframeheadermac"></a><a id="NDISFRAMEHEADERMAC"></a><b>NdisFrameHeaderMac</b>
+### -field NdisFrameHeaderMac
 
 <dd>
 <p>A media access control (MAC) header.</p>
 </dd>
 
-### -field <a id="NdisFrameHeaderArp"></a><a id="ndisframeheaderarp"></a><a id="NDISFRAMEHEADERARP"></a><b>NdisFrameHeaderArp</b>
+### -field NdisFrameHeaderArp
 
 <dd>
 <p>An Address Resolution Protocol (ARP) header.</p>
 </dd>
 
-### -field <a id="NdisFrameHeaderIPv4"></a><a id="ndisframeheaderipv4"></a><a id="NDISFRAMEHEADERIPV4"></a><b>NdisFrameHeaderIPv4</b>
+### -field NdisFrameHeaderIPv4
 
 <dd>
 <p>An IP version 4 (IPv4) header.</p>
 </dd>
 
-### -field <a id="NdisFrameHeaderIPv6"></a><a id="ndisframeheaderipv6"></a><a id="NDISFRAMEHEADERIPV6"></a><b>NdisFrameHeaderIPv6</b>
+### -field NdisFrameHeaderIPv6
 
 <dd>
 <p>An IP version 6 (IPv6) header.</p>
 </dd>
 
-### -field <a id="NdisFrameHeaderUdp"></a><a id="ndisframeheaderudp"></a><a id="NDISFRAMEHEADERUDP"></a><b>NdisFrameHeaderUdp</b>
+### -field NdisFrameHeaderUdp
 
 <dd>
 <p>A User Datagram Protocol
 (UDP) header.</p>
 </dd>
 
-### -field <a id="NdisFrameHeaderMaximum"></a><a id="ndisframeheadermaximum"></a><a id="NDISFRAMEHEADERMAXIMUM"></a><b>NdisFrameHeaderMaximum</b>
+### -field NdisFrameHeaderMaximum
 
 <dd>
 <p>The maximum value for this enumeration. This value might change in future versions of the NDIS
@@ -141,4 +141,4 @@ typedef enum _NDIS_FRAME_HEADER {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FRAME_HEADER enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FRAME_HEADER enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

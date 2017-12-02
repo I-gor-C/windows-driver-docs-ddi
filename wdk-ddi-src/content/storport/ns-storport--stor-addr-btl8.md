@@ -63,43 +63,43 @@ typedef struct _STOR_ADDR_BTL8 {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The address type. This member is set to <b>STOR_ADDRESS_TYPE_BTL8</b>.</p>
 </dd>
 
-### -field <b>Port</b>
+### -field Port
 
 <dd>
 <p>The host bus adapter (HBA) port number.</p>
 </dd>
 
-### -field <b>AddressLength</b>
+### -field AddressLength
 
 <dd>
 <p>The byte length of the address. This value is set to <b>STOR_ADDR_BTL8_ADDRESS_LENGTH</b>.</p>
 </dd>
 
-### -field <b>Path</b>
+### -field Path
 
 <dd>
 <p>The bus number for the target device.</p>
 </dd>
 
-### -field <b>Target</b>
+### -field Target
 
 <dd>
 <p>The target device number.</p>
 </dd>
 
-### -field <b>Lun</b>
+### -field Lun
 
 <dd>
 <p>The logical unit on the target device.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved, set to 0.</p>
@@ -134,7 +134,7 @@ typedef struct _STOR_ADDR_BTL8 {
 ## -see-also
 <dl>
 <dt>
-<a href="..\scsi\ns-scsi--stor-address.md">STOR_ADDRESS</a>
+<a href="..\storport\ns-storport--stor-address.md">STOR_ADDRESS</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: sensors\isensordriver_onprocesswpdmessage.htm
 old-project: sensors
 ms.assetid: 4780d0ea-a54a-4125-b3b6-2210a14eff71
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorDriver, OnProcessWpdMessage, ISensorDriver::OnProcessWpdMessage
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ HRESULT OnProcessWpdMessage(
 ## -parameters
 <dl>
 
-### -param <i>pUnkPortableDeviceValuesParams</i> 
+### -param pUnkPortableDeviceValuesParams 
 
 <dd>
 <p>A pointer to the IUnknown interface that supports the IPortableDeviceValues interface. The object that is associated with this IUnknown interface contains the parameters for the WPD command. For more information, see IPortableDeviceValues in Windows Portable Devices. </p>
 </dd>
 
-### -param <i>pUnkPortableDeviceValuesResults</i> 
+### -param pUnkPortableDeviceValuesResults 
 
 <dd>
 <p>A pointer to the IUnknown interface that supports the IPortableDeviceValues interface. The object that is associated with this IUnknown interface stores the results for the WPD command. </p>

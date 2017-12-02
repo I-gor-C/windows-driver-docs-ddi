@@ -7,7 +7,7 @@ old-location: wdf\wdf_property_store_root_class.htm
 old-project: wdf
 ms.assetid: f26732a7-54b5-4573-ac4f-7b2b6c8db8b0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ typedef enum _WDF_PROPERTY_STORE_ROOT_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfPropertyStoreRootClassHardwareKey"></a><a id="wdfpropertystorerootclasshardwarekey"></a><a id="WDFPROPERTYSTOREROOTCLASSHARDWAREKEY"></a><b>WdfPropertyStoreRootClassHardwareKey</b>
+### -field WdfPropertyStoreRootClassHardwareKey
 
 <dd>
 <p>The property store represents a device's <a href="wdf.using_the_registry_in_umdf_drivers">hardware key</a>.</p>
 </dd>
 
-### -field <a id="WdfPropertyStoreRootClassSoftwareKey"></a><a id="wdfpropertystorerootclasssoftwarekey"></a><a id="WDFPROPERTYSTOREROOTCLASSSOFTWAREKEY"></a><b>WdfPropertyStoreRootClassSoftwareKey</b>
+### -field WdfPropertyStoreRootClassSoftwareKey
 
 <dd>
 <p>The property store represents a driver's <a href="wdf.using_the_registry_in_umdf_drivers">software key</a>.</p>
 </dd>
 
-### -field <a id="WdfPropertyStoreRootClassDeviceInterfaceKey"></a><a id="wdfpropertystorerootclassdeviceinterfacekey"></a><a id="WDFPROPERTYSTOREROOTCLASSDEVICEINTERFACEKEY"></a><b>WdfPropertyStoreRootClassDeviceInterfaceKey</b>
+### -field WdfPropertyStoreRootClassDeviceInterfaceKey
 
 <dd>
 <p>The property store represents the key for an instance of a <a href="wdf.using_the_registry_in_umdf_drivers">device interface class</a>.</p>
 </dd>
 
-### -field <a id="WdfPropertyStoreRootClassLegacyHardwareKey"></a><a id="wdfpropertystorerootclasslegacyhardwarekey"></a><a id="WDFPROPERTYSTOREROOTCLASSLEGACYHARDWAREKEY"></a><b>WdfPropertyStoreRootClassLegacyHardwareKey</b>
+### -field WdfPropertyStoreRootClassLegacyHardwareKey
 
 <dd>
 <p>The property store represents the <a href="wdf.using_the_registry_in_umdf_drivers">DEVICEMAP key</a>, which is used by only a few older drivers. </p>
@@ -125,4 +125,4 @@ typedef enum _WDF_PROPERTY_STORE_ROOT_CLASS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PROPERTY_STORE_ROOT_CLASS enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PROPERTY_STORE_ROOT_CLASS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

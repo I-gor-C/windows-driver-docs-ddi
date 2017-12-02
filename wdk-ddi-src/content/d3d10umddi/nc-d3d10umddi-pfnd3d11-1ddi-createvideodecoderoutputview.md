@@ -60,7 +60,7 @@ HRESULT APIENTRY* CreateVideoDecoderOutputView(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).
@@ -68,19 +68,19 @@ HRESULT APIENTRY* CreateVideoDecoderOutputView(
 </p>
 </dd>
 
-### -param <i>pCreateData</i> [in]
+### -param pCreateData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-createvideodecoderoutputview.md">D3D11_1DDIARG_CREATEVIDEODECODEROUTPUTVIEW</a> structure. This structure specifies the attributes of the video decoder output view to be created.</p>
 </dd>
 
-### -param <i>hView</i> [in]
+### -param hView [in]
 
 <dd>
 <p>A handle to the driver's private data for the video decoder output view. For more information, see the Remarks section.</p>
 </dd>
 
-### -param <i>hRTView</i> [in]
+### -param hRTView [in]
 
 <dd>
 <p>A handle to the video decoder output view that the driver should use when it calls back into the Direct3D runtime.</p>

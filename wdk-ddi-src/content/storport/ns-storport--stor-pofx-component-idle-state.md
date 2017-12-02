@@ -59,31 +59,31 @@ typedef struct _STOR_POFX_COMPONENT_IDLE_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure. Set this member to <b>STOR_POFX_COMPONENT_IDLE_STATE_VERSION_V1</b>.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure. Set this value to <b>STOR_POFX_COMPONENT_IDLE_STATE_SIZE</b>.</p>
 </dd>
 
-### -field <b>TransitionLatency</b>
+### -field TransitionLatency
 
 <dd>
 <p>The transition latency. This latency is the amount of time, in 100-nanosecond units, that the component requires to return from this F-state to the F0 state. For a <b>STOR_POFX_COMPONENT_IDLE_STATE</b> structure that specifies the attributes of the F0 state, set this member to zero. Set this member to STOR_PO_FX_UNKNOWN_TIME to indicate that the power management framework (PoFx) should ignore (treat as negligible) the component's transition latency from this F-state when PoFx evaluates which power state to switch to when the component is idle.</p>
 </dd>
 
-### -field <b>ResidencyRequirement</b>
+### -field ResidencyRequirement
 
 <dd>
 <p>The residency requirement. The residency requirement is the minimum amount of time, in 100-nanosecond units, that the component must spend in this F-state to make a transition to this F-state worthwhile. PoFx uses this member value as a hint to avoid switching a component to an F-state unless the component is likely to remain in this state for at least the amount of time specified by <b>ResidencyRequirement</b>. For a STOR_PO_FX_COMPONENT_IDLE_STATE structure that describes the attributes of the F0 state, set this member to zero. Set this member to STOR_PO_FX_UNKNOWN_TIME to indicate that PoFx should ignore (treat as negligible) the component's residency requirement for this F-state when PoFx evaluates which power state to switch to when the component is idle.</p>
 </dd>
 
-### -field <b>NominalPower</b>
+### -field NominalPower
 
 <dd>
 <p>The power, in microwatts, that the component consumes in this F-state. Set this member to STOR_PO_FX_UNKNOWN_POWER to indicate that PoFx should ignore (treat as negligible) the component's internal power consumption in this F-state when PoFx evaluates which power state to switch to when the component is idle. </p>

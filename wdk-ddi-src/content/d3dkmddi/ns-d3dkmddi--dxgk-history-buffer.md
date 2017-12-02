@@ -55,13 +55,13 @@ typedef struct _DXGK_HISTORY_BUFFER {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>A pointer to  a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-history-buffer-header.md">DXGK_HISTORY_BUFFER_HEADER</a> structure that contains history buffer header info.</p>
 </dd>
 
-### -field <b>DriverPrivateData</b>
+### -field DriverPrivateData
 
 <dd>
 <p>An array that marks the beginning of the optional driver data and timestamp entries. See Remarks for more info.</p>

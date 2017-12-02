@@ -60,26 +60,26 @@ VOID APIENTRY SetViewports(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>NumViewports</i> [in]
+### -param NumViewports [in]
 
 <dd>
 <p> The total number of viewports that the <i>pViewports</i> parameter specifies. </p>
 </dd>
 
-### -param <i>ClearViewports</i> [in]
+### -param ClearViewports [in]
 
 <dd>
 <p> The number of viewports after the number of viewports that <i>NumViewports </i>specifies to be set to <b>NULL</b>. This number represents the difference between the previous number of viewports (that is, when the Microsoft Direct3D runtime previously called <i>SetViewports</i>) and the new number of viewports. </p>
 <p>Note that the number that <i>ClearViewports</i> specifies is only an optimization aid because the user-mode display driver could calculate this number. </p>
 </dd>
 
-### -param <i>pViewports</i> [in]
+### -param pViewports [in]
 
 <dd>
 <p> An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-viewport.md">D3D10_DDI_VIEWPORT</a> structures for the viewports to set. </p>

@@ -56,19 +56,19 @@ HRESULT Seek(
 ## -parameters
 <dl>
 
-### -param <i>dlibMove</i> [in]
+### -param dlibMove [in]
 
 <dd>
 <p>The displacement that is added to the location that <i>dwOrigin</i> specifies.</p>
 </dd>
 
-### -param <i>dwOrigin</i> [in]
+### -param dwOrigin [in]
 
 <dd>
 <p>The origin for the displacement that <i>dlibMove</i> specifies. The origin can be the beginning of the file (STREAM_SEEK_SET), the current seek pointer (STREAM_SEEK_CUR), or the end of the file (STREAM_SEEK_END). </p>
 </dd>
 
-### -param <i>plibNewPosition</i> [out]
+### -param plibNewPosition [out]
 
 <dd>
 <p>A pointer to the location where <code>Seek</code> writes the value of the new seek pointer from the beginning of the stream. </p>

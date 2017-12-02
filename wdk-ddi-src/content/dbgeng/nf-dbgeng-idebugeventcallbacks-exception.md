@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbacks_exception.htm
 old-project: debugger
 ms.assetid: 93f915ab-1f9e-453c-b76e-8260eecd7298
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugEventCallbacks, Exception, IDebugEventCallbacks::Exception
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ HRESULT Exception(
 ## -parameters
 <dl>
 
-### -param <i>Exception</i> [in]
+### -param Exception [in]
 
 <dd>
 <p>Specifies the nature of the exception.  EXCEPTION_RECORD64 is defined in winnt.h.</p>
 </dd>
 
-### -param <i>FirstChance</i> [in]
+### -param FirstChance [in]
 
 <dd>
 <p>Specifies whether this exception has been previously encountered.  A nonzero value means that this is the first time the exception has been encountered ("first chance").  A zero value means that the exception has already been offered to all possible handlers, and each one declined to handle it ("second chance").</p>
@@ -69,7 +69,7 @@ HRESULT Exception(
 </dl>
 
 ## -returns
-<p>This method returns a <a href="debugger.debug_status_xxx">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
+<p>This method returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541651">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
 
 ## -remarks
 <p>This method is only called by the engine if the DEBUG_EVENT_EXCEPTION flag is set in the mask returned by <a href="debugger.idebugeventcallbacks_getinterestmask">IDebugEventCallbacks::GetInterestMask</a>.</p>

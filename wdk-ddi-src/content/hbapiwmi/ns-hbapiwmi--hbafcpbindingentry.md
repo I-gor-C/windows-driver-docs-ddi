@@ -56,7 +56,7 @@ typedef struct _HBAFCPBindingEntry {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Contains a binding type that indicates how the target is specified in the binding. This member can have any of the following values:  </p>
@@ -112,13 +112,13 @@ typedef struct _HBAFCPBindingEntry {
 <p>For a more detailed description of the values that this member can have, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
-### -field <b>FCPId</b>
+### -field FCPId
 
 <dd>
 <p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpid.md">HBAFCPID</a> that contains the FCP identifier for the logical unit and information about the port to be queried for information about the device.</p>
 </dd>
 
-### -field <b>ScsiId</b>
+### -field ScsiId
 
 <dd>
 <p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbascsiid.md">HBAScsiID</a> that contains the information that uniquely identifies a logical unit for the operating system. </p>

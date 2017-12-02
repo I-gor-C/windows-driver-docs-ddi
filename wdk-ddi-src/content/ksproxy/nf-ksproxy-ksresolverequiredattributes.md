@@ -55,13 +55,13 @@ HRESULT KsResolveRequiredAttributes(
 ## -parameters
 <dl>
 
-### -param <i>DataRange</i> [in]
+### -param DataRange [in]
 
 <dd>
 <p>Pointer to a <a href="stream.ksdatarange">KSDATARANGE</a> structure that possibly has an attached attribute list. <b>KsResolveRequiredAttributes</b> searches the data range's attribute list for the attributes at <i>Attributes</i>. An attribute list attached to a data range follows that data range.</p>
 </dd>
 
-### -param <i>Attributes</i> [in, optional]
+### -param Attributes [in, optional]
 
 <dd>
 <p>Pointer to a buffer that contains a <a href="stream.ksmultiple_item">KSMULTIPLE_ITEM</a> structure, followed by a sequence of KSATTRIBUTE structures that describe attributes. The KSMULTIPLE_ITEM structure is a header that describes the size of the buffer and the number of entries in the list that follows the header. If this pointer is <b>NULL</b>, then <b>KsResolveRequiredAttributes</b> only succeeds if <i>DataRange</i> does not have an attached attribute list.</p>

@@ -58,25 +58,25 @@ NTSTATUS WmiSystemControl(
 ## -parameters
 <dl>
 
-### -param <i>WmiLibInfo</i> [in]
+### -param WmiLibInfo [in]
 
 <dd>
 <p>A pointer to a <a href="..\wmilib\ns-wmilib--wmilib-context.md">WMILIB_CONTEXT</a> structure that contains registration information for a driver's data blocks and event blocks and defines entry points for the driver's WMI library callback routines. </p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>. </p>
 </dd>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
-<p>A pointer to the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a>.</p>
+<p>A pointer to the <a href="..\wdm\ns-wdm--irp.md">IRP</a>.</p>
 </dd>
 
-### -param <i>IrpDisposition</i> [out]
+### -param IrpDisposition [out]
 
 <dd>
 <p>
@@ -85,25 +85,25 @@ NTSTATUS WmiSystemControl(
 <p></p>
 <dl>
 
-### -param <a id="IrpProcessed"></a><a id="irpprocessed"></a><a id="IRPPROCESSED"></a><b>IrpProcessed</b>
+### -param IrpProcessed
 
 <dd>
 <p>The IRP was processed and possibly completed. If the driver's <i>DpWmi</i>Xxx routine called by <b>WmiSystemControl</b> did not complete the IRP, the driver must call <a href="..\wmilib\nf-wmilib-wmicompleterequest.md">WmiCompleteRequest</a> to complete the IRP after <b>WmiSystemControl</b> returns.</p>
 </dd>
 
-### -param <a id="IrpNotCompleted"></a><a id="irpnotcompleted"></a><a id="IRPNOTCOMPLETED"></a><b>IrpNotCompleted</b>
+### -param IrpNotCompleted
 
 <dd>
 <p>The IRP was processed but not completed, either because WMI detected an error and set up the IRP with an appropriate error code, or processed an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a> request. The driver must complete the IRP by calling <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>.</p>
 </dd>
 
-### -param <a id="IrpNotWmi"></a><a id="irpnotwmi"></a><a id="IRPNOTWMI"></a><b>IrpNotWmi</b>
+### -param IrpNotWmi
 
 <dd>
 <p>The IRP is not a WMI request (that is, WMI does not recognize the IRP's minor code). If the driver handles <a href="https://msdn.microsoft.com/library/windows/hardware/ff550813">IRP_MJ_SYSTEM_CONTROL</a> requests with this <b>IRP_MN_<i>XXX</i></b>, it should handle the IRP; otherwise, the driver should forward the IRP to the next lower driver. If the driver is the lowest-level driver, then it must complete the IRP.</p>
 </dd>
 
-### -param <a id="IrpForward"></a><a id="irpforward"></a><a id="IRPFORWARD"></a><b>IrpForward</b>
+### -param IrpForward
 
 <dd>
 <p>The IRP is targeted to another device object (that is, the device object pointer at <b>Parameters.WMI.ProviderId</b> in the IRP does not match the pointer passed by the driver in its call to <a href="..\wdm\nf-wdm-iowmiregistrationcontrol.md">IoWMIRegistrationControl</a>). The driver must forward the IRP to the next lower driver. If the driver is the lowest-level driver, then it must complete the IRP.</p>

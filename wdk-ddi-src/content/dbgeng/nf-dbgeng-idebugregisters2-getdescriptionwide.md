@@ -7,7 +7,7 @@ old-location: debugger\getdescriptionwide.htm
 old-project: debugger
 ms.assetid: e599d960-aefb-4b68-8149-7e93150d90d5
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugRegisters2, GetDescriptionWide, IDebugRegisters2::GetDescriptionWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ HRESULT GetDescriptionWide(
 ## -parameters
 <dl>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>Specifies the index of the register for which the description is requested.</p>
 </dd>
 
-### -param <i>NameBuffer</i> [out, optional]
+### -param NameBuffer [out, optional]
 
 <dd>
 <p>Specifies the buffer in which to store the name of the register.  If <i>NameBuffer</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>NameBufferSize</i> [in]
+### -param NameBufferSize [in]
 
 <dd>
 <p>Specifies the size, in characters, of the buffer that  <i>NameBuffer</i> specifies.</p>
 </dd>
 
-### -param <i>NameSize</i> [out, optional]
+### -param NameSize [out, optional]
 
 <dd>
 <p>Receives the size, in characters, of the register's name in <i>NameBuffer</i> buffer.  If <i>NameSize</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>Desc</i> [out, optional]
+### -param Desc [out, optional]
 
 <dd>
 <p>Receives the description of the register.  See <a href="..\dbgeng\ns-dbgeng--debug-register-description.md">DEBUG_REGISTER_DESCRIPTION</a> for more details.</p>
@@ -90,7 +90,7 @@ HRESULT GetDescriptionWide(
 </dl>
 
 ## -returns
-<p>This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="debugger.hresult_values">HRESULT Values</a>.</p><dl>
+<p>This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>S_FALSE</b></dt>

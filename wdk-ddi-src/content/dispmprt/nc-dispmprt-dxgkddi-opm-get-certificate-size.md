@@ -59,19 +59,19 @@ NTSTATUS DxgkDdiOPMGetCertificateSize(
 ## -parameters
 <dl>
 
-### -param <i>MiniportDeviceContext</i> [in]
+### -param MiniportDeviceContext [in]
 
 <dd>
 <p>A handle to a context block that is associated with a display adapter. Previously, the display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function provided this handle to the DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>CertificateType</i> [in]
+### -param CertificateType [in]
 
 <dd>
 <p>A <a href="..\d3dkmdt\ne-d3dkmdt--dxgkmdt-certificate-type.md">DXGKMDT_CERTIFICATE_TYPE</a>-typed value that identifies the type of certificate whose size <i> DxgkDdiOPMGetCertificateSize</i>  returns.</p>
 </dd>
 
-### -param <i>CertificateSize</i> [out]
+### -param CertificateSize [out]
 
 <dd>
 <p>A pointer to a variable that receives the size, in bytes, of the certificate whose type is identified by the value in the <i>CertificateType</i> parameter.</p>

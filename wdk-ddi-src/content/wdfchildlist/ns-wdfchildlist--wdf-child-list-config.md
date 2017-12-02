@@ -7,7 +7,7 @@ old-location: wdf\wdf_child_list_config.htm
 old-project: wdf
 ms.assetid: d0a392f4-c7c3-4b61-960c-b94f9605f5a4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_CHILD_LIST_CONFIG, WDF_CHILD_LIST_CONFIG, *PWDF_CHILD_LIST_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,79 +68,79 @@ typedef struct _WDF_CHILD_LIST_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>IdentificationDescriptionSize</b>
+### -field IdentificationDescriptionSize
 
 <dd>
 <p>The size, in bytes, of each child's <a href="wdf.dynamic_enumeration#dynamic_child_descriptions#dynamic_child_descriptions">identification description</a>. For more information, see <a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-identification-description-header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>.</p>
 </dd>
 
-### -field <b>AddressDescriptionSize</b>
+### -field AddressDescriptionSize
 
 <dd>
 <p>The size, in bytes, of each child's <a href="wdf.dynamic_enumeration#dynamic_child_descriptions#dynamic_child_descriptions">address description</a>. For more information, see <a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-address-description-header.md">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a>.</p>
 </dd>
 
-### -field <b>EvtChildListCreateDevice</b>
+### -field EvtChildListCreateDevice
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-create-device.md">EvtChildListCreateDevice</a> event callback function. This callback function is required.</p>
 </dd>
 
-### -field <b>EvtChildListScanForChildren</b>
+### -field EvtChildListScanForChildren
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-scan-for-children.md">EvtChildListScanForChildren</a> event callback function. This callback function is optional.</p>
 </dd>
 
-### -field <b>EvtChildListIdentificationDescriptionCopy</b>
+### -field EvtChildListIdentificationDescriptionCopy
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-identification-description-copy.md">EvtChildListIdentificationDescriptionCopy</a> event callback function. This callback function is optional.</p>
 </dd>
 
-### -field <b>EvtChildListIdentificationDescriptionDuplicate</b>
+### -field EvtChildListIdentificationDescriptionDuplicate
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-identification-description-duplicate.md">EvtChildListIdentificationDescriptionDuplicate</a> event callback function. This callback function is optional.</p>
 </dd>
 
-### -field <b>EvtChildListIdentificationDescriptionCleanup</b>
+### -field EvtChildListIdentificationDescriptionCleanup
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-identification-description-cleanup.md">EvtChildListIdentificationDescriptionCleanup</a> event callback function. This callback function is optional.</p>
 </dd>
 
-### -field <b>EvtChildListIdentificationDescriptionCompare</b>
+### -field EvtChildListIdentificationDescriptionCompare
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-identification-description-compare.md">EvtChildListIdentificationDescriptionCompare</a> event callback function. This callback function is optional.</p>
 </dd>
 
-### -field <b>EvtChildListAddressDescriptionCopy</b>
+### -field EvtChildListAddressDescriptionCopy
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-address-description-copy.md">EvtChildListAddressDescriptionCopy</a> event callback function. This callback function is optional.</p>
 </dd>
 
-### -field <b>EvtChildListAddressDescriptionDuplicate</b>
+### -field EvtChildListAddressDescriptionDuplicate
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-address-description-duplicate.md">EvtChildListAddressDescriptionDuplicate</a> event callback function. This callback function is optional.</p>
 </dd>
 
-### -field <b>EvtChildListAddressDescriptionCleanup</b>
+### -field EvtChildListAddressDescriptionCleanup
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-address-description-cleanup.md">EvtChildListAddressDescriptionCleanup</a> event callback function. This callback function is optional.</p>
 </dd>
 
-### -field <b>EvtChildListDeviceReenumerated</b>
+### -field EvtChildListDeviceReenumerated
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-device-reenumerated.md">EvtChildListDeviceReenumerated</a> event callback function. This callback function is optional.</p>
@@ -196,4 +196,4 @@ typedef struct _WDF_CHILD_LIST_CONFIG {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_CHILD_LIST_CONFIG structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_CHILD_LIST_CONFIG structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

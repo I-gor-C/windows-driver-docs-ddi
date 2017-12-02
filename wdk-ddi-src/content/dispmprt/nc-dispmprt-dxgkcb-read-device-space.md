@@ -62,38 +62,38 @@ NTSTATUS DxgkCbReadDeviceSpace(
 ## -parameters
 <dl>
 
-### -param <i>DeviceHandle</i> [in]
+### -param DeviceHandle [in]
 
 <dd>
 <p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
 </dd>
 
-### -param <i>DataType</i> [in]
+### -param DataType [in]
 
 <dd>
 <p>The type of read transaction to be performed. This parameter must be one of the following values, which are defined in <i>Dispmprt.h</i>.</p>
 <p></p>
 <dl>
 
-### -param <a id="DXGK_WHICHSPACE_BRIDGE"></a><a id="dxgk_whichspace_bridge"></a>DXGK_WHICHSPACE_BRIDGE
+### -param DXGK_WHICHSPACE_BRIDGE
 
 <dd>
 <p>Read from the PCI Express (PCIe) root port's configuration space.</p>
 </dd>
 
-### -param <a id="DXGK_WHICHSPACE_CONFIG"></a><a id="dxgk_whichspace_config"></a>DXGK_WHICHSPACE_CONFIG
+### -param DXGK_WHICHSPACE_CONFIG
 
 <dd>
 <p>Read from the display adapter's configuration space.</p>
 </dd>
 
-### -param <a id="DXGK_WHICHSPACE_MCH"></a><a id="dxgk_whichspace_mch"></a>DXGK_WHICHSPACE_MCH
+### -param DXGK_WHICHSPACE_MCH
 
 <dd>
 <p>Read from the configuration space of a memory controller hub that is a peer to the adapter's parent bus.</p>
 </dd>
 
-### -param <a id="DXGK_WHICHSPACE_ROM"></a><a id="dxgk_whichspace_rom"></a>DXGK_WHICHSPACE_ROM
+### -param DXGK_WHICHSPACE_ROM
 
 <dd>
 <p>Read from the display adapter's expansion ROM.</p>
@@ -101,25 +101,25 @@ NTSTATUS DxgkCbReadDeviceSpace(
 </dl>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives the data read from the configuration space or ROM.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>The offset, into the configuration space or the expansion ROM, at which the read transaction begins.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The number of bytes to be read.</p>
 </dd>
 
-### -param <i>BytesRead</i> [out]
+### -param BytesRead [out]
 
 <dd>
 <p>A pointer to a ULONG-typed variable that receives the number of bytes actually read.</p>

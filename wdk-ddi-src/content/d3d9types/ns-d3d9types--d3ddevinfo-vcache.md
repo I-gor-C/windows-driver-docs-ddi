@@ -60,7 +60,7 @@ typedef struct _D3DDEVINFO_VCACHE {
 ## -struct-fields
 <dl>
 
-### -field <b>Pattern</b>
+### -field Pattern
 
 <dd>
 <p>Specifies the bit pattern. The driver must specify the bit pattern as the CACH four-character code (FOURCC) value. The driver can use the MAKEFOURCC macro as follows to specify the FOURCC value as CACH:</p>
@@ -76,7 +76,7 @@ typedef struct _D3DDEVINFO_VCACHE {
 </table></span></div>
 </dd>
 
-### -field <b>OptMethod</b>
+### -field OptMethod
 
 <dd>
 <p>Specifies the method of mesh optimization. The driver can use one of the following values to specify the mesh optimization that it uses: </p>
@@ -105,13 +105,13 @@ typedef struct _D3DDEVINFO_VCACHE {
 <p> </p>
 </dd>
 
-### -field <b>CacheSize</b>
+### -field CacheSize
 
 <dd>
 <p>Specifies the effective size, in entries, for which the driver optimizes the vertex cache. The actual cache size is not required to be the size specified in <b>CacheSize</b> because in most cases the actual cache size turns out to be larger. The driver only specifies an optimized size in <b>CacheSize</b> if it also specifies D3DXMESHOPT_VCACHE in the <b>OptMethod</b> member.</p>
 </dd>
 
-### -field <b>MagicNumber</b>
+### -field MagicNumber
 
 <dd>
 <p>Specifies the number that should be used as part of a trial-and-error procedure when determining when to restart the strips list. This number can be set from 1 to the value in the <b>CacheSize</b> member. Typically, the best values are near <b>CacheSize</b>/2. </p>

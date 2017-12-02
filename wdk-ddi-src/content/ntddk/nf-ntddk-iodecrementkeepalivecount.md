@@ -55,13 +55,13 @@ NTSTATUS IoDecrementKeepAliveCount(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in, out]
+### -param FileObject [in, out]
 
 <dd>
 <p>The file object handle to the device.</p>
 </dd>
 
-### -param <i>Process</i> [in, out]
+### -param Process [in, out]
 
 <dd>
 <p>The process associated with the device.</p>

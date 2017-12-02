@@ -59,37 +59,37 @@ typedef struct _STORAGE_CRYPTO_CAPABILITY {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>CryptoCapabilityIndex</b>
+### -field CryptoCapabilityIndex
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>AlgorithmId</b>
+### -field AlgorithmId
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>KeySize</b>
+### -field KeySize
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>DataUnitSizeBitmask</b>
+### -field DataUnitSizeBitmask
 
 <dd>
 <p>Reserved for system use.</p>

@@ -58,25 +58,25 @@ typedef struct _USBFN_INTERFACE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>InterfaceNumber</b>
+### -field InterfaceNumber
 
 <dd>
 <p>The index number of the interface.</p>
 </dd>
 
-### -field <b>Speed</b>
+### -field Speed
 
 <dd>
-<p>The operating bus speed indicated by <a href="buses.usbfn_bus_speed">USBFN_BUS_SPEED</a>-typed flags.</p>
+<p>The operating bus speed indicated by <a href="..\usbfnbase\ne-usbfnbase--usbfn-bus-speed.md">USBFN_BUS_SPEED</a>-typed flags.</p>
 </dd>
 
-### -field <b> Size</b>
+### -field  Size
 
 <dd>
 <p>Specifies the total length, in bytes, of all data for the interface. </p>
 </dd>
 
-### -field <b> InterfaceDescriptorSet</b>
+### -field  InterfaceDescriptorSet
 
 <dd>
 <p>Pointer to the first element in the array of that contains the interface descriptor set.  </p>
@@ -103,7 +103,7 @@ typedef struct _USBFN_INTERFACE_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbfn_bus_speed">USBFN_BUS_SPEED</a>
+<a href="..\usbfnbase\ne-usbfnbase--usbfn-bus-speed.md">USBFN_BUS_SPEED</a>
 </dt>
 </dl>
 <p> </p>

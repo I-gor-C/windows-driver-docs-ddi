@@ -60,19 +60,19 @@ typedef enum _USB_HUB_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UsbRootHub"></a><a id="usbroothub"></a><a id="USBROOTHUB"></a><b>UsbRootHub</b>
+### -field UsbRootHub
 
 <dd>
 <p>Indicates a root hub.</p>
 </dd>
 
-### -field <a id="Usb20Hub"></a><a id="usb20hub"></a><a id="USB20HUB"></a><b>Usb20Hub</b>
+### -field Usb20Hub
 
 <dd>
 <p>Indicates that the retrieved hub descriptor is defined in USB 2.0 and 1.1 specifications.</p>
 </dd>
 
-### -field <a id="Usb30Hub"></a><a id="usb30hub"></a><a id="USB30HUB"></a><b>Usb30Hub</b>
+### -field Usb30Hub
 
 <dd>
 <p>Indicates that the retrieved hub descriptor is defined in USB 3.0 specification.</p>

@@ -57,25 +57,25 @@ typedef enum D3D10_DDI_RESOURCE_USAGE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D10_DDI_USAGE_DEFAULT"></a><a id="d3d10_ddi_usage_default"></a><b>D3D10_DDI_USAGE_DEFAULT</b>
+### -field D3D10_DDI_USAGE_DEFAULT
 
 <dd>
 <p>The resource is used at the highest level. An application cannot map to default resources. The resources can be bound to the graphics pipeline and used as copy destinations and sources. The Microsoft Direct3D runtime can call only the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourceupdatesubresourceup.md">ResourceUpdateSubresourceUP</a> function to update the contents directly with the CPU.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_USAGE_IMMUTABLE"></a><a id="d3d10_ddi_usage_immutable"></a><b>D3D10_DDI_USAGE_IMMUTABLE</b>
+### -field D3D10_DDI_USAGE_IMMUTABLE
 
 <dd>
 <p>The resource is immutable and cannot be mapped or copied to. The resource can be bound to the pipeline and copied from. The Direct3D runtime cannot call <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourceupdatesubresourceup.md">ResourceUpdateSubresourceUP</a> to update the contents; therefore, the contents of the resource are provided at creation time.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_USAGE_DYNAMIC"></a><a id="d3d10_ddi_usage_dynamic"></a><b>D3D10_DDI_USAGE_DYNAMIC</b>
+### -field D3D10_DDI_USAGE_DYNAMIC
 
 <dd>
 <p>The resource is dynamic and should be resident in non-local video memory. The resource can also be mapped. However, when the resource is mapped, the CPU can only write (and not read) to the resource. Therefore, when mapped, the Direct3D runtime must use the D3D10_DDI_MAP_WRITE_DISCARD or D3D10_DDI_MAP_WRITE_NOOVERWRITE access level in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourcemap.md">ResourceMap</a> function. Because this resource can be mapped, the runtime cannot call <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourceupdatesubresourceup.md">ResourceUpdateSubresourceUP</a>. </p>
 </dd>
 
-### -field <a id="D3D10_DDI_USAGE_STAGING"></a><a id="d3d10_ddi_usage_staging"></a><b>D3D10_DDI_USAGE_STAGING</b>
+### -field D3D10_DDI_USAGE_STAGING
 
 <dd>
 <p>The resource is a staging resource, which the user-mode display driver should allocate as system memory. The driver allocates system memory to ensure the proper alignment and pitch to enable DMA access to such a region of memory. Staging can be mapped by the application but cannot be bound to the 3-D graphics pipeline. However, staging resources are frequently used to copy between other non-mappable resources. Because this resource can be mapped, the runtime cannot call <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourceupdatesubresourceup.md">ResourceUpdateSubresourceUP</a>. </p>

@@ -7,7 +7,7 @@ old-location: image\iwialog_hresult.htm
 old-project: image
 ms.assetid: 74d9b770-c2b6-483d-a6d7-070ac2a55133
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IWiaLog, hResult, IWiaLog::hResult
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ HRESULT hResult(
 ## -parameters
 <dl>
 
-### -param <i>hResult</i> [in]
+### -param hResult [in]
 
 <dd>
 <p>Specifies the HRESULT value to translate into a string.</p>

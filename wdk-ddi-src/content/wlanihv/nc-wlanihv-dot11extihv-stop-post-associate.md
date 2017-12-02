@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvstoppostassociate.htm
 old-project: netvista
 ms.assetid: bd924049-3932-4e85-908e-c3fb488b3a8c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ DWORD APIENTRY Dot11ExtIhvStopPostAssociate(
 ## -parameters
 <dl>
 
-### -param <i>hIhvExtAdapter</i> [in, optional]
+### -param hIhvExtAdapter [in, optional]
 
 <dd>
 <p>The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) adapter. This
@@ -67,7 +67,7 @@ DWORD APIENTRY Dot11ExtIhvStopPostAssociate(
      Handler function.</p>
 </dd>
 
-### -param <i>pPeer</i> [in]
+### -param pPeer [in]
 
 <dd>
 <p>A pointer to a 
@@ -80,7 +80,7 @@ DWORD APIENTRY Dot11ExtIhvStopPostAssociate(
 <div> </div>
 </dd>
 
-### -param <i>dot11AssocStatus</i> [in]
+### -param dot11AssocStatus [in]
 
 <dd>
 <p>A 
@@ -104,7 +104,7 @@ DWORD APIENTRY Dot11ExtIhvStopPostAssociate(
       <a href="netvista.ndis_status_dot11_disassociation">
       NDIS_STATUS_DOT11_DISASSOCIATION</a> indication. For more information about the disassociation
       operation, see 
-      <a href="NULL">Disassociation Operations</a>.</p>
+      <a href="netvista.disassociation_operations">Disassociation Operations</a>.</p>
 
 <p>The WLAN adapter is disabled or removed. In this situation, the operating system calls the 
       <i>Dot11ExtIhvStopPostAssociate</i> function before it calls the 
@@ -119,7 +119,7 @@ DWORD APIENTRY Dot11ExtIhvStopPostAssociate(
     Dot11ExtPostAssociateCompletion</a>.</p>
 
 <p>For more information about the post-association operation, see 
-    <a href="NULL">Post-Association Operations</a>.</p>
+    <a href="netvista.post_association_operations">Post-Association Operations</a>.</p>
 
 ## -requirements
 <table>
@@ -179,4 +179,4 @@ DWORD APIENTRY Dot11ExtIhvStopPostAssociate(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_STOP_POST_ASSOCIATE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_STOP_POST_ASSOCIATE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

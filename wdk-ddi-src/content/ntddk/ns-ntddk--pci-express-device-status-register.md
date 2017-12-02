@@ -63,49 +63,49 @@ typedef union _PCI_EXPRESS_DEVICE_STATUS_REGISTER {
 ## -struct-fields
 <dl>
 
-### -field <b>CorrectableErrorDetected</b>
+### -field CorrectableErrorDetected
 
 <dd>
 <p>A single bit that indicates that a correctable error has been detected.</p>
 </dd>
 
-### -field <b>NonFatalErrorDetected</b>
+### -field NonFatalErrorDetected
 
 <dd>
 <p>A single bit that indicates that a non-fatal uncorrectable error has been detected.</p>
 </dd>
 
-### -field <b>FatalErrorDetected</b>
+### -field FatalErrorDetected
 
 <dd>
 <p>A single bit that indicates that a non-fatal uncorrectable error has been detected.</p>
 </dd>
 
-### -field <b>UnsupportedRequestDetected</b>
+### -field UnsupportedRequestDetected
 
 <dd>
 <p>A single bit that indicates that an unsupported request has been detected.</p>
 </dd>
 
-### -field <b>AuxPowerDetected</b>
+### -field AuxPowerDetected
 
 <dd>
 <p>A single bit that indicates that AUX power has been detected.</p>
 </dd>
 
-### -field <b>TransactionsPending</b>
+### -field TransactionsPending
 
 <dd>
 <p>A single bit that indicates that the device has issued non-posted requests that have not been completed. The device clears this bit when all outstanding non-posted requests have completed or have been terminated by the completion timeout mechanism.</p>
 </dd>
 
-### -field <b>Rsvd</b>
+### -field Rsvd
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>A USHORT representation of the contents of the PCI_EXPRESS_DEVICE_STATUS_REGISTER structure.</p>

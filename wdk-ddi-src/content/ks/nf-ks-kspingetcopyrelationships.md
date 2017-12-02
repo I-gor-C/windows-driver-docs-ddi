@@ -56,19 +56,19 @@ void KsPinGetCopyRelationships(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure from which you want to acquire copy information.</p>
 </dd>
 
-### -param <i>CopySource</i> [out]
+### -param CopySource [out]
 
 <dd>
 <p>A pointer to a pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure that is the copy source for <i>Pin</i>. If <i>Pin</i> is the copy source, AVStream sets this parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>DelegateBranch</i> [out]
+### -param DelegateBranch [out]
 
 <dd>
 <p>A pointer to a pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure that is the pin from which <i>Pin</i> receives delegated frames. If <i>Pin</i> is the delegator, AVStream sets this parameter to <b>NULL</b>.</p>
@@ -82,13 +82,13 @@ void KsPinGetCopyRelationships(
 <p>
 <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-centric</a> filters receive similar <i>CopySource</i> and <i>DelegateBranch</i> information when AVStream calls the minidriver's <a href="stream.avstrminifilterprocess">AVStrMiniFilterProcess</a> function with an array of <a href="..\ks\ns-ks--ksprocesspin-indexentry.md">KSPROCESSPIN_INDEXENTRY</a> structures.</p>
 
-<p>The only difference is that <b>KsPinGetCopyRelationships</b> returns pointers to PKSPIN rather than pointers to PKSPROCESSPIN. For more information about the <i>CopySource</i> and <i>DelegateBranch</i> parameters, see <a href="NULL">AVStream Splitters</a>.</p>
+<p>The only difference is that <b>KsPinGetCopyRelationships</b> returns pointers to PKSPIN rather than pointers to PKSPROCESSPIN. For more information about the <i>CopySource</i> and <i>DelegateBranch</i> parameters, see <a href="https://msdn.microsoft.com/c2cfc183-0f4c-4104-a580-234e0483eee4">AVStream Splitters</a>.</p>
 
 <p>All pins operate independently in the context of a pin-centric filter. As a result, a minidriver that calls <b>KsPinGetCopyRelationships</b> is responsible for ensuring that the appropriate synchronization is performed before call time.</p>
 
-<p>To guarantee safety when calling <b>KsPinGetCopyRelationships</b>, either obtain the control mutex (do not use this mechanism in a processing dispatch) or make sure that the pin does not transition below <b>KSSTATE_PAUSE</b> while calling or using the information obtained. For more information about mutexes, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>To guarantee safety when calling <b>KsPinGetCopyRelationships</b>, either obtain the control mutex (do not use this mechanism in a processing dispatch) or make sure that the pin does not transition below <b>KSSTATE_PAUSE</b> while calling or using the information obtained. For more information about mutexes, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
-<p>For more information, see <a href="NULL">Pin-Centric Processing</a> and <a href="NULL">Filter-Centric Processing</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/0b6a02c2-e672-4568-a890-491c721ec3a7">Pin-Centric Processing</a> and <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>.</p>
 
 ## -requirements
 <table>

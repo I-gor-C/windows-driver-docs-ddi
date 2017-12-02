@@ -7,7 +7,7 @@ old-location: ifsk\security_impersonation_level.htm
 old-project: ifsk
 ms.assetid: 6033b33f-74cd-4034-baff-a931b7add370
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef enum _SECURITY_IMPERSONATION_LEVEL {
 ## -enum-fields
 <dl>
 
-### -field <a id="SecurityAnonymous"></a><a id="securityanonymous"></a><a id="SECURITYANONYMOUS"></a><b>SecurityAnonymous</b>
+### -field SecurityAnonymous
 
 <dd>
 <p>The server process cannot obtain identification information about the client and it cannot impersonate the client. It is defined with no value given, and thus, by ANSI C rules, defaults to a value of zero. </p>
 </dd>
 
-### -field <a id="SecurityIdentification"></a><a id="securityidentification"></a><a id="SECURITYIDENTIFICATION"></a><b>SecurityIdentification</b>
+### -field SecurityIdentification
 
 <dd>
 <p>The server process can obtain information about the client, such as security identifiers and privileges, but it cannot impersonate the client. This is useful for servers that export their own objects -- for example, database products that export tables and views. Using the retrieved client-security information, the server can make access-validation decisions without being able to utilize other services using the client's security context. </p>
 </dd>
 
-### -field <a id="SecurityImpersonation"></a><a id="securityimpersonation"></a><a id="SECURITYIMPERSONATION"></a><b>SecurityImpersonation</b>
+### -field SecurityImpersonation
 
 <dd>
 <p>The server process can impersonate the client's security context on its local system. The server cannot impersonate the client on remote systems. </p>
 </dd>
 
-### -field <a id="SecurityDelegation"></a><a id="securitydelegation"></a><a id="SECURITYDELEGATION"></a><b>SecurityDelegation</b>
+### -field SecurityDelegation
 
 <dd>
 <p>The server process can impersonate the client's security context on remote systems. </p>
@@ -136,4 +136,4 @@ typedef enum _SECURITY_IMPERSONATION_LEVEL {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SECURITY_IMPERSONATION_LEVEL enumeration%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SECURITY_IMPERSONATION_LEVEL enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

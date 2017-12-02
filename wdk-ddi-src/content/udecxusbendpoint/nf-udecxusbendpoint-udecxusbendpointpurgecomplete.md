@@ -55,10 +55,10 @@ FORCEINLINE void UdecxUsbEndpointPurgeComplete(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbEndpoint</i> [in]
+### -param UdecxUsbEndpoint [in]
 
 <dd>
-<p>A handle to a UDE endpoint object. The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a>.</p>
+<p>A handle to a UDE endpoint object. The client driver retrieved this pointer in the previous call to <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>.</p>
 </dd>
 </dl>
 
@@ -127,7 +127,7 @@ FORCEINLINE void UdecxUsbEndpointPurgeComplete(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_udecx_usb_endpoint_purge">EVT_UDECX_USB_ENDPOINT_PURGE</a>
+<a href="..\udecxusbendpoint\nc-udecxusbendpoint-evt-udecx-usb-endpoint-purge.md">EVT_UDECX_USB_ENDPOINT_PURGE</a>
 </dt>
 <dt>
 <a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>

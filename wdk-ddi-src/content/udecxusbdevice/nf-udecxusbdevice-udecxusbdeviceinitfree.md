@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Releases the resources that were allocated by the <a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a> call. </p>
+<p>Releases the resources that were allocated by the <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a> call. </p>
 
 
 ## -syntax
@@ -55,10 +55,10 @@ void UdecxUsbDeviceInitFree(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbDeviceInit</i> [in, out]
+### -param UdecxUsbDeviceInit [in, out]
 
 <dd>
-<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>. </p>
+<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>. </p>
 </dd>
 </dl>
 

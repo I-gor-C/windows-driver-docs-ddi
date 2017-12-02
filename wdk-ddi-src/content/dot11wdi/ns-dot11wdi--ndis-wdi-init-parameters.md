@@ -7,7 +7,7 @@ old-location: netvista\ndis_wdi_init_parameters.htm
 old-project: netvista
 ms.assetid: 871D266C-55DF-4113-9714-92AB129303E5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS, *PNDIS_WDI_INIT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct _NDIS_WDI_INIT_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -73,7 +73,7 @@ typedef struct _NDIS_WDI_INIT_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_OBJECT_TYPE_WDI_INIT_PARAMETERS_REVISION_1"></a><a id="ndis_object_type_wdi_init_parameters_revision_1"></a>NDIS_OBJECT_TYPE_WDI_INIT_PARAMETERS_REVISION_1
+### -field NDIS_OBJECT_TYPE_WDI_INIT_PARAMETERS_REVISION_1
 
 <dd>
 <p>Set the 
@@ -82,14 +82,14 @@ typedef struct _NDIS_WDI_INIT_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>WdiVersion</b>
+### -field WdiVersion
 
 <dd>
 <p>The version of WDI used by the driver. Set this member to one of the following values:</p>
 <p></p>
 <dl>
 
-### -field <a id="WDI_VERSION_1_0"></a><a id="wdi_version_1_0"></a>WDI_VERSION_1_0
+### -field WDI_VERSION_1_0
 
 <dd>
 <p>WDI version 1.0</p>
@@ -97,25 +97,25 @@ typedef struct _NDIS_WDI_INIT_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>OpenAdapterCompleteHandler</b>
+### -field OpenAdapterCompleteHandler
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-open-adapter-complete.md">NdisWdiOpenAdapterComplete</a> callback function.</p>
 </dd>
 
-### -field <b>CloseAdapterCompleteHandler</b>
+### -field CloseAdapterCompleteHandler
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-close-adapter-complete.md">NdisWdiCloseAdapterComplete</a> callback function.</p>
 </dd>
 
-### -field <b>UeIdleNotificationConfirm</b>
+### -field UeIdleNotificationConfirm
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-idle-notification-confirm.md">NdisWdiIdleNotificationConfirm</a> callback function.</p>
 </dd>
 
-### -field <b>UeIdleNotificationComplete</b>
+### -field UeIdleNotificationComplete
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-idle-notification-complete.md">NdisWdiIdleNotificationComplete</a> callback function.</p>

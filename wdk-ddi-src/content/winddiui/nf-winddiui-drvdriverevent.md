@@ -58,7 +58,7 @@ BOOL DrvDriverEvent(
 ## -parameters
 <dl>
 
-### -param <i>dwDriverEvent</i> 
+### -param dwDriverEvent 
 
 <dd>
 <p>Caller-supplied bit flag indicating the event that has occurred. Valid flags are listed in the following table.</p>
@@ -87,7 +87,7 @@ BOOL DrvDriverEvent(
 <p> </p>
 </dd>
 
-### -param <i>dwLevel</i> 
+### -param dwLevel 
 
 <dd>
 <p>Caller-supplied value indicating the type of structure pointed to by the <i>pDriverInfo</i> parameter, as indicated in the following table.</p>
@@ -129,13 +129,13 @@ BOOL DrvDriverEvent(
 </dl>
 </dd>
 
-### -param <i>pDriverInfo</i> [in, optional]
+### -param pDriverInfo [in, optional]
 
 <dd>
 <p>Caller-supplied pointer to a structure whose type is identified by the <i>dwLevel</i> parameter. </p>
 </dd>
 
-### -param <i>lParam</i> 
+### -param lParam 
 
 <dd>
 <p>Caller-supplied flags. See the following Remarks section.</p>
@@ -148,7 +148,7 @@ BOOL DrvDriverEvent(
 ## -remarks
 <p>The optional <b>DrvDriverEvent</b> function is called by the spooler's <b>AddPrinterDriverEx</b> and <b>DeletePrinterDriverEx</b> functions, which are described in the Windows SDK documentation.</p>
 
-<p>The function's purpose is to allow a printer driver's <a href="NULL">printer interface DLL</a> to perform operations needed when the driver is installed or removed. A typical operation for this function to perform is to create or remove extra driver-specific files that are not specified as dependent files in a <a href="https://msdn.microsoft.com/33f1c836-0846-49d5-8ab5-baadf9e0678c">printer INF file</a>.</p>
+<p>The function's purpose is to allow a printer driver's <a href="https://msdn.microsoft.com/2a8cf38f-8e27-4e08-9c0f-5d1a4cd854ac">printer interface DLL</a> to perform operations needed when the driver is installed or removed. A typical operation for this function to perform is to create or remove extra driver-specific files that are not specified as dependent files in a <a href="https://msdn.microsoft.com/33f1c836-0846-49d5-8ab5-baadf9e0678c">printer INF file</a>.</p>
 
 <p>If <i>dwDriverEvent</i> is DRIVER_EVENT_DELETE, the <i>lparam</i> parameter contains the flags that were specified for the <b>DeletePrinterDriverEx</b> function's <i>dwDeleteFlag</i> parameter. The <i>lparam</i> parameter is not used if <i>dwDriverEvent</i> is DRIVER_EVENT_INITIALIZE.</p>
 

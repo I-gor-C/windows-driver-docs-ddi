@@ -58,31 +58,31 @@ NTSTATUS ChangerClassSendSrbSynchronous(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the functional device object of the target device. </p>
 </dd>
 
-### -param <i>Srb</i> [in]
+### -param Srb [in]
 
 <dd>
 <p>Pointer to a partially initialized SCSI request block (SRB) to be sent to the target device. </p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Specifies address of the buffer that <i>Srb-&gt;</i><b>DataBuffer</b> should point to. <b>ChangerClassSendSrbSynchronous</b> creates an MDL for this buffer and passes it to the target device driver in the SRB IRP.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies length, in bytes, of the buffer. </p>
 </dd>
 
-### -param <i>WriteToDevice</i> [in]
+### -param WriteToDevice [in]
 
 <dd>
 <p>Indicates a write operation when <b>TRUE</b> and read operation when <b>FALSE</b>. </p>

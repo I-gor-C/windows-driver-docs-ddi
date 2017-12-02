@@ -56,13 +56,13 @@ typedef struct _WINBIO_BIR_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size, in bytes, of a block in the BIR.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Specifies the offset, in bytes, of the block within the BIR.</p>

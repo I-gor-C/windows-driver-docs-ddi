@@ -59,25 +59,25 @@ typedef struct _GETVERSIONINPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>bVersion</b>
+### -field bVersion
 
 <dd>
 <p>Contains an integer that indicates the version number of the binary driver. </p>
 </dd>
 
-### -field <b>bRevision</b>
+### -field bRevision
 
 <dd>
 <p>Contains an integer that indicates the revision number of the binary driver. </p>
 </dd>
 
-### -field <b>bReserved</b>
+### -field bReserved
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>bIDEDeviceMap</b>
+### -field bIDEDeviceMap
 
 <dd>
 <p>Contains the bitmap. The following table explains the meaning of the bitmap:</p>
@@ -154,7 +154,7 @@ typedef struct _GETVERSIONINPARAMS {
 <p> </p>
 </dd>
 
-### -field <b>fCapabilities</b>
+### -field fCapabilities
 
 <dd>
 <p>Contains the bitmask of driver capabilities. </p>
@@ -191,7 +191,7 @@ typedef struct _GETVERSIONINPARAMS {
 <p> </p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Reserved. </p>

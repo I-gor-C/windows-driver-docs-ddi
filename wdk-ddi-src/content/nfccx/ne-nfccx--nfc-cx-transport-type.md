@@ -57,25 +57,25 @@ typedef enum _NFC_CX_TRANSPORT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="NFC_CX_TRANSPORT_I2C"></a><a id="nfc_cx_transport_i2c"></a><b>NFC_CX_TRANSPORT_I2C</b>
+### -field NFC_CX_TRANSPORT_I2C
 
 <dd>
 <p>Specifies an Inter-Integrated Circuit (I2C) bus.</p>
 </dd>
 
-### -field <a id="NFC_CX_TRANSPORT_SPI"></a><a id="nfc_cx_transport_spi"></a><b>NFC_CX_TRANSPORT_SPI</b>
+### -field NFC_CX_TRANSPORT_SPI
 
 <dd>
 <p>Specifies a Serial Peripheral Interface (SPI).</p>
 </dd>
 
-### -field <a id="NFC_CX_TRANSPORT_UART"></a><a id="nfc_cx_transport_uart"></a><b>NFC_CX_TRANSPORT_UART</b>
+### -field NFC_CX_TRANSPORT_UART
 
 <dd>
 <p>Specifies a Universal Asynchronous Receiver/Transmitter (UART).</p>
 </dd>
 
-### -field <a id="NFC_CX_TRANSPORT_CUSTOM"></a><a id="nfc_cx_transport_custom"></a><b>NFC_CX_TRANSPORT_CUSTOM</b>
+### -field NFC_CX_TRANSPORT_CUSTOM
 
 <dd>
 <p>Specifies a custom transport type.</p>

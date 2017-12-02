@@ -57,25 +57,25 @@ typedef struct _AUX_MODULE_EXTENDED_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>BasicInfo</b>
+### -field BasicInfo
 
 <dd>
 <p>An <a href="..\aux_klib\ns-aux-klib--aux-module-basic-info.md">AUX_MODULE_BASIC_INFO</a> structure.</p>
 </dd>
 
-### -field <b>ImageSize</b>
+### -field ImageSize
 
 <dd>
 <p>The size, in bytes, of the loaded image.</p>
 </dd>
 
-### -field <b>FileNameOffset</b>
+### -field FileNameOffset
 
 <dd>
 <p>The offset, in bytes, from the beginning of the full path name to the file name of the module's image file.</p>
 </dd>
 
-### -field <b>FullPathName</b>
+### -field FullPathName
 
 <dd>
 <p>The full path name of the module's image file.</p>

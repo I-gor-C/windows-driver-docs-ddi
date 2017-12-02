@@ -69,7 +69,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UcmTcpciPortControllerAlertInvalid"></a><a id="ucmtcpciportcontrolleralertinvalid"></a><a id="UCMTCPCIPORTCONTROLLERALERTINVALID"></a><b>UcmTcpciPortControllerAlertInvalid</b>
+### -field UcmTcpciPortControllerAlertInvalid
 
 <dd>
 <p>
@@ -77,7 +77,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
                     The alert is invalid.</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerAlertCCStatus"></a><a id="ucmtcpciportcontrolleralertccstatus"></a><a id="UCMTCPCIPORTCONTROLLERALERTCCSTATUS"></a><b>UcmTcpciPortControllerAlertCCStatus</b>
+### -field UcmTcpciPortControllerAlertCCStatus
 
 <dd>
 <p>Indicates a
@@ -85,7 +85,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
                     CC status change alert.</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerAlertPowerStatus"></a><a id="ucmtcpciportcontrolleralertpowerstatus"></a><a id="UCMTCPCIPORTCONTROLLERALERTPOWERSTATUS"></a><b>UcmTcpciPortControllerAlertPowerStatus</b>
+### -field UcmTcpciPortControllerAlertPowerStatus
 
 <dd>
 <p>Indicates a
@@ -95,7 +95,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
                     </p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerAlertReceiveSOPMessageStatus"></a><a id="ucmtcpciportcontrolleralertreceivesopmessagestatus"></a><a id="UCMTCPCIPORTCONTROLLERALERTRECEIVESOPMESSAGESTATUS"></a><b>UcmTcpciPortControllerAlertReceiveSOPMessageStatus</b>
+### -field UcmTcpciPortControllerAlertReceiveSOPMessageStatus
 
 <dd>
 <p>
@@ -103,7 +103,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
                     Indicates an SOP message alert.</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerAlertReceivedHardReset"></a><a id="ucmtcpciportcontrolleralertreceivedhardreset"></a><a id="UCMTCPCIPORTCONTROLLERALERTRECEIVEDHARDRESET"></a><b>UcmTcpciPortControllerAlertReceivedHardReset</b>
+### -field UcmTcpciPortControllerAlertReceivedHardReset
 
 <dd>
 <p>
@@ -111,7 +111,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
                     Indicates a hard Reset alert.</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerAlertTransmitSOPMessageFailed"></a><a id="ucmtcpciportcontrolleralerttransmitsopmessagefailed"></a><a id="UCMTCPCIPORTCONTROLLERALERTTRANSMITSOPMESSAGEFAILED"></a><b>UcmTcpciPortControllerAlertTransmitSOPMessageFailed</b>
+### -field UcmTcpciPortControllerAlertTransmitSOPMessageFailed
 
 <dd>
 <p>
@@ -119,7 +119,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
                     Indicates that the SOP message transmission was not successful.</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerAlertTransmitSOPMessageDiscarded"></a><a id="ucmtcpciportcontrolleralerttransmitsopmessagediscarded"></a><a id="UCMTCPCIPORTCONTROLLERALERTTRANSMITSOPMESSAGEDISCARDED"></a><b>UcmTcpciPortControllerAlertTransmitSOPMessageDiscarded</b>
+### -field UcmTcpciPortControllerAlertTransmitSOPMessageDiscarded
 
 <dd>
 <p>Indicates that the
@@ -127,7 +127,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
                     SOP message transmission was not sent due to an incoming receive message. </p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerAlertTransmitSOPMessageSuccessful"></a><a id="ucmtcpciportcontrolleralerttransmitsopmessagesuccessful"></a><a id="UCMTCPCIPORTCONTROLLERALERTTRANSMITSOPMESSAGESUCCESSFUL"></a><b>UcmTcpciPortControllerAlertTransmitSOPMessageSuccessful</b>
+### -field UcmTcpciPortControllerAlertTransmitSOPMessageSuccessful
 
 <dd>
 <p>
@@ -135,7 +135,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
                     Indicates that the SOP message transmission was successful.</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerAlertVbusVoltageAlarmHi"></a><a id="ucmtcpciportcontrolleralertvbusvoltagealarmhi"></a><a id="UCMTCPCIPORTCONTROLLERALERTVBUSVOLTAGEALARMHI"></a><b>UcmTcpciPortControllerAlertVbusVoltageAlarmHi</b>
+### -field UcmTcpciPortControllerAlertVbusVoltageAlarmHi
 
 <dd>
 <p>
@@ -143,7 +143,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
                     Indicates a high-voltage alarm.</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerAlertVbusVoltageAlarmLo"></a><a id="ucmtcpciportcontrolleralertvbusvoltagealarmlo"></a><a id="UCMTCPCIPORTCONTROLLERALERTVBUSVOLTAGEALARMLO"></a><b>UcmTcpciPortControllerAlertVbusVoltageAlarmLo</b>
+### -field UcmTcpciPortControllerAlertVbusVoltageAlarmLo
 
 <dd>
 <p>
@@ -151,7 +151,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
                     Indicates a low-voltage alarm.</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerAlertFault"></a><a id="ucmtcpciportcontrolleralertfault"></a><a id="UCMTCPCIPORTCONTROLLERALERTFAULT"></a><b>UcmTcpciPortControllerAlertFault</b>
+### -field UcmTcpciPortControllerAlertFault
 
 <dd>
 <p>
@@ -159,7 +159,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
                     Indicates that a Fault has occurred. </p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerAlertRxBufferOverflow"></a><a id="ucmtcpciportcontrolleralertrxbufferoverflow"></a><a id="UCMTCPCIPORTCONTROLLERALERTRXBUFFEROVERFLOW"></a><b>UcmTcpciPortControllerAlertRxBufferOverflow</b>
+### -field UcmTcpciPortControllerAlertRxBufferOverflow
 
 <dd>
 <p>Indicates that the
@@ -167,7 +167,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
                      TCPC Rx buffer has overflowed.</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerAlertVbusSinkDisconnectDetected"></a><a id="ucmtcpciportcontrolleralertvbussinkdisconnectdetected"></a><a id="UCMTCPCIPORTCONTROLLERALERTVBUSSINKDISCONNECTDETECTED"></a><b>UcmTcpciPortControllerAlertVbusSinkDisconnectDetected</b>
+### -field UcmTcpciPortControllerAlertVbusSinkDisconnectDetected
 
 <dd>
 <p>
@@ -196,7 +196,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmtcpci_port_controller_alert_data">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</a>
+<a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller--ucmtcpci-port-controller-alert-data.md">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</a>
 </dt>
 </dl>
 <p> </p>

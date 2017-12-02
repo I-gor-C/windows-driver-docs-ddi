@@ -56,19 +56,19 @@ typedef struct _DXVAHDDDI_STREAM_STATE_PRIVATE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Guid</b>
+### -field Guid
 
 <dd>
 <p>[in] A GUID that identifies the private stream state.  </p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>[in] The size, in bytes, of the private stream-state data. </p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>[in/out] A pointer to the private stream-state data. The caller sets <b>pData</b> to <b>NULL</b> to retrieve the size of the private stream-state data. </p>

@@ -7,7 +7,7 @@ old-location: wdf\wdf_interrupt_config.htm
 old-project: wdf
 ms.assetid: 10eb623d-6778-4ccb-8ed4-9926c13dec5a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_INTERRUPT_CONFIG, WDF_INTERRUPT_CONFIG, *PWDF_INTERRUPT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,87 +71,87 @@ typedef struct _WDF_INTERRUPT_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>SpinLock</b>
+### -field SpinLock
 
 <dd>
 <p>The handle to a framework spin-lock object, obtained by a previous call to <a href="..\wdfsync\nf-wdfsync-wdfspinlockcreate.md">WdfSpinLockCreate</a>, or <b>NULL</b>. If this parameter is <b>NULL</b>, the framework uses an internal spin-lock object. The framework acquires the spin lock before it calls the driver's <a href="..\wdfinterrupt\nc-wdfinterrupt-evt-wdf-interrupt-synchronize.md">EvtInterruptSynchronize</a> event callback function and when the driver calls <a href="wdf.wdfinterruptacquirelock">WdfInterruptAcquireLock</a>. For passive-level interrupt handling, set to NULL.</p>
 <p>Starting with UMDF version 2.0, UMDF always uses passive-level interrupt handling. In this case, set this member to NULL.</p>
 </dd>
 
-### -field <b>ShareVector</b>
+### -field ShareVector
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed value. If this value is <b>WdfTrue</b>, the interrupt vector can be shared. If the value is <b>WdfFalse</b>, the interrupt vector cannot be shared. If the value is <b>WdfDefault</b>, the PnP manager uses the bus driver's value.</p>
 </dd>
 
-### -field <b>FloatingSave</b>
+### -field FloatingSave
 
 <dd>
 <p>A Boolean value that, if <b>TRUE</b>, indicates that the system will save the processor's floating point and MMX state when the device interrupts. If <b>FALSE</b>, the system does not save the floating point and MMX state. A driver should set this value to <b>TRUE</b> only if its <a href="..\wdfinterrupt\nc-wdfinterrupt-evt-wdf-interrupt-isr.md">EvtInterruptIsr</a> callback function must use floating point or MMX registers. For more information about saving floating point and MMX state, see <a href="https://msdn.microsoft.com/73414084-4054-466a-b64c-5c81b224be92">Using Floating Point or MMX in a WDM Driver</a>.</p>
 <p>This member is ignored starting in UMDF version 2.0.</p>
 </dd>
 
-### -field <b>AutomaticSerialization</b>
+### -field AutomaticSerialization
 
 <dd>
 <p>A Boolean value that, if <b>TRUE</b>, indicates that the framework will synchronize execution of the interrupt object's <a href="..\wdfinterrupt\nc-wdfinterrupt-evt-wdf-interrupt-dpc.md">EvtInterruptDpc</a>    or <a href="..\wdfinterrupt\nc-wdfinterrupt-evt-wdf-interrupt-workitem.md">EvtInterruptWorkItem</a> callback function with callback functions from other objects that are underneath the interrupt's parent  object.  For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>EvtInterruptIsr</b>
+### -field EvtInterruptIsr
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfinterrupt\nc-wdfinterrupt-evt-wdf-interrupt-isr.md">EvtInterruptIsr</a> callback function. This pointer cannot be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtInterruptDpc</b>
+### -field EvtInterruptDpc
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfinterrupt\nc-wdfinterrupt-evt-wdf-interrupt-dpc.md">EvtInterruptDpc</a> callback function, or <b>NULL</b>. The driver can provide <a href="..\wdfinterrupt\nc-wdfinterrupt-evt-wdf-interrupt-workitem.md">EvtInterruptWorkItem</a> or <i>EvtInterruptDpc</i>, but not both.</p>
 </dd>
 
-### -field <b>EvtInterruptEnable</b>
+### -field EvtInterruptEnable
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfinterrupt\nc-wdfinterrupt-evt-wdf-interrupt-enable.md">EvtInterruptEnable</a> callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtInterruptDisable</b>
+### -field EvtInterruptDisable
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfinterrupt\nc-wdfinterrupt-evt-wdf-interrupt-disable.md">EvtInterruptDisable</a> callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtInterruptWorkItem</b>
+### -field EvtInterruptWorkItem
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfinterrupt\nc-wdfinterrupt-evt-wdf-interrupt-workitem.md">EvtInterruptWorkItem</a> callback function, or <b>NULL</b>. The driver can provide <i>EvtInterruptWorkItem</i> or <a href="..\wdfinterrupt\nc-wdfinterrupt-evt-wdf-interrupt-dpc.md">EvtInterruptDpc</a>, but not both. The <b>EvtInterruptWorkItem</b> member is available in version 1.11 and later versions of KMDF.</p>
 </dd>
 
-### -field <b>InterruptRaw</b>
+### -field InterruptRaw
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes the <a href="wdf.raw_and_translated_resources">raw resources</a> that the system assigned to the interrupt. This member is only used if the interrupt is created in the <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-prepare-hardware.md">EvtDevicePrepareHardware</a> callback. The <b>InterruptRaw</b> member is available in version 1.11 and later versions of KMDF.</p>
 </dd>
 
-### -field <b>InterruptTranslated</b>
+### -field InterruptTranslated
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes the <a href="wdf.raw_and_translated_resources">translated resources</a> that the system assigned to the interrupt. This member is only used if the interrupt is created in the <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-prepare-hardware.md">EvtDevicePrepareHardware</a> callback. The <b>InterruptTranslated</b> member is available in version 1.11 and later versions of KMDF.</p>
 </dd>
 
-### -field <b>WaitLock</b>
+### -field WaitLock
 
 <dd>
 <p>A handle to a framework wait-lock object, obtained by a previous call to <a href="..\wdfsync\nf-wdfsync-wdfwaitlockcreate.md">WdfWaitLockCreate</a>, or <b>NULL</b>. If <b>WaitLock</b> is non-<b>NULL</b>, <b>PassiveHandling</b> must be set to <b>TRUE</b>.  The <b>WaitLock</b> member is available in version 1.11 and later versions of KMDF.  For more information about <b>WaitLock</b>, see  <b>Remarks</b>.</p>
 </dd>
 
-### -field <b>PassiveHandling</b>
+### -field PassiveHandling
 
 <dd>
 <p>Set to <b>FALSE</b> for interrupt handling at the device's IRQL (DIRQL).
@@ -159,7 +159,7 @@ Set to <b>TRUE</b> for passive-level interrupt handling.
 The <b>PassiveHandling</b> member is available in version 1.11 and later versions of KMDF. Starting in UMDF version 2.0, <a href="..\wdfinterrupt\nf-wdfinterrupt-wdf-interrupt-config-init.md">WDF_INTERRUPT_CONFIG_INIT</a> always sets this member to TRUE.</p>
 </dd>
 
-### -field <b>ReportInactiveOnPowerDown</b>
+### -field ReportInactiveOnPowerDown
 
 <dd>
 <p>This member applies to KMDF only.</p>
@@ -183,7 +183,7 @@ The <b>PassiveHandling</b> member is available in version 1.11 and later version
 <p>For more information about reporting an interrupt inactive, see <a href="https://msdn.microsoft.com/library/windows/hardware/jj158878">Making an ISR Active or Inactive</a>.</p>
 </dd>
 
-### -field <b>CanWakeDevice</b>
+### -field CanWakeDevice
 
 <dd>
 <p>A Boolean value that indicates whether the interrupt is used to wake the device from a low-power state.
@@ -298,4 +298,4 @@ to specify that it is non-power pageable.</p>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_INTERRUPT_CONFIG structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_INTERRUPT_CONFIG structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

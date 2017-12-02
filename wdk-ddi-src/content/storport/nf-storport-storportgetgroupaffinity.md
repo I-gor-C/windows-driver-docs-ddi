@@ -57,19 +57,19 @@ ULONG StorPortGetGroupAffinity(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>GroupNumber</i> [in]
+### -param GroupNumber [in]
 
 <dd>
 <p>The group from which to return the processor mask.</p>
 </dd>
 
-### -param <i>GroupAffinityMask</i> [out]
+### -param GroupAffinityMask [out]
 
 <dd>
 <p>A pointer to a variable that holds the affinity mask of the given group.</p>

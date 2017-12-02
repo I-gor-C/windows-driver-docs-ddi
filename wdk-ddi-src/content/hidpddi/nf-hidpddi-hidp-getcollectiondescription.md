@@ -60,25 +60,25 @@ BOOLEAN __stdcall HidP_GetCollectionDescription(
 ## -parameters
 <dl>
 
-### -param <i>ReportDesc</i> [in]
+### -param ReportDesc [in]
 
 <dd>
 <p>A pointer to a UCHAR array that contains the raw report descriptor.</p>
 </dd>
 
-### -param <i>DescLength</i> [in]
+### -param DescLength [in]
 
 <dd>
 <p>The length of the report descriptor array.</p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a>-value that indicates the pool type from which memory for the linked list is allocated. This includes each <a href="..\hidpddi\ns-hidpddi--hidp-collection-desc.md">HIDP_COLLECTION_DESC</a> array element of <a href="..\hidpddi\ns-hidpddi--hidp-device-desc.md">HIDP_DEVICE_DESC</a>, each <a href="hid._hidp_preparsed_data">HIDP_PREPARSED_DATA</a> in each <b>HIDP_COLLECTION_DESC</b>, each <a href="..\hidpddi\ns-hidpddi--hidp-report-ids.md">HIDP_REPORT_IDS</a> array element of <b>HIDP_DEVICE_DESC</b>.</p>
 </dd>
 
-### -param <i>DeviceDescription</i> [out]
+### -param DeviceDescription [out]
 
 <dd>
 <p>A pointer to a <a href="..\hidpddi\ns-hidpddi--hidp-device-desc.md">HIDP_DEVICE_DESC</a> structure that is populated with device description block filled in

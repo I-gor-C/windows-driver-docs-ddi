@@ -7,7 +7,7 @@ old-location: netvista\rilsetsmscparams.htm
 old-project: netvista
 ms.assetid: ebfb768a-fa6b-4781-96e1-787278237d5f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSETSMSCPARAMS, RILSETSMSCPARAMS, *LPRILSETSMSCPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILSETSMSCPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>raSvcCtrAddress</b>
+### -field raSvcCtrAddress
 
 <dd></dd>
 </dl>

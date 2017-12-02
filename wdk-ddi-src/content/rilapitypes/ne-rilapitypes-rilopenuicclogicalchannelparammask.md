@@ -7,7 +7,7 @@ old-location: netvista\rilopenuicclogicalchannelparammask_2.htm
 old-project: netvista
 ms.assetid: abce79d2-1eca-4d62-af4f-434596bfb718
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILOPENUICCLOGICALCHANNELPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_OULC_SELECTRESPLENGTH"></a><a id="ril_param_oulc_selectresplength"></a><b>RIL_PARAM_OULC_SELECTRESPLENGTH</b>
+### -field RIL_PARAM_OULC_SELECTRESPLENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OULC_SELECTRESPONSE"></a><a id="ril_param_oulc_selectresponse"></a><b>RIL_PARAM_OULC_SELECTRESPONSE</b>
+### -field RIL_PARAM_OULC_SELECTRESPONSE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OULC_ALL"></a><a id="ril_param_oulc_all"></a><b>RIL_PARAM_OULC_ALL</b>
+### -field RIL_PARAM_OULC_ALL
 
 <dd></dd>
 </dl>

@@ -54,7 +54,7 @@ NTSTATUS NormalizePhysicalPosition(
 ## -parameters
 <dl>
 
-### -param <i>PhysicalPosition</i> [in, out]
+### -param PhysicalPosition [in, out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that contains either the physical position or the time-based value. On entry, this buffer contains the physical-position value to convert. On return, the buffer contains the converted value, which is time-based.</p>

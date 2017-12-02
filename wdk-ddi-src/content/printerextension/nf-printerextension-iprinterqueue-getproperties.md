@@ -55,7 +55,7 @@ HRESULT GetProperties(
 ## -parameters
 <dl>
 
-### -param <i>ppPropertyBag</i> [out, retval]
+### -param ppPropertyBag [out, retval]
 
 <dd>
 <p>A pointer to the property bag.</p>

@@ -55,7 +55,7 @@ VOID IoFreeWorkItem(
 ## -parameters
 <dl>
 
-### -param <i>IoWorkItem </i> [in]
+### -param IoWorkItem  [in]
 
 <dd>
 <p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550679">IO_WORKITEM</a> structure that was returned by a previous call to <a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a>.</p>

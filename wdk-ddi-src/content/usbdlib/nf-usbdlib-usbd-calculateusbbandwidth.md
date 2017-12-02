@@ -57,19 +57,19 @@ ULONG USBD_CalculateUsbBandwidth(
 ## -parameters
 <dl>
 
-### -param <i>MaxPacketSize</i> [in]
+### -param MaxPacketSize [in]
 
 <dd>
 <p>Specifies the maximum packet size. </p>
 </dd>
 
-### -param <i>EndpointType</i> [in]
+### -param EndpointType [in]
 
 <dd>
 <p>Contains a value of type <a href="..\usb\ne-usb--usbd-pipe-type.md">USBD_PIPE_TYPE</a> that specifies the pipe type.</p>
 </dd>
 
-### -param <i>LowSpeed</i> [in]
+### -param LowSpeed [in]
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the device is a low speed device. When <b>FALSE</b>, this member indicates that the device is a hi-speed device. </p>

@@ -7,7 +7,7 @@ old-location: wdf\wdf_usb_request_type_umdf.htm
 old-project: wdf
 ms.assetid: fb952527-a8df-41e7-8194-b4a82b7f550f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_INTERRUPT_CONFIG, WUDF_INTERRUPT_CONFIG, *PWUDF_INTERRUPT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef enum _WDF_USB_REQUEST_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfUsbRequestTypeInvalid"></a><a id="wdfusbrequesttypeinvalid"></a><a id="WDFUSBREQUESTTYPEINVALID"></a><b>WdfUsbRequestTypeInvalid</b>
+### -field WdfUsbRequestTypeInvalid
 
 <dd>
 <p>The type of the request object is invalid. </p>
 </dd>
 
-### -field <a id="WdfUsbRequestTypeNoFormat"></a><a id="wdfusbrequesttypenoformat"></a><a id="WDFUSBREQUESTTYPENOFORMAT"></a><b>WdfUsbRequestTypeNoFormat</b>
+### -field WdfUsbRequestTypeNoFormat
 
 <dd>
 <p>The request object is not formatted.</p>
 </dd>
 
-### -field <a id="WdfUsbRequestTypeDeviceControlTransfer"></a><a id="wdfusbrequesttypedevicecontroltransfer"></a><a id="WDFUSBREQUESTTYPEDEVICECONTROLTRANSFER"></a><b>WdfUsbRequestTypeDeviceControlTransfer</b>
+### -field WdfUsbRequestTypeDeviceControlTransfer
 
 <dd>
 <p>The request object is sent when the application calls the Win32 <b>DeviceIoControl</b> function on the file object that is associated with the target device. </p>
 </dd>
 
-### -field <a id="WdfUsbRequestTypePipeWrite"></a><a id="wdfusbrequesttypepipewrite"></a><a id="WDFUSBREQUESTTYPEPIPEWRITE"></a><b>WdfUsbRequestTypePipeWrite</b>
+### -field WdfUsbRequestTypePipeWrite
 
 <dd>
 <p>The request object is sent when the application calls the Win32 <b>WriteFile</b> or <b>WriteFileEx</b> function on the file object that is associated with the target device. </p>
 </dd>
 
-### -field <a id="WdfUsbRequestTypePipeRead"></a><a id="wdfusbrequesttypepiperead"></a><a id="WDFUSBREQUESTTYPEPIPEREAD"></a><b>WdfUsbRequestTypePipeRead</b>
+### -field WdfUsbRequestTypePipeRead
 
 <dd>
 <p>The request object is sent when the application calls the Win32 <b>ReadFile</b> or <b>ReadFileEx</b> function on the file object that is associated with the target device. </p>

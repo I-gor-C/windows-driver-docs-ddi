@@ -60,7 +60,7 @@ typedef struct _IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The interrupt connection type described by this structure. This member must match the connection type the caller obtained from the <b>IoConnectInterruptEx</b> call that connected the interrupt. The following are valid values for this member:</p>
@@ -73,26 +73,26 @@ typedef struct _IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS {
 <p>For more information, see Remarks.</p>
 </dd>
 
-### -field <b>ConnectionContext</b>
+### -field ConnectionContext
 
 <dd>
 <p>A union that contains the connection context associated with the interrupt. Each union member is a pointer to a connection context of a particular type. If <b>Version</b> = CONNECT_MESSAGE_BASED, the <b>InterruptMessageTable</b> member of this union contains a pointer to an <a href="..\wdm\ns-wdm--io-interrupt-message-info.md">IO_INTERRUPT_MESSAGE_INFO</a> structure. For all other <b>Version</b> values, the <b>InterruptObject</b> member of this union contains a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a> structure. Use the <b>Generic</b> member of this union to treat the connection context pointer as a PVOID value (and avoid casting).</p>
 <p>For more information, see Remarks.</p>
 <dl>
 
-### -field <b>Generic</b>
+### -field Generic
 
 <dd>
 <p>A PVOID pointer to a connection context.</p>
 </dd>
 
-### -field <b>InterruptMessageTable</b>
+### -field InterruptMessageTable
 
 <dd>
 <p>A pointer to a connection context of type <a href="..\wdm\ns-wdm--io-interrupt-message-info.md">IO_INTERRUPT_MESSAGE_INFO</a>.</p>
 </dd>
 
-### -field <b>InterruptObject</b>
+### -field InterruptObject
 
 <dd>
 <p>A pointer to a connection context of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a>.</p>

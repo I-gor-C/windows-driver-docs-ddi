@@ -56,7 +56,7 @@ NTSTATUS SeDeassignSecurity(
 ## -parameters
 <dl>
 
-### -param <i>SecurityDescriptor</i> [in, out]
+### -param SecurityDescriptor [in, out]
 
 <dd>
 <p>Pointer to the buffered <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> being released.</p>

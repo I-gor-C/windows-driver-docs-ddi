@@ -58,25 +58,25 @@ VOID IoQueueWorkItemEx(
 ## -parameters
 <dl>
 
-### -param <i>IoWorkItem</i> [in]
+### -param IoWorkItem [in]
 
 <dd>
 <p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550679">IO_WORKITEM</a> structure that was allocated by <a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a> or initialized by <a href="..\wdm\nf-wdm-ioinitializeworkitem.md">IoInitializeWorkItem</a>. </p>
 </dd>
 
-### -param <i>WorkerRoutine</i> [in]
+### -param WorkerRoutine [in]
 
 <dd>
 <p>Pointer to a <a href="kernel.workitemex">WorkItemEx</a> routine. </p>
 </dd>
 
-### -param <i>QueueType</i> [in]
+### -param QueueType [in]
 
 <dd>
 <p>Specifies a <a href="..\wdm\ne-wdm--work-queue-type.md">WORK_QUEUE_TYPE</a> value that stipulates the type of system worker thread to handle the work item. Drivers must specify <b>DelayedWorkQueue</b>.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Specifies driver-specific information for the work item. The system passes this value as the <i>Context</i> parameter to <a href="kernel.workitemex">WorkItemEx</a>.</p>

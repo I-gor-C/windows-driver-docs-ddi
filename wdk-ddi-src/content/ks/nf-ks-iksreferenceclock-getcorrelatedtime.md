@@ -54,7 +54,7 @@ LONGLONG GetCorrelatedTime(
 ## -parameters
 <dl>
 
-### -param <i>SystemTime</i> [out]
+### -param SystemTime [out]
 
 <dd>
 <p>A pointer to a LONGLONG-typed variable that receives the current system time in 100 nanosecond units.</p>
@@ -71,7 +71,7 @@ LONGLONG GetCorrelatedTime(
 
 <p>You should use this method when obtaining a time stamp to put in the <b>PresentationTime</b> member of <a href="stream.ksstream_header">KSSTREAM_HEADER</a>.</p>
 
-<p>For more information, see <a href="NULL">AVStream Clocks</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/fc1d5bca-72e3-48e2-b46f-09a13bba83b4">AVStream Clocks</a>.</p>
 
 <p>AVStream uses the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564465">KSPROPERTY_CLOCK_CORRELATEDTIME</a> property to retrieve the correlated time.</p>
 

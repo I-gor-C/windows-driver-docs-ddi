@@ -54,7 +54,7 @@ typedef struct _D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL {
 ## -struct-fields
 <dl>
 
-### -field <b>hChannel</b>
+### -field hChannel
 
 <dd>
 <p>[in] The handle to the authenticated channel that the driver destroys.</p>

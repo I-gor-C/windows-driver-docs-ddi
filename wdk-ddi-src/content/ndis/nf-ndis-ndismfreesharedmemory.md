@@ -7,7 +7,7 @@ old-location: netvista\ndismfreesharedmemory.htm
 old-project: netvista
 ms.assetid: 6ab11b97-e422-4ce9-b98b-51496974cb47
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMFreeSharedMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,26 +61,26 @@ VOID NdisMFreeSharedMemory(
 ## -parameters
 <dl>
 
-### -param <i>MiniportAdapterHandle</i> [in]
+### -param MiniportAdapterHandle [in]
 
 <dd>
 <p>Specifies the handle originally input to 
      <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the number of bytes originally allocated.</p>
 </dd>
 
-### -param <i>Cached</i> [in]
+### -param Cached [in]
 
 <dd>
 <p>Specifies <b>TRUE</b> if the original allocation was cacheable.</p>
 </dd>
 
-### -param <i>VirtualAddress</i> [in]
+### -param VirtualAddress [in]
 
 <dd>
 <p>Specifies the base virtual address returned by 
@@ -88,7 +88,7 @@ VOID NdisMFreeSharedMemory(
      <b>NdisMAllocateSharedMemoryAsyncEx</b>.</p>
 </dd>
 
-### -param <i>PhysicalAddress</i> [in]
+### -param PhysicalAddress [in]
 
 <dd>
 <p>Specifies the corresponding physical address returned by 
@@ -222,4 +222,4 @@ VOID NdisMFreeSharedMemory(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMFreeSharedMemory function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMFreeSharedMemory function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

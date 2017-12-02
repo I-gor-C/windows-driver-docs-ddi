@@ -7,7 +7,7 @@ old-location: netvista\ril_getdmprofileconfiginfo.htm
 old-project: netvista
 ms.assetid: b0c4e96e-5f7f-4ee5-90b7-6d78ee321bf5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetDMProfileConfigInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_GetDMProfileConfigInfo(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>dwConfigItem</i> 
+### -param dwConfigItem 
 
 <dd></dd>
 </dl>

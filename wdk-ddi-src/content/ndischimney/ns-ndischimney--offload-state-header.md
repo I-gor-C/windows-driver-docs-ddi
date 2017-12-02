@@ -7,7 +7,7 @@ old-location: netvista\offload_state_header.htm
 old-project: netvista
 ms.assetid: 9becc611-ede9-4285-b2d7-c53747d098a9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: OFFLOAD_STATE_HEADER, OFFLOAD_STATE_HEADER, *POFFLOAD_STATE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ typedef struct _OFFLOAD_STATE_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The total size, in bytes, of the offload state structure that includes the OFFLOAD_STATE_HEADER
@@ -64,7 +64,7 @@ typedef struct _OFFLOAD_STATE_HEADER {
      offload state structure.</p>
 </dd>
 
-### -field <b>RecognizedOptions</b>
+### -field RecognizedOptions
 
 <dd>
 <p>Reserved.</p>

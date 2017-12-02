@@ -59,31 +59,31 @@ typedef struct _FILE_BASIC_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>CreationTime</b>
+### -field CreationTime
 
 <dd>
 <p>Specifies the time that the file was created. </p>
 </dd>
 
-### -field <b>LastAccessTime</b>
+### -field LastAccessTime
 
 <dd>
 <p>Specifies the time that the file was last accessed. </p>
 </dd>
 
-### -field <b>LastWriteTime</b>
+### -field LastWriteTime
 
 <dd>
 <p>Specifies the time that the file was last written to. </p>
 </dd>
 
-### -field <b>ChangeTime</b>
+### -field ChangeTime
 
 <dd>
 <p>Specifies the last time the file was changed. </p>
 </dd>
 
-### -field <b>FileAttributes</b>
+### -field FileAttributes
 
 <dd>
 <p>Specifies one or more FILE_ATTRIBUTE_<i>XXX</i> flags. For descriptions of these flags, see the documentation for the <b>GetFileAttributes</b> function in the Microsoft Windows SDK.</p>

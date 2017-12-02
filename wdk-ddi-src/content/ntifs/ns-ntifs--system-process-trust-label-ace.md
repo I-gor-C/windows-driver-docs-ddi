@@ -7,7 +7,7 @@ old-location: ifsk\system_process_trust_label_ace.htm
 old-project: ifsk
 ms.assetid: DF334754-8027-418D-B329-877492896B82
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: SYSTEM_PROCESS_TRUST_LABEL_ACE, SYSTEM_PROCESS_TRUST_LABEL_ACE, *PSYSTEM_PROCESS_TRUST_LABEL_ACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ struct SYSTEM_PROCESS_TRUST_LABEL_ACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd></dd>
 
-### -field <b>Mask</b>
+### -field Mask
 
 <dd></dd>
 
-### -field <b>SidStart</b>
+### -field SidStart
 
 <dd></dd>
 </dl>

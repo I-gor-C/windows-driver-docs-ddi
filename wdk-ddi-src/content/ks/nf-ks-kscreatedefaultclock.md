@@ -56,13 +56,13 @@ NTSTATUS KsCreateDefaultClock(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP with the clock-create request being handled.</p>
 </dd>
 
-### -param <i>DefaultClock</i> [in]
+### -param DefaultClock [in]
 
 <dd>
 <p>Specifies an initialize default clock structure that is shared among any instance of the default clock for the parent.</p>

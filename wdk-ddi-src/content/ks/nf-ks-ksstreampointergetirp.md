@@ -56,19 +56,19 @@ PIRP KsStreamPointerGetIrp(
 ## -parameters
 <dl>
 
-### -param <i>StreamPointer</i> [in]
+### -param StreamPointer [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure that references the frame for which the associated IRP is returned.</p>
 </dd>
 
-### -param <i>FirstFrameInIrp</i> [out, optional]
+### -param FirstFrameInIrp [out, optional]
 
 <dd>
 <p>A pointer to a caller-supplied BOOLEAN value set to <b>TRUE</b> on return if the frame referenced by <i>StreamPointer</i> is the first frame in the returned IRP and <b>FALSE</b> if not. If <b>NULL</b>, AVStream does not test this condition.</p>
 </dd>
 
-### -param <i>LastFrameInIrp</i> [out, optional]
+### -param LastFrameInIrp [out, optional]
 
 <dd>
 <p>A pointer to a caller-supplied BOOLEAN value set to <b>TRUE</b> if the frame referenced by the stream pointer is the last frame in the returned IRP and <b>FALSE</b> if not. If <b>NULL</b>, AVStream does not test this condition.</p>
@@ -85,7 +85,7 @@ PIRP KsStreamPointerGetIrp(
 
 <p><i>FirstFrameInIrp </i>and<i>/</i>or <i>LastFrameInIrp</i> must be non-<b>NULL</b> at call-time in order for AVStream to fill in these values.</p>
 
-<p>Also see <a href="NULL">Stream Pointers</a>.</p>
+<p>Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736f">Stream Pointers</a>.</p>
 
 ## -requirements
 <table>

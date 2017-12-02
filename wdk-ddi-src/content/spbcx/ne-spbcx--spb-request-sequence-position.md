@@ -7,7 +7,7 @@ old-location: spb\spb_request_sequence_position.htm
 old-project: SPB
 ms.assetid: B2D1BC45-E932-4EBC-9B7E-C45E7439E551
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/30/2017
 ms.keywords: SPB_TRANSFER_LIST,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="SpbRequestSequencePositionInvalid"></a><a id="spbrequestsequencepositioninvalid"></a><a id="SPBREQUESTSEQUENCEPOSITIONINVALID"></a><b>SpbRequestSequencePositionInvalid</b>
+### -field SpbRequestSequencePositionInvalid
 
 <dd>
 <p>For internal use only.</p>
 </dd>
 
-### -field <a id="SpbRequestSequencePositionSingle"></a><a id="spbrequestsequencepositionsingle"></a><a id="SPBREQUESTSEQUENCEPOSITIONSINGLE"></a><b>SpbRequestSequencePositionSingle</b>
+### -field SpbRequestSequencePositionSingle
 
 <dd>
 <p>A single-transfer I/O request. This request is either a read or write (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>) request that is not part of a sequence, or it is an <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a> I/O control request for a sequence that consists of a single transfer.</p>
 <p>The controller should select the target before performing the transfer, and release the target after the transfer finishes.</p>
 </dd>
 
-### -field <a id="SpbRequestSequencePositionFirst"></a><a id="spbrequestsequencepositionfirst"></a><a id="SPBREQUESTSEQUENCEPOSITIONFIRST"></a><b>SpbRequestSequencePositionFirst</b>
+### -field SpbRequestSequencePositionFirst
 
 <dd>
 <p>The first I/O request in a sequence. This request is the read or write request that immediately follows the lock (<a href="https://msdn.microsoft.com/library/windows/hardware/hh450858">IOCTL_SPB_LOCK_CONTROLLER</a>) I/O control request that signals the start of the sequence.</p>
 <p> The controller should select the target before performing this transfer, and the target should remain selected after the transfer finishes.</p>
 </dd>
 
-### -field <a id="SpbRequestSequencePositionContinue"></a><a id="spbrequestsequencepositioncontinue"></a><a id="SPBREQUESTSEQUENCEPOSITIONCONTINUE"></a><b>SpbRequestSequencePositionContinue</b>
+### -field SpbRequestSequencePositionContinue
 
 <dd>
 <p>An I/O request in the middle of a sequence. This request is a read or write request that is neither the first nor the last transfer in the sequence.</p>
@@ -88,7 +88,7 @@ typedef enum  {
 <p>The controller should already have the target selected before it starts this transfer, and the target should remain selected after the transfer finishes.</p>
 </dd>
 
-### -field <a id="SpbRequestSequencePositionLast"></a><a id="spbrequestsequencepositionlast"></a><a id="SPBREQUESTSEQUENCEPOSITIONLAST"></a><b>SpbRequestSequencePositionLast</b>
+### -field SpbRequestSequencePositionLast
 
 <dd>
 <p>The last I/O request in a sequence. This request is the read or write request that immediately precedes the unlock (<a href="https://msdn.microsoft.com/library/windows/hardware/hh450859">IOCTL_SPB_UNLOCK_CONTROLLER</a>) I/O control request that signals the end of the sequence.</p>
@@ -96,7 +96,7 @@ typedef enum  {
 <p>The controller should already have the target selected before it starts this transfer, and should release the target after the transfer finishes.</p>
 </dd>
 
-### -field <a id="SpbRequestSequencePositionMax"></a><a id="spbrequestsequencepositionmax"></a><a id="SPBREQUESTSEQUENCEPOSITIONMAX"></a><b>SpbRequestSequencePositionMax</b>
+### -field SpbRequestSequencePositionMax
 
 <dd>
 <p>For internal use only.</p>
@@ -175,4 +175,4 @@ typedef enum  {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_REQUEST_SEQUENCE_POSITION enumeration%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_REQUEST_SEQUENCE_POSITION enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

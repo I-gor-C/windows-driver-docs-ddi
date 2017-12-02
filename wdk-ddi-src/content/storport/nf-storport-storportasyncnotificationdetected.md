@@ -58,19 +58,19 @@ ULONG StorPortAsyncNotificationDetected(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device.</p>
 </dd>
 
-### -param <i>Address</i> 
+### -param Address 
 
 <dd>
 <p>The address of the storage device with a status change event.</p>
 </dd>
 
-### -param <i>Flags</i> 
+### -param Flags 
 
 <dd>
 <p>The status notifications to indicate to Storport.</p>
@@ -85,7 +85,7 @@ ULONG StorPortAsyncNotificationDetected(
 <tr>
 <td width="40%"><a id="RAID_ASYNC_NOTIFY_FLAG_MEDIA_STATUS"></a><a id="raid_async_notify_flag_media_status"></a><dl>
 
-### -param <b>RAID_ASYNC_NOTIFY_FLAG_MEDIA_STATUS</b>
+### -param RAID_ASYNC_NOTIFY_FLAG_MEDIA_STATUS
 
 </dl>
 </td>
@@ -96,7 +96,7 @@ ULONG StorPortAsyncNotificationDetected(
 <tr>
 <td width="40%"><a id="RAID_ASYNC_NOTIFY_FLAG_DEVICE_STATUS"></a><a id="raid_async_notify_flag_device_status"></a><dl>
 
-### -param <b>RAID_ASYNC_NOTIFY_FLAG_DEVICE_STATUS</b>
+### -param RAID_ASYNC_NOTIFY_FLAG_DEVICE_STATUS
 
 </dl>
 </td>
@@ -107,7 +107,7 @@ ULONG StorPortAsyncNotificationDetected(
 <tr>
 <td width="40%"><a id="RAID_ASYNC_NOTIFY_FLAG_DEVICE_OPERATION"></a><a id="raid_async_notify_flag_device_operation"></a><dl>
 
-### -param <b>RAID_ASYNC_NOTIFY_FLAG_DEVICE_OPERATION</b>
+### -param RAID_ASYNC_NOTIFY_FLAG_DEVICE_OPERATION
 
 </dl>
 </td>

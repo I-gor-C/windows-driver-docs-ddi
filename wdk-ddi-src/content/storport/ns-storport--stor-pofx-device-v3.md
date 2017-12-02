@@ -64,25 +64,25 @@ typedef struct _STOR_POFX_DEVICE_V3 {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of this structure. Set this member to <b>STOR_POFX_DEVICE_VERSION_V3</b>.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure. Set this value to <b>STOR_POFX_DEVICE_V3_SIZE</b>.</p>
 </dd>
 
-### -field <b>ComponentCount</b>
+### -field ComponentCount
 
 <dd>
 <p>The number of elements in the <b>Components</b> array. Set this member to 1. Currently, only a single component is supported for either a storage adapter or logical unit.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The device power state capabilities flags. The miniport sets one or more of the PoFx device flags to enable or disable power state capabilities.</p>
@@ -97,7 +97,7 @@ typedef struct _STOR_POFX_DEVICE_V3 {
 <tr>
 <td width="40%"><a id="STOR_POFX_DEVICE_FLAG_NO_D0"></a><a id="stor_pofx_device_flag_no_d0"></a><dl>
 
-### -field <b>STOR_POFX_DEVICE_FLAG_NO_D0</b>
+### -field STOR_POFX_DEVICE_FLAG_NO_D0
 
 </dl>
 </td>
@@ -108,7 +108,7 @@ typedef struct _STOR_POFX_DEVICE_V3 {
 <tr>
 <td width="40%"><a id="STOR_POFX_DEVICE_FLAG_NO_D3"></a><a id="stor_pofx_device_flag_no_d3"></a><dl>
 
-### -field <b>STOR_POFX_DEVICE_FLAG_NO_D3</b>
+### -field STOR_POFX_DEVICE_FLAG_NO_D3
 
 </dl>
 </td>
@@ -119,7 +119,7 @@ typedef struct _STOR_POFX_DEVICE_V3 {
 <tr>
 <td width="40%"><a id="STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD"></a><a id="stor_pofx_device_flag_enable_d3_cold"></a><dl>
 
-### -field <b>STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD</b>
+### -field STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD
 
 </dl>
 </td>
@@ -131,7 +131,7 @@ typedef struct _STOR_POFX_DEVICE_V3 {
 <tr>
 <td width="40%"><a id="STOR_POFX_DEVICE_FLAG_NO_DUMP_ACTIVE"></a><a id="stor_pofx_device_flag_no_dump_active"></a><dl>
 
-### -field <b>STOR_POFX_DEVICE_FLAG_NO_DUMP_ACTIVE</b>
+### -field STOR_POFX_DEVICE_FLAG_NO_DUMP_ACTIVE
 
 </dl>
 </td>
@@ -143,7 +143,7 @@ This flag indicates whether a device is available for dump when it is idle.</p>
 <tr>
 <td width="40%"><a id="STOR_POFX_DEVICE_FLAG_IDLE_TIMEOUT"></a><a id="stor_pofx_device_flag_idle_timeout"></a><dl>
 
-### -field <b>STOR_POFX_DEVICE_FLAG_IDLE_TIMEOUT</b>
+### -field STOR_POFX_DEVICE_FLAG_IDLE_TIMEOUT
 
 </dl>
 </td>
@@ -154,7 +154,7 @@ This flag indicates whether a device is available for dump when it is idle.</p>
 <tr>
 <td width="40%"><a id="STOR_POFX_DEVICE_FLAG_ADAPTIVE_D3_IDLE_TIMEOUT"></a><a id="stor_pofx_device_flag_adaptive_d3_idle_timeout"></a><dl>
 
-### -field <b>STOR_POFX_DEVICE_FLAG_ADAPTIVE_D3_IDLE_TIMEOUT</b>
+### -field STOR_POFX_DEVICE_FLAG_ADAPTIVE_D3_IDLE_TIMEOUT
 
 </dl>
 </td>
@@ -165,7 +165,7 @@ This flag indicates whether a device is available for dump when it is idle.</p>
 <tr>
 <td width="40%"><a id="STOR_POFX_DEVICE_FLAG_NO_UNIT_REGISTRATION"></a><a id="stor_pofx_device_flag_no_unit_registration"></a><dl>
 
-### -field <b>STOR_POFX_DEVICE_FLAG_NO_UNIT_REGISTRATION</b>
+### -field STOR_POFX_DEVICE_FLAG_NO_UNIT_REGISTRATION
 
 </dl>
 </td>
@@ -177,25 +177,25 @@ This flag indicates whether a device is available for dump when it is idle.</p>
 <p> </p>
 </dd>
 
-### -field <b>UnitMinIdleTimeoutInMS</b>
+### -field UnitMinIdleTimeoutInMS
 
 <dd>
 <p>The minimum idle time in milliseconds for an unit. This value is only valid when STOR_POFX_DEVICE_FLAG_IDLE_TIMEOUT is set in <b>Flags</b>.</p>
 </dd>
 
-### -field <b>AdapterIdleTimeoutInMS</b>
+### -field AdapterIdleTimeoutInMS
 
 <dd>
 <p>The adapter idle timeout value in milliseconds. This value is only valid when STOR_POFX_DEVICE_FLAG_IDLE_TIMEOUT is set in <b>Flags</b>.</p>
 </dd>
 
-### -field <b>MinimumPowerCyclePeriodInMS</b>
+### -field MinimumPowerCyclePeriodInMS
 
 <dd>
 <p>Indicates that the device should not be power cycled (D0 -&gt; D3 -&gt; D0) more than once per the given period in Milliseconds. This member is only valid when the STOR_POFX_DEVICE_FLAG_ADAPTIVE_D3_IDLE_TIMEOUT flag has been set.</p>
 </dd>
 
-### -field <b>Components</b>
+### -field Components
 
 <dd>
 <p>This member is the first element in an array of one or more <a href="kernel.po_fx_component">STOR_POFX_COMPONENT</a> elements. If the array contains more than one element, the additional elements immediately follow the <b>STOR_POFX_DEVICE</b> structure. The array contains one element for each component in the device.  Currently, storage devices have only  one component so additional component structures are unnecessary.</p>

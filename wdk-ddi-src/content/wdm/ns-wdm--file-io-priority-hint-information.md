@@ -55,7 +55,7 @@ typedef struct _FILE_IO_PRIORITY_HINT_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>PriorityHint</b>
+### -field PriorityHint
 
 <dd>
 <p>Specifies the <a href="..\wdm\ne-wdm--io-priority-hint.md">IO_PRIORITY_HINT</a> value that indicates the priority hint for a file handle.</p>

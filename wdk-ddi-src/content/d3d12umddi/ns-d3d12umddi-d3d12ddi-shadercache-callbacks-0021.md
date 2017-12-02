@@ -55,13 +55,13 @@ typedef struct D3D12DDI_SHADERCACHE_CALLBACKS_0021 {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnShaderCacheGetValueCb</b>
+### -field pfnShaderCacheGetValueCb
 
 <dd>
 <p>A callback function that gets a shader cache value. </p>
 </dd>
 
-### -field <b>pfnShaderCacheStoreValueCb</b>
+### -field pfnShaderCacheStoreValueCb
 
 <dd>
 <p>A callback function that stores a shader cache value. </p>

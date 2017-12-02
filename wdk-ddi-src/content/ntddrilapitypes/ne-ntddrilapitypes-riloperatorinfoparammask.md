@@ -7,7 +7,7 @@ old-location: netvista\riloperatorinfoparammask.htm
 old-project: netvista
 ms.assetid: 5ea7bf77-2069-4335-862e-7f805f3a7491
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILOPERATORINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_OI_STATUS"></a><a id="ril_param_oi_status"></a><b>RIL_PARAM_OI_STATUS</b>
+### -field RIL_PARAM_OI_STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OI_NAMES"></a><a id="ril_param_oi_names"></a><b>RIL_PARAM_OI_NAMES</b>
+### -field RIL_PARAM_OI_NAMES
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_OI_ALL"></a><a id="ril_param_oi_all"></a><b>RIL_PARAM_OI_ALL</b>
+### -field RIL_PARAM_OI_ALL
 
 <dd></dd>
 </dl>

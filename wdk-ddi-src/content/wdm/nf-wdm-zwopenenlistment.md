@@ -59,31 +59,31 @@ NTSTATUS ZwOpenEnlistment(
 ## -parameters
 <dl>
 
-### -param <i>EnlistmentHandle</i> [out]
+### -param EnlistmentHandle [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives a handle to an enlistment object if the call to <b>ZwOpenEnlistment</b> succeeds.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>-typed value that specifies the requested access to the enlistment object. For more information about how to specify this parameter, see the <i>DesiredAccess</i> parameter of <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>. This parameter cannot be zero.</p>
 </dd>
 
-### -param <i>RmHandle</i> [in]
+### -param RmHandle [in]
 
 <dd>
 <p>A handle to a resource manager object that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a> or <a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a>.</p>
 </dd>
 
-### -param <i>EnlistmentGuid</i> [in]
+### -param EnlistmentGuid [in]
 
 <dd>
 <p>A pointer to a GUID that identifies the enlistment. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in, optional]
+### -param ObjectAttributes [in, optional]
 
 <dd>
 <p>A pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object's attributes. Use the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> routine to initialize this structure, but specify only that routine's <i>InitializedAttributes</i> and <i>Attributes</i> parameters. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE flag in the <i>Attributes</i> parameter. This parameter is optional and can be <b>NULL</b>. </p>

@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="TELEPHONY_PROVIDERCHANGEOP_END"></a><a id="telephony_providerchangeop_end"></a><b>TELEPHONY_PROVIDERCHANGEOP_END</b>
+### -field TELEPHONY_PROVIDERCHANGEOP_END
 
 <dd>
 <p>Specifies that the provider change operation has ended. The audio driver will update the call state to <b>TELEPHONY_CALLSTATE_ENABLED</b> in response to this value.</p>
 </dd>
 
-### -field <a id="TELEPHONY_PROVIDERCHANGEOP_BEGIN"></a><a id="telephony_providerchangeop_begin"></a><b>TELEPHONY_PROVIDERCHANGEOP_BEGIN</b>
+### -field TELEPHONY_PROVIDERCHANGEOP_BEGIN
 
 <dd>
 <p>Specifies that the provider change operation has begun. The audio driver will update the call state to <b>TELEPHONY_CALLSTATE_PROVIDERTRANSITION</b> in response to this value.</p>
 </dd>
 
-### -field <a id="TELEPHONY_PROVIDERCHANGEOP_CANCEL"></a><a id="telephony_providerchangeop_cancel"></a><b>TELEPHONY_PROVIDERCHANGEOP_CANCEL</b>
+### -field TELEPHONY_PROVIDERCHANGEOP_CANCEL
 
 <dd>
 <p>Specifies that single-radio voice call continuity (SRVCC) is being canceled, and that the audio driver should revert back to the pre-SRVCC state. The audio driver will update the provider call state to TELEPHONY_CALLSTATE_ENABLED in response to this value.</p>

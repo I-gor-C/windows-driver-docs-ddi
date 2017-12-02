@@ -59,19 +59,19 @@ VOID APIENTRY SetResourceMinLOD(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hResource</i> [in]
+### -param hResource [in]
 
 <dd>
 <p> A handle to the driver's private data for the resource. </p>
 </dd>
 
-### -param <i>MinLOD</i> [in]
+### -param MinLOD [in]
 
 <dd>
 <p> A single-precision float vector to set for the minimum level of detail (LOD) for the resource. </p>

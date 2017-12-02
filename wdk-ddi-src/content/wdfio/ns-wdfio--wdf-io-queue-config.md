@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_queue_config.htm
 old-project: wdf
 ms.assetid: aa8b64a7-eae9-444c-892f-841ca5a610cf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_IO_QUEUE_CONFIG, WDF_IO_QUEUE_CONFIG, *PWDF_IO_QUEUE_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,19 +74,19 @@ typedef struct _WDF_IO_QUEUE_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The length, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>DispatchType</b>
+### -field DispatchType
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-io-queue-dispatch-type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a> enumerator that identifies the request dispatching type for the queue.</p>
 </dd>
 
-### -field <b>PowerManaged</b>
+### -field PowerManaged
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed value that, if set to <b>WdfTrue</b>, indicates that the framework handles power management of the queue. </p>
@@ -96,77 +96,77 @@ typedef struct _WDF_IO_QUEUE_CONFIG {
 <p>For more information about power-managed I/O queues, see <a href="wdf.power_management_for_i_o_queues">Power Management for I/O Queues</a>. </p>
 </dd>
 
-### -field <b>AllowZeroLengthRequests</b>
+### -field AllowZeroLengthRequests
 
 <dd>
 <p>A Boolean value that, if <b>TRUE</b>, indicates that the driver expects to receive read or write requests that have a buffer length of zero, so the framework delivers these requests to the driver. If <b>FALSE</b>, the framework does not deliver these requests to the driver; instead, it completes them with a completion status of STATUS_SUCCESS.</p>
 </dd>
 
-### -field <b>DefaultQueue</b>
+### -field DefaultQueue
 
 <dd>
 <p>A Boolean value that, if <b>TRUE</b>, indicates that the queue will be the device's <a href="wdf.creating_i_o_queues">default I/O queue</a>. If <b>FALSE</b>, the queue will not be the device's default queue.</p>
 </dd>
 
-### -field <b>EvtIoDefault</b>
+### -field EvtIoDefault
 
 <dd>
 <p>A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt-wdf-io-queue-io-default.md">EvtIoDefault</a> callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtIoRead</b>
+### -field EvtIoRead
 
 <dd>
 <p>A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt-wdf-io-queue-io-read.md">EvtIoRead</a> callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtIoWrite</b>
+### -field EvtIoWrite
 
 <dd>
 <p>A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt-wdf-io-queue-io-write.md">EvtIoWrite</a> callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtIoDeviceControl</b>
+### -field EvtIoDeviceControl
 
 <dd>
 <p>A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt-wdf-io-queue-io-device-control.md">EvtIoDeviceControl</a> callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtIoInternalDeviceControl</b>
+### -field EvtIoInternalDeviceControl
 
 <dd>
 <p>A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt-wdf-io-queue-io-internal-device-control.md">EvtIoInternalDeviceControl</a> callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtIoStop</b>
+### -field EvtIoStop
 
 <dd>
 <p>A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt-wdf-io-queue-io-stop.md">EvtIoStop</a> callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtIoResume</b>
+### -field EvtIoResume
 
 <dd>
 <p>A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt-wdf-io-queue-io-resume.md">EvtIoResume</a> callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtIoCanceledOnQueue</b>
+### -field EvtIoCanceledOnQueue
 
 <dd>
 <p>A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt-wdf-io-queue-io-canceled-on-queue.md">EvtIoCanceledOnQueue</a> callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Settings</b>
+### -field Settings
 
 <dd>
 <dl>
 
-### -field <b>Parallel</b>
+### -field Parallel
 
 <dd>
 <dl>
 
-### -field <b>NumberOfPresentedRequests</b>
+### -field NumberOfPresentedRequests
 
 <dd>
 <p>For the parallel <a href="wdf.dispatching_methods_for_i_o_requests">dispatching method</a>, the maximum number of I/O requests that the framework asynchronously delivers to the I/O queue's request handlers. For more information, see the following Remarks section. For the sequential and manual dispatching methods, this member must be zero. This member is available in version 1.9 and later versions of KMDF.</p>
@@ -176,7 +176,7 @@ typedef struct _WDF_IO_QUEUE_CONFIG {
 </dl>
 </dd>
 
-### -field <b>Driver</b>
+### -field Driver
 
 <dd>
 <p>For internal use only.  Set to NULL. This member is available in version 1.11 and later versions of KMDF.
@@ -241,4 +241,4 @@ typedef struct _WDF_IO_QUEUE_CONFIG {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_QUEUE_CONFIG structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_QUEUE_CONFIG structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

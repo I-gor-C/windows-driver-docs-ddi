@@ -55,13 +55,13 @@ typedef struct _PMI_EVENT {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>A value that specifies the version of this structure. For Windows 7, Windows Server 2008 R2, and later versions of Windows, this value must be 1.</p>
 </dd>
 
-### -field <b>EventType</b>
+### -field EventType
 
 <dd>
 <p>A <a href="..\pmi\ne-pmi-pmi-event-type.md">PMI_EVENT_TYPE</a> enumeration value that specifies the PMI event type.</p>
@@ -145,7 +145,7 @@ typedef struct _PMI_EVENT {
 <a href="..\pmi\ni-pmi-ioctl-pmi-register-event-notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\pmi\ne-pmi-pmi-event-type.md">PMI_EVENT_TYPE</a>

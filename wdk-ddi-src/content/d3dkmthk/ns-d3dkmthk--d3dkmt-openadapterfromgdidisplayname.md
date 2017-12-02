@@ -57,25 +57,25 @@ typedef struct _D3DKMT_OPENADAPTERFROMGDIDISPLAYNAME {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceName</b>
+### -field DeviceName
 
 <dd>
 <p>[in] A Unicode string that contains the name of the GDI device from which to open an adapter instance. </p>
 </dd>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[out] A handle to the graphics adapter for the GDI device that <b>DeviceName</b> specifies. The adapter handle is returned from the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromgdidisplayname.md">D3DKMTOpenAdapterFromGdiDisplayName</a> function.</p>
 </dd>
 
-### -field <b>AdapterLuid</b>
+### -field AdapterLuid
 
 <dd>
 <p>[out] The locally unique identifier (<a href="kernel.luid">LUID</a>) of the graphics adapter for the GDI device that <b>DeviceName</b> specifies. The LUID is returned from the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromgdidisplayname.md">D3DKMTOpenAdapterFromGdiDisplayName</a> call.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[out] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for the GDI device that <b>DeviceName</b> specifies. The identification number is returned from the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromgdidisplayname.md">D3DKMTOpenAdapterFromGdiDisplayName</a> call.</p>

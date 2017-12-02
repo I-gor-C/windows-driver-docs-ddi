@@ -57,19 +57,19 @@ NTSTATUS ClfsMgmtRegisterManagedClient(
 ## -parameters
 <dl>
 
-### -param <i>LogFile</i> [in]
+### -param LogFile [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents the CLFS log stream that the client created by <b>ClfsMgmtRegisterManagedClient</b> will manage.</p>
 </dd>
 
-### -param <i>RegistrationData</i> [in]
+### -param RegistrationData [in]
 
 <dd>
 <p>An instance of the <a href="..\wdm\ns-wdm--clfs-mgmt-client-registration.md">CLFS_MGMT_CLIENT_REGISTRATION</a> structure that contains the functions that will be used to manage the log.</p>
 </dd>
 
-### -param <i>Client</i> [out]
+### -param Client [out]
 
 <dd>
 <p>A pointer to the client.</p>

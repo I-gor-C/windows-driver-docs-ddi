@@ -7,7 +7,7 @@ old-location: image\wiascreatechildappitem.htm
 old-project: image
 ms.assetid: 1dba59b0-5eac-4507-bd42-517a856aa864
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiasCreateChildAppItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ HRESULT _stdcall wiasCreateChildAppItem(
 ## -parameters
 <dl>
 
-### -param <i>pParentWiasContext</i> [in]
+### -param pParentWiasContext [in]
 
 <dd>
 <p>Pointer to the item context to which the child will be added.</p>
 </dd>
 
-### -param <i>lFlags</i> 
+### -param lFlags 
 
 <dd>
 <p>Is reserved for system use.  </p>
 </dd>
 
-### -param <i>bstrItemName</i> [in]
+### -param bstrItemName [in]
 
 <dd>
 <p>Specifies a string that contains the item name without path information.</p>
 </dd>
 
-### -param <i>bstrFullItemName</i> [in]
+### -param bstrFullItemName [in]
 
 <dd>
 <p>Specifies a string that contains the item name including path information.</p>
 </dd>
 
-### -param <i>ppWiasChildContext</i> [out]
+### -param ppWiasChildContext [out]
 
 <dd>
 <p>Pointer to a memory location that receives the address of the newly created child item's context.</p>
@@ -156,4 +156,4 @@ HRESULT _stdcall wiasCreateChildAppItem(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasCreateChildAppItem function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasCreateChildAppItem function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

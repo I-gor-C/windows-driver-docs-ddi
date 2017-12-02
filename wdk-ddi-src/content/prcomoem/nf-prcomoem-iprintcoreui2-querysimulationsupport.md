@@ -59,13 +59,13 @@ HRESULT QuerySimulationSupport(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd>
 <p>Specifies a handle to the printer.</p>
 </dd>
 
-### -param <i>dwLevel</i> [in]
+### -param dwLevel [in]
 
 <dd>
 <p>Specifies the spooler simulation capability structure returned in the buffer pointed to by <i>pCaps</i>. Currently, only level 1 of spooler simulation support is provided.</p>
@@ -87,19 +87,19 @@ HRESULT QuerySimulationSupport(
 <p> </p>
 </dd>
 
-### -param <i>pCaps</i> [out]
+### -param pCaps [out]
 
 <dd>
 <p>Pointer to the output buffer, which contains a structure of the type indicated by the value in the <i>dwLevel</i> parameter.</p>
 </dd>
 
-### -param <i>cbSize</i> [in]
+### -param cbSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the output buffer, which is pointed to by <i>pCaps</i>.</p>
 </dd>
 
-### -param <i>pcbNeeded</i> [out]
+### -param pcbNeeded [out]
 
 <dd>
 <p>Specifies the size, in bytes, of the memory needed to store a structure of the type indicated by <i>dwLevel</i>.</p>

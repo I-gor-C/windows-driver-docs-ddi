@@ -56,7 +56,7 @@ NTSTATUS  D3DKMTOpenProtectedSessionFromNtHandle(
 ## -parameters
 <dl>
 
-### -param <i>D3dkmt_openprotectedsessionfromnthandle</i> [in, out]
+### -param D3dkmt_openprotectedsessionfromnthandle [in, out]
 
 <dd>
 <p>Holds information to open the protected session.</p>

@@ -55,7 +55,7 @@ VOID IoFreeMdl(
 ## -parameters
 <dl>
 
-### -param <i>Mdl</i> [in]
+### -param Mdl [in]
 
 <dd>
 <p>Pointer to the MDL to be released. </p>

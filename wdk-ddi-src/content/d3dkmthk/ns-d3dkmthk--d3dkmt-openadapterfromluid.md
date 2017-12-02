@@ -55,13 +55,13 @@ typedef struct _D3DKMT_OPENADAPTERFROMLUID {
 ## -struct-fields
 <dl>
 
-### -field <b>AdapterLuid</b>
+### -field AdapterLuid
 
 <dd>
 <p> [in] A LUID that serves as an identifier for the device. <b>LUID</b> is defined in Dxgi.h.</p>
 </dd>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[out] A handle to the graphics adapter for the device that the <b>AdapterLuid</b> member specifies. The adapter handle is returned from a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromluid.md">D3DKMTOpenAdapterFromLuid</a> function.</p>

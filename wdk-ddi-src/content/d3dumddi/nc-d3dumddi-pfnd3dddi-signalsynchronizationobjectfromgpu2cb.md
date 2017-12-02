@@ -58,13 +58,13 @@ HRESULT APIENTRY CALLBACK* pfnSignalSynchronizationObjectFromGpu2Cb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device.</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicb-signalsynchronizationobjectfromgpu2.md">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2</a> structure that provides the details of the requested operation.

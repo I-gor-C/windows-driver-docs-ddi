@@ -57,25 +57,25 @@ typedef struct _KSP_BDA_NODE_PIN {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>KSPROPERTY structure that describes the property and request type of the property request.</p>
 </dd>
 
-### -field <b>ulNodeType</b>
+### -field ulNodeType
 
 <dd>
 <p>Index of the element in the zero-based array of internal node types (KSNODE_DESCRIPTOR array) that specifies the node type for which to retrieve the controlling pin. </p>
 </dd>
 
-### -field <b>ulInputPinId</b>
+### -field ulInputPinId
 
 <dd>
 <p>Identifier of an input pin of the filter.</p>
 </dd>
 
-### -field <b>ulOutputPinId</b>
+### -field ulOutputPinId
 
 <dd>
 <p>Identifier of an output pin of the filter.</p>

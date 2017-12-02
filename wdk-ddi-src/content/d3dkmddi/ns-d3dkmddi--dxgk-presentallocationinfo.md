@@ -58,31 +58,31 @@ typedef struct _DXGK_PRESENTALLOCATIONINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>hDeviceSpecificAllocation</b>
+### -field hDeviceSpecificAllocation
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>AllocationVirtualAddress</b>
+### -field AllocationVirtualAddress
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>PhysicalAddress</b>
+### -field PhysicalAddress
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>SegmentId</b>
+### -field SegmentId
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>PhysicalAdapterIndex</b>
+### -field PhysicalAdapterIndex
 
 <dd>
 <p>Reserved for system use.</p>

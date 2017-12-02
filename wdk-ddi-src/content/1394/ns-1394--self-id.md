@@ -7,7 +7,7 @@ old-location: ieee\self_id.htm
 old-project: IEEE
 ms.assetid: c168ca19-e4a7-484d-8aed-0b7e7033b760
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: SELF_ID, SELF_ID, *PSELF_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,37 +66,37 @@ typedef struct _SELF_ID {
 ## -struct-fields
 <dl>
 
-### -field <b>SID_Phys_ID</b>
+### -field SID_Phys_ID
 
 <dd>
 <p>Specifies the device node number. This member contains bits 0-5 of byte 0 of the self-ID packet. </p>
 </dd>
 
-### -field <b>SID_Packet_ID</b>
+### -field SID_Packet_ID
 
 <dd>
 <p>Must be PHY_PACKET_ID_SELF_ID. This member contains bits 6-7 of byte 0 of the self-ID packet. </p>
 </dd>
 
-### -field <b>SID_Gap_Count</b>
+### -field SID_Gap_Count
 
 <dd>
 <p>Specifies the current value of the node's PHY_CONFIGURATION register's gap_count member. This member contains bits 0-5 of byte 1 of the self-ID packet. </p>
 </dd>
 
-### -field <b>SID_Link_Active</b>
+### -field SID_Link_Active
 
 <dd>
 <p>One if the device's link and transaction layers are active, zero otherwise. This member contains bit 6 of byte 1 of the self-ID packet. </p>
 </dd>
 
-### -field <b>SID_Zero</b>
+### -field SID_Zero
 
 <dd>
 <p>Always zero. This member contains bit 7 of byte 1 of the self-ID packet. </p>
 </dd>
 
-### -field <b>SID_Power_Class</b>
+### -field SID_Power_Class
 
 <dd>
 <p>The possible power classes are:</p>
@@ -129,19 +129,19 @@ typedef struct _SELF_ID {
 <p>This member contains bits 0-2 of byte 2 of the self-ID packet. </p>
 </dd>
 
-### -field <b>SID_Contender</b>
+### -field SID_Contender
 
 <dd>
 <p>One if this node is a contender for bus or isochronous resource manager, zero otherwise. This member contains bit 3 of byte 2 of the self-ID packet. </p>
 </dd>
 
-### -field <b>SID_Delay</b>
+### -field SID_Delay
 
 <dd>
 <p>Currently always zero. This member contains bits 4-5 of byte 2 of the self-ID packet. </p>
 </dd>
 
-### -field <b>SID_Speed</b>
+### -field SID_Speed
 
 <dd>
 <p>Specifies the maximum data transfer rate that is supported by the node. This member must have one of the values specified in the following table.</p>
@@ -186,31 +186,31 @@ typedef struct _SELF_ID {
 <p> </p>
 </dd>
 
-### -field <b>SID_More_Packets</b>
+### -field SID_More_Packets
 
 <dd>
 <p>One if this packet will be followed by SELF_ID_MORE packets, zero otherwise. This member contains bit 0 of byte 3 of the self-ID packet. </p>
 </dd>
 
-### -field <b>SID_Initiated_Rst</b>
+### -field SID_Initiated_Rst
 
 <dd>
 <p>One if this node initiated the most recent bus reset, zero otherwise. This member contains bit 1 of byte 3 of the self-ID packet. </p>
 </dd>
 
-### -field <b>SID_Port3</b>
+### -field SID_Port3
 
 <dd>
 <p>Byte 3 - Bits 2-3</p>
 </dd>
 
-### -field <b>SID_Port2</b>
+### -field SID_Port2
 
 <dd>
 <p>Byte 3 - Bits 4-5</p>
 </dd>
 
-### -field <b>SID_Port1</b>
+### -field SID_Port1
 
 <dd>
 <p>Specifies port status. Possible values are:</p>
@@ -257,4 +257,4 @@ typedef struct _SELF_ID {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20SELF_ID structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20SELF_ID structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

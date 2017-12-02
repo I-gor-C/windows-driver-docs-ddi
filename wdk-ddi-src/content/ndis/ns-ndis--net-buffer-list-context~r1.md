@@ -7,7 +7,7 @@ old-location: netvista\net_buffer_list_context.htm
 old-project: netvista
 ms.assetid: e5d70be6-daa5-4d2e-94fd-5739edd8821e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NET_BUFFER_LIST_CONTEXT, NET_BUFFER_LIST_CONTEXT, *PNET_BUFFER_LIST_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,21 +58,21 @@ typedef struct _NET_BUFFER_LIST_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>Next</b>
+### -field Next
 
 <dd>
 <p>A pointer to the next NET_BUFFER_LIST_CONTEXT structure in a linked list of
      NET_BUFFER_LIST_CONTEXT structures.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of the entire context space in the NET_BUFFER_LIST_CONTEXT structure,
      including the used and unused context space.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>The offset, in bytes, from the beginning of the context data buffer to the start of the context
@@ -81,7 +81,7 @@ typedef struct _NET_BUFFER_LIST_CONTEXT {
      NET_BUFFER_LIST_CONTEXT structure.</p>
 </dd>
 
-### -field <b>ContextData</b>
+### -field ContextData
 
 <dd>
 <p>The context data buffer. The context data can include any information that a driver
@@ -204,4 +204,4 @@ typedef struct _NET_BUFFER_LIST_CONTEXT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER_LIST_CONTEXT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER_LIST_CONTEXT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

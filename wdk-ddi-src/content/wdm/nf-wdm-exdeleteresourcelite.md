@@ -55,7 +55,7 @@ NTSTATUS ExDeleteResourceLite(
 ## -parameters
 <dl>
 
-### -param <i>Resource</i> [in, out]
+### -param Resource [in, out]
 
 <dd>
 <p>A pointer to the caller-supplied storage for the initialized resource variable to be deleted.</p>
@@ -139,7 +139,7 @@ NTSTATUS ExDeleteResourceLite(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-exinitializeresourcelite.md">ExInitializeResourceLite</a>

@@ -54,7 +54,7 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_CORE_VIDEO_0020 {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnGetPageableSize</b>
+### -field pfnGetPageableSize
 
 <dd>
 <p>A pointer for a callback function to get pageable size. </p>

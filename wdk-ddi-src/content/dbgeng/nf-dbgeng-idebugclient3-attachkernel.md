@@ -7,7 +7,7 @@ old-location: debugger\attachkernel.htm
 old-project: debugger
 ms.assetid: eb861179-3567-4654-a702-40ee3319b27a
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugClient3, AttachKernel, IDebugClient3::AttachKernel
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT AttachKernel(
 ## -parameters
 <dl>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies the flags that control how the debugger attaches to the kernel target.  The possible values are:</p>
@@ -84,20 +84,20 @@ HRESULT AttachKernel(
 <p> </p>
 </dd>
 
-### -param <i>ConnectOptions</i> [in, optional]
+### -param ConnectOptions [in, optional]
 
 <dd>
 <p>Specifies the connection settings for communicating with the computer running the kernel target.  The interpretation of <i>ConnectOptions</i> depends on the value of <i>Flags</i>.</p>
 <p></p>
 <dl>
 
-### -param <a id="DEBUG_ATTACH_KERNEL_CONNECTION"></a><a id="debug_attach_kernel_connection"></a>DEBUG_ATTACH_KERNEL_CONNECTION
+### -param DEBUG_ATTACH_KERNEL_CONNECTION
 
 <dd>
 <p><i>ConnectOptions</i> will be interpreted the same way as the options that follow the <b>-k</b> switch on the WinDbg and KD command lines.  Environment variables affect <i>ConnectOptions</i> in the same way they affect the <b>-k</b> switch.</p>
 </dd>
 
-### -param <a id="DEBUG_ATTACH_EXDI_DRIVER"></a><a id="debug_attach_exdi_driver"></a>DEBUG_ATTACH_EXDI_DRIVER
+### -param DEBUG_ATTACH_EXDI_DRIVER
 
 <dd>
 <p>eXDI drivers are not described in this documentation.  If you have an eXDI interface to your hardware probe or hardware simulator, please contact Microsoft for debugging information.</p>
@@ -107,7 +107,7 @@ HRESULT AttachKernel(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 
@@ -169,4 +169,4 @@ HRESULT AttachKernel(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient::AttachKernel method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient::AttachKernel method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

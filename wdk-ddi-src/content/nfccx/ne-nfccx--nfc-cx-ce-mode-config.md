@@ -57,25 +57,25 @@ typedef enum _NFC_CX_CE_MODE_CONFIG {
 ## -enum-fields
 <dl>
 
-### -field <a id="NFC_CX_CE_NFC_A"></a><a id="nfc_cx_ce_nfc_a"></a><b>NFC_CX_CE_NFC_A</b>
+### -field NFC_CX_CE_NFC_A
 
 <dd>
 <p>Specifies NFC-A listening mode.</p>
 </dd>
 
-### -field <a id="NFC_CX_CE_NFC_B"></a><a id="nfc_cx_ce_nfc_b"></a><b>NFC_CX_CE_NFC_B</b>
+### -field NFC_CX_CE_NFC_B
 
 <dd>
 <p>Specifies NFC-B listening mode.</p>
 </dd>
 
-### -field <a id="NFC_CX_CE_NFC_F"></a><a id="nfc_cx_ce_nfc_f"></a><b>NFC_CX_CE_NFC_F</b>
+### -field NFC_CX_CE_NFC_F
 
 <dd>
 <p>Specifies NFC-F listening mode.</p>
 </dd>
 
-### -field <a id="NFC_CX_CE_DEFAULT"></a><a id="nfc_cx_ce_default"></a><b>NFC_CX_CE_DEFAULT</b>
+### -field NFC_CX_CE_DEFAULT
 
 <dd>
 <p>Specifies NFC-A, NFC-B, and NFC-F listening mode.</p>

@@ -59,13 +59,13 @@ VOID IoTimer(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure. This is the device object for the target device, previously created by the driver's <a href="kernel.adddevice">AddDevice</a> routine.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Caller-supplied pointer to driver-defined context information, specified in a previous call to <a href="..\wdm\nf-wdm-ioinitializetimer.md">IoInitializeTimer</a>.</p>
@@ -80,11 +80,11 @@ VOID IoTimer(
 
 <p>A driver can associate an <i>IoTimer</i> routine with each device object it creates. (You can use a single <i>IoTimer</i> routine with multiple device objects, or a separate routine with each device object.) To register an <i>IoTimer</i> routine, a driver must call <a href="..\wdm\nf-wdm-ioinitializetimer.md">IoInitializeTimer</a>, supplying the <i>IoTimer</i> routine's address and a device object pointer.</p>
 
-<p>To queue an <i>IoTimer</i> routine for execution, a driver routine must call <a href="..\ntifs\nf-ntifs-iostarttimer.md">IoStartTimer</a>. The system calls the <i>IoTimer</i> routine once per second until the driver calls <a href="..\ntifs\nf-ntifs-iostoptimer.md">IoStopTimer</a>.</p>
+<p>To queue an <i>IoTimer</i> routine for execution, a driver routine must call <a href="..\wdm\nf-wdm-iostarttimer.md">IoStartTimer</a>. The system calls the <i>IoTimer</i> routine once per second until the driver calls <a href="..\wdm\nf-wdm-iostoptimer.md">IoStopTimer</a>.</p>
 
 <p>For more information about <i>IoTimer</i> routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550386">IoTimer Routines</a>.</p>
 
-<p>To define an <i>IoTimer</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define an <i>IoTimer</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define an <i>IoTimer</i> callback routine that is named <code>MyIoTimer</code>, use the IO_TIMER_ROUTINE type as shown in this code example:</p>
 

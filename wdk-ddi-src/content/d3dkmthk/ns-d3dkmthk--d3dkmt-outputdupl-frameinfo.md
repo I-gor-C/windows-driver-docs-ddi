@@ -61,35 +61,35 @@ typedef struct _D3DKMT_OUTPUTDUPL_FRAMEINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>LastPresentTime</b>
+### -field LastPresentTime
 
 <dd></dd>
 
-### -field <b>LastMouseUpdateTime</b>
+### -field LastMouseUpdateTime
 
 <dd></dd>
 
-### -field <b>AccumulatedFrames</b>
+### -field AccumulatedFrames
 
 <dd></dd>
 
-### -field <b>RectsCoalesced</b>
+### -field RectsCoalesced
 
 <dd></dd>
 
-### -field <b>ProtectedContentMaskedOut</b>
+### -field ProtectedContentMaskedOut
 
 <dd></dd>
 
-### -field <b>PointerPosition</b>
+### -field PointerPosition
 
 <dd></dd>
 
-### -field <b>TotalMetadataBufferSize</b>
+### -field TotalMetadataBufferSize
 
 <dd></dd>
 
-### -field <b>PointerShapeBufferSize</b>
+### -field PointerShapeBufferSize
 
 <dd></dd>
 </dl>

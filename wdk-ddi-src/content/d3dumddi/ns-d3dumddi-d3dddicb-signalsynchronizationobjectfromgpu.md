@@ -60,31 +60,31 @@ typedef struct D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU {
 ## -struct-fields
 <dl>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] A kernel-mode handle to the context stream.</p>
 </dd>
 
-### -field <b>ObjectCount</b>
+### -field ObjectCount
 
 <dd>
 <p>[in] The number of synchronization events in the <b>ObjectHandleArray</b> array and fence values in <b>MonitoredFenceValueArray</b> arrays.</p>
 </dd>
 
-### -field <b>ObjectHandleArray</b>
+### -field ObjectHandleArray
 
 <dd>
 <p>[in] An array of kernel-mode handles to the synchronization events that the <b>hContext</b> member signals.</p>
 </dd>
 
-### -field <b>MonitoredFenceValueArray</b>
+### -field MonitoredFenceValueArray
 
 <dd>
 <p>[in] An array of 64-bit monitored fence values to signal, each of which correspond to a synchronization object in <b>ObjectHandleArray</b>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.

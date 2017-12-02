@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Granularity</b>
+### -field Granularity
 
 <dd>
 <p>Specifies the increment granularity of the clock in 100-nanosecond units, where 1 is the best.</p>
 </dd>
 
-### -field <b>Error</b>
+### -field Error
 
 <dd>
 <p>Specifies the +/- notification error of the clock in 100-nanosecond units, where 0 is the best, meaning the event notification granularity is as good as the increment granularity.</p>

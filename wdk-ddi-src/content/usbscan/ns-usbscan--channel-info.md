@@ -7,7 +7,7 @@ old-location: image\channel_info.htm
 old-project: image
 ms.assetid: 1f1cb952-9a63-461f-b70f-4cc41b8d88f8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: CHANNEL_INFO, CHANNEL_INFO, *PCHANNEL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _CHANNEL_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>EventChannelSize</b>
+### -field EventChannelSize
 
 <dd>
 <p>Maximum packet size for the interrupt transfer pipe.</p>
 </dd>
 
-### -field <b>uReadDataAlignment</b>
+### -field uReadDataAlignment
 
 <dd>
 <p>Maximum packet size for the bulk IN transfer pipe.</p>
 </dd>
 
-### -field <b>uWriteDataAlignment</b>
+### -field uWriteDataAlignment
 
 <dd>
 <p>Maximum packet size for the bulk OUT transfer pipe.</p>

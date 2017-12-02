@@ -60,43 +60,43 @@ typedef struct _DEVICE_DATA_SET_LB_PROVISIONING_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure, including the slab allocation bitmap, in bytes.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure.</p>
 </dd>
 
-### -field <b>SlabSizeInBytes</b>
+### -field SlabSizeInBytes
 
 <dd>
 <p>The size, in bytes, of a slab.</p>
 </dd>
 
-### -field <b>SlabOffsetDeltaInBytes</b>
+### -field SlabOffsetDeltaInBytes
 
 <dd>
 <p>The difference, in bytes, from the offset specified in the data set range to the starting slab position.</p>
 </dd>
 
-### -field <b>SlabAllocationBitMapBitCount</b>
+### -field SlabAllocationBitMapBitCount
 
 <dd>
 <p>The number of bits  in the allocation bitmap mapping  slabs for the data set range.</p>
 </dd>
 
-### -field <b>SlabAllocationBitMapLength</b>
+### -field SlabAllocationBitMapLength
 
 <dd>
 <p>The number of <b>ULONG</b> array values containing the slab allocation bitmap.</p>
 </dd>
 
-### -field <b>SlabAllocationBitMap</b>
+### -field SlabAllocationBitMap
 
 <dd>
 <p>A bitmap of slab allocations.</p>

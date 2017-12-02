@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest2_getqueryinformationparameters.htm
 old-project: wdf
 ms.assetid: e189d2f6-ef1c-45ed-8b55-8aae0661a426
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFIoRequest2, GetQueryInformationParameters, IWDFIoRequest2::GetQueryInformationParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ void GetQueryInformationParameters(
 ## -parameters
 <dl>
 
-### -param <i>pInformationClass</i> [out, optional]
+### -param pInformationClass [out, optional]
 
 <dd>
 <p>A pointer to a driver-allocated variable that receives a <a href="..\wudfddi_types\ne-wudfddi-types--wdf-file-information-class.md">WDF_FILE_INFORMATION_CLASS</a>-typed value. This pointer is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>pSizeInBytes</i> [out, optional]
+### -param pSizeInBytes [out, optional]
 
 <dd>
 <p>A pointer to a driver-allocated variable that receives the size, in bytes, of the file information. This pointer is optional and can be <b>NULL</b>.</p>
@@ -141,4 +141,4 @@ void GetQueryInformationParameters(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest2::GetQueryInformationParameters method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest2::GetQueryInformationParameters method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

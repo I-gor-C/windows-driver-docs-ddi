@@ -54,7 +54,7 @@ LONGLONG PsGetProcessCreateTimeQuadPart(
 ## -parameters
 <dl>
 
-### -param <i>Process</i> [in]
+### -param Process [in]
 
 <dd>
 <p>A pointer to the EPROCESS structure that represents the process. Drivers can use the <a href="kernel.psgetcurrentprocess">PsGetCurrentProcess</a> and <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a> routines to obtain a pointer to the EPROCESS structure for a process. </p>

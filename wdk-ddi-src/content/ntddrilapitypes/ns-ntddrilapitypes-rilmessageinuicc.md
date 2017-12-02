@@ -7,7 +7,7 @@ old-location: netvista\rilmessageinuicc.htm
 old-project: netvista
 ms.assetid: 71f48863-06dd-4ea1-a8b7-fdf673090fe0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMESSAGEINUICC, RILMESSAGEINUICC, *LPRILMESSAGEINUICC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _RILMESSAGEINUICC {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwIndex</b>
+### -field dwIndex
 
 <dd></dd>
 </dl>

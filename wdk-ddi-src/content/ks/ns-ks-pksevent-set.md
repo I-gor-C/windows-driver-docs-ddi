@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Set</b>
+### -field Set
 
 <dd>
 <p>Specifies a GUID that identifies the event set. For more information about defined event sets, see <b>Remarks</b>.</p>
 </dd>
 
-### -field <b>EventsCount</b>
+### -field EventsCount
 
 <dd>
 <p>Specifies the number of events in the event set.</p>
 </dd>
 
-### -field <b>EventItem</b>
+### -field EventItem
 
 <dd>
 <p>Points to the beginning of the array of <a href="stream.ksevent_item">KSEVENT_ITEM</a> structures that describe each event in the event set. The size of the array is in the <b>EventsCount</b> member.</p>

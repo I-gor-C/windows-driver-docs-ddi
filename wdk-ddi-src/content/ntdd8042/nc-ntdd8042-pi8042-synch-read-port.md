@@ -59,19 +59,19 @@ NTSTATUS SynchReadPort(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to a context supplied by I8042prt.</p>
 </dd>
 
-### -param <i>Value</i> [out]
+### -param Value [out]
 
 <dd>
 <p>Pointer to the UCHAR value returned by the routine.</p>
 </dd>
 
-### -param <i>WaitForACK</i> [in]
+### -param WaitForACK [in]
 
 <dd>
 <p>Not used.</p>

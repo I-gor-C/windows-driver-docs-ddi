@@ -55,7 +55,7 @@ typedef struct _USB_MI_PARENT_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfInterfaces</b>
+### -field NumberOfInterfaces
 
 <dd>
 <p>The number of interfaces on the composite device.</p>

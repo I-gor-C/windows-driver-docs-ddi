@@ -7,13 +7,13 @@ old-location: debugger\gettypesize.htm
 old-project: debugger
 ms.assetid: 5532799d-5c3b-41ba-ab62-dca9c9d9eb56
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: GetTypeSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -55,7 +55,7 @@ __inline ULONG GetTypeSize(
 ## -parameters
 <dl>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>Specifies the type to return the size of.</p>
@@ -86,7 +86,7 @@ __inline ULONG GetTypeSize(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

@@ -56,19 +56,19 @@ typedef enum _BarcodeSymbologyDecodeLengthType {
 ## -enum-fields
 <dl>
 
-### -field <a id="DecodeLengthType_AnyLength"></a><a id="decodelengthtype_anylength"></a><a id="DECODELENGTHTYPE_ANYLENGTH"></a><b>DecodeLengthType_AnyLength</b>
+### -field DecodeLengthType_AnyLength
 
 <dd>
 <p>Decode length can be any length.</p>
 </dd>
 
-### -field <a id="DecodeLengthType_Discrete"></a><a id="decodelengthtype_discrete"></a><a id="DECODELENGTHTYPE_DISCRETE"></a><b>DecodeLengthType_Discrete</b>
+### -field DecodeLengthType_Discrete
 
 <dd>
 <p>Decode length is two discrete values</p>
 </dd>
 
-### -field <a id="DecodeLengthType_Range"></a><a id="decodelengthtype_range"></a><a id="DECODELENGTHTYPE_RANGE"></a><b>DecodeLengthType_Range</b>
+### -field DecodeLengthType_Range
 
 <dd>
 <p>Decode length is is a range of values.</p>

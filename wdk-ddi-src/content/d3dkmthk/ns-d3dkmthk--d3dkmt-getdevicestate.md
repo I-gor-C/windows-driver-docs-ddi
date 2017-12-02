@@ -60,31 +60,31 @@ typedef struct _D3DKMT_GETDEVICESTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the device that status is requested for.</p>
 </dd>
 
-### -field <b>StateType</b>
+### -field StateType
 
 <dd>
 <p>[in] A <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-devicestate-type.md">D3DKMT_DEVICESTATE_TYPE</a>-typed value that indicates the type of status to retrieve for the device.</p>
 </dd>
 
-### -field <b>ExecutionState</b>
+### -field ExecutionState
 
 <dd>
 <p>[out] A <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-deviceexecution-state.md">D3DKMT_DEVICEEXECUTION_STATE</a>-typed value that indicates the execution status of the device. The union that is contained in D3DKMT_GETDEVICESTATE holds a value from this enumeration if the <b>StateType</b> member is D3DKMT_DEVICESTATE_EXECUTION. </p>
 </dd>
 
-### -field <b>PresentState</b>
+### -field PresentState
 
 <dd>
 <p>[in/out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-devicepresent-state.md">D3DKMT_DEVICEPRESENT_STATE</a> structure that describes parameters for retrieving the present status of the device. The union that is contained in D3DKMT_GETDEVICESTATE holds a structure of this type if the <b>StateType</b> member is D3DKMT_DEVICESTATE_PRESENT. </p>
 </dd>
 
-### -field <b>ResetState</b>
+### -field ResetState
 
 <dd>
 <p>[out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-devicereset-state.md">D3DKMT_DEVICERESET_STATE</a> structure that describes the reset status of the device. The union that is contained in D3DKMT_GETDEVICESTATE holds a structure of this type if the <b>StateType</b> member is D3DKMT_DEVICESTATE_RESET. </p>

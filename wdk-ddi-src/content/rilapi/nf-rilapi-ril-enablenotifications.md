@@ -7,7 +7,7 @@ old-location: netvista\ril_enablenotifications.htm
 old-project: netvista
 ms.assetid: 560cb5a3-ac15-4a11-977a-b66caefc2f6b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_EnableNotifications
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_EnableNotifications(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>usersContext</i> 
+### -param usersContext 
 
 <dd></dd>
 
-### -param <i>lpdwNotifications</i> 
+### -param lpdwNotifications 
 
 <dd></dd>
 
-### -param <i>dwNotificationCount</i> 
+### -param dwNotificationCount 
 
 <dd></dd>
 </dl>

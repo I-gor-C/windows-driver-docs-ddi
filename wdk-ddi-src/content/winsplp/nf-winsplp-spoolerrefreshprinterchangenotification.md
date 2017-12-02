@@ -58,19 +58,19 @@ BOOL WINAPI SpoolerRefreshPrinterChangeNotification(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd></dd>
 
-### -param <i>dwColor</i> [in]
+### -param dwColor [in]
 
 <dd></dd>
 
-### -param <i>pOptions</i> [in]
+### -param pOptions [in]
 
 <dd></dd>
 
-### -param <i>ppInfo</i> [in, out, optional]
+### -param ppInfo [in, out, optional]
 
 <dd></dd>
 </dl>

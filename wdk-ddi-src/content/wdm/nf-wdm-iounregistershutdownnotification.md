@@ -55,7 +55,7 @@ VOID IoUnregisterShutdownNotification(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the driver's device object.</p>

@@ -59,25 +59,25 @@ BOOLEAN __inline AtaPortRegistryControllerKeyRead(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the channel extension. </p>
 </dd>
 
-### -param <i>ControllerNumber</i> [in]
+### -param ControllerNumber [in]
 
 <dd>
 <p>Contains the controller number. </p>
 </dd>
 
-### -param <i>ValueName</i> [in]
+### -param ValueName [in]
 
 <dd>
 <p>Contains the name of the registry value to read. </p>
 </dd>
 
-### -param <i>ValueType</i> [in]
+### -param ValueType [in]
 
 <dd>
 <p>Indicates the type of the data that is contained in the registry value. This parameter should be assigned one of values indicated in the following table.</p>
@@ -114,13 +114,13 @@ BOOLEAN __inline AtaPortRegistryControllerKeyRead(
 <p> </p>
 </dd>
 
-### -param <i>Buffer</i> [out, optional]
+### -param Buffer [out, optional]
 
 <dd>
 <p>A pointer to the buffer where the results are to be copied. </p>
 </dd>
 
-### -param <i>Length</i> [in, out]
+### -param Length [in, out]
 
 <dd>
 <p>A pointer to the number of bytes of data to copy. If the operation fails because of an insufficient buffer, the location that is pointed to by <i>Length</i> will update to the actual length of the data in the registry.</p>

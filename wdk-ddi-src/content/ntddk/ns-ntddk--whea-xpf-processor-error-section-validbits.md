@@ -61,37 +61,37 @@ typedef union _WHEA_XPF_PROCESSOR_ERROR_SECTION_VALIDBITS {
 ## -struct-fields
 <dl>
 
-### -field <b>LocalAPICId</b>
+### -field LocalAPICId
 
 <dd>
 <p>A single bit that indicates that the <b>LocalAPICId</b> member of the WHEA_XPF_PROCESSOR_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>CpuId</b>
+### -field CpuId
 
 <dd>
 <p>A single bit that indicates that the <b>CpuId</b> member of the WHEA_XPF_PROCESSOR_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>ProcInfoCount</b>
+### -field ProcInfoCount
 
 <dd>
 <p>The number of <a href="..\ntddk\ns-ntddk--whea-xpf-procinfo.md">WHEA_XPF_PROCINFO</a> structures that are contained in the WHEA_XPF_PROCESSOR_ERROR_SECTION structure's <b>VariableInfo</b> member.</p>
 </dd>
 
-### -field <b>ContextInfoCount</b>
+### -field ContextInfoCount
 
 <dd>
 <p>The number of <a href="..\ntddk\ns-ntddk--whea-xpf-context-info.md">WHEA_XPF_CONTEXT_INFO</a> structures that are contained in the WHEA_XPF_PROCESSOR_ERROR_SECTION structure's <b>VariableInfo</b> member.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>ValidBits</b>
+### -field ValidBits
 
 <dd>
 <p>A ULONGLONG representation of the contents of the WHEA_XPF_PROCESSOR_ERROR_SECTION_VALIDBITS union.</p>

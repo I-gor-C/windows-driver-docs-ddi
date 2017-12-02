@@ -7,7 +7,7 @@ old-location: netvista\wdi_rx_indication_level.htm
 old-project: netvista
 ms.assetid: 73ad8d04-c245-4a3c-92ff-4729737ede92
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,55 +62,55 @@ typedef enum _WDI_RX_INDICATION_LEVEL {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_RX_INDICATION_DISPATCH_GENERAL"></a><a id="wdi_rx_indication_dispatch_general"></a><b>WDI_RX_INDICATION_DISPATCH_GENERAL</b>
+### -field WDI_RX_INDICATION_DISPATCH_GENERAL
 
 <dd>
 <p>Used for subsequent data indications in a DPC. <b>WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC</b> is used for the first data indication of a DPC.</p>
 </dd>
 
-### -field <a id="WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC"></a><a id="wdi_rx_indication_dispatch_first_of_dpc"></a><b>WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC</b>
+### -field WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC
 
 <dd>
 <p>Used for the first data indication (<a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-rx-inorder-data-ind.md">NdisWdiRxInorderDataIndication</a>) of a DPC.</p>
 </dd>
 
-### -field <a id="WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES"></a><a id="wdi_rx_indication_from_rx_resume_frames"></a><b>WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES</b>
+### -field WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES
 
 <dd>
 <p>Used when making data indications in the context of <a href="..\dot11wdi\nc-dot11wdi-miniport-wdi-rx-resume.md">MiniportWdiRxResume</a>.</p>
 </dd>
 
-### -field <a id="WDI_RX_INDICATION_PASSIVE"></a><a id="wdi_rx_indication_passive"></a><b>WDI_RX_INDICATION_PASSIVE</b>
+### -field WDI_RX_INDICATION_PASSIVE
 
 <dd>
 <p>Used when making data indications at passive level.</p>
 </dd>
 
-### -field <a id="WDI_RX_INDICATION_FLAG_RESOURCES"></a><a id="wdi_rx_indication_flag_resources"></a><b>WDI_RX_INDICATION_FLAG_RESOURCES</b>
+### -field WDI_RX_INDICATION_FLAG_RESOURCES
 
 <dd>
 <p>Bitwise OR’d with other enum values to cause RxMgr to set <b>NDIS_RECEIVE_FLAG_RESOURCES</b>.</p>
 </dd>
 
-### -field <a id="WDI_RX_INDICATION_DISPATCH_GENERAL_WITH_LOW_RESOURCES"></a><a id="wdi_rx_indication_dispatch_general_with_low_resources"></a><b>WDI_RX_INDICATION_DISPATCH_GENERAL_WITH_LOW_RESOURCES</b>
+### -field WDI_RX_INDICATION_DISPATCH_GENERAL_WITH_LOW_RESOURCES
 
 <dd>
 <p>Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_DISPATCH_GENERAL</b>.</p>
 </dd>
 
-### -field <a id="WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC_WITH_LOW_RESSOURCES"></a><a id="wdi_rx_indication_dispatch_first_of_dpc_with_low_ressources"></a><b>WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC_WITH_LOW_RESSOURCES</b>
+### -field WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC_WITH_LOW_RESSOURCES
 
 <dd>
 <p>Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC</b>.</p>
 </dd>
 
-### -field <a id="WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES_WITH_LOW_RESOURCES"></a><a id="wdi_rx_indication_from_rx_resume_frames_with_low_resources"></a><b>WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES_WITH_LOW_RESOURCES</b>
+### -field WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES_WITH_LOW_RESOURCES
 
 <dd>
 <p>Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES</b>.</p>
 </dd>
 
-### -field <a id="WDI_RX_INDICATION_PASSIVE_WITH_LOW_RESOURCES"></a><a id="wdi_rx_indication_passive_with_low_resources"></a><b>WDI_RX_INDICATION_PASSIVE_WITH_LOW_RESOURCES</b>
+### -field WDI_RX_INDICATION_PASSIVE_WITH_LOW_RESOURCES
 
 <dd>
 <p>Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_PASSIVE</b>.</p>

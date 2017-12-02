@@ -59,32 +59,32 @@ typedef struct _D3DKMDT_VIDPN_SOURCE_MODE {
 ## -struct-fields
 <dl>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>An integer that identifies the source mode. The identifier is generated and filled in by the VidPN manager. However, the display miniport driver has the option of overwriting the identifier. For more information, see <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpnsourcemodeset-createnewmodeinfo.md">pfnCreateNewModeInfo</a>.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-source-mode-type.md">D3DKMDT_VIDPN_SOURCE_MODE_TYPE</a> enumerator that indicates the mode type: graphics or text.</p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>A union that contains information about either the graphics rendering format or the text format in the following members. 
 </p>
 <dl>
 
-### -field <b>Graphics</b>
+### -field Graphics
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-graphics-rendering-format.md">D3DKMDT_GRAPHICS_RENDERING_FORMAT</a> structure that contains information about the graphics rendering format (for example, primary surface size and pixel format). This member is meaningful only if the <b>Type</b> member is equal to D3DKMDT_RMT_GRAPHICS.</p>
 </dd>
 
-### -field <b>Text</b>
+### -field Text
 
 <dd>
 <p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-text-rendering-format.md">D3DKMDT_TEXT_RENDERING_FORMAT</a> enumerator that indicates the text format. This member is meaningful only if the <b>Type</b> member is equal to D3DKMDT_RMT_TEXT.</p>

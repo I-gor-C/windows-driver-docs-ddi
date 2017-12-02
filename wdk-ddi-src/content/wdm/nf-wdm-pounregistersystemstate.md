@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>PoUnregisterSystemState</b> routine cancels a system state registration created by <a href="..\ntifs\nf-ntifs-poregistersystemstate.md">PoRegisterSystemState</a>.</p>
+<p>The <b>PoUnregisterSystemState</b> routine cancels a system state registration created by <a href="..\wdm\nf-wdm-poregistersystemstate.md">PoRegisterSystemState</a>.</p>
 
 
 ## -syntax
@@ -55,7 +55,7 @@ VOID PoUnregisterSystemState(
 ## -parameters
 <dl>
 
-### -param <i>StateHandle</i> [in, out]
+### -param StateHandle [in, out]
 
 <dd>
 <p>A pointer to a handle previously returned by <b>PoRegisterSystemState</b>.</p>
@@ -131,7 +131,7 @@ VOID PoUnregisterSystemState(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\nf-ntifs-poregistersystemstate.md">PoRegisterSystemState</a>
+<a href="..\wdm\nf-wdm-poregistersystemstate.md">PoRegisterSystemState</a>
 </dt>
 </dl>
 <p> </p>

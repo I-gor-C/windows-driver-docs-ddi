@@ -55,7 +55,7 @@ typedef struct _POWER_PLATFORM_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>AoAc</b>
+### -field AoAc
 
 <dd>
 <p>Indicates whether the system supports the connected standby power model.</p>

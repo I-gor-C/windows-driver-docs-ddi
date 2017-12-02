@@ -7,7 +7,7 @@ old-location: netvista\dot11_eap_result.htm
 old-project: netvista
 ms.assetid: 90898f5c-ffc1-4e6c-a8f8-ba839f449082
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_EAP_RESULT, DOT11_EAP_RESULT, *PDOT11_EAP_RESULT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,14 +54,14 @@ typedef struct _DOT11_EAP_RESULT {
 ## -struct-fields
 <dl>
 
-### -field <b>dwFailureReasonCode</b>
+### -field dwFailureReasonCode
 
 <dd>
 <p>The reason code returned by the EAP method. The meaning of the code is specific to the EAP
      method.</p>
 </dd>
 
-### -field <b>pAttribArray</b>
+### -field pAttribArray
 
 <dd>
 <p>A pointer to an EAP_ATTRIBUTES array structure that contains the EAP attributes returned by the

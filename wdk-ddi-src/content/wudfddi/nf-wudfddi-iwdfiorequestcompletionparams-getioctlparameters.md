@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequestcompletionparams_getioctlparameters.htm
 old-project: wdf
 ms.assetid: 59e2cd27-ec10-46e9-aa0d-4a00e2684e76
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFIoRequestCompletionParams, GetIoctlParameters, IWDFIoRequestCompletionParams::GetIoctlParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,42 +61,42 @@ void GetIoctlParameters(
 ## -parameters
 <dl>
 
-### -param <i>pIoControlCode</i> [out, optional]
+### -param pIoControlCode [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives the control code that identifies the specific operation to be performed. </p>
 <p>This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information. </p>
 </dd>
 
-### -param <i>ppInputMemory</i> [out, optional]
+### -param ppInputMemory [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface for access to the input buffer for the completion of the device I/O control request. </p>
 <p>This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information. </p>
 </dd>
 
-### -param <i>pInputMemoryOffset</i> [out, optional]
+### -param pInputMemoryOffset [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives the offset, in bytes, into the input buffer for the completion of the I/O control request. </p>
 <p>This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information. </p>
 </dd>
 
-### -param <i>ppOutputMemory</i> [out, optional]
+### -param ppOutputMemory [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface for access to the output buffer for the completion of the device I/O control request. </p>
 <p>This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information. </p>
 </dd>
 
-### -param <i>pOutputMemoryOffset</i> [out, optional]
+### -param pOutputMemoryOffset [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives the offset, in bytes, into the output buffer for the completion of the I/O control request. </p>
 <p>This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information. </p>
 </dd>
 
-### -param <i>pOutBytes</i> [out, optional]
+### -param pOutBytes [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives the number of bytes that are output for the completion of the device I/O control request.</p>
@@ -171,4 +171,4 @@ void GetIoctlParameters(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequestCompletionParams::GetIoctlParameters method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequestCompletionParams::GetIoctlParameters method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

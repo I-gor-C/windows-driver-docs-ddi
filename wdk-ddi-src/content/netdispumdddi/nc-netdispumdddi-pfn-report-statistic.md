@@ -60,13 +60,13 @@ VOID ReportStatistic(
 ## -parameters
 <dl>
 
-### -param <i>hMiracastDeviceHandle</i> [in]
+### -param hMiracastDeviceHandle [in]
 
 <dd>
 <p>A handle that represents a Miracast device. The Miracast user-mode driver previously obtained this handle as the <i>hMiracastDeviceHandle</i> parameter in a call to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-create-miracast-context.md">CreateMiracastContext</a> function.</p>
 </dd>
 
-### -param <i>pStatistics</i> [in]
+### -param pStatistics [in]
 
 <dd>
 <p>A pointer to a <a href="..\netdispumdddi\ns-netdispumdddi-miracast-statistic-data.md">MIRACAST_STATISTIC_DATA</a> structure that contains the statistics data.</p>

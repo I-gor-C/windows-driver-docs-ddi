@@ -7,7 +7,7 @@ old-location: ifsk\fltquerydirectoryfile.htm
 old-project: ifsk
 ms.assetid: d77dfcc7-a7a7-4027-9831-42b1b79738d0
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltQueryDirectoryFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,31 +62,31 @@ NTSTATUS FltQueryDirectoryFile(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>Opaque pointer to the minifilter driver instance that initiates the I/O.</p>
 </dd>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to the file object that represents the directory to be scanned.</p>
 </dd>
 
-### -param <i>FileInformation</i> [out]
+### -param FileInformation [out]
 
 <dd>
 <p>Pointer to a buffer that receives the desired information about the file. The structure of the information returned in the buffer is defined by the <i>FileInformationClass</i> parameter.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Size, in bytes, of the buffer pointed to by <i>FileInformation</i>. The caller should set this parameter according to the given <i>FileInformationClass</i>.</p>
 </dd>
 
-### -param <i>FileInformationClass</i> [in]
+### -param FileInformationClass [in]
 
 <dd>
 <p>Type of information to be returned about files in the directory. One of the values in the following table can be used.</p>
@@ -163,26 +163,26 @@ NTSTATUS FltQueryDirectoryFile(
 <p> </p>
 </dd>
 
-### -param <i>ReturnSingleEntry</i> [in]
+### -param ReturnSingleEntry [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if only a single entry should be returned, <b>FALSE</b> otherwise. If this parameter is <b>TRUE</b>, <b>FltQueryDirectoryFile</b> returns only the first entry that is found.</p>
 </dd>
 
-### -param <i>FileName</i> [in, optional]
+### -param FileName [in, optional]
 
 <dd>
 <p>Pointer to a caller-allocated Unicode string that contains the name of a file (or multiple files, if wildcards are used) within the directory specified by <i>FileObject</i>. This parameter is optional and can be <b>NULL</b>. </p>
 <p>If <i>FileName</i> is not <b>NULL</b>, only files whose names match the <i>FileName</i> string are included in the directory scan. If <i>FileName</i> is <b>NULL</b>, all files are included. If <i>RestartScan</i> is <b>FALSE</b>, the value of <i>FileName</i> is ignored.</p>
 </dd>
 
-### -param <i>RestartScan</i> [in]
+### -param RestartScan [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if the scan is to start at the first entry in the directory. Set to <b>FALSE</b> if resuming the scan from a previous call. The caller must set this parameter to <b>TRUE</b> when calling <b>FltQueryDirectoryFile </b>for the first time.</p>
 </dd>
 
-### -param <i>LengthReturned</i> [out, optional]
+### -param LengthReturned [out, optional]
 
 <dd>
 <p>Receives the number of bytes actually written to the given <i>FileInformation</i> buffer.</p>
@@ -325,4 +325,4 @@ NTSTATUS FltQueryDirectoryFile(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryDirectoryFile routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryDirectoryFile routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

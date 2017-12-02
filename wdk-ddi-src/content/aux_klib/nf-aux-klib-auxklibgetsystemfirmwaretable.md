@@ -58,7 +58,7 @@ NTSTATUS AuxKlibGetSystemFirmwareTable(
 ## -parameters
 <dl>
 
-### -param <i>FirmwareTableProviderSignature</i> [in]
+### -param FirmwareTableProviderSignature [in]
 
 <dd>
 <p>The identifier of the firmware table provider to which the query is to be directed. This parameter can be one of the following values.</p>
@@ -95,7 +95,7 @@ NTSTATUS AuxKlibGetSystemFirmwareTable(
 <p> </p>
 </dd>
 
-### -param <i>FirmwareTableID</i> [in]
+### -param FirmwareTableID [in]
 
 <dd>
 <p>The identifier of the firmware table. The characters in the identifier are in little-endian order.</p>
@@ -104,19 +104,19 @@ NTSTATUS AuxKlibGetSystemFirmwareTable(
 <p>In this example, <code>pBuffer</code> points to the caller-allocated buffer, <code>BUFSIZE</code> is the size in bytes of this buffer, and <code>dataSize</code> is a variable to which the routine writes the number of bytes written to the buffer. For more information about the <b>DESCRIPTION_HEADER</b> structure, see the Advanced Configuration and Power Interface Specification at the <a href="http://go.microsoft.com/fwlink/p/?linkid=57185">Advanced Configuration and Power Interface</a> website.</p>
 </dd>
 
-### -param <i>FirmwareTableBuffer</i> [out, optional]
+### -param FirmwareTableBuffer [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives the list of firmware tables. If this parameter is NULL, the value written to *<i>ReturnLength</i> is the required buffer size. For more information about the contents of this buffer, see the Remarks section.</p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>The size, in bytes, of the buffer pointed to by <i>FirmwareTableBuffer</i>.</p>
 </dd>
 
-### -param <i>ReturnLength</i> [out, optional]
+### -param ReturnLength [out, optional]
 
 <dd>
 <p>A pointer to a location to which the routine writes the number of bytes of data written to the buffer pointed to by <i>FirmwareTableBuffer</i>.</p>

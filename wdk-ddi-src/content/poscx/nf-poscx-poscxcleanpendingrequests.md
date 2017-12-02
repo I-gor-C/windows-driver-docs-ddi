@@ -59,13 +59,13 @@ VOID PosCxCleanPendingRequests(
 ## -parameters
 <dl>
 
-### -param <i>device</i> [in]
+### -param device [in]
 
 <dd>
 <p>A handle to a framework device object that represents the device.</p>
 </dd>
 
-### -param <i>callerFileObj</i> [in, optional]
+### -param callerFileObj [in, optional]
 
 <dd>
 <p>      A handle to a framework file object for which all pending requests should be 
@@ -73,7 +73,7 @@ VOID PosCxCleanPendingRequests(
           cancelled, or NULL to cancel all pending requests.</p>
 </dd>
 
-### -param <i>completionStatus</i> [in]
+### -param completionStatus [in]
 
 <dd>
 <p>An appropriate NTSTATUS error code that indicates success or failure.</p>

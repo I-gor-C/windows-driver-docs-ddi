@@ -56,19 +56,19 @@ typedef struct _CIP_HDR2_FDF {
 ## -struct-fields
 <dl>
 
-### -field <b>FDF</b>
+### -field FDF
 
 <dd>
 <p>Format dependent field. This is not used for opening a stream. These must be set to 0.</p>
 </dd>
 
-### -field <b>FMT</b>
+### -field FMT
 
 <dd>
 <p>CIP format. For example, 000000 = DV and 100000 = MPEG2TS.</p>
 </dd>
 
-### -field <b>Bit10</b>
+### -field Bit10
 
 <dd>
 <p>Must be set to 1:0</p>

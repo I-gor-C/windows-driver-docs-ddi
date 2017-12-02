@@ -7,7 +7,7 @@ old-location: netvista\ndismsetvirtualfunctionbusdata.htm
 old-project: netvista
 ms.assetid: 74c6789e-22a6-42e9-bc14-8b9f93da668b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMSetVirtualFunctionBusData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ ULONG NdisMSetVirtualFunctionBusData(
 ## -parameters
 <dl>
 
-### -param <i>NdisMiniportHandle</i> [in]
+### -param NdisMiniportHandle [in]
 
 <dd>
 <p>The network adapter handle that NDIS passed to the 
@@ -66,19 +66,19 @@ ULONG NdisMSetVirtualFunctionBusData(
      <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>.</p>
 </dd>
 
-### -param <i>VFId</i> [in]
+### -param VFId [in]
 
 <dd>
 <p>The identifier of the VF to which data is written to its  PCI configuration space.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to a buffer that contains the data to be written to the PCI configuration space.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>The offset, in units of bytes, in the PCI configuration space to which data is written.
@@ -86,7 +86,7 @@ ULONG NdisMSetVirtualFunctionBusData(
 </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length, in units of bytes, of the data to be written.</p>
@@ -100,9 +100,9 @@ ULONG NdisMSetVirtualFunctionBusData(
 <p>The PF miniport driver typically calls <b>NdisMSetVirtualFunctionBusData</b> when it handles an OID method request of  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451925">OID_SRIOV_WRITE_VF_CONFIG_SPACE</a>.  
 However, the driver can call this function any time after virtualization has been enabled on the network adapter through a call to <a href="..\ndis\nf-ndis-ndismenablevirtualization.md">NdisMEnableVirtualization</a>.</p>
 
-<p>For more information about backchannel communication within the single root I/O virtualization (SR-IOV) interface, see <a href="NULL">SR-IOV PF/VF Backchannel Communication</a>.</p>
+<p>For more information about backchannel communication within the single root I/O virtualization (SR-IOV) interface, see <a href="netvista.sr_iov_pf_vf_backchannel_communication">SR-IOV PF/VF Backchannel Communication</a>.</p>
 
-<p>For more information about the SR-IOV interface, see 	<a href="NULL">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
+<p>For more information about the SR-IOV interface, see 	<a href="netvista.overview_of_single_root_i_o_virtualization__sr-iov_">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
 
 <p>If an independent hardware vendor (IHV) provides a virtual bus driver (VBD) as part of its SR-IOV <a href="devinst.driver_packages">driver package</a>, its miniport driver must not call <b>NdisMSetVirtualFunctionBusData</b>. Instead, the driver must interface with the VBD through a private communication channel, and request that the VBD call <a href="..\wdm\nc-wdm-set-virtual-device-data.md">SetVirtualFunctionData</a>. This function is exposed from the <a href="kernel.guid_pci_virtualization_interface">GUID_PCI_VIRTUALIZATION_INTERFACE</a> interface that is supported by the underlying PCI bus driver.</p>
 
@@ -195,4 +195,4 @@ However, the driver can call this function any time after virtualization has bee
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMSetVirtualFunctionBusData function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMSetVirtualFunctionBusData function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

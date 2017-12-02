@@ -58,31 +58,31 @@ typedef struct DXGI_GAMMA_CONTROL_CAPABILIITES {
 ## -struct-fields
 <dl>
 
-### -field <b>ScaleAndOffsetSupported</b>
+### -field ScaleAndOffsetSupported
 
 <dd>
 <p>[out] A BOOL value that indicates whether the device supports scale and offset. <b>TRUE</b> indicates that the device supports scale and offset; <b>FALSE</b> indicates that the device does not support scale and offset. </p>
 </dd>
 
-### -field <b>MaxConvertedValue</b>
+### -field MaxConvertedValue
 
 <dd>
 <p>[out] A single-precision float vector for the maximum converted value for the gamma control. </p>
 </dd>
 
-### -field <b>MinConvertedValue</b>
+### -field MinConvertedValue
 
 <dd>
 <p>[out] A single-precision float vector for the minimum converted value for the gamma control. </p>
 </dd>
 
-### -field <b>NumGammaControlPoints</b>
+### -field NumGammaControlPoints
 
 <dd>
 <p>[out] The number of elements in the array that the <b>ControlPointPositions</b> member specifies. </p>
 </dd>
 
-### -field <b>ControlPointPositions</b>
+### -field ControlPointPositions
 
 <dd>
 <p>[out] An array of single-precision float vectors that describe the gamma control point positions. </p>

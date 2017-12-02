@@ -7,7 +7,7 @@ old-location: sensors\gnss_ni_plane_type.htm
 old-project: sensors
 ms.assetid: F06FFABA-D7AB-4301-9F73-CE4BBB0B8AA6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="GNSS_NI_SUPL"></a><a id="gnss_ni_supl"></a><b>GNSS_NI_SUPL</b>
+### -field GNSS_NI_SUPL
 
 <dd>
 <p>Indicates the plane type of the request is SUPL.</p>
 </dd>
 
-### -field <a id="GNSS_NI_CP"></a><a id="gnss_ni_cp"></a><b>GNSS_NI_CP</b>
+### -field GNSS_NI_CP
 
 <dd>
 <p>Indicates the plane type of the request is CP.</p>
 </dd>
 
-### -field <a id="GNSS_NI_V2UPL"></a><a id="gnss_ni_v2upl"></a><b>GNSS_NI_V2UPL</b>
+### -field GNSS_NI_V2UPL
 
 <dd>
 <p>Indicates plane type of the request is V2UPL.</p>

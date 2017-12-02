@@ -56,7 +56,7 @@ NTSTATUS KsGetBusEnumIdentifier(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>Pointer to the IRP that specifies the address and size of the user output buffer to receive the requested bus enumerator identifier.</p>

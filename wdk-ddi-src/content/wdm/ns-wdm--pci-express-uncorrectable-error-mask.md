@@ -72,97 +72,97 @@ typedef union _PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK {
 ## -struct-fields
 <dl>
 
-### -field <b>Undefined</b>
+### -field Undefined
 
 <dd>
 <p>A single bit that contains an undefined value. In versions of the <i>PCIe Specification</i> prior to version 1.1, this bit indicates that the reporting of link training errors is masked.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>DataLinkProtocolError</b>
+### -field DataLinkProtocolError
 
 <dd>
 <p>A single bit that indicates that the reporting of data link protocol errors is masked.</p>
 </dd>
 
-### -field <b>SurpriseDownError</b>
+### -field SurpriseDownError
 
 <dd>
 <p>A single bit that indicates that the reporting of surprise down errors is masked.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>PoisonedTLP</b>
+### -field PoisonedTLP
 
 <dd>
 <p>A single bit that indicates that the reporting of poisoned transaction layer packets (TLPs) is masked.</p>
 </dd>
 
-### -field <b>FlowControlProtocolError</b>
+### -field FlowControlProtocolError
 
 <dd>
 <p>A single bit that indicates that the reporting of flow control protocol errors is masked.</p>
 </dd>
 
-### -field <b>CompletionTimeout</b>
+### -field CompletionTimeout
 
 <dd>
 <p>A single bit that indicates that the reporting of completion timeouts is masked.</p>
 </dd>
 
-### -field <b>CompleterAbort</b>
+### -field CompleterAbort
 
 <dd>
 <p>A single bit that indicates that the reporting of completer aborts is masked.</p>
 </dd>
 
-### -field <b>UnexpectedCompletion</b>
+### -field UnexpectedCompletion
 
 <dd>
 <p>A single bit that indicates that the reporting of unexpected completions is masked.</p>
 </dd>
 
-### -field <b>ReceiverOverflow</b>
+### -field ReceiverOverflow
 
 <dd>
 <p>A single bit that indicates that the reporting of receiver overflows is masked.</p>
 </dd>
 
-### -field <b>MalformedTLP</b>
+### -field MalformedTLP
 
 <dd>
 <p>A single bit that indicates that the reporting of malformed transaction layer packets (TLPs) is masked.</p>
 </dd>
 
-### -field <b>ECRCError</b>
+### -field ECRCError
 
 <dd>
 <p>A single bit that indicates that the reporting of end-to-end cyclic redundancy check (ECRC) errors is masked.</p>
 </dd>
 
-### -field <b>UnsupportedRequestError</b>
+### -field UnsupportedRequestError
 
 <dd>
 <p>A single bit that indicates that the reporting of unsupported request errors is masked.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK structure.</p>

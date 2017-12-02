@@ -55,7 +55,7 @@ NTSTATUS ZwRecoverTransactionManager(
 ## -parameters
 <dl>
 
-### -param <i>TransactionManagerHandle</i> [in]
+### -param TransactionManagerHandle [in]
 
 <dd>
 <p>A handle to a <a href="https://msdn.microsoft.com/af53cda4-e2ab-47df-9311-a4da2a2ee08d">transaction manager object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreatetransactionmanager.md">ZwCreateTransactionManager</a> or <a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>. The handle must have TRANSACTIONMANAGER_RECOVER access to the object.</p>

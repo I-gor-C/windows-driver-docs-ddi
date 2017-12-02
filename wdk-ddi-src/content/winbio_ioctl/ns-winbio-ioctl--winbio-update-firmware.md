@@ -56,13 +56,13 @@ typedef struct _WINBIO_UPDATE_FIRMWARE {
 ## -struct-fields
 <dl>
 
-### -field <b>PayloadSize</b>
+### -field PayloadSize
 
 <dd>
 <p>Specifies the total size of the payload, which includes the fixed length structure and any variable data at the end.</p>
 </dd>
 
-### -field <b>FirmwareData</b>
+### -field FirmwareData
 
 <dd>
 <p>Specifies a structure of type <a href="..\winbio_ioctl\ns-winbio-ioctl--winbio-data.md">WINBIO_DATA</a> that contains the vendor-specific firmware image.</p>

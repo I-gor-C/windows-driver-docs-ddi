@@ -55,7 +55,7 @@ typedef struct IDARG_IN_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS {
 ## -struct-fields
 <dl>
 
-### -field <b>EncryptedParameters</b>
+### -field EncryptedParameters
 
 <dd>
 <p>

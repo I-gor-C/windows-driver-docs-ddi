@@ -56,13 +56,13 @@ typedef struct _BLOCK_DEVICE_TOKEN_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>TokenIdentifier</b>
+### -field TokenIdentifier
 
 <dd>
 <p>An identifier value assigned by the copy provider to provide uniqueness to <b>Token</b> while the value of <b>Token</b> is valid. This member is reserved for system use and must not be modified.</p>
 </dd>
 
-### -field <b>Token</b>
+### -field Token
 
 <dd>
 <p>A data value defining a token as a point-in-time representation of data (ROD) for an offload read data operation. <b>Token</b> is an opaque value and must be used unmodified in offload write data operations.</p>

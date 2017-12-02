@@ -55,11 +55,11 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSMETHOD_STREAMIO_READ"></a><a id="ksmethod_streamio_read"></a><b>KSMETHOD_STREAMIO_READ</b>
+### -field KSMETHOD_STREAMIO_READ
 
 <dd></dd>
 
-### -field <a id="KSMETHOD_STREAMIO_WRITE"></a><a id="ksmethod_streamio_write"></a><b>KSMETHOD_STREAMIO_WRITE</b>
+### -field KSMETHOD_STREAMIO_WRITE
 
 <dd></dd>
 </dl>

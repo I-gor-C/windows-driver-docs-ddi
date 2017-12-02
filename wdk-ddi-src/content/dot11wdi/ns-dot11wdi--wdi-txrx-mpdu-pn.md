@@ -7,7 +7,7 @@ old-location: netvista\wdi_txrx_mpdu_pn.htm
 old-project: netvista
 ms.assetid: F03F5BE6-B2F2-4A9A-8D6D-1ACC9F08C890
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDI_TXRX_MPDU_PN, WDI_TXRX_MPDU_PN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef union _WDI_TXRX_MPDU_PN {
 ## -struct-fields
 <dl>
 
-### -field <b>Pn24</b>
+### -field Pn24
 
 <dd>
 <p>WEP: 24-bit PN</p>
 </dd>
 
-### -field <b>Pn48</b>
+### -field Pn48
 
 <dd>
 <p>TKIP or CCMP: 48-bit PN</p>
 </dd>
 
-### -field <b>Pn128</b>
+### -field Pn128
 
 <dd>
 <p>WAPI: 128-bit PN</p>

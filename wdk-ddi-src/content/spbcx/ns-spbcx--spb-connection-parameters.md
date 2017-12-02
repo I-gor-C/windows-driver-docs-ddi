@@ -7,7 +7,7 @@ old-location: spb\spb_connection_parameters.htm
 old-project: SPB
 ms.assetid: 4707b797-6759-426d-89eb-01215af6ce19
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/30/2017
 ms.keywords: SPB_CONNECTION_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct SPB_CONNECTION_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/hh450926">SpbTargetGetConnectionParameters</a> method uses the <b>Size</b> value to determine which version of this structure is being used. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406205">SPB_CONNECTION_PARAMETERS_INIT</a> function to initialize this member. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>ConnectionTag</b>
+### -field ConnectionTag
 
 <dd>
-<p>A pointer to the connection tag for this target. The connection tag is an opaque string that contains a connection ID that identifies the connection of the target device to the bus. For more information, see <a href="NULL">Connection IDs for SPB-Connected Peripheral Devices</a>.</p>
+<p>A pointer to the connection tag for this target. The connection tag is an opaque string that contains a connection ID that identifies the connection of the target device to the bus. For more information, see <a href="https://msdn.microsoft.com/234B5858-5930-40AD-BE4C-4A774A809D10">Connection IDs for SPB-Connected Peripheral Devices</a>.</p>
 </dd>
 
-### -field <b>ConnectionParameters</b>
+### -field ConnectionParameters
 
 <dd>
 <p>A pointer to the connection parameters for this target. This member points to a memory buffer that contains the target-specific parameters that the SPB controller driver needs to communicate with the target. For more information, see the following Remarks section.</p>
@@ -81,7 +81,7 @@ typedef struct SPB_CONNECTION_PARAMETERS {
 
 <p>For example, the connection settings for a device on an I2C bus include the following:</p>
 
-<p>The <b>ConnectionParameters</b> member of the <b>SPB_CONNECTION_PARAMETERS</b> structure is a pointer to a buffer that contains the connection settings for a target device on the bus. For a code example that uses the <b>ConnectionParameters</b> member to get these connection parameters, see <a href="NULL">How to Get the Connection Settings for a Device</a>.</p>
+<p>The <b>ConnectionParameters</b> member of the <b>SPB_CONNECTION_PARAMETERS</b> structure is a pointer to a buffer that contains the connection settings for a target device on the bus. For a code example that uses the <b>ConnectionParameters</b> member to get these connection parameters, see <a href="https://msdn.microsoft.com/B614993A-0EA9-4B91-A336-80EEF9BE3E69">How to Get the Connection Settings for a Device</a>.</p>
 
 <p>Call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450926">SpbTargetGetConnectionParameters</a> method to get the connection parameters for an SPBTARGET handle that represents the target device. This method writes the connection parameters to a caller-supplied <b>SPB_CONNECTION_PARAMETERS</b> structure. Before passing this structure to <b>SpbTargetGetConnectionParameters</b>, initialize the structure by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406205">SPB_CONNECTION_PARAMETERS_INIT</a> function.</p>
 
@@ -129,4 +129,4 @@ typedef struct SPB_CONNECTION_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_CONNECTION_PARAMETERS structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_CONNECTION_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

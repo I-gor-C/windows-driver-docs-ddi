@@ -7,7 +7,7 @@ old-location: netvista\rilnetworkcode_2.htm
 old-project: netvista
 ms.assetid: 13d5914e-b42f-41ce-b86b-b7d638244558
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILNETWORKCODE, RILNETWORKCODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,35 +62,35 @@ typedef struct _RILNETWORKCODE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwMCC</b>
+### -field dwMCC
 
 <dd></dd>
 
-### -field <b>dwMNC</b>
+### -field dwMNC
 
 <dd></dd>
 
-### -field <b>dwSID</b>
+### -field dwSID
 
 <dd></dd>
 
-### -field <b>dwNID</b>
+### -field dwNID
 
 <dd></dd>
 
-### -field <b>dwRI</b>
+### -field dwRI
 
 <dd></dd>
 </dl>

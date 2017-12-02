@@ -7,7 +7,7 @@ old-location: netvista\ndis_scatter_gather_list_parameters.htm
 old-project: netvista
 ms.assetid: 5c14a6ed-3180-41d6-a09a-b3ae0a0c8b36
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_SCATTER_GATHER_LIST_PARAMETERS, NDIS_SCATTER_GATHER_LIST_PARAMETERS, *PNDIS_SCATTER_GATHER_LIST_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ typedef struct _NDIS_SCATTER_GATHER_LIST_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -78,13 +78,13 @@ typedef struct _NDIS_SCATTER_GATHER_LIST_PARAMETERS {
      <b>Size</b> member to NDIS_SIZEOF_SCATTER_GATHER_LIST_PARAMETERS_REVISION_1.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>QueueId</b>
+### -field QueueId
 
 <dd>
 <p>An NDIS_RECEIVE_QUEUE_ID type value that contains a queue identifier. The queue identifier is an
@@ -92,7 +92,7 @@ typedef struct _NDIS_SCATTER_GATHER_LIST_PARAMETERS {
      the default queue.</p>
 </dd>
 
-### -field <b>SharedMemoryUsage</b>
+### -field SharedMemoryUsage
 
 <dd>
 <p>An 
@@ -100,25 +100,25 @@ typedef struct _NDIS_SCATTER_GATHER_LIST_PARAMETERS {
      value that specifies the purpose of the shared memory.</p>
 </dd>
 
-### -field <b>Mdl</b>
+### -field Mdl
 
 <dd>
 <p>A pointer to a memory descriptor list (MDL) that describes the shared memory buffer.</p>
 </dd>
 
-### -field <b>CurrentVa</b>
+### -field CurrentVa
 
 <dd>
 <p>A ULONG value for the current virtual address.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>A ULONG value that contains the length, in bytes, of the shared memory buffer.</p>
 </dd>
 
-### -field <b>ProcessSGListHandler</b>
+### -field ProcessSGListHandler
 
 <dd>
 <p>A pointer to a 
@@ -126,7 +126,7 @@ typedef struct _NDIS_SCATTER_GATHER_LIST_PARAMETERS {
      (NDIS_PROCESS_SG_LIST_HANDLER entry point).</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to a block of driver-allocated context information that stores information about the
@@ -135,20 +135,20 @@ typedef struct _NDIS_SCATTER_GATHER_LIST_PARAMETERS {
      <i>Context</i> parameter.</p>
 </dd>
 
-### -field <b>ScatterGatherListBuffer</b>
+### -field ScatterGatherListBuffer
 
 <dd>
 <p>A pointer to a 
      <a href="..\wdm\ns-wdm--scatter-gather-list.md">SCATTER_GATHER_LIST</a> structure.</p>
 </dd>
 
-### -field <b>ScatterGatherListBufferSize</b>
+### -field ScatterGatherListBufferSize
 
 <dd>
 <p>A ULONG value that contains the length, in bytes, of the scatter/gather list.</p>
 </dd>
 
-### -field <b>ScatterGatherListBufferSizeNeeded</b>
+### -field ScatterGatherListBufferSizeNeeded
 
 <dd>
 <p>A ULONG value where NDIS writes the total number of bytes that NDIS requires to build the
@@ -204,4 +204,4 @@ typedef struct _NDIS_SCATTER_GATHER_LIST_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SCATTER_GATHER_LIST_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SCATTER_GATHER_LIST_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

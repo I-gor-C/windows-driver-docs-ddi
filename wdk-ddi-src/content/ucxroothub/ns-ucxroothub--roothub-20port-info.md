@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Provides information about a USB 2.0 root hub port. This structure is passed by UCX in the <a href="buses.evt_ucx_roothub_get_20port_info">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function. </p>
+<p>Provides information about a USB 2.0 root hub port. This structure is passed by UCX in the <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-get-20port-info.md">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function. </p>
 
 
 ## -syntax
@@ -61,43 +61,43 @@ typedef struct _ROOTHUB_20PORT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>The USB 2.0 root hub port number.</p>
 </dd>
 
-### -field <b>MinorRevision</b>
+### -field MinorRevision
 
 <dd>
 <p>Minor revision number.</p>
 </dd>
 
-### -field <b>HubDepth</b>
+### -field HubDepth
 
 <dd>
 <p>The hub depth limit.</p>
 </dd>
 
-### -field <b>Removable</b>
+### -field Removable
 
 <dd>
-<p>A <a href="buses.tristate">TRISTATE</a> value that indicates if the port is removable. </p>
+<p>A <a href="..\ucxroothub\ne-ucxroothub--tristate.md">TRISTATE</a> value that indicates if the port is removable. </p>
 </dd>
 
-### -field <b>IntegratedHubImplemented</b>
+### -field IntegratedHubImplemented
 
 <dd>
-<p>A <a href="buses.tristate">TRISTATE</a> value that indicates if the port is implemented. </p>
+<p>A <a href="..\ucxroothub\ne-ucxroothub--tristate.md">TRISTATE</a> value that indicates if the port is implemented. </p>
 </dd>
 
-### -field <b>DebugCapable</b>
+### -field DebugCapable
 
 <dd>
-<p>A <a href="buses.tristate">TRISTATE</a> value that indicates if the port is debug capable. </p>
+<p>A <a href="..\ucxroothub\ne-ucxroothub--tristate.md">TRISTATE</a> value that indicates if the port is debug capable. </p>
 </dd>
 
-### -field <b>ControllerUsb20HardwareLpmFlags</b>
+### -field ControllerUsb20HardwareLpmFlags
 
 <dd>
 <p>A value that indicates Link Power Management (LPM) flags for the controller.</p>

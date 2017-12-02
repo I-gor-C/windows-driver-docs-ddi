@@ -57,68 +57,68 @@ typedef struct _PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>CapabilityID</b>
+### -field CapabilityID
 
 <dd>
 <p>The extended capability identifier. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="PCI_EXPRESS_ADVANCED_ERROR_REPORTING_CAP_ID"></a><a id="pci_express_advanced_error_reporting_cap_id"></a>PCI_EXPRESS_ADVANCED_ERROR_REPORTING_CAP_ID
+### -field PCI_EXPRESS_ADVANCED_ERROR_REPORTING_CAP_ID
 
 <dd>
 <p>Advanced error reporting capability</p>
 </dd>
 
-### -field <a id="PCI_EXPRESS_VIRTUAL_CHANNEL_CAP_ID"></a><a id="pci_express_virtual_channel_cap_id"></a>PCI_EXPRESS_VIRTUAL_CHANNEL_CAP_ID
+### -field PCI_EXPRESS_VIRTUAL_CHANNEL_CAP_ID
 
 <dd>
 <p>Virtual channel capability</p>
 </dd>
 
-### -field <a id="PCI_EXPRESS_DEVICE_SERIAL_NUMBER_CAP_ID"></a><a id="pci_express_device_serial_number_cap_id"></a>PCI_EXPRESS_DEVICE_SERIAL_NUMBER_CAP_ID
+### -field PCI_EXPRESS_DEVICE_SERIAL_NUMBER_CAP_ID
 
 <dd>
 <p>Device serial number capability</p>
 </dd>
 
-### -field <a id="PCI_EXPRESS_POWER_BUDGETING_CAP_ID"></a><a id="pci_express_power_budgeting_cap_id"></a>PCI_EXPRESS_POWER_BUDGETING_CAP_ID
+### -field PCI_EXPRESS_POWER_BUDGETING_CAP_ID
 
 <dd>
 <p>Power budgeting capability</p>
 </dd>
 
-### -field <a id="PCI_EXPRESS_RC_LINK_DECLARATION_CAP_ID"></a><a id="pci_express_rc_link_declaration_cap_id"></a>PCI_EXPRESS_RC_LINK_DECLARATION_CAP_ID
+### -field PCI_EXPRESS_RC_LINK_DECLARATION_CAP_ID
 
 <dd>
 <p>Root complex link declaration capability</p>
 </dd>
 
-### -field <a id="PCI_EXPRESS_RC_INTERNAL_LINK_CONTROL_CAP_ID"></a><a id="pci_express_rc_internal_link_control_cap_id"></a>PCI_EXPRESS_RC_INTERNAL_LINK_CONTROL_CAP_ID
+### -field PCI_EXPRESS_RC_INTERNAL_LINK_CONTROL_CAP_ID
 
 <dd>
 <p>Root complex internal link control capability</p>
 </dd>
 
-### -field <a id="PCI_EXPRESS_RC_EVENT_COLLECTOR_ENDPOINT_ASSOCIATION_CAP_ID"></a><a id="pci_express_rc_event_collector_endpoint_association_cap_id"></a>PCI_EXPRESS_RC_EVENT_COLLECTOR_ENDPOINT_ASSOCIATION_CAP_ID
+### -field PCI_EXPRESS_RC_EVENT_COLLECTOR_ENDPOINT_ASSOCIATION_CAP_ID
 
 <dd>
 <p>Root complex event collector endpoint association capability</p>
 </dd>
 
-### -field <a id="PCI_EXPRESS_MFVC_CAP_ID"></a><a id="pci_express_mfvc_cap_id"></a>PCI_EXPRESS_MFVC_CAP_ID
+### -field PCI_EXPRESS_MFVC_CAP_ID
 
 <dd>
 <p>Multi-function virtual channel capability</p>
 </dd>
 
-### -field <a id="PCI_EXPRESS_VC_AND_MFVC_CAP_ID"></a><a id="pci_express_vc_and_mfvc_cap_id"></a>PCI_EXPRESS_VC_AND_MFVC_CAP_ID
+### -field PCI_EXPRESS_VC_AND_MFVC_CAP_ID
 
 <dd>
 <p>Virtual channel and multi-function virtual channel capability</p>
 </dd>
 
-### -field <a id="PCI_EXPRESS_RCRB_HEADER_CAP_ID"></a><a id="pci_express_rcrb_header_cap_id"></a>PCI_EXPRESS_RCRB_HEADER_CAP_ID
+### -field PCI_EXPRESS_RCRB_HEADER_CAP_ID
 
 <dd>
 <p>Root complex register block header capability</p>
@@ -126,13 +126,13 @@ typedef struct _PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER {
 </dl>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the extended capability structure. This member should be set to one for extended capability structures that are based on version 1.1 of the <i>PCIe Specification</i>.</p>
 </dd>
 
-### -field <b>Next</b>
+### -field Next
 
 <dd>
 <p>The offset in PCIe device configuration space to the next PCIe capability structure in the linked list of capabilities. If this is the last PCIe capability structure in the list, this member is set to zero.</p>

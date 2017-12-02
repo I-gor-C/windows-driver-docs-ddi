@@ -55,11 +55,11 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KsIoOperation_Write"></a><a id="ksiooperation_write"></a><a id="KSIOOPERATION_WRITE"></a><b>KsIoOperation_Write</b>
+### -field KsIoOperation_Write
 
 <dd></dd>
 
-### -field <a id="KsIoOperation_Read"></a><a id="ksiooperation_read"></a><a id="KSIOOPERATION_READ"></a><b>KsIoOperation_Read</b>
+### -field KsIoOperation_Read
 
 <dd></dd>
 </dl>

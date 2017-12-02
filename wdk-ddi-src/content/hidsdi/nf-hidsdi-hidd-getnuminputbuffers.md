@@ -55,13 +55,13 @@ BOOLEAN __stdcall HidD_GetNumInputBuffers(
 ## -parameters
 <dl>
 
-### -param <i>HidDeviceObject</i> [in]
+### -param HidDeviceObject [in]
 
 <dd>
 <p>Specifies an open handle to a top-level collection.</p>
 </dd>
 
-### -param <i>NumberBuffers</i> [out]
+### -param NumberBuffers [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that the routine uses to return the maximum number of input reports the ring buffer can hold.</p>
@@ -74,7 +74,7 @@ BOOLEAN __stdcall HidD_GetNumInputBuffers(
 ## -remarks
 <p>Only user-mode applications can call <b>HidD_GetNumInputBuffers</b>. Kernel-mode drivers can use the <a href="..\hidclass\ni-hidclass-ioctl-get-num-device-input-buffers.md">IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS</a> request.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

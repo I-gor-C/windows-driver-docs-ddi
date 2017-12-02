@@ -59,13 +59,13 @@ typedef struct _SIMULATE_CAPS_1 {
 ## -struct-fields
 <dl>
 
-### -field <b>dwLevel</b>
+### -field dwLevel
 
 <dd>
 <p>Specifies the version of this structure. This value must be 1.</p>
 </dd>
 
-### -field <b>dwPageOrderFlags</b>
+### -field dwPageOrderFlags
 
 <dd>
 <p>Specifies the order in which pages will be printed. This member can be set to one of the following values:</p>
@@ -102,19 +102,19 @@ typedef struct _SIMULATE_CAPS_1 {
 <p> </p>
 </dd>
 
-### -field <b>dwNumberOfCopies</b>
+### -field dwNumberOfCopies
 
 <dd>
 <p>Specifies the maximum number of copies the spooler can handle.</p>
 </dd>
 
-### -field <b>dwCollate</b>
+### -field dwCollate
 
 <dd>
 <p>Specifies whether the spooler supports collation. A value of 1 indicates that the spooler supports collation, and a value of 0 indicates that it does not.</p>
 </dd>
 
-### -field <b>dwNupOptions</b>
+### -field dwNupOptions
 
 <dd>
 <p>Is a bitmask representing the various numbers of document pages the printer can print on a physical page. The least significant bit represents 1 document page per page, the next bit represents 2 document pages per page, the next bit represents 3 document pages per physical page, and so on. For example, 0x0000810B indicates that the spooler supports 1, 2, 4, 9, and 16 document pages per physical page.</p>

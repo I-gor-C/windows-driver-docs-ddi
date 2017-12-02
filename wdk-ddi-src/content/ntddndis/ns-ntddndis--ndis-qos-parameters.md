@@ -7,7 +7,7 @@ old-location: netvista\ndis_qos_parameters.htm
 old-project: netvista
 ms.assetid: 83eb72a8-d35b-445d-a207-c14a3bedd308
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_QOS_PARAMETERS, NDIS_QOS_PARAMETERS, *PNDIS_QOS_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ typedef struct _NDIS_QOS_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_QOS_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -74,7 +74,7 @@ typedef struct _NDIS_QOS_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_QOS_PARAMETERS_REVISION_1"></a><a id="ndis_qos_parameters_revision_1"></a>NDIS_QOS_PARAMETERS_REVISION_1
+### -field NDIS_QOS_PARAMETERS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30 and later.</p>
@@ -83,13 +83,13 @@ typedef struct _NDIS_QOS_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags that specify the status of the NDIS QoS parameters for the network adapter. For more information about this member, see <a href="#overview">Overview of the Flags Member</a>.</p>
 </dd>
 
-### -field <b>NumTrafficClasses</b>
+### -field NumTrafficClasses
 
 <dd>
 <p>A <b>ULONG</b> value that specifies the number of NDIS QoS traffic classes that are enabled on the network adapter.  Each traffic class is referenced through an identifier in the range from zero to (<b>NumTrafficClasses</b>–1).</p>
@@ -97,7 +97,7 @@ typedef struct _NDIS_QOS_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>PriorityAssignmentTable</b>
+### -field PriorityAssignmentTable
 
 <dd>
 <p>An array of <b>UCHAR</b> elements that specifies an IEEE 802.1p priority level for each traffic class. The <b>PriorityAssignmentTable</b> array is indexed  by the  802.1p priority level (0–7). </p>
@@ -106,7 +106,7 @@ typedef struct _NDIS_QOS_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>TcBandwidthAssignmentTable</b>
+### -field TcBandwidthAssignmentTable
 
 <dd>
 <p>An array of <b>UCHAR</b> elements that specifies the percentage of the bandwidth allocation assigned to each traffic class. The <b>TcBandwidthAssignmentTable</b> array is indexed by the   traffic class identifier. </p>
@@ -115,7 +115,7 @@ typedef struct _NDIS_QOS_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>TsaAssignmentTable</b>
+### -field TsaAssignmentTable
 
 <dd>
 <p>An array of <b>UCHAR</b> elements that specifies the TSA assigned to each traffic class. The <b>TsaAssignmentTable</b> array is indexed by the   traffic class identifier. </p>
@@ -123,29 +123,29 @@ typedef struct _NDIS_QOS_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_QOS_TSA_STRICT"></a><a id="ndis_qos_tsa_strict"></a>NDIS_QOS_TSA_STRICT
+### -field NDIS_QOS_TSA_STRICT
 
 <dd>
-<p>The strict priority algorithm must be used as the TSA for the traffic class. For more information about this TSA, see <a href="NULL">Strict Priority Algorithm</a>.</p>
+<p>The strict priority algorithm must be used as the TSA for the traffic class. For more information about this TSA, see <a href="netvista.strict_priority_algorithm">Strict Priority Algorithm</a>.</p>
 </dd>
 
-### -field <a id="NDIS_QOS_TSA_CBS"></a><a id="ndis_qos_tsa_cbs"></a>NDIS_QOS_TSA_CBS
+### -field NDIS_QOS_TSA_CBS
 
 <dd>
 <p>The IEEE 802.1Qav credit-based shaper (CBS) algorithm must be used as the TSA for the traffic class.</p>
-<div class="alert"><b>Note</b>  Starting with Windows Server 2012, the DCB component (Msdcb.sys) does not support the CBS TSA and won't enable this parameter through object identifier (OID) method requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451835">OID_QOS_PARAMETERS</a>. For more information on the DCB component, see <a href="NULL">NDIS QoS Architecture for Data Center Bridging</a>.</div>
+<div class="alert"><b>Note</b>  Starting with Windows Server 2012, the DCB component (Msdcb.sys) does not support the CBS TSA and won't enable this parameter through object identifier (OID) method requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451835">OID_QOS_PARAMETERS</a>. For more information on the DCB component, see <a href="netvista.ndis_qos_architecture_for_data_center_bridging">NDIS QoS Architecture for Data Center Bridging</a>.</div>
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_QOS_TSA_ETS"></a><a id="ndis_qos_tsa_ets"></a>NDIS_QOS_TSA_ETS
+### -field NDIS_QOS_TSA_ETS
 
 <dd>
-<p>The IEEE 802.1Qaz Enhanced Transmission Selection (ETS) algorithm must be used as the TSA for the traffic class. For more information about this TSA, see <a href="NULL">Enhanced Transmission Selection (ETS) Algorithm</a>.</p>
+<p>The IEEE 802.1Qaz Enhanced Transmission Selection (ETS) algorithm must be used as the TSA for the traffic class. For more information about this TSA, see <a href="netvista.enhanced_transmission_selection__ets__algorithm">Enhanced Transmission Selection (ETS) Algorithm</a>.</p>
 </dd>
 </dl>
 </dd>
 
-### -field <b>PfcEnable</b>
+### -field PfcEnable
 
 <dd>
 <p>A bitmap of 32 bits. The most-significant 24 bits are reserved for future use. The least-significant 8 bits are used to specify whether PFC
@@ -195,10 +195,10 @@ is enabled on the IEEE 802.1p priority level. If the bit is set to one, PFC is e
 <p> </p>
 <div class="alert"><b>Note</b>  The total number of 802.1p priority levels that have PFC enabled must be less than or equal to the value of the <b>MaxNumPfcEnabledTrafficClasses</b> member in the <a href="..\ntddndis\ns-ntddndis--ndis-qos-capabilities.md">NDIS_QOS_CAPABILITIES</a> structure.</div>
 <div> </div>
-<p>For more information about priority levels, see <a href="NULL">IEEE 802.1p Priority Levels</a>.</p>
+<p>For more information about priority levels, see <a href="netvista.ieee_802_1p_priority_levels">IEEE 802.1p Priority Levels</a>.</p>
 </dd>
 
-### -field <b>NumClassificationElements</b>
+### -field NumClassificationElements
 
 <dd>
 <p>A <b>ULONG</b> value that specifies the number of elements in the traffic classification array. The offset to the first element in this array is specified  by the <b>FirstClassificationElementOffset</b> member.</p>
@@ -206,7 +206,7 @@ is enabled on the IEEE 802.1p priority level. If the bit is set to one, PFC is e
 <div> </div>
 </dd>
 
-### -field <b>ClassificationElementSize</b>
+### -field ClassificationElementSize
 
 <dd>
 <p>A <b>ULONG</b> value that specifies the size, in bytes, of each element in the traffic classification array.</p>
@@ -214,7 +214,7 @@ is enabled on the IEEE 802.1p priority level. If the bit is set to one, PFC is e
 <div> </div>
 </dd>
 
-### -field <b>FirstClassificationElementOffset</b>
+### -field FirstClassificationElementOffset
 
 <dd>
 <p>A <b>ULONG</b> value that specifies the offset, in bytes, to the first element in an array of traffic classification elements that follow this structure. The offset is measured from the start of the <b>NDIS_QOS_PARAMETERS</b> structure up to the beginning of the first element. Each element in the array is an <a href="..\ntddndis\ns-ntddndis--ndis-qos-classification-element.md">NDIS_QOS_CLASSIFICATION_ELEMENT</a> structure.
@@ -242,7 +242,7 @@ is enabled on the IEEE 802.1p priority level. If the bit is set to one, PFC is e
 <p>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439812">NDIS_STATUS_QOS_REMOTE_PARAMETERS_CHANGE</a>. This miniport driver issues this status indication when its remote QoS parameters change.</p>
 
-<p> For more information about the types of NDIS QoS parameters, see <a href="NULL">Overview of NDIS QoS Parameters</a>.</p>
+<p> For more information about the types of NDIS QoS parameters, see <a href="netvista.overview_of_ndis_qos_parameters">Overview of NDIS QoS Parameters</a>.</p>
 
 <p>The <b>Flags</b> member contains a bitwise <b>OR</b> of flags that specify the status of the NDIS QoS parameters for the network adapter. </p>
 
@@ -298,7 +298,7 @@ The miniport driver must also disable or override any local QoS parameter for wh
 
 <p>For example, the miniport driver can override an unconfigured local QoS parameter with its proprietary settings for the QoS parameters that are defined by the IHV. If there are no proprietary settings for  local QoS parameters that are not specified with an  <b>NDIS_QOS_PARAMETERS_<i>Xxx</i>_CONFIGURED</b> flag, the driver must disable the use of these QoS parameters on the network adapter.</p>
 
-<p>For more information about the local DCBX Willing state, see <a href="NULL">Managing the Local DCBX Willing State</a>.
+<p>For more information about the local DCBX Willing state, see <a href="netvista.managing_the_local_dcbx_willing_state">Managing the Local DCBX Willing State</a>.
 
 </p>
 
@@ -360,4 +360,4 @@ The miniport driver must also disable or override any local QoS parameter for wh
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_QOS_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_QOS_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

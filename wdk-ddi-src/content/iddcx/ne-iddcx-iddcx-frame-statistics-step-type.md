@@ -74,7 +74,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_UNINITIALIZED"></a><a id="iddcx_frame_statistics_step_type_uninitialized"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_UNINITIALIZED</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_UNINITIALIZED
 
 <dd>
 <p>
@@ -82,7 +82,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     Indicates that an <b>IDDCX_FRAME_STATISTICS_STEP_TYPE</b> variable has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_COLOR_CONVERT_START"></a><a id="iddcx_frame_statistics_step_type_color_convert_start"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_COLOR_CONVERT_START</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_COLOR_CONVERT_START
 
 <dd>
 <p>
@@ -90,7 +90,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_COLOR_CONVERT_END"></a><a id="iddcx_frame_statistics_step_type_color_convert_end"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_COLOR_CONVERT_END</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_COLOR_CONVERT_END
 
 <dd>
 <p>
@@ -98,7 +98,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCODE_START"></a><a id="iddcx_frame_statistics_step_type_encode_start"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCODE_START</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCODE_START
 
 <dd>
 <p>
@@ -106,7 +106,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCODE_END"></a><a id="iddcx_frame_statistics_step_type_encode_end"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCODE_END</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCODE_END
 
 <dd>
 <p>
@@ -114,7 +114,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCRYPT_START"></a><a id="iddcx_frame_statistics_step_type_encrypt_start"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCRYPT_START</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCRYPT_START
 
 <dd>
 <p>
@@ -122,7 +122,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCRYPT_END"></a><a id="iddcx_frame_statistics_step_type_encrypt_end"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCRYPT_END</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCRYPT_END
 
 <dd>
 <p>
@@ -130,7 +130,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_MUX_START"></a><a id="iddcx_frame_statistics_step_type_mux_start"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_MUX_START</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_MUX_START
 
 <dd>
 <p>
@@ -138,7 +138,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_MUX_END"></a><a id="iddcx_frame_statistics_step_type_mux_end"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_MUX_END</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_MUX_END
 
 <dd>
 <p>
@@ -146,14 +146,14 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_1"></a><a id="iddcx_frame_statistics_step_type_driver_defined_1"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_1</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_1
 
 <dd>
 <p>
                         Driver defined processing step</p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_2"></a><a id="iddcx_frame_statistics_step_type_driver_defined_2"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_2</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_2
 
 <dd>
 <p>
@@ -161,7 +161,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     Driver defined processing step</p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_3"></a><a id="iddcx_frame_statistics_step_type_driver_defined_3"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_3</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_3
 
 <dd>
 <p>
@@ -169,7 +169,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     Driver defined processing step</p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_4"></a><a id="iddcx_frame_statistics_step_type_driver_defined_4"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_4</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_4
 
 <dd>
 <p>
@@ -177,7 +177,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     Driver defined processing step</p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_5"></a><a id="iddcx_frame_statistics_step_type_driver_defined_5"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_5</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_5
 
 <dd>
 <p>
@@ -185,7 +185,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     Driver defined processing step</p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_6"></a><a id="iddcx_frame_statistics_step_type_driver_defined_6"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_6</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_6
 
 <dd>
 <p>
@@ -193,7 +193,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     Driver defined processing step</p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_7"></a><a id="iddcx_frame_statistics_step_type_driver_defined_7"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_7</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_7
 
 <dd>
 <p>
@@ -201,7 +201,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     Driver defined processing step</p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_8"></a><a id="iddcx_frame_statistics_step_type_driver_defined_8"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_8</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_8
 
 <dd>
 <p>Driver defined processing step
@@ -209,7 +209,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_9"></a><a id="iddcx_frame_statistics_step_type_driver_defined_9"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_9</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_9
 
 <dd>
 <p>
@@ -217,7 +217,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                     Driver defined processing step</p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_10"></a><a id="iddcx_frame_statistics_step_type_driver_defined_10"></a><b>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_10</b>
+### -field IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_10
 
 <dd>
 <p>

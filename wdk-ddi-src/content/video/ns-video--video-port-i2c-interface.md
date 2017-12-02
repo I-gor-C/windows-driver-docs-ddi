@@ -63,55 +63,55 @@ typedef struct _VIDEO_PORT_I2C_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size in bytes of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the interface to be returned by the miniport driver. The current interface version is defined in <i>video.h</i>, and has the form VIDEO_PORT_I2C_INTERFACE_<i>N</i>.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Pointer to a miniport driver-defined context for the interface.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>Pointer to the video port driver-implemented reference routine for this interface.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>Pointer to the video port driver-implemented dereference routine for this interface.</p>
 </dd>
 
-### -field <b>I2CStart</b>
+### -field I2CStart
 
 <dd>
 <p>Pointer to the video port driver's <a href="..\video\nc-video-pi2c-start.md">I2CStart</a> routine.</p>
 </dd>
 
-### -field <b>I2CStop</b>
+### -field I2CStop
 
 <dd>
 <p>Pointer to the video port driver's <a href="..\video\nc-video-pi2c-stop.md">I2CStop</a> routine.</p>
 </dd>
 
-### -field <b>I2CWrite</b>
+### -field I2CWrite
 
 <dd>
 <p>Pointer to the video port driver's <a href="..\video\nc-video-pi2c-write.md">I2CWrite</a> routine.</p>
 </dd>
 
-### -field <b>I2CRead</b>
+### -field I2CRead
 
 <dd>
 <p>Pointer to the video port driver's <a href="..\video\nc-video-pi2c-read.md">I2CRead</a> routine.</p>

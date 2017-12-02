@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>A KSPROPERTY structure that the client initializes appropriately prior to calling KSPROPERTY_RTAUDIO_BUFFER_WITH_NOTIFICATION.</p>
 </dd>
 
-### -field <b>BaseAddress</b>
+### -field BaseAddress
 
 <dd>
 <p>Specifies the buffer base address.  Unless the client specifies a base address, this parameter is set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>RequestedBufferSize</b>
+### -field RequestedBufferSize
 
 <dd>
 <p>Specifies the buffer size in bytes.  The driver returns the actual size of the allocated buffer in the <a href="audio.ksrtaudio_buffer">KSRTAUDIO_BUFFER</a> structure that it returns.</p>
 </dd>
 
-### -field <b>NotificationCount</b>
+### -field NotificationCount
 
 <dd>
 <p>Specifies the number of notifications per cycle of the cyclic buffer. Currently, the valid values are 1 or 2.  A value of 1 results in notification to registered notification events at the end of the cyclic buffer.  A value of 2 results in notifications at both the mid-point and the end of the cyclic buffer.</p>

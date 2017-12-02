@@ -59,62 +59,62 @@ typedef struct _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The size, in bytes, of the WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure. PSHED plug-ins must set this member to WHEA_PLUGIN_REGISTRATION_PACKET_VERSION.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A PSHED plug-in-supplied context area that is passed to the PSHED plug-in's callback functions.</p>
 </dd>
 
-### -field <b>FunctionalAreaMask</b>
+### -field FunctionalAreaMask
 
 <dd>
 <p>A bit-wise OR'ed combination of flags that specifies the functional areas in which the PSHED plug-in participates. Possible flags are:</p>
 <p></p>
 <dl>
 
-### -field <a id="PshedFADiscovery"></a><a id="pshedfadiscovery"></a><a id="PSHEDFADISCOVERY"></a><b>PshedFADiscovery</b>
+### -field PshedFADiscovery
 
 <dd>
 <p>The PSHED plug-in participates in error source discovery.</p>
 </dd>
 
-### -field <a id="PshedFAErrorSourceControl"></a><a id="pshedfaerrorsourcecontrol"></a><a id="PSHEDFAERRORSOURCECONTROL"></a><b>PshedFAErrorSourceControl</b>
+### -field PshedFAErrorSourceControl
 
 <dd>
 <p>The PSHED plug-in participates in error source control.</p>
 </dd>
 
-### -field <a id="PshedFAErrorRecordPersistence"></a><a id="pshedfaerrorrecordpersistence"></a><a id="PSHEDFAERRORRECORDPERSISTENCE"></a><b>PshedFAErrorRecordPersistence</b>
+### -field PshedFAErrorRecordPersistence
 
 <dd>
 <p>The PSHED plug-in participates in error record persistence.</p>
 </dd>
 
-### -field <a id="PshedFAErrorInfoRetrieval"></a><a id="pshedfaerrorinforetrieval"></a><a id="PSHEDFAERRORINFORETRIEVAL"></a><b>PshedFAErrorInfoRetrieval</b>
+### -field PshedFAErrorInfoRetrieval
 
 <dd>
 <p>The PSHED plug-in participates in error information retrieval.</p>
 </dd>
 
-### -field <a id="PshedFAErrorRecovery"></a><a id="pshedfaerrorrecovery"></a><a id="PSHEDFAERRORRECOVERY"></a><b>PshedFAErrorRecovery</b>
+### -field PshedFAErrorRecovery
 
 <dd>
 <p>The PSHED plug-in participates in error recovery.</p>
 </dd>
 
-### -field <a id="PshedFAErrorInjection"></a><a id="pshedfaerrorinjection"></a><a id="PSHEDFAERRORINJECTION"></a><b>PshedFAErrorInjection</b>
+### -field PshedFAErrorInjection
 
 <dd>
 <p>The PSHED plug-in participates in error injection.</p>
@@ -122,13 +122,13 @@ typedef struct _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET {
 </dl>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. PSHED plug-ins should set this member to zero.</p>
 </dd>
 
-### -field <b>Callbacks</b>
+### -field Callbacks
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-pshed-plugin-callbacks.md">WHEA_PSHED_PLUGIN_CALLBACKS</a> structure that describes the callback functions for the PSHED plug-in.</p>

@@ -7,7 +7,7 @@ old-location: netvista\dot11_available_frequency_list.htm
 old-project: netvista
 ms.assetid: b8862ba3-c871-4d9b-9ee4-99ec9d0bcda9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_AVAILABLE_FREQUENCY_LIST,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ typedef struct _DOT11_AVAILABLE_FREQUENCY_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_AVAILABLE_FREQUENCY_LIST structure. This member is
@@ -68,19 +68,19 @@ typedef struct _DOT11_AVAILABLE_FREQUENCY_LIST {
 <p></p>
 <dl>
 
-### -field <a id="Type"></a><a id="type"></a><a id="TYPE"></a>Type
+### -field Type
 
 <dd>
 <p>This member must be set to NDIS_OBJECT_TYPE_DEFAULT.</p>
 </dd>
 
-### -field <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a>Revision
+### -field Revision
 
 <dd>
 <p>This member must be set to DOT11_AVAILABLE_FREQUENCY_LIST_REVISION_1.</p>
 </dd>
 
-### -field <a id="Size"></a><a id="size"></a><a id="SIZE"></a>Size
+### -field Size
 
 <dd>
 <p>This member must be set to
@@ -91,21 +91,21 @@ typedef struct _DOT11_AVAILABLE_FREQUENCY_LIST {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>uNumOfEntries</b>
+### -field uNumOfEntries
 
 <dd>
 <p>The number of entries in the 
      <b>uFrequencyValue</b> array.</p>
 </dd>
 
-### -field <b>uTotalNumOfEntries</b>
+### -field uTotalNumOfEntries
 
 <dd>
 <p>The maximum number of entries that the 
      <b>uFrequencyValue</b> array can contain.</p>
 </dd>
 
-### -field <b>uFrequencyValue</b>
+### -field uFrequencyValue
 
 <dd>
 <p>An array that specifies the list of available frequencies that the NIC can operate with.</p>
@@ -152,4 +152,4 @@ typedef struct _DOT11_AVAILABLE_FREQUENCY_LIST {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_AVAILABLE_FREQUENCY_LIST structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_AVAILABLE_FREQUENCY_LIST structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

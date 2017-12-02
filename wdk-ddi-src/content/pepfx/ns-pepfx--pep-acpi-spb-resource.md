@@ -60,19 +60,19 @@ typedef struct _PEP_ACPI_SPB_RESOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="..\pepfx\ne-pepfx--pep-acpi-resource-type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value describing this resource.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <a href="..\pepfx\ns-pepfx--pep-acpi-resource-flags.md">PEP_ACPI_RESOURCE_FLAGS</a> structure that describes the capabilities of this ACPI resource.</p>
 </dd>
 
-### -field <b>TypeSpecificFlags</b>
+### -field TypeSpecificFlags
 
 <dd>
 <p>Specifies the bit flags that are common to all serial bus connection types.</p>
@@ -84,7 +84,7 @@ typedef struct _PEP_ACPI_SPB_RESOURCE {
 <tr>
 <td width="40%"><a id="0_-_Slave_mode"></a><a id="0_-_slave_mode"></a><a id="0_-_SLAVE_MODE"></a><dl>
 
-### -field <b>0 - Slave mode</b>
+### -field 0 - Slave mode
 
 </dl>
 </td>
@@ -96,7 +96,7 @@ typedef struct _PEP_ACPI_SPB_RESOURCE {
 <tr>
 <td width="40%"><a id="1_-_Consumer_producer_mode"></a><a id="1_-_consumer_producer_mode"></a><a id="1_-_CONSUMER_PRODUCER_MODE"></a><dl>
 
-### -field <b>1 - Consumer/producer mode</b>
+### -field 1 - Consumer/producer mode
 
 </dl>
 </td>
@@ -108,7 +108,7 @@ typedef struct _PEP_ACPI_SPB_RESOURCE {
 <tr>
 <td width="40%"><a id="2_to_7_-_Reserved"></a><a id="2_to_7_-_reserved"></a><a id="2_TO_7_-_RESERVED"></a><dl>
 
-### -field <b>2 to 7 - Reserved</b>
+### -field 2 to 7 - Reserved
 
 </dl>
 </td>
@@ -120,11 +120,11 @@ typedef struct _PEP_ACPI_SPB_RESOURCE {
 <p> </p>
 </dd>
 
-### -field <b>ResourceSourceIndex</b>
+### -field ResourceSourceIndex
 
 <dd>Reserved. Must be set to zero..</dd>
 
-### -field <b>ResourceSourceName</b>
+### -field ResourceSourceName
 
 <dd>
 <p>The name of the serial bus controller device to which this
@@ -133,13 +133,13 @@ qualified path, a relative path, or a simple name segment
 that utilizes the namespace search rules.</p>
 </dd>
 
-### -field <b>VendorData</b>
+### -field VendorData
 
 <dd>
 <p>A pointer to optional data that is specific to the serial bus connection type.</p>
 </dd>
 
-### -field <b>VendorDataLength</b>
+### -field VendorDataLength
 
 <dd>
 <p>The length of the buffer pointed to by <b>VendorData</b>.</p>

@@ -7,7 +7,7 @@ old-location: netvista\riluiccslotstate_2.htm
 old-project: netvista
 ms.assetid: 472f7354-4b51-4fac-857e-d93083f160e8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef enum _RILUICCSLOTSTATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_UICCSLOT_OFF"></a><a id="ril_uiccslot_off"></a><b>RIL_UICCSLOT_OFF</b>
+### -field RIL_UICCSLOT_OFF
 
 <dd></dd>
 
-### -field <a id="RIL_UICCSLOT_EMPTY"></a><a id="ril_uiccslot_empty"></a><b>RIL_UICCSLOT_EMPTY</b>
+### -field RIL_UICCSLOT_EMPTY
 
 <dd></dd>
 
-### -field <a id="RIL_UICCSLOT_NOT_READY"></a><a id="ril_uiccslot_not_ready"></a><b>RIL_UICCSLOT_NOT_READY</b>
+### -field RIL_UICCSLOT_NOT_READY
 
 <dd></dd>
 
-### -field <a id="RIL_UICCSLOT_ACTIVE"></a><a id="ril_uiccslot_active"></a><b>RIL_UICCSLOT_ACTIVE</b>
+### -field RIL_UICCSLOT_ACTIVE
 
 <dd></dd>
 
-### -field <a id="RIL_UICCSLOT_ERROR"></a><a id="ril_uiccslot_error"></a><b>RIL_UICCSLOT_ERROR</b>
+### -field RIL_UICCSLOT_ERROR
 
 <dd></dd>
 
-### -field <a id="RIL_UICCSLOT_MAX"></a><a id="ril_uiccslot_max"></a><b>RIL_UICCSLOT_MAX</b>
+### -field RIL_UICCSLOT_MAX
 
 <dd></dd>
 </dl>

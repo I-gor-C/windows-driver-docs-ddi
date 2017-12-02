@@ -55,13 +55,13 @@ VOID FreeBufferWithNotification(
 ## -parameters
 <dl>
 
-### -param <i>AudioBufferMdl</i> [in]
+### -param AudioBufferMdl [in]
 
 <dd>
 <p>Specifies a memory descriptor list (<a href="..\wdm\ns-wdm--mdl.md">MDL</a>) previously allocated with a call to <b>IMiniportWaveRTStreamNotification::AllocateBufferWithNotification</b>.</p>
 </dd>
 
-### -param <i>SizeWritten</i> [in]
+### -param SizeWritten [in]
 
 <dd>
 <p>Output pointer for the number of bytes the method has written to the Attributes buffer. This parameter points to a ULONG variable into which the method writes the byte count.</p>

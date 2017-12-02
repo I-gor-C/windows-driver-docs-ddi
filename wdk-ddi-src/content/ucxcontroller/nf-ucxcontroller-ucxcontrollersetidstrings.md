@@ -59,25 +59,25 @@ NTSTATUS UcxControllerSetIdStrings(
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>ManufacturerNameString</i> [in]
+### -param ManufacturerNameString [in]
 
 <dd>
 <p>A string that contains the name of controller manufacturer.</p>
 </dd>
 
-### -param <i>ModelNameString</i> [in]
+### -param ModelNameString [in]
 
 <dd>
 <p>A string that contains the name of device model.</p>
 </dd>
 
-### -param <i>ModelNumberString</i> [in]
+### -param ModelNumberString [in]
 
 <dd>
 <p>A string that contains the revision number of the device model.</p>

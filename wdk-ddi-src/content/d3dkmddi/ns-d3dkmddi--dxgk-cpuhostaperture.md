@@ -55,13 +55,13 @@ typedef struct _DXGK_CPUHOSTAPERTURE {
 ## -struct-fields
 <dl>
 
-### -field <b>PhysicalAddress</b>
+### -field PhysicalAddress
 
 <dd>
 <p>The CPU physical address.</p>
 </dd>
 
-### -field <b>SizeInPages</b>
+### -field SizeInPages
 
 <dd>
 <p>The size d3ddiin CPU host pages.</p>

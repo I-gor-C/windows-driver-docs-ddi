@@ -7,7 +7,7 @@ old-location: netvista\wwan_ussd_event_type.htm
 old-project: netvista
 ms.assetid: CEBC8A75-03E9-4E2A-9092-2FA3005371FE
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,37 +60,37 @@ typedef enum _WWAN_USSD_EVENT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanUssdEventNoActionRequired"></a><a id="wwanussdeventnoactionrequired"></a><a id="WWANUSSDEVENTNOACTIONREQUIRED"></a><b>WwanUssdEventNoActionRequired</b>
+### -field WwanUssdEventNoActionRequired
 
 <dd>
 <p>Indicates no further action is required or information needed.</p>
 </dd>
 
-### -field <a id="WwanUssdEventActionRequired"></a><a id="wwanussdeventactionrequired"></a><a id="WWANUSSDEVENTACTIONREQUIRED"></a><b>WwanUssdEventActionRequired</b>
+### -field WwanUssdEventActionRequired
 
 <dd>
 <p>Indicates the USSD session is still open and further information is needed, such as additional USSD strings.</p>
 </dd>
 
-### -field <a id="WwanUssdEventTerminated"></a><a id="wwanussdeventterminated"></a><a id="WWANUSSDEVENTTERMINATED"></a><b>WwanUssdEventTerminated</b>
+### -field WwanUssdEventTerminated
 
 <dd>
 <p>Indicates the USSD session has been terminated.</p>
 </dd>
 
-### -field <a id="WwanUssdEventOtherLocalClient"></a><a id="wwanussdeventotherlocalclient"></a><a id="WWANUSSDEVENTOTHERLOCALCLIENT"></a><b>WwanUssdEventOtherLocalClient</b>
+### -field WwanUssdEventOtherLocalClient
 
 <dd>
 <p>Indicates an active USSD session already exists and that a new session cannot be established until the active session terminates. This includes sessions that are invisible to the MB stack such as a USSD session termination in the Subscriber Identity Module (SIM).</p>
 </dd>
 
-### -field <a id="WwanUssdEventOperationNotSupported"></a><a id="wwanussdeventoperationnotsupported"></a><a id="WWANUSSDEVENTOPERATIONNOTSUPPORTED"></a><b>WwanUssdEventOperationNotSupported</b>
+### -field WwanUssdEventOperationNotSupported
 
 <dd>
 <p>Indicates that the previous request is not supported by the miniport driver or MB device.</p>
 </dd>
 
-### -field <a id="WwanUssdEventNetworkTimeOut"></a><a id="wwanussdeventnetworktimeout"></a><a id="WWANUSSDEVENTNETWORKTIMEOUT"></a><b>WwanUssdEventNetworkTimeOut</b>
+### -field WwanUssdEventNetworkTimeOut
 
 <dd>
 <p>Indicates that the USSD session was closed due to a session time-out either locally or by the network. The miniport driver or MB device is responsible for timing out an inactive USSD session after an implementation-specific time-out.</p>
@@ -134,4 +134,4 @@ typedef enum _WWAN_USSD_EVENT_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_USSD_EVENT_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_USSD_EVENT_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

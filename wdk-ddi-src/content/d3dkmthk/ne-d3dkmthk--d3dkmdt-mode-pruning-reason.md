@@ -64,68 +64,68 @@ typedef enum _D3DKMDT_MODE_PRUNING_REASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_MPR_UNINITIALIZED"></a><a id="d3dkmdt_mpr_uninitialized"></a><b>D3DKMDT_MPR_UNINITIALIZED</b>
+### -field D3DKMDT_MPR_UNINITIALIZED
 
 <dd>
 <p>A variable of type D3DKMDT_MODE_PRUNING_REASON has not yet been assigned a meaningful value. </p>
 </dd>
 
-### -field <a id="D3DKMDT_MPR_ALLCAPS"></a><a id="d3dkmdt_mpr_allcaps"></a><b>D3DKMDT_MPR_ALLCAPS</b>
+### -field D3DKMDT_MPR_ALLCAPS
 
 <dd>
 <p>The monitor does not support the display mode because none of the available monitor capabilites imply support of the display mode. </p>
 </dd>
 
-### -field <a id="D3DKMDT_MPR_DESCRIPTOR_MONITOR_SOURCE_MODE"></a><a id="d3dkmdt_mpr_descriptor_monitor_source_mode"></a><b>D3DKMDT_MPR_DESCRIPTOR_MONITOR_SOURCE_MODE</b>
+### -field D3DKMDT_MPR_DESCRIPTOR_MONITOR_SOURCE_MODE
 
 <dd>
 <p>The monitor supports the display mode because of the monitor source mode in the monitor descriptor.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MPR_DESCRIPTOR_MONITOR_FREQUENCY_RANGE"></a><a id="d3dkmdt_mpr_descriptor_monitor_frequency_range"></a><b>D3DKMDT_MPR_DESCRIPTOR_MONITOR_FREQUENCY_RANGE</b>
+### -field D3DKMDT_MPR_DESCRIPTOR_MONITOR_FREQUENCY_RANGE
 
 <dd>
 <p>The monitor does not support the display mode because of the monitor frequency range in the monitor descriptor. </p>
 </dd>
 
-### -field <a id="D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_SOURCE_MODE"></a><a id="d3dkmdt_mpr_descriptor_override_monitor_source_mode"></a><b>D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_SOURCE_MODE</b>
+### -field D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_SOURCE_MODE
 
 <dd>
 <p>The monitor supports the display mode because of the monitor source mode in the monitor descriptor override. </p>
 </dd>
 
-### -field <a id="D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_FREQUENCY_RANGE"></a><a id="d3dkmdt_mpr_descriptor_override_monitor_frequency_range"></a><b>D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_FREQUENCY_RANGE</b>
+### -field D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_FREQUENCY_RANGE
 
 <dd>
 <p>The monitor does not support the display mode because of the monitor frequency range in the monitor descriptor override. </p>
 </dd>
 
-### -field <a id="D3DKMDT_MPR_DEFAULT_PROFILE_MONITOR_SOURCE_MODE"></a><a id="d3dkmdt_mpr_default_profile_monitor_source_mode"></a><b>D3DKMDT_MPR_DEFAULT_PROFILE_MONITOR_SOURCE_MODE</b>
+### -field D3DKMDT_MPR_DEFAULT_PROFILE_MONITOR_SOURCE_MODE
 
 <dd>
 <p>The monitor supports the display mode because of the monitor source mode in the default monitor profile. </p>
 </dd>
 
-### -field <a id="D3DKMDT_MPR_DRIVER_RECOMMENDED_MONITOR_SOURCE_MODE"></a><a id="d3dkmdt_mpr_driver_recommended_monitor_source_mode"></a><b>D3DKMDT_MPR_DRIVER_RECOMMENDED_MONITOR_SOURCE_MODE</b>
+### -field D3DKMDT_MPR_DRIVER_RECOMMENDED_MONITOR_SOURCE_MODE
 
 <dd>
 <p>The monitor supports the display mode because of the monitor source mode that the display miniport driver recommends. </p>
 </dd>
 
-### -field <a id="D3DKMDT_MPR_MONITOR_FREQUENCY_RANGE_OVERRIDE"></a><a id="d3dkmdt_mpr_monitor_frequency_range_override"></a><b>D3DKMDT_MPR_MONITOR_FREQUENCY_RANGE_OVERRIDE</b>
+### -field D3DKMDT_MPR_MONITOR_FREQUENCY_RANGE_OVERRIDE
 
 <dd>
 <p>The monitor supports the display mode because of the monitor frequency range override. </p>
 </dd>
 
-### -field <a id="D3DKMDT_MPR_CLONE_PATH_PRUNED"></a><a id="d3dkmdt_mpr_clone_path_pruned"></a><b>D3DKMDT_MPR_CLONE_PATH_PRUNED</b>
+### -field D3DKMDT_MPR_CLONE_PATH_PRUNED
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>
 <p>The display mode is pruned (that is, the monitor does not support the display mode) because other paths in the clone cluster have no mode supported by the monitor. </p>
 </dd>
 
-### -field <a id="D3DKMDT_MPR_MAXVALID"></a><a id="d3dkmdt_mpr_maxvalid"></a><b>D3DKMDT_MPR_MAXVALID</b>
+### -field D3DKMDT_MPR_MAXVALID
 
 <dd>
 <p>Valid enumeration values were exceeded. </p>

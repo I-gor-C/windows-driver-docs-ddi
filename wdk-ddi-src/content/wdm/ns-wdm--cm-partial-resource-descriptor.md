@@ -153,7 +153,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Identifies the resource type. The constant value specified for <b>Type</b> indicates which structure within the <b>u</b> union is valid, as indicated in the following table. (These flags are used within both <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> and <a href="..\wdm\ns-wdm--io-resource-descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structures, except where noted.)</p>
@@ -269,7 +269,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>ShareDisposition</b>
+### -field ShareDisposition
 
 <dd>
 <p>Indicates whether the described resource can be shared. Valid constant values are listed in the following table.</p>
@@ -281,7 +281,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CmResourceShareDeviceExclusive"></a><a id="cmresourcesharedeviceexclusive"></a><a id="CMRESOURCESHAREDEVICEEXCLUSIVE"></a><dl>
 
-### -field <b>CmResourceShareDeviceExclusive</b>
+### -field CmResourceShareDeviceExclusive
 
 </dl>
 </td>
@@ -292,7 +292,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CmResourceShareDriverExclusive"></a><a id="cmresourcesharedriverexclusive"></a><a id="CMRESOURCESHAREDRIVEREXCLUSIVE"></a><dl>
 
-### -field <b>CmResourceShareDriverExclusive</b>
+### -field CmResourceShareDriverExclusive
 
 </dl>
 </td>
@@ -303,7 +303,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CmResourceShareShared"></a><a id="cmresourceshareshared"></a><a id="CMRESOURCESHARESHARED"></a><dl>
 
-### -field <b>CmResourceShareShared</b>
+### -field CmResourceShareShared
 
 </dl>
 </td>
@@ -315,7 +315,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Contains flag bits that are specific to the resource type, as indicated in the following table. Flags can be bitwise-ORed together as appropriate.</p>
@@ -450,7 +450,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <p>CM_RESOURCE_INTERRUPT_SECONDARY_INTERRUPT</p>
 </td>
 <td>
-<p>The interrupt is a secondary interrupt. This flag can be set starting with Windows 8. For more information about secondary interrupts, see <a href="NULL">GPIO Interrupts</a>.</p>
+<p>The interrupt is a secondary interrupt. This flag can be set starting with Windows 8. For more information about secondary interrupts, see <a href="https://msdn.microsoft.com/0F56AD4C-E0BF-49F1-AB67-0107D08DEF9F">GPIO Interrupts</a>.</p>
 </td>
 </tr>
 <tr>
@@ -652,25 +652,25 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <dl>
 
-### -field <b>Generic</b>
+### -field Generic
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>Port</b>
+### -field Port
 
 <dd>
 <p>Specifies a range of I/O port addresses, using the following members.</p>
 <p>Drivers for Windows Vista and later versions of the Windows operating system can use <a href="..\wdm\nf-wdm-rtlcmdecodememioresource.md">RtlCmDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlcmencodememioresource.md">RtlCmEncodeMemIoResource</a> to read and update the <b>u.Port</b> member, rather than updating it directly.</p>
 <dl>
 
-### -field <b>Start</b>
+### -field Start
 
 <dd>
 <p>For raw resources: Specifies the bus-relative physical address of the lowest of a range of contiguous I/O port addresses allocated to the device.</p>
@@ -678,7 +678,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <p>For more information about raw and translated resources, see Remarks.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The length, in bytes, of the range of allocated I/O port addresses.</p>
@@ -686,13 +686,13 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Interrupt</b>
+### -field Interrupt
 
 <dd>
 <p>Specifies an interrupt vector and level, using the following members:</p>
 <dl>
 
-### -field <b>Level</b>
+### -field Level
 
 <dd>
 <p>For raw resources: Specifies the device's bus-specific IRQL (if appropriate for the platform and bus).</p>
@@ -700,13 +700,13 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <p>For more information about raw and translated resources, see Remarks.</p>
 </dd>
 
-### -field <b>Group</b>
+### -field Group
 
 <dd>
 <p>Specifies the processor group number. This member exists only if the NT_PROCESSOR_GROUPS constant is defined at compile time. This member can be nonzero only on Windows 7 and later versions of Windows. The <b>Group</b> and <b>Affinity</b> members together specify a group affinity that indicates which processors the device can interrupt. To specify an affinity for any group, set <b>Group</b> to ALL_PROCESSOR_GROUPS.</p>
 </dd>
 
-### -field <b>Vector</b>
+### -field Vector
 
 <dd>
 <p>For raw resources: Specifies the device's bus-specific interrupt vector (if appropriate for the platform and bus).</p>
@@ -714,7 +714,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <p>For more information about raw and translated resources, see Remarks.</p>
 </dd>
 
-### -field <b>Affinity</b>
+### -field Affinity
 
 <dd>
 <p>Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>-typed bitmask value indicating the set of processors the device can interrupt. To indicate that the device can interrupt any processor, this member is set to -1.</p>
@@ -722,7 +722,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>MessageInterrupt</b>
+### -field MessageInterrupt
 
 <dd>
 <p>Specifies a message-signaled interrupt. This member is a union. Use <b>u.MessageInterrupt.Raw</b> for raw resources, and <b>u.MessageInterrupt.Translated</b> for translated resources. This type of resource is only returned on Windows Vista and later versions of the Windows operating system.</p>
@@ -730,36 +730,36 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <p>The <b>u.MessageInterrupt.Raw</b> member has the following members:</p>
 <dl>
 
-### -field <b>Raw</b>
+### -field Raw
 
 <dd>
 <dl>
 
-### -field <b>Group</b>
+### -field Group
 
 <dd>
 <p>Specifies a processor group number. This member exists only if NT_PROCESSOR_GROUPS is defined at compile time. This member can be nonzero only on Windows 7 and later versions of Windows. The <b>Group</b> and <b>Affinity</b> members together specify a group affinity that indicates which processors can receive the device's interrupts. To specify an affinity for any group, set <b>Group</b> to ALL_PROCESSOR_GROUPS.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>MessageCount</b>
+### -field MessageCount
 
 <dd>
 <p>Specifies the number of message-signaled interrupts generated for this driver.</p>
 </dd>
 
-### -field <b>Vector</b>
+### -field Vector
 
 <dd>
 <p>Specifies the device's interrupt vector.</p>
 </dd>
 
-### -field <b>Affinity</b>
+### -field Affinity
 
 <dd>
 <p>Specifies a KAFFINITY value that indicates the processors that receive the device's interrupts.</p>
@@ -767,37 +767,37 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Translated</b>
+### -field Translated
 
 <dd>
 <p>The <b>u.MessageInterrupt.Translated</b> member has the following members:</p>
 <dl>
 
-### -field <b>Level</b>
+### -field Level
 
 <dd>
 <p>Specifies the device IRQL (DIRQL) assigned to the device's interrupts.</p>
 </dd>
 
-### -field <b>Group</b>
+### -field Group
 
 <dd>
 <p>Specifies a processor group number. This member exists only if NT_PROCESSOR_GROUPS is defined at compile time. This member can be nonzero only on Windows 7 and later versions of Windows. The <b>Translated.Group</b> and <b>Translated.Affinity</b> members together specify a group affinity that indicates which processors can receive the device's interrupts. To specify an affinity for any group, set <b>Translated.Group</b> to ALL_PROCESSOR_GROUPS.</p>
 </dd>
 
-### -field <b>Level</b>
+### -field Level
 
 <dd>
 <p>Specifies the device IRQL (DIRQL) assigned to the device's interrupts.</p>
 </dd>
 
-### -field <b>Vector</b>
+### -field Vector
 
 <dd>
 <p>Specifies the device's interrupt vector.</p>
 </dd>
 
-### -field <b>Affinity</b>
+### -field Affinity
 
 <dd>
 <p>Specifies a KAFFINITY value that identifies the processors that receive the device's interrupts.</p>
@@ -807,14 +807,14 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Memory</b>
+### -field Memory
 
 <dd>
 <p>Specifies a range of memory addresses, using the following members.</p>
 <p>Drivers for Windows Vista and later versions of the Windows operating system can use <a href="..\wdm\nf-wdm-rtlcmdecodememioresource.md">RtlCmDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlcmencodememioresource.md">RtlCmEncodeMemIoResource</a> to read and update the <b>u.Memory</b> member, rather than updating it directly.</p>
 <dl>
 
-### -field <b>Start</b>
+### -field Start
 
 <dd>
 <p>For raw resources: Specifies the bus-relative physical address of the lowest of a range of contiguous memory addresses allocated to the device.</p>
@@ -822,7 +822,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <p>For more information about raw and translated resources, see Remarks.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Specifies the length, in bytes, of the range of allocated memory addresses.</p>
@@ -830,25 +830,25 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Dma</b>
+### -field Dma
 
 <dd>
 <p>Specifies a DMA setting, using one of the following members:</p>
 <dl>
 
-### -field <b>Channel</b>
+### -field Channel
 
 <dd>
 <p>Specifies the number of the DMA channel on a system DMA controller that the device can use.</p>
 </dd>
 
-### -field <b>Port</b>
+### -field Port
 
 <dd>
 <p>Specifies the number of the DMA port that an MCA-type device can use.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Not used.</p>
@@ -856,44 +856,44 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>DmaV3</b>
+### -field DmaV3
 
 <dd>
 <p>Specifies the DMA settings for a driver that uses version 3 of the <a href="..\wdm\ns-wdm--dma-operations.md">DMA_OPERATIONS</a> structure.</p>
 <p>The <b>u.DmaV3</b> member is available starting with Windows 8.</p>
 <dl>
 
-### -field <b>Channel</b>
+### -field Channel
 
 <dd>
 <p>Specifies the number of the DMA channel on the system DMA controller that is allocated to the device.</p>
 </dd>
 
-### -field <b>RequestLine</b>
+### -field RequestLine
 
 <dd>
 <p>Specifies the number of the request line on the system DMA controller that is allocated to the device.</p>
 </dd>
 
-### -field <b>TransferWidth</b>
+### -field TransferWidth
 
 <dd>
 <p>Specifies the width, in bits, of the data bus that the system DMA controller that is allocated to the device uses to transfer data to or from the device.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Not used.</p>
@@ -901,31 +901,31 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>DevicePrivate</b>
+### -field DevicePrivate
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>BusNumber</b>
+### -field BusNumber
 
 <dd>
 <p>Specifies bus numbers, using the following members:</p>
 <dl>
 
-### -field <b>Start</b>
+### -field Start
 
 <dd>
 <p>Specifies the lowest-numbered of a range of contiguous buses allocated to the device.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Specifies the number of buses allocated to the device.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Not used.</p>
@@ -933,26 +933,26 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>DeviceSpecificData</b>
+### -field DeviceSpecificData
 
 <dd>
 <p>Specifies the size of a device-specific, private structure that is appended to the end of the <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure. If <b>u.DeviceSpecificData</b> is used, the <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure must be the last one in the <a href="..\wdm\ns-wdm--cm-partial-resource-list.md">CM_PARTIAL_RESOURCE_LIST</a> array.</p>
 <p>Examples of device-specific structures include <a href="..\wdm\ns-wdm--cm-floppy-device-data.md">CM_FLOPPY_DEVICE_DATA</a>, <a href="..\wdm\ns-wdm--cm-keyboard-device-data.md">CM_KEYBOARD_DEVICE_DATA</a>, <a href="..\wdm\ns-wdm--cm-scsi-device-data.md">CM_SCSI_DEVICE_DATA</a>, and <a href="..\wdm\ns-wdm--cm-serial-device-data.md">CM_SERIAL_DEVICE_DATA</a>.</p>
 <dl>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>Specifies the number of bytes appended to the end of the <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Not used.</p>
@@ -960,14 +960,14 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Memory40</b>
+### -field Memory40
 
 <dd>
 <p>Specifies a range of memory addresses, using the following members.</p>
 <p>The <b>u.Memory40</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers must use <a href="..\wdm\nf-wdm-rtlcmdecodememioresource.md">RtlCmDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlcmencodememioresource.md">RtlCmEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
 <dl>
 
-### -field <b>Start</b>
+### -field Start
 
 <dd>
 <p>For raw resources: Specifies the bus-relative physical address of the lowest of a range of contiguous memory addresses that are allocated to the device.</p>
@@ -975,7 +975,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <p>For more information about raw and translated resources, see Remarks.</p>
 </dd>
 
-### -field <b>Length40</b>
+### -field Length40
 
 <dd>
 <p>Contains the high 32 bits of the 40-bit length, in bytes, of the range of allocated memory addresses. The lowest 8 bits are treated as zero.</p>
@@ -983,14 +983,14 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Memory48</b>
+### -field Memory48
 
 <dd>
 <p>Specifies a range of memory addresses, using the following members.</p>
 <p>The <b>u.Memory48</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers must use <a href="..\wdm\nf-wdm-rtlcmdecodememioresource.md">RtlCmDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlcmencodememioresource.md">RtlCmEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
 <dl>
 
-### -field <b>Start</b>
+### -field Start
 
 <dd>
 <p>For raw resources: Specifies the bus-relative physical address of the lowest of a range of contiguous memory addresses that are allocated to the device.</p>
@@ -998,7 +998,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <p>For more information about raw and translated resources, see Remarks.</p>
 </dd>
 
-### -field <b>Length48</b>
+### -field Length48
 
 <dd>
 <p>Contains the high 32 bits of the 48-bit length, in bytes, of the range of allocated memory addresses. The lowest 16 bits are treated as zero.</p>
@@ -1006,14 +1006,14 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Memory64</b>
+### -field Memory64
 
 <dd>
 <p>Specifies a range of memory addresses, using the following members.</p>
 <p>The <b>u.Memory64</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers must use <a href="..\wdm\nf-wdm-rtlcmdecodememioresource.md">RtlCmDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlcmencodememioresource.md">RtlCmEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
 <dl>
 
-### -field <b>Start</b>
+### -field Start
 
 <dd>
 <p>For raw resources: Specifies the bus-relative physical address of the lowest of a range of contiguous memory addresses that are allocated to the device.</p>
@@ -1021,7 +1021,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <p>For more information about raw and translated resources, see Remarks.</p>
 </dd>
 
-### -field <b>Length64</b>
+### -field Length64
 
 <dd>
 <p>Contains the high 32 bits of the 64-bit length, in bytes, of the range of allocated memory addresses. The lowest 32 bits are treated as zero.</p>
@@ -1029,14 +1029,14 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Connection</b>
+### -field Connection
 
 <dd>
 <p>Specifies a connection to a <a href="https://msdn.microsoft.com/2c660e14-5b27-4610-a328-735b07ed0773">serial bus</a> or <a href="serports.extension_based_serial_controller_driver_design_guide">serial port</a>, or to a set of one or more <a href="https://msdn.microsoft.com/450E7F80-D9AC-4F52-8062-2DA5343C8D0F">general-purpose I/O</a> (GPIO) pins. The following members describe this connection.</p>
 <p>The <b>u.Connection</b> member is available starting with Windows 8.</p>
 <dl>
 
-### -field <b>Class</b>
+### -field Class
 
 <dd>
 <p>Specifies the connection class. This member is set to one of the following values.</p>
@@ -1048,7 +1048,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_CONNECTION_CLASS_GPIO"></a><a id="cm_resource_connection_class_gpio"></a><dl>
 
-### -field <b>CM_RESOURCE_CONNECTION_CLASS_GPIO</b>
+### -field CM_RESOURCE_CONNECTION_CLASS_GPIO
 
 </dl>
 </td>
@@ -1059,7 +1059,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_CONNECTION_CLASS_SERIAL"></a><a id="cm_resource_connection_class_serial"></a><dl>
 
-### -field <b>CM_RESOURCE_CONNECTION_CLASS_SERIAL</b>
+### -field CM_RESOURCE_CONNECTION_CLASS_SERIAL
 
 </dl>
 </td>
@@ -1071,7 +1071,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Specifies the connection type.</p>
@@ -1084,7 +1084,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_CONNECTION_TYPE_GPIO_IO"></a><a id="cm_resource_connection_type_gpio_io"></a><dl>
 
-### -field <b>CM_RESOURCE_CONNECTION_TYPE_GPIO_IO</b>
+### -field CM_RESOURCE_CONNECTION_TYPE_GPIO_IO
 
 </dl>
 </td>
@@ -1105,7 +1105,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_CONNECTION_TYPE_SERIAL_I2C"></a><a id="cm_resource_connection_type_serial_i2c"></a><dl>
 
-### -field <b>CM_RESOURCE_CONNECTION_TYPE_SERIAL_I2C</b>
+### -field CM_RESOURCE_CONNECTION_TYPE_SERIAL_I2C
 
 </dl>
 </td>
@@ -1116,7 +1116,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_CONNECTION_TYPE_SERIAL_SPI"></a><a id="cm_resource_connection_type_serial_spi"></a><dl>
 
-### -field <b>CM_RESOURCE_CONNECTION_TYPE_SERIAL_SPI</b>
+### -field CM_RESOURCE_CONNECTION_TYPE_SERIAL_SPI
 
 </dl>
 </td>
@@ -1127,7 +1127,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_CONNECTION_TYPE_SERIAL_UART"></a><a id="cm_resource_connection_type_serial_uart"></a><dl>
 
-### -field <b>CM_RESOURCE_CONNECTION_TYPE_SERIAL_UART</b>
+### -field CM_RESOURCE_CONNECTION_TYPE_SERIAL_UART
 
 </dl>
 </td>
@@ -1139,25 +1139,25 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>IdLowPart</b>
+### -field IdLowPart
 
 <dd>
 <p>Contains the lower 32 bits of the 64-bit connection ID.</p>
 </dd>
 
-### -field <b>IdHighPart</b>
+### -field IdHighPart
 
 <dd>
 <p>Contains the upper 32 bits of the 64-bit connection ID.</p>

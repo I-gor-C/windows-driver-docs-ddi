@@ -7,7 +7,7 @@ old-location: netvista\_dot11_wfd_go_intent.htm
 old-project: netvista
 ms.assetid: 8E4F88EF-04A9-4313-AE6A-2467DA08044A
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_WFD_GO_INTENT,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,13 +54,13 @@ typedef struct _DOT11_WFD_GO_INTENT {
 ## -struct-fields
 <dl>
 
-### -field <b>TieBreaker:1</b>
+### -field TieBreaker:1
 
 <dd>
 <p>If set, indicates that group ownership is granted.</p>
 </dd>
 
-### -field <b>Intent:7</b>
+### -field Intent:7
 
 <dd>
 <p>Group ownership intent level. The value of the local device intent is compared to the remote device intent to negociate ownership.</p>

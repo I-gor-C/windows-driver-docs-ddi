@@ -7,7 +7,7 @@ old-location: netvista\dot11_wfd_discover_device_filter.htm
 old-project: netvista
 ms.assetid: B8AA23C6-EFFC-47C3-9AD2-72421463CDBA
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_WFD_DISCOVER_DEVICE_FILTER,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ typedef struct _DOT11_WFD_DISCOVER_DEVICE_FILTER {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceID</b>
+### -field DeviceID
 
 <dd>
 <p>The device address of a P2P Device or Group Owner to be discovered by the local P2P device.</p>
 </dd>
 
-### -field <b>ucBitmask</b>
+### -field ucBitmask
 
 <dd>
 <p>Filters which instances of the P2P device to discover. Possible values include:</p>
@@ -99,7 +99,7 @@ typedef struct _DOT11_WFD_DISCOVER_DEVICE_FILTER {
 <p> </p>
 </dd>
 
-### -field <b>GroupSSID</b>
+### -field GroupSSID
 
 <dd>
 <p>If GroupSSID is not a zero-length SSID, this member specifies the SSID of a P2P group that the local P2P device discovers. If this is the P2P wildcard SSID ("DIRECT-"), the local P2P device discovers all groups with P2P Group ID matching the desired device ID.</p>

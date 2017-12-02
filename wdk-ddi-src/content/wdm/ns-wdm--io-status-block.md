@@ -59,19 +59,19 @@ typedef struct _IO_STATUS_BLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>This is the completion status, either STATUS_SUCCESS if the requested operation was completed successfully or an informational, warning, or error STATUS_<i>XXX</i> value. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS values</a>.</p>
 </dd>
 
-### -field <b>Pointer</b>
+### -field Pointer
 
 <dd>
 <p>Reserved. For internal use only.</p>
 </dd>
 
-### -field <b>Information</b>
+### -field Information
 
 <dd>
 <p>This is set to a request-dependent value. For example, on successful completion of a transfer request, this is set to the number of bytes transferred. If a transfer request is completed with another STATUS_<i>XXX</i>, this member is set to zero. </p>
@@ -113,7 +113,7 @@ typedef struct _IO_STATUS_BLOCK {
 <a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 </dl>
 <p> </p>

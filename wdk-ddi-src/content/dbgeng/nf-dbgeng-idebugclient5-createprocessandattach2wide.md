@@ -7,7 +7,7 @@ old-location: debugger\createprocessandattach2wide.htm
 old-project: debugger
 ms.assetid: a1a1170b-9ecc-4432-badd-50847c974469
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugClient5, CreateProcessAndAttach2Wide, IDebugClient5::CreateProcessAndAttach2Wide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ HRESULT CreateProcessAndAttach2Wide(
 ## -parameters
 <dl>
 
-### -param <i>Server</i> [in]
+### -param Server [in]
 
 <dd>
 <p>Specifies the process server to use to attach to the process.  If <i>Server</i> is zero, the engine will connect to the local process without using a process server.</p>
 </dd>
 
-### -param <i>CommandLine</i> [in, optional]
+### -param CommandLine [in, optional]
 
 <dd>
 <p>Specifies the command line to execute to create the new process.  If <i>CommandLine</i> is <b>NULL</b>, no process is created and these methods will use <i>ProcessId</i> to attach to an existing process.</p>
 </dd>
 
-### -param <i>OptionsBuffer</i> [in]
+### -param OptionsBuffer [in]
 
 <dd>
 <p>Specifies the process creation options.  <i>OptionsBuffer</i> is a pointer to a <a href="..\dbgeng\ns-dbgeng--debug-create-process-options.md">DEBUG_CREATE_PROCESS_OPTIONS</a> structure.</p>
 </dd>
 
-### -param <i>OptionsBufferSize</i> [in]
+### -param OptionsBufferSize [in]
 
 <dd>
 <p>Specifies the size of the buffer <i>OptionsBuffer</i>.  This should be set to <b>sizeof(DEBUG_CREATE_PROCESS_OPTIONS)</b>.</p>
 </dd>
 
-### -param <i>InitialDirectory</i> [in, optional]
+### -param InitialDirectory [in, optional]
 
 <dd>
 <p>Specifies the starting directory for the process.  This parameter is used only if <i>CommandLine</i> is not <b>NULL</b>.  If <i>InitialDirectory</i> is <b>NULL</b>, the current directory for the process server is used.</p>
 </dd>
 
-### -param <i>Environment</i> [in, optional]
+### -param Environment [in, optional]
 
 <dd>
 <p>Specifies an environment block for the new process.  An environment block consists of a null-terminated block of null-terminated strings.  Each string is of the form:</p>
@@ -109,13 +109,13 @@ HRESULT CreateProcessAndAttach2Wide(
 <p>If <i>Environment</i> is set to <b>NULL</b>, the new process inherits the environment block of the process server.  If the DEBUG_CREATE_PROCESS_THROUGH_RTL flag is set in <i>OptionsBuffer</i>, then <i>Environment</i> must be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ProcessId</i> [in]
+### -param ProcessId [in]
 
 <dd>
 <p>Specifies the process ID of the target process to which the debugger will attach.  If <i>ProcessID</i> is zero, the debugger will attach to the process it created from <i>CommandLine</i>.</p>
 </dd>
 
-### -param <i>AttachFlags</i> [in]
+### -param AttachFlags [in]
 
 <dd>
 <p>Specifies the flags that control how the debugger attaches to the target process.  For details on these flags, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541454">DEBUG_ATTACH_XXX</a>.</p>
@@ -123,7 +123,7 @@ HRESULT CreateProcessAndAttach2Wide(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>E_INVALIDARG</b></dt>
@@ -200,4 +200,4 @@ HRESULT CreateProcessAndAttach2Wide(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient5::CreateProcessAndAttach2Wide method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient5::CreateProcessAndAttach2Wide method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_msix_table_operation.htm
 old-project: netvista
 ms.assetid: 7d1a4bb6-5db8-48b0-9be3-7468360951a1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,26 +58,26 @@ typedef enum _NDIS_MSIX_TABLE_CONFIG {
 ## -enum-fields
 <dl>
 
-### -field <a id="NdisMSIXTableConfigSetTableEntry"></a><a id="ndismsixtableconfigsettableentry"></a><a id="NDISMSIXTABLECONFIGSETTABLEENTRY"></a><b>NdisMSIXTableConfigSetTableEntry</b>
+### -field NdisMSIXTableConfigSetTableEntry
 
 <dd>
 <p>The MSI-X table entry should be mapped to an MSI-X message that the bus driver allocated to the
      device.</p>
 </dd>
 
-### -field <a id="NdisMSIXTableConfigMaskTableEntry"></a><a id="ndismsixtableconfigmasktableentry"></a><a id="NDISMSIXTABLECONFIGMASKTABLEENTRY"></a><b>NdisMSIXTableConfigMaskTableEntry</b>
+### -field NdisMSIXTableConfigMaskTableEntry
 
 <dd>
 <p>The interrupts from an MSI-X table entry source should be masked.</p>
 </dd>
 
-### -field <a id="NdisMSIXTableConfigUnmaskTableEntry"></a><a id="ndismsixtableconfigunmasktableentry"></a><a id="NDISMSIXTABLECONFIGUNMASKTABLEENTRY"></a><b>NdisMSIXTableConfigUnmaskTableEntry</b>
+### -field NdisMSIXTableConfigUnmaskTableEntry
 
 <dd>
 <p>The interrupts from an MSI-X table entry source should be unmasked.</p>
 </dd>
 
-### -field <a id="NdisMSIXTableConfigMax"></a><a id="ndismsixtableconfigmax"></a><a id="NDISMSIXTABLECONFIGMAX"></a><b>NdisMSIXTableConfigMax</b>
+### -field NdisMSIXTableConfigMax
 
 <dd>
 <p>The number of enumeration values in NDIS_MSIX_TABLE_OPERATION.</p>
@@ -119,4 +119,4 @@ typedef enum _NDIS_MSIX_TABLE_CONFIG {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MSIX_TABLE_OPERATION enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MSIX_TABLE_OPERATION enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

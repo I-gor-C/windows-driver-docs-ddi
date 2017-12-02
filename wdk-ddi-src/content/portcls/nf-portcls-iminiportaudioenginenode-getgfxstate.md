@@ -55,13 +55,13 @@ NTSTATUS GetGfxState(
 ## -parameters
 <dl>
 
-### -param <i>ulNodeId</i> [in]
+### -param ulNodeId [in]
 
 <dd>
 <p>The ID of the GFX node.</p>
 </dd>
 
-### -param <i>pbEnable</i> [out]
+### -param pbEnable [out]
 
 <dd>
 <p>Pointer to a <b>BOOL</b> data type.</p>

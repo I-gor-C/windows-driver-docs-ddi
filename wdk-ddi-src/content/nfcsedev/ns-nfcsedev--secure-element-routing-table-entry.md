@@ -59,26 +59,26 @@ typedef struct _SECURE_ELEMENT_ROUTING_TABLE_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>eRoutingType</b>
+### -field eRoutingType
 
 <dd>
 <p>NFC Forum listen mode routing table entry type.
 </p>
 </dd>
 
-### -field <b>TechRoutingInfo</b>
+### -field TechRoutingInfo
 
 <dd>
 <p>RF technology routing table entry information.</p>
 </dd>
 
-### -field <b>ProtoRoutingInfo</b>
+### -field ProtoRoutingInfo
 
 <dd>
 <p>RF protocol routing table entry information.</p>
 </dd>
 
-### -field <b>AidRoutingInfo</b>
+### -field AidRoutingInfo
 
 <dd>
 <p>AID routing table control information.

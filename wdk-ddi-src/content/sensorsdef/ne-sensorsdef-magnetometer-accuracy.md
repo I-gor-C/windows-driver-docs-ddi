@@ -7,7 +7,7 @@ old-location: sensors\magnetometer_accuracy.htm
 old-project: sensors
 ms.assetid: BC8D4FB1-69F4-4FAE-BA90-7CCB57D4A6C4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef enum _MAGNETOMETER_ACCURACY {
 ## -enum-fields
 <dl>
 
-### -field <a id="MagnetometerAccuracy_Unknown"></a><a id="magnetometeraccuracy_unknown"></a><a id="MAGNETOMETERACCURACY_UNKNOWN"></a><b>MagnetometerAccuracy_Unknown</b>
+### -field MagnetometerAccuracy_Unknown
 
 <dd>
 <p>Indicates that the magnetometer's accuracy cannot be determined.</p>
 </dd>
 
-### -field <a id="MagnetometerAccuracy_Unreliable"></a><a id="magnetometeraccuracy_unreliable"></a><a id="MAGNETOMETERACCURACY_UNRELIABLE"></a><b>MagnetometerAccuracy_Unreliable</b>
+### -field MagnetometerAccuracy_Unreliable
 
 <dd>
 <p>Indicates that the magnetometer readings are unreliable. The application can choose to prompt the user to calibrate the compass, to improve accuracy.</p>
 </dd>
 
-### -field <a id="MagnetometerAccuracy_Approximate"></a><a id="magnetometeraccuracy_approximate"></a><a id="MAGNETOMETERACCURACY_APPROXIMATE"></a><b>MagnetometerAccuracy_Approximate</b>
+### -field MagnetometerAccuracy_Approximate
 
 <dd>
 <p>Indicates that the magnetometer readings are approximate values.</p>
 </dd>
 
-### -field <a id="MagnetometerAccuracy_High"></a><a id="magnetometeraccuracy_high"></a><a id="MAGNETOMETERACCURACY_HIGH"></a><b>MagnetometerAccuracy_High</b>
+### -field MagnetometerAccuracy_High
 
 <dd>
 <p>Indicates that the magnetometer accuracy is set to high.</p>

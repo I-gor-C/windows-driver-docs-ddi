@@ -63,62 +63,62 @@ NTSTATUS ZwDeviceIoControlFile(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [in]
+### -param FileHandle [in]
 
 <dd>
 <p>Handle returned by <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> or <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a> for the file object representing the device to which the control information should be given or from which information should be returned. The file object must have been opened for asynchronous I/O if the caller specifies an <i>Event</i>, <i>ApcRoutine</i>, and an APC context (in <i>ApcContext</i>), or a completion context (in <i>ApcContext</i>). For I/O to an underlying mass-storage device, the file object must have been opened for Direct Access to Storage Device (DASD) access.</p>
 </dd>
 
-### -param <i>Event</i> [in, optional]
+### -param Event [in, optional]
 
 <dd>
 <p>Handle for a caller-created event. If this parameter is supplied, the caller will be put into a wait state until the requested operation is completed and the given event is set to the Signaled state. This parameter is optional and can be <b>NULL</b>. It must be <b>NULL</b> if the caller will wait for the <i>FileHandle</i> to be set to the Signaled state.</p>
 </dd>
 
-### -param <i>ApcRoutine</i> [in, optional]
+### -param ApcRoutine [in, optional]
 
 <dd>
 <p>Address of an optional, caller-supplied APC routine to be called when the requested operation completes. This parameter can be <b>NULL</b>. It must be <b>NULL</b> if there is an I/O completion object associated with the file object.</p>
 </dd>
 
-### -param <i>ApcContext</i> [in, optional]
+### -param ApcContext [in, optional]
 
 <dd>
 <p>Pointer to a caller-determined context area. This parameter value is used as the APC context if the caller supplies an APC, or is used as the completion context if an I/O completion object has been associated with the file object. When the operation completes, either the APC context is passed to the APC, if one was specified, or the completion context is included as part of the completion message that the I/O Manager posts to the associated I/O completion object.</p>
 <p>This parameter is optional and can be <b>NULL</b>. It must be <b>NULL</b> if <i>ApcRoutine</i> is <b>NULL</b> and there is no I/O completion object associated with the file object.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>Pointer to a variable that receives the final completion status and information about the operation. For successful calls that return data, the number of bytes written to the <i>OutputBuffer</i> is returned in the <b>Information</b> member.</p>
 </dd>
 
-### -param <i>IoControlCode</i> [in]
+### -param IoControlCode [in]
 
 <dd>
 <p>IOCTL_<i>XXX</i> code that indicates which device I/O control operation is to be carried out on, usually by the underlying device driver. The value of this parameter determines the format and required length of the <i>InputBuffer</i> and <i>OutputBuffer</i>, as well as which of the following parameter pairs are required. For detailed information about the system-defined, device-type-specific IOCTL_<i>XXX</i> codes, see the <a href="https://msdn.microsoft.com/1ef3e216-1322-42c3-b070-94cddfb2133c">device technology-specific section</a> of the Microsoft Windows Driver Kit (WDK) documentation and <a href="base.device_input_and_output_control_ioctl_">Device Input and Output Control Codes</a> in the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -param <i>InputBuffer</i> [in, optional]
+### -param InputBuffer [in, optional]
 
 <dd>
 <p>Pointer to a caller-allocated input buffer that contains device-specific information to be given to the target device. If <i>IoControlCode</i> specifies an operation that does not require input data, this pointer can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>InputBufferLength</i> [in]
+### -param InputBufferLength [in]
 
 <dd>
 <p>Size, in bytes, of the buffer at <i>InputBuffer</i>. If <i>InputBuffer</i> is <b>NULL</b>, set <i>InputBufferLength</i> to zero.</p>
 </dd>
 
-### -param <i>OutputBuffer</i> [out, optional]
+### -param OutputBuffer [out, optional]
 
 <dd>
 <p>Pointer to a caller-allocated output buffer in which information is returned from the target device. If <i>IoControlCode</i> specifies an operation that does not produce output data, this pointer can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>OutputBufferLength</i> [in]
+### -param OutputBufferLength [in]
 
 <dd>
 <p>Size, in bytes, of the buffer at <i>OutputBuffer</i>. If <i>OutputBuffer</i> is <b>NULL</b>, set <i>OutputBufferLength</i> to zero.</p>

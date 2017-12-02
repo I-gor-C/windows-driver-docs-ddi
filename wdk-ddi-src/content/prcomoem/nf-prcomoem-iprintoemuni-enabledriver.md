@@ -57,19 +57,19 @@ STDMETHOD EnableDriver(
 ## -parameters
 <dl>
 
-### -param <i>DriverVersion</i> 
+### -param DriverVersion 
 
 <dd>
 <p>Caller-supplied interface version number. This value is defined by PRINTER_OEMINTF_VERSION, in printoem.h.</p>
 </dd>
 
-### -param <i>cbSize</i> 
+### -param cbSize 
 
 <dd>
 <p>Caller-supplied size, in bytes, of the structure pointed to by <i>pded</i>.</p>
 </dd>
 
-### -param <i>pded</i> 
+### -param pded 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="display.drvenabledata">DRVENABLEDATA</a> structure.</p>
@@ -96,7 +96,7 @@ STDMETHOD EnableDriver(
 
 <p>A rendering plug-in for Unidrv can hook out a graphics DDI function only if the Unidrv driver defines the function. The following graphics DDI functions are defined in Unidrv and/or Pscript5 and can therefore be hooked out:</p>
 
-<p>If you provide a customized hooking function, it preempts the driver's equivalent graphics DDI function. Hooking functions can also call back into the driver's graphics DDI functions. For more information see <a href="NULL">Customized Graphics DDI Functions</a>.</p>
+<p>If you provide a customized hooking function, it preempts the driver's equivalent graphics DDI function. Hooking functions can also call back into the driver's graphics DDI functions. For more information see <a href="https://msdn.microsoft.com/33d7d567-5371-4873-a4ef-cd2b06f65d73">Customized Graphics DDI Functions</a>.</p>
 
 <p>Customized hooking functions have the same input and output parameters as the equivalent graphics DDI function, with one exception - where graphics DDI functions receive PDEV pointers, customized hooking functions receive <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> pointers. There are two ways for graphics DDI functions to receive PDEV pointers:</p>
 
@@ -108,11 +108,11 @@ STDMETHOD EnableDriver(
 
 <p>The equivalent customized hooking function must cast this input parameter to type PDEVOBJ when referencing it. An example graphics DDI function is <b>DrvDitherColor</b>.</p>
 
-<p>Note that while a <a href="NULL">printer graphics DLL</a> includes the addresses of its <a href="display.drvenablepdev">DrvEnablePDEV</a>, <a href="display.drvdisablepdev">DrvDisablePDEV</a>, and <a href="display.drvresetpdev">DrvResetPDEV</a> functions in the DRVENABLEDATA structure, a rendering plug-in explicitly exports <b>EnablePDEV</b>, <b>DisablePDEV</b>, and <b>ResetPDEV</b> as methods of the <b>IPrintOemUni</b> interface and does not place their addresses in the DRVENABLEDATA structure.</p>
+<p>Note that while a <a href="https://msdn.microsoft.com/58e181ff-c792-41a5-967d-a69a8ff5a041">printer graphics DLL</a> includes the addresses of its <a href="display.drvenablepdev">DrvEnablePDEV</a>, <a href="display.drvdisablepdev">DrvDisablePDEV</a>, and <a href="display.drvresetpdev">DrvResetPDEV</a> functions in the DRVENABLEDATA structure, a rendering plug-in explicitly exports <b>EnablePDEV</b>, <b>DisablePDEV</b>, and <b>ResetPDEV</b> as methods of the <b>IPrintOemUni</b> interface and does not place their addresses in the DRVENABLEDATA structure.</p>
 
 <p>If <code>IPrintOemUni::EnableDriver</code> methods are exported by multiple rendering plug-ins, the methods are called in the order that the plug-ins are specified for installation.</p>
 
-<p>For more information about creating and installing rendering plug-ins, see <a href="NULL">Customizing Microsoft's Printer Drivers</a>.</p>
+<p>For more information about creating and installing rendering plug-ins, see <a href="https://msdn.microsoft.com/b7761209-1f6f-4288-af47-4ed855c2e629">Customizing Microsoft's Printer Drivers</a>.</p>
 
 ## -requirements
 <table>

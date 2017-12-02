@@ -7,7 +7,7 @@ old-location: debugger\ig_get_thread_os_info.htm
 old-project: debugger
 ms.assetid: 5cd1ba71-af2f-4662-b37d-88f4e4aa7624
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: WDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO, *PWDBGEXTS_THREAD_OS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,61 +64,61 @@ typedef struct _WDBGEXTS_THREAD_OS_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ThreadId</b>
+### -field ThreadId
 
 <dd>
 <p>Specifies the operating system thread ID (within the current process) for the thread whose information is being requested.</p>
 </dd>
 
-### -field <b>ExitStatus</b>
+### -field ExitStatus
 
 <dd>
 <p>Receives the exit code of the thread.  If the thread is still running or the exit code is not known, <b>ExitStatus</b> will be set to STILL_ACTIVE.</p>
 </dd>
 
-### -field <b>PriorityClass</b>
+### -field PriorityClass
 
 <dd>
 <p>Receives the priority class of the thread.  The priority classes are defined by the constants <i>XXX</i>_PRIORITY_CLASS in WinBase.h.  See the Platform SDK for more information about thread priority classes.  If the priority class is not know, <b>PriorityClass</b> will be set to zero.</p>
 </dd>
 
-### -field <b>Priority</b>
+### -field Priority
 
 <dd>
 <p>Receives the priority of the thread relative to the priority class.  Some thread priorities are defined by the constants THREAD_PRIORITY_<i>XXX</i> in WinBase.h.  See the Platform SDK for more information about thread priorities.  If the priority is not known, <b>Priority</b> will be set to THREAD_PRIORITY_NORMAL.</p>
 </dd>
 
-### -field <b>CreateTime</b>
+### -field CreateTime
 
 <dd>
 <p>Receives the creation time of the thread.</p>
 </dd>
 
-### -field <b>ExitTime</b>
+### -field ExitTime
 
 <dd>
 <p>Receives the exit time of the thread.  If the thread has not exited, <b>ExitTime</b> is undefined.</p>
 </dd>
 
-### -field <b>KernelTime</b>
+### -field KernelTime
 
 <dd>
 <p>Receives the amount of time that the thread has executed in kernel mode.</p>
 </dd>
 
-### -field <b>UserTime</b>
+### -field UserTime
 
 <dd>
 <p>Receives the amount of time that the thread has executed in user-mode.</p>
 </dd>
 
-### -field <b>StartOffset</b>
+### -field StartOffset
 
 <dd>
 <p>Receives the starting address of the thread.  If the starting address is not known, <b>StartOffset</b> will be set to zero.</p>
 </dd>
 
-### -field <b>Affinity</b>
+### -field Affinity
 
 <dd>
 <p>Receives the thread affinity mask for the thread in a symmetric multiprocessor (SMP) computer.  See the Platform SDK for more information about the thread affinity mask.  If the affinity mask is not known, <b>Affinity</b> is set to zero.</p>
@@ -150,4 +150,4 @@ typedef struct _WDBGEXTS_THREAD_OS_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20WDBGEXTS_THREAD_OS_INFO structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20WDBGEXTS_THREAD_OS_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

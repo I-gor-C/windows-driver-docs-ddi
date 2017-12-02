@@ -58,13 +58,13 @@ VOID AVStrMiniRemoveEvent(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to the file object for which to remove the event.</p>
 </dd>
 
-### -param <i>EventEntry</i> [in]
+### -param EventEntry [in]
 
 <dd>
 <p>Pointer to an AVStream-generated <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a> structure.</p>
@@ -75,7 +75,7 @@ VOID AVStrMiniRemoveEvent(
 <p><i>AVStrMiniRemoveEvent</i> must return STATUS_SUCCESS.</p>
 
 ## -remarks
-<p>The minidriver specifies this routine's address in the <b>RemoveHandler</b> member of a <a href="stream.ksevent_item">KSEVENT_ITEM</a> structure. <a href="NULL">Event Handling in AVStream</a> describes how the minidriver provides this structure to the class driver.</p>
+<p>The minidriver specifies this routine's address in the <b>RemoveHandler</b> member of a <a href="stream.ksevent_item">KSEVENT_ITEM</a> structure. <a href="https://msdn.microsoft.com/7add2055-8d3f-432d-8aa1-44459ac197dd">Event Handling in AVStream</a> describes how the minidriver provides this structure to the class driver.</p>
 
 <p>If the minidriver provides <i>AVStrMiniRemoveEvent</i> and either:</p>
 

@@ -7,7 +7,7 @@ old-location: sd\sffdisk_dcmd.htm
 old-project: SD
 ms.assetid: 145e460e-6988-4e61-bb33-6f1b1df54629
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/30/2017
 ms.keywords: SERCX_BUFFER_DESCRIPTOR,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="SFFDISK_DC_GET_VERSION"></a><a id="sffdisk_dc_get_version"></a><b>SFFDISK_DC_GET_VERSION</b>
+### -field SFFDISK_DC_GET_VERSION
 
 <dd>
 <p>The operations retrieves the version of the card.</p>
 </dd>
 
-### -field <a id="SFFDISK_DC_LOCK_CHANNEL"></a><a id="sffdisk_dc_lock_channel"></a><b>SFFDISK_DC_LOCK_CHANNEL</b>
+### -field SFFDISK_DC_LOCK_CHANNEL
 
 <dd>
 <p>The operation locks the interface channel.</p>
 </dd>
 
-### -field <a id="SFFDISK_DC_UNLOCK_CHANNEL"></a><a id="sffdisk_dc_unlock_channel"></a><b>SFFDISK_DC_UNLOCK_CHANNEL</b>
+### -field SFFDISK_DC_UNLOCK_CHANNEL
 
 <dd>
 <p>The operation unlocks the interface channel.</p>
 </dd>
 
-### -field <a id="SFFDISK_DC_DEVICE_COMMAND"></a><a id="sffdisk_dc_device_command"></a><b>SFFDISK_DC_DEVICE_COMMAND</b>
+### -field SFFDISK_DC_DEVICE_COMMAND
 
 <dd>
 <p>The operation executes a device command.</p>
@@ -108,4 +108,4 @@ typedef enum  {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SFFDISK_DCMD enumeration%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SFFDISK_DCMD enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

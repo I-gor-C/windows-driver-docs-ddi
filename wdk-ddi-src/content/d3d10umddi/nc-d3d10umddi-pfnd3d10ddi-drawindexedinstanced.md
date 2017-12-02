@@ -62,37 +62,37 @@ VOID APIENTRY DrawIndexedInstanced(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>IndexCountPerInstance</i> [in]
+### -param IndexCountPerInstance [in]
 
 <dd>
 <p>The number of indexes per instance of the index buffer that indexes are read from to draw the primitives. </p>
 </dd>
 
-### -param <i>InstanceCount</i> [in]
+### -param InstanceCount [in]
 
 <dd>
 <p>The number of instances of the index buffer that indexes are read from to draw the primitives. </p>
 </dd>
 
-### -param <i>StartIndexLocation</i> [in]
+### -param StartIndexLocation [in]
 
 <dd>
 <p>The first index in the index buffer that indexes are read from to draw the primitives. </p>
 </dd>
 
-### -param <i>BaseVertexLocation</i> [in]
+### -param BaseVertexLocation [in]
 
 <dd>
 <p>The number that should be added to each index that is referenced by the various primitives to determine the actual index of the vertex elements in each vertex stream.</p>
 </dd>
 
-### -param <i>StartInstanceLocation</i> [in]
+### -param StartInstanceLocation [in]
 
 <dd>
 <p>The first instance of the index buffer that indexes are read from to draw the primitives. </p>

@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Current</b>
+### -field Current
 
 <dd>
 <p>Specifies the current position as a 64-bit value.</p>
 </dd>
 
-### -field <b>Stop</b>
+### -field Stop
 
 <dd>
 <p>Specifies the stop position as a 64-bit value.</p>
 </dd>
 
-### -field <b>CurrentFlags</b>
+### -field CurrentFlags
 
 <dd>
 <p>A structure of type <a href="..\ks\ne-ks-ks-seeking-flags.md">KS_SEEKING_FLAGS</a> containing flags pertaining to the <b>Current</b> parameter.</p>
 </dd>
 
-### -field <b>StopFlags</b>
+### -field StopFlags
 
 <dd>
 <p>A structure of type <a href="..\ks\ne-ks-ks-seeking-flags.md">KS_SEEKING_FLAGS</a> containing flags pertaining to the <b>Stop</b> parameter.</p>

@@ -63,55 +63,55 @@ typedef enum _IO_SESSION_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="IoSessionStateCreated"></a><a id="iosessionstatecreated"></a><a id="IOSESSIONSTATECREATED"></a><b>IoSessionStateCreated</b>
+### -field IoSessionStateCreated
 
 <dd>
 <p>The session has been created.</p>
 </dd>
 
-### -field <a id="IoSessionStateInitialized"></a><a id="iosessionstateinitialized"></a><a id="IOSESSIONSTATEINITIALIZED"></a><b>IoSessionStateInitialized</b>
+### -field IoSessionStateInitialized
 
 <dd>
 <p>The session has been initialized but has not yet been created.</p>
 </dd>
 
-### -field <a id="IoSessionStateConnected"></a><a id="iosessionstateconnected"></a><a id="IOSESSIONSTATECONNECTED"></a><b>IoSessionStateConnected</b>
+### -field IoSessionStateConnected
 
 <dd>
 <p>The session is connected but the user has not yet logged on.</p>
 </dd>
 
-### -field <a id="IoSessionStateDisconnected"></a><a id="iosessionstatedisconnected"></a><a id="IOSESSIONSTATEDISCONNECTED"></a><b>IoSessionStateDisconnected</b>
+### -field IoSessionStateDisconnected
 
 <dd>
 <p>The session has been disconnected.</p>
 </dd>
 
-### -field <a id="IoSessionStateDisconnectedLoggedOn"></a><a id="iosessionstatedisconnectedloggedon"></a><a id="IOSESSIONSTATEDISCONNECTEDLOGGEDON"></a><b>IoSessionStateDisconnectedLoggedOn</b>
+### -field IoSessionStateDisconnectedLoggedOn
 
 <dd>
 <p>The session was disconnected while the user was logged on.</p>
 </dd>
 
-### -field <a id="IoSessionStateLoggedOn"></a><a id="iosessionstateloggedon"></a><a id="IOSESSIONSTATELOGGEDON"></a><b>IoSessionStateLoggedOn</b>
+### -field IoSessionStateLoggedOn
 
 <dd>
 <p>The user is logged on to the session.</p>
 </dd>
 
-### -field <a id="IoSessionStateLoggedOff"></a><a id="iosessionstateloggedoff"></a><a id="IOSESSIONSTATELOGGEDOFF"></a><b>IoSessionStateLoggedOff</b>
+### -field IoSessionStateLoggedOff
 
 <dd>
 <p>The user has logged off of the session. </p>
 </dd>
 
-### -field <a id="IoSessionStateTerminated"></a><a id="iosessionstateterminated"></a><a id="IOSESSIONSTATETERMINATED"></a><b>IoSessionStateTerminated</b>
+### -field IoSessionStateTerminated
 
 <dd>
 <p>The session has been terminated.</p>
 </dd>
 
-### -field <a id="IoSessionStateMax"></a><a id="iosessionstatemax"></a><a id="IOSESSIONSTATEMAX"></a><b>IoSessionStateMax</b>
+### -field IoSessionStateMax
 
 <dd>
 <p>Specifies the maximum value in this enumeration type. </p>

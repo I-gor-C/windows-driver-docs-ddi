@@ -7,7 +7,7 @@ old-location: netvista\wskclientevent.htm
 old-project: netvista
 ms.assetid: 5511f540-4448-4cbe-849a-b1712453fae1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ NTSTATUS APIENTRY WskClientEvent(
 ## -parameters
 <dl>
 
-### -param <i>ClientContext</i> [in, optional]
+### -param ClientContext [in, optional]
 
 <dd>
 <p>A pointer to the context value that was specified by the 
@@ -71,21 +71,21 @@ NTSTATUS APIENTRY WskClientEvent(
      <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a> function.</p>
 </dd>
 
-### -param <i>Event</i> [in]
+### -param Event [in]
 
 <dd>
 <p>The specific event about which the WSK application is being notified. There are currently no
      events defined.</p>
 </dd>
 
-### -param <i>Information</i> [in, optional]
+### -param Information [in, optional]
 
 <dd>
 <p>A pointer to a buffer that contains additional information that is associated with the event. If
      there is no additional information associated with the event, this pointer will be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>InformationLength</i> [in]
+### -param InformationLength [in]
 
 <dd>
 <p>The length of the additional information that is contained in the buffer that is pointed to by the
@@ -169,4 +169,4 @@ NTSTATUS APIENTRY WskClientEvent(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CLIENT_EVENT callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CLIENT_EVENT callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

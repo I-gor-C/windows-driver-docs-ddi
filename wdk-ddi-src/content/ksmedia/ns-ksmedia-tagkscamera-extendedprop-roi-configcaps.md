@@ -56,7 +56,7 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>ControlId</b>
+### -field ControlId
 
 <dd>
 <p>The ISP control ID. The following are valid values for this field. These values are defined in ksmedia.h.</p>
@@ -73,13 +73,13 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS {
 </ul>
 </dd>
 
-### -field <b>MaxNumberOfROIs</b>
+### -field MaxNumberOfROIs
 
 <dd>
 <p>The maximum ROIs supported for this ISO control.</p>
 </dd>
 
-### -field <b>Capability</b>
+### -field Capability
 
 <dd>
 <p>The capabilities for this ISP control.</p>

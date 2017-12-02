@@ -57,19 +57,19 @@ VOID VideoPortReleaseSpinLock(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>SpinLock</i> [in, out]
+### -param SpinLock [in, out]
 
 <dd>
 <p>Pointer to a memory location that contains the spin lock to be released.</p>
 </dd>
 
-### -param <i>NewIrql</i> [in]
+### -param NewIrql [in]
 
 <dd>
 <p>Specifies the IRQL to be restored.</p>

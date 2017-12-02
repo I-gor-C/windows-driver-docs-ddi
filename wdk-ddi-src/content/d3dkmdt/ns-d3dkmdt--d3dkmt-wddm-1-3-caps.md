@@ -62,23 +62,23 @@ typedef struct _D3DKMT_WDDM_1_3_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>SupportMiracast</b>
+### -field SupportMiracast
 
 <dd></dd>
 
-### -field <b>IsHybridIntegratedGPU</b>
+### -field IsHybridIntegratedGPU
 
 <dd></dd>
 
-### -field <b>IsHybridDiscreteGPU</b>
+### -field IsHybridDiscreteGPU
 
 <dd></dd>
 
-### -field <b>SupportPowerManagementPStates</b>
+### -field SupportPowerManagementPStates
 
 <dd></dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd></dd>
 </dl>

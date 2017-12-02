@@ -7,7 +7,7 @@ old-location: ifsk\fltallocatecontext.htm
 old-project: ifsk
 ms.assetid: 34be4ca1-9484-41c5-9382-4785c36fca1a
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltAllocateContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ NTSTATUS FltAllocateContext(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>An opaque filter pointer for the caller. This parameter is required and cannot be <b>NULL</b>. (Setting this parameter to an invalid value causes the system to execute an ASSERT on a checked build.) </p>
 </dd>
 
-### -param <i>ContextType</i> [in]
+### -param ContextType [in]
 
 <dd>
 <p>The type of context to allocate. One of the following: </p>
@@ -93,13 +93,13 @@ NTSTATUS FltAllocateContext(
 </dl>
 </dd>
 
-### -param <i>ContextSize</i> [in]
+### -param ContextSize [in]
 
 <dd>
 <p>The size, in bytes, of the portion of the context defined by the minifilter driver. Must be greater than zero and less than or equal to <b>MAXUSHORT</b>. A minifilter driver uses this portion of the context to maintain context information specific to the minifilter driver. The filter manager treats this portion of the context structure as opaque. This parameter is required and cannot be zero. </p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>The type of pool to allocate. This parameter is required and must be one of the following: </p>
@@ -109,7 +109,7 @@ NTSTATUS FltAllocateContext(
 <p>Setting this parameter to an invalid value causes the system to execute an ASSERT on a checked build. </p>
 </dd>
 
-### -param <i>ReturnedContext</i> [out]
+### -param ReturnedContext [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the address of the newly allocated context. The caller is responsible for calling <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a> to release this context when it is no longer needed. </p>
@@ -376,4 +376,4 @@ NTSTATUS FltAllocateContext(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocateContext routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocateContext routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

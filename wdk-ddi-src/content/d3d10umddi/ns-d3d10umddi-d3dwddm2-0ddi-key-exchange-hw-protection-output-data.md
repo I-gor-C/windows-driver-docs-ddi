@@ -59,37 +59,37 @@ typedef struct D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION_OUTPUT_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>PrivateDataSize</b>
+### -field PrivateDataSize
 
 <dd>
 <p>Contains the size of the private data reserved for IHV usage. This size is determined from the <b>pPrivateInputSize</b> member returned by <a href="display.getcryptosessionprivatedatasize">GetCryptoSessionPrivateDataSize</a>.</p>
 </dd>
 
-### -field <b>MaxHWProtectionDataSize</b>
+### -field MaxHWProtectionDataSize
 
 <dd>
 <p>The maximum size of data that the driver can return in the output buffer. The last byte that it can write to is <b>pbOuput</b>[<b>PrivateDataSize</b> + <b>MaxHWProtectionDataSize</b> – 1].</p>
 </dd>
 
-### -field <b>HWProtectionDataSize</b>
+### -field HWProtectionDataSize
 
 <dd>
 <p>Returns the size of the output data written by the driver.</p>
 </dd>
 
-### -field <b>TransportTime</b>
+### -field TransportTime
 
 <dd>
 <p>Returns the number of 100 nanosecond units spent transporting the data.</p>
 </dd>
 
-### -field <b>ExecutionTime</b>
+### -field ExecutionTime
 
 <dd>
 <p>Returns the number of 100 nanosecond units spent executing the content protection command.</p>
 </dd>
 
-### -field <b>pbOutput</b>
+### -field pbOutput
 
 <dd>
 <p>If <b>PrivateDataSize</b> is greater than 0, <b>pbOutput</b>[0] – <b>pbOutput</b>[<b>PrivateDataSize</b> - 1] is reserved for IHV use.

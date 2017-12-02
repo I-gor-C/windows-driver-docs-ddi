@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbackswide_breakpoint.htm
 old-project: debugger
 ms.assetid: ee9b9b6c-c76e-4979-9f23-c411fe1b002a
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugEventCallbacksWide, Breakpoint, IDebugEventCallbacksWide::Breakpoint
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT Breakpoint(
 ## -parameters
 <dl>
 
-### -param <i>Bp</i> [in]
+### -param Bp [in]
 
 <dd>
 <p>Specifies a pointer to the <a href="..\dbgeng\nn-dbgeng-idebugbreakpoint.md">IDebugBreakpoint</a> object corresponding to the breakpoint that was triggered.</p>
@@ -62,7 +62,7 @@ HRESULT Breakpoint(
 </dl>
 
 ## -returns
-<p>This method returns a <a href="debugger.debug_status_xxx">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
+<p>This method returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541651">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
 
 ## -remarks
 <p>If the breakpoint has an associated command, the engine executes that command before calling this method.</p>

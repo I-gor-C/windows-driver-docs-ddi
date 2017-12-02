@@ -57,25 +57,25 @@ typedef struct _DXGKARG_SETTARGETANALOGCOPYPROTECTION {
 ## -struct-fields
 <dl>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>[in] The identifier of a display adapter's video present target.</p>
 </dd>
 
-### -field <b>CopyProtectionType</b>
+### -field CopyProtectionType
 
 <dd>
 <p>[in] A value from the D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE enum indicating the type of analog copy protection being requested.</p>
 </dd>
 
-### -field <b>APSTriggerBits</b>
+### -field APSTriggerBits
 
 <dd>
 <p>[in] A value that describes copy protection for an OEM device. A value of 0 indicates no copy protection, and values of 1, 2, and 3 indicate low, medium, and high levels of copy protection, respectively. Values greater than 3 are not allowed.</p>
 </dd>
 
-### -field <b>CopyProtectionSupport</b>
+### -field CopyProtectionSupport
 
 <dd>
 <p>[in] A D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure containing flags indicating the analog copy protection support being requested.</p>

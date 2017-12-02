@@ -58,7 +58,7 @@ VOID StrMiniEvent(
 ## -parameters
 <dl>
 
-### -param <i>EventDescriptor</i> [in]
+### -param EventDescriptor [in]
 
 <dd>
 <p>Describes the event, and whether it should be enabled or disabled.</p>

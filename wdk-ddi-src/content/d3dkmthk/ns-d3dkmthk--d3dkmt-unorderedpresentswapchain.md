@@ -58,31 +58,31 @@ typedef struct _D3DKMT_UNORDEREDPRESENTSWAPCHAIN {
 ## -struct-fields
 <dl>
 
-### -field <b>hNtSwapChain</b>
+### -field hNtSwapChain
 
 <dd>
 <p>NT handle for the swapchain in this process.</p>
 </dd>
 
-### -field <b>bProducer</b>
+### -field bProducer
 
 <dd>
 <p>Indicates if producer or consumer.</p>
 </dd>
 
-### -field <b>PresentBufferIdx</b>
+### -field PresentBufferIdx
 
 <dd>
 <p>Index of the buffer to present.</p>
 </dd>
 
-### -field <b>MetaDataSize</b>
+### -field MetaDataSize
 
 <dd>
 <p>Size of the metadata.</p>
 </dd>
 
-### -field <b>pMetaData</b>
+### -field pMetaData
 
 <dd>
 <p>A pointer to the metadata for the frame.</p>

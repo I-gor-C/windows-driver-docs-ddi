@@ -1668,6 +1668,8 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILADDITIONALNUMBERSTRINGUPDATE structure](..\ntddrilapitypes\ns-ntddrilapitypes-riladditionalnumberstringupdate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILADDITIONALNUMBERSTRINGUPDATE structure](..\rilapitypes\ns-rilapitypes-riladditionalnumberstringupdate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILADDITIONALNUMBERSTRINGUPDATE structure](..\rilapitypes\ns-rilapitypes-riladditionalnumberstringupdate~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILADDRESS structure](..\rilapitypes\ns-rilapitypes-riladdress.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILADDRESS structure](..\rilapitypes\ns-rilapitypes-riladdress~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILALPHAIDENTIFIER structure](..\ntddrilapitypes\ns-ntddrilapitypes-rilalphaidentifier.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILALPHAIDENTIFIER structure](..\rilapitypes\ns-rilapitypes-rilalphaidentifier.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILALPHAIDENTIFIER structure](..\rilapitypes\ns-rilapitypes-rilalphaidentifier~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -1825,6 +1827,8 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILERRORDETAILS structure](..\ntddrilapitypes\ns-ntddrilapitypes-rilerrordetails.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILERRORDETAILS structure](..\rilapitypes\ns-rilapitypes-rilerrordetails.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILERRORDETAILS structure](..\rilapitypes\ns-rilapitypes-rilerrordetails~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILEUTRAMRL structure](..\rilapitypes\ns-rilapitypes-rileutramrl.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILEUTRAMRL structure](..\rilapitypes\ns-rilapitypes-rileutramrl~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEXCHANGEUICCAPDUPARAMS structure](..\ntddrilapitypes\ns-ntddrilapitypes-rilexchangeuiccapduparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEXCHANGEUICCAPDUPARAMS structure](..\rilapitypes\ns-rilapitypes-rilexchangeuiccapduparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEXCHANGEUICCAPDUPARAMS structure](..\rilapitypes\ns-rilapitypes-rilexchangeuiccapduparams~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -1906,6 +1910,8 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILIMSHANDOVERATTEMPT structure](..\ntddrilapitypes\ns-ntddrilapitypes-rilimshandoverattempt.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSHANDOVERATTEMPT structure](..\rilapitypes\ns-rilapitypes-rilimshandoverattempt.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSHANDOVERATTEMPT structure](..\rilapitypes\ns-rilapitypes-rilimshandoverattempt~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILIMSI structure](..\rilapitypes\ns-rilapitypes-rilimsi.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILIMSI structure](..\rilapitypes\ns-rilapitypes-rilimsi~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSSIPCAUSE structure](..\ntddrilapitypes\ns-ntddrilapitypes-rilimssipcause.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSSIPCAUSE structure](..\rilapitypes\ns-rilapitypes-rilimssipcause.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSSIPCAUSE structure](..\rilapitypes\ns-rilapitypes-rilimssipcause~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -2019,8 +2025,6 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILOPERATORINFO structure](..\ntddrilapitypes\ns-ntddrilapitypes-riloperatorinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOPERATORINFO structure](..\rilapitypes\ns-rilapitypes-riloperatorinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOPERATORINFO structure](..\rilapitypes\ns-rilapitypes-riloperatorinfo~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILOPERATORNAMES structure](..\rilapitypes\ns-rilapitypes-riloperatornames.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILOPERATORNAMES structure](..\rilapitypes\ns-rilapitypes-riloperatornames~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOSGEOLOCATIONINFO structure](..\ntddrilapitypes\ns-ntddrilapitypes-rilosgeolocationinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOSGEOLOCATIONINFO structure](..\rilapitypes\ns-rilapitypes-rilosgeolocationinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOSGEOLOCATIONINFO structure](..\rilapitypes\ns-rilapitypes-rilosgeolocationinfo~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -2229,8 +2233,6 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILSUBADDRESS structure](..\ntddrilapitypes\ns-ntddrilapitypes-rilsubaddress.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUBADDRESS structure](..\rilapitypes\ns-rilapitypes-rilsubaddress.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUBADDRESS structure](..\rilapitypes\ns-rilapitypes-rilsubaddress~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILSUBSCRIBERINFO structure](..\rilapitypes\ns-rilapitypes-rilsubscriberinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILSUBSCRIBERINFO structure](..\rilapitypes\ns-rilapitypes-rilsubscriberinfo~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUPSERVICEDATA structure](..\ntddrilapitypes\ns-ntddrilapitypes-rilsupservicedata.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUPSERVICEDATA structure](..\rilapitypes\ns-rilapitypes-rilsupservicedata.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUPSERVICEDATA structure](..\rilapitypes\ns-rilapitypes-rilsupservicedata~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -2248,6 +2250,8 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILSYSTEMTIME structure](..\ntddrilapitypes\ns-ntddrilapitypes-rilsystemtime.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSYSTEMTIME structure](..\rilapitypes\ns-rilapitypes-rilsystemtime.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSYSTEMTIME structure](..\rilapitypes\ns-rilapitypes-rilsystemtime~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILTDSCDMAMRL structure](..\rilapitypes\ns-rilapitypes-riltdscdmamrl.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILTDSCDMAMRL structure](..\rilapitypes\ns-rilapitypes-riltdscdmamrl~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILTERMINALCAPABILITYINFO structure](..\ntddrilapitypes\ns-ntddrilapitypes-rilterminalcapabilityinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILTERMINALCAPABILITYINFO structure](..\rilapitypes\ns-rilapitypes-rilterminalcapabilityinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILTERMINALCAPABILITYINFO structure](..\rilapitypes\ns-rilapitypes-rilterminalcapabilityinfo~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -2277,8 +2281,6 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILUICCCMDPARAMETERS structure](..\ntddrilapitypes\ns-ntddrilapitypes-riluicccmdparameters.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCCMDPARAMETERS structure](..\rilapitypes\ns-rilapitypes-riluicccmdparameters.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCCMDPARAMETERS structure](..\rilapitypes\ns-rilapitypes-riluicccmdparameters~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCFILELOCKSTATUS structure](..\rilapitypes\ns-rilapitypes-riluiccfilelockstatus.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCFILELOCKSTATUS structure](..\rilapitypes\ns-rilapitypes-riluiccfilelockstatus~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCFILEPATH structure](..\ntddrilapitypes\ns-ntddrilapitypes-riluiccfilepath.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCFILEPATH structure](..\rilapitypes\ns-rilapitypes-riluiccfilepath.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCFILEPATH structure](..\rilapitypes\ns-rilapitypes-riluiccfilepath~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -2292,8 +2294,6 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILUICCLOCKCREDENTIAL structure](..\rilapitypes\ns-rilapitypes-riluicclockcredential~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCLOCKSTATE structure](..\rilapitypes\ns-rilapitypes-riluicclockstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCLOCKSTATE structure](..\rilapitypes\ns-rilapitypes-riluicclockstate~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCRECORDSTATUS structure](..\rilapitypes\ns-rilapitypes-riluiccrecordstatus.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCRECORDSTATUS structure](..\rilapitypes\ns-rilapitypes-riluiccrecordstatus~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCRESPONSE structure](..\ntddrilapitypes\ns-ntddrilapitypes-riluiccresponse.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCRESPONSE structure](..\rilapitypes\ns-rilapitypes-riluiccresponse.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCRESPONSE structure](..\rilapitypes\ns-rilapitypes-riluiccresponse~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -2309,8 +2309,6 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILUICCSLOTINFO structure](..\ntddrilapitypes\ns-ntddrilapitypes-riluiccslotinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCSLOTINFO structure](..\rilapitypes\ns-rilapitypes-riluiccslotinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCSLOTINFO structure](..\rilapitypes\ns-rilapitypes-riluiccslotinfo~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCSUBSCRIBERNUMBERS structure](..\rilapitypes\ns-rilapitypes-riluiccsubscribernumbers.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCSUBSCRIBERNUMBERS structure](..\rilapitypes\ns-rilapitypes-riluiccsubscribernumbers~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCTOOLKITCMD structure](..\ntddrilapitypes\ns-ntddrilapitypes-riluicctoolkitcmd.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCTOOLKITCMD structure](..\rilapitypes\ns-rilapitypes-riluicctoolkitcmd.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCTOOLKITCMD structure](..\rilapitypes\ns-rilapitypes-riluicctoolkitcmd~r1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -2559,9 +2557,6 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILACCESSTECHNOLOGYPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-rilaccesstechnologyparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILADDITIONALCALLERINFOPARAMMASK enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-riladditionalcallerinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILADDITIONALCALLERINFOPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-riladditionalcallerinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILADDRESSNUMPLAN enumeration](..\rilapitypes\ne-rilapitypes-riladdressnumplan.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILADDRESSPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-riladdressparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILADDRESSTYPE enumeration](..\rilapitypes\ne-rilapitypes-riladdresstype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILALPHAIDENTIFIDERTYPE enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-rilalphaidentifidertype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILALPHAIDENTIFIDERTYPE enumeration](..\rilapitypes\ne-rilapitypes-rilalphaidentifidertype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILALPHAIDENTIFIERPARAMMASK enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-rilalphaidentifierparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -2653,7 +2648,6 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILCONFPARTICIPANTSTATUSPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-rilconfparticipantstatusparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILDCSLANG enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-rildcslang.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILDCSLANG enumeration](..\rilapitypes\ne-rilapitypes-rildcslang.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILDEVICEINFORMATION enumeration](..\rilapitypes\ne-rilapitypes-rildeviceinformation.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILDEVSSPECIFICCLASSES enumeration](..\oemrilapitypes\ne-oemrilapitypes-rildevsspecificclasses.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILDIALEDIDSETTINGSPARAMMASK enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-rildialedidsettingsparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILDIALEDIDSETTINGSPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-rildialedidsettingsparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -2677,9 +2671,9 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILEMERGENCYNUMBERPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-rilemergencynumberparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEQUIPMENTSTATE enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-rilequipmentstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEQUIPMENTSTATE enumeration](..\rilapitypes\ne-rilapitypes-rilequipmentstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILERRORCODES enumeration](..\rilapitypes\ne-rilapitypes-rilerrorcodes.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILERRORDETAILSPARAMMASK enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-rilerrordetailsparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILERRORDETAILSPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-rilerrordetailsparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILEUTRAMRLPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-rileutramrlparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEVDOKIND enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-rilevdokind.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEVDOKIND enumeration](..\rilapitypes\ne-rilapitypes-rilevdokind.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEXCHANGEUICCAPDURESPONSEPARAMMASK enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-rilexchangeuiccapduresponseparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -2804,7 +2798,6 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILNOTIFICATIONCLASSES enumeration](..\rilapitypes\ne-rilapitypes-rilnotificationclasses.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILNOTIFICATIONFILTERMASK enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-rilnotificationfiltermask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILNOTIFICATIONFILTERMASK enumeration](..\rilapitypes\ne-rilapitypes-rilnotificationfiltermask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILNOTIFICATIONS enumeration](..\rilapitypes\ne-rilapitypes-rilnotifications.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOPENUICCLOGICALCHANNELPARAMMASK enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-rilopenuicclogicalchannelparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOPENUICCLOGICALCHANNELPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-rilopenuicclogicalchannelparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOPERATORINFOPARAMMASK enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-riloperatorinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -2840,6 +2833,7 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILPHONEENTRYSTORELOCATION enumeration](..\rilapitypes\ne-rilapitypes-rilphoneentrystorelocation.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPOSITIONINFOGSMPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-rilpositioninfogsmparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPOSITIONINFOLTEPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-rilpositioninfolteparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILPOSITIONINFOTDSCDMAPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-rilpositioninfotdscdmaparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPROVISIONSTATUSPROVISIONSTATUS enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-rilprovisionstatusprovisionstatus.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPROVISIONSTATUSPROVISIONSTATUS enumeration](..\rilapitypes\ne-rilapitypes-rilprovisionstatusprovisionstatus.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPSMEDIAPREFERENCE enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-rilpsmediapreference.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -2906,6 +2900,7 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILSUBADDRESSPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-rilsubaddressparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUBADDRESSTYPE enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-rilsubaddresstype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUBADDRESSTYPE enumeration](..\rilapitypes\ne-rilapitypes-rilsubaddresstype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILSUBSCRIBERINFOPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-rilsubscriberinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUPSERVICEDATAPARAMMASK enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-rilsupservicedataparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUPSERVICEDATAPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-rilsupservicedataparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUPSERVICEDATASTATUS enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-rilsupservicedatastatus.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -2945,12 +2940,11 @@ For the programming guide, see [Networking drivers for Windows Vista and later](
 | [RILUICCCMDPARAMETERSPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-riluicccmdparametersparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCCOMMAND enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-riluicccommand.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCCOMMAND enumeration](..\rilapitypes\ne-rilapitypes-riluicccommand.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCFILELOCKSTATUSACCESSCONDITION enumeration](..\rilapitypes\ne-rilapitypes-riluiccfilelockstatusaccesscondition.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCKEYREF enumeration](..\rilapitypes\ne-rilapitypes-riluicckeyref.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCLOCKSTATEPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-riluicclockstateparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCPRLID enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-riluiccprlid.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCPRLID enumeration](..\rilapitypes\ne-rilapitypes-riluiccprlid.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCRECORDSTATUSPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-riluiccrecordstatusparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILUICCRECORDTYPE enumeration](..\rilapitypes\ne-rilapitypes-riluiccrecordtype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCRESPONSEPARAMMASK enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-riluiccresponseparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCRESPONSEPARAMMASK enumeration](..\rilapitypes\ne-rilapitypes-riluiccresponseparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCSERVICESERVICE enumeration](..\ntddrilapitypes\ne-ntddrilapitypes-riluiccserviceservice.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |

@@ -55,13 +55,13 @@ SIZE_T APIENTRY* PFND3D12DDI_CALCPRIVATEOPENEDCRYPTOSESSIONSIZE_0030(
 ## -parameters
 <dl>
 
-### -param <i>hDrvDevice</i> 
+### -param hDrvDevice 
 
 <dd>
 <p>The hardware device being processed.</p>
 </dd>
 
-### -param <i>pArgs</i> [in]
+### -param pArgs [in]
 
 <dd>
 <p>The arguments used to open a crypto session.</p>

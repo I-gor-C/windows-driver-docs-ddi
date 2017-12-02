@@ -59,68 +59,68 @@ NTSTATUS RtlStringCchCopyUnicodeStringEx(
 ## -parameters
 <dl>
 
-### -param <i>pszDest</i> [out]
+### -param pszDest [out]
 
 <dd>
 <p>Optional. A pointer to a buffer that receives the copied string. The string that the <i>SourceString</i> parameter's <b>UNICODE_STRING</b> structure points to is copied to the buffer at <i>pszDest</i> and terminated with a null character. This pointer can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>. </p>
 </dd>
 
-### -param <i>cchDest</i> [in]
+### -param cchDest [in]
 
 <dd>
 <p>The size, in characters, of the destination buffer. The buffer must be large enough for the string and the terminating null character. The maximum number of characters in the buffer is NTSTRSAFE_MAX_CCH.</p>
 </dd>
 
-### -param <i>SourceString</i> [in]
+### -param SourceString [in]
 
 <dd>
 <p>Optional. A pointer to a <b>UNICODE_STRING</b> structure that contains the string to be copied. The maximum number of characters in the string is NTSTRSAFE_UNICODE_STRING_MAX_CCH. This pointer can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.</p>
 </dd>
 
-### -param <i>ppszDestEnd</i> [out]
+### -param ppszDestEnd [out]
 
 <dd>
 <p>Optional. If the caller supplies a non-<b>NULL</b> address pointer, then after the copy operation completes, the function loads that address with a pointer to the destination buffer's resulting null string terminator. </p>
 </dd>
 
-### -param <i>pcchRemaining</i> [out, optional]
+### -param pcchRemaining [out, optional]
 
 <dd>
 <p>Optional. If the caller supplies a non-<b>NULL</b> address pointer, the function loads the address with the number of unused characters that are in the buffer that <i>pszDest</i> points to, including the terminating null character.</p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>One or more flags and, optionally, a fill byte. The flags are defined as follows: </p>
 <p></p>
 <dl>
 
-### -param <a id="STRSAFE_FILL_BEHIND_NULL_"></a><a id="strsafe_fill_behind_null_"></a>STRSAFE_FILL_BEHIND_NULL 
+### -param STRSAFE_FILL_BEHIND_NULL 
 
 <dd>
 <p>If this flag is set and the function succeeds, the low byte of <i>dwFlags</i> is used to fill the portion of the destination buffer that follows the terminating null character. </p>
 </dd>
 
-### -param <a id="STRSAFE_IGNORE_NULLS_"></a><a id="strsafe_ignore_nulls_"></a>STRSAFE_IGNORE_NULLS 
+### -param STRSAFE_IGNORE_NULLS 
 
 <dd>
 <p>If this flag is set, either the source or destination pointer, or both, can be <b>NULL</b>. <b>RtlStringCchCopyUnicodeStringEx</b> treats <b>NULL</b> source buffer pointers like empty strings (TEXT("")), which can be copied. <b>NULL</b> destination buffer pointers cannot receive nonempty strings. </p>
 </dd>
 
-### -param <a id="STRSAFE_FILL_ON_FAILURE_"></a><a id="strsafe_fill_on_failure_"></a>STRSAFE_FILL_ON_FAILURE 
+### -param STRSAFE_FILL_ON_FAILURE 
 
 <dd>
 <p>If this flag is set and the function fails, the low byte of <i>dwFlags</i> is used to fill the entire destination buffer, and the buffer is null-terminated. This operation overwrites any preexisting buffer contents. </p>
 </dd>
 
-### -param <a id="STRSAFE_NULL_ON_FAILURE_"></a><a id="strsafe_null_on_failure_"></a>STRSAFE_NULL_ON_FAILURE 
+### -param STRSAFE_NULL_ON_FAILURE 
 
 <dd>
 <p>If this flag is set and the function fails, the destination buffer is set to an empty string (TEXT("")). This operation overwrites any preexisting buffer contents. </p>
 </dd>
 
-### -param <a id="STRSAFE_NO_TRUNCATION_"></a><a id="strsafe_no_truncation_"></a>STRSAFE_NO_TRUNCATION 
+### -param STRSAFE_NO_TRUNCATION 
 
 <dd>
 <p>If this flag is set and the function returns STATUS_BUFFER_OVERFLOW, the contents of the destination buffer are not modified.</p>

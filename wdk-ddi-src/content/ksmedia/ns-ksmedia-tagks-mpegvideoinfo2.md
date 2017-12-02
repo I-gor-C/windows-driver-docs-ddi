@@ -60,37 +60,37 @@ typedef struct tagKS_MPEGVIDEOINFO2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hdr</b>
+### -field hdr
 
 <dd>
 <p>Specifies a <a href="stream.ks_videoinfoheader2">KS_VIDEOINFOHEADER2</a> structure that describes the details of the video stream.</p>
 </dd>
 
-### -field <b>dwStartTimeCode</b>
+### -field dwStartTimeCode
 
 <dd>
 <p>A 25-bit "group-of-pictures" time code at the start of data (not used for DVD).</p>
 </dd>
 
-### -field <b>cbSequenceHeader</b>
+### -field cbSequenceHeader
 
 <dd>
 <p>The length of the <b>bSequenceHeader</b> member, in bytes (zero for DVD).</p>
 </dd>
 
-### -field <b>dwProfile</b>
+### -field dwProfile
 
 <dd>
 <p>Specifies the MPEG-2 profile. This member must be one of the values from the <a href="..\ksmedia\ne-ksmedia-ks-mpeg2profile.md">KS_MPEG2Profile</a> enumeration.</p>
 </dd>
 
-### -field <b>dwLevel</b>
+### -field dwLevel
 
 <dd>
 <p>Specifies the MPEG-2 level. This member must be one of the values from the <a href="..\ksmedia\ne-ksmedia-ks-mpeg2level.md">KS_MPEG2Level</a> enumeration.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Specifies the flags that indicate preferences. This member can be set to one or more (logical OR) values that are defined in <i>ksmedia.h</i>.</p>
@@ -175,7 +175,7 @@ typedef struct tagKS_MPEGVIDEOINFO2 {
 <p> </p>
 </dd>
 
-### -field <b>bSequenceHeader</b>
+### -field bSequenceHeader
 
 <dd>
 <p>The length of the <b>bSequenceHeader</b> member, in bytes (zero for DVD).</p>

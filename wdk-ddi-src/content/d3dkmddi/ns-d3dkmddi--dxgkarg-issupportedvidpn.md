@@ -55,13 +55,13 @@ typedef struct _DXGKARG_ISSUPPORTEDVIDPN {
 ## -struct-fields
 <dl>
 
-### -field <b>hDesiredVidPn</b>
+### -field hDesiredVidPn
 
 <dd>
 <p>A handle to the VidPN object in question.</p>
 </dd>
 
-### -field <b>IsVidPnSupported</b>
+### -field IsVidPnSupported
 
 <dd>
 <p>A Boolean variable that receives <b>TRUE</b> if the VidPN is supported and <b>FALSE</b> if the VidPN is not supported.</p>

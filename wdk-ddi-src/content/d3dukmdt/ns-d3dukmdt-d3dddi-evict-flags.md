@@ -61,7 +61,7 @@ typedef struct D3DDDI_EVICT_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>EvictOnlyIfNecessary</b>
+### -field EvictOnlyIfNecessary
 
 <dd>
 <p>When set, this indicates that the resource may be used again in the near future and instructs the OS to try to defer actual resource eviction from the GPU until low memory conditions. When not set, this instructs the OS that the resource will no longer be used and that the eviction should be performed at the earliest opportunity. </p>
@@ -69,19 +69,19 @@ typedef struct D3DDDI_EVICT_FLAGS {
 <div> </div>
 </dd>
 
-### -field <b>NotWrittenTo</b>
+### -field NotWrittenTo
 
 <dd>
 <p>When set, this indicates that the resource has not been written to by the GPU since the time it was made resident. This allows the OS to optimize the eviction process by discarding the allocation contents instead of paging it out to the system memory. The driver must opt-in to use this flag. By default, the value is zero and the allocation is considered dirty during eviction. Unlike <b>EvictOnlyIfNecessary</b>, the driver does not need to defer setting this flag until the last call to <b>Evict</b> (<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-evictcb.md">pfnEvictCb</a> or <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtevict.md">D3DKMTEvict</a>), and the effects of specifying this flag take place immediately. In other words, if the driver calls <b>MakeResident</b> multiple times, it is valid for any one of the subsequent <b>Evict</b> operations to specify this flag. The driver is not expected to track this flag until the last call.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The consolidated value of the flags in the structure.</p>

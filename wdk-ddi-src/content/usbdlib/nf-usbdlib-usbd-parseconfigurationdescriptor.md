@@ -57,19 +57,19 @@ PUSB_INTERFACE_DESCRIPTOR USBD_ParseConfigurationDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>ConfigurationDescriptor</i> [in]
+### -param ConfigurationDescriptor [in]
 
 <dd>
 <p>Pointer to a USB configuration descriptor that contains the interface for which to search.</p>
 </dd>
 
-### -param <i>InterfaceNumber</i> [in]
+### -param InterfaceNumber [in]
 
 <dd>
 <p>Specifies the device-defined index of the interface to be retrieved. This should be set to -1 if it should not be a search criterion.</p>
 </dd>
 
-### -param <i>AlternateSetting</i> [in]
+### -param AlternateSetting [in]
 
 <dd>
 <p>Specifies the device-defined alternate-setting index of the interface to be retrieved. If the caller does not wish the alternate setting value to be a search criterion, this parameter should be set to -1.</p>

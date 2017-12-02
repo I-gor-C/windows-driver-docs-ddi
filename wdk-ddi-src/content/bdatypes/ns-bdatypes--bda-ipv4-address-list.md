@@ -55,11 +55,11 @@ typedef struct _BDA_IPv4_ADDRESS_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>ulcAddresses</b>
+### -field ulcAddresses
 
 <dd></dd>
 
-### -field <b>rgAddressl</b>
+### -field rgAddressl
 
 <dd></dd>
 </dl>

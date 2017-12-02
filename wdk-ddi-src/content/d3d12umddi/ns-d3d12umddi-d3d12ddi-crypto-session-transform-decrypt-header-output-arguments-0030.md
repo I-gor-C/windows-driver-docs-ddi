@@ -58,31 +58,31 @@ typedef struct _D3D12DDI_CRYPTO_SESSION_TRANSFORM_DECRYPT_HEADER_OUTPUT_ARGUMENT
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>Enable.</p>
 </dd>
 
-### -field <b>pSliceHeaders</b>
+### -field pSliceHeaders
 
 <dd>
 <p>Slice headers.</p>
 </dd>
 
-### -field <b>SliceHeadersSize</b>
+### -field SliceHeadersSize
 
 <dd>
 <p>Slice header size.</p>
 </dd>
 
-### -field <b>pContext</b>
+### -field pContext
 
 <dd>
 <p>Context.</p>
 </dd>
 
-### -field <b>ContextSize</b>
+### -field ContextSize
 
 <dd>
 <p>Context size.</p>

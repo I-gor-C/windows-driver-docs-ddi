@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTSetDisplayPrivateDriverFormat(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setdisplayprivatedriverformat.md">D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT</a> structure that describes how to format a video present source.</p>

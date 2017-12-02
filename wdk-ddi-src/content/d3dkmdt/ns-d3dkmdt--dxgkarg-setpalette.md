@@ -57,25 +57,25 @@ typedef struct _DXGKARG_SETPALETTE {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the palette is set on. </p>
 </dd>
 
-### -field <b>FirstEntry</b>
+### -field FirstEntry
 
 <dd>
 <p>[in] The location in the device palette that the first entry in the array of color entries that <b>pLookupTable</b> specifies is copied to. The remaining entries that <b>pLookupTable</b> specifies are copied sequentially, from this starting point into the device's palette.</p>
 </dd>
 
-### -field <b>NumEntries</b>
+### -field NumEntries
 
 <dd>
 <p>[in] The number of color entries in the array that <b>pLookupTable</b> specifies.</p>
 </dd>
 
-### -field <b>pLookupTable</b>
+### -field pLookupTable
 
 <dd>
 <p>[in] An array of color entries to copy into the device's color palette (that is, the device's color registers). Each color entry is accessed as a generic 32-bit value or as the <b>Red</b>, <b>Green</b>, <b>Blue</b>, and <b>Unused</b> members of a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-palettedata.md">D3DKMDT_PALETTEDATA</a> structure.</p>

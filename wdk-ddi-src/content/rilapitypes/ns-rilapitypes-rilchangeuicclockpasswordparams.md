@@ -7,7 +7,7 @@ old-location: netvista\rilchangeuicclockpasswordparams_2.htm
 old-project: netvista
 ms.assetid: 24c1ae3a-31e7-4b85-8c64-f376c45cb4c4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCHANGEUICCLOCKPASSWORDPARAMS, RILCHANGEUICCLOCKPASSWORDPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILCHANGEUICCLOCKPASSWORDPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>lockCredential</b>
+### -field lockCredential
 
 <dd></dd>
 
-### -field <b>szNewPassword</b>
+### -field szNewPassword
 
 <dd></dd>
 </dl>

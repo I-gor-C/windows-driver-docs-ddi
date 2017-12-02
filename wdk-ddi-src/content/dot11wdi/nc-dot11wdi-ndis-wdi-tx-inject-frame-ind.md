@@ -7,7 +7,7 @@ old-location: netvista\ndiswditxinjectframeindication.htm
 old-project: netvista
 ms.assetid: C384FAFF-E22D-4FA2-8B11-F6C046003C70
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,55 +66,55 @@ VOID NdisWdiTxInjectFrameIndication(
 ## -parameters
 <dl>
 
-### -param <i>NdisMiniportDataPathHandle</i> [in]
+### -param NdisMiniportDataPathHandle [in]
 
 <dd>
 <p>The NdisMiniportDataPathHandle passed to the IHV miniport in <a href="..\dot11wdi\nc-dot11wdi-miniport-wdi-tal-txrx-initialize.md">MiniportWdiTalTxRxInitialize</a>.</p>
 </dd>
 
-### -param <i>PortId</i> [in]
+### -param PortId [in]
 
 <dd>
 <p>The port ID. </p>
 </dd>
 
-### -param <i>PeerId</i> [in]
+### -param PeerId [in]
 
 <dd>
 <p>The peer ID. When <b>TargetPriorityQueueing</b> is true, this must be set to the wildcard value.</p>
 </dd>
 
-### -param <i>ExTid</i> [in]
+### -param ExTid [in]
 
 <dd>
 <p>The extended TID.</p>
 </dd>
 
-### -param <i>pNBL</i> [in]
+### -param pNBL [in]
 
 <dd>
 <p>Pointer to a <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> chain.</p>
 </dd>
 
-### -param <i>bIsUnicast</i> [in]
+### -param bIsUnicast [in]
 
 <dd>
 <p>Specifies if the frames are to a unicast receiver address.</p>
 </dd>
 
-### -param <i>bUseLegacyRates</i> [in]
+### -param bUseLegacyRates [in]
 
 <dd>
 <p>Specifies if legacy rates should be used to send the frames.</p>
 </dd>
 
-### -param <i>Ethertype</i> [in]
+### -param Ethertype [in]
 
 <dd>
 <p>Specifies the Ethertype of the frames.</p>
 </dd>
 
-### -param <i>ExemptionAction</i> [in]
+### -param ExemptionAction [in]
 
 <dd>
 <p>Specifies the ExemptionAction of the frames.</p>
@@ -180,4 +180,4 @@ VOID NdisWdiTxInjectFrameIndication(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_TX_INJECT_FRAME_IND callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_TX_INJECT_FRAME_IND callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

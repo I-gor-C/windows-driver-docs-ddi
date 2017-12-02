@@ -56,19 +56,19 @@ typedef struct _MOUNTMGR_MOUNT_POINTS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Contains the size, in bytes, of the output buffer. </p>
 </dd>
 
-### -field <b>NumberOfMountPoints</b>
+### -field NumberOfMountPoints
 
 <dd>
 <p>Contains the number of mount points that the mount manager is returning. </p>
 </dd>
 
-### -field <b>MountPoints</b>
+### -field MountPoints
 
 <dd>
 <p>Contains an array of elements of type MOUNTMGR_MOUNT_POINT that contain information about each mount point associated with the device.</p>
@@ -76,7 +76,7 @@ typedef struct _MOUNTMGR_MOUNT_POINTS {
 </dl>
 
 ## -remarks
-<p>For a discussion of the different between symbolic links, unique IDs, and nonpersistent device names, see <a href="NULL">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
+<p>For a discussion of the different between symbolic links, unique IDs, and nonpersistent device names, see <a href="storage.supporting_mount_manager_requests_in_a_storage_class_driver">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
 
 ## -requirements
 <table>

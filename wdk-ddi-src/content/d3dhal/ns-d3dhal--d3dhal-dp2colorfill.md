@@ -59,19 +59,19 @@ typedef struct _D3DHAL_DP2COLORFILL {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSurface</b>
+### -field dwSurface
 
 <dd>
 <p>Specifies the handle to the surface to be filled.</p>
 </dd>
 
-### -field <b>rRect</b>
+### -field rRect
 
 <dd>
 <p>Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the surface to be filled. </p>
 </dd>
 
-### -field <b>Color</b>
+### -field Color
 
 <dd>
 <p>Specifies a D3DCOLOR for the color type. </p>

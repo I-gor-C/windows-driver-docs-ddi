@@ -7,7 +7,7 @@ old-location: sd\ioctl_sffdisk_query_device_protocol.htm
 old-project: SD
 ms.assetid: 47eeb4a9-dece-4500-bbe7-891f64437eef
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/30/2017
 ms.keywords: SERCX_BUFFER_DESCRIPTOR,
 ms.prod: windows-hardware
 ms.technology: windows-devices

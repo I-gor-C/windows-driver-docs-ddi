@@ -71,110 +71,110 @@ typedef enum _DXVAHDDDI_STREAM_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_FRAME_FORMAT"></a><a id="dxvahdddi_stream_state_frame_format"></a><b>DXVAHDDDI_STREAM_STATE_FRAME_FORMAT</b>
+### -field DXVAHDDDI_STREAM_STATE_FRAME_FORMAT
 
 <dd>
 <p>The stream-state data specifies the frame format of the input in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-frame-format-data.md">DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_INPUT_COLOR_SPACE"></a><a id="dxvahdddi_stream_state_input_color_space"></a><b>DXVAHDDDI_STREAM_STATE_INPUT_COLOR_SPACE</b>
+### -field DXVAHDDDI_STREAM_STATE_INPUT_COLOR_SPACE
 
 <dd>
 <p>The stream-state data specifies the color space of the input in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-input-color-space-data.md">DXVAHDDDI_STREAM_STATE_INPUT_COLOR_SPACE_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_OUTPUT_RATE"></a><a id="dxvahdddi_stream_state_output_rate"></a><b>DXVAHDDDI_STREAM_STATE_OUTPUT_RATE</b>
+### -field DXVAHDDDI_STREAM_STATE_OUTPUT_RATE
 
 <dd>
 <p>The stream-state data specifies the output rate of the input in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-output-rate-data.md">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_SOURCE_RECT"></a><a id="dxvahdddi_stream_state_source_rect"></a><b>DXVAHDDDI_STREAM_STATE_SOURCE_RECT</b>
+### -field DXVAHDDDI_STREAM_STATE_SOURCE_RECT
 
 <dd>
 <p>The stream-state data specifies the source rectangle of the input in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-source-rect-data.md">DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_DESTINATION_RECT"></a><a id="dxvahdddi_stream_state_destination_rect"></a><b>DXVAHDDDI_STREAM_STATE_DESTINATION_RECT</b>
+### -field DXVAHDDDI_STREAM_STATE_DESTINATION_RECT
 
 <dd>
 <p>The stream-state data specifies the destination rectangle in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-destination-rect-data.md">DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_ALPHA"></a><a id="dxvahdddi_stream_state_alpha"></a><b>DXVAHDDDI_STREAM_STATE_ALPHA</b>
+### -field DXVAHDDDI_STREAM_STATE_ALPHA
 
 <dd>
 <p>The stream-state data specifies the alpha blend level per-plane in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-alpha-data.md">DXVAHDDDI_STREAM_STATE_ALPHA_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_PALETTE"></a><a id="dxvahdddi_stream_state_palette"></a><b>DXVAHDDDI_STREAM_STATE_PALETTE</b>
+### -field DXVAHDDDI_STREAM_STATE_PALETTE
 
 <dd>
 <p>The stream-state data specifies the palette entries of the input in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-palette-data.md">DXVAHDDDI_STREAM_STATE_PALETTE_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_LUMA_KEY"></a><a id="dxvahdddi_stream_state_luma_key"></a><b>DXVAHDDDI_STREAM_STATE_LUMA_KEY</b>
+### -field DXVAHDDDI_STREAM_STATE_LUMA_KEY
 
 <dd>
 <p>The stream-state data specifies the luma key of the input in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-luma-key-data.md">DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_ASPECT_RATIO"></a><a id="dxvahdddi_stream_state_aspect_ratio"></a><b>DXVAHDDDI_STREAM_STATE_ASPECT_RATIO</b>
+### -field DXVAHDDDI_STREAM_STATE_ASPECT_RATIO
 
 <dd>
 <p>The stream-state data specifies the aspect ratio of the input in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-aspect-ratio-data.md">DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_ROTATION"></a><a id="dxvahdddi_stream_state_rotation"></a><b>DXVAHDDDI_STREAM_STATE_ROTATION</b>
+### -field DXVAHDDDI_STREAM_STATE_ROTATION
 
 <dd>
 <p>The stream-state data specifies the  clockwise rotation of the display output surface in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-rotation-data.md">DXVAHDDDI_STREAM_STATE_ROTATION_DATA</a> structure.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_FILTER_BRIGHTNESS"></a><a id="dxvahdddi_stream_state_filter_brightness"></a><b>DXVAHDDDI_STREAM_STATE_FILTER_BRIGHTNESS</b>
+### -field DXVAHDDDI_STREAM_STATE_FILTER_BRIGHTNESS
 
 <dd>
 <p>The stream-state data specifies the brightness ProcAmp level in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-filter-data.md">DXVAHDDDI_STREAM_STATE_FILTER_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_FILTER_CONTRAST"></a><a id="dxvahdddi_stream_state_filter_contrast"></a><b>DXVAHDDDI_STREAM_STATE_FILTER_CONTRAST</b>
+### -field DXVAHDDDI_STREAM_STATE_FILTER_CONTRAST
 
 <dd>
 <p>The stream-state data specifies the contrast ProcAmp level in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-filter-data.md">DXVAHDDDI_STREAM_STATE_FILTER_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_FILTER_HUE"></a><a id="dxvahdddi_stream_state_filter_hue"></a><b>DXVAHDDDI_STREAM_STATE_FILTER_HUE</b>
+### -field DXVAHDDDI_STREAM_STATE_FILTER_HUE
 
 <dd>
 <p>The stream-state data specifies the hue ProcAmp level in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-filter-data.md">DXVAHDDDI_STREAM_STATE_FILTER_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_FILTER_SATURATION"></a><a id="dxvahdddi_stream_state_filter_saturation"></a><b>DXVAHDDDI_STREAM_STATE_FILTER_SATURATION</b>
+### -field DXVAHDDDI_STREAM_STATE_FILTER_SATURATION
 
 <dd>
 <p>The stream-state data specifies the saturation ProcAmp level in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-filter-data.md">DXVAHDDDI_STREAM_STATE_FILTER_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_FILTER_NOISE_REDUCTION"></a><a id="dxvahdddi_stream_state_filter_noise_reduction"></a><b>DXVAHDDDI_STREAM_STATE_FILTER_NOISE_REDUCTION</b>
+### -field DXVAHDDDI_STREAM_STATE_FILTER_NOISE_REDUCTION
 
 <dd>
 <p>The stream-state data specifies the noise reduction filter level in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-filter-data.md">DXVAHDDDI_STREAM_STATE_FILTER_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_FILTER_EDGE_ENHANCEMENT"></a><a id="dxvahdddi_stream_state_filter_edge_enhancement"></a><b>DXVAHDDDI_STREAM_STATE_FILTER_EDGE_ENHANCEMENT</b>
+### -field DXVAHDDDI_STREAM_STATE_FILTER_EDGE_ENHANCEMENT
 
 <dd>
 <p>The stream-state data specifies the edge enhancement filter level in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-filter-data.md">DXVAHDDDI_STREAM_STATE_FILTER_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_FILTER_ANAMORPHIC_SCALING"></a><a id="dxvahdddi_stream_state_filter_anamorphic_scaling"></a><b>DXVAHDDDI_STREAM_STATE_FILTER_ANAMORPHIC_SCALING</b>
+### -field DXVAHDDDI_STREAM_STATE_FILTER_ANAMORPHIC_SCALING
 
 <dd>
 <p>The stream-state data specifies the anamorphic scaling level in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-filter-data.md">DXVAHDDDI_STREAM_STATE_FILTER_DATA</a> structure. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_STREAM_STATE_PRIVATE"></a><a id="dxvahdddi_stream_state_private"></a><b>DXVAHDDDI_STREAM_STATE_PRIVATE</b>
+### -field DXVAHDDDI_STREAM_STATE_PRIVATE
 
 <dd>
 <p>The stream-state data specifies private parameters in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-private-data.md">DXVAHDDDI_STREAM_STATE_PRIVATE_DATA</a> structure. </p>

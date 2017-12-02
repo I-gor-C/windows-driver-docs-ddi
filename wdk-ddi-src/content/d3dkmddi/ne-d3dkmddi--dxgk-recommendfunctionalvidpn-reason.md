@@ -57,25 +57,25 @@ typedef enum _DXGK_RECOMMENDFUNCTIONALVIDPN_REASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_RFVR_UNINITIALIZED"></a><a id="dxgk_rfvr_uninitialized"></a><b>DXGK_RFVR_UNINITIALIZED</b>
+### -field DXGK_RFVR_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type DXGK_RECOMMENDFUNCTIONALVIDPN_REASON has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="DXGK_RFVR_HOTKEY"></a><a id="dxgk_rfvr_hotkey"></a><b>DXGK_RFVR_HOTKEY</b>
+### -field DXGK_RFVR_HOTKEY
 
 <dd>
 <p>Indicates that the VidPN manager is calling <i>DxgkDdiRecommendFunctionalVidPn</i> because the user pressed a hot key to request a change in the way the desktop is displayed on a collection of monitors (or other display devices).</p>
 </dd>
 
-### -field <a id="DXGK_RFVR_USERMODE"></a><a id="dxgk_rfvr_usermode"></a><b>DXGK_RFVR_USERMODE</b>
+### -field DXGK_RFVR_USERMODE
 
 <dd>
 <p>Indicates that a user-mode application initiated a call to <i>DxgkDdiRecommendFunctionalVidPn</i>.</p>
 </dd>
 
-### -field <a id="DXGK_RFVR_FIRMWARE"></a><a id="dxgk_rfvr_firmware"></a><b>DXGK_RFVR_FIRMWARE</b>
+### -field DXGK_RFVR_FIRMWARE
 
 <dd>
 <p>Value indicating that the OS is requesting the driver to describe a functional VidPn which reflects the display topology and timings which are currently set, as inherited from firmware during boot or resume from hibernation.</p>

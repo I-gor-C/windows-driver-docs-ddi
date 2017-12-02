@@ -54,7 +54,7 @@ typedef struct _AddiSNSServer_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>On output from <b>AddISNSServer</b>, the status of the <b>AddISNSServer</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.  </p>

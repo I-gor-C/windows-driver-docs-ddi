@@ -58,13 +58,13 @@ typedef struct _D3DHAL_DP2DRAWTRIPATCH {
 ## -struct-fields
 <dl>
 
-### -field <b>Handle</b>
+### -field Handle
 
 <dd>
 <p>Specifies the handle associated with the surface.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies what, if any, additional information follows the D3DHAL_DP2DRAWTRIPATCH data structure in the DP2 stream.</p>

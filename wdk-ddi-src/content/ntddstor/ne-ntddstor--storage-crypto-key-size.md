@@ -58,31 +58,31 @@ typedef enum _STORAGE_CRYPTO_KEY_SIZE {
 ## -enum-fields
 <dl>
 
-### -field <a id="StorageCryptoKeySizeUnknown"></a><a id="storagecryptokeysizeunknown"></a><a id="STORAGECRYPTOKEYSIZEUNKNOWN"></a><b>StorageCryptoKeySizeUnknown</b>
+### -field StorageCryptoKeySizeUnknown
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="StorageCryptoKeySize128Bits"></a><a id="storagecryptokeysize128bits"></a><a id="STORAGECRYPTOKEYSIZE128BITS"></a><b>StorageCryptoKeySize128Bits</b>
+### -field StorageCryptoKeySize128Bits
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="StorageCryptoKeySize192Bits"></a><a id="storagecryptokeysize192bits"></a><a id="STORAGECRYPTOKEYSIZE192BITS"></a><b>StorageCryptoKeySize192Bits</b>
+### -field StorageCryptoKeySize192Bits
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="StorageCryptoKeySize256Bits"></a><a id="storagecryptokeysize256bits"></a><a id="STORAGECRYPTOKEYSIZE256BITS"></a><b>StorageCryptoKeySize256Bits</b>
+### -field StorageCryptoKeySize256Bits
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="StorageCryptoKeySize512Bits"></a><a id="storagecryptokeysize512bits"></a><a id="STORAGECRYPTOKEYSIZE512BITS"></a><b>StorageCryptoKeySize512Bits</b>
+### -field StorageCryptoKeySize512Bits
 
 <dd>
 <p>Reserved for system use.</p>

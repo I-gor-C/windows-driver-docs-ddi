@@ -62,55 +62,55 @@ typedef enum _ACL_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="ACL_MODE_ACTIVE"></a><a id="acl_mode_active"></a><b>ACL_MODE_ACTIVE</b>
+### -field ACL_MODE_ACTIVE
 
 <dd>
 <p>This value indicates the ACL is in an active state.</p>
 </dd>
 
-### -field <a id="ACL_MODE_HOLD"></a><a id="acl_mode_hold"></a><b>ACL_MODE_HOLD</b>
+### -field ACL_MODE_HOLD
 
 <dd>
 <p>This value indicates the ACL is in a hold state.</p>
 </dd>
 
-### -field <a id="ACL_MODE_SNIFF"></a><a id="acl_mode_sniff"></a><b>ACL_MODE_SNIFF</b>
+### -field ACL_MODE_SNIFF
 
 <dd>
 <p>This value indicates the ACL is in a sniffed state.</p>
 </dd>
 
-### -field <a id="ACL_MODE_PARK"></a><a id="acl_mode_park"></a><b>ACL_MODE_PARK</b>
+### -field ACL_MODE_PARK
 
 <dd>
 <p>This value indicates the ACL is in a parked state.</p>
 </dd>
 
-### -field <a id="ACL_MODE_ENTER_ACTIVE"></a><a id="acl_mode_enter_active"></a><b>ACL_MODE_ENTER_ACTIVE</b>
+### -field ACL_MODE_ENTER_ACTIVE
 
 <dd>
 <p>This value indicates the ACL is entering an active state.</p>
 </dd>
 
-### -field <a id="ACL_MODE_ENTER_HOLD"></a><a id="acl_mode_enter_hold"></a><b>ACL_MODE_ENTER_HOLD</b>
+### -field ACL_MODE_ENTER_HOLD
 
 <dd>
 <p>This value indicates the ACL is entering a hold state.</p>
 </dd>
 
-### -field <a id="ACL_MODE_ENTER_SNIFF"></a><a id="acl_mode_enter_sniff"></a><b>ACL_MODE_ENTER_SNIFF</b>
+### -field ACL_MODE_ENTER_SNIFF
 
 <dd>
 <p>This value indicates the ACL is entering a sniffed state.</p>
 </dd>
 
-### -field <a id="ACL_MODE_ENTER_PARK"></a><a id="acl_mode_enter_park"></a><b>ACL_MODE_ENTER_PARK</b>
+### -field ACL_MODE_ENTER_PARK
 
 <dd>
 <p>This value indicates the ACL is entering a parked state.</p>
 </dd>
 
-### -field <a id="ACL_DISCONNECTED"></a><a id="acl_disconnected"></a><b>ACL_DISCONNECTED</b>
+### -field ACL_DISCONNECTED
 
 <dd>
 <p>This value indicates the ACL is disconnected.</p>

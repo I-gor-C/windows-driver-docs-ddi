@@ -7,7 +7,7 @@ old-location: ifsk\fltsetfilecontext.htm
 old-project: ifsk
 ms.assetid: d56cb216-a757-4ab8-ac7f-04dc22997835
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltSetFileContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,32 +58,32 @@ NTSTATUS FltSetFileContext(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>An opaque pointer to a minifilter driver instance for the caller. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>A file object pointer for the file. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>Operation</i> [in]
+### -param Operation [in]
 
 <dd>
 <p>A flag that specifies the type of operation for <b>FltSetFileContext </b>to perform. This parameter must be one of the following flags:  </p>
 <p></p>
 <dl>
 
-### -param <a id="FLT_SET_CONTEXT_REPLACE_IF_EXISTS"></a><a id="flt_set_context_replace_if_exists"></a>FLT_SET_CONTEXT_REPLACE_IF_EXISTS
+### -param FLT_SET_CONTEXT_REPLACE_IF_EXISTS
 
 <dd>
 <p>If a context is already set for the instance that the <i>Instance </i>parameter points to, <b>FltSetFileContext</b> will replace that context with the context specified in <i>NewContext</i>. Otherwise, the routine will insert the context specified in <i>NewContext</i> into the list of contexts for the file. </p>
 </dd>
 
-### -param <a id="FLT_SET_CONTEXT_KEEP_IF_EXISTS"></a><a id="flt_set_context_keep_if_exists"></a>FLT_SET_CONTEXT_KEEP_IF_EXISTS
+### -param FLT_SET_CONTEXT_KEEP_IF_EXISTS
 
 <dd>
 <p>If a context is already set for the instance that the <i>Instance</i> parameter points to, <b>FltSetFileContext</b> will return STATUS_FLT_CONTEXT_ALREADY_DEFINED. Otherwise, the routine will insert the context specified in <i>NewContext</i> into the list of contexts for the file. </p>
@@ -91,13 +91,13 @@ NTSTATUS FltSetFileContext(
 </dl>
 </dd>
 
-### -param <i>NewContext</i> [in]
+### -param NewContext [in]
 
 <dd>
 <p>A pointer to the new context to be set for the file. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>OldContext</i> [out]
+### -param OldContext [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the address of the existing file context for the instance pointed to by the <i>Instance </i>parameter. This parameter is optional and can be <b>NULL</b>. For more information about this parameter, see the following Remarks section. </p>
@@ -233,4 +233,4 @@ NTSTATUS FltSetFileContext(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetFileContext routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetFileContext routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

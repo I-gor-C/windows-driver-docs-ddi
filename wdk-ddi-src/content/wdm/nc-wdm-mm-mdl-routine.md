@@ -62,13 +62,13 @@ typedef MM_MDL_ROUTINE *PMM_MDL_ROUTINE;
 ## -parameters
 <dl>
 
-### -param <i>DriverContext</i> [in, optional]
+### -param DriverContext [in, optional]
 
 <dd>
 <p>A pointer to a driver-defined context. The driver's callback function can store any status information  in the driver context and then examine the value, when the callback is invoked. </p>
 </dd>
 
-### -param <i>MappedVa</i> [in]
+### -param MappedVa [in]
 
 <dd>
 <p>A pointer to a buffer that contains the system virtual address of the

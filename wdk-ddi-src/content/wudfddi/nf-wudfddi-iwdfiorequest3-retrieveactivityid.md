@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest3_retrieveactivityid.htm
 old-project: wdf
 ms.assetid: A90FCF3C-B648-4E97-887E-FCE58D7FA13A
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFIoRequest3, RetrieveActivityId, IWDFIoRequest3::RetrieveActivityId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ HRESULT RetrieveActivityId(
 ## -parameters
 <dl>
 
-### -param <i>ActivityId</i> [out]
+### -param ActivityId [out]
 
 <dd>
 <p>A pointer to a location to store the retrieved GUID.</p>
@@ -73,7 +73,7 @@ HRESULT RetrieveActivityId(
 <p> </p>
 
 ## -remarks
-<p>Requests reflected from kernel mode have an activity identifier available only if the Kernel Trace provider is enabled or if the UMDF driver called <a href="wdf.iwdfiorequest3_setactivityid">IWDFIoRequest3::SetActivityId</a> after receiving the request. For more information about Event Tracing for Windows (ETW), see <a href="NULL">Event Tracing</a>.</p>
+<p>Requests reflected from kernel mode have an activity identifier available only if the Kernel Trace provider is enabled or if the UMDF driver called <a href="wdf.iwdfiorequest3_setactivityid">IWDFIoRequest3::SetActivityId</a> after receiving the request. For more information about Event Tracing for Windows (ETW), see <a href="etw.event_tracing_portal">Event Tracing</a>.</p>
 
 <p>Requests initiated by the UMDF driver have an activity identifier available only if the UMDF driver previously called  <a href="wdf.iwdfiorequest3_setactivityid">IWDFIoRequest3::SetActivityId</a>.</p>
 
@@ -154,4 +154,4 @@ HRESULT RetrieveActivityId(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest3::RetrieveActivityId method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest3::RetrieveActivityId method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

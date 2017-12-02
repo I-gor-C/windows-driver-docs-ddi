@@ -54,7 +54,7 @@ NTSTATUS QueryPowerChangeState(
 ## -parameters
 <dl>
 
-### -param <i>NewStateQuery</i> [in]
+### -param NewStateQuery [in]
 
 <dd>
 <p>Specifies the new power state that is being requested for the device. This parameter is a union of type POWER_STATE. The new power state (<i>NewStateQuery</i>.<b>DeviceState</b>) can be one of the DEVICE_POWER_STATE enumeration values listed in <a href="audio.iadapterpowermanagement_powerchangestate">IAdapterPowerManagement::PowerChangeState</a>.</p>

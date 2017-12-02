@@ -58,33 +58,33 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_MONO_OFFSET"></a><a id="d3d11_1ddi_video_processor_stereo_caps_mono_offset"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_MONO_OFFSET</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_MONO_OFFSET
 
 <dd>
 <p>The video processor supports the <b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_MONO_OFFSET</b> format defined in the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-stereo-format.md">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT</a> enumeration.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_ROW_INTERLEAVED"></a><a id="d3d11_1ddi_video_processor_stereo_caps_row_interleaved"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_ROW_INTERLEAVED</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_ROW_INTERLEAVED
 
 <dd>
 <p>The video processor supports the <b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_ROW_INTERLEAVED</b> format.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_COLUMN_INTERLEAVED"></a><a id="d3d11_1ddi_video_processor_stereo_caps_column_interleaved"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_COLUMN_INTERLEAVED</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_COLUMN_INTERLEAVED
 
 <dd>
 <p>The video processor supports the <b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_COLUMN_INTERLEAVED</b> 
  format.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_CHECKERBOARD"></a><a id="d3d11_1ddi_video_processor_stereo_caps_checkerboard"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_CHECKERBOARD</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_CHECKERBOARD
 
 <dd>
 <p>The video processor supports the <b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_CHECKERBOARD</b> 
 format.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_FLIP_MODE"></a><a id="d3d11_1ddi_video_processor_stereo_caps_flip_mode"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_FLIP_MODE</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_FLIP_MODE
 
 <dd>
 <p>The video processor can flip one or both views. For more information, see <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-stereo-flip-mode.md">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE</a>.</p>

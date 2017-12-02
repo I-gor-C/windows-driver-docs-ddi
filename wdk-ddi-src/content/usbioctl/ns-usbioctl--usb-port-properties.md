@@ -61,25 +61,25 @@ typedef union _USB_PORT_PROPERTIES {
 ## -struct-fields
 <dl>
 
-### -field <b>ul</b>
+### -field ul
 
 <dd>
 <p>A bitmask that indicates the properties and capabilities of the port.</p>
 </dd>
 
-### -field <b>PortIsUserConnectable</b>
+### -field PortIsUserConnectable
 
 <dd>
 <p>If <b>TRUE</b>, the port is visible to the user and a USB device can be attached to or detached from the port.</p>
 </dd>
 
-### -field <b>PortIsDebugCapable</b>
+### -field PortIsDebugCapable
 
 <dd>
 <p>If <b>TRUE</b>, the port supports debugging over a USB connection.</p>
 </dd>
 
-### -field <b>ReservedMBZ</b>
+### -field ReservedMBZ
 
 <dd>
 <p>Reserved. Do not use.</p>

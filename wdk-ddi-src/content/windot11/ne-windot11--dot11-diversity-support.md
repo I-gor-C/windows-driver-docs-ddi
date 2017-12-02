@@ -7,7 +7,7 @@ old-location: netvista\dot11_diversity_support.htm
 old-project: netvista
 ms.assetid: 64eeb1bf-c18a-4dfa-b6ea-438d9e10fe4a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PRINTER_EVENT_ATTRIBUTES_INFO, PRINTER_EVENT_ATTRIBUTES_INFO, *PPRINTER_EVENT_ATTRIBUTES_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ typedef enum _DOT11_DIVERSITY_SUPPORT {
 ## -enum-fields
 <dl>
 
-### -field <a id="dot11_diversity_support_unknown"></a><a id="DOT11_DIVERSITY_SUPPORT_UNKNOWN"></a><b>dot11_diversity_support_unknown</b>
+### -field dot11_diversity_support_unknown
 
 <dd>
 <p>An uninitialized or unknown diversity support type.</p>
 </dd>
 
-### -field <a id="dot11_diversity_support_fixedlist"></a><a id="DOT11_DIVERSITY_SUPPORT_FIXEDLIST"></a><b>dot11_diversity_support_fixedlist</b>
+### -field dot11_diversity_support_fixedlist
 
 <dd>
 <p>The PHY supports antenna diversity that is performed over the fixed list of antennas defined in
@@ -72,13 +72,13 @@ typedef enum _DOT11_DIVERSITY_SUPPORT {
      OID_DOT11_DIVERSITY_SELECTION_RX</a>.</p>
 </dd>
 
-### -field <a id="dot11_diversity_support_notsupported"></a><a id="DOT11_DIVERSITY_SUPPORT_NOTSUPPORTED"></a><b>dot11_diversity_support_notsupported</b>
+### -field dot11_diversity_support_notsupported
 
 <dd>
 <p>The PHY does not support antenna diversity.</p>
 </dd>
 
-### -field <a id="dot11_diversity_support_dynamic"></a><a id="DOT11_DIVERSITY_SUPPORT_DYNAMIC"></a><b>dot11_diversity_support_dynamic</b>
+### -field dot11_diversity_support_dynamic
 
 <dd>
 <p>The PHY supports antenna diversity and the dynamic control of diversity. The PHY layer management
@@ -122,4 +122,4 @@ typedef enum _DOT11_DIVERSITY_SUPPORT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_DIVERSITY_SUPPORT enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_DIVERSITY_SUPPORT enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

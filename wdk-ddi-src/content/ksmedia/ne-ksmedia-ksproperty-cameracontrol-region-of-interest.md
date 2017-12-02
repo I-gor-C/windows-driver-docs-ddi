@@ -54,7 +54,7 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY_ID"></a><a id="ksproperty_cameracontrol_region_of_interest_property_id"></a><b>KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY_ID</b>
+### -field KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY_ID
 
 <dd>
 <p>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj156042">KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY</a> property is used to specify a region of interest.</p>

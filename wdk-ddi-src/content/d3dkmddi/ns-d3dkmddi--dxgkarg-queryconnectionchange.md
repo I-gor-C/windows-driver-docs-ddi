@@ -54,7 +54,7 @@ typedef struct _DXGKARG_QUERYCONNECTIONCHANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>ConnectionChange</b>
+### -field ConnectionChange
 
 <dd>
 <p>[out] Buffer into which the oldest available change is copied by driver.</p>

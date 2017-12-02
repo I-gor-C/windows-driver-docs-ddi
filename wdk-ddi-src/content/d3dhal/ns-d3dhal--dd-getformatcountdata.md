@@ -59,19 +59,19 @@ typedef struct _DD_GETFORMATCOUNTDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>gdi2</b>
+### -field gdi2
 
 <dd>
 <p>Specifies a <a href="..\d3dhal\ns-d3dhal--dd-getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.</p>
 </dd>
 
-### -field <b>dwFormatCount</b>
+### -field dwFormatCount
 
 <dd>
 <p>Receives the number of supported surface formats.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p><b>DirectX 8.0 and 8.1 versions only.</b> Specifies a reserved field. Driver should not read or write.</p>

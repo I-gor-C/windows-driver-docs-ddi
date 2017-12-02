@@ -60,13 +60,13 @@ typedef struct tagKS_VBI_FRAME_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ExtendedHeaderSize</b>
+### -field ExtendedHeaderSize
 
 <dd>
 <p>Specifies the size of this structure.</p>
 </dd>
 
-### -field <b>dwFrameFlags</b>
+### -field dwFrameFlags
 
 <dd>
 <p>Specifies flags indicating additional information about the frame captured. During capture, the minidriver sets this member to one of the following values that are defined in <i>ksmedia.h</i>:</p>
@@ -135,31 +135,31 @@ typedef struct tagKS_VBI_FRAME_INFO {
 <p> </p>
 </dd>
 
-### -field <b>PictureNumber</b>
+### -field PictureNumber
 
 <dd>
 <p>Specifies a count representing the current picture number. Initialize or update this value on transition into KSSTATE_ACQUIRE.</p>
 </dd>
 
-### -field <b>DropCount</b>
+### -field DropCount
 
 <dd>
 <p>Specifies the number of pictures that were not captured. When capturing video, the minidriver sets this member. This counter should be incremented whenever a frame should have been captured but was not; this condition usually arises when no buffers were available during capture. Initialize or update this value on transition into KSSTATE_ACQUIRE.</p>
 </dd>
 
-### -field <b>dwSamplingFrequency</b>
+### -field dwSamplingFrequency
 
 <dd>
 <p>Specifies the sampling frequency in hertz (Hz).</p>
 </dd>
 
-### -field <b>TvTunerChangeInfo</b>
+### -field TvTunerChangeInfo
 
 <dd>
 <p>Specifies information about the current VBI data source, including country/region code, analog video standard, and channel. This member is only valid if <b>dwFrameFlags</b> specifies the KS_VBI_FLAG_TVTUNER_CHANGE flag. </p>
 </dd>
 
-### -field <b>VBIInfoHeader</b>
+### -field VBIInfoHeader
 
 <dd>
 <p>Specifies information about the current VBI data source, including start line, end line, sampling frequency, and video standard. This member is only valid if <b>dwFrameFlags</b> specifies the KS_VBI_FLAG_VBIINFOHEADER_CHANGE flag.</p>
@@ -175,7 +175,7 @@ typedef struct tagKS_VBI_FRAME_INFO {
 
 <p>Add together the count of frames captured and the count of frames dropped. This method is appropriate for devices that provide their own clock. For example: <i>PictureNumber = FramesCaptured + FramesDropped</i></p>
 
-<p>When calculating the <b>PictureNumber</b> and <b>DropCount</b>, it is important to use the frame duration specified when the stream was opened, which may not necessarily match the rate at which the device is actually producing images. For example, a USB camera may only produce images at 7.5 fps, but a client could open the stream at 8 fps. In this case, all calculations should use the 8 fps number. For more information about updating <b>PictureNumber</b> and <b>DropCount</b> see <a href="NULL">Capturing Video</a>.</p>
+<p>When calculating the <b>PictureNumber</b> and <b>DropCount</b>, it is important to use the frame duration specified when the stream was opened, which may not necessarily match the rate at which the device is actually producing images. For example, a USB camera may only produce images at 7.5 fps, but a client could open the stream at 8 fps. In this case, all calculations should use the 8 fps number. For more information about updating <b>PictureNumber</b> and <b>DropCount</b> see <a href="https://msdn.microsoft.com/0adea8fe-1669-4daf-a858-05e014f00a72">Capturing Video</a>.</p>
 
 <p>The <b>dwSamplingFrequency</b> member is not used by Microsoft VBI codecs, but may be used by other WDM codecs. It must be the same as the <b>VBIInfoHeader</b>.<i>SamplingFrequency</i> member. A minidriver indicates a change in sampling frequency by setting the KS_VBI_FLAG_VBIINFOHEADER_CHANGE bit in the <b>dwFrameFlags</b> member, and filling in all members, including <b>dwSamplingFrequency</b>, in the <b>VBIInfoHeader</b> structure.</p>
 

@@ -54,7 +54,7 @@ NTSTATUS AuxKlibGetBugCheckData(
 ## -parameters
 <dl>
 
-### -param <i>BugCheckData</i> [out]
+### -param BugCheckData [out]
 
 <dd>
 <p>A pointer to a <a href="..\aux_klib\ns-aux-klib--kbugcheck-data.md">KBUGCHECK_DATA</a> structure that contains information about the bug check. The <i>BugCheckData</i> size of this structure should be set equal to the size, in bytes, of the <b>KBUGCHECK_DATA</b> structure.</p>

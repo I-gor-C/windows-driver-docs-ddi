@@ -7,7 +7,7 @@ old-location: netvista\wdi_rx_throttle_level.htm
 old-project: netvista
 ms.assetid: 637c0892-8d73-45b7-b679-ff3a0ba78a9c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef enum _WDI_RX_THROTTLE_LEVEL {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_RxThrottleLevelNone"></a><a id="wdi_rxthrottlelevelnone"></a><a id="WDI_RXTHROTTLELEVELNONE"></a><b>WDI_RxThrottleLevelNone</b>
+### -field WDI_RxThrottleLevelNone
 
 <dd>
 <p>No throttling.</p>
 </dd>
 
-### -field <a id="WDI_RxThrottleLevelMedium"></a><a id="wdi_rxthrottlelevelmedium"></a><a id="WDI_RXTHROTTLELEVELMEDIUM"></a><b>WDI_RxThrottleLevelMedium</b>
+### -field WDI_RxThrottleLevelMedium
 
 <dd>
 <p>Medium throttling.</p>
 </dd>
 
-### -field <a id="WDI_RxThrottleLevelAggressive"></a><a id="wdi_rxthrottlelevelaggressive"></a><a id="WDI_RXTHROTTLELEVELAGGRESSIVE"></a><b>WDI_RxThrottleLevelAggressive</b>
+### -field WDI_RxThrottleLevelAggressive
 
 <dd>
 <p>Aggressive throttling.</p>

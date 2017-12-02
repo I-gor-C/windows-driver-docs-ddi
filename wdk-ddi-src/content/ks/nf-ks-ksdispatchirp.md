@@ -55,13 +55,13 @@ NTSTATUS KsDispatchIrp(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Specifies a pointer to the <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> to which the specific file object belongs.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Contains the IRP for which to call a dispatch routine.</p>

@@ -61,49 +61,49 @@ typedef struct _DXVADDI_VIDEODESC {
 ## -struct-fields
 <dl>
 
-### -field <b>SampleWidth</b>
+### -field SampleWidth
 
 <dd>
 <p>[in] The width of the video sample, in pixels.</p>
 </dd>
 
-### -field <b>SampleHeight</b>
+### -field SampleHeight
 
 <dd>
 <p>[in] The height of the video sample, in pixels.</p>
 </dd>
 
-### -field <b>SampleFormat</b>
+### -field SampleFormat
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure that describes the extended format of the video sample.</p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a> structure that describes the extended format of the video sample.</p>
 </dd>
 
-### -field <b>InputSampleFreq</b>
+### -field InputSampleFreq
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-frequency.md">DXVADDI_FREQUENCY</a> structure that defines the frequency of incoming video.</p>
 </dd>
 
-### -field <b>OutputFrameFreq</b>
+### -field OutputFrameFreq
 
 <dd>
 <p>[in] A DXVADDI_FREQUENCY structure that defines the frame rate of output video.</p>
 </dd>
 
-### -field <b>UABProtectionLevel</b>
+### -field UABProtectionLevel
 
 <dd>
 <p>[in] A UINT value that specifies the level of data protection that is required when the user accessible bus is present.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] Reserved. Do not use this member.</p>

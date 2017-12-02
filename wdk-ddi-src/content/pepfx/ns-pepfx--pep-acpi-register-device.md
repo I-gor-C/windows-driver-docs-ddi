@@ -58,31 +58,31 @@ typedef struct _PEP_ACPI_REGISTER_DEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>AcpiDeviceName</b>
+### -field AcpiDeviceName
 
 <dd>
-<p>[in] An <a href="kernel.ansi_string">ANSI_STRING</a> structure that contains the fully qualified BIOS name for the device. The same name was previously supplied as an input value in the <a href="..\pepfx\ns-pepfx--pep-acpi-prepare-device.md">PEP_ACPI_PREPARE_DEVICE</a> notification for the device. This name specifies the path and name of the device in the ACPI namespace. For more information, see <a href="NULL">Enumerating Child Devices and Control Methods</a>.</p>
+<p>[in] An <a href="kernel.ansi_string">ANSI_STRING</a> structure that contains the fully qualified BIOS name for the device. The same name was previously supplied as an input value in the <a href="..\pepfx\ns-pepfx--pep-acpi-prepare-device.md">PEP_ACPI_PREPARE_DEVICE</a> notification for the device. This name specifies the path and name of the device in the ACPI namespace. For more information, see <a href="https://msdn.microsoft.com/fe0553df-a5b9-46c4-8e1d-8b89a7d4ad67">Enumerating Child Devices and Control Methods</a>.</p>
 </dd>
 
-### -field <b>InputFlags</b>
+### -field InputFlags
 
 <dd>
 <p>[in] A set of input flags. No flags are currently defined for this member, which is always set to PEP_ACPI_REGISTER_DEVICE_INPUT_FLAG_NONE (0x0).</p>
 </dd>
 
-### -field <b>KernelHandle</b>
+### -field KernelHandle
 
 <dd>
 <p>[in] A POHANDLE value that represents the registration of the device with the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx). The PEP can use this handle to identify the device in subsequent communications with PoFx.</p>
 </dd>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[out] A PEPHANDLE value that identifies the registration of this device for ACPI services. This handle is created by the PEP. In subsequent ACPI service notifications, PoFx will use this handle to identify the device.</p>
 </dd>
 
-### -field <b>OutputFlags</b>
+### -field OutputFlags
 
 <dd>
 <p>[out] A set of output flags. No flags are currently defined for this member. Set this member to PEP_ACPI_REGISTER_DEVICE_OUTPUT_FLAG_NONE (0x0).</p>

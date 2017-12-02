@@ -55,13 +55,13 @@ typedef struct DXGI_DDI_RATIONAL {
 ## -struct-fields
 <dl>
 
-### -field <b>Numerator</b>
+### -field Numerator
 
 <dd>
 <p>[in] The numerator of the frequency fraction.</p>
 </dd>
 
-### -field <b>Denominator</b>
+### -field Denominator
 
 <dd>
 <p>[in] The denominator of the frequency fraction.</p>

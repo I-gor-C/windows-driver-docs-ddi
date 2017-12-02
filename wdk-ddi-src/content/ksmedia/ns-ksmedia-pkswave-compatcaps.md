@@ -54,7 +54,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>ulDeviceType</b>
+### -field ulDeviceType
 
 <dd>
 <p>Specifies the following flags:</p>

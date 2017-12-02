@@ -57,19 +57,19 @@ VOID VideoPortWritePortBufferUshort(
 ## -parameters
 <dl>
 
-### -param <i>Port</i> 
+### -param Port 
 
 <dd>
 <p>Pointer to the port. The given <i>Port</i> must be in a mapped I/O-space range returned by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to a buffer containing the USHORT values to be written.</p>
 </dd>
 
-### -param <i>Count</i> 
+### -param Count 
 
 <dd>
 <p>Specifies the number of USHORT values to be transferred to the adapter.</p>

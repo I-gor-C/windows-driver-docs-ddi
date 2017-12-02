@@ -57,7 +57,7 @@ typedef struct _DXVA_COPPSetProtectionLevelCmdData {
 ## -struct-fields
 <dl>
 
-### -field <b>ProtType</b>
+### -field ProtType
 
 <dd>
 <p>Specifies one of the following protection types to set on the physical connector associated with a COPP device:</p>
@@ -77,7 +77,7 @@ typedef struct _DXVA_COPPSetProtectionLevelCmdData {
 </ul>
 </dd>
 
-### -field <b>ProtLevel</b>
+### -field ProtLevel
 
 <dd>
 <p>Specifies the protection level to set for the protection type in <b>ProtType</b> or COPP_NoProtectionLevelAvailable (-1) if no protection level is available.</p>
@@ -107,13 +107,13 @@ typedef struct _DXVA_COPPSetProtectionLevelCmdData {
 </ul>
 </dd>
 
-### -field <b>ExtendedInfoChangeMask</b>
+### -field ExtendedInfoChangeMask
 
 <dd>
 <p>Specifies a value that indicates the valid bitfields in the following <b>ExtendedInfoData</b> member.</p>
 </dd>
 
-### -field <b>ExtendedInfoData</b>
+### -field ExtendedInfoData
 
 <dd>
 <p>Specifies additional 32-bit data for the protection type in <b>ProtType</b>. Not currently used.</p>

@@ -64,61 +64,61 @@ typedef struct _SERCX2_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
-### -field <b>EvtSerCx2FileOpen</b>
+### -field EvtSerCx2FileOpen
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-fileopen.md">EvtSerCx2FileOpen</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function. However, a driver that implements this function must also implement an <i>EvtSerCx2FileClose</i> function.</p>
 </dd>
 
-### -field <b>EvtSerCx2FileClose</b>
+### -field EvtSerCx2FileClose
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-fileclose.md">EvtSerCx2FileClose</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>
 </dd>
 
-### -field <b>EvtSerCx2SetWaitMask</b>
+### -field EvtSerCx2SetWaitMask
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-set-wait-mask.md">EvtSerCx2SetWaitmask</a> event callback function. This member must point to a valid function.</p>
 </dd>
 
-### -field <b>EvtSerCx2PurgeFifos</b>
+### -field EvtSerCx2PurgeFifos
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-purge-fifos.md">EvtSerCx2PurgeFifos</a> event callback function. This member must point to a valid function.</p>
 </dd>
 
-### -field <b>EvtSerCx2Control</b>
+### -field EvtSerCx2Control
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-control.md">EvtSerCx2Control</a> event callback function. This member must point to a valid function.</p>
 </dd>
 
-### -field <b>EvtSerCx2ApplyConfig</b>
+### -field EvtSerCx2ApplyConfig
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-apply-config.md">EvtSerCx2ApplyConfig</a> event callback function. This member must point to a valid function.</p>
 </dd>
 
-### -field <b>EvtSerCx2SelectNextReceiveTransactionType</b>
+### -field EvtSerCx2SelectNextReceiveTransactionType
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-select-next-receive-transaction-type.md">EvtSerCx2SelectNextReceiveTransactionType</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>
 </dd>
 
-### -field <b>EvtSerCx2SelectNextTransmitTransactionType</b>
+### -field EvtSerCx2SelectNextTransmitTransactionType
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-select-next-transmit-transaction-type.md">EvtSerCx2SelectNextTransmitTransactionType</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>
 </dd>
 
-### -field <b>RequestAttributes</b>
+### -field RequestAttributes
 
 <dd>
 <p>A pointer to a <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that describes the attributes to assign to the framework request objects that SerCx2 passes to the serial controller driver. Before calling the <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a> method, the caller must call the <a href="..\wdfobject\nf-wdfobject-wdf-object-attributes-init.md">WDF_OBJECT_ATTRIBUTES_INIT</a> function to initialize the structure. This member is optional and can be specified as WDF_NO_OBJECT_ATTRIBUTES if the serial controller driver does not need to assign attributes to the object. For more information, see Remarks.</p>
@@ -130,7 +130,7 @@ typedef struct _SERCX2_CONFIG {
 
 <p>If the <b>RequestAttributes</b> member points to a <b>WDF_OBJECT_ATTRIBUTES</b> structure, the caller must not overwrite the values that the <a href="..\wdfobject\nf-wdfobject-wdf-object-attributes-init.md">WDF_OBJECT_ATTRIBUTES_INIT</a> initialization function writes to the <b>ParentObject</b>, <b>ExecutionLevel</b>, and <b>SynchronizationScope</b> members of this structure.</p>
 
-<p>A driver might need to store information in context areas in the framework request objects that the driver receives. Typically, the driver calls the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetrequestattributes.md">WdfDeviceInitSetRequestAttributes</a> method to specify the required attributes for request objects. These attributes include the name and size of the context area in each request object. Additionally, in the current implementation of SerCx2, a serial controller driver that requires a request context should specify these same attributes in the <b>RequestAttributes</b> member of the <b>SERCX2_CONFIG</b> structure that the driver passes to <b>SerCx2InitializeDevice</b>. That is, the driver should specify the same request attributes twice—in the <b>SerCx2InitializeDevice</b> call, and in the <b>WdfDeviceInitSetRequestAttributes</b> call. For more information, see <a href="NULL">SerCx2 Custom-Receive Transactions</a> and <a href="NULL">SerCx2 Custom-Transmit Transactions</a>.</p>
+<p>A driver might need to store information in context areas in the framework request objects that the driver receives. Typically, the driver calls the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetrequestattributes.md">WdfDeviceInitSetRequestAttributes</a> method to specify the required attributes for request objects. These attributes include the name and size of the context area in each request object. Additionally, in the current implementation of SerCx2, a serial controller driver that requires a request context should specify these same attributes in the <b>RequestAttributes</b> member of the <b>SERCX2_CONFIG</b> structure that the driver passes to <b>SerCx2InitializeDevice</b>. That is, the driver should specify the same request attributes twice—in the <b>SerCx2InitializeDevice</b> call, and in the <b>WdfDeviceInitSetRequestAttributes</b> call. For more information, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C-BE91-405A4BA2D5B0">SerCx2 Custom-Receive Transactions</a> and <a href="https://msdn.microsoft.com/E72E68BC-A60A-41BE-8606-92A608648042">SerCx2 Custom-Transmit Transactions</a>.</p>
 
 <p>A driver that never needs a request context does not need to call <b>WdfDeviceInitSetRequestAttributes</b>, and can set the <b>RequestAttributes</b> member of the <b>SERCX2_CONFIG</b> structure to WDF_NO_OBJECT_ATTRIBUTES.</p>
 

@@ -7,7 +7,7 @@ old-location: netvista\riluiccserviceinfo_2.htm
 old-project: netvista
 ms.assetid: e96bc5b5-655f-49e3-8489-af79d427bc74
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUICCSERVICEINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILUICCSERVICEINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwService</b>
+### -field dwService
 
 <dd></dd>
 
-### -field <b>dwState</b>
+### -field dwState
 
 <dd></dd>
 </dl>

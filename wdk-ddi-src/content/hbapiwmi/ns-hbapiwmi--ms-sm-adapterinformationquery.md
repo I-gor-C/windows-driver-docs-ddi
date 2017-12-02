@@ -70,103 +70,103 @@ typedef struct _MS_SM_AdapterInformationQuery {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueAdapterId</b>
+### -field UniqueAdapterId
 
 <dd>
 <p>The unique adapter ID.</p>
 </dd>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>The status of the operation.</p>
 </dd>
 
-### -field <b>NumberOfPorts</b>
+### -field NumberOfPorts
 
 <dd>
 <p>The number of ports on the HBA.</p>
 </dd>
 
-### -field <b>VendorSpecificID</b>
+### -field VendorSpecificID
 
 <dd>
 <p>A vendor-specific ID.</p>
 </dd>
 
-### -field <b>Manufacturer</b>
+### -field Manufacturer
 
 <dd>
 <p>An ASCII string that is 64 bytes or fewer in length and that identifies the name of the manufacturer of the HBA.</p>
 </dd>
 
-### -field <b>SerialNumber</b>
+### -field SerialNumber
 
 <dd>
 <p>An ASCII string that is 64 bytes or fewer in length and that identifies the serial number of the HBA.</p>
 </dd>
 
-### -field <b>Model</b>
+### -field Model
 
 <dd>
 <p>An ASCII string that is 256 bytes or fewer in length and that identifies the vendor-specific name of the HBA model.</p>
 </dd>
 
-### -field <b>ModelDescription</b>
+### -field ModelDescription
 
 <dd>
 <p>An ASCII string that is 256 bytes or fewer in length and that indicates the model description.</p>
 </dd>
 
-### -field <b>HardwareVersion</b>
+### -field HardwareVersion
 
 <dd>
 <p>An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific hardware revision level of the HBA.</p>
 </dd>
 
-### -field <b>DriverVersion</b>
+### -field DriverVersion
 
 <dd>
 <p>An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific version of the HBA miniport driver.</p>
 </dd>
 
-### -field <b>OptionROMVersion</b>
+### -field OptionROMVersion
 
 <dd>
 <p>An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.</p>
 </dd>
 
-### -field <b>FirmwareVersion</b>
+### -field FirmwareVersion
 
 <dd>
 <p>An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.</p>
 </dd>
 
-### -field <b>DriverName</b>
+### -field DriverName
 
 <dd>
 <p>An ASCII string that is 256 bytes or fewer in length and that indicates the file name for the driver binary file.</p>
 </dd>
 
-### -field <b>HBASymbolicName</b>
+### -field HBASymbolicName
 
 <dd>
 <p>An ASCII string that is 256 bytes or fewer in length and that indicates the symbolic name for the fibre channel node.</p>
 </dd>
 
-### -field <b>RedundantOptionROMVersion</b>
+### -field RedundantOptionROMVersion
 
 <dd>
 <p>An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.</p>
 </dd>
 
-### -field <b>RedundantFirmwareVersion</b>
+### -field RedundantFirmwareVersion
 
 <dd>
 <p>An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.</p>
 </dd>
 
-### -field <b>MfgDomain</b>
+### -field MfgDomain
 
 <dd>
 <p>The name of the HBA manufacturer.</p>

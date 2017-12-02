@@ -7,7 +7,7 @@ old-location: netvista\ndis_pm_parameters.htm
 old-project: netvista
 ms.assetid: 7747645c-398f-434e-9f0c-21b6d3c7d963
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PM_PARAMETERS, NDIS_PM_PARAMETERS, *PNDIS_PM_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct _NDIS_PM_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_PM_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -69,14 +69,14 @@ typedef struct _NDIS_PM_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_PM_PARAMETERS_REVISION_2"></a><a id="ndis_pm_parameters_revision_2"></a>NDIS_PM_PARAMETERS_REVISION_2
+### -field NDIS_PM_PARAMETERS_REVISION_2
 
 <dd>
 <p>Added various changes for NDIS 6.30.</p>
 <p>Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_CAPABILITIES_REVISION_2.</p>
 </dd>
 
-### -field <a id="NDIS_PM_PARAMETERS_REVISION_1"></a><a id="ndis_pm_parameters_revision_1"></a>NDIS_PM_PARAMETERS_REVISION_1
+### -field NDIS_PM_PARAMETERS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.20.</p>
@@ -85,7 +85,7 @@ typedef struct _NDIS_PM_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>EnabledWoLPacketPatterns</b>
+### -field EnabledWoLPacketPatterns
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags that correspond to capabilities that the
@@ -100,13 +100,13 @@ typedef struct _NDIS_PM_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_PM_WOL_BITMAP_PATTERN_ENABLED"></a><a id="ndis_pm_wol_bitmap_pattern_enabled"></a>NDIS_PM_WOL_BITMAP_PATTERN_ENABLED
+### -field NDIS_PM_WOL_BITMAP_PATTERN_ENABLED
 
 <dd>
 <p>If this flag is set, the network adapter is enabled to generate a wake-up event when it receives a packet that matches a configured bitmap pattern.</p>
 </dd>
 
-### -field <a id="NDIS_PM_WOL_MAGIC_PACKET_ENABLED"></a><a id="ndis_pm_wol_magic_packet_enabled"></a>NDIS_PM_WOL_MAGIC_PACKET_ENABLED
+### -field NDIS_PM_WOL_MAGIC_PACKET_ENABLED
 
 <dd>
 <p>If this flag is set, the network adapter is enabled to generate a wake-up event when it receives a WOL magic packet. A 
@@ -114,26 +114,26 @@ typedef struct _NDIS_PM_PARAMETERS {
        immediately by 16 contiguous copies of the receiving network adapter's media access control (MAC) address.</p>
 </dd>
 
-### -field <a id="NDIS_PM_WOL_EAPOL_REQUEST_ID_MESSAGE_ENABLED"></a><a id="ndis_pm_wol_eapol_request_id_message_enabled"></a>NDIS_PM_WOL_EAPOL_REQUEST_ID_MESSAGE_ENABLED
+### -field NDIS_PM_WOL_EAPOL_REQUEST_ID_MESSAGE_ENABLED
 
 <dd>
 <p>If this flag is set, the network adapter is enabled to generate a wake-up event when it receives an EAPOL request identifier message.</p>
 </dd>
 
-### -field <a id="NDIS_PM_WOL_IPV4_TCP_SYN_ENABLED"></a><a id="ndis_pm_wol_ipv4_tcp_syn_enabled"></a>NDIS_PM_WOL_IPV4_TCP_SYN_ENABLED
+### -field NDIS_PM_WOL_IPV4_TCP_SYN_ENABLED
 
 <dd>
 <p>If this flag is set, the network adapter is enabled to generate a wake-up event when it receives an IPv4 TCP SYN packet. Remote hosts send TCP SYN packets to
        initiate a TCP connection to the local computer.</p>
 </dd>
 
-### -field <a id="NDIS_PM_WOL_IPV6_TCP_SYN_ENABLED"></a><a id="ndis_pm_wol_ipv6_tcp_syn_enabled"></a>NDIS_PM_WOL_IPV6_TCP_SYN_ENABLED
+### -field NDIS_PM_WOL_IPV6_TCP_SYN_ENABLED
 
 <dd>
 <p>If this flag is set, the network adapter is enabled to generate a wake-up event when it receives an IPv6 TCP SYN packet.</p>
 </dd>
 
-### -field <a id="NDIS_PM_WOL_IPV4_DEST_ADDR_WILDCARD_ENABLED"></a><a id="ndis_pm_wol_ipv4_dest_addr_wildcard_enabled"></a>NDIS_PM_WOL_IPV4_DEST_ADDR_WILDCARD_ENABLED
+### -field NDIS_PM_WOL_IPV4_DEST_ADDR_WILDCARD_ENABLED
 
 <dd>
 <p>If this flag is set, the network adapter must treat as 
@@ -158,7 +158,7 @@ typedef struct _NDIS_PM_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_PM_WOL_IPV6_DEST_ADDR_WILDCARD_ENABLED"></a><a id="ndis_pm_wol_ipv6_dest_addr_wildcard_enabled"></a>NDIS_PM_WOL_IPV6_DEST_ADDR_WILDCARD_ENABLED
+### -field NDIS_PM_WOL_IPV6_DEST_ADDR_WILDCARD_ENABLED
 
 <dd>
 <p>If this flag is set, the network adapter must treat as 
@@ -187,7 +187,7 @@ typedef struct _NDIS_PM_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>EnabledProtocolOffloads</b>
+### -field EnabledProtocolOffloads
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags that correspond to capabilities that the
@@ -200,7 +200,7 @@ typedef struct _NDIS_PM_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_PM_PROTOCOL_OFFLOAD_ARP_ENABLED"></a><a id="ndis_pm_protocol_offload_arp_enabled"></a>NDIS_PM_PROTOCOL_OFFLOAD_ARP_ENABLED
+### -field NDIS_PM_PROTOCOL_OFFLOAD_ARP_ENABLED
 
 <dd>
 <p>If this bit is set, the overlying driver will request the network adapter to enable the ARP
@@ -210,7 +210,7 @@ typedef struct _NDIS_PM_PARAMETERS {
        state.</p>
 </dd>
 
-### -field <a id="NDIS_PM_PROTOCOL_OFFLOAD_NS_ENABLED"></a><a id="ndis_pm_protocol_offload_ns_enabled"></a>NDIS_PM_PROTOCOL_OFFLOAD_NS_ENABLED
+### -field NDIS_PM_PROTOCOL_OFFLOAD_NS_ENABLED
 
 <dd>
 <p>If this bit is set, the overlying driver will request the network adapter to enable the IPv6
@@ -220,7 +220,7 @@ typedef struct _NDIS_PM_PARAMETERS {
        the driver should enable the network adapter to respond to NS packets while it is in a low-power state.</p>
 </dd>
 
-### -field <a id="NDIS_PM_PROTOCOL_OFFLOAD_80211_RSN_REKEY_ENABLED"></a><a id="ndis_pm_protocol_offload_80211_rsn_rekey_enabled"></a>NDIS_PM_PROTOCOL_OFFLOAD_80211_RSN_REKEY_ENABLED
+### -field NDIS_PM_PROTOCOL_OFFLOAD_80211_RSN_REKEY_ENABLED
 
 <dd>
 <p>If this bit is set, the overlying driver will request the network adapter to enable the IEEE
@@ -233,7 +233,7 @@ typedef struct _NDIS_PM_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>WakeUpFlags</b>
+### -field WakeUpFlags
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of NDIS_PM_WAKE_ON_
@@ -243,7 +243,7 @@ typedef struct _NDIS_PM_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_PM_WAKE_ON_LINK_CHANGE_ENABLED"></a><a id="ndis_pm_wake_on_link_change_enabled"></a>NDIS_PM_WAKE_ON_LINK_CHANGE_ENABLED
+### -field NDIS_PM_WAKE_ON_LINK_CHANGE_ENABLED
 
 <dd>
 <p>If this flag is set, the network adapter is enabled to generate a wake-up event when the link state changes from
@@ -254,14 +254,14 @@ typedef struct _NDIS_PM_PARAMETERS {
        Disconnect</a>.</p>
 </dd>
 
-### -field <a id="NDIS_PM_WAKE_ON_MEDIA_DISCONNECT_ENABLED"></a><a id="ndis_pm_wake_on_media_disconnect_enabled"></a>NDIS_PM_WAKE_ON_MEDIA_DISCONNECT_ENABLED
+### -field NDIS_PM_WAKE_ON_MEDIA_DISCONNECT_ENABLED
 
 <dd>
 <p>If this flag is set, the network adapter is enabled to generate a wake-up event when the link state changes from
        media connected to media disconnected.</p>
 </dd>
 
-### -field <a id="NDIS_PM_SELECTIVE_SUSPEND_ENABLED"></a><a id="ndis_pm_selective_suspend_enabled"></a>NDIS_PM_SELECTIVE_SUSPEND_ENABLED
+### -field NDIS_PM_SELECTIVE_SUSPEND_ENABLED
 
 <dd>
 <p>If this flag is set, the  network adapter is enabled to generate a wake-up event whenever  one of the following events occurs:</p>
@@ -283,7 +283,7 @@ typedef struct _NDIS_PM_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>MediaSpecificWakeUpEvents</b>
+### -field MediaSpecificWakeUpEvents
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. These flags specify the media-specific wake-up events that a network adapter supports. 
@@ -292,56 +292,56 @@ typedef struct _NDIS_PM_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_WLAN_WAKE_ON_NLO_DISCOVERY_ENABLED"></a><a id="ndis_wlan_wake_on_nlo_discovery_enabled"></a>NDIS_WLAN_WAKE_ON_NLO_DISCOVERY_ENABLED
+### -field NDIS_WLAN_WAKE_ON_NLO_DISCOVERY_ENABLED
 
 <dd>
 <p>If this flag is set, the 802.11 network adapter is enabled to generate a wake-up event when it detects a service set identifier (SSID) that was specified through a network offload (NLO). </p>
-<p>For more information about NLO, see <a href="NULL">Wi-Fi Network List Offload</a>.</p>
+<p>For more information about NLO, see <a href="netvista.wi-fi_network_list_offload">Wi-Fi Network List Offload</a>.</p>
 </dd>
 
-### -field <a id="NDIS_WLAN_WAKE_ON_AP_ASSOCIATION_LOST_ENABLED"></a><a id="ndis_wlan_wake_on_ap_association_lost_enabled"></a>NDIS_WLAN_WAKE_ON_AP_ASSOCIATION_LOST_ENABLED
+### -field NDIS_WLAN_WAKE_ON_AP_ASSOCIATION_LOST_ENABLED
 
 <dd>
 <p>If this flag is set, the 802.11 network adapter is enabled to generate a wake-up event when it disassociates with the access point (AP).</p>
 </dd>
 
-### -field <a id="NDIS_WLAN_WAKE_ON_GTK_HANDSHAKE_ERROR_ENABLED"></a><a id="ndis_wlan_wake_on_gtk_handshake_error_enabled"></a>NDIS_WLAN_WAKE_ON_GTK_HANDSHAKE_ERROR_ENABLED
+### -field NDIS_WLAN_WAKE_ON_GTK_HANDSHAKE_ERROR_ENABLED
 
 <dd>
 <p>If this flag is set, the 802.11 network adapter is enabled to generate a wake-up event when it encounters an error during the IEEE 802.11i RSN group transient key (GTK) handshake with the AP.</p>
 </dd>
 
-### -field <a id="NDIS_WLAN_WAKE_ON_4WAY_HANDSHAKE_REQUEST_ENABLED"></a><a id="ndis_wlan_wake_on_4way_handshake_request_enabled"></a>NDIS_WLAN_WAKE_ON_4WAY_HANDSHAKE_REQUEST_ENABLED
+### -field NDIS_WLAN_WAKE_ON_4WAY_HANDSHAKE_REQUEST_ENABLED
 
 <dd>
 <p>If this flag is set, the 802.11 network adapter is enabled to generate a wake-up event when it receives the first frame of the IEEE 802.11i RSN 4-way handshake with the AP. This handshake is performed when the adapter authenticates with the AP.</p>
 </dd>
 
-### -field <a id="NDIS_WWAN_WAKE_ON_REGISTER_STATE_ENABLED"></a><a id="ndis_wwan_wake_on_register_state_enabled"></a>NDIS_WWAN_WAKE_ON_REGISTER_STATE_ENABLED
+### -field NDIS_WWAN_WAKE_ON_REGISTER_STATE_ENABLED
 
 <dd>
 <p>If this flag is set, the mobile broadband (MB) network adapter is enabled to generate a wake-up event when its registration state to the MB Service has changed.</p>
 </dd>
 
-### -field <a id="NDIS_WWAN_WAKE_ON_SMS_RECEIVE_ENABLED"></a><a id="ndis_wwan_wake_on_sms_receive_enabled"></a>NDIS_WWAN_WAKE_ON_SMS_RECEIVE_ENABLED
+### -field NDIS_WWAN_WAKE_ON_SMS_RECEIVE_ENABLED
 
 <dd>
 <p>If this flag is set, the MB network adapter is enabled to generate a wake-up event when the MB Service has to be notified about the receipt of a Short Message Service (SMS) message. The adapter generates this wake-up event either after the completion of a previously issued <a href="https://msdn.microsoft.com/library/windows/hardware/ff569839">OID_WWAN_SMS_READ</a> query request, or the arrival of a new class-0 (flash/alert) message from the network provider as an event notification.</p>
 </dd>
 
-### -field <a id="NDIS_WWAN_WAKE_ON_USSD_RECEIVE_ENABLED"></a><a id="ndis_wwan_wake_on_ussd_receive_enabled"></a>NDIS_WWAN_WAKE_ON_USSD_RECEIVE_ENABLED
+### -field NDIS_WWAN_WAKE_ON_USSD_RECEIVE_ENABLED
 
 <dd>
 <p>If this flag is set, the MB network adapter is enabled to generate a wake-up event when it receives an Unstructured Supplementary Service Data (USSD) message.</p>
 </dd>
 
-### -field <a id="NDIS_WWAN_WAKE_ON_PACKET_STATE_ENABLED"></a><a id="ndis_wwan_wake_on_packet_state_enabled"></a>NDIS_WWAN_WAKE_ON_PACKET_STATE_ENABLED
+### -field NDIS_WWAN_WAKE_ON_PACKET_STATE_ENABLED
 
 <dd>
 <p>If this flag is set, the MB network adapter is enabled to generate a wake-up event when the availability of cellular packet data changes. This flag is new in Windows 10.</p>
 </dd>
 
-### -field <a id="NDIS_WWAN_WAKE_ON_UICC_CHANGE_ENABLED"></a><a id="ndis_wwan_wake_on_uicc_change_enabled"></a>NDIS_WWAN_WAKE_ON_UICC_CHANGE_ENABLED
+### -field NDIS_WWAN_WAKE_ON_UICC_CHANGE_ENABLED
 
 <dd>
 <p>If this flag is set, the MB network adapter is enabled to generate a wake-up event when the UICC (SIM) card is inserted, removed, or enters an error state. This flag is new in Windows 10.</p>
@@ -416,4 +416,4 @@ typedef struct _NDIS_PM_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

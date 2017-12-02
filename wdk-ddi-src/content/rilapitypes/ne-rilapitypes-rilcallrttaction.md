@@ -7,7 +7,7 @@ old-location: netvista\rilcallrttaction_2.htm
 old-project: netvista
 ms.assetid: e4a28382-25f9-427d-ba7a-3b35c01f50fd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILCALLRTTACTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLRTTACTION_REJECT"></a><a id="ril_callrttaction_reject"></a><b>RIL_CALLRTTACTION_REJECT</b>
+### -field RIL_CALLRTTACTION_REJECT
 
 <dd></dd>
 
-### -field <a id="RIL_CALLRTTACTION_ASK"></a><a id="ril_callrttaction_ask"></a><b>RIL_CALLRTTACTION_ASK</b>
+### -field RIL_CALLRTTACTION_ASK
 
 <dd></dd>
 
-### -field <a id="RIL_CALLRTTACTION_ACCEPT"></a><a id="ril_callrttaction_accept"></a><b>RIL_CALLRTTACTION_ACCEPT</b>
+### -field RIL_CALLRTTACTION_ACCEPT
 
 <dd></dd>
 
-### -field <a id="RIL_CALLRTTACTION_MAX"></a><a id="ril_callrttaction_max"></a><b>RIL_CALLRTTACTION_MAX</b>
+### -field RIL_CALLRTTACTION_MAX
 
 <dd></dd>
 </dl>

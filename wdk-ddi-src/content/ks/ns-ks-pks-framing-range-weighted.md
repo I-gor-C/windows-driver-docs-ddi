@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Range</b>
+### -field Range
 
 <dd>
 <p>Specifies the framing range.</p>
 </dd>
 
-### -field <b>InPlaceWeight</b>
+### -field InPlaceWeight
 
 <dd>
 <p>Not currently supported. Drivers should set to zero.</p>
 </dd>
 
-### -field <b>NotInPlaceWeight</b>
+### -field NotInPlaceWeight
 
 <dd>
 <p>Not currently supported. Drivers should set to zero.</p>

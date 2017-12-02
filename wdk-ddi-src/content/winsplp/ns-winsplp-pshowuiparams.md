@@ -56,13 +56,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>UIType</b>
+### -field UIType
 
 <dd>
 <p>Specifies the type of user interface element. This member can be set to a single value: <b>kMessageBox</b>.</p>
 </dd>
 
-### -field <b>MessageBoxParams</b>
+### -field MessageBoxParams
 
 <dd>
 <p>Specifies a <a href="print.messagebox_params">MESSAGEBOX_PARAMS</a> structure that contains the information about the message box.</p>

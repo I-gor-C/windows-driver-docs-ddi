@@ -62,43 +62,43 @@ typedef enum _STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="ReadyForNextStreamDataRequest"></a><a id="readyfornextstreamdatarequest"></a><a id="READYFORNEXTSTREAMDATAREQUEST"></a><b>ReadyForNextStreamDataRequest</b>
+### -field ReadyForNextStreamDataRequest
 
 <dd>
 <p>Indicates that the minidriver is ready for the next stream data request.</p>
 </dd>
 
-### -field <a id="ReadyForNextStreamControlRequest"></a><a id="readyfornextstreamcontrolrequest"></a><a id="READYFORNEXTSTREAMCONTROLREQUEST"></a><b>ReadyForNextStreamControlRequest</b>
+### -field ReadyForNextStreamControlRequest
 
 <dd>
 <p>Indicates that the minidriver is ready for the next stream control request.</p>
 </dd>
 
-### -field <a id="HardwareStarved"></a><a id="hardwarestarved"></a><a id="HARDWARESTARVED"></a><b>HardwareStarved</b>
+### -field HardwareStarved
 
 <dd>
 <p>Indicates that the hardware is starved for data.</p>
 </dd>
 
-### -field <a id="StreamRequestComplete"></a><a id="streamrequestcomplete"></a><a id="STREAMREQUESTCOMPLETE"></a><b>StreamRequestComplete</b>
+### -field StreamRequestComplete
 
 <dd>
 <p>Indicates that the specified stream SRB has completed.</p>
 </dd>
 
-### -field <a id="SignalMultipleStreamEvents"></a><a id="signalmultiplestreamevents"></a><a id="SIGNALMULTIPLESTREAMEVENTS"></a><b>SignalMultipleStreamEvents</b>
+### -field SignalMultipleStreamEvents
 
 <dd></dd>
 
-### -field <a id="SignalStreamEvent"></a><a id="signalstreamevent"></a><a id="SIGNALSTREAMEVENT"></a><b>SignalStreamEvent</b>
+### -field SignalStreamEvent
 
 <dd></dd>
 
-### -field <a id="DeleteStreamEvent"></a><a id="deletestreamevent"></a><a id="DELETESTREAMEVENT"></a><b>DeleteStreamEvent</b>
+### -field DeleteStreamEvent
 
 <dd></dd>
 
-### -field <a id="StreamNotificationMaximum"></a><a id="streamnotificationmaximum"></a><a id="STREAMNOTIFICATIONMAXIMUM"></a><b>StreamNotificationMaximum</b>
+### -field StreamNotificationMaximum
 
 <dd></dd>
 </dl>

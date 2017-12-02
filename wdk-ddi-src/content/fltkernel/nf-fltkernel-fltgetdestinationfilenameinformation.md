@@ -7,7 +7,7 @@ old-location: ifsk\fltgetdestinationfilenameinformation.htm
 old-project: ifsk
 ms.assetid: b5438802-fc96-4445-9261-5d497d2d24cc
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltGetDestinationFileNameInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,39 +60,39 @@ NTSTATUS FltGetDestinationFileNameInformation(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>Opaque instance pointer for a minifilter driver instance that is attached to the volume where the file resides. </p>
 </dd>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to the file object for the file. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>RootDirectory</i> [in, optional]
+### -param RootDirectory [in, optional]
 
 <dd>
 <p><b>Link operations:</b> If the link is to be created in the same directory as the file that is being linked to, or if the <i>FileName</i> parameter contains the full pathname for the link to be created, this parameter is <b>NULL</b>. Otherwise it is a handle for the directory where the link is to be created. </p>
 <p><b>Rename operations:</b> If the file is not being moved to a different directory, or if the <i>FileName</i> parameter contains the full pathname, this parameter is <b>NULL</b>. Otherwise it is a handle for the directory where the file resides after it is renamed. </p>
 </dd>
 
-### -param <i>FileName</i> [in]
+### -param FileName [in]
 
 <dd>
 <p><b>Link operations:</b> Pointer to a wide-character string containing the name to be assigned to the newly created link. </p>
 <p><b>Rename operations:</b> Pointer to a wide-character string containing the new name for the file. </p>
 </dd>
 
-### -param <i>FileNameLength</i> [in]
+### -param FileNameLength [in]
 
 <dd>
 <p>Length, in bytes, of the wide-character string that <i>FileName </i>points to. </p>
 </dd>
 
-### -param <i>NameOptions</i> [in]
+### -param NameOptions [in]
 
 <dd>
 <p>
@@ -164,7 +164,7 @@ NTSTATUS FltGetDestinationFileNameInformation(
 <p> </p>
 </dd>
 
-### -param <i>RetFileNameInformation</i> [out]
+### -param RetFileNameInformation [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the address of a system-allocated <a href="..\fltkernel\ns-fltkernel--flt-file-name-information.md">FLT_FILE_NAME_INFORMATION</a> structure containing the file name information. <b>FltGetDestinationFileNameInformation</b> allocates this structure from paged pool. This parameter is required and cannot be <b>NULL</b>. </p>
@@ -319,4 +319,4 @@ NTSTATUS FltGetDestinationFileNameInformation(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetDestinationFileNameInformation routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetDestinationFileNameInformation routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\dot11_offload_network_list_info.htm
 old-project: netvista
 ms.assetid: 0FB1D72F-B183-408A-BB84-A9D54B6C276F
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_OFFLOAD_NETWORK_LIST_INFO, DOT11_OFFLOAD_NETWORK_LIST_INFO, *PDOT11_OFFLOAD_NETWORK_LIST_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct _DOT11_OFFLOAD_NETWORK_LIST_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_OFFLOAD_NETWORK_LIST_INFO structure. The required settings for the members of <b>Header</b> are the following.</p>
@@ -84,7 +84,7 @@ typedef struct _DOT11_OFFLOAD_NETWORK_LIST_INFO {
 <p> </p>
 </dd>
 
-### -field <b>ulFlags</b>
+### -field ulFlags
 
 <dd>
 <p>Bit flags to specify extra attributes of this NLO from the following table:</p>
@@ -109,31 +109,31 @@ typedef struct _DOT11_OFFLOAD_NETWORK_LIST_INFO {
 <p> </p>
 </dd>
 
-### -field <b>FastScanPeriod</b>
+### -field FastScanPeriod
 
 <dd>
 <p>Fast scan period, in seconds. When the NIC receives the offload list, it should scan for matches to the list within the <b>FastScanPeriod</b> interval. In the fast scan period, the NIC scans for interesting SSIDs every such period for <b>FastScanIteration</b> then it switches to <b>SlowScanPeriod</b>.</p>
 </dd>
 
-### -field <b>FastScanIterations</b>
+### -field FastScanIterations
 
 <dd>
 <p>Number if iterations to repeat the fast scan. When the number of iterations is reached the  NIC switches to the <b>SlowScanPeriod</b>.</p>
 </dd>
 
-### -field <b>SlowScanPeriod</b>
+### -field SlowScanPeriod
 
 <dd>
 <p>Slow scan period, in seconds.   After the <b>FastScanPeriod</b> expires, the NIC switch to the <b>SlowScanPeriod</b>.  The NIC should scan for matches to the list within the <b>SlowScanPeriod</b>.  The duration is open ended until Windows issues an updated  offload-list.</p>
 </dd>
 
-### -field <b>uNumOfEntries</b>
+### -field uNumOfEntries
 
 <dd>
 <p>Number of networks in the list of those requested to offload.</p>
 </dd>
 
-### -field <b>offloadNetworkList[1]</b>
+### -field offloadNetworkList[1]
 
 <dd>
 <p>Array of networks that hardware should automatically search for.</p>

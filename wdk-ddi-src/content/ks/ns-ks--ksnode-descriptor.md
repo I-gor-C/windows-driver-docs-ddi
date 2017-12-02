@@ -56,19 +56,19 @@ typedef struct _KSNODE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>AutomationTable</b>
+### -field AutomationTable
 
 <dd>
 <p>A pointer to a <a href="stream.ksautomation_table">KSAUTOMATION_TABLE</a> structure for this topology node. The automation table contains the properties, methods, and events supported by this topology node.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A pointer to a GUID defining the topology node.</p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>A pointer to a GUID that represents the name of this topology node. This is used to return information about a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565809">KSPROPERTY_TOPOLOGY_NAME</a> query.</p>

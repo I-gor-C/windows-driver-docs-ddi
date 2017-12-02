@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains unregistration information for the <a href="buses.ioctl_usb_unregister_for_transport_characteristics_change">IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a> 
+<p>Contains unregistration information for the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-unregister-for-transport-characteristics-change.md">IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a> 
 
 request.</p>
 
@@ -57,10 +57,10 @@ typedef struct _USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION {
 ## -struct-fields
 <dl>
 
-### -field <b> Handle</b>
+### -field  Handle
 
 <dd>
-<p>An opaque handle for registration that the client driver obtained in the previous <a href="buses.ioctl_usb_register_for_transport_characteristics_change">IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a> request.</p>
+<p>An opaque handle for registration that the client driver obtained in the previous <a href="..\usbioctl\ni-usbioctl-ioctl-usb-register-for-transport-characteristics-change.md">IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a> request.</p>
 </dd>
 </dl>
 
@@ -84,7 +84,7 @@ typedef struct _USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ioctl_usb_unregister_for_transport_characteristics_change">IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-unregister-for-transport-characteristics-change.md">IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a>
 </dt>
 </dl>
 <p> </p>

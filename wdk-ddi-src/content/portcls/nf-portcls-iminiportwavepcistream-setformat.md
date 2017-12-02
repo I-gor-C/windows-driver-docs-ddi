@@ -54,7 +54,7 @@ NTSTATUS SetFormat(
 ## -parameters
 <dl>
 
-### -param <i>DataFormat</i> [in]
+### -param DataFormat [in]
 
 <dd>
 <p>Pointer to <a href="stream.ksdataformat">KSDATAFORMAT</a> structure that describes the new format of the stream.</p>
@@ -67,7 +67,7 @@ NTSTATUS SetFormat(
 ## -remarks
 <p>The wave stream's initial format is specified in the <a href="audio.iminiportwavepci_newstream">IMiniportWavePci::NewStream</a> call that creates the stream. Following stream creation, the <code>SetFormat</code> call can change the stream's format from its initial setting.</p>
 
-<p>For information about specifying wave stream formats, see <a href="NULL">Audio Data Formats and Data Ranges</a>.</p>
+<p>For information about specifying wave stream formats, see <a href="https://msdn.microsoft.com/85aa74b4-8e33-49f4-82e7-561baa55c265">Audio Data Formats and Data Ranges</a>.</p>
 
 ## -requirements
 <table>

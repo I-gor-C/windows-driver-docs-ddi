@@ -54,7 +54,7 @@ HRESULT SendFixedDocumentSequence(
 ## -parameters
 <dl>
 
-### -param <i>pIFixedDocumentSequence</i> [in]
+### -param pIFixedDocumentSequence [in]
 
 <dd>
 <p>A pointer to an XPS fixed document sequence object.</p>

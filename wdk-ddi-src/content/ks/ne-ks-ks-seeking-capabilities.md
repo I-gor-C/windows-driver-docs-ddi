@@ -60,31 +60,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_SEEKING_CanSeekAbsolute"></a><a id="ks_seeking_canseekabsolute"></a><a id="KS_SEEKING_CANSEEKABSOLUTE"></a><b>KS_SEEKING_CanSeekAbsolute</b>
+### -field KS_SEEKING_CanSeekAbsolute
 
 <dd></dd>
 
-### -field <a id="KS_SEEKING_CanSeekForwards"></a><a id="ks_seeking_canseekforwards"></a><a id="KS_SEEKING_CANSEEKFORWARDS"></a><b>KS_SEEKING_CanSeekForwards</b>
+### -field KS_SEEKING_CanSeekForwards
 
 <dd></dd>
 
-### -field <a id="KS_SEEKING_CanSeekBackwards"></a><a id="ks_seeking_canseekbackwards"></a><a id="KS_SEEKING_CANSEEKBACKWARDS"></a><b>KS_SEEKING_CanSeekBackwards</b>
+### -field KS_SEEKING_CanSeekBackwards
 
 <dd></dd>
 
-### -field <a id="KS_SEEKING_CanGetCurrentPos"></a><a id="ks_seeking_cangetcurrentpos"></a><a id="KS_SEEKING_CANGETCURRENTPOS"></a><b>KS_SEEKING_CanGetCurrentPos</b>
+### -field KS_SEEKING_CanGetCurrentPos
 
 <dd></dd>
 
-### -field <a id="KS_SEEKING_CanGetStopPos"></a><a id="ks_seeking_cangetstoppos"></a><a id="KS_SEEKING_CANGETSTOPPOS"></a><b>KS_SEEKING_CanGetStopPos</b>
+### -field KS_SEEKING_CanGetStopPos
 
 <dd></dd>
 
-### -field <a id="KS_SEEKING_CanGetDuration"></a><a id="ks_seeking_cangetduration"></a><a id="KS_SEEKING_CANGETDURATION"></a><b>KS_SEEKING_CanGetDuration</b>
+### -field KS_SEEKING_CanGetDuration
 
 <dd></dd>
 
-### -field <a id="KS_SEEKING_CanPlayBackwards"></a><a id="ks_seeking_canplaybackwards"></a><a id="KS_SEEKING_CANPLAYBACKWARDS"></a><b>KS_SEEKING_CanPlayBackwards</b>
+### -field KS_SEEKING_CanPlayBackwards
 
 <dd></dd>
 </dl>

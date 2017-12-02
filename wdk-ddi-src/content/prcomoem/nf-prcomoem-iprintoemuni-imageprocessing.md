@@ -61,44 +61,44 @@ HRESULT ImageProcessing(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pSrcBitmap</i> 
+### -param pSrcBitmap 
 
 <dd>
 <p>Caller-supplied pointer to an input <a href="wdkgloss.d#wdkgloss.device-independent_bitmap__dib_#wdkgloss.device-independent_bitmap__dib_"><i>DIB</i></a>.</p>
 </dd>
 
-### -param <i>pBitmapInfoHeader</i> 
+### -param pBitmapInfoHeader 
 
 <dd>
 <p>Caller-supplied pointer to a BITMAPINFOHEADER structure that describes the bitmap pointed to by <i>pSrcBitmap</i>. The BITMAPINFOHEADER structure is described in the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -param <i>pColorTable</i> 
+### -param pColorTable 
 
 <dd>
 <p>Caller-supplied pointer to a color table. This parameter is used only if the output format is eight bits per pixel. For more information, see the following Remarks section.</p>
 <p>When interpreting a bitmap, you must examine the color table. Unidrv can modify the colors in a bitmap, but it will also make corresponding adjustments in the color table, resulting in no net change. However, if you ignore color table changes, and examine only the bitmap, an image might not print properly. For an example, see the discussion of the <i>pPaletteEntry</i> parameter in <a href="display.ht_get8bppmaskpalette">HT_Get8BPPMaskPalette</a>.</p>
 </dd>
 
-### -param <i>dwCallbackID</i> 
+### -param dwCallbackID 
 
 <dd>
 <p>Caller-supplied value assigned to the *<b>IPCallbackID</b> attribute of the currently selected option for the ColorMode feature. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>pIPParams</i> 
+### -param pIPParams 
 
 <dd>
 <p>Caller-supplied pointer to an <a href="print.ipparams">IPPARAMS</a> structure.</p>
 </dd>
 
-### -param <i>ppbResult</i> [out]
+### -param ppbResult [out]
 
 <dd>
 <p>Pointer to a memory location that contains the address of a buffer. The contents of the buffer depend on where the converted DIB should be sent.</p>
@@ -121,7 +121,7 @@ HRESULT ImageProcessing(
 ## -remarks
 <p>The <code>IPrintOemUni::ImageProcessing</code> method is used to modify image bitmaps before they are sent to the print spooler. Its purpose is to provide customized support for color modes and halftoning methods not supported by Unidrv. A printer driver that sends a bitmap to the print spooler (as opposed to sending it back to Unidrv) must set the *DevBPP and *DevNumOfPlanes attributes to zero in the printer's <a href="wdkgloss.g#wdkgloss.generic_printer_description__gpd_#wdkgloss.generic_printer_description__gpd_"><i>GPD</i></a> file.</p>
 
-<p>If the method is implemented, and if the GPD file entry for the current color format contains an *<b>IPCallbackID</b> attribute, Unidrv calls the method each time a bitmap is available. The call is made after GDI renders the bitmap, which is then sent to the spooler. (For information about the *<b>IPCallbackID</b> attribute, see <a href="NULL">Option Attributes for the ColorMode Feature</a>.)</p>
+<p>If the method is implemented, and if the GPD file entry for the current color format contains an *<b>IPCallbackID</b> attribute, Unidrv calls the method each time a bitmap is available. The call is made after GDI renders the bitmap, which is then sent to the spooler. (For information about the *<b>IPCallbackID</b> attribute, see <a href="https://msdn.microsoft.com/e6f68a50-f044-406e-b92c-8449d126bceb">Option Attributes for the ColorMode Feature</a>.)</p>
 
 <p>If the current color mode, as specified by <i>dwCallbackID</i>, is one that Unidrv supports, then the <code>IPrintOemUni::ImageProcessing</code> method should perform halftoning operations on the received bitmap and return it to Unidrv for spooling. If the current color mode is one that Unidrv does not support, the method must perform halftoning operations and then spool the bitmap.</p>
 
@@ -131,7 +131,7 @@ HRESULT ImageProcessing(
 
 <p>Return the modified image data to Unidrv by placing it in a buffer and supplying the buffer's address as the method's return value. The returned buffer can be the one pointed to by <i>pSrcBitmap</i>, or it can be one that is locally allocated.</p>
 
-<p>For more information about customizing halftoning operations in Unidrv, see <a href="NULL">Customized Halftoning</a>.</p>
+<p>For more information about customizing halftoning operations in Unidrv, see <a href="https://msdn.microsoft.com/cc14ff92-743b-42ca-b70f-0df768762f01">Customized Halftoning</a>.</p>
 
 <p>To handle customized color formatting, the <code>IPrintOemUni::ImageProcessing</code> method must do the following:</p>
 
@@ -141,7 +141,7 @@ HRESULT ImageProcessing(
 
 <p>Modify the printer's cursor position by making appropriate calls to the <a href="print.iprintoemdriveruni_drvxmoveto">IPrintOemDriverUni::DrvXMoveTo</a> and <a href="print.iprintoemdriveruni_drvymoveto">IPrintOemDriverUni::DrvYMoveTo</a> methods.</p>
 
-<p>For more information about customizing color formatting operations in Unidrv, see <a href="NULL">Customized Color Formats</a>.</p>
+<p>For more information about customizing color formatting operations in Unidrv, see <a href="https://msdn.microsoft.com/309d33e8-6338-4c32-8e03-d6cbf3371e16">Customized Color Formats</a>.</p>
 
 <p>The <i>dwCallbackID</i> parameter indicates the type of color formatting, if any, that should be performed. Within the printer's GPD file, each *Option entry for the ColorMode feature describes a color format. If the format requires processing by the <code>IPrintOemUni::ImageProcessing</code> method, its *Option entry must contain an *<b>IPCallbackID</b> attribute. When Unidrv calls the <code>IPrintOemUni::ImageProcessing</code> method, it supplies the attribute value associated with the currently selected option for the ColorMode feature. This value is the <i>dwCallbackID</i> parameter's value.</p>
 
@@ -153,7 +153,7 @@ HRESULT ImageProcessing(
 
 <p>DIB contents are top-down ordered and uncompressed.</p>
 
-<p>The data format is one that is listed in <a href="NULL">Handling Color Formats</a>.</p>
+<p>The data format is one that is listed in <a href="https://msdn.microsoft.com/4d0faba6-1994-474f-a5d3-e25cd2800cf7">Handling Color Formats</a>.</p>
 
 <p>If the format requires a color table, the table is pointed to by <i>pColorTable</i>.</p>
 
@@ -165,7 +165,7 @@ HRESULT ImageProcessing(
 
 <p>DIB contents must be top-down ordered and uncompressed.</p>
 
-<p>The data format must be one that is listed in <a href="NULL">Handling Color Formats</a>, and it must be compatible with the *<b>DevBPP</b> and *<b>DevNumOfPlanes</b> attributes of the color format identified by <i>dwCallbackID</i>. (For information about these attributes, see <a href="NULL">Option Attributes for the ColorMode Feature</a>.)</p>
+<p>The data format must be one that is listed in <a href="https://msdn.microsoft.com/4d0faba6-1994-474f-a5d3-e25cd2800cf7">Handling Color Formats</a>, and it must be compatible with the *<b>DevBPP</b> and *<b>DevNumOfPlanes</b> attributes of the color format identified by <i>dwCallbackID</i>. (For information about these attributes, see <a href="https://msdn.microsoft.com/e6f68a50-f044-406e-b92c-8449d126bceb">Option Attributes for the ColorMode Feature</a>.)</p>
 
 <p>If the format requires a color table, the table must be created and its address must be returned in <i>pColorTable</i>.</p>
 

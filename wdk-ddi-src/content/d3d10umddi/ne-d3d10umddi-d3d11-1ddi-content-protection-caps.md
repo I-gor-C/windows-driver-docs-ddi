@@ -72,73 +72,73 @@ typedef enum D3D11_1DDI_CONTENT_PROTECTION_CAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_CONTENT_PROTECTION_CAPS_SOFTWARE"></a><a id="d3d11_1ddi_content_protection_caps_software"></a><b>D3D11_1DDI_CONTENT_PROTECTION_CAPS_SOFTWARE</b>
+### -field D3D11_1DDI_CONTENT_PROTECTION_CAPS_SOFTWARE
 
 <dd>
 <p>The encryption is implemented in software by the driver.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_CONTENT_PROTECTION_CAPS_HARDWARE"></a><a id="d3d11_1ddi_content_protection_caps_hardware"></a><b>D3D11_1DDI_CONTENT_PROTECTION_CAPS_HARDWARE</b>
+### -field D3D11_1DDI_CONTENT_PROTECTION_CAPS_HARDWARE
 
 <dd>
 <p>The encryption is implemented in hardware by the GPU.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_CONTENT_PROTECTION_CAPS_PROTECTION_ALWAYS_ON"></a><a id="d3d11_1ddi_content_protection_caps_protection_always_on"></a><b>D3D11_1DDI_CONTENT_PROTECTION_CAPS_PROTECTION_ALWAYS_ON</b>
+### -field D3D11_1DDI_CONTENT_PROTECTION_CAPS_PROTECTION_ALWAYS_ON
 
 <dd>
 <p>Content protection is always applied to a protected surface, regardless of whether the application explicitly enables protection.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_CONTENT_PROTECTION_CAPS_PARTIAL_DECRYPTION"></a><a id="d3d11_1ddi_content_protection_caps_partial_decryption"></a><b>D3D11_1DDI_CONTENT_PROTECTION_CAPS_PARTIAL_DECRYPTION</b>
+### -field D3D11_1DDI_CONTENT_PROTECTION_CAPS_PARTIAL_DECRYPTION
 
 <dd>
 <p>The driver can use partially encrypted buffers. If this capability is not present, the entire buffer must be either encrypted or clear.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_CONTENT_PROTECTION_CAPS_CONTENT_KEY"></a><a id="d3d11_1ddi_content_protection_caps_content_key"></a><b>D3D11_1DDI_CONTENT_PROTECTION_CAPS_CONTENT_KEY</b>
+### -field D3D11_1DDI_CONTENT_PROTECTION_CAPS_CONTENT_KEY
 
 <dd>
 <p>The driver can encrypt data using a separate content key that is encrypted using the session key.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_CONTENT_PROTECTION_CAPS_FRESHEN_SESSION_KEY"></a><a id="d3d11_1ddi_content_protection_caps_freshen_session_key"></a><b>D3D11_1DDI_CONTENT_PROTECTION_CAPS_FRESHEN_SESSION_KEY</b>
+### -field D3D11_1DDI_CONTENT_PROTECTION_CAPS_FRESHEN_SESSION_KEY
 
 <dd>
 <p>The driver can refresh the session key without renegotiating the key.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPTED_READ_BACK"></a><a id="d3d11_1ddi_content_protection_caps_encrypted_read_back"></a><b>D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPTED_READ_BACK</b>
+### -field D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPTED_READ_BACK
 
 <dd>
 <p>The driver can read back encrypted data from a protected surface. For more information, see <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-encryptionblt.md">EncryptionBlt(D3D11_1)</a>.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPTED_READ_BACK_KEY"></a><a id="d3d11_1ddi_content_protection_caps_encrypted_read_back_key"></a><b>D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPTED_READ_BACK_KEY</b>
+### -field D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPTED_READ_BACK_KEY
 
 <dd>
 <p>The driver requires a separate key to read encrypted data from a protected surface.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_CONTENT_PROTECTION_CAPS_SEQUENTIAL_CTR_IV"></a><a id="d3d11_1ddi_content_protection_caps_sequential_ctr_iv"></a><b>D3D11_1DDI_CONTENT_PROTECTION_CAPS_SEQUENTIAL_CTR_IV</b>
+### -field D3D11_1DDI_CONTENT_PROTECTION_CAPS_SEQUENTIAL_CTR_IV
 
 <dd>
 <p>If the encryption type is <b>D3D11_1DDI_CRYPTO_TYPE_AES128_CTR</b>, the application must use a sequential count in the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-aes-ctr-iv.md">D3D11_1DDI_AES_CTR_IV</a> structure. For more information, see the Remarks for the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-encryptionblt.md">EncryptionBlt(D3D11_1)</a> function.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPT_SLICEDATA_ONLY"></a><a id="d3d11_1ddi_content_protection_caps_encrypt_slicedata_only"></a><b>D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPT_SLICEDATA_ONLY</b>
+### -field D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPT_SLICEDATA_ONLY
 
 <dd>
 <p>The driver supports encrypted slice data, but does not support any other encrypted data in the DirectX Video Accelerator (DXVA) 2 compressed buffer. The caller should not encrypt any data within the buffer other than the slice data.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_CONTENT_PROTECTION_CAPS_DECRYPTION_BLT"></a><a id="d3d11_1ddi_content_protection_caps_decryption_blt"></a><b>D3D11_1DDI_CONTENT_PROTECTION_CAPS_DECRYPTION_BLT</b>
+### -field D3D11_1DDI_CONTENT_PROTECTION_CAPS_DECRYPTION_BLT
 
 <dd>
 <p>The driver supports calls to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-decryptionblt.md">DecryptionBlt(D3D11_1)</a> function.</p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECT_UNCOMPRESSED"></a><a id="d3dwddm2_0ddi_content_protection_caps_hardware_protect_uncompressed"></a><b>D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECT_UNCOMPRESSED</b>
+### -field D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECT_UNCOMPRESSED
 
 <dd>
 <p>The hardware supports the protection of specific resources using the WDDM 2.0 and later versions of the Graphics Content Protection DDI. This protection means:</p>
@@ -149,35 +149,35 @@ typedef enum D3D11_1DDI_CONTENT_PROTECTION_CAPS {
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_PAGEABLE"></a><a id="d3dwddm2_0ddi_content_protection_caps_hardware_protected_memory_pageable"></a><b>D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_PAGEABLE</b>
+### -field D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_PAGEABLE
 
 <dd>
 <p>The physical pages of a protected resource can be evicted and potentially paged to disk in low memory conditions without losing the contents of the resource when paged back in.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_TRANSITION"></a><a id="d3dwddm2_0ddi_content_protection_caps_hardware_protected_memory_transition"></a><b>D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_TRANSITION</b>
+### -field D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_TRANSITION
 
 <dd>
 <p>The hardware or driver can transition allocations between protected and unprotected states by calling <a href="display.sethardwareprotection">SetHardwareProtection</a>  without requiring the allocation to be re-created.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_TEARDOWN"></a><a id="d3dwddm2_0ddi_content_protection_caps_hardware_teardown"></a><b>D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_TEARDOWN</b>
+### -field D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_TEARDOWN
 
 <dd>
 <p>The hardware supports an automatic tear-down mechanism that could trigger hardware keys or protected content to become lost in some conditions.  The application can register to know when these events occur.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_DRM_COMMUNICATION"></a><a id="d3dwddm2_0ddi_content_protection_caps_hardware_drm_communication"></a><b>D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_DRM_COMMUNICATION</b>
+### -field D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_DRM_COMMUNICATION
 
 <dd>
 <p>The secure environment is tightly coupled with the GPU and an <b>ID3D11CryptoSession</b> should be used for communication between the user mode DRM component and the secure execution environment.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id=""></a><b></b>
+### -field 
 
 <dd></dd>
 </dl>

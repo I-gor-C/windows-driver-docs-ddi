@@ -57,19 +57,19 @@ typedef struct _GETINFO_GLYPHBITMAP {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes, of the GETINFO_GLYPHBITMAP structure. Supplied by <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
-### -field <b>hGlyph</b>
+### -field hGlyph
 
 <dd>
 <p>Handle to the glyph. See the following Remarks section. Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
-### -field <b>pGlyphData</b>
+### -field pGlyphData
 
 <dd>
 <p>Pointer to a <a href="display.glyphdata">GLYPHDATA</a> structure. The structure is filled in by Unidrv's <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function. The pointer is supplied by the <i>UNIFONTOBJ_GetInfo</i> caller.</p>

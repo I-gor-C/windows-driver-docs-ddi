@@ -60,13 +60,13 @@ typedef PHDAUDIO_TRANSFER_COMPLETE_CALLBACK HDAudioTransferCompleteCallback;
 ## -parameters
 <dl>
 
-### -param <i>pHDAudioCodecTransfer</i> 
+### -param pHDAudioCodecTransfer 
 
 <dd>
 <p>A pointer to the codecTransfer array element that contains the codec command and the response that triggered the callback. </p>
 </dd>
 
-### -param <i>Context</i> 
+### -param Context 
 
 <dd>
 <p> This is the same  context value that was specified previously in the <a href="..\hdaudio\nc-hdaudio-ptransfer-codec-verbs.md">PTRANSFER_CODEC_VERBS</a> routine's callbackContext parameter.</p>

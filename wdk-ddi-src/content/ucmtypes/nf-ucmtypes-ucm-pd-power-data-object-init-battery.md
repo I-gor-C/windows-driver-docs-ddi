@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a> structure as a Battery Supply type Power Data Object.</p>
+<p>Initializes a <a href="..\ucmtypes\ns-ucmtypes--ucm-pd-power-data-object.md">UCM_PD_POWER_DATA_OBJECT</a> structure as a Battery Supply type Power Data Object.</p>
 
 
 ## -syntax
@@ -55,10 +55,10 @@ FORCEINLINE void UCM_PD_POWER_DATA_OBJECT_INIT_BATTERY(
 ## -parameters
 <dl>
 
-### -param <i>Pdo</i> [out]
+### -param Pdo [out]
 
 <dd>
-<p>A pointer to a <a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a> structure in which the <b>BatterySupplyPdo.Battery</b> member is set to <b>UcmPdPdoTypeBatterySupply</b>.</p>
+<p>A pointer to a <a href="..\ucmtypes\ns-ucmtypes--ucm-pd-power-data-object.md">UCM_PD_POWER_DATA_OBJECT</a> structure in which the <b>BatterySupplyPdo.Battery</b> member is set to <b>UcmPdPdoTypeBatterySupply</b>.</p>
 </dd>
 </dl>
 
@@ -117,7 +117,7 @@ FORCEINLINE void UCM_PD_POWER_DATA_OBJECT_INIT_BATTERY(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a>
+<a href="..\ucmtypes\ns-ucmtypes--ucm-pd-power-data-object.md">UCM_PD_POWER_DATA_OBJECT</a>
 </dt>
 </dl>
 <p> </p>

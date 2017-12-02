@@ -7,7 +7,7 @@ old-location: debugger\getvalidregionvirtual.htm
 old-project: debugger
 ms.assetid: b580c2ef-94f9-4738-bd00-0d5a4753f71a
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugDataSpaces4, GetValidRegionVirtual, IDebugDataSpaces4::GetValidRegionVirtual
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ HRESULT GetValidRegionVirtual(
 ## -parameters
 <dl>
 
-### -param <i>Base</i> [in]
+### -param Base [in]
 
 <dd>
 <p>Specifies the address of the beginning of the memory range to search for valid memory.</p>
 </dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the memory range to search.</p>
 </dd>
 
-### -param <i>ValidBase</i> [out]
+### -param ValidBase [out]
 
 <dd>
 <p>Receives the address of the beginning of the found valid memory.</p>
 </dd>
 
-### -param <i>ValidSize</i> [out]
+### -param ValidSize [out]
 
 <dd>
 <p>Receives the size, in bytes, of the valid memory.</p>
@@ -83,7 +83,7 @@ HRESULT GetValidRegionVirtual(
 </dl>
 
 ## -returns
-<p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 
@@ -127,4 +127,4 @@ HRESULT GetValidRegionVirtual(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces4::GetValidRegionVirtual method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces4::GetValidRegionVirtual method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -58,19 +58,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeProperty</b>
+### -field NodeProperty
 
 <dd>
 <p>Specifies an initialized <a href="stream.ksp_node">KSP_NODE</a> structure that describes the node, property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>Value1</b>
+### -field Value1
 
 <dd>
 <p>Specifies the first value of a request. For set requests, the minidriver should set the property specified in <b>Property</b> to this value. For get requests, the minidriver should return the value of the property specified in <b>Property</b>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies the flags of a request. For set requests, this value indicates the desired setting. For get requests, this value contains the current setting. This member can be set to one of the values that are defined in <i>ksmedia.h</i>:</p>
@@ -99,7 +99,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Specifies the capabilities of a property. This member has meaning only for get requests. The minidriver should return the capabilities of the video processing amplifier with respect to the property specified in <b>Property</b>. This member should be set to one of the following values:</p>
@@ -128,7 +128,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>Value2</b>
+### -field Value2
 
 <dd>
 <p>Specifies the second value of a request. For set requests, the minidriver should set the property specified in <b>Property</b> to this value. For get requests, the minidriver should return the value of the property specified in <b>Property</b>.</p>

@@ -54,7 +54,7 @@ VOID NFC_CX_LLCP_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
 <p>A pointer to the <a href="..\nfccx\ns-nfccx--nfc-cx-llcp-config.md">NFC_CX_LLCP_CONFIG</a> structure that the function will initialize.</p>

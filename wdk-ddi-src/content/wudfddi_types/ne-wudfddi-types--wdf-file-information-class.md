@@ -7,7 +7,7 @@ old-location: wdf\wdf_file_information_class.htm
 old-project: wdf
 ms.assetid: d9d6ce1b-8bc1-4ba7-8ee5-3172a780d52c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -108,215 +108,215 @@ typedef enum _WDF_FILE_INFORMATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfFileInformationDirectory"></a><a id="wdffileinformationdirectory"></a><a id="WDFFILEINFORMATIONDIRECTORY"></a><b>WdfFileInformationDirectory</b>
+### -field WdfFileInformationDirectory
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationFullDirectory"></a><a id="wdffileinformationfulldirectory"></a><a id="WDFFILEINFORMATIONFULLDIRECTORY"></a><b>WdfFileInformationFullDirectory</b>
+### -field WdfFileInformationFullDirectory
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationBothDirectory"></a><a id="wdffileinformationbothdirectory"></a><a id="WDFFILEINFORMATIONBOTHDIRECTORY"></a><b>WdfFileInformationBothDirectory</b>
+### -field WdfFileInformationBothDirectory
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationBasic"></a><a id="wdffileinformationbasic"></a><a id="WDFFILEINFORMATIONBASIC"></a><b>WdfFileInformationBasic</b>
+### -field WdfFileInformationBasic
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationStandard"></a><a id="wdffileinformationstandard"></a><a id="WDFFILEINFORMATIONSTANDARD"></a><b>WdfFileInformationStandard</b>
+### -field WdfFileInformationStandard
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationInternal"></a><a id="wdffileinformationinternal"></a><a id="WDFFILEINFORMATIONINTERNAL"></a><b>WdfFileInformationInternal</b>
+### -field WdfFileInformationInternal
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationEa"></a><a id="wdffileinformationea"></a><a id="WDFFILEINFORMATIONEA"></a><b>WdfFileInformationEa</b>
+### -field WdfFileInformationEa
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationAccess"></a><a id="wdffileinformationaccess"></a><a id="WDFFILEINFORMATIONACCESS"></a><b>WdfFileInformationAccess</b>
+### -field WdfFileInformationAccess
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationName"></a><a id="wdffileinformationname"></a><a id="WDFFILEINFORMATIONNAME"></a><b>WdfFileInformationName</b>
+### -field WdfFileInformationName
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationRename"></a><a id="wdffileinformationrename"></a><a id="WDFFILEINFORMATIONRENAME"></a><b>WdfFileInformationRename</b>
+### -field WdfFileInformationRename
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationLink"></a><a id="wdffileinformationlink"></a><a id="WDFFILEINFORMATIONLINK"></a><b>WdfFileInformationLink</b>
+### -field WdfFileInformationLink
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationNames"></a><a id="wdffileinformationnames"></a><a id="WDFFILEINFORMATIONNAMES"></a><b>WdfFileInformationNames</b>
+### -field WdfFileInformationNames
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationDisposition"></a><a id="wdffileinformationdisposition"></a><a id="WDFFILEINFORMATIONDISPOSITION"></a><b>WdfFileInformationDisposition</b>
+### -field WdfFileInformationDisposition
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationPosition"></a><a id="wdffileinformationposition"></a><a id="WDFFILEINFORMATIONPOSITION"></a><b>WdfFileInformationPosition</b>
+### -field WdfFileInformationPosition
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationFullEa"></a><a id="wdffileinformationfullea"></a><a id="WDFFILEINFORMATIONFULLEA"></a><b>WdfFileInformationFullEa</b>
+### -field WdfFileInformationFullEa
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationMode"></a><a id="wdffileinformationmode"></a><a id="WDFFILEINFORMATIONMODE"></a><b>WdfFileInformationMode</b>
+### -field WdfFileInformationMode
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationAlignment"></a><a id="wdffileinformationalignment"></a><a id="WDFFILEINFORMATIONALIGNMENT"></a><b>WdfFileInformationAlignment</b>
+### -field WdfFileInformationAlignment
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationAll"></a><a id="wdffileinformationall"></a><a id="WDFFILEINFORMATIONALL"></a><b>WdfFileInformationAll</b>
+### -field WdfFileInformationAll
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationAllocation"></a><a id="wdffileinformationallocation"></a><a id="WDFFILEINFORMATIONALLOCATION"></a><b>WdfFileInformationAllocation</b>
+### -field WdfFileInformationAllocation
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationEndOfFile"></a><a id="wdffileinformationendoffile"></a><a id="WDFFILEINFORMATIONENDOFFILE"></a><b>WdfFileInformationEndOfFile</b>
+### -field WdfFileInformationEndOfFile
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationAlternateName"></a><a id="wdffileinformationalternatename"></a><a id="WDFFILEINFORMATIONALTERNATENAME"></a><b>WdfFileInformationAlternateName</b>
+### -field WdfFileInformationAlternateName
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationStream"></a><a id="wdffileinformationstream"></a><a id="WDFFILEINFORMATIONSTREAM"></a><b>WdfFileInformationStream</b>
+### -field WdfFileInformationStream
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationPipe"></a><a id="wdffileinformationpipe"></a><a id="WDFFILEINFORMATIONPIPE"></a><b>WdfFileInformationPipe</b>
+### -field WdfFileInformationPipe
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationPipeLocal"></a><a id="wdffileinformationpipelocal"></a><a id="WDFFILEINFORMATIONPIPELOCAL"></a><b>WdfFileInformationPipeLocal</b>
+### -field WdfFileInformationPipeLocal
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationPipeRemote"></a><a id="wdffileinformationpiperemote"></a><a id="WDFFILEINFORMATIONPIPEREMOTE"></a><b>WdfFileInformationPipeRemote</b>
+### -field WdfFileInformationPipeRemote
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationMailslotQuery"></a><a id="wdffileinformationmailslotquery"></a><a id="WDFFILEINFORMATIONMAILSLOTQUERY"></a><b>WdfFileInformationMailslotQuery</b>
+### -field WdfFileInformationMailslotQuery
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationMailslotSet"></a><a id="wdffileinformationmailslotset"></a><a id="WDFFILEINFORMATIONMAILSLOTSET"></a><b>WdfFileInformationMailslotSet</b>
+### -field WdfFileInformationMailslotSet
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationCompression"></a><a id="wdffileinformationcompression"></a><a id="WDFFILEINFORMATIONCOMPRESSION"></a><b>WdfFileInformationCompression</b>
+### -field WdfFileInformationCompression
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationObjectId"></a><a id="wdffileinformationobjectid"></a><a id="WDFFILEINFORMATIONOBJECTID"></a><b>WdfFileInformationObjectId</b>
+### -field WdfFileInformationObjectId
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationCompletion"></a><a id="wdffileinformationcompletion"></a><a id="WDFFILEINFORMATIONCOMPLETION"></a><b>WdfFileInformationCompletion</b>
+### -field WdfFileInformationCompletion
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationMoveCluster"></a><a id="wdffileinformationmovecluster"></a><a id="WDFFILEINFORMATIONMOVECLUSTER"></a><b>WdfFileInformationMoveCluster</b>
+### -field WdfFileInformationMoveCluster
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationQuota"></a><a id="wdffileinformationquota"></a><a id="WDFFILEINFORMATIONQUOTA"></a><b>WdfFileInformationQuota</b>
+### -field WdfFileInformationQuota
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationReparsePoint"></a><a id="wdffileinformationreparsepoint"></a><a id="WDFFILEINFORMATIONREPARSEPOINT"></a><b>WdfFileInformationReparsePoint</b>
+### -field WdfFileInformationReparsePoint
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationNetworkOpen"></a><a id="wdffileinformationnetworkopen"></a><a id="WDFFILEINFORMATIONNETWORKOPEN"></a><b>WdfFileInformationNetworkOpen</b>
+### -field WdfFileInformationNetworkOpen
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationAttributeTag"></a><a id="wdffileinformationattributetag"></a><a id="WDFFILEINFORMATIONATTRIBUTETAG"></a><b>WdfFileInformationAttributeTag</b>
+### -field WdfFileInformationAttributeTag
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationTracking"></a><a id="wdffileinformationtracking"></a><a id="WDFFILEINFORMATIONTRACKING"></a><b>WdfFileInformationTracking</b>
+### -field WdfFileInformationTracking
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationIdBothDirectory"></a><a id="wdffileinformationidbothdirectory"></a><a id="WDFFILEINFORMATIONIDBOTHDIRECTORY"></a><b>WdfFileInformationIdBothDirectory</b>
+### -field WdfFileInformationIdBothDirectory
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationIdFullDirectory"></a><a id="wdffileinformationidfulldirectory"></a><a id="WDFFILEINFORMATIONIDFULLDIRECTORY"></a><b>WdfFileInformationIdFullDirectory</b>
+### -field WdfFileInformationIdFullDirectory
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationValidDataLength"></a><a id="wdffileinformationvaliddatalength"></a><a id="WDFFILEINFORMATIONVALIDDATALENGTH"></a><b>WdfFileInformationValidDataLength</b>
+### -field WdfFileInformationValidDataLength
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationShortName"></a><a id="wdffileinformationshortname"></a><a id="WDFFILEINFORMATIONSHORTNAME"></a><b>WdfFileInformationShortName</b>
+### -field WdfFileInformationShortName
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationIoCompletionNotification"></a><a id="wdffileinformationiocompletionnotification"></a><a id="WDFFILEINFORMATIONIOCOMPLETIONNOTIFICATION"></a><b>WdfFileInformationIoCompletionNotification</b>
+### -field WdfFileInformationIoCompletionNotification
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationIoStatusBlockRange"></a><a id="wdffileinformationiostatusblockrange"></a><a id="WDFFILEINFORMATIONIOSTATUSBLOCKRANGE"></a><b>WdfFileInformationIoStatusBlockRange</b>
+### -field WdfFileInformationIoStatusBlockRange
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationIoPriorityHint"></a><a id="wdffileinformationiopriorityhint"></a><a id="WDFFILEINFORMATIONIOPRIORITYHINT"></a><b>WdfFileInformationIoPriorityHint</b>
+### -field WdfFileInformationIoPriorityHint
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationSfioReserve"></a><a id="wdffileinformationsfioreserve"></a><a id="WDFFILEINFORMATIONSFIORESERVE"></a><b>WdfFileInformationSfioReserve</b>
+### -field WdfFileInformationSfioReserve
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationSfioVolume"></a><a id="wdffileinformationsfiovolume"></a><a id="WDFFILEINFORMATIONSFIOVOLUME"></a><b>WdfFileInformationSfioVolume</b>
+### -field WdfFileInformationSfioVolume
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationHardLink"></a><a id="wdffileinformationhardlink"></a><a id="WDFFILEINFORMATIONHARDLINK"></a><b>WdfFileInformationHardLink</b>
+### -field WdfFileInformationHardLink
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationProcessIdsUsingFile"></a><a id="wdffileinformationprocessidsusingfile"></a><a id="WDFFILEINFORMATIONPROCESSIDSUSINGFILE"></a><b>WdfFileInformationProcessIdsUsingFile</b>
+### -field WdfFileInformationProcessIdsUsingFile
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationNormalizedName"></a><a id="wdffileinformationnormalizedname"></a><a id="WDFFILEINFORMATIONNORMALIZEDNAME"></a><b>WdfFileInformationNormalizedName</b>
+### -field WdfFileInformationNormalizedName
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationNetworkPhysicalName"></a><a id="wdffileinformationnetworkphysicalname"></a><a id="WDFFILEINFORMATIONNETWORKPHYSICALNAME"></a><b>WdfFileInformationNetworkPhysicalName</b>
+### -field WdfFileInformationNetworkPhysicalName
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationIdGlobalTxDirectory"></a><a id="wdffileinformationidglobaltxdirectory"></a><a id="WDFFILEINFORMATIONIDGLOBALTXDIRECTORY"></a><b>WdfFileInformationIdGlobalTxDirectory</b>
+### -field WdfFileInformationIdGlobalTxDirectory
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationIsRemoteDevice"></a><a id="wdffileinformationisremotedevice"></a><a id="WDFFILEINFORMATIONISREMOTEDEVICE"></a><b>WdfFileInformationIsRemoteDevice</b>
+### -field WdfFileInformationIsRemoteDevice
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationAttributeCache"></a><a id="wdffileinformationattributecache"></a><a id="WDFFILEINFORMATIONATTRIBUTECACHE"></a><b>WdfFileInformationAttributeCache</b>
+### -field WdfFileInformationAttributeCache
 
 <dd></dd>
 
-### -field <a id="WdfFileInformationMaximum"></a><a id="wdffileinformationmaximum"></a><a id="WDFFILEINFORMATIONMAXIMUM"></a><b>WdfFileInformationMaximum</b>
+### -field WdfFileInformationMaximum
 
 <dd></dd>
 </dl>
@@ -370,4 +370,4 @@ typedef enum _WDF_FILE_INFORMATION_CLASS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_FILE_INFORMATION_CLASS enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_FILE_INFORMATION_CLASS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

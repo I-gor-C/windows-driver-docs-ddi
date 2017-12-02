@@ -7,7 +7,7 @@ old-location: netvista\rilgbatoken.htm
 old-project: netvista
 ms.assetid: f842d945-1d1e-4f0b-9cc9-82a8401c170a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILGBATOKEN, RILGBATOKEN, *LPRILGBATOKEN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,35 +61,35 @@ typedef struct _RILGBATOKEN {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>cbBTIDSize</b>
+### -field cbBTIDSize
 
 <dd></dd>
 
-### -field <b>dwBTIDOffset</b>
+### -field dwBTIDOffset
 
 <dd></dd>
 
-### -field <b>cbNAFKeyLifetimeSize</b>
+### -field cbNAFKeyLifetimeSize
 
 <dd></dd>
 
-### -field <b>dwNAFKeyLifetimeOffset</b>
+### -field dwNAFKeyLifetimeOffset
 
 <dd></dd>
 
-### -field <b>cbNAFKeySize</b>
+### -field cbNAFKeySize
 
 <dd></dd>
 
-### -field <b>dwNAFKeyOffset</b>
+### -field dwNAFKeyOffset
 
 <dd></dd>
 
-### -field <b>bData</b>
+### -field bData
 
 <dd></dd>
 </dl>

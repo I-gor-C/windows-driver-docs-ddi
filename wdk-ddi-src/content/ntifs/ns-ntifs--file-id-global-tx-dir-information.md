@@ -7,7 +7,7 @@ old-location: ifsk\file_id_global_tx_dir_information.htm
 old-project: ifsk
 ms.assetid: 4c4a0458-8ab3-4ef0-b455-c7a70737f322
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILE_ID_GLOBAL_TX_DIR_INFORMATION, FILE_ID_GLOBAL_TX_DIR_INFORMATION, *PFILE_ID_GLOBAL_TX_DIR_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ typedef struct _FILE_ID_GLOBAL_TX_DIR_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NextEntryOffset</b>
+### -field NextEntryOffset
 
 <dd>
 <p>
@@ -75,7 +75,7 @@ The byte offset from the beginning of this entry, at which the next FILE_ID_FULL
 </p>
 </dd>
 
-### -field <b>FileIndex</b>
+### -field FileIndex
 
 <dd>
 <p>
@@ -83,14 +83,14 @@ The byte offset of the file within the parent directory. For file systems in whi
 </p>
 </dd>
 
-### -field <b>CreationTime</b>
+### -field CreationTime
 
 <dd>
 <p>The time when the file was created. 
 </p>
 </dd>
 
-### -field <b>LastAccessTime</b>
+### -field LastAccessTime
 
 <dd>
 <p>
@@ -98,7 +98,7 @@ The last time the file was accessed.
 </p>
 </dd>
 
-### -field <b>LastWriteTime</b>
+### -field LastWriteTime
 
 <dd>
 <p>
@@ -106,7 +106,7 @@ The last time information was written to the file.
 </p>
 </dd>
 
-### -field <b>ChangeTime</b>
+### -field ChangeTime
 
 <dd>
 <p>
@@ -115,7 +115,7 @@ The last time the file was changed.
 </p>
 </dd>
 
-### -field <b>EndOfFile</b>
+### -field EndOfFile
 
 <dd>
 <p>
@@ -123,7 +123,7 @@ The absolute new end-of-file position as a byte offset from the start of the fil
 </p>
 </dd>
 
-### -field <b>AllocationSize</b>
+### -field AllocationSize
 
 <dd>
 <p>
@@ -131,7 +131,7 @@ The file allocation size in bytes. The value of this field is an integer multipl
 </p>
 </dd>
 
-### -field <b>FileAttributes</b>
+### -field FileAttributes
 
 <dd>
 <p>The file attributes.</p>
@@ -175,7 +175,7 @@ The file allocation size in bytes. The value of this field is an integer multipl
 </p>
 </dd>
 
-### -field <b>FileNameLength</b>
+### -field FileNameLength
 
 <dd>
 <p> 
@@ -183,7 +183,7 @@ The length, in bytes, of the file name contained within the <b>FileName</b> memb
 </p>
 </dd>
 
-### -field <b>FileId</b>
+### -field FileId
 
 <dd>
 <p> 
@@ -191,7 +191,7 @@ A file reference number for the file. The file system generates this number and 
 </p>
 </dd>
 
-### -field <b>LockingTransactionId</b>
+### -field LockingTransactionId
 
 <dd>
 <p> 
@@ -199,7 +199,7 @@ A GUID value of the transaction that has this file locked for modification. The 
 </p>
 </dd>
 
-### -field <b>TxInfoFlags</b>
+### -field TxInfoFlags
 
 <dd>
 <p>A bitwise OR of zero or more of the following values. </p>
@@ -233,7 +233,7 @@ The transaction's ID must be contained in the <b>LockingTransactionId</b> member
 <p>If the FILE_ID_GLOBAL_TX_DIR_INFO_FLAG_WRITELOCKED flag is not set, the other flags must not be set. If flags other than FILE_ID_GLOBAL_TX_DIR_INFO_FLAG_WRITELOCKED are set, the FILE_ID_GLOBAL_TX_DIR_INFO_FLAG_WRITELOCKED flag must be set.</p>
 </dd>
 
-### -field <b>FileName</b>
+### -field FileName
 
 <dd>
 <p>

@@ -7,7 +7,7 @@ old-location: ifsk\fltremoveopenreparseentry.htm
 old-project: ifsk
 ms.assetid: FD8C3A32-E578-47E9-9B2A-E1809D62F7B8
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltRemoveOpenReparseEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,20 +60,20 @@ void FltAddOpenReparseEntry(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>The filter to dereference.</p>
 </dd>
 
-### -param <i>Data</i> [in]
+### -param Data [in]
 
 <dd>
 <p>The create operation to remove open reparse information
                        from.</p>
 </dd>
 
-### -param <i>OpenReparseEntry</i> [in]
+### -param OpenReparseEntry [in]
 
 <dd>
 <p>The open reparse information to remove, of type <a href="..\ntifs\ns-ntifs--open-reparse-list-entry.md">OPEN_REPARSE_LIST_ENTRY</a>.</p>

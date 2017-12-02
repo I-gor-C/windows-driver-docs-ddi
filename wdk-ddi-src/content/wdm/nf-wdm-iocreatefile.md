@@ -68,25 +68,25 @@ NTSTATUS IoCreateFile(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [out]
+### -param FileHandle [out]
 
 <dd>
 <p>A pointer to a variable that receives the file handle if the call is successful. The driver must close the handle with <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> once the handle is no longer in use.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the type of access that the caller requires to the file or directory. See <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> for a description of the possible values for this parameter.</p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in]
+### -param ObjectAttributes [in]
 
 <dd>
 <p>A pointer to a structure that specifies the object's attributes, which has already been initialized with <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>. If the caller is not running in the system process context, it must set the OBJ_KERNEL_HANDLE attribute for <i>ObjectAttributes</i>.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>A pointer to a variable that receives the final completion status and information about the requested operation. On return from <b>IoCreateFile</b>, the <b>Information</b> member contains one of the following values:</p>
@@ -112,19 +112,19 @@ NTSTATUS IoCreateFile(
 </ul>
 </dd>
 
-### -param <i>AllocationSize</i> [in, optional]
+### -param AllocationSize [in, optional]
 
 <dd>
 <p>Optionally specifies the initial allocation size in bytes for the file. A nonzero value has no effect unless the file is being created, overwritten, or superseded.</p>
 </dd>
 
-### -param <i>FileAttributes</i> [in]
+### -param FileAttributes [in]
 
 <dd>
 <p>Explicitly specified attributes are applied only when the file is created, superseded, or, in some cases, overwritten. By default, this value is FILE_ATTRIBUTE_NORMAL, which can be overridden by an ORed combination of one or more FILE_ATTRIBUTE_<i>XXX</i> flags, which are defined in Wdm.h. For a list of flags that can be used with <b>IoCreateFile</b>, see <a href="fs.createfile">CreateFile</a> in the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -param <i>ShareAccess</i> [in]
+### -param ShareAccess [in]
 
 <dd>
 <p>Specifies the type of share access that the caller would like to the file, as zero, or as one or a combination of the following:</p>
@@ -162,7 +162,7 @@ NTSTATUS IoCreateFile(
 <p>Device and intermediate drivers usually set <i>ShareAccess</i> to zero, which gives the caller exclusive access to the open file.</p>
 </dd>
 
-### -param <i>Disposition</i> [in]
+### -param Disposition [in]
 
 <dd>
 <p>Specifies what to do, depending on whether the file already exists, as one of the following:</p>
@@ -223,7 +223,7 @@ NTSTATUS IoCreateFile(
 <p> </p>
 </dd>
 
-### -param <i>CreateOptions</i> [in]
+### -param CreateOptions [in]
 
 <dd>
 <p>Specifies the options to be applied when creating or opening the file, as a compatible combination of the following flags:</p>
@@ -374,31 +374,31 @@ NTSTATUS IoCreateFile(
 <p> </p>
 </dd>
 
-### -param <i>EaBuffer</i> [in, optional]
+### -param EaBuffer [in, optional]
 
 <dd>
 <p>For device and intermediate drivers, this parameter must be a <b>NULL</b> pointer.</p>
 </dd>
 
-### -param <i>EaLength</i> [in]
+### -param EaLength [in]
 
 <dd>
 <p>For device and intermediate drivers, this parameter must be zero.</p>
 </dd>
 
-### -param <i>CreateFileType</i> [in]
+### -param CreateFileType [in]
 
 <dd>
 <p>Drivers must set this parameter to <b>CreateFileTypeNone</b>.</p>
 </dd>
 
-### -param <i>InternalParameters</i> [in, optional]
+### -param InternalParameters [in, optional]
 
 <dd>
 <p>Drivers must set this parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Options</i> [in]
+### -param Options [in]
 
 <dd>
 <p>Specifies options to be used during the creation of the create request. These options can be from the following list:</p>

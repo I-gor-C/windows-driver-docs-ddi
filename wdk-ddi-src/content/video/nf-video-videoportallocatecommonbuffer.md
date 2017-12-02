@@ -60,37 +60,37 @@ PVOID VideoPortAllocateCommonBuffer(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>VpDmaAdapter</i> [in]
+### -param VpDmaAdapter [in]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure was returned by a previous call to <a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>.</p>
 </dd>
 
-### -param <i>DesiredLength</i> [in]
+### -param DesiredLength [in]
 
 <dd>
 <p>Specifies the requested number of bytes of memory.</p>
 </dd>
 
-### -param <i>LogicalAddress</i> [out]
+### -param LogicalAddress [out]
 
 <dd>
 <p>Pointer to a memory location that receives the logical address to be used by the adapter to access the allocated buffer.</p>
 </dd>
 
-### -param <i>CacheEnabled</i> [in]
+### -param CacheEnabled [in]
 
 <dd>
 <p>Specifies whether the allocated memory can be cached.  For more information, see the description of the <i>CacheEnabled</i> parameter for <a href="kernel.allocatecommonbuffer">AllocateCommonBuffer</a>.</p>
 </dd>
 
-### -param <i>Reserved</i> [out]
+### -param Reserved [out]
 
 <dd>
 <p>Is currently ignored by the video port driver; should be set to <b>NULL</b>.</p>

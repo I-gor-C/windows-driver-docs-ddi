@@ -93,25 +93,25 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>[in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-synchronizationobject-type.md">D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</a> that indicates the type of synchronization object.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-synchronizationobject-flags.md">D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS</a> structure that specifies, in bit-field flags, attributes of the synchronization object. </p>
 </dd>
 
-### -field <b>SynchronizationMutex</b>
+### -field SynchronizationMutex
 
 <dd>
 <p>A structure that contains information about a synchronization mutex. If the <b>Type</b> member is equal to <b>D3DDDI_SYNCHRONIZATION_MUTEX</b>, the union in <b>D3DDDI_SYNCHRONIZATIONOBJECTINFO2</b> holds a <b>SynchronizationMutex</b> structure, which contains the following member:</p>
 <dl>
 
-### -field <b>InitialState</b>
+### -field InitialState
 
 <dd>
 <p>A Boolean value that indicates whether the synchronization mutex is initially owned by an object. A value of <b>TRUE</b> indicates that the mutex is owned; <b>FALSE</b> indicates that the mutex is not owned. </p>
@@ -119,19 +119,19 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO2 {
 </dl>
 </dd>
 
-### -field <b>Semaphore</b>
+### -field Semaphore
 
 <dd>
 <p>A structure that contains information about a semaphore. If the <b>Type</b> member is equal to <b>D3DDDI_SEMAPHORE</b>, the union in <b>D3DDDI_SYNCHRONIZATIONOBJECTINFO2</b> holds a <b>Semaphore</b> structure, which contains the following members:</p>
 <dl>
 
-### -field <b>MaxCount</b>
+### -field MaxCount
 
 <dd>
 <p>The maximum number of events that an object can be waiting for. </p>
 </dd>
 
-### -field <b>InitialCount</b>
+### -field InitialCount
 
 <dd>
 <p>The initial number of events that an object is waiting for. </p>
@@ -139,13 +139,13 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO2 {
 </dl>
 </dd>
 
-### -field <b>Fence</b>
+### -field Fence
 
 <dd>
 <p>A structure that contains information about a fence. If the <b>Type</b> member is equal to <b>D3DDDI_FENCE</b>, the union in <b>D3DDDI_SYNCHRONIZATIONOBJECTINFO2</b> holds a <b>Fence</b> structure, which contains the following member:</p>
 <dl>
 
-### -field <b>FenceValue</b>
+### -field FenceValue
 
 <dd>
 <p>A 64-bit value that specifies the initial fence value. </p>
@@ -153,13 +153,13 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO2 {
 </dl>
 </dd>
 
-### -field <b>CPUNotification</b>
+### -field CPUNotification
 
 <dd>
 <p>A structure that contains information about a CPU notification. If the <b>Type</b> member is equal to <b>D3DDDI_CPU_NOTIFICATION</b>, the union in <b>D3DDDI_SYNCHRONIZATIONOBJECTINFO2</b> holds a <b>CPUNotification</b> structure, which contains the following member:</p>
 <dl>
 
-### -field <b>Event</b>
+### -field Event
 
 <dd>
 <p>The handle to the CPU notification event. </p>
@@ -167,35 +167,35 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO2 {
 </dl>
 </dd>
 
-### -field <b>MonitoredFence</b>
+### -field MonitoredFence
 
 <dd>
 <p>A structure that contains information about a monitored fence. If the <b>Type</b> member is equal to <b>D3DDDI_MONITORED_FENCE</b>, the union in <b>D3DDDI_SYNCHRONIZATIONOBJECTINFO2</b> holds a <b>MonitoredFence</b> structure.</p>
 <p>Supported starting with Windows 10.</p>
 <dl>
 
-### -field <b>InitialFenceValue</b>
+### -field InitialFenceValue
 
 <dd>
 <p>[in] A 64-bit value that specifies the initial fence value. </p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>FenceValueCPUVirtualAddress</b>
+### -field FenceValueCPUVirtualAddress
 
 <dd>
 <p>[out] A read-only mapping of the fence value for the CPU. This is a user mode address readable from the process that created the monitored fence object. For 32 bit platforms that support 64 bit atomic reads via methods such as <code>InterlockedCompareExchange64(pointer,0,0)</code>, the mapping will be made read-write instead of read-only to avoid an access violation during the interlocked operation. Depending on the value of <b>No64BitAtomics</b> cap, this address points to either a 32 bit or a 64 bit underlying value.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>FenceValueGPUVirtualAddress</b>
+### -field FenceValueGPUVirtualAddress
 
 <dd>
 <p>[out] A read-write mapping of the fence value for the GPU. A driver can signal a new fence value by inserting a GPU write command for this address into a command buffer, and the DirectX graphics kernel will unblock waiters for this fence object value. Depending on the value of <b>No64BitAtomics</b> cap, this address points to either a 32 bit or a 64 bit underlying value.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>EngineAffinity</b>
+### -field EngineAffinity
 
 <dd>
 <p>[in] A bit field, where each bit position (starting from zero) defines a physical adapter index in an link display adapter (LDA) link where the GPU virtual address will be committed. Zero means that the GPU virtual address will be committed to all physical adapters.</p>
@@ -204,44 +204,44 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO2 {
 </dl>
 </dd>
 
-### -field <b>PeriodicMonitoredFence</b>
+### -field PeriodicMonitoredFence
 
 <dd>
 <p>A structure that contains information about a periodic monitored fence. If the <b>Type</b> member is equal to <b>D3DDDI_PERIODIC_MONITORED_FENCE</b>, the union in <b>D3DDDI_SYNCHRONIZATIONOBJECTINFO2</b> holds a <b>MonitoredFence</b> structure.</p>
 <p>Supported starting with Windows 10.</p>
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[in] A handle to the adapter associated with VidPnSourceID</p>
 </dd>
 
-### -field <b>	VidPnTargetID</b>
+### -field 	VidPnTargetID
 
 <dd>
 <p>[out] The output ID that the compositor wishes to receive notifications for.</p>
 </dd>
 
-### -field <b>Time</b>
+### -field Time
 
 <dd>
 <p>[out] Represents an offset before the VSync (time of VSync – Time parameter). The Time value may not be longer than a VSync interval (1 / DisplayModeRefresh). Time is specified in units of 100ns.</p>
 </dd>
 
-### -field <b>FenceValueCPUVirtualAddress</b>
+### -field FenceValueCPUVirtualAddress
 
 <dd>
 <p>[in] Read-only mapping of the fence value for the CPU</p>
 </dd>
 
-### -field <b>FenceValueGPUVirtualAddress</b>
+### -field FenceValueGPUVirtualAddress
 
 <dd>
 <p>[in] Read-only mapping of the fence value for the GPU</p>
 </dd>
 
-### -field <b>EngineAffinity</b>
+### -field EngineAffinity
 
 <dd>
 <p>[in] Defines physical adapters where the GPU VA will be mapped</p>
@@ -249,13 +249,13 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO2 {
 </dl>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>A structure that is reserved for future use. This structure contains the following member:</p>
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>An array of 64-bit values that are reserved for future use.</p>
@@ -263,7 +263,7 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO2 {
 </dl>
 </dd>
 
-### -field <b>SharedHandle</b>
+### -field SharedHandle
 
 <dd>
 <p>[out] A handle to the shared synchronization object if a shared handle currently exists. The shared handle is returned from the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatesynchronizationobject2.md">D3DKMTCreateSynchronizationObject2</a> function. </p>

@@ -57,19 +57,19 @@ typedef struct _USB_ID_STRING {
 ## -struct-fields
 <dl>
 
-### -field <b>LanguageId</b>
+### -field LanguageId
 
 <dd>
 <p>Indicates that language ID of the string.</p>
 </dd>
 
-### -field <b>LengthInBytes</b>
+### -field LengthInBytes
 
 <dd>
 <p>Indicates the length (in bytes) of the string pointed to by <b>Buffer</b>, including the terminating <b>NULL</b>. </p>
 </dd>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>Pointer to a string or multi-string.</p>

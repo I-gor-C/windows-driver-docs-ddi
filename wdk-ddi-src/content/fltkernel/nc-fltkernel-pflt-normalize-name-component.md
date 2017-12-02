@@ -7,7 +7,7 @@ old-location: ifsk\pflt_normalize_name_component.htm
 old-project: ifsk
 ms.assetid: 7050e872-3976-4842-9d16-50caf415acbc
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: IXpsPartIterator, Reset, IXpsPartIterator::Reset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,49 +64,49 @@ NTSTATUS NormalizeNameComponentCallback(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>Opaque instance pointer for the minifilter driver instance that this callback routine is registered for. </p>
 </dd>
 
-### -param <i>ParentDirectory</i> [in]
+### -param ParentDirectory [in]
 
 <dd>
 <p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the name of the parent directory for this name component. </p>
 </dd>
 
-### -param <i>VolumeNameLength</i> [in]
+### -param VolumeNameLength [in]
 
 <dd>
 <p>Length, in bytes, of the parent directory name stored in the structure that the <i>ParentDirectory</i> parameter points to. </p>
 </dd>
 
-### -param <i>Component</i> [in]
+### -param Component [in]
 
 <dd>
 <p>Pointer to a UNICODE_STRING structure that contains the name component to be expanded. </p>
 </dd>
 
-### -param <i>ExpandComponentName</i> [out]
+### -param ExpandComponentName [out]
 
 <dd>
 <p>Pointer to a <a href="..\ntifs\ns-ntifs--file-names-information.md">FILE_NAMES_INFORMATION</a> structure that receives the expanded (normalized) file name information for the name component. </p>
 </dd>
 
-### -param <i>ExpandComponentNameLength</i> [in]
+### -param ExpandComponentNameLength [in]
 
 <dd>
 <p>Length, in bytes, of the buffer that the <i>ExpandComponentName</i> parameter points to. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Name normalization flags.  FLTFL_NORMALIZE_NAME_CASE_SENSITIVE specifies that the name to be normalized is case-sensitive.  FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME specifies that the callback routine has been called to service a <a href="..\fltkernel\nf-fltkernel-fltgetdestinationfilenameinformation.md">FltGetDestinationFileNameInformation</a> routine call.</p>
 </dd>
 
-### -param <i>NormalizationContext</i> [in, out]
+### -param NormalizationContext [in, out]
 
 <dd>
 <p>Pointer to minifilter driver-provided context information to be passed in any subsequent calls to this callback routine that are made to normalize the remaining components in the same file name path. </p>
@@ -183,4 +183,4 @@ NTSTATUS NormalizeNameComponentCallback(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_NORMALIZE_NAME_COMPONENT routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_NORMALIZE_NAME_COMPONENT routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

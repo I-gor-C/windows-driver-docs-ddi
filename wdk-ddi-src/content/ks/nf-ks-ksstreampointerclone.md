@@ -57,25 +57,25 @@ NTSTATUS KsStreamPointerClone(
 ## -parameters
 <dl>
 
-### -param <i>StreamPointer</i> [in]
+### -param StreamPointer [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure representing the stream pointer that is to be cloned.</p>
 </dd>
 
-### -param <i>CancelCallback</i> [in, optional]
+### -param CancelCallback [in, optional]
 
 <dd>
 <p>Optional. A pointer to a minidriver-supplied <a href="stream.avstrminicancelcallback">AVStrMiniCancelCallback</a> routine. AVStream calls this routine if the IRP associated with <i>CloneStreamPointer</i> is canceled.</p>
 </dd>
 
-### -param <i>ContextSize</i> [in]
+### -param ContextSize [in]
 
 <dd>
 <p>This parameter indicates how many bytes of minidriver context information the resulting clone stream pointer should have. If nonzero, the requested number of bytes are allocated immediately after the returned stream pointer, and the <i>Context</i> field of <i>CloneStreamPointer</i> points to the allocated memory.</p>
 </dd>
 
-### -param <i>CloneStreamPointer</i> [out]
+### -param CloneStreamPointer [out]
 
 <dd>
 <p>A pointer to a pointer to a <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure. Upon successful completion of the cloning operation, <i>CloneStreamPointer</i> contains a pointer to the address of the cloned stream pointer.</p>
@@ -90,7 +90,7 @@ NTSTATUS KsStreamPointerClone(
 
 <p>You can use the <i>ContextSize</i> parameter of this call to minimize allocation calls.</p>
 
-<p>Also see <a href="NULL">Stream Pointers</a>.</p>
+<p>Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736f">Stream Pointers</a>.</p>
 
 ## -requirements
 <table>

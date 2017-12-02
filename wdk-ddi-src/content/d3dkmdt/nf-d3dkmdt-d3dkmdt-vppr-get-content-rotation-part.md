@@ -56,7 +56,7 @@ D3DKMDT_VIDPN_PRESENT_PATH_ROTATION
 ## -parameters
 <dl>
 
-### -param <i>Rotation</i> 
+### -param Rotation 
 
 <dd>
 <p>On input, a value from  the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-present-path-rotation.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> enumeration.</p>

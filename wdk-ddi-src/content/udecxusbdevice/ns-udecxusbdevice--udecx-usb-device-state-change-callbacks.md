@@ -60,40 +60,40 @@ typedef struct _UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceLinkPowerEntry</b>
+### -field EvtUsbDeviceLinkPowerEntry
 
 <dd>
-<p>A pointer to an <a href="buses.evt_udecx_usb_device_d0_entry">EVT_UDECX_USB_DEVICE_D0_ENTRY</a> callback function implemented by a UDE client driver.</p>
+<p>A pointer to an <a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-d0-entry.md">EVT_UDECX_USB_DEVICE_D0_ENTRY</a> callback function implemented by a UDE client driver.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceLinkPowerExit</b>
+### -field EvtUsbDeviceLinkPowerExit
 
 <dd>
-<p>A pointer to an <a href="buses.evt_udecx_usb_device_d0_exit">EVT_UDECX_USB_DEVICE_D0_EXIT</a> callback function implemented by a UDE client driver.</p>
+<p>A pointer to an <a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-d0-exit.md">EVT_UDECX_USB_DEVICE_D0_EXIT</a> callback function implemented by a UDE client driver.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceDefaultEndpointAdd</b>
+### -field EvtUsbDeviceDefaultEndpointAdd
 
 <dd>
-<p>A pointer to an <a href="buses.evt_udecx_usb_device_default_endpoint_add">EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD</a> callback function implemented by a UDE client driver.</p>
+<p>A pointer to an <a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-default-endpoint-add.md">EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD</a> callback function implemented by a UDE client driver.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceEndpointAdd</b>
+### -field EvtUsbDeviceEndpointAdd
 
 <dd>
-<p>A pointer to an E<a href="buses.evt_udecx_usb_device_endpoint_add">VT_UDECX_USB_DEVICE_ENDPOINT_ADD</a> callback function implemented by a UDE client driver.</p>
+<p>A pointer to an E<a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-endpoint-add.md">VT_UDECX_USB_DEVICE_ENDPOINT_ADD</a> callback function implemented by a UDE client driver.</p>
 </dd>
 
-### -field <b>EvtUsbDeviceEndpointsConfigure</b>
+### -field EvtUsbDeviceEndpointsConfigure
 
 <dd>
-<p>A pointer to an <a href="buses.evt_udecx_usb_device_endpoints_configure">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a> callback function implemented by a UDE client driver.</p>
+<p>A pointer to an <a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-endpoints-configure.md">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a> callback function implemented by a UDE client driver.</p>
 </dd>
 </dl>
 
@@ -117,7 +117,7 @@ typedef struct _UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbdeviceinitsetstatechangecallbacks">UdecxUsbDeviceInitSetStateChangeCallbacks</a>
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitsetstatechangecallbacks.md">UdecxUsbDeviceInitSetStateChangeCallbacks</a>
 </dt>
 </dl>
 <p> </p>

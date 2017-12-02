@@ -7,7 +7,7 @@ old-location: netvista\wwan_pin_type.htm
 old-project: netvista
 ms.assetid: f6b8146e-dbe2-4c73-beb2-02868db9fb27
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,116 +74,116 @@ typedef enum _WWAN_PIN_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanPinTypeNone"></a><a id="wwanpintypenone"></a><a id="WWANPINTYPENONE"></a><b>WwanPinTypeNone</b>
+### -field WwanPinTypeNone
 
 <dd>
 <p>No PIN is pending to be entered.</p>
 </dd>
 
-### -field <a id="WwanPinTypeCustom"></a><a id="wwanpintypecustom"></a><a id="WWANPINTYPECUSTOM"></a><b>WwanPinTypeCustom</b>
+### -field WwanPinTypeCustom
 
 <dd>
 <p>The PIN type is a custom type and is none of the other PIN types listed in this
      enumeration.</p>
 </dd>
 
-### -field <a id="WwanPinTypePin1"></a><a id="wwanpintypepin1"></a><a id="WWANPINTYPEPIN1"></a><b>WwanPinTypePin1</b>
+### -field WwanPinTypePin1
 
 <dd>
 <p>The PIN1 key.</p>
 </dd>
 
-### -field <a id="WwanPinTypePin2"></a><a id="wwanpintypepin2"></a><a id="WWANPINTYPEPIN2"></a><b>WwanPinTypePin2</b>
+### -field WwanPinTypePin2
 
 <dd>
 <p>The PIN2 key.</p>
 </dd>
 
-### -field <a id="WwanPinTypeDeviceSimPin"></a><a id="wwanpintypedevicesimpin"></a><a id="WWANPINTYPEDEVICESIMPIN"></a><b>WwanPinTypeDeviceSimPin</b>
+### -field WwanPinTypeDeviceSimPin
 
 <dd>
 <p>The device to SIM key.</p>
 </dd>
 
-### -field <a id="WwanPinTypeDeviceFirstSimPin"></a><a id="wwanpintypedevicefirstsimpin"></a><a id="WWANPINTYPEDEVICEFIRSTSIMPIN"></a><b>WwanPinTypeDeviceFirstSimPin</b>
+### -field WwanPinTypeDeviceFirstSimPin
 
 <dd>
 <p>The device to very first SIM key.</p>
 </dd>
 
-### -field <a id="WwanPinTypeNetworkPin"></a><a id="wwanpintypenetworkpin"></a><a id="WWANPINTYPENETWORKPIN"></a><b>WwanPinTypeNetworkPin</b>
+### -field WwanPinTypeNetworkPin
 
 <dd>
 <p>The network personalization key.</p>
 </dd>
 
-### -field <a id="WwanPinTypeNetworkSubsetPin"></a><a id="wwanpintypenetworksubsetpin"></a><a id="WWANPINTYPENETWORKSUBSETPIN"></a><b>WwanPinTypeNetworkSubsetPin</b>
+### -field WwanPinTypeNetworkSubsetPin
 
 <dd>
 <p>The network subset personalization key.</p>
 </dd>
 
-### -field <a id="WwanPinTypeSvcProviderPin"></a><a id="wwanpintypesvcproviderpin"></a><a id="WWANPINTYPESVCPROVIDERPIN"></a><b>WwanPinTypeSvcProviderPin</b>
+### -field WwanPinTypeSvcProviderPin
 
 <dd>
 <p>The service provider (SP) personalization key.</p>
 </dd>
 
-### -field <a id="WwanPinTypeCorporatePin"></a><a id="wwanpintypecorporatepin"></a><a id="WWANPINTYPECORPORATEPIN"></a><b>WwanPinTypeCorporatePin</b>
+### -field WwanPinTypeCorporatePin
 
 <dd>
 <p>The corporate personalization key.</p>
 </dd>
 
-### -field <a id="WwanPinTypeSubsidyLock"></a><a id="wwanpintypesubsidylock"></a><a id="WWANPINTYPESUBSIDYLOCK"></a><b>WwanPinTypeSubsidyLock</b>
+### -field WwanPinTypeSubsidyLock
 
 <dd>
 <p>The subsidy unlock key.</p>
 </dd>
 
-### -field <a id="WwanPinTypePuk1"></a><a id="wwanpintypepuk1"></a><a id="WWANPINTYPEPUK1"></a><b>WwanPinTypePuk1</b>
+### -field WwanPinTypePuk1
 
 <dd>
 <p>The Personal Identification Number1 Unlock Key (PUK1).</p>
 </dd>
 
-### -field <a id="WwanPinTypePuk2"></a><a id="wwanpintypepuk2"></a><a id="WWANPINTYPEPUK2"></a><b>WwanPinTypePuk2</b>
+### -field WwanPinTypePuk2
 
 <dd>
 <p>The Personal Identification Number2 Unlock Key (PUK2).</p>
 </dd>
 
-### -field <a id="WwanPinTypeDeviceFirstSimPuk"></a><a id="wwanpintypedevicefirstsimpuk"></a><a id="WWANPINTYPEDEVICEFIRSTSIMPUK"></a><b>WwanPinTypeDeviceFirstSimPuk</b>
+### -field WwanPinTypeDeviceFirstSimPuk
 
 <dd>
 <p>The device to very first SIM PIN unlock key.</p>
 </dd>
 
-### -field <a id="WwanPinTypeNetworkPuk"></a><a id="wwanpintypenetworkpuk"></a><a id="WWANPINTYPENETWORKPUK"></a><b>WwanPinTypeNetworkPuk</b>
+### -field WwanPinTypeNetworkPuk
 
 <dd>
 <p>The network personalization unlock key.</p>
 </dd>
 
-### -field <a id="WwanPinTypeNetworkSubsetPuk"></a><a id="wwanpintypenetworksubsetpuk"></a><a id="WWANPINTYPENETWORKSUBSETPUK"></a><b>WwanPinTypeNetworkSubsetPuk</b>
+### -field WwanPinTypeNetworkSubsetPuk
 
 <dd>
 <p>The network subset personalization unlock key.</p>
 </dd>
 
-### -field <a id="WwanPinTypeSvcProviderPuk"></a><a id="wwanpintypesvcproviderpuk"></a><a id="WWANPINTYPESVCPROVIDERPUK"></a><b>WwanPinTypeSvcProviderPuk</b>
+### -field WwanPinTypeSvcProviderPuk
 
 <dd>
 <p>The service provider (SP) personalization unlock key.</p>
 </dd>
 
-### -field <a id="WwanPinTypeCorporatePuk"></a><a id="wwanpintypecorporatepuk"></a><a id="WWANPINTYPECORPORATEPUK"></a><b>WwanPinTypeCorporatePuk</b>
+### -field WwanPinTypeCorporatePuk
 
 <dd>
 <p>The corporate personalization unlock key.</p>
 </dd>
 
-### -field <a id="WwanPinTypeMax"></a><a id="wwanpintypemax"></a><a id="WWANPINTYPEMAX"></a><b>WwanPinTypeMax</b>
+### -field WwanPinTypeMax
 
 <dd>
 <p>The total number of supported PIN types.</p>
@@ -226,4 +226,4 @@ typedef enum _WWAN_PIN_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

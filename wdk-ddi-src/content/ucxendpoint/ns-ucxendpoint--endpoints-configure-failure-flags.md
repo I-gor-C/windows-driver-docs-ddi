@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>This structure provides failure flags to indicate errors, if any, that might have occurred during a request to an <a href="buses.evt_ucx_usbdevice_endpoints_configure">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a> callback function.</p>
+<p>This structure provides failure flags to indicate errors, if any, that might have occurred during a request to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-endpoints-configure.md">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a> callback function.</p>
 
 
 ## -syntax
@@ -58,25 +58,25 @@ typedef struct _ENDPOINTS_CONFIGURE_FAILURE_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>InsufficientBandwidth</b>
+### -field InsufficientBandwidth
 
 <dd>
 <p>Insufficient bandwidth to configure the specified endpoints.</p>
 </dd>
 
-### -field <b>InsufficientHardwareResourcesForEndpoints</b>
+### -field InsufficientHardwareResourcesForEndpoints
 
 <dd>
 <p>Insufficient hardware resources to configure the specified endpoints.</p>
 </dd>
 
-### -field <b>MaxExitLatencyTooLarge</b>
+### -field MaxExitLatencyTooLarge
 
 <dd>
 <p>The maximum exit latency is too large to configure the specified endpoints.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Do not use.</p>
@@ -103,7 +103,7 @@ typedef struct _ENDPOINTS_CONFIGURE_FAILURE_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._endpoints_configure">ENDPOINTS_CONFIGURE</a>
+<a href="..\ucxendpoint\ns-ucxendpoint--endpoints-configure.md">ENDPOINTS_CONFIGURE</a>
 </dt>
 </dl>
 <p> </p>

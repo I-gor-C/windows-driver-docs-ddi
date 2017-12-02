@@ -55,13 +55,13 @@ ULONG KsDiscard(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>The item pointed to by <i>Pointer</i> is removed from the object bag associated with this object. Can be of type <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a>, <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a>, <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a>, or <a href="..\ks\ns-ks--kspin.md">KSPIN</a>.</p>
 </dd>
 
-### -param <i>Pointer</i> [in]
+### -param Pointer [in]
 
 <dd>
 <p>A pointer to the item to be removed from the requested object's bag.</p>
@@ -71,7 +71,7 @@ ULONG KsDiscard(
 ## -returns
 <p>Returns the number of references on <i>Item</i>. A return value of zero indicates that the item pointed to by <i>Pointer</i> was not in the object bag of <i>Object</i> at call-time.</p>
 
-<p>A return value of one indicates that the item was successfully removed from the object bag and that it was not in any other object bag. AVStream frees the item using either <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> or the <i>Free</i> method specified at <a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a> call-time.</p>
+<p>A return value of one indicates that the item was successfully removed from the object bag and that it was not in any other object bag. AVStream frees the item using either <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> or the <i>Free</i> method specified at <a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a> call-time.</p>
 
 <p>A return value greater than one indicates that the item is present in another object bag and that there are still references on it. In this case, AVStream removed the item from the object bag but did not free it.</p>
 

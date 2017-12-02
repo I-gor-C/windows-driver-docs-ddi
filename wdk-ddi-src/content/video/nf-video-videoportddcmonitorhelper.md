@@ -58,25 +58,25 @@ BOOLEAN VideoPortDDCMonitorHelper(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>DDCControl</i> [in]
+### -param DDCControl [in]
 
 <dd>
 <p>A pointer to a <a href="..\video\ns-video--ddc-control.md">DDC_CONTROL</a> structure.</p>
 </dd>
 
-### -param <i>EdidBuffer</i> [in, out]
+### -param EdidBuffer [in, out]
 
 <dd>
 <p>A pointer to a buffer in which the video port driver returns the <a href="wdkgloss.e#wdkgloss.edid#wdkgloss.edid"><i>EDID</i></a> structure. For ACPI devices, the first four bytes are preset by the video port driver to indicate an attempt to read the <i>EDID</i>. </p>
 </dd>
 
-### -param <i>EdidBufferSize</i> [in]
+### -param EdidBufferSize [in]
 
 <dd>
 <p>The size in bytes of the buffer to which <i>EdidBuffer</i> points.</p>

@@ -62,55 +62,55 @@ typedef enum _NFC_CX_DRIVER_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="NFC_CX_DRIVER_DISABLE_WTD_TIMER"></a><a id="nfc_cx_driver_disable_wtd_timer"></a><b>NFC_CX_DRIVER_DISABLE_WTD_TIMER</b>
+### -field NFC_CX_DRIVER_DISABLE_WTD_TIMER
 
 <dd>
 <p>Disable watchdog timer in CX.</p>
 </dd>
 
-### -field <a id="NFC_CX_DRIVER_DISABLE_NFCEE_DISCOVERY"></a><a id="nfc_cx_driver_disable_nfcee_discovery"></a><b>NFC_CX_DRIVER_DISABLE_NFCEE_DISCOVERY</b>
+### -field NFC_CX_DRIVER_DISABLE_NFCEE_DISCOVERY
 
 <dd>
 <p>Disable NFCEE discovery.</p>
 </dd>
 
-### -field <a id="NFC_CX_DRIVER_DISABLE_RECOVERY_MODE"></a><a id="nfc_cx_driver_disable_recovery_mode"></a><b>NFC_CX_DRIVER_DISABLE_RECOVERY_MODE</b>
+### -field NFC_CX_DRIVER_DISABLE_RECOVERY_MODE
 
 <dd>
 <p>Disable NCI recovery mechanism in CX.</p>
 </dd>
 
-### -field <a id="NFC_CX_DRIVER_DISABLE_HOST_CARD_EMULATION"></a><a id="nfc_cx_driver_disable_host_card_emulation"></a><b>NFC_CX_DRIVER_DISABLE_HOST_CARD_EMULATION</b>
+### -field NFC_CX_DRIVER_DISABLE_HOST_CARD_EMULATION
 
 <dd>
 <p>Disable host card emulation feature.</p>
 </dd>
 
-### -field <a id="NFC_CX_DRIVER_HCI_NETWORK_PER_NFCEE"></a><a id="nfc_cx_driver_hci_network_per_nfcee"></a><b>NFC_CX_DRIVER_HCI_NETWORK_PER_NFCEE</b>
+### -field NFC_CX_DRIVER_HCI_NETWORK_PER_NFCEE
 
 <dd>
 <p>NFCC implements a separate HCI network per NFCEE.</p>
 </dd>
 
-### -field <a id="NFC_CX_DRIVER_DISABLE_NFCEE_ACTION_NTF"></a><a id="nfc_cx_driver_disable_nfcee_action_ntf"></a><b>NFC_CX_DRIVER_DISABLE_NFCEE_ACTION_NTF</b>
+### -field NFC_CX_DRIVER_DISABLE_NFCEE_ACTION_NTF
 
 <dd>
 <p>Disable NFCEE action notification.</p>
 </dd>
 
-### -field <a id="NFC_CX_DRIVER_ENABLE_EEPROM_WRITE_PROTECTION"></a><a id="nfc_cx_driver_enable_eeprom_write_protection"></a><b>NFC_CX_DRIVER_ENABLE_EEPROM_WRITE_PROTECTION</b>
+### -field NFC_CX_DRIVER_ENABLE_EEPROM_WRITE_PROTECTION
 
 <dd>
 <p>Enable opt to over-write only when configs change.</p>
 </dd>
 
-### -field <a id="NFC_CX_DRIVER_ISODEP_RNAK_PRESENCE_CHK_SUPPORTED"></a><a id="nfc_cx_driver_isodep_rnak_presence_chk_supported"></a><b>NFC_CX_DRIVER_ISODEP_RNAK_PRESENCE_CHK_SUPPORTED</b>
+### -field NFC_CX_DRIVER_ISODEP_RNAK_PRESENCE_CHK_SUPPORTED
 
 <dd>
 <p>The R-NAK command for ISO-DEP will be used for presence check.</p>
 </dd>
 
-### -field <a id="NFC_CX_DRIVER_RF_ROUTING_POWER_SUB_STATES_SUPPORTED"></a><a id="nfc_cx_driver_rf_routing_power_sub_states_supported"></a><b>NFC_CX_DRIVER_RF_ROUTING_POWER_SUB_STATES_SUPPORTED</b>
+### -field NFC_CX_DRIVER_RF_ROUTING_POWER_SUB_STATES_SUPPORTED
 
 <dd>
 <p>Indicates support for RF routing switched ON power sub-states.</p>

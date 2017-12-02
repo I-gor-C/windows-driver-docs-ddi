@@ -57,25 +57,25 @@ typedef struct _DXVADDI_QUERYPROCAMPINPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>pVideoProcGuid</b>
+### -field pVideoProcGuid
 
 <dd>
 <p>[in] A pointer to a GUID that represents the video processing device type. </p>
 </dd>
 
-### -field <b>VideoDesc</b>
+### -field VideoDesc
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videodesc.md">DXVADDI_VIDEODESC</a> structure that describes the video stream. </p>
 </dd>
 
-### -field <b>RenderTargetFormat</b>
+### -field RenderTargetFormat
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the render target for the video processing device.</p>
 </dd>
 
-### -field <b>ProcAmpCap</b>
+### -field ProcAmpCap
 
 <dd>
 <p>[in] A ProcAmp control property that range information is requested for. The ProcAmp control property can be one of the members of the <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-procampvalues.md">DXVADDI_PROCAMPVALUES</a> structure. </p>

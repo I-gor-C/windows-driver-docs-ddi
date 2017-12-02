@@ -55,13 +55,13 @@ typedef struct _DXGKARG_SETVIDPNSOURCEVISIBILITY {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>An integer that identifies a video present source on the display adapter.</p>
 </dd>
 
-### -field <b>Visible</b>
+### -field Visible
 
 <dd>
 <p>A Boolean value that specifies whether the video output codec associated with the source must start scanning or stop scanning the source's primary surface. If <b>Visible</b> is <b>TRUE</b>, the codec must start scanning. </p>

@@ -58,13 +58,13 @@ ATA_CHANNEL_STATE AtaControllerChannelEnabled(
 ## -parameters
 <dl>
 
-### -param <i>ControllerExtension</i> [in]
+### -param ControllerExtension [in]
 
 <dd>
 <p>A pointer to the controller extension.</p>
 </dd>
 
-### -param <i>ChannelNumber</i> [in]
+### -param ChannelNumber [in]
 
 <dd>
 <p>Specifies the channel number whose state will be determined. </p>

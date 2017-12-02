@@ -61,49 +61,49 @@ HBA_STATUS HBA_API HBA_ScsiReportLUNsV2(
 ## -parameters
 <dl>
 
-### -param <i>HbaHandle</i> [in]
+### -param HbaHandle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA through which the SCSI report LUNs command is sent.</p>
 </dd>
 
-### -param <i>HbaPortWWN</i> [in]
+### -param HbaPortWWN [in]
 
 <dd>
 <p>Contains a 64-bit worldwide name (WWN) that uniquely identifies the local HBA port from which the SCSI report LUNs command is sent. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
-### -param <i>discoveredPortWWN</i> [in]
+### -param discoveredPortWWN [in]
 
 <dd>
 <p>Contains a 64-bit WWN that uniquely identifies the remote HBA port to which the SCSI report LUNs command is sent. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
-### -param <i>pRespBuffer</i> [out]
+### -param pRespBuffer [out]
 
 <dd>
 <p>Pointer to a buffer that receives the output data of the SCSI report LUNs command.</p>
 </dd>
 
-### -param <i>pRespBufferSize</i> [in, out]
+### -param pRespBufferSize [in, out]
 
 <dd>
 <p>Indicates the size, in bytes, of the buffer at <i>pRespBuffer</i>.</p>
 </dd>
 
-### -param <i>pScsiStatus</i> [out]
+### -param pScsiStatus [out]
 
 <dd>
 <p>Pointer to a buffer that receives the SCSI status data. </p>
 </dd>
 
-### -param <i>pSenseBuffer</i> [out]
+### -param pSenseBuffer [out]
 
 <dd>
 <p>Pointer to a buffer that receives the SCSI sense data.</p>
 </dd>
 
-### -param <i>pSenseBufferSize</i> [in, out]
+### -param pSenseBufferSize [in, out]
 
 <dd>
 <p>On input, indicates the size, in bytes, of the buffer at <i>pSenseBuffer</i>. On output, this member indicates the number of bytes of sense data returned.</p>

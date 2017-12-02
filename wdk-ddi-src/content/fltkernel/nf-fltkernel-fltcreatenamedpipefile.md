@@ -7,7 +7,7 @@ old-location: ifsk\fltcreatenamedpipefile.htm
 old-project: ifsk
 ms.assetid: F4F3A591-B4BE-4367-A76A-820552F9B3B5
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltCreateNamedPipeFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,31 +71,31 @@ NTSTATUS FltCreateNamedPipeFile(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>An opaque filter pointer for the caller. </p>
 </dd>
 
-### -param <i>Instance</i> [in, optional]
+### -param Instance [in, optional]
 
 <dd>
 <p>An opaque instance pointer for the minifilter driver instance that the create request is to be sent to. The instance must be attached to the volume for the named pipe file system. This parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request is sent to the device object at the top of the file system driver stack for the volume. If it is non-<b>NULL</b>, the request is sent only to minifilter driver instances that are attached below the specified instance. </p>
 </dd>
 
-### -param <i>FileHandle</i> [out]
+### -param FileHandle [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the file handle if the call to  <b>FltCreateNamedPipeFile</b> is successful. </p>
 </dd>
 
-### -param <i>FileObject</i> [out, optional]
+### -param FileObject [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the file object pointer if the call to <b>FltCreateNamedPipeFile</b> is successful. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>A bitmask of flags that specify the type of access that the caller requires to the file or directory. The set of system-defined <i>DesiredAccess</i> flags determines the following specific access rights for file objects. </p>
@@ -212,7 +212,7 @@ NTSTATUS FltCreateNamedPipeFile(
 <p> </p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in]
+### -param ObjectAttributes [in]
 
 <dd>
 <p>A pointer to an opaque <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that is already initialized with <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>. If the caller is running in the system process context, this parameter can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to <b>InitializeObjectAttributes</b>. Members of this structure for a file object are listed in the following table. </p>
@@ -265,7 +265,7 @@ NTSTATUS FltCreateNamedPipeFile(
 <p> </p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. On return from <b>FltCreateNamedPipeFile</b>, the <b>Information</b> member of the variable contains one of the following values:</p>
@@ -279,7 +279,7 @@ NTSTATUS FltCreateNamedPipeFile(
 </dl>
 </dd>
 
-### -param <i>ShareAccess</i> [in]
+### -param ShareAccess [in]
 
 <dd>
 <p>The type of share access to the file that the caller requires as one or a combination of the following flags. For the greatest chance of avoiding sharing violation errors, specify all of the following share access flags. </p>
@@ -308,7 +308,7 @@ NTSTATUS FltCreateNamedPipeFile(
 <p> </p>
 </dd>
 
-### -param <i>CreateDisposition</i> [in]
+### -param CreateDisposition [in]
 
 <dd>
 <p>A value that determines the action to be taken, depending on whether the file already exists. The value can be any of those described in the following table. </p>
@@ -345,7 +345,7 @@ NTSTATUS FltCreateNamedPipeFile(
 <p> </p>
 </dd>
 
-### -param <i>CreateOptions</i> [in]
+### -param CreateOptions [in]
 
 <dd>
 <p>The options to be applied when creating or opening the pipe, as a compatible combination of the following flags. </p>
@@ -382,7 +382,7 @@ NTSTATUS FltCreateNamedPipeFile(
 <p> </p>
 </dd>
 
-### -param <i>NamedPipeType</i> [in]
+### -param NamedPipeType [in]
 
 <dd>
 <p>The mode to read from the pipe.</p>
@@ -394,7 +394,7 @@ NTSTATUS FltCreateNamedPipeFile(
 <tr>
 <td width="40%"><a id="FILE_PIPE_BYTE_STREAM_TYPE"></a><a id="file_pipe_byte_stream_type"></a><dl>
 
-### -param <b>FILE_PIPE_BYTE_STREAM_TYPE</b>
+### -param FILE_PIPE_BYTE_STREAM_TYPE
 
 </dl>
 </td>
@@ -405,7 +405,7 @@ NTSTATUS FltCreateNamedPipeFile(
 <tr>
 <td width="40%"><a id="FILE_PIPE_MESSAGE_TYPE"></a><a id="file_pipe_message_type"></a><dl>
 
-### -param <b>FILE_PIPE_MESSAGE_TYPE</b>
+### -param FILE_PIPE_MESSAGE_TYPE
 
 </dl>
 </td>
@@ -417,7 +417,7 @@ NTSTATUS FltCreateNamedPipeFile(
 <p> </p>
 </dd>
 
-### -param <i>ReadMode</i> [in]
+### -param ReadMode [in]
 
 <dd>
 <p>The mode to read from the pipe.</p>
@@ -429,7 +429,7 @@ NTSTATUS FltCreateNamedPipeFile(
 <tr>
 <td width="40%"><a id="FILE_PIPE_BYTE_STREAM_MODE"></a><a id="file_pipe_byte_stream_mode"></a><dl>
 
-### -param <b>FILE_PIPE_BYTE_STREAM_MODE</b>
+### -param FILE_PIPE_BYTE_STREAM_MODE
 
 </dl>
 </td>
@@ -440,7 +440,7 @@ NTSTATUS FltCreateNamedPipeFile(
 <tr>
 <td width="40%"><a id="FILE_PIPE_MESSAGE_MODE"></a><a id="file_pipe_message_mode"></a><dl>
 
-### -param <b>FILE_PIPE_MESSAGE_MODE</b>
+### -param FILE_PIPE_MESSAGE_MODE
 
 </dl>
 </td>
@@ -452,7 +452,7 @@ NTSTATUS FltCreateNamedPipeFile(
 <p> </p>
 </dd>
 
-### -param <i>CompletionMode</i> [in]
+### -param CompletionMode [in]
 
 <dd>
 <p>The completion mode for pipe reads and writes.</p>
@@ -464,7 +464,7 @@ NTSTATUS FltCreateNamedPipeFile(
 <tr>
 <td width="40%"><a id="FILE_PIPE_QUEUE_COMPLETION"></a><a id="file_pipe_queue_completion"></a><dl>
 
-### -param <b>FILE_PIPE_QUEUE_COMPLETION</b>
+### -param FILE_PIPE_QUEUE_COMPLETION
 
 </dl>
 </td>
@@ -475,7 +475,7 @@ NTSTATUS FltCreateNamedPipeFile(
 <tr>
 <td width="40%"><a id="FILE_PIPE_COMPLETE_OPERATION"></a><a id="file_pipe_complete_operation"></a><dl>
 
-### -param <b>FILE_PIPE_COMPLETE_OPERATION</b>
+### -param FILE_PIPE_COMPLETE_OPERATION
 
 </dl>
 </td>
@@ -487,31 +487,31 @@ NTSTATUS FltCreateNamedPipeFile(
 <p> </p>
 </dd>
 
-### -param <i>MaximumInstances</i> [in]
+### -param MaximumInstances [in]
 
 <dd>
 <p>The maximum number of instances allowed for this named pipe.</p>
 </dd>
 
-### -param <i>InBoundQuota</i> [in]
+### -param InBoundQuota [in]
 
 <dd>
 <p>The number of bytes to reserve for the input buffer.</p>
 </dd>
 
-### -param <i>OutBoundQuota</i> [in]
+### -param OutBoundQuota [in]
 
 <dd>
 <p>The number of bytes to reserve for the output buffer.</p>
 </dd>
 
-### -param <i>DefaultTimeout</i> [in, optional]
+### -param DefaultTimeout [in, optional]
 
 <dd>
 <p>The default timeout in 100-nanosecond increments. This value is expressed as a negative integer. For example, 250 milliseconds is specified as –10 * 1000 * 250.</p>
 </dd>
 
-### -param <i>DriverContext</i> [in, optional]
+### -param DriverContext [in, optional]
 
 <dd>
 <p>An optional pointer to an <a href="..\ntddk\ns-ntddk--io-driver-create-context.md">IO_DRIVER_CREATE_CONTEXT</a> structure already initialized by <a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a>.</p>
@@ -607,4 +607,4 @@ NTSTATUS FltCreateNamedPipeFile(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateNamedPipeFile function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateNamedPipeFile function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

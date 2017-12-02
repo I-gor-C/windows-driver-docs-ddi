@@ -58,7 +58,7 @@ typedef enum _IDDCX_CURSOR_SHAPE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="IDDCX_CURSOR_SHAPE_TYPE_UNINITIALIZED"></a><a id="iddcx_cursor_shape_type_uninitialized"></a><b>IDDCX_CURSOR_SHAPE_TYPE_UNINITIALIZED</b>
+### -field IDDCX_CURSOR_SHAPE_TYPE_UNINITIALIZED
 
 <dd>
 <p>
@@ -66,7 +66,7 @@ typedef enum _IDDCX_CURSOR_SHAPE_TYPE {
                     Indicates that the cursor shape is uninitialized</p>
 </dd>
 
-### -field <a id="IDDCX_CURSOR_SHAPE_TYPE_MASKED_COLOR"></a><a id="iddcx_cursor_shape_type_masked_color"></a><b>IDDCX_CURSOR_SHAPE_TYPE_MASKED_COLOR</b>
+### -field IDDCX_CURSOR_SHAPE_TYPE_MASKED_COLOR
 
 <dd>
 <p>
@@ -74,7 +74,7 @@ typedef enum _IDDCX_CURSOR_SHAPE_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_CURSOR_SHAPE_TYPE_ALPHA"></a><a id="iddcx_cursor_shape_type_alpha"></a><b>IDDCX_CURSOR_SHAPE_TYPE_ALPHA</b>
+### -field IDDCX_CURSOR_SHAPE_TYPE_ALPHA
 
 <dd>
 <p>

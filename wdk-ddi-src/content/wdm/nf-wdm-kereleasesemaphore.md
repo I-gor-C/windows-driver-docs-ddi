@@ -58,25 +58,25 @@ LONG KeReleaseSemaphore(
 ## -parameters
 <dl>
 
-### -param <i>Semaphore</i> [in, out]
+### -param Semaphore [in, out]
 
 <dd>
 <p>A pointer to an initialized semaphore object for which the caller provides the storage.</p>
 </dd>
 
-### -param <i>Increment</i> [in]
+### -param Increment [in]
 
 <dd>
 <p>Specifies the priority increment to be applied if releasing the semaphore causes a wait to be satisfied.</p>
 </dd>
 
-### -param <i>Adjustment</i> [in]
+### -param Adjustment [in]
 
 <dd>
 <p>Specifies a value to be added to the current semaphore count. This value must be positive.</p>
 </dd>
 
-### -param <i>Wait</i> [in]
+### -param Wait [in]
 
 <dd>
 <p>Specifies whether the call to <b>KeReleaseSemaphore</b> is to be followed <u>immediately</u> by a call to one of the <b>KeWait<i>Xxx</i></b> routines. If <b>TRUE</b>, the <b>KeReleaseSemaphore</b> call must be followed by a call to <a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>, <a href="kernel.kewaitformutexobject">KeWaitForMutexObject</a>, or <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>. For more information, see the following Remarks section. </p>

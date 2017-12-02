@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_scale_capabilities.htm
 old-project: netvista
 ms.assetid: dabd8f65-1aa5-4d45-9c0a-4539efd762c6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_RECEIVE_SCALE_CAPABILITIES, NDIS_RECEIVE_SCALE_CAPABILITIES, *PNDIS_RECEIVE_SCALE_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -81,7 +81,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
      <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_SCALE_CAPABILITIES_REVISION_1</b>.</p>
 </dd>
 
-### -field <b>CapabilitiesFlags</b>
+### -field CapabilitiesFlags
 
 <dd>
 <p>A bitmask of flags that specify the RSS capabilities of the NIC. The
@@ -94,7 +94,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <tr>
 <td width="40%"><a id="NDIS_RSS_CAPS_MESSAGE_SIGNALED_INTERRUPTS"></a><a id="ndis_rss_caps_message_signaled_interrupts"></a><dl>
 
-### -field <b>NDIS_RSS_CAPS_MESSAGE_SIGNALED_INTERRUPTS</b>
+### -field NDIS_RSS_CAPS_MESSAGE_SIGNALED_INTERRUPTS
 
 </dl>
 </td>
@@ -107,7 +107,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <tr>
 <td width="40%"><a id="NDIS_RSS_CAPS_CLASSIFICATION_AT_ISR"></a><a id="ndis_rss_caps_classification_at_isr"></a><dl>
 
-### -field <b>NDIS_RSS_CAPS_CLASSIFICATION_AT_ISR</b>
+### -field NDIS_RSS_CAPS_CLASSIFICATION_AT_ISR
 
 </dl>
 </td>
@@ -119,7 +119,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <tr>
 <td width="40%"><a id="NDIS_RSS_CAPS_USING_MSI_X"></a><a id="ndis_rss_caps_using_msi_x"></a><dl>
 
-### -field <b>NDIS_RSS_CAPS_USING_MSI_X</b>
+### -field NDIS_RSS_CAPS_USING_MSI_X
 
 </dl>
 </td>
@@ -131,7 +131,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <tr>
 <td width="40%"><a id="NDIS_RSS_CAPS_SUPPORTS_MSI_X"></a><a id="ndis_rss_caps_supports_msi_x"></a><dl>
 
-### -field <b>NDIS_RSS_CAPS_SUPPORTS_MSI_X</b>
+### -field NDIS_RSS_CAPS_SUPPORTS_MSI_X
 
 </dl>
 </td>
@@ -142,7 +142,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <tr>
 <td width="40%"><a id="NDIS_RSS_CAPS_CLASSIFICATION_AT_DPC"></a><a id="ndis_rss_caps_classification_at_dpc"></a><dl>
 
-### -field <b>NDIS_RSS_CAPS_CLASSIFICATION_AT_DPC</b>
+### -field NDIS_RSS_CAPS_CLASSIFICATION_AT_DPC
 
 </dl>
 </td>
@@ -154,7 +154,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <tr>
 <td width="40%"><a id="NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV4"></a><a id="ndis_rss_caps_hash_type_tcp_ipv4"></a><dl>
 
-### -field <b>NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV4</b>
+### -field NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV4
 
 </dl>
 </td>
@@ -166,7 +166,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <tr>
 <td width="40%"><a id="NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV6"></a><a id="ndis_rss_caps_hash_type_tcp_ipv6"></a><dl>
 
-### -field <b>NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV6</b>
+### -field NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV6
 
 </dl>
 </td>
@@ -180,7 +180,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <tr>
 <td width="40%"><a id="NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV6_EX"></a><a id="ndis_rss_caps_hash_type_tcp_ipv6_ex"></a><dl>
 
-### -field <b>NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV6_EX</b>
+### -field NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV6_EX
 
 </dl>
 </td>
@@ -195,7 +195,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <tr>
 <td width="40%"><a id="NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV4"></a><a id="ndis_rss_caps_hash_type_udp_ipv4"></a><dl>
 
-### -field <b>NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV4</b>
+### -field NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV4
 
 </dl>
 </td>
@@ -206,7 +206,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <tr>
 <td width="40%"><a id="NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV6"></a><a id="ndis_rss_caps_hash_type_udp_ipv6"></a><dl>
 
-### -field <b>NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV6</b>
+### -field NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV6
 
 </dl>
 </td>
@@ -217,7 +217,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <tr>
 <td width="40%"><a id="NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV6_EX"></a><a id="ndis_rss_caps_hash_type_udp_ipv6_ex"></a><dl>
 
-### -field <b>NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV6_EX</b>
+### -field NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV6_EX
 
 </dl>
 </td>
@@ -228,7 +228,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <tr>
 <td width="40%"><a id="NdisHashFunctionToeplitz"></a><a id="ndishashfunctiontoeplitz"></a><a id="NDISHASHFUNCTIONTOEPLITZ"></a><dl>
 
-### -field <b>NdisHashFunctionToeplitz</b>
+### -field NdisHashFunctionToeplitz
 
 </dl>
 </td>
@@ -241,7 +241,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <tr>
 <td width="40%"><a id="NdisHashFunctionReserved1"></a><a id="ndishashfunctionreserved1"></a><a id="NDISHASHFUNCTIONRESERVED1"></a><dl>
 
-### -field <b>NdisHashFunctionReserved1</b>
+### -field NdisHashFunctionReserved1
 
 </dl>
 </td>
@@ -252,7 +252,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <tr>
 <td width="40%"><a id="NdisHashFunctionReserved2"></a><a id="ndishashfunctionreserved2"></a><a id="NDISHASHFUNCTIONRESERVED2"></a><dl>
 
-### -field <b>NdisHashFunctionReserved2</b>
+### -field NdisHashFunctionReserved2
 
 </dl>
 </td>
@@ -263,7 +263,7 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <tr>
 <td width="40%"><a id="NdisHashFunctionReserved3"></a><a id="ndishashfunctionreserved3"></a><a id="NDISHASHFUNCTIONRESERVED3"></a><dl>
 
-### -field <b>NdisHashFunctionReserved3</b>
+### -field NdisHashFunctionReserved3
 
 </dl>
 </td>
@@ -275,20 +275,20 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 <p> </p>
 </dd>
 
-### -field <b>NumberOfInterruptMessages</b>
+### -field NumberOfInterruptMessages
 
 <dd>
 <p>The number of interrupt messages that the NIC supports if the NIC supports MSIs. If the NIC does
      not support MSIs but supports line-based interrupts, set this number to 1.</p>
 </dd>
 
-### -field <b>NumberOfReceiveQueues</b>
+### -field NumberOfReceiveQueues
 
 <dd>
 <p>The number of hardware receive queues that the NIC supports.</p>
 </dd>
 
-### -field <b>NumberOfIndirectionTableEntries</b>
+### -field NumberOfIndirectionTableEntries
 
 <dd>
 <p>The maximum number of entries that the miniport driver supports in the indirection table. This value must be a power of 2. All NDIS 6.30 and later miniport adapters must support this member, which is required for virtual functions.</p>
@@ -352,4 +352,4 @@ typedef struct _NDIS_RECEIVE_SCALE_CAPABILITIES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_SCALE_CAPABILITIES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_SCALE_CAPABILITIES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

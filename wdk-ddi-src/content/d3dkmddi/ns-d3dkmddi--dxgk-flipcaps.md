@@ -67,7 +67,7 @@ typedef struct _DXGK_FLIPCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>FlipOnVSyncWithNoWait</b>
+### -field FlipOnVSyncWithNoWait
 
 <dd>
 <p>A <b>UINT</b> value that specifies whether the driver supports the scheduling of a flip command that will take effect on the next vertical retrace period (vertical sync) without causing the graphics pipeline to stall until that vertical sync occurs. That is, the graphics pipeline must proceed immediately after the driver writes the physical address of the flipping surface into flip-pending registers at the hardware. Although most hardware uses a depth of one flip-pending register, if hardware uses more than one flip-pending register, the driver should specify the number in the <b>MaxQueuedFlipOnVSync</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a> structure. </p>
@@ -75,7 +75,7 @@ typedef struct _DXGK_FLIPCAPS {
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>FlipOnVSyncMmIo</b>
+### -field FlipOnVSyncMmIo
 
 <dd>
 <p>A <b>UINT</b> value that specifies whether the driver supports a memory mapped I/O (MMIO)-based flip that takes effect on the next vertical sync. To support this type of flip, the display miniport driver must support the following operations:</p>
@@ -89,14 +89,14 @@ typedef struct _DXGK_FLIPCAPS {
 </ul>
 </dd>
 
-### -field <b>FlipInterval</b>
+### -field FlipInterval
 
 <dd>
 <p>A <b>UINT</b> value that specifies whether the driver supports the scheduling of a flip command to take effect after two, three, or four vertical syncs occur. Regardless of whether the driver supports a flip interval of two or greater, the driver must support an immediate flip and a flip interval of one.</p>
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>FlipImmediateMmIo</b>
+### -field FlipImmediateMmIo
 
 <dd>
 <p>A <b>UINT</b> value that specifies whether the driver supports a memory mapped I/O (MMIO)-based immediate flip. This type of flip takes effect immediately following a call to the driver's <a href="display.dxgkddisetvidpnsourceaddress">DxgkDdiSetVidPnSourceAddress</a> function without waiting for the next vertical sync to occur.</p>
@@ -104,7 +104,7 @@ typedef struct _DXGK_FLIPCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>FlipIndependent</b>
+### -field FlipIndependent
 
 <dd>
 <p>A <b>UINT</b> value that specifies whether the driver supports an independent flip. WDDM 1.3 and later drivers must set this member to 1.</p>
@@ -114,19 +114,19 @@ typedef struct _DXGK_FLIPCAPS {
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 27 bits (0xFFFFFFE0) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 28 bits (0xFFFFFFF0) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that DXGK_FLIPCAPS contains that can hold a 32-bit value that identifies flipping capabilities.</p>

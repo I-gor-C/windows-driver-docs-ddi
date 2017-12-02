@@ -89,200 +89,200 @@ typedef struct _VIRTUAL_HW_INITIALIZATION_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>HwInitializationDataSize</b>
+### -field HwInitializationDataSize
 
 <dd>
 <p>Specifies the size of this structure in bytes, as returned by <b>sizeof</b>(). This member indicates the version of this structure that is used by the virtual miniport driver. A virtual miniport driver's <b>DriverEntry</b> routine should set this member's value for the port driver.</p>
 </dd>
 
-### -field <b>AdapterInterfaceType</b>
+### -field AdapterInterfaceType
 
 <dd>
 <p>The Storport driver does not support legacy buses. Therefore, most of the adapter interface types that are used with the SCSI port driver are invalid for Storport drivers. In particular, Storport does not support Isa, Eisa, MicroChannel, and TurboChannel. Furthermore, unlike the SCSI port case, a virtual miniport driver that works with the Storport driver is not required to supply values for the <b>VendorIdLength</b>, <b>VendorId</b>, <b>DeviceIdLength</b>, and <b>DeviceId</b> members.</p>
 </dd>
 
-### -field <b>HwInitialize</b>
+### -field HwInitialize
 
 <dd>
 <p>A pointer to the virtual miniport driver's <a href="storage.hwstorinitialize">HwStorInitialize</a> routine, which is a required entry point for all virtual miniport drivers.</p>
 </dd>
 
-### -field <b>HwStartIo</b>
+### -field HwStartIo
 
 <dd>
 <p>A pointer to the virtual miniport driver's <a href="storage.hwstorstartio">HwStorStartIo</a> routine, which is a required entry point for all virtual miniport drivers.</p>
 </dd>
 
-### -field <b>HwInterrupt</b>
+### -field HwInterrupt
 
 <dd>
 <p>Not used. Virtual miniport drivers do not process interrupts.</p>
 </dd>
 
-### -field <b>HwFindAdapter</b>
+### -field HwFindAdapter
 
 <dd>
 <p>A pointer to the virtual miniport driver's <a href="storage.virtualhwstorfindadapter">VirtualHwStorFindAdapter</a> routine, which is a required entry point for all virtual miniport drivers.</p>
 </dd>
 
-### -field <b>HwResetBus</b>
+### -field HwResetBus
 
 <dd>
 <p>A pointer to the virtual miniport driver's <a href="storage.hwstorresetbus">HwStorResetBus</a> routine, which is a required entry point for all virtual miniport drivers.</p>
 </dd>
 
-### -field <b>HwDmaStarted</b>
+### -field HwDmaStarted
 
 <dd>
 <p>Not used. Virtual miniport drivers do not perform DMA.</p>
 </dd>
 
-### -field <b>HwAdapterState</b>
+### -field HwAdapterState
 
 <dd>
 <p>The Storport driver does not support legacy drivers. Therefore, this member must be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>DeviceExtensionSize</b>
+### -field DeviceExtensionSize
 
 <dd>
 <p>Specifies the size, in bytes, that is required by the virtual miniport driver for its per-adapter non-paged device extension. A virtual miniport driver uses its device extension as storage for driver-determined adapter information. The operating system-specific port driver initializes each device extension that it allocates with zeros, and passes a pointer to the adapter-specific device extension in most calls to the virtual miniport driver. The given size does not include any virtual miniport driver-requested per-logical-unit storage.</p>
 </dd>
 
-### -field <b>SpecificLuExtensionSize</b>
+### -field SpecificLuExtensionSize
 
 <dd>
 <p>Specifies the size, in bytes, that is required by the virtual miniport driver for its per-logical-unit non-paged storage, if any. A virtual miniport driver can use its logical unit (LU) extensions as storage for driver-determined LU information about peripherals on the virtual bus. The operating system-specific port driver initializes each LU extension that it allocates with zeros. Leave this member set to zero if the virtual miniport driver does not maintain per-LU information for which it requires storage.</p>
 </dd>
 
-### -field <b>SrbExtensionSize</b>
+### -field SrbExtensionSize
 
 <dd>
 <p>Specifies the size, in bytes, that is required by the virtual miniport driver for its per-request non-paged storage, if any. Because virtual miniport drivers that work with the Storport driver must support scatter/gather lists, and the per-SRB scatter/gather lists are usually allocated in the SRB extension, this member is rarely zero.</p>
 </dd>
 
-### -field <b>NumberOfAccessRanges</b>
+### -field NumberOfAccessRanges
 
 <dd>
 <p>Not used. Virtual miniport drivers do not support hardware.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>MapBuffers</b>
+### -field MapBuffers
 
 <dd>
 <p>Not valid for virtual miniport drivers. The virtual miniport driver must map all data buffers into virtual address space.</p>
 </dd>
 
-### -field <b>NeedPhysicalAddresses</b>
+### -field NeedPhysicalAddresses
 
 <dd>
 <p>Not used. Virtual miniport drivers do not support hardware.</p>
 </dd>
 
-### -field <b>TaggedQueuing</b>
+### -field TaggedQueuing
 
 <dd>
 <p>Must be set to <b>TRUE</b>. A value of <b>TRUE</b> indicates that the virtual miniport driver supports tagged queuing.</p>
 </dd>
 
-### -field <b>AutoRequestSense</b>
+### -field AutoRequestSense
 
 <dd>
 <p>Must be set to <b>TRUE</b>. A value of <b>TRUE</b> indicates that the HBA can perform a request-sense operation without requiring an explicit request to do so.</p>
 </dd>
 
-### -field <b>MultipleRequestPerLu</b>
+### -field MultipleRequestPerLu
 
 <dd>
 <p>Must be set to <b>TRUE</b>. A value of <b>TRUE</b> indicates that the virtual miniport driver can queue multiple requests per logical unit (LU).</p>
 </dd>
 
-### -field <b>ReceiveEvent</b>
+### -field ReceiveEvent
 
 <dd>
 <p>Must be set to <b>TRUE</b>. A value of <b>TRUE</b> indicates that the virtual miniport driver supports receive events.</p>
 </dd>
 
-### -field <b>VendorIdLength</b>
+### -field VendorIdLength
 
 <dd>
 <p>The length, in bytes, of the vendor identifier.</p>
 </dd>
 
-### -field <b>VendorId</b>
+### -field VendorId
 
 <dd>
 <p>The vendor identifier.</p>
 </dd>
 
-### -field <b>ReservedUshort</b>
+### -field ReservedUshort
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>PortVersionFlags</b>
+### -field PortVersionFlags
 
 <dd>
 <p>A bitmap of flags that indicate the features that the port driver supports. Currently, the only flag available is SP_VER_TRACE_SUPPORT, which indicates that the port driver supports tracing.</p>
 </dd>
 
-### -field <b>DeviceIdLength</b>
+### -field DeviceIdLength
 
 <dd>
 <p>The length, in bytes, of the device identifier.</p>
 </dd>
 
-### -field <b>DeviceId</b>
+### -field DeviceId
 
 <dd>
 <p>The device identifier.</p>
 </dd>
 
-### -field <b>HwAdapterControl</b>
+### -field HwAdapterControl
 
 <dd>
 <p>A pointer to the virtual miniport driver's <a href="storage.hwstoradaptercontrol">HwStorAdapterControl</a> routine. </p>
 </dd>
 
-### -field <b>HwBuildIo</b>
+### -field HwBuildIo
 
 <dd>
 <p>
       This member is not used.</p>
 </dd>
 
-### -field <b>HwFreeAdapterResources</b>
+### -field HwFreeAdapterResources
 
 <dd>
 <p>A pointer to the virtual miniport driver's <a href="storage.hwstorfreeadapterresources">HwStorFreeAdapterResources</a> routine, which is a required entry point for all virtual miniport drivers.</p>
 </dd>
 
-### -field <b>HwProcessServiceRequest</b>
+### -field HwProcessServiceRequest
 
 <dd>
 <p>A pointer to the virtual miniport driver's <a href="storage.hwstorprocessservicerequest">HwStorProcessServiceRequest</a> routine.</p>
 </dd>
 
-### -field <b>HwCompleteServiceIrp</b>
+### -field HwCompleteServiceIrp
 
 <dd>
 <p>A pointer to the virtual miniport driver's <a href="storage.hwstorcompleteserviceirp">HwStorCompleteServiceIrp</a> routine.</p>
 </dd>
 
-### -field <b>HwInitializeTracing</b>
+### -field HwInitializeTracing
 
 <dd>
 <p>A pointer to the virtual miniport driver's <a href="storage.hwstorinitializetracing">HwStorInitializeTracing</a> routine.</p>
 </dd>
 
-### -field <b>HwCleanupTracing</b>
+### -field HwCleanupTracing
 
 <dd>
 <p>A pointer to the virtual miniport driver's <a href="storage.hwstorcleanuptracing">HwStorCleanupTracing</a> routine.</p>

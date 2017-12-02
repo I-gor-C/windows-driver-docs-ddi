@@ -58,25 +58,25 @@ typedef struct _BIDI_REQUEST_CONTAINER {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the bidi API Schema, which is currently 1.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Is a set of flags reserved for system use. This must be zero.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Specifies the number of bidi requests in the <b>aData</b> member. A container can contain zero or more requests, although a value of zero is valid only if the action is BIDI_ACTION_ENUM_SCHEMA.</p>
 </dd>
 
-### -field <b>aData</b>
+### -field aData
 
 <dd>
 <p>Is an array of <a href="..\winspool\ns-winspool--bidi-request-data.md">BIDI_REQUEST_DATA</a> structures, each holding a single bidi request. </p>

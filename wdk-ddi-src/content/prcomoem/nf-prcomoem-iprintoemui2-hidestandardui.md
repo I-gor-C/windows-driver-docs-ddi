@@ -55,7 +55,7 @@ HRESULT HideStandardUI(
 ## -parameters
 <dl>
 
-### -param <i>dwMode</i> 
+### -param dwMode 
 
 <dd>
 <p>Specifies which type of property sheet UI -- document property sheet or device property sheet -- to hide. This parameter should be set to one of the following constants, which are defined in printoem.h:</p>
@@ -119,7 +119,7 @@ HRESULT HideStandardUI(
 
 <p>Return E_NOTIMPL, regardless of the value of <i>dwMode</i>.</p>
 
-<p>If the <code>IPrintOemUI2::HideStandardUI</code> method indicates to the driver that all standard property sheets should be hidden, the driver omits calls to compstui.dll (see <a href="NULL">Pscript Components</a>) to add the standard property sheets. A UI plug-in must implement at least one custom property sheet UI if <code>IPrintOemUI2::HideStandardUI</code> returns S_OK.</p>
+<p>If the <code>IPrintOemUI2::HideStandardUI</code> method indicates to the driver that all standard property sheets should be hidden, the driver omits calls to compstui.dll (see <a href="https://msdn.microsoft.com/9f3bd004-e62c-42b6-99da-045c12e088a3">Pscript Components</a>) to add the standard property sheets. A UI plug-in must implement at least one custom property sheet UI if <code>IPrintOemUI2::HideStandardUI</code> returns S_OK.</p>
 
 <p>When the printer has multiple UI plug-ins installed, the driver calls UI plug-ins in the order they were installed, until one of them returns S_OK, or until all of the UI plug-ins have been called and none of them returned S_OK. The former case indicates to the driver that the standard property sheet UI should be hidden. The latter case indicates to the driver that the standard property sheet UI should be displayed.</p>
 

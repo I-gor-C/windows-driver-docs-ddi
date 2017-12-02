@@ -57,25 +57,25 @@ typedef enum _PEP_DEVICE_ACCEPTANCE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PepDeviceNotAccepted"></a><a id="pepdevicenotaccepted"></a><a id="PEPDEVICENOTACCEPTED"></a><b>PepDeviceNotAccepted</b>
+### -field PepDeviceNotAccepted
 
 <dd>
 <p>The PEP does not claim ownership of this device.</p>
 </dd>
 
-### -field <a id="PepDeviceAcceptedReserved"></a><a id="pepdeviceacceptedreserved"></a><a id="PEPDEVICEACCEPTEDRESERVED"></a><b>PepDeviceAcceptedReserved</b>
+### -field PepDeviceAcceptedReserved
 
 <dd>
 <p>The PEP claims ownership of the device on behalf of the default PEP. The default PEP is implemented by the Windows kernel to manage devices for which hardware-specific PEPs are not available.</p>
 </dd>
 
-### -field <a id="PepDeviceAccepted"></a><a id="pepdeviceaccepted"></a><a id="PEPDEVICEACCEPTED"></a><b>PepDeviceAccepted</b>
+### -field PepDeviceAccepted
 
 <dd>
 <p>The PEP claims ownership of this device.</p>
 </dd>
 
-### -field <a id="PepDeviceAcceptedMax"></a><a id="pepdeviceacceptedmax"></a><a id="PEPDEVICEACCEPTEDMAX"></a><b>PepDeviceAcceptedMax</b>
+### -field PepDeviceAcceptedMax
 
 <dd>
 <p>Reserved for use by operating system.</p>

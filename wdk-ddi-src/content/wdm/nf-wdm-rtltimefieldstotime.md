@@ -56,7 +56,7 @@ BOOLEAN RtlTimeFieldsToTime(
 ## -parameters
 <dl>
 
-### -param <i>TimeFields</i> [in]
+### -param TimeFields [in]
 
 <dd>
 <p>Pointer to the following structure, containing the time information to be converted:</p>
@@ -82,49 +82,49 @@ BOOLEAN RtlTimeFieldsToTime(
 <p></p>
 <dl>
 
-### -param <a id="Year"></a><a id="year"></a><a id="YEAR"></a><b>Year</b>
+### -param Year
 
 <dd>
 <p>Specifies a value from 1601 on.</p>
 </dd>
 
-### -param <a id="Month"></a><a id="month"></a><a id="MONTH"></a><b>Month</b>
+### -param Month
 
 <dd>
 <p>Specifies a value from 1 to 12.</p>
 </dd>
 
-### -param <a id="Day"></a><a id="day"></a><a id="DAY"></a><b>Day</b>
+### -param Day
 
 <dd>
 <p>Specifies a value from 1 to 31.</p>
 </dd>
 
-### -param <a id="Hour"></a><a id="hour"></a><a id="HOUR"></a><b>Hour</b>
+### -param Hour
 
 <dd>
 <p>Specifies a value from 0 to 23.</p>
 </dd>
 
-### -param <a id="Minute"></a><a id="minute"></a><a id="MINUTE"></a><b>Minute</b>
+### -param Minute
 
 <dd>
 <p>Specifies a value from 0 to 59.</p>
 </dd>
 
-### -param <a id="Second"></a><a id="second"></a><a id="SECOND"></a><b>Second</b>
+### -param Second
 
 <dd>
 <p>Specifies a value from 0 to 59.</p>
 </dd>
 
-### -param <a id="Milliseconds"></a><a id="milliseconds"></a><a id="MILLISECONDS"></a><b>Milliseconds</b>
+### -param Milliseconds
 
 <dd>
 <p>Specifies a value from 0 to 999.</p>
 </dd>
 
-### -param <a id="Weekday"></a><a id="weekday"></a><a id="WEEKDAY"></a><b>Weekday</b>
+### -param Weekday
 
 <dd>
 <p>Specifies a value from 0 to 6 (Sunday to Saturday). </p>
@@ -132,7 +132,7 @@ BOOLEAN RtlTimeFieldsToTime(
 </dl>
 </dd>
 
-### -param <i>Time</i> [out]
+### -param Time [out]
 
 <dd>
 <p>Pointer to a buffer, which is to contain the converted system time value as a large integer. </p>

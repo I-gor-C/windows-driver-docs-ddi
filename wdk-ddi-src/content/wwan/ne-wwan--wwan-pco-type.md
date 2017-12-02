@@ -7,7 +7,7 @@ old-location: netvista\wwan_pco_type.htm
 old-project: netvista
 ms.assetid: 0AD10F14-EBDB-45F8-A435-1D0A6D6FEFFF
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ typedef enum _WWAN_PCO_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanPcoTypeComplete"></a><a id="wwanpcotypecomplete"></a><a id="WWANPCOTYPECOMPLETE"></a><b>WwanPcoTypeComplete</b>
+### -field WwanPcoTypeComplete
 
 <dd>
 <p>Specifies that the complete PCO structure will be passed up as received from the network and the header realistically reflects the protocol in octet 3 of the PCO structure, defined in the 3GPP TS24.008 spec. To see the full PCO structure, see <a href="..\wwan\ns-wwan--wwan-pco-value.md">WWAN_PCO_VALUE</a>.</p>
 </dd>
 
-### -field <a id="WwanPcoTypePartial"></a><a id="wwanpcotypepartial"></a><a id="WWANPCOTYPEPARTIAL"></a><b>WwanPcoTypePartial</b>
+### -field WwanPcoTypePartial
 
 <dd>
 <p>Specifies that the modem will only be passing up a subset of PCO structures that it received from the network. The header matches the 3GPP TS24.008 specification for the PCO structure, as shown on <b>WWAN_PCO_VALUE</b>, but the “Configuration protocol” of octet 3 may not be valid.</p>
@@ -107,4 +107,4 @@ typedef enum _WWAN_PCO_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PCO_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PCO_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

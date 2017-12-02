@@ -55,13 +55,13 @@ typedef struct _DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>[in] A Boolean value that specifies whether the driver should use the <b>TargetRect</b> member or the entire output surface as the target. The default value is <b>FALSE</b>, which indicates that the entire output surface is the target. </p>
 </dd>
 
-### -field <b>TargetRect</b>
+### -field TargetRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure that specifies the target rectangle in the coordinates of the output surface. This member is relevant only when the <b>Enable</b> member is set to <b>TRUE</b>. The default value is (0,0,0,0).</p>

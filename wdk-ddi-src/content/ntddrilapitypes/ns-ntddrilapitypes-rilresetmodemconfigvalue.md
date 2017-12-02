@@ -7,7 +7,7 @@ old-location: netvista\rilresetmodemconfigvalue.htm
 old-project: netvista
 ms.assetid: 48068d1d-3fe7-4bd6-8c91-094e4187ca1f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILRESETMODEMCONFIGVALUE, RILRESETMODEMCONFIGVALUE, *LPRILRESETMODEMCONFIGVALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef struct _RILRESETMODEMCONFIGVALUE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwType</b>
+### -field dwType
 
 <dd></dd>
 
-### -field <b>RILRESETMODEMCONFIGVALUEUNION</b>
+### -field RILRESETMODEMCONFIGVALUEUNION
 
 <dd></dd>
 
-### -field <b>configValueUnion</b>
+### -field configValueUnion
 
 <dd></dd>
 
-### -field <b>fValue</b>
+### -field fValue
 
 <dd></dd>
 
-### -field <b>dwValue</b>
+### -field dwValue
 
 <dd></dd>
 
-### -field <b>wszValue</b>
+### -field wszValue
 
 <dd></dd>
 </dl>

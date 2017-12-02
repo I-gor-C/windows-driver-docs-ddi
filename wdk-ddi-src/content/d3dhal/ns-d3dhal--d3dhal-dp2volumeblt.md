@@ -63,43 +63,43 @@ typedef struct _D3DHAL_DP2VOLUMEBLT {
 ## -struct-fields
 <dl>
 
-### -field <b>dwDDDestSurface</b>
+### -field dwDDDestSurface
 
 <dd>
 <p>Specifies the handle to the destination volume texture.</p>
 </dd>
 
-### -field <b>dwDDSrcSurface</b>
+### -field dwDDSrcSurface
 
 <dd>
 <p>Specifies the handle to the source volume texture.</p>
 </dd>
 
-### -field <b>dwDestX</b>
+### -field dwDestX
 
 <dd>
 <p>Specify the location in the destination volume texture to copy the defined source subvolume. These members (<b>dwDestX</b>, <b>dwDestY</b>, and <b>dwDestZ</b>) are specified in screen coordinates.</p>
 </dd>
 
-### -field <b>dwDestY</b>
+### -field dwDestY
 
 <dd>
 <p>See <b>dwDestX</b> above.</p>
 </dd>
 
-### -field <b>dwDestZ</b>
+### -field dwDestZ
 
 <dd>
 <p>See <b>dwDestX</b> above.</p>
 </dd>
 
-### -field <b>srcBox</b>
+### -field srcBox
 
 <dd>
 <p>Specifies a subvolume of the source volume texture to copy to the destination.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Reserved for system use.</p>

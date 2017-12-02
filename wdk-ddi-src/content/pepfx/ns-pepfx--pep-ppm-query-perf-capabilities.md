@@ -59,37 +59,37 @@ typedef struct _PEP_PPM_QUERY_PERF_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>HighestPerformance</b>
+### -field HighestPerformance
 
 <dd>
 <p>[out] The highest performance level in platform-specific units. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>NominalPerformance</b>
+### -field NominalPerformance
 
 <dd>
 <p>[out] The nominal performance level in platform-specific units. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>LowestNonlinearPerformance</b>
+### -field LowestNonlinearPerformance
 
 <dd>
 <p>[out] The lowest nonlinear performance level in platform-specific units. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>LowestPerformance</b>
+### -field LowestPerformance
 
 <dd>
 <p>[out] The lowest performance level in platform-specific units. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>DomainId</b>
+### -field DomainId
 
 <dd>
 <p>[out] The domain ID of the processor performance domain.</p>
 </dd>
 
-### -field <b>DomainMembers</b>
+### -field DomainMembers
 
 <dd>
 <p>[out] The number of processors in this performance domain.</p>

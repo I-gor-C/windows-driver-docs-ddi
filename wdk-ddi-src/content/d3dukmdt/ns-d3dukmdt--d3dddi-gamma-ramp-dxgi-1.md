@@ -56,19 +56,19 @@ typedef struct _D3DDDI_GAMMA_RAMP_DXGI_1 {
 ## -struct-fields
 <dl>
 
-### -field <b>Scale</b>
+### -field Scale
 
 <dd>
 <p>A <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-dxgi-rgb.md">D3DDDI_DXGI_RGB</a> structure that holds the scale for the gamma function.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>A <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-dxgi-rgb.md">D3DDDI_DXGI_RGB</a> structure that holds the offset for the gamma function.</p>
 </dd>
 
-### -field <b>GammaCurve</b>
+### -field GammaCurve
 
 <dd>
 <p>An array of <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-dxgi-rgb.md">D3DDDI_DXGI_RGB</a> structures that describe the curve of the gamma function.</p>

@@ -63,55 +63,55 @@ typedef struct _SRBEX_DATA_SCSI_CDB16 {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeScsiCdb16</b>.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Length of the data in this structure, in bytes, starting with the <b>ScsiStatus</b> member. Set to SRBEX_DATA_SCSI_CDB16_LENGTH.</p>
 </dd>
 
-### -field <b>ScsiStatus</b>
+### -field ScsiStatus
 
 <dd>
 <p>The SCSI status code returned for the submitted SRB.</p>
 </dd>
 
-### -field <b>SenseInfoBufferLength</b>
+### -field SenseInfoBufferLength
 
 <dd>
 <p>The length of the sense information returned in the buffer pointed to by <b>SenseInfoBuffer</b>.</p>
 </dd>
 
-### -field <b>CdbLength</b>
+### -field CdbLength
 
 <dd>
 <p>The length of the CDB data, in bytes, of the <b>Cdb</b> array.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved. Set to 0.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>This member is reserved. Set to 0.</p>
 </dd>
 
-### -field <b>SenseInfoBuffer</b>
+### -field SenseInfoBuffer
 
 <dd>
 <p>A pointer to a buffer containing any returned sense information.</p>
 </dd>
 
-### -field <b>Cdb</b>
+### -field Cdb
 
 <dd>
 <p>The 16-byte CDB buffer.</p>
@@ -146,10 +146,10 @@ typedef struct _SRBEX_DATA_SCSI_CDB16 {
 ## -see-also
 <dl>
 <dt>
-<a href="..\srb\ns-srb--srbex-data-scsi-cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
+<a href="..\storport\ns-storport--srbex-data-scsi-cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

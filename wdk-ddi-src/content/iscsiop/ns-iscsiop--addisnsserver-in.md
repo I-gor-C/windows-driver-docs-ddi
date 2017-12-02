@@ -54,7 +54,7 @@ typedef struct _AddiSNSServer_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>iSNSServerName</b>
+### -field iSNSServerName
 
 <dd>
 <p>The iSNS server name to add to the list of iSNS servers that the iSCSI initiator maintains.</p>

@@ -58,25 +58,25 @@ typedef struct _VP_DEVICE_DESCRIPTION {
 ## -struct-fields
 <dl>
 
-### -field <b>ScatterGather</b>
+### -field ScatterGather
 
 <dd>
 <p>If <b>TRUE</b>, indicates that the device supports scatter/gather DMA. If <b>FALSE</b>, the device does not support scatter/gather DMA.</p>
 </dd>
 
-### -field <b>Dma32BitAddresses</b>
+### -field Dma32BitAddresses
 
 <dd>
 <p>If <b>TRUE</b>, specifies that 32-bit addresses are being used for DMA operations. </p>
 </dd>
 
-### -field <b>Dma64BitAddresses</b>
+### -field Dma64BitAddresses
 
 <dd>
 <p>If <b>TRUE</b>, specifies that 64-bit addresses are being used for DMA operations.</p>
 </dd>
 
-### -field <b>MaximumLength</b>
+### -field MaximumLength
 
 <dd>
 <p>Specifies the maximum number of bytes the device can handle in each DMA operation.</p>

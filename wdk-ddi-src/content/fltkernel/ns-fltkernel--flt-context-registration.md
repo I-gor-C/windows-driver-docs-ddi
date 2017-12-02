@@ -7,7 +7,7 @@ old-location: ifsk\flt_context_registration.htm
 old-project: ifsk
 ms.assetid: 6316acfa-c19c-4705-becb-b89c3feed6a3
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FLT_CONTEXT_REGISTRATION, FLT_CONTEXT_REGISTRATION, *PFLT_CONTEXT_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct _FLT_CONTEXT_REGISTRATION {
 ## -struct-fields
 <dl>
 
-### -field <b>ContextType</b>
+### -field ContextType
 
 <dd>
 <p>The type of context. This member is required and must be one of the following values: </p>
@@ -90,7 +90,7 @@ typedef struct _FLT_CONTEXT_REGISTRATION {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitmask of flags that specify how the filter manager allocates a new context from a lookaside list of fixed-size contexts. This member can be zero or the following value. </p>
@@ -111,37 +111,37 @@ typedef struct _FLT_CONTEXT_REGISTRATION {
 <p> </p>
 </dd>
 
-### -field <b>ContextCleanupCallback</b>
+### -field ContextCleanupCallback
 
 <dd>
 <p>A pointer to a minifilter-defined <b>ContextCleanupCallback</b> routine of type <a href="..\fltkernel\nc-fltkernel-pflt-context-cleanup-callback.md">PFLT_CONTEXT_CLEANUP_CALLBACK</a>. The filter manager calls this routine immediately before it deletes the context. If the minifilter has no memory or pointers to clean up inside the context, this member is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of the minifilter-defined portion of the context, if the minifilter uses fixed-size contexts. Zero is a valid size value. If the minifilter uses variable-size contexts, this member is required and must be set to FLT_VARIABLE_SIZED_CONTEXTS. </p>
 </dd>
 
-### -field <b>PoolTag</b>
+### -field PoolTag
 
 <dd>
 <p>A pool tag value to be used for the context. This tag, which is specified as a string of one to four 7-bit ASCII characters, appears in any crash dump of the system that occurs. If the <b>ContextAllocateCallback</b> member is <b>NULL</b>, this member is required and cannot be zero. </p>
 </dd>
 
-### -field <b>ContextAllocateCallback</b>
+### -field ContextAllocateCallback
 
 <dd>
 <p>Pointer to a minifilter-defined <b>ContextAllocateCallback</b> routine of type <a href="..\fltkernel\nc-fltkernel-pflt-context-allocate-callback.md">PFLT_CONTEXT_ALLOCATE_CALLBACK</a>. This member is optional and can be <b>NULL</b>. If it is not <b>NULL</b>, the <b>Size</b> and <b>PoolTag</b> members are ignored. </p>
 </dd>
 
-### -field <b>ContextFreeCallback</b>
+### -field ContextFreeCallback
 
 <dd>
 <p>A pointer to a minifilter-defined <b>ContextFreeCallback</b> routine of type <a href="..\fltkernel\nc-fltkernel-pflt-context-free-callback.md">PFLT_CONTEXT_FREE_CALLBACK</a>. This member is optional and can be <b>NULL</b>. If it is not <b>NULL</b>, the <b>Size</b> and <b>PoolTag</b> members are ignored. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for system use. Minifilters must set this member to <b>NULL</b>. </p>
@@ -197,4 +197,4 @@ typedef struct _FLT_CONTEXT_REGISTRATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_CONTEXT_REGISTRATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_CONTEXT_REGISTRATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

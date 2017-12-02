@@ -57,28 +57,28 @@ typedef struct _D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE {
 ## -struct-fields
 <dl>
 
-### -field <b>hHwQueue</b>
+### -field hHwQueue
 
 <dd>
 <p>Hardware queue to queue the wait on.
 </p>
 </dd>
 
-### -field <b>ObjectCount</b>
+### -field ObjectCount
 
 <dd>
 <p>Number of objects to wait on.
 </p>
 </dd>
 
-### -field <b>ObjectHandleArray</b>
+### -field ObjectHandleArray
 
 <dd>
 <p>Handles to monitored fence synchronization objects to wait on.
 </p>
 </dd>
 
-### -field <b>FenceValueArray</b>
+### -field FenceValueArray
 
 <dd>
 <p>Monitored fence values to be waited on.

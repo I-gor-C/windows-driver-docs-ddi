@@ -7,7 +7,7 @@ old-location: wdf\wdf_dma_system_profile_config_init.htm
 old-project: wdf
 ms.assetid: C3E9B4D6-A1BB-425E-A131-D93C3219D28B
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,25 +60,25 @@ void WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
 <p>A pointer to a driver-allocated <a href="..\wdfdmaenabler\ns-wdfdmaenabler--wdf-dma-system-profile-config.md">WDF_DMA_SYSTEM_PROFILE_CONFIG</a> structure.</p>
 </dd>
 
-### -param <i>Address</i> [in]
+### -param Address [in]
 
 <dd>
 <p>The translated address of the register to target for DMA. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>DmaWidth</i> [in]
+### -param DmaWidth [in]
 
 <dd>
 <p>The width of the register specified by <b>Address</b>.</p>
 </dd>
 
-### -param <i>DmaDescriptor</i> [in]
+### -param DmaDescriptor [in]
 
 <dd>
 <p>The translated resource descriptor for the DMA channel assigned 
@@ -152,4 +152,4 @@ void WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_miniport_driver_characteristics.htm
 old-project: netvista
 ms.assetid: 2e2c8522-127d-49d5-a5d6-97f9403bec89
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_MINIPORT_DRIVER_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,7 +83,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -97,7 +97,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_MINIPORT_DRIVER_CHARACTERISTICS_REVISION_3"></a><a id="ndis_miniport_driver_characteristics_revision_3"></a>NDIS_MINIPORT_DRIVER_CHARACTERISTICS_REVISION_3
+### -field NDIS_MINIPORT_DRIVER_CHARACTERISTICS_REVISION_3
 
 <dd>
 <p>Added the <b>SynchronousOidRequestHandler</b> member for NDIS 6.80.</p>
@@ -105,7 +105,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
         <b>Size</b> member to NDIS_SIZEOF_MINIPORT_DRIVER_CHARACTERISTICS_REVISION_3.</p>
 </dd>
 
-### -field <a id="NDIS_MINIPORT_DRIVER_CHARACTERISTICS_REVISION_2"></a><a id="ndis_miniport_driver_characteristics_revision_2"></a>NDIS_MINIPORT_DRIVER_CHARACTERISTICS_REVISION_2
+### -field NDIS_MINIPORT_DRIVER_CHARACTERISTICS_REVISION_2
 
 <dd>
 <p>Added the <b>DirectOidRequestHandler</b>, and <b>CancelDirectOidRequestHandler</b> members for NDIS 6.1.</p>
@@ -113,7 +113,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
         <b>Size</b> member to NDIS_SIZEOF_MINIPORT_DRIVER_CHARACTERISTICS_REVISION_2.</p>
 </dd>
 
-### -field <a id="NDIS_MINIPORT_DRIVER_CHARACTERISTICS_REVISION_1"></a><a id="ndis_miniport_driver_characteristics_revision_1"></a>NDIS_MINIPORT_DRIVER_CHARACTERISTICS_REVISION_1
+### -field NDIS_MINIPORT_DRIVER_CHARACTERISTICS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.0.</p>
@@ -123,13 +123,13 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
 </dl>
 </dd>
 
-### -field <b>MajorNdisVersion</b>
+### -field MajorNdisVersion
 
 <dd>
 <p>The major version of the NDIS library the driver is using. The current value is 0x06.</p>
 </dd>
 
-### -field <b>MinorNdisVersion</b>
+### -field MinorNdisVersion
 
 <dd>
 <p>The minor NDIS version. The following are the available minor version value settings.</p>
@@ -250,21 +250,21 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
 <p> </p>
 </dd>
 
-### -field <b>MajorDriverVersion</b>
+### -field MajorDriverVersion
 
 <dd>
 <p>Reserved for the major version number of the driver. Miniport drivers can specify any value that
      they require.</p>
 </dd>
 
-### -field <b>MinorDriverVersion</b>
+### -field MinorDriverVersion
 
 <dd>
 <p>Reserved for the minor version number of the driver. Miniport drivers can specify any value that
      they require.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitmask that can be set to zero or any of the following flags, combined with bitwise OR: 
@@ -272,13 +272,13 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_INTERMEDIATE_DRIVER"></a><a id="ndis_intermediate_driver"></a>NDIS_INTERMEDIATE_DRIVER
+### -field NDIS_INTERMEDIATE_DRIVER
 
 <dd>
 <p>Set if the caller is an NDIS intermediate driver.</p>
 </dd>
 
-### -field <a id="NDIS_WDM_DRIVER"></a><a id="ndis_wdm_driver"></a>NDIS_WDM_DRIVER
+### -field NDIS_WDM_DRIVER
 
 <dd>
 <p>Set if the caller is an NDIS-WDM miniport driver.</p>
@@ -286,7 +286,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
 </dl>
 </dd>
 
-### -field <b>SetOptionsHandler</b>
+### -field SetOptionsHandler
 
 <dd>
 <p>The entry point for the caller's 
@@ -294,7 +294,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
 <p>Required for Co-NDIS. Suggested for Ethernet miniport drivers that support RSS using MSI-C over PCI.</p>
 </dd>
 
-### -field <b>InitializeHandlerEx</b>
+### -field InitializeHandlerEx
 
 <dd>
 <p>Required. The entry point for the 
@@ -302,14 +302,14 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
      MiniportInitializeEx</a> function.</p>
 </dd>
 
-### -field <b>HaltHandlerEx</b>
+### -field HaltHandlerEx
 
 <dd>
 <p>Required. The entry point for the 
      <a href="..\ndis\nc-ndis-miniport-halt.md">MiniportHaltEx</a> function.</p>
 </dd>
 
-### -field <b>UnloadHandler</b>
+### -field UnloadHandler
 
 <dd>
 <p>Required. The entry point for the 
@@ -317,28 +317,28 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
      MiniportDriverUnload</a> function.</p>
 </dd>
 
-### -field <b>PauseHandler</b>
+### -field PauseHandler
 
 <dd>
 <p>Required. The entry point for the 
      <a href="..\ndis\nc-ndis-miniport-pause.md">MiniportPause</a> function.</p>
 </dd>
 
-### -field <b>RestartHandler</b>
+### -field RestartHandler
 
 <dd>
 <p>Required. The entry point for the 
      <a href="..\ndis\nc-ndis-miniport-restart.md">MiniportRestart</a> function.</p>
 </dd>
 
-### -field <b>OidRequestHandler</b>
+### -field OidRequestHandler
 
 <dd>
 <p>The entry point for the 
      <a href="..\ndis\nc-ndis-miniport-oid-request.md">MiniportOidRequest</a> function. Required for all connection-less miniport drivers, including all Ethernet, WLAN, and IM drivers. Optional for some CoNDIS miniport drivers.</p>
 </dd>
 
-### -field <b>SendNetBufferListsHandler</b>
+### -field SendNetBufferListsHandler
 
 <dd>
 <p>Required. The entry point for the 
@@ -346,7 +346,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
      MiniportSendNetBufferLists</a> function.</p>
 </dd>
 
-### -field <b>ReturnNetBufferListsHandler</b>
+### -field ReturnNetBufferListsHandler
 
 <dd>
 <p>Required. The entry point for the 
@@ -354,14 +354,14 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
      MiniportReturnNetBufferLists</a> function.</p>
 </dd>
 
-### -field <b>CancelSendHandler</b>
+### -field CancelSendHandler
 
 <dd>
 <p>Required. The entry point for the 
      <a href="..\ndis\nc-ndis-miniport-cancel-send.md">MiniportCancelSend</a> function.</p>
 </dd>
 
-### -field <b>CheckForHangHandlerEx</b>
+### -field CheckForHangHandlerEx
 
 <dd>
 <p>Optional. The entry point for the 
@@ -375,7 +375,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
 <p><i>MiniportCheckForHangEx</i> is permitted but not required for miniport drivers that are intended to be installed in line-powered (mains-powered) devices. For drivers targeting NDIS 6.30 and later, consider using <a href="..\ndis\nf-ndis-ndismresetminiport.md">NdisMResetMiniport</a> instead.</p>
 </dd>
 
-### -field <b>ResetHandlerEx</b>
+### -field ResetHandlerEx
 
 <dd>
 <p>Optional (required if you provide <b>CheckForHangHandlerEx</b>). The entry point for the 
@@ -384,7 +384,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
      <b>NULL</b>.</p>
 </dd>
 
-### -field <b>DevicePnPEventNotifyHandler</b>
+### -field DevicePnPEventNotifyHandler
 
 <dd>
 <p>Required. The entry point for the 
@@ -392,14 +392,14 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
      MiniportDevicePnPEventNotify</a> function.</p>
 </dd>
 
-### -field <b>ShutdownHandlerEx</b>
+### -field ShutdownHandlerEx
 
 <dd>
 <p>Required. The entry point for the 
      <a href="..\ndis\nc-ndis-miniport-shutdown.md">MiniportShutdownEx</a> function.</p>
 </dd>
 
-### -field <b>CancelOidRequestHandler</b>
+### -field CancelOidRequestHandler
 
 <dd>
 <p>Required. The entry point for the 
@@ -407,7 +407,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
      MiniportCancelOidRequest</a> function.</p>
 </dd>
 
-### -field <b>DirectOidRequestHandler</b>
+### -field DirectOidRequestHandler
 
 <dd>
 <p>The entry point for the 
@@ -418,7 +418,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
 <p>Required for WLAN and Ethernet miniports that implement RDMA or IPSec offload.</p>
 </dd>
 
-### -field <b>CancelDirectOidRequestHandler</b>
+### -field CancelDirectOidRequestHandler
 
 <dd>
 <p>The entry point for the 
@@ -429,7 +429,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
 <p>Required for WLAN and Ethernet miniports that implement RDMA or IPSec offload.</p>
 </dd>
 
-### -field <b>SynchronousOidRequestHandler</b>
+### -field SynchronousOidRequestHandler
 
 <dd>
 <p>The entry point for the 
@@ -537,4 +537,4 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

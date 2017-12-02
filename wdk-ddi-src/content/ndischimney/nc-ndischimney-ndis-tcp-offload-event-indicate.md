@@ -7,7 +7,7 @@ old-location: netvista\ndistcpoffloadeventhandler.htm
 old-project: netvista
 ms.assetid: b62e8a07-fe7b-4c52-8795-19e4bb889b6e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: BINARY_DATA, BINARY_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ VOID NdisTcpOffloadEventHandler(
 ## -parameters
 <dl>
 
-### -param <i>NdisOffloadHandle</i> [in]
+### -param NdisOffloadHandle [in]
 
 <dd>
 <p>A handle that identifies the offloaded TCP connection on which the indication is being made. When
@@ -69,7 +69,7 @@ VOID NdisTcpOffloadEventHandler(
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that was associated with the connection state.</p>
 </dd>
 
-### -param <i>EventType</i> [in]
+### -param EventType [in]
 
 <dd>
 <p>The event being indicated as one of the following <b>TCP_OFFLOAD_EVENT_TYPE</b> values:
@@ -77,28 +77,28 @@ VOID NdisTcpOffloadEventHandler(
 <p></p>
 <dl>
 
-### -param <a id="TcpIndicateDisconnect"></a><a id="tcpindicatedisconnect"></a><a id="TCPINDICATEDISCONNECT"></a><b>TcpIndicateDisconnect</b>
+### -param TcpIndicateDisconnect
 
 <dd>
 <p>Indicates that the remote host has initiated a graceful disconnect by sending a FIN segment on
        the connection.</p>
 </dd>
 
-### -param <a id="TcpIndicateRetrieve"></a><a id="tcpindicateretrieve"></a><a id="TCPINDICATERETRIEVE"></a><b>TcpIndicateRetrieve</b>
+### -param TcpIndicateRetrieve
 
 <dd>
 <p>Indicates that the offload target is requesting the host stack to terminate the offload of a TCP
        connection.</p>
 </dd>
 
-### -param <a id="TcpIndicateAbort"></a><a id="tcpindicateabort"></a><a id="TCPINDICATEABORT"></a><b>TcpIndicateAbort</b>
+### -param TcpIndicateAbort
 
 <dd>
 <p>Indicates that the remote host has initiated an abortive disconnect by sending an acceptable RST
        segment on the connection.</p>
 </dd>
 
-### -param <a id="TcpIndicateSendBacklogChange"></a><a id="tcpindicatesendbacklogchange"></a><a id="TCPINDICATESENDBACKLOGCHANGE"></a><b>TcpIndicateSendBacklogChange</b>
+### -param TcpIndicateSendBacklogChange
 
 <dd>
 <p>Indicates a change in the preferred send backlog size.</p>
@@ -106,7 +106,7 @@ VOID NdisTcpOffloadEventHandler(
 </dl>
 </dd>
 
-### -param <i>EventSpecificInformation</i> [in]
+### -param EventSpecificInformation [in]
 
 <dd>
 <p>Specifies additional information about the event being indicated as follows:
@@ -114,26 +114,26 @@ VOID NdisTcpOffloadEventHandler(
 <p></p>
 <dl>
 
-### -param <a id="TcpIndicateDisconnect"></a><a id="tcpindicatedisconnect"></a><a id="TCPINDICATEDISCONNECT"></a><b>TcpIndicateDisconnect</b>
+### -param TcpIndicateDisconnect
 
 <dd>
 <p>Not meaningful.</p>
 </dd>
 
-### -param <a id="TcpIndicateRetrieve"></a><a id="tcpindicateretrieve"></a><a id="TCPINDICATERETRIEVE"></a><b>TcpIndicateRetrieve</b>
+### -param TcpIndicateRetrieve
 
 <dd>
 <p>Indicates the reason for the upload request as a <b>TCP_UPLOAD_REASON</b> value. See the Remarks
        section for more information.</p>
 </dd>
 
-### -param <a id="TcpIndicateAbort"></a><a id="tcpindicateabort"></a><a id="TCPINDICATEABORT"></a><b>TcpIndicateAbort</b>
+### -param TcpIndicateAbort
 
 <dd>
 <p>Not meaningful.</p>
 </dd>
 
-### -param <a id="TcpIndicateSendBacklogChange"></a><a id="tcpindicatesendbacklogchange"></a><a id="TCPINDICATESENDBACKLOGCHANGE"></a><b>TcpIndicateSendBacklogChange</b>
+### -param TcpIndicateSendBacklogChange
 
 <dd>
 <p>Specifies the optimum number of send data bytes that the host stack should have outstanding at
@@ -337,7 +337,7 @@ VOID NdisTcpOffloadEventHandler(
 <a href="..\ndischimney\nc-ndischimney-tcp-offload-event-handler.md">ProtocolTcpOffloadEvent</a>
 </dt>
 <dt>
-<a href="NULL">Indicating TCP Chimney-Specific Events</a>
+<a href="netvista.indicating_tcp_chimney_specific_events">Indicating TCP Chimney-Specific Events</a>
 </dt>
 <dt>
 <a href="netvista.responding_to_the_reception_of_a_fin_or_rst_segment">Responding to
@@ -346,4 +346,4 @@ VOID NdisTcpOffloadEventHandler(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_EVENT_INDICATE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_EVENT_INDICATE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

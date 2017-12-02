@@ -57,19 +57,19 @@ typedef struct _KTMOBJECT_CURSOR {
 ## -struct-fields
 <dl>
 
-### -field <b>LastQuery</b>
+### -field LastQuery
 
 <dd>
 <p>After <b>ZwEnumerateTransactionObject</b> returns, this member contains the GUID of the last object that <b>ZwEnumerateTransactionObject</b> enumerated. Before it calls <b>ZwEnumerateTransactionObject</b> the first time, the caller must set this value to zero.</p>
 </dd>
 
-### -field <b>ObjectIdCount</b>
+### -field ObjectIdCount
 
 <dd>
 <p>After <b>ZwEnumerateTransactionObject</b> returns, this member contains the number of GUIDs that the <b>ObjectIds</b> array contains.</p>
 </dd>
 
-### -field <b>ObjectIds</b>
+### -field ObjectIds
 
 <dd>
 <p>A caller-allocated array of GUID-typed elements. After <b>ZwEnumerateTransactionObject</b> returns, this array contains GUIDs that identify enumerated objects.</p>

@@ -7,7 +7,7 @@ old-location: ifsk\ccuninitializecachemap.htm
 old-project: ifsk
 ms.assetid: 00e5abd6-c2d7-4408-aaf4-27a67dd3ee51
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: CcUninitializeCacheMap
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ BOOLEAN CcUninitializeCacheMap(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to a file object for the cached file.</p>
 </dd>
 
-### -param <i>TruncateSize</i> [in, optional]
+### -param TruncateSize [in, optional]
 
 <dd>
 <p>If specified, the file was truncated to the specified size, and the cache should be purged accordingly.</p>
 </dd>
 
-### -param <i>UninitializeCompleteEvent</i> [in, optional]
+### -param UninitializeCompleteEvent [in, optional]
 
 <dd>
 <p>If specified, the provided event is set to the signaled state when the cached file data has been flushed to disk.</p>
@@ -138,4 +138,4 @@ BOOLEAN CcUninitializeCacheMap(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcUninitializeCacheMap routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcUninitializeCacheMap routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

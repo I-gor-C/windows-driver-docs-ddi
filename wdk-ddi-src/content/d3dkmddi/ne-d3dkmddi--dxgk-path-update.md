@@ -57,19 +57,19 @@ typedef enum _DXGK_PATH_UPDATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_PATH_UPDATE_UNMODIFED"></a><a id="dxgk_path_update_unmodifed"></a><b>DXGK_PATH_UPDATE_UNMODIFED</b>
+### -field DXGK_PATH_UPDATE_UNMODIFED
 
 <dd>
 <p>Indicates that this path has not been changed since the last call to SetTimingsFromVidPn.  This allows the driver to skip interrogating VidPn for changes.  Existing scan-out should continue, other than any glitching which might be caused due to reassignment of display resources to satisfy other paths.</p>
 </dd>
 
-### -field <a id="DXGK_PATH_UPDATE_ADDED"></a><a id="dxgk_path_update_added"></a><b>DXGK_PATH_UPDATE_ADDED</b>
+### -field DXGK_PATH_UPDATE_ADDED
 
 <dd>
 <p>Indicates that this path is new so the driver will have to fully comprehend the description of what is required.  Since there is no allocation from which to scan out, the driver must scan out black until the OS associates one or more planes to be scanned out.</p>
 </dd>
 
-### -field <a id="DXGK_PATH_UPDATE_MODIFIED"></a><a id="dxgk_path_update_modified"></a><b>DXGK_PATH_UPDATE_MODIFIED</b>
+### -field DXGK_PATH_UPDATE_MODIFIED
 
 <dd>
 <p>Indicates that this path has been changed since the last call to SetTimingsFromVidPn.  The driver will have to interrogate the VidPn and check the other path info fields in order to understand what has changed.  The OS will have removed all pixel planes prior to making this call so the driver must scan out black until the OS associates one or more planes to be scanned out.
@@ -77,7 +77,7 @@ typedef enum _DXGK_PATH_UPDATE {
 </p>
 </dd>
 
-### -field <a id="DXGK_PATH_UPDATE_REMOVED"></a><a id="dxgk_path_update_removed"></a><b>DXGK_PATH_UPDATE_REMOVED</b>
+### -field DXGK_PATH_UPDATE_REMOVED
 
 <dd>
 <p>Indicates that this path was present in the previous VidPn but has been removed. The driver should be able to optimize the removal without interrogating VidPn to see that the path has been removed. </p>

@@ -55,13 +55,13 @@ typedef struct _tagKSTOPOLOGY_ENDPOINTID {
 ## -struct-fields
 <dl>
 
-### -field <b>TopologyName</b>
+### -field TopologyName
 
 <dd>
 <p>The name of the topology endpoint.</p>
 </dd>
 
-### -field <b>PinId</b>
+### -field PinId
 
 <dd>
 <p>The pin ID of the topology endpoint.</p>

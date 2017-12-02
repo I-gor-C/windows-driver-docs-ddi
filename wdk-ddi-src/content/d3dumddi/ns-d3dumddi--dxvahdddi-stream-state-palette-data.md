@@ -55,13 +55,13 @@ typedef struct _DXVAHDDDI_STREAM_STATE_PALETTE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>[in] The number of palette entries in the array that the <b>pEntries</b> member specifies. The default value is 0. </p>
 </dd>
 
-### -field <b>pEntries</b>
+### -field pEntries
 
 <dd>
 <p>[in] An array of palette entries in either D3DFMT_A8R8G8B8 or "AYUV" <a href="wdkgloss.f#wdkgloss.fourcc#wdkgloss.fourcc"><i>FOURCC</i></a> format type. <b>pEntries</b> is set to <b>NULL</b> to retrieve the number of palette entries. The default value is <b>NULL</b>. </p>

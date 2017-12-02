@@ -69,27 +69,27 @@ typedef struct _D3DDDI_ALLOCATIONLIST {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[in] The allocation handle returned by the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenresource.md">D3DKMTOpenResource</a> function in the <b>hAllocation</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a>   structure, or by the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreateallocation.md">D3DKMTCreateAllocation</a> function in the <b>hAllocation</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-allocationinfo.md">D3DDDI_ALLOCATIONINFO</a> structure.</p>
 </dd>
 
-### -field <b>WriteOperation</b>
+### -field WriteOperation
 
 <dd>
 <p>[in] A UINT that can hold information about whether the allocation can be written to. Setting to 1 indicates the allocation can be written to.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>DoNotRetireInstance</b>
+### -field DoNotRetireInstance
 
 <dd>
 <p>[in] A UINT that can hold information about whether the allocation can be retired. Setting to 1 indicates that the video memory manager should not retire the instance of the allocation because the driver will reference it again in a subsequent DMA buffer (for example, a manual broadcast of a DMA buffer to multiple contexts). All instances of an allocation are eventually retired. This flag is rarely used.</p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>OfferPriority</b>
+### -field OfferPriority
 
 <dd>
 <p>[in] A value from the <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-offer-priority.md">D3DDDI_OFFER_PRIORITY</a> enumeration that indicates the importance of video memory resources  that the user-mode display driver offers for reuse.</p>
@@ -98,7 +98,7 @@ typedef struct _D3DDDI_ALLOCATIONLIST {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
@@ -106,14 +106,14 @@ typedef struct _D3DDDI_ALLOCATIONLIST {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Setting this member to zero is equivalent to setting the remaining 30 bits (0xFFFFFFFC) of the 32-bit <b>Value</b> member to zeros. </p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] A 32-bit value that identifies information about an allocation specification used in DMA buffering.</p>

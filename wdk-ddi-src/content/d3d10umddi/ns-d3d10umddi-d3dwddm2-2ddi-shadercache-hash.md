@@ -54,7 +54,7 @@ typedef struct D3DWDDM2_2DDI_SHADERCACHE_HASH {
 ## -struct-fields
 <dl>
 
-### -field <b>Hash</b>
+### -field Hash
 
 <dd>
 <p>A hash value.</p>

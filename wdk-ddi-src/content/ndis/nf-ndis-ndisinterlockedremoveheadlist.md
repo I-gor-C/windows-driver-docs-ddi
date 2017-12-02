@@ -7,7 +7,7 @@ old-location: netvista\ndisinterlockedremoveheadlist.htm
 old-project: netvista
 ms.assetid: 85cbc158-7132-4666-8161-a78251a62e4d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisInterlockedRemoveHeadList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ PLIST_ENTRY NdisInterlockedRemoveHeadList(
 ## -parameters
 <dl>
 
-### -param <i>ListHead</i> [in]
+### -param ListHead [in]
 
 <dd>
 <p>A pointer to the head of the doubly linked list from which an entry is to be removed.</p>
 </dd>
 
-### -param <i>SpinLock</i> [in]
+### -param SpinLock [in]
 
 <dd>
 <p>A pointer to a caller-supplied spin lock, used to synchronize access to the list.</p>
@@ -181,4 +181,4 @@ PLIST_ENTRY NdisInterlockedRemoveHeadList(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInterlockedRemoveHeadList function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInterlockedRemoveHeadList function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

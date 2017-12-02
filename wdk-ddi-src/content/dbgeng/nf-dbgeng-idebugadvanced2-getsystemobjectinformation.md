@@ -7,7 +7,7 @@ old-location: debugger\getsystemobjectinformation.htm
 old-project: debugger
 ms.assetid: 7e95a16e-e62d-49df-9889-fab0a85f9cbc
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugAdvanced2, GetSystemObjectInformation, IDebugAdvanced2::GetSystemObjectInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ HRESULT GetSystemObjectInformation(
 ## -parameters
 <dl>
 
-### -param <i>Which</i> [in]
+### -param Which [in]
 
 <dd>
 <p>Specifies the type of object and the type of information to return about that object.  <i>Which</i> can take the following value.</p>
@@ -80,14 +80,14 @@ HRESULT GetSystemObjectInformation(
 <p> </p>
 </dd>
 
-### -param <i>Arg64</i> [in]
+### -param Arg64 [in]
 
 <dd>
 <p>Specifies a 64-bit argument.  This parameter has the following interpretations depending on the value of <i>Which</i>:</p>
 <p></p>
 <dl>
 
-### -param <a id="DEBUG_SYSOBJINFO_THREAD_BASIC_INFORMATION"></a><a id="debug_sysobjinfo_thread_basic_information"></a>DEBUG_SYSOBJINFO_THREAD_BASIC_INFORMATION
+### -param DEBUG_SYSOBJINFO_THREAD_BASIC_INFORMATION
 
 <dd>
 <p>Not used.</p>
@@ -95,14 +95,14 @@ HRESULT GetSystemObjectInformation(
 </dl>
 </dd>
 
-### -param <i>Arg32</i> [in]
+### -param Arg32 [in]
 
 <dd>
 <p>Specifies a 32-bit argument.  This parameter has the following interpretations depending on the value of <i>Which</i>:</p>
 <p></p>
 <dl>
 
-### -param <a id="DEBUG_SYSOBJINFO_THREAD_BASIC_INFORMATION"></a><a id="debug_sysobjinfo_thread_basic_information"></a>DEBUG_SYSOBJINFO_THREAD_BASIC_INFORMATION
+### -param DEBUG_SYSOBJINFO_THREAD_BASIC_INFORMATION
 
 <dd>
 <p>The engine thread ID of the desired thread.</p>
@@ -110,7 +110,7 @@ HRESULT GetSystemObjectInformation(
 </dl>
 </dd>
 
-### -param <i>Buffer</i> [out, optional]
+### -param Buffer [out, optional]
 
 <dd>
 <p>Receives the requested information.  The type of data returned in <i>Buffer</i> depends on the value of <i>Which</i>.</p>
@@ -133,13 +133,13 @@ HRESULT GetSystemObjectInformation(
 <p> </p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer <i>Buffer</i>.</p>
 </dd>
 
-### -param <i>InfoSize</i> [out, optional]
+### -param InfoSize [out, optional]
 
 <dd>
 <p>Receives the size of the information that is returned.</p>
@@ -147,7 +147,7 @@ HRESULT GetSystemObjectInformation(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>S_FALSE</b></dt>
@@ -196,4 +196,4 @@ HRESULT GetSystemObjectInformation(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugAdvanced2::GetSystemObjectInformation method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugAdvanced2::GetSystemObjectInformation method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

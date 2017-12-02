@@ -58,26 +58,26 @@ NTSTATUS  AddStreamResource2(
 ## -parameters
 <dl>
 
-### -param <i>PhysicalDeviceObject</i> [in]
+### -param PhysicalDeviceObject [in]
 
 <dd>
 <p>Pointer to the device object. The device object is a system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
 </dd>
 
-### -param <i>ResourceSet</i> [in]
+### -param ResourceSet [in]
 
 <dd>
 <p>PVOID - Reserved for future use, set to NULL. Only device-scoped resources are supported at this time.</p>
 </dd>
 
-### -param <i>ResourceDescriptor</i> [in]
+### -param ResourceDescriptor [in]
 
 <dd>
 <p>PPCSTREAMRESOURCE_DESCRIPTOR - The resource to add. For more information see, <a href="..\portcls\ns-portcls--pcstreamresource-descriptor.md">PCSTREAMRESOURCE_DESCRIPTOR</a>. 
 </p>
 </dd>
 
-### -param <i>ResourceHandle</i> [out]
+### -param ResourceHandle [out]
 
 <dd>
 <p>PCSTREAMRESOURCE* - The location that will hold the resource handle. For more information, see <a href="audio.iportclsstreamresourcemanager_removestreamresource">RemoveStreamResource</a>.  </p>

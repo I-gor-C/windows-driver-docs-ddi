@@ -59,19 +59,19 @@ typedef struct _STORAGE_ZONE_GROUP {
 ## -struct-fields
 <dl>
 
-### -field <b>ZoneCount</b>
+### -field ZoneCount
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>ZoneType</b>
+### -field ZoneType
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>ZoneSize</b>
+### -field ZoneSize
 
 <dd>
 <p>N/A</p>

@@ -57,25 +57,25 @@ typedef struct _D3DDDIARG_CHECKDIRECTFLIPSUPPORT {
 ## -struct-fields
 <dl>
 
-### -field <b>hAppSwapchainResource</b>
+### -field hAppSwapchainResource
 
 <dd>
 <p>[in] A resource in the application's swapchain.</p>
 </dd>
 
-### -field <b>hDWMSwapchainResource</b>
+### -field hDWMSwapchainResource
 
 <dd>
 <p>[in] A resource in the DWM's swapchain.</p>
 </dd>
 
-### -field <b>CheckDirectFlipFlags</b>
+### -field CheckDirectFlipFlags
 
 <dd>
 <p>[in] If this member has a value of <b>D3DDDI_CHECKDIRECTFLIP_IMMEDIATE</b>, seamless flipping should occur immediately and does not have to be synchronized with a VSync interrupt.</p>
 </dd>
 
-### -field <b>Supported</b>
+### -field Supported
 
 <dd>
 <p>[out] Set to <b>TRUE</b> if the driver can seamlessly flip video memory between  an application's managed primary allocations and the DWM's managed primary allocations. Otherwise, set to <b>FALSE</b>.</p>

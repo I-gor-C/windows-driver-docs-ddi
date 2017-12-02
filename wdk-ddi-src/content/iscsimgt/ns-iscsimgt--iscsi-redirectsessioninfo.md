@@ -57,25 +57,25 @@ typedef struct _ISCSI_RedirectSessionInfo {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueSessionId</b>
+### -field UniqueSessionId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
 </dd>
 
-### -field <b>TargetPortalGroupTag</b>
+### -field TargetPortalGroupTag
 
 <dd>
 <p>Target portal group tag for this session Id.</p>
 </dd>
 
-### -field <b>ConnectionCount</b>
+### -field ConnectionCount
 
 <dd>
 <p>Number of connections for each session.</p>
 </dd>
 
-### -field <b>RedirectPortalList</b>
+### -field RedirectPortalList
 
 <dd>
 <p>This provides the redirection information, and it has as many entries as the number of connections for each session.</p>

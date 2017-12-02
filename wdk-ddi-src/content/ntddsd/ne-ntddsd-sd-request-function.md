@@ -7,7 +7,7 @@ old-location: sd\sd_request_function.htm
 old-project: SD
 ms.assetid: 9eec7597-be3a-4811-8786-11de0f9ac3da
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/30/2017
 ms.keywords: STORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST, *PSTORAGE_DIAGNOSTIC_MP_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="SDRF_GET_PROPERTY"></a><a id="sdrf_get_property"></a><b>SDRF_GET_PROPERTY</b>
+### -field SDRF_GET_PROPERTY
 
 <dd>
 <p>Indicates a get property request. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537927">SDBUS_PROPERTY</a> enumeration lists the properties that an SD driver can get or set.</p>
 </dd>
 
-### -field <a id="SDRF_SET_PROPERTY"></a><a id="sdrf_set_property"></a><b>SDRF_SET_PROPERTY</b>
+### -field SDRF_SET_PROPERTY
 
 <dd>
 <p>Indicates a set property request. The SDBUS_PROPERTY enumeration lists the properties that an SD driver can get or set.</p>
 </dd>
 
-### -field <a id="SDRF_DEVICE_COMMAND"></a><a id="sdrf_device_command"></a><b>SDRF_DEVICE_COMMAND</b>
+### -field SDRF_DEVICE_COMMAND
 
 <dd>
 <p>Indicates a device-specific command.</p>
@@ -103,4 +103,4 @@ typedef enum  {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SD_REQUEST_FUNCTION enumeration%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SD_REQUEST_FUNCTION enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

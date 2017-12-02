@@ -54,7 +54,7 @@ NTSTATUS D3DKMTDestroyDCFromMemory(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroydcfrommemory.md">D3DKMT_DESTROYDCFROMMEMORY</a> structure that contains handles to the display context and bitmap.</p>

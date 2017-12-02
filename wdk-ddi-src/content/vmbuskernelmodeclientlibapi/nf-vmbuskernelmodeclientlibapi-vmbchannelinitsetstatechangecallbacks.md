@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelinitsetstatechangecallbacks.htm
 old-project: netvista
 ms.assetid: 4E6088EA-7081-4B80-8F83-15B39A0F30AB
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbChannelInitSetStateChangeCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ NTSTATUS VmbChannelInitSetStateChangeCallbacks(
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>A handle for a channel.  </p>
 </dd>
 
-### -param <i>StateChangeCallbacks</i> [in]
+### -param StateChangeCallbacks [in]
 
 <dd>
 <p>A structure of state change callbacks to set.</p>

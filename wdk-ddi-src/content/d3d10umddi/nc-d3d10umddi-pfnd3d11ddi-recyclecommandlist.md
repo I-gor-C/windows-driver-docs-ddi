@@ -58,13 +58,13 @@ VOID APIENTRY RecycleCommandList(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A deferred-context handle to the display device (graphics context). </p>
 </dd>
 
-### -param <i>hCommandList</i> [in]
+### -param hCommandList [in]
 
 <dd>
 <p> An immediate-context handle to the driver's private data for the command list to recycle. </p>

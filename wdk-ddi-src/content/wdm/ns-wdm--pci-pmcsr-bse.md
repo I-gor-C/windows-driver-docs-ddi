@@ -57,19 +57,19 @@ typedef struct _PCI_PMCSR_BSE {
 ## -struct-fields
 <dl>
 
-### -field <b>Rsvd1</b>
+### -field Rsvd1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>D3HotSupportsStopClock</b>
+### -field D3HotSupportsStopClock
 
 <dd>
 <p>Indicates how the power state of a secondary bus is affected when the primary bus transitions to a D3 power state. For a detailed explanation of the values in this member and how they affect the relationship between the primary and secondary buses, see the <i>PCI Power Management Specification</i>. </p>
 </dd>
 
-### -field <b>BusPowerClockControlEnabled</b>
+### -field BusPowerClockControlEnabled
 
 <dd>
 <p>Indicates, when 1, that the bus's power clock control mechanism is enabled. A value of 0 indicates that the bus power clock control mechanism is disabled.  For a detailed explanation of the meaning of this member, see the <i>PCI Power Management Specification</i>. </p>

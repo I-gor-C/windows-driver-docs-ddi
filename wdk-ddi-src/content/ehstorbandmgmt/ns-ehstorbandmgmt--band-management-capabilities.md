@@ -61,13 +61,13 @@ typedef struct _BAND_MANAGEMENT_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>StructSize</b>
+### -field StructSize
 
 <dd>
 <p>The size of this structure in bytes. Set to <b>sizeof</b>(BAND_MANAGEMENT_CAPABILITIES).</p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Security capability flags for a storage device. This is a bitwise OR value of the following flags.</p>
@@ -79,7 +79,7 @@ typedef struct _BAND_MANAGEMENT_CAPABILITIES {
 <tr>
 <td width="40%"><a id="CAPS_ACTIVATED"></a><a id="caps_activated"></a><dl>
 
-### -field <b>CAPS_ACTIVATED</b>
+### -field CAPS_ACTIVATED
 
 </dl>
 </td>
@@ -90,7 +90,7 @@ typedef struct _BAND_MANAGEMENT_CAPABILITIES {
 <tr>
 <td width="40%"><a id="CAPS_BANDCROSSING_SUPPORTED"></a><a id="caps_bandcrossing_supported"></a><dl>
 
-### -field <b>CAPS_BANDCROSSING_SUPPORTED</b>
+### -field CAPS_BANDCROSSING_SUPPORTED
 
 </dl>
 </td>
@@ -101,7 +101,7 @@ typedef struct _BAND_MANAGEMENT_CAPABILITIES {
 <tr>
 <td width="40%"><a id="CAPS_SID_SECURED"></a><a id="caps_sid_secured"></a><dl>
 
-### -field <b>CAPS_SID_SECURED</b>
+### -field CAPS_SID_SECURED
 
 </dl>
 </td>
@@ -113,7 +113,7 @@ typedef struct _BAND_MANAGEMENT_CAPABILITIES {
 <p> </p>
 </dd>
 
-### -field <b>KeyProtectionMechanism</b>
+### -field KeyProtectionMechanism
 
 <dd>
 <p>The mechanism used to protect the media keys. This member is set to one of the following.</p>
@@ -125,7 +125,7 @@ typedef struct _BAND_MANAGEMENT_CAPABILITIES {
 <tr>
 <td width="40%"><a id="0"></a><dl>
 
-### -field <b>0</b>
+### -field 0
 
 </dl>
 </td>
@@ -136,7 +136,7 @@ typedef struct _BAND_MANAGEMENT_CAPABILITIES {
 <tr>
 <td width="40%"><a id="MEDIAKEY_PROTECTEDBY_VENDORSCHEME"></a><a id="mediakey_protectedby_vendorscheme"></a><dl>
 
-### -field <b>MEDIAKEY_PROTECTEDBY_VENDORSCHEME</b>
+### -field MEDIAKEY_PROTECTEDBY_VENDORSCHEME
 
 </dl>
 </td>
@@ -147,7 +147,7 @@ typedef struct _BAND_MANAGEMENT_CAPABILITIES {
 <tr>
 <td width="40%"><a id="MEDIAKEY_PROTECTEDBY_AUTHKEY"></a><a id="mediakey_protectedby_authkey"></a><dl>
 
-### -field <b>MEDIAKEY_PROTECTEDBY_AUTHKEY</b>
+### -field MEDIAKEY_PROTECTEDBY_AUTHKEY
 
 </dl>
 </td>
@@ -159,31 +159,31 @@ typedef struct _BAND_MANAGEMENT_CAPABILITIES {
 <p> </p>
 </dd>
 
-### -field <b>MinAuthKeyLength</b>
+### -field MinAuthKeyLength
 
 <dd>
 <p>The minimum length, in bytes, of the  band authentication or erase keys accepted by the storage device.</p>
 </dd>
 
-### -field <b>MaxAuthKeyLength</b>
+### -field MaxAuthKeyLength
 
 <dd>
 <p>The maximum length, in bytes, of the  band authentication or erase keys accepted by the storage device.</p>
 </dd>
 
-### -field <b>MaxBandCount</b>
+### -field MaxBandCount
 
 <dd>
 <p>The maximum number of simultaneous bands configured in the storage device. This includes the global band.</p>
 </dd>
 
-### -field <b>MaxSimultaneousReencryptionCount</b>
+### -field MaxSimultaneousReencryptionCount
 
 <dd>
 <p>The number of simultaneous band re-encryptions the hardware on the device supports. If this member is 0, hardware-driven band re-encryptions are not supported.</p>
 </dd>
 
-### -field <b>BandMetadataSize</b>
+### -field BandMetadataSize
 
 <dd>
 <p>The size, in bytes, of the per band metadata store.</p>

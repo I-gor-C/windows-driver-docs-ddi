@@ -59,26 +59,26 @@ typedef struct _KSSTREAM_POINTER_OFFSET {
 ## -struct-fields
 <dl>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>A pointer to a buffer containing input data or a buffer to which data is to be output. Specify <b>Data</b> if the minidriver does not set the KSPIN_FLAG_GENERATE_MAPPINGS flag in the <b>Flags</b> member of <a href="..\ks\ns-ks--kspin-descriptor-ex.md">KSPIN_DESCRIPTOR_EX</a>.</p>
 </dd>
 
-### -field <b>Mappings</b>
+### -field Mappings
 
 <dd>
 <p>A pointer to the first element in an array of <a href="..\ks\ns-ks--ksmapping.md">KSMAPPING</a> structures. Specify <b>Mappings</b> if the minidriver sets the KSPIN_FLAG_GENERATE_MAPPINGS flag in the <b>Flags</b> member of <a href="..\ks\ns-ks--kspin-descriptor-ex.md">KSPIN_DESCRIPTOR_EX</a>. In this case, the <b>Mappings</b> array describes contiguous chunks of physical memory that the client can use to set up a scatter/gather DMA operation with hardware. 
 </p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>If <b>Data</b> is specified above, <b>Count</b> contains the total number of bytes of data available in the <b>Data</b> buffer. If <b>Mappings</b> is specified above, <b>Count</b> contains the total number of mappings in the <b>Mappings</b> table. <b>Count</b> does not change unless the stream pointer moves to a different <i>Frame</i>.</p>
 </dd>
 
-### -field <b>Remaining</b>
+### -field Remaining
 
 <dd>
 <p>This member specifies a value of type ULONG that indicates the number of bytes or mappings remaining at and ahead of the given stream pointer. This value is equal to <b>Count</b> minus the number of bytes or mappings that have been processed. <b>Remaining</b> starts equal to <b>Count</b> and decreases as the stream pointer moves forward.</p>
@@ -86,7 +86,7 @@ typedef struct _KSSTREAM_POINTER_OFFSET {
 </dl>
 
 ## -remarks
-<p>See also <a href="NULL">AVStream DMA Services</a>.</p>
+<p>See also <a href="https://msdn.microsoft.com/ba1c525b-26b0-4778-b58b-f4169cfb972e">AVStream DMA Services</a>.</p>
 
 ## -requirements
 <table>

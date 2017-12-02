@@ -62,43 +62,43 @@ typedef union _WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS {
 ## -struct-fields
 <dl>
 
-### -field <b>ErrorStatus</b>
+### -field ErrorStatus
 
 <dd>
 <p>A single bit that indicates that the <b>ErrorStatus</b> member of the WHEA_PCIXDEVICE_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>IdInfo</b>
+### -field IdInfo
 
 <dd>
 <p>A single bit that indicates that the <b>IdInfo</b> member of the WHEA_PCIXDEVICE_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>MemoryNumber</b>
+### -field MemoryNumber
 
 <dd>
 <p>A single bit that indicates that the <b>MemoryNumber</b> member of the WHEA_PCIXDEVICE_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>IoNumber</b>
+### -field IoNumber
 
 <dd>
 <p>A single bit that indicates that the <b>IoNumber</b> member of the WHEA_PCIXDEVICE_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>RegisterDataPairs</b>
+### -field RegisterDataPairs
 
 <dd>
 <p>A single bit that indicates that the <b>RegisterDataPairs</b> member of the WHEA_PCIXDEVICE_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>ValidBits</b>
+### -field ValidBits
 
 <dd>
 <p>A ULONGLONG representation of the contents of the WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union.</p>

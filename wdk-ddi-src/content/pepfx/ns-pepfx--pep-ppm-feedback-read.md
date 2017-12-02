@@ -61,37 +61,37 @@ typedef struct _PEP_PPM_FEEDBACK_READ {
 ## -struct-fields
 <dl>
 
-### -field <b>CounterIndex</b>
+### -field CounterIndex
 
 <dd>
 <p>[in] The index that identifies which processor performance feedback counter to read. If the platform extension plug-in (PEP) supports N counters for this processor, counter indexes range from 0 to N-1. The PEP previously supplied the number of supported counters in response to a <a href="kernel.pep_notify_ppm_query_capabilities">PEP_NOTIFY_PPM_QUERY_CAPABILITIES</a> notification.</p>
 </dd>
 
-### -field ( <i>unnamed union</i> )
+### -field ( unnamed union )
 
 <dd>
 <p>Either an instantaneous counter value, if the counter generates an instantaneous value, or both relative and accumulated counter values, if the counter hardware generates a relative value. For more information, see Remarks.</p>
 <dl>
 
-### -field <b>InstantaneousValue</b>
+### -field InstantaneousValue
 
 <dd>
 <p>[out] The current instantaneous value read from the counter, if the counter generates an instantaneous value.</p>
 </dd>
 
-### -field ( <i>unnamed struct</i> )
+### -field ( unnamed struct )
 
 <dd>
 <p>The nominal accumulated count and actual count, if the counter hardware generates a relative value.</p>
 <dl>
 
-### -field <b>NominalCount</b>
+### -field NominalCount
 
 <dd>
 <p>[out] The nominal accumulated value of the counter. The accumulated value is the sum of all actual values that have so far been read from the counter hardware.</p>
 </dd>
 
-### -field <b>ActualCount</b>
+### -field ActualCount
 
 <dd>
 <p>[out] The actual value read from the counter.</p>

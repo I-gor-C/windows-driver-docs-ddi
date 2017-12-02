@@ -55,13 +55,13 @@ typedef struct _PEP_ACPI_OBJECT_NAME_WITH_TYPE {
 ## -struct-fields
 <dl>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>A <a href="..\pepfx\ns-pepfx--pep-acpi-object-name.md">PEP_ACPI_OBJECT_NAME</a> structure that contains the four-character name of the ACPI object.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="..\pepfx\ne-pepfx--pep-acpi-object-type.md">PEP_ACPI_OBJECT_TYPE</a> enumeration value that indicates the type of ACPI object. Currently, the only supported object type is a control method.</p>

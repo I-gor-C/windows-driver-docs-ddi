@@ -58,25 +58,25 @@ NTSTATUS UdecxUsbDeviceInitAddStringDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbDeviceInit</i> [in, out]
+### -param UdecxUsbDeviceInit [in, out]
 
 <dd>
-<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>. </p>
+<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>. </p>
 </dd>
 
-### -param <i>String</i> [in]
+### -param String [in]
 
 <dd>
 <p>A Unicode string that contains the USB string descriptor to add to the device.</p>
 </dd>
 
-### -param <i>DescriptorIndex</i> [in]
+### -param DescriptorIndex [in]
 
 <dd>
 <p>The index of the descriptor.</p>
 </dd>
 
-### -param <i>LanguageId</i> [in]
+### -param LanguageId [in]
 
 <dd>
 <p>The language identifier of the string. The client driver must define constants for the language support, such as:</p>
@@ -150,7 +150,7 @@ NTSTATUS UdecxUsbDeviceInitAddStringDescriptor(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>
 </dt>
 <dt>
 <a href="buses.usb_string_descriptors">USB String Descriptors</a>

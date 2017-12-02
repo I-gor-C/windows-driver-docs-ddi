@@ -58,13 +58,13 @@ VOID AVStrMiniAllocatorFreeFrame(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to the allocator's context structure created in <a href="stream.avstrminiinitializeallocator">AVStrMiniInitializeAllocator</a>.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to the frame to be freed.</p>
@@ -79,7 +79,7 @@ VOID AVStrMiniAllocatorFreeFrame(
 
 <p>AVStream calls <i>AVStrMiniFree</i> to free a frame, passing as parameters the context structure set in the initialization dispatch and a pointer to the frame to free.</p>
 
-<p>For more information, see <a href="NULL">KS Allocators</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/07812703-a66f-450a-b28e-4cf765267c4a">KS Allocators</a>.</p>
 
 ## -requirements
 <table>

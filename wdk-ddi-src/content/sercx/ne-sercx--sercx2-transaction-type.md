@@ -58,25 +58,25 @@ typedef enum _SERCX2_TRANSACTION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="SerCx2TransactionTypeDefault"></a><a id="sercx2transactiontypedefault"></a><a id="SERCX2TRANSACTIONTYPEDEFAULT"></a><b>SerCx2TransactionTypeDefault</b>
+### -field SerCx2TransactionTypeDefault
 
 <dd>
 <p>Let SerCx2 decide what type of data transfer to use for the I/O transaction.</p>
 </dd>
 
-### -field <a id="SerCx2TransactionTypePio"></a><a id="sercx2transactiontypepio"></a><a id="SERCX2TRANSACTIONTYPEPIO"></a><b>SerCx2TransactionTypePio</b>
+### -field SerCx2TransactionTypePio
 
 <dd>
 <p>Use programmed I/O (PIO) to perform the I/O transaction.</p>
 </dd>
 
-### -field <a id="SerCx2TransactionTypeSystemDma"></a><a id="sercx2transactiontypesystemdma"></a><a id="SERCX2TRANSACTIONTYPESYSTEMDMA"></a><b>SerCx2TransactionTypeSystemDma</b>
+### -field SerCx2TransactionTypeSystemDma
 
 <dd>
 <p>Use system DMA to perform the I/O transaction.</p>
 </dd>
 
-### -field <a id="SerCx2TransactionTypeCustom"></a><a id="sercx2transactiontypecustom"></a><a id="SERCX2TRANSACTIONTYPECUSTOM"></a><b>SerCx2TransactionTypeCustom</b>
+### -field SerCx2TransactionTypeCustom
 
 <dd>
 <p>Use the custom data-transfer mechanism to perform the I/O transaction.</p>

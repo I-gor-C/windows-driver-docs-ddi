@@ -62,31 +62,31 @@ NTSTATUS ExInitializeLookasideListEx(
 ## -parameters
 <dl>
 
-### -param <i>Lookaside</i> [out]
+### -param Lookaside [out]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554329">LOOKASIDE_LIST_EX</a> structure to initialize. On return, this structure describes an empty lookaside list. The caller must use nonpaged system space for this structure, regardless of whether the entries in the lookaside list are allocated from paged or nonpaged memory. On 64-bit platforms, this structure must be 16-byte aligned.</p>
 </dd>
 
-### -param <i>Allocate</i> [in, optional]
+### -param Allocate [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied <a href="kernel.lookasidelistallocateex">LookasideListAllocateEx</a> routine that allocates a new lookaside-list entry. The <a href="..\wdm\nf-wdm-exallocatefromlookasidelistex.md">ExAllocateFromLookasideListEx</a> routine calls this <i>LookasideListAllocateEx</i> routine if the lookaside list is empty (contains no entries). This parameter is optional and can be specified as <b>NULL</b> if a custom allocation routine is not required. If this parameter is <b>NULL</b>, calls to <b>ExAllocateFromPagedLookasideList</b> automatically allocate the paged or nonpaged storage (as determined by the <i>PoolType</i> parameter) for the new entries.</p>
 </dd>
 
-### -param <i>Free</i> [in, optional]
+### -param Free [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied <a href="kernel.lookasidelistfreeex">LookasideListFreeEx</a> routine that frees a previously allocated lookaside-list entry. The <a href="..\wdm\nf-wdm-exfreetopagedlookasidelist.md">ExFreeToPagedLookasideList</a> routine calls this <i>LookasideListFreeEx</i> routine if the lookaside list is full (that is, the list already contains the maximum number of entries, as determined by the operating system). This parameter is optional and can be specified as <b>NULL</b> if a custom deallocation routine is not required. If this parameter is <b>NULL</b>, calls to <b>ExFreeToPagedLookasideList</b> automatically free the storage for the specified entries.</p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>Specifies the pool type of the entries in the lookaside list. Set this parameter to a valid <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a> enumeration value.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies an optional flag value to modify the default behavior of the <i>LookasideListAllocateEx</i> routine. Set this parameter to zero or to one of the following EX_LOOKASIDE_LIST_EX_FLAGS_<i>XXX</i> flag bits.</p>
@@ -119,19 +119,19 @@ NTSTATUS ExInitializeLookasideListEx(
 <p>If <i>Flags</i> = EX_LOOKASIDE_LIST_EX_FLAGS_FAIL_NO_RAISE, the <i>PoolType</i> parameter value is bitwise ORed with the POOL_QUOTA_FAIL_INSTEAD_OF_RAISE flag bit to form the <i>PoolType</i> parameter value that is passed to the <i>LookasideListAllocateEx</i> routine. The <i>LookasideListAllocateEx</i> routine can pass this <i>PoolType</i> value, without modification, to the <b>ExAllocatePoolWithQuotaTag</b> routine. For more information about the POOL_QUOTA_FAIL_INSTEAD_OF_RAISE flag, see <a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a>. </p>
 </dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>Specifies the size, in bytes, of each entry in the lookaside list.</p>
 </dd>
 
-### -param <i>Tag</i> [in]
+### -param Tag [in]
 
 <dd>
 <p>Specifies the four-byte pool tag to use to mark the allocated storage for lookaside-list entries. For more information about pool tags, see the description of the <i>Tag</i> parameter in <b>ExAllocatePoolWithTag</b>. </p>
 </dd>
 
-### -param <i>Depth</i> [in]
+### -param Depth [in]
 
 <dd>
 <p>Reserved. Always set this parameter to zero.</p>
@@ -154,7 +154,7 @@ NTSTATUS ExInitializeLookasideListEx(
 
 <p>If the driver does not supply <i>LookasideListAllocateEx</i> and <i>LookasideListFreeEx</i> routines, the <b>ExAllocateFromLookasideListEx</b> and <b>ExFreeToLookasideListEx</b> routines use default allocation and deallocation routines instead.</p>
 
-<p>There is no benefit to providing <i>LookasideListAllocateEx</i> and <i>LookasideListFreeEx</i> routines that do nothing but call <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a> and <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>. The same effect can be achieved with better performance by simply setting the <i>Allocate</i> and <i>Free</i> parameters to <b>NULL</b>.</p>
+<p>There is no benefit to providing <i>LookasideListAllocateEx</i> and <i>LookasideListFreeEx</i> routines that do nothing but call <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a> and <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>. The same effect can be achieved with better performance by simply setting the <i>Allocate</i> and <i>Free</i> parameters to <b>NULL</b>.</p>
 
 <p>Before a driver unloads, it must explicitly free any lookaside lists it created. Failure to do so is a serious programming error. Call the <a href="..\wdm\nf-wdm-exdeletelookasidelistex.md">ExDeleteLookasideListEx</a> routine to free a lookaside list. This routine frees the storage for any remaining entries in the specified lookaside list and then removes the list from the system-wide set of active lookaside lists.</p>
 
@@ -259,7 +259,7 @@ NTSTATUS ExInitializeLookasideListEx(
 <a href="..\wdm\nf-wdm-exdeletelookasidelistex.md">ExDeleteLookasideListEx</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-exfreetolookasidelistex.md">ExFreeToLookasideListEx</a>

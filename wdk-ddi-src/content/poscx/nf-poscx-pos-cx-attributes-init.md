@@ -55,7 +55,7 @@ VOID POS_CX_ATTRIBUTES_INIT(
 ## -parameters
 <dl>
 
-### -param <i>PosCxAttrPtr</i> [out]
+### -param PosCxAttrPtr [out]
 
 <dd>
 <p>A pointer to the caller-allocated <a href="..\poscx\ns-poscx--pos-cx-attributes.md">POS_CX_ATTRIBUTE</a> structure to initialize.</p>

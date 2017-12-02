@@ -71,61 +71,61 @@ typedef struct _D3DHAL_CONTEXTCREATEDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>lpDDGbl</b>
+### -field lpDDGbl
 
 <dd>
 <p> Driver structure (legacy).</p>
 </dd>
 
-### -field <b>lpDDLcl</b>
+### -field lpDDLcl
 
 <dd>
 <p>Points to the DirectDraw object that an application must create in order to retrieve the COM Interface to Direct3D. This allows context information to be shared between a DirectDraw application and the driver. <b>lpDDLcl</b> is the common and binding factor between the application's context and the driver's context. It points to a <a href="display.dd_directdraw_local">DD_DIRECTDRAW_LOCAL</a> structure that is used to identify the surfaces that belong to a given Direct3D context and is relevant to the current DirectDraw process only. <b>lpDDLcl</b> is necessary because surfaces (for example, depth buffers, rendering buffers, and textures) can be created before a Direct3D context is ever created in the driver. </p>
 </dd>
 
-### -field <b>lpDDS</b>
+### -field lpDDS
 
 <dd>
 <p> Surface to be used as target.</p>
 </dd>
 
-### -field <b>lpDDSLcl</b>
+### -field lpDDSLcl
 
 <dd>
 <p>Points to a <a href="display.dd_surface_local">DD_SURFACE_LOCAL</a> structure that describes the DirectDraw surface to be used as the rendering target.</p>
 </dd>
 
-### -field <b>lpDDSZ</b>
+### -field lpDDSZ
 
 <dd>
 <p>Surface to be used as Z.</p>
 </dd>
 
-### -field <b>lpDDSZLcl</b>
+### -field lpDDSZLcl
 
 <dd>
 <p>Points to a DD_SURFACE_LOCAL structure that describes the DirectDraw surface to be used as a depth buffer. If this member is <b>NULL</b>, no depth buffering is to be performed.</p>
 </dd>
 
-### -field <b>dwPID</b>
+### -field dwPID
 
 <dd>
 <p>Specifies the current process ID. This is the process ID of the Direct3D application that initiated the creation of the Direct3D device.</p>
 </dd>
 
-### -field <b>dwrstates</b>
+### -field dwrstates
 
 <dd>
 <p>Points to a render state array that the driver should update when it parses render state commands from the command buffer. The array buffer must be large enough to contain at least the specified number of ULONG values.</p>
 </dd>
 
-### -field <b>dwhContext</b>
+### -field dwhContext
 
 <dd>
 <p>Specifies a location that indicates, on input, the version of the Direct3D user-mode runtime and, on output, where the driver returns the context handle upon successfully creating the context. See Remarks for more information. </p>
 </dd>
 
-### -field <b>ddrval</b>
+### -field ddrval
 
 <dd>
 <p>Specifies the location where the driver writes the return code for <a href="..\d3dhal\nc-d3dhal-lpd3dhal-contextcreatecb.md">D3dContextCreate</a>. A return code of D3D_OK indicates success. A return code of D3DHAL_OUTOFCONTEXTS indicates that the driver cannot create the context. For more information, see <a href="https://msdn.microsoft.com/033beb6e-5872-4cb3-8f39-459e2fff82cd">Return Codes for Direct3D Driver Callbacks</a>.</p>

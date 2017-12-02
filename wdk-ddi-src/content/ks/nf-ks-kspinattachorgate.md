@@ -55,13 +55,13 @@ void KsPinAttachOrGate(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure to use an input to the OR gate.</p>
 </dd>
 
-### -param <i>OrGate</i> [in, optional]
+### -param OrGate [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksgate.md">KSGATE</a> structure that is the previously initialized OR gate to connect to the relevant filter's AND gate. If this optional parameter is NULL, any <b>KSGATE</b> currently attached to the pin is detached.</p>
@@ -72,7 +72,7 @@ void KsPinAttachOrGate(
 <p>None</p>
 
 ## -remarks
-<p>To insert the gate, first call <a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>. Then call <b>KsPinAttachOrGate</b>. For more information, see <a href="NULL">Flow Control Gates in AVStream</a>.</p>
+<p>To insert the gate, first call <a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>. Then call <b>KsPinAttachOrGate</b>. For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.</p>
 
 <p>Do not leave an unattached OR gate at filter creation time. Instead, create the OR gate later, for example  when the minidriver instantiates the pin.</p>
 

@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>DataFormat</b>
+### -field DataFormat
 
 <dd>
 <p>Specifies the stream's data format. This member is a structure of type <a href="stream.ksdataformat">KSDATAFORMAT</a>.</p>
 </dd>
 
-### -field <b>BufferDesc</b>
+### -field BufferDesc
 
 <dd>
 <p>Describes the DirectSound buffer. This member is a structure of type <a href="audio.ksdsound_bufferdesc">KSDSOUND_BUFFERDESC</a>.</p>
@@ -69,7 +69,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>In response to an input <i>DataRange</i> parameter that specifies a DirectSound format (see example in <a href="NULL">DirectSound Stream Data Range</a>), the <a href="audio.iminiport_datarangeintersection">IMiniport::DataRangeIntersection</a> method checks to see if the specified pin supports a compatible DirectSound format. If so, the method outputs a KSDATAFORMAT_DSOUND structure (see example in <a href="NULL">DirectSound Stream Data Format</a>) to the buffer that its <i>ResultantFormat</i> parameter points to.</p>
+<p>In response to an input <i>DataRange</i> parameter that specifies a DirectSound format (see example in <a href="https://msdn.microsoft.com/cc31eb2d-7421-4748-b14c-f4d3d15f9884">DirectSound Stream Data Range</a>), the <a href="audio.iminiport_datarangeintersection">IMiniport::DataRangeIntersection</a> method checks to see if the specified pin supports a compatible DirectSound format. If so, the method outputs a KSDATAFORMAT_DSOUND structure (see example in <a href="https://msdn.microsoft.com/41d3d5ad-7336-4ecf-b6e2-a24ee4ec731f">DirectSound Stream Data Format</a>) to the buffer that its <i>ResultantFormat</i> parameter points to.</p>
 
 ## -requirements
 <table>

@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-             Stores the value of the VBUS_VOLTAGE_ALARM_LO_CFG Register. This structure is used in the <a href="buses.ioctl_ucmtcpci_port_controller_set_message_header_info">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_MESSAGE_HEADER_INFO</a> request.
+             Stores the value of the VBUS_VOLTAGE_ALARM_LO_CFG Register. This structure is used in the <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl-ucmtcpci-port-controller-set-message-header-info.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_MESSAGE_HEADER_INFO</a> request.
                  </p>
 
 
@@ -58,13 +58,13 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_SET_MESSAGE_HEADER_INFO_IN_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>PortControllerObject</b>
+### -field PortControllerObject
 
 <dd>
-<p>Handle to the port controller object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.</p>
+<p>Handle to the port controller object that the client driver received in the previous call to <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>.</p>
 </dd>
 
-### -field <b>MessageHeaderInfo</b>
+### -field MessageHeaderInfo
 
 <dd>
 <p>
@@ -93,7 +93,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_SET_MESSAGE_HEADER_INFO_IN_PARAMS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ioctl_ucmtcpci_port_controller_set_message_header_info">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_MESSAGE_HEADER_INFO</a>
+<a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl-ucmtcpci-port-controller-set-message-header-info.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_MESSAGE_HEADER_INFO</a>
 </dt>
 </dl>
 <p> </p>

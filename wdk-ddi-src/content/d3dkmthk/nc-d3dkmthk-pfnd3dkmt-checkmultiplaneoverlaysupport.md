@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY* D3DKMTCheckMultiPlaneOverlaySupport(
 ## -parameters
 <dl>
 
-### -param <i>pMPOSupport</i> [in, out]
+### -param pMPOSupport [in, out]
 
 <dd></dd>
 </dl>

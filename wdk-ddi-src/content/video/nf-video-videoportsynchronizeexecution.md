@@ -58,13 +58,13 @@ BOOLEAN VideoPortSynchronizeExecution(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>Priority</i> 
+### -param Priority 
 
 <dd>
 <p>Specifies the type of priority at which the given <i>SynchronizeRoutine</i> must be run, as one of the following:</p>
@@ -81,13 +81,13 @@ BOOLEAN VideoPortSynchronizeExecution(
 </ul>
 </dd>
 
-### -param <i>SynchronizeRoutine</i> 
+### -param SynchronizeRoutine 
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\video\nc-video-pminiport-synchronize-routine.md">HwVidSynchronizeExecutionCallback</a> function.</p>
 </dd>
 
-### -param <i>Context</i> 
+### -param Context 
 
 <dd>
 <p>Pointer to a caller-supplied context to be passed to the miniport driver's <i>HwVidSynchronizeExecutionCallback</i> function. This pointer can be <b>NULL</b>.</p>

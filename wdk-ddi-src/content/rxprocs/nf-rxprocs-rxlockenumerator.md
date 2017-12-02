@@ -7,7 +7,7 @@ old-location: ifsk\rxlockenumerator.htm
 old-project: ifsk
 ms.assetid: 8d14604f-c9e5-4a2d-bb51-ef1925b39118
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxLockEnumerator
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ BOOLEAN RxLockEnumerator(
 ## -parameters
 <dl>
 
-### -param <i>SrvOpen</i> [in, out]
+### -param SrvOpen [in, out]
 
 <dd>
 <p>A pointer to the SRV_OPEN structure on the FCB to be enumerated.</p>
 </dd>
 
-### -param <i>ContinuationHandle</i> [in, out]
+### -param ContinuationHandle [in, out]
 
 <dd>
 <p>A pointer to a handle passed back and forth representing the state of the enumeration. If this parameter is a <b>NULL</b> pointer, then this is the start of an lock enumeration.</p>
 </dd>
 
-### -param <i>FileOffset</i> [out]
+### -param FileOffset [out]
 
 <dd>
 <p>A pointer to the file offset of the returned lock.</p>
 </dd>
 
-### -param <i>LockRange</i> [out]
+### -param LockRange [out]
 
 <dd>
 <p>A pointer to the lock range of the returned lock.</p>
 </dd>
 
-### -param <i>IsLockExclusive</i> [out]
+### -param IsLockExclusive [out]
 
 <dd>
 <p>A pointer to a BOOLEAN indicating if the returned lock is an exclusive lock.</p>
@@ -141,4 +141,4 @@ BOOLEAN RxLockEnumerator(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxLockEnumerator function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxLockEnumerator function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

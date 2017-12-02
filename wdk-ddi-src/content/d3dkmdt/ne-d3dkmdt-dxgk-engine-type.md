@@ -61,52 +61,52 @@ typedef enum _DXGK_ENGINE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_ENGINE_TYPE_OTHER"></a><a id="dxgk_engine_type_other"></a><b>DXGK_ENGINE_TYPE_OTHER</b>
+### -field DXGK_ENGINE_TYPE_OTHER
 
 <dd>
 <p>The engine does not match any of the other <a href="..\d3dkmdt\ne-d3dkmdt-dxgk-engine-type.md">DXGK_ENGINE_TYPE</a> enumeration values. This value is used for proprietary or unique functionality that is not exposed by typical adapters, as well as for an engine that performs work that doesn't fall under another category.</p>
 </dd>
 
-### -field <a id="DXGK_ENGINE_TYPE_3D"></a><a id="dxgk_engine_type_3d"></a><b>DXGK_ENGINE_TYPE_3D</b>
+### -field DXGK_ENGINE_TYPE_3D
 
 <dd>
 <p>The adapter's 3-D processing engine. All adapters that are not a <a href="display.kernel_mode_display-only_driver__kmdod__interface">display-only device</a> have one 3-D engine.</p>
 </dd>
 
-### -field <a id="DXGK_ENGINE_TYPE_VIDEO_DECODE"></a><a id="dxgk_engine_type_video_decode"></a><b>DXGK_ENGINE_TYPE_VIDEO_DECODE</b>
+### -field DXGK_ENGINE_TYPE_VIDEO_DECODE
 
 <dd>
 <p>The engine that handles video decoding, including decompression of video frames from an input stream into typical YUV surfaces.</p>
 <p>The workload packets for an H.264 video codec workload test must appear on either the decode engine or the 3-D engine.</p>
 </dd>
 
-### -field <a id="DXGK_ENGINE_TYPE_VIDEO_ENCODE"></a><a id="dxgk_engine_type_video_encode"></a><b>DXGK_ENGINE_TYPE_VIDEO_ENCODE</b>
+### -field DXGK_ENGINE_TYPE_VIDEO_ENCODE
 
 <dd>
 <p>The engine that handles video encoding, including compression of typical video frames into an encoded video format.</p>
 </dd>
 
-### -field <a id="DXGK_ENGINE_TYPE_VIDEO_PROCESSING"></a><a id="dxgk_engine_type_video_processing"></a><b>DXGK_ENGINE_TYPE_VIDEO_PROCESSING</b>
+### -field DXGK_ENGINE_TYPE_VIDEO_PROCESSING
 
 <dd>
 <p>The engine that is responsible for any video processing that is done after a video input stream is decoded. Such processing can include RGB surface conversion, filtering, stretching, color correction, deinterlacing, or other steps that are required before the final image is rendered to the display screen.</p>
 <p>The workload packets for workload tests must appear on either the video processing engine or the 3-D engine.</p>
 </dd>
 
-### -field <a id="DXGK_ENGINE_TYPE_SCENE_ASSEMBLY"></a><a id="dxgk_engine_type_scene_assembly"></a><b>DXGK_ENGINE_TYPE_SCENE_ASSEMBLY</b>
+### -field DXGK_ENGINE_TYPE_SCENE_ASSEMBLY
 
 <dd>
 <p>The engine that performs vertex processing of 3-D workloads as a preliminary pass prior to the remainder of the 3-D rendering. This engine also stores vertices in bins that tile-based rendering engines use.</p>
 </dd>
 
-### -field <a id="DXGK_ENGINE_TYPE_COPY"></a><a id="dxgk_engine_type_copy"></a><b>DXGK_ENGINE_TYPE_COPY</b>
+### -field DXGK_ENGINE_TYPE_COPY
 
 <dd>
 <p>The engine that is a copy engine used for moving data. This engine can perform subresource updates, blitting, paging, or other similar data handling.</p>
 <p>The workload packets for calls to <b>CopySubresourceRegion</b> or <b>UpdateSubResource</b> methods of Direct3D 10 and Direct3D 11 must appear on either the copy engine or the 3-D engine.</p>
 </dd>
 
-### -field <a id="DXGK_ENGINE_TYPE_OVERLAY"></a><a id="dxgk_engine_type_overlay"></a><b>DXGK_ENGINE_TYPE_OVERLAY</b>
+### -field DXGK_ENGINE_TYPE_OVERLAY
 
 <dd>
 <p>The virtual engine that is used for synchronized flipping of overlays in Direct3D 9.</p>

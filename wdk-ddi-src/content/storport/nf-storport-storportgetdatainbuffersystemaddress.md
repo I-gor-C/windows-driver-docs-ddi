@@ -57,19 +57,19 @@ ULONG StorPortGetDataInBufferSystemAddress(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Srb</i> [in]
+### -param Srb [in]
 
 <dd>
 <p>The request block to containing the input data buffer.</p>
 </dd>
 
-### -param <i>SystemAddress</i> [out]
+### -param SystemAddress [out]
 
 <dd>
 <p>A pointer to  a an  address  value to receive the system address for the input data buffer in <i>Srb</i>.</p>

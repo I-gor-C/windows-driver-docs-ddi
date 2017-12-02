@@ -58,25 +58,25 @@ typedef enum _UCM_TYPE_C_CURRENT {
 ## -enum-fields
 <dl>
 
-### -field <a id="UcmTypeCCurrentInvalid"></a><a id="ucmtypeccurrentinvalid"></a><a id="UCMTYPECCURRENTINVALID"></a><b>UcmTypeCCurrentInvalid</b>
+### -field UcmTypeCCurrentInvalid
 
 <dd>
 <p>Indicates the power sourcing current state is invalid.</p>
 </dd>
 
-### -field <a id="UcmTypeCCurrentDefaultUsb"></a><a id="ucmtypeccurrentdefaultusb"></a><a id="UCMTYPECCURRENTDEFAULTUSB"></a><b>UcmTypeCCurrentDefaultUsb</b>
+### -field UcmTypeCCurrentDefaultUsb
 
 <dd>
 <p>Indicates the power sourcing current is the default USB current.</p>
 </dd>
 
-### -field <a id="UcmTypeCCurrent1500mA"></a><a id="ucmtypeccurrent1500ma"></a><a id="UCMTYPECCURRENT1500MA"></a><b>UcmTypeCCurrent1500mA</b>
+### -field UcmTypeCCurrent1500mA
 
 <dd>
 <p>Indicates the power sourcing current is 1500 mA.</p>
 </dd>
 
-### -field <a id="UcmTypeCCurrent3000mA"></a><a id="ucmtypeccurrent3000ma"></a><a id="UCMTYPECCURRENT3000MA"></a><b>UcmTypeCCurrent3000mA</b>
+### -field UcmTypeCCurrent3000mA
 
 <dd>
 <p>Indicates the power sourcing current is 3000 mA.</p>
@@ -135,10 +135,10 @@ typedef enum _UCM_TYPE_C_CURRENT {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmconnectortypecattach">UcmConnectorTypeCAttach</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
 </dt>
 <dt>
-<a href="buses.ucmconnectortypeccurrentadchanged">UcmConnectorTypeCCurrentAdChanged</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypeccurrentadchanged.md">UcmConnectorTypeCCurrentAdChanged</a>
 </dt>
 </dl>
 <p> </p>

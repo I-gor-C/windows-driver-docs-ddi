@@ -61,31 +61,31 @@ NTSTATUS KsCreateFilterFactory(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure for which to add a filter factory. </p>
 </dd>
 
-### -param <i>Descriptor</i> [in]
+### -param Descriptor [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksfilter-descriptor.md">KSFILTER_DESCRIPTOR</a> that describes the characteristics of individual filters that this factory can create.</p>
 </dd>
 
-### -param <i>RefString</i> [in, optional]
+### -param RefString [in, optional]
 
 <dd>
 <p>If this argument is provided, this string is used as the reference string for filters created by this factory. Otherwise, the reference GUID provided in the descriptor is used.</p>
 </dd>
 
-### -param <i>SecurityDescriptor</i> [in, optional]
+### -param SecurityDescriptor [in, optional]
 
 <dd>
 <p>The security descriptor to use in creation of filters by this filter factory. If <b>NULL</b>, no descriptor is provided.</p>
 </dd>
 
-### -param <i>CreateItemFlags</i> [in]
+### -param CreateItemFlags [in]
 
 <dd>
 <p>The following table lists the flags that the minidriver writer uses to specify the characteristics of filters that the new filter factory can create. Set this parameter to the bitwise OR of the flags below.</p>
@@ -130,7 +130,7 @@ NTSTATUS KsCreateFilterFactory(
 <p> </p>
 </dd>
 
-### -param <i>SleepCallback</i> [in, optional]
+### -param SleepCallback [in, optional]
 
 <dd>
 <p>A pointer to a minidriver-provided routine that receives notifications that the device associated with this filter is going to sleep. Prototype the routine as follows:</p>
@@ -148,7 +148,7 @@ NTSTATUS KsCreateFilterFactory(
 <p>If this parameter is <b>NULL</b>, this filter factory is not notified that the device is going to sleep. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff543162">Device Power States</a>.</p>
 </dd>
 
-### -param <i>WakeCallback</i> [in, optional]
+### -param WakeCallback [in, optional]
 
 <dd>
 <p>A pointer to a minidriver-provided routine that receives notifications that the device associated with this filter is waking up. Prototype the routine as follows:</p>
@@ -166,7 +166,7 @@ NTSTATUS KsCreateFilterFactory(
 <p>If this parameter is <b>NULL</b>, this filter factory is not notified that the device is waking up. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff543162">Device Power States</a>. </p>
 </dd>
 
-### -param <i>FilterFactory</i> [out, optional]
+### -param FilterFactory [out, optional]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> structure that AVStream sets to point to the newly created filter factory object. If this optional parameter is unspecified, the caller is not informed about the resulting filter factory object.</p>
@@ -181,7 +181,7 @@ NTSTATUS KsCreateFilterFactory(
 
 <p>If you call <b>KsCreateFilterFactory</b> in the context of <i>AVStrMiniDevicePostStart</i> or before, you do not need to do this.</p>
 
-<p>Before calling this function, the minidriver must obtain the device mutex. For information about how to do this, see <a href="NULL">Device Mutex in AVStream</a>.</p>
+<p>Before calling this function, the minidriver must obtain the device mutex. For information about how to do this, see <a href="https://msdn.microsoft.com/cec2a040-59d6-44ef-aef1-04f434811d60">Device Mutex in AVStream</a>.</p>
 
 <p>This function should be used by minidrivers that either initialize themselves without a call to <a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a> or that must dynamically add and remove new filter types. </p>
 

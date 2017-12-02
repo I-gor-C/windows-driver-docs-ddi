@@ -55,7 +55,7 @@ CCHAR RtlFindMostSignificantBit(
 ## -parameters
 <dl>
 
-### -param <i>Set</i> [in]
+### -param Set [in]
 
 <dd>
 <p>The 64-bit value to be searched for its most significant nonzero bit. </p>

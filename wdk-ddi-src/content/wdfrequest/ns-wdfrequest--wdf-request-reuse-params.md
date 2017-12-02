@@ -7,7 +7,7 @@ old-location: wdf\wdf_request_reuse_params.htm
 old-project: wdf
 ms.assetid: 292e8a75-2035-4333-8a3c-28e79549d374
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_REQUEST_REUSE_PARAMS, WDF_REQUEST_REUSE_PARAMS, *PWDF_REQUEST_REUSE_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,28 +59,28 @@ typedef struct _WDF_REQUEST_REUSE_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitwise OR of one or more <a href="..\wdfrequest\ne-wdfrequest--wdf-request-reuse-flags.md">WDF_REQUEST_REUSE_FLAGS</a>-typed flags.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>An NTSTATUS value that the framework assigns to the request.</p>
 </dd>
 
-### -field <b>NewIrp</b>
+### -field NewIrp
 
 <dd>
-<p>A pointer to an <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure. This member's value is optional and can be <b>NULL</b>. </p>
+<p>A pointer to an <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure. This member's value is optional and can be <b>NULL</b>. </p>
 </dd>
 </dl>
 
@@ -143,4 +143,4 @@ typedef struct _WDF_REQUEST_REUSE_PARAMS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_REUSE_PARAMS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_REUSE_PARAMS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

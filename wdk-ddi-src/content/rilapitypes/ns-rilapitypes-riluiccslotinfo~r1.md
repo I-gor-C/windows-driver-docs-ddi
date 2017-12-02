@@ -7,7 +7,7 @@ old-location: netvista\riluiccslotinfo_2.htm
 old-project: netvista
 ms.assetid: 5fd25815-40b1-4fba-a7e8-fed24d731ab0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUICCSLOTINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef struct _RILUICCSLOTINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwNumOfUiccSlots</b>
+### -field dwNumOfUiccSlots
 
 <dd></dd>
 
-### -field <b>dwSlotState</b>
+### -field dwSlotState
 
 <dd></dd>
 </dl>

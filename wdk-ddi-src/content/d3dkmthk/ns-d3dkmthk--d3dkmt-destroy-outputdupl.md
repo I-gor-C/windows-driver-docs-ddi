@@ -56,15 +56,15 @@ typedef struct _D3DKMT_DESTROY_OUTPUTDUPL {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd></dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd></dd>
 
-### -field <b>bDestroyAllContexts</b>
+### -field bDestroyAllContexts
 
 <dd></dd>
 </dl>

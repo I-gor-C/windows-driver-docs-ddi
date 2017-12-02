@@ -67,73 +67,73 @@ typedef struct _DXGKARG_SUBMITCOMMANDVIRTUAL {
 ## -struct-fields
 <dl>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>The handle returned from <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a>.</p>
 </dd>
 
-### -field <b>DmaBufferVirtualAddress</b>
+### -field DmaBufferVirtualAddress
 
 <dd>
 <p>The virtual address for the DMA buffer in the context of the submitting process.</p>
 </dd>
 
-### -field <b>DmaBufferSize</b>
+### -field DmaBufferSize
 
 <dd>
 <p>The size of the DMA buffer in bytes.</p>
 </dd>
 
-### -field <b>pDmaBufferPrivateData</b>
+### -field pDmaBufferPrivateData
 
 <dd>
 <p>A pointer to the driver-private data buffer.</p>
 </dd>
 
-### -field <b>DmaBufferPrivateDataSize</b>
+### -field DmaBufferPrivateDataSize
 
 <dd>
 <p>The size of the driver-private data buffer in bytes.</p>
 </dd>
 
-### -field <b>DmaBufferUmdPrivateDataSize</b>
+### -field DmaBufferUmdPrivateDataSize
 
 <dd>
 <p>Size of the private driver data, in bytes, that was set by the user mode driver in <b>SubmitCommandCb</b>. When <b>SubmitCommandCb</b> is called, the DirectX graphics kernel allocates a buffer for the private driver data with the size equal to <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-contextinfo.md">DXGK_CONTEXTINFO</a>::<b>DmaBufferPrivateDataSize</b>. This size was reported by the kernel mode driver in the <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a> call. The DirectX graphics kernel copies the driver private data from the <b>SubmitCommandCb</b> to the allocated buffer.</p>
 </dd>
 
-### -field <b>SubmissionFenceId</b>
+### -field SubmissionFenceId
 
 <dd>
 <p>A unique identifier that the driver can write into the fence command in the ring buffer, which is the buffer where DMA buffers are queued for the GPU to run. For more information about these types of identifiers, see <a href="https://msdn.microsoft.com/0ec8a4eb-c441-47ae-b5de-d86e6065ffd4">Supplying Fence Identifiers</a>.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for a flip operation. This member is valid only when the <b>Flip</b> or <b>FlipWithNoWait</b> bit-field flag is set in the <b>Flags</b> member.</p>
 </dd>
 
-### -field <b>FlipInterval</b>
+### -field FlipInterval
 
 <dd>
 <p>A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi-flipinterval-type.md">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs). <b>FlipInterval</b> is valid only if the <b>Flip</b> bit-field flag is set (that is, <b>TRUE</b>) in the <b>Flags</b> member.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-submitcommandflags.md">DXGK_SUBMITCOMMANDFLAGS</a> structure that identifies information about the DMA buffer to submit.</p>
 </dd>
 
-### -field <b>EngineOrdinal</b>
+### -field EngineOrdinal
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>The zero-based index of the node that the context is created for. Identifies the node when the context is <b>NULL</b>.</p>

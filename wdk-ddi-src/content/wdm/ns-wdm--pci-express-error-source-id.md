@@ -63,43 +63,43 @@ typedef union _PCI_EXPRESS_ERROR_SOURCE_ID {
 ## -struct-fields
 <dl>
 
-### -field <b>CorrectableSourceIdFun</b>
+### -field CorrectableSourceIdFun
 
 <dd>
 <p>The function number of the requester that reported the first correctable error.</p>
 </dd>
 
-### -field <b>CorrectableSourceIdDev</b>
+### -field CorrectableSourceIdDev
 
 <dd>
 <p>The device number of the requester that reported the first correctable error.</p>
 </dd>
 
-### -field <b>CorrectableSourceIdBus</b>
+### -field CorrectableSourceIdBus
 
 <dd>
 <p>The bus number of the requester that reported the first correctable error.</p>
 </dd>
 
-### -field <b>UncorrectableSourceIdFun</b>
+### -field UncorrectableSourceIdFun
 
 <dd>
 <p>The function number of the requester that reported the first uncorrectable error.</p>
 </dd>
 
-### -field <b>UncorrectableSourceIdDev</b>
+### -field UncorrectableSourceIdDev
 
 <dd>
 <p>The device number of the requester that reported the first uncorrectable error.</p>
 </dd>
 
-### -field <b>UncorrectableSourceIdBus</b>
+### -field UncorrectableSourceIdBus
 
 <dd>
 <p>The bus number of the requester that reported the first uncorrectable error.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_ERROR_SOURCE_ID structure.</p>

@@ -7,7 +7,7 @@ old-location: debugger\outputversioninformation.htm
 old-project: debugger
 ms.assetid: cbf688b4-a174-4ab0-af98-2c0db1b2ab3a
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl3, OutputVersionInformation, IDebugControl3::OutputVersionInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,15 +54,15 @@ HRESULT OutputVersionInformation(
 ## -parameters
 <dl>
 
-### -param <i>OutputControl</i> [in]
+### -param OutputControl [in]
 
 <dd>
-<p>Specifies where to send the output.  For possible values, see <a href="debugger.debug_outctl_xxx">DEBUG_OUTCTL_XXX</a>.</p>
+<p>Specifies where to send the output.  For possible values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541517">DEBUG_OUTCTL_XXX</a>.</p>
 </dd>
 </dl>
 
 ## -returns
-<p>This method may also return other error values, including error values caused by the engine being busy.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return other error values, including error values caused by the engine being busy.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

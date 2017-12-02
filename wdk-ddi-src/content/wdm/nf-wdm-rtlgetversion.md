@@ -55,7 +55,7 @@ NTSTATUS RtlGetVersion(
 ## -parameters
 <dl>
 
-### -param <i>lpVersionInformation</i> [out]
+### -param lpVersionInformation [out]
 
 <dd>
 <p>Pointer to either a <a href="kernel.rtl_osversioninfow">RTL_OSVERSIONINFOW</a> structure or a <a href="kernel.rtl_osversioninfoexw">RTL_OSVERSIONINFOEXW</a> structure that contains the version information about the currently running operating system. A caller specifies which input structure is used by setting the <b>dwOSVersionInfoSize</b> member of the structure to the size in bytes of the structure that is used. </p>

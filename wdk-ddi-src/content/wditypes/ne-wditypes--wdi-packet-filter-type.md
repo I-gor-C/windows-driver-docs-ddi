@@ -7,7 +7,7 @@ old-location: netvista\wdi_packet_filter_type.htm
 old-project: netvista
 ms.assetid: 252CE7F6-2DA7-45F8-97F0-85B51A0181C2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,13 +85,13 @@ typedef enum _WDI_PACKET_FILTER_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_PACKET_FILTER_NONE"></a><a id="wdi_packet_filter_none"></a><b>WDI_PACKET_FILTER_NONE</b>
+### -field WDI_PACKET_FILTER_NONE
 
 <dd>
 <p>None.</p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_DIRECTED"></a><a id="wdi_packet_filter_directed"></a><b>WDI_PACKET_FILTER_DIRECTED</b>
+### -field WDI_PACKET_FILTER_DIRECTED
 
 <dd>
 <p>Directed packets. Directed packets contain a destination address equal to the station address of the NIC.
@@ -99,7 +99,7 @@ typedef enum _WDI_PACKET_FILTER_TYPE {
 </p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_MULTICAST"></a><a id="wdi_packet_filter_multicast"></a><b>WDI_PACKET_FILTER_MULTICAST</b>
+### -field WDI_PACKET_FILTER_MULTICAST
 
 <dd>
 <p>Multicast address packets sent to addresses in the multicast address list. 
@@ -107,7 +107,7 @@ typedef enum _WDI_PACKET_FILTER_TYPE {
 </p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_ALL_MULTICAST"></a><a id="wdi_packet_filter_all_multicast"></a><b>WDI_PACKET_FILTER_ALL_MULTICAST</b>
+### -field WDI_PACKET_FILTER_ALL_MULTICAST
 
 <dd>
 <p>All multicast address packets, not just the ones enumerated in the multicast address list.
@@ -115,7 +115,7 @@ typedef enum _WDI_PACKET_FILTER_TYPE {
 </p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_BROADCAST"></a><a id="wdi_packet_filter_broadcast"></a><b>WDI_PACKET_FILTER_BROADCAST</b>
+### -field WDI_PACKET_FILTER_BROADCAST
 
 <dd>
 <p>Broadcast packets.
@@ -123,7 +123,7 @@ typedef enum _WDI_PACKET_FILTER_TYPE {
 </p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_PROMISCUOUS"></a><a id="wdi_packet_filter_promiscuous"></a><b>WDI_PACKET_FILTER_PROMISCUOUS</b>
+### -field WDI_PACKET_FILTER_PROMISCUOUS
 
 <dd>
 <p>Specifies all packets regardless of whether VLAN filtering is enabled or not and whether the VLAN identifier matches or not.
@@ -131,7 +131,7 @@ typedef enum _WDI_PACKET_FILTER_TYPE {
 </p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_802_11_RAW_DATA"></a><a id="wdi_packet_filter_802_11_raw_data"></a><b>WDI_PACKET_FILTER_802_11_RAW_DATA</b>
+### -field WDI_PACKET_FILTER_802_11_RAW_DATA
 
 <dd>
 <p>An 802.11 media access control (MAC) protocol data unit (MPDU) frame, which contains all of the data in the format received by the 802.11 station. When this filter is set, the driver must indicate every unmodified MPDU fragment before it indicates the MAC service data unit (MSDU) packet reassembled from the MPDU fragments. 
@@ -145,7 +145,7 @@ typedef enum _WDI_PACKET_FILTER_TYPE {
 </p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_802_11_DIRECTED_MGMT"></a><a id="wdi_packet_filter_802_11_directed_mgmt"></a><b>WDI_PACKET_FILTER_802_11_DIRECTED_MGMT</b>
+### -field WDI_PACKET_FILTER_802_11_DIRECTED_MGMT
 
 <dd>
 <p>Directed 802.11 management packets. Directed packets contain a destination address equal to the station address of the NIC.
@@ -153,19 +153,19 @@ typedef enum _WDI_PACKET_FILTER_TYPE {
 </p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_802_11_BROADCAST_MGMT"></a><a id="wdi_packet_filter_802_11_broadcast_mgmt"></a><b>WDI_PACKET_FILTER_802_11_BROADCAST_MGMT</b>
+### -field WDI_PACKET_FILTER_802_11_BROADCAST_MGMT
 
 <dd>
 <p>Broadcast 802.11 management packets received by the 802.11 station.</p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_802_11_MULTICAST_MGMT"></a><a id="wdi_packet_filter_802_11_multicast_mgmt"></a><b>WDI_PACKET_FILTER_802_11_MULTICAST_MGMT</b>
+### -field WDI_PACKET_FILTER_802_11_MULTICAST_MGMT
 
 <dd>
 <p>Multicast 802.11 management packets sent to addresses in the multicast address list.</p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_802_11_ALL_MULTICAST_MGMT"></a><a id="wdi_packet_filter_802_11_all_multicast_mgmt"></a><b>WDI_PACKET_FILTER_802_11_ALL_MULTICAST_MGMT</b>
+### -field WDI_PACKET_FILTER_802_11_ALL_MULTICAST_MGMT
 
 <dd>
 <p>All multicast 802.11 management packets received by the 802.11 station, regardless of whether the destination address in the 802.11 MAC header is in the multicast address list.
@@ -173,13 +173,13 @@ typedef enum _WDI_PACKET_FILTER_TYPE {
 </p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_802_11_PROMISCUOUS_MGMT"></a><a id="wdi_packet_filter_802_11_promiscuous_mgmt"></a><b>WDI_PACKET_FILTER_802_11_PROMISCUOUS_MGMT</b>
+### -field WDI_PACKET_FILTER_802_11_PROMISCUOUS_MGMT
 
 <dd>
 <p>All 802.11 management packets received by the 802.11 station.</p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_802_11_RAW_MGMT"></a><a id="wdi_packet_filter_802_11_raw_mgmt"></a><b>WDI_PACKET_FILTER_802_11_RAW_MGMT</b>
+### -field WDI_PACKET_FILTER_802_11_RAW_MGMT
 
 <dd>
 <p>An 802.11 MPDU management frame, which contains all of the data in the format received by the 802.11 station. When this filter is set, the driver must indicate every unmodified MPDU fragment before it indicates the MAC management protocol data unit (MMPDU) packet reassembled from the MPDU fragments. 
@@ -190,7 +190,7 @@ typedef enum _WDI_PACKET_FILTER_TYPE {
 </p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_802_11_DIRECTED_CTRL"></a><a id="wdi_packet_filter_802_11_directed_ctrl"></a><b>WDI_PACKET_FILTER_802_11_DIRECTED_CTRL</b>
+### -field WDI_PACKET_FILTER_802_11_DIRECTED_CTRL
 
 <dd>
 <p>Directed 802.11 control packets. Directed packets contain a destination address equal to the station address of the NIC.
@@ -198,7 +198,7 @@ typedef enum _WDI_PACKET_FILTER_TYPE {
 </p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_802_11_BROADCAST_CTRL"></a><a id="wdi_packet_filter_802_11_broadcast_ctrl"></a><b>WDI_PACKET_FILTER_802_11_BROADCAST_CTRL</b>
+### -field WDI_PACKET_FILTER_802_11_BROADCAST_CTRL
 
 <dd>
 <p>Broadcast 802.11 control packets received by the 802.11 station.
@@ -206,7 +206,7 @@ typedef enum _WDI_PACKET_FILTER_TYPE {
 </p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_802_11_PROMISCUOUS_CTRL"></a><a id="wdi_packet_filter_802_11_promiscuous_ctrl"></a><b>WDI_PACKET_FILTER_802_11_PROMISCUOUS_CTRL</b>
+### -field WDI_PACKET_FILTER_802_11_PROMISCUOUS_CTRL
 
 <dd>
 <p>All 802.11 control packets received by the 802.11 station.
@@ -214,7 +214,7 @@ typedef enum _WDI_PACKET_FILTER_TYPE {
 </p>
 </dd>
 
-### -field <a id="WDI_PACKET_FILTER_ALL"></a><a id="wdi_packet_filter_all"></a><b>WDI_PACKET_FILTER_ALL</b>
+### -field WDI_PACKET_FILTER_ALL
 
 <dd>
 <p>All packet types.</p>

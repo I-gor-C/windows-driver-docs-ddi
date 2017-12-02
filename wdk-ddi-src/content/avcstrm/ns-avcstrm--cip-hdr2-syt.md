@@ -59,37 +59,37 @@ typedef struct _CIP_HDR2_SYT {
 ## -struct-fields
 <dl>
 
-### -field <b>SYT</b>
+### -field SYT
 
 <dd>
 <p>Lower 16 bits of CYCLE_TIME. This is not used for opening a stream.</p>
 </dd>
 
-### -field <b>RSV</b>
+### -field RSV
 
 <dd>
 <p>Must be set to 0:0.</p>
 </dd>
 
-### -field <b>STYPE</b>
+### -field STYPE
 
 <dd>
 <p>Specifies the video signal type, which is used for transmitting real time data.</p>
 </dd>
 
-### -field <b>F5060_OR_TSF</b>
+### -field F5060_OR_TSF
 
 <dd>
 <p>Specifies field encoding or time-shift flag depending on the value of FMT. This flag may be either 0 for NTSC or 1 for PAL, or 1 for TimeShiftFlag. This flag has multiple meanings (like a union) depending on the FMT member. If the FMT member indicates DV format, then this is either 50/60 flag (NTSC or PAL); if it is it MPEG-TS, then this is a time-shifting flag.</p>
 </dd>
 
-### -field <b>FMT</b>
+### -field FMT
 
 <dd>
 <p>CIP format ID. For example, 000000 = DV and 100000 = MPEG2TS. If this is 111111 (no data), then DBS, FN, SPH and DBC (in the first quadlet of the CIP header, <a href="..\avcstrm\ns-avcstrm--cip-hdr1.md">CIP_HDR1</a>) are ignored.</p>
 </dd>
 
-### -field <b>Bit10</b>
+### -field Bit10
 
 <dd>
 <p>Must be set to 1:0.</p>

@@ -56,19 +56,19 @@ typedef struct _D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>hDrvBuffer</b>
+### -field hDrvBuffer
 
 <dd>
 <p>Buffer.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Offset.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size.</p>

@@ -7,13 +7,13 @@ old-location: debugger\getinputline.htm
 old-project: debugger
 ms.assetid: 18d4aae5-dd11-4c3a-8088-52121f46d208
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: GetInputLine
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -57,19 +57,19 @@ __inline ULONG GetInputLine(
 ## -parameters
 <dl>
 
-### -param <i>Prompt</i> 
+### -param Prompt 
 
 <dd>
 <p>Specifies a prompt to indicate what input is being requested.  The prompt is printed to the debugger's output before the input is gathered.  If <i>Prompt</i> is <b>NULL</b>, no prompt is printed.</p>
 </dd>
 
-### -param <i>Buffer</i> 
+### -param Buffer 
 
 <dd>
 <p>Specifies the buffer to receive the input.</p>
 </dd>
 
-### -param <i>BufferSize</i> 
+### -param BufferSize 
 
 <dd>
 <p>Specifies the size, in characters, of the buffer <i>Buffer</i>.</p>
@@ -100,7 +100,7 @@ __inline ULONG GetInputLine(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

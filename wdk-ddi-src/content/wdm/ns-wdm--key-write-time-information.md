@@ -55,7 +55,7 @@ typedef struct _KEY_WRITE_TIME_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>LastWriteTime</b>
+### -field LastWriteTime
 
 <dd>
 <p>Specifies the last time that the key was changed. This time value is expressed in absolute system time format. Absolute system time is the number of 100-nanosecond intervals since the start of the year 1601 in the Gregorian calendar. </p>

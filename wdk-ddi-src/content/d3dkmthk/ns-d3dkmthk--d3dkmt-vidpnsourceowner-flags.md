@@ -60,19 +60,19 @@ typedef struct _D3DKMT_VIDPNSOURCEOWNER_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>AllowOutputDuplication</b>
+### -field AllowOutputDuplication
 
 <dd>
 <p>If a value of one, the video present network (VidPN) explicitly allows output duplication. Otherwise output duplication is not allowed.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>Specifies the number of output duplication paths on the VidPN.</p>

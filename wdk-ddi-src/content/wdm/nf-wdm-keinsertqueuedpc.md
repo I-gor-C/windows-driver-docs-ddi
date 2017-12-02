@@ -57,19 +57,19 @@ BOOLEAN KeInsertQueueDpc(
 ## -parameters
 <dl>
 
-### -param <i>Dpc</i> [in, out]
+### -param Dpc [in, out]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a> structure for the DPC object. This structure must have been initialized by either <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a> or <a href="..\wdm\nf-wdm-keinitializethreadeddpc.md">KeInitializeThreadedDpc</a>.</p>
 </dd>
 
-### -param <i>SystemArgument1</i> [in, optional]
+### -param SystemArgument1 [in, optional]
 
 <dd>
 <p>Specifies driver-determined context data. This value is passed as the <i>SystemArgument1</i> parameter to the DPC object's <a href="kernel.customdpc">CustomDpc</a> or <a href="kernel.customthreadeddpc">CustomThreadedDpc</a> routine. </p>
 </dd>
 
-### -param <i>SystemArgument2</i> [in, optional]
+### -param SystemArgument2 [in, optional]
 
 <dd>
 <p>Specifies driver-determined context data. This value is passed as the <i>SystemArgument2</i> parameter to the DPC object's <a href="kernel.customdpc">CustomDpc</a> or <a href="kernel.customthreadeddpc">CustomThreadedDpc</a> routine. </p>

@@ -7,7 +7,7 @@ old-location: netvista\wdi_tx_complete_data.htm
 old-project: netvista
 ms.assetid: bf7951de-3368-4faf-9bae-272c6d76d1a0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDI_TX_COMPLETE_DATA, WDI_TX_COMPLETE_DATA, *PWDI_TX_COMPLETE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,43 +60,43 @@ typedef struct _WDI_TX_COMPLETE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>SeqCtl</b>
+### -field SeqCtl
 
 <dd>
 <p>The value of the sequence control field from the frame transmission.</p>
 </dd>
 
-### -field <b>PnLength</b>
+### -field PnLength
 
 <dd>
 <p>The MPDU PN length for the transmitted frame.</p>
 </dd>
 
-### -field <b>RetryCount</b>
+### -field RetryCount
 
 <dd>
 <p>The number of attempts to transmit the frame.</p>
 </dd>
 
-### -field <b>wPad</b>
+### -field wPad
 
 <dd>
 <p>This member is reserved.</p>
 </dd>
 
-### -field <b>MpduPN</b>
+### -field MpduPN
 
 <dd>
 <p>The MPDU PN.</p>
 </dd>
 
-### -field <b>ReplayIHVReserved0</b>
+### -field ReplayIHVReserved0
 
 <dd>
 <p>Reserved for IHV use.</p>
 </dd>
 
-### -field <b>ReplayIHVReserved1</b>
+### -field ReplayIHVReserved1
 
 <dd>
 <p>Reserved for IHV use.</p>

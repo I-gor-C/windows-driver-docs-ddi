@@ -7,7 +7,7 @@ old-location: netvista\wwan_msg_status.htm
 old-project: netvista
 ms.assetid: 60eb0494-fcc6-4546-a13a-b6d1dcf165e6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ typedef enum _WWAN_MSG_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanMsgStatusNew"></a><a id="wwanmsgstatusnew"></a><a id="WWANMSGSTATUSNEW"></a><b>WwanMsgStatusNew</b>
+### -field WwanMsgStatusNew
 
 <dd>
 <p>The message is new or unread.</p>
 </dd>
 
-### -field <a id="WwanMsgStatusOld"></a><a id="wwanmsgstatusold"></a><a id="WWANMSGSTATUSOLD"></a><b>WwanMsgStatusOld</b>
+### -field WwanMsgStatusOld
 
 <dd>
 <p>The message is old and is read.</p>
 </dd>
 
-### -field <a id="WwanMsgStatusDraft"></a><a id="wwanmsgstatusdraft"></a><a id="WWANMSGSTATUSDRAFT"></a><b>WwanMsgStatusDraft</b>
+### -field WwanMsgStatusDraft
 
 <dd>
 <p>The message is unsent and stored in the device.</p>
 </dd>
 
-### -field <a id="WwanMsgStatusSent"></a><a id="wwanmsgstatussent"></a><a id="WWANMSGSTATUSSENT"></a><b>WwanMsgStatusSent</b>
+### -field WwanMsgStatusSent
 
 <dd>
 <p>The message has already been sent.</p>
 </dd>
 
-### -field <a id="WwanMsgStatusMax"></a><a id="wwanmsgstatusmax"></a><a id="WWANMSGSTATUSMAX"></a><b>WwanMsgStatusMax</b>
+### -field WwanMsgStatusMax
 
 <dd>
 <p>The total number of supported SMS message statuses.</p>
@@ -126,4 +126,4 @@ typedef enum _WWAN_MSG_STATUS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_MSG_STATUS enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_MSG_STATUS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\fwpsvswitcheventssubscribe0.htm
 old-project: netvista
 ms.assetid: 479ff048-f57f-42ca-8787-f87ed055fdbf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsvSwitchEventsSubscribe0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NTSTATUS NTAPI FwpsvSwitchEventsSubscribe0(
 ## -parameters
 <dl>
 
-### -param <i>providerGuid</i> 
+### -param providerGuid 
 
 <dd>
 <p>The provider GUID.
@@ -69,31 +69,31 @@ NTSTATUS NTAPI FwpsvSwitchEventsSubscribe0(
 </p>
 </dd>
 
-### -param <i>notifyContext</i> 
+### -param notifyContext 
 
 <dd>
 <p>An optional pointer to a callout driver–supplied context. Event notification functions  pass this parameter back to the driver.</p>
 </dd>
 
-### -param <i>flags</i> 
+### -param flags 
 
 <dd>
 <p>Reserved. Set to zero.</p>
 </dd>
 
-### -param <i>reserved</i> 
+### -param reserved 
 
 <dd>
 <p>Reserved. Set to zero.</p>
 </dd>
 
-### -param <i>eventDispatchTable</i> 
+### -param eventDispatchTable 
 
 <dd>
 <p>A pointer to an <a href="netvista.fwps_vswitch_event_dispatch_table0">FWPS_VSWITCH_EVENT_DISPATCH_TABLE</a> structure that defines the callback entry points for virtual switch layer events.</p>
 </dd>
 
-### -param <i>subscriptionId</i> 
+### -param subscriptionId 
 
 <dd>
 <p>A pointer to a variable that contains a unique identifier that WFP assigns to the subscription. The caller must return the subscription identifier to WFP with the  <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventsunsubscribe0.md">FwpsvSwitchEventsUnsubscribe0</a> function.</p>
@@ -181,4 +181,4 @@ NTSTATUS NTAPI FwpsvSwitchEventsSubscribe0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsvSwitchEventsSubscribe0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsvSwitchEventsSubscribe0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -57,13 +57,13 @@ typedef struct _FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>DeviceResetCompletion</b>
+### -field DeviceResetCompletion
 
 <dd>
 <p>Pointer to a completion callback routine to be called when a function-level device reset is completed. The function prototype for this callback routine is defined as follows:</p>
@@ -84,7 +84,7 @@ VOID
 </table></span></div>
 </dd>
 
-### -field <b>CompletionContext</b>
+### -field CompletionContext
 
 <dd>
 <p>Points to a caller-supplied context structure to be passed to the <i>DeviceResetCompletion</i> callback.</p>

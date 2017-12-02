@@ -56,13 +56,13 @@ ULONG64 KeQueryTotalCycleTimeThread (
 ## -parameters
 <dl>
 
-### -param <i>Thread</i> [in, out]
+### -param Thread [in, out]
 
 <dd>
 <p>A pointer to a dispatcher object of type KTHREAD.</p>
 </dd>
 
-### -param <i>CycleTimeStamp</i> [out]
+### -param CycleTimeStamp [out]
 
 <dd>
 <p>A pointer to the cycle counter value at the time of the query.</p>

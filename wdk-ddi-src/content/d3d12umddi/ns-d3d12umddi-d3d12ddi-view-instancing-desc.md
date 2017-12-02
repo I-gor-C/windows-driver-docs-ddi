@@ -56,19 +56,19 @@ typedef struct _D3D12DDI_VIEW_INSTANCING_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>ViewInstanceCount</b>
+### -field ViewInstanceCount
 
 <dd>
 <p>View instance count.</p>
 </dd>
 
-### -field <b>pViewInstanceLocations</b>
+### -field pViewInstanceLocations
 
 <dd>
 <p>View instance locations.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags.</p>

@@ -58,31 +58,31 @@ VOID KsGenerateEventList(
 ## -parameters
 <dl>
 
-### -param <i>Set</i> [in, optional]
+### -param Set [in, optional]
 
 <dd>
 <p>Specifies an optional set that the event to be generated belongs to. If present, this value is compared against the set identifier for each event in the list. If not present, the set identifiers are ignored and just the specific event identifier is used in the comparison for matching events on the list. This comparison saves time when all events are known to be contained in a single set.</p>
 </dd>
 
-### -param <i>EventId</i> [in]
+### -param EventId [in]
 
 <dd>
 <p>Specifies the specific event identifier to look for on the list.</p>
 </dd>
 
-### -param <i>EventsList</i> [in]
+### -param EventsList [in]
 
 <dd>
 <p>Points to the head of the list of KSEVENT_ENTRY items on which the event can be found.</p>
 </dd>
 
-### -param <i>EventsFlags</i> [in]
+### -param EventsFlags [in]
 
 <dd>
 <p>Specifies the <a href="..\ks\ne-ks-ksevents-locktype.md">KSEVENTS_LOCKTYPE</a> flag specifying the exclusion lock type to be used in accessing the event list. If no flag is set, then no lock is taken.</p>
 </dd>
 
-### -param <i>EventsLock</i> [in]
+### -param EventsLock [in]
 
 <dd>
 <p>Used to synchronize access to an element on the list. The lock is taken before enumerating the list and released after enumeration.</p>

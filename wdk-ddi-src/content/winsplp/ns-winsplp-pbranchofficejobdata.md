@@ -63,48 +63,48 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>eEventType</b>
+### -field eEventType
 
 <dd>
 <p>Specifies the type of event to be logged.</p>
 </dd>
 
-### -field <b>JobId</b>
+### -field JobId
 
 <dd>
 <p>Specifies the ID of the job on the client.</p>
 </dd>
 
-### -field <b>JobInfo</b>
+### -field JobInfo
 
 <dd>
 <dl>
 
-### -field <b>LogJobPrinted</b>
+### -field LogJobPrinted
 
 <dd>
 <p>Describes  the <b>BranchOfficeJobDataPrinted</b> type member <b>LogJobPrinted</b>.</p>
 </dd>
 
-### -field <b>LogJobRendered</b>
+### -field LogJobRendered
 
 <dd>
 <p>Describes the <b>BranchOfficeJobDataRendered</b> type member <b>LogJobRendered</b>.</p>
 </dd>
 
-### -field <b>LogJobError</b>
+### -field LogJobError
 
 <dd>
 <p>Describes the <b>BranchOfficeJobDataError</b> type member <b>LogJobError</b>.</p>
 </dd>
 
-### -field <b>LogPipelineFailed</b>
+### -field LogPipelineFailed
 
 <dd>
 <p>Describes the <b>BranchOfficeJobDataPipelineFailed</b> type member <b>LogPipelineFailed</b>.</p>
 </dd>
 
-### -field <b>LogOfflineFileFull</b>
+### -field LogOfflineFileFull
 
 <dd>
 <p>Describes the <b>BranchOfficeLogOfflineFileFull</b> type member <b>LogOfflineFileFull</b>.</p>

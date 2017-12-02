@@ -69,19 +69,19 @@ typedef struct _ATTRIBUTE_INFO_4 {
 ## -struct-fields
 <dl>
 
-### -field <b>dwJobNumberOfPagesPerSide</b>
+### -field dwJobNumberOfPagesPerSide
 
 <dd>
 <p>Number of document pages to be placed on one side of a physical page, as requested by the user. Allowable values are 1, 2, 4, 6, 9, or 16.</p>
 </dd>
 
-### -field <b>dwDrvNumberOfPagesPerSide</b>
+### -field dwDrvNumberOfPagesPerSide
 
 <dd>
 <p>Number of document pages that the printer and driver can place on one side of a physical page. This value must be 1 or the value specified for <b>dwJobNumberOfPagesPerSide</b>.</p>
 </dd>
 
-### -field <b>dwNupBorderFlags</b>
+### -field dwNupBorderFlags
 
 <dd>
 <p>One of the following bit flag values:</p>
@@ -110,7 +110,7 @@ typedef struct _ATTRIBUTE_INFO_4 {
 <p> </p>
 </dd>
 
-### -field <b>dwJobPageOrderFlags</b>
+### -field dwJobPageOrderFlags
 
 <dd>
 <p>One of the following bit flag values:</p>
@@ -147,25 +147,25 @@ typedef struct _ATTRIBUTE_INFO_4 {
 <p> </p>
 </dd>
 
-### -field <b>dwDrvPageOrderFlags</b>
+### -field dwDrvPageOrderFlags
 
 <dd>
 <p>Bit flags indicating which page ordering options are supported by the printer and driver. Uses the same flags as <b>dwJobPageOrderFlags</b>.</p>
 </dd>
 
-### -field <b>dwJobNumberOfCopies</b>
+### -field dwJobNumberOfCopies
 
 <dd>
 <p>Number of copies of the print job, as requested by the user.</p>
 </dd>
 
-### -field <b>dwDrvNumberOfCopies</b>
+### -field dwDrvNumberOfCopies
 
 <dd>
 <p>Maximum number of copies the printer and driver can handle at once, taking into account such job attributes as collating and stapling.</p>
 </dd>
 
-### -field <b>dwColorOptimization</b>
+### -field dwColorOptimization
 
 <dd>
 <p>One of the following bit flag values:</p>
@@ -194,20 +194,20 @@ typedef struct _ATTRIBUTE_INFO_4 {
 <p> </p>
 </dd>
 
-### -field <b>dmPrintQuality</b>
+### -field dmPrintQuality
 
 <dd>
 <p>Value to be used instead of the <b>dmPrintQuality</b> member of the print job's <a href="display.devmodew">DEVMODEW</a> structure, if the COLOR_OPTIMIZATION flag is set in <b>dwColorOptimization</b>.</p>
 </dd>
 
-### -field <b>dmYResolution</b>
+### -field dmYResolution
 
 <dd>
 <p>Value to be used instead of the <b>dmYResolution</b> member of the print job's DEVMODEW structure, if the COLOR_OPTIMIZATION flag is set in <b>dwColorOptimization</b>.
      </p>
 </dd>
 
-### -field <b>dwDuplexFlags</b>
+### -field dwDuplexFlags
 
 <dd>
 <p>One of the following bit flag values used in duplex printing:</p>
@@ -238,7 +238,7 @@ typedef struct _ATTRIBUTE_INFO_4 {
 <p>Set to 0 if your driver does not require any of these options.</p>
 </dd>
 
-### -field <b>dwNupDirection</b>
+### -field dwNupDirection
 
 <dd>
 <p>One of the following bit flag values used in N-up printing:</p>
@@ -284,7 +284,7 @@ typedef struct _ATTRIBUTE_INFO_4 {
 <p>This flag is considered only if <b>dwJobNumberOfPagesPerSide</b> and/or <b>dwDrvNumberOfPagesPerSide</b> indicate that N-up printing is active. For more information, see the descriptions  above for <b>dwJobNumberOfPagesPerSide</b> and <b>dwDrvNumberOfPagesPerSide</b>.</p>
 </dd>
 
-### -field <b>dwBookletFlags</b>
+### -field dwBookletFlags
 
 <dd>
 <p>If <b>dwJobPageOrderFlags</b> is set to BOOKLET_PRINT, one of the following values. </p>
@@ -315,7 +315,7 @@ typedef struct _ATTRIBUTE_INFO_4 {
 <p>This flag is considered only if the <b>dwJobPageOrderFlags</b> member is set to BOOKLET_PRINT.</p>
 </dd>
 
-### -field <b>dwScalingPercentX</b>
+### -field dwScalingPercentX
 
 <dd>
 <p>Scaling percentage in the horizontal (x) direction with respect to the normal paper size. Must be in the range of 1 to 1000. Set to 100 if scaling will not be done.</p>
@@ -323,7 +323,7 @@ typedef struct _ATTRIBUTE_INFO_4 {
 <div> </div>
 </dd>
 
-### -field <b>dwScalingPercentY</b>
+### -field dwScalingPercentY
 
 <dd>
 <p>Scaling percentage in the vertical (y) direction with respect to the normal paper size. Must be in the range of 1 to 1000. Set to 100 if scaling will not be done.</p>
@@ -337,7 +337,7 @@ typedef struct _ATTRIBUTE_INFO_4 {
 
 <p>The EMF print processor uses the flag specified for <b>dwColorOptimization</b> to determine whether to request GDI to perform monochrome color optimization. If monochrome color optimization is enabled, the print job can be switched between monochrome and color rendering as appropriate.</p>
 
-<p>If you are creating a Unidrv rendering plug-in to generate color watermarks, note that when the <b>dwColorOptimization</b> member is set to COLOR_OPTIMIZATION, color watermarks are printed in black and white when they are printed on black-and-white documents. To ensure that color watermarks print correctly with color and black-and-white documents, disable color optimization. Color optimization also can be controlled by the Unidrv *<b>ChangeColorModeOnDoc?</b> color attribute (see <a href="NULL">Color Attributes</a>), and by the <a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a> function.</p>
+<p>If you are creating a Unidrv rendering plug-in to generate color watermarks, note that when the <b>dwColorOptimization</b> member is set to COLOR_OPTIMIZATION, color watermarks are printed in black and white when they are printed on black-and-white documents. To ensure that color watermarks print correctly with color and black-and-white documents, disable color optimization. Color optimization also can be controlled by the Unidrv *<b>ChangeColorModeOnDoc?</b> color attribute (see <a href="https://msdn.microsoft.com/c8de0186-9cf5-43e5-81e7-33351a34c13c">Color Attributes</a>), and by the <a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a> function.</p>
 
 <p>For a list of default values for ATTRIBUTE_INFO_4 members, see <a href="..\winsplp\nf-winsplp-getjobattributesex.md">GetJobAttributesEx</a>.</p>
 

@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicewdmdispatchirp.htm
 old-project: wdf
 ms.assetid: 362C6F7C-7B92-43A8-9BD0-F647FDD266E4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceWdmDispatchIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ NTSTATUS WdfDeviceWdmDispatchIrp(
 ## -parameters
 <dl>
 
-### -param <i> Device</i> [in]
+### -param  Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>   Irp</i> [in]
+### -param    Irp [in]
 
 <dd>
 <p>A pointer to an IRP structure.</p>
 </dd>
 
-### -param <i>  DispatchContext</i> [in]
+### -param   DispatchContext [in]
 
 <dd>
 <p>The dispatch context parameter the driver received in <a href="..\wdfdevice\nc-wdfdevice-evt-wdfdevice-wdm-irp-dispatch.md">EvtDeviceWdmIrpDispatch</a>  callback.</p>
@@ -165,4 +165,4 @@ NTSTATUS WdfDeviceWdmDispatchIrp(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceWdmDispatchIrp method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceWdmDispatchIrp method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

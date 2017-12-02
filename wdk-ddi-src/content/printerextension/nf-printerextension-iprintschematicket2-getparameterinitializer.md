@@ -58,19 +58,19 @@ HRESULT GetParameterInitializer(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd>
 <p>The keyword name.</p>
 </dd>
 
-### -param <i>bstrNamespaceUri</i> [in]
+### -param bstrNamespaceUri [in]
 
 <dd>
 <p>The keyword namespace URI.</p>
 </dd>
 
-### -param <i>ppParameterInitializer</i> [out, retval]
+### -param ppParameterInitializer [out, retval]
 
 <dd>
 <p>The <a href="..\printerextension\nn-printerextension-iprintschemaparameterinitializer.md">IPrintSchemaParameterInitializer</a> object.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilremotepartyinfovalue_2.htm
 old-project: netvista
 ms.assetid: bdea158f-6ee5-4e59-be50-efd8027a8645
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILREMOTEPARTYINFOVALUE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_REMOTEPARTYINFO_WITHHELD"></a><a id="ril_remotepartyinfo_withheld"></a><b>RIL_REMOTEPARTYINFO_WITHHELD</b>
+### -field RIL_REMOTEPARTYINFO_WITHHELD
 
 <dd></dd>
 
-### -field <a id="RIL_REMOTEPARTYINFO_UNAVAILABLE"></a><a id="ril_remotepartyinfo_unavailable"></a><b>RIL_REMOTEPARTYINFO_UNAVAILABLE</b>
+### -field RIL_REMOTEPARTYINFO_UNAVAILABLE
 
 <dd></dd>
 
-### -field <a id="RIL_REMOTEPARTYINFO_MAX"></a><a id="ril_remotepartyinfo_max"></a><b>RIL_REMOTEPARTYINFO_MAX</b>
+### -field RIL_REMOTEPARTYINFO_MAX
 
 <dd></dd>
 </dl>

@@ -57,19 +57,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>dwFixedMemoryUsage</b>
+### -field dwFixedMemoryUsage
 
 <dd>
 <p>Specifies the amount, in bytes, of fixed-sized memory required by the <b>IPrintOemUni::MemoryUsage</b> method. Supplied by the rendering plug-in.</p>
 </dd>
 
-### -field <b>dwPercentMemoryUsage</b>
+### -field dwPercentMemoryUsage
 
 <dd>
 <p>Specifies the amount of variably-sized memory required by the <b>IPrintOemUni::MemoryUsage</b> method, expressed as a percentage of the size of the source bitmap received by <a href="print.iprintoemuni_imageprocessing">IPrintOemUni::ImageProcessing</a>. Supplied by the rendering plug-in.</p>
 </dd>
 
-### -field <b>dwMaxBandSize</b>
+### -field dwMaxBandSize
 
 <dd>
 <p>Specifies the maximum size, in bytes, that can be used for source bitmaps. This is the value that Unidrv uses to subtract from when applying the plug-in supplied values contained in <b>dwFixedMemoryUsage</b> and <b>dwPercentMemoryUsage</b>. Supplied by Unidrv.</p>

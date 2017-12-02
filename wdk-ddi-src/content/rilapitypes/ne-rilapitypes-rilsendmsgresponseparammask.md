@@ -7,7 +7,7 @@ old-location: netvista\rilsendmsgresponseparammask_2.htm
 old-project: netvista
 ms.assetid: 09711824-5a7a-4f24-bfe4-b7b146de7bee
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef enum _RILSENDMSGRESPONSEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_MSGRES_CDMACAUSECODE"></a><a id="ril_param_msgres_cdmacausecode"></a><b>RIL_PARAM_MSGRES_CDMACAUSECODE</b>
+### -field RIL_PARAM_MSGRES_CDMACAUSECODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MSGRES_CDMAERRORCLASS"></a><a id="ril_param_msgres_cdmaerrorclass"></a><b>RIL_PARAM_MSGRES_CDMAERRORCLASS</b>
+### -field RIL_PARAM_MSGRES_CDMAERRORCLASS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MSGRES_GWLTRANSPORTCODE"></a><a id="ril_param_msgres_gwltransportcode"></a><b>RIL_PARAM_MSGRES_GWLTRANSPORTCODE</b>
+### -field RIL_PARAM_MSGRES_GWLTRANSPORTCODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MSGRES_GWLRELAYCODE"></a><a id="ril_param_msgres_gwlrelaycode"></a><b>RIL_PARAM_MSGRES_GWLRELAYCODE</b>
+### -field RIL_PARAM_MSGRES_GWLRELAYCODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MSGRES_MSGID"></a><a id="ril_param_msgres_msgid"></a><b>RIL_PARAM_MSGRES_MSGID</b>
+### -field RIL_PARAM_MSGRES_MSGID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MSGRES_ALL"></a><a id="ril_param_msgres_all"></a><b>RIL_PARAM_MSGRES_ALL</b>
+### -field RIL_PARAM_MSGRES_ALL
 
 <dd></dd>
 </dl>

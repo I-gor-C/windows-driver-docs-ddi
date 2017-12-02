@@ -55,13 +55,13 @@ NTSTATUS WdmlibIoGetAffinityInterrupt(
 ## -parameters
 <dl>
 
-### -param <i>InterruptObject</i> [in]
+### -param InterruptObject [in]
 
 <dd>
 <p>A pointer to an interrupt object. This parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a> structure that represents a registration by a driver to receive device interrupts. The structure is opaque. The caller obtained this pointer value in a previous call to the <a href="..\iointex\nf-iointex-wdmlibioconnectinterruptex.md">WdmlibIoConnectInterruptEx</a> or <a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a> routine.</p>
 </dd>
 
-### -param <i>GroupAffinity</i> [out]
+### -param GroupAffinity [out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer into which the routine writes a <a href="..\miniport\ns-miniport--group-affinity.md">GROUP_AFFINITY</a> structure that specifies the group affinity of the interrupt object that <i>InterruptObject</i> points to. This buffer must be large enough to contain the structure.</p>

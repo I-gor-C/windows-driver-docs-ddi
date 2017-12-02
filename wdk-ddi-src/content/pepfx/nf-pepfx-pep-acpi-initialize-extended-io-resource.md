@@ -68,93 +68,93 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE(
 ## -parameters
 <dl>
 
-### -param <i>ResourceUsage</i> [in]
+### -param ResourceUsage [in]
 
 <dd>
 <p>This parameter is copied into the <b>GeneralFlags</b> member of the initialized <a href="..\pepfx\ns-pepfx--pep-acpi-extended-address.md">PEP_ACPI_EXTENDED_ADDRESS</a> structure.</p>
 </dd>
 
-### -param <i>Decode</i> [in]
+### -param Decode [in]
 
 <dd>
 <p>When set, indicates that this bridge subtractively decodes the address. This applies to top level bridges only. </p>
 <p>When not set, indicates that this bridge positively decodes this address.</p>
 </dd>
 
-### -param <i>IsMinFixed</i> [in]
+### -param IsMinFixed [in]
 
 <dd>
 <p>When set, indicates that the minimum address is fixed.</p>
 </dd>
 
-### -param <i>IsMaxFixed</i> [in]
+### -param IsMaxFixed [in]
 
 <dd>
 <p>When set, indicates that the maximum address is fixed. </p>
 </dd>
 
-### -param <i>ISARanges</i> [in]
+### -param ISARanges [in]
 
 <dd>
 <p>This parameter is copied into the <b>TypeSpecificFlags</b> member of the initialized <a href="..\pepfx\ns-pepfx--pep-acpi-extended-address.md">PEP_ACPI_EXTENDED_ADDRESS</a> structure.</p>
 </dd>
 
-### -param <i>AddressGranularity</i> [in]
+### -param AddressGranularity [in]
 
 <dd>
 <p>A bit mask indicating which bits have been decoded.</p>
 </dd>
 
-### -param <i>AddressMinimum</i> [in]
+### -param AddressMinimum [in]
 
 <dd>
 <p>For bridges that translate addresses, this indicates the minimum starting address on the secondary side of the bridge.</p>
 </dd>
 
-### -param <i>AddressMaximum</i> [in]
+### -param AddressMaximum [in]
 
 <dd>
 <p>For bridges that translate addresses, this indicates the maximum starting address on the secondary side of the bridge.</p>
 </dd>
 
-### -param <i>AddressTranslation</i> [in]
+### -param AddressTranslation [in]
 
 <dd>
 <p>For bridges that translate addresses across the bridge, this is the
 address on the primary side. </p>
 </dd>
 
-### -param <i>RangeLength</i> [in]
+### -param RangeLength [in]
 
 <dd>
 <p>The length of the address range. </p>
 </dd>
 
-### -param <i>TypeSpecificAttributes</i> [in]
+### -param TypeSpecificAttributes [in]
 
 <dd>
 <p>The type-specific attributes for this resource.</p>
 </dd>
 
-### -param <i>DescriptorName</i> [in]
+### -param DescriptorName [in]
 
 <dd>
 <p>The name of the resource descriptor.</p>
 </dd>
 
-### -param <i>TranslationTypeNonStatic</i> [in]
+### -param TranslationTypeNonStatic [in]
 
 <dd>
 <p>When true, indicates that the resource uses type translation. Otherwise, it uses type-static translation.</p>
 </dd>
 
-### -param <i>TanslationSparseDensity</i> [in]
+### -param TanslationSparseDensity [in]
 
 <dd>
 <p>When false, indicates that this is a dense translation. Otherwise, it is sparse. </p>
 </dd>
 
-### -param <i>Resource</i> [out]
+### -param Resource [out]
 
 <dd>
 <p>This is cast to *<a href="..\pepfx\ns-pepfx--pep-acpi-extended-address.md">PEP_ACPI_EXTENDED_ADDRESS</a>.</p>

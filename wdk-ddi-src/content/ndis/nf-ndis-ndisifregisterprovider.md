@@ -7,7 +7,7 @@ old-location: netvista\ndisifregisterprovider.htm
 old-project: netvista
 ms.assetid: 1624426b-9e67-4aa2-83d8-f1e6fa484858
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisIfRegisterProvider
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ NDIS_STATUS NdisIfRegisterProvider(
 ## -parameters
 <dl>
 
-### -param <i>ProviderCharacteristics</i> [in]
+### -param ProviderCharacteristics [in]
 
 <dd>
 <p>A pointer to a caller-provided 
@@ -66,14 +66,14 @@ NDIS_STATUS NdisIfRegisterProvider(
      provider, including the entry points for its provider callback functions.</p>
 </dd>
 
-### -param <i>IfProviderContext</i> [in]
+### -param IfProviderContext [in]
 
 <dd>
 <p>A handle to a caller-provided context area for this network interface provider. Set this parameter
      to <b>NULL</b> if there is no context area.</p>
 </dd>
 
-### -param <i>pNdisProviderHandle</i> [out]
+### -param pNdisProviderHandle [out]
 
 <dd>
 <p>A pointer to a caller-provided handle variable. If the registration operation succeeds, NDIS
@@ -208,4 +208,4 @@ NDIS_STATUS NdisIfRegisterProvider(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfRegisterProvider function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfRegisterProvider function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

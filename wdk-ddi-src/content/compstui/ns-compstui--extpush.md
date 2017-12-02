@@ -66,20 +66,20 @@ typedef struct _EXTPUSH {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Size, in bytes, of the EXTPUSH structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Bit flags, which can be one of the following:</p>
 <p></p>
 <dl>
 
-### -field <a id="EPF_ICONID_AS_HICON"></a><a id="epf_iconid_as_hicon"></a>EPF_ICONID_AS_HICON
+### -field EPF_ICONID_AS_HICON
 
 <dd>
 <p>If set, the <b>IconID</b> member contains an icon handle.</p>
@@ -89,7 +89,7 @@ typedef struct _EXTPUSH {
 <p></p>
 <dl>
 
-### -field <a id="EPF_INCLUDE_SETUP_TITLE"></a><a id="epf_include_setup_title"></a>EPF_INCLUDE_SETUP_TITLE
+### -field EPF_INCLUDE_SETUP_TITLE
 
 <dd>
 <p>If set, CPSUI appends "Setup" to the string pointed to by <b>pTitle</b>.</p>
@@ -98,7 +98,7 @@ typedef struct _EXTPUSH {
 <p></p>
 <dl>
 
-### -field <a id="EPF_NO_DOT_DOT_DOT"></a><a id="epf_no_dot_dot_dot"></a>EPF_NO_DOT_DOT_DOT
+### -field EPF_NO_DOT_DOT_DOT
 
 <dd>
 <p>If set, CPSUI does not append "..." to the string pointed to by <b>pTitle</b>.</p>
@@ -107,7 +107,7 @@ typedef struct _EXTPUSH {
 <p></p>
 <dl>
 
-### -field <a id="EPF_OVERLAY_NO_ICON"></a><a id="epf_overlay_no_icon"></a>EPF_OVERLAY_NO_ICON
+### -field EPF_OVERLAY_NO_ICON
 
 <dd>
 <p>If set, CPSUI overlays its IDI_CPSUI_NO icon onto the icon identified by the <b>IconID</b> member.</p>
@@ -116,7 +116,7 @@ typedef struct _EXTPUSH {
 <p></p>
 <dl>
 
-### -field <a id="EPF_OVERLAY_STOP_ICON"></a><a id="epf_overlay_stop_icon"></a>EPF_OVERLAY_STOP_ICON
+### -field EPF_OVERLAY_STOP_ICON
 
 <dd>
 <p>If set, CPSUI overlays the IDI_CPSUI_STOP icon onto the icon identified by the <b>IconID</b> member.</p>
@@ -125,7 +125,7 @@ typedef struct _EXTPUSH {
 <p></p>
 <dl>
 
-### -field <a id="EPF_OVERLAY_WARNING_ICON"></a><a id="epf_overlay_warning_icon"></a>EPF_OVERLAY_WARNING_ICON
+### -field EPF_OVERLAY_WARNING_ICON
 
 <dd>
 <p>If set, CPSUI overlays its IDI_CPSUI_WARNING icon onto the icon identified by the <b>IconID</b> member.</p>
@@ -134,7 +134,7 @@ typedef struct _EXTPUSH {
 <p></p>
 <dl>
 
-### -field <a id="EPF_PUSH_TYPE_DLGPROC"></a><a id="epf_push_type_dlgproc"></a>EPF_PUSH_TYPE_DLGPROC
+### -field EPF_PUSH_TYPE_DLGPROC
 
 <dd>
 <p>If set, the <b>DlgProc</b> and <b>DlgTemplateID/hDlgTemplate</b> members are valid.</p>
@@ -144,7 +144,7 @@ typedef struct _EXTPUSH {
 <p></p>
 <dl>
 
-### -field <a id="EPF_USE_HDLGTEMPLATE"></a><a id="epf_use_hdlgtemplate"></a>EPF_USE_HDLGTEMPLATE
+### -field EPF_USE_HDLGTEMPLATE
 
 <dd>
 <p>If set, <b>hDlgTemplate</b> contains a template handle.</p>
@@ -153,27 +153,27 @@ typedef struct _EXTPUSH {
 </dl>
 </dd>
 
-### -field <b>pTitle</b>
+### -field pTitle
 
 <dd>
 <p>String identifier, representing the push button title. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero.</p>
 </dd>
 
-### -field <b>DlgProc</b>
+### -field DlgProc
 
 <dd>
 <p>DLGPROC-typed pointer to a dialog box procedure to process messages for the push button's dialog box. (The DLGPROC pointer type is described in the Microsoft Windows SDK documentation.) For more information, see the following Remarks section.</p>
 <p>If this pointer is supplied, EPF_PUSH_TYPE_DLGPROC must be set in <b>Flags</b>.</p>
 </dd>
 
-### -field <b>pfnCallBack</b>
+### -field pfnCallBack
 
 <dd>
 <p>Pointer to a <a href="..\compstui\nc-compstui--cpsuicallback.md">_CPSUICALLBACK</a>-typed callback function to handle the CPSUICB_REASON_PUSHBUTTON reason. For more information, see the following Remarks section.</p>
 <p>If this pointer is supplied, EPF_PUSH_TYPE_DLGPROC must be cleared in <b>Flags</b>.</p>
 </dd>
 
-### -field <b>IconID</b>
+### -field IconID
 
 <dd>
 <p>One of the following icon identifiers:</p>
@@ -188,21 +188,21 @@ typedef struct _EXTPUSH {
 <p>CPSUI displays the icon next to the push button. If this value is zero, an icon is not displayed.</p>
 </dd>
 
-### -field <b>DlgTemplateID</b>
+### -field DlgTemplateID
 
 <dd>
 <p>DIALOG resource identifier, describing a dialog box template.</p>
 <p>Not used if EPF_USE_HDLGTEMPLATE is set in <b>Flags</b>.</p>
 </dd>
 
-### -field <b>hDlgTemplate</b>
+### -field hDlgTemplate
 
 <dd>
 <p>Handle to a DLGTEMPLATE structure (described in the Microsoft Windows SDK documentation).</p>
 <p>Used only if EPF_USE_HDLGTEMPLATE is set in <b>Flags</b>.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Reserved, must be initialized to zero.</p>

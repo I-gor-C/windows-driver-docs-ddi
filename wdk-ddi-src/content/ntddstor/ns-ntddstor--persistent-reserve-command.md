@@ -69,24 +69,24 @@ typedef struct _PERSISTENT_RESERVE_COMMAND {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure.</p>
 </dd>
 
-### -field <b>PR_IN</b>
+### -field PR_IN
 
 <dd>
 <dl>
 
-### -field <b>ServiceAction</b>
+### -field ServiceAction
 
 <dd>
 <p>The service action code for this IOCTL_STORAGE_PERSISTENT_RESERVE_IN request. PR_IN.ServiceAction can be one of the following values:
@@ -95,13 +95,13 @@ RESERVATION_ACTION_READ_RESERVATIONS
 </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. Must be zero.</p>
 </dd>
 
-### -field <b>AllocationLength</b>
+### -field AllocationLength
 
 <dd>
 <p>The number of bytes allocated for the returned parameter list.</p>
@@ -109,12 +109,12 @@ RESERVATION_ACTION_READ_RESERVATIONS
 </dl>
 </dd>
 
-### -field <b>PR_OUT</b>
+### -field PR_OUT
 
 <dd>
 <dl>
 
-### -field <b>ServiceAction</b>
+### -field ServiceAction
 
 <dd>
 <p>The service action code for this IOCTL_STORAGE_PERSISTENT_RESERVE_OUT request. PR_OUT.ServiceAction can be one of the following values:
@@ -128,13 +128,13 @@ RESERVATION_ACTION_REGISTER_IGNORE_EXISTING
 </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. Must be zero.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A value that specifies the characteristics of the persistent reservation. PR_OUT.Type can be one of the following values:
@@ -145,7 +145,7 @@ RESERVATION_TYPE_EXCLUSIVE_REGISTRANTS
 </p>
 </dd>
 
-### -field <b>Scope</b>
+### -field Scope
 
 <dd>
 <p>A value that specifies whether the persistent reservation applies to the entire logical unit or a specific element of the logical unit. PR_OUT.Scope can be one of the following values:
@@ -154,7 +154,7 @@ RESERVATION_SCOPE_ELEMENT
 </p>
 </dd>
 
-### -field <b>ParameterList</b>
+### -field ParameterList
 
 <dd>
 <p>The space for additional SCSI Persistent Reserve Out command parameters.</p>

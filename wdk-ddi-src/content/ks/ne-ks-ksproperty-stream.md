@@ -64,67 +64,67 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_STREAM_ALLOCATOR"></a><a id="ksproperty_stream_allocator"></a><b>KSPROPERTY_STREAM_ALLOCATOR</b>
+### -field KSPROPERTY_STREAM_ALLOCATOR
 
 <dd>
 <p>Specify if the pin allocates stream buffers or can provide an allocator.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_STREAM_QUALITY"></a><a id="ksproperty_stream_quality"></a><b>KSPROPERTY_STREAM_QUALITY</b>
+### -field KSPROPERTY_STREAM_QUALITY
 
 <dd>
 <p>Specify if the pin generates Quality Management complaints.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_STREAM_DEGRADATION"></a><a id="ksproperty_stream_degradation"></a><b>KSPROPERTY_STREAM_DEGRADATION</b>
+### -field KSPROPERTY_STREAM_DEGRADATION
 
 <dd>
 <p>Specify if the pin allows degradation strategies.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_STREAM_MASTERCLOCK"></a><a id="ksproperty_stream_masterclock"></a><b>KSPROPERTY_STREAM_MASTERCLOCK</b>
+### -field KSPROPERTY_STREAM_MASTERCLOCK
 
 <dd>
 <p>Specify if the pin uses or produces a master clock that can be used for synchronization.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_STREAM_TIMEFORMAT"></a><a id="ksproperty_stream_timeformat"></a><b>KSPROPERTY_STREAM_TIMEFORMAT</b>
+### -field KSPROPERTY_STREAM_TIMEFORMAT
 
 <dd>
 <p>Specify to retrieve the time format used on a particular pin connection.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_STREAM_PRESENTATIONTIME"></a><a id="ksproperty_stream_presentationtime"></a><b>KSPROPERTY_STREAM_PRESENTATIONTIME</b>
+### -field KSPROPERTY_STREAM_PRESENTATIONTIME
 
 <dd>
 <p>Specify to retrieve and set the current presentation time of a filter pin.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_STREAM_PRESENTATIONEXTENT"></a><a id="ksproperty_stream_presentationextent"></a><b>KSPROPERTY_STREAM_PRESENTATIONEXTENT</b>
+### -field KSPROPERTY_STREAM_PRESENTATIONEXTENT
 
 <dd>
 <p>Specify to query the stream extent.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_STREAM_FRAMETIME"></a><a id="ksproperty_stream_frametime"></a><b>KSPROPERTY_STREAM_FRAMETIME</b>
+### -field KSPROPERTY_STREAM_FRAMETIME
 
 <dd>
 <p>Specify to determine the duration of the next frame based on the particular media stream, and use that information to step-frame a sequence.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_STREAM_RATECAPABILITY"></a><a id="ksproperty_stream_ratecapability"></a><b>KSPROPERTY_STREAM_RATECAPABILITY</b>
+### -field KSPROPERTY_STREAM_RATECAPABILITY
 
 <dd>
 <p>Specify to allow a graph manager to query all connection points involved in the flow of a particular stream (obtained through KSPROPERTY_PIN_DATAROUTING) for their capability in adjusting a requested rate to the nominal rate.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_STREAM_RATE"></a><a id="ksproperty_stream_rate"></a><b>KSPROPERTY_STREAM_RATE</b>
+### -field KSPROPERTY_STREAM_RATE
 
 <dd>
 <p>Specify in conjunction with KSPROPERTY_STREAM_RATECAPABILITY and use this to set the rate of a segment after querying the capability of the pin.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_STREAM_PIPE_ID"></a><a id="ksproperty_stream_pipe_id"></a><b>KSPROPERTY_STREAM_PIPE_ID</b>
+### -field KSPROPERTY_STREAM_PIPE_ID
 
 <dd>
 <p>Used internally for communication between the KSProxy system driver and AVStream.</p>

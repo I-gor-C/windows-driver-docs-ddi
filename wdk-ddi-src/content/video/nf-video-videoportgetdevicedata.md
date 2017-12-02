@@ -58,26 +58,26 @@ VP_STATUS VideoPortGetDeviceData(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>DeviceDataType</i> 
+### -param DeviceDataType 
 
 <dd>
 <p>Specifies the type of data being requested as a VIDEO_DEVICE_DATA_TYPE value, typically one of <b>VpBusData</b>, <b>VpControllerData</b>, or <b>VpMonitorData.</b></p>
 <p>The <b>VpControllerData</b> and <b>VpMonitorData</b> values are relevant only on ARC-compliant platforms. Miniport drivers of x86-type video adapters generally specify <b>VpBusData</b>, particularly for adapters on EISA buses. The <b>VpMachineData</b> value is reserved for future use.</p>
 </dd>
 
-### -param <i>CallbackRoutine</i> 
+### -param CallbackRoutine 
 
 <dd>
 <p>Pointer to a driver-supplied <a href="..\video\nc-video-pminiport-query-device-routine.md">HwVidQueryDeviceCallback</a> function to be called with the requested information.</p>
 </dd>
 
-### -param <i>Context</i> 
+### -param Context 
 
 <dd>
 <p>Pointer to a caller-determined context parameter to be passed to the <i>CallbackRoutine</i>. It typically points to the <a href="..\video\ns-video--video-port-config-info.md">VIDEO_PORT_CONFIG_INFO</a> buffer.</p>

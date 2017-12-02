@@ -61,19 +61,19 @@ typedef PFNDRMFORWARDCONTENTTOINTERFACE DRMForwardContentToInterface;
 ## -parameters
 <dl>
 
-### -param <i>ContentId</i> [in]
+### -param ContentId [in]
 
 <dd>
 <p>This parameter is reserved for system use.</p>
 </dd>
 
-### -param <i>pUnknown</i> [in]
+### -param pUnknown [in]
 
 <dd>
 <p>This parameter is reserved for system use.</p>
 </dd>
 
-### -param <i>NumMethods</i> [in]
+### -param NumMethods [in]
 
 <dd>
 <p>This parameter is reserved for system use.</p>

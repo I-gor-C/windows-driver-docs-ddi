@@ -7,7 +7,7 @@ old-location: netvista\rilmessageinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 598880f6-0466-4cc1-9f14-3c2e4dda3ba1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILMESSAGEINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_MI_STATUS"></a><a id="ril_param_mi_status"></a><b>RIL_PARAM_MI_STATUS</b>
+### -field RIL_PARAM_MI_STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MI_MESSAGE"></a><a id="ril_param_mi_message"></a><b>RIL_PARAM_MI_MESSAGE</b>
+### -field RIL_PARAM_MI_MESSAGE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MI_ALL"></a><a id="ril_param_mi_all"></a><b>RIL_PARAM_MI_ALL</b>
+### -field RIL_PARAM_MI_ALL
 
 <dd></dd>
 </dl>

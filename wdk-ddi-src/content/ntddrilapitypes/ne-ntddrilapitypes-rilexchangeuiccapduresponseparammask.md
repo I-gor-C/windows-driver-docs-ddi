@@ -7,7 +7,7 @@ old-location: netvista\rilexchangeuiccapduresponseparammask.htm
 old-project: netvista
 ms.assetid: 24daa47b-993c-49ee-b4e2-462cd7570f3c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILEXCHANGEUICCAPDURESPONSEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_EUAR_RESPONSEAPDU"></a><a id="ril_param_euar_responseapdu"></a><b>RIL_PARAM_EUAR_RESPONSEAPDU</b>
+### -field RIL_PARAM_EUAR_RESPONSEAPDU
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_EUAR_ALL"></a><a id="ril_param_euar_all"></a><b>RIL_PARAM_EUAR_ALL</b>
+### -field RIL_PARAM_EUAR_ALL
 
 <dd></dd>
 </dl>

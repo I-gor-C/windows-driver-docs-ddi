@@ -59,37 +59,37 @@ typedef struct _PEP_REQUEST_COMPONENT_PERF_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>Component</b>
+### -field Component
 
 <dd>
 <p>[in] The index that identifies the component. This member is an index into the <b>Components</b> array in the <a href="..\pepfx\ns-pepfx--pep-device-register-v2.md">PEP_DEVICE_REGISTER_V2</a> structure that the PEP previously supplied in response to the <b>PEP_DPM_REGISTER_DEVICE</b> notification for this device. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
 </dd>
 
-### -field <b>Completed</b>
+### -field Completed
 
 <dd>
 <p>[out] Whether the PEP has completed the requested P-state changes. Set to TRUE to indicate that the P-state changes completed synchronously. Set to FALSE to indicate that the requested P-state changes are pending and will be completed asynchronously by a PEP worker thread. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>Succeeded</b>
+### -field Succeeded
 
 <dd>
 <p>[out] Whether the requested P-state changes successfully completed. Set to TRUE if the PEP successfully completed all P-state changes requested in the <b>PerfRequests</b> array. Set to FALSE if the PEP was unable to perform all the requested P-state changes, in which case the P-states in the hardware were left unchanged. The <b>Succeeded</b> member is used only for <i>synchronous</i> P-state changes. If the PEP sets <b>Completed</b> to FALSE, PoFx ignores the value in the <b>Succeeded</b> member.</p>
 </dd>
 
-### -field <b>PerfRequestsCount</b>
+### -field PerfRequestsCount
 
 <dd>
 <p>[in] The number of P-state changes requested in the array pointed to by the <b>PerfRequests</b> member.</p>
 </dd>
 
-### -field <b>PerfRequests</b>
+### -field PerfRequests
 
 <dd>
 <p>[in] A pointer to an array of <a href="..\pepfx\ns-pepfx--pep-component-perf-state-request.md">PEP_COMPONENT_PERF_STATE_REQUEST</a> structures. Each element in the array specifies a new performance level to assign to a P-state set. The number of array elements is specified by the <b>PerfRequestsCount</b> member.</p>

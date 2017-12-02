@@ -7,7 +7,7 @@ old-location: wdf\wdfioresourcerequirementslistgetcount.htm
 old-project: wdf
 ms.assetid: 00a79e57-5915-49a3-b11f-223cc93c2e99
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfIoResourceRequirementsListGetCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ ULONG WdfIoResourceRequirementsListGetCount(
 ## -parameters
 <dl>
 
-### -param <i>RequirementsList</i> [in]
+### -param RequirementsList [in]
 
 <dd>
 <p>A handle to a framework resource-requirements-list object that represents a device's resource requirements list.</p>

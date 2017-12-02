@@ -7,7 +7,7 @@ old-location: netvista\wskcontrolsocket.htm
 old-project: netvista
 ms.assetid: d65fd2ab-ffca-4e13-b0f1-42d6a89f4b4a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ NTSTATUS WSKAPI * WskControlSocket(
 ## -parameters
 <dl>
 
-### -param <i>Socket</i> [in]
+### -param Socket [in]
 
 <dd>
 <p>A pointer to a 
@@ -73,7 +73,7 @@ NTSTATUS WSKAPI * WskControlSocket(
      object for the socket on which the control operation is being performed.</p>
 </dd>
 
-### -param <i>RequestType</i> [in]
+### -param RequestType [in]
 
 <dd>
 <p>A value that specifies the type of control operation that is being performed. A WSK application
@@ -82,19 +82,19 @@ NTSTATUS WSKAPI * WskControlSocket(
 <p></p>
 <dl>
 
-### -param <a id="WskSetOption"></a><a id="wsksetoption"></a><a id="WSKSETOPTION"></a><b>WskSetOption</b>
+### -param WskSetOption
 
 <dd>
 <p>Set the state or value for a socket option.</p>
 </dd>
 
-### -param <a id="WskGetOption"></a><a id="wskgetoption"></a><a id="WSKGETOPTION"></a><b>WskGetOption</b>
+### -param WskGetOption
 
 <dd>
 <p>Get the state or value of a socket option.</p>
 </dd>
 
-### -param <a id="WskIoctl"></a><a id="wskioctl"></a><a id="WSKIOCTL"></a><b>WskIoctl</b>
+### -param WskIoctl
 
 <dd>
 <p>Perform an I/O control operation.</p>
@@ -102,7 +102,7 @@ NTSTATUS WSKAPI * WskControlSocket(
 </dl>
 </dd>
 
-### -param <i>ControlCode</i> [in]
+### -param ControlCode [in]
 
 <dd>
 <p>If the 
@@ -123,7 +123,7 @@ NTSTATUS WSKAPI * WskControlSocket(
      underlying network protocol might support additional socket I/O control operations.</p>
 </dd>
 
-### -param <i>Level</i> [in]
+### -param Level [in]
 
 <dd>
 <p>The level in the network stack at which the value for a socket option is being either set or
@@ -137,14 +137,14 @@ NTSTATUS WSKAPI * WskControlSocket(
      <i>Level</i> parameter is ignored.</p>
 </dd>
 
-### -param <i>InputSize</i> [in]
+### -param InputSize [in]
 
 <dd>
 <p>The number of bytes of data in the buffer that is pointed to by the 
      <i>InputBuffer</i> parameter.</p>
 </dd>
 
-### -param <i>InputBuffer</i> [in, optional]
+### -param InputBuffer [in, optional]
 
 <dd>
 <p>A caller-allocated buffer that supplies any input data that is required to perform the specified
@@ -153,14 +153,14 @@ NTSTATUS WSKAPI * WskControlSocket(
      <i>InputSize</i> parameter to zero.</p>
 </dd>
 
-### -param <i>OutputSize</i> [in]
+### -param OutputSize [in]
 
 <dd>
 <p>The size of the buffer that is pointed to by the 
      <i>OutputBuffer</i> parameter.</p>
 </dd>
 
-### -param <i>OutputBuffer</i> [out, optional]
+### -param OutputBuffer [out, optional]
 
 <dd>
 <p>A caller-allocated buffer that receives any output data that is returned by the specified control
@@ -169,7 +169,7 @@ NTSTATUS WSKAPI * WskControlSocket(
      <i>OutputSize</i> parameter to zero.</p>
 </dd>
 
-### -param <i>OutputSizeReturned</i> [out, optional]
+### -param OutputSizeReturned [out, optional]
 
 <dd>
 <p>A pointer to a ULONG-typed variable that receives the number of bytes of data that is returned in
@@ -193,7 +193,7 @@ NTSTATUS WSKAPI * WskControlSocket(
 </ul>
 </dd>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the control operation
@@ -357,4 +357,4 @@ NTSTATUS WSKAPI * WskControlSocket(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONTROL_SOCKET callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONTROL_SOCKET callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

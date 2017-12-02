@@ -7,7 +7,7 @@ old-location: netvista\ndisminvalidateconfigblock.htm
 old-project: netvista
 ms.assetid: 26D07A41-C431-41F1-9F5E-880B48CC2F0B
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMInvalidateConfigBlock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ VOID NdisMInvalidateConfigBlock(
 ## -parameters
 <dl>
 
-### -param <i>NdisMiniportHandle</i> [in]
+### -param NdisMiniportHandle [in]
 
 <dd>
 <p>The network adapter handle that NDIS passed to the 
@@ -64,13 +64,13 @@ VOID NdisMInvalidateConfigBlock(
      <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>.</p>
 </dd>
 
-### -param <i>VFId</i> [in]
+### -param VFId [in]
 
 <dd>
 <p>The identifier of the VF for which the device location is returned.</p>
 </dd>
 
-### -param <i>BlockMask</i> [in]
+### -param BlockMask [in]
 
 <dd>
 <p>A ULONGLONG value that specifies a bitmask for the first 64 VF configuration blocks. Each bit in the bitmask corresponds to a VF configuration block. If the bit is set to one, the data associated with the corresponding VF configuration block has changed.
@@ -138,9 +138,9 @@ This operating system runs within the Hyper-V parent partition.</p>
 
 <p>When the VF driver handles the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451903">OID_SRIOV_VF_INVALIDATE_CONFIG_BLOCK</a> request, it reads data from the specified VF configuration blocks.</p>
 
-<p>For more information about backchannel communication within the single root I/O virtualization (SR-IOV) interface, see <a href="NULL">SR-IOV PF/VF Backchannel Communication</a>.</p>
+<p>For more information about backchannel communication within the single root I/O virtualization (SR-IOV) interface, see <a href="netvista.sr_iov_pf_vf_backchannel_communication">SR-IOV PF/VF Backchannel Communication</a>.</p>
 
-<p>For more information about the SR-IOV interface, see 	<a href="NULL">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
+<p>For more information about the SR-IOV interface, see 	<a href="netvista.overview_of_single_root_i_o_virtualization__sr-iov_">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
 
 ## -requirements
 <table>
@@ -226,4 +226,4 @@ This operating system runs within the Hyper-V parent partition.</p>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMInvalidateConfigBlock function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMInvalidateConfigBlock function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

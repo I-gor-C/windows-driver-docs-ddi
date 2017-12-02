@@ -58,13 +58,13 @@ SIZE_T APIENTRY* CalcPrivateRasterizerStateSize(D3D11_1)(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i></i> [in]
+### -param  [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1-ddi-rasterizer-desc.md">D3D11_1_DDI_RASTERIZER_DESC</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region. </p>

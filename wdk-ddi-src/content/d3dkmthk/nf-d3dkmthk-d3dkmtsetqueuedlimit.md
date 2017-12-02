@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTSetQueuedLimit(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setqueuedlimit.md">D3DKMT_SETQUEUEDLIMIT</a> structure that describes parameters for setting or retrieving the limit of queued operations.</p>

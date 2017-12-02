@@ -56,19 +56,19 @@ NTSTATUS KsUnserializeObjectPropertiesFromRegistry(
 ## -parameters
 <dl>
 
-### -param <i>FileObject </i> [in]
+### -param FileObject  [in]
 
 <dd>
 <p>Specifies the file object whose properties are being set.</p>
 </dd>
 
-### -param <i>ParentKey </i> [in, optional]
+### -param ParentKey  [in, optional]
 
 <dd>
 <p>Optionally contains a handle to the parent of the path, or <b>NULL</b>. The Parent Key and/or the <i>RegistryPath</i> must be passed.</p>
 </dd>
 
-### -param <i>RegistryPath </i> [in, optional]
+### -param RegistryPath  [in, optional]
 
 <dd>
 <p>Optionally contains the path to the key whose subkeys will be enumerated as property sets, or otherwise <b>NULL</b>. The <i>ParentKey</i> and/or the Registry Path must be passed.</p>

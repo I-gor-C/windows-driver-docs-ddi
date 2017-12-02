@@ -57,25 +57,25 @@ typedef struct _GetPersistentBinding2_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. </p>
 </dd>
 
-### -field <b>TotalEntryCount</b>
+### -field TotalEntryCount
 
 <dd>
 <p>Indicates the number of binding entries that the WMI provider can report.</p>
 </dd>
 
-### -field <b>OutEntryCount</b>
+### -field OutEntryCount
 
 <dd>
 <p>Indicates the total number of persistent bindings retrieved by the GetPersistentBinding2 method.</p>
 </dd>
 
-### -field <b>Bindings</b>
+### -field Bindings
 
 <dd>
 <p>Contains an array of structures of type <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpbindingentry2.md">HBAFCPBindingEntry2</a> that describe an HBA's bindings between operating system and fibre channel protocol (FCP) identifiers.</p>

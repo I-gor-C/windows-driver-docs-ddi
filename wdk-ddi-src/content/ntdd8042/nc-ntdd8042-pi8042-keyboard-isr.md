@@ -63,43 +63,43 @@ BOOLEAN KeyboardIsr(
 ## -parameters
 <dl>
 
-### -param <i>IsrContext</i> [in]
+### -param IsrContext [in]
 
 <dd>
 <p>Pointer to the filter device object of the driver that supplies a callback.</p>
 </dd>
 
-### -param <i>CurrentInput</i> [in]
+### -param CurrentInput [in]
 
 <dd>
 <p>Pointer to the input <a href="hid.keyboard_input_data">KEYBOARD_INPUT_DATA</a> structure that is being constructed by the ISR.</p>
 </dd>
 
-### -param <i>CurrentOutput</i> [in]
+### -param CurrentOutput [in]
 
 <dd>
 <p>Pointer to an <a href="..\ntdd8042\ns-ntdd8042--output-packet.md">OUTPUT_PACKET</a> structure, which specifies an array of bytes that is being written to the hardware device.</p>
 </dd>
 
-### -param <i>StatusByte</i> [in]
+### -param StatusByte [in]
 
 <dd>
 <p>Specifies the status byte that is read from I/O port 60 when an interrupt occurs.</p>
 </dd>
 
-### -param <i>Byte</i> [in]
+### -param Byte [in]
 
 <dd>
 <p>Specifies the data byte that is read  from I/O port 64 when an interrupt occurs.</p>
 </dd>
 
-### -param <i>ContinueProcessing</i> [out]
+### -param ContinueProcessing [out]
 
 <dd>
 <p>Specifies, if <b>TRUE</b>, that processing in the I8042prt keyboard ISR will continue after this callback completes. Otherwise, processing does not continue.</p>
 </dd>
 
-### -param <i>ScanState</i> [in]
+### -param ScanState [in]
 
 <dd>
 <p>Pointer to a <a href="..\ntdd8042\ne-ntdd8042--keyboard-scan-state.md">KEYBOARD_SCAN_STATE</a> enumeration value, which identifies the keyboard scan state.</p>

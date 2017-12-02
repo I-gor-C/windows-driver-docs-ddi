@@ -61,32 +61,32 @@ typedef struct DXGI_DDI_ARG_PRESENT {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the display device (graphics context) on which the driver performs the presentation. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function to create the display device. </p>
 </dd>
 
-### -field <b>hSurfaceToPresent</b>
+### -field hSurfaceToPresent
 
 <dd>
 <p>[in] A handle to the source resource to display. <b>hSurfaceToPresent</b> is always a valid handle for a resource to display.
 </p>
 </dd>
 
-### -field <b>SrcSubResourceIndex</b>
+### -field SrcSubResourceIndex
 
 <dd>
 <p>[in] The zero-based index into the source resource, which the handle in the <b>hSurfaceToPresent</b> member specifies. The <b>SrcSubResourceIndex</b> index indicates the subresource or surface to display.</p>
 </dd>
 
-### -field <b>hDstResource</b>
+### -field hDstResource
 
 <dd>
 <p>[in] A handle to the destination resource to display to. <b>hDstResource</b> can be <b>NULL</b> if the destination is unknown; kernel mode will determine the destination just before sending the hardware command stream through DMA to the graphics processor.</p>
 </dd>
 
-### -field <b>DstSubResourceIndex</b>
+### -field DstSubResourceIndex
 
 <dd>
 <p>
@@ -94,19 +94,19 @@ typedef struct DXGI_DDI_ARG_PRESENT {
      </p>
 </dd>
 
-### -field <b>pDXGIContext</b>
+### -field pDXGIContext
 
 <dd>
 <p>[in] A handle to the DXGI context. This handle is opaque to the driver. The driver must pass the handle in this member as the <b>pDXGIContext</b> member of the <a href="..\dxgiddi\ns-dxgiddi-dxgiddicb-present.md">DXGIDDICB_PRESENT</a> structure when the driver calls the <a href="..\dxgiddi\nc-dxgiddi-pfnddxgiddi-presentcb.md">pfnPresentCbDXGI</a> function. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-present-flags.md">DXGI_DDI_PRESENT_FLAGS</a> structure that identifies, in bit-field flags, how to perform the present operation. </p>
 </dd>
 
-### -field <b>FlipInterval</b>
+### -field FlipInterval
 
 <dd>
 <p>[in] A <a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-flip-interval-type.md">DXGI_DDI_FLIP_INTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs).</p>

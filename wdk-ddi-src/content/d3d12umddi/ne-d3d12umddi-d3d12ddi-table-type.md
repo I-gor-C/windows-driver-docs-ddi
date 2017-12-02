@@ -69,97 +69,97 @@ typedef enum D3D12DDI_TABLE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_DEVICE_CORE"></a><a id="d3d12ddi_table_type_device_core"></a><b>D3D12DDI_TABLE_TYPE_DEVICE_CORE</b>
+### -field D3D12DDI_TABLE_TYPE_DEVICE_CORE
 
 <dd>
 <p>Device core.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_COMMAND_LIST_3D"></a><a id="d3d12ddi_table_type_command_list_3d"></a><b>D3D12DDI_TABLE_TYPE_COMMAND_LIST_3D</b>
+### -field D3D12DDI_TABLE_TYPE_COMMAND_LIST_3D
 
 <dd>
 <p>List 3D.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_COMMAND_QUEUE_3D"></a><a id="d3d12ddi_table_type_command_queue_3d"></a><b>D3D12DDI_TABLE_TYPE_COMMAND_QUEUE_3D</b>
+### -field D3D12DDI_TABLE_TYPE_COMMAND_QUEUE_3D
 
 <dd>
 <p>Queue 3D.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_DXGI"></a><a id="d3d12ddi_table_type_dxgi"></a><b>D3D12DDI_TABLE_TYPE_DXGI</b>
+### -field D3D12DDI_TABLE_TYPE_DXGI
 
 <dd>
 <p>DXGI.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_0020_DEVICE_VIDEO"></a><a id="d3d12ddi_table_type_0020_device_video"></a><b>D3D12DDI_TABLE_TYPE_0020_DEVICE_VIDEO</b>
+### -field D3D12DDI_TABLE_TYPE_0020_DEVICE_VIDEO
 
 <dd>
 <p>Device video.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_0020_DEVICE_CORE_VIDEO"></a><a id="d3d12ddi_table_type_0020_device_core_video"></a><b>D3D12DDI_TABLE_TYPE_0020_DEVICE_CORE_VIDEO</b>
+### -field D3D12DDI_TABLE_TYPE_0020_DEVICE_CORE_VIDEO
 
 <dd>
 <p>Queue video.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_0020_EXTENDED_FEATURES"></a><a id="d3d12ddi_table_type_0020_extended_features"></a><b>D3D12DDI_TABLE_TYPE_0020_EXTENDED_FEATURES</b>
+### -field D3D12DDI_TABLE_TYPE_0020_EXTENDED_FEATURES
 
 <dd>
 <p>Extended features.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_0020_PASS_EXPERIMENT"></a><a id="d3d12ddi_table_type_0020_pass_experiment"></a><b>D3D12DDI_TABLE_TYPE_0020_PASS_EXPERIMENT</b>
+### -field D3D12DDI_TABLE_TYPE_0020_PASS_EXPERIMENT
 
 <dd>
 <p>Pass experiment.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_0021_SHADERCACHE_CALLBACKS"></a><a id="d3d12ddi_table_type_0021_shadercache_callbacks"></a><b>D3D12DDI_TABLE_TYPE_0021_SHADERCACHE_CALLBACKS</b>
+### -field D3D12DDI_TABLE_TYPE_0021_SHADERCACHE_CALLBACKS
 
 <dd>
 <p>Shader cache callbacks.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_0022_COMMAND_QUEUE_VIDEO_DECODE"></a><a id="d3d12ddi_table_type_0022_command_queue_video_decode"></a><b>D3D12DDI_TABLE_TYPE_0022_COMMAND_QUEUE_VIDEO_DECODE</b>
+### -field D3D12DDI_TABLE_TYPE_0022_COMMAND_QUEUE_VIDEO_DECODE
 
 <dd>
 <p>Queue video decode.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_0022_COMMAND_LIST_VIDEO_DECODE"></a><a id="d3d12ddi_table_type_0022_command_list_video_decode"></a><b>D3D12DDI_TABLE_TYPE_0022_COMMAND_LIST_VIDEO_DECODE</b>
+### -field D3D12DDI_TABLE_TYPE_0022_COMMAND_LIST_VIDEO_DECODE
 
 <dd>
 <p>List video decode.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_0022_COMMAND_QUEUE_VIDEO_PROCESS"></a><a id="d3d12ddi_table_type_0022_command_queue_video_process"></a><b>D3D12DDI_TABLE_TYPE_0022_COMMAND_QUEUE_VIDEO_PROCESS</b>
+### -field D3D12DDI_TABLE_TYPE_0022_COMMAND_QUEUE_VIDEO_PROCESS
 
 <dd>
 <p>Queue video process.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_0022_COMMAND_LIST_VIDEO_PROCESS"></a><a id="d3d12ddi_table_type_0022_command_list_video_process"></a><b>D3D12DDI_TABLE_TYPE_0022_COMMAND_LIST_VIDEO_PROCESS</b>
+### -field D3D12DDI_TABLE_TYPE_0022_COMMAND_LIST_VIDEO_PROCESS
 
 <dd>
 <p>List video process.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_0030_DEVICE_CONTENT_PROTECTION_RESOURCES"></a><a id="d3d12ddi_table_type_0030_device_content_protection_resources"></a><b>D3D12DDI_TABLE_TYPE_0030_DEVICE_CONTENT_PROTECTION_RESOURCES</b>
+### -field D3D12DDI_TABLE_TYPE_0030_DEVICE_CONTENT_PROTECTION_RESOURCES
 
 <dd>
 <p>Device content protection resources.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_0030_CONTENT_PROTECTION_CALLBACKS"></a><a id="d3d12ddi_table_type_0030_content_protection_callbacks"></a><b>D3D12DDI_TABLE_TYPE_0030_CONTENT_PROTECTION_CALLBACKS</b>
+### -field D3D12DDI_TABLE_TYPE_0030_CONTENT_PROTECTION_CALLBACKS
 
 <dd>
 <p>Content protection callbacks.</p>
 </dd>
 
-### -field <a id="D3D12DDI_TABLE_TYPE_0030_DEVICE_CONTENT_PROTECTION_STREAMING"></a><a id="d3d12ddi_table_type_0030_device_content_protection_streaming"></a><b>D3D12DDI_TABLE_TYPE_0030_DEVICE_CONTENT_PROTECTION_STREAMING</b>
+### -field D3D12DDI_TABLE_TYPE_0030_DEVICE_CONTENT_PROTECTION_STREAMING
 
 <dd>
 <p>Device content protection streaming.</p>

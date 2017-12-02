@@ -56,19 +56,19 @@ typedef struct HBA_RSCN_EventInfo {
 ## -struct-fields
 <dl>
 
-### -field <b>PortFcId</b>
+### -field PortFcId
 
 <dd>
 <p>Indicates the port of type Nx_Port through which the event occurred. For a definition of Nx_Port, see the T11 committee's <i>Fibre Channel HBA API</i>.specification.</p>
 </dd>
 
-### -field <b>NPortPage</b>
+### -field NPortPage
 
 <dd>
 <p>Contains port page information. For information about what values this member can have, see section entitled "Affected N-Port Pages" in the <i>FC-FS </i>specification for RSCN ELS. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. </p>

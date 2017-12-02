@@ -68,80 +68,80 @@ typedef union _PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER {
 ## -struct-fields
 <dl>
 
-### -field <b>AttentionButtonPresent</b>
+### -field AttentionButtonPresent
 
 <dd>
 <p>A single bit that indicates that an attention button exists for the slot.</p>
 </dd>
 
-### -field <b>PowerControllerPresent</b>
+### -field PowerControllerPresent
 
 <dd>
 <p>A single bit that indicates that a software programmable power controller exists for the slot or for the adapter that is plugged into the slot.</p>
 </dd>
 
-### -field <b>MRLSensorPresent</b>
+### -field MRLSensorPresent
 
 <dd>
 <p>A single bit that indicates that a manually operated retention latch (MRL) sensor exists for the slot.</p>
 </dd>
 
-### -field <b>AttentionIndicatorPresent</b>
+### -field AttentionIndicatorPresent
 
 <dd>
 <p>A single bit that indicates that an attention indicator exists for the slot.</p>
 </dd>
 
-### -field <b>PowerIndicatorPresent</b>
+### -field PowerIndicatorPresent
 
 <dd>
 <p>A single bit that indicates that a power indicator exists for the slot.</p>
 </dd>
 
-### -field <b>HotPlugSurprise</b>
+### -field HotPlugSurprise
 
 <dd>
 <p>A single bit that indicates that an adapter that is present in the slot can be removed from the system without any prior notification.</p>
 </dd>
 
-### -field <b>HotPlugCapable</b>
+### -field HotPlugCapable
 
 <dd>
 <p>A single bit that indicates that the slot is capable of supporting hot-plug operations.</p>
 </dd>
 
-### -field <b>SlotPowerLimit</b>
+### -field SlotPowerLimit
 
 <dd>
 <p>The maximum amount of power that can be supplied by the slot. This value is used in combination with the value of the <b>SlotPowerLimitScale</b> member to compute the power in watts.</p>
 </dd>
 
-### -field <b>SlotPowerLimitScale</b>
+### -field SlotPowerLimitScale
 
 <dd>
 <p>The scale used for the value contained in the <b>SlotPowerLimit</b> member to compute the maximum power, in watts, that can be supplied by the slot. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="0"></a><b>0</b>
+### -field 0
 
 <dd>
 <p>Multiply the value in the <b>SlotPowerLimit</b> member by 1.0.</p>
 </dd>
 
-### -field <a id="1"></a><b>1</b>
+### -field 1
 
 <dd>
 <p>Multiply the value in the <b>SlotPowerLimit</b> member by 0.1.</p>
 </dd>
 
-### -field <a id="2"></a><b>2</b>
+### -field 2
 
 <dd>
 <p>Multiply the value in the <b>SlotPowerLimit</b> member by 0.01.</p>
 </dd>
 
-### -field <a id="3"></a><b>3</b>
+### -field 3
 
 <dd>
 <p>Multiply the value in the <b>SlotPowerLimit</b> member by 0.001.</p>
@@ -149,25 +149,25 @@ typedef union _PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER {
 </dl>
 </dd>
 
-### -field <b>ElectromechanicalLockPresent</b>
+### -field ElectromechanicalLockPresent
 
 <dd>
 <p>A single bit that indicates that an electromechanical interlock exists for the slot.</p>
 </dd>
 
-### -field <b>NoCommandCompletedSupport</b>
+### -field NoCommandCompletedSupport
 
 <dd>
 <p>A single bit that indicates that the slot does not generate software notification when an issued command is completed by the hot-plug controller.</p>
 </dd>
 
-### -field <b>PhysicalSlotNumber</b>
+### -field PhysicalSlotNumber
 
 <dd>
 <p>The physical slot number in the system chassis that is attached to this port. This value is zero for ports that are connected to devices that are either integrated on the system board or integrated within the same physical component as the switch device or root port.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER structure.</p>

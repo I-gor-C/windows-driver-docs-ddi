@@ -59,13 +59,13 @@ VOID DxgkProtectedCallback(
 ## -parameters
 <dl>
 
-### -param <i>MiniportDeviceContext</i> [in]
+### -param MiniportDeviceContext [in]
 
 <dd>
 <p>A handle to a context block associated with a display adapter. The display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem. </p>
 </dd>
 
-### -param <i>ProtectedCallbackContext</i> [in]
+### -param ProtectedCallbackContext [in]
 
 <dd>
 <p>
@@ -73,7 +73,7 @@ VOID DxgkProtectedCallback(
      </p>
 </dd>
 
-### -param <i>ProtectionStatus</i> [in]
+### -param ProtectionStatus [in]
 
 <dd>
 <p>Status of the display adapter's protected state. If STATUS_SUCCESS, the adapter was successfully protected from access. A failure status code indicates that the adapter is not protected.</p>

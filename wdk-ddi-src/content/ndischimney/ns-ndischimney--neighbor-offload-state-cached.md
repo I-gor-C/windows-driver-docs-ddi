@@ -7,7 +7,7 @@ old-location: netvista\neighbor_offload_state_cached.htm
 old-project: netvista
 ms.assetid: 5dedffa8-9745-4668-8646-0e896942b9c8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NEIGHBOR_OFFLOAD_STATE_CACHED, NEIGHBOR_OFFLOAD_STATE_CACHED, *PNEIGHBOR_OFFLOAD_STATE_CACHED
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct _NEIGHBOR_OFFLOAD_STATE_CACHED {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>An 
@@ -70,13 +70,13 @@ typedef struct _NEIGHBOR_OFFLOAD_STATE_CACHED {
      <b>Header</b> is reserved.</p>
 </dd>
 
-### -field <b>DlDestinationAddress</b>
+### -field DlDestinationAddress
 
 <dd>
 <p>Specifies the media access control (MAC) address of the next hop (neighbor).</p>
 </dd>
 
-### -field <b>HostReachabilityDelta</b>
+### -field HostReachabilityDelta
 
 <dd>
 <p>The host stack's current time minus 
@@ -144,4 +144,4 @@ typedef struct _NEIGHBOR_OFFLOAD_STATE_CACHED {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NEIGHBOR_OFFLOAD_STATE_CACHED structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NEIGHBOR_OFFLOAD_STATE_CACHED structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

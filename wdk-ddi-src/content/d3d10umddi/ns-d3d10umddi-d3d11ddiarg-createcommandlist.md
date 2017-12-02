@@ -54,7 +54,7 @@ typedef struct D3D11DDIARG_CREATECOMMANDLIST {
 ## -struct-fields
 <dl>
 
-### -field <b>hDeferredContext</b>
+### -field hDeferredContext
 
 <dd>
 <p>[in] A handle to the deferred context. </p>

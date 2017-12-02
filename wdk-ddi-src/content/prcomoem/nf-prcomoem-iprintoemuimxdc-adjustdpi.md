@@ -60,37 +60,37 @@ HRESULT AdjustDPI(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> 
+### -param hPrinter 
 
 <dd>
 <p>A handle to the printer that is currently being queried.</p>
 </dd>
 
-### -param <i>cbDevMode</i> 
+### -param cbDevMode 
 
 <dd>
 <p>The size of the <a href="display.devmodew">DEVMODE</a> structure, including appended data.</p>
 </dd>
 
-### -param <i>pDevMode</i> 
+### -param pDevMode 
 
 <dd>
 <p>A pointer to the DEVMODE structure that contains the current device settings.</p>
 </dd>
 
-### -param <i>cbOEMDM</i> 
+### -param cbOEMDM 
 
 <dd>
 <p>The number of bytes in the vendor-provided section of the DEVMODE structure.</p>
 </dd>
 
-### -param <i>pOEMDM</i> 
+### -param pOEMDM 
 
 <dd>
 <p>A pointer to the data that is contained in the vendor portion of the DEVMODE structure that <i>pDevMode</i> points to.</p>
 </dd>
 
-### -param <i>pDPI</i> 
+### -param pDPI 
 
 <dd>
 <p>A pointer to the current resolution, in dots per inch (DPI), assuming square pixels. If this parameter is configured, its returned value must be a positive integer.</p>

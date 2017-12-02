@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitsetdevicetype.htm
 old-project: wdf
 ms.assetid: 26c5c998-fb10-45c3-b28c-91a759fa941e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceInitSetDeviceType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ VOID WdfDeviceInitSetDeviceType(
 ## -parameters
 <dl>
 
-### -param <i>DeviceInit</i> [in]
+### -param DeviceInit [in]
 
 <dd>
 <p>A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure.</p>
 </dd>
 
-### -param <i>DeviceType</i> [in]
+### -param DeviceType [in]
 
 <dd>
 <p>A FILE_DEVICE_XXXX value that identifies the device type. For more information about FILE_DEVICE_XXXX values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a>.</p>

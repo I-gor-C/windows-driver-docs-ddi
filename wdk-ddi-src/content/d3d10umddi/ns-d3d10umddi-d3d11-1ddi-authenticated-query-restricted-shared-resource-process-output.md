@@ -57,13 +57,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS
 ## -struct-fields
 <dl>
 
-### -field <b>Output</b>
+### -field Output
 
 <dd>
 <p>A  structure that contains a Message Authentication Code (MAC) and other data.</p>
 </dd>
 
-### -field <b>ProcessIndex</b>
+### -field ProcessIndex
 
 <dd>
 <p>The index of the process in the list of processes.
@@ -71,13 +71,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS
 </p>
 </dd>
 
-### -field <b>ProcessIdentifier</b>
+### -field ProcessIdentifier
 
 <dd>
 <p>A <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-authenticated-process-identifier-type.md">D3D11_1DDI_AUTHENTICATED_PROCESS_IDENTIFIER_TYPE</a> value that specifies the type of process.</p>
 </dd>
 
-### -field <b>ProcessHandle</b>
+### -field ProcessHandle
 
 <dd>
 <p>A process handle. If the <b>ProcessIdentifier</b> member equals <b>D3D11_1DDI_PROCESSIDTYPE_HANDLE</b>, the <b>ProcessHandle</b> member contains a valid handle to a process. Otherwise, this member is ignored.</p>

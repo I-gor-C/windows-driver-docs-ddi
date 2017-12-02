@@ -55,13 +55,13 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="ISCSI_DIGEST_TYPE_NONE"></a><a id="iscsi_digest_type_none"></a><b>ISCSI_DIGEST_TYPE_NONE</b>
+### -field ISCSI_DIGEST_TYPE_NONE
 
 <dd>
 <p>There is no usable digest that guarantees data integrity. </p>
 </dd>
 
-### -field <a id="ISCSI_DIGEST_TYPE_CRC32C"></a><a id="iscsi_digest_type_crc32c"></a><b>ISCSI_DIGEST_TYPE_CRC32C</b>
+### -field ISCSI_DIGEST_TYPE_CRC32C
 
 <dd>
 <p>The digest that guarantees data integrity uses a 32-bit cyclic redundancy check. </p>

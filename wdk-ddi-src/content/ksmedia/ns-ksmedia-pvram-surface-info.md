@@ -61,49 +61,49 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>hSurface</b>
+### -field hSurface
 
 <dd>
 <p>A pointer to a kernel-mode handle that identifies the VRAM surface.</p>
 </dd>
 
-### -field <b>VramPhysicalAddress</b>
+### -field VramPhysicalAddress
 
 <dd>
 <p>This member contains the physical address of the surface in display memory. The minidriver fills in this member in the handler for <a href="https://msdn.microsoft.com/library/windows/hardware/ff565177">KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS</a>.</p>
 </dd>
 
-### -field <b>cbCaptured</b>
+### -field cbCaptured
 
 <dd>
 <p>This member specifies the number of bytes copied into the VRAM surface. The minidriver sets this value.</p>
 </dd>
 
-### -field <b>dwWidth</b>
+### -field dwWidth
 
 <dd>
 <p>This member specifies the width of the video data in pixels. The minidriver sets this value.</p>
 </dd>
 
-### -field <b>dwHeight</b>
+### -field dwHeight
 
 <dd>
 <p>This member specifies the height of the video data, in pixels. The minidriver sets this value.</p>
 </dd>
 
-### -field <b>dwLinearSize</b>
+### -field dwLinearSize
 
 <dd>
 <p>This member specifies the linear size, in bytes, of a nonrectangular surface. The minidriver sets this value.</p>
 </dd>
 
-### -field <b>lPitch</b>
+### -field lPitch
 
 <dd>
 <p>This member specifies the pitch of the surface; that is, the distance, in bytes, to the start of the next line. This is also known as the <i>stride</i> of the surface. The minidriver sets this value.</p>
 </dd>
 
-### -field <b>ullReserved</b>
+### -field ullReserved
 
 <dd>
 <p>The minidriver can use this member to store information about the surface as it handles a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565177">KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS</a> request. Use caution, however; this structure does not persist across <a href="stream.avstrminipinprocess">AVStrMiniPinProcess</a> calls.</p>

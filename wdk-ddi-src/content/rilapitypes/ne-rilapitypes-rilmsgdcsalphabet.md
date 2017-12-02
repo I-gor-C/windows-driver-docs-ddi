@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcsalphabet_2.htm
 old-project: netvista
 ms.assetid: 62cd5dd1-8775-4b60-9aa2-3f8e0a3a4b26
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILMSGDCSALPHABET {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DCSALPHABET_8BIT"></a><a id="ril_dcsalphabet_8bit"></a><b>RIL_DCSALPHABET_8BIT</b>
+### -field RIL_DCSALPHABET_8BIT
 
 <dd></dd>
 
-### -field <a id="RIL_DCSALPHABET_UCS2"></a><a id="ril_dcsalphabet_ucs2"></a><b>RIL_DCSALPHABET_UCS2</b>
+### -field RIL_DCSALPHABET_UCS2
 
 <dd></dd>
 
-### -field <a id="RIL_DCSALPHABET_MAX"></a><a id="ril_dcsalphabet_max"></a><b>RIL_DCSALPHABET_MAX</b>
+### -field RIL_DCSALPHABET_MAX
 
 <dd></dd>
 </dl>

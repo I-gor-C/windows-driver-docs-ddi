@@ -60,13 +60,13 @@ typedef struct _D3DLIGHTINGCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes, of the D3DLIGHTINGCAPS structure. </p>
 </dd>
 
-### -field <b>dwCaps</b>
+### -field dwCaps
 
 <dd>
 <p> Specifies flags describing the capabilities of the lighting module. The following flags are defined:   
@@ -104,7 +104,7 @@ typedef struct _D3DLIGHTINGCAPS {
 <p> </p>
 </dd>
 
-### -field <b>dwLightingModel</b>
+### -field dwLightingModel
 
 <dd>
 <p> Specifies flags indicating whether the lighting model is RGB or monochrome. The following flags are defined: </p>
@@ -127,7 +127,7 @@ typedef struct _D3DLIGHTINGCAPS {
 <p> </p>
 </dd>
 
-### -field <b>dwNumLights</b>
+### -field dwNumLights
 
 <dd>
 <p>Specifies the number of lights that can be handled.</p>

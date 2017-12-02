@@ -80,7 +80,7 @@ I/O Status block
 <p><b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> indicates an the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. </p>
 
 ## -remarks
-<p>On input, the caller can optionally specify a frame and microframe for which the caller is interested in knowing the associated system QPC value. Those values must be provided in the <b>InputFrameNumber</b> and <b>InputMicroFrameNumber</b> members of <a href="buses.usb_frame_number_and_qpc_for_time_sync_information">USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION</a>, respectively. On output, the USB driver stack fills the <b>QueryPerformanceCounterAtInputFrameOrMicroFrame</b> member  with a system QPC value calculated by the USB driver stack.</p>
+<p>On input, the caller can optionally specify a frame and microframe for which the caller is interested in knowing the associated system QPC value. Those values must be provided in the <b>InputFrameNumber</b> and <b>InputMicroFrameNumber</b> members of <a href="..\usbioctl\ns-usbioctl--usb-frame-number-and-qpc-for-time-sync-information.md">USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION</a>, respectively. On output, the USB driver stack fills the <b>QueryPerformanceCounterAtInputFrameOrMicroFrame</b> member  with a system QPC value calculated by the USB driver stack.</p>
 
 <p>If the caller is not interested those values, <b>InputFrameNumber</b> and <b>InputMicroFrameNumber</b> values must be initialized to 0. On output, <b>QueryPerformanceCounterAtInputFrameOrMicroFrame</b>  is set to 0.</p>
 

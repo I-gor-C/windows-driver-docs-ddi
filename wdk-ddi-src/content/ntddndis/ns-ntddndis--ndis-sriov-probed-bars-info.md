@@ -7,7 +7,7 @@ old-location: netvista\ndis_sriov_probed_bars_info.htm
 old-project: netvista
 ms.assetid: 9f37d9e7-ae8b-448e-a535-f34b01c2bf8a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_SRIOV_PROBED_BARS_INFO, NDIS_SRIOV_PROBED_BARS_INFO, *PNDIS_SRIOV_PROBED_BARS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ typedef struct _NDIS_SRIOV_PROBED_BARS_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_SRIOV_PROBED_BARS_INFO</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -74,7 +74,7 @@ typedef struct _NDIS_SRIOV_PROBED_BARS_INFO {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_SRIOV_PROBED_BARS_INFO_REVISION_1"></a><a id="ndis_sriov_probed_bars_info_revision_1"></a>NDIS_SRIOV_PROBED_BARS_INFO_REVISION_1
+### -field NDIS_SRIOV_PROBED_BARS_INFO_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30 and later.</p>
@@ -83,7 +83,7 @@ typedef struct _NDIS_SRIOV_PROBED_BARS_INFO {
 </dl>
 </dd>
 
-### -field <b>BaseRegisterValuesOffset</b>
+### -field BaseRegisterValuesOffset
 
 <dd>
 <p>A ULONG value that contains the offset, in units of bytes, from the beginning of this structure to an array of ULONG values. The array  contains a ULONG value for each BAR of the PCIe network adapter.</p>
@@ -132,4 +132,4 @@ typedef struct _NDIS_SRIOV_PROBED_BARS_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SRIOV_PROBED_BARS_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SRIOV_PROBED_BARS_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

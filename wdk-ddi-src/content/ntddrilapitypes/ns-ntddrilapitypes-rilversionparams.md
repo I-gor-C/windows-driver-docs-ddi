@@ -7,7 +7,7 @@ old-location: netvista\rilversionparams.htm
 old-project: netvista
 ms.assetid: c6931cee-2b86-4bf8-9e9d-b04e2df9eb12
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILVERSIONPARAMS, RILVERSIONPARAMS, *LPRILVERSIONPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILVERSIONPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>Minor</b>
+### -field Minor
 
 <dd></dd>
 
-### -field <b>Major</b>
+### -field Major
 
 <dd></dd>
 </dl>

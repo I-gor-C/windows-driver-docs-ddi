@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>RatioNumerator</b>
+### -field RatioNumerator
 
 <dd>
 <p>Specifies the numerator of the compression/expansion ratio.</p>
 </dd>
 
-### -field <b>RatioDenominator</b>
+### -field RatioDenominator
 
 <dd>
 <p>Specifies the denominator of the compression/expansion ratio.</p>
 </dd>
 
-### -field <b>RatioConstantMargin</b>
+### -field RatioConstantMargin
 
 <dd>
 <p>Specifies a scalar constant to apply to the compression ratio. Set this to zero for no compression.</p>

@@ -56,19 +56,19 @@ typedef struct _D3D12DDI_VIDEO_CONTENT_PROTECTION_SYSTEM_SUPPORT_DATA_0030 {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeIndex</b>
+### -field NodeIndex
 
 <dd>
 <p>Node index.</p>
 </dd>
 
-### -field <b>ContentProtectionSystemCount</b>
+### -field ContentProtectionSystemCount
 
 <dd>
 <p>Content protection system count.</p>
 </dd>
 
-### -field <b>pContentProtectionSystems</b>
+### -field pContentProtectionSystems
 
 <dd>
 <p>Content protection systems.</p>

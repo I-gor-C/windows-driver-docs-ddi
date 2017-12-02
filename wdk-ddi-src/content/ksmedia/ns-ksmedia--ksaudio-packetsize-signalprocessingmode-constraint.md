@@ -56,19 +56,19 @@ typedef struct _KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT {
 ## -struct-fields
 <dl>
 
-### -field <b>ProcessingMode</b>
+### -field ProcessingMode
 
 <dd>
 <p>The signal processing mode that this constraint applies to.</p>
 </dd>
 
-### -field <b>SamplesPerProcessingPacket</b>
+### -field SamplesPerProcessingPacket
 
 <dd>
 <p>The processing frame size for the processing mode, expressed in number of samples. If this value is 0, the constraint is expressed by the <b>ProcessingPacketDurationInHns</b> field.</p>
 </dd>
 
-### -field <b>ProcessingPacketDurationInHns</b>
+### -field ProcessingPacketDurationInHns
 
 <dd>
 <p>The processing frame size for the processing mode, expressed in hundred-nanosecond (HNS) units. This field is ignored if <b>SamplesPerProcessingPacket</b> is nonzero.</p>

@@ -7,7 +7,7 @@ old-location: wdf\wdfpdoretrieveaddressdescription.htm
 old-project: wdf
 ms.assetid: b19e6492-af8d-48dc-8d17-81c2d8c25a6a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfPdoRetrieveAddressDescription
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ NTSTATUS WdfPdoRetrieveAddressDescription(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object that represents the device's physical device object (PDO).</p>
 </dd>
 
-### -param <i>AddressDescription</i> [in, out]
+### -param AddressDescription [in, out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that will receive the address description. The address description must contain a <a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-address-description-header.md">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a> structure.</p>
@@ -161,4 +161,4 @@ NTSTATUS WdfPdoRetrieveAddressDescription(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfPdoRetrieveAddressDescription method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfPdoRetrieveAddressDescription method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

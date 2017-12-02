@@ -57,13 +57,13 @@ NTSTATUS IddCxSwapChainReportFrameStatistics(
 ## -parameters
 <dl>
 
-### -param <i>SwapChainObject</i> [in]
+### -param SwapChainObject [in]
 
 <dd>
 <p>The swap-chain object whose current frame is being queried.</p>
 </dd>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>Input arguments to the function</p>

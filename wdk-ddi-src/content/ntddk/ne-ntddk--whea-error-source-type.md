@@ -66,79 +66,79 @@ typedef enum _WHEA_ERROR_SOURCE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WheaErrSrcTypeMCE"></a><a id="wheaerrsrctypemce"></a><a id="WHEAERRSRCTYPEMCE"></a><b>WheaErrSrcTypeMCE</b>
+### -field WheaErrSrcTypeMCE
 
 <dd>
 <p>A machine check exception (MCE).</p>
 </dd>
 
-### -field <a id="WheaErrSrcTypeCMC"></a><a id="wheaerrsrctypecmc"></a><a id="WHEAERRSRCTYPECMC"></a><b>WheaErrSrcTypeCMC</b>
+### -field WheaErrSrcTypeCMC
 
 <dd>
 <p>A corrected machine check (CMC).</p>
 </dd>
 
-### -field <a id="WheaErrSrcTypeCPE"></a><a id="wheaerrsrctypecpe"></a><a id="WHEAERRSRCTYPECPE"></a><b>WheaErrSrcTypeCPE</b>
+### -field WheaErrSrcTypeCPE
 
 <dd>
 <p>A corrected platform error (CPE).</p>
 </dd>
 
-### -field <a id="WheaErrSrcTypeNMI"></a><a id="wheaerrsrctypenmi"></a><a id="WHEAERRSRCTYPENMI"></a><b>WheaErrSrcTypeNMI</b>
+### -field WheaErrSrcTypeNMI
 
 <dd>
 <p>A nonmaskable interrupt (NMI).</p>
 </dd>
 
-### -field <a id="WheaErrSrcTypePCIe"></a><a id="wheaerrsrctypepcie"></a><a id="WHEAERRSRCTYPEPCIE"></a><b>WheaErrSrcTypePCIe</b>
+### -field WheaErrSrcTypePCIe
 
 <dd>
 <p>A PCI Express (PCIe) error.</p>
 </dd>
 
-### -field <a id="WheaErrSrcTypeGeneric"></a><a id="wheaerrsrctypegeneric"></a><a id="WHEAERRSRCTYPEGENERIC"></a><b>WheaErrSrcTypeGeneric</b>
+### -field WheaErrSrcTypeGeneric
 
 <dd>
 <p>A type of error source that does not conform to any of the other WHEA_ERROR_SOURCE_TYPE enumeration values.</p>
 </dd>
 
-### -field <a id="WheaErrSrcTypeINIT"></a><a id="wheaerrsrctypeinit"></a><a id="WHEAERRSRCTYPEINIT"></a><b>WheaErrSrcTypeINIT</b>
+### -field WheaErrSrcTypeINIT
 
 <dd>
 <p>An Itanium processor INIT error.</p>
 </dd>
 
-### -field <a id="WheaErrSrcTypeBOOT"></a><a id="wheaerrsrctypeboot"></a><a id="WHEAERRSRCTYPEBOOT"></a><b>WheaErrSrcTypeBOOT</b>
+### -field WheaErrSrcTypeBOOT
 
 <dd>
 <p>A boot error source.</p>
 </dd>
 
-### -field <a id="WheaErrSrcTypeSCIGeneric"></a><a id="wheaerrsrctypescigeneric"></a><a id="WHEAERRSRCTYPESCIGENERIC"></a><b>WheaErrSrcTypeSCIGeneric</b>
+### -field WheaErrSrcTypeSCIGeneric
 
 <dd>
 <p>A service control interrupt (SCI).</p>
 </dd>
 
-### -field <a id="WheaErrSrcTypeIPFMCA"></a><a id="wheaerrsrctypeipfmca"></a><a id="WHEAERRSRCTYPEIPFMCA"></a><b>WheaErrSrcTypeIPFMCA</b>
+### -field WheaErrSrcTypeIPFMCA
 
 <dd>
 <p>An Itanium processor machine check abort (MCA).</p>
 </dd>
 
-### -field <a id="WheaErrSrcTypeIPFCMC"></a><a id="wheaerrsrctypeipfcmc"></a><a id="WHEAERRSRCTYPEIPFCMC"></a><b>WheaErrSrcTypeIPFCMC</b>
+### -field WheaErrSrcTypeIPFCMC
 
 <dd>
 <p>An Itanium processor corrected machine check (CMC).</p>
 </dd>
 
-### -field <a id="WheaErrSrcTypeIPFCPE"></a><a id="wheaerrsrctypeipfcpe"></a><a id="WHEAERRSRCTYPEIPFCPE"></a><b>WheaErrSrcTypeIPFCPE</b>
+### -field WheaErrSrcTypeIPFCPE
 
 <dd>
 <p>An Itanium processor corrected platform error (CPE).</p>
 </dd>
 
-### -field <a id="WheaErrSrcTypeMax"></a><a id="wheaerrsrctypemax"></a><a id="WHEAERRSRCTYPEMAX"></a><b>WheaErrSrcTypeMax</b>
+### -field WheaErrSrcTypeMax
 
 <dd>
 <p>The maximum number of error source types that can report hardware errors.</p>

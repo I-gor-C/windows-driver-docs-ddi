@@ -59,19 +59,19 @@ VOID APIENTRY CALLBACK* DxgkCbSetPowerComponentResidency(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>A handle to the display adapter. The display miniport driver receives the handle from the <b>DeviceHandle</b> member of the <a href="..\dispmprt\ns-dispmprt--dxgkrnl-interface.md">DXGKRNL_INTERFACE</a> structure in a call to its <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
 </dd>
 
-### -param <i>ComponentIndex</i> 
+### -param ComponentIndex 
 
 <dd>
 <p>The power component index specified by  <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>.<b>pInputData</b> in a call to the <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function.</p>
 </dd>
 
-### -param <i>Residency</i> 
+### -param Residency 
 
 <dd>
 <p>The <i>expected residency</i>—the maximum  time, in units of 100 nanoseconds, that the display miniport driver expects a power component to remain idle after it enters an idle state. The <a href="https://msdn.microsoft.com/9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF">Power Management Framework</a> uses this information to select an appropriate idle state for the component that does not violate the requested residency. The expected residency specified by <i>Residency</i> remains in effect until the driver calls this function again to update it.</p>

@@ -56,7 +56,7 @@ PVOID KeRegisterNmiCallback(
 ## -parameters
 <dl>
 
-### -param <i>CallbackRoutine</i> [in]
+### -param CallbackRoutine [in]
 
 <dd>
 <p>Pointer to a function of the form:</p>
@@ -76,7 +76,7 @@ PVOID KeRegisterNmiCallback(
 </table></span></div>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Specifies the value to be passed as the <i>Context</i> parameter of <i>XxxNmiCallback</i> when it is called.</p>

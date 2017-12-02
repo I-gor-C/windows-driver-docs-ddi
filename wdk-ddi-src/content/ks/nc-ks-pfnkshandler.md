@@ -59,19 +59,19 @@ NTSTATUS KStrGetPropertyHandler(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to an IRP that contains the get property request.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>Pointer to a <a href="stream.ksidentifier">KSIDENTIFIER</a> that identifies the specific request. This is typically a pointer to a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure.</p>
 </dd>
 
-### -param <i>Data</i> [in, out]
+### -param Data [in, out]
 
 <dd>
 <p>Pointer to a caller-supplied buffer that specifies information relevant to the request.</p>

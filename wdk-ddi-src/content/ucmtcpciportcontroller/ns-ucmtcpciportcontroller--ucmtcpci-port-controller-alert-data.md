@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-                 Contains information about hardware alerts received on the port controller object. This structure is used in the <a href="buses.ucmtcpciportcontrolleralert">UcmTcpciPortControllerAlert</a> call. Call <a href="buses.ucmtcpci_port_controller_alert_data_init">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT</a> to initialize this structure.
+                 Contains information about hardware alerts received on the port controller object. This structure is used in the <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrolleralert.md">UcmTcpciPortControllerAlert</a> call. Call <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpci-port-controller-alert-data-init.md">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT</a> to initialize this structure.
              </p>
 
 
@@ -64,7 +64,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_ALERT_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of this structure.
@@ -72,15 +72,15 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_ALERT_DATA {
                  </p>
 </dd>
 
-### -field <b>AlertType</b>
+### -field AlertType
 
 <dd>
-<p>A <a href="buses.ucmtcpci_port_controller_alert_type">UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE</a> value that indicates the type of hardware alert.
+<p>A <a href="..\ucmtcpciportcontroller\ne-ucmtcpciportcontroller--ucmtcpci-port-controller-alert-type.md">UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE</a> value that indicates the type of hardware alert.
                      
                  </p>
 </dd>
 
-### -field <b>CCStatus</b>
+### -field CCStatus
 
 <dd>
 <p>A 
@@ -88,7 +88,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_ALERT_DATA {
                  This structure is defined in UcmTcpciSpec.h.</p>
 </dd>
 
-### -field <b>PowerStatus</b>
+### -field PowerStatus
 
 <dd>
 <p>A 
@@ -96,7 +96,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_ALERT_DATA {
                  This structure is defined in UcmTcpciSpec.h.</p>
 </dd>
 
-### -field <b>FaultStatus</b>
+### -field FaultStatus
 
 <dd>
 <p>A 
@@ -104,7 +104,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_ALERT_DATA {
                  This structure is defined in UcmTcpciSpec.h.</p>
 </dd>
 
-### -field <b>ReceiveBuffer</b>
+### -field ReceiveBuffer
 
 <dd>
 <p>
@@ -133,7 +133,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_ALERT_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmtcpciportcontrolleralert">UcmTcpciPortControllerAlert</a>
+<a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrolleralert.md">UcmTcpciPortControllerAlert</a>
 </dt>
 </dl>
 <p> </p>

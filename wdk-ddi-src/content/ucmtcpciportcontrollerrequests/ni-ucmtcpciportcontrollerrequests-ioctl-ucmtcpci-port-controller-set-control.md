@@ -46,16 +46,16 @@ req.product: Windows 10 or later.
 ## -ioctlparameters
 
 ### -input-buffer
-<p>A pointer to a <a href="buses.ucmtcpci_port_controller_set_control_in_params">UCMTCPCI_PORT_CONTROLLER_SET_CONTROL_IN_PARAMS</a> structure that contains the type of register and the value to set. </p>
+<p>A pointer to a <a href="..\ucmtcpciportcontrollerrequests\ns-ucmtcpciportcontrollerrequests--ucmtcpci-port-controller-set-control-in-params.md">UCMTCPCI_PORT_CONTROLLER_SET_CONTROL_IN_PARAMS</a> structure that contains the type of register and the value to set. </p>
 
-<p>A pointer to a <a href="buses.ucmtcpci_port_controller_set_control_in_params">UCMTCPCI_PORT_CONTROLLER_SET_CONTROL_IN_PARAMS</a> structure that contains the type of register and the value to set. </p>
+<p>A pointer to a <a href="..\ucmtcpciportcontrollerrequests\ns-ucmtcpciportcontrollerrequests--ucmtcpci-port-controller-set-control-in-params.md">UCMTCPCI_PORT_CONTROLLER_SET_CONTROL_IN_PARAMS</a> structure that contains the type of register and the value to set. </p>
 
 ### -input-buffer-length
-<p>The size of the <a href="buses.ucmtcpci_port_controller_set_control_in_params">UCMTCPCI_PORT_CONTROLLER_SET_CONTROL_IN_PARAMS</a> structure.</p>
+<p>The size of the <a href="..\ucmtcpciportcontrollerrequests\ns-ucmtcpciportcontrollerrequests--ucmtcpci-port-controller-set-control-in-params.md">UCMTCPCI_PORT_CONTROLLER_SET_CONTROL_IN_PARAMS</a> structure.</p>
 
-<p>The size of the <a href="buses.ucmtcpci_port_controller_set_control_in_params">UCMTCPCI_PORT_CONTROLLER_SET_CONTROL_IN_PARAMS</a> structure.</p>
+<p>The size of the <a href="..\ucmtcpciportcontrollerrequests\ns-ucmtcpciportcontrollerrequests--ucmtcpci-port-controller-set-control-in-params.md">UCMTCPCI_PORT_CONTROLLER_SET_CONTROL_IN_PARAMS</a> structure.</p>
 
-<p>The size of the <a href="buses.ucmtcpci_port_controller_set_control_in_params">UCMTCPCI_PORT_CONTROLLER_SET_CONTROL_IN_PARAMS</a> structure.</p>
+<p>The size of the <a href="..\ucmtcpciportcontrollerrequests\ns-ucmtcpciportcontrollerrequests--ucmtcpci-port-controller-set-control-in-params.md">UCMTCPCI_PORT_CONTROLLER_SET_CONTROL_IN_PARAMS</a> structure.</p>
 
 ### -output-buffer
 

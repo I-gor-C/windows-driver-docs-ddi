@@ -56,13 +56,13 @@ NTSTATUS ClfsMgmtRemovePolicy(
 ## -parameters
 <dl>
 
-### -param <i>LogFile</i> [in]
+### -param LogFile [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents the CLFS log whose policy is being removed.</p>
 </dd>
 
-### -param <i>PolicyType</i> [in]
+### -param PolicyType [in]
 
 <dd>
 <p>A value of the <a href="..\wdm\ne-wdm--clfs-mgmt-policy-type.md">CLFS_MGMT_POLICY_TYPE</a> enumeration that supplies the type of the policy to be removed.</p>

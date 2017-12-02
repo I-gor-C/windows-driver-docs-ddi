@@ -60,26 +60,26 @@ VOID APIENTRY* GetMipPacking(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hTiledResource</i> 
+### -param hTiledResource 
 
 <dd>
 <p>A handle to the tiled resource.</p>
 </dd>
 
-### -param <i>pNumPackedMips</i> [out]
+### -param pNumPackedMips [out]
 
 <dd>
 <p>A pointer to a variable that receives the number of mips that are packed, for a given array slice, including any mips that don't use the standard tile shapes.</p>
 <p>If there is no packing, a value of zero should be returned.</p>
 </dd>
 
-### -param <i>pNumTilesForPackedMips</i> [out]
+### -param pNumTilesForPackedMips [out]
 
 <dd>
 <p>A pointer to a variable that receives the number of tiles that the packed mips fit into, for a given array slice.</p>

@@ -7,7 +7,7 @@ old-location: ifsk\rtlgetownersecuritydescriptor.htm
 old-project: ifsk
 ms.assetid: 64c1b899-5737-474c-92ee-f18f7f2f06f5
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlGetOwnerSecurityDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ NTSTATUS RtlGetOwnerSecurityDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>SecurityDescriptor</i> [in]
+### -param SecurityDescriptor [in]
 
 <dd>
 <p>Pointer to the security descriptor.</p>
 </dd>
 
-### -param <i>Owner</i> [out]
+### -param Owner [out]
 
 <dd>
 <p>Pointer to an address to receive a pointer to the owner security identifier (<a href="ifsk.sid">SID</a>). If the security descriptor does not currently contain an owner SID, <i>Owner</i> receives <b>NULL</b>.</p>
 </dd>
 
-### -param <i>OwnerDefaulted</i> [out]
+### -param OwnerDefaulted [out]
 
 <dd>
 <p>Pointer to a Boolean variable that receives <b>TRUE</b> if the owner information is derived from a default mechanism, rather than by the original provider of the security descriptor explicitly, <b>FALSE</b> otherwise. Valid only if <i>Owner</i> receives a non-<b>NULL</b> value.</p>
@@ -172,4 +172,4 @@ NTSTATUS RtlGetOwnerSecurityDescriptor(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetOwnerSecurityDescriptor routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetOwnerSecurityDescriptor routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

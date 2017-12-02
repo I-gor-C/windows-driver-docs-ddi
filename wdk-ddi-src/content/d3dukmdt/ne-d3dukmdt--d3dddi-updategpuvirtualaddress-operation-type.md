@@ -58,25 +58,25 @@ typedef enum _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_UPDATEGPUVIRTUALADDRESS_MAP"></a><a id="d3dddi_updategpuvirtualaddress_map"></a><b>D3DDDI_UPDATEGPUVIRTUALADDRESS_MAP</b>
+### -field D3DDDI_UPDATEGPUVIRTUALADDRESS_MAP
 
 <dd>
 <p>Maps the given virtual address range to the given allocation range. The allocation does not have to be resident at the time of submission or at the time of mapping. The read-write protection is set to the pages. <b>DriverProtection</b> for the pages is set to zero.</p>
 </dd>
 
-### -field <a id="D3DDDI_UPDATEGPUVIRTUALADDRESS_UNMAP"></a><a id="d3dddi_updategpuvirtualaddress_unmap"></a><b>D3DDDI_UPDATEGPUVIRTUALADDRESS_UNMAP</b>
+### -field D3DDDI_UPDATEGPUVIRTUALADDRESS_UNMAP
 
 <dd>
 <p>Puts the specified virtual address range to the <i>zero</i> state or to the <i>invalid</i> state.</p>
 </dd>
 
-### -field <a id="D3DDDI_UPDATEGPUVIRTUALADDRESS_COPY"></a><a id="d3dddi_updategpuvirtualaddress_copy"></a><b>D3DDDI_UPDATEGPUVIRTUALADDRESS_COPY</b>
+### -field D3DDDI_UPDATEGPUVIRTUALADDRESS_COPY
 
 <dd>
 <p>The <i>copy</i> operation copies all mappings from source GPU virtual address range to the destination range. The source and destination ranges are allowed to intersect. Both ranges must belong to a reserved (zero) virtual address range.</p>
 </dd>
 
-### -field <a id="D3DDDI_UPDATEGPUVIRTUALADDRESS_MAP_PROTECT"></a><a id="d3dddi_updategpuvirtualaddress_map_protect"></a><b>D3DDDI_UPDATEGPUVIRTUALADDRESS_MAP_PROTECT</b>
+### -field D3DDDI_UPDATEGPUVIRTUALADDRESS_MAP_PROTECT
 
 <dd>
 <p>Maps the given virtual address range to the given allocation range. The allocation does not have to be resident at the time of submission or at the time of mapping. The page protection is specified in the operation.</p>

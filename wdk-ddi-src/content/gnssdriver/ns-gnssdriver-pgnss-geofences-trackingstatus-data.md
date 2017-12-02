@@ -7,7 +7,7 @@ old-location: sensors\gnss_geofences_trackingstatus_data.htm
 old-project: sensors
 ms.assetid: 65E59305-B1D9-4255-926A-A72F3B4887AF
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, GNSS_GEOFENCES_TRACKINGSTATUS_DATA, *PGNSS_GEOFENCES_TRACKINGSTATUS_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,32 +58,32 @@ typedef struct _GNSS_GEOFENCES_TRACKINGSTATUS_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>A failure code indicates that the GNSS engine is unable to track the geofences (due to bad signal conditions or other transient errors).</p>
 <p>A success code indicates that the GNSS engine was previously unable to track geofences, and is now able to track them.</p>
 </dd>
 
-### -field <b>StatusTimeStamp</b>
+### -field StatusTimeStamp
 
 <dd>
 <p>The UTC time of this status.</p>
 </dd>
 
-### -field <b>Unused[512]</b>
+### -field Unused[512]
 
 <dd>
 <p>Padding buffer.</p>

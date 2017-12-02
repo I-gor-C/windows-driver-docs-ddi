@@ -7,7 +7,7 @@ old-location: ifsk\network_open_location_qualifier.htm
 old-project: ifsk
 ms.assetid: 7762bf83-82cc-4eef-9699-d093a8c2b986
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: VOLUME_READ_PLEX_INPUT, VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="NetworkOpenLocationAny"></a><a id="networkopenlocationany"></a><a id="NETWORKOPENLOCATIONANY"></a><b>NetworkOpenLocationAny</b>
+### -field NetworkOpenLocationAny
 
 <dd>
 <p>Indicates that the file has no location restrictions. That is, a caller can open the file whether it resides remotely or locally. </p>
 </dd>
 
-### -field <a id="NetworkOpenLocationRemote"></a><a id="networkopenlocationremote"></a><a id="NETWORKOPENLOCATIONREMOTE"></a><b>NetworkOpenLocationRemote</b>
+### -field NetworkOpenLocationRemote
 
 <dd>
 <p>Indicates that the file is restricted to only opening remotely. That is, a caller can only open the file if it resides on a different computer from the computer that the caller resides on. </p>
 </dd>
 
-### -field <a id="NetworkOpenLocationLoopback"></a><a id="networkopenlocationloopback"></a><a id="NETWORKOPENLOCATIONLOOPBACK"></a><b>NetworkOpenLocationLoopback</b>
+### -field NetworkOpenLocationLoopback
 
 <dd>
 <p>Indicates that the file is restricted to only opening locally. That is, a caller can only open the file if it resides on the same computer as the caller. </p>

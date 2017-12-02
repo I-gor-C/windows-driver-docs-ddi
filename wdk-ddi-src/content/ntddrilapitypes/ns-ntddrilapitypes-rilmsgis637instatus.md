@@ -7,7 +7,7 @@ old-location: netvista\rilmsgis637instatus.htm
 old-project: netvista
 ms.assetid: ba87baa2-7d96-4418-bfbc-411bb4cda3fb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMSGIS637INSTATUS, RILMSGIS637INSTATUS, *LPRILMSGIS637INSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,51 +65,51 @@ typedef struct _RILMSGIS637INSTATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>raOrigAddress</b>
+### -field raOrigAddress
 
 <dd></dd>
 
-### -field <b>rsaOrigSubaddr</b>
+### -field rsaOrigSubaddr
 
 <dd></dd>
 
-### -field <b>stSCReceiveTime</b>
+### -field stSCReceiveTime
 
 <dd></dd>
 
-### -field <b>dwCauseCode</b>
+### -field dwCauseCode
 
 <dd></dd>
 
-### -field <b>dwReplySeqNumber</b>
+### -field dwReplySeqNumber
 
 <dd></dd>
 
-### -field <b>dwUserResponseCode</b>
+### -field dwUserResponseCode
 
 <dd></dd>
 
-### -field <b>dwMsgStatusType</b>
+### -field dwMsgStatusType
 
 <dd></dd>
 
-### -field <b>dwMsgID</b>
+### -field dwMsgID
 
 <dd></dd>
 
-### -field <b>dwMsgLang</b>
+### -field dwMsgLang
 
 <dd></dd>
 
-### -field <b>dwMsgEncoding</b>
+### -field dwMsgEncoding
 
 <dd></dd>
 
-### -field <b>cchMsgLength</b>
+### -field cchMsgLength
 
 <dd></dd>
 
-### -field <b>rgbMsg</b>
+### -field rgbMsg
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmamsgpriority.htm
 old-project: netvista
 ms.assetid: aec67cd5-9ac9-41da-b5e6-a4e416923afb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILMSGCDMAMSGPRIORITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGPRIORITY_HIGH"></a><a id="ril_msgpriority_high"></a><b>RIL_MSGPRIORITY_HIGH</b>
+### -field RIL_MSGPRIORITY_HIGH
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPRIORITY_URGENT"></a><a id="ril_msgpriority_urgent"></a><b>RIL_MSGPRIORITY_URGENT</b>
+### -field RIL_MSGPRIORITY_URGENT
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPRIORITY_EMERGENCY"></a><a id="ril_msgpriority_emergency"></a><b>RIL_MSGPRIORITY_EMERGENCY</b>
+### -field RIL_MSGPRIORITY_EMERGENCY
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPRIORITY_MAX"></a><a id="ril_msgpriority_max"></a><b>RIL_MSGPRIORITY_MAX</b>
+### -field RIL_MSGPRIORITY_MAX
 
 <dd></dd>
 </dl>

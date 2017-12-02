@@ -60,7 +60,7 @@ typedef EVT_IDD_CX_PARSE_MONITOR_DESCRIPTION PFN_IDD_CX_PARSE_MONITOR_DESCRIPTIO
 ## -parameters
 <dl>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>
@@ -68,7 +68,7 @@ typedef EVT_IDD_CX_PARSE_MONITOR_DESCRIPTION PFN_IDD_CX_PARSE_MONITOR_DESCRIPTIO
                 Input arguments used by <b>EVT_IDD_CX_PARSE_MONITOR_DESCRIPTION</b>.</p>
 </dd>
 
-### -param <i>pOutArgs</i> [out]
+### -param pOutArgs [out]
 
 <dd>
 <p>

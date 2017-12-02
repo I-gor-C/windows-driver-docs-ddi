@@ -55,13 +55,13 @@ typedef struct _PEP_COMPONENT_PERF_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>SetCount</b>
+### -field SetCount
 
 <dd>
 <p>The number of elements in the <b>PerfStateSets</b> array.</p>
 </dd>
 
-### -field <b>PerfStateSets</b>
+### -field PerfStateSets
 
 <dd>
 <p>The first element in an array of <a href="..\pepfx\ns-pepfx--pep-component-perf-set.md">PEP_COMPONENT_PERF_SET</a> structures. Each array element describes a P-state of the component. If the array contains more than one element, the additional elements immediately follow the end of the <b>PEP_COMPONENT_PERF_INFO</b> structure.</p>

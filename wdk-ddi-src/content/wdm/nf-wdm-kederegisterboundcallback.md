@@ -55,7 +55,7 @@ NTSTATUS KeDeregisterBoundCallback(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Specifies the value returned by <a href="..\wdm\nf-wdm-keregisterboundcallback.md">KeRegisterBoundCallback</a> when the callback was registered. </p>

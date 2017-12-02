@@ -7,7 +7,7 @@ old-location: netvista\rilcallforwardingsettingsparammask_2.htm
 old-project: netvista
 ms.assetid: 4db4e6fe-1faf-4109-95aa-e2e5bf3b0dd6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef enum _RILCALLFORWARDINGSETTINGSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_CFS_INFOCLASSES"></a><a id="ril_param_cfs_infoclasses"></a><b>RIL_PARAM_CFS_INFOCLASSES</b>
+### -field RIL_PARAM_CFS_INFOCLASSES
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CFS_ADDRESS"></a><a id="ril_param_cfs_address"></a><b>RIL_PARAM_CFS_ADDRESS</b>
+### -field RIL_PARAM_CFS_ADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CFS_SUBADDRESS"></a><a id="ril_param_cfs_subaddress"></a><b>RIL_PARAM_CFS_SUBADDRESS</b>
+### -field RIL_PARAM_CFS_SUBADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CFS_DELAYTIME"></a><a id="ril_param_cfs_delaytime"></a><b>RIL_PARAM_CFS_DELAYTIME</b>
+### -field RIL_PARAM_CFS_DELAYTIME
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CFS_ALL"></a><a id="ril_param_cfs_all"></a><b>RIL_PARAM_CFS_ALL</b>
+### -field RIL_PARAM_CFS_ALL
 
 <dd></dd>
 </dl>

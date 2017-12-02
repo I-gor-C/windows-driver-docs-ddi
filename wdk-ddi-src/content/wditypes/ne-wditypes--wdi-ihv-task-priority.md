@@ -7,7 +7,7 @@ old-location: netvista\wdi_ihv_task_priority.htm
 old-project: netvista
 ms.assetid: 606CF45C-5398-4157-92A7-382B6162D806
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _WDI_IHV_TASK_PRIORITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_IHV_TASK_PRIORITY_HIGH"></a><a id="wdi_ihv_task_priority_high"></a><b>WDI_IHV_TASK_PRIORITY_HIGH</b>
+### -field WDI_IHV_TASK_PRIORITY_HIGH
 
 <dd>
 <p>High priority.</p>
 </dd>
 
-### -field <a id="WDI_IHV_TASK_PRIORITY_MEDIUM"></a><a id="wdi_ihv_task_priority_medium"></a><b>WDI_IHV_TASK_PRIORITY_MEDIUM</b>
+### -field WDI_IHV_TASK_PRIORITY_MEDIUM
 
 <dd>
 <p>Medium priority.</p>
 </dd>
 
-### -field <a id="WDI_IHV_TASK_PRIORITY_LOW"></a><a id="wdi_ihv_task_priority_low"></a><b>WDI_IHV_TASK_PRIORITY_LOW</b>
+### -field WDI_IHV_TASK_PRIORITY_LOW
 
 <dd>
 <p>Low priority.</p>

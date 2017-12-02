@@ -59,19 +59,19 @@ NTSTATUS APIENTRY pfnGetTopology(
 ## -parameters
 <dl>
 
-### -param <i>hVidPn</i> [in]
+### -param hVidPn [in]
 
 <dd>
 <p>[in] A handle to a VidPN object. The VidPN manager previously provided this handle to the display miniport driver by calling <a href="display.dxgkddienumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>, <a href="display.dxgkddiissupportedvidpn">DxgkDdiIsSupportedVidPn</a>, or <a href="display.dxgkddirecommendfunctionalvidpn">DxgkDdiRecommendFunctionalVidPn</a>.</p>
 </dd>
 
-### -param <i>phVidPnTopology</i> [out]
+### -param phVidPnTopology [out]
 
 <dd>
 <p>[out] A pointer to a variable that receives a handle to the VidPN topology object.</p>
 </dd>
 
-### -param <i>ppVidPnTopologyInterface</i> [out]
+### -param ppVidPnTopologyInterface [out]
 
 <dd>
 <p>[out] A pointer to a variable that receives a pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpntopology-interface.md">DXGK_VIDPNTOPOLOGY_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the VidPN topology object.</p>

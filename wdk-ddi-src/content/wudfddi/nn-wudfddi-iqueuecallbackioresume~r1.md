@@ -7,7 +7,7 @@ old-location: wdf\iqueuecallbackioresume.htm
 old-project: wdf
 ms.assetid: 3f27f104-7a06-4f81-9605-2a47c7de7e01
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

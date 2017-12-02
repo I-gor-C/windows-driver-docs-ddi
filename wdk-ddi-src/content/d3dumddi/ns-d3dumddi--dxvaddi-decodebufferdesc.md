@@ -65,37 +65,37 @@ typedef struct _DXVADDI_DECODEBUFFERDESC {
 ## -struct-fields
 <dl>
 
-### -field <b>hBuffer</b>
+### -field hBuffer
 
 <dd>
 <p>[in] A handle to the buffer.</p>
 </dd>
 
-### -field <b>CompressedBufferType</b>
+### -field CompressedBufferType
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the buffer.</p>
 </dd>
 
-### -field <b>BufferIndex</b>
+### -field BufferIndex
 
 <dd>
 <p>[in] Reserved. Do not use this member. For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>DataOffset</b>
+### -field DataOffset
 
 <dd>
 <p>[in] The offset of the relevant data from the beginning of the buffer, in bytes. The use of this member is currently restricted to the value zero. </p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>[in] The amount of relevant data in the buffer, in bytes. The location of the last byte of content in the buffer is the value of <b>DataOffset</b> plus the value of <b>DataSize</b> minus 1.</p>
 </dd>
 
-### -field <b>FirstMBaddress</b>
+### -field FirstMBaddress
 
 <dd>
 <p>[in] The macroblock address of the first macroblock in the buffer that is passed to the accelerator. The macroblock address is given in raster scan order. The address is determined by the members of the <a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a> structure. The following table shows examples of macroblock addresses.</p>
@@ -142,7 +142,7 @@ typedef struct _DXVADDI_DECODEBUFFERDESC {
 <p>If the data buffer is a residual difference block data buffer, <b>FirstMBaddress</b> must have the same value as for the corresponding macroblock control command buffer. </p>
 </dd>
 
-### -field <b>NumMBsInBuffer</b>
+### -field NumMBsInBuffer
 
 <dd>
 <p>[in] The number of macroblocks of data in the buffer, including skipped macroblocks. This member must be zero if the data buffer is one of the following types: picture decoding parameters, inverse-quantization matrix, AYUV, IA44/AI44, DPXD, Highlight, or DCCMD.</p>
@@ -188,31 +188,31 @@ typedef struct _DXVADDI_DECODEBUFFERDESC {
 <p> </p>
 </dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>[in] Reserved. Do not use this member. For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[in] Reserved. Do not use this member. For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>Stride</b>
+### -field Stride
 
 <dd>
 <p>[in] Reserved. Do not use this member. For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>ReservedBits</b>
+### -field ReservedBits
 
 <dd>
 <p>[in] Reserved bits that are used for packing and alignment. This member must be zero.</p>
 </dd>
 
-### -field <b>pCipherCounter</b>
+### -field pCipherCounter
 
 <dd>
 <p>[in] A pointer to a <a href="display.dxvaddi_pvp_hw_iv">DXVADDI_PVP_HW_IV</a> structure that contains a 128-bit protected video path (PVP) value. </p>

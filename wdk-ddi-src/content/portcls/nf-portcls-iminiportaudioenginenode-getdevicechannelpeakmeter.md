@@ -56,19 +56,19 @@ NTSTATUS GetDeviceChannelPeakMeter(
 ## -parameters
 <dl>
 
-### -param <i>ulNodeId</i> [in]
+### -param ulNodeId [in]
 
 <dd>
 <p>The ID for the node that represents the audio device.</p>
 </dd>
 
-### -param <i>ulChannel</i> [in]
+### -param ulChannel [in]
 
 <dd>
 <p>The audio device channel.</p>
 </dd>
 
-### -param <i>plPeakMeter</i> [out]
+### -param plPeakMeter [out]
 
 <dd>
 <p>The PeakMeter value for the audio device channel.</p>

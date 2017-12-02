@@ -56,13 +56,13 @@ typedef struct _WINBIO_VERSION {
 ## -struct-fields
 <dl>
 
-### -field <b>MajorVersion</b>
+### -field MajorVersion
 
 <dd>
 <p>Identifies the major version of the driver.</p>
 </dd>
 
-### -field <b>MinorVersion</b>
+### -field MinorVersion
 
 <dd>
 <p>Identifies the minor version of the driver.</p>

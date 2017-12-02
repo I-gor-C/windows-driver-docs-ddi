@@ -56,17 +56,17 @@ FORCEINLINE void UrsSetHardwareEventSupport(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to the framework device object that the client driver retrieved in the previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.</p>
 </dd>
 
-### -param <i>HardwareEventReportingSupported</i> [in]
+### -param HardwareEventReportingSupported [in]
 
 <dd>
 <p>A boolean value that indicates support for  reporting hardware events. </p>
-<p>TRUE indicates the client driver will report hardware events by calling <a href="buses.ursreporthardwareevent">UrsReportHardwareEvent</a>. </p>
+<p>TRUE indicates the client driver will report hardware events by calling <a href="..\ursdevice\nf-ursdevice-ursreporthardwareevent.md">UrsReportHardwareEvent</a>. </p>
 <p>FALSE indicates hardware event reporting is not handled by the client driver.</p>
 </dd>
 </dl>
@@ -79,7 +79,7 @@ FORCEINLINE void UrsSetHardwareEventSupport(
 
 <p>For certain controllers, the client driver might not support role detection before performing a role switch operation. In that case, the client driver must  set  <i>HardwareEventReportingSupported</i> to FALSE.  The operating system manages the role of the controller.</p>
 
-<p>Otherwise, if the driver supports role detection, it must set  <i>HardwareEventReportingSupported</i> to TRUE.  This indicates to the class extension that the client driver will  handle hardware events, such as ID pin interrupts, and report to the class extension that the role needs to be changed. The driver can report events by calling <a href="buses.ursreporthardwareevent">UrsReportHardwareEvent</a>.</p>
+<p>Otherwise, if the driver supports role detection, it must set  <i>HardwareEventReportingSupported</i> to TRUE.  This indicates to the class extension that the client driver will  handle hardware events, such as ID pin interrupts, and report to the class extension that the role needs to be changed. The driver can report events by calling <a href="..\ursdevice\nf-ursdevice-ursreporthardwareevent.md">UrsReportHardwareEvent</a>.</p>
 
 ## -requirements
 <table>
@@ -140,7 +140,7 @@ FORCEINLINE void UrsSetHardwareEventSupport(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ursreporthardwareevent">UrsReportHardwareEvent</a>
+<a href="..\ursdevice\nf-ursdevice-ursreporthardwareevent.md">UrsReportHardwareEvent</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: ifsk\io_foext_silo_parameters.htm
 old-project: ifsk
 ms.assetid: EC7C59D0-96AE-400D-9502-D6DBFD9918DC
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: IO_FOEXT_SILO_PARAMETERS, IO_FOEXT_SILO_PARAMETERS, *PIO_FOEXT_SILO_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ typedef struct _IO_FOEXT_SILO_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The length of the structure. This also serves as the structure version.</p>
 </dd>
 
-### -field <b>SiloContext</b>
+### -field SiloContext
 
 <dd>
 <p>The container context.</p>

@@ -58,7 +58,7 @@ typedef struct IDARG_IN_PARSEMONITORDESCRIPTION {
 ## -struct-fields
 <dl>
 
-### -field <b>MonitorDescription</b>
+### -field MonitorDescription
 
 <dd>
 <p>
@@ -66,14 +66,14 @@ typedef struct IDARG_IN_PARSEMONITORDESCRIPTION {
                  </p>
 </dd>
 
-### -field <b>MonitorModeBufferInputCount</b>
+### -field MonitorModeBufferInputCount
 
 <dd>
 <p>
                      [in] The number of monitor modes the <b>pMonitorModes</b> buffer being passed into the driver can hold. A value of zero indicates that the driver should not copy the monitor mode list into the provided buffer, but should set the output buffer size to the size required.</p>
 </dd>
 
-### -field <b>pMonitorModes</b>
+### -field pMonitorModes
 
 <dd>
 <p>

@@ -59,16 +59,16 @@ void EvtUcxEndpointSetCharacteristic(
 ## -parameters
 <dl>
 
-### -param <i>Endpoint</i> [in]
+### -param Endpoint [in]
 
 <dd>
 <p>A handle to a UCXENDPOINT object that represents the endpoint.</p>
 </dd>
 
-### -param <i>UcxEndpointCharacteristic</i> [in]
+### -param UcxEndpointCharacteristic [in]
 
 <dd>
-<p>A pointer to a <a href="buses.ucx_endpoint_characteristic">UCX_ENDPOINT_CHARACTERISTIC</a> structure that contains endpoint characteristics.</p>
+<p>A pointer to a <a href="..\ucxendpoint\ns-ucxendpoint--ucx-endpoint-characteristic.md">UCX_ENDPOINT_CHARACTERISTIC</a> structure that contains endpoint characteristics.</p>
 </dd>
 </dl>
 
@@ -76,7 +76,7 @@ void EvtUcxEndpointSetCharacteristic(
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
+<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
  method.</p>
 
 ## -requirements

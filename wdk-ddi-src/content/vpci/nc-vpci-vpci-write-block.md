@@ -61,25 +61,25 @@ NTSTATUS ReadVfConfigBlock(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\vpci\ns-vpci--vpci-interface-standard.md">VPCI_INTERFACE_STANDARD</a> structure for the interface.</p>
 </dd>
 
-### -param <i>BlockId</i> [in]
+### -param BlockId [in]
 
 <dd>
 <p>The identifier of the VF configuration block to be written. This identifier is proprietary to the independent hardware vendor (IHV) and is used only by the drivers for the PCIe physical function (PF) and VF on the device.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that contains the configuration data to be written. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The number of bytes to be written to the VF configuration block.

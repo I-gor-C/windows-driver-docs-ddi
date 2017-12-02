@@ -7,7 +7,7 @@ old-location: sensors\isensordriver_onclientdisconnect.htm
 old-project: sensors
 ms.assetid: 9484610b-4cbd-4c4e-9e60-ef052702325c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorDriver, OnClientDisconnect, ISensorDriver::OnClientDisconnect
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ HRESULT OnClientDisconnect(
 ## -parameters
 <dl>
 
-### -param <i>pClientFile</i> [in]
+### -param pClientFile [in]
 
 <dd>
 <p>Pointer to an <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface that represents the file object for the client that disconnected.</p>
 </dd>
 
-### -param <i>pwszSensorID</i> [in]
+### -param pwszSensorID [in]
 
 <dd>
 <p><b>LPWSTR</b> that contains the ID for the sensor from which the client application is disconnecting.</p>
@@ -83,7 +83,7 @@ HRESULT OnClientDisconnect(
 
 <p>You can use this call as a signal to update lists and reference counts of connected applications. </p>
 
-<p>For more information about how to use this method, see <a href="NULL">Filtering data</a>.</p>
+<p>For more information about how to use this method, see <a href="https://msdn.microsoft.com/1895EC5C-08C1-4976-83F2-CD5A2B55338D">Filtering data</a>.</p>
 
 <p>The following example code demonstrates an implementation of <b>ISensorDriver::OnClientDisconnect</b>. This function uses an ATL simple map, named Clients, to keep track of connected clients. See <a href="sensors.isensordriver_onclientconnect">ISensorDriver::OnClientConnect</a> for an example of how connected clients are added to the map.</p>
 
@@ -157,4 +157,4 @@ HRESULT OnClientDisconnect(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20ISensorDriver::OnClientDisconnect method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20ISensorDriver::OnClientDisconnect method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

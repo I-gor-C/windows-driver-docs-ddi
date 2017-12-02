@@ -7,7 +7,7 @@ old-location: image\devicedialogdata2.htm
 old-project: image
 ms.assetid: 8bf83ec8-a620-48ba-90f0-7bfb8aebca1d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: tagDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,55 +63,55 @@ typedef struct tagDEVICEDIALOGDATA2 {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Specifies the size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>pIWiaItemRoot</b>
+### -field pIWiaItemRoot
 
 <dd>
 <p>Points to an <a href="http://go.microsoft.com/fwlink/p/?linkid=121992">IWiaItem2</a> interface that represents the valid root item in the application item tree.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Specifies the flags passed to <a href="http://go.microsoft.com/fwlink/p/?linkid=121993">IWiaItem2::DeviceDlg</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=121994">IWiaDevMgr2::GetImageDlg</a> by the calling program. The possible values for this member are WIA_DEVICE_DIALOG_SINGLE_IMAGE and WIA_DEVICE_DIALOG_USE_COMMON_UI (defined in header file <i>Wiadef.h</i>).</p>
 </dd>
 
-### -field <b>hwndParent</b>
+### -field hwndParent
 
 <dd>
 <p>Specifies the handle to the parent window of the dialog.</p>
 </dd>
 
-### -field <b>bstrFolderName</b>
+### -field bstrFolderName
 
 <dd>
 <p>A string of type <b>BSTR</b> that contains the name of the destination folder to which the files obtained from WIA items are transferred.</p>
 </dd>
 
-### -field <b>bstrFilename</b>
+### -field bstrFilename
 
 <dd>
 <p>A string of type <b>BSTR</b> that contains the file name template to be used for files transferred from WIA items to the destination folder designated by <b>bstrFolderName</b>. An arbitrary number of unique file names can be created by appending additional characters to the file name template. For more information about file name templates, see <a href="http://go.microsoft.com/fwlink/p/?linkid=121995">PathMakeUniqueName Function</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=121996">PathYetAnotherMakeUniqueName Function</a>.</p>
 </dd>
 
-### -field <b>lNumFiles</b>
+### -field lNumFiles
 
 <dd>
 <p>The number of strings written to the <i>pbstrFilePaths</i> array.</p>
 </dd>
 
-### -field <b>pbstrFilePaths</b>
+### -field pbstrFilePaths
 
 <dd>
 <p>Pointer to an array of <b>BSTR</b> pointers. Each array element points to a <b>BSTR</b> that contains the destination name of a file that was successfully transferred to the folder identified by <b>bstrFolderName</b>. The method must allocate the storage for this member. For more information, see the following <b>Remarks</b> section.</p>
 </dd>
 
-### -field <b>pWiaItem</b>
+### -field pWiaItem
 
 <dd>
 <p>Pointer to the <b>IWiaItem2</b> interface of the WIA item that transfers data to the file or files named in the <b>bstrFilePaths</b> array.</p>
@@ -167,4 +167,4 @@ typedef struct tagDEVICEDIALOGDATA2 {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20DEVICEDIALOGDATA2 structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20DEVICEDIALOGDATA2 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

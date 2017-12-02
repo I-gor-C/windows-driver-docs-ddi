@@ -55,7 +55,7 @@ KPRIORITY KeQueryPriorityThread(
 ## -parameters
 <dl>
 
-### -param <i>Thread</i> [in]
+### -param Thread [in]
 
 <dd>
 <p>Pointer to a dispatcher object of type KTHREAD. </p>
@@ -148,7 +148,7 @@ KPRIORITY KeQueryPriorityThread(
 <a href="..\wdm\nf-wdm-kesetprioritythread.md">KeSetPriorityThread</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 </dl>
 <p> </p>

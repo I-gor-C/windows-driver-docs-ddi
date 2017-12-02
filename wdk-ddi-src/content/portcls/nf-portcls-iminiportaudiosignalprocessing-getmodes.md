@@ -56,19 +56,19 @@ NTSTATUS GetModes(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>The index of the audio pin.</p>
 </dd>
 
-### -param <i>SignalProcessingModes</i> [out, optional]
+### -param SignalProcessingModes [out, optional]
 
 <dd>
 <p>This parameter is optional. It returns an array of GUIDs that identify the  signal processing modes supported by the  <i>Pin</i> parameter.</p>
 </dd>
 
-### -param <i>NumSignalProcessingModes</i> [in, out]
+### -param NumSignalProcessingModes [in, out]
 
 <dd>
 <p>When used as an input, it specifies the number of elements that can be written to the buffer that is specified in <i>SignalProcessingModes</i>. When used as an output, it returns the number of elements that were written to the buffer.</p>

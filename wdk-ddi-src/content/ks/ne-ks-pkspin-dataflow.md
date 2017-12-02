@@ -55,13 +55,13 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPIN_DATAFLOW_IN"></a><a id="kspin_dataflow_in"></a><b>KSPIN_DATAFLOW_IN</b>
+### -field KSPIN_DATAFLOW_IN
 
 <dd>
 <p>Indicates that the pin factory instantiates data sink pins. Such pins can only be connected to data source pins. </p>
 </dd>
 
-### -field <a id="KSPIN_DATAFLOW_OUT"></a><a id="kspin_dataflow_out"></a><b>KSPIN_DATAFLOW_OUT</b>
+### -field KSPIN_DATAFLOW_OUT
 
 <dd>
 <p>Indicates that the pin factory instantiates data source pins. Such pins can only be connected to data sink pins.</p>

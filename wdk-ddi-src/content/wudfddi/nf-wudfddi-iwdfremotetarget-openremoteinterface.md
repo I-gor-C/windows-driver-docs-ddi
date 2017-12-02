@@ -7,7 +7,7 @@ old-location: wdf\iwdfremotetarget_openremoteinterface.htm
 old-project: wdf
 ms.assetid: 5d278cde-3ebe-4fee-86fd-1ec4e79bd837
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFRemoteTarget, OpenRemoteInterface, IWDFRemoteTarget::OpenRemoteInterface
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ HRESULT OpenRemoteInterface(
 ## -parameters
 <dl>
 
-### -param <i>pRemoteInterface</i> [in]
+### -param pRemoteInterface [in]
 
 <dd>
 <p>A pointer to a <a href="..\wudfddi\nn-wudfddi-iwdfremoteinterface.md">IWDFRemoteInterface</a> interface that the driver obtained from a previous call to <a href="wdf.iwdfdevice2_createremoteinterface">IWDFDevice2::CreateRemoteInterface</a>.</p>
 </dd>
 
-### -param <i>pszRelativeFileName</i> [in, optional]
+### -param pszRelativeFileName [in, optional]
 
 <dd>
 <p>An optional pointer to a caller-supplied, <b>null</b>-terminated string that the framework appends to the symbolic link name of the device interface. </p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>A bitmask that specifies the caller's desired access to the file. For more information about this member, see the <i>DesiredAccess</i> parameter of <a href="http://go.microsoft.com/fwlink/p/?linkid=152795">CreateFile</a> in the Windows SDK.</p>
 </dd>
 
-### -param <i>pOpenParams</i> [in, optional]
+### -param pOpenParams [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wudfddi\ns-wudfddi--umdf-io-target-open-params.md">UMDF_IO_TARGET_OPEN_PARAMS</a> structure that contains additional parameters. This parameter is optional and can be <b>NULL</b>.</p>
@@ -167,4 +167,4 @@ HRESULT OpenRemoteInterface(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFRemoteTarget::OpenRemoteInterface method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFRemoteTarget::OpenRemoteInterface method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

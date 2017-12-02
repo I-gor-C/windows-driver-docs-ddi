@@ -57,25 +57,25 @@ NTSTATUS SetStreamChannelVolume(
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>The audio stream channel.</p>
 </dd>
 
-### -param <i>TargetVolume</i> [in]
+### -param TargetVolume [in]
 
 <dd>
 <p>The volume level to be applied to the audio stream.</p>
 </dd>
 
-### -param <i>CurveType</i> [in]
+### -param CurveType [in]
 
 <dd>
 <p>The curve algorithm that will be used  to set the volume level. The curve types are represented by the members of the <a href="..\ksmedia\ne-ksmedia-audio-curve-type.md">AUDIO_CURVE_TYPE</a> enum.</p>
 </dd>
 
-### -param <i>CurveDuration</i> [in]
+### -param CurveDuration [in]
 
 <dd>
 <p>The length of time over which the curve algorithm will be applied.</p>

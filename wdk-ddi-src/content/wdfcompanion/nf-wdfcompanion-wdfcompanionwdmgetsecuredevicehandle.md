@@ -7,7 +7,7 @@ old-location: wdf\wdfcompanionwdmgetsecuredevicehandle.htm
 old-project: wdf
 ms.assetid: 8fc3dc6f-8a21-490b-adbf-5f735cb953de
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfCompanionWdmGetSecureDeviceHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ HANDLE WdfCompanionWdmGetSecureDeviceHandle(
 ## -parameters
 <dl>
 
-### -param <i>Companion</i> [in]
+### -param Companion [in]
 
 <dd></dd>
 </dl>

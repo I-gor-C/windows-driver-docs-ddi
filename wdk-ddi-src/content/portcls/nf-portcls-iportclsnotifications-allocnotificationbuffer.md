@@ -57,19 +57,19 @@ NTSTATUS  AllocNotificationBuffer(
 ## -parameters
 <dl>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>Specifies the type of memory pool from which the object is to be allocated (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a>). The recommended values are NonPagedPoolNx or PagedPool. The memory pool type selection also depends on the IRQL level. If running at DISPATCH_LEVEL the memory must be non-paged.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>Number of bytes to allocate.</p>
 </dd>
 
-### -param <i>PPCNOTIFICATION* </i> [out]
+### -param PPCNOTIFICATION*  [out]
 
 <dd>
 <p>Pointer to a <a href="..\portcls\ns-portcls--pcnotification-buffer.md">PCNOTIFICATION_BUFFER</a> which the method writes the address of the allocated notification.</p>

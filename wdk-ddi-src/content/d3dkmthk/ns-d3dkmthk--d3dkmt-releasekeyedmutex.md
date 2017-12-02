@@ -56,19 +56,19 @@ typedef struct _D3DKMT_RELEASEKEYEDMUTEX {
 ## -struct-fields
 <dl>
 
-### -field <b>hKeyedMutex</b>
+### -field hKeyedMutex
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the keyed mutex object to release. </p>
 </dd>
 
-### -field <b>Key</b>
+### -field Key
 
 <dd>
 <p>[in] A 64-bit value that specifies the key value to release the mutex to. </p>
 </dd>
 
-### -field <b>FenceValue</b>
+### -field FenceValue
 
 <dd>
 <p>[in] A 64-bit value that specifies the current fence value of the GPU synchronization object. </p>

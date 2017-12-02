@@ -7,7 +7,7 @@ old-location: sensors\gnss_breadcrumb_v1.htm
 old-project: sensors
 ms.assetid: BE1D09C4-8EC0-4BF3-A943-20EDD44F9CF1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_BREADCRUMB_V1, GNSS_BREADCRUMB_V1, *PGNSS_BREADCRUMB_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,67 +64,67 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>FixTimeStamp</b>
+### -field FixTimeStamp
 
 <dd>
 <p>Contains the breadcrumb fix timestamp value.</p>
 </dd>
 
-### -field <b>Latitude</b>
+### -field Latitude
 
 <dd>
 <p>Contains the breadcrumb longitude value at the time of the fix.</p>
 </dd>
 
-### -field <b>Longitude</b>
+### -field Longitude
 
 <dd>
 <p>Contains the breadcrumb latitude at the time of the fix.</p>
 </dd>
 
-### -field <b>HorizontalAccuracy</b>
+### -field HorizontalAccuracy
 
 <dd>
 <p>Contains the breadcrumb horizontal altitude value.</p>
 </dd>
 
-### -field <b>Speed</b>
+### -field Speed
 
 <dd>
 <p>Contains the speed value at the time of the breadcrumb fix.</p>
 </dd>
 
-### -field <b>SpeedAccuracy</b>
+### -field SpeedAccuracy
 
 <dd>
 <p>Contains the breadcrumb speed accuracy value.</p>
 </dd>
 
-### -field <b>Altitude</b>
+### -field Altitude
 
 <dd>
 <p>Contains the breadcrumb altitude value at the time of the fix.</p>
 </dd>
 
-### -field <b>AltitudeAccuracy</b>
+### -field AltitudeAccuracy
 
 <dd>
 <p>Contains the breadcrumb altitude accuracy value.</p>
 </dd>
 
-### -field <b>Heading</b>
+### -field Heading
 
 <dd>
 <p>Contains the breadcrumb heading value at the time of the fix.</p>
 </dd>
 
-### -field <b>HeadingAccuracy</b>
+### -field HeadingAccuracy
 
 <dd>
 <p>Contains the breadcrumb heading accuracy value.</p>
 </dd>
 
-### -field <b>FixSuccess</b>
+### -field FixSuccess
 
 <dd>
 <p>A Boolean type that contains the fix success value.</p>

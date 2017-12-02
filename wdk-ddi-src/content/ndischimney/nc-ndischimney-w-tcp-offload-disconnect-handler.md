@@ -7,7 +7,7 @@ old-location: netvista\miniporttcpoffloaddisconnect.htm
 old-project: netvista
 ms.assetid: f8be12a9-c2c0-4a22-8a57-58c8b27ef69e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: BINARY_DATA, BINARY_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ NDIS_STATUS MiniportTcpOffloadDisconnect(
 ## -parameters
 <dl>
 
-### -param <i>MiniportAdapterContext</i> [in]
+### -param MiniportAdapterContext [in]
 
 <dd>
 <p>The handle to an offload-target allocated context area in which the offload target maintains state
@@ -77,7 +77,7 @@ NDIS_STATUS MiniportTcpOffloadDisconnect(
      MiniportInitializeEx</a> function.</p>
 </dd>
 
-### -param <i>MiniportOffloadContext</i> [in]
+### -param MiniportOffloadContext [in]
 
 <dd>
 <p>A pointer to a memory location that contains a PVOID value. This PVOID value references the
@@ -85,7 +85,7 @@ NDIS_STATUS MiniportTcpOffloadDisconnect(
      offload target supplied this PVOID value when it offloaded the TCP connection state object.</p>
 </dd>
 
-### -param <i>NetBufferList</i> [in]
+### -param NetBufferList [in]
 
 <dd>
 <p>A pointer to a single 
@@ -94,7 +94,7 @@ NDIS_STATUS MiniportTcpOffloadDisconnect(
      NET_BUFFER_LIST structure.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>As one of the following values, the type of disconnect that the offload target must perform:
@@ -102,13 +102,13 @@ NDIS_STATUS MiniportTcpOffloadDisconnect(
 <p></p>
 <dl>
 
-### -param <a id="TCP_DISCONNECT_ABORTIVE_CLOSE"></a><a id="tcp_disconnect_abortive_close"></a><b>TCP_DISCONNECT_ABORTIVE_CLOSE</b>
+### -param TCP_DISCONNECT_ABORTIVE_CLOSE
 
 <dd>
 <p>The offload target must perform an abortive disconnect by sending an RST segment.</p>
 </dd>
 
-### -param <a id="TCP_DISCONNECT_GRACEFUL_CLOSE"></a><a id="tcp_disconnect_graceful_close"></a><b>TCP_DISCONNECT_GRACEFUL_CLOSE</b>
+### -param TCP_DISCONNECT_GRACEFUL_CLOSE
 
 <dd>
 <p>The offload target must perform a graceful disconnect by sending a FIN segment.</p>
@@ -269,4 +269,4 @@ NDIS_STATUS MiniportTcpOffloadDisconnect(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_DISCONNECT_HANDLER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_DISCONNECT_HANDLER callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

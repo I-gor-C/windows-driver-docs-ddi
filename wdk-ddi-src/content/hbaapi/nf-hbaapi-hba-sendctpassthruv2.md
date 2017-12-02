@@ -59,37 +59,37 @@ HBA_STATUS HBA_API HBA_SendCTPassThruV2(
 ## -parameters
 <dl>
 
-### -param <i>HbaHandle</i> [in]
+### -param HbaHandle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA that will route the CT command. The HBA routes the CT command to the server that runs the service requested by the CT command. </p>
 </dd>
 
-### -param <i>HbaPortWWN</i> [in]
+### -param HbaPortWWN [in]
 
 <dd>
 <p>Contains the worldwide name (WWN) of the port from which to issue the command. For a definition of worldwide names, see the T11 committee's specification for <i>Fibre Channel HBA API</i>. </p>
 </dd>
 
-### -param <i>pReqBuffer</i> [in]
+### -param pReqBuffer [in]
 
 <dd>
 <p>Pointer to a buffer that contains the full frame of the common transport command in big-endian format.</p>
 </dd>
 
-### -param <i>ReqBufferSize</i> [in]
+### -param ReqBufferSize [in]
 
 <dd>
 <p>Indicates the size of the buffer pointed to by <i>pReqBuffer</i>:</p>
 </dd>
 
-### -param <i>pRspBuffer</i> [out]
+### -param pRspBuffer [out]
 
 <dd>
 <p>Pointer to a buffer that contains the payload data from the reply to the common transport command in big-endian (wire) format. </p>
 </dd>
 
-### -param <i>RspBufferSize</i> [in, out]
+### -param RspBufferSize [in, out]
 
 <dd>
 <p>On input, indicates the size, in bytes, of the buffer pointed to by <i>pRspBuffer</i>. On return, this member indicates the size, in bytes, of the response data. </p>

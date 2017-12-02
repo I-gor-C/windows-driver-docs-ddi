@@ -57,19 +57,19 @@ typedef struct _SMARTCARD_REPLY {
 ## -struct-fields
 <dl>
 
-### -field <b>	Buffer</b>
+### -field 	Buffer
 
 <dd>
 <p>Pointer to a buffer that  contains data to send.</p>
 </dd>
 
-### -field <b>BufferSize</b>
+### -field BufferSize
 
 <dd>
 <p>Size of the buffer pointed to by <i>Buffer</i>.</p>
 </dd>
 
-### -field <b>BufferLength</b>
+### -field BufferLength
 
 <dd>
 <p>Number of bytes required for this command.</p>

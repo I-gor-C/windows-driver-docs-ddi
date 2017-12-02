@@ -59,31 +59,31 @@ typedef struct _DEVICE_INTERFACE_CHANGE_NOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the data structure, currently 1. </p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size of the structure, in bytes, including the size of the standard first three members plus the event-specific data. </p>
 </dd>
 
-### -field <b>Event</b>
+### -field Event
 
 <dd>
 <p>Specifies a GUID identifying the event:  GUID_DEVICE_INTERFACE_ARRIVAL or GUID_DEVICE_INTERFACE_REMOVAL. The GUIDs are defined in Wdmguid.h. </p>
 </dd>
 
-### -field <b>InterfaceClassGuid</b>
+### -field InterfaceClassGuid
 
 <dd>
 <p>Specifies the class of the device interface that has just been enabled or disabled.</p>
 </dd>
 
-### -field <b>SymbolicLinkName</b>
+### -field SymbolicLinkName
 
 <dd>
 <p>Pointer to a Unicode string that contains the name of the symbolic link for the device interface. </p>

@@ -68,67 +68,67 @@ typedef struct _D3DDDICB_UPDATEGPUVIRTUALADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>Specifies the context against which the map operation will be synchronized against. This also determines which kernel context the map operation will be executed against. In an linked display adapter configuration <b>hContext</b> defines a physical GPU, whose page tables are modified.</p>
 </dd>
 
-### -field <b>hFenceObject</b>
+### -field hFenceObject
 
 <dd>
 <p>Specifies the monitored fence object to use for synchronization. This should typically be set to the monitored fence used by the user mode driver to track progress of <b>hContext</b>. </p>
 </dd>
 
-### -field <b>NumOperations</b>
+### -field NumOperations
 
 <dd>
 <p>Specifies the number of operations in the <b>Operations</b> array. </p>
 </dd>
 
-### -field <b>Operations</b>
+### -field Operations
 
 <dd>
 <p>
 <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-updategpuvirtualaddress-operation.md">D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION</a> array of operations to perform on the GPU virtual address space.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>FenceValue</b>
+### -field FenceValue
 
 <dd>
 <p>Specifies the <b>FenceValue</b> for <b>hFenceObject</b> that the <i>Map</i> operation should wait on (unless <b>DoNotWait</b> is 1). When the <i>Map</i> operation completes, the fence object will signal <b>hFenceObject</b> with <b>FenceValue</b>+1.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <dl>
 
-### -field <b>DoNotWait</b>
+### -field DoNotWait
 
 <dd>
 <p>When set to 1, there will be no wait for the sync objects before executing the operations.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The consolidated value of the <b>Flags</b> union.</p>

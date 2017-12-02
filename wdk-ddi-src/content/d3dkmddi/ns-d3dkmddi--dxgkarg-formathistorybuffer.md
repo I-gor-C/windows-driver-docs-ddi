@@ -60,46 +60,46 @@ typedef struct _DXGKARG_FORMATHISTORYBUFFER {
 ## -struct-fields
 <dl>
 
-### -field <b>pHistoryBuffer</b>
+### -field pHistoryBuffer
 
 <dd>
 <p>A pointer to the unformatted <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-history-buffer.md">DXGK_HISTORY_BUFFER</a> history buffer that was populated by the GPU.</p>
 </dd>
 
-### -field <b>HistoryBufferSize</b>
+### -field HistoryBufferSize
 
 <dd>
 <p>The size, in bytes, of the buffer pointed to by <b>pHistoryBuffer</b>.</p>
 </dd>
 
-### -field <b>pFormattedBuffer</b>
+### -field pFormattedBuffer
 
 <dd>
 <p>A pointer to a segment of non-paged system memory that the driver uses to store time stamp info that it derives from the provided unformatted history buffer.</p>
 <p>The buffer pointed to by <b>pFormattedBuffer</b> should be managed as a large array of time stamps of precision specified by <b>Precision</b>. The buffer should not contain any header info that already exists in the original history buffer.</p>
 </dd>
 
-### -field <b>FormattedBufferSize</b>
+### -field FormattedBufferSize
 
 <dd>
 <p>The size, in bytes, of the buffer pointed to by <b>pFormattedBuffer</b>. The driver should ensure that it doesn't write data beyond this buffer size.</p>
 </dd>
 
-### -field <b>NumTimestamps</b>
+### -field NumTimestamps
 
 <dd>
 <p>The number of time stamps. On completion of a call to the <a href="display.dxgkddiformathistorybuffer">DxgkDdiFormatHistoryBuffer</a> function, the driver should set this value to the number of time stamps that are written to the formatted buffer pointed to by <b>pFormattedBuffer</b>.</p>
 <p>Note that the number of time stamps that will be in the formatted output buffer won't be known until the driver completes the formatted buffer pointed to by <b>pFormattedBuffer</b>.</p>
 </dd>
 
-### -field <b>Precision</b>
+### -field Precision
 
 <dd>
 <p>A <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-historybufferprecision.md">DXGKARG_HISTORYBUFFERPRECISION</a> structure that the driver fills with info on the precision of the time stamps that will be logged to the Event Tracing for Windows (ETW) facility.</p>
 <p>The value of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-historybufferprecision.md">DXGKARG_HISTORYBUFFERPRECISION</a>.<b>PrecisionBits</b> member cannot be zero.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>On input to a call to the <a href="display.dxgkddiformathistorybuffer">DxgkDdiFormatHistoryBuffer</a> function, the value of this member is the offset to the first time stamp at which formatting should start. On completion of the function call, the driver should set the value to zero if it successfully formatted all the time stamps in the history buffer.</p>

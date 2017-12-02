@@ -56,19 +56,19 @@ typedef struct _ISCSI_TargetPortal {
 ## -struct-fields
 <dl>
 
-### -field <b>Address</b>
+### -field Address
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that indicates the IP address of the portal. The ISCSI_IP_Address structure provides a way to define an IP address that is independent of the version of the IP protocol that the initiator and the target use.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for Microsoft use only. </p>
 </dd>
 
-### -field <b>Socket</b>
+### -field Socket
 
 <dd>
 <p>Socket number associated with the target.</p>

@@ -58,31 +58,31 @@ typedef struct _D3DDDIARG_TEXBLT {
 ## -struct-fields
 <dl>
 
-### -field <b>hDstResource</b>
+### -field hDstResource
 
 <dd>
 <p>[in] A handle to the destination resource.</p>
 </dd>
 
-### -field <b>hSrcResource</b>
+### -field hSrcResource
 
 <dd>
 <p>[in] A handle to the source resource.</p>
 </dd>
 
-### -field <b>CubeMapFace</b>
+### -field CubeMapFace
 
 <dd>
 <p>[in] The face of a cube map.</p>
 </dd>
 
-### -field <b>DstPoint</b>
+### -field DstPoint
 
 <dd>
 <p>[in] A <a href="display.point">POINT</a> structure that describes the destination point where the source texture is copied.</p>
 </dd>
 
-### -field <b>SrcRect</b>
+### -field SrcRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure that describes the source texture to copy to the destination point.</p>

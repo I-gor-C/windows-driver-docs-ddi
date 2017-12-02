@@ -61,7 +61,7 @@ typedef struct IDDCX_CURSOR_SHAPE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -69,7 +69,7 @@ typedef struct IDDCX_CURSOR_SHAPE_INFO {
                  </p>
 </dd>
 
-### -field <b>ShapeId</b>
+### -field ShapeId
 
 <dd>
 <p>
@@ -77,7 +77,7 @@ typedef struct IDDCX_CURSOR_SHAPE_INFO {
                  </p>
 </dd>
 
-### -field <b>CursorType</b>
+### -field CursorType
 
 <dd>
 <p>
@@ -85,7 +85,7 @@ typedef struct IDDCX_CURSOR_SHAPE_INFO {
                  </p>
 </dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>
@@ -93,7 +93,7 @@ typedef struct IDDCX_CURSOR_SHAPE_INFO {
                  </p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>
@@ -101,7 +101,7 @@ typedef struct IDDCX_CURSOR_SHAPE_INFO {
                  </p>
 </dd>
 
-### -field <b>Pitch</b>
+### -field Pitch
 
 <dd>
 <p>
@@ -109,7 +109,7 @@ typedef struct IDDCX_CURSOR_SHAPE_INFO {
                  </p>
 </dd>
 
-### -field <b>XHot</b>
+### -field XHot
 
 <dd>
 <p>
@@ -117,7 +117,7 @@ typedef struct IDDCX_CURSOR_SHAPE_INFO {
                  </p>
 </dd>
 
-### -field <b>YHot</b>
+### -field YHot
 
 <dd>
 <p>

@@ -62,25 +62,25 @@ typedef union _USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>ul</b>
+### -field ul
 
 <dd>
 <p>A bitmask that indicates the USB speed of the device that is attached to the port.</p>
 </dd>
 
-### -field <b>DeviceIsOperatingAtSuperSpeedOrHigher</b>
+### -field DeviceIsOperatingAtSuperSpeedOrHigher
 
 <dd>
 <p>If <b>TRUE</b>, the attached device is currently operating at SuperSpeed or a higher speed that is defined by the official USB specification. </p>
 </dd>
 
-### -field <b>DeviceIsSuperSpeedCapableOrHigher</b>
+### -field DeviceIsSuperSpeedCapableOrHigher
 
 <dd>
 <p>If <b>TRUE</b>, the attached device is a USB 3.0 device and is capable of operating at SuperSpeed or a higher speed that is defined by the official USB specification.</p>
 </dd>
 
-### -field <b>ReservedMBZ</b>
+### -field ReservedMBZ
 
 <dd>
 <p>Reserved. Do not use.</p>

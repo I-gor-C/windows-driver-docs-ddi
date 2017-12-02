@@ -56,19 +56,19 @@ typedef struct _MS_SMHBA_PORTLUN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>The worldwide name of the local port whose events the WMI client will receive.</p>
 </dd>
 
-### -field <b>domainPortWWN</b>
+### -field domainPortWWN
 
 <dd>
 <p>A worldwide name that specifies the SAS domain worldwide name of the local port.</p>
 </dd>
 
-### -field <b>TargetLun</b>
+### -field TargetLun
 
 <dd>
 <p>The target LUN number.</p>

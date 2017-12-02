@@ -7,7 +7,7 @@ old-location: ifsk\fsctl_query_volume_numa_info_output_.htm
 old-project: ifsk
 ms.assetid: 3BB6F409-A716-4990-B1C6-D0F8035DA7F0
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FSCTL_QUERY_VOLUME_NUMA_INFO_OUTPUT, FSCTL_QUERY_VOLUME_NUMA_INFO_OUTPUT, *PFSCTL_QUERY_VOLUME_NUMA_INFO_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef struct _FSCTL_QUERY_VOLUME_NUMA_INFO_OUTPUT  {
 ## -struct-fields
 <dl>
 
-### -field <b>NumaNode</b>
+### -field NumaNode
 
 <dd>
 <p>Specifies the number of the NUMA node the volume resides on.</p>

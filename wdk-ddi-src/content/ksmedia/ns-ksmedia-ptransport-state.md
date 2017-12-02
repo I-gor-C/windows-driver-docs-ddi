@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>Specifies the mode of the external device transport.</p>
 </dd>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>Specifies the state of the external device transport mode.</p>

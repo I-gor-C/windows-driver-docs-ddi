@@ -7,7 +7,7 @@ old-location: ifsk\flt_io_parameter_block.htm
 old-project: ifsk
 ms.assetid: a62f6db3-baca-492a-b485-062fcc69f563
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FLT_IO_PARAMETER_BLOCK, FLT_IO_PARAMETER_BLOCK, *PFLT_IO_PARAMETER_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct _FLT_IO_PARAMETER_BLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>IrpFlags</b>
+### -field IrpFlags
 
 <dd>
 <p>A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The following table shows flag values. </p>
@@ -210,22 +210,22 @@ typedef struct _FLT_IO_PARAMETER_BLOCK {
 <p> </p>
 </dd>
 
-### -field <b>MajorFunction</b>
+### -field MajorFunction
 
 <dd>
 <p>The major function code for the I/O operation. Major function codes are used for IRP-based operations, fast I/O operations, and file system (FSFilter) callback operations. For more information about additional operations, see <a href="..\fltkernel\ns-fltkernel--flt-parameters.md">FLT_PARAMETERS</a>.</p>
 </dd>
 
-### -field <b>MinorFunction</b>
+### -field MinorFunction
 
 <dd>
 <p>The minor function code for the I/O operation. This member is optional and can be <b>NULL</b>. The value of the <b>MajorFunction</b> member determines the possible values. For more information about minor function codes, see <a href="..\fltkernel\ns-fltkernel--flt-parameters.md">FLT_PARAMETERS</a>. </p>
 </dd>
 
-### -field <b>OperationFlags</b>
+### -field OperationFlags
 
 <dd>
-<p>A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The Filter Manager copies these flags from the  <b>Flags</b> member of the <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> structure that is associated with the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a>. The following table shows the most commonly used flag values.</p>
+<p>A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The Filter Manager copies these flags from the  <b>Flags</b> member of the <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> structure that is associated with the <a href="..\wdm\ns-wdm--irp.md">IRP</a>. The following table shows the most commonly used flag values.</p>
 <table>
 <tr>
 <th>Value</th>
@@ -339,25 +339,25 @@ typedef struct _FLT_IO_PARAMETER_BLOCK {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. Do not use. </p>
 </dd>
 
-### -field <b>TargetFileObject</b>
+### -field TargetFileObject
 
 <dd>
 <p>A file object pointer for the file or directory that is the target for this I/O operation. </p>
 </dd>
 
-### -field <b>TargetInstance</b>
+### -field TargetInstance
 
 <dd>
 <p>An opaque instance pointer for the minifilter that is the target for this I/O operation. </p>
 </dd>
 
-### -field <b>Parameters</b>
+### -field Parameters
 
 <dd>
 <p>An <a href="..\fltkernel\ns-fltkernel--flt-parameters.md">FLT_PARAMETERS</a> structure that contains the parameters for the I/O operation that are specified by the <b>MajorFunction</b> and <b>MinorFunction</b> members. </p>
@@ -458,7 +458,7 @@ typedef struct _FLT_IO_PARAMETER_BLOCK {
 <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="ifsk.irp_mj_cleanup">IRP_MJ_CLEANUP</a>
@@ -544,4 +544,4 @@ typedef struct _FLT_IO_PARAMETER_BLOCK {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_IO_PARAMETER_BLOCK structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_IO_PARAMETER_BLOCK structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

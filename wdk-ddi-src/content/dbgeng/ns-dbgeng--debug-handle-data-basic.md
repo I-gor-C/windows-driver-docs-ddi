@@ -7,7 +7,7 @@ old-location: debugger\debug_handle_data_basic.htm
 old-project: debugger
 ms.assetid: c1ad22b9-9733-417a-96ae-bc5920462f4f
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: DEBUG_HANDLE_DATA_BASIC, DEBUG_HANDLE_DATA_BASIC, *PDEBUG_HANDLE_DATA_BASIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ typedef struct _DEBUG_HANDLE_DATA_BASIC {
 ## -struct-fields
 <dl>
 
-### -field <b>TypeNameSize</b>
+### -field TypeNameSize
 
 <dd>
 <p>The size, in characters, of the object-type name.</p>
 </dd>
 
-### -field <b>ObjectNameSize</b>
+### -field ObjectNameSize
 
 <dd>
 <p>The size, in characters, of the object's name.</p>
 </dd>
 
-### -field <b>Attributes</b>
+### -field Attributes
 
 <dd>
 <p>A bit-set that contains the handle's attributes.  For possible values, see "Handle" in the Windows Driver Kit (WDK).</p>
 </dd>
 
-### -field <b>GrantedAccess</b>
+### -field GrantedAccess
 
 <dd>
 <p>A bit-set that specifies the access mask for the object that is represented by the handle.  For details, see ACCESS_MASK in the Platform SDK documentation.</p>
 </dd>
 
-### -field <b>HandleCount</b>
+### -field HandleCount
 
 <dd>
 <p>The number of handle references for the object.</p>
 </dd>
 
-### -field <b>PointerCount</b>
+### -field PointerCount
 
 <dd>
 <p>The number of pointer references for the object.</p>

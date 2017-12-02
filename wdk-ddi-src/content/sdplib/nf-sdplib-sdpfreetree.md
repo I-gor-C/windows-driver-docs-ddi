@@ -57,7 +57,7 @@ NTSTATUS SdpFreeTree(
 ## -parameters
 <dl>
 
-### -param <i>Tree</i> [in]
+### -param Tree [in]
 
 <dd>
 <p>The root node of the SDP tree-based representation to be freed.</p>
@@ -71,7 +71,7 @@ NTSTATUS SdpFreeTree(
 <p>Callers should perform an 
     <b>SdpFreeTree</b> call when the tree-based representation of an SDP record is no longer needed. The 
     <a href="..\sdplib\nf-sdplib-sdpcreatenodetree.md">SdpCreateNodeTree</a> and 
-    <a href="bltooth.sdpconvertstreamtotree">SdpConvertStreamToTree</a> functions
+    <a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a> functions
     allocate the memory for the tree representations of SDP records that they create. The 
     <b>SdpFreeTree</b> function releases the memory allocated to the 
     <a href="..\sdpnode\ns-sdpnode--sdp-tree-root-node.md">SDP_TREE_ROOT_NODE</a> structure that these
@@ -130,7 +130,7 @@ NTSTATUS SdpFreeTree(
 <a href="..\sdplib\nf-sdplib-sdpcreatenodetree.md">SdpCreateNodeTree</a>
 </dt>
 <dt>
-<a href="bltooth.sdpconvertstreamtotree">SdpConvertStreamToTree</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a>
 </dt>
 <dt>
 <a href="..\sdpnode\ns-sdpnode--sdp-tree-root-node.md">SDP_TREE_ROOT_NODE</a>

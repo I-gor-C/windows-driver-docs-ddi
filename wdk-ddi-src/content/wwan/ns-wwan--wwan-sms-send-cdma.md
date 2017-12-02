@@ -7,7 +7,7 @@ old-location: netvista\wwan_sms_send_cdma.htm
 old-project: netvista
 ms.assetid: e05b7391-7852-45c7-aed0-36c95b4e475b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_SMS_SEND_CDMA, WWAN_SMS_SEND_CDMA, *PWWAN_SMS_SEND_CDMA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,14 +60,14 @@ typedef struct _WWAN_SMS_SEND_CDMA {
 ## -struct-fields
 <dl>
 
-### -field <b>EncodingId</b>
+### -field EncodingId
 
 <dd>
 <p>The encoding that is used in the CDMA message. 
      <b>EncodedMsg</b> message should be interpreted based on the value of this member.</p>
 </dd>
 
-### -field <b>LanguageId</b>
+### -field LanguageId
 
 <dd>
 <p>The language used in CDMA message. This is an indicator of the language used in SMS message and
@@ -75,7 +75,7 @@ typedef struct _WWAN_SMS_SEND_CDMA {
      <b>WwanSmsCdmaLangUnknown</b>, if the language is not known.</p>
 </dd>
 
-### -field <b>Address</b>
+### -field Address
 
 <dd>
 <p>A NULL-terminated string with a maximum length of 15 digits that represents a mobile number. The
@@ -99,7 +99,7 @@ typedef struct _WWAN_SMS_SEND_CDMA {
      <i>WwanMsgStatusOld</i>, miniport drivers should specify the sender's mobile number.</p>
 </dd>
 
-### -field <b>SizeInBytes</b>
+### -field SizeInBytes
 
 <dd>
 <p>The size, in bytes, of 
@@ -107,7 +107,7 @@ typedef struct _WWAN_SMS_SEND_CDMA {
      drivers must specify a value for this member for all encoding types.</p>
 </dd>
 
-### -field <b>SizeInCharacters</b>
+### -field SizeInCharacters
 
 <dd>
 <p>Size of 
@@ -118,7 +118,7 @@ typedef struct _WWAN_SMS_SEND_CDMA {
      <i>WwanSmsCdmaEncodingKorean</i>.</p>
 </dd>
 
-### -field <b>EncodedMsg</b>
+### -field EncodedMsg
 
 <dd>
 <p>The encoded content that represents the CDMA-based SMS text message.</p>
@@ -164,4 +164,4 @@ typedef struct _WWAN_SMS_SEND_CDMA {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_SEND_CDMA structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_SEND_CDMA structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

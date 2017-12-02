@@ -57,19 +57,19 @@ SIZE_T RtlCompareMemory(
 ## -parameters
 <dl>
 
-### -param <i>Source1</i> [in]
+### -param Source1 [in]
 
 <dd>
 <p>A pointer to the first block of memory.</p>
 </dd>
 
-### -param <i>Source2</i> [in]
+### -param Source2 [in]
 
 <dd>
 <p>A pointer to the second block of memory.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The number of bytes to compare.</p>

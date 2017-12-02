@@ -56,13 +56,13 @@ typedef struct _ALTERNATE_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>InterfaceNumber</b>
+### -field InterfaceNumber
 
 <dd>
 <p>The index number for theUSB interface setting.</p>
 </dd>
 
-### -field <b>AlternateInterfaceNumber</b>
+### -field AlternateInterfaceNumber
 
 <dd>
 <p>The index number for the alternate USB interface setting.</p>
@@ -89,7 +89,7 @@ typedef struct _ALTERNATE_INTERFACE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbfn_notification">USBFN_NOTIFICATION</a>
+<a href="..\usbfnbase\ns-usbfnbase--usbfn-notification.md">USBFN_NOTIFICATION</a>
 </dt>
 </dl>
 <p> </p>

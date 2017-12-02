@@ -58,25 +58,25 @@ ULONG StorPortAllocatePool(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>The size, in bytes, of the block of memory being allocated.</p>
 </dd>
 
-### -param <i>Tag</i> [in]
+### -param Tag [in]
 
 <dd>
 <p>The pool tag for the allocated memory. Drivers specify the pool tag as a string of four characters, delimited by single quotation marks. The string is usually specified in reverse order. The ASCII value of each character in the tag must be between zero and 127.</p>
 </dd>
 
-### -param <i>BufferPointer</i> [out]
+### -param BufferPointer [out]
 
 <dd>
 <p>A pointer to the address of the allocated memory block or <b>NULL</b> if not successful. </p>

@@ -63,55 +63,55 @@ typedef struct _BUS_INTERFACE_STANDARD {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The driver-defined interface version.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to interface-specific context information.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to an <a href="kernel.interfacereference">InterfaceReference</a> routine that increments the interface's reference count.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to an <a href="kernel.interfacedereference">InterfaceDereference</a> routine that decrements the interface's reference count.</p>
 </dd>
 
-### -field <b>TranslateBusAddress</b>
+### -field TranslateBusAddress
 
 <dd>
 <p>A pointer to a <a href="..\wdm\nc-wdm-translate-bus-address.md">TranslateBusAddress</a> routine that translates addresses on the parent bus to logical addresses.</p>
 </dd>
 
-### -field <b>GetDmaAdapter</b>
+### -field GetDmaAdapter
 
 <dd>
-<p>A pointer to a <a href="kernel.getdmaadapter">GetDmaAdapter</a> routine that returns a DMA adapter structure (<a href="..\ntddk\ns-ntddk--dma-adapter.md">DMA_ADAPTER</a>) for the target device.</p>
+<p>A pointer to a <a href="kernel.getdmaadapter">GetDmaAdapter</a> routine that returns a DMA adapter structure (<a href="..\wdm\ns-wdm--dma-adapter.md">DMA_ADAPTER</a>) for the target device.</p>
 </dd>
 
-### -field <b>SetBusData</b>
+### -field SetBusData
 
 <dd>
 <p>A pointer to a <a href="..\wdm\nc-wdm-get-set-device-data.md">SetBusData</a> routine that writes data to the device's configuration space.</p>
 </dd>
 
-### -field <b>GetBusData</b>
+### -field GetBusData
 
 <dd>
 <p>A pointer to a <a href="..\wdm\nc-wdm-get-set-device-data.md">GetBusData</a> routine that reads data from the device's configuration space.</p>
@@ -159,7 +159,7 @@ typedef struct _BUS_INTERFACE_STANDARD {
 <a href="..\wdm\ns-wdm--device-description.md">DEVICE_DESCRIPTION</a>
 </dt>
 <dt>
-<a href="..\ntddk\ns-ntddk--dma-adapter.md">DMA_ADAPTER</a>
+<a href="..\wdm\ns-wdm--dma-adapter.md">DMA_ADAPTER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/gg604850">GetBusData</a>

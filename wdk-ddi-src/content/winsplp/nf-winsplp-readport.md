@@ -58,25 +58,25 @@ BOOL ReadPort(
 ## -parameters
 <dl>
 
-### -param <i>hPort</i> [in]
+### -param hPort [in]
 
 <dd>
 <p>Caller-supplied port handle.</p>
 </dd>
 
-### -param <i>pBuffer</i> [out]
+### -param pBuffer [out]
 
 <dd>
 <p>Caller-supplied pointer to a buffer to receive data read from the port.</p>
 </dd>
 
-### -param <i>cbBuffer</i> 
+### -param cbBuffer 
 
 <dd>
 <p>Caller-supplied size, in bytes, of <i>pBuffer</i>.</p>
 </dd>
 
-### -param <i>pcbRead</i> [out]
+### -param pcbRead [out]
 
 <dd>
 <p>Caller-supplied pointer to a location to receive the number of bytes successfully read from the port.</p>
@@ -88,7 +88,7 @@ BOOL ReadPort(
 
 ## -remarks
 <p>
-<a href="NULL">Language monitors</a> and port monitor server DLLs are required to define a <code>ReadPort</code> function and include the function's address in a <a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a> structure.</p>
+<a href="https://msdn.microsoft.com/26ba1c22-390a-4187-b67a-3f3497964f8e">Language monitors</a> and port monitor server DLLs are required to define a <code>ReadPort</code> function and include the function's address in a <a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a> structure.</p>
 
 <p>The handle received as the function's <i>hPort</i> argument is the port handle that the monitor's <a href="..\winsplp\nf-winsplp-openport.md">OpenPort</a> or <a href="print.openportex">OpenPortEx</a> function supplied.</p>
 
@@ -100,7 +100,7 @@ BOOL ReadPort(
 
 <p>Even though both language monitors and port monitors must define <code>ReadPort</code> functions and place their addresses in MONITOR2 structures, a language monitor's <code>ReadPort</code> function is never actually called by the spooler or an application. The function is solely for the internal use of the language monitor itself.</p>
 
-<p>For example pjlmon.dll, the <a href="NULL">sample language monitor</a>, creates a separate thread that calls its own <code>ReadPort</code> to watch for unsolicited printer status information, and the <code>ReadPort</code> function calls the port monitor's <code>ReadPort</code> function. When the port monitor returns data to the language monitor, the language monitor parses the received data and calls <b>SetPort</b> (described in the Windows SDK documentation) to send status information to the spooler.</p>
+<p>For example pjlmon.dll, the <a href="https://msdn.microsoft.com/fd1ef790-c17b-4735-87fc-6b7b8597ac4d">sample language monitor</a>, creates a separate thread that calls its own <code>ReadPort</code> to watch for unsolicited printer status information, and the <code>ReadPort</code> function calls the port monitor's <code>ReadPort</code> function. When the port monitor returns data to the language monitor, the language monitor parses the received data and calls <b>SetPort</b> (described in the Windows SDK documentation) to send status information to the spooler.</p>
 
 <p>The function should return the number of bytes successfully read by placing the number in the location pointed to by <i>pcbRead</i>. The caller determines the success or failure of the write operation by checking <code>ReadPort's</code> return value, not the returned byte count. So a returned byte count of zero does not represent a failed read unless the function returns <b>FALSE</b>.</p>
 

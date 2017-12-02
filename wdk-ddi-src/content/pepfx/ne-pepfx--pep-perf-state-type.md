@@ -56,19 +56,19 @@ typedef enum _PEP_PERF_STATE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PepPerfStateTypeDiscrete"></a><a id="pepperfstatetypediscrete"></a><a id="PEPPERFSTATETYPEDISCRETE"></a><b>PepPerfStateTypeDiscrete</b>
+### -field PepPerfStateTypeDiscrete
 
 <dd>
 <p>The performance information is specified as a set of discrete values.</p>
 </dd>
 
-### -field <a id="PepPerfStateTypeRange"></a><a id="pepperfstatetyperange"></a><a id="PEPPERFSTATETYPERANGE"></a><b>PepPerfStateTypeRange</b>
+### -field PepPerfStateTypeRange
 
 <dd>
 <p>The performance information is specified as a range of values.</p>
 </dd>
 
-### -field <a id="PepPerfStateTypeMax"></a><a id="pepperfstatetypemax"></a><a id="PEPPERFSTATETYPEMAX"></a><b>PepPerfStateTypeMax</b>
+### -field PepPerfStateTypeMax
 
 <dd>
 <p>Reserved for use by operating system.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilwritephonebookentryparams_2.htm
 old-project: netvista
 ms.assetid: ae92f321-d6dc-4e48-8107-1a6fbd3bb15a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef struct _RILWRITEPHONEBOOKENTRYPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwStoreLocation</b>
+### -field dwStoreLocation
 
 <dd></dd>
 
-### -field <b>fHasLockVerification</b>
+### -field fHasLockVerification
 
 <dd></dd>
 
-### -field <b>lockVerification</b>
+### -field lockVerification
 
 <dd></dd>
 
-### -field <b>pbEntry</b>
+### -field pbEntry
 
 <dd></dd>
 </dl>

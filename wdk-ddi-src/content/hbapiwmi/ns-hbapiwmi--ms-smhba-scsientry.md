@@ -56,19 +56,19 @@ typedef struct _MS_SMHBA_SCSIENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>PortLun</b>
+### -field PortLun
 
 <dd>
 <p>An array of MS_SMHBA_PORTLUN entries.</p>
 </dd>
 
-### -field <b>LUID</b>
+### -field LUID
 
 <dd>
 <p>The logical unit descriptor for the device that the operating system derives from SCSI inquiry data.</p>
 </dd>
 
-### -field <b>ScsiId</b>
+### -field ScsiId
 
 <dd>
 <p>A structure of type HBAScsiID that contains information that uniquely identifies a logical unit to the operating system.</p>

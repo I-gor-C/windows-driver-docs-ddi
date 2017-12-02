@@ -62,55 +62,55 @@ typedef struct _D3DDDIARG_DECRYPTIONBLT {
 ## -struct-fields
 <dl>
 
-### -field <b>hCryptoSession</b>
+### -field hCryptoSession
 
 <dd>
 <p>[in] A handle to the encryption session. </p>
 </dd>
 
-### -field <b>hSrcResource</b>
+### -field hSrcResource
 
 <dd>
 <p>[in] A handle to the source resource.</p>
 </dd>
 
-### -field <b>SrcSubResourceIndex</b>
+### -field SrcSubResourceIndex
 
 <dd>
 <p>[in] The index to the source surface within the resource. </p>
 </dd>
 
-### -field <b>hDstResource</b>
+### -field hDstResource
 
 <dd>
 <p>[in] A handle to the destination resource. </p>
 </dd>
 
-### -field <b>DstSubResourceIndex</b>
+### -field DstSubResourceIndex
 
 <dd>
 <p>[in] The index to the destination surface within the resource. </p>
 </dd>
 
-### -field <b>SrcResourceSize</b>
+### -field SrcResourceSize
 
 <dd>
 <p>[in] The size, in bytes, of the source resource. </p>
 </dd>
 
-### -field <b>pEncryptedBlockInfo</b>
+### -field pEncryptedBlockInfo
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiencrypted-block-info.md">D3DDDIENCRYPTED_BLOCK_INFO</a> structure that describes the portions of the buffer that are encrypted. </p>
 </dd>
 
-### -field <b>pContentKey</b>
+### -field pContentKey
 
 <dd>
 <p>[in] A pointer to a block of memory that contains the content key that is required to decrypt the bitblt data. If <b>pContentKey</b> is <b>NULL</b>, hardware does not require a separate content key to decrypt the data. That is, the session key is used to encrypt the data. </p>
 </dd>
 
-### -field <b>pIV</b>
+### -field pIV
 
 <dd>
 <p>[in] A pointer to a block of memory that contains the initialization vector that is required to decrypt the bitblt data. If <b>pIV</b> is <b>NULL</b>, hardware does not require a separate initialization vector to decrypt the data. That is, the session key is used to encrypt the data. </p>

@@ -58,31 +58,31 @@ typedef enum D3DDDI_FLIPINTERVAL_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_FLIPINTERVAL_IMMEDIATE"></a><a id="d3dddi_flipinterval_immediate"></a><b>D3DDDI_FLIPINTERVAL_IMMEDIATE</b>
+### -field D3DDDI_FLIPINTERVAL_IMMEDIATE
 
 <dd>
 <p>Indicates to perform the flip immediately without waiting for a vertical sync to occur. </p>
 </dd>
 
-### -field <a id="D3DDDI_FLIPINTERVAL_ONE"></a><a id="d3dddi_flipinterval_one"></a><b>D3DDDI_FLIPINTERVAL_ONE</b>
+### -field D3DDDI_FLIPINTERVAL_ONE
 
 <dd>
 <p>Indicates to perform the flip on every vertical sync. </p>
 </dd>
 
-### -field <a id="D3DDDI_FLIPINTERVAL_TWO"></a><a id="d3dddi_flipinterval_two"></a><b>D3DDDI_FLIPINTERVAL_TWO</b>
+### -field D3DDDI_FLIPINTERVAL_TWO
 
 <dd>
 <p>Indicates to perform the flip on every other vertical sync. </p>
 </dd>
 
-### -field <a id="D3DDDI_FLIPINTERVAL_THREE"></a><a id="d3dddi_flipinterval_three"></a><b>D3DDDI_FLIPINTERVAL_THREE</b>
+### -field D3DDDI_FLIPINTERVAL_THREE
 
 <dd>
 <p>Indicates to perform the flip on every third vertical sync.</p>
 </dd>
 
-### -field <a id="D3DDDI_FLIPINTERVAL_FOUR"></a><a id="d3dddi_flipinterval_four"></a><b>D3DDDI_FLIPINTERVAL_FOUR</b>
+### -field D3DDDI_FLIPINTERVAL_FOUR
 
 <dd>
 <p>Indicates to perform the flip on every fourth vertical sync.</p>

@@ -66,21 +66,21 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>VerticalFlip</b>
+### -field VerticalFlip
 
 <dd>
 <p>The overlay plane should flip the data vertically, making it appear upside-down.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>HorizontalFlip</b>
+### -field HorizontalFlip
 
 <dd>
 <p>The overlay plane should flip the data horizontally, making it appear as a right-to-left mirror image.</p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>PanelFitterPostComposition</b>
+### -field PanelFitterPostComposition
 
 <dd>
 <p>Indicates that the plane is to be stretched using panel fitter hardware. 
@@ -88,19 +88,19 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_FLAGS {
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 29 bits (0xFFFFFFF8) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 30 bits (0xFFFFFFFC) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A 32-bit value that identifies the type of flip operation to perform.</p>

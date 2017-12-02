@@ -58,25 +58,25 @@ ULONG ScsiPortInitialize(
 ## -parameters
 <dl>
 
-### -param <i>Argument1</i> [in]
+### -param Argument1 [in]
 
 <dd>
 <p>Pointer to the driver object that the operating system passed to the miniport driver in the first argument of its <b>DriverEntry</b> routine.</p>
 </dd>
 
-### -param <i>Argument2</i> [in]
+### -param Argument2 [in]
 
 <dd>
 <p>Pointer to some context information that the operating system passed to the miniport driver in the second argument of its <b>DriverEntry</b>.</p>
 </dd>
 
-### -param <i>HwInitializationData</i> [in]
+### -param HwInitializationData [in]
 
 <dd>
 <p>Pointer to the initialization and configuration information supplied by <b>DriverEntry</b>.</p>
 </dd>
 
-### -param <i>HwContext</i> [in]
+### -param HwContext [in]
 
 <dd>
 <p>Specifies the address of a context value to be passed to the miniport driver's <a href="storage.hwscsifindadapter">HwScsiFindAdapter</a> routine. Only legacy miniport drivers that scan the bus for HBAs rather than receiving configuration information from the port driver can use this parameter to store state between calls to <i>HwScsiFindAdapter</i>.</p>

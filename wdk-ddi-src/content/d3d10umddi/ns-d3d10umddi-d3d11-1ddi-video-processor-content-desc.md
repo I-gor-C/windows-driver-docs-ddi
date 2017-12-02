@@ -61,49 +61,49 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>InputFrameFormat</b>
+### -field InputFrameFormat
 
 <dd>
 <p>A member of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-frame-format.md">D3D11_1DDI_VIDEO_FRAME_FORMAT</a> enumeration that describes how the video stream is interlaced.</p>
 </dd>
 
-### -field <b>InputFrameRate</b>
+### -field InputFrameRate
 
 <dd>
 <p>The frame rate of the input video stream, specified as a <a href="direct3ddxgi.dxgi_rational">DXGI_RATIONAL</a> structure.</p>
 </dd>
 
-### -field <b>InputWidth</b>
+### -field InputWidth
 
 <dd>
 <p>The width of the input frames, in pixels.</p>
 </dd>
 
-### -field <b>InputHeight</b>
+### -field InputHeight
 
 <dd>
 <p>The height of the input frames, in pixels.</p>
 </dd>
 
-### -field <b>OutputFrameRate</b>
+### -field OutputFrameRate
 
 <dd>
 <p>The frame rate of the output video stream, specified as a <a href="direct3ddxgi.dxgi_rational">DXGI_RATIONAL</a> structure.</p>
 </dd>
 
-### -field <b>OutputWidth</b>
+### -field OutputWidth
 
 <dd>
 <p>The width of the output frames, in pixels.</p>
 </dd>
 
-### -field <b>OutputHeight</b>
+### -field OutputHeight
 
 <dd>
 <p>The height of the output frames, in pixels.</p>
 </dd>
 
-### -field <b>Usage</b>
+### -field Usage
 
 <dd>
 <p>A member of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-usage.md">D3D11_1DDI_VIDEO_USAGE</a> enumeration that describes how the video processor will be used. The value indicates the desired trade-off between speed and video quality. The driver uses this flag as a hint when it creates the video processor.</p>

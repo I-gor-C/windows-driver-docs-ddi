@@ -59,19 +59,19 @@ VOID APIENTRY SetDepthStencilState(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hState</i> [in]
+### -param hState [in]
 
 <dd>
 <p> A handle to the depth-stencil state to set.</p>
 </dd>
 
-### -param <i>StencilRef</i> [in]
+### -param StencilRef [in]
 
 <dd>
 <p> A stencil reference value to compare against.</p>

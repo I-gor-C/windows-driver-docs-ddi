@@ -7,7 +7,7 @@ old-location: spb\spb_controller_config.htm
 old-project: SPB
 ms.assetid: 73856669-ACE9-46B0-AC7A-282D9C8A0285
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/30/2017
 ms.keywords: SPB_CONTROLLER_CONFIG,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,63 +64,63 @@ typedef struct _SPB_CONTROLLER_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/hh450919">SpbDeviceInitialize</a> method uses this parameter value to determine which version of the structure is being used.</p>
 </dd>
 
-### -field <b>ControllerDispatchType</b>
+### -field ControllerDispatchType
 
 <dd>
 <p>The dispatch type of the I/O queue for the controller driver. Set this member to either <b>WdfIoQueueDispatchSequential</b> or <b>WdfIoQueueDispatchParallel</b>, but not to <b>WdfIoQueueDispatchManual</b>. The <b>SPB_CONTROLLER_CONFIG_INIT</b> function initializes this member to its default value, <b>WdfIoQueueDispatchSequential</b>. For more information about these dispatch types, see <a href="kmdf.example_uses_of_i_o_queues">Example Uses of I/O Queues</a>.</p>
 <p>A controller driver that operates in subordinate mode should set this member to <b>WdfIoQueueDispatchParallel</b>. For example, an I²C controller might be attached as a peripheral device to an SPI bus. This device acts as a master on the I²C bus, but is a subordinate on the SPI bus.</p>
 </dd>
 
-### -field <b>PowerManaged</b>
+### -field PowerManaged
 
 <dd>
 <p>Whether the I/O queue for the controller driver should be power-managed. Set this member to <b>WdfTrue</b> to indicate that the queue should be power-managed.  Set this member to <b>WdfFalse</b> to indicate that the queue should not be power-managed.  If this member is set to <b>WdfDefault</b>, the queue will be power-managed unless the driver calls the <a href="..\wdffdo\nf-wdffdo-wdffdoinitsetfilter.md">WdfFdoInitSetFilter</a> method, which identifies the caller as an upper-level or lower-level filter driver. The <b>SPB_CONTROLLER_CONFIG_INIT</b> function initializes this member to <b>WdfDefault</b>.</p>
 <p>When I/O requests are available in a power-managed queue, the framework delivers the requests to the driver only if the device is in its working (D0) state. For more information, see <a href="kmdf.power_management_for_i_o_queues">Power Management for I/O Queues</a>.</p>
 </dd>
 
-### -field <b>EvtSpbTargetConnect</b>
+### -field EvtSpbTargetConnect
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a> callback function. This function is implemented by the SPB controller driver. The <b>EvtSpbTargetConnect</b> member is optional and can be NULL.</p>
 </dd>
 
-### -field <b>EvtSpbTargetDisconnect</b>
+### -field EvtSpbTargetDisconnect
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/02756C35-E76C-42C0-80FA-359CADE224A1">EvtSpbTargetDisconnect</a> callback function. This function is implemented by the SPB controller driver. The <b>EvtSpbTargetDisconnect</b> member is optional and can be NULL.</p>
 </dd>
 
-### -field <b>EvtSpbControllerLock</b>
+### -field EvtSpbControllerLock
 
 <dd>
-<p>The pointer to the <a href="https://msdn.microsoft.com/E08674F1-CE63-464B-9C70-96F93C574753">EvtSpbControllerLock</a> callback function. This function is implemented by the SPB controller driver. The <b>EvtSpbControllerLock</b> member is optional and can be NULL. For more information about the <i>EvtSpbControllerLock</i> function, see <a href="NULL">Handling Client-Implemented Sequences</a>.</p>
+<p>The pointer to the <a href="https://msdn.microsoft.com/E08674F1-CE63-464B-9C70-96F93C574753">EvtSpbControllerLock</a> callback function. This function is implemented by the SPB controller driver. The <b>EvtSpbControllerLock</b> member is optional and can be NULL. For more information about the <i>EvtSpbControllerLock</i> function, see <a href="https://msdn.microsoft.com/C1DED853-059D-481F-A524-E50772072018">Handling Client-Implemented Sequences</a>.</p>
 </dd>
 
-### -field <b>EvtSpbControllerUnlock</b>
+### -field EvtSpbControllerUnlock
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/4EB36115-2783-4FD5-9CEE-1F7C971C334D">EvtSpbControllerUnlock</a> callback function. This function is implemented by the SPB controller driver. This member is optional and can be NULL. For more information about the <i>EvtSpbControllerUnlock</i> function, see <a href="NULL">Handling Client-Implemented Sequences</a>.</p>
+<p>A pointer to the <a href="https://msdn.microsoft.com/4EB36115-2783-4FD5-9CEE-1F7C971C334D">EvtSpbControllerUnlock</a> callback function. This function is implemented by the SPB controller driver. This member is optional and can be NULL. For more information about the <i>EvtSpbControllerUnlock</i> function, see <a href="https://msdn.microsoft.com/C1DED853-059D-481F-A524-E50772072018">Handling Client-Implemented Sequences</a>.</p>
 </dd>
 
-### -field <b>EvtSpbIoRead</b>
+### -field EvtSpbIoRead
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/2BC0E6E7-7EE1-487A-9276-AE8EBB3FFD43">EvtSpbControllerIoRead</a> callback function. This function is implemented by the SPB controller driver. This member is not optional and must not be NULL.</p>
 </dd>
 
-### -field <b>EvtSpbIoWrite</b>
+### -field EvtSpbIoWrite
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/D97C3A17-309E-4364-8DFB-9073901D332E">EvtSpbControllerIoWrite</a> callback function. This function is implemented by the SPB controller driver. This member is not optional and must not be NULL.</p>
 </dd>
 
-### -field <b>EvtSpbIoSequence</b>
+### -field EvtSpbIoSequence
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/C56F1528-5FDA-4BC9-AB32-7882FB0F7713">EvtSpbControllerIoSequence</a> callback function. This function is implemented by the SPB controller driver. This member is not optional and must not be NULL.</p>
@@ -205,4 +205,4 @@ typedef struct _SPB_CONTROLLER_CONFIG {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_CONTROLLER_CONFIG structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_CONTROLLER_CONFIG structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

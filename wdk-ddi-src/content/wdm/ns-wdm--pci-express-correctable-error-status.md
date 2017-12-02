@@ -66,61 +66,61 @@ typedef union _PCI_EXPRESS_CORRECTABLE_ERROR_STATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>ReceiverError</b>
+### -field ReceiverError
 
 <dd>
 <p>A single bit that indicates that a receiver error has occurred.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>BadTLP</b>
+### -field BadTLP
 
 <dd>
 <p>A single bit that indicates that a bad transaction layer packet (TLP) error has occurred.</p>
 </dd>
 
-### -field <b>BadDLLP</b>
+### -field BadDLLP
 
 <dd>
 <p>A single bit that indicates that a bad data link layer packet (DLLP) error has occurred.</p>
 </dd>
 
-### -field <b>ReplayNumRollover</b>
+### -field ReplayNumRollover
 
 <dd>
 <p>A single bit that indicates that the counter that counts the number of times the retry buffer has been re-transmitted has rolled over.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>ReplayTimerTimeout</b>
+### -field ReplayTimerTimeout
 
 <dd>
 <p>A single bit that indicates that the replay timer has timed out.</p>
 </dd>
 
-### -field <b>AdvisoryNonFatalError</b>
+### -field AdvisoryNonFatalError
 
 <dd>
 <p>A single bit that indicates that an advisory non-fatal error has occurred.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_CORRECTABLE_ERROR_STATUS structure.</p>

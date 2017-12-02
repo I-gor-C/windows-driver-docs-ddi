@@ -58,19 +58,19 @@ typedef struct _CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field ( <i>unnamed struct</i> )
+### -field ( unnamed struct )
 
 <dd>
 <p>A set of power-management flag bits.</p>
 <dl>
 
-### -field <b>F1StateSupported</b>
+### -field F1StateSupported
 
 <dd>
 <p>Indicates whether the GPIO bank supports <a href="https://msdn.microsoft.com/library/windows/hardware/hh450935">component-level power management</a>. If this flag is set, the GPIO bank supports component-level power management. Otherwise, it does not. A GPIO bank that supports power management can change between the F0 (fully powered) state and the F1 (low-power) state independently of the Fx power states of the other banks in the GPIO controller. A GPIO bank that does not support component-level power management is always in the F0 power state when the controller is in the D0 power state.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Not used.</p>
@@ -78,7 +78,7 @@ typedef struct _CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT {
 </dl>
 </dd>
 
-### -field <b>F1IdleStateParameters</b>
+### -field F1IdleStateParameters
 
 <dd>
 <p>A <b>PO_FX_COMPONENT_IDLE_STATE</b> structure that describes the parameters (transition latency, residency requirement, and so on) for the F1 power state of the GPIO bank. For more information about these parameters, see <a href="..\wdm\ns-wdm--po-fx-component-idle-state.md">PO_FX_COMPONENT_IDLE_STATE</a>.</p>

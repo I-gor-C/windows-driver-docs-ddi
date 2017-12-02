@@ -59,25 +59,25 @@ typedef enum _DXGK_CHILD_STATUS_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="StatusUninitialized"></a><a id="statusuninitialized"></a><a id="STATUSUNINITIALIZED"></a><b>StatusUninitialized</b>
+### -field StatusUninitialized
 
 <dd>
 <p>Indicates that a variable of type DXGK_CHILD_STATUS_TYPE has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="StatusConnection"></a><a id="statusconnection"></a><a id="STATUSCONNECTION"></a><b>StatusConnection</b>
+### -field StatusConnection
 
 <dd>
 <p>Indicates that the request or report pertains to whether the child device has a monitor (or other display device) connected to it.</p>
 </dd>
 
-### -field <a id="StatusRotation"></a><a id="statusrotation"></a><a id="STATUSROTATION"></a><b>StatusRotation</b>
+### -field StatusRotation
 
 <dd>
 <p>Indicates that the request or report pertains to the rotation angle of the monitor (or other display device) that is connected to the child device.</p>
 </dd>
 
-### -field <a id="StatusMiracast"></a><a id="statusmiracast"></a><a id="STATUSMIRACAST"></a><b>StatusMiracast</b>
+### -field StatusMiracast
 
 <dd>
 <p>Indicates that the request or report pertains to a monitor (or other display device) that is connected wirelessly to the child device through a Miracast connected session.</p>

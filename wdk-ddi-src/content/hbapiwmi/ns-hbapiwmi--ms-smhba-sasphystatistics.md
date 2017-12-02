@@ -62,55 +62,55 @@ typedef struct _MS_SMHBA_SASPHYSTATISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>SecondsSinceLastReset</b>
+### -field SecondsSinceLastReset
 
 <dd>
 <p>The number of seconds since the statistics were last reset.</p>
 </dd>
 
-### -field <b>TxFrames</b>
+### -field TxFrames
 
 <dd>
 <p>The number of transmitted SAS frames across all protocols and classes.</p>
 </dd>
 
-### -field <b>TxWords</b>
+### -field TxWords
 
 <dd>
 <p>The number of transmitted SAS words across all protocols and classes.</p>
 </dd>
 
-### -field <b>RxFrames</b>
+### -field RxFrames
 
 <dd>
 <p>The number of received SAS frames across all protocols and classes.</p>
 </dd>
 
-### -field <b>RxWords</b>
+### -field RxWords
 
 <dd>
 <p>The number of received SAS words across all protocols and classes.</p>
 </dd>
 
-### -field <b>InvalidDwordCount</b>
+### -field InvalidDwordCount
 
 <dd>
 <p>The number of invalid DWORDs.</p>
 </dd>
 
-### -field <b>RunningDisparityErrorCount</b>
+### -field RunningDisparityErrorCount
 
 <dd>
 <p>The number of disparity error counts.</p>
 </dd>
 
-### -field <b>LossofDwordSyncCount</b>
+### -field LossofDwordSyncCount
 
 <dd>
 <p>The loss of synchronization count.</p>
 </dd>
 
-### -field <b>PhyResetProblemCount</b>
+### -field PhyResetProblemCount
 
 <dd>
 <p>A count of the number of physical link reset problems.</p>

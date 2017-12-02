@@ -65,32 +65,32 @@ typedef union _PCI_EXPRESS_LINK_CONTROL_REGISTER {
 ## -struct-fields
 <dl>
 
-### -field <b>ActiveStatePMControl</b>
+### -field ActiveStatePMControl
 
 <dd>
 <p>The level of active state power management that is enabled on the PCIe link. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="L0sAndL1EntryDisabled"></a><a id="l0sandl1entrydisabled"></a><a id="L0SANDL1ENTRYDISABLED"></a><b>L0sAndL1EntryDisabled</b>
+### -field L0sAndL1EntryDisabled
 
 <dd>
 <p>L0s and L1 are both disabled.</p>
 </dd>
 
-### -field <a id="L0sEntryEnabled"></a><a id="l0sentryenabled"></a><a id="L0SENTRYENABLED"></a><b>L0sEntryEnabled</b>
+### -field L0sEntryEnabled
 
 <dd>
 <p>L0s is enabled.</p>
 </dd>
 
-### -field <a id="L1EntryEnabled"></a><a id="l1entryenabled"></a><a id="L1ENTRYENABLED"></a><b>L1EntryEnabled</b>
+### -field L1EntryEnabled
 
 <dd>
 <p>L1 is enabled.</p>
 </dd>
 
-### -field <a id="L0sAndL1EntryEnabled"></a><a id="l0sandl1entryenabled"></a><a id="L0SANDL1ENTRYENABLED"></a><b>L0sAndL1EntryEnabled</b>
+### -field L0sAndL1EntryEnabled
 
 <dd>
 <p>L0s and L1 are both enabled.</p>
@@ -98,55 +98,55 @@ typedef union _PCI_EXPRESS_LINK_CONTROL_REGISTER {
 </dl>
 </dd>
 
-### -field <b>Rsvd1</b>
+### -field Rsvd1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>ReadCompletionBoundary</b>
+### -field ReadCompletionBoundary
 
 <dd>
 <p>The read completion boundary (RCB) value for the root port or the root port upstream from the endpoint. If the bit is clear, the RCB is 64 byte. If the bit is set, the RCB is 128 byte. This member is not applicable for switch ports.</p>
 </dd>
 
-### -field <b>LinkDisable</b>
+### -field LinkDisable
 
 <dd>
 <p>A single bit that indicates that the link is disabled. This member is not applicable for endpoint devices, PCIe-to-PCI or PCI-X bridges, and upstream ports of switches.</p>
 </dd>
 
-### -field <b>RetrainLink</b>
+### -field RetrainLink
 
 <dd>
 <p>A single bit that is used to initiate retraining of the link. Reads of this bit always return zero. This member is not applicable for endpoint devices, PCIe-to-PCI or PCI-X bridges, and upstream ports of switches.</p>
 </dd>
 
-### -field <b>CommonClockConfig</b>
+### -field CommonClockConfig
 
 <dd>
 <p>A single bit that indicates that this component and the component at the opposite end of the link are operating with a distributed common reference clock. If this bit is clear, this component and the component at the opposite end of the link are operating with an asynchronous reference clock.</p>
 </dd>
 
-### -field <b>ExtendedSynch</b>
+### -field ExtendedSynch
 
 <dd>
 <p>A single bit that indicates that additional ordered sets are transmitted when exiting the L0s state and when in the recovery state.</p>
 </dd>
 
-### -field <b>EnableClockPowerManagement</b>
+### -field EnableClockPowerManagement
 
 <dd>
 <p>A single bit that indicates that clock power management is enabled.</p>
 </dd>
 
-### -field <b>Rsvd2</b>
+### -field Rsvd2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>A USHORT representation of the contents of the PCI_EXPRESS_LINK_CONTROL_REGISTER structure.</p>

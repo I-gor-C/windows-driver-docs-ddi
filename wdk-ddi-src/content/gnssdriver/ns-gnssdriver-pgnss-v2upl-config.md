@@ -7,7 +7,7 @@ old-location: sensors\gnss_v2upl_config.htm
 old-project: sensors
 ms.assetid: A1DCC547-8CAA-46B9-A855-5F591C69A3B0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_V2UPL_CONFIG, GNSS_V2UPL_CONFIG, *PGNSS_V2UPL_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>MPC[MAX_SERVER_URL_NAME]</b>
+### -field MPC[MAX_SERVER_URL_NAME]
 
 <dd>
 <p>MPC address and port number.</p>
 </dd>
 
-### -field <b>PDE[MAX_SERVER_URL_NAME]</b>
+### -field PDE[MAX_SERVER_URL_NAME]
 
 <dd>
 <p>PDE address and port number.</p>
 </dd>
 
-### -field <b>ApplicationTypeIndicator_MR</b>
+### -field ApplicationTypeIndicator_MR
 
 <dd>
 <p>Application type indicator for any mobile originated location request to the MPC. It shall be set to the value for Microsoft resident applications based on intelligent platform.</p>

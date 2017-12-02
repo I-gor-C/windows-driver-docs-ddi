@@ -55,13 +55,13 @@ typedef struct _SendTargets_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueSessionId</b>
+### -field UniqueSessionId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies the session. The LoginToTarget and AddConnectionToSession methods both return this value in their UniqueSessionId parameter.</p>
 </dd>
 
-### -field <b>SendTargetsText</b>
+### -field SendTargetsText
 
 <dd>
 <p>The authentication key text in the PDU.</p>

@@ -57,13 +57,13 @@ typedef struct _GetPresharedKeyForId_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>The number of the port that the connection was made through. A value of -1 indicates that the connection can be made through any available port.</p>
 </dd>
 
-### -field <b>IdType</b>
+### -field IdType
 
 <dd>
 <p>The type of identifier that the initiator puts in the Internet Key Exchange (IKE) identification payload to identify itself to the target. </p>
@@ -108,13 +108,13 @@ typedef struct _GetPresharedKeyForId_IN {
 <p> </p>
 </dd>
 
-### -field <b>IdSize</b>
+### -field IdSize
 
 <dd>
 <p>The size, in bytes, of the identifier in <b>Id</b><i>.</i></p>
 </dd>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>The identifier that the initiator uses to identify itself to the target during key exchange. </p>

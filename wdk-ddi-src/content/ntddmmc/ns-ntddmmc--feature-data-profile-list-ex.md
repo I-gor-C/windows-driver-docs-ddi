@@ -57,25 +57,25 @@ typedef struct _FEATURE_DATA_PROFILE_LIST_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>ProfileNumber</b>
+### -field ProfileNumber
 
 <dd>
 <p>Contains the profile number. This number must be one of the values defined by the <a href="..\ntddmmc\ne-ntddmmc--feature-profile-type.md">FEATURE_PROFILE_TYPE</a> enumeration. <b>ProfileNumber</b>[0] must contain the most significant byte of the profile number. <b>ProfileNumber</b>[1] must contain the least significant byte. </p>
 </dd>
 
-### -field <b>Current</b>
+### -field Current
 
 <dd>
 <p>Indicates, when set to 1, that this feature is currently active and the feature data is valid. When set to zero, this bit indicates that the feature is not currently active and that the feature data might not be valid. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. </p>

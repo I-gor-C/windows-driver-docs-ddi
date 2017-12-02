@@ -56,19 +56,19 @@ typedef struct _DXGKARG_CREATEOVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the overlay is displayed on. </p>
 </dd>
 
-### -field <b>OverlayInfo</b>
+### -field OverlayInfo
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-overlayinfo.md">DXGK_OVERLAYINFO</a> structure that contains parameters that are required to create the overlay.</p>
 </dd>
 
-### -field <b>hOverlay</b>
+### -field hOverlay
 
 <dd>
 <p>[out] A handle to the newly created overlay.</p>

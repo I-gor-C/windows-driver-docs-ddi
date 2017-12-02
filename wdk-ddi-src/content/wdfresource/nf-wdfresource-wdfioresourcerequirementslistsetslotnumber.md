@@ -7,7 +7,7 @@ old-location: wdf\wdfioresourcerequirementslistsetslotnumber.htm
 old-project: wdf
 ms.assetid: 1dc18c48-2331-4980-b741-59a73d3edaa6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfIoResourceRequirementsListSetSlotNumber
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ VOID WdfIoResourceRequirementsListSetSlotNumber(
 ## -parameters
 <dl>
 
-### -param <i>RequirementsList</i> [in]
+### -param RequirementsList [in]
 
 <dd>
 <p>A handle to a framework resource-requirements-list object that represents a device's resource requirements list.</p>
 </dd>
 
-### -param <i>SlotNumber</i> [in]
+### -param SlotNumber [in]
 
 <dd>
 <p>A value that identifies the bus slot number to which the device is connected.</p>

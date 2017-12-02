@@ -55,13 +55,13 @@ typedef struct tagKS_DATAFORMAT_VIDEOINFOHEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>DataFormat</b>
+### -field DataFormat
 
 <dd>
 <p>Specifies the data format.</p>
 </dd>
 
-### -field <b>VideoInfoHeader</b>
+### -field VideoInfoHeader
 
 <dd>
 <p>Specifies the details of the video stream.</p>

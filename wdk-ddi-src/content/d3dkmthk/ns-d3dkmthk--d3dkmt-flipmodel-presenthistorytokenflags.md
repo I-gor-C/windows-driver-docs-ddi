@@ -72,28 +72,28 @@ typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Video</b>
+### -field Video
 
 <dd>
 <p>A UINT value that specifies whether the flip operation is performed with video. </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>RestrictedContent</b>
+### -field RestrictedContent
 
 <dd>
 <p>A UINT value that specifies whether the flip operation is performed with restricted content.</p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>ClipToView</b>
+### -field ClipToView
 
 <dd>
 <p>A UINT value that specifies whether the flip operation is clipped to the view surface.</p>
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>StereoPreferRight</b>
+### -field StereoPreferRight
 
 <dd>
 <p>A UINT value that specifies that when the driver clones a stereo primary allocation to a mono monitor, it should use the right image.</p>
@@ -101,7 +101,7 @@ typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>TemporaryMono</b>
+### -field TemporaryMono
 
 <dd>
 <p>A UINT value that specifies whether the driver should use the left image of a stereo allocation for the right and left portions of a stereo frame.</p>
@@ -110,7 +110,7 @@ typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>FlipRestart</b>
+### -field FlipRestart
 
 <dd>
 <p>A UINT value that specifies whether to restart a flip to a new surface.</p>
@@ -118,7 +118,7 @@ typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>ScatterBlt</b>
+### -field ScatterBlt
 
 <dd>
 <p>This member is reserved for system use and should be set to zero.</p>
@@ -126,7 +126,7 @@ typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>AlphaMode</b>
+### -field AlphaMode
 
 <dd>
 <p>A UINT value that specifies whether the DWM  should use alpha transparency information when it composes swap buffers.</p>
@@ -134,7 +134,7 @@ typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>SignalLimitOnTokenCompletion</b>
+### -field SignalLimitOnTokenCompletion
 
 <dd>
 <p> A UINT value that specifies the limit for the number of present operations that can be queued for the device after the GPU has finished processing the token.</p>
@@ -142,20 +142,20 @@ typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 22 bits (0xFFFFFC00) of the 32-bit <b>Value</b> member to zeros.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 29 bits (0xFFFFFFF8) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A 32-bit value that identifies the flip present-history operation.</p>

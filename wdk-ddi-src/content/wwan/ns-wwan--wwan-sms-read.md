@@ -7,7 +7,7 @@ old-location: netvista\wwan_sms_read.htm
 old-project: netvista
 ms.assetid: 920ca041-7fc8-4c6b-bc1a-7bf41dffcf7b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_SMS_READ, WWAN_SMS_READ, *PWWAN_SMS_READ
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ typedef struct _WWAN_SMS_READ {
 ## -struct-fields
 <dl>
 
-### -field <b>SmsFormat</b>
+### -field SmsFormat
 
 <dd>
 <p>The format in which the miniport driver should return messages for 
@@ -66,7 +66,7 @@ typedef struct _WWAN_SMS_READ {
      <b>WwanSmsFormatCdma</b> format.</p>
 </dd>
 
-### -field <b>ReadFilter</b>
+### -field ReadFilter
 
 <dd>
 <p>Represents the filter upon which the miniport driver should retrieve the messages. For example,
@@ -118,4 +118,4 @@ typedef struct _WWAN_SMS_READ {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_READ structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_READ structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -54,7 +54,7 @@ NTSTATUS WdmlibIoConnectInterruptEx(
 ## -parameters
 <dl>
 
-### -param <i>Parameters</i> [in, out]
+### -param Parameters [in, out]
 
 <dd>
 <p>Pointer to an <a href="..\wdm\ns-wdm--io-connect-interrupt-parameters.md">IO_CONNECT_INTERRUPT_PARAMETERS</a> structure that specifies the device and interrupt-handling routine. On return,  <b>WdmlibIoConnectInterruptEx</b> updates this structure to hold information about the device's interrupts.</p>

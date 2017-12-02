@@ -56,13 +56,13 @@ VOID PoFxSetDeviceIdleTimeout(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>A handle that represents the registration of the device with PoFx. The device driver previously received this handle from the <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a> routine.</p>
 </dd>
 
-### -param <i>IdleTimeout</i> [in]
+### -param IdleTimeout [in]
 
 <dd>
 <p>The idle time-out interval in 100-nanosecond units. For more information, see Remarks.</p>

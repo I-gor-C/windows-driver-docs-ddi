@@ -56,7 +56,7 @@ typedef struct _CHANNEL_CONFIG_RESULTS {
 ## -struct-fields
 <dl>
 
-### -field <b>Params</b>
+### -field Params
 
 <dd>
 <p>A 
@@ -65,7 +65,7 @@ typedef struct _CHANNEL_CONFIG_RESULTS {
      the channel.</p>
 </dd>
 
-### -field <b>ExtraOptionsBufferSize</b>
+### -field ExtraOptionsBufferSize
 
 <dd>
 <p>The size, in bytes, required in the buffer to retrieve the current extra options for the specified

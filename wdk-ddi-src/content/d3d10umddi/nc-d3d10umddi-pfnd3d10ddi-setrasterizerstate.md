@@ -58,13 +58,13 @@ VOID APIENTRY SetRasterizerState(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hRasterizerState</i> [in]
+### -param hRasterizerState [in]
 
 <dd>
 <p> A handle to the rasterizer state object.</p>

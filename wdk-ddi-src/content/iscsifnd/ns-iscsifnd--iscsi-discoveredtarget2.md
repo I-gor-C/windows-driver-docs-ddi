@@ -57,25 +57,25 @@ typedef struct _ISCSI_DiscoveredTarget2 {
 ## -struct-fields
 <dl>
 
-### -field <b>TargetPortalGroupCount</b>
+### -field TargetPortalGroupCount
 
 <dd>
 <p>The number of portal groups that are associated with the target.</p>
 </dd>
 
-### -field <b>TargetName</b>
+### -field TargetName
 
 <dd>
 <p>A name for the target that uniquely identifies the target anywhere in the world. For more information about how to specify this name, see the <i>iSCSI </i>specification that is published by the Internet Engineering Task Force (IETF) of the IP storage working group. </p>
 </dd>
 
-### -field <b>TargetAlias</b>
+### -field TargetAlias
 
 <dd>
 <p>The human-readable name or description that is assigned to the target device by its host operating system. You can use this name in user interfaces, but it is not unique, so you should not use it in authentication decisions. </p>
 </dd>
 
-### -field <b>TargetDiscoveredPortalGroups</b>
+### -field TargetDiscoveredPortalGroups
 
 <dd>
 <p>A variable-length array of <a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtargetportalgroup2.md">ISCSI_DiscoveredTargetPortalGroup2</a> structures that contains information about the portal groups that the initiator can use to connect to the target.</p>

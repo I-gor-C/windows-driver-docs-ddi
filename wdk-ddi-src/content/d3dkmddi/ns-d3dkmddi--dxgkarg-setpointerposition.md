@@ -57,25 +57,25 @@ typedef struct _DXGKARG_SETPOINTERPOSITION {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the mouse pointer is located on. </p>
 </dd>
 
-### -field <b>X</b>
+### -field X
 
 <dd>
 <p>[in] The column, in pixels, that the mouse pointer is located on from the top left.</p>
 </dd>
 
-### -field <b>Y</b>
+### -field Y
 
 <dd>
 <p>[in] The row, in pixels, that the mouse pointer is located on from the top left.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-setpointerpositionflags.md">DXGK_SETPOINTERPOSITIONFLAGS</a> structure that identifies, in bit-field flags, information about the mouse pointer.</p>

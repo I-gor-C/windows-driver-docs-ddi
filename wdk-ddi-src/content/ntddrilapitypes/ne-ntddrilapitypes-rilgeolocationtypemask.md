@@ -7,7 +7,7 @@ old-location: netvista\rilgeolocationtypemask.htm
 old-project: netvista
 ms.assetid: 8d1f6570-adc1-4389-b20b-7c7e05f1c9bf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILGEOLOCATIONTYPEMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_GEOLOCATION_CIVIC"></a><a id="ril_geolocation_civic"></a><b>RIL_GEOLOCATION_CIVIC</b>
+### -field RIL_GEOLOCATION_CIVIC
 
 <dd></dd>
 
-### -field <a id="RIL_GEOLOCATION_LATLONG"></a><a id="ril_geolocation_latlong"></a><b>RIL_GEOLOCATION_LATLONG</b>
+### -field RIL_GEOLOCATION_LATLONG
 
 <dd></dd>
 
-### -field <a id="RIL_GEOLOCATION_ALL"></a><a id="ril_geolocation_all"></a><b>RIL_GEOLOCATION_ALL</b>
+### -field RIL_GEOLOCATION_ALL
 
 <dd></dd>
 </dl>

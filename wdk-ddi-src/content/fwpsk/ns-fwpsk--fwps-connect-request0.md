@@ -7,7 +7,7 @@ old-location: netvista\fwps_connect_request0.htm
 old-project: netvista
 ms.assetid: dee5586d-62fd-4e08-854c-c7d44be60a71
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_CONNECT_REQUEST0, FWPS_CONNECT_REQUEST0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ typedef struct _FWPS_CONNECT_REQUEST0 {
 ## -struct-fields
 <dl>
 
-### -field <b>localAddressAndPort</b>
+### -field localAddressAndPort
 
 <dd>
 <p>The local transport address of the connect request. This is an IPV4 or IPV6 address and TCP port
@@ -74,7 +74,7 @@ typedef struct _FWPS_CONNECT_REQUEST0 {
      <a href="..\ntifs\ns-ntifs-sockaddr-storage.md">SOCKADDR_STORAGE</a> structure.</p>
 </dd>
 
-### -field <b>remoteAddressAndPort</b>
+### -field remoteAddressAndPort
 
 <dd>
 <p>The remote transport address of the connect request. This is an IPV4 or IPV6 address and TCP/UDP
@@ -82,7 +82,7 @@ typedef struct _FWPS_CONNECT_REQUEST0 {
      <a href="..\ntifs\ns-ntifs-sockaddr-storage.md">SOCKADDR_STORAGE</a> structure.</p>
 </dd>
 
-### -field <b>portReservationToken</b>
+### -field portReservationToken
 
 <dd>
 <p>A token used to reserve the appropriate port. The token is obtained when a port is reserved by
@@ -91,7 +91,7 @@ typedef struct _FWPS_CONNECT_REQUEST0 {
      <a href="iphlp.createpersistentudpportreservation">CreatePersistentUdpPortReservation</a>.</p>
 </dd>
 
-### -field <b>localRedirectTargetPID</b>
+### -field localRedirectTargetPID
 
 <dd>
 <p>The process identifier of the local host process that will be handling traffic to the address
@@ -100,7 +100,7 @@ typedef struct _FWPS_CONNECT_REQUEST0 {
      engine.</p>
 </dd>
 
-### -field <b>previousVersion</b>
+### -field previousVersion
 
 <dd>
 <p>The previous version of the connect request data. This read-only field records the modification history of the connect request. If the connect
@@ -108,7 +108,7 @@ typedef struct _FWPS_CONNECT_REQUEST0 {
      <i>previousVersion</i> will be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>modifierFilterId</b>
+### -field modifierFilterId
 
 <dd>
 <p>The value of the 
@@ -119,7 +119,7 @@ typedef struct _FWPS_CONNECT_REQUEST0 {
      <a href="netvista.fwps_filter1">FWPS_FILTER1</a>.</p>
 </dd>
 
-### -field <b> localRedirectHandle</b>
+### -field  localRedirectHandle
 
 <dd>
 <p> The    redirect handle that the callout driver created by calling the <a href="..\fwpsk\nf-fwpsk-fwpsredirecthandlecreate0.md">FwpsRedirectHandleCreate0</a> function.</p>
@@ -127,7 +127,7 @@ typedef struct _FWPS_CONNECT_REQUEST0 {
 <div> </div>
 </dd>
 
-### -field <b> localRedirectContext</b>
+### -field  localRedirectContext
 
 <dd>
 <p>A callout driver context area that the callout driver allocated by calling the 
@@ -136,7 +136,7 @@ typedef struct _FWPS_CONNECT_REQUEST0 {
 <div> </div>
 </dd>
 
-### -field <b> localRedirectContextSize</b>
+### -field  localRedirectContextSize
 
 <dd>
 <p>The    size, in bytes, of the callout-supplied context area.</p>
@@ -229,4 +229,4 @@ typedef struct _FWPS_CONNECT_REQUEST0 {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CONNECT_REQUEST0 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CONNECT_REQUEST0 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

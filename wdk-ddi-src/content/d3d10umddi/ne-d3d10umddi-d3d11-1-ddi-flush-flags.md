@@ -57,13 +57,13 @@ typedef enum D3D11_1_DDI_FLUSH_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_FLUSH_UNLESS_NO_COMMANDS"></a><a id="d3d11_1ddi_flush_unless_no_commands"></a><b>D3D11_1DDI_FLUSH_UNLESS_NO_COMMANDS</b>
+### -field D3D11_1DDI_FLUSH_UNLESS_NO_COMMANDS
 
 <dd>
 <p>The driver should not submit command buffers if there have been no new commands since the last time the driver submitted a command buffer.</p>
 </dd>
 
-### -field <a id="D3DWDDM1_3DDI_TRIM_MEMORY"></a><a id="d3dwddm1_3ddi_trim_memory"></a><b>D3DWDDM1_3DDI_TRIM_MEMORY</b>
+### -field D3DWDDM1_3DDI_TRIM_MEMORY
 
 <dd>
 <p>The driver should free as much memory as it can. However, it should not free any memory that the driver requires to continue operating. Using this constant value therefore should not introduce new opportunities to run out of memory.</p>

@@ -56,19 +56,19 @@ typedef struct _D3DHAL_DP2UPDATEPALETTE {
 ## -struct-fields
 <dl>
 
-### -field <b>dwPaletteHandle</b>
+### -field dwPaletteHandle
 
 <dd>
 <p>Specifies a handle to the palette to be altered.</p>
 </dd>
 
-### -field <b>wStartIndex</b>
+### -field wStartIndex
 
 <dd>
 <p>Specifies the index in the palette beyond which data is updated. </p>
 </dd>
 
-### -field <b>wNumEntries</b>
+### -field wNumEntries
 
 <dd>
 <p>Specifies the number of PALETTEENTRYs being updated.</p>

@@ -55,13 +55,13 @@ NTSTATUS PcRequestNewPowerState(
 ## -parameters
 <dl>
 
-### -param <i>pDeviceObject</i> [in]
+### -param pDeviceObject [in]
 
 <dd>
 <p>Pointer to the adapter's <a href="wdkgloss.f#wdkgloss.functional_device_object__fdo_#wdkgloss.functional_device_object__fdo_"><i>functional device object (FDO)</i></a>. This parameter must point to a system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
 </dd>
 
-### -param <i>RequestedNewState</i> [in]
+### -param RequestedNewState [in]
 
 <dd>
 <p>Specifies the device power state being requested. Set this parameter to one of the following DEVICE_POWER_STATE enumeration values: <b>PowerDeviceD0</b>, <b>PowerDeviceD1</b>, <b>PowerDeviceD2</b>, or <b>PowerDeviceD3</b>.</p>
@@ -94,7 +94,7 @@ NTSTATUS PcRequestNewPowerState(
 
 <p>The hardware can be accessed only in power state <b>PowerDeviceD0</b>. In any other state, the driver must cache any attempted hardware accesses and defer those accesses until the <b>PowerDeviceD0</b> state is restored.</p>
 
-<p>For more information, see <a href="NULL">Power Management for Audio Devices</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/3d3d63af-5790-4760-9099-7116ed5a5446">Power Management for Audio Devices</a>.</p>
 
 ## -requirements
 <table>

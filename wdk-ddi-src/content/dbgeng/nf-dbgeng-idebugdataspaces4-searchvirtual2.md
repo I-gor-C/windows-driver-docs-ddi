@@ -7,7 +7,7 @@ old-location: debugger\searchvirtual2.htm
 old-project: debugger
 ms.assetid: f54c35da-d455-4700-b8b9-c4479bc95088
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugDataSpaces4, SearchVirtual2, IDebugDataSpaces4::SearchVirtual2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,43 +60,43 @@ HRESULT SearchVirtual2(
 ## -parameters
 <dl>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the location in the process's virtual address space to start searching for the pattern.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies how far to search for the pattern.  A successful match requires the entire pattern to be found before <i>Length</i> bytes have been examined.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies a bit field of flags for the search.  Currently, the only bit-flag that can be set is DEBUG_VSEARCH_WRITABLE_ONLY, which restricts the search to writable memory.</p>
 </dd>
 
-### -param <i>Pattern</i> [in]
+### -param Pattern [in]
 
 <dd>
 <p>Specifies the pattern to search for.</p>
 </dd>
 
-### -param <i>PatternSize</i> [in]
+### -param PatternSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the pattern.  This must be a multiple of the granularity of the pattern.</p>
 </dd>
 
-### -param <i>PatternGranularity</i> [in]
+### -param PatternGranularity [in]
 
 <dd>
 <p>Specifies the granularity of the pattern.  For a successful match, the difference between the location of the found pattern and <i>Offset</i> must be a multiple of <i>PatternGranularity</i>.</p>
 </dd>
 
-### -param <i>MatchOffset</i> [out]
+### -param MatchOffset [out]
 
 <dd>
 <p>Receives the location in the process's virtual address space of the pattern, if it was found.</p>
@@ -104,7 +104,7 @@ HRESULT SearchVirtual2(
 </dl>
 
 ## -returns
-<p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>HRESULT_FROM_NT(STATUS_NO_MORE_ENTRIES)</b></dt>
@@ -152,4 +152,4 @@ HRESULT SearchVirtual2(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces4::SearchVirtual2 method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces4::SearchVirtual2 method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

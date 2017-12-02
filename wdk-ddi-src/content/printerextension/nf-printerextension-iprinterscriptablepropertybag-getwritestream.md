@@ -56,13 +56,13 @@ HRESULT GetWriteStream(
 ## -parameters
 <dl>
 
-### -param <i> bstrName</i> [in]
+### -param  bstrName [in]
 
 <dd>
 <p>The property to write.</p>
 </dd>
 
-### -param <i>ppStream</i> [out, retval]
+### -param ppStream [out, retval]
 
 <dd>
 <p>The retrieved stream.</p>

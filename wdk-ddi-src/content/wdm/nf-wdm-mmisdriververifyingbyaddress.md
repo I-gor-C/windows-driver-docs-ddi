@@ -55,7 +55,7 @@ LOGICAL MmIsDriverVerifyingByAddress(
 ## -parameters
 <dl>
 
-### -param <i>AddressWithinSection</i> [in]
+### -param AddressWithinSection [in]
 
 <dd>
 <p>A pointer to the virtual address within the driver image. <b>MmIsDriverVerifyingByAddress</b> uses this address to determine which driver to check.</p>
@@ -66,7 +66,7 @@ LOGICAL MmIsDriverVerifyingByAddress(
 <p><b>MmIsDriverVerifyingByAddress</b> returns <b>TRUE</b> if the specified driver either is in the driver verification list or imports calls to entry points in a driver that is in the driver verification list. Otherwise, this routine returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>A kernel-mode driver can call this routine to determine whether it or another driver is being monitored by <a href="https://msdn.microsoft.com/library/windows/hardware/ff557262">Driver Verifier</a>. Driver Verifier monitors kernel-mode drivers to detect illegal function calls or actions that might corrupt the system. To select drivers to be verified, you can use the <a href="https://msdn.microsoft.com/7cdf5277-7187-4e90-b22a-6f828f06e2fb">Verifier Command Line</a> or <a href="https://msdn.microsoft.com/37a7d348-8b55-44f7-86d6-6b195704b9fd">Driver Verifier Manager</a>. For more information about adding drivers to the driver verification list, see <a href="NULL">Selecting Drivers to be Verified</a>.</p>
+<p>A kernel-mode driver can call this routine to determine whether it or another driver is being monitored by <a href="https://msdn.microsoft.com/library/windows/hardware/ff557262">Driver Verifier</a>. Driver Verifier monitors kernel-mode drivers to detect illegal function calls or actions that might corrupt the system. To select drivers to be verified, you can use the <a href="https://msdn.microsoft.com/7cdf5277-7187-4e90-b22a-6f828f06e2fb">Verifier Command Line</a> or <a href="https://msdn.microsoft.com/37a7d348-8b55-44f7-86d6-6b195704b9fd">Driver Verifier Manager</a>. For more information about adding drivers to the driver verification list, see <a href="https://msdn.microsoft.com/a752dea1-f49c-4e58-9e56-6b54701c760e">Selecting Drivers to be Verified</a>.</p>
 
 <p>A similar routine, <a href="..\wdm\nf-wdm-mmisdriververifying.md">MmIsDriverVerifying</a>, indicates whether a driver identified by a <a href="https://msdn.microsoft.com/497ee2dc-671d-408e-b228-16dc24532375">driver object</a> is being verified or calls a driver that is being verified.</p>
 

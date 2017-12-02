@@ -56,13 +56,13 @@ PDRIVER_CANCEL IoSetCancelRoutine(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to the IRP being put into or removed from a cancelable state.</p>
 </dd>
 
-### -param <i>CancelRoutine</i> [in]
+### -param CancelRoutine [in]
 
 <dd>
 <p>Specifies the entry point of the caller-supplied <a href="kernel.cancel">Cancel</a> routine to be called if the specified IRP is canceled or is <b>NULL</b> if the given IRP is being removed from the cancelable state. This routine is declared as follows:</p>

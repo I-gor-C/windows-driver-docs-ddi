@@ -144,7 +144,7 @@ req.product: Windows 10 or later.
 ## -remarks
 <p>The order of print jobs in the enumerated list is the same as the order provided by <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd162625(v=vs.85).aspx">EnumJobs</a>, which is the actual print queue order.</p>
 
-<p><b>IPrintJobCollection</b> also helps to make it possible to perform job management from a UWP device app or from a printer extension. For more information, see <a href="NULL">Job Management</a>.</p>
+<p><b>IPrintJobCollection</b> also helps to make it possible to perform job management from a UWP device app or from a printer extension. For more information, see <a href="https://msdn.microsoft.com/D1236DD2-D4AD-4615-9036-7EC75D6CADCE">Job Management</a>.</p>
 
 ## -requirements
 <table>
@@ -180,7 +180,7 @@ req.product: Windows 10 or later.
 <dl>
 <dt><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd162625(v=vs.85).aspx">EnumJobs</a></dt>
 <dt>
-<a href="NULL">Job Management</a>
+<a href="https://msdn.microsoft.com/D1236DD2-D4AD-4615-9036-7EC75D6CADCE">Job Management</a>
 </dt>
 </dl>
 <p> </p>

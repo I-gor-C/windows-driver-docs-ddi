@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestgetrequestormode.htm
 old-project: wdf
 ms.assetid: 63fc77c8-756c-4872-b608-539d8419154b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfRequestGetRequestorMode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ KPROCESSOR_MODE WdfRequestGetRequestorMode(
 ## -parameters
 <dl>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object.</p>

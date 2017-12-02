@@ -7,7 +7,7 @@ old-location: netvista\AllocateNetBufferListForwardingContext.htm
 old-project: netvista
 ms.assetid: C8A80DB2-4273-4FBA-82D4-4E8146812B16
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,13 +61,13 @@ NDIS_STATUS AllocateNetBufferListForwardingContext(
 ## -parameters
 <dl>
 
-### -param <i>NdisSwitchContext</i> [in]
+### -param NdisSwitchContext [in]
 
 <dd>
 <p>An NDIS_SWITCH_CONTEXT value that contains the handle of the extensible switch module to which the Hyper-V extensible switch extension is attached. When the extension calls <a href="..\ndis\nf-ndis-ndisfgetoptionalswitchhandlers.md">NdisFGetOptionalSwitchHandlers</a>,  this handle is returned through the <i>NdisSwitchContext</i> parameter.</p>
 </dd>
 
-### -param <i>NetBufferList</i> [in, out]
+### -param NetBufferList [in, out]
 
 <dd>
 <p>A pointer to a linked list of <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures. </p>
@@ -80,15 +80,15 @@ NDIS_STATUS AllocateNetBufferListForwardingContext(
 </p>
 
 ## -remarks
-<p>The extensible switch extension can originate packet send operations within the extensible switch data path. For example, the extension can send packets to any port on the extensible switch. For more information about this data path, see <a href="NULL">Hyper-V Extensible Switch Data Path</a>.</p>
+<p>The extensible switch extension can originate packet send operations within the extensible switch data path. For example, the extension can send packets to any port on the extensible switch. For more information about this data path, see <a href="netvista.hyper_v_extensible_switch_data_path">Hyper-V Extensible Switch Data Path</a>.</p>
 
-<p>After the extension calls <a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a> or <a href="..\ndis\nf-ndis-ndisallocateclonenetbufferlist.md">NdisAllocateCloneNetBufferList</a> to create or clone a packet from its <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> pool, the extension must  call the <i>AllocateNetBufferListForwardingContext</i> function. This function allocates and initializes the out-of-band (OOB) extensible switch forwarding context for the specified  <b>NET_BUFFER_LIST</b> structure. For more information about this context, see <a href="NULL">Hyper-V Extensible Switch Forwarding Context</a>.</p>
+<p>After the extension calls <a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a> or <a href="..\ndis\nf-ndis-ndisallocateclonenetbufferlist.md">NdisAllocateCloneNetBufferList</a> to create or clone a packet from its <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> pool, the extension must  call the <i>AllocateNetBufferListForwardingContext</i> function. This function allocates and initializes the out-of-band (OOB) extensible switch forwarding context for the specified  <b>NET_BUFFER_LIST</b> structure. For more information about this context, see <a href="netvista.hyper_v_extensible_switch_forwarding_context">Hyper-V Extensible Switch Forwarding Context</a>.</p>
 
 <p>The extension must follow these guidelines for allocating the forwarding context through the <i>AllocateNetBufferListForwardingContext</i> function:</p>
 
 <p>The extension calls <a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a> to allocate a packet from the extension's <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> pool for a send or receive operation over the extensible switch. Before the extension initializes source and destination ports for the packet, it must call <i>AllocateNetBufferListForwardingContext</i>. </p>
 
-<p>For more information on how to specify source and destination extensible switch ports, see <a href="NULL">Managing Hyper-V Extensible Switch Source and Destination Port Data</a>.</p>
+<p>For more information on how to specify source and destination extensible switch ports, see <a href="netvista.managing_hyper_v_extensible_switch_source_and_destination_port_data">Managing Hyper-V Extensible Switch Source and Destination Port Data</a>.</p>
 
 <p>Before the extension calls <i>AllocateNetBufferListForwardingContext</i>, it must set the <b>SourceHandle</b> member of each allocated <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure to the handle value that identifies the extension. The extension receives this handle through the <i>NdisFilterHandle</i> parameter when NDIS calls the extension's <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function.</p>
 
@@ -96,7 +96,7 @@ NDIS_STATUS AllocateNetBufferListForwardingContext(
 
 <p>If the extension is cloning a packet, it must call <a href="netvista.CopyNetBufferListInfo">CopyNetBufferListInfo</a> to copy the forwarding context from the original packet to the cloned packet. The extension must do this after it calls <i>AllocateNetBufferListForwardingContext</i>.</p>
 
-<p> For more information on how to originate send operations, see <a href="NULL">Filter Module Send and Receive Operations</a>.</p>
+<p> For more information on how to originate send operations, see <a href="netvista.filter_module_send_and_receive_operations">Filter Module Send and Receive Operations</a>.</p>
 
 ## -requirements
 <table>
@@ -168,4 +168,4 @@ NDIS_STATUS AllocateNetBufferListForwardingContext(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_ALLOCATE_NET_BUFFER_LIST_FORWARDING_CONTEXT callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_ALLOCATE_NET_BUFFER_LIST_FORWARDING_CONTEXT callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

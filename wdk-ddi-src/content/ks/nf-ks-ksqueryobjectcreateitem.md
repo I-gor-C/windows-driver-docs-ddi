@@ -54,7 +54,7 @@ PKSOBJECT_CREATE_ITEM KsQueryObjectCreateItem(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [in]
+### -param Header [in]
 
 <dd>
 <p>Indicates the header previously allocated.</p>

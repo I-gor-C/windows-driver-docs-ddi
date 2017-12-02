@@ -56,13 +56,13 @@ VOID KeReleaseSpinLock(
 ## -parameters
 <dl>
 
-### -param <i>SpinLock</i> [in, out]
+### -param SpinLock [in, out]
 
 <dd>
 <p>Pointer to a spin lock for which the caller provides the storage.</p>
 </dd>
 
-### -param <i>NewIrql</i> [in]
+### -param NewIrql [in]
 
 <dd>
 <p>Specifies the IRQL value saved from the preceding call to <a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>.</p>

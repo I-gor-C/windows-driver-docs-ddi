@@ -57,19 +57,19 @@ typedef enum _UDECX_USB_DEVICE_FUNCTION_POWER {
 ## -enum-fields
 <dl>
 
-### -field <a id="UdecxUsbDeviceFunctionNotSuspended"></a><a id="udecxusbdevicefunctionnotsuspended"></a><a id="UDECXUSBDEVICEFUNCTIONNOTSUSPENDED"></a><b>UdecxUsbDeviceFunctionNotSuspended</b>
+### -field UdecxUsbDeviceFunctionNotSuspended
 
 <dd>
 <p>The USB interface cannot enter function suspend. </p>
 </dd>
 
-### -field <a id="UdecxUsbDeviceFunctionSuspendedCannotWake"></a><a id="udecxusbdevicefunctionsuspendedcannotwake"></a><a id="UDECXUSBDEVICEFUNCTIONSUSPENDEDCANNOTWAKE"></a><b>UdecxUsbDeviceFunctionSuspendedCannotWake</b>
+### -field UdecxUsbDeviceFunctionSuspendedCannotWake
 
 <dd>
 <p>The USB interface cannot send a wake signal to the host controller.</p>
 </dd>
 
-### -field <a id="UdecxUsbDeviceFunctionSuspendedCanWake"></a><a id="udecxusbdevicefunctionsuspendedcanwake"></a><a id="UDECXUSBDEVICEFUNCTIONSUSPENDEDCANWAKE"></a><b>UdecxUsbDeviceFunctionSuspendedCanWake</b>
+### -field UdecxUsbDeviceFunctionSuspendedCanWake
 
 <dd>
 <p>The USB interface can send a wake signal to the host controller when the function is in suspend state.</p>
@@ -96,7 +96,7 @@ typedef enum _UDECX_USB_DEVICE_FUNCTION_POWER {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_udecx_usb_device_set_function_suspend_and_wake">EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE</a>
+<a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-set-function-suspend-and-wake.md">EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE</a>
 </dt>
 </dl>
 <p> </p>

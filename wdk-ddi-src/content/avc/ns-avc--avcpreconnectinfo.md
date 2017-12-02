@@ -59,37 +59,37 @@ typedef struct _AVCPRECONNECTINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceID</b>
+### -field DeviceID
 
 <dd>
 <p>A GUID representing the unit as a whole. All subunits within the same unit share the same GUID. No two units share the same GUID.</p>
 </dd>
 
-### -field <b>SubunitAddress</b>
+### -field SubunitAddress
 
 <dd>
 <p>The encoded subunit type and subunit ID of the subunit.</p>
 </dd>
 
-### -field <b>SubunitPlugNumber</b>
+### -field SubunitPlugNumber
 
 <dd>
 <p>The plug number (within the subunit) described by the AVCPRECONNECTINFO structure.</p>
 </dd>
 
-### -field <b>DataFlow</b>
+### -field DataFlow
 
 <dd>
 <p>The direction of data flow on this subunit plug. Destination plugs have KSPIN_DATAFLOW_IN; source plugs have KSPIN_DATAFLOW_OUT.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitmap with one or more bits set from the KSPIN_FLAG_AVC enumeration.</p>
 </dd>
 
-### -field <b>UnitPlugNumber</b>
+### -field UnitPlugNumber
 
 <dd>
 <p>The plug number (within the subunit) described by the AVCPRECONNECTINFO structure.</p>

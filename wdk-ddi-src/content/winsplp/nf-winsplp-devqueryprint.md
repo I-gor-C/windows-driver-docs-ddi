@@ -57,15 +57,15 @@ BOOL WINAPI DevQueryPrint(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd></dd>
 
-### -param <i>pDevMode</i> [in]
+### -param pDevMode [in]
 
 <dd></dd>
 
-### -param <i>pResID</i> [out]
+### -param pResID [out]
 
 <dd></dd>
 </dl>

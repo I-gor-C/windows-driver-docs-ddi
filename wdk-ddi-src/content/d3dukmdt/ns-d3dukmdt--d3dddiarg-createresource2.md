@@ -67,81 +67,81 @@ typedef struct _D3DDDIARG_CREATERESOURCE2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>[in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a> that indicates the format of the resources.</p>
 </dd>
 
-### -field <b>Pool</b>
+### -field Pool
 
 <dd>
 <p>[in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-pool.md">D3DDDI_POOL</a> that indicates the type of memory pool that the resources are created from.</p>
 </dd>
 
-### -field <b>MultisampleType</b>
+### -field MultisampleType
 
 <dd>
 <p>[in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt--d3dddimultisample-type.md">D3DDDIMULTISAMPLE_TYPE</a> that indicates the number of samples for a multiple-sampled surface. If the surface is not multiple sampled, this value is D3DDDIMULTISAMPLE_NONE (0).</p>
 </dd>
 
-### -field <b>MultisampleQuality</b>
+### -field MultisampleQuality
 
 <dd>
 <p>[in] The quality level of rendering samples in a multiple-sampled surface. The quality level must be a number from 0 through 7 that represents a quality level from 1 through 8, respectively.</p>
 <p>Note that even if the surface is not multiple-sampled (that is, if <b>D3DDDIMULTISAMPLE_NONE</b> is specified in <b>MultisampleType</b>) it can still have a quality level that is greater than 1 (which is specified by using a number greater than 0).</p>
 </dd>
 
-### -field <b>pSurfList</b>
+### -field pSurfList
 
 <dd>
 <p>[in] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-surfaceinfo.md">D3DDDI_SURFACEINFO</a> structures for the list of surfaces (or other resource types) to create.</p>
 </dd>
 
-### -field <b>SurfCount</b>
+### -field SurfCount
 
 <dd>
 <p>[in] The number of resources in the array that is specified by the <b>pSurfList</b> member.</p>
 </dd>
 
-### -field <b>MipLevels</b>
+### -field MipLevels
 
 <dd>
 <p>[in] The number of MIP-map levels for the resources.</p>
 </dd>
 
-### -field <b>Fvf</b>
+### -field Fvf
 
 <dd>
 <p>[in] The FVF format for vertex buffers.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the primary surface is created on (if the resource contains a primary surface).</p>
 </dd>
 
-### -field <b>RefreshRate</b>
+### -field RefreshRate
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-rational.md">D3DDDI_RATIONAL</a> structure that specifies the refresh rate that the resource is used with. This member is applicable only if the resource is the primary surface and the <b>MatchGdiPrimary</b> bit-field flag is not set in the <b>Flags</b> member. In addition, if the <b>InterlacedRefresh</b> bit-field flag is set in <b>Flags</b>, the user-mode display driver determines that the refresh rate is interleaved (otherwise, progressive).</p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in/out] A handle to the resource. On input to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource2.md">CreateResource2</a> function, <b>hResource</b> specifies the handle that the driver should use anytime it calls back into the Microsoft Direct3D runtime. </p>
 <p>The driver generates a unique handle and passes it back to the Direct3D runtime. On output from the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource2.md">CreateResource2</a> function, <b>hResource</b> specifies the handle that the Direct3D runtime should use in subsequent driver calls to identify the resource.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-resourceflags.md">D3DDDI_RESOURCEFLAGS</a> structure that identifies the type of resources to create. Note that some of the bit-field flags in <b>D3DDDI_RESOURCEFLAGS</b> require that additional bit-field flags are set as well.</p>
 </dd>
 
-### -field <b>Rotation</b>
+### -field Rotation
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-rotation.md">D3DDDI_ROTATION</a>-typed value that identifies the orientation of the resource. </p>
@@ -149,7 +149,7 @@ typedef struct _D3DDDIARG_CREATERESOURCE2 {
 <p>Orientations other than <b>D3DDDI_ROTATION_IDENTITY</b> are set only when the <b>Primary</b> bit-field flag is also set in the <b>Flags</b> member.</p>
 </dd>
 
-### -field <b>Flags2</b>
+### -field Flags2
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-resourceflags2.md">D3DDDI_RESOURCEFLAGS2</a> structure that identifies the type of resources to create. Note that some of the bit-field flags in <b>D3DDDI_RESOURCEFLAGS2</b> require that additional bit-field flags are set as well.</p>

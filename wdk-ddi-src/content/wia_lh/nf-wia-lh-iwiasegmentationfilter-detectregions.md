@@ -7,7 +7,7 @@ old-location: image\iwiasegmentationfilter_detectregions.htm
 old-project: image
 ms.assetid: 53ad769e-38b5-463d-9fa0-053c2215cc81
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IWiaSegmentationFilter, DetectRegions, IWiaSegmentationFilter::DetectRegions
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ HRESULT DetectRegions(
 ## -parameters
 <dl>
 
-### -param <i>lFlags</i> [in]
+### -param lFlags [in]
 
 <dd>
 <p>Currently unused. Should be set to zero. </p>
 </dd>
 
-### -param <i>pInputStream </i> [in, optional]
+### -param pInputStream  [in, optional]
 
 <dd>
 <p>Specifies a pointer to the <b>IStream</b> preview image.</p>
 </dd>
 
-### -param <i>pWiaItem2</i> [in, optional]
+### -param pWiaItem2 [in, optional]
 
 <dd>
 <p>Specifies a pointer to the <b>IWiaItem2</b> item for which <i>pInputStream</i> was acquired. The segmentation filter creates child items for this item. </p>

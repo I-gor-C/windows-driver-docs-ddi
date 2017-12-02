@@ -56,13 +56,13 @@ VOID RtlInitUnicodeString(
 ## -parameters
 <dl>
 
-### -param <i>DestinationString</i> [out]
+### -param DestinationString [out]
 
 <dd>
 <p>For more information, see  the <a href="..\wdmsec\nf-wdmsec-wdmlibrtlinitunicodestringex.md">WdmlibRtlInitUnicodeStringEx</a> function.</p>
 </dd>
 
-### -param <i>SourceString</i> [in, optional]
+### -param SourceString [in, optional]
 
 <dd>
 <p>For more information, see  the <a href="..\wdmsec\nf-wdmsec-wdmlibrtlinitunicodestringex.md">WdmlibRtlInitUnicodeStringEx</a> function.</p>

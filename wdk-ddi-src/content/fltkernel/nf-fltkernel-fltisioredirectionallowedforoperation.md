@@ -7,7 +7,7 @@ old-location: ifsk\fltisioredirectionallowedforoperation.htm
 old-project: ifsk
 ms.assetid: 601a155d-587f-47fc-960e-d1162eabd4b9
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltIsIoRedirectionAllowedForOperation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ NTSTATUS FltIsIoRedirectionAllowedForOperation(
 ## -parameters
 <dl>
 
-### -param <i>Data</i> [in]
+### -param Data [in]
 
 <dd>
 <p>An <a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a> structure representing the I/O operation.</p>
 </dd>
 
-### -param <i>TargetInstance</i> [in]
+### -param TargetInstance [in]
 
 <dd>
 <p>A filter instance on the target device stack.</p>
 </dd>
 
-### -param <i>RedirectionAllowedThisIo</i> [out]
+### -param RedirectionAllowedThisIo [out]
 
 <dd>
 <p>A value of <b>TRUE</b> if this I/O can be redirected to the target device stack by changing the filter instance referenced.</p>
 </dd>
 
-### -param <i>RedirectionAllowedAllIo</i> [out, optional]
+### -param RedirectionAllowedAllIo [out, optional]
 
 <dd>
 <p>This optional parameter has a value of <b>TRUE</b> if all I/O to the device stack to which the I/O operation is issued can be redirected to the target device by changing the filter instance referenced,  otherwise <b>FALSE</b>.</p>
@@ -169,4 +169,4 @@ NTSTATUS FltIsIoRedirectionAllowedForOperation(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltIsIoRedirectionAllowedForOperation routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltIsIoRedirectionAllowedForOperation routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -64,61 +64,61 @@ typedef struct _PCI_MSIX_TABLE_CONFIG_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The driver-defined interface version.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to interface-specific context information. </p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to an <a href="kernel.interfacereference">InterfaceReference</a> routine that increments the interface's reference count.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to an <a href="kernel.interfacedereference">InterfaceDereference</a> routine that decrements the interface's reference count.</p>
 </dd>
 
-### -field <b>SetTableEntry</b>
+### -field SetTableEntry
 
 <dd>
 <p>A pointer to the interface's <a href="..\wdm\nc-wdm-pci-msix-set-entry.md">SetTableEntry</a> routine.</p>
 </dd>
 
-### -field <b>MaskTableEntry</b>
+### -field MaskTableEntry
 
 <dd>
 <p>A pointer to the interface's <a href="..\wdm\nc-wdm-pci-msix-maskunmask-entry.md">MaskTableEntry</a> routine.</p>
 </dd>
 
-### -field <b>UnmaskTableEntry</b>
+### -field UnmaskTableEntry
 
 <dd>
 <p>A pointer to the interface's <a href="..\wdm\nc-wdm-pci-msix-maskunmask-entry.md">UnmaskTableEntry</a> routine.</p>
 </dd>
 
-### -field <b>GetTableEntry</b>
+### -field GetTableEntry
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>GetTableSize</b>
+### -field GetTableSize
 
 <dd>
 <p>Reserved for future use.</p>

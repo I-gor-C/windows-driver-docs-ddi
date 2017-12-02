@@ -56,19 +56,19 @@ typedef struct _D3DKMT_TRIMNOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>[in] The caller-supplied context for the callback notification.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-trimresidencyset-flags.md">D3DDDI_TRIMRESIDENCYSET_FLAGS</a> structure containing the trimming behavior flags.</p>
 </dd>
 
-### -field <b>NumBytesToTrim</b>
+### -field NumBytesToTrim
 
 <dd>
 <p>[in] When <b>TrimToBudget</b> is set, this value specifies how much the application should evict in order to meet its current memory budget.</p>

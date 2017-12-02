@@ -54,7 +54,7 @@ VOID SeFreePrivileges(
 ## -parameters
 <dl>
 
-### -param <i>Privileges</i> [in]
+### -param Privileges [in]
 
 <dd>
 <p>Pointer to the privilege set to be freed.</p>

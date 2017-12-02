@@ -54,7 +54,7 @@ ULONG AtaPortConvertPhysicalAddressToUlong(
 ## -parameters
 <dl>
 
-### -param <i>Address</i> [in]
+### -param Address [in]
 
 <dd>
 <p>Specifies a value of type IDE_PHYSICAL_ADDRESS.</p>

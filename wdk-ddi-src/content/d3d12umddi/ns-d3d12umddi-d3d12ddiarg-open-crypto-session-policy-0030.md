@@ -55,13 +55,13 @@ typedef struct _D3D12DDIARG_OPEN_CRYPTO_SESSION_POLICY_0030 {
 ## -struct-fields
 <dl>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>The private driver data.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>The private driver data size.</p>

@@ -56,26 +56,26 @@ NTSTATUS RtlRunOnceBeginInitialize(
 ## -parameters
 <dl>
 
-### -param <i>RunOnce</i> [in, out]
+### -param RunOnce [in, out]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a> one-time initialization structure.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Drivers can optionally specify one or more of the following flags:</p>
 <p></p>
 <dl>
 
-### -param <a id="RTL_RUN_ONCE_ASYNC"></a><a id="rtl_run_once_async"></a>RTL_RUN_ONCE_ASYNC
+### -param RTL_RUN_ONCE_ASYNC
 
 <dd>
 <p>Perform initialization asynchronously. The driver can perform multiple completion attempts in parallel. If this flag is used, subsequent calls to this routine will fail unless this flag is also specified.</p>
 </dd>
 
-### -param <a id="RTL_RUN_ONCE_CHECK_ONLY"></a><a id="rtl_run_once_check_only"></a>RTL_RUN_ONCE_CHECK_ONLY
+### -param RTL_RUN_ONCE_CHECK_ONLY
 
 <dd>
 <p>Do not begin initialization, but check to determine if initialization has already occurred. If <b>RtlRunOnceBeginInitialize</b> returns STATUS_SUCCESS, the initialization succeeded, and *<i>Context</i> contains the initialized data. </p>
@@ -83,7 +83,7 @@ NTSTATUS RtlRunOnceBeginInitialize(
 </dl>
 </dd>
 
-### -param <i>Context</i> [out]
+### -param Context [out]
 
 <dd>
 <p>Specifies a pointer to a PVOID variable that receives the initialized data. The value of *<i>Context</i> is valid only when the routine returns STATUS_SUCCESS.</p>

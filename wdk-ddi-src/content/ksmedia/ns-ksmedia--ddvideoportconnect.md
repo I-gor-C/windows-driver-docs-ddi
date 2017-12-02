@@ -58,19 +58,19 @@ typedef struct _DDVIDEOPORTCONNECT {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size in bytes of the DDVIDEOPORTCONNECT structure.</p>
 </dd>
 
-### -field <b>dwPortWidth</b>
+### -field dwPortWidth
 
 <dd>
 <p>Specifies the width of the hardware video port. This value represents the number of physical pins on the hardware video port. This member must always be filled in, even when the <b>guidTypeID</b> assumes a certain size. </p>
 </dd>
 
-### -field <b>guidTypeID</b>
+### -field guidTypeID
 
 <dd>
 <p>Specifies a GUID that describes the synchronization characteristics of the hardware video port. The following port types are predefined:</p>
@@ -139,7 +139,7 @@ typedef struct _DDVIDEOPORTCONNECT {
 <p> </p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Specifies a set of flags that identify the capabilities of the hardware video port connection. This member can be a bitwise OR of any of the following flags:</p>
@@ -216,7 +216,7 @@ typedef struct _DDVIDEOPORTCONNECT {
 <p> </p>
 </dd>
 
-### -field <b>dwReserved1</b>
+### -field dwReserved1
 
 <dd>
 <p>Reserved for system use and should be set to zero. </p>

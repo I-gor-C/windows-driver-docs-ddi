@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSDEGRADE_STANDARD_SAMPLE"></a><a id="ksdegrade_standard_sample"></a><b>KSDEGRADE_STANDARD_SAMPLE</b>
+### -field KSDEGRADE_STANDARD_SAMPLE
 
 <dd>
 <p>Specifies sample degradation.</p>
 </dd>
 
-### -field <a id="KSDEGRADE_STANDARD_QUALITY"></a><a id="ksdegrade_standard_quality"></a><b>KSDEGRADE_STANDARD_QUALITY</b>
+### -field KSDEGRADE_STANDARD_QUALITY
 
 <dd>
 <p>Specifies quality degradation.</p>
 </dd>
 
-### -field <a id="KSDEGRADE_STANDARD_COMPUTATION"></a><a id="ksdegrade_standard_computation"></a><b>KSDEGRADE_STANDARD_COMPUTATION</b>
+### -field KSDEGRADE_STANDARD_COMPUTATION
 
 <dd>
 <p>Specifies computation degradation.</p>
 </dd>
 
-### -field <a id="KSDEGRADE_STANDARD_SKIP"></a><a id="ksdegrade_standard_skip"></a><b>KSDEGRADE_STANDARD_SKIP</b>
+### -field KSDEGRADE_STANDARD_SKIP
 
 <dd>
 <p>Requests to skip ahead a specified delta in the data stream.</p>
@@ -83,7 +83,7 @@ typedef enum  {
 </dl>
 
 ## -remarks
-<p>For more information, see <a href="NULL">Quality Management</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/359e6e12-903f-4037-8f35-b090ce41f770">Quality Management</a>.</p>
 
 ## -requirements
 <table>

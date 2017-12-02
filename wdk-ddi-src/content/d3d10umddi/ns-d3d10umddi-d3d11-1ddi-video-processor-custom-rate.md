@@ -57,25 +57,25 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE {
 ## -struct-fields
 <dl>
 
-### -field <b>CustomRate</b>
+### -field CustomRate
 
 <dd>
 <p>The ratio of the output frame rate to the input frame rate, expressed as a <a href="direct3ddxgi.dxgi_rational">DXGI_RATIONAL</a> structure that holds a rational number.</p>
 </dd>
 
-### -field <b>OutputFrames</b>
+### -field OutputFrames
 
 <dd>
 <p>The number of output frames that will be generated for every <i>N</i> input samples, where <i>N</i> = <b>InputFramesOrFields</b>.</p>
 </dd>
 
-### -field <b>InputInterlaced</b>
+### -field InputInterlaced
 
 <dd>
 <p>If <b>TRUE</b>, the input stream must be interlaced. Otherwise, the input stream must be progressive.</p>
 </dd>
 
-### -field <b>InputFramesOrFields</b>
+### -field InputFramesOrFields
 
 <dd>
 <p>The number of input fields or frames for every <i>N</i> output frames that will be generated, where <i>N</i> = <b>OutputFrames</b>.</p>

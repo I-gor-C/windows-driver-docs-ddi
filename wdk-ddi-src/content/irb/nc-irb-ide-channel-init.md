@@ -59,19 +59,19 @@ BOOLEAN AtaChannelInitRoutine(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the miniport driver channel extension.</p>
 </dd>
 
-### -param <i>ChannelInterface</i> [in, out]
+### -param ChannelInterface [in, out]
 
 <dd>
 <p>A pointer to a structure of type <a href="..\irb\ns-irb--ide-channel-interface.md">IDE_CHANNEL_INTERFACE</a>. </p>
 </dd>
 
-### -param <i>Context</i> [in, out]
+### -param Context [in, out]
 
 <dd>
 <p>A pointer to the controller extension.</p>

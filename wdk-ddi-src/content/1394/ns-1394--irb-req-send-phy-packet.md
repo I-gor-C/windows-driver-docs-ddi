@@ -7,7 +7,7 @@ old-location: ieee\irb_req_send_phy_packet.htm
 old-project: IEEE
 ms.assetid: 32C96259-3A35-4BD3-96A4-A9F2A5FDAB99
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_SEND_PHY_PACKET, IRB_REQ_SEND_PHY_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef struct _IRB_REQ_SEND_PHY_PACKET {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies any nondefault settings for this operation. Set to ASYNC_FLAGS_NO_STATUS to always return success from the send PHY packet operation, regardless of whether the send PHY packet succeeds or fails.</p>
 </dd>
 
-### -field <b>GenerationCount</b>
+### -field GenerationCount
 
 <dd>
 <p>Specifies the bus reset generation as known by the device driver that submits this request. If the specified generation count does not match the actual generation of the bus, this request is returned with a status of STATUS_INVALID_GENERATION.</p>
 </dd>
 
-### -field <b>PhyPacket</b>
+### -field PhyPacket
 
 <dd>
 <p>Specifies the 64-bit PHY packet that is sent to the 1394 bus.</p>
@@ -75,7 +75,7 @@ typedef struct _IRB_REQ_SEND_PHY_PACKET {
 </dl>
 
 ## -remarks
-
+<p>If successful, the new 1394 bus driver (1394ohci.sys) sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS. If <b>u.SendPhyPacket.GenerationCount</b> does not match the current bus generation count, the new 1394 bus driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_INVALID_GENERATION</p>
 
 ## -requirements
 <table>

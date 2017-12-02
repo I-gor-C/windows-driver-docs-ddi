@@ -56,19 +56,19 @@ typedef enum _D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_MFRC_UNINITIALIZED"></a><a id="d3dkmdt_mfrc_uninitialized"></a><b>D3DKMDT_MFRC_UNINITIALIZED</b>
+### -field D3DKMDT_MFRC_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MFRC_ACTIVESIZE"></a><a id="d3dkmdt_mfrc_activesize"></a><b>D3DKMDT_MFRC_ACTIVESIZE</b>
+### -field D3DKMDT_MFRC_ACTIVESIZE
 
 <dd>
 <p>Indicates that the constraint is an active region size.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MFRC_MAXPIXELRATE"></a><a id="d3dkmdt_mfrc_maxpixelrate"></a><b>D3DKMDT_MFRC_MAXPIXELRATE</b>
+### -field D3DKMDT_MFRC_MAXPIXELRATE
 
 <dd>
 <p>Indicates that the constraint is a pixel rate.</p>

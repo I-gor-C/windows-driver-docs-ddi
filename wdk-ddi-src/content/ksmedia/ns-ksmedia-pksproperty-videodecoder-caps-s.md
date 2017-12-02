@@ -58,31 +58,31 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>StandardsSupported</b>
+### -field StandardsSupported
 
 <dd>
 <p>Specifies the video standards supported by the device. This member may be set to one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks-analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.</p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Specifies video decoder capabilities. This member must be set to zero or one of the values from the <a href="..\ksmedia\ne-ksmedia-ks-videodecoder-flags.md">KS_VIDEODECODER_FLAGS</a> enumeration.</p>
 </dd>
 
-### -field <b>SettlingTime</b>
+### -field SettlingTime
 
 <dd>
 <p>Specifies the settling time when changing input video sources. This value is expressed in milliseconds.</p>
 </dd>
 
-### -field <b>HSyncPerVSync</b>
+### -field HSyncPerVSync
 
 <dd>
 <p>Specifies the number of horizontal sync pulses the video decoder produces during the vertical sync period. Decoders that follow the ITU_656 should set this value to six.</p>

@@ -59,37 +59,37 @@ typedef struct _MS_SMHBA_PROTOCOLSTATISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>SecondsSinceLastReset</b>
+### -field SecondsSinceLastReset
 
 <dd>
 <p>The number of seconds since the statistics were last reset.</p>
 </dd>
 
-### -field <b>InputRequests</b>
+### -field InputRequests
 
 <dd>
 <p>The number of input requests.</p>
 </dd>
 
-### -field <b>OutputRequests</b>
+### -field OutputRequests
 
 <dd>
 <p>The number of output requests.</p>
 </dd>
 
-### -field <b>ControlRequests</b>
+### -field ControlRequests
 
 <dd>
 <p>The number of control requests.</p>
 </dd>
 
-### -field <b>InputMegabytes</b>
+### -field InputMegabytes
 
 <dd>
 <p>The number of megabytes of data that has been input.</p>
 </dd>
 
-### -field <b>OutputMegabytes</b>
+### -field OutputMegabytes
 
 <dd>
 <p>The number of megabytes of data that has been output.</p>

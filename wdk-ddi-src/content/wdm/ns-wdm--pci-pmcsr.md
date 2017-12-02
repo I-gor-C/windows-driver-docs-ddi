@@ -60,7 +60,7 @@ typedef struct _PCI_PMCSR {
 ## -struct-fields
 <dl>
 
-### -field <b>PowerState</b>
+### -field PowerState
 
 <dd>
 <p>Indicates the power state of the device. This member can have the following values:</p>
@@ -106,31 +106,31 @@ typedef struct _PCI_PMCSR {
 <p>For more information about the power state register, see the <i>PCI Power Management Specification</i>. </p>
 </dd>
 
-### -field <b>Rsvd1</b>
+### -field Rsvd1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>PMEEnable</b>
+### -field PMEEnable
 
 <dd>
 <p>Indicates, when 1, that the device is enabled to assert the PME signal. When 0, the device is not enabled to assert the PME signal. For more information about the meaning of the PME Enable bit, see the <i>PCI Power Management Specification</i>. </p>
 </dd>
 
-### -field <b>DataSelect</b>
+### -field DataSelect
 
 <dd>
 <p>Indicates which data is to be reported through the data register. For more information about the values that this member can hold, see the <i>PCI Power Management Specification</i>. </p>
 </dd>
 
-### -field <b>DataScale</b>
+### -field DataScale
 
 <dd>
 <p>Indicates the scaling factor used to interpret the value of the data register. For more information about the values that this member can hold, see the <i>PCI Power Management Specification</i>. </p>
 </dd>
 
-### -field <b>PMEStatus</b>
+### -field PMEStatus
 
 <dd>
 <p>Contains a one-bit value (either 0 or 1) that reports the value of the PMEStatus bit in the power management register. For more information about the values that this member can hold, see the <i>PCI Power Management Specification</i>. </p>

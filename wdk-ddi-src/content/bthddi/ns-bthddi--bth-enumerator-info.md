@@ -69,19 +69,19 @@ typedef struct _BTH_ENUMERATOR_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>EnumeratorType</b>
+### -field EnumeratorType
 
 <dd>
 <p>Reserved for use by the Bluetooth driver stack. Do not use.</p>
 </dd>
 
-### -field <b>Action</b>
+### -field Action
 
 <dd>
 <p>Reserved for use by the Bluetooth driver stack. Do not use.</p>
 </dd>
 
-### -field <b>Port</b>
+### -field Port
 
 <dd>
 <p>If the enumeration was caused by a connection request, this member contains the device's port
@@ -90,7 +90,7 @@ typedef struct _BTH_ENUMERATOR_INFO {
      request, this is an RFCOMM data link connection identifier (DLCI).</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A flag that indicates the direction of the request. Possible values include:</p>
@@ -101,7 +101,7 @@ typedef struct _BTH_ENUMERATOR_INFO {
 </ul>
 </dd>
 
-### -field <b>Guid</b>
+### -field Guid
 
 <dd>
 <p>
@@ -110,7 +110,7 @@ typedef struct _BTH_ENUMERATOR_INFO {
      </p>
 </dd>
 
-### -field <b>InstanceId</b>
+### -field InstanceId
 
 <dd>
 <p>
@@ -118,7 +118,7 @@ typedef struct _BTH_ENUMERATOR_INFO {
      </p>
 </dd>
 
-### -field <b>InstanceIdStr</b>
+### -field InstanceIdStr
 
 <dd>
 <p>
@@ -126,31 +126,31 @@ typedef struct _BTH_ENUMERATOR_INFO {
      </p>
 </dd>
 
-### -field <b>Vid</b>
+### -field Vid
 
 <dd>
 <p>The vendor ID of the remote device, which is obtained from SDP.</p>
 </dd>
 
-### -field <b>Pid</b>
+### -field Pid
 
 <dd>
 <p>The product ID of the remote device, which is obtained from SDP.</p>
 </dd>
 
-### -field <b>Mfg</b>
+### -field Mfg
 
 <dd>
 <p>The manufacturer ID of the remote device, which is obtained from SDP.</p>
 </dd>
 
-### -field <b>LocalMfg</b>
+### -field LocalMfg
 
 <dd>
 <p>The local radio manufacturer obtained from the HCI.</p>
 </dd>
 
-### -field <b>VidType</b>
+### -field VidType
 
 <dd>
 <p>
@@ -158,19 +158,19 @@ typedef struct _BTH_ENUMERATOR_INFO {
      </p>
 </dd>
 
-### -field <b>ServiceName</b>
+### -field ServiceName
 
 <dd>
 <p>The service name that is used for local services.</p>
 </dd>
 
-### -field <b>SdpPriLangServiceName</b>
+### -field SdpPriLangServiceName
 
 <dd>
 <p>The identifier used for remote services.</p>
 </dd>
 
-### -field <b>DeviceString</b>
+### -field DeviceString
 
 <dd>
 <p>The device string for the remote device.</p>

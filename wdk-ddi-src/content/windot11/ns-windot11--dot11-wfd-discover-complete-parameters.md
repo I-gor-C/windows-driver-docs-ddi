@@ -7,7 +7,7 @@ old-location: netvista\_dot11_wfd_discover_complete_parameters.htm
 old-project: netvista
 ms.assetid: 0CAB1436-357F-4F9F-98F8-F05B3D86B00A
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_WFD_DISCOVER_COMPLETE_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct _DOT11_WFD_DISCOVER_COMPLETE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Specifies the type, revision and size of the <b>DOT11_WFD_DISCOVER_COMPLETE_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following:</p>
@@ -83,31 +83,31 @@ typedef struct _DOT11_WFD_DISCOVER_COMPLETE_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The appropriate status code for the device discovery operation. If this value is not <b>NDIS_STATUS_SUCCESS</b>, the rest of the members in this structure must be set to 0.</p>
 </dd>
 
-### -field <b>uNumOfEntries</b>
+### -field uNumOfEntries
 
 <dd>
 <p>The total number of discovered devices in the list at <b>uListOffset</b>. The number of entries cannot exceed <b>DOT11_WFD_DISCOVER_COMPLETE_MAX_LIST_SIZE</b>.</p>
 </dd>
 
-### -field <b>uTotalNumOfEntries</b>
+### -field uTotalNumOfEntries
 
 <dd>
 <p>The total number of discovered devices in actually discovered  by the driver. The number of entries cannot exceed <b>DOT11_WFD_DISCOVER_COMPLETE_MAX_LIST_SIZE</b>.</p>
 </dd>
 
-### -field <b>uListOffset</b>
+### -field uListOffset
 
 <dd>
 <p>The offset in the <b>StatusBuffer</b> of <a href="..\ndis\ns-ndis--ndis-status-indication.md">NDIS_STATUS_INDICATION</a> where the list of <a href="..\windot11\ns-windot11--dot11-wfd-device-entry.md">DOT11_WFD_DEVICE_ENTRY</a> elements begins.</p>
 </dd>
 
-### -field <b>uListLength</b>
+### -field uListLength
 
 <dd>
 <p>The length, in bytes of the device list at <b>uListOffset</b>.</p>
@@ -147,4 +147,4 @@ typedef struct _DOT11_WFD_DISCOVER_COMPLETE_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20 DOT11_WFD_DISCOVER_COMPLETE_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20 DOT11_WFD_DISCOVER_COMPLETE_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

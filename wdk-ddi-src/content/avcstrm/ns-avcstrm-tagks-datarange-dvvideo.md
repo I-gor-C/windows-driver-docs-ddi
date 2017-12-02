@@ -55,13 +55,13 @@ typedef struct tagKS_DATARANGE_DVVIDEO {
 ## -struct-fields
 <dl>
 
-### -field <b>DataRange</b>
+### -field DataRange
 
 <dd>
 <p>Specifies the range of supported digital video formats.</p>
 </dd>
 
-### -field <b>DVVideoInfo</b>
+### -field DVVideoInfo
 
 <dd>
 <p>Specifies the digital video information, for example, sound tracks and video information.</p>

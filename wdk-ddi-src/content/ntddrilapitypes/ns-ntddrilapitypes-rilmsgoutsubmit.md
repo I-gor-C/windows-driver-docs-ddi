@@ -7,7 +7,7 @@ old-location: netvista\rilmsgoutsubmit.htm
 old-project: netvista
 ms.assetid: 83d15e40-b93f-4c7a-bfe4-db939c24b94f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMSGOUTSUBMIT, RILMSGOUTSUBMIT, *LPRILMSGOUTSUBMIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,43 +63,43 @@ typedef struct _RILMSGOUTSUBMIT {
 ## -struct-fields
 <dl>
 
-### -field <b>raDestAddress</b>
+### -field raDestAddress
 
 <dd></dd>
 
-### -field <b>dwProtocolID</b>
+### -field dwProtocolID
 
 <dd></dd>
 
-### -field <b>rmdDataCoding</b>
+### -field rmdDataCoding
 
 <dd></dd>
 
-### -field <b>dwVPFormat</b>
+### -field dwVPFormat
 
 <dd></dd>
 
-### -field <b>stVP</b>
+### -field stVP
 
 <dd></dd>
 
-### -field <b>dwMsgID</b>
+### -field dwMsgID
 
 <dd></dd>
 
-### -field <b>cbHdrLength</b>
+### -field cbHdrLength
 
 <dd></dd>
 
-### -field <b>cchMsgLength</b>
+### -field cchMsgLength
 
 <dd></dd>
 
-### -field <b>rgbHdr</b>
+### -field rgbHdr
 
 <dd></dd>
 
-### -field <b>rgbMsg</b>
+### -field rgbMsg
 
 <dd></dd>
 </dl>

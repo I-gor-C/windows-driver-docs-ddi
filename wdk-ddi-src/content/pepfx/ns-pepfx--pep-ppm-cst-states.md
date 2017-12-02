@@ -55,13 +55,13 @@ typedef struct _PEP_PPM_CST_STATES {
 ## -struct-fields
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>The number of elements in the <b>IdleStates</b> array.</p>
 </dd>
 
-### -field <b>IdleStates</b>
+### -field IdleStates
 
 <dd>
 <p>A pointer to an array of <a href="..\pepfx\ns-pepfx--pep-ppm-cst-state.md">PEP_PPM_CST_STATE</a> structures.</p>

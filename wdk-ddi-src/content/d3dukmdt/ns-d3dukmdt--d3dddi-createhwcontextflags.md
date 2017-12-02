@@ -59,13 +59,13 @@ typedef struct _D3DDDI_CREATEHWCONTEXTFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>This value is used to operate over the members collectively.</p>

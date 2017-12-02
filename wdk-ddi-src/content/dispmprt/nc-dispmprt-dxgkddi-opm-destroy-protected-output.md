@@ -58,13 +58,13 @@ NTSTATUS DxgkDdiOPMDestroyProtectedOutput(
 ## -parameters
 <dl>
 
-### -param <i>MiniportDeviceContext</i> [in]
+### -param MiniportDeviceContext [in]
 
 <dd>
 <p>A handle to a context block associated with a display adapter. Previously, the display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function provided this handle to the DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>ProtectedOutputHandle</i> [in]
+### -param ProtectedOutputHandle [in]
 
 <dd>
 <p>The handle to a protected output object. The <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-create-protected-output.md">DxgkDdiOPMCreateProtectedOutput</a> function creates the protected output object and returns the handle to the object.</p>

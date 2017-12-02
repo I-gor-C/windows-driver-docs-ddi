@@ -55,13 +55,13 @@ typedef struct D3D12DDI_RANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>Begin</b>
+### -field Begin
 
 <dd>
 <p>The beginning of the range.</p>
 </dd>
 
-### -field <b>End</b>
+### -field End
 
 <dd>
 <p>A value of one more than the end of the range. Therefore, the value of <i>End</i> minus the value of <i>Begin</i> is the size of the range.</p>

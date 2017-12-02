@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="TELEPHONY_CALLTYPE_CIRCUITSWITCHED"></a><a id="telephony_calltype_circuitswitched"></a><b>TELEPHONY_CALLTYPE_CIRCUITSWITCHED</b>
+### -field TELEPHONY_CALLTYPE_CIRCUITSWITCHED
 
 <dd>
 <p>Specifies a circuit-switched phone call.</p>
 </dd>
 
-### -field <a id="TELEPHONY_CALLTYPE_PACKETSWITCHED_LTE"></a><a id="telephony_calltype_packetswitched_lte"></a><b>TELEPHONY_CALLTYPE_PACKETSWITCHED_LTE</b>
+### -field TELEPHONY_CALLTYPE_PACKETSWITCHED_LTE
 
 <dd>
 <p>Specifies a packet-switched Long-Term Evolution (LTE) phone call.</p>
 </dd>
 
-### -field <a id="TELEPHONY_CALLTYPE_PACKETSWITCHED_WLAN"></a><a id="telephony_calltype_packetswitched_wlan"></a><b>TELEPHONY_CALLTYPE_PACKETSWITCHED_WLAN</b>
+### -field TELEPHONY_CALLTYPE_PACKETSWITCHED_WLAN
 
 <dd>
 <p>Specifies a packet-switched wireless LAN (WLAN) phone call.</p>

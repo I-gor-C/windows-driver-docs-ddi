@@ -7,7 +7,7 @@ old-location: netvista\ndis_nic_switch_vport_parameters.htm
 old-project: netvista
 ms.assetid: d75bec3d-b427-40d2-bec3-95b7409f31bb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_NIC_SWITCH_VPORT_PARAMETERS, NDIS_NIC_SWITCH_VPORT_PARAMETERS, *PNDIS_NIC_SWITCH_VPORT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ typedef struct _NDIS_NIC_SWITCH_VPORT_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_NIC_SWITCH_VPORT_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -72,7 +72,7 @@ typedef struct _NDIS_NIC_SWITCH_VPORT_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_NIC_SWITCH_VPORT_PARAMETERS_REVISION_1"></a><a id="ndis_nic_switch_vport_parameters_revision_1"></a>NDIS_NIC_SWITCH_VPORT_PARAMETERS_REVISION_1
+### -field NDIS_NIC_SWITCH_VPORT_PARAMETERS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30 and later.</p>
@@ -81,7 +81,7 @@ typedef struct _NDIS_NIC_SWITCH_VPORT_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p> A ULONG value that contains a bitwise OR of flags. The following flags are defined for this member. 
@@ -89,7 +89,7 @@ typedef struct _NDIS_NIC_SWITCH_VPORT_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_NIC_SWITCH_VPORT_PARAMS_LOOKAHEAD_SPLIT_ENABLED"></a><a id="ndis_nic_switch_vport_params_lookahead_split_enabled"></a>NDIS_NIC_SWITCH_VPORT_PARAMS_LOOKAHEAD_SPLIT_ENABLED
+### -field NDIS_NIC_SWITCH_VPORT_PARAMS_LOOKAHEAD_SPLIT_ENABLED
 
 <dd>
 <p>
@@ -98,7 +98,7 @@ typedef struct _NDIS_NIC_SWITCH_VPORT_PARAMETERS {
 Miniport drivers must ignore this flag.</p>
 </dd>
 
-### -field <a id="NDIS_NIC_SWITCH_VPORT_PARAMS_FLAGS_CHANGED"></a><a id="ndis_nic_switch_vport_params_flags_changed"></a>NDIS_NIC_SWITCH_VPORT_PARAMS_FLAGS_CHANGED
+### -field NDIS_NIC_SWITCH_VPORT_PARAMS_FLAGS_CHANGED
 
 <dd>
 <p>
@@ -109,7 +109,7 @@ Miniport drivers must ignore this flag.</p>
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_NIC_SWITCH_VPORT_PARAMS_NAME_CHANGED"></a><a id="ndis_nic_switch_vport_params_name_changed"></a>NDIS_NIC_SWITCH_VPORT_PARAMS_NAME_CHANGED
+### -field NDIS_NIC_SWITCH_VPORT_PARAMS_NAME_CHANGED
 
 <dd>
 <p>                                  
@@ -119,7 +119,7 @@ Miniport drivers must ignore this flag.</p>
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_NIC_SWITCH_VPORT_PARAMS_INT_MOD_CHANGED"></a><a id="ndis_nic_switch_vport_params_int_mod_changed"></a>NDIS_NIC_SWITCH_VPORT_PARAMS_INT_MOD_CHANGED
+### -field NDIS_NIC_SWITCH_VPORT_PARAMS_INT_MOD_CHANGED
 
 <dd>
 <p>This flag specifies that the <b>InterruptModeration</b> member has been updated after the VPort has been created. This member can be updated by using an OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>. 
@@ -129,7 +129,7 @@ Miniport drivers must ignore this flag.</p>
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_NIC_SWITCH_VPORT_PARAMS_STATE_CHANGED"></a><a id="ndis_nic_switch_vport_params_state_changed"></a>NDIS_NIC_SWITCH_VPORT_PARAMS_STATE_CHANGED
+### -field NDIS_NIC_SWITCH_VPORT_PARAMS_STATE_CHANGED
 
 <dd>
 <p>This flag specifies that the <b>VPortState</b> member has been updated after the VPort has been created. This member can be updated by using an OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>.</p>
@@ -137,7 +137,7 @@ Miniport drivers must ignore this flag.</p>
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_NIC_SWITCH_VPORT_PARAMS_PROCESSOR_AFFINITY_CHANGED"></a><a id="ndis_nic_switch_vport_params_processor_affinity_changed"></a>NDIS_NIC_SWITCH_VPORT_PARAMS_PROCESSOR_AFFINITY_CHANGED
+### -field NDIS_NIC_SWITCH_VPORT_PARAMS_PROCESSOR_AFFINITY_CHANGED
 
 <dd>
 <p>This flag specifies that the <b>ProcessoryAffinity</b> member has been updated after the VPort has been created. The processor affinity of a VPort can only be updated if the VPort is attached to the PF on the network adapter. The <b>ProcessoryAffinity</b> member can be updated by using an OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>.</p>
@@ -147,7 +147,7 @@ Miniport drivers must ignore this flag.</p>
 </dl>
 </dd>
 
-### -field <b>SwitchId</b>
+### -field SwitchId
 
 <dd>
 <p>An NDIS_NIC_SWITCH_ID value that specifies the identifier of the switch on which the VPort is to be created.</p>
@@ -158,7 +158,7 @@ Miniport drivers must ignore this flag.</p>
 <div> </div>
 </dd>
 
-### -field <b>VPortId</b>
+### -field VPortId
 
 <dd>
 <p>An NDIS_NIC_SWITCH_VPORT_ID value that specifies the identifier of a VPort  on the network adapter. The value is allocated by NDIS,  and is unique across the network adapter. </p>
@@ -168,7 +168,7 @@ Miniport drivers must ignore this flag.</p>
 <div> </div>
 </dd>
 
-### -field <b>VPortName</b>
+### -field VPortName
 
 <dd>
 <p>An NDIS_VPORT_NAME value that specifies the name of the VPort. This member contains a user-friendly description of the VPort.
@@ -176,13 +176,13 @@ Miniport drivers must ignore this flag.</p>
 </p>
 </dd>
 
-### -field <b>AttachedFunctionId</b>
+### -field AttachedFunctionId
 
 <dd>
 <p>An NDIS_SRIOV_FUNCTION_ID value that specifies the ID of the Physical Function (PF) or Virtual Function (VF) that the VPort is attached to. A value of NDIS_PF_FUNCTION_ID specifies that the VPort is attached to the PF. If the value is a valid VF identifier, the VPort is attached to the VF. </p>
 </dd>
 
-### -field <b>NumQueuePairs</b>
+### -field NumQueuePairs
 
 <dd>
 <p>A ULONG value that specifies the number of queue pairs configured for this VPort.</p>
@@ -191,7 +191,7 @@ One or more queue pairs are configured on a nondefault VPort through an OID meth
 </p>
 </dd>
 
-### -field <b>InterruptModeration</b>
+### -field InterruptModeration
 
 <dd>
 <p>An <a href="..\ntddndis\ne-ntddndis--ndis-nic-switch-vport-interrupt-moderation.md">NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION</a> value that specifies the interrupt moderation setting of the VPort.
@@ -199,13 +199,13 @@ One or more queue pairs are configured on a nondefault VPort through an OID meth
 </p>
 </dd>
 
-### -field <b>VPortState</b>
+### -field VPortState
 
 <dd>
 <p>An <a href="..\ntddndis\ne-ntddndis--ndis-nic-switch-vport-state.md">NDIS_NIC_SWITCH_VPORT_STATE</a> value that specifies the current state of the VPort.</p>
 </dd>
 
-### -field <b>ProcessorAffinity</b>
+### -field ProcessorAffinity
 
 <dd>
 <p>A GROUP_AFFINITY value that specifies the group number and a bitmap of the CPUs that this VPort is associated with. This field is valid only for VPorts that are attached to the PF. </p>
@@ -216,7 +216,7 @@ One or more queue pairs are configured on a nondefault VPort through an OID meth
 </p>
 </dd>
 
-### -field <b>LookaheadSize</b>
+### -field LookaheadSize
 
 <dd>
 <p>This member is reserved for future use. This member must be set to zero.</p>
@@ -226,7 +226,7 @@ One or more queue pairs are configured on a nondefault VPort through an OID meth
 ## -remarks
 <p>This structure is used in OID requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>.</p>
 
-<p>For more information about the SR-IOV interface, see 	<a href="NULL">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
+<p>For more information about the SR-IOV interface, see 	<a href="netvista.overview_of_single_root_i_o_virtualization__sr-iov_">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
 
 ## -requirements
 <table>
@@ -274,4 +274,4 @@ One or more queue pairs are configured on a nondefault VPort through an OID meth
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VPORT_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VPORT_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

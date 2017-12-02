@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>WmiTraceMessage</b> routine adds a message to the output log of a <a href="NULL">WPP software tracing</a> session.</p>
+<p>The <b>WmiTraceMessage</b> routine adds a message to the output log of a <a href="https://msdn.microsoft.com/dab776b3-bac9-4157-a530-6e48868ba900">WPP software tracing</a> session.</p>
 
 
 ## -syntax
@@ -59,31 +59,31 @@ NTSTATUS WmiTraceMessage(
 ## -parameters
 <dl>
 
-### -param <i>LoggerHandle</i> [in]
+### -param LoggerHandle [in]
 
 <dd>
 <p>Specifies a trace handle for a software tracing session.</p>
 </dd>
 
-### -param <i>MessageFlags</i> [in]
+### -param MessageFlags [in]
 
 <dd>
 <p>Specifies a bitwise OR of one or more message flags. See the Remarks section for details.</p>
 </dd>
 
-### -param <i>MessageGuid</i> [in]
+### -param MessageGuid [in]
 
 <dd>
 <p>Specifies a GUID that identifies the class of software trace messages.</p>
 </dd>
 
-### -param <i>MessageNumber</i> [in]
+### -param MessageNumber [in]
 
 <dd>
 <p>Identifies the message subtype. The meaning of subtypes is specific to the software trace class and the provider.</p>
 </dd>
 
-### -param <i>...</i> [in]
+### -param ... [in]
 
 <dd>
 <p>Provides a required list of message parameters that specify a set of message parts. The parameters are organized as a sequence of parameter pairs, where each pair specifies one part of the complete message. Each parameter pair consists of a PVOID pointer to data, followed immediately by a ULONG value that specifies the length of the data. The parameter list must be terminated by a <b>NULL</b> PVOID pointer followed by a ULONG(0).</p>

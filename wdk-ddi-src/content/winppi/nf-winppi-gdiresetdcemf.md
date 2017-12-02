@@ -56,13 +56,13 @@ BOOL GdiResetDCEMF(
 ## -parameters
 <dl>
 
-### -param <i>SpoolFileHandle</i> 
+### -param SpoolFileHandle 
 
 <dd>
 <p>Caller-supplied spool file handle, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>.</p>
 </dd>
 
-### -param <i>pCurrDM</i> 
+### -param pCurrDM 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetdevmodeforpage.md">GdiGetDevmodeForPage</a>.</p>
@@ -77,7 +77,7 @@ BOOL GdiResetDCEMF(
 
 <p>Print processors must call <b>GdiResetDCEMF</b> whenever it is necessary to reset the printer's device context. The function must be called whenever the <a href="..\winppi\nf-winppi-gdigetdevmodeforpage.md">GdiGetDevmodeForPage</a> function indicates that the current document page's <a href="display.devmodew">DEVMODEW</a> structure is not identical to that of the previous document page.</p>
 
-<p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.</p>
 
 ## -requirements
 <table>

@@ -55,13 +55,13 @@ typedef enum _DXGK_GENERAL_ERROR_CODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_GENERAL_ERROR_PAGE_FAULT"></a><a id="dxgk_general_error_page_fault"></a><b>DXGK_GENERAL_ERROR_PAGE_FAULT</b>
+### -field DXGK_GENERAL_ERROR_PAGE_FAULT
 
 <dd>
 <p>Indicates that the GPU encountered a page fault. The <b>FaultedVirtualAddress</b> and <b>PageTableLevel</b> members of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-notify-interrupt-data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure should be used to provide further information about the GPU virtual address operation that caused the fault.</p>
 </dd>
 
-### -field <a id="DXGK_GENERAL_ERROR_INVALID_INSTRUCTION"></a><a id="dxgk_general_error_invalid_instruction"></a><b>DXGK_GENERAL_ERROR_INVALID_INSTRUCTION</b>
+### -field DXGK_GENERAL_ERROR_INVALID_INSTRUCTION
 
 <dd>
 <p>Indicates that the GPU encountered an invalid instruction in the DMA command buffer.</p>

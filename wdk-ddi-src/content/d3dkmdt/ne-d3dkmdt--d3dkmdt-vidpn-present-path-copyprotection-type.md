@@ -57,25 +57,25 @@ typedef enum _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_VPPMT_UNINITIALIZED"></a><a id="d3dkmdt_vppmt_uninitialized"></a><b>D3DKMDT_VPPMT_UNINITIALIZED</b>
+### -field D3DKMDT_VPPMT_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPMT_NOPROTECTION"></a><a id="d3dkmdt_vppmt_noprotection"></a><b>D3DKMDT_VPPMT_NOPROTECTION</b>
+### -field D3DKMDT_VPPMT_NOPROTECTION
 
 <dd>
 <p>Indicates that the path has no copy protection.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPMT_MACROVISION_APSTRIGGER"></a><a id="d3dkmdt_vppmt_macrovision_apstrigger"></a><b>D3DKMDT_VPPMT_MACROVISION_APSTRIGGER</b>
+### -field D3DKMDT_VPPMT_MACROVISION_APSTRIGGER
 
 <dd>
 <p>Indicates that the path provides support for Rovi's (formerly Macrovision) analog protection system (APS).</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPMT_MACROVISION_FULLSUPPORT"></a><a id="d3dkmdt_vppmt_macrovision_fullsupport"></a><b>D3DKMDT_VPPMT_MACROVISION_FULLSUPPORT</b>
+### -field D3DKMDT_VPPMT_MACROVISION_FULLSUPPORT
 
 <dd>
 <p>Indicates that the path provides full Rovi (formerly Macrovision) copy protection support.</p>

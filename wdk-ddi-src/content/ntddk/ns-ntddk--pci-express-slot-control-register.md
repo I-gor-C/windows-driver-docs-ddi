@@ -68,62 +68,62 @@ typedef union _PCI_EXPRESS_SLOT_CONTROL_REGISTER {
 ## -struct-fields
 <dl>
 
-### -field <b>AttentionButtonEnable</b>
+### -field AttentionButtonEnable
 
 <dd>
 <p>A single bit that indicates that the attention button for the slot is enabled to generate events.</p>
 </dd>
 
-### -field <b>PowerFaultDetectEnable</b>
+### -field PowerFaultDetectEnable
 
 <dd>
 <p>A single bit that indicates that power fault detection for the slot is enabled to generate events.</p>
 </dd>
 
-### -field <b>MRLSensorEnable</b>
+### -field MRLSensorEnable
 
 <dd>
 <p>A single bit that indicates that the manually operated retention latch (MRL) sensor for the slot is enabled to generate events.</p>
 </dd>
 
-### -field <b>PresenceDetectEnable</b>
+### -field PresenceDetectEnable
 
 <dd>
 <p>A single bit that indicates that card presence detection for the slot is enabled to generate events.</p>
 </dd>
 
-### -field <b>CommandCompletedEnable</b>
+### -field CommandCompletedEnable
 
 <dd>
 <p>A single bit that indicates that notification is enabled for the slot when an issued command is completed by the hot-plug controller.</p>
 </dd>
 
-### -field <b>HotPlugInterruptEnable</b>
+### -field HotPlugInterruptEnable
 
 <dd>
 <p>A single bit that indicates that interrupts for the slot are enabled for hot-plug events.</p>
 </dd>
 
-### -field <b>AttentionIndicatorControl</b>
+### -field AttentionIndicatorControl
 
 <dd>
 <p>The state of the slot's attention indicator. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="IndicatorOn"></a><a id="indicatoron"></a><a id="INDICATORON"></a><b>IndicatorOn</b>
+### -field IndicatorOn
 
 <dd>
 <p>The indicator is on.</p>
 </dd>
 
-### -field <a id="IndicatorBlink"></a><a id="indicatorblink"></a><a id="INDICATORBLINK"></a><b>IndicatorBlink</b>
+### -field IndicatorBlink
 
 <dd>
 <p>The indicator is blinking.</p>
 </dd>
 
-### -field <a id="IndicatorOff"></a><a id="indicatoroff"></a><a id="INDICATOROFF"></a><b>IndicatorOff</b>
+### -field IndicatorOff
 
 <dd>
 <p>The indicator is off.</p>
@@ -131,26 +131,26 @@ typedef union _PCI_EXPRESS_SLOT_CONTROL_REGISTER {
 </dl>
 </dd>
 
-### -field <b>PowerIndicatorControl</b>
+### -field PowerIndicatorControl
 
 <dd>
 <p>The state of the slot's power indicator. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="IndicatorOn"></a><a id="indicatoron"></a><a id="INDICATORON"></a><b>IndicatorOn</b>
+### -field IndicatorOn
 
 <dd>
 <p>The indicator is on.</p>
 </dd>
 
-### -field <a id="IndicatorBlink"></a><a id="indicatorblink"></a><a id="INDICATORBLINK"></a><b>IndicatorBlink</b>
+### -field IndicatorBlink
 
 <dd>
 <p>The indicator is blinking.</p>
 </dd>
 
-### -field <a id="IndicatorOff"></a><a id="indicatoroff"></a><a id="INDICATOROFF"></a><b>IndicatorOff</b>
+### -field IndicatorOff
 
 <dd>
 <p>The indicator is off.</p>
@@ -158,20 +158,20 @@ typedef union _PCI_EXPRESS_SLOT_CONTROL_REGISTER {
 </dl>
 </dd>
 
-### -field <b>PowerControllerControl</b>
+### -field PowerControllerControl
 
 <dd>
 <p>The state of the slot's power controller. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="PowerOn"></a><a id="poweron"></a><a id="POWERON"></a><b>PowerOn</b>
+### -field PowerOn
 
 <dd>
 <p>The power is on.</p>
 </dd>
 
-### -field <a id="PowerOff"></a><a id="poweroff"></a><a id="POWEROFF"></a><b>PowerOff</b>
+### -field PowerOff
 
 <dd>
 <p>The power is off.</p>
@@ -179,25 +179,25 @@ typedef union _PCI_EXPRESS_SLOT_CONTROL_REGISTER {
 </dl>
 </dd>
 
-### -field <b>ElectromechanicalLockControl</b>
+### -field ElectromechanicalLockControl
 
 <dd>
 <p>This member always contains zero.</p>
 </dd>
 
-### -field <b>DataLinkStateChangeEnable</b>
+### -field DataLinkStateChangeEnable
 
 <dd>
 <p>A single bit that indicates that notification is enabled for the slot for changes to the data link layer active bit of the link status register of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>Rsvd</b>
+### -field Rsvd
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>A USHORT representation of the contents of the PCI_EXPRESS_SLOT_CONTROL_REGISTER structure.</p>

@@ -56,19 +56,19 @@ typedef struct _GPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>BankId</b>
+### -field BankId
 
 <dd>
 <p>The identifier for the bank of GPIO pins that contains the pins to be cleared. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.</p>
 </dd>
 
-### -field <b>ClearActiveMask</b>
+### -field ClearActiveMask
 
 <dd>
 <p>A 64-bit mask that indicates which interrupts to clear in the specified bank. A bit in the mask that is set to 1 identifies a pin that is configured as an interrupt and that is to be cleared. All other bits in the mask are 0. If N is the number of pins in this bank, the pins are numbered 0 to N–1. Bit 0 (the least significant bit) in the mask represents pin 0, bit 1 represents pin 1, and so on.</p>
 </dd>
 
-### -field <b>FailedClearMask</b>
+### -field FailedClearMask
 
 <dd>
 <p>A 64-bit mask that identifies the GPIO pins that could not be cleared. If the GPIO controller driver fails to clear a bit that is indicated in the <b>ClearActiveMask</b> member, the driver sets the corresponding bit in the <b>FailedClearMask</b> member to mark the failure. If all the bits specified in <b>ClearActiveMask</b> are successfully cleared, the driver sets <b>FailedClearMask</b> to zero.</p>

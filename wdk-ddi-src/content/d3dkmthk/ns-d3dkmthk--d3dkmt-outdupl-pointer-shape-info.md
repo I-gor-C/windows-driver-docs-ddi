@@ -58,23 +58,23 @@ typedef struct _D3DKMT_OUTDUPL_POINTER_SHAPE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd></dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd></dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd></dd>
 
-### -field <b>Pitch</b>
+### -field Pitch
 
 <dd></dd>
 
-### -field <b>HotSpot</b>
+### -field HotSpot
 
 <dd></dd>
 </dl>

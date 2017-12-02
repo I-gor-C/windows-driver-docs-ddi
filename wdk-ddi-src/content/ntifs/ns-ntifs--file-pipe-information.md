@@ -7,7 +7,7 @@ old-location: ifsk\file_pipe_information.htm
 old-project: ifsk
 ms.assetid: d38b9f36-27f1-47f1-a469-18ddb6f5b2c1
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION, *PFILE_PIPE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef struct _FILE_PIPE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>ReadMode</b>
+### -field ReadMode
 
 <dd>
 <p>One of the following values.</p>
@@ -78,7 +78,7 @@ typedef struct _FILE_PIPE_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>CompletionMode</b>
+### -field CompletionMode
 
 <dd>
 <p>One of the following values.</p>

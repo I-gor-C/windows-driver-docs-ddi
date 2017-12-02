@@ -58,31 +58,31 @@ typedef struct _SM_SendTEST_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>HbaPortWWN</b>
+### -field HbaPortWWN
 
 <dd>
 <p>The local HBA port worldwide name (WWN).</p>
 </dd>
 
-### -field <b>DestWWN</b>
+### -field DestWWN
 
 <dd>
 <p>The remote HBA port worldwide name (WWN) to which the command will be sent.</p>
 </dd>
 
-### -field <b>DestFCID</b>
+### -field DestFCID
 
 <dd>
 <p>The address identifier of the remote port.</p>
 </dd>
 
-### -field <b>ReqBufferSize</b>
+### -field ReqBufferSize
 
 <dd>
 <p>The request buffer size.</p>
 </dd>
 
-### -field <b>ReqBuffer</b>
+### -field ReqBuffer
 
 <dd>
 <p>The request buffer data.</p>

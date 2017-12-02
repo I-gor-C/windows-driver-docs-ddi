@@ -56,19 +56,19 @@ typedef struct _MSiSCSI_RedirectPortalInfoClass {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueAdapterId</b>
+### -field UniqueAdapterId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID).</p>
 </dd>
 
-### -field <b>SessionCount</b>
+### -field SessionCount
 
 <dd>
 <p>The number of sessions for which this structure contains information.</p>
 </dd>
 
-### -field <b>RedirectSessionList</b>
+### -field RedirectSessionList
 
 <dd>
 <p>An array of structures that contains as many ISCSI_RedirectSessionInfo structures as specified in the connection count.</p>

@@ -57,19 +57,19 @@ VOID VideoPortAcquireSpinLock(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in, out]
+### -param HwDeviceExtension [in, out]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>SpinLock</i> [in]
+### -param SpinLock [in]
 
 <dd>
 <p>Pointer to a memory location that contains the spin lock.</p>
 </dd>
 
-### -param <i>OldIrql</i> [out]
+### -param OldIrql [out]
 
 <dd>
 <p>Pointer to a memory location that will receive the current IRQL.</p>

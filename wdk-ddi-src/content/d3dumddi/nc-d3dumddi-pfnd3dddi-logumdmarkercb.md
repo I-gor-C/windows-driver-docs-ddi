@@ -58,13 +58,13 @@ _Check_return_ HRESULT APIENTRY CALLBACK* pfnLogUMDMarkerCb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pLogUMDMarker</i> [in]
+### -param pLogUMDMarker [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicb-logumdmarker.md">D3DDDICB_LOGUMDMARKER</a> structure that indicates the location of an ETW marker event that is defined by the user-mode display driver.</p>

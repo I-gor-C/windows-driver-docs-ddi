@@ -61,43 +61,43 @@ typedef enum _MEMORY_CACHING_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="MmNonCached"></a><a id="mmnoncached"></a><a id="MMNONCACHED"></a><b>MmNonCached</b>
+### -field MmNonCached
 
 <dd>
 <p>The requested memory should not be cached by the processor.</p>
 </dd>
 
-### -field <a id="MmCached"></a><a id="mmcached"></a><a id="MMCACHED"></a><b>MmCached</b>
+### -field MmCached
 
 <dd>
 <p>The processor should cache the requested memory.</p>
 </dd>
 
-### -field <a id="MmWriteCombined"></a><a id="mmwritecombined"></a><a id="MMWRITECOMBINED"></a><b>MmWriteCombined</b>
+### -field MmWriteCombined
 
 <dd>
 <p>The requested memory should not be cached by the processor, but writes to the memory can be combined by the processor.</p>
 </dd>
 
-### -field <a id="MmHardwareCoherentCached"></a><a id="mmhardwarecoherentcached"></a><a id="MMHARDWARECOHERENTCACHED"></a><b>MmHardwareCoherentCached</b>
+### -field MmHardwareCoherentCached
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="MmNonCachedUnordered"></a><a id="mmnoncachedunordered"></a><a id="MMNONCACHEDUNORDERED"></a><b>MmNonCachedUnordered</b>
+### -field MmNonCachedUnordered
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="MmUSWCCached"></a><a id="mmuswccached"></a><a id="MMUSWCCACHED"></a><b>MmUSWCCached</b>
+### -field MmUSWCCached
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="MmMaximumCacheType"></a><a id="mmmaximumcachetype"></a><a id="MMMAXIMUMCACHETYPE"></a><b>MmMaximumCacheType</b>
+### -field MmMaximumCacheType
 
 <dd>
 <p>Reserved for system use.</p>

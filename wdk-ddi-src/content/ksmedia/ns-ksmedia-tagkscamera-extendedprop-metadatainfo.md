@@ -55,7 +55,7 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_METADATAINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>BufferAlignment</b>
+### -field BufferAlignment
 
 <dd>
 <p>The required alignment for the metadata buffer.</p>
@@ -94,7 +94,7 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_METADATAINFO {
 </ul>
 </dd>
 
-### -field <b>MaxMetadataBufferSize</b>
+### -field MaxMetadataBufferSize
 
 <dd>
 <p>The size of the metadata buffer.</p>

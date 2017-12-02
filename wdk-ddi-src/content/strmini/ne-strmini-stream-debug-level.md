@@ -61,43 +61,43 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="DebugLevelFatal"></a><a id="debuglevelfatal"></a><a id="DEBUGLEVELFATAL"></a><b>DebugLevelFatal</b>
+### -field DebugLevelFatal
 
 <dd>
 <p>Display only information about nonrecoverable system failure.</p>
 </dd>
 
-### -field <a id="DebugLevelError"></a><a id="debuglevelerror"></a><a id="DEBUGLEVELERROR"></a><b>DebugLevelError</b>
+### -field DebugLevelError
 
 <dd>
 <p>Display information about serious but recoverable error.</p>
 </dd>
 
-### -field <a id="DebugLevelWarning"></a><a id="debuglevelwarning"></a><a id="DEBUGLEVELWARNING"></a><b>DebugLevelWarning</b>
+### -field DebugLevelWarning
 
 <dd>
 <p>Display warnings</p>
 </dd>
 
-### -field <a id="DebugLevelInfo"></a><a id="debuglevelinfo"></a><a id="DEBUGLEVELINFO"></a><b>DebugLevelInfo</b>
+### -field DebugLevelInfo
 
 <dd>
 <p>Display status information. System must remain responsive.</p>
 </dd>
 
-### -field <a id="DebugLevelTrace"></a><a id="debugleveltrace"></a><a id="DEBUGLEVELTRACE"></a><b>DebugLevelTrace</b>
+### -field DebugLevelTrace
 
 <dd>
 <p>Display trace information. System need not remain responsive</p>
 </dd>
 
-### -field <a id="DebugLevelVerbose"></a><a id="debuglevelverbose"></a><a id="DEBUGLEVELVERBOSE"></a><b>DebugLevelVerbose</b>
+### -field DebugLevelVerbose
 
 <dd>
 <p>Display verbose trace information. System need not remain responsive.</p>
 </dd>
 
-### -field <a id="DebugLevelMaximum"></a><a id="debuglevelmaximum"></a><a id="DEBUGLEVELMAXIMUM"></a><b>DebugLevelMaximum</b>
+### -field DebugLevelMaximum
 
 <dd>
 <p>Display maximum information.</p>

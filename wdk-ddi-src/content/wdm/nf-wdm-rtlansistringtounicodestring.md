@@ -57,19 +57,19 @@ NTSTATUS RtlAnsiStringToUnicodeString(
 ## -parameters
 <dl>
 
-### -param <i>DestinationString</i> [in, out]
+### -param DestinationString [in, out]
 
 <dd>
 <p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure to hold the converted Unicode string. If <i>AllocateDestinationString</i> is <b>TRUE</b>, the routine allocates a new buffer to hold the string data, and updates the <b>Buffer</b> member of <i>DestinationString</i> to point to the new buffer. Otherwise, the routine uses the currently-specified buffer to hold the string.</p>
 </dd>
 
-### -param <i>SourceString</i> [in]
+### -param SourceString [in]
 
 <dd>
 <p>Pointer to the ANSI string to be converted to Unicode.</p>
 </dd>
 
-### -param <i>AllocateDestinationString</i> [in]
+### -param AllocateDestinationString [in]
 
 <dd>
 <p>Specifies if this routine should allocate the buffer space for the destination string. If it does, the caller must deallocate the buffer by calling <a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>.</p>

@@ -64,67 +64,67 @@ typedef struct _D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030 {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnCloseCommandList</b>
+### -field pfnCloseCommandList
 
 <dd>
 <p>Close command list.</p>
 </dd>
 
-### -field <b>pfnResetCommandList</b>
+### -field pfnResetCommandList
 
 <dd>
 <p>Reset command list.</p>
 </dd>
 
-### -field <b>pfnDiscardResource</b>
+### -field pfnDiscardResource
 
 <dd>
 <p>Discard resource.</p>
 </dd>
 
-### -field <b>pfnSetMarker</b>
+### -field pfnSetMarker
 
 <dd>
 <p>Set marker.</p>
 </dd>
 
-### -field <b>pfnSetPredication</b>
+### -field pfnSetPredication
 
 <dd>
 <p>Set predication.</p>
 </dd>
 
-### -field <b>pfnBeginQuery</b>
+### -field pfnBeginQuery
 
 <dd>
 <p>Begin query.</p>
 </dd>
 
-### -field <b>pfnEndQuery</b>
+### -field pfnEndQuery
 
 <dd>
 <p>End query.</p>
 </dd>
 
-### -field <b>pfnResolveQueryData</b>
+### -field pfnResolveQueryData
 
 <dd>
 <p>Resolve query data.</p>
 </dd>
 
-### -field <b>pfnResourceBarrier</b>
+### -field pfnResourceBarrier
 
 <dd>
 <p>Resource barrier.</p>
 </dd>
 
-### -field <b>pfnDecodeFrame</b>
+### -field pfnDecodeFrame
 
 <dd>
 <p>Decode frame.</p>
 </dd>
 
-### -field <b>pfnSetProtectedResourceSession</b>
+### -field pfnSetProtectedResourceSession
 
 <dd>
 <p>Set protected resource session.</p>

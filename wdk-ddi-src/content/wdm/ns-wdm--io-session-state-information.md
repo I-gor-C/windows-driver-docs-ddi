@@ -57,14 +57,14 @@ typedef struct _IO_SESSION_STATE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>SessionId</b>
+### -field SessionId
 
 <dd>
 <p>
       The session ID. This member contains the <a href="http://go.microsoft.com/fwlink/p/?linkid=155045">Terminal Services</a> session identifier of a user session. The <a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a> routine sets this member to the session ID of the session that is represented by the session object that the <i>ContainerObject</i> parameter of <b>IoGetContainerInformation</b> points to.</p>
 </dd>
 
-### -field <b>SessionState</b>
+### -field SessionState
 
 <dd>
 <p>The current state of the user session that is identified by <i>SessionId</i>. This member is set to one of the following <a href="..\wdm\ne-wdm--io-session-state.md">IO_SESSION_STATE</a> enumeration constants:</p>
@@ -80,7 +80,7 @@ typedef struct _IO_SESSION_STATE_INFORMATION {
 </ul>
 </dd>
 
-### -field <b>LocalSession</b>
+### -field LocalSession
 
 <dd>
 <p>Indicates whether the user session identified by <i>SessionId</i> is a local session. If <b>TRUE</b>, the user is logged on locally. If <b>FALSE</b>, the user is logged on remotely. This member is valid only if the session is connected. The following <b>IO_SESSION_STATE</b> enumeration constants represent session states in which the session is connected:</p>

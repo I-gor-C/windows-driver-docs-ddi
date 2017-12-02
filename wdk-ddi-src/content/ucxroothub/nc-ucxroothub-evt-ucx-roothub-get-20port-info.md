@@ -61,16 +61,16 @@ typedef EVT_UCX_ROOTHUB_GET_20PORT_INFO PEVT_UCX_ROOTHUB_GET_20PORT_INFO;
 ## -parameters
 <dl>
 
-### -param <i>UcxRootHub</i> [in]
+### -param UcxRootHub [in]
 
 <dd>
 <p>A handle to a UCX object that represents the root hub.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
-<p>A structure of type <a href="buses._roothub_20port_info">_ROOTHUB_20PORT_INFO</a>.</p>
+<p>A structure of type <a href="..\ucxroothub\ns-ucxroothub--roothub-20port-info.md">_ROOTHUB_20PORT_INFO</a>.</p>
 </dd>
 </dl>
 
@@ -81,7 +81,7 @@ typedef EVT_UCX_ROOTHUB_GET_20PORT_INFO PEVT_UCX_ROOTHUB_GET_20PORT_INFO;
 <p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxroothubcreate">UcxRootHubCreate</a>
  method.</p>
 
-<p> The <b>PortInfoArray</b> array of the <a href="buses._roothub_20ports_info">_ROOTHUB_20PORTS_INFO</a> structure
+<p> The <b>PortInfoArray</b> array of the <a href="..\ucxroothub\ns-ucxroothub--roothub-20ports-info.md">_ROOTHUB_20PORTS_INFO</a> structure
     contains a list of USB 2.0 ports that the root hub supports.</p>
 
 <p>The client driver returns completion status in <i>Request</i> and in the USBD_STATUS
@@ -128,7 +128,7 @@ typedef EVT_UCX_ROOTHUB_GET_20PORT_INFO PEVT_UCX_ROOTHUB_GET_20PORT_INFO;
 ## -see-also
 <dl>
 <dt>
-<a href="buses._roothub_20ports_info">_ROOTHUB_20PORTS_INFO</a>
+<a href="..\ucxroothub\ns-ucxroothub--roothub-20ports-info.md">_ROOTHUB_20PORTS_INFO</a>
 </dt>
 </dl>
 <p> </p>

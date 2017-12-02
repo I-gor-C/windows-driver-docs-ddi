@@ -59,31 +59,31 @@ PSCSI_REQUEST_BLOCK ScsiPortGetSrb(
 ## -parameters
 <dl>
 
-### -param <i>DeviceExtension</i> [in]
+### -param DeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's per-HBA storage area.</p>
 </dd>
 
-### -param <i>PathId</i> [in]
+### -param PathId [in]
 
 <dd>
 <p>Identifies the SCSI bus.</p>
 </dd>
 
-### -param <i>TargetId</i> [in]
+### -param TargetId [in]
 
 <dd>
 <p>Identifies the target controller or device on the bus.</p>
 </dd>
 
-### -param <i>Lun</i> [in]
+### -param Lun [in]
 
 <dd>
 <p>Identifies the logical unit number of the target device.</p>
 </dd>
 
-### -param <i>QueueTag</i> [in]
+### -param QueueTag [in]
 
 <dd>
 <p>Specifies the queue tag if the miniport driver handles tagged requests; SP_UNTAGGED indicates that the request is not tagged.</p>

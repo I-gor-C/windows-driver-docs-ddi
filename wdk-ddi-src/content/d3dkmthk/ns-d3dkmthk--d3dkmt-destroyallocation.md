@@ -57,25 +57,25 @@ typedef struct _D3DKMT_DESTROYALLOCATION {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that the resource, allocations, or both are associated with.</p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the resource that is associated with the allocations when releasing a resource. If a resource handle is specified, all of the allocations that are associated with it are automatically released.</p>
 </dd>
 
-### -field <b>phAllocationList</b>
+### -field phAllocationList
 
 <dd>
 <p>[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations. If any allocation in the list is associated with a resource, all of the allocations in the list must also be associated with the same resource. If the OpenGL ICD sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, the ICD must set <b>phAllocationList</b> to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>AllocationCount</b>
+### -field AllocationCount
 
 <dd>
 <p>[in] The number of allocations in the array that <b>phAllocationList</b> specifies. If the OpenGL ICD sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, the <b>AllocationCount</b> member is ignored by the OpenGL runtime.</p>

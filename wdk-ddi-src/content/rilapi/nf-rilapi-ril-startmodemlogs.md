@@ -7,7 +7,7 @@ old-location: netvista\ril_startmodemlogs.htm
 old-project: netvista
 ms.assetid: 6f9b79a0-0947-4f69-b2b6-f35ad2ee70d5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_StartModemLogs
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,11 +58,11 @@ HRESULT  RIL_StartModemLogs(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 </dl>

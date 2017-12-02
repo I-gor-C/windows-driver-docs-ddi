@@ -57,19 +57,19 @@ ULONG ExInterlockedAddUlong(
 ## -parameters
 <dl>
 
-### -param <i>Addend</i> [in, out]
+### -param Addend [in, out]
 
 <dd>
 <p>A pointer to an unsigned long integer whose value is to be adjusted by the <i>Increment</i> value.</p>
 </dd>
 
-### -param <i>Increment</i> [in]
+### -param Increment [in]
 
 <dd>
 <p>Specifies an unsigned long integer to be added. </p>
 </dd>
 
-### -param <i>Lock</i> [in, out]
+### -param Lock [in, out]
 
 <dd>
 <p>A pointer to a spin lock to be used to synchronize access to the <i>Addend</i>. </p>

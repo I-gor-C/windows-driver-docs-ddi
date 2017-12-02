@@ -59,32 +59,32 @@ typedef struct _HIDP_DEVICE_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>CollectionDesc</b>
+### -field CollectionDesc
 
 <dd>
 <p>An array of  <a href="..\hidpddi\ns-hidpddi--hidp-collection-desc.md">HIDP_COLLECTION_DESC</a> structure that contains the collection descriptors.</p>
 </dd>
 
-### -field <b>CollectionDescLength</b>
+### -field CollectionDescLength
 
 <dd>
 <p>The number of elements in the array of the collection descriptors.</p>
 </dd>
 
-### -field <b>ReportIDs</b>
+### -field ReportIDs
 
 <dd>
 <p>An array of <a href="..\hidpddi\ns-hidpddi--hidp-report-ids.md">HIDP_REPORT_IDS</a> structures report ID information for a report descriptor. 
 </p>
 </dd>
 
-### -field <b>ReportIDsLength</b>
+### -field ReportIDsLength
 
 <dd>
 <p>The number of elements in the length of the array of report IDs.</p>
 </dd>
 
-### -field <b>Dbg</b>
+### -field Dbg
 
 <dd>
 <p>A <a href="..\hidpddi\ns-hidpddi--hidp-getcoldesc-dbg.md">HIDP_GETCOLDESC_DBG</a> structure that contains the error code indicating the failure in parsing the report 

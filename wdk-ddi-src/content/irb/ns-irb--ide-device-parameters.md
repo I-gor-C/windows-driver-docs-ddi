@@ -75,43 +75,43 @@ typedef struct _IDE_DEVICE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Indicates the size of the <i>Device</i> parameters structure. The miniport driver should verify that sizeof(IDE_DEVICE_PARAMETERS) is less than or equal to the <b>Version</b> field.</p>
 </dd>
 
-### -field <b>IdeDeviceType</b>
+### -field IdeDeviceType
 
 <dd>
 <p>Indicates the type of the device. The allowed device types are <i>DeviceIsAta</i> for ATA devices, <i>DeviceIsAtapi</i> for ATAPI devices, and <i>DeviceNotExist</i> if no device was found at that address. The other fields in this structure are not valid if the <b>IdeDeviceType</b> is set to <i>DeviceNotExist</i>.</p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>Specifies the target ID of the device.</p>
 </dd>
 
-### -field <b>MaximumLun</b>
+### -field MaximumLun
 
 <dd>
 <p>The miniport driver must update this field to indicate the maximum logical unit number supported by this device. By default, the member is set to 0 indicating the existence of just one LUN.</p>
 </dd>
 
-### -field <b>NumberOfOverlappedRequests</b>
+### -field NumberOfOverlappedRequests
 
 <dd>
 <p>The miniport driver must update this field to specify the number of overlapped requests it can handle for this device. By default, the member is set to 1.</p>
 </dd>
 
-### -field <b>MaxBlockXfer</b>
+### -field MaxBlockXfer
 
 <dd>
 <p>Specifies the number of sectors in a block of data to be transferred. This value applies to the data blocks used in ATA block transfer commands such as Read Multiple (0xC4), Write Multiple (0xC5). For more information about the ReadMultiple and WriteMultiple commands, see the <i>ATA Specification</i>.</p>
 </dd>
 
-### -field <b>DeviceCharacteristics</b>
+### -field DeviceCharacteristics
 
 <dd>
 <p>Specifies the device characteristics. The table below lists the characteristics that could be set in this member. The high byte of this member is opaque and shall not be changed by the ATA miniport.</p>
@@ -164,49 +164,49 @@ typedef struct _IDE_DEVICE_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>AddressTranslation</b>
+### -field AddressTranslation
 
 <dd>
 <p>Contains an enumeration value of type <a href="..\irb\ne-irb-ata-address-translation.md">ATA_ADDRESS_TRANSLATION</a> that specifies the sort of address translation used during data transfers.</p>
 </dd>
 
-### -field <b>MaxLba</b>
+### -field MaxLba
 
 <dd>
 <p>Specifies the maximum user-addressable logical block address (LBA). This member is defined when <b>AddressTranslation</b> is equal to either <b>LbaMode</b> or <b>Lba48BitMode</b>.</p>
 </dd>
 
-### -field <b>Chs</b>
+### -field Chs
 
 <dd>
 <p>Specifies the drive geometry with the values for the number of cylinders, heads per cylinder, and the sectors per track. This member is defined when <b>AddressTranslation</b> is equal to <b>ChsMode</b>.</p>
 </dd>
 
-### -field <b>BytesPerLogicalSector</b>
+### -field BytesPerLogicalSector
 
 <dd>
 <p>This member specifies the number of bytes per logical sector (LBA) for the given device.</p>
 </dd>
 
-### -field <b>BytesPerPhysicalSector</b>
+### -field BytesPerPhysicalSector
 
 <dd>
 <p>This member specifies the number of bytes per physical sector (that is, the smallest amount of data that the device can physically write internally) for the given device.</p>
 </dd>
 
-### -field <b>BytesOffsetForSectorAlignment</b>
+### -field BytesOffsetForSectorAlignment
 
 <dd>
 <p>This member specifies the location of sector 0 within the first physical sector as defined in the ATA specification represented in bytes.</p>
 </dd>
 
-### -field <b>TransferModeSupported</b>
+### -field TransferModeSupported
 
 <dd>
 <p>Contains a bitmap that indicates the supported transfer modes.</p>
 </dd>
 
-### -field <b>TransferModeSelected</b>
+### -field TransferModeSelected
 
 <dd>
 <p>Indicates the selected transfer modes on the device. The miniport driver must set this member.</p>

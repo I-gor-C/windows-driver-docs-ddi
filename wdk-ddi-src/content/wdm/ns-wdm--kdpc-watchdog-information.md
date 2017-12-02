@@ -59,31 +59,31 @@ typedef struct _KDPC_WATCHDOG_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>DpcTimeLimit</b>
+### -field DpcTimeLimit
 
 <dd>
 <p>Time limit for a single, current deferred procedure call. If DPC time-out has been disabled, this value is set to 0.</p>
 </dd>
 
-### -field <b>DpcTimeCount</b>
+### -field DpcTimeCount
 
 <dd>
 <p>Time remaining for the current deferred procedure call, if DPC time-out has been enabled.</p>
 </dd>
 
-### -field <b>DpcWatchdogLimit</b>
+### -field DpcWatchdogLimit
 
 <dd>
 <p>Total time limit permitted for a sequence of deferred procedure calls. If DPC watchdog has been disabled, this value is set to zero.</p>
 </dd>
 
-### -field <b>DpcWatchdogCount</b>
+### -field DpcWatchdogCount
 
 <dd>
 <p>Time value remaining for the current sequence of deferred procedure calls, if enabled.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>

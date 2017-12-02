@@ -7,7 +7,7 @@ old-location: netvista\riluicccmdparametersparammask_2.htm
 old-project: netvista
 ms.assetid: 56b6b8e6-529d-4480-bce8-ae94d09d1643
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILUICCCMDPARAMETERSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_SCP_PARAM1"></a><a id="ril_param_scp_param1"></a><b>RIL_PARAM_SCP_PARAM1</b>
+### -field RIL_PARAM_SCP_PARAM1
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SCP_PARAM2"></a><a id="ril_param_scp_param2"></a><b>RIL_PARAM_SCP_PARAM2</b>
+### -field RIL_PARAM_SCP_PARAM2
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SCP_PARAM3"></a><a id="ril_param_scp_param3"></a><b>RIL_PARAM_SCP_PARAM3</b>
+### -field RIL_PARAM_SCP_PARAM3
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SCP_ALL"></a><a id="ril_param_scp_all"></a><b>RIL_PARAM_SCP_ALL</b>
+### -field RIL_PARAM_SCP_ALL
 
 <dd></dd>
 </dl>

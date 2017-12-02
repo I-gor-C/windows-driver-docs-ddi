@@ -58,13 +58,13 @@ typedef struct _D3DHAL_DP2SETINDICES {
 ## -struct-fields
 <dl>
 
-### -field <b>dwVBHandle</b>
+### -field dwVBHandle
 
 <dd>
 <p>Specifies the surface handle associated with this surface through a call to <a href="display.d3dcreatesurfaceex">D3dCreateSurfaceEx</a>.</p>
 </dd>
 
-### -field <b>dwStride</b>
+### -field dwStride
 
 <dd>
 <p>Specifies the size of the indices contained in the index buffer and has the value 2 if the indices are 16-bit, or 4 if the indices are 32-bit quantities.</p>

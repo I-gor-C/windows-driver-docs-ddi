@@ -59,23 +59,23 @@ typedef struct _STREAM_METHOD_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>MethodSetID</b>
+### -field MethodSetID
 
 <dd></dd>
 
-### -field <b>Method</b>
+### -field Method
 
 <dd></dd>
 
-### -field <b>MethodInfo</b>
+### -field MethodInfo
 
 <dd></dd>
 
-### -field <b>MethodInputSize</b>
+### -field MethodInputSize
 
 <dd></dd>
 
-### -field <b>MethodOutputSize</b>
+### -field MethodOutputSize
 
 <dd></dd>
 </dl>

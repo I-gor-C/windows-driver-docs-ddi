@@ -56,15 +56,15 @@ typedef enum _D3DKMDT_GTFCOMPLIANCE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_GTF_UNINITIALIZED"></a><a id="d3dkmdt_gtf_uninitialized"></a><b>D3DKMDT_GTF_UNINITIALIZED</b>
+### -field D3DKMDT_GTF_UNINITIALIZED
 
 <dd></dd>
 
-### -field <a id="D3DKMDT_GTF_COMPLIANT"></a><a id="d3dkmdt_gtf_compliant"></a><b>D3DKMDT_GTF_COMPLIANT</b>
+### -field D3DKMDT_GTF_COMPLIANT
 
 <dd></dd>
 
-### -field <a id="D3DKMDT_GTF_NOTCOMPLIANT"></a><a id="d3dkmdt_gtf_notcompliant"></a><b>D3DKMDT_GTF_NOTCOMPLIANT</b>
+### -field D3DKMDT_GTF_NOTCOMPLIANT
 
 <dd></dd>
 </dl>

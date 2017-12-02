@@ -60,38 +60,38 @@ HRESULT EnumConstrainedOptions(
 ## -parameters
 <dl>
 
-### -param <i>poemuiobj</i> [in]
+### -param poemuiobj [in]
 
 <dd>
 <p>Pointer to the current context, an <a href="..\printoem\ns-printoem--oemuiobj.md">OEMUIOBJ</a> structure.</p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>Is reserved and must be set to zero.</p>
 </dd>
 
-### -param <i>pszFeatureKeyword</i> [in]
+### -param pszFeatureKeyword [in]
 
 <dd>
 <p>Pointer to a caller-supplied buffer containing the single feature keyword of interest to the caller.</p>
 </dd>
 
-### -param <i>pmszConstrainedOptionList</i> [out]
+### -param pmszConstrainedOptionList [out]
 
 <dd>
 <p>Pointer to a caller-supplied buffer that receives the list of option keywords, in MULTI_SZ format, for this feature. Each keyword represents an option that is constrained in the current configuration. </p>
 <p>Set this parameter to <b>NULL</b> to simply query for the size (*<i>pcbNeeded</i>) of the constrained option list without having the list filled in.</p>
 </dd>
 
-### -param <i>cbSize</i> [in]
+### -param cbSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer pointed to by <i>pmszConstrainedOptionList</i>. </p>
 </dd>
 
-### -param <i>pcbNeeded</i> [out]
+### -param pcbNeeded [out]
 
 <dd>
 <p>Pointer to a memory location that receives the actual size, in bytes, of the constrained option list.</p>
@@ -111,7 +111,7 @@ HRESULT EnumConstrainedOptions(
 
 <p>The <i>poemuiobj</i> parameter pointed to an invalid context object.</p>
 
-<p>The stickiness of the feature did not match that of the context object pointed to by <i>peomuiobj</i>. (See <a href="NULL">Replacing Driver-Supplied Property Sheet Pages</a>.)</p><dl>
+<p>The stickiness of the feature did not match that of the context object pointed to by <i>peomuiobj</i>. (See <a href="https://msdn.microsoft.com/b7f79841-f82c-4a60-9c2f-58772a65a5eb">Replacing Driver-Supplied Property Sheet Pages</a>.)</p><dl>
 <dt><b>E_FAIL</b></dt>
 </dl><p>The method failed.</p><dl>
 <dt><b>E_NOTIMPL</b></dt>
@@ -120,7 +120,7 @@ HRESULT EnumConstrainedOptions(
 <p> </p>
 
 ## -remarks
-<p>This method is supported only for Windows XP Pscript5 UI plug-ins that fully replace the core driver's standard UI pages, and is supported only during the UI plug-in's <a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a> and <a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a> functions, and their property sheet callback routines. See <a href="NULL">Replacing Driver-Supplied Property Sheet Pages</a> for more information.</p>
+<p>This method is supported only for Windows XP Pscript5 UI plug-ins that fully replace the core driver's standard UI pages, and is supported only during the UI plug-in's <a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a> and <a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a> functions, and their property sheet callback routines. See <a href="https://msdn.microsoft.com/b7f79841-f82c-4a60-9c2f-58772a65a5eb">Replacing Driver-Supplied Property Sheet Pages</a> for more information.</p>
 
 <p>To reduce the need to make two calls per data access, pass the method an output buffer of a fixed size (1 KB, for example), and then check the function return value. If the method returns S_OK, the buffer already contains the data of interest. If the method returns E_OUTOFMEMORY, the value in *<i>pcbNeeded</i> is the buffer size needed to hold the data of interest. The caller should then allocate a buffer of that larger size and proceed with a second call to the method.</p>
 

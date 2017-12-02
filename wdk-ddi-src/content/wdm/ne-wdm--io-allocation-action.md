@@ -57,19 +57,19 @@ typedef enum _IO_ALLOCATION_ACTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="KeepObject"></a><a id="keepobject"></a><a id="KEEPOBJECT"></a><b>KeepObject</b>
+### -field KeepObject
 
 <dd>
 <p>Indicates that you want the driver to retain ownership of the adapter or controller object.</p>
 </dd>
 
-### -field <a id="DeallocateObject"></a><a id="deallocateobject"></a><a id="DEALLOCATEOBJECT"></a><b>DeallocateObject</b>
+### -field DeallocateObject
 
 <dd>
 <p>Indicates that you do not want the driver to retain ownership of the adapter or controller object.</p>
 </dd>
 
-### -field <a id="DeallocateObjectKeepRegisters"></a><a id="deallocateobjectkeepregisters"></a><a id="DEALLOCATEOBJECTKEEPREGISTERS"></a><b>DeallocateObjectKeepRegisters</b>
+### -field DeallocateObjectKeepRegisters
 
 <dd>
 <p><u>For adapter objects only.</u> Indicates that you do not want the driver to retain ownership of the adapter object, but you do want the driver to retain ownership of the allocated map registers. </p>

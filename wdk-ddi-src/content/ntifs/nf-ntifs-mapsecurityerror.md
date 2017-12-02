@@ -7,7 +7,7 @@ old-location: ifsk\mapsecurityerror.htm
 old-project: ifsk
 ms.assetid: 899b7d6e-a17b-4030-9512-591b003ca6b2
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: MapSecurityError
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ NTSTATUS SEC_ENTRY MapSecurityError(
 ## -parameters
 <dl>
 
-### -param <i>Error</i> [in]
+### -param Error [in]
 
 <dd>
 <p>The security interface SECURITY_STATUS status code to be mapped.</p>

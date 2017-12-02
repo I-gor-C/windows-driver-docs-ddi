@@ -61,49 +61,49 @@ HBA_STATUS HBA_API HBA_SendRPS(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the local HBA through which the request is sent. </p>
 </dd>
 
-### -param <i>hbaPortWWN</i> [in]
+### -param hbaPortWWN [in]
 
 <dd>
 <p>Contains a 64-bit worldwide name (WWN) that uniquely identifies the local port through which the RPS request is sent. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
-### -param <i>agent_wwn</i> [in]
+### -param agent_wwn [in]
 
 <dd>
 <p>Contains, when non-<b>NULL</b>, a 64-bit WWN that uniquely identifies the port to query for the status of the port referenced by <i>object_wwn. </i>If this member is <b>NULL</b>, it is ignored, and the domain controller identified by <i>agent_domain </i>is queried. </p>
 </dd>
 
-### -param <i>agent_domain</i> [in]
+### -param agent_domain [in]
 
 <dd>
 <p>Contains the domain number for the domain controller to query for the status of the port referenced by <i>object_wwn. </i>If <i>agent_wwn </i>is non-<b>NULL</b>, this member is ignored.</p>
 </dd>
 
-### -param <i>object_wwn</i> [in]
+### -param object_wwn [in]
 
 <dd>
 <p>Contains a 64-bit WWN that uniquely identifies the port for which status information is retrieved. If this member is <b>NULL</b>, it is ignored, and status information is retrieved for the port identified by <i>object_port_number</i>. </p>
 </dd>
 
-### -param <i>object_port_number</i> [in]
+### -param object_port_number [in]
 
 <dd>
 <p>Contains the relative port number of the port for which status information is retrieved. The meaning of the relative port number is defined by the hardware vendor that contains the port, and it is the responsibility of the software that receives the status query to interpret this number. If <i>object_wwn </i>is non-<b>NULL</b>, this member is ignored.</p>
 </dd>
 
-### -param <i>pRspBuffer</i> [out]
+### -param pRspBuffer [out]
 
 <dd>
 <p>Pointer to a buffer that receives the results of the RPS request, if the request succeeds. If the destination port or domain controller rejects the request, this buffer holds the link service reject (LS_RJT) payload data. If the amount of returned data exceeds the buffer size specified in <i>RspBufferSize</i>, the data is truncated to the buffer size<i>. </i>The payload data is in big-endian format (higher order bytes are in lower addresses). </p>
 </dd>
 
-### -param <i>RspBufferSize</i> [in, out]
+### -param RspBufferSize [in, out]
 
 <dd>
 <p>On input, indicates the size, in bytes, of the buffer pointed to by <i>pRspBuffer</i>. On return, this member indicates the size, in bytes, of the response data. A buffer size of 56 bytes is sufficient for the largest response. </p>

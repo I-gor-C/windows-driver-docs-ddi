@@ -59,25 +59,25 @@ typedef struct _KSM_BDA_PIN {
 ## -struct-fields
 <dl>
 
-### -field <b>Method</b>
+### -field Method
 
 <dd>
 <p>KSMETHOD structure that describes a method and request type of a method request.</p>
 </dd>
 
-### -field <b>PinId</b>
+### -field PinId
 
 <dd>
 <p>Member of the union in KSM_BDA_PIN that contains the identifier (ID) of a pin factory of a filter.</p>
 </dd>
 
-### -field <b>PinType</b>
+### -field PinType
 
 <dd>
 <p>Member of the union in KSM_BDA_PIN that contains the value that specifies the pin type.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>

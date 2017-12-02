@@ -57,13 +57,13 @@ BOOLEAN VideoPortUnlockPages(
 ## -parameters
 <dl>
 
-### -param <i>hwDeviceExtension</i> 
+### -param hwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>pDma</i> 
+### -param pDma 
 
 <dd>
 <p>Specifies a non-<b>NULL</b> DMA handle. </p>

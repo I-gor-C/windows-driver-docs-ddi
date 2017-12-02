@@ -59,31 +59,31 @@ typedef struct _DOCEVENT_FILTER {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Spooler-supplied size, in bytes, of this structure. The spooler initializes this member to <b>sizeof</b>(DOCEVENT_FILTER).</p>
 </dd>
 
-### -field <b>cElementsAllocated</b>
+### -field cElementsAllocated
 
 <dd>
 <p>Spooler-supplied number of elements in the <b>aDocEventCall</b> array member. The spooler initializes this member to DOCUMENTEVENT_LAST - 1. (The DOCUMENTEVENT_LAST constant is defined in header file Winddiui.h.)</p>
 </dd>
 
-### -field <b>cElementsNeeded</b>
+### -field cElementsNeeded
 
 <dd>
 <p>Driver-supplied total number of elements needed in the <b>aDocEventCall</b> array member. The spooler initializes this member to 0XFFFFFFFF. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>cElementsReturned</b>
+### -field cElementsReturned
 
 <dd>
 <p>Driver-supplied number of DOCUMENTEVENT_<i>XXX </i>events that it placed in the <b>aDocEventCall</b> array member. The spooler initializes this member to 0XFFFFFFFF. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>aDocEventCall</b>
+### -field aDocEventCall
 
 <dd>
 <p>Driver-filled array of DWORDs listing all of the DOCUMENTEVENT_<i>XXX</i> events to which the printer driver will respond. The spooler initializes this member to 0.</p>

@@ -7,7 +7,7 @@ old-location: wdf\iwdfdrivercreatedfile.htm
 old-project: wdf
 ms.assetid: ea74a539-d0a0-41ea-9fe1-8d7880a4187d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

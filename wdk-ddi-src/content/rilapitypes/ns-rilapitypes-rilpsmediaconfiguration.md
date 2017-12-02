@@ -7,7 +7,7 @@ old-location: netvista\rilpsmediaconfiguration_2.htm
 old-project: netvista
 ms.assetid: eb4500cb-de96-4fbe-971c-d7badc6993af
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILPSMEDIACONFIGURATION, RILPSMEDIACONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILPSMEDIACONFIGURATION {
 ## -struct-fields
 <dl>
 
-### -field <b>dwMediaPreference</b>
+### -field dwMediaPreference
 
 <dd></dd>
 
-### -field <b>dwServiceType</b>
+### -field dwServiceType
 
 <dd></dd>
 </dl>

@@ -56,20 +56,20 @@ typedef struct _DXGI_DDI_ARG_GETMULTIPLANEOVERLAYCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the display device (graphics context) for which overlay plane capabilities are needed.</p>
 <p>The Direct3D runtime passed this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when it created the device by calling the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> routine.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based video present network (VidPN) source identification number of the input for which the capabilities are queried.</p>
 </dd>
 
-### -field <b>MultiPlaneOverlayCaps</b>
+### -field MultiPlaneOverlayCaps
 
 <dd>
 <p>[out] The overlay plane capabilities, given as a <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-multiplane-overlay-caps.md">DXGI_DDI_MULTIPLANE_OVERLAY_CAPS</a> structure.</p>

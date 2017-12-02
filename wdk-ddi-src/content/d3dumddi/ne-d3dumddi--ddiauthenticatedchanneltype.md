@@ -55,13 +55,13 @@ typedef enum _DDIAUTHENTICATEDCHANNELTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DDIAUTHENTICATEDCHANNEL_DRIVER_SOFTWARE"></a><a id="ddiauthenticatedchannel_driver_software"></a><b>DDIAUTHENTICATEDCHANNEL_DRIVER_SOFTWARE</b>
+### -field DDIAUTHENTICATEDCHANNEL_DRIVER_SOFTWARE
 
 <dd>
 <p>The value specifies that the authenticated-channel type is software. </p>
 </dd>
 
-### -field <a id="DDIAUTHENTICATEDCHANNEL_DRIVER_HARDWARE"></a><a id="ddiauthenticatedchannel_driver_hardware"></a><b>DDIAUTHENTICATEDCHANNEL_DRIVER_HARDWARE</b>
+### -field DDIAUTHENTICATEDCHANNEL_DRIVER_HARDWARE
 
 <dd>
 <p>The value specifies that the authenticated-channel type is hardware.</p>

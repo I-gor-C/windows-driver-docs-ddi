@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>Describes information about a Universal Serial Bus (USB)  event notification that was 
-		received by using <a href="buses.ioctl_internal_usbfn_bus_event_notification">IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION</a>.
+		received by using <a href="..\usbfnioctl\ni-usbfnioctl-ioctl-internal-usbfn-bus-event-notification.md">IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION</a>.
 		</p>
 
 
@@ -64,45 +64,45 @@ typedef struct _USBFN_NOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Event</b>
+### -field Event
 
 <dd>
-<p>Bus notification indicated by a <a href="buses.usbfn_event">USBFN_EVENT</a>-typed flag.</p>
+<p>Bus notification indicated by a <a href="..\usbfnbase\ne-usbfnbase--usbfn-event.md">USBFN_EVENT</a>-typed flag.</p>
 </dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <dl>
 
-### -field <b>BusSpeed</b>
+### -field BusSpeed
 
 <dd>
-<p>The operating bus speed indicated by <a href="buses.usbfn_bus_speed">USBFN_BUS_SPEED</a>-typed flags.</p>
+<p>The operating bus speed indicated by <a href="..\usbfnbase\ne-usbfnbase--usbfn-bus-speed.md">USBFN_BUS_SPEED</a>-typed flags.</p>
 </dd>
 
-### -field <b>SetupPacket</b>
+### -field SetupPacket
 
 <dd>
 <p>Describes a setup packet in a  <b>USB_DEFAULT_PIPE_SETUP_PACKET</b> structure for a control transfer to or from the default endpoint as indicated by a <b>USB_DEFAULT_PIPE_SETUP_PACKET</b>-typed flag.</p>
 </dd>
 
-### -field <b>ConfigurationValue</b>
+### -field ConfigurationValue
 
 <dd>
 <p>The <b>bConfigurationValue</b> field of a USB configuration descriptor.</p>
 </dd>
 
-### -field <b>PortType</b>
+### -field PortType
 
 <dd>
-<p>Possible port types supported by a function controller indicated by a <a href="buses.usbfn_port_type">USBFN_PORT_TYPE</a>-typed flag.</p>
+<p>Possible port types supported by a function controller indicated by a <a href="..\usbfnbase\ne-usbfnbase--usbfn-port-type.md">USBFN_PORT_TYPE</a>-typed flag.</p>
 </dd>
 
-### -field <b>AlternateInterface</b>
+### -field AlternateInterface
 
 <dd>
-<p>Alternate setting of the interface indicated by <a href="buses.alternate_interface">ALTERNATE_INTERFACE</a>.</p>
+<p>Alternate setting of the interface indicated by <a href="..\usbfnbase\ns-usbfnbase--alternate-interface.md">ALTERNATE_INTERFACE</a>.</p>
 </dd>
 </dl>
 </dd>

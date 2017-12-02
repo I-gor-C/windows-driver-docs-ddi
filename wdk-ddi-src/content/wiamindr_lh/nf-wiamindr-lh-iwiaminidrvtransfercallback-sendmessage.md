@@ -7,7 +7,7 @@ old-location: image\iwiaminidrvtransfercallback_sendmessage.htm
 old-project: image
 ms.assetid: 9C4800E6-0F5F-4895-AD19-635C7F784462
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IWiaMiniDrvTransferCallback, SendMessage, IWiaMiniDrvTransferCallback::SendMessage
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ HRESULT SendMessage(
 ## -parameters
 <dl>
 
-### -param <i>lFlags</i> [in]
+### -param lFlags [in]
 
 <dd>
 <p>Represents flag bits. This parameter is unused and should always be set to zero (0) by the caller.</p>
 </dd>
 
-### -param <i>pWiaTransferParams</i> [in]
+### -param pWiaTransferParams [in]
 
 <dd>
 <p>Pointer to a <b>WiaTransferParams</b> object.</p>
@@ -114,10 +114,10 @@ HRESULT SendMessage(
 <a href="..\wiamindr_lh\nn-wiamindr-lh-iwiaminidrvtransfercallback.md">IWiaMiniDrvTransferCallback</a>
 </dt>
 <dt>
-<a href="NULL">Cancellation of Data Transfers in Windows Vista</a>
+<a href="https://msdn.microsoft.com/0cdc02bf-23fe-4122-8d5f-f42c3c07da8b">Cancellation of Data Transfers in Windows Vista</a>
 </dt>
 <dt><a href="http://msdn.microsoft.com/library/windows/desktop/ms629867(v=vs.85).aspx">WiaTransferParams</a></dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaMiniDrvTransferCallback::SendMessage method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaMiniDrvTransferCallback::SendMessage method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

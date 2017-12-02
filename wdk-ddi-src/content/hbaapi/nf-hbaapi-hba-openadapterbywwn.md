@@ -55,13 +55,13 @@ HBA_STATUS HBA_API HBA_OpenAdapterByWWN(
 ## -parameters
 <dl>
 
-### -param <i>HbaHandle</i> [out]
+### -param HbaHandle [out]
 
 <dd>
 <p>Contains, on output, a handle that identifies the HBA. </p>
 </dd>
 
-### -param <i>Wwn</i> [in]
+### -param Wwn [in]
 
 <dd>
 <p>Contains a 64-bit worldwide name (WWN) that must either match the name of the node on which the HBA is located, or must match the name of a port on the HBA. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>

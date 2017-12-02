@@ -61,25 +61,25 @@ typedef struct D3DDDI_MAKERESIDENT_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>CantTrimFurther</b>
+### -field CantTrimFurther
 
 <dd>
 <p>This flag should be used after the user mode driver has trimmed all other possible resources in the device and require the current resource to be made resident in order to make forward progress on a particular single atomic operation.</p>
 </dd>
 
-### -field <b>MustSucceed</b>
+### -field MustSucceed
 
 <dd>
 <p>This flag may only be set if <b>CantTrimFurther</b> is also set. It indicates that the resource being made resident is critical to the device forward progress. If the video memory manager can’t satisfy the request the device will be put in error.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The consolidated value of the structure.</p>

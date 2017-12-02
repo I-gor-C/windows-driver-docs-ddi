@@ -61,16 +61,16 @@ typedef EVT_UCX_DEFAULT_ENDPOINT_UPDATE PEVT_UCX_DEFAULT_ENDPOINT_UPDATE;
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
-<p>A <a href="buses._default_endpoint_update">DEFAULT_ENDPOINT_UPDATE</a> structure that contains the handle to the default endpoint to be updated.</p>
+<p>A <a href="..\ucxendpoint\ns-ucxendpoint--default-endpoint-update.md">DEFAULT_ENDPOINT_UPDATE</a> structure that contains the handle to the default endpoint to be updated.</p>
 </dd>
 </dl>
 
@@ -78,7 +78,7 @@ typedef EVT_UCX_DEFAULT_ENDPOINT_UPDATE PEVT_UCX_DEFAULT_ENDPOINT_UPDATE;
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The UCX client driver registers its <i>EVT_UCX_DEFAULT_ENDPOINT_UPDATE</i> implementation with the USB host controller extension (UCX) by calling the <a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
+<p>The UCX client driver registers its <i>EVT_UCX_DEFAULT_ENDPOINT_UPDATE</i> implementation with the USB host controller extension (UCX) by calling the <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
  method.</p>
 
 <p>UCX typically calls this routine to update the default endpoint's maximum packet size.  The client driver returns completion status in the WDFREQUEST, which it can complete
@@ -125,10 +125,10 @@ typedef EVT_UCX_DEFAULT_ENDPOINT_UPDATE PEVT_UCX_DEFAULT_ENDPOINT_UPDATE;
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucx_default_endpoint_event_callbacks_init">UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT</a>
+<a href="..\ucxendpoint\nf-ucxendpoint-ucx-default-endpoint-event-callbacks-init.md">UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT</a>
 </dt>
 <dt>
-<a href="buses._ucxdefaultendpointinitseteventcallbacks">UcxDefaultEndpointInitSetEventCallbacks</a>
+<a href="..\ucxendpoint\nf-ucxendpoint-ucxdefaultendpointinitseteventcallbacks.md">UcxDefaultEndpointInitSetEventCallbacks</a>
 </dt>
 </dl>
 <p> </p>

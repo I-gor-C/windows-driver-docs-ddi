@@ -55,7 +55,7 @@ typedef struct _TAPE_PREPARE {
 ## -struct-fields
 <dl>
 
-### -field <b>Operation</b>
+### -field Operation
 
 <dd>
 <p>Indicates the type of operation to perform. This member can be one of the following:</p>
@@ -116,7 +116,7 @@ typedef struct _TAPE_PREPARE {
 <p> </p>
 </dd>
 
-### -field <b>Immediate</b>
+### -field Immediate
 
 <dd>
 <p>When set to <b>TRUE</b>, indicates that the target device should return status immediately. When set to <b>FALSE</b>, indicates that the device should return status after the operation is complete.</p>

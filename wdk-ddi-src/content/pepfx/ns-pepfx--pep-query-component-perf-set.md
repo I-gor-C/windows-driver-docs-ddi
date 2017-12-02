@@ -68,55 +68,55 @@ typedef struct _PEP_QUERY_COMPONENT_PERF_SET {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>Component</b>
+### -field Component
 
 <dd>
 <p>[in] The index that identifies the component. This member is an index into the <b>Components</b> array in the <a href="..\pepfx\ns-pepfx--pep-device-register-v2.md">PEP_DEVICE_REGISTER_V2</a> structure that the PEP previously supplied in response to the <b>PEP_DPM_REGISTER_DEVICE</b> notification for this device. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
 </dd>
 
-### -field <b>Set</b>
+### -field Set
 
 <dd>
 <p>[in] The index that identifies this P-state set. If this component has M P-state sets, P-state set indexes range from 0 to M–1. The PEP previously specified the number of P-state sets in response to a <a href="kernel.pep_dpm_query_component_perf_capabilities">PEP_DPM_QUERY_COMPONENT_PERF_CAPABILITIES</a> notification.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A set of input flags. No flag bits are currently defined for this member, which is always zero.</p>
 </dd>
 
-### -field <b>Unit</b>
+### -field Unit
 
 <dd>
 <p>[out] A <a href="..\pepfx\ne-pepfx--pep-perf-state-unit.md">PEP_PERF_STATE_UNIT</a> enumeration value that indicates whether the values for this P-state set are expressed in hertz (frequency units) or bits per second (bandwidth units).</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>[out] A <a href="..\pepfx\ne-pepfx--pep-perf-state-type.md">PEP_PERF_STATE_TYPE</a> enumeration value that indicates whether the performance values for this P-state set are expressed as a list of discrete values or as a continuous range of values.</p>
 </dd>
 
-### -field ( <i>unnamed union</i> )
+### -field ( unnamed union )
 
 <dd>
 <p>Either the number of discrete performance values in this P-state set, or the range of values in this P-state set.</p>
 <dl>
 
-### -field <b>Discrete</b>
+### -field Discrete
 
 <dd>
 <p>[out] Use this structure if <b>Type</b> = <b>PepPerfStateTypeDiscrete</b>.</p>
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>The number of discrete performance values in this P-state set.</p>
@@ -124,19 +124,19 @@ typedef struct _PEP_QUERY_COMPONENT_PERF_SET {
 </dl>
 </dd>
 
-### -field <b>Range</b>
+### -field Range
 
 <dd>
 <p>[out] Use this structure if <b>Type</b> = <b>PepPerfStateTypeRange</b>.</p>
 <dl>
 
-### -field <b>Minimum</b>
+### -field Minimum
 
 <dd>
 <p>The minimum value in the range of performance values for this P-state set. This value is expressed in the measurement units indicated by the <b>Unit</b> member.</p>
 </dd>
 
-### -field <b>Maximum</b>
+### -field Maximum
 
 <dd>
 <p>The maximum value in the range of performance values for this P-state set. This value is expressed in the measurement units indicated by the <b>Unit</b> member.</p>

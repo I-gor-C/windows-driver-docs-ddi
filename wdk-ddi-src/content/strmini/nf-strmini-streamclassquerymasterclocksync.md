@@ -56,13 +56,13 @@ VOID StreamClassQueryMasterClockSync(
 ## -parameters
 <dl>
 
-### -param <i>MasterClockHandle</i> [in]
+### -param MasterClockHandle [in]
 
 <dd>
 <p>Specifies the handle for the master clock that is being queried. The class driver passes this in the SRB_INDICATE_MASTER_CLOCK request to the minidriver's <a href="stream.strminireceivestreamcontrolpacket">StrMiniReceiveStreamControlPacket</a> routine.</p>
 </dd>
 
-### -param <i>TimeContext</i> [in, out]
+### -param TimeContext [in, out]
 
 <dd>
 <p>Specifies the <a href="..\strmini\ns-strmini--hw-time-context.md">HW_TIME_CONTEXT</a> structure that the class driver passes to the master clock's <a href="stream.strminiclock">StrMiniClock</a> routine. Before calling this routine, the minidriver must fill in the <b>HwDeviceExtension</b>, <b>HwStreamObject</b>, and <b>Function</b> members of <i>TimeContext</i>. <b>StreamClassQueryMasterClockSync</b> completes the <b>Time</b> and <b>SystemTime</b> members.</p>

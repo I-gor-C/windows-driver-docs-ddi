@@ -59,19 +59,19 @@ NTSTATUS AVStrMiniDeviceQueryCapabilities(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>Pointer to the <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> that dispatched the <a href="kernel.irp_mn_query_capabilities">IRP_MN_QUERY_CAPABILITIES</a>.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>The <a href="kernel.irp_mn_query_capabilities">IRP_MN_QUERY_CAPABILITIES</a> issued by <i>Device</i>.</p>
 </dd>
 
-### -param <i>Capabilities</i> [in, out]
+### -param Capabilities [in, out]
 
 <dd>
 <p>Pointer to the DEVICE_CAPABILITIES structure that describes PnP and Power capabilities of <i>Device</i>.</p>

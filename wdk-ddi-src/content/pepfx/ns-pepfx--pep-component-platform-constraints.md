@@ -57,25 +57,25 @@ typedef struct _PEP_COMPONENT_PLATFORM_CONSTRAINTS {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] A PEPHANDLE value that identifies the device. The platform extension plug-in (PEP) supplied this handle in response to a previous <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>Component</b>
+### -field Component
 
 <dd>
 <p>[in] The index that identifies the component. This member is an index into the <b>Components</b> array in the <a href="..\pepfx\ns-pepfx--pep-device-register-v2.md">PEP_DEVICE_REGISTER_V2</a> structure that the PEP previously supplied in response to the <b>PEP_DPM_REGISTER_DEVICE</b> notification for this device. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
 </dd>
 
-### -field <b>MinimumFStates</b>
+### -field MinimumFStates
 
 <dd>
 <p>[in] A pointer to an output buffer. The PEP writes a ULONG array to this buffer that specifies the lowest-powered F<i>x</i> state that  the component can be in for each platform idle state. An element with a value of 0 indicates F0, a value of 1 indicates F1, and so on. If the platform supports M idle states, array elements 0 to M–1 specify the F<i>x</i> states corresponding to platform idle states 0 to M–1.</p>
 </dd>
 
-### -field <b>PlatformStateCount</b>
+### -field PlatformStateCount
 
 <dd>
 <p>[in] The number of elements in the <b>MinimumFStates</b> array. The array contains one element for each platform idle state. The Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) previously sent a <a href="kernel.pep_notify_ppm_query_platform_states">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES</a> notification to the PEP to determine the number of supported platform idle states.</p>

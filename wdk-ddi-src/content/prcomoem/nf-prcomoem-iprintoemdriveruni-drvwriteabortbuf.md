@@ -58,25 +58,25 @@ HRESULT DrvWriteAbortBuf(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pBuffer</i> 
+### -param pBuffer 
 
 <dd>
 <p>Caller-supplied pointer to a buffer containing a code fragment to be sent to the printer.</p>
 </dd>
 
-### -param <i>cbSize</i> 
+### -param cbSize 
 
 <dd>
 <p>Caller-supplied number of bytes in the buffer pointed to by <i>pBuffer</i>.</p>
 </dd>
 
-### -param <i>dwWait</i> 
+### -param dwWait 
 
 <dd>
 <p>Caller-supplied length of time the printer must wait, in milliseconds, before it can start a new print job after the current job is aborted. </p>
@@ -99,7 +99,7 @@ HRESULT DrvWriteAbortBuf(
 
 <p><code>IPrintOemDriverUni::DrvWriteAbortBuf</code> can only be called after <code>IPrintOemDriverUni::DrvWriteSpoolBuf</code> has returned E_FAIL. <code>IPrintOemDriverUni::DrvWriteAbortBuf</code> should not be called more than once per job. </p>
 
-<p>Rendering plug-ins are described in <a href="NULL">Customizing Microsoft's Printer Drivers</a>.</p>
+<p>Rendering plug-ins are described in <a href="https://msdn.microsoft.com/b7761209-1f6f-4288-af47-4ed855c2e629">Customizing Microsoft's Printer Drivers</a>.</p>
 
 ## -requirements
 <table>

@@ -7,7 +7,7 @@ old-location: wdf\wdfworkitemcreate.htm
 old-project: wdf
 ms.assetid: f5bb3af4-c687-47ad-88ce-d56067c78d6d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfWorkItemCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ NTSTATUS WdfWorkItemCreate(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [in]
+### -param Config [in]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfworkitem\ns-wdfworkitem--wdf-workitem-config.md">WDF_WORKITEM_CONFIG</a> structure that the driver must have already initialized by calling <a href="..\wdfworkitem\nf-wdfworkitem-wdf-workitem-config-init.md">WDF_WORKITEM_CONFIG_INIT</a>.</p>
 </dd>
 
-### -param <i>Attributes</i> [in]
+### -param Attributes [in]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the work-item object. </p>
 </dd>
 
-### -param <i>WorkItem</i> [out]
+### -param WorkItem [out]
 
 <dd>
 <p>A pointer to a variable that receives a handle to the new work-item object.</p>
@@ -184,4 +184,4 @@ NTSTATUS WdfWorkItemCreate(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfWorkItemCreate method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfWorkItemCreate method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

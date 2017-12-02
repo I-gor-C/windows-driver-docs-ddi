@@ -57,7 +57,7 @@ PVOID ExAllocatePoolWithTag(
 ## -parameters
 <dl>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>The type of pool memory to allocate. For a description of the available pool memory types, see <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a>.</p>
@@ -65,13 +65,13 @@ PVOID ExAllocatePoolWithTag(
 <p>Similarly, you can modify the <i>PoolType</i> value by bitwise-ORing this value with the POOL_COLD_ALLOCATION flag as a hint to the kernel to allocate the memory from pages that are likely to be paged out quickly. To reduce the amount of resident pool memory as much as possible, you should not reference these allocations frequently. The POOL_COLD_ALLOCATION flag is only advisory and is supported starting with Windows XP.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>The number of bytes to allocate.</p>
 </dd>
 
-### -param <i>Tag</i> [in]
+### -param Tag [in]
 
 <dd>
 <p>The pool tag to use for the allocated memory. Specify the pool tag as a character literal of up to four characters delimited by single quotation marks (for example, 'Tag1'). The string is usually specified in reverse order (for example, '1gaT'). Each ASCII character in the tag must be a value in the range 0x20 (space) to 0x126 (tilde). Each allocation code path should use a unique pool tag to help debuggers and verifiers identify the code path.</p>
@@ -88,11 +88,11 @@ PVOID ExAllocatePoolWithTag(
 
 <p>A successful allocation requesting <i>NumberOfBytes</i> &lt; PAGE_SIZE of nonpaged pool gives the caller exactly the number of requested bytes of memory. If an allocation request for <i>NumberOfBytes</i> &gt; PAGE_SIZE succeeds and <i>NumberOfBytes</i> is not an exact multiple of PAGE_SIZE, the last page in the allocation contains bytes that are not part of the caller's allocation. If possible, the pool allocator uses these bytes. To avoid corrupting data that belongs to other kernel-mode components, drivers must access only storage addresses that they have explicitly allocated.</p>
 
-<p>The system associates the pool tag with the allocated memory. Programming tools, such as WinDbg, can display the pool tag associated with each allocated buffer. Gflags, a tool included in <a href="https://msdn.microsoft.com/938ef180-84de-442f-9b6c-1138c2fc8d5a">Debugging Tools for Windows</a>, turns on a system feature that requests allocation from <a href="NULL">special pool</a> for a particular pool tag. <a href="NULL">Poolmon</a>, which is included in the WDK, tracks memory by pool tag.</p>
+<p>The system associates the pool tag with the allocated memory. Programming tools, such as WinDbg, can display the pool tag associated with each allocated buffer. Gflags, a tool included in <a href="https://msdn.microsoft.com/938ef180-84de-442f-9b6c-1138c2fc8d5a">Debugging Tools for Windows</a>, turns on a system feature that requests allocation from <a href="https://msdn.microsoft.com/b1381a75-279a-42b7-b18d-43aba796424b">special pool</a> for a particular pool tag. <a href="https://msdn.microsoft.com/3cda6297-0e6f-48d5-b9d9-670ccf102c86">Poolmon</a>, which is included in the WDK, tracks memory by pool tag.</p>
 
 <p>The value of <i>Tag</i> is stored, and sometimes displayed, in reverse (little-endian) order. For example, if a caller passes 'Fred' as a <i>Tag</i>, it appears as "derF" in a pool dump and in pool usage tracking in the debugger, and as 0x64657246 in the registry and in tool displays.</p>
 
-<p>The allocated buffer can be freed with either <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> or <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>.</p>
+<p>The allocated buffer can be freed with either <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> or <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>.</p>
 
 <p>The system automatically sets certain standard event objects when the amount of pool (paged or nonpaged) is high or low. Drivers can wait for these events to tune their pool usage. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563847">Standard Event Objects</a>.</p>
 
@@ -177,7 +177,7 @@ PVOID ExAllocatePoolWithTag(
 <a href="..\wdm\nf-wdm-exallocatepoolwithtagpriority.md">ExAllocatePoolWithTagPriority</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>

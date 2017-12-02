@@ -56,19 +56,19 @@ typedef struct _D3DKMT_OPENGLINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>UmdOpenGlIcdFileName</b>
+### -field UmdOpenGlIcdFileName
 
 <dd>
 <p>[out] An array of wide characters that contains the file name of the OpenGL ICD.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>[out] The version of the OpenGL ICD.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] This member is currently unused.</p>

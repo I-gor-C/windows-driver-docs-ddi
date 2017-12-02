@@ -55,11 +55,11 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSSTREAM_POINTER_STATE_UNLOCKED"></a><a id="ksstream_pointer_state_unlocked"></a><b>KSSTREAM_POINTER_STATE_UNLOCKED</b>
+### -field KSSTREAM_POINTER_STATE_UNLOCKED
 
 <dd></dd>
 
-### -field <a id="KSSTREAM_POINTER_STATE_LOCKED"></a><a id="ksstream_pointer_state_locked"></a><b>KSSTREAM_POINTER_STATE_LOCKED</b>
+### -field KSSTREAM_POINTER_STATE_LOCKED
 
 <dd></dd>
 </dl>

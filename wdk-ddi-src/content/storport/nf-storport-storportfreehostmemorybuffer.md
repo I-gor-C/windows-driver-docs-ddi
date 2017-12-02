@@ -58,20 +58,20 @@ ULONG StorPortFreeHostMemoryBuffer(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>PhysicalAddressRanges</i> 
+### -param PhysicalAddressRanges 
 
 <dd>
 <p>The array of physical address ranges that make up
         the Host Memory Buffer previously allocated by  <b>StorPortAllocateHostMemoryBuffer</b>.</p>
 </dd>
 
-### -param <i>PhysicalAddressRangeCount</i> [in]
+### -param PhysicalAddressRangeCount [in]
 
 <dd>
 <p> The number of entries in <b>PhysicalAddressRanges</b>. </p>

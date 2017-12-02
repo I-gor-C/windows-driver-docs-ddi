@@ -59,13 +59,13 @@ NTSTATUS CamInitialize(
 ## -parameters
 <dl>
 
-### -param <i>BusDeviceObject</i> 
+### -param BusDeviceObject 
 
 <dd>
 <p>Pointer to the camera minidriver's device object created by the USB hub.</p>
 </dd>
 
-### -param <i>DeviceContext</i> 
+### -param DeviceContext 
 
 <dd>
 <p>Pointer to the camera minidriver's device context.</p>

@@ -56,19 +56,19 @@ ULONG KsRemoveItemFromObjectBag(
 ## -parameters
 <dl>
 
-### -param <i>ObjectBag</i> [in]
+### -param ObjectBag [in]
 
 <dd>
 <p>This parameter specifies the KSOBJECT_BAG (equivalent to type PVOID) from which to remove <i>Item</i>. </p>
 </dd>
 
-### -param <i>Item</i> [in]
+### -param Item [in]
 
 <dd>
 <p>A pointer to the item to remove from the requested object bag. Note that <i>Item</i> is removed from the requested object bag only. It is not removed from any other object bags that it may be in.</p>
 </dd>
 
-### -param <i>Free</i> [in]
+### -param Free [in]
 
 <dd>
 <p>This parameter specifies whether <i>Item</i> should be freed once it has been removed from the specified object bag. Only set <i>Free</i> to <b>TRUE</b> if <i>Item</i> is not contained in any other object bag.</p>
@@ -89,9 +89,9 @@ ULONG KsRemoveItemFromObjectBag(
 ## -remarks
 <p><b>KsRemoveItemFromObjectBag</b> frees <i>Item</i> only if the number of references on this item is zero and a free was requested. </p>
 
-<p>For more information about object bags, see <a href="NULL">Object Bags</a>.</p>
+<p>For more information about object bags, see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a>.</p>
 
-<p>Note that the mutex associated with the bag must be held. For more  information, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>Note that the mutex associated with the bag must be held. For more  information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 ## -requirements
 <table>

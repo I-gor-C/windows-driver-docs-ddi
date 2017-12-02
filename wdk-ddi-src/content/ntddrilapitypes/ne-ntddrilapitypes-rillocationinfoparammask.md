@@ -7,7 +7,7 @@ old-location: netvista\rillocationinfoparammask.htm
 old-project: netvista
 ms.assetid: 3d681026-7ccb-4dcb-bed1-505c13089177
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef enum _RILLOCATIONINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_LU_HUICCAPP"></a><a id="ril_param_lu_huiccapp"></a><b>RIL_PARAM_LU_HUICCAPP</b>
+### -field RIL_PARAM_LU_HUICCAPP
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_LU_LAC"></a><a id="ril_param_lu_lac"></a><b>RIL_PARAM_LU_LAC</b>
+### -field RIL_PARAM_LU_LAC
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_LU_TAC"></a><a id="ril_param_lu_tac"></a><b>RIL_PARAM_LU_TAC</b>
+### -field RIL_PARAM_LU_TAC
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_LU_CELLID"></a><a id="ril_param_lu_cellid"></a><b>RIL_PARAM_LU_CELLID</b>
+### -field RIL_PARAM_LU_CELLID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_LU_ALL"></a><a id="ril_param_lu_all"></a><b>RIL_PARAM_LU_ALL</b>
+### -field RIL_PARAM_LU_ALL
 
 <dd></dd>
 </dl>

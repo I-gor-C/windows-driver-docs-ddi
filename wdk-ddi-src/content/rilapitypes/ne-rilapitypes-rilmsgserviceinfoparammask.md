@@ -7,7 +7,7 @@ old-location: netvista\rilmsgserviceinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 2c5d29da-6577-4428-ac7b-1d3ff647086a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILMSGSERVICEINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_MSI_STOREUSED"></a><a id="ril_param_msi_storeused"></a><b>RIL_PARAM_MSI_STOREUSED</b>
+### -field RIL_PARAM_MSI_STOREUSED
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MSI_STORETOTAL"></a><a id="ril_param_msi_storetotal"></a><b>RIL_PARAM_MSI_STORETOTAL</b>
+### -field RIL_PARAM_MSI_STORETOTAL
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MSI_ALL"></a><a id="ril_param_msi_all"></a><b>RIL_PARAM_MSI_ALL</b>
+### -field RIL_PARAM_MSI_ALL
 
 <dd></dd>
 </dl>

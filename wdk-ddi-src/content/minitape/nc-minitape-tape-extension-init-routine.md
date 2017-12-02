@@ -59,19 +59,19 @@ VOID TapeMiniExtensionInit(
 ## -parameters
 <dl>
 
-### -param <i>MinitapeExtension</i> [in]
+### -param MinitapeExtension [in]
 
 <dd>
 <p>Pointer to a buffer of the size requested by the tape miniclass driver when it initialized.</p>
 </dd>
 
-### -param <i>InquiryData</i> [in]
+### -param InquiryData [in]
 
 <dd>
 <p>Pointer to the SCSI inquiry data for the tape device.</p>
 </dd>
 
-### -param <i>ModeCapabilitiesPage</i> [in]
+### -param ModeCapabilitiesPage [in]
 
 <dd>
 <p>Pointer to a buffer that contains low-level information for the tape device. The format of this page is defined by the QIC 157 standard and is subject to change. This is <b>NULL</b> if the device does not support a mode capabilities page. </p>

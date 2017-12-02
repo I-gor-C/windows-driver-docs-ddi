@@ -58,13 +58,13 @@ NTSTATUS CmCallbackGetKeyObjectID(
 ## -parameters
 <dl>
 
-### -param <i>Cookie</i> [in]
+### -param Cookie [in]
 
 <dd>
 <p>The cookie value that the driver previously obtained by calling the <a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a> or <a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a> routine.</p>
 </dd>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>The pointer value that the driver's <a href="kernel.registrycallback">RegistryCallback</a> callback routine received in the <b>Object</b> member of one of the <b>REG_<i>XXX</i>_KEY_INFORMATION</b> structures. </p>
@@ -72,13 +72,13 @@ NTSTATUS CmCallbackGetKeyObjectID(
 <div> </div>
 </dd>
 
-### -param <i>ObjectID</i> [out, optional]
+### -param ObjectID [out, optional]
 
 <dd>
 <p>A pointer to a location that receives a pointer to the unique identifier that represents the registry key that <i>Object</i> specifies. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ObjectName</i> [out, optional]
+### -param ObjectName [out, optional]
 
 <dd>
 <p>A pointer to a location that receives a pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure. This structure contains the object name of the registry key object that <i>Object</i> specifies. The object name is actually the full path name of the registry key that the object represents. The caller must not write to this <b>UNICODE_STRING</b> structure or free it. This parameter is optional and can be <b>NULL</b>.</p>

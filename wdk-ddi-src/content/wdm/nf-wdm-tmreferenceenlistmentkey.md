@@ -56,13 +56,13 @@ NTSTATUS TmReferenceEnlistmentKey(
 ## -parameters
 <dl>
 
-### -param <i>Enlistment</i> [in]
+### -param Enlistment [in]
 
 <dd>
 <p>A pointer to an enlistment object. Your component can receive this pointer as input to a <a href="kernel.resourcemanagernotification">ResourceManagerNotification</a> callback routine. Alternatively, your component can call <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>, <a href="..\wdm\nf-wdm-tmcreateenlistment.md">TmCreateEnlistment</a>, or <a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a> provided.</p>
 </dd>
 
-### -param <i>Key</i> [out]
+### -param Key [out]
 
 <dd>
 <p>A pointer to a variable that receives the enlistment object's enlistment key. The caller assigns an enlistment key when it calls <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a> or <a href="..\wdm\nf-wdm-tmcreateenlistment.md">TmCreateEnlistment</a>.</p>

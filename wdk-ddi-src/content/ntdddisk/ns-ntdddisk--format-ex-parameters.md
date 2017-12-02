@@ -61,49 +61,49 @@ typedef struct _FORMAT_EX_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>MediaType</b>
+### -field MediaType
 
 <dd>
 <p>Indicates format information, such as the disk size and the number of bytes per sector. For a list of the values that can be assigned to this member, see <a href="storage.media_type">MEDIA_TYPE</a>. </p>
 </dd>
 
-### -field <b>StartCylinderNumber</b>
+### -field StartCylinderNumber
 
 <dd>
 <p>Indicates the number of the cylinder where the formatting should begin. </p>
 </dd>
 
-### -field <b>EndCylinderNumber</b>
+### -field EndCylinderNumber
 
 <dd>
 <p>Indicates the number of the cylinder where the formatting should end. </p>
 </dd>
 
-### -field <b>StartHeadNumber</b>
+### -field StartHeadNumber
 
 <dd>
 <p>Indicates the number of the head where the formatting should begin. </p>
 </dd>
 
-### -field <b>EndHeadNumber</b>
+### -field EndHeadNumber
 
 <dd>
 <p>Indicates the number of the head where the formatting should end. </p>
 </dd>
 
-### -field <b>FormatGapLength</b>
+### -field FormatGapLength
 
 <dd>
 <p>Indicates the length in bytes of a format gap. </p>
 </dd>
 
-### -field <b>SectorsPerTrack</b>
+### -field SectorsPerTrack
 
 <dd>
 <p>Indicates the number of sectors per track. </p>
 </dd>
 
-### -field <b>SectorNumber</b>
+### -field SectorNumber
 
 <dd>
 <p>Contains an array whose first element indicates the number of the sector where the formatting should begin. </p>

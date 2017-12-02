@@ -74,7 +74,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P709"></a><a id="d3dddi_color_space_rgb_full_g22_none_p709"></a><b>D3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P709</b>
+### -field D3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P709
 
 <dd>
 <table>
@@ -112,7 +112,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p>This is usually used with 8 bit and 10 bit color channels.</p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_RGB_FULL_G10_NONE_P709"></a><a id="d3dddi_color_space_rgb_full_g10_none_p709"></a><b>D3DDDI_COLOR_SPACE_RGB_FULL_G10_NONE_P709</b>
+### -field D3DDDI_COLOR_SPACE_RGB_FULL_G10_NONE_P709
 
 <dd>
 <table>
@@ -149,7 +149,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 </p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P709"></a><a id="d3dddi_color_space_rgb_studio_g22_none_p709"></a><b>D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P709</b>
+### -field D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P709
 
 <dd>
 <table>
@@ -185,7 +185,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p>This is usually used with 8 bit and 10 bit color channels.</p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020"></a><a id="d3dddi_color_space_rgb_studio_g22_none_p2020"></a><b>D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020</b>
+### -field D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020
 
 <dd>
 <table>
@@ -218,13 +218,13 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p>This is usually used with 10, 12, or 16 bit color channels.</p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_RESERVED"></a><a id="d3dddi_color_space_reserved"></a><b>D3DDDI_COLOR_SPACE_RESERVED</b>
+### -field D3DDDI_COLOR_SPACE_RESERVED
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_NONE_P709_X601"></a><a id="d3dddi_color_space_ycbcr_full_g22_none_p709_x601"></a><b>D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_NONE_P709_X601</b>
+### -field D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_NONE_P709_X601
 
 <dd>
 <table>
@@ -264,7 +264,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p>This is usually used with 8, 10, 12, or 16 bit color channels.</p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P601"></a><a id="d3dddi_color_space_ycbcr_studio_g22_left_p601"></a><b>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P601</b>
+### -field D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P601
 
 <dd>
 <table>
@@ -300,7 +300,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p>This is usually used with 8, 10, 12, or 16 bit color channels.</p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P601"></a><a id="d3dddi_color_space_ycbcr_full_g22_left_p601"></a><b>D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P601</b>
+### -field D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P601
 
 <dd>
 <table>
@@ -337,7 +337,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 </p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P709"></a><a id="d3dddi_color_space_ycbcr_studio_g22_left_p709"></a><b>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P709</b>
+### -field D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P709
 
 <dd>
 <table>
@@ -373,7 +373,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p>This is usually used with 8, 10, 12, or 16 bit color channels.</p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P709"></a><a id="d3dddi_color_space_ycbcr_full_g22_left_p709"></a><b>D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P709</b>
+### -field D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P709
 
 <dd>
 <table>
@@ -410,7 +410,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 </p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P2020"></a><a id="d3dddi_color_space_ycbcr_studio_g22_left_p2020"></a><b>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P2020</b>
+### -field D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P2020
 
 <dd>
 <table>
@@ -446,7 +446,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p>This is usually used with 10, 12, or 16 bit color channels.</p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020"></a><a id="d3dddi_color_space_ycbcr_full_g22_left_p2020"></a><b>D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020</b>
+### -field D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020
 
 <dd>
 <table>
@@ -479,7 +479,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p>This is usually used with 10, 12, or 16 bit color channels.</p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_RGB_FULL_G2084_NONE_P2020"></a><a id="d3dddi_color_space_rgb_full_g2084_none_p2020"></a><b>D3DDDI_COLOR_SPACE_RGB_FULL_G2084_NONE_P2020</b>
+### -field D3DDDI_COLOR_SPACE_RGB_FULL_G2084_NONE_P2020
 
 <dd>
 <table>
@@ -511,7 +511,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p> </p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_LEFT_P2020"></a><a id="d3dddi_color_space_ycbcr_studio_g2084_left_p2020"></a><b>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_LEFT_P2020</b>
+### -field D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_LEFT_P2020
 
 <dd>
 <table>
@@ -543,7 +543,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p> </p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_RGB_STUDIO_G2084_NONE_P2020"></a><a id="d3dddi_color_space_rgb_studio_g2084_none_p2020"></a><b>D3DDDI_COLOR_SPACE_RGB_STUDIO_G2084_NONE_P2020</b>
+### -field D3DDDI_COLOR_SPACE_RGB_STUDIO_G2084_NONE_P2020
 
 <dd>
 <table>
@@ -575,7 +575,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p> </p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_TOPLEFT_P2020"></a><a id="d3dddi_color_space_ycbcr_studio_g22_topleft_p2020"></a><b>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_TOPLEFT_P2020</b>
+### -field D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_TOPLEFT_P2020
 
 <dd>
 <table>
@@ -607,7 +607,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p> </p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_TOPLEFT_P2020"></a><a id="d3dddi_color_space_ycbcr_studio_g2084_topleft_p2020"></a><b>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_TOPLEFT_P2020</b>
+### -field D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_TOPLEFT_P2020
 
 <dd>
 <table>
@@ -639,7 +639,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p> </p>
 </dd>
 
-### -field <a id="DD3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P2020"></a><a id="dd3dddi_color_space_rgb_full_g22_none_p2020"></a><b>DD3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P2020</b>
+### -field DD3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P2020
 
 <dd>
 <table>
@@ -671,7 +671,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p> </p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_YCBCR_STUDIO_GHLG_TOPLEFT_P2020"></a><a id="d3dddi_color_space_ycbcr_studio_ghlg_topleft_p2020"></a><b>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_GHLG_TOPLEFT_P2020</b>
+### -field D3DDDI_COLOR_SPACE_YCBCR_STUDIO_GHLG_TOPLEFT_P2020
 
 <dd>
 <table>
@@ -704,7 +704,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p>This colorspace can be used as an input to the video processor DDIs, but will never be used to scan out.</p>
 </dd>
 
-### -field <a id="DD3DDDI_COLOR_SPACE_YCBCR_FULL_GHLG_TOPLEFT_P2020"></a><a id="dd3dddi_color_space_ycbcr_full_ghlg_topleft_p2020"></a><b>DD3DDDI_COLOR_SPACE_YCBCR_FULL_GHLG_TOPLEFT_P2020</b>
+### -field DD3DDDI_COLOR_SPACE_YCBCR_FULL_GHLG_TOPLEFT_P2020
 
 <dd>
 <table>
@@ -737,7 +737,7 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <p>This colorspace can be used as an input to the video processor DDIs, but will never be used to scan out.</p>
 </dd>
 
-### -field <a id="D3DDDI_COLOR_SPACE_CUSTOM"></a><a id="d3dddi_color_space_custom"></a><b>D3DDDI_COLOR_SPACE_CUSTOM</b>
+### -field D3DDDI_COLOR_SPACE_CUSTOM
 
 <dd>
 <p>A custom color definition is used. </p>

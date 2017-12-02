@@ -57,25 +57,25 @@ typedef enum _GPIO_PIN_IORESTRICTION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="IoRestrictionNone"></a><a id="iorestrictionnone"></a><a id="IORESTRICTIONNONE"></a><b>IoRestrictionNone</b>
+### -field IoRestrictionNone
 
 <dd>
 <p>Indicates that the GPIO pin is not restricted to either input or output. When no IO restriction is described, it is assumed to be <b>IoRestrictionNone</b>. </p>
 </dd>
 
-### -field <a id="IoRestrictionInputOnly"></a><a id="iorestrictioninputonly"></a><a id="IORESTRICTIONINPUTONLY"></a><b>IoRestrictionInputOnly</b>
+### -field IoRestrictionInputOnly
 
 <dd>
 <p>Indicates that the GPIO pin is restricted to input. </p>
 </dd>
 
-### -field <a id="IoRestrictionOutputOnly"></a><a id="iorestrictionoutputonly"></a><a id="IORESTRICTIONOUTPUTONLY"></a><b>IoRestrictionOutputOnly</b>
+### -field IoRestrictionOutputOnly
 
 <dd>
 <p>Indicates that the GPIO pin is restricted to output. </p>
 </dd>
 
-### -field <a id="IoRestrictionNoneAndPreserve"></a><a id="iorestrictionnoneandpreserve"></a><a id="IORESTRICTIONNONEANDPRESERVE"></a><b>IoRestrictionNoneAndPreserve</b>
+### -field IoRestrictionNoneAndPreserve
 
 <dd>
 <p>Indicates that the GPIO pin is not restricted to either input or output and that the mode should be preserved when the driver is unloaded. </p>

@@ -59,13 +59,13 @@ BOOLEAN AtaAdapterControl(
 ## -parameters
 <dl>
 
-### -param <i>ControllerExtension</i> [in]
+### -param ControllerExtension [in]
 
 <dd>
 <p>A pointer to the controller extension.</p>
 </dd>
 
-### -param <i>ControlAction</i> [in]
+### -param ControlAction [in]
 
 <dd>
 <p>
@@ -136,7 +136,7 @@ BOOLEAN AtaAdapterControl(
 <p> </p>
 </dd>
 
-### -param <i>Parameters</i> [in, out]
+### -param Parameters [in, out]
 
 <dd>
 <p>Parameters associated with the given action.</p>

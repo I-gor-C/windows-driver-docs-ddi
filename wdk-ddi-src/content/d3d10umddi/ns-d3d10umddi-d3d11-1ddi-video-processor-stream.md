@@ -64,56 +64,56 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_STREAM {
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>Specifies whether this input stream is enabled. If the value is <b>TRUE</b>, the <a href="display.videoprocessorblt">VideoProcessorBlt</a> function blits this stream to the output surface. Otherwise, this stream is not blitted.</p>
 <p>The maximum number of streams that can be enabled at one time is given in the <b>MaxInputStreams</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-processor-caps.md">D3D11_1DDI_VIDEO_PROCESSOR_CAPS</a> structure.</p>
 </dd>
 
-### -field <b>OutputIndex</b>
+### -field OutputIndex
 
 <dd>
 <p>The zero-based index number of the output frame.</p>
 </dd>
 
-### -field <b>InputFrameOrField</b>
+### -field InputFrameOrField
 
 <dd>
 <p>The zero-based index number of the input frame or field.</p>
 </dd>
 
-### -field <b>PastFrames</b>
+### -field PastFrames
 
 <dd>
 <p>The number of past reference frames.</p>
 </dd>
 
-### -field <b>FutureFrames</b>
+### -field FutureFrames
 
 <dd>
 <p>The number of future reference frames.</p>
 </dd>
 
-### -field <b>pPastSurfaces</b>
+### -field pPastSurfaces
 
 <dd>
 <p>A <b>D3D11_1DDI_HVIDEOPROCESSORINPUTVIEW</b> pointer to an array of  pointers, allocated by the caller. This array contains the past reference frames for the video processing operation. The number of elements in the array is equal to <b>PastFrames</b>.</p>
 </dd>
 
-### -field <b>hInputSurface</b>
+### -field hInputSurface
 
 <dd>
 <p>A <b>D3D11_1DDI_HVIDEOPROCESSORINPUTVIEW</b> pointer to the surface that contains the current input frame.</p>
 </dd>
 
-### -field <b>pFutureSurfaces</b>
+### -field pFutureSurfaces
 
 <dd>
 <p>A <b>D3D11_1DDI_HVIDEOPROCESSORINPUTVIEW</b> pointer to an array of pointers, allocated by the caller. This array contains the future reference frames for the video processing operation. The number of elements in the array is equal to <b>FutureFrames</b>.</p>
 </dd>
 
-### -field <b>pPastSurfacesRight</b>
+### -field pPastSurfacesRight
 
 <dd>
 <p>If the stereo 3-D format is <b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_SEPARATE</b>, this member is a <b>D3D11_1DDI_HVIDEOPROCESSORINPUTVIEW</b> pointer to an array of   pointers that contains the past reference frames for the right view. The number of elements in the array is equal to <b>PastFrames</b>.</p>
@@ -124,7 +124,7 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_STREAM {
 </p>
 </dd>
 
-### -field <b>hInputSurfaceRight</b>
+### -field hInputSurfaceRight
 
 <dd>
 <p>If the stereo 3-D format is <b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_SEPARATE</b>, this member is a <b>D3D11_1DDI_HVIDEOPROCESSORINPUTVIEW</b> pointer to the current input frame for the right view.</p>
@@ -135,7 +135,7 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_STREAM {
 </p>
 </dd>
 
-### -field <b>pFutureSurfacesRight</b>
+### -field pFutureSurfacesRight
 
 <dd>
 <p>If the stereo 3-D format is <b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_SEPARATE</b>, this member is a <b>D3D11_1DDI_HVIDEOPROCESSORINPUTVIEW</b> pointer to an array of  pointers that contains the future reference frames for the right view. The number of elements in the array is equal to <b>FutureFrames</b>.</p>

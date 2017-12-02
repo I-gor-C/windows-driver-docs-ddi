@@ -7,7 +7,7 @@ old-location: ieee\irb_req_get_local_host_information.htm
 old-project: IEEE
 ms.assetid: 172579A1-9B81-42C7-BAC9-C977C69E7E45
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_GET_LOCAL_HOST_INFORMATION, IRB_REQ_GET_LOCAL_HOST_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef struct _IRB_REQ_GET_LOCAL_HOST_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>nLevel</b>
+### -field nLevel
 
 <dd>
 <p>Specifies what level of information is desired from this call. The following flags are provided.</p>
@@ -133,7 +133,7 @@ typedef struct _IRB_REQ_GET_LOCAL_HOST_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>Information</b>
+### -field Information
 
 <dd>
 <p>Points to an information block to be filled in, depending on what level of information is desired. Each block has its own particular structure.</p>

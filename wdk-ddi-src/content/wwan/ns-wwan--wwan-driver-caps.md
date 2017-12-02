@@ -7,7 +7,7 @@ old-location: netvista\wwan_driver_caps.htm
 old-project: netvista
 ms.assetid: c0696ac6-d35e-402a-8cb5-d4f23b3b8072
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_DRIVER_CAPS, WWAN_DRIVER_CAPS, *PWWAN_DRIVER_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,21 +57,21 @@ typedef struct _WWAN_DRIVER_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>ulMajorVersion</b>
+### -field ulMajorVersion
 
 <dd>
 <p>The major version of the MB driver model that the miniport driver supports. Miniport drivers
      should set this member to WWAN_MAJOR_VERSION.</p>
 </dd>
 
-### -field <b>ulMinorVersion</b>
+### -field ulMinorVersion
 
 <dd>
 <p>The minor version of the MB driver model that the miniport driver supports. Miniport drivers
      should set this member to WWAN_MINOR_VERSION.</p>
 </dd>
 
-### -field <b>ulDriverCaps</b>
+### -field ulDriverCaps
 
 <dd>
 <p>This member is reserved for future use. Miniport drivers should set this member to the value in
@@ -80,7 +80,7 @@ typedef struct _WWAN_DRIVER_CAPS {
 <p></p>
 <dl>
 
-### -field <a id="WWAN_DRIVER_CAPS_NONE"></a><a id="wwan_driver_caps_none"></a>WWAN_DRIVER_CAPS_NONE
+### -field WWAN_DRIVER_CAPS_NONE
 
 <dd>
 <p>The miniport driver has no special capabilities.</p>
@@ -122,4 +122,4 @@ typedef struct _WWAN_DRIVER_CAPS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DRIVER_CAPS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DRIVER_CAPS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

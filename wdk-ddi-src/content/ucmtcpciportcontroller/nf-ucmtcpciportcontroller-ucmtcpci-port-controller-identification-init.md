@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-                        Initializes the <a href="buses.ucmtcpci_port_controller_identification">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION</a> structure.
+                        Initializes the <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller--ucmtcpci-port-controller-identification.md">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION</a> structure.
                 </p>
 
 
@@ -57,7 +57,7 @@ VOID UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Identification</i> [out]
+### -param Identification [out]
 
 <dd>
 <p>A pointer to the driver-allocated <b>UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION</b> structure.</p>
@@ -111,7 +111,7 @@ VOID UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>
+<a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>
 </dt>
 </dl>
 <p> </p>

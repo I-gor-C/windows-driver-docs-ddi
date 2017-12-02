@@ -56,13 +56,13 @@ typedef struct _KS_DVDCOPY_REGION {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>RegionData</b>
+### -field RegionData
 
 <dd>
 <p>Specifies the region code for the nationality or language, as described in the following table:</p>
@@ -123,7 +123,7 @@ typedef struct _KS_DVDCOPY_REGION {
 <p> </p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. Do not use.</p>
@@ -133,7 +133,7 @@ typedef struct _KS_DVDCOPY_REGION {
 ## -remarks
 <p>The KS_DVDCOPY_REGION structure is used by the KSPROPERTY_DVDCOPY_REGION property.</p>
 
-<p>For more information, see <a href="NULL">DVD Copyright Protection</a> and <a href="NULL">DVD Regionalization</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/ff9cf8c8-7c8f-485c-b2ab-7567a5eeb87b">DVD Copyright Protection</a> and <a href="https://msdn.microsoft.com/931441c8-9521-43c9-86f1-dbf75d36e190">DVD Regionalization</a>.</p>
 
 ## -requirements
 <table>

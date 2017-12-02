@@ -60,25 +60,25 @@ VOID APIENTRY* pfnSetPredication(
 ## -parameters
 <dl>
 
-### -param <i>hCommandList</i> 
+### -param hCommandList 
 
 <dd>
 <p>The handle of a command list.</p>
 </dd>
 
-### -param <i>hResource</i> 
+### -param hResource 
 
 <dd>
 <p>The handle of a resource.</p>
 </dd>
 
-### -param <i>Uint64</i> 
+### -param Uint64 
 
 <dd>
 <p>An integer.</p>
 </dd>
 
-### -param <i>PredicationOp</i> 
+### -param PredicationOp 
 
 <dd>
 <p>A predication operation. For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi-predication-op.md">D3D12DDI_PREDICATION_OP</a> enumeration.</p>

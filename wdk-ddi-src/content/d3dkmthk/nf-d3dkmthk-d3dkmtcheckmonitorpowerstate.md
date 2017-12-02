@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTCheckMonitorPowerState(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-checkmonitorpowerstate.md">D3DKMT_CHECKMONITORPOWERSTATE</a> structure that describes the connection to the monitor for which to check the power state. </p>

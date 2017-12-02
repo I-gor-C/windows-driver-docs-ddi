@@ -60,43 +60,43 @@ typedef struct _PDO_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>ScsiAddress</b>
+### -field ScsiAddress
 
 <dd>
 <p>A PDOSCSI_ADDR structure that represents the SCSI address of the LUN's instance that corresponds to a particular path.</p>
 </dd>
 
-### -field <b>DeviceState</b>
+### -field DeviceState
 
 <dd>
 <p>An unsigned 32-bitfield that represents whether the path, through which this instance of the LUN was exposed, is usable.</p>
 </dd>
 
-### -field <b>PathIdentifier</b>
+### -field PathIdentifier
 
 <dd>
 <p>An unsigned 64-bitfield that represents the identifier that is associated with the path through which this instance of the LUN is exposed.</p>
 </dd>
 
-### -field <b>IdentifierType</b>
+### -field IdentifierType
 
 <dd>
 <p>An unsigned 32-bitfield that represents the identifier type of the LUN's controller.</p>
 </dd>
 
-### -field <b>IdentifierLength</b>
+### -field IdentifierLength
 
 <dd>
 <p>An unsigned 32-bitfield that represents the length of the identifier of the LUN's controller.</p>
 </dd>
 
-### -field <b>Identifier</b>
+### -field Identifier
 
 <dd>
 <p>An unsigned 64-bitfield that represents the identifier that is associated with the path through which this instance of the LUN is exposed.</p>
 </dd>
 
-### -field <b>Pad</b>
+### -field Pad
 
 <dd>
 <p>Should be zero.</p>

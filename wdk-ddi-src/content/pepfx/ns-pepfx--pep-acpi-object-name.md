@@ -55,13 +55,13 @@ typedef union _PEP_ACPI_OBJECT_NAME {
 ## -struct-fields
 <dl>
 
-### -field <b>ObjectName</b>
+### -field ObjectName
 
 <dd>
 <p>The object name stored as an array of four 8-bit unsigned characters.</p>
 </dd>
 
-### -field <b>ObjectNameAsUlong</b>
+### -field ObjectNameAsUlong
 
 <dd>
 <p>The object name stored as a single 32-bit unsigned integer value.</p>

@@ -56,13 +56,13 @@ typedef enum _SCO_LINK_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="ScoLinkType"></a><a id="scolinktype"></a><a id="SCOLINKTYPE"></a><b>ScoLinkType</b>
+### -field ScoLinkType
 
 <dd>
 <p>This value indicates that the link used by the connection is a SCO link.</p>
 </dd>
 
-### -field <a id="eScoLinkType"></a><a id="escolinktype"></a><a id="ESCOLINKTYPE"></a><b>eScoLinkType</b>
+### -field eScoLinkType
 
 <dd>
 <p>This value indicates that the link used by the connection is an eSCO link.</p>

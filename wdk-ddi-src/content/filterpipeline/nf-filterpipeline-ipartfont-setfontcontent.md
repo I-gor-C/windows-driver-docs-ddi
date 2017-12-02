@@ -54,7 +54,7 @@ HRESULT SetFontContent(
 ## -parameters
 <dl>
 
-### -param <i>contentType</i> [in]
+### -param contentType [in]
 
 <dd>
 <p>The type of the content for the font to be set.</p>

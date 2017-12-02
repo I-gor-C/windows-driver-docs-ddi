@@ -57,13 +57,13 @@ typedef struct _WINBIO_CALIBRATION_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>PayloadSize</b>
+### -field PayloadSize
 
 <dd>
 <p>The total size of the payload.  This includes the fixed length structure and any variable data at the end.</p>
 </dd>
 
-### -field <b>WinBioHresult</b>
+### -field WinBioHresult
 
 <dd>
 <p>The status detail of the I/O operation.  This is where WINBIO error and information codes will be passed. The following table shows possible values for this member.</p>
@@ -100,7 +100,7 @@ typedef struct _WINBIO_CALIBRATION_INFO {
 <p> </p>
 </dd>
 
-### -field <b>CalibrationData</b>
+### -field CalibrationData
 
 <dd>
 <p>A structure of type <a href="..\winbio_ioctl\ns-winbio-ioctl--winbio-data.md">WINBIO_DATA</a> that contains calibration data specific to this sensor.  This member is optional.</p>

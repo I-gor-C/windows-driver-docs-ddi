@@ -7,7 +7,7 @@ old-location: debugger\getdebuggeetype.htm
 old-project: debugger
 ms.assetid: 86f236fa-73f8-4071-b6da-6de2d276cbff
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl3, GetDebuggeeType, IDebugControl3::GetDebuggeeType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT GetDebuggeeType(
 ## -parameters
 <dl>
 
-### -param <i>Class</i> [out]
+### -param Class [out]
 
 <dd>
 <p>Receives the class of the current target.  It will be set to one of the values in the following table.</p>
@@ -92,7 +92,7 @@ HRESULT GetDebuggeeType(
 <p> </p>
 </dd>
 
-### -param <i>Qualifier</i> [out]
+### -param Qualifier [out]
 
 <dd>
 <p>Provides more details about the type of the target.  Its interpretation depends on the value of <i>Class</i>.  When class is DEBUG_CLASS_UNINITIALIZED, <i>Qualifier</i> returns zero.  The following values are applicable for kernel-mode targets.</p>
@@ -195,7 +195,7 @@ HRESULT GetDebuggeeType(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

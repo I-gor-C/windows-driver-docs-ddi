@@ -56,21 +56,21 @@ typedef struct _DXGK_BACKLIGHT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>BacklightUsersetting</b>
+### -field BacklightUsersetting
 
 <dd>
 <p>[out] The absolute brightness level in hardware that corresponds to the current percent brightness level requested by the operating system.</p>
 <p>This member can range in value from 0 to 65535.</p>
 </dd>
 
-### -field <b>BacklightEffective</b>
+### -field BacklightEffective
 
 <dd>
 <p>[out] The absolute brightness level in hardware that is currently set by the display miniport drive for adaptive brightness control.</p>
 <p>This member can range in value from 0 to 65535.</p>
 </dd>
 
-### -field <b>GammaRamp</b>
+### -field GammaRamp
 
 <dd>
 <p>[out] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-gamma-ramp-rgb256x3x16.md">D3DDDI_GAMMA_RAMP_RGB256x3x16</a> structure that contains a description of a gamma lookup table.

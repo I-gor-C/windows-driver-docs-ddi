@@ -61,7 +61,7 @@ void SCOIndicationCallback(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>For incoming remote connection request indications, this is the context specified by the profile
@@ -74,7 +74,7 @@ void SCOIndicationCallback(
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536626">BRB_SCO_OPEN_CHANNEL</a> BRB.</p>
 </dd>
 
-### -param <i>Indication</i> [in]
+### -param Indication [in]
 
 <dd>
 <p>A 
@@ -82,7 +82,7 @@ void SCOIndicationCallback(
      the type of SCO event.</p>
 </dd>
 
-### -param <i>Parameters</i> [in]
+### -param Parameters [in]
 
 <dd>
 <p>A 

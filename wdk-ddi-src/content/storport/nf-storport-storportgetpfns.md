@@ -62,39 +62,39 @@ ULONG StorPortGetPfns(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver.</p>
 </dd>
 
-### -param <i>Srb</i> [in]
+### -param Srb [in]
 
 <dd>
 <p>A pointer to the source SCSI request block (SRB). </p>
 </dd>
 
-### -param <i>Mdl</i> [in]
+### -param Mdl [in]
 
 <dd>
 <p>A pointer to the MDL for which Pfns are requested. Only MDLs obtained 
             using <b>StorPortGetOriginalMdl</b> or <b>StorPortGetDataInBufferMdl</b> are supported.</p>
 </dd>
 
-### -param <i>Pfns</i> [out]
+### -param Pfns [out]
 
 <dd>
 <p> A pointer to the beginning of the array of physical page numbers that are associated with the MDL.
               Callers must NOT modify or update or free the list.</p>
 </dd>
 
-### -param <i>PfnCount</i> [out]
+### -param PfnCount [out]
 
 <dd>
 <p>Specifies the number of PFNs in the array.</p>
 </dd>
 
-### -param <i>StartingOffset</i> [out]
+### -param StartingOffset [out]
 
 <dd>
 <p>Specifies the byte offset within the initial page of the buffer described by the given MDL.</p>
@@ -115,7 +115,7 @@ ULONG StorPortGetPfns(
 ## -remarks
 <p> Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the device object for the HBA immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 
-<p>Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a> or <a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>.</p>
+<p>Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a> or <a href="..\storport\ns-storport--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>.</p>
 
 ## -requirements
 <table>

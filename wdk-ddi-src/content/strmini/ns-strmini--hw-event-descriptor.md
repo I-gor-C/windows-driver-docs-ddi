@@ -68,44 +68,44 @@ typedef struct _HW_EVENT_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>This is set to <b>TRUE</b> for an enabled event, and <b>FALSE</b> for a disabled event.</p>
 </dd>
 
-### -field <b>EventEntry</b>
+### -field EventEntry
 
 <dd>
 <p>Points to the <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a> structure that describes this event.</p>
 </dd>
 
-### -field <b>EventData</b>
+### -field EventData
 
 <dd>
 <p>Points to the <a href="stream.kseventdata">KSEVENTDATA</a> structure that describes this instance of the event.</p>
 </dd>
 
-### -field <b>StreamObject</b>
+### -field StreamObject
 
 <dd>
 <p>Points to the <a href="..\strmini\ns-strmini--hw-stream-object~r1.md">HW_STREAM_OBJECT</a> for the stream that owns the event that the class driver is enabling/disabling, or <b>NULL</b> if the event belongs to the driver as a whole.</p>
 </dd>
 
-### -field <b>DeviceExtension</b>
+### -field DeviceExtension
 
 <dd>
 <p>Points to the minidriver's device extension.</p>
 </dd>
 
-### -field <b>EnableEventSetIndex</b>
+### -field EnableEventSetIndex
 
 <dd>
 <p>For stream events, this specifies the index of the event set within the <b>StreamEventsArray</b> member of the stream's <a href="..\strmini\ns-strmini--hw-stream-information.md">HW_STREAM_INFORMATION</a> structure.</p>
 <p>For device events, this specifies the index of the event set within the <b>DeviceEventsArray</b> member of the minidriver's <a href="..\strmini\ns-strmini--hw-stream-header.md">HW_STREAM_HEADER</a> structure.</p>
 </dd>
 
-### -field <b>HwInstanceExtension</b>
+### -field HwInstanceExtension
 
 <dd>
 <p>Pointer to the minidriver's instance extension. The minidriver may use this buffer to record private information global to this instance of the minidriver. The minidriver sets the size of this buffer in the <a href="..\strmini\ns-strmini--hw-initialization-data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>.
@@ -113,13 +113,13 @@ typedef struct _HW_EVENT_DESCRIPTOR {
 </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. Do not use.</p>
 </dd>
 
-### -field <b>Reserved[2]</b>
+### -field Reserved[2]
 
 <dd>
 <p>Reserved for system use. Do not use.</p>

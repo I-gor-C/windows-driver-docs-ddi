@@ -62,31 +62,31 @@ typedef struct _DXGK_CONTEXTINFO_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>NoPatchingRequired</b>
+### -field NoPatchingRequired
 
 <dd>
 <p>Indicates that no memory patching is required.</p>
 </dd>
 
-### -field <b>DriverManagesResidency</b>
+### -field DriverManagesResidency
 
 <dd>
 <p>Indicates that the driver manages memory residency.</p>
 </dd>
 
-### -field <b>UseIoMmu</b>
+### -field UseIoMmu
 
 <dd>
 <p>Indicates that the driver supports IoMmu. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This field is reserved and should not be used.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The consolidated value of the structure.</p>

@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTCreateContextVirtual(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createcontextvirtual.md">D3DKMT_CREATECONTEXTVIRTUAL</a> structure that describes the kernel-mode device context.</p>

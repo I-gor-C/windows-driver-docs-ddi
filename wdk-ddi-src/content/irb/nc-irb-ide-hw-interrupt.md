@@ -57,7 +57,7 @@ BOOLEAN IdeHwInterrupt(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the channel extension.</p>

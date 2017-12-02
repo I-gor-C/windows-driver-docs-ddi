@@ -55,13 +55,13 @@ typedef struct _DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-alpha-fill-mode.md">DXVAHDDDI_ALPHA_FILL_MODE</a>-typed value that indicates the type of alpha-fill mode to set. The default value is DXVAHDDDI_ALPHA_FILL_MODE_BACKGROUND, which indicates to fill the output with the alpha value of the background color. </p>
 </dd>
 
-### -field <b>StreamNumber</b>
+### -field StreamNumber
 
 <dd>
 <p>[in] A zero-based stream index number. This number must be less than the number, which the driver sets in the <b>MaxStreamStates</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure. The driver should refer to this number only when the <b>Mode</b> member is set to DXVAHD_ALPHA_FILL_MODE_SOURCE_STREAM. The default value is zero. </p>

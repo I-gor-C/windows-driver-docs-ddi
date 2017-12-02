@@ -58,31 +58,31 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>Specifies the <a href="stream.kspin_interface">KSPIN_INTERFACE</a> to use for this connection. </p>
 </dd>
 
-### -field <b>Medium</b>
+### -field Medium
 
 <dd>
 <p>A structure of type <a href="stream.kspin_medium">KSPIN_MEDIUM</a> that specifies the medium to use for this connection. </p>
 </dd>
 
-### -field <b>PinId</b>
+### -field PinId
 
 <dd>
 <p>Specifies the pin type ID number. If the PinToHandle field is not <b>NULL</b>, this field contains the identifier of the source pin to which the request is being sent. Otherwise this field refers to the sink pin that is being connected to. If a pin can support being both a source and sink in communications, then this is the implicit method of telling it how it should act in the connection.</p>
 </dd>
 
-### -field <b>PinToHandle</b>
+### -field PinToHandle
 
 <dd>
 <p>Specifies what type of destination pin the create is intended for, and in the case of a source destination, what pin to connect to. This member is <b>NULL</b> when a client requests a connection to itself. Otherwise, it is the target of the connection request. In the case of a source destination, this contains the handle of the pin instance to establish a connection to. In the case of a sink destination, this field contains <b>NULL</b>, and is not otherwise used. </p>
 </dd>
 
-### -field <b>Priority</b>
+### -field Priority
 
 <dd>
 <p>A structure of type <a href="stream.kspriority">KSPRIORITY</a> that specifies the priority for the connection, usually KSPRIORITY_NORMAL. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565104">KSPROPERTY_CONNECTION_PRIORITY</a> property for details.</p>

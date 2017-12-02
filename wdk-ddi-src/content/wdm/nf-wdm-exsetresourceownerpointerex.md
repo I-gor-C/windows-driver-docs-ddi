@@ -57,19 +57,19 @@ VOID ExSetResourceOwnerPointerEx(
 ## -parameters
 <dl>
 
-### -param <i>Resource</i> [in, out]
+### -param Resource [in, out]
 
 <dd>
 <p>A pointer to an executive resource (an opaque <a href="https://msdn.microsoft.com/202b2ef1-bbe4-4ffd-a82b-21f19c145e8d">ERESOURCE</a> structure) that is owned by the calling thread. The caller previously allocated this structure and initialized it by calling the <a href="..\wdm\nf-wdm-exinitializeresourcelite.md">ExInitializeResourceLite</a> routine. For more information, see the following Remarks section. </p>
 </dd>
 
-### -param <i>OwnerPointer</i> [in]
+### -param OwnerPointer [in]
 
 <dd>
 <p>A pointer value that identifies the resource owner. This parameter value is nominally a pointer to a value of type ERESOURCE_THREAD but is cast to type PVOID. The caller must set the two least significant bits of this pointer value to ones. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A set of flags that can modify the operation of this routine. Set this parameter either to zero or to the following flag value:</p>

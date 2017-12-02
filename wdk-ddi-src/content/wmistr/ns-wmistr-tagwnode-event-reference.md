@@ -61,31 +61,31 @@ typedef struct tagWNODE_EVENT_REFERENCE {
 ## -struct-fields
 <dl>
 
-### -field <b>WnodeHeader</b>
+### -field WnodeHeader
 
 <dd>
 <p>Is a <a href="..\wmistr\ns-wmistr--wnode-header.md">WNODE_HEADER</a> structure that contains information common to all <b>WNODE_<i>XXX</i></b> structures, such as the buffer size, the provider ID, the GUID that represents a data block associated with a request, and flags that provide information about the <b>WNODE_<i>XXX</i></b> data being passed or returned.</p>
 </dd>
 
-### -field <b>TargetGuid</b>
+### -field TargetGuid
 
 <dd>
 <p>Indicates the GUID that represents the event to query.</p>
 </dd>
 
-### -field <b>TargetDataBlockSize</b>
+### -field TargetDataBlockSize
 
 <dd>
 <p>Indicates the size of the event.</p>
 </dd>
 
-### -field <b>TargetInstanceIndex</b>
+### -field TargetInstanceIndex
 
 <dd>
 <p>Indicates the index into the driver's list of static instance names for the event. This member is valid only if the event block was registered with static instance names and WNODE_FLAGS_STATIC_INSTANCE_NAMES is set in <b>WnodeHeader.Flags</b>.</p>
 </dd>
 
-### -field <b>TargetInstanceName</b>
+### -field TargetInstanceName
 
 <dd>
 <p>Indicates the dynamic instance name of the event as a counted Unicode string. This member is valid only if WNODE_FLAGS_STATIC_INSTANCE_NAMES is clear in <b>WnodeHeader.Flags</b> and the event block was registered with dynamic instance names.</p>

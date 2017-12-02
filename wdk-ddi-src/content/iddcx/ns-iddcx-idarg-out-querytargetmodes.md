@@ -55,7 +55,7 @@ typedef struct IDARG_OUT_QUERYTARGETMODES {
 ## -struct-fields
 <dl>
 
-### -field <b>TargetModeBufferOutputCount</b>
+### -field TargetModeBufferOutputCount
 
 <dd>
 <p>

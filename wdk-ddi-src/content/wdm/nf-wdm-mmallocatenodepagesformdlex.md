@@ -61,43 +61,43 @@ PMDL MmAllocateNodePagesForMdlEx(
 ## -parameters
 <dl>
 
-### -param <i>LowAddress</i> [in]
+### -param LowAddress [in]
 
 <dd>
 <p>The physical address of the start of the first address range from which the allocated pages can come. If <b>MmAllocateNodePagesForMdlEx</b> cannot allocate the requested number of bytes in the first address range, the routine iterates through additional address ranges to get more pages. At each iteration, <b>MmAllocateNodePagesForMdlEx</b> adds the value of <i>SkipBytes</i> to the previous start address to calculate the start of the next address range.</p>
 </dd>
 
-### -param <i>HighAddress</i> [in]
+### -param HighAddress [in]
 
 <dd>
 <p>The physical address of the end of the first address range that the allocated pages can come from.</p>
 </dd>
 
-### -param <i>SkipBytes</i> [in]
+### -param SkipBytes [in]
 
 <dd>
 <p>The number of bytes to skip from the start of the previous address range that the allocated pages can come from. <i>SkipBytes</i> must be an integer multiple of the virtual memory page size, in bytes.</p>
 </dd>
 
-### -param <i>TotalBytes</i> [in]
+### -param TotalBytes [in]
 
 <dd>
 <p>The total number of bytes to allocate for the MDL.</p>
 </dd>
 
-### -param <i>CacheType</i> [in]
+### -param CacheType [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--memory-caching-type.md">MEMORY_CACHING_TYPE</a> value, which indicates the type of caching that is allowed for the requested memory.</p>
 </dd>
 
-### -param <i>IdealNode</i> [in]
+### -param IdealNode [in]
 
 <dd>
-<p>The ideal node number. If a multiprocessor system contains N nodes, valid node numbers are in the range 0 to N-1. Your driver can call the <a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine to get the highest node number. A single-processor or non-NUMA multiprocessor system has only one node, node 0, from which to allocate memory. For a NUMA multiprocessor system, the allocation is made from the ideal node, if possible. If insufficient memory is available in the ideal node to satisfy the allocation request, and the caller does not set the MM_ALLOCATE_FROM_LOCAL_NODE_ONLY flag, <b>MmAllocateNodePagesForMdlEx</b> will try to allocate memory from other nodes.</p>
+<p>The ideal node number. If a multiprocessor system contains N nodes, valid node numbers are in the range 0 to N-1. Your driver can call the <a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine to get the highest node number. A single-processor or non-NUMA multiprocessor system has only one node, node 0, from which to allocate memory. For a NUMA multiprocessor system, the allocation is made from the ideal node, if possible. If insufficient memory is available in the ideal node to satisfy the allocation request, and the caller does not set the MM_ALLOCATE_FROM_LOCAL_NODE_ONLY flag, <b>MmAllocateNodePagesForMdlEx</b> will try to allocate memory from other nodes.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Flags for this operation. Set this parameter to zero or to the bitwise-OR of one or more of the following flag bits:</p>
@@ -143,7 +143,7 @@ PMDL MmAllocateNodePagesForMdlEx(
 
 <p>Depending on how much physical memory is currently available in the requested ranges, <b>MmAllocateNodePagesForMdlEx</b> might return an MDL that describes less memory than was requested. The routine also might return <b>NULL</b> if no memory was allocated. The caller should check the amount of memory that is actually allocated, as described by the MDL.</p>
 
-<p>The caller must use <a href="..\wdm\nf-wdm-mmfreepagesfrommdl.md">MmFreePagesFromMdl</a> to release the memory pages that are described by an MDL that was created by <b>MmAllocateNodePagesForMdlEx</b>. After calling <b>MmFreePagesFromMdl</b>, the caller must also call <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> to release the memory allocated for the MDL structure.</p>
+<p>The caller must use <a href="..\wdm\nf-wdm-mmfreepagesfrommdl.md">MmFreePagesFromMdl</a> to release the memory pages that are described by an MDL that was created by <b>MmAllocateNodePagesForMdlEx</b>. After calling <b>MmFreePagesFromMdl</b>, the caller must also call <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> to release the memory allocated for the MDL structure.</p>
 
 <p>By default, <b>MmAllocateNodePagesForMdlEx</b> fills the pages that it allocates with zeros. The caller can specify the MM_DONT_ZERO_ALLOCATION flag to override this default and to possibly improve performance.</p>
 
@@ -214,10 +214,10 @@ PMDL MmAllocateNodePagesForMdlEx(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
+<a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
 </dt>
 <dt>
 <a href="..\wdm\ns-wdm--mdl.md">MDL</a>

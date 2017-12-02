@@ -55,13 +55,13 @@ void KsCancelIo(
 ## -parameters
 <dl>
 
-### -param <i>QueueHead</i> [in, out]
+### -param QueueHead [in, out]
 
 <dd>
 <p>Specifies the head of a driver-maintained queue containing the IRP's to be canceled.</p>
 </dd>
 
-### -param <i>SpinLock</i> [in]
+### -param SpinLock [in]
 
 <dd>
 <p>Points to a caller-allocated spin lock for queue access. A copy of this pointer is kept in the IRP's KSQUEUE_SPINLOCK_IRP_STORAGE(Irp) for use by the cancel routine, if necessary.</p>

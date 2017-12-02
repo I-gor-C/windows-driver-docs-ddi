@@ -7,7 +7,7 @@ old-location: netvista\ndis_pm_wake_reason_type.htm
 old-project: netvista
 ms.assetid: 7919226a-4d36-4397-bca1-f7338b3e7ade
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT, *PGET_CONFIGURATION_IOCTL_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,68 +67,68 @@ typedef enum _NDIS_PM_WAKE_REASON_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="NdisWakeReasonUnspecified"></a><a id="ndiswakereasonunspecified"></a><a id="NDISWAKEREASONUNSPECIFIED"></a><b>NdisWakeReasonUnspecified</b>
+### -field NdisWakeReasonUnspecified
 
 <dd>
 <p>The type of wake-up event is not specified.</p>
 </dd>
 
-### -field <a id="NdisWakeReasonPacket"></a><a id="ndiswakereasonpacket"></a><a id="NDISWAKEREASONPACKET"></a><b>NdisWakeReasonPacket</b>
+### -field NdisWakeReasonPacket
 
 <dd>
 <p>The network adapter generated the wake-up event because it received a packet that matched a wake-on-LAN (WOL) pattern.</p>
 </dd>
 
-### -field <a id="NdisWakeReasonMediaDisconnect"></a><a id="ndiswakereasonmediadisconnect"></a><a id="NDISWAKEREASONMEDIADISCONNECT"></a><b>NdisWakeReasonMediaDisconnect</b>
+### -field NdisWakeReasonMediaDisconnect
 
 <dd>
 <p>The network adapter generated the wake-up event because it disconnected from the network media.</p>
 </dd>
 
-### -field <a id="NdisWakeReasonMediaConnect"></a><a id="ndiswakereasonmediaconnect"></a><a id="NDISWAKEREASONMEDIACONNECT"></a><b>NdisWakeReasonMediaConnect</b>
+### -field NdisWakeReasonMediaConnect
 
 <dd>
 <p>The network adapter generated the wake-up event because it connected to the network media.</p>
 </dd>
 
-### -field <a id="NdisWakeReasonWlanNLODiscovery"></a><a id="ndiswakereasonwlannlodiscovery"></a><a id="NDISWAKEREASONWLANNLODISCOVERY"></a><b>NdisWakeReasonWlanNLODiscovery</b>
+### -field NdisWakeReasonWlanNLODiscovery
 
 <dd>
 <p>The 802.11 network adapter generated the wake-up event because it detected a service set identifier (SSID) that was specified through a network list offload (NLO). </p>
-<p>For more information about NLO, see <a href="NULL">Wi-Fi Network List Offload</a>.</p>
+<p>For more information about NLO, see <a href="netvista.wi-fi_network_list_offload">Wi-Fi Network List Offload</a>.</p>
 </dd>
 
-### -field <a id="NdisWakeReasonWlanAPAssociationLost"></a><a id="ndiswakereasonwlanapassociationlost"></a><a id="NDISWAKEREASONWLANAPASSOCIATIONLOST"></a><b>NdisWakeReasonWlanAPAssociationLost</b>
+### -field NdisWakeReasonWlanAPAssociationLost
 
 <dd>
 <p>The 802.11 network adapter generated the wake-up event because it became disassociated with the access point (AP).</p>
 </dd>
 
-### -field <a id="NdisWakeReasonWlanGTKHandshakeError"></a><a id="ndiswakereasonwlangtkhandshakeerror"></a><a id="NDISWAKEREASONWLANGTKHANDSHAKEERROR"></a><b>NdisWakeReasonWlanGTKHandshakeError</b>
+### -field NdisWakeReasonWlanGTKHandshakeError
 
 <dd>
 <p>The 802.11 network adapter generated the wake-up event because it encountered an error during the IEEE 802.11i RSN group transient key (GTK) handshake with the AP.</p>
 </dd>
 
-### -field <a id="NdisWakeReasonWlan4WayHandshakeRequest"></a><a id="ndiswakereasonwlan4wayhandshakerequest"></a><a id="NDISWAKEREASONWLAN4WAYHANDSHAKEREQUEST"></a><b>NdisWakeReasonWlan4WayHandshakeRequest</b>
+### -field NdisWakeReasonWlan4WayHandshakeRequest
 
 <dd>
 <p>The 802.11 network adapter generated the wake-up event because it received the first frame of the IEEE 802.11i RSN 4-way handshake with the AP. This handshake is performed when the adapter authenticates with the AP.</p>
 </dd>
 
-### -field <a id="NdisWakeReasonWwanRegisterState"></a><a id="ndiswakereasonwwanregisterstate"></a><a id="NDISWAKEREASONWWANREGISTERSTATE"></a><b>NdisWakeReasonWwanRegisterState</b>
+### -field NdisWakeReasonWwanRegisterState
 
 <dd>
 <p>The mobile broadband (MB) network adapter generated the wake-up event because its registration state to the MB Service has changed.</p>
 </dd>
 
-### -field <a id="NdisWakeReasonWwanSMSReceive"></a><a id="ndiswakereasonwwansmsreceive"></a><a id="NDISWAKEREASONWWANSMSRECEIVE"></a><b>NdisWakeReasonWwanSMSReceive</b>
+### -field NdisWakeReasonWwanSMSReceive
 
 <dd>
 <p>The mobile broadband (MB) network adapter generated the wake-up event because the MB Service has to be notified about the receipt of a Short Message Service (SMS) message. The adapter generates this wake-up event either after the completion of a previously-issued <a href="https://msdn.microsoft.com/library/windows/hardware/ff569839">OID_WWAN_SMS_READ</a> query request, or the arrival of a new class-0 (flash/alert) message from the network provider as an event notification.</p>
 </dd>
 
-### -field <a id="NdisWakeReasonWwanUSSDReceive"></a><a id="ndiswakereasonwwanussdreceive"></a><a id="NDISWAKEREASONWWANUSSDRECEIVE"></a><b>NdisWakeReasonWwanUSSDReceive</b>
+### -field NdisWakeReasonWwanUSSDReceive
 
 <dd>
 <p>The mobile broadband (MB) network adapter generated the wake-up event because it received an Unstructured Supplementary Service Data (USSD) message.</p>
@@ -170,4 +170,4 @@ typedef enum _NDIS_PM_WAKE_REASON_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_WAKE_REASON_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_WAKE_REASON_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

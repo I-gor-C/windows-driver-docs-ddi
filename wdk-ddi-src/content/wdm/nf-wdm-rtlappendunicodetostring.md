@@ -56,13 +56,13 @@ NTSTATUS RtlAppendUnicodeToString(
 ## -parameters
 <dl>
 
-### -param <i>Destination</i> [in, out]
+### -param Destination [in, out]
 
 <dd>
 <p>A pointer to the buffered string. </p>
 </dd>
 
-### -param <i>Source</i> [in, optional]
+### -param Source [in, optional]
 
 <dd>
 <p>A pointer to the null-terminated string to append to the <i>Destination</i> string.</p>

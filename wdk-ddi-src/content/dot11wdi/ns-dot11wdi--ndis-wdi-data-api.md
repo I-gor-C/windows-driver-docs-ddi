@@ -7,7 +7,7 @@ old-location: netvista\ndis_wdi_data_api.htm
 old-project: netvista
 ms.assetid: 8C26D62E-711A-4CE7-BD2B-D78B794C67FB
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WDI_DATA_API, NDIS_WDI_DATA_API, *PNDIS_WDI_DATA_API
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,7 +71,7 @@ typedef struct _NDIS_WDI_DATA_API {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -85,7 +85,7 @@ typedef struct _NDIS_WDI_DATA_API {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_OBJECT_TYPE_WDI_DATA_API_REVISION_1"></a><a id="ndis_object_type_wdi_data_api_revision_1"></a>NDIS_OBJECT_TYPE_WDI_DATA_API_REVISION_1
+### -field NDIS_OBJECT_TYPE_WDI_DATA_API_REVISION_1
 
 <dd>
 <p>Set the 
@@ -94,97 +94,97 @@ typedef struct _NDIS_WDI_DATA_API {
 </dl>
 </dd>
 
-### -field <b>TxDequeueIndication</b>
+### -field TxDequeueIndication
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-tx-dequeue-ind.md">NdisWdiTxDequeueIndication</a> callback function.</p>
 </dd>
 
-### -field <b>TxTransferCompleteIndication</b>
+### -field TxTransferCompleteIndication
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-tx-transfer-complete-ind.md">NdisWdiTxTransferCompleteIndication</a> callback function.</p>
 </dd>
 
-### -field <b>TxSendCompleteIndication</b>
+### -field TxSendCompleteIndication
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-tx-send-complete-ind.md">NdisWdiTxSendCompleteIndication</a> callback function.</p>
 </dd>
 
-### -field <b>TxQueryRATIDState</b>
+### -field TxQueryRATIDState
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-tx-query-ra-tid-state.md">NdisWdiTxQueryRATIDState</a> callback function.</p>
 </dd>
 
-### -field <b>TxSendPauseIndication</b>
+### -field TxSendPauseIndication
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-tx-send-pause-ind.md">NdisWdiTxSendPauseIndication</a> callback function.</p>
 </dd>
 
-### -field <b>TxSendRestartIndication</b>
+### -field TxSendRestartIndication
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-tx-send-restart-ind.md">NdisWdiTxSendRestartIndication</a> callback function.</p>
 </dd>
 
-### -field <b>TxReleaseFrameIndication</b>
+### -field TxReleaseFrameIndication
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-tx-release-frames-ind.md">NdisWdiTxReleaseFrameIndication</a> callback function.</p>
 </dd>
 
-### -field <b>TxInjectFrameIndication</b>
+### -field TxInjectFrameIndication
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-tx-inject-frame-ind.md">NdisWdiTxInjectFrameIndication</a> callback function.</p>
 </dd>
 
-### -field <b>TxAbortConfirm</b>
+### -field TxAbortConfirm
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-tx-abort-confirm.md">NdisWdiTxAbortConfirm</a> callback function.</p>
 </dd>
 
-### -field <b>RxInorderDataIndication</b>
+### -field RxInorderDataIndication
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-rx-inorder-data-ind.md">NdisWdiRxInorderDataIndication</a> callback function.</p>
 </dd>
 
-### -field <b>RxStopConfirm</b>
+### -field RxStopConfirm
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-rx-stop-confirm.md">NdisWdiRxStopConfirm</a> callback function.</p>
 </dd>
 
-### -field <b>RxFlushConfirm</b>
+### -field RxFlushConfirm
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-rx-flush-confirm.md">NdisWdiRxFlushConfirm</a> callback function.</p>
 </dd>
 
-### -field <b>PeerCreateIndication</b>
+### -field PeerCreateIndication
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-peer-create-ind.md">NdisWdiPeerCreateIndication</a> callback function.</p>
 </dd>
 
-### -field <b>PeerDeleteIndication</b>
+### -field PeerDeleteIndication
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-peer-delete-ind.md">NdisWdiPeerDeleteIndication</a> callback function.</p>
 </dd>
 
-### -field <b>AllocateWiFiFrameMetaData</b>
+### -field AllocateWiFiFrameMetaData
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-allocate-wdi-frame-metadata.md">NdisWdiAllocateWiFiFrameMetaData</a> callback function.</p>
 </dd>
 
-### -field <b>FreeWiFiFrameMetaData</b>
+### -field FreeWiFiFrameMetaData
 
 <dd>
 <p>The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis-wdi-free-wdi-frame-metadata.md">NdisWdiFreeWiFiFrameMetaData</a> callback function.</p>

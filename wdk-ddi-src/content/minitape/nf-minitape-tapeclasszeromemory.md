@@ -55,13 +55,13 @@ VOID TapeClassZeroMemory(
 ## -parameters
 <dl>
 
-### -param <i>Buffer</i> [in, out]
+### -param Buffer [in, out]
 
 <dd>
 <p>Pointer to the buffer that needs to be cleared.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size of the buffer, in bytes.</p>

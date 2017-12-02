@@ -56,13 +56,13 @@ VOID RtlClearBit(
 ## -parameters
 <dl>
 
-### -param <i>BitMapHeader</i> [in]
+### -param BitMapHeader [in]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a> routine. </p>
 </dd>
 
-### -param <i>BitNumber</i> [in]
+### -param BitNumber [in]
 
 <dd>
 <p>Specifies the zero-based index of the bit within the bitmap. The routine sets this bit to zero. </p>

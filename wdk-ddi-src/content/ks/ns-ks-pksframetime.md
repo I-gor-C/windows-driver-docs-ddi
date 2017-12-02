@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Duration</b>
+### -field Duration
 
 <dd>
 <p>Specifies the duration in presentation time units.</p>
 </dd>
 
-### -field <b>FrameFlags</b>
+### -field FrameFlags
 
 <dd>
 <p>Specifies the flags specific to the next frame, or to all frames. Flags are described on the reference page for <a href="stream.ksallocator_framing">KSALLOCATOR_FRAMING</a>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Set to zero.</p>

@@ -96,61 +96,61 @@ typedef struct _DXGK_SPB_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of the SPB interface. Version number constants are defined in Dispmprt.h (for example, DXGK_SPB_INTERFACE_VERSION_1).</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to a context that is provided by the display miniport driver.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to an interface reference function that is implemented by the display miniport driver.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to an interface dereference function that is implemented by the display miniport driver.</p>
 </dd>
 
-### -field <b>OpenSpbResource</b>
+### -field OpenSpbResource
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.openspbresource">OpenSpbResource</a> function.</p>
 </dd>
 
-### -field <b>CloseSpbResource</b>
+### -field CloseSpbResource
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.closespbresource">CloseSpbResource</a> function.</p>
 </dd>
 
-### -field <b>ReadSpbResource</b>
+### -field ReadSpbResource
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.readspbresource">ReadSpbResource</a> function.</p>
 </dd>
 
-### -field <b>WriteSpbResource</b>
+### -field WriteSpbResource
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.writespbresource">WriteSpbResource</a> function.</p>
 </dd>
 
-### -field <b>SpbResourceIoControl</b>
+### -field SpbResourceIoControl
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="display.spbresourceiocontrol">SpbResourceIoControl</a> function.</p>

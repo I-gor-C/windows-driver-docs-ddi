@@ -55,7 +55,7 @@ BOOLEAN KeTryToAcquireGuardedMutex(
 ## -parameters
 <dl>
 
-### -param <i>Mutex</i> [in, out]
+### -param Mutex [in, out]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554235">KGUARDED_MUTEX</a> structure for the guarded mutex.</p>

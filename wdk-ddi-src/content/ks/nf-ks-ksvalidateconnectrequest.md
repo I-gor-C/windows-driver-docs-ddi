@@ -58,25 +58,25 @@ NTSTATUS KsValidateConnectRequest(
 ## -parameters
 <dl>
 
-### -param <i>Irp </i> [in]
+### -param Irp  [in]
 
 <dd>
 <p>Pointer to an IRP specifying the connection request.</p>
 </dd>
 
-### -param <i>DescriptorsCount </i> [in]
+### -param DescriptorsCount  [in]
 
 <dd>
 <p>Specifies the number of pin descriptors passed.</p>
 </dd>
 
-### -param <i>Descriptor </i> [in]
+### -param Descriptor  [in]
 
 <dd>
 <p>Specifies a pointer to the list of <a href="stream.kspin_descriptor">KSPIN_DESCRIPTOR</a> structures.</p>
 </dd>
 
-### -param <i>Connect </i> [out]
+### -param Connect  [out]
 
 <dd>
 <p>Specifies a location in which to place a pointer to the <a href="stream.kspin_connect">KSPIN_CONNECT</a> pointer passed to the create request. If <b>KsValidateConnectRequest</b>  returns success, then Connect+1 will contain a pointer to the KSDATAFORMAT with which the pin was opened.</p>

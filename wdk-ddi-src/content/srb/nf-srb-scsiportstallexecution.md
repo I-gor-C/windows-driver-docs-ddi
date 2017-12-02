@@ -55,7 +55,7 @@ VOID ScsiPortStallExecution(
 ## -parameters
 <dl>
 
-### -param <i>Delay</i> [in]
+### -param Delay [in]
 
 <dd>
 <p>Specifies the delay interval in microseconds. The given value must be less than a full millisecond.</p>

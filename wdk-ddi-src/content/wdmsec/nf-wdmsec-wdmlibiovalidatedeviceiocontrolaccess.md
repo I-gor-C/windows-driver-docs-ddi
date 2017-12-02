@@ -56,13 +56,13 @@ NTSTATUS WdmlibIoValidateDeviceIoControlAccess(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>Specifies the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> on which to perform the access check.</p>
+<p>Specifies the <a href="..\wdm\ns-wdm--irp.md">IRP</a> on which to perform the access check.</p>
 </dd>
 
-### -param <i>RequiredAccess</i> [in]
+### -param RequiredAccess [in]
 
 <dd>
 <p>Specifies the type of access to the device object that the request sender must have. The caller can specify one or more of the following flags.</p>
@@ -74,7 +74,7 @@ NTSTATUS WdmlibIoValidateDeviceIoControlAccess(
 <tr>
 <td width="40%"><a id="FILE_READ_ACCESS"></a><a id="file_read_access"></a><dl>
 
-### -param <b>FILE_READ_ACCESS</b>
+### -param FILE_READ_ACCESS
 
 </dl>
 </td>
@@ -85,7 +85,7 @@ NTSTATUS WdmlibIoValidateDeviceIoControlAccess(
 <tr>
 <td width="40%"><a id="FILE_WRITE_ACCESS"></a><a id="file_write_access"></a><dl>
 
-### -param <b>FILE_WRITE_ACCESS</b>
+### -param FILE_WRITE_ACCESS
 
 </dl>
 </td>
@@ -115,7 +115,7 @@ NTSTATUS WdmlibIoValidateDeviceIoControlAccess(
 <p>For example, if an IOCTL is defined with a <i>RequiredAccess</i> value of FILE_ANY_ACCESS, then by default any request sender with SYNCHRONIZE access to the device object can send the IOCTL. Use 
              <b>WdmlibIoValidateDeviceIoControlAccess</b> to require more stringent security at run time. For more information about the <i>RequiredAccess</i> value of an IOCTL, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543023">Defining I/O Control Codes</a>.</p>
 
-<p>The access checks are only performed if the <b>RequestorMode</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure is <b>UserMode</b>. If <b>RequestorMode</b> is <b>KernelMode</b>, the routine automatically returns STATUS_SUCCESS.</p>
+<p>The access checks are only performed if the <b>RequestorMode</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure is <b>UserMode</b>. If <b>RequestorMode</b> is <b>KernelMode</b>, the routine automatically returns STATUS_SUCCESS.</p>
 
 ## -requirements
 <table>
@@ -180,7 +180,7 @@ NTSTATUS WdmlibIoValidateDeviceIoControlAccess(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 </dl>
 <p> </p>

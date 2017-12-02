@@ -58,13 +58,13 @@ VOID KStrFreeFrame(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to a <a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a> structure for which this frame has been allocated.</p>
 </dd>
 
-### -param <i>Frame</i> [in]
+### -param Frame [in]
 
 <dd>
 <p>A pointer to a buffer containing the frame to release.</p>

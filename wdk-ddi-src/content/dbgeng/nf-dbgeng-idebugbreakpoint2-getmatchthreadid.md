@@ -7,7 +7,7 @@ old-location: debugger\getmatchthreadid.htm
 old-project: debugger
 ms.assetid: 0f0f7248-de85-4757-8006-48444af8edac
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugBreakpoint2, GetMatchThreadId, IDebugBreakpoint2::GetMatchThreadId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetMatchThreadId(
 ## -parameters
 <dl>
 
-### -param <i>Id</i> [out]
+### -param Id [out]
 
 <dd>
 <p>The engine thread ID of the thread that can trigger this breakpoint.</p>
@@ -70,7 +70,7 @@ HRESULT GetMatchThreadId(
 
 <p> </p>
 
-<p>This method can also return other error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
+<p>This method can also return other error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.</p>
 
 ## -remarks
 <p>If you have set a thread for the breakpoint, the breakpoint can be triggered only if that thread hits the breakpoint.  If you have not set a thread , any thread can trigger the breakpoint and <i>Id</i> receives <b>NULL</b>.</p>

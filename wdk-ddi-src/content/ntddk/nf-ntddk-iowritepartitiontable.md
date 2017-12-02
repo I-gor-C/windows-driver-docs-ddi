@@ -59,31 +59,31 @@ NTSTATUS FASTCALL IoWritePartitionTable(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object representing the disk whose partition tables are to be written.</p>
 </dd>
 
-### -param <i>SectorSize</i> [in]
+### -param SectorSize [in]
 
 <dd>
 <p>Specifies the size in bytes of sectors on the device.</p>
 </dd>
 
-### -param <i>SectorsPerTrack</i> [in]
+### -param SectorsPerTrack [in]
 
 <dd>
 <p>Specifies the track size on the device.</p>
 </dd>
 
-### -param <i>NumberOfHeads</i> [in]
+### -param NumberOfHeads [in]
 
 <dd>
 <p>Specifies the number of tracks per cylinder.</p>
 </dd>
 
-### -param <i>PartitionBuffer</i> [in]
+### -param PartitionBuffer [in]
 
 <dd>
 <p>Pointer to the drive layout buffer that contains the partition list entries. For more detailed information see <a href="..\ntdddisk\ns-ntdddisk--drive-layout-information.md">DRIVE_LAYOUT_INFORMATION</a>.</p>

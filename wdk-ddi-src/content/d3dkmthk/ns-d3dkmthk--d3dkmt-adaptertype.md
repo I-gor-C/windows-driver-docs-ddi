@@ -58,31 +58,31 @@ typedef struct _D3DKMT_ADAPTERTYPE {
 ## -struct-fields
 <dl>
 
-### -field <b>RenderSupported</b>
+### -field RenderSupported
 
 <dd>
 <p>The adapter supports a render device.</p>
 </dd>
 
-### -field <b>DisplaySupported</b>
+### -field DisplaySupported
 
 <dd>
 <p>The adapter supports a display device.</p>
 </dd>
 
-### -field <b>SoftwareDevice</b>
+### -field SoftwareDevice
 
 <dd>
 <p>The adapter supports a non-plug and play (PnP) device that is implemented in software.</p>
 </dd>
 
-### -field <b>PostDevice</b>
+### -field PostDevice
 
 <dd>
 <p>The adapter supports a power-on self-test (POST) device.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>

@@ -60,43 +60,43 @@ typedef struct _FEATURE_DATA_CD_AUDIO_ANALOG_PLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>SeperateVolume</b>
+### -field SeperateVolume
 
 <dd>
 <p>Indicates, when set to zero, that all audio channels have the same volume level. When set to 1, it indicates that the volume of each audio channel can be set separately. </p>
 </dd>
 
-### -field <b>SeperateChannelMute</b>
+### -field SeperateChannelMute
 
 <dd>
 <p>Indicates, when set to zero, that all audio channels are muted simultaneously. When set to 1, it indicates that each audio channel can be muted independently. </p>
 </dd>
 
-### -field <b>ScanSupported</b>
+### -field ScanSupported
 
 <dd>
 <p>Indicates, when set to 1, that the SCAN command is supported. See the <i>SCSI Multimedia 3 </i>(<i>MMC-3</i>) specification for a description of the SCAN command. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>NumerOfVolumeLevels</b>
+### -field NumerOfVolumeLevels
 
 <dd></dd>
 </dl>

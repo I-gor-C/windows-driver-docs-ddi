@@ -59,19 +59,19 @@ void _Must_inspect_result_ _IRQL_requires_max_(PASSIVE_LEVEL) KSDDKAPI NTSTATUS 
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> 
+### -param Irp 
 
 <dd>
 <p>The IRP passed from the user mode containing the user-mode sample buffer.</p>
 </dd>
 
-### -param <i>Guid</i> 
+### -param Guid 
 
 <dd>
 <p>The GUID extracted from the <b>MFSampleExtension_MDLCacheCookie</b> attribute item of the <b>IMFSample</b> passed by the pipeline.</p>
 </dd>
 
-### -param <i>CancelRoutine</i> 
+### -param CancelRoutine 
 
 <dd>
 <p>Cancel routine, a callback function supplied by the Avstream miniport driver. This function is called when the state of the pin generating the sample is going to STOP state.  The signature of the cancel routine is as follows:</p>
@@ -94,21 +94,21 @@ VOID
 </table></span></div>
 <dl class="indent">
 
-### -param <a id="GUID"></a><a id="guid"></a><p><a id="GUID"></a><a id="guid"></a><b><b>GUID</b></b></p>
+### -param GUID
 
 
 <dd>
 <p>GUID passed in the <b>KsAcquireCachedMdl</b> function by the Avstream miniport driver.</p>
 </dd>
 
-### -param <a id="PVOID"></a><a id="pvoid"></a><p><a id="PVOID"></a><a id="pvoid"></a><b><b>PVOID</b></b></p>
+### -param PVOID
 
 
 <dd>
 <p>Cancel context supplied by the Avstream miniport driver in the <b>KsAcquireCachedMdl</b> function call.</p>
 </dd>
 
-### -param <a id="PVOID"></a><a id="pvoid"></a><p><a id="PVOID"></a><a id="pvoid"></a><b><b>PVOID</b></b></p>
+### -param PVOID
 
 
 <dd>
@@ -117,19 +117,19 @@ VOID
 </dl>
 </dd>
 
-### -param <i>CancelContext</i> 
+### -param CancelContext 
 
 <dd>
 <p>The context passed to the Avstream driver in the cancel routine. This context is used by the Avstream driver to get into the driver context.</p>
 </dd>
 
-### -param <i>*MdlAddr</i> 
+### -param *MdlAddr 
 
 <dd>
 <p>Return value: The resultant MDL if KS finds the MDL stored for the sample buffer.</p>
 </dd>
 
-### -param <i>ReleaseContext</i> 
+### -param ReleaseContext 
 
 <dd>
 <p>Return value: The context to be stored by Avstream driver. This context should be passed to KS when releasing the MDL acquired by the <b>KsAcquireCachedMdl</b> call.

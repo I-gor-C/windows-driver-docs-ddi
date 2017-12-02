@@ -56,19 +56,19 @@ typedef enum D3D11_1DDI_VIDEO_FRAME_FORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_FRAME_FORMAT_PROGRESSIVE"></a><a id="d3d11_1ddi_video_frame_format_progressive"></a><b>D3D11_1DDI_VIDEO_FRAME_FORMAT_PROGRESSIVE</b>
+### -field D3D11_1DDI_VIDEO_FRAME_FORMAT_PROGRESSIVE
 
 <dd>
 <p>Frames are progressive.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST"></a><a id="d3d11_1ddi_video_frame_format_interlaced_top_field_first"></a><b>D3D11_1DDI_VIDEO_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST</b>
+### -field D3D11_1DDI_VIDEO_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST
 
 <dd>
 <p>Frames are interlaced. The top field of each frame is displayed first.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST"></a><a id="d3d11_1ddi_video_frame_format_interlaced_bottom_field_first"></a><b>D3D11_1DDI_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST</b>
+### -field D3D11_1DDI_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST
 
 <dd>
 <p>Frame are interlaced. The bottom field of each frame is displayed first.</p>

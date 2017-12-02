@@ -7,7 +7,7 @@ old-location: image\wias_endorser_info.htm
 old-project: image
 ms.assetid: 4874ddab-5443-4e03-8f49-493682dabac1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: WIAS_ENDORSER_INFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _WIAS_ENDORSER_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ulPageCount</b>
+### -field ulPageCount
 
 <dd>
 <p>Specifies the value that will replace the $PAGE_COUNT$ token, provided that the endorser string contains that token.</p>
 </dd>
 
-### -field <b>ulNumEndorserValues</b>
+### -field ulNumEndorserValues
 
 <dd>
 <p>Specifies the number of token/value pairs. This member will be 0 if there are no custom token/value pairs.</p>
 </dd>
 
-### -field <b>pEndorserValues</b>
+### -field pEndorserValues
 
 <dd>
 <p>Points to an array of <a href="..\wiamindr_lh\ns-wiamindr-lh--wias-endorser-value.md">WIAS_ENDORSER_VALUE</a> structures, holding custom token/value pairs. If the value of the <b>ulNumEndorserValues</b> member is 0, this member should be <b>NULL</b>.</p>
@@ -112,4 +112,4 @@ typedef struct _WIAS_ENDORSER_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIAS_ENDORSER_INFO structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIAS_ENDORSER_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

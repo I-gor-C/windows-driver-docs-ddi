@@ -56,19 +56,19 @@ typedef struct _HBAFCPScsiEntry {
 ## -struct-fields
 <dl>
 
-### -field <b>FCPId</b>
+### -field FCPId
 
 <dd>
 <p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpid.md">HBAFCPID</a> that contains the FCP identifier for the logical unit and information about the port to be queried for information about the device.</p>
 </dd>
 
-### -field <b>Luid</b>
+### -field Luid
 
 <dd>
 <p>Contains the logical unit descriptor for the device that the operating system derives from SCSI inquiry data. </p>
 </dd>
 
-### -field <b>ScsiId</b>
+### -field ScsiId
 
 <dd>
 <p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbascsiid.md">HBAScsiID</a> that contains the information that uniquely identifies a logical unit for the operating system. </p>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_miniport_adapter_native_802_11_attributes.htm
 old-project: netvista
 ms.assetid: f841c7f9-9ad3-4b53-b2d9-0d66d6e64b8b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure. This
@@ -78,13 +78,13 @@ typedef struct {
 <p></p>
 <dl>
 
-### -field <a id="Type"></a><a id="type"></a><a id="TYPE"></a><b>Type</b>
+### -field Type
 
 <dd>
 <p>This member must be set to NDIS_OBJECT_TYPE_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES.</p>
 </dd>
 
-### -field <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a><b>Revision</b>
+### -field Revision
 
 <dd>
 <p>For the Windows Vista or Windows Server 2008 operating systems, this member must be set to
@@ -93,7 +93,7 @@ typedef struct {
         NDIS_MINIPORT_ADAPTER_802_11_ATTRIBUTES_REVISION_2.</p>
 </dd>
 
-### -field <a id="Size"></a><a id="size"></a><a id="SIZE"></a><b>Size</b>
+### -field Size
 
 <dd>
 <p>For the Windows Vista or Windows Server 2008 operating systems, this member must be set to
@@ -106,7 +106,7 @@ typedef struct {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>OpModeCapability</b>
+### -field OpModeCapability
 
 <dd>
 <p>A bitmask of the miniport driver's supported operation modes. This bitmask is defined through the
@@ -115,7 +115,7 @@ typedef struct {
 <p></p>
 <dl>
 
-### -field <a id="DOT11_OPERATION_MODE_EXTENSIBLE_AP"></a><a id="dot11_operation_mode_extensible_ap"></a>DOT11_OPERATION_MODE_EXTENSIBLE_AP
+### -field DOT11_OPERATION_MODE_EXTENSIBLE_AP
 
 <dd>
 <p>Specifies that the miniport driver supports the Extensible Access Point (ExtAP) operation mode.
@@ -123,14 +123,14 @@ typedef struct {
 <p>This value is available beginning with Windows 7.</p>
 </dd>
 
-### -field <a id="DOT11_OPERATION_MODE_EXTENSIBLE_STATION"></a><a id="dot11_operation_mode_extensible_station"></a>DOT11_OPERATION_MODE_EXTENSIBLE_STATION
+### -field DOT11_OPERATION_MODE_EXTENSIBLE_STATION
 
 <dd>
 <p>Specifies that the miniport driver supports the Extensible Station (ExtSTA) operation
        mode.</p>
 </dd>
 
-### -field <a id="DOT11_OPERATION_MODE_NETWORK_MONITOR"></a><a id="dot11_operation_mode_network_monitor"></a>DOT11_OPERATION_MODE_NETWORK_MONITOR
+### -field DOT11_OPERATION_MODE_NETWORK_MONITOR
 
 <dd>
 <p>Specifies that the miniport driver supports the Network Monitor (NetMon) operation mode.</p>
@@ -141,7 +141,7 @@ typedef struct {
      Modes</a>.</p>
 </dd>
 
-### -field <b>NumOfTXBuffers</b>
+### -field NumOfTXBuffers
 
 <dd>
 <p>The maximum number of media access control (MAC) service data unit (MSDU) packets that the 802.11
@@ -152,14 +152,14 @@ typedef struct {
      to send packets on its own, such as Beacon packets or 802.11 control packets.</p>
 </dd>
 
-### -field <b>NumOfRXBuffers</b>
+### -field NumOfRXBuffers
 
 <dd>
 <p>The maximum number of MSDU packets that the 802.11 station can buffer in its receive queue. The
      miniport driver must support a minimum receive queue depth of 64.</p>
 </dd>
 
-### -field <b>MultiDomainCapabilityImplemented</b>
+### -field MultiDomainCapabilityImplemented
 
 <dd>
 <p>A Boolean value that, if <b>TRUE</b>, specifies that the 802.11 station can operate in multiple
@@ -167,13 +167,13 @@ typedef struct {
      standard.</p>
 </dd>
 
-### -field <b>NumSupportedPhys</b>
+### -field NumSupportedPhys
 
 <dd>
 <p>The number of PHYs on the 802.11 station.</p>
 </dd>
 
-### -field <b>SupportedPhyAttributes</b>
+### -field SupportedPhyAttributes
 
 <dd>
 <p>A pointer to an array of 
@@ -185,7 +185,7 @@ typedef struct {
      OID_DOT11_SUPPORTED_PHY_TYPES</a>.</p>
 </dd>
 
-### -field <b>ExtSTAAttributes</b>
+### -field ExtSTAAttributes
 
 <dd>
 <p>A pointer to a 
@@ -196,7 +196,7 @@ typedef struct {
      Mode</a>.</p>
 </dd>
 
-### -field <b>VWiFiAttributes</b>
+### -field VWiFiAttributes
 
 <dd>
 <p>A pointer to a 
@@ -206,7 +206,7 @@ typedef struct {
 <p>This member is available beginning with Windows 7.</p>
 </dd>
 
-### -field <b>ExtAPAttributes</b>
+### -field ExtAPAttributes
 
 <dd>
 <p>A pointer to a 
@@ -216,7 +216,7 @@ typedef struct {
 <p>This member is available beginning with Windows 7.</p>
 </dd>
 
-### -field <b>WFDAttributes</b>
+### -field WFDAttributes
 
 <dd>
 <p>A pointer to a 
@@ -311,7 +311,7 @@ typedef struct {
    Driver Initialization</a>
 </dt>
 <dt>
-<a href="NULL">Native 802.11 Operation Modes</a>
+<a href="netvista.native_802_11_operation_modes">Native 802.11 Operation Modes</a>
 </dt>
 <dt>
 <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
@@ -322,4 +322,4 @@ typedef struct {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -55,13 +55,13 @@ typedef struct _DXVAHDDDI_STREAM_STATE_ROTATION_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>A Boolean value that specifies whether the driver should rotate the output surface. The default value is <b>FALSE</b>, which indicates that rotation is disabled.</p>
 </dd>
 
-### -field <b>Rotation</b>
+### -field Rotation
 
 <dd>
 <p>The clockwise degrees of rotation as specified by a <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-rotation.md">DXVAHDDDI_ROTATION</a> enumeration value.</p>

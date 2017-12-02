@@ -58,13 +58,13 @@ VOID APIENTRY IaSetInputLayout(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hInputLayout</i> [in]
+### -param hInputLayout [in]
 
 <dd>
 <p> A handle to the input layout object.</p>

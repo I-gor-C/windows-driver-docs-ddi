@@ -54,7 +54,7 @@ NTSTATUS PsRemoveLoadImageNotifyRoutine(
 ## -parameters
 <dl>
 
-### -param <i>NotifyRoutine</i> [in]
+### -param NotifyRoutine [in]
 
 <dd>
 <p>Pointer to the callback routine that the driver has previously registered through <a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>. </p>

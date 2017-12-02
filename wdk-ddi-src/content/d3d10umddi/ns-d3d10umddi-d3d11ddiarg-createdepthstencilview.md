@@ -62,43 +62,43 @@ typedef struct D3D11DDIARG_CREATEDEPTHSTENCILVIEW {
 ## -struct-fields
 <dl>
 
-### -field <b>hDrvResource</b>
+### -field hDrvResource
 
 <dd>
 <p>[in] A handle to the base depth stencil resource. </p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>[in] A DXGI_FORMAT-typed value that indicates the pixel format of the depth-stencil view.</p>
 </dd>
 
-### -field <b>ResourceDimension</b>
+### -field ResourceDimension
 
 <dd>
 <p>[in] A <a href="display.d3d10ddiresource_type">D3D10DDIRESOURCE_TYPE</a>-typed value that indicates the resource type and dimensionality of the base resource. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A valid bitwise OR of <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-ddi-createdepthstencilview-flag.md">D3D11_DDI_CREATEDEPTHSTENCILVIEW_FLAG</a>-typed values that indicates the type of depth-stencil view to create. </p>
 </dd>
 
-### -field <b>Tex1D</b>
+### -field Tex1D
 
 <dd>
 <p>[in] If the value in the <b>ResourceDimension</b> member is set to D3D10DDIRESOURCE_TEXTURE1D, a member in the union that is contained in D3D10DDIARG_CREATEDEPTHSTENCILVIEW that can hold a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-tex1d-depthstencilview.md">D3D10DDIARG_TEX1D_DEPTHSTENCILVIEW</a> structure for a one-dimensional texture. </p>
 </dd>
 
-### -field <b>Tex2D</b>
+### -field Tex2D
 
 <dd>
 <p>[in] If the value in the <b>ResourceDimension</b> member is set to D3D10DDIRESOURCE_TEXTURE2D, a member in the union that is contained in D3D10DDIARG_CREATEDEPTHSTENCILVIEW that can hold a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-tex2d-depthstencilview.md">D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW</a> structure for a two-dimensional texture. </p>
 </dd>
 
-### -field <b>TexCube</b>
+### -field TexCube
 
 <dd>
 <p>[in] If the value in the <b>ResourceDimension</b> member is set to D3D10DDIRESOURCE_TEXTURECUBE, a member in the union that is contained in D3D10DDIARG_CREATEDEPTHSTENCILVIEW that can hold a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-texcube-depthstencilview.md">D3D10DDIARG_TEXCUBE_DEPTHSTENCILVIEW</a> structure for a cube texture. </p>

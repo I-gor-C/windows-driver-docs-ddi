@@ -56,7 +56,7 @@ NTSTATUS IddCxDeviceInitialize(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>The WDF device that is being initialized.</p>

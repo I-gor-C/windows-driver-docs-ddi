@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_GETCAPTUREALLOCATIONHANDLE {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A handle to the capture resource that <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaptureallocationhandle.md">GetCaptureAllocationHandle</a> retrieves the allocation handle for.</p>
 </dd>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the allocation that is associated with the resource that <b>hResource</b> specifies.</p>

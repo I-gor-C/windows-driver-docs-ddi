@@ -7,7 +7,7 @@ old-location: netvista\wdi_data_rate_flags.htm
 old-project: netvista
 ms.assetid: 937D1C48-AC5A-4D55-8722-BDC1192613A9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _WDI_DATA_RATE_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_DATA_RATE_NON_STANDARD"></a><a id="wdi_data_rate_non_standard"></a><b>WDI_DATA_RATE_NON_STANDARD</b>
+### -field WDI_DATA_RATE_NON_STANDARD
 
 <dd>
 <p>The data rate is not a standard data rate defined in the IEEE 802.11 standards.</p>
 </dd>
 
-### -field <a id="WDI_DATA_RATE_RX_RATE"></a><a id="wdi_data_rate_rx_rate"></a><b>WDI_DATA_RATE_RX_RATE</b>
+### -field WDI_DATA_RATE_RX_RATE
 
 <dd>
 <p>The data rate can be used for RX.</p>
 </dd>
 
-### -field <a id="WDI_DATA_RATE_TX_RATE"></a><a id="wdi_data_rate_tx_rate"></a><b>WDI_DATA_RATE_TX_RATE</b>
+### -field WDI_DATA_RATE_TX_RATE
 
 <dd>
 <p>The data rate can be used for TX.</p>

@@ -64,25 +64,25 @@ typedef struct _UFS_UNIT_CONFIG_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLUEnable</b>
+### -field bLUEnable
 
 <dd>
 <p>Specifies if the logical unit is enabled.</p>
 </dd>
 
-### -field <b>bBootLunID</b>
+### -field bBootLunID
 
 <dd>
 <p>Specifies if the logical unit is a bootable logical unit.</p>
 </dd>
 
-### -field <b>bLUWriteProtect</b>
+### -field bLUWriteProtect
 
 <dd>
 <p>Specifies if the Logical Unit is write protected.</p>
 </dd>
 
-### -field <b>bMemoryType</b>
+### -field bMemoryType
 
 <dd>
 <p>Specifies the Memory type of the device.</p>
@@ -127,13 +127,13 @@ typedef struct _UFS_UNIT_CONFIG_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>dNumAllocUnits</b>
+### -field dNumAllocUnits
 
 <dd>
 <p>Specifies the number of allocation units assigned to the logical unit.</p>
 </dd>
 
-### -field <b>bDataReliability</b>
+### -field bDataReliability
 
 <dd>
 <p><b>bDataReliability</b> defines the device behavior
@@ -164,13 +164,13 @@ data is protected against power failure.</td>
 <p> </p>
 </dd>
 
-### -field <b>bLogicalBlockSize</b>
+### -field bLogicalBlockSize
 
 <dd>
 <p>Specifies the logical block size.</p>
 </dd>
 
-### -field <b>bProvisioningType</b>
+### -field bProvisioningType
 
 <dd>
 <p>Specifies the provisioning type.</p>
@@ -201,13 +201,13 @@ data is protected against power failure.</td>
 <p> </p>
 </dd>
 
-### -field <b>wContextCapabilities</b>
+### -field wContextCapabilities
 
 <dd>
 <p>Specifies the Context Capabilities.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

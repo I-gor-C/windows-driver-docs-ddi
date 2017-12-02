@@ -59,37 +59,37 @@ HRESULT GetCapabilities(
 ## -parameters
 <dl>
 
-### -param <i>SupportsUserModels</i> [in]
+### -param SupportsUserModels [in]
 
 <dd>
 <p>A Boolean value that indicates whether user specific training is supported. </p>
 </dd>
 
-### -param <i>KeywordIds</i> [out]
+### -param KeywordIds [out]
 
 <dd>
 <p>A pointer to an array of keyword IDs supported by the object. The object allocates the array by calling <a href="com.cotaskmemalloc">CoTaskMemAlloc</a>. The caller frees the memory by calling <a href="com.cotaskmemfree">CoTaskMemFree</a>.</p>
 </dd>
 
-### -param <i>NumKeywords</i> [out]
+### -param NumKeywords [out]
 
 <dd>
 <p>The number of keyword IDs in the <i>KeywordIds</i> array.</p>
 </dd>
 
-### -param <i>LangIds</i> [out]
+### -param LangIds [out]
 
 <dd>
 <p>A pointer to an array of language IDs supported by the object. The object allocates the array by calling <a href="com.cotaskmemalloc">CoTaskMemAlloc</a>. The caller frees the memory by calling <a href="com.cotaskmemfree">CoTaskMemFree</a>.</p>
 </dd>
 
-### -param <i>NumLanguages</i> [out]
+### -param NumLanguages [out]
 
 <dd>
 <p>The number of language IDs in the <i>LangIds</i> array.</p>
 </dd>
 
-### -param <i>ppMediaType</i> [out]
+### -param ppMediaType [out]
 
 <dd>
 <p>The audio format required by <a href="audio.ikeyworddetectoroemadapter_verifyuserkeyword">IKeywordDetectorOemAdapter::VerifyUserKeyword</a> and <a href="audio.ikeyworddetectoroemadapter_computeandaddusermodeldata">IKeywordDetectorOemAdapter::ComputeAndAddUserModelData</a>. </p>

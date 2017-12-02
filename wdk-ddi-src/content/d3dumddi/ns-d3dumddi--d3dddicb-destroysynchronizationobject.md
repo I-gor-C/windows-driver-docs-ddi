@@ -54,7 +54,7 @@ typedef struct _D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT {
 ## -struct-fields
 <dl>
 
-### -field <b>hSyncObject</b>
+### -field hSyncObject
 
 <dd>
 <p>[in] A D3DKMT_HANDLE value that represents the kernel-mode handle that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createsynchronizationobjectcb.md">pfnCreateSynchronizationObjectCb</a> function returns and that identifies the kernel-mode synchronization object to destroy. </p>

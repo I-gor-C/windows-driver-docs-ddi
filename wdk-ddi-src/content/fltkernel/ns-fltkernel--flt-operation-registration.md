@@ -7,7 +7,7 @@ old-location: ifsk\flt_operation_registration.htm
 old-project: ifsk
 ms.assetid: 5e3f9a29-660e-46f1-bf25-5bad8b91e32c
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FLT_OPERATION_REGISTRATION, FLT_OPERATION_REGISTRATION, *PFLT_OPERATION_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ typedef struct _FLT_OPERATION_REGISTRATION {
 ## -struct-fields
 <dl>
 
-### -field <b>MajorFunction</b>
+### -field MajorFunction
 
 <dd>
 <p>Major function code specifying the type of I/O operation. This member is required and cannot be <b>NULL</b>. For more information about additional operations, see <a href="..\fltkernel\ns-fltkernel--flt-parameters.md">FLT_PARAMETERS</a>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Bitmask of flags specifying when to call the preoperation (<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) and postoperation (<a href="..\fltkernel\nc-fltkernel-pflt-post-operation-callback.md">PFLT_POST_OPERATION_CALLBACK</a>) callback routines for cached I/O or paging I/O operations. This member is optional and can be zero. </p>
@@ -93,19 +93,19 @@ typedef struct _FLT_OPERATION_REGISTRATION {
 <p> </p>
 </dd>
 
-### -field <b>PreOperation</b>
+### -field PreOperation
 
 <dd>
 <p>Pointer to a <a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>-typed routine to be registered as the preoperation callback routine for this type of I/O operation. This member is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -field <b>PostOperation</b>
+### -field PostOperation
 
 <dd>
 <p>Pointer to a <a href="..\fltkernel\nc-fltkernel-pflt-post-operation-callback.md">PFLT_POST_OPERATION_CALLBACK</a>-typed routine to be registered as the postoperation callback routine for this type of I/O operation. This member is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for system use. Minifilters must set this member to <b>NULL</b>. </p>
@@ -158,4 +158,4 @@ typedef struct _FLT_OPERATION_REGISTRATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_OPERATION_REGISTRATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_OPERATION_REGISTRATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

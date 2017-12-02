@@ -7,7 +7,7 @@ old-location: netvista\wwan_auth_sim_challenge.htm
 old-project: netvista
 ms.assetid: E07F3ED0-2F20-40D9-AAAE-49C81168B998
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_AUTH_SIM_CHALLENGE, WWAN_AUTH_SIM_CHALLENGE, *PWWAN_AUTH_SIM_CHALLENGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef struct _WWAN_AUTH_SIM_CHALLENGE {
 ## -struct-fields
 <dl>
 
-### -field <b>Rand1[WWAN_AUTH_RAND_LEN]</b>
+### -field Rand1[WWAN_AUTH_RAND_LEN]
 
 <dd>
 <p>The first 128-bit random number challenge value. This member represents a multi-byte value in little-endian format.</p>
 </dd>
 
-### -field <b>Rand2[WWAN_AUTH_RAND_LEN]</b>
+### -field Rand2[WWAN_AUTH_RAND_LEN]
 
 <dd>
 <p>The second 128-bit random number challenge value. This member represents a multi-byte value in little-endian format.</p>
 </dd>
 
-### -field <b>Rand3[WWAN_AUTH_RAND_LEN]</b>
+### -field Rand3[WWAN_AUTH_RAND_LEN]
 
 <dd>
 <p>The third 128-bit random number challenge value. This member represents a multi-byte value in little-endian format.</p>
 </dd>
 
-### -field <b>n</b>
+### -field n
 
 <dd>
 <p>The number of random number challenges.</p>
@@ -118,4 +118,4 @@ typedef struct _WWAN_AUTH_SIM_CHALLENGE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_AUTH_SIM_CHALLENGE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_AUTH_SIM_CHALLENGE structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

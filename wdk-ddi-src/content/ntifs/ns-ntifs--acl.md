@@ -7,7 +7,7 @@ old-location: ifsk\acl.htm
 old-project: ifsk
 ms.assetid: dac27df2-fabd-4402-8daf-9317888dd30b
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: ACL,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct _ACL {
 ## -struct-fields
 <dl>
 
-### -field <b>AclRevision</b>
+### -field AclRevision
 
 <dd>
 <p>Revision level of the ACL. </p>
@@ -66,25 +66,25 @@ typedef struct _ACL {
 <p><b>Microsoft Windows 2000 and later:</b> This value can be ACL_REVISION or ACL_REVISION_DS. It must be ACL_REVISION_DS if the ACL contains an object-specific ACE. </p>
 </dd>
 
-### -field <b>Sbz1</b>
+### -field Sbz1
 
 <dd>
 <p>A zero byte of padding that aligns the <b>AclRevision</b> member on a 16-bit boundary. </p>
 </dd>
 
-### -field <b>AclSize</b>
+### -field AclSize
 
 <dd>
 <p>Size, in bytes, of the ACL. This value includes both the ACL structure and all the ACEs. </p>
 </dd>
 
-### -field <b>AceCount</b>
+### -field AceCount
 
 <dd>
 <p>Number of ACEs stored in the ACL. </p>
 </dd>
 
-### -field <b>Sbz2</b>
+### -field Sbz2
 
 <dd>
 <p>Two zero bytes of padding that align the ACL structure on a 32-bit boundary. </p>
@@ -169,4 +169,4 @@ typedef struct _ACL {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ACL structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ACL structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>PoRequestPowerIrp</b> routine allocates a power <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> and sends it to the top driver in the device stack for the specified device.</p>
+<p>The <b>PoRequestPowerIrp</b> routine allocates a power <a href="..\wdm\ns-wdm--irp.md">IRP</a> and sends it to the top driver in the device stack for the specified device.</p>
 
 
 ## -syntax
@@ -60,38 +60,38 @@ NTSTATUS PoRequestPowerIrp(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to the target <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> for the IRP. In Windows 2000 and later versions of Windows, this parameter can point to a physical device object (<a href="wdkgloss.p#wdkgloss.pdo#wdkgloss.pdo"><i>PDO</i></a>) or a functional device object (<a href="wdkgloss.f#wdkgloss.fdo#wdkgloss.fdo"><i>FDO</i></a>). In Windows 98/Me, this parameter must point to the PDO of the underlying device.</p>
 </dd>
 
-### -param <i>MinorFunction</i> [in]
+### -param MinorFunction [in]
 
 <dd>
 <p>Specifies one of the following minor power IRP codes: <a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff551766">IRP_MN_WAIT_WAKE</a>.</p>
 </dd>
 
-### -param <i>PowerState</i> [in]
+### -param PowerState [in]
 
 <dd>
 <p>Specifies a <a href="..\wdm\ns-wdm--power-state.md">POWER_STATE</a> value to pass in the IRP. For <b>IRP_MN_SET_POWER</b> and <b>IRP_MN_QUERY_POWER</b>, specify the requested new <a href="https://msdn.microsoft.com/2229f34c-9b88-4e3e-802e-f7be2c7ef168">device power state</a>. Possible values are <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a> values.</p>
 <p>For <b>IRP_MN_WAIT_WAKE</b>, specify the lowest (least-powered) <a href="https://msdn.microsoft.com/bb30bc89-d1f2-4cb3-bcfb-fb76c69dba27">system power state</a> from which the device should be allowed to wake the system. Possible values are <a href="..\wdm\ne-wdm--system-power-state.md">SYSTEM_POWER_STATE</a> values.</p>
 </dd>
 
-### -param <i>CompletionFunction</i> [in, optional]
+### -param CompletionFunction [in, optional]
 
 <dd>
 <p>A pointer to the caller's <a href="kernel.powercompletion">PowerCompletion</a> callback routine. The I/O manager calls this routine when the IRP has completed. This parameter is optional and can be set to <b>NULL</b> if no <i>PowerCompletion</i> callback routine is needed.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied context to be passed through to the <i>PowerCompletion</i> callback. When the caller requests a device set-power IRP in response to a system set-power IRP, <i>Context</i> should contain the system set-power IRP that triggered the request.</p>
 </dd>
 
-### -param <i>Irp</i> [out]
+### -param Irp [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which <b>PoRequestPowerIrp</b> returns a pointer to the IRP that it allocates. Specify a value for <i>Irp</i> only if the <i>MinorFunction</i> parameter is set to <b>IRP_MN_WAIT_WAKE</b>. Otherwise, this parameter should always be <b>NULL</b> because the IRP might be completed before <b>PoRequestPowerIrp</b> returns, causing this parameter to point to memory that has already been discarded.</p>
@@ -199,10 +199,10 @@ NTSTATUS PoRequestPowerIrp(
 <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-postartnextpowerirp.md">PoStartNextPowerIrp</a>
+<a href="..\wdm\nf-wdm-postartnextpowerirp.md">PoStartNextPowerIrp</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551644">IRP_MN_POWER_SEQUENCE</a>

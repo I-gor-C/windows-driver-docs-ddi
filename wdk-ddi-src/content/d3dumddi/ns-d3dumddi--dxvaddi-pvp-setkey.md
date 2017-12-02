@@ -54,7 +54,7 @@ typedef struct _DXVADDI_PVP_SETKEY {
 ## -struct-fields
 <dl>
 
-### -field <b>ContentKey</b>
+### -field ContentKey
 
 <dd>
 <p>[in] A <a href="display.dxvaddi_pvp_key128">DXVADDI_PVP_KEY128</a> structure that contains the 128-bit key.</p>

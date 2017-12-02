@@ -64,61 +64,61 @@ typedef struct _D3COLD_SUPPORT_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The driver-defined interface version. The current version of this interface is D3COLD_SUPPORT_INTERFACE_VERSION.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to interface-specific context information.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to an <a href="kernel.interfacereference">InterfaceReference</a> routine that increments the interface's reference count.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to an <a href="kernel.interfacedereference">InterfaceDereference</a> routine that decrements the interface's reference count.</p>
 </dd>
 
-### -field <b>SetD3ColdSupport</b>
+### -field SetD3ColdSupport
 
 <dd>
 <p>A pointer to a <a href="..\wdm\nc-wdm-set-d3cold-support.md">SetD3ColdSupport</a> routine that enables or disables transitions to the D3cold device power state.</p>
 </dd>
 
-### -field <b>GetIdleWakeInfo</b>
+### -field GetIdleWakeInfo
 
 <dd>
 <p>A pointer to a <a href="..\wdm\nc-wdm-get-idle-wake-info.md">GetIdleWakeInfo</a> routine that the device driver calls to discover the device power states from which this device can signal wake events to the processor.</p>
 </dd>
 
-### -field <b>GetD3ColdCapability</b>
+### -field GetD3ColdCapability
 
 <dd>
 <p>A pointer to a <a href="..\wdm\nc-wdm-get-d3cold-capability.md">GetD3ColdCapability</a> routine that reports whether this device is capable of entering the D3cold device power state.</p>
 </dd>
 
-### -field <b>GetBusDriverD3ColdSupport</b>
+### -field GetBusDriverD3ColdSupport
 
 <dd>
 <p>A pointer to a <a href="..\wdm\nc-wdm-get-d3cold-capability.md">GetBusDriverD3ColdSupport</a> routine that reports whether the underlying bus driver and ACPI system firmware support D3cold for this device.</p>
 </dd>
 
-### -field <b>GetLastTransitionStatus</b>
+### -field GetLastTransitionStatus
 
 <dd>
 <p>A pointer to a <a href="..\wdm\nc-wdm-get-d3cold-last-transition-status.md">GetLastTransitionStatus</a> routine that reports whether this device's most recent transition to D3hot was followed by a transition to D3cold.</p>

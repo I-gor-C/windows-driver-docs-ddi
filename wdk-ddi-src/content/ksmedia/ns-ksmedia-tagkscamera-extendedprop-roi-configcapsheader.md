@@ -56,19 +56,19 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this header and all <a href="stream.kscamera_extendedprop_roi_configcaps">KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS</a> structures that follow.</p>
 </dd>
 
-### -field <b>ConfigCapCount</b>
+### -field ConfigCapCount
 
 <dd>
 <p>Contains the number of <b>KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS</b> structures that follow.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

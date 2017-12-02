@@ -57,7 +57,7 @@ typedef struct _KSCAMERA_PROFILE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ProfileId</b>
+### -field ProfileId
 
 <dd>
 <p>GUID representing a unique ID for the profile.  This GUID may be a unique IHV/OEM created GUID representing a custom profile or it may a pre-defined GUID.</p>
@@ -65,19 +65,19 @@ typedef struct _KSCAMERA_PROFILE_INFO {
 <div> </div>
 </dd>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>Each profile within a given <b>ProfileId</b> group must have a unique <b>Index</b> value.  This allows any profile for a device to be uniquely identified with <b>ProfileId</b> + <b>Index</b>.</p>
 </dd>
 
-### -field <b>PinCount</b>
+### -field PinCount
 
 <dd>
 <p>The number of <a href="..\ksmedia\ns-ksmedia--kscamera-profile-pininfo.md">KSCAMERA_PROFILE_PININFO</a> structures pointed to by <b>Pins</b>.  This value must be greater than 0.</p>
 </dd>
 
-### -field <b>Pins</b>
+### -field Pins
 
 <dd>
 <p> An array of <b>KSCAMERA_PROFILE_PININFO</b> structures defining the supported media types on each of the pins of this profile. This field must not be <b>NULL</b>.</p>

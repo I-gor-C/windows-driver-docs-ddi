@@ -59,19 +59,19 @@ typedef struct _DXVAHDDDI_VPCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>VPGuid</b>
+### -field VPGuid
 
 <dd>
 <p>[out] A <b>GUID</b> that identifies the video processor. </p>
 </dd>
 
-### -field <b>PastFrames</b>
+### -field PastFrames
 
 <dd>
 <p>[out] The number of past reference frames that are required to perform the optimal video processing. </p>
 </dd>
 
-### -field <b>FutureFrames</b>
+### -field FutureFrames
 
 <dd>
 <p>
@@ -79,7 +79,7 @@ typedef struct _DXVAHDDDI_VPCAPS {
      </p>
 </dd>
 
-### -field <b>ProcessorCaps</b>
+### -field ProcessorCaps
 
 <dd>
 <p>[out] A bitwise <b>OR</b> of the following values from the DXVAHDDDI_PROCESSOR_CAPS enumeration to indicate video processor-specific capabilities.</p>
@@ -143,7 +143,7 @@ typedef struct _DXVAHDDDI_VPCAPS {
 <p>For more information about blend and Bob de-interlacing, see <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-data.md">DXVAHDDDI_STREAM_DATA</a>. </p>
 </dd>
 
-### -field <b>ITelecineCaps</b>
+### -field ITelecineCaps
 
 <dd>
 <p>[out] A bitwise <b>OR</b> of the following values from the DXVAHDDDI_ITELECINE_CAPS enumeration to indicate inverse telecine-specific capabilities.</p>
@@ -236,7 +236,7 @@ typedef struct _DXVAHDDDI_VPCAPS {
 <p> </p>
 </dd>
 
-### -field <b>CustomRateCount</b>
+### -field CustomRateCount
 
 <dd>
 <p>[out] The number of supported custom output rates. The driver returns an array of <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-custom-rate-data.md">DXVAHDDDI_CUSTOM_RATE_DATA</a> structures for the custom output rates that the video processor supports when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPCUSTOMRATES value set. </p>

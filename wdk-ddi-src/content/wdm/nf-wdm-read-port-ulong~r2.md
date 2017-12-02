@@ -55,7 +55,7 @@ ULONG READ_PORT_ULONG(
 ## -parameters
 <dl>
 
-### -param <i>Port</i> [in]
+### -param Port [in]
 
 <dd>
 <p>Specifies the port address, which must be a mapped range in I/O space. </p>

@@ -56,40 +56,40 @@ typedef struct D3D10DDIARG_CALCPRIVATEDEVICESIZE {
 ## -struct-fields
 <dl>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>[in] The Microsoft Direct3D interface version. The high 16 bits store the major release number (such as 10, 11, and so on); the low 16 bits store the minor release number (such as 0, 1, 2, and so on). The minor release number will be increased when a change to the interface is released.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>[in] A number that the driver can use to identify when the Direct3D runtime was built. The high 16 bits represent the build number; the low 16 bits represent the revision number. </p>
 <p>The driver is required only to monitor the high 16 bits. The driver should ensure that the runtime build version that is passed in is greater than or equal to the current build version of the driver. The driver should return a failure from its <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivatedevicesize.md">CalcPrivateDeviceSize</a> function if the passed in build version is incompatible. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A valid bitwise OR of flag values that identify how to create a rendering device. The Direct3D runtime supports the following flags:  </p>
 <p></p>
 <dl>
 
-### -field <a id="D3D10DDI_CREATEDEVICE_FLAG_DISABLE_EXTRA_THREAD_CREATION__0x1__"></a><a id="d3d10ddi_createdevice_flag_disable_extra_thread_creation__0x1__"></a><a id="D3D10DDI_CREATEDEVICE_FLAG_DISABLE_EXTRA_THREAD_CREATION__0X1__"></a>D3D10DDI_CREATEDEVICE_FLAG_DISABLE_EXTRA_THREAD_CREATION (0x1) 
+### -field D3D10DDI_CREATEDEVICE_FLAG_DISABLE_EXTRA_THREAD_CREATION (0x1) 
 
 <dd>
 <p>If this flag is set, the user-mode display driver should not run multiple threads simultaneously when it processes calls to its functions from the Direct3D runtime. A driver can typically start and run multiple threads to process operations faster, unless the D3D10DDI_CREATEDEVICE_FLAG_DISABLE_EXTRA_THREAD_CREATION flag is set.</p>
 </dd>
 
-### -field <a id="D3D11DDI_CREATEDEVICE_FLAG_SINGLETHREADED__0x10__"></a><a id="d3d11ddi_createdevice_flag_singlethreaded__0x10__"></a><a id="D3D11DDI_CREATEDEVICE_FLAG_SINGLETHREADED__0X10__"></a>D3D11DDI_CREATEDEVICE_FLAG_SINGLETHREADED (0x10) 
+### -field D3D11DDI_CREATEDEVICE_FLAG_SINGLETHREADED (0x10) 
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>
 <p>This flag informs the user-mode display driver that the application is single threaded. The Direct3D version 11 runtime allows multiple application threads to enter the driver if the driver allows this mode of operation. However, not all applications can run multiple threads. If this flag is set, the driver does not expect multiple threads to enter it and run simultaneously. The driver can avoid synchronization if this flag is set.</p>
 </dd>
 
-### -field <a id="The_flag_that_is_set_in_the_0xE_mask_of_the_Flags_member_"></a><a id="the_flag_that_is_set_in_the_0xe_mask_of_the_flags_member_"></a><a id="THE_FLAG_THAT_IS_SET_IN_THE_0XE_MASK_OF_THE_FLAGS_MEMBER_"></a>The flag that is set in the 0xE mask of the <b>Flags</b> member 
+### -field The flag that is set in the 0xE mask of the Flags member 
 
 <dd>
 <p>Supported in Windows 7 and later versions. </p>

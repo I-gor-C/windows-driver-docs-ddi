@@ -61,25 +61,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="DmaComplete"></a><a id="dmacomplete"></a><a id="DMACOMPLETE"></a><b>DmaComplete</b>
+### -field DmaComplete
 
 <dd>
 <p>The DMA transfer completed successfully.</p>
 </dd>
 
-### -field <a id="DmaAborted"></a><a id="dmaaborted"></a><a id="DMAABORTED"></a><b>DmaAborted</b>
+### -field DmaAborted
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <a id="DmaError"></a><a id="dmaerror"></a><a id="DMAERROR"></a><b>DmaError</b>
+### -field DmaError
 
 <dd>
 <p>The DMA transfer did not complete successfully because an error occurred.</p>
 </dd>
 
-### -field <a id="DmaCancelled"></a><a id="dmacancelled"></a><a id="DMACANCELLED"></a><b>DmaCancelled</b>
+### -field DmaCancelled
 
 <dd>
 <p>The DMA transfer did not complete successfully because the client canceled the transfer.</p>

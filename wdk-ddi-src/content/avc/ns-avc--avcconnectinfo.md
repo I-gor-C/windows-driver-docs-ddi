@@ -59,37 +59,37 @@ typedef struct _AVCCONNECTINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceID</b>
+### -field DeviceID
 
 <dd>
 <p>A GUID representing the unit as a whole. All subunits within the same unit share the same GUID. No two units share the same GUID.</p>
 </dd>
 
-### -field <b>SubunitAddress</b>
+### -field SubunitAddress
 
 <dd>
 <p>The encoded subunit type and subunit ID of the subunit.</p>
 </dd>
 
-### -field <b>SubunitPlugNumber</b>
+### -field SubunitPlugNumber
 
 <dd>
 <p>The plug number (within the subunit) described by the AVCPRECONNECTINFO structure.</p>
 </dd>
 
-### -field <b>DataFlow</b>
+### -field DataFlow
 
 <dd>
 <p>The direction of data flow on this subunit plug. Destination plugs have KSPIN_DATAFLOW_IN; source plugs have KSPIN_DATAFLOW_OUT.</p>
 </dd>
 
-### -field <b>hPlug</b>
+### -field hPlug
 
 <dd>
 <p>A plug handle obtained from <i>61883.sys</i> by the intersect handler according to the bit flags set in the associated AVCPRECONNECTINFO structure for this pin. If the proposed connection is between two subunits within the same unit, this value is <b>NULL</b>.</p>
 </dd>
 
-### -field <b>UnitPlugNumber</b>
+### -field UnitPlugNumber
 
 <dd>
 <p>The plug number (within the subunit) described by the AVCPRECONNECTINFO structure.</p>

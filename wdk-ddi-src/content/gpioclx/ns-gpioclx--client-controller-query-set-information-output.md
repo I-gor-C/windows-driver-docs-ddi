@@ -64,37 +64,37 @@ typedef struct _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version number of this structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size, in bytes, of this structure.</p>
 </dd>
 
-### -field ( <i>unnamed union</i> )
+### -field ( unnamed union )
 
 <dd>
 <p>A union of members that contain output information for the various types of attribute requests. The <b>RequestType</b> member of the corresponding <a href="https://msdn.microsoft.com/library/windows/hardware/hh698238">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</a> structure determines which of these members is used.</p>
 <dl>
 
-### -field <b>BankPowerInformation</b>
+### -field BankPowerInformation
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh698242">CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT</a> structure that contains the power attributes of the GPIO bank that is identified by the <b>BankPowerInformation.BankId</b> member of the corresponding <b>CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</b> structure.</p>
 </dd>
 
-### -field <b>BankInterruptBinding</b>
+### -field BankInterruptBinding
 
 <dd>
 <p>A structure that contains information about the binding of interrupt resources to GPIO banks.</p>
 <dl>
 
-### -field <b>ResourceMapping</b>
+### -field ResourceMapping
 
 <dd>
 <p>An array of interrupt resource numbers. The number of elements in the array equals the number of GPIO banks. If N is the number of banks in the GPIO controller, the banks are numbered 0 to N–1. Element 0 of the array contains the interrupt resource number that is bound to bank 0, element 1 contains the interrupt resource number that is bound to bank 1, and so on. No more than one interrupt resource can be bound to a GPIO bank, but two or more banks might share an interrupt resource. If a bank is not bound to an interrupt resource, the corresponding array element is set to <b>GPIO_BANK_INTERRUPT_BINDING_RESERVED_INDEX</b> (0xffff).</p>
@@ -103,13 +103,13 @@ typedef struct _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT {
 </dl>
 </dd>
 
-### -field <b>ControllerFunctionBankMapping</b>
+### -field ControllerFunctionBankMapping
 
 <dd>
 <p>A structure that contains information about the GPIO banks that must be in the F0 (fully on) power state to handle an I/O control request (IOCTL).</p>
 <dl>
 
-### -field <b>Mapping</b>
+### -field Mapping
 
 <dd>
 <p>An array of BOOLEAN values that indicates the mapping of required F0 power states to GPIO banks. The number of elements in the array equals the number of GPIO banks. If N is the number of banks in the GPIO controller, the banks are numbered 0 to N–1. Element 0 of the array contains the mapping for bank 0, element 1 contains the mapping for bank 1, and so on. If an element is <b>TRUE</b>, the corresponding GPIO bank must be in the F0 power state to handle the IOCTL. If an element is <b>FALSE</b>, the corresponding bank is not required to be in the F0 power state.</p>

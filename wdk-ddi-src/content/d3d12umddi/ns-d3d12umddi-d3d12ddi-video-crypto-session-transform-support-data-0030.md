@@ -65,73 +65,73 @@ typedef struct _D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030 {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeIndex</b>
+### -field NodeIndex
 
 <dd>
 <p>Node index.</p>
 </dd>
 
-### -field <b>DecodeProfile</b>
+### -field DecodeProfile
 
 <dd>
 <p>Decode profile.</p>
 </dd>
 
-### -field <b>ContentProtectionSystem</b>
+### -field ContentProtectionSystem
 
 <dd>
 <p>Content protection system.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags.</p>
 </dd>
 
-### -field <b>BitstreamEncryption</b>
+### -field BitstreamEncryption
 
 <dd>
 <p>Bitstream encryption.</p>
 </dd>
 
-### -field <b>Operation</b>
+### -field Operation
 
 <dd>
 <p>Operation.</p>
 </dd>
 
-### -field <b>ProtectedOutputRequired</b>
+### -field ProtectedOutputRequired
 
 <dd>
 <p>Protected output required.</p>
 </dd>
 
-### -field <b>InputAlignment</b>
+### -field InputAlignment
 
 <dd>
 <p>Input alignment.</p>
 </dd>
 
-### -field <b>InputPreambleSize</b>
+### -field InputPreambleSize
 
 <dd>
 <p>Input preamble size.</p>
 </dd>
 
-### -field <b>OutputAlignment</b>
+### -field OutputAlignment
 
 <dd>
 <p>Output alignment.</p>
 </dd>
 
-### -field <b>OutputPreambleSize</b>
+### -field OutputPreambleSize
 
 <dd>
 <p>Output preamble size.</p>
 </dd>
 
-### -field <b>Support</b>
+### -field Support
 
 <dd>
 <p>Support.</p>

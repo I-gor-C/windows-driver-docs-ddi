@@ -57,14 +57,14 @@ typedef struct IDARG_IN_GETDEFAULTDESCRIPTIONMODES {
 ## -struct-fields
 <dl>
 
-### -field <b>DefaultMonitorModeBufferInputCount</b>
+### -field DefaultMonitorModeBufferInputCount
 
 <dd>
 <p>[in] The number of monitor modes the <b>pDefaultsMonitorModes</b> buffer being passed into the driver can hold. A value of zero indicates that the driver should not copy the monitor mode list into the provided buffer, but should set the output buffer size to the size required.
                  </p>
 </dd>
 
-### -field <b>pDefaultMonitorModes</b>
+### -field pDefaultMonitorModes
 
 <dd>
 <p>[out]

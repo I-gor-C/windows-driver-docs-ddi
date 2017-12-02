@@ -55,13 +55,13 @@ typedef struct _DXGKARGCB_PROTECTEDSESSIONSTATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>hProtectedSession</b>
+### -field hProtectedSession
 
 <dd>
 <p>A handle for the protected session that was passed to DxgkDdiCreateProtectedSession.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The status of the protected session</p>

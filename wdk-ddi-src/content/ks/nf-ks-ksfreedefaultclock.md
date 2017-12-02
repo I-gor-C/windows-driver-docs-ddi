@@ -55,7 +55,7 @@ VOID KsFreeDefaultClock(
 ## -parameters
 <dl>
 
-### -param <i>DefaultClock</i> [in]
+### -param DefaultClock [in]
 
 <dd>
 <p>Specifies the previously allocated structure to free.</p>

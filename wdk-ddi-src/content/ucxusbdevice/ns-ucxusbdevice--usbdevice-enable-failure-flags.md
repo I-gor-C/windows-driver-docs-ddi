@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The flags that are set by the client driver in the  <a href="buses.evt_ucx_usbdevice_enable">EVT_UCX_USBDEVICE_ENABLE</a> callback function. Indicate errors, if any, that might have occurred while enabling the device.</p>
+<p>The flags that are set by the client driver in the  <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-enable.md">EVT_UCX_USBDEVICE_ENABLE</a> callback function. Indicate errors, if any, that might have occurred while enabling the device.</p>
 
 
 ## -syntax
@@ -57,19 +57,19 @@ typedef struct _USBDEVICE_ENABLE_FAILURE_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>InsufficientHardwareResourcesForDefaultEndpoint</b>
+### -field InsufficientHardwareResourcesForDefaultEndpoint
 
 <dd>
 <p>Insufficient  hardware resources for  transfers to the default endpoint. </p>
 </dd>
 
-### -field <b>InsufficientHardwareResourcesForDevice</b>
+### -field InsufficientHardwareResourcesForDevice
 
 <dd>
 <p>Insufficient hardware resources to enable transfers.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Do not use.</p>
@@ -96,10 +96,10 @@ typedef struct _USBDEVICE_ENABLE_FAILURE_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._usbdevice_enable">USBDEVICE_ENABLE</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-enable.md">USBDEVICE_ENABLE</a>
 </dt>
 <dt>
-<a href="buses.evt_ucx_usbdevice_enable">EVT_UCX_USBDEVICE_ENABLE</a>
+<a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-enable.md">EVT_UCX_USBDEVICE_ENABLE</a>
 </dt>
 </dl>
 <p> </p>

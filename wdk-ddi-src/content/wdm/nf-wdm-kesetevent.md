@@ -57,19 +57,19 @@ LONG KeSetEvent(
 ## -parameters
 <dl>
 
-### -param <i>Event</i> [in, out]
+### -param Event [in, out]
 
 <dd>
 <p>A pointer to an initialized event object for which the caller provides the storage.</p>
 </dd>
 
-### -param <i>Increment</i> [in]
+### -param Increment [in]
 
 <dd>
 <p>Specifies the priority increment to be applied if setting the event causes a wait to be satisfied.</p>
 </dd>
 
-### -param <i>Wait</i> [in]
+### -param Wait [in]
 
 <dd>
 <p>Specifies whether the call to <b>KeSetEvent</b> is to be followed immediately by a call to one of the <b>KeWait<i>Xxx</i></b> routines. If <b>TRUE</b>, the <b>KeSetEvent</b> call must be followed by a call to <a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>, <a href="kernel.kewaitformutexobject">KeWaitForMutexObject</a>, or <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>. For more information, see the following Remarks section.</p>

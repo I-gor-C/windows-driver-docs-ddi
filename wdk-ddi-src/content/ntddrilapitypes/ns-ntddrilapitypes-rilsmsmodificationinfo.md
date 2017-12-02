@@ -7,7 +7,7 @@ old-location: netvista\rilsmsmodificationinfo.htm
 old-project: netvista
 ms.assetid: 8fed32a2-f0a7-4462-b8bb-b01c9cccf6b7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSMSMODIFICATIONINFO, RILSMSMODIFICATIONINFO, *LPRILSMSMODIFICATIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,27 +59,27 @@ typedef struct _RILSMSMODIFICATIONINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwModificationType</b>
+### -field dwModificationType
 
 <dd></dd>
 
-### -field <b>raAddress</b>
+### -field raAddress
 
 <dd></dd>
 
-### -field <b>aiIdentifier</b>
+### -field aiIdentifier
 
 <dd></dd>
 </dl>

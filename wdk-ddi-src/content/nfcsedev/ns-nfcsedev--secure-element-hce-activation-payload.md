@@ -56,20 +56,20 @@ typedef struct _SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD {
 ## -struct-fields
 <dl>
 
-### -field <b>bConnectionId</b>
+### -field bConnectionId
 
 <dd>
 <p>Unique identifer for current connection.</p>
 </dd>
 
-### -field <b>eRfTechType</b>
+### -field eRfTechType
 
 <dd>
 <p>NFC Forum RF technology type.
 </p>
 </dd>
 
-### -field <b>eRfProtocolType</b>
+### -field eRfProtocolType
 
 <dd>
 <p>NFC Forum RF protocol

@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="MIRACAST_STATISTIC_TYPE_CHUNK_PROCESSING_COMPLETE"></a><a id="miracast_statistic_type_chunk_processing_complete"></a><b>MIRACAST_STATISTIC_TYPE_CHUNK_PROCESSING_COMPLETE</b>
+### -field MIRACAST_STATISTIC_TYPE_CHUNK_PROCESSING_COMPLETE
 
 <dd>
 <p>The user-mode display driver has completed its processing of the encode chunk.</p>
 </dd>
 
-### -field <a id="MIRACAST_STATISTIC_TYPE_CHUNK_SENT"></a><a id="miracast_statistic_type_chunk_sent"></a><b>MIRACAST_STATISTIC_TYPE_CHUNK_SENT</b>
+### -field MIRACAST_STATISTIC_TYPE_CHUNK_SENT
 
 <dd>
 <p>The driver has successfully sent the encode chunk to the network.</p>
 </dd>
 
-### -field <a id="MIRACAST_STATISTIC_TYPE_EVENT"></a><a id="miracast_statistic_type_event"></a><b>MIRACAST_STATISTIC_TYPE_EVENT</b>
+### -field MIRACAST_STATISTIC_TYPE_EVENT
 
 <dd>
 <p>Used by the user-mode display driver to report certain Miracast protocol events to the operating system for diagnostic purposes.</p>
 </dd>
 
-### -field <a id="MIRACAST_STATISTIC_TYPE_FORCE_UINT32"></a><a id="miracast_statistic_type_force_uint32"></a><b>MIRACAST_STATISTIC_TYPE_FORCE_UINT32</b>
+### -field MIRACAST_STATISTIC_TYPE_FORCE_UINT32
 
 <dd>
 <p>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</p>

@@ -54,7 +54,7 @@ typedef struct _D3DHAL_DP2STARTVERTEX {
 ## -struct-fields
 <dl>
 
-### -field <b>wVStart</b>
+### -field wVStart
 
 <dd>
 <p>Specifies an additional offset to be added to any index used for determining the location of vertices in the vertex buffer (in the case of indexed primitives).</p>

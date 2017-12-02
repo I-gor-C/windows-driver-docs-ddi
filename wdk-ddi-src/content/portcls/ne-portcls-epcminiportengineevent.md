@@ -66,73 +66,73 @@ typedef enum _EPcMiniportEngineEvent {
 ## -enum-fields
 <dl>
 
-### -field <a id="eMINIPORT_IHV_DEFINED"></a><a id="eminiport_ihv_defined"></a><a id="EMINIPORT_IHV_DEFINED"></a><b>eMINIPORT_IHV_DEFINED</b>
+### -field eMINIPORT_IHV_DEFINED
 
 <dd>
 <p>Specifies the ID for an IHV-defined event.</p>
 </dd>
 
-### -field <a id="eMINIPORT_BUFFER_COMPLETE"></a><a id="eminiport_buffer_complete"></a><a id="EMINIPORT_BUFFER_COMPLETE"></a><b>eMINIPORT_BUFFER_COMPLETE</b>
+### -field eMINIPORT_BUFFER_COMPLETE
 
 <dd>
 <p>Specifies the ID for the buffer complete event.</p>
 </dd>
 
-### -field <a id="eMINIPORT_PIN_STATE"></a><a id="eminiport_pin_state"></a><a id="EMINIPORT_PIN_STATE"></a><b>eMINIPORT_PIN_STATE</b>
+### -field eMINIPORT_PIN_STATE
 
 <dd>
 <p>Specifies the ID for the event related to a change in pin state.</p>
 </dd>
 
-### -field <a id="eMINIPORT_GET_STREAM_POS"></a><a id="eminiport_get_stream_pos"></a><a id="EMINIPORT_GET_STREAM_POS"></a><b>eMINIPORT_GET_STREAM_POS</b>
+### -field eMINIPORT_GET_STREAM_POS
 
 <dd>
 <p>Specifies the ID for a "get stream position" event.</p>
 </dd>
 
-### -field <a id="eMINIPORT_SET_WAVERT_BUFFER_WRITE_POS"></a><a id="eminiport_set_wavert_buffer_write_pos"></a><a id="EMINIPORT_SET_WAVERT_BUFFER_WRITE_POS"></a><b>eMINIPORT_SET_WAVERT_BUFFER_WRITE_POS</b>
+### -field eMINIPORT_SET_WAVERT_BUFFER_WRITE_POS
 
 <dd>
 <p>Specifies the ID for a "wave  buffer write position" event.</p>
 </dd>
 
-### -field <a id="eMINIPORT_GET_PRESENTATION_POS"></a><a id="eminiport_get_presentation_pos"></a><a id="EMINIPORT_GET_PRESENTATION_POS"></a><b>eMINIPORT_GET_PRESENTATION_POS</b>
+### -field eMINIPORT_GET_PRESENTATION_POS
 
 <dd>
 <p>Specifies the ID for a "get presentation position" event.</p>
 </dd>
 
-### -field <a id="eMINIPORT_PROGRAM_DMA"></a><a id="eminiport_program_dma"></a><a id="EMINIPORT_PROGRAM_DMA"></a><b>eMINIPORT_PROGRAM_DMA</b>
+### -field eMINIPORT_PROGRAM_DMA
 
 <dd>
 <p>Specifies the ID for a "program DMA" event.</p>
 </dd>
 
-### -field <a id="eMINIPORT_GLITCH_REPORT"></a><a id="eminiport_glitch_report"></a><a id="EMINIPORT_GLITCH_REPORT"></a><b>eMINIPORT_GLITCH_REPORT</b>
+### -field eMINIPORT_GLITCH_REPORT
 
 <dd>
 <p>Specifies the ID for a "glitch report" event.</p>
 </dd>
 
-### -field <a id="eMINIPORT_LAST_BUFFER_RENDERED"></a><a id="eminiport_last_buffer_rendered"></a><a id="EMINIPORT_LAST_BUFFER_RENDERED"></a><b>eMINIPORT_LAST_BUFFER_RENDERED</b>
+### -field eMINIPORT_LAST_BUFFER_RENDERED
 
 <dd>
 <p>Specifies the ID for the last buffer that was rendered.</p>
 </dd>
 
-### -field <a id="eMINIPORT_PROCESSING_MODE"></a><a id="eminiport_processing_mode"></a><a id="EMINIPORT_PROCESSING_MODE"></a><b>eMINIPORT_PROCESSING_MODE</b>
+### -field eMINIPORT_PROCESSING_MODE
 
 <dd>
 <p>Specifies the ID for the processing mode that was in effect when the glitch happened.</p>
 </dd>
 
-### -field <a id="eMINIPORT_FX_CLSID"></a><a id="eminiport_fx_clsid"></a><a id="EMINIPORT_FX_CLSID"></a><b>eMINIPORT_FX_CLSID</b>
+### -field eMINIPORT_FX_CLSID
 
 <dd>
 <p>Specifies the class ID for the audio processing effect (FX) that was in effect when the glitch happened.</p>
 </dd>
 
-### -field <a id="eMINIPORT_MaxValue"></a><a id="eminiport_maxvalue"></a><a id="EMINIPORT_MAXVALUE"></a><b>eMINIPORT_MaxValue</b>
+### -field eMINIPORT_MaxValue
 
 <dd>
 <p>Specifies the ID for the highest enumerated value that was used to report the glitch.</p>
@@ -300,7 +300,7 @@ typedef enum _EPcMiniportEngineEvent {
 ## -see-also
 <dl>
 <dt>
-<a href="NULL">Glitch Reporting for Offloaded Audio</a>
+<a href="https://msdn.microsoft.com/9FF2A5D6-9382-4EE6-AA21-DCF47210F73B">Glitch Reporting for Offloaded Audio</a>
 </dt>
 <dt>
 <a href="audio.iportclsetwhelper_miniportwriteetwevent">MiniportWriteEtwEvent</a>

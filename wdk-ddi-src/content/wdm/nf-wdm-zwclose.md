@@ -55,7 +55,7 @@ NTSTATUS ZwClose(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Handle to an object of any type. </p>

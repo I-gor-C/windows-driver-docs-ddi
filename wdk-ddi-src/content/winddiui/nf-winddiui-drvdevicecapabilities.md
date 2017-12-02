@@ -59,19 +59,19 @@ DWORD DrvDeviceCapabilities(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> 
+### -param hPrinter 
 
 <dd>
 <p>Caller-supplied printer handle.</p>
 </dd>
 
-### -param <i>pDeviceName</i> [in]
+### -param pDeviceName [in]
 
 <dd>
 <p>Caller-supplied pointer to a printer name string.</p>
 </dd>
 
-### -param <i>iDevCap</i> 
+### -param iDevCap 
 
 <dd>
 <p>Caller-supplied bit flag indicating the information being requested. This can be one of the flags listed in the following table. (The flags are defined in header file Wingdi.h.)</p>
@@ -414,13 +414,13 @@ DWORD DrvDeviceCapabilities(
 <p> </p>
 </dd>
 
-### -param <i>pvOutput</i> [out]
+### -param pvOutput [out]
 
 <dd>
 <p>A caller-supplied pointer to a buffer to receive function-supplied information. The buffer's use is dependent on the value received for the <i>iDevCap</i> parameter.</p>
 </dd>
 
-### -param <i>pDevMode</i> [in]
+### -param pDevMode [in]
 
 <dd>
 <p>A caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure that describes the current print job characteristics. If this parameter is <b>NULL</b>, <b>DrvDeviceCapabilities</b> retrieves the current default initialization values for the specified printer driver, such as the user default DEVMODEW structure of the print queue.</p>

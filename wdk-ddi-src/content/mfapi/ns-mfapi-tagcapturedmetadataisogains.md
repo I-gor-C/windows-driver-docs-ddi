@@ -55,11 +55,11 @@ typedef struct tagCapturedMetadataISOGains {
 ## -struct-fields
 <dl>
 
-### -field <b>AnalogGain</b>
+### -field AnalogGain
 
 <dd></dd>
 
-### -field <b>DigitalGain</b>
+### -field DigitalGain
 
 <dd></dd>
 </dl>

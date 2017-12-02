@@ -56,13 +56,13 @@ typedef struct _BINARY_CONTAINER {
 ## -struct-fields
 <dl>
 
-### -field <b>cbBuf</b>
+### -field cbBuf
 
 <dd>
 <p>Specifies the number of bytes of binary data in the <b>pData</b> member.</p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>Pointer to a buffer that contains the binary data.</p>

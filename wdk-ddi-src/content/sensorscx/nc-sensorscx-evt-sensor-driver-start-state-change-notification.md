@@ -7,7 +7,7 @@ old-location: sensors\evt_sensor_driver_start_state_change_notification.htm
 old-project: sensors
 ms.assetid: 93C2ABCE-15C9-4EE4-A9B5-A81788DB608C
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorDriver, OnSetProperties, ISensorDriver::OnSetProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ NTSTATUS  EVT_SENSOR_DRIVER_START_STATE_CHANGE_NOTIFICATION(
 ## -parameters
 <dl>
 
-### -param <i>Sensors</i> [in]
+### -param Sensors [in]
 
 <dd>
 <p>Holds information on the sensors handled by the sensor driver.</p>

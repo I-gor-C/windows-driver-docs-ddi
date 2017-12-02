@@ -7,7 +7,7 @@ old-location: image\wia_property_info.htm
 old-project: image
 ms.assetid: 9ab9edb8-aa37-4c28-81c9-3e41751f14ed
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: WIA_PROPERTY_INFO, WIA_PROPERTY_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -97,13 +97,13 @@ typedef struct _WIA_PROPERTY_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>lAccessFlags</b>
+### -field lAccessFlags
 
 <dd>
 <p>Specifies the access and property attribute flags for a property. See the Microsoft Windows SDK documentation for a list of WIA property attribute flags. </p>
 </dd>
 
-### -field <b>vt</b>
+### -field vt
 
 <dd>
 <p>Specifies the variant data type for the property. This member, which can be one of the following, controls which structure member of the <b>ValidValunion</b> is valid:</p>
@@ -139,12 +139,12 @@ typedef struct _WIA_PROPERTY_INFO {
 <p>See PROPVARIANT in the Windows SDK documentation for more information.</p>
 </dd>
 
-### -field <b>ValidVal</b>
+### -field ValidVal
 
 <dd>
 <dl>
 
-### -field <b>Range</b>
+### -field Range
 
 <dd>
 <p>Is a structure that is filled when the property's valid values are specified by a range of integer values. This structure contains the following members:</p>
@@ -154,7 +154,7 @@ typedef struct _WIA_PROPERTY_INFO {
 <p><b>Inc</b>, which indicates the increment value that can be used.</p>
 </dd>
 
-### -field <b>RangeFloat</b>
+### -field RangeFloat
 
 <dd>
 <p>Is a structure that is filled when the property's valid values are specified by a range of floating-point values and the property type is a <b>float</b> or <b>double</b>. This structure contains the following members:</p>
@@ -164,7 +164,7 @@ typedef struct _WIA_PROPERTY_INFO {
 <p><b>Inc</b>, which indicates the increment value that can be used. </p>
 </dd>
 
-### -field <b>List</b>
+### -field List
 
 <dd>
 <p>Is a structure that is filled when the property's valid values are specified by a list of integer values. This structure contains the following members:</p>
@@ -173,7 +173,7 @@ typedef struct _WIA_PROPERTY_INFO {
 <p><b>pList</b>, which is an array of valid values the property can be set to.</p>
 </dd>
 
-### -field <b>ListFloat</b>
+### -field ListFloat
 
 <dd>
 <p>Is a structure that is filled when the property's valid values are specified by a list of floating-point values. This structure contains the following members:</p>
@@ -182,7 +182,7 @@ typedef struct _WIA_PROPERTY_INFO {
 <p><b>pList</b>, which is an array of valid values the property can be set to.</p>
 </dd>
 
-### -field <b>ListGuid</b>
+### -field ListGuid
 
 <dd>
 <p>Is a structure that is filled when the property's valid values are specified by a list of GUIDs. This structure contains the following members:</p>
@@ -191,7 +191,7 @@ typedef struct _WIA_PROPERTY_INFO {
 <p><b>pList</b>, which is an array of valid values the property can be set to. </p>
 </dd>
 
-### -field <b>ListBStr</b>
+### -field ListBStr
 
 <dd>
 <p>Is a structure that is filled when the property's valid values are specified by a list of strings. This structure contains the following members:</p>
@@ -200,7 +200,7 @@ typedef struct _WIA_PROPERTY_INFO {
 <p><b>pList</b>, which is an array of valid values the property can be set to.</p>
 </dd>
 
-### -field <b>Flag</b>
+### -field Flag
 
 <dd>
 <p>Is a structure that is filled when the property's valid values are specified by a bitset of flags. This structure contains the following members:</p>
@@ -208,7 +208,7 @@ typedef struct _WIA_PROPERTY_INFO {
 <p><b>ValidBits</b>, which is a mask indicating which bit values can be set. This member should be a bitwise OR of all possible user-defined flag values.</p>
 </dd>
 
-### -field <b>None</b>
+### -field None
 
 <dd>
 <p>Is a structure that is filled when the property's valid values are not given in a list, range, or bitset. This structure contains a member named <b>Dummy</b>, which indicates the property is of type NONE. </p>
@@ -264,4 +264,4 @@ typedef struct _WIA_PROPERTY_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIA_PROPERTY_INFO structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIA_PROPERTY_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

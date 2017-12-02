@@ -57,7 +57,7 @@ PESILO  PsGetParentSilo(
 ## -parameters
 <dl>
 
-### -param <i>Job</i> [in, optional]
+### -param Job [in, optional]
 
 <dd>
 <p>A pointer to an <b>EJOB</b> structure that represents the job object. </p>

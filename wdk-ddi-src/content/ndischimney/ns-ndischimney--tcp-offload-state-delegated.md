@@ -7,7 +7,7 @@ old-location: netvista\tcp_offload_state_delegated.htm
 old-project: netvista
 ms.assetid: ab16cfa1-24f6-434a-a687-07e19172f185
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TCP_OFFLOAD_STATE_DELEGATED, TCP_OFFLOAD_STATE_DELEGATED, *PTCP_OFFLOAD_STATE_DELEGATED
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -95,7 +95,7 @@ typedef struct _TCP_OFFLOAD_STATE_DELEGATED {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>An 
@@ -107,7 +107,7 @@ typedef struct _TCP_OFFLOAD_STATE_DELEGATED {
      <b>Header</b> is reserved.</p>
 </dd>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>The current state of the TCP connection (see RFC 793) as one of the following
@@ -116,71 +116,71 @@ typedef struct _TCP_OFFLOAD_STATE_DELEGATED {
 <p></p>
 <dl>
 
-### -field <a id="TcpConnectionClosed"></a><a id="tcpconnectionclosed"></a><a id="TCPCONNECTIONCLOSED"></a><b>TcpConnectionClosed</b>
+### -field TcpConnectionClosed
 
 <dd>
 <p>No connection state.</p>
 </dd>
 
-### -field <a id="TcpConnectionListen"></a><a id="tcpconnectionlisten"></a><a id="TCPCONNECTIONLISTEN"></a><b>TcpConnectionListen</b>
+### -field TcpConnectionListen
 
 <dd>
 <p>Waiting for a connection request from any remote TCP and port.</p>
 </dd>
 
-### -field <a id="TcpConnectionSynSent"></a><a id="tcpconnectionsynsent"></a><a id="TCPCONNECTIONSYNSENT"></a><b>TcpConnectionSynSent</b>
+### -field TcpConnectionSynSent
 
 <dd>
 <p>Waiting for a matching connection request after having sent a connection request.</p>
 </dd>
 
-### -field <a id="TcpConnectionSynRcvd"></a><a id="tcpconnectionsynrcvd"></a><a id="TCPCONNECTIONSYNRCVD"></a><b>TcpConnectionSynRcvd</b>
+### -field TcpConnectionSynRcvd
 
 <dd>
 <p>Waiting for a confirming connection request acknowledgment after having both received and sent a
        connection request.</p>
 </dd>
 
-### -field <a id="TcpConnectionEstablished"></a><a id="tcpconnectionestablished"></a><a id="TCPCONNECTIONESTABLISHED"></a><b>TcpConnectionEstablished</b>
+### -field TcpConnectionEstablished
 
 <dd>
 <p>An open connection: data received can be delivered to the user. The normal state for the data
        transfer phase of the connection.</p>
 </dd>
 
-### -field <a id="TcpConnectionFinWait1"></a><a id="tcpconnectionfinwait1"></a><a id="TCPCONNECTIONFINWAIT1"></a><b>TcpConnectionFinWait1</b>
+### -field TcpConnectionFinWait1
 
 <dd>
 <p>Waiting for a connection termination request from the remote TCP, or an acknowledgment of the
        connection termination request that was previously sent.</p>
 </dd>
 
-### -field <a id="TcpConnectionFinWait2"></a><a id="tcpconnectionfinwait2"></a><a id="TCPCONNECTIONFINWAIT2"></a><b>TcpConnectionFinWait2</b>
+### -field TcpConnectionFinWait2
 
 <dd>
 <p>Waiting for a connection termination request from the remote TCP.</p>
 </dd>
 
-### -field <a id="TcpConnectionCloseWait"></a><a id="tcpconnectionclosewait"></a><a id="TCPCONNECTIONCLOSEWAIT"></a><b>TcpConnectionCloseWait</b>
+### -field TcpConnectionCloseWait
 
 <dd>
 <p>Waiting for a connection termination request from the local user.</p>
 </dd>
 
-### -field <a id="TcpConnectionClosing"></a><a id="tcpconnectionclosing"></a><a id="TCPCONNECTIONCLOSING"></a><b>TcpConnectionClosing</b>
+### -field TcpConnectionClosing
 
 <dd>
 <p>Waiting for a connection termination request acknowledgment from the remote TCP.</p>
 </dd>
 
-### -field <a id="TcpConnectionLastAck"></a><a id="tcpconnectionlastack"></a><a id="TCPCONNECTIONLASTACK"></a><b>TcpConnectionLastAck</b>
+### -field TcpConnectionLastAck
 
 <dd>
 <p>Waiting for an acknowledgment of the connection termination request previously sent to the
        remote TCP, which includes an acknowledgment of its connection termination request.</p>
 </dd>
 
-### -field <a id="TcpConnectionTimeWait"></a><a id="tcpconnectiontimewait"></a><a id="TCPCONNECTIONTIMEWAIT"></a><b>TcpConnectionTimeWait</b>
+### -field TcpConnectionTimeWait
 
 <dd>
 <p>Waiting for enough time to pass to ensure that the remote TCP received the acknowledgment of its
@@ -198,137 +198,137 @@ typedef struct _TCP_OFFLOAD_STATE_DELEGATED {
      connection regardless of the connection state.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>RcvNxt</b>
+### -field RcvNxt
 
 <dd>
 <p>The sequence number for the next receive segment (see RCV.NEXT in RFC 793).</p>
 </dd>
 
-### -field <b>RcvWnd</b>
+### -field RcvWnd
 
 <dd>
 <p>The receive window size, in bytes (see RCV.WND in RFC 793).</p>
 </dd>
 
-### -field <b>SndUna</b>
+### -field SndUna
 
 <dd>
-<p>The sequence number for the first byte of unacknowledged data (see SND.UNA in RFC 793). For more information, see <a href="NULL">Send Data That Contains Data to Be Retransmitted</a>.</p>
+<p>The sequence number for the first byte of unacknowledged data (see SND.UNA in RFC 793). For more information, see <a href="netvista.send_data_that_contains_data_to_be_retransmitted">Send Data That Contains Data to Be Retransmitted</a>.</p>
 </dd>
 
-### -field <b>SndNxt</b>
+### -field SndNxt
 
 <dd>
-<p>The sequence number for the next byte to send on the connection (see SND.NXT in RFC 793). For more information, see <a href="NULL">Send Data That Contains Data to Be Retransmitted</a>.</p>
+<p>The sequence number for the next byte to send on the connection (see SND.NXT in RFC 793). For more information, see <a href="netvista.send_data_that_contains_data_to_be_retransmitted">Send Data That Contains Data to Be Retransmitted</a>.</p>
 </dd>
 
-### -field <b>SndMax</b>
+### -field SndMax
 
 <dd>
-<p>The maximum sequence number that has been sent on the connection. For more information, see <a href="NULL">Send Data That Contains Data to Be Retransmitted</a>.</p>
+<p>The maximum sequence number that has been sent on the connection. For more information, see <a href="netvista.send_data_that_contains_data_to_be_retransmitted">Send Data That Contains Data to Be Retransmitted</a>.</p>
 </dd>
 
-### -field <b>SndWnd</b>
+### -field SndWnd
 
 <dd>
 <p>The send window size, in bytes (see SND.WND in RFC 793).</p>
 </dd>
 
-### -field <b>MaxSndWnd</b>
+### -field MaxSndWnd
 
 <dd>
 <p>The maximum send window size, in bytes (see RFC 813).</p>
 </dd>
 
-### -field <b>SendWL1</b>
+### -field SendWL1
 
 <dd>
 <p>The segment sequence number used for the last window update (see SND.WL1 in RFC 793).</p>
 </dd>
 
-### -field <b>CWnd</b>
+### -field CWnd
 
 <dd>
 <p>The congestion window size, in bytes (see cwnd in RFC 2581).</p>
 </dd>
 
-### -field <b>SsThresh</b>
+### -field SsThresh
 
 <dd>
 <p>The slow start threshold, in bytes (see ssthresh in RFC 2581).</p>
 </dd>
 
-### -field <b>SRtt</b>
+### -field SRtt
 
 <dd>
 <p>The smoothed round-trip time, in clock ticks (see SRTT in RFCs 793 and 2988). Maintained on a per
      connection basis because it takes into account path, host, and sometimes application behavior.</p>
 </dd>
 
-### -field <b>RttVar</b>
+### -field RttVar
 
 <dd>
 <p>The round trip time variation, in clock ticks (see RTTVAR in RFC 2988).</p>
 </dd>
 
-### -field <b>TsRecent</b>
+### -field TsRecent
 
 <dd>
 <p>The timestamp value to send in the next ACK (see TS.Recent in RFC 1323)</p>
 </dd>
 
-### -field <b>TsRecentAge</b>
+### -field TsRecentAge
 
 <dd>
 <p>The length of time, in clock ticks, since the most recent timestamp was received (see RFC
      1323).</p>
 </dd>
 
-### -field <b>TsTime</b>
+### -field TsTime
 
 <dd>
 <p>The current value of the adjusted timestamp.</p>
 </dd>
 
-### -field <b>TotalRT</b>
+### -field TotalRT
 
 <dd>
 <p>The total time, in clock ticks, that has been spent retransmitting the current TCP segment.</p>
 </dd>
 
-### -field <b>DupAckCount</b>
+### -field DupAckCount
 
 <dd>
 <p>The number of ACKs that have been accepted for the same sequence number (see RFC 1323).</p>
 </dd>
 
-### -field <b>SndWndProbeCount</b>
+### -field SndWndProbeCount
 
 <dd>
 <p>The current send window probe round. For a description of the send window probe round, see 
-     <a href="NULL">Persist Timer</a>.</p>
+     <a href="netvista.persist_timer">Persist Timer</a>.</p>
 </dd>
 
-### -field <b>KeepAlive</b>
+### -field KeepAlive
 
 <dd>
 <p>This member is a union that consists of the following members:</p>
 <dl>
 
-### -field <b>ProbeCount</b>
+### -field ProbeCount
 
 <dd>
 <p>The number of keepalive probes that have been sent that have not received a response (see RFC
       1122).</p>
 </dd>
 
-### -field <b>TimeoutDelta</b>
+### -field TimeoutDelta
 
 <dd>
 <p>The time remaining, in clock ticks, until the next keepalive timeout (see RFC 1122). Note that a
@@ -340,19 +340,19 @@ typedef struct _TCP_OFFLOAD_STATE_DELEGATED {
 </dl>
 </dd>
 
-### -field <b>Retransmit</b>
+### -field Retransmit
 
 <dd>
 <p>This member is a union that consists of the following members:</p>
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>The number of retransmits that have been sent (see RFC 2581).</p>
 </dd>
 
-### -field <b>TimeoutDelta</b>
+### -field TimeoutDelta
 
 <dd>
 <p>The time, in clock ticks, remaining until the next retransmit timeout (see RFC 2581). Note that a
@@ -365,7 +365,7 @@ typedef struct _TCP_OFFLOAD_STATE_DELEGATED {
 </dl>
 </dd>
 
-### -field <b>SendDataHead</b>
+### -field SendDataHead
 
 <dd>
 <p>A pointer to a 
@@ -383,11 +383,11 @@ typedef struct _TCP_OFFLOAD_STATE_DELEGATED {
        has buffered the send data associated with it.</p>
 <p>This variable is used only in an initiate offload or terminate offload operation. For more
        information about how this variable is used, see 
-       <a href="NULL">Handling Outstanding Send Data During and After an Offload Operation</a> and 
-       <a href="NULL">Handling Outstanding Send Data During a Terminate Offload Operation</a>.</p>
+       <a href="netvista.handling_outstanding_send_data_during_and_after_an_offload_operation">Handling Outstanding Send Data During and After an Offload Operation</a> and 
+       <a href="netvista.handling_outstanding_send_data_during_a_terminate_offload_operation">Handling Outstanding Send Data During a Terminate Offload Operation</a>.</p>
 </dd>
 
-### -field <b>SendDataTail</b>
+### -field SendDataTail
 
 <dd>
 <p>A pointer to a 
@@ -408,7 +408,7 @@ typedef struct _TCP_OFFLOAD_STATE_DELEGATED {
 </p>
 </dd>
 
-### -field <b>SendBacklogSize</b>
+### -field SendBacklogSize
 
 <dd>
 <p>The offload target specifies this value to indicate the number of data bytes that the host stack
@@ -430,18 +430,18 @@ typedef struct _TCP_OFFLOAD_STATE_DELEGATED {
        <b>SendBacklogSize</b> variable is not used in the terminate offload operation.</p>
 </dd>
 
-### -field <b>BufferedData</b>
+### -field BufferedData
 
 <dd>
 <p>A pointer to buffered receive data. The host stack can pass such data to the offload target when
       offloading a TCP connection. (For more information, see 
-      <a href="NULL">Handling Buffered Receive Data During and After an Offload Operation</a>.) The
+      <a href="netvista.handling_buffered_receive_data_during_and_after_an_offload_operation">Handling Buffered Receive Data During and After an Offload Operation</a>.) The
       offload target can pass such data to the host stack when uploading a TCP connection. (For more
       information, see 
-      <a href="NULL">Handling Buffered Receive Data During a Terminate Offload Operation</a>.)</p>
+      <a href="netvista.handling_buffered_receive_data_during_a_terminate_offload_operation">Handling Buffered Receive Data During a Terminate Offload Operation</a>.)</p>
 </dd>
 
-### -field <b>ReceiveBacklogSize</b>
+### -field ReceiveBacklogSize
 
 <dd>
 <p>The offload target specifies this value to indicate the number of receive data bytes that are
@@ -513,4 +513,4 @@ typedef struct _TCP_OFFLOAD_STATE_DELEGATED {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATE_DELEGATED structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATE_DELEGATED structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

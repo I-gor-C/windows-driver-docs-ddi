@@ -7,13 +7,13 @@ old-location: debugger\readcontrolspace.htm
 old-project: debugger
 ms.assetid: 4b6955a5-ca03-418d-9eba-fdbe48599922
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: ReadControlSpace
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -58,25 +58,25 @@ __inline VOID ReadControlSpace(
 ## -parameters
 <dl>
 
-### -param <i>processor</i> 
+### -param processor 
 
 <dd>
 <p>Specifies the number of the processor whose control space is to be read.</p>
 </dd>
 
-### -param <i>address</i> 
+### -param address 
 
 <dd>
 <p>Specifies the address of the control space.</p>
 </dd>
 
-### -param <i>buf</i> 
+### -param buf 
 
 <dd>
 <p>Specifies the address of an array of bytes to hold the control space data.</p>
 </dd>
 
-### -param <i>size</i> 
+### -param size 
 
 <dd>
 <p>Specifies the number of bytes in the array pointed to by <i>buf</i>.</p>
@@ -110,7 +110,7 @@ __inline VOID ReadControlSpace(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

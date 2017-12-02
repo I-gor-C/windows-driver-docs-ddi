@@ -55,7 +55,7 @@ VOID ObUnRegisterCallbacks(
 ## -parameters
 <dl>
 
-### -param <i>RegistrationHandle</i> [in]
+### -param RegistrationHandle [in]
 
 <dd>
 <p>A value that identifies the set of callback routines to unregister. The <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a> routine provides this value when it originally registered the callback routines.</p>

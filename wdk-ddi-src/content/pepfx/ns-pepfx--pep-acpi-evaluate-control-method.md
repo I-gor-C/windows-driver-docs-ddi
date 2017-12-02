@@ -67,13 +67,13 @@ typedef struct _PEP_ACPI_EVALUATE_CONTROL_METHOD {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] A PEPHANDLE value that identifies the device's registration for ACPI services. The platform extension plug-in (PEP) supplied this handle in response to a previous <a href="kernel.pep_notify_acpi_register_device">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>RequestFlags</b>
+### -field RequestFlags
 
 <dd>
 <p>[in] A set of flags. This member contains one of the following values.</p>
@@ -102,70 +102,70 @@ typedef struct _PEP_ACPI_EVALUATE_CONTROL_METHOD {
 <p> </p>
 </dd>
 
-### -field ( <i>unnamed union</i> )
+### -field ( unnamed union )
 
 <dd>
 <p>A union that contains either the four-character path-relative control method name (if <b>RequestFlags</b> = PEP_ACPI_ECM_FLAG_RELATIVE_NAME) or the fully qualified control method name (if <b>RequestFlags</b> = PEP_ACPI_ECM_FLAG_FULLY_QUALIFIED_NAME).</p>
 <dl>
 
-### -field <b>MethodNameUlong</b>
+### -field MethodNameUlong
 
 <dd>
 <p>[in] A ULONG value that contains the four-character, path-relative name of the ACPI control method.</p>
 </dd>
 
-### -field <b>MethodNameString</b>
+### -field MethodNameString
 
 <dd>
-<p>[in] An <a href="kernel.ansi_string">ANSI_STRING</a> structure that contains the fully qualified name of the ACPI control method. This name specifies the the path and name of the method in the ACPI namespace. For more information, see <a href="NULL">Enumerating Child Devices and Control Methods</a>.</p>
+<p>[in] An <a href="kernel.ansi_string">ANSI_STRING</a> structure that contains the fully qualified name of the ACPI control method. This name specifies the the path and name of the method in the ACPI namespace. For more information, see <a href="https://msdn.microsoft.com/fe0553df-a5b9-46c4-8e1d-8b89a7d4ad67">Enumerating Child Devices and Control Methods</a>.</p>
 </dd>
 </dl>
 </dd>
 
-### -field <b>MethodStatus</b>
+### -field MethodStatus
 
 <dd>
 <p>[out] An NTSTATUS value that indicates the status of the evaluation of the ACPI control method. Set this member to STATUS_SUCCESS to indicate that the platform extension plug-in (PEP) successfully completed its evaluation of the method. Set to STATUS_NOT_SUPPORTED to indicate that the PEP does not recognize the control method. Set to STATUS_BUFFER_TOO_SMALL to indicate that the output buffer size specified by the <b>InputArgumentSize</b> member is not large enough to contain the method results.</p>
 <p>If the PEP is to evaluate the method asychronously, set this member to STATUS_PENDING and return from the <a href="kernel.acceptacpinotification">AcceptAcpiNotification</a> callback. Later, when the evaluation is completed, the PEP calls the <a href="kernel.completework">CompleteWork</a> routine to notify the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) that the evaluation of the control method is complete.</p>
 </dd>
 
-### -field <b>CompletionContext</b>
+### -field CompletionContext
 
 <dd>
 <p>[in] A pointer to a completion context value. The PEP uses this member only if the control method is evaluated asynchronously. In this case, the PEP supplies this completion context pointer in the call to the <a href="kernel.completework">CompleteWork</a> routine that notifies the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) that the evaluation of the control method is complete. Included in the input parameters to this call is a pointer to a <a href="..\pepfx\ns-pepfx--pep-work-acpi-evaluate-control-method-complete.md">PEP_WORK_ACPI_EVALUATE_CONTROL_METHOD_COMPLETE</a> structure to which the PEP has written the completion context pointer. The context is opaque to the PEP and contains data used internally by PoFx.</p>
 </dd>
 
-### -field <b>InputArgumentCount</b>
+### -field InputArgumentCount
 
 <dd>
 <p>[in] The number of input arguments in the input buffer pointed to by the <b>InputArguments</b> member. Each argument starts with an <a href="acpi.acpi_method_argument">ACPI_METHOD_ARGUMENT</a> structure that specifies the size of the argument. Currently, the maximum <b>InputArgumentCount</b> value is one.</p>
 </dd>
 
-### -field <b>InputArgumentSize</b>
+### -field InputArgumentSize
 
 <dd>
 <p>[in] The size, in bytes, of the input buffer pointed to by the <b>InputArguments</b> member.</p>
 </dd>
 
-### -field <b>InputArguments</b>
+### -field InputArguments
 
 <dd>
 <p>[in] A pointer to an input buffer that contains an <a href="acpi.acpi_method_argument">ACPI_METHOD_ARGUMENT</a> structure that specifies the input argument for the specified ACPI control method.</p>
 </dd>
 
-### -field <b>OutputArgumentCount</b>
+### -field OutputArgumentCount
 
 <dd>
 <p>[in] The number of output arguments in the output buffer pointed to by the <b>OutputArguments</b> member. Each argument starts with an <a href="acpi.acpi_method_argument">ACPI_METHOD_ARGUMENT</a> structure that specifies the size of the argument. Currently, the maximum allowed <b>OutputArgumentCount</b> value is one.</p>
 </dd>
 
-### -field <b>OutputArgumentSize</b>
+### -field OutputArgumentSize
 
 <dd>
 <p>[in, out] On input, the size, in bytes, of the output buffer pointed to by the <b>OutputArguments</b> member. If this buffer is not large enough to contain the result of evaluating the method, the PEP overwrites the <b>OutputArgumentSize</b> input value with the required size, and sets the <b>MethodStatus</b> member to STATUS_BUFFER_TOO_SMALL.</p>
 </dd>
 
-### -field <b>OutputArguments</b>
+### -field OutputArguments
 
 <dd>
 <p>[in] A pointer to an output buffer to which the PEP writes an <a href="acpi.acpi_method_argument">ACPI_METHOD_ARGUMENT</a> structure that contains the result of evaluating the specified ACPI control method.</p>

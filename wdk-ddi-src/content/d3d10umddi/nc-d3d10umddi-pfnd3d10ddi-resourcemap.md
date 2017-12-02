@@ -62,37 +62,37 @@ VOID APIENTRY ResourceMap(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hResource</i> [in]
+### -param hResource [in]
 
 <dd>
 <p> A handle to the resource to map.</p>
 </dd>
 
-### -param <i>Subresource</i> [in]
+### -param Subresource [in]
 
 <dd>
 <p> An index that indicates the subresource to map. </p>
 </dd>
 
-### -param <i>DDIMap</i> [in]
+### -param DDIMap [in]
 
 <dd>
 <p> A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-map.md">D3D10_DDI_MAP</a>-typed value that indicates the access level to map the subresource to. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p> A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-map-flag.md">D3D10_DDI_MAP_FLAG</a>-typed value that indicates how to map the subresource. </p>
 </dd>
 
-### -param <i>pMappedSubResource</i> [out]
+### -param pMappedSubResource [out]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-mapped-subresource.md">D3D10DDI_MAPPED_SUBRESOURCE</a> structure that receives the information about the mapped subresource.</p>

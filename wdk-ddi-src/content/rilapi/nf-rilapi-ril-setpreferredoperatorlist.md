@@ -7,7 +7,7 @@ old-location: netvista\ril_setpreferredoperatorlist.htm
 old-project: netvista
 ms.assetid: e61e9e3f-b70f-4b0a-8e64-4c7c4c086130
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SetPreferredOperatorList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,23 +61,23 @@ HRESULT  RIL_SetPreferredOperatorList(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>hUiccApp</i> 
+### -param hUiccApp 
 
 <dd></dd>
 
-### -param <i>dwPreferredListSize</i> 
+### -param dwPreferredListSize 
 
 <dd></dd>
 
-### -param <i>lpPreferredList</i> 
+### -param lpPreferredList 
 
 <dd></dd>
 </dl>

@@ -62,27 +62,27 @@ typedef struct _HID_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd></dd>
 
-### -field <b>bDescriptorType</b>
+### -field bDescriptorType
 
 <dd></dd>
 
-### -field <b>bcdHID</b>
+### -field bcdHID
 
 <dd></dd>
 
-### -field <b>bCountry</b>
+### -field bCountry
 
 <dd></dd>
 
-### -field <b>bNumDescriptors</b>
+### -field bNumDescriptors
 
 <dd></dd>
 
-### -field <b>DescriptorList [1]</b>
+### -field DescriptorList [1]
 
 <dd>
 </dd>

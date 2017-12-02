@@ -54,7 +54,7 @@ PORTCLASSAPI NTSTATUS NTAPI PcUnregisterAdapterPowerManagement(
 ## -parameters
 <dl>
 
-### -param <i>pDeviceObject</i> [in]
+### -param pDeviceObject [in]
 
 <dd>
 <p>Specifies a pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.</p>

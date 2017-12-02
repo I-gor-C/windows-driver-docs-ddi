@@ -55,13 +55,13 @@ PUNKNOWN KsRegisterAggregatedClientUnknown(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>A pointer to the AVStream object to become the outer unknown interface.</p>
 </dd>
 
-### -param <i>ClientUnknown</i> [in]
+### -param ClientUnknown [in]
 
 <dd>
 <p>A pointer to an <b>IUnknown</b> interface.</p>

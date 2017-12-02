@@ -57,25 +57,25 @@ typedef struct D3DWDDM2_2DDI_CORELAYER_DEVICECALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnShaderCacheGetValue</b>
+### -field pfnShaderCacheGetValue
 
 <dd>
 <p>A callback function that gets the shader cache value.</p>
 </dd>
 
-### -field <b>pfnShaderCacheStoreValue</b>
+### -field pfnShaderCacheStoreValue
 
 <dd>
 <p>A callback function that stores the shader cache value. </p>
 </dd>
 
-### -field <b>pfnShaderCacheAddRefCb</b>
+### -field pfnShaderCacheAddRefCb
 
 <dd>
 <p>A callback function that adds a reference to the shader cache. </p>
 </dd>
 
-### -field <b>pfnShaderCacheReleaseCb</b>
+### -field pfnShaderCacheReleaseCb
 
 <dd>
 <p>A callback function that releases a reference to a cache. </p>

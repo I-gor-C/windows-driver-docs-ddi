@@ -64,57 +64,57 @@ BOOLEAN ModifyMemoryWindow(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Pointer to the context for the interface routine.</p>
 </dd>
 
-### -param <i>HostBase</i> [in]
+### -param HostBase [in]
 
 <dd>
 <p>Specifies the physical memory window to map. <i>HostBase</i> is the base address for the memory card in the system's physical address space.</p>
 </dd>
 
-### -param <i>CardBase</i> [in]
+### -param CardBase [in]
 
 <dd>
 <p>Specifies the byte offset in the PC Card's or CardBus card's memory where the memory mapping begins.</p>
 </dd>
 
-### -param <i>Enable</i> [in]
+### -param Enable [in]
 
 <dd>
 <p>Specifies permission to access the memory window. If <i>Enable</i> is <b>TRUE</b>, memory access is permitted, otherwise memory access is not permitted.</p>
 </dd>
 
-### -param <i>WindowSize</i> [in, optional]
+### -param WindowSize [in, optional]
 
 <dd>
 <p>Specifies the size, in bytes, of the memory window that is mapped. The value of <i>WindowSize</i> cannot exceed the memory window granted to the driver in its assigned resources. If the value of Enable is <b>TRUE</b> and the value of WindowSize is zero, the size of the memory window granted to the driver in its assigned resources is used. If <i>Enable</i> is <b>FALSE</b>, <i>WindowSize</i> is not used.</p>
 </dd>
 
-### -param <i>AccessSpeed</i> [in, optional]
+### -param AccessSpeed [in, optional]
 
 <dd>
 <p>Specifies the access speed of the PC Card or CardBus card. The value of <i>AccessSpeed</i> is encoded as specified by the <i>PC Card Standard, Release 6.1</i>. If Enable is <b>FALSE</b>, <i>AccessSpeed</i> is not used.</p>
 </dd>
 
-### -param <i>BusWidth</i> [in, optional]
+### -param BusWidth [in, optional]
 
 <dd>
 <p>Specifies the width of bus access to the PCMCIA memory card. <i>BusWidth</i> must be one of the following values:</p>
 <p></p>
 <dl>
 
-### -param <a id="PCMCIA_MEMORY_8BIT_ACCESS"></a><a id="pcmcia_memory_8bit_access"></a>PCMCIA_MEMORY_8BIT_ACCESS
+### -param PCMCIA_MEMORY_8BIT_ACCESS
 
 <dd></dd>
 </dl>
 <p>If <i>Enable</i> is <b>FALSE</b>, <i>BusWidth</i> is not used.</p>
 </dd>
 
-### -param <i>AttributeMemory</i> [in, optional]
+### -param AttributeMemory [in, optional]
 
 <dd>
 <p>Must be <b>FALSE</b> for common memory and <b>TRUE</b> for attribute memory. </p>

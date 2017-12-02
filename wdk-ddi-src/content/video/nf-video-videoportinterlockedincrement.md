@@ -55,7 +55,7 @@ LONG FASTCALL VideoPortInterlockedIncrement(
 ## -parameters
 <dl>
 
-### -param <i>Addend</i> [in]
+### -param Addend [in]
 
 <dd>
 <p>Pointer to the variable to be incremented.</p>

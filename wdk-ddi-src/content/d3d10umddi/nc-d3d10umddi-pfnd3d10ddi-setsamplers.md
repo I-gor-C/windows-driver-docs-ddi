@@ -60,25 +60,25 @@ VOID APIENTRY CsSetSamplers(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p> The offset to the first sampler to set. </p>
 </dd>
 
-### -param <i>NumSamplers</i> [in]
+### -param NumSamplers [in]
 
 <dd>
 <p> The total number of samplers to set. </p>
 </dd>
 
-### -param <i>phSamplers</i> [in]
+### -param phSamplers [in]
 
 <dd>
 <p> An array of handles to the samplers, beginning at the offset that <i>Offset</i> specifies.</p>

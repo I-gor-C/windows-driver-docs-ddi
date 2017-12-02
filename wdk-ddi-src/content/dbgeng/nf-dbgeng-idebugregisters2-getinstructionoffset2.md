@@ -7,7 +7,7 @@ old-location: debugger\getinstructionoffset2.htm
 old-project: debugger
 ms.assetid: c5757dbb-16bf-46f9-836f-5a94089bbb1e
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugRegisters2, GetInstructionOffset2, IDebugRegisters2::GetInstructionOffset2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT GetInstructionOffset2(
 ## -parameters
 <dl>
 
-### -param <i>Source</i> [in]
+### -param Source [in]
 
 <dd>
 <p>Specifies the register source to query.</p>
@@ -95,7 +95,7 @@ HRESULT GetInstructionOffset2(
 <p> </p>
 </dd>
 
-### -param <i>Offset</i> [out]
+### -param Offset [out]
 
 <dd>
 <p>Receives the location in the process's virtual address space of the current instruction of the current thread.</p>
@@ -103,7 +103,7 @@ HRESULT GetInstructionOffset2(
 </dl>
 
 ## -returns
-<p>This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="debugger.hresult_values">HRESULT Values</a>.</p><dl>
+<p>This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 
@@ -151,4 +151,4 @@ HRESULT GetInstructionOffset2(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters2::GetInstructionOffset2 method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters2::GetInstructionOffset2 method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

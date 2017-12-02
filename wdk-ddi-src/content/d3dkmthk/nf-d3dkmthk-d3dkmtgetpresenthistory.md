@@ -54,7 +54,7 @@ NTSTATUS D3DKMTGetPresentHistory(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>Supplies a pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getpresenthistory.md">D3DKMT_GETPRESENTHISTORY</a> structure that describes the copying history.</p>

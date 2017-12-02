@@ -7,7 +7,7 @@ old-location: netvista\wdi_cipher_algorithm.htm
 old-project: netvista
 ms.assetid: 08413358-DFBC-4AC3-97B3-380D98EFFBF3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,50 +66,50 @@ typedef enum _WDI_CIPHER_ALGORITHM {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_CIPHER_ALGO_NONE"></a><a id="wdi_cipher_algo_none"></a><b>WDI_CIPHER_ALGO_NONE</b>
+### -field WDI_CIPHER_ALGO_NONE
 
 <dd>
 <p>Specifies that no cipher algorithm is enabled or supported.</p>
 </dd>
 
-### -field <a id="WDI_CIPHER_ALGO_WEP40"></a><a id="wdi_cipher_algo_wep40"></a><b>WDI_CIPHER_ALGO_WEP40</b>
+### -field WDI_CIPHER_ALGO_WEP40
 
 <dd>
 <p>Specifies a Wired Equivalent Privacy (WEP) algorithm, which is the RC4-based algorithm that is specified in the IEEE 802.11-2012 standard. This enumerator specifies the WEP cipher algorithm with a 40-bit cipher key.</p>
 </dd>
 
-### -field <a id="WDI_CIPHER_ALGO_TKIP"></a><a id="wdi_cipher_algo_tkip"></a><b>WDI_CIPHER_ALGO_TKIP</b>
+### -field WDI_CIPHER_ALGO_TKIP
 
 <dd>
 <p>Specifies a Temporal Key Integrity Protocol (TKIP) algorithm, which is the RC4-based cipher suite that is based on the algorithms that are defined in the WPA specification and IEEE 802.11i-2004 standard. This cipher also uses the Michael Message Integrity Code (MIC) algorithm for forgery protection.</p>
 </dd>
 
-### -field <a id="WDI_CIPHER_ALGO_CCMP"></a><a id="wdi_cipher_algo_ccmp"></a><b>WDI_CIPHER_ALGO_CCMP</b>
+### -field WDI_CIPHER_ALGO_CCMP
 
 <dd>
 <p>Specifies an AES-CCMP algorithm, as specified in the IEEE 802.11i-2004 standard and RFC 3610. Advanced Encryption Standard (AES) is the encryption algorithm defined in FIPS PUB 197.</p>
 </dd>
 
-### -field <a id="WDI_CIPHER_ALGO_WEP104"></a><a id="wdi_cipher_algo_wep104"></a><b>WDI_CIPHER_ALGO_WEP104</b>
+### -field WDI_CIPHER_ALGO_WEP104
 
 <dd>
 <p>Specifies a WEP cipher algorithm with a 104-bit cipher key.</p>
 </dd>
 
-### -field <a id="WDI_CIPHER_ALGO_BIP"></a><a id="wdi_cipher_algo_bip"></a><b>WDI_CIPHER_ALGO_BIP</b>
+### -field WDI_CIPHER_ALGO_BIP
 
 <dd>
 <p>Specifies a BIP cipher algorithm.</p>
 </dd>
 
-### -field <a id="WDI_CIPHER_ALGO_GCMP"></a><a id="wdi_cipher_algo_gcmp"></a><b>WDI_CIPHER_ALGO_GCMP</b>
+### -field WDI_CIPHER_ALGO_GCMP
 
 <dd>
 <p>Added in Windows 10, version 1607, WDI version 1.0.21.</p>
 <p>Specifies a GCMP (Galois/Counter Mode Protocol) cipher algorithm. It is the only encryption protocol supported for 802.11ad (DMG) Phy.</p>
 </dd>
 
-### -field <a id="WDI_CIPHER_ALGO_WPA_USE_GROUP"></a><a id="wdi_cipher_algo_wpa_use_group"></a><b>WDI_CIPHER_ALGO_WPA_USE_GROUP</b>
+### -field WDI_CIPHER_ALGO_WPA_USE_GROUP
 
 <dd>
 <p>Specifies a Wi-Fi Protected Access (WPA) Use Group Key cipher suite. For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE 802.11i-2004 standard.
@@ -117,7 +117,7 @@ typedef enum _WDI_CIPHER_ALGORITHM {
 </p>
 </dd>
 
-### -field <a id="WDI_CIPHER_ALGO_RSN_USE_GROUP"></a><a id="wdi_cipher_algo_rsn_use_group"></a><b>WDI_CIPHER_ALGO_RSN_USE_GROUP</b>
+### -field WDI_CIPHER_ALGO_RSN_USE_GROUP
 
 <dd>
 <p>Specifies a Robust Security Network (RSN) Use Group Key cipher suite. For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE 802.11i-2004 standard.
@@ -125,13 +125,13 @@ typedef enum _WDI_CIPHER_ALGORITHM {
 </p>
 </dd>
 
-### -field <a id="WDI_CIPHER_ALGO_WEP"></a><a id="wdi_cipher_algo_wep"></a><b>WDI_CIPHER_ALGO_WEP</b>
+### -field WDI_CIPHER_ALGO_WEP
 
 <dd>
 <p>Specifies a WEP cipher algorithm with a cipher key of any length. </p>
 </dd>
 
-### -field <a id="WDI_CIPHER_ALGO_IHV_START"></a><a id="wdi_cipher_algo_ihv_start"></a><b>WDI_CIPHER_ALGO_IHV_START</b>
+### -field WDI_CIPHER_ALGO_IHV_START
 
 <dd>
 <p>Specifies the start of the range that is used to define proprietary cipher algorithms that are developed by an independent hardware vendor (IHV). 
@@ -139,7 +139,7 @@ typedef enum _WDI_CIPHER_ALGORITHM {
 </p>
 </dd>
 
-### -field <a id="WDI_CIPHER_ALGO_IHV_END"></a><a id="wdi_cipher_algo_ihv_end"></a><b>WDI_CIPHER_ALGO_IHV_END</b>
+### -field WDI_CIPHER_ALGO_IHV_END
 
 <dd>
 <p>Specifies the end of the range that is used to define proprietary authentication algorithms that are developed by an IHV.  </p>

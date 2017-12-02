@@ -56,13 +56,13 @@ NTSTATUS RtlCreateSecurityDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>SecurityDescriptor</i> [out]
+### -param SecurityDescriptor [out]
 
 <dd>
 <p>Pointer to the buffer for the <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> to be initialized.</p>
 </dd>
 
-### -param <i>Revision</i> [in]
+### -param Revision [in]
 
 <dd>
 <p>Specifies the revision level to assign to the security descriptor. Set this parameter to SECURITY_DESCRIPTOR_REVISION.</p>

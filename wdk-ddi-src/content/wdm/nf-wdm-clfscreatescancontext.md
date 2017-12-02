@@ -59,25 +59,25 @@ NTSTATUS ClfsCreateScanContext(
 ## -parameters
 <dl>
 
-### -param <i>plfoLog</i> [in]
+### -param plfoLog [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents a CLFS stream. The scan context is created for the log that provides the underlying storage for that stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>.</p>
 </dd>
 
-### -param <i>cFromContainer</i> [in]
+### -param cFromContainer [in]
 
 <dd>
 <p>The index of the first container to be scanned. Containers are indexed starting at zero.</p>
 </dd>
 
-### -param <i>cContainers</i> [in]
+### -param cContainers [in]
 
 <dd>
 <p>The number of containers to be scanned with each call to <a href="..\wdm\nf-wdm-clfsscanlogcontainers.md">ClfsScanLogContainers</a>.</p>
 </dd>
 
-### -param <i>eScanMode</i> [in]
+### -param eScanMode [in]
 
 <dd>
 <p> A set of flags that specify whether the scan context is set up for scanning forward or backward and whether the scan context should be reinitialized. The following three flags are available for callers of this routine.</p>
@@ -116,7 +116,7 @@ NTSTATUS ClfsCreateScanContext(
 <p>If <i>pcxScan</i> points to a CLFS_SCAN_CONTEXT structure that has been passed to this routine previously, the CLFS_SCAN_INIT flag must be set. Also, one and only one of the direction flags (CLFS_SCAN_FORWARD or CLFS_SCAN_BACKWARD) must be set.</p>
 </dd>
 
-### -param <i>pcxScan</i> [in, out]
+### -param pcxScan [in, out]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="kernel.clfs_scan_context">CLFS_SCAN_CONTEXT</a> structure whose members are initialized by this routine. This structure is later passed to <a href="..\wdm\nf-wdm-clfsscanlogcontainers.md">ClfsScanLogContainers</a>.</p>

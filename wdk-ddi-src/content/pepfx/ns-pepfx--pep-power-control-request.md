@@ -61,49 +61,49 @@ typedef struct _PEP_POWER_CONTROL_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>PowerControlCode</b>
+### -field PowerControlCode
 
 <dd>
 <p>[in] A pointer to a <a href="http://msdn.microsoft.com/library/windows/desktop/aa373931(v=vs.85).aspx">GUID</a> value that specifies the power control operation to perform. This is the same value that the requesting driver supplied as the <i>PowerControlCode</i> parameter to the <a href="..\wdm\nf-wdm-pofxpowercontrol.md">PoFxPowerControl</a> routine.</p>
 </dd>
 
-### -field <b>InBuffer</b>
+### -field InBuffer
 
 <dd>
 <p>[in] A pointer to a driver-allocated input buffer that contains the input parameters for this power control operation. This is the same value that the requesting driver supplied as the <i>InBuffer</i> parameter to the <b>PoFxPowerControl</b> routine.</p>
 </dd>
 
-### -field <b>InBufferSize</b>
+### -field InBufferSize
 
 <dd>
 <p>[in] The size in bytes of the buffer pointed to by <b>InBuffer</b>. This is the same value that the requesting driver supplied as the <i>InBufferSize</i> parameter to the <b>PoFxPowerControl</b> routine.</p>
 </dd>
 
-### -field <b>OutBuffer</b>
+### -field OutBuffer
 
 <dd>
 <p>[in] A pointer to a driver-allocated output buffer to which the PEP writes the results of this power control operation. This is the same value that the requesting driver supplied as the <i>OutBuffer</i> parameter to the <b>PoFxPowerControl</b> routine.</p>
 </dd>
 
-### -field <b>OutBufferSize</b>
+### -field OutBufferSize
 
 <dd>
 <p>[in] The size in bytes of the buffer pointed to by <b>OutBuffer</b>.</p>
 </dd>
 
-### -field <b>BytesReturned</b>
+### -field BytesReturned
 
 <dd>
 <p>[out] The number of bytes that the PEP wrote to the output buffer pointed to by <b>OutBuffer</b>.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>[out] The status of the requested power control operation. If the operation is successful, the PEP sets this member to STATUS_SUCCESS. Otherwise, the PEP sets this member to an appropriate error status code.</p>

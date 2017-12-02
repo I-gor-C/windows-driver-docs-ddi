@@ -7,7 +7,7 @@ old-location: netvista\wwan_sms_cdma_encoding.htm
 old-project: netvista
 ms.assetid: 1f632da2-36bb-491e-b445-5c320277a446
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,67 +66,67 @@ typedef enum _WWAN_SMS_CDMA_ENCODING {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanSmsCdmaEncodingOctet"></a><a id="wwansmscdmaencodingoctet"></a><a id="WWANSMSCDMAENCODINGOCTET"></a><b>WwanSmsCdmaEncodingOctet</b>
+### -field WwanSmsCdmaEncodingOctet
 
 <dd>
 <p>The message uses octet encoding.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaEncodingEpm"></a><a id="wwansmscdmaencodingepm"></a><a id="WWANSMSCDMAENCODINGEPM"></a><b>WwanSmsCdmaEncodingEpm</b>
+### -field WwanSmsCdmaEncodingEpm
 
 <dd>
 <p>The message uses EPM encoding.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaEncoding7BitAscii"></a><a id="wwansmscdmaencoding7bitascii"></a><a id="WWANSMSCDMAENCODING7BITASCII"></a><b>WwanSmsCdmaEncoding7BitAscii</b>
+### -field WwanSmsCdmaEncoding7BitAscii
 
 <dd>
 <p>The message uses 7-bit ASCII encoding. The encoded message is represented in bytes per character.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaEncodingIa5"></a><a id="wwansmscdmaencodingia5"></a><a id="WWANSMSCDMAENCODINGIA5"></a><b>WwanSmsCdmaEncodingIa5</b>
+### -field WwanSmsCdmaEncodingIa5
 
 <dd>
 <p>The message uses IA5 encoding.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaEncodingUnicode"></a><a id="wwansmscdmaencodingunicode"></a><a id="WWANSMSCDMAENCODINGUNICODE"></a><b>WwanSmsCdmaEncodingUnicode</b>
+### -field WwanSmsCdmaEncodingUnicode
 
 <dd>
 <p>The message uses Unicode encoding.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaEncodingShiftJis"></a><a id="wwansmscdmaencodingshiftjis"></a><a id="WWANSMSCDMAENCODINGSHIFTJIS"></a><b>WwanSmsCdmaEncodingShiftJis</b>
+### -field WwanSmsCdmaEncodingShiftJis
 
 <dd>
 <p>The message uses shifted JIS encoding.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaEncodingKorean"></a><a id="wwansmscdmaencodingkorean"></a><a id="WWANSMSCDMAENCODINGKOREAN"></a><b>WwanSmsCdmaEncodingKorean</b>
+### -field WwanSmsCdmaEncodingKorean
 
 <dd>
 <p>The message uses Korean encoding.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaEncodingLatinHebrew"></a><a id="wwansmscdmaencodinglatinhebrew"></a><a id="WWANSMSCDMAENCODINGLATINHEBREW"></a><b>WwanSmsCdmaEncodingLatinHebrew</b>
+### -field WwanSmsCdmaEncodingLatinHebrew
 
 <dd>
 <p>The message uses Latin Hebrew encoding.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaEncodingLatin"></a><a id="wwansmscdmaencodinglatin"></a><a id="WWANSMSCDMAENCODINGLATIN"></a><b>WwanSmsCdmaEncodingLatin</b>
+### -field WwanSmsCdmaEncodingLatin
 
 <dd>
 <p>The message uses Latin encoding.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaEncodingGsm7Bit"></a><a id="wwansmscdmaencodinggsm7bit"></a><a id="WWANSMSCDMAENCODINGGSM7BIT"></a><b>WwanSmsCdmaEncodingGsm7Bit</b>
+### -field WwanSmsCdmaEncodingGsm7Bit
 
 <dd>
 <p>The message uses 7-bit GSM encoding.</p>
 </dd>
 
-### -field <a id="WwanSmsCdmaEncodingMax"></a><a id="wwansmscdmaencodingmax"></a><a id="WWANSMSCDMAENCODINGMAX"></a><b>WwanSmsCdmaEncodingMax</b>
+### -field WwanSmsCdmaEncodingMax
 
 <dd>
 <p>The total number of supported SMS CDMA encoding formats.</p>
@@ -169,4 +169,4 @@ typedef enum _WWAN_SMS_CDMA_ENCODING {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_CDMA_ENCODING enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_CDMA_ENCODING enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

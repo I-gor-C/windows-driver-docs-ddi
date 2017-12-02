@@ -54,7 +54,7 @@ BOOLEAN IoSetThreadHardErrorMode(
 ## -parameters
 <dl>
 
-### -param <i>EnableHardErrors</i> [in]
+### -param EnableHardErrors [in]
 
 <dd>
 <p>Specifies whether hard error reporting to the user should be enabled or disabled for this thread. A value of <b>TRUE</b> enables hard error reporting. <b>FALSE</b> disables it. </p>

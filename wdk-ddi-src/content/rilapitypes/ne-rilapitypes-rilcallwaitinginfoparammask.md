@@ -7,7 +7,7 @@ old-location: netvista\rilcallwaitinginfoparammask_2.htm
 old-project: netvista
 ms.assetid: ed6f3d54-face-43e3-a45f-820c2f8e99cf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILCALLWAITINGINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_CWI_CALLTYPE"></a><a id="ril_param_cwi_calltype"></a><b>RIL_PARAM_CWI_CALLTYPE</b>
+### -field RIL_PARAM_CWI_CALLTYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CWI_CALLERINFO"></a><a id="ril_param_cwi_callerinfo"></a><b>RIL_PARAM_CWI_CALLERINFO</b>
+### -field RIL_PARAM_CWI_CALLERINFO
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CWI_ALL"></a><a id="ril_param_cwi_all"></a><b>RIL_PARAM_CWI_ALL</b>
+### -field RIL_PARAM_CWI_ALL
 
 <dd></dd>
 </dl>

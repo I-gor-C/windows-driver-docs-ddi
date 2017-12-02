@@ -59,37 +59,37 @@ typedef struct _MIRACAST_DRIVER_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of the <b>MIRACAST_DRIVER_INTERFACE</b> structure that the driver returns when the operating system calls the <a href="..\netdispumdddi\nc-netdispumdddi-query-miracast-driver-interface.md">QueryMiracastDriverInterface</a> function.</p>
 </dd>
 
-### -field <b>CreateMiracastContext</b>
+### -field CreateMiracastContext
 
 <dd>
 <p>A pointer to the driver's  <a href="..\netdispumdddi\nc-netdispumdddi-pfn-create-miracast-context.md">CreateMiracastContext</a> function.</p>
 </dd>
 
-### -field <b>DestroyMiracastContext</b>
+### -field DestroyMiracastContext
 
 <dd>
 <p>A pointer to the driver's  <a href="..\netdispumdddi\nc-netdispumdddi-pfn-destroy-miracast-context.md">DestroyMiracastContext</a> function.</p>
 </dd>
 
-### -field <b>StartMiracastSession</b>
+### -field StartMiracastSession
 
 <dd>
 <p>A pointer to the driver's  <a href="..\netdispumdddi\nc-netdispumdddi-pfn-start-miracast-session.md">StartMiracastSession</a> function.</p>
 </dd>
 
-### -field <b>StopMiracastSession</b>
+### -field StopMiracastSession
 
 <dd>
 <p>A pointer to the driver's   <a href="..\netdispumdddi\nc-netdispumdddi-pfn-stop-miracast-session.md">StopMiracastSession</a> function.</p>
 </dd>
 
-### -field <b>HandleKernelModeMessage</b>
+### -field HandleKernelModeMessage
 
 <dd>
 <p>A pointer to the driver's  <a href="..\netdispumdddi\nc-netdispumdddi-pfn-handle-kmd-message.md">HandleKernelModeMessage</a> function.</p>

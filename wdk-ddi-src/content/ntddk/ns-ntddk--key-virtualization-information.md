@@ -59,37 +59,37 @@ typedef struct _KEY_VIRTUALIZATION_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>VirtualizationCandidate</b>
+### -field VirtualizationCandidate
 
 <dd>
 <p>Specifies whether the key is part of the virtualization namespace scope.</p>
 </dd>
 
-### -field <b>VirtualizationEnabled</b>
+### -field VirtualizationEnabled
 
 <dd>
 <p>Specifies whether virtualization is enabled on this key. This value can be set to 1 only if <b>VirtualizationCandidate</b> is 1. </p>
 </dd>
 
-### -field <b>VirtualTarget</b>
+### -field VirtualTarget
 
 <dd>
 <p>Specifies whether the key is a virtual key. This value can be set to 1 only if <b>VirtualizationCandidate</b> and <b>VirtualizationEnabled</b> are both 0. This value is valid only on the virtual store key handles.</p>
 </dd>
 
-### -field <b>VirtualStore</b>
+### -field VirtualStore
 
 <dd>
 <p>Specified whether the key is a part of the virtual store path.</p>
 </dd>
 
-### -field <b>VirtualSource</b>
+### -field VirtualSource
 
 <dd>
 <p>Specifies whether the key has ever been virtualized. This value can be set to 1 only if <b>VirtualizationCandidate</b> is 1. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use. </p>

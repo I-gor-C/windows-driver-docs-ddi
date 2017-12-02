@@ -7,7 +7,7 @@ old-location: image\istidevice_lockdevice.htm
 old-project: image
 ms.assetid: 208d9dc3-736b-4684-b8d3-802f6df78142
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDevice, LockDevice, IStiDevice::LockDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT LockDevice(
 ## -parameters
 <dl>
 
-### -param <i>dwTimeOut</i> [in]
+### -param dwTimeOut [in]
 
 <dd>
 <p>Caller-supplied time-out value, in milliseconds. If the lock is not obtained in this time period, an error is returned.</p>

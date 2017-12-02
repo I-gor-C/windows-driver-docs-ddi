@@ -62,57 +62,57 @@ typedef struct D3DDDIARG_PRESENT1 {
 ## -struct-fields
 <dl>
 
-### -field <b>phSrcResources</b>
+### -field phSrcResources
 
 <dd>
 <p>[in] An array of non-<b>NULL</b> handles and zero-based indices to the source resource to display or to release. <b>phSrcResources</b> is always a valid handle for a resource to display.</p>
 </dd>
 
-### -field <b>SrcResources</b>
+### -field SrcResources
 
 <dd>
 <p>[in] The number of source resources that are in the array pointed to by <b>phSrcResources.</b></p>
 </dd>
 
-### -field <b>hDstResource</b>
+### -field hDstResource
 
 <dd>
 <p>[in] A handle to the destination resource to display to. If <b>NULL</b>, the destination is unknown, and the display miniport driver determines the destination just before the hardware command stream is processed.</p>
 </dd>
 
-### -field <b>DstSubResourceIndex</b>
+### -field DstSubResourceIndex
 
 <dd>
 <p>
       [in] The zero-based index into the destination resource, which is specified by the handle in the <b>hDstResource</b> member. This index indicates the subresource or surface to display to.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-presentflags.md">D3DDDI_PRESENTFLAGS</a> structure that identifies, in bit-field flags, how to display. </p>
 </dd>
 
-### -field <b>FlipInterval</b>
+### -field FlipInterval
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi-flipinterval-type.md">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs). </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>pDirtyRects</b>
+### -field pDirtyRects
 
 <dd>
 <p>[in] A pointer to an array of dirty rectangles (<a href="display.rect">RECT</a>s), relative to the source rectangle <b>SrcRect</b>, that indicate the portion of the overlay plane that has changed.</p>
 <p>The driver can use this member to perform optimizations, though it's not required to use the dirty rectangle info. However, the driver should never fail a function call based on the provided dirty rectangles.</p>
 </dd>
 
-### -field <b>DirtyRects</b>
+### -field DirtyRects
 
 <dd>
 <p>[in] The number of dirty rectangles in the array pointed to by <b>pDirtyRects</b>.</p>

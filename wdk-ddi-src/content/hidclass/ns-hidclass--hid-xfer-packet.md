@@ -56,19 +56,19 @@ typedef struct _HID_XFER_PACKET {
 ## -struct-fields
 <dl>
 
-### -field <b>reportBuffer</b>
+### -field reportBuffer
 
 <dd>
 <p>Pointer to a report buffer.</p>
 </dd>
 
-### -field <b>reportBufferLen</b>
+### -field reportBufferLen
 
 <dd>
 <p>Specifies the length of the report at <b>reportBuffer</b>.</p>
 </dd>
 
-### -field <b>reportId</b>
+### -field reportId
 
 <dd>
 <p>Specifies the report ID of the report contained at <b>reportBuffer</b>. This parameter is optional, and, if not specified, should be set to zero.</p>

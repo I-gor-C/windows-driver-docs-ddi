@@ -58,31 +58,31 @@ typedef struct _MSiSCSI_NICConfig {
 ## -struct-fields
 <dl>
 
-### -field <b>LinkSpeed</b>
+### -field LinkSpeed
 
 <dd>
 <p>The speed of the network link, in megabits per second.</p>
 </dd>
 
-### -field <b>MaxLinkSpeed</b>
+### -field MaxLinkSpeed
 
 <dd>
 <p>The maximum speed of the network link, in megabits per second (Mbps).</p>
 </dd>
 
-### -field <b>LinkState</b>
+### -field LinkState
 
 <dd>
 <p>A <a href="storage.iscsi_nic_linkstate">ISCSI_NIC_LINKSTATE</a> enumeration value that indicates whether the port is connected to the network or not.</p>
 </dd>
 
-### -field <b>MaxFrameSize</b>
+### -field MaxFrameSize
 
 <dd>
 <p>The maximum frame size, in bytes.</p>
 </dd>
 
-### -field <b>MacAddress</b>
+### -field MacAddress
 
 <dd>
 <p>The Ethernet MAC address of the port.</p>

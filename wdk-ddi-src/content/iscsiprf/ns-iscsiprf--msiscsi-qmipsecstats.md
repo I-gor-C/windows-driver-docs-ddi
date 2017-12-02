@@ -71,109 +71,109 @@ typedef struct _MSiSCSI_QMIPSECStats {
 ## -struct-fields
 <dl>
 
-### -field <b>ActiveSA</b>
+### -field ActiveSA
 
 <dd>
 <p>The number of active IPsec security associations (SAs). </p>
 </dd>
 
-### -field <b>PendingKeyOperations</b>
+### -field PendingKeyOperations
 
 <dd>
 <p>The number of IPsec key operations that are in progress. </p>
 </dd>
 
-### -field <b>KeyAdditions</b>
+### -field KeyAdditions
 
 <dd>
 <p>The number of successful IPsec SA negotiations. </p>
 </dd>
 
-### -field <b>KeyDeletions</b>
+### -field KeyDeletions
 
 <dd>
 <p>The number of IPsec SA key deletions. </p>
 </dd>
 
-### -field <b>ReKeys</b>
+### -field ReKeys
 
 <dd>
 <p>The number of re-key operations for IPsec SAs. </p>
 </dd>
 
-### -field <b>ActiveTunnels</b>
+### -field ActiveTunnels
 
 <dd>
 <p>The number of active IPsec tunnels. </p>
 </dd>
 
-### -field <b>BadSPIPackets</b>
+### -field BadSPIPackets
 
 <dd>
 <p>The number of packets for which the security parameters index (SPI) was incorrect.</p>
 </dd>
 
-### -field <b>PacketsNotDecrypted</b>
+### -field PacketsNotDecrypted
 
 <dd>
 <p>The number of failed decryption packets. </p>
 </dd>
 
-### -field <b>PacketsNotAuthenticated</b>
+### -field PacketsNotAuthenticated
 
 <dd>
 <p>The number of packets for which data could not be verified.</p>
 </dd>
 
-### -field <b>PacketsWithReplayDetection</b>
+### -field PacketsWithReplayDetection
 
 <dd>
 <p>The number of packets that contained a valid sequence number field.</p>
 </dd>
 
-### -field <b>ConfidentialBytesSent</b>
+### -field ConfidentialBytesSent
 
 <dd>
 <p>The number of bytes that are sent by using the encapsulating security payload (ESP) protocol.</p>
 </dd>
 
-### -field <b>ConfidentialBytesReceived</b>
+### -field ConfidentialBytesReceived
 
 <dd>
 <p>The number of bytes that are received by using the ESP protocol.</p>
 </dd>
 
-### -field <b>AuthenticatedBytesSent</b>
+### -field AuthenticatedBytesSent
 
 <dd>
 <p>The number of bytes that are sent by using the authentication header (AH) protocol.</p>
 </dd>
 
-### -field <b>AuthenticatedBytesReceived</b>
+### -field AuthenticatedBytesReceived
 
 <dd>
 <p>The number of bytes that are received by using the AH protocol.</p>
 </dd>
 
-### -field <b>TransportBytesSent</b>
+### -field TransportBytesSent
 
 <dd>
 <p>The number of bytes that are sent by using the IPsec protocol. </p>
 </dd>
 
-### -field <b>TransportBytesReceived</b>
+### -field TransportBytesReceived
 
 <dd>
 <p>The number of bytes that are received by using the IPsec protocol. </p>
 </dd>
 
-### -field <b>TunnelBytesSent</b>
+### -field TunnelBytesSent
 
 <dd>
 <p>The number of bytes that are sent by using the IPsec tunnel mode.</p>
 </dd>
 
-### -field <b>TunnelBytesReceived</b>
+### -field TunnelBytesReceived
 
 <dd>
 <p>The number of bytes that are received by using the IPsec tunnel mode.</p>

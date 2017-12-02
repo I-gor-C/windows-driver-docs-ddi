@@ -61,13 +61,13 @@ typedef EVT_UCX_ENDPOINT_ABORT PEVT_UCX_ENDPOINT_ABORT;
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>Endpoint</i> [in]
+### -param Endpoint [in]
 
 <dd>
 <p>A handle to a UCXENDPOINT object.</p>
@@ -78,7 +78,7 @@ typedef EVT_UCX_ENDPOINT_ABORT PEVT_UCX_ENDPOINT_ABORT;
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
+<p>The client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
  method.</p>
 
 <p>This function completes all requests associated with the endpoint, typically by calling <a href="..\wdfio\nf-wdfio-wdfioqueuestopandpurge.md">WdfIoQueueStopAndPurge</a>.</p>

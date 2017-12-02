@@ -78,151 +78,151 @@ typedef struct _WHEA_X86_REGISTER_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Eax</b>
+### -field Eax
 
 <dd>
 <p>The accumulator register.</p>
 </dd>
 
-### -field <b>Ebx</b>
+### -field Ebx
 
 <dd>
 <p>The base register.</p>
 </dd>
 
-### -field <b>Ecx</b>
+### -field Ecx
 
 <dd>
 <p>The count register.</p>
 </dd>
 
-### -field <b>Edx</b>
+### -field Edx
 
 <dd>
 <p>The data register.</p>
 </dd>
 
-### -field <b>Esi</b>
+### -field Esi
 
 <dd>
 <p>The source index register.</p>
 </dd>
 
-### -field <b>Edi</b>
+### -field Edi
 
 <dd>
 <p>The destination index register.</p>
 </dd>
 
-### -field <b>Ebp</b>
+### -field Ebp
 
 <dd>
 <p>The base pointer register.</p>
 </dd>
 
-### -field <b>Esp</b>
+### -field Esp
 
 <dd>
 <p>The stack pointer register.</p>
 </dd>
 
-### -field <b>Cs</b>
+### -field Cs
 
 <dd>
 <p>The code segment register.</p>
 </dd>
 
-### -field <b>Ds</b>
+### -field Ds
 
 <dd>
 <p>The data segment register.</p>
 </dd>
 
-### -field <b>Ss</b>
+### -field Ss
 
 <dd>
 <p>The stack segment register.</p>
 </dd>
 
-### -field <b>Es</b>
+### -field Es
 
 <dd>
 <p>The extra segment register.</p>
 </dd>
 
-### -field <b>Fs</b>
+### -field Fs
 
 <dd>
 <p>The general purpose segment register FS.</p>
 </dd>
 
-### -field <b>Gs</b>
+### -field Gs
 
 <dd>
 <p>The general purpose segment register GS.</p>
 </dd>
 
-### -field <b>Eflags</b>
+### -field Eflags
 
 <dd>
 <p>The flags register.</p>
 </dd>
 
-### -field <b>Eip</b>
+### -field Eip
 
 <dd>
 <p>The instruction pointer register.</p>
 </dd>
 
-### -field <b>Cr0</b>
+### -field Cr0
 
 <dd>
 <p>The control register 0.</p>
 </dd>
 
-### -field <b>Cr1</b>
+### -field Cr1
 
 <dd>
 <p>The control register 1.</p>
 </dd>
 
-### -field <b>Cr2</b>
+### -field Cr2
 
 <dd>
 <p>The control register 2.</p>
 </dd>
 
-### -field <b>Cr3</b>
+### -field Cr3
 
 <dd>
 <p>The control register 3.</p>
 </dd>
 
-### -field <b>Cr4</b>
+### -field Cr4
 
 <dd>
 <p>The control register 4.</p>
 </dd>
 
-### -field <b>Gdtr</b>
+### -field Gdtr
 
 <dd>
 <p>The global descriptor table register.</p>
 </dd>
 
-### -field <b>Idtr</b>
+### -field Idtr
 
 <dd>
 <p>The interrupt descriptor table register.</p>
 </dd>
 
-### -field <b>Ldtr</b>
+### -field Ldtr
 
 <dd>
 <p>The local descriptor table register.</p>
 </dd>
 
-### -field <b>Tr</b>
+### -field Tr
 
 <dd>
 <p>The task register.</p>

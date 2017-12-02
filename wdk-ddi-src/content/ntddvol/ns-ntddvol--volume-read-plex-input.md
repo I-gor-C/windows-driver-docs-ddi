@@ -56,19 +56,19 @@ typedef struct _VOLUME_READ_PLEX_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>ByteOffset</b>
+### -field ByteOffset
 
 <dd>
 <p>Supplies the start offset, in bytes, relative to the beginning of the volume. This member must be aligned on a 512-byte boundary. </p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Supplies the length, in bytes, of the block to be read. This member must be an integer multiple of 512 bytes. </p>
 </dd>
 
-### -field <b>PlexNumber</b>
+### -field PlexNumber
 
 <dd>
 <p>Supplies the zero-based plex number. </p>

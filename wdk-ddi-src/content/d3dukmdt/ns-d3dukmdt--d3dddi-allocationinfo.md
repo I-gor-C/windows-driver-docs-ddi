@@ -71,52 +71,52 @@ typedef struct _D3DDDI_ALLOCATIONINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the allocation. This kernel-mode allocation handle is associated with the kernel-mode resource handle (if non-<b>NULL</b>) that the Microsoft Direct3D runtime's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-allocatecb.md">pfnAllocateCb</a> function returns in the <b>hKMResource</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-allocate.md">D3DDDICB_ALLOCATE</a> structure. The user-mode display driver can use this kernel-mode allocation handle to reference the allocation in the command buffer.</p>
 </dd>
 
-### -field <b>pSystemMem</b>
+### -field pSystemMem
 
 <dd>
 <p>[in] A pointer to system memory that the Direct3D runtime preallocated. Otherwise, this member is <b>NULL</b> if the allocation is to use video memory. </p>
 <p>If the allocation is in system memory, the user-mode display driver should assign the buffer in the <b>pSysMem</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-surfaceinfo.md">D3DDDI_SURFACEINFO</a> structure for the resource to <b>pSystemMem</b>. This buffer is specified when the Direct3D runtime calls the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource.md">CreateResource</a> function to create resources. </p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in/out] A pointer to buffer that contains optional private data that might be required by the display miniport driver to create the allocation. The display miniport driver can also return data in the buffer. When the contents of the buffer are passed to the display miniport driver, the contents must be in a format that the display miniport driver can process. </p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology if the allocation is for the primary surface. The driver should set <b>VidPnSourceId</b> only for primary allocation types and not for any other type of allocation. If the driver sets <b>VidPnSourceId</b> for any other allocation type in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-allocatecb.md">pfnAllocateCb</a> function, <b>pfnAllocateCb</b> returns D3DDDI_ID_NOTAPPLICABLE.</p>
 <p>When the DirectX graphics kernel subsystem initiates the creation of the allocation for the shared primary surface, the display miniport driver can determine the identification number from the <b>VidPnSourceId</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-sharedprimarysurfacedata.md">D3DKMDDI_SHAREDPRIMARYSURFACEDATA</a> structure that the <b>pPrivateDriverData</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a> structure points to. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A union that contains either a structure (with the first three members that are described in the following list) or a 32-bit value (in the <b>Value</b> member) that indentifies the type of allocation:</p>
 <dl>
 
-### -field <b>Primary</b>
+### -field Primary
 
 <dd>
 <p>[in] A UINT that specifies whether the allocation is part of the desktop. Such an allocation is implicitly accessible to the CPU. A primary allocation can be either pinned down at creation or not pinned down at creation. </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Stereo</b>
+### -field Stereo
 
 <dd>
 <p>[in] Supported beginning with Windows 8.</p>
@@ -124,7 +124,7 @@ typedef struct _D3DDDI_ALLOCATIONINFO {
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] Supported beginning with Windows 8.</p>
@@ -133,7 +133,7 @@ typedef struct _D3DDDI_ALLOCATIONINFO {
 </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
@@ -141,7 +141,7 @@ typedef struct _D3DDDI_ALLOCATIONINFO {
 </p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] A 32-bit value that identifies the type of allocation. </p>

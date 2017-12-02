@@ -57,25 +57,25 @@ NTSTATUS KsQueryInformationFile(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Specifies the file object from which to query the standard information.</p>
 </dd>
 
-### -param <i>FileInformation</i> [out]
+### -param FileInformation [out]
 
 <dd>
 <p>Indicates the place in which to put the file information. This is assumed to be a valid or probed address.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the correct length of the <i>FileInformation</i> buffer.</p>
 </dd>
 
-### -param <i>FileInformationClass</i> [in]
+### -param FileInformationClass [in]
 
 <dd>
 <p>Specifies the class of information being requested.</p>

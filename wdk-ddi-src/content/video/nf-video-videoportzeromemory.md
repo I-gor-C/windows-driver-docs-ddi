@@ -56,13 +56,13 @@ VOID VideoPortZeroMemory(
 ## -parameters
 <dl>
 
-### -param <i>Destination</i> [out]
+### -param Destination [out]
 
 <dd>
 <p>Specifies the starting address of the block of memory. This value must be in a mapped logical range returned by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.</p>
 </dd>
 
-### -param <i>Length</i> 
+### -param Length 
 
 <dd>
 <p>Specifies the size, in bytes, of the block.</p>

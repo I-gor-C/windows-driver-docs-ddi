@@ -56,19 +56,19 @@ HBA_STATUS HBA_API HBA_GetPortAttributesByWWN(
 ## -parameters
 <dl>
 
-### -param <i>HbaHandle</i> [in]
+### -param HbaHandle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located.  </p>
 </dd>
 
-### -param <i>PortWWN</i> [in]
+### -param PortWWN [in]
 
 <dd>
 <p>Contains the worldwide name (WWN) of the port whose attributes to retrieve. For a definition of worldwide names, see the T11 committee's <i>Fibre Channel HBA API </i>specification .</p>
 </dd>
 
-### -param <i>HbaPortAttributes</i> [out]
+### -param HbaPortAttributes [out]
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-portattributes.md">HBA_PortAttributes</a> that holds the port attributes: </p>

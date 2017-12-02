@@ -7,7 +7,7 @@ old-location: image\wiausetimageitemsize.htm
 old-project: image
 ms.assetid: 5bf56435-df81-4555-91ca-5419883bb1e8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiauSetImageItemSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,37 +60,37 @@ HRESULT _stdcall wiauSetImageItemSize(
 ## -parameters
 <dl>
 
-### -param <i>pWiasContext</i> [in]
+### -param pWiasContext [in]
 
 <dd>
 <p>Pointer to a WIA item context.</p>
 </dd>
 
-### -param <i>lWidth</i> 
+### -param lWidth 
 
 <dd>
 <p>Specifies the width of the image, in pixels.</p>
 </dd>
 
-### -param <i>lHeight</i> 
+### -param lHeight 
 
 <dd>
 <p>Specifies the height of the image, in pixels.</p>
 </dd>
 
-### -param <i>lDepth</i> 
+### -param lDepth 
 
 <dd>
 <p>Specifies the depth of the image, in bits.</p>
 </dd>
 
-### -param <i>lSize</i> 
+### -param lSize 
 
 <dd>
 <p>Specifies the size of the image as stored on the device.</p>
 </dd>
 
-### -param <i>pwszExt</i> [in, optional]
+### -param pwszExt [in, optional]
 
 <dd>
 <p><i>Optional</i>. Pointer to a memory location containing a three-character file name extension for the item's native format. If this parameter is <b>NULL</b>, the item's extension property, WIA_IPA_FILENAME_EXTENSION (described in the Windows SDK documentation), is not updated.</p>

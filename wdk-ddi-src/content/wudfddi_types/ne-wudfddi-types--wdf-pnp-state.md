@@ -7,7 +7,7 @@ old-location: wdf\wdf_pnp_state.htm
 old-project: wdf
 ms.assetid: f17a6d52-5f68-470c-9f45-6a175e0fbf01
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,49 +63,49 @@ typedef enum _WDF_PNP_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfPnpStateInvalid"></a><a id="wdfpnpstateinvalid"></a><a id="WDFPNPSTATEINVALID"></a><b>WdfPnpStateInvalid</b>
+### -field WdfPnpStateInvalid
 
 <dd>
 <p>The PnP state for the device is invalid.</p>
 </dd>
 
-### -field <a id="WdfPnpStateDisabled"></a><a id="wdfpnpstatedisabled"></a><a id="WDFPNPSTATEDISABLED"></a><b>WdfPnpStateDisabled</b>
+### -field WdfPnpStateDisabled
 
 <dd>
 <p>The device is disabled.</p>
 </dd>
 
-### -field <a id="WdfPnpStateFailed"></a><a id="wdfpnpstatefailed"></a><a id="WDFPNPSTATEFAILED"></a><b>WdfPnpStateFailed</b>
+### -field WdfPnpStateFailed
 
 <dd>
 <p>The device is present but has failed.</p>
 </dd>
 
-### -field <a id="WdfPnpStateRemoved"></a><a id="wdfpnpstateremoved"></a><a id="WDFPNPSTATEREMOVED"></a><b>WdfPnpStateRemoved</b>
+### -field WdfPnpStateRemoved
 
 <dd>
 <p>The device has been removed. </p>
 </dd>
 
-### -field <a id="WdfPnpStateResourcesChanged"></a><a id="wdfpnpstateresourceschanged"></a><a id="WDFPNPSTATERESOURCESCHANGED"></a><b>WdfPnpStateResourcesChanged</b>
+### -field WdfPnpStateResourcesChanged
 
 <dd>
 <p>The device's resource requirements have changed.</p>
 </dd>
 
-### -field <a id="WdfPnpStateDontDisplayInUI"></a><a id="wdfpnpstatedontdisplayinui"></a><a id="WDFPNPSTATEDONTDISPLAYINUI"></a><b>WdfPnpStateDontDisplayInUI</b>
+### -field WdfPnpStateDontDisplayInUI
 
 <dd>
 <p>The device is hidden (not displayed) in Device Manager.</p>
 </dd>
 
-### -field <a id="WdfPnpStateNotDisableable"></a><a id="wdfpnpstatenotdisableable"></a><a id="WDFPNPSTATENOTDISABLEABLE"></a><b>WdfPnpStateNotDisableable</b>
+### -field WdfPnpStateNotDisableable
 
 <dd>
 <p>The device cannot be disabled.</p>
 </dd>
 
-### -field <a id="WdfPnpStateMaximum"></a><a id="wdfpnpstatemaximum"></a><a id="WDFPNPSTATEMAXIMUM"></a><b>WdfPnpStateMaximum</b>
+### -field WdfPnpStateMaximum
 
 <dd>
 <p>Valid enumeration values were exceeded.</p>
@@ -140,4 +140,4 @@ typedef enum _WDF_PNP_STATE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PNP_STATE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PNP_STATE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

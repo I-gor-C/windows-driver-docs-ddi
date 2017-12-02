@@ -7,7 +7,7 @@ old-location: acpi\acpi_method_argument_v2.htm
 old-project: acpi
 ms.assetid: 10DD32ED-96F2-43BF-BBF4-85851BC9A377
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: ACPI_METHOD_ARGUMENT_V2, ACPI_METHOD_ARGUMENT_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef struct _ACPI_METHOD_ARGUMENT_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Defines the <b>USHORT</b> member <b>Type</b>.</p>
 </dd>
 
-### -field <b>DataLength</b>
+### -field DataLength
 
 <dd>
 <p>Defines the <b>USHORT</b> member <b>DataLength</b>.</p>
 </dd>
 
-### -field <b>DUMMYUNIONNAME</b>
+### -field DUMMYUNIONNAME
 
 <dd>
 <p>Defines the members of <b>DUMMYUNIONNAME</b>.</p>

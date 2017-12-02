@@ -57,25 +57,25 @@ typedef struct D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW {
 ## -struct-fields
 <dl>
 
-### -field <b>MostDetailedMip</b>
+### -field MostDetailedMip
 
 <dd>
 <p>[in] The identifier of the most detailed MIP-map. </p>
 </dd>
 
-### -field <b>FirstArraySlice</b>
+### -field FirstArraySlice
 
 <dd>
 <p>[in] The identifier of the first array slice. </p>
 </dd>
 
-### -field <b>MipLevels</b>
+### -field MipLevels
 
 <dd>
 <p>[in] The number of MIP-map levels for the texture. </p>
 </dd>
 
-### -field <b>ArraySize</b>
+### -field ArraySize
 
 <dd>
 <p>[in] The number of array slices for the texture. </p>

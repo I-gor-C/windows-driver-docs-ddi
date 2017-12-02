@@ -57,13 +57,13 @@ typedef struct _D3DKMT_QUERYADAPTERINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[in] A handle to the graphics adapter that information is retrieved about.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>[in] A value of type KMTQUERYADAPTERINFOTYPE that indicates the type of information to retrieve. The following table lists the possible values.</p>
@@ -262,13 +262,13 @@ typedef struct _D3DKMT_QUERYADAPTERINFO {
 <p> </p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[out] A pointer to a buffer that the display miniport driver can fill with the requested information.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in/out] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.</p>

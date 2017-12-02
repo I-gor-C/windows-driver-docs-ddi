@@ -58,13 +58,13 @@ VOID APIENTRY CsSetShader(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hShader</i> [in]
+### -param hShader [in]
 
 <dd>
 <p> A handle to the compute shader code object. </p>

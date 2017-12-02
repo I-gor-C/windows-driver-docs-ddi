@@ -54,7 +54,7 @@ VOID RequestService(
 ## -parameters
 <dl>
 
-### -param <i>None</i> 
+### -param None 
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilwriteadditionalnumberstringparams_2.htm
 old-project: netvista
 ms.assetid: d68553ef-a343-4297-b3a3-718747da422d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILWRITEADDITIONALNUMBERSTRINGPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILWRITEADDITIONALNUMBERSTRINGPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>RilPBANS</b>
+### -field RilPBANS
 
 <dd></dd>
 </dl>

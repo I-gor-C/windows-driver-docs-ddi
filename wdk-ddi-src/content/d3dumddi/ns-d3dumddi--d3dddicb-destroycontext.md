@@ -54,7 +54,7 @@ typedef struct _D3DDDICB_DESTROYCONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] A handle that the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function returns and that identifies the context to destroy. </p>

@@ -55,13 +55,13 @@ NTSTATUS KsAllocateObjectBag(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> representing the device object associated with the newly created object bag.</p>
 </dd>
 
-### -param <i>ObjectBag</i> [out]
+### -param ObjectBag [out]
 
 <dd>
 <p>A pointer to a KSOBJECT_BAG (the KSOBJECT_BAG structure is equivalent to type PVOID) where the newly allocated object bag is deposited.</p>
@@ -74,7 +74,7 @@ NTSTATUS KsAllocateObjectBag(
 ## -remarks
 <p>An allocated object bag is not deleted automatically. The minidriver calling <b>KsAllocateObjectBag</b> is responsible for deletion of the object bag. The easiest way to do this is by calling <a href="..\ks\nf-ks-ksfreeobjectbag.md">KsFreeObjectBag</a>. Alternatively, if the minidriver has the addresses of the items in the bag, the minidriver can delete them individually by calling <a href="..\ks\nf-ks-ksremoveitemfromobjectbag.md">KsRemoveItemFromObjectBag</a>.</p>
 
-<p>For more information, see <a href="NULL">Object Bags</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a>.</p>
 
 ## -requirements
 <table>

@@ -67,34 +67,34 @@ typedef struct _D3DKMDT_DISPLAYMODE_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>ValidatedAgainstMonitorCaps</b>
+### -field ValidatedAgainstMonitorCaps
 
 <dd>
 <p>A Boolean value that specifies whether the display mode is supported by the monitor that the display mode will be displayed on.</p>
 <p>Setting this member is equivalent to setting the first bit of a 32-bit value (0x00000001).</p>
 </dd>
 
-### -field <b>RoundedFakeMode</b>
+### -field RoundedFakeMode
 
 <dd>
 <p>A Boolean value that specifies whether the display mode is rounded.</p>
 <p>Setting this member is equivalent to setting the second bit of a 32-bit value (0x00000002).</p>
 </dd>
 
-### -field <b>ModePruningReason</b>
+### -field ModePruningReason
 
 <dd>
 <p>[in] A value of type <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmdt-mode-pruning-reason.md">D3DKMDT_MODE_PRUNING_REASON</a> that identifies the reason why the monitor either supports the display mode or does not support the display mode. The four bits are defined by one of the values in the <b>D3DKMDT_MODE_PRUNING_REASON</b> enumeration type and depend on the setting of the <b>ValidatedAgainstMonitorCaps</b> member. For more information about how the <b>ModePruningReason</b> value is set, see <b>D3DKMDT_MODE_PRUNING_REASON</b>.</p>
 <p>Setting this member is equivalent to setting bits 4 through 7 of a 32-bit value (0x0000003C).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member is equivalent to setting the remaining 28 bits (0xFFFFFFF0) of a 32-bit value to zeros.</p>
 </dd>
 
-### -field <b>ValidatedAgainstMonitorCaps</b>
+### -field ValidatedAgainstMonitorCaps
 
 <dd>
 <p>A UINT value that specifies whether the display mode is supported by the monitor that the display mode will be displayed on.</p>
@@ -102,7 +102,7 @@ typedef struct _D3DKMDT_DISPLAYMODE_FLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>RoundedFakeMode</b>
+### -field RoundedFakeMode
 
 <dd>
 <p>A UINT value that specifies whether the display mode is rounded.</p>
@@ -110,7 +110,7 @@ typedef struct _D3DKMDT_DISPLAYMODE_FLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>ModePruningReason</b>
+### -field ModePruningReason
 
 <dd>
 <p>[in] A value of type <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmdt-mode-pruning-reason.md">D3DKMDT_MODE_PRUNING_REASON</a> that identifies the reason why the monitor either supports the display mode or does not support the display mode. The four bits are defined by one of the values in the <b>D3DKMDT_MODE_PRUNING_REASON</b> enumeration type and depend on the setting of the <b>ValidatedAgainstMonitorCaps</b> member. For more information about how the <b>ModePruningReason</b> value is set, see <b>D3DKMDT_MODE_PRUNING_REASON</b>.</p>
@@ -118,7 +118,7 @@ typedef struct _D3DKMDT_DISPLAYMODE_FLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Stereo</b>
+### -field Stereo
 
 <dd>
 <p>[in] </p>
@@ -127,7 +127,7 @@ typedef struct _D3DKMDT_DISPLAYMODE_FLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>AdvancedScanCapable</b>
+### -field AdvancedScanCapable
 
 <dd>
 <p>[in] A UINT value that specifies whether the driver supports the advanced scan capability.</p>
@@ -136,7 +136,7 @@ typedef struct _D3DKMDT_DISPLAYMODE_FLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>

@@ -57,19 +57,19 @@ typedef enum _OUTPUTDUPL_CONTEXT_DEBUG_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="OUTPUTDUPL_CONTEXT_DEBUG_STATUS_INACTIVE"></a><a id="outputdupl_context_debug_status_inactive"></a><b>OUTPUTDUPL_CONTEXT_DEBUG_STATUS_INACTIVE</b>
+### -field OUTPUTDUPL_CONTEXT_DEBUG_STATUS_INACTIVE
 
 <dd></dd>
 
-### -field <a id="OUTPUTDUPL_CONTEXT_DEBUG_STATUS_ACTIVE"></a><a id="outputdupl_context_debug_status_active"></a><b>OUTPUTDUPL_CONTEXT_DEBUG_STATUS_ACTIVE</b>
+### -field OUTPUTDUPL_CONTEXT_DEBUG_STATUS_ACTIVE
 
 <dd></dd>
 
-### -field <a id="OUTPUTDUPL_CONTEXT_DEBUG_STATUS_PENDING_DESTROY"></a><a id="outputdupl_context_debug_status_pending_destroy"></a><b>OUTPUTDUPL_CONTEXT_DEBUG_STATUS_PENDING_DESTROY</b>
+### -field OUTPUTDUPL_CONTEXT_DEBUG_STATUS_PENDING_DESTROY
 
 <dd></dd>
 
-### -field <a id="OUTPUTDUPL_CONTEXT_DEBUG_STATUS_FORCE_UINT32"></a><a id="outputdupl_context_debug_status_force_uint32"></a><b>OUTPUTDUPL_CONTEXT_DEBUG_STATUS_FORCE_UINT32</b>
+### -field OUTPUTDUPL_CONTEXT_DEBUG_STATUS_FORCE_UINT32
 
 <dd></dd>
 </dl>

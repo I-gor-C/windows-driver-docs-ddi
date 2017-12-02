@@ -59,37 +59,37 @@ typedef struct _SUB_Q_MEDIA_CATALOG_NUMBER {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Indicates, among other things, the length of the Q subchannel data that was retrieved. See <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-header.md">SUB_Q_HEADER</a> for further details. </p>
 </dd>
 
-### -field <b>FormatCode</b>
+### -field FormatCode
 
 <dd>
 <p>Should have a value of IOCTL_CDROM_MEDIA_CATALOG. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Mcval</b>
+### -field Mcval
 
 <dd>
 <p>Indicates that the media catalog number (MCN) data is valid if set to 1; set to zero otherwise.</p>
 </dd>
 
-### -field <b>MediaCatalog</b>
+### -field MediaCatalog
 
 <dd>
 <p>Contains the catalog number if <b>Mcval</b> is set to 1. </p>

@@ -7,7 +7,7 @@ old-location: netvista\wdi_frame_payload_type.htm
 old-project: netvista
 ms.assetid: 28aef1bd-915a-4f05-a4b0-bec63ddfdfb5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ typedef enum _WDI_FRAME_PAYLOAD_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_FRAME_MSDU"></a><a id="wdi_frame_msdu"></a><b>WDI_FRAME_MSDU</b>
+### -field WDI_FRAME_MSDU
 
 <dd>
 <p>MAC service data unit (MSDU).</p>
 </dd>
 
-### -field <a id="WDI_FRAME_MSDU_FRAGMENT"></a><a id="wdi_frame_msdu_fragment"></a><b>WDI_FRAME_MSDU_FRAGMENT</b>
+### -field WDI_FRAME_MSDU_FRAGMENT
 
 <dd>
 <p>MAC service data unit (MSDU) fragment.</p>

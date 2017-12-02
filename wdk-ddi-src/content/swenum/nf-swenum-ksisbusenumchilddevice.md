@@ -57,13 +57,13 @@ NTSTATUS KsIsBusEnumChildDevice(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to a device object.</p>
 </dd>
 
-### -param <i>ChildDevice</i> [out]
+### -param ChildDevice [out]
 
 <dd>
 <p>Pointer to a BOOLEAN to receive the result. <b>KsIsBusEnumChildDevice</b> sets this to <b>TRUE</b> if the given device object is a child device of the demand-load bus enumerator object, or <b>FALSE</b> otherwise.</p>

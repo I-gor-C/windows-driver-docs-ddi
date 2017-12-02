@@ -142,7 +142,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Option</b>
+### -field Option
 
 <dd>
 <p>Specifies whether this resource description is required, preferred, or alternative. One of the following values must be used:</p>
@@ -154,7 +154,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="0"></a><dl>
 
-### -field <b>0</b>
+### -field 0
 
 </dl>
 </td>
@@ -165,7 +165,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="IO_RESOURCE_PREFERRED"></a><a id="io_resource_preferred"></a><dl>
 
-### -field <b>IO_RESOURCE_PREFERRED</b>
+### -field IO_RESOURCE_PREFERRED
 
 </dl>
 </td>
@@ -176,7 +176,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="IO_RESOURCE_ALTERNATIVE"></a><a id="io_resource_alternative"></a><dl>
 
-### -field <b>IO_RESOURCE_ALTERNATIVE</b>
+### -field IO_RESOURCE_ALTERNATIVE
 
 </dl>
 </td>
@@ -187,7 +187,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="IO_RESOURCE_DEFAULT"></a><a id="io_resource_default"></a><dl>
 
-### -field <b>IO_RESOURCE_DEFAULT</b>
+### -field IO_RESOURCE_DEFAULT
 
 </dl>
 </td>
@@ -199,23 +199,23 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Identifies the resource type. For a list of valid values, see the <b>Type</b> member of the <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure. </p>
 </dd>
 
-### -field <b>ShareDisposition</b>
+### -field ShareDisposition
 
 <dd>
 <p>Indicates whether the described resource can be shared. For a list of valid values, see the <b>ShareDisposition</b> member of the <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure. </p>
 </dd>
 
-### -field <b>Spare1</b>
+### -field Spare1
 
 <dd></dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Contains bit flags that are specific to the resource type. The following table shows the flags that are valid if <b>Type</b> = <b>CmResourceTypeInterrupt.</b></p>
@@ -227,7 +227,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_INTERRUPT_LEVEL_SENSITIVE"></a><a id="cm_resource_interrupt_level_sensitive"></a><dl>
 
-### -field <b>CM_RESOURCE_INTERRUPT_LEVEL_SENSITIVE</b>
+### -field CM_RESOURCE_INTERRUPT_LEVEL_SENSITIVE
 
 </dl>
 </td>
@@ -238,7 +238,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_INTERRUPT_LATCHED"></a><a id="cm_resource_interrupt_latched"></a><dl>
 
-### -field <b>CM_RESOURCE_INTERRUPT_LATCHED</b>
+### -field CM_RESOURCE_INTERRUPT_LATCHED
 
 </dl>
 </td>
@@ -249,7 +249,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_INTERRUPT_MESSAGE"></a><a id="cm_resource_interrupt_message"></a><dl>
 
-### -field <b>CM_RESOURCE_INTERRUPT_MESSAGE</b>
+### -field CM_RESOURCE_INTERRUPT_MESSAGE
 
 </dl>
 </td>
@@ -260,7 +260,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_INTERRUPT_POLICY_INCLUDED"></a><a id="cm_resource_interrupt_policy_included"></a><dl>
 
-### -field <b>CM_RESOURCE_INTERRUPT_POLICY_INCLUDED</b>
+### -field CM_RESOURCE_INTERRUPT_POLICY_INCLUDED
 
 </dl>
 </td>
@@ -271,18 +271,18 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_INTERRUPT_SECONDARY_INTERRUPT"></a><a id="cm_resource_interrupt_secondary_interrupt"></a><dl>
 
-### -field <b>CM_RESOURCE_INTERRUPT_SECONDARY_INTERRUPT</b>
+### -field CM_RESOURCE_INTERRUPT_SECONDARY_INTERRUPT
 
 </dl>
 </td>
 <td width="60%">
-<p>The interrupt is a secondary interrupt. This flag can be set starting with Windows 8. For more information about secondary interrupts, see <a href="NULL">GPIO Interrupts</a>.</p>
+<p>The interrupt is a secondary interrupt. This flag can be set starting with Windows 8. For more information about secondary interrupts, see <a href="https://msdn.microsoft.com/0F56AD4C-E0BF-49F1-AB67-0107D08DEF9F">GPIO Interrupts</a>.</p>
 </td>
 </tr>
 <tr>
 <td width="40%"><a id="CM_RESOURCE_INTERRUPT_WAKE_HINT"></a><a id="cm_resource_interrupt_wake_hint"></a><dl>
 
-### -field <b>CM_RESOURCE_INTERRUPT_WAKE_HINT</b>
+### -field CM_RESOURCE_INTERRUPT_WAKE_HINT
 
 </dl>
 </td>
@@ -295,41 +295,41 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <p>For a list of valid flags for other resource types, see the description of the <b>Flags</b> member of the <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure.</p>
 </dd>
 
-### -field <b>Spare2</b>
+### -field Spare2
 
 <dd></dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <dl>
 
-### -field <b>port</b>
+### -field port
 
 <dd>
 <p>Specifies a range of I/O port addresses, using the following members.</p>
 <p>Drivers for Windows Vista and later versions of the Windows operating system must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The length, in bytes, of the range of assignable I/O port addresses.</p>
 </dd>
 
-### -field <b>Alignment</b>
+### -field Alignment
 
 <dd>
 <p>The alignment, in bytes, that the assigned starting address must adhere to. The assigned starting address must be an integer multiple of <i>Alignment</i>. </p>
 </dd>
 
-### -field <b>MinimumAddress</b>
+### -field MinimumAddress
 
 <dd>
 <p>The minimum bus-relative I/O port address that can be assigned to the device.</p>
 </dd>
 
-### -field <b>MaximumAddress</b>
+### -field MaximumAddress
 
 <dd>
 <p>The maximum bus-relative I/O port address that can be assigned to the device.</p>
@@ -337,32 +337,32 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Memory</b>
+### -field Memory
 
 <dd>
 <p>Specifies a range of memory addresses, using the following members:</p>
 <p>Drivers for Windows Vista and later versions of the Windows operating system must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The length, in bytes, of the range of assignable memory addresses.</p>
 </dd>
 
-### -field <b>Alignment</b>
+### -field Alignment
 
 <dd>
 <p>The alignment, in bytes, that the assigned starting address must adhere to. The assigned starting address must be an integer multiple of <i>Alignment</i>.</p>
 </dd>
 
-### -field <b>MinimumAddress</b>
+### -field MinimumAddress
 
 <dd>
 <p>The minimum bus-relative memory address that can be assigned to the device.</p>
 </dd>
 
-### -field <b>MaximumAddress</b>
+### -field MaximumAddress
 
 <dd>
 <p>The maximum bus-relative memory address that can be assigned to the device.</p>
@@ -370,19 +370,19 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Interrupt</b>
+### -field Interrupt
 
 <dd>
 <p>Specifies an interrupt vector range, using the following members:</p>
 <dl>
 
-### -field <b>MinimumVector</b>
+### -field MinimumVector
 
 <dd>
 <p>The minimum bus-relative vector that can be assigned to the device.</p>
 </dd>
 
-### -field <b>MaximumVector</b>
+### -field MaximumVector
 
 <dd>
 <p>The maximum bus-relative vector that can be assigned to the device.</p>
@@ -391,31 +391,31 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <p>The system supplies the following additional members on Windows Vista and later versions of the Windows operating system:</p>
 </dd>
 
-### -field <b>AffinityPolicy</b>
+### -field AffinityPolicy
 
 <dd>
 <p>Specifies an <a href="..\wdm\ne-wdm--irq-device-policy.md">IRQ_DEVICE_POLICY</a> value that indicates how the system should distribute a device's interrupts between processors.</p>
 </dd>
 
-### -field <b>Group</b>
+### -field Group
 
 <dd>
 <p>Specifies a processor group number. <b>Group</b> is a valid (but optional) member of <b>u.Interrupt</b> only in Windows 7 and later versions of Windows. This member exists only if NT_PROCESSOR_GROUPS is defined at compile time. If the <b>Group</b> member exists, the <b>Group</b> and <b>TargetedProcessors</b> members together specify a group affinity that identifies the set of processors that should handle the device's interrupts. To specify an affinity for a particular group, set <b>AffinityPolicy</b> to <b>IrqPolicySpecifiedProcessors</b> and set <b>Group</b> to the appropriate group number. In addition, <b>TargetedProcessors</b> must specify the target processors in the group. If you set <b>AffinityPolicy</b> to a value other than <b>IrqPolicySpecifiedProcessors</b>, set <b>Group</b> to ALL_PROCESSOR_GROUPS to indicate that the driver is group-aware (that is, designed to handle information about processor groups). A driver cannot specify target processors if <b>Group</b> equals ALL_PROCESSOR_GROUPS; such target specifications are ignored.</p>
 </dd>
 
-### -field <b>AffinityPolicy</b>
+### -field AffinityPolicy
 
 <dd>
 <p>Specifies an <a href="..\wdm\ne-wdm--irq-device-policy.md">IRQ_DEVICE_POLICY</a> value that indicates how the system should distribute a device's interrupts between processors.</p>
 </dd>
 
-### -field <b>PriorityPolicy</b>
+### -field PriorityPolicy
 
 <dd>
 <p>Specifies an <a href="..\wdm\ne-wdm--irq-priority.md">IRQ_PRIORITY</a> value that indicates the priority with which the system should dispatch the device's interrupts.</p>
 </dd>
 
-### -field <b>TargetedProcessors</b>
+### -field TargetedProcessors
 
 <dd>
 <p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a> value that indicates which processors should handle the device's interrupts. This value is used only if <b>AffinityPolicy</b> is <b>IrqPolicySpecifiedProcessors.</b></p>
@@ -423,19 +423,19 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Dma</b>
+### -field Dma
 
 <dd>
 <p>Specifies a DMA setting, using one of the following members:</p>
 <dl>
 
-### -field <b>MinimumChannel</b>
+### -field MinimumChannel
 
 <dd>
 <p>The minimum bus-relative DMA channel that can be assigned to the device.</p>
 </dd>
 
-### -field <b>MaximumChannel</b>
+### -field MaximumChannel
 
 <dd>
 <p>The maximum bus-relative DMA channel that can be assigned to the device.</p>
@@ -443,32 +443,32 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>DmaV3</b>
+### -field DmaV3
 
 <dd>
 <p>Specifies the DMA settings for a driver that uses version 3 of the <a href="..\wdm\ns-wdm--dma-operations.md">DMA_OPERATIONS</a> structure.</p>
 <p>The <b>u.DmaV3</b> member is available starting with Windows 8.</p>
 <dl>
 
-### -field <b>RequestLine</b>
+### -field RequestLine
 
 <dd>
 <p>The number of the request line on the system DMA controller that is allocated to the device.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>Channel</b>
+### -field Channel
 
 <dd>
 <p>The number of the DMA channel on the system DMA controller that is allocated to the device.</p>
 </dd>
 
-### -field <b>TransferWidth</b>
+### -field TransferWidth
 
 <dd>
 <p>Specifies the width, in bits, of the data bus that the system DMA controller that is allocated to the device uses to transfer data to or from the device.</p>
@@ -476,43 +476,43 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Generic</b>
+### -field Generic
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>DevicePrivate</b>
+### -field DevicePrivate
 
 <dd>
 <p>Reserved for system use. </p>
 </dd>
 
-### -field <b>BusNumber</b>
+### -field BusNumber
 
 <dd>
 <p>Specifies bus numbers, using the following members:</p>
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The number of bus numbers required.</p>
 </dd>
 
-### -field <b>MinBusNumber</b>
+### -field MinBusNumber
 
 <dd>
 <p>The minimum bus-relative bus number that can be assigned to the device.</p>
 </dd>
 
-### -field <b>MaxBusNumber</b>
+### -field MaxBusNumber
 
 <dd>
 <p>The maximum bus-relative bus number that can be assigned to the device.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Not used.</p>
@@ -520,38 +520,38 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>ConfigData</b>
+### -field ConfigData
 
 <dd>
 <p>Reserved for system use. </p>
 </dd>
 
-### -field <b>Memory40</b>
+### -field Memory40
 
 <dd>
 <p>Specifies a range of memory addresses, using the following members.</p>
 <p>The <b>u.Memory40</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers for these versions of Windows must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
 <dl>
 
-### -field <b>Length40</b>
+### -field Length40
 
 <dd>
 <p>The high 32 bits of the 40-bit length, in bytes, of the range of assignable memory addresses. The lower 8 bits are treated as zero.</p>
 </dd>
 
-### -field <b>Alignment40</b>
+### -field Alignment40
 
 <dd>
 <p>The high 32 bits of the 40-bit alignment, in bytes, that the assigned starting address must adhere to. The lower 8 bits are treated as zero. The assigned starting address will be a multiple of the alignment.</p>
 </dd>
 
-### -field <b>MinimumAddress</b>
+### -field MinimumAddress
 
 <dd>
 <p>The minimum bus-relative memory address that can be assigned to the device.</p>
 </dd>
 
-### -field <b>MaximumAddress</b>
+### -field MaximumAddress
 
 <dd>
 <p>The maximum bus-relative memory address that can be assigned to the device.</p>
@@ -559,32 +559,32 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Memory48</b>
+### -field Memory48
 
 <dd>
 <p>Specifies a range of memory addresses, using the following members.</p>
 <p>The <b>u.Memory48</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers for these versions of Windows must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
 <dl>
 
-### -field <b>Length48</b>
+### -field Length48
 
 <dd>
 <p>The high 32 bits of the 48-bit length, in bytes, of the range of assignable memory addresses. The lower 16 bits are treated as zero.</p>
 </dd>
 
-### -field <b>Alignment48</b>
+### -field Alignment48
 
 <dd>
 <p>The high 32 bits of the 48-bit alignment, in bytes, that the assigned starting address must adhere to. The lower 16 bits are treated as zero. The assigned starting address will be a multiple of the alignment.</p>
 </dd>
 
-### -field <b>MinimumAddress</b>
+### -field MinimumAddress
 
 <dd>
 <p>The minimum bus-relative memory address that can be assigned to the device.</p>
 </dd>
 
-### -field <b>MaximumAddress</b>
+### -field MaximumAddress
 
 <dd>
 <p>The maximum bus-relative memory address that can be assigned to the device.</p>
@@ -592,32 +592,32 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Memory64</b>
+### -field Memory64
 
 <dd>
 <p>Specifies a range of memory addresses, using the following members.</p>
 <p>The <b>u.Memory64</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers for Windows Vista and later versions of the Windows operating system must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
 <dl>
 
-### -field <b>Length64</b>
+### -field Length64
 
 <dd>
 <p>The high 32 bits of the 64-bit length, in bytes, of the range of assignable memory addresses. The lower 32 bits are treated as zero.</p>
 </dd>
 
-### -field <b>Alignment64</b>
+### -field Alignment64
 
 <dd>
 <p>The high 32 bits of the 64-bit alignment, in bytes, that the assigned starting address must adhere to. The lower 32 bits are treated as zero. The assigned starting address will be a multiple of the alignment.</p>
 </dd>
 
-### -field <b>MinimumAddress</b>
+### -field MinimumAddress
 
 <dd>
 <p>The minimum bus-relative memory address that can be assigned to the device.</p>
 </dd>
 
-### -field <b>MaximumAddress</b>
+### -field MaximumAddress
 
 <dd>
 <p>The maximum bus-relative memory address that can be assigned to the device.</p>
@@ -625,7 +625,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Connection</b>
+### -field Connection
 
 <dd>
 <p>Specifies a connection to a <a href="https://msdn.microsoft.com/2c660e14-5b27-4610-a328-735b07ed0773">serial bus</a> or <a href="serports.extension_based_serial_controller_driver_design_guide">serial port</a>, or to a set of one or more <a href="https://msdn.microsoft.com/450E7F80-D9AC-4F52-8062-2DA5343C8D0F">general-purpose I/O</a> (GPIO) pins. </p>
@@ -633,7 +633,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <p>The following members describe this connection.</p>
 <dl>
 
-### -field <b>Class</b>
+### -field Class
 
 <dd>
 <p>The connection class. This member is set to one of the following values.</p>
@@ -645,7 +645,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_CONNECTION_CLASS_GPIO"></a><a id="cm_resource_connection_class_gpio"></a><dl>
 
-### -field <b>CM_RESOURCE_CONNECTION_CLASS_GPIO</b>
+### -field CM_RESOURCE_CONNECTION_CLASS_GPIO
 
 </dl>
 </td>
@@ -656,7 +656,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_CONNECTION_CLASS_SERIAL"></a><a id="cm_resource_connection_class_serial"></a><dl>
 
-### -field <b>CM_RESOURCE_CONNECTION_CLASS_SERIAL</b>
+### -field CM_RESOURCE_CONNECTION_CLASS_SERIAL
 
 </dl>
 </td>
@@ -668,7 +668,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The connection type. If <i>Class</i> = CM_RESOURCE_CONNECTION_CLASS_GPIO, <i>Type</i> is set to the following value:</p>
@@ -680,7 +680,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_CONNECTION_TYPE_GPIO_IO"></a><a id="cm_resource_connection_type_gpio_io"></a><dl>
 
-### -field <b>CM_RESOURCE_CONNECTION_TYPE_GPIO_IO</b>
+### -field CM_RESOURCE_CONNECTION_TYPE_GPIO_IO
 
 </dl>
 </td>
@@ -701,7 +701,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_CONNECTION_TYPE_SERIAL_I2C"></a><a id="cm_resource_connection_type_serial_i2c"></a><dl>
 
-### -field <b>CM_RESOURCE_CONNECTION_TYPE_SERIAL_I2C</b>
+### -field CM_RESOURCE_CONNECTION_TYPE_SERIAL_I2C
 
 </dl>
 </td>
@@ -712,7 +712,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_CONNECTION_TYPE_SERIAL_SPI"></a><a id="cm_resource_connection_type_serial_spi"></a><dl>
 
-### -field <b>CM_RESOURCE_CONNECTION_TYPE_SERIAL_SPI</b>
+### -field CM_RESOURCE_CONNECTION_TYPE_SERIAL_SPI
 
 </dl>
 </td>
@@ -723,7 +723,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="CM_RESOURCE_CONNECTION_TYPE_SERIAL_UART"></a><a id="cm_resource_connection_type_serial_uart"></a><dl>
 
-### -field <b>CM_RESOURCE_CONNECTION_TYPE_SERIAL_UART</b>
+### -field CM_RESOURCE_CONNECTION_TYPE_SERIAL_UART
 
 </dl>
 </td>
@@ -735,25 +735,25 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Not used. </p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Not used. </p>
 </dd>
 
-### -field <b>IdLowPart</b>
+### -field IdLowPart
 
 <dd>
 <p>The lower 32 bits of the 64-bit connection ID.</p>
 </dd>
 
-### -field <b>IdHighPart</b>
+### -field IdHighPart
 
 <dd>
 <p>The upper 32 bits of the 64-bit connection ID.</p>

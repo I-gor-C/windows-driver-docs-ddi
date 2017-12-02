@@ -55,13 +55,13 @@ typedef struct _AACS_MEDIA_ID {
 ## -struct-fields
 <dl>
 
-### -field <b>MediaID</b>
+### -field MediaID
 
 <dd>
 <p>The media identifier.</p>
 </dd>
 
-### -field <b>MAC</b>
+### -field MAC
 
 <dd>
 <p>The message authentication code (MAC) that the client uses to verify that the MediaID is for the current AACS authentication sequence.</p>

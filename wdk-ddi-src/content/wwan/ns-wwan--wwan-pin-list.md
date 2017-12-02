@@ -7,7 +7,7 @@ old-location: netvista\wwan_pin_list.htm
 old-project: netvista
 ms.assetid: 7ddea69c-db40-4fae-9ca9-5eadc9b40b0c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_PIN_LIST, WWAN_PIN_LIST, *PWWAN_PIN_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,34 +65,34 @@ typedef struct _WWAN_PIN_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>WwanPinDescPin1</b>
+### -field WwanPinDescPin1
 
 <dd>
 <p>Description for PIN1. For GSM-based devices, this is a Subscriber Identity Module (SIM) PIN. For
      CDMA-based devices, power-on device lock is reported as PIN1.</p>
 </dd>
 
-### -field <b>WwanPinDescPin2</b>
+### -field WwanPinDescPin2
 
 <dd>
 <p>Description for PIN2. This is a SIM PIN2 that protects certain SIM functionality.</p>
 </dd>
 
-### -field <b>WwanPinDescDeviceSimPin</b>
+### -field WwanPinDescDeviceSimPin
 
 <dd>
 <p>Description for the device-to-SIM-card PIN. This is a PIN that locks the device to a specific
      SIM.</p>
 </dd>
 
-### -field <b>WwanPinDescDeviceFirstSimPin</b>
+### -field WwanPinDescDeviceFirstSimPin
 
 <dd>
 <p>Description for the device-to-very-first-SIM-card PIN. This is a PIN that locks the device to the
      very first inserted SIM.</p>
 </dd>
 
-### -field <b>WwanPinDescNetworkPin</b>
+### -field WwanPinDescNetworkPin
 
 <dd>
 <p>Description for the network personalization PIN. This is a PIN that allows the device to be
@@ -100,7 +100,7 @@ typedef struct _WWAN_PIN_LIST {
      specification.</p>
 </dd>
 
-### -field <b>WwanPinDescNetworkSubsetPin</b>
+### -field WwanPinDescNetworkSubsetPin
 
 <dd>
 <p>Description for network subset personalization PIN. This is a PIN that allows the device to be
@@ -108,7 +108,7 @@ typedef struct _WWAN_PIN_LIST {
      the 3GPP specification.</p>
 </dd>
 
-### -field <b>WwanPinDescSvcProviderPin</b>
+### -field WwanPinDescSvcProviderPin
 
 <dd>
 <p>Description for Service Provider (SP) personalization PIN. This is a PIN that allows the device to
@@ -116,7 +116,7 @@ typedef struct _WWAN_PIN_LIST {
      the 3GPP specification.</p>
 </dd>
 
-### -field <b>WwanPinDescCorporatePin</b>
+### -field WwanPinDescCorporatePin
 
 <dd>
 <p>Description for corporate personalization PIN. This is a PIN that allows the device to be
@@ -124,7 +124,7 @@ typedef struct _WWAN_PIN_LIST {
      3GPP specification.</p>
 </dd>
 
-### -field <b>WwanPinDescSubsidyLock</b>
+### -field WwanPinDescSubsidyLock
 
 <dd>
 <p>Description for subsidy unlock PIN. This is a PIN that allows the device to be restricted to
@@ -132,7 +132,7 @@ typedef struct _WWAN_PIN_LIST {
      specification.</p>
 </dd>
 
-### -field <b>WwanPinDescCustom</b>
+### -field WwanPinDescCustom
 
 <dd>
 <p>Description for custom PIN. This is a custom vendor-defined PIN type. It is not included in the
@@ -176,4 +176,4 @@ typedef struct _WWAN_PIN_LIST {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_LIST structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_LIST structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

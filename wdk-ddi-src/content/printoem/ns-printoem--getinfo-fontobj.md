@@ -56,13 +56,13 @@ typedef struct _GETINFO_FONTOBJ {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes, of the GETINFO_FONTOBJ structure. Supplied by the UNIFONTOBJ_GetInfo caller.</p>
 </dd>
 
-### -field <b>pFontObj</b>
+### -field pFontObj
 
 <dd>
 <p>Pointer to an empty <a href="display.fontobj">FONTOBJ</a> structure. The structure is filled in by Unidrv's <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function. The pointer is supplied by the UNIFONTOBJ_GetInfo caller.</p>

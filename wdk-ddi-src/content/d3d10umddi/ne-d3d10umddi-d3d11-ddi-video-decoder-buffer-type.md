@@ -63,61 +63,61 @@ typedef enum D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_DECODER_BUFFER_UNKNOWN"></a><a id="d3d11_1ddi_video_decoder_buffer_unknown"></a><b>D3D11_1DDI_VIDEO_DECODER_BUFFER_UNKNOWN</b>
+### -field D3D11_1DDI_VIDEO_DECODER_BUFFER_UNKNOWN
 
 <dd>
 <p>An unknown buffer format.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_DECODER_BUFFER_PICTURE_PARAMETERS"></a><a id="d3d11_1ddi_video_decoder_buffer_picture_parameters"></a><b>D3D11_1DDI_VIDEO_DECODER_BUFFER_PICTURE_PARAMETERS</b>
+### -field D3D11_1DDI_VIDEO_DECODER_BUFFER_PICTURE_PARAMETERS
 
 <dd>
 <p>Picture parameters decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_DECODER_BUFFER_MACROBLOCK_CONTROL"></a><a id="d3d11_1ddi_video_decoder_buffer_macroblock_control"></a><b>D3D11_1DDI_VIDEO_DECODER_BUFFER_MACROBLOCK_CONTROL</b>
+### -field D3D11_1DDI_VIDEO_DECODER_BUFFER_MACROBLOCK_CONTROL
 
 <dd>
 <p>Macroblock control command decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_DECODER_BUFFER_RESIDUAL_DIFFERENCE"></a><a id="d3d11_1ddi_video_decoder_buffer_residual_difference"></a><b>D3D11_1DDI_VIDEO_DECODER_BUFFER_RESIDUAL_DIFFERENCE</b>
+### -field D3D11_1DDI_VIDEO_DECODER_BUFFER_RESIDUAL_DIFFERENCE
 
 <dd>
 <p>Residual block difference decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_DECODER_BUFFER_DEBLOCKING_CONTROL"></a><a id="d3d11_1ddi_video_decoder_buffer_deblocking_control"></a><b>D3D11_1DDI_VIDEO_DECODER_BUFFER_DEBLOCKING_CONTROL</b>
+### -field D3D11_1DDI_VIDEO_DECODER_BUFFER_DEBLOCKING_CONTROL
 
 <dd>
 <p>Deblocking filter control command decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_DECODER_BUFFER_INVERSE_QUANTIZATION_MATRIX"></a><a id="d3d11_1ddi_video_decoder_buffer_inverse_quantization_matrix"></a><b>D3D11_1DDI_VIDEO_DECODER_BUFFER_INVERSE_QUANTIZATION_MATRIX</b>
+### -field D3D11_1DDI_VIDEO_DECODER_BUFFER_INVERSE_QUANTIZATION_MATRIX
 
 <dd>
 <p>Inverse-quantization matrix decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_DECODER_BUFFER_SLICE_CONTROL"></a><a id="d3d11_1ddi_video_decoder_buffer_slice_control"></a><b>D3D11_1DDI_VIDEO_DECODER_BUFFER_SLICE_CONTROL</b>
+### -field D3D11_1DDI_VIDEO_DECODER_BUFFER_SLICE_CONTROL
 
 <dd>
 <p>Slice-control decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_DECODER_BUFFER_BITSTREAM"></a><a id="d3d11_1ddi_video_decoder_buffer_bitstream"></a><b>D3D11_1DDI_VIDEO_DECODER_BUFFER_BITSTREAM</b>
+### -field D3D11_1DDI_VIDEO_DECODER_BUFFER_BITSTREAM
 
 <dd>
 <p>Bitstream data decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_DECODER_BUFFER_MOTION_VECTOR"></a><a id="d3d11_1ddi_video_decoder_buffer_motion_vector"></a><b>D3D11_1DDI_VIDEO_DECODER_BUFFER_MOTION_VECTOR</b>
+### -field D3D11_1DDI_VIDEO_DECODER_BUFFER_MOTION_VECTOR
 
 <dd>
 <p>Motion-vector decode compressed buffer format.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_DECODER_BUFFER_FILM_GRAIN"></a><a id="d3d11_1ddi_video_decoder_buffer_film_grain"></a><b>D3D11_1DDI_VIDEO_DECODER_BUFFER_FILM_GRAIN</b>
+### -field D3D11_1DDI_VIDEO_DECODER_BUFFER_FILM_GRAIN
 
 <dd>
 <p>Film-grain decode compressed buffer format.</p>

@@ -56,13 +56,13 @@ VOID RtlZeroMemory(
 ## -parameters
 <dl>
 
-### -param <i>Destination</i> [out]
+### -param Destination [out]
 
 <dd>
 <p>A pointer to the memory block to be filled with zeros.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The number of bytes to fill with zeros.</p>

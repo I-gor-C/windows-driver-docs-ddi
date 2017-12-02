@@ -57,7 +57,7 @@ NTSTATUS EventHandler(
 ## -parameters
 <dl>
 
-### -param <i>EventRequest</i> [in]
+### -param EventRequest [in]
 
 <dd>
 <p>Pointer to an initialized <a href="..\portcls\ns-portcls--pcevent-request.md">PCEVENT_REQUEST</a> structure</p>

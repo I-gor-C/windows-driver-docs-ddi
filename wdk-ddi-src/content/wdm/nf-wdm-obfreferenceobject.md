@@ -55,7 +55,7 @@ VOID ObReferenceObject(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>Pointer to the object. The caller obtained this parameter either when it created the object or from a preceding call to <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a> after it opened the object. </p>

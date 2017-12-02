@@ -55,13 +55,13 @@ NTSTATUS RefTimeToSample(
 ## -parameters
 <dl>
 
-### -param <i>rtTime</i> [in]
+### -param rtTime [in]
 
 <dd>
 <p>Pointer to the reference time being passed in. The reference time is measured in 100-nanosecond units.</p>
 </dd>
 
-### -param <i>pllSampleTime</i> [out]
+### -param pllSampleTime [out]
 
 <dd>
 <p>Output pointer for the sample time. This parameter points to a caller-allocated variable into which the method writes the calculated sample time.</p>

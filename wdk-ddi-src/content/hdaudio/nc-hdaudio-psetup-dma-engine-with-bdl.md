@@ -65,49 +65,49 @@ NTSTATUS SetupDmaEngineWithBdl(
 ## -parameters
 <dl>
 
-### -param <i>context</i> [in]
+### -param context [in]
 
 <dd>
 <p>Specifies the context value from the <b>Context</b> member of the <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a> structure.</p>
 </dd>
 
-### -param <i>handle</i> [in]
+### -param handle [in]
 
 <dd>
 <p>Handle that identifies the DMA engine. This handle value was obtained from a previous call to <a href="..\hdaudio\nc-hdaudio-pallocate-capture-dma-engine.md">AllocateCaptureDmaEngine</a> or <a href="..\hdaudio\nc-hdaudio-pallocate-render-dma-engine.md">AllocateRenderDmaEngine</a>.</p>
 </dd>
 
-### -param <i>bufferSize</i> [in]
+### -param bufferSize [in]
 
 <dd>
 <p>Specifies the size in bytes of the DMA buffer that the buffer descriptor list (BDL) array describes.</p>
 </dd>
 
-### -param <i>lvi</i> [in]
+### -param lvi [in]
 
 <dd>
 <p>Specifies the last valid index (LVI). This parameter contains the index for the last valid buffer descriptor in the BDL. After the DMA engine processes this descriptor, it wraps back to the first descriptor in the list and continues processing. If the BDL contains <i>n</i> descriptors, they are numbered 0 to <i>n</i>-1. The <i>lvi</i> value must be at least 1; in other words, the BDL must contain at least two valid entries before the DMA engine can begin operation.</p>
 </dd>
 
-### -param <i>isr</i> [in]
+### -param isr [in]
 
 <dd>
 <p>Function pointer to the caller's ISR. If the caller sets the interrupt-on-completion (IOC) bit in one or more of the buffer descriptors in the BDL, the HD Audio bus driver calls the ISR each time an IOC interrupt occurs on the stream. This parameter is a function pointer of type HDAUDIO_BDL_ISR, which is defined in the following Remarks section.</p>
 </dd>
 
-### -param <i>callbackContext</i> [in]
+### -param callbackContext [in]
 
 <dd>
 <p>Specifies a context value that the HD Audio bus driver passes to the ISR.</p>
 </dd>
 
-### -param <i>streamID</i> [out]
+### -param streamID [out]
 
 <dd>
 <p>Retrieves the stream identifier. This parameter points to a caller-allocated UCHAR variable into which the routine writes the stream identifier that it assigns to the stream.</p>
 </dd>
 
-### -param <i>fifoSize</i> [out]
+### -param fifoSize [out]
 
 <dd>
 <p>Retrieves the DMA engine's FIFO size in bytes. This parameter points to a caller-allocated UINT variable into which the routine writes the FIFO size.</p>

@@ -7,7 +7,7 @@ old-location: wdf\wdfcmresourcelistgetcount.htm
 old-project: wdf
 ms.assetid: f1a38276-4964-422d-9b3c-8450b1028f27
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfCmResourceListGetCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ ULONG WdfCmResourceListGetCount(
 ## -parameters
 <dl>
 
-### -param <i>List</i> [in]
+### -param List [in]
 
 <dd>
 <p>A handle to a framework resource-list object that represents a list of hardware resources for a device.</p>

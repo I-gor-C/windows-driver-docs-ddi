@@ -55,7 +55,7 @@ BOOL DevQueryPrintEx(
 ## -parameters
 <dl>
 
-### -param <i>pDQPInfo</i> [in, out]
+### -param pDQPInfo [in, out]
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\winddiui\ns-winddiui--devqueryprint-info.md">DEVQUERYPRINT_INFO</a> structure.</p>

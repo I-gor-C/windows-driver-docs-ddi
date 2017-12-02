@@ -56,13 +56,13 @@ NTSTATUS RtlInitString(
 ## -parameters
 <dl>
 
-### -param <i>DestinationString</i> [out]
+### -param DestinationString [out]
 
 <dd>
 <p>A pointer to the <b>STRING</b> structure to be initialized. The Ntdef.h header file defines this structure to be identical to the <a href="kernel.ansi_string">ANSI_STRING</a> structure.</p>
 </dd>
 
-### -param <i>SourceString</i> [in, optional]
+### -param SourceString [in, optional]
 
 <dd>
 <p>A pointer to a null-terminated character string. This string is used to initialize the counted string pointed to by <i>DestinationString</i>.</p>

@@ -56,19 +56,19 @@ typedef struct _D3DDDIARG_DRAWPRIMITIVE2 {
 ## -struct-fields
 <dl>
 
-### -field <b>PrimitiveType</b>
+### -field PrimitiveType
 
 <dd>
 <p>[in] A D3DPRIMITIVETYPE-typed value that indicates the type of primitive to draw. This member can be one of the following values: D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP, or D3DPT_TRIANGLEFAN. For more information about D3DPRIMITIVETYPE, see the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -field <b>FirstVertexOffset</b>
+### -field FirstVertexOffset
 
 <dd>
 <p>[in] The offset, in bytes, in stream zero of the vertex data. This member differs from the <b>VStart</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-drawprimitive.md">D3DDDIARG_DRAWPRIMITIVE</a> structure that is used with the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-drawprimitive.md">DrawPrimitive</a> function. In <b>VStart</b>, the start of the vertex data in the vertex stream is specified by a vertex index rather than an actual byte offset.</p>
 </dd>
 
-### -field <b>PrimitiveCount</b>
+### -field PrimitiveCount
 
 <dd>
 <p>[in] The number of triangles, lines, or points to draw for the given primitive. </p>

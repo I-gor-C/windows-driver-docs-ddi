@@ -54,7 +54,7 @@ typedef struct _KSPROPERTY_SPPAL {
 ## -struct-fields
 <dl>
 
-### -field <b>sppal</b>
+### -field sppal
 
 <dd>
 <p>Specifies an array of 16 YUV color values.</p>

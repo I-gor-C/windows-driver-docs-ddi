@@ -54,7 +54,7 @@ PESILO PsAttachSiloToCurrentThread(
 ## -parameters
 <dl>
 
-### -param <i>Silo</i> [in]
+### -param Silo [in]
 
 <dd>
 <p>The silo that the thread is to impersonate. The caller must hold a  reference to the silo throughout the duration of the impersonation.</p>

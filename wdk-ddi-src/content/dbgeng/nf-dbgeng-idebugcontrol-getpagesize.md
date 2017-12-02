@@ -7,7 +7,7 @@ old-location: debugger\getpagesize.htm
 old-project: debugger
 ms.assetid: 26f11dfb-3fc3-4804-a294-2dfc674b4a73
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl, GetPageSize, IDebugControl::GetPageSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetPageSize(
 ## -parameters
 <dl>
 
-### -param <i>Size</i> [out]
+### -param Size [out]
 
 <dd>
 <p>Receives the page size.</p>
@@ -62,7 +62,7 @@ HRESULT GetPageSize(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

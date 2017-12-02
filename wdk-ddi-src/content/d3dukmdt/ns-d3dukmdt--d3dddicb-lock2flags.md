@@ -61,13 +61,13 @@ typedef struct _D3DDDICB_LOCK2FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and must be zero.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>This member must be zero.</p>

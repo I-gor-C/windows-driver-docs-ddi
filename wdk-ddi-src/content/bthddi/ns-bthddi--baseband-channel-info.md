@@ -59,21 +59,21 @@ typedef struct _BASEBAND_CHANNEL_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Transmission_Interval</b>
+### -field Transmission_Interval
 
 <dd>
 <p>The elapsed time, in slots, between two consecutive SCO instants. This member will return zero for
      SCO links.</p>
 </dd>
 
-### -field <b>Retransmission_Window</b>
+### -field Retransmission_Window
 
 <dd>
 <p>The length of time, in slots, that an eSCO channel can use to retransmit a request. This member
      will return zero for SCO links.</p>
 </dd>
 
-### -field <b>AirMode</b>
+### -field AirMode
 
 <dd>
 <p>The air mode data format used by the baseband channel. Possible values include:
@@ -99,14 +99,14 @@ typedef struct _BASEBAND_CHANNEL_INFO {
 </p>
 </dd>
 
-### -field <b>Rx_Packet_Length</b>
+### -field Rx_Packet_Length
 
 <dd>
 <p>The size, in bytes, of the eSCO payload in the receive direction. This member will return zero for
      SCO links.</p>
 </dd>
 
-### -field <b>Tx_Packet_Length</b>
+### -field Tx_Packet_Length
 
 <dd>
 <p>The size, in bytes, of the eSCO payload in the transmit direction. This member will return zero

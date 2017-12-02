@@ -56,13 +56,13 @@ VOID StorPortReleaseSpinLock(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to a per-adapter device extension.</p>
 </dd>
 
-### -param <i>LockHandle</i> [in, out]
+### -param LockHandle [in, out]
 
 <dd>
 <p>Pointer to a lock handle returned by <a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>.</p>

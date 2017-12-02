@@ -60,13 +60,13 @@ typedef struct _PEP_PROCESSOR_FEEDBACK_COUNTER {
 ## -struct-fields
 <dl>
 
-### -field <b>Affinitized</b>
+### -field Affinitized
 
 <dd>
 <p>Identifies the counter process affinity. If set to 1, the counter must be read while executing on the target processor, otherwise, it will be set to 0.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Specifies the data type of the counter.</p>
@@ -81,7 +81,7 @@ typedef struct _PEP_PROCESSOR_FEEDBACK_COUNTER {
 <tr>
 <td width="40%"><a id="PROCESSOR_FEEDBACK_TYPE_INSTANTANEOUS"></a><a id="processor_feedback_type_instantaneous"></a><dl>
 
-### -field <b>PROCESSOR_FEEDBACK_TYPE_INSTANTANEOUS</b>
+### -field PROCESSOR_FEEDBACK_TYPE_INSTANTANEOUS
 
 
 ### -field 0x00
@@ -95,7 +95,7 @@ typedef struct _PEP_PROCESSOR_FEEDBACK_COUNTER {
 <tr>
 <td width="40%"><a id="PROCESSOR_FEEDBACK_TYPE_RELATIVE"></a><a id="processor_feedback_type_relative"></a><dl>
 
-### -field <b>PROCESSOR_FEEDBACK_TYPE_RELATIVE</b>
+### -field PROCESSOR_FEEDBACK_TYPE_RELATIVE
 
 
 ### -field 0x01
@@ -111,7 +111,7 @@ typedef struct _PEP_PROCESSOR_FEEDBACK_COUNTER {
 <p> </p>
 </dd>
 
-### -field <b>Counter</b>
+### -field Counter
 
 <dd>
 <p>Specifies the data the counter is providing.</p>
@@ -126,7 +126,7 @@ typedef struct _PEP_PROCESSOR_FEEDBACK_COUNTER {
 <tr>
 <td width="40%"><a id="PROCESSOR_FEEDBACK_COUNTER_FREQUENCY_"></a><a id="processor_feedback_counter_frequency_"></a><dl>
 
-### -field <b>PROCESSOR_FEEDBACK_COUNTER_FREQUENCY </b>
+### -field PROCESSOR_FEEDBACK_COUNTER_FREQUENCY 
 
 
 ### -field 0x00
@@ -140,7 +140,7 @@ typedef struct _PEP_PROCESSOR_FEEDBACK_COUNTER {
 <tr>
 <td width="40%"><a id="PROCESSOR_FEEDBACK_COUNTER_PERFORMANCE"></a><a id="processor_feedback_counter_performance"></a><dl>
 
-### -field <b>PROCESSOR_FEEDBACK_COUNTER_PERFORMANCE</b>
+### -field PROCESSOR_FEEDBACK_COUNTER_PERFORMANCE
 
 
 ### -field 0x01
@@ -155,13 +155,13 @@ typedef struct _PEP_PROCESSOR_FEEDBACK_COUNTER {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>NominalRate</b>
+### -field NominalRate
 
 <dd>
 <p>Specifies the nominal rate of the counter. </p>

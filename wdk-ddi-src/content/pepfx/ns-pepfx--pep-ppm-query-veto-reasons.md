@@ -54,7 +54,7 @@ typedef struct _PEP_PPM_QUERY_VETO_REASONS {
 ## -struct-fields
 <dl>
 
-### -field <b>VetoReasonCount</b>
+### -field VetoReasonCount
 
 <dd>
 <p>[out] The number of veto codes used by the PEP.</p>

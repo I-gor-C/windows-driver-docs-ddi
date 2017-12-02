@@ -59,13 +59,13 @@ BOOLEAN HwStorBuildIo(
 ## -parameters
 <dl>
 
-### -param <i>DeviceExtension</i> 
+### -param DeviceExtension 
 
 <dd>
 <p>A pointer to the miniport driver's per HBA storage area. </p>
 </dd>
 
-### -param <i>Srb </i> 
+### -param Srb  
 
 <dd>
 <p>A pointer to the SCSI request block (SRB) to be processed.</p>
@@ -142,11 +142,11 @@ BOOLEAN HwStorBuildIo(
 
 <p>Starting with Windows 8, this request is sent to the miniport to free and resources allocated during the SRB_FUNCTION_DUMP_POINTERS request.</p>
 
-<p>Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a> or <a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>. If the function identifier in the <b>Function</b> field of <i>Srb</i> is <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b>, the SRB is a <b>STORAGE_REQUEST_BLOCK</b> request structure.</p>
+<p>Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a> or <a href="..\storport\ns-storport--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>. If the function identifier in the <b>Function</b> field of <i>Srb</i> is <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b>, the SRB is a <b>STORAGE_REQUEST_BLOCK</b> request structure.</p>
 
-<p>For more information about what you can and cannot do safely in this miniport driver routine, see <a href="NULL">Unsynchronized HwStorBuildIo Routine</a>. </p>
+<p>For more information about what you can and cannot do safely in this miniport driver routine, see <a href="storage.unsynchronized_hwstorbuildio_routine">Unsynchronized HwStorBuildIo Routine</a>. </p>
 
-<p>To define an <b>HwStorBuildIo</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
+<p>To define an <b>HwStorBuildIo</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
 
 <p> For example, to define a <b>HwStorBuildIo</b> callback routine that is named <i>MyHwBuildIo</i>, use the <b>HW_BUILDIO</b> type as shown in this code example:</p>
 
@@ -198,7 +198,7 @@ BOOLEAN HwStorBuildIo(
 <a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
 </dt>
 <dt>
 <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a>

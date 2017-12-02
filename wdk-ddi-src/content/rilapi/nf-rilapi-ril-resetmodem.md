@@ -7,7 +7,7 @@ old-location: netvista\ril_resetmodem.htm
 old-project: netvista
 ms.assetid: 7cb249d3-b39f-4b6b-8023-bb0c0ef8f9e1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_ResetModem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_ResetModem(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwResetKind</i> 
+### -param dwResetKind 
 
 <dd></dd>
 </dl>

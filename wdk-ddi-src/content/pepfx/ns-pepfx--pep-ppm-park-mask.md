@@ -56,31 +56,31 @@ typedef struct _PEP_PPM_PARK_MASK {
 ## -struct-fields
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>[in] Indicates the number of processors in the <b>Processors</b> array. </p>
 </dd>
 
-### -field <b>EvaluationTime</b>
+### -field EvaluationTime
 
 <dd>
 <p>[in] The interrupt time of the performance check evaluation that initiated this notification. </p>
 </dd>
 
-### -field <b>Processors</b>
+### -field Processors
 
 <dd>
 <p>[in/out] An array of processors in the core parking domain. </p>
 <dl class="indent">
 
-### -field <i>On input</i>
+### -field On input
 
 <dd>
 <p>Indicates the OS parking preference for each processor.</p>
 </dd>
 
-### -field <i>On output</i>
+### -field On output
 
 <dd>
 <p>Returns the PEP parking preference for each processor.</p>

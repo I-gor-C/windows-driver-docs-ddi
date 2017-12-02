@@ -57,19 +57,19 @@ typedef struct _DMA_TRANSFER_INFO_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>MapRegisterCount</b>
+### -field MapRegisterCount
 
 <dd>
 <p>The number of map registers required to translate all the physical addresses in the scatter/gather list to logical addresses.</p>
 </dd>
 
-### -field <b>ScatterGatherElementCount</b>
+### -field ScatterGatherElementCount
 
 <dd>
 <p>The number of scatter/gather elements in the scatter/gather list. Each element is a structure of type <b>SCATTER_GATHER_ELEMENT</b>.</p>
 </dd>
 
-### -field <b>ScatterGatherListSize</b>
+### -field ScatterGatherListSize
 
 <dd>
 <p>The required size, in bytes, of the scatter/gather buffer. This buffer contains the scatter/gather list that describes the memory that is used to buffer I/O data during the DMA transfer. The scatter/gather buffer must be large enough to contain a <a href="..\wdm\ns-wdm--scatter-gather-list.md">SCATTER_GATHER_LIST</a> structure and an array of <b>SCATTER_GATHER_ELEMENT</b> structures, plus additional data that is used internally by the operating system.</p>

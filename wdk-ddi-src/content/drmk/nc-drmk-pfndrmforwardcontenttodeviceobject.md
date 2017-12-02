@@ -61,19 +61,19 @@ typedef PFNDRMFORWARDCONTENTTODEVICEOBJECT DRMForwardContentToDeviceObject;
 ## -parameters
 <dl>
 
-### -param <i>ContentId</i> [in]
+### -param ContentId [in]
 
 <dd>
 <p>This parameter is reserved for system use.</p>
 </dd>
 
-### -param <i>Reserved</i> [in]
+### -param Reserved [in]
 
 <dd>
 <p>This parameter is reserved for system use.</p>
 </dd>
 
-### -param <i>DrmForward</i> [in]
+### -param DrmForward [in]
 
 <dd>
 <p>This parameter is reserved for system use.</p>

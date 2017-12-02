@@ -57,19 +57,19 @@ VOID IoSetStartIoAttributes(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object for the driver's device.</p>
 </dd>
 
-### -param <i>DeferredStartIo</i> [in]
+### -param DeferredStartIo [in]
 
 <dd>
-<p>If <b>TRUE</b>, the I/O manager will defer any call to the driver's <a href="kernel.startio">StartIo</a> routine while the driver is already inside the routine. In particular, if the <i>StartIo</i> routine calls <a href="..\ntifs\nf-ntifs-iostartnextpacket.md">IoStartNextPacket</a>, the <i>StartIo</i> routine will not be called again until the current invocation completes. The default is <b>FALSE</b>.</p>
+<p>If <b>TRUE</b>, the I/O manager will defer any call to the driver's <a href="kernel.startio">StartIo</a> routine while the driver is already inside the routine. In particular, if the <i>StartIo</i> routine calls <a href="..\wdm\nf-wdm-iostartnextpacket.md">IoStartNextPacket</a>, the <i>StartIo</i> routine will not be called again until the current invocation completes. The default is <b>FALSE</b>.</p>
 </dd>
 
-### -param <i>NonCancelable</i> [in]
+### -param NonCancelable [in]
 
 <dd>
 <p>If <b>TRUE</b>, the IRP cannot be canceled once it has been dequeued by a call to <b>IoStartNextPacket</b>. The default is <b>FALSE</b>. Drivers that set this member to <b>FALSE</b> must synchronize their IRP handling with the cancel spin lock.</p>
@@ -156,7 +156,7 @@ VOID IoSetStartIoAttributes(
 <a href="kernel.startio">StartIo</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iostartnextpacket.md">IoStartNextPacket</a>
+<a href="..\wdm\nf-wdm-iostartnextpacket.md">IoStartNextPacket</a>
 </dt>
 </dl>
 <p> </p>

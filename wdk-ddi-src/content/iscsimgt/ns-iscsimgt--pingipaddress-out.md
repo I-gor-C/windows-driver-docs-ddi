@@ -55,13 +55,13 @@ typedef struct _PingIPAddress_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>A status of type ISDSC_ERROR.</p>
 </dd>
 
-### -field <b>ResponsesReceived</b>
+### -field ResponsesReceived
 
 <dd>
 <p>The number of responses that were received.</p>

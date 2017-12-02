@@ -63,37 +63,37 @@ typedef struct _PCMCIA_SOCKET_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Socket</b>
+### -field Socket
 
 <dd>
 <p>Indicates the socket number. </p>
 </dd>
 
-### -field <b>TupleCrc</b>
+### -field TupleCrc
 
 <dd>
-<p>Contains a 16-bit CRC that is concatenated with the PCMCIA prefix, the manufacturer-name string, the product-name string, and the instance value for the card to produce the device ID for a PC Card or CardBus card. For more information about PCMCIA device IDs, see <a href="NULL">Identifiers for PCMCIA Devices</a>. </p>
+<p>Contains a 16-bit CRC that is concatenated with the PCMCIA prefix, the manufacturer-name string, the product-name string, and the instance value for the card to produce the device ID for a PC Card or CardBus card. For more information about PCMCIA device IDs, see <a href="devinst.identifiers_for_pcmcia_devices">Identifiers for PCMCIA Devices</a>. </p>
 </dd>
 
-### -field <b>Manufacturer</b>
+### -field Manufacturer
 
 <dd>
 <p>Indicates the manufacturer of the PC Card or CardBus card. </p>
 </dd>
 
-### -field <b>Identifier</b>
+### -field Identifier
 
 <dd>
 <p>Contains the device ID of the PC Card or CardBus card. </p>
 </dd>
 
-### -field <b>DriverName</b>
+### -field DriverName
 
 <dd>
 <p>Contains the name of the PC Card or CardBus card device driver. </p>
 </dd>
 
-### -field <b>DeviceFunctionId</b>
+### -field DeviceFunctionId
 
 <dd>
 <p>Indicates the type of PC Card or CardBus card. This value can be one of the following.</p>
@@ -210,25 +210,25 @@ typedef struct _PCMCIA_SOCKET_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>CardInSocket</b>
+### -field CardInSocket
 
 <dd>
 <p>Indicates that there is a card present in the socket. </p>
 </dd>
 
-### -field <b>CardEnabled</b>
+### -field CardEnabled
 
 <dd>
 <p>Indicates that the card is enabled. </p>
 </dd>
 
-### -field <b>ControllerType</b>
+### -field ControllerType
 
 <dd>
 <p>Indicates the controller type. Some common controller types are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537600">PCMCIA_CONTROLLER_CLASS</a> enumeration. </p>

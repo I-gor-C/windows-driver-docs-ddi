@@ -7,7 +7,7 @@ old-location: netvista\ndis_offload_parameters.htm
 old-project: netvista
 ms.assetid: ceb6647a-a43e-4ab1-88d4-49927103ecba
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_OFFLOAD_PARAMETERS, NDIS_OFFLOAD_PARAMETERS, *PNDIS_OFFLOAD_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -84,7 +84,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -103,7 +103,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_REVISION_3"></a><a id="ndis_offload_parameters_revision_3"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_REVISION_3</b>
+### -field NDIS_OFFLOAD_PARAMETERS_REVISION_3
 
 
 ### -field 3
@@ -120,7 +120,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_REVISION_2"></a><a id="ndis_offload_parameters_revision_2"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_REVISION_2</b>
+### -field NDIS_OFFLOAD_PARAMETERS_REVISION_2
 
 
 ### -field 2
@@ -140,7 +140,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_REVISION_1"></a><a id="ndis_offload_parameters_revision_1"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_REVISION_1</b>
+### -field NDIS_OFFLOAD_PARAMETERS_REVISION_1
 
 
 ### -field 1
@@ -157,42 +157,42 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>IPv4Checksum</b>
+### -field IPv4Checksum
 
 <dd>
 <p>The IPv4 checksum setting of the miniport adapter. For more information, see the following Remarks
      section.</p>
 </dd>
 
-### -field <b>TCPIPv4Checksum</b>
+### -field TCPIPv4Checksum
 
 <dd>
 <p>The IPv4 checksum setting of the miniport adapter for TCP packets. For more information, see the
      following Remarks section.</p>
 </dd>
 
-### -field <b>UDPIPv4Checksum</b>
+### -field UDPIPv4Checksum
 
 <dd>
 <p>The IPv4 checksum setting of the miniport adapter for UDP packets. For more information, see the
      following Remarks section.</p>
 </dd>
 
-### -field <b>TCPIPv6Checksum</b>
+### -field TCPIPv6Checksum
 
 <dd>
 <p>The IPv6 checksum setting of the miniport adapter for TCP packets. For more information, see the
      following Remarks section.</p>
 </dd>
 
-### -field <b>UDPIPv6Checksum</b>
+### -field UDPIPv6Checksum
 
 <dd>
 <p>The IPv6 checksum setting of the miniport adapter for UDP packets. For more information, see the
      following Remarks section.</p>
 </dd>
 
-### -field <b>LsoV1</b>
+### -field LsoV1
 
 <dd>
 <p>The large send offload version 1 (LSOV1) setting of the miniport adapter. This setting should be
@@ -206,7 +206,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b>
+### -field NDIS_OFFLOAD_PARAMETERS_NO_CHANGE
 
 </dl>
 </td>
@@ -217,7 +217,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_LSOV1_DISABLED"></a><a id="ndis_offload_parameters_lsov1_disabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_LSOV1_DISABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_LSOV1_DISABLED
 
 </dl>
 </td>
@@ -228,7 +228,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_LSOV1_ENABLED"></a><a id="ndis_offload_parameters_lsov1_enabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_LSOV1_ENABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_LSOV1_ENABLED
 
 </dl>
 </td>
@@ -240,7 +240,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>IPsecV1</b>
+### -field IPsecV1
 
 <dd>
 <p>The Internet protocol security (IPsec) offload setting of the miniport adapter. This setting
@@ -254,7 +254,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b>
+### -field NDIS_OFFLOAD_PARAMETERS_NO_CHANGE
 
 </dl>
 </td>
@@ -265,7 +265,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV1_DISABLED"></a><a id="ndis_offload_parameters_ipsecv1_disabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_IPSECV1_DISABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_IPSECV1_DISABLED
 
 </dl>
 </td>
@@ -276,7 +276,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV1_AH_ENABLED"></a><a id="ndis_offload_parameters_ipsecv1_ah_enabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_IPSECV1_AH_ENABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_IPSECV1_AH_ENABLED
 
 </dl>
 </td>
@@ -288,7 +288,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV1_ESP_ENABLED"></a><a id="ndis_offload_parameters_ipsecv1_esp_enabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_IPSECV1_ESP_ENABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_IPSECV1_ESP_ENABLED
 
 </dl>
 </td>
@@ -300,7 +300,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV1_AH_AND_ESP_ENABLED"></a><a id="ndis_offload_parameters_ipsecv1_ah_and_esp_enabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_IPSECV1_AH_AND_ESP_ENABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_IPSECV1_AH_AND_ESP_ENABLED
 
 </dl>
 </td>
@@ -312,7 +312,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>LsoV2IPv4</b>
+### -field LsoV2IPv4
 
 <dd>
 <p>The IPv4 large send offload version 2 (LSOV2) setting of the miniport adapter. This setting should
@@ -326,7 +326,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b>
+### -field NDIS_OFFLOAD_PARAMETERS_NO_CHANGE
 
 </dl>
 </td>
@@ -337,7 +337,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_LSOV2_DISABLED"></a><a id="ndis_offload_parameters_lsov2_disabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_LSOV2_DISABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_LSOV2_DISABLED
 
 </dl>
 </td>
@@ -348,7 +348,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_LSOV2_ENABLED"></a><a id="ndis_offload_parameters_lsov2_enabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_LSOV2_ENABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_LSOV2_ENABLED
 
 </dl>
 </td>
@@ -360,7 +360,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>LsoV2IPv6</b>
+### -field LsoV2IPv6
 
 <dd>
 <p>The IPv6 LSOV2 setting of the miniport adapter. These settings are specified as one of the
@@ -374,7 +374,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b>
+### -field NDIS_OFFLOAD_PARAMETERS_NO_CHANGE
 
 </dl>
 </td>
@@ -385,7 +385,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_LSOV2_DISABLED"></a><a id="ndis_offload_parameters_lsov2_disabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_LSOV2_DISABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_LSOV2_DISABLED
 
 </dl>
 </td>
@@ -396,7 +396,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_LSOV2_ENABLED"></a><a id="ndis_offload_parameters_lsov2_enabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_LSOV2_ENABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_LSOV2_ENABLED
 
 </dl>
 </td>
@@ -408,7 +408,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>TcpConnectionIPv4</b>
+### -field TcpConnectionIPv4
 
 <dd>
 <p>The IPv4 connection offload setting of the miniport adapter. These settings are specified as one
@@ -422,7 +422,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b>
+### -field NDIS_OFFLOAD_PARAMETERS_NO_CHANGE
 
 </dl>
 </td>
@@ -434,7 +434,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>TcpConnectionIPv6</b>
+### -field TcpConnectionIPv6
 
 <dd>
 <p>The IPv6 connection offload setting of the miniport adapter. These settings are specified as one
@@ -448,7 +448,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b>
+### -field NDIS_OFFLOAD_PARAMETERS_NO_CHANGE
 
 </dl>
 </td>
@@ -460,14 +460,14 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A set of flags that can be combined with a bitwise OR operation. Set this member to zero. There
      are currently no flags defined.</p>
 </dd>
 
-### -field <b>IPsecV2</b>
+### -field IPsecV2
 
 <dd>
 <p>The Internet protocol security (IPsec) offload version 2 setting of a miniport adapter that supports
@@ -481,7 +481,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b>
+### -field NDIS_OFFLOAD_PARAMETERS_NO_CHANGE
 
 </dl>
 </td>
@@ -492,7 +492,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED"></a><a id="ndis_offload_parameters_ipsecv2_disabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED
 
 </dl>
 </td>
@@ -503,7 +503,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_ah_enabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED
 
 </dl>
 </td>
@@ -515,7 +515,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_esp_enabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED
 
 </dl>
 </td>
@@ -527,7 +527,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_ah_and_esp_enabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED
 
 </dl>
 </td>
@@ -539,7 +539,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>IPsecV2IPv4</b>
+### -field IPsecV2IPv4
 
 <dd>
 <p>The Internet protocol security (IPsec) offload version 2 setting of a miniport adapter that supports
@@ -554,7 +554,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b>
+### -field NDIS_OFFLOAD_PARAMETERS_NO_CHANGE
 
 </dl>
 </td>
@@ -565,7 +565,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED"></a><a id="ndis_offload_parameters_ipsecv2_disabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED
 
 </dl>
 </td>
@@ -576,7 +576,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_ah_enabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED
 
 </dl>
 </td>
@@ -588,7 +588,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_esp_enabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED
 
 </dl>
 </td>
@@ -600,7 +600,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_ah_and_esp_enabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED
 
 </dl>
 </td>
@@ -612,7 +612,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>RscIPv4</b>
+### -field RscIPv4
 
 <dd>
 <p>Indicates Receive Segment Coalescing state for IPv4.</p>
@@ -624,7 +624,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b>
+### -field NDIS_OFFLOAD_PARAMETERS_NO_CHANGE
 
 </dl>
 </td>
@@ -635,7 +635,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_RSC_ENABLED"></a><a id="ndis_offload_parameters_rsc_enabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_RSC_ENABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_RSC_ENABLED
 
 </dl>
 </td>
@@ -646,7 +646,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_RSC_DISABLED"></a><a id="ndis_offload_parameters_rsc_disabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_RSC_DISABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_RSC_DISABLED
 
 </dl>
 </td>
@@ -658,7 +658,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>RscIPv6</b>
+### -field RscIPv6
 
 <dd>
 <p>Indicates Receive Segment Coalescing state for IPv6.</p>
@@ -670,7 +670,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b>
+### -field NDIS_OFFLOAD_PARAMETERS_NO_CHANGE
 
 </dl>
 </td>
@@ -681,7 +681,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_RSC_ENABLED"></a><a id="ndis_offload_parameters_rsc_enabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_RSC_ENABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_RSC_ENABLED
 
 </dl>
 </td>
@@ -692,7 +692,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_RSC_DISABLED"></a><a id="ndis_offload_parameters_rsc_disabled"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_PARAMETERS_RSC_DISABLED</b>
+### -field NDIS_OFFLOAD_PARAMETERS_RSC_DISABLED
 
 </dl>
 </td>
@@ -704,7 +704,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>EncapsulatedPacketTaskOffload</b>
+### -field EncapsulatedPacketTaskOffload
 
 <dd>
 <p>A protocol driver sets <b>EncapsulatedPacketTaskOffload</b> as follows: </p>
@@ -718,7 +718,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_SET_NO_CHANGE"></a><a id="ndis_offload_set_no_change"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_SET_NO_CHANGE</b>
+### -field NDIS_OFFLOAD_SET_NO_CHANGE
 
 
 ### -field 0
@@ -732,7 +732,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_SET_ON"></a><a id="ndis_offload_set_on"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_SET_ON</b>
+### -field NDIS_OFFLOAD_SET_ON
 
 
 ### -field 1
@@ -746,7 +746,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_OFFLOAD_SET_OFF"></a><a id="ndis_offload_set_off"></a><dl>
 
-### -field <b>NDIS_OFFLOAD_SET_OFF</b>
+### -field NDIS_OFFLOAD_SET_OFF
 
 
 ### -field 2
@@ -761,7 +761,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>EncapsulationTypes</b>
+### -field EncapsulationTypes
 
 <dd>
 <p>This field is effective only when the <b>EncapsulatedPacketTaskOffload</b> is set to <b>NDIS_OFFLOAD_SET_ON</b>. If the <b>EncapsulatedPacketTaskOffload</b> member is not set to <b>NDIS_OFFLOAD_SET_ON</b>, this member is zero. A protocol driver must set <b>EncapsulationTypes</b> to the bitwise OR of the flags corresponding to encapsulation types that it requires. It can select flags from the following:</p>
@@ -773,7 +773,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_ENCAPSULATION_TYPE_GRE_MAC"></a><a id="ndis_encapsulation_type_gre_mac"></a><dl>
 
-### -field <b>NDIS_ENCAPSULATION_TYPE_GRE_MAC</b>
+### -field NDIS_ENCAPSULATION_TYPE_GRE_MAC
 
 
 ### -field 0x00000001
@@ -879,4 +879,4 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

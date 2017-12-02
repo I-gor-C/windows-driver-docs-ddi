@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KsInvokeOnSuccess"></a><a id="ksinvokeonsuccess"></a><a id="KSINVOKEONSUCCESS"></a><b>KsInvokeOnSuccess</b>
+### -field KsInvokeOnSuccess
 
 <dd>
 <p>Invokes the completion routine on success.</p>
 </dd>
 
-### -field <a id="KsInvokeOnError"></a><a id="ksinvokeonerror"></a><a id="KSINVOKEONERROR"></a><b>KsInvokeOnError</b>
+### -field KsInvokeOnError
 
 <dd>
 <p>Invokes the completion routine on error.</p>
 </dd>
 
-### -field <a id="KsInvokeOnCancel"></a><a id="ksinvokeoncancel"></a><a id="KSINVOKEONCANCEL"></a><b>KsInvokeOnCancel</b>
+### -field KsInvokeOnCancel
 
 <dd>
 <p>Invokes the completion routine on cancellation.</p>

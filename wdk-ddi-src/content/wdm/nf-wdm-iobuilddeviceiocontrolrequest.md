@@ -63,55 +63,55 @@ PIRP IoBuildDeviceIoControlRequest(
 ## -parameters
 <dl>
 
-### -param <i>IoControlCode</i> [in]
+### -param IoControlCode [in]
 
 <dd>
 <p>Supplies the I/O control code (<a href="wdkgloss.i#wdkgloss.ioctl#wdkgloss.ioctl"><i>IOCTL</i></a>) to be used in the request. For information about device type-specific I/O control codes, see device type-specific sections in the Windows Driver Kit (WDK). </p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Supplies a pointer to the <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure for the next-lower driver's device object, which represents the target device.</p>
 </dd>
 
-### -param <i>InputBuffer</i> [in, optional]
+### -param InputBuffer [in, optional]
 
 <dd>
 <p>Supplies a pointer to an input buffer to be passed to the lower driver, or <b>NULL</b> if the request does not pass input data to lower drivers.</p>
 </dd>
 
-### -param <i>InputBufferLength</i> [in]
+### -param InputBufferLength [in]
 
 <dd>
 <p>Supplies the length, in bytes, of the input buffer. If <i>InputBuffer</i> is <b>NULL</b>, <i>InputBufferLength</i> must be zero.</p>
 </dd>
 
-### -param <i>OutputBuffer</i> [out, optional]
+### -param OutputBuffer [out, optional]
 
 <dd>
 <p>Supplies a pointer to an output buffer in which the lower driver is to return data, or <b>NULL</b> if the request does not require lower drivers to return data.</p>
 </dd>
 
-### -param <i>OutputBufferLength</i> [in]
+### -param OutputBufferLength [in]
 
 <dd>
 <p>Supplies the length, in bytes, of the output buffer. If <i>OutputBuffer</i> is <b>NULL</b>, <i>OutputBufferLength</i> must be zero.</p>
 </dd>
 
-### -param <i>InternalDeviceIoControl</i> [in]
+### -param InternalDeviceIoControl [in]
 
 <dd>
 <p>If <b>TRUE</b>, the routine sets the IRP's major function code to <a href="https://msdn.microsoft.com/library/windows/hardware/ff550766">IRP_MJ_INTERNAL_DEVICE_CONTROL</a>. Otherwise, the routine sets the IRP's major function code to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548649">IRP_MJ_DEVICE_CONTROL</a>.</p>
 </dd>
 
-### -param <i>Event</i> [in, optional]
+### -param Event [in, optional]
 
 <dd>
 <p>Supplies a pointer to a caller-allocated and initialized event object. The I/O manager sets the event to the Signaled state when a lower-level driver completes the requested operation. After calling <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>, the driver can wait for the event object. The <i>Event</i> parameter is optional and can be set to NULL. However, if <i>Event</i> is NULL, the caller must supply an <a href="..\wdm\nc-wdm-io-completion-routine.md">IoCompletion</a> routine for the IRP to notify the caller when the operation completes.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>Specifies an I/O status block to be set when the request is completed by lower drivers.</p>
@@ -119,7 +119,7 @@ PIRP IoBuildDeviceIoControlRequest(
 </dl>
 
 ## -returns
-<p>If the operation succeeds, <b>IoBuildDeviceIoControlRequest</b> returns a pointer to an <a href="..\ntifs\ns-ntifs--irp.md">IRP</a>, with the next-lower driver's I/O stack location set up from the supplied parameters. Otherwise, the routine returns <b>NULL</b>.</p>
+<p>If the operation succeeds, <b>IoBuildDeviceIoControlRequest</b> returns a pointer to an <a href="..\wdm\ns-wdm--irp.md">IRP</a>, with the next-lower driver's I/O stack location set up from the supplied parameters. Otherwise, the routine returns <b>NULL</b>.</p>
 
 ## -remarks
 <p>A driver can call <b>IoBuildDeviceIoControlRequest</b> to set up IRPs for device control requests that it synchronously sends to lower-level drivers.</p>
@@ -225,7 +225,7 @@ PIRP IoBuildDeviceIoControlRequest(
 <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>

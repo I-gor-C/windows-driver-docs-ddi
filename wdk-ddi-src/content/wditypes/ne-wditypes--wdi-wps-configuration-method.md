@@ -7,7 +7,7 @@ old-location: netvista\wdi_wps_configuration_method.htm
 old-project: netvista
 ms.assetid: 116B19BD-959F-4711-B3FB-9880539B7849
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,43 +61,43 @@ typedef enum _WDI_WPS_CONFIGURATION_METHOD {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_WPS_CONFIGURATION_METHOD_NULL"></a><a id="wdi_wps_configuration_method_null"></a><b>WDI_WPS_CONFIGURATION_METHOD_NULL</b>
+### -field WDI_WPS_CONFIGURATION_METHOD_NULL
 
 <dd>
 <p>WFDS.</p>
 </dd>
 
-### -field <a id="WDI_WPS_CONFIGURATION_METHOD_DISPLAY"></a><a id="wdi_wps_configuration_method_display"></a><b>WDI_WPS_CONFIGURATION_METHOD_DISPLAY</b>
+### -field WDI_WPS_CONFIGURATION_METHOD_DISPLAY
 
 <dd>
 <p>Pin display.</p>
 </dd>
 
-### -field <a id="WDI_WPS_CONFIGURATION_METHOD_NFC_TAG"></a><a id="wdi_wps_configuration_method_nfc_tag"></a><b>WDI_WPS_CONFIGURATION_METHOD_NFC_TAG</b>
+### -field WDI_WPS_CONFIGURATION_METHOD_NFC_TAG
 
 <dd>
 <p>NFC tag.</p>
 </dd>
 
-### -field <a id="WDI_WPS_CONFIGURATION_METHOD_NFC_INTERFACE"></a><a id="wdi_wps_configuration_method_nfc_interface"></a><b>WDI_WPS_CONFIGURATION_METHOD_NFC_INTERFACE</b>
+### -field WDI_WPS_CONFIGURATION_METHOD_NFC_INTERFACE
 
 <dd>
 <p>NFC interface.</p>
 </dd>
 
-### -field <a id="WDI_WPS_CONFIGURATION_METHOD_PUSHBUTTON"></a><a id="wdi_wps_configuration_method_pushbutton"></a><b>WDI_WPS_CONFIGURATION_METHOD_PUSHBUTTON</b>
+### -field WDI_WPS_CONFIGURATION_METHOD_PUSHBUTTON
 
 <dd>
 <p>Push button.</p>
 </dd>
 
-### -field <a id="WDI_WPS_CONFIGURATION_METHOD_KEYPAD"></a><a id="wdi_wps_configuration_method_keypad"></a><b>WDI_WPS_CONFIGURATION_METHOD_KEYPAD</b>
+### -field WDI_WPS_CONFIGURATION_METHOD_KEYPAD
 
 <dd>
 <p>Pin keypad.</p>
 </dd>
 
-### -field <a id="WDI_WPS_CONFIGURATION_METHOD_WFDS_DEFAULT"></a><a id="wdi_wps_configuration_method_wfds_default"></a><b>WDI_WPS_CONFIGURATION_METHOD_WFDS_DEFAULT</b>
+### -field WDI_WPS_CONFIGURATION_METHOD_WFDS_DEFAULT
 
 <dd>
 <p>WFDS.</p>

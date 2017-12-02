@@ -56,19 +56,19 @@ typedef struct _STORAGE_PROTOCOL_DATA_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The total size of the descriptor, including the space for all protocol data.</p>
 </dd>
 
-### -field <b>ProtocolSpecificData</b>
+### -field ProtocolSpecificData
 
 <dd>
 <p>The protocol-specific data, of type <a href="..\ntddstor\ns-ntddstor--storage-protocol-specific-data.md">STORAGE_PROTOCOL_SPECIFIC_DATA</a>.</p>

@@ -60,31 +60,31 @@ typedef union _DXGK_STANDARD_COLORIMETRY_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>BT2020YCC</b>
+### -field BT2020YCC
 
 <dd>
 <p>Flag which indicates device support for the color space defined by BT.2020 using a YCC signal format.</p>
 </dd>
 
-### -field <b>BT2020RGB</b>
+### -field BT2020RGB
 
 <dd>
 <p>Flag which indicates device support for the color space defined by BT.2020 using an RGB signal format.</p>
 </dd>
 
-### -field <b>ST2084</b>
+### -field ST2084
 
 <dd>
 <p>Flag which indicates device support for the ST.2084 EOTF.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The combined value that is operated on.</p>

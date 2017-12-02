@@ -56,19 +56,19 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ENCRYPTION_GUID_OUTP
 ## -struct-fields
 <dl>
 
-### -field <b>Output</b>
+### -field Output
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure that contains a Message Authentication Code (MAC) and other data.</p>
 </dd>
 
-### -field <b>EncryptionGuidIndex</b>
+### -field EncryptionGuidIndex
 
 <dd>
 <p>The index of the encryption GUID.</p>
 </dd>
 
-### -field <b>EncryptionGuid</b>
+### -field EncryptionGuid
 
 <dd>
 <p>A GUID that specifies a supported encryption type.</p>

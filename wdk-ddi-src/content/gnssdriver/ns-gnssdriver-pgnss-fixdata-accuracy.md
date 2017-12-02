@@ -7,7 +7,7 @@ old-location: sensors\gnss_fixdata_accuracy.htm
 old-project: sensors
 ms.assetid: 3C08FE5D-1385-4FE3-98C9-9FC530C6C755
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_FIXDATA_ACCURACY, GNSS_FIXDATA_ACCURACY, *PGNSS_FIXDATA_ACCURACY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,98 +69,98 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>HorizontalAccuracy</b>
+### -field HorizontalAccuracy
 
 <dd>
 <p>Accuracy reported with 95% confidence.</p>
 </dd>
 
-### -field <b>HorizontalErrorMajorAxis</b>
+### -field HorizontalErrorMajorAxis
 
 <dd>
 <p>Horizontal uncertainty ellipse semi-major axis with  95% confidence accuracy.</p>
 </dd>
 
-### -field <b>HorizontalErrorMinorAxis</b>
+### -field HorizontalErrorMinorAxis
 
 <dd>
 <p>Horizontal uncertainty ellipse semi-minor axis with  95% confidence accuracy.</p>
 </dd>
 
-### -field <b>HorizontalErrorAngle</b>
+### -field HorizontalErrorAngle
 
 <dd>
 <p>Horizontal uncertainty ellipse orientation angle with  95% confidence accuracy.</p>
 </dd>
 
-### -field <b>HeadingAccuracy</b>
+### -field HeadingAccuracy
 
 <dd>
 <p>Reserved, do not use.</p>
 </dd>
 
-### -field <b>AltitudeAccuracy</b>
+### -field AltitudeAccuracy
 
 <dd>
 <p>Reserved, do not use.</p>
 </dd>
 
-### -field <b>SpeedAccuracy</b>
+### -field SpeedAccuracy
 
 <dd>
 <p>Reserved, do not use.</p>
 </dd>
 
-### -field <b>HorizontalConfidence</b>
+### -field HorizontalConfidence
 
 <dd>
 <p>Reserved, do not use.</p>
 </dd>
 
-### -field <b>HeadingConfidence</b>
+### -field HeadingConfidence
 
 <dd>
 <p>Reserved, do not use.</p>
 </dd>
 
-### -field <b>AltitudeConfidence</b>
+### -field AltitudeConfidence
 
 <dd>
 <p>Reserved, do not use.</p>
 </dd>
 
-### -field <b>SpeedConfidence</b>
+### -field SpeedConfidence
 
 <dd>
 <p>Reserved, do not use.</p>
 </dd>
 
-### -field <b>PositionDilutionOfPrecision</b>
+### -field PositionDilutionOfPrecision
 
 <dd>
 <p>Position dilution of precision (PDOP).</p>
 <p>Satellite-based positions with a dilution of precision (DOP) value of 0 or a DOP value higher than 10 may be filtered by the GNSS adapter.</p>
 </dd>
 
-### -field <b>HorizontalDilutionOfPrecision</b>
+### -field HorizontalDilutionOfPrecision
 
 <dd>
 <p>Horizontal dilution of precision (HDOP).</p>
 </dd>
 
-### -field <b>VerticalDilutionOfPrecision</b>
+### -field VerticalDilutionOfPrecision
 
 <dd>
 <p>Vertical dilution of precision (VDOP).</p>

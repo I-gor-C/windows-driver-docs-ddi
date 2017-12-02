@@ -59,19 +59,19 @@ typedef union _CONTROLLER_USB_20_HARDWARE_LPM_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>AsUchar</b>
+### -field AsUchar
 
 <dd>
 <p>The size of structure represented as a char (8-bit) value.</p>
 </dd>
 
-### -field <b>L1CapabilitySupported</b>
+### -field L1CapabilitySupported
 
 <dd>
 <p>Indicates support for L1 transitions.</p>
 </dd>
 
-### -field <b>BeslLpmCapabilitySupported</b>
+### -field BeslLpmCapabilitySupported
 
 <dd>
 <p>Indicates Best Effort Service latency (BESL) latency support. </p>
@@ -98,7 +98,7 @@ typedef union _CONTROLLER_USB_20_HARDWARE_LPM_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._roothub_20port_info">ROOTHUB_20PORT_INFO</a>
+<a href="..\ucxroothub\ns-ucxroothub--roothub-20port-info.md">ROOTHUB_20PORT_INFO</a>
 </dt>
 </dl>
 <p> </p>

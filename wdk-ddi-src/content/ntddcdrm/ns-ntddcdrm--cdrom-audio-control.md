@@ -55,13 +55,13 @@ typedef struct _CDROM_AUDIO_CONTROL {
 ## -struct-fields
 <dl>
 
-### -field <b>LbaFormat</b>
+### -field LbaFormat
 
 <dd>
 <p>Contains the logical block address (LBA) format.  </p>
 </dd>
 
-### -field <b>LogicalBlocksPerSecond</b>
+### -field LogicalBlocksPerSecond
 
 <dd>
 <p>Contains the number of logical blocks per second.</p>

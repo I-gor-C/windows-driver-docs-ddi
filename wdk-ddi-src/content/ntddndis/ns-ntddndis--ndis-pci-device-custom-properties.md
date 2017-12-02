@@ -7,7 +7,7 @@ old-location: netvista\ndis_pci_device_custom_properties.htm
 old-project: netvista
 ms.assetid: fd61184f-0502-492d-9014-6afbfd70c189
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PCI_DEVICE_CUSTOM_PROPERTIES, NDIS_PCI_DEVICE_CUSTOM_PROPERTIES, *PNDIS_PCI_DEVICE_CUSTOM_PROPERTIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,7 @@ typedef struct _NDIS_PCI_DEVICE_CUSTOM_PROPERTIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -82,14 +82,14 @@ typedef struct _NDIS_PCI_DEVICE_CUSTOM_PROPERTIES {
      sizeof(NDIS_PCI_DEVICE_CUSTOM_PROPERTIES).</p>
 </dd>
 
-### -field <b>DeviceType</b>
+### -field DeviceType
 
 <dd>
 <p>The PCI device type. For example, conventional, PCI-X, PCI-E, and so on. See the definitions for
      DevProp_PciDevice_DeviceType_xxx in pciprop.h.</p>
 </dd>
 
-### -field <b>CurrentSpeedAndMode</b>
+### -field CurrentSpeedAndMode
 
 <dd>
 <p>The speed and mode of conventional PCI or PCI-X devices. For conventional PCI devices, see the
@@ -98,7 +98,7 @@ typedef struct _NDIS_PCI_DEVICE_CUSTOM_PROPERTIES {
      conventional PCI and PCI-X devices.</p>
 </dd>
 
-### -field <b>CurrentPayloadSize</b>
+### -field CurrentPayloadSize
 
 <dd>
 <p>The current payload size in the transaction layer for a PCI Express device. See definitions for
@@ -106,7 +106,7 @@ typedef struct _NDIS_PCI_DEVICE_CUSTOM_PROPERTIES {
      devices.</p>
 </dd>
 
-### -field <b>MaxPayloadSize</b>
+### -field MaxPayloadSize
 
 <dd>
 <p>The maximum payload size in the transaction layer that is supported by a PCI Express device. See
@@ -114,7 +114,7 @@ typedef struct _NDIS_PCI_DEVICE_CUSTOM_PROPERTIES {
      Express devices.</p>
 </dd>
 
-### -field <b>MaxReadRequestSize</b>
+### -field MaxReadRequestSize
 
 <dd>
 <p>The maximum read request size for a PCI Express device. See definitions for
@@ -122,7 +122,7 @@ typedef struct _NDIS_PCI_DEVICE_CUSTOM_PROPERTIES {
      devices..</p>
 </dd>
 
-### -field <b>CurrentLinkSpeed</b>
+### -field CurrentLinkSpeed
 
 <dd>
 <p>The current link speed for the device. This property is applicable to a PCI Express device. See
@@ -130,7 +130,7 @@ typedef struct _NDIS_PCI_DEVICE_CUSTOM_PROPERTIES {
      devices.</p>
 </dd>
 
-### -field <b>CurrentLinkWidth</b>
+### -field CurrentLinkWidth
 
 <dd>
 <p>The current link width of the device. This property is applicable to a PCI express device. See the
@@ -138,14 +138,14 @@ typedef struct _NDIS_PCI_DEVICE_CUSTOM_PROPERTIES {
      devices.</p>
 </dd>
 
-### -field <b>MaxLinkSpeed</b>
+### -field MaxLinkSpeed
 
 <dd>
 <p>The maximum link speed of an express link for a PCI Express device. See the definitions for
      DevProp_PciExpressDevice_LinkSpeed_xxx. This property is valid only for PCI Express devices..</p>
 </dd>
 
-### -field <b>MaxLinkWidth</b>
+### -field MaxLinkWidth
 
 <dd>
 <p>The maximum link width that is implemented by an express link for a PCI Express device. See the
@@ -153,21 +153,21 @@ typedef struct _NDIS_PCI_DEVICE_CUSTOM_PROPERTIES {
      devices.</p>
 </dd>
 
-### -field <b>PciExpressVersion</b>
+### -field PciExpressVersion
 
 <dd>
 <p>The specification version to which an PCI Express device was built. See the definitions for
      DevProp_PciExpressDevice_Spec_Version_xxx. This property is valid only for PCI Express devices.</p>
 </dd>
 
-### -field <b>InterruptType</b>
+### -field InterruptType
 
 <dd>
 <p>The hardware support for interrupts on the PCI Express device. See the definitions for
      DevProp_PciDevice_InterruptType_xxx. This property is valid only for PCI Express devices.</p>
 </dd>
 
-### -field <b>MaxInterruptMessages</b>
+### -field MaxInterruptMessages
 
 <dd>
 <p>The number of message interrupts that a PCI Express device supports in hardware. See the
@@ -231,4 +231,4 @@ typedef struct _NDIS_PCI_DEVICE_CUSTOM_PROPERTIES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PCI_DEVICE_CUSTOM_PROPERTIES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PCI_DEVICE_CUSTOM_PROPERTIES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -59,31 +59,31 @@ VOID SERCX2_SYSTEM_DMA_RECEIVE_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
 <p>A pointer to the <a href="..\sercx\ns-sercx--sercx2-system-dma-receive-config.md">SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</a> structure that is to be initialized.</p>
 </dd>
 
-### -param <i>MaximumTransferLength</i> [in]
+### -param MaximumTransferLength [in]
 
 <dd>
 <p>The value to load into the <b>MaximumTransferLength</b> member of the <b>SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-system-dma-receive-config.md">SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</a>.</p>
 </dd>
 
-### -param <i>Address</i> [in]
+### -param Address [in]
 
 <dd>
 <p>The value to load into the <b>DeviceAddress</b> member of the <b>SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-system-dma-receive-config.md">SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</a>.</p>
 </dd>
 
-### -param <i>DmaWidth</i> [in]
+### -param DmaWidth [in]
 
 <dd>
 <p>The value to load into the <b>DmaWidth</b> member of the <b>SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-system-dma-receive-config.md">SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</a>.</p>
 </dd>
 
-### -param <i>DmaDescriptor</i> [in]
+### -param DmaDescriptor [in]
 
 <dd>
 <p>The value to load into the <b>DmaDescriptor</b> member of the <b>SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-system-dma-receive-config.md">SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</a>.</p>

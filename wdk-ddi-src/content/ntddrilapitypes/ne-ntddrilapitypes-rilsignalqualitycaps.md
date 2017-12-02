@@ -7,7 +7,7 @@ old-location: netvista\rilsignalqualitycaps.htm
 old-project: netvista
 ms.assetid: 5d42e083-d1a9-455a-8511-9aef37908ab7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILSIGNALQUALITYCAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CAPS_SIGNALQUALITY_POLLING"></a><a id="ril_caps_signalquality_polling"></a><b>RIL_CAPS_SIGNALQUALITY_POLLING</b>
+### -field RIL_CAPS_SIGNALQUALITY_POLLING
 
 <dd></dd>
 
-### -field <a id="RIL_CAPS_SIGNALQUALITY_MAX"></a><a id="ril_caps_signalquality_max"></a><b>RIL_CAPS_SIGNALQUALITY_MAX</b>
+### -field RIL_CAPS_SIGNALQUALITY_MAX
 
 <dd></dd>
 </dl>

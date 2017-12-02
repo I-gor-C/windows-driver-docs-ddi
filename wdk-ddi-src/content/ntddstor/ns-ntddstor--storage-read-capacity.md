@@ -58,31 +58,31 @@ typedef struct _STORAGE_READ_CAPACITY {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure. Set to <b>sizeof</b>(STORAGE_READ_CAPACITY).</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure. Set to <b>sizeof</b>(STORAGE_READ_CAPACITY).</p>
 </dd>
 
-### -field <b>BlockLength</b>
+### -field BlockLength
 
 <dd>
 <p>The number of bytes per block on disk.</p>
 </dd>
 
-### -field <b>NumberOfBlocks</b>
+### -field NumberOfBlocks
 
 <dd>
 <p>The total number of blocks on the disk.</p>
 </dd>
 
-### -field <b>DiskLength</b>
+### -field DiskLength
 
 <dd>
 <p>The total disk size in bytes.</p>

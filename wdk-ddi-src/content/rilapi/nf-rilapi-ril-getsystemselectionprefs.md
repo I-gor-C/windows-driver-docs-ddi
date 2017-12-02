@@ -7,7 +7,7 @@ old-location: netvista\ril_getsystemselectionprefs.htm
 old-project: netvista
 ms.assetid: 957892eb-39c5-4675-a3cd-d8f8dd3e7cdd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetSystemSelectionPrefs
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_GetSystemSelectionPrefs(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 </dl>

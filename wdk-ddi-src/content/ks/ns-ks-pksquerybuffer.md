@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Event</b>
+### -field Event
 
 <dd>
 <p>Specifies the description of the original event, with the KSEVENT_TYPE_QUERYBUFFER flag set instead of the KSEVENT_TYPE_ENABLEBUFFERED flag.</p>
 </dd>
 
-### -field <b>EventData</b>
+### -field EventData
 
 <dd>
 <p>A pointer to a <a href="stream.kseventdata">KSEVENTDATA</a> structure. This is the same pointer supplied to <a href="stream.avstrminiaddevent">AVStrMiniAddEvent</a> at event enable time. This pointer is used as the unique identifier in locating the event, just as it is used when disabling the event.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Not used, and set to zero.</p>

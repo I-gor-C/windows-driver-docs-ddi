@@ -54,7 +54,7 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_STREAMINTERFACE_HEADERSIZE"></a><a id="ksproperty_streaminterface_headersize"></a><b>KSPROPERTY_STREAMINTERFACE_HEADERSIZE</b>
+### -field KSPROPERTY_STREAMINTERFACE_HEADERSIZE
 
 <dd>
 <p>Specify to query a pin for the size of the stream header that this pin uses.</p>

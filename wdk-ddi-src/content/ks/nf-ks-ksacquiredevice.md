@@ -54,7 +54,7 @@ void KsAcquireDevice(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>An AVStream device for which synchronous control should be acquired.</p>
@@ -65,7 +65,7 @@ void KsAcquireDevice(
 <p>None</p>
 
 ## -remarks
-<p>For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 ## -requirements
 <table>

@@ -56,13 +56,13 @@ typedef struct _DXVADDI_QUERYEXTENSIONCAPSINPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>pGuid</b>
+### -field pGuid
 
 <dd>
 <p>[in] A pointer to a GUID that represents the extension device type. </p>
 </dd>
 
-### -field <b>CapType</b>
+### -field CapType
 
 <dd>
 <p>[in] A capability type that information is requested for. A capability type can apply to one of the following categories of video acceleration:</p>
@@ -83,7 +83,7 @@ typedef struct _DXVADDI_QUERYEXTENSIONCAPSINPUT {
 <p>Extension capability types can be defined from DXVADDI_EXTENSION_CAPTYPE_MIN (300) to DXVADDI_EXTENSION_CAPTYPE_MAX (400).</p>
 </dd>
 
-### -field <b>pPrivate</b>
+### -field pPrivate
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-privatedata.md">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to retrieve information about the extension capability.</p>

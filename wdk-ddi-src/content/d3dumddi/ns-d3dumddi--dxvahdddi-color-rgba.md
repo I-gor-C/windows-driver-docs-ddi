@@ -57,25 +57,25 @@ typedef struct _DXVAHDDDI_COLOR_RGBA {
 ## -struct-fields
 <dl>
 
-### -field <b>R</b>
+### -field R
 
 <dd>
 <p>[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the red component of the RGB color. </p>
 </dd>
 
-### -field <b>G</b>
+### -field G
 
 <dd>
 <p>[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the green component of the RGB color.</p>
 </dd>
 
-### -field <b>B</b>
+### -field B
 
 <dd>
 <p>[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the blue component of the RGB color.</p>
 </dd>
 
-### -field <b>A</b>
+### -field A
 
 <dd>
 <p>[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the alpha component (that is, the transparency level) of the RGB color.</p>

@@ -56,13 +56,13 @@ NTSTATUS ClfsScanLogContainers(
 ## -parameters
 <dl>
 
-### -param <i>pcxScan</i> [in, out]
+### -param pcxScan [in, out]
 
 <dd>
 <p>A pointer to a <a href="kernel.clfs_scan_context">CLFS_SCAN_CONTEXT</a> structure. The caller previously allocated the structure and initialized it by calling <a href="..\wdm\nf-wdm-clfscreatescancontext.md">ClfsCreateScanContext</a>. In particular, the <b>pInfoContainer</b> member was initialized to point to an array of <a href="kernel.clfs_container_information">CLFS_CONTAINER_INFORMATION</a> structures, and the <b>cContainers</b> member was initialized to the number of elements in the array. On return, the structures in the array receive descriptive information for the containers in the sequence.</p>
 </dd>
 
-### -param <i>eScanMode</i> [in]
+### -param eScanMode [in]
 
 <dd>
 <p>A set of flags that specify the direction of the scan and whether the scan context should be closed. The following flags are available to callers of this routine.</p>

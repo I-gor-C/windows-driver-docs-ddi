@@ -55,13 +55,13 @@ typedef struct tagKS_AMVPSIZE {
 ## -struct-fields
 <dl>
 
-### -field <b>dwWidth</b>
+### -field dwWidth
 
 <dd>
 <p>Specifies the width of the video port, in pixels.</p>
 </dd>
 
-### -field <b>dwHeight</b>
+### -field dwHeight
 
 <dd>
 <p>Specifies the height of the video port, in pixels.</p>

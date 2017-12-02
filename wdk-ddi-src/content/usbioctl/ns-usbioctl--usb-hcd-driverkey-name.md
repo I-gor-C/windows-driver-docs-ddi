@@ -56,13 +56,13 @@ typedef struct _USB_HCD_DRIVERKEY_NAME {
 ## -struct-fields
 <dl>
 
-### -field <b>ActualLength</b>
+### -field ActualLength
 
 <dd>
 <p>The length, in bytes, of the string in the <b>DriverKeyName</b> member.</p>
 </dd>
 
-### -field <b>DriverKeyName</b>
+### -field DriverKeyName
 
 <dd>
 <p>A NULL-terminated Unicode driver key name for the USB host controller.</p>

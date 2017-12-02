@@ -60,37 +60,37 @@ typedef struct _OSVERSIONINFOW {
 ## -struct-fields
 <dl>
 
-### -field <b>dwOSVersionInfoSize</b>
+### -field dwOSVersionInfoSize
 
 <dd>
 <p>The size in bytes of an <b>RTL_OSVERSIONINFOW</b> structure. This member must be set before the structure is used with <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>.</p>
 </dd>
 
-### -field <b>dwMajorVersion</b>
+### -field dwMajorVersion
 
 <dd>
 <p>The major version number of the operating system. For example, for Windows 2000, the major version number is five. For more information, see <a href="kernel.rtl_osversioninfoexw">RTL_OSVERSIONINFOEXW</a>.</p>
 </dd>
 
-### -field <b>dwMinorVersion</b>
+### -field dwMinorVersion
 
 <dd>
 <p>The minor version number of the operating system. For example, for Windows 2000 the minor version number is zero. For more information, see <a href="kernel.rtl_osversioninfoexw">RTL_OSVERSIONINFOEXW</a>. </p>
 </dd>
 
-### -field <b>dwBuildNumber</b>
+### -field dwBuildNumber
 
 <dd>
 <p>The build number of the operating system.</p>
 </dd>
 
-### -field <b>dwPlatformId</b>
+### -field dwPlatformId
 
 <dd>
 <p>The operating system platform. For Microsoft Win32 on NT-based operating systems, <b>RtlGetVersion</b> returns the value VER_PLATFORM_WIN32_NT.</p>
 </dd>
 
-### -field <b>szCSDVersion</b>
+### -field szCSDVersion
 
 <dd>
 <p>The service-pack version string. This member contains a null-terminated string, such as "Service Pack 3", which indicates the latest service pack installed on the system. If no service pack is installed, <b>RtlGetVersion</b> might not initialize this string. Initialize <i>szCSDVersion</i> to zero (empty string) before the call to <b>RtlGetVersion</b>.</p>

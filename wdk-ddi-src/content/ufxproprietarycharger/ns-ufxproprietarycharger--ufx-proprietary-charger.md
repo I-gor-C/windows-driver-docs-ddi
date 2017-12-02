@@ -56,13 +56,13 @@ typedef struct _UFX_PROPRIETARY_CHARGER {
 ## -struct-fields
 <dl>
 
-### -field <b>ChargerId</b>
+### -field ChargerId
 
 <dd>
 <p>Charger identifier used to identify a specific type of charger.</p>
 </dd>
 
-### -field <b>DxState</b>
+### -field DxState
 
 <dd>
 <p>The minimum required device power state when it is connected, indicated by one of the <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a>-typed flags.</p>

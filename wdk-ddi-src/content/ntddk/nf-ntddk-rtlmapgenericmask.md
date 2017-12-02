@@ -55,13 +55,13 @@ VOID RtlMapGenericMask(
 ## -parameters
 <dl>
 
-### -param <i>AccessMask</i> [in, out]
+### -param AccessMask [in, out]
 
 <dd>
 <p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> variable. The routine updates this to contain only those access rights that are not also granted by any GENERIC_<i>XXX</i> access rights originally specified the variable. The routine also clears any GENERIC_<i>XXX</i> bits that are set. </p>
 </dd>
 
-### -param <i>GenericMapping</i> [in]
+### -param GenericMapping [in]
 
 <dd>
 <p>Pointer to a <a href="..\wdm\ns-wdm--generic-mapping.md">GENERIC_MAPPING</a> structure that describes the specific access rights that correspond to each generic access right. </p>

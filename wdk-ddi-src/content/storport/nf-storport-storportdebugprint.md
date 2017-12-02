@@ -56,13 +56,13 @@ VOID StorPortDebugPrint(
 ## -parameters
 <dl>
 
-### -param <i>DebugPrintLevel</i> 
+### -param DebugPrintLevel 
 
 <dd>
 <p>Indicates the amount of debug information that will be displayed. </p>
 </dd>
 
-### -param <i>DebugMessage</i> 
+### -param DebugMessage 
 
 <dd>
 <p>Pointer to the debug message to be printed. </p>

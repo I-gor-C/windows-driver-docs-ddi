@@ -57,25 +57,25 @@ typedef struct _SM_SendCTPassThru_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>HbaPortWWN</b>
+### -field HbaPortWWN
 
 <dd>
 <p>The HBA port worldwide name (WWN) to which pass-through commands will be sent.</p>
 </dd>
 
-### -field <b>InRespBufferMaxSize</b>
+### -field InRespBufferMaxSize
 
 <dd>
 <p>The maximum response buffer size.</p>
 </dd>
 
-### -field <b>ReqBufferSize</b>
+### -field ReqBufferSize
 
 <dd>
 <p>The size, in bytes, of the buffer that will hold the results of the common transport command.</p>
 </dd>
 
-### -field <b>ReqBuffer</b>
+### -field ReqBuffer
 
 <dd></dd>
 </dl>

@@ -54,7 +54,7 @@ VOID IoFreeController(
 ## -parameters
 <dl>
 
-### -param <i>ControllerObject</i> [in]
+### -param ControllerObject [in]
 
 <dd>
 <p>Pointer to the driver's controller object, which was allocated for the current I/O operation on a particular device by calling <b>IoAllocateController</b>. </p>

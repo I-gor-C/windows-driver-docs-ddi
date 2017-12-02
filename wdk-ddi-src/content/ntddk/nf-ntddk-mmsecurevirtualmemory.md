@@ -56,19 +56,19 @@ HANDLE MmSecureVirtualMemory(
 ## -parameters
 <dl>
 
-### -param <i>Address</i> [in]
+### -param Address [in]
 
 <dd>
 <p>The beginning of the user virtual address range to secure.</p>
 </dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>The size, in bytes, of the virtual address range to secure.</p>
 </dd>
 
-### -param <i>ProbeMode</i> [in]
+### -param ProbeMode [in]
 
 <dd>
 <p>The most restrictive protection type that is allowed. Use PAGE_READWRITE to specify that address range must remain both readable and writable, or use PAGE_READONLY to specify the address range must only remain readable.</p>

@@ -55,13 +55,13 @@ typedef struct D3DDDIARG_TRIMRESIDENCYSET {
 ## -struct-fields
 <dl>
 
-### -field <b>TrimFlags</b>
+### -field TrimFlags
 
 <dd>
 <p>The trimming behavior flags.</p>
 </dd>
 
-### -field <b>NumBytesToTrim</b>
+### -field NumBytesToTrim
 
 <dd>
 <p>When <b>TrimToBudget</b> is set, this value specifies how much the application should evict in order to meet its current memory budget.</p>

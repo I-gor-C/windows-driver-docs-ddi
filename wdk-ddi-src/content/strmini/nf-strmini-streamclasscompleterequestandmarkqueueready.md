@@ -55,7 +55,7 @@ VOID StreamClassCompleteRequestAndMarkQueueReady(
 ## -parameters
 <dl>
 
-### -param <i>Srb</i> [in]
+### -param Srb [in]
 
 <dd>
 <p>Pointer to the <a href="..\strmini\ns-strmini--hw-stream-request-block.md">HW_STREAM_REQUEST_BLOCK</a> that the minidriver has completed processing.</p>

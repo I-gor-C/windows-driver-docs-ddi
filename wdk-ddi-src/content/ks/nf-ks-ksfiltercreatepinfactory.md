@@ -56,19 +56,19 @@ NTSTATUS KsFilterCreatePinFactory(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure for which to create a new pin factory.</p>
 </dd>
 
-### -param <i>PinDescriptor</i> [in]
+### -param PinDescriptor [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--kspin-descriptor-ex.md">KSPIN_DESCRIPTOR_EX</a> structure that describes the pins this factory will create.</p>
 </dd>
 
-### -param <i>PinID</i> [out]
+### -param PinID [out]
 
 <dd>
 <p>A pointer to the location containing the ID of the new factory.</p>
@@ -79,7 +79,7 @@ NTSTATUS KsFilterCreatePinFactory(
 <p><b>KsFilterCreatePinFactory</b> returns the success or failure of the attempt to create the pin factory. Failure may occur due to invalid parameters or low memory.</p>
 
 ## -remarks
-<p>Note that the filter control mutex must be held before calling this function. For more information, see <a href="NULL">Mutexes in AVStream</a>. </p>
+<p>Note that the filter control mutex must be held before calling this function. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>. </p>
 
 ## -requirements
 <table>

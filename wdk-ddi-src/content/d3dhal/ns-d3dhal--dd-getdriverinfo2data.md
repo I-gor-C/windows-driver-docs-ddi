@@ -60,13 +60,13 @@ typedef struct _DD_GETDRIVERINFO2DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Specifies a reserved field. Driver should not read or write.</p>
 </dd>
 
-### -field <b>dwMagic</b>
+### -field dwMagic
 
 <dd>
 <p>Specifies the magic number. Has the value 
@@ -77,7 +77,7 @@ typedef struct _DD_GETDRIVERINFO2DATA {
 	  call.</p>
 </dd>
 
-### -field <b>dwType</b>
+### -field dwType
 
 <dd>
 <p>Specifies the type of information requested, which can contain one of the following D3DGDI2_TYPE_<i>Xxx</i> 
@@ -296,7 +296,7 @@ typedef struct _DD_GETDRIVERINFO2DATA {
 <p> </p>
 </dd>
 
-### -field <b>dwExpectedSize</b>
+### -field dwExpectedSize
 
 <dd>
 <p>Specifies the expected size, in bytes, of the information requested. Driver should only read (not write) this member.</p>

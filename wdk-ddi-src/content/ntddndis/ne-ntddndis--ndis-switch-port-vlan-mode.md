@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_port_vlan_mode.htm
 old-project: netvista
 ms.assetid: 87828768-BE97-4549-AC5B-7CB27D0A9720
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT, *PGET_CONFIGURATION_IOCTL_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="NdisSwitchPortVlanModeUnknown"></a><a id="ndisswitchportvlanmodeunknown"></a><a id="NDISSWITCHPORTVLANMODEUNKNOWN"></a><b>NdisSwitchPortVlanModeUnknown</b>
+### -field NdisSwitchPortVlanModeUnknown
 
 <dd>
 <p>This value specifies an undefined VLAN operation mode.</p>
 </dd>
 
-### -field <a id="NdisSwitchPortVlanModeAccess"></a><a id="ndisswitchportvlanmodeaccess"></a><a id="NDISSWITCHPORTVLANMODEACCESS"></a><b>NdisSwitchPortVlanModeAccess</b>
+### -field NdisSwitchPortVlanModeAccess
 
 <dd>
 <p>This value specifies an operation mode in which packets from a single VLAN can be sent or received over the port. These packets can be forwarded from other ports on the extensible switch.</p>
 </dd>
 
-### -field <a id="NdisSwitchPortVlanModeTrunk"></a><a id="ndisswitchportvlanmodetrunk"></a><a id="NDISSWITCHPORTVLANMODETRUNK"></a><b>NdisSwitchPortVlanModeTrunk</b>
+### -field NdisSwitchPortVlanModeTrunk
 
 <dd>
 <p>This value specifies an operation mode where the port acts as a VLAN trunk. In this mode, packets from multiple VLANs as well as non-VLAN packets can be sent or received over the port. These packets can be forwarded from other ports on the extensible switch.</p>
 </dd>
 
-### -field <a id="NdisSwitchPortVlanModePrivate"></a><a id="ndisswitchportvlanmodeprivate"></a><a id="NDISSWITCHPORTVLANMODEPRIVATE"></a><b>NdisSwitchPortVlanModePrivate</b>
+### -field NdisSwitchPortVlanModePrivate
 
 <dd>
 <p>This value specifies an operation mode where packets from a single VLAN can be sent or received over the port. These packets cannot be forwarded from other ports on the extensible switch.</p>
 </dd>
 
-### -field <a id="NdisSwitchPortVlanModeMax"></a><a id="ndisswitchportvlanmodemax"></a><a id="NDISSWITCHPORTVLANMODEMAX"></a><b>NdisSwitchPortVlanModeMax</b>
+### -field NdisSwitchPortVlanModeMax
 
 <dd>
 <p>The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.
@@ -99,7 +99,7 @@ typedef enum  {
 
 </p>
 
-<p>For more information about extensible switch port policies, see <a href="NULL">Hyper-V Extensible Switch Policies</a>.
+<p>For more information about extensible switch port policies, see <a href="netvista.hyper_v_extensible_switch_policies">Hyper-V Extensible Switch Policies</a>.
 
 </p>
 
@@ -137,4 +137,4 @@ typedef enum  {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_VLAN_MODE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_VLAN_MODE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

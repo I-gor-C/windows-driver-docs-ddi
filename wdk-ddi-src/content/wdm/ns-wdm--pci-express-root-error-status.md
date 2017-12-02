@@ -66,61 +66,61 @@ typedef union _PCI_EXPRESS_ROOT_ERROR_STATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>CorrectableErrorReceived</b>
+### -field CorrectableErrorReceived
 
 <dd>
 <p>A single bit that indicates that a correctable error message has been received.</p>
 </dd>
 
-### -field <b>MultipleCorrectableErrorsReceived</b>
+### -field MultipleCorrectableErrorsReceived
 
 <dd>
 <p>A single bit that indicates that multiple correctable error messages have been received.</p>
 </dd>
 
-### -field <b>UncorrectableErrorReceived</b>
+### -field UncorrectableErrorReceived
 
 <dd>
 <p>A single bit that indicates that an uncorrectable error message has been received.</p>
 </dd>
 
-### -field <b>MultipleUncorrectableErrorsReceived</b>
+### -field MultipleUncorrectableErrorsReceived
 
 <dd>
 <p>A single bit that indicates that multiple uncorrectable error messages have been received.</p>
 </dd>
 
-### -field <b>FirstUncorrectableFatal</b>
+### -field FirstUncorrectableFatal
 
 <dd>
 <p>A single bit that indicates that the first uncorrectable error message that was received was for a fatal error.</p>
 </dd>
 
-### -field <b>NonFatalErrorMessagesReceived</b>
+### -field NonFatalErrorMessagesReceived
 
 <dd>
 <p>A single bit that indicates that one or more non-fatal uncorrectable error messages have been received.</p>
 </dd>
 
-### -field <b>FatalErrorMessagesReceived</b>
+### -field FatalErrorMessagesReceived
 
 <dd>
 <p>A single bit that indicates that one or more non-fatal uncorrectable error messages have been received.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AdvancedErrorInterruptMessageNumber</b>
+### -field AdvancedErrorInterruptMessageNumber
 
 <dd>
 <p>The MSI/MSI-X vector that is used for the interrupt messages that are generated in association with any of the status bits of the advanced error reporting capability.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_ROOT_ERROR_STATUS structure.</p>

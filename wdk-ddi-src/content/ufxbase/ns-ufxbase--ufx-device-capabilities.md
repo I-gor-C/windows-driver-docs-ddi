@@ -60,37 +60,37 @@ typedef struct _UFX_DEVICE_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of the <b>UFX_DEVICE_CAPABILITIES</b> structure.</p>
 </dd>
 
-### -field <b>MaxSpeed</b>
+### -field MaxSpeed
 
 <dd>
 <p>Indicates the maximum USB speed supported by the device.</p>
 </dd>
 
-### -field <b>RemoteWakeSignalDelay</b>
+### -field RemoteWakeSignalDelay
 
 <dd>
 <p>The minimum time interval in milliseconds to wait after being suspended before requesting remote wakeup.</p>
 </dd>
 
-### -field <b>PdcpSupported</b>
+### -field PdcpSupported
 
 <dd>
 <p>If  <b>true</b>, indicates the client driver supports proprietary charger detection.</p>
 </dd>
 
-### -field <b>InEndpointBitmap</b>
+### -field InEndpointBitmap
 
 <dd>
 <p>A bitmap that defines which endpoint numbers can support an IN endpoint.  Bit 0 indicates endpoint address 0, bit 1 indicates endpoint address 1, etc.   Bit 0 (the default control endpoint) is required to be set to 1.</p>
 </dd>
 
-### -field <b>OutEndpointBitmap</b>
+### -field OutEndpointBitmap
 
 <dd>
 <p>A bitmap that defines which endpoint numbers can support an OUT endpoint.  Bit 0 indicates endpoint address 0, bit 1 indicates endpoint address 1, etc.   Bit 0 (the default control endpoint) is required to be set to 1.</p>

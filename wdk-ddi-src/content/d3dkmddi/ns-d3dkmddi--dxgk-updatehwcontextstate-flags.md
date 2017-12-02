@@ -61,25 +61,25 @@ typedef struct _DXGK_UPDATEHWCONTEXTSTATE_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Suspended</b>
+### -field Suspended
 
 <dd>
 <p>Used to suspend the context. Otherwise, the context is runnable.</p>
 </dd>
 
-### -field <b>InterruptOnSwitchCompletion</b>
+### -field InterruptOnSwitchCompletion
 
 <dd>
 <p>Used when the context state update is effective on the GPU.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>Used to operate over the rest of values.</p>

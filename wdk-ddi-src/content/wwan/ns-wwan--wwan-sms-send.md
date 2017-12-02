@@ -7,7 +7,7 @@ old-location: netvista\wwan_sms_send.htm
 old-project: netvista
 ms.assetid: 2d2e5d13-56ca-452c-86fd-4a48b11d53ab
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_SMS_SEND, WWAN_SMS_SEND, *PWWAN_SMS_SEND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ typedef struct _WWAN_SMS_SEND {
 ## -struct-fields
 <dl>
 
-### -field <b>SmsFormat</b>
+### -field SmsFormat
 
 <dd>
 <p>The format of the SMS text message.</p>
 </dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <p>Container union for the different SMS formats.</p>
 <dl>
 
-### -field <b>Pdu</b>
+### -field Pdu
 
 <dd>
 <p>Short message data types to be used depending on the value of 
@@ -102,7 +102,7 @@ typedef struct _WWAN_SMS_SEND {
 <p> </p>
 </dd>
 
-### -field <b>Cdma</b>
+### -field Cdma
 
 <dd>
 <p>Short message data types to be used depending on the value of 
@@ -175,4 +175,4 @@ typedef struct _WWAN_SMS_SEND {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_SEND structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_SEND structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

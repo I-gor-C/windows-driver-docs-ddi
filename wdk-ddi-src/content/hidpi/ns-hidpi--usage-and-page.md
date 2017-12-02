@@ -55,13 +55,13 @@ typedef struct _USAGE_AND_PAGE {
 ## -struct-fields
 <dl>
 
-### -field <b>Usage</b>
+### -field Usage
 
 <dd>
 <p>Specifies a usage ID within the usage page specified by <b>UsagePage</b>.</p>
 </dd>
 
-### -field <b>UsagePage</b>
+### -field UsagePage
 
 <dd>
 <p>Specifies a usage page.</p>
@@ -103,7 +103,7 @@ typedef struct _USAGE_AND_PAGE {
 
 <p>As defined by the USB HID standard, an extended usage is a 32-bit unsigned value. The high-order 16 bits specify the <a href="hid.hid_usages#usage_page#usage_page">usage page</a>, and lower-order 16 bits specify the <a href="hid.hid_usages#usage_id#usage_id">usage ID</a>.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

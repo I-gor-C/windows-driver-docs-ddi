@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>QuietCompression</b>
+### -field QuietCompression
 
 <dd>
 <p>Specifies the compression level for soft sounds. This value ranges from 0 to 100 percent (represented as 0xFFFFFFFF) of the linear range compression for soft sounds. The higher this value, the higher the volume of soft sounds.</p>
 </dd>
 
-### -field <b>LoudCompression</b>
+### -field LoudCompression
 
 <dd>
 <p>Specifies the compression level for loud sounds. This value ranges from 0 to 100 percent (represented as 0xFFFFFFFF) of the linear range compression for loud sounds. The higher this value, the lower the volume of loud sounds.</p>

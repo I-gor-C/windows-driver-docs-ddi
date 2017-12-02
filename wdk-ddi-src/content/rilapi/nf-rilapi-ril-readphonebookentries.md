@@ -7,7 +7,7 @@ old-location: netvista\ril_readphonebookentries.htm
 old-project: netvista
 ms.assetid: 3da05f28-a6de-4dad-a978-0439f3244bbb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_ReadPhonebookEntries
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,27 +62,27 @@ HRESULT  RIL_ReadPhonebookEntries(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>hUiccApp</i> 
+### -param hUiccApp 
 
 <dd></dd>
 
-### -param <i>dwStoreLocation</i> 
+### -param dwStoreLocation 
 
 <dd></dd>
 
-### -param <i>dwStartIndex</i> 
+### -param dwStartIndex 
 
 <dd></dd>
 
-### -param <i>dwEndIndex</i> 
+### -param dwEndIndex 
 
 <dd></dd>
 </dl>

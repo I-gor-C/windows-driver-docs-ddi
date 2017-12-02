@@ -58,14 +58,14 @@ NTSTATUS SdpAppendNodeToContainerNode(
 ## -parameters
 <dl>
 
-### -param <i>Parent</i> [in]
+### -param Parent [in]
 
 <dd>
 <p>The SDP sequence or alternative node to which the 
      <b>SdpAppendNodeToContainerNode</b> function adds the child node.</p>
 </dd>
 
-### -param <i>Child</i> [in]
+### -param Child [in]
 
 <dd>
 <p>The SDP node to add to the parent node.</p>

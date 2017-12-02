@@ -7,7 +7,7 @@ old-location: ifsk\rxfinalizenetfcb.htm
 old-project: ifsk
 ms.assetid: 1eed44e2-f9ed-45a1-a5fa-dbf6a9c7c703
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxFinalizeNetFcb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,26 +58,26 @@ BOOLEAN RxFinalizeNetFcb(
 ## -parameters
 <dl>
 
-### -param <i>ThisFcb</i> [out]
+### -param ThisFcb [out]
 
 <dd>
 <p>A pointer to the FCB structure to finalize.</p>
 </dd>
 
-### -param <i>RecursiveFinalize</i> [in]
+### -param RecursiveFinalize [in]
 
 <dd>
 <p>The value indicating whether the finalization should be done recursively. </p>
 </dd>
 
-### -param <i>ForceFinalize</i> [in]
+### -param ForceFinalize [in]
 
 <dd>
 <p>The value indicating whether the finalization should be forced, regardless of the reference count. </p>
 <p>If this parameter is <b>FALSE</b>, then the <b>NodeReferenceCount</b> member of the FCB must be 1 for the FCB to be finalized. </p>
 </dd>
 
-### -param <i>ReferenceCount</i> [in]
+### -param ReferenceCount [in]
 
 <dd>
 <p>The reference count on the FCB that will still allow forced finalization.</p>
@@ -203,4 +203,4 @@ BOOLEAN RxFinalizeNetFcb(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxFinalizeNetFCB function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxFinalizeNetFCB function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

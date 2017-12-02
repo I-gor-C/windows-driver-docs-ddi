@@ -54,7 +54,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTMakeResident(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-makeresident.md">D3DDDI_MAKERESIDENT</a> structure that describes the operation.</p>

@@ -58,19 +58,19 @@ HRESULT IBidiRequest::GetOutputData(
 ## -parameters
 <dl>
 
-### -param <i>dwIndex</i> [in]
+### -param dwIndex [in]
 
 <dd>
 <p>A zero-based index of the output data that is requested. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>ppszSchema</i> [out]
+### -param ppszSchema [out]
 
 <dd>
 <p>A pointer to a NULL-terminated string that receives the schema string. The caller must call the <a href="_com_cotaskmemfree">CoTaskMemFree</a> function to free this pointer.</p>
 </dd>
 
-### -param <i>pdwType</i> [out]
+### -param pdwType [out]
 
 <dd>
 <p>A pointer to a variable that receives the type of the output data. This parameter can be one of the following values.</p>
@@ -82,7 +82,7 @@ HRESULT IBidiRequest::GetOutputData(
 <tr>
 <td width="40%"><a id="BIDI_NULL"></a><a id="bidi_null"></a><dl>
 
-### -param <b>BIDI_NULL</b>
+### -param BIDI_NULL
 
 </dl>
 </td>
@@ -93,7 +93,7 @@ HRESULT IBidiRequest::GetOutputData(
 <tr>
 <td width="40%"><a id="BIDI_INT"></a><a id="bidi_int"></a><dl>
 
-### -param <b>BIDI_INT</b>
+### -param BIDI_INT
 
 </dl>
 </td>
@@ -104,7 +104,7 @@ HRESULT IBidiRequest::GetOutputData(
 <tr>
 <td width="40%"><a id="BIDI_FLOAT"></a><a id="bidi_float"></a><dl>
 
-### -param <b>BIDI_FLOAT</b>
+### -param BIDI_FLOAT
 
 </dl>
 </td>
@@ -115,7 +115,7 @@ HRESULT IBidiRequest::GetOutputData(
 <tr>
 <td width="40%"><a id="BIDI_BOOL"></a><a id="bidi_bool"></a><dl>
 
-### -param <b>BIDI_BOOL</b>
+### -param BIDI_BOOL
 
 </dl>
 </td>
@@ -126,7 +126,7 @@ HRESULT IBidiRequest::GetOutputData(
 <tr>
 <td width="40%"><a id="BIDI_STRING"></a><a id="bidi_string"></a><dl>
 
-### -param <b>BIDI_STRING</b>
+### -param BIDI_STRING
 
 </dl>
 </td>
@@ -137,7 +137,7 @@ HRESULT IBidiRequest::GetOutputData(
 <tr>
 <td width="40%"><a id="BIDI_TEXT"></a><a id="bidi_text"></a><dl>
 
-### -param <b>BIDI_TEXT</b>
+### -param BIDI_TEXT
 
 </dl>
 </td>
@@ -148,7 +148,7 @@ HRESULT IBidiRequest::GetOutputData(
 <tr>
 <td width="40%"><a id="BIDI_ENUM"></a><a id="bidi_enum"></a><dl>
 
-### -param <b>BIDI_ENUM</b>
+### -param BIDI_ENUM
 
 </dl>
 </td>
@@ -159,7 +159,7 @@ HRESULT IBidiRequest::GetOutputData(
 <tr>
 <td width="40%"><a id="BIDI_BLOB"></a><a id="bidi_blob"></a><dl>
 
-### -param <b>BIDI_BLOB</b>
+### -param BIDI_BLOB
 
 </dl>
 </td>
@@ -171,13 +171,13 @@ HRESULT IBidiRequest::GetOutputData(
 <p> </p>
 </dd>
 
-### -param <i>ppData</i> [out]
+### -param ppData [out]
 
 <dd>
 <p>A pointer to the variable that receives a pointer to the byte array containing the output data. The buffer is allocated by the COM interface to store the output data. The caller is responsible for calling <a href="_com_cotaskmemfree">CoTaskMemFree</a> to free the buffer.</p>
 </dd>
 
-### -param <i>uSize</i> [out]
+### -param uSize [out]
 
 <dd>
 <p>A pointer to a variable that receives the size of the byte array specified by **ppData.</p>

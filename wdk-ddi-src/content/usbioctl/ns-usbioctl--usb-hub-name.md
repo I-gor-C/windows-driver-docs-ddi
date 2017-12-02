@@ -56,13 +56,13 @@ typedef struct _USB_HUB_NAME {
 ## -struct-fields
 <dl>
 
-### -field <b>ActualLength</b>
+### -field ActualLength
 
 <dd>
 <p>The size of the Unicode string pointed to by <b>HubName</b>.  The <b>ActualLength</b> value indicates the length of the string and not the entire structure.</p>
 </dd>
 
-### -field <b>HubName</b>
+### -field HubName
 
 <dd>
 <p>A NULL-terminated Unicode string that contains the hub's symbolic device name.</p>

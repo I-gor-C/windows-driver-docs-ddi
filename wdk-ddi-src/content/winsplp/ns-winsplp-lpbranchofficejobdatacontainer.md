@@ -56,13 +56,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>cJobDataEntries</b>
+### -field cJobDataEntries
 
 <dd>
 <p>Describes the <b>DWORD</b> type member <b>cJobDataEntries</b>.</p>
 </dd>
 
-### -field <b>JobData</b>
+### -field JobData
 
 <dd>
 <p>Describes the <b>BranchOfficeJobData</b> type member <b>JobData</b>.</p>

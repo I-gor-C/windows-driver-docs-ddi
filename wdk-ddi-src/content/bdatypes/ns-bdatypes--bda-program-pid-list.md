@@ -56,19 +56,19 @@ typedef struct _BDA_PROGRAM_PID_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>ulProgramNumber</b>
+### -field ulProgramNumber
 
 <dd>
 <p>Number of the program to be viewed. </p>
 </dd>
 
-### -field <b>ulcPIDs</b>
+### -field ulcPIDs
 
 <dd>
 <p>Number of PIDs in the <b>ulPID</b> array. </p>
 </dd>
 
-### -field <b>ulPID</b>
+### -field ulPID
 
 <dd>
 <p>Array of PIDs that identify packets of program data. </p>

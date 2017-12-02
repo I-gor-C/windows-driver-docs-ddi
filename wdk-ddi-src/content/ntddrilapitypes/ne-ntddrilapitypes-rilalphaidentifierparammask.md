@@ -7,7 +7,7 @@ old-location: netvista\rilalphaidentifierparammask.htm
 old-project: netvista
 ms.assetid: 33f51fb2-3308-4e24-925a-b17e117b18b6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILALPHAIDENTIFIERPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_AI_REASON"></a><a id="ril_param_ai_reason"></a><b>RIL_PARAM_AI_REASON</b>
+### -field RIL_PARAM_AI_REASON
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_AI_ALL"></a><a id="ril_param_ai_all"></a><b>RIL_PARAM_AI_ALL</b>
+### -field RIL_PARAM_AI_ALL
 
 <dd></dd>
 </dl>

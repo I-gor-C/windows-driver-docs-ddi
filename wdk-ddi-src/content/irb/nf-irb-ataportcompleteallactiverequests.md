@@ -57,25 +57,25 @@ VOID AtaPortCompleteAllActiveRequests(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the channel extension.</p>
 </dd>
 
-### -param <i>Target</i> [in]
+### -param Target [in]
 
 <dd>
 <p>Specifies the target identifier of the device.</p>
 </dd>
 
-### -param <i>Lun</i> [in]
+### -param Lun [in]
 
 <dd>
 <p>Specifies the logical unit number of the device.</p>
 </dd>
 
-### -param <i>IrbStatus</i> [in]
+### -param IrbStatus [in]
 
 <dd>
 <p>Specifies the status with which the requests will be completed.</p>

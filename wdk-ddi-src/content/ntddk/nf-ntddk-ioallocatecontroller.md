@@ -57,19 +57,19 @@ VOID IoAllocateController(
 ## -parameters
 <dl>
 
-### -param <i>ControllerObject</i> [in]
+### -param ControllerObject [in]
 
 <dd>
 <p>Pointer to a driver-created controller object, usually representing a physical controller to be allocated for an I/O operation on an attached device.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object, representing the target device of the current IRP.</p>
 </dd>
 
-### -param <i>ExecutionRoutine</i> [in]
+### -param ExecutionRoutine [in]
 
 <dd>
 <dl>
@@ -79,7 +79,7 @@ VOID IoAllocateController(
 </dl>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Pointer to a driver-determined context, passed to the driver's <i>ControllerControl</i> routine when it is called. </p>

@@ -61,19 +61,19 @@ typedef PFNDRMADDCONTENTHANDLERS DRMAddContentHandlers;
 ## -parameters
 <dl>
 
-### -param <i>ContentId</i> [in]
+### -param ContentId [in]
 
 <dd>
 <p>This parameter is reserved for system use.</p>
 </dd>
 
-### -param <i>paHandlers</i> [in]
+### -param paHandlers [in]
 
 <dd>
 <p>This parameter is reserved for system use.</p>
 </dd>
 
-### -param <i>NumHandlers</i> [in]
+### -param NumHandlers [in]
 
 <dd>
 <p>This parameter is reserved for system use.</p>

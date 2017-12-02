@@ -59,15 +59,15 @@ VOID APIENTRY CALLBACK* DxgkCbCompletePStateTransition(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd></dd>
 
-### -param <i>ComponentIndex</i> [in]
+### -param ComponentIndex [in]
 
 <dd></dd>
 
-### -param <i>CompletedPState</i> [in]
+### -param CompletedPState [in]
 
 <dd></dd>
 </dl>

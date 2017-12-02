@@ -64,69 +64,69 @@ typedef struct _WHEA_PCIXBUS_ERROR_SECTION {
 ## -struct-fields
 <dl>
 
-### -field <b>ValidBits</b>
+### -field ValidBits
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-pcixbus-error-section-validbits.md">WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.</p>
 </dd>
 
-### -field <b>ErrorStatus</b>
+### -field ErrorStatus
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-error-status.md">WHEA_ERROR_STATUS</a> structure that contains PCI or PCI-X bus error status data.</p>
 <p>This member contains valid data only if the <b>ValidBits.ErrorStatus</b> bit is set.</p>
 </dd>
 
-### -field <b>ErrorType</b>
+### -field ErrorType
 
 <dd>
 <p>The type of PCI or PCI-X bus error that occurred. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="PCIXBUS_ERRTYPE_UNKNOWN"></a><a id="pcixbus_errtype_unknown"></a>PCIXBUS_ERRTYPE_UNKNOWN
+### -field PCIXBUS_ERRTYPE_UNKNOWN
 
 <dd>
 <p>An unknown or platform-specific error.</p>
 </dd>
 
-### -field <a id="PCIXBUS_ERRTYPE_DATAPARITY"></a><a id="pcixbus_errtype_dataparity"></a>PCIXBUS_ERRTYPE_DATAPARITY
+### -field PCIXBUS_ERRTYPE_DATAPARITY
 
 <dd>
 <p>A data parity error.</p>
 </dd>
 
-### -field <a id="PCIXBUS_ERRTYPE_SYSTEM"></a><a id="pcixbus_errtype_system"></a>PCIXBUS_ERRTYPE_SYSTEM
+### -field PCIXBUS_ERRTYPE_SYSTEM
 
 <dd>
 <p>A system error.</p>
 </dd>
 
-### -field <a id="PCIXBUS_ERRTYPE_MASTERABORT"></a><a id="pcixbus_errtype_masterabort"></a>PCIXBUS_ERRTYPE_MASTERABORT
+### -field PCIXBUS_ERRTYPE_MASTERABORT
 
 <dd>
 <p>A master abort.</p>
 </dd>
 
-### -field <a id="PCIXBUS_ERRTYPE_BUSTIMEOUT"></a><a id="pcixbus_errtype_bustimeout"></a>PCIXBUS_ERRTYPE_BUSTIMEOUT
+### -field PCIXBUS_ERRTYPE_BUSTIMEOUT
 
 <dd>
 <p>A bus timeout, or no device is present.</p>
 </dd>
 
-### -field <a id="PCIXBUS_ERRTYPE_MASTERDATAPARITY"></a><a id="pcixbus_errtype_masterdataparity"></a>PCIXBUS_ERRTYPE_MASTERDATAPARITY
+### -field PCIXBUS_ERRTYPE_MASTERDATAPARITY
 
 <dd>
 <p>A master data parity error.</p>
 </dd>
 
-### -field <a id="PCIXBUS_ERRTYPE_ADDRESSPARITY"></a><a id="pcixbus_errtype_addressparity"></a>PCIXBUS_ERRTYPE_ADDRESSPARITY
+### -field PCIXBUS_ERRTYPE_ADDRESSPARITY
 
 <dd>
 <p>An address parity error.</p>
 </dd>
 
-### -field <a id="PCIXBUS_ERRTYPE_COMMANDPARITY"></a><a id="pcixbus_errtype_commandparity"></a>PCIXBUS_ERRTYPE_COMMANDPARITY
+### -field PCIXBUS_ERRTYPE_COMMANDPARITY
 
 <dd>
 <p>A command parity error.</p>
@@ -135,7 +135,7 @@ typedef struct _WHEA_PCIXBUS_ERROR_SECTION {
 <p>This member contains valid data only if the <b>ValidBits.ErrorType</b> bit is set.</p>
 </dd>
 
-### -field <b>BusId</b>
+### -field BusId
 
 <dd>
 <p>A WHEA_PCIXBUS_ID union that identifies the bus where the error occurred. The WHEA_PCIXBUS_ID union is defined as follows:</p>
@@ -158,19 +158,19 @@ typedef struct _WHEA_PCIXBUS_ERROR_SECTION {
 <p></p>
 <dl>
 
-### -field <a id="BusNumber"></a><a id="busnumber"></a><a id="BUSNUMBER"></a><b>BusNumber</b>
+### -field BusNumber
 
 <dd>
 <p>The bus number.</p>
 </dd>
 
-### -field <a id="BusSegment"></a><a id="bussegment"></a><a id="BUSSEGMENT"></a><b>BusSegment</b>
+### -field BusSegment
 
 <dd>
 <p>The bus segment.</p>
 </dd>
 
-### -field <a id="AsUSHORT"></a><a id="asushort"></a><a id="ASUSHORT"></a><b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>A USHORT representation of the contents of the WHEA_PCIXBUS_ID union.</p>
@@ -179,27 +179,27 @@ typedef struct _WHEA_PCIXBUS_ERROR_SECTION {
 <p>This member contains valid data only if the <b>ValidBits.BusId</b> bit is set.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>BusAddress</b>
+### -field BusAddress
 
 <dd>
 <p>The memory or I/O address on the bus when the error occurred.</p>
 <p>This member contains valid data only if the <b>ValidBits.BusAddress</b> bit is set.</p>
 </dd>
 
-### -field <b>BusData</b>
+### -field BusData
 
 <dd>
 <p>The data on the bus when the error occurred.</p>
 <p>This member contains valid data only if the <b>ValidBits.BusData</b> bit is set.</p>
 </dd>
 
-### -field <b>BusCommand</b>
+### -field BusCommand
 
 <dd>
 <p>A WHEA_PCIXBUS_COMMAND union that contains the bus command when the error occurred. The WHEA_PCIXBUS_COMMAND union is defined as follows:</p>
@@ -223,25 +223,25 @@ typedef struct _WHEA_PCIXBUS_ERROR_SECTION {
 <p></p>
 <dl>
 
-### -field <a id="Command"></a><a id="command"></a><a id="COMMAND"></a><b>Command</b>
+### -field Command
 
 <dd>
 <p>The PCI or PCI-X bus command.</p>
 </dd>
 
-### -field <a id="PCIXCommand"></a><a id="pcixcommand"></a><a id="PCIXCOMMAND"></a><b>PCIXCommand</b>
+### -field PCIXCommand
 
 <dd>
 <p>A single bit that indicates that the command is a PCI-X command.</p>
 </dd>
 
-### -field <a id="Reserved"></a><a id="reserved"></a><a id="RESERVED"></a><b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="AsULONGLONG"></a><a id="asulonglong"></a><a id="ASULONGLONG"></a><b>AsULONGLONG</b>
+### -field AsULONGLONG
 
 <dd>
 <p>A ULONGLONG representation of the contents of the WHEA_PCIXBUS_COMMAND union.</p>
@@ -250,21 +250,21 @@ typedef struct _WHEA_PCIXBUS_ERROR_SECTION {
 <p>This member contains valid data only if the <b>ValidBits.BusCommand</b> bit is set.</p>
 </dd>
 
-### -field <b>RequesterId</b>
+### -field RequesterId
 
 <dd>
 <p>An identifier that uniquely identifies the requester that is associated with the error.</p>
 <p>This member contains valid data only if the <b>ValidBits.RequesterId</b> bit is set.</p>
 </dd>
 
-### -field <b>CompleterId</b>
+### -field CompleterId
 
 <dd>
 <p>An identifier that uniquely identifies the PCI bus responder that is associated with the error.</p>
 <p>This member contains valid data only if the <b>ValidBits.CompleterId</b> bit is set.</p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>An identifier that uniquely identifies the intended target of the PCI bus command.</p>

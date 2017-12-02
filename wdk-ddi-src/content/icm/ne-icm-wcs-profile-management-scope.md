@@ -55,13 +55,13 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="WCS_PROFILE_MANAGEMENT_SCOPE_SYSTEM_WIDE"></a><a id="wcs_profile_management_scope_system_wide"></a><b>WCS_PROFILE_MANAGEMENT_SCOPE_SYSTEM_WIDE</b>
+### -field WCS_PROFILE_MANAGEMENT_SCOPE_SYSTEM_WIDE
 
 <dd>
 <p>Indicates that the profile management operation affects all users.</p>
 </dd>
 
-### -field <a id="WCS_PROFILE_MANAGEMENT_SCOPE_CURRENT_USER"></a><a id="wcs_profile_management_scope_current_user"></a><b>WCS_PROFILE_MANAGEMENT_SCOPE_CURRENT_USER</b>
+### -field WCS_PROFILE_MANAGEMENT_SCOPE_CURRENT_USER
 
 <dd>
 <p>Indicates that profile management operation affects only the current user.</p>

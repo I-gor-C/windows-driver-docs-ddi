@@ -56,15 +56,15 @@ typedef enum _NFC_CX_POLL_BAILOUT_CONFIG {
 ## -enum-fields
 <dl>
 
-### -field <a id="NFC_CX_POLL_BAILOUT_NFC_A"></a><a id="nfc_cx_poll_bailout_nfc_a"></a><b>NFC_CX_POLL_BAILOUT_NFC_A</b>
+### -field NFC_CX_POLL_BAILOUT_NFC_A
 
 <dd></dd>
 
-### -field <a id="NFC_CX_POLL_BAILOUT_NFC_B"></a><a id="nfc_cx_poll_bailout_nfc_b"></a><b>NFC_CX_POLL_BAILOUT_NFC_B</b>
+### -field NFC_CX_POLL_BAILOUT_NFC_B
 
 <dd></dd>
 
-### -field <a id="NFC_CX_POLL_BAILOUT_DEFAULT"></a><a id="nfc_cx_poll_bailout_default"></a><b>NFC_CX_POLL_BAILOUT_DEFAULT</b>
+### -field NFC_CX_POLL_BAILOUT_DEFAULT
 
 <dd></dd>
 </dl>

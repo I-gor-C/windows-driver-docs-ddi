@@ -58,33 +58,33 @@ NTSTATUS ZwOpenThreadTokenEx(
 ## -parameters
 <dl>
 
-### -param <i>ThreadHandle</i> [in]
+### -param ThreadHandle [in]
 
 <dd>
 <p>Handle to the thread whose access token is to be opened. The handle must have THREAD_QUERY_INFORMATION access. Use the <b>NtCurrentThread</b> macro to specify the current thread. </p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> structure specifying the requested types of access to the access token. These requested access types are compared with the token's discretionary access-control list (<a href="..\ntifs\ns-ntifs--acl.md">DACL</a>) to determine which access rights are granted or denied. </p>
 </dd>
 
-### -param <i>OpenAsSelf</i> [in]
+### -param OpenAsSelf [in]
 
 <dd>
 <p>Boolean value specifying whether the access check is to be made against the security context of the thread calling <b>ZwOpenThreadTokenEx</b> or against the security context of the process for the calling thread. </p>
 <p>If this parameter is <b>FALSE</b>, the access check is performed using the security context for the calling thread. If the thread is impersonating a client, this security context can be that of a client process. If this parameter is <b>TRUE</b>, the access check is made using the security context of the process for the calling thread. </p>
 </dd>
 
-### -param <i>HandleAttributes</i> [in]
+### -param HandleAttributes [in]
 
 <dd>
 <p>Attributes for the created handle. Only OBJ_KERNEL_HANDLE is currently supported. If the caller is not running in the system process context, it must specify OBJ_KERNEL_HANDLE for this parameter. </p>
 </dd>
 
-### -param <i>TokenHandle</i> [out]
+### -param TokenHandle [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives a handle to the newly opened access token. </p>

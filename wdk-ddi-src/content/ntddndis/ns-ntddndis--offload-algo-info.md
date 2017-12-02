@@ -7,7 +7,7 @@ old-location: netvista\offload_algo_info.htm
 old-project: netvista
 ms.assetid: 119a8c88-f181-40f5-8a12-5d663c5a1534
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: OFFLOAD_ALGO_INFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ typedef struct _OFFLOAD_ALGO_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>algoIdentifier</b>
+### -field algoIdentifier
 
 <dd>
 <p>The confidentiality or integrity algorithm used for the SA. 
@@ -68,20 +68,20 @@ typedef struct _OFFLOAD_ALGO_INFO {
 <p></p>
 <dl>
 
-### -field <a id="OFFLOAD_IPSEC_CONF_NONE"></a><a id="offload_ipsec_conf_none"></a><b>OFFLOAD_IPSEC_CONF_NONE</b>
+### -field OFFLOAD_IPSEC_CONF_NONE
 
 <dd>
 <p>Specifies no confidentiality algorithm. Used for null encryption--that is, when a packet is not
        encrypted but its ESP header contains authentication information.</p>
 </dd>
 
-### -field <a id="OFFLOAD_IPSEC_CONF_DES"></a><a id="offload_ipsec_conf_des"></a><b>OFFLOAD_IPSEC_CONF_DES</b>
+### -field OFFLOAD_IPSEC_CONF_DES
 
 <dd>
 <p>Specifies the DES algorithm.</p>
 </dd>
 
-### -field <a id="OFFLOAD_IPSEC_CONF_3_DES"></a><a id="offload_ipsec_conf_3_des"></a><b>OFFLOAD_IPSEC_CONF_3_DES</b>
+### -field OFFLOAD_IPSEC_CONF_3_DES
 
 <dd>
 <p>Specifies the triple-DES algorithm.</p>
@@ -94,20 +94,20 @@ typedef struct _OFFLOAD_ALGO_INFO {
 <p></p>
 <dl>
 
-### -field <a id="OFFLOAD_IPSEC_INTEGRITY_NONE"></a><a id="offload_ipsec_integrity_none"></a><b>OFFLOAD_IPSEC_INTEGRITY_NONE</b>
+### -field OFFLOAD_IPSEC_INTEGRITY_NONE
 
 <dd>
 <p>Specifies no integrity algorithm. Used when the ESP header contains no authentication
        information.</p>
 </dd>
 
-### -field <a id="OFFLOAD_IPSEC_INTEGRITY_MD5"></a><a id="offload_ipsec_integrity_md5"></a><b>OFFLOAD_IPSEC_INTEGRITY_MD5</b>
+### -field OFFLOAD_IPSEC_INTEGRITY_MD5
 
 <dd>
 <p>Specifies the keyed MD5 algorithm.</p>
 </dd>
 
-### -field <a id="OFFLOAD_IPSEC_INTEGRITY_SHA"></a><a id="offload_ipsec_integrity_sha"></a><b>OFFLOAD_IPSEC_INTEGRITY_SHA</b>
+### -field OFFLOAD_IPSEC_INTEGRITY_SHA
 
 <dd>
 <p>Specifies the SHA 1 algorithm.</p>
@@ -115,7 +115,7 @@ typedef struct _OFFLOAD_ALGO_INFO {
 </dl>
 </dd>
 
-### -field <b>algoKeylen</b>
+### -field algoKeylen
 
 <dd>
 <p>The length, in bytes, of the key for the algorithm. The key is contained in the buffer at 
@@ -140,12 +140,12 @@ typedef struct _OFFLOAD_ALGO_INFO {
      integrity algorithm.</p>
 </dd>
 
-### -field <b>algoRounds</b>
+### -field algoRounds
 
 <dd>
 <p>The number of transformation rounds that the encryption algorithm performs.</p>
 <div class="alert"><b>Note</b>  This member is only used for 
-      <a href="NULL">IPsec Offload Version 1</a>.</div>
+      <a href="netvista.ipsec_offload_version_1">IPsec Offload Version 1</a>.</div>
 <div> </div>
 </dd>
 </dl>
@@ -183,4 +183,4 @@ typedef struct _OFFLOAD_ALGO_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20OFFLOAD_ALGO_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20OFFLOAD_ALGO_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

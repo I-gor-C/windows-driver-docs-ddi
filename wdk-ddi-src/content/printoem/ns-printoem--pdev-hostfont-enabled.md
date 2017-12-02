@@ -55,7 +55,7 @@ typedef struct _PDEV_HOSTFONT_ENABLED {
 ## -struct-fields
 <dl>
 
-### -field <b>bHostfontEnabled</b>
+### -field bHostfontEnabled
 
 <dd>
 <p>Specifies whether the Hostfont feature is enabled. If set to <b>TRUE</b>, the Hostfont feature is enabled. Otherwise, this feature is disabled.</p>

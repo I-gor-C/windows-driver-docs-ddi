@@ -57,23 +57,23 @@ typedef struct D3D12DDICB_DEALLOCATE_0022 {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>The handle of a resource.</p>
 </dd>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd></dd>
 
-### -field <b>HandleList</b>
+### -field HandleList
 
 <dd>
 <p>A pointer to a list of kernel handles.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags to use for deallocation, as specified in the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi-deallocate-flags-0022.md">D3D12DDI_DEALLOCATE_FLAGS_0022</a> enumeration.</p>

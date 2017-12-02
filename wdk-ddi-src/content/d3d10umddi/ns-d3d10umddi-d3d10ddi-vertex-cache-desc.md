@@ -57,7 +57,7 @@ typedef struct D3D10DDI_VERTEX_CACHE_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>Pattern</b>
+### -field Pattern
 
 <dd>
 <p>[out] The bit pattern. The driver must specify the bit pattern as a CACH four-character code (FOURCC) value. The driver can use the following MAKEFOURCC macro to specify the FOURCC value as CACH:</p>
@@ -73,7 +73,7 @@ typedef struct D3D10DDI_VERTEX_CACHE_DESC {
 </table></span></div>
 </dd>
 
-### -field <b>OptMethod</b>
+### -field OptMethod
 
 <dd>
 <p>[out] The method of mesh optimization. The driver can use one of the following values to specify the mesh optimization that it uses.</p>
@@ -102,13 +102,13 @@ typedef struct D3D10DDI_VERTEX_CACHE_DESC {
 <p> </p>
 </dd>
 
-### -field <b>CacheSize</b>
+### -field CacheSize
 
 <dd>
 <p>[out] The effective size, in entries, that the driver optimizes the vertex cache for. The actual cache size is not required to be the size that is specified in <b>CacheSize</b> because the actual cache size is larger in most situations. The driver specifies an optimized size in <b>CacheSize</b> only if it also specifies 1 in the <b>OptMethod</b> member.</p>
 </dd>
 
-### -field <b>MagicNumber</b>
+### -field MagicNumber
 
 <dd>
 <p>[out] The number that should be used as part of a trial-and-error procedure when you are determining when to restart the strips list. This number can be from 1 through the value that is specified in the <b>CacheSize</b> member. Typically, the best values are near <b>CacheSize</b>/2. The driver specifies a number in <b>MagicNumber</b> only if it also specifies 0 in the <b>OptMethod</b> member. </p>

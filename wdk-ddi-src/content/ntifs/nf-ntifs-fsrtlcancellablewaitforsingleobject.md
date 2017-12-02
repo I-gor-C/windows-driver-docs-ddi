@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlcancellablewaitforsingleobject.htm
 old-project: ifsk
 ms.assetid: b29d35bd-d27d-4507-9fa7-5648bcb1f825
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FsRtlCancellableWaitForSingleObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ NTSTATUS FsRtlCancellableWaitForSingleObject(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>A pointer to an initialized dispatcher object (event, mutex, semaphore, thread, or timer) for which the caller supplies the storage.</p>
 </dd>
 
-### -param <i>Timeout</i> [in, optional]
+### -param Timeout [in, optional]
 
 <dd>
 <p>A pointer to an optional time-out value. This parameter specifies the absolute or relative time, in 100 nanosecond units, at which the wait is to be completed. </p>
@@ -72,7 +72,7 @@ NTSTATUS FsRtlCancellableWaitForSingleObject(
 <p>A time-out value of zero (that is, <i>*Timeout</i> == 0) allows you to test a set of wait conditions, and to conditionally perform any additional actions if the wait can be immediately satisfied, as in the acquisition of a mutex.</p>
 </dd>
 
-### -param <i>Irp</i> [in, optional]
+### -param Irp [in, optional]
 
 <dd>
 <p>A pointer to the original IRP that corresponds to the I/O operation that was issued by the user and that can be canceled by the user.  The caller must ensure that the IRP will remain valid for the duration of this routine and that the IRP must not have a cancel routine set (for example, <a href="..\wdm\nf-wdm-iosetcancelroutine.md">IoSetCancelRoutine</a> must not have been called on the IRP).  Note that the IRP must be held by the caller, it cannot be passed to a lower-level driver.</p>
@@ -113,7 +113,7 @@ NTSTATUS FsRtlCancellableWaitForSingleObject(
 
 <p>The following is an example of how to use <b>FsRtlCancellableWaitForSingleObject </b>in support of the <a href="http://go.microsoft.com/fwlink/p/?linkid=51436">I/O Completion/Cancellation Guidelines</a>.</p>
 
-<p><b>FsRtlCancellableWaitForSingleObject</b> must be called at IRQL PASSIVE_LEVEL if the optional <i>Irp</i> parameter points to a valid IRP. If the <i>Irp</i> parameter is not used, the routine can be called at IRQL less or equal to APC_LEVEL. Normal kernel APCs can be disabled by the caller, if needed, by calling the <a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a> or <a href="ifsk.fsrtlenterfilesystem">FsRtlEnterFileSystem</a> routines. However, special kernel APCs must not be disabled. </p>
+<p><b>FsRtlCancellableWaitForSingleObject</b> must be called at IRQL PASSIVE_LEVEL if the optional <i>Irp</i> parameter points to a valid IRP. If the <i>Irp</i> parameter is not used, the routine can be called at IRQL less or equal to APC_LEVEL. Normal kernel APCs can be disabled by the caller, if needed, by calling the <a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a> or <a href="ifsk.fsrtlenterfilesystem">FsRtlEnterFileSystem</a> routines. However, special kernel APCs must not be disabled. </p>
 
 <p><b>FsRtlCancellableWaitForSingleObject</b> will assert on debug builds if the IRQL is greater or equal to APC_LEVEL and the optional <i>Irp</i> parameter points to a valid IRP.</p>
 
@@ -209,4 +209,4 @@ NTSTATUS FsRtlCancellableWaitForSingleObject(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCancellableWaitForSingleObject routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCancellableWaitForSingleObject routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

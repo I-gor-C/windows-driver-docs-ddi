@@ -7,7 +7,7 @@ old-location: netvista\rilmessageflags_2.htm
 old-project: netvista
 ms.assetid: 49f8bd1b-5c8a-47d3-a5d5-817216562559
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,35 +62,35 @@ typedef enum _RILMESSAGEFLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGFLAG_MORETOSEND"></a><a id="ril_msgflag_moretosend"></a><b>RIL_MSGFLAG_MORETOSEND</b>
+### -field RIL_MSGFLAG_MORETOSEND
 
 <dd></dd>
 
-### -field <a id="RIL_MSGFLAG_REPLYPATH"></a><a id="ril_msgflag_replypath"></a><b>RIL_MSGFLAG_REPLYPATH</b>
+### -field RIL_MSGFLAG_REPLYPATH
 
 <dd></dd>
 
-### -field <a id="RIL_MSGFLAG_HEADER"></a><a id="ril_msgflag_header"></a><b>RIL_MSGFLAG_HEADER</b>
+### -field RIL_MSGFLAG_HEADER
 
 <dd></dd>
 
-### -field <a id="RIL_MSGFLAG_REJECTDUPS"></a><a id="ril_msgflag_rejectdups"></a><b>RIL_MSGFLAG_REJECTDUPS</b>
+### -field RIL_MSGFLAG_REJECTDUPS
 
 <dd></dd>
 
-### -field <a id="RIL_MSGFLAG_STATUSREPORTRETURNED"></a><a id="ril_msgflag_statusreportreturned"></a><b>RIL_MSGFLAG_STATUSREPORTRETURNED</b>
+### -field RIL_MSGFLAG_STATUSREPORTRETURNED
 
 <dd></dd>
 
-### -field <a id="RIL_MSGFLAG_STATUSREPORTREQUESTED"></a><a id="ril_msgflag_statusreportrequested"></a><b>RIL_MSGFLAG_STATUSREPORTREQUESTED</b>
+### -field RIL_MSGFLAG_STATUSREPORTREQUESTED
 
 <dd></dd>
 
-### -field <a id="RIL_MSGFLAG_CAUSEDBYCOMMAND"></a><a id="ril_msgflag_causedbycommand"></a><b>RIL_MSGFLAG_CAUSEDBYCOMMAND</b>
+### -field RIL_MSGFLAG_CAUSEDBYCOMMAND
 
 <dd></dd>
 
-### -field <a id="RIL_MSGFLAG_ALL"></a><a id="ril_msgflag_all"></a><b>RIL_MSGFLAG_ALL</b>
+### -field RIL_MSGFLAG_ALL
 
 <dd></dd>
 </dl>

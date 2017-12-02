@@ -60,25 +60,25 @@ VOID APIENTRY CheckMultisampleQualityLevels(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>Format</i> [in]
+### -param Format [in]
 
 <dd>
 <p> A DXGI_FORMAT-typed value that indicates the render-target format that the check is performed for. </p>
 </dd>
 
-### -param <i>SampleCount</i> [in]
+### -param SampleCount [in]
 
 <dd>
 <p> The number of samples to retrieve the quality levels for. </p>
 </dd>
 
-### -param <i>pNumQualityLevels</i> [out]
+### -param pNumQualityLevels [out]
 
 <dd>
 <p>A pointer to a variable that receives the number of quality levels that the device supports for the specified number of samples. </p>

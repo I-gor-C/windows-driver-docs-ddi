@@ -7,7 +7,7 @@ old-location: wdf\completionroutine.htm
 old-project: wdf
 ms.assetid: 7d3eb4d6-9fc7-4924-9b95-f5824713049b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfRegistryWdmGetHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,25 +62,25 @@ void CompletionRoutine(
 ## -parameters
 <dl>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object that represents the completed I/O request.</p>
 </dd>
 
-### -param <i>Target</i> [in]
+### -param Target [in]
 
 <dd>
 <p>A handle to an I/O target object that represents the I/O target that completed the request.</p>
 </dd>
 
-### -param <i>Params</i> [in]
+### -param Params [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdfrequest\ns-wdfrequest--wdf-request-completion-params.md">WDF_REQUEST_COMPLETION_PARAMS</a> structure that contains information about the completed request.</p>
 </dd>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Driver-supplied context information, which the driver specified in a previous call to <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetcompletionroutine.md">WdfRequestSetCompletionRoutine</a>.</p>
@@ -162,4 +162,4 @@ void CompletionRoutine(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20EVT_WDF_REQUEST_COMPLETION_ROUTINE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20EVT_WDF_REQUEST_COMPLETION_ROUTINE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

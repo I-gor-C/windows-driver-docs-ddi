@@ -57,37 +57,37 @@ typedef struct _SRB_IO_CONTROL {
 ## -struct-fields
 <dl>
 
-### -field <b>HeaderLength</b>
+### -field HeaderLength
 
 <dd>
 <p>Is <b>sizeof</b>(SRB_IO_CONTROL).</p>
 </dd>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>Identifies the application-dedicated, target HBA for this request. This signature is used to prevent conflicts in <b>ControlCode</b> values between vendors. It should be a string of ASCII characters. If a miniport driver does not recognize the input <b>Signature</b> value, it must complete the request with a status of SRB_STATUS_INVALID_REQUEST.</p>
 </dd>
 
-### -field <b>Timeout</b>
+### -field Timeout
 
 <dd>
 <p>Indicates the interval in seconds that the request can execute before the OS-specific port driver might consider it timed out. Miniport drivers should be enforcing timeouts for SRB_IO_CONTROL, especially for any privately defined SRB_IO_CONTROL.</p>
 </dd>
 
-### -field <b>ControlCode</b>
+### -field ControlCode
 
 <dd>
 <p>Indicates the operation to be performed. There are no system-defined operations. Values must be defined by the driver as a set of private I/O control codes with which the application can make requests by calling the Win32 <a href="base.deviceiocontrol">DeviceIoControl</a> function. For more information about defining private I/O control codes for device control requests, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565406">Using I/O Control Codes</a>.</p>
 </dd>
 
-### -field <b>ReturnCode</b>
+### -field ReturnCode
 
 <dd>
 <p>Returns a status code for examination by the requesting application.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Indicates the size in bytes of the immediately following data area. This area can be divided for the particular operation into input and output areas. For input requests, the contents of the DataBuffer will be copied to the requester up to the returned value of DataTransferLength.</p>

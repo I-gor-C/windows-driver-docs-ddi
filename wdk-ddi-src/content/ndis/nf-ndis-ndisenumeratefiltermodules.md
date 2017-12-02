@@ -7,7 +7,7 @@ old-location: netvista\ndisenumeratefiltermodules.htm
 old-project: netvista
 ms.assetid: cab7609e-cf87-46f6-af23-891e19ef1b80
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisEnumerateFilterModules
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,12 +60,12 @@ NDIS_STATUS NdisEnumerateFilterModules(
 ## -parameters
 <dl>
 
-### -param <i>NdisHandle</i> [in]
+### -param NdisHandle [in]
 
 <dd>
 <p>An NDIS handle that was obtained during caller initialization. For more information about this
      handle, see 
-     <a href="NULL">Obtaining Pool Handles</a>.
+     <a href="netvista.obtaining_pool_handles">Obtaining Pool Handles</a>.
      </p>
 <p>If the handle is an NDIS miniport adapter handle, NDIS returns information about all the interface
      modules that are currently attached to the miniport adapter, starting with the top-most filter
@@ -77,7 +77,7 @@ NDIS_STATUS NdisEnumerateFilterModules(
      attached, starting with the top-most filter module.</p>
 </dd>
 
-### -param <i>InterfaceBuffer</i> [in]
+### -param InterfaceBuffer [in]
 
 <dd>
 <p>A pointer to a caller-allocated memory block in which NDIS returns the information for all the
@@ -88,14 +88,14 @@ NDIS_STATUS NdisEnumerateFilterModules(
      for each filter module in the stack.</p>
 </dd>
 
-### -param <i>InterfaceBufferLength</i> [in]
+### -param InterfaceBufferLength [in]
 
 <dd>
 <p>The length, in bytes, of the caller-supplied memory block at the 
      <b>InterfaceBuffer</b> member.</p>
 </dd>
 
-### -param <i>BytesNeeded</i> [in, out]
+### -param BytesNeeded [in, out]
 
 <dd>
 <p>A pointer to a caller-supplied variable where NDIS writes the total number of bytes that NDIS
@@ -103,7 +103,7 @@ NDIS_STATUS NdisEnumerateFilterModules(
      stack.</p>
 </dd>
 
-### -param <i>BytesWritten</i> [in, out]
+### -param BytesWritten [in, out]
 
 <dd>
 <p>A pointer to a caller-supplied variable where NDIS writes the total bytes that NDIS wrote in the
@@ -210,4 +210,4 @@ NDIS_STATUS NdisEnumerateFilterModules(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisEnumerateFilterModules function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisEnumerateFilterModules function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

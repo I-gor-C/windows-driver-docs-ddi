@@ -55,13 +55,13 @@ NTSTATUS RtlUIntPtrToLongPtr(
 ## -parameters
 <dl>
 
-### -param <i>uOperand</i> [in]
+### -param uOperand [in]
 
 <dd>
 <p>The value to be converted.</p>
 </dd>
 
-### -param <i>plResult</i> [out]
+### -param plResult [out]
 
 <dd>
 <p>A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

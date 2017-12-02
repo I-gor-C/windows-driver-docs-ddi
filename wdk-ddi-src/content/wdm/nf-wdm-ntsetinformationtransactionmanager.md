@@ -58,19 +58,19 @@ NTSTATUS NtSetInformationTransactionManager(
 ## -parameters
 <dl>
 
-### -param <i>TmHandle</i> [in, optional]
+### -param TmHandle [in, optional]
 
 <dd></dd>
 
-### -param <i>TransactionManagerInformationClass</i> [in]
+### -param TransactionManagerInformationClass [in]
 
 <dd></dd>
 
-### -param <i>TransactionManagerInformation</i> [in]
+### -param TransactionManagerInformation [in]
 
 <dd></dd>
 
-### -param <i>TransactionManagerInformationLength</i> [in]
+### -param TransactionManagerInformationLength [in]
 
 <dd></dd>
 </dl>

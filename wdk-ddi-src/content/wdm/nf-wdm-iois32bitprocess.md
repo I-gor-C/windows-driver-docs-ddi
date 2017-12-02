@@ -55,7 +55,7 @@ BOOLEAN IoIs32bitProcess(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in, optional]
+### -param Irp [in, optional]
 
 <dd>
 <p>Optional pointer to the IRP containing the current I/O request. Note that this must be the original IRP that was issued by the I/O manager. If the caller is a fast I/O dispatch routine (and thus there is no IRP), the caller should set this parameter to <b>NULL</b>.</p>

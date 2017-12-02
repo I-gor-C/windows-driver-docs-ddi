@@ -7,7 +7,7 @@ old-location: ifsk\sequerysecuritydescriptorinfo.htm
 old-project: ifsk
 ms.assetid: 4803e816-c59a-42b2-adc1-7a197ae16d42
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: SeQuerySecurityDescriptorInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ NTSTATUS SeQuerySecurityDescriptorInfo(
 ## -parameters
 <dl>
 
-### -param <i>SecurityInformation</i> [in]
+### -param SecurityInformation [in]
 
 <dd>
 <p>Pointer to a <a href="ifsk.security_information">SECURITY_INFORMATION</a> value specifying which security information is being queried. </p>
@@ -102,19 +102,19 @@ NTSTATUS SeQuerySecurityDescriptorInfo(
 <p> </p>
 </dd>
 
-### -param <i>SecurityDescriptor</i> [out]
+### -param SecurityDescriptor [out]
 
 <dd>
 <p>Caller-allocated user buffer that <b>SeQuerySecurityDescriptorInfo</b> fills with a copy of the specified security descriptor in self-relative format. </p>
 </dd>
 
-### -param <i>Length</i> [in, out]
+### -param Length [in, out]
 
 <dd>
 <p>Pointer to a variable that specifies the size, in bytes, of the buffer pointed to by <i>SecurityDescriptor</i>. Upon return, <b>SeQuerySecurityDescriptorInfo</b> sets this variable to the number of bytes required to store the requested information.</p>
 </dd>
 
-### -param <i>ObjectsSecurityDescriptor</i> [in, out]
+### -param ObjectsSecurityDescriptor [in, out]
 
 <dd>
 <p>Pointer to a pointer to an object's security descriptor. The security descriptor must be in self-relative format.</p>
@@ -224,4 +224,4 @@ NTSTATUS SeQuerySecurityDescriptorInfo(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeQuerySecurityDescriptorInfo routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeQuerySecurityDescriptorInfo routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

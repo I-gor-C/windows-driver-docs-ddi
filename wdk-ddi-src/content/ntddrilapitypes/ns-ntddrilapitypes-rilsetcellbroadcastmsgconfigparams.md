@@ -7,7 +7,7 @@ old-location: netvista\rilsetcellbroadcastmsgconfigparams.htm
 old-project: netvista
 ms.assetid: bfaad47a-44eb-471d-9ed9-e1adf845ab9c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSETCELLBROADCASTMSGCONFIGPARAMS, RILSETCELLBROADCASTMSGCONFIGPARAMS, *LPRILSETCELLBROADCASTMSGCONFIGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILSETCELLBROADCASTMSGCONFIGPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>rmCBConfig</b>
+### -field rmCBConfig
 
 <dd></dd>
 </dl>

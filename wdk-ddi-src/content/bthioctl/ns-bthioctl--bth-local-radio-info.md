@@ -59,7 +59,7 @@ typedef struct _BTH_LOCAL_RADIO_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>localInfo</b>
+### -field localInfo
 
 <dd>
 <p>A 
@@ -67,7 +67,7 @@ typedef struct _BTH_LOCAL_RADIO_INFO {
      information about the local radio.</p>
 </dd>
 
-### -field <b>flags</b>
+### -field flags
 
 <dd>
 <p>A flag that indicates the state of the local radio. Both flags can be set at the same time.
@@ -87,19 +87,19 @@ typedef struct _BTH_LOCAL_RADIO_INFO {
 </dl>
 </dd>
 
-### -field <b>hciRevision</b>
+### -field hciRevision
 
 <dd>
 <p>The minor version of the host controller interface (HCI).</p>
 </dd>
 
-### -field <b>hciVersion</b>
+### -field hciVersion
 
 <dd>
 <p>The major version of the HCI.</p>
 </dd>
 
-### -field <b>radioInfo</b>
+### -field radioInfo
 
 <dd>
 <p>A 

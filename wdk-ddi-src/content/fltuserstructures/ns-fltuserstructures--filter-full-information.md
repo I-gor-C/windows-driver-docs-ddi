@@ -7,7 +7,7 @@ old-location: ifsk\filter_full_information.htm
 old-project: ifsk
 ms.assetid: fb592350-76e2-4655-b6db-854fd48aa827
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILTER_FULL_INFORMATION, FILTER_FULL_INFORMATION, *PFILTER_FULL_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ typedef struct _FILTER_FULL_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NextEntryOffset</b>
+### -field NextEntryOffset
 
 <dd>
 <p>Byte offset of the next FILTER_FULL_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one. </p>
 </dd>
 
-### -field <b>FrameID</b>
+### -field FrameID
 
 <dd>
 <p>Zero-based index of the current frame. </p>
 </dd>
 
-### -field <b>NumberOfInstances</b>
+### -field NumberOfInstances
 
 <dd>
 <p>Number of instances that currently exist for this minifilter. </p>
 </dd>
 
-### -field <b>FilterNameLength</b>
+### -field FilterNameLength
 
 <dd>
 <p>Length, in bytes, of the minifilter name. </p>
 </dd>
 
-### -field <b>FilterNameBuffer</b>
+### -field FilterNameBuffer
 
 <dd>
 <p>Specifies the first character of the filter name string. This character is followed in memory by the remainder of the string. The length of the string is specified by the <b>FilterNameLength</b> member. The string is Unicode and is not NULL-terminated. </p>
@@ -137,4 +137,4 @@ typedef struct _FILTER_FULL_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILTER_FULL_INFORMATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILTER_FULL_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

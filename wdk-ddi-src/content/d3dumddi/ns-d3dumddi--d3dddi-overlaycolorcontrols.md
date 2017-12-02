@@ -61,49 +61,49 @@ typedef struct _D3DDDI_OVERLAYCOLORCONTROLS {
 ## -struct-fields
 <dl>
 
-### -field <b>BrightnessSetting</b>
+### -field BrightnessSetting
 
 <dd>
 <p>[in] An INT value that specifies the brightness of the output image as it is written to the overlay. This member is set if the <b>Brightness</b> bit-field flag is set in the <b>Flags</b> member.</p>
 </dd>
 
-### -field <b>ContrastSetting</b>
+### -field ContrastSetting
 
 <dd>
 <p>[in] An INT value that specifies the contrast of the output image as it is written to the overlay. This member is set if the <b>Contrast</b> bit-field flag is set in the <b>Flags</b> member.</p>
 </dd>
 
-### -field <b>HueSetting</b>
+### -field HueSetting
 
 <dd>
 <p>[in] An INT value that specifies the hue of the output image as it is written to the overlay. This member is set if the <b>Hue</b> bit-field flag is set in the <b>Flags</b> member.</p>
 </dd>
 
-### -field <b>SaturationSetting</b>
+### -field SaturationSetting
 
 <dd>
 <p>[in] An INT value that specifies the saturation of the output image as it is written to the overlay. This member is set if the <b>Saturation</b> bit-field flag is set in the <b>Flags</b> member.</p>
 </dd>
 
-### -field <b>SharpnessSetting</b>
+### -field SharpnessSetting
 
 <dd>
 <p>[in] An INT value that specifies the sharpness of the output image as it is written to the overlay. This member is set if the <b>Sharpness</b> bit-field flag is set in the <b>Flags</b> member.</p>
 </dd>
 
-### -field <b>GammaSetting</b>
+### -field GammaSetting
 
 <dd>
 <p>[in] An INT value that specifies the gamma setting of the output image as it is written to the overlay. This member is set if the <b>Gamma</b> bit-field flag is set in the <b>Flags</b> member.</p>
 </dd>
 
-### -field <b>ColorEnableSetting</b>
+### -field ColorEnableSetting
 
 <dd>
 <p>[in] An INT value that specifies the color-enable setting of the output image as it is written to the overlay. This member is set if the <b>ColorEnable</b> bit-field flag is set in the <b>Flags</b> member.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-overlaycolorcontrolsflags.md">D3DDDI_OVERLAYCOLORCONTROLSFLAGS</a> structure that identifies color-control settings that the overlay hardware supports.</p>

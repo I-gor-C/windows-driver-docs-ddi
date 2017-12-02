@@ -56,19 +56,19 @@ typedef struct _DXGK_MIRACAST_DISPLAY_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>MiracastHandle</b>
+### -field MiracastHandle
 
 <dd>
 <p>A driver-supplied handle to the Miracast display device.</p>
 </dd>
 
-### -field <b>DxgkCbMiracastSendMessage</b>
+### -field DxgkCbMiracastSendMessage
 
 <dd>
 <p>A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb-miracast-send-message.md">DxgkCbMiracastSendMessage</a> function.</p>
 </dd>
 
-### -field <b>DxgkCbReportChunkInfo</b>
+### -field DxgkCbReportChunkInfo
 
 <dd>
 <p>A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb-miracast-report-chunk-info.md">DxgkCbReportChunkInfo</a> function.</p>

@@ -56,19 +56,19 @@ NTSTATUS PsRemoveSiloContext(
 ## -parameters
 <dl>
 
-### -param <i>Silo</i> [in]
+### -param Silo [in]
 
 <dd>
 <p>The silo from which the object is to be removed. This parameter is required and it cannot be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ContextSlot</i> [in]
+### -param ContextSlot [in]
 
 <dd>
 <p>A slot allocated by the <a href="..\ntddk\nf-ntddk-psallocsilocontextslot.md">PsAllocSiloContextSlot</a> routine.</p>
 </dd>
 
-### -param <i>ReturnedSiloContext</i> 
+### -param ReturnedSiloContext 
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the address of the removed object. This parameter is optional and can be <b>NULL</b>.</p>

@@ -59,20 +59,20 @@ NTSTATUS QueryMiracastDriverInterface(
 ## -parameters
 <dl>
 
-### -param <i>MiracastDriverInterfaceVersion</i> [in]
+### -param MiracastDriverInterfaceVersion [in]
 
 <dd>
 <p>The version of the Miracast display interface, supplied by the operating system. </p>
 <p>This version is defined in Netdispumdddi.h as a <b>MIRACAST_DRIVER_INTERFACE_VERSION_XXX</b> value. For Windows 8.1, the value is <b>MIRACAST_DRIVER_INTERFACE_VERSION_1</b>.</p>
 </dd>
 
-### -param <i>MiracastDriverInterfaceSize</i> [in]
+### -param MiracastDriverInterfaceSize [in]
 
 <dd>
 <p>The size, supplied by the operating system, of the buffer pointed to by <i>pMiracastDriverInterface</i>.</p>
 </dd>
 
-### -param <i>pMiracastDriverInterface</i> [out]
+### -param pMiracastDriverInterface [out]
 
 <dd>
 <p>A pointer to a buffer, supplied by the operating system, that holds the returned Miracast display driver interface, which is a structure of type <a href="..\netdispumdddi\ns-netdispumdddi--miracast-driver-interface.md">MIRACAST_DRIVER_INTERFACE</a>.</p>

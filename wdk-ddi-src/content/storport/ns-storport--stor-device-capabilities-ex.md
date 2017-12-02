@@ -72,104 +72,104 @@ typedef struct _STOR_DEVICE_CAPABILITIES_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the structure. Set to STOR_DEVICE_CAPABILITIES_EX_VERSION_1 by Storport.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size of the structure. Set to <b>sizeof</b>(STOR_DEVICE_CAPABILITIES_EX) by Storport.</p>
 </dd>
 
-### -field <b>DeviceD1</b>
+### -field DeviceD1
 
 <dd>
 <p>Specifies whether the device hardware supports the D1 power state. Miniport drivers set this bit to 0.</p>
 </dd>
 
-### -field <b>DeviceD2</b>
+### -field DeviceD2
 
 <dd>
 <p>Specifies whether the device hardware supports the D2 power state. Miniport drivers set this bit to 0.</p>
 </dd>
 
-### -field <b>LockSupported</b>
+### -field LockSupported
 
 <dd>
 <p>Specifies whether the device supports physical-device locking that prevents device ejection. This member pertains to ejecting a LUN or a unit device.</p>
 </dd>
 
-### -field <b>EjectSupported</b>
+### -field EjectSupported
 
 <dd>
 <p>Specifies whether the device supports software-controlled device ejection while the system is in the <b>PowerSystemWorking</b> state. This member pertains to ejecting a LUN or unit device.</p>
 </dd>
 
-### -field <b>Removeable</b>
+### -field Removeable
 
 <dd>
 <p>Specifies whether the device can be dynamically removed from its immediate parent. If <b>Removable</b> is set to <b>TRUE</b>, the device does not belong to the same physical object as its parent. </p>
 <p>If <b>Removable</b> is set to <b>TRUE</b>, the device is displayed in the Unplug or Eject Hardware program, unless <b>SurpriseRemovalOK</b> is also set to <b>TRUE</b>.</p>
 </dd>
 
-### -field <b>DockDevice</b>
+### -field DockDevice
 
 <dd>
 <p>Specifies whether the device is a docking peripheral.</p>
 </dd>
 
-### -field <b>UniqueID</b>
+### -field UniqueID
 
 <dd>
 <p>Specifies whether the device's instance ID is unique system-wide. This bit is clear if the instance ID is unique only within the scope of the bus.</p>
 </dd>
 
-### -field <b>SilentInstall</b>
+### -field SilentInstall
 
 <dd>
 <p>Specifies whether <b>Device Manager</b> should suppress all installation dialog boxes; except required dialog boxes such as "no compatible drivers found."</p>
 </dd>
 
-### -field <b>RawDeviceOK</b>
+### -field RawDeviceOK
 
 <dd>
 <p>Specifies whether the driver for the underlying bus can drive the device if there is no function driver (for example, SCSI devices in pass-through mode). This mode of operation is called raw mode.</p>
 </dd>
 
-### -field <b>SurpriseRemovalOK</b>
+### -field SurpriseRemovalOK
 
 <dd>
 <p>Specifies whether the miniport driver for the device can handle the case where the device is removed before Storport can send SRB_FUNCTION_PNP with <b>StorRemoveDevice</b> as the <b>PnPAction</b> in the <a href="..\storport\ns-storport--scsi-pnp-request-block.md">SCSI_PNP_REQUEST_BLOCK</a> structure. If <b>SurpriseRemovalOK</b> is set to <b>TRUE</b>, the device can be safely removed from its immediate parent regardless of the state that its driver is in. </p>
 </dd>
 
-### -field <b>NoDisplayInUI</b>
+### -field NoDisplayInUI
 
 <dd>
 <p>Do not display the device in the user interface. If this bit is set, the device is never displayed in the user interface, even if the device is present but fails to start. Miniport drivers do not set this bit.</p>
 </dd>
 
-### -field <b>DefaultWriteCacheEnabled</b>
+### -field DefaultWriteCacheEnabled
 
 <dd>
 <p>The storage device's write cache is enabled by default at initialization.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved bits.</p>
 </dd>
 
-### -field <b>Address</b>
+### -field Address
 
 <dd>
 <p>LUN address of the storage unit device.</p>
 </dd>
 
-### -field <b>UINumber</b>
+### -field UINumber
 
 <dd>
 <p>Specifies a number associated with the device that can be displayed in the user interface. 
@@ -178,7 +178,7 @@ This number might be an ID value chosen to make locating the physical device eas
 </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved bits.</p>

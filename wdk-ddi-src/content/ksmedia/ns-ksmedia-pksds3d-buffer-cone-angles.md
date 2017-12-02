@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>InsideConeAngle</b>
+### -field InsideConeAngle
 
 <dd>
 <p>Specifies the angle in degrees of the inside sound projection cone.</p>
 </dd>
 
-### -field <b>OutsideConeAngle</b>
+### -field OutsideConeAngle
 
 <dd>
 <p>Specifies the angle in degrees of the outside sound projection cone.</p>

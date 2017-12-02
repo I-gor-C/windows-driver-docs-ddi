@@ -7,7 +7,7 @@ old-location: ifsk\file_fs_size_information.htm
 old-project: ifsk
 ms.assetid: b7b35df9-04bb-40f0-a076-f4ed5f54ca6c
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILE_FS_SIZE_INFORMATION, FILE_FS_SIZE_INFORMATION, *PFILE_FS_SIZE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,27 +57,27 @@ typedef struct _FILE_FS_SIZE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>TotalAllocationUnits</b>
+### -field TotalAllocationUnits
 
 <dd>
 <p>Total number of allocation units on the volume that are available to the user associated with the calling thread. </p>
 <p><b>Microsoft Windows 2000 and later:</b> If per-user quotas are in use, this value may be less than the total number of allocation units on the disk. </p>
 </dd>
 
-### -field <b>AvailableAllocationUnits</b>
+### -field AvailableAllocationUnits
 
 <dd>
 <p>Total number of free allocation units on the volume that are available to the user associated with the calling thread. </p>
 <p><b>Windows 2000 and later:</b> If per-user quotas are in use, this value may be less than the total number of free allocation units on the disk. </p>
 </dd>
 
-### -field <b>SectorsPerAllocationUnit</b>
+### -field SectorsPerAllocationUnit
 
 <dd>
 <p>Number of sectors in each allocation unit. </p>
 </dd>
 
-### -field <b>BytesPerSector</b>
+### -field BytesPerSector
 
 <dd>
 <p>Number of bytes in each sector. </p>
@@ -125,4 +125,4 @@ typedef struct _FILE_FS_SIZE_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_FS_SIZE_INFORMATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_FS_SIZE_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

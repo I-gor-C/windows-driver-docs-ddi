@@ -7,7 +7,7 @@ old-location: wdf\wdf_power_device_state_umdf.htm
 old-project: wdf
 ms.assetid: de92bf06-b8fa-4c16-9216-95d68ca75111
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,49 +64,49 @@ typedef enum _WDF_POWER_DEVICE_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfPowerDeviceInvalid"></a><a id="wdfpowerdeviceinvalid"></a><a id="WDFPOWERDEVICEINVALID"></a><b>WdfPowerDeviceInvalid</b>
+### -field WdfPowerDeviceInvalid
 
 <dd>
 <p>The device power state is invalid or unknown.</p>
 </dd>
 
-### -field <a id="WdfPowerDeviceD0"></a><a id="wdfpowerdeviced0"></a><a id="WDFPOWERDEVICED0"></a><b>WdfPowerDeviceD0</b>
+### -field WdfPowerDeviceD0
 
 <dd>
 <p>The device supports the D0 device power state.</p>
 </dd>
 
-### -field <a id="WdfPowerDeviceD1"></a><a id="wdfpowerdeviced1"></a><a id="WDFPOWERDEVICED1"></a><b>WdfPowerDeviceD1</b>
+### -field WdfPowerDeviceD1
 
 <dd>
 <p>The device supports the D1 device power state.</p>
 </dd>
 
-### -field <a id="WdfPowerDeviceD2"></a><a id="wdfpowerdeviced2"></a><a id="WDFPOWERDEVICED2"></a><b>WdfPowerDeviceD2</b>
+### -field WdfPowerDeviceD2
 
 <dd>
 <p>The device supports the D2 device power state.</p>
 </dd>
 
-### -field <a id="WdfPowerDeviceD3"></a><a id="wdfpowerdeviced3"></a><a id="WDFPOWERDEVICED3"></a><b>WdfPowerDeviceD3</b>
+### -field WdfPowerDeviceD3
 
 <dd>
 <p>The device supports the D3 device power state.</p>
 </dd>
 
-### -field <a id="WdfPowerDeviceD3Final"></a><a id="wdfpowerdeviced3final"></a><a id="WDFPOWERDEVICED3FINAL"></a><b>WdfPowerDeviceD3Final</b>
+### -field WdfPowerDeviceD3Final
 
 <dd>
 <p>The final time that the device enters the D3 device power state. Typically, this value means that the computer's power is being turned off or the device is being removed from the computer. The device might have been already removed.</p>
 </dd>
 
-### -field <a id="WdfPowerDevicePrepareForHibernation"></a><a id="wdfpowerdeviceprepareforhibernation"></a><a id="WDFPOWERDEVICEPREPAREFORHIBERNATION"></a><b>WdfPowerDevicePrepareForHibernation</b>
+### -field WdfPowerDevicePrepareForHibernation
 
 <dd>
 <p>The device supports hibernation files, and the computer is ready to hibernate by entering system state S4. The driver must not turn off the device.</p>
 </dd>
 
-### -field <a id="WdfPowerDeviceMaximum"></a><a id="wdfpowerdevicemaximum"></a><a id="WDFPOWERDEVICEMAXIMUM"></a><b>WdfPowerDeviceMaximum</b>
+### -field WdfPowerDeviceMaximum
 
 <dd>
 <p>Valid enumeration values were exceeded.</p>
@@ -141,4 +141,4 @@ typedef enum _WDF_POWER_DEVICE_STATE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_POWER_DEVICE_STATE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_POWER_DEVICE_STATE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

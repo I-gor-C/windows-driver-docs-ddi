@@ -54,7 +54,7 @@ typedef enum _HFP_BYPASS_CODEC_ID_VERSION {
 ## -enum-fields
 <dl>
 
-### -field <a id="REQ_HFP_BYPASS_CODEC_ID_V1"></a><a id="req_hfp_bypass_codec_id_v1"></a><b>REQ_HFP_BYPASS_CODEC_ID_V1</b>
+### -field REQ_HFP_BYPASS_CODEC_ID_V1
 
 <dd>
 <p>Codec ID structure version 1.</p>

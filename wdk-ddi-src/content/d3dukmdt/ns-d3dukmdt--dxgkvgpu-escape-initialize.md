@@ -54,7 +54,7 @@ typedef struct _DXGKVGPU_ESCAPE_INITIALIZE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The header that is being operated over.</p>

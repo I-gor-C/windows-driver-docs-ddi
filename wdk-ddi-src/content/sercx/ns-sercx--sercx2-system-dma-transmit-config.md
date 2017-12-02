@@ -70,61 +70,61 @@ typedef struct _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
-### -field <b>MaximumTransferLength</b>
+### -field MaximumTransferLength
 
 <dd>
 <p>The default maximum size, in bytes, that the serial controller can handle in a single system DMA transfer. If the size of the buffer in the write (<a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>) request is larger than this maximum size, SerCx2 uses multiple DMA transfers to handle the request, and limits each transfer to the maximum length.</p>
 </dd>
 
-### -field <b>MinimumTransactionLength</b>
+### -field MinimumTransactionLength
 
 <dd>
 <p>The minimum length, in bytes, of a system-DMA-transmit transaction. If the length of the buffer in a write request is less than this minimum length, SerCx2 uses programmed I/O (PIO) for the transaction.</p>
 </dd>
 
-### -field <b>DmaAlignment</b>
+### -field DmaAlignment
 
 <dd>
 <p>DMA alignment requirement. Specifies how the starting address of a transfer in a system-DMA-transmit transaction must be aligned in memory. Set this member to the appropriate FILE_<i>XXX</i>_ALIGNMENT constant in the Wdm.h header file. For example, FILE_WORD_ALIGNMENT indicates that the starting DMA address must be aligned to a two-byte boundary in memory, FILE_LONG_ALIGNMENT indicates that the address must be aligned to a four-byte boundary, and so on. SerCx2 does not support FILE_BYTE_ALIGNMENT. The minimum transfer unit (MTU) of the system DMA adapter should be greater than or equal to the required alignment. For example, if the MTU is four bytes, <b>DmaAlignment</b> must be at least FILE_LONG_ALIGNMENT.</p>
 </dd>
 
-### -field <b>MaximumScatterGatherFragments</b>
+### -field MaximumScatterGatherFragments
 
 <dd>
 <p>The maximum number of buffer fragments that can be specified in the scatter/gather list for a DMA transfer in a system-DMA-transmit transaction.</p>
 </dd>
 
-### -field <b>DmaWidth</b>
+### -field DmaWidth
 
 <dd>
 <p>The width of the data register at the address specified by <b>DeviceAddress</b>. Possible values are <b>Width8Bits</b>, <b>Width16Bits</b>, <b>Width32Bits</b>, and <b>Width64Bits</b>.</p>
 </dd>
 
-### -field <b>DeviceAddress</b>
+### -field DeviceAddress
 
 <dd>
 <p>The translated device address to which the DMA controller transfers data to be transmitted. For more information, see the description of the <b>DeviceAddress</b> member in <a href="..\wdfdmaenabler\ns-wdfdmaenabler--wdf-dma-system-profile-config.md">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>.</p>
 </dd>
 
-### -field <b>DmaDescriptor</b>
+### -field DmaDescriptor
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes the system DMA resource to use for transmit transactions. The serial controller driver gets this structure from the raw resource list it receives in the <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-prepare-hardware.md">EvtDevicePrepareHardware</a> callback that starts the serial controller.</p>
 </dd>
 
-### -field <b>MinimumTransferUnitOverride</b>
+### -field MinimumTransferUnitOverride
 
 <dd>
 <p>An override value to use in place of the default minimum transfer unit. The number of bytes specified by an element in a scatter/gather list must be an integer multiple of the minimum transfer unit. A value of  zero indicates that the default minimum transfer unit should be used.  For more information about the default minimum transfer unit, see <a href="..\wdm\ns-wdm--dma-adapter-info-v1.md">DMA_ADAPTER_INFO_V1</a>.</p>
 </dd>
 
-### -field <b>Exclusive</b>
+### -field Exclusive
 
 <dd>
 <p>Whether to use system-DMA-transmit transactions exclusively to handle write (<a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>) requests. Set to <b>TRUE</b> to indicate that write requests should use system-DMA-transmit transactions exclusively. Set to <b>FALSE</b> to indicate that write requests can use a combination of system-DMA-transmit transactions and PIO-transmit transactions.</p>
@@ -132,37 +132,37 @@ typedef struct _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG {
 <p>If <b>Exclusive</b> is <b>TRUE</b>, the <b>MinimumTransferUnitOverride</b>, <b>Alignment</b>, and <b>MinimumTransactionLength</b> members must be zero.</p>
 </dd>
 
-### -field <b>EvtSerCx2SystemDmaTransmitInitializeTransaction</b>
+### -field EvtSerCx2SystemDmaTransmitInitializeTransaction
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-transmit-initialize-transaction.md">EvtSerCx2SystemDmaTransmitInitializeTransaction</a> event callbackcallback function.  This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>
 </dd>
 
-### -field <b>EvtSerCx2SystemDmaTransmitCleanupTransaction</b>
+### -field EvtSerCx2SystemDmaTransmitCleanupTransaction
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-transmit-cleanup-transaction.md">EvtSerCx2SystemDmaTransmitCleanupTransaction</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>
 </dd>
 
-### -field <b>EvtSerCx2SystemDmaTransmitConfigureDmaChannel</b>
+### -field EvtSerCx2SystemDmaTransmitConfigureDmaChannel
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-transmit-configure-dma-channel.md">EvtSerCx2SystemDmaTransmitConfigureDmaChannel</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>
 </dd>
 
-### -field <b>EvtSerCx2SystemDmaTransmitDrainFifo</b>
+### -field EvtSerCx2SystemDmaTransmitDrainFifo
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-transmit-drain-fifo.md">EvtSerCx2SystemDmaTransmitDrainFifo</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function. However, a driver that implements this function must also implement <i>EvtSerCx2SystemDmaTransmitCancelDrainFifo</i> and <i>EvtSerCx2SystemDmaTransmitPurgeFifo</i> functions.</p>
 </dd>
 
-### -field <b>EvtSerCx2SystemDmaTransmitCancelDrainFifo</b>
+### -field EvtSerCx2SystemDmaTransmitCancelDrainFifo
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-transmit-cancel-drain-fifo.md">EvtSerCx2SystemDmaTransmitCancelDrainFifo</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function. However, a driver that implements this function must also implement <i>EvtSerCx2SystemDmaTransmitDrainFifo</i> and <i>EvtSerCx2SystemDmaTransmitPurgeFifo</i> functions.</p>
 </dd>
 
-### -field <b>EvtSerCx2SystemDmaTransmitPurgeFifo</b>
+### -field EvtSerCx2SystemDmaTransmitPurgeFifo
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-transmit-purge-fifo.md">EvtSerCx2SystemDmaTransmitPurgeFifo</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function. However, a driver that implements this function must also implement <i>EvtSerCx2SystemDmaTransmitDrainFifo</i> and <i>EvtSerCx2SystemDmaTransmitCancelDrainFifo</i> functions.</p>

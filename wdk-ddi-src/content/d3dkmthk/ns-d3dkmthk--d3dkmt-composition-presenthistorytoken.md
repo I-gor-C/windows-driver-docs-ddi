@@ -54,7 +54,7 @@ typedef struct _D3DKMT_COMPOSITION_PRESENTHISTORYTOKEN {
 ## -struct-fields
 <dl>
 
-### -field <b>hPrivateData</b>
+### -field hPrivateData
 
 <dd>
 <p>A driver-resident private data structure that identifies a composition swap chain present-history operation.</p>

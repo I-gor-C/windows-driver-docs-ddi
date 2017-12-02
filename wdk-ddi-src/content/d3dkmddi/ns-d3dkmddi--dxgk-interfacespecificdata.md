@@ -61,49 +61,49 @@ typedef struct _DXGK_INTERFACESPECIFICDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>pfnGetHandleDataCb</b>
+### -field pfnGetHandleDataCb
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>pfnGetHandleParentCb</b>
+### -field pfnGetHandleParentCb
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>pfnEnumHandleChildrenCb</b>
+### -field pfnEnumHandleChildrenCb
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>pfnNotifyInterruptCb</b>
+### -field pfnNotifyInterruptCb
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>pfnNotifyDpcCb</b>
+### -field pfnNotifyDpcCb
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>pfnQueryVidPnInterfaceCb</b>
+### -field pfnQueryVidPnInterfaceCb
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>pfnGetCaptureAddressCb</b>
+### -field pfnGetCaptureAddressCb
 
 <dd>
 <p>Reserved for system use.</p>

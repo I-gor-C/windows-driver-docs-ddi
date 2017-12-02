@@ -58,13 +58,13 @@ req.product: Windows 10 or later.
 <text></text>
 
 ### -output-buffer-length
-<p>The <b>AssociatedIrp.SystemBuffer</b> member is a pointer to a caller-allocated <a href="buses.usb_device_characteristics">USB_DEVICE_CHARACTERISTIC</a>S structure.  On input, set <b>Version</b> to USB_DEVICE_CHARACTERISTICS_VERSION_1. On output <b>Version</b> is reset to a version less than or equal to USB_DEVICE_CHARACTERISTICS_VERSION_1;  <b>UsbDeviceCharacteristicsFlags</b> is set to USB_DEVICE_CHARACTERISTICS_MAXIMUM_PATH_DELAYS_AVAILABLE and the remaining members of the structure is filled with delay information.</p>
+<p>The <b>AssociatedIrp.SystemBuffer</b> member is a pointer to a caller-allocated <a href="..\usbioctl\ns-usbioctl--usb-device-characteristics.md">USB_DEVICE_CHARACTERISTIC</a>S structure.  On input, set <b>Version</b> to USB_DEVICE_CHARACTERISTICS_VERSION_1. On output <b>Version</b> is reset to a version less than or equal to USB_DEVICE_CHARACTERISTICS_VERSION_1;  <b>UsbDeviceCharacteristicsFlags</b> is set to USB_DEVICE_CHARACTERISTICS_MAXIMUM_PATH_DELAYS_AVAILABLE and the remaining members of the structure is filled with delay information.</p>
 
-<p>The size of the <a href="buses.usb_device_characteristics">USB_DEVICE_CHARACTERISTICS</a> structure.</p>
+<p>The size of the <a href="..\usbioctl\ns-usbioctl--usb-device-characteristics.md">USB_DEVICE_CHARACTERISTICS</a> structure.</p>
 
-<p>The <b>AssociatedIrp.SystemBuffer</b> member is a pointer to a caller-allocated <a href="buses.usb_device_characteristics">USB_DEVICE_CHARACTERISTIC</a>S structure.  On input, set <b>Version</b> to USB_DEVICE_CHARACTERISTICS_VERSION_1. On output <b>Version</b> is reset to a version less than or equal to USB_DEVICE_CHARACTERISTICS_VERSION_1;  <b>UsbDeviceCharacteristicsFlags</b> is set to USB_DEVICE_CHARACTERISTICS_MAXIMUM_PATH_DELAYS_AVAILABLE and the remaining members of the structure is filled with delay information.</p>
+<p>The <b>AssociatedIrp.SystemBuffer</b> member is a pointer to a caller-allocated <a href="..\usbioctl\ns-usbioctl--usb-device-characteristics.md">USB_DEVICE_CHARACTERISTIC</a>S structure.  On input, set <b>Version</b> to USB_DEVICE_CHARACTERISTICS_VERSION_1. On output <b>Version</b> is reset to a version less than or equal to USB_DEVICE_CHARACTERISTICS_VERSION_1;  <b>UsbDeviceCharacteristicsFlags</b> is set to USB_DEVICE_CHARACTERISTICS_MAXIMUM_PATH_DELAYS_AVAILABLE and the remaining members of the structure is filled with delay information.</p>
 
-<p>The size of the <a href="buses.usb_device_characteristics">USB_DEVICE_CHARACTERISTICS</a> structure.</p>
+<p>The size of the <a href="..\usbioctl\ns-usbioctl--usb-device-characteristics.md">USB_DEVICE_CHARACTERISTICS</a> structure.</p>
 
 ### -in-out-buffer
 

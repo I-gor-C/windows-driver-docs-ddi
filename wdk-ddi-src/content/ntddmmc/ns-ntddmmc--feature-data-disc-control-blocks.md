@@ -55,13 +55,13 @@ typedef struct _FEATURE_DATA_DISC_CONTROL_BLOCKS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>Contains zero, one, or more disk control blocks. Each disk control block is contained in a <a href="..\ntddmmc\ns-ntddmmc--feature-data-disc-control-blocks-ex.md">FEATURE_DATA_DISC_CONTROL_BLOCKS_EX</a> structure. </p>

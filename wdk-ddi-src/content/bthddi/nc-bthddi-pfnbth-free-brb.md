@@ -59,7 +59,7 @@ VOID BthFreeBrb(
 ## -parameters
 <dl>
 
-### -param <i>pBrb</i> [in]
+### -param pBrb [in]
 
 <dd>
 <p>Pointer to the BRB to free.</p>

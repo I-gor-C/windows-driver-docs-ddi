@@ -7,7 +7,7 @@ old-location: wdf\iqueuecallbackiostop.htm
 old-project: wdf
 ms.assetid: 430ee7fd-cffb-452d-b2e8-0dc252987487
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

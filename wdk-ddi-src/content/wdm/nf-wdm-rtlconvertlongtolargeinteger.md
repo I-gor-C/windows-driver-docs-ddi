@@ -55,7 +55,7 @@ LARGE_INTEGER RtlConvertLongToLargeInteger(
 ## -parameters
 <dl>
 
-### -param <i>SignedInteger</i> [in]
+### -param SignedInteger [in]
 
 <dd>
 <p>Specifies an integer of type LONG.</p>

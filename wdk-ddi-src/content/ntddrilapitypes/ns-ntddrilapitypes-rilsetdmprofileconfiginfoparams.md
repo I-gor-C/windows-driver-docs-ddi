@@ -7,7 +7,7 @@ old-location: netvista\rilsetdmprofileconfiginfoparams.htm
 old-project: netvista
 ms.assetid: d485f00e-5fa6-4a01-83fe-78e59a8d8fcb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSETDMPROFILECONFIGINFOPARAMS, RILSETDMPROFILECONFIGINFOPARAMS, *LPRILSETDMPROFILECONFIGINFOPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef struct _RILSETDMPROFILECONFIGINFOPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwConfigItem</b>
+### -field dwConfigItem
 
 <dd></dd>
 
-### -field <b>rciValue</b>
+### -field rciValue
 
 <dd></dd>
 </dl>

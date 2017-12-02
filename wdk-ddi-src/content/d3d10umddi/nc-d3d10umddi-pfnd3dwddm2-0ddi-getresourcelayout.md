@@ -63,43 +63,43 @@ VOID APIENTRY* pfnGetResourceLayout(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>A device handle.</p>
 </dd>
 
-### -param <i>hResource</i> 
+### -param hResource 
 
 <dd>
 <p>A resource handle. </p>
 </dd>
 
-### -param <i>SubresourceCount</i> 
+### -param SubresourceCount 
 
 <dd>
 <p>The subresource count.</p>
 </dd>
 
-### -param <i>Handle</i> [out]
+### -param Handle [out]
 
 <dd>
 <p>A kernel handle.</p>
 </dd>
 
-### -param <i>TextureLayout</i> [out]
+### -param TextureLayout [out]
 
 <dd>
 <p>A pointer to a texture layout.</p>
 </dd>
 
-### -param <i>pMipLevelSwizzleTransition</i> [out]
+### -param pMipLevelSwizzleTransition [out]
 
 <dd>
 <p>A pointer to a MIP level swizzle transition. </p>
 </dd>
 
-### -param <i>SubresourceLayout</i> [out, optional]
+### -param SubresourceLayout [out, optional]
 
 <dd>
 <p>A pointer to the subresource layout.</p>

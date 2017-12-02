@@ -7,7 +7,7 @@ old-location: ifsk\ccpreparepinwrite.htm
 old-project: ifsk
 ms.assetid: 1645c7e9-5ae7-41d1-92db-1f069f79ac81
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: CcPreparePinWrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ BOOLEAN CcPreparePinWrite(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to a file object for the cached file to which the data is to be written.</p>
 </dd>
 
-### -param <i>FileOffset</i> [in]
+### -param FileOffset [in]
 
 <dd>
 <p>Pointer to a variable that specifies the starting byte offset within the file where the data is to be written.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Length of desired data in bytes.</p>
 </dd>
 
-### -param <i>Zero</i> [in]
+### -param Zero [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if the buffer is to be zeroed on return. This parameter is ignored if the PIN_CALLER_TRACKS_DIRTY_DATA flag is set in the <i>Flags</i> parameter.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Bitmask of flags specifying how the pinning operation is to be performed. ORed combination of one or more of the following values: </p>
@@ -137,13 +137,13 @@ BOOLEAN CcPreparePinWrite(
 <p> </p>
 </dd>
 
-### -param <i>Bcb</i> [out]
+### -param Bcb [out]
 
 <dd>
 <p>Opaque pointer to a pinned buffer control block (BCB). This pointer must be supplied as input on any subsequent calls to <b>CcPreparePinWrite</b> or <a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a> for this buffer.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Returns pointer to desired data, valid until the buffer is unpinned or freed.</p>
@@ -250,4 +250,4 @@ BOOLEAN CcPreparePinWrite(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcPreparePinWrite routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcPreparePinWrite routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

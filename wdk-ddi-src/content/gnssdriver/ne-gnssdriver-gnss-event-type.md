@@ -7,7 +7,7 @@ old-location: sensors\gnss_event_type.htm
 old-project: sensors
 ms.assetid: BC862E22-992E-497D-B370-97ABE8897728
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,56 +65,56 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="GNSS_Event_FixAvailable"></a><a id="gnss_event_fixavailable"></a><a id="GNSS_EVENT_FIXAVAILABLE"></a><b>GNSS_Event_FixAvailable</b>
+### -field GNSS_Event_FixAvailable
 
 <dd>
 <p>This event is raised as a result of a prior <a href="..\gnssdriver\ni-gnssdriver-ioctl-gnss-get-fixdata.md">IOCTL_GNSS_GET_FIXDATA</a> call from the adapter. The GNSS driver raises this event when a fix is available for the adapter to collect. The fix data is included in the event data in form of <a href="sensors.gnss_fixdata">GNSS_FIXDATA</a> structure.</p>
 </dd>
 
-### -field <a id="GNSS_Event_RequireAgnss"></a><a id="gnss_event_requireagnss"></a><a id="GNSS_EVENT_REQUIREAGNSS"></a><b>GNSS_Event_RequireAgnss</b>
+### -field GNSS_Event_RequireAgnss
 
 <dd>
 <p>This event is raised as a result of a prior <a href="..\gnssdriver\ni-gnssdriver-ioctl-gnss-listen-agnss.md">IOCTL_GNSS_LISTEN_AGNSS</a> call from the adapter. The driver raises this event whenever it needs injection of certain AGNSS assistance data. The specifics of the injection are available in the event data in form of <a href="sensors.gnss_agnss_request_param">GNSS_AGNSS_REQUEST_PARAM</a> structure.</p>
 </dd>
 
-### -field <a id="GNSS_Event_Error"></a><a id="gnss_event_error"></a><a id="GNSS_EVENT_ERROR"></a><b>GNSS_Event_Error</b>
+### -field GNSS_Event_Error
 
 <dd>
 <p>This event is raised as a result of a prior <a href="..\gnssdriver\ni-gnssdriver-ioctl-gnss-listen-error.md">IOCTL_GNSS_LISTEN_ERROR</a> call from the adapter. The driver raises this event when an out-of-band error occurs that the adapter needs to be aware of. The error details are available in the event data in form of <a href="sensors.gnss_errorinfo">GNSS_ERRORINFO</a> structure. The information can be used by Microsoft to capture telemetry data about what type of errors are seen in the field by different devices, and the data could be shared with OEMs/IHVs to help understand common issues and increase the quality of GNSS engine implementations.</p>
 </dd>
 
-### -field <a id="GNSS_Event_NiRequest"></a><a id="gnss_event_nirequest"></a><a id="GNSS_EVENT_NIREQUEST"></a><b>GNSS_Event_NiRequest</b>
+### -field GNSS_Event_NiRequest
 
 <dd>
 <p>This event is raised when the driver wants to notify an NI request. The HLOS will process the request (for example, display a dialog if requested) then inject a response back to the driver.</p>
 </dd>
 
-### -field <a id="GNSS_Event_NmeaData"></a><a id="gnss_event_nmeadata"></a><a id="GNSS_EVENT_NMEADATA"></a><b>GNSS_Event_NmeaData</b>
+### -field GNSS_Event_NmeaData
 
 <dd>
 <p>This event is raised as a result of a prior <a href="..\gnssdriver\ni-gnssdriver-ioctl-gnss-listen-nmea.md">IOCTL_GNSS_LISTEN_NMEA</a> call, if NMEA logging is enabled in the device. The GNSS driver raises this event when NMEA data is ready to be read by the calling client. The calling client will typically be a test tool. The NMEA sentences data is included in the event data in form of <a href="sensors.gnss_nmea_data">GNSS_NMEA_DATA</a> structure.
 </p>
 </dd>
 
-### -field <a id="GNSS_Event_GeofenceAlertData"></a><a id="gnss_event_geofencealertdata"></a><a id="GNSS_EVENT_GEOFENCEALERTDATA"></a><b>GNSS_Event_GeofenceAlertData</b>
+### -field GNSS_Event_GeofenceAlertData
 
 <dd>
 <p>A previously created geofence has been breached. At the creation time of the geofence, the HLOS had specifically asked for an alert when such a breach happens. For example, an alert for entry should not be raised if the HLOS has requested only exit alerts.</p>
 </dd>
 
-### -field <a id="GNSS_Event_GeofencesTrackingStatus"></a><a id="gnss_event_geofencestrackingstatus"></a><a id="GNSS_EVENT_GEOFENCESTRACKINGSTATUS"></a><b>GNSS_Event_GeofencesTrackingStatus</b>
+### -field GNSS_Event_GeofencesTrackingStatus
 
 <dd>
 <p>The GNSS engine is unable to track one or more geofences due to bad signal conditions or other positioning issues. A status is also raised when the GNSS engine has recovered from a previous failure condition and is now able to track all the geofences.</p>
 </dd>
 
-### -field <a id="GNSS_Event_DriverRequest"></a><a id="gnss_event_driverrequest"></a><a id="GNSS_EVENT_DRIVERREQUEST"></a><b>GNSS_Event_DriverRequest</b>
+### -field GNSS_Event_DriverRequest
 
 <dd>
 <p>Reserved for future extension. The GNSS driver is requesting some out-of-band information from the HLOS.</p>
 </dd>
 
-### -field <a id="GNSS_Event_BreadcrumbAlertEvent"></a><a id="gnss_event_breadcrumbalertevent"></a><a id="GNSS_EVENT_BREADCRUMBALERTEVENT"></a><b>GNSS_Event_BreadcrumbAlertEvent</b>
+### -field GNSS_Event_BreadcrumbAlertEvent
 
 <dd>
 <p>Reserved for future extension:</p>
@@ -131,7 +131,7 @@ typedef enum  {
 <p> </p>
 </dd>
 
-### -field <a id="GNSS_Event_Custom"></a><a id="gnss_event_custom"></a><a id="GNSS_EVENT_CUSTOM"></a><b>GNSS_Event_Custom</b>
+### -field GNSS_Event_Custom
 
 <dd>
 <p>Reserved for vendor-specific custom actions:</p>

@@ -57,25 +57,25 @@ typedef struct _DSM_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>DsmName</b>
+### -field DsmName
 
 <dd>
 <p>A string field of maximum length 63 characters that returns the friendly name of the DSM.</p>
 </dd>
 
-### -field <b>DsmContext</b>
+### -field DsmContext
 
 <dd>
 <p>An unsigned 64-bitfield that represents a unique identifier as used by MPIO to address a particular DSM.</p>
 </dd>
 
-### -field <b>DsmVersion</b>
+### -field DsmVersion
 
 <dd>
 <p>A field that contains an instance of the DSM_VERSION structure with version information for the DSM.</p>
 </dd>
 
-### -field <b>DsmCounters</b>
+### -field DsmCounters
 
 <dd>
 <p>A field that contains an instance of the DSM_COUNTERS structure with timer counters information that is specific to the particular DSM.</p>

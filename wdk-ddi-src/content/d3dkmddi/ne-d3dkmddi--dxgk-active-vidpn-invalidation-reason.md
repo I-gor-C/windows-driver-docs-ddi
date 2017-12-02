@@ -56,19 +56,19 @@ typedef enum _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_AVIR_UNINITIALIZED"></a><a id="dxgk_avir_uninitialized"></a><b>DXGK_AVIR_UNINITIALIZED</b>
+### -field DXGK_AVIR_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type DXGK_ACTIVE_VIDPN_INVALIDATION_REASON has not yet been assigned a meaningful value. </p>
 </dd>
 
-### -field <a id="DXGK_AVIR_HOTKEY"></a><a id="dxgk_avir_hotkey"></a><b>DXGK_AVIR_HOTKEY</b>
+### -field DXGK_AVIR_HOTKEY
 
 <dd>
 <p>Indicates that the user pressed a keyboard shortcut to change the set of monitors (or other display devices) being used to display the desktop. </p>
 </dd>
 
-### -field <a id="DXGK_AVIR_USERMODE"></a><a id="dxgk_avir_usermode"></a><b>DXGK_AVIR_USERMODE</b>
+### -field DXGK_AVIR_USERMODE
 
 <dd>
 <p>Indicates that a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtinvalidateactivevidpn.md">D3DKMTInvalidateActiveVidPn</a> function has been made in user mode.</p>

@@ -58,19 +58,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type. </p>
 </dd>
 
-### -field <b>CurrentFrequency</b>
+### -field CurrentFrequency
 
 <dd>
 <p>Specifies the current tuner frequency. This value is in hertz (Hz).</p>
 </dd>
 
-### -field <b>PLLOffset</b>
+### -field PLLOffset
 
 <dd>
 <p>Specifies the phase locked loop (PLL) offset in multiples of the tuning granularity. This is used if the tuner strategy is KS_TUNER_STRATEGY_PLL. If the tuner strategy is not KS_TUNER_STRATEGY_PLL, this value has no meaning. The following table demonstrates the value to be returned by the minidriver for various tuning conditions, assuming the tuning granularity is 62.5kHz:</p>
@@ -123,7 +123,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>SignalStrength</b>
+### -field SignalStrength
 
 <dd>
 <p>Specifies the amplitude of the signal. This is used if the tuner strategy is KS_TUNER_STRATEGY_SIGNAL_STRENGTH. Regardless of the tuning strategy supported by the minidriver, the valid values for this member are:</p>
@@ -160,7 +160,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>Busy</b>
+### -field Busy
 
 <dd>
 <p>Indicates if the minidriver is presently busy with the process of tuning. This member must be set to <b>TRUE</b> if the minidriver is currently tuning to a channel. Otherwise, if the minidriver is not currently tuning to a new channel, this member must be set to <b>FALSE</b>.</p>
@@ -168,7 +168,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>For more information about the <b>PLLOffset</b> and <b>SignalStrength</b> members see <a href="https://msdn.microsoft.com/ae97d5f7-82de-4d6e-9835-ff4c7427f333">PCI based TV capture</a>. If your tuner device supports radio tuning, see <a href="NULL">Video Capture Devices with Radio Tuners</a>.</p>
+<p>For more information about the <b>PLLOffset</b> and <b>SignalStrength</b> members see <a href="https://msdn.microsoft.com/ae97d5f7-82de-4d6e-9835-ff4c7427f333">PCI based TV capture</a>. If your tuner device supports radio tuning, see <a href="https://msdn.microsoft.com/36e3ca98-cb1b-46cc-809a-8c9ad08a53c8">Video Capture Devices with Radio Tuners</a>.</p>
 
 ## -requirements
 <table>

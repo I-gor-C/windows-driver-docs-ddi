@@ -54,7 +54,7 @@ HRESULT SetThumbnail(
 ## -parameters
 <dl>
 
-### -param <i>pThumbnail</i> [in]
+### -param pThumbnail [in]
 
 <dd>
 <p>A pointer to a new thumbnail.</p>

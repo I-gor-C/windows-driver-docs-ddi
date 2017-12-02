@@ -55,13 +55,13 @@ typedef struct _SetCHAPSharedSecret_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>SharedSecretSize</b>
+### -field SharedSecretSize
 
 <dd>
 <p>The size, in bytes, of the shared secret.</p>
 </dd>
 
-### -field <b>SharedSecret</b>
+### -field SharedSecret
 
 <dd>
 <p>A variable-length array that contains the shared secret.</p>

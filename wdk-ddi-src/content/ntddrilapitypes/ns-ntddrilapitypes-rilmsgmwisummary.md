@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwisummary.htm
 old-project: netvista
 ms.assetid: 5a718c4d-21c9-4dfd-844a-0053a379196d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMSGMWISUMMARY, RILMSGMWISUMMARY, *LPRILMSGMWISUMMARY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef struct _RILMSGMWISUMMARY {
 ## -struct-fields
 <dl>
 
-### -field <b>dwMwiType</b>
+### -field dwMwiType
 
 <dd></dd>
 
-### -field <b>dwNumberOfNewMessages</b>
+### -field dwNumberOfNewMessages
 
 <dd></dd>
 
-### -field <b>dwNumberOfOldMessages</b>
+### -field dwNumberOfOldMessages
 
 <dd></dd>
 
-### -field <b>dwNumberOfNewUrgentMessages</b>
+### -field dwNumberOfNewUrgentMessages
 
 <dd></dd>
 
-### -field <b>dwNumberOfOldUrgentMessages</b>
+### -field dwNumberOfOldUrgentMessages
 
 <dd></dd>
 </dl>

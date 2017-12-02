@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTCloseAdapter(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-closeadapter.md">D3DKMT_CLOSEADAPTER</a> structure that specifies the adapter to close.</p>

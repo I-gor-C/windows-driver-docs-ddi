@@ -58,25 +58,25 @@ typedef struct _BUS_INTERFACE_SWENUM {
 ## -struct-fields
 <dl>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>Specifies the exported <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a>.</p>
 </dd>
 
-### -field <b>ReferenceDeviceObject</b>
+### -field ReferenceDeviceObject
 
 <dd>
 <p>Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksreferencesoftwarebusobject.md">KsReferenceSoftwareBusObject</a> routine.</p>
 </dd>
 
-### -field <b>DereferenceDeviceObject</b>
+### -field DereferenceDeviceObject
 
 <dd>
 <p>Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksdereferencesoftwarebusobject.md">KsDereferenceSoftwareBusObject</a> routine.</p>
 </dd>
 
-### -field <b>QueryReferenceString</b>
+### -field QueryReferenceString
 
 <dd>
 <p>Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksquerysoftwarebusinterface.md">KsQuerySoftwareBusInterface</a> routine.</p>

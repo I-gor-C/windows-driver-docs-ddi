@@ -7,7 +7,7 @@ old-location: debugger\ig_pointer_search_physical.htm
 old-project: debugger
 ms.assetid: fdb8376b-fbda-4bee-895e-a306fd0f632a
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: POINTER_SEARCH_PHYSICAL, POINTER_SEARCH_PHYSICAL, *PPOINTER_SEARCH_PHYSICAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,31 +62,31 @@ typedef struct _POINTER_SEARCH_PHYSICAL {
 ## -struct-fields
 <dl>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Specifies the address in the target's physical memory to start searching from.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Specifies the amount of the target's physical memory to search.</p>
 </dd>
 
-### -field <b>PointerMin</b>
+### -field PointerMin
 
 <dd>
 <p>Specifies the lower limit of the range of pointers to search for.</p>
 </dd>
 
-### -field <b>PointerMax</b>
+### -field PointerMax
 
 <dd>
 <p>Specifies the upper limit of the range of pointers to search for.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies bit flags that alter the behavior of this <b>Ioctl</b> operation.  The following flags can be included.</p>
@@ -131,19 +131,19 @@ typedef struct _POINTER_SEARCH_PHYSICAL {
 <p> </p>
 </dd>
 
-### -field <b>MatchOffsets</b>
+### -field MatchOffsets
 
 <dd>
 <p>Receives the addresses of all the pointers that match the search criteria.  <b>MatchOffsets</b> is an array that contains <b>MatchOffsetsSize</b> elements.</p>
 </dd>
 
-### -field <b>MatchOffsetsSize</b>
+### -field MatchOffsetsSize
 
 <dd>
 <p>Specifies the number of entries in the array <b>MatchOffsets</b>.</p>
 </dd>
 
-### -field <b>MatchOffsetsCount</b>
+### -field MatchOffsetsCount
 
 <dd>
 <p>Receives the number of pointers found that match the search criteria.</p>
@@ -175,4 +175,4 @@ typedef struct _POINTER_SEARCH_PHYSICAL {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20POINTER_SEARCH_PHYSICAL structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20POINTER_SEARCH_PHYSICAL structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

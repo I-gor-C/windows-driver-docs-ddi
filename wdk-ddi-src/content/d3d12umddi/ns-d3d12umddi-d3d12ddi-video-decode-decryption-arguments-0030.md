@@ -58,31 +58,31 @@ typedef struct _D3D12DDI_VIDEO_DECODE_DECRYPTION_ARGUMENTS_0030 {
 ## -struct-fields
 <dl>
 
-### -field <b>hDrvCryptoSessionPolicy</b>
+### -field hDrvCryptoSessionPolicy
 
 <dd>
 <p>Crypto session policy.</p>
 </dd>
 
-### -field <b>pIV</b>
+### -field pIV
 
 <dd>
 <p>Initialization vector.</p>
 </dd>
 
-### -field <b>IVSize</b>
+### -field IVSize
 
 <dd>
 <p>Initialization vector size.</p>
 </dd>
 
-### -field <b>pSubSampleMappingBlock</b>
+### -field pSubSampleMappingBlock
 
 <dd>
 <p>Sub sample mapping block.</p>
 </dd>
 
-### -field <b>SubSampleMappingCount</b>
+### -field SubSampleMappingCount
 
 <dd>
 <p>Sub sample mapping count.</p>

@@ -63,20 +63,20 @@ NTSTATUS ZwQueryEaFile(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [in]
+### -param FileHandle [in]
 
 <dd>
 <p>The handle for the file on which the operation is to be performed.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that 
       receives the final completion status and other information about the requested operation.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>A pointer to a caller-supplied 
@@ -84,13 +84,13 @@ NTSTATUS ZwQueryEaFile(
       buffer, where the extended attribute values are to be returned.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length, in bytes, of the buffer that the <i>Buffer</i> parameter points to.</p>
 </dd>
 
-### -param <i>ReturnSingleEntry</i> [in]
+### -param ReturnSingleEntry [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if 
@@ -98,7 +98,7 @@ NTSTATUS ZwQueryEaFile(
       is found.</p>
 </dd>
 
-### -param <i>EaList</i> [in, optional]
+### -param EaList [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied 
@@ -107,13 +107,13 @@ NTSTATUS ZwQueryEaFile(
       <b>NULL</b>.</p>
 </dd>
 
-### -param <i>EaListLength</i> [in]
+### -param EaListLength [in]
 
 <dd>
 <p>The length, in bytes, of the buffer that the <i>EaList</i> parameter points to.</p>
 </dd>
 
-### -param <i>EaIndex</i> [in, optional]
+### -param EaIndex [in, optional]
 
 <dd>
 <p>The index of the entry at which scanning the file's extended-attribute list should begin. This parameter is 
@@ -121,7 +121,7 @@ NTSTATUS ZwQueryEaFile(
       and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>RestartScan</i> [in]
+### -param RestartScan [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if 

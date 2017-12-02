@@ -7,7 +7,7 @@ old-location: netvista\wwan_sms_flag.htm
 old-project: netvista
 ms.assetid: 6620d6c8-2b8a-440e-acf4-fb08570b13bf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,43 +61,43 @@ typedef enum _WWAN_SMS_FLAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanSmsFlagAll"></a><a id="wwansmsflagall"></a><a id="WWANSMSFLAGALL"></a><b>WwanSmsFlagAll</b>
+### -field WwanSmsFlagAll
 
 <dd>
 <p>No filter is set.</p>
 </dd>
 
-### -field <a id="WwanSmsFlagIndex"></a><a id="wwansmsflagindex"></a><a id="WWANSMSFLAGINDEX"></a><b>WwanSmsFlagIndex</b>
+### -field WwanSmsFlagIndex
 
 <dd>
 <p>Filter based on the value of an index.</p>
 </dd>
 
-### -field <a id="WwanSmsFlagNew"></a><a id="wwansmsflagnew"></a><a id="WWANSMSFLAGNEW"></a><b>WwanSmsFlagNew</b>
+### -field WwanSmsFlagNew
 
 <dd>
 <p>Filter for new (unread) messages.</p>
 </dd>
 
-### -field <a id="WwanSmsFlagOld"></a><a id="wwansmsflagold"></a><a id="WWANSMSFLAGOLD"></a><b>WwanSmsFlagOld</b>
+### -field WwanSmsFlagOld
 
 <dd>
 <p>Filter for old (read) messages.</p>
 </dd>
 
-### -field <a id="WwanSmsFlagSent"></a><a id="wwansmsflagsent"></a><a id="WWANSMSFLAGSENT"></a><b>WwanSmsFlagSent</b>
+### -field WwanSmsFlagSent
 
 <dd>
 <p>Filter for sent messages.</p>
 </dd>
 
-### -field <a id="WwanSmsFlagDraft"></a><a id="wwansmsflagdraft"></a><a id="WWANSMSFLAGDRAFT"></a><b>WwanSmsFlagDraft</b>
+### -field WwanSmsFlagDraft
 
 <dd>
 <p>Filter for draft messages.</p>
 </dd>
 
-### -field <a id="WwanSmsFlagMax"></a><a id="wwansmsflagmax"></a><a id="WWANSMSFLAGMAX"></a><b>WwanSmsFlagMax</b>
+### -field WwanSmsFlagMax
 
 <dd>
 <p>The total number of filter flags.</p>
@@ -137,4 +137,4 @@ typedef enum _WWAN_SMS_FLAG {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_FLAG enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_FLAG enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

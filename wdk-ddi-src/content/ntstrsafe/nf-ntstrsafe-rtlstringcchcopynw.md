@@ -57,25 +57,25 @@ NTSTATUS RtlStringCchCopyN(
 ## -parameters
 <dl>
 
-### -param <i>pszDest</i> [out]
+### -param pszDest [out]
 
 <dd>
 <p>A pointer to a caller-supplied buffer that receives the copied string. The string at <i>pszSrc</i>, up to <i>cchSrc</i> characters, is copied to the buffer at <i>pszDest</i> and terminated with a null character.</p>
 </dd>
 
-### -param <i>cchDest</i> [in]
+### -param cchDest [in]
 
 <dd>
 <p>The size of the destination buffer, in characters. The maximum number of characters allowed is NTSTRSAFE_MAX_CCH.</p>
 </dd>
 
-### -param <i>pszSrc</i> [in]
+### -param pszSrc [in]
 
 <dd>
 <p>A pointer to a caller-supplied, null-terminated string. </p>
 </dd>
 
-### -param <i>cchSrc</i> [in]
+### -param cchSrc [in]
 
 <dd>
 <p>The maximum number of characters to copy from <i>pszSrc</i> to the buffer that is supplied by <i>pszDest</i>.</p>

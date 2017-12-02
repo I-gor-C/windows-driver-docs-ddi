@@ -64,61 +64,61 @@ typedef struct _UNIFM_HDR {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the total size, in bytes, of the .ufm file. Note that this is the total size of all structures used to define the file. This value is not the size of the UNIFM_HDR structure.</p>
 </dd>
 
-### -field <b>dwVersion</b>
+### -field dwVersion
 
 <dd>
 <p>Specifies the file version number, as defined in prntfont.h by a constant with a name format of UNIFM_VERSION_<i>x</i>_<i>x</i>.</p>
 </dd>
 
-### -field <b>ulDefaultCodepage</b>
+### -field ulDefaultCodepage
 
 <dd>
 <p>Specifies the code page identifier for the font's default code page. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>lGlyphSetDataRCID</b>
+### -field lGlyphSetDataRCID
 
 <dd>
 <p>Specifies an RC_GTT resource identifier that identifies a .gtt (Glyph Translation Table) file, or one of the CC_-prefixed code conversion identifiers defined in prntfont.h. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>loUnidrvInfo</b>
+### -field loUnidrvInfo
 
 <dd>
 <p>Specifies the byte offset from the beginning of the .ufm (Unidrv Font Metrics) file to the location of the file's <a href="..\prntfont\ns-prntfont--unidrvinfo.md">UNIDRVINFO</a> structure.</p>
 </dd>
 
-### -field <b>loIFIMetrics</b>
+### -field loIFIMetrics
 
 <dd>
 <p>Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="..\prntfont\ns-prntfont--printifi32.md">PRINTIFI32</a> structure.</p>
 </dd>
 
-### -field <b>loExtTextMetric</b>
+### -field loExtTextMetric
 
 <dd>
 <p>Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="..\prntfont\ns-prntfont--exttextmetric.md">EXTTEXTMETRIC</a> structure.</p>
 </dd>
 
-### -field <b>loWidthTable</b>
+### -field loWidthTable
 
 <dd>
 <p>Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="..\prntfont\ns-prntfont--widthtable.md">WIDTHTABLE</a> structure.</p>
 </dd>
 
-### -field <b>loKernPair</b>
+### -field loKernPair
 
 <dd>
 <p>Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="..\prntfont\ns-prntfont--kerndata.md">KERNDATA</a> structure.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Not used.</p>

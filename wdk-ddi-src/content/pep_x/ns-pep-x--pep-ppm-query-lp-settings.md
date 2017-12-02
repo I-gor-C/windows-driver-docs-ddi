@@ -54,7 +54,7 @@ typedef struct _PEP_PPM_QUERY_LP_SETTINGS {
 ## -struct-fields
 <dl>
 
-### -field <b>RegistryRoot</b>
+### -field RegistryRoot
 
 <dd>
 <p>[out] The kernel handle to the registry root that contains the settings for a platform power scenario. For more information, see Remarks.</p>

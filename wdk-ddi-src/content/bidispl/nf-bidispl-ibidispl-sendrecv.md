@@ -55,7 +55,7 @@ HRESULT IBidiSpl::SendRecv(
 ## -parameters
 <dl>
 
-### -param <i>pszAction</i> [in]
+### -param pszAction [in]
 
 <dd>
 <p>A pointer to a NULL-terminated string that specifies the action for this bidi request. It can be one of the following constants.</p>
@@ -94,7 +94,7 @@ HRESULT IBidiSpl::SendRecv(
 <p> </p>
 </dd>
 
-### -param <i>pRequest</i> [in]
+### -param pRequest [in]
 
 <dd>
 <p>A pointer to a single bidi request.</p>

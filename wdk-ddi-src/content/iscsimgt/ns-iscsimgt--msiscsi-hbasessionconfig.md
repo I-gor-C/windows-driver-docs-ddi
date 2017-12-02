@@ -59,7 +59,7 @@ typedef struct _MSiSCSI_HBASessionConfig {
 ## -struct-fields
 <dl>
 
-### -field <b>InitialR2T</b>
+### -field InitialR2T
 
 <dd>
 <p>A Boolean value that indicates if the HBA initiator requests permission from the target to transmit unsolicited SCSI data whenever it establishes a new session. If this member is <b>TRUE</b>, the HBA initiator requests permission from the target to transmit unsolicited SCSI data whenever it establishes a new session. By default, the initiator does not transmit SCSI data until the target solicits the data by sending a ready-to-transmit (R2T) request, with a buffer offset of 0 and a desired transfer length equal to the minimum of the first burst size and the expected data transfer. </p>
@@ -67,32 +67,32 @@ typedef struct _MSiSCSI_HBASessionConfig {
 <p>If this member is <b>FALSE</b>, all sessions that the initiator creates follow the default behavior. For more information about the InitialR2T key, see the <i>IP Storage Working Group</i> specification. </p>
 </dd>
 
-### -field <b>ImmediateData</b>
+### -field ImmediateData
 
 <dd>
 <p>A Boolean value that indicates if the initiator requests permission from the target to transmit immediate data whenever it establishes a new session. If this member is <b>TRUE</b>, the initiator requests permission from the target to transmit immediate data whenever it establishes a new session. (<i>Immediate data</i> is data that the initiator piggybacks onto an iSCSI command PDU.) </p>
 <p>The session's policy with regard to immediate data is determined by a negotiation between the initiator and the target. For more information about how the values in <b>ImmediateData</b> and <b>InitialR2T</b> affect the negotiation, see the <i>IP Storage Working Group</i> specification.</p>
 </dd>
 
-### -field <b>MaxRecvDataSegmentLength</b>
+### -field MaxRecvDataSegmentLength
 
 <dd>
 <p>The maximum length, in bytes, of a PDU data segment.</p>
 </dd>
 
-### -field <b>MaxBurstLength</b>
+### -field MaxBurstLength
 
 <dd>
 <p>The maximum length, in bytes, of the SCSI data payload in a sequence of input (Data-In) PDUs or solicited output (Data-Out) PDUs.</p>
 </dd>
 
-### -field <b>FirstBurstLength</b>
+### -field FirstBurstLength
 
 <dd>
 <p>The maximum amount, in bytes, of unsolicited data that an initiator can send to a target during the execution of a single SCSI command. This amount includes the immediate data, if any, and the sequence of unsolicited Data-Out PDUs, if any, that follow the command.</p>
 </dd>
 
-### -field <b>MaxOutstandingR2T</b>
+### -field MaxOutstandingR2T
 
 <dd>
 <p>The maximum number of outstanding R2T requests for each task, excluding the first R2T that initiates the task. An R2T is considered <i>outstanding</i> until the last data PDU (with the F bit set to 1) is transferred, or until a sequence reception time-out occurs for that PDU data sequence.</p>

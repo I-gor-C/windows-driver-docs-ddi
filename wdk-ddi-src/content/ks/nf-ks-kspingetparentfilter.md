@@ -54,7 +54,7 @@ PKSFILTER KsPinGetParentFilter(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> for which to return the parent filter.</p>
@@ -65,7 +65,7 @@ PKSFILTER KsPinGetParentFilter(
 <p><b>KsPinGetParentFilter</b> returns a pointer to a <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure representing the parent filter of <i>Pin</i>.</p>
 
 ## -remarks
-<p><b>KsPinGetParentFilter</b> returns the filter to which <i>Pin</i> belongs. The call is an inline function call to <a href="..\ks\nf-ks-ksgetparent.md">KsGetParent</a>. Note that the object hierarchy is only stable while the appropriate mutex is held, in this case the filter control mutex. See <a href="NULL">AVStream Overview</a> For more information about the object hierarchy in AVStream and <a href="NULL">Mutexes in AVStream</a> For more information about mutexes in the AVStream environment.</p>
+<p><b>KsPinGetParentFilter</b> returns the filter to which <i>Pin</i> belongs. The call is an inline function call to <a href="..\ks\nf-ks-ksgetparent.md">KsGetParent</a>. Note that the object hierarchy is only stable while the appropriate mutex is held, in this case the filter control mutex. See <a href="https://msdn.microsoft.com/305039fe-0a00-4f3e-ae1a-61c50a2f2fb3">AVStream Overview</a> For more information about the object hierarchy in AVStream and <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a> For more information about mutexes in the AVStream environment.</p>
 
 ## -requirements
 <table>

@@ -60,37 +60,37 @@ typedef enum _STOR_DEVICE_POWER_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="StorPowerDeviceUnspecified"></a><a id="storpowerdeviceunspecified"></a><a id="STORPOWERDEVICEUNSPECIFIED"></a><b>StorPowerDeviceUnspecified</b>
+### -field StorPowerDeviceUnspecified
 
 <dd>
 <p>Device power state unspecified.</p>
 </dd>
 
-### -field <a id="StorPowerDeviceD0"></a><a id="storpowerdeviced0"></a><a id="STORPOWERDEVICED0"></a><b>StorPowerDeviceD0</b>
+### -field StorPowerDeviceD0
 
 <dd>
 <p>The D0 device power state.</p>
 </dd>
 
-### -field <a id="StorPowerDeviceD1"></a><a id="storpowerdeviced1"></a><a id="STORPOWERDEVICED1"></a><b>StorPowerDeviceD1</b>
+### -field StorPowerDeviceD1
 
 <dd>
 <p>The D1 device power state.</p>
 </dd>
 
-### -field <a id="StorPowerDeviceD2"></a><a id="storpowerdeviced2"></a><a id="STORPOWERDEVICED2"></a><b>StorPowerDeviceD2</b>
+### -field StorPowerDeviceD2
 
 <dd>
 <p>The D2 device power state.</p>
 </dd>
 
-### -field <a id="StorPowerDeviceD3"></a><a id="storpowerdeviced3"></a><a id="STORPOWERDEVICED3"></a><b>StorPowerDeviceD3</b>
+### -field StorPowerDeviceD3
 
 <dd>
 <p>The D3 device power state.</p>
 </dd>
 
-### -field <a id="StorPowerDeviceMaximum"></a><a id="storpowerdevicemaximum"></a><a id="STORPOWERDEVICEMAXIMUM"></a><b>StorPowerDeviceMaximum</b>
+### -field StorPowerDeviceMaximum
 
 <dd>
 <p>The upper delimiting value on device power states.</p>

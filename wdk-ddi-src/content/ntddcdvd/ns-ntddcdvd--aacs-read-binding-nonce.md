@@ -60,31 +60,31 @@ typedef struct _AACS_READ_BINDING_NONCE {
 ## -struct-fields
 <dl>
 
-### -field <b>SessionId</b>
+### -field SessionId
 
 <dd>
 <p>A value of type DVD_SESSION_ID that specifies an AGID. The client obtains this value by a successful call to IOCTL_AACS_START_SESSION.</p>
 </dd>
 
-### -field <b>NumberOfSectors</b>
+### -field NumberOfSectors
 
 <dd>
 <p>The number of sectors in the area for which the binding nonce is retrieved. To request the nonce for a file, the caller of IOCTL_AACS_READ_BINDING_NONCE must set this member to MAXULONGLONG.</p>
 </dd>
 
-### -field <b>StartLba</b>
+### -field StartLba
 
 <dd>
 <p>The starting logical block address of the area for which the binding nonce is retrieved. To request the nonce for a file, the caller of <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-generate-binding-nonce.md">IOCTL_AACS_GENERATE_BINDING_NONCE</a> or <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-read-binding-nonce.md">IOCTL_AACS_READ_BINDING_NONCE</a> must set this member to MAXULONGLONG.</p>
 </dd>
 
-### -field <b>Handle</b>
+### -field Handle
 
 <dd>
 <p>The file handle. Callers of IOCTL_AACS_READ_BINDING_NONCE that use file system support can set this member to a file handle. If the caller does not use file system support, this member must have a value of INVALID_HANDLE_VALUE.</p>
 </dd>
 
-### -field <b>ForceStructureLengthToMatch64bit</b>
+### -field ForceStructureLengthToMatch64bit
 
 <dd></dd>
 </dl>

@@ -55,7 +55,7 @@ ULONG PosCxGetDeviceInterfaceTag(
 ## -parameters
 <dl>
 
-### -param <i>fileObject</i> [in]
+### -param fileObject [in]
 
 <dd>
 <p>      A handle to a framework file object that identifies the caller, usually acquired with <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetfileobject.md">WdfRequestGetFileObject</a>.</p>

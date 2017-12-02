@@ -7,7 +7,7 @@ old-location: netvista\dot11_phy_type.htm
 old-project: netvista
 ms.assetid: 45ef8085-512e-4f9b-a7ea-e4f445555cf8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PRINTER_EVENT_ATTRIBUTES_INFO, PRINTER_EVENT_ATTRIBUTES_INFO, *PPRINTER_EVENT_ATTRIBUTES_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,68 +64,68 @@ typedef enum _DOT11_PHY_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="dot11_phy_type_unknown"></a><a id="DOT11_PHY_TYPE_UNKNOWN"></a><b>dot11_phy_type_unknown</b>
+### -field dot11_phy_type_unknown
 
 <dd>
 <p>Specifies an unknown or uninitialized PHY type.</p>
 </dd>
 
-### -field <a id="dot11_phy_type_any"></a><a id="DOT11_PHY_TYPE_ANY"></a><b>dot11_phy_type_any</b>
+### -field dot11_phy_type_any
 
 <dd>
 <p>Specifies an unknown or uninitialized PHY type.</p>
 </dd>
 
-### -field <a id="dot11_phy_type_fhss"></a><a id="DOT11_PHY_TYPE_FHSS"></a><b>dot11_phy_type_fhss</b>
+### -field dot11_phy_type_fhss
 
 <dd>
 <p>Specifies a frequency-hopping spread-spectrum (FHSS) PHY.</p>
 </dd>
 
-### -field <a id="dot11_phy_type_dsss"></a><a id="DOT11_PHY_TYPE_DSSS"></a><b>dot11_phy_type_dsss</b>
+### -field dot11_phy_type_dsss
 
 <dd>
 <p>Specifies a direct sequence spread spectrum (DSSS) PHY.</p>
 </dd>
 
-### -field <a id="dot11_phy_type_irbaseband"></a><a id="DOT11_PHY_TYPE_IRBASEBAND"></a><b>dot11_phy_type_irbaseband</b>
+### -field dot11_phy_type_irbaseband
 
 <dd>
 <p>Specifies an infrared (IR) baseband PHY.</p>
 </dd>
 
-### -field <a id="dot11_phy_type_ofdm"></a><a id="DOT11_PHY_TYPE_OFDM"></a><b>dot11_phy_type_ofdm</b>
+### -field dot11_phy_type_ofdm
 
 <dd>
 <p>Specifies an orthogonal frequency division multiplexing (OFDM) 802.11a PHY.</p>
 </dd>
 
-### -field <a id="dot11_phy_type_hrdsss"></a><a id="DOT11_PHY_TYPE_HRDSSS"></a><b>dot11_phy_type_hrdsss</b>
+### -field dot11_phy_type_hrdsss
 
 <dd>
 <p>Specifies a high-rate DSSS (HRDSSS) 802.11b PHY.</p>
 </dd>
 
-### -field <a id="dot11_phy_type_erp"></a><a id="DOT11_PHY_TYPE_ERP"></a><b>dot11_phy_type_erp</b>
+### -field dot11_phy_type_erp
 
 <dd>
 <p>Specifies an extended-rate 802.11g PHY (ERP).</p>
 </dd>
 
-### -field <a id="dot11_phy_type_ht"></a><a id="DOT11_PHY_TYPE_HT"></a><b>dot11_phy_type_ht</b>
+### -field dot11_phy_type_ht
 
 <dd>
 <p>Specifies a high-throughput (HT) 802.11n PHY. Each 802.11n PHY, whether dual-band or not, is
      specified as this PHY type.</p>
 </dd>
 
-### -field <a id="dot11_phy_type_vht"></a><a id="DOT11_PHY_TYPE_VHT"></a><b>dot11_phy_type_vht</b>
+### -field dot11_phy_type_vht
 
 <dd>
 <p>Specifies a very high-throughput (VHT) 802.11ac PHY.</p>
 </dd>
 
-### -field <a id="dot11_phy_type_IHV_start"></a><a id="dot11_phy_type_ihv_start"></a><a id="DOT11_PHY_TYPE_IHV_START"></a><b>dot11_phy_type_IHV_start</b>
+### -field dot11_phy_type_IHV_start
 
 <dd>
 <p>Specifies the start of the range that is used to define proprietary PHY types that are developed
@@ -136,7 +136,7 @@ typedef enum _DOT11_PHY_TYPE {
      Extensible Station (ExtSTA) mode.</p>
 </dd>
 
-### -field <a id="dot11_phy_type_IHV_end"></a><a id="dot11_phy_type_ihv_end"></a><a id="DOT11_PHY_TYPE_IHV_END"></a><b>dot11_phy_type_IHV_end</b>
+### -field dot11_phy_type_IHV_end
 
 <dd>
 <p>Specifies the end of the range that is used to define proprietary PHY types that are developed by
@@ -195,4 +195,4 @@ typedef enum _DOT11_PHY_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

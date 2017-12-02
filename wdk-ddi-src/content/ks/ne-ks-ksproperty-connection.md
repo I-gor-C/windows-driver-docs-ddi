@@ -61,35 +61,35 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_CONNECTION_STATE"></a><a id="ksproperty_connection_state"></a><b>KSPROPERTY_CONNECTION_STATE</b>
+### -field KSPROPERTY_CONNECTION_STATE
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_CONNECTION_PRIORITY"></a><a id="ksproperty_connection_priority"></a><b>KSPROPERTY_CONNECTION_PRIORITY</b>
+### -field KSPROPERTY_CONNECTION_PRIORITY
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_CONNECTION_DATAFORMAT"></a><a id="ksproperty_connection_dataformat"></a><b>KSPROPERTY_CONNECTION_DATAFORMAT</b>
+### -field KSPROPERTY_CONNECTION_DATAFORMAT
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_CONNECTION_ALLOCATORFRAMING"></a><a id="ksproperty_connection_allocatorframing"></a><b>KSPROPERTY_CONNECTION_ALLOCATORFRAMING</b>
+### -field KSPROPERTY_CONNECTION_ALLOCATORFRAMING
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT"></a><a id="ksproperty_connection_proposedataformat"></a><b>KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT</b>
+### -field KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_CONNECTION_ACQUIREORDERING"></a><a id="ksproperty_connection_acquireordering"></a><b>KSPROPERTY_CONNECTION_ACQUIREORDERING</b>
+### -field KSPROPERTY_CONNECTION_ACQUIREORDERING
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_CONNECTION_ALLOCATORFRAMING_EX"></a><a id="ksproperty_connection_allocatorframing_ex"></a><b>KSPROPERTY_CONNECTION_ALLOCATORFRAMING_EX</b>
+### -field KSPROPERTY_CONNECTION_ALLOCATORFRAMING_EX
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_CONNECTION_STARTAT"></a><a id="ksproperty_connection_startat"></a><b>KSPROPERTY_CONNECTION_STARTAT</b>
+### -field KSPROPERTY_CONNECTION_STARTAT
 
 <dd></dd>
 </dl>

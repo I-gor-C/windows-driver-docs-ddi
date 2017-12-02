@@ -57,19 +57,19 @@ LONG InterlockedCompareExchange(
 ## -parameters
 <dl>
 
-### -param <i>Destination </i> [in, out]
+### -param Destination  [in, out]
 
 <dd>
 <p>A pointer to the input value that is compared with the value of <i>Comparand</i>.</p>
 </dd>
 
-### -param <i>Exchange </i> [in]
+### -param Exchange  [in]
 
 <dd>
 <p>Specifies the output value pointed to by <i>Destination</i> if the input value pointed to by <i>Destination</i> equals the value of <i>Comparand</i>. </p>
 </dd>
 
-### -param <i>Comparand</i> [in]
+### -param Comparand [in]
 
 <dd>
 <p>Specifies the value that is compared with the input value pointed to by <i>Destination</i>.</p>

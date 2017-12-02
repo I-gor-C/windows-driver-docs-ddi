@@ -7,7 +7,7 @@ old-location: netvista\rilpositioninfo_v2_2.htm
 old-project: netvista
 ms.assetid: f91d95bf-715d-484b-b44e-19bd2250d304
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILPOSITIONINFO_V2,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,67 +70,67 @@ typedef struct _RILPOSITIONINFO_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwSystemType</b>
+### -field dwSystemType
 
 <dd></dd>
 
-### -field <b>stGSMServingCellInfo</b>
+### -field stGSMServingCellInfo
 
 <dd></dd>
 
-### -field <b>stUMTSServingCellInfo</b>
+### -field stUMTSServingCellInfo
 
 <dd></dd>
 
-### -field <b>stTDSCDMAServingCellInfo</b>
+### -field stTDSCDMAServingCellInfo
 
 <dd></dd>
 
-### -field <b>stLTEServingCellInfo</b>
+### -field stLTEServingCellInfo
 
 <dd></dd>
 
-### -field <b>dwCntGSMNMR</b>
+### -field dwCntGSMNMR
 
 <dd></dd>
 
-### -field <b>rgNMR</b>
+### -field rgNMR
 
 <dd></dd>
 
-### -field <b>dwCntUMTSMRL</b>
+### -field dwCntUMTSMRL
 
 <dd></dd>
 
-### -field <b>ruMRL</b>
+### -field ruMRL
 
 <dd></dd>
 
-### -field <b>dwCntTDSCDMAMRL</b>
+### -field dwCntTDSCDMAMRL
 
 <dd></dd>
 
-### -field <b>rtMRL</b>
+### -field rtMRL
 
 <dd></dd>
 
-### -field <b>dwCntEUTRAMRL</b>
+### -field dwCntEUTRAMRL
 
 <dd></dd>
 
-### -field <b>reMRL</b>
+### -field reMRL
 
 <dd></dd>
 
-### -field <b>dwCntC2KMRL</b>
+### -field dwCntC2KMRL
 
 <dd></dd>
 
-### -field <b>rc2kMRL</b>
+### -field rc2kMRL
 
 <dd></dd>
 </dl>

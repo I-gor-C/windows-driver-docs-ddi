@@ -56,13 +56,13 @@ BOOL ControlPrintProcessor(
 ## -parameters
 <dl>
 
-### -param <i>hPrintProcessor</i> [in]
+### -param hPrintProcessor [in]
 
 <dd>
 <p>Caller-supplied print processor handle. This is the handle returned by a previous call to <a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a>.</p>
 </dd>
 
-### -param <i>Command</i> [in]
+### -param Command [in]
 
 <dd>
 <p>Caller-supplied command indicating the type of operation to perform. The following commands are valid:</p>

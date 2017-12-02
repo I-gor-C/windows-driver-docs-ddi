@@ -63,19 +63,19 @@ VP_STATUS HwVidGetVideoChildDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.</p>
 </dd>
 
-### -param <i>ChildEnumInfo</i> [in]
+### -param ChildEnumInfo [in]
 
 <dd>
 <p>Is a <a href="..\video\ns-video--video-child-enum-info.md">VIDEO_CHILD_ENUM_INFO</a> structure that describes the device being enumerated.</p>
 </dd>
 
-### -param <i>VideoChildType</i> [out]
+### -param VideoChildType [out]
 
 <dd>
 <p>Pointer to a location in which the miniport driver returns the type of child being enumerated. This member can be one of the following from the VIDEO_CHILD_TYPE enumeration:</p>
@@ -124,19 +124,19 @@ VP_STATUS HwVidGetVideoChildDescriptor(
 <p> </p>
 </dd>
 
-### -param <i>pChildDescriptor</i> [out]
+### -param pChildDescriptor [out]
 
 <dd>
 <p>Pointer to a buffer in which the miniport driver can return data that identifies the device. The information returned depends on the child type specified in <i>VideoChildType</i>. The size of this buffer is specified by the video port driver in the <b>ChildDescriptorSize</b> member of <a href="..\video\ns-video--video-child-enum-info.md">VIDEO_CHILD_ENUM_INFO</a>.</p>
 </dd>
 
-### -param <i>UId</i> [out]
+### -param UId [out]
 
 <dd>
 <p>Pointer to the location in which the miniport driver returns a unique 32-bit <a href="wdkgloss.d#wdkgloss.device_id#wdkgloss.device_id"><i>device ID</i></a> for this device. The miniport driver should set <i>UId</i> to be DISPLAY_ADAPTER_HW_ID when the device is the actual display adapter.</p>
 </dd>
 
-### -param <i>pUnused</i> [out]
+### -param pUnused [out]
 
 <dd>
 <p>Is unused and must be set to zero.</p>

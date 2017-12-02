@@ -55,13 +55,13 @@ HRESULT AddProperty(
 ## -parameters
 <dl>
 
-### -param <i>pszName</i> [in]
+### -param pszName [in]
 
 <dd>
 <p>The name of the property that you want to add to the property bag. You should uniquely identify this property so that it does not collide with others. For example, use a name like <i>MyCompanyName-MySetting</i>.</p>
 </dd>
 
-### -param <i>pVar</i> [in]
+### -param pVar [in]
 
 <dd>
 <p>The <b>VARIANT</b> value to add to the property bag.</p>

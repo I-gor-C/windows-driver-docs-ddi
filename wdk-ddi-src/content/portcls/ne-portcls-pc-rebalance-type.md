@@ -55,13 +55,13 @@ typedef enum _PC_REBALANCE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PcRebalanceNotSupported_"></a><a id="pcrebalancenotsupported_"></a><a id="PCREBALANCENOTSUPPORTED_"></a><b>PcRebalanceNotSupported </b>
+### -field PcRebalanceNotSupported 
 
 <dd>
 <p>Indicates that PcRebalance is not supported. </p>
 </dd>
 
-### -field <a id="PcRebalanceRemoveSubdevices"></a><a id="pcrebalanceremovesubdevices"></a><a id="PCREBALANCEREMOVESUBDEVICES"></a><b>PcRebalanceRemoveSubdevices</b>
+### -field PcRebalanceRemoveSubdevices
 
 <dd>
 <p>Indicates that PcRebalance is supported via unregistering and re-registering the audio subdevices.</p>
@@ -71,7 +71,7 @@ typedef enum _PC_REBALANCE_TYPE {
 ## -remarks
 <p> Rebalancing is used in certain PCI scenarios. For example when additional devices are added to the PCI chain and the use of memory resources needs to be rearranged and consolidated.</p>
 
-<p>For more information,  see <a href="NULL">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>
+<p>For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430A-BCAF-04E13FA15382">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>
 
 <p>Available in Windows 10, version 1511 and later versions of Windows. </p>
 

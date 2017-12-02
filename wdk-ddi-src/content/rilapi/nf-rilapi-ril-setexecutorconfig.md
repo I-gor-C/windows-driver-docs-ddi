@@ -7,7 +7,7 @@ old-location: netvista\ril_setexecutorconfig.htm
 old-project: netvista
 ms.assetid: 528f5bfb-a84d-48e5-a74d-8f7bcee6d4cb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SetExecutorConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_SetExecutorConfig(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>lpRilExecutorConfig</i> 
+### -param lpRilExecutorConfig 
 
 <dd></dd>
 </dl>

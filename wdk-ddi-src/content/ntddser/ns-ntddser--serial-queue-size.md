@@ -55,13 +55,13 @@ typedef struct _SERIAL_QUEUE_SIZE {
 ## -struct-fields
 <dl>
 
-### -field <b>InSize</b>
+### -field InSize
 
 <dd>
 <p>Number of bytes requested for the input buffer. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>OutSize</b>
+### -field OutSize
 
 <dd>
 <p>Not used. Set to zero.</p>

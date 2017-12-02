@@ -54,7 +54,7 @@ typedef struct _FEATURE_DATA_DISC_CONTROL_BLOCKS_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>ContentDescriptor</b>
+### -field ContentDescriptor
 
 <dd>
 <p>Contains the first of one or more control blocks. The bytes in this array are arranged in big-endian order. <b>ContentDescriptor</b>[0] contains the most significant byte, and <b>ContentDescriptor</b>[3] contains the least significant byte.</p>

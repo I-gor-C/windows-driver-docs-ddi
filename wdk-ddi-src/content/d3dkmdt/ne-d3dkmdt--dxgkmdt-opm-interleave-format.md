@@ -58,31 +58,31 @@ typedef enum _DXGKMDT_OPM_INTERLEAVE_FORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKMDT_OPM_INTERLEAVE_FORMAT_OTHER"></a><a id="dxgkmdt_opm_interleave_format_other"></a><b>DXGKMDT_OPM_INTERLEAVE_FORMAT_OTHER</b>
+### -field DXGKMDT_OPM_INTERLEAVE_FORMAT_OTHER
 
 <dd>
 <p>Indicates that the video frame has a scan line ordering other than those given in the following constants of this enumeration.</p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_INTERLEAVE_FORMAT_PROGRESSIVE"></a><a id="dxgkmdt_opm_interleave_format_progressive"></a><b>DXGKMDT_OPM_INTERLEAVE_FORMAT_PROGRESSIVE</b>
+### -field DXGKMDT_OPM_INTERLEAVE_FORMAT_PROGRESSIVE
 
 <dd>
 <p>Indicates that each video frame has a scan line ordering that is progressive (that is, not interlaced).</p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_INTERLEAVE_FORMAT_INTERLEAVED_EVEN_FIRST"></a><a id="dxgkmdt_opm_interleave_format_interleaved_even_first"></a><b>DXGKMDT_OPM_INTERLEAVE_FORMAT_INTERLEAVED_EVEN_FIRST</b>
+### -field DXGKMDT_OPM_INTERLEAVE_FORMAT_INTERLEAVED_EVEN_FIRST
 
 <dd>
 <p>Indicates that each video frame has a scan line ordering that is interlaced, each field contains half of a frame, and the even scan lines are displayed first. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_INTERLEAVE_FORMAT_INTERLEAVED_ODD_FIRST"></a><a id="dxgkmdt_opm_interleave_format_interleaved_odd_first"></a><b>DXGKMDT_OPM_INTERLEAVE_FORMAT_INTERLEAVED_ODD_FIRST</b>
+### -field DXGKMDT_OPM_INTERLEAVE_FORMAT_INTERLEAVED_ODD_FIRST
 
 <dd>
 <p>Indicates that each video frame has a scan line ordering that is interlaced, each field contains half of a frame, and the odd scan lines are displayed first. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_INTERLEAVE_FORMAT_FORCE_ULONG"></a><a id="dxgkmdt_opm_interleave_format_force_ulong"></a><b>DXGKMDT_OPM_INTERLEAVE_FORMAT_FORCE_ULONG</b>
+### -field DXGKMDT_OPM_INTERLEAVE_FORMAT_FORCE_ULONG
 
 <dd>
 <p>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</p>

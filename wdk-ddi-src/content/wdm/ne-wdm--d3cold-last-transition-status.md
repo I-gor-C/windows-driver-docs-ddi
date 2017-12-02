@@ -57,19 +57,19 @@ typedef enum _D3COLD_LAST_TRANSITION_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="LastDStateTransitionStatusUnknown"></a><a id="lastdstatetransitionstatusunknown"></a><a id="LASTDSTATETRANSITIONSTATUSUNKNOWN"></a><b>LastDStateTransitionStatusUnknown</b>
+### -field LastDStateTransitionStatusUnknown
 
 <dd>
 <p>Information is not available from the bus driver or platform firmware about whether the most recent transition to D3hot was followed by a transition to D3cold.</p>
 </dd>
 
-### -field <a id="LastDStateTransitionD3hot"></a><a id="lastdstatetransitiond3hot"></a><a id="LASTDSTATETRANSITIOND3HOT"></a><b>LastDStateTransitionD3hot</b>
+### -field LastDStateTransitionD3hot
 
 <dd>
 <p>The most recent transition to the D3hot device power state was not followed by a transition to the D3cold device power state.</p>
 </dd>
 
-### -field <a id="LastDStateTransitionD3cold"></a><a id="lastdstatetransitiond3cold"></a><a id="LASTDSTATETRANSITIOND3COLD"></a><b>LastDStateTransitionD3cold</b>
+### -field LastDStateTransitionD3cold
 
 <dd>
 <p>The most recent transition to the D3hot device power state was followed by a transition to the D3cold device power state.</p>

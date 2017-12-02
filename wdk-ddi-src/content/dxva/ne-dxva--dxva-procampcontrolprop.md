@@ -58,31 +58,31 @@ typedef enum _DXVA_ProcAmpControlProp {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVA_ProcAmp_None"></a><a id="dxva_procamp_none"></a><a id="DXVA_PROCAMP_NONE"></a><b>DXVA_ProcAmp_None</b>
+### -field DXVA_ProcAmp_None
 
 <dd>
 <p>Specifies that no ProcAmp properties are used. </p>
 </dd>
 
-### -field <a id="DXVA_ProcAmp_Brightness"></a><a id="dxva_procamp_brightness"></a><a id="DXVA_PROCAMP_BRIGHTNESS"></a><b>DXVA_ProcAmp_Brightness</b>
+### -field DXVA_ProcAmp_Brightness
 
 <dd>
 <p>Specifies that the ProcAmp brightness property is used. </p>
 </dd>
 
-### -field <a id="DXVA_ProcAmp_Contrast"></a><a id="dxva_procamp_contrast"></a><a id="DXVA_PROCAMP_CONTRAST"></a><b>DXVA_ProcAmp_Contrast</b>
+### -field DXVA_ProcAmp_Contrast
 
 <dd>
 <p>Specifies that the ProcAmp contrast property is used. </p>
 </dd>
 
-### -field <a id="DXVA_ProcAmp_Hue"></a><a id="dxva_procamp_hue"></a><a id="DXVA_PROCAMP_HUE"></a><b>DXVA_ProcAmp_Hue</b>
+### -field DXVA_ProcAmp_Hue
 
 <dd>
 <p>Specifies that the ProcAmp hue property is used. </p>
 </dd>
 
-### -field <a id="DXVA_ProcAmp_Saturation"></a><a id="dxva_procamp_saturation"></a><a id="DXVA_PROCAMP_SATURATION"></a><b>DXVA_ProcAmp_Saturation</b>
+### -field DXVA_ProcAmp_Saturation
 
 <dd>
 <p>Specifies that the ProcAmp saturation property is used.</p>

@@ -54,7 +54,7 @@ typedef struct _GetFCPStatistics_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>ScsiId</b>
+### -field ScsiId
 
 <dd>
 <p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbascsiid.md">HBAScsiID</a> that uniquely identifies a logical unit and the bus and HBA that the logical unit is connected to.</p>

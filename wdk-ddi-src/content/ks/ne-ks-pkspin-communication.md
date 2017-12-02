@@ -58,23 +58,23 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPIN_COMMUNICATION_NONE"></a><a id="kspin_communication_none"></a><b>KSPIN_COMMUNICATION_NONE</b>
+### -field KSPIN_COMMUNICATION_NONE
 
 <dd></dd>
 
-### -field <a id="KSPIN_COMMUNICATION_SINK"></a><a id="kspin_communication_sink"></a><b>KSPIN_COMMUNICATION_SINK</b>
+### -field KSPIN_COMMUNICATION_SINK
 
 <dd></dd>
 
-### -field <a id="KSPIN_COMMUNICATION_SOURCE"></a><a id="kspin_communication_source"></a><b>KSPIN_COMMUNICATION_SOURCE</b>
+### -field KSPIN_COMMUNICATION_SOURCE
 
 <dd></dd>
 
-### -field <a id="KSPIN_COMMUNICATION_BOTH"></a><a id="kspin_communication_both"></a><b>KSPIN_COMMUNICATION_BOTH</b>
+### -field KSPIN_COMMUNICATION_BOTH
 
 <dd></dd>
 
-### -field <a id="KSPIN_COMMUNICATION_BRIDGE"></a><a id="kspin_communication_bridge"></a><b>KSPIN_COMMUNICATION_BRIDGE</b>
+### -field KSPIN_COMMUNICATION_BRIDGE
 
 <dd></dd>
 </dl>

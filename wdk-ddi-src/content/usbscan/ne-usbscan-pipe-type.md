@@ -7,7 +7,7 @@ old-location: image\pipe_type.htm
 old-project: image
 ms.assetid: ae3077a3-01a8-4578-9a26-b8b14ec51a7a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: USB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS, *PUSB_TRANSPORT_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="EVENT_PIPE"></a><a id="event_pipe"></a><b>EVENT_PIPE</b>
+### -field EVENT_PIPE
 
 <dd>
 <p>The operation should be performed on the interrupt pipe.</p>
 </dd>
 
-### -field <a id="READ_DATA_PIPE"></a><a id="read_data_pipe"></a><b>READ_DATA_PIPE</b>
+### -field READ_DATA_PIPE
 
 <dd>
 <p>The operation should be performed on the bulk IN pipe.</p>
 </dd>
 
-### -field <a id="WRITE_DATA_PIPE"></a><a id="write_data_pipe"></a><b>WRITE_DATA_PIPE</b>
+### -field WRITE_DATA_PIPE
 
 <dd>
 <p>The operation should be performed on the bulk OUT pipe.</p>
 </dd>
 
-### -field <a id="ALL_PIPE"></a><a id="all_pipe"></a><b>ALL_PIPE</b>
+### -field ALL_PIPE
 
 <dd>
 <p>The operation should be performed on <i>all</i> transfer pipes (not just the pipes associated with the device handle supplied to <a href="base.deviceiocontrol">DeviceIoControl</a>).</p>

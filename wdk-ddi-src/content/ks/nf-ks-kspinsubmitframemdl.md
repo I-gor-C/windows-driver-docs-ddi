@@ -57,25 +57,25 @@ NTSTATUS KsPinSubmitFrameMdl(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure representing the pin on which to submit a frame.</p>
 </dd>
 
-### -param <i>Mdl</i> [in, optional]
+### -param Mdl [in, optional]
 
 <dd>
 <p>A pointer to a memory descriptor list describing the frame buffer. Optional.</p>
 </dd>
 
-### -param <i>StreamHeader</i> [in, optional]
+### -param StreamHeader [in, optional]
 
 <dd>
 <p>A pointer to a <a href="stream.ksstream_header">KSSTREAM_HEADER</a> structure. The stream header is copied if this parameter is supplied. Optional.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that is passed to the frame return callback registered through <a href="..\ks\nf-ks-kspinregisterframereturncallback.md">KsPinRegisterFrameReturnCallback</a>. This parameter is optional and is solely for the caller's use.</p>

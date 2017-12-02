@@ -58,13 +58,13 @@ BOOLEAN KeRegisterBugCheckReasonCallback(
 ## -parameters
 <dl>
 
-### -param <i>CallbackRecord</i> [out]
+### -param CallbackRecord [out]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551873">KBUGCHECK_REASON_CALLBACK_RECORD</a> structure that was initialized by a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552109">KeInitializeCallbackRecord</a> routine. </p>
 </dd>
 
-### -param <i>CallbackRoutine</i> [in]
+### -param CallbackRoutine [in]
 
 <dd>
 <p>A pointer to the callback routine to register. This parameter points to one of the following types of driver-implemented routine: </p>
@@ -87,7 +87,7 @@ BOOLEAN KeRegisterBugCheckReasonCallback(
 </dl>
 </dd>
 
-### -param <i>Reason</i> [in]
+### -param Reason [in]
 
 <dd>
 <p>Specifies the type of callback routine that <i>CallbackRoutine</i> points to. Set <i>Reason</i> to one of the <a href="..\wdm\ne-wdm--kbugcheck-callback-reason.md">KBUGCHECK_CALLBACK_REASON</a> enumeration values in the following table.</p>
@@ -124,7 +124,7 @@ BOOLEAN KeRegisterBugCheckReasonCallback(
 <p> </p>
 </dd>
 
-### -param <i>Component</i> [in]
+### -param Component [in]
 
 <dd>
 <p>A pointer to a null-terminated ANSI string that identifies the caller. For example, you can select a string that describes the device driver, or that contains the device name. You can use the <a href="http://go.microsoft.com/fwlink/p/?linkid=165502">!bugdump</a> debugger extension to display the crash dump data that is associated with this string.</p>

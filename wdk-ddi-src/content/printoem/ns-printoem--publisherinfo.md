@@ -57,19 +57,19 @@ typedef struct _PUBLISHERINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>dwMode</b>
+### -field dwMode
 
 <dd>
 <p>Is a set of bit flags. The only flag defined is OEM_MODE_PUBLISHER, which must be set if a rendering plug-in for Pscript5 is using "publishing mode".</p>
 </dd>
 
-### -field <b>wMinoutlinePPEM</b>
+### -field wMinoutlinePPEM
 
 <dd>
 <p>Specifies the minimum font size, in pixels, for which the Pscript5 driver will download TrueType fonts as outline (Type 1) fonts. A font smaller than the minimum setting will be downloaded as a bitmap (Type 3) font.</p>
 </dd>
 
-### -field <b>wMaxbitmapPPEM</b>
+### -field wMaxbitmapPPEM
 
 <dd>
 <p>Specifies the maximum font size, in pixels, for which the Pscript5 driver will download TrueType fonts as bitmap (Type 3) fonts. A font larger than the maximum setting will be downloaded as an outline (Type 1) font.</p>

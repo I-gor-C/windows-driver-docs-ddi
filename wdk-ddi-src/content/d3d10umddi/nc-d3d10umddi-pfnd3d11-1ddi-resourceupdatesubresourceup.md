@@ -64,49 +64,49 @@ VOID APIENTRY* DefaultConstantBufferUpdateSubresourceUP(D3D11_1)(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hDstResource</i> 
+### -param hDstResource 
 
 <dd>
 <p> A handle to the destination resource to copy to.</p>
 </dd>
 
-### -param <i>DstSubresource</i> 
+### -param DstSubresource 
 
 <dd>
 <p> An index that indicates the destination subresource to copy to.</p>
 </dd>
 
-### -param <i>pDstBox</i> [in, optional]
+### -param pDstBox [in, optional]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-box.md">D3D10_DDI_BOX</a> structure that specifies the region of the destination subresource to copy data to. If <i>pDstBox</i> is <b>NULL</b>, the driver should copy to the entire destination subresouce. </p>
 </dd>
 
-### -param <i>pSysMemUP</i> [in]
+### -param pSysMemUP [in]
 
 <dd>
 <p> A pointer to the beginning address of the source data that <b>DefaultConstantBufferUpdateSubresourceUP(D3D11_1)</b> uses to update the destination subresouce. </p>
 </dd>
 
-### -param <i>RowPitch</i> 
+### -param RowPitch 
 
 <dd>
 <p> The offset, in bytes, to move to the next row of source data.</p>
 </dd>
 
-### -param <i>DepthPitch</i> 
+### -param DepthPitch 
 
 <dd>
 <p> The offset, in bytes, to move to the next depth slice of source data.</p>
 </dd>
 
-### -param <i>CopyFlags</i> 
+### -param CopyFlags 
 
 <dd>
 <p>A value that specifies characteristics of copy operation as a bitwise <b>OR</b> of the values in the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1-ddi-copy-flags.md">D3D11_1_DDI_COPY_FLAGS</a> enumeration type.</p>

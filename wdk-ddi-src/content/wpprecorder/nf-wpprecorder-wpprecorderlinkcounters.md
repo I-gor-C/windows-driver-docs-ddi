@@ -55,7 +55,7 @@ NTSTATUS WppRecorderLinkCounters(
 ## -parameters
 <dl>
 
-### -param <i>CounterOwner</i> [in]
+### -param CounterOwner [in]
 
 <dd>
 <p>ID of the counter whose current value is to be read.</p>

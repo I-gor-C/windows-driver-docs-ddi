@@ -54,7 +54,7 @@ ULONG_PTR GetCPSUIUserData(
 ## -parameters
 <dl>
 
-### -param <i>hDlg</i> 
+### -param hDlg 
 
 <dd>
 <p>Caller-supplied handle to a property sheet dialog box. For more information, see the following Remarks section.</p>

@@ -56,19 +56,19 @@ typedef struct _D3DDDIARG_STARTSESSIONKEYREFRESH {
 ## -struct-fields
 <dl>
 
-### -field <b>hCryptoSession</b>
+### -field hCryptoSession
 
 <dd>
 <p>[in] A handle to the encryption session that is created in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createcryptosession.md">CreateCryptoSession</a> function. </p>
 </dd>
 
-### -field <b>pRandomNumber</b>
+### -field pRandomNumber
 
 <dd>
 <p>[out] A pointer to a buffer that contains the status sequence number for the random start. </p>
 </dd>
 
-### -field <b>RandomNumberSize</b>
+### -field RandomNumberSize
 
 <dd>
 <p>[in/out] The size, in bytes, of the number that the <b>pRandomNumber</b> member points to. </p>

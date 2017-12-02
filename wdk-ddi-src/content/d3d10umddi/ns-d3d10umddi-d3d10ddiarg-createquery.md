@@ -55,13 +55,13 @@ typedef struct D3D10DDIARG_CREATEQUERY {
 ## -struct-fields
 <dl>
 
-### -field <b>Query</b>
+### -field Query
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi-query.md">D3D10DDI_QUERY</a>-typed value that identifies the type of query to create. </p>
 </dd>
 
-### -field <b>MiscFlags</b>
+### -field MiscFlags
 
 <dd>
 <p>[in] A valid bitwise OR of flag values for the query. Currently, the Direct3D runtime supports only the D3D10DDI_QUERY_MISCFLAG_PREDICATEHINT (0x1) flag. This flag is set along with a D3DQUERYTYPE_OCCLUSIONPREDICATE query type to indicate that the predicate query is a hint. If a predicate query is indicated as a hint (versus guaranteed), no result is ever propagated back to the calling application. </p>

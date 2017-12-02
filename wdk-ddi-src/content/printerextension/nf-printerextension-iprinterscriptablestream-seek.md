@@ -57,19 +57,19 @@ HRESULT Seek(
 ## -parameters
 <dl>
 
-### -param <i>lOffset</i> [in]
+### -param lOffset [in]
 
 <dd>
 <p>The displacement to be added to the location indicated by the <i>streamSeek</i> parameter.</p>
 </dd>
 
-### -param <i>streamSeek</i> [in]
+### -param streamSeek [in]
 
 <dd>
 <p>The origin for the displacement specified <i>lOffset</i>.</p>
 </dd>
 
-### -param <i>plPosition</i> [out, retval]
+### -param plPosition [out, retval]
 
 <dd>
 <p>The new pointer position.</p>

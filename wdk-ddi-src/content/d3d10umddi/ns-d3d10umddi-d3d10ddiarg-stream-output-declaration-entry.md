@@ -56,19 +56,19 @@ typedef struct D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>OutputSlot</b>
+### -field OutputSlot
 
 <dd>
 <p>[in] The number of the slot for the portion of the stream output. </p>
 </dd>
 
-### -field <b>RegisterIndex</b>
+### -field RegisterIndex
 
 <dd>
 <p>[in] The number of the register for the portion of the stream output.</p>
 </dd>
 
-### -field <b>RegisterMask</b>
+### -field RegisterMask
 
 <dd>
 <p>[in] The xyzw register mask for the portion of the stream output. That is, the four least signifigant bits (LSBs) of the mask represent xyzw respectively. </p>

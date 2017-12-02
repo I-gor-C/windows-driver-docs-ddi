@@ -7,7 +7,7 @@ old-location: wdf\iusbtargetpipecontinuousreadercallbackreadersfailed.htm
 old-project: wdf
 ms.assetid: d0b68976-f7aa-4b0d-b6bb-258ad2c2e506
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFUsbTargetPipe2, ConfigureContinuousReader, IWDFUsbTargetPipe2::ConfigureContinuousReader
 ms.prod: windows-hardware
 ms.technology: windows-devices

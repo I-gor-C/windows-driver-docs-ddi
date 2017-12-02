@@ -56,19 +56,19 @@ typedef struct _DXGKARG_RESETENGINE {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>[in] An index of a node within the physical adapter defined by   the <b>EngineOrdinal</b> member that is being reset in a call to <a href="display.dxgkddiresetengine">DxgkDdiResetEngine</a>.</p>
 </dd>
 
-### -field <b>EngineOrdinal</b>
+### -field EngineOrdinal
 
 <dd>
 <p>[in] An index that defines the physical adapter in a linked display adapter (LDA) configuration that the node defined by <b>NodeOrdinal</b> belongs to.</p>
 </dd>
 
-### -field <b>LastAbortedFenceId</b>
+### -field LastAbortedFenceId
 
 <dd>
 <p>[out] The fence identifier for the last packet that was aborted in the middle of execution.</p>

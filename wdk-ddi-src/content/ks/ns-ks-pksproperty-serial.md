@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>PropTypeSet</b>
+### -field PropTypeSet
 
 <dd>
 <p>A structure of type <a href="stream.ksidentifier">KSIDENTIFIER</a> that specifies the type of property data. This is the same information obtained from querying Basic Support.</p>
 </dd>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>Specifies the identifier for this property.</p>
 </dd>
 
-### -field <b>PropertyLength</b>
+### -field PropertyLength
 
 <dd>
 <p>Specifies the length, in bytes, of the following property data. This does not include any alignment buffering that may be appended to the property data before the next property in the serialization.</p>

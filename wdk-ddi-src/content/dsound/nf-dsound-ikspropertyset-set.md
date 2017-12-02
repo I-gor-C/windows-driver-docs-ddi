@@ -59,37 +59,37 @@ HRESULT Set(
 ## -parameters
 <dl>
 
-### -param <i>PropSet</i> [in]
+### -param PropSet [in]
 
 <dd>
 <p>GUID that identifies the property set.</p>
 </dd>
 
-### -param <i>Id</i> [in]
+### -param Id [in]
 
 <dd>
 <p>Identifier of the property within the property set. </p>
 </dd>
 
-### -param <i>InstanceData</i> [in]
+### -param InstanceData [in]
 
 <dd>
 <p>Pointer to instance data for the property. </p>
 </dd>
 
-### -param <i>InstanceLength</i> [in]
+### -param InstanceLength [in]
 
 <dd>
 <p>Size, in bytes, of the buffer at <i>InstanceData</i>. </p>
 </dd>
 
-### -param <i>PropertyData</i> [in]
+### -param PropertyData [in]
 
 <dd>
 <p>Pointer to a buffer that contains the value of the property to set. </p>
 </dd>
 
-### -param <i>DataLength</i> [in]
+### -param DataLength [in]
 
 <dd>
 <p>Size, in bytes, of the buffer at <i>PropertyData</i>. </p>

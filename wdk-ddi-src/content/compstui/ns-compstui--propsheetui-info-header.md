@@ -62,13 +62,13 @@ typedef struct _PROPSHEETUI_INFO_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>CPSUI-supplied size, in bytes, of the PROPSHEETUI_INFO_HEADER structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Optional, application-specified bit flags that modify the property sheet page's appearance. The flags listed in the following table can be used in any combination.</p>
@@ -121,29 +121,29 @@ typedef struct _PROPSHEETUI_INFO_HEADER {
 <p> </p>
 </dd>
 
-### -field <b>pTitle</b>
+### -field pTitle
 
 <dd>
 <p>String identifier, representing text to be displayed in the property sheet's title bar. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero. For printer interface DLLs, the string typically contains the printer's name.</p>
 </dd>
 
-### -field <b>hWndParent</b>
+### -field hWndParent
 
 <dd>
 <p>Handle to the window to be used as the parent of the property sheet. By default, CPSUI supplies the window handle that it received for the <i>hWndOwner</i> parameter to <a href="print.commonpropertysheetui">CommonPropertySheetUI</a>, but the application can overwrite that handle with another.</p>
 </dd>
 
-### -field <b>hInst</b>
+### -field hInst
 
 <dd>
 <p>Application-supplied instance handle, which CPSUI uses when loading application resources.</p>
 </dd>
 
-### -field <b>hIcon</b>
+### -field hIcon
 
 <dd></dd>
 
-### -field <b>IconID</b>
+### -field IconID
 
 <dd>
 <p>This union identifies the icon to be displayed in the property sheet's title bar. The union member is selected by PSUIHDRF_USEICON in <b>Flags</b>.</p>

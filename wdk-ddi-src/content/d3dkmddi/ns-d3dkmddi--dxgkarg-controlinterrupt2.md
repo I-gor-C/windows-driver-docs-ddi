@@ -55,13 +55,13 @@ typedef struct _DXGKARG_CONTROLINTERRUPT2 {
 ## -struct-fields
 <dl>
 
-### -field <b>InterruptState</b>
+### -field InterruptState
 
 <dd>
 <p>Indicates whether  interrupts are enabled for the driver.</p>
 </dd>
 
-### -field <b>CrtcVsyncState</b>
+### -field CrtcVsyncState
 
 <dd>
 <p>Indicates whether VSYNCs are enabled if interrupts are also enabled for the driver.</p>

@@ -58,31 +58,31 @@ typedef enum DXGI_DDI_FLIP_INTERVAL_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGI_DDI_FLIP_INTERVAL_IMMEDIATE"></a><a id="dxgi_ddi_flip_interval_immediate"></a><b>DXGI_DDI_FLIP_INTERVAL_IMMEDIATE</b>
+### -field DXGI_DDI_FLIP_INTERVAL_IMMEDIATE
 
 <dd>
 <p>Indicates to perform the flip immediately without waiting for a vertical sync to occur. </p>
 </dd>
 
-### -field <a id="DXGI_DDI_FLIP_INTERVAL_ONE"></a><a id="dxgi_ddi_flip_interval_one"></a><b>DXGI_DDI_FLIP_INTERVAL_ONE</b>
+### -field DXGI_DDI_FLIP_INTERVAL_ONE
 
 <dd>
 <p>Indicates to perform the flip on every vertical sync. </p>
 </dd>
 
-### -field <a id="DXGI_DDI_FLIP_INTERVAL_TWO"></a><a id="dxgi_ddi_flip_interval_two"></a><b>DXGI_DDI_FLIP_INTERVAL_TWO</b>
+### -field DXGI_DDI_FLIP_INTERVAL_TWO
 
 <dd>
 <p>Indicates to perform the flip on every other vertical sync. </p>
 </dd>
 
-### -field <a id="DXGI_DDI_FLIP_INTERVAL_THREE"></a><a id="dxgi_ddi_flip_interval_three"></a><b>DXGI_DDI_FLIP_INTERVAL_THREE</b>
+### -field DXGI_DDI_FLIP_INTERVAL_THREE
 
 <dd>
 <p>Indicates to perform the flip on every third vertical sync.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_FLIP_INTERVAL_FOUR"></a><a id="dxgi_ddi_flip_interval_four"></a><b>DXGI_DDI_FLIP_INTERVAL_FOUR</b>
+### -field DXGI_DDI_FLIP_INTERVAL_FOUR
 
 <dd>
 <p>Indicates to perform the flip on every fourth vertical sync.</p>

@@ -56,19 +56,19 @@ NTSTATUS RtlUnicodeStringCbCatStringN(
 ## -parameters
 <dl>
 
-### -param <i>DestinationString</i> [in, out]
+### -param DestinationString [in, out]
 
 <dd>
 <p>A pointer to a <b>UNICODE_STRING</b> structure. This structure includes a buffer that, on input, contains a destination string to which the source string will be concatenated. On output, this buffer is the destination buffer that contains the entire resultant string. The source string (excluding the terminating null) is added to the end of the destination string. The maximum number of bytes in the structure's string buffer is NTSTRSAFE_UNICODE_STRING_MAX_CCH * sizeof(WCHAR).</p>
 </dd>
 
-### -param <i>pszSrc</i> [in]
+### -param pszSrc [in]
 
 <dd>
 <p>A caller-supplied pointer to a null-terminated string. This string will be concatenated to the end of the destination string that is contained in the <b>UNICODE_STRING</b> structure that <i>DestinationString</i> points to.</p>
 </dd>
 
-### -param <i>cbToAppend</i> [in]
+### -param cbToAppend [in]
 
 <dd>
 <p>The maximum number of bytes to append to the string that the <i>DestinationString</i> parameter describes.</p>

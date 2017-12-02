@@ -7,7 +7,7 @@ old-location: netvista\rilevdokind_2.htm
 old-project: netvista
 ms.assetid: df59e0f7-6e78-4098-9a2a-9a3143d66152
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILEVDOKIND {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_EVDOKIND_REVA"></a><a id="ril_evdokind_reva"></a><b>RIL_EVDOKIND_REVA</b>
+### -field RIL_EVDOKIND_REVA
 
 <dd></dd>
 
-### -field <a id="RIL_EVDOKIND_REVB"></a><a id="ril_evdokind_revb"></a><b>RIL_EVDOKIND_REVB</b>
+### -field RIL_EVDOKIND_REVB
 
 <dd></dd>
 
-### -field <a id="RIL_EVDOKIND_MAX"></a><a id="ril_evdokind_max"></a><b>RIL_EVDOKIND_MAX</b>
+### -field RIL_EVDOKIND_MAX
 
 <dd></dd>
 </dl>

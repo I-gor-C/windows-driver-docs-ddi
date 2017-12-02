@@ -56,19 +56,19 @@ typedef struct _DXGKARGCB_GETCAPTUREADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[in] A handle to the allocation that is associated with the capture buffer to retrieve information on. </p>
 </dd>
 
-### -field <b>SegmentId</b>
+### -field SegmentId
 
 <dd>
 <p>[out] The identifier of the segment for the capture buffer. The allocation that is associated with the capture buffer is currently paged in this segment.</p>
 </dd>
 
-### -field <b>PhysicalAddress</b>
+### -field PhysicalAddress
 
 <dd>
 <p>[out] The physical address of the capture buffer.</p>

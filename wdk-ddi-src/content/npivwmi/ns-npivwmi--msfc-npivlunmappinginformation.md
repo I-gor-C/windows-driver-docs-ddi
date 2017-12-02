@@ -58,31 +58,31 @@ typedef struct _MSFC_NPIVLUNMappingInformation {
 ## -struct-fields
 <dl>
 
-### -field <b>WWPNVirtualPort</b>
+### -field WWPNVirtualPort
 
 <dd>
 <p>The world wide port name of the virtual port.</p>
 </dd>
 
-### -field <b>WWPNPhysicalPort</b>
+### -field WWPNPhysicalPort
 
 <dd>
 <p>The world wide port name of the physical port.</p>
 </dd>
 
-### -field <b>OSBus</b>
+### -field OSBus
 
 <dd>
 <p>The path ID of the LUN  mapped to the virtual port.</p>
 </dd>
 
-### -field <b>OSTarget</b>
+### -field OSTarget
 
 <dd>
 <p>The target device ID number of the LUN mapped to the virtual port.</p>
 </dd>
 
-### -field <b>OSLUN</b>
+### -field OSLUN
 
 <dd>
 <p>The LUN mapped to the virtual port.</p>

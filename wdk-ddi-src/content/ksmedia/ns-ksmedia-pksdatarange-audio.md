@@ -59,37 +59,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>DataRange</b>
+### -field DataRange
 
 <dd>
 <p>Specifies the MajorFormat and SubFormat GUIDs as well as the Specifier GUID for the audio data. This member is an initialized <a href="stream.ksdatarange">KSDATARANGE</a> structure.</p>
 </dd>
 
-### -field <b>MaximumChannels</b>
+### -field MaximumChannels
 
 <dd>
 <p>Specifies the maximum number of channels supported. A value of (ULONG)-1 for this member means that the number of channels has no explicit limit, although the number of channels might be practically limited by the availability of resources such as memory or processing power.</p>
 </dd>
 
-### -field <b>MinimumBitsPerSample</b>
+### -field MinimumBitsPerSample
 
 <dd>
 <p>Specifies the minimum bits per sample supported.</p>
 </dd>
 
-### -field <b>MaximumBitsPerSample</b>
+### -field MaximumBitsPerSample
 
 <dd>
 <p>Specifies the maximum bits per sample supported.</p>
 </dd>
 
-### -field <b>MinimumSampleFrequency</b>
+### -field MinimumSampleFrequency
 
 <dd>
 <p>Specifies the minimum frequency allowed.</p>
 </dd>
 
-### -field <b>MaximumSampleFrequency</b>
+### -field MaximumSampleFrequency
 
 <dd>
 <p>Specifies the maximum frequency allowed.</p>
@@ -97,9 +97,9 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>For examples of data ranges that use the KSDATARANGE_AUDIO structure, see <a href="NULL">PCM Stream Data Range</a>, <a href="NULL">DirectSound Stream Data Range</a>, and <a href="NULL">Specifying AC-3 Data Ranges</a>.</p>
+<p>For examples of data ranges that use the KSDATARANGE_AUDIO structure, see <a href="https://msdn.microsoft.com/e8a9b681-3bd2-46ed-970f-5217dbfb2e4e">PCM Stream Data Range</a>, <a href="https://msdn.microsoft.com/cc31eb2d-7421-4748-b14c-f4d3d15f9884">DirectSound Stream Data Range</a>, and <a href="https://msdn.microsoft.com/87d59554-43fa-4d61-9829-c38691d0a525">Specifying AC-3 Data Ranges</a>.</p>
 
-<p>For information about data ranges and intersection handling, see <a href="NULL">Data-Intersection Handlers</a>.</p>
+<p>For information about data ranges and intersection handling, see <a href="https://msdn.microsoft.com/7206afdb-8a34-4b5a-8cea-87119f426161">Data-Intersection Handlers</a>.</p>
 
 ## -requirements
 <table>

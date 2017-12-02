@@ -65,31 +65,31 @@ typedef struct _UFF_FONTDIRECTORY {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSignature</b>
+### -field dwSignature
 
 <dd>
 <p>Specifies the font metrics record signature. This value must be FONT_REC_SIG.</p>
 </dd>
 
-### -field <b>wSize</b>
+### -field wSize
 
 <dd>
 <p>Specifies the size, in bytes, of the UFF_FONTDIRECTORY structure.</p>
 </dd>
 
-### -field <b>wFontID</b>
+### -field wFontID
 
 <dd>
 <p>Specifies the font identifier. This value must match the <b>wDataID</b> member of a <a href="..\prntfont\ns-prntfont--data-header.md">DATA_HEADER</a> structure that specifies font metrics information within the .uff file.</p>
 </dd>
 
-### -field <b>sGlyphID</b>
+### -field sGlyphID
 
 <dd>
 <p>Specifies the glyph set identifier. This value specifies the glyph set that is to be associated with the font. See the following Remarks section.</p>
 </dd>
 
-### -field <b>wFlags</b>
+### -field wFlags
 
 <dd>
 <p>Is a set of bit flags. One or more of the following flags can be specified.</p>
@@ -158,37 +158,37 @@ typedef struct _UFF_FONTDIRECTORY {
 <p> </p>
 </dd>
 
-### -field <b>dwInstallerSig</b>
+### -field dwInstallerSig
 
 <dd>
 <p>Specifies the signature value of the font installer that installed the font.</p>
 </dd>
 
-### -field <b>offFontName</b>
+### -field offFontName
 
 <dd>
 <p>Specifies the offset, in bytes, from the beginning of the .uff file to a DWORD-aligned, NULL-terminated, Unicode string representing the name of the font.</p>
 </dd>
 
-### -field <b>offCartridgeName</b>
+### -field offCartridgeName
 
 <dd>
 <p>Specifies the offset, in bytes, from the beginning of the .uff file to a DWORD-aligned, NULL-terminated, Unicode string representing the name of the font cartridge containing the font. If the font is not contained in a cartridge, this value should be zero.</p>
 </dd>
 
-### -field <b>offFontData</b>
+### -field offFontData
 
 <dd>
 <p>Specifies the offset, in bytes, from the beginning of the .uff file to a DWORD-aligned <a href="..\prntfont\ns-prntfont--data-header.md">DATA_HEADER</a> structure specifying a font metrics section.</p>
 </dd>
 
-### -field <b>offGlyphData</b>
+### -field offGlyphData
 
 <dd>
 <p>Specifies the offset, in bytes, from the beginning of the .uff file to a DWORD-aligned DATA_HEADER structure specifying a glyph set section. If <b>sGlyphID</b> is zero or negative, <b>offGlyphData</b> should be zero.</p>
 </dd>
 
-### -field <b>offVarData</b>
+### -field offVarData
 
 <dd>
 <p>Specifies the offset, in bytes, from the beginning of the .uff file to a DWORD-aligned <a href="..\prntfont\ns-prntfont--data-header.md">DATA_HEADER</a> structure specifying a data section. If the FONT_FL_PERMANENT_SF flag is set in <b>wFlags</b>, <b>offVarData</b> must be zero.</p>

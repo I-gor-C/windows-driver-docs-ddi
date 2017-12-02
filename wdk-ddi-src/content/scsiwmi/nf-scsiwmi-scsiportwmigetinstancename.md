@@ -55,7 +55,7 @@ PWCHAR ScsiPortWmiGetInstanceName(
 ## -parameters
 <dl>
 
-### -param <i>RequestContext</i> [in]
+### -param RequestContext [in]
 
 <dd>
 <p>Pointer to a structure of type <a href="storage.scsiwmi_request_context">SCSIWMI_REQUEST_CONTEXT</a> that contains the request context for a WMI SRB. </p>

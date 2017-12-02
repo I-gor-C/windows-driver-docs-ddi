@@ -58,25 +58,25 @@ STDMETHOD DrvUpdateUISetting(
 ## -parameters
 <dl>
 
-### -param <i>pci</i> 
+### -param pci 
 
 <dd>
 <p>Caller-supplied pointer to an <a href="..\printoem\ns-printoem--oemuiobj.md">OEMUIOBJ</a> structure. </p>
 </dd>
 
-### -param <i>pOptItem</i> 
+### -param pOptItem 
 
 <dd>
 <p>Caller-supplied pointer to an <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structure describing a user interface option item.</p>
 </dd>
 
-### -param <i>dwPreviousSelection</i> 
+### -param dwPreviousSelection 
 
 <dd>
 <p>Not used. </p>
 </dd>
 
-### -param <i>dwMode</i> 
+### -param dwMode 
 
 <dd>
 <p>Caller-supplied integer constant indicating to which property sheet page the supplied option item belongs. The following constants are valid. </p>
@@ -126,7 +126,7 @@ STDMETHOD DrvUpdateUISetting(
 <p> </p>
 
 ## -remarks
-<p>This method is inherited from the <a href="NULL">IPrintOemDriverUI COM Interface</a>, and can be called only by Windows XP Pscript5 UI plug-ins that do not fully replace the core driver's standard UI pages, and is supported during the UI plug-in's <a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a> and <a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a> functions, and their property sheet callback routines. When this method is supported, it has the same behavior as <a href="print.iprintoemdriverui_drvupdateuisetting">IPrintOemDriverUI::DrvUpdateUISetting</a>. When it is not supported, this method should return E_NOTIMPL.</p>
+<p>This method is inherited from the <a href="https://msdn.microsoft.com/ed11789f-750d-4f29-b5e0-ab299a1388db">IPrintOemDriverUI COM Interface</a>, and can be called only by Windows XP Pscript5 UI plug-ins that do not fully replace the core driver's standard UI pages, and is supported during the UI plug-in's <a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a> and <a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a> functions, and their property sheet callback routines. When this method is supported, it has the same behavior as <a href="print.iprintoemdriverui_drvupdateuisetting">IPrintOemDriverUI::DrvUpdateUISetting</a>. When it is not supported, this method should return E_NOTIMPL.</p>
 
 ## -requirements
 <table>

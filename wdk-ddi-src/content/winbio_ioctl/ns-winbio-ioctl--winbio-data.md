@@ -56,13 +56,13 @@ typedef struct _WINBIO_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size, in bytes, of the payload.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>Specifies an array that contains the payload. Frequently this member contains a structure of type <a href="..\winbio_types\ns-winbio-types--winbio-bir.md">WINBIO_BIR</a>.</p>

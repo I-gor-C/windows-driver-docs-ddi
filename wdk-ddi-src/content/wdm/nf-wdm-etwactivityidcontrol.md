@@ -56,7 +56,7 @@ NTSTATUS EtwActivityIdControl(
 ## -parameters
 <dl>
 
-### -param <i>ControlCode</i> [in]
+### -param ControlCode [in]
 
 <dd>
 <p>The <i>ControlCode</i> parameter can be one of the following defined values.</p>
@@ -68,7 +68,7 @@ NTSTATUS EtwActivityIdControl(
 <tr>
 <td width="40%"><a id="EVENT_ACTIVITY_CTRL_GET_ID"></a><a id="event_activity_ctrl_get_id"></a><dl>
 
-### -param <b>EVENT_ACTIVITY_CTRL_GET_ID</b>
+### -param EVENT_ACTIVITY_CTRL_GET_ID
 
 </dl>
 </td>
@@ -79,7 +79,7 @@ NTSTATUS EtwActivityIdControl(
 <tr>
 <td width="40%"><a id="EVENT_ACTIVITY_CTRL_SET_ID"></a><a id="event_activity_ctrl_set_id"></a><dl>
 
-### -param <b>EVENT_ACTIVITY_CTRL_SET_ID</b>
+### -param EVENT_ACTIVITY_CTRL_SET_ID
 
 </dl>
 </td>
@@ -94,7 +94,7 @@ NTSTATUS EtwActivityIdControl(
 <tr>
 <td width="40%"><a id="EVENT_ACTIVITY_CTRL_CREATE_ID"></a><a id="event_activity_ctrl_create_id"></a><dl>
 
-### -param <b>EVENT_ACTIVITY_CTRL_CREATE_ID</b>
+### -param EVENT_ACTIVITY_CTRL_CREATE_ID
 
 </dl>
 </td>
@@ -105,7 +105,7 @@ NTSTATUS EtwActivityIdControl(
 <tr>
 <td width="40%"><a id="EVENT_ACTIVITY_CTRL_GET_SET_ID"></a><a id="event_activity_ctrl_get_set_id"></a><dl>
 
-### -param <b>EVENT_ACTIVITY_CTRL_GET_SET_ID</b>
+### -param EVENT_ACTIVITY_CTRL_GET_SET_ID
 
 </dl>
 </td>
@@ -116,7 +116,7 @@ NTSTATUS EtwActivityIdControl(
 <tr>
 <td width="40%"><a id="EVENT_ACTIVITY_CTRL_CREATE_SET_ID"></a><a id="event_activity_ctrl_create_set_id"></a><dl>
 
-### -param <b>EVENT_ACTIVITY_CTRL_CREATE_SET_ID</b>
+### -param EVENT_ACTIVITY_CTRL_CREATE_SET_ID
 
 </dl>
 </td>
@@ -128,7 +128,7 @@ NTSTATUS EtwActivityIdControl(
 <p> </p>
 </dd>
 
-### -param <i>ActivityId</i> [in, out]
+### -param ActivityId [in, out]
 
 <dd>
 <p>The identifier that indicates the activity associated with the event. The <i>ActivityId</i> parameter provides a way to group related events and is used in end-to-end tracing.</p>

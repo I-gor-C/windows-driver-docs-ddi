@@ -7,7 +7,7 @@ old-location: wdf\iremoteinterfacecallbackevent_onremoteinterfaceevent.htm
 old-project: wdf
 ms.assetid: 6cee6662-2eef-4caf-ab70-780748521ba9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IRemoteInterfaceCallbackEvent, OnRemoteInterfaceEvent, IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ void OnRemoteInterfaceEvent(
 ## -parameters
 <dl>
 
-### -param <i>pWdfRemoteInterface</i> [in]
+### -param pWdfRemoteInterface [in]
 
 <dd>
 <p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfremoteinterface.md">IWDFRemoteInterface</a> interface of a remote interface object that represents a device interface. The driver obtains this pointer when it calls <a href="wdf.iwdfdevice2_createremoteinterface">IWDFDevice2::CreateRemoteInterface</a>.</p>
 </dd>
 
-### -param <i>EventGuid</i> [in]
+### -param EventGuid [in]
 
 <dd>
-<p>A GUID that identifies the event type. Event GUIDs are defined by the components that support such GUIDs. Some <a href="NULL">device interface classes</a> provide event GUIDs, and some driver provide custom events.</p>
+<p>A GUID that identifies the event type. Event GUIDs are defined by the components that support such GUIDs. Some <a href="https://msdn.microsoft.com/C989D2D3-E8DE-4D64-86EE-3D3B3906390D">device interface classes</a> provide event GUIDs, and some driver provide custom events.</p>
 </dd>
 
-### -param <i>pbData</i> [in, optional]
+### -param pbData [in, optional]
 
 <dd>
 <p>A pointer to a buffer that contains event-specific data. Typically, components that define event GUIDs also define event-specific structures for event buffers.</p>
 </dd>
 
-### -param <i>cbDataSize</i> [in]
+### -param cbDataSize [in]
 
 <dd>
 <p>The size, in bytes, of the buffer that <i>pbData</i> points to.</p>
 </dd>
 
-### -param <i>NameBufferOffset</i> [in]
+### -param NameBufferOffset [in]
 
 <dd>
 <p>An offset, in bytes, from the beginning of the buffer that <i>pbData</i> points to. Bytes from 0 to <i>NameBufferOffset</i>-1 of the buffer contain binary data. Bytes from <i>NameBufferOffset</i> to the end of the buffer contain Unicode string data. </p>
@@ -155,4 +155,4 @@ void OnRemoteInterfaceEvent(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

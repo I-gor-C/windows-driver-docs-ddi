@@ -7,7 +7,7 @@ old-location: debugger\getsourcefileinformation.htm
 old-project: debugger
 ms.assetid: c854b3a7-963a-4386-b6fa-9c22b9d496a1
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugAdvanced2, GetSourceFileInformation, IDebugAdvanced2::GetSourceFileInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,20 +60,20 @@ HRESULT GetSourceFileInformation(
 ## -parameters
 <dl>
 
-### -param <i>Which</i> [in]
+### -param Which [in]
 
 <dd>
 <p>Specifies the piece of information to return.  The <i>Which</i> parameter can take one of the values in the following table.</p>
 <p></p>
 <dl>
 
-### -param <a id="DEBUG_SRCFILE_SYMBOL_TOKEN_"></a><a id="debug_srcfile_symbol_token_"></a>DEBUG_SRCFILE_SYMBOL_TOKEN 
+### -param DEBUG_SRCFILE_SYMBOL_TOKEN 
 
 <dd>
 <p>Returns a token representing the specified source file on a source server.  This token can be passed to <a href="debugger.findsourcefileandtoken">FindSourceFileAndToken</a> to retrieve information about the file. The token is returned to the <i>Buffer</i> buffer as an array of bytes.  The size of this token is a reflection of the size of the SrcSrv token. </p>
 </dd>
 
-### -param <a id="DEBUG_SRCFILE_SYMBOL_TOKEN_SOURCE_COMMAND_WIDE_"></a><a id="debug_srcfile_symbol_token_source_command_wide_"></a>DEBUG_SRCFILE_SYMBOL_TOKEN_SOURCE_COMMAND_WIDE 
+### -param DEBUG_SRCFILE_SYMBOL_TOKEN_SOURCE_COMMAND_WIDE 
 
 <dd>
 <p>Queries a source server for the command to extract the source file from source control.  This includes the name of the executable file and its command-line parameters. The command is returned to the <i>Buffer</i> buffer as a Unicode string. </p>
@@ -81,37 +81,37 @@ HRESULT GetSourceFileInformation(
 </dl>
 </dd>
 
-### -param <i>SourceFile</i> [in]
+### -param SourceFile [in]
 
 <dd>
 <p>Specifies the source file whose information is being requested.  The source file is looked up on all the source servers in the source path. </p>
 </dd>
 
-### -param <i>Arg64</i> [in]
+### -param Arg64 [in]
 
 <dd>
 <p>Specifies a 64-bit argument.  The value of <i>Which</i> specifies the module whose symbol token is requested.  Regardless of the value of <i>Which</i>, <i>Arg64</i> is a location within the memory allocation of the module.  </p>
 </dd>
 
-### -param <i>Arg32</i> [in]
+### -param Arg32 [in]
 
 <dd>
 <p>Specifies a 32-bit argument.  This parameter is currently unused.   </p>
 </dd>
 
-### -param <i>Buffer</i> [out, optional]
+### -param Buffer [out, optional]
 
 <dd>
 <p>Receives the requested symbol information.  The type of the data returned depends on the value of <i>Which</i>.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size in bytes of the <i>Buffer</i> buffer. If <i>Buffer</i> is <b>NULL</b>, <i>BufferSize</i> must also be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>InfoSize</i> [out, optional]
+### -param InfoSize [out, optional]
 
 <dd>
 <p>Specifies the size in bytes of the information returned to the <i>Buffer</i> buffer.  This parameter can be <b>NULL</b> if the data is not required. </p>
@@ -119,7 +119,7 @@ HRESULT GetSourceFileInformation(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>S_FALSE</b></dt>
@@ -168,4 +168,4 @@ HRESULT GetSourceFileInformation(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugAdvanced2::GetSourceFileInformation method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugAdvanced2::GetSourceFileInformation method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -58,25 +58,25 @@ HRESULT GetGlobalAttribute(
 ## -parameters
 <dl>
 
-### -param <i>pszAttribute</i> [in]
+### -param pszAttribute [in]
 
 <dd>
 <p>A pointer to a caller-supplied buffer that contains an ANSI string that specifies the requested attribute. If this parameter is <b>NULL</b>, the caller is requesting a list of all of the supported global attribute names instead of specifying a specific global attribute name. </p>
 </dd>
 
-### -param <i>pdwDataType</i> [out]
+### -param pdwDataType [out]
 
 <dd>
 <p>A pointer to variable that receives a value that specifies the data type of the requested attribute. This value is an enumerator of the <a href="..\printoem\ne-printoem--eattribute-datatype.md">EATTRIBUTE_DATATYPE</a> enumeration type, which is defined in printoem.h. </p>
 </dd>
 
-### -param <i>pbData</i> [out]
+### -param pbData [out]
 
 <dd>
 <p>A pointer to a callee-allocated buffer containing the requested data. Upon completion of this method, the caller does not need to release this buffer.</p>
 </dd>
 
-### -param <i>pcbSize</i> [out]
+### -param pcbSize [out]
 
 <dd>
 <p>A pointer to a variable that specifies the size, in bytes, of the buffer that is pointed to by the <i>pbData</i> parameter. </p>
@@ -99,7 +99,7 @@ HRESULT GetGlobalAttribute(
 ## -remarks
 <p>If <b>IPrintCoreHelperPS::GetGlobalAttribute</b> is called with its <i>pszAttribute</i> and <i>pbData</i> parameters set to <b>NULL</b>, the method returns with *<i>pcbSize</i> set to the number of bytes that are needed for the list of all of the supported global attribute names. If this method is called a second time, with <i>pszAttribute</i> set to <b>NULL</b> and <i>pbData</i> pointing to a buffer of the size that was specified in *<i>pcbSize</i> in the previous call, the method returns with *<i>pdwDataType</i> set to kADT_ASCII (an enumerator of the <a href="..\printoem\ne-printoem--eattribute-datatype.md">EATTRIBUTE_DATATYPE</a> enumeration type) and <i>pbData</i> pointing to a NULL-delimited list of all of the supported global attribute names. This list is terminated with two null characters.</p>
 
-<p>For more information about <b>IPrintCoreHelperPS::GetGlobalAttribute</b>, see <a href="NULL">Using GetGlobalAttribute</a>. </p>
+<p>For more information about <b>IPrintCoreHelperPS::GetGlobalAttribute</b>, see <a href="https://msdn.microsoft.com/0e23ecba-7d89-44f5-b6a7-7d6be9a56765">Using GetGlobalAttribute</a>. </p>
 
 ## -requirements
 <table>

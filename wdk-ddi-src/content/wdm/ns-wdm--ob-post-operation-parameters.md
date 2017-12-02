@@ -56,13 +56,13 @@ typedef union _OB_POST_OPERATION_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>CreateHandleInformation</b>
+### -field CreateHandleInformation
 
 <dd>
 <p>An <a href="..\wdm\ns-wdm--ob-post-create-handle-information.md">OB_POST_CREATE_HANDLE_INFORMATION</a> structure that contains information that is specific to a handle that is being opened.</p>
 </dd>
 
-### -field <b>DuplicateHandleInformation</b>
+### -field DuplicateHandleInformation
 
 <dd>
 <p>An <a href="..\wdm\ns-wdm--ob-post-duplicate-handle-information.md">OB_POST_DUPLICATE_HANDLE_INFORMATION</a> structure that contains information that is specific to a handle that is being duplicated.</p>

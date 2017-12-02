@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_throttle_parameters.htm
 old-project: netvista
 ms.assetid: ad51cc5c-7385-405b-8b65-20b079a3265c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_RECEIVE_THROTTLE_PARAMETERS, NDIS_RECEIVE_THROTTLE_PARAMETERS, *PNDIS_RECEIVE_THROTTLE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct _NDIS_RECEIVE_THROTTLE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>MaxNblsToIndicate</b>
+### -field MaxNblsToIndicate
 
 <dd>
 <p>The maximum number of 
@@ -66,7 +66,7 @@ typedef struct _NDIS_RECEIVE_THROTTLE_PARAMETERS {
      indicate all of the NET_BUFFER_LIST structures that it has.</p>
 </dd>
 
-### -field <b>MoreNblsPending</b>
+### -field MoreNblsPending
 
 <dd>
 <p>A value that, when <b>TRUE</b>, specifies that the miniport driver has NET_BUFFER_LIST structures pending
@@ -171,4 +171,4 @@ typedef struct _NDIS_RECEIVE_THROTTLE_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_THROTTLE_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_THROTTLE_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

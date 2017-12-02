@@ -59,37 +59,37 @@ NTSTATUS KsPinDataIntersection(
 ## -parameters
 <dl>
 
-### -param <i>Irp </i> [in]
+### -param Irp  [in]
 
 <dd>
 <p>Specifies the IRP that describes the property request.</p>
 </dd>
 
-### -param <i>Pin </i> [in]
+### -param Pin  [in]
 
 <dd>
 <p>Specifies the specific property that is being queried.</p>
 </dd>
 
-### -param <i>Data </i> [out, optional]
+### -param Data  [out, optional]
 
 <dd>
 <p>Specifies the pin property-specific data.</p>
 </dd>
 
-### -param <i>DescriptorsCount </i> [in]
+### -param DescriptorsCount  [in]
 
 <dd>
 <p>Specifies the number of descriptor structures.</p>
 </dd>
 
-### -param <i>Descriptor </i> [in]
+### -param Descriptor  [in]
 
 <dd>
 <p>Specifies the pointer to the list of pin information structures.</p>
 </dd>
 
-### -param <i>IntersectHandler </i> [in]
+### -param IntersectHandler  [in]
 
 <dd>
 <p>Specifies the minidriver-defined <a href="stream.kstrintersecthandler">KStrIntersectHandler</a> callback function to compare a data range.</p>

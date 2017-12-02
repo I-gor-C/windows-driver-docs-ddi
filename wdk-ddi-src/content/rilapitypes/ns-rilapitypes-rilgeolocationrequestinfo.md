@@ -7,7 +7,7 @@ old-location: netvista\rilgeolocationrequestinfo_2.htm
 old-project: netvista
 ms.assetid: c9e2bcb8-cd74-4256-9854-bc898fc8cf74
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILGEOLOCATIONREQUESTINFO, RILGEOLOCATIONREQUESTINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef struct _RILGEOLOCATIONREQUESTINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwLatitude</b>
+### -field dwLatitude
 
 <dd></dd>
 
-### -field <b>dwLongitude</b>
+### -field dwLongitude
 
 <dd></dd>
 
-### -field <b>dwAltitude</b>
+### -field dwAltitude
 
 <dd></dd>
 </dl>

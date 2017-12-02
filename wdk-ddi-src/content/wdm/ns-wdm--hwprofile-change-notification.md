@@ -57,19 +57,19 @@ typedef struct _HWPROFILE_CHANGE_NOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the data structure, currently 1. </p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size of the structure, in bytes including the size of the standard first three members plus the event-specific data. </p>
 </dd>
 
-### -field <b>Event</b>
+### -field Event
 
 <dd>
 <p>Specifies a GUID identifying the event: GUID_HWPROFILE_QUERY_CHANGE, GUID_HWPROFILE_CHANGE_COMPLETE, or GUID_HWPROFILE_CHANGE_CANCELLED. The GUIDs are defined in Wdmguid.h.</p>

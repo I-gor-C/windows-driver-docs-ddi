@@ -62,49 +62,49 @@ typedef enum _KINTERRUPT_POLARITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="InterruptPolarityUnknown"></a><a id="interruptpolarityunknown"></a><a id="INTERRUPTPOLARITYUNKNOWN"></a><b>InterruptPolarityUnknown</b>
+### -field InterruptPolarityUnknown
 
 <dd>
 <p>The interrupt polarity is unknown.</p>
 </dd>
 
-### -field <a id="InterruptActiveHigh"></a><a id="interruptactivehigh"></a><a id="INTERRUPTACTIVEHIGH"></a><b>InterruptActiveHigh</b>
+### -field InterruptActiveHigh
 
 <dd>
 <p>Active-high interrupt. The interrupt input type is level-triggered, and an interrupt request is indicated by a high signal level on the interrupt line. The request remains active as long as the line remains high.</p>
 </dd>
 
-### -field <a id="InterruptRisingEdge"></a><a id="interruptrisingedge"></a><a id="INTERRUPTRISINGEDGE"></a><b>InterruptRisingEdge</b>
+### -field InterruptRisingEdge
 
 <dd>
 <p>Rising-edge-triggered interrupt. The interrupt input type is edge-triggered, and an interrupt request is indicated by a low-to-high transition on the interrupt line.</p>
 </dd>
 
-### -field <a id="InterruptActiveLow"></a><a id="interruptactivelow"></a><a id="INTERRUPTACTIVELOW"></a><b>InterruptActiveLow</b>
+### -field InterruptActiveLow
 
 <dd>
 <p>Active-low interrupt. The interrupt input type is level-triggered, and an interrupt request is indicated by a low signal level on the interrupt line. The request remains active as long as the line remains low.</p>
 </dd>
 
-### -field <a id="InterruptFallingEdge"></a><a id="interruptfallingedge"></a><a id="INTERRUPTFALLINGEDGE"></a><b>InterruptFallingEdge</b>
+### -field InterruptFallingEdge
 
 <dd>
 <p>Falling-edge-triggered interrupt. The interrupt input type is edge-triggered, and an interrupt request is indicated by a high-to-low transition on the interrupt line.</p>
 </dd>
 
-### -field <a id="InterruptActiveBoth"></a><a id="interruptactiveboth"></a><a id="INTERRUPTACTIVEBOTH"></a><b>InterruptActiveBoth</b>
+### -field InterruptActiveBoth
 
 <dd>
 <p>Active-both interrupt. The interrupt input type is edge-triggered, and an interrupt request is indicated by a low-to-high or a high-to-low transition on the interrupt line. After a low-to-high transition signals an interrupt request, the interrupt line remains high until a high-to-low transition signals the next interrupt request. Similarly, after a high-to-low transition signals an interrupt request, the interrupt line remains low until a low-to-high transition signals the next interrupt request.</p>
 </dd>
 
-### -field <a id="InterruptActiveBothTriggerLow"></a><a id="interruptactivebothtriggerlow"></a><a id="INTERRUPTACTIVEBOTHTRIGGERLOW"></a><b>InterruptActiveBothTriggerLow</b>
+### -field InterruptActiveBothTriggerLow
 
 <dd>
 <p>Reserved for use by the operating system.</p>
 </dd>
 
-### -field <a id="InterruptActiveBothTriggerHigh"></a><a id="interruptactivebothtriggerhigh"></a><a id="INTERRUPTACTIVEBOTHTRIGGERHIGH"></a><b>InterruptActiveBothTriggerHigh</b>
+### -field InterruptActiveBothTriggerHigh
 
 <dd>
 <p>Reserved for use by the operating system.</p>

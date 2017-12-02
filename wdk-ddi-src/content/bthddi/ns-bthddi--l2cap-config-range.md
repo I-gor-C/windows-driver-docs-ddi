@@ -58,13 +58,13 @@ typedef struct _L2CAP_CONFIG_RANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>Min</b>
+### -field Min
 
 <dd>
 <p>The minimum value that the local system can accept.</p>
 </dd>
 
-### -field <b>Max</b>
+### -field Max
 
 <dd>
 <p>The maximum value that the local system can accept.</p>

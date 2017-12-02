@@ -58,25 +58,25 @@ NTSTATUS ExCreateCallback(
 ## -parameters
 <dl>
 
-### -param <i>CallbackObject</i> [out]
+### -param CallbackObject [out]
 
 <dd>
 <p>A pointer to a location that receives a pointer to a callback object, which is an opaque, system structure. If the <b>ExCreateCallback</b> call succeeds, the routine writes the address of the newly created or opened callback object to this location. The callback object pointer obtained from this routine can be supplied as a parameter to the <a href="..\wdm\nf-wdm-exregistercallback.md">ExRegisterCallback</a> or <a href="..\wdm\nf-wdm-exnotifycallback.md">ExNotifyCallback</a> routine.</p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in]
+### -param ObjectAttributes [in]
 
 <dd>
 <p>A pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that contains the callback object's attributes. This structure was previously initialized by the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> routine.</p>
 </dd>
 
-### -param <i>Create</i> [in]
+### -param Create [in]
 
 <dd>
 <p>Whether to create a callback object. Set to <b>TRUE</b> to create a new callback object if the requested object cannot be opened. Otherwise, set to <b>FALSE</b>.</p>
 </dd>
 
-### -param <i>AllowMultipleCallbacks</i> [in]
+### -param AllowMultipleCallbacks [in]
 
 <dd>
 <p>Whether a newly created callback object should allow multiple registered callback routines. Set to <b>TRUE</b> to allow multiple registered callback routines. Otherwise, set to <b>FALSE</b>. This parameter is ignored when <i>Create</i> is <b>FALSE</b> or when opening an existing object.</p>

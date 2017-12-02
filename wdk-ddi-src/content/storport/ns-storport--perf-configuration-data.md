@@ -63,19 +63,19 @@ typedef struct _PERF_CONFIGURATION_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of the structure. Set this member when querying and initializing optimizations.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of the structure, set to <b>sizeof(PERF_CONFIGURATION_DATA)</b>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitwise-OR of supported flags. Currently, the following flags are supported:
@@ -153,37 +153,37 @@ typedef struct _PERF_CONFIGURATION_DATA {
 <p> </p>
 </dd>
 
-### -field <b>ConcurrentChannels</b>
+### -field ConcurrentChannels
 
 <dd>
 <p>The number of concurrent calls to the <a href="storage.hwstorstartio">HwStorStartIo</a> routine that the miniport driver and the device  support. This member is only accessed when the STOR_PERF_CONCURRENT_CHANNELS flag has been set. Prior to Windows 8, miniports must not set this value.</p>
 </dd>
 
-### -field <b>FirstRedirectionMessageNumber</b>
+### -field FirstRedirectionMessageNumber
 
 <dd>
 <p>When the <b>Flags</b> member has the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag set, the miniport driver initializes interrupt redirection to begin with this message number. This member is only accessed when the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag is set.</p>
 </dd>
 
-### -field <b>LastRedirectionMessageNumber</b>
+### -field LastRedirectionMessageNumber
 
 <dd>
 <p>When the <b>Flags</b> member has the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag set, the miniport driver initializes interrupt redirection to end with this message number. This member is only accessed when the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag is set.</p>
 </dd>
 
-### -field <b>DeviceNode</b>
+### -field DeviceNode
 
 <dd>
 <p>When the <b>Flags</b> member has the STOR_PERF_ADV_CONFIG_LOCALITY flag set, Storport initializes this field to contain the NUMA node number in which the miniport driver's device resides.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>MessageTargets</b>
+### -field MessageTargets
 
 <dd>
 <p>When the <b>Flags</b> member has the STOR_PERF_ADV_CONFIG_LOCALITY flag set, Storport initializes the fields of in the structures of a <a href="..\miniport\ns-miniport--group-affinity.md">GROUP_AFFINITY</a> array. These structures correspond to the redirection messages that are currently in use. The array itself is zero-based, but <b>FirstRedirectionMessageNumber</b> is not required to be zero. The miniport allocates this array and sets <b>MessageTargets</b> to point to it. The miniport driver must allocate a <b>GROUP_AFFINITY</b> array large enough to hold all the returned affinity masks.</p>

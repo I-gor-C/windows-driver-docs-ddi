@@ -56,13 +56,13 @@ typedef struct _DXGKVGPU_ESCAPE_POWERTRANSITIONCOMPLETE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The header that is being operated over.</p>
 </dd>
 
-### -field <b>PowerState</b>
+### -field PowerState
 
 <dd>
 <p>Indicates the power state to transition to.</p>

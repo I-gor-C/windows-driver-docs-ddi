@@ -7,7 +7,7 @@ old-location: image\wiaudbgflags.htm
 old-project: image
 ms.assetid: 2185a1c0-e952-4dbd-b1a9-82339e417774
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiauDbgFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ inline void __stdcall wiauDbgFlags(
 ## -parameters
 <dl>
 
-### -param <i>flags</i> 
+### -param flags 
 
 <dd>
 <p>Is a set of flags that control which information is placed in the log file or displayed in the debugger. See the <i>flags</i> parameter of <a href="..\wiautil\nf-wiautil-wiaudbgsetflags.md">wiauDbgSetFlags</a> for a list of the flag values.</p>
 </dd>
 
-### -param <i>prefix</i> 
+### -param prefix 
 
 <dd>
 <p>Pointer to a string containing a prefix (such as "ERROR " or "WARN ").</p>
 </dd>
 
-### -param <i>fname</i> 
+### -param fname 
 
 <dd>
 <p>Pointer to a string containing the name of the function or method into which the call to <b>wiauDbgDump</b> is inserted.</p>
 </dd>
 
-### -param <i>fmt, ...</i> 
+### -param fmt, ... 
 
 <dd>
 <p>Pointer to a format string that specifies a variable argument list, which starts with an ANSI format string containing the message and any conversion specifiers. The ellipsis (...) specifies a variable number of arguments that are to be output. </p>
@@ -129,4 +129,4 @@ inline void __stdcall wiauDbgFlags(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiauDbgFlags function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiauDbgFlags function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

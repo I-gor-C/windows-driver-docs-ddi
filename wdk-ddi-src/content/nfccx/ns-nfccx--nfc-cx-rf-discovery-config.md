@@ -60,48 +60,48 @@ typedef struct _NFC_CX_RF_DISCOVERY_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p> Size of this structure in bytes.</p>
 </dd>
 
-### -field <b>TotalDuration</b>
+### -field TotalDuration
 
 <dd>
 <p> Total duration of the single discovery period in milliseconds. Default is 300 milliseconds.</p>
 <p>This member corresponds to TOTAL_DURATION specified in the NCI specification. Values can be between 0 to 0xFFFF.  Use an appropriate value that factors into account both the discovery latency as well as power consumption.</p>
 </dd>
 
-### -field <b>PollConfig</b>
+### -field PollConfig
 
 <dd>
 <p>Combination of <a href="..\nfccx\ne-nfccx--nfc-cx-poll-mode-config.md">NFC_CX_POLL_MODE_CONFIG</a> values. </p>
 <p>This member enables configuration of poll mode settings. The default enables polling for passive poll NFC-A, passive poll NFC-B, and passive poll NFC-F (212 and 424k). Its recommended that NFC clients configure additional active modes if they are supported.</p>
 </dd>
 
-### -field <b>NfcIPMode</b>
+### -field NfcIPMode
 
 <dd>
 <p> Combination of <a href="..\nfccx\ne-nfccx--nfc-cx-nfcip-mode-config.md">NFC_CX_NFCIP_MODE_CONFIG</a> values.</p>
 <p>This member enables configuration of NFC-IP initiator mode settings. The value corresponds to combination of NFC_CX_NFCIP_MODE_CONFIG enum. The default enables polling for passive poll NFC-A and passive poll NFC-F (212 and 424k) phases.</p>
 </dd>
 
-### -field <b>NfcIPTgtMode</b>
+### -field NfcIPTgtMode
 
 <dd>
 <p> Combination of <a href="..\nfccx\ne-nfccx--nfc-cx-nfcip-tgt-mode-config.md">NFC_CX_NFCIP_TGT_MODE_CONFIG</a> values.</p>
 <p>This member enables configuration of NFC-IP target mode settings. The default enables passive listen NFC-A and passive listen NFC-F phases.</p>
 </dd>
 
-### -field <b>NfcCEMode</b>
+### -field NfcCEMode
 
 <dd>
 <p> Combination of <a href="..\nfccx\ne-nfccx--nfc-cx-ce-mode-config.md">NFC_CX_CE_MODE_CONFIG</a> values. </p>
 <p>This member enables configuration of NFC-CE mode settings. The default enables passive listen NFC-A, passive listen NFC-B, and passive listen NFC-F phases.</p>
 </dd>
 
-### -field <b>BailoutConfig</b>
+### -field BailoutConfig
 
 <dd>
 <p>Combination of <a href="..\nfccx\ne-nfccx--nfc-cx-poll-bailout-config.md">NFC_CX_POLL_BAILOUT_CONFIG</a> values. Default is disabled.</p>

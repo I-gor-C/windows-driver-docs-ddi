@@ -58,31 +58,31 @@ typedef struct _D3DKMT_SEGMENTGROUPSIZEINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>PhysicalAdapterIndex</b>
+### -field PhysicalAdapterIndex
 
 <dd>
 <p>An index to the physical adapter.</p>
 </dd>
 
-### -field <b>LegacyInfo</b>
+### -field LegacyInfo
 
 <dd>
 <p>Legacy segment size info.</p>
 </dd>
 
-### -field <b>LocalMemory</b>
+### -field LocalMemory
 
 <dd>
 <p>The size of local memory.</p>
 </dd>
 
-### -field <b>NonLocalMemory</b>
+### -field NonLocalMemory
 
 <dd>
 <p>The size of non-local memory.</p>
 </dd>
 
-### -field <b>NonBudgetMemory</b>
+### -field NonBudgetMemory
 
 <dd>
 <p>The size of non-budget memory.</p>

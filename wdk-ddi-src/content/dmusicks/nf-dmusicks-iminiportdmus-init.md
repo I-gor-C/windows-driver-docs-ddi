@@ -57,25 +57,25 @@ NTSTATUS Init(
 ## -parameters
 <dl>
 
-### -param <i>pUnknownAdapter</i> [in, optional]
+### -param pUnknownAdapter [in, optional]
 
 <dd>
 <p>Pointer to the <b>IUnknown</b> interface of the adapter object whose miniport object is being initialized. This parameter is optional and can be specified as <b>NULL</b>. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>pResourceList</i> [in]
+### -param pResourceList [in]
 
 <dd>
 <p>Pointer to an <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a> object that contains the adapter's resource list. After passing this reference to the miniport driver, the port driver is free to examine the contents of the resource list but will not modify the contents of this list.</p>
 </dd>
 
-### -param <i>pPort</i> [in]
+### -param pPort [in]
 
 <dd>
 <p>Pointer to an <a href="..\dmusicks\nn-dmusicks-iportdmus.md">IPortDMus</a> object that provides the port driver's callback interface.</p>
 </dd>
 
-### -param <i>ppServiceGroup</i> [out]
+### -param ppServiceGroup [out]
 
 <dd>
 <p>Output pointer for the service group. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> interface of the miniport driver's service group object. This is the service group that this miniport driver wants to have used for calls to <a href="audio.iportdmus_notify">IPortDMus::Notify</a>.</p>
@@ -96,7 +96,7 @@ NTSTATUS Init(
 
 <p>The <i>pUnknownAdapter</i> and <i>pResourceList</i> parameters are the same pointer values that the adapter driver earlier passed as parameters to the <b>IPortDMus</b> object's <code>Init</code> method (see <a href="audio.iport_init">IPort::Init</a>).</p>
 
-<p>The <i>pUnknownAdapter</i>, <i>pResourceList</i>, <i>pPort</i>, and <i>ppServiceGroup</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>pUnknownAdapter</i>, <i>pResourceList</i>, <i>pPort</i>, and <i>ppServiceGroup</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

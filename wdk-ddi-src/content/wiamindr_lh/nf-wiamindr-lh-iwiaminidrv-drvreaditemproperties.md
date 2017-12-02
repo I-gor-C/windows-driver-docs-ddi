@@ -7,7 +7,7 @@ old-location: image\iwiaminidrv_drvreaditemproperties.htm
 old-project: image
 ms.assetid: 015c2e02-62aa-4037-9974-c8e4b8784fe5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IWiaMiniDrv, drvReadItemProperties, IWiaMiniDrv::drvReadItemProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ HRESULT drvReadItemProperties(
 ## -parameters
 <dl>
 
-### -param <i>pWiasContext</i> [in]
+### -param pWiasContext [in]
 
 <dd>
 <p>Pointer to a WIA item context.</p>
 </dd>
 
-### -param <i>lFlags</i> [in]
+### -param lFlags [in]
 
 <dd>
 <p>Is reserved. Set to zero.</p>
 </dd>
 
-### -param <i>nPropSpec</i> [in]
+### -param nPropSpec [in]
 
 <dd>
 <p>Indicates the number of items in the <i>pPropSpec</i> array.</p>
 </dd>
 
-### -param <i>pPropSpec</i> [in]
+### -param pPropSpec [in]
 
 <dd>
 <p>Points to the first element of an array of PROPSPEC structures (defined in the Microsoft Windows SDK documentation). </p>
 </dd>
 
-### -param <i>plDevErrVal</i> [out]
+### -param plDevErrVal [out]
 
 <dd>
 <p>Points to a memory location that will receive a status code for this method. If this method returns S_OK, the value stored will be zero. Otherwise, a minidriver-specific error code will be stored at the location pointed to by this parameter.</p>
@@ -159,4 +159,4 @@ HRESULT drvReadItemProperties(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaMiniDrv::drvReadItemProperties method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaMiniDrv::drvReadItemProperties method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

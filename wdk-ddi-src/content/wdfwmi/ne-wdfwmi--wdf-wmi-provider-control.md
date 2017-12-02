@@ -7,7 +7,7 @@ old-location: wdf\wdf_wmi_provider_control.htm
 old-project: wdf
 ms.assetid: c545b0a6-bb36-47a7-b55c-ee7eed5ade3a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfVerifierKeBugCheck
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _WDF_WMI_PROVIDER_CONTROL {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfWmiControlInvalid"></a><a id="wdfwmicontrolinvalid"></a><a id="WDFWMICONTROLINVALID"></a><b>WdfWmiControlInvalid</b>
+### -field WdfWmiControlInvalid
 
 <dd>
 <p>For internal use only.</p>
 </dd>
 
-### -field <a id="WdfWmiEventControl"></a><a id="wdfwmieventcontrol"></a><a id="WDFWMIEVENTCONTROL"></a><b>WdfWmiEventControl</b>
+### -field WdfWmiEventControl
 
 <dd>
 <p>The driver must enable or disable delivering events for a provider instance.</p>
 </dd>
 
-### -field <a id="WdfWmiInstanceControl"></a><a id="wdfwmiinstancecontrol"></a><a id="WDFWMIINSTANCECONTROL"></a><b>WdfWmiInstanceControl</b>
+### -field WdfWmiInstanceControl
 
 <dd>
 <p>The driver must enable or disable collecting data for a provider instance.</p>
@@ -113,4 +113,4 @@ typedef enum _WDF_WMI_PROVIDER_CONTROL {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_WMI_PROVIDER_CONTROL enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_WMI_PROVIDER_CONTROL enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

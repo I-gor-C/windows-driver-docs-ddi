@@ -54,7 +54,7 @@ typedef struct _HFP_BYPASS_CODEC_ID_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>CodecId</b>
+### -field CodecId
 
 <dd>
 <p>The codec ID can be any of the values in the following table.</p>

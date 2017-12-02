@@ -54,7 +54,7 @@ void PowerChangeState(
 ## -parameters
 <dl>
 
-### -param <i>NewState</i> [in]
+### -param NewState [in]
 
 <dd>
 <p>Specifies the new power state being requested for the device. This parameter is a union of type POWER_STATE. The new power state (<i>NewState</i>.<b>DeviceState</b>) can be one of the DEVICE_POWER_STATE enumeration values shown in the following table.</p>

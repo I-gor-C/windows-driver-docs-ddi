@@ -55,7 +55,7 @@ req.product: Windows 10 or later.
 ## -parameters
 <dl>
 
-### -param <i></i> 
+### -param  
 
 <dd>
 <p>Reserved for system use.</p>

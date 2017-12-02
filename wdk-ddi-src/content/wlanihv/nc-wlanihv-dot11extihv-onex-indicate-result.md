@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvonexindicateresult.htm
 old-project: netvista
 ms.assetid: bf865b33-6e44-4724-868d-73150cf5b589
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ DWORD APIENTRY Dot11ExtIhvOneXIndicateResult(
 ## -parameters
 <dl>
 
-### -param <i>hIhvExtAdapter</i> [in, optional]
+### -param hIhvExtAdapter [in, optional]
 
 <dd>
 <p>The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) adapter. This
@@ -67,7 +67,7 @@ DWORD APIENTRY Dot11ExtIhvOneXIndicateResult(
      Handler function.</p>
 </dd>
 
-### -param <i>msOneXResult</i> [in]
+### -param msOneXResult [in]
 
 <dd>
 <p>The result of the 802.1X authentication operation specified through a 
@@ -75,7 +75,7 @@ DWORD APIENTRY Dot11ExtIhvOneXIndicateResult(
      value.</p>
 </dd>
 
-### -param <i>pDot11MsOneXResultParams</i> [in, optional]
+### -param pDot11MsOneXResultParams [in, optional]
 
 <dd>
 <p>A pointer to a 
@@ -98,7 +98,7 @@ DWORD APIENTRY Dot11ExtIhvOneXIndicateResult(
     <a href="..\wlanihv\nc-wlanihv-dot11ext-onex-start.md">Dot11ExtStartOneX</a> function. 
     <b>Dot11ExtStartOneX</b> can only be called either during a post-association operation or after the
     operation has completed. For more information about this operation, see 
-    <a href="NULL">Post-Association Operations</a>.</p>
+    <a href="netvista.post_association_operations">Post-Association Operations</a>.</p>
 
 <p>After the operating system has completed the 802.1X authentication operation, it calls the 
     <i>
@@ -166,4 +166,4 @@ DWORD APIENTRY Dot11ExtIhvOneXIndicateResult(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_ONEX_INDICATE_RESULT callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_ONEX_INDICATE_RESULT callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

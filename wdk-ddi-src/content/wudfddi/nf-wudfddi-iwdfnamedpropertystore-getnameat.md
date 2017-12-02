@@ -7,7 +7,7 @@ old-location: wdf\iwdfnamedpropertystore_getnameat.htm
 old-project: wdf
 ms.assetid: f6ebf45b-b411-4684-b430-0b17a56ec0c0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFNamedPropertyStore, GetNameAt, IWDFNamedPropertyStore::GetNameAt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ HRESULT GetNameAt(
 ## -parameters
 <dl>
 
-### -param <i>iProp</i> [in]
+### -param iProp [in]
 
 <dd>
 <p>The zero-based index of the property that <b>GetNameAt</b> retrieves the name from.</p>
 </dd>
 
-### -param <i>ppwszName</i> [out]
+### -param ppwszName [out]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to a <b>NULL</b>-terminated string that contains the name of the property. </p>
@@ -134,4 +134,4 @@ HRESULT GetNameAt(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFNamedPropertyStore::GetNameAt method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFNamedPropertyStore::GetNameAt method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

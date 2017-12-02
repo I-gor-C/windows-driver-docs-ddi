@@ -55,11 +55,11 @@ typedef enum _MF_MEDIASOURCE_STATUS_INFO {
 ## -enum-fields
 <dl>
 
-### -field <a id="MF_MEDIASOURCE_STATUS_INFO_FULLYSUPPORTED"></a><a id="mf_mediasource_status_info_fullysupported"></a><b>MF_MEDIASOURCE_STATUS_INFO_FULLYSUPPORTED</b>
+### -field MF_MEDIASOURCE_STATUS_INFO_FULLYSUPPORTED
 
 <dd></dd>
 
-### -field <a id="MF_MEDIASOURCE_STATUS_INFO_UNKNOWN"></a><a id="mf_mediasource_status_info_unknown"></a><b>MF_MEDIASOURCE_STATUS_INFO_UNKNOWN</b>
+### -field MF_MEDIASOURCE_STATUS_INFO_UNKNOWN
 
 <dd></dd>
 </dl>

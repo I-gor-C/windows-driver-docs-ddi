@@ -7,7 +7,7 @@ old-location: netvista\net_dma_channel_parameters.htm
 old-project: netvista
 ms.assetid: 0d09a9e9-06c5-4026-9053-ac74a59509cc
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NET_DMA_CHANNEL_PARAMETERS, NET_DMA_CHANNEL_PARAMETERS, *PNET_DMA_CHANNEL_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Revision</b>
+### -field Revision
 
 <dd>
 <p>The revision number of this structure. </p>
@@ -72,21 +72,21 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
      <b>NET_DMA_CHANNEL_PARAMETERS_REVISION_1</b>.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. Set this member to 
      sizeof(<b>NET_DMA_CHANNEL_PARAMETERS</b>).</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A set of bits for flags that define DMA channel attributes. Set this member to zero. There are
      currently no flags defined.</p>
 </dd>
 
-### -field <b>CompletionVirtualAddress</b>
+### -field CompletionVirtualAddress
 
 <dd>
 <p>The virtual address of the memory location where the DMA engine can write the DMA transfer
@@ -95,7 +95,7 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
      <b>CompletionPhysicalAddress</b> member.</p>
 </dd>
 
-### -field <b>CompletionPhysicalAddress</b>
+### -field CompletionPhysicalAddress
 
 <dd>
 <p>The physical address of the memory location where the DMA engine can write the DMA transfer
@@ -117,7 +117,7 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
 <tr>
 <td width="40%"><a id="NetDmaTransferStatusActive"></a><a id="netdmatransferstatusactive"></a><a id="NETDMATRANSFERSTATUSACTIVE"></a><dl>
 
-### -field <b><b>NetDmaTransferStatusActive</b></b>
+### -field NetDmaTransferStatusActive
 
 </dl>
 </td>
@@ -129,7 +129,7 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
 <tr>
 <td width="40%"><a id="NetDmaTransferStatusIdle"></a><a id="netdmatransferstatusidle"></a><a id="NETDMATRANSFERSTATUSIDLE"></a><dl>
 
-### -field <b><b>NetDmaTransferStatusIdle</b></b>
+### -field NetDmaTransferStatusIdle
 
 </dl>
 </td>
@@ -141,7 +141,7 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
 <tr>
 <td width="40%"><a id="NetDmaTransferStatusSuspend"></a><a id="netdmatransferstatussuspend"></a><a id="NETDMATRANSFERSTATUSSUSPEND"></a><dl>
 
-### -field <b><b>NetDmaTransferStatusSuspend</b></b>
+### -field NetDmaTransferStatusSuspend
 
 </dl>
 </td>
@@ -156,7 +156,7 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
 <tr>
 <td width="40%"><a id="NetDmaTransferStatusHalted"></a><a id="netdmatransferstatushalted"></a><a id="NETDMATRANSFERSTATUSHALTED"></a><dl>
 
-### -field <b><b>NetDmaTransferStatusHalted</b></b>
+### -field NetDmaTransferStatusHalted
 
 </dl>
 </td>
@@ -169,7 +169,7 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
 <tr>
 <td width="40%"><a id="NetDmaTransferStatusArmed"></a><a id="netdmatransferstatusarmed"></a><a id="NETDMATRANSFERSTATUSARMED"></a><dl>
 
-### -field <b><b>NetDmaTransferStatusArmed</b></b>
+### -field NetDmaTransferStatusArmed
 
 </dl>
 </td>
@@ -182,7 +182,7 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>ProcessorAffinityMask</b>
+### -field ProcessorAffinityMask
 
 <dd>
 <p>A bitmap that indicates CPUs that are available for use with this DMA channel. Each bit in 
@@ -190,7 +190,7 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
      setting bit 1 indicates CPU 1 can be used, and so on.</p>
 </dd>
 
-### -field <b>ChannelPriority</b>
+### -field ChannelPriority
 
 <dd>
 <p>A DMA channel priority value that represents the priority for the DMA channel relative to other
@@ -199,7 +199,7 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
      supports should be used. The Windows Vista NetDMA interface sets this member to zero.</p>
 </dd>
 
-### -field <b>CpuNumber</b>
+### -field CpuNumber
 
 <dd>
 <p>The CPU number that is associated with the DMA channel. The DMA provider driver sets the value
@@ -211,7 +211,7 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
      available for the indicated CPU.</p>
 </dd>
 
-### -field <b>ProcessorAffinityMaskEx</b>
+### -field ProcessorAffinityMaskEx
 
 <dd>
 <p>The group number and a bitmap of the CPUs that this DMA channel could be associated with.</p>
@@ -278,4 +278,4 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_CHANNEL_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_CHANNEL_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

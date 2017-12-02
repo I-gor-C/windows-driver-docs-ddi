@@ -58,32 +58,32 @@ typedef enum _D3DKMDT_VIDPN_SOURCE_MODE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_RMT_UNINITIALIZED"></a><a id="d3dkmdt_rmt_uninitialized"></a><b>D3DKMDT_RMT_UNINITIALIZED</b>
+### -field D3DKMDT_RMT_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_VIDPN_SOURCE_MODE_TYPE has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_RMT_GRAPHICS"></a><a id="d3dkmdt_rmt_graphics"></a><b>D3DKMDT_RMT_GRAPHICS</b>
+### -field D3DKMDT_RMT_GRAPHICS
 
 <dd>
 <p>Indicates that the VidPN source mode is a graphics mode.</p>
 </dd>
 
-### -field <a id="D3DKMDT_RMT_TEXT"></a><a id="d3dkmdt_rmt_text"></a><b>D3DKMDT_RMT_TEXT</b>
+### -field D3DKMDT_RMT_TEXT
 
 <dd>
 <p>Indicates that the VidPN source mode is a text mode.</p>
 </dd>
 
-### -field <a id="D3DKMDT_RMT_GRAPHICS_STEREO"></a><a id="d3dkmdt_rmt_graphics_stereo"></a><b>D3DKMDT_RMT_GRAPHICS_STEREO</b>
+### -field D3DKMDT_RMT_GRAPHICS_STEREO
 
 <dd>
 <p>Available beginning with Windows 8.</p>
 <p>Indicates that the VidPN source mode is stereo, and the allocation can only be scanned by the display miniport driver as both left and right channels.</p>
 </dd>
 
-### -field <a id="D3DKMDT_RMT_GRAPHICS_STEREO_ADVANCED_SCAN"></a><a id="d3dkmdt_rmt_graphics_stereo_advanced_scan"></a><b>D3DKMDT_RMT_GRAPHICS_STEREO_ADVANCED_SCAN</b>
+### -field D3DKMDT_RMT_GRAPHICS_STEREO_ADVANCED_SCAN
 
 <dd>
 <p>Available beginning with Windows 8.</p>

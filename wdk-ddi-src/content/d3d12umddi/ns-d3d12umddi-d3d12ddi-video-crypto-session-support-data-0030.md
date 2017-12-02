@@ -60,43 +60,43 @@ typedef struct _D3D12DDI_VIDEO_CRYPTO_SESSION_SUPPORT_DATA_0030 {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeIndex</b>
+### -field NodeIndex
 
 <dd>
 <p>Node index.</p>
 </dd>
 
-### -field <b>DecodeProfile</b>
+### -field DecodeProfile
 
 <dd>
 <p>Decode profile.</p>
 </dd>
 
-### -field <b>ContentProtectionSystem</b>
+### -field ContentProtectionSystem
 
 <dd>
 <p>Content protection system.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags.</p>
 </dd>
 
-### -field <b>BitstreamEncryption</b>
+### -field BitstreamEncryption
 
 <dd>
 <p>Bitstream encryption.</p>
 </dd>
 
-### -field <b>KeyBaseDataSize</b>
+### -field KeyBaseDataSize
 
 <dd>
 <p>Key base data size.</p>
 </dd>
 
-### -field <b>Support</b>
+### -field Support
 
 <dd>
 <p>Support.</p>

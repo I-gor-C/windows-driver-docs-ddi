@@ -55,7 +55,7 @@ BOOLEAN PoGetSystemWake(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>A pointer to an IRP.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ril_getcardinfo.htm
 old-project: netvista
 ms.assetid: d865993b-10cc-4fa2-a00f-34eb1d4e299b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetCardInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_GetCardInfo(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwSlotIndex</i> 
+### -param dwSlotIndex 
 
 <dd></dd>
 </dl>

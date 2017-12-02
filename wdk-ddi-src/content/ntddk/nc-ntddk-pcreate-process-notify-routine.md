@@ -59,19 +59,19 @@ void SetCreateProcessNotifyRoutine(
 ## -parameters
 <dl>
 
-### -param <i>ParentId</i> [in]
+### -param ParentId [in]
 
 <dd>
 <p>The process ID of the parent process.</p>
 </dd>
 
-### -param <i>ProcessId</i> [in]
+### -param ProcessId [in]
 
 <dd>
 <p>The process ID of the process.</p>
 </dd>
 
-### -param <i>Create</i> [in]
+### -param Create [in]
 
 <dd>
 <p>Indicates whether the process was created (<b>TRUE</b>) or deleted (<b>FALSE</b>).</p>

@@ -58,25 +58,25 @@ typedef struct _USBD_STREAM_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>PipeHandle</b>
+### -field PipeHandle
 
 <dd>
 <p>An opaque handle to  the stream.</p>
 </dd>
 
-### -field <b>StreamID</b>
+### -field StreamID
 
 <dd>
 <p>Stream identifier. The open-static streams request obtains stream identifiers that are assigned by the USB driver stack.</p>
 </dd>
 
-### -field <b>MaximumTransferSize</b>
+### -field MaximumTransferSize
 
 <dd>
 <p>Maximum transfer size (in bytes) that a client driver can send in a single URB for an I/O transfer to the stream.</p>
 </dd>
 
-### -field <b>PipeFlags</b>
+### -field PipeFlags
 
 <dd>
 <p>Reserved. Do not use.</p>

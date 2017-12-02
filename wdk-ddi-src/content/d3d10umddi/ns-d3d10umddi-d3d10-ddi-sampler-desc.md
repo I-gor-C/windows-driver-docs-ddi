@@ -63,61 +63,61 @@ typedef struct D3D10_DDI_SAMPLER_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>Filter</b>
+### -field Filter
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-filter.md">D3D10_DDI_FILTER</a>-typed value that indicates the filter property for a sampler. </p>
 </dd>
 
-### -field <b>AddressU</b>
+### -field AddressU
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-texture-address-mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the u coordinate.</p>
 </dd>
 
-### -field <b>AddressV</b>
+### -field AddressV
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-texture-address-mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the v coordinate.</p>
 </dd>
 
-### -field <b>AddressW</b>
+### -field AddressW
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-texture-address-mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the w coordinate.</p>
 </dd>
 
-### -field <b>MipLODBias</b>
+### -field MipLODBias
 
 <dd>
 <p>[in] A single-precision float that affects the level that the driver selects for MIP-map level of detail (LOD). </p>
 </dd>
 
-### -field <b>MaxAnisotropy</b>
+### -field MaxAnisotropy
 
 <dd>
 <p>[in] The maximum valid value for the anisotropy texture-stage state. </p>
 </dd>
 
-### -field <b>ComparisonFunc</b>
+### -field ComparisonFunc
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-comparison-func.md">D3D10_DDI_COMPARISON_FUNC</a>-typed value that indicates the sampler-comparison function to perform.</p>
 </dd>
 
-### -field <b>BorderColor</b>
+### -field BorderColor
 
 <dd>
 <p>[in] A four-element array of single-precision float vectors for RGBA, where Red == 0. The border color is used when the D3D10_DDI_TEXTURE_ADDRESS_BORDER value is specified in the <b>AddressU</b>, <b>AddressV</b>, or <b>AddressW</b> member. The float should be converted to the appropriate resource format. </p>
 </dd>
 
-### -field <b>MinLOD</b>
+### -field MinLOD
 
 <dd>
 <p>[in] A single-precision float vector for the minimum level of detail (LOD) for the sampler. </p>
 </dd>
 
-### -field <b>MaxLOD</b>
+### -field MaxLOD
 
 <dd>
 <p>[in] A single-precision float vector for the maximum level of detail (LOD) for the sampler. </p>

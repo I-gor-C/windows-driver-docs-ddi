@@ -54,7 +54,7 @@ typedef struct _D3DDDICB_UNLOCK2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[in] A driver specified <b>D3DKMT_HANDLE</b> to the allocation to unlock.</p>

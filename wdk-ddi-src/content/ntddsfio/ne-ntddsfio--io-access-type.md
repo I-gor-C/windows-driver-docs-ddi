@@ -56,19 +56,19 @@ typedef enum _IO_ACCESS_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="ReadAccess"></a><a id="readaccess"></a><a id="READACCESS"></a><b>ReadAccess</b>
+### -field ReadAccess
 
 <dd>
 <p>Indicates that the input/output will be comprised solely of reads.</p>
 </dd>
 
-### -field <a id="WriteAccess"></a><a id="writeaccess"></a><a id="WRITEACCESS"></a><b>WriteAccess</b>
+### -field WriteAccess
 
 <dd>
 <p>Indicates that the input/output will be comprised solely of writes.</p>
 </dd>
 
-### -field <a id="ModifyAccess"></a><a id="modifyaccess"></a><a id="MODIFYACCESS"></a><b>ModifyAccess</b>
+### -field ModifyAccess
 
 <dd>
 <p>Indicates that the input/output will be comprised of reads and writes.</p>

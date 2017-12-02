@@ -59,25 +59,25 @@ typedef struct _IO_SESSION_STATE_NOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of the <b>IO_SESSION_STATE_NOTIFICATION</b> structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>No flags are currently defined for this member. Set to zero. </p>
 </dd>
 
-### -field <b>IoObject</b>
+### -field IoObject
 
 <dd>
 <p>A pointer to an I/O object owned by the driver. This member can point to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>, <a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a>, or <a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a> structure. The I/O object must remain valid for the lifetime of the registration. Before you delete a registered device object, unload a registered driver, or close a registered file object, call the <a href="..\wdm\nf-wdm-iounregistercontainernotification.md">IoUnregisterContainerNotification</a> routine to cancel the registration. A driver can maintain simultaneous registrations for more than one I/O object, but it cannot create more than one active registration for the same I/O object. </p>
 </dd>
 
-### -field <b>EventMask</b>
+### -field EventMask
 
 <dd>
 <p>Mask bits for session events. These mask bits indicate the events for which the driver requests notifications.</p>
@@ -91,7 +91,7 @@ typedef struct _IO_SESSION_STATE_NOTIFICATION {
 <tr>
 <td width="40%"><a id="IO_SESSION_STATE_ALL_EVENTS"></a><a id="io_session_state_all_events"></a><dl>
 
-### -field <b>IO_SESSION_STATE_ALL_EVENTS</b>
+### -field IO_SESSION_STATE_ALL_EVENTS
 
 
 ### -field 0xffffffff
@@ -105,7 +105,7 @@ typedef struct _IO_SESSION_STATE_NOTIFICATION {
 <tr>
 <td width="40%"><a id="IO_SESSION_STATE_CREATION_EVENT"></a><a id="io_session_state_creation_event"></a><dl>
 
-### -field <b>IO_SESSION_STATE_CREATION_EVENT</b>
+### -field IO_SESSION_STATE_CREATION_EVENT
 
 
 ### -field 0x00000001
@@ -119,7 +119,7 @@ typedef struct _IO_SESSION_STATE_NOTIFICATION {
 <tr>
 <td width="40%"><a id="IO_SESSION_STATE_TERMINATION_EVENT"></a><a id="io_session_state_termination_event"></a><dl>
 
-### -field <b>IO_SESSION_STATE_TERMINATION_EVENT</b>
+### -field IO_SESSION_STATE_TERMINATION_EVENT
 
 
 ### -field 0x00000002
@@ -133,7 +133,7 @@ typedef struct _IO_SESSION_STATE_NOTIFICATION {
 <tr>
 <td width="40%"><a id="IO_SESSION_STATE_CONNECT_EVENT"></a><a id="io_session_state_connect_event"></a><dl>
 
-### -field <b>IO_SESSION_STATE_CONNECT_EVENT</b>
+### -field IO_SESSION_STATE_CONNECT_EVENT
 
 
 ### -field 0x00000004
@@ -147,7 +147,7 @@ typedef struct _IO_SESSION_STATE_NOTIFICATION {
 <tr>
 <td width="40%"><a id="IO_SESSION_STATE_DISCONNECT_EVENT"></a><a id="io_session_state_disconnect_event"></a><dl>
 
-### -field <b>IO_SESSION_STATE_DISCONNECT_EVENT</b>
+### -field IO_SESSION_STATE_DISCONNECT_EVENT
 
 
 ### -field 0x00000008
@@ -161,7 +161,7 @@ typedef struct _IO_SESSION_STATE_NOTIFICATION {
 <tr>
 <td width="40%"><a id="IO_SESSION_STATE_LOGON_EVENT"></a><a id="io_session_state_logon_event"></a><dl>
 
-### -field <b>IO_SESSION_STATE_LOGON_EVENT</b>
+### -field IO_SESSION_STATE_LOGON_EVENT
 
 
 ### -field 0x00000010
@@ -175,7 +175,7 @@ typedef struct _IO_SESSION_STATE_NOTIFICATION {
 <tr>
 <td width="40%"><a id="IO_SESSION_STATE_LOGOFF_EVENT"></a><a id="io_session_state_logoff_event"></a><dl>
 
-### -field <b>IO_SESSION_STATE_LOGOFF_EVENT</b>
+### -field IO_SESSION_STATE_LOGOFF_EVENT
 
 
 ### -field 0x00000020
@@ -189,7 +189,7 @@ typedef struct _IO_SESSION_STATE_NOTIFICATION {
 <tr>
 <td width="40%"><a id="IO_SESSION_STATE_VALID_EVENT_MASK"></a><a id="io_session_state_valid_event_mask"></a><dl>
 
-### -field <b>IO_SESSION_STATE_VALID_EVENT_MASK</b>
+### -field IO_SESSION_STATE_VALID_EVENT_MASK
 
 
 ### -field 0x0000003f
@@ -204,7 +204,7 @@ typedef struct _IO_SESSION_STATE_NOTIFICATION {
 <p> </p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to a context buffer in which the driver can store its private data for a particular session notification registration. The I/O manager passes this pointer to the driver's notification callback routine (specified by the <b>IoRegisterContainerNotification</b> routine's <i>CallbackFunction</i> parameter). The I/O manager does not try to validate the <i>Context</i> pointer or to access the buffer that it points to. This member can be <b>NULL</b> if the driver does not require a context buffer. </p>

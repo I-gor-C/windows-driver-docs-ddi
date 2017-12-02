@@ -61,49 +61,49 @@ typedef struct _SUB_Q_TRACK_ISRC {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Indicates, among other things, the length of the Q subchannel data that was retrieved. See <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-header.md">SUB_Q_HEADER</a> for further details. </p>
 </dd>
 
-### -field <b>FormatCode</b>
+### -field FormatCode
 
 <dd>
 <p>Should have a value of IOCTL_CDROM_TRACK_ISRC. </p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Track</b>
+### -field Track
 
 <dd>
 <p>Contains the number for the track for which the ISRC value was requested. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Tcval</b>
+### -field Tcval
 
 <dd>
 <p>Indicates that ISRC data was detected, if set to 1. Otherwise, if set to zero, indicates that <b>TrackIsrc</b> is invalid. </p>
 </dd>
 
-### -field <b>TrackIsrc</b>
+### -field TrackIsrc
 
 <dd>
 <p>Contains an array that holds the tracking ISRC data. </p>

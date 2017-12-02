@@ -7,7 +7,7 @@ old-location: sensors\gnss_agnss_inject.htm
 old-project: sensors
 ms.assetid: B81F5D71-9928-412C-8199-787E71CE2638
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_AGNSS_INJECT, GNSS_AGNSS_INJECT, *PGNSS_AGNSS_INJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,59 +64,59 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>InjectionType</b>
+### -field InjectionType
 
 <dd>
 <p>Indicates the specific type of AGNSS injection. </p>
 <p>Depending on the type, the driver must access the specific data element of the structure. For example, if the type is GNSS_AGNSS_PositionInjection, use the Position element.</p>
 </dd>
 
-### -field <b>InjectionStatus</b>
+### -field InjectionStatus
 
 <dd>
 <p>Indicates whether any error was encountered in gathering the needed injection data. </p>
 <p>The driver must ignore the injection if this field does not indicate success.</p>
 </dd>
 
-### -field <b>InjectionDataSize</b>
+### -field InjectionDataSize
 
 <dd>
 <p>Size of the injection data.</p>
 </dd>
 
-### -field <b>Unused[512]</b>
+### -field Unused[512]
 
 <dd>
 <p>Padding buffer.</p>
 </dd>
 
-### -field <b>Time</b>
+### -field Time
 
 <dd>
 <p>
 <a href="sensors.gnss_agnss_injecttime">GNSS_AGNSS_INJECTTIME</a> contains the format for AGNSS time injection.</p>
 </dd>
 
-### -field <b>Position</b>
+### -field Position
 
 <dd>
 <p>
 <a href="sensors.gnss_agnss_injectposition">GNSS_AGNSS_INJECTPOSITION</a> contains  the format for AGNSS position injection.</p>
 </dd>
 
-### -field <b>BlobData</b>
+### -field BlobData
 
 <dd>
 <p>

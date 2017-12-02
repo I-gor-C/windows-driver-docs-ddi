@@ -55,13 +55,13 @@ typedef struct _D3DDDIRANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>An offset, in bytes, from the start of the buffer.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of a block of memory that begins at the buffer location specified by the <b>Offset</b> member.</p>

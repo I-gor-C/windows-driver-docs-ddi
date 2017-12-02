@@ -54,7 +54,7 @@ void KsPinReleaseProcessingMutex(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure representing the AVStream pin object for which to acquire the processing mutex.</p>
@@ -65,7 +65,7 @@ void KsPinReleaseProcessingMutex(
 <p>None</p>
 
 ## -remarks
-<p>Minidrivers that must suspend processing for a long time should not use this mutex to do so. Instead, directly manipulate the processing control gate using the <b>KSGATE</b><i>Xxx</i> functions. See links to these functions in <a href="NULL">Flow Control Gates in AVStream</a>.</p>
+<p>Minidrivers that must suspend processing for a long time should not use this mutex to do so. Instead, directly manipulate the processing control gate using the <b>KSGATE</b><i>Xxx</i> functions. See links to these functions in <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.</p>
 
 ## -requirements
 <table>

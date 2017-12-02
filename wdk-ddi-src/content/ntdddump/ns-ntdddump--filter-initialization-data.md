@@ -63,63 +63,63 @@ typedef struct _FILTER_INITIALIZATION_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>MajorVersion</b>
+### -field MajorVersion
 
 <dd>
 <p>Set to one of the following major version values:</p>
 <dl>
 
-### -field <a id="DUMP_FILTER_MAJOR_VERSION_1"></a><a id="dump_filter_major_version_1"></a><b>DUMP_FILTER_MAJOR_VERSION_1</b> (0x1)
+### -field DUMP_FILTER_MAJOR_VERSION_1 (0x1)
 
 
-### -field <a id="DUMP_FILTER_MAJOR_VERSION"></a><a id="dump_filter_major_version"></a><b>DUMP_FILTER_MAJOR_VERSION</b> (0x2)
+### -field DUMP_FILTER_MAJOR_VERSION (0x2)
 
 </dl>
 </dd>
 
-### -field <b>MinorVersion</b>
+### -field MinorVersion
 
 <dd>
 <p>Set to <b>DUMP_FILTER_MINOR_VERSION</b>.</p>
 </dd>
 
-### -field <b>DumpStart</b>
+### -field DumpStart
 
 <dd>
 <p>A pointer to the dump initialization routine. This routine is called when the crash dump starts.</p>
 </dd>
 
-### -field <b>DumpWrite</b>
+### -field DumpWrite
 
 <dd>
 <p>A pointer to the write routine. This routine is called before every crash dump write request.</p>
 </dd>
 
-### -field <b>DumpFinish</b>
+### -field DumpFinish
 
 <dd>
 <p>A pointer to the dump finish routine.  This routine is called when the crash dump is finished.</p>
 </dd>
 
-### -field <b>DumpUnload</b>
+### -field DumpUnload
 
 <dd>
 <p>A pointer to the dump unload routine. This routine is called before the driver is unloaded.</p>
 </dd>
 
-### -field <b>DumpData</b>
+### -field DumpData
 
 <dd>
 <p>The filter driver can pass a pointer to internal context data in this member. This pointer is passed back to the filter driver in a <a href="..\ntdddump\ns-ntdddump--filter-extension.md">FILTER_EXTENSION</a> structure during each callback.</p>
 </dd>
 
-### -field <b>MaxPagesPerWrite</b>
+### -field MaxPagesPerWrite
 
 <dd>
 <p>The maximum number of pages for each dump read or write request.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A set of flags for  dump filter initialization. This value is set to either 0 or the following:</p>
@@ -131,7 +131,7 @@ typedef struct _FILTER_INITIALIZATION_DATA {
 <tr>
 <td width="40%"><a id="DUMP_FILTER_FLAG_SYSTEM_SUPPORT_READ"></a><a id="dump_filter_flag_system_support_read"></a><dl>
 
-### -field <b>DUMP_FILTER_FLAG_SYSTEM_SUPPORT_READ</b>
+### -field DUMP_FILTER_FLAG_SYSTEM_SUPPORT_READ
 
 </dl>
 </td>
@@ -142,7 +142,7 @@ typedef struct _FILTER_INITIALIZATION_DATA {
 <tr>
 <td width="40%"><a id="DUMP_FILTER_CRITICAL"></a><a id="dump_filter_critical"></a><dl>
 
-### -field <b>DUMP_FILTER_CRITICAL</b>
+### -field DUMP_FILTER_CRITICAL
 
 </dl>
 </td>
@@ -154,7 +154,7 @@ typedef struct _FILTER_INITIALIZATION_DATA {
 <p> </p>
 </dd>
 
-### -field <b>DumpRead</b>
+### -field DumpRead
 
 <dd>
 <p>A pointer to the read routine. This routine is called after every crash dump read request. This member is available starting in Windows 8.</p>

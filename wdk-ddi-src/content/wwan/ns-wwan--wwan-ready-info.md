@@ -7,7 +7,7 @@ old-location: netvista\wwan_ready_info.htm
 old-project: netvista
 ms.assetid: 6db8730e-a1da-428b-9938-fd9f3f71283a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_READY_INFO, WWAN_READY_INFO, *PWWAN_READY_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ typedef struct _WWAN_READY_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ReadyState</b>
+### -field ReadyState
 
 <dd>
 <p>The ready-state of the device.</p>
 </dd>
 
-### -field <b>EmergencyMode</b>
+### -field EmergencyMode
 
 <dd>
 <p>The emergency mode of the device. For more information, see <a href="..\wwan\ne-wwan--wwan-emergency-mode.md">WWAN_EMERGENCY_MODE</a>.</p>
 </dd>
 
-### -field <b>SubscriberId</b>
+### -field SubscriberId
 
 <dd>
 <p>A NULL-terminated string of digits that represents the identity of the subscriber.</p>
@@ -82,14 +82,14 @@ typedef struct _WWAN_READY_INFO {
 <p>For single-carrier multi-mode functions, the GSM <b>SubscriberId</b> format must be used.  This does not apply to multi-carrier multi-mode functions as the <b>SubscriberId</b> may change.</p>
 </dd>
 
-### -field <b>SimIccId</b>
+### -field SimIccId
 
 <dd>
 <p>A NULL-terminated string of digits that represents the International Circuit Card (ICC) ID of the SIM. The ICC ID varies from between 15 to 20 digits in length and is represented in alphanumeric characters. Miniport drivers must specify this string when the device ready-state changes to <b>WwanReadyStateInitialized</b> and also when the device is locked, waiting for entry of PIN1 and PUK1 keys.</p>
 <p>Miniport drivers must specify this value for all devices where <b>WwanCellularClass</b> equals <b>WwanCellularClassGsm</b>. Miniport drivers of CDMA-based devices must specify this value for devices where <b>SimClass</b> equals <b>WwanSimClassSimRemovable</b>.</p>
 </dd>
 
-### -field <b>CdmaShortMsgSize</b>
+### -field CdmaShortMsgSize
 
 <dd>
 <p>The SMS character length that is supported by the network or the device, whichever is less, if the device is CDMA-based.</p>
@@ -98,7 +98,7 @@ typedef struct _WWAN_READY_INFO {
 <p>This member does not apply to GSM-based devices. Miniport drivers of GSM-based devices should specify WWAN_CDMA_SHORT_MSG_SIZE_UNKNOWN.</p>
 </dd>
 
-### -field <b>TNListHeader</b>
+### -field TNListHeader
 
 <dd>
 <p>A list of telephone numbers (TNs) that are assigned to the subscriber identity.</p>
@@ -151,4 +151,4 @@ typedef struct _WWAN_READY_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_READY_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_READY_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

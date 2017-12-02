@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelinitsetmaximumexternaldata.htm
 old-project: netvista
 ms.assetid: 558E8162-7B1F-41AB-A04C-113E94C97DB6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbChannelInitSetMaximumExternalData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,21 +60,21 @@ NTSTATUS VmbChannelInitSetMaximumExternalData(
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>A pointer to a Kernel Mode Client Library (KMCL) channel.
 </p>
 </dd>
 
-### -param <i>DataSize</i> [in]
+### -param DataSize [in]
 
 <dd>
 <p>The maximum size of external data.
 </p>
 </dd>
 
-### -param <i>ChainLength</i> [in]
+### -param ChainLength [in]
 
 <dd>
 <p>The maximum number of Memory Descriptor Lists (MDLs) in an incoming MDL chain.</p>

@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>KeywordId</b>
+### -field KeywordId
 
 <dd>
 <p>Identifies a keyword function.</p>
 </dd>
 
-### -field <b>LangId</b>
+### -field LangId
 
 <dd>
 <p>Identifies a language.</p>

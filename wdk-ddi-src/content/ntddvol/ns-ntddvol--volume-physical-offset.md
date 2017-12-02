@@ -55,13 +55,13 @@ typedef struct _VOLUME_PHYSICAL_OFFSET {
 ## -struct-fields
 <dl>
 
-### -field <b>DiskNumber</b>
+### -field DiskNumber
 
 <dd>
 <p>Contains the number of the physical disk. </p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Contains the physical offset in bytes of the data on the disk. </p>

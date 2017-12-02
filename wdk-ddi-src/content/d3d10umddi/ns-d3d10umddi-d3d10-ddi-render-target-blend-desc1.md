@@ -61,49 +61,49 @@ typedef struct D3D10_DDI_RENDER_TARGET_BLEND_DESC1 {
 ## -struct-fields
 <dl>
 
-### -field <b>BlendEnable</b>
+### -field BlendEnable
 
 <dd>
 <p>[in] A Boolean value that specifies whether blending is enabled for the associated render target. <b>TRUE</b> indicates blending is enabled; <b>FALSE</b> indicates blending is disabled. </p>
 </dd>
 
-### -field <b>SrcBlend</b>
+### -field SrcBlend
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend.md">D3D10_DDI_BLEND</a>-typed value that indicates the blend mode of the source for the enabled render target. </p>
 </dd>
 
-### -field <b>DestBlend</b>
+### -field DestBlend
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend.md">D3D10_DDI_BLEND</a>-typed value that indicates the blend mode of the destination for the enabled render target. </p>
 </dd>
 
-### -field <b>BlendOp</b>
+### -field BlendOp
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend-op.md">D3D10_DDI_BLEND_OP</a>-typed value that indicates the blending operation for the enabled render target. </p>
 </dd>
 
-### -field <b>SrcBlendAlpha</b>
+### -field SrcBlendAlpha
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend.md">D3D10_DDI_BLEND</a>-typed value that indicates the transparency blend mode of the source for the enabled render target. </p>
 </dd>
 
-### -field <b>DestBlendAlpha</b>
+### -field DestBlendAlpha
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend.md">D3D10_DDI_BLEND</a>-typed value that indicates the transparency blend mode of the destination for the enabled render target. </p>
 </dd>
 
-### -field <b>BlendOpAlpha</b>
+### -field BlendOpAlpha
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend-op.md">D3D10_DDI_BLEND_OP</a>-typed value that indicates the transparency blending operation for the enabled render target. </p>
 </dd>
 
-### -field <b>RenderTargetWriteMask</b>
+### -field RenderTargetWriteMask
 
 <dd>
 <p>[in] An 8-bit bitwise value that indicates the write properties for the enabled render target. Each bit must be set to one of the following values from the D3D10_DDI_COLOR_WRITE_ENABLE enumeration.</p>

@@ -55,13 +55,13 @@ typedef struct _VIDEO_NUM_MODES {
 ## -struct-fields
 <dl>
 
-### -field <b>NumModes</b>
+### -field NumModes
 
 <dd>
 <p>Specifies the number of modes supported by the device.</p>
 </dd>
 
-### -field <b>ModeInformationLength</b>
+### -field ModeInformationLength
 
 <dd>
 <p>Is the length, in bytes, of the <a href="..\ntddvdeo\ns-ntddvdeo--video-mode-information.md">VIDEO_MODE_INFORMATION</a> structure that describes each of the modes supported by the device.</p>

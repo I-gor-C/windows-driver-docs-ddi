@@ -7,7 +7,7 @@ old-location: acpi\acpi_eval_input_buffer_simple_string_v2_ex.htm
 old-project: acpi
 ms.assetid: 627DA82C-CD51-4FA0-80C2-03F7FA26C0CF
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>Defines the <b>ULONG</b> member <b>Signature</b>.</p>
 </dd>
 
-### -field <b>MethodName[256]</b>
+### -field MethodName[256]
 
 <dd>
 <p>NULL terminated name string.</p>
 </dd>
 
-### -field <b>StringLength</b>
+### -field StringLength
 
 <dd>
 <p>Defines the <b>ULONG</b> member <b>StringLength</b>.</p>
 </dd>
 
-### -field <b>String[ANYSIZE_ARRAY]</b>
+### -field String[ANYSIZE_ARRAY]
 
 <dd>
 <p>Defines the <b>UCHAR</b> member <b>String[ANYSIZE_ARRAY]</b>.</p>

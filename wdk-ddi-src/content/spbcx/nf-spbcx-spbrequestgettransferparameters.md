@@ -7,7 +7,7 @@ old-location: spb\spbrequestgettransferparameters.htm
 old-project: SPB
 ms.assetid: 33B0C9EF-B40A-4BE7-A5AB-81FFF4698F3F
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/30/2017
 ms.keywords: SpbRequestGetTransferParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ void SpbRequestGetTransferParameters(
 ## -parameters
 <dl>
 
-### -param <i>SpbRequest</i> [in]
+### -param SpbRequest [in]
 
 <dd>
 <p>An <a href="buses.spbrequest_object_handle">SPBREQUEST</a> handle to the I/O request from which to retrieve the transfer parameters. This parameter must be a handle to an <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a> request.</p>
 </dd>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>The index of a transfer in the I/O transfer sequence. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>TransferDescriptor</i> [out, optional]
+### -param TransferDescriptor [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/hh406218">SPB_TRANSFER_DESCRIPTOR</a> structure into which  the method writes the transfer parameters. The <i>TransferDescriptor</i> parameter is optional and can be specified as NULL if the caller does not require the transfer parameters. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>TransferBuffer</i> [out, optional]
+### -param TransferBuffer [out, optional]
 
 <dd>
 <p>A pointer to a location into which the method writes a pointer to an MDL (or an MDL chain) that describes the physical memory in the transfer buffer.  The caller must not modify the contents of this MDL. This parameter is optional and can be set to NULL if the MDL is not needed. For more information, see the following Remarks section.</p>
@@ -165,4 +165,4 @@ void SpbRequestGetTransferParameters(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SpbRequestGetTransferParameters method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SpbRequestGetTransferParameters method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

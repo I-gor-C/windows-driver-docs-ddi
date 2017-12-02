@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_UPDATEOVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>hOverlay</b>
+### -field hOverlay
 
 <dd>
 <p>[in] A handle to the overlay to modify.</p>
 </dd>
 
-### -field <b>OverlayInfo</b>
+### -field OverlayInfo
 
 <dd>
 <p>[in] A pointer to the <a href="..\d3dumddi\ns-d3dumddi--d3dddi-overlayinfo.md">D3DDDI_OVERLAYINFO</a> structure that describes the modification for the overlay. </p>

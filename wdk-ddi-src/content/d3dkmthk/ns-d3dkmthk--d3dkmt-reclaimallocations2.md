@@ -62,44 +62,44 @@ typedef struct _D3DKMT_RECLAIMALLOCATIONS2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hPagingQueue</b>
+### -field hPagingQueue
 
 <dd>
 <p>[in] A handle to the device that created the allocations.</p>
 </dd>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of items in the <b>pResources</b>, <b>HandleList</b>, or  <b>pDiscarded</b> members, whichever is not <b>NULL</b>.</p>
 </dd>
 
-### -field <b>pResources</b>
+### -field pResources
 
 <dd>
 <p>[in] An array of <b>D3DKMT_HANDLE</b> data types that represent Direct3D runtime resource handles.</p>
 </dd>
 
-### -field <b>HandleList</b>
+### -field HandleList
 
 <dd>
 <p>[in] An array of <b>D3DKMT_HANDLE</b> data types that represent kernel-mode handles to the allocations that are to be reclaimed.</p>
 <p>If <b>HandleList</b> is not <b>NULL</b>, the <b>pResources</b> member must be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>pDiscarded</b>
+### -field pDiscarded
 
 <dd>
 <p>[out] Optional array of boolean variables  specifying whether each resource or allocation was discarded.</p>
 </dd>
 
-### -field <b>pResults</b>
+### -field pResults
 
 <dd>
 <p>[in] Required array of values specifying whether the surface is valid, discarded, or list commitment.</p>
 </dd>
 
-### -field <b>PagingFenceValue</b>
+### -field PagingFenceValue
 
 <dd>
 <p>The paging fence to synchronize against before submitting work to the GPU which references any of the resources or allocations in the provided arrays.</p>

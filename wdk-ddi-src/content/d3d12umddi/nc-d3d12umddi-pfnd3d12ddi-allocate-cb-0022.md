@@ -58,13 +58,13 @@ HRESULT APIENTRY CALLBACK* pfnAllocateCb(
 ## -parameters
 <dl>
 
-### -param <i>hRTDevice</i> [in]
+### -param hRTDevice [in]
 
 <dd>
 <p>The handle for a device.</p>
 </dd>
 
-### -param <i>Allocate</i> [in, out]
+### -param Allocate [in, out]
 
 <dd>
 <p>A <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddicb-allocate-0022.md">D3D12DDICB_ALLOCATE_0022</a> structure that contains information for an allocation.</p>

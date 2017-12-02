@@ -67,7 +67,7 @@ struct _URB_CONTROL_DESCRIPTOR_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>Hdr</b>
+### -field Hdr
 
 <dd>
 <p>Pointer to a <a href="buses._urb_header">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be one of the following:</p>
@@ -82,61 +82,61 @@ struct _URB_CONTROL_DESCRIPTOR_REQUEST {
 <p><b>Hdr.Length</b> must equal <code>sizeof(_URB_CONTROL_DESCRIPTOR_REQUEST)</code>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>TransferBufferLength</b>
+### -field TransferBufferLength
 
 <dd>
 <p>Specifies the length, in bytes, of the buffer specified in <b>TransferBuffer</b> or described in <b>TransferBufferMDL</b>. The host controller driver returns the number of bytes sent to or read from the pipe in this member.</p>
 </dd>
 
-### -field <b>TransferBuffer</b>
+### -field TransferBuffer
 
 <dd>
 <p>Pointer to a resident buffer for the transfer or is <b>NULL</b> if an MDL is supplied in <b>TransferBufferMDL</b>.</p>
 </dd>
 
-### -field <b>TransferBufferMDL</b>
+### -field TransferBufferMDL
 
 <dd>
 <p>Pointer to an MDL that describes a resident buffer or is <b>NULL</b> if a buffer is supplied in <b>TransferBuffer</b>. This MDL must be allocated from nonpaged pool.</p>
 </dd>
 
-### -field <b>UrbLink</b>
+### -field UrbLink
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>hca</b>
+### -field hca
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>Specifies the device-defined index of the descriptor that is being retrieved or set.</p>
 </dd>
 
-### -field <b>DescriptorType</b>
+### -field DescriptorType
 
 <dd>
 <p>Indicates what type of descriptor is being retrieved or set. One of the following values must be specified:</p>
@@ -147,13 +147,13 @@ struct _URB_CONTROL_DESCRIPTOR_REQUEST {
 </dl>
 </dd>
 
-### -field <b>LanguageId</b>
+### -field LanguageId
 
 <dd>
 <p>Specifies the language ID of the descriptor to be retrieved when USB_STRING_DESCRIPTOR_TYPE is set in <b>DescriptorType</b>. This member must be set to zero for any other value in <b>DescriptorType</b>.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. Do not use.</p>

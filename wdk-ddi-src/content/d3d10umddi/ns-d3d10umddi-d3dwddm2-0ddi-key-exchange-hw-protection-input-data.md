@@ -56,19 +56,19 @@ typedef struct D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION_INPUT_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>PrivateDataSize</b>
+### -field PrivateDataSize
 
 <dd>
 <p>Contains the size of the private data reserved for IHV usage. This size is determined from the <b>pPrivateInputSize</b> member returned by <a href="display.getcryptosessionprivatedatasize">GetCryptoSessionPrivateDataSize</a>.</p>
 </dd>
 
-### -field <b>HWProtectionDataSize</b>
+### -field HWProtectionDataSize
 
 <dd>
 <p>Contains the size of the DRM command data.</p>
 </dd>
 
-### -field <b>pbInput</b>
+### -field pbInput
 
 <dd>
 <p>If <b>PrivateDataSize</b> is greater than 0, <b>pbInput</b>[0] – <b>pbInput</b>[<b>PrivateDataSize</b> - 1] is reserved for IHV use.

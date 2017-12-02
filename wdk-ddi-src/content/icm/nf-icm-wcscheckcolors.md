@@ -60,43 +60,43 @@ BOOL WcsCheckColors(
 ## -parameters
 <dl>
 
-### -param <i>hColorTransform</i> [in]
+### -param hColorTransform [in]
 
 <dd>
 <p>A handle to the WCS color transform to use.</p>
 </dd>
 
-### -param <i>nColors</i> [in]
+### -param nColors [in]
 
 <dd>
 <p>The number of elements in the array pointed to by <i>pInputData</i> and <i>paResult</i>.</p>
 </dd>
 
-### -param <i>nInputChannels</i> [in]
+### -param nInputChannels [in]
 
 <dd>
 <p>The number of channels per element in the array pointed to by <i>pInputData</i>.</p>
 </dd>
 
-### -param <i>cdtInput</i> [in]
+### -param cdtInput [in]
 
 <dd>
 <p>The input COLORDATATYPE color data type.</p>
 </dd>
 
-### -param <i>cbInput</i> [in]
+### -param cbInput [in]
 
 <dd>
 <p>The buffer size of <i>pInputData</i>.</p>
 </dd>
 
-### -param <i>pInputData</i> [in]
+### -param pInputData [in]
 
 <dd>
 <p>A pointer to an array of input colors. Colors in this array correspond to the color space of the source profile.</p>
 </dd>
 
-### -param <i>paResult</i> [out]
+### -param paResult [out]
 
 <dd>
 <p>A pointer to an array of <i>nColors</i> bytes that receives the results of the test.</p>

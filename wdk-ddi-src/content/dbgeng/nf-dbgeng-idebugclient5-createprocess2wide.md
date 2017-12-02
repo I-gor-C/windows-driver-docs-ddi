@@ -7,7 +7,7 @@ old-location: debugger\createprocess2wide.htm
 old-project: debugger
 ms.assetid: b032ca68-5ac5-4a19-84fe-92058905a1d7
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugClient5, CreateProcess2Wide, IDebugClient5::CreateProcess2Wide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ HRESULT CreateProcess2Wide(
 ## -parameters
 <dl>
 
-### -param <i>Server</i> [in]
+### -param Server [in]
 
 <dd>
 <p>Specifies the process server that will be attached to the process.  If <i>Server</i> is zero, the engine will create the local process without using a process server.</p>
 </dd>
 
-### -param <i>CommandLine</i> [in]
+### -param CommandLine [in]
 
 <dd>
 <p>Specifies the command line to execute to create the new process.</p>
 </dd>
 
-### -param <i>OptionsBuffer</i> [in]
+### -param OptionsBuffer [in]
 
 <dd>
 <p>Specifies the process creation options.  <i>OptionsBuffer</i> is a pointer to a <a href="..\dbgeng\ns-dbgeng--debug-create-process-options.md">DEBUG_CREATE_PROCESS_OPTIONS</a> structure.</p>
 </dd>
 
-### -param <i>OptionsBufferSize</i> [in]
+### -param OptionsBufferSize [in]
 
 <dd>
 <p>Specifies the size of the buffer <i>OptionsBuffer</i>.  This should be set to <b>sizeof(DEBUG_CREATE_PROCESS_OPTIONS)</b>.</p>
 </dd>
 
-### -param <i>InitialDirectory</i> [in, optional]
+### -param InitialDirectory [in, optional]
 
 <dd>
 <p>Specifies the starting directory for the process.  If <i>InitialDirectory</i> is <b>NULL</b>, the current directory for the process server is used.</p>
 </dd>
 
-### -param <i>Environment</i> [in, optional]
+### -param Environment [in, optional]
 
 <dd>
 <p>Specifies an environment block for the new process.  An environment block consists of a null-terminated block of null-terminated strings.  Each string is of the form:</p>
@@ -109,7 +109,7 @@ HRESULT CreateProcess2Wide(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 
@@ -184,4 +184,4 @@ HRESULT CreateProcess2Wide(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient5::CreateProcess2Wide method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient5::CreateProcess2Wide method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

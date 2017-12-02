@@ -54,7 +54,7 @@ NTSTATUS AddMember(
 ## -parameters
 <dl>
 
-### -param <i>pServiceSink</i> [in]
+### -param pServiceSink [in]
 
 <dd>
 <p>Pointer to the <a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a> interface of the new member of the service group</p>
@@ -65,7 +65,7 @@ NTSTATUS AddMember(
 <p><code>AddMember</code> returns STATUS_SUCCESS if the call was successful. Otherwise, the method returns an appropriate error code.</p>
 
 ## -remarks
-<p>The <code>AddMember</code> method calls <b>AddRef</b> on the <i>pServiceSink</i> object. When the object is later removed, the <b>RemoveMember</b> method calls <b>Release</b> on the <i>pServiceSink</i> object. This behavior is in accordance with the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <code>AddMember</code> method calls <b>AddRef</b> on the <i>pServiceSink</i> object. When the object is later removed, the <b>RemoveMember</b> method calls <b>Release</b> on the <i>pServiceSink</i> object. This behavior is in accordance with the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

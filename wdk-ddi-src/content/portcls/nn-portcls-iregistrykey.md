@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>The <code>IRegistryKey</code> interface provides an abstraction of a registry key that a miniport driver can use to access the key and its subkeys. The PortCls system driver implements this interface and exposes it to miniport drivers. A miniport driver obtains a reference to an <code>IRegistryKey</code> object by calling <a href="..\portcls\nf-portcls-pcnewregistrykey.md">PcNewRegistryKey</a> or <a href="audio.iport_newregistrykey">IPort::NewRegistryKey</a>. </p>
-<p>For more information, see <a href="NULL">Registry Key Objects</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/c666f0cc-5a8a-4df8-9c65-08e3b044a08f">Registry Key Objects</a>.</p>
 
 
 ## -inheritance

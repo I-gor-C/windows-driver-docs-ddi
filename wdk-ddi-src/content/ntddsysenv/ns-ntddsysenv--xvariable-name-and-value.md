@@ -60,37 +60,37 @@ typedef struct _XVARIABLE_NAME_AND_VALUE {
 ## -struct-fields
 <dl>
 
-### -field <b>				NextEntryOffset</b>
+### -field 				NextEntryOffset
 
 <dd>
 <p>The location of the next entry in the array of XVARIABLE_NAME structures reprieved by the  <a href="..\ntddsysenv\ni-ntddsysenv-ioctl-sysenv-enum-variables.md">IOCTL_SYSENV_ENUM_VARIABLES</a> request.</p>
 </dd>
 
-### -field <b>ValueOffset</b>
+### -field ValueOffset
 
 <dd>
 <p>The value of the system environment variable.</p>
 </dd>
 
-### -field <b>ValueLength</b>
+### -field ValueLength
 
 <dd>
 <p>The length of the value.</p>
 </dd>
 
-### -field <b>Attributes</b>
+### -field Attributes
 
 <dd>
 <p>Attributes of the system environment variable.</p>
 </dd>
 
-### -field <b>VendorGuid</b>
+### -field VendorGuid
 
 <dd>
 <p>The vendor GUID.</p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>Name of the system environment variable.</p>

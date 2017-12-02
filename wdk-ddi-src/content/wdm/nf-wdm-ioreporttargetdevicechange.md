@@ -56,13 +56,13 @@ NTSTATUS IoReportTargetDeviceChange(
 ## -parameters
 <dl>
 
-### -param <i>PhysicalDeviceObject</i> [in]
+### -param PhysicalDeviceObject [in]
 
 <dd>
 <p>Pointer to the PDO of the device being reported.</p>
 </dd>
 
-### -param <i>NotificationStructure</i> [in]
+### -param NotificationStructure [in]
 
 <dd>
 <p>Pointer to a caller-supplied <a href="..\wdm\ns-wdm--target-device-custom-notification.md">TARGET_DEVICE_CUSTOM_NOTIFICATION</a> structure describing the custom event. The PnP manager sends this structure to drivers that registered for notification of the event.</p>

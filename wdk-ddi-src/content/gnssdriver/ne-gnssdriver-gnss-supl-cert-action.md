@@ -7,7 +7,7 @@ old-location: sensors\gnss_supl_cert_action.htm
 old-project: sensors
 ms.assetid: DE51CB88-E761-40DC-B437-7572CD95FB4A
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="GNSS_Supl_Cert_Inject"></a><a id="gnss_supl_cert_inject"></a><a id="GNSS_SUPL_CERT_INJECT"></a><b>GNSS_Supl_Cert_Inject</b>
+### -field GNSS_Supl_Cert_Inject
 
 <dd>
 <p>Indicates that the certificate should be injected.</p>
 </dd>
 
-### -field <a id="GNSS_Supl_Cert_Delete"></a><a id="gnss_supl_cert_delete"></a><a id="GNSS_SUPL_CERT_DELETE"></a><b>GNSS_Supl_Cert_Delete</b>
+### -field GNSS_Supl_Cert_Delete
 
 <dd>
 <p>Indicates that the certificate specified by the <b>SuplCertName</b> member of the <a href="sensors.gnss_supl_cert_config">GNSS_SUPL_CERT_CONFIG</a> structure should be deleted.</p>
 </dd>
 
-### -field <a id="GNSS_Supl_Cert_Purge_"></a><a id="gnss_supl_cert_purge_"></a><a id="GNSS_SUPL_CERT_PURGE_"></a><b>GNSS_Supl_Cert_Purge </b>
+### -field GNSS_Supl_Cert_Purge 
 
 <dd>
 <p>Indicates that all certificates previously injected into the GNSS driver should be deleted.</p>

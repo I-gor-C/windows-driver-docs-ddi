@@ -7,7 +7,7 @@ old-location: netvista\dot11_msonex_result.htm
 old-project: netvista
 ms.assetid: d5870125-2c0f-4cb9-ad2a-dc4939745504
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef enum _DOT11_MSONEX_RESULT {
 ## -enum-fields
 <dl>
 
-### -field <a id="DOT11_MSONEX_SUCCESS"></a><a id="dot11_msonex_success"></a><b>DOT11_MSONEX_SUCCESS</b>
+### -field DOT11_MSONEX_SUCCESS
 
 <dd>
 <p>The 802.1X authentication operation succeeded.</p>
 </dd>
 
-### -field <a id="DOT11_MSONEX_FAILURE"></a><a id="dot11_msonex_failure"></a><b>DOT11_MSONEX_FAILURE</b>
+### -field DOT11_MSONEX_FAILURE
 
 <dd>
 <p>The 802.1X authentication operation failed.</p>
 </dd>
 
-### -field <a id="DOT11_MSONEX_IN_PROGRESS"></a><a id="dot11_msonex_in_progress"></a><b>DOT11_MSONEX_IN_PROGRESS</b>
+### -field DOT11_MSONEX_IN_PROGRESS
 
 <dd>
 <p>The 802.1X authentication operation is in progress.</p>
@@ -117,4 +117,4 @@ typedef enum _DOT11_MSONEX_RESULT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MSONEX_RESULT enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MSONEX_RESULT enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

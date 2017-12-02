@@ -57,19 +57,19 @@ VOID READ_PORT_BUFFER_ULONG(
 ## -parameters
 <dl>
 
-### -param <i>Port</i> [in]
+### -param Port [in]
 
 <dd>
 <p>Specifies the port address, which must be a mapped memory range in I/O space.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Pointer to a buffer into which an array of ULONG values is read.</p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>Specifies the number of ULONG values to be read into the buffer. </p>

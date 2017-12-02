@@ -7,7 +7,7 @@ old-location: wdf\iqueuecallbackiocanceledonqueue.htm
 old-project: wdf
 ms.assetid: d85b5c70-4e03-4a12-bc0b-e738d4dab6cf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

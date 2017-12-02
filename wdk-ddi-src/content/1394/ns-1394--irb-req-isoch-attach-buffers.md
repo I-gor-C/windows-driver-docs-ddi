@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_attach_buffers.htm
 old-project: IEEE
 ms.assetid: 7EA6E82C-D803-48CD-9955-CF576BF978CA
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_ISOCH_ATTACH_BUFFERS, IRB_REQ_ISOCH_ATTACH_BUFFERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef struct _IRB_REQ_ISOCH_ATTACH_BUFFERS {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>Specifies the resource handle to attach buffers to.</p>
 </dd>
 
-### -field <b>nNumberOfDescriptors</b>
+### -field nNumberOfDescriptors
 
 <dd>
 <p>Specifies the number of elements in the <b>pIsochDescriptor</b> array.</p>
 </dd>
 
-### -field <b>pIsochDescriptor</b>
+### -field pIsochDescriptor
 
 <dd>
 <p>Points to an array of ISOCH_DESCRIPTOR structures that describe the buffers to be attached, and the parameters that specify how each buffer is to be used.</p>

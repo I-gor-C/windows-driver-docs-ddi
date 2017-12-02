@@ -56,13 +56,13 @@ LONG InterlockedExchange(
 ## -parameters
 <dl>
 
-### -param <i>Target</i> [in, out]
+### -param Target [in, out]
 
 <dd>
 <p>A pointer to a variable to be set to the supplied <i>Value</i> as an atomic operation.</p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>Specifies the value to which the variable will be set. </p>

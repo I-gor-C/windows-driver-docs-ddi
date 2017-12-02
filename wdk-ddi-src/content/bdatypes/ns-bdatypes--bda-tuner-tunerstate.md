@@ -56,15 +56,15 @@ typedef struct _BDA_TUNER_TUNERSTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>ulTuneLength</b>
+### -field ulTuneLength
 
 <dd></dd>
 
-### -field <b>argbTuneData</b>
+### -field argbTuneData
 
 <dd></dd>
 </dl>

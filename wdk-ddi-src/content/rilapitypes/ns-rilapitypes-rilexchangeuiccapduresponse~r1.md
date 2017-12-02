@@ -7,7 +7,7 @@ old-location: netvista\rilexchangeuiccapduresponse_2.htm
 old-project: netvista
 ms.assetid: c9e3a4b3-2ce2-4f90-8be2-01d9870cc982
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILEXCHANGEUICCAPDURESPONSE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef struct _RILEXCHANGEUICCAPDURESPONSE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwResponseAPDULength</b>
+### -field dwResponseAPDULength
 
 <dd></dd>
 
-### -field <b>bResponseAPDU</b>
+### -field bResponseAPDU
 
 <dd></dd>
 </dl>

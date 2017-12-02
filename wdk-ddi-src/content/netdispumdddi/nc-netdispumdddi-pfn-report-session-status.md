@@ -61,19 +61,19 @@ VOID ReportSessionStatus(
 ## -parameters
 <dl>
 
-### -param <i>hMiracastDeviceHandle</i> [in]
+### -param hMiracastDeviceHandle [in]
 
 <dd>
 <p>A handle that represents a Miracast device. The Miracast user-mode driver previously obtained this handle as the <i>hMiracastDeviceHandle</i> parameter in a call to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-create-miracast-context.md">CreateMiracastContext</a> function.</p>
 </dd>
 
-### -param <i>MiracastStatus</i> [in]
+### -param MiracastStatus [in]
 
 <dd>
 <p>The current status of the Miracast link, of type <a href="..\netdispumdddi\ne-netdispumdddi-miracast-status.md">MIRACAST_STATUS</a>.</p>
 </dd>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>A status value the driver can provide that's logged for diagnostics purposes.</p>

@@ -61,43 +61,43 @@ NTSTATUS IoSetDeviceInterfacePropertyData(
 ## -parameters
 <dl>
 
-### -param <i>SymbolicLinkName</i> [in]
+### -param SymbolicLinkName [in]
 
 <dd>
 <p>A pointer to a string that identifies the device interface instance. This string was obtained from a previous call to the <a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>, <a href="..\wdm\nf-wdm-iogetdeviceinterfacealias.md">IoGetDeviceInterfaceAlias</a>, or <a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a> routine.</p>
 </dd>
 
-### -param <i>PropertyKey</i> [in]
+### -param PropertyKey [in]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a> structure that contains the device interface property key.</p>
 </dd>
 
-### -param <i>Lcid</i> [in]
+### -param Lcid [in]
 
 <dd>
 <p>Specifies a locale identifier. Set this parameter either to a language-specific LCID value or to <b>LOCALE_NEUTRAL</b>. The <b>LOCALE_NEUTRAL</b> LCID specifies that the property is language-neutral (that is, not specific to any language). Do not set this parameter to <b>LOCALE_SYSTEM_DEFAULT</b> or <b>LOCALE_USER_DEFAULT</b>. For more information about language-specific LCID values, see <a href="http://msdn.microsoft.com/en-us/library/cc233968(PROT.10).aspx">LCID Structure</a>.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Set this parameter to <b>PLUGPLAY_PROPERTY_PERSISTENT</b> if the property value set by this routine should persist across computer restarts. Otherwise, set <i>Flags</i> to zero.</p>
 </dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>Set this parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543546">DEVPROPTYPE</a> value that specifies the type of the data that is supplied in the <i>Data</i> buffer.</p>
 </dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer that <i>Data</i> points to.</p>
 </dd>
 
-### -param <i>Data</i> [in, optional]
+### -param Data [in, optional]
 
 <dd>
 <p>A pointer to the device interface property data. Set this parameter to <b>NULL</b> to delete the specified property. If <i>Data</i> is non-<b>NULL</b>, the routine stores an internal copy of the property value. The buffer pointed to by <i>Data</i> does not need to remain valid after the call returns.</p>
@@ -114,7 +114,7 @@ NTSTATUS IoSetDeviceInterfacePropertyData(
 <p> </p>
 
 ## -remarks
-<p>Kernel-mode drivers use the <b>IoSetDeviceInterfacePropertyData</b> routine to modify device interface properties that are defined as part of the <a href="NULL">unified device property model</a>. For more information about device interface properties, see <a href="NULL">Device Properties</a>.</p>
+<p>Kernel-mode drivers use the <b>IoSetDeviceInterfacePropertyData</b> routine to modify device interface properties that are defined as part of the <a href="devinst.unified_device_property_model__windows_vista_and_later_">unified device property model</a>. For more information about device interface properties, see <a href="https://msdn.microsoft.com/f41040c5-0eac-450d-b532-9165c543cc1a">Device Properties</a>.</p>
 
 <p>Drivers can use the <a href="..\wdm\nf-wdm-iogetdeviceinterfacepropertydata.md">IoGetDeviceInterfacePropertyData</a> routine to obtain the current value for a device interface property.</p>
 

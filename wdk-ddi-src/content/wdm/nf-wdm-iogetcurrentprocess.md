@@ -126,7 +126,7 @@ PEPROCESS  IoGetCurrentProcess(void);
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 </dl>
 <p> </p>

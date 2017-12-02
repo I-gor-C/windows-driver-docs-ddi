@@ -59,25 +59,25 @@ BOOLEAN PsGetVersion(
 ## -parameters
 <dl>
 
-### -param <i>MajorVersion</i> [out, optional]
+### -param MajorVersion [out, optional]
 
 <dd>
 <p>Points to a caller-supplied variable that this routine sets to the major version of the operating system. This optional parameter can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>MinorVersion</i> [out, optional]
+### -param MinorVersion [out, optional]
 
 <dd>
 <p>Points to a caller-supplied variable that this routine sets to the minor version of the operating system. This optional parameter can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>BuildNumber</i> [out, optional]
+### -param BuildNumber [out, optional]
 
 <dd>
 <p>Points to a caller-supplied variable that this routine sets to the current build number of the operating system. This optional parameter can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>CSDVersion</i> [out, optional]
+### -param CSDVersion [out, optional]
 
 <dd>
 <p>Points to a caller-allocated buffer in which this routine returns the current service-pack version as a Unicode string only during system driver initialization. This optional parameter can be <b>NULL</b>. </p>

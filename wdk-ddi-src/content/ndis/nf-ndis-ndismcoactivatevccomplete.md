@@ -7,7 +7,7 @@ old-location: netvista\ndismcoactivatevccomplete.htm
 old-project: netvista
 ms.assetid: db5ff69f-dcae-4016-a078-c8edb2390c6c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMCoActivateVcComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,20 +58,20 @@ VOID NdisMCoActivateVcComplete(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p></p>
 <dl>
 
-### -param <a id="Specifies_the_final_status_of_the_activate-VC_operation__which_can_be_NDIS_STATUS_SUCCESS_or_________any_NDIS_STATUS_XXXexcept_NDIS_STATUS_PENDING."></a><a id="specifies_the_final_status_of_the_activate-vc_operation__which_can_be_ndis_status_success_or_________any_ndis_status_xxxexcept_ndis_status_pending."></a><a id="SPECIFIES_THE_FINAL_STATUS_OF_THE_ACTIVATE-VC_OPERATION__WHICH_CAN_BE_NDIS_STATUS_SUCCESS_OR_________ANY_NDIS_STATUS_XXXEXCEPT_NDIS_STATUS_PENDING."></a>Specifies the final status of the activate-VC operation, which can be NDIS_STATUS_SUCCESS or
+### -param Specifies the final status of the activate-VC operation, which can be NDIS_STATUS_SUCCESS or
         any NDIS_STATUS_<i>XXX</i><u>except</u> NDIS_STATUS_PENDING.
 
 <dd></dd>
 </dl>
 </dd>
 
-### -param <i>NdisVcHandle</i> [in]
+### -param NdisVcHandle [in]
 
 <dd>
 <p>Specifies the handle identifying the VC. The caller obtained this handle from its per-VC state,
@@ -81,7 +81,7 @@ VOID NdisMCoActivateVcComplete(
      MiniportCoActivateVc</a> function.</p>
 </dd>
 
-### -param <i>CallParameters</i> [in]
+### -param CallParameters [in]
 
 <dd>
 <p>Pointer to a structure of type 
@@ -202,4 +202,4 @@ VOID NdisMCoActivateVcComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoActivateVcComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoActivateVcComplete function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

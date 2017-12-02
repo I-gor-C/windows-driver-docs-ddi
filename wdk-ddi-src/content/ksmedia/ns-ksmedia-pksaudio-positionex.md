@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>TimerFrequency</b>
+### -field TimerFrequency
 
 <dd>
 <p>Specifies the number of ticks per second for the timer that produces the timestamps.</p>
 </dd>
 
-### -field <b>TimeStamp1</b>
+### -field TimeStamp1
 
 <dd>
 <p>Specifies the timestamp that is taken immediately prior to the acquisition of the position information.</p>
 </dd>
 
-### -field <b>Position</b>
+### -field Position
 
 <dd>
 <p>Specifies the position of the read cursor and the write cursor in the audio buffer of an audio stream.</p>
 </dd>
 
-### -field <b>TimeStamp2</b>
+### -field TimeStamp2
 
 <dd>
 <p>Specifies the timestamp that is taken immediately after the acquisition of the position information.</p>

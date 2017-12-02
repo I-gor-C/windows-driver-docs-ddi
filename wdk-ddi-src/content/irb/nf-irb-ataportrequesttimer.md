@@ -56,19 +56,19 @@ BOOLEAN __inline AtaPortRequestTimer(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the channel extension. </p>
 </dd>
 
-### -param <i>TimerRoutine</i> [in]
+### -param TimerRoutine [in]
 
 <dd>
 <p>A pointer to the timer routine. </p>
 </dd>
 
-### -param <i>TimerValue</i> [in]
+### -param TimerValue [in]
 
 <dd>
 <p>Time interval in units of microseconds.</p>

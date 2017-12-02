@@ -61,43 +61,43 @@ typedef struct _PRINTPROCESSOROPENDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>pDevMode</b>
+### -field pDevMode
 
 <dd>
 <p>Spooler-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure.</p>
 </dd>
 
-### -field <b>pDatatype</b>
+### -field pDatatype
 
 <dd>
 <p>Spooler-supplied pointer to a string representing the print job's data type.</p>
 </dd>
 
-### -field <b>pParameters</b>
+### -field pParameters
 
 <dd>
 <p>Spooler-supplied pointer to a parameter string, as specified in a JOB_INFO_2 structure supplied to a call to the <b>SetJob</b> function, described in the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -field <b>pDocumentName</b>
+### -field pDocumentName
 
 <dd>
 <p>Spooler-supplied pointer to a string representing the name of the input document associated with the print job. </p>
 </dd>
 
-### -field <b>JobId</b>
+### -field JobId
 
 <dd>
 <p>Spooler-supplied value identifying the print job.</p>
 </dd>
 
-### -field <b>pOutputFile</b>
+### -field pOutputFile
 
 <dd>
 <p>Spooler-supplied pointer to a string representing the name of the output spool file.</p>
 </dd>
 
-### -field <b>pPrinterName</b>
+### -field pPrinterName
 
 <dd>
 <p>Spooler-supplied pointer to a string representing the name of the printer to be used.</p>

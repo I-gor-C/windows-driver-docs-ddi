@@ -56,13 +56,13 @@ ULONG64 PsQueryTotalCycleTimeProcess(
 ## -parameters
 <dl>
 
-### -param <i>Process</i> [in, out]
+### -param Process [in, out]
 
 <dd>
 <p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544273">EPROCESS</a> structure that serves as the kernel object for the process.</p>
 </dd>
 
-### -param <i>CycleTimeStamp</i> [out]
+### -param CycleTimeStamp [out]
 
 <dd>
 <p>A pointer to a ULONG64 variable to which the routine writes the current cycle counter value for the process.</p>

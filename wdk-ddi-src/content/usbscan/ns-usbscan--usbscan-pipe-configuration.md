@@ -7,7 +7,7 @@ old-location: image\usbscan_pipe_configuration.htm
 old-project: image
 ms.assetid: c9b0247b-1444-46c9-a430-897594f8d223
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: USBSCAN_PIPE_CONFIGURATION, USBSCAN_PIPE_CONFIGURATION, *PUSBSCAN_PIPE_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ typedef struct _USBSCAN_PIPE_CONFIGURATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfPipes</b>
+### -field NumberOfPipes
 
 <dd>
 <p>The number of transfer pipes supported for the device.</p>
 </dd>
 
-### -field <b>PipeInfo</b>
+### -field PipeInfo
 
 <dd>
 <p>Pointer to a <b>NumberOfPipes</b>-sized array of <a href="..\usbscan\ns-usbscan--usbscan-pipe-information.md">USBSCAN_PIPE_INFORMATION</a> structures.</p>

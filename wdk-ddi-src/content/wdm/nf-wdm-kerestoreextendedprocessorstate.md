@@ -55,7 +55,7 @@ VOID KeRestoreExtendedProcessorState(
 ## -parameters
 <dl>
 
-### -param <i>XStateSave</i> [in]
+### -param XStateSave [in]
 
 <dd>
 <p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566414">XSTATE_SAVE</a> structure that contains the extended processor state information to restore. The contents of this structure must have been previously saved by the <a href="..\wdm\nf-wdm-kesaveextendedprocessorstate.md">KeSaveExtendedProcessorState</a> routine.</p>

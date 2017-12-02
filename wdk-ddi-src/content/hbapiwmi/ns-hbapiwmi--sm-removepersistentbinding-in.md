@@ -57,25 +57,25 @@ typedef struct _SM_RemovePersistentBinding_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>HbaPortWWN</b>
+### -field HbaPortWWN
 
 <dd>
 <p>The worldwide name (WWN) of the local port whose events the WMI client will receive.</p>
 </dd>
 
-### -field <b>DomainPortWWN</b>
+### -field DomainPortWWN
 
 <dd>
 <p>A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.</p>
 </dd>
 
-### -field <b>EntryCount</b>
+### -field EntryCount
 
 <dd>
 <p>The total number of persistent bindings that are associated with the HBA.</p>
 </dd>
 
-### -field <b>Entry</b>
+### -field Entry
 
 <dd>
 <p>An array of structures of type SMHBA_SCSIENTRY that describes an HBA's bindings between the operating system and the SAS identifiers.</p>

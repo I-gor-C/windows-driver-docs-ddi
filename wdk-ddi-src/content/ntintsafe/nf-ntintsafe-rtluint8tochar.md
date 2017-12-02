@@ -55,13 +55,13 @@ NTSTATUS RtlUInt8ToChar(
 ## -parameters
 <dl>
 
-### -param <i>u8Operand</i> [in]
+### -param u8Operand [in]
 
 <dd>
 <p>The value to be converted.</p>
 </dd>
 
-### -param <i>pch</i> [out]
+### -param pch [out]
 
 <dd>
 <p>A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

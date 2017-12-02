@@ -55,7 +55,7 @@ HRESULT PublishPrintTicketHelperInterface(
 ## -parameters
 <dl>
 
-### -param <i>pHelper</i> [in]
+### -param pHelper [in]
 
 <dd>
 <p>A pointer to an <b>IUnknown</b> interface, which should be cast to one of the following interfaces: For Unidrv plug-ins, the print ticket helper interface is <b>IPrintCoreHelperUni</b>; for Pscript5 plug-ins, the print ticket helper interface is <b>IPrintCoreHelperPS</b>.</p>

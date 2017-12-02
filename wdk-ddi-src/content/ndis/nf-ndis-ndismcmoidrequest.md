@@ -7,7 +7,7 @@ old-location: netvista\ndismcmoidrequest.htm
 old-project: netvista
 ms.assetid: c5523dff-4957-4265-82ef-2fbc009e6bef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMCmOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ NDIS_STATUS NdisMCmOidRequest(
 ## -parameters
 <dl>
 
-### -param <i>NdisAfHandle</i> [in]
+### -param NdisAfHandle [in]
 
 <dd>
 <p>A handle that identifies the address family (AF), and implicitly the client, that the OID request
@@ -67,7 +67,7 @@ NDIS_STATUS NdisMCmOidRequest(
      <a href="..\ndis\nc-ndis-protocol-cm-open-af.md">ProtocolCmOpenAf</a> function.</p>
 </dd>
 
-### -param <i>NdisVcHandle</i> [in, optional]
+### -param NdisVcHandle [in, optional]
 
 <dd>
 <p>A handle that identifies the virtual connection (VC) that the caller is requesting or setting
@@ -79,7 +79,7 @@ NDIS_STATUS NdisMCmOidRequest(
      <a href="..\ndis\nc-ndis-protocol-co-create-vc.md">ProtocolCoCreateVc</a> function.</p>
 </dd>
 
-### -param <i>NdisPartyHandle</i> [in, optional]
+### -param NdisPartyHandle [in, optional]
 
 <dd>
 <p>A handle that identifies the party on a multipoint VC that the caller is requesting or setting
@@ -89,7 +89,7 @@ NDIS_STATUS NdisMCmOidRequest(
      <a href="..\ndis\nc-ndis-protocol-cm-add-party.md">ProtocolCmAddParty</a> function.</p>
 </dd>
 
-### -param <i>OidRequest</i> [in, out]
+### -param OidRequest [in, out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that contains an 
@@ -257,4 +257,4 @@ NDIS_STATUS NdisMCmOidRequest(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmOidRequest function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmOidRequest function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

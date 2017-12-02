@@ -54,7 +54,7 @@ HRESULT SetPartCompression(
 ## -parameters
 <dl>
 
-### -param <i>compression</i> [in]
+### -param compression [in]
 
 <dd>
 <p>A <a href="print.expscompressionoptions">ExpsCompressionOptions</a>-typed value that describes the compression option for the part.</p>

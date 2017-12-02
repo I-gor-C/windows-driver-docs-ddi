@@ -7,7 +7,7 @@ old-location: debugger\createprocessandattach.htm
 old-project: debugger
 ms.assetid: 1a92a823-ec50-406f-942c-c64fc820f9af
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugClient, CreateProcessAndAttach, IDebugClient::CreateProcessAndAttach
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ HRESULT CreateProcessAndAttach(
 ## -parameters
 <dl>
 
-### -param <i>Server</i> [in]
+### -param Server [in]
 
 <dd>
 <p>Specifies the process server to use to attach to the process.  If <i>Server</i> is zero, the engine will connect to the local process without using a process server.</p>
 </dd>
 
-### -param <i>CommandLine</i> [in, optional]
+### -param CommandLine [in, optional]
 
 <dd>
 <p>Specifies the command line to execute to create the new process.  If <i>CommandLine</i> is <b>NULL</b>, then no process is created and these methods attach to an existing process, as <a href="debugger.attachprocess">AttachProcess</a> does.</p>
 </dd>
 
-### -param <i>CreateFlags</i> [in]
+### -param CreateFlags [in]
 
 <dd>
 <p>Specifies the flags to use when creating the process.  For details on these flags, see <a href="..\dbgeng\ns-dbgeng--debug-create-process-options.md">DEBUG_CREATE_PROCESS_OPTIONS</a>.<b>CreateFlags</b>.</p>
 </dd>
 
-### -param <i>ProcessId</i> [in]
+### -param ProcessId [in]
 
 <dd>
 <p>Specifies the process ID of the target process the debugger will attach to.  If <i>ProcessId</i> is zero, the debugger will attach to the process it created from <i>CommandLine</i>.</p>
 </dd>
 
-### -param <i>AttachFlags</i> [in]
+### -param AttachFlags [in]
 
 <dd>
 <p>Specifies the flags that control how the debugger attaches to the target process.  For details on these flags, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541454">DEBUG_ATTACH_XXX</a>.</p>
@@ -90,7 +90,7 @@ HRESULT CreateProcessAndAttach(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 
@@ -180,4 +180,4 @@ HRESULT CreateProcessAndAttach(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient::CreateProcessAndAttach method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient::CreateProcessAndAttach method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

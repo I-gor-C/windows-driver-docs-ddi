@@ -63,39 +63,39 @@ NTSTATUS* DxgkCbMiracastSendMessage(
 ## -parameters
 <dl>
 
-### -param <i>MiracastHandle</i> [in]
+### -param MiracastHandle [in]
 
 <dd>
 <p>A driver-supplied handle to the Miracast display device. This handle was originally passed in the <b>MiracastHandle</b> member of the <a href="..\dispmprt\ns-dispmprt--dxgk-miracast-display-callbacks.md">DXGK_MIRACAST_DISPLAY_CALLBACKS</a> structure in a call to the <a href="..\dispmprt\nc-dispmprt-dxgkddi-miracast-create-context.md">DxgkDdiMiracastCreateContext</a> function.</p>
 </dd>
 
-### -param <i>InputBufferSize</i> [in]
+### -param InputBufferSize [in]
 
 <dd>
 <p>The size, in bytes, of the input buffer pointed to by <i>pInputBuffer</i>.</p>
 </dd>
 
-### -param <i>pInputBuffer</i> [in]
+### -param pInputBuffer [in]
 
 <dd>
 <p>A pointer to the input buffer. <i>InputBufferSize</i> specifies the size of the buffer.</p>
 <p>See Remarks for more info about the input buffer.</p>
 </dd>
 
-### -param <i>OutBufferSize</i> [in]
+### -param OutBufferSize [in]
 
 <dd>
 <p>The size, in bytes, of the output buffer pointed to by <i>pOutputBuffer</i>.</p>
 </dd>
 
-### -param <i>pOutputBuffer</i> [out]
+### -param pOutputBuffer [out]
 
 <dd>
 <p>A pointer to the output buffer. <i>OutBufferSize</i> specifies the size of the buffer.</p>
 <p>See Remarks for more info about the output buffer.</p>
 </dd>
 
-### -param <i>pCallback</i> [in, optional]
+### -param pCallback [in, optional]
 
 <dd>
 <p>An optional pointer, supplied by the display miniport driver, to the <a href="..\dispmprt\nc-dispmprt-dxgkcb-miracast-send-message-callback.md">DxgkCbMiracastSendMessageCallback</a> callback function.</p>
@@ -103,7 +103,7 @@ NTSTATUS* DxgkCbMiracastSendMessage(
 <p>See Return value and Remarks sections for more about calls to <a href="..\dispmprt\nc-dispmprt-dxgkcb-miracast-send-message-callback.md">DxgkCbMiracastSendMessageCallback</a>.</p>
 </dd>
 
-### -param <i>pCallbackContext</i> [in, optional]
+### -param pCallbackContext [in, optional]
 
 <dd>
 <p>An optional driver-supplied pointer to the driver-supplied callback context. The operating system passes this context to the driver-supplied callback routine after the operation has completed.</p>

@@ -56,13 +56,13 @@ VOID KeInitializeTimerEx(
 ## -parameters
 <dl>
 
-### -param <i>Timer</i> [out]
+### -param Timer [out]
 
 <dd>
 <p>Pointer to a timer object, for which the caller provides the storage.</p>
 </dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>Specifies the type of the timer object, either <b>NotificationTimer</b> or <b>SynchronizationTimer</b>.</p>

@@ -55,13 +55,13 @@ typedef struct _DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>[in] A Boolean value that specifies whether the driver should use the <b>DestinationRect</b> member or the entire target rectangle as the destination. The default value is <b>FALSE</b>, which indicates that the entire target rectangle is the destination. </p>
 </dd>
 
-### -field <b>DestinationRect</b>
+### -field DestinationRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure that specifies the coordinates of the destination rectangle relevant to the target rectangle. This member is relevant only when the <b>Enable</b> member is set to <b>TRUE</b>. The default value is empty (0,0,0,0). </p>

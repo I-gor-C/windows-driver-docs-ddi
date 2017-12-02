@@ -7,7 +7,7 @@ old-location: netvista\miniporttcpoffloadforward.htm
 old-project: netvista
 ms.assetid: e5702476-60a3-4bfc-b959-198e98f0f9ba
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: BINARY_DATA, BINARY_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ NDIS_STATUS MiniportTcpOffloadForward(
 ## -parameters
 <dl>
 
-### -param <i>MiniportAdapterContext</i> [in]
+### -param MiniportAdapterContext [in]
 
 <dd>
 <p>The handle to an offload-target allocated context area in which the offload target maintains state
@@ -74,7 +74,7 @@ NDIS_STATUS MiniportTcpOffloadForward(
      MiniportInitializeEx</a> function.</p>
 </dd>
 
-### -param <i>MiniportOffloadContext</i> [in]
+### -param MiniportOffloadContext [in]
 
 <dd>
 <p>A pointer to a memory location that contains a PVOID value. This PVOID value references the
@@ -83,7 +83,7 @@ NDIS_STATUS MiniportTcpOffloadForward(
      connection state object.</p>
 </dd>
 
-### -param <i>NetBufferList</i> [in]
+### -param NetBufferList [in]
 
 <dd>
 <p>A pointer to a 
@@ -186,4 +186,4 @@ NDIS_STATUS MiniportTcpOffloadForward(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_FORWARD_HANDLER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_FORWARD_HANDLER callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

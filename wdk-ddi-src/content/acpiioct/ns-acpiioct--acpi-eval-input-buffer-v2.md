@@ -7,7 +7,7 @@ old-location: acpi\acpi_eval_input_buffer_v2.htm
 old-project: acpi
 ms.assetid: EDB4862E-FAD4-4AB2-BF0C-CF4C6342F0E4
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: ACPI_EVAL_INPUT_BUFFER_V2, ACPI_EVAL_INPUT_BUFFER_V2, *PACPI_EVAL_INPUT_BUFFER_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>Defines the <b>ULONG</b> member <b>Signature</b>.</p>
 </dd>
 
-### -field <b>DUMMYUNIONNAME</b>
+### -field DUMMYUNIONNAME
 
 <dd>
 <p>Defines the method name member of <b>DUMMYUNIONNAME</b>.</p>

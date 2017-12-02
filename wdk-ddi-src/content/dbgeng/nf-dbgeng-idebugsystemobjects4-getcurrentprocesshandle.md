@@ -7,7 +7,7 @@ old-location: debugger\getcurrentprocesshandle2.htm
 old-project: debugger
 ms.assetid: 87f60064-5722-4b4e-af9b-f1d9009a7551
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSystemObjects4, GetCurrentProcessHandle, IDebugSystemObjects4::GetCurrentProcessHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetCurrentProcessHandle(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [out]
+### -param Handle [out]
 
 <dd>
 <p>Receives the system handle of the current process.</p>
@@ -62,7 +62,7 @@ HRESULT GetCurrentProcessHandle(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

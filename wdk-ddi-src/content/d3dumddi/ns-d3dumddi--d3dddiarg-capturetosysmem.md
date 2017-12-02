@@ -58,31 +58,31 @@ typedef struct _D3DDDIARG_CAPTURETOSYSMEM {
 ## -struct-fields
 <dl>
 
-### -field <b>hSrcResource</b>
+### -field hSrcResource
 
 <dd>
 <p>[in] A handle to the source resource.</p>
 </dd>
 
-### -field <b>SrcRect</b>
+### -field SrcRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure for the source rectangle. </p>
 </dd>
 
-### -field <b>hDstResource</b>
+### -field hDstResource
 
 <dd>
 <p>[in] A handle to the destination resource.</p>
 </dd>
 
-### -field <b>DstSubResourceIndex</b>
+### -field DstSubResourceIndex
 
 <dd>
 <p>[in] The index to the destination surface within the resource. </p>
 </dd>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure for the destination rectangle. </p>

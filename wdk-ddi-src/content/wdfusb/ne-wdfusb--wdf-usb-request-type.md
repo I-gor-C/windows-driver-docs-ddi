@@ -7,7 +7,7 @@ old-location: wdf\wdf_usb_request_type.htm
 old-project: wdf
 ms.assetid: 4d10cefb-1039-4c48-b9f7-c4a530a6514b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_TIMER_CONFIG, WDF_TIMER_CONFIG, *PWDF_TIMER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,61 +65,61 @@ typedef enum _WDF_USB_REQUEST_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfUsbRequestTypeInvalid"></a><a id="wdfusbrequesttypeinvalid"></a><a id="WDFUSBREQUESTTYPEINVALID"></a><b>WdfUsbRequestTypeInvalid</b>
+### -field WdfUsbRequestTypeInvalid
 
 <dd>
 <p>For internal use only.</p>
 </dd>
 
-### -field <a id="WdfUsbRequestTypeNoFormat"></a><a id="wdfusbrequesttypenoformat"></a><a id="WDFUSBREQUESTTYPENOFORMAT"></a><b>WdfUsbRequestTypeNoFormat</b>
+### -field WdfUsbRequestTypeNoFormat
 
 <dd>
 <p>This value is not used.</p>
 </dd>
 
-### -field <a id="WdfUsbRequestTypeDeviceString"></a><a id="wdfusbrequesttypedevicestring"></a><a id="WDFUSBREQUESTTYPEDEVICESTRING"></a><b>WdfUsbRequestTypeDeviceString</b>
+### -field WdfUsbRequestTypeDeviceString
 
 <dd>
 <p>A request to <a href="wdf.working_with_usb_devices#obtaining_a_device_s_unicode_strings#obtaining_a_device_s_unicode_strings">obtain a device's Unicode strings</a>.</p>
 </dd>
 
-### -field <a id="WdfUsbRequestTypeDeviceControlTransfer"></a><a id="wdfusbrequesttypedevicecontroltransfer"></a><a id="WDFUSBREQUESTTYPEDEVICECONTROLTRANSFER"></a><b>WdfUsbRequestTypeDeviceControlTransfer</b>
+### -field WdfUsbRequestTypeDeviceControlTransfer
 
 <dd>
 <p>A request to <a href="wdf.working_with_usb_devices#sending_a_control_transfer#sending_a_control_transfer">send a control transfer</a>.</p>
 </dd>
 
-### -field <a id="WdfUsbRequestTypeDeviceUrb"></a><a id="wdfusbrequesttypedeviceurb"></a><a id="WDFUSBREQUESTTYPEDEVICEURB"></a><b>WdfUsbRequestTypeDeviceUrb</b>
+### -field WdfUsbRequestTypeDeviceUrb
 
 <dd>
 <p>A request to <a href="wdf.working_with_usb_devices#sending_a_urb_to_a_device#sending_a_urb_to_a_device">send a URB to a device</a>.</p>
 </dd>
 
-### -field <a id="WdfUsbRequestTypePipeWrite"></a><a id="wdfusbrequesttypepipewrite"></a><a id="WDFUSBREQUESTTYPEPIPEWRITE"></a><b>WdfUsbRequestTypePipeWrite</b>
+### -field WdfUsbRequestTypePipeWrite
 
 <dd>
 <p>A request to <a href="wdf.working_with_usb_pipes#writing_to_a_pipe#writing_to_a_pipe">write to a pipe</a>.</p>
 </dd>
 
-### -field <a id="WdfUsbRequestTypePipeRead"></a><a id="wdfusbrequesttypepiperead"></a><a id="WDFUSBREQUESTTYPEPIPEREAD"></a><b>WdfUsbRequestTypePipeRead</b>
+### -field WdfUsbRequestTypePipeRead
 
 <dd>
 <p>A request to <a href="wdf.working_with_usb_pipes#reading_from_a_pipe#reading_from_a_pipe">read from a pipe</a>.</p>
 </dd>
 
-### -field <a id="WdfUsbRequestTypePipeAbort"></a><a id="wdfusbrequesttypepipeabort"></a><a id="WDFUSBREQUESTTYPEPIPEABORT"></a><b>WdfUsbRequestTypePipeAbort</b>
+### -field WdfUsbRequestTypePipeAbort
 
 <dd>
 <p>A request to <a href="wdf.working_with_usb_pipes#stopping_and_resetting_a_pipe#stopping_and_resetting_a_pipe">stop a pipe</a>.</p>
 </dd>
 
-### -field <a id="WdfUsbRequestTypePipeReset"></a><a id="wdfusbrequesttypepipereset"></a><a id="WDFUSBREQUESTTYPEPIPERESET"></a><b>WdfUsbRequestTypePipeReset</b>
+### -field WdfUsbRequestTypePipeReset
 
 <dd>
 <p>A request to <a href="wdf.working_with_usb_pipes#stopping_and_resetting_a_pipe#stopping_and_resetting_a_pipe">reset a pipe</a>.</p>
 </dd>
 
-### -field <a id="WdfUsbRequestTypePipeUrb"></a><a id="wdfusbrequesttypepipeurb"></a><a id="WDFUSBREQUESTTYPEPIPEURB"></a><b>WdfUsbRequestTypePipeUrb</b>
+### -field WdfUsbRequestTypePipeUrb
 
 <dd>
 <p>A request to <a href="wdf.working_with_usb_pipes#sending_a_urb_to_a_pipe#sending_a_urb_to_a_pipe">send a URB to a pipe</a>.</p>
@@ -167,4 +167,4 @@ typedef enum _WDF_USB_REQUEST_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_REQUEST_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_REQUEST_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

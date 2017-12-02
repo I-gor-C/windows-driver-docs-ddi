@@ -56,13 +56,13 @@ NTSTATUS KeGetProcessorNumberFromIndex(
 ## -parameters
 <dl>
 
-### -param <i>ProcIndex</i> [in]
+### -param ProcIndex [in]
 
 <dd>
 <p>A systemwide processor index. If a multiprocessor system contains a total of <i>n</i> logical processors, valid processor indexes range from 0 to <i>n</i>-1. </p>
 </dd>
 
-### -param <i>ProcNumber</i> [out]
+### -param ProcNumber [out]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\miniport\ns-miniport--processor-number.md">PROCESSOR_NUMBER</a> structure into which the routine writes the group number and group-relative processor number of the processor that is identified by <i>ProcIndex</i>. </p>
@@ -81,9 +81,9 @@ NTSTATUS KeGetProcessorNumberFromIndex(
 
 <p>For example, if a multiprocessor system contains two groups, and each group contains 64 logical processors, the processor numbers in each group range from 0 to 63, but the systemwide processor indexes range from 0 to 127.</p>
 
-<p>To obtain the total number of active logical processors in the system, call the <a href="..\ntddk\nf-ntddk-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a> routine.</p>
+<p>To obtain the total number of active logical processors in the system, call the <a href="..\wdm\nf-wdm-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a> routine.</p>
 
-<p>The <a href="..\ntifs\nf-ntifs-kegetprocessorindexfromnumber.md">KeGetProcessorIndexFromNumber</a> routine converts a group number and a group-relative processor number to a systemwide processor index.</p>
+<p>The <a href="..\wdm\nf-wdm-kegetprocessorindexfromnumber.md">KeGetProcessorIndexFromNumber</a> routine converts a group number and a group-relative processor number to a systemwide processor index.</p>
 
 <p>The following code example uses the <b>KeQueryActiveProcessorCountEx</b> and <b>KeGetProcessorNumberFromIndex</b> routines to enumerate all active logical processors in the system:</p>
 
@@ -152,10 +152,10 @@ NTSTATUS KeGetProcessorNumberFromIndex(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\nf-ntifs-kegetprocessorindexfromnumber.md">KeGetProcessorIndexFromNumber</a>
+<a href="..\wdm\nf-wdm-kegetprocessorindexfromnumber.md">KeGetProcessorIndexFromNumber</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a>
+<a href="..\wdm\nf-wdm-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a>
 </dt>
 <dt>
 <a href="..\miniport\ns-miniport--processor-number.md">PROCESSOR_NUMBER</a>

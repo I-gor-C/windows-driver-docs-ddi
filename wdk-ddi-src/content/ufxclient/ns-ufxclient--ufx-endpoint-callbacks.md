@@ -55,7 +55,7 @@ typedef struct _UFX_ENDPOINT_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of the <b>UFX_ENDPOINT_CALLBACKS</b>         structure.</p>

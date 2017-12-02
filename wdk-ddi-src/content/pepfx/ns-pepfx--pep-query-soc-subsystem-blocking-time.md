@@ -58,31 +58,31 @@ typedef struct _PEP_QUERY_SOC_SUBSYSTEM_BLOCKING_TIME {
 ## -struct-fields
 <dl>
 
-### -field <b>PlatformIdleStateIndex</b>
+### -field PlatformIdleStateIndex
 
 <dd>
 <p>[in] The platform idle state index for the SoC subsystem that the OS is querying.</p>
 </dd>
 
-### -field <b>SubsystemHandle</b>
+### -field SubsystemHandle
 
 <dd>
 <p>[in] A context pointer that the PEP previously provided on subsystem initialization. The context pointer is optional, so if none was provided then the value will be zero. The PEP is free to ignore this field.</p>
 </dd>
 
-### -field <b>SubsystemName</b>
+### -field SubsystemName
 
 <dd>
 <p>[in] The name of the subsystem whose blocking time is being queried.  This name was provided by the PEP on subsystem initialization.</p>
 </dd>
 
-### -field <b>BlockingTime</b>
+### -field BlockingTime
 
 <dd>
 <p>[out] The blocking time tallied for this subsystem in 100 nanosecond units since the previous <a href="https://msdn.microsoft.com/library/windows/hardware/mt186740">PEP_DPM_RESET_SOC_SUBSYSTEM_ACCOUNTING notification</a>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>

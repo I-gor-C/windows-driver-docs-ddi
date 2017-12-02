@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY DestroyDecodeDevice(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hDecodeDevice</i> [in]
+### -param hDecodeDevice [in]
 
 <dd>
 <p> A handle to the DirectX VA decode device that was created by the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createdecodedevice.md">CreateDecodeDevice</a> function.</p>

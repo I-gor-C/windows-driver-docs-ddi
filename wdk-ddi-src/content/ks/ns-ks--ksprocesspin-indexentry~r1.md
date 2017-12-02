@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The KSPROCESSPIN_INDEXENTRY structure is used in <a href="NULL">Filter-Centric Processing</a> to bring together all of the input and output pins in one context.</p>
+<p>The KSPROCESSPIN_INDEXENTRY structure is used in <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a> to bring together all of the input and output pins in one context.</p>
 
 
 ## -syntax
@@ -55,13 +55,13 @@ typedef struct _KSPROCESSPIN_INDEXENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>Pins</b>
+### -field Pins
 
 <dd>
 <p>A pointer to an array of <a href="..\ks\ns-ks--ksprocesspin.md">KSPROCESSPIN</a> structures. The array contains a listing of the instances of the given pin.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>This member specifies the number of process pins in <i>Pins</i> that are currently instantiated.</p>
@@ -71,7 +71,7 @@ typedef struct _KSPROCESSPIN_INDEXENTRY {
 ## -remarks
 <p>This pointer table is indexed in order of the pins described in the pin descriptor table for the corresponding filter. The first pin described in the descriptor table has the first entry in the index table passed to the processing dispatch. See the processing dispatch in <a href="..\ks\ns-ks--kspin-dispatch.md">KSPIN_DISPATCH</a>.</p>
 
-<p>For more information, see <a href="NULL">Filter-Centric Processing</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>.</p>
 
 ## -requirements
 <table>

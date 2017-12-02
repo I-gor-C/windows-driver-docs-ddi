@@ -56,13 +56,13 @@ HRESULT GetReadStream(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd>
 <p>The property to read.</p>
 </dd>
 
-### -param <i>ppValueStream</i> [out]
+### -param ppValueStream [out]
 
 <dd>
 <p>The returned stream.</p>

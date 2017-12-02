@@ -58,25 +58,25 @@ BOOL SplPromptUIInUsersSession(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd>
 <p>Handle to the printer.</p>
 </dd>
 
-### -param <i>JobId</i> [in]
+### -param JobId [in]
 
 <dd>
 <p>Specifies the print job.</p>
 </dd>
 
-### -param <i>pUIParams</i> [in]
+### -param pUIParams [in]
 
 <dd>
 <p>Pointer to a <a href="print.showuiparams">SHOWUIPARAMS</a> structure that contains values that determine the appearance and behavior of the message box.</p>
 </dd>
 
-### -param <i>pResponse</i> [out]
+### -param pResponse [out]
 
 <dd>
 <p>Pointer to a memory location that contains either the user's response or the IDASYNC constant. For more information, see the Remarks section.</p>

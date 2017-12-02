@@ -57,25 +57,25 @@ typedef struct D3D11_1DDI_VIDEO_COLOR_YCbCrA {
 ## -struct-fields
 <dl>
 
-### -field <b>Y</b>
+### -field Y
 
 <dd>
 <p>The Y (luma) value.</p>
 </dd>
 
-### -field <b>Cb</b>
+### -field Cb
 
 <dd>
 <p>The Cb chroma value.</p>
 </dd>
 
-### -field <b>Cr</b>
+### -field Cr
 
 <dd>
 <p>The Cr chroma value.</p>
 </dd>
 
-### -field <b>A</b>
+### -field A
 
 <dd>
 <p>The alpha value. Values range from 0 (transparent) to 1 (opaque).</p>

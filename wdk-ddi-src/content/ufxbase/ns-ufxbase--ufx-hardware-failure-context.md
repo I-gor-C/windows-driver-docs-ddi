@@ -57,19 +57,19 @@ typedef struct _UFX_HARDWARE_FAILURE_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of the <b>UFX_HARDWARE_FAILURE_CONTEXT</b> structure.</p>
 </dd>
 
-### -field <b>ExceptionCode</b>
+### -field ExceptionCode
 
 <dd>
 <p>The controller-specific hardware failure code.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>A variable-length array of data associated with the hardware failure.</p>
@@ -77,7 +77,7 @@ typedef struct _UFX_HARDWARE_FAILURE_CONTEXT {
 </dl>
 
 ## -remarks
-<p>In cases where the function controller has experienced a fatal error, the client driver may allocate a variable-length <b>UFX_HARDWARE_FAILURE_CONTEXT</b> structure, set the <b>Size</b> field to the allocated size, set the <b>ExceptionCode</b> field to a value indicating the type of hardware error (as defined by the client driver) and fill in any associated information in the <b>Data</b> array.  It may then pass this structure to the <a href="buses.ufxdevicenotifyhardwarefailure">UfxDeviceNotifyHardwareFailure</a> UFX function. UFX will in turn pass this structure to the client driver’s <a href="buses.evt_ufx_device_controller_reset">EVT_UFX_DEVICE_CONTROLLER_RESET</a> event callback function (if it exists).</p>
+<p>In cases where the function controller has experienced a fatal error, the client driver may allocate a variable-length <b>UFX_HARDWARE_FAILURE_CONTEXT</b> structure, set the <b>Size</b> field to the allocated size, set the <b>ExceptionCode</b> field to a value indicating the type of hardware error (as defined by the client driver) and fill in any associated information in the <b>Data</b> array.  It may then pass this structure to the <a href="..\ufxclient\nf-ufxclient-ufxdevicenotifyhardwarefailure.md">UfxDeviceNotifyHardwareFailure</a> UFX function. UFX will in turn pass this structure to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt-ufx-device-controller-reset.md">EVT_UFX_DEVICE_CONTROLLER_RESET</a> event callback function (if it exists).</p>
 
 ## -requirements
 <table>

@@ -55,7 +55,7 @@ VOID RtlFreeAnsiString(
 ## -parameters
 <dl>
 
-### -param <i>AnsiString</i> [in, out]
+### -param AnsiString [in, out]
 
 <dd>
 <p>Pointer to the ANSI string buffer previously allocated by <b>RtlUnicodeStringToAnsiString</b>. </p>

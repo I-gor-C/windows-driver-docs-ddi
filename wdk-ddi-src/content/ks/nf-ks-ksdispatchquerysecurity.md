@@ -55,13 +55,13 @@ NTSTATUS KsDispatchQuerySecurity(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Specifies the device object associated with the IRP.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP that is being handled.</p>

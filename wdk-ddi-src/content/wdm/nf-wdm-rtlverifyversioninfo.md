@@ -57,13 +57,13 @@ NTSTATUS RtlVerifyVersionInfo(
 ## -parameters
 <dl>
 
-### -param <i>VersionInfo</i> [in]
+### -param VersionInfo [in]
 
 <dd>
 <p>Pointer to an <a href="kernel.rtl_osversioninfoexw">RTL_OSVERSIONINFOEXW</a> structure that specifies the operating system version requirements to compare to the corresponding attributes of the currently running version of the operating system. </p>
 </dd>
 
-### -param <i>TypeMask</i> [in]
+### -param TypeMask [in]
 
 <dd>
 <p>Specifies which members of <i>VersionInfo</i> to compare with the corresponding attributes of the currently running version of the operating system. <i>TypeMask</i> is set to a logical OR of one or more of the following values.
@@ -141,7 +141,7 @@ NTSTATUS RtlVerifyVersionInfo(
 <p> </p>
 </dd>
 
-### -param <i>ConditionMask</i> [in]
+### -param ConditionMask [in]
 
 <dd>
 <p>Specifies how to compare each <b>VersionInfo</b> member. To set the value of <i>ConditionMask</i>, a caller should use the <b>VER_SET_CONDITION</b> macro:
@@ -175,7 +175,7 @@ NTSTATUS RtlVerifyVersionInfo(
 <p></p>
 <dl>
 
-### -param <a id="TypeBitMask"></a><a id="typebitmask"></a><a id="TYPEBITMASK"></a><i>TypeBitMask</i>
+### -param TypeBitMask
 
 <dd>
 <p>Indicates the <i>VersionInfo</i> member for which the comparison type is set. <i>TypeBitMask</i> can be one of the following values.
@@ -253,7 +253,7 @@ NTSTATUS RtlVerifyVersionInfo(
 <p> </p>
 </dd>
 
-### -param <a id="ComparisonType"></a><a id="comparisontype"></a><a id="COMPARISONTYPE"></a><i>ComparisonType</i>
+### -param ComparisonType
 
 <dd>
 <p>Specifies the comparison type that <b>RtlVerifyVersionInfo</b> uses to compare the <b>VersionInfo</b> member specified by <i>TypeBitMask</i> with the corresponding attribute of the currently running operating system.

@@ -56,19 +56,19 @@ typedef enum _KEYBOARD_SCAN_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="Normal"></a><a id="normal"></a><a id="NORMAL"></a><b>Normal</b>
+### -field Normal
 
 <dd>
 <p>Indicates that the current byte is a <b>Normal</b> scan code (a nonextended code).</p>
 </dd>
 
-### -field <a id="GotE0"></a><a id="gote0"></a><a id="GOTE0"></a><b>GotE0</b>
+### -field GotE0
 
 <dd>
 <p>Indicates that the current byte is an E0 extended scan code.</p>
 </dd>
 
-### -field <a id="GotE1"></a><a id="gote1"></a><a id="GOTE1"></a><b>GotE1</b>
+### -field GotE1
 
 <dd>
 <p>Indicates that the current byte is an E1 extended scan code.</p>

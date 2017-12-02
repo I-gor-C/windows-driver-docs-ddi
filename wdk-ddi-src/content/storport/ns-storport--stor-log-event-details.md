@@ -68,85 +68,85 @@ typedef struct _STOR_LOG_EVENT_DETAILS {
 ## -struct-fields
 <dl>
 
-### -field <b>InterfaceRevision</b>
+### -field InterfaceRevision
 
 <dd>
 <p>The revision number of this interface. Set to STOR_CURRENT_LOG_INTERFACE_REVISION to use the version of the interface that matches this structure. Both the constant and the data structure are defined in the same header file. This member is set to 0x00000100 for the first revision.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure. Set before calling <a href="..\storport\nf-storport-storportlogsystemevent.md">StorPortLogSystemEvent</a>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Not currently used. Must be zero.</p>
 </dd>
 
-### -field <b>EventAssociation</b>
+### -field EventAssociation
 
 <dd>
 <p>Specifies whether the event should be associated with the adapter, the target, or the LUN. For adapter- and target-associated events, the event is logged against the adapter's device object. For LUN-associated events, the event is logged against the LUN's device object if it exists; otherwise, it is logged against the adapter's device object.</p>
 </dd>
 
-### -field <b>PathId</b>
+### -field PathId
 
 <dd>
 <p>The SCSI path/bus corresponding to this event.</p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>The SCSI target controller or device on the bus corresponding to this event.</p>
 </dd>
 
-### -field <b>LunId</b>
+### -field LunId
 
 <dd>
 <p>The SCSI logical unit number of the target device corresponding to this event.</p>
 </dd>
 
-### -field <b>StorportSpecificErrorCode</b>
+### -field StorportSpecificErrorCode
 
 <dd>
 <p>If the <b>ErrorCode</b> value is specific to Storport and should be translated for use with IOLOGMSG.DLL, this value is set to <b>TRUE</b>. If the <b>ErrorCode</b> value is not specific to Storport and should be passed directly to the system event logging facility, this value is set to <b>FALSE</b>.</p>
 </dd>
 
-### -field <b>ErrorCode</b>
+### -field ErrorCode
 
 <dd>
 <p>The event error code to log.</p>
 </dd>
 
-### -field <b>UniqueId</b>
+### -field UniqueId
 
 <dd>
 <p>Specifies a unique identifier associated with the ErrorCode. Often this is used as a location code, referencing the location in the miniport that triggered the event. This value is passed directly to the event logging facility.</p>
 </dd>
 
-### -field <b>DumpDataSize</b>
+### -field DumpDataSize
 
 <dd>
 <p>The size of the miniport-specific data block that is to be appended to the log entry. If no data block is to be written, this should be set to 0.</p>
 </dd>
 
-### -field <b>DumpData</b>
+### -field DumpData
 
 <dd>
 <p>Pointer to the miniport-specific data block that is to be appended to the log entry. If no data block is to be written, DumpDataSize should be set to 0, and this field is ignored.</p>
 </dd>
 
-### -field <b>StringCount</b>
+### -field StringCount
 
 <dd>
 <p>The count of null-terminated Unicode strings contained in the StringList member. If no strings are to be written, this should be set to 0.</p>
 </dd>
 
-### -field <b>StringList</b>
+### -field StringList
 
 <dd>
 <p>The list of null-terminated Unicode strings to be appended to the log entry for use in string substitution. These strings are substituted for the place holders "%2" through "%n" in the log message text when the log entry is being displayed. This list consists of an array of pointers to the null-terminated Unicode strings. StringCount contains the count of string pointers in this array, so no list termination entry is needed. If no strings are to be written, StringCount should be set to 0, and this field is ignored.</p>

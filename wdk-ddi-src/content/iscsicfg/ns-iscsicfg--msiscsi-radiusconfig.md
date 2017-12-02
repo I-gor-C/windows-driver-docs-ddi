@@ -59,37 +59,37 @@ typedef struct _MSiSCSI_RADIUSConfig {
 ## -struct-fields
 <dl>
 
-### -field <b>UseRADIUSForCHAP</b>
+### -field UseRADIUSForCHAP
 
 <dd>
 <p>A Boolean value that indicates whether the initiator should use RADIUS for authentication during the challenge handshake of the challenge handshake authentication protocol (CHAP). If this member is <b>TRUE</b>, the initiator should use RADIUS for authentication during the challenge handshake of CHAP. If this member is <b>FALSE</b>, the initiator is not required to use RADIUS.</p>
 </dd>
 
-### -field <b>SharedSecretSizeInBytes</b>
+### -field SharedSecretSizeInBytes
 
 <dd>
 <p>The size, in bytes, of shared secret for use with RADIUS servers.</p>
 </dd>
 
-### -field <b>RADIUSServer</b>
+### -field RADIUSServer
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that specifies a fixed address for the RADIUS server. The ISCSI_IP_Address structure defines the IP address in a way that is independent of the version of the IP protocol in use. </p>
 </dd>
 
-### -field <b>BackupRADIUSServer</b>
+### -field BackupRADIUSServer
 
 <dd>
 <p>A ISCSI_IP_Address structure that specifies a fixed addresses for a backup RADIUS server. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for Microsoft use only. Set this member to zero.</p>
 </dd>
 
-### -field <b>SharedSecret</b>
+### -field SharedSecret
 
 <dd>
 <p>A variable-length array that contains a shared secret. The initiator uses this shared secret to authenticate primary and backup RADIUS servers.</p>

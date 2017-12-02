@@ -60,37 +60,37 @@ typedef enum _USBFN_DIRECTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="UsbfnDirectionMinimum"></a><a id="usbfndirectionminimum"></a><a id="USBFNDIRECTIONMINIMUM"></a><b>UsbfnDirectionMinimum</b>
+### -field UsbfnDirectionMinimum
 
 <dd>
 <p>The minimum value in this enumeration.</p>
 </dd>
 
-### -field <a id="UsbfnDirectionIn"></a><a id="usbfndirectionin"></a><a id="USBFNDIRECTIONIN"></a><b>UsbfnDirectionIn</b>
+### -field UsbfnDirectionIn
 
 <dd>
 <p>The transfer is to the host from an endpoint.</p>
 </dd>
 
-### -field <a id="UsbfnDirectionOut"></a><a id="usbfndirectionout"></a><a id="USBFNDIRECTIONOUT"></a><b>UsbfnDirectionOut</b>
+### -field UsbfnDirectionOut
 
 <dd>
 <p>The transfer is from the host to the endpoint.</p>
 </dd>
 
-### -field <a id="UsbfnDirectionTx"></a><a id="usbfndirectiontx"></a><a id="USBFNDIRECTIONTX"></a><b>UsbfnDirectionTx</b>
+### -field UsbfnDirectionTx
 
 <dd>
 <p>The bus transfer to the host from the device. </p>
 </dd>
 
-### -field <a id="UsbfnDirectionRx"></a><a id="usbfndirectionrx"></a><a id="USBFNDIRECTIONRX"></a><b>UsbfnDirectionRx</b>
+### -field UsbfnDirectionRx
 
 <dd>
 <p>The bus transfer is from the host to the device.</p>
 </dd>
 
-### -field <a id="UsbfnDirectionMaximum"></a><a id="usbfndirectionmaximum"></a><a id="USBFNDIRECTIONMAXIMUM"></a><b>UsbfnDirectionMaximum</b>
+### -field UsbfnDirectionMaximum
 
 <dd>
 <p>The maximum value in this enumeration.</p>

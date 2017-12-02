@@ -56,19 +56,19 @@ typedef struct _DXGKARG_QUERYCURRENTFENCE {
 ## -struct-fields
 <dl>
 
-### -field <b>CurrentFence</b>
+### -field CurrentFence
 
 <dd>
 <p>[out] The current fence data.</p>
 </dd>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>[in] The zero-based index of the node for the current fence.</p>
 </dd>
 
-### -field <b>EngineOrdinal</b>
+### -field EngineOrdinal
 
 <dd>
 <p>[in] The zero-based index of the engine, within the node that <b>NodeOrdinal</b> specifies, for the current fence.</p>

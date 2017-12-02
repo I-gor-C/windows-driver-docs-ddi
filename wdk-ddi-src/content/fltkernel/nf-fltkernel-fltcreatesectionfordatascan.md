@@ -7,7 +7,7 @@ old-location: ifsk\fltcreatesectionfordatascan.htm
 old-project: ifsk
 ms.assetid: D1215495-C737-45B6-BECD-8CB430C71DE8
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltCreateSectionForDataScan
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,25 +65,25 @@ NTSTATUS FltCreateSectionForDataScan(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>The opaque instance pointer for the minifilter driver instance whose context is to be retrieved. </p>
 </dd>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>The file object for an open file.  The section object will be backed by the specified file. This parameter is required and cannot be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>SectionContext</i> [in]
+### -param SectionContext [in]
 
 <dd>
 <p>A pointer to a previously allocated section context. </p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>The type  of access for the section object as one or more of the following <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> flags. </p>
@@ -128,19 +128,19 @@ NTSTATUS FltCreateSectionForDataScan(
 <p> </p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in, optional]
+### -param ObjectAttributes [in, optional]
 
 <dd>
 <p>A pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro to initialize this structure. Because <b>FltCreateSectionForDataScan</b> inserts this object into the process handle table, the caller must specify the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>.</p>
 </dd>
 
-### -param <i>MaximumSize</i> [in, optional]
+### -param MaximumSize [in, optional]
 
 <dd>
 <p>This parameter is reserved for future use.</p>
 </dd>
 
-### -param <i>SectionPageProtection</i> [in]
+### -param SectionPageProtection [in]
 
 <dd>
 <p>The protection to place on each page in the section. Specify one of the following values. This parameter is required and cannot be zero. </p>
@@ -169,7 +169,7 @@ NTSTATUS FltCreateSectionForDataScan(
 <p> </p>
 </dd>
 
-### -param <i>AllocationAttributes</i> [in]
+### -param AllocationAttributes [in]
 
 <dd>
 <p>Bitmasks of the SEC_<i>XXX</i> flags determine the allocation attributes of the section. Specify one or more of the following values. This parameter is required and cannot be zero. </p>
@@ -198,25 +198,25 @@ NTSTATUS FltCreateSectionForDataScan(
 <p> </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>This parameter is reserved for future use.</p>
 </dd>
 
-### -param <i>SectionHandle</i> [out]
+### -param SectionHandle [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives an opaque handle to the section handle. </p>
 </dd>
 
-### -param <i>SectionObject</i> [out]
+### -param SectionObject [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives an opaque pointer to the section object.</p>
 </dd>
 
-### -param <i>SectionFileSize</i> [out, optional]
+### -param SectionFileSize [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the size, in bytes, of the file at the time the section object was created. This parameter is optional and can be <b>NULL</b>.</p>
@@ -351,4 +351,4 @@ The file specified by the <i>FileObject</i> parameter is a directory.</p><dl>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateSectionForDataScan routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateSectionForDataScan routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

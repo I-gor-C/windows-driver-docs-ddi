@@ -55,13 +55,13 @@ typedef struct _FILE_ATTRIBUTE_TAG_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>FileAttributes</b>
+### -field FileAttributes
 
 <dd>
 <p>Specifies one or more FILE_ATTRIBUTE_<i>XXX</i> flags. For descriptions of these flags, see the documentation of the <b>GetFileAttributes</b> function in the Microsoft Windows SDK.</p>
 </dd>
 
-### -field <b>ReparseTag</b>
+### -field ReparseTag
 
 <dd>
 <p>Specifies the reparse point tag. If the <b>FileAttributes</b> member includes the FILE_ATTRIBUTE_REPARSE_POINT attribute flag, this member specifies the reparse tag. Otherwise, this member is unused.</p>

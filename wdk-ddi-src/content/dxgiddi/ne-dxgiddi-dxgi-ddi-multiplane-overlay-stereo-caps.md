@@ -58,23 +58,23 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_SEPARATE"></a><a id="dxgi_ddi_multiplane_overlay_stereo_caps_separate"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_SEPARATE</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_SEPARATE
 
 <dd></dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_ROW_INTERLEAVED"></a><a id="dxgi_ddi_multiplane_overlay_stereo_caps_row_interleaved"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_ROW_INTERLEAVED</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_ROW_INTERLEAVED
 
 <dd></dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_COLUMN_INTERLEAVED"></a><a id="dxgi_ddi_multiplane_overlay_stereo_caps_column_interleaved"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_COLUMN_INTERLEAVED</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_COLUMN_INTERLEAVED
 
 <dd></dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_CHECKERBOARD"></a><a id="dxgi_ddi_multiplane_overlay_stereo_caps_checkerboard"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_CHECKERBOARD</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_CHECKERBOARD
 
 <dd></dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_FLIP_MODE"></a><a id="dxgi_ddi_multiplane_overlay_stereo_caps_flip_mode"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_FLIP_MODE</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_FLIP_MODE
 
 <dd></dd>
 </dl>

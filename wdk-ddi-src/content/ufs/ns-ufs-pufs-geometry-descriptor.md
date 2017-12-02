@@ -88,13 +88,13 @@ typedef struct _UFS_GEOMETRY_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>Specifies the length of the descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorIDN</b>
+### -field bDescriptorIDN
 
 <dd>
 <p>Specifies the type of the descriptor. This descriptor will have a value of<b> UFS_DESC_GEOMETRY_IDN</b>.
@@ -102,25 +102,25 @@ typedef struct _UFS_GEOMETRY_DESCRIPTOR {
 </p>
 </dd>
 
-### -field <b>bMediaTechnology</b>
+### -field bMediaTechnology
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b> qTotalRawDeviceCapacity</b>
+### -field  qTotalRawDeviceCapacity
 
 <dd>
 <p>Specifies the total raw device capacity. Expressed in units of 512 bytes.</p>
 </dd>
 
-### -field <b>bMaxNumberLU</b>
+### -field bMaxNumberLU
 
 <dd>
 <p>Specifies the maximum number of logical unit(s) supported by the UFS (Universal Flash Storage). Contains one of the following values:</p>
@@ -145,56 +145,56 @@ typedef struct _UFS_GEOMETRY_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>dSegmentSize</b>
+### -field dSegmentSize
 
 <dd>
 <p>Specifies the segment size of the device in units of 512 bytes.</p>
 </dd>
 
-### -field <b>bAllocationUnitSize</b>
+### -field bAllocationUnitSize
 
 <dd>
 <p>Specifies the allocation unit size in number of segments.</p>
 </dd>
 
-### -field <b>bMinAddrBlockSize</b>
+### -field bMinAddrBlockSize
 
 <dd>
 <p>Specifies the minimum addressable block size in units of 512 bytes. The minium size is 4 KB or a value of 0x08.</p>
 </dd>
 
-### -field <b>bOptimalReadBlockSize</b>
+### -field bOptimalReadBlockSize
 
 <dd>
 <p>Specifies the optimal read block size in units of 512 bytes.</p>
 </dd>
 
-### -field <b>bOptimalWriteBlockSize</b>
+### -field bOptimalWriteBlockSize
 
 <dd>
 <p>Specifies the optimal write block size in units of 512 bytes. <b>bOptimalWriteBlockSize</b> is equal to or greater than <b>bMinAddrBlockSize</b>.</p>
 </dd>
 
-### -field <b>bMaxInBufferSize</b>
+### -field bMaxInBufferSize
 
 <dd>
 <p>Specifies the max size of the data-in buffer in units of 512 bytes. The minium size is 4 KB or a value of 0x08.</p>
 </dd>
 
-### -field <b>bMaxOutBufferSize</b>
+### -field bMaxOutBufferSize
 
 <dd>
 <p>Specifies the max size of the data-out buffer in units of 512 bytes. The minium size is 4 KB or a value of 0x08.</p>
 </dd>
 
-### -field <b>bRPMB_ReadWriteSize</b>
+### -field bRPMB_ReadWriteSize
 
 <dd>
 <p>Specifies the maximum number of Replay Protected Memory Block (RPMB) frames allowed in Security Protocol In and Security
 Protocol Out. Each frame is 256-bytes. </p>
 </dd>
 
-### -field <b>bDynamicCapacityResourcePolicy</b>
+### -field bDynamicCapacityResourcePolicy
 
 <dd>
 <p>Specifies a device's spare blocks
@@ -218,7 +218,7 @@ per memory type.</td>
 <p> </p>
 </dd>
 
-### -field <b>bDataOrdering</b>
+### -field bDataOrdering
 
 <dd>
 <p>Specifies if a device supports out-of-order data transfer. Contains one of the following values:</p>
@@ -243,27 +243,27 @@ per memory type.</td>
 <p> </p>
 </dd>
 
-### -field <b>bMaxContexIDNumber</b>
+### -field bMaxContexIDNumber
 
 <dd>
 <p>Specifies the max number of contexts supported by a device. This number must be greater than 5.</p>
 </dd>
 
-### -field <b>bSysDataTagUnitSize</b>
+### -field bSysDataTagUnitSize
 
 <dd>
 <p>Specifies the system data tag
 unit size.</p>
 </dd>
 
-### -field <b>bSysDataTagResSize</b>
+### -field bSysDataTagResSize
 
 <dd>
 <p>Specifies the maximum size in bytes allocated by
 the device to handle system data.</p>
 </dd>
 
-### -field <b>bSupportedSecRTypes</b>
+### -field bSupportedSecRTypes
 
 <dd>
 <p>Specifies the supported Secure Removal types. The first 3 bits of the variable are flags that represent different supported Secure Removal types. </p>
@@ -301,7 +301,7 @@ mechanism.</td>
 <p> </p>
 </dd>
 
-### -field <b>wSupportedMemoryTypes</b>
+### -field wSupportedMemoryTypes
 
 <dd>
 <p>Specifies the supported memory types in a bitmap.</p>
@@ -350,88 +350,88 @@ mechanism.</td>
 <p> </p>
 </dd>
 
-### -field <b>dSystemCodeMaxNAllocU</b>
+### -field dSystemCodeMaxNAllocU
 
 <dd>
 <p>Specifies the maximum number of allocation units for the System Code for a device.</p>
 </dd>
 
-### -field <b>wSystemCodeCapAdjFac</b>
+### -field wSystemCodeCapAdjFac
 
 <dd>
 <p>Species the Capacity Adjustment Factor for the System Code
 memory type.</p>
 </dd>
 
-### -field <b>dNonPersistMaxNAllocU</b>
+### -field dNonPersistMaxNAllocU
 
 <dd>
 <p>Species the maximum number of Allocation Units for a non-persistent memory type.</p>
 </dd>
 
-### -field <b>wNonPersistCapAdjFac</b>
+### -field wNonPersistCapAdjFac
 
 <dd>
 <p>Specifies the capacity adjustment factor for the non-persistent memory type.</p>
 </dd>
 
-### -field <b>dEnhanced1MaxNAllocU</b>
+### -field dEnhanced1MaxNAllocU
 
 <dd>
 <p>specifies the max number of Allocation Units for the enhanced
 memory type 1.</p>
 </dd>
 
-### -field <b>wEnhanced1CapAdjFac</b>
+### -field wEnhanced1CapAdjFac
 
 <dd>
 <p>specifies the Capacity Adjustment Factor for the enhanced
 memory type 1.</p>
 </dd>
 
-### -field <b>dEnhanced2MaxNAllocU</b>
+### -field dEnhanced2MaxNAllocU
 
 <dd>
 <p>specifies the max number of Allocation Units for the enhanced
 memory type 2.</p>
 </dd>
 
-### -field <b>wEnhanced2CapAdjFac</b>
+### -field wEnhanced2CapAdjFac
 
 <dd>
 <p>specifies the Capacity Adjustment Factor for the enhanced
 memory type 2.</p>
 </dd>
 
-### -field <b>dEnhanced3MaxNAllocU</b>
+### -field dEnhanced3MaxNAllocU
 
 <dd>
 <p>specifies the max number of Allocation Units for the enhanced
 memory type 3.</p>
 </dd>
 
-### -field <b>wEnhanced3CapAdjFac</b>
+### -field wEnhanced3CapAdjFac
 
 <dd>
 <p>specifies the Capacity Adjustment Factor for the enhanced
 memory type 3.</p>
 </dd>
 
-### -field <b>dEnhanced4MaxNAllocU</b>
+### -field dEnhanced4MaxNAllocU
 
 <dd>
 <p>specifies the max number of Allocation Units for the enhanced
 memory type 4.</p>
 </dd>
 
-### -field <b>wEnhanced4CapAdjFac</b>
+### -field wEnhanced4CapAdjFac
 
 <dd>
 <p>specifies the Capacity Adjustment Factor for the enhanced
 memory type 4.</p>
 </dd>
 
-### -field <b>dOptimalLogicalBlockSize</b>
+### -field dOptimalLogicalBlockSize
 
 <dd>
 <p>Specifies the optimal logical block size.</p>

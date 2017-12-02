@@ -55,13 +55,13 @@ typedef struct _VERIFY_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>StartingOffset</b>
+### -field StartingOffset
 
 <dd>
 <p>Specifies the starting offset, in bytes, of the disk extent. </p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Indicates the length, in bytes, of the disk extent. </p>

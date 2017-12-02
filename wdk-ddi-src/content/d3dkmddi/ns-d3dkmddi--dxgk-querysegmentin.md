@@ -56,19 +56,19 @@ typedef struct _DXGK_QUERYSEGMENTIN {
 ## -struct-fields
 <dl>
 
-### -field <b>AgpApertureBase</b>
+### -field AgpApertureBase
 
 <dd>
 <p>[in] A PHYSICAL_ADDRESS data type (which is defined as LARGE_INTEGER) that indicates the base address of the AGP aperture. </p>
 </dd>
 
-### -field <b>AgpApertureSize</b>
+### -field AgpApertureSize
 
 <dd>
 <p>[in] A LARGE_INTEGER that indicates the size, in bytes, of the available AGP aperture.</p>
 </dd>
 
-### -field <b>AgpFlags</b>
+### -field AgpFlags
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentflags.md">DXGK_SEGMENTFLAGS</a> structure that identifies properties for the available AGP aperture in bit-field flags.</p>

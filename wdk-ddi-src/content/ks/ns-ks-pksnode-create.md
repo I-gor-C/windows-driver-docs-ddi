@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>CreateFlags</b>
+### -field CreateFlags
 
 <dd>
 <p>Set to zero.</p>
 </dd>
 
-### -field <b>Node</b>
+### -field Node
 
 <dd>
 <p>Indicates what node a handle should be created for. This refers to the node identifiers returned when querying topology information. A node identifier of −1 may be used to refer to the collection of nodes as a whole, if the filter supports it.</p>

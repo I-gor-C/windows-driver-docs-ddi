@@ -7,7 +7,7 @@ old-location: wdf\iremotetargetcallbackremoval.htm
 old-project: wdf
 ms.assetid: 72271173-8851-4980-9b52-f9e14f1fe071
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

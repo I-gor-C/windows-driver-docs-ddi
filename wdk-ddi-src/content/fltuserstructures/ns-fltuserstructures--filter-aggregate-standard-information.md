@@ -7,7 +7,7 @@ old-location: ifsk\filter_aggregate_standard_information.htm
 old-project: ifsk
 ms.assetid: 76703a53-45c1-4dfa-b8aa-4f73d4d84538
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILTER_AGGREGATE_STANDARD_INFORMATION, FILTER_AGGREGATE_STANDARD_INFORMATION, *PFILTER_AGGREGATE_STANDARD_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,13 +73,13 @@ typedef struct _FILTER_AGGREGATE_STANDARD_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NextEntryOffset</b>
+### -field NextEntryOffset
 
 <dd>
 <p>Byte offset of the next FILTER_AGGREGATE_STANDARD_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Indicates whether the filter driver is a legacy filter or a minifilter.  This member must be one of the following values.</p>
@@ -108,54 +108,54 @@ typedef struct _FILTER_AGGREGATE_STANDARD_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <dl>
 
-### -field <b>MiniFilter</b>
+### -field MiniFilter
 
 <dd>
 <p>Nested structure variable with the following members:</p>
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>There are currently no flags defined for this member.</p>
 </dd>
 
-### -field <b>FrameID</b>
+### -field FrameID
 
 <dd>
 <p>Zero-based index used to identify the filter manager frame that the minifilter is in.</p>
 </dd>
 
-### -field <b>NumberOfInstances</b>
+### -field NumberOfInstances
 
 <dd>
 <p>Number of instances that currently exist for the minifilter.</p>
 </dd>
 
-### -field <b>FilterNameLength</b>
+### -field FilterNameLength
 
 <dd>
 <p>Length, in bytes, of the minifilter name string.</p>
 </dd>
 
-### -field <b>FilterNameBufferOffset</b>
+### -field FilterNameBufferOffset
 
 <dd>
 <p>Byte offset (relative to the beginning of the structure) of the first character of the Unicode minifilter name string.  The string is not NULL-terminated.</p>
 </dd>
 
-### -field <b>FilterAltitudeLength</b>
+### -field FilterAltitudeLength
 
 <dd>
 <p>Length, in bytes, of the minifilter altitude string.</p>
 </dd>
 
-### -field <b>FilterAltitudeBufferOffset</b>
+### -field FilterAltitudeBufferOffset
 
 <dd>
 <p>Byte offset (relative to the beginning of the structure) of the first character of the Unicode minifilter altitude string. The string is not NULL-terminated.</p>
@@ -163,37 +163,37 @@ typedef struct _FILTER_AGGREGATE_STANDARD_INFORMATION {
 </dl>
 </dd>
 
-### -field <b>LegacyFilter</b>
+### -field LegacyFilter
 
 <dd>
 <p>Nested structure variable with the following members:</p>
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>There are currently no flags defined for this member.</p>
 </dd>
 
-### -field <b>FilterNameLength</b>
+### -field FilterNameLength
 
 <dd>
 <p>Length, in bytes, of the legacy filter name string.</p>
 </dd>
 
-### -field <b>FilterNameBufferOffset</b>
+### -field FilterNameBufferOffset
 
 <dd>
 <p>Byte offset (relative to the beginning of the structure) of the first character of the Unicode legacy filter name string.  The string is not NULL-terminated.</p>
 </dd>
 
-### -field <b>FilterAltitudeLength</b>
+### -field FilterAltitudeLength
 
 <dd>
 <p>Length, in bytes, of the legacy filter altitude string.</p>
 </dd>
 
-### -field <b>FilterAltitudeBufferOffset</b>
+### -field FilterAltitudeBufferOffset
 
 <dd>
 <p>Byte offset (relative to the beginning of the structure) of the first character of the Unicode legacy filter altitude string.  The string is not NULL-terminated.</p>
@@ -278,4 +278,4 @@ typedef struct _FILTER_AGGREGATE_STANDARD_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILTER_AGGREGATE_STANDARD_INFORMATION structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILTER_AGGREGATE_STANDARD_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

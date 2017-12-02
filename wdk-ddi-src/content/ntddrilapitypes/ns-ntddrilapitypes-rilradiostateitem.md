@@ -7,7 +7,7 @@ old-location: netvista\rilradiostateitem.htm
 old-project: netvista
 ms.assetid: 152e3b52-44e4-4ed7-bfc3-38d0c65725fd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILRADIOSTATEITEM, RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,55 +66,55 @@ typedef struct _RILRADIOSTATEITEM {
 ## -struct-fields
 <dl>
 
-### -field <b>dwItemId</b>
+### -field dwItemId
 
 <dd></dd>
 
-### -field <b>dwItemFlag</b>
+### -field dwItemFlag
 
 <dd></dd>
 
-### -field <b>dwItemAttributes</b>
+### -field dwItemAttributes
 
 <dd></dd>
 
-### -field <b>RILITEMVALUEUNION</b>
+### -field RILITEMVALUEUNION
 
 <dd></dd>
 
-### -field <b>itemValueUnion</b>
+### -field itemValueUnion
 
 <dd></dd>
 
-### -field <b>intVal</b>
+### -field intVal
 
 <dd></dd>
 
-### -field <b>uintVal</b>
+### -field uintVal
 
 <dd></dd>
 
-### -field <b>wszVal</b>
+### -field wszVal
 
 <dd></dd>
 
-### -field <b>intArray</b>
+### -field intArray
 
 <dd></dd>
 
-### -field <b>uintArray</b>
+### -field uintArray
 
 <dd></dd>
 
-### -field <b>byteArray</b>
+### -field byteArray
 
 <dd></dd>
 
-### -field <b>wszFriendlyName</b>
+### -field wszFriendlyName
 
 <dd></dd>
 
-### -field <b>wszItemValueOptions</b>
+### -field wszItemValueOptions
 
 <dd></dd>
 </dl>

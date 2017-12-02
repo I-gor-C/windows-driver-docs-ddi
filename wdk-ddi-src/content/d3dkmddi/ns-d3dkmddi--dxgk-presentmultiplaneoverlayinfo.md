@@ -56,19 +56,19 @@ typedef struct _DXGK_PRESENTMULTIPLANEOVERLAYINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based video present network (VidPN) source identification number of the input that is to be displayed.</p>
 </dd>
 
-### -field <b>PlaneListCount</b>
+### -field PlaneListCount
 
 <dd>
 <p>[in] The number of overlay planes that are available to display.</p>
 </dd>
 
-### -field <b>pPlaneList</b>
+### -field pPlaneList
 
 <dd>
 <p>[in] A pointer to a structure of type <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-presentmultiplaneoverlaylist.md">DXGK_PRESENTMULTIPLANEOVERLAYLIST</a> that describes the overlay plane to display.</p>

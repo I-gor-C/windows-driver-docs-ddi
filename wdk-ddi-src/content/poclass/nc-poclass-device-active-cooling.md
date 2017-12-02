@@ -58,13 +58,13 @@ void ActiveCooling(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in, out, optional]
+### -param Context [in, out, optional]
 
 <dd>
 <p>A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="..\poclass\ns-poclass--thermal-cooling-interface.md">THERMAL_COOLING_INTERFACE</a> structure that the driver previously supplied to the caller.</p>
 </dd>
 
-### -param <i>Engaged</i> [in]
+### -param Engaged [in]
 
 <dd>
 <p>Indicates whether to engage or disengage active cooling. If <b>TRUE</b>, the driver must engage active cooling (for example, by turning the fan on). If <b>FALSE</b>, the driver must disengage active cooling (for example, by turning the fan off).</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfodisconnectinitiator_2.htm
 old-project: netvista
 ms.assetid: 4ea730ab-0ba0-46cd-b156-0b2f32b2eafe
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILCALLINFODISCONNECTINITIATOR {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DISCINIT_LOCAL"></a><a id="ril_discinit_local"></a><b>RIL_DISCINIT_LOCAL</b>
+### -field RIL_DISCINIT_LOCAL
 
 <dd></dd>
 
-### -field <a id="RIL_DISCINIT_REMOTE"></a><a id="ril_discinit_remote"></a><b>RIL_DISCINIT_REMOTE</b>
+### -field RIL_DISCINIT_REMOTE
 
 <dd></dd>
 
-### -field <a id="RIL_DISCINIT_MAX"></a><a id="ril_discinit_max"></a><b>RIL_DISCINIT_MAX</b>
+### -field RIL_DISCINIT_MAX
 
 <dd></dd>
 </dl>

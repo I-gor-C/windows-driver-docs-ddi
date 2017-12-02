@@ -55,13 +55,13 @@ NTSTATUS DrmGetContentRights(
 ## -parameters
 <dl>
 
-### -param <i>ContentId</i> [in]
+### -param ContentId [in]
 
 <dd>
 <p>Specifies the DRM content ID. This parameter identifies a KS audio stream.</p>
 </dd>
 
-### -param <i>DrmRights</i> [out]
+### -param DrmRights [out]
 
 <dd>
 <p>Specifies the DRM content rights that are assigned to the stream that is identified by <i>ContentId</i>. This parameter is a pointer to a <a href="audio.drmrights">DRMRIGHTS</a> structure.</p>
@@ -76,7 +76,7 @@ NTSTATUS DrmGetContentRights(
 
 <p>A module that lies downstream from the KS filter that creates the content ID typically does not need to call <code>DrmGetContentRights</code>. Instead, the module receives both the content ID and content rights either from the system (through an <a href="audio.idrmaudiostream_setcontentid">IDrmAudioStream::SetContentId</a> call or a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>set-property request) or directly from the preceding module in the data path (through a call to a content handler). For more information, see <a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>, <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>, and <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>.</p>
 
-<p><code>DrmGetContentRights</code> performs the same function as <a href="..\portcls\nf-portcls-pcgetcontentrights.md">PcGetContentRights</a> and <a href="audio.idrmport_getcontentrights">IDrmPort::GetContentRights</a>. For more information, see <a href="NULL">DRM Functions and Interfaces</a>.</p>
+<p><code>DrmGetContentRights</code> performs the same function as <a href="..\portcls\nf-portcls-pcgetcontentrights.md">PcGetContentRights</a> and <a href="audio.idrmport_getcontentrights">IDrmPort::GetContentRights</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.</p>
 
 ## -requirements
 <table>

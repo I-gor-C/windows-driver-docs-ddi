@@ -57,19 +57,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="Pipe_Allocator_None"></a><a id="pipe_allocator_none"></a><a id="PIPE_ALLOCATOR_NONE"></a><b>Pipe_Allocator_None</b>
+### -field Pipe_Allocator_None
 
 <dd></dd>
 
-### -field <a id="Pipe_Allocator_FirstPin"></a><a id="pipe_allocator_firstpin"></a><a id="PIPE_ALLOCATOR_FIRSTPIN"></a><b>Pipe_Allocator_FirstPin</b>
+### -field Pipe_Allocator_FirstPin
 
 <dd></dd>
 
-### -field <a id="Pipe_Allocator_LastPin"></a><a id="pipe_allocator_lastpin"></a><a id="PIPE_ALLOCATOR_LASTPIN"></a><b>Pipe_Allocator_LastPin</b>
+### -field Pipe_Allocator_LastPin
 
 <dd></dd>
 
-### -field <a id="Pipe_Allocator_MiddlePin"></a><a id="pipe_allocator_middlepin"></a><a id="PIPE_ALLOCATOR_MIDDLEPIN"></a><b>Pipe_Allocator_MiddlePin</b>
+### -field Pipe_Allocator_MiddlePin
 
 <dd></dd>
 </dl>

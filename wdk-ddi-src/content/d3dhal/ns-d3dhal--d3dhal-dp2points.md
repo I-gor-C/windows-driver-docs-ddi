@@ -55,13 +55,13 @@ typedef struct _D3DHAL_DP2POINTS {
 ## -struct-fields
 <dl>
 
-### -field <b>wCount</b>
+### -field wCount
 
 <dd>
 <p>Specifies the number of points to render.</p>
 </dd>
 
-### -field <b>wVStart</b>
+### -field wVStart
 
 <dd>
 <p>Specifies the index into the vertex buffer containing coordinate data for the initial point.</p>

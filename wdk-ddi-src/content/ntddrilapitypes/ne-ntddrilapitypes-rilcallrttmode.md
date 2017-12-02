@@ -7,7 +7,7 @@ old-location: netvista\rilcallrttmode.htm
 old-project: netvista
 ms.assetid: f4e796d6-2eff-43f6-8afd-b74e3136deb3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILCALLRTTMODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_RTTMODE_FULL"></a><a id="ril_rttmode_full"></a><b>RIL_RTTMODE_FULL</b>
+### -field RIL_RTTMODE_FULL
 
 <dd></dd>
 
-### -field <a id="RIL_RTTMODE_MAX"></a><a id="ril_rttmode_max"></a><b>RIL_RTTMODE_MAX</b>
+### -field RIL_RTTMODE_MAX
 
 <dd></dd>
 </dl>

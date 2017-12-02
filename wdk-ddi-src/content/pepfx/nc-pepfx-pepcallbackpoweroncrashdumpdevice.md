@@ -57,7 +57,7 @@ BOOLEAN PowerOnDumpDeviceCallback(
 ## -parameters
 <dl>
 
-### -param <i>CrashdumpInformation</i> [in]
+### -param CrashdumpInformation [in]
 
 <dd>
 <p>A pointer to a <a href="..\pepfx\ns-pepfx--pep-crashdump-information.md">PEP_CRASHDUMP_INFORMATION</a> structure that contains information about the crash-dump device.</p>

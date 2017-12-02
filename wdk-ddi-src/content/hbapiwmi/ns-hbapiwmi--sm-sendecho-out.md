@@ -56,19 +56,19 @@ typedef struct _SM_SendECHO_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.</p>
 </dd>
 
-### -field <b>OutRespBufferSize</b>
+### -field OutRespBufferSize
 
 <dd>
 <p>The output response size.</p>
 </dd>
 
-### -field <b>RespBuffer</b>
+### -field RespBuffer
 
 <dd>
 <p>The result of the operation.</p>

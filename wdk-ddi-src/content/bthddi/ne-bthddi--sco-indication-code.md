@@ -60,20 +60,20 @@ typedef enum _SCO_INDICATION_CODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="ScoIndicationAddReference"></a><a id="scoindicationaddreference"></a><a id="SCOINDICATIONADDREFERENCE"></a><b>ScoIndicationAddReference</b>
+### -field ScoIndicationAddReference
 
 <dd>
 <p>This value indicates that the profile driver should add one reference to its device object.</p>
 </dd>
 
-### -field <a id="ScoIndicationReleaseReference"></a><a id="scoindicationreleasereference"></a><a id="SCOINDICATIONRELEASEREFERENCE"></a><b>ScoIndicationReleaseReference</b>
+### -field ScoIndicationReleaseReference
 
 <dd>
 <p>This value indicates that the profile driver can release one reference to its device
      object.</p>
 </dd>
 
-### -field <a id="ScoIndicationRemoteConnect"></a><a id="scoindicationremoteconnect"></a><a id="SCOINDICATIONREMOTECONNECT"></a><b>ScoIndicationRemoteConnect</b>
+### -field ScoIndicationRemoteConnect
 
 <dd>
 <p>This value indicates to a profile driver that a remote device is trying to connect to the local
@@ -83,7 +83,7 @@ typedef enum _SCO_INDICATION_CODE {
      BRB_SCO_OPEN_CHANNEL_RESPONSE</a> request.</p>
 </dd>
 
-### -field <a id="ScoIndicationRemoteDisconnect"></a><a id="scoindicationremotedisconnect"></a><a id="SCOINDICATIONREMOTEDISCONNECT"></a><b>ScoIndicationRemoteDisconnect</b>
+### -field ScoIndicationRemoteDisconnect
 
 <dd>
 <p>This value indicates to a profile driver that a remote device is disconnecting from the local

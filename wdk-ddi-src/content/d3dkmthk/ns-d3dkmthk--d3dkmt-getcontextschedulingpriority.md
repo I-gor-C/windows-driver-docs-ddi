@@ -55,13 +55,13 @@ typedef struct _D3DKMT_GETCONTEXTSCHEDULINGPRIORITY {
 ## -struct-fields
 <dl>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device context to retrieve scheduling priority for.</p>
 </dd>
 
-### -field <b>Priority</b>
+### -field Priority
 
 <dd>
 <p>[out] The priority level that is retrieved for the device context.</p>

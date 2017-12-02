@@ -55,13 +55,13 @@ typedef struct _SM_GetRNIDMgmtInfo_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.</p>
 </dd>
 
-### -field <b>MgmtInfo</b>
+### -field MgmtInfo
 
 <dd>
 <p>A structure of type HBAFC3MgmtInfo that holds FC3 management information. The FC3 management information is used to configure the fibre channel adapter.</p>

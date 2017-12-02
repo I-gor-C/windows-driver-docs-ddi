@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest_setcompletioncallback.htm
 old-project: wdf
 ms.assetid: 316b8b75-91ca-4866-b66d-3f66f20126df
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFIoRequest, SetCompletionCallback, IWDFIoRequest::SetCompletionCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ void SetCompletionCallback(
 ## -parameters
 <dl>
 
-### -param <i>pCompletionCallback</i> [in]
+### -param pCompletionCallback [in]
 
 <dd>
 <p>A pointer to the <a href="..\wudfddi\nn-wudfddi-irequestcallbackrequestcompletion.md">IRequestCallbackRequestCompletion</a> interface whose <a href="wdf.irequestcallbackrequestcompletion_oncompletion">OnCompletion</a> method the framework calls after the I/O request completes. Beginning with version 1.9 of UMDF, the driver can specify <b>NULL</b> to deregister a previously registered <b>OnCompletion</b> method.</p>
 </dd>
 
-### -param <i>pContext</i> [in, optional]
+### -param pContext [in, optional]
 
 <dd>
 <p>A pointer to a buffer that contains context information that is related to the request completion. The framework passes this context information in a call to the <a href="wdf.irequestcallbackrequestcompletion_oncompletion">IRequestCallbackRequestCompletion::OnCompletion</a> method. This parameter is optional and can be <b>NULL</b>.</p>
@@ -145,4 +145,4 @@ void SetCompletionCallback(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::SetCompletionCallback method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::SetCompletionCallback method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

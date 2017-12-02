@@ -7,7 +7,7 @@ old-location: netvista\ril_managecalls.htm
 old-project: netvista
 ms.assetid: d94e3b80-b151-4b3a-a37d-bfba2850b28f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_ManageCalls
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,35 +64,35 @@ HRESULT  RIL_ManageCalls(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>dwCommand</i> 
+### -param dwCommand 
 
 <dd></dd>
 
-### -param <i>dwID</i> 
+### -param dwID 
 
 <dd></dd>
 
-### -param <i>lprcmOfferAnswer</i> 
+### -param lprcmOfferAnswer 
 
 <dd></dd>
 
-### -param <i>lpraAddress</i> 
+### -param lpraAddress 
 
 <dd></dd>
 
-### -param <i>dwRTTAction</i> 
+### -param dwRTTAction 
 
 <dd></dd>
 </dl>

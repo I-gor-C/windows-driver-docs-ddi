@@ -58,31 +58,31 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_COPY_RANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>NumPageTableEntries</b>
+### -field NumPageTableEntries
 
 <dd>
 <p>The number of page table entries to copy.</p>
 </dd>
 
-### -field <b>SrcPageTableAddress</b>
+### -field SrcPageTableAddress
 
 <dd>
 <p>The virtual address of the source page table for the range. The address is aligned to 64KB boundary.</p>
 </dd>
 
-### -field <b>DstPageTableAddress</b>
+### -field DstPageTableAddress
 
 <dd>
 <p>The virtual address of the destination page table for the range. The address is aligned to 64KB boundary.</p>
 </dd>
 
-### -field <b>SrcStartPteIndex</b>
+### -field SrcStartPteIndex
 
 <dd>
 <p>The index of the first page table entry in the source page table for the range.</p>
 </dd>
 
-### -field <b>DstStartPteIndex</b>
+### -field DstStartPteIndex
 
 <dd>
 <p>The index of the first page table entry in the destination page table for the range.</p>

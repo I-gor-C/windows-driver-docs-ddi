@@ -57,25 +57,25 @@ typedef struct _D3DKMT_OPENKEYEDMUTEX2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hSharedHandle</b>
+### -field hSharedHandle
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a global handle to a keyed mutex.</p>
 </dd>
 
-### -field <b>hKeyedMutex</b>
+### -field hKeyedMutex
 
 <dd>
 <p>[out] A D3DKMT_HANDLE data type that represents a handle to the keyed mutex in this process.</p>
 </dd>
 
-### -field <b>pPrivateRuntimeData</b>
+### -field pPrivateRuntimeData
 
 <dd>
 <p>[in] A buffer that contains initial private data. This buffer is copied only if the keyed mutex does not already have private data.</p>
 </dd>
 
-### -field <b>PrivateRuntimeDataSize</b>
+### -field PrivateRuntimeDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the <b>pPrivateRuntimeData</b> member.</p>

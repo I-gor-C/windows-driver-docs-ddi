@@ -57,25 +57,25 @@ typedef struct _DRIVE_LAYOUT_INFORMATION_GPT {
 ## -struct-fields
 <dl>
 
-### -field <b>DiskId</b>
+### -field DiskId
 
 <dd>
 <p>Contains a GUID that uniquely identifies the drive. The GUID data type is described on the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565392">Using GUIDs in Drivers</a> reference page. </p>
 </dd>
 
-### -field <b>StartingUsableOffset</b>
+### -field StartingUsableOffset
 
 <dd>
 <p>Contains an offset in bytes to the location immediately following the primary partition table. This offset begins the region on the drive where partitions reside, but partition one is not necessarily located precisely at this offset.</p>
 </dd>
 
-### -field <b>UsableLength</b>
+### -field UsableLength
 
 <dd>
 <p>Indicates the total usable space in bytes available on the drive.</p>
 </dd>
 
-### -field <b>MaxPartitionCount</b>
+### -field MaxPartitionCount
 
 <dd>
 <p>Indicates the maximum number of partitions allowed on the drive.</p>

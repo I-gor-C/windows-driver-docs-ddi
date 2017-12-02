@@ -57,25 +57,25 @@ typedef struct _BDA_TABLE_SECTION {
 ## -struct-fields
 <dl>
 
-### -field <b>ulPrimarySectionId</b>
+### -field ulPrimarySectionId
 
 <dd>
 <p>Identifier of the primary table section. </p>
 </dd>
 
-### -field <b>ulSecondarySectionId</b>
+### -field ulSecondarySectionId
 
 <dd>
 <p>Identifier of the secondary table section. </p>
 </dd>
 
-### -field <b>ulcbSectionLength</b>
+### -field ulcbSectionLength
 
 <dd>
 <p>Size, in bytes, of the <b>argbSectionData</b> array. </p>
 </dd>
 
-### -field <b>argbSectionData</b>
+### -field argbSectionData
 
 <dd>
 <p>Array of table section data.</p>

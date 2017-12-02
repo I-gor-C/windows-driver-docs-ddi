@@ -7,7 +7,7 @@ old-location: wdf\read_register_ulong64.htm
 old-project: wdf
 ms.assetid: D8AB8735-8909-463E-B10E-1FE5FD557FBB
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: READ_REGISTER_ULONG64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ ULONG64 READ_REGISTER_ULONG64(
 ## -parameters
 <dl>
 
-### -param <i>pDevice</i> [in]
+### -param pDevice [in]
 
 <dd>
 <p>Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.</p>
 </dd>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>A pointer to the register address, which must be a mapped range in memory space.</p>

@@ -55,13 +55,13 @@ NTSTATUS GetStreamChannelCount(
 ## -parameters
 <dl>
 
-### -param <i>targetType</i> [in]
+### -param targetType [in]
 
 <dd>
 <p>An <a href="..\portcls\ne-portcls-echanneltargettype.md">eChannelTargetType</a> enumerated value that specifies the  target node type.</p>
 </dd>
 
-### -param <i>pulChannelCount</i> [out]
+### -param pulChannelCount [out]
 
 <dd>
 <p>The number of available channels.</p>

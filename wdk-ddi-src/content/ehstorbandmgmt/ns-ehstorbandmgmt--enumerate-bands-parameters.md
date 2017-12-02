@@ -59,13 +59,13 @@ typedef struct _ENUMERATE_BANDS_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>StructSize</b>
+### -field StructSize
 
 <dd>
 <p>The size of this structure in bytes. Set to <b>sizeof</b>(ENUMERATE_BANDS_PARAMETERS).</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Band enumeration flags. This value is a bitwise OR combination of the following.</p>
@@ -77,7 +77,7 @@ typedef struct _ENUMERATE_BANDS_PARAMETERS {
 <tr>
 <td width="40%"><a id="ENUMBANDS_ENUM_ALL_BANDS"></a><a id="enumbands_enum_all_bands"></a><dl>
 
-### -field <b>ENUMBANDS_ENUM_ALL_BANDS</b>
+### -field ENUMBANDS_ENUM_ALL_BANDS
 
 </dl>
 </td>
@@ -88,7 +88,7 @@ typedef struct _ENUMERATE_BANDS_PARAMETERS {
 <tr>
 <td width="40%"><a id="ENUMBANDS_REPORT_CRYPTO_ALGO"></a><a id="enumbands_report_crypto_algo"></a><dl>
 
-### -field <b>ENUMBANDS_REPORT_CRYPTO_ALGO</b>
+### -field ENUMBANDS_REPORT_CRYPTO_ALGO
 
 </dl>
 </td>
@@ -100,25 +100,25 @@ typedef struct _ENUMERATE_BANDS_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>BandId</b>
+### -field BandId
 
 <dd>
 <p>The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId.</b> To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.</p>
 </dd>
 
-### -field <b>BandStart</b>
+### -field BandStart
 
 <dd>
 <p>The starting byte location on the storage device to begin a band search. An attempt is made to match a band at or after <b>BandStart</b>.</p>
 </dd>
 
-### -field <b>BandSize</b>
+### -field BandSize
 
 <dd>
 <p>An optional band size match value in bytes. If <b>BandSize</b> == 0 and <b>BandId</b> == –1, then <b>BandStart</b> is the only match value for selecting a band. Otherwise, a band at or after <b>BandStart</b> and matching  <b>BandSize</b> exactly is selected.</p>

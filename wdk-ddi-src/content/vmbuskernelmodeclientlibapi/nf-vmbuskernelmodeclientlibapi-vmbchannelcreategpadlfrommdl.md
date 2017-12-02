@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelcreategpadlfrommdl.htm
 old-project: netvista
 ms.assetid: 6C63E250-1A11-45E8-B535-263806DA4A33
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbChannelCreateGpadlFromMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,13 +62,13 @@ NTSTATUS VmbChannelCreateGpadlFromMdl(
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>A handle for a channel.  </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Flags. The possible values are the following:</p>
@@ -80,7 +80,7 @@ NTSTATUS VmbChannelCreateGpadlFromMdl(
 <tr>
 <td width="40%"><a id="VMBUS_CHANNEL_GPADL_READ_ONLY"></a><a id="vmbus_channel_gpadl_read_only"></a><dl>
 
-### -param <b>VMBUS_CHANNEL_GPADL_READ_ONLY</b>
+### -param VMBUS_CHANNEL_GPADL_READ_ONLY
 
 </dl>
 </td>
@@ -92,7 +92,7 @@ NTSTATUS VmbChannelCreateGpadlFromMdl(
 <p> </p>
 </dd>
 
-### -param <i>Mdl</i> [in]
+### -param Mdl [in]
 
 <dd>
 <p> A pointer to a Memory Descriptor List (MDL) chain that describes the buffer. The buffer may
@@ -100,14 +100,14 @@ have multiple pieces, which are chained by using the MDL next pointer.
 </p>
 </dd>
 
-### -param <i>StartOffsetWithinMdl</i> [in]
+### -param StartOffsetWithinMdl [in]
 
 <dd>
 <p>An offset, in bytes, in the MDL at which to start the mapping.
 </p>
 </dd>
 
-### -param <i>DataLengthWithinMdl</i> [in]
+### -param DataLengthWithinMdl [in]
 
 <dd>
 <p>The length, in bytes, of the buffer chain. If this value is zero (0),
@@ -115,7 +115,7 @@ use until the end of the MDL.
 </p>
 </dd>
 
-### -param <i>GpadlHandle</i> [out]
+### -param GpadlHandle [out]
 
 <dd>
 <p>The GPADL handle of the created MDL. Send this to the server to use with the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelmapgpadl.md">VmbChannelMapGpadl</a> function.</p>
@@ -197,4 +197,4 @@ the GPADL description to the opposite endpoint and received confirmation.
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20VmbChannelCreateGpadlFromMdl function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20VmbChannelCreateGpadlFromMdl function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

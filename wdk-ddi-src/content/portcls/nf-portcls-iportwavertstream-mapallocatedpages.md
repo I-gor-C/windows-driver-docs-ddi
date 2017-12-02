@@ -55,13 +55,13 @@ PVOID MapAllocatedPages(
 ## -parameters
 <dl>
 
-### -param <i>MemoryDescriptorList</i> [in]
+### -param MemoryDescriptorList [in]
 
 <dd>
 <p>Pointer to the memory descriptor list (<a href="..\wdm\ns-wdm--mdl.md">MDL</a>) that will be mapped. The MDL can be allocated by calling either <a href="audio.iportwavertstream_allocatepagesformdl">IPortWaveRTStream::AllocatePagesForMdl </a> or <a href="audio.iportwavertstream_allocatecontiguouspagesformdl">IPortWaveRTStream::AllocateContiguousPagesForMdl</a>.</p>
 </dd>
 
-### -param <i>CacheType</i> [in]
+### -param CacheType [in]
 
 <dd>
 <p>Specifies the cache type. Set this parameter to one of the following <a href="..\wdm\ne-wdm--memory-caching-type.md">MEMORY_CACHING_TYPE</a> enumeration values: <b>MmNonCached</b>, <b>MmCached</b>, or <b>MmWriteCombined</b>.</p>

@@ -56,19 +56,19 @@ typedef enum _DXGKMDT_OPM_HDCP_PROTECTION_LEVEL {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKMDT_OPM_HDCP_OFF"></a><a id="dxgkmdt_opm_hdcp_off"></a><b>DXGKMDT_OPM_HDCP_OFF</b>
+### -field DXGKMDT_OPM_HDCP_OFF
 
 <dd>
 <p>Indicates that HDCP does not protect the output's signal. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_HDCP_ON"></a><a id="dxgkmdt_opm_hdcp_on"></a><b>DXGKMDT_OPM_HDCP_ON</b>
+### -field DXGKMDT_OPM_HDCP_ON
 
 <dd>
 <p>Indicates that HDCP protects the output's signal. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_HDCP_FORCE_ULONG"></a><a id="dxgkmdt_opm_hdcp_force_ulong"></a><b>DXGKMDT_OPM_HDCP_FORCE_ULONG</b>
+### -field DXGKMDT_OPM_HDCP_FORCE_ULONG
 
 <dd>
 <p>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</p>

@@ -55,13 +55,13 @@ typedef struct _PEP_PPM_QUERY_PERF_CONSTRAINTS {
 ## -struct-fields
 <dl>
 
-### -field <b>GuaranteedPerformanceLimit</b>
+### -field GuaranteedPerformanceLimit
 
 <dd>
 <p>[out] The guaranteed performance threshold in platform-specific units. If nonzero, this value specifies the maximum sustained performance level of the processor, taking into account all known external constraints (power budgeting, thermal constraints, power source, and so on). All processors are expected to be able to simultaneously sustain their guaranteed performance levels. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/mt629132">Platform Performance Thresholds</a>.</p>
 </dd>
 
-### -field <b>LimitReasons</b>
+### -field LimitReasons
 
 <dd>
 <p>[out] The reasons for which the processor's performance can be limited. Set this member to zero or to the bitwise-OR of one or more of the following values:</p>
@@ -73,7 +73,7 @@ typedef struct _PEP_PPM_QUERY_PERF_CONSTRAINTS {
 <tr>
 <td width="40%"><a id="PERFORMANCE_LIMIT_THERMAL"></a><a id="performance_limit_thermal"></a><dl>
 
-### -field <b>PERFORMANCE_LIMIT_THERMAL</b>
+### -field PERFORMANCE_LIMIT_THERMAL
 
 
 ### -field 0x1
@@ -87,7 +87,7 @@ typedef struct _PEP_PPM_QUERY_PERF_CONSTRAINTS {
 <tr>
 <td width="40%"><a id="PERFORMANCE_LIMIT_POWER"></a><a id="performance_limit_power"></a><dl>
 
-### -field <b>PERFORMANCE_LIMIT_POWER</b>
+### -field PERFORMANCE_LIMIT_POWER
 
 
 ### -field 0x2
@@ -101,7 +101,7 @@ typedef struct _PEP_PPM_QUERY_PERF_CONSTRAINTS {
 <tr>
 <td width="40%"><a id="PERFORMANCE_LIMIT_DOMAIN_DEPENDENCY"></a><a id="performance_limit_domain_dependency"></a><dl>
 
-### -field <b>PERFORMANCE_LIMIT_DOMAIN_DEPENDENCY</b>
+### -field PERFORMANCE_LIMIT_DOMAIN_DEPENDENCY
 
 
 ### -field 0x4

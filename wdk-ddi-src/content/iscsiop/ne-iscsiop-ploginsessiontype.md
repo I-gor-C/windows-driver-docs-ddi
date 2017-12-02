@@ -56,20 +56,20 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="ISCSI_LOGINTARGET_DISCOVERY"></a><a id="iscsi_logintarget_discovery"></a><b>ISCSI_LOGINTARGET_DISCOVERY</b>
+### -field ISCSI_LOGINTARGET_DISCOVERY
 
 <dd>
 <p>The logon session is for discovery only. Initiators use this type of session to discover targets with the <b>SendTargets</b> command. The initiator must already have access to at least one target IP address and one target port (target portal information).</p>
 </dd>
 
-### -field <a id="ISCSI_LOGINTARGET_INFORMATIONAL"></a><a id="iscsi_logintarget_informational"></a><b>ISCSI_LOGINTARGET_INFORMATIONAL</b>
+### -field ISCSI_LOGINTARGET_INFORMATIONAL
 
 <dd>
 <p>The logon session is for informational purposes only. Initiators use this type of session to send SCSI commands that query for information. Management software can use informational sessions to query for information by calling the <b>SendScsiReportLuns</b> and <b>SendScsiReadCapacity</b> user-mode library routines. </p>
 <p>This type of session does not support transmission of user data, and the Plug and Play (PnP) manager does not enumerate target logical units (LUNs) for the storage stack of the initiator node.</p>
 </dd>
 
-### -field <a id="ISCSI_LOGINTARGET_DATA"></a><a id="iscsi_logintarget_data"></a><b>ISCSI_LOGINTARGET_DATA</b>
+### -field ISCSI_LOGINTARGET_DATA
 
 <dd>
 <p>The logon session is full-featured. It reports the target LUNs to the PnP manager on the (local) initiator node for enumeration. After enumerating these LUNs, the operating system can access them for data transfers, just as it would with local LUNs.</p>

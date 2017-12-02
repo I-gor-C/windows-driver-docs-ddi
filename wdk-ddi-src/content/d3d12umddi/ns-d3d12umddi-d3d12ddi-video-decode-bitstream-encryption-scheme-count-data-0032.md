@@ -56,19 +56,19 @@ typedef struct _D3D12DDI_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEME_COUNT_DATA_003
 ## -struct-fields
 <dl>
 
-### -field <b>NodeIndex</b>
+### -field NodeIndex
 
 <dd>
 <p>Node index.</p>
 </dd>
 
-### -field <b>DecodeProfile</b>
+### -field DecodeProfile
 
 <dd>
 <p>Decode profile.</p>
 </dd>
 
-### -field <b>BitstreamEncryptionSchemeCount</b>
+### -field BitstreamEncryptionSchemeCount
 
 <dd>
 <p>Bitstream encryption scheme count.</p>

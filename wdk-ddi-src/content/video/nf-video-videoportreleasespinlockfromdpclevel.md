@@ -56,13 +56,13 @@ VOID VideoPortReleaseSpinLockFromDpcLevel(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>SpinLock</i> [in, out]
+### -param SpinLock [in, out]
 
 <dd>
 <p>Pointer to a memory location that contains the spin lock to be released.</p>

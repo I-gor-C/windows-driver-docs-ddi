@@ -58,7 +58,7 @@ typedef struct _VIDEO_POINTER_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A set of flags that specify certain capabilities of the pointer. Flags can be a combination of the following values.</p>
@@ -111,25 +111,25 @@ typedef struct _VIDEO_POINTER_CAPABILITIES {
 <p> </p>
 </dd>
 
-### -field <b>MaxWidth</b>
+### -field MaxWidth
 
 <dd>
 <p>Specifies the maximum width of the pointer, in pixels.</p>
 </dd>
 
-### -field <b>MaxHeight</b>
+### -field MaxHeight
 
 <dd>
 <p>Specifies the maximum height of the pointer, in pixels.</p>
 </dd>
 
-### -field <b>HWPtrBitmapStart</b>
+### -field HWPtrBitmapStart
 
 <dd>
 <p>Specifies the first offset, in CPU-addressable units, in the memory bitmap that is used to store the hardware pointer bitmap. A value of –1 is not valid.</p>
 </dd>
 
-### -field <b>HWPtrBitmapEnd</b>
+### -field HWPtrBitmapEnd
 
 <dd>
 <p>Specifies the last offset, in CPU-addressable units, in the memory bitmap that is used to store the hardware pointer bitmap. A value of –1 is not valid.</p>

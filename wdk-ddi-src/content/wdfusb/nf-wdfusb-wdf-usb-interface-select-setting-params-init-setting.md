@@ -7,7 +7,7 @@ old-location: wdf\wdf_usb_interface_select_setting_params_init_setting.htm
 old-project: wdf
 ms.assetid: 2b58eb8f-c468-4bc6-ad50-0bc9f2dee561
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_SETTING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ VOID WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_SETTING(
 ## -parameters
 <dl>
 
-### -param <i>Params</i> [out]
+### -param Params [out]
 
 <dd>
 <p>A pointer to a driver-allocated <a href="..\wdfusb\ns-wdfusb--wdf-usb-interface-select-setting-params.md">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</a> structure.</p>
 </dd>
 
-### -param <i>SettingIndex</i> [in]
+### -param SettingIndex [in]
 
 <dd>
 <p>An index value that identifies an alternate setting for the interface. (The interface is identified by an interface object handle that the driver passes to <a href="..\wdfusb\nf-wdfusb-wdfusbinterfaceselectsetting.md">WdfUsbInterfaceSelectSetting</a>.) </p>
@@ -147,4 +147,4 @@ VOID WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_SETTING(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_SETTING function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_SETTING function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

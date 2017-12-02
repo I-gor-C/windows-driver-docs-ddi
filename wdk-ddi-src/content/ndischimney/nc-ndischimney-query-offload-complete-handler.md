@@ -7,7 +7,7 @@ old-location: netvista\protocolqueryoffloadcomplete.htm
 old-project: netvista
 ms.assetid: f521af88-eb96-4077-8882-9b1d02c6c87c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: BINARY_DATA, BINARY_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ VOID ProtocolQueryOffloadComplete(
 ## -parameters
 <dl>
 
-### -param <i>ProtocolBindingContext</i> [in]
+### -param ProtocolBindingContext [in]
 
 <dd>
 <p>A handle to a context area allocated by the protocol driver. The driver maintains the per binding
@@ -71,7 +71,7 @@ VOID ProtocolQueryOffloadComplete(
      <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.</p>
 </dd>
 
-### -param <i>OffloadBlockList</i> [in]
+### -param OffloadBlockList [in]
 
 <dd>
 <p>A pointer to an 
@@ -148,4 +148,4 @@ VOID ProtocolQueryOffloadComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20QUERY_OFFLOAD_COMPLETE_HANDLER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20QUERY_OFFLOAD_COMPLETE_HANDLER callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

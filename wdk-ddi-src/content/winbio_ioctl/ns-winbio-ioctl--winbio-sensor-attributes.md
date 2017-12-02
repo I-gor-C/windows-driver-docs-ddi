@@ -66,13 +66,13 @@ typedef struct _WINBIO_SENSOR_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>PayloadSize</b>
+### -field PayloadSize
 
 <dd>
 <p>A DWORD value that indicates the total size of the payload, including the fixed length structure and any variable data at the end.</p>
 </dd>
 
-### -field <b>WinBioHresult</b>
+### -field WinBioHresult
 
 <dd>
 <p>An HRESULT value that indicates containing status detail of the I/O operation.   The following table includes possible values.</p>
@@ -101,19 +101,19 @@ typedef struct _WINBIO_SENSOR_ATTRIBUTES {
 <p> </p>
 </dd>
 
-### -field <b>WinBioVersion</b>
+### -field WinBioVersion
 
 <dd>
 <p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-version.md">WINBIO_VERSION</a> that contains a WinBio WBDI version that is supported by the driver. To be compatible with the WinBio service, <b>WinBioVersion</b> must contain the same major version as the current major version of the WinBio service, in addition to a minor version that is less than or equal to the current minor version of the WinBio service. </p>
 </dd>
 
-### -field <b>SensorType</b>
+### -field SensorType
 
 <dd>
 <p>A DWORD bitmask of type WINBIO_BIOMETRIC_TYPE that contains biometric data that is collected by the sensor. In Windows 7, only WINBIO_TYPE_FINGERPRINT is supported.</p>
 </dd>
 
-### -field <b>SensorSubType</b>
+### -field SensorSubType
 
 <dd>
 <p>A WINBIO_BIOMETRIC_SENSOR_SUBTYPE subtype that contains additional information about the sensor.  For example, this member could specify whether the sensor requires the user to simply touch the sensor or swipe a finger over the sensor.</p>
@@ -151,7 +151,7 @@ typedef struct _WINBIO_SENSOR_ATTRIBUTES {
 <p> </p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>A WINBIO_CAPABILITIES subtype, which indicates which capabilities are supported by the device. </p>
@@ -265,37 +265,37 @@ typedef struct _WINBIO_SENSOR_ATTRIBUTES {
 <p> </p>
 </dd>
 
-### -field <b>ManufacturerName</b>
+### -field ManufacturerName
 
 <dd>
 <p> A structure of type WINBIO_STRING that contains the name of the device manufacturer.</p>
 </dd>
 
-### -field <b>ModelName</b>
+### -field ModelName
 
 <dd>
 <p> A structure of type WINBIO_STRING that contains the name of the device model.</p>
 </dd>
 
-### -field <b>SerialNumber</b>
+### -field SerialNumber
 
 <dd>
 <p>A structure of type WINBIO_STRING that contains the serial number of the device, if one exists.</p>
 </dd>
 
-### -field <b>FirmwareVersion</b>
+### -field FirmwareVersion
 
 <dd>
 <p> A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-version.md">WINBIO_VERSION</a> that contains the version of the firmware that is loaded on the device.</p>
 </dd>
 
-### -field <b>SupportedFormatEntries</b>
+### -field SupportedFormatEntries
 
 <dd>
 <p> The number of formats that are supported by the driver and device.  There must be at least one, which is the Windows standard format.</p>
 </dd>
 
-### -field <b>SupportedFormat</b>
+### -field SupportedFormat
 
 <dd>
 <p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-registered-format.md">WINBIO_REGISTERED_FORMAT</a> that contains a list of the formats supported by the driver and device. </p>

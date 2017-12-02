@@ -7,7 +7,7 @@ old-location: netvista\riladditionalcallerinfo_2.htm
 old-project: netvista
 ms.assetid: e29f6710-0ca1-4420-b0e7-957ba020254b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILADDITIONALCALLERINFO, RILADDITIONALCALLERINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef struct _RILADDITIONALCALLERINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwCallId</b>
+### -field dwCallId
 
 <dd></dd>
 
-### -field <b>dwCallerInfoLength</b>
+### -field dwCallerInfoLength
 
 <dd></dd>
 
-### -field <b>wszCallerInfo</b>
+### -field wszCallerInfo
 
 <dd></dd>
 </dl>

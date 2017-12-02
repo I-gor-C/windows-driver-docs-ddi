@@ -7,7 +7,7 @@ old-location: wdf\wudf_workitem_config_init.htm
 old-project: wdf
 ms.assetid: A75AE18F-802F-462B-BF96-5C03408F53CA
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ void WUDF_WORKITEM_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>pConfig</i> [out]
+### -param pConfig [out]
 
 <dd>
 <p>A pointer to the caller-allocated <a href="..\wudfworkitem\ns-wudfworkitem--wudf-workitem-config.md">WUDF_WORKITEM_CONFIG</a> structure to initialize.</p>
 </dd>
 
-### -param <i>OnWorkItemFunc</i> [in]
+### -param OnWorkItemFunc [in]
 
 <dd>
 <p>The address of the driver's <a href="..\wudfworkitem\nc-wudfworkitem-wudf-workitem-function.md">OnWorkItem</a> event callback function.</p>
@@ -130,4 +130,4 @@ void WUDF_WORKITEM_CONFIG_INIT(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_WORKITEM_CONFIG_INIT function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_WORKITEM_CONFIG_INIT function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

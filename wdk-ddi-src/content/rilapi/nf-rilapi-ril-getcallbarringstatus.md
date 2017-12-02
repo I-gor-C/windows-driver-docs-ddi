@@ -7,7 +7,7 @@ old-location: netvista\ril_getcallbarringstatus.htm
 old-project: netvista
 ms.assetid: 403e17c1-1353-42dd-aedc-8aec1fd72e0f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetCallBarringStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,27 +62,27 @@ HRESULT  RIL_GetCallBarringStatus(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>dwType</i> 
+### -param dwType 
 
 <dd></dd>
 
-### -param <i>fAllClasses</i> 
+### -param fAllClasses 
 
 <dd></dd>
 
-### -param <i>dwInfoClasses</i> 
+### -param dwInfoClasses 
 
 <dd></dd>
 </dl>

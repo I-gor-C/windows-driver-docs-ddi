@@ -7,7 +7,7 @@ old-location: netvista\ndismqueryadapterinstancename.htm
 old-project: netvista
 ms.assetid: 7af6ee73-814b-49f8-8641-d3e8dc672ee5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMQueryAdapterInstanceName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ NDIS_STATUS NdisMQueryAdapterInstanceName(
 ## -parameters
 <dl>
 
-### -param <i>AdapterInstanceName</i> [out]
+### -param AdapterInstanceName [out]
 
 <dd>
 <p>A pointer to a caller-supplied NDIS_STRING type that receives a counted Unicode string. This
@@ -65,7 +65,7 @@ NDIS_STATUS NdisMQueryAdapterInstanceName(
      <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> type.</p>
 </dd>
 
-### -param <i>MiniportAdapterHandle</i> [in]
+### -param MiniportAdapterHandle [in]
 
 <dd>
 <p>The handle to the miniport adapter that was previously input to the 
@@ -171,4 +171,4 @@ NDIS_STATUS NdisMQueryAdapterInstanceName(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMQueryAdapterInstanceName function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMQueryAdapterInstanceName function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

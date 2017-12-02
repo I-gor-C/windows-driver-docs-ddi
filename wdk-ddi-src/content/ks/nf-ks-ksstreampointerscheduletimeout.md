@@ -56,19 +56,19 @@ void KsStreamPointerScheduleTimeout(
 ## -parameters
 <dl>
 
-### -param <i>StreamPointer</i> [in]
+### -param StreamPointer [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure representing the stream pointer for which to register a timeout.</p>
 </dd>
 
-### -param <i>Callback</i> [in]
+### -param Callback [in]
 
 <dd>
 <p>A pointer to a minidriver-supplied <a href="stream.avstrminitimeoutcallback">AVStrMiniTimeoutCallback</a> routine. If the stream pointer has not been deleted or the timeout canceled before the interval expires, AVStream calls this routine immediately following expiration of the interval.</p>
 </dd>
 
-### -param <i>Interval</i> [in]
+### -param Interval [in]
 
 <dd>
 <p>Specifies the interval in 100-nanosecond units from the current time to the time that the timeout occurs.</p>
@@ -79,7 +79,7 @@ void KsStreamPointerScheduleTimeout(
 <p>None</p>
 
 ## -remarks
-<p>It is safe to call <b>KsStreamPointerScheduleTimeout</b> on a stream pointer that already has a timeout scheduled. In this case, AVStream cancels the previous timeout and replaces it with the new timeout.</p><p class="note">Also see <a href="NULL">Stream Pointers</a>.</p>
+<p>It is safe to call <b>KsStreamPointerScheduleTimeout</b> on a stream pointer that already has a timeout scheduled. In this case, AVStream cancels the previous timeout and replaces it with the new timeout.</p><p class="note">Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736f">Stream Pointers</a>.</p>
 
 ## -requirements
 <table>

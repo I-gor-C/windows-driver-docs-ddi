@@ -66,79 +66,79 @@ typedef struct tagTRANSPORTSTATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>Specifies the ED_MODE_Xxx.</p>
 </dd>
 
-### -field <b>LastError</b>
+### -field LastError
 
 <dd>
 <p>Specifies the last error.</p>
 </dd>
 
-### -field <b>RecordInhibit</b>
+### -field RecordInhibit
 
 <dd>
 <p>Specifies if recording is inhibited. <b>TRUE</b> if recording is prevented, <b>FALSE</b> otherwise.</p>
 </dd>
 
-### -field <b>ServoLock</b>
+### -field ServoLock
 
 <dd>
 <p>Indicates the servo lock.</p>
 </dd>
 
-### -field <b>MediaPresent</b>
+### -field MediaPresent
 
 <dd>
 <p>Specifies if media is present.</p>
 </dd>
 
-### -field <b>MediaLength</b>
+### -field MediaLength
 
 <dd>
 <p>Specifies the length of the media.</p>
 </dd>
 
-### -field <b>MediaSize</b>
+### -field MediaSize
 
 <dd>
 <p>Specifies the size of the media.</p>
 </dd>
 
-### -field <b>MediaTrackCount</b>
+### -field MediaTrackCount
 
 <dd>
 <p>Indicates the media track count.</p>
 </dd>
 
-### -field <b>MediaTrackLength</b>
+### -field MediaTrackLength
 
 <dd>
 <p>Specifies the media track length.</p>
 </dd>
 
-### -field <b>MediaTrackSide</b>
+### -field MediaTrackSide
 
 <dd>
 <p>Indicates the media track size.</p>
 </dd>
 
-### -field <b>MediaType</b>
+### -field MediaType
 
 <dd>
 <p>Indicates the type of media.</p>
 </dd>
 
-### -field <b>LinkMode</b>
+### -field LinkMode
 
 <dd>
 <p>Indicates linked mode. <b>TRUE</b> if linked, <b>FALSE</b> otherwise.</p>
 </dd>
 
-### -field <b>NotifyOn</b>
+### -field NotifyOn
 
 <dd>
 <p>Specifies event notification. <b>TRUE</b> enables event notification, <b>FALSE</b> disables event notification.</p>

@@ -56,13 +56,13 @@ NTSTATUS RtlVolumeDeviceToDosName(
 ## -parameters
 <dl>
 
-### -param <i>VolumeDeviceObject</i> [in]
+### -param VolumeDeviceObject [in]
 
 <dd>
 <p>Pointer to a device object that represents a volume device object created by a storage class driver.</p>
 </dd>
 
-### -param <i>DosName</i> [out]
+### -param DosName [out]
 
 <dd>
 <p>Pointer to a Unicode string containing the MS-DOS path of the volume device object specified by <i>VolumeDeviceObject</i>. </p>

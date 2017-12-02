@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_forward_progress_reserved_policy_settings.htm
 old-project: wdf
 ms.assetid: 28ffe82f-79b6-4a00-b4fa-36df5df303a6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS, WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,17 +60,17 @@ typedef struct _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Policy</b>
+### -field Policy
 
 <dd>
 <dl>
 
-### -field <b>ExaminePolicy</b>
+### -field ExaminePolicy
 
 <dd>
 <dl>
 
-### -field <b>EvtIoWdmIrpForForwardProgress</b>
+### -field EvtIoWdmIrpForForwardProgress
 
 <dd>
 <p>A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt-wdf-io-wdm-irp-for-forward-progress.md">EvtIoWdmIrpForForwardProgress</a> callback function.</p>

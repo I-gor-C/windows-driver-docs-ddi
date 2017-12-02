@@ -57,13 +57,13 @@ NTSTATUS RtlStringCbCopyN(
 ## -parameters
 <dl>
 
-### -param <i>pszDest</i> [out]
+### -param pszDest [out]
 
 <dd>
 <p>A pointer to a caller-supplied buffer that receives the copied string. The string at <i>pszSrc</i>, up to <i>cbSrc</i> bytes, is copied to the buffer at <i>pszDest</i> and terminated with a null character. </p>
 </dd>
 
-### -param <i>cbDest</i> [in]
+### -param cbDest [in]
 
 <dd>
 <p>The size, in bytes, of the destination buffer. The buffer must be large enough for both the string and the terminating null character.</p>
@@ -71,13 +71,13 @@ NTSTATUS RtlStringCbCopyN(
 <p>For ANSI strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * <b>sizeof</b>(<b>char</b>). </p>
 </dd>
 
-### -param <i>pszSrc</i> [in]
+### -param pszSrc [in]
 
 <dd>
 <p>A pointer to a caller-supplied, null-terminated string. </p>
 </dd>
 
-### -param <i>cbSrc</i> [in]
+### -param cbSrc [in]
 
 <dd>
 <p>The maximum number of bytes to copy from <i>pszSrc</i> to <i>pszDest</i>.</p>

@@ -61,20 +61,20 @@ typedef struct _USBD_PIPE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>MaximumPacketSize</b>
+### -field MaximumPacketSize
 
 <dd>
 <p>Specifies the maximum packet size, in bytes, that this pipe handles. This value must be less than or equal to the value of <b>wMaxPacketSize</b> in the endpoint descriptor. The USB stack ignores this value if the USBD_PF_CHANGE_MAX_PACKET flag is not set in the <b>PipeFlags</b> member. </p>
 <p>For high-speed isochronous endpoints, the received <b>MaximumPacketSize</b> value includes the number of bytes that can be transferred in additional transactions, if the endpoint supports them. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>EndpointAddress</b>
+### -field EndpointAddress
 
 <dd>
 <p>Specifies the bus address for this pipe.</p>
 </dd>
 
-### -field <b>Interval</b>
+### -field Interval
 
 <dd>
 <p>Contains the polling interval, indicated by the <b>bInterval</b> field in the corresponding endpoint descriptor (<a href="..\usbspec\ns-usbspec--usb-endpoint-descriptor.md">USB_ENDPOINT_DESCRIPTOR</a>). This value is only valid for interrupt and isochronous pipes.  For other types of pipe, this value should be ignored. It reflects the device's configuration in firmware. Drivers cannot change it. </p>
@@ -203,19 +203,19 @@ typedef struct _USBD_PIPE_INFORMATION {
 <p>The mappings in the preceding tables between periods and polling intervals are valid in Microsoft Windows 2000 and later versions of the Windows operating system.</p>
 </dd>
 
-### -field <b>PipeType</b>
+### -field PipeType
 
 <dd>
 <p>Specifies what type of transfers this pipe uses. These values are defined in the <a href="..\usb\ne-usb--usbd-pipe-type.md">USBD_PIPE_TYPE</a> enumeration.</p>
 </dd>
 
-### -field <b>PipeHandle</b>
+### -field PipeHandle
 
 <dd>
 <p>Specifies an opaque handle to the bulk or interrupt pipe. The host controller driver returns this handle when the client driver selects the device configuration with a URB of type URB_FUNCTION_SELECT_CONFIGURATION or when the client driver changes the settings for an interface with a URB of type URB_FUNCTION_SELECT_INTERFACE.    </p>
 </dd>
 
-### -field <b>MaximumTransferSize</b>
+### -field MaximumTransferSize
 
 <dd>
 <p>Specifies the maximum size, in bytes, for a transfer request on this pipe. In Windows Server 2003, Windows XP and later operating systems, this member is not used and does not contain valid data. </p>
@@ -224,7 +224,7 @@ typedef struct _USBD_PIPE_INFORMATION {
 <div> </div>
 </dd>
 
-### -field <b>PipeFlags</b>
+### -field PipeFlags
 
 <dd>
 <p>Contains a bitwise-OR of pipe flags that the driver can use to specify certain configurable characteristics of the pipe. The driver specifies these pipe characteristics when it selects the configuration of a USB device with a URB request whose function type is URB_FUNCTION_SELECT_CONFIGURATION. </p>

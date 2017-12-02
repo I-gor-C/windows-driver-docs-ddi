@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>ChunkType</b>
+### -field ChunkType
 
 <dd>
 <p>The type of chunk that is to be processed, specified as a <a href="..\netdispumdddi\ne-netdispumdddi-miracast-chunk-type.md">MIRACAST_CHUNK_TYPE</a> enumeration value.</p>
 </dd>
 
-### -field <b>ChunkId</b>
+### -field ChunkId
 
 <dd>
 <p>The identifier for this chunk, of type <a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-id.md">MIRACAST_CHUNK_ID</a>.</p>
 </dd>
 
-### -field <b>ProcessingTime</b>
+### -field ProcessingTime
 
 <dd>
 <p>The time, in microseconds, that it took to process this chunk.</p>
 </dd>
 
-### -field <b>EncodeRate</b>
+### -field EncodeRate
 
 <dd>
 <p>The encode bit rate, in kilobits per second, that the user-mode driver reported for this chunk.</p>

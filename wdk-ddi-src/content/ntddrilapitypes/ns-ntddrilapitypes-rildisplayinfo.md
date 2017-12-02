@@ -7,7 +7,7 @@ old-location: netvista\rildisplayinfo.htm
 old-project: netvista
 ms.assetid: 6c28e50c-a76a-4a7c-af29-6e58bcfe3f3b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILDISPLAYINFO, RILDISPLAYINFO, *LPRILDISPLAYINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef struct _RILDISPLAYINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwType</b>
+### -field dwType
 
 <dd></dd>
 
-### -field <b>dwTag</b>
+### -field dwTag
 
 <dd></dd>
 
-### -field <b>dwMessageSize</b>
+### -field dwMessageSize
 
 <dd></dd>
 
-### -field <b>pbMessage</b>
+### -field pbMessage
 
 <dd></dd>
 </dl>

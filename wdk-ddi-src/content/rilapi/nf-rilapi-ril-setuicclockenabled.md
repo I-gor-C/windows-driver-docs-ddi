@@ -7,7 +7,7 @@ old-location: netvista\ril_setuicclockenabled.htm
 old-project: netvista
 ms.assetid: eb422fec-8cc3-42b8-9caf-21fd135df7a1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SetUiccLockEnabled
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_SetUiccLockEnabled(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>lpLockCredential</i> 
+### -param lpLockCredential 
 
 <dd></dd>
 
-### -param <i>fEnable</i> 
+### -param fEnable 
 
 <dd></dd>
 </dl>

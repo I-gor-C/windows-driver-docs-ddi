@@ -7,7 +7,7 @@ old-location: wdf\wdfiotargetformatrequestforinternalioctl.htm
 old-project: wdf
 ms.assetid: 201ba120-9f64-4b69-87f0-a368b2e0344d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfIoTargetFormatRequestForInternalIoctl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,43 +62,43 @@ NTSTATUS WdfIoTargetFormatRequestForInternalIoctl(
 ## -parameters
 <dl>
 
-### -param <i>IoTarget</i> [in]
+### -param IoTarget [in]
 
 <dd>
 <p>A handle to a local or remote I/O target object that was obtained from a previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a> or <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>, or from a method that a specialized I/O target supplies.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>IoctlCode</i> [in]
+### -param IoctlCode [in]
 
 <dd>
 <p>An I/O control code (IOCTL) that the I/O target supports. </p>
 </dd>
 
-### -param <i>InputBuffer</i> [in, optional]
+### -param InputBuffer [in, optional]
 
 <dd>
 <p>A handle to a framework memory object. This object represents a buffer that contains data that will be sent to the I/O target. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>InputBufferOffset</i> [in, optional]
+### -param InputBufferOffset [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wudfddi_types\ns-wudfddi-types--wdfmemory-offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address and length, within the input buffer, for the data transfer. If this pointer is <b>NULL</b>, the data transfer begins at the beginning of the input buffer, and the transfer size is the buffer size.</p>
 </dd>
 
-### -param <i>OutputBuffer</i> [in, optional]
+### -param OutputBuffer [in, optional]
 
 <dd>
 <p>A handle to a framework memory object. This object represents a buffer that will receive data from the I/O target. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>OutputBufferOffset</i> [in, optional]
+### -param OutputBufferOffset [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wudfddi_types\ns-wudfddi-types--wdfmemory-offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address and length, within the output buffer, for the data transfer. If this pointer is <b>NULL</b>, the data transfer begins at the beginning of the output buffer, and the transfer size is the buffer size.</p>
@@ -114,7 +114,7 @@ NTSTATUS WdfIoTargetFormatRequestForInternalIoctl(
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl><p>The framework could not allocate system resources (typically memory).</p><dl>
 <dt><b>STATUS_REQUEST_NOT_ACCEPTED</b></dt>
-</dl><p>The I/O request packet (<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>) that the <i>Request</i> parameter represents does not provide enough <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> structures to allow the driver to forward the request.</p>
+</dl><p>The I/O request packet (<a href="..\wdm\ns-wdm--irp.md">IRP</a>) that the <i>Request</i> parameter represents does not provide enough <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> structures to allow the driver to forward the request.</p>
 
 <p> </p>
 
@@ -276,4 +276,4 @@ NTSTATUS WdfIoTargetFormatRequestForInternalIoctl(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoTargetFormatRequestForInternalIoctl method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoTargetFormatRequestForInternalIoctl method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

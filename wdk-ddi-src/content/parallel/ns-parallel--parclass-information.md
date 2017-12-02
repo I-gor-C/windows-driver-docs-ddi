@@ -7,7 +7,7 @@ old-location: parports\parclass_information.htm
 old-project: parports
 ms.assetid: abad8ebd-a9fc-4cfb-8495-aca4e38ee45a
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/30/2017
 ms.keywords: PARCLASS_INFORMATION, PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,112 +66,112 @@ typedef struct _PARCLASS_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Controller</b>
+### -field Controller
 
 <dd>
 <p>Specifies the base I/O address allocated to a parallel port.</p>
 </dd>
 
-### -field <b>SpanOfController</b>
+### -field SpanOfController
 
 <dd>
 <p>Specifies the range in bytes of I/O address space allocated to a parallel port.</p>
 </dd>
 
-### -field <b>DetermineIeeeModes</b>
+### -field DetermineIeeeModes
 
 <dd>
 <p>Pointer to the <a href="..\parallel\nc-parallel-pdetermine-ieee-modes.md">PDETERMINE_IEEE_MODES</a> callback routine that determines which IEEE protocols a parallel device supports.</p>
 </dd>
 
-### -field <b>NegotiateIeeeMode</b>
+### -field NegotiateIeeeMode
 
 <dd>
 <p>Pointer to the <a href="..\parallel\nc-parallel-pnegotiate-ieee-mode.md">PNEGOTIATE_IEEE_MODE</a> callback routine that negotiates the fastest protocol that the system-supplied bus driver for parallel ports supports from among those specified by the caller.</p>
 </dd>
 
-### -field <b>TerminateIeeeMode</b>
+### -field TerminateIeeeMode
 
 <dd>
 <p>Pointer to the <a href="..\parallel\nc-parallel-pterminate-ieee-mode.md">PTERMINATE_IEEE_MODE</a> callback routine that terminates the current IEEE mode and sets the mode to IEEE_COMPATIBILITY.</p>
 </dd>
 
-### -field <b>IeeeFwdToRevMode</b>
+### -field IeeeFwdToRevMode
 
 <dd>
 <p>Pointer to the <a href="..\parallel\nc-parallel-pparallel-ieee-fwd-to-rev.md">PPARALLEL_IEEE_FWD_TO_REV</a> callback routine that changes the transfer mode from forward to reverse.</p>
 </dd>
 
-### -field <b>IeeeRevToFwdMode</b>
+### -field IeeeRevToFwdMode
 
 <dd>
 <p>Pointer to the <a href="..\parallel\nc-parallel-pparallel-ieee-rev-to-fwd.md">PPARALLEL_IEEE_REV_TO_FWD</a> callback routine that changes the transfer mode from reverse to forward.</p>
 </dd>
 
-### -field <b>ParallelRead</b>
+### -field ParallelRead
 
 <dd>
 <p>Pointer to the <a href="..\parallel\nc-parallel-pparallel-read.md">PPARALLEL_READ</a> callback routine that a client can use to read from a parallel device.</p>
 </dd>
 
-### -field <b>ParallelWrite</b>
+### -field ParallelWrite
 
 <dd>
 <p>Pointer to the <a href="..\parallel\nc-parallel-pparallel-write.md">PPARALLEL_WRITE</a> callback routine that a client can use to write to a parallel device.</p>
 </dd>
 
-### -field <b>ParclassContext</b>
+### -field ParclassContext
 
 <dd>
 <p>Pointer to the device extension of a parallel device's physical device object (<a href="wdkgloss.p#wdkgloss.pdo#wdkgloss.pdo"><i>PDO</i></a>).</p>
 </dd>
 
-### -field <b>HardwareCapabilities</b>
+### -field HardwareCapabilities
 
 <dd>
 <p>Specifies which hardware capabilities are present. <b>HardwareCapabilities</b> is a bitwise OR of one or more of the following flags:</p>
 <p></p>
 <dl>
 
-### -field <a id="PPT_NO_HARDWARE_PRESENT"></a><a id="ppt_no_hardware_present"></a>PPT_NO_HARDWARE_PRESENT
+### -field PPT_NO_HARDWARE_PRESENT
 
 <dd></dd>
 
-### -field <a id="PPT_ECP_PRESENT"></a><a id="ppt_ecp_present"></a>PPT_ECP_PRESENT
+### -field PPT_ECP_PRESENT
 
 <dd></dd>
 
-### -field <a id="PPT_EPP_PRESENT_"></a><a id="ppt_epp_present_"></a>PPT_EPP_PRESENT 
+### -field PPT_EPP_PRESENT 
 
 <dd></dd>
 
-### -field <a id="PPT_EPP_32_PRESENT"></a><a id="ppt_epp_32_present"></a>PPT_EPP_32_PRESENT
+### -field PPT_EPP_32_PRESENT
 
 <dd>
 <p>32-bit reads and writes are supported.</p>
 </dd>
 
-### -field <a id="PPT_BYTE_PRESENT"></a><a id="ppt_byte_present"></a>PPT_BYTE_PRESENT
+### -field PPT_BYTE_PRESENT
 
 <dd></dd>
 
-### -field <a id="PPT_BIDI_PRESENT"></a><a id="ppt_bidi_present"></a>PPT_BIDI_PRESENT
+### -field PPT_BIDI_PRESENT
 
 <dd></dd>
 
-### -field <a id="PPT_1284_3_PRESENT"></a><a id="ppt_1284_3_present"></a>PPT_1284_3_PRESENT
+### -field PPT_1284_3_PRESENT
 
 <dd></dd>
 </dl>
 </dd>
 
-### -field <b>FifoDepth</b>
+### -field FifoDepth
 
 <dd>
 <p>Specifies the size, in words, of the ECP FIFO. The ECP FIFO word size, in bits, is the value of <b>FifoWidth</b>.</p>
 </dd>
 
-### -field <b>FifoWidth</b>
+### -field FifoWidth
 
 <dd>
 <p>Specifies the ECP FIFO word size, in bits, which is the number of bits handled in parallel.</p>
@@ -183,7 +183,7 @@ typedef struct _PARCLASS_INFORMATION {
 
 <p>A client uses this information to operate a parallel port and to read and write a parallel device. The callback routines can only be used by a driver that holds a lock on the parent parallel port. A driver obtains a lock by using an <a href="..\parallel\ni-parallel-ioctl-internal-lock-port.md">IOCTL_INTERNAL_LOCK_PORT</a> request.</p>
 
-<p>For more information, see <a href="NULL">Connecting to a Parallel Device</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/c05a1a1e-308a-4b9f-af43-761c4c14d6af">Connecting to a Parallel Device</a>.</p>
 
 ## -requirements
 <table>
@@ -231,4 +231,4 @@ typedef struct _PARCLASS_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PARCLASS_INFORMATION structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PARCLASS_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

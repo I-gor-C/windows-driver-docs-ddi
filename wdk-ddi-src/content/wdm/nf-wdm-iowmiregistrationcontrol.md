@@ -56,13 +56,13 @@ NTSTATUS IoWMIRegistrationControl(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to a device object. This object is a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> system structure.</p>
 </dd>
 
-### -param <i>Action</i> [in]
+### -param Action [in]
 
 <dd>
 <p>The action that WMI should take. The requested action is indicated by one of the following values.</p>

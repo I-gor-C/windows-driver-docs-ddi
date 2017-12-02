@@ -59,13 +59,13 @@ PSDP_NODE SdpCreateNodeUInt32(
 ## -parameters
 <dl>
 
-### -param <i>ulVal</i> [in]
+### -param ulVal [in]
 
 <dd>
 <p>The unsigned 32-bit integer value that is used to initialize the SDP_NODE structure.</p>
 </dd>
 
-### -param <i>tag</i> [in]
+### -param tag [in]
 
 <dd>
 <p>A profile driver defined tag to associate with the node.</p>

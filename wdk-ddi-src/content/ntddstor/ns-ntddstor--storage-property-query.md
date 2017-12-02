@@ -56,19 +56,19 @@ typedef struct _STORAGE_PROPERTY_QUERY {
 ## -struct-fields
 <dl>
 
-### -field <b>PropertyId</b>
+### -field PropertyId
 
 <dd>
 <p>Indicates whether the caller is requesting a device descriptor, an adapter descriptor, a write cache property, a device unique ID (DUID), or the device identifiers provided in the device's SCSI vital product data (VPD) page. For a list of the property IDs that can be assigned to this member, see <a href="storage.storage_property_id">STORAGE_PROPERTY_ID</a>. </p>
 </dd>
 
-### -field <b>QueryType</b>
+### -field QueryType
 
 <dd>
 <p>Contains flags indicating the type of query to be performed. For a list of the various query types that can be assigned to this member, see <a href="..\ntddstor\ne-ntddstor--storage-query-type.md">STORAGE_QUERY_TYPE</a>. </p>
 </dd>
 
-### -field <b>AdditionalParameters</b>
+### -field AdditionalParameters
 
 <dd>
 <p>Contains an array of bytes with additional input parameters that are needed for the <b>PropertyId</b> query. Not all <b>PropertyId</b> values require additional input parameters. </p>

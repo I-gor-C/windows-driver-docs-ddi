@@ -59,19 +59,19 @@ VOID APIENTRY CheckDeferredContextHandleSizes(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pHSizes</i> [in, out]
+### -param pHSizes [in, out]
 
 <dd>
 <p>The size, in bytes, of the array pointed to by <i>pHandleSize</i>.</p>
 </dd>
 
-### -param <i>pHandleSize</i> [out, optional]
+### -param pHandleSize [out, optional]
 
 <dd>
 <p> An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-handlesize.md">D3D11DDI_HANDLESIZE</a> structures that describe the handle data of deferred context handles.</p>

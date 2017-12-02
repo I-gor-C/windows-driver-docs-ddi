@@ -60,31 +60,31 @@ typedef union _PCI_EXPRESS_ROOT_STATUS_REGISTER {
 ## -struct-fields
 <dl>
 
-### -field <b>PMERequestorId</b>
+### -field PMERequestorId
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537471">PCI_EXPRESS_PME_REQUESTOR_ID</a> structure that describes the power management event (PME) requester identifier of the last PME requester.</p>
 </dd>
 
-### -field <b>PMEStatus</b>
+### -field PMEStatus
 
 <dd>
 <p>A single bit that indicates that a power management event (PME) was asserted by the requester identified by the <b>PMERequestorId</b> member.</p>
 </dd>
 
-### -field <b>PMEPending</b>
+### -field PMEPending
 
 <dd>
 <p>A single bit that indicates that another power management event (PME) is pending while the <b>PMEStatus</b> bit is set.</p>
 </dd>
 
-### -field <b>Rsvd</b>
+### -field Rsvd
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_ROOT_STATUS_REGISTER structure.</p>

@@ -58,7 +58,7 @@ _Check_return_ HRESULT APIENTRY* pfnCheckMultiPlaneOverlaySupport(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).
@@ -66,7 +66,7 @@ _Check_return_ HRESULT APIENTRY* pfnCheckMultiPlaneOverlaySupport(
 </p>
 </dd>
 
-### -param <i>pSupport</i> [in, out]
+### -param pSupport [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-checkmultiplaneoverlaysupport.md">D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT</a> structure that provides details on hardware support for multiplane overlays.</p>

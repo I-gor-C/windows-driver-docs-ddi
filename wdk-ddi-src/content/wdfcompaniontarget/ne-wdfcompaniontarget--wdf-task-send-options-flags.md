@@ -7,7 +7,7 @@ old-location: wdf\wdf_task_send_options_flags.htm
 old-project: wdf
 ms.assetid: 8ff13908-57f2-404f-a8ea-70c798ee3d7d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_TASK_QUEUE_CONFIG, WDF_TASK_QUEUE_CONFIG, *PWDF_TASK_QUEUE_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _WDF_TASK_SEND_OPTIONS_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDF_TASK_SEND_OPTION_TIMEOUT"></a><a id="wdf_task_send_option_timeout"></a><b>WDF_TASK_SEND_OPTION_TIMEOUT</b>
+### -field WDF_TASK_SEND_OPTION_TIMEOUT
 
 <dd></dd>
 
-### -field <a id="WDF_TASK_SEND_OPTION_SYNCHRONOUS"></a><a id="wdf_task_send_option_synchronous"></a><b>WDF_TASK_SEND_OPTION_SYNCHRONOUS</b>
+### -field WDF_TASK_SEND_OPTION_SYNCHRONOUS
 
 <dd></dd>
 </dl>

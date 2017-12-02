@@ -62,43 +62,43 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the inclusive size of the structure, including any event specific data appended to the <b>EventData</b> member.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies what type of object is specified in the <b>ObjectHandle</b> and <b>ObjectPointer</b> union.</p>
 </dd>
 
-### -field <b>ObjectHandle</b>
+### -field ObjectHandle
 
 <dd>
 <p>Specifies the handle of the object supporting the event to be used if the <b>Flags</b> member contains the KSRELATIVEEVENT_FLAG_HANDLE flag.</p>
 </dd>
 
-### -field <b>ObjectPointer</b>
+### -field ObjectPointer
 
 <dd>
 <p>Specifies a pointer to the object supporting the event to be used if the Flags member contains the KSRELATIVEEVENT_FLAG_POINTER flag. This is valid only for kernel-mode clients.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved and set to zero.</p>
 </dd>
 
-### -field <b>Event</b>
+### -field Event
 
 <dd>
 <p>A <a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a> structure that contains the event to be used.</p>
 </dd>
 
-### -field <b>EventData</b>
+### -field EventData
 
 <dd>
 <p>A <a href="stream.kseventdata">KSEVENTDATA</a> structure that specifies the header for the event-specific data. The header itself is not actually used except as a starting point to access the event-specific data, and must be initialized to zero.</p>

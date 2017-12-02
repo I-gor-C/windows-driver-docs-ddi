@@ -7,7 +7,7 @@ old-location: image\istiusd_getnotificationdata.htm
 old-project: image
 ms.assetid: c4293fa8-07c9-40b2-acc2-8a3128b6dad4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiUSD, GetNotificationData, IStiUSD::GetNotificationData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT GetNotificationData(
 ## -parameters
 <dl>
 
-### -param <i>pBuffer</i> 
+### -param pBuffer 
 
 <dd>
 <p>Caller-supplied pointer to an <a href="..\sti\ns-sti--stinotify.md">STINOTIFY</a> structure to receive event information.</p>

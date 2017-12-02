@@ -62,47 +62,47 @@ typedef struct _ENUM_PDO_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>type</b>
+### -field type
 
 <dd>
 <p>This member indicates the type of the PDO that is being identified, as defined by PDO_TYPE.</p>
 </dd>
 
-### -field <b>state</b>
+### -field state
 
 <dd>
 <p>This member contains information about the current PnP state of the PDO, as defined by PDO_STATE.</p>
 </dd>
 
-### -field <b>capabilities</b>
+### -field capabilities
 
 <dd>
 <p>This member contains a bitmask with bits indicating information about the silo represented by the PDO in question, as defined by PDO_CAPS.</p>
 </dd>
 
-### -field <b>ulSTID</b>
+### -field ulSTID
 
 <dd>
 <p>This member contains the silo type identifier, as defined and assigned by the IEEE 1667 working group.</p>
 </dd>
 
-### -field <b>bSpecificationMajor</b>
+### -field bSpecificationMajor
 
 <dd></dd>
 
-### -field <b>bSpecificationMinor</b>
+### -field bSpecificationMinor
 
 <dd></dd>
 
-### -field <b>bImplementationMajor</b>
+### -field bImplementationMajor
 
 <dd></dd>
 
-### -field <b>bImplementationMinor</b>
+### -field bImplementationMinor
 
 <dd></dd>
 
-### -field <b>wszDeviceInstancePath</b>
+### -field wszDeviceInstancePath
 
 <dd>
 <p>The string contained in this member is the device instance path in a form suitable for use with the Win32 API CreateFile routine.</p>

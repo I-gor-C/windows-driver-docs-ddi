@@ -57,19 +57,19 @@ STORPORT_API BOOLEAN StorPortSynchronizeAccess(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
-### -param <i>SynchronizedAccessRoutine</i> [in]
+### -param SynchronizedAccessRoutine [in]
 
 <dd>
 <p>Pointer to a caller-supplied routine whose execution is to be synchronized with the execution of the ISR associated with the interrupt objects. For a prototype of this routine, see the Remarks section later in this topic. </p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Pointer to a context area to be passed to the caller-supplied callback routine when it is called. </p>
@@ -86,7 +86,7 @@ STORPORT_API BOOLEAN StorPortSynchronizeAccess(
 
 <p>where <i>HwDeviceExtension</i> is a pointer to the hardware device extension, and <i>Context</i> is just a pointer to the same context information that the caller supplied when calling <b>StorPortSynchronizeAccess</b>. </p>
 
-<p>For more information, see <a href="NULL">Synchronized Access within Unsynchronized Miniport Driver Routines</a>.</p>
+<p>For more information, see <a href="storage.synchronized_access_within_unsynchronized_miniport_driver_routines">Synchronized Access within Unsynchronized Miniport Driver Routines</a>.</p>
 
 <p>For more information about synchronization routines, see <a href="..\wdm\nf-wdm-kesynchronizeexecution.md">KeSynchronizeExecution</a>.</p>
 

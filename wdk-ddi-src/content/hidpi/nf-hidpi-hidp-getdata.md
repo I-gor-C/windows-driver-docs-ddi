@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>HidP_GetData</b> routine returns, for a specified report, an array of <a href="..\hidpi\ns-hidpi--hidp-data.md">HIDP_DATA</a> structures that identify the <a href="NULL">data indices</a> of all HID control buttons that are currently set to ON (1), and the data indices and data associated with all HID control values.</p>
+<p>The <b>HidP_GetData</b> routine returns, for a specified report, an array of <a href="..\hidpi\ns-hidpi--hidp-data.md">HIDP_DATA</a> structures that identify the <a href="https://msdn.microsoft.com/84577544-515a-4fdc-86e5-518182c6c461">data indices</a> of all HID control buttons that are currently set to ON (1), and the data indices and data associated with all HID control values.</p>
 
 
 ## -syntax
@@ -59,37 +59,37 @@ NTSTATUS __stdcall HidP_GetData(
 ## -parameters
 <dl>
 
-### -param <i>ReportType</i> [in]
+### -param ReportType [in]
 
 <dd>
 <p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report located at <i>Report</i>.</p>
 </dd>
 
-### -param <i>DataList</i> [out]
+### -param DataList [out]
 
 <dd>
 <p>Specifies a caller-allocated array of HIDP_DATA structures that the routine uses to return information about all the buttons that are currently set to ON and the data associated with values.</p>
 </dd>
 
-### -param <i>DataLength</i> [in, out]
+### -param DataLength [in, out]
 
 <dd>
 <p>Specifies, on input, the number of structures that the caller-allocated <i>DataList</i> array holds. Specifies, on output, the number of controls for which the routine can return data, which includes all buttons that are currently set to ON and all control values.</p>
 </dd>
 
-### -param <i>PreparsedData</i> [in]
+### -param PreparsedData [in]
 
 <dd>
-<p>Pointer to the <a href="NULL">preparsed data</a> of the top-level collection associated with the HID report located at <i>Report</i>.</p>
+<p>Pointer to the <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a> of the top-level collection associated with the HID report located at <i>Report</i>.</p>
 </dd>
 
-### -param <i>Report</i> [in]
+### -param Report [in]
 
 <dd>
 <p>Pointer to a HID report.</p>
 </dd>
 
-### -param <i>ReportLength</i> [in]
+### -param ReportLength [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the HID report located at <i>Report</i>, which must be equal to the report length for the specified report type returned by <a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a> in the collection's <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure.</p>
@@ -118,7 +118,7 @@ NTSTATUS __stdcall HidP_GetData(
 
 <p><b>HidP_GetData</b> does not return data for <a href="hid.value_capability_arrays#usage_value_array#usage_value_array">usage value arrays</a>.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

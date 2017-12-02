@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this header and the item payload that follows.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The <a href="..\ksmedia\ne-ksmedia-kscamera-perframesetting-item-type.md">KSCAMERA_PERFRAMESETTING_ITEM_TYPE</a>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>This contains the supported capability flags.</p>

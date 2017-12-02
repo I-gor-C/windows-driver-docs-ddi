@@ -57,25 +57,25 @@ typedef struct _BAND_TABLE {
 ## -struct-fields
 <dl>
 
-### -field <b>StructSize</b>
+### -field StructSize
 
 <dd>
 <p>The size of this structure in bytes. Set to <b>sizeof</b>(BAND_TABLE).</p>
 </dd>
 
-### -field <b>BandTableOffset</b>
+### -field BandTableOffset
 
 <dd>
 <p>The offset, in bytes, to the start of an array of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-table-entry.md">BAND_TABLE_ENTRY</a> structures.</p>
 </dd>
 
-### -field <b>BandTableEntryCount</b>
+### -field BandTableEntryCount
 
 <dd>
 <p>The number of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-table-entry.md">BAND_TABLE_ENTRY</a> returned in the array at <b>BandTableOffset</b>.</p>
 </dd>
 
-### -field <b>BandTableEntrySize</b>
+### -field BandTableEntrySize
 
 <dd>
 <p>The size of each entry, in bytes, in the array at <b>BandTableOffset</b>. Instead of using the value of <b>sizeof</b>(BAND_TABLE_ENTRY), callers must use <b>BandTableEntrySize</b> when advancing to the next element in the band table array.</p>

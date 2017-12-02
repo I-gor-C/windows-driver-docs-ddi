@@ -77,68 +77,68 @@ typedef struct _DXGK_ALLOCATIONUSAGEINFO1 {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[out] A union that contains either a structure (with the first eight members that are described below) or a 32-bit value (in the <b>Value</b> member) that identifies how the allocation is used:</p>
 <dl>
 
-### -field <b>PrivateFormat</b>
+### -field PrivateFormat
 
 <dd>
 <p>A UINT value that specifies whether the allocation is a private vendor format.  </p>
 <p>Setting this is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Swizzled</b>
+### -field Swizzled
 
 <dd>
 <p>A UINT value that specifies whether the allocation is swizzled or tiled. </p>
 <p>Setting this is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>MipMap</b>
+### -field MipMap
 
 <dd>
 <p>A UINT value that specifies whether the allocation is a MIP-mapped texture.</p>
 <p>Setting this is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>Cube</b>
+### -field Cube
 
 <dd>
 <p>A UINT value that specifies whether the allocation is a cube texture. </p>
 <p>Setting this is equivalent to setting the fourth bit of the 32-bit <b>Value</b> member (0x00000008).</p>
 </dd>
 
-### -field <b>Volume</b>
+### -field Volume
 
 <dd>
 <p>A UINT value that specifies whether the allocation is a volume texture.</p>
 <p>Setting this is equivalent to setting the fifth bit of the 32-bit <b>Value</b> member (0x00000010).</p>
 </dd>
 
-### -field <b>Vertex</b>
+### -field Vertex
 
 <dd>
 <p>A UINT value that specifies whether the allocation is a vertex buffer.</p>
 <p>Setting this is equivalent to setting the sixth bit of the 32-bit <b>Value</b> member (0x00000020).</p>
 </dd>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>A UINT value that specifies whether the allocation is an index buffer.</p>
 <p>Setting this is equivalent to setting the seventh bit of the 32-bit <b>Value</b> member (0x00000040).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this to zero is equivalent to setting the remaining 25 bits (0xFFFFFF80) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>Specifies a member in the union contained in the <b>Flags</b> member that can hold one 32-bit value that identifies how the allocation is used.</p>
@@ -146,55 +146,55 @@ typedef struct _DXGK_ALLOCATIONUSAGEINFO1 {
 </dl>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>[out] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation. The <b>PrivateFormat</b> bit-field flag in the <b>Flags</b> member must be set to 0 (FALSE).</p>
 </dd>
 
-### -field <b>PrivateFormat</b>
+### -field PrivateFormat
 
 <dd>
 <p>[out] A private format value for the allocation. The <b>PrivateFormat</b> bit-field flag in the <b>Flags</b> member must be set to 1 (TRUE).</p>
 </dd>
 
-### -field <b>SwizzledFormat</b>
+### -field SwizzledFormat
 
 <dd>
 <p>[out] A swizzled format value for the allocation that is private to a specific vendor.</p>
 </dd>
 
-### -field <b>ByteOffset</b>
+### -field ByteOffset
 
 <dd>
 <p>[out] The offset, in bytes, into the video memory manager's allocation that marks the start of the driver's version of the allocation.</p>
 </dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>[out] The width, in pixels, of the allocation.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[out] The height, in number of lines, of the allocation.</p>
 </dd>
 
-### -field <b>Pitch</b>
+### -field Pitch
 
 <dd>
 <p>[out] The pitch, in bytes, of the allocation--that is, the distance, in bytes, to the start of the next line.</p>
 </dd>
 
-### -field <b>Depth</b>
+### -field Depth
 
 <dd>
 <p>[out] The depth, in levels, of the allocation (for MIP-mapped and volume textures only).</p>
 </dd>
 
-### -field <b>SlicePitch</b>
+### -field SlicePitch
 
 <dd>
 <p>[out] The slice pitch, in bytes, from level to level (for cube and volume textures only).</p>

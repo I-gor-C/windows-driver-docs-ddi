@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-                        Initializes the <a href="buses.ucmtcpci_port_controller_config">UCMTCPCI_PORT_CONTROLLER_CONFIG</a> structure.
+                        Initializes the <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller--ucmtcpci-port-controller-config.md">UCMTCPCI_PORT_CONTROLLER_CONFIG</a> structure.
                 </p>
 
 
@@ -59,23 +59,23 @@ VOID UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
-<p>A pointer to the driver-allocated <a href="buses.ucmtcpci_port_controller_config">UCMTCPCI_PORT_CONTROLLER_CONFIG</a> structure.</p>
+<p>A pointer to the driver-allocated <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller--ucmtcpci-port-controller-config.md">UCMTCPCI_PORT_CONTROLLER_CONFIG</a> structure.</p>
 </dd>
 
-### -param <i>Identification</i> [in]
+### -param Identification [in]
 
 <dd>
-<p>A pointer to the <a href="buses.ucmtcpci_port_controller_identification">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION</a> structure.</p>
+<p>A pointer to the <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller--ucmtcpci-port-controller-identification.md">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION</a> structure.</p>
 </dd>
 
-### -param <i>Capabilities</i> [in]
+### -param Capabilities [in]
 
 <dd>
 <p> A pointer to the 
-                 <a href="buses.ucmtcpci_port_controller_capabilities">UCMTCPCI_PORT_CONTROLLER_CAPABILITIES</a> structure.</p>
+                 <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller--ucmtcpci-port-controller-capabilities.md">UCMTCPCI_PORT_CONTROLLER_CAPABILITIES</a> structure.</p>
 </dd>
 </dl>
 
@@ -126,7 +126,7 @@ VOID UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>
+<a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>
 </dt>
 </dl>
 <p> </p>

@@ -61,49 +61,49 @@ typedef struct _FEATURE_DATA_FIRMWARE_DATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>Year</b>
+### -field Year
 
 <dd>
 <p>Contains the two low order decimal digits represented as ASCII characters that indicate the year. For example, if the year is 2013, the <b>Year</b> member will contain characters "33" (a hexadecimal value of 0x3133). </p>
 </dd>
 
-### -field <b>Month</b>
+### -field Month
 
 <dd>
 <p>Contains two decimal digits represented as ASCII characters that indicate the month. For example, if the month is August, the <b>Month</b> member will contain characters "08" (a hexadecimal value of 0x3038). </p>
 </dd>
 
-### -field <b>Day</b>
+### -field Day
 
 <dd>
 <p>Contains two decimal digits represented as ASCII characters that indicate the day. For example, if the day is August 12, the <b>Day</b> member will contain characters "12" (a hexadecimal value of 0x3132). </p>
 </dd>
 
-### -field <b>Hour</b>
+### -field Hour
 
 <dd>
 <p>Contains two decimal digits represented as ASCII characters that indicate the hour. For example, if the time 1:20:43 PM, the <b>Hour</b> member will contain the characters "13" (hexadecimal value of 0x3133). </p>
 </dd>
 
-### -field <b>Minute</b>
+### -field Minute
 
 <dd>
 <p>Contains two decimal digits represented as ASCII characters that indicates the minute of the hour. For example, if the time 1:20:43 PM, the <b>Minute</b> member will contain the characters "20" (hexadecimal value of 0x3230). </p>
 </dd>
 
-### -field <b>Seconds</b>
+### -field Seconds
 
 <dd>
 <p>Contains two decimal digits represented as ASCII characters that indicates the minute of the hour. For example, if the time 1:20:43 PM, the <b>Seconds</b> member will contain the characters "43" (hexadecimal value of 0x3433). </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>

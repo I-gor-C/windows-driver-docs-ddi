@@ -55,7 +55,7 @@ ULONG RtlNumberOfSetBitsUlongPtr(
 ## -parameters
 <dl>
 
-### -param <i>Target</i> [in]
+### -param Target [in]
 
 <dd>
 <p>A ULONG_PTR integer value.</p>

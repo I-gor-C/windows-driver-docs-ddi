@@ -57,7 +57,7 @@ DWORD APIENTRY D3dContextCreate(
 ## -parameters
 <dl>
 
-### -param <i>pccd</i> [in]
+### -param pccd [in]
 
 <dd>
 <p>Points to a <a href="..\d3dhal\ns-d3dhal--d3dhal-contextcreatedata.md">D3DHAL_CONTEXTCREATEDATA</a> structure that contains the information required to create a context and the data that the driver should store in the new context.</p>

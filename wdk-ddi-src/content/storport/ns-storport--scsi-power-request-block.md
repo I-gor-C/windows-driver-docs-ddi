@@ -75,116 +75,116 @@ typedef struct _SCSI_POWER_REQUEST_BLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The size, in bytes, of the <b>SCSI_POWER_REQUEST_BLOCK</b> structure.</p>
 </dd>
 
-### -field <b>Function</b>
+### -field Function
 
 <dd>
 <p>The operation to perform. For the <b>SCSI_POWER_REQUEST_BLOCK</b> structure, this member is always set to SRB_FUNCTION_POWER.</p>
 </dd>
 
-### -field <b>SrbStatus</b>
+### -field SrbStatus
 
 <dd>
 <p>The status of the completed request. This member should be set by the miniport driver before it notifies the Storport driver that the request has completed. A miniport driver notifies the Storport driver that the request has completed by calling the <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a> function with the <a href="storage.storportnotification__notificationtype___requestcomplete_">RequestComplete</a> notification type.</p>
 <p>See <a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a> in the WDK documentation for a list of possible values for this member.</p>
 </dd>
 
-### -field <b>SrbPowerFlags</b>
+### -field SrbPowerFlags
 
 <dd>
 <p>The power management flags. Currently, the only flag allowed is SRB_POWER_FLAGS_ADAPTER_REQUEST, which indicates that the power management request is for the adapter. If this flag is set, the miniport driver should ignore the values in the <b>PathId</b>, <b>TargetId</b>, and <b>Lun</b>.  </p>
 </dd>
 
-### -field <b>PathId</b>
+### -field PathId
 
 <dd>
 <p>The SCSI port or bus identifier for the request. This value is zero based.</p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>The target controller or device identifier on the bus.</p>
 </dd>
 
-### -field <b>Lun</b>
+### -field Lun
 
 <dd>
 <p>The logical unit number (LUN) of the device.</p>
 </dd>
 
-### -field <b>DevicePowerState</b>
+### -field DevicePowerState
 
 <dd>
 <p>An enumerator value of type <a href="..\storport\ne-storport--stor-device-power-state.md">STOR_DEVICE_POWER_STATE</a> that specifies the requested power state of the device.</p>
 </dd>
 
-### -field <b>SrbFlags</b>
+### -field SrbFlags
 
 <dd>
 <p>Miniport driver should ignore this member.</p>
 </dd>
 
-### -field <b>DataTransferLength</b>
+### -field DataTransferLength
 
 <dd>
 <p>Miniport driver should ignore this member.</p>
 </dd>
 
-### -field <b>TimeOutValue</b>
+### -field TimeOutValue
 
 <dd>
 <p>The interval, in seconds, that the request can execute before the Storport driver determines that the request has timed out.</p>
 </dd>
 
-### -field <b>DataBuffer</b>
+### -field DataBuffer
 
 <dd>
 <p>Miniport driver should ignore this member.</p>
 </dd>
 
-### -field <b>SenseInfoBuffer</b>
+### -field SenseInfoBuffer
 
 <dd>
 <p>Miniport driver should ignore this member.</p>
 </dd>
 
-### -field <b>NextSrb</b>
+### -field NextSrb
 
 <dd>
 <p>Miniport driver should ignore this member.</p>
 </dd>
 
-### -field <b>OriginalRequest</b>
+### -field OriginalRequest
 
 <dd>
 <p>Miniport driver should ignore this member.</p>
 </dd>
 
-### -field <b>SrbExtension</b>
+### -field SrbExtension
 
 <dd>
 <p>A pointer to the SRB extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the <a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a> structure. The Storport driver does not initialize the memory that this member points to. The HBA can directly access the data that the miniport driver writes into the SRB extension. A miniport driver can obtain the physical address of the SRB extension by calling the <a href="..\storport\nf-storport-storportgetphysicaladdress.md">StorPortGetPhysicalAddress</a> routine. </p>
 </dd>
 
-### -field <b>PowerAction</b>
+### -field PowerAction
 
 <dd>
 <p>An enumerator value of type <a href="storage.stor_power_action">STOR_POWER_ACTION</a> that specifies the type of system shutdown that is about to occur. This value is meaningful only if the device is moving into the D1, D2, or D3 power state as indicated by the <b>DevicePowerState</b> member. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Reserved5</b>
+### -field Reserved5
 
 <dd>
 <p>Reserved for system use.</p>

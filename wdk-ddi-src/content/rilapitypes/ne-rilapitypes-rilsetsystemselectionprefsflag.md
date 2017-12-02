@@ -7,7 +7,7 @@ old-location: netvista\rilsetsystemselectionprefsflag_2.htm
 old-project: netvista
 ms.assetid: d932f5c8-d6a6-4611-b6f2-12c501df1117
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILSETSYSTEMSELECTIONPREFSFLAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SSSPFLAG_APPLYIMMEDIATELY"></a><a id="ril_ssspflag_applyimmediately"></a><b>RIL_SSSPFLAG_APPLYIMMEDIATELY</b>
+### -field RIL_SSSPFLAG_APPLYIMMEDIATELY
 
 <dd></dd>
 
-### -field <a id="RIL_SSSPFLAG_ENFORCESCAN"></a><a id="ril_ssspflag_enforcescan"></a><b>RIL_SSSPFLAG_ENFORCESCAN</b>
+### -field RIL_SSSPFLAG_ENFORCESCAN
 
 <dd></dd>
 
-### -field <a id="RIL_SSSPFLAG_ALL"></a><a id="ril_ssspflag_all"></a><b>RIL_SSSPFLAG_ALL</b>
+### -field RIL_SSSPFLAG_ALL
 
 <dd></dd>
 </dl>

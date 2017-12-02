@@ -57,19 +57,19 @@ VOID ScsiPortWmiPostProcess(
 ## -parameters
 <dl>
 
-### -param <i>RequestContext</i> [in]
+### -param RequestContext [in]
 
 <dd>
 <p>A pointer to the request context for this SRB.</p>
 </dd>
 
-### -param <i>SrbStatus</i> [in]
+### -param SrbStatus [in]
 
 <dd>
 <p>Specifies any valid SRB status. If the output buffer passed to the miniport driver was too small to contain all of the data from a request, the miniport driver sets <i>SrbStatus</i> to SRB_STATUS_DATA_OVERRUN.</p>
 </dd>
 
-### -param <i>BufferUsed</i> [in]
+### -param BufferUsed [in]
 
 <dd>
 <p>If <i>SrbStatus</i> indicates success, the miniport driver sets <i>BufferUsed</i> to the number of bytes of data written to the buffer. If <i>SrbStatus</i> is SRB_STATUS_DATA_OVERRUN, the miniport driver sets <i>BufferUsed</i> to the number of bytes required to complete the SRB successfully.</p>

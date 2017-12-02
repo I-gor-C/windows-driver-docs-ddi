@@ -56,13 +56,13 @@ typedef struct D3D10_DDI_QUERY_DATA_SO_STATISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>NumPrimitivesWritten</b>
+### -field NumPrimitivesWritten
 
 <dd>
 <p>The number of primitives that is written to the stream output resource. </p>
 </dd>
 
-### -field <b>PrimitivesStorageNeeded</b>
+### -field PrimitivesStorageNeeded
 
 <dd>
 <p>The number of primitives that would have been written to the stream output resource if the resource was big enough. </p>

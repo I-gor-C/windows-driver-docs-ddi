@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="buses.udecx_usb_device_plug_in_options">UDECX_USB_DEVICE_PLUG_IN_OPTIONS</a> structure.</p>
+<p>Initializes a <a href="..\udecxusbdevice\ns-udecxusbdevice--udecx-usb-device-plug-in-options.md">UDECX_USB_DEVICE_PLUG_IN_OPTIONS</a> structure.</p>
 
 
 ## -syntax
@@ -55,10 +55,10 @@ FORCEINLINE void UDECX_USB_DEVICE_PLUG_IN_OPTIONS_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Options</i> [out]
+### -param Options [out]
 
 <dd>
-<p>A pointer to a <a href="buses.udecx_usb_device_plug_in_options">UDECX_USB_DEVICE_PLUG_IN_OPTIONS</a> structure to initialize.</p>
+<p>A pointer to a <a href="..\udecxusbdevice\ns-udecxusbdevice--udecx-usb-device-plug-in-options.md">UDECX_USB_DEVICE_PLUG_IN_OPTIONS</a> structure to initialize.</p>
 </dd>
 </dl>
 
@@ -127,7 +127,7 @@ FORCEINLINE void UDECX_USB_DEVICE_PLUG_IN_OPTIONS_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbdeviceplugin">UdecxUsbDevicePlugIn</a>
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceplugin.md">UdecxUsbDevicePlugIn</a>
 </dt>
 </dl>
 <p> </p>

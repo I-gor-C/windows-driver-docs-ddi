@@ -57,19 +57,19 @@ ULONG StorPortGetMSIInfo(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>MessageId</i> [in]
+### -param MessageId [in]
 
 <dd>
 <p>The identifier of the message for which the information is retrieved.</p>
 </dd>
 
-### -param <i>InterruptInfo</i> [out]
+### -param InterruptInfo [out]
 
 <dd>
 <p>A pointer to a miniport driver-provided <a href="..\storport\ns-storport--message-interrupt-information.md">MESSAGE_INTERRUPT_INFORMATION</a> structure that receives the information for the message specified by the <i>MessageId</i> parameter.</p>

@@ -57,7 +57,7 @@ void AVStrMiniPinDisconnect(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>Pointer to the relevant <a href="..\ks\ns-ks--kspin.md">KSPIN</a>, serving as a sink pin.</p>
@@ -72,7 +72,7 @@ void AVStrMiniPinDisconnect(
 
 <p>This routine is optional.</p>
 
-<p>Also see <a href="NULL">KS Pins</a>.</p>
+<p>Also see <a href="https://msdn.microsoft.com/04d0d17b-c326-417d-b2e8-58b33420455a">KS Pins</a>.</p>
 
 ## -requirements
 <table>

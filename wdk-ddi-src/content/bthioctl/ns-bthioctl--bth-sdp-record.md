@@ -59,7 +59,7 @@ typedef struct _BTH_SDP_RECORD {
 ## -struct-fields
 <dl>
 
-### -field <b>fSecurity</b>
+### -field fSecurity
 
 <dd>
 <p>A combination of flags that specifies the security attributes of the SDP record. Valid flag values
@@ -114,7 +114,7 @@ typedef struct _BTH_SDP_RECORD {
 <p> </p>
 </dd>
 
-### -field <b>fOptions</b>
+### -field fOptions
 
 <dd>
 <p>A combination of flags that specifies the publication options for the SDP record. Valid flag
@@ -147,7 +147,7 @@ typedef struct _BTH_SDP_RECORD {
 <p> </p>
 </dd>
 
-### -field <b>fCodService</b>
+### -field fCodService
 
 <dd>
 <dl>
@@ -194,13 +194,13 @@ typedef struct _BTH_SDP_RECORD {
 </dl>
 </dd>
 
-### -field <b>recordLength</b>
+### -field recordLength
 
 <dd>
 <p>The size, in bytes, of the record.</p>
 </dd>
 
-### -field <b>record</b>
+### -field record
 
 <dd>
 <p>

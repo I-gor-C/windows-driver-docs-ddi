@@ -7,7 +7,7 @@ old-location: netvista\wdi_wnm_action.htm
 old-project: netvista
 ms.assetid: 350D3182-3BEE-4AB7-A9F0-5C5D7D60A617
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _WDI_WNM_ACTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_QUERY"></a><a id="wdi_wnm_action_bss_transition_management_query"></a><b>WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_QUERY</b>
+### -field WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_QUERY
 
 <dd>
 <p>The message is a BSS Transition Management query frame.</p>
 </dd>
 
-### -field <a id="WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_REQUEST"></a><a id="wdi_wnm_action_bss_transition_management_request"></a><b>WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_REQUEST</b>
+### -field WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_REQUEST
 
 <dd>
 <p>The message is a BSS Transition Management request frame. This is sent by the AP to the client.</p>
 </dd>
 
-### -field <a id="WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_RESPONSE"></a><a id="wdi_wnm_action_bss_transition_management_response"></a><b>WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_RESPONSE</b>
+### -field WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_RESPONSE
 
 <dd>
 <p>The message is a BSS Transition Management response frame. This is a response to the above request frame from the AP.</p>

@@ -60,25 +60,25 @@ req.product: Windows 10 or later.
 ## -parameters
 <dl>
 
-### -param <i>MemoryDescriptorList</i> [in]
+### -param MemoryDescriptorList [in]
 
 <dd>
 <p>A pointer to a valid MDL.</p>
 </dd>
 
-### -param <i>Protection</i> [in]
+### -param Protection [in]
 
 <dd>
 <p>A bitwise of flags that indicates the protection to set for the pages. Possible values are PAGE_Xxx constants defined in Wdm.h.</p>
 </dd>
 
-### -param <i>DriverRoutine</i> [in]
+### -param DriverRoutine [in]
 
 <dd>
 <p> A pointer to a driver-supplied callback routine (<a href="..\wdm\nc-wdm-mm-mdl-routine.md">MM_MDL_ROUTINE</a>) that is invoked after the MDL is mapped.</p>
 </dd>
 
-### -param <i>DriverContext</i> [in]
+### -param DriverContext [in]
 
 <dd>
 <p>A pointer to a driver-defined context. The driver's callback function can store any status information  in the driver context and then examine the value, when the callback is invoked. </p>

@@ -58,31 +58,31 @@ NTSTATUS ZwQueryVolumeInformationFile(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [in]
+### -param FileHandle [in]
 
 <dd>
 <p>A handle to a file object returned by <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> or <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a> for an open file, directory, storage device, or volume for which volume information is being requested.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the query operation. For successful calls that return data, the number of bytes written to the <i>FsInformation</i> buffer is returned in the structure's <b>Information</b> member.</p>
 </dd>
 
-### -param <i>FsInformation</i> [out]
+### -param FsInformation [out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives the desired information about the volume. The structure of the information returned in the buffer is defined by the <i>FsInformationClass</i> parameter.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Size in bytes of the buffer pointed to by <i>FsInformation</i>. The caller should set this parameter according to the given <i>FsInformationClass</i>.</p>
 </dd>
 
-### -param <i>FsInformationClass</i> [in]
+### -param FsInformationClass [in]
 
 <dd>
 <p>Type of information to be returned about the volume. Set this member to one of the following <a href="ifsk.fs_information_class">FS_INFORMATION_CLASS</a> enumeration values.</p>

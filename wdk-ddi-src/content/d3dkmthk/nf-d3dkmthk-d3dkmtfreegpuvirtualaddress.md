@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTFreeGpuVirtualAddress(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-freegpuvirtualaddress.md">D3DKMT_FREEGPUVIRTUALADDRESS</a> structure that describes the operation.</p>

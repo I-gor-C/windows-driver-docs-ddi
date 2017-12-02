@@ -7,7 +7,7 @@ old-location: netvista\rilcalldisconnectdetailsascode.htm
 old-project: netvista
 ms.assetid: 01b311e9-252e-49eb-bf63-d16e4fa92231
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILCALLDISCONNECTDETAILSASCODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CD_L2"></a><a id="ril_cd_l2"></a><b>RIL_CD_L2</b>
+### -field RIL_CD_L2
 
 <dd></dd>
 
-### -field <a id="RIL_CD_L3"></a><a id="ril_cd_l3"></a><b>RIL_CD_L3</b>
+### -field RIL_CD_L3
 
 <dd></dd>
 
-### -field <a id="RIL_CD_LAYER_MAX"></a><a id="ril_cd_layer_max"></a><b>RIL_CD_LAYER_MAX</b>
+### -field RIL_CD_LAYER_MAX
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: wdf\iqueuecallbackwrite_onwrite.htm
 old-project: wdf
 ms.assetid: a87a9976-f844-4e69-82d3-2d426e359763
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IQueueCallbackWrite, OnWrite, IQueueCallbackWrite::OnWrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ void  OnWrite(
 ## -parameters
 <dl>
 
-### -param <i>pWdfQueue</i> [in]
+### -param pWdfQueue [in]
 
 <dd>
 <p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a> interface for the I/O queue object that the request arrives from. </p>
 </dd>
 
-### -param <i>pWdfRequest</i> [in]
+### -param pWdfRequest [in]
 
 <dd>
 <p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a> interface that represents the framework request object. </p>
 </dd>
 
-### -param <i>NumOfBytesToWrite</i> [in]
+### -param NumOfBytesToWrite [in]
 
 <dd>
 <p>The size, in bytes, of the write buffer for the request.</p>
@@ -123,4 +123,4 @@ void  OnWrite(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IQueueCallbackWrite::OnWrite method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IQueueCallbackWrite::OnWrite method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

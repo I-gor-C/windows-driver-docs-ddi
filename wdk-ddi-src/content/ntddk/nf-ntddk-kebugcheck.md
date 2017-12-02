@@ -54,7 +54,7 @@ VOID KeBugCheck(
 ## -parameters
 <dl>
 
-### -param <i>BugCheckCode</i> [in]
+### -param BugCheckCode [in]
 
 <dd>
 <p>Specifies a value that indicates the reason for the bug check. </p>
@@ -73,7 +73,7 @@ VOID KeBugCheck(
 
 <p><b>KeBugCheck</b> can be useful in the early stages of developing a driver, or while it is undergoing testing. In these circumstances, the <i>BugCheckCode</i> passed to this routine should be distinct from those codes already in use by Windows or its drivers. For a list of these codes, see <a href="https://msdn.microsoft.com/DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB">Bug Check Codes</a>.</p>
 
-<p>However, even during driver development, this routine is of only limited utility, since it results in a complete system shutdown. A more effective debugging method is to attach a kernel debugger to the system and then use routines that send messages to the debugger or break into the debugger. For further information, see <a href="NULL">Using Debugging Code in a Driver</a>.</p>
+<p>However, even during driver development, this routine is of only limited utility, since it results in a complete system shutdown. A more effective debugging method is to attach a kernel debugger to the system and then use routines that send messages to the debugger or break into the debugger. For further information, see <a href="https://msdn.microsoft.com/6ed74bcc-290c-44e3-943e-4169527dfa18">Using Debugging Code in a Driver</a>.</p>
 
 <p>When a bug check is unavoidable, most system components call <a href="..\wdm\nf-wdm-kebugcheckex.md">KeBugCheckEx</a>, which provides more information about the cause of such an inconsistency than <b>KeBugCheck</b>. </p>
 
@@ -143,7 +143,7 @@ VOID KeBugCheck(
 <a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
+<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-kebugcheckex.md">KeBugCheckEx</a>

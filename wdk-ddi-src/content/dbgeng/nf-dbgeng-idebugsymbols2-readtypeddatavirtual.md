@@ -7,7 +7,7 @@ old-location: debugger\readtypeddatavirtual.htm
 old-project: debugger
 ms.assetid: 526bebd8-95af-4f6f-a381-eb60273d1af5
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSymbols2, ReadTypedDataVirtual, IDebugSymbols2::ReadTypedDataVirtual
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ HRESULT ReadTypedDataVirtual(
 ## -parameters
 <dl>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the location in the target's virtual address space of the variable to read.</p>
 </dd>
 
-### -param <i>Module</i> [in]
+### -param Module [in]
 
 <dd>
 <p>Specifies the base address of the module containing the type of the variable.</p>
 </dd>
 
-### -param <i>TypeId</i> [in]
+### -param TypeId [in]
 
 <dd>
 <p>Specifies the type ID of the type.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Receives the data that is read.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size in bytes of the buffer <i>Buffer</i>.  This is the maximum number of bytes to be read.</p>
 </dd>
 
-### -param <i>BytesRead</i> [out, optional]
+### -param BytesRead [out, optional]
 
 <dd>
 <p>Receives the number of bytes that were read.  If <i>BytesRead</i> is <b>NULL</b>, this information is not returned.</p>
@@ -105,7 +105,7 @@ HRESULT ReadTypedDataVirtual(
 
 <p> </p>
 
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p>
 
 ## -remarks
 <p>The number of bytes this method attempts to read is the smaller of the size of the buffer and the size of the variable.</p>

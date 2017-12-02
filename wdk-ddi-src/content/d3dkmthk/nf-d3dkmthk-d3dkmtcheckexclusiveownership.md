@@ -54,7 +54,7 @@ BOOLEAN APIENTRY D3DKMTCheckExclusiveOwnership(
 ## -parameters
 <dl>
 
-### -param <i></i> 
+### -param  
 
 <dd>
 <p>None.</p>

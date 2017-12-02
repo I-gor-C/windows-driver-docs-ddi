@@ -55,7 +55,7 @@ VOID PoSetSystemWake(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>A pointer to the wait/wake IRP.</p>

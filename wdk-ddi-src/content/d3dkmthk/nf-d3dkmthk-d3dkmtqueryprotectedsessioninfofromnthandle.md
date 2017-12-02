@@ -56,7 +56,7 @@ NTSTATUS  D3DKMTQueryProtectedSessionInfoFromNtHandle(
 ## -parameters
 <dl>
 
-### -param <i>D3dkmt_queryprotectedsessioninfofromnthandle</i> 
+### -param D3dkmt_queryprotectedsessioninfofromnthandle 
 
 <dd>
 <p>Holds session information from the NT handle.</p>

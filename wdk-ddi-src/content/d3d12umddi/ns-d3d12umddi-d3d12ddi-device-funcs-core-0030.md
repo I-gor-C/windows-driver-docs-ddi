@@ -145,549 +145,549 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_CORE_0030 {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnCheckFormatSupport</b>
+### -field pfnCheckFormatSupport
 
 <dd>
 <p>Check format support.</p>
 </dd>
 
-### -field <b>pfnCheckMultisampleQualityLevels</b>
+### -field pfnCheckMultisampleQualityLevels
 
 <dd>
 <p>Check multi-sample quality levels.</p>
 </dd>
 
-### -field <b>pfnGetMipPacking</b>
+### -field pfnGetMipPacking
 
 <dd>
 <p>Get MIP packing.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateElementLayoutSize</b>
+### -field pfnCalcPrivateElementLayoutSize
 
 <dd>
 <p>Calculate private element layout size.</p>
 </dd>
 
-### -field <b>pfnCreateElementLayout</b>
+### -field pfnCreateElementLayout
 
 <dd></dd>
 
-### -field <b>pfnDestroyElementLayout</b>
+### -field pfnDestroyElementLayout
 
 <dd>
 <p>Destroy element layout.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateBlendStateSize</b>
+### -field pfnCalcPrivateBlendStateSize
 
 <dd>
 <p>Calculate private blend state size.</p>
 </dd>
 
-### -field <b>pfnCreateBlendState</b>
+### -field pfnCreateBlendState
 
 <dd>
 <p>Create blend state.</p>
 </dd>
 
-### -field <b>pfnDestroyBlendState</b>
+### -field pfnDestroyBlendState
 
 <dd>
 <p>Destroy blend state.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateDepthStencilStateSize</b>
+### -field pfnCalcPrivateDepthStencilStateSize
 
 <dd>
 <p>Calculate private depth stencil state size.</p>
 </dd>
 
-### -field <b>pfnCreateDepthStencilState</b>
+### -field pfnCreateDepthStencilState
 
 <dd>
 <p>Create depth stencil state.</p>
 </dd>
 
-### -field <b>pfnDestroyDepthStencilState</b>
+### -field pfnDestroyDepthStencilState
 
 <dd>
 <p>Destroy depth stencil state.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateRasterizerStateSize</b>
+### -field pfnCalcPrivateRasterizerStateSize
 
 <dd>
 <p>Calculate private rasterizer state size.</p>
 </dd>
 
-### -field <b>pfnCreateRasterizerState</b>
+### -field pfnCreateRasterizerState
 
 <dd>
 <p>Create rasterizer state.</p>
 </dd>
 
-### -field <b>pfnDestroyRasterizerState</b>
+### -field pfnDestroyRasterizerState
 
 <dd>
 <p>Destory rasterizer state.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateShaderSize</b>
+### -field pfnCalcPrivateShaderSize
 
 <dd>
 <p>Calculate private shader size.</p>
 </dd>
 
-### -field <b>pfnCreateVertexShader</b>
+### -field pfnCreateVertexShader
 
 <dd>
 <p>Create vertex shader.</p>
 </dd>
 
-### -field <b>pfnCreatePixelShader</b>
+### -field pfnCreatePixelShader
 
 <dd>
 <p>Create pixel shader.</p>
 </dd>
 
-### -field <b>pfnCreateGeometryShader</b>
+### -field pfnCreateGeometryShader
 
 <dd>
 <p>Create geometry shader.</p>
 </dd>
 
-### -field <b>pfnCreateComputeShader</b>
+### -field pfnCreateComputeShader
 
 <dd>
 <p>Create compute shader.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateGeometryShaderWithStreamOutput</b>
+### -field pfnCalcPrivateGeometryShaderWithStreamOutput
 
 <dd>
 <p>Calculate private geometry shader with stream output.</p>
 </dd>
 
-### -field <b>pfnCreateGeometryShaderWithStreamOutput</b>
+### -field pfnCreateGeometryShaderWithStreamOutput
 
 <dd>
 <p>Create geometry shader with stream output.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateTessellationShaderSize</b>
+### -field pfnCalcPrivateTessellationShaderSize
 
 <dd>
 <p>Calculate private tessellation shader size.</p>
 </dd>
 
-### -field <b>pfnCreateHullShader</b>
+### -field pfnCreateHullShader
 
 <dd>
 <p>Create hull shader.</p>
 </dd>
 
-### -field <b>pfnCreateDomainShader</b>
+### -field pfnCreateDomainShader
 
 <dd>
 <p>Create domain shader.</p>
 </dd>
 
-### -field <b>pfnDestroyShader</b>
+### -field pfnDestroyShader
 
 <dd>
 <p>Destroy shader.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateCommandQueueSize</b>
+### -field pfnCalcPrivateCommandQueueSize
 
 <dd>
 <p>Calculate private command queue size.</p>
 </dd>
 
-### -field <b>pfnCreateCommandQueue</b>
+### -field pfnCreateCommandQueue
 
 <dd>
 <p>Create command queue.</p>
 </dd>
 
-### -field <b>pfnDestroyCommandQueue</b>
+### -field pfnDestroyCommandQueue
 
 <dd>
 <p>Destroy command queue.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateCommandAllocatorSize</b>
+### -field pfnCalcPrivateCommandAllocatorSize
 
 <dd>
 <p>Calculate private command allocator size.</p>
 </dd>
 
-### -field <b>pfnCreateCommandAllocator</b>
+### -field pfnCreateCommandAllocator
 
 <dd>
 <p>Create command allocator.</p>
 </dd>
 
-### -field <b>pfnDestroyCommandAllocator</b>
+### -field pfnDestroyCommandAllocator
 
 <dd>
 <p>Destroy command allocator.</p>
 </dd>
 
-### -field <b>pfnResetCommandAllocator</b>
+### -field pfnResetCommandAllocator
 
 <dd>
 <p>Reset command allocator.</p>
 </dd>
 
-### -field <b>pfnCalcPrivatePipelineStateSize</b>
+### -field pfnCalcPrivatePipelineStateSize
 
 <dd>
 <p>Calculate private pipeline state size.</p>
 </dd>
 
-### -field <b>pfnCreatePipelineState</b>
+### -field pfnCreatePipelineState
 
 <dd>
 <p>Create pipeline state.</p>
 </dd>
 
-### -field <b>pfnDestroyPipelineState</b>
+### -field pfnDestroyPipelineState
 
 <dd></dd>
 
-### -field <b>pfnCalcPrivateCommandListSize</b>
+### -field pfnCalcPrivateCommandListSize
 
 <dd>
 <p>Calculate private command list size.</p>
 </dd>
 
-### -field <b>pfnCreateCommandList</b>
+### -field pfnCreateCommandList
 
 <dd>
 <p>Create command list.</p>
 </dd>
 
-### -field <b>pfnDestroyCommandList</b>
+### -field pfnDestroyCommandList
 
 <dd>
 <p>Destroy command list.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateFenceSize</b>
+### -field pfnCalcPrivateFenceSize
 
 <dd>
 <p>Calculate private fence size.</p>
 </dd>
 
-### -field <b>pfnCreateFence</b>
+### -field pfnCreateFence
 
 <dd>
 <p>Create fence.</p>
 </dd>
 
-### -field <b>pfnDestroyFence</b>
+### -field pfnDestroyFence
 
 <dd>
 <p>Destroy fence.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateDescriptorHeapSize</b>
+### -field pfnCalcPrivateDescriptorHeapSize
 
 <dd>
 <p>Calculate private descriptor heap size.</p>
 </dd>
 
-### -field <b>pfnCreateDescriptorHeap</b>
+### -field pfnCreateDescriptorHeap
 
 <dd>
 <p>Create descriptor heap.</p>
 </dd>
 
-### -field <b>pfnDestroyDescriptorHeap</b>
+### -field pfnDestroyDescriptorHeap
 
 <dd>
 <p>Destroy descriptor heap.</p>
 </dd>
 
-### -field <b>pfnGetDescriptorSizeInBytes</b>
+### -field pfnGetDescriptorSizeInBytes
 
 <dd>
 <p>Get descriptor size in bytes.</p>
 </dd>
 
-### -field <b>pfnGetCPUDescriptorHandleForHeapStart</b>
+### -field pfnGetCPUDescriptorHandleForHeapStart
 
 <dd>
 <p>Get CPU descriptor handle for heap start.</p>
 </dd>
 
-### -field <b>pfnGetGPUDescriptorHandleForHeapStart</b>
+### -field pfnGetGPUDescriptorHandleForHeapStart
 
 <dd>
 <p>Get GPU descriptor handle for heap start.</p>
 </dd>
 
-### -field <b>pfnCreateShaderResourceView</b>
+### -field pfnCreateShaderResourceView
 
 <dd>
 <p>Create shader resource view.</p>
 </dd>
 
-### -field <b>pfnCreateConstantBufferView</b>
+### -field pfnCreateConstantBufferView
 
 <dd>
 <p>Create constant buffer view.</p>
 </dd>
 
-### -field <b>pfnCreateSampler</b>
+### -field pfnCreateSampler
 
 <dd>
 <p>Create sampler.</p>
 </dd>
 
-### -field <b>pfnCreateUnorderedAccessView</b>
+### -field pfnCreateUnorderedAccessView
 
 <dd>
 <p>Create unordered access view.</p>
 </dd>
 
-### -field <b>pfnCreateRenderTargetView</b>
+### -field pfnCreateRenderTargetView
 
 <dd>
 <p>Create render target view.</p>
 </dd>
 
-### -field <b>pfnCreateDepthStencilView</b>
+### -field pfnCreateDepthStencilView
 
 <dd>
 <p>Create depth stencil view.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateRootSignatureSize</b>
+### -field pfnCalcPrivateRootSignatureSize
 
 <dd>
 <p>Calculate private root signature size.</p>
 </dd>
 
-### -field <b>pfnCreateRootSignature</b>
+### -field pfnCreateRootSignature
 
 <dd>
 <p>Create root signature.</p>
 </dd>
 
-### -field <b>pfnDestroyRootSignature</b>
+### -field pfnDestroyRootSignature
 
 <dd>
 <p>Destroy root signature.</p>
 </dd>
 
-### -field <b>pfnMapHeap</b>
+### -field pfnMapHeap
 
 <dd>
 <p>Map heap.</p>
 </dd>
 
-### -field <b>pfnUnmapHeap</b>
+### -field pfnUnmapHeap
 
 <dd>
 <p>Unmap heap.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateHeapAndResourceSizes</b>
+### -field pfnCalcPrivateHeapAndResourceSizes
 
 <dd>
 <p>Calculate private heap and resource sizes.</p>
 </dd>
 
-### -field <b>pfnCreateHeapAndResource</b>
+### -field pfnCreateHeapAndResource
 
 <dd>
 <p>Create heap and resource.</p>
 </dd>
 
-### -field <b>pfnDestroyHeapAndResource</b>
+### -field pfnDestroyHeapAndResource
 
 <dd>
 <p>Destroy heap and resource.</p>
 </dd>
 
-### -field <b>pfnMakeResident</b>
+### -field pfnMakeResident
 
 <dd>
 <p>Make resident.</p>
 </dd>
 
-### -field <b>pfnEvict</b>
+### -field pfnEvict
 
 <dd>
 <p>Evict.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateOpenedHeapAndResourceSizes</b>
+### -field pfnCalcPrivateOpenedHeapAndResourceSizes
 
 <dd>
 <p>Calculate private opened heap and resource sizes.</p>
 </dd>
 
-### -field <b>pfnOpenHeapAndResource</b>
+### -field pfnOpenHeapAndResource
 
 <dd>
 <p>Open heap and resource.</p>
 </dd>
 
-### -field <b>pfnCopyDescriptors</b>
+### -field pfnCopyDescriptors
 
 <dd>
 <p>Copy descriptors.</p>
 </dd>
 
-### -field <b>pfnCopyDescriptorsSimple</b>
+### -field pfnCopyDescriptorsSimple
 
 <dd>
 <p>Copy descriptor sample.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateQueryHeapSize</b>
+### -field pfnCalcPrivateQueryHeapSize
 
 <dd>
 <p>Calculate private query heap size.</p>
 </dd>
 
-### -field <b>pfnCreateQueryHeap</b>
+### -field pfnCreateQueryHeap
 
 <dd>
 <p>Create query heap.</p>
 </dd>
 
-### -field <b>pfnDestroyQueryHeap</b>
+### -field pfnDestroyQueryHeap
 
 <dd>
 <p>Destroy query heap.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateCommandSignatureSize</b>
+### -field pfnCalcPrivateCommandSignatureSize
 
 <dd>
 <p>Calculate private command signature size.</p>
 </dd>
 
-### -field <b>pfnCreateCommandSignature</b>
+### -field pfnCreateCommandSignature
 
 <dd>
 <p>Create command signature.</p>
 </dd>
 
-### -field <b>pfnDestroyCommandSignature</b>
+### -field pfnDestroyCommandSignature
 
 <dd>
 <p>Destroy command signature.</p>
 </dd>
 
-### -field <b>pfnCheckResourceVirtualAddress</b>
+### -field pfnCheckResourceVirtualAddress
 
 <dd>
 <p>Check resource virtual address.</p>
 </dd>
 
-### -field <b>pfnCheckResourceAllocationInfo</b>
+### -field pfnCheckResourceAllocationInfo
 
 <dd>
 <p>Check resource allocation info.</p>
 </dd>
 
-### -field <b>pfnCheckSubresourceInfo</b>
+### -field pfnCheckSubresourceInfo
 
 <dd>
 <p>Check sub resource info.</p>
 </dd>
 
-### -field <b>pfnCheckExistingResourceAllocationInfo</b>
+### -field pfnCheckExistingResourceAllocationInfo
 
 <dd>
 <p>Check existing resource allocation info.</p>
 </dd>
 
-### -field <b>pfnOfferResources</b>
+### -field pfnOfferResources
 
 <dd>
 <p>Offer resources.</p>
 </dd>
 
-### -field <b>pfnReclaimResources</b>
+### -field pfnReclaimResources
 
 <dd>
 <p>Reclaim resources.</p>
 </dd>
 
-### -field <b>pfnGetImplicitPhysicalAdapterMask</b>
+### -field pfnGetImplicitPhysicalAdapterMask
 
 <dd>
 <p>Get implicit physical adapter mask.</p>
 </dd>
 
-### -field <b>pfnGetPresentPrivateDriverDataSize</b>
+### -field pfnGetPresentPrivateDriverDataSize
 
 <dd>
 <p>Get present private driver data size.</p>
 </dd>
 
-### -field <b>pfnQueryNodeMap</b>
+### -field pfnQueryNodeMap
 
 <dd>
 <p>Query node map.</p>
 </dd>
 
-### -field <b>pfnRetrieveShaderComment</b>
+### -field pfnRetrieveShaderComment
 
 <dd>
 <p>Retrieve shader comment.</p>
 </dd>
 
-### -field <b>pfnCheckResourceAllocationHandle</b>
+### -field pfnCheckResourceAllocationHandle
 
 <dd>
 <p>Check resource allocation handle.</p>
 </dd>
 
-### -field <b>pfnCalcPrivatePipelineLibrarySize</b>
+### -field pfnCalcPrivatePipelineLibrarySize
 
 <dd>
 <p>Calculate private pipeline library size.</p>
 </dd>
 
-### -field <b>pfnCreatePipelineLibrary</b>
+### -field pfnCreatePipelineLibrary
 
 <dd>
 <p>Create pipeline library.</p>
 </dd>
 
-### -field <b>pfnDestroyPipelineLibrary</b>
+### -field pfnDestroyPipelineLibrary
 
 <dd>
 <p>Destroy pipeline library.</p>
 </dd>
 
-### -field <b>pfnAddPipelineStateToLibrary</b>
+### -field pfnAddPipelineStateToLibrary
 
 <dd>
 <p>Add pipeline state to library.</p>
 </dd>
 
-### -field <b>pfnCalcSerializedLibrarySize</b>
+### -field pfnCalcSerializedLibrarySize
 
 <dd>
 <p>Calculate serialized library size.</p>
 </dd>
 
-### -field <b>pfnSerializeLibrary</b>
+### -field pfnSerializeLibrary
 
 <dd>
 <p>Serialized libary.</p>
 </dd>
 
-### -field <b>pfnGetDebugAllocationInfo</b>
+### -field pfnGetDebugAllocationInfo
 
 <dd>
 <p>Get debug allocation info.</p>

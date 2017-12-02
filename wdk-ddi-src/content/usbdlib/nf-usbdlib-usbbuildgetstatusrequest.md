@@ -61,38 +61,38 @@ void UsbBuildGetStatusRequest(
 ## -parameters
 <dl>
 
-### -param <i>Urb</i> [in, out]
+### -param Urb [in, out]
 
 <dd>
 <p>Pointer to an <a href="..\usb\ns-usb--urb.md">URB</a> to be formatted as an status request.</p>
 </dd>
 
-### -param <i>Op</i> [in]
+### -param Op [in]
 
 <dd>
 <p>Specifies one of the following values:</p>
 <p></p>
 <dl>
 
-### -param <a id="URB_FUNCTION_GET_STATUS_FROM_DEVICE"></a><a id="urb_function_get_status_from_device"></a>URB_FUNCTION_GET_STATUS_FROM_DEVICE
+### -param URB_FUNCTION_GET_STATUS_FROM_DEVICE
 
 <dd>
 <p>Retrieves status from a USB device.</p>
 </dd>
 
-### -param <a id="URB_FUNCTION_GET_STATUS_FROM_INTERFACE"></a><a id="urb_function_get_status_from_interface"></a>URB_FUNCTION_GET_STATUS_FROM_INTERFACE
+### -param URB_FUNCTION_GET_STATUS_FROM_INTERFACE
 
 <dd>
 <p>Retrieves status from an interface on a USB device.</p>
 </dd>
 
-### -param <a id="URB_FUNCTION_GET_STATUS_FROM_ENDPOINT"></a><a id="urb_function_get_status_from_endpoint"></a>URB_FUNCTION_GET_STATUS_FROM_ENDPOINT
+### -param URB_FUNCTION_GET_STATUS_FROM_ENDPOINT
 
 <dd>
 <p>Retrieves status from an endpoint for an interface on a USB device.</p>
 </dd>
 
-### -param <a id="URB_FUNCTION_GET_STATUS_FROM_OTHER"></a><a id="urb_function_get_status_from_other"></a>URB_FUNCTION_GET_STATUS_FROM_OTHER
+### -param URB_FUNCTION_GET_STATUS_FROM_OTHER
 
 <dd>
 <p>Retrieves status from a device-defined target on a USB device.</p>
@@ -100,25 +100,25 @@ void UsbBuildGetStatusRequest(
 </dl>
 </dd>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>Specifies the device-defined index, returned by a successful configuration request, if the request is for an endpoint or interface. Otherwise, <i>Index</i> must be zero.</p>
 </dd>
 
-### -param <i>TransferBuffer</i> [in, optional]
+### -param TransferBuffer [in, optional]
 
 <dd>
 <p>Pointer to a resident buffer to receive the status data or is <b>NULL</b> if an MDL is supplied in <i>TransferBufferMDL</i>.</p>
 </dd>
 
-### -param <i>TransferBufferMDL</i> [in, optional]
+### -param TransferBufferMDL [in, optional]
 
 <dd>
 <p>Pointer to an MDL that describes a resident buffer to receive the status data or is <b>NULL</b> if a buffer is supplied in <i>TransferBuffer</i>.</p>
 </dd>
 
-### -param <i>Link</i> [in]
+### -param Link [in]
 
 <dd>
 <p>Reserved. Must be set to <b>NULL</b>. </p>

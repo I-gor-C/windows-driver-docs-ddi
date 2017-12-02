@@ -56,19 +56,19 @@ typedef enum D3D11_1DDI_AUTHENTICATED_PROCESS_IDENTIFIER_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_PROCESSIDTYPE_UNKNOWN"></a><a id="d3d11_1ddi_processidtype_unknown"></a><b>D3D11_1DDI_PROCESSIDTYPE_UNKNOWN</b>
+### -field D3D11_1DDI_PROCESSIDTYPE_UNKNOWN
 
 <dd>
 <p>Unknown process type.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_PROCESSIDTYPE_DWM"></a><a id="d3d11_1ddi_processidtype_dwm"></a><b>D3D11_1DDI_PROCESSIDTYPE_DWM</b>
+### -field D3D11_1DDI_PROCESSIDTYPE_DWM
 
 <dd>
 <p>DWM process.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_PROCESSIDTYPE_HANDLE"></a><a id="d3d11_1ddi_processidtype_handle"></a><b>D3D11_1DDI_PROCESSIDTYPE_HANDLE</b>
+### -field D3D11_1DDI_PROCESSIDTYPE_HANDLE
 
 <dd>
 <p>Handle to a process.</p>

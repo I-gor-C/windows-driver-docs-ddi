@@ -56,19 +56,19 @@ NTSTATUS DrmAddContentHandlers(
 ## -parameters
 <dl>
 
-### -param <i>ContentId</i> [in]
+### -param ContentId [in]
 
 <dd>
 <p>Specifies the DRM content ID. This parameter identifies a protected KS audio stream.</p>
 </dd>
 
-### -param <i>paHandlers</i> [in]
+### -param paHandlers [in]
 
 <dd>
 <p>Pointer to an array of function pointers. Each array element points to a content handler.</p>
 </dd>
 
-### -param <i>NumHandlers</i> [in]
+### -param NumHandlers [in]
 
 <dd>
 <p>Specifies the number of function pointers in the <i>paHandlers</i> array.</p>
@@ -87,7 +87,7 @@ NTSTATUS DrmAddContentHandlers(
 
 <p>The upstream module can pass both the content ID and content rights to the downstream module by using one of the functions in the <i>paHandlers</i> array for this purpose. The downstream module needs the content ID to advise the system of any modules to which it sends the protected content.</p>
 
-<p><i>DrmAddContentHandlers</i> performs the same function as <a href="..\portcls\nf-portcls-pcaddcontenthandlers.md">PcAddContentHandlers</a> and <a href="audio.idrmport2_addcontenthandlers">IDrmPort2::AddContentHandlers</a>. For more information, see <a href="NULL">DRM Functions and Interfaces</a>.</p>
+<p><i>DrmAddContentHandlers</i> performs the same function as <a href="..\portcls\nf-portcls-pcaddcontenthandlers.md">PcAddContentHandlers</a> and <a href="audio.idrmport2_addcontenthandlers">IDrmPort2::AddContentHandlers</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.</p>
 
 ## -requirements
 <table>

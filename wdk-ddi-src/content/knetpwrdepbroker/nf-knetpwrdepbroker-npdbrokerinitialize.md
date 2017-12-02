@@ -7,7 +7,7 @@ old-location: netvista\npdbrokerinitialize.htm
 old-project: netvista
 ms.assetid: 7B23A6DF-2B78-48DF-BDD4-451A19521CAC
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NpdBrokerInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ NTSTATUS NpdBrokerInitialize(
 ## -parameters
 <dl>
 
-### -param <i>ulClientID</i> [in]
+### -param ulClientID [in]
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -param <i>phBroker</i> [out]
+### -param phBroker [out]
 
 <dd>
 <p>Reserved.</p>

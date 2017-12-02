@@ -56,19 +56,19 @@ typedef struct _DXGKARG_ENUMVIDPNCOFUNCMODALITY {
 ## -struct-fields
 <dl>
 
-### -field <b>hConstrainingVidPn</b>
+### -field hConstrainingVidPn
 
 <dd>
 <p>A handle to the VidPn object for which the cofunctional modes are being requested.</p>
 </dd>
 
-### -field <b>EnumPivotType</b>
+### -field EnumPivotType
 
 <dd>
 <p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-enumcofuncmodality-pivot-type.md">D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE</a> enumerator that supplies the enumeration pivot type.</p>
 </dd>
 
-### -field <b>EnumPivot</b>
+### -field EnumPivot
 
 <dd>
 <p>A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-enum-pivot.md">DXGK_ENUM_PIVOT</a> structure.</p>

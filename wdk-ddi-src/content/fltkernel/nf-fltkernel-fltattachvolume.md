@@ -7,7 +7,7 @@ old-location: ifsk\fltattachvolume.htm
 old-project: ifsk
 ms.assetid: da85c8d6-a74c-4a87-88b3-fb6dc01dd0f9
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltAttachVolume
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ NTSTATUS FltAttachVolume(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in, out]
+### -param Filter [in, out]
 
 <dd>
 <p>Opaque filter pointer for the caller. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>Volume</i> [in, out]
+### -param Volume [in, out]
 
 <dd>
 <p>Opaque volume pointer for the volume that the minifilter driver instance is to be attached to. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>InstanceName</i> [in, optional]
+### -param InstanceName [in, optional]
 
 <dd>
 <p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure containing the instance name for the new instance. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, <b>FltAttachVolume</b> attempts to read the minifilter driver's default instance name from the registry. (For more information about this parameter, see the following Remarks section.) </p>
 </dd>
 
-### -param <i>RetInstance</i> [out]
+### -param RetInstance [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives an opaque instance pointer for the newly created instance. This parameter is optional and can be <b>NULL</b>. </p>
@@ -182,4 +182,4 @@ NTSTATUS FltAttachVolume(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAttachVolume function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAttachVolume function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

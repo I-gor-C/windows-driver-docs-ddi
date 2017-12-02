@@ -7,7 +7,7 @@ old-location: debugger\setexpressionsyntax.htm
 old-project: debugger
 ms.assetid: ab98312f-0240-498f-992a-b05cbcc64c04
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl3, SetExpressionSyntax, IDebugControl3::SetExpressionSyntax
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,20 +54,20 @@ HRESULT SetExpressionSyntax(
 ## -parameters
 <dl>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies the syntax that the engine will use to evaluate expressions.  It can be one of the following values:</p>
 <p></p>
 <dl>
 
-### -param <a id="DEBUG_EXPR_MASM"></a><a id="debug_expr_masm"></a>DEBUG_EXPR_MASM
+### -param DEBUG_EXPR_MASM
 
 <dd>
 <p>Expressions will be evaluated according to MASM syntax. For details of this syntax, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552157">MASM Numbers and Operators</a>.</p>
 </dd>
 
-### -param <a id="DEBUG_EXPR_CPLUSPLUS"></a><a id="debug_expr_cplusplus"></a>DEBUG_EXPR_CPLUSPLUS
+### -param DEBUG_EXPR_CPLUSPLUS
 
 <dd>
 <p>Expressions will be evaluated according to C++ syntax. For details of this syntax, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540372">C++ Numbers and Operators</a>.</p>
@@ -77,7 +77,7 @@ HRESULT SetExpressionSyntax(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 
@@ -131,4 +131,4 @@ HRESULT SetExpressionSyntax(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl3::SetExpressionSyntax method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl3::SetExpressionSyntax method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

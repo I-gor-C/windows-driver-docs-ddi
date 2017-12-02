@@ -68,93 +68,93 @@ typedef struct D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>A handle to the resource that will receive the decrypted and decode frame buffers.</p>
 </dd>
 
-### -field <b>BufferType</b>
+### -field BufferType
 
 <dd>
 <p>The type of buffer, specified as a constant value of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-ddi-video-decoder-buffer-type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a> enumeration.</p>
 <p>In D3d10umddi.h, <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-ddi-video-decoder-buffer-type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a> and <b>D3D11_1DDI_VIDEO_DECODER_BUFFER_TYPE</b> are defined as the same type.</p>
 </dd>
 
-### -field <b>BufferIndex</b>
+### -field BufferIndex
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>DataOffset</b>
+### -field DataOffset
 
 <dd>
 <p>The offset of the relevant data from the beginning of the buffer, in bytes. This value must be zero.</p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>The offset of the relevant data from the beginning of the buffer, in bytes. This value must be zero.</p>
 </dd>
 
-### -field <b>FirstMBaddress</b>
+### -field FirstMBaddress
 
 <dd>
 <p>The macroblock address of the first macroblock in the buffer. The macroblock address is given in raster scan order.</p>
 </dd>
 
-### -field <b>NumMBsInBuffer</b>
+### -field NumMBsInBuffer
 
 <dd>
 <p>The number of macroblocks of data in the buffer. This count includes skipped macroblocks.</p>
 </dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>Reserved for system use. Set to zero.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>Reserved for system use. Set to zero.</p>
 </dd>
 
-### -field <b>Stride</b>
+### -field Stride
 
 <dd>
 <p>Reserved for system use. Set to zero.</p>
 </dd>
 
-### -field <b>ReservedBits</b>
+### -field ReservedBits
 
 <dd>
 <p>Reserved for system use. Set to zero.</p>
 </dd>
 
-### -field <b>pIV</b>
+### -field pIV
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-aes-ctr-iv.md">D3D11_1DDI_AES_CTR_IV</a> structure that contains an initialization vector (IV) for the frame buffer data that was encrypted by using the 128-bit Advanced Encryption Standard CTR mode (AES-CTR) block cipher encryption algorithm.</p>
 <p>If the decode buffer does not contain any encrypted data, set <b>pIV</b> to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>IVSize</b>
+### -field IVSize
 
 <dd>
 <p>The size of the buffer specified in the <b>pIV</b> member. If <b>pIV</b> is <b>NULL</b>, set this member to zero.</p>
 </dd>
 
-### -field <b>PartialEncryption</b>
+### -field PartialEncryption
 
 <dd>
 <p>If <b>TRUE</b>, the video surfaces are partially encrypted.</p>
 </dd>
 
-### -field <b>EncryptedBlockInfo</b>
+### -field EncryptedBlockInfo
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-encrypted-block-info.md">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a> structure that specifies which bytes of the surface are encrypted.</p>

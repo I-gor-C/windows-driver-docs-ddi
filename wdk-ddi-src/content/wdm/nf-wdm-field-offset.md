@@ -56,13 +56,13 @@ LONG FIELD_OFFSET(
 ## -parameters
 <dl>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>Specifies the name of a known structure type containing <i>Field</i>. </p>
 </dd>
 
-### -param <i>Field</i> [in]
+### -param Field [in]
 
 <dd>
 <p>Specifies the name of a field in a structure of type <i>Type</i>. </p>

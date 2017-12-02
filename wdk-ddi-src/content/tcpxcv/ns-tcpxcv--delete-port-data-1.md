@@ -58,25 +58,25 @@ typedef struct _DELETE_PORT_DATA_1 {
 ## -struct-fields
 <dl>
 
-### -field <b>psztPortName</b>
+### -field psztPortName
 
 <dd>
 <p>Specifies the name of the port to be deleted. The MAX_PORTNAME_LEN constant is defined in tcpxcv.h.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Is reserved for system use.</p>
 </dd>
 
-### -field <b>dwVersion</b>
+### -field dwVersion
 
 <dd>
 <p>Specifies the version of this structure, which is currently 1.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Is obsolete, and must be set to 0.</p>
@@ -86,7 +86,7 @@ typedef struct _DELETE_PORT_DATA_1 {
 ## -remarks
 <p>When the <a href="print.xcvdata">XcvData</a> function is called to delete a port, its <i>pInputData</i> parameter must be set with the address of a DELETE_PORT_DATA_1 structure. Set this function's <i>pszDataName</i> parameter to the string L"DeletePort". </p>
 
-<p>See <a href="NULL">TCPMON Xcv Interface</a> for more information.</p>
+<p>See <a href="https://msdn.microsoft.com/7b2b1cff-ab8f-44e0-9327-dc60a0072bf5">TCPMON Xcv Interface</a> for more information.</p>
 
 ## -requirements
 <table>

@@ -56,19 +56,19 @@ typedef struct _MPEG2_TRANSPORT_STRIDE {
 ## -struct-fields
 <dl>
 
-### -field <b>dwOffset</b>
+### -field dwOffset
 
 <dd>
 <p>Offset in bytes into a packet.</p>
 </dd>
 
-### -field <b>dwPacketLength</b>
+### -field dwPacketLength
 
 <dd>
 <p>Size in bytes of a packet.</p>
 </dd>
 
-### -field <b>dwStride</b>
+### -field dwStride
 
 <dd>
 <p>Stride of data in a packet. </p>

@@ -54,7 +54,7 @@ HRESULT GetPrintTicket(
 ## -parameters
 <dl>
 
-### -param <i>ppPrintTicket</i> [out]
+### -param ppPrintTicket [out]
 
 <dd>
 <p>The print ticket object for the sequence.</p>

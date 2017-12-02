@@ -57,25 +57,25 @@ HRESULT APIENTRY* PFND3D12DDI_TRANSFORMENCRYPTEDDATA_0030(
 ## -parameters
 <dl>
 
-### -param <i>hDrvDevice</i> 
+### -param hDrvDevice 
 
 <dd>
 <p>The device being processed.</p>
 </dd>
 
-### -param <i>Operation</i> 
+### -param Operation 
 
 <dd>
 <p>The transform operation being performed.</p>
 </dd>
 
-### -param <i>pOutputArguments</i> [in]
+### -param pOutputArguments [in]
 
 <dd>
 <p>The output arguments for the transform being performed.</p>
 </dd>
 
-### -param <i>pInputArguments</i> [in]
+### -param pInputArguments [in]
 
 <dd>
 <p>The input arguments for the transform being performed.</p>

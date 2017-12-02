@@ -61,19 +61,19 @@ typedef struct _ATTRIBUTE_INFO_1 {
 ## -struct-fields
 <dl>
 
-### -field <b>dwJobNumberOfPagesPerSide</b>
+### -field dwJobNumberOfPagesPerSide
 
 <dd>
 <p>Number of document pages to be placed on one side of a physical page, as requested by the user. Allowable values are 1, 2, 4, 6, 9, or 16.</p>
 </dd>
 
-### -field <b>dwDrvNumberOfPagesPerSide</b>
+### -field dwDrvNumberOfPagesPerSide
 
 <dd>
 <p>Number of document pages that the printer and driver can place on one side of a physical page. This value must be 1 or the value specified for <b>dwJobNumberOfPagesPerSide</b>.</p>
 </dd>
 
-### -field <b>dwNupBorderFlags</b>
+### -field dwNupBorderFlags
 
 <dd>
 <p>One of the following bit flag values:</p>
@@ -102,7 +102,7 @@ typedef struct _ATTRIBUTE_INFO_1 {
 <p> </p>
 </dd>
 
-### -field <b>dwJobPageOrderFlags</b>
+### -field dwJobPageOrderFlags
 
 <dd>
 <p>One of the following bit flag values:</p>
@@ -139,19 +139,19 @@ typedef struct _ATTRIBUTE_INFO_1 {
 <p> </p>
 </dd>
 
-### -field <b>dwDrvPageOrderFlags</b>
+### -field dwDrvPageOrderFlags
 
 <dd>
 <p>Bit flags indicating which page ordering options are supported by the printer and driver. Uses the same flags as <b>dwJobPageOrderFlags</b>.</p>
 </dd>
 
-### -field <b>dwJobNumberOfCopies</b>
+### -field dwJobNumberOfCopies
 
 <dd>
 <p>Number of copies of the print job, as requested by the user.</p>
 </dd>
 
-### -field <b>dwDrvNumberOfCopies</b>
+### -field dwDrvNumberOfCopies
 
 <dd>
 <p>Maximum number of copies the printer and driver can handle at once, taking into account such job attributes as collating and stapling.</p>

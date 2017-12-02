@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>QualityManager</b>
+### -field QualityManager
 
 <dd>
 <p>Specifies a handle to the quality manager sink receiving the <a href="stream.ksquality">KSQUALITY</a> complaint structures.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Specifies the context parameter to use when reporting quality problems. The context is used by the quality manager to distinguish between various clients that can send complaints to the same file object.</p>

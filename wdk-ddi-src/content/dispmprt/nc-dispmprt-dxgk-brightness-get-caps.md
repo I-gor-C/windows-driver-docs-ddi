@@ -58,13 +58,13 @@ NTSTATUS* DxgkDdiGetBrightnessCaps(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>BrightnessCaps</i> [in]
+### -param BrightnessCaps [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-brightness-caps.md">DXGK_BRIGHTNESS_CAPS</a> structure that represents the brightness control capabilities of the display panel.</p>

@@ -55,13 +55,13 @@ typedef struct _DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>YCbCr</b>
+### -field YCbCr
 
 <dd>
 <p>[in] A Boolean value that specifies whether the driver should determine whether the <b>BackgroundColor</b> member specifies a YCbCr or RGB color space. The default value is <b>FALSE</b>, which indicates a RGB color space. <b>TRUE</b> specifies a YCbCr color space. </p>
 </dd>
 
-### -field <b>BackgroundColor</b>
+### -field BackgroundColor
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-color.md">DXVAHDDDI_COLOR</a> union that specifies the background color as either a YCbCr or RGB color space. The default value is full range RGB black with opaque alpha, that is (R,G,B,A) = (0.0,0.0,0.0,1.0). </p>

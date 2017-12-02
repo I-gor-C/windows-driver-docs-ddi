@@ -7,7 +7,7 @@ old-location: netvista\rilimssipcause.htm
 old-project: netvista
 ms.assetid: 79a57fc5-1526-4f18-b51c-7d045092fcb4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILIMSSIPCAUSE, RILIMSSIPCAUSE, *LPRILIMSSIPCAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILIMSSIPCAUSE {
 ## -struct-fields
 <dl>
 
-### -field <b>dwCauseValue</b>
+### -field dwCauseValue
 
 <dd></dd>
 
-### -field <b>dwReasonValue</b>
+### -field dwReasonValue
 
 <dd></dd>
 </dl>

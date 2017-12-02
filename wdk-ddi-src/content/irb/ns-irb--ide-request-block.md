@@ -79,7 +79,7 @@ typedef struct _IDE_REQUEST_BLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>Function</b>
+### -field Function
 
 <dd>
 <p>Specifies the category that the request belongs to. The table below describes the classification of the I/O requests.</p>
@@ -141,7 +141,7 @@ typedef struct _IDE_REQUEST_BLOCK {
 <p> </p>
 </dd>
 
-### -field <b>IrbStatus</b>
+### -field IrbStatus
 
 <dd>
 <p>The miniport must set this member to indicates the status of the specified operation. The table below describes the various <b>IrbStatus</b> values and their meaning.</p>
@@ -238,68 +238,68 @@ typedef struct _IDE_REQUEST_BLOCK {
 <p> </p>
 </dd>
 
-### -field <b>AtaStatus</b>
+### -field AtaStatus
 
 <dd>
 <p>Indicates the status returned by the device in its status register. The miniport driver should update this field when completing an IRB with <i>IRB_STATUS_DEVICE_ERROR</i>.</p>
 </dd>
 
-### -field <b>AtaError</b>
+### -field AtaError
 
 <dd>
 <p>Indicates the error value returned by the device in its error register. The miniport driver should update this field when completing an IRB with <i>IRB_STATUS_DEVICE_ERROR</i>.</p>
 </dd>
 
-### -field <b>Channel</b>
+### -field Channel
 
 <dd>
 <p>Specifies the channel number.</p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>Specifies the target ID of the device.</p>
 </dd>
 
-### -field <b>Lun</b>
+### -field Lun
 
 <dd>
 <p>Specifies the logical unit number of the device.</p>
 </dd>
 
-### -field <b>CdbLength</b>
+### -field CdbLength
 
 <dd>
 <p>Specifies the length in bytes of the buffer pointed to by <b>Cdb</b>.</p>
 </dd>
 
-### -field <b>SenseInfoBufferLength</b>
+### -field SenseInfoBufferLength
 
 <dd>
 <p>Specifies the length in bytes of the buffer pointed to by <b>SenseInfoBuffer</b>.</p>
 </dd>
 
-### -field <b>SenseInfoBufferType</b>
+### -field SenseInfoBufferType
 
 <dd>
 <p>Specifies the type of data structure returned in <b>SenseInfoBuffer</b>. Because ATA commands don't have a need for the request sense command, ATA_PASS_THROUGH commands use <b>SenseInfoBuffer</b> to return task file information. For ATA_PASS_THROUGH commands, as identified in the <b>IrbFlags</b> member, the appropriate return <b>TaskFile</b> size should be reported as either SENSE_INFO_BUFFER_RETURN_TYPE_28BIT_TASKFILE or</p>
 <p>SENSE_INFO_BUFFER_RETURN_TYPE_48BIT_TASKFILE.</p>
 </dd>
 
-### -field <b>QueueTag</b>
+### -field QueueTag
 
 <dd>
 <p>The queue tag for this IRB. The port driver sets this field to 0.</p>
 </dd>
 
-### -field <b>ReservedAsUlong</b>
+### -field ReservedAsUlong
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>IrbFlags</b>
+### -field IrbFlags
 
 <dd>
 <p>Qualifies the request with ceratin actions that need to be performed. The table below describes them in detail.</p>
@@ -396,67 +396,67 @@ typedef struct _IDE_REQUEST_BLOCK {
 <p> </p>
 </dd>
 
-### -field <b>TimeOutValue</b>
+### -field TimeOutValue
 
 <dd>
 <p>Indicates the time in seconds after which the request will time out.</p>
 </dd>
 
-### -field <b>DataTransferLength</b>
+### -field DataTransferLength
 
 <dd>
 <p>Contains the length in bytes of the data buffer that contains data to be transferred.</p>
 </dd>
 
-### -field <b>IrbExtension</b>
+### -field IrbExtension
 
 <dd>
 <p>Pointer to the per-request extension allocated by the port driver.</p>
 </dd>
 
-### -field <b>DataBuffer</b>
+### -field DataBuffer
 
 <dd>
 <p>Pointer to the buffer where the data resides.</p>
 </dd>
 
-### -field <b>SenseInfoBuffer</b>
+### -field SenseInfoBuffer
 
 <dd>
 <p>Pointer to the buffer which holds the sense data.</p>
 </dd>
 
-### -field <b>NextIrb</b>
+### -field NextIrb
 
 <dd>
 <p>Pointer to the next IRB to be processed. The port driver sets this to <b>NULL</b>. The miniport driver can use this field to link IRBs together.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>IdeTaskFile</b>
+### -field IdeTaskFile
 
 <dd>
 <p>Contains a structure of type <a href="..\irb\ns-irb--ide-task-file.md">IDE_TASK_FILE</a> that holds the IDE task file for the indicated controller. This member is defined whenever the result of a bitwise AND between the <b>Function</b> member and IRB_FUNCTION_ATA_COMMAND is nonzero.</p>
 </dd>
 
-### -field <b>Cdb</b>
+### -field Cdb
 
 <dd>
 <p>Contains a command descriptor block (CDB). This member is defined whenever the result of a bitwise AND between the <b>Function</b> member and IRB_FUNCTION_ATAPI_COMMAND is nonzero.</p>
 </dd>
 
-### -field <b>PowerChange</b>
+### -field PowerChange
 
 <dd>
 <p>Indicates an enumeration value of type <a href="storage.power_change_info">POWER_CHANGE_INFO</a> that defines a power state transition. This member is defined whenever <b>Function</b> is equal to IRB_FUNCTION_POWER_CHANGE.</p>
 </dd>
 
-### -field <b>AsUChar</b>
+### -field AsUChar
 
 <dd>
 <p>Provides a means of accessing members <b>IdeTaskFile</b>, <b>PowerChange</b>, and <b>Cdb</b> as unsigned character data.</p>

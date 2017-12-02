@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: <= PASSIVE_LEVEL
 req.iface: 
 ---
 
@@ -56,19 +56,19 @@ typedef enum _BTHX_SCO_SUPPORT {
 ## -enum-fields
 <dl>
 
-### -field <a id="ScoSupportNone"></a><a id="scosupportnone"></a><a id="SCOSUPPORTNONE"></a><b>ScoSupportNone</b>
+### -field ScoSupportNone
 
 <dd>
 <p>SCO is not supported.</p>
 </dd>
 
-### -field <a id="ScoSupportHCI"></a><a id="scosupporthci"></a><a id="SCOSUPPORTHCI"></a><b>ScoSupportHCI</b>
+### -field ScoSupportHCI
 
 <dd>
 <p>SCO data passes through the HCI layer (stack).</p>
 </dd>
 
-### -field <a id="ScoSupportHCIBypass"></a><a id="scosupporthcibypass"></a><a id="SCOSUPPORTHCIBYPASS"></a><b>ScoSupportHCIBypass</b>
+### -field ScoSupportHCIBypass
 
 <dd>
 <p>SCO data does not pass through the HCI layer but through a sideband mechanism like an I2S channel.</p>

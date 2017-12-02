@@ -7,7 +7,7 @@ old-location: ieee\irb_req_set_device_xmit_properties.htm
 old-project: IEEE
 ms.assetid: 1E99F892-CD7C-411D-8832-08F988B9F2D7
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_SET_DEVICE_XMIT_PROPERTIES, IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef struct _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES {
 ## -struct-fields
 <dl>
 
-### -field <b>fulSpeed</b>
+### -field fulSpeed
 
 <dd>
 <p>Specifies the maximum speed for transactions to the device. The possible speed values are SPEED_FLAGS_xxx, where xxx is the (approximate) transfer rate in megabits per second. Existing hardware supports transfer rates of 100, 200, and 400 Mb/sec.</p>
@@ -94,7 +94,7 @@ typedef struct _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES {
 <div> </div>
 </dd>
 
-### -field <b>fulPriority</b>
+### -field fulPriority
 
 <dd>
 <p>Specifies the priority.</p>
@@ -102,7 +102,7 @@ typedef struct _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES {
 </dl>
 
 ## -remarks
-
+<p>By default, the maximum permitted transmission speed is the physical maximum. A driver should use this request to lower the maximum permitted speed.</p>
 
 ## -requirements
 <table>

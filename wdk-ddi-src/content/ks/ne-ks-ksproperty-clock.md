@@ -62,31 +62,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_CLOCK_TIME"></a><a id="ksproperty_clock_time"></a><b>KSPROPERTY_CLOCK_TIME</b>
+### -field KSPROPERTY_CLOCK_TIME
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_CLOCK_PHYSICALTIME"></a><a id="ksproperty_clock_physicaltime"></a><b>KSPROPERTY_CLOCK_PHYSICALTIME</b>
+### -field KSPROPERTY_CLOCK_PHYSICALTIME
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_CLOCK_CORRELATEDTIME"></a><a id="ksproperty_clock_correlatedtime"></a><b>KSPROPERTY_CLOCK_CORRELATEDTIME</b>
+### -field KSPROPERTY_CLOCK_CORRELATEDTIME
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME"></a><a id="ksproperty_clock_correlatedphysicaltime"></a><b>KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME</b>
+### -field KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_CLOCK_STATE"></a><a id="ksproperty_clock_state"></a><b>KSPROPERTY_CLOCK_STATE</b>
+### -field KSPROPERTY_CLOCK_STATE
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_CLOCK_RESOLUTION"></a><a id="ksproperty_clock_resolution"></a><b>KSPROPERTY_CLOCK_RESOLUTION</b>
+### -field KSPROPERTY_CLOCK_RESOLUTION
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_CLOCK_FUNCTIONTABLE"></a><a id="ksproperty_clock_functiontable"></a><b>KSPROPERTY_CLOCK_FUNCTIONTABLE</b>
+### -field KSPROPERTY_CLOCK_FUNCTIONTABLE
 
 <dd></dd>
 </dl>

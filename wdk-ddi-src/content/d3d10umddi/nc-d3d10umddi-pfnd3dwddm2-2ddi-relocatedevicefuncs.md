@@ -58,13 +58,13 @@ VOID APIENTRY* pfnRelocateDeviceFuncs(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>The handle of a device.</p>
 </dd>
 
-### -param <i>DeviceFunctions</i> [in]
+### -param DeviceFunctions [in]
 
 <dd>
 <p>The device functions table, as a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-2ddi-devicefuncs~r1.md">D3DWDDM2_2DDI_DEVICEFUNCS</a> structure.</p>

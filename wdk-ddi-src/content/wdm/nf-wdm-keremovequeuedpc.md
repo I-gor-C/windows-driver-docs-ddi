@@ -55,7 +55,7 @@ BOOLEAN KeRemoveQueueDpc(
 ## -parameters
 <dl>
 
-### -param <i>Dpc</i> [in, out]
+### -param Dpc [in, out]
 
 <dd>
 <p>A pointer to an initialized DPC object that was queued by a previous call to the <a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a> routine.</p>

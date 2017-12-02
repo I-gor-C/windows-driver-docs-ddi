@@ -85,32 +85,32 @@ typedef struct _FILE_OBJECT {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A read-only member used by the system to indicate that the object is a file object. If the object is a file object, the value of this member is 5.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>A read-only member that specifies the size, in bytes, of the file object. This size does not include the file object extension, if one is present.</p>
 </dd>
 
-### -field <b>DeviceObject</b>
+### -field DeviceObject
 
 <dd>
 <p>A pointer to the device object on which the file is opened.</p>
 </dd>
 
-### -field <b>Vpb</b>
+### -field Vpb
 
 <dd>
 <p>A pointer to the volume parameter block associated with the file object.</p>
 <p>Note that if the <b>Vpb</b> member is non-<b>NULL</b>, the file resides on a mounted volume.</p>
 </dd>
 
-### -field <b>FsContext</b>
+### -field FsContext
 
 <dd>
 <p>A pointer to whatever optional state a driver maintains about the file object; otherwise, 
@@ -121,7 +121,7 @@ typedef struct _FILE_OBJECT {
 <div> </div>
 </dd>
 
-### -field <b>FsContext2</b>
+### -field FsContext2
 
 <dd>
 <p>A pointer to whatever additional state a driver maintains about the file object; otherwise, 
@@ -131,31 +131,31 @@ typedef struct _FILE_OBJECT {
 <div> </div>
 </dd>
 
-### -field <b>SectionObjectPointer</b>
+### -field SectionObjectPointer
 
 <dd>
 <p>A pointer to the file object's read-only section object. This member is set only by file systems and used for Cache Manager interaction.</p>
 </dd>
 
-### -field <b>PrivateCacheMap</b>
+### -field PrivateCacheMap
 
 <dd>
 <p>An opaque member, set only by file systems, that points to handle-specific information and that is used for Cache Manager interaction.</p>
 </dd>
 
-### -field <b>FinalStatus</b>
+### -field FinalStatus
 
 <dd>
 <p>A read-only member that is used, in certain synchronous cases, to indicate the final status of the file object's I/O request.</p>
 </dd>
 
-### -field <b>RelatedFileObject</b>
+### -field RelatedFileObject
 
 <dd>
 <p>A pointer to a <b>FILE_OBJECT</b> structure used to indicate that the current file object has been opened relative to an already open file object. The file object pointed to by this member is usually a directory (meaning the current file has been opened relative to this directory). However, a file can be reopened relative to itself, and alternate data streams for a file can be opened relative to an already open primary data stream for that same file. The <b>RelatedFileObject</b> member is only valid during the processing of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a> requests.</p>
 </dd>
 
-### -field <b>LockOperation</b>
+### -field LockOperation
 
 <dd>
 <p>A read-only member. If <b>FALSE</b>, a lock operation 
@@ -164,25 +164,25 @@ typedef struct _FILE_OBJECT {
       <b>TRUE</b>, this member always remains <b>TRUE</b> (for example, releasing file locks on the file object does not reset this member to <b>FALSE</b>).</p>
 </dd>
 
-### -field <b>DeletePending</b>
+### -field DeletePending
 
 <dd>
 <p>A read-only member. If <b>TRUE</b>, a delete operation for the file associated with the file object exists. If <b>FALSE</b>, there currently is no pending delete operation for the file object.</p>
 </dd>
 
-### -field <b>ReadAccess</b>
+### -field ReadAccess
 
 <dd>
 <p>A read-only member. If <b>TRUE</b>, the file associated with the file object has been opened for read access. If <b>FALSE</b>, the file has been opened without read access. This information is used when checking and/or setting the share access of the file.</p>
 </dd>
 
-### -field <b>WriteAccess</b>
+### -field WriteAccess
 
 <dd>
 <p>A read-only member. If <b>TRUE</b>, the file associated with the file object has been opened for write access. If <b>FALSE</b>, the file has been opened without write access. This information is used when checking and/or setting the share access of the file.</p>
 </dd>
 
-### -field <b>DeleteAccess</b>
+### -field DeleteAccess
 
 <dd>
 <p>A read-only member. If <b>TRUE</b>, the file associated with the file object has been 
@@ -190,25 +190,25 @@ typedef struct _FILE_OBJECT {
       This information is used when checking and/or setting the share access of the file.</p>
 </dd>
 
-### -field <b>SharedRead</b>
+### -field SharedRead
 
 <dd>
 <p>A read-only member. If <b>TRUE</b>, the file associated with the file object has been opened for read sharing access. If <b>FALSE</b>, the file has been opened without read sharing access. This information is used when checking and/or setting the share access of the file.</p>
 </dd>
 
-### -field <b>SharedWrite</b>
+### -field SharedWrite
 
 <dd>
 <p>A read-only member. If <b>TRUE</b>, the file associated with the file object has been opened for write sharing access. If <b>FALSE</b>, the file has been opened without write sharing access. This information is used when checking and/or setting the share access of the file. </p>
 </dd>
 
-### -field <b>SharedDelete</b>
+### -field SharedDelete
 
 <dd>
 <p>A read-only member. If <b>TRUE</b>, the file associated with the file object has been opened for delete sharing access. If <b>FALSE</b>, the file has been opened without delete sharing access. This information is used when checking and/or setting the share access of the file.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A read-only member used by the system to hold one or more (a bitwise inclusive OR combination) of the following private flag values.
@@ -450,68 +450,68 @@ typedef struct _FILE_OBJECT {
 <p> </p>
 </dd>
 
-### -field <b>FileName</b>
+### -field FileName
 
 <dd>
 <p>A <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure whose <b>Buffer</b> member points to a read-only Unicode string that holds the name of the file opened on the volume. If the volume is being opened, the <b>Length</b> member of the 
       <b>UNICODE_STRING</b> structure will be zero. Note that the file name in this string is valid only during the initial processing of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a> request. This file name should <u>not</u> be considered valid after the file system starts to process the <b>IRP_MJ_CREATE</b> request. The storage for the string pointed to by the <b>Buffer</b> member of the <b>UNICODE_STRING</b> structure is allocated in paged system memory. For more information about obtaining a file name, see <a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformation.md">FltGetFileNameInformation</a>.</p>
 </dd>
 
-### -field <b>CurrentByteOffset</b>
+### -field CurrentByteOffset
 
 <dd>
 <p>A read-only member that specifies the file offset, in bytes, associated with the file object.</p>
 </dd>
 
-### -field <b>Waiters</b>
+### -field Waiters
 
 <dd>
 <p>A read-only member used by the system to count the number of outstanding waiters on a file object opened for synchronous access.</p>
 </dd>
 
-### -field <b>Busy</b>
+### -field Busy
 
 <dd>
 <p>A read-only member used by the system to indicate whether a file object opened for synchronous access is currently busy.</p>
 </dd>
 
-### -field <b>LastLock</b>
+### -field LastLock
 
 <dd>
 <p>An opaque pointer to the last lock applied to the file object.</p>
 </dd>
 
-### -field <b>Lock</b>
+### -field Lock
 
 <dd>
 <p>An opaque member used by the system to hold a file object event lock. The event lock is used to control synchronous access to the file object. Applicable only to file objects that are opened for synchronous access.</p>
 </dd>
 
-### -field <b>Event</b>
+### -field Event
 
 <dd>
 <p>An opaque member used by the system to hold an event object for the file object. The event object is used to signal the completion of an I/O request on the file object if no user event was supplied or a synchronous API was called.</p>
 </dd>
 
-### -field <b>CompletionContext</b>
+### -field CompletionContext
 
 <dd>
 <p>An opaque pointer to completion port information (port pointer and key) associated with the file object, if any.</p>
 </dd>
 
-### -field <b>IrpListLock</b>
+### -field IrpListLock
 
 <dd>
 <p>An opaque pointer to a <a href="https://msdn.microsoft.com/a37c0db4-ff9c-4958-a9f4-62b671458d03">KSPIN_LOCK</a> structure that serves as the spin lock used to synchronize access to the file object's IRP list.</p>
 </dd>
 
-### -field <b>IrpList</b>
+### -field IrpList
 
 <dd>
 <p>An opaque pointer to the head of the IRP list associated with the file object.</p>
 </dd>
 
-### -field <b>FileObjectExtension</b>
+### -field FileObjectExtension
 
 <dd>
 <p>An opaque pointer to the file object's file object extension (<a href="ifsk.the_fobx_structure">FOBX</a>) structure. The <b>FOBX</b> structure contains various opaque contexts used internally as well as the per-file object contexts available through <b>FsRtl<i>Xxx</i></b> routines.</p>

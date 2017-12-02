@@ -62,7 +62,7 @@ typedef SRIOV_GET_VENDOR_AND_DEVICE_IDS *PSRIOV_GET_VENDOR_AND_DEVICE_IDS;
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to a driver-defined context.
@@ -70,13 +70,13 @@ typedef SRIOV_GET_VENDOR_AND_DEVICE_IDS *PSRIOV_GET_VENDOR_AND_DEVICE_IDS;
                 </p>
 </dd>
 
-### -param <i>VfIndex</i> [in]
+### -param VfIndex [in]
 
 <dd>
 <p>A zero-based index of the VF to which this write operation applies.</p>
 </dd>
 
-### -param <i>VendorId</i> [out]
+### -param VendorId [out]
 
 <dd>
 <p>
@@ -84,7 +84,7 @@ typedef SRIOV_GET_VENDOR_AND_DEVICE_IDS *PSRIOV_GET_VENDOR_AND_DEVICE_IDS;
                 A pointer to a USHORT variable that is filled with the vendor ID of the VF.</p>
 </dd>
 
-### -param <i>DeviceId</i> [out]
+### -param DeviceId [out]
 
 <dd>
 <p>

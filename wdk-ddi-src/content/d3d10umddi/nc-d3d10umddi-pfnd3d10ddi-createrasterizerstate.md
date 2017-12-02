@@ -60,25 +60,25 @@ VOID APIENTRY CreateRasterizerState(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pRasterizerDesc</i> [in]
+### -param pRasterizerDesc [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-rasterizer-desc.md">D3D10_DDI_RASTERIZER_DESC</a> structure that describes the parameters that the user-mode display driver uses to create a rasterizer state. </p>
 </dd>
 
-### -param <i>hRasterizerState</i> [in]
+### -param hRasterizerState [in]
 
 <dd>
 <p> A handle to the driver's private data for the rasterizer state. The driver returns the size, in bytes, of the memory region that the Microsoft Direct3D runtime must allocate for the private data from a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivaterasterizerstatesize.md">CalcPrivateRasterizerStateSize</a> function. The handle is really just a pointer to a region of memory, the size of which the driver requested. The driver uses this region of memory to store internal data structures that are related to its rasterizer state object.</p>
 </dd>
 
-### -param <i>hRTRasterizerState</i> [in]
+### -param hRTRasterizerState [in]
 
 <dd>
 <p> A handle to the rasterizer state that the driver should use anytime it calls back into the Direct3D runtime. </p>

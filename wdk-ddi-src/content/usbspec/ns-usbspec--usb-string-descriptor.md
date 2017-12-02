@@ -57,19 +57,19 @@ typedef struct _USB_STRING_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>Specifies the length, in bytes, of the descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorType</b>
+### -field bDescriptorType
 
 <dd>
 <p>Specifies the descriptor type. Must always be USB_STRING_DESCRIPTOR_TYPE.</p>
 </dd>
 
-### -field <b>bString</b>
+### -field bString
 
 <dd>
 <p>Pointer to a client-allocated buffer that contains, on return from the host controller driver, a Unicode string with the requested string descriptor.</p>

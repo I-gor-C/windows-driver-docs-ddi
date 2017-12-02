@@ -57,25 +57,25 @@ typedef struct _D3DDDIARG_GETPITCH {
 ## -struct-fields
 <dl>
 
-### -field <b>hCryptoSession</b>
+### -field hCryptoSession
 
 <dd>
 <p>[in] A handle to the encryption session. </p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A handle to the resource. </p>
 </dd>
 
-### -field <b>SubResourceIndex</b>
+### -field SubResourceIndex
 
 <dd>
 <p>[in] The zero-based index into the resource, which the <b>hResource</b> handle specifies. This index indicates the encrypted surface.</p>
 </dd>
 
-### -field <b>Pitch</b>
+### -field Pitch
 
 <dd>
 <p>[out] The pitch, in bytes, of the encrypted surface. The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getpitch.md">GetPitch</a> function returns this pitch value to the Direct3D runtime. </p>

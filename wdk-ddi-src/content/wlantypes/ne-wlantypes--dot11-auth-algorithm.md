@@ -7,7 +7,7 @@ old-location: netvista\dot11_auth_algorithm.htm
 old-project: netvista
 ms.assetid: 27bba553-2d46-4892-864a-52e44caf6d56
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11EXT_IHV_SSID_LIST,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef enum _DOT11_AUTH_ALGORITHM {
 ## -enum-fields
 <dl>
 
-### -field <a id="DOT11_AUTH_ALGO_80211_OPEN"></a><a id="dot11_auth_algo_80211_open"></a><b>DOT11_AUTH_ALGO_80211_OPEN</b>
+### -field DOT11_AUTH_ALGO_80211_OPEN
 
 <dd>
 <p>
@@ -69,14 +69,14 @@ typedef enum _DOT11_AUTH_ALGORITHM {
      </p>
 </dd>
 
-### -field <a id="DOT11_AUTH_ALGO_80211_SHARED_KEY"></a><a id="dot11_auth_algo_80211_shared_key"></a><b>DOT11_AUTH_ALGO_80211_SHARED_KEY</b>
+### -field DOT11_AUTH_ALGO_80211_SHARED_KEY
 
 <dd>
 <p>Specifies an IEEE 802.11 Shared Key authentication algorithm that requires the use of a pre-shared
      Wired Equivalent Privacy (WEP) key for the 802.11 authentication.</p>
 </dd>
 
-### -field <a id="DOT11_AUTH_ALGO_WPA"></a><a id="dot11_auth_algo_wpa"></a><b>DOT11_AUTH_ALGO_WPA</b>
+### -field DOT11_AUTH_ALGO_WPA
 
 <dd>
 <p>Specifies a Wi-Fi Protected Access (WPA) algorithm. IEEE 802.1X port authorization is performed by
@@ -90,7 +90,7 @@ typedef enum _DOT11_AUTH_ALGORITHM {
      element (IE).</p>
 </dd>
 
-### -field <a id="DOT11_AUTH_ALGO_WPA_PSK"></a><a id="dot11_auth_algo_wpa_psk"></a><b>DOT11_AUTH_ALGO_WPA_PSK</b>
+### -field DOT11_AUTH_ALGO_WPA_PSK
 
 <dd>
 <p>Specifies a Wi-Fi Protected Access (WPA) algorithm that uses preshared keys (PSK). IEEE 802.1X
@@ -104,13 +104,13 @@ typedef enum _DOT11_AUTH_ALGORITHM {
      WPA IE.</p>
 </dd>
 
-### -field <a id="DOT11_AUTH_ALGO_WPA_NONE"></a><a id="dot11_auth_algo_wpa_none"></a><b>DOT11_AUTH_ALGO_WPA_NONE</b>
+### -field DOT11_AUTH_ALGO_WPA_NONE
 
 <dd>
 <p>This value is not supported.</p>
 </dd>
 
-### -field <a id="DOT11_AUTH_ALGO_RSNA"></a><a id="dot11_auth_algo_rsna"></a><b>DOT11_AUTH_ALGO_RSNA</b>
+### -field DOT11_AUTH_ALGO_RSNA
 
 <dd>
 <p>Specifies an IEEE 802.11i Robust Security Network Association (RSNA) algorithm. IEEE 802.1X port
@@ -124,7 +124,7 @@ typedef enum _DOT11_AUTH_ALGORITHM {
      Network (RSN) IE.</p>
 </dd>
 
-### -field <a id="DOT11_AUTH_ALGO_RSNA_PSK"></a><a id="dot11_auth_algo_rsna_psk"></a><b>DOT11_AUTH_ALGO_RSNA_PSK</b>
+### -field DOT11_AUTH_ALGO_RSNA_PSK
 
 <dd>
 <p>Specifies an IEEE 802.11i RSNA algorithm that uses PSK. IEEE 802.1X port authorization is
@@ -136,7 +136,7 @@ typedef enum _DOT11_AUTH_ALGORITHM {
      RSN IE.</p>
 </dd>
 
-### -field <a id="DOT11_AUTH_ALGO_IHV_START"></a><a id="dot11_auth_algo_ihv_start"></a><b>DOT11_AUTH_ALGO_IHV_START</b>
+### -field DOT11_AUTH_ALGO_IHV_START
 
 <dd>
 <p>Specifies the start of the range that specifies proprietary authentication algorithms that are
@@ -147,7 +147,7 @@ typedef enum _DOT11_AUTH_ALGORITHM {
      Extensible Station (ExtSTA) mode.</p>
 </dd>
 
-### -field <a id="DOT11_AUTH_ALGO_IHV_END"></a><a id="dot11_auth_algo_ihv_end"></a><b>DOT11_AUTH_ALGO_IHV_END</b>
+### -field DOT11_AUTH_ALGO_IHV_END
 
 <dd>
 <p>Specifies the end of the range that specifies proprietary authentication algorithms that are
@@ -182,7 +182,7 @@ typedef enum _DOT11_AUTH_ALGORITHM {
 
 <p>If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport driver must allow
     peer stations to associate with the Extensible AP by using 
-    <a href="NULL">Open System Authentication</a> or 
+    <a href="netvista.open_system_authentication">Open System Authentication</a> or 
     <a href="https://msdn.microsoft.com/41dd280b-e54c-4233-8051-45e7b1284d1d">Wired Equivalent Privacy (WEP)</a> algorithms, regardless of
     the enabled authorization and cipher algorithms. For more information about WPS and Extensible AP, see 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569436">OID_DOT11_WPS_ENABLED</a>.</p>
@@ -229,4 +229,4 @@ typedef enum _DOT11_AUTH_ALGORITHM {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_AUTH_ALGORITHM enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_AUTH_ALGORITHM enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

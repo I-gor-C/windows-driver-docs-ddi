@@ -59,13 +59,13 @@ NTSTATUS EvtSerCxPurge(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A WDFDEVICE handle to the framework device object that represents the serial controller.</p>
 </dd>
 
-### -param <i>PurgeMask</i> [in]
+### -param PurgeMask [in]
 
 <dd>
 <p>A set of flags that describe the hardware buffers that are to be purged.  Currently, no flags are defined for purge operations that are performed by the serial controller. For more information, see Remarks.</p>
@@ -90,7 +90,7 @@ NTSTATUS EvtSerCxPurge(
 
 <p>The function type for this callback is declared in Sercx.h, as follows.</p>
 
-<p>To define an <i>EvtSerCxPurge</i> callback function that is named <code>MyEvtSerCxPurge</code>, you must first provide a function declaration that <a href="NULL">Static Driver Verifier</a> (SDV) and other verification tools require, as follows.</p>
+<p>To define an <i>EvtSerCxPurge</i> callback function that is named <code>MyEvtSerCxPurge</code>, you must first provide a function declaration that <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV) and other verification tools require, as follows.</p>
 
 <p>Then, implement your callback function as follows.</p>
 

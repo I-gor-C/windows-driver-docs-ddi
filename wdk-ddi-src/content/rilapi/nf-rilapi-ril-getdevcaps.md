@@ -7,7 +7,7 @@ old-location: netvista\ril_getdevcaps.htm
 old-project: netvista
 ms.assetid: eb239b03-7e46-4091-adff-86ed95a06704
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetDevCaps
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_GetDevCaps(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwCapsType</i> 
+### -param dwCapsType 
 
 <dd></dd>
 </dl>

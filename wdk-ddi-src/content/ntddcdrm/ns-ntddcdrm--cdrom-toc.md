@@ -57,25 +57,25 @@ typedef struct _CDROM_TOC {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Indicates the length, in bytes, of the table of contents data. This length value does not include the length of the <b>Length </b>member itself. </p>
 </dd>
 
-### -field <b>FirstTrack</b>
+### -field FirstTrack
 
 <dd>
 <p>Indicates the first track number of the table of contents of the first complete session. </p>
 </dd>
 
-### -field <b>LastTrack</b>
+### -field LastTrack
 
 <dd>
 <p>Indicates the last track number of the table of contents of the last complete session.</p>
 </dd>
 
-### -field <b>TrackData</b>
+### -field TrackData
 
 <dd>
 <p>Pointer to an array of structures of type <a href="..\ntddcdrm\ns-ntddcdrm--track-data.md">TRACK_DATA</a> that contain table of contents information for all the sessions on the disc.</p>

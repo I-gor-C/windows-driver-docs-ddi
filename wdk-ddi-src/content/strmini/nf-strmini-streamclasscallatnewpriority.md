@@ -59,19 +59,19 @@ VOID StreamClassCallAtNewPriority(
 ## -parameters
 <dl>
 
-### -param <i>StreamObject</i> [in, optional]
+### -param StreamObject [in, optional]
 
 <dd>
 <p>Pointer to an HW_STREAM_OBJECT structure specifying the stream is associated with the routine, or <b>NULL</b> if the routine is associated with the device as a whole. There can be only one routine per stream, and only one routine for the device. This parameter is optional.</p>
 </dd>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="..\strmini\ns-strmini--hw-initialization-data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="..\strmini\ns-strmini--hw-stream-request-block.md">HW_STREAM_REQUEST_BLOCK</a>, <a href="..\strmini\ns-strmini--hw-stream-object~r1.md">HW_STREAM_OBJECT</a>, <a href="..\strmini\ns-strmini--hw-time-context.md">HW_TIME_CONTEXT</a>, and <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.</p>
 </dd>
 
-### -param <i>Priority</i> [in]
+### -param Priority [in]
 
 <dd>
 <p>Specifies one of the values listed in the following table.</p>
@@ -116,13 +116,13 @@ VOID StreamClassCallAtNewPriority(
 <p> </p>
 </dd>
 
-### -param <i>PriorityRoutine</i> [in]
+### -param PriorityRoutine [in]
 
 <dd>
 <p>Pointer to a minidriver-supplied <a href="stream.strminipriorityroutine">StrMiniPriorityRoutine</a> to be called at the specified priority level.</p>
 </dd>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Specifies the parameter to be passed to the <i>PriorityRoutine</i>.</p>

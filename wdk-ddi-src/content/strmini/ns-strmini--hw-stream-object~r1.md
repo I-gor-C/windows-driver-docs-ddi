@@ -68,85 +68,85 @@ typedef struct _HW_STREAM_OBJECT {
 ## -struct-fields
 <dl>
 
-### -field <b>SizeOfThisPacket</b>
+### -field SizeOfThisPacket
 
 <dd>
 <p>Specifies the size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>StreamNumber</b>
+### -field StreamNumber
 
 <dd>
 <p>Specifies the offset of the stream within the minidriver's <a href="..\strmini\ns-strmini--hw-stream-descriptor.md">HW_STREAM_DESCRIPTOR</a> structure.</p>
 </dd>
 
-### -field <b>HwStreamExtension</b>
+### -field HwStreamExtension
 
 <dd>
 <p>Points to the stream extension, a buffer allocated by the class driver for the minidriver to use to hold private information about this stream. The minidriver sets the size of the buffer in the <a href="..\strmini\ns-strmini--hw-initialization-data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself with the stream class driver.</p>
 </dd>
 
-### -field <b>ReceiveDataPacket</b>
+### -field ReceiveDataPacket
 
 <dd>
 <p>Pointer to the stream's <a href="stream.strminireceivestreamdatapacket">StrMiniReceiveStreamDataPacket</a> routine.</p>
 </dd>
 
-### -field <b>ReceiveControlPacket</b>
+### -field ReceiveControlPacket
 
 <dd>
 <p>Pointer to the stream's <a href="stream.strminireceivestreamcontrolpacket">StrMiniReceiveStreamControlPacket</a> routine.</p>
 </dd>
 
-### -field <b>HwClockObject</b>
+### -field HwClockObject
 
 <dd>
 <p>Contains the stream's clock object. See <a href="..\strmini\ns-strmini--hw-clock-object.md">HW_CLOCK_OBJECT</a> for details.</p>
 </dd>
 
-### -field <b>Dma</b>
+### -field Dma
 
 <dd>
 <p>If <b>TRUE</b>, the device uses DMA to transfer data for this stream.</p>
 </dd>
 
-### -field <b>Pio</b>
+### -field Pio
 
 <dd>
 <p>If <b>TRUE</b>, the device uses programmed I/O to transfer data for this stream. Note that both the <b>Pio</b> and <b>Dma</b> members may be <b>TRUE</b>.</p>
 </dd>
 
-### -field <b>HwDeviceExtension</b>
+### -field HwDeviceExtension
 
 <dd>
 <p>Pointer to the minidriver's device extension. The minidriver may use this buffer to record private information. The minidriver sets the size of this buffer in the <a href="..\strmini\ns-strmini--hw-initialization-data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver also passes pointers to this buffer in the <b>HwDeviceExtension</b> member of the <a href="..\strmini\ns-strmini--hw-stream-request-block.md">HW_STREAM_REQUEST_BLOCK</a>, <a href="..\strmini\ns-strmini--hw-time-context.md">HW_TIME_CONTEXT</a>, and <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.</p>
 </dd>
 
-### -field <b>StreamHeaderMediaSpecific</b>
+### -field StreamHeaderMediaSpecific
 
 <dd>
 <p>Specifies the size in bytes of the media-specific, per-stream header extension.</p>
 </dd>
 
-### -field <b>StreamHeaderWorkspace</b>
+### -field StreamHeaderWorkspace
 
 <dd>
 <p>Specifies the size of the per-stream-header workspace.</p>
 </dd>
 
-### -field <b>Allocator</b>
+### -field Allocator
 
 <dd>
 <p>Specifies <b>TRUE</b> if the driver uses allocators. Most minidrivers set this value to <b>FALSE</b>. </p>
 </dd>
 
-### -field <b>HwEventRoutine</b>
+### -field HwEventRoutine
 
 <dd>
 <p>Pointer to the stream's <a href="stream.strminievent">StrMiniEvent</a> routine</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. Do not use.</p>

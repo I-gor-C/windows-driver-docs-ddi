@@ -61,43 +61,43 @@ NTSTATUS PsCreateSystemThread(
 ## -parameters
 <dl>
 
-### -param <i>ThreadHandle</i> [out]
+### -param ThreadHandle [out]
 
 <dd>
 <p>Points to a variable that will receive the handle. The driver must close the handle with <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> once the handle is no longer in use. This handle is a kernel handle for Windows Vista and later versions of Windows. In earlier versions of Windows, the handle might not be a kernel handle.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the requested types of access to the created thread.</p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in, optional]
+### -param ObjectAttributes [in, optional]
 
 <dd>
 <p>Points to a structure that specifies the object's attributes. OBJ_PERMANENT, OBJ_EXCLUSIVE, and OBJ_OPENIF are not valid attributes for a thread object. On Windows XP and later versions of Windows, if the caller is not running in the system process context, it must set the OBJ_KERNEL_HANDLE attribute for <i>ObjectAttributes</i>. Drivers for Microsoft Windows 2000 and Windows 98/Me must only call <b>PsCreateSystemThread</b> from the system process context. For Windows Vista and later versions of Windows, the handle will be a kernel handle.</p>
 </dd>
 
-### -param <i>ProcessHandle</i> [in, optional]
+### -param ProcessHandle [in, optional]
 
 <dd>
 <p>Specifies an open handle for the process in whose address space the thread is to be run. The caller's thread must have PROCESS_CREATE_THREAD access to this process. If this parameter is not supplied, the thread will be created in the initial system process. This value should be <b>NULL</b> for a driver-created thread. Use the <b>NtCurrentProcess</b> macro, defined in Ntddk.h, to specify the current process.</p>
 </dd>
 
-### -param <i>ClientId</i> [out, optional]
+### -param ClientId [out, optional]
 
 <dd>
 <p>Points to a structure that receives the client identifier of the new thread. This value should be <b>NULL</b> for a driver-created thread.</p>
 </dd>
 
-### -param <i>StartRoutine</i> [in]
+### -param StartRoutine [in]
 
 <dd>
 <p>The entry point for the newly created system thread. This parameter is a function pointer to a <a href="kernel.threadstart">ThreadStart</a> routine that receives a single argument, which is the <i>StartContext</i> parameter value supplied by the caller.</p>
 </dd>
 
-### -param <i>StartContext</i> [in, optional]
+### -param StartContext [in, optional]
 
 <dd>
 <p>Supplies a single argument that is passed to the thread when it begins execution.</p>

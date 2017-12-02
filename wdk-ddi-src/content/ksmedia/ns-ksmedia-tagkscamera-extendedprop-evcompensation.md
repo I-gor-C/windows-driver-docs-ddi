@@ -58,31 +58,31 @@ typedef struct _KSCAMERA_EXTENDEDPROP_EVCOMPENSATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>Not used. Set to 0.</p>
 </dd>
 
-### -field <b>Min</b>
+### -field Min
 
 <dd>
 <p>The minimum EV compensation supported. This is an absolute EV value.</p>
 </dd>
 
-### -field <b>Max</b>
+### -field Max
 
 <dd>
 <p>The maximum EV compensation supported. This is an absolute EV value.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>EV Compensation in units of steps  selected in the <b>Flags</b> member of <a href="stream.kscamera_extendedprop_header">KSCAMERA_EXTENDEDPROP_HEADER</a>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>

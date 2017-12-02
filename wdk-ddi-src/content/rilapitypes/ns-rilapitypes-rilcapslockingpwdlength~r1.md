@@ -7,7 +7,7 @@ old-location: netvista\rilcapslockingpwdlength_2.htm
 old-project: netvista
 ms.assetid: 7ab6ea03-cfe6-4679-91ff-e52aae7a5200
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCAPSLOCKINGPWDLENGTH,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef struct _RILCAPSLOCKINGPWDLENGTH {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwPersoFeature</b>
+### -field dwPersoFeature
 
 <dd></dd>
 
-### -field <b>dwPasswordLength</b>
+### -field dwPasswordLength
 
 <dd></dd>
 </dl>

@@ -60,31 +60,31 @@ typedef enum _D3DDDI_POOL {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDIPOOL_SYSTEMMEM"></a><a id="d3dddipool_systemmem"></a><b>D3DDDIPOOL_SYSTEMMEM</b>
+### -field D3DDDIPOOL_SYSTEMMEM
 
 <dd>
 <p>Resources exist in system memory.</p>
 </dd>
 
-### -field <a id="D3DDDIPOOL_VIDEOMEMORY"></a><a id="d3dddipool_videomemory"></a><b>D3DDDIPOOL_VIDEOMEMORY</b>
+### -field D3DDDIPOOL_VIDEOMEMORY
 
 <dd>
 <p>Resources exist in display memory.</p>
 </dd>
 
-### -field <a id="D3DDDIPOOL_LOCALVIDMEM"></a><a id="d3dddipool_localvidmem"></a><b>D3DDDIPOOL_LOCALVIDMEM</b>
+### -field D3DDDIPOOL_LOCALVIDMEM
 
 <dd>
 <p>Resources exist in true, local display memory rather than nonlocal display memory (for example, AGP memory).</p>
 </dd>
 
-### -field <a id="D3DDDIPOOL_NONLOCALVIDMEM"></a><a id="d3dddipool_nonlocalvidmem"></a><b>D3DDDIPOOL_NONLOCALVIDMEM</b>
+### -field D3DDDIPOOL_NONLOCALVIDMEM
 
 <dd>
 <p>Resources exist in nonlocal display memory (for example, AGP memory) rather than true, local display memory.</p>
 </dd>
 
-### -field <a id="D3DDDIPOOL_STAGINGMEM"></a><a id="d3dddipool_stagingmem"></a><b>D3DDDIPOOL_STAGINGMEM</b>
+### -field D3DDDIPOOL_STAGINGMEM
 
 <dd>
 <p>Resources exist in staging memory that the user-mode display driver has allocated. This value indicates to the driver that it should allocate its own staging memory rather than use allocated Direct3D 10Level 9 memory.</p>

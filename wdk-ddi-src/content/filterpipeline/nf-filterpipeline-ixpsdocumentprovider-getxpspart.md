@@ -54,7 +54,7 @@ HRESULT GetXpsPart(
 ## -parameters
 <dl>
 
-### -param <i>ppIXpsPart</i> [out]
+### -param ppIXpsPart [out]
 
 <dd>
 <p>The XPS part. This part is the <b>IUnknown</b> interface of an object that is an XPS part. If <i>ppIXpsPart</i> is NULL, there are no more XPS parts to consume and the filter is ready to finish processing.</p>

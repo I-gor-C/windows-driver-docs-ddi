@@ -7,7 +7,7 @@ old-location: ifsk\rxfinishfcbinitialization.htm
 old-project: ifsk
 ms.assetid: 290d0b06-ccf7-4792-b7bb-556092845e55
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxFinishFcbInitialization
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ VOID RxFinishFcbInitialization(
 ## -parameters
 <dl>
 
-### -param <i>MrxFcb</i> [in, out]
+### -param MrxFcb [in, out]
 
 <dd>
 <p>A pointer to the MRX_FCB structure being initialized.</p>
 </dd>
 
-### -param <i>RdbssStorageType</i> [in]
+### -param RdbssStorageType [in]
 
 <dd>
 <p>The value indicating the storage type of entity that the FCB refers to. Possible options for this parameter include the following:</p>
@@ -74,7 +74,7 @@ VOID RxFinishFcbInitialization(
 <tr>
 <td width="40%"><a id="RDBSS_NTC_MAILSLOT"></a><a id="rdbss_ntc_mailslot"></a><dl>
 
-### -param <b>RDBSS_NTC_MAILSLOT</b>
+### -param RDBSS_NTC_MAILSLOT
 
 </dl>
 </td>
@@ -85,7 +85,7 @@ VOID RxFinishFcbInitialization(
 <tr>
 <td width="40%"><a id="RDBSS_NTC_SPOOLFILE"></a><a id="rdbss_ntc_spoolfile"></a><dl>
 
-### -param <b>RDBSS_NTC_SPOOLFILE</b>
+### -param RDBSS_NTC_SPOOLFILE
 
 </dl>
 </td>
@@ -96,7 +96,7 @@ VOID RxFinishFcbInitialization(
 <tr>
 <td width="40%"><a id="RDBSS_NTC_STORAGE_TYPE_DIRECTORY"></a><a id="rdbss_ntc_storage_type_directory"></a><dl>
 
-### -param <b>RDBSS_NTC_STORAGE_TYPE_DIRECTORY</b>
+### -param RDBSS_NTC_STORAGE_TYPE_DIRECTORY
 
 </dl>
 </td>
@@ -107,7 +107,7 @@ VOID RxFinishFcbInitialization(
 <tr>
 <td width="40%"><a id="RDBSS_NTC_STORAGE_TYPE_UNKNOWN"></a><a id="rdbss_ntc_storage_type_unknown"></a><dl>
 
-### -param <b>RDBSS_NTC_STORAGE_TYPE_UNKNOWN</b>
+### -param RDBSS_NTC_STORAGE_TYPE_UNKNOWN
 
 </dl>
 </td>
@@ -118,7 +118,7 @@ VOID RxFinishFcbInitialization(
 <tr>
 <td width="40%"><a id="RDBSS_NTC_STORAGE_TYPE_FILE"></a><a id="rdbss_ntc_storage_type_file"></a><dl>
 
-### -param <b>RDBSS_NTC_STORAGE_TYPE_FILE</b>
+### -param RDBSS_NTC_STORAGE_TYPE_FILE
 
 </dl>
 </td>
@@ -130,7 +130,7 @@ VOID RxFinishFcbInitialization(
 <p> </p>
 </dd>
 
-### -param <i>InitPacket</i> [in, optional]
+### -param InitPacket [in, optional]
 
 <dd>
 <p>Pointer to extra data that is required for initialization depending on the storage type of the FCB being initialized. This parameter may be a <b>NULL</b> pointer if no extra data is provided.</p>
@@ -241,4 +241,4 @@ VOID RxFinishFcbInitialization(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxFinishFcbInitialization function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxFinishFcbInitialization function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

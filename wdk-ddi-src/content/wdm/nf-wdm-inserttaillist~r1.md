@@ -56,13 +56,13 @@ VOID InsertTailList(
 ## -parameters
 <dl>
 
-### -param <i>ListHead</i> [in, out]
+### -param ListHead [in, out]
 
 <dd>
 <p>Pointer to the <a href="kernel.list_entry">LIST_ENTRY</a> structure that represents the head of the list.</p>
 </dd>
 
-### -param <i>Entry</i> [in, out]
+### -param Entry [in, out]
 
 <dd>
 <p>Pointer to a <a href="kernel.list_entry">LIST_ENTRY</a> structure that represents the entry to be inserted in the list.</p>

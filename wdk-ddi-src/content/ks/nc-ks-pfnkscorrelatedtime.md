@@ -58,13 +58,13 @@ LONGLONG FASTCALL KStrCorrelatedTime(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to the minidriver-supplied information context. The minidriver passes the information context to <a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a> in the function's <i>DeferredContext</i> parameter when the minidriver allocates a custom DPC timer object.</p>
 </dd>
 
-### -param <i>SystemTime</i> [out]
+### -param SystemTime [out]
 
 <dd>
 <p>Specifies a pointer to a variable that receives the performance counter frequency.</p>
@@ -77,7 +77,7 @@ LONGLONG FASTCALL KStrCorrelatedTime(
 ## -remarks
 <p>Typically, if a minidriver supplies a <i>KStrCorrelatedTime</i> callback function, the minidriver must also supply <a href="stream.kstrsettimer">KStrSetTimer</a> and <a href="stream.kstrcanceltimer">KStrCancelTimer</a> callback functions.</p>
 
-<p>The minidriver-supplied <i>KStrCorrelatedTimer </i>must have the same characteristics as <a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>.</p>
+<p>The minidriver-supplied <i>KStrCorrelatedTimer </i>must have the same characteristics as <a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>.</p>
 
 ## -requirements
 <table>
@@ -115,7 +115,7 @@ LONGLONG FASTCALL KStrCorrelatedTime(
 <a href="stream.kstrcorrelatedtime">KStrCorrelatedTime</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
 </dt>
 </dl>
 <p> </p>

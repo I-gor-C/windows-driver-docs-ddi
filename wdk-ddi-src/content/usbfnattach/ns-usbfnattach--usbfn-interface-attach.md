@@ -58,28 +58,28 @@ typedef struct _USBFN_INTERFACE_ATTACH {
 ## -struct-fields
 <dl>
 
-### -field <b>InterfaceHeader</b>
+### -field InterfaceHeader
 
 <dd>
 <p>The interface version number.</p>
 </dd>
 
-### -field <b>GetAttachAction</b>
+### -field GetAttachAction
 
 <dd>
-<p>A pointer to the driver's implementation of the <a href="buses.usbfn_get_attach_action">USBFN_GET_ATTACH_ACTION</a> callback function.</p>
+<p>A pointer to the driver's implementation of the <a href="..\usbfnattach\nc-usbfnattach-usbfn-get-attach-action.md">USBFN_GET_ATTACH_ACTION</a> callback function.</p>
 </dd>
 
-### -field <b>GetAttachActionAbortOperation</b>
+### -field GetAttachActionAbortOperation
 
 <dd>
-<p>A pointer to the driver's implementation of the <a href="buses.usbfn_get_attach_action_abort">USBFN_GET_ATTACH_ACTION_ABORT</a> callback function.</p>
+<p>A pointer to the driver's implementation of the <a href="..\usbfnattach\nc-usbfnattach-usbfn-get-attach-action-abort.md">USBFN_GET_ATTACH_ACTION_ABORT</a> callback function.</p>
 </dd>
 
-### -field <b>SetDeviceState</b>
+### -field SetDeviceState
 
 <dd>
-<p>A pointer to the driver's implementation of the <a href="buses.usbfn_set_device_state">USBFN_SET_DEVICE_STATE</a> callback function.</p>
+<p>A pointer to the driver's implementation of the <a href="..\usbfnattach\nc-usbfnattach-usbfn-set-device-state.md">USBFN_SET_DEVICE_STATE</a> callback function.</p>
 </dd>
 </dl>
 

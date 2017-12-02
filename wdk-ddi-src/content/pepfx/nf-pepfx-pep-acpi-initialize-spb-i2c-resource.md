@@ -64,31 +64,31 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_SPB_I2C_RESOURCE(
 ## -parameters
 <dl>
 
-### -param <i>SlaveAddress</i> [in]
+### -param SlaveAddress [in]
 
 <dd>
 <p>The I2C bus address for this connection.</p>
 </dd>
 
-### -param <i>DeviceInitiated</i> [in]
+### -param DeviceInitiated [in]
 
 <dd>
 <p>If true, indicates that communication over this connection is initiated by the device.</p>
 </dd>
 
-### -param <i>ConnectionSpeed</i> [in]
+### -param ConnectionSpeed [in]
 
 <dd>
 <p>The maximum speed, in hertz, supported by this connection.</p>
 </dd>
 
-### -param <i>AddressingMode</i> [in]
+### -param AddressingMode [in]
 
 <dd>
 <p>Indicates that this device is in addressing mode.</p>
 </dd>
 
-### -param <i>ResourceSource</i> [in]
+### -param ResourceSource [in]
 
 <dd>
 <p>The name of the serial bus controller device to which this
@@ -97,37 +97,37 @@ qualified path, a relative path, or a simple name segment
 that utilizes the namespace search rules.</p>
 </dd>
 
-### -param <i>ResourceSourceIndex</i> [in]
+### -param ResourceSourceIndex [in]
 
 <dd>
 <p>This parameter should always be set to zero.</p>
 </dd>
 
-### -param <i>ResourceUsage</i> [in]
+### -param ResourceUsage [in]
 
 <dd>
 <p>Indicates if the resource is in use.</p>
 </dd>
 
-### -param <i>SharedMode</i> [in]
+### -param SharedMode [in]
 
 <dd>
 <p>Indicates if the resource is shared.</p>
 </dd>
 
-### -param <i>VendorData</i> [in]
+### -param VendorData [in]
 
 <dd>
 <p>A pointer to optional data that is specific to the serial bus connection type.</p>
 </dd>
 
-### -param <i>VendorDataLength</i> [in]
+### -param VendorDataLength [in]
 
 <dd>
 <p>The length of the buffer pointed to by the <i>VendorData</i> parameter.</p>
 </dd>
 
-### -param <i>Resource</i> [out]
+### -param Resource [out]
 
 <dd>
 <p>A pointer to the resource. The structure behind the pointer is of type <a href="..\pepfx\ns-pepfx--pep-acpi-spb-i2c-resource.md">PEP_ACPI_SPB_I2C_RESOURCE</a>.</p>

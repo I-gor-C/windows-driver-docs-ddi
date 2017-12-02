@@ -56,13 +56,13 @@ typedef struct _USBD_INTERFACE_LIST_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>InterfaceDescriptor</b>
+### -field InterfaceDescriptor
 
 <dd>
 <p>Pointer to a <a href="..\usbspec\ns-usbspec--usb-interface-descriptor.md">USB_INTERFACE_DESCRIPTOR</a> structure that describes the interface to be added to the configuration request.</p>
 </dd>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>Pointer to a <a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a> structure that describes the properties and settings of the interface pointed to by <i>InterfaceDescriptor</i>.</p>

@@ -60,37 +60,37 @@ HRESULT RasterizeRect(
 ## -parameters
 <dl>
 
-### -param <i>x</i> [in]
+### -param x [in]
 
 <dd>
 <p>The x coordinate, in pixels, at the left edge of the output bitmap.</p>
 </dd>
 
-### -param <i>y</i> [in]
+### -param y [in]
 
 <dd>
 <p>The y coordinate, in pixels, at the top edge of the output bitmap.</p>
 </dd>
 
-### -param <i>width</i> [in]
+### -param width [in]
 
 <dd>
 <p>The width, in pixels, of the output bitmap.</p>
 </dd>
 
-### -param <i>height</i> [in]
+### -param height [in]
 
 <dd>
 <p>The height, in pixels, of the output bitmap.</p>
 </dd>
 
-### -param <i>notificationCallback</i> [in, optional]
+### -param notificationCallback [in, optional]
 
 <dd>
 <p>Pointer to the <a href="print.ixpsrasterizernotificationcallback_interface">IXpsRasterizerNotificationCallback</a> interface of a notification object that is implemented by the caller. This parameter is optional and can be <b>NULL</b> if the caller does not require notification callbacks.</p>
 </dd>
 
-### -param <i>bitmap</i> [out, optional]
+### -param bitmap [out, optional]
 
 <dd>
 <p>Pointer to a location into which the method writes a pointer to the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ee719675.aspx">IWICBitmap</a> interface of the newly created bitmap object. If the method fails, it writes <b>NULL</b> to this location and returns an error code.</p>

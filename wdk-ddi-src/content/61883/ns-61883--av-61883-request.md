@@ -7,7 +7,7 @@ old-location: ieee\av_61883_request.htm
 old-project: IEEE
 ms.assetid: 697fbf86-5c99-4e35-bcb4-a6f5272cc987
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: AV_61883_REQUEST, AV_61883_REQUEST, *PAV_61883_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -81,163 +81,163 @@ typedef struct _AV_61883_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>Function</b>
+### -field Function
 
 <dd>
 <p>Determines the type of request. Each request type is documented under the value of <b>Function</b> in <a href="https://msdn.microsoft.com/library/windows/hardware/ff537195">IEC-61883 Protocol I/O Requests</a>.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The device driver interface (DDI) version for the request. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537219">INIT_61883_HEADER</a> macro initializes <b>Version</b> to CURRENT_61883_DDI_VERSION.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags specific to the request. For details, see the reference page for the request. Drivers must set this member to zero for requests that do not use flags.</p>
 </dd>
 
-### -field <b>GetUnitInfo</b>
+### -field GetUnitInfo
 
 <dd>
 <p>A <a href="..\61883\ns-61883--get-unit-info.md">GET_UNIT_INFO</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536983">Av61883_GetUnitInfo</a>.</p>
 </dd>
 
-### -field <b>SetUnitInfo</b>
+### -field SetUnitInfo
 
 <dd>
 <p>A <a href="..\61883\ns-61883--set-unit-info.md">SET_UNIT_INFO</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff537002">Av61883_SetUnitInfo</a>.</p>
 </dd>
 
-### -field <b>GetPlugHandle</b>
+### -field GetPlugHandle
 
 <dd>
 <p>A <a href="..\61883\ns-61883--cmp-get-plug-handle.md">CMP_GET_PLUG_HANDLE</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536979">Av61883_GetPlugHandle</a>.</p>
 </dd>
 
-### -field <b>GetPlugState</b>
+### -field GetPlugState
 
 <dd>
 <p>A <a href="..\61883\ns-61883--cmp-get-plug-state.md">CMP_GET_PLUG_STATE</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536980">Av61883_GetPlugState</a>.</p>
 </dd>
 
-### -field <b>Connect</b>
+### -field Connect
 
 <dd>
 <p>A CMP_CONNECT structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536958">Av61883_Connect</a>.</p>
 </dd>
 
-### -field <b>Disconnect</b>
+### -field Disconnect
 
 <dd>
 <p>A <a href="..\61883\ns-61883--cmp-disconnect.md">CMP_DISCONNECT</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536966">Av61883_Disconnect</a>.</p>
 </dd>
 
-### -field <b>AttachFrame</b>
+### -field AttachFrame
 
 <dd>
 <p>A <a href="..\61883\ns-61883--cip-attach-frame.md">CIP_ATTACH_FRAME</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536950">Av61883_AttachFrame</a>.</p>
 </dd>
 
-### -field <b>CancelFrame</b>
+### -field CancelFrame
 
 <dd>
 <p>A <a href="..\61883\ns-61883--cip-cancel-frame.md">CIP_CANCEL_FRAME</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536956">Av61883_CancelFrame</a>.</p>
 </dd>
 
-### -field <b>Talk</b>
+### -field Talk
 
 <dd>
 <p>A <a href="..\61883\ns-61883--cip-talk.md">CIP_TALK</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff537007">Av61883_Talk</a>.</p>
 </dd>
 
-### -field <b>Listen</b>
+### -field Listen
 
 <dd>
 <p>A <a href="..\61883\ns-61883--cip-listen.md">CIP_LISTEN</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536985">Av61883_Listen</a>.</p>
 </dd>
 
-### -field <b>Stop</b>
+### -field Stop
 
 <dd>
 <p>A <a href="..\61883\ns-61883--cip-stop.md">CIP_STOP</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff537005">Av61883_Stop</a>.</p>
 </dd>
 
-### -field <b>Request</b>
+### -field Request
 
 <dd>
 <p>An <a href="..\61883\ns-61883--fcp-send-request.md">FCP_SEND_REQUEST</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536992">Av61883_SendFcpResponse</a>.</p>
 </dd>
 
-### -field <b>Response</b>
+### -field Response
 
 <dd>
 <p>An <a href="..\61883\ns-61883--fcp-get-response.md">FCP_GET_RESPONSE</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536977">Av61883_GetFcpResponse</a>.</p>
 </dd>
 
-### -field <b>SendRequest</b>
+### -field SendRequest
 
 <dd>
 <p>An <a href="..\61883\ns-61883--fcp-send-request.md">FCP_SEND_REQUEST</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536992">Av61883_SendFcpResponse</a>.</p>
 </dd>
 
-### -field <b>GetResponse</b>
+### -field GetResponse
 
 <dd>
 <p>An <a href="..\61883\ns-61883--fcp-get-response.md">FCP_GET_RESPONSE</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536977">Av61883_GetFcpResponse</a>.</p>
 </dd>
 
-### -field <b>GetRequest</b>
+### -field GetRequest
 
 <dd>
 <p>An <a href="..\61883\ns-61883--fcp-get-request.md">FCP_GET_REQUEST</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536974">Av61883_GetFcpRequest</a>.</p>
 </dd>
 
-### -field <b>SendResponse</b>
+### -field SendResponse
 
 <dd>
 <p>An <a href="..\61883\ns-61883--fcp-send-response.md">FCP_SEND_RESPONSE</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536992">Av61883_SendFcpResponse</a>.</p>
 </dd>
 
-### -field <b>SetFcpNotify</b>
+### -field SetFcpNotify
 
 <dd>
 <p>A <a href="..\61883\ns-61883--set-fcp-notify.md">SET_FCP_NOTIFY</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536993">Av61883_SetFcpNotify</a>.</p>
 </dd>
 
-### -field <b>CreatePlug</b>
+### -field CreatePlug
 
 <dd>
 <p>A <a href="..\61883\ns-61883--cmp-create-plug.md">CMP_CREATE_PLUG</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536961">Av61883_CreatePlug</a>.</p>
 </dd>
 
-### -field <b>DeletePlug</b>
+### -field DeletePlug
 
 <dd>
 <p>A <a href="..\61883\ns-61883--cmp-delete-plug.md">CMP_DELETE_PLUG</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536964">Av61883_DeletePlug</a>.</p>
 </dd>
 
-### -field <b>SetPlug</b>
+### -field SetPlug
 
 <dd>
 <p>A <a href="..\61883\ns-61883--cmp-set-plug.md">CMP_SET_PLUG</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536995">Av61883_SetPlug</a>.</p>
 </dd>
 
-### -field <b>BusResetNotify</b>
+### -field BusResetNotify
 
 <dd>
 <p>A <a href="..\61883\ns-61883--bus-reset-notify.md">BUS_RESET_NOTIFY</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536955">Av61883_BusResetNotify</a>.</p>
 </dd>
 
-### -field <b>SetUnitDirectory</b>
+### -field SetUnitDirectory
 
 <dd>
 <p>A <a href="..\61883\ns-61883--set-unit-directory.md">SET_UNIT_DIRECTORY</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536998">Av61883_SetUnitDirectory</a>.</p>
 </dd>
 
-### -field <b>MonitorPlugs</b>
+### -field MonitorPlugs
 
 <dd>
 <p>A <a href="..\61883\ns-61883--cmp-monitor-plugs.md">CMP_MONITOR_PLUGS</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536987">Av61883_MonitorPlugs</a>.</p>
@@ -272,4 +272,4 @@ typedef struct _AV_61883_REQUEST {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20AV_61883_REQUEST structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20AV_61883_REQUEST structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

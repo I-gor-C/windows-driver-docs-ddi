@@ -58,25 +58,25 @@ typedef struct _BOOTDISK_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>BootPartitionOffset</b>
+### -field BootPartitionOffset
 
 <dd>
 <p>Specifies the offset, in bytes, on the boot disk where the boot partition begins.</p>
 </dd>
 
-### -field <b>SystemPartitionOffset</b>
+### -field SystemPartitionOffset
 
 <dd>
 <p>Specifies the offset, in bytes, on the system disk where the system partition begins.</p>
 </dd>
 
-### -field <b>BootDeviceSignature</b>
+### -field BootDeviceSignature
 
 <dd>
 <p>If the boot disk is formatted with an MBR partition table, this specifies the signature for the disk's MBR partition table. Otherwise, this member is unused.</p>
 </dd>
 
-### -field <b>SystemDeviceSignature</b>
+### -field SystemDeviceSignature
 
 <dd>
 <p>If the system disk is formatted with an MBR partition table, this specifies the signature for the disk's MBR partition table. Otherwise, this member is unused.</p>

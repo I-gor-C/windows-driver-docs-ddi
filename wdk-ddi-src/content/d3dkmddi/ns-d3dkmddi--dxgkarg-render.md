@@ -68,7 +68,7 @@ typedef struct _DXGKARG_RENDER {
 ## -struct-fields
 <dl>
 
-### -field <b>pCommand</b>
+### -field pCommand
 
 <dd>
 <p>[in] A pointer to the start of the command buffer.</p>
@@ -76,49 +76,49 @@ typedef struct _DXGKARG_RENDER {
 <div> </div>
 </dd>
 
-### -field <b>CommandLength</b>
+### -field CommandLength
 
 <dd>
 <p>[in] The size, in bytes, of the command buffer that <b>pCommand</b> points to.</p>
 </dd>
 
-### -field <b>pDmaBuffer</b>
+### -field pDmaBuffer
 
 <dd>
 <p>[out] A pointer to the start of the DMA buffer, which is aligned on 4 KB. This buffer can be sent through DMA to the graphics hardware. Before the display miniport driver returns from the <a href="display.dxgkddirender">DxgkDdiRender</a> or <a href="display.dxgkddirenderkm">DxgkDdiRenderKm</a> functions, the driver should set <b>pDmaBuffer</b> to the next empty byte that follows the last byte that the driver wrote to, or the driver should point to the location (one byte beyond the buffer space) if no more space is available. This location would have been correct if the buffer was large enough.</p>
 </dd>
 
-### -field <b>DmaSize</b>
+### -field DmaSize
 
 <dd>
 <p>[in] The size, in bytes, of the DMA buffer that <b>pDmaBuffer</b> points to.</p>
 </dd>
 
-### -field <b>pDmaBufferPrivateData</b>
+### -field pDmaBufferPrivateData
 
 <dd>
 <p>[in] A pointer to a driver-resident private data structure that is used for generating the DMA buffer that <b>pDmaBuffer</b> points to.</p>
 </dd>
 
-### -field <b>DmaBufferPrivateDataSize</b>
+### -field DmaBufferPrivateDataSize
 
 <dd>
 <p>[in] The number of bytes that remain in the private data structure that <b>pDmaBufferPrivateData</b> points to for the current operation.</p>
 </dd>
 
-### -field <b>pAllocationList</b>
+### -field pAllocationList
 
 <dd>
 <p>[in] An array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationlist.md">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that the DMA buffer references. Each allocation that is referenced should appear once for optimal performance.</p>
 </dd>
 
-### -field <b>AllocationListSize</b>
+### -field AllocationListSize
 
 <dd>
 <p>[in] The available number of elements in the array that <b>pAllocationList</b> specifies, which represents the number of allocation specifications to send through DMA to the graphics hardware.</p>
 </dd>
 
-### -field <b>pPatchLocationListIn</b>
+### -field pPatchLocationListIn
 
 <dd>
 <p>[in] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures for the patch-location list that the user-mode display driver provides in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a> function.</p>
@@ -126,37 +126,37 @@ typedef struct _DXGKARG_RENDER {
 <div> </div>
 </dd>
 
-### -field <b>PatchLocationListInSize</b>
+### -field PatchLocationListInSize
 
 <dd>
 <p>[in] The number of elements in the patch-location list that <b>pPatchLocationListIn</b> specifies.</p>
 </dd>
 
-### -field <b>pPatchLocationListOut</b>
+### -field pPatchLocationListOut
 
 <dd>
 <p>[in/out] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures for the patch-location list that the display miniport driver fills in. Before the driver returns from a call to its <a href="display.dxgkddirender">DxgkDdiRender</a> or <a href="display.dxgkddirenderkm">DxgkDdiRenderKm</a> functions, the driver must set <b>pPatchLocationListOut</b> to the next <b>D3DDDI_PATCHLOCATIONLIST</b> element that follows the last <b>D3DDDI_PATCHLOCATIONLIST</b> element that the driver updated.</p>
 </dd>
 
-### -field <b>PatchLocationListOutSize</b>
+### -field PatchLocationListOutSize
 
 <dd>
 <p>[in] The number of elements in the patch-location list that <b>pPatchLocationListOut</b> specifies. The display miniport driver is not required to fill all of the elements in the entire list; the driver must use only elements that are necessary to describe the patch location within the DMA buffer. </p>
 </dd>
 
-### -field <b>MultipassOffset</b>
+### -field MultipassOffset
 
 <dd>
 <p>[in/out] A UINT value that specifies the progress of the rendering operation if the display miniport driver's <a href="display.dxgkddirender">DxgkDdiRender</a> or <a href="display.dxgkddirenderkm">DxgkDdiRenderKm</a> functions must return <b>STATUS_GRAPHICS_INSUFFICIENT_DMA_BUFFER</b> to obtain a new DMA buffer. When the driver's <i>DxgkDdiRender</i> or <i>DxgkDdiRenderKm</i> function is first called with a new command buffer, <b>MultipassOffset</b> is initialized to zero. Before the driver returns from the <i>DxgkDdiRender</i> or <i>DxgkDdiRenderKm</i> calls, the driver sets this member to show translation progress for subsequent <i>DxgkDdiRender</i> or <i>DxgkDdiRenderKm</i> call with the same command buffer. The DirectX graphics kernel subsystem does not change the value further. </p>
 </dd>
 
-### -field <b>DmaBufferSegmentId</b>
+### -field DmaBufferSegmentId
 
 <dd>
 <p>[in] The identifier of the memory segment that the DMA buffer was paged in. If the identifier is zero, the DMA buffer is not correctly paged in.</p>
 </dd>
 
-### -field <b>DmaBufferPhysicalAddress</b>
+### -field DmaBufferPhysicalAddress
 
 <dd>
 <p>[in] A <b>PHYSICAL_ADDRESS</b> data type (which is defined as <b>LARGE_INTEGER</b>) that indicates the physical address where the DMA buffer was paged in. If the physical address is zero, the DMA buffer is not correctly paged in.</p>

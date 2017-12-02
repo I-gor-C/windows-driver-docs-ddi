@@ -60,7 +60,7 @@ typedef struct IDDCX_ENDPOINT_VERSION {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -68,7 +68,7 @@ typedef struct IDDCX_ENDPOINT_VERSION {
                  </p>
 </dd>
 
-### -field <b>MajorVer</b>
+### -field MajorVer
 
 <dd>
 <p>
@@ -76,7 +76,7 @@ typedef struct IDDCX_ENDPOINT_VERSION {
                  </p>
 </dd>
 
-### -field <b>MinorVer</b>
+### -field MinorVer
 
 <dd>
 <p>
@@ -84,7 +84,7 @@ typedef struct IDDCX_ENDPOINT_VERSION {
                  </p>
 </dd>
 
-### -field <b>Build</b>
+### -field Build
 
 <dd>
 <p>
@@ -92,7 +92,7 @@ typedef struct IDDCX_ENDPOINT_VERSION {
                  </p>
 </dd>
 
-### -field <b>SKU</b>
+### -field SKU
 
 <dd>
 <p>

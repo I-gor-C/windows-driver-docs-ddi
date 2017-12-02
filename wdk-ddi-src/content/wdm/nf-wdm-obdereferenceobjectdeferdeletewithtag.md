@@ -56,13 +56,13 @@ VOID ObDereferenceObjectDeferDeleteWithTag(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>A pointer to the object. The caller obtains this pointer either when it creates the object, or from a previous call to the <a href="..\wdm\nf-wdm-obreferenceobjectbyhandlewithtag.md">ObReferenceObjectByHandleWithTag</a> routine after it opens the object. </p>
 </dd>
 
-### -param <i>Tag</i> [in]
+### -param Tag [in]
 
 <dd>
 <p>Specifies a four-byte, custom tag value. For more information, see the following Remarks section. </p>

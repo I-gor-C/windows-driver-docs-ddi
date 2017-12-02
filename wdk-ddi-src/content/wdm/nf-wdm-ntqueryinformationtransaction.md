@@ -59,13 +59,13 @@ NTSTATUS ZwQueryInformationTransaction(
 ## -parameters
 <dl>
 
-### -param <i>TransactionHandle</i> [in]
+### -param TransactionHandle [in]
 
 <dd>
 <p>A handle to a <a href="https://msdn.microsoft.com/124105bd-70be-49b1-8ea4-af6ba1f3cf16">transaction object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a> or <a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>. The handle must have TRANSACTION_QUERY_INFORMATION access to the object.</p>
 </dd>
 
-### -param <i>TransactionInformationClass</i> [in]
+### -param TransactionInformationClass [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--transaction-information-class.md">TRANSACTION_INFORMATION_CLASS</a>-typed value that specifies the information to obtain. The value must be one of the following values:</p>
@@ -83,19 +83,19 @@ NTSTATUS ZwQueryInformationTransaction(
 <p>The <b>TransactionFullInformation</b> value is not used with <b>ZwQueryInformationTransaction</b>.</p>
 </dd>
 
-### -param <i>TransactionInformation</i> [out]
+### -param TransactionInformation [out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives the information that the <i>TransactionInformationClass</i> parameter specifies. The buffer's structure type must be <a href="..\wdm\ns-wdm--transaction-basic-information.md">TRANSACTION_BASIC_INFORMATION</a>, <a href="..\wdm\ns-wdm--transaction-properties-information.md">TRANSACTION_PROPERTIES_INFORMATION</a>, or <a href="..\wdm\ns-wdm--transaction-enlistments-information.md">TRANSACTION_ENLISTMENTS_INFORMATION</a>.</p>
 </dd>
 
-### -param <i>TransactionInformationLength</i> [in]
+### -param TransactionInformationLength [in]
 
 <dd>
 <p>The length, in bytes, of the buffer that the <i>TransactionInformation</i> parameter points to, including the length of any additional array elements that the caller has allocated to receive information.</p>
 </dd>
 
-### -param <i>ReturnLength</i> [out, optional]
+### -param ReturnLength [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the length, in bytes, of the information that KTM writes to the <i>TransactionInformation</i> buffer. This parameter is optional and can be <b>NULL</b>. </p>

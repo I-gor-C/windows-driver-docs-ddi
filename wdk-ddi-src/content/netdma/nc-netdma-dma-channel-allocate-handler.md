@@ -7,7 +7,7 @@ old-location: netvista\providerallocatedmachannel.htm
 old-project: netvista
 ms.assetid: 42bc0e08-3d85-424f-aaa4-4df788d3706a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: MIRACAST_WFD_CONNECTION_STATS, MIRACAST_WFD_CONNECTION_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ NTSTATUS ProviderAllocateDmaChannel(
 ## -parameters
 <dl>
 
-### -param <i>ProviderContext</i> [in]
+### -param ProviderContext [in]
 
 <dd>
 <p>A pointer that identifies a DMA provider's context area. The DMA provider driver passes this
@@ -67,7 +67,7 @@ NTSTATUS ProviderAllocateDmaChannel(
      NetDmaRegisterProvider</a> function.</p>
 </dd>
 
-### -param <i>ChannelParameters</i> [in]
+### -param ChannelParameters [in]
 
 <dd>
 <p>A pointer to a 
@@ -76,14 +76,14 @@ NTSTATUS ProviderAllocateDmaChannel(
      channel.</p>
 </dd>
 
-### -param <i>NetDmaChannelHandle</i> [in]
+### -param NetDmaChannelHandle [in]
 
 <dd>
 <p>A handle that identifies the DMA channel. Provider drivers pass this handle to 
      <b>NetDma<i>Xxx</i></b> functions to identify the DMA channel.</p>
 </dd>
 
-### -param <i>pProviderChannelContext</i> [out]
+### -param pProviderChannelContext [out]
 
 <dd>
 <p>A pointer to a value that is a pointer to a DMA provider's context area for the DMA channel. The
@@ -117,7 +117,7 @@ NTSTATUS ProviderAllocateDmaChannel(
     <i>ChannelParameters</i> parameter. If MSI-X is not supported or MSI-X is supported but a DMA channel with
     a matching interrupt CPU affinity is not available, the DMA provider driver allocates any available DMA
     channel and calls the 
-    <a href="..\ntddk\nf-ntddk-kesettargetprocessordpc.md">KeSetTargetProcessorDpc</a> routine to
+    <a href="..\wdm\nf-wdm-kesettargetprocessordpc.md">KeSetTargetProcessorDpc</a> routine to
     set the target CPU of the interrupt DPC to match one of the specified affinity mask bits.</p>
 
 <p>The DMA provider always driver returns the CPU number that it associated with the interrupt DPC for
@@ -175,7 +175,7 @@ NTSTATUS ProviderAllocateDmaChannel(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-kesettargetprocessordpc.md">KeSetTargetProcessorDpc</a>
+<a href="..\wdm\nf-wdm-kesettargetprocessordpc.md">KeSetTargetProcessorDpc</a>
 </dt>
 <dt>
 <a href="..\netdma\ns-netdma--net-dma-channel-parameters.md">NET_DMA_CHANNEL_PARAMETERS</a>
@@ -189,4 +189,4 @@ NTSTATUS ProviderAllocateDmaChannel(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DMA_CHANNEL_ALLOCATE_HANDLER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DMA_CHANNEL_ALLOCATE_HANDLER callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

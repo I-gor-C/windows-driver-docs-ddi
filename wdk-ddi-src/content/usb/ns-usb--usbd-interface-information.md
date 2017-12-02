@@ -64,61 +64,61 @@ typedef struct _USBD_INTERFACE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Specifies the length, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>InterfaceNumber</b>
+### -field InterfaceNumber
 
 <dd>
 <p>Specifies the device-defined index identifier for this interface.</p>
 </dd>
 
-### -field <b>AlternateSetting</b>
+### -field AlternateSetting
 
 <dd>
 <p>Specifies a device-defined index identifier that indicates which alternate setting this interface is using, should use, or describes.</p>
 </dd>
 
-### -field <b>Class</b>
+### -field Class
 
 <dd>
 <p>Contains a USB-assigned identifier that specifies a USB-defined class that this interface conforms to.</p>
 </dd>
 
-### -field <b>SubClass</b>
+### -field SubClass
 
 <dd>
 <p>Contains a USB-assigned identifier that specifies a USB-defined subclass that this interface conforms to. This code is specific to the code in <b>Class</b>.</p>
 </dd>
 
-### -field <b>Protocol</b>
+### -field Protocol
 
 <dd>
 <p>Contains a USB-assigned identifier that specifies a USB-defined protocol that this interface conforms to. This code is specific to the codes in <b>Class</b> and <b>SubClass</b>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>InterfaceHandle</b>
+### -field InterfaceHandle
 
 <dd>
 <p>Contains a host controller driver-defined handle that is used to access this interface. This member should be treated as opaque.</p>
 </dd>
 
-### -field <b>NumberOfPipes</b>
+### -field NumberOfPipes
 
 <dd>
 <p>Specifies the number of pipes (endpoints) in this interface.</p>
 </dd>
 
-### -field <b>Pipes</b>
+### -field Pipes
 
 <dd>
 <p>Pointer to the first element in the array of <a href="..\usb\ns-usb--usbd-pipe-information.md">USBD_PIPE_INFORMATION</a> structures. The length of the array depends on the number of endpoints in the interface descriptor.</p>

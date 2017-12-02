@@ -55,13 +55,13 @@ typedef struct _DXVAHDDDI_STREAM_STATE_ALPHA_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>[in] A Boolean value that specifies whether the driver should alpha blend. The default value is <b>FALSE</b>, which indicates that alpha blend is disabled. </p>
 </dd>
 
-### -field <b>Alpha</b>
+### -field Alpha
 
 <dd>
 <p>[in] A FLOAT value in the 0.0 to 1.0 range that describes the alpha level (that is, the transparency level). The default value is 1.0 for opaque. </p>

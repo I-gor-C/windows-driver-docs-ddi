@@ -7,7 +7,7 @@ old-location: netvista\dot11_vwifi_combination_v3.htm
 old-project: netvista
 ms.assetid: 65A397AE-B835-4043-9A81-24055901310B
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_VWIFI_COMBINATION_V3,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct _DOT11_VWIFI_COMBINATION_V3 {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>DOT11_VWIFI_COMBINATION_V3</b> structure. The required settings for the members of <b>Header</b> are the following.</p>
@@ -83,31 +83,31 @@ typedef struct _DOT11_VWIFI_COMBINATION_V3 {
 <p> </p>
 </dd>
 
-### -field <b>uNumInfrastructure</b>
+### -field uNumInfrastructure
 
 <dd>
 <p>The number of 802.11 infrastructure stations supported.</p>
 </dd>
 
-### -field <b>uNumAdhoc</b>
+### -field uNumAdhoc
 
 <dd>
 <p>The number of adhoc stations supported.</p>
 </dd>
 
-### -field <b>uNumSoftAP</b>
+### -field uNumSoftAP
 
 <dd>
 <p>The number of soft access point stations supported.</p>
 </dd>
 
-### -field <b>uNumVirtualStation</b>
+### -field uNumVirtualStation
 
 <dd>
 <p>The number of virtual stations supported.</p>
 </dd>
 
-### -field <b>uNumWFDGroup</b>
+### -field uNumWFDGroup
 
 <dd>
 <p>The number of simultaneous operational Wi-Fi Direct (WFD) groups supported.</p>

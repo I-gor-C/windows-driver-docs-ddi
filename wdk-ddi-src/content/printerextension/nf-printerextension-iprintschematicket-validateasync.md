@@ -55,7 +55,7 @@ HRESULT ValidateAsync(
 ## -parameters
 <dl>
 
-### -param <i>ppAsyncOperation</i> [out]
+### -param ppAsyncOperation [out]
 
 <dd>
 <p>The asynchronous validation operation context.</p>

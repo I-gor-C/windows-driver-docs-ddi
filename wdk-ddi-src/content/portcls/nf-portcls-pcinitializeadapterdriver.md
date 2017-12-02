@@ -56,19 +56,19 @@ NTSTATUS PcInitializeAdapterDriver(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>Pointer to the driver object, which is a system structure of type <a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a>. This pointer is passed as a parameter to the adapter's <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> function.</p>
 </dd>
 
-### -param <i>RegistryPathName</i> [in]
+### -param RegistryPathName [in]
 
 <dd>
 <p>Specifies the registry path name that is to be passed as a parameter to the adapter's <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> function.</p>
 </dd>
 
-### -param <i>AddDevice</i> [in]
+### -param AddDevice [in]
 
 <dd>
 <p>Pointer to the adapter's <a href="kernel.adddevice">AddDevice</a> function. This is a pointer of type PDRIVER_ADD_DEVICE, which is defined in ntddk.h to be:</p>
@@ -93,7 +93,7 @@ NTSTATUS PcInitializeAdapterDriver(
 <p><b>PcInitializeAdapterDriver</b> returns STATUS_SUCCESS if the call was successful. Otherwise, it returns an appropriate error code.</p>
 
 ## -remarks
-<p>The <a href="kernel.adddevice">AddDevice</a> handler supplied in the call to this function should call <a href="..\portcls\nf-portcls-pcaddadapterdevice.md">PcAddAdapterDevice</a>. For more information, see <a href="NULL">Startup Sequence</a>.</p>
+<p>The <a href="kernel.adddevice">AddDevice</a> handler supplied in the call to this function should call <a href="..\portcls\nf-portcls-pcaddadapterdevice.md">PcAddAdapterDevice</a>. For more information, see <a href="https://msdn.microsoft.com/bf88b9de-f4c4-4f9c-9355-603789b9ad3d">Startup Sequence</a>.</p>
 
 <p>The <b>PcInitializeAdapterDriver</b> function loads pointers to handlers for the following IRPs into the driver object:</p>
 

@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_SETINDICES {
 ## -struct-fields
 <dl>
 
-### -field <b>hIndexBuffer</b>
+### -field hIndexBuffer
 
 <dd>
 <p>[in] A handle to the surface that is associated with the index buffer.</p>
 </dd>
 
-### -field <b>Stride</b>
+### -field Stride
 
 <dd>
 <p>[in] The size, in bytes, of the indices that are contained in the index buffer. The value of this member is 2 if the indices are 16-bit quantities or 4 if the indices are 32-bit quantities.</p>

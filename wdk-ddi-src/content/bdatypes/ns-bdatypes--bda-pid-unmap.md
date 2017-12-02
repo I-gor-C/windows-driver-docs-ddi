@@ -55,13 +55,13 @@ typedef struct _BDA_PID_UNMAP {
 ## -struct-fields
 <dl>
 
-### -field <b>ulcPIDs</b>
+### -field ulcPIDs
 
 <dd>
 <p>Number of PIDs in the <b>aulPIDs</b> array. </p>
 </dd>
 
-### -field <b>aulPIDs</b>
+### -field aulPIDs
 
 <dd>
 <p>Array of PIDs that identify packets to unmap from the output of a PID filter. </p>

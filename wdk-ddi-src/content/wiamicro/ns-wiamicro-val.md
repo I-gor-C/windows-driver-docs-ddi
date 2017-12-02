@@ -7,7 +7,7 @@ old-location: image\val.htm
 old-project: image
 ms.assetid: 9c9cf520-3249-4c1e-9d0d-e07f7127117e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: VAL, VAL, *PVAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,55 +63,55 @@ typedef struct VAL {
 ## -struct-fields
 <dl>
 
-### -field <b>lVal</b>
+### -field lVal
 
 <dd>
 <p>Specifies a command value to return to the WIA Flatbed driver. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a> for a list of available commands for this parameter.</p>
 </dd>
 
-### -field <b>dblVal</b>
+### -field dblVal
 
 <dd>
 <p>Specifies a command value to return to the WIA Flatbed driver. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a> for a list of available commands for this parameter.</p>
 </dd>
 
-### -field <b>pGuid</b>
+### -field pGuid
 
 <dd>
 <p>Points to the GUID of the pressed button. If no button was pressed, this member points to GUID_NULL.</p>
 </dd>
 
-### -field <b>pScanInfo</b>
+### -field pScanInfo
 
 <dd>
 <p>Points to a <a href="..\wiamicro\ns-wiamicro--scaninfo.md">SCANINFO</a> structure.</p>
 </dd>
 
-### -field <b>handle</b>
+### -field handle
 
 <dd>
 <p>Points to a ShutDown event handle that will be signaled by the WIA Flatbed Driver when the driver is being unloaded or shut down. </p>
 </dd>
 
-### -field <b>ppButtonNames</b>
+### -field ppButtonNames
 
 <dd>
 <p>Specifies the address of a pointer to an array of button names.</p>
 </dd>
 
-### -field <b>pHandle</b>
+### -field pHandle
 
 <dd>
 <p>Points to an event handle.</p>
 </dd>
 
-### -field <b>lReserved</b>
+### -field lReserved
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>szVal</b>
+### -field szVal
 
 <dd>
 <p>Specifies the device name in ASCII form. If needed for interrupt checking, the microdriver can use this name to pass to <a href="fs.createfile">CreateFile</a> (described in the Microsoft Windows SDK documentation) in order to obtain a file handle to the device.</p>

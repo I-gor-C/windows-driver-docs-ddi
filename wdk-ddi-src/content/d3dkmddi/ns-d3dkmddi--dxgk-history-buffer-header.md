@@ -57,21 +57,21 @@ typedef struct _DXGK_HISTORY_BUFFER_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>RenderCbSequence</b>
+### -field RenderCbSequence
 
 <dd>
 <p>The value of the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-renderflags.md">D3DDDICB_RENDERFLAGS</a>.<b>Value</b> member that is to be used in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a> function.</p>
 <p>The display miniport driver should compute this value and enter it into <b>DXGK_HISTORY_BUFFER_HEADER</b> before calling <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a>.</p>
 </dd>
 
-### -field <b>NumTimestamps</b>
+### -field NumTimestamps
 
 <dd>
 <p>The number of time stamps that will be in the history buffer when the DMA buffer completes its execution.</p>
 <p>The driver should include all time stamps that are logged, even if the buffer must be formatted before being logged to the Event Tracing for Windows (ETW) facility.</p>
 </dd>
 
-### -field <b>PrivateDataSize</b>
+### -field PrivateDataSize
 
 <dd>
 <p>The size, in bytes, of optional private data that the driver stores. The driver can use this data for any purpose.</p>
@@ -81,7 +81,7 @@ typedef struct _DXGK_HISTORY_BUFFER_HEADER {
 <p>If the history buffer doesn't need to be formatted when the DMA buffer completes its execution, then when the DirectX graphics kernel subsystem writes logs to ETW, it uses <b>PrivateDataSize</b> as a direct offset from the header to reference the time stamps.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use and must be set to zero.</p>

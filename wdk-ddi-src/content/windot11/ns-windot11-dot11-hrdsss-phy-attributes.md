@@ -7,7 +7,7 @@ old-location: netvista\dot11_hrdsss_phy_attributes.htm
 old-project: netvista
 ms.assetid: 435e74b4-1a29-4031-bf21-92eae71e99a1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_HRDSSS_PHY_ATTRIBUTES, DOT11_HRDSSS_PHY_ATTRIBUTES, *PDOT11_HRDSSS_PHY_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ typedef struct DOT11_HRDSSS_PHY_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>bShortPreambleOptionImplemented</b>
+### -field bShortPreambleOptionImplemented
 
 <dd>
 <p>A Boolean value that, if set to <b>TRUE</b>, specifies that the PHY supports the option to enable the
@@ -64,7 +64,7 @@ typedef struct DOT11_HRDSSS_PHY_ATTRIBUTES {
      short PLCP preamble and header, refer to Clause 18.2.2.2 of the IEEE 802.11b-1999 standard</p>
 </dd>
 
-### -field <b>bPBCCOptionImplemented</b>
+### -field bPBCCOptionImplemented
 
 <dd>
 <p>A Boolean value that, if set to <b>TRUE</b>, specifies that the PHY supports enabled packet binary
@@ -72,7 +72,7 @@ typedef struct DOT11_HRDSSS_PHY_ATTRIBUTES {
      18.4.6.6 of the IEEE 802.11b-1999 standard.</p>
 </dd>
 
-### -field <b>bChannelAgilityPresent</b>
+### -field bChannelAgilityPresent
 
 <dd>
 <p>A Boolean value that, if set to <b>TRUE</b>, specifies that the PHY supports channel agility. For more
@@ -80,7 +80,7 @@ typedef struct DOT11_HRDSSS_PHY_ATTRIBUTES {
      the IEEE 802.11g-2003 standard.</p>
 </dd>
 
-### -field <b>uHRCCAModeSupported</b>
+### -field uHRCCAModeSupported
 
 <dd>
 <p>The type of clear channel assessment (CCA) mode supported by the current PHY type. For more
@@ -91,34 +91,34 @@ typedef struct DOT11_HRDSSS_PHY_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="DOT11_CCA_MODE_ED_ONLY__0x00000001_"></a><a id="dot11_cca_mode_ed_only__0x00000001_"></a><a id="DOT11_CCA_MODE_ED_ONLY__0X00000001_"></a>DOT11_CCA_MODE_ED_ONLY (0x00000001)
+### -field DOT11_CCA_MODE_ED_ONLY (0x00000001)
 
 <dd>
 <p>CCA mode using the energy detect (ED) signal. For more information about the ED signal, refer to
        Clause 15.4.6.1 of the IEEE 802.11-2012 standard.</p>
 </dd>
 
-### -field <a id="DOT11_CCA_MODE_CS_ONLY__0x00000002_"></a><a id="dot11_cca_mode_cs_only__0x00000002_"></a><a id="DOT11_CCA_MODE_CS_ONLY__0X00000002_"></a>DOT11_CCA_MODE_CS_ONLY (0x00000002)
+### -field DOT11_CCA_MODE_CS_ONLY (0x00000002)
 
 <dd>
 <p>CCA mode using the carrier sense (CS) signal. For more information about the CS signal, refer to
        Clause 15.4.6.2 of the IEEE 802.11-2012 standard.</p>
 </dd>
 
-### -field <a id="DOT11_CCA_MODE_ED_and_CS__0x00000004_"></a><a id="dot11_cca_mode_ed_and_cs__0x00000004_"></a><a id="DOT11_CCA_MODE_ED_AND_CS__0X00000004_"></a>DOT11_CCA_MODE_ED_and_CS (0x00000004)
+### -field DOT11_CCA_MODE_ED_and_CS (0x00000004)
 
 <dd>
 <p>Both ED and CS modes.</p>
 </dd>
 
-### -field <a id="DOT11_HR_CCA_MODE_CS_WITH_TIMER__0x00000008_"></a><a id="dot11_hr_cca_mode_cs_with_timer__0x00000008_"></a><a id="DOT11_HR_CCA_MODE_CS_WITH_TIMER__0X00000008_"></a>DOT11_HR_CCA_MODE_CS_WITH_TIMER (0x00000008)
+### -field DOT11_HR_CCA_MODE_CS_WITH_TIMER (0x00000008)
 
 <dd>
 <p>CCA mode using the CS signal with a timer. For more information about this CCA mode, refer to
        Clause 18.4.8.4 of the IEEE 802.11b-1999 standard.</p>
 </dd>
 
-### -field <a id="DOT11_HR_CCA_MODE_HRCS_AND_ED__0x00000010_"></a><a id="dot11_hr_cca_mode_hrcs_and_ed__0x00000010_"></a><a id="DOT11_HR_CCA_MODE_HRCS_AND_ED__0X00000010_"></a>DOT11_HR_CCA_MODE_HRCS_AND_ED (0x00000010)
+### -field DOT11_HR_CCA_MODE_HRCS_AND_ED (0x00000010)
 
 <dd>
 <p>Both ED and CS modes on high-rate (HR) PHYs. For more information about this CCA mode, refer to
@@ -166,4 +166,4 @@ typedef struct DOT11_HRDSSS_PHY_ATTRIBUTES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_HRDSSS_PHY_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_HRDSSS_PHY_ATTRIBUTES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

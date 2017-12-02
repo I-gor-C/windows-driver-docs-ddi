@@ -56,13 +56,13 @@ VOID MmUnmapIoSpace(
 ## -parameters
 <dl>
 
-### -param <i>BaseAddress</i> [in]
+### -param BaseAddress [in]
 
 <dd>
 <p>Pointer to the base virtual address to which the physical pages were mapped.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>Specifies the number of bytes that were mapped. </p>

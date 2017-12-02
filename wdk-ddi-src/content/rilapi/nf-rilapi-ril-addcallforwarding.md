@@ -7,7 +7,7 @@ old-location: netvista\ril_addcallforwarding.htm
 old-project: netvista
 ms.assetid: 86b08757-bbc0-4f19-8153-c6ecae158cf2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_AddCallForwarding
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,23 +61,23 @@ HRESULT  RIL_AddCallForwarding(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>dwReason</i> 
+### -param dwReason 
 
 <dd></dd>
 
-### -param <i>lpSettings</i> 
+### -param lpSettings 
 
 <dd></dd>
 </dl>

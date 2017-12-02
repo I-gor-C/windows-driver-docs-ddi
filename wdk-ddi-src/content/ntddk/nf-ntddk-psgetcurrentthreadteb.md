@@ -54,7 +54,7 @@ PVOID  PsGetCurrentThreadTeb(
 ## -parameters
 <dl>
 
-### -param <i></i> 
+### -param  
 
 <dd>
 <p>This routine has no parameters.</p>

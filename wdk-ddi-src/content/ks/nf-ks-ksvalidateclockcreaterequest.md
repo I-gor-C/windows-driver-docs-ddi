@@ -56,13 +56,13 @@ NTSTATUS KsValidateClockCreateRequest(
 ## -parameters
 <dl>
 
-### -param <i>lrp</i> [in]
+### -param lrp [in]
 
 <dd>
 <p>Specifies the IRP with the clock create request being handled.</p>
 </dd>
 
-### -param <i>ClockCreate</i> [out]
+### -param ClockCreate [out]
 
 <dd>
 <p>Specifies the clock create structure pointer passed to the create request.</p>

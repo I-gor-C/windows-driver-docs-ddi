@@ -62,31 +62,31 @@ NTSTATUS TransferCodecVerbs(
 ## -parameters
 <dl>
 
-### -param <i>context</i> [in]
+### -param context [in]
 
 <dd>
 <p>Specifies the context value from the <b>Context</b> member of the <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface.md">HDAUDIO_BUS_INTERFACE</a><u>, </u><a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-v2.md">HDAUDIO_BUS_INTERFACE_V2</a><u>,</u> or <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a> structure.</p>
 </dd>
 
-### -param <i>count</i> [in]
+### -param count [in]
 
 <dd>
 <p>Specifies the number of elements in the <i>codecTransfer</i> array.</p>
 </dd>
 
-### -param <i>codecTransfer</i> [in, out]
+### -param codecTransfer [in, out]
 
 <dd>
 <p>Pointer to an array of <a href="..\hdaudio\ns-hdaudio--hdaudio-codec-transfer.md">HDAUDIO_CODEC_TRANSFER</a> structures. Each array element is a structure that contains storage for both an output command from the caller and the corresponding input response from the codec.</p>
 </dd>
 
-### -param <i>callback</i> [in]
+### -param callback [in]
 
 <dd>
 <p>Function pointer to a callback routine. This parameter is a function pointer of type HDAUDIO_TRANSFER_COMPLETE_CALLBACK. The parameter can be specified as <b>NULL</b>. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>callbackContext</i> [in]
+### -param callbackContext [in]
 
 <dd>
 <p>A context value for the callback routine. The caller casts the context value to type PVOID. After completing the commands asynchronously, the HD Audio bus driver passes the context value to the callback routine as a call parameter.</p>

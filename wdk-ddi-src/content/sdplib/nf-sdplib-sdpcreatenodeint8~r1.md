@@ -58,14 +58,14 @@ PSDP_NODE SdpCreateNodeInt8(
 ## -parameters
 <dl>
 
-### -param <i>cVal</i> [in]
+### -param cVal [in]
 
 <dd>
 <p>The 8-bit integer value that is used to initialize the 
      <b>SDP_NODE</b> structure.</p>
 </dd>
 
-### -param <i>tag</i> [in]
+### -param tag [in]
 
 <dd>
 <p>A profile driver defined tag to associate with the node.</p>

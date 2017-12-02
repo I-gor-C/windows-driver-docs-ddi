@@ -57,19 +57,19 @@ typedef struct _STOR_SCATTER_GATHER_ELEMENT {
 ## -struct-fields
 <dl>
 
-### -field <b>PhysicalAddress</b>
+### -field PhysicalAddress
 
 <dd>
 <p>Contains the physical address of the scatter/gather element. </p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Contains the length in bytes of this scatter/gather element. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. </p>

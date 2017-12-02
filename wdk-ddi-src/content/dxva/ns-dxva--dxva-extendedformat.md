@@ -60,43 +60,43 @@ typedef struct _DXVA_ExtendedFormat {
 ## -struct-fields
 <dl>
 
-### -field <b>SampleFormat</b>
+### -field SampleFormat
 
 <dd>
 <p>Specifies how a video frame is sampled. The 8 bits are defined by one of the enumerators in the <a href="..\dxva\ne-dxva--dxva-sampleformat.md">DXVA_SampleFormat</a> enumeration type.</p>
 </dd>
 
-### -field <b>VideoChromaSubsampling</b>
+### -field VideoChromaSubsampling
 
 <dd>
 <p>Specifies the chroma encoding scheme for Y'Cb'Cr' data. The 4 bits are defined by an ORed combination of the enumerators in the <a href="..\dxva\ne-dxva--dxva-videochromasubsampling.md">DXVA_VideoChromaSubsampling</a> enumeration type. </p>
 </dd>
 
-### -field <b>NominalRange</b>
+### -field NominalRange
 
 <dd>
 <p>Specifies whether sample data includes headroom (values beyond 1.0 white) and toeroom (superblacks below the reference 0.0 black). The 3 bits are defined by one of the enumerators in the <a href="..\dxva\ne-dxva--dxva-nominalrange.md">DXVA_NominalRange</a> enumeration type. </p>
 </dd>
 
-### -field <b>VideoTransferMatrix</b>
+### -field VideoTransferMatrix
 
 <dd>
 <p>Specifies the conversion matrix from Y'Cb'Cr' to (studio) R'G'B'. The 3 bits are defined by one of the enumerators in the <a href="..\dxva\ne-dxva--dxva-videotransfermatrix.md">DXVA_VideoTransferMatrix</a> enumeration type. </p>
 </dd>
 
-### -field <b>VideoLighting</b>
+### -field VideoLighting
 
 <dd>
 <p>Specifies lighting conditions for viewing video. The 4 bits are defined by one of the enumerators in the <a href="..\dxva\ne-dxva--dxva-videolighting.md">DXVA_VideoLighting</a> enumeration type. </p>
 </dd>
 
-### -field <b>VideoPrimaries</b>
+### -field VideoPrimaries
 
 <dd>
 <p>Specifies color primaries, which state which RGB basis functions are used. The 5 bits are defined by one of the enumerators in the <a href="..\dxva\ne-dxva--dxva-videoprimaries.md">DXVA_VideoPrimaries</a> enumeration type. </p>
 </dd>
 
-### -field <b>VideoTransferFunction</b>
+### -field VideoTransferFunction
 
 <dd>
 <p>Specifies the conversion function from R'G'B' to RGB. The 5 bits are defined by the <a href="..\dxva\ne-dxva--dxva-videotransferfunction.md">DXVA_VideoTransferFunction</a> enumeration type. </p>

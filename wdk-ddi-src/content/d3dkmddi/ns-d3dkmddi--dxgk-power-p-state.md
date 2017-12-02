@@ -57,19 +57,19 @@ typedef struct _DXGK_POWER_P_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>NominalPower</b>
+### -field NominalPower
 
 <dd></dd>
 
-### -field <b>OperatingFrequency</b>
+### -field OperatingFrequency
 
 <dd></dd>
 
-### -field <b>TransitionLatencies</b>
+### -field TransitionLatencies
 
 <dd></dd>
 
-### -field <b>ResidencyRequirement</b>
+### -field ResidencyRequirement
 
 <dd></dd>
 </dl>

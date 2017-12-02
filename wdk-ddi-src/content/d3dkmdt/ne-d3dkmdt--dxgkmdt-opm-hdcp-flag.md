@@ -55,13 +55,13 @@ typedef enum _DXGKMDT_OPM_HDCP_FLAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKMDT_OPM_HDCP_FLAG_NONE"></a><a id="dxgkmdt_opm_hdcp_flag_none"></a><b>DXGKMDT_OPM_HDCP_FLAG_NONE</b>
+### -field DXGKMDT_OPM_HDCP_FLAG_NONE
 
 <dd>
 <p>Indicates that no HDCP flags are set. Therefore, the protected output's physical connector is not connected to an HDCP repeater. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_HDCP_FLAG_REPEATER"></a><a id="dxgkmdt_opm_hdcp_flag_repeater"></a><b>DXGKMDT_OPM_HDCP_FLAG_REPEATER</b>
+### -field DXGKMDT_OPM_HDCP_FLAG_REPEATER
 
 <dd>
 <p>Indicates that the protected output's physical connector is connected to an HDCP repeater. </p>

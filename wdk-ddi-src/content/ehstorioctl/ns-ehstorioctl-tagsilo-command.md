@@ -57,23 +57,23 @@ typedef struct tagSILO_COMMAND {
 ## -struct-fields
 <dl>
 
-### -field <b>SiloIndex</b>
+### -field SiloIndex
 
 <dd></dd>
 
-### -field <b>Command</b>
+### -field Command
 
 <dd>
 <p>This member contains the 1667 command value.</p>
 </dd>
 
-### -field <b>cbCommandBuffer</b>
+### -field cbCommandBuffer
 
 <dd>
 <p>This member contains the size of the 1667 command buffer.</p>
 </dd>
 
-### -field <b>rgbCommandBuffer</b>
+### -field rgbCommandBuffer
 
 <dd></dd>
 </dl>

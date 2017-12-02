@@ -57,7 +57,7 @@ D3DKMT_HANDLE APIENTRY DxgkCbEnumHandleChildren(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-enumhandlechildren.md">DXGKARGCB_ENUMHANDLECHILDREN</a> structure that describes the parent resource and the index of the child allocation to retrieve.</p>

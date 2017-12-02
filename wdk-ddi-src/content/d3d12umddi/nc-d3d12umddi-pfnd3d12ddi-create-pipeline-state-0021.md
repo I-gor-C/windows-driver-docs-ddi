@@ -60,25 +60,25 @@ HRESULT APIENTRY* pfnCreatePipelineState(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>The handle of a device. </p>
 </dd>
 
-### -param <i>CreatePipelineState</i> [in]
+### -param CreatePipelineState [in]
 
 <dd>
 <p>A value used to create a pipeline state.</p>
 </dd>
 
-### -param <i>hPipelineState</i> 
+### -param hPipelineState 
 
 <dd>
 <p>The handle of a pipeline state. </p>
 </dd>
 
-### -param <i>hRTPipelineState</i> 
+### -param hRTPipelineState 
 
 <dd>
 <p>The handle of the pipeline state for the driver to use when it calls back into the runtime.</p>

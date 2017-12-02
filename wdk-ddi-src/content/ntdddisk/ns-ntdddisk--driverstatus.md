@@ -57,25 +57,25 @@ typedef struct _DRIVERSTATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>bDriverError</b>
+### -field bDriverError
 
 <dd>
 <p>Error code from driver, or 0 if no error.</p>
 </dd>
 
-### -field <b>bIDEError</b>
+### -field bIDEError
 
 <dd>
 <p>Contents of IDE Error register.</p>
 </dd>
 
-### -field <b>bReserved</b>
+### -field bReserved
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Reserved. </p>

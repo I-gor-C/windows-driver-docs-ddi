@@ -56,19 +56,19 @@ NTSTATUS DrmForwardContentToInterface(
 ## -parameters
 <dl>
 
-### -param <i>ContentId</i> [in]
+### -param ContentId [in]
 
 <dd>
 <p>Specifies the DRM content ID. This parameter identifies a protected KS audio stream.</p>
 </dd>
 
-### -param <i>pUnknown</i> [in]
+### -param pUnknown [in]
 
 <dd>
 <p>Pointer to a COM interface that directly receives KS audio stream data for a KS audio filter.</p>
 </dd>
 
-### -param <i>NumMethods</i> [in]
+### -param NumMethods [in]
 
 <dd>
 <p>Specifies the total number of methods in the COM interface that <i>pUnknown</i> points to, including all the methods in its base interfaces.</p>
@@ -95,9 +95,9 @@ NTSTATUS DrmForwardContentToInterface(
 
 <p>Calls <a href="audio.idrmaudiostream_setcontentid">IDrmAudioStream::SetContentId</a> to set the DRM content ID and DRM content rights on the audio stream. Before returning, <code>DrmForwardContentToInterface</code> releases the <b>IDrmAudioStream</b> interface.</p>
 
-<p>The <i>pUnknown</i> parameter follows the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>pUnknown</i> parameter follows the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
-<p><code>DrmForwardContentToInterface</code> performs the same function as <a href="..\portcls\nf-portcls-pcforwardcontenttointerface.md">PcForwardContentToInterface</a> and <a href="audio.idrmport_forwardcontenttointerface">IDrmPort::ForwardContentToInterface</a>. For more information, see <a href="NULL">DRM Functions and Interfaces</a>.</p>
+<p><code>DrmForwardContentToInterface</code> performs the same function as <a href="..\portcls\nf-portcls-pcforwardcontenttointerface.md">PcForwardContentToInterface</a> and <a href="audio.idrmport_forwardcontenttointerface">IDrmPort::ForwardContentToInterface</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.</p>
 
 ## -requirements
 <table>

@@ -61,7 +61,7 @@ typedef struct _D3DKMT_CREATEDEVICEFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>LegacyMode</b>
+### -field LegacyMode
 
 <dd>
 <p>A UINT value that specifies whether the device should imitate several behaviors of legacy devices (that is, from Microsoft DirectDraw through Microsoft Direct3D 9.0 device types).</p>
@@ -69,27 +69,27 @@ typedef struct _D3DKMT_CREATEDEVICEFLAGS {
 <p>Setting this member is equivalent to setting the first bit of a 32-bit value (0x00000001).</p>
 </dd>
 
-### -field <b>RequestVSync</b>
+### -field RequestVSync
 
 <dd>
 <p>A UINT value that specifies whether the device requires vertical sync to operate. If <b>RequestVSync</b> is set, the operating system will enable vertical sync on the graphics hardware until the display device is released. </p>
 <p>Setting this member is equivalent to setting the second bit of a 32-bit value (0x00000002).</p>
 </dd>
 
-### -field <b>DisableGpuTimeout</b>
+### -field DisableGpuTimeout
 
 <dd>
 <p>Supported in Windows 8 and later versions.A UINT value that specifies whether the device has disabled <a href="https://msdn.microsoft.com/f410eec7-026f-41e0-8c60-72f651659ead">Timeout Detection and Recovery (TDR)</a>.</p>
 <p>Setting this member is equivalent to setting the second bit of a 32-bit value (0x00000004).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member is equivalent to setting the remaining 29 bits (0xFFFFFFF8) of a 32-bit value to zeros.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member is equivalent to setting the remaining 30 bits (0xFFFFFFFC) of a 32-bit value to zeros.</p>

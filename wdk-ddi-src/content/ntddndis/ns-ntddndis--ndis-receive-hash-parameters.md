@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_hash_parameters.htm
 old-project: netvista
 ms.assetid: 02c333d3-9ea7-4d24-9e09-32943c00d6a5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_RECEIVE_HASH_PARAMETERS, NDIS_RECEIVE_HASH_PARAMETERS, *PNDIS_RECEIVE_HASH_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct _NDIS_RECEIVE_HASH_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -73,7 +73,7 @@ typedef struct _NDIS_RECEIVE_HASH_PARAMETERS {
      <b>Size</b> member to NDIS_SIZEOF_RECEIVE_HASH_PARAMETERS_REVISION_1.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A USHORT value that indicates what the miniport driver should do with the hash parameters. The
@@ -84,7 +84,7 @@ typedef struct _NDIS_RECEIVE_HASH_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_HASH_FLAG_ENABLE_HASH"></a><a id="ndis_receive_hash_flag_enable_hash"></a>NDIS_RECEIVE_HASH_FLAG_ENABLE_HASH
+### -field NDIS_RECEIVE_HASH_FLAG_ENABLE_HASH
 
 <dd>
 <p>If this flag is set, enable calculating hash values on received frames and place the calculated
@@ -92,7 +92,7 @@ typedef struct _NDIS_RECEIVE_HASH_PARAMETERS {
 <p>If this flag is clear, disable the calculation of hash values on received frames.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_HASH_FLAG_HASH_INFO_UNCHANGED"></a><a id="ndis_receive_hash_flag_hash_info_unchanged"></a>NDIS_RECEIVE_HASH_FLAG_HASH_INFO_UNCHANGED
+### -field NDIS_RECEIVE_HASH_FLAG_HASH_INFO_UNCHANGED
 
 <dd>
 <p>The HashInformation member has not changed. The hash information includes the hash types and hash
@@ -103,7 +103,7 @@ typedef struct _NDIS_RECEIVE_HASH_PARAMETERS {
         must use to calculate hash values on received frames.</p>
 </dd>
 
-### -field <a id="NDIS_RECEIVE_HASH_FLAG_HASH_KEY_UNCHANGED"></a><a id="ndis_receive_hash_flag_hash_key_unchanged"></a>NDIS_RECEIVE_HASH_FLAG_HASH_KEY_UNCHANGED
+### -field NDIS_RECEIVE_HASH_FLAG_HASH_KEY_UNCHANGED
 
 <dd>
 <p>The secret key and associated data members have not changed.</p>
@@ -116,7 +116,7 @@ typedef struct _NDIS_RECEIVE_HASH_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_RECEIVE_HASH_FLAG_ENABLE_HASH"></a><a id="ndis_receive_hash_flag_enable_hash"></a>NDIS_RECEIVE_HASH_FLAG_ENABLE_HASH
+### -field NDIS_RECEIVE_HASH_FLAG_ENABLE_HASH
 
 <dd>
 <p>If receive hash calculation is enabled, the miniport driver should set this flag; otherwise, this
@@ -125,7 +125,7 @@ typedef struct _NDIS_RECEIVE_HASH_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>HashInformation</b>
+### -field HashInformation
 
 <dd>
 <p>In a set request, the hash type and hash function that the NIC should use to compute the hash
@@ -145,13 +145,13 @@ typedef struct _NDIS_RECEIVE_HASH_PARAMETERS {
      NDIS_RSS_HASH_FUNC_FROM_HASH_INFO</a> macro to get the hash function.</p>
 </dd>
 
-### -field <b>HashSecretKeySize</b>
+### -field HashSecretKeySize
 
 <dd>
 <p>The size of the secret key array of the hash function, in bytes. The size of the array is 40 bytes for NdisHashFunctionToeplitz.</p>
 </dd>
 
-### -field <b>HashSecretKeyOffset</b>
+### -field HashSecretKeyOffset
 
 <dd>
 <p>The offset of the secret key array of the hash function from the beginning of the
@@ -214,4 +214,4 @@ typedef struct _NDIS_RECEIVE_HASH_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_HASH_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_HASH_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

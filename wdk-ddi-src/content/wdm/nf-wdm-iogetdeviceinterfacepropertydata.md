@@ -62,49 +62,49 @@ NTSTATUS IoGetDeviceInterfacePropertyData(
 ## -parameters
 <dl>
 
-### -param <i>SymbolicLinkName</i> [in]
+### -param SymbolicLinkName [in]
 
 <dd>
 <p>A pointer to a string that identifies the device interface instance. This string was obtained from a previous call to the <a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>, <a href="..\wdm\nf-wdm-iogetdeviceinterfacealias.md">IoGetDeviceInterfaceAlias</a>, or <a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a> routine.</p>
 </dd>
 
-### -param <i>PropertyKey</i> [in]
+### -param PropertyKey [in]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a> structure that contains the device interface property key.</p>
 </dd>
 
-### -param <i>Lcid</i> [in]
+### -param Lcid [in]
 
 <dd>
 <p>Specifies a locale identifier. Set this parameter either to a language-specific LCID value or to <b>LOCALE_NEUTRAL</b>. The <b>LOCALE_NEUTRAL</b> LCID specifies that the property is language-neutral (that is, not specific to any language). Do not set this parameter to <b>LOCALE_SYSTEM_DEFAULT</b> or <b>LOCALE_USER_DEFAULT</b>. For more information about language-specific LCID values, see <a href="http://msdn.microsoft.com/en-us/library/cc233968(PROT.10).aspx">LCID Structure</a>.</p>
 </dd>
 
-### -param <i>Flags</i> 
+### -param Flags 
 
 <dd>
 <p>Reserved for system use. Drivers should set this value to zero.</p>
 </dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer that <i>Data</i> points to.</p>
 </dd>
 
-### -param <i>Data</i> [out]
+### -param Data [out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer into which the routine writes the device interface property data.</p>
 </dd>
 
-### -param <i>RequiredSize</i> [out]
+### -param RequiredSize [out]
 
 <dd>
 <p>A pointer to a ULONG variable into which <b>IoGetDeviceInterfacePropertyData</b> writes the required size of the property data.  If the routine succeeds, the required size value is the number of bytes that the routine writes to the output buffer that <i>Data</i> points to. If the routine returns STATUS_BUFFER_TOO_SMALL, the required size value is the size of the buffer that the caller should allocate for this property value.</p>
 </dd>
 
-### -param <i>Type</i> [out]
+### -param Type [out]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543546">DEVPROPTYPE</a> variable. If <b>IoGetDeviceInterfacePropertyData</b> successfully retrieves the property data, the routine writes the property type value to this variable. This value indicates the type of property data that is in the <i>Data</i> buffer.</p>
@@ -123,7 +123,7 @@ NTSTATUS IoGetDeviceInterfacePropertyData(
 <p> </p>
 
 ## -remarks
-<p>Kernel-mode drivers use the <b>IoGetDeviceInterfacePropertyData</b> routine to retrieve device interface properties that are defined as part of the <a href="NULL">unified device property model</a>. For more information about device interface properties, see <a href="NULL">Device Properties</a>.</p>
+<p>Kernel-mode drivers use the <b>IoGetDeviceInterfacePropertyData</b> routine to retrieve device interface properties that are defined as part of the <a href="devinst.unified_device_property_model__windows_vista_and_later_">unified device property model</a>. For more information about device interface properties, see <a href="https://msdn.microsoft.com/f41040c5-0eac-450d-b532-9165c543cc1a">Device Properties</a>.</p>
 
 <p>Drivers can use the <a href="..\wdm\nf-wdm-iosetdeviceinterfacepropertydata.md">IoSetDeviceInterfacePropertyData</a> routine to modify a device interface property.</p>
 

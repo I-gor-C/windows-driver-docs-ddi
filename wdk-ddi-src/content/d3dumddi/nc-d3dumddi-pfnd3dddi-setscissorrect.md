@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY SetScissorRect(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pRect</i> [in]
+### -param pRect [in]
 
 <dd>
 <p> A pointer to a <a href="display.rect">RECT</a> structure that specifies the 2-D portion of the render target to confine rendering to.</p>

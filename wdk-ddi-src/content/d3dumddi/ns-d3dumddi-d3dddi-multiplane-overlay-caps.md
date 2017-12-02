@@ -55,14 +55,14 @@ typedef struct D3DDDI_MULTIPLANE_OVERLAY_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>MaxPlanes</b>
+### -field MaxPlanes
 
 <dd>
 <p>The maximum number of inputs, including the primary surface, to the display hardware that can be supported in the current mode. This value can change if the mode changes.</p>
 <p>For example, if the hardware allows one overlay plane and one normal primary surface, the driver should set <b>MaxPlanes</b> to 2.</p>
 </dd>
 
-### -field <b>NumCapabilityGroups</b>
+### -field NumCapabilityGroups
 
 <dd>
 <p>The number of different types of overlay planes that can be supported.</p>

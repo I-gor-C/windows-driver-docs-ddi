@@ -7,7 +7,7 @@ old-location: image\istidevice_initialize.htm
 old-project: image
 ms.assetid: 3cd6ece6-2c8e-4072-8ac5-d1e90c9392db
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDevice, Initialize, IStiDevice::Initialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,28 +58,28 @@ HRESULT Initialize(
 ## -parameters
 <dl>
 
-### -param <i>hinst</i> [in]
+### -param hinst [in]
 
 <dd>
 <p>Caller-supplied instance handle of the calling process. This handle is obtained by calling <b>GetModuleName</b>(NULL).</p>
 </dd>
 
-### -param <i>pwszDeviceName</i> [in]
+### -param pwszDeviceName [in]
 
 <dd>
 <p>Caller-supplied pointer to a string representing an internal device name, obtained by calling <a href="image.istillimage_getstilaunchinformation">IStillImage::GetSTILaunchInformation</a>.</p>
 </dd>
 
-### -param <i>dwVersion</i> 
+### -param dwVersion 
 
 <dd>
 <p>Caller-supplied STI version number. This value must be STI_VERSION, defined in <i>Sti.h</i>.</p>
 </dd>
 
-### -param <i>dwMode</i> 
+### -param dwMode 
 
 <dd>
-<p>Caller-supplied constant value indicating the <a href="NULL">Transfer Modes</a> in which the device is to be used. The following values are valid.</p>
+<p>Caller-supplied constant value indicating the <a href="https://msdn.microsoft.com/79af0d8f-dd04-4ff4-a047-f415562a16a5">Transfer Modes</a> in which the device is to be used. The following values are valid.</p>
 <table>
 <tr>
 <th>Mode</th>

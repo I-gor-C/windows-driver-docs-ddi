@@ -55,13 +55,13 @@ typedef struct _SetDSMCounters_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>DsmContext</b>
+### -field DsmContext
 
 <dd>
 <p>A 64-bitfield that provides the DSM context.</p>
 </dd>
 
-### -field <b>DsmCounters</b>
+### -field DsmCounters
 
 <dd>
 <p>A structure of type DSM_COUNTERS.</p>

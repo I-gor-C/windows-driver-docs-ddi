@@ -60,25 +60,25 @@ VOID  EvtNfcCxSequenceHandler(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>Sequence</i> [in]
+### -param Sequence [in]
 
 <dd>
 <p>An <a href="..\nfccx\ne-nfccx--nfc-cx-sequence.md">NFC_CX_SEQUENCE</a> enumeration.</p>
 </dd>
 
-### -param <i>CompletionRoutine</i> [in]
+### -param CompletionRoutine [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a> callback function.</p>
 </dd>
 
-### -param <i>CompletionContext</i> [in, optional]
+### -param CompletionContext [in, optional]
 
 <dd>
 <p>Driver-defined context information that the driver specified when it registered the <i>EvtNfcCxSequenceHandler</i> callback function.</p>

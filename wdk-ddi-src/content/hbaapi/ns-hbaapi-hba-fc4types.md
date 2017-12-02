@@ -54,7 +54,7 @@ typedef struct HBA_fc4types {
 ## -struct-fields
 <dl>
 
-### -field <b>bits</b>
+### -field bits
 
 <dd>
 <p>Contains 32 bytes of FC4 type information. Each byte indicates a support FC-4 type. For a complete list of the values that can be assigned to this member, see .the T11 committee's <i>Fibre Channel Generic Services -4 (FC-GS-4) </i>specification.</p>

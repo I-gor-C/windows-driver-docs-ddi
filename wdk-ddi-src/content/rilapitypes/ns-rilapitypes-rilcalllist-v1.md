@@ -7,7 +7,7 @@ old-location: netvista\rilcalllist_v1_2.htm
 old-project: netvista
 ms.assetid: bdca275c-c728-4be4-bb57-cfa61cddff61
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLLIST_V1, RILCALLLIST_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILCALLLIST_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>dwNumberOfCalls</b>
+### -field dwNumberOfCalls
 
 <dd></dd>
 
-### -field <b>rciCallInfo</b>
+### -field rciCallInfo
 
 <dd></dd>
 </dl>

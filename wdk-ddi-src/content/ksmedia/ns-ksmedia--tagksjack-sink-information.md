@@ -62,55 +62,55 @@ typedef struct _tagKSJACK_SINK_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>ConnType</b>
+### -field ConnType
 
 <dd>
 <p>Specifies the connection type of the sink. This parameter is an enumeration of type <a href="http://go.microsoft.com/fwlink/p/?linkid=143848">KSJACK_SINK_CONNECTIONTYPE</a>. </p>
 </dd>
 
-### -field <b>ManufacturerId</b>
+### -field ManufacturerId
 
 <dd>
 <p>Specifies the sink manufacturer ID.</p>
 </dd>
 
-### -field <b>ProductId</b>
+### -field ProductId
 
 <dd>
 <p>Specifies the sink product ID.</p>
 </dd>
 
-### -field <b>AudioLatency</b>
+### -field AudioLatency
 
 <dd>
 <p>Specifies the sink audio latency.</p>
 </dd>
 
-### -field <b>HDCPCapable</b>
+### -field HDCPCapable
 
 <dd>
 <p>Specifies that this jack sink provides support for High-bandwidth Digital Content Protection (HDCP).</p>
 </dd>
 
-### -field <b>AICapable</b>
+### -field AICapable
 
 <dd>
 <p>Specifies that this jack sink provides support for the following data packet types: audio content protection (ACP), international standard recording code-1 (ISRC1), and ISRC2.</p>
 </dd>
 
-### -field <b>SinkDescriptionLength</b>
+### -field SinkDescriptionLength
 
 <dd>
 <p>Specifies the length of the <b>SinkDescription</b>[] member.</p>
 </dd>
 
-### -field <b>SinkDescription</b>
+### -field SinkDescription
 
 <dd>
 <p>Specifies a string that contains the sink name, which must be NULL-terminated. The maximum length is defined by the MAX_SINK_DESCRIPTION_NAME_LENGTH constant (31  characters, plus a terminating <b>NULL</b>).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>

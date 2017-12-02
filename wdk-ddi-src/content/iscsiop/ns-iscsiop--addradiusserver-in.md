@@ -54,7 +54,7 @@ typedef struct _AddRADIUSServer_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>RADIUSIPAddress</b>
+### -field RADIUSIPAddress
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that contains an IP version-independent address of the RADIUS server.</p>

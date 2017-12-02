@@ -64,61 +64,61 @@ typedef struct _NV_FEATURE_PARAMETER {
 ## -struct-fields
 <dl>
 
-### -field <b>NVPowerModeEnabled</b>
+### -field NVPowerModeEnabled
 
 <dd>
 <p>Taken from word 214, bit 0 of the IDENTIFY DEVICE data, a value of one means the NV Cache Power Mode feature set is enabled.</p>
 </dd>
 
-### -field <b>NVParameterReserv1</b>
+### -field NVParameterReserv1
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>NVCmdEnabled</b>
+### -field NVCmdEnabled
 
 <dd>
 <p>Taken from word 214, bit 4 of the IDENTIFY DEVICE data, a value of one means the NV Cache feature set is enabled.</p>
 </dd>
 
-### -field <b>NVParameterReserv2</b>
+### -field NVParameterReserv2
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>NVPowerModeVer</b>
+### -field NVPowerModeVer
 
 <dd>
 <p>Taken from word 214, bits 8 through 11 of the IDENTIFY DEVICE data, this field contains the NV Cache Power Mode feature set version.</p>
 </dd>
 
-### -field <b>NVCmdVer</b>
+### -field NVCmdVer
 
 <dd>
 <p>Taken from word 214, bits 12 through 15 of the IDENTIFY DEVICE data, this field contains the NV Cache feature set version.</p>
 </dd>
 
-### -field <b>NVSize</b>
+### -field NVSize
 
 <dd>
 <p>Taken from words 215 and 216 of the IDENTIFY DEVICE data, this field contains the NV Cache Size, in logical blocks.</p>
 </dd>
 
-### -field <b>NVReadSpeed</b>
+### -field NVReadSpeed
 
 <dd>
 <p>Taken from word 217 of the IDENTIFY DEVICE data, this field contains the NV Cache Read Transfer Speed, in megabytes per second (MB/s).</p>
 </dd>
 
-### -field <b>NVWrtSpeed</b>
+### -field NVWrtSpeed
 
 <dd>
 <p>Taken from word 218 of the IDENTIFY DEVICE data, this field contains the NV Cache Write Transfer Speed, in megabytes per second (MB/s).</p>
 </dd>
 
-### -field <b>DeviceSpinUpTime</b>
+### -field DeviceSpinUpTime
 
 <dd>
 <p>Taken from word 219, bits 0 through 7 of the IDENTIFY DEVICE data, this field contains the device's estimated time to spin up, in seconds.</p>

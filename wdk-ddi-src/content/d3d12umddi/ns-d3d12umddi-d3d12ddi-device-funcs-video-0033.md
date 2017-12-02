@@ -64,61 +64,61 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_VIDEO_0033 {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnGetCaps</b>
+### -field pfnGetCaps
 
 <dd>
 <p>Get caps.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateVideoDecoderSize</b>
+### -field pfnCalcPrivateVideoDecoderSize
 
 <dd>
 <p>Calculates the private video decoder size.</p>
 </dd>
 
-### -field <b>pfnCreateVideoDecoder</b>
+### -field pfnCreateVideoDecoder
 
 <dd>
 <p>Creates a video decoder.</p>
 </dd>
 
-### -field <b>pfnDestroyVideoDecoder</b>
+### -field pfnDestroyVideoDecoder
 
 <dd>
 <p>Destroys the video decoder.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateVideoDecoderHeapSize</b>
+### -field pfnCalcPrivateVideoDecoderHeapSize
 
 <dd>
 <p>Calculates the private video decoder heap size.</p>
 </dd>
 
-### -field <b>pfnCreateVideoDecoderHeap</b>
+### -field pfnCreateVideoDecoderHeap
 
 <dd>
 <p>Creates the video decoder heap.</p>
 </dd>
 
-### -field <b>pfnDestroyVideoDecoderHeap</b>
+### -field pfnDestroyVideoDecoderHeap
 
 <dd>
 <p>Destroys the video decoder heap.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateVideoProcessorSize</b>
+### -field pfnCalcPrivateVideoProcessorSize
 
 <dd>
 <p>Calculates the private video processor size.</p>
 </dd>
 
-### -field <b>pfnCreateVideoProcessor</b>
+### -field pfnCreateVideoProcessor
 
 <dd>
 <p>Creates the video processor.</p>
 </dd>
 
-### -field <b>pfnDestroyVideoProcessor</b>
+### -field pfnDestroyVideoProcessor
 
 <dd>
 <p>Destroys the video processor.</p>

@@ -7,7 +7,7 @@ old-location: netvista\wwan_pin_mode.htm
 old-project: netvista
 ms.assetid: 55fa9dd4-370e-4f72-be40-4f14373cee27
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ typedef enum _WWAN_PIN_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanPinModeNotSupported"></a><a id="wwanpinmodenotsupported"></a><a id="WWANPINMODENOTSUPPORTED"></a><b>WwanPinModeNotSupported</b>
+### -field WwanPinModeNotSupported
 
 <dd>
 <p>The PIN type is not supported.</p>
 </dd>
 
-### -field <a id="WwanPinModeEnabled"></a><a id="wwanpinmodeenabled"></a><a id="WWANPINMODEENABLED"></a><b>WwanPinModeEnabled</b>
+### -field WwanPinModeEnabled
 
 <dd>
 <p>The PIN type is supported and currently enabled.</p>
 </dd>
 
-### -field <a id="WwanPinModeDisabled"></a><a id="wwanpinmodedisabled"></a><a id="WWANPINMODEDISABLED"></a><b>WwanPinModeDisabled</b>
+### -field WwanPinModeDisabled
 
 <dd>
 <p>The PIN type is supported though currently disabled.</p>
 </dd>
 
-### -field <a id="WwanPinModeMax"></a><a id="wwanpinmodemax"></a><a id="WWANPINMODEMAX"></a><b>WwanPinModeMax</b>
+### -field WwanPinModeMax
 
 <dd>
 <p>The total number of supported PIN type states.</p>
@@ -117,4 +117,4 @@ typedef enum _WWAN_PIN_MODE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_MODE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_MODE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

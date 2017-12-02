@@ -57,25 +57,25 @@ typedef enum _DXGK_DISPLAY_USAGE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_DU_INVALID"></a><a id="dxgk_du_invalid"></a><b>DXGK_DU_INVALID</b>
+### -field DXGK_DU_INVALID
 
 <dd>
 <p>Invalid type.</p>
 </dd>
 
-### -field <a id="DXGK_DU_GENERIC"></a><a id="dxgk_du_generic"></a><b>DXGK_DU_GENERIC</b>
+### -field DXGK_DU_GENERIC
 
 <dd>
 <p>Generic display type.</p>
 </dd>
 
-### -field <a id="DXGK_DU_AR"></a><a id="dxgk_du_ar"></a><b>DXGK_DU_AR</b>
+### -field DXGK_DU_AR
 
 <dd>
 <p>A head mounted augmented reality display.  </p>
 </dd>
 
-### -field <a id="DXGK_DU_VR"></a><a id="dxgk_du_vr"></a><b>DXGK_DU_VR</b>
+### -field DXGK_DU_VR
 
 <dd>
 <p>A head mounted virtual reality display.  </p>

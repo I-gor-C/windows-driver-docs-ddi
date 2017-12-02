@@ -57,19 +57,19 @@ VOID KeInitializeEvent(
 ## -parameters
 <dl>
 
-### -param <i>Event</i> [out]
+### -param Event [out]
 
 <dd>
 <p>Pointer to an event object, for which the caller provides the storage.</p>
 </dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>Specifies the event type, either <b>NotificationEvent</b> or <b>SynchronizationEvent</b>.</p>
 </dd>
 
-### -param <i>State</i> [in]
+### -param State [in]
 
 <dd>
 <p>Specifies the initial state of the event. <b>TRUE</b> indicates a signaled state.</p>

@@ -63,14 +63,14 @@ typedef struct _DXGK_CREATECONTEXTFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>SystemContext</b>
+### -field SystemContext
 
 <dd>
 <p>A UINT value that specifies whether contexts that a driver's <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a> function creates are system contexts for the engine that the <b>EngineAffinity</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createcontext.md">DXGKARG_CREATECONTEXT</a> structure specifies. A system context is created for the paging engine only.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>GdiContext</b>
+### -field GdiContext
 
 <dd>
 <p>A UINT value that specifies whether the contexts that a driver's <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a> function creates are GDI-specific contexts for the engine that the <b>EngineAffinity</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createcontext.md">DXGKARG_CREATECONTEXT</a> structure specifies.</p>
@@ -78,7 +78,7 @@ typedef struct _DXGK_CREATECONTEXTFLAGS {
 <p>This member is available beginning with Windows 7.</p>
 </dd>
 
-### -field <b>VirtualAddressing</b>
+### -field VirtualAddressing
 
 <dd>
 <p>A UINT value that specifies whether the contexts that a driver's <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a> function creates use virtual addressing.</p>
@@ -86,20 +86,20 @@ typedef struct _DXGK_CREATECONTEXTFLAGS {
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>SystemProtectedContext</b>
+### -field SystemProtectedContext
 
 <dd>
 <p>A UINT value that specifies whether the context being used to modify the VPR will have access to allocations outside the VPR.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 28 bits (0xFFFFFFFB) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that DXGK_CREATECONTEXTFLAGS contains that can hold a 32-bit value that identifies how to create contexts.</p>

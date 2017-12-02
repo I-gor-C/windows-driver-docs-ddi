@@ -54,7 +54,7 @@ typedef struct _PEP_SYSTEM_LATENCY {
 ## -struct-fields
 <dl>
 
-### -field <b>Latency</b>
+### -field Latency
 
 <dd>
 <p>[in] The overall system latency tolerance, in 100-nanosecond units. This member specifies the maximum latency that the operating system can tolerate in the time required to move a component from a low-power F<i>x</i> state to F0.</p>

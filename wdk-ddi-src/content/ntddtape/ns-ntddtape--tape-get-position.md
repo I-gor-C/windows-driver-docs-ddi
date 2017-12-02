@@ -56,19 +56,19 @@ typedef struct _TAPE_GET_POSITION {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Indicates the type of position requested. This member can be TAPE_ABSOLUTE_POSITION, TAPE_LOGICAL_POSITION, or TAPE_PSEUDO_LOGICAL_POSITION.</p>
 </dd>
 
-### -field <b>Partition</b>
+### -field Partition
 
 <dd>
 <p>Indicates the number of the partition where the current position is located.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Indicates the number of bytes from the beginning of the partition to the current position.</p>

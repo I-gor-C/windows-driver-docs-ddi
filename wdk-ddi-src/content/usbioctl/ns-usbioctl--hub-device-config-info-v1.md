@@ -60,37 +60,37 @@ typedef struct _HUB_DEVICE_CONFIG_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version number.  Must be set to 1. </p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Specifies the size of the <b>HUB_DEVICE_CONFIG_INFO</b> structure. Must be set by the caller.</p>
 </dd>
 
-### -field <b>HubFlags</b>
+### -field HubFlags
 
 <dd>
 <p>Specifies the hub capabilities in a <a href="..\usbioctl\ns-usbioctl--usb-hub-cap-flags.md">USB_HUB_CAP_FLAGS</a> structure.  </p>
 </dd>
 
-### -field <b>HardwareIds</b>
+### -field HardwareIds
 
 <dd>
 <p>The PnP hardware ID multi-string for the USB device in a <a href="..\usbioctl\ns-usbioctl--usb-id-string.md">USB_ID_STRING</a> structure. </p>
 </dd>
 
-### -field <b>CompatibleIds</b>
+### -field CompatibleIds
 
 <dd>
 <p> PnP compatible ID multi-string for the USB device in a <a href="..\usbioctl\ns-usbioctl--usb-id-string.md">USB_ID_STRING</a> structure. </p>
 </dd>
 
-### -field <b>DeviceDescription</b>
+### -field DeviceDescription
 
 <dd>
 <p>Description of the device in a <a href="..\usbioctl\ns-usbioctl--usb-id-string.md">USB_ID_STRING</a> structure. This may be set to <b>NULL</b>.</p>

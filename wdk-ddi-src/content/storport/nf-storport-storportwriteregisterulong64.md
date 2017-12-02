@@ -56,13 +56,13 @@ req.product: Windows 10 or later.
 ## -parameters
 <dl>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>Pointer to the register where the data is written to. The register must be a mapped range in memory space</p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>A <b>ULONG64</b> value to write to the register.</p>

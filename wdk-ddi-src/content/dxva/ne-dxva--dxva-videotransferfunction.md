@@ -64,43 +64,43 @@ typedef enum _DXVA_VideoTransferFunction {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVA_VideoTransFuncShift"></a><a id="dxva_videotransfuncshift"></a><a id="DXVA_VIDEOTRANSFUNCSHIFT"></a><b>DXVA_VideoTransFuncShift</b>
+### -field DXVA_VideoTransFuncShift
 
 <dd>
 <p>Specifies to shift bits by 27 positions (DXVA_ExtColorData_ShiftBase + 19, or 8 + 19).</p>
 </dd>
 
-### -field <a id="DXVA_VideoTransFuncMask"></a><a id="dxva_videotransfuncmask"></a><a id="DXVA_VIDEOTRANSFUNCMASK"></a><b>DXVA_VideoTransFuncMask</b>
+### -field DXVA_VideoTransFuncMask
 
 <dd>
 <p>Specifies the video transfer function mask. 5 (0xF8000000) bits of a DWORD can be used to specify the video transfer function.</p>
 </dd>
 
-### -field <a id="DXVA_VideoTransFunc_Unknown"></a><a id="dxva_videotransfunc_unknown"></a><a id="DXVA_VIDEOTRANSFUNC_UNKNOWN"></a><b>DXVA_VideoTransFunc_Unknown</b>
+### -field DXVA_VideoTransFunc_Unknown
 
 <dd>
 <p>Specifies that the video transfer function is not specified. The default is 22_8bit_sRGB if required for a computation.</p>
 </dd>
 
-### -field <a id="DXVA_VideoTransFunc_10"></a><a id="dxva_videotransfunc_10"></a><a id="DXVA_VIDEOTRANSFUNC_10"></a><b>DXVA_VideoTransFunc_10</b>
+### -field DXVA_VideoTransFunc_10
 
 <dd>
 <p>Specifies linear RGB conversion (corresponds to gamma = 1.0).</p>
 </dd>
 
-### -field <a id="DXVA_VideoTransFunc_18"></a><a id="dxva_videotransfunc_18"></a><a id="DXVA_VIDEOTRANSFUNC_18"></a><b>DXVA_VideoTransFunc_18</b>
+### -field DXVA_VideoTransFunc_18
 
 <dd>
 <p>Specifies true 1.8 gamma. That is, L' = pow(L, 1/gamma) for L=0..1.</p>
 </dd>
 
-### -field <a id="DXVA_VideoTransFunc_20"></a><a id="dxva_videotransfunc_20"></a><a id="DXVA_VIDEOTRANSFUNC_20"></a><b>DXVA_VideoTransFunc_20</b>
+### -field DXVA_VideoTransFunc_20
 
 <dd>
 <p>Specifies true 2.0 gamma. That is, L' = pow(L, 1/gamma) for L=0..1.</p>
 </dd>
 
-### -field <a id="DXVA_VideoTransFunc_22"></a><a id="dxva_videotransfunc_22"></a><a id="DXVA_VIDEOTRANSFUNC_22"></a><b>DXVA_VideoTransFunc_22</b>
+### -field DXVA_VideoTransFunc_22
 
 <dd>
 <dl>
@@ -113,7 +113,7 @@ typedef enum _DXVA_VideoTransferFunction {
 </dl>
 </dd>
 
-### -field <a id="DXVA_VideoTransFunc_22_709"></a><a id="dxva_videotransfunc_22_709"></a><a id="DXVA_VIDEOTRANSFUNC_22_709"></a><b>DXVA_VideoTransFunc_22_709</b>
+### -field DXVA_VideoTransFunc_22_709
 
 <dd>
 <dl>
@@ -126,7 +126,7 @@ typedef enum _DXVA_VideoTransferFunction {
 </dl>
 </dd>
 
-### -field <a id="DXVA_VideoTransFunc_22_240M"></a><a id="dxva_videotransfunc_22_240m"></a><a id="DXVA_VIDEOTRANSFUNC_22_240M"></a><b>DXVA_VideoTransFunc_22_240M</b>
+### -field DXVA_VideoTransFunc_22_240M
 
 <dd>
 <dl>
@@ -139,13 +139,13 @@ typedef enum _DXVA_VideoTransferFunction {
 </dl>
 </dd>
 
-### -field <a id="DXVA_VideoTransFunc_22_8bit_sRGB"></a><a id="dxva_videotransfunc_22_8bit_srgb"></a><a id="DXVA_VIDEOTRANSFUNC_22_8BIT_SRGB"></a><b>DXVA_VideoTransFunc_22_8bit_sRGB</b>
+### -field DXVA_VideoTransFunc_22_8bit_sRGB
 
 <dd>
 <p>Specifies gamma 2.4 curve with a linear range in the low range, which makes it match an accurate 2.2 gamma 8 bit curve. </p>
 </dd>
 
-### -field <a id="DXVA_VideoTransFunc_28"></a><a id="dxva_videotransfunc_28"></a><a id="DXVA_VIDEOTRANSFUNC_28"></a><b>DXVA_VideoTransFunc_28</b>
+### -field DXVA_VideoTransFunc_28
 
 <dd>
 <p>Specifies true 2.8 gamma. That is, L' = pow(L, 1/gamma) for L=0..1.</p>

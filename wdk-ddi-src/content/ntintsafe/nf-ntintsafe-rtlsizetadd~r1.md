@@ -56,19 +56,19 @@ NTSTATUS RtlSizeTAdd(
 ## -parameters
 <dl>
 
-### -param <i>Augend</i> [in]
+### -param Augend [in]
 
 <dd>
 <p>The first value in the equation.</p>
 </dd>
 
-### -param <i>Addend</i> [in]
+### -param Addend [in]
 
 <dd>
 <p>The value to add to <i>Augend</i>.</p>
 </dd>
 
-### -param <i>pResult</i> [out]
+### -param pResult [out]
 
 <dd>
 <p>A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

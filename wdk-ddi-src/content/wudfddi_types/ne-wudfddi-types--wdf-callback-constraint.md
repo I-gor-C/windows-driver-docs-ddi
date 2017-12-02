@@ -7,7 +7,7 @@ old-location: wdf\wdf_callback_constraint.htm
 old-project: wdf
 ms.assetid: 118a9dcc-8dd4-454a-bab2-1558821781a7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef enum _WDF_CALLBACK_CONSTRAINT {
 ## -enum-fields
 <dl>
 
-### -field <a id="None"></a><a id="none"></a><a id="NONE"></a><b>None</b>
+### -field None
 
 <dd>
 <p>No callback functions into the driver are synchronized.  The driver must handle all synchronization.</p>
 </dd>
 
-### -field <a id="WdfDeviceLevel"></a><a id="wdfdevicelevel"></a><a id="WDFDEVICELEVEL"></a><b>WdfDeviceLevel</b>
+### -field WdfDeviceLevel
 
 <dd>
 <p>All callback functions into the driver that are associated with the device are synchronized, including all callback functions that are associated with I/O queues. Only one event handler that is associated with the device can run at any given time.</p>
 </dd>
 
-### -field <a id="WdfLevelReserved"></a><a id="wdflevelreserved"></a><a id="WDFLEVELRESERVED"></a><b>WdfLevelReserved</b>
+### -field WdfLevelReserved
 
 <dd>
 <p>Reserved.</p>

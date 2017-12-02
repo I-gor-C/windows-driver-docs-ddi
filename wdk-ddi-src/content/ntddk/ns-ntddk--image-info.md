@@ -71,83 +71,83 @@ typedef struct _IMAGE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b><b>Properties</b></b>
+### -field Properties
 
 <dd></dd>
 
-### -field <b><b>ImageAddressingMode</b></b>
+### -field ImageAddressingMode
 
 <dd>
 <p>Always set to IMAGE_ADDRESSING_MODE_32BIT.</p>
 </dd>
 
-### -field <b><b>SystemModeImage</b></b>
+### -field SystemModeImage
 
 <dd>
 <p>Set either to one for newly loaded kernel-mode components, such as drivers, or to zero for images that are mapped into user space.</p>
 </dd>
 
-### -field <b><b>ImageMappedToAllPids</b></b>
+### -field ImageMappedToAllPids
 
 <dd>
 <p>Always set to zero.</p>
 </dd>
 
-### -field <b><b>ExtendedInfoPresent</b></b>
+### -field ExtendedInfoPresent
 
 <dd>
 <p>If the <b>ExtendedInfoPresent</b> flag is set, the <b>IMAGE_INFO</b> structure is part of a larger, extended version of the image information structure (see <a href="..\ntddk\ns-ntddk--image-info-ex.md">IMAGE_INFO_EX</a>). Added in Windows Vista. For more information, see "Extended version of the image information structure" later in this Remarks section.</p>
 </dd>
 
-### -field <b><b>MachineTypeMismatch</b></b>
+### -field MachineTypeMismatch
 
 <dd>
 <p>Always set to zero. Added in Windows 8/Windows Server 2012.</p>
 </dd>
 
-### -field <b><b>ImageSignatureLevel</b></b>
+### -field ImageSignatureLevel
 
 <dd>
 <p>The level of signature with which code integrity has labeled the image. This value is one of the <code>#define SE_SIGNING_LEVEL_*</code> constants in ntddk.h. Added in Windows 8.1/Windows Server 2012 R2.</p>
 </dd>
 
-### -field <b><b>ImageSignatureType</b></b>
+### -field ImageSignatureType
 
 <dd>
 <p>The type of signature with which code integrity has labeled the image. This value is a <b>SE_IMAGE_SIGNATURE_TYPE</b> enumeration value,  defined in ntddk.h. Added in Windows 8.1/Windows Server 2012 R2.</p>
 </dd>
 
-### -field <b><b>ImagePartialMap</b></b>
+### -field ImagePartialMap
 
 <dd>
 <p>This value is non-zero if the image mapping view called out for is a partial view that does not map the entire image; 0 if the view maps the entire image. Added in Windows 10/Windows Server 2016.</p>
 </dd>
 
-### -field <b><b>Reserved</b></b>
+### -field Reserved
 
 <dd>
 <p>Always set to zero.</p>
 </dd>
 
-### -field <b><b>ImageBase</b></b>
+### -field ImageBase
 
 <dd>
 <p>Set to the virtual base address of the image.</p>
 </dd>
 
-### -field <b><b>ImageSelector</b></b>
+### -field ImageSelector
 
 <dd>
 <p>Always set to zero.</p>
 </dd>
 
-### -field <b><b>ImageSize</b></b>
+### -field ImageSize
 
 <dd>
 <p>Set to the virtual size, in bytes, of the image.</p>
 </dd>
 
-### -field <b><b>ImageSectionNumber</b></b>
+### -field ImageSectionNumber
 
 <dd>
 <p>Always set to zero.</p>

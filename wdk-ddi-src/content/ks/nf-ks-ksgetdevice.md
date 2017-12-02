@@ -54,7 +54,7 @@ PKSDEVICE KsGetDevice(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>The object to query for the device to which it belongs.</p>

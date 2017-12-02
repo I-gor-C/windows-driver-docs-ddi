@@ -7,7 +7,7 @@ old-location: sensors\isensorclassextension_cleanupfile.htm
 old-project: sensors
 ms.assetid: eeade123-fb83-478f-99e3-e79bbbb1919b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorClassExtension, CleanupFile, ISensorClassExtension::CleanupFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT CleanupFile(
 ## -parameters
 <dl>
 
-### -param <i>pWdfFile</i> 
+### -param pWdfFile 
 
 <dd>
 <p>Pointer to an IWDFFile interface that represents the file object for the application being closed.</p>

@@ -66,20 +66,20 @@ typedef struct _CPSUICBPARAM {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>CPSUI-supplied size, in bytes, of the CPSUICBPARAM structure.</p>
 </dd>
 
-### -field <b>Reason</b>
+### -field Reason
 
 <dd>
 <p>CPSUI-supplied value indicating the reason it is calling the callback function. This can be one of the following values:</p>
 <p></p>
 <dl>
 
-### -field <a id="CPSUICB_REASON_ABOUT"></a><a id="cpsuicb_reason_about"></a>CPSUICB_REASON_ABOUT
+### -field CPSUICB_REASON_ABOUT
 
 <dd>
 <p>The user has clicked on the page's <b>About</b> button, and the application previously set the CPSUIF_ABOUT_CALLBACK flag in a <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> structure. CPSUI sets <i>pCurItem</i> to the value contained in <b>pOptItem</b>, and sets <b>pOldSel</b> to point to the <b>COMPROPSHEETUI</b> structure.</p>
@@ -88,7 +88,7 @@ typedef struct _CPSUICBPARAM {
 <p></p>
 <dl>
 
-### -field <a id="CPSUICB_REASON_APPLYNOW"></a><a id="cpsuicb_reason_applynow"></a>CPSUICB_REASON_APPLYNOW
+### -field CPSUICB_REASON_APPLYNOW
 
 <dd>
 <p>The user has clicked on the page's <b>Apply</b> or <b>OK</b> button, and CPSUI has received a PSN_APPLY notification message (described in the Microsoft Windows SDK documentation). CPSUI sets <b>pCurItem</b> to point to the option to which <b>pOptItem</b> points. It also sets <b>OldSel</b> to minus one to indicate that all valid changed option values should be applied now.</p>
@@ -97,7 +97,7 @@ typedef struct _CPSUICBPARAM {
 <p></p>
 <dl>
 
-### -field <a id="CPSUICB_REASON_DLGPROC"></a><a id="cpsuicb_reason_dlgproc"></a>CPSUICB_REASON_DLGPROC
+### -field CPSUICB_REASON_DLGPROC
 
 <dd>
 <p>The option identified by <b>pCurItem</b> is a push button (<a href="https://msdn.microsoft.com/library/windows/hardware/ff562844">TVOT_PUSHBUTTON</a> option type), and the user has clicked on the button.</p>
@@ -107,7 +107,7 @@ typedef struct _CPSUICBPARAM {
 <p></p>
 <dl>
 
-### -field <a id="CPSUICB_REASON_ECB_CHANGED"></a><a id="cpsuicb_reason_ecb_changed"></a>CPSUICB_REASON_ECB_CHANGED
+### -field CPSUICB_REASON_ECB_CHANGED
 
 <dd>
 <p>The option identified by <b>pCurItem</b> is an extended check box, and the user has changed the box's state.</p>
@@ -116,7 +116,7 @@ typedef struct _CPSUICBPARAM {
 <p></p>
 <dl>
 
-### -field <a id="CPSUICB_REASON_EXTPUSH"></a><a id="cpsuicb_reason_extpush"></a>CPSUICB_REASON_EXTPUSH
+### -field CPSUICB_REASON_EXTPUSH
 
 <dd>
 <p>The option identified by <b>pCurItem</b> is an extended push button, and the user has clicked on the button.</p>
@@ -125,7 +125,7 @@ typedef struct _CPSUICBPARAM {
 <p></p>
 <dl>
 
-### -field <a id="CPSUICB_REASON_ITEMS_REVERTED"></a><a id="cpsuicb_reason_items_reverted"></a>CPSUICB_REASON_ITEMS_REVERTED
+### -field CPSUICB_REASON_ITEMS_REVERTED
 
 <dd>
 <p>The user clicked on the page's <b>Undo</b> button, and CPSUI has reverted all selections to their original values.</p>
@@ -134,7 +134,7 @@ typedef struct _CPSUICBPARAM {
 <p></p>
 <dl>
 
-### -field <a id="CPSUICB_REASON_KILLACTIVE"></a><a id="cpsuicb_reason_killactive"></a>CPSUICB_REASON_KILLACTIVE
+### -field CPSUICB_REASON_KILLACTIVE
 
 <dd>
 <p>The property sheet page is about to lose activation, and CPSUI has received a PSN_KILLACTIVE notification message (described in the Windows SDK documentation). CPSUI sets <b>pCurItem</b> to the value contained in <b>pOptItem</b>, and sets <b>pOldSel</b> to point to the <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> structure.</p>
@@ -143,7 +143,7 @@ typedef struct _CPSUICBPARAM {
 <p></p>
 <dl>
 
-### -field <a id="CPSUICB_REASON_OPTITEM_SETFOCUS"></a><a id="cpsuicb_reason_optitem_setfocus"></a>CPSUICB_REASON_OPTITEM_SETFOCUS
+### -field CPSUICB_REASON_OPTITEM_SETFOCUS
 
 <dd>
 <p>The option identified by <b>pCurItem</b> has received input focus.</p>
@@ -152,7 +152,7 @@ typedef struct _CPSUICBPARAM {
 <p></p>
 <dl>
 
-### -field <a id="CPSUICB_REASON_PUSHBUTTON"></a><a id="cpsuicb_reason_pushbutton"></a>CPSUICB_REASON_PUSHBUTTON
+### -field CPSUICB_REASON_PUSHBUTTON
 
 <dd>
 <p>The option identified by <b>pCurItem</b> is a push button (<a href="https://msdn.microsoft.com/library/windows/hardware/ff562844">TVOT_PUSHBUTTON</a> option type), and the user has clicked on the button.</p>
@@ -162,7 +162,7 @@ typedef struct _CPSUICBPARAM {
 <p></p>
 <dl>
 
-### -field <a id="CPSUICB_REASON_SEL_CHANGED"></a><a id="cpsuicb_reason_sel_changed"></a>CPSUICB_REASON_SEL_CHANGED
+### -field CPSUICB_REASON_SEL_CHANGED
 
 <dd>
 <p>The user has changed the selected value for the option pointed to by <b>pCurItem</b>.</p>
@@ -171,7 +171,7 @@ typedef struct _CPSUICBPARAM {
 <p></p>
 <dl>
 
-### -field <a id="CPSUICB_REASON_SETACTIVE"></a><a id="cpsuicb_reason_setactive"></a>CPSUICB_REASON_SETACTIVE
+### -field CPSUICB_REASON_SETACTIVE
 
 <dd>
 <p>The property sheet page is about to become active, and CPSUI has received a PSN_SETACTIVE notification message (described in the Windows SDK documentation). CPSUI sets <b>pCurItem</b> to the value contained in <b>pOptItem</b>, and sets <b>pOldSel</b> to point to the <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> structure.</p>
@@ -179,57 +179,57 @@ typedef struct _CPSUICBPARAM {
 </dl>
 </dd>
 
-### -field <b>hDlg</b>
+### -field hDlg
 
 <dd>
 <p>CPSUI-supplied handle to the currently active dialog box.</p>
 </dd>
 
-### -field <b>pOptItem</b>
+### -field pOptItem
 
 <dd>
 <p>CPSUI-supplied pointer to an array of <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structures. This is the same pointer that the application previously supplied in a <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> structure.</p>
 </dd>
 
-### -field <b>cOptItem</b>
+### -field cOptItem
 
 <dd>
 <p>CPSUI-supplied number of OPTITEM structures in the array pointed to by <b>pOptItem</b>. This is the same number that the application previously supplied in a <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>CPSUI-supplied flags. This is the same set of flags that the application previously supplied in a <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> structure.</p>
 </dd>
 
-### -field <b>pCurItem</b>
+### -field pCurItem
 
 <dd>
 <p>CPSUI-supplied pointer to a member of the OPTITEM array pointed to by <b>pOptItem</b>. This array member represents the "current" option, which is the one for which the callback function was called.</p>
 </dd>
 
-### -field <b>OldSel</b>
+### -field OldSel
 
 <dd>
 <p>If the <b>Reason</b> member contains CPSUICB_REASON_SEL_CHANGED, CPSUI sets this union to the previous contents of the <b>OldSel</b>/<b>pOldSel</b> member of the <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structure pointed to by <b>pCurItem</b>.</p>
 <p>For all other <b>Reason</b> values, the contents of this union should be ignored.</p>
 </dd>
 
-### -field <b>pOldSel</b>
+### -field pOldSel
 
 <dd>
 <p>If the <b>Reason</b> member contains CPSUICB_REASON_SEL_CHANGED, CPSUI sets this union to the previous contents of the <b>OldSel</b>/<b>pOldSel</b> member of the <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structure pointed to by <b>pCurItem</b>.</p>
 <p>For all other <b>Reason</b> values, the contents of this union should be ignored.</p>
 </dd>
 
-### -field <b>UserData</b>
+### -field UserData
 
 <dd>
 <p>CPSUI-supplied user data. This is the same value that the application previously supplied in a <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> structure.</p>
 </dd>
 
-### -field <b>Result</b>
+### -field Result
 
 <dd>
 <p>Result value supplied by the <a href="..\compstui\nc-compstui--cpsuicallback.md">_CPSUICALLBACK</a>-typed callback function. By default, CPSUI sets this value to CPSUI_OK. After the callback function returns, CPSUI calls its <a href="print.compropsheet">ComPropSheet</a> function with a function code of <a href="print.cpsfunc_set_result">CPSFUNC_SET_RESULT</a>, supplying the <b>Reason</b> member contents as the result value.</p>

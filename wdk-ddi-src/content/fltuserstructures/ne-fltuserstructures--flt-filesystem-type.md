@@ -7,7 +7,7 @@ old-location: ifsk\flt_filesystem_type.htm
 old-project: ifsk
 ms.assetid: b4bdfa93-3db5-4dfa-b539-112927cbedb0
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FLT_VOLUME_PROPERTIES, FLT_VOLUME_PROPERTIES, *PFLT_VOLUME_PROPERTIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,181 +83,181 @@ typedef enum _FLT_FILESYSTEM_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="FLT_FSTYPE_UNKNOWN"></a><a id="flt_fstype_unknown"></a><b>FLT_FSTYPE_UNKNOWN</b>
+### -field FLT_FSTYPE_UNKNOWN
 
 <dd>
 <p>Unknown file system type.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_RAW"></a><a id="flt_fstype_raw"></a><b>FLT_FSTYPE_RAW</b>
+### -field FLT_FSTYPE_RAW
 
 <dd>
 <p>Microsoft RAW file system. File system namespace: \FileSystem\RAW. </p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_NTFS"></a><a id="flt_fstype_ntfs"></a><b>FLT_FSTYPE_NTFS</b>
+### -field FLT_FSTYPE_NTFS
 
 <dd>
 <p>Microsoft NTFS file system. File system namespace:  \FileSystem\Ntfs.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_FAT"></a><a id="flt_fstype_fat"></a><b>FLT_FSTYPE_FAT</b>
+### -field FLT_FSTYPE_FAT
 
 <dd>
 <p>Microsoft FAT file system. File system namespace: \FileSystem\Fastfat. </p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_CDFS"></a><a id="flt_fstype_cdfs"></a><b>FLT_FSTYPE_CDFS</b>
+### -field FLT_FSTYPE_CDFS
 
 <dd>
 <p>Microsoft CDFS file system. File system namespace: \FileSystem\Cdfs.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_UDFS"></a><a id="flt_fstype_udfs"></a><b>FLT_FSTYPE_UDFS</b>
+### -field FLT_FSTYPE_UDFS
 
 <dd>
 <p>Microsoft UDFS file system. File system namespace: \FileSystem\Udfs.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_LANMAN"></a><a id="flt_fstype_lanman"></a><b>FLT_FSTYPE_LANMAN</b>
+### -field FLT_FSTYPE_LANMAN
 
 <dd>
 <p>Microsoft LanMan Redirector. File system namespace: \FileSystem\MRxSmb.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_WEBDAV"></a><a id="flt_fstype_webdav"></a><b>FLT_FSTYPE_WEBDAV</b>
+### -field FLT_FSTYPE_WEBDAV
 
 <dd>
 <p>Microsoft WebDav redirector. File system namespace: \FileSystem\MRxDav.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_RDPDR"></a><a id="flt_fstype_rdpdr"></a><b>FLT_FSTYPE_RDPDR</b>
+### -field FLT_FSTYPE_RDPDR
 
 <dd>
 <p>Microsoft Terminal Server redirector. File system namespace: \Driver\rdpdr.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_NFS"></a><a id="flt_fstype_nfs"></a><b>FLT_FSTYPE_NFS</b>
+### -field FLT_FSTYPE_NFS
 
 <dd>
 <p>Microsoft NFS file system. File system namespace: \FileSystem\NfsRdr.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_MS_NETWARE"></a><a id="flt_fstype_ms_netware"></a><b>FLT_FSTYPE_MS_NETWARE</b>
+### -field FLT_FSTYPE_MS_NETWARE
 
 <dd>
 <p>Microsoft NetWare redirector. File system namespace: \FileSystem\nwrdr.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_NETWARE"></a><a id="flt_fstype_netware"></a><b>FLT_FSTYPE_NETWARE</b>
+### -field FLT_FSTYPE_NETWARE
 
 <dd>
 <p>Novell NetWare redirector.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_BSUDF"></a><a id="flt_fstype_bsudf"></a><b>FLT_FSTYPE_BSUDF</b>
+### -field FLT_FSTYPE_BSUDF
 
 <dd>
 <p>The BsUDF CD-ROM driver. File system namespace: \FileSystem\BsUDF.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_MUP"></a><a id="flt_fstype_mup"></a><b>FLT_FSTYPE_MUP</b>
+### -field FLT_FSTYPE_MUP
 
 <dd>
 <p>Microsoft MUP redirector. File system namespace: \FileSystem\Mup.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_RSFX"></a><a id="flt_fstype_rsfx"></a><b>FLT_FSTYPE_RSFX</b>
+### -field FLT_FSTYPE_RSFX
 
 <dd>
 <p>Microsoft WinFS redirector. File system namespace: \FileSystem\RsFxDrv.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_ROXIO_UDF1"></a><a id="flt_fstype_roxio_udf1"></a><b>FLT_FSTYPE_ROXIO_UDF1</b>
+### -field FLT_FSTYPE_ROXIO_UDF1
 
 <dd>
 <p>Roxio UDF writeable file system. File system namespace: \FileSystem\cdudf_xp.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_ROXIO_UDF2"></a><a id="flt_fstype_roxio_udf2"></a><b>FLT_FSTYPE_ROXIO_UDF2</b>
+### -field FLT_FSTYPE_ROXIO_UDF2
 
 <dd>
 <p>Roxio UDF readable file system. File system namespace: \FileSystem\UdfReadr_xp.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_ROXIO_UDF3"></a><a id="flt_fstype_roxio_udf3"></a><b>FLT_FSTYPE_ROXIO_UDF3</b>
+### -field FLT_FSTYPE_ROXIO_UDF3
 
 <dd>
 <p>Roxio DVD file system. File system namespace: \FileSystem\DVDVRRdr_xp.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_TACIT"></a><a id="flt_fstype_tacit"></a><b>FLT_FSTYPE_TACIT</b>
+### -field FLT_FSTYPE_TACIT
 
 <dd>
 <p>Tacit file system. Namespace: \Device\TCFSPSE.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_FS_REC"></a><a id="flt_fstype_fs_rec"></a><b>FLT_FSTYPE_FS_REC</b>
+### -field FLT_FSTYPE_FS_REC
 
 <dd>
 <p>Microsoft file system recognizer. File system namespace: \FileSystem\Fs_rec.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_INCD"></a><a id="flt_fstype_incd"></a><b>FLT_FSTYPE_INCD</b>
+### -field FLT_FSTYPE_INCD
 
 <dd>
 <p>Nero InCD file system. File system namespace: \FileSystem\InCDfs.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_INCD_FAT"></a><a id="flt_fstype_incd_fat"></a><b>FLT_FSTYPE_INCD_FAT</b>
+### -field FLT_FSTYPE_INCD_FAT
 
 <dd>
 <p>Nero InCD FAT file system. File system namespace: \FileSystem\InCDFat.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_EXFAT"></a><a id="flt_fstype_exfat"></a><b>FLT_FSTYPE_EXFAT</b>
+### -field FLT_FSTYPE_EXFAT
 
 <dd>
 <p>Microsoft EXFat file system. File system namespace: \FileSystem\exfat.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_PSFS"></a><a id="flt_fstype_psfs"></a><b>FLT_FSTYPE_PSFS</b>
+### -field FLT_FSTYPE_PSFS
 
 <dd>
 <p>PolyServ file system. File system namespace: \FileSystem\psfs.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_GPFS"></a><a id="flt_fstype_gpfs"></a><b>FLT_FSTYPE_GPFS</b>
+### -field FLT_FSTYPE_GPFS
 
 <dd>
 <p>IBM General Parallel File System. File system namespace: \FileSystem\gpfs.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_NPFS"></a><a id="flt_fstype_npfs"></a><b>FLT_FSTYPE_NPFS</b>
+### -field FLT_FSTYPE_NPFS
 
 <dd>
 <p>Microsoft named pipe file system. File system namespace: \FileSystem\npfs.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_MSFS"></a><a id="flt_fstype_msfs"></a><b>FLT_FSTYPE_MSFS</b>
+### -field FLT_FSTYPE_MSFS
 
 <dd>
 <p>Microsoft mailslot file system. File system namespace: \FileSystem\msfs.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_CSVFS"></a><a id="flt_fstype_csvfs"></a><b>FLT_FSTYPE_CSVFS</b>
+### -field FLT_FSTYPE_CSVFS
 
 <dd>
 <p>Microsoft cluster shared volume file system. File system namespace: \FileSystem\csvfs.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_REFS"></a><a id="flt_fstype_refs"></a><b>FLT_FSTYPE_REFS</b>
+### -field FLT_FSTYPE_REFS
 
 <dd>
 <p>Microsoft ReFS file system. File system namespace: \FileSystem\refs.</p>
 </dd>
 
-### -field <a id="FLT_FSTYPE_OPENAFS"></a><a id="flt_fstype_openafs"></a><b>FLT_FSTYPE_OPENAFS</b>
+### -field FLT_FSTYPE_OPENAFS
 
 <dd>
 <p> OpenAFS file system. File system namespace: \FileSystem\AFSRedirector.</p>
@@ -306,4 +306,4 @@ typedef enum _FLT_FILESYSTEM_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_FILESYSTEM_TYPE enumeration%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_FILESYSTEM_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\dot11ext_ihv_handlers.htm
 old-project: netvista
 ms.assetid: 6dacd330-45f1-46f8-b2bf-2006c89f664f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11EXT_IHV_HANDLERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,7 +71,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Dot11ExtIhvDeinitService</b>
+### -field Dot11ExtIhvDeinitService
 
 <dd>
 <p>A pointer to the 
@@ -79,7 +79,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvDeinitService</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvInitAdapter</b>
+### -field Dot11ExtIhvInitAdapter
 
 <dd>
 <p>A pointer to the 
@@ -87,7 +87,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvInitAdapter</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvDeinitAdapter</b>
+### -field Dot11ExtIhvDeinitAdapter
 
 <dd>
 <p>A pointer to the 
@@ -95,7 +95,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvDeinitAdapter</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvPerformPreAssociate</b>
+### -field Dot11ExtIhvPerformPreAssociate
 
 <dd>
 <p>A pointer to the 
@@ -103,7 +103,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvPerformPreAssociate</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvAdapterReset</b>
+### -field Dot11ExtIhvAdapterReset
 
 <dd>
 <p>A pointer to the 
@@ -111,7 +111,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvAdapterReset</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvPerformPostAssociate</b>
+### -field Dot11ExtIhvPerformPostAssociate
 
 <dd>
 <p>A pointer to the 
@@ -119,7 +119,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvPerformPostAssociate</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvStopPostAssociate</b>
+### -field Dot11ExtIhvStopPostAssociate
 
 <dd>
 <p>A pointer to the 
@@ -127,7 +127,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvStopPostAssociate</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvValidateProfile</b>
+### -field Dot11ExtIhvValidateProfile
 
 <dd>
 <p>A pointer to the 
@@ -135,7 +135,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvValidateProfile</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvPerformCapabilityMatch</b>
+### -field Dot11ExtIhvPerformCapabilityMatch
 
 <dd>
 <p>A pointer to the 
@@ -143,7 +143,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvPerformCapabilityMatch</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvCreateDiscoveryProfiles</b>
+### -field Dot11ExtIhvCreateDiscoveryProfiles
 
 <dd>
 <p>A pointer to the 
@@ -151,7 +151,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvCreateDiscoveryProfiles</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvProcessSessionChange</b>
+### -field Dot11ExtIhvProcessSessionChange
 
 <dd>
 <p>A pointer to the 
@@ -159,7 +159,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvProcessSessionChange</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvReceiveIndication</b>
+### -field Dot11ExtIhvReceiveIndication
 
 <dd>
 <p>A pointer to the 
@@ -167,7 +167,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvReceiveIndication</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvReceivePacket</b>
+### -field Dot11ExtIhvReceivePacket
 
 <dd>
 <p>A pointer to the 
@@ -175,7 +175,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvReceivePacket</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvSendPacketCompletion</b>
+### -field Dot11ExtIhvSendPacketCompletion
 
 <dd>
 <p>A pointer to the 
@@ -183,7 +183,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvSendPacketCompletion</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvIsUIRequestPending</b>
+### -field Dot11ExtIhvIsUIRequestPending
 
 <dd>
 <p>A pointer to the 
@@ -191,7 +191,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvIsUIRequestPending</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvProcessUIResponse</b>
+### -field Dot11ExtIhvProcessUIResponse
 
 <dd>
 <p>A pointer to the 
@@ -199,7 +199,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvProcessUIResponse</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvQueryUIRequest</b>
+### -field Dot11ExtIhvQueryUIRequest
 
 <dd>
 <p>A pointer to the 
@@ -207,7 +207,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvQueryUIRequest</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvOnexIndicateResult</b>
+### -field Dot11ExtIhvOnexIndicateResult
 
 <dd>
 <p>A pointer to the 
@@ -215,7 +215,7 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
      Dot11ExtIhvOneXIndicateResult</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtIhvControl</b>
+### -field Dot11ExtIhvControl
 
 <dd>
 <p>A pointer to the 
@@ -343,4 +343,4 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_IHV_HANDLERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_IHV_HANDLERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

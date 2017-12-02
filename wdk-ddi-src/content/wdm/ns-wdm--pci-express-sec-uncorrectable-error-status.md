@@ -72,97 +72,97 @@ typedef union _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>TargetAbortOnSplitCompletion</b>
+### -field TargetAbortOnSplitCompletion
 
 <dd>
 <p>A single bit that indicates that a target abort on split completion has occurred.</p>
 </dd>
 
-### -field <b>MasterAbortOnSplitCompletion</b>
+### -field MasterAbortOnSplitCompletion
 
 <dd>
 <p>A single bit that indicates that a master abort on split completion has occurred.</p>
 </dd>
 
-### -field <b>ReceivedTargetAbort</b>
+### -field ReceivedTargetAbort
 
 <dd>
 <p>A single bit that indicates that a target abort has been received.</p>
 </dd>
 
-### -field <b>ReceivedMasterAbort</b>
+### -field ReceivedMasterAbort
 
 <dd>
 <p>A single bit that indicates that a master abort has been received.</p>
 </dd>
 
-### -field <b>RsvdZ</b>
+### -field RsvdZ
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>UnexpectedSplitCompletionError</b>
+### -field UnexpectedSplitCompletionError
 
 <dd>
 <p>A single bit that indicates that an unexpected split completion error has occurred.</p>
 </dd>
 
-### -field <b>UncorrectableSplitCompletion</b>
+### -field UncorrectableSplitCompletion
 
 <dd>
 <p>A single bit that indicates that an uncorrectable split completion message data error has occurred.</p>
 </dd>
 
-### -field <b>UncorrectableDataError</b>
+### -field UncorrectableDataError
 
 <dd>
 <p>A single bit that indicates that an uncorrectable data error has occurred.</p>
 </dd>
 
-### -field <b>UncorrectableAttributeError</b>
+### -field UncorrectableAttributeError
 
 <dd>
 <p>A single bit that indicates that an uncorrectable attribute error has occurred.</p>
 </dd>
 
-### -field <b>UncorrectableAddressError</b>
+### -field UncorrectableAddressError
 
 <dd>
 <p>A single bit that indicates that an uncorrectable address error has occurred.</p>
 </dd>
 
-### -field <b>DelayedTransactionDiscardTimerExpired</b>
+### -field DelayedTransactionDiscardTimerExpired
 
 <dd>
 <p>A single bit that indicates that the delayed transaction discard timer has expired.</p>
 </dd>
 
-### -field <b>PERRAsserted</b>
+### -field PERRAsserted
 
 <dd>
 <p>A single bit that indicates that a PERR# assertion was detected.</p>
 </dd>
 
-### -field <b>SERRAsserted</b>
+### -field SERRAsserted
 
 <dd>
 <p>A single bit that indicates that a SERR# assertion was detected.</p>
 </dd>
 
-### -field <b>InternalBridgeError</b>
+### -field InternalBridgeError
 
 <dd>
 <p>A single bit that indicates that an internal bridge error has occurred.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS structure.</p>

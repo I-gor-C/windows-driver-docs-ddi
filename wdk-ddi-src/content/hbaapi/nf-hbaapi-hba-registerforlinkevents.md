@@ -59,37 +59,37 @@ HBA_STATUS HBA_API HBA_RegisterForLinkEvents(
 ## -parameters
 <dl>
 
-### -param <i>callback</i> 
+### -param callback 
 
 <dd>
 <p>Pointer to a callback routine of type <a href="storage.hba_link_callback">HBA_LINK_CALLBACK</a> to call when the event occurs. </p>
 </dd>
 
-### -param <i>userData</i> 
+### -param userData 
 
 <dd>
 <p>Pointer to user input data that is passed to the callback routine when it is called with each occurrence of the event. This data can synchronize the event handling with event registration.</p>
 </dd>
 
-### -param <i>pRLIRBuffer</i> 
+### -param pRLIRBuffer 
 
 <dd>
 <p>Pointer to registered link incident report (RLIR) data that is passed to the callback routine with each occurrence of the event. This data is overwritten by the callback routine each time it is called. </p>
 </dd>
 
-### -param <i>RLIRBufferSize</i> 
+### -param RLIRBufferSize 
 
 <dd>
 <p>Contains the size, in bytes, of the buffer at <i>pRLIRBuffer</i>.</p>
 </dd>
 
-### -param <i>handle</i> 
+### -param handle 
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA for which event callbacks are requested.</p>
 </dd>
 
-### -param <i>callbackHandle</i> 
+### -param callbackHandle 
 
 <dd>
 <p>Pointer to an opaque identifier that may be used to deregister the caller and suspend calls to the callback routine when events occur.</p>

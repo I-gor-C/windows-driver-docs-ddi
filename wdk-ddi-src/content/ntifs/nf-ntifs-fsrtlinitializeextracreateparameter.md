@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlinitializeextracreateparameter.htm
 old-project: ifsk
 ms.assetid: e3be12e4-84f3-4bd5-af9a-26ad89948e50
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FsRtlInitializeExtraCreateParameter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ VOID FsRtlInitializeExtraCreateParameter(
 ## -parameters
 <dl>
 
-### -param <i>Ecp</i> [in]
+### -param Ecp [in]
 
 <dd>
 <p>Pointer to the ECP context structure to initialize. </p>
 </dd>
 
-### -param <i>EcpFlags</i> [in]
+### -param EcpFlags [in]
 
 <dd>
 <p>Defines initialization options. Currently, no flags are defined. </p>
 </dd>
 
-### -param <i>CleanupCallback</i> [in, optional]
+### -param CleanupCallback [in, optional]
 
 <dd>
 <p>Optional pointer to a filter-defined cleanup callback routine of type <a href="..\ntifs\nc-ntifs-pfsrtl-extra-create-parameter-cleanup-callback.md">PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK</a>. The cleanup callback routine is called when the ECP context structure (created by the <a href="..\ntifs\nf-ntifs-fsrtlallocateextracreateparameter.md">FsRtlAllocateExtraCreateParameter</a> routine) is deleted. Set this parameter to <b>NULL</b> if a cleanup callback routine is not applicable. </p>
 </dd>
 
-### -param <i>TotalSize</i> [in]
+### -param TotalSize [in]
 
 <dd>
 <p>The size, in bytes, of the ECP context structure to initialize. </p>
 </dd>
 
-### -param <i>EcpType</i> [in]
+### -param EcpType [in]
 
 <dd>
 <p>Pointer to a GUID that indicates the type of ECP for which the context structure will be initialized. For more information about ECPs, see <a href="ifsk.using_extra_create_parameters_with_an_irp_mj_create_operation">Using Extra Create Parameters with an IRP_MJ_CREATE Operation</a>. </p>
 </dd>
 
-### -param <i>ListAllocatedFrom</i> [in, optional]
+### -param ListAllocatedFrom [in, optional]
 
 <dd>
 <p>Optional pointer to the list from which the ECP context structure is allocated. </p>
@@ -173,4 +173,4 @@ VOID FsRtlInitializeExtraCreateParameter(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlInitializeExtraCreateParameter routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlInitializeExtraCreateParameter routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

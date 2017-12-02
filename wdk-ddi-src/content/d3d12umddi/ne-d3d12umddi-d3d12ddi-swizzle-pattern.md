@@ -56,19 +56,19 @@ typedef enum D3D12DDI_SWIZZLE_PATTERN {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_SP_ROW_MAJOR"></a><a id="d3d12ddi_sp_row_major"></a><b>D3D12DDI_SP_ROW_MAJOR</b>
+### -field D3D12DDI_SP_ROW_MAJOR
 
 <dd>
 <p>A row major swizzle pattern.</p>
 </dd>
 
-### -field <a id="D3D12DDI_SP_64KB_STANDARD_SWIZZLE"></a><a id="d3d12ddi_sp_64kb_standard_swizzle"></a><b>D3D12DDI_SP_64KB_STANDARD_SWIZZLE</b>
+### -field D3D12DDI_SP_64KB_STANDARD_SWIZZLE
 
 <dd>
 <p>A 64 KB standard swizzle pattern.</p>
 </dd>
 
-### -field <a id="D3D12DDI_SP_DEVICE_DEPENDENT_0"></a><a id="d3d12ddi_sp_device_dependent_0"></a><b>D3D12DDI_SP_DEVICE_DEPENDENT_0</b>
+### -field D3D12DDI_SP_DEVICE_DEPENDENT_0
 
 <dd>
 <p>A device dependant swizzle pattern. </p>

@@ -83,13 +83,13 @@ typedef struct _DXGK_SET_TIMING_PATH_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnTargetId</b>
+### -field VidPnTargetId
 
 <dd>
 <p>The identifier of a display adapter's video present target.</p>
 </dd>
 
-### -field <b>OutputColorSpace</b>
+### -field OutputColorSpace
 
 <dd>
 <p>A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi-color-space-type.md">D3DDDI_COLOR_SPACE_TYPE</a> value which describes the output color space intended for the transported pixels.  The driver is responsible for sending appropriate metadata to ensure the display device is set up to interpret pixels correctly for this color space. </p>
@@ -107,18 +107,18 @@ Given that there are no plans to support ST.2084 gamma with Rec.709 primaries, o
 </p>
 </dd>
 
-### -field <b>SelectedWireFormat</b>
+### -field SelectedWireFormat
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-wire-format-and-preference.md">D3DKMDT_WIRE_FORMAT_AND_PREFERENCE</a> value which indicates the wire format to be set for the path. The Preference field is reserved in this context so should be ignored by the driver.  In the remaining five bit-fields, the OS will set one of the thirty bits to indicate which color encoding and at which bit depth the link should be driven.</p>
 </dd>
 
-### -field <b>Input</b>
+### -field Input
 
 <dd>
 <dl>
 
-### -field <b>VidPnPathUpdates</b>
+### -field VidPnPathUpdates
 
 <dd>
 <p>Describes how the VidPn elements corresponding to this path have been changed since the previous successful call.</p>
@@ -126,7 +126,7 @@ Given that there are no plans to support ST.2084 gamma with Rec.709 primaries, o
 For example, if the OS calls SetTimings to idle the monitor on a path, the Active flag would be cleared and the VidPnPathUpdates will be set to DXGK_PATH_UPDATE_UNMODIFIED, if it then calls SetTimings to power up the monitor, the Active flag would be set and the VidPnPathUpdates will still be set to DXGK_PATH_UPDATE_UNMODIFIED.</p>
 </dd>
 
-### -field <b>Active</b>
+### -field Active
 
 <dd>
 <p>If set, indicates that the path should be activated or remain active.
@@ -134,7 +134,7 @@ If clear, indicates that the path should be deactivated or remain inactive.
 </p>
 </dd>
 
-### -field <b>IgnoreConnectivity</b>
+### -field IgnoreConnectivity
 
 <dd>
 <p>If set, indicates that the driver should force output to the target even though no display device has been detected. 
@@ -142,7 +142,7 @@ If clear, the driver should report an updated ConnectionStatus if the connectivi
 </p>
 </dd>
 
-### -field <b>PreserveInherited</b>
+### -field PreserveInherited
 
 <dd>
 <p>If set, indicates that the driver should preserve the timings and content which were configured by a previous driver.  This flag is only used when the adapter was configured by something other than the current instance of the driver.  Initially, this will be used when the path was initialized by firmware during boot.
@@ -150,7 +150,7 @@ If clear, no special behavior is requested.
 </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use.</p>
@@ -158,24 +158,24 @@ If clear, no special behavior is requested.
 </dl>
 </dd>
 
-### -field <b>InputFlags</b>
+### -field InputFlags
 
 <dd>
 <p>A set of flags specifying what the OS wants the driver to do.</p>
 </dd>
 
-### -field <b>Output</b>
+### -field Output
 
 <dd>
 <dl>
 
-### -field <b>RecheckMPO</b>
+### -field RecheckMPO
 
 <dd>
 <p>If set, indicates that the OS needs to issue a CheckMPO due to changes on this path. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use.</p>
@@ -183,13 +183,13 @@ If clear, no special behavior is requested.
 </dl>
 </dd>
 
-### -field <b>OutputFlags</b>
+### -field OutputFlags
 
 <dd>
 <p>A set of flags specifying outcomes the OS needs to be aware of relating to this path.</p>
 </dd>
 
-### -field <b>TargetState</b>
+### -field TargetState
 
 <dd>
 <p>Indicates the target state as a result of this call. Since changing timings may cause the connection state of both modified targets and targets which the OS did not intended to change, this field communicates the state for each path.  </p>
@@ -197,19 +197,19 @@ If clear, no special behavior is requested.
 <p>If the target state is changed, this field should contain a copy of the queued, connection change which reflects the state resulting from the SetTiming call.</p>
 </dd>
 
-### -field <b>GlitchCause</b>
+### -field GlitchCause
 
 <dd>
 <p>A DXGK_GLITCH_CAUSE value which indicates which underlying change(s) in the display pipeline caused the glitch.</p>
 </dd>
 
-### -field <b>GlitchEffect</b>
+### -field GlitchEffect
 
 <dd>
 <p>A DXGK_GLITCH_EFFECT value which indicates how the glitch was presented to the user.</p>
 </dd>
 
-### -field <b>GlitchDuration</b>
+### -field GlitchDuration
 
 <dd>
 <p>A DXGK_GLITCH_DURATION value which indicates approximately how long the glitch lasted.  </p>
@@ -217,13 +217,13 @@ If clear, no special behavior is requested.
 <div> </div>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use.</p>
 </dd>
 
-### -field <b>DiagnosticInfo</b>
+### -field DiagnosticInfo
 
 <dd>
 <p>Set of information filled out by the driver for each path to describe any side-effects of the timing change.

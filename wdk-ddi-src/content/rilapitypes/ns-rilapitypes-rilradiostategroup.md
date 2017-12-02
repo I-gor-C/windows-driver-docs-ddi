@@ -7,7 +7,7 @@ old-location: netvista\rilradiostategroup_2.htm
 old-project: netvista
 ms.assetid: ce8cf743-4386-4afb-87d3-93f9a83bd632
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILRADIOSTATEGROUP, RILRADIOSTATEGROUP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef struct _RILRADIOSTATEGROUP {
 ## -struct-fields
 <dl>
 
-### -field <b>dwGroupId</b>
+### -field dwGroupId
 
 <dd></dd>
 
-### -field <b>dwGroupType</b>
+### -field dwGroupType
 
 <dd></dd>
 
-### -field <b>dwGroupFlags</b>
+### -field dwGroupFlags
 
 <dd></dd>
 
-### -field <b>wszGroupText</b>
+### -field wszGroupText
 
 <dd></dd>
 </dl>

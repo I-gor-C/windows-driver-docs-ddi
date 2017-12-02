@@ -7,7 +7,7 @@ old-location: debugger\addbreakpoint.htm
 old-project: debugger
 ms.assetid: 08452b54-158f-4dca-86d8-34cc3f96bc62
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl3, AddBreakpoint, IDebugControl3::AddBreakpoint
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ HRESULT AddBreakpoint(
 ## -parameters
 <dl>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>Specifies the breakpoint type of the new breakpoint.  This can be either of the following values:</p>
@@ -85,13 +85,13 @@ HRESULT AddBreakpoint(
 <p> </p>
 </dd>
 
-### -param <i>DesiredId</i> [in]
+### -param DesiredId [in]
 
 <dd>
 <p>Specifies the desired ID of the new breakpoint.  If it is DEBUG_ANY_ID, the engine will pick an unused ID.</p>
 </dd>
 
-### -param <i>Bp</i> [out]
+### -param Bp [out]
 
 <dd>
 <p>Receives an interface pointer to the new breakpoint.</p>
@@ -107,7 +107,7 @@ HRESULT AddBreakpoint(
 
 <p> </p>
 
-<p>This method may also return other error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
+<p>This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p>
 
 ## -remarks
 <p>If <i>DesiredId</i> is not DEBUG_ANY_ID and another breakpoint already uses the ID <i>DesiredId</i>, these methods will fail.</p>
@@ -166,4 +166,4 @@ HRESULT AddBreakpoint(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::AddBreakpoint method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::AddBreakpoint method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

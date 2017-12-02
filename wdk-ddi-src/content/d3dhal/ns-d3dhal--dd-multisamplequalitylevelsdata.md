@@ -61,31 +61,31 @@ typedef struct _DD_MULTISAMPLEQUALITYLEVELSDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>gdi2</b>
+### -field gdi2
 
 <dd>
 <p>Specifies a <a href="..\d3dhal\ns-d3dhal--dd-getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.</p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>Uses a value from the D3DFORMAT enumeration to specify the surface format of the multiple-sampled render target.</p>
 </dd>
 
-### -field <b>bFlip</b>
+### -field bFlip
 
 <dd>
 <p>Indicates the type of resolution. Set to <b>TRUE</b> (1) for flip-style resolution and to <b>FALSE</b> (0) for blt-style resolution.</p>
 </dd>
 
-### -field <b>MSType</b>
+### -field MSType
 
 <dd>
 <p>Uses a value from the D3DMULTISAMPLE_TYPE enumeration to specify the level of full-scene multisampling. If the display device supports maskable multisampling (more than one sample for a multiple-sample render-target format plus antialias support), the driver for the device must provide the number of quality levels for the D3DMULTISAMPLE_NONMASKABLE (1) enumerated value. </p>
 </dd>
 
-### -field <b>QualityLevels</b>
+### -field QualityLevels
 
 <dd>
 <p>Receives the number of multiple-sample quality levels that the driver supports for the given render-target format.</p>

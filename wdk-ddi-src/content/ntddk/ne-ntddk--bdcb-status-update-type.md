@@ -56,19 +56,19 @@ typedef enum _BDCB_STATUS_UPDATE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="BdCbStatusPrepareForDependecyLoad"></a><a id="bdcbstatuspreparefordependecyload"></a><a id="BDCBSTATUSPREPAREFORDEPENDECYLOAD"></a><b>BdCbStatusPrepareForDependecyLoad</b>
+### -field BdCbStatusPrepareForDependecyLoad
 
 <dd>
 <p>Windows will start loading driver dependencies next.</p>
 </dd>
 
-### -field <a id="BdCbStatusPrepareForDriverLoad"></a><a id="bdcbstatuspreparefordriverload"></a><a id="BDCBSTATUSPREPAREFORDRIVERLOAD"></a><b>BdCbStatusPrepareForDriverLoad</b>
+### -field BdCbStatusPrepareForDriverLoad
 
 <dd>
 <p>Windows has completed loading driver dependencies and will start loading boot-start drivers.</p>
 </dd>
 
-### -field <a id="BdCbStatusPrepareForUnload"></a><a id="bdcbstatusprepareforunload"></a><a id="BDCBSTATUSPREPAREFORUNLOAD"></a><b>BdCbStatusPrepareForUnload</b>
+### -field BdCbStatusPrepareForUnload
 
 <dd>
 <p>Windows has completed the initialization of all boot-start drivers. After the completion of this callback, the Boot Driver Callback Facility will be torn down and no more callbacks will be received. During this callback, Early Launch AM drivers must clean up and prepare to be unloaded.</p>

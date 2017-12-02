@@ -60,25 +60,25 @@ typedef struct _D3DHAL_DP2RESPONSE {
 ## -struct-fields
 <dl>
 
-### -field <b>bCommand</b>
+### -field bCommand
 
 <dd>
 <p>Specifies a response token. This member can be either D3DDP2OP_RESPONSECONTINUE or D3DDP2OP_RESPONSEQUERY of the <a href="..\d3dhal\ne-d3dhal--d3dhal-dp2operation.md">D3DHAL_DP2OPERATION</a> enumerated type. </p>
 </dd>
 
-### -field <b>bReserved</b>
+### -field bReserved
 
 <dd>
 <p>Reserved for system use and should be ignored by the driver.</p>
 </dd>
 
-### -field <b>wStateCount</b>
+### -field wStateCount
 
 <dd>
 <p>Specifies the number of responses (that is, the number of <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2responsequery.md">D3DHAL_DP2RESPONSEQUERY</a> structures) that follow this D3DHAL_DP2RESPONSE structure. If the driver sets <b>bCommand</b> to D3DDP2OP_RESPONSECONTINUE, the driver should set this member to zero. However, the runtime ignores this member when <b>bCommand</b> is set to D3DDP2OP_RESPONSECONTINUE; this member is only valid when the driver sets <b>bCommand</b> to D3DDP2OP_RESPONSEQUERY. </p>
 </dd>
 
-### -field <b>dwTotalSize</b>
+### -field dwTotalSize
 
 <dd>
 <p>Specifies the total size, in bytes, of the responses associated with this D3DHAL_DP2RESPONSE structure. The driver also includes the size of this D3DHAL_DP2RESPONSE structure in the total size to let the runtime skip over this D3DHAL_DP2RESPONSE structure when parsing the response buffer. </p>

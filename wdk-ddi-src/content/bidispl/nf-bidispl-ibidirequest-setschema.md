@@ -54,7 +54,7 @@ HRESULT IBidiRequest::SetSchema(
 ## -parameters
 <dl>
 
-### -param <i>pszSchema</i> [in]
+### -param pszSchema [in]
 
 <dd>
 <p>Pointer to a schema string.</p>

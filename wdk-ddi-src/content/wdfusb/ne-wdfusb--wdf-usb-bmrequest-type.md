@@ -7,7 +7,7 @@ old-location: wdf\wdf_usb_bmrequest_type.htm
 old-project: wdf
 ms.assetid: c20e7aec-32e7-401d-8c40-aa6ac191e857
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_TIMER_CONFIG, WDF_TIMER_CONFIG, *PWDF_TIMER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _WDF_USB_BMREQUEST_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="BmRequestStandard"></a><a id="bmrequeststandard"></a><a id="BMREQUESTSTANDARD"></a><b>BmRequestStandard</b>
+### -field BmRequestStandard
 
 <dd>
 <p>The data transfer is a standard USB control transfer.</p>
 </dd>
 
-### -field <a id="BmRequestClass"></a><a id="bmrequestclass"></a><a id="BMREQUESTCLASS"></a><b>BmRequestClass</b>
+### -field BmRequestClass
 
 <dd>
 <p>The data transfer is a device class-specific USB control transfer.</p>
 </dd>
 
-### -field <a id="BmRequestVendor"></a><a id="bmrequestvendor"></a><a id="BMREQUESTVENDOR"></a><b>BmRequestVendor</b>
+### -field BmRequestVendor
 
 <dd>
 <p>The data transfer is a vendor-specific USB control transfer.</p>
@@ -120,4 +120,4 @@ typedef enum _WDF_USB_BMREQUEST_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_BMREQUEST_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_BMREQUEST_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

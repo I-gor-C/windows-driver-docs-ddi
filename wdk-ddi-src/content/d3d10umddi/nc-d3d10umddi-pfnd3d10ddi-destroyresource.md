@@ -58,13 +58,13 @@ VOID APIENTRY DestroyResource(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hResource</i> [in]
+### -param hResource [in]
 
 <dd>
 <p> A handle to the driver's private data for the resource object to destroy. The Microsoft Direct3D runtime will free the memory region that it previously allocated for the object. Therefore, the driver can no longer access this memory region. </p>

@@ -55,10 +55,10 @@ VOID PoEndDeviceBusy(
 ## -parameters
 <dl>
 
-### -param <i>IdlePointer</i> [in, out]
+### -param IdlePointer [in, out]
 
 <dd>
-<p>A pointer to an idle counter. This is a pointer value that was previously returned by the <a href="..\ntifs\nf-ntifs-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a> routine. Because <b>PoRegisterDeviceForIdleDetection</b> might return a <b>NULL</b> pointer, the caller must verify that the pointer is non-<b>NULL</b> before it calls <b>PoEndDeviceBusy</b>.</p>
+<p>A pointer to an idle counter. This is a pointer value that was previously returned by the <a href="..\wdm\nf-wdm-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a> routine. Because <b>PoRegisterDeviceForIdleDetection</b> might return a <b>NULL</b> pointer, the caller must verify that the pointer is non-<b>NULL</b> before it calls <b>PoEndDeviceBusy</b>.</p>
 </dd>
 </dl>
 
@@ -66,7 +66,7 @@ VOID PoEndDeviceBusy(
 <p>None</p>
 
 ## -remarks
-<p>The <a href="..\ntifs\nf-ntifs-postartdevicebusy.md">PoStartDeviceBusy</a> and <b>PoEndDeviceBusy</b> routines mark the start and end of a time period in which a device is busy. Each call to <b>PoStartDeviceBusy</b> must be followed by a corresponding call to <b>PoEndDeviceBusy</b>. For more information about how these routines work together, see <a href="..\ntifs\nf-ntifs-postartdevicebusy.md">PoStartDeviceBusy</a>.</p>
+<p>The <a href="..\wdm\nf-wdm-postartdevicebusy.md">PoStartDeviceBusy</a> and <b>PoEndDeviceBusy</b> routines mark the start and end of a time period in which a device is busy. Each call to <b>PoStartDeviceBusy</b> must be followed by a corresponding call to <b>PoEndDeviceBusy</b>. For more information about how these routines work together, see <a href="..\wdm\nf-wdm-postartdevicebusy.md">PoStartDeviceBusy</a>.</p>
 
 ## -requirements
 <table>
@@ -131,10 +131,10 @@ VOID PoEndDeviceBusy(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\nf-ntifs-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a>
+<a href="..\wdm\nf-wdm-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-postartdevicebusy.md">PoStartDeviceBusy</a>
+<a href="..\wdm\nf-wdm-postartdevicebusy.md">PoStartDeviceBusy</a>
 </dt>
 </dl>
 <p> </p>

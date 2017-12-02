@@ -59,19 +59,19 @@ VOID TapeMiniTapeError(
 ## -parameters
 <dl>
 
-### -param <i>MinitapeExtension</i> [in]
+### -param MinitapeExtension [in]
 
 <dd>
 <p>Pointer to the driver-specific minitape extension. This is <b>NULL</b> if the miniclass driver did not request a minitape extension when it initialized.</p>
 </dd>
 
-### -param <i>Srb</i> [in]
+### -param Srb [in]
 
 <dd>
 <p>Pointer to the SRB for the operation that failed.</p>
 </dd>
 
-### -param <i>TapeStatus</i> [in, out]
+### -param TapeStatus [in, out]
 
 <dd>
 <p>Pointer to the <a href="..\minitape\ne-minitape--tape-status.md">TAPE_STATUS</a> set by the tape class driver. The tape miniclass driver can change the TAPE_STATUS or leave it unchanged.</p>

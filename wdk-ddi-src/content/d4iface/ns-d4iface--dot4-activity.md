@@ -56,15 +56,15 @@ typedef struct _DOT4_ACTIVITY {
 ## -struct-fields
 <dl>
 
-### -field <b>ulMessage</b>
+### -field ulMessage
 
 <dd></dd>
 
-### -field <b>ulByteCount</b>
+### -field ulByteCount
 
 <dd></dd>
 
-### -field <b>hChannel</b>
+### -field hChannel
 
 <dd></dd>
 </dl>

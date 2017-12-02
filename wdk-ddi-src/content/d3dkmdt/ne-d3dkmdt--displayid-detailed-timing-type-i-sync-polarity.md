@@ -56,13 +56,13 @@ enum _DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="DIDDT1_Sync_Positive"></a><a id="diddt1_sync_positive"></a><a id="DIDDT1_SYNC_POSITIVE"></a><b>DIDDT1_Sync_Positive</b>
+### -field DIDDT1_Sync_Positive
 
 <dd>
 <p>Indicates that the sync polarity is positive.</p>
 </dd>
 
-### -field <a id="DIDDT1_Sync_Negative"></a><a id="diddt1_sync_negative"></a><a id="DIDDT1_SYNC_NEGATIVE"></a><b>DIDDT1_Sync_Negative</b>
+### -field DIDDT1_Sync_Negative
 
 <dd>
 <p>Indicates that the sync polarity is negative.</p>

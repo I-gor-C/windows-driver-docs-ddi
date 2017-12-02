@@ -58,31 +58,31 @@ typedef struct HBA_LibraryAttributes {
 ## -struct-fields
 <dl>
 
-### -field <b>final</b>
+### -field final
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the library implements the final and most recent draft of the T11 committee's <i>Fibre Channel HBA API</i> specification. When <b>FALSE</b> this member indicates that the library is not compliant with the most recent version of the specification. </p>
 </dd>
 
-### -field <b>LibPath</b>
+### -field LibPath
 
 <dd>
 <p>Contains the fully qualified path name of the library DLL file. </p>
 </dd>
 
-### -field <b>VName</b>
+### -field VName
 
 <dd>
 <p>Contains the name of the organization that developed the library code. </p>
 </dd>
 
-### -field <b>VVersion</b>
+### -field VVersion
 
 <dd>
 <p>Identifies the code revision of the library.</p>
 </dd>
 
-### -field <b>build_date</b>
+### -field build_date
 
 <dd>
 <p>Contains a structure of type <a href="storage.tm">tm</a> that holds a timestamp that indicates when the library was built. </p>

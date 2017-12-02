@@ -55,14 +55,14 @@ typedef struct _SECURE_ELEMENT_TECH_ROUTING_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>guidSecureElementId</b>
+### -field guidSecureElementId
 
 <dd>
 <p>Secure element unique identifier returned by enumeration DDI.
 </p>
 </dd>
 
-### -field <b>eRfTechType</b>
+### -field eRfTechType
 
 <dd>
 <p>NFC Forum RF technology type.</p>

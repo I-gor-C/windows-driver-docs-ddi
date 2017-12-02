@@ -54,7 +54,7 @@ NTSTATUS IoReportRootDevice(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>Pointer to the driver object of the driver that detected the device.</p>

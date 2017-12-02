@@ -72,115 +72,115 @@ typedef struct _SRIOV_DEVICE_INTERFACE_STANDARD_2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version of this structure</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Driver-defined context passed by the driver.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="kernel.interfacereference">InterfaceReference</a>. </p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="kernel.interfacedereference">InterfaceDereference</a>. </p>
 </dd>
 
-### -field <b>ReadVfConfig</b>
+### -field ReadVfConfig
 
 <dd>
 <p>Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/0fef9d53-b8af-4c9b-9914-982bcfc26517">SRIOV_READ_CONFIG</a> callback function that serves as a handler for reading the VF’s configurations space from the non-privileged VM.</p>
 </dd>
 
-### -field <b>WriteVfConfig</b>
+### -field WriteVfConfig
 
 <dd>
 <p>Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/323c8150-ef58-42a4-8c8b-77081ecb64b3">SRIOV_WRITE_CONFIG</a> callback function that serves as a handler for writing the VF’s configuration space from the non-privileged VM.</p>
 </dd>
 
-### -field <b>ReadVfConfigBlock</b>
+### -field ReadVfConfigBlock
 
 <dd>
 <p>Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/af0d3465-2854-47d9-a6a4-06f510229a59">SRIOV_READ_BLOCK</a> callback function that serves as a handler for reading blocks of configuration data from the non-privileged VM.</p>
 </dd>
 
-### -field <b>WriteVfConfigBlock</b>
+### -field WriteVfConfigBlock
 
 <dd>
 <p>Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/da47d601-2fab-49bb-b669-909a2e5c95c0">SRIOV_WRITE_BLOCK</a> callback function that serves as a handler for writing blocks of configuration data from the non-privileged VM..</p>
 </dd>
 
-### -field <b>QueryProbedBars</b>
+### -field QueryProbedBars
 
 <dd>
 <p>Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/422a9212-7227-4508-8f06-0056349fa835">SRIOV_QUERY_PROBED_BARS</a> callback function that allows a non-privileged VM to determine the value of the VF’s Base Address Registers if the value of -1 previously is written.</p>
 </dd>
 
-### -field <b>GetVendorAndDevice</b>
+### -field GetVendorAndDevice
 
 <dd>
 <p>Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/d08bbaea-6f2b-49ef-bb8b-c1fe357e1c90">SRIOV_GET_VENDOR_AND_DEVICE_IDS</a> callback function that supplies the values from which the Plug and Play IDs for device is derived.</p>
 </dd>
 
-### -field <b>GetDeviceLocation</b>
+### -field GetDeviceLocation
 
 <dd>
 <p>Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/705b52e3-f695-4c58-9ae2-5a806f1e2140">SRIOV_GET_DEVICE_LOCATION</a> callback function that allows the a non-privileged VM to determine the bus to which the device is attached.</p>
 </dd>
 
-### -field <b>ResetVf</b>
+### -field ResetVf
 
 <dd>
 <p>Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/30c01528-8254-431f-aaba-79c05f66fc00">SRIOV_RESET_FUNCTION</a> callback function that causes the VF to be reset.</p>
 </dd>
 
-### -field <b>SetVfPowerState</b>
+### -field SetVfPowerState
 
 <dd>
 <p>Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/d43a21cb-5cee-4e72-8f0c-7aa8b2453507">SRIOV_SET_POWER_STATE</a> callback function that serves as a handle for changing the device’s power state from the non-privileged VM.</p>
 </dd>
 
-### -field <b>GetResourceForBar</b>
+### -field GetResourceForBar
 
 <dd>
 <p>Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/b52bafee-d541-4396-be0a-06956d07fb2b">SRIOV_GET_RESOURCE_FOR_BAR</a> callback function that gets the translated resource for a specific BAR.</p>
 </dd>
 
-### -field <b>QueryLuid</b>
+### -field QueryLuid
 
 <dd>
 <p>Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/9bb8e54f-b42a-4f61-a3f5-6972141c8f28">SRIOV_QUERY_LUID</a> callback function that gets the unique identifier of the VF.</p>
 </dd>
 
-### -field <b>QueryProbedBars_2</b>
+### -field QueryProbedBars_2
 
 <dd>
 <p>Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/e0c079aa-8adf-42c9-a4ac-bfc623471964">SRIOV_QUERY_PROBED_BARS_2</a> callback function.</p>
 </dd>
 
-### -field <b>QueryVfLuid</b>
+### -field QueryVfLuid
 
 <dd>
 <p>Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/17fe6e28-59ce-4678-8268-b49cef09a3db">SRIOV_QUERY_VF_LUID</a> callback function that gets the unique identifier of the VF.</p>
 </dd>
 
-### -field <b>QueryLuidVf</b>
+### -field QueryLuidVf
 
 <dd>
 <p>Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/00dddc92-08d1-4eaa-b3de-5e96c7a6d3e0">SRIOV_QUERY_LUID_VF</a> callback function that gets VF index for the specified unique identifier.</p>

@@ -56,19 +56,19 @@ NTSTATUS RtlUnicodeStringVPrintf(
 ## -parameters
 <dl>
 
-### -param <i>DestinationString</i> [out]
+### -param DestinationString [out]
 
 <dd>
 <p>A pointer to a <b>UNICODE_STRING</b> structure that receives a formatted string. <b>RtlUnicodeStringVPrintf</b> creates this string from the formatting string that <i>pszFormat</i> specifies and the function's argument list. The maximum number of characters in the string is NTSTRSAFE_UNICODE_STRING_MAX_CCH.</p>
 </dd>
 
-### -param <i>pszFormat</i> [in]
+### -param pszFormat [in]
 
 <dd>
 <p>A pointer to a null-terminated text string that contains <b>printf</b>-styled formatting directives.</p>
 </dd>
 
-### -param <i>argList</i> [in]
+### -param argList [in]
 
 <dd>
 <p>A <b>va_list</b>-typed argument list. Arguments in this argument list will be interpreted by using the formatting string that <i>pszFormat</i> specifies. </p>

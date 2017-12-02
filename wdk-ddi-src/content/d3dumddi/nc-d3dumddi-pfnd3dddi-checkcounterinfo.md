@@ -58,7 +58,7 @@ VOID APIENTRY* pfnCheckCounterInfo(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).
@@ -66,7 +66,7 @@ VOID APIENTRY* pfnCheckCounterInfo(
 </p>
 </dd>
 
-### -param <i>pCounterInfo</i> [out]
+### -param pCounterInfo [out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-counter-info.md">D3DDDIARG_COUNTER_INFO</a> structure that the driver populates with global information that's related to manipulating counters.</p>

@@ -7,7 +7,7 @@ old-location: sensors\gnss_continuoustracking_param.htm
 old-project: sensors
 ms.assetid: D69D317C-5B42-4709-87AF-4323DF2EBE2D
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_CONTINUOUSTRACKING_PARAM, GNSS_CONTINUOUSTRACKING_PARAM, *PGNSS_CONTINUOUSTRACKING_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>PreferredInterval</b>
+### -field PreferredInterval
 
 <dd>
 <p>Specifies the preferred interval of receiving fixes for a continuous tracking session. The units for this value is seconds.</p>

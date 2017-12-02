@@ -7,7 +7,7 @@ old-location: ifsk\fltrequestoperationstatuscallback.htm
 old-project: ifsk
 ms.assetid: 17379ce3-d9c1-4fbf-ab2e-b87604e6c71e
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltRequestOperationStatusCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ NTSTATUS FltRequestOperationStatusCallback(
 ## -parameters
 <dl>
 
-### -param <i>Data</i> [in]
+### -param Data [in]
 
 <dd>
 <p>A pointer to the callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>CallbackRoutine</i> [in]
+### -param CallbackRoutine [in]
 
 <dd>
 <p>A pointer to a callback routine that the Filter Manager calls after <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a> returns. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>RequesterContext</i> [in, optional]
+### -param RequesterContext [in, optional]
 
 <dd>
 <p>A context pointer to be passed to the <i>CallbackRoutine</i>. This parameter is optional and can be <b>NULL</b>. </p>
@@ -183,4 +183,4 @@ NTSTATUS FltRequestOperationStatusCallback(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltRequestOperationStatusCallback function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltRequestOperationStatusCallback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

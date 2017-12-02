@@ -63,43 +63,43 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_MEDIASEEKING_CAPABILITIES"></a><a id="ksproperty_mediaseeking_capabilities"></a><b>KSPROPERTY_MEDIASEEKING_CAPABILITIES</b>
+### -field KSPROPERTY_MEDIASEEKING_CAPABILITIES
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_MEDIASEEKING_FORMATS"></a><a id="ksproperty_mediaseeking_formats"></a><b>KSPROPERTY_MEDIASEEKING_FORMATS</b>
+### -field KSPROPERTY_MEDIASEEKING_FORMATS
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_MEDIASEEKING_TIMEFORMAT"></a><a id="ksproperty_mediaseeking_timeformat"></a><b>KSPROPERTY_MEDIASEEKING_TIMEFORMAT</b>
+### -field KSPROPERTY_MEDIASEEKING_TIMEFORMAT
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_MEDIASEEKING_POSITION"></a><a id="ksproperty_mediaseeking_position"></a><b>KSPROPERTY_MEDIASEEKING_POSITION</b>
+### -field KSPROPERTY_MEDIASEEKING_POSITION
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_MEDIASEEKING_STOPPOSITION"></a><a id="ksproperty_mediaseeking_stopposition"></a><b>KSPROPERTY_MEDIASEEKING_STOPPOSITION</b>
+### -field KSPROPERTY_MEDIASEEKING_STOPPOSITION
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_MEDIASEEKING_POSITIONS"></a><a id="ksproperty_mediaseeking_positions"></a><b>KSPROPERTY_MEDIASEEKING_POSITIONS</b>
+### -field KSPROPERTY_MEDIASEEKING_POSITIONS
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_MEDIASEEKING_DURATION"></a><a id="ksproperty_mediaseeking_duration"></a><b>KSPROPERTY_MEDIASEEKING_DURATION</b>
+### -field KSPROPERTY_MEDIASEEKING_DURATION
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_MEDIASEEKING_AVAILABLE"></a><a id="ksproperty_mediaseeking_available"></a><b>KSPROPERTY_MEDIASEEKING_AVAILABLE</b>
+### -field KSPROPERTY_MEDIASEEKING_AVAILABLE
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_MEDIASEEKING_PREROLL"></a><a id="ksproperty_mediaseeking_preroll"></a><b>KSPROPERTY_MEDIASEEKING_PREROLL</b>
+### -field KSPROPERTY_MEDIASEEKING_PREROLL
 
 <dd></dd>
 
-### -field <a id="KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT"></a><a id="ksproperty_mediaseeking_converttimeformat"></a><b>KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT</b>
+### -field KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT
 
 <dd></dd>
 </dl>

@@ -56,7 +56,7 @@ NTSTATUS  D3DKMTQueryProtectedSessionStatus(
 ## -parameters
 <dl>
 
-### -param <i>D3dkmt_queryprotectedsessionstatus</i> 
+### -param D3dkmt_queryprotectedsessionstatus 
 
 <dd>
 <p>Holds the information for the status of the protected session.</p>

@@ -55,13 +55,13 @@ typedef enum _D3D12DDI_VIEW_INSTANCING_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_VIEW_INSTANCING_FLAG_NONE"></a><a id="d3d12ddi_view_instancing_flag_none"></a><b>D3D12DDI_VIEW_INSTANCING_FLAG_NONE</b>
+### -field D3D12DDI_VIEW_INSTANCING_FLAG_NONE
 
 <dd>
 <p>No view instancing flag is defined.</p>
 </dd>
 
-### -field <a id="D3D12DDI_VIEW_INSTANCING_FLAG_ENABLE_VIEW_INSTANCE_MASKING"></a><a id="d3d12ddi_view_instancing_flag_enable_view_instance_masking"></a><b>D3D12DDI_VIEW_INSTANCING_FLAG_ENABLE_VIEW_INSTANCE_MASKING</b>
+### -field D3D12DDI_VIEW_INSTANCING_FLAG_ENABLE_VIEW_INSTANCE_MASKING
 
 <dd>
 <p>The view instancing flag is enable view instance masking.</p>

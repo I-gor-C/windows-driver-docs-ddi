@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The input buffer for the <a href="buses._ioctl_usb_stop_tracking_for_time_sync">IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC</a> request.</p>
+<p>The input buffer for the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-stop-tracking-for-time-sync.md">IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC</a> request.</p>
 
 
 ## -syntax
@@ -55,10 +55,10 @@ typedef struct _USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>TimeTrackingHandle</b>
+### -field TimeTrackingHandle
 
 <dd>
-<p>The time racking handle received in the previous <a href="buses._ioctl_usb_stop_tracking_for_time_sync">IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC</a> request.</p>
+<p>The time racking handle received in the previous <a href="..\usbioctl\ni-usbioctl-ioctl-usb-stop-tracking-for-time-sync.md">IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC</a> request.</p>
 </dd>
 </dl>
 
@@ -82,7 +82,7 @@ typedef struct _USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._ioctl_usb_stop_tracking_for_time_sync">IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-stop-tracking-for-time-sync.md">IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC</a>
 </dt>
 </dl>
 <p> </p>

@@ -54,7 +54,7 @@ void KsFilterAcquireProcessingMutex(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure representing the AVStream filter for which to acquire the processing mutex.</p>
@@ -65,7 +65,7 @@ void KsFilterAcquireProcessingMutex(
 <p>None</p>
 
 ## -remarks
-<p>AVStream holds the processing control mutex upon return from this routine. For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>AVStream holds the processing control mutex upon return from this routine. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 <p>A minidriver that must suspend processing for a long period of time should not use this mechanism. Instead, it should manipulate the processing control gate directly by using the <b>KSGATE</b><i>Xxx</i> functions. </p>
 

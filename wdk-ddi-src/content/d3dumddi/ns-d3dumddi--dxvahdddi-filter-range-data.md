@@ -57,7 +57,7 @@ typedef struct _DXVAHDDDI_FILTER_RANGE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Minimum</b>
+### -field Minimum
 
 <dd>
 <p>
@@ -65,19 +65,19 @@ typedef struct _DXVAHDDDI_FILTER_RANGE_DATA {
      </p>
 </dd>
 
-### -field <b>Maximum</b>
+### -field Maximum
 
 <dd>
 <p>[in] An <b>INT</b> that specifies the maximum value in the filter range. </p>
 </dd>
 
-### -field <b>Default</b>
+### -field Default
 
 <dd>
 <p>[in] An <b>INT</b> that specifies the default value for the filter range. </p>
 </dd>
 
-### -field <b>Multiplier</b>
+### -field Multiplier
 
 <dd>
 <p>[in] A <b>FLOAT</b> value that specifies a multiplier to calculate the actual filter value. </p>

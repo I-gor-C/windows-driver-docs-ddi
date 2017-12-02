@@ -62,7 +62,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>OptionsFlags</b>
+### -field OptionsFlags
 
 <dd>
 <p>Specifies the allocator option flags specified during allocator creation for the connection point. The <b>OptionsFlags</b> member can contain one of the following values.</p>
@@ -91,7 +91,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>RequirementsFlags</b>
+### -field RequirementsFlags
 
 <dd>
 <p>A value of type ULONG that describes the allocator requirements for this connection point for query operations. The <b>RequirementsFlags</b> member can contain the following values.</p>
@@ -144,25 +144,25 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>PoolType</b>
+### -field PoolType
 
 <dd>
 <p>A structure of type <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a> that specifies kernel-mode allocation pool type.</p>
 </dd>
 
-### -field <b>Frames</b>
+### -field Frames
 
 <dd>
 <p>Specifies the total number of allowable outstanding frames. Zero indicates that the filter has no requirement for this member.</p>
 </dd>
 
-### -field <b>FrameSize</b>
+### -field FrameSize
 
 <dd>
 <p>Specifies the total size of the frame, including prefix and postfix. Zero indicates that the filter has no requirement for this member.</p>
 </dd>
 
-### -field <b>FileAlignment</b>
+### -field FileAlignment
 
 <dd>
 <p>A value of type ULONG that describes the byte alignment to use when allocating frames. The following table describes several possible alignment values.</p>
@@ -215,7 +215,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. Set to zero.</p>

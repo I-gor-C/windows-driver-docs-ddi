@@ -61,31 +61,31 @@ typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING {
 ## -struct-fields
 <dl>
 
-### -field <b>pInputDesc</b>
+### -field pInputDesc
 
 <dd>
 <p>[in] Contains the decode profile used and the resolution and format of the reference frames.  This is the resolution/format to be downsampled (e.g. 4K, DXGI_FORMAT_P010).</p>
 </dd>
 
-### -field <b>InputColorSpace</b>
+### -field InputColorSpace
 
 <dd>
 <p>[in] Contains the color space information of the reference frame data.</p>
 </dd>
 
-### -field <b>pInputConfig</b>
+### -field pInputConfig
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-decoder-config.md">D3D11_1DDI_VIDEO_DECODER_CONFIG</a> structure that contains the configuration data associated with the decode profile .</p>
 </dd>
 
-### -field <b>pFrameRate</b>
+### -field pFrameRate
 
 <dd>
 <p>[in] Contains the frame rate of the video content.</p>
 </dd>
 
-### -field <b>pOutputDesc</b>
+### -field pOutputDesc
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-decoder-desc.md">D3D11_1DDI_VIDEO_DECODER_DESC</a> structure that contains the resolution and the format of the display frames.  This is the destination resolution and format of the down sample operation.
@@ -96,19 +96,19 @@ typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING {
 <div> </div>
 </dd>
 
-### -field <b>OutputColorSpace</b>
+### -field OutputColorSpace
 
 <dd>
 <p>[in] Contains the color space information of the display frame data.</p>
 </dd>
 
-### -field <b>Supported</b>
+### -field Supported
 
 <dd>
 <p>[out] The driver sets this to <b>TRUE</b> if the requested down sampling is supported.  Otherwise, the driver should set this to <b>FALSE</b>.</p>
 </dd>
 
-### -field <b>RealTime</b>
+### -field RealTime
 
 <dd>
 <p>[out] The driver sets this to <b>TRUE</b> if the requested down sampling is supported and the resulting decode operations can occur in real-time.  Otherwise, the driver should set this to <b>FALSE</b>.</p>

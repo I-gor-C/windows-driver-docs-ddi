@@ -54,7 +54,7 @@ typedef struct HBA_Pty_EventInfo {
 ## -struct-fields
 <dl>
 
-### -field <b>PtyData</b>
+### -field PtyData
 
 <dd>
 <p>Contains proprietary data defined by the vendor. </p>

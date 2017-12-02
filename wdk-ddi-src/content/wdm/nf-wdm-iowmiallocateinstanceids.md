@@ -57,19 +57,19 @@ NTSTATUS IoWMIAllocateInstanceIds(
 ## -parameters
 <dl>
 
-### -param <i>Guid</i> [in]
+### -param Guid [in]
 
 <dd>
 <p>Pointer to the GUID for which to generate instance identifiers. </p>
 </dd>
 
-### -param <i>InstanceCount</i> [in]
+### -param InstanceCount [in]
 
 <dd>
 <p>Specifies how many instance identifiers should be provided. </p>
 </dd>
 
-### -param <i>FirstInstanceId</i> [out]
+### -param FirstInstanceId [out]
 
 <dd>
 <p>Pointer to the first instance identifier that the driver should use. </p>

@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_DECODEBEGINFRAME {
 ## -struct-fields
 <dl>
 
-### -field <b>hDecode</b>
+### -field hDecode
 
 <dd>
 <p>A handle to the DirectX VA decode device. The user-mode display driver returns this handle in a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createdecodedevice.md">CreateDecodeDevice</a> function.</p>
 </dd>
 
-### -field <b>pPVPSetKey</b>
+### -field pPVPSetKey
 
 <dd>
 <p>A pointer to the <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-pvp-setkey.md">DXVADDI_PVP_SETKEY</a> structure that contains a key that the driver requires for the decode device to start operating. </p>

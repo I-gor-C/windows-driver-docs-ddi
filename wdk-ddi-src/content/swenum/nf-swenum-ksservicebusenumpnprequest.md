@@ -57,13 +57,13 @@ NTSTATUS KsServiceBusEnumPnpRequest(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object.</p>
 </dd>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>Pointer to the IRP associated with the device object.</p>

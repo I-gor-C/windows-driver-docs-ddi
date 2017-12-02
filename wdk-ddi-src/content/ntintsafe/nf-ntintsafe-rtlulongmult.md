@@ -56,19 +56,19 @@ NTSTATUS RtlULongMult(
 ## -parameters
 <dl>
 
-### -param <i>ulMultiplicand</i> [in]
+### -param ulMultiplicand [in]
 
 <dd>
 <p>The value to be multiplied by <i>ulMultiplier</i>.</p>
 </dd>
 
-### -param <i>ulMultiplier</i> [in]
+### -param ulMultiplier [in]
 
 <dd>
 <p>The value by which to multiply <i>ulMultiplicand</i>.</p>
 </dd>
 
-### -param <i>pulResult</i> [out]
+### -param pulResult [out]
 
 <dd>
 <p>A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

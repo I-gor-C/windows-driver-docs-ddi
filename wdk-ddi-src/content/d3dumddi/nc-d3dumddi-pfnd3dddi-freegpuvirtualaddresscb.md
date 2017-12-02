@@ -64,13 +64,13 @@ HRESULT APIENTRY CALLBACK* pfnFreeGpuVirtualAddressCb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device.</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-freegpuvirtualaddress.md">D3DDDICB_FREEGPUVIRTUALADDRESS</a> structure that describes the operation to perform.

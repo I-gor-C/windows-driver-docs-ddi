@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediavideoflagparammask_2.htm
 old-project: netvista
 ms.assetid: 6f0a8c1f-e3cb-4bcb-a9ec-4d4b7555a314
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILCALLMEDIAVIDEOFLAGPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLMEDIAVIDEOFLAG_CAPABILITY_UNKNOWN"></a><a id="ril_callmediavideoflag_capability_unknown"></a><b>RIL_CALLMEDIAVIDEOFLAG_CAPABILITY_UNKNOWN</b>
+### -field RIL_CALLMEDIAVIDEOFLAG_CAPABILITY_UNKNOWN
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIAVIDEOFLAG_PAUSE"></a><a id="ril_callmediavideoflag_pause"></a><b>RIL_CALLMEDIAVIDEOFLAG_PAUSE</b>
+### -field RIL_CALLMEDIAVIDEOFLAG_PAUSE
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIAVIDEOFLAG_TEMPORARILY_UNAVAILABLE"></a><a id="ril_callmediavideoflag_temporarily_unavailable"></a><b>RIL_CALLMEDIAVIDEOFLAG_TEMPORARILY_UNAVAILABLE</b>
+### -field RIL_CALLMEDIAVIDEOFLAG_TEMPORARILY_UNAVAILABLE
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIAVIDEOFLAG_ALL"></a><a id="ril_callmediavideoflag_all"></a><b>RIL_CALLMEDIAVIDEOFLAG_ALL</b>
+### -field RIL_CALLMEDIAVIDEOFLAG_ALL
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: sensors\isensordriver_ongetproperties.htm
 old-project: sensors
 ms.assetid: 8c7f378c-b4e6-4074-8b6a-571068b5ab80
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorDriver, OnGetProperties, ISensorDriver::OnGetProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ HRESULT OnGetProperties(
 ## -parameters
 <dl>
 
-### -param <i>pClientFile</i> 
+### -param pClientFile 
 
 <dd>
 <p> Pointer to an IWDFFile interface that represents the file object for the application requesting property values.</p>
 </dd>
 
-### -param <i>pwszSensorID</i> 
+### -param pwszSensorID 
 
 <dd>
 <p>LPWSTR that contains the ID for the sensor from which the client application is requesting property values.</p>
 </dd>
 
-### -param <i>pProperties</i> 
+### -param pProperties 
 
 <dd>
 <p> Pointer to an IPortableDeviceKeyCollection that contains the list of PROPERTYKEY values that represent the properties being requested. </p>
 </dd>
 
-### -param <i>ppPropertyValues</i> 
+### -param ppPropertyValues 
 
 <dd>
 <p>Address of an IPortableDeviceValues pointer that receives the requested property values.</p>
@@ -99,7 +99,7 @@ HRESULT OnGetProperties(
 
 <p>The sensor class extension is responsible for freeing any <b>PROPVARIANT</b> structures returned by this method.</p>
 
-<p>Sensor properties must not contain information that can be used to identify the user. For more information about user privacy, see <a href="NULL">Privacy and Security in the Sensor and Location Platform</a>.</p>
+<p>Sensor properties must not contain information that can be used to identify the user. For more information about user privacy, see <a href="https://msdn.microsoft.com/9defb163-4de6-46cc-b817-d3e6291137be">Privacy and Security in the Sensor and Location Platform</a>.</p>
 
 <p><a href="http://go.microsoft.com/fwlink/p/?linkid=131484">IPortableDeviceKeyCollection</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> are documented in Windows Portable Devices.</p>
 

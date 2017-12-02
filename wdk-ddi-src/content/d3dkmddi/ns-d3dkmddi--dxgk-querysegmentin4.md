@@ -54,7 +54,7 @@ typedef struct _DXGK_QUERYSEGMENTIN4 {
 ## -struct-fields
 <dl>
 
-### -field <b>PhysicalAdapterIndex</b>
+### -field PhysicalAdapterIndex
 
 <dd>
 <p>A zero-based physical adapter index in a linked display adapter  (LDA) link. Zero for non-LDA configurations. </p>

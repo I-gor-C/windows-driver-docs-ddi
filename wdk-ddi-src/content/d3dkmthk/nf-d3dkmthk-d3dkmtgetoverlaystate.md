@@ -54,7 +54,7 @@ NTSTATUS D3DKMTGetOverlayState(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getoverlaystate.md">D3DKMT_GETOVERLAYSTATE</a> structure that describes parameters to retrieve status about an overlay. </p>

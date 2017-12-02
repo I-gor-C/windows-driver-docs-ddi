@@ -57,25 +57,25 @@ typedef struct tagBDA_TRANSPORT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ulcbPhyiscalPacket</b>
+### -field ulcbPhyiscalPacket
 
 <dd>
 <p>Size, in bytes, of a physical packet (for example, the size of a satellite link payload). </p>
 </dd>
 
-### -field <b>ulcbPhyiscalFrame</b>
+### -field ulcbPhyiscalFrame
 
 <dd>
 <p>Size, in bytes, of each physical frame (0 indicates no hardware requirement).</p>
 </dd>
 
-### -field <b>ulcbPhyiscalFrameAlignment</b>
+### -field ulcbPhyiscalFrameAlignment
 
 <dd>
 <p>Capture buffer alignment in bytes (0 and 1 indicate no alignment requirements).</p>
 </dd>
 
-### -field <b>AvgTimePerFrame</b>
+### -field AvgTimePerFrame
 
 <dd>
 <p>REFERENCE TIME value that indicates the video frame's average display time, in 100-nanosecond units. </p>

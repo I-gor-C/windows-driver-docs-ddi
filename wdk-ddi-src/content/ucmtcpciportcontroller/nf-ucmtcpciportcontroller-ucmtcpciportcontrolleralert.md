@@ -59,19 +59,19 @@ VOID UcmTcpciPortControllerAlert(
 ## -parameters
 <dl>
 
-### -param <i>PortControllerObject</i> [in]
+### -param PortControllerObject [in]
 
 <dd>
-<p>Handle to the port controller object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.</p>
+<p>Handle to the port controller object that the client driver received in the previous call to <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>.</p>
 </dd>
 
-### -param <i>AlertData</i> 
+### -param AlertData 
 
 <dd>
-<p>A pointer to an array of <a href="buses.ucmtcpci_port_controller_alert_data">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</a> that contains all current alerts that have not been sent to UcmTcpciCx. This value cannot be NULL.</p>
+<p>A pointer to an array of <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller--ucmtcpci-port-controller-alert-data.md">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</a> that contains all current alerts that have not been sent to UcmTcpciCx. This value cannot be NULL.</p>
 </dd>
 
-### -param <i>NumberOfAlerts</i> 
+### -param NumberOfAlerts 
 
 <dd>
 <p>The number of items in the array pointed to by <i>AlertData</i>. This value cannot be 0.</p>
@@ -84,7 +84,7 @@ VOID UcmTcpciPortControllerAlert(
                     </p>
 
 ## -remarks
-<p>The client driver must call <b>UcmTcpciPortControllerAlert</b> that has been previously started by calling <a href="buses.ucmtcpciportcontrollerstart">UcmTcpciPortControllerStart</a>.</p>
+<p>The client driver must call <b>UcmTcpciPortControllerAlert</b> that has been previously started by calling <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollerstart.md">UcmTcpciPortControllerStart</a>.</p>
 
 <p>When a hardware alert occurs, the client driver must determine the type of alerts, fetch any auxiliary information associated with that alert, such as a PD message, populate the array, and then call <b>UcmTcpciPortControllerAlert</b>.</p>
 

@@ -55,13 +55,13 @@ ULONG KsFilterGetChildPinCount(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure for which to find the number of instantiated pins of type <i>PinID</i>.</p>
 </dd>
 
-### -param <i>PinId</i> [in]
+### -param PinId [in]
 
 <dd>
 <p>The pin type for which to find the number of instantiated pins. <i>PinID</i> is an index into the array of pin descriptors for the filter to which the pin belongs.</p>
@@ -74,7 +74,7 @@ ULONG KsFilterGetChildPinCount(
 ## -remarks
 <p>The count returned by this call is guaranteed to be correct only if the function is called while the filter control mutex is held. The count remains correct after the call as long as this mutex continues to be held. As soon as the mutex is released, other pins can be added or removed, thereby altering the actual pin count.</p>
 
-<p>For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 ## -requirements
 <table>

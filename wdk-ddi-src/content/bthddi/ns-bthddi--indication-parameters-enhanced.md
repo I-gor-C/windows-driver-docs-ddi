@@ -91,38 +91,38 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
 ## -struct-fields
 <dl>
 
-### -field <b>ConnectionHandle</b>
+### -field ConnectionHandle
 
 <dd>
 <p>The L2CAP connection handle to the remote device. This handle is only valid for notifications that
      arrive over an established L2CAP connection.</p>
 </dd>
 
-### -field <b>BtAddress</b>
+### -field BtAddress
 
 <dd>
 <p>The Bluetooth address of the remote device.</p>
 </dd>
 
-### -field <b>Parameters</b>
+### -field Parameters
 
 <dd>
 <dl>
 
-### -field <b>Connect</b>
+### -field Connect
 
 <dd>
 <p>The structure that contains parameters for the 
       <i>IndicationRemoteConnect</i> callback function.</p>
 <dl>
 
-### -field <b>Request</b>
+### -field Request
 
 <dd>
 <p>The structure that contains the parameters for a connection request.</p>
 <dl>
 
-### -field <b>PSM</b>
+### -field PSM
 
 <dd>
 <p>The Protocol/Service Multiplexer (PSM) that is passed to the calling function when the 
@@ -134,14 +134,14 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
 </dl>
 </dd>
 
-### -field <b>ConfigRequest</b>
+### -field ConfigRequest
 
 <dd>
 <p>The structure that contains parameters for the 
       <i>IndicationRemoteConfigRequest</i> INDICATION_CODE value.</p>
 <dl>
 
-### -field <b>CurrentParams</b>
+### -field CurrentParams
 
 <dd>
 <p>A 
@@ -151,7 +151,7 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
        <i>IndicationRemoteConfigRequest</i> INDICATION_CODE value.</p>
 </dd>
 
-### -field <b>RequestedParams</b>
+### -field RequestedParams
 
 <dd>
 <p>A CHANNEL_CONFIG_PARAMETERS_ENHANCED structure that contains the parameters that are passed from the
@@ -159,14 +159,14 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
        <i>IndicationRemoteConfigRequest</i> INDICATION_CODE value.</p>
 </dd>
 
-### -field <b>ResponseParams</b>
+### -field ResponseParams
 
 <dd>
 <p>A CHANNEL_CONFIG_PARAMETERS_ENHANCED structure that contains the parameters that the profile driver
        responds to the configuration request with.</p>
 </dd>
 
-### -field <b>Response</b>
+### -field Response
 
 <dd>
 <p>A flag that indicates the status of the configuration request. Valid flag values are listed in
@@ -225,14 +225,14 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
 </dl>
 </dd>
 
-### -field <b>ConfigResponse</b>
+### -field ConfigResponse
 
 <dd>
 <p>The structure that contains parameters for the 
       <i>IndicationRemoteConfigResponse</i> INDICATION_CODE value.</p>
 <dl>
 
-### -field <b>CurrentParams</b>
+### -field CurrentParams
 
 <dd>
 <p>A 
@@ -242,7 +242,7 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
        <i>IndicationRemoteConfigRequest</i> INDICATION_CODE value.</p>
 </dd>
 
-### -field <b>RequestedParams</b>
+### -field RequestedParams
 
 <dd>
 <p>A CHANNEL_CONFIG_PARAMETERS_ENHANCED structure that contains the parameters that are passed from the
@@ -250,34 +250,34 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
        <i>IndicationRemoteConfigRequest</i> INDICATION_CODE value.</p>
 </dd>
 
-### -field <b>RejectedParams</b>
+### -field RejectedParams
 
 <dd>
 <p>A CHANNEL_CONFIG_PARAMETERS_ENHANCED structure that contains the configuration parameter settings that
        were rejected by the remote device.</p>
 </dd>
 
-### -field <b>UnknownTypes</b>
+### -field UnknownTypes
 
 <dd>
 <p>An array of types that were not recognized by the responding device.</p>
 </dd>
 
-### -field <b>NumUnknownTypes</b>
+### -field NumUnknownTypes
 
 <dd>
 <p>The number of unrecognized types in the 
        <b>UnknownTypes</b> member.</p>
 </dd>
 
-### -field <b>NewRequestParams</b>
+### -field NewRequestParams
 
 <dd>
 <p>A CHANNEL_CONFIG_PARAMETERS_ENHANCED structure that contains the parameter settings for the enhanced callback
        function to resubmit after the response has returned from the remote device.</p>
 </dd>
 
-### -field <b>Response</b>
+### -field Response
 
 <dd>
 <p>A flag that indicates the status of the configuration request. Valid flag values are listed in
@@ -336,21 +336,21 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
 </dl>
 </dd>
 
-### -field <b>FreeExtraOptions</b>
+### -field FreeExtraOptions
 
 <dd>
 <p>The structure that contains parameters for the 
       <i>IndicationFreeExtraOptions</i> INDICATION_CODE value.</p>
 <dl>
 
-### -field <b>NumExtraOptions</b>
+### -field NumExtraOptions
 
 <dd>
 <p>The number of extra options contained in the 
        <b>ExtraOptions</b> member.</p>
 </dd>
 
-### -field <b>ExtraOptions</b>
+### -field ExtraOptions
 
 <dd>
 <p>Extra options.</p>
@@ -358,14 +358,14 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
 </dl>
 </dd>
 
-### -field <b>Disconnect</b>
+### -field Disconnect
 
 <dd>
 <p>The structure that contains the parameters for the 
       <i>IndicationRemoteDisconnect</i> INDICATION_CODE value.</p>
 <dl>
 
-### -field <b>Reason</b>
+### -field Reason
 
 <dd>
 <p>An 
@@ -373,7 +373,7 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
        indicates why the L2CAP connection to the remote device was terminated.</p>
 </dd>
 
-### -field <b>CloseNow</b>
+### -field CloseNow
 
 <dd>
 <p>A Boolean value that a profile driver uses to notify the Bluetooth driver stack to close the
@@ -383,21 +383,21 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
 </dl>
 </dd>
 
-### -field <b>RecvPacket</b>
+### -field RecvPacket
 
 <dd>
 <p>The structure that contains the parameters for the 
       <i>IndicationRecvPacket</i> INDICATION_CODE value.</p>
 <dl>
 
-### -field <b>PacketLength</b>
+### -field PacketLength
 
 <dd>
 <p>The size, in bytes, of the packet that the callback function sent over the L2CAP
        connection.</p>
 </dd>
 
-### -field <b>TotalQueueLength</b>
+### -field TotalQueueLength
 
 <dd>
 <p>The number of packets to be processed over the L2CAP connection.</p>
@@ -405,7 +405,7 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
 </dl>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved member. Do not use.</p>

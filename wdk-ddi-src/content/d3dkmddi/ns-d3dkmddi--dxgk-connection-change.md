@@ -70,36 +70,36 @@ typedef struct _DXGK_CONNECTION_CHANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>ConnectionChangeId</b>
+### -field ConnectionChangeId
 
 <dd>
 <p>The per target unique id for the transition being reported.  This value must be unique across all targets on the adapter and must be monotonically increasing for each change reported.</p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>The target id for which the change is being reported.  This target id must have been reported to the OS before and must be in a state which supports the given change.</p>
 </dd>
 
-### -field <b>ConnectionStatus</b>
+### -field ConnectionStatus
 
 <dd>
 <p>The status of the connection.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use.</p>
 </dd>
 
-### -field <b>MonitorConnect</b>
+### -field MonitorConnect
 
 <dd>
 <dl>
 
-### -field <b>MonitorConnect.LinkTargetType</b>
+### -field MonitorConnect.LinkTargetType
 
 <dd>
 <p>This is the video output technology of the monitor which has been connected.  Internal and Miracast are not allowed so only the following values are allowed:</p>
@@ -121,18 +121,18 @@ typedef struct _DXGK_CONNECTION_CHANGE {
 </dl>
 </dd>
 
-### -field <b>TargetConnect</b>
+### -field TargetConnect
 
 <dd>
 <dl>
 
-### -field <b>TargetConnect.BaseTargetType</b>
+### -field TargetConnect.BaseTargetType
 
 <dd>
 <p>This is the video output technology of connector of the new target.  As with MonitorConnect.LinkTargetType,  Internal and Miracast are not allowed so the same target types as listed above are allowed.</p>
 </dd>
 
-### -field <b>TargetConnect.NewTargetId</b>
+### -field TargetConnect.NewTargetId
 
 <dd>
 <p>The target id for which the change is being reported.  This target id must have been reported to the OS before and must be in a state which supports the given change.  </p>
@@ -140,12 +140,12 @@ typedef struct _DXGK_CONNECTION_CHANGE {
 </dl>
 </dd>
 
-### -field <b>TargetJoin</b>
+### -field TargetJoin
 
 <dd>
 <dl>
 
-### -field <b>TargetJoin.BaseTargetType</b>
+### -field TargetJoin.BaseTargetType
 
 <dd>
 <p>This is the video output technology of the connector of the new target.  As with MonitorConnect.LinkTargetType,  Internal and Miracast are not allowed so the same target types as listed above are allowed.  </p>
@@ -153,7 +153,7 @@ typedef struct _DXGK_CONNECTION_CHANGE {
 <div> </div>
 </dd>
 
-### -field <b>TargetJoin.NewTargetId</b>
+### -field TargetJoin.NewTargetId
 
 <dd>
 <p>The target id for which the change is being reported.  This target id must have been reported to the OS before and must be in a state which supports the given change.  </p>

@@ -58,19 +58,19 @@ typedef enum _DXGK_MEMORY_TRANSFER_DIRECTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_MEMORY_TRANSFER_LOCAL_TO_SYSTEM"></a><a id="dxgk_memory_transfer_local_to_system"></a><b>DXGK_MEMORY_TRANSFER_LOCAL_TO_SYSTEM</b>
+### -field DXGK_MEMORY_TRANSFER_LOCAL_TO_SYSTEM
 
 <dd>
 <p>Transfer from local GPU memory to system memory.</p>
 </dd>
 
-### -field <a id="DXGK_MEMORY_TRANSFER_SYSTEM_TO_LOCAL"></a><a id="dxgk_memory_transfer_system_to_local"></a><b>DXGK_MEMORY_TRANSFER_SYSTEM_TO_LOCAL</b>
+### -field DXGK_MEMORY_TRANSFER_SYSTEM_TO_LOCAL
 
 <dd>
 <p>Transfer from system memory to local GPU memory.</p>
 </dd>
 
-### -field <a id="DXGK_MEMORY_TRANSFER_LOCAL_TO_LOCAL"></a><a id="dxgk_memory_transfer_local_to_local"></a><b>DXGK_MEMORY_TRANSFER_LOCAL_TO_LOCAL</b>
+### -field DXGK_MEMORY_TRANSFER_LOCAL_TO_LOCAL
 
 <dd>
 <p>Transfer from local GPU memory to local GPU memory.</p>

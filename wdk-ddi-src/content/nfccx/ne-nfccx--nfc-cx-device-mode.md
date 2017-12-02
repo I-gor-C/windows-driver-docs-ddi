@@ -56,19 +56,19 @@ typedef enum _NFC_CX_DEVICE_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="NFC_CX_DEVICE_MODE_NCI"></a><a id="nfc_cx_device_mode_nci"></a><b>NFC_CX_DEVICE_MODE_NCI</b>
+### -field NFC_CX_DEVICE_MODE_NCI
 
 <dd>
 <p>Enable NCI mode.</p>
 </dd>
 
-### -field <a id="NFC_CX_DEVICE_MODE_DTA"></a><a id="nfc_cx_device_mode_dta"></a><b>NFC_CX_DEVICE_MODE_DTA</b>
+### -field NFC_CX_DEVICE_MODE_DTA
 
 <dd>
 <p>Enable DTA mode.</p>
 </dd>
 
-### -field <a id="NFC_CX_DEVICE_MODE_RAW"></a><a id="nfc_cx_device_mode_raw"></a><b>NFC_CX_DEVICE_MODE_RAW</b>
+### -field NFC_CX_DEVICE_MODE_RAW
 
 <dd>
 <p>Enable RAW mode.</p>

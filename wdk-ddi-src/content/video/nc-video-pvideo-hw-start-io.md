@@ -59,13 +59,13 @@ BOOLEAN HwVidStartIO(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.</p>
 </dd>
 
-### -param <i>RequestPacket</i> 
+### -param RequestPacket 
 
 <dd>
 <p>Pointer to a <a href="..\video\ns-video--video-request-packet.md">VIDEO_REQUEST_PACKET</a> structure, which contains all the parameters originally passed to <a href="display.engdeviceiocontrol">EngDeviceIoControl</a>.</p>

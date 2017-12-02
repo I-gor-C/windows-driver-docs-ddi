@@ -60,43 +60,43 @@ typedef struct _D3DKMT_OUTPUTDUPLPRESENT {
 ## -struct-fields
 <dl>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a handle to the context.</p>
 </dd>
 
-### -field <b>hSource</b>
+### -field hSource
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the source allocation to be displayed.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>The zero-based identification number of a video present source in a path of a video present network (VidPN) topology.</p>
 </dd>
 
-### -field <b>BroadcastContextCount</b>
+### -field BroadcastContextCount
 
 <dd>
 <p>[in] Specifies the number of contexts.</p>
 </dd>
 
-### -field <b>BroadcastContext</b>
+### -field BroadcastContext
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents the broadcast context.</p>
 </dd>
 
-### -field <b>PresentRegions</b>
+### -field PresentRegions
 
 <dd>
 <p>[in] Dirty and move regions, of type <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-present-rgns.md">D3DKMT_PRESENT_RGNS</a>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A bitwise-OR combination of values from the <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-outputduplpresentflags.md">D3DKMT_OUTPUTDUPLPRESENTFLAGS</a> enumeration that describe options for the present operation.</p>

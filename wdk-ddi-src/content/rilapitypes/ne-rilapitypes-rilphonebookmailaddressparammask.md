@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookmailaddressparammask_2.htm
 old-project: netvista
 ms.assetid: 4ce9142e-2a59-4908-a8d4-c6a9328d0dc5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef enum _RILPHONEBOOKMAILADDRESSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_PBEA_ALL"></a><a id="ril_param_pbea_all"></a><b>RIL_PARAM_PBEA_ALL</b>
+### -field RIL_PARAM_PBEA_ALL
 
 <dd></dd>
 </dl>

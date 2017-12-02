@@ -66,13 +66,13 @@ typedef struct D3DDDI_MAPGPUVIRTUALADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>hPagingQueue</b>
+### -field hPagingQueue
 
 <dd>
 <p>A handle for the device paging queue, used for the operation.</p>
 </dd>
 
-### -field <b>BaseAddress</b>
+### -field BaseAddress
 
 <dd>
 <p>(Optional) If non-<b>NULL</b>, the video memory manager will attempt to use this address as the base address for the mapping. If the range from <b>BaseAddress</b> to <b>BaseAddress</b>+<b>Size</b> isn’t free, it must belong to a range, previously obtained by calling <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a> or <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-mapgpuvirtualaddresscb.md">pfnMapGpuVirtualAddressCb</a>. 
@@ -80,7 +80,7 @@ The <b>BaseAddress</b> value is in bytes and must be aligned to CPU page boundar
 If <b>NULL</b> is specified, the video memory manager will pick the base address for the allocation within the specified <b>MinimumAddress</b> and <b>MaximumAddress</b>.</p>
 </dd>
 
-### -field <b>MinimumAddress</b>
+### -field MinimumAddress
 
 <dd>
 <p>(Optional) Specifies the minimum GPU virtual address to consider for the mapped range. 
@@ -88,7 +88,7 @@ The <b>MinimumAddress</b> value is in bytes and must be aligned to 4KB page.
 This parameter is ignored when <b>BaseAddress</b> != <b>NULL.</b></p>
 </dd>
 
-### -field <b>MaximumAddress</b>
+### -field MaximumAddress
 
 <dd>
 <p>
@@ -98,25 +98,25 @@ This parameter is ignored when <b>BaseAddress</b> != NULL.
 </p>
 </dd>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>Handle to the allocation being mapped into the GPU virtual address space. Must be <b>NULL</b> when <b>Protection.NoAccess</b> or <b>Protection.Zero</b> is specified.</p>
 </dd>
 
-### -field <b>OffsetInPages</b>
+### -field OffsetInPages
 
 <dd>
 <p>Specifies the offset, in 4KB, to the starting page within the specified allocation that must be mapped.</p>
 </dd>
 
-### -field <b>SizeInPages</b>
+### -field SizeInPages
 
 <dd>
 <p>Specifies the size of the range to map in 4KB pages.</p>
 </dd>
 
-### -field <b>Protection</b>
+### -field Protection
 
 <dd>
 <p>
@@ -129,7 +129,7 @@ This parameter is ignored when <b>BaseAddress</b> != NULL.
 <tr>
 <td width="40%"><a id="Write"></a><a id="write"></a><a id="WRITE"></a><dl>
 
-### -field <b>Write</b>
+### -field Write
 
 </dl>
 </td>
@@ -140,7 +140,7 @@ This parameter is ignored when <b>BaseAddress</b> != NULL.
 <tr>
 <td width="40%"><a id="Execute"></a><a id="execute"></a><a id="EXECUTE"></a><dl>
 
-### -field <b>Execute</b>
+### -field Execute
 
 </dl>
 </td>
@@ -151,7 +151,7 @@ This parameter is ignored when <b>BaseAddress</b> != NULL.
 <tr>
 <td width="40%"><a id="NoAccess"></a><a id="noaccess"></a><a id="NOACCESS"></a><dl>
 
-### -field <b>NoAccess</b>
+### -field NoAccess
 
 </dl>
 </td>
@@ -162,7 +162,7 @@ This parameter is ignored when <b>BaseAddress</b> != NULL.
 <tr>
 <td width="40%"><a id="Zero"></a><a id="zero"></a><a id="ZERO"></a><dl>
 
-### -field <b>Zero</b>
+### -field Zero
 
 </dl>
 </td>
@@ -175,31 +175,31 @@ This parameter is ignored when <b>BaseAddress</b> != NULL.
 <p> </p>
 </dd>
 
-### -field <b>DriverProtection</b>
+### -field DriverProtection
 
 <dd>
 <p>Specifies a driver specific 64bits protection value associated with the VA range being allocated. The specified driver protection will be used in call to <a href="display.dxgkddiupdatepagetable">DxgkDdiUpdatePageTable</a> for page table entries corresponding to this virtual address range.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>VirtualAddress</b>
+### -field VirtualAddress
 
 <dd>
 <p>The virtual address assigned to the allocation.</p>
 </dd>
 
-### -field <b>PagingFenceValue</b>
+### -field PagingFenceValue
 
 <dd>
 <p>Represents the device paging fence value that the video memory manager will signal when the map operation completes on the GPU.

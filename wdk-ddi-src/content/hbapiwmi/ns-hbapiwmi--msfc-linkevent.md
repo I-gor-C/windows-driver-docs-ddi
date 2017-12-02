@@ -57,25 +57,25 @@ typedef struct _MSFC_LinkEvent {
 ## -struct-fields
 <dl>
 
-### -field <b>EventType</b>
+### -field EventType
 
 <dd>
 <p>Indicates the type of the event. The values that can be assigned to this member are defined by the <a href="storage.event_types_qualifiers">EVENT_TYPE_QUALIFIERS</a> WMI class qualifier.</p>
 </dd>
 
-### -field <b>AdapterWWN</b>
+### -field AdapterWWN
 
 <dd>
 <p>Contains a worldwide name that indicates the adapter for which the event occurred. </p>
 </dd>
 
-### -field <b>RLIRBufferSize</b>
+### -field RLIRBufferSize
 
 <dd>
 <p>Indicates the size of the buffer at <b>RLIRBuffer</b>. </p>
 </dd>
 
-### -field <b>RLIRBuffer</b>
+### -field RLIRBuffer
 
 <dd>
 <p>Contains the data associated with a register link incident request (RLIR).</p>

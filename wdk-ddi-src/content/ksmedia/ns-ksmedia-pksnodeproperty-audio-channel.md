@@ -56,20 +56,20 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeProperty</b>
+### -field NodeProperty
 
 <dd>
 <p>Specifies both the target node and the property to get or set. This member is a structure of type <a href="audio.ksnodeproperty">KSNODEPROPERTY</a>.</p>
 </dd>
 
-### -field <b>Channel</b>
+### -field Channel
 
 <dd>
 <p>Specifies a channel number. This member identifies the channel that is to be controlled. Given a stream with <i>n</i> channels, the channels are numbered 0 to <i>n</i>-1. When a channel number of -1 (0xFFFFFFFF) is specified, the level applies to the entire stream.</p>
 <p>It is important  to note that the standard USB audio specification provides a mechanism that allows audio drivers that support the master channel control feature, to apply channel-specific information to an entire stream. To implement this mechanism, the USB audio driver must set the channel number to zero (0). Therefore, when a USB audio driver sets the channel number to -1, there is no guarantee that the property information will be applied to the entire stream.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for internal use by operating system. Do not use.</p>

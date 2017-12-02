@@ -55,7 +55,7 @@ BOOLEAN ClfsLsnNull(
 ## -parameters
 <dl>
 
-### -param <i>plsn</i> [in]
+### -param plsn [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that supplies the LSN to be tested.</p>

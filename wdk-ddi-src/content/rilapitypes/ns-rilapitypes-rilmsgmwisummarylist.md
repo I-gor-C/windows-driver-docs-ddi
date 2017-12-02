@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwisummarylist_2.htm
 old-project: netvista
 ms.assetid: 85f07ef4-6306-4995-9c95-9bbae775af1c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMSGMWISUMMARYLIST, RILMSGMWISUMMARYLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,35 +62,35 @@ typedef struct _RILMSGMWISUMMARYLIST {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwReferenceNumber</b>
+### -field dwReferenceNumber
 
 <dd></dd>
 
-### -field <b>stAccountAddress</b>
+### -field stAccountAddress
 
 <dd></dd>
 
-### -field <b>dwTotalNumberOfDetailItems</b>
+### -field dwTotalNumberOfDetailItems
 
 <dd></dd>
 
-### -field <b>dwNumberOfSummaryItems</b>
+### -field dwNumberOfSummaryItems
 
 <dd></dd>
 
-### -field <b>stMwiSummary</b>
+### -field stMwiSummary
 
 <dd></dd>
 </dl>

@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_CAMERACONTROL_ASYNC_START"></a><a id="ks_cameracontrol_async_start"></a><b>KS_CAMERACONTROL_ASYNC_START</b>
+### -field KS_CAMERACONTROL_ASYNC_START
 
 <dd>
 <p>Initiate an asynchronous camera control operation.</p>
 </dd>
 
-### -field <a id="KS_CAMERACONTROL_ASYNC_STOP"></a><a id="ks_cameracontrol_async_stop"></a><b>KS_CAMERACONTROL_ASYNC_STOP</b>
+### -field KS_CAMERACONTROL_ASYNC_STOP
 
 <dd>
 <p>Stop the requested asynchronous camera control operation and maintain current camera control settings, including the lens focus.</p>
 </dd>
 
-### -field <a id="KS_CAMERACONTROL_ASYNC_RESET"></a><a id="ks_cameracontrol_async_reset"></a><b>KS_CAMERACONTROL_ASYNC_RESET</b>
+### -field KS_CAMERACONTROL_ASYNC_RESET
 
 <dd>
 <p>Stop the requested asynchronous camera control operation and reset the lens focus to infinity.</p>

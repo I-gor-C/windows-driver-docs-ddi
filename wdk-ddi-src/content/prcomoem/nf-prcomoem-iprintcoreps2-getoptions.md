@@ -61,43 +61,43 @@ HRESULT GetOptions(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> [in]
+### -param pdevobj [in]
 
 <dd>
 <p>Pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>Is reserved and must be set to zero.</p>
 </dd>
 
-### -param <i>pmszFeaturesRequested</i> [in]
+### -param pmszFeaturesRequested [in]
 
 <dd>
 <p>Pointer to caller-supplied buffer containing a list of feature keywords (in MULTI_SZ format) whose settings are requested. Set this parameter to <b>NULL</b> to obtain settings for all features.</p>
 </dd>
 
-### -param <i>cbIn</i> [in]
+### -param cbIn [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer pointed to by <i>pmszFeaturesRequested</i>. The size includes the last MULTI_SZ null character.</p>
 </dd>
 
-### -param <i>pmszFeatureOptionBuf</i> [out]
+### -param pmszFeatureOptionBuf [out]
 
 <dd>
 <p>Pointer to a caller-supplied buffer that receives a list of feature/option keyword pairs (in MULTI_SZ format) obtained from the driver settings. Each feature/option keyword pair contains the feature keyword name, a null character, the option keyword name, and another null character. The list is terminated by two NULL characters.</p>
 </dd>
 
-### -param <i>cbSize</i> [in]
+### -param cbSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer pointed to by <i>pmszFeatureOptionBuf</i>.</p>
 </dd>
 
-### -param <i>pcbNeeded</i> [out]
+### -param pcbNeeded [out]
 
 <dd>
 <p>Pointer to a memory location that receives the actual size, in bytes, of the requested data.</p>
@@ -132,7 +132,7 @@ HRESULT GetOptions(
 
 <p>This method is supported for any Pscript5 render plug-in.</p>
 
-<p>For more information, see <a href="NULL">Using GetOptions and SetOptions</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/c8b5c235-0b74-47c8-b6ba-eba810a8467b">Using GetOptions and SetOptions</a>.</p>
 
 ## -requirements
 <table>

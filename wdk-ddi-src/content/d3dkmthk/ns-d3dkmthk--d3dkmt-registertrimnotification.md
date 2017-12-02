@@ -60,31 +60,31 @@ typedef struct _D3DKMT_REGISTERTRIMNOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>AdapterLuid</b>
+### -field AdapterLuid
 
 <dd>
 <p>[in] Luid of the adapter which the device created.</p>
 </dd>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] Device to trim the residency list for.</p>
 </dd>
 
-### -field <b>Callback</b>
+### -field Callback
 
 <dd>
 <p>[in] Pointer to the callback function.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>[in] Caller-supplied context for callback.</p>
 </dd>
 
-### -field <b>Handle</b>
+### -field Handle
 
 <dd>
 <p>[out] Handle that will be used to unregister the callback with <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtunregistertrimnotification.md">D3DKMTUnregisterTrimNotification</a>.</p>

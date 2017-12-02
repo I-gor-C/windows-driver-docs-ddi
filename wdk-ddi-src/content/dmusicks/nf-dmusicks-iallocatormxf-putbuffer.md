@@ -55,7 +55,7 @@ NTSTATUS PutBuffer(
 ## -parameters
 <dl>
 
-### -param <i>pbBuffer</i> [in]
+### -param pbBuffer [in]
 
 <dd>
 <p>Pointer to the buffer being passed to the allocator</p>

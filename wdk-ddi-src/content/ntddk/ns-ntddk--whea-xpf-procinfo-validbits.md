@@ -62,43 +62,43 @@ typedef union _WHEA_XPF_PROCINFO_VALIDBITS {
 ## -struct-fields
 <dl>
 
-### -field <b>CheckInfo</b>
+### -field CheckInfo
 
 <dd>
 <p>A single bit that indicates that the <b>CheckInfo</b> member of the WHEA_XPF_PROCINFO structure contains valid data.</p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>A single bit that indicates that the <b>TargetId</b> member of the WHEA_XPF_PROCINFO structure contains valid data.</p>
 </dd>
 
-### -field <b>RequesterId</b>
+### -field RequesterId
 
 <dd>
 <p>A single bit that indicates that the <b>RequesterId</b> member of the WHEA_XPF_PROCINFO structure contains valid data.</p>
 </dd>
 
-### -field <b>ResponderId</b>
+### -field ResponderId
 
 <dd>
 <p>A single bit that indicates that the <b>ResponderId</b> member of the WHEA_XPF_PROCINFO structure contains valid data.</p>
 </dd>
 
-### -field <b>InstructionPointer</b>
+### -field InstructionPointer
 
 <dd>
 <p>A single bit that indicates that the <b>InstructionPointer</b> member of the WHEA_XPF_PROCINFO structure contains valid data.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>ValidBits</b>
+### -field ValidBits
 
 <dd>
 <p>A ULONGLONG representation of the contents of the WHEA_XPF_PROCINFO_VALIDBITS union.</p>

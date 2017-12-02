@@ -64,43 +64,43 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>PresentationTimeStamp</b>
+### -field PresentationTimeStamp
 
 <dd>
 <p>Specifies the presentation timestamp.</p>
 </dd>
 
-### -field <b>SourceClockReference</b>
+### -field SourceClockReference
 
 <dd>
 <p>Specifies the source clock reference.</p>
 </dd>
 
-### -field <b>Counter</b>
+### -field Counter
 
 <dd>
 <p>Specifies the source clock reference counter.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>SCRToken</b>
+### -field SCRToken
 
 <dd>
 <p>Specifies the source clock reference token.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>

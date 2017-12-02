@@ -67,49 +67,49 @@ typedef struct _PCI_EXPRESS_AER_CAPABILITY {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537466">PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER</a> structure that describes the header for this structure.</p>
 </dd>
 
-### -field <b>UncorrectableErrorStatus</b>
+### -field UncorrectableErrorStatus
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537572">PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS</a> structure that describes the PCIe uncorrectable error status register of the PCIe AER capability structure.</p>
 </dd>
 
-### -field <b>UncorrectableErrorMask</b>
+### -field UncorrectableErrorMask
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537567">PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK</a> structure that describes the PCIe uncorrectable error mask register of the PCIe AER capability structure.</p>
 </dd>
 
-### -field <b>UncorrectableErrorSeverity</b>
+### -field UncorrectableErrorSeverity
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537570">PCI_EXPRESS_UNCORRECTABLE_ERROR_SEVERITY</a> structure that describes the PCIe uncorrectable error severity register of the PCIe AER capability structure.</p>
 </dd>
 
-### -field <b>CorrectableErrorStatus</b>
+### -field CorrectableErrorStatus
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537572">PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS</a> structure that describes the PCIe uncorrectable error status register of the PCIe AER capability structure.</p>
 </dd>
 
-### -field <b>CorrectableErrorMask</b>
+### -field CorrectableErrorMask
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537567">PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK</a> structure that describes the PCIe uncorrectable error mask register of the PCIe AER capability structure.</p>
 </dd>
 
-### -field <b>CapabilitiesAndControl</b>
+### -field CapabilitiesAndControl
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537456">PCI_EXPRESS_AER_CAPABILITIES</a> structure that describes the PCIe advanced error capabilities and control register of the PCIe AER capability structure.</p>
 </dd>
 
-### -field <b>HeaderLog</b>
+### -field HeaderLog
 
 <dd>
 <p>An array of four 32-bit values that together contain the header for the transaction layer packet (TLP) that corresponds to a detected error.</p>
@@ -117,31 +117,31 @@ typedef struct _PCI_EXPRESS_AER_CAPABILITY {
 <div> </div>
 </dd>
 
-### -field <b>SecUncorrectableErrorStatus</b>
+### -field SecUncorrectableErrorStatus
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537556">PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS</a> structure that describes the PCIe secondary uncorrectable error status register of the PCIe AER capability structure. </p>
 </dd>
 
-### -field <b>SecUncorrectableErrorMask</b>
+### -field SecUncorrectableErrorMask
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537479">PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK</a> structure that describes the PCIe secondary uncorrectable error mask register of the PCIe AER capability structure. </p>
 </dd>
 
-### -field <b>SecUncorrectableErrorSeverity</b>
+### -field SecUncorrectableErrorSeverity
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/b00aeced-037b-4bc5-97b7-96501262700f">PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERIT</a>Y structure that describes the PCIe secondary uncorrectable error severity register of the PCIe AER capability structure. </p>
 </dd>
 
-### -field <b>SecCapabilitiesAndControl</b>
+### -field SecCapabilitiesAndControl
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537478">PCI_EXPRESS_SEC_AER_CAPABILITIES</a> structure that describes the PCIe secondary error capabilities and control register of the PCIe AER capability structure. </p>
 </dd>
 
-### -field <b>SecHeaderLog</b>
+### -field SecHeaderLog
 
 <dd>
 <p>An array of four 32-bit values that together contain the header for the transaction on the secondary interface that generated an error. </p>

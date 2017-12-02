@@ -7,7 +7,7 @@ old-location: netvista\rilsendmsgresponse_2.htm
 old-project: netvista
 ms.assetid: 46fd1e3e-38de-460e-8bb8-ff7db2a16e1a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSENDMSGRESPONSE, RILSENDMSGRESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,35 +62,35 @@ typedef struct _RILSENDMSGRESPONSE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>hrReturn</b>
+### -field hrReturn
 
 <dd></dd>
 
-### -field <b>dwCDMACauseCode</b>
+### -field dwCDMACauseCode
 
 <dd></dd>
 
-### -field <b>dwCDMAErrorClass</b>
+### -field dwCDMAErrorClass
 
 <dd></dd>
 
-### -field <b>dwGWLTransportCode</b>
+### -field dwGWLTransportCode
 
 <dd></dd>
 
-### -field <b>dwGWLRelayCode</b>
+### -field dwGWLRelayCode
 
 <dd></dd>
 
-### -field <b>dwMsgID</b>
+### -field dwMsgID
 
 <dd></dd>
 </dl>

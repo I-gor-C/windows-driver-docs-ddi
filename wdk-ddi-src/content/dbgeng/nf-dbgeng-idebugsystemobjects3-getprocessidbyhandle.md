@@ -7,7 +7,7 @@ old-location: debugger\getprocessidbyhandle.htm
 old-project: debugger
 ms.assetid: 6920cbd3-0a20-4d38-8538-85f46d0f0d5b
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSystemObjects3, GetProcessIdByHandle, IDebugSystemObjects3::GetProcessIdByHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ HRESULT GetProcessIdByHandle(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Specifies the handle of the process whose process ID is requested.  This handle must be a process handle previously retrieved from the debugger engine.</p>
 </dd>
 
-### -param <i>Id</i> [out]
+### -param Id [out]
 
 <dd>
 <p>Receives the engine process ID.</p>
@@ -69,7 +69,7 @@ HRESULT GetProcessIdByHandle(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

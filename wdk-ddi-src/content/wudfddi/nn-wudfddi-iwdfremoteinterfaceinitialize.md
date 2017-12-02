@@ -7,7 +7,7 @@ old-location: wdf\iwdfremoteinterfaceinitialize.htm
 old-project: wdf
 ms.assetid: 54954874-d67a-4e8b-b791-105e8018f8ca
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

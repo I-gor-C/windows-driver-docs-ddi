@@ -7,7 +7,7 @@ old-location: ifsk\rxnamecacheactivateentry.htm
 old-project: ifsk
 ms.assetid: 6ebd4b00-ec25-4383-beba-0478b3241f09
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxNameCacheActivateEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ VOID RxNameCacheActivateEntry(
 ## -parameters
 <dl>
 
-### -param <i>NameCacheCtl</i> [in]
+### -param NameCacheCtl [in]
 
 <dd>
 <p>A pointer to the NAME_CACHE_CONTROL structure on which to activate the entry.</p>
 </dd>
 
-### -param <i>NameCache</i> [in]
+### -param NameCache [in]
 
 <dd>
 <p>A pointer to the NAME_CACHE structure to activate.</p>
 </dd>
 
-### -param <i>LifeTime</i> [in]
+### -param LifeTime [in]
 
 <dd>
 <p>A value that indicates the valid lifetime in seconds of the cache entry. A value of 0 means to leave the current value unchanged. A value of 0 is used for reactivations after a match where you want the original lifetime preserved.</p>
 </dd>
 
-### -param <i>MRxContext</i> [in]
+### -param MRxContext [in]
 
 <dd>
 <p>A value of context supplied by the network mini-redirector for equality checking when making a valid entry check. An <i>MRxContext</i> value of 0 means to leave the current value unchanged. A value of 0 is used for reactivations after a match where you want the original <i>MRxContext</i> preserved.</p>
@@ -151,4 +151,4 @@ VOID RxNameCacheActivateEntry(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxNameCacheActivateEntry function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxNameCacheActivateEntry function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

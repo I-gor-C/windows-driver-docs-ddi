@@ -55,7 +55,7 @@ typedef struct _USB_HUB_CAPABILITIES_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>CapabilityFlags</b>
+### -field CapabilityFlags
 
 <dd>
 <p>A <a href="..\usbioctl\ns-usbioctl--usb-hub-cap-flags.md">USB_HUB_CAP_FLAGS</a> structure that reports the hub capabilities.</p>

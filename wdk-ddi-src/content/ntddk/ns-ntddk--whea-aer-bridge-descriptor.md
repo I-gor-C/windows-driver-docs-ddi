@@ -67,43 +67,43 @@ typedef struct _WHEA_AER_BRIDGE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_AERBRIDGE.</p>
 </dd>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>A Boolean value that indicates if the error source is enabled.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>BusNumber</b>
+### -field BusNumber
 
 <dd>
 <p>The bridge's primary bus number.</p>
 </dd>
 
-### -field <b>Slot</b>
+### -field Slot
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-pci-slot-number.md">WHEA_PCI_SLOT_NUMBER</a> structure that describes the logical PCI slot where the bridge is located in the system.</p>
 </dd>
 
-### -field <b>DeviceControl</b>
+### -field DeviceControl
 
 <dd>
 <p>The contents of the bridge's Device Control register.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>An AER_BRIDGE_DESCRIPTOR_FLAGS union that indicates which of the members of the WHEA_AER_BRIDGE_DESCRIPTOR structure can be written to by the operating system. The AER_BRIDGE_DESCRIPTOR_FLAGS union is defined as follows:</p>
@@ -132,55 +132,55 @@ typedef struct _WHEA_AER_BRIDGE_DESCRIPTOR {
 <p></p>
 <dl>
 
-### -field <a id="UncorrectableErrorMaskRW"></a><a id="uncorrectableerrormaskrw"></a><a id="UNCORRECTABLEERRORMASKRW"></a><b>UncorrectableErrorMaskRW</b>
+### -field UncorrectableErrorMaskRW
 
 <dd>
 <p>A single bit that indicates that the operating system can write to the <b>UncorrectableErrorMask</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.</p>
 </dd>
 
-### -field <a id="UncorrectableErrorSeverityRW"></a><a id="uncorrectableerrorseverityrw"></a><a id="UNCORRECTABLEERRORSEVERITYRW"></a><b>UncorrectableErrorSeverityRW</b>
+### -field UncorrectableErrorSeverityRW
 
 <dd>
 <p>A single bit that indicates that the operating system can write to the <b>UncorrectableErrorSeverity</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.</p>
 </dd>
 
-### -field <a id="CorrectableErrorMaskRW"></a><a id="correctableerrormaskrw"></a><a id="CORRECTABLEERRORMASKRW"></a><b>CorrectableErrorMaskRW</b>
+### -field CorrectableErrorMaskRW
 
 <dd>
 <p>A single bit that indicates that the operating system can write to the <b>CorrectableErrorMask</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.</p>
 </dd>
 
-### -field <a id="AdvancedCapsAndControlRW"></a><a id="advancedcapsandcontrolrw"></a><a id="ADVANCEDCAPSANDCONTROLRW"></a><b>AdvancedCapsAndControlRW</b>
+### -field AdvancedCapsAndControlRW
 
 <dd>
 <p>A single bit that indicates that the operating system can write to the <b>AdvancedCapsAndControl</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.</p>
 </dd>
 
-### -field <a id="SecondaryUncorrectableErrorMaskRW"></a><a id="secondaryuncorrectableerrormaskrw"></a><a id="SECONDARYUNCORRECTABLEERRORMASKRW"></a><b>SecondaryUncorrectableErrorMaskRW</b>
+### -field SecondaryUncorrectableErrorMaskRW
 
 <dd>
 <p>A single bit that indicates that the operating system can write to the <b>SecondaryUncorrectableErrorMask</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.</p>
 </dd>
 
-### -field <a id="SecondaryUncorrectableErrorSevRW"></a><a id="secondaryuncorrectableerrorsevrw"></a><a id="SECONDARYUNCORRECTABLEERRORSEVRW"></a><b>SecondaryUncorrectableErrorSevRW</b>
+### -field SecondaryUncorrectableErrorSevRW
 
 <dd>
 <p>A single bit that indicates that the operating system can write to the <b>SecondaryUncorrectableErrorSev</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.</p>
 </dd>
 
-### -field <a id="SecondaryCapsAndControlRW"></a><a id="secondarycapsandcontrolrw"></a><a id="SECONDARYCAPSANDCONTROLRW"></a><b>SecondaryCapsAndControlRW</b>
+### -field SecondaryCapsAndControlRW
 
 <dd>
 <p>A single bit that indicates that the operating system can write to the <b>SecondaryCapsAndControl</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.</p>
 </dd>
 
-### -field <a id="Reserved"></a><a id="reserved"></a><a id="RESERVED"></a><b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="AsUSHORT"></a><a id="asushort"></a><a id="ASUSHORT"></a><b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>A USHORT representation of the contents of the AER_ROOTPORT_DESCRIPTOR_FLAGS union.</p>
@@ -188,43 +188,43 @@ typedef struct _WHEA_AER_BRIDGE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>UncorrectableErrorMask</b>
+### -field UncorrectableErrorMask
 
 <dd>
 <p>The contents of the bridge's Uncorrectable Error Mask register.</p>
 </dd>
 
-### -field <b>UncorrectableErrorSeverity</b>
+### -field UncorrectableErrorSeverity
 
 <dd>
 <p>The contents of the bridge's Uncorrectable Error Severity register.</p>
 </dd>
 
-### -field <b>CorrectableErrorMask</b>
+### -field CorrectableErrorMask
 
 <dd>
 <p>The contents of the bridge's Correctable Error Mask register.</p>
 </dd>
 
-### -field <b>AdvancedCapsAndControl</b>
+### -field AdvancedCapsAndControl
 
 <dd>
 <p>The contents of the bridge's Advanced Error Capabilities and Control register.</p>
 </dd>
 
-### -field <b>SecondaryUncorrectableErrorMask</b>
+### -field SecondaryUncorrectableErrorMask
 
 <dd>
 <p>The contents of the bridge's Secondary Uncorrectable Error Mask register.</p>
 </dd>
 
-### -field <b>SecondaryUncorrectableErrorSev</b>
+### -field SecondaryUncorrectableErrorSev
 
 <dd>
 <p>The contents of the bridge's Secondary Uncorrectable Error Severity register.</p>
 </dd>
 
-### -field <b>SecondaryCapsAndControl</b>
+### -field SecondaryCapsAndControl
 
 <dd>
 <p>The contents of the bridge's Secondary Error Capabilities and Control register.</p>

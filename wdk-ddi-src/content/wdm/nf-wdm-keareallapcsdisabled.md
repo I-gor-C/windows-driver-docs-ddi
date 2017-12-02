@@ -134,7 +134,7 @@ BOOLEAN KeAreAllApcsDisabled(void);
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-keareapcsdisabled.md">KeAreApcsDisabled</a>
+<a href="..\wdm\nf-wdm-keareapcsdisabled.md">KeAreApcsDisabled</a>
 </dt>
 </dl>
 <p> </p>

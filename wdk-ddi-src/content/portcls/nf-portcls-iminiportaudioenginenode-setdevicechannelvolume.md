@@ -56,19 +56,19 @@ NTSTATUS SetDeviceChannelVolume(
 ## -parameters
 <dl>
 
-### -param <i>ulNodeId</i> [in]
+### -param ulNodeId [in]
 
 <dd>
 <p>The ID for the node that represents the audio device.</p>
 </dd>
 
-### -param <i>ulChannel</i> [in]
+### -param ulChannel [in]
 
 <dd>
 <p>The audio device channel.</p>
 </dd>
 
-### -param <i>lVolume</i> [in]
+### -param lVolume [in]
 
 <dd>
 <p>The volume level to which the channel will be set.</p>

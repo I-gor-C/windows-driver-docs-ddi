@@ -57,25 +57,25 @@ typedef enum _STORAGE_PROTOCOL_NVME_DATA_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="NVMeDataTypeUnknown"></a><a id="nvmedatatypeunknown"></a><a id="NVMEDATATYPEUNKNOWN"></a><b>NVMeDataTypeUnknown</b>
+### -field NVMeDataTypeUnknown
 
 <dd>
 <p>Unknown data type.</p>
 </dd>
 
-### -field <a id="NVMeDataTypeIdentify"></a><a id="nvmedatatypeidentify"></a><a id="NVMEDATATYPEIDENTIFY"></a><b>NVMeDataTypeIdentify</b>
+### -field NVMeDataTypeIdentify
 
 <dd>
 <p>Identify data type. This can be either Identify Controller data or Identify Namespace data. When this type of data is being queried, the ProtocolDataRequestValue field of <a href="..\ntddstor\ns-ntddstor--storage-protocol-specific-data.md">STORAGE_PROTOCOL_SPECIFIC_DATA</a> will have a value of <b>NVME_IDENTIFY_CNS_CONTROLLER</b> for adapter or <b>NVME_IDENTIFY_CNS_SPECIFIC_NAMESPACE</b> for namespace. If the ProtocolDataRequestValue is <b>NVME_IDENTIFY_CNS_SPECIFIC_NAMESPACE</b>, the ProtocolDataRequestSubValue field from the <b>STORAGE_PROTOCOL_SPECIFIC_DATA</b> structure will have a value of the namespace ID.</p>
 </dd>
 
-### -field <a id="NVMeDataTypeLogPage"></a><a id="nvmedatatypelogpage"></a><a id="NVMEDATATYPELOGPAGE"></a><b>NVMeDataTypeLogPage</b>
+### -field NVMeDataTypeLogPage
 
 <dd>
 <p>Log page data type.</p>
 </dd>
 
-### -field <a id="NVMeDataTypeFeature"></a><a id="nvmedatatypefeature"></a><a id="NVMEDATATYPEFEATURE"></a><b>NVMeDataTypeFeature</b>
+### -field NVMeDataTypeFeature
 
 <dd>
 <p>Feature data type.</p>

@@ -69,91 +69,91 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>InfSize</b>
+### -field InfSize
 
 <dd>
 <p>Contains the current information field size to transmit. </p>
 </dd>
 
-### -field <b>BytesReceived</b>
+### -field BytesReceived
 
 <dd>
 <p>Contains the number of bytes already received from the smart card. </p>
 </dd>
 
-### -field <b>BytesSent</b>
+### -field BytesSent
 
 <dd>
 <p>Contains the number of bytes already sent to the smart card. </p>
 </dd>
 
-### -field <b>BytesToSend</b>
+### -field BytesToSend
 
 <dd>
 <p>Contains the total number of remaining bytes to send. </p>
 </dd>
 
-### -field <b>LastError</b>
+### -field LastError
 
 <dd>
 <p>Contains the T1 error code of the last received block. </p>
 </dd>
 
-### -field <b>NAD</b>
+### -field NAD
 
 <dd>
 <p>Contains the node address byte to send to the smart card. </p>
 </dd>
 
-### -field <b>PrevState</b>
+### -field PrevState
 
 <dd>
 <p>Contains the state before the error occurred. </p>
 </dd>
 
-### -field <b>Resend</b>
+### -field Resend
 
 <dd>
 <p>Contains the resend counter. </p>
 </dd>
 
-### -field <b>Resynch</b>
+### -field Resynch
 
 <dd>
 <p>Contains the resynch counter. </p>
 </dd>
 
-### -field <b>RSN</b>
+### -field RSN
 
 <dd>
 <p>Contains the number of sent I-Blocks, as defined in the <i>ISO 7816-3 Specification</i>. </p>
 </dd>
 
-### -field <b>SSN</b>
+### -field SSN
 
 <dd>
 <p>Contains the send sequence number (SSN). This member has a value of 0 or 1 as defined in the <i>ISO 7816-3 Specification</i>.</p>
 </dd>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>Contains the current state of the protocol. </p>
 </dd>
 
-### -field <b>Wtx</b>
+### -field Wtx
 
 <dd>
 <p>Contains the waiting time extension for a T=1 transmission. If nonzero, this is a multiplier for the block waiting time. Usually, the driver will time out if the block waiting time expires. Several smart card operations require more time. The smart card answers with a waiting time extension. Therefore, the block waiting time must be multiplied with the <b>Wtx</b> value. If this value is nonzero, it applies as a waiting extension. </p>
 </dd>
 
-### -field <b>ReplyData</b>
+### -field ReplyData
 
 <dd>
 <p>A pointer to the buffer that contains the result of the operation. </p>
 </dd>
 
-### -field <b>WaitForReply</b>
+### -field WaitForReply
 
 <dd>
 <p>If <b>TRUE</b>, execute the operation synchronously.</p>

@@ -60,37 +60,37 @@ typedef enum _URS_HARDWARE_EVENT {
 ## -enum-fields
 <dl>
 
-### -field <a id="UrsHardwareEventNone"></a><a id="urshardwareeventnone"></a><a id="URSHARDWAREEVENTNONE"></a><b>UrsHardwareEventNone</b>
+### -field UrsHardwareEventNone
 
 <dd>
 <p>Internal use only. </p>
 </dd>
 
-### -field <a id="UrsHardwareEventDetach"></a><a id="urshardwareeventdetach"></a><a id="URSHARDWAREEVENTDETACH"></a><b>UrsHardwareEventDetach</b>
+### -field UrsHardwareEventDetach
 
 <dd>
 <p>A detach event occurred on a port of a USB Type-C system. </p>
 </dd>
 
-### -field <a id="UrsHardwareEventIdGround"></a><a id="urshardwareeventidground"></a><a id="URSHARDWAREEVENTIDGROUND"></a><b>UrsHardwareEventIdGround</b>
+### -field UrsHardwareEventIdGround
 
 <dd>
 <p>This event indicates that the ID pin is grounded.</p>
 </dd>
 
-### -field <a id="UrsHardwareEventIdFloat"></a><a id="urshardwareeventidfloat"></a><a id="URSHARDWAREEVENTIDFLOAT"></a><b>UrsHardwareEventIdFloat</b>
+### -field UrsHardwareEventIdFloat
 
 <dd>
 <p>This event indicates that the ID pin is floating.</p>
 </dd>
 
-### -field <a id="UrsHardwareEventPortTypeDfp"></a><a id="urshardwareeventporttypedfp"></a><a id="URSHARDWAREEVENTPORTTYPEDFP"></a><b>UrsHardwareEventPortTypeDfp</b>
+### -field UrsHardwareEventPortTypeDfp
 
 <dd>
 <p>The Type-C connector has resolved to DFP. Not to be used directly by the URS client driver.</p>
 </dd>
 
-### -field <a id="UrsHardwareEventPortTypeUfp"></a><a id="urshardwareeventporttypeufp"></a><a id="URSHARDWAREEVENTPORTTYPEUFP"></a><b>UrsHardwareEventPortTypeUfp</b>
+### -field UrsHardwareEventPortTypeUfp
 
 <dd>
 <p>The Type-C connector has resolved to UFP. Not to be used directly by the URS client driver.</p>
@@ -98,7 +98,7 @@ typedef enum _URS_HARDWARE_EVENT {
 </dl>
 
 ## -remarks
-<p>Values defined for USB Type-C systems should not be directly used by the client driver. Instead the driver should report that it does not support hardware event reporting by calling <a href="buses.urssethardwareeventsupport">UrsSetHardwareEventSupport</a>. These hardware events are detected by a USB Type-C connector driver, see <a href="buses.usb_connection_manager_class_extension__ucmcx_">USB Type-C connector driver programming reference</a>. </p>
+<p>Values defined for USB Type-C systems should not be directly used by the client driver. Instead the driver should report that it does not support hardware event reporting by calling <a href="..\ursdevice\nf-ursdevice-urssethardwareeventsupport.md">UrsSetHardwareEventSupport</a>. These hardware events are detected by a USB Type-C connector driver, see <a href="buses.usb_connection_manager_class_extension__ucmcx_">USB Type-C connector driver programming reference</a>. </p>
 
 ## -requirements
 <table>

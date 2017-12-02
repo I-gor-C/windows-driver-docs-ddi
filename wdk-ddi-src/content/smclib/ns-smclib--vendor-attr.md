@@ -73,7 +73,7 @@ typedef struct _VENDOR_ATTR {
 ## -struct-fields
 <dl>
 
-### -field <b>VendorName</b>
+### -field VendorName
 
 <dd>
 <p>
@@ -82,13 +82,13 @@ typedef struct _VENDOR_ATTR {
      </p>
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Contains the ANSI-coded name of the vendor. Because a length field is provided, no terminating <b>NULL</b> character is necessary. This member is required. </p>
 </dd>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>Contains the length of the ANSI-coded name of the vendor. This member is required. </p>
@@ -96,7 +96,7 @@ typedef struct _VENDOR_ATTR {
 </dl>
 </dd>
 
-### -field <b>IfdType</b>
+### -field IfdType
 
 <dd>
 <p>
@@ -105,13 +105,13 @@ typedef struct _VENDOR_ATTR {
      </p>
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Contains the length of the ANSI-coded designation of the reader. This member is required. </p>
 </dd>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>Contains the ANSI-coded reader name. This member is required. 
@@ -120,13 +120,13 @@ typedef struct _VENDOR_ATTR {
 </dl>
 </dd>
 
-### -field <b>UnitNo</b>
+### -field UnitNo
 
 <dd>
 <p>Contains the zero-based number of this unit. Because you can have more than one reader of this kind installed, <b>UnitNo</b> can distinguish the readers. This member is required. </p>
 </dd>
 
-### -field <b>IfdVersion</b>
+### -field IfdVersion
 
 <dd>
 <p>
@@ -135,19 +135,19 @@ typedef struct _VENDOR_ATTR {
      </p>
 <dl>
 
-### -field <b>BuildNumber</b>
+### -field BuildNumber
 
 <dd>
 <p>Contains the build number of the reader driver. This member can be used for support purposes and should be maintained only if the reader allows the value to be queried. This member is optional. </p>
 </dd>
 
-### -field <b>VersionMinor</b>
+### -field VersionMinor
 
 <dd>
 <p>Contains the minor version number of the reader driver. This member can be used for support purposes and should be maintained only if the reader allows the value to be queried. This member is optional. </p>
 </dd>
 
-### -field <b>VersionMajor</b>
+### -field VersionMajor
 
 <dd>
 <p>Contains the major version number of the reader driver. This member can be used for support purposes and should be maintained only if the reader allows the value to be queried. This member is optional. </p>
@@ -155,7 +155,7 @@ typedef struct _VENDOR_ATTR {
 </dl>
 </dd>
 
-### -field <b>IfdSerialNo</b>
+### -field IfdSerialNo
 
 <dd>
 <p>
@@ -164,13 +164,13 @@ typedef struct _VENDOR_ATTR {
      </p>
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Contains the length of the serial number, in bytes, of the connected reader. </p>
 </dd>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>A pointer to the serial number of the connected reader. This field should only be maintained if the reader allows the serial number to be queried. This member is optional. </p>
@@ -178,7 +178,7 @@ typedef struct _VENDOR_ATTR {
 </dl>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. </p>

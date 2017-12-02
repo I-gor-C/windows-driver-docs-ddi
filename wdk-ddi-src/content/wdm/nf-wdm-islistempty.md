@@ -55,7 +55,7 @@ BOOLEAN IsListEmpty(
 ## -parameters
 <dl>
 
-### -param <i>ListHead</i> [in]
+### -param ListHead [in]
 
 <dd>
 <p>Pointer to a <a href="kernel.list_entry">LIST_ENTRY</a> structure that represents the head of the list. </p>

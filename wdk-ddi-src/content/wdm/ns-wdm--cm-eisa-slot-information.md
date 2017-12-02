@@ -62,7 +62,7 @@ typedef struct _CM_EISA_SLOT_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>ReturnCode</b>
+### -field ReturnCode
 
 <dd>
 <p>Contains a status code if an error occurs when the EISA BIOS is queried. Possible status codes include the following:</p>
@@ -75,43 +75,43 @@ typedef struct _CM_EISA_SLOT_INFORMATION {
 </ul>
 </dd>
 
-### -field <b>ReturnFlags</b>
+### -field ReturnFlags
 
 <dd>
 <p>The return flags.</p>
 </dd>
 
-### -field <b>MajorRevision</b>
+### -field MajorRevision
 
 <dd>
 <p>Information supplied by the manufacturer.</p>
 </dd>
 
-### -field <b>MinorRevision</b>
+### -field MinorRevision
 
 <dd>
 <p>Information supplied by the manufacturer.</p>
 </dd>
 
-### -field <b>Checksum</b>
+### -field Checksum
 
 <dd>
 <p>The checksum value, allowing validation of the configuration data.</p>
 </dd>
 
-### -field <b>NumberFunctions</b>
+### -field NumberFunctions
 
 <dd>
 <p>The number at this slot.</p>
 </dd>
 
-### -field <b>FunctionInformation</b>
+### -field FunctionInformation
 
 <dd>
 <p>Whether there is available <a href="..\wdm\ns-wdm--cm-eisa-function-information.md">CM_EISA_FUNCTION_INFORMATION</a> for this slot.</p>
 </dd>
 
-### -field <b>CompressedId</b>
+### -field CompressedId
 
 <dd>
 <p>The EISA compressed identification of the device at this slot. This value is identical to the <b>CompressedId</b> member of the <b>CM_EISA_FUNCTION_INFORMATION</b> structure. This member can be read to determine whether the caller should call <b>HalGetBusData</b> or <b>HalGetBusDataByOffset</b> again with sufficient buffer space to get more detailed <b>CM_EISA_FUNCTION_INFORMATION</b> for a device it supports.</p>

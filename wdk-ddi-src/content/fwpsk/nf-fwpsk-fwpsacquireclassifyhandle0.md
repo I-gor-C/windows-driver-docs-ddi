@@ -7,7 +7,7 @@ old-location: netvista\fwpsacquireclassifyhandle0.htm
 old-project: netvista
 ms.assetid: 7348d937-6541-47a7-ae70-7d851d41bc1a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsAcquireClassifyHandle0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ NTSTATUS NTAPI FwpsAcquireClassifyHandle0(
 ## -parameters
 <dl>
 
-### -param <i>classifyContext</i> [in]
+### -param classifyContext [in]
 
 <dd>
 <p>The 
@@ -68,13 +68,13 @@ NTSTATUS NTAPI FwpsAcquireClassifyHandle0(
      <a href="netvista.classifyfn">classifyFn</a>.</p>
 </dd>
 
-### -param <i>flags</i> [in]
+### -param flags [in]
 
 <dd>
 <p>Reserved for future use. Set to 0.</p>
 </dd>
 
-### -param <i>classifyHandle</i> [out]
+### -param classifyHandle [out]
 
 <dd>
 <p>A pointer to a variable that receives a classification handle. This handle is needed by subsequent
@@ -194,4 +194,4 @@ NTSTATUS NTAPI FwpsAcquireClassifyHandle0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAcquireClassifyHandle0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAcquireClassifyHandle0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

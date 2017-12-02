@@ -65,7 +65,7 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="IDDCX_TRANSMISSION_TYPE_UNINITIALIZED"></a><a id="iddcx_transmission_type_uninitialized"></a><b>IDDCX_TRANSMISSION_TYPE_UNINITIALIZED</b>
+### -field IDDCX_TRANSMISSION_TYPE_UNINITIALIZED
 
 <dd>
 <p>
@@ -73,7 +73,7 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                     Indicates that an <b>IDDCX_TRANSMISSION_TYPE</b> variable has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="IDDCX_TRANSMISSION_TYPE_WIRED_USB"></a><a id="iddcx_transmission_type_wired_usb"></a><b>IDDCX_TRANSMISSION_TYPE_WIRED_USB</b>
+### -field IDDCX_TRANSMISSION_TYPE_WIRED_USB
 
 <dd>
 <p>
@@ -81,7 +81,7 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_TRANSMISSION_TYPE_WIRED_MIRACAST"></a><a id="iddcx_transmission_type_wired_miracast"></a><b>IDDCX_TRANSMISSION_TYPE_WIRED_MIRACAST</b>
+### -field IDDCX_TRANSMISSION_TYPE_WIRED_MIRACAST
 
 <dd>
 <p>
@@ -89,7 +89,7 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_TRANSMISSION_TYPE_WIRED_OTHER"></a><a id="iddcx_transmission_type_wired_other"></a><b>IDDCX_TRANSMISSION_TYPE_WIRED_OTHER</b>
+### -field IDDCX_TRANSMISSION_TYPE_WIRED_OTHER
 
 <dd>
 <p>
@@ -97,7 +97,7 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_TRANSMISSION_TYPE_WIRELESS_MAUSB"></a><a id="iddcx_transmission_type_wireless_mausb"></a><b>IDDCX_TRANSMISSION_TYPE_WIRELESS_MAUSB</b>
+### -field IDDCX_TRANSMISSION_TYPE_WIRELESS_MAUSB
 
 <dd>
 <p>
@@ -105,7 +105,7 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_TRANSMISSION_TYPE_WIRELESS_USB_OTHER"></a><a id="iddcx_transmission_type_wireless_usb_other"></a><b>IDDCX_TRANSMISSION_TYPE_WIRELESS_USB_OTHER</b>
+### -field IDDCX_TRANSMISSION_TYPE_WIRELESS_USB_OTHER
 
 <dd>
 <p>
@@ -113,7 +113,7 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_TRANSMISSION_TYPE_WIRELESS_WIFI_OTHER"></a><a id="iddcx_transmission_type_wireless_wifi_other"></a><b>IDDCX_TRANSMISSION_TYPE_WIRELESS_WIFI_OTHER</b>
+### -field IDDCX_TRANSMISSION_TYPE_WIRELESS_WIFI_OTHER
 
 <dd>
 <p>
@@ -121,7 +121,7 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_TRANSMISSION_TYPE_WIRELESS_MIRACAST"></a><a id="iddcx_transmission_type_wireless_miracast"></a><b>IDDCX_TRANSMISSION_TYPE_WIRELESS_MIRACAST</b>
+### -field IDDCX_TRANSMISSION_TYPE_WIRELESS_MIRACAST
 
 <dd>
 <p>
@@ -129,7 +129,7 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_TRANSMISSION_TYPE_WIRELESS_OTHER"></a><a id="iddcx_transmission_type_wireless_other"></a><b>IDDCX_TRANSMISSION_TYPE_WIRELESS_OTHER</b>
+### -field IDDCX_TRANSMISSION_TYPE_WIRELESS_OTHER
 
 <dd>
 <p>
@@ -137,7 +137,7 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_TRANSMISSION_TYPE_OTHER"></a><a id="iddcx_transmission_type_other"></a><b>IDDCX_TRANSMISSION_TYPE_OTHER</b>
+### -field IDDCX_TRANSMISSION_TYPE_OTHER
 
 <dd>
 <p>

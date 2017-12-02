@@ -7,7 +7,7 @@ old-location: ieee\irb_req_get_max_speed_between_devices.htm
 old-project: IEEE
 ms.assetid: 7B296D94-32DB-4190-935F-F1CC5F566706
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_GET_MAX_SPEED_BETWEEN_DEVICES, IRB_REQ_GET_MAX_SPEED_BETWEEN_DEVICES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct _IRB_REQ_GET_MAX_SPEED_BETWEEN_DEVICES {
 ## -struct-fields
 <dl>
 
-### -field <b>fulFlags</b>
+### -field fulFlags
 
 <dd>
 <p>Specifies the source device. Zero indicates the calling device. USE_LOCAL_NODE indicates the computer itself.</p>
@@ -65,19 +65,19 @@ typedef struct _IRB_REQ_GET_MAX_SPEED_BETWEEN_DEVICES {
 <div> </div>
 </dd>
 
-### -field <b>ulNumberOfDestinations</b>
+### -field ulNumberOfDestinations
 
 <dd>
 <p>Specifies the number of destination devices.</p>
 </dd>
 
-### -field <b>hDestinationDeviceObjects</b>
+### -field hDestinationDeviceObjects
 
 <dd>
 <p>Points to an array of the device objects of the destination devices.</p>
 </dd>
 
-### -field <b>fulSpeed</b>
+### -field fulSpeed
 
 <dd>
 <p>Specifies the maximum speed returned.</p>

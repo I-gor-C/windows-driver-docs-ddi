@@ -56,19 +56,19 @@ NTSTATUS Write(
 ## -parameters
 <dl>
 
-### -param <i>BufferAddress</i> [in]
+### -param BufferAddress [in]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that contains the outgoing MIDI data</p>
 </dd>
 
-### -param <i>BytesToWrite</i> [in]
+### -param BytesToWrite [in]
 
 <dd>
 <p>Specifies the number of bytes of MIDI data contained in the buffer that <i>BufferAddress</i> points to.</p>
 </dd>
 
-### -param <i>BytesWritten</i> [out]
+### -param BytesWritten [out]
 
 <dd>
 <p>Output pointer to a caller-allocated variable into which the method writes a count specifying the actual number of bytes that the method succeeded in writing to the MIDI output device. For more information, see the following Remarks section.</p>

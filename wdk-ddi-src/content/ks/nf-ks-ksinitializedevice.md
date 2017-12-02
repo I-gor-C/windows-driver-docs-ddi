@@ -57,26 +57,26 @@ NTSTATUS KsInitializeDevice(
 ## -parameters
 <dl>
 
-### -param <i>FunctionalDeviceObject</i> [in]
+### -param FunctionalDeviceObject [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure representing the WDM functional device object for the device being initialized. </p>
 <p>Normally, this is returned from an <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> call. Minidrivers calling this function directly are responsible for calling <b>IoCreateDevice</b> and attaching themselves to the device stack.</p>
 </dd>
 
-### -param <i>PhysicalDeviceObject</i> [in]
+### -param PhysicalDeviceObject [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure representing the WDM physical device object for the device being initialized.</p>
 </dd>
 
-### -param <i>NextDeviceObject</i> [in]
+### -param NextDeviceObject [in]
 
 <dd>
 <p>A pointer to the next <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure in the device stack as determined by a call to <a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>.</p>
 </dd>
 
-### -param <i>Descriptor</i> [in, optional]
+### -param Descriptor [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksdevice-descriptor.md">KSDEVICE_DESCRIPTOR</a> structure that describes the characteristics of the device being initialized. If this parameter is <b>NULL</b>, the device is initialized with the default characteristics and has no associated filter factories.</p>

@@ -54,7 +54,7 @@ PVOID MmAllocateNonCachedMemory(
 ## -parameters
 <dl>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>Specifies the size in bytes of the range to be allocated. </p>

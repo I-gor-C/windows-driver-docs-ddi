@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest_getcreateparameters.htm
 old-project: wdf
 ms.assetid: 1bc6eed2-c6bd-448f-8f78-630cca4cd29a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFIoRequest, GetCreateParameters, IWDFIoRequest::GetCreateParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ void GetCreateParameters(
 ## -parameters
 <dl>
 
-### -param <i>pOptions</i> [out, optional]
+### -param pOptions [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives a bitmask of flags that specify the options that are applied when creating or opening the file that is associated with the request and the action to be taken if the file already exists.</p>
@@ -67,14 +67,14 @@ void GetCreateParameters(
 <p>This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information. </p>
 </dd>
 
-### -param <i>pFileAttributes</i> [out, optional]
+### -param pFileAttributes [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives a bitmask of attribute flags that is applied when creating or opening the file that is associated with the request. Explicitly specified attributes are applied only when the file is created, superseded, or, in some situations, overwritten. By default, the single FILE_ATTRIBUTE_NORMAL flag is specified. However, this flag can be overridden by any other flag or by a bitwise OR combination of compatible flags. The bitmask of attribute flags corresponds to the <i>FileAttributes</i> parameter of <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>.</p>
 <p>This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information. </p>
 </dd>
 
-### -param <i>pShareAccess</i> [out, optional]
+### -param pShareAccess [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives a bitmask of flags that specify the share access rights that are requested for the file that is associated with the request. If the received bitmask is zero, exclusive access is being requested. For more information about share access, see the description of the <i>ShareAccess</i> parameter of <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>.</p>
@@ -149,4 +149,4 @@ void GetCreateParameters(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::GetCreateParameters method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::GetCreateParameters method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

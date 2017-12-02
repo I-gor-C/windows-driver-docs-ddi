@@ -60,26 +60,26 @@ typedef struct _USB_PORT_CONNECTOR_PROPERTIES {
 ## -struct-fields
 <dl>
 
-### -field <b>ConnectionIndex</b>
+### -field ConnectionIndex
 
 <dd>
 <p>The port number being queried in the request. <b>ConnectionIndex</b> is specified by the caller. If there are <i>n</i> ports on the SuperSpeed hub, the ports are numbered from 1 to <i>n</i>. To get the number of ports, the caller first sends an <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-hub-information-ex.md">IOCTL_USB_GET_HUB_INFORMATION_EX</a> I/O control request. The request retrieves the highest port number on the hub.</p>
 </dd>
 
-### -field <b>ActualLength</b>
+### -field ActualLength
 
 <dd>
 <p>The number of bytes required to hold the entire <b>USB_PORT_CONNECTOR_PROPERTIES</b>
     structure including the string that contains the symbolic link name of the companion hub. That string is stored in the <b>CompanionHubSymbolicLinkName</b> member. The <b>ActualLength</b> value is returned by the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-port-connector-properties.md">IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES</a> request and used by the caller to allocate a buffer to hold the received information. For details, see <b>IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES</b>. </p>
 </dd>
 
-### -field <b>UsbPortProperties</b>
+### -field UsbPortProperties
 
 <dd>
 <p>The port properties. Upon completion of the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-port-connector-properties.md">IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES</a> request, <b>UsbPortProperties</b> contains a bitwise <b>OR</b> of one or more flags indicating the properties and capabilities of the port. The flags are defined in <a href="..\usbioctl\ns-usbioctl--usb-port-properties.md">USB_PORT_PROPERTIES</a>.</p>
 </dd>
 
-### -field <b>CompanionIndex</b>
+### -field CompanionIndex
 
 <dd>
 <p>The index of the companion port that is associated with the port being queried (specified by <b>ConnectionIndex</b>). If there are <i>n</i> companion ports, those ports are indexed from 0 to <i>n</i>–1.</p>
@@ -87,7 +87,7 @@ typedef struct _USB_PORT_CONNECTOR_PROPERTIES {
 <p>For SuperSpeed hubs and xHCI controllers, <b>CompanionIndex</b> is always 0. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>CompanionPortNumber</b>
+### -field CompanionPortNumber
 
 <dd>
 <p>The port number of the companion port that is given by <b>CompanionIndex</b>. If the port being queried shares a USB connector with a port on another hub,  <b>CompanionPortNumber</b> indicates the port number of the port on the other hub. </p>
@@ -95,7 +95,7 @@ typedef struct _USB_PORT_CONNECTOR_PROPERTIES {
 <div> </div>
 </dd>
 
-### -field <b>CompanionHubSymbolicLinkName</b>
+### -field CompanionHubSymbolicLinkName
 
 <dd>
 <p>The Unicode string that contains the symbolic link  of the companion hub that shares the USB connector. If a companion hub exists, <b>CompanionPortNumber</b> is nonzero. Otherwise, <b>CompanionHubSymbolicLinkName [0]</b> is <b>NULL</b>.</p>

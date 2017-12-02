@@ -58,13 +58,13 @@ BOOL APIENTRY* Flush(D3D11_1)(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>FlushFlags</i> [in]
+### -param FlushFlags [in]
 
 <dd>
 <p> A value from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1-ddi-flush-flags.md">D3D11_1_DDI_FLUSH_FLAGS</a> enumeration that indicates whether the driver should  continue to submit command buffers if there have been no new commands.</p>

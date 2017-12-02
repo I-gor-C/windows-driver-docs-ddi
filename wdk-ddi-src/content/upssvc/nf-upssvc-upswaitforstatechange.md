@@ -56,32 +56,32 @@ void UPSWaitForStateChange(
 ## -parameters
 <dl>
 
-### -param <i>aCurrentState</i> [in]
+### -param aCurrentState [in]
 
 <dd>
 <p>Specifies the UPS state on which to wait. When the state of the UPS system changes from the specified state to any other state, the function returns. The specified value can be one of the following:</p>
 <p></p>
 <dl>
 
-### -param <a id="UPS_ONLINE_"></a><a id="ups_online_"></a>UPS_ONLINE 
+### -param UPS_ONLINE 
 
 <dd>
 <p>Utility-supplied power is normal.</p>
 </dd>
 
-### -param <a id="UPS_ONBATTERY"></a><a id="ups_onbattery"></a>UPS_ONBATTERY
+### -param UPS_ONBATTERY
 
 <dd>
 <p>Utility-supplied power is inadequate, and the UPS batteries are discharging.</p>
 </dd>
 
-### -param <a id="UPS_LOWBATTERY"></a><a id="ups_lowbattery"></a>UPS_LOWBATTERY
+### -param UPS_LOWBATTERY
 
 <dd>
 <p>Utility-supplied power is inadequate, and the UPS batteries are critically low.</p>
 </dd>
 
-### -param <a id="UPS_NOCOMM"></a><a id="ups_nocomm"></a>UPS_NOCOMM
+### -param UPS_NOCOMM
 
 <dd>
 <p>Communication with the UPS is not currently established.</p>
@@ -89,7 +89,7 @@ void UPSWaitForStateChange(
 </dl>
 </dd>
 
-### -param <i>anInterval</i> [in]
+### -param anInterval [in]
 
 <dd>
 <p>Specifies a time-out interval, in milliseconds, for the function. If the UPS state has not changed from the specified state when the interval elapses, the function returns. A value of INFINITE means the interval never elapses.</p>

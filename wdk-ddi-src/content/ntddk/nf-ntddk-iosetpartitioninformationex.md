@@ -56,19 +56,19 @@ NTSTATUS IoSetPartitionInformationEx(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object representing the device on which the partition type is to be set.</p>
 </dd>
 
-### -param <i>PartitionNumber</i> [in]
+### -param PartitionNumber [in]
 
 <dd>
 <p>Specifies the partition number on the device whose partition type is to be set.</p>
 </dd>
 
-### -param <i>PartitionInfo</i> [in]
+### -param PartitionInfo [in]
 
 <dd>
 <p>A structure whose <i>PartitionType</i> member specifies the type for the partition. For the currently defined <i>PartitionType</i> values <a href="..\ntdddisk\ns-ntdddisk--partition-information.md">PARTITION_INFORMATION</a>.</p>

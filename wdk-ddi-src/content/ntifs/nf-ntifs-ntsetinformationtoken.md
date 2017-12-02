@@ -57,19 +57,19 @@ NTSTATUS ZwSetInformationToken(
 ## -parameters
 <dl>
 
-### -param <i>TokenHandle</i> [in]
+### -param TokenHandle [in]
 
 <dd>
 <p>Handle for an access token in which information is to be modified. </p>
 </dd>
 
-### -param <i>TokenInformationClass</i> [in]
+### -param TokenInformationClass [in]
 
 <dd>
 <p>A value from the <a href="..\ntifs\ne-ntifs--token-information-class.md">TOKEN_INFORMATION_CLASS</a> enumerated type identifying the type of information to be modified. The possible values for this parameter are listed in the <i>TokenInformationClass</i> Value column of the table shown in the description of the <i>TokenInformation</i> parameter. </p>
 </dd>
 
-### -param <i>TokenInformation</i> [in]
+### -param TokenInformation [in]
 
 <dd>
 <p>Pointer to a caller-supplied buffer containing the information to be modified in the token. The structure of the information in this buffer depends upon the value of <i>TokenInformationClass</i>, as shown in the following table. All structures must be aligned on a 32-bit boundary. </p>
@@ -146,7 +146,7 @@ NTSTATUS ZwSetInformationToken(
 <p> </p>
 </dd>
 
-### -param <i>TokenInformationLength</i> [in]
+### -param TokenInformationLength [in]
 
 <dd>
 <p>Size, in bytes, of the structure passed in the <i>TokenInformation</i> buffer. Must be greater than or equal to the minimum value given in the following table. </p>

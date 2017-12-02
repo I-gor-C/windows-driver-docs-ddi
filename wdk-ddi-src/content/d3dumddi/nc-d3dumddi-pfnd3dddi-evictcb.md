@@ -58,13 +58,13 @@ HRESULT APIENTRY CALLBACK* pfnEvictCb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device.</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicb-evict.md">D3DDDICB_EVICT</a> structure that describes the memory pages to evict.

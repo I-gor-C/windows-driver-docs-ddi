@@ -58,25 +58,25 @@ VOID USBCAMD_Debug_LogEntry(
 ## -parameters
 <dl>
 
-### -param <i>Name</i> [in]
+### -param Name [in]
 
 <dd>
 <p>Pointer to a <b>NULL</b>-terminated string containing the name of the file to write the log entry to.</p>
 </dd>
 
-### -param <i>Info1</i> [in]
+### -param Info1 [in]
 
 <dd>
 <p>Specifies the first information value to be written to the log file.</p>
 </dd>
 
-### -param <i>Info2</i> [in]
+### -param Info2 [in]
 
 <dd>
 <p>Specifies the second information value to be written to the log file.</p>
 </dd>
 
-### -param <i>Info3</i> [in]
+### -param Info3 [in]
 
 <dd>
 <p>Specifies the third information value to be written to the log file.</p>

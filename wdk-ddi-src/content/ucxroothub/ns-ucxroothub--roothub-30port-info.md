@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Provides information about a USB 3.0 root hub port. This structure is passed by UCX in the <a href="buses.evt_ucx_roothub_get_30port_info">EVT_UCX_ROOTHUB_GET_30PORT_INFO</a> callback function.</p>
+<p>Provides information about a USB 3.0 root hub port. This structure is passed by UCX in the <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-get-30port-info.md">EVT_UCX_ROOTHUB_GET_30PORT_INFO</a> callback function.</p>
 
 
 ## -syntax
@@ -59,34 +59,34 @@ typedef struct _ROOTHUB_30PORT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>The USB 3.0 port number connected to the root hub.</p>
 </dd>
 
-### -field <b>MinorRevision</b>
+### -field MinorRevision
 
 <dd>
 <p>Revision number.</p>
 </dd>
 
-### -field <b>HubDepth</b>
+### -field HubDepth
 
 <dd>
 <p>The hub depth limit.</p>
 </dd>
 
-### -field <b>Removable</b>
+### -field Removable
 
 <dd>
-<p>A <a href="buses.tristate">TRISTATE</a> value that indicates if the port is removable. </p>
+<p>A <a href="..\ucxroothub\ne-ucxroothub--tristate.md">TRISTATE</a> value that indicates if the port is removable. </p>
 </dd>
 
-### -field <b>DebugCapable</b>
+### -field DebugCapable
 
 <dd>
-<p>A <a href="buses.tristate">TRISTATE</a> value that indicates if the port is debug capable. </p>
+<p>A <a href="..\ucxroothub\ne-ucxroothub--tristate.md">TRISTATE</a> value that indicates if the port is debug capable. </p>
 </dd>
 </dl>
 

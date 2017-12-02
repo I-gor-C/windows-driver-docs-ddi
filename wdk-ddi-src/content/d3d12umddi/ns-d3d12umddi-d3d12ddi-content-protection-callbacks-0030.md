@@ -54,7 +54,7 @@ typedef struct _D3D12DDI_CONTENT_PROTECTION_CALLBACKS_0030 {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnCreateProtectedSessionCB</b>
+### -field pfnCreateProtectedSessionCB
 
 <dd>
 <p>Create protected session callback.</p>

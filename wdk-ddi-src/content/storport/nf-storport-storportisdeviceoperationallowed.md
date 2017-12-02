@@ -58,19 +58,19 @@ ULONG StorPortIsDeviceOperationAllowed(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Address</i> [in]
+### -param Address [in]
 
 <dd>
 <p>The address of a storage device unit.</p>
 </dd>
 
-### -param <i>DeviceOperation</i> [in]
+### -param DeviceOperation [in]
 
 <dd>
 <p>A pointer to a GUID specifying a device management operation class. The following GUID is valid.</p>
@@ -82,7 +82,7 @@ ULONG StorPortIsDeviceOperationAllowed(
 <tr>
 <td width="40%"><a id="STORPORT_DEVICEOPERATION_SECURE_REPROVISION_GUID"></a><a id="storport_deviceoperation_secure_reprovision_guid"></a><dl>
 
-### -param <b>STORPORT_DEVICEOPERATION_SECURE_REPROVISION_GUID</b>
+### -param STORPORT_DEVICEOPERATION_SECURE_REPROVISION_GUID
 
 </dl>
 </td>
@@ -94,7 +94,7 @@ ULONG StorPortIsDeviceOperationAllowed(
 <p> </p>
 </dd>
 
-### -param <i>AllowedFlag</i> [out]
+### -param AllowedFlag [out]
 
 <dd>
 <p> TRUE when the operation specified in <i>DeviceOperation</i> is allowed. Otherwise, FALSE.</p>

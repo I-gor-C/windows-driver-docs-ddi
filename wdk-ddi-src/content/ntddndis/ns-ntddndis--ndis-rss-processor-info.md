@@ -7,7 +7,7 @@ old-location: netvista\ndis_rss_processor_info.htm
 old-project: netvista
 ms.assetid: 7f40a815-0247-428c-a46f-d3cdbf7e8058
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_RSS_PROCESSOR_INFO, NDIS_RSS_PROCESSOR_INFO, *PNDIS_RSS_PROCESSOR_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ typedef struct _NDIS_RSS_PROCESSOR_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -102,13 +102,13 @@ typedef struct _NDIS_RSS_PROCESSOR_INFO {
 <p> </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved. NDIS sets this member to zero.</p>
 </dd>
 
-### -field <b>RssBaseProcessor</b>
+### -field RssBaseProcessor
 
 <dd>
 <p>The starting processor number that is used for RSS. </p>
@@ -116,19 +116,19 @@ typedef struct _NDIS_RSS_PROCESSOR_INFO {
 <div> </div>
 </dd>
 
-### -field <b>MaxNumRssProcessors</b>
+### -field MaxNumRssProcessors
 
 <dd>
 <p>The maximum number of processors that are used for RSS</p>
 </dd>
 
-### -field <b>PreferredNumaNode</b>
+### -field PreferredNumaNode
 
 <dd>
 <p>The preferred NUMA node, which is the node closest to the NIC</p>
 </dd>
 
-### -field <b>RssProcessorArrayOffset</b>
+### -field RssProcessorArrayOffset
 
 <dd>
 <p>The offset, in bytes, from the start of the structure to an array of 
@@ -139,27 +139,27 @@ typedef struct _NDIS_RSS_PROCESSOR_INFO {
      array.</p>
 </dd>
 
-### -field <b>RssProcessorCount</b>
+### -field RssProcessorCount
 
 <dd>
 <p>The number of elements in the array of <a href="..\ntddndis\ns-ntddndis--ndis-rss-processor.md">NDIS_RSS_PROCESSOR</a> structures that follows this
      structure.</p>
 </dd>
 
-### -field <b>RssProcessorEntrySize</b>
+### -field RssProcessorEntrySize
 
 <dd>
 <p>The size, in bytes, of elements in the array of <a href="..\ntddndis\ns-ntddndis--ndis-rss-processor.md">NDIS_RSS_PROCESSOR</a> structures that follows this
      structure.</p>
 </dd>
 
-### -field <b>RssMaxProcessor</b>
+### -field RssMaxProcessor
 
 <dd>
 <p>The maximum processor number that is used for RSS.</p>
 </dd>
 
-### -field <b>RssProfile</b>
+### -field RssProfile
 
 <dd>
 <p>Reserved.</p>
@@ -213,4 +213,4 @@ typedef struct _NDIS_RSS_PROCESSOR_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSS_PROCESSOR_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSS_PROCESSOR_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

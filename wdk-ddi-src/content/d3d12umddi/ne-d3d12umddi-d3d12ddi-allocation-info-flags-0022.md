@@ -57,25 +57,25 @@ typedef enum D3D12DDI_ALLOCATION_INFO_FLAGS_0022 {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_ALLOCATION_INFO_FLAGS_0022_NONE"></a><a id="d3d12ddi_allocation_info_flags_0022_none"></a><b>D3D12DDI_ALLOCATION_INFO_FLAGS_0022_NONE</b>
+### -field D3D12DDI_ALLOCATION_INFO_FLAGS_0022_NONE
 
 <dd>
 <p>No allocation information flag.</p>
 </dd>
 
-### -field <a id="D3D12DDI_ALLOCATION_INFO_FLAGS_0022_PRIMARY"></a><a id="d3d12ddi_allocation_info_flags_0022_primary"></a><b>D3D12DDI_ALLOCATION_INFO_FLAGS_0022_PRIMARY</b>
+### -field D3D12DDI_ALLOCATION_INFO_FLAGS_0022_PRIMARY
 
 <dd>
 <p>A primary value. </p>
 </dd>
 
-### -field <a id="D3D12DDI_ALLOCATION_INFO_FLAGS_0022_STEREO"></a><a id="d3d12ddi_allocation_info_flags_0022_stereo"></a><b>D3D12DDI_ALLOCATION_INFO_FLAGS_0022_STEREO</b>
+### -field D3D12DDI_ALLOCATION_INFO_FLAGS_0022_STEREO
 
 <dd>
 <p>A stereo value.</p>
 </dd>
 
-### -field <a id="D3D12DDI_ALLOCATION_INFO_FLAGS_0022_OVERRIDE_PRIORITY"></a><a id="d3d12ddi_allocation_info_flags_0022_override_priority"></a><b>D3D12DDI_ALLOCATION_INFO_FLAGS_0022_OVERRIDE_PRIORITY</b>
+### -field D3D12DDI_ALLOCATION_INFO_FLAGS_0022_OVERRIDE_PRIORITY
 
 <dd>
 <p>An override priority. </p>

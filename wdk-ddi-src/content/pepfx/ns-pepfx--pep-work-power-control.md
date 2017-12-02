@@ -60,43 +60,43 @@ typedef struct _PEP_WORK_POWER_CONTROL {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>A POHANDLE value that identifies the processor. The PEP received this handle in a previous <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>PowerControlCode</b>
+### -field PowerControlCode
 
 <dd>
 <p>[in] A pointer to a <a href="http://msdn.microsoft.com/library/windows/desktop/aa373931(v=vs.85).aspx">GUID</a> value that specifies the power control operation to perform.</p>
 </dd>
 
-### -field <b>RequestContext</b>
+### -field RequestContext
 
 <dd>
 <p>A pointer to a PEP-defined context value. The PEP might use this value to uniquely identify a power control request message (in case the PEP issues multiple requests with the same control code to the same device).</p>
 </dd>
 
-### -field <b>InBuffer</b>
+### -field InBuffer
 
 <dd>
 <p>[in] A pointer to a driver-allocated input buffer that contains the input parameters for this power control operation.</p>
 </dd>
 
-### -field <b>InBufferSize</b>
+### -field InBufferSize
 
 <dd>
 <p>[in] The size in bytes of the buffer pointed to by <b>InBuffer</b>.</p>
 </dd>
 
-### -field <b>OutBuffer</b>
+### -field OutBuffer
 
 <dd>
 <p>[in] A pointer to a driver-allocated output buffer to which the PEP writes the results of this power control operation.</p>
 </dd>
 
-### -field <b>OutBufferSize</b>
+### -field OutBufferSize
 
 <dd>
 <p>[in] The size in bytes of the buffer pointed to by <b>OutBuffer</b>.</p>

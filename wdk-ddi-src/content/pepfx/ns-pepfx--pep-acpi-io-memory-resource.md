@@ -59,38 +59,38 @@ typedef struct _PEP_ACPI_IO_MEMORY_RESOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="..\pepfx\ne-pepfx--pep-acpi-resource-type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value that identifies the resource type for this ACPI resource.</p>
 </dd>
 
-### -field <b>Information</b>
+### -field Information
 
 <dd>
 <p>If bit 0 is a 1, this indicates that the logical device decodes 16-bit addresses. If bit 0 is 0, this indicates that the logical device only decodes the first 10 bits of the address.</p>
 <p>Bits 1 to 7 of this member are reserved and must be set to zero.</p>
 </dd>
 
-### -field <b>MinimumAddress</b>
+### -field MinimumAddress
 
 <dd>
 <p>Specifies the minimum acceptable starting address for the IO range.</p>
 </dd>
 
-### -field <b>MaximumAddress</b>
+### -field MaximumAddress
 
 <dd>
 <p>Specifies the maximum acceptable starting address for the IO range.</p>
 </dd>
 
-### -field <b>Alignment</b>
+### -field Alignment
 
 <dd>
 <p>Specifies the alignment granularity for the IO address assigned.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Specifies the number of bytes in the IO range.</p>

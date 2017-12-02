@@ -55,7 +55,7 @@ LONG KeReadStateSemaphore(
 ## -parameters
 <dl>
 
-### -param <i>Semaphore</i> [in]
+### -param Semaphore [in]
 
 <dd>
 <p>Pointer to an initialized semaphore object for which the caller provides the storage.</p>

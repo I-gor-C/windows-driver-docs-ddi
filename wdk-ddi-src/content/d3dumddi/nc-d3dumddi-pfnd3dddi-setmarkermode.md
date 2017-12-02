@@ -59,19 +59,19 @@ _Check_return_ HRESULT APIENTRY* pfnSetMarkerMode(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>A value from the <a href="..\d3dumddi\ne-d3dumddi-d3dddi-markertype.md">D3DDDI_MARKERTYPE</a> enumeration that indicates the type of marker event  that the driver should support.</p>
 </dd>
 
-### -param <i>Flags</i> 
+### -param Flags 
 
 <dd>
 <p>A <b>UINT</b> value that indicates whether the driver should provide custom info in command buffers. If set to <b>D3DDDI_SETMARKERMODE_CUSTOMDRIVEREVENTS</b>, the driver should annotate and instrument command buffers with custom event info. Otherwise, the driver should not annotate command buffers.</p>

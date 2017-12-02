@@ -56,13 +56,13 @@ PKDEVICE_QUEUE_ENTRY KeRemoveByKeyDeviceQueue(
 ## -parameters
 <dl>
 
-### -param <i>DeviceQueue</i> [in, out]
+### -param DeviceQueue [in, out]
 
 <dd>
 <p>Pointer to an initialized device queue object for which the caller provides the storage.</p>
 </dd>
 
-### -param <i>SortKey</i> [in]
+### -param SortKey [in]
 
 <dd>
 <p>Specifies the key to be used when searching the <i>DeviceQueue</i>. </p>

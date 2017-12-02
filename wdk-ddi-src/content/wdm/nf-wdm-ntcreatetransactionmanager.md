@@ -60,13 +60,13 @@ NTSTATUS ZwCreateTransactionManager(
 ## -parameters
 <dl>
 
-### -param <i>TmHandle</i> [out]
+### -param TmHandle [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives a handle to the new <a href="https://msdn.microsoft.com/af53cda4-e2ab-47df-9311-a4da2a2ee08d">transaction manager object</a>.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that specifies the caller's requested access to the transaction manager object. In addition to the access rights that are defined for all kinds of objects (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>), the caller can specify any of the following access right flags for transaction manager objects. </p>
@@ -159,19 +159,19 @@ NTSTATUS ZwCreateTransactionManager(
 <p> </p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in, optional]
+### -param ObjectAttributes [in, optional]
 
 <dd>
 <p>A pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> routine to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>LogFileName</i> [in, optional]
+### -param LogFileName [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the path and file name of a <a href="https://msdn.microsoft.com/d7ad0e16-d1f2-4c41-b647-95b5445c2708">CLFS log file stream</a> to be associated with the transaction manager object. This parameter must be <b>NULL</b> if the <i>CreateOptions</i> parameter is TRANSACTION_MANAGER_VOLATILE. Otherwise, this parameter must be non-<b>NULL</b>. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>CreateOptions</i> [in, optional]
+### -param CreateOptions [in, optional]
 
 <dd>
 <p>Optional object creation flags. The following table contains the available flags, which are defined in Ktmtypes.h.</p>
@@ -240,7 +240,7 @@ NTSTATUS ZwCreateTransactionManager(
 <p> </p>
 </dd>
 
-### -param <i>CommitStrength</i> [in, optional]
+### -param CommitStrength [in, optional]
 
 <dd>
 <p>Reserved for future use. This parameter must be zero. </p>

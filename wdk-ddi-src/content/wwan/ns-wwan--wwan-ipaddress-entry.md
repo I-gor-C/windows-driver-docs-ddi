@@ -7,7 +7,7 @@ old-location: netvista\wwan_ipaddress_entry.htm
 old-project: netvista
 ms.assetid: 85615799-5AA0-4D83-9246-73F3C7ABFFF6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_IPADDRESS_ENTRY, WWAN_IPADDRESS_ENTRY, *PWWAN_IPADDRESS_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ typedef struct _WWAN_IPADDRESS_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>IsIpv6:1</b>
+### -field IsIpv6:1
 
 <dd>
 <p>Set if the IP address of the PDP context is an IPV6 address.</p>
 </dd>
 
-### -field <b>IsReported:1</b>
+### -field IsReported:1
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field ( <i>unnamed union</i> )
+### -field ( unnamed union )
 
 <dd>
 <div class="code"><span codelanguage=""><table>
@@ -92,13 +92,13 @@ union
 </table></span></div>
 <dl>
 
-### -field <b>Ipv4</b>
+### -field Ipv4
 
 <dd>
 <p>The IPV4 address of the PDP context, if <b>IsIpv6</b> is not set.</p>
 </dd>
 
-### -field <b>Ipv6</b>
+### -field Ipv6
 
 <dd>
 <p>The IPV6 address of the PDP context, if <b>IsIpv6</b> is set.</p>

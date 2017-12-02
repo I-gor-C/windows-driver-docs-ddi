@@ -7,7 +7,7 @@ old-location: netvista\wwan_ace_state.htm
 old-project: netvista
 ms.assetid: 6BF63894-58D6-4C7C-B3D9-D4D9D19A686B
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef enum _WWAN_ACE_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanAutoOff"></a><a id="wwanautooff"></a><a id="WWANAUTOOFF"></a><b>WwanAutoOff</b>
+### -field WwanAutoOff
 
 <dd>
 <p>Auto-connect off.</p>
 </dd>
 
-### -field <a id="WwanAutoOn"></a><a id="wwanautoon"></a><a id="WWANAUTOON"></a><b>WwanAutoOn</b>
+### -field WwanAutoOn
 
 <dd>
 <p>Auto-connect on.</p>
 </dd>
 
-### -field <a id="WwanManualOff"></a><a id="wwanmanualoff"></a><a id="WWANMANUALOFF"></a><b>WwanManualOff</b>
+### -field WwanManualOff
 
 <dd>
 <p>Manual connect off.</p>
 </dd>
 
-### -field <a id="WwanManualOn"></a><a id="wwanmanualon"></a><a id="WWANMANUALON"></a><b>WwanManualOn</b>
+### -field WwanManualOn
 
 <dd>
 <p>Manual connect on.</p>

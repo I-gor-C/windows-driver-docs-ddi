@@ -57,13 +57,13 @@ NTSTATUS WheaFindNextErrorRecordSection(
 ## -parameters
 <dl>
 
-### -param <i>Record</i> [in]
+### -param Record [in]
 
 <dd>
 <p>A pointer to a WHEA <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a> that is formatted as a <a href="..\ntddk\ns-ntddk--whea-error-record.md">WHEA_ERROR_RECORD</a> structure.</p>
 </dd>
 
-### -param <i>Context</i> [in, out]
+### -param Context [in, out]
 
 <dd>
 <p>A pointer to a ULONG variable that maintains the current state of the search. </p>
@@ -71,14 +71,14 @@ NTSTATUS WheaFindNextErrorRecordSection(
 <div> </div>
 </dd>
 
-### -param <i>SectionDescriptor</i> [out]
+### -param SectionDescriptor [out]
 
 <dd>
 <p>The address of a <a href="..\ntddk\ns-ntddk--whea-error-record-section-descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> pointer. </p>
 <p>If the <b>WheaFindNextErrorRecordSection </b>function locates the next WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure within the specified WHEA <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>, the function sets the <i>SectionDescriptor </i>parameter to the address of that structure within the specified WHEA error record.</p>
 </dd>
 
-### -param <i>SectionData</i> [out, optional]
+### -param SectionData [out, optional]
 
 <dd>
 <p>The address of a PVOID pointer.</p>

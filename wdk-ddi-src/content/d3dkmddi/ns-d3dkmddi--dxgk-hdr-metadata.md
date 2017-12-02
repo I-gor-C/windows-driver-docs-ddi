@@ -56,19 +56,19 @@ typedef struct _DXGK_HDR_METADATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Indicates the type of the HDR metadata.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Indicates the size of the HDR metadata.</p>
 </dd>
 
-### -field <b>pMetaData</b>
+### -field pMetaData
 
 <dd>
 <p>Pointer to the HDR metadata.</p>

@@ -55,7 +55,7 @@ void UMDEtwRegister(
 ## -parameters
 <dl>
 
-### -param <i>CbRundown</i> 
+### -param CbRundown 
 
 <dd>
 <p>A pointer to a callback function that returns information about the current state of the user-mode driver.</p>

@@ -7,7 +7,7 @@ old-location: ifsk\flt_createfile_target_ecp_context.htm
 old-project: ifsk
 ms.assetid: 95BDB715-E476-48EF-9867-112CF665B66D
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FLT_CREATEFILE_TARGET_ECP_CONTEXT, FLT_CREATEFILE_TARGET_ECP_CONTEXT, *PFLT_CREATEFILE_TARGET_ECP_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ typedef struct _FLT_CREATEFILE_TARGET_ECP_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>Instance</b>
+### -field Instance
 
 <dd>
 <p>The filter instance attached to the adjusted target.</p>
 </dd>
 
-### -field <b>Volume</b>
+### -field Volume
 
 <dd>
 <p>The adjusted target volume.</p>
 </dd>
 
-### -field <b>FileNameInformation</b>
+### -field FileNameInformation
 
 <dd>
 <p>The file information for the adjusted target.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags controlling the reparse operation. This value can be either 0 or the following.</p>
@@ -87,7 +87,7 @@ typedef struct _FLT_CREATEFILE_TARGET_ECP_CONTEXT {
 <tr>
 <td width="40%"><a id="FLTTCFL_AUTO_REPARSE"></a><a id="flttcfl_auto_reparse"></a><dl>
 
-### -field <b>FLTTCFL_AUTO_REPARSE</b>
+### -field FLTTCFL_AUTO_REPARSE
 
 </dl>
 </td>
@@ -145,4 +145,4 @@ typedef struct _FLT_CREATEFILE_TARGET_ECP_CONTEXT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_CREATEFILE_TARGET_ECP_CONTEXT structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_CREATEFILE_TARGET_ECP_CONTEXT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

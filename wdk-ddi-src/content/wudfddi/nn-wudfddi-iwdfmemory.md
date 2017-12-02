@@ -7,7 +7,7 @@ old-location: wdf\iwdfmemory.htm
 old-project: wdf
 ms.assetid: 8746eb43-7a6e-4e1d-b8fb-c8b7891295d6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_target_sent_io_action__umdf_.htm
 old-project: wdf
 ms.assetid: 9cdcf964-9f2d-437f-8693-de5bb4bb9895
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef enum _WDF_IO_TARGET_SENT_IO_ACTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfIoTargetSentIoUndefined"></a><a id="wdfiotargetsentioundefined"></a><a id="WDFIOTARGETSENTIOUNDEFINED"></a><b>WdfIoTargetSentIoUndefined</b>
+### -field WdfIoTargetSentIoUndefined
 
 <dd>
 <p>Reservied for system use.</p>
 </dd>
 
-### -field <a id="WdfIoTargetCancelSentIo"></a><a id="wdfiotargetcancelsentio"></a><a id="WDFIOTARGETCANCELSENTIO"></a><b>WdfIoTargetCancelSentIo</b>
+### -field WdfIoTargetCancelSentIo
 
 <dd>
 <p>Before the framework stops the I/O target, it will attempt to cancel I/O requests that are in the I/O target's queue. The framework cancels all of the target queue's I/O requests before <a href="wdf.iwdfiotargetstatemanagement_stop">IWDFIoTargetStateManagement::Stop</a> or <a href="wdf.iwdfremotetarget_stop">IWDFRemoteTarget::Stop</a> returns.</p>
 </dd>
 
-### -field <a id="WdfIoTargetWaitForSentIoToComplete"></a><a id="wdfiotargetwaitforsentiotocomplete"></a><a id="WDFIOTARGETWAITFORSENTIOTOCOMPLETE"></a><b>WdfIoTargetWaitForSentIoToComplete</b>
+### -field WdfIoTargetWaitForSentIoToComplete
 
 <dd>
 <p>Before the framework stops the I/O target, it will wait for I/O requests that are in the I/O target's queue to be completed. The framework completes all of the target queue's I/O requests, and calls each request's <a href="wdf.irequestcallbackrequestcompletion_oncompletion">IRequestCallbackRequestCompletion::OnCompletion</a> callback function, before <a href="wdf.iwdfiotargetstatemanagement_stop">IWDFIoTargetStateManagement::Stop</a> or <a href="wdf.iwdfremotetarget_stop">IWDFRemoteTarget::Stop</a> returns.</p>
 </dd>
 
-### -field <a id="WdfIoTargetLeaveSentIoPending"></a><a id="wdfiotargetleavesentiopending"></a><a id="WDFIOTARGETLEAVESENTIOPENDING"></a><b>WdfIoTargetLeaveSentIoPending</b>
+### -field WdfIoTargetLeaveSentIoPending
 
 <dd>
 <p>The framework will leave I/O requests in the I/O target's queue. The requests remain in the target's queue until the driver calls <a href="wdf.iwdfiotargetstatemanagement_start">IWDFIoTargetStateManagement::Start</a> or <a href="wdf.iwdfremotetarget_start">IWDFRemoteTarget::Start</a> or the device is removed.</p>
 </dd>
 
-### -field <a id="WdfIoTargetSentIoMaximum"></a><a id="wdfiotargetsentiomaximum"></a><a id="WDFIOTARGETSENTIOMAXIMUM"></a><b>WdfIoTargetSentIoMaximum</b>
+### -field WdfIoTargetSentIoMaximum
 
 <dd>
 <p>Valid enumeration values were exceeded.</p>
@@ -137,4 +137,4 @@ typedef enum _WDF_IO_TARGET_SENT_IO_ACTION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_TARGET_SENT_IO_ACTION enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_TARGET_SENT_IO_ACTION enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

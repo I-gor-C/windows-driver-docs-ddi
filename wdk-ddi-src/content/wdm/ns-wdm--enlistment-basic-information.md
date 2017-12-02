@@ -57,19 +57,19 @@ typedef struct _ENLISTMENT_BASIC_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>EnlistmentId</b>
+### -field EnlistmentId
 
 <dd>
 <p>A GUID that KTM has assigned to the enlistment object.</p>
 </dd>
 
-### -field <b>TransactionId</b>
+### -field TransactionId
 
 <dd>
 <p>A GUID that KTM has assigned to the transaction object that is associated with the enlistment object that the <b>EnlistmentId</b> member identifies.</p>
 </dd>
 
-### -field <b>ResourceManagerId</b>
+### -field ResourceManagerId
 
 <dd>
 <p>A GUID that KTM has assigned to the resource manager that created the enlistment.</p>

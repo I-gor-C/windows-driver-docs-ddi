@@ -7,7 +7,7 @@ old-location: ieee\irb_req_async_lock.htm
 old-project: IEEE
 ms.assetid: 735C613E-BEAA-4E95-AF9D-A94A4BD940DE
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_ASYNC_LOCK, IRB_REQ_ASYNC_LOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,25 +65,25 @@ typedef struct _IRB_REQ_ASYNC_LOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>DestinationAddress</b>
+### -field DestinationAddress
 
 <dd>
 <p>Specifies the 1394 64-bit destination address for this read operation. The driver only needs to fill in the <b>IA_Destination_Offset</b> member of <b>u.AsyncLock.DestinationAddress</b>; the bus driver fills in the <b>IA_Destination_ID</b> member. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537346">IO_ADDRESS</a> for the structure description.</p>
 </dd>
 
-### -field <b>nNumberOfArgBytes</b>
+### -field nNumberOfArgBytes
 
 <dd>
 <p>Specifies the number of argument bytes used in performing this lock operation. May be zero, 4 or 8. See the <b>u.AsyncLock.fulTransactionType</b> member for details.</p>
 </dd>
 
-### -field <b>nNumberOfDataBytes</b>
+### -field nNumberOfDataBytes
 
 <dd>
 <p>Specifies the number of data bytes used in performing this lock operation. May be 4 or 8. See the <b>u.AsyncLock.fulTransactionType</b> member for details.</p>
 </dd>
 
-### -field <b>fulTransactionType</b>
+### -field fulTransactionType
 
 <dd>
 <p>Specifies which atomic transaction to execute on the 1394 node. The following function types are supported.</p>
@@ -144,55 +144,55 @@ typedef struct _IRB_REQ_ASYNC_LOCK {
 <p> </p>
 </dd>
 
-### -field <b>fulFlags</b>
+### -field fulFlags
 
 <dd>
 <p>Not currently used. Drivers should set this to zero.</p>
 </dd>
 
-### -field <b>Arguments</b>
+### -field Arguments
 
 <dd>
 <p>Specifies the arguments used in this lock operation.</p>
 </dd>
 
-### -field <b>DataValues</b>
+### -field DataValues
 
 <dd>
 <p>Specifies the data values used in this lock operation.</p>
 </dd>
 
-### -field <b>pBuffer</b>
+### -field pBuffer
 
 <dd>
 <p>Points to a buffer that receives lock data values returned from the node. The size of the buffer must be at least equal to the <b>u.AsyncLock.nNumberOfDataBytes</b> member.</p>
 </dd>
 
-### -field <b>ulGeneration</b>
+### -field ulGeneration
 
 <dd>
 <p>Specifies the bus reset generation as known by the device driver who submitted this asynchronous request. If the generation count specified does not match the actual generation of the bus, then this request is returned with an error.</p>
 </dd>
 
-### -field <b>chPriority</b>
+### -field chPriority
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>nSpeed</b>
+### -field nSpeed
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>tCode</b>
+### -field tCode
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>

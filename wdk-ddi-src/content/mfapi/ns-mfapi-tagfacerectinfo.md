@@ -55,13 +55,13 @@ typedef struct tagFaceRectInfo {
 ## -struct-fields
 <dl>
 
-### -field <b>Region</b>
+### -field Region
 
 <dd>
 <p>Relative coordinates on the frame that face detection is running (Q31 format).</p>
 </dd>
 
-### -field <b>ConfidenceLevel</b>
+### -field ConfidenceLevel
 
 <dd>
 <p>Confidence level of the region being a face (0 - 100).</p>

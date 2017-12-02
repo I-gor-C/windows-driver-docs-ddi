@@ -61,7 +61,7 @@ typedef struct _IDEREGS {
 ## -struct-fields
 <dl>
 
-### -field <b>bFeaturesReg</b>
+### -field bFeaturesReg
 
 <dd>
 <p>Holds the contents of the Features register. This register is used to specify Self-Monitoring Analysis and Reporting Technology (SMART) commands. This member can hold any of the following values:</p>
@@ -162,43 +162,43 @@ typedef struct _IDEREGS {
 <p> </p>
 </dd>
 
-### -field <b>bSectorCountReg</b>
+### -field bSectorCountReg
 
 <dd>
 <p>Holds the contents of the sector count register. IDE sector count register.  </p>
 </dd>
 
-### -field <b>bSectorNumberReg</b>
+### -field bSectorNumberReg
 
 <dd>
 <p>Holds the contents of the sector number register. </p>
 </dd>
 
-### -field <b>bCylLowReg</b>
+### -field bCylLowReg
 
 <dd>
 <p>Holds the contents of the IDE low-order cylinder register. </p>
 </dd>
 
-### -field <b>bCylHighReg</b>
+### -field bCylHighReg
 
 <dd>
 <p>Holds the contents of the IDE high-order cylinder register. </p>
 </dd>
 
-### -field <b>bDriveHeadReg</b>
+### -field bDriveHeadReg
 
 <dd>
 <p>Holds the contents of the IDE drive/head register. </p>
 </dd>
 
-### -field <b>bCommandReg</b>
+### -field bCommandReg
 
 <dd>
 <p>Holds the contents of the IDE command register.</p>
 </dd>
 
-### -field <b>bReserved</b>
+### -field bReserved
 
 <dd>
 <p>Reserved for future use. Should always be zero. </p>

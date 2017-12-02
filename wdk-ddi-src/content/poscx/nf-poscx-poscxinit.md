@@ -57,13 +57,13 @@ NTSTATUS PosCxInit(
 ## -parameters
 <dl>
 
-### -param <i>device</i> [in]
+### -param device [in]
 
 <dd>
 <p>A handle to a framework device object that represents the device.</p>
 </dd>
 
-### -param <i>posCxAttrPtr</i> [in]
+### -param posCxAttrPtr [in]
 
 <dd>
 <p>A pointer to a caller-allocated and initialized <a href="..\poscx\ns-poscx--pos-cx-attributes.md">POS_CX_ATTRIBUTES</a> structure. The structure should be initialized with <a href="..\poscx\nf-poscx-pos-cx-attributes-init.md">POS_CX_ATTRIBUTES_INIT</a>.</p>

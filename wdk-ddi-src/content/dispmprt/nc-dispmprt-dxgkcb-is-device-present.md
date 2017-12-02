@@ -59,19 +59,19 @@ NTSTATUS DxgkCbIsDevicePresent(
 ## -parameters
 <dl>
 
-### -param <i>DeviceHandle</i> [in]
+### -param DeviceHandle [in]
 
 <dd>
 <p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
 </dd>
 
-### -param <i>DevicePresenceParameters</i> [in]
+### -param DevicePresenceParameters [in]
 
 <dd>
 <p>A pointer to a PCI_DEVICE_PRESENCE_PARAMETERS structure (defined in <i>Wdm.h</i>) that the caller fills in with information that identifies the device.</p>
 </dd>
 
-### -param <i>DevicePresent</i> [out]
+### -param DevicePresent [out]
 
 <dd>
 <p>A pointer to a Boolean variable that receives <b>TRUE</b> if the device is present or <b>FALSE</b> if the device is not present.</p>

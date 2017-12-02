@@ -55,13 +55,13 @@ void KsPinRegisterHandshakeCallback(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure for which to register a handshake callback.</p>
 </dd>
 
-### -param <i>Handshake</i> [in]
+### -param Handshake [in]
 
 <dd>
 <dl>

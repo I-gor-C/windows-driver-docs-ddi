@@ -58,31 +58,31 @@ typedef struct _D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD {
 ## -struct-fields
 <dl>
 
-### -field <b>hVideoProcessor</b>
+### -field hVideoProcessor
 
 <dd>
 <p>[in] A handle to the DirectX VA video processing device. The user-mode display driver returns this handle in a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-createvideoprocessor.md">CreateVideoProcessor</a> function.</p>
 </dd>
 
-### -field <b>OutputSurface</b>
+### -field OutputSurface
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-surface.md">DXVAHDDDI_SURFACE</a> structure that describes the output surface to which the video processor composes. </p>
 </dd>
 
-### -field <b>OutputFrame</b>
+### -field OutputFrame
 
 <dd>
 <p>[in] A zero-based frame number of the composed output frames. </p>
 </dd>
 
-### -field <b>StreamCount</b>
+### -field StreamCount
 
 <dd>
 <p>[in] The number of streams to process. This number must be less than the number that the driver set in the <b>MaxStreamStates</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure. </p>
 </dd>
 
-### -field <b>pStreams</b>
+### -field pStreams
 
 <dd>
 <p>[in] An array of <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-data.md">DXVAHDDDI_STREAM_DATA</a> structures that describe the input streams to process. </p>

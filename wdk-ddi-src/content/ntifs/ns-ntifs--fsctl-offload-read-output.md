@@ -7,7 +7,7 @@ old-location: ifsk\fsctl_offload_read_output.htm
 old-project: ifsk
 ms.assetid: 418E66FA-BECD-4F9F-B28C-962995C637B9
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FSCTL_OFFLOAD_READ_OUTPUT, FSCTL_OFFLOAD_READ_OUTPUT, *PFSCTL_OFFLOAD_READ_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ typedef struct _FSCTL_OFFLOAD_READ_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure. Set this member to <b>sizeof</b>(FSCTL_OFFLOAD_READ_OUTPUT).</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p> Result flags. This value is a bitwise <b>OR</b> combination of these values:</p>
@@ -75,7 +75,7 @@ typedef struct _FSCTL_OFFLOAD_READ_OUTPUT {
 <tr>
 <td width="40%"><a id="OFFLOAD_READ_FLAG_FILE_TOO_SMALL"></a><a id="offload_read_flag_file_too_small"></a><dl>
 
-### -field <b>OFFLOAD_READ_FLAG_FILE_TOO_SMALL</b>
+### -field OFFLOAD_READ_FLAG_FILE_TOO_SMALL
 
 
 ### -field 0x00000001
@@ -89,7 +89,7 @@ typedef struct _FSCTL_OFFLOAD_READ_OUTPUT {
 <tr>
 <td width="40%"><a id="OFFLOAD_READ_FLAG_ALL_ZERO_BEYOND_CURRENT_RANGE"></a><a id="offload_read_flag_all_zero_beyond_current_range"></a><dl>
 
-### -field <b>OFFLOAD_READ_FLAG_ALL_ZERO_BEYOND_CURRENT_RANGE</b>
+### -field OFFLOAD_READ_FLAG_ALL_ZERO_BEYOND_CURRENT_RANGE
 
 
 ### -field 0x00000002
@@ -103,7 +103,7 @@ typedef struct _FSCTL_OFFLOAD_READ_OUTPUT {
 <tr>
 <td width="40%"><a id="OFFLOAD_READ_FLAG_CANNOT_OFFLOAD_BEYOND_CURRENT_RANGE"></a><a id="offload_read_flag_cannot_offload_beyond_current_range"></a><dl>
 
-### -field <b>OFFLOAD_READ_FLAG_CANNOT_OFFLOAD_BEYOND_CURRENT_RANGE</b>
+### -field OFFLOAD_READ_FLAG_CANNOT_OFFLOAD_BEYOND_CURRENT_RANGE
 
 
 ### -field 0x00000004
@@ -118,13 +118,13 @@ typedef struct _FSCTL_OFFLOAD_READ_OUTPUT {
 <p> </p>
 </dd>
 
-### -field <b>TransferLength</b>
+### -field TransferLength
 
 <dd>
 <p>The length, in bytes, of data represented by <b>Token</b>.</p>
 </dd>
 
-### -field <b>Token</b>
+### -field Token
 
 <dd>
 <p>A byte array that contains a token structure, <a href="..\ntddstor\ns-ntddstor--storage-offload-token.md">STORAGE_OFFLOAD_TOKEN</a>, representing a file data within a range specified in <a href="..\ntifs\ns-ntifs--fsctl-offload-read-input.md">FSCTL_OFFLOAD_READ_INPUT</a>. The contents of <b>Token</b>  must remain unmodified between offload operations.</p>
@@ -176,4 +176,4 @@ typedef struct _FSCTL_OFFLOAD_READ_OUTPUT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSCTL_OFFLOAD_READ_OUTPUT structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSCTL_OFFLOAD_READ_OUTPUT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

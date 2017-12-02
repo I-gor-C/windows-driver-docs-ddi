@@ -7,7 +7,7 @@ old-location: netvista\rilimshandoverattempt_2.htm
 old-project: netvista
 ms.assetid: de56a241-10a3-4f9c-970c-433ab997612d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef struct _RILIMSHANDOVERATTEMPT {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwOldSystemType</b>
+### -field dwOldSystemType
 
 <dd></dd>
 
-### -field <b>dwDestSystemType</b>
+### -field dwDestSystemType
 
 <dd></dd>
 
-### -field <b>hrHandOverResult</b>
+### -field hrHandOverResult
 
 <dd></dd>
 </dl>

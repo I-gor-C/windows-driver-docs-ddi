@@ -59,7 +59,7 @@ typedef struct DARG_OUT_QUERY_HWCURSOR {
 ## -struct-fields
 <dl>
 
-### -field <b>IsCursorVisible</b>
+### -field IsCursorVisible
 
 <dd>
 <p>
@@ -67,7 +67,7 @@ typedef struct DARG_OUT_QUERY_HWCURSOR {
                  </p>
 </dd>
 
-### -field <b>X</b>
+### -field X
 
 <dd>
 <p>
@@ -76,7 +76,7 @@ typedef struct DARG_OUT_QUERY_HWCURSOR {
 <div> </div>
 </dd>
 
-### -field <b>Y</b>
+### -field Y
 
 <dd>
 <p>
@@ -85,7 +85,7 @@ typedef struct DARG_OUT_QUERY_HWCURSOR {
 <div> </div>
 </dd>
 
-### -field <b>IsCursorShapeUpdated</b>
+### -field IsCursorShapeUpdated
 
 <dd>
 <p>
@@ -93,7 +93,7 @@ typedef struct DARG_OUT_QUERY_HWCURSOR {
                  </p>
 </dd>
 
-### -field <b>CursorShapeInfo</b>
+### -field CursorShapeInfo
 
 <dd>
 <p>

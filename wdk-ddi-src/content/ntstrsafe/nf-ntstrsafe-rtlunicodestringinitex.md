@@ -56,26 +56,26 @@ NTSTATUS RtlUnicodeStringInitEx(
 ## -parameters
 <dl>
 
-### -param <i>DestinationString</i> [out]
+### -param DestinationString [out]
 
 <dd>
 <p>Optional. A pointer to a <b>UNICODE_STRING</b> structure to be initialized. The <i>pszSrc</i> pointer is copied into the <i>DestinationString</i> parameter's <b>UNICODE_STRING</b> structure. The maximum number of characters in the string that <i>pszSrc</i> points to is NTSTRSAFE_UNICODE_STRING_MAX_CCH. <i>DestinationString</i> can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.</p>
 </dd>
 
-### -param <i>pszSrc</i> [in, optional]
+### -param pszSrc [in, optional]
 
 <dd>
 <p>Optional. A pointer to a null-terminated string constant. This string pointer will be copied to the <b>Buffer</b> member of the <b>UNICODE_STRING</b> structure pointed to by the <i>DestinationString</i> parameter. This string pointer can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>The following flag is defined: </p>
 <p></p>
 <dl>
 
-### -param <a id="STRSAFE_IGNORE_NULLS_"></a><a id="strsafe_ignore_nulls_"></a>STRSAFE_IGNORE_NULLS 
+### -param STRSAFE_IGNORE_NULLS 
 
 <dd>
 <p>If this flag is set, the source pointer can be <b>NULL</b>. <b>RtlUnicodeStringInitEx</b> treats <b>NULL</b> source buffer pointers like empty strings (TEXT("")), which can be copied.</p>

@@ -7,7 +7,7 @@ old-location: spb\spbtargetgetconnectionparameters.htm
 old-project: SPB
 ms.assetid: 0692D8A3-CA43-4D27-9E8E-EB104DB1651F
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/30/2017
 ms.keywords: SpbTargetGetConnectionParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ VOID SpbTargetGetConnectionParameters(
 ## -parameters
 <dl>
 
-### -param <i>Target</i> [in]
+### -param Target [in]
 
 <dd>
 <p>An <a href="buses.spbtarget_object_handle">SPBTARGET</a> handle to the target device for which to retrieve the connection parameters.</p>
 </dd>
 
-### -param <i>ConnectionParameters</i> [out]
+### -param ConnectionParameters [out]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/hh406204">SPB_CONNECTION_PARAMETERS</a> structure into which the method writes the connection parameters. The caller must previously have called the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406205">SPB_CONNECTION_PARAMETERS_INIT</a> function to initialize this structure.</p>
@@ -151,4 +151,4 @@ VOID SpbTargetGetConnectionParameters(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SpbTargetGetConnectionParameters method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SpbTargetGetConnectionParameters method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -59,19 +59,19 @@ NTSTATUS SdpFindAttributeInTree(
 ## -parameters
 <dl>
 
-### -param <i>Tree</i> [in]
+### -param Tree [in]
 
 <dd>
 <p>The root node of the tree-based representation of the SDP record to search.</p>
 </dd>
 
-### -param <i>AttribId</i> [in]
+### -param AttribId [in]
 
 <dd>
 <p>The identifier of the attribute node to locate.</p>
 </dd>
 
-### -param <i>AttribValue</i> [out]
+### -param AttribValue [out]
 
 <dd>
 <p>A pointer to a variable that receives the address of the located attribute node.</p>

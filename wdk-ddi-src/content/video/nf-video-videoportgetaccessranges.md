@@ -62,49 +62,49 @@ VP_STATUS VideoPortGetAccessRanges(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>NumRequestedResources</i> 
+### -param NumRequestedResources 
 
 <dd>
 <p>Specifies the number of elements in the <i>RequestedResources</i> array.</p>
 </dd>
 
-### -param <i>RequestedResources</i> [in, optional]
+### -param RequestedResources [in, optional]
 
 <dd>
 <p>An array of IO_RESOURCE_DESCRIPTOR-type elements. Each descriptor specifies a single hardware resource that the miniport driver needs, prefers, or can use as an alternative to that specified in another array element. For detailed information about this structure, see the description of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548285">IoAssignResources</a>.</p>
 </dd>
 
-### -param <i>NumAccessRanges</i> 
+### -param NumAccessRanges 
 
 <dd>
 <p>Specifies the number of elements in the <i>AccessRanges</i> array.</p>
 </dd>
 
-### -param <i>AccessRanges</i> [out]
+### -param AccessRanges [out]
 
 <dd>
 <p>Pointer to an area on the stack or to a static structure in the miniport driver to which <b>VideoPortGetAccessRanges</b> returns an array of <a href="..\video\ns-video--video-access-range.md">VIDEO_ACCESS_RANGE</a> elements filled with the bus-relative device memory ranges for the adapter.</p>
 </dd>
 
-### -param <i>VendorId</i> 
+### -param VendorId 
 
 <dd>
 <p>Should be set to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>DeviceId</i> 
+### -param DeviceId 
 
 <dd>
 <p>Should be set to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Slot</i> 
+### -param Slot 
 
 <dd>
 <p>Pointer to a memory location in which the video port driver stores the slot number for the device, or is <b>NULL</b>. </p>

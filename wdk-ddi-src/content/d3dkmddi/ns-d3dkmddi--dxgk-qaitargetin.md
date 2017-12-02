@@ -54,7 +54,7 @@ typedef struct _DXGK_QAITARGETIN {
 ## -struct-fields
 <dl>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>The ID of the target.</p>

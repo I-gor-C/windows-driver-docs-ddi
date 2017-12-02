@@ -7,7 +7,7 @@ old-location: netvista\rilmsgoutsubmitvpformat.htm
 old-project: netvista
 ms.assetid: c0a2646c-aa0a-4946-999f-a78d1c488752
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILMSGOUTSUBMITVPFORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGVP_RELATIVE"></a><a id="ril_msgvp_relative"></a><b>RIL_MSGVP_RELATIVE</b>
+### -field RIL_MSGVP_RELATIVE
 
 <dd></dd>
 
-### -field <a id="RIL_MSGVP_ENHANCED"></a><a id="ril_msgvp_enhanced"></a><b>RIL_MSGVP_ENHANCED</b>
+### -field RIL_MSGVP_ENHANCED
 
 <dd></dd>
 
-### -field <a id="RIL_MSGVP_ABSOLUTE"></a><a id="ril_msgvp_absolute"></a><b>RIL_MSGVP_ABSOLUTE</b>
+### -field RIL_MSGVP_ABSOLUTE
 
 <dd></dd>
 
-### -field <a id="RIL_MSGVP_MAX"></a><a id="ril_msgvp_max"></a><b>RIL_MSGVP_MAX</b>
+### -field RIL_MSGVP_MAX
 
 <dd></dd>
 </dl>

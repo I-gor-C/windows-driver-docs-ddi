@@ -57,25 +57,25 @@ typedef enum _DXVAHDDDI_ALPHA_FILL_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVAHDDDI_ALPHA_FILL_MODE_OPAQUE"></a><a id="dxvahdddi_alpha_fill_mode_opaque"></a><b>DXVAHDDDI_ALPHA_FILL_MODE_OPAQUE</b>
+### -field DXVAHDDDI_ALPHA_FILL_MODE_OPAQUE
 
 <dd>
 <p>A value that specifies to fill the output with opaque alpha channel data. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_ALPHA_FILL_MODE_BACKGROUND"></a><a id="dxvahdddi_alpha_fill_mode_background"></a><b>DXVAHDDDI_ALPHA_FILL_MODE_BACKGROUND</b>
+### -field DXVAHDDDI_ALPHA_FILL_MODE_BACKGROUND
 
 <dd>
 <p>A value that specifies to fill the output with the alpha channel data of the background. For more information about background color, see <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-background-color-data.md">DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA</a>. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_ALPHA_FILL_MODE_DESTINATION"></a><a id="dxvahdddi_alpha_fill_mode_destination"></a><b>DXVAHDDDI_ALPHA_FILL_MODE_DESTINATION</b>
+### -field DXVAHDDDI_ALPHA_FILL_MODE_DESTINATION
 
 <dd>
 <p>A value that specifies to keep the alpha channel data unchanged on the target output. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_ALPHA_FILL_MODE_SOURCE_STREAM"></a><a id="dxvahdddi_alpha_fill_mode_source_stream"></a><b>DXVAHDDDI_ALPHA_FILL_MODE_SOURCE_STREAM</b>
+### -field DXVAHDDDI_ALPHA_FILL_MODE_SOURCE_STREAM
 
 <dd>
 <p>A value that specifies to fill the output with the alpha channel data of the destination rectangle in which the source rectangle of the specified input stream is scaled. For more information about the conditions for this value, see the Remarks section of <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-alpha-fill-data.md">DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA</a>. </p>

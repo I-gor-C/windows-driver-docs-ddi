@@ -56,7 +56,7 @@ typedef struct _DXGKMDT_OPM_REQUESTED_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>omac</b>
+### -field omac
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-omac.md">DXGKMDT_OPM_OMAC</a> structure that contains a One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) for message authenticity. For more information about OMAC, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70417">OMAC-1 algorithm</a>. The OMAC-1 parameters that OPM and COPP use are:</p>
@@ -67,13 +67,13 @@ typedef struct _DXGKMDT_OPM_REQUESTED_INFORMATION {
 <p>For information about AES, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70411">RSA Laboratories</a> website. </p>
 </dd>
 
-### -field <b>cbRequestedInformationSize</b>
+### -field cbRequestedInformationSize
 
 <dd>
 <p>The size, in bytes, of the valid data that the <b>abRequestedInformation</b> member points to. </p>
 </dd>
 
-### -field <b>abRequestedInformation</b>
+### -field abRequestedInformation
 
 <dd>
 <p>A 4076-byte array that specifies the information that is retrieved from a protected output object.</p>

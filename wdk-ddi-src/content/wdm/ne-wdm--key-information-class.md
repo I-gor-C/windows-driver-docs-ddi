@@ -63,55 +63,55 @@ typedef enum _KEY_INFORMATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="KeyBasicInformation"></a><a id="keybasicinformation"></a><a id="KEYBASICINFORMATION"></a><b>KeyBasicInformation</b>
+### -field KeyBasicInformation
 
 <dd>
 <p>A <a href="..\wdm\ns-wdm--key-basic-information.md">KEY_BASIC_INFORMATION</a> structure is supplied.</p>
 </dd>
 
-### -field <a id="KeyNodeInformation"></a><a id="keynodeinformation"></a><a id="KEYNODEINFORMATION"></a><b>KeyNodeInformation</b>
+### -field KeyNodeInformation
 
 <dd>
 <p>A <a href="..\wdm\ns-wdm--key-node-information.md">KEY_NODE_INFORMATION</a> structure is supplied.</p>
 </dd>
 
-### -field <a id="KeyFullInformation"></a><a id="keyfullinformation"></a><a id="KEYFULLINFORMATION"></a><b>KeyFullInformation</b>
+### -field KeyFullInformation
 
 <dd>
 <p>A <a href="..\wdm\ns-wdm--key-full-information.md">KEY_FULL_INFORMATION</a> structure is supplied.</p>
 </dd>
 
-### -field <a id="KeyNameInformation"></a><a id="keynameinformation"></a><a id="KEYNAMEINFORMATION"></a><b>KeyNameInformation</b>
+### -field KeyNameInformation
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--key-name-information.md">KEY_NAME_INFORMATION</a> structure is supplied.</p>
 </dd>
 
-### -field <a id="KeyCachedInformation"></a><a id="keycachedinformation"></a><a id="KEYCACHEDINFORMATION"></a><b>KeyCachedInformation</b>
+### -field KeyCachedInformation
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--key-cached-information.md">KEY_CACHED_INFORMATION</a> structure is supplied.</p>
 </dd>
 
-### -field <a id="KeyFlagsInformation"></a><a id="keyflagsinformation"></a><a id="KEYFLAGSINFORMATION"></a><b>KeyFlagsInformation</b>
+### -field KeyFlagsInformation
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="KeyVirtualizationInformation"></a><a id="keyvirtualizationinformation"></a><a id="KEYVIRTUALIZATIONINFORMATION"></a><b>KeyVirtualizationInformation</b>
+### -field KeyVirtualizationInformation
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--key-virtualization-information.md">KEY_VIRTUALIZATION_INFORMATION</a> structure is supplied.</p>
 </dd>
 
-### -field <a id="KeyHandleTagsInformation"></a><a id="keyhandletagsinformation"></a><a id="KEYHANDLETAGSINFORMATION"></a><b>KeyHandleTagsInformation</b>
+### -field KeyHandleTagsInformation
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="MaxKeyInfoClass"></a><a id="maxkeyinfoclass"></a><a id="MAXKEYINFOCLASS"></a><b>MaxKeyInfoClass</b>
+### -field MaxKeyInfoClass
 
 <dd>
 <p>The maximum value in this enumeration type.</p>

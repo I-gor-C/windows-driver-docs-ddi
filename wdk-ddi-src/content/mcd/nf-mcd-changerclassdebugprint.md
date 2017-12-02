@@ -55,13 +55,13 @@ VOID ChangerClassDebugPrint(
 ## -parameters
 <dl>
 
-### -param <i>DebugPrintLevel</i> 
+### -param DebugPrintLevel 
 
 <dd>
 <p>Indicates how verbose debug information should be. Caller must assign this parameter an integer value between zero and three, where three specifies the highest level of verbosity and zero the lowest. </p>
 </dd>
 
-### -param <i>DebugMessage</i> 
+### -param DebugMessage 
 
 <dd>
 <p>Caller can specify a message to be included with the debugging information that is printed by assigning a printable ASCII character string to this parameter.</p>

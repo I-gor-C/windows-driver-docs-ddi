@@ -61,43 +61,43 @@ typedef struct _REG_SET_INFORMATION_KEY_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Object</b>
+### -field Object
 
 <dd>
 <p>A pointer to the registry key object for the key whose metadata is about to be changed.</p>
 </dd>
 
-### -field <b>KeySetInformationClass</b>
+### -field KeySetInformationClass
 
 <dd>
 <p>The <a href="..\wdm\ne-wdm--key-set-information-class.md">KEY_SET_INFORMATION_CLASS</a> value that indicates the type of information about to be changed.</p>
 </dd>
 
-### -field <b>KeySetInformation</b>
+### -field KeySetInformation
 
 <dd>
 <p>A pointer to a buffer that contains the information about to be written. The format of the buffer depends on the value of <b>KeySetInformationClass</b>. For more information, see <a href="..\wdm\ne-wdm--key-set-information-class.md">KEY_SET_INFORMATION_CLASS</a>.</p>
 </dd>
 
-### -field <b>KeySetInformationLength</b>
+### -field KeySetInformationLength
 
 <dd>
 <p>The size, in bytes, of the <b>KeySetInformation</b> buffer.</p>
 </dd>
 
-### -field <b>CallContext</b>
+### -field CallContext
 
 <dd>
 <p>Optional driver-defined context information that the driver's <a href="kernel.registrycallback">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.</p>
 </dd>
 
-### -field <b>ObjectContext</b>
+### -field ObjectContext
 
 <dd>
 <p>A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.</p>

@@ -54,7 +54,7 @@ CHAR RtlUpperChar(
 ## -parameters
 <dl>
 
-### -param <i>Character</i> [in]
+### -param Character [in]
 
 <dd>
 <p>Specifies the character to convert. </p>

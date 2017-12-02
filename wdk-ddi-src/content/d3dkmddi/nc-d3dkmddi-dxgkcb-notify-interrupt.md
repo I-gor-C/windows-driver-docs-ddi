@@ -58,13 +58,13 @@ VOID APIENTRY DxgkCbNotifyInterrupt(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>[in] A handle to the adapter object for the GPU. A driver receives the handle from the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure in a call to its <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-notify-interrupt-data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure that describes notification information.</p>

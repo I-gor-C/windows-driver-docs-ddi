@@ -58,31 +58,31 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Set</b>
+### -field Set
 
 <dd>
 <p>Specifies the GUID that identifies the property set.</p>
 </dd>
 
-### -field <b>PropertiesCount</b>
+### -field PropertiesCount
 
 <dd>
 <p>Specifies the size of the array pointed to by the <b>PropertyItem</b> member.</p>
 </dd>
 
-### -field <b>PropertyItem</b>
+### -field PropertyItem
 
 <dd>
 <p>Points to the beginning of an array of <a href="stream.ksproperty_item">KSPROPERTY_ITEM</a> structures that describe how the driver or pin supports each property in the set.</p>
 </dd>
 
-### -field <b>FastIoCount</b>
+### -field FastIoCount
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>FastIoTable</b>
+### -field FastIoTable
 
 <dd>
 <p>A pointer to a <a href="stream.ksfastproperty_item">KSFASTPROPERTY_ITEM</a> structure. This member is reserved for system use.</p>
@@ -90,7 +90,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>For more information, see <a href="NULL">KS Properties</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88-aaf9-ff1ddbfd30f7">KS Properties</a>.</p>
 
 ## -requirements
 <table>

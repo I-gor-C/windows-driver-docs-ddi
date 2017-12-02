@@ -56,13 +56,13 @@ __checkReturn HRESULT NTStatus SeEtwWriteKMCveEvent(
 ## -parameters
 <dl>
 
-### -param <i>CveId</i> [in]
+### -param CveId [in]
 
 <dd>
 <p>A pointer to a string mentioning the CVE-ID associated with the vulnerability for which this event is being raised. Technical guidance for handling the CVE-ID is shared <a href="ttp://go.microsoft.com/fwlink/?LinkId=798519">here</a></p>
 </dd>
 
-### -param <i>AdditionalDetails</i> [in, optional]
+### -param AdditionalDetails [in, optional]
 
 <dd>
 <p>A pointer to a string giving additional details that the event producer may want to provide to the consumer of this event.</p>

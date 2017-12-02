@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTWaitForSynchronizationObject2(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-waitforsynchronizationobject2.md">D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2</a> structure that describes the synchronization objects and context stream that the wait is set up for.</p>

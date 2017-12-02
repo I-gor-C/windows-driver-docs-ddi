@@ -57,19 +57,19 @@ typedef struct _MEMORY_REGION {
 ## -struct-fields
 <dl>
 
-### -field <b>VirtualBase</b>
+### -field VirtualBase
 
 <dd>
 <p>The beginning virtual address of the memory region.</p>
 </dd>
 
-### -field <b>PhysicalBase</b>
+### -field PhysicalBase
 
 <dd>
 <p>The beginning physical address of the memory region.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The size, in bytes, of the memory region.</p>

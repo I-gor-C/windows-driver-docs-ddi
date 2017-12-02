@@ -74,80 +74,80 @@ typedef union _WHEA_XPF_CACHE_CHECK {
 ## -struct-fields
 <dl>
 
-### -field <b>TransactionTypeValid</b>
+### -field TransactionTypeValid
 
 <dd>
 <p>A single bit that indicates that the <b>TransactionType</b> member contains valid data.</p>
 </dd>
 
-### -field <b>OperationValid</b>
+### -field OperationValid
 
 <dd>
 <p>A single bit that indicates that the <b>Operation</b> member contains valid data.</p>
 </dd>
 
-### -field <b>LevelValid</b>
+### -field LevelValid
 
 <dd>
 <p>A single bit that indicates that the <b>Level</b> member contains valid data.</p>
 </dd>
 
-### -field <b>ProcessorContextCorruptValid</b>
+### -field ProcessorContextCorruptValid
 
 <dd>
 <p>A single bit that indicates that the <b>ProcessorContextCorrupt</b> member contains valid data.</p>
 </dd>
 
-### -field <b>UncorrectedValid</b>
+### -field UncorrectedValid
 
 <dd>
 <p>A single bit that indicates that the <b>Uncorrected </b>member contains valid data.</p>
 </dd>
 
-### -field <b>PreciseIPValid</b>
+### -field PreciseIPValid
 
 <dd>
 <p>A single bit that indicates that the <b>PreciseIP</b> member contains valid data.</p>
 </dd>
 
-### -field <b>RestartableIPValid</b>
+### -field RestartableIPValid
 
 <dd>
 <p>A single bit that indicates that the <b>RestartableIP</b> member contains valid data.</p>
 </dd>
 
-### -field <b>OverflowValid</b>
+### -field OverflowValid
 
 <dd>
 <p>A single bit that indicates that the <b>Overflow</b> member contains valid data.</p>
 </dd>
 
-### -field <b>ReservedValid</b>
+### -field ReservedValid
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>TransactionType</b>
+### -field TransactionType
 
 <dd>
 <p>The type of transaction that was in progress when the error occurred. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="XPF_CACHE_CHECK_TRANSACTIONTYPE_INSTRUCTION"></a><a id="xpf_cache_check_transactiontype_instruction"></a>XPF_CACHE_CHECK_TRANSACTIONTYPE_INSTRUCTION
+### -field XPF_CACHE_CHECK_TRANSACTIONTYPE_INSTRUCTION
 
 <dd>
 <p>A processor instruction transaction.</p>
 </dd>
 
-### -field <a id="XPF_CACHE_CHECK_TRANSACTIONTYPE_DATAACCESS"></a><a id="xpf_cache_check_transactiontype_dataaccess"></a>XPF_CACHE_CHECK_TRANSACTIONTYPE_DATAACCESS
+### -field XPF_CACHE_CHECK_TRANSACTIONTYPE_DATAACCESS
 
 <dd>
 <p>A data access transaction.</p>
 </dd>
 
-### -field <a id="XPF_CACHE_CHECK_TRANSACTIONTYPE_GENERIC"></a><a id="xpf_cache_check_transactiontype_generic"></a>XPF_CACHE_CHECK_TRANSACTIONTYPE_GENERIC
+### -field XPF_CACHE_CHECK_TRANSACTIONTYPE_GENERIC
 
 <dd>
 <p>A generic transaction.</p>
@@ -156,62 +156,62 @@ typedef union _WHEA_XPF_CACHE_CHECK {
 <p>This member contains valid data only if the <b>TransactionTypeValid</b> bit is set.</p>
 </dd>
 
-### -field <b>Operation</b>
+### -field Operation
 
 <dd>
 <p>The type of cache operation that caused the error. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="XPF_CACHE_CHECK_OPERATION_GENERIC"></a><a id="xpf_cache_check_operation_generic"></a>XPF_CACHE_CHECK_OPERATION_GENERIC
+### -field XPF_CACHE_CHECK_OPERATION_GENERIC
 
 <dd>
 <p>The type of operation cannot be determined.</p>
 </dd>
 
-### -field <a id="XPF_CACHE_CHECK_OPERATION_GENREAD"></a><a id="xpf_cache_check_operation_genread"></a>XPF_CACHE_CHECK_OPERATION_GENREAD
+### -field XPF_CACHE_CHECK_OPERATION_GENREAD
 
 <dd>
 <p>A generic read operation.</p>
 </dd>
 
-### -field <a id="XPF_CACHE_CHECK_OPERATION_GENWRITE"></a><a id="xpf_cache_check_operation_genwrite"></a>XPF_CACHE_CHECK_OPERATION_GENWRITE
+### -field XPF_CACHE_CHECK_OPERATION_GENWRITE
 
 <dd>
 <p>A generic write operation.</p>
 </dd>
 
-### -field <a id="XPF_CACHE_CHECK_OPERATION_DATAREAD"></a><a id="xpf_cache_check_operation_dataread"></a>XPF_CACHE_CHECK_OPERATION_DATAREAD
+### -field XPF_CACHE_CHECK_OPERATION_DATAREAD
 
 <dd>
 <p>A data read operation.</p>
 </dd>
 
-### -field <a id="XPF_CACHE_CHECK_OPERATION_DATAWRITE"></a><a id="xpf_cache_check_operation_datawrite"></a>XPF_CACHE_CHECK_OPERATION_DATAWRITE
+### -field XPF_CACHE_CHECK_OPERATION_DATAWRITE
 
 <dd>
 <p>A data write operation.</p>
 </dd>
 
-### -field <a id="XPF_CACHE_CHECK_OPERATION_INSTRUCTIONFETCH"></a><a id="xpf_cache_check_operation_instructionfetch"></a>XPF_CACHE_CHECK_OPERATION_INSTRUCTIONFETCH
+### -field XPF_CACHE_CHECK_OPERATION_INSTRUCTIONFETCH
 
 <dd>
 <p>An instruction fetch operation.</p>
 </dd>
 
-### -field <a id="XPF_CACHE_CHECK_OPERATION_PREFETCH"></a><a id="xpf_cache_check_operation_prefetch"></a>XPF_CACHE_CHECK_OPERATION_PREFETCH
+### -field XPF_CACHE_CHECK_OPERATION_PREFETCH
 
 <dd>
 <p>An instruction prefetch operation.</p>
 </dd>
 
-### -field <a id="XPF_CACHE_CHECK_OPERATION_EVICTION"></a><a id="xpf_cache_check_operation_eviction"></a>XPF_CACHE_CHECK_OPERATION_EVICTION
+### -field XPF_CACHE_CHECK_OPERATION_EVICTION
 
 <dd>
 <p>An eviction operation.</p>
 </dd>
 
-### -field <a id="XPF_CACHE_CHECK_OPERATION_SNOOP"></a><a id="xpf_cache_check_operation_snoop"></a>XPF_CACHE_CHECK_OPERATION_SNOOP
+### -field XPF_CACHE_CHECK_OPERATION_SNOOP
 
 <dd>
 <p>A snoop operation.</p>
@@ -220,55 +220,55 @@ typedef union _WHEA_XPF_CACHE_CHECK {
 <p>This member contains valid data only if the <b>OperationValid</b> bit is set.</p>
 </dd>
 
-### -field <b>Level</b>
+### -field Level
 
 <dd>
 <p>The level of the cache where the error occurred.</p>
 <p>This member contains valid data only if the <b>LevelValid</b> bit is set.</p>
 </dd>
 
-### -field <b>ProcessorContextCorrupt</b>
+### -field ProcessorContextCorrupt
 
 <dd>
 <p>A single bit that indicates that the processor context might have been corrupted.</p>
 <p>This member contains valid data only if the <b>ProcessorContextCorruptValid</b> bit is set.</p>
 </dd>
 
-### -field <b>Uncorrected</b>
+### -field Uncorrected
 
 <dd>
 <p>A single bit that indicates that the error has not been corrected.</p>
 <p>This member contains valid data only if the <b>UncorrectedValid</b> bit is set.</p>
 </dd>
 
-### -field <b>PreciseIP</b>
+### -field PreciseIP
 
 <dd>
 <p>A single bit that indicates that the instruction pointer that is specified in the <b>InstructionPointer</b> member of the <a href="..\ntddk\ns-ntddk--whea-xpf-procinfo.md">WHEA_XPF_PROCINFO</a> structure that contains this WHEA_XPF_CACHE_CHECK union is directly associated with the error.</p>
 <p>This member contains valid data only if the <b>PreciseIPValid</b> bit is set.</p>
 </dd>
 
-### -field <b>RestartableIP</b>
+### -field RestartableIP
 
 <dd>
 <p>A single bit that indicates that program execution can be restarted reliably at the instruction pointer that is specified in the <b>InstructionPointer</b> member of the <a href="..\ntddk\ns-ntddk--whea-xpf-procinfo.md">WHEA_XPF_PROCINFO</a> union that contains this WHEA_XPF_CACHE_CHECK structure.</p>
 <p>This member contains valid data only if the <b>RestartableIPValid</b> bit is set.</p>
 </dd>
 
-### -field <b>Overflow</b>
+### -field Overflow
 
 <dd>
 <p>A single bit that indicates that an error overflow occurred.</p>
 <p>This member contains valid data only if the <b>OverflowValid</b> bit is set.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>XpfCacheCheck</b>
+### -field XpfCacheCheck
 
 <dd>
 <p>A ULONGLONG representation of the contents of the WHEA_XPF_CACHE_CHECK union.</p>

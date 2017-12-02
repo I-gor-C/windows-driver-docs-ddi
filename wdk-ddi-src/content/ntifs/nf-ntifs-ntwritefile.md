@@ -62,49 +62,49 @@ NTSTATUS ZwWriteFile(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [in]
+### -param FileHandle [in]
 
 <dd>
 <p>Handle to the file object. This handle is created by a successful call to <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> or <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>. </p>
 </dd>
 
-### -param <i>Event</i> [in, optional]
+### -param Event [in, optional]
 
 <dd>
 <p>Optionally, a handle to an event object to set to the signaled state after the write operation completes. Device and intermediate drivers should set this parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ApcRoutine</i> [in, optional]
+### -param ApcRoutine [in, optional]
 
 <dd>
 <p>This parameter is reserved. Device and intermediate drivers should set this pointer to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ApcContext</i> [in, optional]
+### -param ApcContext [in, optional]
 
 <dd>
 <p>This parameter is reserved. Device and intermediate drivers should set this pointer to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>Pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested write operation. The <b>Information</b> member receives the number of bytes actually written to the file.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that contains the data to write to the file.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The size, in bytes, of the buffer pointed to by <i>Buffer</i>.</p>
 </dd>
 
-### -param <i>ByteOffset</i> [in, optional]
+### -param ByteOffset [in, optional]
 
 <dd>
 <p>Pointer to a variable that specifies the starting byte offset in the file for beginning the write operation. If <i>Length</i> and <i>ByteOffset</i> specify a write operation past the current end-of-file mark, <b>ZwWriteFile</b> automatically extends the file and updates the end-of-file mark; any bytes that are not explicitly written between such old and new end-of-file marks are defined to be zero.</p>
@@ -123,7 +123,7 @@ NTSTATUS ZwWriteFile(
 <p>It is also possible to cause a write operation to start at the current end of file by specifying for <i>ByteOffset</i> a pointer to a LARGE_INTEGER value with <b>HighPart</b> set to -1 and <b>LowPart</b> set to FILE_WRITE_TO_END_OF_FILE. This works regardless of whether the I/O Manager is maintaining the current file position.</p>
 </dd>
 
-### -param <i>Key</i> [in, optional]
+### -param Key [in, optional]
 
 <dd>
 <p>Device and intermediate drivers should set this pointer to <b>NULL</b>. </p>

@@ -57,7 +57,7 @@ VOID NTAPI* DestroyMiracastContext(
 ## -parameters
 <dl>
 
-### -param <i>pMiracastContext</i> [in]
+### -param pMiracastContext [in]
 
 <dd>
 <p>A pointer to a context associated with a display adapter.</p>

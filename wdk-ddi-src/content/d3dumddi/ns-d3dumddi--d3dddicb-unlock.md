@@ -55,13 +55,13 @@ typedef struct _D3DDDICB_UNLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of allocations in the array that is specified by <b>phAllocations</b>. </p>
 </dd>
 
-### -field <b>phAllocations</b>
+### -field phAllocations
 
 <dd>
 <p>[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations. The Microsoft Direct3D runtime's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-allocatecb.md">pfnAllocateCb</a> function returns these handles. Therefore, the user-mode display driver uses these handles to unlock the allocations.</p>

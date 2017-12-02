@@ -55,7 +55,7 @@ VOID VideoPortStallExecution(
 ## -parameters
 <dl>
 
-### -param <i>Microseconds</i> 
+### -param Microseconds 
 
 <dd>
 <p>Specifies the delay interval, in microseconds.</p>

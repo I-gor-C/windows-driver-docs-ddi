@@ -60,19 +60,19 @@ BOOLEAN InterruptMessageService(
 ## -parameters
 <dl>
 
-### -param <i>Interrupt</i> [in]
+### -param Interrupt [in]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a> structure for the interrupt. The driver received this pointer in the call to the <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> routine that registered the driver's <i>InterruptMessageService</i> routine.</p>
 </dd>
 
-### -param <i>ServiceContext</i> [in]
+### -param ServiceContext [in]
 
 <dd>
 <p>The <i>ServiceContext</i> value that the driver passed to <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> when the <i>InterruptMessageService</i> routine was registered.</p>
 </dd>
 
-### -param <i>MessageId</i> [in]
+### -param MessageId [in]
 
 <dd>
 <p>The message ID for the interrupt. This value is the index for the interrupt's entry in the <b>MessageInfo</b> member array in the <a href="..\wdm\ns-wdm--io-interrupt-message-info.md">IO_INTERRUPT_MESSAGE_INFO</a> structure that describes the driver's message-signaled interrupts.</p>
@@ -93,7 +93,7 @@ BOOLEAN InterruptMessageService(
 
 <p>An <i>InterruptMessageService</i> executes at an IRQL greater than or equal to the maximum device IRQL (DIRQL) for every interrupt the routine handles.</p>
 
-<p>To define an <i>InterruptMessageService</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define an <i>InterruptMessageService</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define an <i>InterruptMessageService</i> callback routine that is named <code>MyInterruptMessageService</code>, use the KMESSAGE_SERVICE_ROUTINE type as shown in this code example:</p>
 

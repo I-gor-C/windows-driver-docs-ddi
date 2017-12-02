@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookreadystate.htm
 old-project: netvista
 ms.assetid: cd71234b-4b46-4b7b-953b-32e6f014af03
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILPHONEBOOKREADYSTATE, RILPHONEBOOKREADYSTATE, *LPRILPHONEBOOKREADYSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef struct _RILPHONEBOOKREADYSTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwStoreLocations</b>
+### -field dwStoreLocations
 
 <dd></dd>
 </dl>

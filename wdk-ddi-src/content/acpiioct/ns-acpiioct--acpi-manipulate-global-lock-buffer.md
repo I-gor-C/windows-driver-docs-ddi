@@ -7,7 +7,7 @@ old-location: acpi\acpi_manipulate_global_lock_buffer.htm
 old-project: acpi
 ms.assetid: 841CC16D-BDFC-4A3F-9DDD-940A591EBEF2
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: ACPI_MANIPULATE_GLOBAL_LOCK_BUFFER, ACPI_MANIPULATE_GLOBAL_LOCK_BUFFER, *PACPI_MANIPULATE_GLOBAL_LOCK_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,13 +54,13 @@ typedef struct _ACPI_MANIPULATE_GLOBAL_LOCK_BUFFER {
 ## -struct-fields
 <dl>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>Defines the <b>ULONG</b> member <b>Signature</b>.</p>
 </dd>
 
-### -field <b>LockObject</b>
+### -field LockObject
 
 <dd>
 <p>Defines the <b>PVOID</b> member <b>LockObject</b>.</p>

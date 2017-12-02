@@ -56,13 +56,13 @@ VOID IoInitializeDpcRequest(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Supplies a pointer to the <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure representing the physical device that generates interrupts.</p>
 </dd>
 
-### -param <i>DpcRoutine</i> [in]
+### -param DpcRoutine [in]
 
 <dd>
 <p>Supplies a pointer to the driver-supplied <i>DpcForIsr</i> routine.</p>

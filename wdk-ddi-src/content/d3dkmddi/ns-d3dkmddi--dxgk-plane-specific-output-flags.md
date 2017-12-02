@@ -62,31 +62,31 @@ typedef struct _DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>FlipConvertedToImmediate</b>
+### -field FlipConvertedToImmediate
 
 <dd>
 <p>Indicates that the flip was converted to an immediate flip rather than a VSYNC flip. The driver sets FlipConvertedToImmediate when the current line is less than DXGK_MULTIPLANE_OVERLAY_PLANE3.MaxImmediateFlipLine.</p>
 </dd>
 
-### -field <b> PostPresentNeeded</b>
+### -field  PostPresentNeeded
 
 <dd>
 <p>  Indicates that scheduler must call DXGDDI_POSTMULTIPLANEOVERLAYPRESENT for this specific plane. The driver must only set this flag for immediate flips.</p>
 </dd>
 
-### -field <b>HsyncInterruptCompletion</b>
+### -field HsyncInterruptCompletion
 
 <dd>
 <p>Indicates that the scheduler should not assume that the immediate flip for this plane is completed upon the return from DdiSetVidPnSourceAddressWithMultiPlaneOverlay3 DDI. . Instead, the OS will only assume the immediate flip is completed when it receives a CrtcVsyncWithMultiPlaneOverlay2 interrupt notification with the PresentId greater or equal to pending immediate flip request. CrtcVsyncWithMultiPlaneOverlay2 interrupt notification for this flip may be an HsyncFlipCompletion, or it may be a regular VSync notification. The driver must only set this flag for immediate flips.  </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 27 bits (0xFFFFFFE0) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd></dd>
 </dl>

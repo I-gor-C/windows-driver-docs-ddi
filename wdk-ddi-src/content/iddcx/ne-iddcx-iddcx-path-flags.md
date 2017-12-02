@@ -58,7 +58,7 @@ typedef enum _IDDCX_PATH_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="IDDCX_PATH_FLAGS_NONE"></a><a id="iddcx_path_flags_none"></a><b>IDDCX_PATH_FLAGS_NONE</b>
+### -field IDDCX_PATH_FLAGS_NONE
 
 <dd>
 <p>
@@ -66,7 +66,7 @@ typedef enum _IDDCX_PATH_FLAGS {
                     Indicates that the path is not active and has not changed.</p>
 </dd>
 
-### -field <a id="IDDCX_PATH_FLAGS_CHANGED"></a><a id="iddcx_path_flags_changed"></a><b>IDDCX_PATH_FLAGS_CHANGED</b>
+### -field IDDCX_PATH_FLAGS_CHANGED
 
 <dd>
 <p>
@@ -74,7 +74,7 @@ typedef enum _IDDCX_PATH_FLAGS {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_PATH_FLAGS_ACTIVE"></a><a id="iddcx_path_flags_active"></a><b>IDDCX_PATH_FLAGS_ACTIVE</b>
+### -field IDDCX_PATH_FLAGS_ACTIVE
 
 <dd>
 <p>

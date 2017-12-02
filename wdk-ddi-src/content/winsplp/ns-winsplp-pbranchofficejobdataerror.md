@@ -66,73 +66,73 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>LastError</b>
+### -field LastError
 
 <dd>
 <p>Specifies the LastError at the time the event was logged.</p>
 </dd>
 
-### -field <b>pDocumentName</b>
+### -field pDocumentName
 
 <dd>
 <p>Specifies the name of the printed document.</p>
 </dd>
 
-### -field <b>pUserName</b>
+### -field pUserName
 
 <dd>
 <p>Specifies the user who submitted the job.</p>
 </dd>
 
-### -field <b>pPrinterName</b>
+### -field pPrinterName
 
 <dd>
 <p>Specifies the name of the print connection.</p>
 </dd>
 
-### -field <b>pDataType</b>
+### -field pDataType
 
 <dd>
 <p>Specifies the data type of the job.</p>
 </dd>
 
-### -field <b>TotalSize</b>
+### -field TotalSize
 
 <dd>
 <p>Specifies the 64-bit size of the job.</p>
 </dd>
 
-### -field <b>PrintedSize</b>
+### -field PrintedSize
 
 <dd>
 <p>Specifies the 64-bit size of the job.</p>
 </dd>
 
-### -field <b>TotalPages</b>
+### -field TotalPages
 
 <dd>
 <p>Specifies the total number of pages in the job.</p>
 </dd>
 
-### -field <b>PrintedPages</b>
+### -field PrintedPages
 
 <dd>
 <p>Specifies the number of pages currently printed.</p>
 </dd>
 
-### -field <b>pMachineName</b>
+### -field pMachineName
 
 <dd>
 <p>Specifies the name of the client machine printing the job.</p>
 </dd>
 
-### -field <b>pJobError</b>
+### -field pJobError
 
 <dd>
 <p>Specifies the failure code for a JOB_ERROR event.</p>
 </dd>
 
-### -field <b>pErrorDescription</b>
+### -field pErrorDescription
 
 <dd>
 <p>Specifies the text description of the error, if available.</p>

@@ -60,13 +60,13 @@ typedef PFNDRMGETCONTENTRIGHTS DRMGetContentRights;
 ## -parameters
 <dl>
 
-### -param <i>ContentId</i> [in]
+### -param ContentId [in]
 
 <dd>
 <p>This parameter is reserved for system use.</p>
 </dd>
 
-### -param <i>DrmRights</i> [out]
+### -param DrmRights [out]
 
 <dd>
 <p>This parameter is reserved for system use.</p>

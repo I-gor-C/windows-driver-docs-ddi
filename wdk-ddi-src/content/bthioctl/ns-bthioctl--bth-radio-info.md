@@ -57,25 +57,25 @@ typedef struct _BTH_RADIO_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>lmpSupportedFeatures</b>
+### -field lmpSupportedFeatures
 
 <dd>
 <p>A bitmap of Link Management Protocol (LMP) features that are supported by the local radio.</p>
 </dd>
 
-### -field <b>mfg</b>
+### -field mfg
 
 <dd>
 <p>The identification of the manufacturer.</p>
 </dd>
 
-### -field <b>lmpSubversion</b>
+### -field lmpSubversion
 
 <dd>
 <p>The minor version number for the LMP that is used by the local radio.</p>
 </dd>
 
-### -field <b>lmpVersion</b>
+### -field lmpVersion
 
 <dd>
 <p>The major version number for the LMP that is used by the local radio.</p>

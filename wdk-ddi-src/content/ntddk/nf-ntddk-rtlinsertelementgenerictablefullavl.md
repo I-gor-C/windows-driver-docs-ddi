@@ -7,7 +7,7 @@ old-location: ifsk\rtlinsertelementgenerictablefullavl.htm
 old-project: ifsk
 ms.assetid: c7d346ab-6990-4636-bafd-2e448a937f3b
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlInsertElementGenericTableFullAvl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,56 +59,56 @@ PVOID RtlInsertElementGenericTableFullAvl(
 ## -parameters
 <dl>
 
-### -param <i>Table</i> [in]
+### -param Table [in]
 
 <dd>
 <p>Pointer to a generic Adelson-Velsky/Landis (AVL) table (<a href="..\ntddk\ns-ntddk--rtl-avl-table.md">RTL_AVL_TABLE</a>) that was initialized by a call to <a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A caller-allocated buffer that contains the user data to copy into the new element. For more information, see <a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>. </p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Size in bytes of data in <i>Buffer.</i></p>
 </dd>
 
-### -param <i>NewElement</i> [out, optional]
+### -param NewElement [out, optional]
 
 <dd>
 <p>On output, a value of <b>TRUE</b> means the insertion of the new element in the generic table was successful. A value of <b>FALSE</b> means the insertion failed.</p>
 </dd>
 
-### -param <i>NodeOrParent</i> [in]
+### -param NodeOrParent [in]
 
 <dd>
 <p>The search result of a previous call to <a href="..\ntddk\nf-ntddk-rtllookupelementgenerictablefullavl.md">RtlLookupElementGenericTableFullAvl</a>. This value indicates to the <b>RtlInsertElementGenericTableFullAvl</b> routine whether the tree is currently empty, or if not empty, whether to insert the new entry to the left or the right of the parent entry. The <i>SearchResult</i> parameter can have any of the following values:</p>
 <p></p>
 <dl>
 
-### -param <a id="TableEmptyTree"></a><a id="tableemptytree"></a><a id="TABLEEMPTYTREE"></a><b>TableEmptyTree</b>
+### -param TableEmptyTree
 
 <dd>
 <p>The tree was empty. The contents of <i>NodeOrParent</i> has <i>not</i> been altered.</p>
 </dd>
 
-### -param <a id="TableFoundNode"></a><a id="tablefoundnode"></a><a id="TABLEFOUNDNODE"></a><b>TableFoundNode</b>
+### -param TableFoundNode
 
 <dd>
 <p>The <b>RtlInsertElementGenericTableFullAvl</b> routine found a table entry whose key matches the data in <i>Buffer</i>. <i>NodeOrParent</i> contains a pointer to the matched entry.</p>
 </dd>
 
-### -param <a id="TableInsertAsLeft"></a><a id="tableinsertasleft"></a><a id="TABLEINSERTASLEFT"></a><b>TableInsertAsLeft</b>
+### -param TableInsertAsLeft
 
 <dd>
 <p>The <b>RtlInsertElementGenericTableFullAvl</b> routine did <i>not</i> find a table entry whose key matches the data in <i>Buffer</i>. If the entry that <b>RtlInsertElementGenericTableFullAvl</b> searched for were in the table, it would be the left child of the entry that <i>NodeOrParent</i> points to.</p>
 </dd>
 
-### -param <a id="TableInsertAsRight"></a><a id="tableinsertasright"></a><a id="TABLEINSERTASRIGHT"></a><b>TableInsertAsRight</b>
+### -param TableInsertAsRight
 
 <dd>
 <p>The <b>RtlInsertElementGenericTableFullAvl</b> routine did <i>not</i> find a table entry whose key matches the data in <i>Buffer</i>. If the entry that <b>RtlInsertElementGenericTableFullAvl</b> searched for were in the table, it would be the right child of the entry that <i>NodeOrParent</i> points to.</p>
@@ -116,7 +116,7 @@ PVOID RtlInsertElementGenericTableFullAvl(
 </dl>
 </dd>
 
-### -param <i>SearchResult</i> [in]
+### -param SearchResult [in]
 
 <dd>
 <p>A pointer to a table entry. If the <b>RtlInsertElementGenericTableFullAvl</b> routine matches an entry, <i>NodeOrParent</i> points to the matched entry. If the <b>RtlInsertElementGenericTableFullAvl</b> routine fails to find a match, <i>NodeOrParent</i> points to the entry that would be the parent of the entry that <b>RtlInsertElementGenericTableFullAvl</b> routine was searching for.</p>
@@ -222,4 +222,4 @@ PVOID RtlInsertElementGenericTableFullAvl(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInsertElementGenericTableFullAvl routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInsertElementGenericTableFullAvl routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

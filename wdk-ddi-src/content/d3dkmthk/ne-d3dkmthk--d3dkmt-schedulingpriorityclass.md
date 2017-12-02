@@ -59,37 +59,37 @@ typedef enum _D3DKMT_SCHEDULINGPRIORITYCLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_SCHEDULINGPRIORITYCLASS_IDLE"></a><a id="d3dkmt_schedulingpriorityclass_idle"></a><b>D3DKMT_SCHEDULINGPRIORITYCLASS_IDLE</b>
+### -field D3DKMT_SCHEDULINGPRIORITYCLASS_IDLE
 
 <dd>
 <p>The process is idle.</p>
 </dd>
 
-### -field <a id="D3DKMT_SCHEDULINGPRIORITYCLASS_BELOW_NORMAL"></a><a id="d3dkmt_schedulingpriorityclass_below_normal"></a><b>D3DKMT_SCHEDULINGPRIORITYCLASS_BELOW_NORMAL</b>
+### -field D3DKMT_SCHEDULINGPRIORITYCLASS_BELOW_NORMAL
 
 <dd>
 <p>The scheduling priority of the process is below normal.</p>
 </dd>
 
-### -field <a id="D3DKMT_SCHEDULINGPRIORITYCLASS_NORMAL"></a><a id="d3dkmt_schedulingpriorityclass_normal"></a><b>D3DKMT_SCHEDULINGPRIORITYCLASS_NORMAL</b>
+### -field D3DKMT_SCHEDULINGPRIORITYCLASS_NORMAL
 
 <dd>
 <p>The scheduling priority of the process is normal.</p>
 </dd>
 
-### -field <a id="D3DKMT_SCHEDULINGPRIORITYCLASS_ABOVE_NORMAL"></a><a id="d3dkmt_schedulingpriorityclass_above_normal"></a><b>D3DKMT_SCHEDULINGPRIORITYCLASS_ABOVE_NORMAL</b>
+### -field D3DKMT_SCHEDULINGPRIORITYCLASS_ABOVE_NORMAL
 
 <dd>
 <p>The scheduling priority of the process is above normal.</p>
 </dd>
 
-### -field <a id="D3DKMT_SCHEDULINGPRIORITYCLASS_HIGH"></a><a id="d3dkmt_schedulingpriorityclass_high"></a><b>D3DKMT_SCHEDULINGPRIORITYCLASS_HIGH</b>
+### -field D3DKMT_SCHEDULINGPRIORITYCLASS_HIGH
 
 <dd>
 <p>The scheduling priority of the process is high.</p>
 </dd>
 
-### -field <a id="D3DKMT_SCHEDULINGPRIORITYCLASS_REALTIME"></a><a id="d3dkmt_schedulingpriorityclass_realtime"></a><b>D3DKMT_SCHEDULINGPRIORITYCLASS_REALTIME</b>
+### -field D3DKMT_SCHEDULINGPRIORITYCLASS_REALTIME
 
 <dd>
 <p>The scheduling priority of the process is in real time.</p>

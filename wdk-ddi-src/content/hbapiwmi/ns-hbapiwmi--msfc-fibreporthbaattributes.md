@@ -56,19 +56,19 @@ typedef struct _MSFC_FibrePortHBAAttributes {
 ## -struct-fields
 <dl>
 
-### -field <b>UniquePortId</b>
+### -field UniquePortId
 
 <dd>
 <p>Unique identifier for the port. This identifier must be unique among all ports on all adapters. The same value for the identifier must be used for the same port in other classes that expose port information.</p>
 </dd>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.</p>
 </dd>
 
-### -field <b>Attributes</b>
+### -field Attributes
 
 <dd>
 <p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--msfc-hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a> that contains information about the port attributes. </p>

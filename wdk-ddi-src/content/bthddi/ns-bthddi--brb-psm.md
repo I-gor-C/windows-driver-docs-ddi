@@ -56,7 +56,7 @@ struct _BRB_PSM {
 ## -struct-fields
 <dl>
 
-### -field <b>Hdr</b>
+### -field Hdr
 
 <dd>
 <p>A 
@@ -64,7 +64,7 @@ struct _BRB_PSM {
      about the current BRB.</p>
 </dd>
 
-### -field <b>Psm</b>
+### -field Psm
 
 <dd>
 <p>When the _BRB_PSM structure is passed as input for a 

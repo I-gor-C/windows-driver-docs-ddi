@@ -7,7 +7,7 @@ old-location: netvista\ril_getmsginuiccstatus.htm
 old-project: netvista
 ms.assetid: 9cf60a9b-cb1e-46a5-b8d8-c7fc2c6f2cf3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetMsgInUiccStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_GetMsgInUiccStatus(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>hUiccApp</i> 
+### -param hUiccApp 
 
 <dd></dd>
 
-### -param <i>dwIndex</i> 
+### -param dwIndex 
 
 <dd></dd>
 </dl>

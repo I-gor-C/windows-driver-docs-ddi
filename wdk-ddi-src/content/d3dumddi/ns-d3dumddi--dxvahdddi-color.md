@@ -55,13 +55,13 @@ typedef union _DXVAHDDDI_COLOR {
 ## -struct-fields
 <dl>
 
-### -field <b>RGB</b>
+### -field RGB
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-color-rgba.md">DXVAHDDDI_COLOR_RGBA</a> structure that describes color in RGB terms. </p>
 </dd>
 
-### -field <b>YCbCr</b>
+### -field YCbCr
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-color-ycbcra.md">DXVAHDDDI_COLOR_YCbCrA</a> structure that describes color in a YCbCr terms. </p>

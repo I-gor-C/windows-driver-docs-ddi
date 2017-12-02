@@ -57,19 +57,19 @@ typedef struct _SWENUM_INSTALL_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceId</b>
+### -field DeviceId
 
 <dd>
 <p>GUID that specifies the demand-load bus enumerator object's device ID.</p>
 </dd>
 
-### -field <b>InterfaceId</b>
+### -field InterfaceId
 
 <dd>
 <p>GUID that specifies the demand-load bus enumerator object's interface ID.</p>
 </dd>
 
-### -field <b>ReferenceString</b>
+### -field ReferenceString
 
 <dd>
 <p>A reference string that a driver can use to uniquely identify multiple interface instances of the same type for a single device.</p>

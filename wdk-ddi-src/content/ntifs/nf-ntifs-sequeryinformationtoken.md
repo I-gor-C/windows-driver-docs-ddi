@@ -7,7 +7,7 @@ old-location: ifsk\sequeryinformationtoken.htm
 old-project: ifsk
 ms.assetid: 97e28b53-8b4c-4f76-b6bb-21dad2233463
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: SeQueryInformationToken
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ NTSTATUS SeQueryInformationToken(
 ## -parameters
 <dl>
 
-### -param <i>Token</i> [in]
+### -param Token [in]
 
 <dd>
 <p>A pointer to an access token from which information is to be retrieved. If <i>TokenInformationClass</i> is set to <i>TokenSource</i>, the handle must have TOKEN_QUERY_SOURCE access. For all other <i>TokenInformationClass</i> values, the handle must have TOKEN_QUERY access. </p>
 </dd>
 
-### -param <i>TokenInformationClass</i> [in]
+### -param TokenInformationClass [in]
 
 <dd>
 <p>A value from the <a href="..\ntifs\ne-ntifs--token-information-class.md">TOKEN_INFORMATION_CLASS</a> enumerated type that identifies the type of information to be retrieved. </p>
 </dd>
 
-### -param <i>TokenInformation</i> [out]
+### -param TokenInformation [out]
 
 <dd>
 <p>If STATUS_SUCCESS is returned, 
@@ -80,7 +80,7 @@ NTSTATUS SeQueryInformationToken(
 	  <b>SeQueryInformationToken</b> 
 	  from paged pool. This buffer must eventually be freed by the caller by 
 	  using either 
-	  <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> or 
+	  <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> or 
 	  <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>.
 	  </p>
 <table>
@@ -320,4 +320,4 @@ NTSTATUS SeQueryInformationToken(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeQueryInformationToken routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeQueryInformationToken routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

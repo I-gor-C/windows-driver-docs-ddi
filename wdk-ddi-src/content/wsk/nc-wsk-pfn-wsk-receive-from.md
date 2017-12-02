@@ -7,7 +7,7 @@ old-location: netvista\wskreceivefrom.htm
 old-project: netvista
 ms.assetid: 769fea0d-e35a-4385-8027-f1518c25b637
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ NTSTATUS WSKAPI * WskReceiveFrom(
 ## -parameters
 <dl>
 
-### -param <i>Socket</i> [in]
+### -param Socket [in]
 
 <dd>
 <p>A pointer to a 
@@ -72,7 +72,7 @@ NTSTATUS WSKAPI * WskReceiveFrom(
      object for the datagram socket from which to receive the datagram.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to an initialized 
@@ -80,14 +80,14 @@ NTSTATUS WSKAPI * WskReceiveFrom(
      that receives the datagram from the socket.</p>
 </dd>
 
-### -param <i>Flags</i> 
+### -param Flags 
 
 <dd>
 <p>This parameter is reserved for system use. A WSK application must set this parameter to
      zero.</p>
 </dd>
 
-### -param <i>RemoteAddress</i> [out, optional]
+### -param RemoteAddress [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives the remote transport address from which the
@@ -97,7 +97,7 @@ NTSTATUS WSKAPI * WskReceiveFrom(
      <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ControlInfoLength</i> [in, out]
+### -param ControlInfoLength [in, out]
 
 <dd>
 <p>A pointer to a ULONG-typed variable that specifies the size of the buffer that is pointed to by
@@ -109,7 +109,7 @@ NTSTATUS WSKAPI * WskReceiveFrom(
      <i>ControlInfo</i> parameter is ignored.</p>
 </dd>
 
-### -param <i>ControlInfo</i> [out, optional]
+### -param ControlInfo [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives the control information that is associated
@@ -122,7 +122,7 @@ NTSTATUS WSKAPI * WskReceiveFrom(
      <i>ControlInfo</i> parameter should be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ControlFlags</i> [out, optional]
+### -param ControlFlags [out, optional]
 
 <dd>
 <p>A pointer to a ULONG-typed variable that receives the bitwise OR of a combination of the following
@@ -131,21 +131,21 @@ NTSTATUS WSKAPI * WskReceiveFrom(
 <p></p>
 <dl>
 
-### -param <a id="MSG_BCAST"></a><a id="msg_bcast"></a>MSG_BCAST
+### -param MSG_BCAST
 
 <dd>
 <p>The datagram was received as a link-layer broadcast or with a destination transport address that
        is a broadcast address.</p>
 </dd>
 
-### -param <a id="MSG_MCAST"></a><a id="msg_mcast"></a>MSG_MCAST
+### -param MSG_MCAST
 
 <dd>
 <p>The datagram was received with a destination transport address that is a multicast
        address.</p>
 </dd>
 
-### -param <a id="MSG_TRUNC"></a><a id="msg_trunc"></a>MSG_TRUNC
+### -param MSG_TRUNC
 
 <dd>
 <p>The datagram was truncated because the size of the datagram was larger than the size of the
@@ -153,7 +153,7 @@ NTSTATUS WSKAPI * WskReceiveFrom(
        <i>Buffer</i> parameter.</p>
 </dd>
 
-### -param <a id="MSG_CTRUNC"></a><a id="msg_ctrunc"></a>MSG_CTRUNC
+### -param MSG_CTRUNC
 
 <dd>
 <p>The control information data was truncated because the number of bytes of control information
@@ -164,7 +164,7 @@ NTSTATUS WSKAPI * WskReceiveFrom(
 <p>This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the receive operation
@@ -313,4 +313,4 @@ NTSTATUS WSKAPI * WskReceiveFrom(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_RECEIVE_FROM callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_RECEIVE_FROM callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

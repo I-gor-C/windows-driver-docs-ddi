@@ -68,65 +68,65 @@ typedef struct _D3DDDIARG_OPENRESOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of elements in the array that is specified by <b>pOpenAllocationInfo</b>. <b>NumAllocations</b> represents the number of allocations to open.</p>
 </dd>
 
-### -field <b>pOpenAllocationInfo</b>
+### -field pOpenAllocationInfo
 
 <dd>
 <p>[in] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.</p>
 </dd>
 
-### -field <b>pOpenAllocationInfo2</b>
+### -field pOpenAllocationInfo2
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>This member is available beginning with Windows 7.</p>
 </dd>
 
-### -field <b>pOpenAllocationInfo</b>
+### -field pOpenAllocationInfo
 
 <dd>
 <p>[in] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.</p>
 </dd>
 
-### -field <b>hKMResource</b>
+### -field hKMResource
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the resource that is associated with the allocations. </p>
 <p>This kernel-mode handle represents an existing shared resource that was previously created through a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource.md">CreateResource</a> function. </p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in] A pointer to private data that was passed to the display miniport driver when the resource was created. This data is per resource and not per allocation like the private data in each allocation's <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structure. </p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the private data that is pointed to by <b>pPrivateDriverData</b>.</p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in/out] A handle to the resource that is associated with the allocations. </p>
 <p>The user-mode display driver should save this handle and use it to identify the resource anytime that the driver calls back into the Microsoft Direct3D runtime. The user-mode display driver should generate a unique handle and pass it back to the Direct3D runtime. The Direct3D runtime uses this handle in driver calls to identify the resource.</p>
 </dd>
 
-### -field <b>Rotation</b>
+### -field Rotation
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-rotation.md">D3DDDI_ROTATION</a>-typed value that identifies the orientation of the shared primary resource. </p>
 <p>When the primary resource is used with a full-screen device and is rotated, the driver might be required to create interim allocations to handle the full-screen device. The <b>Fullscreen</b> bitfield flag is set in the <b>Flags</b> member to indicate that the primary resource is used with a full-screen device.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-openresourceflags.md">D3DDDI_OPENRESOURCEFLAGS</a> structure that identifies the type of resource to open. </p>

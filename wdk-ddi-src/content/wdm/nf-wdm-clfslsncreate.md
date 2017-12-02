@@ -57,19 +57,19 @@ CLFS_LSN ClfsLsnCreate(
 ## -parameters
 <dl>
 
-### -param <i>cidContainer</i> [in]
+### -param cidContainer [in]
 
 <dd>
 <p>An integer in the range 0x0 through 0xFFFFFFFF that supplies the container identifier.</p>
 </dd>
 
-### -param <i>offBlock</i> [in]
+### -param offBlock [in]
 
 <dd>
 <p>The block offset. This parameter must be a multiple of 512.</p>
 </dd>
 
-### -param <i>cRecord</i> [in]
+### -param cRecord [in]
 
 <dd>
 <p>An integer in the range 0 - 511 that supplies the record sequence number.</p>

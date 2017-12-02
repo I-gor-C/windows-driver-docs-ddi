@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols3_getsymbolentryoffsetregions.htm
 old-project: debugger
 ms.assetid: 986774F6-5256-4703-990A-EAB4AB09AF55
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSymbols3, GetSymbolEntryOffsetRegions, IDebugSymbols3::GetSymbolEntryOffsetRegions
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ HRESULT GetSymbolEntryOffsetRegions(
 ## -parameters
 <dl>
 
-### -param <i>Id</i> [in]
+### -param Id [in]
 
 <dd>
 <p>The ID of a module as a pointer to a <a href="..\dbgeng\ns-dbgeng--debug-module-and-id.md">DEBUG_MODULE_AND_ID</a> structure. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A bit-set that contains options that affect the behavior of this method. </p>
 </dd>
 
-### -param <i>Regions</i> [out]
+### -param Regions [out]
 
 <dd>
 <p>The memory regions associated with the symbol. </p>
 </dd>
 
-### -param <i>RegionsCount</i> [in]
+### -param RegionsCount [in]
 
 <dd>
 <p>The number of regions associated with the symbol.</p>
 </dd>
 
-### -param <i>RegionsAvail</i> [out, optional]
+### -param RegionsAvail [out, optional]
 
 <dd>
 <p>A pointer to the number of regions available to the symbol. </p>
@@ -131,4 +131,4 @@ HRESULT GetSymbolEntryOffsetRegions(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetSymbolEntryOffsetRegions method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetSymbolEntryOffsetRegions method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\wdi_exemption_packet_type.htm
 old-project: netvista
 ms.assetid: 7F584EBE-9ACB-4AC7-9472-34322F24EF74
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _WDI_EXEMPTION_PACKET_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_EXEMPT_PACKET_TYPE_UNICAST"></a><a id="wdi_exempt_packet_type_unicast"></a><b>WDI_EXEMPT_PACKET_TYPE_UNICAST</b>
+### -field WDI_EXEMPT_PACKET_TYPE_UNICAST
 
 <dd>
 <p>Exempt unicast packets only.</p>
 </dd>
 
-### -field <a id="WDI_EXEMPT_PACKET_TYPE_MULTICAST"></a><a id="wdi_exempt_packet_type_multicast"></a><b>WDI_EXEMPT_PACKET_TYPE_MULTICAST</b>
+### -field WDI_EXEMPT_PACKET_TYPE_MULTICAST
 
 <dd>
 <p>Exempt multicast and broadcast packets only.</p>
 </dd>
 
-### -field <a id="WDI_EXEMPT_PACKET_TYPE_BOTH"></a><a id="wdi_exempt_packet_type_both"></a><b>WDI_EXEMPT_PACKET_TYPE_BOTH</b>
+### -field WDI_EXEMPT_PACKET_TYPE_BOTH
 
 <dd>
 <p>Exempt all packet types.</p>

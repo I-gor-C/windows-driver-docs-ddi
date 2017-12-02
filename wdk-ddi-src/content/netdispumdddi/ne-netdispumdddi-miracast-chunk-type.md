@@ -61,49 +61,49 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="MIRACAST_CHUNK_TYPE_UNKNOWN"></a><a id="miracast_chunk_type_unknown"></a><b>MIRACAST_CHUNK_TYPE_UNKNOWN</b>
+### -field MIRACAST_CHUNK_TYPE_UNKNOWN
 
 <dd>
 <p>An unknown or undefined chunk type.</p>
 </dd>
 
-### -field <a id="MIRACAST_CHUNK_TYPE_COLOR_CONVERT_COMPLETE"></a><a id="miracast_chunk_type_color_convert_complete"></a><b>MIRACAST_CHUNK_TYPE_COLOR_CONVERT_COMPLETE</b>
+### -field MIRACAST_CHUNK_TYPE_COLOR_CONVERT_COMPLETE
 
 <dd>
 <p>Color conversion has completed on the chunk.</p>
 </dd>
 
-### -field <a id="MIRACAST_CHUNK_TYPE_ENCODE_COMPLETE"></a><a id="miracast_chunk_type_encode_complete"></a><b>MIRACAST_CHUNK_TYPE_ENCODE_COMPLETE</b>
+### -field MIRACAST_CHUNK_TYPE_ENCODE_COMPLETE
 
 <dd>
 <p>Encoding has completed on the chunk.</p>
 </dd>
 
-### -field <a id="MIRACAST_CHUNK_TYPE_FRAME_START"></a><a id="miracast_chunk_type_frame_start"></a><b>MIRACAST_CHUNK_TYPE_FRAME_START</b>
+### -field MIRACAST_CHUNK_TYPE_FRAME_START
 
 <dd>
 <p>The chunk is at the start of the Wi-Fi frame.</p>
 </dd>
 
-### -field <a id="MIRACAST_CHUNK_TYPE_FRAME_DROPPED"></a><a id="miracast_chunk_type_frame_dropped"></a><b>MIRACAST_CHUNK_TYPE_FRAME_DROPPED</b>
+### -field MIRACAST_CHUNK_TYPE_FRAME_DROPPED
 
 <dd>
 <p>The chunk is in a dropped Wi-Fi frame.</p>
 </dd>
 
-### -field <a id="MIRACAST_CHUNK_TYPE_ENCODE_DRIVER_DEFINED_1"></a><a id="miracast_chunk_type_encode_driver_defined_1"></a><b>MIRACAST_CHUNK_TYPE_ENCODE_DRIVER_DEFINED_1</b>
+### -field MIRACAST_CHUNK_TYPE_ENCODE_DRIVER_DEFINED_1
 
 <dd>
 <p>Encoding is driver-defined, of type 1.</p>
 </dd>
 
-### -field <a id="MIRACAST_CHUNK_TYPE_ENCODE_DRIVER_DEFINED_2"></a><a id="miracast_chunk_type_encode_driver_defined_2"></a><b>MIRACAST_CHUNK_TYPE_ENCODE_DRIVER_DEFINED_2</b>
+### -field MIRACAST_CHUNK_TYPE_ENCODE_DRIVER_DEFINED_2
 
 <dd>
 <p>Encoding is driver-defined, of type 2.</p>
 </dd>
 
-### -field <a id="MIRACAST_CHUNK_TYPE_ENCODE_FORCE_UINT32"></a><a id="miracast_chunk_type_encode_force_uint32"></a><b>MIRACAST_CHUNK_TYPE_ENCODE_FORCE_UINT32</b>
+### -field MIRACAST_CHUNK_TYPE_ENCODE_FORCE_UINT32
 
 <dd>
 <p>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</p>

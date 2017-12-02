@@ -56,19 +56,19 @@ typedef enum DXGI_DDI_MODE_SCALING {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGI_DDI_MODE_SCALING_UNSPECIFIED"></a><a id="dxgi_ddi_mode_scaling_unspecified"></a><b>DXGI_DDI_MODE_SCALING_UNSPECIFIED</b>
+### -field DXGI_DDI_MODE_SCALING_UNSPECIFIED
 
 <dd>
 <p>A DXGI_DDI_MODE_SCALING-typed variable has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MODE_SCALING_STRETCHED"></a><a id="dxgi_ddi_mode_scaling_stretched"></a><b>DXGI_DDI_MODE_SCALING_STRETCHED</b>
+### -field DXGI_DDI_MODE_SCALING_STRETCHED
 
 <dd>
 <p>Stretched content can be displayed. </p>
 </dd>
 
-### -field <a id="DXGI_DDI_MODE_SCALING_CENTERED"></a><a id="dxgi_ddi_mode_scaling_centered"></a><b>DXGI_DDI_MODE_SCALING_CENTERED</b>
+### -field DXGI_DDI_MODE_SCALING_CENTERED
 
 <dd>
 <p>Centered content can be displayed. </p>

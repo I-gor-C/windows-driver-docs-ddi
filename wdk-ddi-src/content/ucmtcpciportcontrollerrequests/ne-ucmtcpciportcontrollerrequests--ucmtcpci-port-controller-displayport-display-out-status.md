@@ -56,13 +56,13 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="UcmTcpciPortControllerDisplayOutStatusOff"></a><a id="ucmtcpciportcontrollerdisplayoutstatusoff"></a><a id="UCMTCPCIPORTCONTROLLERDISPLAYOUTSTATUSOFF"></a><b>UcmTcpciPortControllerDisplayOutStatusOff</b>
+### -field UcmTcpciPortControllerDisplayOutStatusOff
 
 <dd>
 <p>Display out status is enabled.</p>
 </dd>
 
-### -field <a id="UcmTcpciPortControllerDisplayOutStatusOn"></a><a id="ucmtcpciportcontrollerdisplayoutstatuson"></a><a id="UCMTCPCIPORTCONTROLLERDISPLAYOUTSTATUSON"></a><b>UcmTcpciPortControllerDisplayOutStatusOn</b>
+### -field UcmTcpciPortControllerDisplayOutStatusOn
 
 <dd>
 <p>Display out status is enabled.</p>
@@ -105,10 +105,10 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ioctl_ucmtcpci_port_controller_displayport_display_out_status_changed">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED</a>
+<a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl-ucmtcpci-port-controller-displayport-display-out-status-changed.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED</a>
 </dt>
 <dt>
-<a href="buses._ucmtcpci_port_controller_displayport_display_out_status_changed_in_params">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED_IN_PARAMS</a>
+<a href="..\ucmtcpciportcontrollerrequests\ns-ucmtcpciportcontrollerrequests--ucmtcpci-port-controller-displayport-display-out-status-changed-in-params.md">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED_IN_PARAMS</a>
 </dt>
 </dl>
 <p> </p>

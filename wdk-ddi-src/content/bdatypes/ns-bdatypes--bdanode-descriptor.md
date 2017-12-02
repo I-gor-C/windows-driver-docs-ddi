@@ -56,19 +56,19 @@ typedef struct _BDANODE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>ulBdaNodeType</b>
+### -field ulBdaNodeType
 
 <dd>
 <p>The node type as the BDA template topology identifies it. The BDA node-type identifier typically corresponds to the index of the element in the zero-based array of node types. This array of node types is an array of KSNODE_DESCRIPTOR structures. </p>
 </dd>
 
-### -field <b>guidFunction</b>
+### -field guidFunction
 
 <dd>
 <p>GUID that describes the node's function. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff556529">BDA Node Category GUIDs</a> for a list of these GUIDs.</p>
 </dd>
 
-### -field <b>guidName</b>
+### -field guidName
 
 <dd>
 <p>GUID that can be used to store a string containing the name of the node. Applications can search the registry for this GUID to obtain the node's name and then can display the name. </p>

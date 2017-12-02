@@ -57,19 +57,19 @@ VOID ProbeForWrite(
 ## -parameters
 <dl>
 
-### -param <i>Address</i> [in, out]
+### -param Address [in, out]
 
 <dd>
 <p>Specifies the beginning of the user-mode buffer.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the length, in bytes, of the user-mode buffer.</p>
 </dd>
 
-### -param <i>Alignment</i> [in]
+### -param Alignment [in]
 
 <dd>
 <p>Specifies the required alignment, in bytes, of the beginning of the user-mode buffer.</p>

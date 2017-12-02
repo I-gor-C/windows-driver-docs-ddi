@@ -61,7 +61,7 @@ typedef EVT_IDD_CX_MONITOR_OPM_GET_INFOMATION PFN_IDD_CX_MONITOR_OPM_GET_INFOMAT
 ## -parameters
 <dl>
 
-### -param <i>OpmCxtObject</i> [in]
+### -param OpmCxtObject [in]
 
 <dd>
 <p>
@@ -69,7 +69,7 @@ typedef EVT_IDD_CX_MONITOR_OPM_GET_INFOMATION PFN_IDD_CX_MONITOR_OPM_GET_INFOMAT
                 The object for the OPM context that information will be gotten from.</p>
 </dd>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>
@@ -77,7 +77,7 @@ typedef EVT_IDD_CX_MONITOR_OPM_GET_INFOMATION PFN_IDD_CX_MONITOR_OPM_GET_INFOMAT
                 Input arguments used by <b>EVT_IDD_CX_MONITOR_OPM_GET_INFOMATION</b>.</p>
 </dd>
 
-### -param <i>pOutArgs</i> [out]
+### -param pOutArgs [out]
 
 <dd>
 <p>

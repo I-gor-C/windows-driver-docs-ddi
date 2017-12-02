@@ -54,7 +54,7 @@ VOID KsReleaseDeviceSecurityLock(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [in]
+### -param Header [in]
 
 <dd>
 <p>Points to a header previously allocated by <b>KsAllocateDeviceHeader</b> whose security lock is to be released.</p>

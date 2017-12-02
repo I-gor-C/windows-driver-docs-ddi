@@ -7,7 +7,7 @@ old-location: wdf\wdf_read_register_ulong64.htm
 old-project: wdf
 ms.assetid: A47BEA59-CBDD-41B5-9CEB-DC354D2BCC72
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_READ_REGISTER_ULONG64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ ULONG64 WDF_READ_REGISTER_ULONG64(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>A pointer to the register address, which must be a mapped range in memory space.</p>

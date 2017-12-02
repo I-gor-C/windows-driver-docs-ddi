@@ -7,7 +7,7 @@ old-location: ifsk\rxpacquireprefixtablelockshared.htm
 old-project: ifsk
 ms.assetid: 89924d1d-80c2-4778-9647-c3add9e7d013
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxpAcquirePrefixTableLockShared
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ BOOLEAN RxpAcquirePrefixTableLockShared(
 ## -parameters
 <dl>
 
-### -param <i>pTable</i> 
+### -param pTable 
 
 <dd>
 <p>A pointer to the RX_PREFIX_TABLE structure where the lock will be acquired.</p>
 </dd>
 
-### -param <i>Wait</i> 
+### -param Wait 
 
 <dd>
 <p>A Boolean value that specifies the behavior whenever the resource cannot be acquired immediately. If <b>TRUE</b>, the caller is put into a wait state until the resource can be acquired. If <b>FALSE</b>, the routine immediately returns, whether the shared resource can be acquired. </p>
@@ -126,10 +126,10 @@ BOOLEAN RxpAcquirePrefixTableLockShared(
 <a href="ifsk.fsrtlexitfilesystem">FsRtlExitFileSystem</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a>
+<a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
+<a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
 </dt>
 <dt>
 <a href="..\prefix\nf-prefix-rxprefixtablelookupname.md">RxPrefixTableLookupName</a>
@@ -143,4 +143,4 @@ BOOLEAN RxpAcquirePrefixTableLockShared(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxpAcquirePrefixTableLockShared function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxpAcquirePrefixTableLockShared function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

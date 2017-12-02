@@ -60,19 +60,19 @@ BOOL DrvQueryColorProfile(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> 
+### -param hPrinter 
 
 <dd>
 <p>Caller-supplied printer handle.</p>
 </dd>
 
-### -param <i>pdevmode</i> [in]
+### -param pdevmode [in]
 
 <dd>
 <p>Caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure.</p>
 </dd>
 
-### -param <i>ulQueryMode</i> 
+### -param ulQueryMode 
 
 <dd>
 <p>One of the following caller-supplied bit flags, indicating the type of profile to be specified.</p>
@@ -101,19 +101,19 @@ BOOL DrvQueryColorProfile(
 <p> </p>
 </dd>
 
-### -param <i>pvProfileData</i> [out]
+### -param pvProfileData [out]
 
 <dd>
 <p>Caller-supplied pointer to a buffer to receive profile information.</p>
 </dd>
 
-### -param <i>pcbProfileData</i> [out]
+### -param pcbProfileData [out]
 
 <dd>
 <p>Caller-supplied pointer to a value representing the size, in bytes, of the buffer pointed to by <i>pvProfileData</i>.</p>
 </dd>
 
-### -param <i>pflProfileData</i> [out]
+### -param pflProfileData [out]
 
 <dd>
 <p>One of the following function-supplied bit flags, indicating the type of information the function is returning.</p>
@@ -147,9 +147,9 @@ BOOL DrvQueryColorProfile(
 <p>If the operation succeeds, the function returns <b>TRUE</b>; otherwise, it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>A <a href="NULL">printer interface DLL</a> can optionally provide a <b>DrvQueryColorProfile</b> function. If the function is provided, GDI calls it if ICM has been enabled for a print job. The function's purpose is to determine and specify an ICC profile that is appropriate for use with the print job.</p>
+<p>A <a href="https://msdn.microsoft.com/2a8cf38f-8e27-4e08-9c0f-5d1a4cd854ac">printer interface DLL</a> can optionally provide a <b>DrvQueryColorProfile</b> function. If the function is provided, GDI calls it if ICM has been enabled for a print job. The function's purpose is to determine and specify an ICC profile that is appropriate for use with the print job.</p>
 
-<p>If a driver's printer interface DLL does not provide a <b>DrvQueryColorProfile</b> function, or if the function returns <b>FALSE</b>, GDI attempts to find a profile. For more information, see <a href="NULL">Locating ICC Profiles</a>.</p>
+<p>If a driver's printer interface DLL does not provide a <b>DrvQueryColorProfile</b> function, or if the function returns <b>FALSE</b>, GDI attempts to find a profile. For more information, see <a href="https://msdn.microsoft.com/828b53cd-452a-4c4d-bfbb-45ea674ef49a">Locating ICC Profiles</a>.</p>
 
 <p>If the output buffer size specified by <i>pcbProfileData</i> is too small, the driver should overwrite the size value supplied by <i>pcbProfileData</i> with the required buffer size, call SetLastError(ERROR_INSUFFICIENT_BUFFER), and return <b>FALSE</b>.</p>
 

@@ -55,13 +55,13 @@ _Check_return_ HRESULT APIENTRY CALLBACK PFND3DDDI_SUBMITCOMMANDTOHWQUEUECB(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the device.</p>
 </dd>
 
-### -param <i>submitCommandToHwQueue</i> [in]
+### -param submitCommandToHwQueue [in]
 
 <dd>
 <p>A pointer to the structure holding information on submitting a command to the hardware queue.</p>

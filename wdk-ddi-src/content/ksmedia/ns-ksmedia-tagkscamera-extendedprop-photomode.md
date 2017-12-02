@@ -57,25 +57,25 @@ typedef struct _KSCAMERA_EXTENDEDPROP_PHOTOMODE {
 ## -struct-fields
 <dl>
 
-### -field <b>RequestedHistoryFrames</b>
+### -field RequestedHistoryFrames
 
 <dd>
 <p>The number of history frames to reserve by the driver. The value of <b>RequestedHistoryFrames</b> &lt;= <b>MaxHistoryFrames</b>.</p>
 </dd>
 
-### -field <b>MaxHistoryFrames</b>
+### -field MaxHistoryFrames
 
 <dd>
 <p>Maximum number of history frames supported by the driver.</p>
 </dd>
 
-### -field <b>SubMode</b>
+### -field SubMode
 
 <dd>
 <p>Not used. Set to 0.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Set to 0.</p>

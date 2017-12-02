@@ -59,19 +59,19 @@ VOID APIENTRY* pfnCreateShaderCacheSession(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>The handle of a device.</p>
 </dd>
 
-### -param <i>hCacheSession</i> 
+### -param hCacheSession 
 
 <dd>
 <p>The handle of a cache session.</p>
 </dd>
 
-### -param <i>hRTCacheSession</i> 
+### -param hRTCacheSession 
 
 <dd>
 <p>The handle of the cache session for the driver to use when it calls back into the runtime.</p>

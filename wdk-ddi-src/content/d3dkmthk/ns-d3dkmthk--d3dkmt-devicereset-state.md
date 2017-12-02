@@ -60,20 +60,20 @@ typedef struct _D3DKMT_DEVICERESET_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>DesktopSwitched</b>
+### -field DesktopSwitched
 
 <dd>
 <p>A UINT value that specifies whether the desktop that the calling process is created on switched from being visible to being invisible. For example, when the security screen appears because a user pressed CTRL+ALT+DEL, the desktop that the calling process is created on becomes invisible. </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A 32-bit value that identifies reset status.</p>

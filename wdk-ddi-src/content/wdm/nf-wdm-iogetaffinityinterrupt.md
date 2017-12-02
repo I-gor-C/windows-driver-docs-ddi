@@ -57,13 +57,13 @@ NTSTATUS IoGetAffinityInterrupt(
 ## -parameters
 <dl>
 
-### -param <i>InterruptObject</i> [in]
+### -param InterruptObject [in]
 
 <dd>
 <p>For more information, see the <a href="..\iointex\nf-iointex-wdmlibiogetaffinityinterrupt.md">WdmlibIoGetAffinityInterrupt</a> function.</p>
 </dd>
 
-### -param <i>GroupAffinity</i> [out]
+### -param GroupAffinity [out]
 
 <dd>
 <p>For more information, see the <a href="..\iointex\nf-iointex-wdmlibiogetaffinityinterrupt.md">WdmlibIoGetAffinityInterrupt</a> function.</p>

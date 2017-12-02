@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Stores the transport characteristics at relevant points in time. This structure is used in the  <a href="buses.ioctl_usb_get_transport_characteristics">IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS</a> request.</p>
+<p>Stores the transport characteristics at relevant points in time. This structure is used in the  <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-transport-characteristics.md">IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS</a> request.</p>
 
 
 ## -syntax
@@ -58,14 +58,14 @@ typedef struct _USB_TRANSPORT_CHARACTERISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>                    Version</b>
+### -field                     Version
 
 <dd>
 <p>The version is set to  USB_TRANSPORT_CHARACTERISTICS_VERSION_1. 
 </p>
 </dd>
 
-### -field <b>                    TransportCharacteristicsFlags</b>
+### -field                     TransportCharacteristicsFlags
 
 <dd>
 <p>A bitmask that indicates to the client driver the transport characteristics that are available and are returned in this structure. 
@@ -83,7 +83,7 @@ is set, <b>CurrentRoundtripLatencyInMilliSeconds</b> contains valid information.
 is set, <b>MaxPotentialBandwidth</b> contains valid information. Otherwise, it must not be used by the client driver.  </p>
 </dd>
 
-### -field <b>                    CurrentRoundtripLatencyInMilliSeconds</b>
+### -field                     CurrentRoundtripLatencyInMilliSeconds
 
 <dd>
 <p>Contains the current round-trip delay in milliseconds from the time a non-isochronous transfer is received by the USB driver stack to the time that the transfer is completed.  
@@ -92,7 +92,7 @@ For MA-USB, the underlying network could be WiFi, WiGig, Ethernet etc. The delay
 </p>
 </dd>
 
-### -field <b>                    MaxPotentialBandwidth</b>
+### -field                     MaxPotentialBandwidth
 
 <dd>
 <p>Contains the total bandwidth of the host controller’s shared transport. 
@@ -138,7 +138,7 @@ For MA-USB, the underlying network transport could be WiFi, WiGig, Ethernet etc.
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ioctl_usb_get_transport_characteristics">IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-transport-characteristics.md">IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS</a>
 </dt>
 </dl>
 <p> </p>

@@ -63,61 +63,61 @@ typedef struct _DXGKARG_PRESENT_DISPLAYONLY {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>The zero-based identification number of the video present source in a path of a video present network (VidPN) topology on which to restrict displaying.</p>
 </dd>
 
-### -field <b>pSource</b>
+### -field pSource
 
 <dd>
 <p>The virtual start address of the source image.</p>
 </dd>
 
-### -field <b>BytesPerPixel</b>
+### -field BytesPerPixel
 
 <dd>
 <p>The number of bytes per pixel in the source image.</p>
 </dd>
 
-### -field <b>Pitch</b>
+### -field Pitch
 
 <dd>
 <p>The pitch, in bytes, of each line in the source image—that is, the distance, in bytes, to the start of the next line.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <a href="..\d3dkmddi\ns-d3dkmddi--d3dkmt-present-display-only-flags.md">D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS</a> structure that identifies how to display the source image in the present operation.</p>
 </dd>
 
-### -field <b>NumMoves</b>
+### -field NumMoves
 
 <dd>
 <p>The number of screen-to-screen moves that are pointed to by the <b>pMoves</b> member.</p>
 </dd>
 
-### -field <b>pMoves</b>
+### -field pMoves
 
 <dd>
 <p>A pointer to a list of <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmt-move-rect.md">D3DKMT_MOVE_RECT</a> screen-to-screen moves.</p>
 </dd>
 
-### -field <b>NumDirtyRects</b>
+### -field NumDirtyRects
 
 <dd>
 <p>The number of dirty rectangles that are pointed to by the <b>pDirtyRect</b> member.</p>
 </dd>
 
-### -field <b>pDirtyRect</b>
+### -field pDirtyRect
 
 <dd>
 <p>A pointer to a list of <a href="display.rect">RECT</a> dirty rectangles.</p>
 </dd>
 
-### -field <b>pfnPresentDisplayOnlyProgress</b>
+### -field pfnPresentDisplayOnlyProgress
 
 <dd>
 <p>Reserved for system use. The operating system sets this member to <b>NULL</b>.</p>

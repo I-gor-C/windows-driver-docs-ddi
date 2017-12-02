@@ -60,13 +60,13 @@ typedef struct _DXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>Reserved for system use.</p>

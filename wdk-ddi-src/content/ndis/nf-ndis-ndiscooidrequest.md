@@ -7,7 +7,7 @@ old-location: netvista\ndiscooidrequest.htm
 old-project: netvista
 ms.assetid: 7d46f2c1-7b54-4510-968a-2e35e33cf849
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisCoOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ NDIS_STATUS NdisCoOidRequest(
 ## -parameters
 <dl>
 
-### -param <i>NdisBindingHandle</i> [in]
+### -param NdisBindingHandle [in]
 
 <dd>
 <p>A handle that the 
@@ -68,7 +68,7 @@ NDIS_STATUS NdisCoOidRequest(
      that identifies the target adapter for the binding.</p>
 </dd>
 
-### -param <i>NdisAfHandle</i> [in, optional]
+### -param NdisAfHandle [in, optional]
 
 <dd>
 <p>A handle that identifies the address family (AF) that is shared among the client, call manager,
@@ -91,7 +91,7 @@ NDIS_STATUS NdisCoOidRequest(
      this parameter must be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>NdisVcHandle</i> [in, optional]
+### -param NdisVcHandle [in, optional]
 
 <dd>
 <p>A handle that identifies the virtual connection (VC) the caller is requesting or setting
@@ -107,7 +107,7 @@ NDIS_STATUS NdisCoOidRequest(
      <i>NdisPartyHandle</i> are <b>NULL</b>.</p>
 </dd>
 
-### -param <i>NdisPartyHandle</i> [in, optional]
+### -param NdisPartyHandle [in, optional]
 
 <dd>
 <p>A handle that identifies the party on a multipoint VC the caller is requesting or setting
@@ -122,7 +122,7 @@ NDIS_STATUS NdisCoOidRequest(
      <i>NdisPartyHandle</i> also is <b>NULL</b>.</p>
 </dd>
 
-### -param <i>OidRequest</i> [in, out]
+### -param OidRequest [in, out]
 
 <dd>
 <p>A pointer to an 
@@ -379,4 +379,4 @@ NDIS_STATUS NdisCoOidRequest(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoOidRequest function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoOidRequest function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

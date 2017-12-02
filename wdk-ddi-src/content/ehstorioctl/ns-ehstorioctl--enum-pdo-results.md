@@ -55,13 +55,13 @@ typedef struct _ENUM_PDO_RESULTS {
 ## -struct-fields
 <dl>
 
-### -field <b>cEntries</b>
+### -field cEntries
 
 <dd>
 <p>This member indicates the number of entries in the array of ENUM_PDO_ENTRY structures.</p>
 </dd>
 
-### -field <b>rgEntries</b>
+### -field rgEntries
 
 <dd>
 <p>This member contains the array of ENUM_PDO_ENTRY structures.</p>

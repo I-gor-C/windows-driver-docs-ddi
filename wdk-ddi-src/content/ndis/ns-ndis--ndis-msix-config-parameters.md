@@ -7,7 +7,7 @@ old-location: netvista\ndis_msix_config_parameters.htm
 old-project: netvista
 ms.assetid: 52c3238f-4d3a-4241-95bf-630e57e8a6e1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_MSIX_CONFIG_PARAMETERS, NDIS_MSIX_CONFIG_PARAMETERS, *PNDIS_MSIX_CONFIG_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct _NDIS_MSIX_CONFIG_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -70,7 +70,7 @@ typedef struct _NDIS_MSIX_CONFIG_PARAMETERS {
      <b>Size</b> member to NDIS_SIZEOF_MSIX_CONFIG_PARAMETERS_REVISION_1.</p>
 </dd>
 
-### -field <b>ConfigOperation</b>
+### -field ConfigOperation
 
 <dd>
 <p>The requested configuration operation for a MSI-X table entry. This operation is specified as one
@@ -79,13 +79,13 @@ typedef struct _NDIS_MSIX_CONFIG_PARAMETERS {
      NDIS_MSIX_TABLE_OPERATION</a> enumeration.</p>
 </dd>
 
-### -field <b>TableEntry</b>
+### -field TableEntry
 
 <dd>
 <p>The MSI-X table entry index.</p>
 </dd>
 
-### -field <b>MessageNumber</b>
+### -field MessageNumber
 
 <dd>
 <p>The MSI-X message number that is assigned to the device. This value is required for the 
@@ -138,4 +138,4 @@ typedef struct _NDIS_MSIX_CONFIG_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MSIX_CONFIG_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MSIX_CONFIG_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

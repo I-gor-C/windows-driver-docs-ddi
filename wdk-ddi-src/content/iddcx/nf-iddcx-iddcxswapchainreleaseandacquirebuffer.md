@@ -57,13 +57,13 @@ HRESULT IddCxSwapChainReleaseAndAcquireBuffer(
 ## -parameters
 <dl>
 
-### -param <i>SwapChainObject</i> [in]
+### -param SwapChainObject [in]
 
 <dd>
 <p>The swap-chain object passed to the <a href="..\iddcx\nc-iddcx-evt-idd-cx-monitor-assign-swapchain.md">EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN</a> call.</p>
 </dd>
 
-### -param <i>pOutArgs</i> [out]
+### -param pOutArgs [out]
 
 <dd>
 <p>Output arguments of function</p>

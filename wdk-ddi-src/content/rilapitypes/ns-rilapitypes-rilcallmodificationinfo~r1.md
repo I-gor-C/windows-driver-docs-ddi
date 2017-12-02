@@ -7,7 +7,7 @@ old-location: netvista\rilcallmodificationinfo_2.htm
 old-project: netvista
 ms.assetid: 2e17e480-325a-4a7c-84b8-07775ddd52bc
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLMODIFICATIONINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,39 +63,39 @@ typedef struct _RILCALLMODIFICATIONINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwID</b>
+### -field dwID
 
 <dd></dd>
 
-### -field <b>dwModificationType</b>
+### -field dwModificationType
 
 <dd></dd>
 
-### -field <b>dwOldCallType</b>
+### -field dwOldCallType
 
 <dd></dd>
 
-### -field <b>dwNewCallType</b>
+### -field dwNewCallType
 
 <dd></dd>
 
-### -field <b>raAddress</b>
+### -field raAddress
 
 <dd></dd>
 
-### -field <b>aiIdentifier</b>
+### -field aiIdentifier
 
 <dd></dd>
 </dl>

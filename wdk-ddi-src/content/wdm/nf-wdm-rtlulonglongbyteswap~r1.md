@@ -55,7 +55,7 @@ ULONGLONG RtlUlonglongByteSwap(
 ## -parameters
 <dl>
 
-### -param <i>Source</i> [in]
+### -param Source [in]
 
 <dd>
 <p>A ULONGLONG value to convert to a byte-swapped version.</p>

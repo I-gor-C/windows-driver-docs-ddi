@@ -7,7 +7,7 @@ old-location: acpi\acpi_eval_output_buffer_v2.htm
 old-project: acpi
 ms.assetid: 355A600E-F207-4A3F-80AE-EA2DAE810DA3
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: ACPI_EVAL_OUTPUT_BUFFER_V2, ACPI_EVAL_OUTPUT_BUFFER_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,25 +56,25 @@ typedef struct _ACPI_EVAL_OUTPUT_BUFFER_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>Defines the <b>ULONG</b> member <b>Signature</b>.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Defines the <b>ULONG</b> member <b>Length</b>.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Defines the <b>ULONG</b> member <b>Count</b>.</p>
 </dd>
 
-### -field <b>Argument[ANYSIZE_ARRAY]</b>
+### -field Argument[ANYSIZE_ARRAY]
 
 <dd>
 <p>Defines the <b>ACPI_METHOD_ARGUMENT_V2</b> member <b>Argument[ANYSIZE_ARRAY]</b>.</p>

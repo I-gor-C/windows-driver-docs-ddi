@@ -7,7 +7,7 @@ old-location: netvista\classifyfn1.htm
 old-project: netvista
 ms.assetid: 128fd929-6e83-46a0-9475-e459ede58f30
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ void NTAPI classifyFn1(
 ## -parameters
 <dl>
 
-### -param <i>inFixedValues</i> [in]
+### -param inFixedValues [in]
 
 <dd>
 <p>A pointer to an 
@@ -72,7 +72,7 @@ void NTAPI classifyFn1(
      structure contains the values for each of the data fields in the layer being filtered.</p>
 </dd>
 
-### -param <i>inMetaValues</i> [in]
+### -param inMetaValues [in]
 
 <dd>
 <p>A pointer to an 
@@ -81,7 +81,7 @@ void NTAPI classifyFn1(
      metadata fields in the layer being filtered.</p>
 </dd>
 
-### -param <i>layerData</i> [in, out]
+### -param layerData [in, out]
 
 <dd>
 <p>A pointer to a structure that describes the raw data in the layer being filtered. This parameter
@@ -93,13 +93,13 @@ void NTAPI classifyFn1(
      <b>NULL</b>.</p>
 </dd>
 
-### -param <i>classifyContext</i> [in, optional]
+### -param classifyContext [in, optional]
 
 <dd>
 <p>A pointer to context data associated with the callout driver by the filter engine.</p>
 </dd>
 
-### -param <i>filter</i> [in]
+### -param filter [in]
 
 <dd>
 <p>A pointer to an 
@@ -107,7 +107,7 @@ void NTAPI classifyFn1(
      describes the filter that specifies the callout for the filter's action.</p>
 </dd>
 
-### -param <i>flowContext</i> [in]
+### -param flowContext [in]
 
 <dd>
 <p>A UINT64-typed variable that contains the context associated with the data flow. If no context is
@@ -116,7 +116,7 @@ void NTAPI classifyFn1(
      <i>classifyFn1</i> callout function should ignore this parameter.</p>
 </dd>
 
-### -param <i>classifyOut</i> [in, out]
+### -param classifyOut [in, out]
 
 <dd>
 <p>A pointer to an 
@@ -229,22 +229,22 @@ void NTAPI classifyFn1(
 <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="NULL">Associating Context with a Data Flow</a>
+<a href="netvista.associating_context_with_a_data_flow">Associating Context with a Data Flow</a>
 </dt>
 <dt>
 <a href="netvista.callout_driver_callout_functions">Callout Driver Callout Functions</a>
 </dt>
 <dt>
-<a href="NULL">Data Logging</a>
+<a href="netvista.data_logging">Data Logging</a>
 </dt>
 <dt>
-<a href="NULL">Packet Modification Examples</a>
+<a href="netvista.packet_modification_examples">Packet Modification Examples</a>
 </dt>
 <dt>
-<a href="NULL">Registering Callouts with the Filter Engine</a>
+<a href="netvista.registering_callouts_with_the_filter_engine">Registering Callouts with the Filter Engine</a>
 </dt>
 <dt>
-<a href="NULL">Using a Callout for Deep Inspection</a>
+<a href="netvista.using_a_callout_for_deep_inspection">Using a Callout for Deep Inspection</a>
 </dt>
 <dt>
 <a href="netvista.using_a_callout_for_deep_inspection_of_stream_data">Using a Callout
@@ -253,4 +253,4 @@ void NTAPI classifyFn1(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_CLASSIFY_FN1 callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_CLASSIFY_FN1 callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

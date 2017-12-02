@@ -62,13 +62,13 @@ NTSTATUS EvtUdecxWdfDeviceQueryUsbCapability(
 ## -parameters
 <dl>
 
-### -param <i>UdecxWdfDevice</i> [in]
+### -param UdecxWdfDevice [in]
 
 <dd>
-<p>A handle to a framework device object that represents the controller. The client driver initialized this object in the previous call to <a href="buses.udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a>.</p>
+<p>A handle to a framework device object that represents the controller. The client driver initialized this object in the previous call to <a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation.md">UdecxWdfDeviceAddUsbDeviceEmulation</a>.</p>
 </dd>
 
-### -param <i>CapabilityType</i> [in]
+### -param CapabilityType [in]
 
 <dd>
 <p>Pointer to a GUID specifying the requested capability. The possible  <i>PGUID</i>  values are  as follows:</p>
@@ -84,20 +84,20 @@ NTSTATUS EvtUdecxWdfDeviceQueryUsbCapability(
 <p>   For information about the capabilities, see the Remarks section of <a href="buses.usbd_getcapability">USBD_QueryUsbCapability</a>.</p>
 </dd>
 
-### -param <i>OutputBufferLength</i> [in]
+### -param OutputBufferLength [in]
 
 <dd>
 <p>The length, in bytes, of the request's output buffer, if an output buffer is available.</p>
 </dd>
 
-### -param <i>OutputBuffer</i> [out, optional]
+### -param OutputBuffer [out, optional]
 
 <dd>
 <p>A pointer to a location that receives the buffer's address. Certain capabilities may need to provide additional information
         to the USB device emulation  class extension (UdeCx)  in this buffer.</p>
 </dd>
 
-### -param <i>ResultLength</i> [out]
+### -param ResultLength [out]
 
 <dd>
 <p>A location that, on return, contains the size, in bytes, of the information that the callback function stored in <i>OutputBuffer.</i></p>

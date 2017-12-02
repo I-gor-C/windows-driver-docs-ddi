@@ -54,7 +54,7 @@ NTSTATUS PsFreeSiloContextSlot(
 ## -parameters
 <dl>
 
-### -param <i>ContextSlot</i> [in]
+### -param ContextSlot [in]
 
 <dd>
 <p>A slot allocated by the <a href="..\ntddk\nf-ntddk-psallocsilocontextslot.md">PsAllocSiloContextSlot</a> routine. </p>

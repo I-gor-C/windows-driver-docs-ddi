@@ -56,7 +56,7 @@ typedef struct _OB_PRE_CREATE_HANDLE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>DesiredAccess</b>
+### -field DesiredAccess
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that specifies the access rights to grant for the handle. By default, this member equals <i>OriginalDesiredAccess</i>, but the <i>ObjectPreCallback</i> routine can modify this value to restrict the access that is granted.</p>
@@ -214,7 +214,7 @@ typedef struct _OB_PRE_CREATE_HANDLE_INFORMATION {
 <p> </p>
 </dd>
 
-### -field <b>OriginalDesiredAccess</b>
+### -field OriginalDesiredAccess
 
 <dd>
 <p>An ACCESS_MASK value that specifies the original access that was requested for the handle.</p>

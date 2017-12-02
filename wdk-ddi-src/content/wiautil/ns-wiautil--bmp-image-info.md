@@ -7,7 +7,7 @@ old-location: image\bmp_image_info.htm
 old-project: image
 ms.assetid: 953e2f00-2275-49a2-b1e5-def7763a8ab7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: BMP_IMAGE_INFO, BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef struct _BMP_IMAGE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>Specifies the width of the image, in pixels.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>Specifies the height of the image, in lines.</p>
 </dd>
 
-### -field <b>ByteWidth</b>
+### -field ByteWidth
 
 <dd>
 <p>Specifies the width of the image, in bytes.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the total size of the image, including headers, in bytes.</p>

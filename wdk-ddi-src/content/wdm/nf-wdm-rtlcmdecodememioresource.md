@@ -56,13 +56,13 @@ ULONGLONG RtlCmDecodeMemIoResource(
 ## -parameters
 <dl>
 
-### -param <i>Descriptor</i> [in]
+### -param Descriptor [in]
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure to provide the starting address and length for.</p>
 </dd>
 
-### -param <i>Start</i> [out, optional]
+### -param Start [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives the starting address of the range of memory or I/O port addresses.</p>

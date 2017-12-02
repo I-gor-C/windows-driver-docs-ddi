@@ -62,43 +62,43 @@ typedef union _WHEA_GENERIC_ERROR_BLOCKSTATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>UncorrectableError</b>
+### -field UncorrectableError
 
 <dd>
 <p>The generic error status block is reporting uncorrectable error data.</p>
 </dd>
 
-### -field <b>CorrectableError</b>
+### -field CorrectableError
 
 <dd>
 <p>The generic error status block is reporting correctable error data.</p>
 </dd>
 
-### -field <b>MultipleUncorrectableErrors</b>
+### -field MultipleUncorrectableErrors
 
 <dd>
 <p>The generic error status block is reporting multiple uncorrectable errors.</p>
 </dd>
 
-### -field <b>MultipleCorrectableErrors</b>
+### -field MultipleCorrectableErrors
 
 <dd>
 <p>The generic error status block is reporting multiple correctable errors.</p>
 </dd>
 
-### -field <b>ErrorDataEntryCount</b>
+### -field ErrorDataEntryCount
 
 <dd>
 <p>The number of <a href="whea.whea_generic_error_data_entry">WHEA_GENERIC_ERROR_DATA_ENTRY</a> structures that are contained in the generic error status block.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the WHEA_GENERIC_ERROR_BLOCKSTATUS union.</p>

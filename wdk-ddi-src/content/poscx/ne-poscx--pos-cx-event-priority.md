@@ -57,19 +57,19 @@ typedef enum _POS_CX_EVENT_PRIORITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="POS_CX_EVENT_PRIORITY_INVALID"></a><a id="pos_cx_event_priority_invalid"></a><b>POS_CX_EVENT_PRIORITY_INVALID</b>
+### -field POS_CX_EVENT_PRIORITY_INVALID
 
 <dd>
 <p>Invalid priority. This value should not be used.</p>
 </dd>
 
-### -field <a id="POS_CX_EVENT_PRIORITY_DATA"></a><a id="pos_cx_event_priority_data"></a><b>POS_CX_EVENT_PRIORITY_DATA</b>
+### -field POS_CX_EVENT_PRIORITY_DATA
 
 <dd>
 <p>Data level priority delivered in FIFO.</p>
 </dd>
 
-### -field <a id="POS_CX_EVENT_PRIORITY_CONTROL"></a><a id="pos_cx_event_priority_control"></a><b>POS_CX_EVENT_PRIORITY_CONTROL</b>
+### -field POS_CX_EVENT_PRIORITY_CONTROL
 
 <dd>
 <p>Control level priority delivered in FIFO.</p>

@@ -55,7 +55,7 @@ HRESULT NotifyXmlChanged(
 ## -parameters
 <dl>
 
-### -param <i>None</i> 
+### -param None 
 
 <dd>
 <p>This method has no parameters.</p>

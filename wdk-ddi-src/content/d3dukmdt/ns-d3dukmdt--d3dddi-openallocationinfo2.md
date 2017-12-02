@@ -58,23 +58,23 @@ typedef struct _D3DDDI_OPENALLOCATIONINFO2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd></dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd></dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd></dd>
 
-### -field <b>GpuVirtualAddress</b>
+### -field GpuVirtualAddress
 
 <dd></dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd></dd>
 </dl>

@@ -62,7 +62,7 @@ HRESULT APIENTRY* QueryAuthenticatedChannel(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).
@@ -70,13 +70,13 @@ HRESULT APIENTRY* QueryAuthenticatedChannel(
 </p>
 </dd>
 
-### -param <i>hCAuthChannel</i> [in]
+### -param hCAuthChannel [in]
 
 <dd>
 <p>A handle to an authenticated channel object that was created through a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createauthenticatedchannel.md">CreateAuthenticatedChannel(D3D11_1)</a> function.</p>
 </dd>
 
-### -param <i>InputDataSize</i> [in]
+### -param InputDataSize [in]
 
 <dd>
 <p>The size, in bytes, of the data in the <i>pInputData</i> array.
@@ -84,13 +84,13 @@ HRESULT APIENTRY* QueryAuthenticatedChannel(
 </p>
 </dd>
 
-### -param <i>pInputData</i> [out]
+### -param pInputData [out]
 
 <dd>
 <p>A pointer to a buffer that describes the information to query. The data in this buffer is formatted as a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-input.md">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> structure.</p>
 </dd>
 
-### -param <i>OutputDataSize</i> [in]
+### -param OutputDataSize [in]
 
 <dd>
 <p>The size, in bytes, of the data in the <i>pOutputData</i> array.
@@ -98,7 +98,7 @@ HRESULT APIENTRY* QueryAuthenticatedChannel(
 </p>
 </dd>
 
-### -param <i>pOutputData</i> [out]
+### -param pOutputData [out]
 
 <dd>
 <p>A pointer to a buffer that contains the queried information. For more information, see the Remarks section.</p>

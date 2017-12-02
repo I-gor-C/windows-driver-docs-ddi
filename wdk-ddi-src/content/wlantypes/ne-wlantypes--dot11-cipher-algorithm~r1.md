@@ -7,7 +7,7 @@ old-location: netvista\dot11_cipher_algorithm.htm
 old-project: netvista
 ms.assetid: 5fc1af01-7dd5-43dd-aefe-99dec0b5aa6a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11EXT_IHV_SSID_LIST,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,13 +63,13 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
 ## -enum-fields
 <dl>
 
-### -field <a id="DOT11_CIPHER_ALGO_NONE"></a><a id="dot11_cipher_algo_none"></a><b>DOT11_CIPHER_ALGO_NONE</b>
+### -field DOT11_CIPHER_ALGO_NONE
 
 <dd>
 <p>Specifies that no cipher algorithm is enabled or supported.</p>
 </dd>
 
-### -field <a id="DOT11_CIPHER_ALGO_WEP40"></a><a id="dot11_cipher_algo_wep40"></a><b>DOT11_CIPHER_ALGO_WEP40</b>
+### -field DOT11_CIPHER_ALGO_WEP40
 
 <dd>
 <p>Specifies a Wired Equivalent Privacy (WEP) algorithm, which is the RC4-based algorithm that is
@@ -77,7 +77,7 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
      40-bit cipher key.</p>
 </dd>
 
-### -field <a id="DOT11_CIPHER_ALGO_TKIP"></a><a id="dot11_cipher_algo_tkip"></a><b>DOT11_CIPHER_ALGO_TKIP</b>
+### -field DOT11_CIPHER_ALGO_TKIP
 
 <dd>
 <p>Specifies a Temporal Key Integrity Protocol (TKIP) algorithm, which is the RC4-based cipher suite
@@ -86,26 +86,26 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
      protection.</p>
 </dd>
 
-### -field <a id="DOT11_CIPHER_ALGO_CCMP"></a><a id="dot11_cipher_algo_ccmp"></a><b>DOT11_CIPHER_ALGO_CCMP</b>
+### -field DOT11_CIPHER_ALGO_CCMP
 
 <dd>
 <p>Specifies an AES-CCMP algorithm, as specified in the IEEE 802.11i-2004 standard and RFC 3610.
      Advanced Encryption Standard (AES) is the encryption algorithm defined in FIPS PUB 197.</p>
 </dd>
 
-### -field <a id="DOT11_CIPHER_ALGO_WEP104"></a><a id="dot11_cipher_algo_wep104"></a><b>DOT11_CIPHER_ALGO_WEP104</b>
+### -field DOT11_CIPHER_ALGO_WEP104
 
 <dd>
 <p>Specifies a WEP cipher algorithm with a 104-bit cipher key.</p>
 </dd>
 
-### -field <a id="DOT11_CIPHER_ALGO_BIP"></a><a id="dot11_cipher_algo_bip"></a><b>DOT11_CIPHER_ALGO_BIP</b>
+### -field DOT11_CIPHER_ALGO_BIP
 
 <dd>
 <p>Specifies a BIP cipher algorithm.</p>
 </dd>
 
-### -field <a id="DOT11_CIPHER_ALGO_WPA_USE_GROUP"></a><a id="dot11_cipher_algo_wpa_use_group"></a><b>DOT11_CIPHER_ALGO_WPA_USE_GROUP</b>
+### -field DOT11_CIPHER_ALGO_WPA_USE_GROUP
 
 <dd>
 <p>Specifies a Wifi Protected Access (WPA) Use Group Key cipher suite.</p>
@@ -113,7 +113,7 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
       802.11i-2004 standard.</p>
 </dd>
 
-### -field <a id="DOT11_CIPHER_ALGO_RSN_USE_GROUP"></a><a id="dot11_cipher_algo_rsn_use_group"></a><b>DOT11_CIPHER_ALGO_RSN_USE_GROUP</b>
+### -field DOT11_CIPHER_ALGO_RSN_USE_GROUP
 
 <dd>
 <p>Specifies a Robust Security Network (RSN) Use Group Key cipher suite.</p>
@@ -121,7 +121,7 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
       802.11i-2004 standard.</p>
 </dd>
 
-### -field <a id="DOT11_CIPHER_ALGO_WEP"></a><a id="dot11_cipher_algo_wep"></a><b>DOT11_CIPHER_ALGO_WEP</b>
+### -field DOT11_CIPHER_ALGO_WEP
 
 <dd>
 <p>Specifies a WEP cipher algorithm with a cipher key of any length.
@@ -138,7 +138,7 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
 <div> </div>
 </dd>
 
-### -field <a id="DOT11_CIPHER_ALGO_IHV_START"></a><a id="dot11_cipher_algo_ihv_start"></a><b>DOT11_CIPHER_ALGO_IHV_START</b>
+### -field DOT11_CIPHER_ALGO_IHV_START
 
 <dd>
 <p>Specifies the start of the range that is used to define proprietary cipher algorithms that are
@@ -149,7 +149,7 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
      ExtSTA mode.</p>
 </dd>
 
-### -field <a id="DOT11_CIPHER_ALGO_IHV_END"></a><a id="dot11_cipher_algo_ihv_end"></a><b>DOT11_CIPHER_ALGO_IHV_END</b>
+### -field DOT11_CIPHER_ALGO_IHV_END
 
 <dd>
 <p>Specifies the end of the range that is used to define proprietary authentication algorithms that
@@ -202,7 +202,7 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
 
 <p>If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport driver must allow
     peer stations to associate with the Extensible AP by using 
-    <a href="NULL">Open System Authentication</a> or 
+    <a href="netvista.open_system_authentication">Open System Authentication</a> or 
     <a href="https://msdn.microsoft.com/41dd280b-e54c-4233-8051-45e7b1284d1d">Wired Equivalent Privacy (WEP)</a> algorithms, regardless of
     the enabled authorization and cipher algorithms. For more information about WPS and Extensible AP, see 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569436">OID_DOT11_WPS_ENABLED</a>.</p>
@@ -255,4 +255,4 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_ALGORITHM enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_ALGORITHM enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

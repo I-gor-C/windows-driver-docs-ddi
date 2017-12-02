@@ -57,13 +57,13 @@ NTSTATUS RtlStringCbCatN(
 ## -parameters
 <dl>
 
-### -param <i>pszDest</i> [in, out]
+### -param pszDest [in, out]
 
 <dd>
 <p>Pointer to a buffer which, on input, contains a null-terminated string to which <i>pszSrc</i> will be concatenated. On output, this is the destination buffer that contains the entire resultant string. The string at <i>pszSrc</i>, up to <i>cbMaxAppend</i> bytes, is added to the end of the string at <i>pszDest</i> and terminated with a null character.</p>
 </dd>
 
-### -param <i>cbDest</i> [in]
+### -param cbDest [in]
 
 <dd>
 <p>The size of the destination buffer, in bytes. The buffer must be large enough to include both strings and the terminating null character.</p>
@@ -71,13 +71,13 @@ NTSTATUS RtlStringCbCatN(
 <p>For ANSI strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(char). </p>
 </dd>
 
-### -param <i>pszSrc</i> [in]
+### -param pszSrc [in]
 
 <dd>
 <p>Pointer to a null-terminated string. This string will be concatenated to the end of the string that is contained in the buffer at <i>pszDest</i>. </p>
 </dd>
 
-### -param <i>cbMaxAppend</i> [in]
+### -param cbMaxAppend [in]
 
 <dd>
 <p>The maximum number of bytes to append to the string that is contained in the buffer at <i>pszDest</i>.</p>

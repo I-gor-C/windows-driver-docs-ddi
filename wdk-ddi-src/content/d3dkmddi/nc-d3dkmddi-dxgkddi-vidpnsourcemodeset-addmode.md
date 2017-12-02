@@ -58,13 +58,13 @@ NTSTATUS APIENTRY pfnAddMode(
 ## -parameters
 <dl>
 
-### -param <i>hVidPnSourceModeSet</i> [in]
+### -param hVidPnSourceModeSet [in]
 
 <dd>
 <p>[in] A handle to a VidPN source mode set object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-acquiresourcemodeset.md">pfnAcquireSourceModeSet</a> function of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpn-interface.md">DXGK_VIDPN_INTERFACE</a> interface.</p>
 </dd>
 
-### -param <i>pVidPnSourceModeInfo</i> [in]
+### -param pVidPnSourceModeInfo [in]
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-source-mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a> structure that describes the source mode. The display miniport driver previously obtained this structure by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpnsourcemodeset-createnewmodeinfo.md">pfnCreateNewModeInfo</a>.</p>

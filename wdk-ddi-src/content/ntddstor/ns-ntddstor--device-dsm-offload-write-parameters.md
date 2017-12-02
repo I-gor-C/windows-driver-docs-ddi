@@ -58,25 +58,25 @@ typedef struct _DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>TokenOffset</b>
+### -field TokenOffset
 
 <dd>
 <p>The offset, in bytes, within the data block specified by <b>Token</b> to begin writing from.</p>
 </dd>
 
-### -field <b>Token</b>
+### -field Token
 
 <dd>
 <p>The unique identifier of the data block to write from.</p>

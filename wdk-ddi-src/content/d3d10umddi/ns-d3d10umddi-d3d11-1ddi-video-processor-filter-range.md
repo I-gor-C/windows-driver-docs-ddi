@@ -57,25 +57,25 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>Minimum</b>
+### -field Minimum
 
 <dd>
 <p>The minimum value of the filter.</p>
 </dd>
 
-### -field <b>Maximum</b>
+### -field Maximum
 
 <dd>
 <p>The maximum value of the filter.</p>
 </dd>
 
-### -field <b>Default</b>
+### -field Default
 
 <dd>
 <p>The default value of the filter.</p>
 </dd>
 
-### -field <b>Multiplier</b>
+### -field Multiplier
 
 <dd>
 <p>A multiplier. Use the following formula to translate the filter setting into the actual filter value: <i>Actual Value</i> = <i>Set Value</i> Ã— <i>Multiplier</i>.</p>

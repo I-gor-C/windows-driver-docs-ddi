@@ -56,15 +56,15 @@ typedef struct _BDA_SCAN_START {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>LowerFrequency</b>
+### -field LowerFrequency
 
 <dd></dd>
 
-### -field <b>HigerFrequency</b>
+### -field HigerFrequency
 
 <dd></dd>
 </dl>

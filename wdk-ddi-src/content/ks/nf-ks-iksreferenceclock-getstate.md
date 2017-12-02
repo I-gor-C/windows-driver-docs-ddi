@@ -54,7 +54,7 @@ NTSTATUS GetState(
 ## -parameters
 <dl>
 
-### -param <i>State</i> [out]
+### -param State [out]
 
 <dd>
 <p>Points to a <a href="stream.ksstate">KSSTATE</a> structure that indicates the streaming state of the underlying clock.</p>
@@ -65,7 +65,7 @@ NTSTATUS GetState(
 <p>The <b>IKsReferenceClock::GetState</b> method returns STATUS_SUCCESS or  the error code that the relevant clock returned from its <b>GetState</b> property. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff565093">KSPROPERTY_CLOCK_STATE</a>.  May return STATUS_DEVICE_NOT_READY if no clock is assigned.</p>
 
 ## -remarks
-<p>For more information, see <a href="NULL">AVStream Clocks</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/fc1d5bca-72e3-48e2-b46f-09a13bba83b4">AVStream Clocks</a>.</p>
 
 <p>AVStream uses the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565093">KSPROPERTY_CLOCK_STATE</a> property to retrieve the correlated time.</p>
 

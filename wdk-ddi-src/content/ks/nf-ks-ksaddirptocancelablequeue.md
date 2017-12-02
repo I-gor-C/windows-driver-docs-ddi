@@ -58,31 +58,31 @@ VOID KsAddIrpToCancelableQueue(
 ## -parameters
 <dl>
 
-### -param <i>QueueHead</i> [in, out]
+### -param QueueHead [in, out]
 
 <dd>
 <p>Specifies the driver-allocated storage for the head of the queue on which to add the IRP.</p>
 </dd>
 
-### -param <i>SpinLock</i> [in]
+### -param SpinLock [in]
 
 <dd>
 <p>Points to driver's spin lock for queue access to the queue specified at <i>QueueHead</i>. A copy of this pointer is kept in the IRP's KSQUEUE_SPINLOCK_IRP_STORAGE(Irp) for use by the cancel routine, if necessary.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP to add to the queue specified at <i>QueueHead</i>.</p>
 </dd>
 
-### -param <i>ListLocation</i> [in]
+### -param ListLocation [in]
 
 <dd>
 <p>Indicates whether this IRP should be placed at the beginning or end of the queue. This value must be KsListEntryTail or KsListEntryHead.</p>
 </dd>
 
-### -param <i>DriverCancel</i> [in, optional]
+### -param DriverCancel [in, optional]
 
 <dd>
 <p>Optional parameter that specifies a driver-supplied cancel routine to use. If this is <b>NULL</b>, the standard <a href="stream.kscancelroutine">KsCancelRoutine</a> is used.</p>

@@ -58,31 +58,31 @@ NTSTATUS MiniportWriteEtwEvent(
 ## -parameters
 <dl>
 
-### -param <i>miniportEventType</i> [in]
+### -param miniportEventType [in]
 
 <dd>
 <p>An <a href="..\portcls\ne-portcls-epcminiportengineevent.md">EPcMiniportEngineEvent</a> enumerated value that provides additional error information for reporting glitching errors.</p>
 </dd>
 
-### -param <i>pvData1</i> [in]
+### -param pvData1 [in]
 
 <dd>
 <p>Data parameter.</p>
 </dd>
 
-### -param <i>pvData2</i> [in]
+### -param pvData2 [in]
 
 <dd>
 <p>Data parameter.</p>
 </dd>
 
-### -param <i>ulData3</i> [in]
+### -param ulData3 [in]
 
 <dd>
 <p>Data parameter.</p>
 </dd>
 
-### -param <i>ulData4</i> [in]
+### -param ulData4 [in]
 
 <dd>
 <p>Data parameter.</p>

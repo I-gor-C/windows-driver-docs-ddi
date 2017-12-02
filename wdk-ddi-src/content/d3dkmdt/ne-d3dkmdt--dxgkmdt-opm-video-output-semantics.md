@@ -55,13 +55,13 @@ typedef enum _DXGKMDT_OPM_VIDEO_OUTPUT_SEMANTICS {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKMDT_OPM_VOS_COPP_SEMANTICS"></a><a id="dxgkmdt_opm_vos_copp_semantics"></a><b>DXGKMDT_OPM_VOS_COPP_SEMANTICS</b>
+### -field DXGKMDT_OPM_VOS_COPP_SEMANTICS
 
 <dd>
 <p>Indicates that a protected output has Certified Output Protection Protocol (COPP) semantics. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_VOS_OPM_SEMANTICS"></a><a id="dxgkmdt_opm_vos_opm_semantics"></a><b>DXGKMDT_OPM_VOS_OPM_SEMANTICS</b>
+### -field DXGKMDT_OPM_VOS_OPM_SEMANTICS
 
 <dd>
 <p>Indicates that a protected output has Output Protection Management (OPM) semantics. </p>

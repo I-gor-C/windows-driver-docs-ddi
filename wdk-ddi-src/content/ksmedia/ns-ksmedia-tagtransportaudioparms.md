@@ -58,31 +58,31 @@ typedef struct tagTRANSPORTAUDIOPARMS {
 ## -struct-fields
 <dl>
 
-### -field <b>EnableOutput</b>
+### -field EnableOutput
 
 <dd>
 <p>Specifies the enable audio output. The default is ED_AUDIO_ALL.</p>
 </dd>
 
-### -field <b>EnableRecord</b>
+### -field EnableRecord
 
 <dd>
 <p>Specifies the enable audio record. The default is zero.</p>
 </dd>
 
-### -field <b>EnableSelsync</b>
+### -field EnableSelsync
 
 <dd>
 <p>Specifies the selsync.</p>
 </dd>
 
-### -field <b>Input</b>
+### -field Input
 
 <dd>
 <p>Specifies the audio input to use. For example, specify zero to use the first (zeroth) audio input.</p>
 </dd>
 
-### -field <b>MonitorSource</b>
+### -field MonitorSource
 
 <dd>
 <p>Indicates the monitor source. The default is zero.</p>

@@ -57,19 +57,19 @@ ULONG StorPortSetUnitAttributes(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Address</i> [in]
+### -param Address [in]
 
 <dd>
 <p>The storage unit device address. This parameter must not be NULL.</p>
 </dd>
 
-### -param <i>Attributes</i> [in]
+### -param Attributes [in]
 
 <dd>
 <p>A set of bitfields indicating the attributes supported for the unit device.</p>
@@ -143,7 +143,7 @@ ULONG StorPortSetUnitAttributes(
 ## -see-also
 <dl>
 <dt>
-<a href="..\scsi\ns-scsi--stor-address.md">STOR_ADDRESS</a>
+<a href="..\storport\ns-storport--stor-address.md">STOR_ADDRESS</a>
 </dt>
 <dt>
 <a href="..\storport\ns-storport--stor-unit-attributes.md">STOR_UNIT_ATTRIBUTES</a>

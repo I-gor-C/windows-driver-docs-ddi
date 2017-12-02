@@ -54,7 +54,7 @@ NTSTATUS ChangerInitialize(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object created by the changer class driver to represent this changer. </p>

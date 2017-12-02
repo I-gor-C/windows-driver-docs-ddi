@@ -57,20 +57,20 @@ typedef struct _DXGI_DDI_ARG_RECLAIMRESOURCES {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the display device (graphics context) on which the driver offers resources for reuse.</p>
 <p>The Direct3D runtime passed this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when it created the device by calling the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> routine.</p>
 </dd>
 
-### -field <b>pResources</b>
+### -field pResources
 
 <dd>
 <p>[in] A pointer to an array of handles to the resources that are to be reclaimed.</p>
 </dd>
 
-### -field <b>pDiscarded</b>
+### -field pDiscarded
 
 <dd>
 <p>[out] An optional array of Boolean values that specify whether each resource or allocation was discarded.</p>
@@ -79,7 +79,7 @@ typedef struct _DXGI_DDI_ARG_RECLAIMRESOURCES {
 <p>If <b>pDiscarded</b> is <b>NULL</b>, the driver can ignore it.</p>
 </dd>
 
-### -field <b>Resources</b>
+### -field Resources
 
 <dd>
 <p>[in] The number of elements in the arrays pointed to by <b>pResources</b> and <b>pDiscarded</b>.</p>

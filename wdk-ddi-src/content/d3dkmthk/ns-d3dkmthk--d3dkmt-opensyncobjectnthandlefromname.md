@@ -56,19 +56,19 @@ typedef struct _D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME {
 ## -struct-fields
 <dl>
 
-### -field <b>dwDesiredAccess</b>
+### -field dwDesiredAccess
 
 <dd>
 <p>[in] Access attributes for opening a shared monitored fence sync object, such as <b>D3DDDI_SYNC_OBJECT_WAIT</b>, <b>D3DDDI_SYNC_OBJECT_SIGNAL</b>, or <b>D3DDDI_SYNC_OBJECT_ALL_ACCESS</b>.</p>
 </dd>
 
-### -field <b>pObjAttrib</b>
+### -field pObjAttrib
 
 <dd>
 <p>[in] Object attributes for opening the object handle, including the shared object name information.</p>
 </dd>
 
-### -field <b>hNtHandle</b>
+### -field hNtHandle
 
 <dd>
 <p>[out] NT handle to the sync object that can be used to open it via <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopensyncobjectfromnthandle2.md">D3DKMTOpenSyncObjectFromNtHandle2</a>.</p>

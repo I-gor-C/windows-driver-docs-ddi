@@ -7,7 +7,7 @@ old-location: netvista\wwan_context_type.htm
 old-project: netvista
 ms.assetid: 73a18050-fc89-41df-82ce-0f29c5716496
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,50 +63,50 @@ typedef enum _WWAN_CONTEXT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanContextTypeNone"></a><a id="wwancontexttypenone"></a><a id="WWANCONTEXTTYPENONE"></a><b>WwanContextTypeNone</b>
+### -field WwanContextTypeNone
 
 <dd>
 <p>The context is not yet provisioned.</p>
 </dd>
 
-### -field <a id="WwanContextTypeInternet"></a><a id="wwancontexttypeinternet"></a><a id="WWANCONTEXTTYPEINTERNET"></a><b>WwanContextTypeInternet</b>
+### -field WwanContextTypeInternet
 
 <dd>
 <p>The context represents a connection to the Internet.</p>
 </dd>
 
-### -field <a id="WwanContextTypeVpn"></a><a id="wwancontexttypevpn"></a><a id="WWANCONTEXTTYPEVPN"></a><b>WwanContextTypeVpn</b>
+### -field WwanContextTypeVpn
 
 <dd>
 <p>The context represents a connection to virtual private network (VPN to a corporate
      network).</p>
 </dd>
 
-### -field <a id="WwanContextTypeVoice"></a><a id="wwancontexttypevoice"></a><a id="WWANCONTEXTTYPEVOICE"></a><b>WwanContextTypeVoice</b>
+### -field WwanContextTypeVoice
 
 <dd>
 <p>The context represents a connection to a Voice-over-IP (VOIP) service.</p>
 </dd>
 
-### -field <a id="WwanContextTypeVideoShare"></a><a id="wwancontexttypevideoshare"></a><a id="WWANCONTEXTTYPEVIDEOSHARE"></a><b>WwanContextTypeVideoShare</b>
+### -field WwanContextTypeVideoShare
 
 <dd>
 <p>The context represents a connection to a video sharing service.</p>
 </dd>
 
-### -field <a id="WwanContextTypeCustom"></a><a id="wwancontexttypecustom"></a><a id="WWANCONTEXTTYPECUSTOM"></a><b>WwanContextTypeCustom</b>
+### -field WwanContextTypeCustom
 
 <dd>
 <p>The context represents a connection to a custom service.</p>
 </dd>
 
-### -field <a id="WwanContextTypePurchase"></a><a id="wwancontexttypepurchase"></a><a id="WWANCONTEXTTYPEPURCHASE"></a><b>WwanContextTypePurchase</b>
+### -field WwanContextTypePurchase
 
 <dd>
 <p>Purchase a connection. For example, a walled garden, hot-lining or captive portal.</p>
 </dd>
 
-### -field <a id="WwanContextTypeMax"></a><a id="wwancontexttypemax"></a><a id="WWANCONTEXTTYPEMAX"></a><b>WwanContextTypeMax</b>
+### -field WwanContextTypeMax
 
 <dd>
 <p>The total number of supported context types.</p>
@@ -148,4 +148,4 @@ typedef enum _WWAN_CONTEXT_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CONTEXT_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CONTEXT_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

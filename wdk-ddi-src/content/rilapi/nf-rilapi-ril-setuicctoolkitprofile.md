@@ -7,7 +7,7 @@ old-location: netvista\ril_setuicctoolkitprofile.htm
 old-project: netvista
 ms.assetid: 123bf713-d238-491a-bc53-1f35dbb34feb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SetUiccToolkitProfile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_SetUiccToolkitProfile(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>lpToolkitProfile</i> 
+### -param lpToolkitProfile 
 
 <dd></dd>
 </dl>

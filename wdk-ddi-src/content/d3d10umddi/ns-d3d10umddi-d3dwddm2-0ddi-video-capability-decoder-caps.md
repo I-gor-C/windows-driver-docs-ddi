@@ -58,31 +58,31 @@ typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>DecodeProfile</b>
+### -field DecodeProfile
 
 <dd>
 <p>Indicates the decode profile for which the capabilities are queried.</p>
 </dd>
 
-### -field <b>SampleWidth</b>
+### -field SampleWidth
 
 <dd>
 <p>Indicates the video width for which the capabilities are queried.</p>
 </dd>
 
-### -field <b>SampleHeight</b>
+### -field SampleHeight
 
 <dd>
 <p>Indicates the video height for which the capabilities are queried.</p>
 </dd>
 
-### -field <b>FrameRate</b>
+### -field FrameRate
 
 <dd>
 <p>Indicates the frame rate of the video content.</p>
 </dd>
 
-### -field <b>Caps</b>
+### -field Caps
 
 <dd>
 <p>Returns a combination of <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm2-0ddi-video-decoder-caps.md">D3DWDDM2_0DDI_VIDEO_DECODER_CAPS</a> enumeration values combined together using a bitwise <i>OR</i> operation.</p>

@@ -55,13 +55,13 @@ typedef struct _D3DKMT_DEVICEPRESENT_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology to receive present status for. </p>
 </dd>
 
-### -field <b>PresentStats</b>
+### -field PresentStats
 
 <dd>
 <p>[out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-present-stats.md">D3DKMT_PRESENT_STATS</a> structure that describes status of present operations that is retrieved for the device.</p>

@@ -54,7 +54,7 @@ NTSTATUS GetTime(
 ## -parameters
 <dl>
 
-### -param <i>prtTime</i> [out]
+### -param prtTime [out]
 
 <dd>
 <p>Output pointer for the reference time. This parameter points to a caller-allocated variable into which the method writes the reference time. Reference time is measured in 100-nanosecond units.</p>

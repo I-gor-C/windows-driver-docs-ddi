@@ -57,19 +57,19 @@ VOID VideoPortSetBytesUsed(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>pDma</i> [in, out]
+### -param pDma [in, out]
 
 <dd>
 <p>Pointer to a DMA handle. To obtain the appropriate DMA handle, use the value in the <b>OutputBuffer</b> member of the <i>pVrp</i> parameter after <a href="..\video\nf-video-videoportlockpages.md">VideoPortLockPages</a> returns. </p>
 </dd>
 
-### -param <i>BytesUsed</i> [in]
+### -param BytesUsed [in]
 
 <dd>
 <p>Specifies the number of bytes written to the buffer.</p>

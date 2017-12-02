@@ -7,7 +7,7 @@ old-location: image\usbscan_pipe_information.htm
 old-project: image
 ms.assetid: a13bec15-67e1-45f9-be90-dee5c555ad64
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: USBSCAN_PIPE_INFORMATION, USBSCAN_PIPE_INFORMATION, *PUSBSCAN_PIPE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ typedef struct _USBSCAN_PIPE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>MaximumPacketSize</b>
+### -field MaximumPacketSize
 
 <dd>
 <p>Maximum packet size for the transfer pipe.</p>
 </dd>
 
-### -field <b>EndpointAddress</b>
+### -field EndpointAddress
 
 <dd>
 <p>The address of the pipe's endpoint. The address is encoded as follows:</p>
@@ -104,13 +104,13 @@ typedef struct _USBSCAN_PIPE_INFORMATION {
 <p>For more information, see the <i>Universal Serial Bus Specification</i>.</p>
 </dd>
 
-### -field <b>Interval</b>
+### -field Interval
 
 <dd>
 <p>Polling interval, in milliseconds, for interrupt pipes. For more information, see the <i>Universal Serial Bus Specification</i>.</p>
 </dd>
 
-### -field <b>PipeType</b>
+### -field PipeType
 
 <dd>
 <p>A <a href="..\usbscan\ne-usbscan--raw-pipe-type.md">RAW_PIPE_TYPE</a>-typed value identifying the pipe type.</p>
@@ -145,4 +145,4 @@ typedef struct _USBSCAN_PIPE_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20USBSCAN_PIPE_INFORMATION structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20USBSCAN_PIPE_INFORMATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

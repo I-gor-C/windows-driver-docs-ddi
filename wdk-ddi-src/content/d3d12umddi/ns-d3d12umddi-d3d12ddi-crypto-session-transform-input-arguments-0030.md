@@ -64,67 +64,67 @@ typedef struct _D3D12DDI_CRYPTO_SESSION_TRANSFORM_INPUT_ARGUMENTS_0030 {
 ## -struct-fields
 <dl>
 
-### -field <b>hDrvCryptoSessionPolicy</b>
+### -field hDrvCryptoSessionPolicy
 
 <dd>
 <p>Crypto session policy.</p>
 </dd>
 
-### -field <b>hDrvBuffer</b>
+### -field hDrvBuffer
 
 <dd>
 <p>Resource.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Offset.</p>
 </dd>
 
-### -field <b>pIV</b>
+### -field pIV
 
 <dd>
 <p>Initialization vector.</p>
 </dd>
 
-### -field <b>IVSize</b>
+### -field IVSize
 
 <dd>
 <p>Initialization vector size.</p>
 </dd>
 
-### -field <b>pSubSampleMappingBlock</b>
+### -field pSubSampleMappingBlock
 
 <dd>
 <p>Sub sample mapping block.</p>
 </dd>
 
-### -field <b>SubSampleMappingCount</b>
+### -field SubSampleMappingCount
 
 <dd>
 <p>Sub sample mapping count.</p>
 </dd>
 
-### -field <b>pContext</b>
+### -field pContext
 
 <dd>
 <p>Context.</p>
 </dd>
 
-### -field <b>ContextSize</b>
+### -field ContextSize
 
 <dd>
 <p>Context size.</p>
 </dd>
 
-### -field <b>EncryptedHeader</b>
+### -field EncryptedHeader
 
 <dd>
 <p>Encrypted header.</p>

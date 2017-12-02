@@ -55,7 +55,7 @@ BOOLEAN RtlIsServicePackVersionInstalled(
 ## -parameters
 <dl>
 
-### -param <i>Version</i> [in]
+### -param Version [in]
 
 <dd>
 <p>The service pack version of the Windows DDI that is available. The following table lists the possible values for <i>Version</i>.</p>

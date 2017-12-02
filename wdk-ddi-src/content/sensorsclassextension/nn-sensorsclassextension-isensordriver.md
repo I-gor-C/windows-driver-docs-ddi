@@ -7,7 +7,7 @@ old-location: sensors\isensordriver.htm
 old-project: sensors
 ms.assetid: 4f468f1e-598e-46ae-b50e-28f73e73afda
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: ISensorDriver, OnSetProperties, ISensorDriver::OnSetProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices

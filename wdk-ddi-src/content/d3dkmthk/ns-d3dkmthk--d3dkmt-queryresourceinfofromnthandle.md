@@ -60,44 +60,44 @@ typedef struct _D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device.</p>
 </dd>
 
-### -field <b>hNtHandle</b>
+### -field hNtHandle
 
 <dd>
 <p>[in] A global NT handle to the resource that is to be queried.</p>
 </dd>
 
-### -field <b>pPrivateRuntimeData</b>
+### -field pPrivateRuntimeData
 
 <dd>
 <p>[in] A pointer to a caller-supplied buffer where the runtime private data associated with the resource will be copied to.</p>
 </dd>
 
-### -field <b>PrivateRuntimeDataSize</b>
+### -field PrivateRuntimeDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the buffer pointed to by the <b>pPrivateRuntimeData</b> member.</p>
 <p>[out] If <b>pPrivateRuntimeData</b> is <b>NULL</b>, this member is the size, in bytes, of the buffer required to receive the runtime private data. Otherwise, this member is the size, in bytes, of runtime private data copied into the buffer.</p>
 </dd>
 
-### -field <b>TotalPrivateDriverDataSize</b>
+### -field TotalPrivateDriverDataSize
 
 <dd>
 <p>[out] The size, in bytes, of the buffer that is required to hold all the driver private data for all allocations associated with the resource.</p>
 </dd>
 
-### -field <b>ResourcePrivateDriverDataSize</b>
+### -field ResourcePrivateDriverDataSize
 
 <dd>
 <p>[out] The size, in bytes, of the driver's resource private data.</p>
 </dd>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[out] The number of allocations associated with the resource.</p>

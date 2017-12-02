@@ -60,43 +60,43 @@ typedef struct _DOT4_DC_CREATE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>bPsid</b>
+### -field bPsid
 
 <dd>
 <p>Specifies this or the service name sent.</p>
 </dd>
 
-### -field <b>pServiceName</b>
+### -field pServiceName
 
 <dd>
 <p>Describes the <b>CHAR</b>  member <b>pServiceName</b>.</p>
 </dd>
 
-### -field <b>bType</b>
+### -field bType
 
 <dd>
 <p>Specifies the type, stream or packet, of channels on the socket.</p>
 </dd>
 
-### -field <b>ulBufferSize</b>
+### -field ulBufferSize
 
 <dd>
 <p>Specifies the size of the read buffer for channels on socket.</p>
 </dd>
 
-### -field <b>usMaxHtoPPacketSize</b>
+### -field usMaxHtoPPacketSize
 
 <dd>
 <p>Describes the <b>USHORT</b> member <b>usMaxHtoPPacketSize</b>.</p>
 </dd>
 
-### -field <b>usMaxPtoHPacketSize</b>
+### -field usMaxPtoHPacketSize
 
 <dd>
 <p>Describes the <b>USHORT</b> member <b>usMaxPtoHPacketSize</b>.</p>
 </dd>
 
-### -field <b>bHsid</b>
+### -field bHsid
 
 <dd>
 <p>Specifies the host socket ID returned.</p>

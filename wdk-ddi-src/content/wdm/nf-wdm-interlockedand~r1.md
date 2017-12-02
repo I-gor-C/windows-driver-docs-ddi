@@ -56,13 +56,13 @@ LONG InterlockedAnd(
 ## -parameters
 <dl>
 
-### -param <i>Destination</i> [in, out]
+### -param Destination [in, out]
 
 <dd>
 <p>A pointer to the variable to be ANDed with <i>Value</i>. The result of the operation is stored in the variable.</p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>Specifies the value to be ANDed with the variable that is pointed to by <i>Destination</i>. </p>

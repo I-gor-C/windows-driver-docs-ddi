@@ -7,7 +7,7 @@ old-location: netvista\ril_getradiostatedetails.htm
 old-project: netvista
 ms.assetid: 0421fef7-5c59-4824-83a5-38020b933883
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetRadioStateDetails
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_GetRadioStateDetails(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwGroupId</i> 
+### -param dwGroupId 
 
 <dd></dd>
 
-### -param <i>dwItemId</i> 
+### -param dwItemId 
 
 <dd></dd>
 </dl>

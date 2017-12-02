@@ -69,73 +69,73 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>PropertyId</b>
+### -field PropertyId
 
 <dd>
 <p>Specifies the ID of the property being described.</p>
 </dd>
 
-### -field <b>GetPropertyHandler</b>
+### -field GetPropertyHandler
 
 <dd>
 <p>Pointer to a minidriver-supplied <a href="stream.kstrgetpropertyhandler">KStrGetPropertyHandler</a>. If <b>NULL</b>, the property cannot be read. This member is used only by drivers that use the AVStream or Stream class interfaces.</p>
 </dd>
 
-### -field <b>GetSupported</b>
+### -field GetSupported
 
 <dd>
 <p>Set to <b>TRUE</b> if this property supports get requests, <b>FALSE</b> if it does not. (The class driver fulfills the request through the SRB_GET_DEVICE_PROPERTY or SRB_GET_STREAM_PROPERTY requests.) This member is used only by minidrivers running under stream class. </p>
 </dd>
 
-### -field <b>MinProperty</b>
+### -field MinProperty
 
 <dd>
 <p>Specifies the minimum buffer length to hold the property identifier. This must be at least <b>sizeof</b>(<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>).</p>
 </dd>
 
-### -field <b>MinData</b>
+### -field MinData
 
 <dd>
 <p>Specifies the minimum buffer length to hold the data read from or written to this property.</p>
 </dd>
 
-### -field <b>SetPropertyHandler</b>
+### -field SetPropertyHandler
 
 <dd>
 <p>Pointer to a minidriver-supplied <a href="stream.kstrsetpropertyhandler">KStrSetPropertyHandler</a>. If <b>NULL</b>, the property cannot be set. This member is used only by drivers that use the AVStream or Stream class interfaces.</p>
 </dd>
 
-### -field <b>SetSupported</b>
+### -field SetSupported
 
 <dd>
 <p>Set to <b>TRUE</b> if this property supports set requests, <b>FALSE</b> if it does not. (The class driver fulfills the request through the SRB_SET_DEVICE_PROPERTY or SRB_SET_STREAM_PROPERTY requests.)</p>
 </dd>
 
-### -field <b>Values</b>
+### -field Values
 
 <dd>
 <p>Pointer to a structure of type <a href="stream.ksproperty_values">KSPROPERTY_VALUES</a>. Specifies the acceptable and/or default values for the property. These are the same as the values reported by a driver in response to an IOCTL_KS_PROPERTY request with the KSPROPERTY_TYPE_BASICSUPPORT and KSPROPERTY_TYPE_DEFAULTVALUES flags set.</p>
 </dd>
 
-### -field <b>RelationsCount</b>
+### -field RelationsCount
 
 <dd>
 <p>Specifies the number of entries in the array pointed to by the <b>Relations</b> member.</p>
 </dd>
 
-### -field <b>Relations</b>
+### -field Relations
 
 <dd>
 <p>Points to an array of <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structures representing properties related to this one. Two properties are considered related if changing one property may affect the value of the other property. The <b>Flags</b> member of each entry is unused.</p>
 </dd>
 
-### -field <b>SupportHandler</b>
+### -field SupportHandler
 
 <dd>
 <p>Provide this member only if implementing your own format for raw serialization or raw unserialization. Basic support queries, range queries, and relations queries are automatically handled by AVStream, which returns the relevant values from other members of this KSPROPERTY_ITEM structure.</p>
 </dd>
 
-### -field <b>SerializedSize</b>
+### -field SerializedSize
 
 <dd>
 <p>Specifies the size of the property when serialized in a KSPROPERTY_TYPE_SERIALIZESET request. This should be zero if the property cannot be serialized. See <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> for more information.</p>
@@ -173,7 +173,7 @@ typedef struct {
 
 <p>If the client specifies KSPROPERTY_TYPE_DEFAULTVALUES, the driver uses the data buffer to return a description of its value type, including possibly its allowed range and default value. This flag is similar in result to KSPROPERTY_TYPE_BASICSUPPORT, except that any values returned are those that have been marked with KSPROPERTY_MEMBER_FLAG_DEFAULT in the <b>Flags</b> member of the structure <a href="stream.ksproperty_membersheader">KSPROPERTY_MEMBERSHEADER</a>.</p>
 
-<p>For more information, see <a href="NULL">KS Properties</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88-aaf9-ff1ddbfd30f7">KS Properties</a>.</p>
 
 ## -requirements
 <table>

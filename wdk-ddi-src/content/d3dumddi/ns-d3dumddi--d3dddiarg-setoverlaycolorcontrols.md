@@ -56,19 +56,19 @@ typedef struct _D3DDDIARG_SETOVERLAYCOLORCONTROLS {
 ## -struct-fields
 <dl>
 
-### -field <b>hOverlay</b>
+### -field hOverlay
 
 <dd>
 <p>[in] A handle to the overlay that <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setoverlaycolorcontrols.md">SetOverlayColorControls</a> changes color-control settings for.</p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A handle to the resource that is associated with the overlay that <b>hOverlay</b> specifies.</p>
 </dd>
 
-### -field <b>ColorControls</b>
+### -field ColorControls
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-overlaycolorcontrols.md">D3DDDI_OVERLAYCOLORCONTROLS</a> structure that contains color-control settings.</p>

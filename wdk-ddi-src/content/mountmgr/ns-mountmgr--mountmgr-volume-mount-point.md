@@ -57,25 +57,25 @@ typedef struct _MOUNTMGR_VOLUME_MOUNT_POINT {
 ## -struct-fields
 <dl>
 
-### -field <b>SourceVolumeNameOffset</b>
+### -field SourceVolumeNameOffset
 
 <dd>
 <p>Contains an offset, in bytes, into the output buffer where the name of the mount point is located. </p>
 </dd>
 
-### -field <b>SourceVolumeNameLength</b>
+### -field SourceVolumeNameLength
 
 <dd>
 <p>Contains the length, in bytes, of the mount point name. </p>
 </dd>
 
-### -field <b>TargetVolumeNameOffset</b>
+### -field TargetVolumeNameOffset
 
 <dd>
 <p>Contains an offset, in bytes, into the output buffer where the unique (persistent) volume name of the target device is located. </p>
 </dd>
 
-### -field <b>TargetVolumeNameLength</b>
+### -field TargetVolumeNameLength
 
 <dd>
 <p>Contains the length, in bytes, of the target name. </p>
@@ -83,7 +83,7 @@ typedef struct _MOUNTMGR_VOLUME_MOUNT_POINT {
 </dl>
 
 ## -remarks
-<p>Mount point names must contain the full path of a mount point object name in the system object tree. For example: "\DosDevices\E:\FilesysD\mnt". For an explanation of unique volume names and how the mount manager uses them, see <a href="NULL">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
+<p>Mount point names must contain the full path of a mount point object name in the system object tree. For example: "\DosDevices\E:\FilesysD\mnt". For an explanation of unique volume names and how the mount manager uses them, see <a href="storage.supporting_mount_manager_requests_in_a_storage_class_driver">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
 
 ## -requirements
 <table>

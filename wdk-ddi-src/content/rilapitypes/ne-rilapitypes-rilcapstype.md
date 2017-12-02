@@ -7,7 +7,7 @@ old-location: netvista\rilcapstype_2.htm
 old-project: netvista
 ms.assetid: 492436da-9d6f-462b-9c4d-4466cb2f78f6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,47 +65,47 @@ typedef enum _RILCAPSTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CAPSTYPE_PERSOLOCKPWDLENGTH"></a><a id="ril_capstype_persolockpwdlength"></a><b>RIL_CAPSTYPE_PERSOLOCKPWDLENGTH</b>
+### -field RIL_CAPSTYPE_PERSOLOCKPWDLENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_CAPSTYPE_PBMAXREAD"></a><a id="ril_capstype_pbmaxread"></a><b>RIL_CAPSTYPE_PBMAXREAD</b>
+### -field RIL_CAPSTYPE_PBMAXREAD
 
 <dd></dd>
 
-### -field <a id="RIL_CAPSTYPE_PBSTORELOCATIONS"></a><a id="ril_capstype_pbstorelocations"></a><b>RIL_CAPSTYPE_PBSTORELOCATIONS</b>
+### -field RIL_CAPSTYPE_PBSTORELOCATIONS
 
 <dd></dd>
 
-### -field <a id="RIL_CAPSTYPE_RADIOCONFIGURATIONS"></a><a id="ril_capstype_radioconfigurations"></a><b>RIL_CAPSTYPE_RADIOCONFIGURATIONS</b>
+### -field RIL_CAPSTYPE_RADIOCONFIGURATIONS
 
 <dd></dd>
 
-### -field <a id="RIL_CAPSTYPE_SIGNALQUALITYIMPLEMENTATION"></a><a id="ril_capstype_signalqualityimplementation"></a><b>RIL_CAPSTYPE_SIGNALQUALITYIMPLEMENTATION</b>
+### -field RIL_CAPSTYPE_SIGNALQUALITYIMPLEMENTATION
 
 <dd></dd>
 
-### -field <a id="RIL_CAPSTYPE_NITZNOTIFICATION"></a><a id="ril_capstype_nitznotification"></a><b>RIL_CAPSTYPE_NITZNOTIFICATION</b>
+### -field RIL_CAPSTYPE_NITZNOTIFICATION
 
 <dd></dd>
 
-### -field <a id="RIL_CAPSTYPE_CALLSUPPORT"></a><a id="ril_capstype_callsupport"></a><b>RIL_CAPSTYPE_CALLSUPPORT</b>
+### -field RIL_CAPSTYPE_CALLSUPPORT
 
 <dd></dd>
 
-### -field <a id="RIL_CAPSTYPE_SMSSUPPORT"></a><a id="ril_capstype_smssupport"></a><b>RIL_CAPSTYPE_SMSSUPPORT</b>
+### -field RIL_CAPSTYPE_SMSSUPPORT
 
 <dd></dd>
 
-### -field <a id="RIL_CAPSTYPE_ARG_SMALLEST"></a><a id="ril_capstype_arg_smallest"></a><b>RIL_CAPSTYPE_ARG_SMALLEST</b>
+### -field RIL_CAPSTYPE_ARG_SMALLEST
 
 <dd></dd>
 
-### -field <a id="RIL_CAPSTYPE_ARG_LARGEST"></a><a id="ril_capstype_arg_largest"></a><b>RIL_CAPSTYPE_ARG_LARGEST</b>
+### -field RIL_CAPSTYPE_ARG_LARGEST
 
 <dd></dd>
 
-### -field <a id="RIL_CAPSTYPE_MAX"></a><a id="ril_capstype_max"></a><b>RIL_CAPSTYPE_MAX</b>
+### -field RIL_CAPSTYPE_MAX
 
 <dd></dd>
 </dl>

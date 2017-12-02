@@ -69,97 +69,97 @@ typedef enum _PCMCIA_CONTROLLER_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="PcmciaInvalidControllerClass"></a><a id="pcmciainvalidcontrollerclass"></a><a id="PCMCIAINVALIDCONTROLLERCLASS"></a><b>PcmciaInvalidControllerClass</b>
+### -field PcmciaInvalidControllerClass
 
 <dd>
 <p>Indicates that the controller class is invalid. </p>
 </dd>
 
-### -field <a id="PcmciaIntelCompatible"></a><a id="pcmciaintelcompatible"></a><a id="PCMCIAINTELCOMPATIBLE"></a><b>PcmciaIntelCompatible</b>
+### -field PcmciaIntelCompatible
 
 <dd>
 <p>Indicates an Intel-compatible controller. </p>
 </dd>
 
-### -field <a id="PcmciaCardBusCompatible"></a><a id="pcmciacardbuscompatible"></a><a id="PCMCIACARDBUSCOMPATIBLE"></a><b>PcmciaCardBusCompatible</b>
+### -field PcmciaCardBusCompatible
 
 <dd>
 <p>Indicates a cardbus-compatible controller. </p>
 </dd>
 
-### -field <a id="PcmciaElcController"></a><a id="pcmciaelccontroller"></a><a id="PCMCIAELCCONTROLLER"></a><b>PcmciaElcController</b>
+### -field PcmciaElcController
 
 <dd>
 <p>Indicates an ELC controller. </p>
 </dd>
 
-### -field <a id="PcmciaDatabook"></a><a id="pcmciadatabook"></a><a id="PCMCIADATABOOK"></a><b>PcmciaDatabook</b>
+### -field PcmciaDatabook
 
 <dd>
 <p>Indicates a controller from the Databook TCIC family of controllers. </p>
 </dd>
 
-### -field <a id="PcmciaPciPcmciaBridge"></a><a id="pcmciapcipcmciabridge"></a><a id="PCMCIAPCIPCMCIABRIDGE"></a><b>PcmciaPciPcmciaBridge</b>
+### -field PcmciaPciPcmciaBridge
 
 <dd>
 <p>Indicates a PCI to PCMCIA bridge. </p>
 </dd>
 
-### -field <a id="PcmciaCirrusLogic"></a><a id="pcmciacirruslogic"></a><a id="PCMCIACIRRUSLOGIC"></a><b>PcmciaCirrusLogic</b>
+### -field PcmciaCirrusLogic
 
 <dd>
 <p>Indicates a CirrusLogic cardbus controller. </p>
 </dd>
 
-### -field <a id="PcmciaTI"></a><a id="pcmciati"></a><a id="PCMCIATI"></a><b>PcmciaTI</b>
+### -field PcmciaTI
 
 <dd>
 <p>Indicates a TI cardbus controller. </p>
 </dd>
 
-### -field <a id="PcmciaTopic"></a><a id="pcmciatopic"></a><a id="PCMCIATOPIC"></a><b>PcmciaTopic</b>
+### -field PcmciaTopic
 
 <dd>
 <p>Indicates a Toshiba Topic cardbus controller. </p>
 </dd>
 
-### -field <a id="PcmciaRicoh"></a><a id="pcmciaricoh"></a><a id="PCMCIARICOH"></a><b>PcmciaRicoh</b>
+### -field PcmciaRicoh
 
 <dd>
 <p>Indicates a Ricoh cardbus controller. </p>
 </dd>
 
-### -field <a id="PcmciaDatabookCB"></a><a id="pcmciadatabookcb"></a><a id="PCMCIADATABOOKCB"></a><b>PcmciaDatabookCB</b>
+### -field PcmciaDatabookCB
 
 <dd>
 <p>Indicates a Databook cardbus controller. </p>
 </dd>
 
-### -field <a id="PcmciaOpti"></a><a id="pcmciaopti"></a><a id="PCMCIAOPTI"></a><b>PcmciaOpti</b>
+### -field PcmciaOpti
 
 <dd>
 <p>Indicates an OPTI cardbus controller. </p>
 </dd>
 
-### -field <a id="PcmciaTrid"></a><a id="pcmciatrid"></a><a id="PCMCIATRID"></a><b>PcmciaTrid</b>
+### -field PcmciaTrid
 
 <dd>
 <p>Indicates a TRID controller. </p>
 </dd>
 
-### -field <a id="PcmciaO2Micro"></a><a id="pcmciao2micro"></a><a id="PCMCIAO2MICRO"></a><b>PcmciaO2Micro</b>
+### -field PcmciaO2Micro
 
 <dd>
 <p>Indicates an O2Micro cardbus controller. </p>
 </dd>
 
-### -field <a id="PcmciaNEC"></a><a id="pcmcianec"></a><a id="PCMCIANEC"></a><b>PcmciaNEC</b>
+### -field PcmciaNEC
 
 <dd>
 <p>Indicates a Yenta-compliant NEC cardbus controller. </p>
 </dd>
 
-### -field <a id="PcmciaNEC_98"></a><a id="pcmcianec_98"></a><a id="PCMCIANEC_98"></a><b>PcmciaNEC_98</b>
+### -field PcmciaNEC_98
 
 <dd>
 <p>Indicates a NEC cardbus controller.</p>

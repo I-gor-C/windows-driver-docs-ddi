@@ -7,7 +7,7 @@ old-location: image\iwiaminidrv_drvgetdeviceerrorstr.htm
 old-project: image
 ms.assetid: c34a6834-8875-400c-9634-6c2b9b68164f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IWiaMiniDrv, drvGetDeviceErrorStr, IWiaMiniDrv::drvGetDeviceErrorStr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ HRESULT drvGetDeviceErrorStr(
 ## -parameters
 <dl>
 
-### -param <i>lFlags</i> [in]
+### -param lFlags [in]
 
 <dd>
 <p>Is currently unused. </p>
 </dd>
 
-### -param <i>lDevErrVal</i> [in]
+### -param lDevErrVal [in]
 
 <dd>
 <p>Specifies the device error value to be mapped to a string. A value of zero indicates that no error occurred.</p>
 </dd>
 
-### -param <i>ppszDevErrStr</i> [out, optional]
+### -param ppszDevErrStr [out, optional]
 
 <dd>
 <p>Points to a memory location that will receive the address of a string describing the error. </p>
 </dd>
 
-### -param <i>plDevErr</i> [out]
+### -param plDevErr [out]
 
 <dd>
 <p>Points to a memory location that will receive a status code for this method. If this method returns S_OK, the value stored will be zero. Otherwise, a minidriver-specific error code will be stored at the location pointed to by this parameter.</p>

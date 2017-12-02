@@ -7,7 +7,7 @@ old-location: netvista\ril_startdtmf.htm
 old-project: netvista
 ms.assetid: f37c9431-8b60-4caa-863c-81de45ffd457
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_StartDTMF
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_StartDTMF(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>ch</i> 
+### -param ch 
 
 <dd></dd>
 </dl>

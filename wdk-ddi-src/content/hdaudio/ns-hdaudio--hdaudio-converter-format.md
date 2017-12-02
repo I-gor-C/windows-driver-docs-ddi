@@ -63,31 +63,31 @@ typedef struct _HDAUDIO_CONVERTER_FORMAT {
 ## -struct-fields
 <dl>
 
-### -field ( <i>unnamed struct</i> )
+### -field ( unnamed struct )
 
 <dd>
 <p>Specifies the number of channels in the stream's data format. For more information, see the following Remarks section.</p>
 <dl>
 
-### -field <b>NumberOfChannels</b>
+### -field NumberOfChannels
 
 <dd>
 <p>Specifies the number of channels in the stream's data format. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>BitsPerSample</b>
+### -field BitsPerSample
 
 <dd>
 <p>Specifies the number of bits per sample. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>SampleRate</b>
+### -field SampleRate
 
 <dd>
 <p>Specifies the stream's sample rate. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>StreamType</b>
+### -field StreamType
 
 <dd>
 <p>Specifies the stream type. If <b>StreamType</b>=0, the stream contains PCM data. If <b>StreamType</b>=1, the stream contains non-PCM data.</p>
@@ -95,7 +95,7 @@ typedef struct _HDAUDIO_CONVERTER_FORMAT {
 </dl>
 </dd>
 
-### -field <b>ConverterFormat</b>
+### -field ConverterFormat
 
 <dd>
 <p>Specifies the stream's data format as an encoded 16-bit value. For more information, see the following Remarks section.</p>

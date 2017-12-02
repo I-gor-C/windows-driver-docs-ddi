@@ -55,7 +55,7 @@ typedef struct _D3DHAL_DP2SETTRANSFORM {
 ## -struct-fields
 <dl>
 
-### -field <b>xfrmType</b>
+### -field xfrmType
 
 <dd>
 <p>Specifies the type of transform being done.</p>
@@ -92,7 +92,7 @@ typedef struct _D3DHAL_DP2SETTRANSFORM {
 <p> </p>
 </dd>
 
-### -field <b>matrix</b>
+### -field matrix
 
 <dd>
 <p>Specifies the matrix used to perform the transform. </p>

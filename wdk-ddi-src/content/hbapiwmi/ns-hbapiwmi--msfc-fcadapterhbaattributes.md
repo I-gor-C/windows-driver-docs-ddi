@@ -69,97 +69,97 @@ typedef struct _MSFC_FCAdapterHBAAttributes {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueAdapterId</b>
+### -field UniqueAdapterId
 
 <dd>
 <p>Indicates the unique adapter ID. </p>
 </dd>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. </p>
 </dd>
 
-### -field <b>NodeWWN</b>
+### -field NodeWWN
 
 <dd>
 <p>Contains the 64 bit world-wide name that indicates the node name of the HBA. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.</p>
 </dd>
 
-### -field <b>VendorSpecificID</b>
+### -field VendorSpecificID
 
 <dd>
 <p>Indicates a vendor-specific ID.</p>
 </dd>
 
-### -field <b>NumberOfPorts</b>
+### -field NumberOfPorts
 
 <dd>
 <p>Indicates the number of ports on the HBA. </p>
 </dd>
 
-### -field <b>Manufacturer</b>
+### -field Manufacturer
 
 <dd>
 <p>Contains an ASCII string that is 64 bytes or fewer in length and that identifies the name of the manufacturer of the HBA.</p>
 </dd>
 
-### -field <b>SerialNumber</b>
+### -field SerialNumber
 
 <dd>
 <p>Contains an ASCII string that is 64 bytes or fewer in length and that identifies the serial number of the HBA.</p>
 </dd>
 
-### -field <b>Model</b>
+### -field Model
 
 <dd>
 <p>Contains an ASCII string that is 256 bytes or fewer in length and that identifies the vendor-specific name of the HBA model.</p>
 </dd>
 
-### -field <b>ModelDescription</b>
+### -field ModelDescription
 
 <dd>
 <p>Contains an ASCII string that is 256 bytes or fewer in length and that indicates the model description. </p>
 </dd>
 
-### -field <b>NodeSymbolicName</b>
+### -field NodeSymbolicName
 
 <dd>
 <p>Contains an ASCII string that is 256 bytes or fewer in length and that indicates the symbolic name for the fibre channel node. </p>
 </dd>
 
-### -field <b>HardwareVersion</b>
+### -field HardwareVersion
 
 <dd>
 <p>Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific hardware revision level of the HBA.</p>
 </dd>
 
-### -field <b>DriverVersion</b>
+### -field DriverVersion
 
 <dd>
 <p>Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific version of the HBA miniport driver. </p>
 </dd>
 
-### -field <b>OptionROMVersion</b>
+### -field OptionROMVersion
 
 <dd>
 <p>Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.</p>
 </dd>
 
-### -field <b>FirmwareVersion</b>
+### -field FirmwareVersion
 
 <dd>
 <p>Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.</p>
 </dd>
 
-### -field <b>DriverName</b>
+### -field DriverName
 
 <dd>
 <p>Contains an ASCII string that is 256 bytes or fewer in length and that indicates the file name for the driver binary file. </p>
 </dd>
 
-### -field <b>MfgDomain</b>
+### -field MfgDomain
 
 <dd>
 <p>Contains the name of the HBA manufacturer. </p>

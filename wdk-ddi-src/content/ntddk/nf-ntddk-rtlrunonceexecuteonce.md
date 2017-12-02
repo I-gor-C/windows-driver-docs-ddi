@@ -57,25 +57,25 @@ NTSTATUS RtlRunOnceExecuteOnce(
 ## -parameters
 <dl>
 
-### -param <i>RunOnce</i> [in, out]
+### -param RunOnce [in, out]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a> one-time initialization structure.</p>
 </dd>
 
-### -param <i>InitFn</i> [in]
+### -param InitFn [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.runonceinitialization">RunOnceInitialization</a> routine.</p>
 </dd>
 
-### -param <i>Parameter</i> [in, out]
+### -param Parameter [in, out]
 
 <dd>
 <p>The value to pass as the <i>Parameter</i> parameter to the <i>RunOnceInitialization</i> routine.</p>
 </dd>
 
-### -param <i>Context</i> [out]
+### -param Context [out]
 
 <dd>
 <p>A pointer to a PVOID variable that receives the initialized data.</p>

@@ -60,14 +60,14 @@ typedef struct _BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>hConnection</b>
+### -field hConnection
 
 <dd>
 <p>A handle to the remote SDP server that is returned by the 
      <a href="..\bthioctl\ni-bthioctl-ioctl-bth-sdp-connect.md">IOCTL_BTH_SDP_CONNECT</a> IOCTL.</p>
 </dd>
 
-### -field <b>searchFlags</b>
+### -field searchFlags
 
 <dd>
 <dl>
@@ -76,7 +76,7 @@ typedef struct _BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST {
 </dl>
 </dd>
 
-### -field <b>uuids</b>
+### -field uuids
 
 <dd>
 <p>An array of UUIDs that represent the services for which to query. Each entry can be a 2-byte,
@@ -84,7 +84,7 @@ typedef struct _BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST {
      all 12 entries are used if a UUID entry contains all zeros.</p>
 </dd>
 
-### -field <b>range</b>
+### -field range
 
 <dd>
 <p>A variable-length array of 

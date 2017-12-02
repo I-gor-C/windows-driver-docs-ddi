@@ -62,86 +62,86 @@ NTSTATUS InjectError(
 ## -parameters
 <dl>
 
-### -param <i>PluginContext</i> [in, out, optional]
+### -param PluginContext [in, out, optional]
 
 <dd>
 <p>A pointer to the context area that was specified in the <b>Context</b> member of the <a href="..\ntddk\ns-ntddk--whea-pshed-plugin-registration-packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure when the PSHED plug-in called the <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a> function to register itself with the PSHED.</p>
 </dd>
 
-### -param <i>ErrorType</i> [in]
+### -param ErrorType [in]
 
 <dd>
 <p>The type of error to be injected into the hardware platform. Possible values are:</p>
 <p></p>
 <dl>
 
-### -param <a id="INJECT_ERRTYPE_PROCESSOR_CORRECTABLE"></a><a id="inject_errtype_processor_correctable"></a>INJECT_ERRTYPE_PROCESSOR_CORRECTABLE
+### -param INJECT_ERRTYPE_PROCESSOR_CORRECTABLE
 
 <dd>
 <p>A correctable processor error.</p>
 </dd>
 
-### -param <a id="INJECT_ERRTYPE_PROCESSOR_UNCORRECTABLENONFATAL"></a><a id="inject_errtype_processor_uncorrectablenonfatal"></a>INJECT_ERRTYPE_PROCESSOR_UNCORRECTABLENONFATAL
+### -param INJECT_ERRTYPE_PROCESSOR_UNCORRECTABLENONFATAL
 
 <dd>
 <p>An uncorrectable nonfatal processor error.</p>
 </dd>
 
-### -param <a id="INJECT_ERRTYPE_PROCESSOR_UNCORRECTABLEFATAL"></a><a id="inject_errtype_processor_uncorrectablefatal"></a>INJECT_ERRTYPE_PROCESSOR_UNCORRECTABLEFATAL
+### -param INJECT_ERRTYPE_PROCESSOR_UNCORRECTABLEFATAL
 
 <dd>
 <p>An uncorrectable fatal processor error.</p>
 </dd>
 
-### -param <a id="INJECT_ERRTYPE_MEMORY_CORRECTABLE"></a><a id="inject_errtype_memory_correctable"></a>INJECT_ERRTYPE_MEMORY_CORRECTABLE
+### -param INJECT_ERRTYPE_MEMORY_CORRECTABLE
 
 <dd>
 <p>A correctable memory error.</p>
 </dd>
 
-### -param <a id="INJECT_ERRTYPE_MEMORY_UNCORRECTABLENONFATAL"></a><a id="inject_errtype_memory_uncorrectablenonfatal"></a>INJECT_ERRTYPE_MEMORY_UNCORRECTABLENONFATAL
+### -param INJECT_ERRTYPE_MEMORY_UNCORRECTABLENONFATAL
 
 <dd>
 <p>An uncorrectable nonfatal memory error.</p>
 </dd>
 
-### -param <a id="INJECT_ERRTYPE_MEMORY_UNCORRECTABLEFATAL"></a><a id="inject_errtype_memory_uncorrectablefatal"></a>INJECT_ERRTYPE_MEMORY_UNCORRECTABLEFATAL
+### -param INJECT_ERRTYPE_MEMORY_UNCORRECTABLEFATAL
 
 <dd>
 <p>An uncorrectable fatal memory error.</p>
 </dd>
 
-### -param <a id="INJECT_ERRTYPE_PCIEXPRESS_CORRECTABLE"></a><a id="inject_errtype_pciexpress_correctable"></a>INJECT_ERRTYPE_PCIEXPRESS_CORRECTABLE
+### -param INJECT_ERRTYPE_PCIEXPRESS_CORRECTABLE
 
 <dd>
 <p>A correctable PCI Express error.</p>
 </dd>
 
-### -param <a id="INJECT_ERRTYPE_PCIEXPRESS_UNCORRECTABLENONFATAL"></a><a id="inject_errtype_pciexpress_uncorrectablenonfatal"></a>INJECT_ERRTYPE_PCIEXPRESS_UNCORRECTABLENONFATAL
+### -param INJECT_ERRTYPE_PCIEXPRESS_UNCORRECTABLENONFATAL
 
 <dd>
 <p>An uncorrectable nonfatal PCI Express error.</p>
 </dd>
 
-### -param <a id="INJECT_ERRTYPE_PCIEXPRESS_UNCORRECTABLEFATAL"></a><a id="inject_errtype_pciexpress_uncorrectablefatal"></a>INJECT_ERRTYPE_PCIEXPRESS_UNCORRECTABLEFATAL
+### -param INJECT_ERRTYPE_PCIEXPRESS_UNCORRECTABLEFATAL
 
 <dd>
 <p>An uncorrectable fatal PCI Express error.</p>
 </dd>
 
-### -param <a id="INJECT_ERRTYPE_PLATFORM_CORRECTABLE"></a><a id="inject_errtype_platform_correctable"></a>INJECT_ERRTYPE_PLATFORM_CORRECTABLE
+### -param INJECT_ERRTYPE_PLATFORM_CORRECTABLE
 
 <dd>
 <p>A correctable platform error.</p>
 </dd>
 
-### -param <a id="INJECT_ERRTYPE_PLATFORM_UNCORRECTABLENONFATAL"></a><a id="inject_errtype_platform_uncorrectablenonfatal"></a>INJECT_ERRTYPE_PLATFORM_UNCORRECTABLENONFATAL
+### -param INJECT_ERRTYPE_PLATFORM_UNCORRECTABLENONFATAL
 
 <dd>
 <p>An uncorrectable nonfatal platform error.</p>
 </dd>
 
-### -param <a id="INJECT_ERRTYPE_PLATFORM_UNCORRECTABLEFATAL"></a><a id="inject_errtype_platform_uncorrectablefatal"></a>INJECT_ERRTYPE_PLATFORM_UNCORRECTABLEFATAL
+### -param INJECT_ERRTYPE_PLATFORM_UNCORRECTABLEFATAL
 
 <dd>
 <p>An uncorrectable fatal platform error.</p>
@@ -149,25 +149,25 @@ NTSTATUS InjectError(
 </dl>
 </dd>
 
-### -param <i>Parameter1</i> [in]
+### -param Parameter1 [in]
 
 <dd>
 <p>A generic parameter that contains additional data that is passed by the WHEA management application that is injecting the error.</p>
 </dd>
 
-### -param <i>Parameter2</i> [in]
+### -param Parameter2 [in]
 
 <dd>
 <p>A generic parameter that contains additional data that is passed by the WHEA management application that is injecting the error.</p>
 </dd>
 
-### -param <i>Parameter3</i> [in]
+### -param Parameter3 [in]
 
 <dd>
 <p>A generic parameter that contains additional data that is passed by the WHEA management application that is injecting the error.</p>
 </dd>
 
-### -param <i>Parameter4</i> [in]
+### -param Parameter4 [in]
 
 <dd>
 <p>A generic parameter that contains additional data that is passed by the WHEA management application that is injecting the error.</p>

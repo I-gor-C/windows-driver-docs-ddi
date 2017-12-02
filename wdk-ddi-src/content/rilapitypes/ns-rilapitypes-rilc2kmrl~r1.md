@@ -7,7 +7,7 @@ old-location: netvista\rilc2kmrl_2.htm
 old-project: netvista
 ms.assetid: a06d81d1-9ecc-41da-b0ad-fa878fac382b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILC2KMRL,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,43 +64,43 @@ typedef struct _RILC2KMRL {
 ## -struct-fields
 <dl>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>fServing</b>
+### -field fServing
 
 <dd></dd>
 
-### -field <b>dwNID</b>
+### -field dwNID
 
 <dd></dd>
 
-### -field <b>dwSID</b>
+### -field dwSID
 
 <dd></dd>
 
-### -field <b>dwBaseStationID</b>
+### -field dwBaseStationID
 
 <dd></dd>
 
-### -field <b>dwBaseLat</b>
+### -field dwBaseLat
 
 <dd></dd>
 
-### -field <b>dwBaseLong</b>
+### -field dwBaseLong
 
 <dd></dd>
 
-### -field <b>dwRefPN</b>
+### -field dwRefPN
 
 <dd></dd>
 
-### -field <b>dwGPSSeconds</b>
+### -field dwGPSSeconds
 
 <dd></dd>
 
-### -field <b>dwPilotStrength</b>
+### -field dwPilotStrength
 
 <dd></dd>
 </dl>

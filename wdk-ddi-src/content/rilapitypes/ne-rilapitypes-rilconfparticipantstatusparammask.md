@@ -7,7 +7,7 @@ old-location: netvista\rilconfparticipantstatusparammask_2.htm
 old-project: netvista
 ms.assetid: 1194f333-7422-4dc2-9110-3fca067430a8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef enum _RILCONFPARTICIPANTSTATUSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_CPS_ID"></a><a id="ril_param_cps_id"></a><b>RIL_PARAM_CPS_ID</b>
+### -field RIL_PARAM_CPS_ID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CPS_CALLTRANSFER"></a><a id="ril_param_cps_calltransfer"></a><b>RIL_PARAM_CPS_CALLTRANSFER</b>
+### -field RIL_PARAM_CPS_CALLTRANSFER
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CPS_ADDRESS"></a><a id="ril_param_cps_address"></a><b>RIL_PARAM_CPS_ADDRESS</b>
+### -field RIL_PARAM_CPS_ADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CPS_PARTICIPANTOP"></a><a id="ril_param_cps_participantop"></a><b>RIL_PARAM_CPS_PARTICIPANTOP</b>
+### -field RIL_PARAM_CPS_PARTICIPANTOP
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CPS_SIPSTATUS"></a><a id="ril_param_cps_sipstatus"></a><b>RIL_PARAM_CPS_SIPSTATUS</b>
+### -field RIL_PARAM_CPS_SIPSTATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CPS_ALL"></a><a id="ril_param_cps_all"></a><b>RIL_PARAM_CPS_ALL</b>
+### -field RIL_PARAM_CPS_ALL
 
 <dd></dd>
 </dl>

@@ -55,13 +55,13 @@ typedef struct _SM_AddPort_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>A worldwide name (WWN) that indicates the port whose events are to be reported.</p>
 </dd>
 
-### -field <b>EventType</b>
+### -field EventType
 
 <dd>
 <p>An event type value.</p>

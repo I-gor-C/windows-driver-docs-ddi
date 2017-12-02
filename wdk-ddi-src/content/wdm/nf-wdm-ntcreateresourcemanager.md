@@ -61,13 +61,13 @@ NTSTATUS ZwCreateResourceManager(
 ## -parameters
 <dl>
 
-### -param <i>ResourceManagerHandle</i> [out]
+### -param ResourceManagerHandle [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives a handle to the new resource manager object if the call to <b>ZwCreateResourceManager</b> is successful.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that specifies the caller's requested access to the resource manager object. In addition to the access rights that are defined for all kinds of objects (see <b>ACCESS_MASK</b>), the caller can specify any of the following access right flags for resource manager objects:</p>
@@ -176,25 +176,25 @@ NTSTATUS ZwCreateResourceManager(
 <p> </p>
 </dd>
 
-### -param <i>TmHandle</i> [in]
+### -param TmHandle [in]
 
 <dd>
 <p>A handle to a <a href="https://msdn.microsoft.com/af53cda4-e2ab-47df-9311-a4da2a2ee08d">transaction manager object</a> that was obtained by a previous all to <a href="..\wdm\nf-wdm-zwcreatetransactionmanager.md">ZwCreateTransactionManager</a> or <a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>. </p>
 </dd>
 
-### -param <i>ResourceManagerGuid</i> [in, optional]
+### -param ResourceManagerGuid [in, optional]
 
 <dd>
 <p>A pointer to a GUID that KTM will use to identify the resource manager. If this pointer is <b>NULL</b>, KTM generates a GUID.</p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in, optional]
+### -param ObjectAttributes [in, optional]
 
 <dd>
 <p>A pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> routine to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>CreateOptions</i> [in, optional]
+### -param CreateOptions [in, optional]
 
 <dd>
 <p>Optional object creation flags. The following table contains the available flags, which are defined in Ktmtypes.h. </p>
@@ -224,7 +224,7 @@ NTSTATUS ZwCreateResourceManager(
 <p>This parameter is optional and can be zero. </p>
 </dd>
 
-### -param <i>Description</i> [in, optional]
+### -param Description [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains a NULL-terminated string. The string provides a description of the resource manager. KTM stores a copy of the string and includes the string in messages that it writes to the log stream. The maximum string length is MAX_RESOURCEMANAGER_DESCRIPTION_LENGTH. This parameter is optional and can be <b>NULL</b>. </p>

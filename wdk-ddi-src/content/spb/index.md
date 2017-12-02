@@ -32,3 +32,4 @@ Spb.h contain these programming interfaces:
 | ---- |:---- |
 | [SPB_TRANSFER_BUFFER_FORMAT enumeration](ne-spb-spb-transfer-buffer-format.md) | The SPB_TRANSFER_BUFFER_FORMAT enumeration specifies the format of the buffer that is described by an SPB_TRANSFER_BUFFER structure. |
 | [SPB_TRANSFER_DIRECTION enumeration](ne-spb-spb-transfer-direction.md) | The SPB_TRANSFER_DIRECTION enumeration describes the direction (read or write) of a single transfer in an I/O transfer sequence. |
+| [SpbIoctl enumeration](ne-spb-spbioctl.md) | Defines values to indicate the type I/O control request. |

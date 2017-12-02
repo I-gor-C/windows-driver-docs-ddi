@@ -7,7 +7,7 @@ old-location: wdf\iimpersonatecallback.htm
 old-project: wdf
 ms.assetid: 811cb070-9cbe-4906-9db0-ee8316cc18c9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -82,7 +82,7 @@ typedef enum _BRB_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="BRB_HCI_GET_LOCAL_BD_ADDR"></a><a id="brb_hci_get_local_bd_addr"></a><b>BRB_HCI_GET_LOCAL_BD_ADDR</b>
+### -field BRB_HCI_GET_LOCAL_BD_ADDR
 
 <dd>
 <p>This value declares a 
@@ -91,7 +91,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_HCI_GET_LOCAL_BD_ADDR</b>.</p>
 </dd>
 
-### -field <a id="BRB_L2CA_REGISTER_SERVER"></a><a id="brb_l2ca_register_server"></a><b>BRB_L2CA_REGISTER_SERVER</b>
+### -field BRB_L2CA_REGISTER_SERVER
 
 <dd>
 <p>This value declares a 
@@ -99,7 +99,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_L2CA_REGISTER_SERVER</b>.</p>
 </dd>
 
-### -field <a id="BRB_L2CA_UNREGISTER_SERVER"></a><a id="brb_l2ca_unregister_server"></a><b>BRB_L2CA_UNREGISTER_SERVER</b>
+### -field BRB_L2CA_UNREGISTER_SERVER
 
 <dd>
 <p>This value declares a 
@@ -108,7 +108,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_L2CA_UNREGISTER_SERVER</b>.</p>
 </dd>
 
-### -field <a id="BRB_L2CA_OPEN_CHANNEL"></a><a id="brb_l2ca_open_channel"></a><b>BRB_L2CA_OPEN_CHANNEL</b>
+### -field BRB_L2CA_OPEN_CHANNEL
 
 <dd>
 <p>This value declares a 
@@ -116,7 +116,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_L2CA_OPEN_CHANNEL</b>.</p>
 </dd>
 
-### -field <a id="BRB_L2CA_OPEN_CHANNEL_RESPONSE"></a><a id="brb_l2ca_open_channel_response"></a><b>BRB_L2CA_OPEN_CHANNEL_RESPONSE</b>
+### -field BRB_L2CA_OPEN_CHANNEL_RESPONSE
 
 <dd>
 <p>This value declares a 
@@ -125,7 +125,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_L2CA_OPEN_CHANNEL_RESPONSE</b>.</p>
 </dd>
 
-### -field <a id="BRB_L2CA_CLOSE_CHANNEL"></a><a id="brb_l2ca_close_channel"></a><b>BRB_L2CA_CLOSE_CHANNEL</b>
+### -field BRB_L2CA_CLOSE_CHANNEL
 
 <dd>
 <p>This value declares a 
@@ -133,7 +133,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_L2CA_CLOSE_CHANNEL</b>.</p>
 </dd>
 
-### -field <a id="BRB_L2CA_ACL_TRANSFER"></a><a id="brb_l2ca_acl_transfer"></a><b>BRB_L2CA_ACL_TRANSFER</b>
+### -field BRB_L2CA_ACL_TRANSFER
 
 <dd>
 <p>This value declares a 
@@ -141,7 +141,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_L2CA_ACL_TRANSFER</b>.</p>
 </dd>
 
-### -field <a id="BRB_L2CA_UPDATE_CHANNEL"></a><a id="brb_l2ca_update_channel"></a><b>BRB_L2CA_UPDATE_CHANNEL</b>
+### -field BRB_L2CA_UPDATE_CHANNEL
 
 <dd>
 <p>This value declares a 
@@ -149,7 +149,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_L2CA_UPDATE_CHANNEL</b>.</p>
 </dd>
 
-### -field <a id="BRB_L2CA_PING"></a><a id="brb_l2ca_ping"></a><b>BRB_L2CA_PING</b>
+### -field BRB_L2CA_PING
 
 <dd>
 <p>This value declares a 
@@ -157,13 +157,13 @@ typedef enum _BRB_TYPE {
      <b>BRB_L2CA_PING</b>.</p>
 </dd>
 
-### -field <a id="BRB_L2CA_INFO_REQUEST"></a><a id="brb_l2ca_info_request"></a><b>BRB_L2CA_INFO_REQUEST</b>
+### -field BRB_L2CA_INFO_REQUEST
 
 <dd>
 <p>For internal use only. Do not use.</p>
 </dd>
 
-### -field <a id="BRB_REGISTER_PSM"></a><a id="brb_register_psm"></a><b>BRB_REGISTER_PSM</b>
+### -field BRB_REGISTER_PSM
 
 <dd>
 <p>This value declares a 
@@ -171,7 +171,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_REGISTER_PSM</b>.</p>
 </dd>
 
-### -field <a id="BRB_UNREGISTER_PSM"></a><a id="brb_unregister_psm"></a><b>BRB_UNREGISTER_PSM</b>
+### -field BRB_UNREGISTER_PSM
 
 <dd>
 <p>This value declares a 
@@ -179,7 +179,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_UNREGISTER_PSM</b>.</p>
 </dd>
 
-### -field <a id="BRB_SCO_REGISTER_SERVER"></a><a id="brb_sco_register_server"></a><b>BRB_SCO_REGISTER_SERVER</b>
+### -field BRB_SCO_REGISTER_SERVER
 
 <dd>
 <p>This value declares a 
@@ -187,7 +187,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_SCO_REGISTER_SERVER</b>.</p>
 </dd>
 
-### -field <a id="BRB_SCO_UNREGISTER_SERVER"></a><a id="brb_sco_unregister_server"></a><b>BRB_SCO_UNREGISTER_SERVER</b>
+### -field BRB_SCO_UNREGISTER_SERVER
 
 <dd>
 <p>This value declares a 
@@ -196,7 +196,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_SCO_UNREGISTER_SERVER</b>.</p>
 </dd>
 
-### -field <a id="BRB_SCO_OPEN_CHANNEL"></a><a id="brb_sco_open_channel"></a><b>BRB_SCO_OPEN_CHANNEL</b>
+### -field BRB_SCO_OPEN_CHANNEL
 
 <dd>
 <p>This value declares a 
@@ -204,7 +204,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_SCO_OPEN_CHANNEL</b>.</p>
 </dd>
 
-### -field <a id="BRB_SCO_OPEN_CHANNEL_RESPONSE"></a><a id="brb_sco_open_channel_response"></a><b>BRB_SCO_OPEN_CHANNEL_RESPONSE</b>
+### -field BRB_SCO_OPEN_CHANNEL_RESPONSE
 
 <dd>
 <p>This value declares a 
@@ -213,7 +213,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_SCO_OPEN_CHANNEL_RESPONSE</b>.</p>
 </dd>
 
-### -field <a id="BRB_SCO_CLOSE_CHANNEL"></a><a id="brb_sco_close_channel"></a><b>BRB_SCO_CLOSE_CHANNEL</b>
+### -field BRB_SCO_CLOSE_CHANNEL
 
 <dd>
 <p>This value declares a 
@@ -221,7 +221,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_SCO_CLOSE_CHANNEL</b>.</p>
 </dd>
 
-### -field <a id="BRB_SCO_TRANSFER"></a><a id="brb_sco_transfer"></a><b>BRB_SCO_TRANSFER</b>
+### -field BRB_SCO_TRANSFER
 
 <dd>
 <p>This value declares a 
@@ -229,7 +229,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_SCO_TRANSFER</b>.</p>
 </dd>
 
-### -field <a id="BRB_SCO_GET_CHANNEL_INFO"></a><a id="brb_sco_get_channel_info"></a><b>BRB_SCO_GET_CHANNEL_INFO</b>
+### -field BRB_SCO_GET_CHANNEL_INFO
 
 <dd>
 <p>This value declares a 
@@ -237,7 +237,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_SCO_GET_CHANNEL_INFO</b>.</p>
 </dd>
 
-### -field <a id="BRB_SCO_GET_SYSTEM_INFO"></a><a id="brb_sco_get_system_info"></a><b>BRB_SCO_GET_SYSTEM_INFO</b>
+### -field BRB_SCO_GET_SYSTEM_INFO
 
 <dd>
 <p>This value declares a 
@@ -245,7 +245,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_SCO_GET_SYSTEM_INFO</b>.</p>
 </dd>
 
-### -field <a id="BRB_SCO_FLUSH_CHANNEL"></a><a id="brb_sco_flush_channel"></a><b>BRB_SCO_FLUSH_CHANNEL</b>
+### -field BRB_SCO_FLUSH_CHANNEL
 
 <dd>
 <p>This value declares a 
@@ -253,7 +253,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_SCO_FLUSH_CHANNEL</b>.</p>
 </dd>
 
-### -field <a id="BRB_SCO_OPEN_UNMANAGED_CHANNEL"></a><a id="brb_sco_open_unmanaged_channel"></a><b>BRB_SCO_OPEN_UNMANAGED_CHANNEL</b>
+### -field BRB_SCO_OPEN_UNMANAGED_CHANNEL
 
 <dd>
 <p>This value declares a 
@@ -261,7 +261,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_SCO_OPEN_CHANNEL</b>.</p>
 </dd>
 
-### -field <a id="BRB_SCO_OPEN_UNMANAGED_CHANNEL_RESPONSE"></a><a id="brb_sco_open_unmanaged_channel_response"></a><b>BRB_SCO_OPEN_UNMANAGED_CHANNEL_RESPONSE</b>
+### -field BRB_SCO_OPEN_UNMANAGED_CHANNEL_RESPONSE
 
 <dd>
 <p>This value declares a 
@@ -270,7 +270,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_SCO_OPEN_CHANNEL_RESPONSE</b>.</p>
 </dd>
 
-### -field <a id="BRB_L2CA_OPEN_ENHANCED_CHANNEL"></a><a id="brb_l2ca_open_enhanced_channel"></a><b>BRB_L2CA_OPEN_ENHANCED_CHANNEL</b>
+### -field BRB_L2CA_OPEN_ENHANCED_CHANNEL
 
 <dd>
 <p>This value declares a 
@@ -278,7 +278,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_L2CA_OPEN_CHANNEL</b>. This value is present in Windows 8 and later versions of Windows.</p>
 </dd>
 
-### -field <a id="BRB_L2CA_OPEN_ENHANCED_CHANNEL_RESPONSE"></a><a id="brb_l2ca_open_enhanced_channel_response"></a><b>BRB_L2CA_OPEN_ENHANCED_CHANNEL_RESPONSE</b>
+### -field BRB_L2CA_OPEN_ENHANCED_CHANNEL_RESPONSE
 
 <dd>
 <p>This value declares a 
@@ -286,7 +286,7 @@ typedef enum _BRB_TYPE {
      <b>BRB_L2CA_OPEN_CHANNEL_RESPONSE</b>. This value is present in Windows 8 and later versions of Windows.</p>
 </dd>
 
-### -field <a id="BRB_ACL_ENTER_ACTIVE_MODE"></a><a id="brb_acl_enter_active_mode"></a><b>BRB_ACL_ENTER_ACTIVE_MODE</b>
+### -field BRB_ACL_ENTER_ACTIVE_MODE
 
 <dd>
 <p>This value declares a 
@@ -295,13 +295,13 @@ typedef enum _BRB_TYPE {
      <b>BRB_ACL_ENTER_ACTIVE_MODE</b>.</p>
 </dd>
 
-### -field <a id="BRB_STORED_LINK_KEY"></a><a id="brb_stored_link_key"></a><b>BRB_STORED_LINK_KEY</b>
+### -field BRB_STORED_LINK_KEY
 
 <dd>
 <p>For internal use only. Do not use.</p>
 </dd>
 
-### -field <a id="BRB_GET_DEVICE_INTERFACE_STRING"></a><a id="brb_get_device_interface_string"></a><b>BRB_GET_DEVICE_INTERFACE_STRING</b>
+### -field BRB_GET_DEVICE_INTERFACE_STRING
 
 <dd>
 <p>This value declares a 

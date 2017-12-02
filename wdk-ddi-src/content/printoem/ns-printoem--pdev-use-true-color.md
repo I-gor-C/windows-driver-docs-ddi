@@ -55,7 +55,7 @@ typedef struct _PDEV_USE_TRUE_COLOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bUseTrueColor</b>
+### -field bUseTrueColor
 
 <dd>
 <p>Specifies whether the PostScript output should be in color mode or in monochrome/grayscale mode. If <b>TRUE</b>, output is in color. If <b>FALSE</b>, output is monochrome/grayscale.</p>

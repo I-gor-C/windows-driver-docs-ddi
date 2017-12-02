@@ -7,7 +7,7 @@ old-location: netvista\rilmessageinfo.htm
 old-project: netvista
 ms.assetid: 689b4abc-13ee-4d4a-8b2e-bb0be7cc6672
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMESSAGEINFO, RILMESSAGEINFO, *LPRILMESSAGEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,27 +59,27 @@ typedef struct _RILMESSAGEINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwIndex</b>
+### -field dwIndex
 
 <dd></dd>
 
-### -field <b>dwStatus</b>
+### -field dwStatus
 
 <dd></dd>
 
-### -field <b>rmMessage</b>
+### -field rmMessage
 
 <dd></dd>
 </dl>

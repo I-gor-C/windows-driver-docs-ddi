@@ -54,7 +54,7 @@ typedef struct _BDCB_STATUS_UPDATE_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>StatusType</b>
+### -field StatusType
 
 <dd>
 <p>The type of the status update.</p>

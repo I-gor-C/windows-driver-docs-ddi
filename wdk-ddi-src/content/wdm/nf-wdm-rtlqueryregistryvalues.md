@@ -59,7 +59,7 @@ NTSTATUS RtlQueryRegistryValues(
 ## -parameters
 <dl>
 
-### -param <i>RelativeTo</i> [in]
+### -param RelativeTo [in]
 
 <dd>
 <p>Specifies whether <i>Path</i> is an absolute registry path or is relative to a predefined path as one of the following.</p>
@@ -140,13 +140,13 @@ NTSTATUS RtlQueryRegistryValues(
 <p> </p>
 </dd>
 
-### -param <i>Path</i> [in]
+### -param Path [in]
 
 <dd>
 <p>Pointer to either an absolute registry path or a path relative to the known location specified by the <i>RelativeTo</i> parameter. Note that the names of keys in such a path must be known to the caller, including the last key in the path. If the RTL_REGISTRY_HANDLE flag is specified, this parameter is a registry handle for an already opened key to be queried directly.</p>
 </dd>
 
-### -param <i>QueryTable</i> [in, out]
+### -param QueryTable [in, out]
 
 <dd>
 <p>Pointer to a table of one or more value names and subkey names in which the caller is interested. Each table entry contains the address of a caller-supplied <a href="kernel.queryroutine">QueryRoutine</a> function that will be called for each value name that exists in the registry. The table must be terminated with a <b>NULL</b> table entry, which is a table entry with a <b>NULL</b> <b>QueryRoutine</b> member and a <b>NULL</b> <b>Name</b> member. The structure for query table entries is defined as follows:</p>
@@ -172,7 +172,7 @@ NTSTATUS RtlQueryRegistryValues(
 <p></p>
 <dl>
 
-### -param <a id="QueryRoutine"></a><a id="queryroutine"></a><a id="QUERYROUTINE"></a><b>QueryRoutine</b>
+### -param QueryRoutine
 
 <dd>
 <p>The address of a <i>QueryRoutine</i> function that is called with the name, type, data, and data length of a registry value. If this member and the <b>Name</b> member are both <b>NULL</b>, it marks the end of the table.</p>
@@ -198,7 +198,7 @@ QueryRoutine (
 <p>For more information, see <a href="kernel.queryroutine">QueryRoutine</a>.</p>
 </dd>
 
-### -param <a id="Flags"></a><a id="flags"></a><a id="FLAGS"></a><b>Flags</b>
+### -param Flags
 
 <dd>
 <p>Flags to control how the remaining members of the <b>RTL_QUERY_REGISTRY_TABLE</b> structure are to be interpreted. The following flag bits are defined for this member.</p>
@@ -276,31 +276,31 @@ QueryRoutine (
 <p>Starting with Windows 2000, inbox support is provided for all flag bits in the preceding table, with the exception of RTL_QUERY_REGISTRY_TYPECHECK. Inbox support for RTL_QUERY_REGISTRY_TYPECHECK is available starting with Windows 8. For earlier versions of Windows, support for RTL_QUERY_REGISTRY_TYPECHECK is provided through Windows Update. For more information, see Remarks.</p>
 </dd>
 
-### -param <a id="Name"></a><a id="name"></a><a id="NAME"></a><b>Name</b>
+### -param Name
 
 <dd>
 <p>This is the name of a Value that the caller queried. If <b>Name</b> is <b>NULL</b>, the <i>QueryRoutine</i> function specified for this table entry is called for all values associated with the current registry key. If the RTL_QUERY_REGISTRY_DIRECT flag is set, a non-<b>NULL</b> value for <b>Name</b> must be provided.</p>
 </dd>
 
-### -param <a id="EntryContext"></a><a id="entrycontext"></a><a id="ENTRYCONTEXT"></a><b>EntryContext</b>
+### -param EntryContext
 
 <dd>
 <p>If the RTL_QUERY_REGISTRY_DIRECT flag is set, this is a pointer to the buffer to store the result of the query operation for this key. Otherwise, this value is passed as the <i>EntryContext</i> parameter of <i>QueryRoutine</i>.</p>
 </dd>
 
-### -param <a id="DefaultType"></a><a id="defaulttype"></a><a id="DEFAULTTYPE"></a><b>DefaultType</b>
+### -param DefaultType
 
 <dd>
 <p>The least significant byte of this member specifies the REG_<i>XXX</i> type of the data to be returned, if no matching key is found and the RTL_QUERY_REGISTRY_REQUIRED flag is not specified. Specify REG_NONE for no default type. If the RTL_QUERY_REGISTRY_TYPECHECK flag is set, the most significant byte of this member specifies the REG_<i>XXX</i> type of the stored registry value that the caller expects. Bits 8 to 23 of this member are reserved and should be zero.</p>
 </dd>
 
-### -param <a id="DefaultData"></a><a id="defaultdata"></a><a id="DEFAULTDATA"></a><b>DefaultData</b>
+### -param DefaultData
 
 <dd>
 <p>A pointer to the default value to be returned if no matching key is found and the RTL_QUERY_REGISTRY_REQUIRED flag is not specified. This member is ignored if <b>DefaultType</b> = REG_NONE. Otherwise, the type of data pointed to by <b>DefaultData</b> should conform to the registry value type specified by the <b>DefaultType</b> member. For more information registry value types, see the definition of the <i>Type</i> parameter in <a href="..\wdm\ns-wdm--key-value-basic-information.md">KEY_VALUE_BASIC_INFORMATION</a>.</p>
 </dd>
 
-### -param <a id="DefaultLength"></a><a id="defaultlength"></a><a id="DEFAULTLENGTH"></a><b>DefaultLength</b>
+### -param DefaultLength
 
 <dd>
 <p>Specifies the length, in bytes, of the <b>DefaultData</b> member. If <b>DefaultType</b> is REG_SZ, REG_EXPAND_SZ, or REG_MULTI_SZ, callers can optionally specify zero to indicate <b>RtlQueryRegistryValues</b> should compute the length based on the default data value. If <b>DefaultType</b> = REG_NONE, this member is ignored.</p>
@@ -308,13 +308,13 @@ QueryRoutine (
 </dl>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Specifies the value passed as the <i>Context</i> parameter of a <i>QueryRoutine</i> function each time it is called.</p>
 </dd>
 
-### -param <i>Environment</i> [in, optional]
+### -param Environment [in, optional]
 
 <dd>
 <p>Pointer to the environment used when expanding variable values in REG_EXPAND_SZ registry values, or a <b>NULL</b> pointer (optional).</p>

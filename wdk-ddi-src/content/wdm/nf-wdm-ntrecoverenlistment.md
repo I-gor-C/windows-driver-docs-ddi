@@ -56,13 +56,13 @@ NTSTATUS ZwRecoverEnlistment(
 ## -parameters
 <dl>
 
-### -param <i>EnlistmentHandle</i> [in]
+### -param EnlistmentHandle [in]
 
 <dd>
 <p>A handle to an <a href="https://msdn.microsoft.com/80e61475-4bb7-4eaa-b9f1-ff95eac9bc77">enlistment object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a> or <a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>. The handle must have ENLISTMENT_RECOVER access to the object.</p>
 </dd>
 
-### -param <i>EnlistmentKey</i> [in, optional]
+### -param EnlistmentKey [in, optional]
 
 <dd>
 <p>A pointer to the enlistment key value that the resource manager previously specified as the <i>EnlistmentKey</i> parameter to <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>. This parameter is optional and can be <b>NULL</b> if the resource manager did not provide an enlistment key when it called <b>ZwCreateEnlistment</b>. </p>

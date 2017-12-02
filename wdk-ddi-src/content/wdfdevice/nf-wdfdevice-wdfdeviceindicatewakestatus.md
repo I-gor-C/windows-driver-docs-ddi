@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceindicatewakestatus.htm
 old-project: wdf
 ms.assetid: 6581a309-1a6d-4795-a55c-327215ea18ee
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceIndicateWakeStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ NTSTATUS WdfDeviceIndicateWakeStatus(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object. </p>
 </dd>
 
-### -param <i>WaitWakeStatus </i> [in]
+### -param WaitWakeStatus  [in]
 
 <dd>
 <p>An NTSTATUS status value. If the device triggered a wake signal, the caller must set this value to STATUS_SUCCESS or another status value for which <a href="https://msdn.microsoft.com/fe823930-e3ff-4c95-a640-bb6470c95d1d">NT_SUCCESS</a>(<i>WaitWakeStatus</i>) equals <b>TRUE</b>. If the device did not trigger a wake signal or if an error was detected, the caller must provide a status value for which NT_SUCCESS(<i>WaitWakeStatus</i>) equals <b>FALSE</b>. For more information, see the following Remarks section. </p>

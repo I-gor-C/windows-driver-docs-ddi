@@ -7,7 +7,7 @@ old-location: sensors\magnetometeraccuracy.htm
 old-project: sensors
 ms.assetid: DC495EFB-3522-4220-87F8-3DB501831D6E
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef enum _MagnetometerAccuracy {
 ## -enum-fields
 <dl>
 
-### -field <a id="Unknown"></a><a id="unknown"></a><a id="UNKNOWN"></a><b>Unknown</b>
+### -field Unknown
 
 <dd>
 <p>The accuracy is currently not available, typically because the driver can't report it.</p>
 </dd>
 
-### -field <a id="Unreliable"></a><a id="unreliable"></a><a id="UNRELIABLE"></a><b>Unreliable</b>
+### -field Unreliable
 
 <dd>
 <p>The reported values have a high degree of inaccuracy. Apps should always ask the user to calibrate the device whenever this value is returned.</p>
 </dd>
 
-### -field <a id="Approximate"></a><a id="approximate"></a><a id="APPROXIMATE"></a><b>Approximate</b>
+### -field Approximate
 
 <dd>
 <p>          The actual and reported values differ but may be accurate enough for some applications. Apps that only need a relative value, like a virtual reality app, can continue without additional calibration.</p>
 </dd>
 
-### -field <a id="High"></a><a id="high"></a><a id="HIGH"></a><b>High</b>
+### -field High
 
 <dd>
 <p>          The actual and reported values are accurate. No additional calibration is needed.</p>
@@ -134,4 +134,4 @@ typedef enum _MagnetometerAccuracy {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20MagnetometerAccuracy enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20MagnetometerAccuracy enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

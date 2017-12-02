@@ -56,13 +56,13 @@ BOOLEAN KeRemoveEntryDeviceQueue(
 ## -parameters
 <dl>
 
-### -param <i>DeviceQueue</i> [in, out]
+### -param DeviceQueue [in, out]
 
 <dd>
 <p>Pointer to an initialized device queue object for which the caller provides the storage.</p>
 </dd>
 
-### -param <i>DeviceQueueEntry</i> [in, out]
+### -param DeviceQueueEntry [in, out]
 
 <dd>
 <p>Pointer to the entry to be removed from the specified <i>DeviceQueue</i>.</p>

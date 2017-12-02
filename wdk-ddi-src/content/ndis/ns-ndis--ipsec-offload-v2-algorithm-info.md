@@ -7,7 +7,7 @@ old-location: netvista\ipsec_offload_v2_algorithm_info.htm
 old-project: netvista
 ms.assetid: 787e5a98-ba77-42d4-8624-abcc02fccf53
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IPSEC_OFFLOAD_V2_ALGORITHM_INFO, IPSEC_OFFLOAD_V2_ALGORITHM_INFO, *PIPSEC_OFFLOAD_V2_ALGORITHM_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct _IPSEC_OFFLOAD_V2_ALGORITHM_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Identifier</b>
+### -field Identifier
 
 <dd>
 <p>The encryption or authentication algorithm that is used for the SA. 
@@ -69,26 +69,26 @@ typedef struct _IPSEC_OFFLOAD_V2_ALGORITHM_INFO {
 <p></p>
 <dl>
 
-### -field <a id="IPSEC_OFFLOAD_V2_ENCRYPTION_NONE"></a><a id="ipsec_offload_v2_encryption_none"></a>IPSEC_OFFLOAD_V2_ENCRYPTION_NONE
+### -field IPSEC_OFFLOAD_V2_ENCRYPTION_NONE
 
 <dd>
 <p>Specifies no confidentiality algorithm. This value is used for null encryption--that is, when a
        packet is not encrypted but does include ESP authentication information.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_ENCRYPTION_DES_CBC"></a><a id="ipsec_offload_v2_encryption_des_cbc"></a>IPSEC_OFFLOAD_V2_ENCRYPTION_DES_CBC
+### -field IPSEC_OFFLOAD_V2_ENCRYPTION_DES_CBC
 
 <dd>
 <p>Specifies the DES algorithm for encrypting and decrypting ESP payloads.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_ENCRYPTION_3_DES_CBC"></a><a id="ipsec_offload_v2_encryption_3_des_cbc"></a>IPSEC_OFFLOAD_V2_ENCRYPTION_3_DES_CBC
+### -field IPSEC_OFFLOAD_V2_ENCRYPTION_3_DES_CBC
 
 <dd>
 <p>Specifies the triple-DES algorithm for encrypting and decrypting ESP payloads.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_ENCRYPTION_AES_GCM_128"></a><a id="ipsec_offload_v2_encryption_aes_gcm_128"></a>IPSEC_OFFLOAD_V2_ENCRYPTION_AES_GCM_128
+### -field IPSEC_OFFLOAD_V2_ENCRYPTION_AES_GCM_128
 
 <dd>
 <p>Specifies the AES-GCM 128 algorithm for encrypting and computing a cryptographic checksum or
@@ -96,7 +96,7 @@ typedef struct _IPSEC_OFFLOAD_V2_ALGORITHM_INFO {
        mode algorithm.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_ENCRYPTION_AES_GCM_192"></a><a id="ipsec_offload_v2_encryption_aes_gcm_192"></a>IPSEC_OFFLOAD_V2_ENCRYPTION_AES_GCM_192
+### -field IPSEC_OFFLOAD_V2_ENCRYPTION_AES_GCM_192
 
 <dd>
 <p>Specifies the AES-GCM 192 algorithm for encrypting and computing a cryptographic checksum or
@@ -104,7 +104,7 @@ typedef struct _IPSEC_OFFLOAD_V2_ALGORITHM_INFO {
        mode algorithm.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_ENCRYPTION_AES_GCM_256"></a><a id="ipsec_offload_v2_encryption_aes_gcm_256"></a>IPSEC_OFFLOAD_V2_ENCRYPTION_AES_GCM_256
+### -field IPSEC_OFFLOAD_V2_ENCRYPTION_AES_GCM_256
 
 <dd>
 <p>Specifies the AES-GCM 256 algorithm for encrypting and computing a cryptographic checksum or
@@ -112,20 +112,20 @@ typedef struct _IPSEC_OFFLOAD_V2_ALGORITHM_INFO {
        mode algorithm.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_ENCRYPTION_AES_CBC_128"></a><a id="ipsec_offload_v2_encryption_aes_cbc_128"></a>IPSEC_OFFLOAD_V2_ENCRYPTION_AES_CBC_128
+### -field IPSEC_OFFLOAD_V2_ENCRYPTION_AES_CBC_128
 
 <dd>
 <p>Specifies the Advanced Encryption Standard - cipher-block chaining mode (AES-CBC) 128 algorithm
        for encrypting and decrypting ESP payloads.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_ENCRYPTION_AES_CBC_192"></a><a id="ipsec_offload_v2_encryption_aes_cbc_192"></a>IPSEC_OFFLOAD_V2_ENCRYPTION_AES_CBC_192
+### -field IPSEC_OFFLOAD_V2_ENCRYPTION_AES_CBC_192
 
 <dd>
 <p>Specifies the AES-CBC 192 algorithm for encrypting and decrypting ESP payloads.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_ENCRYPTION_AES_CBC_256"></a><a id="ipsec_offload_v2_encryption_aes_cbc_256"></a>IPSEC_OFFLOAD_V2_ENCRYPTION_AES_CBC_256
+### -field IPSEC_OFFLOAD_V2_ENCRYPTION_AES_CBC_256
 
 <dd>
 <p>Specifies the AES-CBC 256 algorithm for encrypting and decrypting ESP payloads.</p>
@@ -136,41 +136,41 @@ typedef struct _IPSEC_OFFLOAD_V2_ALGORITHM_INFO {
 <p></p>
 <dl>
 
-### -field <a id="IPSEC_OFFLOAD_V2_AUTHENTICATION_MD5"></a><a id="ipsec_offload_v2_authentication_md5"></a>IPSEC_OFFLOAD_V2_AUTHENTICATION_MD5
+### -field IPSEC_OFFLOAD_V2_AUTHENTICATION_MD5
 
 <dd>
 <p>Specifies the keyed message digest 5 (MD5) algorithm for computing or validating a cryptographic
        checksum.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_AUTHENTICATION_SHA_1"></a><a id="ipsec_offload_v2_authentication_sha_1"></a>IPSEC_OFFLOAD_V2_AUTHENTICATION_SHA_1
+### -field IPSEC_OFFLOAD_V2_AUTHENTICATION_SHA_1
 
 <dd>
 <p>Specifies the secure hash algorithm (SHA) 1 algorithm for computing or validating a
        cryptographic checksum.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_AUTHENTICATION_SHA_256"></a><a id="ipsec_offload_v2_authentication_sha_256"></a>IPSEC_OFFLOAD_V2_AUTHENTICATION_SHA_256
+### -field IPSEC_OFFLOAD_V2_AUTHENTICATION_SHA_256
 
 <dd>
 <p>Specifies the SHA 256 algorithm for computing or validating a cryptographic checksum.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_AUTHENTICATION_AES_GCM_128"></a><a id="ipsec_offload_v2_authentication_aes_gcm_128"></a>IPSEC_OFFLOAD_V2_AUTHENTICATION_AES_GCM_128
+### -field IPSEC_OFFLOAD_V2_AUTHENTICATION_AES_GCM_128
 
 <dd>
 <p>Specifies the Advanced Encryption Standard - Galois/Counter Mode (AES- GMAC) 128 algorithm for
        computing or validating a cryptographic checksum.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_AUTHENTICATION_AES_GCM_192"></a><a id="ipsec_offload_v2_authentication_aes_gcm_192"></a>IPSEC_OFFLOAD_V2_AUTHENTICATION_AES_GCM_192
+### -field IPSEC_OFFLOAD_V2_AUTHENTICATION_AES_GCM_192
 
 <dd>
 <p>Specifies the AES- GMAC 192 algorithm for computing or validating a cryptographic
        checksum.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_AUTHENTICATION_AES_GCM_256"></a><a id="ipsec_offload_v2_authentication_aes_gcm_256"></a>IPSEC_OFFLOAD_V2_AUTHENTICATION_AES_GCM_256
+### -field IPSEC_OFFLOAD_V2_AUTHENTICATION_AES_GCM_256
 
 <dd>
 <p>Specifies the AES- GMAC 256 algorithm for computing or validating a cryptographic
@@ -179,7 +179,7 @@ typedef struct _IPSEC_OFFLOAD_V2_ALGORITHM_INFO {
 </dl>
 </dd>
 
-### -field <b>KeyLength</b>
+### -field KeyLength
 
 <dd>
 <p>The length, in bytes, of the key for the algorithm. The key is contained in the array at the 
@@ -196,7 +196,7 @@ typedef struct _IPSEC_OFFLOAD_V2_ALGORITHM_INFO {
      <b>KeyOffsetBytes</b> .</p>
 </dd>
 
-### -field <b>KeyOffsetBytes</b>
+### -field KeyOffsetBytes
 
 <dd>
 <p>The offset, in bytes, into in the array at the 
@@ -205,7 +205,7 @@ typedef struct _IPSEC_OFFLOAD_V2_ALGORITHM_INFO {
      IPSEC_OFFLOAD_V2_ADD_SA</a> structure.</p>
 </dd>
 
-### -field <b>AdditionalInfo</b>
+### -field AdditionalInfo
 
 <dd>
 <p>Additional information that should be interpreted differently based on the algorithm. For AES-GCM,
@@ -255,4 +255,4 @@ typedef struct _IPSEC_OFFLOAD_V2_ALGORITHM_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_ALGORITHM_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_ALGORITHM_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

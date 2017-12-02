@@ -58,19 +58,19 @@ DWORD WINAPI EnumJobNamedProperties(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd></dd>
 
-### -param <i>JobId</i> [in]
+### -param JobId [in]
 
 <dd></dd>
 
-### -param <i>pcProperties</i> [out]
+### -param pcProperties [out]
 
 <dd></dd>
 
-### -param <i>ppProperties</i> [out]
+### -param ppProperties [out]
 
 <dd></dd>
 </dl>

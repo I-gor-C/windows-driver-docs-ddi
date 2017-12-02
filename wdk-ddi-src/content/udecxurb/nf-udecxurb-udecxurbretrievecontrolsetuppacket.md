@@ -56,13 +56,13 @@ FORCEINLINE NTSTATUS UdecxUrbRetrieveControlSetupPacket(
 ## -parameters
 <dl>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object that represents the request containing the setup packet.</p>
 </dd>
 
-### -param <i>SetupPacket</i> [out]
+### -param SetupPacket [out]
 
 <dd>
 <p>A <a href="..\wdfusb\ns-wdfusb--wdf-usb-control-setup-packet.md">WDF_USB_CONTROL_SETUP_PACKET</a> structure that receives a setup packet describing the USB control transfer.</p>
@@ -75,7 +75,7 @@ FORCEINLINE NTSTATUS UdecxUrbRetrieveControlSetupPacket(
 ## -remarks
 <p>The client driver can inspect contents of the setup packet to determine the standard control request that is sent to the device.</p>
 
-<p>To complete the request, the driver must call <a href="buses.udecxurbcompletewithntstatus">UdecxUrbCompleteWithNtStatus</a>.</p>
+<p>To complete the request, the driver must call <a href="..\udecxurb\nf-udecxurb-udecxurbcompletewithntstatus.md">UdecxUrbCompleteWithNtStatus</a>.</p>
 
 ## -requirements
 <table>

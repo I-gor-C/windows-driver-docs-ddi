@@ -61,49 +61,49 @@ typedef struct _IDEREGISTERS {
 ## -struct-fields
 <dl>
 
-### -field <b>bFeaturesReg</b>
+### -field bFeaturesReg
 
 <dd>
 <p>Specifies the contents of the ATA features register.</p>
 </dd>
 
-### -field <b>bSectorCountReg</b>
+### -field bSectorCountReg
 
 <dd>
 <p>Specifies the contents of the ATA Sector Count register.</p>
 </dd>
 
-### -field <b>bSectorNumberReg</b>
+### -field bSectorNumberReg
 
 <dd>
 <p>Specifies the contents of the ATA Sector Number register.</p>
 </dd>
 
-### -field <b>bCylLowReg</b>
+### -field bCylLowReg
 
 <dd>
 <p>Specifies the contents of the ATA Cylinder Low register.</p>
 </dd>
 
-### -field <b>bCylHighReg</b>
+### -field bCylHighReg
 
 <dd>
 <p>Specifies the contents of the ATA Cylinder High register.</p>
 </dd>
 
-### -field <b>bDriveHeadReg</b>
+### -field bDriveHeadReg
 
 <dd>
 <p>Specifies the contents of the ATA Device/Head register.</p>
 </dd>
 
-### -field <b>bCommandReg</b>
+### -field bCommandReg
 
 <dd>
 <p>Specifies the contents of the ATA Command register.</p>
 </dd>
 
-### -field <b>bReserved</b>
+### -field bReserved
 
 <dd>
 <p>Reserved for future use. The miniport driver shall not use this field.</p>

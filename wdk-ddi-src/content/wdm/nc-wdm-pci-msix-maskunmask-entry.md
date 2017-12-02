@@ -59,13 +59,13 @@ NTSTATUS MaskTableEntry(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\wdm\ns-wdm--pci-msix-table-config-interface.md">PCI_MSIX_TABLE_CONFIG_INTERFACE</a> structure for the interface.</p>
 </dd>
 
-### -param <i>TableEntry</i> [in]
+### -param TableEntry [in]
 
 <dd>
 <p>The index of the table entry in the MSI-X hardware interrupt table.</p>

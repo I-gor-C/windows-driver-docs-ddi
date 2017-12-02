@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_stop.htm
 old-project: IEEE
 ms.assetid: 1400FAC6-DD4E-4E8E-A0ED-C59B700F0672
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_ISOCH_STOP, IRB_REQ_ISOCH_STOP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,13 +54,13 @@ typedef struct _IRB_REQ_ISOCH_STOP {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>Specifies the resource handle for the channel on which to stop isochronous operations. </p>
 </dd>
 
-### -field <b>fulFlags</b>
+### -field fulFlags
 
 <dd>
 <p>Reserved. Device drivers should set this member to zero.</p>

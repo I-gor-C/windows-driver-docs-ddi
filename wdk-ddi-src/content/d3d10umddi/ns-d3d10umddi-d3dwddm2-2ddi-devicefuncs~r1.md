@@ -57,25 +57,25 @@ typedef struct D3DWDDM2_2DDI_DEVICEFUNCS {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnCalcPrivateShaderCacheSessionSize</b>
+### -field pfnCalcPrivateShaderCacheSessionSize
 
 <dd>
 <p>A callback function that returns the size of a private shader cache session.</p>
 </dd>
 
-### -field <b>pfnCreateShaderCacheSession</b>
+### -field pfnCreateShaderCacheSession
 
 <dd>
 <p>A callback function that creates a shader cache session.</p>
 </dd>
 
-### -field <b>pfnDestroyShaderCacheSession</b>
+### -field pfnDestroyShaderCacheSession
 
 <dd>
 <p>A callback function that destroys a shader cache session.</p>
 </dd>
 
-### -field <b>pfnSetShaderCacheSession</b>
+### -field pfnSetShaderCacheSession
 
 <dd>
 <p>A callback function that sets a shader cache session.</p>

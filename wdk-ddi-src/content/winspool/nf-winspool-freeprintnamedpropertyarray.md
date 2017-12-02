@@ -56,11 +56,11 @@ void WINAPI FreePrintNamedPropertyArray(
 ## -parameters
 <dl>
 
-### -param <i>cProperties</i> [in]
+### -param cProperties [in]
 
 <dd></dd>
 
-### -param <i>ppProperties</i> [in, out, optional]
+### -param ppProperties [in, out, optional]
 
 <dd></dd>
 </dl>

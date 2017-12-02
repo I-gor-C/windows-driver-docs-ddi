@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitregisterpnpstatechangecallback.htm
 old-project: wdf
 ms.assetid: a14b790a-28d7-4fb8-823f-f37f05e7529f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceInitRegisterPnpStateChangeCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ NTSTATUS WdfDeviceInitRegisterPnpStateChangeCallback(
 ## -parameters
 <dl>
 
-### -param <i>DeviceInit</i> [in]
+### -param DeviceInit [in]
 
 <dd>
 <p>A caller-supplied pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure.</p>
 </dd>
 
-### -param <i>PnpState</i> [in]
+### -param PnpState [in]
 
 <dd>
 <p>A <a href="..\wdfdevice\ne-wdfdevice--wdf-device-pnp-state.md">WDF_DEVICE_PNP_STATE</a> enumerator that identifies the Plug and Play machine state for which the driver is requesting notification.</p>
 </dd>
 
-### -param <i>EvtDevicePnpStateChange</i> [in]
+### -param EvtDevicePnpStateChange [in]
 
 <dd>
 <p>A caller-supplied pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-pnp-state-change-notification.md">EvtDevicePnpStateChange</a> event callback function.</p>
 </dd>
 
-### -param <i>CallbackTypes</i> [in]
+### -param CallbackTypes [in]
 
 <dd>
 <p>An ORed combination of <a href="..\wdfdevice\ne-wdfdevice--wdf-state-notification-type.md">WDF_STATE_NOTIFICATION_TYPE</a>-typed enumerators.</p>
@@ -175,4 +175,4 @@ NTSTATUS WdfDeviceInitRegisterPnpStateChangeCallback(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceInitRegisterPnpStateChangeCallback method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceInitRegisterPnpStateChangeCallback method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

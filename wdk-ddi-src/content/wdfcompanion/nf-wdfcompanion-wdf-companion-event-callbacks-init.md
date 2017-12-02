@@ -7,7 +7,7 @@ old-location: wdf\wdf_companion_event_callbacks_init.htm
 old-project: wdf
 ms.assetid: 83fadb77-90c2-4331-949c-5d8828ce33e2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_COMPANION_EVENT_CALLBACKS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ FORCEINLINE VOID WDF_COMPANION_EVENT_CALLBACKS_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Callbacks</i> [out]
+### -param Callbacks [out]
 
 <dd></dd>
 </dl>

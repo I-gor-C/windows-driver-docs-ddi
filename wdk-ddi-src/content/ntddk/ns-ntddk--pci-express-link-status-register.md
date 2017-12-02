@@ -63,7 +63,7 @@ typedef union _PCI_EXPRESS_LINK_STATUS_REGISTER {
 ## -struct-fields
 <dl>
 
-### -field <b>LinkSpeed</b>
+### -field LinkSpeed
 
 <dd>
 <p>The negotiated link speed of the PCIe link.  Possible values are:</p>
@@ -88,7 +88,7 @@ typedef union _PCI_EXPRESS_LINK_STATUS_REGISTER {
 <p> </p>
 </dd>
 
-### -field <b>LinkWidth</b>
+### -field LinkWidth
 
 <dd>
 <p>The negotiated link width (number of lanes) of the PCIe link. Possible values are:</p>
@@ -133,37 +133,37 @@ typedef union _PCI_EXPRESS_LINK_STATUS_REGISTER {
 <p> </p>
 </dd>
 
-### -field <b>Undefined</b>
+### -field Undefined
 
 <dd>
 <p>Reserved. Device drivers and other system software should ignore any value read from this bit.</p>
 </dd>
 
-### -field <b>LinkTraining</b>
+### -field LinkTraining
 
 <dd>
 <p>A single bit that indicates that the link is in the configuration or recovery state, or that a 1 was written to the retrain link bit of the PCIe link control register and the training has not yet begun. This member is not applicable to endpoint devices and upstream ports of switches.</p>
 </dd>
 
-### -field <b>SlotClockConfig</b>
+### -field SlotClockConfig
 
 <dd>
 <p>A single bit that indicates that the component uses the same physical reference clock that the hardware platform provides on the PCIe slot connector. If this bit is clear, the component uses an independent clock irrespective of the presence of a reference clock on the PCIe slot connector.</p>
 </dd>
 
-### -field <b>DataLinkLayerActive</b>
+### -field DataLinkLayerActive
 
 <dd>
 <p>A single bit that indicates that the data link control and management state machine is in the data link active state.</p>
 </dd>
 
-### -field <b>Rsvd</b>
+### -field Rsvd
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>A USHORT representation of the contents of the PCI_EXPRESS_LINK_STATUS_REGISTER structure.</p>

@@ -60,7 +60,7 @@ typedef struct _BTH_PROFILE_DRIVER_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>A structure that describes the 
@@ -69,35 +69,35 @@ typedef struct _BTH_PROFILE_DRIVER_INTERFACE {
      <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a>.</p>
 </dd>
 
-### -field <b>BthAllocateBrb</b>
+### -field BthAllocateBrb
 
 <dd>
 <p>Pointer to the 
      <a href="..\bthddi\nc-bthddi-pfnbth-allocate-brb.md">BthAllocateBrb</a> function.</p>
 </dd>
 
-### -field <b>BthFreeBrb</b>
+### -field BthFreeBrb
 
 <dd>
 <p>Pointer to the 
      <a href="..\bthddi\nc-bthddi-pfnbth-free-brb.md">BthFreeBrb</a> function.</p>
 </dd>
 
-### -field <b>BthInitializeBrb</b>
+### -field BthInitializeBrb
 
 <dd>
 <p>Pointer to the 
      <a href="..\bthddi\nc-bthddi-pfnbth-initialize-brb.md">BthInitializeBrb</a> function.</p>
 </dd>
 
-### -field <b>BthReuseBrb</b>
+### -field BthReuseBrb
 
 <dd>
 <p>Pointer to the 
      <a href="..\bthddi\nc-bthddi-pfnbth-reuse-brb.md">BthReuseBrb</a> function.</p>
 </dd>
 
-### -field <b>IsBluetoothVersionAvailable</b>
+### -field IsBluetoothVersionAvailable
 
 <dd>
 <p>Pointer to the 

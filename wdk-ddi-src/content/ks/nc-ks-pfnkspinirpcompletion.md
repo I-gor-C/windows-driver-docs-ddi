@@ -58,16 +58,16 @@ void AVStrMiniPinIrpCompletion(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>Points to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure for which the callback is registered.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>Points to an <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> which originated from the circuit to which <i>Pin</i> belongs.</p>
+<p>Points to an <a href="..\wdm\ns-wdm--irp.md">IRP</a> which originated from the circuit to which <i>Pin</i> belongs.</p>
 </dd>
 </dl>
 

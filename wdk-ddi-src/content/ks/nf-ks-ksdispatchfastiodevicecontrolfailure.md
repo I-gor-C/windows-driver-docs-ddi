@@ -62,55 +62,55 @@ BOOLEAN KsDispatchFastIoDeviceControlFailure(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -param <i>Wait</i> [in]
+### -param Wait [in]
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -param <i>InputBuffer</i> [in, optional]
+### -param InputBuffer [in, optional]
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -param <i>InputBufferLength</i> [in]
+### -param InputBufferLength [in]
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -param <i>OutputBuffer</i> [out, optional]
+### -param OutputBuffer [out, optional]
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -param <i>OutputBufferLength</i> [in]
+### -param OutputBufferLength [in]
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -param <i>IoControlCode</i> [in]
+### -param IoControlCode [in]
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -param <i>IoStatus</i> [out]
+### -param IoStatus [out]
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Not used.</p>

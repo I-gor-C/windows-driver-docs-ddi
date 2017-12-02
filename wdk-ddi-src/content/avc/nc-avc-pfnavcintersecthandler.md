@@ -60,43 +60,43 @@ typedef NTSTATUS ( *PFNAVCINTERSECTHANDLER)(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>An optional value expected by the intersect handler. This value is either provided by the subunit driver (if the subunit driver provides the intersect handler), or by the lower driver providing the intersect handler.</p>
 </dd>
 
-### -param <i>PinId</i> [in]
+### -param PinId [in]
 
 <dd>
 <p>Specifies the offset (or ID) of the pin for which the intersection is being done.</p>
 </dd>
 
-### -param <i>CallerDataRange</i> [in]
+### -param CallerDataRange [in]
 
 <dd>
 <p>The first of two data ranges being compared.</p>
 </dd>
 
-### -param <i>DescriptorDataRange</i> [in]
+### -param DescriptorDataRange [in]
 
 <dd>
 <p>The second of two data ranges being compared.</p>
 </dd>
 
-### -param <i>DataBufferSize</i> [in]
+### -param DataBufferSize [in]
 
 <dd>
 <p>The size of the buffer passed by the <b>Data</b> member. If this is nonzero, then the intersect handler should attempt to return the data format resulting from a matching pair of data ranges. If this is zero, then the intersect handler should provide the required buffer size in <b>ReportedDataSize</b>, and return STATUS_BUFFER_OVERFLOW.</p>
 </dd>
 
-### -param <i>Data</i> [out, optional]
+### -param Data [out, optional]
 
 <dd>
 <p>An optional buffer to receive the data format resulting from a matching pair of data ranges. This member is ignored if <b>DataBufferSize </b>is zero.</p>
 </dd>
 
-### -param <i>ReportedDataSize</i> [out]
+### -param ReportedDataSize [out]
 
 <dd>
 <p>The actual size of the resulting data format. If <b>DataBufferSize</b> was zero, then this contains the required size of the buffer, but no format is returned.</p>

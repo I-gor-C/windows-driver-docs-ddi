@@ -58,31 +58,31 @@ typedef enum _D3DKMDT_MONITOR_ORIENTATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_MO_UNINITIALIZED"></a><a id="d3dkmdt_mo_uninitialized"></a><b>D3DKMDT_MO_UNINITIALIZED</b>
+### -field D3DKMDT_MO_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_MONITOR_ORIENTATION has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MO_0DEG"></a><a id="d3dkmdt_mo_0deg"></a><b>D3DKMDT_MO_0DEG</b>
+### -field D3DKMDT_MO_0DEG
 
 <dd>
 <p>Indicates that the display device has not been rotated from its default orientation.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MO_90DEG"></a><a id="d3dkmdt_mo_90deg"></a><b>D3DKMDT_MO_90DEG</b>
+### -field D3DKMDT_MO_90DEG
 
 <dd>
 <p>Indicates that the display device has been rotated 90 degrees clockwise from its default orientation.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MO_180DEG"></a><a id="d3dkmdt_mo_180deg"></a><b>D3DKMDT_MO_180DEG</b>
+### -field D3DKMDT_MO_180DEG
 
 <dd>
 <p>Indicates that the display device has been rotated 180 degrees clockwise from its default orientation.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MO_270DEG"></a><a id="d3dkmdt_mo_270deg"></a><b>D3DKMDT_MO_270DEG</b>
+### -field D3DKMDT_MO_270DEG
 
 <dd>
 <p>Indicates that the display device has been rotated 270 degrees clockwise from its default orientation.</p>

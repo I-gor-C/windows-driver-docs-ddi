@@ -93,7 +93,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of notification mechanism that is used by the error source. This can be one of the following possible values.</p>
@@ -105,7 +105,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="WHEA_NOTIFICATION_TYPE_EXTERNALINTERRUPT"></a><a id="whea_notification_type_externalinterrupt"></a><dl>
 
-### -field <b>WHEA_NOTIFICATION_TYPE_EXTERNALINTERRUPT</b>
+### -field WHEA_NOTIFICATION_TYPE_EXTERNALINTERRUPT
 
 </dl>
 </td>
@@ -116,7 +116,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="WHEA_NOTIFICATION_TYPE_LOCALINTERRUPT"></a><a id="whea_notification_type_localinterrupt"></a><dl>
 
-### -field <b>WHEA_NOTIFICATION_TYPE_LOCALINTERRUPT</b>
+### -field WHEA_NOTIFICATION_TYPE_LOCALINTERRUPT
 
 </dl>
 </td>
@@ -127,7 +127,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="WHEA_NOTIFICATION_TYPE_NMI"></a><a id="whea_notification_type_nmi"></a><dl>
 
-### -field <b>WHEA_NOTIFICATION_TYPE_NMI</b>
+### -field WHEA_NOTIFICATION_TYPE_NMI
 
 </dl>
 </td>
@@ -138,7 +138,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="WHEA_NOTIFICATION_TYPE_POLLED"></a><a id="whea_notification_type_polled"></a><dl>
 
-### -field <b>WHEA_NOTIFICATION_TYPE_POLLED</b>
+### -field WHEA_NOTIFICATION_TYPE_POLLED
 
 </dl>
 </td>
@@ -149,7 +149,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="WHEA_NOTIFICATION_TYPE_SCI"></a><a id="whea_notification_type_sci"></a><dl>
 
-### -field <b>WHEA_NOTIFICATION_TYPE_SCI</b>
+### -field WHEA_NOTIFICATION_TYPE_SCI
 
 </dl>
 </td>
@@ -161,13 +161,13 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The size, in bytes, of the <b>WHEA_NOTIFICATION_DESCRIPTOR</b> structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A WHEA_NOTIFICATION_FLAGS union that indicates which of the members of the <b>WHEA_NOTIFICATION_DESCRIPTOR</b> structure can be written to by the operating system. The WHEA_NOTIFICATION_FLAGS union is defined as follows:</p>
@@ -199,7 +199,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="AsUSHORT"></a><a id="asushort"></a><a id="ASUSHORT"></a><dl>
 
-### -field <b><b>AsUSHORT</b></b>
+### -field AsUSHORT
 
 </dl>
 </td>
@@ -210,7 +210,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="ErrorThresholdRW"></a><a id="errorthresholdrw"></a><a id="ERRORTHRESHOLDRW"></a><dl>
 
-### -field <b><b>ErrorThresholdRW</b></b>
+### -field ErrorThresholdRW
 
 </dl>
 </td>
@@ -221,7 +221,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="ErrorThresholdWindowRW"></a><a id="errorthresholdwindowrw"></a><a id="ERRORTHRESHOLDWINDOWRW"></a><dl>
 
-### -field <b><b>ErrorThresholdWindowRW</b></b>
+### -field ErrorThresholdWindowRW
 
 </dl>
 </td>
@@ -232,7 +232,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="PollIntervalRW"></a><a id="pollintervalrw"></a><a id="POLLINTERVALRW"></a><dl>
 
-### -field <b><b>PollIntervalRW</b></b>
+### -field PollIntervalRW
 
 </dl>
 </td>
@@ -243,7 +243,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="Reserved"></a><a id="reserved"></a><a id="RESERVED"></a><dl>
 
-### -field <b><b>Reserved</b></b>
+### -field Reserved
 
 </dl>
 </td>
@@ -254,7 +254,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="SwitchToPollingThresholdRW"></a><a id="switchtopollingthresholdrw"></a><a id="SWITCHTOPOLLINGTHRESHOLDRW"></a><dl>
 
-### -field <b><b>SwitchToPollingThresholdRW</b></b>
+### -field SwitchToPollingThresholdRW
 
 </dl>
 </td>
@@ -265,7 +265,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 <tr>
 <td width="40%"><a id="SwitchToPollingWindowRW"></a><a id="switchtopollingwindowrw"></a><a id="SWITCHTOPOLLINGWINDOWRW"></a><dl>
 
-### -field <b><b>SwitchToPollingWindowRW</b></b>
+### -field SwitchToPollingWindowRW
 
 </dl>
 </td>
@@ -277,19 +277,19 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <p>A union of structures that are specific to each different type of notification mechanism. </p>
 <dl>
 
-### -field <b>Polled</b>
+### -field Polled
 
 <dd>
 <p>A structure that describes the notification mechanism when the <b>Type</b> member is set to WHEA_NOTIFICATION_TYPE_POLLED.</p>
 <dl>
 
-### -field <b>PollInterval</b>
+### -field PollInterval
 
 <dd>
 <p>The interval, in milliseconds, that the LLHEH for the error source should poll the error status registers to check for an error condition.</p>
@@ -297,43 +297,43 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Interrupt</b>
+### -field Interrupt
 
 <dd>
 <p>A structure that describes the notification mechanism when the <b>Type</b> member is set to WHEA_NOTIFICATION_TYPE_EXTERNALINTERRUPT.</p>
 <dl>
 
-### -field <b>PollInterval</b>
+### -field PollInterval
 
 <dd>
 <p>The interval, in milliseconds, that the LLHEH for the error source should poll the error status registers to check for an error condition if the error source is switched out of interrupt mode.</p>
 </dd>
 
-### -field <b>Vector</b>
+### -field Vector
 
 <dd>
 <p>The interrupt vector for the error source.</p>
 </dd>
 
-### -field <b>SwitchToPollingThreshold</b>
+### -field SwitchToPollingThreshold
 
 <dd>
 <p>The number of errors that must occur within the time specified by the <b>SwitchToPollingWindow</b> member before the error source is switched to polling mode.</p>
 </dd>
 
-### -field <b>SwitchToPollingWindow</b>
+### -field SwitchToPollingWindow
 
 <dd>
 <p>The window of time, in seconds, in which the number of errors specified by the <b>SwitchToPollingThreshold</b> member must occur before the error source is switched to polling mode.</p>
 </dd>
 
-### -field <b>ErrorThreshold</b>
+### -field ErrorThreshold
 
 <dd>
 <p>The number of errors that must occur within the time specified by the <b>ErrorThresholdWindow</b> member before an error from the error source is processed by the operating system.</p>
 </dd>
 
-### -field <b>ErrorThresholdWindow</b>
+### -field ErrorThresholdWindow
 
 <dd>
 <p>The window of time, in seconds, in which the number of errors specified by the <b>ErrorThreshold</b> member must occur before an error from the error source is processed by the operating system.</p>
@@ -341,43 +341,43 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>LocalInterrupt</b>
+### -field LocalInterrupt
 
 <dd>
 <p>A structure that describes the notification mechanism when the <b>Type</b> member is set to WHEA_NOTIFICATION_TYPE_LOCALINTERRUPT.</p>
 <dl>
 
-### -field <b>PollInterval</b>
+### -field PollInterval
 
 <dd>
 <p>The interval, in milliseconds, that the LLHEH for the error source should poll the error status registers to check for an error condition if the error source is switched out of interrupt mode.</p>
 </dd>
 
-### -field <b>Vector</b>
+### -field Vector
 
 <dd>
 <p>The interrupt vector for the error source.</p>
 </dd>
 
-### -field <b>SwitchToPollingThreshold</b>
+### -field SwitchToPollingThreshold
 
 <dd>
 <p>The number of errors that must occur within the time specified by the <b>SwitchToPollingWindow</b> member before the error source is switched to polling mode.</p>
 </dd>
 
-### -field <b>SwitchToPollingWindow</b>
+### -field SwitchToPollingWindow
 
 <dd>
 <p>The window of time, in seconds, in which the number of errors specified by the <b>SwitchToPollingThreshold</b> member must occur before the error source is switched to polling mode.</p>
 </dd>
 
-### -field <b>ErrorThreshold</b>
+### -field ErrorThreshold
 
 <dd>
 <p>The number of errors that must occur within the time specified by the <b>ErrorThresholdWindow</b> member before an error from the error source is processed by the operating system.</p>
 </dd>
 
-### -field <b>ErrorThresholdWindow</b>
+### -field ErrorThresholdWindow
 
 <dd>
 <p>The window of time, in seconds, in which the number of errors specified by the <b>ErrorThreshold</b> member must occur before an error from the error source is processed by the operating system.</p>
@@ -385,43 +385,43 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Sci</b>
+### -field Sci
 
 <dd>
 <p> A structure that describes the notification mechanism when the <b>Type</b> member is set to WHEA_NOTIFICATION_TYPE_SCI.</p>
 <dl>
 
-### -field <b>PollInterval</b>
+### -field PollInterval
 
 <dd>
 <p>The interval, in milliseconds, that the LLHEH for the error source should poll the error status registers to check for an error condition if the error source is switched out of interrupt mode.</p>
 </dd>
 
-### -field <b>Vector</b>
+### -field Vector
 
 <dd>
 <p>The interrupt vector for the error source.</p>
 </dd>
 
-### -field <b>SwitchToPollingThreshold</b>
+### -field SwitchToPollingThreshold
 
 <dd>
 <p>The number of errors that must occur within the time specified by the <b>SwitchToPollingWindow</b> member before the error source is switched to polling mode.</p>
 </dd>
 
-### -field <b>SwitchToPollingWindow</b>
+### -field SwitchToPollingWindow
 
 <dd>
 <p>The window of time, in seconds, in which the number of errors specified by the <b>SwitchToPollingThreshold</b> member must occur before the error source is switched to polling mode.</p>
 </dd>
 
-### -field <b>ErrorThreshold</b>
+### -field ErrorThreshold
 
 <dd>
 <p>The number of errors that must occur within the time specified by the <b>ErrorThresholdWindow</b> member before an error from the error source is processed by the operating system.</p>
 </dd>
 
-### -field <b>ErrorThresholdWindow</b>
+### -field ErrorThresholdWindow
 
 <dd>
 <p>The window of time, in seconds, in which the number of errors specified by the <b>ErrorThreshold</b> member must occur before an error from the error source is processed by the operating system.</p>
@@ -429,43 +429,43 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Nmi</b>
+### -field Nmi
 
 <dd>
 <p>A structure that describes the notification mechanism when the <b>Type</b> member is set to WHEA_NOTIFICATION_TYPE_NMI.</p>
 <dl>
 
-### -field <b>PollInterval</b>
+### -field PollInterval
 
 <dd>
 <p>The interval, in milliseconds, that the LLHEH for the error source should poll the error status registers to check for an error condition if the error source is switched out of interrupt mode.</p>
 </dd>
 
-### -field <b>Vector</b>
+### -field Vector
 
 <dd>
 <p>The interrupt vector for the error source.</p>
 </dd>
 
-### -field <b>SwitchToPollingThreshold</b>
+### -field SwitchToPollingThreshold
 
 <dd>
 <p>The number of errors that must occur within the time specified by the <b>SwitchToPollingWindow</b> member before the error source is switched to polling mode.</p>
 </dd>
 
-### -field <b>SwitchToPollingWindow</b>
+### -field SwitchToPollingWindow
 
 <dd>
 <p>The window of time, in seconds, in which the number of errors specified by the <b>SwitchToPollingThreshold</b> member must occur before the error source is switched to polling mode.</p>
 </dd>
 
-### -field <b>ErrorThreshold</b>
+### -field ErrorThreshold
 
 <dd>
 <p>The number of errors that must occur within the time specified by the <b>ErrorThresholdWindow</b> member before an error from the error source is processed by the operating system.</p>
 </dd>
 
-### -field <b>ErrorThresholdWindow</b>
+### -field ErrorThresholdWindow
 
 <dd>
 <p>The window of time, in seconds, in which the number of errors specified by the <b>ErrorThreshold</b> member must occur before an error from the error source is processed by the operating system.</p>

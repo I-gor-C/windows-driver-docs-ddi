@@ -60,43 +60,43 @@ typedef struct _MS_SMHBA_SAS_PHY {
 ## -struct-fields
 <dl>
 
-### -field <b>PhyIdentifier</b>
+### -field PhyIdentifier
 
 <dd>
 <p>The port whose physical configuration and link information is being returned. It is unique within the context of the SAS device that contains the physical port.</p>
 </dd>
 
-### -field <b>NegotiatedLinkRate</b>
+### -field NegotiatedLinkRate
 
 <dd>
 <p>The state or the transmission speed that is negotiated by the physical port for the physical link.</p>
 </dd>
 
-### -field <b>ProgrammedMinLinkRate</b>
+### -field ProgrammedMinLinkRate
 
 <dd>
 <p>The minimum physical link rate that is set by the physical port control mechanism.</p>
 </dd>
 
-### -field <b>HardwareMinLinkRate</b>
+### -field HardwareMinLinkRate
 
 <dd>
 <p>The minimum physical link rate that is supported by the physical port.</p>
 </dd>
 
-### -field <b>ProgrammedMaxLinkRate</b>
+### -field ProgrammedMaxLinkRate
 
 <dd>
 <p>The maximum physical link rate that is set by the physical port control mechanism.</p>
 </dd>
 
-### -field <b>HardwareMaxLinkRate</b>
+### -field HardwareMaxLinkRate
 
 <dd>
 <p>The maximum physical link rate that is supported by the physical port.</p>
 </dd>
 
-### -field <b>domainPortWWN</b>
+### -field domainPortWWN
 
 <dd>
 <p>The Port_Identifier that has the smallest value of any Port_Identifier of an expander SMP.</p>

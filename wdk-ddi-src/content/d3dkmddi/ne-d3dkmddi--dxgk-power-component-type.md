@@ -58,7 +58,7 @@ typedef enum _DXGK_POWER_COMPONENT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_POWER_COMPONENT_ENGINE"></a><a id="dxgk_power_component_engine"></a><b>DXGK_POWER_COMPONENT_ENGINE</b>
+### -field DXGK_POWER_COMPONENT_ENGINE
 
 <dd>
 <p>Indicates that the component is a  GPU engine.</p>
@@ -66,26 +66,26 @@ typedef enum _DXGK_POWER_COMPONENT_TYPE {
 <div> </div>
 </dd>
 
-### -field <a id="DXGK_POWER_COMPONENT_MONITOR"></a><a id="dxgk_power_component_monitor"></a><b>DXGK_POWER_COMPONENT_MONITOR</b>
+### -field DXGK_POWER_COMPONENT_MONITOR
 
 <dd>
 <p>Indicates a monitor that is connected to a VidPN target and can have its power managed. A typical component of this type is an LCD panel backlight.</p>
 </dd>
 
-### -field <a id="DXGK_POWER_COMPONENT_MONITOR_REFRESH"></a><a id="dxgk_power_component_monitor_refresh"></a><b>DXGK_POWER_COMPONENT_MONITOR_REFRESH</b>
+### -field DXGK_POWER_COMPONENT_MONITOR_REFRESH
 
 <dd>
 <p>Indicates hardware that scans out from a VidPN source and generates a signal for a VidPN target.</p>
 <p>A typical component of this type is a self-refreshing monitor, which can display the last frame even if the frame buffer stops sending data to the monitor. The display miniport driver should report this component type only if all monitors that can be driven from the VidPN source are self-refreshing.</p>
 </dd>
 
-### -field <a id="DXGK_POWER_COMPONENT_OTHER"></a><a id="dxgk_power_component_other"></a><b>DXGK_POWER_COMPONENT_OTHER</b>
+### -field DXGK_POWER_COMPONENT_OTHER
 
 <dd>
 <p>Indicates a component for which the idle state is managed entirely by the display miniport driver. The DirectX graphics kernel subsystem passes this information to the <a href="https://msdn.microsoft.com/9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF">Power Management Framework</a>.</p>
 </dd>
 
-### -field <a id="DXGK_POWER_COMPONENT_MAX"></a><a id="dxgk_power_component_max"></a><b>DXGK_POWER_COMPONENT_MAX</b>
+### -field DXGK_POWER_COMPONENT_MAX
 
 <dd>
 <p>A maximum value that is used for testing purposes.</p>

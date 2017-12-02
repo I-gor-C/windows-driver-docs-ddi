@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>SteppingDelta</b>
+### -field SteppingDelta
 
 <dd>
 <p>Specifies the step value that should be used to create legal values within the range defined in <b>Bounds</b>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Bounds</b>
+### -field Bounds
 
 <dd>
 <p>A structure of type <a href="stream.ksproperty_bounds_long">KSPROPERTY_BOUNDS_LONG</a> that specifies the range of values over which the <b>SteppingDelta</b> is valid.</p>

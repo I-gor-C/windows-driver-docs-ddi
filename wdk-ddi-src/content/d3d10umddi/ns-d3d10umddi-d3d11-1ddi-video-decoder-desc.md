@@ -57,7 +57,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>Guid</b>
+### -field Guid
 
 <dd>
 <p>The DXVA decoding profile. To get the list of profiles supported by the device, call the <a href="display.getvideodecoderprofile">GetVideoDecoderProfile</a> function.
@@ -65,19 +65,19 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_DESC {
 </p>
 </dd>
 
-### -field <b>SampleWidth</b>
+### -field SampleWidth
 
 <dd>
 <p>The width of the video frame, in pixels.</p>
 </dd>
 
-### -field <b>SampleHeight</b>
+### -field SampleHeight
 
 <dd>
 <p>The height of the video frame, in pixels.</p>
 </dd>
 
-### -field <b>OutputFormat</b>
+### -field OutputFormat
 
 <dd>
 <p>The output surface format, specified as a <b>DXGI_FORMAT</b> value. The <b>DXGI_FORMAT</b> enumeration is defined in Dxgiformat.h.</p>

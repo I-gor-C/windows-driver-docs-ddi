@@ -55,13 +55,13 @@ VOID IoSetHardErrorOrVerifyDevice(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to the IRP for which the driver encountered a user-induced error.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the target device to be verified for the I/O operation. </p>

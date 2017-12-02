@@ -55,26 +55,26 @@ VOID PoSetSystemState(
 ## -parameters
 <dl>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Indicates the system activity, as specified by a bitwise OR of one or more of the following values:</p>
 <p></p>
 <dl>
 
-### -param <a id="ES_SYSTEM_REQUIRED"></a><a id="es_system_required"></a>ES_SYSTEM_REQUIRED
+### -param ES_SYSTEM_REQUIRED
 
 <dd>
 <p>The system is not idle, regardless of apparent load.</p>
 </dd>
 
-### -param <a id="ES_DISPLAY_REQUIRED"></a><a id="es_display_required"></a>ES_DISPLAY_REQUIRED
+### -param ES_DISPLAY_REQUIRED
 
 <dd>
 <p>Use of the display is required.</p>
 </dd>
 
-### -param <a id="ES_USER_PRESENT"></a><a id="es_user_present"></a>ES_USER_PRESENT
+### -param ES_USER_PRESENT
 
 <dd>
 <p>A user is present.</p>
@@ -87,7 +87,7 @@ VOID PoSetSystemState(
 <p>None</p>
 
 ## -remarks
-<p>A driver calls <b>PoSetSystemState</b> to set flags indicating that system activity is occurring. Unlike <a href="..\ntifs\nf-ntifs-poregistersystemstate.md">PoRegisterSystemState</a>, this routine does not allow the driver to set a persistent busy state. </p>
+<p>A driver calls <b>PoSetSystemState</b> to set flags indicating that system activity is occurring. Unlike <a href="..\wdm\nf-wdm-poregistersystemstate.md">PoRegisterSystemState</a>, this routine does not allow the driver to set a persistent busy state. </p>
 
 <p>The <i>Flags</i> parameter specifies the type of activity occurring. Drivers can specify any combination of the flags.</p>
 
@@ -156,10 +156,10 @@ VOID PoSetSystemState(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\nf-ntifs-poregistersystemstate.md">PoRegisterSystemState</a>
+<a href="..\wdm\nf-wdm-poregistersystemstate.md">PoRegisterSystemState</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-pounregistersystemstate.md">PoUnregisterSystemState</a>
+<a href="..\wdm\nf-wdm-pounregistersystemstate.md">PoUnregisterSystemState</a>
 </dt>
 </dl>
 <p> </p>

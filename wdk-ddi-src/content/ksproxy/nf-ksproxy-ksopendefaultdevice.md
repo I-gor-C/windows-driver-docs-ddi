@@ -56,19 +56,19 @@ HRESULT KsOpenDefaultDevice(
 ## -parameters
 <dl>
 
-### -param <i>Category</i> [in]
+### -param Category [in]
 
 <dd>
 <p>Identifier of the PnP category to enumerate.</p>
 </dd>
 
-### -param <i>Access</i> [in]
+### -param Access [in]
 
 <dd>
 <p>An ACCESS_MASK bitmask specifying how to access the default device.</p>
 </dd>
 
-### -param <i>DeviceHandle</i> [out]
+### -param DeviceHandle [out]
 
 <dd>
 <p>Pointer to a variable that receives the handle to the default device that is opened.</p>

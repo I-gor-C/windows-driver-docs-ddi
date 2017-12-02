@@ -63,61 +63,61 @@ typedef enum _DXVADDI_VIDEOPRIMARIES {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVADDI_VideoPrimariesMask"></a><a id="dxvaddi_videoprimariesmask"></a><a id="DXVADDI_VIDEOPRIMARIESMASK"></a><b>DXVADDI_VideoPrimariesMask</b>
+### -field DXVADDI_VideoPrimariesMask
 
 <dd>
 <p>Specifies the color primaries mask. The first 5 (0x001F) bits of a DWORD can be used to specify color primaries.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoPrimaries_Unknown"></a><a id="dxvaddi_videoprimaries_unknown"></a><a id="DXVADDI_VIDEOPRIMARIES_UNKNOWN"></a><b>DXVADDI_VideoPrimaries_Unknown</b>
+### -field DXVADDI_VideoPrimaries_Unknown
 
 <dd>
 <p>Specifies that color primaries are not specified. The default is BT709.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoPrimaries_reserved"></a><a id="dxvaddi_videoprimaries_reserved"></a><a id="DXVADDI_VIDEOPRIMARIES_RESERVED"></a><b>DXVADDI_VideoPrimaries_reserved</b>
+### -field DXVADDI_VideoPrimaries_reserved
 
 <dd>
 <p>[in] Reserved. Do not use this value.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoPrimaries_BT709"></a><a id="dxvaddi_videoprimaries_bt709"></a><a id="DXVADDI_VIDEOPRIMARIES_BT709"></a><b>DXVADDI_VideoPrimaries_BT709</b>
+### -field DXVADDI_VideoPrimaries_BT709
 
 <dd>
 <p>Specifies BT709 primaries (including sRGB and scRGB).</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoPrimaries_BT470_2_SysM"></a><a id="dxvaddi_videoprimaries_bt470_2_sysm"></a><a id="DXVADDI_VIDEOPRIMARIES_BT470_2_SYSM"></a><b>DXVADDI_VideoPrimaries_BT470_2_SysM</b>
+### -field DXVADDI_VideoPrimaries_BT470_2_SysM
 
 <dd>
 <p>Specifies BT470-2 SysM primaries, which are the original NTSC primaries. </p>
 </dd>
 
-### -field <a id="DXVADDI_VideoPrimaries_BT470_2_SysBG"></a><a id="dxvaddi_videoprimaries_bt470_2_sysbg"></a><a id="DXVADDI_VIDEOPRIMARIES_BT470_2_SYSBG"></a><b>DXVADDI_VideoPrimaries_BT470_2_SysBG</b>
+### -field DXVADDI_VideoPrimaries_BT470_2_SysBG
 
 <dd>
 <p>Specifies BT470-2 SysBG primaries. </p>
 </dd>
 
-### -field <a id="DXVADDI_VideoPrimaries_SMPTE170M"></a><a id="dxvaddi_videoprimaries_smpte170m"></a><a id="DXVADDI_VIDEOPRIMARIES_SMPTE170M"></a><b>DXVADDI_VideoPrimaries_SMPTE170M</b>
+### -field DXVADDI_VideoPrimaries_SMPTE170M
 
 <dd>
 <p>Specifies SMPTE170M primaries, which are rarely used analog NTSC primaries (also known as SMPTE RP 145).</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoPrimaries_SMPTE240M"></a><a id="dxvaddi_videoprimaries_smpte240m"></a><a id="DXVADDI_VIDEOPRIMARIES_SMPTE240M"></a><b>DXVADDI_VideoPrimaries_SMPTE240M</b>
+### -field DXVADDI_VideoPrimaries_SMPTE240M
 
 <dd>
 <p>Specifies SMPTE240M primaries. </p>
 </dd>
 
-### -field <a id="DXVADDI_VideoPrimaries_EBU3213"></a><a id="dxvaddi_videoprimaries_ebu3213"></a><a id="DXVADDI_VIDEOPRIMARIES_EBU3213"></a><b>DXVADDI_VideoPrimaries_EBU3213</b>
+### -field DXVADDI_VideoPrimaries_EBU3213
 
 <dd>
 <p>Specifies EBU3213 primaries. </p>
 </dd>
 
-### -field <a id="DXVADDI_VideoPrimaries_SMPTE_C"></a><a id="dxvaddi_videoprimaries_smpte_c"></a><a id="DXVADDI_VIDEOPRIMARIES_SMPTE_C"></a><b>DXVADDI_VideoPrimaries_SMPTE_C</b>
+### -field DXVADDI_VideoPrimaries_SMPTE_C
 
 <dd>
 <p>Specifies SMPTE_C primaries, which are analog '79 NTSC primaries.</p>

@@ -57,19 +57,19 @@ typedef struct _SCATTER_GATHER_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfElements</b>
+### -field NumberOfElements
 
 <dd>
 <p>Specifies the number of elements in the <b>Elements</b> array.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Elements</b>
+### -field Elements
 
 <dd>
 <p>Specifies an array of scatter/gather elements that comprise a scatter/gather list. Each array element is a structure of type <b>SCATTER_GATHER_ELEMENT</b>, which is defined as follows:</p>

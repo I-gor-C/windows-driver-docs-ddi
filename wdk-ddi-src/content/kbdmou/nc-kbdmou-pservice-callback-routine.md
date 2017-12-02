@@ -60,25 +60,25 @@ VOID ClassServiceCallback(
 ## -parameters
 <dl>
 
-### -param <i>NormalContext</i> [in]
+### -param NormalContext [in]
 
 <dd>
 <p>Pointer to the class device object.</p>
 </dd>
 
-### -param <i>SystemArgument1</i> [in]
+### -param SystemArgument1 [in]
 
 <dd>
 <p>Pointer to the first keyboard input data packet in the input data buffer of the port device.</p>
 </dd>
 
-### -param <i>SystemArgument2</i> [in]
+### -param SystemArgument2 [in]
 
 <dd>
 <p>Pointer to the keyboard input data packet that immediately follows the last data packet in the input data buffer of the port device.</p>
 </dd>
 
-### -param <i>SystemArgument3</i> [in, out]
+### -param SystemArgument3 [in, out]
 
 <dd>
 <p>Pointer to the number of keyboard input data packets that are transferred by the routine.</p>

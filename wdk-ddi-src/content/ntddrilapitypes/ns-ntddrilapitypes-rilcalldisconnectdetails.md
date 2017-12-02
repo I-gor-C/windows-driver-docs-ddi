@@ -7,7 +7,7 @@ old-location: netvista\rilcalldisconnectdetails.htm
 old-project: netvista
 ms.assetid: c933e219-47bb-4896-b5ee-bd2fd59f4e8c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS, *LPRILCALLDISCONNECTDETAILS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,39 +62,39 @@ typedef struct _RILCALLDISCONNECTDETAILS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwDisconnectGroup</b>
+### -field dwDisconnectGroup
 
 <dd></dd>
 
-### -field <b>RILCAUSEUNION</b>
+### -field RILCAUSEUNION
 
 <dd></dd>
 
-### -field <b>causeUnion</b>
+### -field causeUnion
 
 <dd></dd>
 
-### -field <b>unGPPCause</b>
+### -field unGPPCause
 
 <dd></dd>
 
-### -field <b>unGPPRejectCause</b>
+### -field unGPPRejectCause
 
 <dd></dd>
 
-### -field <b>unGPP2Cause</b>
+### -field unGPP2Cause
 
 <dd></dd>
 
-### -field <b>unIMSSIPCause</b>
+### -field unIMSSIPCause
 
 <dd></dd>
 
-### -field <b>dwASCode</b>
+### -field dwASCode
 
 <dd></dd>
 
-### -field <b>dwOtherCode</b>
+### -field dwOtherCode
 
 <dd></dd>
 </dl>

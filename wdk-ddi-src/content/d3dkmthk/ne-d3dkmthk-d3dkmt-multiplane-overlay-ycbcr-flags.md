@@ -56,15 +56,15 @@ typedef enum D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAG_NOMINAL_RANGE"></a><a id="d3dkmt_multiplane_overlay_ycbcr_flag_nominal_range"></a><a id="D3DKMT_MULTIPLANE_OVERLAY_YCBCR_FLAG_NOMINAL_RANGE"></a><b>D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAG_NOMINAL_RANGE</b>
+### -field D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAG_NOMINAL_RANGE
 
 <dd></dd>
 
-### -field <a id="D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAG_BT709"></a><a id="d3dkmt_multiplane_overlay_ycbcr_flag_bt709"></a><a id="D3DKMT_MULTIPLANE_OVERLAY_YCBCR_FLAG_BT709"></a><b>D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAG_BT709</b>
+### -field D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAG_BT709
 
 <dd></dd>
 
-### -field <a id="D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAG_xvYCC"></a><a id="d3dkmt_multiplane_overlay_ycbcr_flag_xvycc"></a><a id="D3DKMT_MULTIPLANE_OVERLAY_YCBCR_FLAG_XVYCC"></a><b>D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAG_xvYCC</b>
+### -field D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAG_xvYCC
 
 <dd></dd>
 </dl>

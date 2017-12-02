@@ -54,7 +54,7 @@ void PsReferenceSiloContext(
 ## -parameters
 <dl>
 
-### -param <i>SiloContext</i> [in]
+### -param SiloContext [in]
 
 <dd>
 <p>A pointer to the object created by the <a href="..\ntddk\nf-ntddk-pscreatesilocontext.md">PsCreateSiloContext</a> routine. This parameter is required and it cannot be <b>NULL</b>. </p>

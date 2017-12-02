@@ -7,7 +7,7 @@ old-location: netvista\dot11_byte_array.htm
 old-project: netvista
 ms.assetid: a2c67eaf-d39e-43c9-8e06-18f668c0baa3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_BYTE_ARRAY, DOT11_BYTE_ARRAY, *PDOT11_BYTE_ARRAY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ typedef struct DOT11_BYTE_ARRAY {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_BYTE_ARRAY structure. This member is formatted as an 
@@ -67,13 +67,13 @@ typedef struct DOT11_BYTE_ARRAY {
 <p></p>
 <dl>
 
-### -field <a id="Type"></a><a id="type"></a><a id="TYPE"></a><b>Type</b>
+### -field Type
 
 <dd>
 <p>This member must be set to NDIS_OBJECT_TYPE_DEFAULT.</p>
 </dd>
 
-### -field <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a><b>Revision</b>
+### -field Revision
 
 <dd>
 <p>This member must be set to the revision of the variable-length structures which follow the
@@ -82,7 +82,7 @@ typedef struct DOT11_BYTE_ARRAY {
        "See Also" section.</p>
 </dd>
 
-### -field <a id="Size"></a><a id="size"></a><a id="SIZE"></a><b>Size</b>
+### -field Size
 
 <dd>
 <p>This member must be set to 
@@ -93,21 +93,21 @@ typedef struct DOT11_BYTE_ARRAY {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>uNumOfBytes</b>
+### -field uNumOfBytes
 
 <dd>
 <p>The number of bytes in the 
      <b>ucBuffer</b> array.</p>
 </dd>
 
-### -field <b>uTotalNumOfBytes</b>
+### -field uTotalNumOfBytes
 
 <dd>
 <p>The maximum number of bytes that the 
      <b>ucBuffer</b> array requires.</p>
 </dd>
 
-### -field <b>ucBuffer</b>
+### -field ucBuffer
 
 <dd>
 <p>The list of variable-length structures.</p>
@@ -200,4 +200,4 @@ typedef struct DOT11_BYTE_ARRAY {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BYTE_ARRAY structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BYTE_ARRAY structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

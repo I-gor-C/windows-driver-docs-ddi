@@ -56,7 +56,7 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="ConstantBitRate"></a><a id="constantbitrate"></a><a id="CONSTANTBITRATE"></a><b>ConstantBitRate</b>
+### -field ConstantBitRate
 
 <dd>
 <p>
@@ -64,14 +64,14 @@ typedef enum  {
 </p>
 </dd>
 
-### -field <a id="VariableBitRateAverage"></a><a id="variablebitrateaverage"></a><a id="VARIABLEBITRATEAVERAGE"></a><b>VariableBitRateAverage</b>
+### -field VariableBitRateAverage
 
 <dd>
 <p>Specifies that the encoding bit rate is variable, with the specified bit rate used as a guaranteed average over a specified window. The default window size is considered to be 5 minutes. That is, this guarantees that the average bit rate over the window period (5 minutes) will not exceed that specified in <a href="https://msdn.microsoft.com/library/windows/hardware/ff559520">ENCAPIPARAM_BITRATE</a>. 
 </p>
 </dd>
 
-### -field <a id="VariableBitRatePeak"></a><a id="variablebitratepeak"></a><a id="VARIABLEBITRATEPEAK"></a><b>VariableBitRatePeak</b>
+### -field VariableBitRatePeak
 
 <dd>
 <p>Specifies that the encoding bit rate is variable with the specified bit rate used as an average with a peak not to exceed the specified peak bit rate over a specified window. The default window size is considered to be 500ms (classically one GOP). That is, this bit rate is "constant quality" − the bit rate is expected to average around <a href="https://msdn.microsoft.com/library/windows/hardware/ff559520">ENCAPIPARAM_BITRATE</a> but may spike above this. It cannot exceed the bit rate specified in <a href="https://msdn.microsoft.com/library/windows/hardware/ff559529">ENCAPIPARAM_PEAK_BITRATE</a>.</p>

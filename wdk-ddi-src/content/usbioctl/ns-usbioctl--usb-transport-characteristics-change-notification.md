@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains registration information filled when the <a href="buses.ioctl_usb_register_for_transport_characteristics_change">IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a> 
+<p>Contains registration information filled when the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-register-for-transport-characteristics-change.md">IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a> 
 
 request completes.</p>
 
@@ -58,16 +58,16 @@ typedef struct _USB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b> Handle</b>
+### -field  Handle
 
 <dd>
 <p>An opaque handle for this registration.</p>
 </dd>
 
-### -field <b> UsbTransportCharacteristics</b>
+### -field  UsbTransportCharacteristics
 
 <dd>
-<p>A <a href="buses.usb_transport_characteristics">USB_TRANSPORT_CHARACTERISTICS</a> structure that is filled by the USB driver stack with the initial values of the transport characteristics. 
+<p>A <a href="..\usbioctl\ns-usbioctl--usb-transport-characteristics.md">USB_TRANSPORT_CHARACTERISTICS</a> structure that is filled by the USB driver stack with the initial values of the transport characteristics. 
 </p>
 </dd>
 </dl>
@@ -92,7 +92,7 @@ typedef struct _USB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ioctl_usb_register_for_transport_characteristics_change">IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-register-for-transport-characteristics-change.md">IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a>
 </dt>
 </dl>
 <p> </p>

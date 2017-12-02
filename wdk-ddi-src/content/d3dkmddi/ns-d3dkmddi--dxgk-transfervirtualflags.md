@@ -61,25 +61,25 @@ typedef struct _DXGK_TRANSFERVIRTUALFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Src64KBPages</b>
+### -field Src64KBPages
 
 <dd>
 <p>When set, the source page tables are mapped to  64KB pages.</p>
 </dd>
 
-### -field <b>Dst64KBPages</b>
+### -field Dst64KBPages
 
 <dd>
 <p>When set, the destination page tables are mapped to  64KB pages.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The consolidated value of the structure flags.</p>

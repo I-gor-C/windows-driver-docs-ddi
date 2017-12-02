@@ -7,7 +7,7 @@ old-location: ifsk\rxcreatevnetroot.htm
 old-project: ifsk
 ms.assetid: 852cc319-4bcd-427d-802f-3c82c72901f0
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxCreateVNetRoot
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ PV_NET_ROOT RxCreateVNetRoot(
 ## -parameters
 <dl>
 
-### -param <i>RxContext</i> [in]
+### -param RxContext [in]
 
 <dd>
 <p>A pointer to the RDBSS RX_CONTEXT containing the IRP describing a create operation.</p>
 </dd>
 
-### -param <i>NetRoot</i> [in]
+### -param NetRoot [in]
 
 <dd>
 <p>A pointer to the associated NET_ROOT structure.</p>
 </dd>
 
-### -param <i>CanonicalName</i> [in]
+### -param CanonicalName [in]
 
 <dd>
 <p>A pointer to the canonical name to be inserted in the name table.</p>
 </dd>
 
-### -param <i>LocalNetRootName</i> [in]
+### -param LocalNetRootName [in]
 
 <dd>
 <p>A pointer to the local NET_ROOT name without the prefix name.</p>
 </dd>
 
-### -param <i>FilePath</i> [in]
+### -param FilePath [in]
 
 <dd>
 <p>A pointer to a file pathname. This parameter is not currently used and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>RxConnectionId</i> [in]
+### -param RxConnectionId [in]
 
 <dd>
 <p>A pointer to the connection ID to be associated with the name to be inserted in the prefix name table. This parameter can be <b>NULL</b> in which case no connection ID will be associated with the name inserted in the name table.</p>
@@ -212,4 +212,4 @@ PV_NET_ROOT RxCreateVNetRoot(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCreateVNetRoot function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCreateVNetRoot function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

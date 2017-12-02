@@ -62,49 +62,49 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="BIDI_NULL"></a><a id="bidi_null"></a><b>BIDI_NULL</b>
+### -field BIDI_NULL
 
 <dd>
 <p>Indicates that there is no data.</p>
 </dd>
 
-### -field <a id="BIDI_INT"></a><a id="bidi_int"></a><b>BIDI_INT</b>
+### -field BIDI_INT
 
 <dd>
 <p>Indicates that the bidi data is an integer.</p>
 </dd>
 
-### -field <a id="BIDI_FLOAT"></a><a id="bidi_float"></a><b>BIDI_FLOAT</b>
+### -field BIDI_FLOAT
 
 <dd>
 <p>Indicates that the bidi data is a floating-point number.</p>
 </dd>
 
-### -field <a id="BIDI_BOOL"></a><a id="bidi_bool"></a><b>BIDI_BOOL</b>
+### -field BIDI_BOOL
 
 <dd>
 <p>Indicates that the bidi data is either <b>TRUE</b> or <b>FALSE</b>.</p>
 </dd>
 
-### -field <a id="BIDI_STRING"></a><a id="bidi_string"></a><b>BIDI_STRING</b>
+### -field BIDI_STRING
 
 <dd>
 <p>Indicates that the bidi data is a Unicode character string.</p>
 </dd>
 
-### -field <a id="BIDI_TEXT"></a><a id="bidi_text"></a><b>BIDI_TEXT</b>
+### -field BIDI_TEXT
 
 <dd>
 <p>Indicates that the bidi data is a nonlocalizable Unicode string.</p>
 </dd>
 
-### -field <a id="BIDI_ENUM"></a><a id="bidi_enum"></a><b>BIDI_ENUM</b>
+### -field BIDI_ENUM
 
 <dd>
 <p>Indicates that the bidi data value is a Unicode string.</p>
 </dd>
 
-### -field <a id="BIDI_BLOB"></a><a id="bidi_blob"></a><b>BIDI_BLOB</b>
+### -field BIDI_BLOB
 
 <dd>
 <p>Indicates that the bidi data is binary data.</p>

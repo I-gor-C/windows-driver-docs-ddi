@@ -56,19 +56,19 @@ typedef struct _PEP_QUERY_SOC_SUBSYSTEM_COUNT {
 ## -struct-fields
 <dl>
 
-### -field <b>PlatformIdleStateIndex</b>
+### -field PlatformIdleStateIndex
 
 <dd>
 <p>[in] The platform idle state index for which the kernel is querying about. </p>
 </dd>
 
-### -field <b>SubsystemCount</b>
+### -field SubsystemCount
 
 <dd>
 <p>[out] The number of SoC subsystems tallied by the PEP for the specified platform idle state.  The PEP cannot return 0 in this parameter; instead the PEP should return <b>FALSE</b> to the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186733">PEP_DPM_QUERY_SOC_SUBSYSTEM_COUNT notification</a> that provided this structure.  </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>

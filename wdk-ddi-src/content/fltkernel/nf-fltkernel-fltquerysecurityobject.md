@@ -7,7 +7,7 @@ old-location: ifsk\fltquerysecurityobject.htm
 old-project: ifsk
 ms.assetid: 388dc11d-79cc-4e6b-bce0-b99cca556342
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltQuerySecurityObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,21 +60,21 @@ NTSTATUS FltQuerySecurityObject(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>Opaque instance pointer for the caller. This parameter is required and cannot be 
       <b>NULL</b>.</p>
 </dd>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>File object pointer for the object whose security descriptor is being queried. This parameter is required 
       and cannot be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>SecurityInformation</i> [in]
+### -param SecurityInformation [in]
 
 <dd>
 <p>
@@ -125,7 +125,7 @@ NTSTATUS FltQuerySecurityObject(
 <p> </p>
 </dd>
 
-### -param <i>SecurityDescriptor</i> [in, out]
+### -param SecurityDescriptor [in, out]
 
 <dd>
 <p>Pointer to a caller-supplied output buffer that receives a copy of the security descriptor for the 
@@ -134,13 +134,13 @@ NTSTATUS FltQuerySecurityObject(
       <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Size, in bytes, of the <i>SecurityDescriptor</i> buffer.</p>
 </dd>
 
-### -param <i>LengthNeeded</i> [out, optional]
+### -param LengthNeeded [out, optional]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the number of bytes required to store the copied 
@@ -242,4 +242,4 @@ NTSTATUS FltQuerySecurityObject(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQuerySecurityObject function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQuerySecurityObject function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

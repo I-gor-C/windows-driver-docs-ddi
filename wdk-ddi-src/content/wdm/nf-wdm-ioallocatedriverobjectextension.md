@@ -58,25 +58,25 @@ NTSTATUS IoAllocateDriverObjectExtension(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>Pointer to a driver object to which the context area will be associated.</p>
 </dd>
 
-### -param <i>ClientIdentificationAddress</i> [in]
+### -param ClientIdentificationAddress [in]
 
 <dd>
 <p>Specifies a unique identifier for the context area to be allocated.</p>
 </dd>
 
-### -param <i>DriverObjectExtensionSize</i> [in]
+### -param DriverObjectExtensionSize [in]
 
 <dd>
 <p>Specifies the length, in bytes, of the context area to be allocated.</p>
 </dd>
 
-### -param <i>DriverObjectExtension</i> [out]
+### -param DriverObjectExtension [out]
 
 <dd>
 <p>Pointer to, on completion, the allocated context area. </p>

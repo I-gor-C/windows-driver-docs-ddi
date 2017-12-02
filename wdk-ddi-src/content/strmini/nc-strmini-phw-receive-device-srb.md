@@ -58,7 +58,7 @@ VOID StrMiniReceiveDevicePacket(
 ## -parameters
 <dl>
 
-### -param <i>pSRB</i> [in]
+### -param pSRB [in]
 
 <dd>
 <p>Pointer to the stream request block.</p>

@@ -57,25 +57,25 @@ NTSTATUS FASTCALL IoReadPartitionTable(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object for the disk whose partitions are to be read.</p>
 </dd>
 
-### -param <i>SectorSize</i> [in]
+### -param SectorSize [in]
 
 <dd>
 <p>Specifies the size of the sectors on the disk.</p>
 </dd>
 
-### -param <i>ReturnRecognizedPartitions</i> [in]
+### -param ReturnRecognizedPartitions [in]
 
 <dd>
 <p>Indicates whether only recognized partitions or all partition entries should be returned.</p>
 </dd>
 
-### -param <i>PartitionBuffer</i> [out]
+### -param PartitionBuffer [out]
 
 <dd>
 <p>Pointer to an uninitialized address. If successful, <b>IoReadPartitionTable</b> allocates the memory for this buffer from nonpaged pool and returns the drive layout information in it.</p>

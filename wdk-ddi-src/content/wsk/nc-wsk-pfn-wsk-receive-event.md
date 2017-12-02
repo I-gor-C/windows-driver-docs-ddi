@@ -7,7 +7,7 @@ old-location: netvista\wskreceiveevent.htm
 old-project: netvista
 ms.assetid: 2a7a7570-ed26-48be-b27b-dc240588ecfc
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ NTSTATUS APIENTRY WskReceiveEvent(
 ## -parameters
 <dl>
 
-### -param <i>SocketContext</i> [in, optional]
+### -param SocketContext [in, optional]
 
 <dd>
 <p>A pointer to the socket context for the connection-oriented socket that has received the data. The
@@ -93,7 +93,7 @@ NTSTATUS APIENTRY WskReceiveEvent(
 </ul>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of a combination of the following flags:
@@ -106,7 +106,7 @@ NTSTATUS APIENTRY WskReceiveEvent(
 <tr>
 <td width="40%"><a id="WSK_FLAG_RELEASE_ASAP"></a><a id="wsk_flag_release_asap"></a><dl>
 
-### -param <b>WSK_FLAG_RELEASE_ASAP</b>
+### -param WSK_FLAG_RELEASE_ASAP
 
 </dl>
 </td>
@@ -120,7 +120,7 @@ NTSTATUS APIENTRY WskReceiveEvent(
 <tr>
 <td width="40%"><a id="WSK_FLAG_ENTIRE_MESSAGE"></a><a id="wsk_flag_entire_message"></a><dl>
 
-### -param <b>WSK_FLAG_ENTIRE_MESSAGE</b>
+### -param WSK_FLAG_ENTIRE_MESSAGE
 
 </dl>
 </td>
@@ -134,7 +134,7 @@ NTSTATUS APIENTRY WskReceiveEvent(
 <tr>
 <td width="40%"><a id="WSK_FLAG_AT_DISPATCH_LEVEL"></a><a id="wsk_flag_at_dispatch_level"></a><dl>
 
-### -param <b>WSK_FLAG_AT_DISPATCH_LEVEL</b>
+### -param WSK_FLAG_AT_DISPATCH_LEVEL
 
 </dl>
 </td>
@@ -149,7 +149,7 @@ NTSTATUS APIENTRY WskReceiveEvent(
 <p> </p>
 </dd>
 
-### -param <i>DataIndication</i> [in, optional]
+### -param DataIndication [in, optional]
 
 <dd>
 <p>A pointer to a linked list of 
@@ -160,14 +160,14 @@ NTSTATUS APIENTRY WskReceiveEvent(
      socket as soon as possible.</p>
 </dd>
 
-### -param <i>BytesIndicated</i> [in]
+### -param BytesIndicated [in]
 
 <dd>
 <p>The number of bytes of received data described by the linked list of 
      <a href="..\wsk\ns-wsk--wsk-data-indication.md">WSK_DATA_INDICATION</a> structures.</p>
 </dd>
 
-### -param <i>BytesAccepted</i> [in, out]
+### -param BytesAccepted [in, out]
 
 <dd>
 <p>A pointer to a SIZE_T-typed variable which receives the number of bytes of received data that is
@@ -325,4 +325,4 @@ NTSTATUS APIENTRY WskReceiveEvent(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_RECEIVE_EVENT callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_RECEIVE_EVENT callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

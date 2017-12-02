@@ -60,46 +60,46 @@ NTSTATUS __stdcall HidP_GetSpecificButtonCaps(
 ## -parameters
 <dl>
 
-### -param <i>ReportType</i> [in]
+### -param ReportType [in]
 
 <dd>
 <p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.</p>
 </dd>
 
-### -param <i>UsagePage</i> [in]
+### -param UsagePage [in]
 
 <dd>
 <p>Specifies a usage page as a search criteria. If <i>UsagePage</i> is nonzero, only buttons that specify this usage page are returned.</p>
 </dd>
 
-### -param <i>LinkCollection</i> [in]
+### -param LinkCollection [in]
 
 <dd>
 <p>Specifies a <a href="https://msdn.microsoft.com/3f934661-c33c-4c08-82ac-ee2e0f519c8e">link collection</a> as a search criteria. If <i>LinkCollection</i> is nonzero, only buttons that are part of this link collection are returned.</p>
 </dd>
 
-### -param <i>Usage</i> [in]
+### -param Usage [in]
 
 <dd>
 <p>Specifies a <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">HID usage</a> as a search criteria. If <i>Usage</i> is nonzero, only buttons that specify this usage will be returned.</p>
 </dd>
 
-### -param <i>ButtonCaps</i> [out]
+### -param ButtonCaps [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer in which the routine returns a button capability array for the specified report type.</p>
 </dd>
 
-### -param <i>ButtonCapsLength</i> [in, out]
+### -param ButtonCapsLength [in, out]
 
 <dd>
 <p>Specifies the length on input, in array elements, of the buffer provided at <i>ButtonCaps</i>. On output, this parameter is set to the number of elements that the routine actually returned.</p>
 </dd>
 
-### -param <i>PreparsedData</i> [in]
+### -param PreparsedData [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="NULL">preparsed data</a>.</p>
+<p>Pointer to a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.</p>
 </dd>
 </dl>
 
@@ -117,9 +117,9 @@ NTSTATUS __stdcall HidP_GetSpecificButtonCaps(
 
 <p>When calling <b>HidP_GetSpecificButtonCaps</b>, specifying zero for <i>UsagePage</i>, <i>Usage</i>, and <i>LinkCollection</i> is equivalent to calling <b>HidP_GetButtonCaps</b>.</p>
 
-<p>For more information about a collection's capability, see <a href="NULL">Obtaining Collection Information</a>.</p>
+<p>For more information about a collection's capability, see <a href="https://msdn.microsoft.com/0568993b-ff50-48ac-a875-95ab643d6c28">Obtaining Collection Information</a>.</p>
 
-<p>See also <a href="NULL">HID Collections</a>. </p>
+<p>See also <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

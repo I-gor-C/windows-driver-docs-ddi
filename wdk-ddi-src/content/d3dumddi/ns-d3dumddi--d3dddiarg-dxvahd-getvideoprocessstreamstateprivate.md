@@ -56,19 +56,19 @@ typedef struct _D3DDDIARG_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE {
 ## -struct-fields
 <dl>
 
-### -field <b>hVideoProcessor</b>
+### -field hVideoProcessor
 
 <dd>
 <p>[in] A handle to the video processor whose private stream-state is the runtime requests.</p>
 </dd>
 
-### -field <b>StreamNumber</b>
+### -field StreamNumber
 
 <dd>
 <p>[in] A zero-based stream index number. This number must be less than the number that the driver set in the <b>MaxStreamStates</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure. </p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>[in/out] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-private-data.md">DXVAHDDDI_STREAM_STATE_PRIVATE_DATA</a> structure that identifies the private stream state to retrieve. The driver uses DXVAHDDDI_STREAM_STATE_PRIVATE_DATA to return the private stream-state data. </p>

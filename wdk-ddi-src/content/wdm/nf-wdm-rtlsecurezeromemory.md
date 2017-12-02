@@ -56,13 +56,13 @@ PVOID RtlSecureZeroMemory(
 ## -parameters
 <dl>
 
-### -param <i>ptr</i> [out]
+### -param ptr [out]
 
 <dd>
 <p>Pointer to the memory buffer to be filled with zeros.</p>
 </dd>
 
-### -param <i>cnt</i> [in]
+### -param cnt [in]
 
 <dd>
 <p>Specifies the number of bytes to be filled with zeros.</p>

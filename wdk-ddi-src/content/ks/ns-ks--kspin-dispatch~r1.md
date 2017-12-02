@@ -63,61 +63,61 @@ typedef struct _KSPIN_DISPATCH {
 ## -struct-fields
 <dl>
 
-### -field <b>Create</b>
+### -field Create
 
 <dd>
 <p>A pointer to a minidriver-supplied <a href="stream.avstrminipincreate">AVStrMiniPinCreate</a> callback routine. Optional. Can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Close</b>
+### -field Close
 
 <dd>
 <p>A pointer to a minidriver-supplied <a href="stream.avstrminipinclose">AVStrMiniPinClose</a> callback routine. Optional. Can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Process</b>
+### -field Process
 
 <dd>
 <p>A pointer to a minidriver-supplied <a href="stream.avstrminipinprocess">AVStrMiniPinProcess</a> callback routine. Optional. Can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Reset</b>
+### -field Reset
 
 <dd>
 <p>A pointer to a minidriver-supplied <a href="stream.avstrminipinreset">AVStrMiniPinReset</a> callback routine. Optional. Can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>SetDataFormat</b>
+### -field SetDataFormat
 
 <dd>
 <p>A pointer to a minidriver-supplied <a href="stream.avstrminipinsetdataformat">AVStrMiniPinSetDataFormat</a> callback routine. Optional. Can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>SetDeviceState</b>
+### -field SetDeviceState
 
 <dd>
 <p>A pointer to a minidriver-supplied <a href="stream.avstrminipinsetdevicestate">AVStrMiniPinSetDeviceState</a> callback routine. Optional. Can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Connect</b>
+### -field Connect
 
 <dd>
 <p>A pointer to a minidriver-supplied <a href="stream.avstrminipinconnect">AVStrMiniPinConnect</a> callback routine. Optional. Can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Disconnect</b>
+### -field Disconnect
 
 <dd>
 <p>A pointer to a minidriver-supplied <a href="stream.avstrminipindisconnect">AVStrMiniPinDisconnect</a> callback routine. Optional. Can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Clock</b>
+### -field Clock
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksclock-dispatch.md">KSCLOCK_DISPATCH</a> structure. Specify this member for a pin that exposes a clock. Optional. Can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Allocator</b>
+### -field Allocator
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksallocator-dispatch.md">KSALLOCATOR_DISPATCH</a> structure. Specify this member for a pin that is capable of performing kernel-level allocation. Optional. Can be <b>NULL</b>.</p>

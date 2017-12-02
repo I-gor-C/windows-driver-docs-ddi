@@ -56,19 +56,19 @@ typedef struct _DISK_GEOMETRY_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>Geometry</b>
+### -field Geometry
 
 <dd>
 <p>See <a href="..\ntdddisk\ns-ntdddisk--disk-geometry.md">DISK_GEOMETRY</a> for a description of this member. </p>
 </dd>
 
-### -field <b>DiskSize</b>
+### -field DiskSize
 
 <dd>
 <p>Contains the size in bytes of the disk. </p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>Pointer to a variable length area containing a <a href="..\ntdddisk\ns-ntdddisk--disk-partition-info.md">DISK_PARTITION_INFO</a> structure followed by a <a href="..\ntdddisk\ns-ntdddisk--disk-detection-info.md">DISK_DETECTION_INFO</a> structure.</p>

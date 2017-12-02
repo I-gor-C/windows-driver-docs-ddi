@@ -71,109 +71,109 @@ typedef enum D3D12DDICAPS_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDICAPS_TYPE_TEXTURE_LAYOUT"></a><a id="d3d12ddicaps_type_texture_layout"></a><b>D3D12DDICAPS_TYPE_TEXTURE_LAYOUT</b>
+### -field D3D12DDICAPS_TYPE_TEXTURE_LAYOUT
 
 <dd>
 <p>Texture layout.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_SWIZZLE_PATTERN"></a><a id="d3d12ddicaps_type_swizzle_pattern"></a><b>D3D12DDICAPS_TYPE_SWIZZLE_PATTERN</b>
+### -field D3D12DDICAPS_TYPE_SWIZZLE_PATTERN
 
 <dd>
 <p>Swizzle pattern.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_MEMORY_ARCHITECTURE"></a><a id="d3d12ddicaps_type_memory_architecture"></a><b>D3D12DDICAPS_TYPE_MEMORY_ARCHITECTURE</b>
+### -field D3D12DDICAPS_TYPE_MEMORY_ARCHITECTURE
 
 <dd>
 <p>Memory architecture.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_TEXTURE_LAYOUT_SETS"></a><a id="d3d12ddicaps_type_texture_layout_sets"></a><b>D3D12DDICAPS_TYPE_TEXTURE_LAYOUT_SETS</b>
+### -field D3D12DDICAPS_TYPE_TEXTURE_LAYOUT_SETS
 
 <dd>
 <p>Texture layout sets.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_SHADER"></a><a id="d3d12ddicaps_type_shader"></a><b>D3D12DDICAPS_TYPE_SHADER</b>
+### -field D3D12DDICAPS_TYPE_SHADER
 
 <dd>
 <p>Shader.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_ARCHITECTURE_INFO"></a><a id="d3d12ddicaps_type_architecture_info"></a><b>D3D12DDICAPS_TYPE_ARCHITECTURE_INFO</b>
+### -field D3D12DDICAPS_TYPE_ARCHITECTURE_INFO
 
 <dd>
 <p>Architecture information.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_D3D12_OPTIONS"></a><a id="d3d12ddicaps_type_d3d12_options"></a><b>D3D12DDICAPS_TYPE_D3D12_OPTIONS</b>
+### -field D3D12DDICAPS_TYPE_D3D12_OPTIONS
 
 <dd>
 <p>Options for D3D12.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_3DPIPELINESUPPORT"></a><a id="d3d12ddicaps_type_3dpipelinesupport"></a><b>D3D12DDICAPS_TYPE_3DPIPELINESUPPORT</b>
+### -field D3D12DDICAPS_TYPE_3DPIPELINESUPPORT
 
 <dd>
 <p>Support for 3D pipeline.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_JPEG_OPTIONS"></a><a id="d3d12ddicaps_type_jpeg_options"></a><b>D3D12DDICAPS_TYPE_JPEG_OPTIONS</b>
+### -field D3D12DDICAPS_TYPE_JPEG_OPTIONS
 
 <dd>
 <p>JPEG options.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_GPUVA_CAPS"></a><a id="d3d12ddicaps_type_gpuva_caps"></a><b>D3D12DDICAPS_TYPE_GPUVA_CAPS</b>
+### -field D3D12DDICAPS_TYPE_GPUVA_CAPS
 
 <dd>
 <p>GPU video acceleration capabilities.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_TEXTURE_LAYOUT1"></a><a id="d3d12ddicaps_type_texture_layout1"></a><b>D3D12DDICAPS_TYPE_TEXTURE_LAYOUT1</b>
+### -field D3D12DDICAPS_TYPE_TEXTURE_LAYOUT1
 
 <dd>
 <p>Texture layout.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_0011_SHADER_MODELS"></a><a id="d3d12ddicaps_type_0011_shader_models"></a><b>D3D12DDICAPS_TYPE_0011_SHADER_MODELS</b>
+### -field D3D12DDICAPS_TYPE_0011_SHADER_MODELS
 
 <dd>
 <p>Shader models.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_0020_CONTENT_PROTECTION_SUPPORT"></a><a id="d3d12ddicaps_type_0020_content_protection_support"></a><b>D3D12DDICAPS_TYPE_0020_CONTENT_PROTECTION_SUPPORT</b>
+### -field D3D12DDICAPS_TYPE_0020_CONTENT_PROTECTION_SUPPORT
 
 <dd>
 <p>Content protection support.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_0020_CONTENT_PROTECTION_DRM_SUPPORT"></a><a id="d3d12ddicaps_type_0020_content_protection_drm_support"></a><b>D3D12DDICAPS_TYPE_0020_CONTENT_PROTECTION_DRM_SUPPORT</b>
+### -field D3D12DDICAPS_TYPE_0020_CONTENT_PROTECTION_DRM_SUPPORT
 
 <dd>
 <p>Content protection digital rights management (DRM) support.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_0022_CPU_PAGE_TABLE_FALSE_POSITIVES"></a><a id="d3d12ddicaps_type_0022_cpu_page_table_false_positives"></a><b>D3D12DDICAPS_TYPE_0022_CPU_PAGE_TABLE_FALSE_POSITIVES</b>
+### -field D3D12DDICAPS_TYPE_0022_CPU_PAGE_TABLE_FALSE_POSITIVES
 
 <dd>
 <p>CPU page table false positives.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_0022_TEXTURE_LAYOUT"></a><a id="d3d12ddicaps_type_0022_texture_layout"></a><b>D3D12DDICAPS_TYPE_0022_TEXTURE_LAYOUT</b>
+### -field D3D12DDICAPS_TYPE_0022_TEXTURE_LAYOUT
 
 <dd>
 <p>Texture layout.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_0022_SWIZZLE_PATTERN"></a><a id="d3d12ddicaps_type_0022_swizzle_pattern"></a><b>D3D12DDICAPS_TYPE_0022_SWIZZLE_PATTERN</b>
+### -field D3D12DDICAPS_TYPE_0022_SWIZZLE_PATTERN
 
 <dd>
 <p>Swizzle pattern.</p>
 </dd>
 
-### -field <a id="D3D12DDICAPS_TYPE_0023_UMD_BASED_COMMAND_QUEUE_PRIORITY"></a><a id="d3d12ddicaps_type_0023_umd_based_command_queue_priority"></a><b>D3D12DDICAPS_TYPE_0023_UMD_BASED_COMMAND_QUEUE_PRIORITY</b>
+### -field D3D12DDICAPS_TYPE_0023_UMD_BASED_COMMAND_QUEUE_PRIORITY
 
 <dd>
 <p>UMD-based command queue priority. </p>

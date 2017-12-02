@@ -7,7 +7,7 @@ old-location: ifsk\obopenobjectbypointer.htm
 old-project: ifsk
 ms.assetid: f2aa198e-6018-486f-8c39-c89c3f78cb41
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: ObOpenObjectByPointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,40 +61,40 @@ NTSTATUS ObOpenObjectByPointer(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>Pointer to the object to be opened. </p>
 </dd>
 
-### -param <i>HandleAttributes</i> [in]
+### -param HandleAttributes [in]
 
 <dd>
 <p>Bitmask of flags specifying the desired attributes for the object handle. If the caller is not running in the system process context, these flags must include OBJ_KERNEL_HANDLE. This parameter is optional and can be zero. Otherwise, it is an ORed combination of one or more of the following: </p>
 <dl class="indent">
 
-### -param <a id="OBJ_EXCLUSIVE"></a><a id="obj_exclusive"></a><p><a id="OBJ_EXCLUSIVE"></a><a id="obj_exclusive"></a><b>OBJ_EXCLUSIVE</b></p>
+### -param OBJ_EXCLUSIVE
 
 
 <dd>
 <p>The object is to be opened for exclusive access. If this flag is set and the call to <b>ObOpenObjectByPointer</b> succeeds, the object cannot be shared and cannot be opened again until the handle is closed. This flag is incompatible with the OBJ_INHERIT flag. This flag is invalid for file objects. </p>
 </dd>
 
-### -param <a id="OBJ_FORCE_ACCESS_CHECK"></a><a id="obj_force_access_check"></a><p><a id="OBJ_FORCE_ACCESS_CHECK"></a><a id="obj_force_access_check"></a><b>OBJ_FORCE_ACCESS_CHECK</b></p>
+### -param OBJ_FORCE_ACCESS_CHECK
 
 
 <dd>
 <p>All access checks are to be enforced for the object, even if the object is being opened in kernel mode. If this flag is specified, the value of the <i>AccessMode</i> parameter is ignored. </p>
 </dd>
 
-### -param <a id="OBJ_INHERIT"></a><a id="obj_inherit"></a><p><a id="OBJ_INHERIT"></a><a id="obj_inherit"></a><b>OBJ_INHERIT</b></p>
+### -param OBJ_INHERIT
 
 
 <dd>
 <p>The handle can be inherited by child processes of the current process. This flag is incompatible with the OBJ_EXCLUSIVE flag. </p>
 </dd>
 
-### -param <a id="OBJ_KERNEL_HANDLE"></a><a id="obj_kernel_handle"></a><p><a id="OBJ_KERNEL_HANDLE"></a><a id="obj_kernel_handle"></a><b>OBJ_KERNEL_HANDLE</b></p>
+### -param OBJ_KERNEL_HANDLE
 
 
 <dd>
@@ -103,20 +103,20 @@ NTSTATUS ObOpenObjectByPointer(
 </dl>
 </dd>
 
-### -param <i>PassedAccessState</i> [in, optional]
+### -param PassedAccessState [in, optional]
 
 <dd>
 <p>Pointer to an <a href="..\wdm\ns-wdm--access-state.md">ACCESS_STATE</a> structure containing the object's subject context, granted access types, and remaining desired access types. This parameter is optional and can be <b>NULL</b>. In a create dispatch routine, this pointer can be found in <i>IrpSp-&gt;Parameters.Create.SecurityContext-&gt;AccessState</i>, where <b>IrpSp</b> is a pointer to the caller's own stack location in the IRP. (For more information, see <a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a>.) </p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value specifying the desired access to the object. This parameter is optional and can be zero. </p>
 </dd>
 
-### -param <i>ObjectType</i> [in, optional]
+### -param ObjectType [in, optional]
 
 <dd>
 <p>Pointer to the object type. If the value of <i>AccessMode</i> is <b>KernelMode</b>, this parameter is optional and can be <b>NULL</b>. Otherwise, it must be either <b>*ExEventObjectType</b>, <b>*ExSemaphoreObjectType</b>, <b>*IoFileObjectType</b>, <b>*PsThreadType </b>, <b>*SeTokenObjectType</b>, or <b>*CmKeyObjectType</b>. </p>
@@ -124,13 +124,13 @@ NTSTATUS ObOpenObjectByPointer(
 <div> </div>
 </dd>
 
-### -param <i>AccessMode</i> [in]
+### -param AccessMode [in]
 
 <dd>
 <p>Access mode to be used for the access check. This parameter is required and must be either <b>UserMode</b> or <b>KernelMode</b>. </p>
 </dd>
 
-### -param <i>Handle</i> [out]
+### -param Handle [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives a handle to the object. </p>
@@ -243,4 +243,4 @@ NTSTATUS ObOpenObjectByPointer(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ObOpenObjectByPointer function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ObOpenObjectByPointer function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\riluiccservice.htm
 old-project: netvista
 ms.assetid: 67c8abef-c920-4bc4-8216-8b6026a1962d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUICCSERVICE, RILUICCSERVICE, *LPRILUICCSERVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILUICCSERVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwService</b>
+### -field dwService
 
 <dd></dd>
 </dl>

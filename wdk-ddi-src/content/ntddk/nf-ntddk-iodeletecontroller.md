@@ -54,7 +54,7 @@ VOID IoDeleteController(
 ## -parameters
 <dl>
 
-### -param <i>ControllerObject</i> [in]
+### -param ControllerObject [in]
 
 <dd>
 <p>Pointer to the controller object to be released. </p>

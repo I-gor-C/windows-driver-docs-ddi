@@ -7,7 +7,7 @@ old-location: netvista\dot11extgetprofilecustomuserdata.htm
 old-project: netvista
 ms.assetid: 1a88138f-aada-410a-a985-249de793aa51
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ DWORD WINAPI * Dot11ExtGetProfileCustomUserData(
 ## -parameters
 <dl>
 
-### -param <i>hDot11SvcHandle</i> [in, optional]
+### -param hDot11SvcHandle [in, optional]
 
 <dd>
 <p>The handle used by the operating system to reference the wireless LAN (WLAN) adapter. This handle
@@ -66,7 +66,7 @@ DWORD WINAPI * Dot11ExtGetProfileCustomUserData(
      Handler function.</p>
 </dd>
 
-### -param <i>hConnectSession</i> [in, optional]
+### -param hConnectSession [in, optional]
 
 <dd>
 <p>The handle used by the operating system to reference the connection session with the basic service
@@ -75,13 +75,13 @@ DWORD WINAPI * Dot11ExtGetProfileCustomUserData(
      Dot11ExtIhvPerformPreAssociate</a> IHV Handler function.</p>
 </dd>
 
-### -param <i>dwSessionID</i> [in]
+### -param dwSessionID [in]
 
 <dd>
 <p>The session identifier (session ID) of the current user.</p>
 </dd>
 
-### -param <i>pdwDataSize</i> [out]
+### -param pdwDataSize [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable that stores the size, in bytes, of the buffer referenced
@@ -89,7 +89,7 @@ DWORD WINAPI * Dot11ExtGetProfileCustomUserData(
      <i>ppvData</i> .</p>
 </dd>
 
-### -param <i>ppvData</i> [out]
+### -param ppvData [out]
 
 <dd>
 <p>The address of a pointer variable that stores the address of the buffer containing the user
@@ -179,4 +179,4 @@ DWORD WINAPI * Dot11ExtGetProfileCustomUserData(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

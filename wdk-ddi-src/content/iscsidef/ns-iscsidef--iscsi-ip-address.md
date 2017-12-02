@@ -59,37 +59,37 @@ typedef struct _ISCSI_IP_Address {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="storage.iscsiipaddresstype">ISCSIIPADDRESSTYPE</a> value that indicates the type of IP address. </p>
 </dd>
 
-### -field <b>IpV4Address</b>
+### -field IpV4Address
 
 <dd>
 <p>If <b>Type</b> = <b>ISCSI_IP_ADDRESS_IPV4</b>, the binary version 4 IP address. Otherwise, <b>IpV4Address</b> is not defined.</p>
 </dd>
 
-### -field <b>IpV6Address</b>
+### -field IpV6Address
 
 <dd>
 <p>If <b>Type</b> = <b>ISCSI_IP_ADDRESS_IPV6</b>, the binary version 6 IP address. Otherwise, <b>IpV6Address</b> is not defined.</p>
 </dd>
 
-### -field <b>IpV6FlowInfo</b>
+### -field IpV6FlowInfo
 
 <dd>
 <p>If <b>Type</b> = <b>ISCSI_IP_ADDRESS_IPV6</b>, the flow information for this IP address, as defined in version 6 of the IP protocol. Otherwise, <b>IpV6FlowInfo</b> is not defined.</p>
 </dd>
 
-### -field <b>IpV6ScopeId</b>
+### -field IpV6ScopeId
 
 <dd>
 <p>If <b>Type</b> = <b>ISCSI_IP_ADDRESS_IPV6</b>, the scope ID of this IP address, as defined in version 6 of the IP protocol,. Otherwise, <b>IpV6ScopeId</b> is not defined.</p>
 </dd>
 
-### -field <b>TextAddress</b>
+### -field TextAddress
 
 <dd>
 <p>If <b>Type</b> = <b>ISCSI_IP_ADDRESS_TEXT</b>, the DNS or dotted decimal text address. Otherwise, <b>TextAddress</b> is not defined.</p>

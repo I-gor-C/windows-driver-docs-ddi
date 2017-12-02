@@ -55,13 +55,13 @@ typedef struct _D3DDDICB_QUERYADAPTERINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[out] A pointer to a buffer that the display miniport driver can fill with information about the graphics adapter.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in/out] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ndiscooidrequestcomplete.htm
 old-project: netvista
 ms.assetid: ba4a22a1-ad48-43f1-96f5-dee5d76e49cb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisCoOidRequestComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ VOID NdisCoOidRequestComplete(
 ## -parameters
 <dl>
 
-### -param <i>NdisAfHandle</i> [in]
+### -param NdisAfHandle [in]
 
 <dd>
 <p>An address family (AF) handle that NDIS passed to the client or stand-alone call manager's 
@@ -70,7 +70,7 @@ VOID NdisCoOidRequestComplete(
      ProtocolCoOidRequest</a> function.</p>
 </dd>
 
-### -param <i>NdisVcHandle</i> [in, optional]
+### -param NdisVcHandle [in, optional]
 
 <dd>
 <p>A virtual connection (VC) handle that NDIS passed to the client or stand-alone call manager's 
@@ -81,7 +81,7 @@ VOID NdisCoOidRequestComplete(
      <b>NULL</b> VC handle.</p>
 </dd>
 
-### -param <i>NdisPartyHandle</i> [in, optional]
+### -param NdisPartyHandle [in, optional]
 
 <dd>
 <p>A party handle that NDIS passed to the client or stand-alone call manager's 
@@ -91,7 +91,7 @@ VOID NdisCoOidRequestComplete(
      <b>NdisMCmOidRequest</b> function specified a <b>NULL</b> party handle.</p>
 </dd>
 
-### -param <i>OidRequest</i> [in]
+### -param OidRequest [in]
 
 <dd>
 <p>A pointer to a buffer that is formatted as an 
@@ -101,7 +101,7 @@ VOID NdisCoOidRequestComplete(
      <b>NdisMCmOidRequest</b> function supplied this buffer.</p>
 </dd>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>The final status of the request operation, either NDIS_STATUS_SUCCESS, or any driver-determined
@@ -225,4 +225,4 @@ VOID NdisCoOidRequestComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoOidRequestComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoOidRequestComplete function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

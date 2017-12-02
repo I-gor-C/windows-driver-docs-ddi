@@ -64,67 +64,67 @@ typedef enum _D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_VPPI_UNINITIALIZED"></a><a id="d3dkmdt_vppi_uninitialized"></a><b>D3DKMDT_VPPI_UNINITIALIZED</b>
+### -field D3DKMDT_VPPI_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPI_PRIMARY"></a><a id="d3dkmdt_vppi_primary"></a><b>D3DKMDT_VPPI_PRIMARY</b>
+### -field D3DKMDT_VPPI_PRIMARY
 
 <dd>
 <p>Indicates importance level 1.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPI_SECONDARY"></a><a id="d3dkmdt_vppi_secondary"></a><b>D3DKMDT_VPPI_SECONDARY</b>
+### -field D3DKMDT_VPPI_SECONDARY
 
 <dd>
 <p>Indicates importance level 2.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPI_TERTIARY"></a><a id="d3dkmdt_vppi_tertiary"></a><b>D3DKMDT_VPPI_TERTIARY</b>
+### -field D3DKMDT_VPPI_TERTIARY
 
 <dd>
 <p>Indicates importance level 3.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPI_QUATERNARY"></a><a id="d3dkmdt_vppi_quaternary"></a><b>D3DKMDT_VPPI_QUATERNARY</b>
+### -field D3DKMDT_VPPI_QUATERNARY
 
 <dd>
 <p>Indicates importance level 4.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPI_QUINARY"></a><a id="d3dkmdt_vppi_quinary"></a><b>D3DKMDT_VPPI_QUINARY</b>
+### -field D3DKMDT_VPPI_QUINARY
 
 <dd>
 <p>Indicates importance level 5.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPI_SENARY"></a><a id="d3dkmdt_vppi_senary"></a><b>D3DKMDT_VPPI_SENARY</b>
+### -field D3DKMDT_VPPI_SENARY
 
 <dd>
 <p>Indicates importance level 6.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPI_SEPTENARY"></a><a id="d3dkmdt_vppi_septenary"></a><b>D3DKMDT_VPPI_SEPTENARY</b>
+### -field D3DKMDT_VPPI_SEPTENARY
 
 <dd>
 <p>Indicates importance level 7.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPI_OCTONARY"></a><a id="d3dkmdt_vppi_octonary"></a><b>D3DKMDT_VPPI_OCTONARY</b>
+### -field D3DKMDT_VPPI_OCTONARY
 
 <dd>
 <p>Indicates importance level 8.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPI_NONARY"></a><a id="d3dkmdt_vppi_nonary"></a><b>D3DKMDT_VPPI_NONARY</b>
+### -field D3DKMDT_VPPI_NONARY
 
 <dd>
 <p>Indicates importance level 9.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPI_DENARY"></a><a id="d3dkmdt_vppi_denary"></a><b>D3DKMDT_VPPI_DENARY</b>
+### -field D3DKMDT_VPPI_DENARY
 
 <dd>
 <p>Indicates importance level 10.</p>

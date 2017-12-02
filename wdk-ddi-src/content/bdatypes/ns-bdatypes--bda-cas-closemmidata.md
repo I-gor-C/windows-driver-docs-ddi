@@ -54,7 +54,7 @@ typedef struct _BDA_CAS_CLOSEMMIDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>ulDialogNumber</b>
+### -field ulDialogNumber
 
 <dd></dd>
 </dl>

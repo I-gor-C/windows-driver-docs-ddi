@@ -68,7 +68,7 @@ typedef struct _HDAUDIO_CODEC_COMMAND {
 ## -struct-fields
 <dl>
 
-### -field <b>Verb8</b>
+### -field Verb8
 
 <dd>
 <p>Specifies an 8-bit payload command format. The members in the following table are part of the Verb8 structure.
@@ -76,25 +76,25 @@ typedef struct _HDAUDIO_CODEC_COMMAND {
 		</p>
 <dl>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>Specifies an 8-bit data payload value for the 8-bit payload command format.</p>
 </dd>
 
-### -field <b>VerbId</b>
+### -field VerbId
 
 <dd>
 <p>Specifies a 12-bit verb identifier for the 8-bit payload command format.</p>
 </dd>
 
-### -field <b>Node</b>
+### -field Node
 
 <dd>
 <p>Specifies an 8-bit node identifier for the 8-bit payload command format.</p>
 </dd>
 
-### -field <b>CodecAddress</b>
+### -field CodecAddress
 
 <dd>
 <p>Specifies a 4-bit codec address for the 8-bit payload command format.</p>
@@ -102,7 +102,7 @@ typedef struct _HDAUDIO_CODEC_COMMAND {
 </dl>
 </dd>
 
-### -field <b>Verb16</b>
+### -field Verb16
 
 <dd>
 <p>Specifies an 16-bit payload command format. The members in the following table are part of the Verb16 structure.
@@ -110,25 +110,25 @@ typedef struct _HDAUDIO_CODEC_COMMAND {
 		</p>
 <dl>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>Specifies an 16-bit data payload value for the 16-bit payload command format.</p>
 </dd>
 
-### -field <b>VerbId</b>
+### -field VerbId
 
 <dd>
 <p>Specifies a 4-bit verb identifier for the 16-bit payload command format.</p>
 </dd>
 
-### -field <b>Node</b>
+### -field Node
 
 <dd>
 <p>Specifies an 8-bit node identifier for the 16-bit payload command format.</p>
 </dd>
 
-### -field <b>CodecAddress</b>
+### -field CodecAddress
 
 <dd>
 <p>Specifies a 4-bit codec address for the 16-bit payload command format.</p>
@@ -136,7 +136,7 @@ typedef struct _HDAUDIO_CODEC_COMMAND {
 </dl>
 </dd>
 
-### -field <b>Command</b>
+### -field Command
 
 <dd>
 <p>Specifies a 32-bit codec command that contains payload data, a verb identifier, a node identifier, and a codec address.</p>

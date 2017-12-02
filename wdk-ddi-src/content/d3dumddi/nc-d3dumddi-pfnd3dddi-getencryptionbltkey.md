@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY GetEncryptionBltKey(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p> A pointer to a <a href="display.d3dddiarg_getencryptionbltkey">D3DDDIARG_GETENCRYPTIONBLTKEY</a> structure that describes the key for an encrypted session. </p>

@@ -56,13 +56,13 @@ STDMETHOD ResetPDEV(
 ## -parameters
 <dl>
 
-### -param <i>pdevobjOld</i> 
+### -param pdevobjOld 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure containing current PDEV information.</p>
 </dd>
 
-### -param <i>pdevobjNew</i> 
+### -param pdevobjNew 
 
 <dd>
 <p>Caller-supplied pointer to a DEVOBJ structure into which the method should place new PDEV information.</p>

@@ -7,7 +7,7 @@ old-location: ifsk\keremovequeue.htm
 old-project: ifsk
 ms.assetid: 475e352a-b6ea-4e37-ad46-e94284caa105
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: KeRemoveQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ PLIST_ENTRY KeRemoveQueue(
 ## -parameters
 <dl>
 
-### -param <i>Queue</i> [in, out]
+### -param Queue [in, out]
 
 <dd>
 <p>Pointer to an initialized queue object for which the caller provides resident storage in nonpaged pool.</p>
 </dd>
 
-### -param <i>WaitMode</i> [in]
+### -param WaitMode [in]
 
 <dd>
 <p>The processor mode in which the caller is waiting, which can be either <b>KernelMode</b> or <b>UserMode</b>. If anything on its stack might be accessed at IRQL &gt;= DISPATCH_LEVEL, the caller must specify <b>KernelMode</b>. </p>
 </dd>
 
-### -param <i>Timeout</i> [in, optional]
+### -param Timeout [in, optional]
 
 <dd>
 <p>Pointer to a variable that specifies the absolute or relative time, in units of 100 nanoseconds, at which the wait is to expire. If the value of <i>Timeout</i> is negative, the expiration time is relative to the current system time; otherwise, it is absolute. Absolute expiration times track any changes in system time; relative expiration times are not affected by system time changes. This pointer can be <b>NULL</b>. </p>
@@ -152,4 +152,4 @@ PLIST_ENTRY KeRemoveQueue(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20KeRemoveQueue routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20KeRemoveQueue routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

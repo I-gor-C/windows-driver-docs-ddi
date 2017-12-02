@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_allocate_resources_wxp.htm
 old-project: IEEE
 ms.assetid: 8DE03C05-48A4-4699-8513-F2B596EED37F
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP, IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP {
 ## -struct-fields
 <dl>
 
-### -field <b>fulSpeed</b>
+### -field fulSpeed
 
 <dd>
 <p>Specifies the connection speed to use for communication on the channel. The possible speed values are SPEED_FLAGS_xxx, where xxx is the (approximate) transfer rate in megabits per second. Existing hardware supports transfer rates of 100, 200, and 400 Mb/sec.</p>
@@ -100,7 +100,7 @@ typedef struct _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP {
 <div> </div>
 </dd>
 
-### -field <b>fulFlags</b>
+### -field fulFlags
 
 <dd>
 <p>Specifies how the bus driver should use any buffers attached to the resource handle. Many of the flags specify how the bus driver should configure the IEEE host controller for DMA from or to attached buffers.</p>
@@ -169,43 +169,43 @@ typedef struct _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP {
 <p> </p>
 </dd>
 
-### -field <b>nChannel</b>
+### -field nChannel
 
 <dd>
 <p>Specifies the isochronous channel for all transactions involving the resource handle allocated by this request.</p>
 </dd>
 
-### -field <b>nMaxBytesPerFrame</b>
+### -field nMaxBytesPerFrame
 
 <dd>
 <p>Specifies the expected maximum isochronous frame size while transmitting and receiving on the channel.</p>
 </dd>
 
-### -field <b>nNumberOfBuffers</b>
+### -field nNumberOfBuffers
 
 <dd>
 <p>Specifies one more than the maximum expected number of buffers that are attached to the resource handle at any given time. </p>
 </dd>
 
-### -field <b>nMaxBufferSize</b>
+### -field nMaxBufferSize
 
 <dd>
 <p>Specifies the maximum size of the buffers that are attached to the resource handle.</p>
 </dd>
 
-### -field <b>nQuadletsToStrip</b>
+### -field nQuadletsToStrip
 
 <dd>
 <p>Specifies the number of quadlets to strip from the beginning of every packet in an incoming isochronous stream. This parameter is ignored unless the device driver sets the  RESOURCE_STRIP_ADDITIONAL_QUADLETS flag in <b>u.IsochAllocateResources.fulFlags</b>.</p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>Specifies a handle to the resource.</p>
 </dd>
 
-### -field <b>ChannelMask</b>
+### -field ChannelMask
 
 <dd>
 <p>Specifies a set of isochronous channels, if RESOURCE_USE_MULTICHANNEL is set, that are used for all transactions involving the resource handle allocated by this request.</p>

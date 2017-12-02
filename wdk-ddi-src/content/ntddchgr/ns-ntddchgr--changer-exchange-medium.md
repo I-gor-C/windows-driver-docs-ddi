@@ -59,37 +59,37 @@ typedef struct _CHANGER_EXCHANGE_MEDIUM {
 ## -struct-fields
 <dl>
 
-### -field <b>Transport</b>
+### -field Transport
 
 <dd>
 <p>Indicates which transport element to use for the exchange operation. This member contains a structure of type <a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a>. The <b>ElementType</b> member of the CHANGER_ELEMENT structure must be assigned a value of <b>ChangerTransport</b>. </p>
 </dd>
 
-### -field <b>Source</b>
+### -field Source
 
 <dd>
 <p>Indicates the element that contains the piece of media to be moved. </p>
 </dd>
 
-### -field <b>Destination1</b>
+### -field Destination1
 
 <dd>
 <p>Indicates the destination of the piece of media originally at <b>Source</b>. </p>
 </dd>
 
-### -field <b>Destination2</b>
+### -field Destination2
 
 <dd>
 <p>Indicates the destination of the piece of media originally at <b>Destination1</b>. </p>
 </dd>
 
-### -field <b>Flip1</b>
+### -field Flip1
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the piece of media moved to <b>Destination1</b> should be flipped. This member is valid only if the <b>Features0</b> member of the <a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a> structure is set to CHANGER_MEDIUM_FLIP. When <b>FALSE</b>, this member indicates that the media does not ready to be flipped. </p>
 </dd>
 
-### -field <b>Flip2</b>
+### -field Flip2
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the medium moved to <b>Destination2</b> should be flipped. This member is valid only if the <b>Features0</b> member of the GET_CHANGER_PARAMETERS structure is set to CHANGER_MEDIUM_FLIP. When <b>FALSE</b>, this member indicates that the media does not ready to be flipped.  </p>

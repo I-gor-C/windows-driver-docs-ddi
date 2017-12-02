@@ -7,7 +7,7 @@ old-location: netvista\dot11_wps_device_name.htm
 old-project: netvista
 ms.assetid: 6C2B8E87-A88F-4244-81B2-0241E2DAE756
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,14 +55,14 @@ uDeviceNameLength;
 ## -struct-fields
 <dl>
 
-### -field <b>
+### -field 
 uDeviceNameLength</b>
 
 <dd>
 <p>The length, in bytes, of the device name.</p>
 </dd>
 
-### -field <b>ucDeviceName[DOT11_WPS_DEVICE_NAME_MAX_LENGTH]</b>
+### -field ucDeviceName[DOT11_WPS_DEVICE_NAME_MAX_LENGTH]
 
 <dd>
 <p>A UTF-8–encoded descriptive name of the device.</p>

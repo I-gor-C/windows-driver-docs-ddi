@@ -55,7 +55,7 @@ VOID IoStartTimer(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to a device object whose timer routine is to be called.</p>
@@ -127,7 +127,7 @@ VOID IoStartTimer(
 <a href="..\wdm\nf-wdm-ioinitializetimer.md">IoInitializeTimer</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iostoptimer.md">IoStopTimer</a>
+<a href="..\wdm\nf-wdm-iostoptimer.md">IoStopTimer</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>

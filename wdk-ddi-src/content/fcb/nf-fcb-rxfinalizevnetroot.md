@@ -7,7 +7,7 @@ old-location: ifsk\rxfinalizevnetroot.htm
 old-project: ifsk
 ms.assetid: 7a24d8b4-cd07-453c-9813-d794b75b039e
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxFinalizeVNetRoot
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ BOOLEAN RxFinalizeVNetRoot(
 ## -parameters
 <dl>
 
-### -param <i>ThisVNetRoot</i> [out]
+### -param ThisVNetRoot [out]
 
 <dd>
 <p>A pointer to the V_NET_ROOT structure to finalize.</p>
 </dd>
 
-### -param <i>RecursiveFinalize</i> [in]
+### -param RecursiveFinalize [in]
 
 <dd>
 <p>The value indicating whether the finalization should be done recursively. This parameter in not currently used.</p>
 </dd>
 
-### -param <i>ForceFinalize</i> [in]
+### -param ForceFinalize [in]
 
 <dd>
 <p>The value indicating whether the finalization should be forced, regardless of the reference count. </p>
@@ -192,4 +192,4 @@ BOOLEAN RxFinalizeVNetRoot(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxFinalizeVNetRoot function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxFinalizeVNetRoot function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

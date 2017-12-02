@@ -65,67 +65,67 @@ typedef struct _UNI_GLYPHSETDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the total size, in bytes, of the .gtt file. Note that this is the total size of all structures used to define the file. This value is not the size of the UNI_GLYPHSETDATA structure.</p>
 </dd>
 
-### -field <b>dwVersion</b>
+### -field dwVersion
 
 <dd>
 <p>Specifies the file version number, as defined in prntfont.h by a constant with a name format of UNI_GLYPHSETDATA_VERSION_<i>x</i>_<i>x</i>.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>lPredefinedID</b>
+### -field lPredefinedID
 
 <dd>
 <p>Specifies one of the CC_-prefixed code conversion identifiers defined in prntfont.h. </p>
 </dd>
 
-### -field <b>dwGlyphCount</b>
+### -field dwGlyphCount
 
 <dd>
 <p>Specifies the number of glyphs provided by this font.</p>
 </dd>
 
-### -field <b>dwRunCount</b>
+### -field dwRunCount
 
 <dd>
 <p>Specifies the number of <a href="..\prntfont\ns-prntfont--glyphrun.md">GLYPHRUN</a> structures in the array pointed to by <b>loRunOffset</b>.</p>
 </dd>
 
-### -field <b>loRunOffset</b>
+### -field loRunOffset
 
 <dd>
 <p>Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="..\prntfont\ns-prntfont--glyphrun.md">GLYPHRUN</a> structures.</p>
 </dd>
 
-### -field <b>dwCodePageCount</b>
+### -field dwCodePageCount
 
 <dd>
 <p>Specifies the number of <a href="..\prntfont\ns-prntfont--uni-codepageinfo.md">UNI_CODEPAGEINFO</a> structures in the array pointed to by <b>loCodePageOffset</b>.</p>
 </dd>
 
-### -field <b>loCodePageOffset</b>
+### -field loCodePageOffset
 
 <dd>
 <p>Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="..\prntfont\ns-prntfont--uni-codepageinfo.md">UNI_CODEPAGEINFO</a> structures.</p>
 </dd>
 
-### -field <b>loMapTableOffset</b>
+### -field loMapTableOffset
 
 <dd>
 <p>Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of a <a href="..\prntfont\ns-prntfont--maptable.md">MAPTABLE</a> structure.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Reserved for system use.</p>

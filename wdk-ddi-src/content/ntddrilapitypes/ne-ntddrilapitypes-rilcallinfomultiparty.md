@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfomultiparty.htm
 old-project: netvista
 ms.assetid: 4a343e55-9150-4411-bf37-f410b94ca0aa
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILCALLINFOMULTIPARTY {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALL_MULTIPARTY"></a><a id="ril_call_multiparty"></a><b>RIL_CALL_MULTIPARTY</b>
+### -field RIL_CALL_MULTIPARTY
 
 <dd></dd>
 
-### -field <a id="RIL_CALL_MAX"></a><a id="ril_call_max"></a><b>RIL_CALL_MAX</b>
+### -field RIL_CALL_MAX
 
 <dd></dd>
 </dl>

@@ -56,13 +56,13 @@ typedef struct _USB_COMMON_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>Specifies the entire length of the descriptor, not of this structure.</p>
 </dd>
 
-### -field <b>bDescriptorType</b>
+### -field bDescriptorType
 
 <dd>
 <p>Specifies the descriptor type code, as assigned by USB, for this descriptor.</p>

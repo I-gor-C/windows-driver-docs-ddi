@@ -55,13 +55,13 @@ NTSTATUS SetStreamChannelMute(
 ## -parameters
 <dl>
 
-### -param <i>ulChannel</i> [in]
+### -param ulChannel [in]
 
 <dd>
 <p>The channel for the audio stream.</p>
 </dd>
 
-### -param <i>bMute</i> [in]
+### -param bMute [in]
 
 <dd>
 <p>The state to which the Mute node will be set.</p>

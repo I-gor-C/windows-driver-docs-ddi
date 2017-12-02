@@ -7,7 +7,7 @@ old-location: debugger\getreturnoffset.htm
 old-project: debugger
 ms.assetid: 65d72369-7ace-4d3d-a15c-6322c0066470
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl2, GetReturnOffset, IDebugControl2::GetReturnOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetReturnOffset(
 ## -parameters
 <dl>
 
-### -param <i>Offset</i> [out]
+### -param Offset [out]
 
 <dd>
 <p>Receives the return address.</p>
@@ -62,7 +62,7 @@ HRESULT GetReturnOffset(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

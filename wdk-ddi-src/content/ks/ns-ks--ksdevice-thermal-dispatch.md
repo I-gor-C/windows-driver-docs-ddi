@@ -55,7 +55,7 @@ typedef struct _KSDEVICE_THERMAL_DISPATCH {
 ## -struct-fields
 <dl>
 
-### -field <b>ActiveCooling</b>
+### -field ActiveCooling
 
 <dd>
 <p>The active thermal callback notification. The routine is defined as follows:</p>
@@ -78,21 +78,21 @@ void
 </table></span></div>
 <dl class="indent">
 
-### -field <a id="KsDevice"></a><a id="ksdevice"></a><a id="KSDEVICE"></a><p><a id="KsDevice"></a><a id="ksdevice"></a><a id="KSDEVICE"></a><b><i>KsDevice</i></b></p>
+### -field KsDevice
 
 
 <dd>
 <p>[in] A <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> object representing the device managed by KS.</p>
 </dd>
 
-### -field <a id="Engaged"></a><a id="engaged"></a><a id="ENGAGED"></a><p><a id="Engaged"></a><a id="engaged"></a><a id="ENGAGED"></a><b><i>Engaged</i></b></p>
+### -field Engaged
 
 
 <dd>
 <p>[in] Indicates whether to engage or disengage active cooling. If <b>TRUE</b>, the driver must engage active cooling (for example, by turning the fan on). If <b>FALSE</b>, the driver must disengage active cooling (for example, by turning the fan off).</p>
 </dd>
 
-### -field <a id="DeviceThermalState"></a><a id="devicethermalstate"></a><a id="DEVICETHERMALSTATE"></a><p><a id="DeviceThermalState"></a><a id="devicethermalstate"></a><a id="DEVICETHERMALSTATE"></a><b><i>DeviceThermalState</i></b></p>
+### -field DeviceThermalState
 
 
 <dd>
@@ -101,7 +101,7 @@ void
 </dl>
 </dd>
 
-### -field <b>PassiveCooling</b>
+### -field PassiveCooling
 
 <dd>
 <p>The passive thermal callback notification.. The routine is defined as follows:</p>
@@ -124,21 +124,21 @@ void
 </table></span></div>
 <dl class="indent">
 
-### -field <a id="KsDevice"></a><a id="ksdevice"></a><a id="KSDEVICE"></a><p><a id="KsDevice"></a><a id="ksdevice"></a><a id="KSDEVICE"></a><b><i>KsDevice</i></b></p>
+### -field KsDevice
 
 
 <dd>
 <p>[in] A <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> object representing the device managed by KS.</p>
 </dd>
 
-### -field <a id="Percentage"></a><a id="percentage"></a><a id="PERCENTAGE"></a><p><a id="Percentage"></a><a id="percentage"></a><a id="PERCENTAGE"></a><b><i>Percentage</i></b></p>
+### -field Percentage
 
 
 <dd>
 <p>[in] The percentage of full performance at which the device is permitted to operate. A parameter value of 100 indicates that the device is under no cooling restrictions and can operate at full performance level. A parameter value of zero indicates that the device must operate at its lowest thermal level. A parameter value between 0 and 100 indicates the degree to which the device's performance must be throttled to reduce heat generation. This parameter value is a threshold that the device must not exceed.</p>
 </dd>
 
-### -field <a id="DeviceThermalState"></a><a id="devicethermalstate"></a><a id="DEVICETHERMALSTATE"></a><p><a id="DeviceThermalState"></a><a id="devicethermalstate"></a><a id="DEVICETHERMALSTATE"></a><b><i>DeviceThermalState</i></b></p>
+### -field DeviceThermalState
 
 
 <dd>

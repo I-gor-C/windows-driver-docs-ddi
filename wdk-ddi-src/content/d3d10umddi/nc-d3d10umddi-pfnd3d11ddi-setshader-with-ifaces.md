@@ -61,31 +61,31 @@ VOID APIENTRY CsSetShaderWithIfaces(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hShader</i> [in]
+### -param hShader [in]
 
 <dd>
 <p> A handle to the compute shader code object. </p>
 </dd>
 
-### -param <i>NumClassInstances</i> [in]
+### -param NumClassInstances [in]
 
 <dd>
 <p> The number of class instances for implementations of the interfaces. </p>
 </dd>
 
-### -param <i>pIfaces</i> [in]
+### -param pIfaces [in]
 
 <dd>
 <p> An array of function table identifiers. Each identifier corresponds to a class instance that is assigned to an interface implementation. The number of elements in the array is specified by the <i>NumClassInstances</i> parameter. </p>
 </dd>
 
-### -param <i>pPointerData</i> [in]
+### -param pPointerData [in]
 
 <dd>
 <p> An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-pointerdata.md">D3D11DDIARG_POINTERDATA</a> structures. Each structure describes the location of the data that is referenced by a class instance that is assigned to an interface implementation. The number of elements in the array is specified by the <i>NumClassInstances</i> parameter. </p>

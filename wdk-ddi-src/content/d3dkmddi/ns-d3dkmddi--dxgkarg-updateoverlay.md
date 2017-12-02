@@ -54,7 +54,7 @@ typedef struct _DXGKARG_UPDATEOVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>OverlayInfo</b>
+### -field OverlayInfo
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-overlayinfo.md">DXGK_OVERLAYINFO</a> structure that contains parameters that are required to modify the overlay.</p>

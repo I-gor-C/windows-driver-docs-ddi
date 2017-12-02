@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_device_service_supported_commands.htm
 old-project: netvista
 ms.assetid: 5F619FBF-4152-447E-B228-D4147687E929
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, *PNDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ typedef struct _NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The header with type, revision, and size information about the NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
@@ -100,13 +100,13 @@ typedef struct _NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>uStatus</b>
+### -field uStatus
 
 <dd>
 <p>The status of the device services command enumeration operation.</p>
 </dd>
 
-### -field <b>SupportedCommands</b>
+### -field SupportedCommands
 
 <dd>
 <p> A formatted WWAN_LIST_HEADER object that represents the list of command supported on a device services.</p>

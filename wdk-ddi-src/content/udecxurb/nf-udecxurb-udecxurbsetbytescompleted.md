@@ -57,13 +57,13 @@ FORCEINLINE void UdecxUrbSetBytesCompleted(
 ## -parameters
 <dl>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object that contains the <a href="..\usb\ns-usb--urb.md">URB</a> for the transfer.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The number of transferred bytes to set in the <a href="..\usb\ns-usb--urb.md">URB</a>. This value must not be greater than the transfer buffer length.</p>

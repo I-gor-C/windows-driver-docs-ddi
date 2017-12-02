@@ -61,13 +61,13 @@ typedef struct _DISK_EX_INT13_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ExBufferSize</b>
+### -field ExBufferSize
 
 <dd>
 <p>Indicates the size of the buffer that the caller provides to the BIOS in which to return the requested drive data. <b>ExBufferSize</b> must be 26 or greater. If <b>ExBufferSize</b> is less than 26, the BIOS returns an error . If <b>ExBufferSize</b> is between 30 and 66, the BIOS sets it to exactly 30 on exit. If <b>ExBufferSize</b> is 66 or greater, the BIOS sets it to exactly 66 on exit. </p>
 </dd>
 
-### -field <b>ExFlags</b>
+### -field ExFlags
 
 <dd>
 <p>Provides information about the drive. The following table describes the significance of each bit, where bit 0 is the least significant bit and bit 15 the most significant bit. A value of one in the indicated bit means that the feature described in the "Meaning" column is available. A value of zero in the indicated bit means that the feature is not available with this drive.</p>
@@ -144,37 +144,37 @@ typedef struct _DISK_EX_INT13_INFO {
 <p> </p>
 </dd>
 
-### -field <b>ExCylinders</b>
+### -field ExCylinders
 
 <dd>
 <p>Indicates the number of <i>physical </i>cylinders. This is one greater than the maximum cylinder number.</p>
 </dd>
 
-### -field <b>ExHeads</b>
+### -field ExHeads
 
 <dd>
 <p>Indicates the number of <i>physical </i>heads. This is one greater than the maximum head number. </p>
 </dd>
 
-### -field <b>ExSectorsPerTrack</b>
+### -field ExSectorsPerTrack
 
 <dd>
 <p>Indicates the number of <i>physical </i>sectors per track. This number is the same as the maximum sector number. </p>
 </dd>
 
-### -field <b>ExSectorsPerDrive</b>
+### -field ExSectorsPerDrive
 
 <dd>
 <p>Indicates the total count of sectors on the disk. This is one greater than the maximum logical block address. </p>
 </dd>
 
-### -field <b>ExSectorSize</b>
+### -field ExSectorSize
 
 <dd>
 <p>Indicates the sector size in bytes. </p>
 </dd>
 
-### -field <b>ExReserved</b>
+### -field ExReserved
 
 <dd>
 <p>Reserved. </p>

@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTSharedPrimaryLockNotification(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-sharedprimarylocknotification.md">D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION</a> structure that describes the shared primary surface that an application will lock. </p>

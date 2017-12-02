@@ -7,7 +7,7 @@ old-location: ifsk\oplock_key_context.htm
 old-project: ifsk
 ms.assetid: E6A61B8F-CB43-4858-B5CF-32DD022A569E
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: OPLOCK_KEY_CONTEXT, OPLOCK_KEY_CONTEXT, *POPLOCK_KEY_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct _OPLOCK_KEY_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The oplock key version. The version is set to one of the following values.</p>
@@ -69,7 +69,7 @@ typedef struct _OPLOCK_KEY_CONTEXT {
 <tr>
 <td width="40%"><a id="OPLOCK_KEY_VERSION_WIN7"></a><a id="oplock_key_version_win7"></a><dl>
 
-### -field <b>OPLOCK_KEY_VERSION_WIN7</b>
+### -field OPLOCK_KEY_VERSION_WIN7
 
 </dl>
 </td>
@@ -80,7 +80,7 @@ typedef struct _OPLOCK_KEY_CONTEXT {
 <tr>
 <td width="40%"><a id="OPLOCK_KEY_VERSION_WIN8"></a><a id="oplock_key_version_win8"></a><dl>
 
-### -field <b>OPLOCK_KEY_VERSION_WIN8</b>
+### -field OPLOCK_KEY_VERSION_WIN8
 
 </dl>
 </td>
@@ -92,7 +92,7 @@ typedef struct _OPLOCK_KEY_CONTEXT {
 <p> </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A set of flags that indicate the oplock key type. <b>Flags</b> is set to one or both of the following values.</p>
@@ -104,7 +104,7 @@ typedef struct _OPLOCK_KEY_CONTEXT {
 <tr>
 <td width="40%"><a id="OPLOCK_KEY_FLAG_PARENT_KEY"></a><a id="oplock_key_flag_parent_key"></a><dl>
 
-### -field <b>OPLOCK_KEY_FLAG_PARENT_KEY</b>
+### -field OPLOCK_KEY_FLAG_PARENT_KEY
 
 </dl>
 </td>
@@ -115,7 +115,7 @@ typedef struct _OPLOCK_KEY_CONTEXT {
 <tr>
 <td width="40%"><a id="OPLOCK_KEY_FLAG_TARGET_KEY"></a><a id="oplock_key_flag_target_key"></a><dl>
 
-### -field <b>OPLOCK_KEY_FLAG_TARGET_KEY</b>
+### -field OPLOCK_KEY_FLAG_TARGET_KEY
 
 </dl>
 </td>
@@ -127,13 +127,13 @@ typedef struct _OPLOCK_KEY_CONTEXT {
 <p> </p>
 </dd>
 
-### -field <b>ParentOplockKey</b>
+### -field ParentOplockKey
 
 <dd>
 <p>A <b>GUID</b>  that represents the parent oplock  key value.</p>
 </dd>
 
-### -field <b>TargetOplockKey</b>
+### -field TargetOplockKey
 
 <dd>
 <p>A <b>GUID</b>  that represents the target oplock  key value.</p>
@@ -179,4 +179,4 @@ typedef struct _OPLOCK_KEY_CONTEXT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20OPLOCK_KEY_CONTEXT structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20OPLOCK_KEY_CONTEXT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

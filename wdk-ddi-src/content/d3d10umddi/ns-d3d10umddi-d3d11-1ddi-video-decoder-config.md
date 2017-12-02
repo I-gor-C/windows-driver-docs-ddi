@@ -70,7 +70,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>guidConfigBitstreamEncryption</b>
+### -field guidConfigBitstreamEncryption
 
 <dd>
 <p>
@@ -85,7 +85,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_CONFIG {
 <tr>
 <td width="40%"><a id="pContentKey"></a><a id="pcontentkey"></a><a id="PCONTENTKEY"></a><dl>
 
-### -field <b>pContentKey</b>
+### -field pContentKey
 
 </dl>
 </td>
@@ -96,7 +96,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_CONFIG {
 <tr>
 <td width="40%"><a id="ContentKeySize"></a><a id="contentkeysize"></a><a id="CONTENTKEYSIZE"></a><dl>
 
-### -field <b>ContentKeySize</b>
+### -field ContentKeySize
 
 </dl>
 </td>
@@ -108,42 +108,42 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_CONFIG {
 <p> </p>
 </dd>
 
-### -field <b>guidConfigMBcontrolEncryption</b>
+### -field guidConfigMBcontrolEncryption
 
 <dd>
 <p>Defines the encryption protocol type for macro block control data buffers. If no encryption is applied, the value is <b>DXVA_NoEncrypt</b> (a GUID name defined in Dxva.h). If <b>ConfigBitstreamRaw</b> is 1, the value must be <b>DXVA_NoEncrypt</b>.
           </p>
 </dd>
 
-### -field <b>guidConfigResidDiffEncryption</b>
+### -field guidConfigResidDiffEncryption
 
 <dd>
 <p>Defines the encryption protocol type for residual difference decoding data buffers (buffers containing spatial-domain data or sets of transform-domain coefficients for accelerator-based inverse discrete cosine transform [IDCT]). If no encryption is applied, the value is <b>DXVA_NoEncrypt</b> (a GUID name defined in Dxva.h). If <b>ConfigBitstreamRaw</b> is 1, the value must be <b>DXVA_NoEncrypt</b>.
           </p>
 </dd>
 
-### -field <b>ConfigBitstreamRaw</b>
+### -field ConfigBitstreamRaw
 
 <dd>
 <p>Indicates whether the host-decoder sends raw bit-stream data. If the value is 1, the data for the pictures will be sent in bit-stream buffers as raw bit-stream content. If the value is 0, picture data will be sent using macroblock control command buffers. If either <b>ConfigResidDiffHost</b> or <b>ConfigResidDiffAccelerator</b> is 1, the value must be 0.
           </p>
 </dd>
 
-### -field <b>ConfigMBcontrolRasterOrder</b>
+### -field ConfigMBcontrolRasterOrder
 
 <dd>
 <p>Specifies whether macroblock control commands are in raster scan order or in arbitrary order. If the value is 1, the macroblock control commands within each macroblock control command buffer are in raster-scan order. If the value is 0, the order is arbitrary. For some types of bit streams, forcing raster order either greatly increases the number of required macroblock control buffers that must be processed, or requires host reordering of the control information. Therefore, supporting arbitrary order can be more efficient.
           </p>
 </dd>
 
-### -field <b>ConfigResidDiffHost</b>
+### -field ConfigResidDiffHost
 
 <dd>
 <p>Contains the host residual difference configuration. If the value is 1, some residual difference decoding data may be sent as blocks in the spatial domain from the host. If the value is 0, spatial domain data will not be sent.
           </p>
 </dd>
 
-### -field <b>ConfigSpatialResid8</b>
+### -field ConfigSpatialResid8
 
 <dd>
 <p>Indicates the word size used to represent residual difference spatial-domain blocks for predicted (non-intra) pictures when using host-based residual difference decoding.
@@ -177,7 +177,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_CONFIG {
           </p>
 </dd>
 
-### -field <b>ConfigResid8Subtraction</b>
+### -field ConfigResid8Subtraction
 
 <dd>
 <p>
@@ -187,7 +187,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_CONFIG {
             The ability to subtract differences rather than add them enables 8-bit difference decoding to be fully compliant with the full Â±255 range of values required in video decoder specifications, because +255 cannot be represented as the addition of two signed 8-bit numbers, but any number in the range Â±255 can be represented as the difference between two signed 8-bit numbers (+255 = +127 minus –128).</p>
 </dd>
 
-### -field <b>ConfigSpatialHost8or9Clipping</b>
+### -field ConfigSpatialHost8or9Clipping
 
 <dd>
 <p>
@@ -198,7 +198,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_CONFIG {
           </p>
 </dd>
 
-### -field <b>ConfigSpatialResidInterleaved</b>
+### -field ConfigSpatialResidInterleaved
 
 <dd>
 <p>
@@ -206,7 +206,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_CONFIG {
           </p>
 </dd>
 
-### -field <b>ConfigIntraResidUnsigned</b>
+### -field ConfigIntraResidUnsigned
 
 <dd>
 <p>
@@ -245,7 +245,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_CONFIG {
           </p>
 </dd>
 
-### -field <b>ConfigResidDiffAccelerator</b>
+### -field ConfigResidDiffAccelerator
 
 <dd>
 <p>
@@ -256,7 +256,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_CONFIG {
           </p>
 </dd>
 
-### -field <b>ConfigHostInverseScan</b>
+### -field ConfigHostInverseScan
 
 <dd>
 <p>
@@ -267,7 +267,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_CONFIG {
           </p>
 </dd>
 
-### -field <b>ConfigSpecificIDCT</b>
+### -field ConfigSpecificIDCT
 
 <dd>
 <p>
@@ -281,7 +281,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_CONFIG {
           </p>
 </dd>
 
-### -field <b>Config4GroupedCoefs</b>
+### -field Config4GroupedCoefs
 
 <dd>
 <p>
@@ -289,7 +289,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_CONFIG {
           </p>
 </dd>
 
-### -field <b>ConfigMinRenderTargetBuffCount</b>
+### -field ConfigMinRenderTargetBuffCount
 
 <dd>
 <p>
@@ -297,7 +297,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_CONFIG {
           </p>
 </dd>
 
-### -field <b>ConfigDecoderSpecific</b>
+### -field ConfigDecoderSpecific
 
 <dd>
 <p>

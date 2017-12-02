@@ -60,39 +60,39 @@ typedef struct _PCEVENT_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>MajorTarget</b>
+### -field MajorTarget
 
 <dd>
 <p>
 <a href="com.iunknown">IUnknown</a> pointer to the main miniport object. This member contains the <i>UnknownMiniport</i> pointer that the adapter driver previously passed to the <a href="audio.iport_init">IPort::Init</a> method.</p>
 </dd>
 
-### -field <b>MinorTarget</b>
+### -field MinorTarget
 
 <dd>
 <p>
 <a href="com.iunknown">IUnknown</a> pointer to a stream object that is associated with the <i>MajorTarget</i> miniport object. This member contains the stream-object pointer that the port driver previously retrieved from the IMiniport<i>Xxx</i>::NewStream method (for example, the <a href="audio.iminiportwavecyclic_newstream">IMiniportWaveCyclic::NewStream</a> method's <i>Stream</i> parameter).</p>
 </dd>
 
-### -field <b>Node</b>
+### -field Node
 
 <dd>
 <p>Specifies a node ID. This member identifies the target node for the request. If the target is not a node, this member is set to ULONG(-1).</p>
 </dd>
 
-### -field <b>EventItem</b>
+### -field EventItem
 
 <dd>
 <p>Pointer to the <a href="audio.pcevent_item">PCEVENT_ITEM</a> structure for this request</p>
 </dd>
 
-### -field <b>EventEntry</b>
+### -field EventEntry
 
 <dd>
 <p>Pointer to the <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a> structure for this request</p>
 </dd>
 
-### -field <b>Verb</b>
+### -field Verb
 
 <dd>
 <p>Specifies the type of event request. This member should be set to one of the values in the following table.</p>
@@ -137,10 +137,10 @@ typedef struct _PCEVENT_REQUEST {
 <p> </p>
 </dd>
 
-### -field <b>Irp</b>
+### -field Irp
 
 <dd>
-<p>Pointer to the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> containing the event request</p>
+<p>Pointer to the <a href="..\wdm\ns-wdm--irp.md">IRP</a> containing the event request</p>
 </dd>
 </dl>
 

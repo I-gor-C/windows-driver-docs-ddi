@@ -59,7 +59,7 @@ typedef struct _DATA_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSignature</b>
+### -field dwSignature
 
 <dd>
 <p>Specifies the signature value identifying the type of data in the data section. Valid signature values are listed in the following table.</p>
@@ -112,13 +112,13 @@ typedef struct _DATA_HEADER {
 <p> </p>
 </dd>
 
-### -field <b>wSize</b>
+### -field wSize
 
 <dd>
 <p>Specifies the size, in bytes, of the DATA_HEADER structure.</p>
 </dd>
 
-### -field <b>wDataID</b>
+### -field wDataID
 
 <dd>
 <p>If the data section contains font metrics data, this value must be a unique font identifier. For fonts that are permanently downloaded by the font installer, this value should be the downloaded font's identifier.</p>
@@ -126,13 +126,13 @@ typedef struct _DATA_HEADER {
 <p>If the data section contains variable data, this value must be zero.</p>
 </dd>
 
-### -field <b>dwDataSize</b>
+### -field dwDataSize
 
 <dd>
 <p>Specifies the size, in bytes, of all the information represented by this DATA_HEADER structure. For example, if <b>dwSignature</b> is DATA_UFM_SIG, this value represents the size, in bytes, of the font's <a href="..\prntfont\ns-prntfont--unifm-hdr.md">UNIFM_HDR</a> structure and all associated structures. The size value does not include any byte padding required to align the next DATA_HEADER structure to a DWORD.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Not used. Must be set to zero.</p>

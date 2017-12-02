@@ -54,7 +54,7 @@ typedef struct _DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>ulSRMVersion</b>
+### -field ulSRMVersion
 
 <dd>
 <p>The version number of an HDCP SRM. The least significant bits (bits 0 through 15) contain the SRM's version number in little-endian format. The SRM's version number is stored in the SRM's SRM version field in little-endian format. For more information about the SRM's SRM version field, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=38728">HDCP Specification Revision 1.1</a>. </p>

@@ -58,25 +58,25 @@ typedef enum _PO_FX_PERF_STATE_UNIT {
 ## -enum-fields
 <dl>
 
-### -field <a id="PoFxPerfStateUnitOther"></a><a id="pofxperfstateunitother"></a><a id="POFXPERFSTATEUNITOTHER"></a><b>PoFxPerfStateUnitOther</b>
+### -field PoFxPerfStateUnitOther
 
 <dd>
 <p>Indicates that the performance states control a unit other than frequency or bandwidth.</p>
 </dd>
 
-### -field <a id="PoFxPerfStateUnitFrequency"></a><a id="pofxperfstateunitfrequency"></a><a id="POFXPERFSTATEUNITFREQUENCY"></a><b>PoFxPerfStateUnitFrequency</b>
+### -field PoFxPerfStateUnitFrequency
 
 <dd>
 <p>Indicates that the performance states control frequency, measured in Hz.</p>
 </dd>
 
-### -field <a id="PoFxPerfStateUnitBandwidth"></a><a id="pofxperfstateunitbandwidth"></a><a id="POFXPERFSTATEUNITBANDWIDTH"></a><b>PoFxPerfStateUnitBandwidth</b>
+### -field PoFxPerfStateUnitBandwidth
 
 <dd>
 <p>Indicates that the performance states control bandwidth, measured in bits per second.</p>
 </dd>
 
-### -field <a id="PoFxPerfStateUnitMaximum"></a><a id="pofxperfstateunitmaximum"></a><a id="POFXPERFSTATEUNITMAXIMUM"></a><b>PoFxPerfStateUnitMaximum</b>
+### -field PoFxPerfStateUnitMaximum
 
 <dd>
 <p>This value is reserved for system use.</p>

@@ -64,43 +64,43 @@ typedef struct _D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE {
 ## -struct-fields
 <dl>
 
-### -field <b>Write</b>
+### -field Write
 
 <dd>
 <p>The pages will be allowed read-write access.</p>
 </dd>
 
-### -field <b>Execute</b>
+### -field Execute
 
 <dd>
 <p>The pages will be allowed execute access.</p>
 </dd>
 
-### -field <b>Zero</b>
+### -field Zero
 
 <dd>
 <p>The pages will be put to the <i>zero</i> state.</p>
 </dd>
 
-### -field <b>NoAccess</b>
+### -field NoAccess
 
 <dd>
 <p>The pages will be put to the <i>invalid</i> state.</p>
 </dd>
 
-### -field <b>SystemUseOnly</b>
+### -field SystemUseOnly
 
 <dd>
 <p>This member is for system use only and should not be set by the user mode driver.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The consolidated value of the structure's members.</p>

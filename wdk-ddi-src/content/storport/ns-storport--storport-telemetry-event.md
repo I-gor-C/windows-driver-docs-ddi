@@ -79,139 +79,139 @@ typedef struct _STORPORT_TELEMETRY_EVENT {
 ## -struct-fields
 <dl>
 
-### -field <b>DriverVersion</b>
+### -field DriverVersion
 
 <dd>
 <p>Miniport driver version.</p>
 </dd>
 
-### -field <b>EventId</b>
+### -field EventId
 
 <dd>
 <p>A miniport defined identifier for the telemetry event.</p>
 </dd>
 
-### -field <b>EventName</b>
+### -field EventName
 
 <dd>
 <p>A miniport defined name for the telemetry event, which has the maximum length of <b>EVENT_NAME_MAX_LENGTH</b>.</p>
 </dd>
 
-### -field <b>EventVersion</b>
+### -field EventVersion
 
 <dd>
 <p>A miniport defined version for the telemetry event.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>EventBufferLength</b>
+### -field EventBufferLength
 
 <dd>
 <p>The length of <b>EventBuffer</b>, which should be not larger than <b>EVENT_BUFFER_MAX_LENGTH</b> that is 4KB.</p>
 </dd>
 
-### -field <b>EventBuffer</b>
+### -field EventBuffer
 
 <dd>
 <p>A miniport defined telemetry payload, the length of which is <b>EventBufferLength</b>.</p>
 </dd>
 
-### -field <b>ParameterName0</b>
+### -field ParameterName0
 
 <dd>
 <p>A description of the of the meaning of ParameterValue0. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.</p>
 </dd>
 
-### -field <b>ParameterValue0</b>
+### -field ParameterValue0
 
 <dd>
 <p>The value for parameter 0.</p>
 </dd>
 
-### -field <b>ParameterName1</b>
+### -field ParameterName1
 
 <dd>
 <p>A description of the of the meaning of ParameterValue1. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.</p>
 </dd>
 
-### -field <b>ParameterValue1</b>
+### -field ParameterValue1
 
 <dd>
 <p>The value for parameter 1.</p>
 </dd>
 
-### -field <b>ParameterName2</b>
+### -field ParameterName2
 
 <dd>
 <p>A description of the of the meaning of ParameterValue2. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.</p>
 </dd>
 
-### -field <b>ParameterValue2</b>
+### -field ParameterValue2
 
 <dd>
 <p>The value for parameter 2.</p>
 </dd>
 
-### -field <b>ParameterName3</b>
+### -field ParameterName3
 
 <dd>
 <p>A description of the of the meaning of ParameterValue3. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.</p>
 </dd>
 
-### -field <b>ParameterValue3</b>
+### -field ParameterValue3
 
 <dd>
 <p>The value for parameter 3.</p>
 </dd>
 
-### -field <b>ParameterName4</b>
+### -field ParameterName4
 
 <dd>
 <p>A description of the of the meaning of ParameterValue4. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.</p>
 </dd>
 
-### -field <b>ParameterValue4</b>
+### -field ParameterValue4
 
 <dd>
 <p>The value for parameter 4.</p>
 </dd>
 
-### -field <b>ParameterName5</b>
+### -field ParameterName5
 
 <dd>
 <p>A description of the of the meaning of ParameterValue5. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.</p>
 </dd>
 
-### -field <b>ParameterValue5</b>
+### -field ParameterValue5
 
 <dd>
 <p>The value for parameter 5.</p>
 </dd>
 
-### -field <b>ParameterName6</b>
+### -field ParameterName6
 
 <dd>
 <p>A description of the of the meaning of ParameterValue6. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.</p>
 </dd>
 
-### -field <b>ParameterValue6</b>
+### -field ParameterValue6
 
 <dd>
 <p>The value for parameter 6.</p>
 </dd>
 
-### -field <b>ParameterName7</b>
+### -field ParameterName7
 
 <dd>
 <p>A description of the of the meaning of ParameterValue7. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.</p>
 </dd>
 
-### -field <b>ParameterValue7</b>
+### -field ParameterValue7
 
 <dd>
 <p>The value for parameter 7.</p>

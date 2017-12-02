@@ -56,13 +56,13 @@ VOID IoAdjustPagingPathCount(
 ## -parameters
 <dl>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>Pointer to a caller-supplied variable that contains a counter. A driver typically stores a page-file counter in the device extension for the device.</p>
 </dd>
 
-### -param <i>Increment</i> [in]
+### -param Increment [in]
 
 <dd>
 <p>Specifies whether the counter is to be incremented or decremented. A value of <b>TRUE</b> specifies an increment operation.</p>

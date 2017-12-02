@@ -7,7 +7,7 @@ old-location: parports\pnegotiate_ieee_mode.htm
 old-project: parports
 ms.assetid: 2cf3564e-10aa-49bb-9b94-abd987870196
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/30/2017
 ms.keywords: RegisterOpRegionHandler
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef NTSTATUS  ( *PNEGOTIATE_IEEE_MODE)(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to the device extension of a parallel device's physical device object (<a href="wdkgloss.p#wdkgloss.pdo#wdkgloss.pdo"><i>PDO</i></a>).</p>
 </dd>
 
-### -param <i>ModeMaskFwd</i> [in]
+### -param ModeMaskFwd [in]
 
 <dd>
 <p>Specifies the forward protocols. <i>ModeMaskFwd</i> is a bitwise OR of the constants that represent the protocols that the parallel port bus driver supports. For the forward and reverse protocol values, see the protocol constants defined in <i>ntddpar.h</i> (from NONE to ECP_ANY).</p>
 </dd>
 
-### -param <i>ModeMaskRev</i> [in]
+### -param ModeMaskRev [in]
 
 <dd>
 <p>Specifies the reverse protocols. <i>ModeMaskRev </i>is a bitwise OR of the constants that represent the protocols that the parallel port bus driver supports.</p>
 </dd>
 
-### -param <i>ModeSafety</i> [in]
+### -param ModeSafety [in]
 
 <dd>
 <p>Specifies the safety mode. Must be set to the SAFE_MODE enumeration value of the PARALLEL_SAFETY enumeration type:</p>
@@ -86,7 +86,7 @@ typedef NTSTATUS  ( *PNEGOTIATE_IEEE_MODE)(
 } PARALLEL_SAFETY;</code></pre>
 </dd>
 
-### -param <i>IsForward</i> [in]
+### -param IsForward [in]
 
 <dd>
 <p>Specifies whether to connect the forward or the reverse protocol that the routine negotiates. If <i>IsForward</i> is <b>TRUE</b>, the forward protocol is connected. Otherwise, the reverse protocol is connected.</p>
@@ -159,4 +159,4 @@ typedef NTSTATUS  ( *PNEGOTIATE_IEEE_MODE)(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PNEGOTIATE_IEEE_MODE function pointer%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PNEGOTIATE_IEEE_MODE function pointer%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

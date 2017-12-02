@@ -7,7 +7,7 @@ old-location: wdf\wdfusbtargetpipeformatrequestforread.htm
 old-project: wdf
 ms.assetid: 33a6f597-2f33-4214-80c1-8bded182800a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfUsbTargetPipeFormatRequestForRead
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ NTSTATUS WdfUsbTargetPipeFormatRequestForRead(
 ## -parameters
 <dl>
 
-### -param <i>Pipe</i> [in]
+### -param Pipe [in]
 
 <dd>
 <p>A handle to a framework pipe object that was obtained by calling <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>. </p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>ReadMemory</i> [in, optional]
+### -param ReadMemory [in, optional]
 
 <dd>
 <p>A handle to a framework memory object. This object represents a buffer that will receive data from the pipe. The buffer size must be a multiple of the pipe's maximum packet size unless the driver has called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipesetnomaximumpacketsizecheck.md">WdfUsbTargetPipeSetNoMaximumPacketSizeCheck</a>. For more information about this buffer, see the following Remarks section.</p>
 </dd>
 
-### -param <i>ReadOffset</i> [in, optional]
+### -param ReadOffset [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wudfddi_types\ns-wudfddi-types--wdfmemory-offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address and length, within the read buffer, for the data transfer. If this pointer is <b>NULL</b>, the data transfer begins at the beginning of the buffer, and the transfer size is the buffer size.</p>
@@ -97,7 +97,7 @@ NTSTATUS WdfUsbTargetPipeFormatRequestForRead(
 <dt><b>STATUS_INVALID_BUFFER_SIZE</b></dt>
 </dl><p>The buffer size was not a multiple of the pipe's maximum packet size. The buffer size must be a multiple of the pipe's maximum packet size unless the driver has called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipesetnomaximumpacketsizecheck.md">WdfUsbTargetPipeSetNoMaximumPacketSizeCheck</a>.</p><dl>
 <dt><b>STATUS_REQUEST_NOT_ACCEPTED</b></dt>
-</dl><p>The I/O request packet (<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>) that the <i>Request</i> parameter represents does not provide enough <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> structures to allow the driver to forward the request.</p>
+</dl><p>The I/O request packet (<a href="..\wdm\ns-wdm--irp.md">IRP</a>) that the <i>Request</i> parameter represents does not provide enough <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> structures to allow the driver to forward the request.</p>
 
 <p> </p>
 
@@ -240,4 +240,4 @@ NTSTATUS WdfUsbTargetPipeFormatRequestForRead(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetPipeFormatRequestForRead method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetPipeFormatRequestForRead method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

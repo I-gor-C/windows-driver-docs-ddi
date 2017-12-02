@@ -55,13 +55,13 @@ void KsPinRegisterFrameReturnCallback(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the AVStream <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure that you want to place into injection mode by registering a frame return callback.</p>
 </dd>
 
-### -param <i>FrameReturn</i> [in]
+### -param FrameReturn [in]
 
 <dd>
 <p>This parameter supplies the address of a minidriver-provided <a href="stream.avstrminiframereturn">AVStrMiniFrameReturn</a> routine.</p>
@@ -74,7 +74,7 @@ void KsPinRegisterFrameReturnCallback(
 ## -remarks
 <p>If a pin has registered a frame return callback before transitioning from <b>KSSTATE_STOP</b> to KSSTATE_ACQUIRE, the pin is placed into injection mode. This indicates that the pin will not receive buffers and fill them, but rather manually inject data frames into the circuit using <b>KsPinSubmitFrame </b>or <b>KsPinSubmitFrameMdl</b>. When the data frame completes its travel around the circuit and returns to the pin on which it was submitted, AVStream recycles it by calling <a href="stream.avstrminiframereturn">AVStrMiniFrameReturn</a>.</p>
 
-<p>Minidrivers that call this function are directly responsible for injecting frames into the circuit; they do not receive buffers to fill and do not directly interact with the queue as do most minidrivers. Also note that the frame return callback should be registered before the kernel pipe section is created. The kernel pipe section is created when the pin transitions to KSSTATE_ACQUIRE. For more information, see <a href="NULL">Frame Injection</a>.</p>
+<p>Minidrivers that call this function are directly responsible for injecting frames into the circuit; they do not receive buffers to fill and do not directly interact with the queue as do most minidrivers. Also note that the frame return callback should be registered before the kernel pipe section is created. The kernel pipe section is created when the pin transitions to KSSTATE_ACQUIRE. For more information, see <a href="https://msdn.microsoft.com/cdfb1763-92a8-4a60-8f49-2af34a8beca5">Frame Injection</a>.</p>
 
 ## -requirements
 <table>

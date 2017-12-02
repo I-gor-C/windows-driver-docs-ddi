@@ -7,7 +7,7 @@ old-location: netvista\rildisplayinfoparammask_2.htm
 old-project: netvista
 ms.assetid: d8bd093d-ad95-488e-a057-b96fecf58bbb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef enum _RILDISPLAYINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_DISPLAY_TYPE"></a><a id="ril_param_display_type"></a><b>RIL_PARAM_DISPLAY_TYPE</b>
+### -field RIL_PARAM_DISPLAY_TYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_DISPLAY_TAG"></a><a id="ril_param_display_tag"></a><b>RIL_PARAM_DISPLAY_TAG</b>
+### -field RIL_PARAM_DISPLAY_TAG
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_DISPLAY_MESSAGESIZE"></a><a id="ril_param_display_messagesize"></a><b>RIL_PARAM_DISPLAY_MESSAGESIZE</b>
+### -field RIL_PARAM_DISPLAY_MESSAGESIZE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_DISPLAY_MESSAGE"></a><a id="ril_param_display_message"></a><b>RIL_PARAM_DISPLAY_MESSAGE</b>
+### -field RIL_PARAM_DISPLAY_MESSAGE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_DISPLAY_ALL"></a><a id="ril_param_display_all"></a><b>RIL_PARAM_DISPLAY_ALL</b>
+### -field RIL_PARAM_DISPLAY_ALL
 
 <dd></dd>
 </dl>

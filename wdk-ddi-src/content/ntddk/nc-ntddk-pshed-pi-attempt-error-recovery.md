@@ -59,19 +59,19 @@ NTSTATUS AttemptRecovery(
 ## -parameters
 <dl>
 
-### -param <i>PluginContext</i> [in, out, optional]
+### -param PluginContext [in, out, optional]
 
 <dd>
 <p>A pointer to the context area that was specified in the <b>Context</b> member of the <a href="..\ntddk\ns-ntddk--whea-pshed-plugin-registration-packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure when the PSHED plug-in called the <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a> function to register itself with the PSHED.</p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>The size, in bytes, of the error record that is pointed to by the <i>ErrorRecord</i> parameter.</p>
 </dd>
 
-### -param <i>ErrorRecord</i> [in]
+### -param ErrorRecord [in]
 
 <dd>
 <p>A pointer to a <a href="..\ntddk\ns-ntddk--whea-error-record.md">WHEA_ERROR_RECORD</a> structure that describes an error record for a recoverable hardware error.</p>

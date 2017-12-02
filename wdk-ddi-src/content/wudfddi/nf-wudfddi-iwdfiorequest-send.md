@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest_send.htm
 old-project: wdf
 ms.assetid: f916b414-9cd9-4745-a021-07c810d0d68b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFIoRequest, Send, IWDFIoRequest::Send
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ HRESULT Send(
 ## -parameters
 <dl>
 
-### -param <i>pIoTarget</i> [in]
+### -param pIoTarget [in]
 
 <dd>
 <p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a> interface for the I/O target object, which typically represents a lower driver in the stack. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A valid bitwise OR of <a href="..\wudfddi_types\ne-wudfddi-types--wdf-request-send-options-flags.md">WDF_REQUEST_SEND_OPTIONS_FLAGS</a>-typed flags.</p>
 </dd>
 
-### -param <i>Timeout</i> [in]
+### -param Timeout [in]
 
 <dd>
 <p>The amount of time, in system time units (100-nanosecond intervals), that can elapse before the framework automatically cancels the I/O request.</p>
@@ -175,4 +175,4 @@ HRESULT Send(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::Send method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::Send method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -55,7 +55,7 @@ NTSTATUS KeRestoreFloatingPointState(
 ## -parameters
 <dl>
 
-### -param <i>FloatSave</i> [in]
+### -param FloatSave [in]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554233">KFLOATING_SAVE</a> structure that was passed in the preceding call to <a href="..\wdm\nf-wdm-kesavefloatingpointstate.md">KeSaveFloatingPointState</a>.</p>

@@ -55,7 +55,7 @@ LONG KeResetEvent(
 ## -parameters
 <dl>
 
-### -param <i>Event</i> [in, out]
+### -param Event [in, out]
 
 <dd>
 <p>A pointer to an initialized dispatcher object of type event for which the caller provides the storage. </p>

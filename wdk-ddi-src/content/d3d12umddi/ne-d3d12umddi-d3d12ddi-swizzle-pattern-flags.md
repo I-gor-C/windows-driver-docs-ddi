@@ -55,13 +55,13 @@ typedef enum D3D12DDI_SWIZZLE_PATTERN_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_SWIZZLE_PATTERN_FLAGS_NONE"></a><a id="d3d12ddi_swizzle_pattern_flags_none"></a><b>D3D12DDI_SWIZZLE_PATTERN_FLAGS_NONE</b>
+### -field D3D12DDI_SWIZZLE_PATTERN_FLAGS_NONE
 
 <dd>
 <p>No flag value.</p>
 </dd>
 
-### -field <a id="D3D12DDI_SWIZZLE_PATTERN_FLAGS_STACK_DEPTH_SLICES"></a><a id="d3d12ddi_swizzle_pattern_flags_stack_depth_slices"></a><b>D3D12DDI_SWIZZLE_PATTERN_FLAGS_STACK_DEPTH_SLICES</b>
+### -field D3D12DDI_SWIZZLE_PATTERN_FLAGS_STACK_DEPTH_SLICES
 
 <dd>
 <p>Depth slices are treated as being stacked vertically prior to swizzling.</p>

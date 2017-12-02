@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>Stores information about the  pin assignment of the DisplayPort alternate mode that was configured. This structure is used in the 
-             <a href="buses.ioctl_ucmtcpci_port_controller_displayport_configured">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_CONFIGURED</a>  request. </p>
+             <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl-ucmtcpci-port-controller-displayport-configured.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_CONFIGURED</a>  request. </p>
 
 
 ## -syntax
@@ -57,16 +57,16 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_CONFIGURED_IN_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>PortControllerObject</b>
+### -field PortControllerObject
 
 <dd>
-<p>Handle to the port controller object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.</p>
+<p>Handle to the port controller object that the client driver received in the previous call to <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>.</p>
 </dd>
 
-### -field <b>PinAssignment</b>
+### -field PinAssignment
 
 <dd>
-<p>A <a href="buses.ucmtcpci_port_controller_displayport_pin_assignment">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_PIN_ASSIGNMENT</a>-type value that indicates the pin that was configured.</p>
+<p>A <a href="..\ucmtcpciportcontrollerrequests\ne-ucmtcpciportcontrollerrequests--ucmtcpci-port-controller-displayport-pin-assignment.md">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_PIN_ASSIGNMENT</a>-type value that indicates the pin that was configured.</p>
 </dd>
 </dl>
 
@@ -90,7 +90,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_CONFIGURED_IN_PARAMS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ioctl_ucmtcpci_port_controller_displayport_configured">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_CONFIGURED</a>
+<a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl-ucmtcpci-port-controller-displayport-configured.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_CONFIGURED</a>
 </dt>
 </dl>
 <p> </p>

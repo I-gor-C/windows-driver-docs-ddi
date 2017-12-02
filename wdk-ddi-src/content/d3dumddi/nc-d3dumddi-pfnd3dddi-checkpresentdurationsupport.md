@@ -58,13 +58,13 @@ _Check_return_ HRESULT* CheckPresentDurationSupport(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pPresentDurationSupport</i> [in]
+### -param pPresentDurationSupport [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-checkpresentdurationsupport.md">D3DDDIARG_CHECKPRESENTDURATIONSUPPORT</a> structure that contains info on hardware device support for seamlessly switching to a new monitor refresh rate.</p>

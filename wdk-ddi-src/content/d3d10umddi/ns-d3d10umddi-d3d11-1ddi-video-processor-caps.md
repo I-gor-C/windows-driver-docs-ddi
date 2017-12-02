@@ -62,55 +62,55 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceCaps</b>
+### -field DeviceCaps
 
 <dd>
 <p>A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-device-caps.md">D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS</a> enumeration.</p>
 </dd>
 
-### -field <b>FeatureCaps</b>
+### -field FeatureCaps
 
 <dd>
 <p>A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-feature-caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS</a> enumeration.</p>
 </dd>
 
-### -field <b>FilterCaps</b>
+### -field FilterCaps
 
 <dd>
 <p>A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-filter-caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS</a> enumeration.</p>
 </dd>
 
-### -field <b>InputFormatCaps</b>
+### -field InputFormatCaps
 
 <dd>
 <p>A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-format-caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS</a> enumeration.</p>
 </dd>
 
-### -field <b>AutoStreamCaps</b>
+### -field AutoStreamCaps
 
 <dd>
 <p>A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-auto-stream-caps.md">D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS</a> enumeration.</p>
 </dd>
 
-### -field <b>StereoCaps</b>
+### -field StereoCaps
 
 <dd>
 <p>A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-stereo-caps.md">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS</a> enumeration.</p>
 </dd>
 
-### -field <b>RateConversionCapsCount</b>
+### -field RateConversionCapsCount
 
 <dd>
 <p>The number of frame-rate conversion capabilities. To enumerate the frame-rate conversion capabilities, call the <a href="display.getvideoprocessorrateconversioncaps">GetVideoProcessorRateConversionCaps</a> function.</p>
 </dd>
 
-### -field <b>MaxInputStreams</b>
+### -field MaxInputStreams
 
 <dd>
 <p>The maximum number of input streams that can be enabled at the same time.</p>
 </dd>
 
-### -field <b>MaxStreamStates</b>
+### -field MaxStreamStates
 
 <dd>
 <p>The maximum number of input streams for which the device can store state data.</p>

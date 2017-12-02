@@ -7,7 +7,7 @@ old-location: netvista\riltonesignalinfo_v1_2.htm
 old-project: netvista
 ms.assetid: c6685a19-73d3-4725-90b8-7c859791381a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILTONESIGNALINFO_V1, RILTONESIGNALINFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef struct _RILTONESIGNALINFO_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwGPPTone</b>
+### -field dwGPPTone
 
 <dd></dd>
 
-### -field <b>dwGPP2Tone</b>
+### -field dwGPP2Tone
 
 <dd></dd>
 
-### -field <b>dwGPP2IsdnAlerting</b>
+### -field dwGPP2IsdnAlerting
 
 <dd></dd>
 </dl>

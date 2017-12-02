@@ -62,55 +62,55 @@ typedef struct _STORAGE_WRITE_CACHE_PROPERTY {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of the write cache property.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of the STORAGE_WRITE_CACHE_PROPERTY structure.</p>
 </dd>
 
-### -field <b>WriteCacheType</b>
+### -field WriteCacheType
 
 <dd>
 <p>A <a href="storage.write_cache_type">WRITE_CACHE_TYPE</a>-typed value that indicates the current write cache type</p>
 </dd>
 
-### -field <b>WriteCacheEnabled</b>
+### -field WriteCacheEnabled
 
 <dd>
 <p>A <a href="storage.write_cache_enable">WRITE_CACHE_ENABLE</a>-typed value that indicates whether the write cache is enabled.</p>
 </dd>
 
-### -field <b>WriteCacheChangeable</b>
+### -field WriteCacheChangeable
 
 <dd>
 <p>A <a href="storage.write_cache_change">WRITE_CACHE_CHANGE</a>-typed value that indicates whether if the host can change the write cache characteristics.</p>
 </dd>
 
-### -field <b>WriteThroughSupported</b>
+### -field WriteThroughSupported
 
 <dd>
 <p>A <a href="storage.write_through">WRITE_THROUGH</a>-typed value that indicates whether the device supports write-through caching.</p>
 </dd>
 
-### -field <b>FlushCacheSupported</b>
+### -field FlushCacheSupported
 
 <dd>
 <p>A Boolean value that indicates whether the device allows host software to flush the device cache. If <b>TRUE</b>, the device allows host software to flush the device cache. If <b>FALSE</b>, host software cannot flush the device cache.</p>
 </dd>
 
-### -field <b>UserDefinedPowerProtection</b>
+### -field UserDefinedPowerProtection
 
 <dd>
 <p>A Boolean value that indicates whether a user can configure the device's power protection characteristics in the registry. If <b>TRUE</b>, a user can configure the device's power protection characteristics in the registry. If <b>FALSE</b>, the user cannot configure the device's power protection characteristics in the registry.</p>
 </dd>
 
-### -field <b>NVCacheEnabled</b>
+### -field NVCacheEnabled
 
 <dd>
 <p>A Boolean value that indicates whether the device has a battery backup for the write cache. If <b>TRUE</b>, the device has a battery backup for the write cache. If <b>FALSE</b>, the device does not have a battery backup for the writer cache.</p>

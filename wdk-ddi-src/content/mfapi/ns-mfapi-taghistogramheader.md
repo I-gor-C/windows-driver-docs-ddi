@@ -58,31 +58,31 @@ typedef struct tagHistogramHeader {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of this header + (<a href="stream.histogramdataheader">HistogramDataHeader</a> + histogram data following) * number of channels available.</p>
 </dd>
 
-### -field <b>Bins</b>
+### -field Bins
 
 <dd>
 <p>Number of bins in the histogram.</p>
 </dd>
 
-### -field <b>FourCC</b>
+### -field FourCC
 
 <dd>
 <p>Color space that the histogram is collected from</p>
 </dd>
 
-### -field <b>ChannelMasks</b>
+### -field ChannelMasks
 
 <dd>
 <p>Masks of the color channels that the histogram is collected for.</p>
 </dd>
 
-### -field <b>Grid</b>
+### -field Grid
 
 <dd>
 <p>Grid that the histogram is collected from.</p>

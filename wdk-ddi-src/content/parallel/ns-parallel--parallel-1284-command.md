@@ -7,7 +7,7 @@ old-location: parports\parallel_1284_command.htm
 old-project: parports
 ms.assetid: 5b46253c-c111-4675-898e-78b81ecbddb8
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/30/2017
 ms.keywords: PARALLEL_1284_COMMAND, PARALLEL_1284_COMMAND, *PPARALLEL_1284_COMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,32 +56,32 @@ typedef struct _PARALLEL_1284_COMMAND {
 ## -struct-fields
 <dl>
 
-### -field <b>ID</b>
+### -field ID
 
 <dd>
 <p>Specifies the IEEE 1284.3 device ID.</p>
 </dd>
 
-### -field <b>Port</b>
+### -field Port
 
 <dd>
 <p>Reserved (set to zero).</p>
 </dd>
 
-### -field <b>CommandFlags</b>
+### -field CommandFlags
 
 <dd>
 <p>Specifies a bitwise OR of zero or more of the following flags:</p>
 <p></p>
 <dl>
 
-### -field <a id="PAR_END_OF_CHAIN_DEVICE"></a><a id="par_end_of_chain_device"></a>PAR_END_OF_CHAIN_DEVICE
+### -field PAR_END_OF_CHAIN_DEVICE
 
 <dd>
 <p>Specifies an end-of-chain device.</p>
 </dd>
 
-### -field <a id="PAR_HAVE_PORT_KEEP_PORT"></a><a id="par_have_port_keep_port"></a>PAR_HAVE_PORT_KEEP_PORT
+### -field PAR_HAVE_PORT_KEEP_PORT
 
 <dd>
 <p>Specifies that the client has the parallel port allocated, and makes a request to keep the port allocated.</p>
@@ -126,4 +126,4 @@ typedef struct _PARALLEL_1284_COMMAND {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PARALLEL_1284_COMMAND structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PARALLEL_1284_COMMAND structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

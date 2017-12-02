@@ -58,25 +58,25 @@ BOOLEAN ExDeleteTimer(
 ## -parameters
 <dl>
 
-### -param <i>Timer</i> [in]
+### -param Timer [in]
 
 <dd>
 <p>A pointer to an <a href="kernel.ex_timer">EX_TIMER</a> structure. This structure is a timer object that was previously allocated by the <a href="..\wdm\nf-wdm-exallocatetimer.md">ExAllocateTimer</a> routine.</p>
 </dd>
 
-### -param <i>Cancel</i> [in]
+### -param Cancel [in]
 
 <dd>
 <p>Whether to cancel the timer if it is currently set. If <b>TRUE</b>, the routine cancels the timer if the timer is set. If <b>FALSE</b>, the routine does not cancel the timer if it is set. If the caller sets <i>Wait</i> to <b>TRUE</b>, <i>Cancel</i> must also be <b>TRUE</b>; otherwise, a bug check occurs.</p>
 </dd>
 
-### -param <i>Wait</i> [in]
+### -param Wait [in]
 
 <dd>
 <p>Whether to wait for the timer to finish expiring if the timer has already started the process of expiring. If <b>TRUE</b>, the routine waits for the timer to expire. If <b>FALSE</b>, the routine does not wait. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>Parameters</i> [in]
+### -param Parameters [in]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--ext-delete-parameters.md">EXT_DELETE_PARAMETERS</a> structure. The calling driver previously called the <a href="..\wdm\nf-wdm-exinitializedeletetimerparameters.md">ExInitializeDeleteTimerParameters</a> routine to initialize this structure.</p>

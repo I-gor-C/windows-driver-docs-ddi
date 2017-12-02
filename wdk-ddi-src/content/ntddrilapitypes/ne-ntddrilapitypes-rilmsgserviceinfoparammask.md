@@ -7,7 +7,7 @@ old-location: netvista\rilmsgserviceinfoparammask.htm
 old-project: netvista
 ms.assetid: 9314909a-4580-49f9-b587-4d5e70ff0d4f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILMSGSERVICEINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_MSI_STOREUSED"></a><a id="ril_param_msi_storeused"></a><b>RIL_PARAM_MSI_STOREUSED</b>
+### -field RIL_PARAM_MSI_STOREUSED
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MSI_STORETOTAL"></a><a id="ril_param_msi_storetotal"></a><b>RIL_PARAM_MSI_STORETOTAL</b>
+### -field RIL_PARAM_MSI_STORETOTAL
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_MSI_ALL"></a><a id="ril_param_msi_all"></a><b>RIL_PARAM_MSI_ALL</b>
+### -field RIL_PARAM_MSI_ALL
 
 <dd></dd>
 </dl>

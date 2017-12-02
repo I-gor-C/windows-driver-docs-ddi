@@ -58,31 +58,31 @@ typedef struct _D3D12DDICB_RECLAIMALLOCATIONS2 {
 ## -struct-fields
 <dl>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in]  The number of items in <b>pDiscarded</b> and whichever of <b>pResources</b> or <b>HandleList</b> is non-NULL.</p>
 </dd>
 
-### -field <b>pResources</b>
+### -field pResources
 
 <dd>
 <p>[in]  An array of Direct3D runtime resource handles.</p>
 </dd>
 
-### -field <b>HandleList</b>
+### -field HandleList
 
 <dd>
 <p>[in]  An array of allocation handles. If non-NULL, <b>pResources</b> must be NULL.</p>
 </dd>
 
-### -field <b>pDiscarded</b>
+### -field pDiscarded
 
 <dd>
 <p>[out] Optional array of boolean values specifying whether each resource or allocation was discarded.</p>
 </dd>
 
-### -field <b>PagingFenceValue</b>
+### -field PagingFenceValue
 
 <dd>
 <p>[out] The paging fence to synchronize against before submitting work to the GPU which

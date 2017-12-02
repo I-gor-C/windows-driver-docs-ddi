@@ -57,19 +57,19 @@ HRESULT SetBytes(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd>
 <p>The array to write to.</p>
 </dd>
 
-### -param <i>cbValue</i> [in]
+### -param cbValue [in]
 
 <dd>
 <p>The number of bytes to write.</p>
 </dd>
 
-### -param <i>rgbValue</i> [in]
+### -param rgbValue [in]
 
 <dd>
 <p>The values to write.</p>

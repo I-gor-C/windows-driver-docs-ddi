@@ -74,127 +74,127 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_AnalogVideo_None"></a><a id="ks_analogvideo_none"></a><a id="KS_ANALOGVIDEO_NONE"></a><b>KS_AnalogVideo_None</b>
+### -field KS_AnalogVideo_None
 
 <dd>
 <p>Specifies a digital sensor.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_NTSC_M"></a><a id="ks_analogvideo_ntsc_m"></a><a id="KS_ANALOGVIDEO_NTSC_M"></a><b>KS_AnalogVideo_NTSC_M</b>
+### -field KS_AnalogVideo_NTSC_M
 
 <dd>
 <p>Specifies the National Television Standards Committee (NTSC) "M" standard, at 7.5 IRE for black.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_NTSC_M_J"></a><a id="ks_analogvideo_ntsc_m_j"></a><a id="KS_ANALOGVIDEO_NTSC_M_J"></a><b>KS_AnalogVideo_NTSC_M_J</b>
+### -field KS_AnalogVideo_NTSC_M_J
 
 <dd>
 <p>Specifies the NTSC "M" standard that is used in Japan, at 0 IRE for black.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_NTSC_433"></a><a id="ks_analogvideo_ntsc_433"></a><a id="KS_ANALOGVIDEO_NTSC_433"></a><b>KS_AnalogVideo_NTSC_433</b>
+### -field KS_AnalogVideo_NTSC_433
 
 <dd>
 <p>Specifies the NTSC 433 standard</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_PAL_B"></a><a id="ks_analogvideo_pal_b"></a><a id="KS_ANALOGVIDEO_PAL_B"></a><b>KS_AnalogVideo_PAL_B</b>
+### -field KS_AnalogVideo_PAL_B
 
 <dd>
 <p>Specifies the Phase Alteration Line (PAL) "B" standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_PAL_D"></a><a id="ks_analogvideo_pal_d"></a><a id="KS_ANALOGVIDEO_PAL_D"></a><b>KS_AnalogVideo_PAL_D</b>
+### -field KS_AnalogVideo_PAL_D
 
 <dd>
 <p>Specifies the PAL "D" standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_PAL_G"></a><a id="ks_analogvideo_pal_g"></a><a id="KS_ANALOGVIDEO_PAL_G"></a><b>KS_AnalogVideo_PAL_G</b>
+### -field KS_AnalogVideo_PAL_G
 
 <dd>
 <p>Specifies the PAL "G" standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_PAL_H"></a><a id="ks_analogvideo_pal_h"></a><a id="KS_ANALOGVIDEO_PAL_H"></a><b>KS_AnalogVideo_PAL_H</b>
+### -field KS_AnalogVideo_PAL_H
 
 <dd>
 <p>Specifies the PAL "H" standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_PAL_I"></a><a id="ks_analogvideo_pal_i"></a><a id="KS_ANALOGVIDEO_PAL_I"></a><b>KS_AnalogVideo_PAL_I</b>
+### -field KS_AnalogVideo_PAL_I
 
 <dd>
 <p>Specifies the PAL "I" standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_PAL_M"></a><a id="ks_analogvideo_pal_m"></a><a id="KS_ANALOGVIDEO_PAL_M"></a><b>KS_AnalogVideo_PAL_M</b>
+### -field KS_AnalogVideo_PAL_M
 
 <dd>
 <p>Specifies the PAL "M" standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_PAL_N"></a><a id="ks_analogvideo_pal_n"></a><a id="KS_ANALOGVIDEO_PAL_N"></a><b>KS_AnalogVideo_PAL_N</b>
+### -field KS_AnalogVideo_PAL_N
 
 <dd>
 <p>Specifies the PAL "N" standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_PAL_60"></a><a id="ks_analogvideo_pal_60"></a><a id="KS_ANALOGVIDEO_PAL_60"></a><b>KS_AnalogVideo_PAL_60</b>
+### -field KS_AnalogVideo_PAL_60
 
 <dd>
 <p>Specifies the PAL-60 standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_SECAM_B"></a><a id="ks_analogvideo_secam_b"></a><a id="KS_ANALOGVIDEO_SECAM_B"></a><b>KS_AnalogVideo_SECAM_B</b>
+### -field KS_AnalogVideo_SECAM_B
 
 <dd>
 <p>Specifies the Systeme Electronic Pour Couleur Avec Memoire (SECAM) "B" standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_SECAM_D"></a><a id="ks_analogvideo_secam_d"></a><a id="KS_ANALOGVIDEO_SECAM_D"></a><b>KS_AnalogVideo_SECAM_D</b>
+### -field KS_AnalogVideo_SECAM_D
 
 <dd>
 <p>Specifies the SECAM "D" standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_SECAM_G"></a><a id="ks_analogvideo_secam_g"></a><a id="KS_ANALOGVIDEO_SECAM_G"></a><b>KS_AnalogVideo_SECAM_G</b>
+### -field KS_AnalogVideo_SECAM_G
 
 <dd>
 <p>Specifies the SECAM "G" standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_SECAM_H"></a><a id="ks_analogvideo_secam_h"></a><a id="KS_ANALOGVIDEO_SECAM_H"></a><b>KS_AnalogVideo_SECAM_H</b>
+### -field KS_AnalogVideo_SECAM_H
 
 <dd>
 <p>Specifies the SECAM "H" standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_SECAM_K"></a><a id="ks_analogvideo_secam_k"></a><a id="KS_ANALOGVIDEO_SECAM_K"></a><b>KS_AnalogVideo_SECAM_K</b>
+### -field KS_AnalogVideo_SECAM_K
 
 <dd>
 <p>Specifies the SECAM "K" standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_SECAM_K1"></a><a id="ks_analogvideo_secam_k1"></a><a id="KS_ANALOGVIDEO_SECAM_K1"></a><b>KS_AnalogVideo_SECAM_K1</b>
+### -field KS_AnalogVideo_SECAM_K1
 
 <dd>
 <p>Specifies the SECAM "K1" standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_SECAM_L"></a><a id="ks_analogvideo_secam_l"></a><a id="KS_ANALOGVIDEO_SECAM_L"></a><b>KS_AnalogVideo_SECAM_L</b>
+### -field KS_AnalogVideo_SECAM_L
 
 <dd>
 <p>Specifies the SECAM "L" standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_SECAM_L1"></a><a id="ks_analogvideo_secam_l1"></a><a id="KS_ANALOGVIDEO_SECAM_L1"></a><b>KS_AnalogVideo_SECAM_L1</b>
+### -field KS_AnalogVideo_SECAM_L1
 
 <dd>
 <p>Specifies the SECAM "L1" standard.</p>
 </dd>
 
-### -field <a id="KS_AnalogVideo_PAL_N_COMBO"></a><a id="ks_analogvideo_pal_n_combo"></a><a id="KS_ANALOGVIDEO_PAL_N_COMBO"></a><b>KS_AnalogVideo_PAL_N_COMBO</b>
+### -field KS_AnalogVideo_PAL_N_COMBO
 
 <dd>
 <p>Specifies the combination PAL "N" standard (Argentina).</p>

@@ -54,7 +54,7 @@ HRESULT SendFixedDocument(
 ## -parameters
 <dl>
 
-### -param <i>pIFixedDocument</i> [in]
+### -param pIFixedDocument [in]
 
 <dd>
 <p>A pointer to an XPS fixed document object.</p>

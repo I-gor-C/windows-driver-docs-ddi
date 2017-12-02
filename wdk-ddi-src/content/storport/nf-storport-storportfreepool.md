@@ -56,13 +56,13 @@ ULONG StorPortFreePool(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>BufferPointer</i> [in]
+### -param BufferPointer [in]
 
 <dd>
 <p>A pointer to the block of memory to free. This must be a pointer that was returned by a previous call to the <a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a> routine.</p>

@@ -57,13 +57,13 @@ PVOID VideoPortGetMdl(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>pDma</i> [in]
+### -param pDma [in]
 
 <dd>
 <p>Is a handle to the DMA context being queried. This handle was obtained from <a href="..\video\nf-video-videoportlockpages.md">VideoPortLockPages</a> or <a href="..\video\nf-video-videoportdodma.md">VideoPortDoDma</a>.</p>

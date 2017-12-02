@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Provides information about a USB root hub. This structure is passed by UCX in the <a href="buses.evt_ucx_roothub_get_info">EVT_UCX_ROOTHUB_GET_INFO</a> callback function.</p>
+<p>Provides information about a USB root hub. This structure is passed by UCX in the <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-get-info.md">EVT_UCX_ROOTHUB_GET_INFO</a> callback function.</p>
 
 
 ## -syntax
@@ -60,37 +60,37 @@ typedef struct _ROOTHUB_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size in bytes of this structure.</p>
 </dd>
 
-### -field <b>ControllerType</b>
+### -field ControllerType
 
 <dd>
-<p>A <a href="buses._controller_type">CONTROLLER_TYPE</a> value that identifies the type of eXtensible Host Controller Interface (xHCI) which has the root hub.</p>
+<p>A <a href="..\ucxroothub\ne-ucxroothub--controller-type.md">CONTROLLER_TYPE</a> value that identifies the type of eXtensible Host Controller Interface (xHCI) which has the root hub.</p>
 </dd>
 
-### -field <b>NumberOf20Ports</b>
+### -field NumberOf20Ports
 
 <dd>
 <p>The number of USB 2.0 ports connected to the root hub.</p>
 </dd>
 
-### -field <b>NumberOf30Ports</b>
+### -field NumberOf30Ports
 
 <dd>
 <p>The number of USB 3.0 ports connected to the root hub.</p>
 </dd>
 
-### -field <b>MaxU1ExitLatency</b>
+### -field MaxU1ExitLatency
 
 <dd>
 <p>The exit latency for the slowest link for U1 transition.</p>
 </dd>
 
-### -field <b>MaxU2ExitLatency</b>
+### -field MaxU2ExitLatency
 
 <dd>
 <p>The exit latency for the slowest link for U2 transition.</p>
@@ -117,7 +117,7 @@ typedef struct _ROOTHUB_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_ucx_roothub_get_info">EVT_UCX_ROOTHUB_GET_INFO</a>
+<a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-get-info.md">EVT_UCX_ROOTHUB_GET_INFO</a>
 </dt>
 </dl>
 <p> </p>

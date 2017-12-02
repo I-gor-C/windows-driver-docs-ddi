@@ -57,25 +57,25 @@ typedef enum _PEP_PERF_STATE_UNIT {
 ## -enum-fields
 <dl>
 
-### -field <a id="PepPerfStateUnitOther"></a><a id="pepperfstateunitother"></a><a id="PEPPERFSTATEUNITOTHER"></a><b>PepPerfStateUnitOther</b>
+### -field PepPerfStateUnitOther
 
 <dd>
 <p>Some other type of measurement units not explicitly described by this enumeration.</p>
 </dd>
 
-### -field <a id="PepPerfStateUnitFrequency"></a><a id="pepperfstateunitfrequency"></a><a id="PEPPERFSTATEUNITFREQUENCY"></a><b>PepPerfStateUnitFrequency</b>
+### -field PepPerfStateUnitFrequency
 
 <dd>
 <p>Hertz (frequency units).</p>
 </dd>
 
-### -field <a id="PepPerfStateUnitBandwidth"></a><a id="pepperfstateunitbandwidth"></a><a id="PEPPERFSTATEUNITBANDWIDTH"></a><b>PepPerfStateUnitBandwidth</b>
+### -field PepPerfStateUnitBandwidth
 
 <dd>
 <p>Bits per second (bandwidth units).</p>
 </dd>
 
-### -field <a id="PepPerfStateUnitMax"></a><a id="pepperfstateunitmax"></a><a id="PEPPERFSTATEUNITMAX"></a><b>PepPerfStateUnitMax</b>
+### -field PepPerfStateUnitMax
 
 <dd>
 <p>Reserved for use by operating system.</p>

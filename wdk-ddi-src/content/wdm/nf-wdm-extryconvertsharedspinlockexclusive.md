@@ -55,7 +55,7 @@ BOOLEAN ExTryConvertSharedSpinLockExclusive(
 ## -parameters
 <dl>
 
-### -param <i>SpinLock</i> [in, out]
+### -param SpinLock [in, out]
 
 <dd>
 <p>A pointer to the spin lock whose access state is to be converted to exclusive access.  The caller must already own this spin lock for shared access.</p>

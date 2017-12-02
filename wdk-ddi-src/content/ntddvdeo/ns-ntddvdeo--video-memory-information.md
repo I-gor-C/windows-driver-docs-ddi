@@ -57,26 +57,26 @@ typedef struct _VIDEO_MEMORY_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>VideoRamBase</b>
+### -field VideoRamBase
 
 <dd>
 <p>Virtual address of the video RAM in system space or in the address space of the user-mode process that initiated the request.</p>
 </dd>
 
-### -field <b>VideoRamLength</b>
+### -field VideoRamLength
 
 <dd>
 <p>The size, in bytes, of the virtual address range that is mapped to video RAM. Memory accessible through a bank switch mechanism is not described by this value.</p>
 <p>This value must be equal to the product <b>VideoMemoryBitmapHeight</b> * <b>ScreenStride</b>, where each factor in the product is a member of the <a href="..\ntddvdeo\ns-ntddvdeo--video-mode-information.md">VIDEO_MODE_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <b>FrameBufferBase</b>
+### -field FrameBufferBase
 
 <dd>
 <p>Pointer to the virtual address of the <a href="wdkgloss.f#wdkgloss.frame_buffer#wdkgloss.frame_buffer"><i>frame buffer</i></a> in the caller's address space. The frame buffer is the actively displayed part of video RAM.</p>
 </dd>
 
-### -field <b>FrameBufferLength</b>
+### -field FrameBufferLength
 
 <dd>
 <p>Specifies the linear length of the frame buffer in the caller's virtual address space. Memory accessible through a bank switch mechanism is not described by this value.</p>

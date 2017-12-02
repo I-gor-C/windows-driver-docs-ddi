@@ -60,43 +60,43 @@ typedef struct tagKS_DATARANGE_VIDEO2 {
 ## -struct-fields
 <dl>
 
-### -field <b>DataRange</b>
+### -field DataRange
 
 <dd>
 <p>Specifies the major identifier for the format.</p>
 </dd>
 
-### -field <b>bFixedSizeSamples</b>
+### -field bFixedSizeSamples
 
 <dd>
 <p>Specifies that all the samples are the same size if set to <b>TRUE</b>.</p>
 </dd>
 
-### -field <b>bTemporalCompression</b>
+### -field bTemporalCompression
 
 <dd>
 <p>Specifies whether each sample can stand independently on its own, without relying on previous or future samples.</p>
 </dd>
 
-### -field <b>StreamDescriptionFlags</b>
+### -field StreamDescriptionFlags
 
 <dd>
 <p>Unused and should be set to zero.</p>
 </dd>
 
-### -field <b>MemoryAllocationFlags</b>
+### -field MemoryAllocationFlags
 
 <dd>
 <p>Unused and should be set to zero.</p>
 </dd>
 
-### -field <b>ConfigCaps</b>
+### -field ConfigCaps
 
 <dd>
 <p>Specifies the configuration of the stream, including scaling, cropping, and frame and data rates.</p>
 </dd>
 
-### -field <b>VideoInfoHeader</b>
+### -field VideoInfoHeader
 
 <dd>
 <p>Specifies the details of the video stream.</p>

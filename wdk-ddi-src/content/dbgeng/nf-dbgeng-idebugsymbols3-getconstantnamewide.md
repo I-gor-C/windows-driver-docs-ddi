@@ -7,7 +7,7 @@ old-location: debugger\getconstantnamewide.htm
 old-project: debugger
 ms.assetid: 743d2f83-905b-4bc9-8e23-b330c3ca7629
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSymbols3, GetConstantNameWide, IDebugSymbols3::GetConstantNameWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ HRESULT GetConstantNameWide(
 ## -parameters
 <dl>
 
-### -param <i>Module</i> [in]
+### -param Module [in]
 
 <dd>
 <p>Specifies the base address of the module in which the constant was defined.</p>
 </dd>
 
-### -param <i>TypeId</i> [in]
+### -param TypeId [in]
 
 <dd>
 <p>Specifies the type ID of the constant.</p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>Specifies the value of the constant.</p>
 </dd>
 
-### -param <i>NameBuffer</i> [out, optional]
+### -param NameBuffer [out, optional]
 
 <dd>
 <p>Receives the constant's name.  If <i>NameBuffer</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>NameBufferSize</i> [in]
+### -param NameBufferSize [in]
 
 <dd>
 <p>Specifies the size in characters of the buffer <i>NameBuffer</i>.</p>
 </dd>
 
-### -param <i>NameSize</i> [out, optional]
+### -param NameSize [out, optional]
 
 <dd>
 <p>Receives the size in characters of the constant's name.</p>
@@ -97,7 +97,7 @@ HRESULT GetConstantNameWide(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>S_FALSE</b></dt>

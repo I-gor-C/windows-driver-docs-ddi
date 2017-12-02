@@ -57,7 +57,7 @@ typedef struct _D3DHAL_DP2SETDEPTHSTENCIL {
 ## -struct-fields
 <dl>
 
-### -field <b>hZBuffer</b>
+### -field hZBuffer
 
 <dd>
 <p>Specifies a handle to the depth buffer.</p>

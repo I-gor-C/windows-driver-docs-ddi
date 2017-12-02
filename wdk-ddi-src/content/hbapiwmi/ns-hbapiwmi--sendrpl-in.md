@@ -57,25 +57,25 @@ typedef struct _SendRPL_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>Contains a worldwide name for the local port through which the read port list (RPL) command is sent. </p>
 </dd>
 
-### -field <b>AgentWWN</b>
+### -field AgentWWN
 
 <dd>
 <p>Contains a worldwide name for the port that is to be queried for a list of ports of type FC_Port. For a definition of FC_Port, see the T11 committee's specification for <i>Fibre Channel HBA API</i>. </p>
 </dd>
 
-### -field <b>agent_domain</b>
+### -field agent_domain
 
 <dd>
 <p>Contains the domain number for the domain controller that is to be queried for a list of ports of type FC_Port. For a definition of FC_Port, see the T11 committee's specification for <i>Fibre Channel HBA API</i>. </p>
 </dd>
 
-### -field <b>portIndex</b>
+### -field portIndex
 
 <dd>
 <p>Contains the port index of the first port in the list of ports of type FC_Port to be returned. </p>

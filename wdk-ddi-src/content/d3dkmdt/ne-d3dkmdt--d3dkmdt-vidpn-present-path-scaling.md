@@ -62,58 +62,58 @@ typedef enum _D3DKMDT_VIDPN_PRESENT_PATH_SCALING {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_VPPS_UNINITIALIZED"></a><a id="d3dkmdt_vpps_uninitialized"></a><b>D3DKMDT_VPPS_UNINITIALIZED</b>
+### -field D3DKMDT_VPPS_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_VIDPN_PRESENT_PATH_SCALING has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPS_IDENTITY"></a><a id="d3dkmdt_vpps_identity"></a><b>D3DKMDT_VPPS_IDENTITY</b>
+### -field D3DKMDT_VPPS_IDENTITY
 
 <dd>
 <p>Indicates the identity transformation; the source content is presented with no change. Note that this transformation is available only if the path's source mode has the same spatial resolution as the path's target mode.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPS_CENTERED"></a><a id="d3dkmdt_vpps_centered"></a><b>D3DKMDT_VPPS_CENTERED</b>
+### -field D3DKMDT_VPPS_CENTERED
 
 <dd>
 <p>Indicates the centering transformation; the source content is presented unscaled, centered with respect to the spatial resolution of the target mode.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPS_STRETCHED"></a><a id="d3dkmdt_vpps_stretched"></a><b>D3DKMDT_VPPS_STRETCHED</b>
+### -field D3DKMDT_VPPS_STRETCHED
 
 <dd>
 <p>Indicates that the source content is scaled to fit the path's target, and the aspect ratio of the source is not preserved.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX"></a><a id="d3dkmdt_vpps_aspectratiocenteredmax"></a><b>D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX</b>
+### -field D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX
 
 <dd>
 <p>Indicates that the source content is scaled to fit the path's target while preserving the aspect ratio of the source.</p>
 <p>This constant value is available beginning with Windows 7. See further information in the Remarks section.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPS_CUSTOM"></a><a id="d3dkmdt_vpps_custom"></a><b>D3DKMDT_VPPS_CUSTOM</b>
+### -field D3DKMDT_VPPS_CUSTOM
 
 <dd>
 <p>Indicates that the path is capable of displaying one or more scaling modes that are not described by other constants of this enumeration.</p>
 <p>This constant value is available beginning with Windows 7. See further information in the Remarks section.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPS_RESERVED1"></a><a id="d3dkmdt_vpps_reserved1"></a><b>D3DKMDT_VPPS_RESERVED1</b>
+### -field D3DKMDT_VPPS_RESERVED1
 
 <dd>
 <p>Reserved for system use. Do not use this value. This value will never be passed to a driver.</p>
 <p>This constant value is available beginning with Windows 7.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPS_UNPINNED"></a><a id="d3dkmdt_vpps_unpinned"></a><b>D3DKMDT_VPPS_UNPINNED</b>
+### -field D3DKMDT_VPPS_UNPINNED
 
 <dd>
 <p>Indicates that no scaling transformation has been pinned for the VidPN present source.</p>
 </dd>
 
-### -field <a id="D3DKMDT_VPPS_NOTSPECIFIED"></a><a id="d3dkmdt_vpps_notspecified"></a><b>D3DKMDT_VPPS_NOTSPECIFIED</b>
+### -field D3DKMDT_VPPS_NOTSPECIFIED
 
 <dd>
 <p>Indicates that no transformation has been specified. See further information in the Remarks section.</p>

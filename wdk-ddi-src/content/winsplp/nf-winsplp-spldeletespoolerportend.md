@@ -56,11 +56,11 @@ BOOL WINAPI SplDeleteSpoolerPortEnd(
 ## -parameters
 <dl>
 
-### -param <i>pName</i> [in]
+### -param pName [in]
 
 <dd></dd>
 
-### -param <i>bDeletePort</i> [in]
+### -param bDeletePort [in]
 
 <dd></dd>
 </dl>

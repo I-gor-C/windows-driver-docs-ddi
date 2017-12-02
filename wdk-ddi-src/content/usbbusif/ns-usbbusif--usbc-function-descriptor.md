@@ -62,49 +62,49 @@ typedef struct _USBC_FUNCTION_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>FunctionNumber</b>
+### -field FunctionNumber
 
 <dd>
 <p>The zero-based index of the interface collection.</p>
 </dd>
 
-### -field <b>NumberOfInterfaces</b>
+### -field NumberOfInterfaces
 
 <dd>
 <p>The number of interfaces in the interface collection.</p>
 </dd>
 
-### -field <b>InterfaceDescriptorList</b>
+### -field InterfaceDescriptorList
 
 <dd>
 <p>An array of pointers to <a href="..\usbspec\ns-usbspec--usb-interface-descriptor.md">USB_INTERFACE_DESCRIPTOR</a>-type structures that describe the interfaces in the interface collection.</p>
 </dd>
 
-### -field <b>HardwareId</b>
+### -field HardwareId
 
 <dd>
 <p>The hardware identifier of the interface collection.</p>
 </dd>
 
-### -field <b>CompatibleId</b>
+### -field CompatibleId
 
 <dd>
 <p>The compatible identifier of the interface collection.</p>
 </dd>
 
-### -field <b>FunctionDescription</b>
+### -field FunctionDescription
 
 <dd>
 <p>A description of the interface collection in human-readable text.</p>
 </dd>
 
-### -field <b>FunctionFlags</b>
+### -field FunctionFlags
 
 <dd>
 <p>Vendor-defined flags that describe the interface collection.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>

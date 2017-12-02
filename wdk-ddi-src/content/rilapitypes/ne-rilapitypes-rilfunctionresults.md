@@ -7,7 +7,7 @@ old-location: netvista\rilfunctionresults_2.htm
 old-project: netvista
 ms.assetid: 4a4a93d5-fe27-4932-a5d0-4aac96a3ae86
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef enum _RILFUNCTIONRESULTS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_RESULT_ERROR"></a><a id="ril_result_error"></a><b>RIL_RESULT_ERROR</b>
+### -field RIL_RESULT_ERROR
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: sd\ioctl_sffdisk_device_password.htm
 old-project: SD
 ms.assetid: 76b65ada-06b8-411e-83e9-62088f697f02
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/30/2017
 ms.keywords: SERCX_BUFFER_DESCRIPTOR,
 ms.prod: windows-hardware
 ms.technology: windows-devices

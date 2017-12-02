@@ -7,7 +7,7 @@ old-location: netvista\rilmsginstatustgtdlvstatus.htm
 old-project: netvista
 ms.assetid: 6e22ae6d-55a2-4aa7-993b-67474acc6f7b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -86,135 +86,135 @@ typedef enum _RILMSGINSTATUSTGTDLVSTATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGDLVSTATUS_FORWARDEDTOSME"></a><a id="ril_msgdlvstatus_forwardedtosme"></a><b>RIL_MSGDLVSTATUS_FORWARDEDTOSME</b>
+### -field RIL_MSGDLVSTATUS_FORWARDEDTOSME
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_REPLACEDBYSC"></a><a id="ril_msgdlvstatus_replacedbysc"></a><b>RIL_MSGDLVSTATUS_REPLACEDBYSC</b>
+### -field RIL_MSGDLVSTATUS_REPLACEDBYSC
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_CONGESTION_TRYING"></a><a id="ril_msgdlvstatus_congestion_trying"></a><b>RIL_MSGDLVSTATUS_CONGESTION_TRYING</b>
+### -field RIL_MSGDLVSTATUS_CONGESTION_TRYING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_SMEBUSY_TRYING"></a><a id="ril_msgdlvstatus_smebusy_trying"></a><b>RIL_MSGDLVSTATUS_SMEBUSY_TRYING</b>
+### -field RIL_MSGDLVSTATUS_SMEBUSY_TRYING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_SMENOTRESPONDING_TRYING"></a><a id="ril_msgdlvstatus_smenotresponding_trying"></a><b>RIL_MSGDLVSTATUS_SMENOTRESPONDING_TRYING</b>
+### -field RIL_MSGDLVSTATUS_SMENOTRESPONDING_TRYING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_SVCREJECTED_TRYING"></a><a id="ril_msgdlvstatus_svcrejected_trying"></a><b>RIL_MSGDLVSTATUS_SVCREJECTED_TRYING</b>
+### -field RIL_MSGDLVSTATUS_SVCREJECTED_TRYING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TRYING"></a><a id="ril_msgdlvstatus_qualityunavail_trying"></a><b>RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TRYING</b>
+### -field RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TRYING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_SMEERROR_TRYING"></a><a id="ril_msgdlvstatus_smeerror_trying"></a><b>RIL_MSGDLVSTATUS_SMEERROR_TRYING</b>
+### -field RIL_MSGDLVSTATUS_SMEERROR_TRYING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_CONGESTION"></a><a id="ril_msgdlvstatus_congestion"></a><b>RIL_MSGDLVSTATUS_CONGESTION</b>
+### -field RIL_MSGDLVSTATUS_CONGESTION
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_SMEBUSY"></a><a id="ril_msgdlvstatus_smebusy"></a><b>RIL_MSGDLVSTATUS_SMEBUSY</b>
+### -field RIL_MSGDLVSTATUS_SMEBUSY
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_SMENOTRESPONDING"></a><a id="ril_msgdlvstatus_smenotresponding"></a><b>RIL_MSGDLVSTATUS_SMENOTRESPONDING</b>
+### -field RIL_MSGDLVSTATUS_SMENOTRESPONDING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_SVCREJECTED"></a><a id="ril_msgdlvstatus_svcrejected"></a><b>RIL_MSGDLVSTATUS_SVCREJECTED</b>
+### -field RIL_MSGDLVSTATUS_SVCREJECTED
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TEMP"></a><a id="ril_msgdlvstatus_qualityunavail_temp"></a><b>RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TEMP</b>
+### -field RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TEMP
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_SMEERROR"></a><a id="ril_msgdlvstatus_smeerror"></a><b>RIL_MSGDLVSTATUS_SMEERROR</b>
+### -field RIL_MSGDLVSTATUS_SMEERROR
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_REMOTEPROCERROR"></a><a id="ril_msgdlvstatus_remoteprocerror"></a><b>RIL_MSGDLVSTATUS_REMOTEPROCERROR</b>
+### -field RIL_MSGDLVSTATUS_REMOTEPROCERROR
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_INCOMPATIBLEDEST"></a><a id="ril_msgdlvstatus_incompatibledest"></a><b>RIL_MSGDLVSTATUS_INCOMPATIBLEDEST</b>
+### -field RIL_MSGDLVSTATUS_INCOMPATIBLEDEST
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_CONNECTIONREJECTED"></a><a id="ril_msgdlvstatus_connectionrejected"></a><b>RIL_MSGDLVSTATUS_CONNECTIONREJECTED</b>
+### -field RIL_MSGDLVSTATUS_CONNECTIONREJECTED
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_NOTOBTAINABLE"></a><a id="ril_msgdlvstatus_notobtainable"></a><b>RIL_MSGDLVSTATUS_NOTOBTAINABLE</b>
+### -field RIL_MSGDLVSTATUS_NOTOBTAINABLE
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_NOINTERNETWORKING"></a><a id="ril_msgdlvstatus_nointernetworking"></a><b>RIL_MSGDLVSTATUS_NOINTERNETWORKING</b>
+### -field RIL_MSGDLVSTATUS_NOINTERNETWORKING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_VPEXPIRED"></a><a id="ril_msgdlvstatus_vpexpired"></a><b>RIL_MSGDLVSTATUS_VPEXPIRED</b>
+### -field RIL_MSGDLVSTATUS_VPEXPIRED
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_DELETEDBYORIGSME"></a><a id="ril_msgdlvstatus_deletedbyorigsme"></a><b>RIL_MSGDLVSTATUS_DELETEDBYORIGSME</b>
+### -field RIL_MSGDLVSTATUS_DELETEDBYORIGSME
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_DELETEDBYSC"></a><a id="ril_msgdlvstatus_deletedbysc"></a><b>RIL_MSGDLVSTATUS_DELETEDBYSC</b>
+### -field RIL_MSGDLVSTATUS_DELETEDBYSC
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_NOLONGEREXISTS"></a><a id="ril_msgdlvstatus_nolongerexists"></a><b>RIL_MSGDLVSTATUS_NOLONGEREXISTS</b>
+### -field RIL_MSGDLVSTATUS_NOLONGEREXISTS
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_QUALITYUNAVAIL"></a><a id="ril_msgdlvstatus_qualityunavail"></a><b>RIL_MSGDLVSTATUS_QUALITYUNAVAIL</b>
+### -field RIL_MSGDLVSTATUS_QUALITYUNAVAIL
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_RESERVED_COMPLETED"></a><a id="ril_msgdlvstatus_reserved_completed"></a><b>RIL_MSGDLVSTATUS_RESERVED_COMPLETED</b>
+### -field RIL_MSGDLVSTATUS_RESERVED_COMPLETED
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_RESERVED_TRYING"></a><a id="ril_msgdlvstatus_reserved_trying"></a><b>RIL_MSGDLVSTATUS_RESERVED_TRYING</b>
+### -field RIL_MSGDLVSTATUS_RESERVED_TRYING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_RESERVED_ERROR"></a><a id="ril_msgdlvstatus_reserved_error"></a><b>RIL_MSGDLVSTATUS_RESERVED_ERROR</b>
+### -field RIL_MSGDLVSTATUS_RESERVED_ERROR
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_RESERVED_TMPERROR"></a><a id="ril_msgdlvstatus_reserved_tmperror"></a><b>RIL_MSGDLVSTATUS_RESERVED_TMPERROR</b>
+### -field RIL_MSGDLVSTATUS_RESERVED_TMPERROR
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_SCSPECIFIC_COMPLETED"></a><a id="ril_msgdlvstatus_scspecific_completed"></a><b>RIL_MSGDLVSTATUS_SCSPECIFIC_COMPLETED</b>
+### -field RIL_MSGDLVSTATUS_SCSPECIFIC_COMPLETED
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_SCSPECIFIC_TRYING"></a><a id="ril_msgdlvstatus_scspecific_trying"></a><b>RIL_MSGDLVSTATUS_SCSPECIFIC_TRYING</b>
+### -field RIL_MSGDLVSTATUS_SCSPECIFIC_TRYING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_SCSPECIFIC_ERROR"></a><a id="ril_msgdlvstatus_scspecific_error"></a><b>RIL_MSGDLVSTATUS_SCSPECIFIC_ERROR</b>
+### -field RIL_MSGDLVSTATUS_SCSPECIFIC_ERROR
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_SCSPECIFIC_TMPERROR"></a><a id="ril_msgdlvstatus_scspecific_tmperror"></a><b>RIL_MSGDLVSTATUS_SCSPECIFIC_TMPERROR</b>
+### -field RIL_MSGDLVSTATUS_SCSPECIFIC_TMPERROR
 
 <dd></dd>
 
-### -field <a id="RIL_MSGDLVSTATUS_MAX"></a><a id="ril_msgdlvstatus_max"></a><b>RIL_MSGDLVSTATUS_MAX</b>
+### -field RIL_MSGDLVSTATUS_MAX
 
 <dd></dd>
 </dl>

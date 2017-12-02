@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type. </p>
 </dd>
 
-### -field <b>StreamIndex</b>
+### -field StreamIndex
 
 <dd>
 <p>Contains the zero-based index of the stream.</p>
 </dd>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>Specifies the video control mode. For a Set request, this member contains the requested video control mode. For a Get request, the minidriver should return the current video control mode of the device. This member can be one of the <a href="..\ksmedia\ne-ksmedia-ks-videocontrolflags.md">KS_VideoControlFlags</a> enumeration values.</p>

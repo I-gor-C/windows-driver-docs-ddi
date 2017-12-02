@@ -7,7 +7,7 @@ old-location: wdf\iwdfdeviceinitialize_setlockingconstraint.htm
 old-project: wdf
 ms.assetid: c0062ad4-6666-49db-9d53-70f2ed2353d1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFDeviceInitialize, SetLockingConstraint, IWDFDeviceInitialize::SetLockingConstraint
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ void SetLockingConstraint(
 ## -parameters
 <dl>
 
-### -param <i>LockType</i> [in]
+### -param LockType [in]
 
 <dd>
 <p>A value of type <a href="..\wudfddi_types\ne-wudfddi-types--wdf-callback-constraint.md">WDF_CALLBACK_CONSTRAINT</a> that identifies the locking model.</p>
@@ -132,4 +132,4 @@ void SetLockingConstraint(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDeviceInitialize::SetLockingConstraint method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDeviceInitialize::SetLockingConstraint method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

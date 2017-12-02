@@ -59,31 +59,31 @@ STORPORT_API BOOLEAN StorPortSetDeviceQueueDepth(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the miniport driver's per-HBA storage area. </p>
 </dd>
 
-### -param <i>PathId</i> [in]
+### -param PathId [in]
 
 <dd>
 <p>Contains the path ID of the target device. </p>
 </dd>
 
-### -param <i>TargetId</i> [in]
+### -param TargetId [in]
 
 <dd>
 <p>Contains the device number of the target device. </p>
 </dd>
 
-### -param <i>Lun</i> [in]
+### -param Lun [in]
 
 <dd>
 <p>Contains the logical unit number of the target device. </p>
 </dd>
 
-### -param <i>Depth</i> [in]
+### -param Depth [in]
 
 <dd>
 <p>Supplies the depth to which the queue is to be set. This value is always &gt; 0.</p>

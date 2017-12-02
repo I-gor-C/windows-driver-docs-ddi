@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_io_type__umdf_.htm
 old-project: wdf
 ms.assetid: 52733647-d577-4507-a5ad-5f56f3a9f8a2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,37 +62,37 @@ typedef enum _WDF_DEVICE_IO_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfDeviceIoUndefined"></a><a id="wdfdeviceioundefined"></a><a id="WDFDEVICEIOUNDEFINED"></a><b>WdfDeviceIoUndefined</b>
+### -field WdfDeviceIoUndefined
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="WdfDeviceIoNeither"></a><a id="wdfdeviceioneither"></a><a id="WDFDEVICEIONEITHER"></a><b>WdfDeviceIoNeither</b>
+### -field WdfDeviceIoNeither
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="WdfDeviceIoBuffered"></a><a id="wdfdeviceiobuffered"></a><a id="WDFDEVICEIOBUFFERED"></a><b>WdfDeviceIoBuffered</b>
+### -field WdfDeviceIoBuffered
 
 <dd>
 <p>UMDF and the driver use <a href="wdf.accessing_data_buffers_in_umdf_drivers">buffered I/O</a> to access data buffers.</p>
 </dd>
 
-### -field <a id="WdfDeviceIoDirect"></a><a id="wdfdeviceiodirect"></a><a id="WDFDEVICEIODIRECT"></a><b>WdfDeviceIoDirect</b>
+### -field WdfDeviceIoDirect
 
 <dd>
 <p>UMDF and the driver use <a href="wdf.accessing_data_buffers_in_umdf_drivers">direct I/O</a> to access data buffers.</p>
 </dd>
 
-### -field <a id="WdfDeviceIoBufferedOrDirect"></a><a id="wdfdeviceiobufferedordirect"></a><a id="WDFDEVICEIOBUFFEREDORDIRECT"></a><b>WdfDeviceIoBufferedOrDirect</b>
+### -field WdfDeviceIoBufferedOrDirect
 
 <dd>
 <p>UMDF and the driver can use either buffered I/O or direct I/O to access data buffers. </p>
 </dd>
 
-### -field <a id="WdfDeviceIoMaximum"></a><a id="wdfdeviceiomaximum"></a><a id="WDFDEVICEIOMAXIMUM"></a><b>WdfDeviceIoMaximum</b>
+### -field WdfDeviceIoMaximum
 
 <dd>
 <p>Reserved for system use.</p>
@@ -158,4 +158,4 @@ typedef enum _WDF_DEVICE_IO_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_IO_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_IO_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

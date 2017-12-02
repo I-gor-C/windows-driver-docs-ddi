@@ -75,128 +75,128 @@ typedef struct _VIDEO_HW_INITIALIZATION_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>HwInitDataSize</b>
+### -field HwInitDataSize
 
 <dd>
 <p>Is the size in bytes of this structure. In effect, this indicates the version of VIDEO_HW_INITIALIZATION_DATA being used.</p>
 </dd>
 
-### -field <b>AdapterInterfaceType</b>
+### -field AdapterInterfaceType
 
 <dd>
 <p>Is currently ignored by the video port and should remain zero-initialized.</p>
 </dd>
 
-### -field <b>HwFindAdapter</b>
+### -field HwFindAdapter
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a> function, which is required for all miniport drivers.</p>
 </dd>
 
-### -field <b>HwInitialize</b>
+### -field HwInitialize
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\video\nc-video-pvideo-hw-initialize.md">HwVidInitialize</a> function, which is required for all miniport drivers.</p>
 </dd>
 
-### -field <b>HwInterrupt</b>
+### -field HwInterrupt
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\video\nc-video-pvideo-hw-interrupt.md">HwVidInterrupt</a> function, which is required only if the miniport driver's adapter generates interrupts. Otherwise, this pointer must be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>HwStartIO</b>
+### -field HwStartIO
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\video\nc-video-pvideo-hw-start-io.md">HwVidStartIO</a> function, which is required for all miniport drivers.</p>
 </dd>
 
-### -field <b>HwDeviceExtensionSize</b>
+### -field HwDeviceExtensionSize
 
 <dd>
 <p>Specifies the size in bytes of the storage the miniport driver requires for its private, adapter-specific device extension. A miniport driver uses this storage to hold driver-determined per-adapter information, such as the mapped logical address ranges for the adapter registers and whatever context information the driver maintains about its I/O operations.</p>
 <p>A pointer to the device extension is passed in every call made to the miniport driver's standard functions except <a href="display.driverentry_of_video_miniport_driver">DriverEntry</a>, <a href="..\video\nc-video-pminiport-synchronize-routine.md">HwVidSynchronizeExecutionCallback</a>, and any <i>SvgaHwIoPortXxx</i> functions. The video port driver allocates the memory for the device extension and initializes it with zeros before it is passed to the miniport driver's <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a> function.</p>
 </dd>
 
-### -field <b>StartingDeviceNumber</b>
+### -field StartingDeviceNumber
 
 <dd>
 <p>Must be set to zero.</p>
 </dd>
 
-### -field <b>HwResetHw</b>
+### -field HwResetHw
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\video\nc-video-pvideo-hw-reset-hw.md">HwVidResetHw</a> function, which is required for any miniport driver of an adapter that does not reset fully on a soft reboot of the machine. Drivers of SVGA adapters that are fully reset to a VGA standard character mode on receipt of an INT10, MODE3-type command usually set this to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>HwTimer</b>
+### -field HwTimer
 
 <dd>
 <p>Pointer to a miniport driver's <a href="..\video\nc-video-pvideo-hw-timer.md">HwVidTimer</a> function, which is optional. This pointer can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>HwStartDma</b>
+### -field HwStartDma
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>HwSetPowerState</b>
+### -field HwSetPowerState
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\video\nc-video-pvideo-hw-power-set.md">HwVidSetPowerState</a> function, which is required for all miniport drivers.</p>
 </dd>
 
-### -field <b>HwGetPowerState</b>
+### -field HwGetPowerState
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\video\nc-video-pvideo-hw-power-get.md">HwVidGetPowerState</a> function, which is required for all miniport drivers.</p>
 </dd>
 
-### -field <b>HwGetVideoChildDescriptor</b>
+### -field HwGetVideoChildDescriptor
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\video\nc-video-pvideo-hw-get-child-descriptor.md">HwVidGetVideoChildDescriptor</a> function, which is required for all miniport drivers.</p>
 </dd>
 
-### -field <b>HwQueryInterface</b>
+### -field HwQueryInterface
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\video\nc-video-pvideo-hw-query-interface.md">HwVidQueryInterface</a> function. This can be optionally implemented in a miniport driver that supports external programming interfaces for inter-device communication, such as <a href="wdkgloss.i#wdkgloss.inter_integrated_circuit__i2c_#wdkgloss.inter_integrated_circuit__i2c_"><i>I2C</i></a> (or I²C) support for MPEG decoders. Otherwise, this member should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>HwChildDeviceExtensionSize</b>
+### -field HwChildDeviceExtensionSize
 
 <dd>
 <p>Is the size in bytes of the device extension associated with the display output device. The miniport driver should fill in this member only if the miniport driver needs to manage the monitor configuration data separately from the adapter board configuration.</p>
 </dd>
 
-### -field <b>HwLegacyResourceList</b>
+### -field HwLegacyResourceList
 
 <dd>
 <p>Pointer to an array of <a href="..\video\ns-video--video-access-range.md">VIDEO_ACCESS_RANGE</a> structures. Each structure describes a device I/O port or memory range for the video adapter that is not listed in PCI configuration space.</p>
 </dd>
 
-### -field <b>HwLegacyResourceCount</b>
+### -field HwLegacyResourceCount
 
 <dd>
 <p>Is the number of elements in the array to which <b>HwLegacyResourceList</b> points.</p>
 </dd>
 
-### -field <b>HwGetLegacyResources</b>
+### -field HwGetLegacyResources
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\video\nc-video-pvideo-hw-legacyresources.md">HwVidLegacyResources</a> function, which enables the driver to specify its legacy resources based on its device and vendor IDs.</p>
 </dd>
 
-### -field <b>AllowEarlyEnumeration</b>
+### -field AllowEarlyEnumeration
 
 <dd>
 <p>Allows the miniport driver to enumerate its child devices before the adapter is started; that is, the video port driver can call <a href="..\video\nc-video-pvideo-hw-get-child-descriptor.md">HwVidGetVideoChildDescriptor</a> before <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a> when this member is set to <b>TRUE</b>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>

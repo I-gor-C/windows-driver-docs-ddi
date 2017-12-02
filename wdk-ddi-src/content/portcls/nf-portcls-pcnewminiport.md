@@ -55,13 +55,13 @@ NTSTATUS PcNewMiniport(
 ## -parameters
 <dl>
 
-### -param <i>OutMiniport</i> [out]
+### -param OutMiniport [out]
 
 <dd>
 <p>Output pointer for the miniport-driver object created by this function. This parameter points to a caller-allocated pointer variable into which the function outputs a reference to the newly created <a href="..\portcls\nn-portcls-iminiport.md">IMiniport</a> object. This object is an instance of the miniport driver that is specified by the <i>ClassId</i> parameter. Specify a valid, non-NULL pointer value for this parameter.</p>
 </dd>
 
-### -param <i>ClassId</i> [in]
+### -param ClassId [in]
 
 <dd>
 <p>Specifies the miniport interface that is being requested. For more information, see the following Remarks section.</p>
@@ -108,9 +108,9 @@ NTSTATUS PcNewMiniport(
 
 <p>Microsoft provides the source code for the DMusUART and FMSynth miniport drivers, which can serve as a starting point for hardware vendors who might need to extend these drivers to manage additional device capabilities. Look in the sample audio drivers in the Windows Driver Kit (WDK).</p>
 
-<p>See <a href="NULL">Subdevice Creation</a> For more information about creating port and miniport drivers for subdevices.</p>
+<p>See <a href="https://msdn.microsoft.com/e4ba1209-adc6-48c3-9633-247e9e3849bc">Subdevice Creation</a> For more information about creating port and miniport drivers for subdevices.</p>
 
-<p>The <i>OutMiniport</i> parameter follows the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>OutMiniport</i> parameter follows the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

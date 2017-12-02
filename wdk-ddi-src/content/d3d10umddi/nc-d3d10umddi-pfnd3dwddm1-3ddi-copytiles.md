@@ -63,43 +63,43 @@ VOID APIENTRY* CopyTiles(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hTiledResource</i> 
+### -param hTiledResource 
 
 <dd>
 <p>A handle to the tiled resource.</p>
 </dd>
 
-### -param <i>pTileRegionStartCoord</i> [in]
+### -param pTileRegionStartCoord [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1-3ddi-tiled-resource-coordinate.md">D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE</a> structure that describes the starting coordinates of the destination tiled resource.</p>
 </dd>
 
-### -param <i>pTileRegionSize</i> [in]
+### -param pTileRegionSize [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1-3ddi-tile-region-size.md">D3DWDDM1_3DDI_TILE_REGION_SIZE</a> structure that describes the size of the tiled region.</p>
 </dd>
 
-### -param <i>hBuffer</i> 
+### -param hBuffer 
 
 <dd>
 <p>A handle to a resource that represents a default, dynamic, or staging buffer.</p>
 </dd>
 
-### -param <i>BufferStartOffsetInBytes</i> 
+### -param BufferStartOffsetInBytes 
 
 <dd>
 <p>The offset, in bytes, into the buffer at <i>hBuffer</i> to start the operation.</p>
 </dd>
 
-### -param <i>Flags</i> 
+### -param Flags 
 
 <dd>
 <p>A combination of <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm1-3ddi-tile-copy-flag.md">D3DWDDM1_3DDI_TILE_COPY_FLAG</a> values that are combined by using a bitwise <b>OR</b> operation.</p>

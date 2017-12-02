@@ -7,7 +7,7 @@ old-location: wdf\iwdfiotarget_formatrequestforioctl.htm
 old-project: wdf
 ms.assetid: fd0bbd6e-bb23-4d0c-9cac-9bb7657876a0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFIoTarget, FormatRequestForIoctl, IWDFIoTarget::FormatRequestForIoctl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,43 +62,43 @@ HRESULT FormatRequestForIoctl(
 ## -parameters
 <dl>
 
-### -param <i>pRequest</i> [in]
+### -param pRequest [in]
 
 <dd>
 <p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a> interface for the request object to format. </p>
 </dd>
 
-### -param <i>IoctlCode</i> [in]
+### -param IoctlCode [in]
 
 <dd>
 <p>A control code that identifies a specific operation to perform.</p>
 </dd>
 
-### -param <i>pFile</i> [in, optional]
+### -param pFile [in, optional]
 
 <dd>
 <p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface for the file object that is associated with the I/O control request. For the default I/O target, this parameter must be non-NULL.</p>
 </dd>
 
-### -param <i>pInputMemory</i> [in, optional]
+### -param pInputMemory [in, optional]
 
 <dd>
 <p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface that is used to access the input buffer for the request. This parameter is optional.</p>
 </dd>
 
-### -param <i>pInputMemoryOffset</i> [in, optional]
+### -param pInputMemoryOffset [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\wudfddi_types\ns-wudfddi-types--wdfmemory-offset.md">WDFMEMORY_OFFSET</a> structure that describes the input memory offset for the request. This parameter is optional.</p>
 </dd>
 
-### -param <i>pOutputMemory</i> [in, optional]
+### -param pOutputMemory [in, optional]
 
 <dd>
 <p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface that is used to access the output buffer for the request. This parameter is optional.</p>
 </dd>
 
-### -param <i>pOutputMemoryOffset</i> [in, optional]
+### -param pOutputMemoryOffset [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\wudfddi_types\ns-wudfddi-types--wdfmemory-offset.md">WDFMEMORY_OFFSET</a> structure that describes the output memory offset for the request. This parameter is optional.</p>
@@ -181,4 +181,4 @@ HRESULT FormatRequestForIoctl(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoTarget::FormatRequestForIoctl method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoTarget::FormatRequestForIoctl method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

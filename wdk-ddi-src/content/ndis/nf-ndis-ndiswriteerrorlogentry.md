@@ -7,7 +7,7 @@ old-location: netvista\ndiswriteerrorlogentry.htm
 old-project: netvista
 ms.assetid: d36174ef-4df2-49ec-9167-cfb150f090f8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisWriteErrorLogEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ VOID __cdecl NdisWriteErrorLogEntry(
 ## -parameters
 <dl>
 
-### -param <i>NdisAdapterHandle</i> [in]
+### -param NdisAdapterHandle [in]
 
 <dd>
 <p>Specifies the handle representing the NIC that is the cause of the I/O error to be logged. This
@@ -65,7 +65,7 @@ VOID __cdecl NdisWriteErrorLogEntry(
      <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>.</p>
 </dd>
 
-### -param <i>ErrorCode</i> [in]
+### -param ErrorCode [in]
 
 <dd>
 <p>Specifies the NDIS_ERRROR_CODE_<i>XXX</i> code that best describes the I/O error as one of the following values:
@@ -73,91 +73,91 @@ VOID __cdecl NdisWriteErrorLogEntry(
 <p></p>
 <dl>
 
-### -param <a id="NDIS_ERROR_CODE_RESOURCE_CONFLICT"></a><a id="ndis_error_code_resource_conflict"></a>NDIS_ERROR_CODE_RESOURCE_CONFLICT
+### -param NDIS_ERROR_CODE_RESOURCE_CONFLICT
 
 <dd>
 <p>The driver could not access a required resource.</p>
 </dd>
 
-### -param <a id="NDIS_ERROR_CODE_OUT_OF_RESOURCES"></a><a id="ndis_error_code_out_of_resources"></a>NDIS_ERROR_CODE_OUT_OF_RESOURCES
+### -param NDIS_ERROR_CODE_OUT_OF_RESOURCES
 
 <dd>
 <p>The hardware or driver ran out of resources.</p>
 </dd>
 
-### -param <a id="NDIS_ERROR_CODE_HARDWARE_FAILURE"></a><a id="ndis_error_code_hardware_failure"></a>NDIS_ERROR_CODE_HARDWARE_FAILURE
+### -param NDIS_ERROR_CODE_HARDWARE_FAILURE
 
 <dd>
 <p>The driver detected a hardware error.</p>
 </dd>
 
-### -param <a id="NDIS_ERROR_CODE_ADAPTER_NOT_FOUND"></a><a id="ndis_error_code_adapter_not_found"></a>NDIS_ERROR_CODE_ADAPTER_NOT_FOUND
+### -param NDIS_ERROR_CODE_ADAPTER_NOT_FOUND
 
 <dd>
 <p>The network adapter was not found.</p>
 </dd>
 
-### -param <a id="NDIS_ERROR_CODE_INTERRUPT_CONNECT"></a><a id="ndis_error_code_interrupt_connect"></a>NDIS_ERROR_CODE_INTERRUPT_CONNECT
+### -param NDIS_ERROR_CODE_INTERRUPT_CONNECT
 
 <dd>
 <p>The interrupt registration failed.</p>
 </dd>
 
-### -param <a id="NDIS_ERROR_CODE_DRIVER_FAILURE"></a><a id="ndis_error_code_driver_failure"></a>NDIS_ERROR_CODE_DRIVER_FAILURE
+### -param NDIS_ERROR_CODE_DRIVER_FAILURE
 
 <dd>
 <p>A driver failure occurred that does not match any of the other error conditions.</p>
 </dd>
 
-### -param <a id="NDIS_ERROR_CODE_BAD_VERSION"></a><a id="ndis_error_code_bad_version"></a>NDIS_ERROR_CODE_BAD_VERSION
+### -param NDIS_ERROR_CODE_BAD_VERSION
 
 <dd>
 <p>The driver detected a version mismatch.</p>
 </dd>
 
-### -param <a id="NDIS_ERROR_CODE_TIMEOUT"></a><a id="ndis_error_code_timeout"></a>NDIS_ERROR_CODE_TIMEOUT
+### -param NDIS_ERROR_CODE_TIMEOUT
 
 <dd>
 <p>A timeout expired.</p>
 </dd>
 
-### -param <a id="NDIS_ERROR_CODE_NETWORK_ADDRESS"></a><a id="ndis_error_code_network_address"></a>NDIS_ERROR_CODE_NETWORK_ADDRESS
+### -param NDIS_ERROR_CODE_NETWORK_ADDRESS
 
 <dd>
 <p>A network address is invalid.</p>
 </dd>
 
-### -param <a id="NDIS_ERROR_CODE_UNSUPPORTED_CONFIGURATION"></a><a id="ndis_error_code_unsupported_configuration"></a>NDIS_ERROR_CODE_UNSUPPORTED_CONFIGURATION
+### -param NDIS_ERROR_CODE_UNSUPPORTED_CONFIGURATION
 
 <dd>
 <p>The requested driver configuration is not supported.</p>
 </dd>
 
-### -param <a id="NDIS_ERROR_CODE_INVALID_VALUE_FROM_ADAPTER"></a><a id="ndis_error_code_invalid_value_from_adapter"></a>NDIS_ERROR_CODE_INVALID_VALUE_FROM_ADAPTER
+### -param NDIS_ERROR_CODE_INVALID_VALUE_FROM_ADAPTER
 
 <dd>
 <p>The network adapter hardware provided an invalid value.</p>
 </dd>
 
-### -param <a id="NDIS_ERROR_CODE_MISSING_CONFIGURATION_PARAMETER"></a><a id="ndis_error_code_missing_configuration_parameter"></a>NDIS_ERROR_CODE_MISSING_CONFIGURATION_PARAMETER
+### -param NDIS_ERROR_CODE_MISSING_CONFIGURATION_PARAMETER
 
 <dd>
 <p>A driver configuration parameter is missing in the registry.</p>
 </dd>
 
-### -param <a id="NDIS_ERROR_CODE_BAD_IO_BASE_ADDRESS"></a><a id="ndis_error_code_bad_io_base_address"></a>NDIS_ERROR_CODE_BAD_IO_BASE_ADDRESS
+### -param NDIS_ERROR_CODE_BAD_IO_BASE_ADDRESS
 
 <dd>
 <p>The I/O base address for the network adapter hardware is invalid.</p>
 </dd>
 
-### -param <a id="NDIS_ERROR_CODE_RECEIVE_SPACE_SMALL"></a><a id="ndis_error_code_receive_space_small"></a>NDIS_ERROR_CODE_RECEIVE_SPACE_SMALL
+### -param NDIS_ERROR_CODE_RECEIVE_SPACE_SMALL
 
 <dd>
 <p>The amount of receive buffer memory that is available is too small to receive data.</p>
 </dd>
 
-### -param <a id="NDIS_ERROR_CODE_ADAPTER_DISABLED"></a><a id="ndis_error_code_adapter_disabled"></a>NDIS_ERROR_CODE_ADAPTER_DISABLED
+### -param NDIS_ERROR_CODE_ADAPTER_DISABLED
 
 <dd>
 <p>The network adapter hardware is disabled.</p>
@@ -165,13 +165,13 @@ VOID __cdecl NdisWriteErrorLogEntry(
 </dl>
 </dd>
 
-### -param <i>NumberOfErrorValues</i> [in]
+### -param NumberOfErrorValues [in]
 
 <dd>
 <p>Specifies the number of ULONG values to follow this parameter.</p>
 </dd>
 
-### -param <i>...</i> 
+### -param ... 
 
 <dd>
 <p>Specifies a variable-sized array of ULONGs associated with the error to be logged.</p>
@@ -284,4 +284,4 @@ VOID __cdecl NdisWriteErrorLogEntry(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisWriteErrorLogEntry function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisWriteErrorLogEntry function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

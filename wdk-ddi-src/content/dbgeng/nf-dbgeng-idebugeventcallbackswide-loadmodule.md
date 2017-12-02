@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbackswide_loadmodule.htm
 old-project: debugger
 ms.assetid: 03a76d41-3af1-48a9-832a-1c255a8b0cc4
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugEventCallbacksWide, LoadModule, IDebugEventCallbacksWide::LoadModule
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,43 +60,43 @@ HRESULT LoadModule(
 ## -parameters
 <dl>
 
-### -param <i>ImageFileHandle</i> [in]
+### -param ImageFileHandle [in]
 
 <dd>
 <p>Specifies the handle to the module's image file.  If this information is not available, <i>ImageFileHandle</i> will be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>BaseOffset</i> [in]
+### -param BaseOffset [in]
 
 <dd>
 <p>Specifies the base address of the module in the target's memory address space.  If this information is not available, <i>BaseOffset</i> will be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ModuleSize</i> [in]
+### -param ModuleSize [in]
 
 <dd>
 <p>Specifies the module's image size in bytes.  If this information is not available, <i>ModuleSize</i> will be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ModuleName</i> [in, optional]
+### -param ModuleName [in, optional]
 
 <dd>
 <p>Specifies the simplified module name that is used by the debugger engine.  In most cases, this matches the image file name excluding the extension. If this information is not available, <i>ModuleName</i> will be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ImageName</i> [in, optional]
+### -param ImageName [in, optional]
 
 <dd>
 <p>Specifies the module's image file name, which can include the path.  If this information is not available, <i>ImageName</i> will be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>CheckSum</i> [in]
+### -param CheckSum [in]
 
 <dd>
 <p>Specifies the checksum of the module's image file.  If this information is not available, <i>CheckSum</i> will be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>TimeDateStamp</i> [in]
+### -param TimeDateStamp [in]
 
 <dd>
 <p>Specifies the time and date stamp of the module's image file.  If this information is not available, <i>TimeDateStamp</i> will be zero.</p>
@@ -104,7 +104,7 @@ HRESULT LoadModule(
 </dl>
 
 ## -returns
-<p>This method returns a <a href="debugger.debug_status_xxx">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
+<p>This method returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541651">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
 
 ## -remarks
 <p>This method is only called by the engine if the DEBUG_EVENT_LOAD_MODULE flag is set in the mask returned by <a href="debugger.idebugeventcallbackswide_getinterestmask">IDebugEventCallbacksWide::GetInterestMask</a>.</p>

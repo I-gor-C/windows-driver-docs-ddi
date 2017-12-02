@@ -62,50 +62,50 @@ HRESULT HalftonePattern(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pHTPattern</i> 
+### -param pHTPattern 
 
 <dd>
 <p>Caller-supplied pointer to a buffer that receives the method-supplied halftone pattern. Buffer size, in bytes, is:</p>
 <p>(((<i>dwHTPatternX</i> * <i>dwHTPatternY</i>) + 3)/4) * 4 * <i>dwHTNumPatterns</i>.</p>
 </dd>
 
-### -param <i>dwHTPatternX</i> 
+### -param dwHTPatternX 
 
 <dd>
 <p>Caller-supplied length, in pixels, of the halftone pattern, as specified by the first value in the <a href="wdkgloss.g#wdkgloss.generic_printer_description__gpd_#wdkgloss.generic_printer_description__gpd_"><i>GPD</i></a> file's *<b>HTPatternSize</b> attribute.</p>
 </dd>
 
-### -param <i>dwHTPatternY</i> 
+### -param dwHTPatternY 
 
 <dd>
 <p>Caller-supplied height, in pixels, of the halftone pattern, as specified by the second value in the GPD file's *<b>HTPatternSize</b> attribute.</p>
 </dd>
 
-### -param <i>dwHTNumPatterns</i> 
+### -param dwHTNumPatterns 
 
 <dd>
 <p>Caller-supplied number of patterns, as specified by the GPD file's *<b>HTNumPatterns</b> attribute. The number of patterns can be either 1 or 3.</p>
 </dd>
 
-### -param <i>dwCallbackID</i> 
+### -param dwCallbackID 
 
 <dd>
 <p>Caller-supplied value identifying the halftone method, as specified by the GPD file's *<b>HTCallbackID</b> attribute.</p>
 </dd>
 
-### -param <i>pResource</i> 
+### -param pResource 
 
 <dd>
 <p>Caller-supplied pointer to a buffer containing a halftone pattern, as specified by the GPD file's *<b>rcHTPatternID</b> attribute. This can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>dwResourceSize</i> 
+### -param dwResourceSize 
 
 <dd>
 <p>Caller-supplied size of the halftone pattern contained in the buffer pointed to by <i>pResource</i>. This is zero if <i>pResource</i> is <b>NULL</b>.</p>
@@ -182,7 +182,7 @@ HRESULT HalftonePattern(
 
 <p>The <code>IPrintOemUni::HalftonePattern</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="print.iprintoemuni_getimplementedmethod">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "HalftonePattern" as input.</p>
 
-<p>For more information about halftoning, see <a href="NULL">Customized Halftoning</a> and <a href="NULL">Option Attributes for the Halftone Feature</a>.</p>
+<p>For more information about halftoning, see <a href="https://msdn.microsoft.com/cc14ff92-743b-42ca-b70f-0df768762f01">Customized Halftoning</a> and <a href="https://msdn.microsoft.com/a188908a-ddf7-4b4d-a46d-e3550ffb0418">Option Attributes for the Halftone Feature</a>.</p>
 
 ## -requirements
 <table>

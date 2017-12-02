@@ -7,7 +7,7 @@ old-location: netvista\riltonesignalinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 1eeca3ef-6e1d-486f-b700-5ab8718a9285
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILTONESIGNALINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_TONESIGNAL_GPP2TONE"></a><a id="ril_param_tonesignal_gpp2tone"></a><b>RIL_PARAM_TONESIGNAL_GPP2TONE</b>
+### -field RIL_PARAM_TONESIGNAL_GPP2TONE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_TONESIGNAL_GPP2ISDNALERTING"></a><a id="ril_param_tonesignal_gpp2isdnalerting"></a><b>RIL_PARAM_TONESIGNAL_GPP2ISDNALERTING</b>
+### -field RIL_PARAM_TONESIGNAL_GPP2ISDNALERTING
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_TONESIGNAL_EXECUTOR"></a><a id="ril_param_tonesignal_executor"></a><b>RIL_PARAM_TONESIGNAL_EXECUTOR</b>
+### -field RIL_PARAM_TONESIGNAL_EXECUTOR
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_TONESIGNAL_All"></a><a id="ril_param_tonesignal_all"></a><a id="RIL_PARAM_TONESIGNAL_ALL"></a><b>RIL_PARAM_TONESIGNAL_All</b>
+### -field RIL_PARAM_TONESIGNAL_All
 
 <dd></dd>
 </dl>

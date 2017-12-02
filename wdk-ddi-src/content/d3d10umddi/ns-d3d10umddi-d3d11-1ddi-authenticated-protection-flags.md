@@ -61,13 +61,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>ProtectionEnabled</b>
+### -field ProtectionEnabled
 
 <dd>
 <p>If 1, video content protection is enabled.</p>
 </dd>
 
-### -field <b>OverlayOrFullscreenRequired</b>
+### -field OverlayOrFullscreenRequired
 
 <dd>
 <p>If 1, the application requires video to be displayed using either a hardware overlay or full-screen exclusive mode.
@@ -75,13 +75,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS {
 </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. Set all bits to zero.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>Use this member to access all of the bits in the union.</p>

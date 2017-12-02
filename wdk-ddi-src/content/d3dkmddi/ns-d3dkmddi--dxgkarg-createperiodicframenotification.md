@@ -58,31 +58,31 @@ typedef struct _DXGKARG_CREATEPERIODICFRAMENOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>A handle to the adapter associated with VidPnSourceID.</p>
 </dd>
 
-### -field <b>VidPnTargetID</b>
+### -field VidPnTargetID
 
 <dd>
 <p>The output that the compositor wishes to receive notifications for.</p>
 </dd>
 
-### -field <b>Time</b>
+### -field Time
 
 <dd>
 <p>Represents an offset before the VSync. The Time value may not be longer than a VSync interval while in VSync mode. In units of 100ns.</p>
 </dd>
 
-### -field <b>NotificationID</b>
+### -field NotificationID
 
 <dd>
 <p>Represents an ID for the notification that will be used to track which interrupt has fired from the GPU.</p>
 </dd>
 
-### -field <b>hNotification</b>
+### -field hNotification
 
 <dd>
 <p>A Handle to the notification object, later used to destroy the object.</p>

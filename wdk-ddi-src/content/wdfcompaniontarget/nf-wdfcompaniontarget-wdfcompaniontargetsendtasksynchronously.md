@@ -7,7 +7,7 @@ old-location: wdf\wdfcompaniontargetsendtasksynchronously.htm
 old-project: wdf
 ms.assetid: d58a275a-aaaa-4159-ba00-6998b7a63434
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfCompanionTargetSendTaskSynchronously
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,31 +62,31 @@ NTSTATUS WdfCompanionTargetSendTaskSynchronously(
 ## -parameters
 <dl>
 
-### -param <i>CompanionTarget</i> [in]
+### -param CompanionTarget [in]
 
 <dd></dd>
 
-### -param <i>TaskQueueIdentifier</i> [in]
+### -param TaskQueueIdentifier [in]
 
 <dd></dd>
 
-### -param <i>TaskOperationCode</i> [in]
+### -param TaskOperationCode [in]
 
 <dd></dd>
 
-### -param <i>InputBuffer</i> [in, optional]
+### -param InputBuffer [in, optional]
 
 <dd></dd>
 
-### -param <i>OutputBuffer</i> [in, optional]
+### -param OutputBuffer [in, optional]
 
 <dd></dd>
 
-### -param <i>TaskOptions</i> [in, optional]
+### -param TaskOptions [in, optional]
 
 <dd></dd>
 
-### -param <i>BytesReturned</i> [out]
+### -param BytesReturned [out]
 
 <dd></dd>
 </dl>

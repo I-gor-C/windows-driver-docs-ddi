@@ -58,7 +58,7 @@ VOID StrMiniCancelPacket(
 ## -parameters
 <dl>
 
-### -param <i>pSrb</i> [in]
+### -param pSrb [in]
 
 <dd>
 <p>Pointer to the stream request that had been canceled.</p>

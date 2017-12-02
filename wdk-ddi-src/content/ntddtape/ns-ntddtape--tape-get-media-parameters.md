@@ -58,31 +58,31 @@ typedef struct _TAPE_GET_MEDIA_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Capacity</b>
+### -field Capacity
 
 <dd>
 <p>Indicates the total number of bytes of user data the tape can hold. </p>
 </dd>
 
-### -field <b>Remaining</b>
+### -field Remaining
 
 <dd>
 <p>Indicates the number of bytes from the current position to the end of the tape. </p>
 </dd>
 
-### -field <b>BlockSize</b>
+### -field BlockSize
 
 <dd>
 <p>Indicates the block size, in bytes, or zero if the drive is using variable block size. </p>
 </dd>
 
-### -field <b>PartitionCount</b>
+### -field PartitionCount
 
 <dd>
 <p>Indicates the number of partitions on the tape. If the tape is not partitioned, <b>PartitionCount</b> is 1. </p>
 </dd>
 
-### -field <b>WriteProtected</b>
+### -field WriteProtected
 
 <dd>
 <p>Is set to <b>TRUE</b> if the tape is write-protected. </p>

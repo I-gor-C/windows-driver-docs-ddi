@@ -7,7 +7,7 @@ old-location: netvista\rilmsgprotocolid.htm
 old-project: netvista
 ms.assetid: 96406971-02df-4534-888d-70014f782c60
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -92,159 +92,159 @@ typedef enum _RILMSGPROTOCOLID {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGPROTOCOL_SMETOSME"></a><a id="ril_msgprotocol_smetosme"></a><b>RIL_MSGPROTOCOL_SMETOSME</b>
+### -field RIL_MSGPROTOCOL_SMETOSME
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_IMPLICIT"></a><a id="ril_msgprotocol_implicit"></a><b>RIL_MSGPROTOCOL_IMPLICIT</b>
+### -field RIL_MSGPROTOCOL_IMPLICIT
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_TELEX"></a><a id="ril_msgprotocol_telex"></a><b>RIL_MSGPROTOCOL_TELEX</b>
+### -field RIL_MSGPROTOCOL_TELEX
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_TELEFAX_GROUP3"></a><a id="ril_msgprotocol_telefax_group3"></a><b>RIL_MSGPROTOCOL_TELEFAX_GROUP3</b>
+### -field RIL_MSGPROTOCOL_TELEFAX_GROUP3
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_TELEFAX_GROUP4"></a><a id="ril_msgprotocol_telefax_group4"></a><b>RIL_MSGPROTOCOL_TELEFAX_GROUP4</b>
+### -field RIL_MSGPROTOCOL_TELEFAX_GROUP4
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_VOICEPHONE"></a><a id="ril_msgprotocol_voicephone"></a><b>RIL_MSGPROTOCOL_VOICEPHONE</b>
+### -field RIL_MSGPROTOCOL_VOICEPHONE
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_ERMES"></a><a id="ril_msgprotocol_ermes"></a><b>RIL_MSGPROTOCOL_ERMES</b>
+### -field RIL_MSGPROTOCOL_ERMES
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_PAGING"></a><a id="ril_msgprotocol_paging"></a><b>RIL_MSGPROTOCOL_PAGING</b>
+### -field RIL_MSGPROTOCOL_PAGING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_VIDEOTEX"></a><a id="ril_msgprotocol_videotex"></a><b>RIL_MSGPROTOCOL_VIDEOTEX</b>
+### -field RIL_MSGPROTOCOL_VIDEOTEX
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_TELETEX"></a><a id="ril_msgprotocol_teletex"></a><b>RIL_MSGPROTOCOL_TELETEX</b>
+### -field RIL_MSGPROTOCOL_TELETEX
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_TELETEX_PSPDN"></a><a id="ril_msgprotocol_teletex_pspdn"></a><b>RIL_MSGPROTOCOL_TELETEX_PSPDN</b>
+### -field RIL_MSGPROTOCOL_TELETEX_PSPDN
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_TELETEX_CSPDN"></a><a id="ril_msgprotocol_teletex_cspdn"></a><b>RIL_MSGPROTOCOL_TELETEX_CSPDN</b>
+### -field RIL_MSGPROTOCOL_TELETEX_CSPDN
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_TELETEX_PSTN"></a><a id="ril_msgprotocol_teletex_pstn"></a><b>RIL_MSGPROTOCOL_TELETEX_PSTN</b>
+### -field RIL_MSGPROTOCOL_TELETEX_PSTN
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_TELETEX_ISDN"></a><a id="ril_msgprotocol_teletex_isdn"></a><b>RIL_MSGPROTOCOL_TELETEX_ISDN</b>
+### -field RIL_MSGPROTOCOL_TELETEX_ISDN
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_UCI"></a><a id="ril_msgprotocol_uci"></a><b>RIL_MSGPROTOCOL_UCI</b>
+### -field RIL_MSGPROTOCOL_UCI
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_MSGHANDLING"></a><a id="ril_msgprotocol_msghandling"></a><b>RIL_MSGPROTOCOL_MSGHANDLING</b>
+### -field RIL_MSGPROTOCOL_MSGHANDLING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_X400"></a><a id="ril_msgprotocol_x400"></a><b>RIL_MSGPROTOCOL_X400</b>
+### -field RIL_MSGPROTOCOL_X400
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_EMAIL"></a><a id="ril_msgprotocol_email"></a><b>RIL_MSGPROTOCOL_EMAIL</b>
+### -field RIL_MSGPROTOCOL_EMAIL
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_SCSPECIFIC1"></a><a id="ril_msgprotocol_scspecific1"></a><b>RIL_MSGPROTOCOL_SCSPECIFIC1</b>
+### -field RIL_MSGPROTOCOL_SCSPECIFIC1
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_SCSPECIFIC2"></a><a id="ril_msgprotocol_scspecific2"></a><b>RIL_MSGPROTOCOL_SCSPECIFIC2</b>
+### -field RIL_MSGPROTOCOL_SCSPECIFIC2
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_SCSPECIFIC3"></a><a id="ril_msgprotocol_scspecific3"></a><b>RIL_MSGPROTOCOL_SCSPECIFIC3</b>
+### -field RIL_MSGPROTOCOL_SCSPECIFIC3
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_SCSPECIFIC4"></a><a id="ril_msgprotocol_scspecific4"></a><b>RIL_MSGPROTOCOL_SCSPECIFIC4</b>
+### -field RIL_MSGPROTOCOL_SCSPECIFIC4
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_SCSPECIFIC5"></a><a id="ril_msgprotocol_scspecific5"></a><b>RIL_MSGPROTOCOL_SCSPECIFIC5</b>
+### -field RIL_MSGPROTOCOL_SCSPECIFIC5
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_SCSPECIFIC6"></a><a id="ril_msgprotocol_scspecific6"></a><b>RIL_MSGPROTOCOL_SCSPECIFIC6</b>
+### -field RIL_MSGPROTOCOL_SCSPECIFIC6
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_SCSPECIFIC7"></a><a id="ril_msgprotocol_scspecific7"></a><b>RIL_MSGPROTOCOL_SCSPECIFIC7</b>
+### -field RIL_MSGPROTOCOL_SCSPECIFIC7
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_GSMSTATION"></a><a id="ril_msgprotocol_gsmstation"></a><b>RIL_MSGPROTOCOL_GSMSTATION</b>
+### -field RIL_MSGPROTOCOL_GSMSTATION
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_SM_TYPE0"></a><a id="ril_msgprotocol_sm_type0"></a><b>RIL_MSGPROTOCOL_SM_TYPE0</b>
+### -field RIL_MSGPROTOCOL_SM_TYPE0
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_RSM_TYPE1"></a><a id="ril_msgprotocol_rsm_type1"></a><b>RIL_MSGPROTOCOL_RSM_TYPE1</b>
+### -field RIL_MSGPROTOCOL_RSM_TYPE1
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_RSM_TYPE2"></a><a id="ril_msgprotocol_rsm_type2"></a><b>RIL_MSGPROTOCOL_RSM_TYPE2</b>
+### -field RIL_MSGPROTOCOL_RSM_TYPE2
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_RSM_TYPE3"></a><a id="ril_msgprotocol_rsm_type3"></a><b>RIL_MSGPROTOCOL_RSM_TYPE3</b>
+### -field RIL_MSGPROTOCOL_RSM_TYPE3
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_RSM_TYPE4"></a><a id="ril_msgprotocol_rsm_type4"></a><b>RIL_MSGPROTOCOL_RSM_TYPE4</b>
+### -field RIL_MSGPROTOCOL_RSM_TYPE4
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_RSM_TYPE5"></a><a id="ril_msgprotocol_rsm_type5"></a><b>RIL_MSGPROTOCOL_RSM_TYPE5</b>
+### -field RIL_MSGPROTOCOL_RSM_TYPE5
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_RSM_TYPE6"></a><a id="ril_msgprotocol_rsm_type6"></a><b>RIL_MSGPROTOCOL_RSM_TYPE6</b>
+### -field RIL_MSGPROTOCOL_RSM_TYPE6
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_RSM_TYPE7"></a><a id="ril_msgprotocol_rsm_type7"></a><b>RIL_MSGPROTOCOL_RSM_TYPE7</b>
+### -field RIL_MSGPROTOCOL_RSM_TYPE7
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_RETURNCALL"></a><a id="ril_msgprotocol_returncall"></a><b>RIL_MSGPROTOCOL_RETURNCALL</b>
+### -field RIL_MSGPROTOCOL_RETURNCALL
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_ME_DOWNLOAD"></a><a id="ril_msgprotocol_me_download"></a><b>RIL_MSGPROTOCOL_ME_DOWNLOAD</b>
+### -field RIL_MSGPROTOCOL_ME_DOWNLOAD
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_DEPERSONALIZATION"></a><a id="ril_msgprotocol_depersonalization"></a><b>RIL_MSGPROTOCOL_DEPERSONALIZATION</b>
+### -field RIL_MSGPROTOCOL_DEPERSONALIZATION
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_UICC_DOWNLOAD"></a><a id="ril_msgprotocol_uicc_download"></a><b>RIL_MSGPROTOCOL_UICC_DOWNLOAD</b>
+### -field RIL_MSGPROTOCOL_UICC_DOWNLOAD
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPROTOCOL_MAX"></a><a id="ril_msgprotocol_max"></a><b>RIL_MSGPROTOCOL_MAX</b>
+### -field RIL_MSGPROTOCOL_MAX
 
 <dd></dd>
 </dl>

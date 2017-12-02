@@ -58,31 +58,31 @@ typedef struct _SendRPS_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>Contains a worldwide name for the local port through which the RPS command is sent. </p>
 </dd>
 
-### -field <b>AgentWWN</b>
+### -field AgentWWN
 
 <dd>
 <p>Contains a worldwide name for the port that is to be queried for the status of the port indicated by <b>ObjectWWN</b>. </p>
 </dd>
 
-### -field <b>ObjectWWN</b>
+### -field ObjectWWN
 
 <dd>
 <p>Contains the worldwide name of the port for which port status is to be returned. </p>
 </dd>
 
-### -field <b>AgentDomain</b>
+### -field AgentDomain
 
 <dd>
 <p>Contains the domain number of the domain controller to be queried for the status of the port indicated by <b>ObjectWWN</b>. </p>
 </dd>
 
-### -field <b>ObjectPortNumber</b>
+### -field ObjectPortNumber
 
 <dd>
 <p>Contains the worldwide name of the port for which port status is to be returned. </p>

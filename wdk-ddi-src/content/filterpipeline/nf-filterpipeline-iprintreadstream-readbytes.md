@@ -57,25 +57,25 @@ HRESULT ReadBytes(
 ## -parameters
 <dl>
 
-### -param <i>pvBuffer</i> [out]
+### -param pvBuffer [out]
 
 <dd>
 <p>A pointer to the buffer that the bytes will be read into..</p>
 </dd>
 
-### -param <i>cbRequested</i> [in]
+### -param cbRequested [in]
 
 <dd>
 <p>The number of bytes that are requested for the read.</p>
 </dd>
 
-### -param <i>pcbRead</i> [out]
+### -param pcbRead [out]
 
 <dd>
 <p>A pointer to the number of bytes actually read.</p>
 </dd>
 
-### -param <i>pbEndOfFile</i> [out]
+### -param pbEndOfFile [out]
 
 <dd>
 <p>A pointer to a <b>BOOL</b> value that indicates whether the end of file (EOF) was read.</p>

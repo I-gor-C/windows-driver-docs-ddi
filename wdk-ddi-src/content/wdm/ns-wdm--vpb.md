@@ -7,7 +7,7 @@ old-location: ifsk\vpb.htm
 old-project: ifsk
 ms.assetid: aba1638f-1ab0-4953-afe9-1f539e5bd967
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: VPB, VPB, *PVPB
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,19 @@ typedef struct _VPB {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>A read-only member that is used by the system to indicate that the structure is a VPB object.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A read-only member that is used by the system to indicate that the structure is a VPB object.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <table>
@@ -86,7 +86,7 @@ typedef struct _VPB {
 <tr>
 <td width="40%"><a id="VPB_MOUNTED"></a><a id="vpb_mounted"></a><dl>
 
-### -field <b>VPB_MOUNTED</b>
+### -field VPB_MOUNTED
 
 </dl>
 </td>
@@ -97,7 +97,7 @@ typedef struct _VPB {
 <tr>
 <td width="40%"><a id="VPB_LOCKED"></a><a id="vpb_locked"></a><dl>
 
-### -field <b>VPB_LOCKED</b>
+### -field VPB_LOCKED
 
 </dl>
 </td>
@@ -108,7 +108,7 @@ typedef struct _VPB {
 <tr>
 <td width="40%"><a id="VPB_PERSISTENT"></a><a id="vpb_persistent"></a><dl>
 
-### -field <b>VPB_PERSISTENT</b>
+### -field VPB_PERSISTENT
 
 </dl>
 </td>
@@ -119,7 +119,7 @@ typedef struct _VPB {
 <tr>
 <td width="40%"><a id="VPB_REMOVE_PENDING"></a><a id="vpb_remove_pending"></a><dl>
 
-### -field <b>VPB_REMOVE_PENDING</b>
+### -field VPB_REMOVE_PENDING
 
 </dl>
 </td>
@@ -130,7 +130,7 @@ typedef struct _VPB {
 <tr>
 <td width="40%"><a id="VPB_RAW_MOUNT"></a><a id="vpb_raw_mount"></a><dl>
 
-### -field <b>VPB_RAW_MOUNT</b>
+### -field VPB_RAW_MOUNT
 
 </dl>
 </td>
@@ -141,7 +141,7 @@ typedef struct _VPB {
 <tr>
 <td width="40%"><a id="VPB_DIRECT_WRITES_ALLOWED"></a><a id="vpb_direct_writes_allowed"></a><dl>
 
-### -field <b>VPB_DIRECT_WRITES_ALLOWED</b>
+### -field VPB_DIRECT_WRITES_ALLOWED
 
 </dl>
 </td>
@@ -153,37 +153,37 @@ typedef struct _VPB {
 <p> </p>
 </dd>
 
-### -field <b>VolumeLabelLength</b>
+### -field VolumeLabelLength
 
 <dd>
 <p>A read/write member that specifies the length of the volume label, in bytes. This member must be set by the file system driver. If the volume has no label, this member must be set to zero.</p>
 </dd>
 
-### -field <b>DeviceObject</b>
+### -field DeviceObject
 
 <dd>
 <p>A read/write member, set by the file system driver, which points to a device object of type <b>FILE_DEVICE_DISK_FILE_SYSTEM</b>. This device object is created by the file system driver to represent the mounted volume.</p>
 </dd>
 
-### -field <b>RealDevice</b>
+### -field RealDevice
 
 <dd>
 <p>A read-only member, set by the I/O manager, which points to the device object for a physical or virtual disk device that contains the mountable logical volume (pointed to by <b>DeviceObject</b>).</p>
 </dd>
 
-### -field <b>SerialNumber</b>
+### -field SerialNumber
 
 <dd>
 <p>A read/write member that specifies the serial number associated with the file system volume.  This member should be set by the file system driver, if available.</p>
 </dd>
 
-### -field <b>ReferenceCount</b>
+### -field ReferenceCount
 
 <dd>
 <p>A read-only member that specifies the reference count for the VPB structure. If the reference count for the VPB structure is greater than zero, the I/O manager does not deallocate the VPB structure. Be aware that <b>ReferenceCount</b> can be considered a read/write member when a file system driver must keep the volume present to process a tear down request.</p>
 </dd>
 
-### -field <b>VolumeLabel</b>
+### -field VolumeLabel
 
 <dd>
 <p>A read/write member, set by the file system driver, that specifies the label of the mounted volume.  The length of the volume label must be 32 wide-characters or less. Currently <b>MAXIMUM_VOLUME_LABEL_LENGTH</b> is defined as follows:</p>
@@ -234,4 +234,4 @@ typedef struct _VPB {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20VPB structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20VPB structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

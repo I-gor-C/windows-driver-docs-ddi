@@ -60,25 +60,25 @@ VOID APIENTRY CreateShaderResourceView(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pCreateShaderResourceView</i> [in]
+### -param pCreateShaderResourceView [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-createshaderresourceview.md">D3D11DDIARG_CREATESHADERRESOURCEVIEW</a> structure that describes the parameters that the user-mode display driver uses to create a shader resource view. </p>
 </dd>
 
-### -param <i>hShaderResourceView</i> [in]
+### -param hShaderResourceView [in]
 
 <dd>
 <p> A handle to the driver's private data for the shader resource view. The driver returns the size, in bytes, of the memory region that the Microsoft Direct3D runtime must allocate for the private data from a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-calcprivateshaderresourceviewsize.md">CalcPrivateShaderResourceViewSize(D3D11)</a> function. The handle is  just a pointer to a region of memory, the size of which the driver requested. The driver uses this region of memory to store internal data structures that are related to its shader resource view object. </p>
 </dd>
 
-### -param <i>hRTShaderResourceView</i> [in]
+### -param hRTShaderResourceView [in]
 
 <dd>
 <p> A handle to the shader resource view that the driver should use when it calls back into the Direct3D runtime. </p>

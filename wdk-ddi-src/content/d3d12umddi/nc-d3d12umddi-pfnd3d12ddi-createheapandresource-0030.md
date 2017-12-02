@@ -62,49 +62,49 @@ HRESULT  APIENTRY* PFND3D12DDI_CREATEHEAPANDRESOURCE_0030(
 ## -parameters
 <dl>
 
-### -param <i>d3d12ddi_hdevice</i> 
+### -param d3d12ddi_hdevice 
 
 <dd>
 <p>The device being operated on.</p>
 </dd>
 
-### -param <i>d3d12ddiarg_createheap_0001</i> [in, optional]
+### -param d3d12ddiarg_createheap_0001 [in, optional]
 
 <dd>
 <p>Arguments used to create a heap.</p>
 </dd>
 
-### -param <i>d3d12ddi_hheap</i> 
+### -param d3d12ddi_hheap 
 
 <dd>
 <p>Used to create a heap.</p>
 </dd>
 
-### -param <i>d3d12ddi_hrtresource</i> 
+### -param d3d12ddi_hrtresource 
 
 <dd>
 <p>Used to create a resource.</p>
 </dd>
 
-### -param <i>d3d12ddiarg_createresource_0003</i> [in, optional]
+### -param d3d12ddiarg_createresource_0003 [in, optional]
 
 <dd>
 <p>Arguments used to create a resource.</p>
 </dd>
 
-### -param <i>d3d12ddi_clear_values</i> [in, optional]
+### -param d3d12ddi_clear_values [in, optional]
 
 <dd>
 <p>Used to clear the values of the resource.</p>
 </dd>
 
-### -param <i>d3d12ddi_hprotectedresourcesession_0030</i> 
+### -param d3d12ddi_hprotectedresourcesession_0030 
 
 <dd>
 <p>The protected resource session.</p>
 </dd>
 
-### -param <i>d3d12ddi_hresource</i> 
+### -param d3d12ddi_hresource 
 
 <dd>
 <p>The hardware resource.</p>

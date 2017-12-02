@@ -56,19 +56,19 @@ NTSTATUS GetEngineFormatSize(
 ## -parameters
 <dl>
 
-### -param <i>ulNodeId</i> [in]
+### -param ulNodeId [in]
 
 <dd>
 <p>The ID of the audio engine node.</p>
 </dd>
 
-### -param <i>formatType</i> [in]
+### -param formatType [in]
 
 <dd>
 <p>An enum of type <a href="..\portcls\ne-portcls-eengineformattype.md">eEngineFormatType</a> that represents the audio data format type.</p>
 </dd>
 
-### -param <i>pulFormatSize</i> [out]
+### -param pulFormatSize [out]
 
 <dd>
 <p>The data buffer size for the format type.</p>

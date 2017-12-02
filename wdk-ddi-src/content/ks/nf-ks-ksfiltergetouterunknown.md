@@ -54,7 +54,7 @@ PUNKNOWN __inline KsFilterGetOuterUnknown(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure for which to return the outer <b>IUnknown</b>.</p>
@@ -120,7 +120,7 @@ PUNKNOWN __inline KsFilterGetOuterUnknown(
 </dt>
 <dt><b>KsRegisterAggregatedClientUnknown</b></dt>
 <dt>
-<a href="NULL">AVStream Overview</a>
+<a href="https://msdn.microsoft.com/305039fe-0a00-4f3e-ae1a-61c50a2f2fb3">AVStream Overview</a>
 </dt>
 <dt>
 <a href="..\ks\nf-ks-ksfilterregisteraggregatedclientunknown.md">KsFilterRegisterAggregatedClientUnknown</a>
@@ -129,7 +129,7 @@ PUNKNOWN __inline KsFilterGetOuterUnknown(
 <a href="..\ks\nf-ks-kspingetouterunknown.md">KsPinGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 </dt>
 </dl>
 <p> </p>

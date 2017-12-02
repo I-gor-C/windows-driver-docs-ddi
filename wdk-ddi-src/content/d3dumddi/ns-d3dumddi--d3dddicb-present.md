@@ -58,31 +58,31 @@ typedef struct _D3DDDICB_PRESENT {
 ## -struct-fields
 <dl>
 
-### -field <b>hSrcAllocation</b>
+### -field hSrcAllocation
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the source allocation. The Microsoft Direct3D runtime's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-allocatecb.md">pfnAllocateCb</a> function returns this handle. Therefore, the user-mode display driver should use this handle to copy content from.</p>
 </dd>
 
-### -field <b>hDstAllocation</b>
+### -field hDstAllocation
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the destination allocation. <b>hDstAllocation</b> can be zero if the destination is unknown; kernel mode will determine the destination just before DMA of the hardware command stream to the graphics processor.</p>
 </dd>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] A handle to the context that the driver submits the copy operation to. The user-mode display driver previously created this context by calling the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function. </p>
 </dd>
 
-### -field <b>BroadcastContextCount</b>
+### -field BroadcastContextCount
 
 <dd>
 <p>[in] The number of additional contexts in the array that the <b>BroadcastContext</b> member specifies.</p>
 </dd>
 
-### -field <b>BroadcastContext</b>
+### -field BroadcastContext
 
 <dd>
 <p>[in] An array of handles to the additional contexts to broadcast the current present operation to. The D3DDDI_MAX_BROADCAST_CONTEXT constant, which is defined as 64, defines the maximum number of additional contexts that the user-mode display driver can broadcast the current present operation to. </p>

@@ -59,37 +59,37 @@ typedef struct _SENDCMDINPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>cBufferSize</b>
+### -field cBufferSize
 
 <dd>
 <p>Contains the buffer size, in bytes.</p>
 </dd>
 
-### -field <b>irDriveRegs</b>
+### -field irDriveRegs
 
 <dd>
 <p>Contains a <a href="..\ntdddisk\ns-ntdddisk--ideregs.md">IDEREGS</a> structure used to report the contents of the IDE controller registers.</p>
 </dd>
 
-### -field <b>bDriveNumber</b>
+### -field bDriveNumber
 
 <dd>
 <p>The <b>bDriveNumber</b> member is opaque. Do not use it. The operating system ignores this member, because the physical drive that receives the request depends on the handle that the caller uses when making the request.</p>
 </dd>
 
-### -field <b>bReserved</b>
+### -field bReserved
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>bBuffer</b>
+### -field bBuffer
 
 <dd>
 <p>Pointer to the input buffer. </p>

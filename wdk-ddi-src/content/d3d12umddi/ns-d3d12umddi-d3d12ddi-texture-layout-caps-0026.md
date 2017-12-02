@@ -58,31 +58,31 @@ typedef struct D3D12DDI_TEXTURE_LAYOUT_CAPS_0026 {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceDependentLayoutCount</b>
+### -field DeviceDependentLayoutCount
 
 <dd>
 <p>A device dependent layout count. This must be the number of device-dependent layouts supported by the adapter. </p>
 </dd>
 
-### -field <b>DeviceDependentSwizzleCount</b>
+### -field DeviceDependentSwizzleCount
 
 <dd>
 <p>A device dependent swizzle count. This must be the number of device-dependent swizzle patterns supported by the adapter. </p>
 </dd>
 
-### -field <b>Supports64KStandardSwizzle</b>
+### -field Supports64KStandardSwizzle
 
 <dd>
 <p>Whether the texture layout supports 64K standard swizzle.</p>
 </dd>
 
-### -field <b>SupportsRowMajorTexture</b>
+### -field SupportsRowMajorTexture
 
 <dd>
 <p>Whether the texture layout supports row major texture.</p>
 </dd>
 
-### -field <b>IndexableSwizzlePatterns</b>
+### -field IndexableSwizzlePatterns
 
 <dd>
 <p>Whether the texture layout can choose any swizzle pattern for a subresource. </p>

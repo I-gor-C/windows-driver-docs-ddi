@@ -55,13 +55,13 @@ typedef struct _MOUNTMGR_TARGET_NAME {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceNameLength</b>
+### -field DeviceNameLength
 
 <dd>
 <p>Contains the length, in bytes, of the device name stored in <b>DeviceName</b>. </p>
 </dd>
 
-### -field <b>DeviceName</b>
+### -field DeviceName
 
 <dd>
 <p>Contains the nonpersistent target device name. </p>
@@ -69,7 +69,7 @@ typedef struct _MOUNTMGR_TARGET_NAME {
 </dl>
 
 ## -remarks
-<p>Nonpersistent target names must contain the full path of a target object name in the system object tree. For example: "\Device\HarddiskVolume1". For a discussion of the different between symbolic links, unique IDs, and nonpersistent device names, see <a href="NULL">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
+<p>Nonpersistent target names must contain the full path of a target object name in the system object tree. For example: "\Device\HarddiskVolume1". For a discussion of the different between symbolic links, unique IDs, and nonpersistent device names, see <a href="storage.supporting_mount_manager_requests_in_a_storage_class_driver">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
 
 ## -requirements
 <table>

@@ -54,7 +54,7 @@ typedef struct _DOT4_DC_DESTROY_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>bHsid</b>
+### -field bHsid
 
 <dd>
 <p>Specifies the host socket created by CREATE_SOCKET.</p>

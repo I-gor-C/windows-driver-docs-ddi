@@ -55,7 +55,7 @@ NTSTATUS IoUnregisterPlugPlayNotificationEx(
 ## -parameters
 <dl>
 
-### -param <i>NotificationEntry</i> [in]
+### -param NotificationEntry [in]
 
 <dd>
 <p>A pointer to an opaque value that represents the registration to cancel. The caller previously obtained this value by calling the <a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a> routine. </p>

@@ -55,13 +55,13 @@ NTSTATUS RtlIntToShort(
 ## -parameters
 <dl>
 
-### -param <i>iOperand</i> [in]
+### -param iOperand [in]
 
 <dd>
 <p>The value to be converted.</p>
 </dd>
 
-### -param <i>psResult</i> [out]
+### -param psResult [out]
 
 <dd>
 <p>A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

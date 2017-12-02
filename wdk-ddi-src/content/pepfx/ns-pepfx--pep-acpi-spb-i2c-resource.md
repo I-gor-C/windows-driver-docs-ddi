@@ -56,19 +56,19 @@ typedef struct _PEP_ACPI_SPB_I2C_RESOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>SpbCommon</b>
+### -field SpbCommon
 
 <dd>
 <p>A <a href="..\pepfx\ns-pepfx--pep-acpi-spb-resource.md">PEP_ACPI_SPB_RESOURCE</a> structure describing this resource.</p>
 </dd>
 
-### -field <b>ConnectionSpeed</b>
+### -field ConnectionSpeed
 
 <dd>
 <p>The maximum speed, in hertz, supported by this connection.</p>
 </dd>
 
-### -field <b>SlaveAddress</b>
+### -field SlaveAddress
 
 <dd>
 <p>The I2C bus address for this connection.</p>

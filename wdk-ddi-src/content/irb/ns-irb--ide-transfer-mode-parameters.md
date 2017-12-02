@@ -59,37 +59,37 @@ typedef struct _IDE_TRANSFER_MODE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>ChannelNumber</b>
+### -field ChannelNumber
 
 <dd>
 <p>Indicates the channel number whose mode parameters are to be set.</p>
 </dd>
 
-### -field <b>DeviceType</b>
+### -field DeviceType
 
 <dd>
 <p>Contains an enumeration value of type <a href="..\irb\ne-irb-ide-device-type.md">IDE_DEVICE_TYPE</a> that indicates the type of device. The miniport driver should not select a transfer mode if the device type is <b>DeviceNotExist</b>.</p>
 </dd>
 
-### -field <b>IoReadySupported</b>
+### -field IoReadySupported
 
 <dd>
 <p>Indicates when <b>TRUE</b> that bit 11 of word 49 of the indicated device's identify data is set to 1. An IDE request with a function value of IRB_FUNCTION_ATA_IDENTIFY will retrieve a device's identify data. For more information about ATA identify data, see the sections on the Identify Device information packet in version 6.0 of the <i>ATA/ATAPI specification</i>.</p>
 </dd>
 
-### -field <b>DeviceTransferModeSupported</b>
+### -field DeviceTransferModeSupported
 
 <dd>
 <p>Contains a bitmap that indicates the supported transfer modes for each of the devices on the channel. The port driver sets this member. The miniport driver must not select a transfer mode that the port driver does not support. For more information about this member, see the <b>Remarks</b> section.</p>
 </dd>
 
-### -field <b>DeviceTransferModeCurrent</b>
+### -field DeviceTransferModeCurrent
 
 <dd>
 <p>Contains a bitmap that indicates the current transfer mode settings for each of the device on the channel. The port driver retrieves the current transfer mode of the devices from their identify device data. For more information about this member, see the <b>Remarks</b> section.</p>
 </dd>
 
-### -field <b>DeviceTransferModeSelected</b>
+### -field DeviceTransferModeSelected
 
 <dd>
 <p>Contains a bitmap that indicates the selected transfer mode settings for each of the device on the channel. The miniport driver should use this member to indicate to the port driver which transfer modes it selects. For more information about this member, see the <b>Remarks</b> section.</p>

@@ -7,7 +7,7 @@ old-location: netvista\fwps_incoming_metadata_values0.htm
 old-project: netvista
 ms.assetid: fba7eb60-0d19-4bfd-b484-2e615d3e9237
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_INCOMING_METADATA_VALUES0_, FWPS_INCOMING_METADATA_VALUES0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -110,7 +110,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 ## -struct-fields
 <dl>
 
-### -field <b>currentMetadataValues</b>
+### -field currentMetadataValues
 
 <dd>
 <p>A UINT32 value that contains a bitwise OR of a combination of 
@@ -118,19 +118,19 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      specify which metadata values are set in the structure.</p>
 </dd>
 
-### -field <b>flags</b>
+### -field flags
 
 <dd>
 <p>Used internally by the filter engine. Callout drivers should ignore this member.</p>
 </dd>
 
-### -field <b>reserved</b>
+### -field reserved
 
 <dd>
 <p>Reserved for system use. Callout drivers should ignore this member.</p>
 </dd>
 
-### -field <b>discardMetadata</b>
+### -field discardMetadata
 
 <dd>
 <p>An 
@@ -140,7 +140,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <b>currentMetadataValues</b> member.</p>
 </dd>
 
-### -field <b>flowHandle</b>
+### -field flowHandle
 
 <dd>
 <p>A handle for the data flow. This member contains valid data only if the
@@ -148,7 +148,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <b>currentMetadataValues</b> member.</p>
 </dd>
 
-### -field <b>ipHeaderSize</b>
+### -field ipHeaderSize
 
 <dd>
 <p>The offset, in bytes, of the IP header.
@@ -196,7 +196,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <b>currentMetadataValues</b> member.</p>
 </dd>
 
-### -field <b>transportHeaderSize</b>
+### -field transportHeaderSize
 
 <dd>
 <p>The offset or size, in bytes, of the transport header.
@@ -228,7 +228,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <b>currentMetadataValues</b> member.</p>
 </dd>
 
-### -field <b>processPath</b>
+### -field processPath
 
 <dd>
 <p>A pointer to an 
@@ -238,7 +238,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <b>currentMetadataValues</b> member.</p>
 </dd>
 
-### -field <b>token</b>
+### -field token
 
 <dd>
 <p>A handle for the token used to validate the permissions for the user. This member contains valid
@@ -246,7 +246,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <b>currentMetadataValues</b> member.</p>
 </dd>
 
-### -field <b>processId</b>
+### -field processId
 
 <dd>
 <p>The process ID for the process that owns the endpoint. This member contains valid data only if the
@@ -254,7 +254,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <b>currentMetadataValues</b> member.</p>
 </dd>
 
-### -field <b>sourceInterfaceIndex</b>
+### -field sourceInterfaceIndex
 
 <dd>
 <p>The index of the network interface where an incoming packet was received. This member contains
@@ -262,7 +262,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <b>currentMetadataValues</b> member.</p>
 </dd>
 
-### -field <b>destinationInterfaceIndex</b>
+### -field destinationInterfaceIndex
 
 <dd>
 <p>The index of the network interface where an outgoing packet is to be sent. This member contains
@@ -270,7 +270,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <b>currentMetadataValues</b> member.</p>
 </dd>
 
-### -field <b>compartmentId</b>
+### -field compartmentId
 
 <dd>
 <p>The identifier of the routing compartment in which the packet either was received or is being
@@ -280,7 +280,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <b>currentMetadataValues</b> member.</p>
 </dd>
 
-### -field <b>fragmentMetadata</b>
+### -field fragmentMetadata
 
 <dd>
 <p>An 
@@ -291,7 +291,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <b>currentMetadataValues</b> member.</p>
 </dd>
 
-### -field <b>pathMtu</b>
+### -field pathMtu
 
 <dd>
 <p>The path maximum transmission unit (path MTU) for an outbound packet. This value indicates the
@@ -300,7 +300,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <b>currentMetadataValues</b> member.</p>
 </dd>
 
-### -field <b>completionHandle</b>
+### -field completionHandle
 
 <dd>
 <p>A completion handle that is required to pend the current filtering operation. This member contains
@@ -308,7 +308,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <b>currentMetadataValues</b> member.</p>
 </dd>
 
-### -field <b>transportEndpointHandle</b>
+### -field transportEndpointHandle
 
 <dd>
 <p>An endpoint handle that indicates the end of the packet to be injected into the outbound transport
@@ -317,7 +317,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <b>currentMetadataValues</b> member.</p>
 </dd>
 
-### -field <b>remoteScopeId</b>
+### -field remoteScopeId
 
 <dd>
 <p>The remote scope identifier to be used in outbound transport layer injection. This member contains
@@ -325,7 +325,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <b>currentMetadataValues</b> member.</p>
 </dd>
 
-### -field <b>controlData</b>
+### -field controlData
 
 <dd>
 <p>An optional socket control data object. This member contains valid data only if the
@@ -335,14 +335,14 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      <a href="netvista.cmsghdr">CMSGHDR</a>.</p>
 </dd>
 
-### -field <b>controlDataLength</b>
+### -field controlDataLength
 
 <dd>
 <p>The length, in bytes, of the 
      <b>controlData</b> member.</p>
 </dd>
 
-### -field <b>packetDirection</b>
+### -field packetDirection
 
 <dd>
 <p>The direction of network traffic (inbound or outbound) as specified by one of the constant values of
@@ -356,7 +356,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>headerIncludeHeader</b>
+### -field headerIncludeHeader
 
 <dd>
 <p>A pointer to the IP header if the packet is sent from a raw socket.
@@ -366,7 +366,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>headerIncludeHeaderLength</b>
+### -field headerIncludeHeaderLength
 
 <dd>
 <p>The length, in bytes, of the IP header that is pointed to by 
@@ -377,7 +377,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>destinationPrefix</b>
+### -field destinationPrefix
 
 <dd>
 <p>The destination prefix.
@@ -386,7 +386,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>frameLength</b>
+### -field frameLength
 
 <dd>
 <p>The frame length.
@@ -395,7 +395,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>parentEndpointHandle</b>
+### -field parentEndpointHandle
 
 <dd>
 <p>The handle of the endpoint's parent.
@@ -404,7 +404,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>icmpIdAndSequence</b>
+### -field icmpIdAndSequence
 
 <dd>
 <p>The ICMP identifier and sequence.
@@ -413,7 +413,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>localRedirectTargetPID</b>
+### -field localRedirectTargetPID
 
 <dd>
 <p>The PID of the process that is responsible for a redirected connection.
@@ -422,7 +422,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>originalDestination</b>
+### -field originalDestination
 
 <dd>
 <p>The original destination of a redirected connection.
@@ -431,7 +431,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>redirectRecords</b>
+### -field redirectRecords
 
 <dd>
 <p>A redirect records handle that can be passed to the <a href="..\fwpsk\nf-fwpsk-fwpsqueryconnectionredirectstate0.md">FwpsQueryConnectionRedirectState0</a> function to get the redirect state. </p>
@@ -439,7 +439,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>currentL2MetadataValues</b>
+### -field currentL2MetadataValues
 
 <dd>
 <p>A bitmask that contains flags  that specify which layer 2 values are set. One or more values can be combined with a bitwise OR.</p>
@@ -453,7 +453,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <tr>
 <td width="40%"><a id="FWPS_L2_METADATA_FIELD_ETHERNET_MAC_HEADER_SIZE"></a><a id="fwps_l2_metadata_field_ethernet_mac_header_size"></a><dl>
 
-### -field <b>FWPS_L2_METADATA_FIELD_ETHERNET_MAC_HEADER_SIZE</b>
+### -field FWPS_L2_METADATA_FIELD_ETHERNET_MAC_HEADER_SIZE
 
 </dl>
 </td>
@@ -464,7 +464,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <tr>
 <td width="40%"><a id="FWPS_L2_METADATA_FIELD_WIFI_OPERATION_MODE"></a><a id="fwps_l2_metadata_field_wifi_operation_mode"></a><dl>
 
-### -field <b>FWPS_L2_METADATA_FIELD_WIFI_OPERATION_MODE</b>
+### -field FWPS_L2_METADATA_FIELD_WIFI_OPERATION_MODE
 
 </dl>
 </td>
@@ -475,7 +475,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <tr>
 <td width="40%"><a id="FWPS_L2_METADATA_FIELD_VSWITCH_SOURCE_PORT_ID"></a><a id="fwps_l2_metadata_field_vswitch_source_port_id"></a><dl>
 
-### -field <b>FWPS_L2_METADATA_FIELD_VSWITCH_SOURCE_PORT_ID</b>
+### -field FWPS_L2_METADATA_FIELD_VSWITCH_SOURCE_PORT_ID
 
 </dl>
 </td>
@@ -486,7 +486,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <tr>
 <td width="40%"><a id="FWPS_L2_METADATA_FIELD_VSWITCH_SOURCE_NIC_INDEX"></a><a id="fwps_l2_metadata_field_vswitch_source_nic_index"></a><dl>
 
-### -field <b>FWPS_L2_METADATA_FIELD_VSWITCH_SOURCE_NIC_INDEX</b>
+### -field FWPS_L2_METADATA_FIELD_VSWITCH_SOURCE_NIC_INDEX
 
 </dl>
 </td>
@@ -497,7 +497,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <tr>
 <td width="40%"><a id="FWPS_L2_METADATA_FIELD_VSWITCH_PACKET_CONTEXT"></a><a id="fwps_l2_metadata_field_vswitch_packet_context"></a><dl>
 
-### -field <b>FWPS_L2_METADATA_FIELD_VSWITCH_PACKET_CONTEXT</b>
+### -field FWPS_L2_METADATA_FIELD_VSWITCH_PACKET_CONTEXT
 
 </dl>
 </td>
@@ -508,7 +508,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <tr>
 <td width="40%"><a id="FWPS_L2_METADATA_FIELD_VSWITCH_DESTINATION_PORT_ID"></a><a id="fwps_l2_metadata_field_vswitch_destination_port_id"></a><dl>
 
-### -field <b>FWPS_L2_METADATA_FIELD_VSWITCH_DESTINATION_PORT_ID</b>
+### -field FWPS_L2_METADATA_FIELD_VSWITCH_DESTINATION_PORT_ID
 
 </dl>
 </td>
@@ -520,7 +520,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <p> </p>
 </dd>
 
-### -field <b>l2Flags</b>
+### -field l2Flags
 
 <dd>
 <p>A bitmask containing layer 2 flags that can be combined with a bitwise OR.
@@ -535,7 +535,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <tr>
 <td width="40%"><a id="FWPS_L2_INCOMING_FLAG_IS_RAW_IPV4_FRAMING"></a><a id="fwps_l2_incoming_flag_is_raw_ipv4_framing"></a><dl>
 
-### -field <b>FWPS_L2_INCOMING_FLAG_IS_RAW_IPV4_FRAMING</b>
+### -field FWPS_L2_INCOMING_FLAG_IS_RAW_IPV4_FRAMING
 
 </dl>
 </td>
@@ -546,7 +546,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <tr>
 <td width="40%"><a id="FWPS_L2_INCOMING_FLAG_IS_RAW_IPV6_FRAMING"></a><a id="fwps_l2_incoming_flag_is_raw_ipv6_framing"></a><dl>
 
-### -field <b>FWPS_L2_INCOMING_FLAG_IS_RAW_IPV6_FRAMING</b>
+### -field FWPS_L2_INCOMING_FLAG_IS_RAW_IPV6_FRAMING
 
 </dl>
 </td>
@@ -557,7 +557,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <tr>
 <td width="40%"><a id="FWPS_L2_INCOMING_FLAG_RECLASSIFY_MULTI_DESTINATION"></a><a id="fwps_l2_incoming_flag_reclassify_multi_destination"></a><dl>
 
-### -field <b>FWPS_L2_INCOMING_FLAG_RECLASSIFY_MULTI_DESTINATION</b>
+### -field FWPS_L2_INCOMING_FLAG_RECLASSIFY_MULTI_DESTINATION
 
 </dl>
 </td>
@@ -574,7 +574,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <p> </p>
 </dd>
 
-### -field <b>ethernetMacHeaderSize</b>
+### -field ethernetMacHeaderSize
 
 <dd>
 <p>The size, in bytes,  of the MAC header if the FWPS_L2_METADATA_FIELD_802_3_MAC_HEADER_SIZE flag is set. This flag is set for the inbound 802.3 layer only.
@@ -583,7 +583,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>wiFiOperationMode</b>
+### -field wiFiOperationMode
 
 <dd>
 <p>The  current Native 802.11  operation mode  if the FWPS_L2_METADATA_FIELD_802_11_OPERATION_MODE flag is set. For more information, see <a href="..\windot11\ns-windot11--dot11-current-operation-mode.md">DOT11_CURRENT_OPERATION_MODE</a>.
@@ -592,7 +592,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>vSwitchSourcePortId</b>
+### -field vSwitchSourcePortId
 
 <dd>
 <p>A unique identifier for the source port on the   virtual switch. </p>
@@ -600,7 +600,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>vSwitchSourceNicIndex</b>
+### -field vSwitchSourceNicIndex
 
 <dd>
 <p>A index for the source NIC on the   virtual switch. </p>
@@ -608,7 +608,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>vSwitchDestinationPortId</b>
+### -field vSwitchDestinationPortId
 
 <dd>
 <p>A unique identifier for the destination port on the   virtual switch. </p>
@@ -616,7 +616,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>padding0</b>
+### -field padding0
 
 <dd>
 <p>Reserved. </p>
@@ -624,7 +624,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>padding1</b>
+### -field padding1
 
 <dd>
 <p>Reserved. </p>
@@ -632,7 +632,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>padding2</b>
+### -field padding2
 
 <dd>
 <p>Reserved. </p>
@@ -640,7 +640,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>vSwitchPacketContext</b>
+### -field vSwitchPacketContext
 
 <dd>
 <p>A handle to the virtual switch packet context. </p>
@@ -648,7 +648,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>l2ConnectionProfileIndex</b>
+### -field l2ConnectionProfileIndex
 
 <dd>
 <p>A the layer 2 connection profile index. </p>
@@ -656,7 +656,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>subProcessTag</b>
+### -field subProcessTag
 
 <dd>
 <p>Reserved. </p>
@@ -664,7 +664,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <div> </div>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
@@ -751,4 +751,4 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_INCOMING_METADATA_VALUES0 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_INCOMING_METADATA_VALUES0 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

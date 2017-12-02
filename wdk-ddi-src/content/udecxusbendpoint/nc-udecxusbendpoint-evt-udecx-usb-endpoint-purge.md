@@ -58,10 +58,10 @@ void EvtUsbEndpointPurge(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbEndpoint</i> [in]
+### -param UdecxUsbEndpoint [in]
 
 <dd>
-<p>A handle to a UDE endpoint object that represents the endpoint for which I/O requests must be canceled. The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a>.</p>
+<p>A handle to a UDE endpoint object that represents the endpoint for which I/O requests must be canceled. The client driver retrieved this pointer in the previous call to <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>.</p>
 </dd>
 </dl>
 
@@ -69,9 +69,9 @@ void EvtUsbEndpointPurge(
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The client driver registered this callback function in a previous call to <a href="buses.udecxusbendpointinitsetcallbacks">UdecxUsbEndpointInitSetCallbacks</a> by supplying a function pointer to its implementation.</p>
+<p>The client driver registered this callback function in a previous call to <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointinitsetcallbacks.md">UdecxUsbEndpointInitSetCallbacks</a> by supplying a function pointer to its implementation.</p>
 
-<p>In the implementation, the client driver is required to ensure all I/O forwarded from the endpoint’s queue has been completed, and that newly forwarded I/O request fail, until UdeCx invokes <a href="buses.evt_udecx_usb_endpoint_start">EVT_UDECX_USB_ENDPOINT_START</a>. Typically, those tasks are achieved by calling <a href="..\wdfio\nf-wdfio-wdfioqueuepurge.md">WdfIoQueuePurge</a>. This call is asynchronous and the client river must call <a href="buses.udecxusbendpointpurgecomplete">UdecxUsbEndpointPurgeComplete</a>.
+<p>In the implementation, the client driver is required to ensure all I/O forwarded from the endpoint’s queue has been completed, and that newly forwarded I/O request fail, until UdeCx invokes <a href="..\udecxusbendpoint\nc-udecxusbendpoint-evt-udecx-usb-endpoint-start.md">EVT_UDECX_USB_ENDPOINT_START</a>. Typically, those tasks are achieved by calling <a href="..\wdfio\nf-wdfio-wdfioqueuepurge.md">WdfIoQueuePurge</a>. This call is asynchronous and the client river must call <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointpurgecomplete.md">UdecxUsbEndpointPurgeComplete</a>.
 </p>
 
 ## -requirements

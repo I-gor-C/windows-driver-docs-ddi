@@ -60,43 +60,43 @@ NTSTATUS SendPowerControl(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>The device object.</p>
 </dd>
 
-### -param <i>PowerControlCode</i> [in]
+### -param PowerControlCode [in]
 
 <dd>
 <p>The power control code to be sent to the audio adapter.</p>
 </dd>
 
-### -param <i>InBuffer</i> [in, optional]
+### -param InBuffer [in, optional]
 
 <dd>
 <p>The input buffer.</p>
 </dd>
 
-### -param <i>InBufferSize</i> [in]
+### -param InBufferSize [in]
 
 <dd>
 <p>The size of the input buffer.</p>
 </dd>
 
-### -param <i>OutBuffer</i> [out, optional]
+### -param OutBuffer [out, optional]
 
 <dd>
 <p>The output buffer.</p>
 </dd>
 
-### -param <i>OutBufferSize</i> [in]
+### -param OutBufferSize [in]
 
 <dd>
 <p>The size of the output buffer.</p>
 </dd>
 
-### -param <i>BytesReturned</i> [out, optional]
+### -param BytesReturned [out, optional]
 
 <dd>
 <p>The number of bytes returned.</p>

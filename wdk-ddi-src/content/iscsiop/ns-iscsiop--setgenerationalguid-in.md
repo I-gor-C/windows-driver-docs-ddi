@@ -54,7 +54,7 @@ typedef struct _SetGenerationalGuid_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>GenerationalGuid</b>
+### -field GenerationalGuid
 
 <dd>
 <p>A 16-byte GUID that identifies the version of the information that is currently in the initiator cache. </p>

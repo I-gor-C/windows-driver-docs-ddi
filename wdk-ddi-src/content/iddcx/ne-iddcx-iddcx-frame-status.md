@@ -59,7 +59,7 @@ typedef enum _IDDCX_FRAME_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="IDDCX_FRAME_STATUS_UNINITIALIZED"></a><a id="iddcx_frame_status_uninitialized"></a><b>IDDCX_FRAME_STATUS_UNINITIALIZED</b>
+### -field IDDCX_FRAME_STATUS_UNINITIALIZED
 
 <dd>
 <p>
@@ -67,7 +67,7 @@ typedef enum _IDDCX_FRAME_STATUS {
                     Indicates that an <b>IDDCX_FRAME_STATUS</b> variable has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATUS_COMPLETED"></a><a id="iddcx_frame_status_completed"></a><b>IDDCX_FRAME_STATUS_COMPLETED</b>
+### -field IDDCX_FRAME_STATUS_COMPLETED
 
 <dd>
 <p>
@@ -75,7 +75,7 @@ typedef enum _IDDCX_FRAME_STATUS {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATUS_DROPPED"></a><a id="iddcx_frame_status_dropped"></a><b>IDDCX_FRAME_STATUS_DROPPED</b>
+### -field IDDCX_FRAME_STATUS_DROPPED
 
 <dd>
 <p>
@@ -83,7 +83,7 @@ typedef enum _IDDCX_FRAME_STATUS {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATUS_ERROR"></a><a id="iddcx_frame_status_error"></a><b>IDDCX_FRAME_STATUS_ERROR</b>
+### -field IDDCX_FRAME_STATUS_ERROR
 
 <dd>
 <p>

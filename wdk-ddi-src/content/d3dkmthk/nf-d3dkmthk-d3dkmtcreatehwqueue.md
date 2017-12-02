@@ -54,7 +54,7 @@ NTSTATUS D3DKMTCreateHwQueue(
 ## -parameters
 <dl>
 
-### -param <i>createHwQueue</i> [in, out]
+### -param createHwQueue [in, out]
 
 <dd>
 <p>A structure holding the information needed to create a new hardware queue.</p>

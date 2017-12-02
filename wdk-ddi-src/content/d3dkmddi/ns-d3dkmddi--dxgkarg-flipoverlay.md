@@ -58,31 +58,31 @@ typedef struct _DXGKARG_FLIPOVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>hSource</b>
+### -field hSource
 
 <dd>
 <p>[in] A handle to the source allocation to be displayed.</p>
 </dd>
 
-### -field <b>SrcPhysicalAddress</b>
+### -field SrcPhysicalAddress
 
 <dd>
 <p>[in] The physical address, within the segment that <b>SrcSegmentId</b> specifies, of the allocation to be displayed.</p>
 </dd>
 
-### -field <b>SrcSegmentId</b>
+### -field SrcSegmentId
 
 <dd>
 <p>[in] The identifier of a segment in which the allocation is currently paged.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in] A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver. </p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.</p>

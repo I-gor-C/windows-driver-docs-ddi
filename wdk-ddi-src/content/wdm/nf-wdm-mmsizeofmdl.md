@@ -56,13 +56,13 @@ SIZE_T MmSizeOfMdl(
 ## -parameters
 <dl>
 
-### -param <i>Base</i> [in]
+### -param Base [in]
 
 <dd>
 <p>Pointer to the base virtual address for the range. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Supplies the size, in bytes, of the range. </p>

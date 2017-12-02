@@ -7,7 +7,7 @@ old-location: ifsk\secmakespnex2.htm
 old-project: ifsk
 ms.assetid: abb8d45a-a698-41b0-94b3-c658fe3105bb
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: SecMakeSPNEx2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,61 +63,61 @@ NTSTATUS SecMakeSPNEx2(
 ## -parameters
 <dl>
 
-### -param <i>ServiceClass</i> [in]
+### -param ServiceClass [in]
 
 <dd>
 <p>A pointer to a Unicode string that specifies the service class for the security service provider. </p>
 </dd>
 
-### -param <i>ServiceName</i> [in]
+### -param ServiceName [in]
 
 <dd>
 <p>A pointer to a Unicode string that specifies the service name for the security service provider. </p>
 </dd>
 
-### -param <i>InstanceName</i> [in]
+### -param InstanceName [in]
 
 <dd>
 <p>A pointer to an optional Unicode string that specifies the instance name that is used to connect with the security service provider. </p>
 </dd>
 
-### -param <i>InstancePort</i> [in]
+### -param InstancePort [in]
 
 <dd>
 <p>An optional variable that specifies the instance port that is used to connect with the security service provider. </p>
 </dd>
 
-### -param <i>Referrer</i> [in]
+### -param Referrer [in]
 
 <dd>
 <p>A pointer to an optional Unicode string that specifies the referrer name that is used to connect with the security service provider. </p>
 </dd>
 
-### -param <i>TargetInfo</i> [in]
+### -param TargetInfo [in]
 
 <dd>
 <p>A pointer to an optional Unicode string that specifies target information that is used to connect with the security service provider. </p>
 </dd>
 
-### -param <i>Spn</i> [in, out]
+### -param Spn [in, out]
 
 <dd>
 <p>A pointer to a Unicode string that receives the security service provider name string that is created by this function.</p>
 </dd>
 
-### -param <i>TotalSize</i> [out]
+### -param TotalSize [out]
 
 <dd>
 <p>A pointer to an optional variable that receives the length of the security service provider name string that is created by this function.</p>
 </dd>
 
-### -param <i>Allocate</i> [in]
+### -param Allocate [in]
 
 <dd>
 <p>A Boolean variable that indicates if the memory that is used to store the <i>Spn</i> Unicode string should be allocated by this function. If this parameter is <b>TRUE</b>, memory for <i>Spn</i> will be allocated from paged pool.</p>
 </dd>
 
-### -param <i>IsTargetInfoMarshaled</i> [in]
+### -param IsTargetInfoMarshaled [in]
 
 <dd>
 <p>A Boolean variable that indicates that the caller provided a marshaled <i>InTargetInfo</i> structure.  If <i>IsTargetInfoMarshaled</i> is <b>TRUE</b>, <i>InTargetInfo</i>-&gt;Buffer points to a string representation of the CREDENTIAL_TARGET_INFORMATION structure as returned by the <b>CredMarshalTargetInfo</b> function.</p>
@@ -203,4 +203,4 @@ NTSTATUS SecMakeSPNEx2(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SecMakeSPNEx2 function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SecMakeSPNEx2 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

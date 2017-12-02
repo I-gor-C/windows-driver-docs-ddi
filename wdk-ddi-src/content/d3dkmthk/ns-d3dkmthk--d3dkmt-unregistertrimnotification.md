@@ -56,7 +56,7 @@ typedef struct _D3DKMT_UNREGISTERTRIMNOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Handle</b>
+### -field Handle
 
 <dd>
 <p>[out] The callback notification handle received from the call to <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtregistertrimnotification.md">D3DKMTRegisterTrimNotification</a>.</p>

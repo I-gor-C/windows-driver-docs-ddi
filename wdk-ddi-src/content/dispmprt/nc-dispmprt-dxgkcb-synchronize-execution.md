@@ -61,13 +61,13 @@ NTSTATUS DxgkCbSynchronizeExecution(
 ## -parameters
 <dl>
 
-### -param <i>DeviceHandle</i> [in]
+### -param DeviceHandle [in]
 
 <dd>
 <p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
 </dd>
 
-### -param <i>SynchronizeRoutine</i> [in]
+### -param SynchronizeRoutine [in]
 
 <dd>
 <p>A pointer to a function, implemented by the display miniport driver, that will be synchronized with <i>DxgkDdiInterruptRoutine</i>. The function must conform to the following prototype:</p>
@@ -83,19 +83,19 @@ NTSTATUS DxgkCbSynchronizeExecution(
 </table></span></div>
 </dd>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to a context block, created by the display miniport driver, that will be passed to <i>SynchronizeRoutine</i>.</p>
 </dd>
 
-### -param <i>MessageNumber</i> [in]
+### -param MessageNumber [in]
 
 <dd>
 <p>The number of the interrupt message with which <i>SynchronizeRoutine</i> will be synchronized. If the interrupt is line-based, this parameter must be zero.</p>
 </dd>
 
-### -param <i>ReturnValue</i> [out]
+### -param ReturnValue [out]
 
 <dd>
 <p>A pointer to a Boolean variable that receives the return value of <i>SynchronizeRoutine</i>.</p>

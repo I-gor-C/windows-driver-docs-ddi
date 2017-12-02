@@ -55,13 +55,13 @@ typedef struct _tagKSTELEPHONY_PROVIDERCHANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>CallType</b>
+### -field CallType
 
 <dd>
 <p>Specifies the type of phone call (circuit-switched, LTE packet-switched, or WLAN packet-switched).</p>
 </dd>
 
-### -field <b>ProviderChangeOp</b>
+### -field ProviderChangeOp
 
 <dd>
 <p>Specifies the change operation requested by the provider (begin, end, or cancel).</p>

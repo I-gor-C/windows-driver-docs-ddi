@@ -58,13 +58,13 @@ PSDP_NODE SdpCreateNodeUUID128(
 ## -parameters
 <dl>
 
-### -param <i>pUuidVal</i> [in]
+### -param pUuidVal [in]
 
 <dd>
 <p>A pointer to the 128-bit UUID value that is used to initialize the SDP_NODE structure.</p>
 </dd>
 
-### -param <i>tag</i> [in]
+### -param tag [in]
 
 <dd>
 <p>A profile driver defined tag to associate with the node.</p>

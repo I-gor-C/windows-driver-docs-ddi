@@ -55,13 +55,13 @@ HRESULT IBidiSpl2::SendRecvXMLStream(
 ## -parameters
 <dl>
 
-### -param <i>pSRequest</i> [in]
+### -param pSRequest [in]
 
 <dd>
 <p>A pointer to the bidi communication request as a stream that complies with one of the <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schemas</a>.</p>
 </dd>
 
-### -param <i>ppSResponse</i> [out]
+### -param ppSResponse [out]
 
 <dd>
 <p>A pointer to the printer's response as a stream that complies with one of the <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schemas</a>.</p>

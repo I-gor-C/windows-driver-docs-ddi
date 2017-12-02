@@ -69,13 +69,13 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>AvailableData</b>
+### -field AvailableData
 
 <dd>
 <p>The amount of data available in the <b>SenseData</b> array and any additional result information.</p>
 </dd>
 
-### -field <b>ResponseToServiceAction</b>
+### -field ResponseToServiceAction
 
 <dd>
 <p>A response code indicating which command action the response is for. The service action codes are the following.</p>
@@ -87,7 +87,7 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 <tr>
 <td width="40%"><a id="SERVICE_ACTION_POPULATE_TOKEN"></a><a id="service_action_populate_token"></a><dl>
 
-### -field <b>SERVICE_ACTION_POPULATE_TOKEN</b>
+### -field SERVICE_ACTION_POPULATE_TOKEN
 
 </dl>
 </td>
@@ -98,7 +98,7 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 <tr>
 <td width="40%"><a id="SERVICE_ACTION_WRITE_USING_TOKEN"></a><a id="service_action_write_using_token"></a><dl>
 
-### -field <b>SERVICE_ACTION_WRITE_USING_TOKEN</b>
+### -field SERVICE_ACTION_WRITE_USING_TOKEN
 
 </dl>
 </td>
@@ -110,13 +110,13 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 <p> </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>OperationStatus</b>
+### -field OperationStatus
 
 <dd>
 <p>The current status of the copy operation. The status can be one of the following values.</p>
@@ -213,43 +213,43 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 <p> </p>
 </dd>
 
-### -field <b>Reserved2 </b>
+### -field Reserved2 
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>OperationCounter</b>
+### -field OperationCounter
 
 <dd>
 <p>The number of commands processed for the current copy operation.</p>
 </dd>
 
-### -field <b>EstimatedStatusUpdateDelay</b>
+### -field EstimatedStatusUpdateDelay
 
 <dd>
 <p>The recommended time, in milliseconds, to wait before sending the next RECEIVE COPY STATUS command for updated information about the current copy operation.</p>
 </dd>
 
-### -field <b>CompletionStatus</b>
+### -field CompletionStatus
 
 <dd>
 <p>SCSI status code for the copy command operation.</p>
 </dd>
 
-### -field <b>SenseDataFieldLength</b>
+### -field SenseDataFieldLength
 
 <dd>
 <p>The length, in bytes, of the entire data area available for sense data. This value is always &gt;=  <b>SenseDataLength</b>.</p>
 </dd>
 
-### -field <b>SenseDataLength</b>
+### -field SenseDataLength
 
 <dd>
 <p>The length, in bytes, of the data in <b>SenseData</b>.</p>
 </dd>
 
-### -field <b>TransferCountUnits</b>
+### -field TransferCountUnits
 
 <dd>
 <p>The byte units applied to <i>TransferCount</i>. Each unit expansion is a exponent in base 2. The multiplier value of <b>TRANSFER_COUNT_UNITS_KIBIBYTES</b>, for example, is 1024 and not 1000. The defined units are the following.</p>
@@ -261,7 +261,7 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 <tr>
 <td width="40%"><a id="TRANSFER_COUNT_UNITS_BYTES"></a><a id="transfer_count_units_bytes"></a><dl>
 
-### -field <b>TRANSFER_COUNT_UNITS_BYTES</b>
+### -field TRANSFER_COUNT_UNITS_BYTES
 
 </dl>
 </td>
@@ -272,7 +272,7 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 <tr>
 <td width="40%"><a id="TRANSFER_COUNT_UNITS_KIBIBYTES"></a><a id="transfer_count_units_kibibytes"></a><dl>
 
-### -field <b>TRANSFER_COUNT_UNITS_KIBIBYTES</b>
+### -field TRANSFER_COUNT_UNITS_KIBIBYTES
 
 </dl>
 </td>
@@ -283,7 +283,7 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 <tr>
 <td width="40%"><a id="TRANSFER_COUNT_UNITS_MEBIBYTES"></a><a id="transfer_count_units_mebibytes"></a><dl>
 
-### -field <b>TRANSFER_COUNT_UNITS_MEBIBYTES</b>
+### -field TRANSFER_COUNT_UNITS_MEBIBYTES
 
 </dl>
 </td>
@@ -294,7 +294,7 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 <tr>
 <td width="40%"><a id="TRANSFER_COUNT_UNITS_GIBIBYTES"></a><a id="transfer_count_units_gibibytes"></a><dl>
 
-### -field <b>TRANSFER_COUNT_UNITS_GIBIBYTES</b>
+### -field TRANSFER_COUNT_UNITS_GIBIBYTES
 
 </dl>
 </td>
@@ -305,7 +305,7 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 <tr>
 <td width="40%"><a id="TRANSFER_COUNT_UNITS_TEBIBYTES"></a><a id="transfer_count_units_tebibytes"></a><dl>
 
-### -field <b>TRANSFER_COUNT_UNITS_TEBIBYTES</b>
+### -field TRANSFER_COUNT_UNITS_TEBIBYTES
 
 </dl>
 </td>
@@ -316,7 +316,7 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 <tr>
 <td width="40%"><a id="TRANSFER_COUNT_UNITS_PEBIBYTES"></a><a id="transfer_count_units_pebibytes"></a><dl>
 
-### -field <b>TRANSFER_COUNT_UNITS_PEBIBYTES</b>
+### -field TRANSFER_COUNT_UNITS_PEBIBYTES
 
 </dl>
 </td>
@@ -327,7 +327,7 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 <tr>
 <td width="40%"><a id="TRANSFER_COUNT_UNITS_EXBIBYTES"></a><a id="transfer_count_units_exbibytes"></a><dl>
 
-### -field <b>TRANSFER_COUNT_UNITS_EXBIBYTES</b>
+### -field TRANSFER_COUNT_UNITS_EXBIBYTES
 
 </dl>
 </td>
@@ -338,7 +338,7 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 <tr>
 <td width="40%"><a id="TRANSFER_COUNT_UNITS_NUMBER_BLOCKS"></a><a id="transfer_count_units_number_blocks"></a><dl>
 
-### -field <b>TRANSFER_COUNT_UNITS_NUMBER_BLOCKS</b>
+### -field TRANSFER_COUNT_UNITS_NUMBER_BLOCKS
 
 </dl>
 </td>
@@ -350,25 +350,25 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 <p> </p>
 </dd>
 
-### -field <b>TransferCount</b>
+### -field TransferCount
 
 <dd>
 <p>The length of data transferred in the operation. The unit type in <b>TransferCountUnits</b> is applied to this value to give the total byte count.</p>
 </dd>
 
-### -field <b>SegmentsProcessed</b>
+### -field SegmentsProcessed
 
 <dd>
 <p>The number of segments processed for the data transfer operation. Segments are copy length units used internally by a storage device's copy provider. On Windowssystems, this value is reserved and applications must ignore this member.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>SenseData</b>
+### -field SenseData
 
 <dd>
 <p>Sense data returned for the copy operation.</p>

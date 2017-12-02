@@ -59,37 +59,37 @@ typedef struct _WHEA_GENERIC_ERROR {
 ## -struct-fields
 <dl>
 
-### -field <b>BlockStatus</b>
+### -field BlockStatus
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-generic-error-blockstatus.md">WHEA_GENERIC_ERROR_BLOCKSTATUS</a> union that indicates what kind of error data is reported in the generic error status block.</p>
 </dd>
 
-### -field <b>RawDataOffset</b>
+### -field RawDataOffset
 
 <dd>
 <p>The offset, in bytes, from the beginning of the WHEA_GENERIC_ERROR structure to the beginning of the raw error data.</p>
 </dd>
 
-### -field <b>RawDataLength</b>
+### -field RawDataLength
 
 <dd>
 <p>The length, in bytes, of the raw error data that is located at the offset specified in the <b>RawDataOffset</b> member.</p>
 </dd>
 
-### -field <b>DataLength</b>
+### -field DataLength
 
 <dd>
 <p>The size, in bytes, of the error data contained in the <b>Data</b> member.</p>
 </dd>
 
-### -field <b>ErrorSeverity</b>
+### -field ErrorSeverity
 
 <dd>
 <p>A <a href="..\ntddk\ne-ntddk--whea-error-severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>A variable-sized buffer that contains the error data from the generic error source. This buffer contains the generic error status block followed by the raw error data.</p>

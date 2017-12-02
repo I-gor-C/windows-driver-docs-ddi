@@ -7,7 +7,7 @@ old-location: netvista\ndk_qp_dispatch.htm
 old-project: netvista
 ms.assetid: C2B50C94-693A-48A2-8458-5722F652C933
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDK_QP_DISPATCH, NDK_QP_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,67 +64,67 @@ typedef struct _NDK_QP_DISPATCH {
 ## -struct-fields
 <dl>
 
-### -field <b>NdkCloseQp</b>
+### -field NdkCloseQp
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-close-object.md">NDK_FN_CLOSE_OBJECT</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkQueryExtension</b>
+### -field NdkQueryExtension
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-query-extension-interface.md">NDK_FN_QUERY_EXTENSION_INTERFACE</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkFlush</b>
+### -field NdkFlush
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-flush.md">NDK_FN_FLUSH</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkSend</b>
+### -field NdkSend
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-send.md">NDK_FN_SEND</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkReceive</b>
+### -field NdkReceive
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-receive.md">NDK_FN_RECEIVE</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkBind</b>
+### -field NdkBind
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-bind.md">NDK_FN_BIND</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkFastRegister</b>
+### -field NdkFastRegister
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-fast-register.md">NDK_FN_FAST_REGISTER</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkInvalidate</b>
+### -field NdkInvalidate
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-invalidate.md">NDK_FN_INVALIDATE</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkRead</b>
+### -field NdkRead
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-read.md">NDK_FN_READ</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkWrite</b>
+### -field NdkWrite
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-write.md">NDK_FN_WRITE</a> dispatch function.</p>
 </dd>
 
-### -field <b>NdkSendAndInvalidate</b>
+### -field NdkSendAndInvalidate
 
 <dd>
 <p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-send-and-invalidate.md">NDK_FN_SEND_AND_INVALIDATE</a> dispatch function.</p>
@@ -211,4 +211,4 @@ typedef struct _NDK_QP_DISPATCH {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_QP_DISPATCH structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_QP_DISPATCH structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

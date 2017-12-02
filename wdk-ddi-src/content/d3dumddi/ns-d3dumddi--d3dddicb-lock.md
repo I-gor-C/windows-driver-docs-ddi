@@ -62,45 +62,45 @@ typedef struct _D3DDDICB_LOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[in/out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the allocation. The Microsoft Direct3D runtime's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-allocatecb.md">pfnAllocateCb</a> function returns this handle. Therefore, the user-mode display driver should use this handle to lock the allocation.</p>
 <p>If the <b>Discard</b> bit-field flag is set in the <b>Flags</b> member, the video memory manager creates a new instance of the allocation and returns a new handle that represents the new instance.</p>
 </dd>
 
-### -field <b>PrivateDriverData</b>
+### -field PrivateDriverData
 
 <dd>
 <p>[in] Private data (for example, MIP level) that is sent from the user-mode display driver to the display miniport driver's <a href="display.dxgkddiacquireswizzlingrange">DxgkDdiAcquireSwizzlingRange</a> function.</p>
 </dd>
 
-### -field <b>NumPages</b>
+### -field NumPages
 
 <dd>
 <p>[in] The number of pages in the page list that is pointed to by <b>pPages</b>.</p>
 </dd>
 
-### -field <b>pPages</b>
+### -field pPages
 
 <dd>
 <p>[in] An array of pages to lock. Each page in the array is described by an integer offset. Zero means the first page in the surface, one means the second, and so on.</p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>[out] A pointer to the memory that is returned from the display miniport driver and memory manager. When locking a memory page list, the pointer that is returned is a pointer to the first memory page.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-lockflags.md">D3DDDICB_LOCKFLAGS</a> structure that identifies, in bit-field flags, how to lock the allocation.</p>
 <p>Note that specifying some flags together is invalid and that some flags depend on other flags. For more information about specifying these flags, see the Remarks section of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-lockflags.md">D3DDDICB_LOCKFLAGS</a>.</p>
 </dd>
 
-### -field <b>GpuVirtualAddress</b>
+### -field GpuVirtualAddress
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>

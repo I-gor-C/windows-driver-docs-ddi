@@ -55,13 +55,13 @@ typedef struct _AVC_SETCONNECT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>PinId</b>
+### -field PinId
 
 <dd>
 <p>Specifies the offset (or ID) of the pin for which information is to be set.</p>
 </dd>
 
-### -field <b>ConnectInfo</b>
+### -field ConnectInfo
 
 <dd>
 <p>The AVCCONNECTINFO values for the specified pin.</p>

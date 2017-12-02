@@ -7,7 +7,7 @@ old-location: ieee\cmp_connect_ver3.htm
 old-project: IEEE
 ms.assetid: 1F2C2B8E-6535-40F1-A5D3-46DAD43E923E
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: CMP_CONNECT_VER3, CMP_CONNECT_VER3, *PCMP_CONNECT_VER3
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,31 +57,31 @@ typedef struct _CMP_CONNECT_VER3 {
 ## -struct-fields
 <dl>
 
-### -field <b>hOutputPlug</b>
+### -field hOutputPlug
 
 <dd>
 <p>The handle of an output plug.</p>
 </dd>
 
-### -field <b>hInputPlug</b>
+### -field hInputPlug
 
 <dd>
 <p>The handle of an input plug.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of the requested connection.</p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>The requested data format.</p>
 </dd>
 
-### -field <b>hConnect</b>
+### -field hConnect
 
 <dd>
 <p>The handle for the created connection.</p>
@@ -113,4 +113,4 @@ typedef struct _CMP_CONNECT_VER3 {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CMP_CONNECT_VER3 structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CMP_CONNECT_VER3 structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

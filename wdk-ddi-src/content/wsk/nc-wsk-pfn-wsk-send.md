@@ -7,7 +7,7 @@ old-location: netvista\wsksend.htm
 old-project: netvista
 ms.assetid: 40fe1e3b-22b2-4d78-a306-977188246935
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ NTSTATUS WSKAPI * WskSend(
 ## -parameters
 <dl>
 
-### -param <i>Socket</i> [in]
+### -param Socket [in]
 
 <dd>
 <p>A pointer to a 
@@ -67,7 +67,7 @@ NTSTATUS WSKAPI * WskSend(
      object for the socket over which to send the data.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to an initialized 
@@ -75,7 +75,7 @@ NTSTATUS WSKAPI * WskSend(
      that contains the data that is being sent over the socket.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of a combination of the following flags:
@@ -83,7 +83,7 @@ NTSTATUS WSKAPI * WskSend(
 <p></p>
 <dl>
 
-### -param <a id="WSK_FLAG_NODELAY"></a><a id="wsk_flag_nodelay"></a>WSK_FLAG_NODELAY
+### -param WSK_FLAG_NODELAY
 
 <dd>
 <p>Directs the underlying transport to immediately send the data, and any previously queued data,
@@ -95,7 +95,7 @@ NTSTATUS WSKAPI * WskSend(
 </dl>
 </dd>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the send operation
@@ -221,4 +221,4 @@ NTSTATUS WSKAPI * WskSend(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_SEND callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_SEND callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

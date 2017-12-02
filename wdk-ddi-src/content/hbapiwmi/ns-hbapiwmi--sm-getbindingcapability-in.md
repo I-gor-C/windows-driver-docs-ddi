@@ -55,13 +55,13 @@ typedef struct _SM_GetBindingCapability_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>HbaPortWWN</b>
+### -field HbaPortWWN
 
 <dd>
 <p>The worldwide name (WWN) of the local port whose events the WMI client will receive.</p>
 </dd>
 
-### -field <b>DomainPortWWN</b>
+### -field DomainPortWWN
 
 <dd>
 <p>A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.</p>

@@ -56,19 +56,19 @@ typedef enum D3D12DDI_VIDEO_USAGE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_VIDEO_USAGE_NORMAL"></a><a id="d3d12ddi_video_usage_normal"></a><b>D3D12DDI_VIDEO_USAGE_NORMAL</b>
+### -field D3D12DDI_VIDEO_USAGE_NORMAL
 
 <dd>
 <p>Normal video playback.</p>
 </dd>
 
-### -field <a id="D3D12DDI_VIDEO_USAGE_POWER"></a><a id="d3d12ddi_video_usage_power"></a><b>D3D12DDI_VIDEO_USAGE_POWER</b>
+### -field D3D12DDI_VIDEO_USAGE_POWER
 
 <dd>
 <p>Lower the power usage. This setting can lead to some reduction in video quality.</p>
 </dd>
 
-### -field <a id="D3D12_VIDEO_USAGE_QUALITY"></a><a id="d3d12_video_usage_quality"></a><b>D3D12_VIDEO_USAGE_QUALITY</b>
+### -field D3D12_VIDEO_USAGE_QUALITY
 
 <dd>
 <p>The best video quality possible. This setting is appropriate for tasks such as video editing, where quality is more important than speed. It is not appropriate for real-time playback.</p>

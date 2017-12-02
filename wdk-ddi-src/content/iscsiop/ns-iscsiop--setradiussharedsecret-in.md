@@ -55,13 +55,13 @@ typedef struct _SetRADIUSSharedSecret_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>SharedSecretSize</b>
+### -field SharedSecretSize
 
 <dd>
 <p>The size, in bytes, of the shared secret.</p>
 </dd>
 
-### -field <b>SharedSecret</b>
+### -field SharedSecret
 
 <dd>
 <p>The shared secret.</p>

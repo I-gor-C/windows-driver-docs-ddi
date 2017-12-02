@@ -61,7 +61,7 @@ typedef struct _DXGKARGCB_MAPCONTEXTALLOCATION {
 ## -struct-fields
 <dl>
 
-### -field <b>BaseAddress</b>
+### -field BaseAddress
 
 <dd>
 <p>(optional) If non-NULL, the video memory manager will attempt to use this address as the base address for the mapping. If the range from <b>BaseAddress</b> to <b>BaseAddress</b>+<b>Size</b> isn’t free, the call will fail. When this parameter is non-NULL, <b>MinimumAddress</b> and <b>MaximumAddress</b> are ignored.
@@ -71,7 +71,7 @@ typedef struct _DXGKARGCB_MAPCONTEXTALLOCATION {
 </p>
 </dd>
 
-### -field <b>MinimumAddress</b>
+### -field MinimumAddress
 
 <dd>
 <p>(optional) Specifies the minimum GPU virtual address to consider for the mapped range. 
@@ -80,7 +80,7 @@ typedef struct _DXGKARGCB_MAPCONTEXTALLOCATION {
 </p>
 </dd>
 
-### -field <b>MaximumAddress</b>
+### -field MaximumAddress
 
 <dd>
 <p>Specifies the maximum GPU virtual address to consider for the mapped range. The video memory manager will guarantee that <b>BaseAddress</b>+<b>Size</b> &lt;= <b>MaximumAddress</b>. If this is set to <b>NULL</b> the video memory manager will not apply any limit.
@@ -89,31 +89,31 @@ typedef struct _DXGKARGCB_MAPCONTEXTALLOCATION {
 </p>
 </dd>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>Handle to the allocation being mapped into the GPU virtual address space. This is a DirectX graphics kernel  handle, returned by <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-createcontextallocation.md">DxgkCbCreateContextAllocation</a>.</p>
 </dd>
 
-### -field <b>OffsetInPages</b>
+### -field OffsetInPages
 
 <dd>
 <p>Specifies the offset, in 4KB pages, to the starting page within the specified allocation that must be mapped.</p>
 </dd>
 
-### -field <b>SizeInPages</b>
+### -field SizeInPages
 
 <dd>
 <p>Specifies the size of the range to map in number of 4KB pages.</p>
 </dd>
 
-### -field <b>Protection</b>
+### -field Protection
 
 <dd>
 <p>Specifies the protection on the GPU virtual address that is mapped. </p>
 </dd>
 
-### -field <b>DriverProtection</b>
+### -field DriverProtection
 
 <dd>
 <p>Specifies the driver protection parameters.</p>

@@ -56,19 +56,19 @@ typedef struct _D3DDDIARG_UPDATEPALETTE {
 ## -struct-fields
 <dl>
 
-### -field <b>PaletteHandle</b>
+### -field PaletteHandle
 
 <dd>
 <p>[in] A handle to the palette to be altered.</p>
 </dd>
 
-### -field <b>StartIndex</b>
+### -field StartIndex
 
 <dd>
 <p>[in] The index in the palette beyond which data is updated. </p>
 </dd>
 
-### -field <b>NumEntries</b>
+### -field NumEntries
 
 <dd>
 <p>[in] The number of PALETTEENTRY structures that are being updated. For more information about PALETTEENTRY, see the Microsoft Windows SDK documentation.</p>

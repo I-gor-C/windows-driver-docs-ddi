@@ -55,13 +55,13 @@ typedef struct LAMP_CAPABILITIES_COLOR {
 ## -struct-fields
 <dl>
 
-### -field <b>IsSupported</b>
+### -field IsSupported
 
 <dd>
 <p><b>TRUE</b> if the device can emit color light; <b>FALSE</b> otherwise.</p>
 </dd>
 
-### -field <b>IsLightIntensityAdjustable</b>
+### -field IsLightIntensityAdjustable
 
 <dd>
 <p>If <b>IsSupported</b> evaluates to <b>TRUE</b> (the driver is capable of emitting color light) and this field evaluates to <b>TRUE</b>, a client can get/set light intensity of a color lamp by calling <a href="..\lamp\ni-lamp-ioctl-lamp-get-intensity-color.md">IOCTL_LAMP_GET_INTENSITY_COLOR</a> and <a href="..\lamp\ni-lamp-ioctl-lamp-set-intensity-color.md">IOCTL_LAMP_SET_INTENSITY_COLOR</a>.

@@ -62,55 +62,55 @@ typedef struct _D3DKMT_CREATEDCFROMMEMORY {
 ## -struct-fields
 <dl>
 
-### -field <b>pMemory</b>
+### -field pMemory
 
 <dd>
 <p>[in] A pointer to a block of memory for the display context.</p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format for the memory block that <b>pMemory</b> points to.</p>
 </dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>[in] The width, in pixels, of the memory block that <b>pMemory</b> points to.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[in] The height, in pixels, of the memory block that <b>pMemory</b> points to.</p>
 </dd>
 
-### -field <b>Pitch</b>
+### -field Pitch
 
 <dd>
 <p>[in] The pitch, in bytes, of the memory block that <b>pMemory</b> points to--that is, the distance in bytes to the start of the next line.</p>
 </dd>
 
-### -field <b>hDeviceDc</b>
+### -field hDeviceDc
 
 <dd>
 <p>[in] A handle to the display context for the device.</p>
 </dd>
 
-### -field <b>pColorTable</b>
+### -field pColorTable
 
 <dd>
 <p>[in] An array of 2, 4, 16, or 256 PALETTEENTRY structures that are used to initialize the colors for the memory block that <b>pMemory</b> points to. For more information about PALETTEENTRY, see the Microsoft Window SDK documentation.</p>
 </dd>
 
-### -field <b>hDc</b>
+### -field hDc
 
 <dd>
 <p>[out] A handle to the display context. The OpenGL runtime generates a handle and passes it back to the driver.</p>
 </dd>
 
-### -field <b>hBitmap</b>
+### -field hBitmap
 
 <dd>
 <p>[out] A handle to a bitmap that is related to the display context. The OpenGL runtime generates a handle and passes it back to the driver.</p>

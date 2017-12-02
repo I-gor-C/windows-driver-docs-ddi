@@ -58,19 +58,19 @@ typedef struct _STORAGE_HW_FIRMWARE_ACTIVATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_ACTIVATE).</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_ACTIVATE).</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The flags associated with the activation request. The following are valid flags that can be set in this member.</p>
@@ -91,13 +91,13 @@ typedef struct _STORAGE_HW_FIRMWARE_ACTIVATE {
 <p> </p>
 </dd>
 
-### -field <b>Slot</b>
+### -field Slot
 
 <dd>
 <p>The slot with the firmware image that is to be activated.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved for future use.</p>

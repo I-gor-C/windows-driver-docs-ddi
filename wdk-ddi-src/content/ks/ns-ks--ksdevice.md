@@ -62,55 +62,55 @@ typedef struct _KSDEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>Descriptor</b>
+### -field Descriptor
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksdevice-descriptor.md">KSDEVICE_DESCRIPTOR</a> structure that describes the characteristics of the device and the static filters supported by it.</p>
 </dd>
 
-### -field <b>Bag</b>
+### -field Bag
 
 <dd>
-<p>This member specifies the KSOBJECT_BAG (equivalent to type PVOID) associated with the device. See <a href="NULL">Object Bags</a>.</p>
+<p>This member specifies the KSOBJECT_BAG (equivalent to type PVOID) associated with the device. See <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a>.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to a memory location that contains context information for the device. AVStream stores a pointer to a device extension in this member for minidrivers that allocate a device extension in <a href="stream.avstrminidevicestart">AVStrMiniDeviceStart</a>. Memory allocated for context should be placed in the object bag using <a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>. <b>Context</b> is initialized to <b>NULL</b> at create time.</p>
 </dd>
 
-### -field <b>FunctionalDeviceObject</b>
+### -field FunctionalDeviceObject
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that is the WDM functional device object for the device being described.</p>
 </dd>
 
-### -field <b>PhysicalDeviceObject</b>
+### -field PhysicalDeviceObject
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that is the WDM physical device object for the device being described.</p>
 </dd>
 
-### -field <b>NextDeviceObject</b>
+### -field NextDeviceObject
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that is the next device in the driver stack as determined by <a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>.</p>
 </dd>
 
-### -field <b>Started</b>
+### -field Started
 
 <dd>
 <p>This member indicates whether this particular device has been started or not. If <b>TRUE</b>, the device has been started. If <b>FALSE</b>, the device has not been started. This flag is set during the processing of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> and is reset during the processing of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551755">IRP_MN_STOP_DEVICE</a>. A device that is not started returns STATUS_DEVICE_NOT_READY in response to all requests to create a filter.</p>
 </dd>
 
-### -field <b>SystemPowerState</b>
+### -field SystemPowerState
 
 <dd>
 <p>A SYSTEM_POWER_STATE-typed value that indicates the current power state of the system. SYSTEM_POWER_STATE values are defined in <i>wdm.h</i>.</p>
 </dd>
 
-### -field <b>DevicePowerState</b>
+### -field DevicePowerState
 
 <dd>
 <p>A DEVICE_POWER_STATE-typed value that indicates the current power state of the device. DEVICE_POWER_STATE values are defined in <i>wdm.h</i>.</p>
@@ -120,7 +120,7 @@ typedef struct _KSDEVICE {
 ## -remarks
 <p>Clients typically use this structure if they must implement specific PnP or Power Management behavior that is not provided by AVStream. A pointer to a KSDEVICE structure is the first parameter to all dispatch routines specified in <a href="..\ks\ns-ks--ksdevice-dispatch.md">KSDEVICE_DISPATCH</a>, and the client is free to use the context information to attach its own context for these routines. In addition, clients may obtain a pointer to the KSDEVICE structure from a WDM device object pointer by calling <a href="..\ks\nf-ks-ksgetdevicefordeviceobject.md">KsGetDeviceForDeviceObject</a>.</p>
 
-<p>As mentioned above, <b>Context</b> is initialized to <b>NULL</b> at create time. However, descendants of this KSDEVICE structure have their corresponding <b>Context</b> members set to the value of the parent object's <b>Context</b> member. This happens when the new object is created. For more information, see <a href="NULL">AVStream Object Hierarchy</a> and <a href="NULL">Object Bags</a>. Also see the reference pages for the possible AVStream descendant objects: <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a>, <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> and <a href="..\ks\ns-ks--kspin.md">KSPIN</a>.</p>
+<p>As mentioned above, <b>Context</b> is initialized to <b>NULL</b> at create time. However, descendants of this KSDEVICE structure have their corresponding <b>Context</b> members set to the value of the parent object's <b>Context</b> member. This happens when the new object is created. For more information, see <a href="https://msdn.microsoft.com/b7d6f06d-6c97-414e-a453-d375e2d7ccf5">AVStream Object Hierarchy</a> and <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a>. Also see the reference pages for the possible AVStream descendant objects: <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a>, <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> and <a href="..\ks\ns-ks--kspin.md">KSPIN</a>.</p>
 
 ## -requirements
 <table>

@@ -55,7 +55,7 @@ void UPSTurnOff(
 ## -parameters
 <dl>
 
-### -param <i>aTurnOffDelay</i> [in]
+### -param aTurnOffDelay [in]
 
 <dd>
 <p>Specifies the minimum amount of time, in seconds, to wait before turning off the UPS unit's power outlets.</p>

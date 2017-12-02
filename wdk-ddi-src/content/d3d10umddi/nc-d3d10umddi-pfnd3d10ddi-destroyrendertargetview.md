@@ -58,13 +58,13 @@ VOID APIENTRY DestroyRenderTargetView(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hRenderTargetView</i> [in]
+### -param hRenderTargetView [in]
 
 <dd>
 <p> A handle to the driver's private data for the render target view object to destroy. The Microsoft Direct3D runtime will free the memory region that it previously allocated for the object. Therefore, the driver can no longer access this memory region. </p>

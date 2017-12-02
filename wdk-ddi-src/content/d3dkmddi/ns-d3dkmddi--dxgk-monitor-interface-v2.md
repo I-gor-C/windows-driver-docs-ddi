@@ -60,43 +60,43 @@ typedef struct _DXGK_MONITOR_INTERFACE_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>A value from the <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-monitor-interface-version.md">DXGK_MONITOR_INTERFACE_VERSION</a> enumeration that indicates the monitor interface version. Must be set to 2.</p>
 </dd>
 
-### -field <b>pfnAcquireMonitorSourceModeSet</b>
+### -field pfnAcquireMonitorSourceModeSet
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-acquiremonitorsourcemodeset.md">pfnAcquireMonitorSourceModeSet</a> function.</p>
 </dd>
 
-### -field <b>pfnReleaseMonitorSourceModeSet</b>
+### -field pfnReleaseMonitorSourceModeSet
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-releasemonitorsourcemodeset.md">pfnReleaseMonitorSourceModeSet</a> function.</p>
 </dd>
 
-### -field <b>pfnGetMonitorFrequencyRangeSet</b>
+### -field pfnGetMonitorFrequencyRangeSet
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-getmonitorfrequencyrangeset.md">pfnGetMonitorFrequencyRangeSet</a> function.</p>
 </dd>
 
-### -field <b>pfnGetMonitorDescriptorSet</b>
+### -field pfnGetMonitorDescriptorSet
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-getmonitordescriptorset.md">pfnGetMonitorDescriptorSet</a> function.</p>
 </dd>
 
-### -field <b>pfnGetAdditionalMonitorModeSet</b>
+### -field pfnGetAdditionalMonitorModeSet
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-getadditionalmonitormodeset.md">pfnGetAdditionalMonitorModeSet</a> function.</p>
 </dd>
 
-### -field <b>pfnReleaseAdditionalMonitorModeSet</b>
+### -field pfnReleaseAdditionalMonitorModeSet
 
 <dd>
 <p>

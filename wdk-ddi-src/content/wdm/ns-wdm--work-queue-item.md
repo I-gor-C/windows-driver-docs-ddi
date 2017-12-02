@@ -7,7 +7,7 @@ old-location: ifsk\work_queue_item.htm
 old-project: ifsk
 ms.assetid: 068ac200-55bb-4d7b-bc69-ad57d466a36b
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: WORK_QUEUE_ITEM, WORK_QUEUE_ITEM, *PWORK_QUEUE_ITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ typedef struct _WORK_QUEUE_ITEM {
 ## -struct-fields
 <dl>
 
-### -field <b>List</b>
+### -field List
 
 <dd>
 <p>Doubly linked list structure. This structure is used to add the work item to the system work queue. </p>
 </dd>
 
-### -field <b>WorkerRoutine</b>
+### -field WorkerRoutine
 
 <dd>
 <p>Pointer to a callback routine that processes this work item when the work item is dequeued. This callback routine is declared as follows: </p>
@@ -83,7 +83,7 @@ typedef struct _WORK_QUEUE_ITEM {
 <p></p>
 <dl>
 
-### -field <a id="Parameter"></a><a id="parameter"></a><a id="PARAMETER"></a><i>Parameter</i>
+### -field Parameter
 
 <dd>
 <p>Context information pointer specified in the <b>Parameter</b> member. </p>
@@ -91,7 +91,7 @@ typedef struct _WORK_QUEUE_ITEM {
 </dl>
 </dd>
 
-### -field <b>Parameter</b>
+### -field Parameter
 
 <dd>
 <p>Pointer to context information to be passed to the callback routine specified in the <b>WorkerRoutine</b> member. </p>
@@ -139,4 +139,4 @@ typedef struct _WORK_QUEUE_ITEM {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20WORK_QUEUE_ITEM structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20WORK_QUEUE_ITEM structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

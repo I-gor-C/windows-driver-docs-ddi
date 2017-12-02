@@ -56,7 +56,7 @@ LARGE_INTEGER KeQueryPerformanceCounter(
 ## -parameters
 <dl>
 
-### -param <i>PerformanceFrequency</i> [out, optional]
+### -param PerformanceFrequency [out, optional]
 
 <dd>
 <p>A pointer to a variable to which <b>KeQueryPerformanceCounter</b> writes the performance counter frequency, in ticks per second. This parameter is optional and can be NULL if the caller does not need the counter frequency value.</p>
@@ -142,7 +142,7 @@ LARGE_INTEGER KeQueryPerformanceCounter(
 <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kequerytickcount.md">KeQueryTickCount</a>
+<a href="..\wdm\nf-wdm-kequerytickcount.md">KeQueryTickCount</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a>

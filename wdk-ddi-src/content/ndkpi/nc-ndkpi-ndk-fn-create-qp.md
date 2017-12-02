@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_create_qp.htm
 old-project: netvista
 ms.assetid: 8B601E53-9BE9-4D84-819E-3B0BD07560BC
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,73 +68,73 @@ NTSTATUS NdkCreateQp(
 ## -parameters
 <dl>
 
-### -param <i>pNdkPd</i> [in]
+### -param pNdkPd [in]
 
 <dd>
 <p>A pointer to an NDK protection domain (PD) object (<a href="..\ndkpi\ns-ndkpi--ndk-pd.md">NDK_PD</a>).</p>
 </dd>
 
-### -param <i>pReceiveCq</i> [in]
+### -param pReceiveCq [in]
 
 <dd>
 <p>A pointer to a completion queue (CQ) to use for receive request completions (<a href="..\ndkpi\ns-ndkpi--ndk-cq.md">NDK_CQ</a>).</p>
 </dd>
 
-### -param <i>pInitiatorCq</i> [in]
+### -param pInitiatorCq [in]
 
 <dd>
 <p>A pointer to a CQ to use for initiator request completions.</p>
 </dd>
 
-### -param <i>QPContext</i> [in, optional]
+### -param QPContext [in, optional]
 
 <dd>
 <p>A context value to be returned in the <b>QPContext</b> member of the  <a href="..\ndkpi\ns-ndkpi--ndk-result.md">NDK_RESULT</a> structure for all requests that are posted over this QP.</p>
 </dd>
 
-### -param <i>ReceiveQueueDepth</i> [in]
+### -param ReceiveQueueDepth [in]
 
 <dd>
 <p>The maximum number of receive requests that can be outstanding over the QP. This value must be less than or equal to the value in the  <b>MaxReceiveQueueDepth</b> member of the  <a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a> structure.</p>
 </dd>
 
-### -param <i>InitiatorQueueDepth</i> [in]
+### -param InitiatorQueueDepth [in]
 
 <dd>
 <p>The maximum number of initiator requests that can be outstanding over the QP. This value must be less than or equal to the value in the  <b>MaxInitiatorQueueDepth</b> member of the  NDK_ADAPTER_INFO structure.</p>
 </dd>
 
-### -param <i>MaxReceiveRequestSge</i> [in]
+### -param MaxReceiveRequestSge [in]
 
 <dd>
 <p>The maximum number of SGEs that can be supported in a single receive request. This value must be less than or equal to the value in the  <b>MaxReceiveRequestSge</b> member of the  NDK_ADAPTER_INFO structure.</p>
 </dd>
 
-### -param <i>MaxInitiatorRequestSge</i> [in]
+### -param MaxInitiatorRequestSge [in]
 
 <dd>
 <p>The maximum number of SGEs that can be supported in a single initiator request. This value must be less than or equal to the value in the  <b>MaxInitiatorRequestSge</b> member of the  NDK_ADAPTER_INFO structure.</p>
 </dd>
 
-### -param <i>InlineDataSize</i> [in]
+### -param InlineDataSize [in]
 
 <dd>
 <p>The maximum amount of inline data in bytes that can be sent in a single send or write request. This value must be less than or equal to the value in the  <b>MaxInlineDataSize</b> member of the  NDK_ADAPTER_INFO structure.</p>
 </dd>
 
-### -param <i>CreateCompletion</i> [in]
+### -param CreateCompletion [in]
 
 <dd>
 <p>A pointer to an <i>NdkCreateCompletion</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-create-completion.md">NDK_FN_CREATE_COMPLETION</a>) function that completes the creation of an NDK object.</p>
 </dd>
 
-### -param <i>RequestContext</i> [in, optional]
+### -param RequestContext [in, optional]
 
 <dd>
 <p>A context value that the NDK provider passes back to the <i>NdkCreateCompletion</i> function that is specified in the <i>CreateCompletion</i> parameter.</p>
 </dd>
 
-### -param <i>ppNdkQp</i> 
+### -param ppNdkQp 
 
 <dd>
 <p>A pointer to a created QP object (<a href="..\ndkpi\ns-ndkpi--ndk-qp.md">NDK_QP</a>) is returned in this location if the request succeeds without returning STATUS_PENDING. If the request returns STATUS_PENDING then this parameter is ignored and the created object is returned with the callback that is specified in the  <i>CreateCompletion</i> parameter.</p>
@@ -230,9 +230,9 @@ NTSTATUS NdkCreateQp(
 <a href="..\ndkpi\nc-ndkpi-ndk-fn-create-completion.md">NDK_FN_CREATE_COMPLETION</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Object Lifetime Requirements</a>
+<a href="netvista.ndkpi_object_lifetime_requirements">NDKPI Object Lifetime Requirements</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_CREATE_QP callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_CREATE_QP callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

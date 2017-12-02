@@ -57,7 +57,7 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_OPAQUE"></a><a id="d3d11_1ddi_video_processor_alpha_fill_mode_opaque"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_OPAQUE</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_OPAQUE
 
 <dd>
 <p>Alpha values inside the target rectangle are set to opaque. 
@@ -65,19 +65,19 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_BACKGROUND"></a><a id="d3d11_1ddi_video_processor_alpha_fill_mode_background"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_BACKGROUND</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_BACKGROUND
 
 <dd>
 <p>Alpha values inside the target rectangle are set to the alpha value specified in the background color. To set the background color, call the <a href="display.videoprocessorsetoutputbackgroundcolor">VideoProcessorSetOutputBackgroundColor</a> function.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_DESTINATION"></a><a id="d3d11_1ddi_video_processor_alpha_fill_mode_destination"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_DESTINATION</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_DESTINATION
 
 <dd>
 <p>Existing alpha values remain unchanged in the output surface.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_SOURCE_STREAM"></a><a id="d3d11_1ddi_video_processor_alpha_fill_mode_source_stream"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_SOURCE_STREAM</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_SOURCE_STREAM
 
 <dd>
 <p>Alpha values are taken from an input stream, scaled, and copied to the corresponding destination rectangle for that stream. The input stream is specified in the <i>StreamIndex</i> parameter of the <a href="display.videoprocessorsetoutputalphafillmode">VideoProcessorSetOutputAlphaFillMode</a> function.</p>

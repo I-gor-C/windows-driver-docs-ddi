@@ -58,19 +58,19 @@ req.product: Windows 10 or later.
 ## -parameters
 <dl>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>Pointer to the register where the data is written to. The register must be a mapped range in memory space</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to the buffer to write the <b>ULONG64</b> values from.</p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>Specifies the number of data values to write. Each data item has a size of <b>sizeof</b>(ULONG64). </p>

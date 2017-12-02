@@ -58,7 +58,7 @@ typedef struct _DXGKMDT_OPM_CONFIGURE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>omac</b>
+### -field omac
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-omac.md">DXGKMDT_OPM_OMAC</a> structure that contains a One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) for message authenticity. For more information about OMAC, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70417">OMAC-1 algorithm</a>. The OMAC-1 parameters that OPM and COPP use are:</p>
@@ -69,7 +69,7 @@ typedef struct _DXGKMDT_OPM_CONFIGURE_PARAMETERS {
 <p>For information about AES, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70411">RSA Laboratories</a> website. </p>
 </dd>
 
-### -field <b>guidSetting</b>
+### -field guidSetting
 
 <dd>
 <p>The GUID that is used to configure the protected output object. <b>guidSetting</b> can be set to one of the following GUIDs:</p>
@@ -90,19 +90,19 @@ typedef struct _DXGKMDT_OPM_CONFIGURE_PARAMETERS {
 </ul>
 </dd>
 
-### -field <b>ulSequenceNumber</b>
+### -field ulSequenceNumber
 
 <dd>
 <p>A sequence number. For the <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-configure-protected-output.md">DxgkDdiOPMConfigureProtectedOutput</a> function to process a configure request, the value in <b>ulSequenceNumber</b> must match the current 4-byte sequence number that the display miniport driver stores. If a match is not detected, <i>DxgkDdiOPMConfigureProtectedOutput</i> returns an error code. If a match is detected, <i>DxgkDdiOPMConfigureProtectedOutput</i> increments the stored sequence number before returning. The initial 4-byte sequence number is part of the 256-byte array that the <i>EncryptedParameters</i> parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-set-signing-key-and-sequence-numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> function points to. </p>
 </dd>
 
-### -field <b>cbParametersSize</b>
+### -field cbParametersSize
 
 <dd>
 <p>The size, in bytes, of the valid configuration data that the <b>abParameters</b> member points to.</p>
 </dd>
 
-### -field <b>abParameters</b>
+### -field abParameters
 
 <dd>
 <p>A 4056-byte array that specifies how to configure the protected output object.</p>
@@ -112,7 +112,7 @@ typedef struct _DXGKMDT_OPM_CONFIGURE_PARAMETERS {
 </p>
 <dl class="indent">
 
-### -field <a id="DXGKMDT_OPM_SET_PROTECTION_LEVEL_or_DXGKMDT_OPM_SET_PROTECTION_LEVEL_ACCORDING_TO_CSS_DVD"></a><a id="dxgkmdt_opm_set_protection_level_or_dxgkmdt_opm_set_protection_level_according_to_css_dvd"></a><a id="DXGKMDT_OPM_SET_PROTECTION_LEVEL_OR_DXGKMDT_OPM_SET_PROTECTION_LEVEL_ACCORDING_TO_CSS_DVD"></a><p><a id="DXGKMDT_OPM_SET_PROTECTION_LEVEL_or_DXGKMDT_OPM_SET_PROTECTION_LEVEL_ACCORDING_TO_CSS_DVD"></a><a id="dxgkmdt_opm_set_protection_level_or_dxgkmdt_opm_set_protection_level_according_to_css_dvd"></a><a id="DXGKMDT_OPM_SET_PROTECTION_LEVEL_OR_DXGKMDT_OPM_SET_PROTECTION_LEVEL_ACCORDING_TO_CSS_DVD"></a><b>DXGKMDT_OPM_SET_PROTECTION_LEVEL or DXGKMDT_OPM_SET_PROTECTION_LEVEL_ACCORDING_TO_CSS_DVD</b></p>
+### -field DXGKMDT_OPM_SET_PROTECTION_LEVEL or DXGKMDT_OPM_SET_PROTECTION_LEVEL_ACCORDING_TO_CSS_DVD
 
 
 <dd>
@@ -121,7 +121,7 @@ typedef struct _DXGKMDT_OPM_CONFIGURE_PARAMETERS {
 </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING"></a><a id="dxgkmdt_opm_set_acp_and_cgmsa_signaling"></a><p><a id="DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING"></a><a id="dxgkmdt_opm_set_acp_and_cgmsa_signaling"></a><b>DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING</b></p>
+### -field DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING
 
 
 <dd>
@@ -130,7 +130,7 @@ typedef struct _DXGKMDT_OPM_CONFIGURE_PARAMETERS {
 </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_SET_HDCP_SRM"></a><a id="dxgkmdt_opm_set_hdcp_srm"></a><p><a id="DXGKMDT_OPM_SET_HDCP_SRM"></a><a id="dxgkmdt_opm_set_hdcp_srm"></a><b>DXGKMDT_OPM_SET_HDCP_SRM</b></p>
+### -field DXGKMDT_OPM_SET_HDCP_SRM
 
 
 <dd>

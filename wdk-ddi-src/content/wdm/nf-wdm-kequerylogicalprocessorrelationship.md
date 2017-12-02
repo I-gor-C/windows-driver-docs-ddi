@@ -58,13 +58,13 @@ NTSTATUS KeQueryLogicalProcessorRelationship(
 ## -parameters
 <dl>
 
-### -param <i>ProcessorNumber</i> [in, optional]
+### -param ProcessorNumber [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\miniport\ns-miniport--processor-number.md">PROCESSOR_NUMBER</a> structure that identifies the logical processor for which the caller requests relationship information. To request information about <u>all</u> logical processors in the system, set this parameter to <b>NULL</b>. </p>
 </dd>
 
-### -param <i>RelationshipType</i> [in]
+### -param RelationshipType [in]
 
 <dd>
 <p>Specifies the type of relationship information that is requested by the caller. Set this parameter to one of the following <a href="http://go.microsoft.com/fwlink/p/?linkid=155068">LOGICAL_PROCESSOR_RELATIONSHIP</a> enumeration values:</p>
@@ -90,13 +90,13 @@ NTSTATUS KeQueryLogicalProcessorRelationship(
 </ul>
 </dd>
 
-### -param <i>Information</i> [out, optional]
+### -param Information [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer into which the routine writes an array of one or more <a href="http://go.microsoft.com/fwlink/p/?linkid=155065">SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX</a> structures that contain the information requested by the caller. If the function fails, the contents of this buffer are undefined. Set <i>Information</i> = <b>NULL</b> to obtain the required buffer length before you allocate the buffer. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>Length</i> [in, out]
+### -param Length [in, out]
 
 <dd>
 <p>A pointer to a location that contains the size, in bytes, of the buffer that is pointed to by <i>Information</i>. On entry, *<i>Length</i> contains the size of the caller-allocated buffer that is pointed to by <i>Information</i>. During the call, the routine overwrites the value that is pointed to by <i>Length</i> with the buffer size that is required to contain the requested relationship information. </p>

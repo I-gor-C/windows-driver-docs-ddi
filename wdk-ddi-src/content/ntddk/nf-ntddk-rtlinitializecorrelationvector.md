@@ -59,13 +59,13 @@ req.iface:
 ## -parameters
 <dl>
 
-### -param <i>CorrelationVector</i> [in, out]
+### -param CorrelationVector [in, out]
 
 <dd>
 <p>A pointer to a  <a href="..\ntddk\ns-ntddk-correlation-vector.md">CORRELATION_VECTOR</a> structure that represents the correlation vector to be initialized.</p>
 </dd>
 
-### -param <i>Version</i> [in]
+### -param Version [in]
 
 <dd>
 <p>The version of the correlation vector. Possible values are: </p>
@@ -76,7 +76,7 @@ req.iface:
 </ul>
 </dd>
 
-### -param <i>Guid</i> [in]
+### -param Guid [in]
 
 <dd>
 <p>The GUID to initialize the correlation vector. The first 22 bytes

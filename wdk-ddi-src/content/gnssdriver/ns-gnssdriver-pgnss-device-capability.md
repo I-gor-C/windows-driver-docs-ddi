@@ -7,7 +7,7 @@ old-location: sensors\gnss_device_capability.htm
 old-project: sensors
 ms.assetid: F8FA91AC-9085-4C25-8798-CEB9ADB34320
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_DEVICE_CAPABILITY, GNSS_DEVICE_CAPABILITY, *PGNSS_DEVICE_CAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,19 +80,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>SupportMultipleFixSessions</b>
+### -field SupportMultipleFixSessions
 
 <dd>
 <p>Indicates whether the GNSS driver natively supports multiple sessions for the same type (For example, multiple simultaneous distance tracking sessions initiated by the HLOS). If FALSE, the GNSS adapter will multiplex  the fix session requests from multiple LBS apps to combine into one fix session request that satisfies all the client requests.</p>
@@ -100,7 +100,7 @@ typedef struct {
 <p>The driver must always support modification of session parameter for an active fix session type so that the GNSS adapter does not need to stop/start an ongoing fix session when a new fix request needs to be multiplexed. In Windows 10, the GNSS adapter does not support initiating in the GNSS driver multiple sessions of the same type.</p>
 </dd>
 
-### -field <b>SupportMultipleAppSessions</b>
+### -field SupportMultipleAppSessions
 
 <dd>
 <p>Indicates whether the GNSS driver natively supports and tracks requests coming from multiple HLOS applications. The GNSS driver must not restrict being called from more than one application at the same time.</p>
@@ -108,13 +108,13 @@ typedef struct {
 <p>A value of FALSE indicates that the driver does not differentiate different HLOS application sessions and logically treats everything in a global manner as if they all are coming from a single HLOS application-session.</p>
 </dd>
 
-### -field <b>RequireAgnssInjection</b>
+### -field RequireAgnssInjection
 
 <dd>
 <p>Indicates whether the GNSS driver requires assistance data to be injected for faster TTFF.</p>
 </dd>
 
-### -field <b>AgnssFormatSupported</b>
+### -field AgnssFormatSupported
 
 <dd>
 <p>Specifies a bitmask containing the different AGNSS formats (GNSS_AGNSSFORMAT_*) that the driver can handle.</p>
@@ -128,57 +128,57 @@ typedef struct {
 <p>This list currently includes a few IHV proprietary formats. The list can be updated when IHVs or OEMs decide to obtain the GNSS assistance information, specifically extended ephemeris, via the location platform.</p>
 </dd>
 
-### -field <b>AgnssFormatPreferred</b>
+### -field AgnssFormatPreferred
 
 <dd>
 <p>Specifies the preferred AGNSS format using the same bitmask as AgnssFormatSupported. For example, if both XTRA1 and XTRA2 are supported but XTRA2 is the preferred format, the GNSS driver sets AgnssFormatSupported to 0x000C and AgnssFormatPreferred to 0x0004.</p>
 </dd>
 
-### -field <b>SupportDistanceTracking</b>
+### -field SupportDistanceTracking
 
 <dd>
 <p>Indicates whether the GNSS driver/engine natively supports low-power tracking of the device based on a session-specific threshold. A TRUE value implies that the driver can support this natively in a low-power mode, for example, by offloading the tracking to a low-power processor and not requiring the app processor to be up and poll for movement.</p>
 <p>If the GNSS driver supports distance tracking, it implicitly supports other types of parallel fix sessions at the same time. For example, if a distance tracking session is active, a parallel single-shot must also be allowed and both types of fix sessions must be honored.</p>
 </dd>
 
-### -field <b>SupportContinuousTracking</b>
+### -field SupportContinuousTracking
 
 <dd>
 <p>Indicates whether the GNSS Driver/Engine natively supports continuous low-power tracking of the device. A TRUE value implies that the driver can support this natively in a low-power mode, for example, by offloading the tracking to a low-power processor and not requiring the app processor to be up and poll continuously.</p>
 <p>If the GNSS Driver supports continuous tracking, it implicitly supports other types of parallel fix sessions at the same time. For example, single-shot and continuous tracking can happen in parallel.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved4</b>
+### -field Reserved4
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved5</b>
+### -field Reserved5
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>GeofencingSupport</b>
+### -field GeofencingSupport
 
 <dd>
 <p>Version 1 GNSS drivers must indicate that this capability is not supported.</p>
@@ -189,73 +189,73 @@ typedef struct {
 <p>GNSS_GEOFENCESUPPORT_CIRCLE indicates that the GNSS engine supports circular geofences.</p>
 </dd>
 
-### -field <b>Reserved6</b>
+### -field Reserved6
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved7</b>
+### -field Reserved7
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>SupportCpLocation</b>
+### -field SupportCpLocation
 
 <dd>
 <p>Specifies whether CP location is supported.</p>
 </dd>
 
-### -field <b>SupportUplV2</b>
+### -field SupportUplV2
 
 <dd>
 <p>Specifies whether V2 user plane location for CDMA is supported.</p>
 </dd>
 
-### -field <b>SupportSuplV1</b>
+### -field SupportSuplV1
 
 <dd>
 <p>Specifies whether SUPL V1 is supported.</p>
 </dd>
 
-### -field <b>SupportSuplV2</b>
+### -field SupportSuplV2
 
 <dd>
 <p>Specifies whether SUPL V2 is supported.</p>
 </dd>
 
-### -field <b>SupportedSuplVersion</b>
+### -field SupportedSuplVersion
 
 <dd>
 <p>Specifies the latest SUPL version that is supported by the SUPL client. This version information is currently not used by the HLOS at for any validation purposes.</p>
 </dd>
 
-### -field <b>MaxGeofencesSupported</b>
+### -field MaxGeofencesSupported
 
 <dd>
 <p>Specifies the number of geofences the GNSS engine can track based on constraints set by the platform. This value will only be valid when the GeofencingSupport field is set.</p>
 </dd>
 
-### -field <b>SupportMultipleSuplRootCert</b>
+### -field SupportMultipleSuplRootCert
 
 <dd>
 <p>Specifies the SUPL parameter.</p>
 </dd>
 
-### -field <b>GnssBreadCrumbPayloadVersion</b>
+### -field GnssBreadCrumbPayloadVersion
 
 <dd>
 <p>Must be BREADCRUMBING_UNSUPPORTED or BREADCRUMBING_VERSION_<i>x</i>.</p>
 </dd>
 
-### -field <b>MaxGnssBreadCrumbFixes</b>
+### -field MaxGnssBreadCrumbFixes
 
 <dd>
 <p>Must greater than or equal to MIN_BREADCRUMBS_SUPPORTED.</p>
 </dd>
 
-### -field <b>Unused[496]</b>
+### -field Unused[496]
 
 <dd>
 <p>Padding buffer.</p>

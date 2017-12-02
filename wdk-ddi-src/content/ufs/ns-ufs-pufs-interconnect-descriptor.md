@@ -59,25 +59,25 @@ typedef struct _UFS_INTERCONNECT_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>Specifies the length, in bytes, of this descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorIDN</b>
+### -field bDescriptorIDN
 
 <dd>
 <p>Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_INTERCONNECT_IDN</b>.</p>
 </dd>
 
-### -field <b>bcdUniproVersion</b>
+### -field bcdUniproVersion
 
 <dd>
 <p>Specifies the MIPI UniPro℠ version number in Binary Coded Decimal (BCD) format.</p>
 </dd>
 
-### -field <b>bcdMphyVersion</b>
+### -field bcdMphyVersion
 
 <dd>
 <p>Specifies the MIPI M-PHY® version number in BCD format.</p>

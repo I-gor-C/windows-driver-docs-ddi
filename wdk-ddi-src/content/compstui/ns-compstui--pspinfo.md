@@ -58,31 +58,31 @@ typedef struct _PSPINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>CPSUI-supplied size, in bytes, of the PSPINFO structure.</p>
 </dd>
 
-### -field <b>wReserved</b>
+### -field wReserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>hComPropSheet</b>
+### -field hComPropSheet
 
 <dd>
 <p>CPSUI-supplied handle to the parent of the page whose handle is contained in <b>hCPSUIPage</b>.</p>
 </dd>
 
-### -field <b>hCPSUIPage</b>
+### -field hCPSUIPage
 
 <dd>
 <p>CPSUI-supplied handle to the property sheet page.</p>
 </dd>
 
-### -field <b>pfnComPropSheet</b>
+### -field pfnComPropSheet
 
 <dd>
 <p>CPSUI-supplied pointer to its <a href="print.compropsheet">ComPropSheet</a> function.</p>

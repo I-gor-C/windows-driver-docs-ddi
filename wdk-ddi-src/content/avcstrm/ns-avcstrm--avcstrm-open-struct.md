@@ -57,25 +57,25 @@ typedef struct _AVCSTRM_OPEN_STRUCT {
 ## -struct-fields
 <dl>
 
-### -field <b>DataFlow</b>
+### -field DataFlow
 
 <dd>
 <p>Specifies the direction of the data-flow.</p>
 </dd>
 
-### -field <b>AVCFormatInfo</b>
+### -field AVCFormatInfo
 
 <dd>
 <p>Pointer to a description of the subunit stream format.</p>
 </dd>
 
-### -field <b>AVCStreamContext</b>
+### -field AVCStreamContext
 
 <dd>
 <p>Pointer to a stream context (handle) that is passed to subsequent <i>avcstrm.sys</i> operations. Its content should not be used or altered.</p>
 </dd>
 
-### -field <b>hPlugLocal</b>
+### -field hPlugLocal
 
 <dd>
 <p>Specifies a local plug created by an AV/C subunit, which is used to connect to the target device.</p>

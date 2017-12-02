@@ -57,25 +57,25 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_RGB_INTERLACED"></a><a id="d3d11_1ddi_video_processor_format_caps_rgb_interlaced"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_RGB_INTERLACED</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_RGB_INTERLACED
 
 <dd>
 <p>The video processor can deinterlace an input stream that contains interlaced RGB video.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_RGB_PROCAMP"></a><a id="d3d11_1ddi_video_processor_format_caps_rgb_procamp"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_RGB_PROCAMP</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_RGB_PROCAMP
 
 <dd>
 <p>The video processor can perform color adjustment on RGB video.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_RGB_LUMA_KEY"></a><a id="d3d11_1ddi_video_processor_format_caps_rgb_luma_key"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_RGB_LUMA_KEY</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_RGB_LUMA_KEY
 
 <dd>
 <p>The video processor can perform luma keying on RGB video.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_PALETTE_INTERLACED"></a><a id="d3d11_1ddi_video_processor_format_caps_palette_interlaced"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_PALETTE_INTERLACED</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_PALETTE_INTERLACED
 
 <dd>
 <p>The video processor can deinterlace input streams with palettized color formats.</p>

@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>AllocateFrame</b>
+### -field AllocateFrame
 
 <dd>
 <p>Points to a <a href="stream.kstrallocateframe">KStrAllocateFrame</a> routine.</p>
 </dd>
 
-### -field <b>FreeFrame</b>
+### -field FreeFrame
 
 <dd>
 <p>Points to a <a href="stream.kstrfreeframe">KStrFreeFrame</a> routine.</p>

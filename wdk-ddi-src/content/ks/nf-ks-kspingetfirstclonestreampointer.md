@@ -54,7 +54,7 @@ PKSSTREAM_POINTER KsPinGetFirstCloneStreamPointer(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure on which to return the first clone stream pointer.</p>
@@ -65,7 +65,7 @@ PKSSTREAM_POINTER KsPinGetFirstCloneStreamPointer(
 <p><b>KsPinGetFirstCloneStreamPointer</b> returns a pointer to a <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure. This pointer points to the first cloned stream pointer on <i>Pin</i>. If no clone stream pointers exist for <i>Pin</i>, <b>KsPinGetFirstCloneStreamPointer</b> returns <b>NULL</b>.</p>
 
 ## -remarks
-<p><b>KsPinGetFirstCloneStreamPointer</b>, along with <a href="..\ks\nf-ks-ksstreampointergetnextclone.md">KsStreamPointerGetNextClone</a> can be used to enumerate all clone stream pointers on a given pin in the order in which they were cloned. Also see <a href="NULL">Stream Pointers</a>.</p>
+<p><b>KsPinGetFirstCloneStreamPointer</b>, along with <a href="..\ks\nf-ks-ksstreampointergetnextclone.md">KsStreamPointerGetNextClone</a> can be used to enumerate all clone stream pointers on a given pin in the order in which they were cloned. Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736f">Stream Pointers</a>.</p>
 
 ## -requirements
 <table>

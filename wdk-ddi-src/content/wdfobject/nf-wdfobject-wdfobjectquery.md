@@ -7,7 +7,7 @@ old-location: wdf\wdfobjectquery.htm
 old-project: wdf
 ms.assetid: c9e654cc-7ea5-41dd-8ee5-23a89f61e3c1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfObjectQuery
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ NTSTATUS WdfObjectQuery(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd></dd>
 
-### -param <i>Guid</i> [in]
+### -param Guid [in]
 
 <dd></dd>
 
-### -param <i>QueryBufferLength</i> [in]
+### -param QueryBufferLength [in]
 
 <dd></dd>
 
-### -param <i>QueryBuffer</i> [out]
+### -param QueryBuffer [out]
 
 <dd></dd>
 </dl>

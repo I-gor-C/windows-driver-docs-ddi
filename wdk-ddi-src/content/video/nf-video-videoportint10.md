@@ -56,13 +56,13 @@ VP_STATUS VideoPortInt10(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>BiosArguments</i> 
+### -param BiosArguments 
 
 <dd>
 <p>Pointer to a structure containing values for the x86 registers that should be set before making the BIOS call. The miniport driver should set any unused registers to zero. All values set up in the <a href="..\video\ns-video--video-x86-bios-arguments.md">VIDEO_x86_BIOS_ARGUMENTS</a> structure are interpreted as immediate values.</p>

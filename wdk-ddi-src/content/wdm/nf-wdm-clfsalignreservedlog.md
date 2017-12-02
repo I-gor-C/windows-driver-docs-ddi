@@ -58,25 +58,25 @@ NTSTATUS  ClfsAlignReservedLog(
 ## -parameters
 <dl>
 
-### -param <i>pvMarshalContext</i> [in]
+### -param pvMarshalContext [in]
 
 <dd>
 <p>A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.</p>
 </dd>
 
-### -param <i>cRecords</i> [in]
+### -param cRecords [in]
 
 <dd>
 <p>The number of elements in the array pointed to by <i>rgcbReservation</i>.</p>
 </dd>
 
-### -param <i>rgcbReservation</i> [in]
+### -param rgcbReservation [in]
 
 <dd>
 <p>A pointer to an array of LONGLONG-typed variables that supplies a list of record sizes (in bytes).</p>
 </dd>
 
-### -param <i>pcbAlignReservation</i> [out]
+### -param pcbAlignReservation [out]
 
 <dd>
 <p>A pointer to a LONGLONG-typed variable that receives the size, in bytes, of the required reservation.</p>

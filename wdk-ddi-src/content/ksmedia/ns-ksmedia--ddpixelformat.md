@@ -94,14 +94,14 @@ typedef struct _DDPIXELFORMAT {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size in bytes of the DDPIXELFORMAT structure. The driver must initialize this member before the structure is used.</p>
 <p><b>DirectX 9.0 and later versions only.</b> Specifies, on input, the version of the Microsoft DirectX runtime being used by the application. This member is set to DD_RUNTIME_VERSION, which is 0x00000900 for DirectX 9.0, in the <b>format</b> member of the <a href="..\d3dhal\ns-d3dhal--dd-getformatdata.md">DD_GETFORMATDATA</a> structure for a D3DGDI2_TYPE_GETFORMAT query.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Indicates a set of flags that specify optional control flags. This member is a bitwise OR of any of the following values:</p>
@@ -290,85 +290,85 @@ typedef struct _DDPIXELFORMAT {
 <p> </p>
 </dd>
 
-### -field <b>dwFourCC</b>
+### -field dwFourCC
 
 <dd>
 <p>Specifies a surface format code including any of the codes in the D3DFORMAT enumerated type. Some <a href="wdkgloss.f#wdkgloss.fourcc#wdkgloss.fourcc"><i>FOURCC</i></a> codes are part of D3DFORMAT. For more information about D3DFORMAT, see the SDK documentation. Hardware vendors can also define and supply format codes that are specific to their hardware. </p>
 </dd>
 
-### -field <b>dwRGBBitCount</b>
+### -field dwRGBBitCount
 
 <dd>
 <p>Specifies the number of RGB bits per pixel (4, 8, 16, 24, or 32). </p>
 </dd>
 
-### -field <b>dwYUVBitCount</b>
+### -field dwYUVBitCount
 
 <dd>
 <p>Specifies the number of YUV bits per pixel. </p>
 </dd>
 
-### -field <b>dwZBufferBitDepth</b>
+### -field dwZBufferBitDepth
 
 <dd>
 <p>Specifies the Z-buffer bit depth (8, 16, 24, or 32 bits). </p>
 </dd>
 
-### -field <b>dwAlphaBitDepth</b>
+### -field dwAlphaBitDepth
 
 <dd>
 <p>Specifies the Alpha channel bit depth. </p>
 </dd>
 
-### -field <b>dwLuminanceBitCount</b>
+### -field dwLuminanceBitCount
 
 <dd>
 <p>Specifies the number of bits per pixel.</p>
 </dd>
 
-### -field <b>dwBumpBitCount</b>
+### -field dwBumpBitCount
 
 <dd>
 <p>Specifies the total number of bits per "bumpel" (bump-map texel).</p>
 </dd>
 
-### -field <b>dwPrivateFormatBitCount</b>
+### -field dwPrivateFormatBitCount
 
 <dd>
 <p>Specifies the bits per pixel of a pixel format private to the driver (that is, not one of the standard ones defined by Microsoft Direct3D).</p>
 </dd>
 
-### -field <b>dwRBitMask</b>
+### -field dwRBitMask
 
 <dd>
 <p>Specifies the mask for red bits. </p>
 </dd>
 
-### -field <b>dwYBitMask</b>
+### -field dwYBitMask
 
 <dd>
 <p>Specifies the mask for Y bits. </p>
 </dd>
 
-### -field <b>dwStencilBitDepth</b>
+### -field dwStencilBitDepth
 
 <dd>
 <p>Specifies the bit depth of the stencil buffer. This member specifies how many bits are reserved within each pixel of the z-buffer for stencil information.</p>
 </dd>
 
-### -field <b>dwLuminanceBitMask</b>
+### -field dwLuminanceBitMask
 
 <dd>
 <p>Specifies the mask for luminance bits.</p>
 </dd>
 
-### -field <b>dwBumpDuBitMask</b>
+### -field dwBumpDuBitMask
 
 <dd>
 <p>Specifies the mask for bump map U delta bits.</p>
 </dd>
 
-### -field <b>dwOperations</b>
+### -field dwOperations
 
 <dd>
 <p><b>DirectX 8.0 and later versions only.</b> Specifies the intended operations that can be performed on surfaces with this pixel format, for example, whether such surfaces can be used as textures, bump environment maps, cube maps, volume textures, or render targets. The operations that can be reported are as follows:</p>
@@ -465,13 +465,13 @@ typedef struct _DDPIXELFORMAT {
 <p>
 <dl>
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
-### -field When this flag is specified in a pixel format, it indicates that the driver filled in the bits per pixel for the format in the <b>dwPrivateFormatBitCount</b> member. 
+### -field When this flag is specified in a pixel format, it indicates that the driver filled in the bits per pixel for the format in the dwPrivateFormatBitCount member. 
 
 
-### -field If the driver requires that managed surfaces and textures use a private format (a format that is understood by the driver but not natively by the Direct3D runtime), then the driver must specify this flag, along with the pixel size in <b>dwPrivateFormatBitCount</b>.
+### -field If the driver requires that managed surfaces and textures use a private format (a format that is understood by the driver but not natively by the Direct3D runtime), then the driver must specify this flag, along with the pixel size in dwPrivateFormatBitCount.
 
 </dl>
 </p>
@@ -485,10 +485,10 @@ typedef struct _DDPIXELFORMAT {
 <p>
 <dl>
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
-### -field When this flag is specified in a pixel format, it indicates that source surfaces of this format can be converted to any target surface with an RGB pixel format that has the D3DFORMAT_MEMBEROFGROUP_ARGB flag specified in <b>dwOperations</b>.
+### -field When this flag is specified in a pixel format, it indicates that source surfaces of this format can be converted to any target surface with an RGB pixel format that has the D3DFORMAT_MEMBEROFGROUP_ARGB flag specified in dwOperations.
 
 </dl>
 </p>
@@ -502,7 +502,7 @@ typedef struct _DDPIXELFORMAT {
 <p>
 <dl>
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
 ### -field When this flag is specified in a pixel format, it indicates that the driver can stretch to and from and color fill surfaces of this format.
@@ -519,7 +519,7 @@ typedef struct _DDPIXELFORMAT {
 <p>
 <dl>
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
 ### -field When this flag is specified in a pixel format, it indicates that surfaces of this format can be read from as SRGB textures (that is, the sampler linearizes the looked up data).
@@ -536,7 +536,7 @@ typedef struct _DDPIXELFORMAT {
 <p>
 <dl>
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
 ### -field When this flag is specified in a pixel format, it indicates that surfaces of this format can be used as bump environment map textures.
@@ -556,7 +556,7 @@ typedef struct _DDPIXELFORMAT {
 <p>
 <dl>
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
 ### -field When this flag is specified in a pixel format, it indicates that surfaces of this format can be sampled by the displacement map sampler.
@@ -573,7 +573,7 @@ typedef struct _DDPIXELFORMAT {
 <p>
 <dl>
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
 ### -field When this flag is specified in a pixel format, it indicates that surfaces of this format cannot be used with texture filtering.
@@ -590,10 +590,10 @@ typedef struct _DDPIXELFORMAT {
 <p>
 <dl>
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
-### -field When this flag is specified in a pixel format, it indicates that target surfaces of this format can be converted from any source surface with a pixel format that has the D3DFORMAT_OP_CONVERT_TO_ARGB flag specified in <b>DirectX 9.0 and later versions only.</b>.
+### -field When this flag is specified in a pixel format, it indicates that target surfaces of this format can be converted from any source surface with a pixel format that has the D3DFORMAT_OP_CONVERT_TO_ARGB flag specified in DirectX 9.0 and later versions only..
 
 
 ### -field The driver can only specify this flag for ARGB surfaces with at least 5 bits color information per channel. That is, the D3DFMT_A1R5G5B5 format is valid. However, the D3DFMT_A4R4G4B4 format is invalid. If the driver specifies this flag with an invalid format, the runtime prevents the Direct3D HAL from loading. Note that although this flag indicates ARGB formats, the runtime also allows the driver to specify surfaces with XRGB formats (for example, D3DFMT_X1R5G5B5).
@@ -610,7 +610,7 @@ typedef struct _DDPIXELFORMAT {
 <p>
 <dl>
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
 ### -field When this flag is specified in a pixel format, it indicates that surfaces of this format can be written to as SRGB targets (that is, the pixel pipe delinearizes data on output to this format).
@@ -627,7 +627,7 @@ typedef struct _DDPIXELFORMAT {
 <p>
 <dl>
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
 ### -field When this flag is specified in a pixel format, it indicates that surfaces of this format cannot be used with alpha blending.
@@ -644,7 +644,7 @@ typedef struct _DDPIXELFORMAT {
 <p>
 <dl>
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
 ### -field When this flag is specified in a pixel format, it indicates that the sublevels of MIP-map textures with this format can be automatically generated. To receive D3DDP2OP_GENERATEMIPSUBLEVELS operation requests, this flag must be exposed. 
@@ -661,7 +661,7 @@ typedef struct _DDPIXELFORMAT {
 <p>
 <dl>
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
 ### -field When this flag is specified in a pixel format, it indicates that surfaces of this format can be used by a vertex texture sampler. That is, only surfaces of this format can be used as vertex textures. 
@@ -674,43 +674,43 @@ typedef struct _DDPIXELFORMAT {
 <p> </p>
 </dd>
 
-### -field <b>dwGBitMask</b>
+### -field dwGBitMask
 
 <dd>
 <p>Specifies the mask for green bits. </p>
 </dd>
 
-### -field <b>dwUBitMask</b>
+### -field dwUBitMask
 
 <dd>
 <p>Specifies the mask for U bits. </p>
 </dd>
 
-### -field <b>dwZBitMask</b>
+### -field dwZBitMask
 
 <dd>
 <p>Specifies the mask for Z bits.</p>
 </dd>
 
-### -field <b>dwBumpDvBitMask</b>
+### -field dwBumpDvBitMask
 
 <dd>
 <p>Specifies the mask for bump map V delta bits.</p>
 </dd>
 
-### -field <b>MultiSampleCaps</b>
+### -field MultiSampleCaps
 
 <dd>
 <p><b>DirectX 8.0 and later versions only.</b> Structure that contains the following two members. It specifies 16-bitmasks for the number of samples per pixel for both flip (fullscreen) and blt (windowed) multisampling. It is used when specifying surfaces that can be used when performing multisample rendering (see the Remarks section). Each bit in these 16-bitmasks indicates support of multisampling with a specific number of samples. For example, bit 0 indicates the support of multisampling with only a single sample, bit 1 indicates the support of multisampling with two samples, bit 2 indicates the support of multisampling with three samples, and so on. The driver can indicate more than one supported level by combining the bits using a bitwise OR (see Remarks).</p>
 <dl>
 
-### -field <b>wFlipMSTypes</b>
+### -field wFlipMSTypes
 
 <dd>
 <p><b>DirectX 8.0 and later versions only.</b> Specifies a 16-bitmask for fullscreen multisampling.</p>
 </dd>
 
-### -field <b>wBltMSTypes</b>
+### -field wBltMSTypes
 
 <dd>
 <p><b>DirectX 8.0 and later versions only.</b> Specifies a 16-bitmask for windowed multisampling.</p>
@@ -718,43 +718,43 @@ typedef struct _DDPIXELFORMAT {
 </dl>
 </dd>
 
-### -field <b>dwBBitMask</b>
+### -field dwBBitMask
 
 <dd>
 <p>Specifies the mask for blue bits. </p>
 </dd>
 
-### -field <b>dwVBitMask</b>
+### -field dwVBitMask
 
 <dd>
 <p>Specifies the mask for V bits. </p>
 </dd>
 
-### -field <b>dwStencilBitMask</b>
+### -field dwStencilBitMask
 
 <dd>
 <p>Specifies the mask for stencil bits within each z-buffer pixel.</p>
 </dd>
 
-### -field <b>dwBumpLuminanceBitMask</b>
+### -field dwBumpLuminanceBitMask
 
 <dd>
 <p>Specifies the mask for luminance in a bump map.</p>
 </dd>
 
-### -field <b>dwRGBAlphaBitMask, dwYUVAlphaBitMask</b>
+### -field dwRGBAlphaBitMask, dwYUVAlphaBitMask
 
 <dd>
 <p>Specify the masks for alpha channel. </p>
 </dd>
 
-### -field <b>dwLuminanceAlphaBitMask</b>
+### -field dwLuminanceAlphaBitMask
 
 <dd>
 <p>Specifies the mask for luminance in the alpha channel.</p>
 </dd>
 
-### -field <b>dwRGBZBitMask, dwYUVZBitMask</b>
+### -field dwRGBZBitMask, dwYUVZBitMask
 
 <dd>
 <p>Specifies the masks for the z channel. </p>

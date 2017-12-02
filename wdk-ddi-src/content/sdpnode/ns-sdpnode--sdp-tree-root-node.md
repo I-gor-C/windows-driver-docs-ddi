@@ -56,7 +56,7 @@ typedef struct _SDP_TREE_ROOT_NODE {
 ## -struct-fields
 <dl>
 
-### -field <b>RootNode</b>
+### -field RootNode
 
 <dd>
 <p>An 
@@ -75,12 +75,12 @@ typedef struct _SDP_TREE_ROOT_NODE {
     structure.</p>
 
 <p>The 
-    <a href="bltooth.sdpconvertstreamtotree">SdpConvertStreamToTree</a> function
+    <a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a> function
     outputs this structure as the root element of an SDP record that it converts from a stream to a
     tree-based structure.</p>
 
 <p>The 
-    <a href="bltooth.sdpconverttreetostream">SdpConvertTreeToStream</a> function uses
+    <a href="..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md">SdpConvertTreeToStream</a> function uses
     an existing SDP_TREE_ROOT_NODE structure as input when it converts a tree-based representation of an SDP
     record into a stream.</p>
 
@@ -126,10 +126,10 @@ typedef struct _SDP_TREE_ROOT_NODE {
 <a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a>
 </dt>
 <dt>
-<a href="bltooth.sdpconvertstreamtotree">SdpConvertStreamToTree</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a>
 </dt>
 <dt>
-<a href="bltooth.sdpconverttreetostream">SdpConvertTreeToStream</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md">SdpConvertTreeToStream</a>
 </dt>
 <dt>
 <a href="..\sdplib\nf-sdplib-sdpcreatenodetree.md">SdpCreateNodeTree</a>

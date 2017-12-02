@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-             Stores the value of the RECEIVE_DETECT Register. This structure is used in the <a href="buses.ioctl_ucmtcpci_port_controller_set_receive_detect">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT</a> request.
+             Stores the value of the RECEIVE_DETECT Register. This structure is used in the <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl-ucmtcpci-port-controller-set-receive-detect.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT</a> request.
                  </p>
 
 
@@ -58,13 +58,13 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT_IN_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>PortControllerObject</b>
+### -field PortControllerObject
 
 <dd>
-<p>Handle to the port controller object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.</p>
+<p>Handle to the port controller object that the client driver received in the previous call to <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>.</p>
 </dd>
 
-### -field <b>ReceiveDetect</b>
+### -field ReceiveDetect
 
 <dd>
 <p>

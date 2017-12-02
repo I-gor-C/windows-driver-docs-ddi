@@ -60,43 +60,43 @@ NTSTATUS NewStream(
 ## -parameters
 <dl>
 
-### -param <i>Stream</i> [out]
+### -param Stream [out]
 
 <dd>
 <p>Output pointer for the new stream. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the stream object's <a href="..\portcls\nn-portcls-iminiportmidistream.md">IMiniportMidiStream</a> interface.</p>
 </dd>
 
-### -param <i>OuterUnknown</i> [in, optional]
+### -param OuterUnknown [in, optional]
 
 <dd>
 <p>Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate the stream object. This parameter is optional. If aggregation is not required, the caller specifies this parameter as <b>NULL</b>.</p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter is set to one of the <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a> enumeration values.</p>
 </dd>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>Specifies the pin ID. This parameter identifies the pin that is to be opened. If the MIDI miniport object's <a href="audio.iminiport_getdescription">IMiniport::GetDescription</a> method outputs a filter descriptor that specifies a total of <i>n</i> pin factories on the filter, then valid pin IDs are in the range 0 to <i>n</i>-1.</p>
 </dd>
 
-### -param <i>Capture</i> [in]
+### -param Capture [in]
 
 <dd>
 <p>Specifies whether the channel is to be used for capture or for playback. If <b>TRUE</b>, it is a capture (input) channel. If <b>FALSE</b>, it is a playback (output) channel.</p>
 </dd>
 
-### -param <i>DataFormat</i> [in]
+### -param DataFormat [in]
 
 <dd>
 <p>Pointer to a <a href="stream.ksdataformat">KSDATAFORMAT</a> structure that specifies the data format to use for this stream instance.</p>
 </dd>
 
-### -param <i>ServiceGroup</i> [out]
+### -param ServiceGroup [out]
 
 <dd>
 <p>Output pointer for the service group. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> interface of the stream's service group object. This is the service group that is being registered for interrupt notification.</p>
@@ -109,7 +109,7 @@ NTSTATUS NewStream(
 ## -remarks
 <p>The <code>NewStream</code> method sets the initial state of the stream to KSSTATE_STOP.</p>
 
-<p>The <i>Stream</i>, <i>OuterUnknown</i>, and <i>ServiceGroup</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>Stream</i>, <i>OuterUnknown</i>, and <i>ServiceGroup</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

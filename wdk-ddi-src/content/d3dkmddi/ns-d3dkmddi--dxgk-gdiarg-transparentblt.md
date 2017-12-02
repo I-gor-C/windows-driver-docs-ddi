@@ -62,14 +62,14 @@ typedef struct _DXGK_GDIARG_TRANSPARENTBLT {
 ## -struct-fields
 <dl>
 
-### -field <b>SrcRect</b>
+### -field SrcRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure that defines the rectangular area to be copied. This rectangle is specified in the coordinate system of the source surface and is defined by two points: upper left and lower right. The two points that define the rectangle are always well ordered. </p>
 <p>For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd>
 <p>[in] A <a href="display.rect">RECT</a> structure that defines the rectangular area to be modified. This rectangle is specified in the coordinate system of the destination surface and is defined by two points: upper left and lower right. The rectangle is lower-right exclusive; that is, its lower and right edges are not a part of the bit-block transfer. The two points that define the rectangle are always well ordered. </p>
@@ -77,7 +77,7 @@ typedef struct _DXGK_GDIARG_TRANSPARENTBLT {
 <p>For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>SrcAllocationIndex</b>
+### -field SrcAllocationIndex
 
 <dd>
 <p>
@@ -85,7 +85,7 @@ typedef struct _DXGK_GDIARG_TRANSPARENTBLT {
      </p>
 </dd>
 
-### -field <b>DstAllocationIndex</b>
+### -field DstAllocationIndex
 
 <dd>
 <p>
@@ -93,7 +93,7 @@ typedef struct _DXGK_GDIARG_TRANSPARENTBLT {
      </p>
 </dd>
 
-### -field <b>Color</b>
+### -field Color
 
 <dd>
 <p>
@@ -101,7 +101,7 @@ typedef struct _DXGK_GDIARG_TRANSPARENTBLT {
      </p>
 </dd>
 
-### -field <b>NumSubRects</b>
+### -field NumSubRects
 
 <dd>
 <p>
@@ -109,7 +109,7 @@ typedef struct _DXGK_GDIARG_TRANSPARENTBLT {
      </p>
 </dd>
 
-### -field <b>pSubRects</b>
+### -field pSubRects
 
 <dd>
 <p>
@@ -117,7 +117,7 @@ typedef struct _DXGK_GDIARG_TRANSPARENTBLT {
      </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>
@@ -125,7 +125,7 @@ typedef struct _DXGK_GDIARG_TRANSPARENTBLT {
      </p>
 </dd>
 
-### -field <b>SrcPitch</b>
+### -field SrcPitch
 
 <dd>
 <p>

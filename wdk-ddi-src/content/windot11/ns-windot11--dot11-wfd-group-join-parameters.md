@@ -7,7 +7,7 @@ old-location: netvista\dot11_wfd_group_join_parameters.htm
 old-project: netvista
 ms.assetid: 7E526179-97B6-4BA3-8F78-C4C04FFF9085
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_WFD_GROUP_JOIN_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct _DOT11_WFD_GROUP_JOIN_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>DOT11_WFD_GROUP_JOIN_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following.</p>
@@ -82,25 +82,25 @@ typedef struct _DOT11_WFD_GROUP_JOIN_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>GOOperatingChannel</b>
+### -field GOOperatingChannel
 
 <dd>
 <p>This channel on which the Group Owner (GO) may operate the group. This channel information was received by the Client in a GO Negotiation or Invitation exchange. The miniport must also be able to handle the group operating on a channel different than specified. The miniport must ensure regulatory compliance when joining the group.</p>
 </dd>
 
-### -field <b>GOConfigTime</b>
+### -field GOConfigTime
 
 <dd>
 <p>The configuration time allowed for the GO to start. This time-out is received by the Client in a GO Negotiation or Invitation exchange.</p>
 </dd>
 
-### -field <b>bInGroupFormation</b>
+### -field bInGroupFormation
 
 <dd>
 <p>If set to TRUE, special handling of <a href="netvista._oid_dot11_wfd_connect_to_group_request">OID_DOT11_WFD_CONNECT_TO_GROUP_REQUEST</a> is required. The miniport must not attempt to connect until it receives a probe response or beacon from the GO with the Group Formation field set to 1. Otherwise, no connect delay is necessary.</p>
 </dd>
 
-### -field <b>bWaitForWPSReady</b>
+### -field bWaitForWPSReady
 
 <dd>
 <p>If set to TRUE, special handling of <a href="netvista._oid_dot11_wfd_connect_to_group_request">OID_DOT11_WFD_CONNECT_TO_GROUP_REQUEST</a> is required. The miniport must not attempt to connect until it receives a probe response or beacon from the GO with the Selected Registrar WPS attribute set to TRUE and the Group Formation field set to the  value indicated by <b>bInGroupFormation</b>. Otherwise, the Selected Registrar attribute should be ignored.</p>
@@ -140,4 +140,4 @@ typedef struct _DOT11_WFD_GROUP_JOIN_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_WFD_GROUP_JOIN_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_WFD_GROUP_JOIN_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

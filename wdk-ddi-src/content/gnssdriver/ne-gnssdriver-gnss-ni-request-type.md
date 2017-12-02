@@ -7,7 +7,7 @@ old-location: sensors\gnss_ni_request_type.htm
 old-project: sensors
 ms.assetid: 79AFC7D8-5A51-49CC-8ADA-7D21C6859254
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="GNSS_NI_Request_SingleShot"></a><a id="gnss_ni_request_singleshot"></a><a id="GNSS_NI_REQUEST_SINGLESHOT"></a><b>GNSS_NI_Request_SingleShot</b>
+### -field GNSS_NI_Request_SingleShot
 
 <dd>
 <p>Indicates the request type is single shot.</p>
 </dd>
 
-### -field <a id="GNSS_NI_Request_AreaTrigger"></a><a id="gnss_ni_request_areatrigger"></a><a id="GNSS_NI_REQUEST_AREATRIGGER"></a><b>GNSS_NI_Request_AreaTrigger</b>
+### -field GNSS_NI_Request_AreaTrigger
 
 <dd>
 <p>Indicates the request type is tracking.</p>

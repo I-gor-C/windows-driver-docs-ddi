@@ -55,13 +55,13 @@ typedef struct _D3DHAL_DP2EXT {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExtToken</b>
+### -field dwExtToken
 
 <dd>
 <p>Specifies the extension token.</p>
 </dd>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes of this structure.  </p>

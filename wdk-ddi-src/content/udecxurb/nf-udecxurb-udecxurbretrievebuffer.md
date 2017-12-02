@@ -58,19 +58,19 @@ FORCEINLINE NTSTATUS UdecxUrbRetrieveBuffer(
 ## -parameters
 <dl>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object that contains the <a href="..\usb\ns-usb--urb.md">URB</a> for the transfer.</p>
 </dd>
 
-### -param <i>TransferBuffer</i> [out]
+### -param TransferBuffer [out]
 
 <dd>
 <p>A pointer to a buffer that receives the transfer buffer of an <a href="..\usb\ns-usb--urb.md">URB</a>.</p>
 </dd>
 
-### -param <i>Length</i> [out]
+### -param Length [out]
 
 <dd>
 <p>A ULONG variable that receives  the length of the buffer pointer to by <i>TransferBuffer</i>.</p>
@@ -148,7 +148,7 @@ FORCEINLINE NTSTATUS UdecxUrbRetrieveBuffer(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxurbsetbytescompleted">UdecxUrbSetBytesCompleted</a>
+<a href="..\udecxurb\nf-udecxurb-udecxurbsetbytescompleted.md">UdecxUrbSetBytesCompleted</a>
 </dt>
 <dt>
 <a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>

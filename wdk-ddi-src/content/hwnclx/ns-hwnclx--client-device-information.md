@@ -59,19 +59,19 @@ typedef struct _CLIENT_DEVICE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version number of this structure. This value must be provided by the client driver to the class extension. The class extension is responsible for verifying that this version is supported. The hardware notification payload version number is <b>HWN_DEVICE_INFORMATION_VERSION</b>. </p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of the <b>CLIENT_DEVICE_INFORMATION</b> data structure.</p>
 </dd>
 
-### -field <b>TotalHwNs</b>
+### -field TotalHwNs
 
 <dd>
 <p>The total number of hardware notifications that the client device driver provides.</p>

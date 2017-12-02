@@ -94,241 +94,241 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="BM_x555RGB"></a><a id="bm_x555rgb"></a><a id="BM_X555RGB"></a><b>BM_x555RGB</b>
+### -field BM_x555RGB
 
 <dd>
 <p>16 bits per pixel. RGB color space. 5 bits per channel. The most significant bit is ignored.</p>
 </dd>
 
-### -field <a id="BM_x555XYZ"></a><a id="bm_x555xyz"></a><a id="BM_X555XYZ"></a><b>BM_x555XYZ</b>
+### -field BM_x555XYZ
 
 <dd>
 <p>16 bits per pixel. Yxy color space. 5 bits per channel. The most significant bit is ignored.</p>
 </dd>
 
-### -field <a id="BM_x555Yxy"></a><a id="bm_x555yxy"></a><a id="BM_X555YXY"></a><b>BM_x555Yxy</b>
+### -field BM_x555Yxy
 
 <dd>
 <p>16 bits per pixel. Yxy color space. 5 bits per channel. The most significant bit is ignored.</p>
 </dd>
 
-### -field <a id="BM_x555Lab"></a><a id="bm_x555lab"></a><a id="BM_X555LAB"></a><b>BM_x555Lab</b>
+### -field BM_x555Lab
 
 <dd>
 <p>BM_x555G3CH</p>
 </dd>
 
-### -field <a id="BM_x555G3CH"></a><a id="bm_x555g3ch"></a><a id="BM_X555G3CH"></a><b>BM_x555G3CH</b>
+### -field BM_x555G3CH
 
 <dd>
 <p>16 bits per pixel. G3CH color space. 5 bits per channel. The most significant bit is ignored.</p>
 </dd>
 
-### -field <a id="BM_RGBTRIPLETS"></a><a id="bm_rgbtriplets"></a><b>BM_RGBTRIPLETS</b>
+### -field BM_RGBTRIPLETS
 
 <dd>
 <p>24 bits per pixel maximum. For three channel colors, such as red, green, and blue, the total size is 24 bits per pixel. For single channel colors, such as gray, the total size is 8 bits per pixel.</p>
 </dd>
 
-### -field <a id="BM_BGRTRIPLETS"></a><a id="bm_bgrtriplets"></a><b>BM_BGRTRIPLETS</b>
+### -field BM_BGRTRIPLETS
 
 <dd>
 <p>24 bits per pixel maximum. For three channel colors, such as red, green, and blue, the total size is 24 bits per pixel. For single channel colors, such as gray, the total size is 8 bits per pixel.</p>
 </dd>
 
-### -field <a id="BM_XYZTRIPLETS"></a><a id="bm_xyztriplets"></a><b>BM_XYZTRIPLETS</b>
+### -field BM_XYZTRIPLETS
 
 <dd>
 <p>24 bits per pixel maximum. For three channel colors, such as red, green, and blue, the total size is 24 bits per pixel. For single channel colors, such as gray, the total size is 8 bits per pixel.</p>
 </dd>
 
-### -field <a id="BM_YxyTRIPLETS"></a><a id="bm_yxytriplets"></a><a id="BM_YXYTRIPLETS"></a><b>BM_YxyTRIPLETS</b>
+### -field BM_YxyTRIPLETS
 
 <dd>
 <p>24 bits per pixel maximum. For three channel, Y, x, and y values, the total size is 24 bits per pixel. For single channel gray scale, the total size is 8 bits per pixel.</p>
 </dd>
 
-### -field <a id="BM_LabTRIPLETS"></a><a id="bm_labtriplets"></a><a id="BM_LABTRIPLETS"></a><b>BM_LabTRIPLETS</b>
+### -field BM_LabTRIPLETS
 
 <dd>
 <p>24 bits per pixel maximum. For three channel, L, a, and b values, the total size is 24 bits per pixel. For single channel gray scale, the total size is 8 bits per pixel.</p>
 </dd>
 
-### -field <a id="BM_G3CHTRIPLETS"></a><a id="bm_g3chtriplets"></a><b>BM_G3CHTRIPLETS</b>
+### -field BM_G3CHTRIPLETS
 
 <dd>
 <p>24 bits per pixel maximum. For three channel values, the total size is 24 bits per pixel. For single channel gray scale, the total size is 8 bits per pixel.</p>
 </dd>
 
-### -field <a id="BM_5CHANNEL"></a><a id="bm_5channel"></a><b>BM_5CHANNEL</b>
+### -field BM_5CHANNEL
 
 <dd>
 <p>40 bits per pixel. 8 bits apiece are used for each channel.</p>
 </dd>
 
-### -field <a id="BM_6CHANNEL"></a><a id="bm_6channel"></a><b>BM_6CHANNEL</b>
+### -field BM_6CHANNEL
 
 <dd></dd>
 
-### -field <a id="BM_7CHANNEL"></a><a id="bm_7channel"></a><b>BM_7CHANNEL</b>
+### -field BM_7CHANNEL
 
 <dd>
 <p>56 bits per pixel. 8 bits apiece are used for each channel.</p>
 </dd>
 
-### -field <a id="BM_8CHANNEL"></a><a id="bm_8channel"></a><b>BM_8CHANNEL</b>
+### -field BM_8CHANNEL
 
 <dd>
 <p>64 bits per pixel. 8 bits apiece are used for each channel.</p>
 </dd>
 
-### -field <a id="BM_GRAY"></a><a id="bm_gray"></a><b>BM_GRAY</b>
+### -field BM_GRAY
 
 <dd>
 <p>32 bits per pixel. Only the 8 bit gray-scale value is used.</p>
 </dd>
 
-### -field <a id="BM_xRGBQUADS"></a><a id="bm_xrgbquads"></a><a id="BM_XRGBQUADS"></a><b>BM_xRGBQUADS</b>
+### -field BM_xRGBQUADS
 
 <dd>
 <p>32 bits per pixel. 8 bits are used for each color channel. The most significant byte is ignored.</p>
 </dd>
 
-### -field <a id="BM_xBGRQUADS"></a><a id="bm_xbgrquads"></a><a id="BM_XBGRQUADS"></a><b>BM_xBGRQUADS</b>
+### -field BM_xBGRQUADS
 
 <dd>
 <p>32 bits per pixel. 8 bits are used for each color channel. The most significant byte is ignored.</p>
 </dd>
 
-### -field <a id="BM_xG3CHQUADS"></a><a id="bm_xg3chquads"></a><a id="BM_XG3CHQUADS"></a><b>BM_xG3CHQUADS</b>
+### -field BM_xG3CHQUADS
 
 <dd>
 <p>32 bits per pixel. 8 bits are used for each color channel. The most significant byte is ignored.</p>
 </dd>
 
-### -field <a id="BM_KYMCQUADS"></a><a id="bm_kymcquads"></a><b>BM_KYMCQUADS</b>
+### -field BM_KYMCQUADS
 
 <dd>
 <p>32 bits per pixel. 8 bits are used for each color channel.</p>
 </dd>
 
-### -field <a id="BM_CMYKQUADS"></a><a id="bm_cmykquads"></a><b>BM_CMYKQUADS</b>
+### -field BM_CMYKQUADS
 
 <dd>
 <p>32 bits per pixel. 8 bits are used for each color channel.</p>
 </dd>
 
-### -field <a id="BM_10b_RGB"></a><a id="bm_10b_rgb"></a><a id="BM_10B_RGB"></a><b>BM_10b_RGB</b>
+### -field BM_10b_RGB
 
 <dd>
 <p>32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored. </p>
 </dd>
 
-### -field <a id="BM_10b_XYZ"></a><a id="bm_10b_xyz"></a><a id="BM_10B_XYZ"></a><b>BM_10b_XYZ</b>
+### -field BM_10b_XYZ
 
 <dd>
 <p>32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.</p>
 </dd>
 
-### -field <a id="BM_10b_Yxy"></a><a id="bm_10b_yxy"></a><a id="BM_10B_YXY"></a><b>BM_10b_Yxy</b>
+### -field BM_10b_Yxy
 
 <dd>
 <p>32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.</p>
 </dd>
 
-### -field <a id="BM_10b_Lab"></a><a id="bm_10b_lab"></a><a id="BM_10B_LAB"></a><b>BM_10b_Lab</b>
+### -field BM_10b_Lab
 
 <dd>
 <p>32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.</p>
 </dd>
 
-### -field <a id="BM_10b_G3CH"></a><a id="bm_10b_g3ch"></a><a id="BM_10B_G3CH"></a><b>BM_10b_G3CH</b>
+### -field BM_10b_G3CH
 
 <dd>
 <p>32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.</p>
 </dd>
 
-### -field <a id="BM_NAMED_INDEX"></a><a id="bm_named_index"></a><b>BM_NAMED_INDEX</b>
+### -field BM_NAMED_INDEX
 
 <dd>
 <p>32 bits per pixel. Named color indices. Index numbering begins at one. </p>
 </dd>
 
-### -field <a id="BM_16b_RGB"></a><a id="bm_16b_rgb"></a><a id="BM_16B_RGB"></a><b>BM_16b_RGB</b>
+### -field BM_16b_RGB
 
 <dd>
 <p>64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.</p>
 </dd>
 
-### -field <a id="BM_16b_XYZ"></a><a id="bm_16b_xyz"></a><a id="BM_16B_XYZ"></a><b>BM_16b_XYZ</b>
+### -field BM_16b_XYZ
 
 <dd>
 <p>64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.</p>
 </dd>
 
-### -field <a id="BM_16b_Yxy"></a><a id="bm_16b_yxy"></a><a id="BM_16B_YXY"></a><b>BM_16b_Yxy</b>
+### -field BM_16b_Yxy
 
 <dd>
 <p>64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.</p>
 </dd>
 
-### -field <a id="BM_16b_Lab"></a><a id="bm_16b_lab"></a><a id="BM_16B_LAB"></a><b>BM_16b_Lab</b>
+### -field BM_16b_Lab
 
 <dd>
 <p>64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.</p>
 </dd>
 
-### -field <a id="BM_16b_G3CH"></a><a id="bm_16b_g3ch"></a><a id="BM_16B_G3CH"></a><b>BM_16b_G3CH</b>
+### -field BM_16b_G3CH
 
 <dd>
 <p>64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.</p>
 </dd>
 
-### -field <a id="BM_16b_GRAY"></a><a id="bm_16b_gray"></a><a id="BM_16B_GRAY"></a><b>BM_16b_GRAY</b>
+### -field BM_16b_GRAY
 
 <dd>
 <p>64 bits per pixel. 16 bits are used for the gray-scale value. All other bits are ignored.</p>
 </dd>
 
-### -field <a id="BM_565RGB"></a><a id="bm_565rgb"></a><b>BM_565RGB</b>
+### -field BM_565RGB
 
 <dd>
 <p>16 bits per pixel. 5 bits are used for red, 6 for green, and 5 for blue.</p>
 </dd>
 
-### -field <a id="BM_32b_scRGB"></a><a id="bm_32b_scrgb"></a><a id="BM_32B_SCRGB"></a><b>BM_32b_scRGB</b>
+### -field BM_32b_scRGB
 
 <dd>
 <p>96 bits per pixel. 32 bits are used for each color channel, as defined by the IEEE 32-bit floating point standard.</p>
 </dd>
 
-### -field <a id="BM_32b_scARGB"></a><a id="bm_32b_scargb"></a><a id="BM_32B_SCARGB"></a><b>BM_32b_scARGB</b>
+### -field BM_32b_scARGB
 
 <dd>
 <p>128 bits per pixel. 32 bits are used for each color channel, as defined by the IEEE 32-bit floating point standard.</p>
 </dd>
 
-### -field <a id="BM_S2DOT13FIXED_scRGB"></a><a id="bm_s2dot13fixed_scrgb"></a><a id="BM_S2DOT13FIXED_SCRGB"></a><b>BM_S2DOT13FIXED_scRGB</b>
+### -field BM_S2DOT13FIXED_scRGB
 
 <dd>
 <p>48 bits per pixel. Color data is stored as one 16-bit word per channel, with a fixed range of -4 to +4, inclusive. A signed format is used, with 1 bit for the sign, 2 bits for the integer portion, and 13 bits for the fractional portion.</p>
 </dd>
 
-### -field <a id="BM_S2DOT13FIXED_scARGB"></a><a id="bm_s2dot13fixed_scargb"></a><a id="BM_S2DOT13FIXED_SCARGB"></a><b>BM_S2DOT13FIXED_scARGB</b>
+### -field BM_S2DOT13FIXED_scARGB
 
 <dd>
 <p>64 bits per pixel. Color data is stored as one 16-bit word per channel, with a fixed range of -4 to +4, inclusive. A signed format is used, with 1 bit for the sign, 2 bits for the integer portion, and 13 bits for the fractional portion.</p>
 </dd>
 
-### -field <a id="BM_R10G10B10A2"></a><a id="bm_r10g10b10a2"></a><b>BM_R10G10B10A2</b>
+### -field BM_R10G10B10A2
 
 <dd></dd>
 
-### -field <a id="BM_R10G10B10A2_XR"></a><a id="bm_r10g10b10a2_xr"></a><b>BM_R10G10B10A2_XR</b>
+### -field BM_R10G10B10A2_XR
 
 <dd></dd>
 
-### -field <a id="BM_R16G16B16A16_FLOAT"></a><a id="bm_r16g16b16a16_float"></a><b>BM_R16G16B16A16_FLOAT</b>
+### -field BM_R16G16B16A16_FLOAT
 
 <dd>
 <p>#endif // NTDDI_VERSION &gt;= NTDDI_WIN7</p>

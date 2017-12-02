@@ -42,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 <p>
              Stores the values of all control registers of the port controller retrieved by the 
-             <a href="buses.ioctl_ucmtcpci_port_controller_get_control">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL</a> request.</p>
+             <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl-ucmtcpci-port-controller-get-control.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL</a> request.</p>
 
 
 ## -syntax
@@ -60,7 +60,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>TCPCControl</b>
+### -field TCPCControl
 
 <dd>
 <p>
@@ -68,7 +68,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS {
                  <b>UCMTCPCI_PORT_CONTROLLER_TCPC_CONTROL</b> structure that describes the TCPC_CONTROL Register defined as per the Universal Serial Bus Type-C Port Controller Interface Specification. This structure is declared in UcmTcpciSpec.h.</p>
 </dd>
 
-### -field <b>RoleControl</b>
+### -field RoleControl
 
 <dd>
 <p>
@@ -76,7 +76,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS {
                  <b>UCMTCPCI_PORT_CONTROLLER_ROLE_CONTROL</b> structure that describes the ROLE_CONTROL Register defined as per the Universal Serial Bus Type-C Port Controller Interface Specification. This structure is declared in UcmTcpciSpec.h.</p>
 </dd>
 
-### -field <b>FaultControl</b>
+### -field FaultControl
 
 <dd>
 <p>
@@ -84,7 +84,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS {
                  <b>UCMTCPCI_PORT_CONTROLLER_FAULT_CONTROL</b> structure that describes the FAULT_CONTROL Register defined as per the Universal Serial Bus Type-C Port Controller Interface Specification. This structure is declared in UcmTcpciSpec.h.</p>
 </dd>
 
-### -field <b>PowerControl</b>
+### -field PowerControl
 
 <dd>
 <p>
@@ -113,7 +113,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ioctl_ucmtcpci_port_controller_get_control">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL</a>
+<a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl-ucmtcpci-port-controller-get-control.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL</a>
 </dt>
 </dl>
 <p> </p>

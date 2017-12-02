@@ -57,19 +57,19 @@ void USBD_AssignUrbToIoStackLocation(
 ## -parameters
 <dl>
 
-### -param <i>USBDHandle</i> [in]
+### -param USBDHandle [in]
 
 <dd>
 <p>A USBD handle that is retrieved in a previous call to the <a href="..\usbdlib\nf-usbdlib-usbd-createhandle.md">USBD_CreateHandle</a> routine.</p>
 </dd>
 
-### -param <i>StackLocation</i> [in]
+### -param StackLocation [in]
 
 <dd>
 <p>Pointer to the IRP's next stack location (<a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a>). The client driver received a pointer to the stack location in a previous call to <a href="..\wdm\nf-wdm-iogetnextirpstacklocation.md">IoGetNextIrpStackLocation</a>.</p>
 </dd>
 
-### -param <i>Urb</i> [in]
+### -param Urb [in]
 
 <dd>
 <p>Pointer to the <a href="..\usb\ns-usb--urb.md">URB</a> structure that is allocated by <a href="..\usbdlib\nf-usbdlib-usbd-urballocate.md">USBD_UrbAllocate</a>, <a href="..\usbdlib\nf-usbdlib-usbd-isochurballocate.md">USBD_IsochUrbAllocate</a>, <a href="..\usbdlib\nf-usbdlib-usbd-selectconfigurballocateandbuild.md">USBD_SelectConfigUrbAllocateAndBuild</a>, or 

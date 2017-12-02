@@ -61,43 +61,43 @@ typedef struct _FILE_NETWORK_OPEN_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>CreationTime</b>
+### -field CreationTime
 
 <dd>
 <p>Specifies the time that the file was created.</p>
 </dd>
 
-### -field <b>LastAccessTime</b>
+### -field LastAccessTime
 
 <dd>
 <p>Specifies the time that the file was last accessed.</p>
 </dd>
 
-### -field <b>LastWriteTime</b>
+### -field LastWriteTime
 
 <dd>
 <p>Specifies he time that the file was last written to.</p>
 </dd>
 
-### -field <b>ChangeTime</b>
+### -field ChangeTime
 
 <dd>
 <p>Specifies the time that the file was last changed.</p>
 </dd>
 
-### -field <b>AllocationSize</b>
+### -field AllocationSize
 
 <dd>
 <p>Specifies the file allocation size, in bytes. Usually, this value is a multiple of the sector or cluster size of the underlying physical device.</p>
 </dd>
 
-### -field <b>EndOfFile</b>
+### -field EndOfFile
 
 <dd>
 <p>Specifies the absolute end-of-file position as a byte offset from the start of the file. <b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file. In other words, <b>EndOfFile</b> is the offset to the byte immediately following the last valid byte in the file.</p>
 </dd>
 
-### -field <b>FileAttributes</b>
+### -field FileAttributes
 
 <dd>
 <p>Specifies one or more FILE_ATTRIBUTE_<i>XXX</i> flags. For descriptions of these flags, see the documentation of the <b>GetFileAttributes</b> function in the Microsoft Windows SDK.</p>

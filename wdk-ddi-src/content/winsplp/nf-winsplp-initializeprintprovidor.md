@@ -55,19 +55,19 @@ BOOL InitializePrintProvidor(
 ## -parameters
 <dl>
 
-### -param <i>pPrintProvidor</i> [out]
+### -param pPrintProvidor [out]
 
 <dd>
 <p>Caller-supplied address of a <a href="..\winsplp\ns-winsplp--printprovidor.md">PRINTPROVIDOR</a> structure, to be filled in by the print provider.</p>
 </dd>
 
-### -param <i>cbPrintProvidor</i> [in]
+### -param cbPrintProvidor [in]
 
 <dd>
 <p>Caller-supplied size, in bytes, of the PRINTPROVIDOR structure pointed to by <i>pPrintProvidor</i>.</p>
 </dd>
 
-### -param <i>pFullRegistryPath</i> [in, optional]
+### -param pFullRegistryPath [in, optional]
 
 <dd>
 <p>Caller-supplied pointer to a string representing the full registry path to the provider's registry entry.</p>
@@ -78,7 +78,7 @@ BOOL InitializePrintProvidor(
 <p>If the operation succeeds, the function should return <b>TRUE</b>. Otherwise the function should return <b>FALSE</b>.</p>
 
 ## -remarks
-<p>Print providers are required to define an <b>InitializePrintProvidor</b> function, which is the first function called by the spooler after the provider has been loaded. The function must fill the supplied <a href="..\winsplp\ns-winsplp--printprovidor.md">PRINTPROVIDOR</a> structure with pointers to the provider's defined functions (see <a href="NULL">Functions Defined by Print Providers</a>). The function can also perform other provider-specific initialization operations.</p>
+<p>Print providers are required to define an <b>InitializePrintProvidor</b> function, which is the first function called by the spooler after the provider has been loaded. The function must fill the supplied <a href="..\winsplp\ns-winsplp--printprovidor.md">PRINTPROVIDOR</a> structure with pointers to the provider's defined functions (see <a href="https://msdn.microsoft.com/4fae4b69-ed4b-47b6-b6e8-41733aed51a5">Functions Defined by Print Providers</a>). The function can also perform other provider-specific initialization operations.</p>
 
 ## -requirements
 <table>

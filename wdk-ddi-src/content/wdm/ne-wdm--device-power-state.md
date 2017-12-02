@@ -60,37 +60,37 @@ typedef enum _DEVICE_POWER_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PowerDeviceUnspecified"></a><a id="powerdeviceunspecified"></a><a id="POWERDEVICEUNSPECIFIED"></a><b>PowerDeviceUnspecified</b>
+### -field PowerDeviceUnspecified
 
 <dd>
 <p>Indicates an unspecified device power state. </p>
 </dd>
 
-### -field <a id="PowerDeviceD0"></a><a id="powerdeviced0"></a><a id="POWERDEVICED0"></a><b>PowerDeviceD0</b>
+### -field PowerDeviceD0
 
 <dd>
 <p>Indicates a maximum device power state, which corresponds to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543210">device working state D0</a>. </p>
 </dd>
 
-### -field <a id="PowerDeviceD1"></a><a id="powerdeviced1"></a><a id="POWERDEVICED1"></a><b>PowerDeviceD1</b>
+### -field PowerDeviceD1
 
 <dd>
 <p>Indicates a <a href="https://msdn.microsoft.com/f594a63f-10ce-439d-abe3-d342555d98f0">device sleeping state</a> less than <b>PowerDeviceD0</b> and greater than <b>PowerDeviceD2</b>, which corresponds to device power state D1.</p>
 </dd>
 
-### -field <a id="PowerDeviceD2"></a><a id="powerdeviced2"></a><a id="POWERDEVICED2"></a><b>PowerDeviceD2</b>
+### -field PowerDeviceD2
 
 <dd>
 <p>Indicates a device sleeping state less than <b>PowerDeviceD1</b> and greater than <b>PowerDeviceD3</b>, which corresponds to device power state D2. </p>
 </dd>
 
-### -field <a id="PowerDeviceD3"></a><a id="powerdeviced3"></a><a id="POWERDEVICED3"></a><b>PowerDeviceD3</b>
+### -field PowerDeviceD3
 
 <dd>
 <p>Indicates the lowest-powered device sleeping state, which corresponds to device power state D3.</p>
 </dd>
 
-### -field <a id="PowerDeviceMaximum"></a><a id="powerdevicemaximum"></a><a id="POWERDEVICEMAXIMUM"></a><b>PowerDeviceMaximum</b>
+### -field PowerDeviceMaximum
 
 <dd>
 <p>The number of device power state values for this enumeration type that represent actual power states. The value of the other device power states is less than this value. </p>

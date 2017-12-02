@@ -7,7 +7,7 @@ old-location: netvista\rilimssystemtype_2.htm
 old-project: netvista
 ms.assetid: 94c37721-372f-448f-8cd9-d4c64dd285cb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILIMSSYSTEMTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_IMSSYSTEMTYPE_WIFI"></a><a id="ril_imssystemtype_wifi"></a><b>RIL_IMSSYSTEMTYPE_WIFI</b>
+### -field RIL_IMSSYSTEMTYPE_WIFI
 
 <dd></dd>
 
-### -field <a id="RIL_IMSSYSTEMTYPE_LTE"></a><a id="ril_imssystemtype_lte"></a><b>RIL_IMSSYSTEMTYPE_LTE</b>
+### -field RIL_IMSSYSTEMTYPE_LTE
 
 <dd></dd>
 
-### -field <a id="RIL_IMSSYSTEMTYPE_MAX"></a><a id="ril_imssystemtype_max"></a><b>RIL_IMSSYSTEMTYPE_MAX</b>
+### -field RIL_IMSSYSTEMTYPE_MAX
 
 <dd></dd>
 </dl>

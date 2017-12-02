@@ -59,19 +59,19 @@ NTSTATUS AVStrMiniPinHandshake(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to the IRP containing the handshake request.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>Pointer to a <a href="stream.ksidentifier">KSIDENTIFIER</a> structure that contains a GUID identifying the requested protocol.</p>
 </dd>
 
-### -param <i>Data</i> [in]
+### -param Data [in]
 
 <dd>
 <p>Pointer to a caller-allocated buffer. If the pin supports the requested protocol, <i>AVStrMiniPinHandshake</i> should fill in this parameter with a pointer to a <a href="stream.kshandshake">KSHANDSHAKE</a> structure.</p>

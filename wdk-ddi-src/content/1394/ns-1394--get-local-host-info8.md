@@ -7,7 +7,7 @@ old-location: ieee\get_local_host_info8.htm
 old-project: IEEE
 ms.assetid: DA30F8BA-B920-458E-B7C7-8D7B7081507A
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: GET_LOCAL_HOST_INFO8, GET_LOCAL_HOST_INFO8, *PGET_LOCAL_HOST_INFO8
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,13 +54,13 @@ typedef struct _GET_LOCAL_HOST_INFO8 {
 ## -struct-fields
 <dl>
 
-### -field <b>MajorVersion</b>
+### -field MajorVersion
 
 <dd>
 <p>The major version of the 1394 bus driver interface.</p>
 </dd>
 
-### -field <b>MinorVersion</b>
+### -field MinorVersion
 
 <dd>
 <p>The minor version of the 1394 bus driver interface.</p>

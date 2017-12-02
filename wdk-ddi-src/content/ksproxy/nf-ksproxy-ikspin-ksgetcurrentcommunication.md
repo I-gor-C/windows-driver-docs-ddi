@@ -56,7 +56,7 @@ HRESULT KsGetCurrentCommunication(
 ## -parameters
 <dl>
 
-### -param <i>Communication</i> [out, optional]
+### -param Communication [out, optional]
 
 <dd>
 <p>Pointer to a variable that receives one of the following values from the KSPIN_COMMUNICATION enumerated type describing the current communication direction for a pin: </p>
@@ -109,13 +109,13 @@ HRESULT KsGetCurrentCommunication(
 <p> </p>
 </dd>
 
-### -param <i>Interface</i> [out, optional]
+### -param Interface [out, optional]
 
 <dd>
 <p>Pointer to a variable that receives a <a href="stream.kspin_interface">KSPIN_INTERFACE</a> structure that describes the current interface for a pin. </p>
 </dd>
 
-### -param <i>Medium</i> [out, optional]
+### -param Medium [out, optional]
 
 <dd>
 <p>Pointer to a variable that receives a <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structure that describes the current medium for a pin. </p>

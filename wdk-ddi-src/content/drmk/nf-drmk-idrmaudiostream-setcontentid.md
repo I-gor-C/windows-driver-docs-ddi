@@ -55,13 +55,13 @@ NTSTATUS SetContentId(
 ## -parameters
 <dl>
 
-### -param <i>ContentId</i> [in]
+### -param ContentId [in]
 
 <dd>
 <p>Specifies the DRM content ID. This parameter is an identifier that the DRM system generates at run time to identify DRM-protected content in this stream.</p>
 </dd>
 
-### -param <i>DrmRights</i> [in]
+### -param DrmRights [in]
 
 <dd>
 <p>Pointer to a <a href="audio.drmrights">DRMRIGHTS</a> structure specifying the rights granted by the content provider to the user for playing and copying DRM-protected content in this stream.</p>
@@ -78,7 +78,7 @@ NTSTATUS SetContentId(
 
 <p>If the KS audio filter cannot enforce the specified DRM content rights, the <code>SetContentId</code> method returns the error code STATUS_NOT_IMPLEMENTED. In this case, the KS audio stream's previously set DRM content ID and DRM content rights remain set on the stream.</p>
 
-<p>For more information about using this method, see <a href="NULL">Digital Rights Management</a>.</p>
+<p>For more information about using this method, see <a href="https://msdn.microsoft.com/7ce19196-5180-421f-b6be-ac4a235a8c16">Digital Rights Management</a>.</p>
 
 ## -requirements
 <table>

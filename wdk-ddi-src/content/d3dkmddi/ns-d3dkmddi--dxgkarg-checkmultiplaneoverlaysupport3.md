@@ -59,37 +59,37 @@ typedef struct _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3 {
 ## -struct-fields
 <dl>
 
-### -field <b>PlaneCount</b>
+### -field PlaneCount
 
 <dd>
 <p>The number of input planes to be enabled.</p>
 </dd>
 
-### -field <b>ppPlanes</b>
+### -field ppPlanes
 
 <dd>
 <p>An array of pointers pointing to a DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE3 structure that specifies support attributes that the hardware provides for multi-plane overlays.</p>
 </dd>
 
-### -field <b>PostCompositionCount</b>
+### -field PostCompositionCount
 
 <dd>
 <p>The number of VidPnSources for which we want to apply post composition transforms.</p>
 </dd>
 
-### -field <b>ppPostComposition</b>
+### -field ppPostComposition
 
 <dd>
 <p>An array of pointers pointing to a DXGK_CHECK_MULTIPLANE_OVERLAY_POST_COMPSOTION_WITH_SOURCE structure that specifies transforms that should be applied after the planes are composed.</p>
 </dd>
 
-### -field <b>Supported</b>
+### -field Supported
 
 <dd>
 <p>TRUE if the multi-plane overlay configuration can be supported, otherwise FALSE.</p>
 </dd>
 
-### -field <b>ReturnInfo</b>
+### -field ReturnInfo
 
 <dd>
 <p>Specifies additional information</p>

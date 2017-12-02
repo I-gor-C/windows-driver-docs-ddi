@@ -61,50 +61,50 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3 {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies a combination of flip operations by Oring values in the DXGK_MULTIPLANE_OVERLAY_FLAGS enumeration.</p>
 </dd>
 
-### -field <b>SrcRect</b>
+### -field SrcRect
 
 <dd>
 <p>Specifies the source rectangle, of type RECT, relative to the source resource.</p>
 </dd>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd>
 <p>Specifies the destination rectangle, of type RECT, relative to the monitor resolution.</p>
 </dd>
 
-### -field <b>ClipRect</b>
+### -field ClipRect
 
 <dd>
 <p>Specifies additional clipping information, of type RECT, relative to the DstRect rectangle, after the data has been stretched according to the values of SrcRect and DstRect.</p>
 <p>The driver and hardware can use the ClipRect member to apply a common stretch factor as the clipping changes when an app occludes part of the DstRect destination rectangle.</p>
 </dd>
 
-### -field <b>Rotation</b>
+### -field Rotation
 
 <dd>
 <p>Specifies the clockwise rotation of the overlay plane, given as a value from the D3DDDI_ROTATION enumeration.</p>
 </dd>
 
-### -field <b>Blend</b>
+### -field Blend
 
 <dd>
 <p>Specifies the blend mode that applies to this overlay plane and the plane beneath it, given as a value from the DXGK_MULTIPLANE_OVERLAY_BLEND enumeration.</p>
 </dd>
 
-### -field <b>ColorSpaceType</b>
+### -field ColorSpaceType
 
 <dd>
 <p>Specifies the colorspace configuration, given as a value from the D3DDDI_COLOR_SPACE_TYPE enumeration.</p>
 </dd>
 
-### -field <b>StretchQuality</b>
+### -field StretchQuality
 
 <dd>
 <p>Specifies the overlay plane's stretch quality, given as a value from the DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY enumeration.</p>

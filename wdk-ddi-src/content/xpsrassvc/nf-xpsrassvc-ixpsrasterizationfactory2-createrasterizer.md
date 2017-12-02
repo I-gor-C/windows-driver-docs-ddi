@@ -63,25 +63,25 @@ HRESULT CreateRasterizer(
 ## -parameters
 <dl>
 
-### -param <i>*xpsPage</i> [in, optional]
+### -param *xpsPage [in, optional]
 
 <dd>
 <p>Pointer to an <b>IXpsOMPage</b> object that represents the XPS fixed page to render. This object encapsulates a FixedPage section from an XPS document. </p>
 </dd>
 
-### -param <i>dpiX</i> [in]
+### -param dpiX [in]
 
 <dd>
 <p>Dots per inch which is applied to x dimension of the rasterized output bitmap. The DPI value is the resolution of the device that is to print or display the XPS fixed page.</p>
 </dd>
 
-### -param <i>dpiY</i> [in]
+### -param dpiY [in]
 
 <dd>
 <p>Dots per inch which is applied to y dimension of the rasterized output bitmap.</p>
 </dd>
 
-### -param <i>nonTextRenderingMode</i> [in]
+### -param nonTextRenderingMode [in]
 
 <dd>
 <p>Rendering mode for nontext items in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following <a href="print.xpsras_rendering_mode_enumeration">XPSRAS_RENDERING_MODE</a> enumeration values:</p>
@@ -95,7 +95,7 @@ HRESULT CreateRasterizer(
 </ul>
 </dd>
 
-### -param <i>textRenderingMode</i> [in]
+### -param textRenderingMode [in]
 
 <dd>
 <p>Rendering mode for text in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following XPSRAS_RENDERING_MODE enumeration values:</p>
@@ -109,7 +109,7 @@ HRESULT CreateRasterizer(
 </ul>
 </dd>
 
-### -param <i>pixelFormat</i> [in]
+### -param pixelFormat [in]
 
 <dd>
 <p>Allows a caller to select the pixel format used by the IWICBitmap returned by <a href="print.ixpsrasterizer_rasterizerect">IXpsRasterizer::RasterizeRect</a>. Set this parameter to one of the following <a href="print.xpsras_pixel_format">XPSRAS_PIXEL_FORMAT</a> enumeration values:</p>
@@ -126,7 +126,7 @@ HRESULT CreateRasterizer(
 </ul>
 </dd>
 
-### -param <i>backgroundColor</i> [in]
+### -param backgroundColor [in]
 
 <dd>
 <p>Allows a caller to select background color. Set this parameter to one of the following <a href="print.xpsras_background_color">XPSRAS_BACKGROUND_COLOR</a> enumeration values:</p>
@@ -141,7 +141,7 @@ HRESULT CreateRasterizer(
 <p>The default background color is XPSRAS_BACKGROUND_COLOR_TRANSPARENT.</p>
 </dd>
 
-### -param <i>**ppIXpsRasterizer</i> [out, optional]
+### -param **ppIXpsRasterizer [out, optional]
 
 <dd>
 <p>This parameter points to a location into which the method writes a pointer to the <a href="print.ixpsrasterizer_interface">IXpsRasterizer</a> interface of the newly created XPS rasterizer object. If the method fails, it writes <b>NULL</b> to this location and returns an error code.

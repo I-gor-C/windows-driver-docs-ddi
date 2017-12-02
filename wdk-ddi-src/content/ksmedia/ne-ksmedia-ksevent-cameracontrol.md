@@ -55,13 +55,13 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSEVENT_CAMERACONTROL_FOCUS"></a><a id="ksevent_cameracontrol_focus"></a><b>KSEVENT_CAMERACONTROL_FOCUS</b>
+### -field KSEVENT_CAMERACONTROL_FOCUS
 
 <dd>
 <p>A camera focus operation has completed or has been canceled. See <a href="https://msdn.microsoft.com/library/windows/hardware/jj156037">KSEVENT_CAMERACONTROL_FOCUS</a>.</p>
 </dd>
 
-### -field <a id="KSEVENT_CAMERACONTROL_ZOOM"></a><a id="ksevent_cameracontrol_zoom"></a><b>KSEVENT_CAMERACONTROL_ZOOM</b>
+### -field KSEVENT_CAMERACONTROL_ZOOM
 
 <dd>
 <p>A camera zoom operation has completed or has been canceled. See <a href="https://msdn.microsoft.com/library/windows/hardware/jj156038">KSEVENT_CAMERACONTROL_ZOOM</a>.</p>

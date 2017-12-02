@@ -58,13 +58,13 @@ typedef struct _D3DHAL_DP2SETVERTEXSHADERCONST {
 ## -struct-fields
 <dl>
 
-### -field <b>dwRegister</b>
+### -field dwRegister
 
 <dd>
 <p>Specifies the index of the first vertex shader constant to have its value sent.</p>
 </dd>
 
-### -field <b>dwCount</b>
+### -field dwCount
 
 <dd>
 <p>Specifies the number of constant registers to set and, therefore, the number of four element, single precision float vectors to read from the DP2 stream.</p>

@@ -55,13 +55,13 @@ VOID KsPinSetPinClockTime(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure representing the AVStream pin object for which the exposed clock is set to the time specified by <i>Time</i>.</p>
 </dd>
 
-### -param <i>Time</i> [in]
+### -param Time [in]
 
 <dd>
 <p>This parameter specifies the time that is set on the clock exposed by <i>Pin</i>. To determine time measurement units, use <a href="stream.iksreferenceclock_getresolution">IKsReferenceClock::GetResolution</a>.</p>
@@ -139,7 +139,7 @@ VOID KsPinSetPinClockTime(
 <a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 </dt>
 <dt>
 <a href="..\ks\nn-ks-iksreferenceclock.md">IKsReferenceClock</a>

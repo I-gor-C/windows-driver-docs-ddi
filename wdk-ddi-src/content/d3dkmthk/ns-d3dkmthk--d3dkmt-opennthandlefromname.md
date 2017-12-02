@@ -56,19 +56,19 @@ typedef struct _D3DKMT_OPENNTHANDLEFROMNAME {
 ## -struct-fields
 <dl>
 
-### -field <b>dwDesiredAccess</b>
+### -field dwDesiredAccess
 
 <dd>
 <p>[in] Specifies read and write access for the resource.</p>
 </dd>
 
-### -field <b>pObjAttrib</b>
+### -field pObjAttrib
 
 <dd>
 <p>[in] A pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies attributes of the adapter, including its name.</p>
 </dd>
 
-### -field <b>hNtHandle</b>
+### -field hNtHandle
 
 <dd>
 <p>[out] An NT handle to the process.</p>

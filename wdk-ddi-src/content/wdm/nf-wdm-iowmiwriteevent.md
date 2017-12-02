@@ -55,7 +55,7 @@ NTSTATUS IoWMIWriteEvent(
 ## -parameters
 <dl>
 
-### -param <i>WnodeEventItem</i> [in, out]
+### -param WnodeEventItem [in, out]
 
 <dd>
 <p>Pointer to a <a href="kernel.wnode_event_item">WNODE_EVENT_ITEM</a> structure to be delivered to the user-mode WMI components that requested notification of the event. </p>

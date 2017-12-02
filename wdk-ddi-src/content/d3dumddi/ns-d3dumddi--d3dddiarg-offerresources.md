@@ -56,19 +56,19 @@ typedef struct _D3DDDIARG_OFFERRESOURCES {
 ## -struct-fields
 <dl>
 
-### -field <b>pResources</b>
+### -field pResources
 
 <dd>
 <p>[in] A pointer to an array of handles to the video memory resources that the driver offers.</p>
 </dd>
 
-### -field <b>Resources</b>
+### -field Resources
 
 <dd>
 <p>[in] The number of elements in the array pointed to by <b>pResources</b>.</p>
 </dd>
 
-### -field <b>Priority</b>
+### -field Priority
 
 <dd>
 <p>[in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-offer-priority.md">D3DDDI_OFFER_PRIORITY</a> that indicates the importance of the resources pointed to by <b>pResources</b>.</p>

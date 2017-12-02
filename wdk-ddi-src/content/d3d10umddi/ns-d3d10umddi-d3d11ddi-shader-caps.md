@@ -54,20 +54,20 @@ typedef struct D3D11DDI_SHADER_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>Caps</b>
+### -field Caps
 
 <dd>
 <p>[in] A valid bitwise <b>OR</b> of values that describe the shader capabilities of the display device. The Direct3D runtime supports the following values.</p>
 <dl class="indent">
 
-### -field <a id="D3D11DDICAPS_SHADER_DOUBLES__0x1_"></a><a id="d3d11ddicaps_shader_doubles__0x1_"></a><a id="D3D11DDICAPS_SHADER_DOUBLES__0X1_"></a><p><a id="D3D11DDICAPS_SHADER_DOUBLES__0x1_"></a><a id="d3d11ddicaps_shader_doubles__0x1_"></a><a id="D3D11DDICAPS_SHADER_DOUBLES__0X1_"></a><b>D3D11DDICAPS_SHADER_DOUBLES (0x1)</b></p>
+### -field D3D11DDICAPS_SHADER_DOUBLES (0x1)
 
 
 <dd>
 <p>The display device supports shaders that can internally operate on double-precision floating-point numbers. However, these shaders can neither input nor output double values, and they cannot perform atomic operations on double values. Only operations that are internal to such a shader can use double values. The shader must form double values by combining input values at the start of the shader. The shader must break apart double values into multiple output values at the end of the shader.</p>
 </dd>
 
-### -field <a id="D3D11DDICAPS_SHADER_COMPUTE_PLUS_RAW_AND_STRUCTURED_BUFFERS_IN_SHADER_4_X__0x2_"></a><a id="d3d11ddicaps_shader_compute_plus_raw_and_structured_buffers_in_shader_4_x__0x2_"></a><a id="D3D11DDICAPS_SHADER_COMPUTE_PLUS_RAW_AND_STRUCTURED_BUFFERS_IN_SHADER_4_X__0X2_"></a><p><a id="D3D11DDICAPS_SHADER_COMPUTE_PLUS_RAW_AND_STRUCTURED_BUFFERS_IN_SHADER_4_X__0x2_"></a><a id="d3d11ddicaps_shader_compute_plus_raw_and_structured_buffers_in_shader_4_x__0x2_"></a><a id="D3D11DDICAPS_SHADER_COMPUTE_PLUS_RAW_AND_STRUCTURED_BUFFERS_IN_SHADER_4_X__0X2_"></a><b>D3D11DDICAPS_SHADER_COMPUTE_PLUS_RAW_AND_STRUCTURED_BUFFERS_IN_SHADER_4_X (0x2)</b></p>
+### -field D3D11DDICAPS_SHADER_COMPUTE_PLUS_RAW_AND_STRUCTURED_BUFFERS_IN_SHADER_4_X (0x2)
 
 
 <dd>

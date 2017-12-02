@@ -7,7 +7,7 @@ old-location: netvista\fwpsinjecttransportsendasync1.htm
 old-project: netvista
 ms.assetid: 74d91e43-d58a-4c2c-bfc9-4b0829a5f9f8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsInjectTransportSendAsync1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
 ## -parameters
 <dl>
 
-### -param <i>injectionHandle</i> [in]
+### -param injectionHandle [in]
 
 <dd>
 <p>An injection handle that was previously created by a call to the 
@@ -74,7 +74,7 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
      FwpsInjectionHandleCreate0</a> function.</p>
 </dd>
 
-### -param <i>injectionContext</i> [in, optional]
+### -param injectionContext [in, optional]
 
 <dd>
 <p>An optional handle to the injection context. If specified, it can be obtained by calling the 
@@ -83,7 +83,7 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
      <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b>.</p>
 </dd>
 
-### -param <i>endpointHandle</i> [in]
+### -param endpointHandle [in]
 
 <dd>
 <p>A handle that indicates the stack transport endpoint in the send data path into which the packet
@@ -97,13 +97,13 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
      longer valid.</p>
 </dd>
 
-### -param <i>flags</i> [in]
+### -param flags [in]
 
 <dd>
 <p>This parameter is reserved. Callout drivers must set this parameter to zero.</p>
 </dd>
 
-### -param <i>sendArgs</i> [in, optional]
+### -param sendArgs [in, optional]
 
 <dd>
 <p>A pointer to a 
@@ -113,7 +113,7 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
      example, if the packet is sent through a raw socket).</p>
 </dd>
 
-### -param <i>addressFamily</i> [in]
+### -param addressFamily [in]
 
 <dd>
 <p>One of the following address families:
@@ -121,13 +121,13 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
 <p></p>
 <dl>
 
-### -param <a id="AF_INET"></a><a id="af_inet"></a>AF_INET
+### -param AF_INET
 
 <dd>
 <p>The IPv4 address family.</p>
 </dd>
 
-### -param <a id="AF_INET6"></a><a id="af_inet6"></a>AF_INET6
+### -param AF_INET6
 
 <dd>
 <p>The IPv6 address family.</p>
@@ -135,7 +135,7 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
 </dl>
 </dd>
 
-### -param <i>compartmentId</i> [in]
+### -param compartmentId [in]
 
 <dd>
 <p>The identifier of the routing compartment into which the packet data is injected, specified as a 
@@ -150,7 +150,7 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
      <b>currentMetadataValues</b> member. Otherwise, set this parameter to UNSPECIFIED_COMPARTMENT_ID.</p>
 </dd>
 
-### -param <i>netBufferList</i> [in, out]
+### -param netBufferList [in, out]
 
 <dd>
 <p>A pointer to a 
@@ -163,7 +163,7 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
      FwpsAllocateNetBufferAndNetBufferList0</a> function.</p>
 </dd>
 
-### -param <i>completionFn</i> [in]
+### -param completionFn [in]
 
 <dd>
 <p>A pointer to a 
@@ -172,7 +172,7 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
      <i>netBufferList</i> parameter, has been injected into the network stack.</p>
 </dd>
 
-### -param <i>completionContext</i> [in, optional]
+### -param completionContext [in, optional]
 
 <dd>
 <p>A pointer to a callout driver-provided context that is passed to the callout function pointed to
@@ -217,7 +217,7 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
 
 <p>Callout drivers normally inject data into the network stack when they modify packet data. For more
     information about how a callout driver can modify packet data, see 
-    <a href="NULL">Callout Driver Operations</a>.</p>
+    <a href="netvista.callout_driver_operations">Callout Driver Operations</a>.</p>
 
 <p>The injected packet can be indicated to the callout driver again. To prevent infinite looping, the
     driver should first call the 
@@ -386,4 +386,4 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectTransportSendAsync1 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectTransportSendAsync1 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

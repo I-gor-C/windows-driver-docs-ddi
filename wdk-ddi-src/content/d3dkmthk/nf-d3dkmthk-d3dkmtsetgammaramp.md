@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTSetGammaRamp(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setgammaramp.md">D3DKMT_SETGAMMARAMP</a> structure that describes parameters for setting the gamma ramp.</p>

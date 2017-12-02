@@ -63,49 +63,49 @@ typedef struct _D3D12DDIARG_CREATEDEVICE_0003 {
 ## -struct-fields
 <dl>
 
-### -field <b>hRTDevice</b>
+### -field hRTDevice
 
 <dd>
 <p>[in] A handle to the display device (graphics context) that specifies the handle that the driver should use when it calls back into the Direct3D runtime. </p>
 </dd>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>[in] The Direct3D interface version.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>[in] A UINT value that the driver can use to identify when the Direct3D runtime was built.</p>
 </dd>
 
-### -field <b>pKTCallbacks</b>
+### -field pKTCallbacks
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a> structure that contains a table of Direct3D runtime callback functions that the driver can use to access kernel services.</p>
 </dd>
 
-### -field <b>hDrvDevice</b>
+### -field hDrvDevice
 
 <dd>
 <p> A handle to the display device (graphics context) that the Direct3D runtime uses in subsequent driver calls to identify the display device.</p>
 </dd>
 
-### -field <b>p12UMCallbacks</b>
+### -field p12UMCallbacks
 
 <dd>
 <p> A pointer to a D3D12DDI_CORELAYER_DEVICECALLBACKS_0003 structure that contains a table of Direct3D runtime callback functions that the driver can use to access core user-mode runtime functionality. </p>
 </dd>
 
-### -field <b>p12UMCallbacks_0022</b>
+### -field p12UMCallbacks_0022
 
 <dd>
 <p>A pointer to a D3D12DDI_CORELAYER_DEVICECALLBACKS_0022 structure that contains a table of Direct3D runtime callback functions that the driver can use to access core user-mode runtime functionality. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flag values that identify how to create the display device.</p>

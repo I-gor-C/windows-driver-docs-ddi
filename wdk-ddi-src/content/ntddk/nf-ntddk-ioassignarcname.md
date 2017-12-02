@@ -55,13 +55,13 @@ VOID IoAssignArcName(
 ## -parameters
 <dl>
 
-### -param <i>ArcName</i> [in]
+### -param ArcName [in]
 
 <dd>
 <p>Pointer to a buffer containing the ARC name of the device. The ARC name must be a Unicode string.</p>
 </dd>
 
-### -param <i>DeviceName</i> [in]
+### -param DeviceName [in]
 
 <dd>
 <p>Pointer to a buffer containing the name of the device object, representing the same device. The device object name must be a Unicode string. </p>

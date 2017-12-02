@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbacks_sessionstatus.htm
 old-project: debugger
 ms.assetid: 127c4e48-87db-4735-8d3d-e01fed6a9cf0
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugEventCallbacks, SessionStatus, IDebugEventCallbacks::SessionStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT SessionStatus(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>Specifies the new status of the debugger session.  The following table describes the possible values.</p>

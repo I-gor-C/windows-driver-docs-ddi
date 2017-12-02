@@ -61,43 +61,43 @@ typedef enum _DEVICE_WAKE_DEPTH {
 ## -enum-fields
 <dl>
 
-### -field <a id="DeviceWakeDepthNotWakeable"></a><a id="devicewakedepthnotwakeable"></a><a id="DEVICEWAKEDEPTHNOTWAKEABLE"></a><b>DeviceWakeDepthNotWakeable</b>
+### -field DeviceWakeDepthNotWakeable
 
 <dd>
 <p>There is no device power state that can trigger a wake signal.</p>
 </dd>
 
-### -field <a id="DeviceWakeDepthD0"></a><a id="devicewakedepthd0"></a><a id="DEVICEWAKEDEPTHD0"></a><b>DeviceWakeDepthD0</b>
+### -field DeviceWakeDepthD0
 
 <dd>
 <p>D0 is the deepest device power state from which the device can trigger a wake signal. For more information, see Remarks.</p>
 </dd>
 
-### -field <a id="DeviceWakeDepthD1"></a><a id="devicewakedepthd1"></a><a id="DEVICEWAKEDEPTHD1"></a><b>DeviceWakeDepthD1</b>
+### -field DeviceWakeDepthD1
 
 <dd>
 <p>D1 is the deepest low-power device power state from which the device can trigger a wake signal.</p>
 </dd>
 
-### -field <a id="DeviceWakeDepthD2"></a><a id="devicewakedepthd2"></a><a id="DEVICEWAKEDEPTHD2"></a><b>DeviceWakeDepthD2</b>
+### -field DeviceWakeDepthD2
 
 <dd>
 <p>D2 is the deepest low-power device power state from which the device can trigger a wake signal.</p>
 </dd>
 
-### -field <a id="DeviceWakeDepthD3hot"></a><a id="devicewakedepthd3hot"></a><a id="DEVICEWAKEDEPTHD3HOT"></a><b>DeviceWakeDepthD3hot</b>
+### -field DeviceWakeDepthD3hot
 
 <dd>
 <p>D3hot is the deepest low-power device power state from which the device can trigger a wake signal.</p>
 </dd>
 
-### -field <a id="DeviceWakeDepthD3cold"></a><a id="devicewakedepthd3cold"></a><a id="DEVICEWAKEDEPTHD3COLD"></a><b>DeviceWakeDepthD3cold</b>
+### -field DeviceWakeDepthD3cold
 
 <dd>
 <p>D3cold is the deepest low-power device power state from which the device can trigger a wake signal.</p>
 </dd>
 
-### -field <a id="DeviceWakeDepthMaximum"></a><a id="devicewakedepthmaximum"></a><a id="DEVICEWAKEDEPTHMAXIMUM"></a><b>DeviceWakeDepthMaximum</b>
+### -field DeviceWakeDepthMaximum
 
 <dd>
 <p>Reserved for use by the operating system.</p>

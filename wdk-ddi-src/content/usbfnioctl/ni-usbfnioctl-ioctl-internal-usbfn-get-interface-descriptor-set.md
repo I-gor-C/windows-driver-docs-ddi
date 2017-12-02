@@ -46,7 +46,7 @@ req.product: Windows 10 or later.
 ## -ioctlparameters
 
 ### -input-buffer
-<p>A pointer to a buffer that contains a <a href="buses.usbfn_interface_info">USBFN_INTERFACE_INFO</a> structure. </p>
+<p>A pointer to a buffer that contains a <a href="..\usbfnbase\ns-usbfnbase--usbfn-interface-info.md">USBFN_INTERFACE_INFO</a> structure. </p>
 
 ### -input-buffer-length
 <p>The length of the input buffer must be at least <code>sizeof(USBFN_INTERFACE_INFO)</code>.</p>
@@ -54,11 +54,11 @@ req.product: Windows 10 or later.
 <p>The length of the input buffer must be at least <code>sizeof(USBFN_INTERFACE_INFO)</code>.</p>
 
 ### -output-buffer
-<p>A pointer to a buffer that contains a <a href="buses.usbfn_interface_info">USBFN_INTERFACE_INFO</a> structure. USB function class extension (UFX) populates the structure with the entire interface descriptor set including its endpoint descriptors.</p>
+<p>A pointer to a buffer that contains a <a href="..\usbfnbase\ns-usbfnbase--usbfn-interface-info.md">USBFN_INTERFACE_INFO</a> structure. USB function class extension (UFX) populates the structure with the entire interface descriptor set including its endpoint descriptors.</p>
 
-<p>A pointer to a buffer that contains a <a href="buses.usbfn_interface_info">USBFN_INTERFACE_INFO</a> structure. USB function class extension (UFX) populates the structure with the entire interface descriptor set including its endpoint descriptors.</p>
+<p>A pointer to a buffer that contains a <a href="..\usbfnbase\ns-usbfnbase--usbfn-interface-info.md">USBFN_INTERFACE_INFO</a> structure. USB function class extension (UFX) populates the structure with the entire interface descriptor set including its endpoint descriptors.</p>
 
-<p>A pointer to a buffer that contains a <a href="buses.usbfn_interface_info">USBFN_INTERFACE_INFO</a> structure. USB function class extension (UFX) populates the structure with the entire interface descriptor set including its endpoint descriptors.</p>
+<p>A pointer to a buffer that contains a <a href="..\usbfnbase\ns-usbfnbase--usbfn-interface-info.md">USBFN_INTERFACE_INFO</a> structure. USB function class extension (UFX) populates the structure with the entire interface descriptor set including its endpoint descriptors.</p>
 
 ### -output-buffer-length
 <p>The length of the output buffer must be at least <code>sizeof(USBFN_INTERFACE_INFO)</code>. </p>
@@ -90,11 +90,11 @@ I/O Status block
 <p>If the request is successful, the USB function class extension (UFX) returns STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it returns a status value for which NT_SUCCESS(status) equals FALSE. </p>
 
 ## -remarks
-<p>This request must be sent after sending the <a href="buses.ioctl_internal_usbfn_activate_usb_bus">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
+<p>This request must be sent after sending the <a href="..\usbfnioctl\ni-usbfnioctl-ioctl-internal-usbfn-activate-usb-bus.md">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
 
 <p>The length of the entire interface descriptor is variable. The class driver might need to send this IOCTL request twice to get the entire descriptor set.</p>
 
-<p>If the length of the entire descriptor set is greater than the  specified output buffer length, UFX sets the <b>Size</b> member of <a href="buses.usbfn_interface_info">USBFN_INTERFACE_INFO</a> to the actual buffer length and fails the request with STATUS_BUFFER_TOO_SMALL. The driver must then allocated an output buffer of length specified by <b>Size</b> and resend the request. </p>
+<p>If the length of the entire descriptor set is greater than the  specified output buffer length, UFX sets the <b>Size</b> member of <a href="..\usbfnbase\ns-usbfnbase--usbfn-interface-info.md">USBFN_INTERFACE_INFO</a> to the actual buffer length and fails the request with STATUS_BUFFER_TOO_SMALL. The driver must then allocated an output buffer of length specified by <b>Size</b> and resend the request. </p>
 
 ## -requirements
 <table>
@@ -113,10 +113,10 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbfn_interface_info">USBFN_INTERFACE_INFO</a>
+<a href="..\usbfnbase\ns-usbfnbase--usbfn-interface-info.md">USBFN_INTERFACE_INFO</a>
 </dt>
 <dt>
-<a href="buses.ioctl_internal_usbfn_activate_usb_bus">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a>
+<a href="..\usbfnioctl\ni-usbfnioctl-ioctl-internal-usbfn-activate-usb-bus.md">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a>
 </dt>
 </dl>
 <p> </p>

@@ -57,7 +57,7 @@ NTSTATUS QueryKey(
 ## -parameters
 <dl>
 
-### -param <i>KeyInformationClass</i> [in]
+### -param KeyInformationClass [in]
 
 <dd>
 <p>Specifies the type of information to be returned in the buffer. Set this parameter to one of the following KEY_INFORMATION_CLASS enumeration values:</p>
@@ -74,19 +74,19 @@ NTSTATUS QueryKey(
 </ul>
 </dd>
 
-### -param <i>KeyInformation</i> [out]
+### -param KeyInformation [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer into which the method writes the requested data. The buffer holds a structure of type <a href="..\wdm\ns-wdm--key-basic-information.md">KEY_BASIC_INFORMATION</a>, <a href="..\wdm\ns-wdm--key-full-information.md">KEY_FULL_INFORMATION</a>, or <a href="..\wdm\ns-wdm--key-node-information.md">KEY_NODE_INFORMATION</a>, depending on the value of <i>KeyInformationClass</i>. The structure is followed by a string of Unicode characters whose size depends on the type of information being requested about the key and the length of the key's name or class string.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Size in bytes of the <i>KeyInformation</i> buffer, which the caller must set according to the given <i>KeyInformationClass</i>. To receive all the requested data, the buffer must be at least as large as the size of the requested data.</p>
 </dd>
 
-### -param <i>ResultLength</i> [out]
+### -param ResultLength [out]
 
 <dd>
 <p>Output pointer for the length of the resulting data. This parameter points to a caller-allocated ULONG variable into which the method writes a count specifying the number of bytes actually written into the <i>KeyInformation</i> buffer. If the specified buffer length is too small to contain the information, however, the method instead outputs the required buffer size and returns STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL. For more information, see the following Remarks section.</p>

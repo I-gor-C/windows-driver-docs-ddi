@@ -58,31 +58,31 @@ typedef struct _D3DHAL_DP2TEXBLT {
 ## -struct-fields
 <dl>
 
-### -field <b>dwDDDestSurface</b>
+### -field dwDDDestSurface
 
 <dd>
 <p>Specifies the handle to the destination texture.</p>
 </dd>
 
-### -field <b>dwDDSrcSurface</b>
+### -field dwDDSrcSurface
 
 <dd>
 <p>Specifies the handle to the source texture.</p>
 </dd>
 
-### -field <b>pDest</b>
+### -field pDest
 
 <dd>
 <p>Specifies the destination point where the blt should be performed, that is, the point in the destination surface (<b>dwDDDestSurface</b>) to begin the blt. These <i>x</i> and <i>y</i> members of the POINT structure are specified in screen coordinates.</p>
 </dd>
 
-### -field <b>rSrc</b>
+### -field rSrc
 
 <dd>
 <p>Specifies the rectangle to be blitted in the source texture, that is, the source rectangle in the source surface (<b>dwDDSrcSurface</b>) to blt from.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Reserved for system use.</p>

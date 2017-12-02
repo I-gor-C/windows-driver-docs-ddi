@@ -61,13 +61,13 @@ typedef EVT_UFX_DEVICE_TEST_MODE_SET PFN_UFX_DEVICE_TEST_MODE_SET;
 ## -parameters
 <dl>
 
-### -param <i>UfxDevice</i> [in]
+### -param UfxDevice [in]
 
 <dd>
-<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.</p>
+<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>.</p>
 </dd>
 
-### -param <i>TestMode</i> [in]
+### -param TestMode [in]
 
 <dd>
 <p>Test mode selector value as defined by the USB 2.0 Specification.  These values are defined in usbfnbase.h</p>
@@ -89,9 +89,9 @@ typedef EVT_UFX_DEVICE_TEST_MODE_SET PFN_UFX_DEVICE_TEST_MODE_SET;
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The client driver for the function host controller registers its <i>EVT_UFX_DEVICE_TEST_MODE_SET</i> implementation with the USB function class extension (UFX) by calling the <a href="buses.ufxdevicecreate">UfxDeviceCreate</a> method.</p>
+<p>The client driver for the function host controller registers its <i>EVT_UFX_DEVICE_TEST_MODE_SET</i> implementation with the USB function class extension (UFX) by calling the <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a> method.</p>
 
-<p>The client driver indicates completion of this event by calling the <a href="buses.ufxdeviceeventcomplete">UfxDeviceEventComplete</a> method.</p>
+<p>The client driver indicates completion of this event by calling the <a href="..\ufxclient\nf-ufxclient-ufxdeviceeventcomplete.md">UfxDeviceEventComplete</a> method.</p>
 
 ## -requirements
 <table>
@@ -134,10 +134,10 @@ typedef EVT_UFX_DEVICE_TEST_MODE_SET PFN_UFX_DEVICE_TEST_MODE_SET;
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ufxdevicecreate">UfxDeviceCreate</a>
+<a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>
 </dt>
 <dt>
-<a href="buses.ufxdeviceeventcomplete">UfxDeviceEventComplete</a>
+<a href="..\ufxclient\nf-ufxclient-ufxdeviceeventcomplete.md">UfxDeviceEventComplete</a>
 </dt>
 </dl>
 <p> </p>

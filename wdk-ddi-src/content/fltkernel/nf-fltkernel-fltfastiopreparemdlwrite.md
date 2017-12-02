@@ -7,7 +7,7 @@ old-location: ifsk\fltfastiopreparemdlwrite.htm
 old-project: ifsk
 ms.assetid: 7C48D179-35FA-44E1-B959-BD857AAA28E1
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltFastIoPrepareMdlWrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,43 +60,43 @@ BOOLEAN FsRtlPrepareMdlWriteDev(
 ## -parameters
 <dl>
 
-### -param <i>InitiatingInstance</i> 
+### -param InitiatingInstance 
 
 <dd>
 <p>Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>A pointer to the file object.</p>
 </dd>
 
-### -param <i>FileOffset</i> [in]
+### -param FileOffset [in]
 
 <dd>
 <p>A pointer to a value that specifies the starting byte offset within the cache that holds the data.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length in bytes of the data to read from the cache.</p>
 </dd>
 
-### -param <i>LockKey</i> [in]
+### -param LockKey [in]
 
 <dd>
 <p>A value that is associated with the byte range to lock. If the range to lock overlaps another range that is already locked with a nonexclusive lock, or if the range to read is a subrange of another range that is already locked non-exclusively, the value in this parameter must be the key for that nonexclusive lock. The lock must be held by the parent process of the calling thread. Otherwise, this parameter has no effect.</p>
 </dd>
 
-### -param <i>MdlChain</i> [out]
+### -param MdlChain [out]
 
 <dd>
 <p>On output, a pointer to a linked list of memory descriptor lists (MDLs) that point to the byte range within the cached data.</p>
 </dd>
 
-### -param <i>IoStatus</i> [out]
+### -param IoStatus [out]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that, on output, contains the status of the transfer. If the operation succeeds, <i>IoStatus.Status</i> is set to STATUS_SUCCESS. Otherwise, it is set to an appropriate NTSTATUS error code. <i>IoStatus.Information</i> is set to the actual number of bytes that the routine successfully locked.</p>
@@ -179,4 +179,4 @@ BOOLEAN FsRtlPrepareMdlWriteDev(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltFastIoPrepareMdlWrite routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltFastIoPrepareMdlWrite routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

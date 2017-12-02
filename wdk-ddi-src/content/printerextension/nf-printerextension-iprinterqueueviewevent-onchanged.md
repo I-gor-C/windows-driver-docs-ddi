@@ -58,25 +58,25 @@ HRESULT OnChanged(
 ## -parameters
 <dl>
 
-### -param <i>pCollection</i> [in]
+### -param pCollection [in]
 
 <dd>
 <p>An <a href="..\printerextension\nn-printerextension-iprintjobcollection.md">IPrintJobCollection</a> object.</p>
 </dd>
 
-### -param <i>ulViewOffset</i> [in]
+### -param ulViewOffset [in]
 
 <dd>
 <p>The start of the range of jobs being monitored.</p>
 </dd>
 
-### -param <i>ulViewSize</i> [in]
+### -param ulViewSize [in]
 
 <dd>
 <p>The range of jobs being monitored.</p>
 </dd>
 
-### -param <i>ulCountJobsInPrintQueue</i> [in]
+### -param ulCountJobsInPrintQueue [in]
 
 <dd>
 <p>The current number of jobs in the print queue.</p>

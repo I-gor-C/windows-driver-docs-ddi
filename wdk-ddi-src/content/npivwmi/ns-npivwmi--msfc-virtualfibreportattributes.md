@@ -60,43 +60,43 @@ typedef struct _MSFC_VirtualFibrePortAttributes {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The virtual port status.</p>
 </dd>
 
-### -field <b>FCId</b>
+### -field FCId
 
 <dd>
 <p>The fabric ID of the virtual port.</p>
 </dd>
 
-### -field <b>VirtualName</b>
+### -field VirtualName
 
 <dd>
 <p>The symbolic name of the virtual port.</p>
 </dd>
 
-### -field <b>Tag</b>
+### -field Tag
 
 <dd>
 <p>A value for identifying the virtual port. This member provides a 128-bit width to accommodate a unique identifier.</p>
 </dd>
 
-### -field <b>WWPN</b>
+### -field WWPN
 
 <dd>
 <p>The world wide port name of the physical port.</p>
 </dd>
 
-### -field <b>WWNN</b>
+### -field WWNN
 
 <dd>
 <p>The world wide node name of the physical port.</p>
 </dd>
 
-### -field <b>FabricWWN</b>
+### -field FabricWWN
 
 <dd>
 <p>The world wide port name of the fabric.</p>

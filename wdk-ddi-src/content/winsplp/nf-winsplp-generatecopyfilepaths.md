@@ -63,44 +63,44 @@ DWORD GenerateCopyFilePaths(
 ## -parameters
 <dl>
 
-### -param <i>pszPrinterName</i> [in]
+### -param pszPrinterName [in]
 
 <dd>
 <p>Caller-supplied pointer to a string representing the name of the print queue.</p>
 </dd>
 
-### -param <i>pszDirectory</i> [in]
+### -param pszDirectory [in]
 
 <dd>
-<p>Caller-supplied pointer to a string representing the value supplied for the server's <b>Directory</b> entry in the registry. For more information, see <a href="NULL">Supporting Point and Print During Printer Installations</a>.</p>
+<p>Caller-supplied pointer to a string representing the value supplied for the server's <b>Directory</b> entry in the registry. For more information, see <a href="https://msdn.microsoft.com/70e65c7b-bba2-4da1-ac80-9719f8005c50">Supporting Point and Print During Printer Installations</a>.</p>
 </dd>
 
-### -param <i>pSplClientInfo</i> [in]
+### -param pSplClientInfo [in]
 
 <dd>
 <p>Caller-supplied pointer to an <a href="..\winsplp\ns-winsplp--splclient-info-1.md">SPLCLIENT_INFO_1</a> structure.</p>
 </dd>
 
-### -param <i>dwLevel</i> [in]
+### -param dwLevel [in]
 
 <dd>
 <p>Caller-supplied value indicating the level number of the structure pointed to by <i>pSplClientInfo</i>. Must be 1.</p>
 </dd>
 
-### -param <i>pszSourceDir</i> [in, out]
+### -param pszSourceDir [in, out]
 
 <dd>
 <p>For input, receives a caller-supplied pointer to a string representing the complete server directory path (including server name) from which files are to be copied.</p>
 <p>For output, the function can modify this string.</p>
 </dd>
 
-### -param <i>pcchSourceDirSize</i> [in, out]
+### -param pcchSourceDirSize [in, out]
 
 <dd>
 <p>Caller-supplied address containing the length of the buffer pointed to by <i>pszSourceDir</i>. (Note that this is the buffer length, not the string length.)</p>
 </dd>
 
-### -param <i>pszTargetDir</i> [in, out]
+### -param pszTargetDir [in, out]
 
 <dd>
 <p>For input, receives a caller-supplied pointer to a string representing the client directory path to which files are to be copied. The following rules apply:</p>
@@ -115,26 +115,26 @@ DWORD GenerateCopyFilePaths(
 <p>For output, the function can modify this string.</p>
 </dd>
 
-### -param <i>pcchTargetDirSize</i> [in, out]
+### -param pcchTargetDirSize [in, out]
 
 <dd>
 <p>Caller-supplied address containing the length of the buffer pointed to by <i>pszTargetDir</i>. (Note that this is the buffer length, not the string length.)</p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>Caller-supplied flag. Can be one of the following:</p>
 <p></p>
 <dl>
 
-### -param <a id="COPYFILE_FLAG_CLIENT_SPOOLER"></a><a id="copyfile_flag_client_spooler"></a>COPYFILE_FLAG_CLIENT_SPOOLER
+### -param COPYFILE_FLAG_CLIENT_SPOOLER
 
 <dd>
 <p>Indicates the function is being called by the client's spooler.</p>
 </dd>
 
-### -param <a id="COPYFILE_FLAG_SERVER_SPOOLER"></a><a id="copyfile_flag_server_spooler"></a>COPYFILE_FLAG_SERVER_SPOOLER
+### -param COPYFILE_FLAG_SERVER_SPOOLER
 
 <dd>
 <p>Indicates the function is being called by the server's spooler.</p>
@@ -147,7 +147,7 @@ DWORD GenerateCopyFilePaths(
 <p>If the operation succeeds, the function should return <b>ERROR_SUCCESS</b>. Otherwise, it should return an error code defined in winerror.h.</p>
 
 ## -remarks
-<p>All <a href="NULL">Point and Print DLLs</a> must export a <b>GenerateCopyFilePaths</b> function, which is called by the print spooler. Its purpose is to allow a Point and Print DLL to modify the source or destination directory path, or both, before the print spooler copies print queue-associated files from a server to a client. (The files are copied when a client connects to a print server. For a complete description of the steps involved in creating a Point and Print connection, see <a href="NULL">Supporting Point and Print</a>.)</p>
+<p>All <a href="https://msdn.microsoft.com/7ead940e-8426-4756-890f-f3607dc1f9ca">Point and Print DLLs</a> must export a <b>GenerateCopyFilePaths</b> function, which is called by the print spooler. Its purpose is to allow a Point and Print DLL to modify the source or destination directory path, or both, before the print spooler copies print queue-associated files from a server to a client. (The files are copied when a client connects to a print server. For a complete description of the steps involved in creating a Point and Print connection, see <a href="https://msdn.microsoft.com/a41bed5e-a006-4b9e-aa71-d2bcd154fae2">Supporting Point and Print</a>.)</p>
 
 <p>A Point and Print DLL executes on both the server and the client. The <b>GenerateCopyFilePaths</b> function should check the <i>dwFlags</i> argument to determine where it is executing.</p>
 

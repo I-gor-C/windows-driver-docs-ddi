@@ -57,7 +57,7 @@ NTSTATUS  SRIOV_SET_POWER_STATE(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to a driver-defined context.
@@ -65,19 +65,19 @@ NTSTATUS  SRIOV_SET_POWER_STATE(
                 </p>
 </dd>
 
-### -param <i>VfIndex</i> [in]
+### -param VfIndex [in]
 
 <dd>
 <p>A zero-based index of the VF to which this power state set operation applies.</p>
 </dd>
 
-### -param <i>PowerState</i> [in]
+### -param PowerState [in]
 
 <dd>
 <p>A <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a>-type value that indicates the <b>Dx</b> power state to set.</p>
 </dd>
 
-### -param <i>Wake</i> [in]
+### -param Wake [in]
 
 <dd>
 <p>A boolean value that indicates whether to arm the device for a wake signal (PME for PCI Express devices), as it goes into the low power state. TRUE  indicates the device is armed; FALSE otherwise. This value must be FALSE if <i>PowerState</i> is <b>PowerDeviceD0</b>.</p>

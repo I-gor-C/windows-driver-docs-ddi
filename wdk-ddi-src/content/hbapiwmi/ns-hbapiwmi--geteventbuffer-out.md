@@ -56,19 +56,19 @@ typedef struct _GetEventBuffer_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>Contains a value associated with the WMI class qualifier <a href="storage.hba_status">HBA_STATUS</a> that indicates the result of an HBA query operation. </p>
 </dd>
 
-### -field <b>EventCount</b>
+### -field EventCount
 
 <dd>
 <p>Indicates the number of events in <b>Events</b> that were retrieved by the <a href="storage.geteventbuffer">GetEventBuffer</a> WMI method.</p>
 </dd>
 
-### -field <b>Events</b>
+### -field Events
 
 <dd>
 <p>Contains an array of type <a href="..\hbapiwmi\ns-hbapiwmi--msfc-eventbuffer.md">MSFC_EventBuffer</a> that contains the next events in the HBA's event queue.</p>

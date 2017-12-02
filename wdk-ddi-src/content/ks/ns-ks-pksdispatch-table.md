@@ -63,61 +63,61 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceIoControl</b>
+### -field DeviceIoControl
 
 <dd>
 <p>Specifies the minidriver's routine to dispatch <a href="https://msdn.microsoft.com/library/windows/hardware/ff548649">IRP_MJ_DEVICE_CONTROL</a> IRPs to.</p>
 </dd>
 
-### -field <b>Read</b>
+### -field Read
 
 <dd>
 <p>Specifies the minidriver's routine to dispatch <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> IRPs to.</p>
 </dd>
 
-### -field <b>Write</b>
+### -field Write
 
 <dd>
 <p>Specifies the minidriver's routine to dispatch <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a> IRPs to.</p>
 </dd>
 
-### -field <b>Flush</b>
+### -field Flush
 
 <dd>
 <p>Specifies the minidriver's routine to dispatch <a href="https://msdn.microsoft.com/library/windows/hardware/ff549235">IRP_MJ_FLUSH_BUFFERS</a> IRPs to.</p>
 </dd>
 
-### -field <b>Close</b>
+### -field Close
 
 <dd>
 <p>Specifies the minidriver's routine to dispatch <a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a> IRPs to.</p>
 </dd>
 
-### -field <b>QuerySecurity</b>
+### -field QuerySecurity
 
 <dd>
 <p>Specifies the minidriver's routine to dispatch <a href="ifsk.irp_mj_query_security">IRP_MJ_QUERY_SECURITY</a> IRPs to.</p>
 </dd>
 
-### -field <b>SetSecurity</b>
+### -field SetSecurity
 
 <dd>
 <p>Specifies the minidriver's routine to dispatch <a href="ifsk.irp_mj_set_security">IRP_MJ_SET_SECURITY</a> IRPs to.</p>
 </dd>
 
-### -field <b>FastDeviceIoControl</b>
+### -field FastDeviceIoControl
 
 <dd>
 <p>Specifies the minidriver's routine to dispatch fast device I/O control requests to.</p>
 </dd>
 
-### -field <b>FastRead</b>
+### -field FastRead
 
 <dd>
 <p>Specifies the minidriver's routine to dispatch fast read requests to.</p>
 </dd>
 
-### -field <b>FastWrite</b>
+### -field FastWrite
 
 <dd>
 <p>Specifies the minidriver's routine to dispatch fast write requests to.</p>

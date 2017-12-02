@@ -7,7 +7,7 @@ old-location: netvista\ndismremoveminiport.htm
 old-project: netvista
 ms.assetid: 70745b03-f9a3-4398-b41a-dc75bd16ffe0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMRemoveMiniport
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ NDIS_STATUS NdisMRemoveMiniport(
 ## -parameters
 <dl>
 
-### -param <i>MiniportAdapterHandle</i> [in]
+### -param MiniportAdapterHandle [in]
 
 <dd>
 <p>The handle to the initialized miniport adapter that the miniport driver has determined is

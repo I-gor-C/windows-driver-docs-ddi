@@ -56,13 +56,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>LockStatus</b>
+### -field LockStatus
 
 <dd>
 <p>One of the following values from the <b>TunerLockType</b> enumeration that indicates the lock status of the scanning operation.</p>
@@ -99,7 +99,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>CurrentFrequency</b>
+### -field CurrentFrequency
 
 <dd>
 <p>The current locked-in frequency, in Hz, on the tuning device. </p>

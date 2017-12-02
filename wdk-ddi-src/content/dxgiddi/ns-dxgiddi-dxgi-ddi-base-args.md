@@ -64,34 +64,34 @@ typedef struct DXGI_DDI_BASE_ARGS {
 ## -struct-fields
 <dl>
 
-### -field <b>pDXGIBaseCallbacks</b>
+### -field pDXGIBaseCallbacks
 
 <dd>
 <p>[in] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-base-callbacks.md">DXGI_DDI_BASE_CALLBACKS</a> structure that contains a table of Microsoft Direct3D runtime callback functions that the driver can use to access kernel services.</p>
 </dd>
 
-### -field <b>pDXGIDDIBaseFunctions4</b>
+### -field pDXGIDDIBaseFunctions4
 
 <dd>
 <p>[in/out] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi1-3-ddi-base-functions.md">DXGI1_3_DDI_BASE_FUNCTIONS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
 <p> Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>pDXGIDDIBaseFunctions3</b>
+### -field pDXGIDDIBaseFunctions3
 
 <dd>
 <p>[in/out] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi1-2-ddi-base-functions.md">DXGI1_2_DDI_BASE_FUNCTIONS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>pDXGIDDIBaseFunctions2</b>
+### -field pDXGIDDIBaseFunctions2
 
 <dd>
 <p>[in/out] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi1-1-ddi-base-functions.md">DXGI1_1_DDI_BASE_FUNCTIONS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
 <p> Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>pDXGIDDIBaseFunctions</b>
+### -field pDXGIDDIBaseFunctions
 
 <dd>
 <p>[in/out] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-base-functions.md">DXGI_DDI_BASE_FUNCTIONS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>

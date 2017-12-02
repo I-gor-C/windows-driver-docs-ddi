@@ -7,7 +7,7 @@ old-location: netvista\ndisopenfile.htm
 old-project: netvista
 ms.assetid: 48d54092-d055-449c-a409-829213db2989
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisOpenFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ VOID NdisOpenFile(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [out]
+### -param Status [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which this function returns the status of the open file
@@ -68,7 +68,7 @@ VOID NdisOpenFile(
 <p></p>
 <dl>
 
-### -param <a id="NDIS_STATUS_SUCCESS"></a><a id="ndis_status_success"></a>NDIS_STATUS_SUCCESS
+### -param NDIS_STATUS_SUCCESS
 
 <dd>
 <p>The handle at 
@@ -76,21 +76,21 @@ VOID NdisOpenFile(
        <b>NdisMapFile</b>.</p>
 </dd>
 
-### -param <a id="NDIS_STATUS_FILE_NOT_FOUND"></a><a id="ndis_status_file_not_found"></a>NDIS_STATUS_FILE_NOT_FOUND
+### -param NDIS_STATUS_FILE_NOT_FOUND
 
 <dd>
 <p>The given string at 
        <i>FileName</i> did not specify a name found in the system object namespace.</p>
 </dd>
 
-### -param <a id="NDIS_STATUS_RESOURCES"></a><a id="ndis_status_resources"></a>NDIS_STATUS_RESOURCES
+### -param NDIS_STATUS_RESOURCES
 
 <dd>
 <p>NDIS could not allocate the resources it needed to open the file and allocate a buffer for the
        file contents.</p>
 </dd>
 
-### -param <a id="NDIS_STATUS_ERROR_READING_FILE"></a><a id="ndis_status_error_reading_file"></a>NDIS_STATUS_ERROR_READING_FILE
+### -param NDIS_STATUS_ERROR_READING_FILE
 
 <dd>
 <p>The specified file's data could not be read into system memory for subsequent access by the
@@ -99,21 +99,21 @@ VOID NdisOpenFile(
 </dl>
 </dd>
 
-### -param <i>FileHandle</i> [out]
+### -param FileHandle [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which this function returns the handle of the opened
      file if the call succeeds.</p>
 </dd>
 
-### -param <i>FileLength</i> [out]
+### -param FileLength [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which this function writes the number of bytes of data
      in the opened file if the call succeeds.</p>
 </dd>
 
-### -param <i>FileName</i> [in]
+### -param FileName [in]
 
 <dd>
 <p>A pointer to an NDIS_STRING type containing an initialized counted string, in the system-default
@@ -122,7 +122,7 @@ VOID NdisOpenFile(
      <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> type.</p>
 </dd>
 
-### -param <i>HighestAcceptableAddress</i> [in]
+### -param HighestAcceptableAddress [in]
 
 <dd>
 <p>The highest physical address in which the file data can be stored, or specifies -1 if the driver
@@ -235,4 +235,4 @@ VOID NdisOpenFile(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOpenFile function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOpenFile function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

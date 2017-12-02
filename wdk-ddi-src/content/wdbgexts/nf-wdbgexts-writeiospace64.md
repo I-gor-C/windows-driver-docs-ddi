@@ -7,13 +7,13 @@ old-location: debugger\writeiospace64.htm
 old-project: debugger
 ms.assetid: c750d3de-8481-42d5-a290-00e49d5fe82b
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: WriteIoSpace64
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -57,19 +57,19 @@ VOID  WriteIoSpace64(
 ## -parameters
 <dl>
 
-### -param <i>address</i> 
+### -param address 
 
 <dd>
 <p>Specifies the I/O address to write to.</p>
 </dd>
 
-### -param <i>data</i> 
+### -param data 
 
 <dd>
 <p>Specifies the address of a variable that holds the data to write. This must be at least the number of bytes contained in <i>size</i>.</p>
 </dd>
 
-### -param <i>size</i> 
+### -param size 
 
 <dd>
 <p>Specifies the address of a variable that contains the number of bytes to write. <i>Size</i> must be 1, 2, or 4. After the data is written, <i>size</i> will contain the number of bytes actually written.</p>
@@ -102,7 +102,7 @@ VOID  WriteIoSpace64(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

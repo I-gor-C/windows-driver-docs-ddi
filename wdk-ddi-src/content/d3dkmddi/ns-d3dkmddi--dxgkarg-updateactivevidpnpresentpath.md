@@ -54,7 +54,7 @@ typedef struct _DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnPresentPathInfo</b>
+### -field VidPnPresentPathInfo
 
 <dd>
 <p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure that contains the arguments required by <a href="display.dxgkddiupdateactivevidpnpresentpath">DxgkDdiUpdateActiveVidPnPresentPath</a>.</p>

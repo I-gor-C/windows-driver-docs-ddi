@@ -58,13 +58,13 @@ typedef struct _D3DHAL_DP2CREATEPIXELSHADER {
 ## -struct-fields
 <dl>
 
-### -field <b>dwHandle</b>
+### -field dwHandle
 
 <dd>
 <p>Specifies the handle to the pixel shader that is assigned by the runtime. This value is guaranteed to be subzero.</p>
 </dd>
 
-### -field <b>dwCodeSize</b>
+### -field dwCodeSize
 
 <dd>
 <p>Specifies the size, in bytes, of the shader code following this data structure in the DP2 stream.</p>

@@ -56,7 +56,7 @@ typedef struct _TAPE_CREATE_PARTITION {
 ## -struct-fields
 <dl>
 
-### -field <b>Method</b>
+### -field Method
 
 <dd>
 <p>Indicates the method used to create the partitions. This member can have one of the following values: </p>
@@ -93,13 +93,13 @@ typedef struct _TAPE_CREATE_PARTITION {
 <p> </p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Indicates the number of partitions to create.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Indicates the size of each partition, in bytes.</p>

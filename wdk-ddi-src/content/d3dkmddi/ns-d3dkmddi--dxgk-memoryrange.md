@@ -57,13 +57,13 @@ typedef struct _DXGK_MEMORYRANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>SegmentOffset</b>
+### -field SegmentOffset
 
 <dd>
 <p>The offset from the start of the segment in bytes. The value must be aligned to the segment page boundary.</p>
 </dd>
 
-### -field <b>SizeInBytes</b>
+### -field SizeInBytes
 
 <dd>
 <p>The number of byte in the range. The value must be multiple of the segment page size.</p>

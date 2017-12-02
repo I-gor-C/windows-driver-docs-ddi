@@ -64,43 +64,43 @@ typedef struct _DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>hDxgkProcess</b>
+### -field hDxgkProcess
 
 <dd>
 <p>The handle that was passed to <a href="display.dxgkddicreateprocess">DxgkDdiCreateProcess</a>.</p>
 </dd>
 
-### -field <b>SizeInBytes</b>
+### -field SizeInBytes
 
 <dd>
 <p>The size of the address range in bytes, this must be set to an integral multiple of the address space covered by a single page table entry.</p>
 </dd>
 
-### -field <b>Alignment</b>
+### -field Alignment
 
 <dd>
 <p>The number of bytes to align the start address to. Must be a multiple of the address space covered by a single page table entry and a power of 2.</p>
 </dd>
 
-### -field <b>StartVirtualAddress</b>
+### -field StartVirtualAddress
 
 <dd>
 <p>The starting location of the reserved address range.</p>
 </dd>
 
-### -field <b>BaseAddress</b>
+### -field BaseAddress
 
 <dd>
 <p>The base virtual address of the virtual address range in bytes. It must be aligned to the size of the address space, covered by a single page table entry.</p>
 </dd>
 
-### -field <b>AllowUserModeMapping</b>
+### -field AllowUserModeMapping
 
 <dd>
 <p>Allow the user mode driver to map allocations to the range.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A single value containing the flags set in the structure.</p>

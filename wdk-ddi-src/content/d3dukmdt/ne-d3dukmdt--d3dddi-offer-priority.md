@@ -58,7 +58,7 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_OFFER_PRIORITY_NONE"></a><a id="d3dddi_offer_priority_none"></a><b>D3DDDI_OFFER_PRIORITY_NONE</b>
+### -field D3DDDI_OFFER_PRIORITY_NONE
 
 <dd>
 <p>The allocation should not be offered.</p>
@@ -66,25 +66,25 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
 <div> </div>
 </dd>
 
-### -field <a id="D3DDDI_OFFER_PRIORITY_LOW"></a><a id="d3dddi_offer_priority_low"></a><b>D3DDDI_OFFER_PRIORITY_LOW</b>
+### -field D3DDDI_OFFER_PRIORITY_LOW
 
 <dd>
 <p>The allocation has low value and should be discarded before other offered allocations. Specify this type for allocations that have no useful content.</p>
 </dd>
 
-### -field <a id="D3DDDI_OFFER_PRIORITY_NORMAL"></a><a id="d3dddi_offer_priority_normal"></a><b>D3DDDI_OFFER_PRIORITY_NORMAL</b>
+### -field D3DDDI_OFFER_PRIORITY_NORMAL
 
 <dd>
 <p>The allocation has useful content but can easily be regenerated.</p>
 </dd>
 
-### -field <a id="D3DDDI_OFFER_PRIORITY_HIGH"></a><a id="d3dddi_offer_priority_high"></a><b>D3DDDI_OFFER_PRIORITY_HIGH</b>
+### -field D3DDDI_OFFER_PRIORITY_HIGH
 
 <dd>
 <p>The allocation has useful content and cannot easily be regenerated. The video memory manager (which is part of Dxgkrnl.sys) should therefore avoid discarding this allocation before other offered allocations.</p>
 </dd>
 
-### -field <a id="D3DDDI_OFFER_PRIORITY_AUTO"></a><a id="d3dddi_offer_priority_auto"></a><b>D3DDDI_OFFER_PRIORITY_AUTO</b>
+### -field D3DDDI_OFFER_PRIORITY_AUTO
 
 <dd>
 <p>The video memory manager should make a policy decision on the allocation's value based on its  priority for eviction.</p>

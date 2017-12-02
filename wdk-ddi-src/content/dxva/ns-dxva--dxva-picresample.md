@@ -64,67 +64,67 @@ typedef struct _DXVA_PicResample {
 ## -struct-fields
 <dl>
 
-### -field <b>wPicResampleSourcePicIndex</b>
+### -field wPicResampleSourcePicIndex
 
 <dd>
 <p>Specifies the reference buffer to be resampled. </p>
 </dd>
 
-### -field <b>wPicResampleDestPicIndex</b>
+### -field wPicResampleDestPicIndex
 
 <dd>
 <p>Specifies the buffer to be used for the output of the reference picture resampling operation.</p>
 </dd>
 
-### -field <b>wPicResampleRcontrol</b>
+### -field wPicResampleRcontrol
 
 <dd>
 <p>Specifies the rounding mode for averaging in the resampling operation. In the case of H.263 Annex O Spatial Scalability, this member is 1. (This corresponds to the value of <i>RCRPR</i> in H.263 Annex P that is equivalent to the upsampling needed for H.263 Annex O spatial scalability.) In the case of H.263 Annex P Reference Picture Resampling, this value is equal to the H.263 variable <i>RCRPR</i></p>
 </dd>
 
-### -field <b>bPicResampleExtrapWidth</b>
+### -field bPicResampleExtrapWidth
 
 <dd>
 <p>Indicates if horizontal resampling must include padding of the resampled picture. If nonzero and the padding method of using motion vectors over picture boundaries is used on the accelerator, any resampling must include padding of the resampled picture. This padding must cover at least the specified width around each edge of the resampled picture regardless of the resampling operation that is performed.</p>
 </dd>
 
-### -field <b>bPicResampleExtrapHeight</b>
+### -field bPicResampleExtrapHeight
 
 <dd>
 <p>Indicates if vertical resampling must include padding of the resampled picture. If nonzero and the padding method of using motion vectors over picture boundaries is used on the accelerator, any resampling must include padding of the resampled picture. This padding must cover at least the specified height around each edge of the resampled picture regardless of the resampling operation that is performed.</p>
 </dd>
 
-### -field <b>dwPicResampleSourceWidth</b>
+### -field dwPicResampleSourceWidth
 
 <dd>
 <p>Specifies the width in units of luminance samples of the area of the source picture to be resampled to the destination picture.</p>
 </dd>
 
-### -field <b>dwPicResampleSourceHeight</b>
+### -field dwPicResampleSourceHeight
 
 <dd>
 <p>Specifies the height of the area of the source picture, in units of luminance samples to be resampled to the destination picture.</p>
 </dd>
 
-### -field <b>dwPicResampleDestWidth</b>
+### -field dwPicResampleDestWidth
 
 <dd>
 <p>Specifies the width of the area of the destination picture, in units of luminance samples to contain the resampled data from the source picture. </p>
 </dd>
 
-### -field <b>dwPicResampleDestHeight</b>
+### -field dwPicResampleDestHeight
 
 <dd>
 <p>Specifies the height of the area of the destination picture in units of luminance samples to contain the resampled data from the source picture. </p>
 </dd>
 
-### -field <b>dwPicResampleFullDestWidth</b>
+### -field dwPicResampleFullDestWidth
 
 <dd>
 <p>Specifies the full width of the area of the destination picture in units of luminance samples to contain the resampled data from the source picture. </p>
 </dd>
 
-### -field <b>dwPicResampleFullDestHeight</b>
+### -field dwPicResampleFullDestHeight
 
 <dd>
 <p>Specifies the full height of the area of the destination picture in units of luminance samples to contain the resampled data from the source picture.</p>

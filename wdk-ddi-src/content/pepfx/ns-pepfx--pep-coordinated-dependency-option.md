@@ -57,13 +57,13 @@ typedef struct _PEP_COORDINATED_DEPENDENCY_OPTION {
 ## -struct-fields
 <dl>
 
-### -field <b>ExpectedStateIndex</b>
+### -field ExpectedStateIndex
 
 <dd>
 <p>Supplies the index of the idle state (coordinated idle state or processor idle state) that must have already been entered/be entered by this idle transition.</p>
 </dd>
 
-### -field <b>LooseDependency</b>
+### -field LooseDependency
 
 <dd>
 <p>When <b> FALSE</b>, the OS must use synchronization to guarantee that the state referred to by this dependency has already been entered.
@@ -72,7 +72,7 @@ The PEP must set <b>LooseDependency</b> to <b>TRUE</b> if the <b>ExpectedState</
 </p>
 </dd>
 
-### -field <b>InitiatingState</b>
+### -field InitiatingState
 
 <dd>
 <p>Indicates if the OS may simultaneously enter the state referred to by this dependency.
@@ -80,7 +80,7 @@ If <b>FALSE</b>, this state is only valid when another processor has previously 
 </p>
 </dd>
 
-### -field <b>DependentState</b>
+### -field DependentState
 
 <dd>
 <p>Indicates if this state is a valid state for a dependent processor to be in.

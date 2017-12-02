@@ -56,7 +56,7 @@ NTSTATUS KsReferenceSoftwareBusObject(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [in]
+### -param Header [in]
 
 <dd>
 <p>Pointer to the device header (extension) of the demand-load bus enumerator.</p>

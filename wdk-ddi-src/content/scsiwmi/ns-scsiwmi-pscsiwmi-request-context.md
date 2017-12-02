@@ -60,44 +60,44 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>UserContext</b>
+### -field UserContext
 
 <dd>
 <p>Points to a miniport driver buffer that contains any data the miniport driver requires to process the SRB. This can be a pointer to  the miniport driver's HW_DEVICE_EXTENSION structure or some other buffer.</p>
 </dd>
 
-### -field <b>BufferSize</b>
+### -field BufferSize
 
 <dd>
 <p>Reserved for system use and not available for use by miniport drivers.</p>
 </dd>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <dl>
 
-### -field Pointer to a structure of type WNODE_XXX. For more information about these sorts of structures, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566371">WMI WNODE_XXX Structures</a>. 
+### -field Pointer to a structure of type WNODE_XXX. For more information about these sorts of structures, see WMI WNODE_XXX Structures. 
 
 
-### -field This member is set by <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a>. Miniport drivers should not assign values to this member. 
+### -field This member is set by ScsiPortWmiDispatchFunction. Miniport drivers should not assign values to this member. 
 
 </dl>
 </dd>
 
-### -field <b>MinorFunction</b>
+### -field MinorFunction
 
 <dd>
 <p>Reserved for system use and not available for use by miniport drivers.</p>
 </dd>
 
-### -field <b>ReturnStatus</b>
+### -field ReturnStatus
 
 <dd>
 <p>Indicates the return status of the SRB. This member is not valid until after the miniport driver has called <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a> to update the request context.</p>
 </dd>
 
-### -field <b>ReturnSize</b>
+### -field ReturnSize
 
 <dd>
 <p>Indicates the number of bytes of data transferred for the SRB. This member is not valid until after the miniport driver has called <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a> to update the request context.</p>

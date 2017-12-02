@@ -56,19 +56,19 @@ void Render(
 ## -parameters
 <dl>
 
-### -param <i>pbBuffer</i> [in]
+### -param pbBuffer [in]
 
 <dd>
 <p>Pointer to the buffer that the synth sink wants data written to</p>
 </dd>
 
-### -param <i>dwLength</i> [in]
+### -param dwLength [in]
 
 <dd>
 <p>Specifies the length (in bytes) of the data to be rendered.</p>
 </dd>
 
-### -param <i>llPosition</i> [in]
+### -param llPosition [in]
 
 <dd>
 <p>Specifies the position (in bytes) in the PCM buffer at which to begin rendering. Rendering continues from this position for the number of bytes specified in <i>dwLength</i>.</p>

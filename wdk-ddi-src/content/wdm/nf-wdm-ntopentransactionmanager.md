@@ -60,37 +60,37 @@ NTSTATUS ZwOpenTransactionManager(
 ## -parameters
 <dl>
 
-### -param <i>TmHandle</i> [out]
+### -param TmHandle [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives a handle to the <a href="https://msdn.microsoft.com/af53cda4-e2ab-47df-9311-a4da2a2ee08d">transaction manager object</a> if <b>ZwOpenTransactionManager</b> returns STATUS_SUCCESS.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that specifies the caller's requested access to the transaction manager object. For information about how to specify this parameter, see the <i>DesiredAccess</i> parameter of <a href="..\wdm\nf-wdm-zwcreatetransactionmanager.md">ZwCreateTransactionManager</a>. </p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in, optional]
+### -param ObjectAttributes [in, optional]
 
 <dd>
 <p>A pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> routine to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>LogFileName</i> [in, optional]
+### -param LogFileName [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the path and file name of the <a href="https://msdn.microsoft.com/d7ad0e16-d1f2-4c41-b647-95b5445c2708">log file stream</a> that was created when the transaction manager object was created. For more information, see the <i>LogFileName</i> parameter of <b>ZwCreateTransactionManager</b>. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>TmIdentity</i> [in, optional]
+### -param TmIdentity [in, optional]
 
 <dd>
 <p>A pointer to a GUID that identifies the transaction manager object.  This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>OpenOptions</i> [in, optional]
+### -param OpenOptions [in, optional]
 
 <dd>
 <p>This parameter is not used and must be zero.</p>

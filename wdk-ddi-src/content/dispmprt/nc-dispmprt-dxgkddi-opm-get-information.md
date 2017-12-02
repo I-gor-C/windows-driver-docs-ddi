@@ -60,25 +60,25 @@ NTSTATUS DxgkDdiOPMGetInformation(
 ## -parameters
 <dl>
 
-### -param <i>MiniportDeviceContext</i> [in]
+### -param MiniportDeviceContext [in]
 
 <dd>
 <p>A handle to a context block associated with a display adapter. Previously, the display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function provided this handle to the DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>ProtectedOutputHandle</i> [in]
+### -param ProtectedOutputHandle [in]
 
 <dd>
 <p>The handle to a protected output object. The <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-create-protected-output.md">DxgkDdiOPMCreateProtectedOutput</a> function creates the protected output object and returns the handle to the object. The protected output object that corresponds to this handle should have OPM semantics.</p>
 </dd>
 
-### -param <i>Parameters</i> [in]
+### -param Parameters [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-get-info-parameters.md">DXGKMDT_OPM_GET_INFO_PARAMETERS</a> structure that contains parameters that are used to retrieve information from a protected output object whose handle is specified in the <i>ProtectedOutputHandle</i> parameter. <i>DxgkDdiOPMGetInformation</i> determines if the parameters contain a valid request from the application that indirectly created the protected output object. For more information, see the Remarks section. </p>
 </dd>
 
-### -param <i>RequestedInformation</i> [out]
+### -param RequestedInformation [out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-requested-information.md">DXGKMDT_OPM_REQUESTED_INFORMATION</a> structure that receives the protected output object's information if <i>DxgkDdiOPMGetInformation</i> returns successfully.</p>

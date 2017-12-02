@@ -7,7 +7,7 @@ old-location: netvista\ndisifquerybindingifindex.htm
 old-project: netvista
 ms.assetid: 08f31584-b3ea-4e6e-b8ce-17813ca7c06b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisIfQueryBindingIfIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NDIS_STATUS NdisIfQueryBindingIfIndex(
 ## -parameters
 <dl>
 
-### -param <i>NdisBindingHandle</i> [in]
+### -param NdisBindingHandle [in]
 
 <dd>
 <p>A handle that identifies the binding for which NDIS should obtain the 
@@ -71,7 +71,7 @@ NDIS_STATUS NdisIfQueryBindingIfIndex(
      <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.</p>
 </dd>
 
-### -param <i>pBoundIfIndex</i> [out]
+### -param pBoundIfIndex [out]
 
 <dd>
 <p>A pointer to a caller-supplied interface index variable. If 
@@ -80,7 +80,7 @@ NDIS_STATUS NdisIfQueryBindingIfIndex(
      stack.</p>
 </dd>
 
-### -param <i>pBoundIfNetLuid</i> [out]
+### -param pBoundIfNetLuid [out]
 
 <dd>
 <p>A pointer to a caller-supplied NET_LUID variable. If 
@@ -88,7 +88,7 @@ NDIS_STATUS NdisIfQueryBindingIfIndex(
      interface that is associated with the specified binding and is highest in the driver stack.</p>
 </dd>
 
-### -param <i>pLowestIfIndex</i> [out]
+### -param pLowestIfIndex [out]
 
 <dd>
 <p>A pointer to a caller-supplied interface index variable. If 
@@ -97,7 +97,7 @@ NDIS_STATUS NdisIfQueryBindingIfIndex(
      stack.</p>
 </dd>
 
-### -param <i>pLowestIfNetLuid</i> [out]
+### -param pLowestIfNetLuid [out]
 
 <dd>
 <p>A pointer to a caller-supplied NET_LUID variable. If 
@@ -204,4 +204,4 @@ NDIS_STATUS NdisIfQueryBindingIfIndex(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfQueryBindingIfIndex function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfQueryBindingIfIndex function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

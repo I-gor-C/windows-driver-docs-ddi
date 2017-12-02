@@ -62,57 +62,57 @@ typedef struct _CDROM_WRITE_SPEED_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>MixedReadWrite</b>
+### -field MixedReadWrite
 
 <dd>
 <p>The MixedReadWrite (MRW) field corresponds to the MRW bit of the Write Speed Descriptor in the MultiMedia Command Set - 6 (MMC-6)
 specification. This field indicates that it is suitable for a mixture of streaming read and write requests (overwrite mode). The <a href="..\ntddcdrm\ne-ntddcdrm--streaming-control-request-type.md">STREAMING_CONTROL_REQUEST_TYPE</a>   enumeration specifies the type of request.</p>
 </dd>
 
-### -field <b> Exact</b>
+### -field  Exact
 
 <dd>
 <p>The Exact field indicates whether the logical unit can perform the recording operation specified by CDM_WRITE_SPEED_DESCRIPTOR
 on the whole medium mounted. This field corresponds to the Exact bit of the Write Speed Descriptor.</p>
 </dd>
 
-### -field <b> Reserved1</b>
+### -field  Reserved1
 
 <dd>
 <p>Reserved fields.</p>
 </dd>
 
-### -field <b>  WriteRotationControl</b>
+### -field   WriteRotationControl
 
 <dd>
 <p>The WriteRotationControl (WRC) field specifies the type of the rotation control for the medium.</p>
 </dd>
 
-### -field <b>   Reserved2</b>
+### -field    Reserved2
 
 <dd>
 <p>Reserved fields.</p>
 </dd>
 
-### -field <b>  Reserved3</b>
+### -field   Reserved3
 
 <dd>
 <p>Reserved fields.</p>
 </dd>
 
-### -field <b>EndLba</b>
+### -field EndLba
 
 <dd>
 <p>The End Logical Block Address (EndLBA) field indicates the capacity of the medium if a medium is mounted. It corresponds to the EndLBA field of the Write Speed Descriptor.</p>
 </dd>
 
-### -field <b>  ReadSpeed</b>
+### -field   ReadSpeed
 
 <dd>
 <p>The ReadSpeed field indicates the lowest read performance data of all blocks (in kilobytes per second).</p>
 </dd>
 
-### -field <b> WriteSpeed</b>
+### -field  WriteSpeed
 
 <dd>
 <p>The WriteSpeed field indicates the lowest write performance data of all blocks (in kilobytes per second).</p>

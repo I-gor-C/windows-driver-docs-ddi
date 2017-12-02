@@ -58,13 +58,13 @@ typedef struct _DD_FREE_DEFERRED_AGP_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>gdi2</b>
+### -field gdi2
 
 <dd>
 <p>Specifies a <a href="..\d3dhal\ns-d3dhal--dd-getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.</p>
 </dd>
 
-### -field <b>dwProcessId</b>
+### -field dwProcessId
 
 <dd>
 <p>Specifies the process identifier (PID) of the process destroying the <a href="https://msdn.microsoft.com/05a2f942-4374-421e-8292-d122f9fe3571">AGP memory</a> for surfaces.</p>

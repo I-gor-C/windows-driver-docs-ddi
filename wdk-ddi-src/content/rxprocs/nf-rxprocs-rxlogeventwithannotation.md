@@ -7,7 +7,7 @@ old-location: ifsk\rxlogeventwithannotation.htm
 old-project: ifsk
 ms.assetid: cb8b757a-cff5-41cf-8155-2c45a8a35f00
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxLogEventWithAnnotation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,43 +61,43 @@ VOID RxLogEventWithAnnotation(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to the RDBSS device object.</p>
 </dd>
 
-### -param <i>Id</i> [in]
+### -param Id [in]
 
 <dd>
 <p>The value indicating the I/O error log code which is different than an NTSTATUS value returned by a routine. The legal I/O error log code values are defined in the <i>ntiolog.h</i> header file included with the Microsoft Windows SDK and Visual Studio. </p>
 </dd>
 
-### -param <i>NtStatus</i> [in]
+### -param NtStatus [in]
 
 <dd>
 <p>The value indicating the status code of a routine indicating a failure.</p>
 </dd>
 
-### -param <i>RawDataBuffer</i> [in]
+### -param RawDataBuffer [in]
 
 <dd>
 <p>A pointer to a raw data buffer to be added to the I/O error log structure.</p>
 </dd>
 
-### -param <i>RawDataLength</i> [in]
+### -param RawDataLength [in]
 
 <dd>
 <p>The length of the raw data buffer to be added to the I/O error log structure.</p>
 </dd>
 
-### -param <i>Annotations</i> [in]
+### -param Annotations [in]
 
 <dd>
 <p>A pointer to any annotation strings to add to the I/O error log structure.</p>
 </dd>
 
-### -param <i>AnnotationCount</i> [in]
+### -param AnnotationCount [in]
 
 <dd>
 <p>The count of the number of annotation strings to add to the I/O error log structure.</p>
@@ -160,4 +160,4 @@ VOID RxLogEventWithAnnotation(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxLogEventWithAnnotation function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxLogEventWithAnnotation function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,13 +56,13 @@ VOID ExLocalTimeToSystemTime(
 ## -parameters
 <dl>
 
-### -param <i>LocalTime</i> [in]
+### -param LocalTime [in]
 
 <dd>
 <p>A pointer to a variable set to the locale-specific time.</p>
 </dd>
 
-### -param <i>SystemTime</i> [out]
+### -param SystemTime [out]
 
 <dd>
 <p>A pointer to the returned value for GMT system time.</p>

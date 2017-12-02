@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTReleaseKeyedMutex(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-releasekeyedmutex.md">D3DKMT_RELEASEKEYEDMUTEX</a> structure that specifies the keyed mutex object to release. </p>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_oper_state.htm
 old-project: netvista
 ms.assetid: c08f8bcd-23fc-445c-9c42-e5c4edc75d78
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_OPER_STATE, NDIS_OPER_STATE, *PNDIS_OPER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct _NDIS_OPER_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -69,7 +69,7 @@ typedef struct _NDIS_OPER_STATE {
      <b>Size</b> member to NDIS_SIZEOF_OPER_STATE_REVISION_1.</p>
 </dd>
 
-### -field <b>OperationalStatus</b>
+### -field OperationalStatus
 
 <dd>
 <p>The 
@@ -77,7 +77,7 @@ typedef struct _NDIS_OPER_STATE {
      type.</p>
 </dd>
 
-### -field <b>OperationalStatusFlags</b>
+### -field OperationalStatusFlags
 
 <dd>
 <p>This member provides the reason why the 
@@ -87,28 +87,28 @@ typedef struct _NDIS_OPER_STATE {
 <p></p>
 <dl>
 
-### -field <a id="NET_IF_OPER_STATUS_DOWN_NOT_AUTHENTICATED"></a><a id="net_if_oper_status_down_not_authenticated"></a>NET_IF_OPER_STATUS_DOWN_NOT_AUTHENTICATED
+### -field NET_IF_OPER_STATUS_DOWN_NOT_AUTHENTICATED
 
 <dd>
 <p>The operational status is set to <b>NET_IF_OPER_STATUS_DOWN</b> because the default port of the
        miniport adapter is not authenticated.</p>
 </dd>
 
-### -field <a id="NET_IF_OPER_STATUS_DOWN_NOT_MEDIA_CONNECTED"></a><a id="net_if_oper_status_down_not_media_connected"></a>NET_IF_OPER_STATUS_DOWN_NOT_MEDIA_CONNECTED
+### -field NET_IF_OPER_STATUS_DOWN_NOT_MEDIA_CONNECTED
 
 <dd>
 <p>The operational status is set to <b>NET_IF_OPER_STATUS_DOWN</b> because the miniport adapter is not in
        a media-connected state.</p>
 </dd>
 
-### -field <a id="NET_IF_OPER_STATUS_DORMANT_PAUSED"></a><a id="net_if_oper_status_dormant_paused"></a>NET_IF_OPER_STATUS_DORMANT_PAUSED
+### -field NET_IF_OPER_STATUS_DORMANT_PAUSED
 
 <dd>
 <p>The operational status is set to <b>NET_IF_OPER_STATUS_DORMANT</b> because the miniport adapter is in
        the paused or pausing state.</p>
 </dd>
 
-### -field <a id="NET_IF_OPER_STATUS_DORMANT_LOW_POWER"></a><a id="net_if_oper_status_dormant_low_power"></a>NET_IF_OPER_STATUS_DORMANT_LOW_POWER
+### -field NET_IF_OPER_STATUS_DORMANT_LOW_POWER
 
 <dd>
 <p>The operational status is set to <b>NET_IF_OPER_STATUS_DORMANT</b> because the miniport adapter is in a
@@ -167,4 +167,4 @@ typedef struct _NDIS_OPER_STATE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OPER_STATE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OPER_STATE structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

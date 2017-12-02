@@ -65,61 +65,61 @@ typedef union _WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS {
 ## -struct-fields
 <dl>
 
-### -field <b>PortType</b>
+### -field PortType
 
 <dd>
 <p>A single bit that indicates that the <b>PortType</b> member of the WHEA_PCIEXPRESS_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>A single bit that indicates that the <b>Version</b> member of the WHEA_PCIEXPRESS_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>CommandStatus</b>
+### -field CommandStatus
 
 <dd>
 <p>A single bit that indicates that the <b>CommandStatus</b> member of the WHEA_PCIEXPRESS_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>DeviceId</b>
+### -field DeviceId
 
 <dd>
 <p>A single bit that indicates that the <b>DeviceId</b> member of the WHEA_PCIEXPRESS_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>DeviceSerialNumber</b>
+### -field DeviceSerialNumber
 
 <dd>
 <p>A single bit that indicates that the <b>DeviceSerialNumber</b> member of the WHEA_PCIEXPRESS_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>BridgeControlStatus</b>
+### -field BridgeControlStatus
 
 <dd>
 <p>A single bit that indicates that the <b>BridgeControlStatus</b> member of the WHEA_PCIEXPRESS_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>ExpressCapability</b>
+### -field ExpressCapability
 
 <dd>
 <p>A single bit that indicates that the <b>ExpressCapability</b> member of the WHEA_PCIEXPRESS_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>AerInfo</b>
+### -field AerInfo
 
 <dd>
 <p>A single bit that indicates that the <b>AerInfo</b> member of the WHEA_PCIEXPRESS_ERROR_SECTION structure contains valid data.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>ValidBits</b>
+### -field ValidBits
 
 <dd>
 <p>A ULONGLONG representation of the contents of the WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union.</p>

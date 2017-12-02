@@ -55,7 +55,7 @@ typedef struct _CLFS_STREAM_ID_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>StreamIdentifier</b>
+### -field StreamIdentifier
 
 <dd>
 <p>An 8-bit value that identifies a stream.</p>

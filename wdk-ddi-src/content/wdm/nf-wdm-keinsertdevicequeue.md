@@ -56,13 +56,13 @@ BOOLEAN KeInsertDeviceQueue(
 ## -parameters
 <dl>
 
-### -param <i>DeviceQueue</i> [in, out]
+### -param DeviceQueue [in, out]
 
 <dd>
 <p>Pointer to a control object of type device queue for which the caller provides the storage.</p>
 </dd>
 
-### -param <i>DeviceQueueEntry</i> [in, out]
+### -param DeviceQueueEntry [in, out]
 
 <dd>
 <p>Pointer to the device queue entry that is to be inserted. </p>

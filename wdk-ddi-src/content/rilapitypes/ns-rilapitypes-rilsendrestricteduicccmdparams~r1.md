@@ -7,7 +7,7 @@ old-location: netvista\rilsendrestricteduicccmdparams_2.htm
 old-project: netvista
 ms.assetid: f15bd639-0c58-45e1-91e4-dba25fac0686
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSENDRESTRICTEDUICCCMDPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef struct _RILSENDRESTRICTEDUICCCMDPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwCommand</b>
+### -field dwCommand
 
 <dd></dd>
 
-### -field <b>rscpParameters</b>
+### -field rscpParameters
 
 <dd></dd>
 
-### -field <b>fHasLockVerification</b>
+### -field fHasLockVerification
 
 <dd></dd>
 
-### -field <b>lockVerification</b>
+### -field lockVerification
 
 <dd></dd>
 
-### -field <b>dwDataSize</b>
+### -field dwDataSize
 
 <dd></dd>
 
-### -field <b>pbData</b>
+### -field pbData
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilcallforwardingsettingsreason_2.htm
 old-project: netvista
 ms.assetid: 765c34f7-c1c3-4579-b813-0c9845b3fabb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef enum _RILCALLFORWARDINGSETTINGSREASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_FWDREASON_MOBILEBUSY"></a><a id="ril_fwdreason_mobilebusy"></a><b>RIL_FWDREASON_MOBILEBUSY</b>
+### -field RIL_FWDREASON_MOBILEBUSY
 
 <dd></dd>
 
-### -field <a id="RIL_FWDREASON_NOREPLY"></a><a id="ril_fwdreason_noreply"></a><b>RIL_FWDREASON_NOREPLY</b>
+### -field RIL_FWDREASON_NOREPLY
 
 <dd></dd>
 
-### -field <a id="RIL_FWDREASON_UNREACHABLE"></a><a id="ril_fwdreason_unreachable"></a><b>RIL_FWDREASON_UNREACHABLE</b>
+### -field RIL_FWDREASON_UNREACHABLE
 
 <dd></dd>
 
-### -field <a id="RIL_FWDREASON_ALLFORWARDING"></a><a id="ril_fwdreason_allforwarding"></a><b>RIL_FWDREASON_ALLFORWARDING</b>
+### -field RIL_FWDREASON_ALLFORWARDING
 
 <dd></dd>
 
-### -field <a id="RIL_FWDREASON_ALLCONDITIONAL"></a><a id="ril_fwdreason_allconditional"></a><b>RIL_FWDREASON_ALLCONDITIONAL</b>
+### -field RIL_FWDREASON_ALLCONDITIONAL
 
 <dd></dd>
 
-### -field <a id="RIL_FWDREASON_MAX"></a><a id="ril_fwdreason_max"></a><b>RIL_FWDREASON_MAX</b>
+### -field RIL_FWDREASON_MAX
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: netvista\dot11_extsta_send_context.htm
 old-project: netvista
 ms.assetid: 0a4af7dc-0210-42b6-b15b-a0f885664da9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_EXTSTA_SEND_CONTEXT,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct DOT11_EXTSTA_SEND_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the DOT11_EXTSTA_SEND_CONTEXT structure. This member is formatted
@@ -70,19 +70,19 @@ typedef struct DOT11_EXTSTA_SEND_CONTEXT {
 <p></p>
 <dl>
 
-### -field <a id="Type"></a><a id="type"></a><a id="TYPE"></a><b>Type</b>
+### -field Type
 
 <dd>
 <p>This member must be set to NDIS_OBJECT_TYPE_DEFAULT.</p>
 </dd>
 
-### -field <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a><b>Revision</b>
+### -field Revision
 
 <dd>
 <p>This member must be set to DOT11_EXTSTA_SEND_CONTEXT_REVISION_1.</p>
 </dd>
 
-### -field <a id="Size"></a><a id="size"></a><a id="SIZE"></a><b>Size</b>
+### -field Size
 
 <dd>
 <p>This member must be set to 
@@ -93,7 +93,7 @@ typedef struct DOT11_EXTSTA_SEND_CONTEXT {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>usExemptionActionType</b>
+### -field usExemptionActionType
 
 <dd>
 <p>The type of encryption exemption for the packet. The following exemption types are defined:
@@ -101,31 +101,31 @@ typedef struct DOT11_EXTSTA_SEND_CONTEXT {
 <p></p>
 <dl>
 
-### -field <a id="DOT11_EXEMPT_NO_EXEMPTION"></a><a id="dot11_exempt_no_exemption"></a>DOT11_EXEMPT_NO_EXEMPTION
+### -field DOT11_EXEMPT_NO_EXEMPTION
 
 <dd>
 <p>The packet is not exempt from any cipher operations performed by the 802.11 station.</p>
 </dd>
 
-### -field <a id="DOT11_EXEMPT_ALWAYS"></a><a id="dot11_exempt_always"></a>DOT11_EXEMPT_ALWAYS
+### -field DOT11_EXEMPT_ALWAYS
 
 <dd>
 <p>The packet is exempt from any cipher operations performed by the 802.11 station. The 802.11
        station must transmit the packet unencrypted.</p>
 </dd>
 
-### -field <a id="DOT11_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE"></a><a id="dot11_exempt_on_key_mapping_key_unavailable"></a>DOT11_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE
+### -field DOT11_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE
 
 <dd>
 <p>The packet is exempt from any cipher operations performed by the 802.11 station only if the
        station does not have a key-mapping key for the packet's destination media access control (MAC)
        address. For more information about key-mapping keys, see 
-       <a href="NULL">802.11 Cipher Key Types</a>.</p>
+       <a href="netvista.802_11_cipher_key_types">802.11 Cipher Key Types</a>.</p>
 </dd>
 </dl>
 </dd>
 
-### -field <b>uPhyId</b>
+### -field uPhyId
 
 <dd>
 <p>The identifier (ID) of a PHY type on the 802.11 station. The 802.11 station must use the specified
@@ -158,7 +158,7 @@ typedef struct DOT11_EXTSTA_SEND_CONTEXT {
      NdisMSendNetBufferListsComplete</a> to complete the send request.</p>
 </dd>
 
-### -field <b>uDelayedSleepValue</b>
+### -field uDelayedSleepValue
 
 <dd>
 <p>The time, in microseconds, before a response to the packet is expected. The 
@@ -186,7 +186,7 @@ typedef struct DOT11_EXTSTA_SEND_CONTEXT {
      response.</p>
 </dd>
 
-### -field <b>pvMediaSpecificInfo</b>
+### -field pvMediaSpecificInfo
 
 <dd>
 <p>A pointer to a buffer that contains media-specific information. This member should be <b>NULL</b> when
@@ -203,7 +203,7 @@ typedef struct DOT11_EXTSTA_SEND_CONTEXT {
      IHV-specific 802.3 protocol driver.</p>
 </dd>
 
-### -field <b>uSendFlags</b>
+### -field uSendFlags
 
 <dd>
 <p>A set of flags that define send attributes. Currently, there are no flags defined. This member
@@ -290,4 +290,4 @@ typedef struct DOT11_EXTSTA_SEND_CONTEXT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTSTA_SEND_CONTEXT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTSTA_SEND_CONTEXT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

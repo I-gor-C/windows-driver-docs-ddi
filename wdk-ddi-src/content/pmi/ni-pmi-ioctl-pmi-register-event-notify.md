@@ -88,7 +88,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has put the IOCTL request in a queue and will complete it after a PMI event occurs. </p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure. </p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure. </p>
 
 <p>The <b>Information</b> member is set to the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure.</p>
 
@@ -100,7 +100,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has put the IOCTL request in a queue and will complete it after a PMI event occurs. </p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure. </p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure. </p>
 
 <p>The <b>Information</b> member is set to the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure.</p>
 
@@ -112,7 +112,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has put the IOCTL request in a queue and will complete it after a PMI event occurs. </p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure. </p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure. </p>
 
 <p>The <b>Information</b> member is set to the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure.</p>
 
@@ -124,7 +124,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has put the IOCTL request in a queue and will complete it after a PMI event occurs. </p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure. </p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure. </p>
 
 <p>The <b>Information</b> member is set to the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure.</p>
 
@@ -136,7 +136,7 @@ I/O Status block
 
 <p>The WDM driver that supports the PMI interface has put the IOCTL request in a queue and will complete it after a PMI event occurs. </p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure. </p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure. </p>
 
 ## -remarks
 <p>PMI creates an event notification queue for each initiator that opens the device instance for a power meter by using the <a href="fs.createfile">CreateFile</a> function. A separate queue is created for each caller's connection to a device instance. The following points apply to the event notification queue:</p>
@@ -147,7 +147,7 @@ I/O Status block
 
 <p>After the event notification queue is created, the queue will contain unsent events for the caller. This prevents callers from missing events during the interval between when the driver processes one event and the caller registers for another. If there are events in the caller's queue, they are sent immediately after the caller registers by using an <b>IOCTL_PMI_REGISTER_EVENT_NOTIFY</b> request.</p>
 
-<p>When PMI sends a power meter event to the caller, it completes the <b>IOCTL_PMI_REGISTER_EVENT_NOTIFY</b> request. The data that describes the event is contained within the <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure in the output buffer that is referenced by the <b>MdlAddress</b> member of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a>. The <b>EventType </b>member of this structure contains information about the power meter event's type. For example, if <b>EventType</b> is set to <b>PmiConfigurationChangedEvent</b>, the power meter's configuration has changed. In this case, the caller can query the power meter's new configuration by using an <a href="..\pmi\ni-pmi-ioctl-pmi-get-configuration.md">IOCTL_PMI_GET_CONFIGURATION</a> request.</p>
+<p>When PMI sends a power meter event to the caller, it completes the <b>IOCTL_PMI_REGISTER_EVENT_NOTIFY</b> request. The data that describes the event is contained within the <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a> structure in the output buffer that is referenced by the <b>MdlAddress</b> member of the <a href="..\wdm\ns-wdm--irp.md">IRP</a>. The <b>EventType </b>member of this structure contains information about the power meter event's type. For example, if <b>EventType</b> is set to <b>PmiConfigurationChangedEvent</b>, the power meter's configuration has changed. In this case, the caller can query the power meter's new configuration by using an <a href="..\pmi\ni-pmi-ioctl-pmi-get-configuration.md">IOCTL_PMI_GET_CONFIGURATION</a> request.</p>
 
 <p>For more information about the <a href="fs.createfile">CreateFile</a> and <b>CloseFile</b> functions, refer to the Windows SDK documentation.</p>
 
@@ -182,7 +182,7 @@ I/O Status block
 <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\pmi\ns-pmi--pmi-event.md">PMI_EVENT</a>

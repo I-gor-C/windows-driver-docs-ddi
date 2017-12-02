@@ -61,20 +61,20 @@ typedef struct _EXTCHKBOX {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Size, in bytes, of the EXTCHKBOX structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Bit flags, which can be one of the following:</p>
 <p></p>
 <dl>
 
-### -field <a id="ECBF_CHECKNAME_AT_FRONT"></a><a id="ecbf_checkname_at_front"></a>ECBF_CHECKNAME_AT_FRONT
+### -field ECBF_CHECKNAME_AT_FRONT
 
 <dd>
 <p>If set, CPSUI displays strings in the order "pCheckedName pSeparator <i>SelectName</i>", where <i>SelectName</i> is the string associated with the option's selected value.</p>
@@ -84,7 +84,7 @@ typedef struct _EXTCHKBOX {
 <p></p>
 <dl>
 
-### -field <a id="ECBF_CHECKNAME_ONLY_ENABLED"></a><a id="ecbf_checkname_only_enabled"></a>ECBF_CHECKNAME_ONLY_ENABLED
+### -field ECBF_CHECKNAME_ONLY_ENABLED
 
 <dd>
 <p>If set, CPSUI displays the pCheckedName string only if the option is checked and enabled (that is, OPTIF_ECB_CHECKED is set and OPTIF_DISABLED is clear in the OPTITEM structure).</p>
@@ -94,7 +94,7 @@ typedef struct _EXTCHKBOX {
 <p></p>
 <dl>
 
-### -field <a id="ECBF_ICONID_AS_HICON"></a><a id="ecbf_iconid_as_hicon"></a>ECBF_ICONID_AS_HICON
+### -field ECBF_ICONID_AS_HICON
 
 <dd>
 <p>If set, the <b>IconID</b> member contains an icon handle.</p>
@@ -104,7 +104,7 @@ typedef struct _EXTCHKBOX {
 <p></p>
 <dl>
 
-### -field <a id="ECBF_OVERLAY_ECBICON_IF_CHECKED"></a><a id="ecbf_overlay_ecbicon_if_checked"></a>ECBF_OVERLAY_ECBICON_IF_CHECKED
+### -field ECBF_OVERLAY_ECBICON_IF_CHECKED
 
 <dd>
 <p>If set, and if the check box is checked (that is, OPTIF_ECB_CHECKED is set in the OPTITEM structure), CPSUI overlays the icon identified by the <b>IconID</b> member onto the icon associated with the option item.</p>
@@ -113,7 +113,7 @@ typedef struct _EXTCHKBOX {
 <p></p>
 <dl>
 
-### -field <a id="ECBF_OVERLAY_NO_ICON"></a><a id="ecbf_overlay_no_icon"></a>ECBF_OVERLAY_NO_ICON
+### -field ECBF_OVERLAY_NO_ICON
 
 <dd>
 <p>If set, CPSUI overlays its IDI_CPSUI_NO icon onto the icon identified by the <b>IconID</b> member.</p>
@@ -122,7 +122,7 @@ typedef struct _EXTCHKBOX {
 <p></p>
 <dl>
 
-### -field <a id="ECBF_OVERLAY_STOP_ICON"></a><a id="ecbf_overlay_stop_icon"></a>ECBF_OVERLAY_STOP_ICON
+### -field ECBF_OVERLAY_STOP_ICON
 
 <dd>
 <p>If set, CPSUI overlays the IDI_CPSUI_STOP icon onto the icon identified by the <b>IconID</b> member.</p>
@@ -131,7 +131,7 @@ typedef struct _EXTCHKBOX {
 <p></p>
 <dl>
 
-### -field <a id="ECBF_OVERLAY_WARNING_ICON"></a><a id="ecbf_overlay_warning_icon"></a>ECBF_OVERLAY_WARNING_ICON
+### -field ECBF_OVERLAY_WARNING_ICON
 
 <dd>
 <p>If set, CPSUI overlays its IDI_CPSUI_WARNING icon onto the icon identified by the <b>IconID</b> member.</p>
@@ -139,25 +139,25 @@ typedef struct _EXTCHKBOX {
 </dl>
 </dd>
 
-### -field <b>pTitle</b>
+### -field pTitle
 
 <dd>
 <p>String identifier, representing the check box title. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero.</p>
 </dd>
 
-### -field <b>pSeparator</b>
+### -field pSeparator
 
 <dd>
 <p>String identifier, representing a separator character to be displayed between the checked name string and the selected option string This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero.</p>
 </dd>
 
-### -field <b>pCheckedName</b>
+### -field pCheckedName
 
 <dd>
 <p>String identifier, representing the text to be displayed when the check box is checked. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero.</p>
 </dd>
 
-### -field <b>IconID</b>
+### -field IconID
 
 <dd>
 <p>One of the following icon identifiers:</p>
@@ -172,13 +172,13 @@ typedef struct _EXTCHKBOX {
 <p>If this value is zero, an icon is not displayed.</p>
 </dd>
 
-### -field <b>wReserved</b>
+### -field wReserved
 
 <dd>
 <p>Reserved, must be initialized to zero.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Reserved, must be initialized to zero.</p>

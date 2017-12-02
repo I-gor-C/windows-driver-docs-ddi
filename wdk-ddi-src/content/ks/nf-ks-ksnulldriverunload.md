@@ -54,7 +54,7 @@ VOID KsNullDriverUnload(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject </i> [in]
+### -param DriverObject  [in]
 
 <dd>
 <p>Specifies the driver object for this device.</p>

@@ -55,13 +55,13 @@ NTSTATUS APIENTRY DXGKDDI_EXCHANGEPRESTARTINFO(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>[in] Identifies the adapter.</p>
 </dd>
 
-### -param <i>pPreStartInfo</i> [in, out]
+### -param pPreStartInfo [in, out]
 
 <dd>
 <p>[in] Pointer to a DXGK_PRE_START_INFO structure which contains both fields for the OS to pass info and fields for the driver to return info.  Only SupportPreserveBootDisplay is defined initially.</p>

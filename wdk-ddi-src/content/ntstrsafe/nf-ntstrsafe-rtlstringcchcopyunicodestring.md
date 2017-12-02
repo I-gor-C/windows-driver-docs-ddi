@@ -56,19 +56,19 @@ NTSTATUS RtlStringCchCopyUnicodeString(
 ## -parameters
 <dl>
 
-### -param <i>pszDest</i> [out]
+### -param pszDest [out]
 
 <dd>
 <p>A pointer to a buffer that receives the copied string. The string that the <i>SourceString</i> parameter's <b>UNICODE_STRING</b> structure points to is copied to the buffer at <i>pszDest</i> and terminated with a null character. </p>
 </dd>
 
-### -param <i>cchDest</i> [in]
+### -param cchDest [in]
 
 <dd>
 <p>The size, in characters, of the destination buffer. The buffer must be large enough for the string and the terminating null character. The maximum number of characters is NTSTRSAFE_MAX_CCH.</p>
 </dd>
 
-### -param <i>SourceString</i> [in]
+### -param SourceString [in]
 
 <dd>
 <p>A pointer to a <b>UNICODE_STRING</b> structure that contains the string to be copied. The maximum number of characters in the string is NTSTRSAFE_UNICODE_STRING_MAX_CCH.</p>

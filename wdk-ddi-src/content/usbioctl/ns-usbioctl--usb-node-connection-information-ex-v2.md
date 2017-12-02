@@ -58,19 +58,19 @@ typedef struct _USB_NODE_CONNECTION_INFORMATION_EX_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>ConnectionIndex</b>
+### -field ConnectionIndex
 
 <dd>
 <p>The port number. If there are <i>n</i> ports on the USB hub, the ports are numbered from 1 to <i>n</i>. To get the number of ports, send the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-hub-information-ex.md">IOCTL_USB_GET_HUB_INFORMATION_EX</a> I/O control request. The request retrieves the highest port number on the hub.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The number of bytes that are required to hold the <b>USB_NODE_CONNECTION_INFORMATION_EX_V2</b> structure. The value must be set by the caller as input to  the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-information-ex-v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a> request.</p>
 </dd>
 
-### -field <b>SupportedUsbProtocols</b>
+### -field SupportedUsbProtocols
 
 <dd>
 <p>The USB signaling protocols that are supported by the port. </p>
@@ -78,7 +78,7 @@ typedef struct _USB_NODE_CONNECTION_INFORMATION_EX_V2 {
 <p>Upon completion of the request, <b>SupportedUsbProtocols</b> contains flags, which indicate the protocols that are actually supported by the port.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitmask that indicates the properties and capabilities of the attached device or  port. For more information, see <a href="..\usbioctl\ns-usbioctl--usb-node-connection-information-ex-v2-flags.md">USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS</a>.</p>

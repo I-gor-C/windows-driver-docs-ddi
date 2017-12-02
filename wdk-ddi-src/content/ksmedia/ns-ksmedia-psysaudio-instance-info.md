@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies the property. This parameter is a structure of type <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags specifying how to configure the virtual audio device. Currently, the only flag bit defined for this parameter is SYSAUDIO_FLAGS_DONT_COMBINE_PINS. If set, this flag bit instructs SysAudio not to combine rendering pins. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>DeviceNumber</b>
+### -field DeviceNumber
 
 <dd>
 <p>Specifies the device ID. This member identifies the virtual audio device that is to be opened by the property request. If SysAudio enumerates <i>N</i> virtual audio devices (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537419">KSPROPERTY_SYSAUDIO_DEVICE_COUNT</a>), the valid device IDs range from 0 to <i>N</i>-1.</p>

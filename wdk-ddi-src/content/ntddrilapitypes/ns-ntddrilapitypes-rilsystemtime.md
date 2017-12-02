@@ -7,7 +7,7 @@ old-location: netvista\rilsystemtime.htm
 old-project: netvista
 ms.assetid: da01963f-a0eb-4222-b0c7-20b924f65f66
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSYSTEMTIME, RILSYSTEMTIME, *LPRILSYSTEMTIME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,35 +61,35 @@ typedef struct _RILSYSTEMTIME {
 ## -struct-fields
 <dl>
 
-### -field <b>wYear</b>
+### -field wYear
 
 <dd></dd>
 
-### -field <b>wMonth</b>
+### -field wMonth
 
 <dd></dd>
 
-### -field <b>wDayOfWeek</b>
+### -field wDayOfWeek
 
 <dd></dd>
 
-### -field <b>wDay</b>
+### -field wDay
 
 <dd></dd>
 
-### -field <b>wHour</b>
+### -field wHour
 
 <dd></dd>
 
-### -field <b>wMinute</b>
+### -field wMinute
 
 <dd></dd>
 
-### -field <b>wSecond</b>
+### -field wSecond
 
 <dd></dd>
 
-### -field <b>wMilliseconds</b>
+### -field wMilliseconds
 
 <dd></dd>
 </dl>

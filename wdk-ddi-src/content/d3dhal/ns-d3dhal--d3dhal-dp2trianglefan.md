@@ -54,7 +54,7 @@ typedef struct _D3DHAL_DP2TRIANGLEFAN {
 ## -struct-fields
 <dl>
 
-### -field <b>wVStart</b>
+### -field wVStart
 
 <dd>
 <p>Specifies the index into the vertex buffer containing coordinate data for the initial vertex of the triangle fan.</p>

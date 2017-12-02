@@ -59,37 +59,37 @@ typedef struct D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES {
 ## -struct-fields
 <dl>
 
-### -field <b>pInputSignature</b>
+### -field pInputSignature
 
 <dd>
 <p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-signature-entry.md">D3D11_1DDIARG_SIGNATURE_ENTRY</a> structures for the input part of a signature.</p>
 </dd>
 
-### -field <b>NumInputSignatureEntries</b>
+### -field NumInputSignatureEntries
 
 <dd>
 <p>[in] The number of entries in the array that the <b>pInputSignature</b> member specifies.</p>
 </dd>
 
-### -field <b>pOutputSignature</b>
+### -field pOutputSignature
 
 <dd>
 <p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-signature-entry.md">D3D11_1DDIARG_SIGNATURE_ENTRY</a> structures for the output part of a signature.</p>
 </dd>
 
-### -field <b>NumOutputSignatureEntries</b>
+### -field NumOutputSignatureEntries
 
 <dd>
 <p>[in] The number of entries in the array that the <b>pOutputSignature</b> member specifies.</p>
 </dd>
 
-### -field <b>pPatchConstantSignature</b>
+### -field pPatchConstantSignature
 
 <dd>
 <p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-signature-entry.md">D3D11_1DDIARG_SIGNATURE_ENTRY</a> structures for the signature patches.</p>
 </dd>
 
-### -field <b>NumPatchConstantSignatureEntries</b>
+### -field NumPatchConstantSignatureEntries
 
 <dd>
 <p>[in] The number of entries in the array that the <b>pPatchConstantSignature</b> member specifies.</p>

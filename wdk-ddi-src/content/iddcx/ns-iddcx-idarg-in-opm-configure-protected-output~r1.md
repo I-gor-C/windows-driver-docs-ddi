@@ -58,7 +58,7 @@ typedef struct IDARG_IN_OPM_CONFIGURE_PROTECTED_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>ConfigParameters</b>
+### -field ConfigParameters
 
 <dd>
 <p>
@@ -66,7 +66,7 @@ typedef struct IDARG_IN_OPM_CONFIGURE_PROTECTED_OUTPUT {
                  </p>
 </dd>
 
-### -field <b>AdditionalParametersSizeInBytes</b>
+### -field AdditionalParametersSizeInBytes
 
 <dd>
 <p>
@@ -74,7 +74,7 @@ typedef struct IDARG_IN_OPM_CONFIGURE_PROTECTED_OUTPUT {
                  </p>
 </dd>
 
-### -field <b>pAdditionalParameters</b>
+### -field pAdditionalParameters
 
 <dd>
 <p>

@@ -61,49 +61,49 @@ typedef struct _BDA_PIN_PAIRING {
 ## -struct-fields
 <dl>
 
-### -field <b>ulInputPin</b>
+### -field ulInputPin
 
 <dd>
 <p>Index of the element in the zero-based array of pin types (KSPIN_DESCRIPTOR_EX array) that indicates the input pin of the pair. </p>
 </dd>
 
-### -field <b>ulOutputPin</b>
+### -field ulOutputPin
 
 <dd>
 <p>Index of the element in the zero-based array of pin types (KSPIN_DESCRIPTOR_EX array) that indicates the output pin of the pair.</p>
 </dd>
 
-### -field <b>ulcMaxInputsPerOutput</b>
+### -field ulcMaxInputsPerOutput
 
 <dd>
 <p>Maximum number of input pins per output pin. The network provider creates duplicates of nodes that are controlled by the input pin depending on the value specified in <b>ulcMaxInputsPerOutput</b>.</p>
 </dd>
 
-### -field <b>ulcMinInputsPerOutput</b>
+### -field ulcMinInputsPerOutput
 
 <dd>
 <p>Minimum number of input pins per output pin. The network provider creates duplicates of nodes that are controlled by the input pin depending on the value specified in <b>ulcMinInputsPerOutput</b>.</p>
 </dd>
 
-### -field <b>ulcMaxOutputsPerInput</b>
+### -field ulcMaxOutputsPerInput
 
 <dd>
 <p>Maximum number of output pins per input pin. The network provider creates duplicates of nodes that are controlled by the output pin depending on the value specified in <b>ulcMaxOutputsPerInput</b>.</p>
 </dd>
 
-### -field <b>ulcMinOutputsPerInput</b>
+### -field ulcMinOutputsPerInput
 
 <dd>
 <p>Minimum number of output pins per input pin. The network provider creates duplicates of nodes that are controlled by the output pin depending on the value specified in <b>ulcMinOutputsPerInput</b>.</p>
 </dd>
 
-### -field <b>ulcTopologyJoints</b>
+### -field ulcTopologyJoints
 
 <dd>
 <p>Number of joints in the <b>pTopologyJoints</b> array.</p>
 </dd>
 
-### -field <b>pTopologyJoints</b>
+### -field pTopologyJoints
 
 <dd>
 <p>Array of joint values. The value given to a joint corresponds to the index of an element in a array of template connections (KSTOPOLOGY_CONNECTION or BDA_TEMPLATE_CONNECTION array). A topology joint marks the point in the template topology where control of nodes switches from the input pin to the output pin. Those nodes that occur upstream of the topology joint are controlled through the input pin. Those nodes that occur downstream of the topology joint are controlled through the output pin.</p>

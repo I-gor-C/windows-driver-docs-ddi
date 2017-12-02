@@ -57,19 +57,19 @@ typedef enum D3DDDI_PAGINGQUEUE_PRIORITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_PAGINGQUEUE_PRIORITY_BELOW_NORMAL"></a><a id="d3dddi_pagingqueue_priority_below_normal"></a><b>D3DDDI_PAGINGQUEUE_PRIORITY_BELOW_NORMAL</b>
+### -field D3DDDI_PAGINGQUEUE_PRIORITY_BELOW_NORMAL
 
 <dd>
 <p>Indicates below normal priority.</p>
 </dd>
 
-### -field <a id="D3DDDI_PAGINGQUEUE_PRIORITY_NORMAL"></a><a id="d3dddi_pagingqueue_priority_normal"></a><b>D3DDDI_PAGINGQUEUE_PRIORITY_NORMAL</b>
+### -field D3DDDI_PAGINGQUEUE_PRIORITY_NORMAL
 
 <dd>
 <p>Indicates normal priority.</p>
 </dd>
 
-### -field <a id="D3DDDI_PAGINGQUEUE_PRIORITY_ABOVE_NORMAL"></a><a id="d3dddi_pagingqueue_priority_above_normal"></a><b>D3DDDI_PAGINGQUEUE_PRIORITY_ABOVE_NORMAL</b>
+### -field D3DDDI_PAGINGQUEUE_PRIORITY_ABOVE_NORMAL
 
 <dd>
 <p>Indicates above normal priority.</p>

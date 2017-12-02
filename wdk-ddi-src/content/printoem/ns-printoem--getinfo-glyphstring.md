@@ -61,19 +61,19 @@ typedef struct _GETINFO_GLYPHSTRING {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes, of the GETINFO_GLYPHSTRING structure. This value is supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
-### -field <b>dwCount</b>
+### -field dwCount
 
 <dd>
 <p>Specifies the number of elements in the arrays pointed to by <b>pGlyphIn</b> and <b>pGlyphOut</b>. This value is supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
-### -field <b>dwTypeIn</b>
+### -field dwTypeIn
 
 <dd>
 <p>Specifies the type of glyph specifier array pointed to by <b>pGlyphIn</b>. Valid values are as follows:</p>
@@ -103,13 +103,13 @@ typedef struct _GETINFO_GLYPHSTRING {
 <p>Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
-### -field <b>pGlyphIn</b>
+### -field pGlyphIn
 
 <dd>
 <p>Pointer to an array of glyph specifiers. The array element type is indicated by <b>dwTypeIn</b>. This value is supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
-### -field <b>dwTypeOut</b>
+### -field dwTypeOut
 
 <dd>
 <p>Specifies the type of glyph specifier array pointed to by <b>pGlyphOut</b>. Valid values are as follows:</p>
@@ -151,13 +151,13 @@ typedef struct _GETINFO_GLYPHSTRING {
 </dl>
 </dd>
 
-### -field <b>pGlyphOut</b>
+### -field pGlyphOut
 
 <dd>
 <p>Caller-supplied pointer to an empty array of glyph specifiers. The array is filled in by Unidrv's <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function. The array element type is indicated by <b>dwTypeOut</b>. This pointer is supplied by the <u>UNIFONTOBJ_GetInfo</u> caller.</p>
 </dd>
 
-### -field <b>dwGlyphOutSize</b>
+### -field dwGlyphOutSize
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer pointed to by <b>pGlyphOut</b>. This member is used only when <b>dwTypeIn</b> has been set to TYPE_GLYPHHANDLE and <b>dwTypeOut</b> has been set to TYPE_TRANSDATA. See the following Remarks section for more information.</p>

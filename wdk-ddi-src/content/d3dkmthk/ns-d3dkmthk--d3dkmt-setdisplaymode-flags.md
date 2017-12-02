@@ -55,13 +55,13 @@ typedef struct _D3DKMT_SETDISPLAYMODE_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>PreserveVidPn</b>
+### -field PreserveVidPn
 
 <dd>
 <p>[in] A Boolean value that specifies whether the video present network (VidPN) for a monitor is preserved. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero. </p>

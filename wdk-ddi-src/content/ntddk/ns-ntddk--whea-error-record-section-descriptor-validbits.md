@@ -59,25 +59,25 @@ typedef union _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS {
 ## -struct-fields
 <dl>
 
-### -field <b>FRUId</b>
+### -field FRUId
 
 <dd>
 <p>A single bit that indicates that the <b>FRUId</b> member of the WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure contains valid data.</p>
 </dd>
 
-### -field <b>FRUText</b>
+### -field FRUText
 
 <dd>
 <p>A single bit that indicates that the <b>FRUText</b> member of the WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure contains valid data.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>AsUCHAR</b>
+### -field AsUCHAR
 
 <dd>
 <p>A UCHAR representation of the contents of the WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS union.</p>

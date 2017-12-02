@@ -7,7 +7,7 @@ old-location: netvista\rilumtskind_2.htm
 old-project: netvista
 ms.assetid: 66322f97-e249-4337-b228-826ab4728220
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef enum _RILUMTSKIND {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_UMTSKIND_HSDPA"></a><a id="ril_umtskind_hsdpa"></a><b>RIL_UMTSKIND_HSDPA</b>
+### -field RIL_UMTSKIND_HSDPA
 
 <dd></dd>
 
-### -field <a id="RIL_UMTSKIND_HSUPA"></a><a id="ril_umtskind_hsupa"></a><b>RIL_UMTSKIND_HSUPA</b>
+### -field RIL_UMTSKIND_HSUPA
 
 <dd></dd>
 
-### -field <a id="RIL_UMTSKIND_HSPAPLUS"></a><a id="ril_umtskind_hspaplus"></a><b>RIL_UMTSKIND_HSPAPLUS</b>
+### -field RIL_UMTSKIND_HSPAPLUS
 
 <dd></dd>
 
-### -field <a id="RIL_UMTSKIND_DC_HSPAPLUS"></a><a id="ril_umtskind_dc_hspaplus"></a><b>RIL_UMTSKIND_DC_HSPAPLUS</b>
+### -field RIL_UMTSKIND_DC_HSPAPLUS
 
 <dd></dd>
 
-### -field <a id="RIL_UMTSKIND_HSPAPLUS_64QAM"></a><a id="ril_umtskind_hspaplus_64qam"></a><b>RIL_UMTSKIND_HSPAPLUS_64QAM</b>
+### -field RIL_UMTSKIND_HSPAPLUS_64QAM
 
 <dd></dd>
 
-### -field <a id="RIL_UMTSKIND_MAX"></a><a id="ril_umtskind_max"></a><b>RIL_UMTSKIND_MAX</b>
+### -field RIL_UMTSKIND_MAX
 
 <dd></dd>
 </dl>

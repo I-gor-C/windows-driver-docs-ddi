@@ -7,7 +7,7 @@ old-location: netvista\dot11ext_apis.htm
 old-project: netvista
 ms.assetid: d533acbb-eb3b-4c49-a057-9a99faaacfc1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11EXT_APIS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,7 +74,7 @@ typedef struct _DOT11EXT_APIS {
 ## -struct-fields
 <dl>
 
-### -field <b>Dot11ExtAllocateBuffer</b>
+### -field Dot11ExtAllocateBuffer
 
 <dd>
 <p>A pointer to the 
@@ -82,14 +82,14 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtAllocateBuffer</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtFreeBuffer</b>
+### -field Dot11ExtFreeBuffer
 
 <dd>
 <p>A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext-free-buffer.md">Dot11ExtFreeBuffer</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtSetProfileCustomUserData</b>
+### -field Dot11ExtSetProfileCustomUserData
 
 <dd>
 <p>A pointer to the 
@@ -97,7 +97,7 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtSetProfileCustomUserData</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtGetProfileCustomUserData</b>
+### -field Dot11ExtGetProfileCustomUserData
 
 <dd>
 <p>A pointer to the 
@@ -105,7 +105,7 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtGetProfileCustomUserData</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtSetCurrentProfile</b>
+### -field Dot11ExtSetCurrentProfile
 
 <dd>
 <p>A pointer to the 
@@ -113,7 +113,7 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtSetCurrentProfile</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtSendUIRequest</b>
+### -field Dot11ExtSendUIRequest
 
 <dd>
 <p>A pointer to the 
@@ -121,7 +121,7 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtSendUIRequest</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtPreAssociateCompletion</b>
+### -field Dot11ExtPreAssociateCompletion
 
 <dd>
 <p>A pointer to the 
@@ -129,7 +129,7 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtPreAssociateCompletion</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtPostAssociateCompletion</b>
+### -field Dot11ExtPostAssociateCompletion
 
 <dd>
 <p>A pointer to the 
@@ -137,7 +137,7 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtPostAssociateCompletion</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtSendNotification</b>
+### -field Dot11ExtSendNotification
 
 <dd>
 <p>A pointer to the 
@@ -145,14 +145,14 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtSendNotification</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtSendPacket</b>
+### -field Dot11ExtSendPacket
 
 <dd>
 <p>A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext-send-packet.md">Dot11ExtSendPacket</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtSetEtherTypeHandling</b>
+### -field Dot11ExtSetEtherTypeHandling
 
 <dd>
 <p>A pointer to the 
@@ -160,7 +160,7 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtSetEtherTypeHandling</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtSetAuthAlgorithm</b>
+### -field Dot11ExtSetAuthAlgorithm
 
 <dd>
 <p>A pointer to the 
@@ -168,7 +168,7 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtSetAuthAlgorithm</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtSetUnicastCipherAlgorithm</b>
+### -field Dot11ExtSetUnicastCipherAlgorithm
 
 <dd>
 <p>A pointer to the 
@@ -176,7 +176,7 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtSetUnicastCipherAlgorithm</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtSetMulticastCipherAlgorithm</b>
+### -field Dot11ExtSetMulticastCipherAlgorithm
 
 <dd>
 <p>A pointer to the 
@@ -184,7 +184,7 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtSetMulticastCipherAlgorithm</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtSetDefaultKey</b>
+### -field Dot11ExtSetDefaultKey
 
 <dd>
 <p>A pointer to the 
@@ -192,7 +192,7 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtSetDefaultKey</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtSetKeyMappingKey</b>
+### -field Dot11ExtSetKeyMappingKey
 
 <dd>
 <p>A pointer to the 
@@ -200,7 +200,7 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtSetKeyMappingKey</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtSetDefaultKeyId</b>
+### -field Dot11ExtSetDefaultKeyId
 
 <dd>
 <p>A pointer to the 
@@ -208,7 +208,7 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtSetDefaultKeyId</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtNicSpecificExtension</b>
+### -field Dot11ExtNicSpecificExtension
 
 <dd>
 <p>A pointer to the 
@@ -216,7 +216,7 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtNicSpecificExtension</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtSetExcludeUnencrypted</b>
+### -field Dot11ExtSetExcludeUnencrypted
 
 <dd>
 <p>A pointer to the 
@@ -224,21 +224,21 @@ typedef struct _DOT11EXT_APIS {
      Dot11ExtSetExcludeUnencrypted</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtStartOneX</b>
+### -field Dot11ExtStartOneX
 
 <dd>
 <p>A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext-onex-start.md">Dot11ExtStartOneX</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtStopOneX</b>
+### -field Dot11ExtStopOneX
 
 <dd>
 <p>A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext-onex-stop.md">Dot11ExtStopOneX</a> function.</p>
 </dd>
 
-### -field <b>Dot11ExtProcessOneXPacket</b>
+### -field Dot11ExtProcessOneXPacket
 
 <dd>
 <p>A pointer to the 
@@ -367,4 +367,4 @@ typedef struct _DOT11EXT_APIS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_APIS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_APIS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

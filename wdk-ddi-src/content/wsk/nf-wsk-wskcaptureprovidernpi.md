@@ -7,7 +7,7 @@ old-location: netvista\wskcaptureprovidernpi.htm
 old-project: netvista
 ms.assetid: b5c6667e-33b4-4482-8817-c01d9d314c3a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WskCaptureProviderNPI
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ NTSTATUS WskCaptureProviderNPI(
 ## -parameters
 <dl>
 
-### -param <i>WskRegistration</i> [in]
+### -param WskRegistration [in]
 
 <dd>
 <p>A pointer to the memory location initialized by 
@@ -69,7 +69,7 @@ NTSTATUS WskCaptureProviderNPI(
      <a href="..\wsk\ns-wsk--wsk-registration.md">WSK_REGISTRATION</a>.</p>
 </dd>
 
-### -param <i>WaitTimeout</i> [in]
+### -param WaitTimeout [in]
 
 <dd>
 <p>The time, in milliseconds, that the 
@@ -79,13 +79,13 @@ NTSTATUS WskCaptureProviderNPI(
 <p></p>
 <dl>
 
-### -param <a id="WSK_NO_WAIT"></a><a id="wsk_no_wait"></a>WSK_NO_WAIT
+### -param WSK_NO_WAIT
 
 <dd>
 <p>Return from this function immediately if the provider NPI is not available.</p>
 </dd>
 
-### -param <a id="WSK_INFINITE_WAIT"></a><a id="wsk_infinite_wait"></a>WSK_INFINITE_WAIT
+### -param WSK_INFINITE_WAIT
 
 <dd>
 <p>Wait until the provider NPI is available from the WSK subsystem.</p>
@@ -96,7 +96,7 @@ NTSTATUS WskCaptureProviderNPI(
      Kernel Application</a>.</p>
 </dd>
 
-### -param <i>WskProviderNpi</i> [out]
+### -param WskProviderNpi [out]
 
 <dd>
 <p>A pointer to the NPI returned by the WSK provider. This 
@@ -209,4 +209,4 @@ NTSTATUS WskCaptureProviderNPI(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WskCaptureProviderNPI function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WskCaptureProviderNPI function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

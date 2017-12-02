@@ -59,13 +59,13 @@ BOOLEAN APIENTRY AgpSetRate(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>AgpRate</i> [in]
+### -param AgpRate [in]
 
 <dd>
 <p>Specifies the transfer rate to be set. This value can be one of the following:</p>

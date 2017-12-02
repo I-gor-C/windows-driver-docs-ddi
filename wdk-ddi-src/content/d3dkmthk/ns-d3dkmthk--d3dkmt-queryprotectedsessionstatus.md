@@ -55,13 +55,13 @@ typedef struct _D3DKMT_QUERYPROTECTEDSESSIONSTATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>hHandle</b>
+### -field hHandle
 
 <dd>
 <p>The handle of the protected session.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The status of the protected session.</p>

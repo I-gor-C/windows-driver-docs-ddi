@@ -54,7 +54,7 @@ req.iface:
 ## -parameters
 <dl>
 
-### -param <i>FilterFactory</i> [in]
+### -param FilterFactory [in]
 
 <dd>
 <p>This is the <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> that was used to initialize the profile store in <a href="..\ks\nf-ks-ksinitializedeviceprofile.md">KsInitializeDeviceProfile</a>.</p>

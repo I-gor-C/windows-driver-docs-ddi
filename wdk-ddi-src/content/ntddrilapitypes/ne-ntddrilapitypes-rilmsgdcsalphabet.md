@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcsalphabet.htm
 old-project: netvista
 ms.assetid: 21886c34-ca8d-4466-a3db-6841b2f59137
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILMSGDCSALPHABET {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DCSALPHABET_8BIT"></a><a id="ril_dcsalphabet_8bit"></a><b>RIL_DCSALPHABET_8BIT</b>
+### -field RIL_DCSALPHABET_8BIT
 
 <dd></dd>
 
-### -field <a id="RIL_DCSALPHABET_UCS2"></a><a id="ril_dcsalphabet_ucs2"></a><b>RIL_DCSALPHABET_UCS2</b>
+### -field RIL_DCSALPHABET_UCS2
 
 <dd></dd>
 
-### -field <a id="RIL_DCSALPHABET_MAX"></a><a id="ril_dcsalphabet_max"></a><b>RIL_DCSALPHABET_MAX</b>
+### -field RIL_DCSALPHABET_MAX
 
 <dd></dd>
 </dl>

@@ -59,19 +59,19 @@ typedef struct _SetPresharedKeyForId_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>The number of the port that the initiator uses the preshared key with. A value of 0xffffffff indicates all ports.</p>
 </dd>
 
-### -field <b>SecurityFlags</b>
+### -field SecurityFlags
 
 <dd>
 <p>A bitwise OR of flags that indicate the security requirements of a target.  For a list of possible values for this member, see <a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>.</p>
 </dd>
 
-### -field <b>IdType</b>
+### -field IdType
 
 <dd>
 <p>The type of identifier to associate with the preshared key. The initiator puts this identifier (ID) in the Internet key exchange (IKE) identification payload to identify itself to the target. The following table describes the possible identification payload types.</p>
@@ -116,19 +116,19 @@ typedef struct _SetPresharedKeyForId_IN {
 <p> </p>
 </dd>
 
-### -field <b>IdSize</b>
+### -field IdSize
 
 <dd>
 <p>The size, in bytes, of the identifier in <b>Id</b><i>.</i></p>
 </dd>
 
-### -field <b>KeySize</b>
+### -field KeySize
 
 <dd>
 <p>The size, in bytes, of the key in <b>Key</b><i>.</i></p>
 </dd>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>The ID to associate with the key. The initiator uses this ID to identify itself to the target during key exchange.</p>

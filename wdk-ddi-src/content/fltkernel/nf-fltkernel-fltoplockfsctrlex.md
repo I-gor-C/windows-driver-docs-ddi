@@ -7,7 +7,7 @@ old-location: ifsk\fltoplockfsctrlex.htm
 old-project: ifsk
 ms.assetid: 02adb7a7-0c1d-4dd4-bde2-f2e700a7ee76
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltOplockFsctrlEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,35 +57,35 @@ FLT_PREOP_CALLBACK_STATUS FltOplockFsctrlEx(
 ## -parameters
 <dl>
 
-### -param <i>Oplock</i> [in]
+### -param Oplock [in]
 
 <dd>
 <p>An opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>. </p>
 </dd>
 
-### -param <i>CallbackData</i> [in]
+### -param CallbackData [in]
 
 <dd>
 <p>A pointer to the callback data structure for the I/O operation (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>). This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>OpenCount</i> [in]
+### -param OpenCount [in]
 
 <dd>
 <p>The number of user handles for the file, if an exclusive oplock is being requested. Setting a nonzero value for a level 2, R, or RH oplock request indicates that there are byte-range locks on the file. For information about oplock types, see <a href="https://msdn.microsoft.com/e9a45ae0-0ec8-4d6c-8486-ae88bdaa1f8c">Oplock Semantics Overview</a>. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A bitmask for the associated oplock operations. A minifilter driver sets bits to specify the behavior of <b>FltOplockFsctrlEx</b>. The <i>Flags</i> parameter has the following options:</p>
 <p></p>
 <dl>
 
-### -param <a id="OPLOCK_FSCTRL_FLAG_ALL_KEYS_MATCH__0x00000001_"></a><a id="oplock_fsctrl_flag_all_keys_match__0x00000001_"></a><a id="OPLOCK_FSCTRL_FLAG_ALL_KEYS_MATCH__0X00000001_"></a>OPLOCK_FSCTRL_FLAG_ALL_KEYS_MATCH (0x00000001)
+### -param OPLOCK_FSCTRL_FLAG_ALL_KEYS_MATCH (0x00000001)
 
 <dd>
-<p>Specifies that the file system verified that all oplock keys on any handles that are currently open match. By specifying this flag, you allow the oplock package to grant an oplock of level RW or RWH when more than one open handle to the file exists. For more information about oplock types, see the Oplock Semantics <a href="NULL">Overview</a> page. </p>
+<p>Specifies that the file system verified that all oplock keys on any handles that are currently open match. By specifying this flag, you allow the oplock package to grant an oplock of level RW or RWH when more than one open handle to the file exists. For more information about oplock types, see the Oplock Semantics <a href="https://msdn.microsoft.com/e9a45ae0-0ec8-4d6c-8486-ae88bdaa1f8c">Overview</a> page. </p>
 </dd>
 </dl>
 </dd>
@@ -260,4 +260,4 @@ FLT_PREOP_CALLBACK_STATUS FltOplockFsctrlEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltOplockFsctrlEx routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltOplockFsctrlEx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

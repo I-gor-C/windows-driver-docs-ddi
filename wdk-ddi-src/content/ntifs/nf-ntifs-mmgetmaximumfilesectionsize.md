@@ -7,7 +7,7 @@ old-location: ifsk\mmgetmaximumfilesectionsize.htm
 old-project: ifsk
 ms.assetid: 5B3E5B33-EFED-485A-A62A-7A54322408AC
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: MmGetMaximumFileSectionSize
 ms.prod: windows-hardware
 ms.technology: windows-devices

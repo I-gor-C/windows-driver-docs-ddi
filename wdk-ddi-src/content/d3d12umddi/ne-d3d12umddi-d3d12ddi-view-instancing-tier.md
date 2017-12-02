@@ -57,25 +57,25 @@ typedef enum _D3D12DDI_VIEW_INSTANCING_TIER {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_VIEW_INSTANCING_TIER_NOT_SUPPORTED"></a><a id="d3d12ddi_view_instancing_tier_not_supported"></a><b>D3D12DDI_VIEW_INSTANCING_TIER_NOT_SUPPORTED</b>
+### -field D3D12DDI_VIEW_INSTANCING_TIER_NOT_SUPPORTED
 
 <dd>
 <p>The view instancing tier is not supported.</p>
 </dd>
 
-### -field <a id="D3D12DDI_VIEW_INSTANCING_TIER_1"></a><a id="d3d12ddi_view_instancing_tier_1"></a><b>D3D12DDI_VIEW_INSTANCING_TIER_1</b>
+### -field D3D12DDI_VIEW_INSTANCING_TIER_1
 
 <dd>
 <p>The view instancing tier is 1.</p>
 </dd>
 
-### -field <a id="D3D12DDI_VIEW_INSTANCING_TIER_2"></a><a id="d3d12ddi_view_instancing_tier_2"></a><b>D3D12DDI_VIEW_INSTANCING_TIER_2</b>
+### -field D3D12DDI_VIEW_INSTANCING_TIER_2
 
 <dd>
 <p>The view instancing tier is 2.</p>
 </dd>
 
-### -field <a id="D3D12DDI_VIEW_INSTANCING_TIER_3"></a><a id="d3d12ddi_view_instancing_tier_3"></a><b>D3D12DDI_VIEW_INSTANCING_TIER_3</b>
+### -field D3D12DDI_VIEW_INSTANCING_TIER_3
 
 <dd>
 <p>The view instancing teir is 3.</p>

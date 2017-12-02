@@ -56,16 +56,16 @@ FORCEINLINE void UdecxUsbEndpointInitSetCallbacks(
 ## -parameters
 <dl>
 
-### -param <i>Init</i> [in, out]
+### -param Init [in, out]
 
 <dd>
-<p>A pointer to an <b>UDECXUSBENDPOINT_INIT</b> structure that the client driver retrieved in the previous call to <a href="buses.udecxusbsimpleendpointinitallocate">UdecxUsbSimpleEndpointInitAllocate</a>.</p>
+<p>A pointer to an <b>UDECXUSBENDPOINT_INIT</b> structure that the client driver retrieved in the previous call to <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbsimpleendpointinitallocate.md">UdecxUsbSimpleEndpointInitAllocate</a>.</p>
 </dd>
 
-### -param <i>EndpointCallbacks</i> [in]
+### -param EndpointCallbacks [in]
 
 <dd>
-<p>A pointer to <a href="buses.udecx_usb_endpoint_callbacks">UDECX_USB_ENDPOINT_CALLBACKS</a> that contains function pointers to event callback functions implemented by the UDE client driver. </p>
+<p>A pointer to <a href="..\udecxusbendpoint\ns-udecxusbendpoint--udecx-usb-endpoint-callbacks.md">UDECX_USB_ENDPOINT_CALLBACKS</a> that contains function pointers to event callback functions implemented by the UDE client driver. </p>
 </dd>
 </dl>
 
@@ -134,7 +134,7 @@ FORCEINLINE void UdecxUsbEndpointInitSetCallbacks(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a>
+<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>
 </dt>
 <dt>
 <a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>

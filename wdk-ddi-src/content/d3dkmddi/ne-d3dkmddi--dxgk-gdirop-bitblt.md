@@ -59,37 +59,37 @@ typedef enum _DXGK_GDIROP_BITBLT {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_GDIROP_INVALID"></a><a id="dxgk_gdirop_invalid"></a><b>DXGK_GDIROP_INVALID</b>
+### -field DXGK_GDIROP_INVALID
 
 <dd>
 <p>Indicates that the GDI raster operation is invalid.</p>
 </dd>
 
-### -field <a id="DXGK_GDIROP_SRCCOPY"></a><a id="dxgk_gdirop_srccopy"></a><b>DXGK_GDIROP_SRCCOPY</b>
+### -field DXGK_GDIROP_SRCCOPY
 
 <dd>
 <p>Indicates that the source rectangle is copied to the destination rectangle.</p>
 </dd>
 
-### -field <a id="DXGK_GDIROP_SRCINVERT"></a><a id="dxgk_gdirop_srcinvert"></a><b>DXGK_GDIROP_SRCINVERT</b>
+### -field DXGK_GDIROP_SRCINVERT
 
 <dd>
 <p>Indicates that the color of each pixel of the source rectangle is combined with the color of the respective pixel of the destination rectangle by using the Boolean <b>XOR</b> operator.</p>
 </dd>
 
-### -field <a id="DXGK_GDIROP_SRCAND"></a><a id="dxgk_gdirop_srcand"></a><b>DXGK_GDIROP_SRCAND</b>
+### -field DXGK_GDIROP_SRCAND
 
 <dd>
 <p>Indicates that the color of each pixel of the source rectangle is combined with the color of the respective pixel of the destination rectangle by using the Boolean <b>AND</b> operator.</p>
 </dd>
 
-### -field <a id="DXGK_GDIROP_SRCOR"></a><a id="dxgk_gdirop_srcor"></a><b>DXGK_GDIROP_SRCOR</b>
+### -field DXGK_GDIROP_SRCOR
 
 <dd>
 <p>Indicates that the color of each pixel of the source rectangle is combined with the color of the respective pixel of the destination rectangle by using the Boolean <b>OR</b> operator.</p>
 </dd>
 
-### -field <a id="DXGK_GDIROP_ROP3"></a><a id="dxgk_gdirop_rop3"></a><b>DXGK_GDIROP_ROP3</b>
+### -field DXGK_GDIROP_ROP3
 
 <dd>
 <p>Indicates that a ternary GDI raster operation (ROP3) will be applied.</p>

@@ -65,68 +65,68 @@ typedef enum _USB_CONNECTION_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="NoDeviceConnected"></a><a id="nodeviceconnected"></a><a id="NODEVICECONNECTED"></a><b>NoDeviceConnected</b>
+### -field NoDeviceConnected
 
 <dd>
 <p>Indicates that there is no device connected to the port.</p>
 </dd>
 
-### -field <a id="DeviceConnected"></a><a id="deviceconnected"></a><a id="DEVICECONNECTED"></a><b>DeviceConnected</b>
+### -field DeviceConnected
 
 <dd>
 <p>Indicates that a device was successfully connected to the port.</p>
 </dd>
 
-### -field <a id="DeviceFailedEnumeration"></a><a id="devicefailedenumeration"></a><a id="DEVICEFAILEDENUMERATION"></a><b>DeviceFailedEnumeration</b>
+### -field DeviceFailedEnumeration
 
 <dd>
 <p>Indicates that an attempt was made to connect a device to the port, but the enumeration of the device failed.</p>
 </dd>
 
-### -field <a id="DeviceGeneralFailure"></a><a id="devicegeneralfailure"></a><a id="DEVICEGENERALFAILURE"></a><b>DeviceGeneralFailure</b>
+### -field DeviceGeneralFailure
 
 <dd>
 <p>Indicates that an attempt was made to connect a device to the port, but the connection failed for unspecified reasons.</p>
 </dd>
 
-### -field <a id="DeviceCausedOvercurrent"></a><a id="devicecausedovercurrent"></a><a id="DEVICECAUSEDOVERCURRENT"></a><b>DeviceCausedOvercurrent</b>
+### -field DeviceCausedOvercurrent
 
 <dd>
 <p>Indicates that an attempt was made to connect a device to the port, but the attempt failed because of an overcurrent condition.</p>
 </dd>
 
-### -field <a id="DeviceNotEnoughPower"></a><a id="devicenotenoughpower"></a><a id="DEVICENOTENOUGHPOWER"></a><b>DeviceNotEnoughPower</b>
+### -field DeviceNotEnoughPower
 
 <dd>
 <p>Indicates that an attempt was made to connect a device to the port, but there was not enough power to drive the device, and the connection failed.</p>
 </dd>
 
-### -field <a id="DeviceNotEnoughBandwidth"></a><a id="devicenotenoughbandwidth"></a><a id="DEVICENOTENOUGHBANDWIDTH"></a><b>DeviceNotEnoughBandwidth</b>
+### -field DeviceNotEnoughBandwidth
 
 <dd>
 <p>Indicates that an attempt was made to connect a device to the port, but there was not enough bandwidth available for the device to function properly, and the connection failed.</p>
 </dd>
 
-### -field <a id="DeviceHubNestedTooDeeply"></a><a id="devicehubnestedtoodeeply"></a><a id="DEVICEHUBNESTEDTOODEEPLY"></a><b>DeviceHubNestedTooDeeply</b>
+### -field DeviceHubNestedTooDeeply
 
 <dd>
 <p>Indicates that an attempt was made to connect a device to the port, but the nesting of USB hubs was too deep, so the connection failed. </p>
 </dd>
 
-### -field <a id="DeviceInLegacyHub"></a><a id="deviceinlegacyhub"></a><a id="DEVICEINLEGACYHUB"></a><b>DeviceInLegacyHub</b>
+### -field DeviceInLegacyHub
 
 <dd>
 <p>Indicates that an attempt was made to connect a device to the port of an unsupported legacy hub, and the connection failed.</p>
 </dd>
 
-### -field <a id="DeviceEnumerating"></a><a id="deviceenumerating"></a><a id="DEVICEENUMERATING"></a><b>DeviceEnumerating</b>
+### -field DeviceEnumerating
 
 <dd>
 <p>Indicates that a device connected to the port is currently being enumerated.  </p>
 <p><b>Note</b>  This constant is supported in Windows Vista and later operating systems.</p>
 </dd>
 
-### -field <a id="DeviceReset"></a><a id="devicereset"></a><a id="DEVICERESET"></a><b>DeviceReset</b>
+### -field DeviceReset
 
 <dd>
 <p>Indicates that device connected to the port is currently being reset.  </p>

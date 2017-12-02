@@ -61,30 +61,30 @@ void EvtUcxControllerGetFrameNumberAndQpcForTimeSync(
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>WdfRequest</i> [in]
+### -param WdfRequest [in]
 
 <dd>
 <p>A framework request object that contains the request to get the synchronized frame and microframe number.</p>
 </dd>
 
-### -param <i>OutputBufferLength</i> [in]
+### -param OutputBufferLength [in]
 
 <dd>
 <p>The length, in bytes, of the request's output buffer, if an output buffer
-        is available. This value is the size of the <a href="buses.usb_frame_number_and_qpc_for_time_sync_information">USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION</a> structure. </p>
+        is available. This value is the size of the <a href="..\usbioctl\ns-usbioctl--usb-frame-number-and-qpc-for-time-sync-information.md">USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION</a> structure. </p>
 </dd>
 
-### -param <i>InputBufferLength</i> [in]
+### -param InputBufferLength [in]
 
 <dd>
 <p>The length, in bytes, of the request's input buffer, if an input buffer
-        is available. This value is the size of the <a href="buses.usb_frame_number_and_qpc_for_time_sync_information">USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION</a> structure.</p>
+        is available. This value is the size of the <a href="..\usbioctl\ns-usbioctl--usb-frame-number-and-qpc-for-time-sync-information.md">USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION</a> structure.</p>
 </dd>
 </dl>
 
@@ -151,7 +151,7 @@ void EvtUcxControllerGetFrameNumberAndQpcForTimeSync(
 ## -see-also
 <dl>
 <dt>
-<a href="buses._ioctl_usb_get_frame_number_and_qpc_for_time_sync">IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-frame-number-and-qpc-for-time-sync.md">IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC</a>
 </dt>
 </dl>
 <p> </p>

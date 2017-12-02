@@ -7,7 +7,7 @@ old-location: debugger\geteventprocess.htm
 old-project: debugger
 ms.assetid: 77cf1995-f3f3-4a03-bba7-9df230a10da0
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSystemObjects2, GetEventProcess, IDebugSystemObjects2::GetEventProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetEventProcess(
 ## -parameters
 <dl>
 
-### -param <i>Id</i> [out]
+### -param Id [out]
 
 <dd>
 <p>Receives the engine process ID.</p>
@@ -62,7 +62,7 @@ HRESULT GetEventProcess(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

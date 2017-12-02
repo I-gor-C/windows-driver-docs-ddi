@@ -56,13 +56,13 @@ typedef struct _OEMUIOBJ {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Size of the OEMUIOBJ structure.</p>
 </dd>
 
-### -field <b>pOemUIProcs</b>
+### -field pOemUIProcs
 
 <dd>
 <p>Pointer to a an <a href="..\printoem\ns-printoem--oemuiprocs.md">OEMUIPROCS</a> structure, which is a private, internal structure.</p>

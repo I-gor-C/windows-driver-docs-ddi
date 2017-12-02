@@ -63,55 +63,55 @@ typedef struct _HW_STREAM_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfStreams</b>
+### -field NumberOfStreams
 
 <dd>
 <p>The number of <a href="..\strmini\ns-strmini--hw-stream-information.md">HW_STREAM_INFORMATION</a> structures that follow this header.</p>
 </dd>
 
-### -field <b>SizeOfHwStreamInformation</b>
+### -field SizeOfHwStreamInformation
 
 <dd>
 <p>The size, in bytes, of the HW_STREAM_INFORMATION structure.</p>
 </dd>
 
-### -field <b>NumDevPropArrayEntries</b>
+### -field NumDevPropArrayEntries
 
 <dd>
 <p>The number of entries in the array pointed to by <b>DevicePropertiesArray</b>.</p>
 </dd>
 
-### -field <b>DevicePropertiesArray</b>
+### -field DevicePropertiesArray
 
 <dd>
 <p>Pointer to the beginning of the array of property sets that the minidriver as a whole supports. (Property sets supported by individual streams can be found in the <b>StreamPropertiesArray</b> member of the stream's <a href="..\strmini\ns-strmini--hw-stream-information.md">HW_STREAM_INFORMATION</a> structure.)</p>
 </dd>
 
-### -field <b>NumDevEventArrayEntries</b>
+### -field NumDevEventArrayEntries
 
 <dd>
 <p>The number of entries in the array pointed to by <b>DeviceEventsArray</b>.</p>
 </dd>
 
-### -field <b>DeviceEventsArray</b>
+### -field DeviceEventsArray
 
 <dd>
 <p>Pointer to the beginning of the array of event sets supported by the minidriver.</p>
 </dd>
 
-### -field <b>Topology</b>
+### -field Topology
 
 <dd>
 <p>Pointer to the <a href="stream.kstopology">KSTOPOLOGY</a> structure that describes the minidriver's internal topology of nodes and pins. The class driver uses this to handle the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566598">KSPROPSETID_Topology</a> property set for the minidriver.</p>
 </dd>
 
-### -field <b>DeviceEventRoutine</b>
+### -field DeviceEventRoutine
 
 <dd>
 <p>Points to the minidriver's <a href="stream.strminievent">StrMiniEvent</a> routine.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. Do not use.</p>

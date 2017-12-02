@@ -55,13 +55,13 @@ typedef struct _PEP_PPM_CONTEXT_QUERY_PARKING_PAGE {
 ## -struct-fields
 <dl>
 
-### -field <b>PhysicalPageAddress</b>
+### -field PhysicalPageAddress
 
 <dd>
 <p>The physical memory address of the parking page.</p>
 </dd>
 
-### -field <b>VirtualPageAddress</b>
+### -field VirtualPageAddress
 
 <dd>
 <p>The virtual memory address of the parking page.</p>

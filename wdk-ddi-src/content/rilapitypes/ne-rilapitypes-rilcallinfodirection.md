@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfodirection_2.htm
 old-project: netvista
 ms.assetid: 55db88f4-14a5-4d37-b4e8-be88369f33b7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILCALLINFODIRECTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLDIR_OUTGOING"></a><a id="ril_calldir_outgoing"></a><b>RIL_CALLDIR_OUTGOING</b>
+### -field RIL_CALLDIR_OUTGOING
 
 <dd></dd>
 
-### -field <a id="RIL_CALLDIR_MAX"></a><a id="ril_calldir_max"></a><b>RIL_CALLDIR_MAX</b>
+### -field RIL_CALLDIR_MAX
 
 <dd></dd>
 </dl>

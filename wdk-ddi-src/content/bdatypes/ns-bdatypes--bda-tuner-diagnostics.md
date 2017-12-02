@@ -57,19 +57,19 @@ typedef struct _BDA_TUNER_DIAGNOSTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>ulSignalLevel</b>
+### -field ulSignalLevel
 
 <dd></dd>
 
-### -field <b>ulSignalLevelQuality</b>
+### -field ulSignalLevelQuality
 
 <dd></dd>
 
-### -field <b>ulSignalNoiseRatio</b>
+### -field ulSignalNoiseRatio
 
 <dd></dd>
 </dl>

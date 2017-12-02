@@ -7,7 +7,7 @@ old-location: netvista\wdi_action_frame_category.htm
 old-project: netvista
 ms.assetid: F2A3D1F0-E6E7-46DC-875A-7F36E6ACBC6D
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef enum _WDI_ACTION_FRAME_CATEGORY {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_ACTION_FRAME_CATEGORY_PUBLIC"></a><a id="wdi_action_frame_category_public"></a><b>WDI_ACTION_FRAME_CATEGORY_PUBLIC</b>
+### -field WDI_ACTION_FRAME_CATEGORY_PUBLIC
 
 <dd>
 <p>Specifies a Public Action frame.  It is used in:</p>
@@ -69,19 +69,19 @@ typedef enum _WDI_ACTION_FRAME_CATEGORY {
 </ul>
 </dd>
 
-### -field <a id="WDI_ACTION_FRAME_CATEGORY_RADIO_MEASUREMENT"></a><a id="wdi_action_frame_category_radio_measurement"></a><b>WDI_ACTION_FRAME_CATEGORY_RADIO_MEASUREMENT</b>
+### -field WDI_ACTION_FRAME_CATEGORY_RADIO_MEASUREMENT
 
 <dd>
 <p>Specifies a Radio Measurement Report frame. It is transmitted by a STA requesting another STA to make one or more measurements on one or more channels.</p>
 </dd>
 
-### -field <a id="WDI_ACTION_FRAME_CATEGORY_FAST_BSS_TRANSITION"></a><a id="wdi_action_frame_category_fast_bss_transition"></a><b>WDI_ACTION_FRAME_CATEGORY_FAST_BSS_TRANSITION</b>
+### -field WDI_ACTION_FRAME_CATEGORY_FAST_BSS_TRANSITION
 
 <dd>
 <p>Specifies a Fast BSS Transition Action frame.  It is used by a currently-associated AP to enable fast BSS transitions over the DS.  Over the DS transitions are not supported in Windows 10.</p>
 </dd>
 
-### -field <a id="WDI_ACTION_FRAME_CATEGORY_WNM"></a><a id="wdi_action_frame_category_wnm"></a><b>WDI_ACTION_FRAME_CATEGORY_WNM</b>
+### -field WDI_ACTION_FRAME_CATEGORY_WNM
 
 <dd>
 <p>Specifies a Wireless Network Management Action frame.  In Windows 10, it is only used for handling BSS Transition Management requests/responses.</p>

@@ -7,7 +7,7 @@ old-location: netvista\wdi_anqp_query_status.htm
 old-project: netvista
 ms.assetid: 5EC1B41D-2A6F-43B7-9E22-8A65CF4E11CA
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,37 +62,37 @@ typedef enum _WDI_ANQP_QUERY_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_ANQP_QUERY_STATUS_SUCCESS"></a><a id="wdi_anqp_query_status_success"></a><b>WDI_ANQP_QUERY_STATUS_SUCCESS</b>
+### -field WDI_ANQP_QUERY_STATUS_SUCCESS
 
 <dd>
 <p>Maps to SUCCESS.</p>
 </dd>
 
-### -field <a id="WDI_ANQP_QUERY_STATUS_FAILURE"></a><a id="wdi_anqp_query_status_failure"></a><b>WDI_ANQP_QUERY_STATUS_FAILURE</b>
+### -field WDI_ANQP_QUERY_STATUS_FAILURE
 
 <dd>
 <p>The failure did not map to any of the other status codes.</p>
 </dd>
 
-### -field <a id="WDI_ANQP_QUERY_STATUS_TIMED_OUT"></a><a id="wdi_anqp_query_status_timed_out"></a><b>WDI_ANQP_QUERY_STATUS_TIMED_OUT</b>
+### -field WDI_ANQP_QUERY_STATUS_TIMED_OUT
 
 <dd>
 <p>  Maps to GAS_QUERY_TIMEOUT. The STA timed out waiting for a GAS response.</p>
 </dd>
 
-### -field <a id="WDI_ANQP_QUERY_STATUS_RESOURCES"></a><a id="wdi_anqp_query_status_resources"></a><b>WDI_ANQP_QUERY_STATUS_RESOURCES</b>
+### -field WDI_ANQP_QUERY_STATUS_RESOURCES
 
 <dd>
 <p>The operating system is unable to allocate sufficient resources to complete the request.</p>
 </dd>
 
-### -field <a id="WDI_ANQP_QUERY_STATUS_ADVERTISEMENT_PROTOCOL_NOT_SUPPORTED_ON_REMOTE"></a><a id="wdi_anqp_query_status_advertisement_protocol_not_supported_on_remote"></a><b>WDI_ANQP_QUERY_STATUS_ADVERTISEMENT_PROTOCOL_NOT_SUPPORTED_ON_REMOTE</b>
+### -field WDI_ANQP_QUERY_STATUS_ADVERTISEMENT_PROTOCOL_NOT_SUPPORTED_ON_REMOTE
 
 <dd>
 <p>Maps to GAS_ADVERTISEMENT_PROTOCOL_NOT_SUPPORTED. The GAS advertisement protocol is not supported on the remote device. </p>
 </dd>
 
-### -field <a id="WDI_ANQP_QUERY_STATUS_GAS_PROTOCOL_FAILURE"></a><a id="wdi_anqp_query_status_gas_protocol_failure"></a><b>WDI_ANQP_QUERY_STATUS_GAS_PROTOCOL_FAILURE</b>
+### -field WDI_ANQP_QUERY_STATUS_GAS_PROTOCOL_FAILURE
 
 <dd>
 <p>Mapped for any of the following errors.</p>
@@ -103,7 +103,7 @@ typedef enum _WDI_ANQP_QUERY_STATUS {
 </ul>
 </dd>
 
-### -field <a id="WDI_ANQP_QUERY_STATUS_ADVERTISEMENT_SERVER_NOT_RESPONDING"></a><a id="wdi_anqp_query_status_advertisement_server_not_responding"></a><b>WDI_ANQP_QUERY_STATUS_ADVERTISEMENT_SERVER_NOT_RESPONDING</b>
+### -field WDI_ANQP_QUERY_STATUS_ADVERTISEMENT_SERVER_NOT_RESPONDING
 
 <dd>
 <p>Mapped for any of the following errors.</p>
@@ -114,7 +114,7 @@ typedef enum _WDI_ANQP_QUERY_STATUS {
 </ul>
 </dd>
 
-### -field <a id="WDI_ANQP_QUERY_STATUS_ACCESS_ISSUES"></a><a id="wdi_anqp_query_status_access_issues"></a><b>WDI_ANQP_QUERY_STATUS_ACCESS_ISSUES</b>
+### -field WDI_ANQP_QUERY_STATUS_ACCESS_ISSUES
 
 <dd>
 <p>Mapped for any of the following errors.</p>

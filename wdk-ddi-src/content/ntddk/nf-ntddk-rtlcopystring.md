@@ -55,13 +55,13 @@ VOID RtlCopyString(
 ## -parameters
 <dl>
 
-### -param <i>DestinationString</i> [out]
+### -param DestinationString [out]
 
 <dd>
 <p>A pointer to the destination string buffer. </p>
 </dd>
 
-### -param <i>SourceString</i> [in, optional]
+### -param SourceString [in, optional]
 
 <dd>
 <p>A pointer to the source string buffer. </p>

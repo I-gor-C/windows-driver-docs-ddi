@@ -7,7 +7,7 @@ old-location: netvista\rilpositioninfogsmparammask_2.htm
 old-project: netvista
 ms.assetid: 7c5fc8bc-6d0c-429c-944f-5f26b7582fa7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,35 +62,35 @@ typedef enum _RILPOSITIONINFOGSMPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_POSITION_GSM_MNC"></a><a id="ril_param_position_gsm_mnc"></a><b>RIL_PARAM_POSITION_GSM_MNC</b>
+### -field RIL_PARAM_POSITION_GSM_MNC
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_POSITION_GSM_LAC"></a><a id="ril_param_position_gsm_lac"></a><b>RIL_PARAM_POSITION_GSM_LAC</b>
+### -field RIL_PARAM_POSITION_GSM_LAC
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_POSITION_GSM_CELLID"></a><a id="ril_param_position_gsm_cellid"></a><b>RIL_PARAM_POSITION_GSM_CELLID</b>
+### -field RIL_PARAM_POSITION_GSM_CELLID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_POSITION_GSM_TA"></a><a id="ril_param_position_gsm_ta"></a><b>RIL_PARAM_POSITION_GSM_TA</b>
+### -field RIL_PARAM_POSITION_GSM_TA
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_POSITION_GSM_ARFCN"></a><a id="ril_param_position_gsm_arfcn"></a><b>RIL_PARAM_POSITION_GSM_ARFCN</b>
+### -field RIL_PARAM_POSITION_GSM_ARFCN
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_POSITION_GSM_BSID"></a><a id="ril_param_position_gsm_bsid"></a><b>RIL_PARAM_POSITION_GSM_BSID</b>
+### -field RIL_PARAM_POSITION_GSM_BSID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_POSITION_GSM_RXLEVEL"></a><a id="ril_param_position_gsm_rxlevel"></a><b>RIL_PARAM_POSITION_GSM_RXLEVEL</b>
+### -field RIL_PARAM_POSITION_GSM_RXLEVEL
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_POSITION_GSM_ALL"></a><a id="ril_param_position_gsm_all"></a><b>RIL_PARAM_POSITION_GSM_ALL</b>
+### -field RIL_PARAM_POSITION_GSM_ALL
 
 <dd></dd>
 </dl>

@@ -62,26 +62,26 @@ typedef struct _OPTTYPE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Size, in bytes, of the OPTTYPE structure.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Specifies the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Optional bit flags that modify the option's characteristics. The following flags can be set in any combination.</p>
 <p></p>
 <dl>
 
-### -field <a id="OPTTF_NOSPACE_BEFORE_POSTFIX"></a><a id="opttf_nospace_before_postfix"></a>OPTTF_NOSPACE_BEFORE_POSTFIX
+### -field OPTTF_NOSPACE_BEFORE_POSTFIX
 
 <dd>
 <p>CPSUI should not add a space character between the string specified by the <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structure's <b>pName</b> string and the <a href="..\compstui\ns-compstui--optparam.md">OPTPARAM</a> structure's <b>pData</b> string, when displaying the option.</p>
@@ -91,7 +91,7 @@ typedef struct _OPTTYPE {
 <p></p>
 <dl>
 
-### -field <a id="OPTTF_TYPE_DISABLED"></a><a id="opttf_type_disabled"></a>OPTTF_TYPE_DISABLED
+### -field OPTTF_TYPE_DISABLED
 
 <dd>
 <p>All the OPTPARAM structures to which <b>pOptParam</b> points are disabled, so that none of the parameter values are user-selectable.</p>
@@ -99,38 +99,38 @@ typedef struct _OPTTYPE {
 </dl>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Specifies the number of <a href="..\compstui\ns-compstui--optparam.md">OPTPARAM</a> structures to which <b>pOptParam</b> points. This member's value is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.</p>
 </dd>
 
-### -field <b>BegCtrlID</b>
+### -field BegCtrlID
 
 <dd>
 <p>If <b>pDlgPage</b> in <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> identifies a CPSUI-supplied page, or if <b>DlgTemplateID</b> in <a href="..\compstui\ns-compstui--dlgpage.md">DLGPAGE</a> identifies a CPSUI-supplied template, <b>BegCtrlID</b> is not used.</p>
 <p>Otherwise, <b>BegCtrlID</b> must contain the first of a sequentially numbered set of Windows control identifiers. Control identifier usage is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.</p>
 </dd>
 
-### -field <b>pOptParam</b>
+### -field pOptParam
 
 <dd>
 <p>Pointer to an array of <a href="..\compstui\ns-compstui--optparam.md">OPTPARAM</a> structures describing the parameter values that a user can select for the option.</p>
 </dd>
 
-### -field <b>Style</b>
+### -field Style
 
 <dd>
 <p>Specifies flags that can be used to modify the option's display characteristics. The flags that can be specified are dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.</p>
 </dd>
 
-### -field <b>wReserved</b>
+### -field wReserved
 
 <dd>
 <p>Reserved, must be initialized to zero.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Reserved, must be initialized to zero.</p>

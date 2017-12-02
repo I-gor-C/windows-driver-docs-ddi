@@ -7,7 +7,7 @@ old-location: netvista\ndis_system_processor_info_ex.htm
 old-project: netvista
 ms.assetid: ba3c6641-98bc-4c44-9889-7583c4cf61f0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_SYSTEM_PROCESSOR_INFO_EX, NDIS_SYSTEM_PROCESSOR_INFO_EX, *PNDIS_SYSTEM_PROCESSOR_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ typedef struct _NDIS_SYSTEM_PROCESSOR_INFO_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -76,13 +76,13 @@ typedef struct _NDIS_SYSTEM_PROCESSOR_INFO_EX {
      <b>Size</b> member to NDIS_SIZEOF_SYSTEM_PROCESSOR_INFO_EX_REVISION_1.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved. NDIS sets this member to zero.</p>
 </dd>
 
-### -field <b>ProcessorVendor</b>
+### -field ProcessorVendor
 
 <dd>
 <p>The processor vendor specified as one of the values from the 
@@ -90,28 +90,28 @@ typedef struct _NDIS_SYSTEM_PROCESSOR_INFO_EX {
      NDIS_PROCESSOR_VENDOR</a> enumeration.</p>
 </dd>
 
-### -field <b>NumSockets</b>
+### -field NumSockets
 
 <dd>
 <p>The total number of processor physical packages (that is, sockets on the local computer
      motherboard) that are in the local computer.</p>
 </dd>
 
-### -field <b>NumCores</b>
+### -field NumCores
 
 <dd>
 <p>The total number of core processors that are in the local computer. For example, set this member
      to four if there are two dual core physical packages.</p>
 </dd>
 
-### -field <b>NumCoresPerSocket</b>
+### -field NumCoresPerSocket
 
 <dd>
 <p>The number of core processors that are in each physical package. For example, set this member to
      two for a dual core physical package.</p>
 </dd>
 
-### -field <b>MaxHyperThreadingProcsPerCore</b>
+### -field MaxHyperThreadingProcsPerCore
 
 <dd>
 <p>The maximum number of logical processors that are in each hyper-threaded core processor. For
@@ -119,7 +119,7 @@ typedef struct _NDIS_SYSTEM_PROCESSOR_INFO_EX {
      processors.</p>
 </dd>
 
-### -field <b>ProcessorInfoOffset</b>
+### -field ProcessorInfoOffset
 
 <dd>
 <p>The offset, in bytes, from the start of the structure to an array of 
@@ -131,14 +131,14 @@ typedef struct _NDIS_SYSTEM_PROCESSOR_INFO_EX {
      array.</p>
 </dd>
 
-### -field <b>NumberOfProcessors</b>
+### -field NumberOfProcessors
 
 <dd>
 <p>The number of elements in the array of NDIS_PROCESSOR_INFO_EX structures that follows this
      structure.</p>
 </dd>
 
-### -field <b>ProcessorInfoEntrySize</b>
+### -field ProcessorInfoEntrySize
 
 <dd>
 <p>The size, in bytes, of elements in the array of NDIS_PROCESSOR_INFO_EX structures that follows
@@ -196,4 +196,4 @@ typedef struct _NDIS_SYSTEM_PROCESSOR_INFO_EX {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SYSTEM_PROCESSOR_INFO_EX structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SYSTEM_PROCESSOR_INFO_EX structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

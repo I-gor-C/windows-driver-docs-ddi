@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelinitsetclientcontextsize.htm
 old-project: netvista
 ms.assetid: 6AABB3EB-F61A-40DA-BA9F-2AB91FC4B89E
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbChannelInitSetClientContextSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ NTSTATUS
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>A handle for a channel.</p>
 </dd>
 
-### -param <i>ContextSize</i> [in]
+### -param ContextSize [in]
 
 <dd>
 <p>The size of the context area allocated on each packet     object.</p>

@@ -55,7 +55,7 @@ HANDLE RevertToPrinterSelf(
 ## -parameters
 <dl>
 
-### -param <i>void</i> 
+### -param void 
 
 <dd></dd>
 </dl>

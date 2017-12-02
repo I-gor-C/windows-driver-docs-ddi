@@ -59,25 +59,25 @@ BOOLEAN __inline AtaPortRegistryControllerKeyWriteDeferred(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the channel extension. </p>
 </dd>
 
-### -param <i>ControllerNumber</i> [in]
+### -param ControllerNumber [in]
 
 <dd>
 <p>Contains the controller number. </p>
 </dd>
 
-### -param <i>ValueName</i> [in]
+### -param ValueName [in]
 
 <dd>
 <p>Contains the name of the registry value to write to. </p>
 </dd>
 
-### -param <i>ValueType</i> [in]
+### -param ValueType [in]
 
 <dd>
 <p>Indicates the type of data that is contained in the registry value. This member should be assigned one of values indicated in the following table. </p>
@@ -114,13 +114,13 @@ BOOLEAN __inline AtaPortRegistryControllerKeyWriteDeferred(
 <p> </p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to the source buffer that contains the data to write to the registry value. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>A pointer to the number of bytes of data to copy. If the operation fails, the location pointed to by <i>Length</i> will update to the length of data that was successfully copied to the registry.</p>

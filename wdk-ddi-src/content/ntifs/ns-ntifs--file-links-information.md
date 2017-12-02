@@ -7,7 +7,7 @@ old-location: ifsk\file_links_information.htm
 old-project: ifsk
 ms.assetid: adf1d2f3-4395-43d9-8157-e9f246e2bba8
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FILE_LINKS_INFORMATION, FILE_LINKS_INFORMATION, *PFILE_LINKS_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef struct _FILE_LINKS_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>BytesNeeded</b>
+### -field BytesNeeded
 
 <dd>
 <p>The number of bytes needed to hold all available names returned using the <b>Entry</b> member. This value must be greater than 0.</p>
 </dd>
 
-### -field <b>EntriesReturned</b>
+### -field EntriesReturned
 
 <dd>
 <p>The number of <a href="..\ntifs\ns-ntifs--file-link-entry-information.md">FILE_LINK_ENTRY_INFORMATION</a> structures that have been returned using the <b>Entry</b> member. </p>
 </dd>
 
-### -field <b>Entry</b>
+### -field Entry
 
 <dd>
 <p>A buffer that contains the returned <a href="..\ntifs\ns-ntifs--file-link-entry-information.md">FILE_LINK_ENTRY_INFORMATION</a> structures. </p>

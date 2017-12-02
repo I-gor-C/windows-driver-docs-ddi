@@ -7,7 +7,7 @@ old-location: netvista\wdi_txrx_peer_qos_caps.htm
 old-project: netvista
 ms.assetid: 34d53daa-3501-4532-82e3-e5b0ed452b66
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef enum _WDI_TXRX_PEER_QOS_CAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_TXRX_PeerCfgQosNone"></a><a id="wdi_txrx_peercfgqosnone"></a><a id="WDI_TXRX_PEERCFGQOSNONE"></a><b>WDI_TXRX_PeerCfgQosNone</b>
+### -field WDI_TXRX_PeerCfgQosNone
 
 <dd>
 <p>Specifies that QoS was not negotiated for this peer during association.</p>
 </dd>
 
-### -field <a id="WDI_TXRX_PeerCfgQosCapable"></a><a id="wdi_txrx_peercfgqoscapable"></a><a id="WDI_TXRX_PEERCFGQOSCAPABLE"></a><b>WDI_TXRX_PeerCfgQosCapable</b>
+### -field WDI_TXRX_PeerCfgQosCapable
 
 <dd>
 <p>Specifies that QoS was negotiated for this peer during association.</p>
 </dd>
 
-### -field <a id="WDI_TXRX_PeerCfgQosUapsdTids"></a><a id="wdi_txrx_peercfgqosuapsdtids"></a><a id="WDI_TXRX_PEERCFGQOSUAPSDTIDS"></a><b>WDI_TXRX_PeerCfgQosUapsdTids</b>
+### -field WDI_TXRX_PeerCfgQosUapsdTids
 
 <dd>
 <p>Reserved.</p>

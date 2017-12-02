@@ -58,13 +58,13 @@ VOID APIENTRY CommandListExecute(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hCommandList</i> [in]
+### -param hCommandList [in]
 
 <dd>
 <p> A handle to the driver's private data for the command list to run. </p>

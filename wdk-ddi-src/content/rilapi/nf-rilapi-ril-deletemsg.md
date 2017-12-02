@@ -7,7 +7,7 @@ old-location: netvista\ril_deletemsg.htm
 old-project: netvista
 ms.assetid: bda4663b-0aae-481a-8bd6-f242c6e6b1de
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_DeleteMsg
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_DeleteMsg(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>hUiccApp</i> 
+### -param hUiccApp 
 
 <dd></dd>
 
-### -param <i>dwIndex</i> 
+### -param dwIndex 
 
 <dd></dd>
 </dl>

@@ -57,25 +57,25 @@ typedef struct _DISK_COPY_DATA_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>SourceOffset</b>
+### -field SourceOffset
 
 <dd>
 <p>Contains the byte offset of the source for the copy. This number must be sector-aligned.</p>
 </dd>
 
-### -field <b>DestinationOffset</b>
+### -field DestinationOffset
 
 <dd>
 <p>Contains the byte offset of the destination of the copy. This number must be sector-aligned.</p>
 </dd>
 
-### -field <b>CopyLength</b>
+### -field CopyLength
 
 <dd>
 <p>Contains the number of bytes to copy. This number must be sector-aligned.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Must be zero.</p>

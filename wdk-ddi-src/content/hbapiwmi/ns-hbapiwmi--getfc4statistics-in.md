@@ -55,13 +55,13 @@ typedef struct _GetFC4Statistics_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>Contains the worldwide name for the local port of type Nx_Port whose traffic statistics are to be reported. </p>
 </dd>
 
-### -field <b>FC4Type</b>
+### -field FC4Type
 
 <dd>
 <p>Contains a value that indicates the type FC-4 protocol. For an explanation of FC4 types, see the T11 committee's <i>Fibre Channel Generic Services - 4 </i>specification. </p>

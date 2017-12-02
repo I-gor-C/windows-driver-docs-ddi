@@ -57,16 +57,16 @@ void UcxControllerNotifyTransportCharacteristicsChange(
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>UcxControllerTransportCharacteristics</i> [out]
+### -param UcxControllerTransportCharacteristics [out]
 
 <dd>
-<p>A pointer to a <a href="buses.ucx_controller_transport_characteristics">UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS</a> structure that contains the updated transport characteristics.</p>
+<p>A pointer to a <a href="..\ucxcontroller\ns-ucxcontroller--ucx-controller-transport-characteristics.md">UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS</a> structure that contains the updated transport characteristics.</p>
 </dd>
 </dl>
 
@@ -135,7 +135,7 @@ void UcxControllerNotifyTransportCharacteristicsChange(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_ucx_controller_get_transport_characteristics">EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS</a>
+<a href="..\ucxcontroller\nc-ucxcontroller-evt-ucx-controller-get-transport-characteristics.md">EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS</a>
 </dt>
 </dl>
 <p> </p>

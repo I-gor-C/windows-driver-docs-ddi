@@ -61,7 +61,7 @@ typedef struct IDDCX_ENDPOINT_DIAGNOSTIC_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -69,7 +69,7 @@ typedef struct IDDCX_ENDPOINT_DIAGNOSTIC_INFO {
                  Total size of the structure.</p>
 </dd>
 
-### -field <b>TransmissionType</b>
+### -field TransmissionType
 
 <dd>
 <p>
@@ -77,7 +77,7 @@ typedef struct IDDCX_ENDPOINT_DIAGNOSTIC_INFO {
                  </p>
 </dd>
 
-### -field <b>pEndPointFriendlyName</b>
+### -field pEndPointFriendlyName
 
 <dd>
 <p>
@@ -85,7 +85,7 @@ typedef struct IDDCX_ENDPOINT_DIAGNOSTIC_INFO {
                  </p>
 </dd>
 
-### -field <b>pEndPointModelName</b>
+### -field pEndPointModelName
 
 <dd>
 <p>
@@ -93,7 +93,7 @@ typedef struct IDDCX_ENDPOINT_DIAGNOSTIC_INFO {
                  </p>
 </dd>
 
-### -field <b>pEndPointManufacturerName</b>
+### -field pEndPointManufacturerName
 
 <dd>
 <p>
@@ -101,7 +101,7 @@ typedef struct IDDCX_ENDPOINT_DIAGNOSTIC_INFO {
                  </p>
 </dd>
 
-### -field <b>pHardwareVersion</b>
+### -field pHardwareVersion
 
 <dd>
 <p>
@@ -109,7 +109,7 @@ typedef struct IDDCX_ENDPOINT_DIAGNOSTIC_INFO {
                  </p>
 </dd>
 
-### -field <b>pFirmwareVersion</b>
+### -field pFirmwareVersion
 
 <dd>
 <p>
@@ -117,7 +117,7 @@ typedef struct IDDCX_ENDPOINT_DIAGNOSTIC_INFO {
                  </p>
 </dd>
 
-### -field <b>GammaSupport</b>
+### -field GammaSupport
 
 <dd>
 <p>

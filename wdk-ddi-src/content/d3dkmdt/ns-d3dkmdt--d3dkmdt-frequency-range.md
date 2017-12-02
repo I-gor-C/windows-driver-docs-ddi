@@ -57,25 +57,25 @@ typedef struct _D3DKMDT_FREQUENCY_RANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>MinVSyncFreq</b>
+### -field MinVSyncFreq
 
 <dd>
 <p>The minimum vertical refresh rate, in Hz, supported by the monitor.</p>
 </dd>
 
-### -field <b>MaxVSyncFreq</b>
+### -field MaxVSyncFreq
 
 <dd>
 <p>The maximum vertical refresh rate, in Hz, supported by the monitor.</p>
 </dd>
 
-### -field <b>MinHSyncFreq</b>
+### -field MinHSyncFreq
 
 <dd>
 <p>The minimum horizontal refresh rate, in Hz, supported by the monitor.</p>
 </dd>
 
-### -field <b>MaxHSyncFreq</b>
+### -field MaxHSyncFreq
 
 <dd>
 <p>The maximum horizontal refresh rate, in Hz, supported by the monitor.</p>

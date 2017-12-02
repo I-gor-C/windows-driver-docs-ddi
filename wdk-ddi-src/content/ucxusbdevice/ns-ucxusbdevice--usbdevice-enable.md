@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains parameters for a request to enable the specified device. This structure is passed by UCX in request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object of the <a href="buses.evt_ucx_usbdevice_enable">EVT_UCX_USBDEVICE_ENABLE</a> callback function.</p>
+<p>Contains parameters for a request to enable the specified device. This structure is passed by UCX in request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object of the <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-enable.md">EVT_UCX_USBDEVICE_ENABLE</a> callback function.</p>
 
 
 ## -syntax
@@ -61,19 +61,19 @@ typedef struct _USBDEVICE_ENABLE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
-<p>A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
+<p>A <a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-mgmt-header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
 </dd>
 
-### -field <b>DefaultEndpoint</b>
+### -field DefaultEndpoint
 
 <dd>
 <p>The default endpoint for the USB hub or device to enable transfers for.</p>
 </dd>
 
-### -field <b>FailureFlags</b>
+### -field FailureFlags
 
 <dd>
 <p>The errors, if any, that occurred when attempting to enable the hub or device for transfers.</p>
@@ -100,7 +100,7 @@ typedef struct _USBDEVICE_ENABLE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._usbdevice_disable">USBDEVICE_DISABLE</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-disable.md">USBDEVICE_DISABLE</a>
 </dt>
 <dt>
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>

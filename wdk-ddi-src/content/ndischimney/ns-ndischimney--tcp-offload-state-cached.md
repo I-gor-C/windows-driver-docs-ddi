@@ -7,7 +7,7 @@ old-location: netvista\tcp_offload_state_cached.htm
 old-project: netvista
 ms.assetid: 953154eb-e6f3-4013-a68f-1a358953c7ad
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TCP_OFFLOAD_STATE_CACHED, TCP_OFFLOAD_STATE_CACHED, *PTCP_OFFLOAD_STATE_CACHED
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>An 
@@ -79,7 +79,7 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
      <b>Header</b> is reserved.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitmask that can be set to zero or any of the following flags, combined with bitwise OR: 
@@ -87,7 +87,7 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
 <p></p>
 <dl>
 
-### -field <a id="TCP_FLAG_KEEP_ALIVE_ENABLED"></a><a id="tcp_flag_keep_alive_enabled"></a>TCP_FLAG_KEEP_ALIVE_ENABLED
+### -field TCP_FLAG_KEEP_ALIVE_ENABLED
 
 <dd>
 <p>The host stack sets this flag to enable the keepalive option on the connection. The host stack
@@ -95,7 +95,7 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
        keepalive option, see RFC 1122.</p>
 </dd>
 
-### -field <a id="TCP_FLAG_NAGLING_ENABLED"></a><a id="tcp_flag_nagling_enabled"></a>TCP_FLAG_NAGLING_ENABLED
+### -field TCP_FLAG_NAGLING_ENABLED
 
 <dd>
 <p>The host stack sets this flag to enable the Nagle algorithm on the connection. The host stack
@@ -103,21 +103,21 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
        Nagle algorithm, see RFC 896.</p>
 </dd>
 
-### -field <a id="TCP_FLAG_KEEP_ALIVE_RESTART"></a><a id="tcp_flag_keep_alive_restart"></a>TCP_FLAG_KEEP_ALIVE_RESTART
+### -field TCP_FLAG_KEEP_ALIVE_RESTART
 
 <dd>
 <p>The host stack sets this flag to cause the offload target to reset its keepalive timer to
        zero.</p>
 </dd>
 
-### -field <a id="TCP_FLAG_MAX_RT_RESTART"></a><a id="tcp_flag_max_rt_restart"></a>TCP_FLAG_MAX_RT_RESTART
+### -field TCP_FLAG_MAX_RT_RESTART
 
 <dd>
 <p>The host stack sets this flag to cause the offload target to reset the TotalRT variable in the
        TCP delegated state for the connection to zero.</p>
 </dd>
 
-### -field <a id="TCP_FLAG_UPDATE_RCV_WND"></a><a id="tcp_flag_update_rcv_wnd"></a>TCP_FLAG_UPDATE_RCV_WND
+### -field TCP_FLAG_UPDATE_RCV_WND
 
 <dd>
 <p>The host stack sets this flag to indicate that the default receive window size (InitialRcvWnd in
@@ -128,13 +128,13 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
 </dl>
 </dd>
 
-### -field <b>InitialRcvWnd</b>
+### -field InitialRcvWnd
 
 <dd>
 <p>The default receive window (from socket option SO_RCVBUF).</p>
 </dd>
 
-### -field <b>RcvIndicationSize</b>
+### -field RcvIndicationSize
 
 <dd>
 <p>When non-<b>NULL</b>, the optimum number of data bytes that the offload target should supply in a single
@@ -154,28 +154,28 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
      <i>NdisTcpOffloadReceiveHandler</i> function.</p>
 </dd>
 
-### -field <b>KaProbeCount</b>
+### -field KaProbeCount
 
 <dd>
 <p>The number of keepalive probes that the offload target should send to determine whether a TCP
      connection is intact (see RFC 1122).</p>
 </dd>
 
-### -field <b>KaTimeout</b>
+### -field KaTimeout
 
 <dd>
 <p>This member specifies, in clock ticks, the timeout interval for inactivity before sending a
      keepalive probe (see RFC 1122).</p>
 </dd>
 
-### -field <b>KaInterval</b>
+### -field KaInterval
 
 <dd>
 <p>This member specifies, in clock ticks, the timeout after which to retransmit a keepalive frame if
      no response is received to a keepalive probe (see RFC 1122).</p>
 </dd>
 
-### -field <b>MaxRT</b>
+### -field MaxRT
 
 <dd>
 <p>This member specifies, in clock ticks, the maximum time that the offload target should spend
@@ -195,7 +195,7 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
      the current TCP segment.</p>
 </dd>
 
-### -field <b>FlowLabel</b>
+### -field FlowLabel
 
 <dd>
 <p>This member marks host-labeled packets for special handling by intervening routers--for example,
@@ -204,7 +204,7 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
      connection is over IPv6.</p>
 </dd>
 
-### -field <b>TtlOrHopLimit</b>
+### -field TtlOrHopLimit
 
 <dd>
 <p>If the TCP connection is over IPv4, then this member specifies the time to live (see RFC 791).
@@ -215,7 +215,7 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
      lifetime of the TCP connection.</p>
 </dd>
 
-### -field <b>TosOrTrafficClass</b>
+### -field TosOrTrafficClass
 
 <dd>
 <p>If the TCP connection is over IPv4, then this member specifies the type of service for routing a
@@ -228,7 +228,7 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
      connection.</p>
 </dd>
 
-### -field <b>UserPriority</b>
+### -field UserPriority
 
 <dd>
 <p>A 3-bit priority value. If the offload target supports 802.1p packet information, it must insert
@@ -307,4 +307,4 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATE_CACHED structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATE_CACHED structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

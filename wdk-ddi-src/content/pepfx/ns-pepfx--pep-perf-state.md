@@ -55,13 +55,13 @@ typedef struct _PEP_PERF_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The discrete value represented by this P-state. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to PEP-defined context data. The PEP uses this context to contain additional information about the discrete performance level that cannot be expressed in the <b>Value</b> member. This context is opaque to the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx). The <b>Context</b> member is optional and can be set to NULL.</p>

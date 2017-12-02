@@ -61,43 +61,43 @@ typedef enum _KEY_SET_INFORMATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="KeyWriteTimeInformation"></a><a id="keywritetimeinformation"></a><a id="KEYWRITETIMEINFORMATION"></a><b>KeyWriteTimeInformation</b>
+### -field KeyWriteTimeInformation
 
 <dd>
 <p>Indicates that a <a href="..\wdm\ns-wdm--key-write-time-information.md">KEY_WRITE_TIME_INFORMATION</a> structure is supplied.</p>
 </dd>
 
-### -field <a id="KeyWow64FlagsInformation"></a><a id="keywow64flagsinformation"></a><a id="KEYWOW64FLAGSINFORMATION"></a><b>KeyWow64FlagsInformation</b>
+### -field KeyWow64FlagsInformation
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="KeyControlFlagsInformation"></a><a id="keycontrolflagsinformation"></a><a id="KEYCONTROLFLAGSINFORMATION"></a><b>KeyControlFlagsInformation</b>
+### -field KeyControlFlagsInformation
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="KeySetVirtualizationInformation"></a><a id="keysetvirtualizationinformation"></a><a id="KEYSETVIRTUALIZATIONINFORMATION"></a><b>KeySetVirtualizationInformation</b>
+### -field KeySetVirtualizationInformation
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="KeySetDebugInformation"></a><a id="keysetdebuginformation"></a><a id="KEYSETDEBUGINFORMATION"></a><b>KeySetDebugInformation</b>
+### -field KeySetDebugInformation
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="KeySetHandleTagsInformation"></a><a id="keysethandletagsinformation"></a><a id="KEYSETHANDLETAGSINFORMATION"></a><b>KeySetHandleTagsInformation</b>
+### -field KeySetHandleTagsInformation
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="MaxKeySetInfoClass"></a><a id="maxkeysetinfoclass"></a><a id="MAXKEYSETINFOCLASS"></a><b>MaxKeySetInfoClass</b>
+### -field MaxKeySetInfoClass
 
 <dd>
 <p>This member constant is always the maximum value in the enumeration.</p>

@@ -55,13 +55,13 @@ typedef struct _SM_GetLUNStatistics_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.</p>
 </dd>
 
-### -field <b>ProtocolStatistics</b>
+### -field ProtocolStatistics
 
 <dd>
 <p>A structure of type <a href="..\hbapiwmi\ns-hbapiwmi--ms-smhba-protocolstatistics.md">MS_SMHBA_PROTOCOLSTATISTICS</a> that is used to report protocol traffic statistics on a port.</p>

@@ -7,7 +7,7 @@ old-location: netvista\fwpsallocateclonenetbufferlist0.htm
 old-project: netvista
 ms.assetid: 72759748-fac6-45b9-9a81-ab71e6e7c3ef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsAllocateCloneNetBufferList0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NTSTATUS NTAPI FwpsAllocateCloneNetBufferList0(
 ## -parameters
 <dl>
 
-### -param <i>originalNetBufferList</i> [in, out]
+### -param originalNetBufferList [in, out]
 
 <dd>
 <p>A pointer to the original 
@@ -69,7 +69,7 @@ NTSTATUS NTAPI FwpsAllocateCloneNetBufferList0(
      cloned.</p>
 </dd>
 
-### -param <i>netBufferListPoolHandle</i> [in, optional]
+### -param netBufferListPoolHandle [in, optional]
 
 <dd>
 <p>A 
@@ -79,7 +79,7 @@ NTSTATUS NTAPI FwpsAllocateCloneNetBufferList0(
      NdisAllocateNetBufferListPool</a> function. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>netBufferPoolHandle</i> [in, optional]
+### -param netBufferPoolHandle [in, optional]
 
 <dd>
 <p>A 
@@ -88,14 +88,14 @@ NTSTATUS NTAPI FwpsAllocateCloneNetBufferList0(
      <a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">NdisAllocateNetBufferPool</a> function. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>allocateCloneFlags</i> [in]
+### -param allocateCloneFlags [in]
 
 <dd>
 <p>There are currently no flags defined for this function. Callout drivers should set this parameter
      to zero.</p>
 </dd>
 
-### -param <i>netBufferList</i> [out]
+### -param netBufferList [out]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to the clone 
@@ -124,7 +124,7 @@ NTSTATUS NTAPI FwpsAllocateCloneNetBufferList0(
 <p>This function is a wrapper around the 
     <a href="..\ndis\nf-ndis-ndisallocateclonenetbufferlist.md">
     NdisAllocateCloneNetBufferList</a> function, but it is specialized for use by WFP 
-    <a href="NULL">packet injection functions</a>.</p>
+    <a href="netvista.packet_injection_functions">packet injection functions</a>.</p>
 
 <p>If the clone NET_BUFFER_LIST structure should have attributes that are associated with a specific pool,
     the callout driver must specify the pool handle in the 
@@ -147,7 +147,7 @@ NTSTATUS NTAPI FwpsAllocateCloneNetBufferList0(
 
 <p>A callout driver can modify the clone NET_BUFFER_LIST structure and inject it into the network stack
     in place of the original NET_BUFFER_LIST structure by calling the 
-    <a href="NULL">packet injection functions</a>. After
+    <a href="netvista.packet_injection_functions">packet injection functions</a>. After
     the data described by the clone NET_BUFFER_LIST structure has been successfully injected into the network
     stack, the callout driver frees the clone NET_BUFFER_LIST structure by calling the 
     <a href="..\fwpsk\nf-fwpsk-fwpsfreeclonenetbufferlist0.md">FwpsFreeCloneNetBufferList0</a> function.</p>
@@ -244,9 +244,9 @@ NTSTATUS NTAPI FwpsAllocateCloneNetBufferList0(
 <a href="..\ndis\ns-ndis--net-buffer-list-context.md">NET_BUFFER_LIST_CONTEXT</a>
 </dt>
 <dt>
-<a href="NULL">Packet Injection Functions</a>
+<a href="netvista.packet_injection_functions">Packet Injection Functions</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAllocateCloneNetBufferList0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAllocateCloneNetBufferList0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

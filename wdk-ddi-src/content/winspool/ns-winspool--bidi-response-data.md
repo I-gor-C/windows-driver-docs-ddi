@@ -58,25 +58,25 @@ typedef struct _BIDI_RESPONSE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>dwResult</b>
+### -field dwResult
 
 <dd>
 <p>Specifies the last error of the response.</p>
 </dd>
 
-### -field <b>dwReqNumber</b>
+### -field dwReqNumber
 
 <dd>
 <p>Specifies a number used to match a response and a request in a multirequest operation.</p>
 </dd>
 
-### -field <b>pSchema</b>
+### -field pSchema
 
 <dd>
 <p>Pointer to a memory location containing the first byte of the schema string.</p>
 </dd>
 
-### -field <b>data</b>
+### -field data
 
 <dd>
 <p>Specifies a <a href="..\winspool\ns-winspool--bidi-data.md">BIDI_DATA</a> structure containing the data associated with the schema.</p>

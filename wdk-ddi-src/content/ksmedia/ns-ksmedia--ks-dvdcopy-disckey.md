@@ -54,7 +54,7 @@ typedef struct _KS_DVDCOPY_DISCKEY {
 ## -struct-fields
 <dl>
 
-### -field <b>DiscKey</b>
+### -field DiscKey
 
 <dd>
 <p>Specifies the DVD's disc key.</p>
@@ -64,7 +64,7 @@ typedef struct _KS_DVDCOPY_DISCKEY {
 ## -remarks
 <p>The KS_DVDCOPY_DISCKEY structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565144">KSPROPERTY_DVDCOPY_DISC_KEY</a> property.</p>
 
-<p>For more information, see <a href="NULL">DVD Copyright Protection</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/ff9cf8c8-7c8f-485c-b2ab-7567a5eeb87b">DVD Copyright Protection</a>.</p>
 
 ## -requirements
 <table>

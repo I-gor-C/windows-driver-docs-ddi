@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediaofferanswer_2.htm
 old-project: netvista
 ms.assetid: 1ba861f5-b790-4e5a-88fa-49e05239219c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLMEDIAOFFERANSWER,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef struct _RILCALLMEDIAOFFERANSWER {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>stID</b>
+### -field stID
 
 <dd></dd>
 
-### -field <b>fChange</b>
+### -field fChange
 
 <dd></dd>
 
-### -field <b>dwMediaAction</b>
+### -field dwMediaAction
 
 <dd></dd>
 
-### -field <b>stOldState</b>
+### -field stOldState
 
 <dd></dd>
 
-### -field <b>stNewState</b>
+### -field stNewState
 
 <dd></dd>
 </dl>

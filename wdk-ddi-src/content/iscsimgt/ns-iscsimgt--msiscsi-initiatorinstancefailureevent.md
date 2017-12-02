@@ -55,13 +55,13 @@ typedef struct _MSiSCSI_InitiatorInstanceFailureEvent {
 ## -struct-fields
 <dl>
 
-### -field <b>FailureType</b>
+### -field FailureType
 
 <dd>
 <p>A <a href="storage.iscsi_initiator_failure_type_qualifiers">ISCSI_INITIATOR_FAILURE_TYPE_QUALIFIERS</a> value that indicates why the initiator instance failed.</p>
 </dd>
 
-### -field <b>RemoteNodeName</b>
+### -field RemoteNodeName
 
 <dd>
 <p>The name of the target that is associated with the initiator instance that is reporting a failure.</p>

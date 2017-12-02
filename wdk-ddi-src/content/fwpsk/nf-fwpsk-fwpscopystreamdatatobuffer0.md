@@ -7,7 +7,7 @@ old-location: netvista\fwpscopystreamdatatobuffer0.htm
 old-project: netvista
 ms.assetid: 758733a4-9657-48a4-bbcc-f266c72c1d6a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsCopyStreamDataToBuffer0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ void NTAPI FwpsCopyStreamDataToBuffer0(
 ## -parameters
 <dl>
 
-### -param <i>calloutStreamData</i> [in]
+### -param calloutStreamData [in]
 
 <dd>
 <p>A pointer to a 
@@ -66,7 +66,7 @@ void NTAPI FwpsCopyStreamDataToBuffer0(
      the stream data to be copied.</p>
 </dd>
 
-### -param <i>buffer</i> [in, out]
+### -param buffer [in, out]
 
 <dd>
 <p>A pointer to a location in memory that will store the copy of the stream data pointed to by the 
@@ -74,13 +74,13 @@ void NTAPI FwpsCopyStreamDataToBuffer0(
      <i>bytesToCopy</i>.</p>
 </dd>
 
-### -param <i>bytesToCopy</i> [in]
+### -param bytesToCopy [in]
 
 <dd>
 <p>The amount of data, in bytes, to be copied into the receiving buffer.</p>
 </dd>
 
-### -param <i>bytesCopied</i> [out]
+### -param bytesCopied [out]
 
 <dd>
 <p>A pointer to a variable that receives the size, in bytes, of the stream data copied to the memory
@@ -155,4 +155,4 @@ void NTAPI FwpsCopyStreamDataToBuffer0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsCopyStreamDataToBuffer0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsCopyStreamDataToBuffer0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

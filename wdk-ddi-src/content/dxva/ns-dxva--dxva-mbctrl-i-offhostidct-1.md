@@ -58,13 +58,13 @@ typedef struct _DXVA_MBctrl_I_OffHostIDCT_1 {
 ## -struct-fields
 <dl>
 
-### -field <b>wMBaddress</b>
+### -field wMBaddress
 
 <dd>
 <p>Specifies the macroblock address of the current macroblock in raster scan order. For examples of macroblock addresses see <a href="https://msdn.microsoft.com/f04c5462-db7c-4917-b8ef-22a630c82994">macroblock addresses</a>.</p>
 </dd>
 
-### -field <b>wMBtype</b>
+### -field wMBtype
 
 <dd>
 <p>Specifies the type of macroblock being processed. The following bits define macroblock processing.</p>
@@ -192,26 +192,26 @@ typedef struct _DXVA_MBctrl_I_OffHostIDCT_1 {
 <p> </p>
 </dd>
 
-### -field <b>dwMB_SNL</b>
+### -field dwMB_SNL
 
 <dd>
 <p></p>
 <dl>
 
-### -field <a id="Specifies_the_number_of_skipped_macroblocks_to_be_generated_following_the_current_macroblock__and_indicates_the_location_of_the_residual_difference_data_for_the_blocks_of_the_current_macroblock._This_member_contains_two_variables__MBskipsFollowing_in_the_most_significant_8_bits__and_MBdataLocation_in_the_least_significant_24_bits._MBskipsFollowing_indicates_the_number_of_skipped_macroblocks_to_be_generated_following_the_current_macroblock._MBdataLocation_is_an_index_into_the_residual_difference_block_data_buffer._This_index_indicates_the_location_of_the_residual_difference_data_for_the_blocks_of_the_current_macroblock__expressed_as_a_multiple_of_32_bits."></a><a id="specifies_the_number_of_skipped_macroblocks_to_be_generated_following_the_current_macroblock__and_indicates_the_location_of_the_residual_difference_data_for_the_blocks_of_the_current_macroblock._this_member_contains_two_variables__mbskipsfollowing_in_the_most_significant_8_bits__and_mbdatalocation_in_the_least_significant_24_bits._mbskipsfollowing_indicates_the_number_of_skipped_macroblocks_to_be_generated_following_the_current_macroblock._mbdatalocation_is_an_index_into_the_residual_difference_block_data_buffer._this_index_indicates_the_location_of_the_residual_difference_data_for_the_blocks_of_the_current_macroblock__expressed_as_a_multiple_of_32_bits."></a><a id="SPECIFIES_THE_NUMBER_OF_SKIPPED_MACROBLOCKS_TO_BE_GENERATED_FOLLOWING_THE_CURRENT_MACROBLOCK__AND_INDICATES_THE_LOCATION_OF_THE_RESIDUAL_DIFFERENCE_DATA_FOR_THE_BLOCKS_OF_THE_CURRENT_MACROBLOCK._THIS_MEMBER_CONTAINS_TWO_VARIABLES__MBSKIPSFOLLOWING_IN_THE_MOST_SIGNIFICANT_8_BITS__AND_MBDATALOCATION_IN_THE_LEAST_SIGNIFICANT_24_BITS._MBSKIPSFOLLOWING_INDICATES_THE_NUMBER_OF_SKIPPED_MACROBLOCKS_TO_BE_GENERATED_FOLLOWING_THE_CURRENT_MACROBLOCK._MBDATALOCATION_IS_AN_INDEX_INTO_THE_RESIDUAL_DIFFERENCE_BLOCK_DATA_BUFFER._THIS_INDEX_INDICATES_THE_LOCATION_OF_THE_RESIDUAL_DIFFERENCE_DATA_FOR_THE_BLOCKS_OF_THE_CURRENT_MACROBLOCK__EXPRESSED_AS_A_MULTIPLE_OF_32_BITS."></a>Specifies the number of skipped macroblocks to be generated following the current macroblock, and indicates the location of the residual difference data for the blocks of the current macroblock. This member contains two variables: <i>MBskipsFollowing</i> in the most significant 8 bits, and <i>MBdataLocation</i> in the least significant 24 bits. <i>MBskipsFollowing</i> indicates the number of skipped macroblocks to be generated following the current macroblock. <i>MBdataLocation</i> is an index into the residual difference block data buffer. This index indicates the location of the residual difference data for the blocks of the current macroblock, expressed as a multiple of 32 bits.
+### -field Specifies the number of skipped macroblocks to be generated following the current macroblock, and indicates the location of the residual difference data for the blocks of the current macroblock. This member contains two variables: MBskipsFollowing in the most significant 8 bits, and MBdataLocation in the least significant 24 bits. MBskipsFollowing indicates the number of skipped macroblocks to be generated following the current macroblock. MBdataLocation is an index into the residual difference block data buffer. This index indicates the location of the residual difference data for the blocks of the current macroblock, expressed as a multiple of 32 bits.
 
 <dd></dd>
 </dl>
 </dd>
 
-### -field <b>wPatternCode</b>
+### -field wPatternCode
 
 <dd>
 <p>Indicates whether residual difference data is sent for each block in the macroblock. In an intra picture, residual difference data is sent for every block in the macroblock. The bits in <b>wPatternCode</b> that refer to all blocks of the current macroblock must be 1 in DXVA_MBctrl_I_OffHostIDCT_1.</p>
 <p>Bit (11-<i>i</i>) of <b>wPatternCode</b> (where bit 0 is the least significant bit) indicates whether residual difference data is sent for block <i>i</i>, where <i>i</i> is the index of the block within the macroblock as specified in MPEG-2 figures 6-10, 6-11, and 6-12 (raster scan order for Y, followed by 4:2:0 blocks of Cb in raster scan order, followed by 4:2:0 blocks of Cr, followed by 4:2:2 blocks of Cb, followed by 4:2:2 blocks of Cr, followed by 4:4:4 blocks of Cb, followed by 4:4:4 blocks of Cr). The data for the coded blocks (those blocks having bit (11-<i>i</i>) equal to 1) is found in the residual coding buffer in the same indexing order (increasing <i>i</i>). For 4:2:0 MPEG-2 data, the value of <b>wPatternCode</b> corresponds to shifting the decoded value of CBP (coded block pattern) to the left by six bit positions (those lower-bit positions being used for 4:2:2 and 4:4:4 chroma formats).</p>
 </dd>
 
-### -field <b>bNumCoef</b>
+### -field bNumCoef
 
 <dd>
 <p>Each value in the <b>bNumCoef</b> array indicates the number of coefficients in the residual difference data buffer for each block <i>i</i> of the macroblock. </p>

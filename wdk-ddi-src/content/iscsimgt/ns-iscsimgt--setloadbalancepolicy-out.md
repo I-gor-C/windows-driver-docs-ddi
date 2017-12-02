@@ -54,7 +54,7 @@ typedef struct _SetLoadBalancePolicy_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>A value that provides the status of the SetLoadBalancePolicy operation.</p>

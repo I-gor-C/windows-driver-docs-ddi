@@ -56,19 +56,19 @@ typedef struct _DXGK_VIDEO_OUTPUT_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>InterfaceTechnology</b>
+### -field InterfaceTechnology
 
 <dd>
 <p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-video-output-technology.md">D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY</a> enumerator that indicates the type of connector the video output uses to connect to an external display device.</p>
 </dd>
 
-### -field <b>MonitorOrientationAwareness</b>
+### -field MonitorOrientationAwareness
 
 <dd>
 <p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-orientation-awareness.md">D3DKMDT_MONITOR_ORIENTATION_AWARENESS</a> enumerator that describes the video output's ability to detect the rotation angle of an external display device.</p>
 </dd>
 
-### -field <b>SupportsSdtvModes</b>
+### -field SupportsSdtvModes
 
 <dd>
 <p>Indicates whether the video output supports standard definition TV (SDTV) modes.</p>

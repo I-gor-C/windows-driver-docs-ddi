@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>The <code>IPreFetchOffset</code> interface controls the prefetch offset, which is the number of bytes separating the play and write cursors in a DirectSound output stream. A WavePci miniport driver can use this interface to prevent the prefetch offset from growing too large when the driver allocates a large number of mappings. This interface is supported only in Windows XP and later. To determine whether the WavePci port driver supports the <code>IPreFetchOffset</code> interface, a miniport driver calls the port stream (<a href="..\portcls\nn-portcls-iportwavepcistream.md">IPortWavePciStream</a>) object's <b>QueryInterface</b> method with REFIID <b>IID_IPreFetchOffset</b>. </p>
-<p>For more information about the <code>IPreFetchOffset</code> interface, see <a href="NULL">Prefetch Offsets</a>.</p>
+<p>For more information about the <code>IPreFetchOffset</code> interface, see <a href="https://msdn.microsoft.com/92a0163f-29b1-4e15-88ab-67e1097d015e">Prefetch Offsets</a>.</p>
 
 
 ## -inheritance

@@ -56,13 +56,13 @@ typedef struct _USB_PIPE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>EndpointDescriptor</b>
+### -field EndpointDescriptor
 
 <dd>
 <p>Describes the endpoint descriptor. For more information about the endpoint descriptor, see <a href="..\usbspec\ns-usbspec--usb-endpoint-descriptor.md">USB_ENDPOINT_DESCRIPTOR</a>.</p>
 </dd>
 
-### -field <b>ScheduleOffset</b>
+### -field ScheduleOffset
 
 <dd>
 <p>Indicates the schedule offset assigned to the endpoint for this pipe. See the remarks section for a discussion of the range of values that this member can take. </p>

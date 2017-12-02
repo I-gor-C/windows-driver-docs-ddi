@@ -61,49 +61,49 @@ typedef enum _D3D12DDI_VIDEO_PROCESS_FILTER_0020 {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_VIDEO_PROCESS_FILTER_0020_BRIGHTNESS"></a><a id="d3d12ddi_video_process_filter_0020_brightness"></a><b>D3D12DDI_VIDEO_PROCESS_FILTER_0020_BRIGHTNESS</b>
+### -field D3D12DDI_VIDEO_PROCESS_FILTER_0020_BRIGHTNESS
 
 <dd>
 <p>The video processor can adjust the brightness level. </p>
 </dd>
 
-### -field <a id="D3D12DDI_VIDEO_PROCESS_FILTER_0020_CONTRAST"></a><a id="d3d12ddi_video_process_filter_0020_contrast"></a><b>D3D12DDI_VIDEO_PROCESS_FILTER_0020_CONTRAST</b>
+### -field D3D12DDI_VIDEO_PROCESS_FILTER_0020_CONTRAST
 
 <dd>
 <p>The video processor can adjust the contrast level. </p>
 </dd>
 
-### -field <a id="D3D12DDI_VIDEO_PROCESS_FILTER_0020_HUE"></a><a id="d3d12ddi_video_process_filter_0020_hue"></a><b>D3D12DDI_VIDEO_PROCESS_FILTER_0020_HUE</b>
+### -field D3D12DDI_VIDEO_PROCESS_FILTER_0020_HUE
 
 <dd>
 <p>The video processor can adjust hue. </p>
 </dd>
 
-### -field <a id="D3D12DDI_VIDEO_PROCESS_FILTER_0020_SATURATION"></a><a id="d3d12ddi_video_process_filter_0020_saturation"></a><b>D3D12DDI_VIDEO_PROCESS_FILTER_0020_SATURATION</b>
+### -field D3D12DDI_VIDEO_PROCESS_FILTER_0020_SATURATION
 
 <dd>
 <p>The video processor can adjust the saturation level.</p>
 </dd>
 
-### -field <a id="D3D12DDI_VIDEO_PROCESS_FILTER_0020_NOISE_REDUCTION"></a><a id="d3d12ddi_video_process_filter_0020_noise_reduction"></a><b>D3D12DDI_VIDEO_PROCESS_FILTER_0020_NOISE_REDUCTION</b>
+### -field D3D12DDI_VIDEO_PROCESS_FILTER_0020_NOISE_REDUCTION
 
 <dd>
 <p>The video processor can perform noise reduction. </p>
 </dd>
 
-### -field <a id="D3D12DDI_VIDEO_PROCESS_FILTER_0020_EDGE_ENHANCEMENT"></a><a id="d3d12ddi_video_process_filter_0020_edge_enhancement"></a><b>D3D12DDI_VIDEO_PROCESS_FILTER_0020_EDGE_ENHANCEMENT</b>
+### -field D3D12DDI_VIDEO_PROCESS_FILTER_0020_EDGE_ENHANCEMENT
 
 <dd>
 <p>The video processor can perform edge enhancement. </p>
 </dd>
 
-### -field <a id="D3D12DDI_VIDEO_PROCESS_FILTER_0020_ANAMORPHIC_SCALING"></a><a id="d3d12ddi_video_process_filter_0020_anamorphic_scaling"></a><b>D3D12DDI_VIDEO_PROCESS_FILTER_0020_ANAMORPHIC_SCALING</b>
+### -field D3D12DDI_VIDEO_PROCESS_FILTER_0020_ANAMORPHIC_SCALING
 
 <dd>
 <p>The video processor can perform anamorphic scaling. Anamorphic scaling can be used to stretch 4:3 content to a widescreen 16:9 aspect ratio. </p>
 </dd>
 
-### -field <a id="D3D12DDI_VIDEO_PROCESS_FILTER_0020_STEREO_ADJUSTMENT"></a><a id="d3d12ddi_video_process_filter_0020_stereo_adjustment"></a><b>D3D12DDI_VIDEO_PROCESS_FILTER_0020_STEREO_ADJUSTMENT</b>
+### -field D3D12DDI_VIDEO_PROCESS_FILTER_0020_STEREO_ADJUSTMENT
 
 <dd>
 <p>For stereo 3D video, the video processor can adjust the offset between the left and right views, allowing the user to reduce potential eye strain.</p>

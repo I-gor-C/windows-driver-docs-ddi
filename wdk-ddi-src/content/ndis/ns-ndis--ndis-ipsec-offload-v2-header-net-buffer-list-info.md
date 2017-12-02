@@ -7,7 +7,7 @@ old-location: netvista\ndis_ipsec_offload_v2_header_net_buffer_list_info.htm
 old-project: netvista
 ms.assetid: 657c7941-5475-4351-a429-94003a5c21d9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_IPSEC_OFFLOAD_V2_HEADER_NET_BUFFER_LIST_INFO, NDIS_IPSEC_OFFLOAD_V2_HEADER_NET_BUFFER_LIST_INFO, *PNDIS_IPSEC_OFFLOAD_V2_HEADER_NET_BUFFER_LIST_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,26 +69,26 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2_HEADER_NET_BUFFER_LIST_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Transmit</b>
+### -field Transmit
 
 <dd>
 <p>A structure that contains the following members:</p>
 <dl>
 
-### -field <b>NextHeader</b>
+### -field NextHeader
 
 <dd>
 <p>The next header value that is carried in the ESP trailer.</p>
 </dd>
 
-### -field <b>PadLength</b>
+### -field PadLength
 
 <dd>
 <p>The amount of padding, in bytes, that is added to the end of the payload for ESP only. 
        <b>PadLength</b> is specified for IPsec offload packets with and without large send offload (LSO).</p>
 </dd>
 
-### -field <b>AhHeaderOffset</b>
+### -field AhHeaderOffset
 
 <dd>
 <p>The offset count from the beginning of the IP header to the AH header. The 
@@ -97,7 +97,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2_HEADER_NET_BUFFER_LIST_INFO {
        boundaries.</p>
 </dd>
 
-### -field <b>EspHeaderOffset</b>
+### -field EspHeaderOffset
 
 <dd>
 <p>The offset count from the beginning of the IP header to the ESP header. The 
@@ -108,26 +108,26 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2_HEADER_NET_BUFFER_LIST_INFO {
 </dl>
 </dd>
 
-### -field <b>Receive</b>
+### -field Receive
 
 <dd>
 <p>A structure that contains the following members:</p>
 <dl>
 
-### -field <b>NextHeader</b>
+### -field NextHeader
 
 <dd>
 <p>The next header value that is carried in the ESP trailer.</p>
 </dd>
 
-### -field <b>PadLength</b>
+### -field PadLength
 
 <dd>
 <p>The amount of padding, in bytes, that is added to the end of the payload for ESP only. 
        <b>PadLength</b> is specified for IPsec offload packets with and without large send offload (LSO).</p>
 </dd>
 
-### -field <b>HeaderInfoSet</b>
+### -field HeaderInfoSet
 
 <dd>
 <p>A ULONG value that, when set, indicates the members of the 
@@ -183,4 +183,4 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2_HEADER_NET_BUFFER_LIST_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPSEC_OFFLOAD_V2_HEADER_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPSEC_OFFLOAD_V2_HEADER_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

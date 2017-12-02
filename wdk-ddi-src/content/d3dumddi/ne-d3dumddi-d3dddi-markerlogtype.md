@@ -56,19 +56,19 @@ typedef enum D3DDDI_MARKERLOGTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDIMLT_NONE"></a><a id="d3dddimlt_none"></a><b>D3DDDIMLT_NONE</b>
+### -field D3DDDIMLT_NONE
 
 <dd>
 <p>No marker type is supported. In this case, the marker type of submitted commands must be <a href="..\d3dumddi\ne-d3dumddi-d3dddi-markertype.md">D3DDDI_MARKERTYPE</a>.<b>D3DDDIMT_NONE</b>.</p>
 </dd>
 
-### -field <a id="D3DDDIMLT_PROFILE"></a><a id="d3dddimlt_profile"></a><b>D3DDDIMLT_PROFILE</b>
+### -field D3DDDIMLT_PROFILE
 
 <dd>
 <p>The context submits GPU work for single-threaded user-mode DDIs. In this case, each time stamp denotes the end of GPU work.</p>
 </dd>
 
-### -field <a id="D3DDDIMLT_FT_PROFILE"></a><a id="d3dddimlt_ft_profile"></a><b>D3DDDIMLT_FT_PROFILE</b>
+### -field D3DDDIMLT_FT_PROFILE
 
 <dd>
 <p>The context submits GPU work for free-threaded user-mode DDIs. In this case, the driver must have set the <b>Caps</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-threading-caps.md">D3D11DDI_THREADING_CAPS</a> structure to <b>D3D11DDICAPS_FREETHREADED</b>.</p>

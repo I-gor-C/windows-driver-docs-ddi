@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelrestorefrombuffer.htm
 old-project: netvista
 ms.assetid: 5A063585-AC45-44DF-BE21-FA1BB6283E6F
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbChannelRestoreFromBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,20 +59,20 @@ NTSTATUS VmbChannelRestoreFromBuffer(
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p> A handle for a channel.  </p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to a buffer that contains previously saved state.
 </p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>The size, in bytes, of the buffer.</p>

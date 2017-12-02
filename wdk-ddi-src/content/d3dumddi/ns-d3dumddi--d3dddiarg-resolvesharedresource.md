@@ -54,7 +54,7 @@ typedef struct _D3DDDIARG_RESOLVESHAREDRESOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A handle to the surface that the driver uses as a shared surface or in GDI interoperability. </p>

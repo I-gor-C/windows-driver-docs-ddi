@@ -60,19 +60,19 @@ NTSTATUS RegistryCallback(
 ## -parameters
 <dl>
 
-### -param <i>CallbackContext</i> [in]
+### -param CallbackContext [in]
 
 <dd>
 <p>The value that the driver passed as the <i>Context</i> parameter to <a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a> or <a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a> when it registered this <i>RegistryCallback</i> routine.</p>
 </dd>
 
-### -param <i>Argument1</i> [in, optional]
+### -param Argument1 [in, optional]
 
 <dd>
 <p>A <a href="kernel.reg_notify_class">REG_NOTIFY_CLASS</a>-typed value that identifies the type of registry operation that is being performed and whether the <i>RegistryCallback</i> routine is being called before or after the registry operation is performed.</p>
 </dd>
 
-### -param <i>Argument2</i> [in, optional]
+### -param Argument2 [in, optional]
 
 <dd>
 <p>A pointer to a structure that contains information that is specific to the type of registry operation. The structure type depends on the REG_NOTIFY_CLASS-typed value for <i>Argument1</i>, as shown in the following table. For information about which REG_NOTIFY_CLASS-typed values are available for which operating system versions, see <a href="kernel.reg_notify_class">REG_NOTIFY_CLASS</a>.</p>
@@ -502,7 +502,7 @@ NTSTATUS RegistryCallback(
 
 <p>A <i>RegistryCallback</i> executes at IRQL = PASSIVE_LEVEL and in the context of the thread that is performing the registry operation.</p>
 
-<p>To define a <i>RegistryCallback</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define a <i>RegistryCallback</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define a <i>RegistryCallback</i> callback routine that is named <code>MyRegistryCallback</code>, use the EX_CALLBACK_FUNCTION type as shown in this code example:</p>
 

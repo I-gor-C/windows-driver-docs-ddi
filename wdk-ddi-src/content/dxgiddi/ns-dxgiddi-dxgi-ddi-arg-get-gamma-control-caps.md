@@ -55,13 +55,13 @@ typedef struct DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the display device (graphics context) from which the driver retrieves gamma capabilities. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function to create the display device. </p>
 </dd>
 
-### -field <b>pGammaCapabilities</b>
+### -field pGammaCapabilities
 
 <dd>
 <p>[in/out] A pointer to a <a href="display.dxgi_gamma_control_capabiliites">DXGI_GAMMA_CONTROL_CAPABILIITES</a> structure that describes gamma capabilities. </p>

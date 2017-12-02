@@ -62,49 +62,49 @@ typedef struct _DEVOBJ {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes, of the DEVOBJ structure. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>pdevOEM</b>
+### -field pdevOEM
 
 <dd>
 <p>Pointer to the rendering plug-in's private PDEV structure, as returned by <a href="print.iprintoemuni_enablepdev">IPrintOemUni::EnablePDEV</a> or <a href="print.iprintoemps_enablepdev">IPrintOemPS::EnablePDEV</a>. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>hEngine</b>
+### -field hEngine
 
 <dd>
 <p>GDI handle to the physical device. This handle is received by the printer driver's <a href="display.drvcompletepdev">DrvCompletePDEV</a> function, as the function's <i>hdev</i> argument.</p>
 </dd>
 
-### -field <b>hPrinter</b>
+### -field hPrinter
 
 <dd>
 <p>Spooler's handle to the printer. This handle is received by the printer driver's <a href="display.drvenablepdev">DrvEnablePDEV</a> function, as the function's <i>hDriver</i> argument.</p>
 </dd>
 
-### -field <b>hOEM</b>
+### -field hOEM
 
 <dd>
 <p>Plug-in instance handle. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>pPublicDM</b>
+### -field pPublicDM
 
 <dd>
 <p>Pointer to the printer's <a href="display.devmodew">DEVMODEW</a> structure. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>pOEMDM</b>
+### -field pOEMDM
 
 <dd>
 <p>Pointer to the rendering plug-in's private DEVMODEW structure members. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>pDrvProcs</b>
+### -field pDrvProcs
 
 <dd>
 <p>

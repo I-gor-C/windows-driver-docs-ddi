@@ -60,37 +60,37 @@ typedef struct _D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>InputStream</b>
+### -field InputStream
 
 <dd>
 <p>The input stream of bytes.</p>
 </dd>
 
-### -field <b>Transform</b>
+### -field Transform
 
 <dd>
 <p>The video process transform.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The video process input stream flags.</p>
 </dd>
 
-### -field <b>RateInfo</b>
+### -field RateInfo
 
 <dd>
 <p>The rate of the video process input stream.</p>
 </dd>
 
-### -field <b>FilterLevels</b>
+### -field FilterLevels
 
 <dd>
 <p>The video process filter levels.</p>
 </dd>
 
-### -field <b>AlphaBlending</b>
+### -field AlphaBlending
 
 <dd>
 <p>The video process alpha blending.</p>

@@ -56,19 +56,19 @@ typedef struct _CDROM_SEEK_AUDIO_MSF {
 ## -struct-fields
 <dl>
 
-### -field <b>M</b>
+### -field M
 
 <dd>
 <p>Contains an integer between 0 and 74 that indicates the minute to seek to.</p>
 </dd>
 
-### -field <b>S</b>
+### -field S
 
 <dd>
 <p>Contains an integer between 0 and 59 that indicates the second to seek to.</p>
 </dd>
 
-### -field <b>F</b>
+### -field F
 
 <dd>
 <p>Contains an integer between 0 and 74 that indicates the frame to seek to.</p>

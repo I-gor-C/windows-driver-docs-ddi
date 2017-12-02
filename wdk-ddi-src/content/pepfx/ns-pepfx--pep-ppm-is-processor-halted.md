@@ -54,7 +54,7 @@ typedef struct _PEP_PPM_IS_PROCESSOR_HALTED {
 ## -struct-fields
 <dl>
 
-### -field <b>Halted</b>
+### -field Halted
 
 <dd>
 <p>[out] Whether the processor is halted. Set to <b>TRUE</b> if the processor is halted, or to <b>FALSE</b> if it is not halted.</p>

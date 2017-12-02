@@ -57,25 +57,25 @@ typedef struct _MSFC_FibrePortNPIVAttributes {
 ## -struct-fields
 <dl>
 
-### -field <b>WWPN</b>
+### -field WWPN
 
 <dd>
 <p>The world wide port name of the physical port.</p>
 </dd>
 
-### -field <b>WWNN</b>
+### -field WWNN
 
 <dd>
 <p>The world wide node name of the physical port.</p>
 </dd>
 
-### -field <b>NumberVirtualPorts</b>
+### -field NumberVirtualPorts
 
 <dd>
 <p>The number of virtual ports on the adapter.</p>
 </dd>
 
-### -field <b>VirtualPorts</b>
+### -field VirtualPorts
 
 <dd>
 <p>An array of virtual ports. The array length is specified in the <b>NumberVirtualPorts</b> member.</p>

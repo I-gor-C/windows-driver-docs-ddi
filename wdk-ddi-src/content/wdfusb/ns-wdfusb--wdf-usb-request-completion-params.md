@@ -7,7 +7,7 @@ old-location: wdf\wdf_usb_request_completion_params.htm
 old-project: wdf
 ms.assetid: cd29d27c-9da2-477f-898e-13ee480aac9e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_USB_REQUEST_COMPLETION_PARAMS, WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -86,47 +86,47 @@ typedef struct _WDF_USB_REQUEST_COMPLETION_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>UsbdStatus</b>
+### -field UsbdStatus
 
 <dd>
 <p>The <a href="buses.usbd_status">USBD_STATUS</a>-typed status value that the I/O target returned.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="..\wudfusb\ne-wudfusb--wdf-usb-request-type.md">WDF_USB_REQUEST_TYPE</a>-typed values that identifies the request type.</p>
 </dd>
 
-### -field <b>Parameters</b>
+### -field Parameters
 
 <dd>
 <dl>
 
-### -field <b>DeviceString</b>
+### -field DeviceString
 
 <dd>
 <dl>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>If the driver has called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforstring.md">WdfUsbTargetDeviceFormatRequestForString</a>, this member contains the driver-supplied handle to the memory object that receives the Unicode string.</p>
 </dd>
 
-### -field <b>LangID</b>
+### -field LangID
 
 <dd>
 <p>If the driver has called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforstring.md">WdfUsbTargetDeviceFormatRequestForString</a>, this member contains the driver-supplied language identifier.</p>
 </dd>
 
-### -field <b>StringIndex</b>
+### -field StringIndex
 
 <dd>
 <p>If the driver has called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforstring.md">WdfUsbTargetDeviceFormatRequestForString</a>, this member contains the driver-supplied string index.</p>
 </dd>
 
-### -field <b>RequiredSize</b>
+### -field RequiredSize
 
 <dd>
 <p>If the driver has called any method that <a href="wdf.working_with_usb_devices#obtaining_a_device_s_unicode_strings#obtaining_a_device_s_unicode_strings">obtains a device's Unicode strings</a> (except <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a>), this member contains the required size of the buffer that <b>Parameters.DeviceString.Buffer</b> specifies. </p>
@@ -135,24 +135,24 @@ typedef struct _WDF_USB_REQUEST_COMPLETION_PARAMS {
 </dl>
 </dd>
 
-### -field <b>DeviceControlTransfer</b>
+### -field DeviceControlTransfer
 
 <dd>
 <dl>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>If the driver has called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforcontroltransfer.md">WdfUsbTargetDeviceFormatRequestForControlTransfer</a>, this member contains the driver-supplied handle to the memory object that receives input or output data.</p>
 </dd>
 
-### -field <b>SetupPacket</b>
+### -field SetupPacket
 
 <dd>
 <p>If the driver has called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforcontroltransfer.md">WdfUsbTargetDeviceFormatRequestForControlTransfer</a>, this member contains the address of the <a href="..\wdfusb\ns-wdfusb--wdf-usb-control-setup-packet.md">WDF_USB_CONTROL_SETUP_PACKET</a> structure that the driver supplied.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>If the driver has called any method that <a href="wdf.working_with_usb_devices#sending_a_control_transfer#sending_a_control_transfer">sends a control transfer</a> (except <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a>), this member contains the number of bytes that were sent or received. </p>
@@ -161,12 +161,12 @@ typedef struct _WDF_USB_REQUEST_COMPLETION_PARAMS {
 </dl>
 </dd>
 
-### -field <b>DeviceUrb</b>
+### -field DeviceUrb
 
 <dd>
 <dl>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>If the driver has called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a>, this member contains the driver-supplied handle to the memory object that contains a <a href="..\usb\ns-usb--urb.md">URB</a> structure.</p>
@@ -174,25 +174,25 @@ typedef struct _WDF_USB_REQUEST_COMPLETION_PARAMS {
 </dl>
 </dd>
 
-### -field <b>PipeWrite</b>
+### -field PipeWrite
 
 <dd>
 <dl>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>If the driver has called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeformatrequestforwrite.md">WdfUsbTargetPipeFormatRequestForWrite</a>, this member contains the driver-supplied handle to the memory object that was written to the pipe.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>If the driver has called any method <a href="wdf.working_with_usb_pipes#writing_to_a_pipe#writing_to_a_pipe">that writes to a pipe</a> (except <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a>), this member contains the number of bytes that were sent. </p>
 <p>If the driver called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a>, it can obtain the length value from the URB whose handle is in <b>Parameters.PipeUrb.Buffer</b>.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>If the driver has called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeformatrequestforwrite.md">WdfUsbTargetPipeFormatRequestForWrite</a>, this member contains the driver-supplied buffer offset. </p>
@@ -200,25 +200,25 @@ typedef struct _WDF_USB_REQUEST_COMPLETION_PARAMS {
 </dl>
 </dd>
 
-### -field <b>PipeRead</b>
+### -field PipeRead
 
 <dd>
 <dl>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>If the driver has called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeformatrequestforread.md">WdfUsbTargetPipeFormatRequestForRead</a>, this member contains the driver-supplied handle to the memory object that contains data that was read from the pipe.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>If the driver has called any method that <a href="wdf.working_with_usb_pipes#reading_from_a_pipe#reading_from_a_pipe">reads from a pipe</a> sends a control transfer (except <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a>), this member contains the number of bytes that were received. </p>
 <p>If the driver called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a>, it can obtain the length value from the URB whose handle is in <b>Parameters.PipeUrb.Buffer</b>.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>If the driver has called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeformatrequestforread.md">WdfUsbTargetPipeFormatRequestForRead</a>, this member contains the driver-supplied buffer offset. </p>
@@ -226,12 +226,12 @@ typedef struct _WDF_USB_REQUEST_COMPLETION_PARAMS {
 </dl>
 </dd>
 
-### -field <b>PipeUrb</b>
+### -field PipeUrb
 
 <dd>
 <dl>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>If the driver has called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeformatrequestforurb.md">WdfUsbTargetPipeFormatRequestForUrb</a>, this member contains the driver-supplied handle to the memory object that contains a <a href="..\usb\ns-usb--urb.md">URB</a> structure.</p>
@@ -289,4 +289,4 @@ typedef struct _WDF_USB_REQUEST_COMPLETION_PARAMS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_REQUEST_COMPLETION_PARAMS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_REQUEST_COMPLETION_PARAMS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

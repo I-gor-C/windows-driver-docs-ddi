@@ -60,13 +60,13 @@ ULONG VideoPortSetBusData(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>BusDataType</i> 
+### -param BusDataType 
 
 <dd>
 <p>Specifies the type of bus data to be set. Currently, its value can be one of <b>Cmos</b>, <b>EisaConfiguration</b>, or <b>PCIConfiguration</b>. However, additional types of standardized, dynamically configurable buses might be supported in the future. The upper bound on the bus types supported is always <b>MaximumBusDataType</b>.
@@ -74,26 +74,26 @@ ULONG VideoPortSetBusData(
      </p>
 </dd>
 
-### -param <i>SlotNumber</i> 
+### -param SlotNumber 
 
 <dd>
 <p>For a <i>BusDataType</i> value of <b>Cmos</b>, specifies the location of the device on the bus. This parameter should be zero for all other bus types.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to a caller-supplied storage area with configuration information specific to <i>BusDataType</i>.</p>
 <p>When <b>PCIConfiguration</b> is specified, the buffer contains some or all of the <a href="..\wdm\ns-wdm--pci-common-config.md">PCI_COMMON_CONFIG</a> information for the given <i>SlotNumber</i>. The specified <i>Offset</i> and <i>Length</i> determine how much information is supplied.</p>
 </dd>
 
-### -param <i>Offset</i> 
+### -param Offset 
 
 <dd>
 <p>Specifies the byte offset within the PCI_COMMON_CONFIG structure at which the caller-supplied configuration values begin. A miniport driver can use PCI_COMMON_HDR_LENGTH to specify the offset of the device-specific area in PCI_COMMON_CONFIG.</p>
 </dd>
 
-### -param <i>Length</i> 
+### -param Length 
 
 <dd>
 <p>Specifies the number of bytes in <i>Buffer</i>.</p>

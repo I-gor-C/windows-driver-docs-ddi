@@ -62,25 +62,25 @@ typedef struct _ROOTHUB_30PORT_INFO_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>Info</b>
+### -field Info
 
 <dd>
-<p>A <a href="buses._roothub_30port_info">ROOTHUB_30PORT_INFO</a> structure.</p>
+<p>A <a href="..\ucxroothub\ns-ucxroothub--roothub-30port-info.md">ROOTHUB_30PORT_INFO</a> structure.</p>
 </dd>
 
-### -field <b>MaxSpeedsCount</b>
+### -field MaxSpeedsCount
 
 <dd>
 <p>Maximum number of speeds.</p>
 </dd>
 
-### -field <b>SpeedsCount</b>
+### -field SpeedsCount
 
 <dd>
 <p>The count of bus speeds supported.</p>
 </dd>
 
-### -field <b>Speeds</b>
+### -field Speeds
 
 <dd>
 <p>A pointer to a <b>USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED</b> structure that describes the USB 3.1capability's sublink speed attributes. For structure declaration, see Usbspec.h</p>

@@ -54,7 +54,7 @@ HRESULT KsSetPin(
 ## -parameters
 <dl>
 
-### -param <i>KsPin</i> [in]
+### -param KsPin [in]
 
 <dd>
 <p>Pointer to the <a href="..\ksproxy\nn-ksproxy-ikspin~r1.md">IKsPin</a> interface for the pin to which this streaming interface handler is to be attached. This pin must support the <a href="..\ksproxy\nn-ksproxy-iksobject.md">IKsObject</a> interface from which the underlying kernel handle can be obtained.</p>

@@ -7,7 +7,7 @@ old-location: netvista\wwan_pin_action.htm
 old-project: netvista
 ms.assetid: 4edd0bc1-cd50-460b-92e1-7b2440ae3861
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_PIN_ACTION, WWAN_PIN_ACTION, *PWWAN_PIN_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ typedef struct _WWAN_PIN_ACTION {
 ## -struct-fields
 <dl>
 
-### -field <b>PinType</b>
+### -field PinType
 
 <dd>
 <p>The type of the PIN on which to perform the action.</p>
 </dd>
 
-### -field <b>PinOperation</b>
+### -field PinOperation
 
 <dd>
 <p>The action to perform with the PIN.</p>
 </dd>
 
-### -field <b>Pin</b>
+### -field Pin
 
 <dd>
 <p>A NULL-terminated string that represents the PIN value to perform the action with, or the PIN
@@ -79,7 +79,7 @@ typedef struct _WWAN_PIN_ACTION {
      <b>PinOperation</b> .</p>
 </dd>
 
-### -field <b>NewPin</b>
+### -field NewPin
 
 <dd>
 <p>A NULL-terminated string that represents the new PIN value to set when 
@@ -140,4 +140,4 @@ typedef struct _WWAN_PIN_ACTION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_ACTION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_ACTION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

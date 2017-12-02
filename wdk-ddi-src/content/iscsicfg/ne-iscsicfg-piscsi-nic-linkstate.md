@@ -55,13 +55,13 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="ISCSI_NIC_LINKSTATE_DISCONNECTED"></a><a id="iscsi_nic_linkstate_disconnected"></a><b>ISCSI_NIC_LINKSTATE_DISCONNECTED</b>
+### -field ISCSI_NIC_LINKSTATE_DISCONNECTED
 
 <dd>
 <p>A network port is disconnected from the network. </p>
 </dd>
 
-### -field <a id="ISCSI_NIC_LINKSTATE_CONNECTED"></a><a id="iscsi_nic_linkstate_connected"></a><b>ISCSI_NIC_LINKSTATE_CONNECTED</b>
+### -field ISCSI_NIC_LINKSTATE_CONNECTED
 
 <dd>
 <p>A network port is connected to the network. </p>

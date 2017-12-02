@@ -58,7 +58,7 @@ NTSTATUS CmSetCallbackObjectContext(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in, out]
+### -param Object [in, out]
 
 <dd>
 <p>A pointer to the registry key object that the driver is providing context information for. The driver obtains this pointer from the <b>ResultObject</b> member of one of the following structures:</p>
@@ -78,19 +78,19 @@ NTSTATUS CmSetCallbackObjectContext(
 </dl>
 </dd>
 
-### -param <i>Cookie</i> [in]
+### -param Cookie [in]
 
 <dd>
 <p>A pointer to a LARGE_INTEGER value that identifies the callback routine to associate the context with. The <a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a> routine provided this value when you registered the callback routine.</p>
 </dd>
 
-### -param <i>NewContext</i> [in]
+### -param NewContext [in]
 
 <dd>
 <p>A pointer to driver-defined context information.</p>
 </dd>
 
-### -param <i>OldContext</i> [out, optional]
+### -param OldContext [out, optional]
 
 <dd>
 <p>A pointer to a location that receives a pointer to context information that the driver previously associated with the specified object and cookie. This parameter is optional and can be <b>NULL</b>.</p>

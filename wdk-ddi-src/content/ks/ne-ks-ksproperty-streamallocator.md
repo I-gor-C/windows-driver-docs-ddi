@@ -55,13 +55,13 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE"></a><a id="ksproperty_streamallocator_functiontable"></a><b>KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE</b>
+### -field KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE
 
 <dd>
 <p>Specify to retrieve the function table of the allocator.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_STREAMALLOCATOR_STATUS"></a><a id="ksproperty_streamallocator_status"></a><b>KSPROPERTY_STREAMALLOCATOR_STATUS</b>
+### -field KSPROPERTY_STREAMALLOCATOR_STATUS
 
 <dd>
 <p>Specify to retrieve the current status of the specified allocator.</p>

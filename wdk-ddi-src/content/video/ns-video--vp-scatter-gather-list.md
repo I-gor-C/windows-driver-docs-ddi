@@ -57,19 +57,19 @@ typedef struct _VP_SCATTER_GATHER_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfElements</b>
+### -field NumberOfElements
 
 <dd>
 <p>Specifies the number of scatter/gather elements in the <b>Elements</b> array member.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Elements</b>
+### -field Elements
 
 <dd>
 <p>Specifies the number of scatter/gather elements in the <b>Elements</b> array member.</p>

@@ -56,19 +56,19 @@ NTSTATUS PcRegisterSubdevice(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the adapter driver's device object. This is a system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
 </dd>
 
-### -param <i>Name</i> [in]
+### -param Name [in]
 
 <dd>
 <p>Pointer to a null-terminated Unicode string that specifies the name of the subdevice. The string buffer that the <i>Name</i> parameter points to must remain valid for the lifetime of the device object. The string contains a short name that distinguishes the subdevice from any other subdevices registered on the same device. Each of the device's subdevices must have a unique name.</p>
 </dd>
 
-### -param <i>Unknown</i> [in]
+### -param Unknown [in]
 
 <dd>
 <p>Pointer to the <a href="..\portcls\nn-portcls-iport.md">IPort</a> interface of the port driver object that is bound to the subdevice.</p>
@@ -81,9 +81,9 @@ NTSTATUS PcRegisterSubdevice(
 ## -remarks
 <p>The function registers the device interface instance for a filter object that represents a subdevice on an audio adapter. The I/O manager appends the string specified by the <i>Name</i> parameter to the reference string that it uses to identify the instance. The modified reference string is useful for distinguishing among the subdevices in the audio adapter. For more information about reference strings, see <a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>.</p>
 
-<p>For more information about the role of the <b>PcRegisterSubdevice</b> function in registering a subdevice, see <a href="NULL">Subdevice Creation</a>.</p>
+<p>For more information about the role of the <b>PcRegisterSubdevice</b> function in registering a subdevice, see <a href="https://msdn.microsoft.com/e4ba1209-adc6-48c3-9633-247e9e3849bc">Subdevice Creation</a>.</p>
 
-<p>An adapter driver can call the <a href="audio.iunregistersubdevice_unregistersubdevice">IUnregisterSubdevice::UnregisterSubdevice</a> method to delete the registration of a physical connection that was registered by a previous call to <b>PcRegisterSubdevice</b>. For more information, see <a href="NULL">Dynamic Audio Subdevices</a>. </p>
+<p>An adapter driver can call the <a href="audio.iunregistersubdevice_unregistersubdevice">IUnregisterSubdevice::UnregisterSubdevice</a> method to delete the registration of a physical connection that was registered by a previous call to <b>PcRegisterSubdevice</b>. For more information, see <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890-aae1-5ecf58f2e22a">Dynamic Audio Subdevices</a>. </p>
 
 ## -requirements
 <table>

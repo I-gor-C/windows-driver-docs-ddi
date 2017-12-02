@@ -7,7 +7,7 @@ old-location: netvista\rilhideconnectedidsettingsparammask.htm
 old-project: netvista
 ms.assetid: 24d14690-4c74-46d2-ad57-3e21edb00509
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILHIDECONNECTEDIDSETTINGSPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_HCIDS_STATUS"></a><a id="ril_param_hcids_status"></a><b>RIL_PARAM_HCIDS_STATUS</b>
+### -field RIL_PARAM_HCIDS_STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_HCIDS_PROVISIONING"></a><a id="ril_param_hcids_provisioning"></a><b>RIL_PARAM_HCIDS_PROVISIONING</b>
+### -field RIL_PARAM_HCIDS_PROVISIONING
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_HCIDS_ALL"></a><a id="ril_param_hcids_all"></a><b>RIL_PARAM_HCIDS_ALL</b>
+### -field RIL_PARAM_HCIDS_ALL
 
 <dd></dd>
 </dl>

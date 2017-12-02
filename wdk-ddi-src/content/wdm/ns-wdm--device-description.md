@@ -74,34 +74,34 @@ typedef struct _DEVICE_DESCRIPTION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
-<p>The version of this structure. The <b>Version</b> member of the <b>DEVICE_DESCRIPTION</b> structure that is passed to the <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> routine determines which version of the <a href="..\ntddk\ns-ntddk--dma-adapter.md">DMA_ADAPTER</a> structure is returned by this routine. The following is a list of the possible values of the <b>Version</b> member and the corresponding <b>DMA_ADAPTER</b> versions:</p>
+<p>The version of this structure. The <b>Version</b> member of the <b>DEVICE_DESCRIPTION</b> structure that is passed to the <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> routine determines which version of the <a href="..\wdm\ns-wdm--dma-adapter.md">DMA_ADAPTER</a> structure is returned by this routine. The following is a list of the possible values of the <b>Version</b> member and the corresponding <b>DMA_ADAPTER</b> versions:</p>
 <dl class="indent">
 
-### -field <a id="DEVICE_DESCRIPTION_VERSION"></a><a id="device_description_version"></a><p><a id="DEVICE_DESCRIPTION_VERSION"></a><a id="device_description_version"></a><b>DEVICE_DESCRIPTION_VERSION</b></p>
+### -field DEVICE_DESCRIPTION_VERSION
 
 
 <dd>
 <p>If <b>Version</b> = <b>DEVICE_DESCRIPTION_VERSION</b>, <b>IoGetDmaAdapter</b> ignores the <b>IgnoreCount</b> member, and returns version 1 of the <b>DMA_ADAPTER</b> structure.</p>
 </dd>
 
-### -field <a id="DEVICE_DESCRIPTION_VERSION1"></a><a id="device_description_version1"></a><p><a id="DEVICE_DESCRIPTION_VERSION1"></a><a id="device_description_version1"></a><b>DEVICE_DESCRIPTION_VERSION1</b></p>
+### -field DEVICE_DESCRIPTION_VERSION1
 
 
 <dd>
 <p>If <b>Version</b> = <b>DEVICE_DESCRIPTION_VERSION1</b>, <b>IoGetDmaAdapter</b> uses the <b>IgnoreCount</b> member, and returns version 1 of the <b>DMA_ADAPTER</b> structure.</p>
 </dd>
 
-### -field <a id="DEVICE_DESCRIPTION_VERSION2"></a><a id="device_description_version2"></a><p><a id="DEVICE_DESCRIPTION_VERSION2"></a><a id="device_description_version2"></a><b>DEVICE_DESCRIPTION_VERSION2</b></p>
+### -field DEVICE_DESCRIPTION_VERSION2
 
 
 <dd>
 <p>If <b>Version</b> = <b>DEVICE_DESCRIPTION_VERSION2</b>, <b>IoGetDmaAdapter</b> uses the <b>IgnoreCount</b> member, and returns version 2 of the <b>DMA_ADAPTER</b> structure. Version 2 is available starting with  Windows XP.</p>
 </dd>
 
-### -field <a id="DEVICE_DESCRIPTION_VERSION3"></a><a id="device_description_version3"></a><p><a id="DEVICE_DESCRIPTION_VERSION3"></a><a id="device_description_version3"></a><b>DEVICE_DESCRIPTION_VERSION3</b></p>
+### -field DEVICE_DESCRIPTION_VERSION3
 
 
 <dd>
@@ -110,20 +110,20 @@ typedef struct _DEVICE_DESCRIPTION {
 </dl>
 </dd>
 
-### -field <b>Master</b>
+### -field Master
 
 <dd>
 <p>Whether the device is a bus-master DMA device. Set to <b>TRUE</b> if the device is a bus-master DMA device. Set to <b>FALSE</b> if it is a subordinate DMA device.</p>
 </dd>
 
-### -field <b>ScatterGather</b>
+### -field ScatterGather
 
 <dd>
 <p>For a bus-master DMA device, this member indicates whether the device supports scatter/gather DMA. Set to <b>TRUE</b> if the device can do scatter/gather DMA. Otherwise, set this member to <b>FALSE</b>.</p>
 <p>For a subordinate DMA device, the <b>ScatterGather</b> value is not used. Instead, <b>IoGetDmaAdapter</b> assumes that the scatter/gather capability of a subordinate DMA device is the same as that of the  underlying system DMA controller to which the device is connected.</p>
 </dd>
 
-### -field <b>DemandMode</b>
+### -field DemandMode
 
 <dd>
 <p>This member is used only if <b>Version</b> is DEVICE_DESCRIPTION_VERSION2.</p>
@@ -132,14 +132,14 @@ typedef struct _DEVICE_DESCRIPTION {
 <p>If <b>Version</b> is DEVICE_DESCRIPTION_VERSION, DEVICE_DESCRIPTION_VERSION1, or DEVICE_DESCRIPTION_VERSION3, the <b>DemandMode</b> value is not used.</p>
 </dd>
 
-### -field <b>AutoInitialize</b>
+### -field AutoInitialize
 
 <dd>
 <p>For a subordinate DMA device, this member indicates whether to use the system DMA controller's autoinitialize mode. Set to <b>TRUE</b> to use autoinitialize mode. Otherwise, set this member to <b>FALSE</b>.</p>
 <p>For a bus-master DMA device, the <b>AutoInitialize</b> value is not used.</p>
 </dd>
 
-### -field <b>Dma32BitAddresses</b>
+### -field Dma32BitAddresses
 
 <dd>
 <p>This member is used only if <b>Version</b> is DEVICE_DESCRIPTION_VERSION, DEVICE_DESCRIPTION_VERSION1, or DEVICE_DESCRIPTION_VERSION2.</p>
@@ -147,7 +147,7 @@ typedef struct _DEVICE_DESCRIPTION {
 <p>If <b>Version</b> = DEVICE_DESCRIPTION_VERSION3, the <b>Dma32BitAddresses</b> value is not used.</p>
 </dd>
 
-### -field <b>IgnoreCount</b>
+### -field IgnoreCount
 
 <dd>
 <p>Whether to ignore the DMA controller's transfer counter. Set to <b>TRUE</b> if the DMA controller in this platform does not maintain an accurate transfer counter, and therefore requires a workaround. Otherwise, set this member to <b>FALSE</b>.</p>
@@ -155,13 +155,13 @@ typedef struct _DEVICE_DESCRIPTION {
 <p>For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for system use. Must be <b>FALSE</b>.</p>
 </dd>
 
-### -field <b>Dma64BitAddresses</b>
+### -field Dma64BitAddresses
 
 <dd>
 <p>This member is used only if <b>Version</b> is DEVICE_DESCRIPTION_VERSION, DEVICE_DESCRIPTION_VERSION1, or DEVICE_DESCRIPTION_VERSION2.</p>
@@ -169,32 +169,32 @@ typedef struct _DEVICE_DESCRIPTION {
 <p>If <b>Version</b> = DEVICE_DESCRIPTION_VERSION3, the <b>Dma64BitAddresses</b> value is not used.</p>
 </dd>
 
-### -field <b>BusNumber</b>
+### -field BusNumber
 
 <dd>
 <p>The system-assigned bus number for the I/O bus. This member is not used by WDM drivers.</p>
 </dd>
 
-### -field <b>DmaChannel</b>
+### -field DmaChannel
 
 <dd>
 <p>The number of the DMA channel to which a subordinate device is assigned. The device driver obtains this channel number from the resource list that it receives in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> request that starts the device. For more information about this number, see the description of the <b>Dma.Channel</b> member in <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>.</p>
 </dd>
 
-### -field <b>InterfaceType</b>
+### -field InterfaceType
 
 <dd>
 <p>The interface type of the I/O bus to use for DMA. Set this member to the <a href="..\wdm\ne-wdm--interface-type.md">INTERFACE_TYPE</a> enumeration value that indicates the interface type. For more information, see the Remarks section.</p>
 </dd>
 
-### -field <b>DmaWidth</b>
+### -field DmaWidth
 
 <dd>
 <p>For a subordinate DMA device, this member specifies the DMA data width for transfers by the system DMA controller. Possible values are <b>Width8Bits</b>, <b>Width16Bits</b>, <b>Width32Bits</b>, and <b>Width64Bits</b>.</p>
 <p>For a bus-master DMA device, the <b>DmaWidth</b> value is not used.</p>
 </dd>
 
-### -field <b>DmaSpeed</b>
+### -field DmaSpeed
 
 <dd>
 <p>This member is used only if <b>Version</b> is DEVICE_DESCRIPTION_VERSION, DEVICE_DESCRIPTION_VERSION1, or DEVICE_DESCRIPTION_VERSION2.</p>
@@ -203,19 +203,19 @@ typedef struct _DEVICE_DESCRIPTION {
 <p>If <b>Version</b> = DEVICE_DESCRIPTION_VERSION3, the <b>DmaSpeed</b> value is not used.</p>
 </dd>
 
-### -field <b>MaximumLength</b>
+### -field MaximumLength
 
 <dd>
 <p>The maximum number of bytes the device can transfer in a DMA operation that uses the allocated adapter object.</p>
 </dd>
 
-### -field <b>DmaPort</b>
+### -field DmaPort
 
 <dd>
 <p>The Microchannel-type bus port number. This parameter is obsolete, but is retained in the structure for compatibility with legacy drivers.</p>
 </dd>
 
-### -field <b>DmaAddressWidth</b>
+### -field DmaAddressWidth
 
 <dd>
 <p>This member is used only if <b>Version</b> = DEVICE_DESCRIPTION_VERSION3.</p>
@@ -223,13 +223,13 @@ typedef struct _DEVICE_DESCRIPTION {
 <p>For a subordinate DMA device, the <b>DmaAddressWidth</b> value is not used. Instead, <b>IoGetDmaAdapter</b> assumes that the address width of a subordinate DMA device is the same as that of the underlying system DMA controller to which the device is connected.</p>
 </dd>
 
-### -field <b>DmaControllerInstance</b>
+### -field DmaControllerInstance
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>DmaRequestLine</b>
+### -field DmaRequestLine
 
 <dd>
 <p>This member is used only if <b>Version</b> = DEVICE_DESCRIPTION_VERSION3.</p>
@@ -237,7 +237,7 @@ typedef struct _DEVICE_DESCRIPTION {
 <p>For a bus-master DMA device, the <b>DmaRequestLine</b> value is not used.</p>
 </dd>
 
-### -field <b>DeviceAddress</b>
+### -field DeviceAddress
 
 <dd>
 <p>This member is used only if <b>Version</b> = DEVICE_DESCRIPTION_VERSION3.</p>
@@ -294,7 +294,7 @@ typedef struct _DEVICE_DESCRIPTION {
 <a href="..\wdm\ns-wdm--cm-resource-list.md">CM_RESOURCE_LIST</a>
 </dt>
 <dt>
-<a href="..\ntddk\ns-ntddk--dma-adapter.md">DMA_ADAPTER</a>
+<a href="..\wdm\ns-wdm--dma-adapter.md">DMA_ADAPTER</a>
 </dt>
 <dt>
 <a href="..\wdm\ne-wdm--interface-type.md">INTERFACE_TYPE</a>

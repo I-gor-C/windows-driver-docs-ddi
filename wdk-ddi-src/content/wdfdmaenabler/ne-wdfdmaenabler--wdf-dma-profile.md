@@ -7,7 +7,7 @@ old-location: wdf\wdf_dma_profile.htm
 old-project: wdf
 ms.assetid: a2672bca-5c2e-423d-9ba0-fad610170e88
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_REMOVE_LOCK_OPTIONS, WDF_REMOVE_LOCK_OPTIONS, *PWDF_REMOVE_LOCK_OPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,55 +64,55 @@ typedef enum _WDF_DMA_PROFILE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfDmaProfileInvalid"></a><a id="wdfdmaprofileinvalid"></a><a id="WDFDMAPROFILEINVALID"></a><b>WdfDmaProfileInvalid</b>
+### -field WdfDmaProfileInvalid
 
 <dd>
 <p>For internal use only.</p>
 </dd>
 
-### -field <a id="WdfDmaProfilePacket"></a><a id="wdfdmaprofilepacket"></a><a id="WDFDMAPROFILEPACKET"></a><b>WdfDmaProfilePacket</b>
+### -field WdfDmaProfilePacket
 
 <dd>
 <p>The device supports single-packet DMA operations, using 32-bit addressing.</p>
 </dd>
 
-### -field <a id="WdfDmaProfileScatterGather"></a><a id="wdfdmaprofilescattergather"></a><a id="WDFDMAPROFILESCATTERGATHER"></a><b>WdfDmaProfileScatterGather</b>
+### -field WdfDmaProfileScatterGather
 
 <dd>
 <p>The device supports packet-based, scatter/gather DMA operations, using 32-bit addressing.</p>
 </dd>
 
-### -field <a id="WdfDmaProfilePacket64"></a><a id="wdfdmaprofilepacket64"></a><a id="WDFDMAPROFILEPACKET64"></a><b>WdfDmaProfilePacket64</b>
+### -field WdfDmaProfilePacket64
 
 <dd>
 <p>The device supports single-packet DMA operations, using 64-bit addressing.</p>
 </dd>
 
-### -field <a id="WdfDmaProfileScatterGather64"></a><a id="wdfdmaprofilescattergather64"></a><a id="WDFDMAPROFILESCATTERGATHER64"></a><b>WdfDmaProfileScatterGather64</b>
+### -field WdfDmaProfileScatterGather64
 
 <dd>
 <p>The device supports packet-based, scatter/gather DMA operations, using 64-bit addressing.</p>
 </dd>
 
-### -field <a id="WdfDmaProfileScatterGatherDuplex"></a><a id="wdfdmaprofilescattergatherduplex"></a><a id="WDFDMAPROFILESCATTERGATHERDUPLEX"></a><b>WdfDmaProfileScatterGatherDuplex</b>
+### -field WdfDmaProfileScatterGatherDuplex
 
 <dd>
 <p>The device supports packet-based, scatter/gather DMA operations, using 32-bit addressing. The device also supports duplex operation.</p>
 </dd>
 
-### -field <a id="WdfDmaProfileScatterGather64Duplex"></a><a id="wdfdmaprofilescattergather64duplex"></a><a id="WDFDMAPROFILESCATTERGATHER64DUPLEX"></a><b>WdfDmaProfileScatterGather64Duplex</b>
+### -field WdfDmaProfileScatterGather64Duplex
 
 <dd>
 <p>The device supports packet-based, scatter/gather DMA operations, using 64-bit addressing. The device also supports duplex operation.</p>
 </dd>
 
-### -field <a id="WdfDmaProfileSystem"></a><a id="wdfdmaprofilesystem"></a><a id="WDFDMAPROFILESYSTEM"></a><b>WdfDmaProfileSystem</b>
+### -field WdfDmaProfileSystem
 
 <dd>
 <p>The device supports system-mode DMA operations. This value is available in version 1.11 and later versions of KMDF running on Windows 8 or later versions of Windows.</p>
 </dd>
 
-### -field <a id="WdfDmaProfileSystemDuplex"></a><a id="wdfdmaprofilesystemduplex"></a><a id="WDFDMAPROFILESYSTEMDUPLEX"></a><b>WdfDmaProfileSystemDuplex</b>
+### -field WdfDmaProfileSystemDuplex
 
 <dd>
 <p>The device supports system-mode DMA operations. The device also supports duplex operation. This value is available in version 1.11 and later versions of KMDF running on Windows 8 or later versions of Windows.</p>
@@ -156,4 +156,4 @@ typedef enum _WDF_DMA_PROFILE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DMA_PROFILE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DMA_PROFILE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

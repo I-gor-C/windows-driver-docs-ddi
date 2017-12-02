@@ -7,7 +7,7 @@ old-location: debugger\idebuginputcallbacks_startinput.htm
 old-project: debugger
 ms.assetid: 4ac3764e-6482-49de-aac8-3b540561d201
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugInputCallbacks, StartInput, IDebugInputCallbacks::StartInput
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT StartInput(
 ## -parameters
 <dl>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the number of characters requested.  Any input longer than this size will be truncated.</p>

@@ -57,26 +57,26 @@ typedef struct _SECURE_ELEMENT_NFCC_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>cbMaxRoutingTableSize</b>
+### -field cbMaxRoutingTableSize
 
 <dd>
 <p>NFCC maximum listen mode routing table size.</p>
 </dd>
 
-### -field <b>IsAidRoutingSupported</b>
+### -field IsAidRoutingSupported
 
 <dd>
 <p>Specifies whether NFCC supports AID-based routing.
 </p>
 </dd>
 
-### -field <b>IsProtocolRoutingSupported</b>
+### -field IsProtocolRoutingSupported
 
 <dd>
 <p>Specify whether NFCC supports protocol-based routing.</p>
 </dd>
 
-### -field <b>IsTechRoutingSupported</b>
+### -field IsTechRoutingSupported
 
 <dd>
 <p>Specify whether NFCC supports technology-based routing.</p>

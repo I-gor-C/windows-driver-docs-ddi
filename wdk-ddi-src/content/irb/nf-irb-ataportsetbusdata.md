@@ -58,31 +58,31 @@ ULONG AtaPortSetBusData(
 ## -parameters
 <dl>
 
-### -param <i>ControllerExtension</i> 
+### -param ControllerExtension 
 
 <dd>
 <p>A pointer to the controller extension.</p>
 </dd>
 
-### -param <i>Buffer</i> 
+### -param Buffer 
 
 <dd>
 <p>A pointer to the buffer that contains the data to write to the device's PCI bus configuration space.</p>
 </dd>
 
-### -param <i>DataMask</i> 
+### -param DataMask 
 
 <dd>
 <p>Contains a data mask buffer that controls which bits of PCI bus configuration data must be updated. The length of <i>Datamask </i>must be the same length as <i>Buffer.</i></p>
 </dd>
 
-### -param <i>ConfigDataOffset</i> 
+### -param ConfigDataOffset 
 
 <dd>
 <p>Specifies an offset into the device's PCI bus configuration data space where the data is updated.</p>
 </dd>
 
-### -param <i>BufferLength</i> 
+### -param BufferLength 
 
 <dd>
 <p>Specifies the length, in bytes, of the buffer.</p>

@@ -56,19 +56,19 @@ NTSTATUS GetPinName(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies a pointer to an I/O request packet (IRP) structure. </p>
 </dd>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>Specifies a pointer to the underlying kernel streaming (KS) pin.</p>
 </dd>
 
-### -param <i>Data</i> [out]
+### -param Data [out]
 
 <dd>
 <p>Specifies a pointer to the buffer that holds the data for the <code>GetPinName</code> method.</p>
@@ -79,7 +79,7 @@ NTSTATUS GetPinName(
 <p>The <code>GetPinName</code> method returns STATUS_SUCCESS if the call was successful. Otherwise, it returns an appropriate error code.</p>
 
 ## -remarks
-<p>If a client needs the current pin name of an endpoint, but has determined that the miniport driver does not support the <code>GetPinName</code> method, the client uses the friendly name of the topology bridge pin. For more information about pin categories and friendly names, see <a href="NULL">Pin Category Property</a> and <a href="NULL">Friendly Names for Audio Endpoint Devices</a>. </p>
+<p>If a client needs the current pin name of an endpoint, but has determined that the miniport driver does not support the <code>GetPinName</code> method, the client uses the friendly name of the topology bridge pin. For more information about pin categories and friendly names, see <a href="https://msdn.microsoft.com/fd4a4afd-2c17-4002-87ae-21501b1d75c1">Pin Category Property</a> and <a href="https://msdn.microsoft.com/e0937d20-dd5b-453f-99f6-4e501f0f0e5b">Friendly Names for Audio Endpoint Devices</a>. </p>
 
 <p>KSNODETYPE_SPEAKER</p>
 
@@ -135,10 +135,10 @@ NTSTATUS GetPinName(
 <a href="..\portcls\nn-portcls-ipinname.md">IPinName</a>
 </dt>
 <dt>
-<a href="NULL">Friendly Names for Audio Endpoint Devices</a>
+<a href="https://msdn.microsoft.com/e0937d20-dd5b-453f-99f6-4e501f0f0e5b">Friendly Names for Audio Endpoint Devices</a>
 </dt>
 <dt>
-<a href="NULL">Pin Category Property</a>
+<a href="https://msdn.microsoft.com/fd4a4afd-2c17-4002-87ae-21501b1d75c1">Pin Category Property</a>
 </dt>
 </dl>
 <p> </p>

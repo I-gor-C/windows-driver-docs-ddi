@@ -59,37 +59,37 @@ typedef struct D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>pShaderCode</b>
+### -field pShaderCode
 
 <dd>
 <p>[in] An array of CONST UINT tokens that make up the geometry shader code. </p>
 </dd>
 
-### -field <b>pOutputStreamDecl</b>
+### -field pOutputStreamDecl
 
 <dd>
 <p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-stream-output-declaration-entry.md">D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY</a> structures that describes the stream output for the geometry shader. </p>
 </dd>
 
-### -field <b>NumEntries</b>
+### -field NumEntries
 
 <dd>
 <p>[in] The number of elements in that array that the <b>pOutputStreamDecl</b> member specifies. </p>
 </dd>
 
-### -field <b>BufferStridesInBytes</b>
+### -field BufferStridesInBytes
 
 <dd>
 <p>[in] An array of strides (bytes from one vertex to the next vertex). </p>
 </dd>
 
-### -field <b>NumStrides</b>
+### -field NumStrides
 
 <dd>
 <p>[in] The number of strides in the array that the <b>BufferStridesInBytes</b> member specifies. </p>
 </dd>
 
-### -field <b>RasterizedStream</b>
+### -field RasterizedStream
 
 <dd>
 <p>[in] A value that identifies the rasterized stream. </p>

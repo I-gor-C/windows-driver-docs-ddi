@@ -59,31 +59,31 @@ typedef enum _USBFN_BUS_SPEED {
 ## -enum-fields
 <dl>
 
-### -field <a id="UsbfnBusSpeedLow"></a><a id="usbfnbusspeedlow"></a><a id="USBFNBUSSPEEDLOW"></a><b>UsbfnBusSpeedLow</b>
+### -field UsbfnBusSpeedLow
 
 <dd>
 <p>A low bandwidth bus speed of 1.5 Mbit per second.</p>
 </dd>
 
-### -field <a id="UsbfnBusSpeedFull"></a><a id="usbfnbusspeedfull"></a><a id="USBFNBUSSPEEDFULL"></a><b>UsbfnBusSpeedFull</b>
+### -field UsbfnBusSpeedFull
 
 <dd>
 <p>A full bandwidth bus speed of 12 MBit per second.</p>
 </dd>
 
-### -field <a id="UsbfnBusSpeedHigh"></a><a id="usbfnbusspeedhigh"></a><a id="USBFNBUSSPEEDHIGH"></a><b>UsbfnBusSpeedHigh</b>
+### -field UsbfnBusSpeedHigh
 
 <dd>
 <p>A high bus speed of 480 Mbit per second.</p>
 </dd>
 
-### -field <a id="UsbfnBusSpeedSuper"></a><a id="usbfnbusspeedsuper"></a><a id="USBFNBUSSPEEDSUPER"></a><b>UsbfnBusSpeedSuper</b>
+### -field UsbfnBusSpeedSuper
 
 <dd>
 <p>A SuperSpeed mode bus speed of 5 Gbit per second.</p>
 </dd>
 
-### -field <a id="UsbfnBusSpeedMaximum"></a><a id="usbfnbusspeedmaximum"></a><a id="USBFNBUSSPEEDMAXIMUM"></a><b>UsbfnBusSpeedMaximum</b>
+### -field UsbfnBusSpeedMaximum
 
 <dd>
 <p>The maximum value of the enumeration.</p>

@@ -55,13 +55,13 @@ typedef struct tagKS_DATAFORMAT_VIDEOINFO_PALETTE {
 ## -struct-fields
 <dl>
 
-### -field <b>DataFormat</b>
+### -field DataFormat
 
 <dd>
 <p>Specifies the data format that is being proposed.</p>
 </dd>
 
-### -field <b>VideoInfo</b>
+### -field VideoInfo
 
 <dd>
 <p>Specifies the details of the video stream.</p>

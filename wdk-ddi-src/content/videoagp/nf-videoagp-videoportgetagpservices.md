@@ -57,13 +57,13 @@ BOOLEAN VideoPortGetAgpServices(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>AgpServices</i> [in]
+### -param AgpServices [in]
 
 <dd>
 <p>Pointer to an uninitialized, miniport driver-allocated <a href="display.video_port_agp_services">VIDEO_PORT_AGP_SERVICES</a> structure.</p>

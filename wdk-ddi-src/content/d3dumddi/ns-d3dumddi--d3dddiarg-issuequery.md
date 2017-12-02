@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_ISSUEQUERY {
 ## -struct-fields
 <dl>
 
-### -field <b>hQuery</b>
+### -field hQuery
 
 <dd>
 <p>[in] The handle to the query that was created by the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createquery.md">CreateQuery</a> function.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-issuequeryflags.md">D3DDDI_ISSUEQUERYFLAGS</a> structure that identifies the type of query to issue. The driver can ignore query requests with <b>Flags</b> set to 0. </p>

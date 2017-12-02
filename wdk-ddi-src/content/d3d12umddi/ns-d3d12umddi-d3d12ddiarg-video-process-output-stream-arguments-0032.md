@@ -55,13 +55,13 @@ typedef struct _D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>OutputStream</b>
+### -field OutputStream
 
 <dd>
 <p>An output stream of bytes.</p>
 </dd>
 
-### -field <b>TargetRectangle</b>
+### -field TargetRectangle
 
 <dd>
 <p>The source rectangle to process output video stream.</p>

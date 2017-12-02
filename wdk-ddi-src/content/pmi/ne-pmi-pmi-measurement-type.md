@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="PmiMeasurementTypeInput"></a><a id="pmimeasurementtypeinput"></a><a id="PMIMEASUREMENTTYPEINPUT"></a><b>PmiMeasurementTypeInput</b>
+### -field PmiMeasurementTypeInput
 
 <dd>
 <p>The PMI measurement data is based on input power.</p>
 </dd>
 
-### -field <a id="PmiMeasurementTypeOutput"></a><a id="pmimeasurementtypeoutput"></a><a id="PMIMEASUREMENTTYPEOUTPUT"></a><b>PmiMeasurementTypeOutput</b>
+### -field PmiMeasurementTypeOutput
 
 <dd>
 <p>The PMI measurement data is based on output power.</p>
 </dd>
 
-### -field <a id="PmiMeasurementTypeMax"></a><a id="pmimeasurementtypemax"></a><a id="PMIMEASUREMENTTYPEMAX"></a><b>PmiMeasurementTypeMax</b>
+### -field PmiMeasurementTypeMax
 
 <dd>
 <p>The maximum types of PMI measurement data.</p>

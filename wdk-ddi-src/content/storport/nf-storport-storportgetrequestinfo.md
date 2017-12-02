@@ -59,19 +59,19 @@ ULONG StorPortGetRequestInfo(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Srb</i> [in]
+### -param Srb [in]
 
 <dd>
 <p>A pointer to the SRB to be queried.</p>
 </dd>
 
-### -param <i>RequestInfo</i> [out]
+### -param RequestInfo [out]
 
 <dd>
 <p>A pointer to a caller-supplied <a href="storage.stor_request_info">STOR_REQUEST_INFO</a> structure.</p>

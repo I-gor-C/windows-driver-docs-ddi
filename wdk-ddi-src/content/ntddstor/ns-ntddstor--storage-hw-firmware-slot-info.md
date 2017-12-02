@@ -60,43 +60,43 @@ typedef struct _STORAGE_HW_FIRMWARE_SLOT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_SLOT_INFO)</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure.</p>
 </dd>
 
-### -field <b>SlotNumber</b>
+### -field SlotNumber
 
 <dd>
 <p>The slot number of this slot.</p>
 </dd>
 
-### -field <b>ReadOnly</b>
+### -field ReadOnly
 
 <dd>
 <p>Indicates whether this slot is read-only or not.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Revision</b>
+### -field Revision
 
 <dd>
 <p>The revision of the firmware on this slot.</p>

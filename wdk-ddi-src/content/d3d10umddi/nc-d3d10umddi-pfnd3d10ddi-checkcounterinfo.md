@@ -58,13 +58,13 @@ VOID APIENTRY CheckCounterInfo(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pCounterInfo</i> [out]
+### -param pCounterInfo [out]
 
 <dd>
 <p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-counter-info.md">D3D10DDI_COUNTER_INFO</a> structure that the driver populates with global information that is related to manipulating counters. </p>

@@ -60,13 +60,13 @@ typedef struct _DDRAW_MODE_SPECIFIC_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>Head</b>
+### -field Head
 
 <dd>
 <p>[in] The display device (head) on the multiple-head graphics card to retrieve capabilities about.</p>
 </dd>
 
-### -field <b>Caps</b>
+### -field Caps
 
 <dd>
 <p>[out] A valid bitwise OR of the following general capability bits that the driver supports.</p>
@@ -135,7 +135,7 @@ typedef struct _DDRAW_MODE_SPECIFIC_CAPS {
 <p> </p>
 </dd>
 
-### -field <b>CKeyCaps</b>
+### -field CKeyCaps
 
 <dd>
 <p>[out] A valid bitwise OR of the following color key capability bits that the driver supports.</p>
@@ -196,7 +196,7 @@ typedef struct _DDRAW_MODE_SPECIFIC_CAPS {
 <p> </p>
 </dd>
 
-### -field <b>FxCaps</b>
+### -field FxCaps
 
 <dd>
 <p>[out] A valid bitwise OR of the following effects capability bits that the driver supports.</p>
@@ -265,19 +265,19 @@ typedef struct _DDRAW_MODE_SPECIFIC_CAPS {
 <p> </p>
 </dd>
 
-### -field <b>MaxVisibleOverlays</b>
+### -field MaxVisibleOverlays
 
 <dd>
 <p>[out] The maximum number of visible overlays.</p>
 </dd>
 
-### -field <b>MinOverlayStretch</b>
+### -field MinOverlayStretch
 
 <dd>
 <p>[out] The minimum overlay stretch factor multiplied by 1000. For example, a factor of 1.3 should be stored as 1300. The display driver must set the minimum factor to the actual minimum to which the graphics hardware can shrink the overlay. If the graphics hardware has no minimum limitation, set <b>MinOverlayStretch</b> to 1.</p>
 </dd>
 
-### -field <b>MaxOverlayStretch</b>
+### -field MaxOverlayStretch
 
 <dd>
 <p>[out] The maximum overlay stretch factor multiplied by 1000. For example, a factor of 1.3 should be stored as 1300. The display driver must set the maximum factor to the actual maximum to which the graphics hardware can stretch the overlay. If the graphics hardware has no maximum limitation, set <b>MaxOverlayStretch</b> to 32000.</p>

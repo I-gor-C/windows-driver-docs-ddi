@@ -7,7 +7,7 @@ old-location: netvista\fwps_callout1.htm
 old-project: netvista
 ms.assetid: d15c4cd4-b4f0-4363-988a-2bbb235b7b37
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_CALLOUT1_, FWPS_CALLOUT1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ typedef struct FWPS_CALLOUT1_ {
 ## -struct-fields
 <dl>
 
-### -field <b>calloutKey</b>
+### -field calloutKey
 
 <dd>
 <p>A callout driver-defined <b>GUID</b> that uniquely identifies the callout.</p>
 </dd>
 
-### -field <b>flags</b>
+### -field flags
 
 <dd>
 <p>Flags that specify callout-specific parameters. Possible flags are:</p>
@@ -77,7 +77,7 @@ typedef struct FWPS_CALLOUT1_ {
 <tr>
 <td width="40%"><a id="FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW"></a><a id="fwp_callout_flag_conditional_on_flow"></a><dl>
 
-### -field <b>FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW</b>
+### -field FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW
 
 
 ### -field 0x00000001
@@ -96,7 +96,7 @@ typedef struct FWPS_CALLOUT1_ {
 <tr>
 <td width="40%"><a id="FWP_CALLOUT_FLAG_ALLOW_OFFLOAD"></a><a id="fwp_callout_flag_allow_offload"></a><dl>
 
-### -field <b>FWP_CALLOUT_FLAG_ALLOW_OFFLOAD</b>
+### -field FWP_CALLOUT_FLAG_ALLOW_OFFLOAD
 
 
 ### -field 0x00000002
@@ -114,7 +114,7 @@ typedef struct FWPS_CALLOUT1_ {
 <tr>
 <td width="40%"><a id="FWP_CALLOUT_FLAG_ENABLE_COMMIT_ADD_NOTIFY"></a><a id="fwp_callout_flag_enable_commit_add_notify"></a><dl>
 
-### -field <b>FWP_CALLOUT_FLAG_ENABLE_COMMIT_ADD_NOTIFY</b>
+### -field FWP_CALLOUT_FLAG_ENABLE_COMMIT_ADD_NOTIFY
 
 
 ### -field 0x00000004
@@ -128,7 +128,7 @@ typedef struct FWPS_CALLOUT1_ {
 <tr>
 <td width="40%"><a id="FWP_CALLOUT_FLAG_ALLOW_MID_STREAM_INSPECTION"></a><a id="fwp_callout_flag_allow_mid_stream_inspection"></a><dl>
 
-### -field <b>FWP_CALLOUT_FLAG_ALLOW_MID_STREAM_INSPECTION</b>
+### -field FWP_CALLOUT_FLAG_ALLOW_MID_STREAM_INSPECTION
 
 
 ### -field 0x00000008
@@ -136,13 +136,13 @@ typedef struct FWPS_CALLOUT1_ {
 </dl>
 </td>
 <td width="60%">
-<p>A callout driver specifies this flag to indicate that it can perform  dynamic stream inspection of data flows at stream level. See <a href="NULL">Stream Inspection</a>.</p>
+<p>A callout driver specifies this flag to indicate that it can perform  dynamic stream inspection of data flows at stream level. See <a href="netvista.stream_inspection">Stream Inspection</a>.</p>
 </td>
 </tr>
 <tr>
 <td width="40%"><a id="FWP_CALLOUT_FLAG_ALLOW_RECLASSIFY"></a><a id="fwp_callout_flag_allow_reclassify"></a><dl>
 
-### -field <b>FWP_CALLOUT_FLAG_ALLOW_RECLASSIFY</b>
+### -field FWP_CALLOUT_FLAG_ALLOW_RECLASSIFY
 
 
 ### -field 0x00000010
@@ -157,7 +157,7 @@ typedef struct FWPS_CALLOUT1_ {
 <p> </p>
 </dd>
 
-### -field <b>classifyFn</b>
+### -field classifyFn
 
 <dd>
 <p>A pointer to the callout driver's 
@@ -165,7 +165,7 @@ typedef struct FWPS_CALLOUT1_ {
      engine calls this function whenever there is network data to be processed by the callout.</p>
 </dd>
 
-### -field <b>notifyFn</b>
+### -field notifyFn
 
 <dd>
 <p>A pointer to the callout driver's 
@@ -173,7 +173,7 @@ typedef struct FWPS_CALLOUT1_ {
      this function to notify the callout driver about events that are associated with the callout.</p>
 </dd>
 
-### -field <b>flowDeleteFn</b>
+### -field flowDeleteFn
 
 <dd>
 <p>A pointer to the callout driver's 
@@ -244,4 +244,4 @@ typedef struct FWPS_CALLOUT1_ {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT1 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT1 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -69,190 +69,190 @@ typedef struct _WHEA_MEMORY_ERROR_SECTION {
 ## -struct-fields
 <dl>
 
-### -field <b>ValidBits</b>
+### -field ValidBits
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-memory-error-section-validbits.md">WHEA_MEMORY_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.</p>
 </dd>
 
-### -field <b>ErrorStatus</b>
+### -field ErrorStatus
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-error-status.md">WHEA_ERROR_STATUS</a> structure that contains memory error status data.</p>
 <p>This member contains valid data only if the <b>Validbits.ErrorStatus</b> bit is set.</p>
 </dd>
 
-### -field <b>PhysicalAddress</b>
+### -field PhysicalAddress
 
 <dd>
 <p>The physical address where the memory error occurred.</p>
 <p>This member contains valid data only if the <b>Validbits.PhysicalAddress</b> bit is set.</p>
 </dd>
 
-### -field <b>PhysicalAddressMask</b>
+### -field PhysicalAddressMask
 
 <dd>
 <p>A bit mask that specifies which of the bits in the <b>PhysicalAddress</b> member contain valid address data.</p>
 <p>This member contains valid data only if the <b>Validbits.PhysicalAddressMask</b> bit is set.</p>
 </dd>
 
-### -field <b>Node</b>
+### -field Node
 
 <dd>
 <p>The identifier of the node that contains the memory where the memory error occurred in a system with multiple nodes.</p>
 <p>This member contains valid data only if the <b>Validbits.Node</b> bit is set.</p>
 </dd>
 
-### -field <b>Card</b>
+### -field Card
 
 <dd>
 <p>The card number of the card that contains the memory where the memory error occurred.</p>
 <p>This member contains valid data only if the <b>Validbits.Card</b> bit is set.</p>
 </dd>
 
-### -field <b>Module</b>
+### -field Module
 
 <dd>
 <p>The module number of the module that contains the memory where the memory error occurred.</p>
 <p>This member contains valid data only if the <b>Validbits.Module</b> bit is set.</p>
 </dd>
 
-### -field <b>Bank</b>
+### -field Bank
 
 <dd>
 <p>The bank number of the memory bank that contains the memory where the memory error occurred.</p>
 <p>This member contains valid data only if the <b>Validbits.Bank</b> bit is set.</p>
 </dd>
 
-### -field <b>Device</b>
+### -field Device
 
 <dd>
 <p>The device number of the memory device that contains the memory where the memory error occurred.</p>
 <p>This member contains valid data only if the <b>Validbits.Device</b> bit is set.</p>
 </dd>
 
-### -field <b>Row</b>
+### -field Row
 
 <dd>
 <p>The row number of the location where the memory error occurred.</p>
 <p>This member contains valid data only if the <b>Validbits.Row</b> bit is set.</p>
 </dd>
 
-### -field <b>Column</b>
+### -field Column
 
 <dd>
 <p>The column number of the location where the memory error occurred.</p>
 <p>This member contains valid data only if the <b>Validbits.Column</b> bit is set.</p>
 </dd>
 
-### -field <b>BitPosition</b>
+### -field BitPosition
 
 <dd>
 <p>The bit position where the memory error occurred.</p>
 <p>This member contains valid data only if the <b>Validbits.BitPosition</b> bit is set.</p>
 </dd>
 
-### -field <b>RequesterId</b>
+### -field RequesterId
 
 <dd>
 <p>An identifier that uniquely identifies the requester associated with the error.</p>
 <p>This member contains valid data only if the <b>Validbits.RequesterId</b> bit is set.</p>
 </dd>
 
-### -field <b>ResponderId</b>
+### -field ResponderId
 
 <dd>
 <p>An identifier that uniquely identifies the responder associated with the error.</p>
 <p>This member contains valid data only if the <b>Validbits.ResponderId</b> bit is set.</p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>The hardware address of the intended target of the transaction.</p>
 <p>This member contains valid data only if the <b>Validbits.TargetId</b> bit is set.</p>
 </dd>
 
-### -field <b>ErrorType</b>
+### -field ErrorType
 
 <dd>
 <p>The type of memory error that occurred. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="WHEA_MEMERRTYPE_UNKNOWN"></a><a id="whea_memerrtype_unknown"></a>WHEA_MEMERRTYPE_UNKNOWN
+### -field WHEA_MEMERRTYPE_UNKNOWN
 
 <dd>
 <p>An unknown error.</p>
 </dd>
 
-### -field <a id="WHEA_MEMERRTYPE_NOERROR"></a><a id="whea_memerrtype_noerror"></a>WHEA_MEMERRTYPE_NOERROR
+### -field WHEA_MEMERRTYPE_NOERROR
 
 <dd>
 <p>No error occurred.</p>
 </dd>
 
-### -field <a id="WHEA_MEMERRTYPE_SINGLEBITECC"></a><a id="whea_memerrtype_singlebitecc"></a>WHEA_MEMERRTYPE_SINGLEBITECC
+### -field WHEA_MEMERRTYPE_SINGLEBITECC
 
 <dd>
 <p>A single bit <a href="wdkgloss.e#wdkgloss.ecc#wdkgloss.ecc"><i>ECC</i></a> error.</p>
 </dd>
 
-### -field <a id="WHEA_MEMERRTYPE_MULTIBITECC"></a><a id="whea_memerrtype_multibitecc"></a>WHEA_MEMERRTYPE_MULTIBITECC
+### -field WHEA_MEMERRTYPE_MULTIBITECC
 
 <dd>
 <p>A multibit ECC error.</p>
 </dd>
 
-### -field <a id="WHEA_MEMERRTYPE_SINGLESYMCHIPKILL"></a><a id="whea_memerrtype_singlesymchipkill"></a>WHEA_MEMERRTYPE_SINGLESYMCHIPKILL
+### -field WHEA_MEMERRTYPE_SINGLESYMCHIPKILL
 
 <dd>
 <p>A single symbol <a href="http://go.microsoft.com/fwlink/p/?linkid=81372">ChipKill</a> <a href="wdkgloss.e#wdkgloss.ecc#wdkgloss.ecc"><i>ECC</i></a> error.</p>
 </dd>
 
-### -field <a id="WHEA_MEMERRTYPE_MULTISYMCHIPKILL"></a><a id="whea_memerrtype_multisymchipkill"></a>WHEA_MEMERRTYPE_MULTISYMCHIPKILL
+### -field WHEA_MEMERRTYPE_MULTISYMCHIPKILL
 
 <dd>
 <p>A multiple symbol <a href="http://go.microsoft.com/fwlink/p/?linkid=81372">ChipKill</a> <a href="wdkgloss.e#wdkgloss.ecc#wdkgloss.ecc"><i>ECC</i></a> error.</p>
 </dd>
 
-### -field <a id="WHEA_MEMERRTYPE_MASTERABORT"></a><a id="whea_memerrtype_masterabort"></a>WHEA_MEMERRTYPE_MASTERABORT
+### -field WHEA_MEMERRTYPE_MASTERABORT
 
 <dd>
 <p>A master abort.</p>
 </dd>
 
-### -field <a id="WHEA_MEMERRTYPE_TARGETABORT"></a><a id="whea_memerrtype_targetabort"></a>WHEA_MEMERRTYPE_TARGETABORT
+### -field WHEA_MEMERRTYPE_TARGETABORT
 
 <dd>
 <p>A target abort.</p>
 </dd>
 
-### -field <a id="WHEA_MEMERRTYPE_PARITYERROR"></a><a id="whea_memerrtype_parityerror"></a>WHEA_MEMERRTYPE_PARITYERROR
+### -field WHEA_MEMERRTYPE_PARITYERROR
 
 <dd>
 <p>A parity error.</p>
 </dd>
 
-### -field <a id="WHEA_MEMERRTYPE_WATCHDOGTIMEOUT"></a><a id="whea_memerrtype_watchdogtimeout"></a>WHEA_MEMERRTYPE_WATCHDOGTIMEOUT
+### -field WHEA_MEMERRTYPE_WATCHDOGTIMEOUT
 
 <dd>
 <p>A watchdog timeout.</p>
 </dd>
 
-### -field <a id="WHEA_MEMERRTYPE_INVALIDADDRESS"></a><a id="whea_memerrtype_invalidaddress"></a>WHEA_MEMERRTYPE_INVALIDADDRESS
+### -field WHEA_MEMERRTYPE_INVALIDADDRESS
 
 <dd>
 <p>An invalid memory address.</p>
 </dd>
 
-### -field <a id="WHEA_MEMERRTYPE_MIRRORBROKEN"></a><a id="whea_memerrtype_mirrorbroken"></a>WHEA_MEMERRTYPE_MIRRORBROKEN
+### -field WHEA_MEMERRTYPE_MIRRORBROKEN
 
 <dd>
 <p>A broken memory mirror.</p>
 </dd>
 
-### -field <a id="WHEA_MEMERRTYPE_MEMORYSPARING"></a><a id="whea_memerrtype_memorysparing"></a>WHEA_MEMERRTYPE_MEMORYSPARING
+### -field WHEA_MEMERRTYPE_MEMORYSPARING
 
 <dd>
 <p>A memory sparing error.</p>

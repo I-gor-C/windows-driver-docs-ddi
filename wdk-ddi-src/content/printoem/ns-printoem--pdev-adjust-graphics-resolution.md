@@ -55,7 +55,7 @@ typedef struct _PDEV_ADJUST_GRAPHICS_RESOLUTION {
 ## -struct-fields
 <dl>
 
-### -field <b>ptGraphicsResolution</b>
+### -field ptGraphicsResolution
 
 <dd>
 <p>A POINT structure that specifies the resolution of the graphics area, in dots per inch (DPI).</p>

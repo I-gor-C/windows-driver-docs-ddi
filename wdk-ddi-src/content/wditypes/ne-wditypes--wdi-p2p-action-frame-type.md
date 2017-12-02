@@ -7,7 +7,7 @@ old-location: netvista\wdi_p2p_action_frame_type.htm
 old-project: netvista
 ms.assetid: 3E1C92D2-FFE0-402F-BE14-18AFB03F3FE4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,43 +61,43 @@ typedef enum _WDI_P2P_ACTION_FRAME_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_REQUEST"></a><a id="wdi_p2p_action_frame_go_negotiation_request"></a><b>WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_REQUEST</b>
+### -field WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_REQUEST
 
 <dd>
 <p>Wi-Fi Direct Group Owner Negotiation Request.</p>
 </dd>
 
-### -field <a id="WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_RESPONSE"></a><a id="wdi_p2p_action_frame_go_negotiation_response"></a><b>WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_RESPONSE</b>
+### -field WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_RESPONSE
 
 <dd>
 <p>Wi-Fi Direct Group Owner Negotiation Response.</p>
 </dd>
 
-### -field <a id="WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_CONFIRM"></a><a id="wdi_p2p_action_frame_go_negotiation_confirm"></a><b>WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_CONFIRM</b>
+### -field WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_CONFIRM
 
 <dd>
 <p>Wi-Fi Direct Group Owner Negotiation Confirmation.</p>
 </dd>
 
-### -field <a id="WDI_P2P_ACTION_FRAME_INVITATION_REQUEST"></a><a id="wdi_p2p_action_frame_invitation_request"></a><b>WDI_P2P_ACTION_FRAME_INVITATION_REQUEST</b>
+### -field WDI_P2P_ACTION_FRAME_INVITATION_REQUEST
 
 <dd>
 <p>Wi-Fi Direct Invitation Request.</p>
 </dd>
 
-### -field <a id="WDI_P2P_ACTION_FRAME_INVITATION_RESPONSE"></a><a id="wdi_p2p_action_frame_invitation_response"></a><b>WDI_P2P_ACTION_FRAME_INVITATION_RESPONSE</b>
+### -field WDI_P2P_ACTION_FRAME_INVITATION_RESPONSE
 
 <dd>
 <p>Wi-Fi Direct Invitation Response.</p>
 </dd>
 
-### -field <a id="WDI_P2P_ACTION_FRAME_PROVISION_DISCOVERY_REQUEST"></a><a id="wdi_p2p_action_frame_provision_discovery_request"></a><b>WDI_P2P_ACTION_FRAME_PROVISION_DISCOVERY_REQUEST</b>
+### -field WDI_P2P_ACTION_FRAME_PROVISION_DISCOVERY_REQUEST
 
 <dd>
 <p>Wi-Fi Direct Provision Discovery Request.</p>
 </dd>
 
-### -field <a id="WDI_P2P_ACTION_FRAME_PROVISION_DISCOVERY_RESPONSE"></a><a id="wdi_p2p_action_frame_provision_discovery_response"></a><b>WDI_P2P_ACTION_FRAME_PROVISION_DISCOVERY_RESPONSE</b>
+### -field WDI_P2P_ACTION_FRAME_PROVISION_DISCOVERY_RESPONSE
 
 <dd>
 <p>Wi-Fi Direct Provision Discovery Response.</p>

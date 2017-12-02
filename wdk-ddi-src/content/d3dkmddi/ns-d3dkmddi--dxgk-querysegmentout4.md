@@ -59,37 +59,37 @@ typedef struct _DXGK_QUERYSEGMENTOUT4 {
 ## -struct-fields
 <dl>
 
-### -field <b>NbSegment</b>
+### -field NbSegment
 
 <dd>
 <p>Number of elements in the <b>pSegmentDescriptor</b> array. The <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> (<b>DXGKQAITYPE_QUERYSEGMENT4</b>) will be called twice. First time, <b>NbSegment</b> will be set to 0. The driver should return <b>STATUS_SUCCESS</b> and set <b>NbSegment</b> to the number of GPU memory segments in the adapter without accessing any other member of the structure. Second time, the driver will be called with the reported number of segments and the driver should fill all required information.</p>
 </dd>
 
-### -field <b>pSegmentDescriptor</b>
+### -field pSegmentDescriptor
 
 <dd>
 <p>Pointer to the array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor4.md">DXGK_SEGMENTDESCRIPTOR4</a> structures. The size of the array element is defined by <b>SegmentDescriptorStride</b>. The <b>pSegmentDescriptor</b> type has been changed to a <b>BYTE*</b> to help enforce the use of the stride as the method of iterating the array. The driver fills the array with information about each memory segment.</p>
 </dd>
 
-### -field <b>PagingBufferSegmentId</b>
+### -field PagingBufferSegmentId
 
 <dd>
 <p>Segment identifier of the paging buffer. This is the index (starting from 1) of the segment in the <b>pSegmentDescriptor </b>array.</p>
 </dd>
 
-### -field <b>PagingBufferSize</b>
+### -field PagingBufferSize
 
 <dd>
 <p>Paging buffer size.</p>
 </dd>
 
-### -field <b>PagingBufferPrivateDataSize</b>
+### -field PagingBufferPrivateDataSize
 
 <dd>
 <p>Size, in bytes, of the driver-private data that will be provided with each paging buffer.</p>
 </dd>
 
-### -field <b>SegmentDescriptorStride</b>
+### -field SegmentDescriptorStride
 
 <dd>
 <p>Size of the elements in the <b>pSegmentDescriptor</b> array in bytes.</p>

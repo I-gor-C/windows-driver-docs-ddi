@@ -59,37 +59,37 @@ typedef struct _PEP_QUERY_SOC_SUBSYSTEM_METADATA {
 ## -struct-fields
 <dl>
 
-### -field <b>PlatformIdleStateIndex</b>
+### -field PlatformIdleStateIndex
 
 <dd>
 <p>[in] The platform idle state index for  for the SoC subsystem that the OS is querying.</p>
 </dd>
 
-### -field <b>SubsystemHandle</b>
+### -field SubsystemHandle
 
 <dd>
 <p>[in] A context pointer that the PEP previously provided on subsystem initialization. The context pointer is optional, so if none was provided then the value will be zero. The PEP is free to ignore this field.</p>
 </dd>
 
-### -field <b>SubsystemName</b>
+### -field SubsystemName
 
 <dd>
 <p>[in] The name of the subsystem whose metadata is being queried.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>MetadataCount</b>
+### -field MetadataCount
 
 <dd>
 <p>[in] The number of entries in the <b>Metadata</b> array.  The PEP previously provided this value as <b>PEP_QUERY_SOC_SUBSYSTEM.MetadataCount</b>.</p>
 </dd>
 
-### -field <b>Metadata</b>
+### -field Metadata
 
 <dd>
 <p>[in/out] An array of pointers to <a href="..\pepfx\ns-pepfx--pep-soc-subsystem-metadata.md">PEP_SOC_SUBSYSTEM_METADATA</a> structures.  Each entry holds one key/value metadata string-pair.</p>

@@ -54,7 +54,7 @@ NTSTATUS D3ExitLatencyChanged(
 ## -parameters
 <dl>
 
-### -param <i>NewD3ExitLatency</i> [in]
+### -param NewD3ExitLatency [in]
 
 <dd>
 <p>The  <a href="..\portcls\ne-portcls--pc-exit-latency.md">PC_EXIT_LATENCY</a> enumerated value that Portcls has determined for the device.</p>

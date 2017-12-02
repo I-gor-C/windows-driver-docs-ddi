@@ -7,7 +7,7 @@ old-location: netvista\ndis_sriov_set_vf_power_state_parameters.htm
 old-project: netvista
 ms.assetid: f2914619-1721-42ef-a20f-5774b906a35e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, *PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct _NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -65,7 +65,7 @@ typedef struct _NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS_REVISION_1"></a><a id="ndis_sriov_set_vf_power_state_parameters_revision_1"></a>NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS_REVISION_1
+### -field NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30 and later.</p>
@@ -74,7 +74,7 @@ typedef struct _NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>VFId</b>
+### -field VFId
 
 <dd>
 <p>An NDIS_SRIOV_FUNCTION_ID value that specifies the unique identifier of the VF on the network adapter.</p>
@@ -84,13 +84,13 @@ typedef struct _NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>PowerState</b>
+### -field PowerState
 
 <dd>
 <p>An <a href="..\ntddndis\ne-ntddndis--ndis-device-power-state.md">NDIS_DEVICE_POWER_STATE</a> value that specifies the power state of the network adapter.</p>
 </dd>
 
-### -field <b>WakeEnable</b>
+### -field WakeEnable
 
 <dd>
 <p>A BOOLEAN value that specifies whether the network adapter should have its WAKE# signal (on the PCI Express bus) or PME# signal (on the PCI bus) asserted as it goes into the low-power state.  </p>
@@ -136,4 +136,4 @@ typedef struct _NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

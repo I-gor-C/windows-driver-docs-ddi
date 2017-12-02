@@ -56,19 +56,19 @@ NTSTATUS RtlUShortAdd(
 ## -parameters
 <dl>
 
-### -param <i>usAugend</i> [in]
+### -param usAugend [in]
 
 <dd>
 <p>The first value in the equation.</p>
 </dd>
 
-### -param <i>usAddend</i> [in]
+### -param usAddend [in]
 
 <dd>
 <p>The value to add to <i>usAugend</i>.</p>
 </dd>
 
-### -param <i>pusResult</i> [out]
+### -param pusResult [out]
 
 <dd>
 <p>A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

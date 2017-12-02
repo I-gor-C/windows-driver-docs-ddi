@@ -7,7 +7,7 @@ old-location: wdf\wdfwmiprovidercreate.htm
 old-project: wdf
 ms.assetid: 07aed86f-870e-431b-b1bb-403395c35946
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfWmiProviderCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ NTSTATUS WdfWmiProviderCreate(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object that will be the new provider object's parent object. The device object cannot be a <a href="wdf.using_control_device_objects">control device object</a>.</p>
 </dd>
 
-### -param <i>WmiProviderConfig</i> [in]
+### -param WmiProviderConfig [in]
 
 <dd>
 <p>A pointer to a caller-initialized <a href="..\wdfwmi\ns-wdfwmi--wdf-wmi-provider-config.md">WDF_WMI_PROVIDER_CONFIG</a> structure that contains configuration information about the WMI data block.</p>
 </dd>
 
-### -param <i>ProviderAttributes</i> [in, optional]
+### -param ProviderAttributes [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains driver-supplied object attributes for the new WMI provider object. (The structure's <b>ParentObject</b> member must be <b>NULL</b>.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.</p>
 </dd>
 
-### -param <i>WmiProvider</i> [out]
+### -param WmiProvider [out]
 
 <dd>
 <p>A pointer to a location that receives a handle to the new WMI provider object.</p>
@@ -200,4 +200,4 @@ NTSTATUS WdfWmiProviderCreate(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfWmiProviderCreate method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfWmiProviderCreate method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

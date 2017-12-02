@@ -7,7 +7,7 @@ old-location: sensors\gnss_fixdata_satellite.htm
 old-project: sensors
 ms.assetid: D1454F07-3CBA-498B-B054-6A0D5020A164
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_FIXDATA_SATELLITE, GNSS_FIXDATA_SATELLITE, *PGNSS_FIXDATA_SATELLITE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>SatelliteCount</b>
+### -field SatelliteCount
 
 <dd>
 <p>Number of satellites in this structure. Not all satellites are actually used for positioning.</p>
 </dd>
 
-### -field <b>SatelliteArray[GNSS_MAXSATELLITE]</b>
+### -field SatelliteArray[GNSS_MAXSATELLITE]
 
 <dd>
 <p>An array of satellites with each array element representing information about a specific satellite.</p>

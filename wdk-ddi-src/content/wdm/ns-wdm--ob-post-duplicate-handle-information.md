@@ -55,7 +55,7 @@ typedef struct _OB_POST_DUPLICATE_HANDLE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>GrantedAccess</b>
+### -field GrantedAccess
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that specifies the access that is granted for the handle.</p>

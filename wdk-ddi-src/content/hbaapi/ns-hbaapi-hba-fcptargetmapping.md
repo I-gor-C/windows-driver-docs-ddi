@@ -55,13 +55,13 @@ typedef struct HBA_FCPTargetMapping {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfEntries</b>
+### -field NumberOfEntries
 
 <dd>
 <p>Indicates the number of bindings.</p>
 </dd>
 
-### -field <b>entry</b>
+### -field entry
 
 <dd>
 <p>Contains a variable length array of structures of type <a href="..\hbaapi\ns-hbaapi-hba-fcpscsientry.md">HBA_FcpScsiEntry</a> each of which defines a mapping between an operating system identifier for a logical unit and the corresponding fibre channel protocol (FCP) identifier for the logical unit. </p>

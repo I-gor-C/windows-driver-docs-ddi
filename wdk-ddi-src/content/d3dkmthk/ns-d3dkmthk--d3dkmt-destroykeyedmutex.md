@@ -54,7 +54,7 @@ typedef struct _D3DKMT_DESTROYKEYEDMUTEX {
 ## -struct-fields
 <dl>
 
-### -field <b>hKeyedMutex</b>
+### -field hKeyedMutex
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the keyed mutex object to destroy. </p>

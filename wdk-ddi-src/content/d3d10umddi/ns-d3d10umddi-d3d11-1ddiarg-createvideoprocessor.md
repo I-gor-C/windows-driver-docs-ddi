@@ -55,13 +55,13 @@ typedef struct D3D11_1DDIARG_CREATEVIDEOPROCESSOR {
 ## -struct-fields
 <dl>
 
-### -field <b>hVideoProcessorEnum</b>
+### -field hVideoProcessorEnum
 
 <dd>
 <p>A handle to a video processor enumeration object that was created through a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createvideoprocessorenum.md">CreateVideoProcessorEnum</a> function. </p>
 </dd>
 
-### -field <b>RateConversionCapsIndex</b>
+### -field RateConversionCapsIndex
 
 <dd>
 <p>Specifies the frame-rate conversion capabilities for the video processor. The value is a zero-based index that corresponds to the <i>RateConversionIndex</i> parameter of the <a href="display.getvideoprocessorrateconversioncaps">GetVideoProcessorRateConversionCaps</a> method. </p>

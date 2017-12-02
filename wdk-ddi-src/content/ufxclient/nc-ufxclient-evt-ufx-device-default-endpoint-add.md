@@ -62,19 +62,19 @@ typedef EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD PFN_UFX_DEVICE_DEFAULT_ENDPOINT_ADD;
 ## -parameters
 <dl>
 
-### -param <i>UfxDevice</i> [in]
+### -param UfxDevice [in]
 
 <dd>
-<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.</p>
+<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>.</p>
 </dd>
 
-### -param <i>MaxPacketSize</i> [in]
+### -param MaxPacketSize [in]
 
 <dd>
 <p>The default maximum packet size that can be sent from or to this endpoint.</p>
 </dd>
 
-### -param <i>EndpointInit</i> [in, out]
+### -param EndpointInit [in, out]
 
 <dd>
 <p>A pointer to an  UFXENDPOINT_INIT opaque structure that contains the endpoint descriptor required  to create an endpoint object.</p>
@@ -85,11 +85,11 @@ typedef EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD PFN_UFX_DEVICE_DEFAULT_ENDPOINT_ADD;
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The client driver for the function host controller registers its <i>EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD</i> implementation with the USB function class extension (UFX) by calling the <a href="buses.ufxdevicecreate">UfxDeviceCreate</a> method.</p>
+<p>The client driver for the function host controller registers its <i>EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD</i> implementation with the USB function class extension (UFX) by calling the <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a> method.</p>
 
-<p>To create the endpoint the client driver is expected to initialize the attributes of the endpoint’s transfer and command queues, and then call <a href="buses.ufxendpointcreate">UfxEndpointCreate</a> to create the endpoint.  After the default control endpoint is created, UFX is ready to process setup packets and other control transfer packets from host.  </p>
+<p>To create the endpoint the client driver is expected to initialize the attributes of the endpoint’s transfer and command queues, and then call <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a> to create the endpoint.  After the default control endpoint is created, UFX is ready to process setup packets and other control transfer packets from host.  </p>
 
-<p>The client driver indicates completion of this event by calling the <a href="buses.ufxdeviceeventcomplete">UfxDeviceEventComplete</a> method.</p>
+<p>The client driver indicates completion of this event by calling the <a href="..\ufxclient\nf-ufxclient-ufxdeviceeventcomplete.md">UfxDeviceEventComplete</a> method.</p>
 
 ## -requirements
 <table>
@@ -132,10 +132,10 @@ typedef EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD PFN_UFX_DEVICE_DEFAULT_ENDPOINT_ADD;
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ufxdevicecreate">UfxDeviceCreate</a>
+<a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>
 </dt>
 <dt>
-<a href="buses.ufxdeviceeventcomplete">UfxDeviceEventComplete</a>
+<a href="..\ufxclient\nf-ufxclient-ufxdeviceeventcomplete.md">UfxDeviceEventComplete</a>
 </dt>
 </dl>
 <p> </p>

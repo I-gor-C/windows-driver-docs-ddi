@@ -55,13 +55,13 @@ typedef struct HBA_FCPBinding2 {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfEntries</b>
+### -field NumberOfEntries
 
 <dd>
 <p>Indicates, on input, the number of bindings that can fit in the array at <b>entry</b>. On output, this member holds the number of entries actually returned, which will be equal to the number specified on input or the full set of available bindings, whichever is smaller. The value in <b>NumberOfEntries</b> will contain the number of persistent bindings returned even when an error occurred because of insufficient buffer space. </p>
 </dd>
 
-### -field <b>entry</b>
+### -field entry
 
 <dd>
 <p>Variable length array of elements of type <a href="..\hbaapi\ns-hbaapi-hba-fcpbindingentry2.md">HBA_FCPBindingEntry2</a>, each of which holds a persistent binding between operating system identifiers, a SCSI logical unit ID descriptor (LUID) and a fibre channel protocol (FCP) identifier for a logical unit. </p>

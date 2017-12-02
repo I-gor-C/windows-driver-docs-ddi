@@ -65,49 +65,49 @@ typedef struct _DXVADDI_EXTENDEDFORMAT {
 ## -struct-fields
 <dl>
 
-### -field <b>SampleFormat</b>
+### -field SampleFormat
 
 <dd>
 <p>[in] A UINT value that specifies how a video frame is sampled. The eight bits are defined by one of the values in the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-sampleformat.md">DXVADDI_SAMPLEFORMAT</a> enumeration type.</p>
 </dd>
 
-### -field <b>VideoChromaSubsampling</b>
+### -field VideoChromaSubsampling
 
 <dd>
 <p>[in] The chroma encoding scheme for Y'Cb'Cr' data. The four bits are defined by a bitwise OR of the values in the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-videochromasubsampling.md">DXVADDI_VIDEOCHROMASUBSAMPLING</a> enumeration type. </p>
 </dd>
 
-### -field <b>NominalRange</b>
+### -field NominalRange
 
 <dd>
 <p>[in] A UINT value that specifies whether sample data includes headroom (that is, values beyond 1.0 white) and toeroom (that is, superblacks below the reference 0.0 black). The three bits are defined by one of the values in the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-nominalrange.md">DXVADDI_NOMINALRANGE</a> enumeration type. </p>
 </dd>
 
-### -field <b>VideoTransferMatrix</b>
+### -field VideoTransferMatrix
 
 <dd>
 <p>[in] The conversion matrix from Y'Cb'Cr' to (studio) R'G'B'. The three bits are defined by one of the values in the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-videotransfermatrix.md">DXVADDI_VIDEOTRANSFERMATRIX</a> enumeration type. </p>
 </dd>
 
-### -field <b>VideoLighting</b>
+### -field VideoLighting
 
 <dd>
 <p>[in] Lighting conditions for viewing video. The four bits are defined by one of the values in the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-videolighting.md">DXVADDI_VIDEOLIGHTING</a> enumeration type. </p>
 </dd>
 
-### -field <b>VideoPrimaries</b>
+### -field VideoPrimaries
 
 <dd>
 <p>[in] Color primaries, which state which RGB basis functions are used. The five bits are defined by one of the values in the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-videoprimaries.md">DXVADDI_VIDEOPRIMARIES</a> enumeration type. </p>
 </dd>
 
-### -field <b>VideoTransferFunction</b>
+### -field VideoTransferFunction
 
 <dd>
 <p>[in] The conversion function from R'G'B' to RGB. The five bits are defined by the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-videotransferfunction.md">DXVADDI_VIDEOTRANSFERFUNCTION</a> enumeration type. </p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A 32-bit value that describes the extended format of the video frame.</p>

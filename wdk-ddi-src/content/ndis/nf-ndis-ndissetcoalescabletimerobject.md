@@ -7,7 +7,7 @@ old-location: netvista\ndissetcoalescabletimerobject.htm
 old-project: netvista
 ms.assetid: f6f50bba-cda5-41ed-9e0b-1aea5113a22b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisSetCoalescableTimerObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ BOOLEAN NdisSetCoalescableTimerObject(
 ## -parameters
 <dl>
 
-### -param <i>TimerObject</i> [in]
+### -param TimerObject [in]
 
 <dd>
 <p>A handle to a timer object that NDIS provides when a driver calls the 
@@ -69,7 +69,7 @@ BOOLEAN NdisSetCoalescableTimerObject(
      NdisAllocateTimerObject</a> function.</p>
 </dd>
 
-### -param <i>DueTime</i> [in]
+### -param DueTime [in]
 
 <dd>
 <p>The absolute or relative time at which the timer will expire. If the value of the 
@@ -79,7 +79,7 @@ BOOLEAN NdisSetCoalescableTimerObject(
      expiration times are not affected by system time changes.</p>
 </dd>
 
-### -param <i>MillisecondsPeriod</i> [in, optional]
+### -param MillisecondsPeriod [in, optional]
 
 <dd>
 <p>The optional periodic time interval, in milliseconds, that elapses between every instance when the
@@ -89,7 +89,7 @@ BOOLEAN NdisSetCoalescableTimerObject(
      non-periodic.</p>
 </dd>
 
-### -param <i>FunctionContext</i> [in, optional]
+### -param FunctionContext [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied context area that NDIS passes to the associated 
@@ -99,7 +99,7 @@ BOOLEAN NdisSetCoalescableTimerObject(
      NDIS_TIMER_CHARACTERISTICS</a> structure.</p>
 </dd>
 
-### -param <i>Tolerance</i> [in, optional]
+### -param Tolerance [in, optional]
 
 <dd>
 <p>The tolerance, in milliseconds, between the timer period specified by 
@@ -252,4 +252,4 @@ BOOLEAN NdisSetCoalescableTimerObject(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSetCoalescableTimerObject function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSetCoalescableTimerObject function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

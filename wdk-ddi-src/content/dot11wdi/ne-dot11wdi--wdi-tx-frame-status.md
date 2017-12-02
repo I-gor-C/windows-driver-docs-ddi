@@ -7,7 +7,7 @@ old-location: netvista\wdi_tx_frame_status.htm
 old-project: netvista
 ms.assetid: 6ea8a7ac-96dc-4337-884f-d30fbee1f760
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,43 +60,43 @@ typedef enum _WDI_TX_FRAME_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_TxFrameStatus_Ok"></a><a id="wdi_txframestatus_ok"></a><a id="WDI_TXFRAMESTATUS_OK"></a><b>WDI_TxFrameStatus_Ok</b>
+### -field WDI_TxFrameStatus_Ok
 
 <dd>
 <p>Frame transmitted without errors.</p>
 </dd>
 
-### -field <a id="WDI_TxFrameStatus_Discard"></a><a id="wdi_txframestatus_discard"></a><a id="WDI_TXFRAMESTATUS_DISCARD"></a><b>WDI_TxFrameStatus_Discard</b>
+### -field WDI_TxFrameStatus_Discard
 
 <dd>
 <p>The frame was discarded to make room for higher priority frames.</p>
 </dd>
 
-### -field <a id="WDI_TxFrameStatus_NoAck"></a><a id="wdi_txframestatus_noack"></a><a id="WDI_TXFRAMESTATUS_NOACK"></a><b>WDI_TxFrameStatus_NoAck</b>
+### -field WDI_TxFrameStatus_NoAck
 
 <dd>
 <p>Transmission failed after exhausting the maximum number of retries.</p>
 </dd>
 
-### -field <a id="WDI_TxFrameStatus_TransferCancelled"></a><a id="wdi_txframestatus_transfercancelled"></a><a id="WDI_TXFRAMESTATUS_TRANSFERCANCELLED"></a><b>WDI_TxFrameStatus_TransferCancelled</b>
+### -field WDI_TxFrameStatus_TransferCancelled
 
 <dd>
 <p>TX stop requested.</p>
 </dd>
 
-### -field <a id="WDI_TxFrameStatus_SendCancelled"></a><a id="wdi_txframestatus_sendcancelled"></a><a id="WDI_TXFRAMESTATUS_SENDCANCELLED"></a><b>WDI_TxFrameStatus_SendCancelled</b>
+### -field WDI_TxFrameStatus_SendCancelled
 
 <dd>
 <p>TX stop requested.</p>
 </dd>
 
-### -field <a id="WDI_TxFrameStatus_SendPostponed"></a><a id="wdi_txframestatus_sendpostponed"></a><a id="WDI_TXFRAMESTATUS_SENDPOSTPONED"></a><b>WDI_TxFrameStatus_SendPostponed</b>
+### -field WDI_TxFrameStatus_SendPostponed
 
 <dd>
 <p>The frame could not be transmitted at this time (for example, the peer is in PS). The frame should be transferred at a suitable time, when the corresponding TX queue is unpaused. This status is not allowed for targets that have <b>TargetPriorityQueueing</b> set to TRUE.</p>
 </dd>
 
-### -field <a id="WDI_TxFrameStatus_TransferFailed"></a><a id="wdi_txframestatus_transferfailed"></a><a id="WDI_TXFRAMESTATUS_TRANSFERFAILED"></a><b>WDI_TxFrameStatus_TransferFailed</b>
+### -field WDI_TxFrameStatus_TransferFailed
 
 <dd>
 <p>The transfer failed.</p>
@@ -144,4 +144,4 @@ typedef enum _WDI_TX_FRAME_STATUS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDI_TX_FRAME_STATUS enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDI_TX_FRAME_STATUS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

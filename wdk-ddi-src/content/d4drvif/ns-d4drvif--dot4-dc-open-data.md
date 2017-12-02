@@ -56,19 +56,19 @@ typedef struct _DOT4_DC_OPEN_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>bHsid</b>
+### -field bHsid
 
 <dd>
 <p>Specifies the host socket created by CREATE_SOCKET.</p>
 </dd>
 
-### -field <b>unsigned char</b>
+### -field unsigned char
 
 <dd>
 <p>Specify TRUE to immediately add activity broadcast upon creation.</p>
 </dd>
 
-### -field <b>hChannelHandle</b>
+### -field hChannelHandle
 
 <dd>
 <p>Specifies the handle to the channel returned.</p>

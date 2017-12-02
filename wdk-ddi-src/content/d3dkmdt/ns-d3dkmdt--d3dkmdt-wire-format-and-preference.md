@@ -62,43 +62,43 @@ typedef union _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE {
 ## -struct-fields
 <dl>
 
-### -field <b>Preference</b>
+### -field Preference
 
 <dd>
 <p>Functions as it has in previous releases, but using only 2 bits.</p>
 </dd>
 
-### -field <b>Rgb</b>
+### -field Rgb
 
 <dd>
 <p>UINT describing supported/requested pixel encoding using RGB sample format.</p>
 </dd>
 
-### -field <b>YCbCr444</b>
+### -field YCbCr444
 
 <dd>
 <p>UINT describing supported/requested pixel encoding using YcbCr 4:4:4 sample format.</p>
 </dd>
 
-### -field <b>YCbCr422</b>
+### -field YCbCr422
 
 <dd>
 <p>UINT describing supported/requested pixel encoding using YcbCr 4:2:2 sample format.</p>
 </dd>
 
-### -field <b>YCbCr420</b>
+### -field YCbCr420
 
 <dd>
 <p>UINT describing supported/requested pixel encoding using YcbCr 4:2:0 sample format.</p>
 </dd>
 
-### -field <b>Intensity</b>
+### -field Intensity
 
 <dd>
 <p>UINT describing supported/requested pixel encoding using intensity only.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>UINT used to operate on the combined bit-fields.</p>

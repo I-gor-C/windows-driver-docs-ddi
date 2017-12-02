@@ -59,37 +59,37 @@ typedef enum D3D12DDI_QUERY_HEAP_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_QUERY_HEAP_TYPE_OCCLUSION"></a><a id="d3d12ddi_query_heap_type_occlusion"></a><b>D3D12DDI_QUERY_HEAP_TYPE_OCCLUSION</b>
+### -field D3D12DDI_QUERY_HEAP_TYPE_OCCLUSION
 
 <dd>
 <p>Occlusion.</p>
 </dd>
 
-### -field <a id="D3D12DDI_QUERY_HEAP_TYPE_TIMESTAMP"></a><a id="d3d12ddi_query_heap_type_timestamp"></a><b>D3D12DDI_QUERY_HEAP_TYPE_TIMESTAMP</b>
+### -field D3D12DDI_QUERY_HEAP_TYPE_TIMESTAMP
 
 <dd>
 <p>Timestamp.</p>
 </dd>
 
-### -field <a id="D3D12DDI_QUERY_HEAP_TYPE_PIPELINE_STATISTICS"></a><a id="d3d12ddi_query_heap_type_pipeline_statistics"></a><b>D3D12DDI_QUERY_HEAP_TYPE_PIPELINE_STATISTICS</b>
+### -field D3D12DDI_QUERY_HEAP_TYPE_PIPELINE_STATISTICS
 
 <dd>
 <p>Pipeline statistics.</p>
 </dd>
 
-### -field <a id="D3D12DDI_QUERY_HEAP_TYPE_SO_STATISTICS"></a><a id="d3d12ddi_query_heap_type_so_statistics"></a><b>D3D12DDI_QUERY_HEAP_TYPE_SO_STATISTICS</b>
+### -field D3D12DDI_QUERY_HEAP_TYPE_SO_STATISTICS
 
 <dd>
 <p>SO statistics.</p>
 </dd>
 
-### -field <a id="D3D12DDI_QUERY_HEAP_TYPE_0020_VIDEO_DECODE_STATISTICS"></a><a id="d3d12ddi_query_heap_type_0020_video_decode_statistics"></a><b>D3D12DDI_QUERY_HEAP_TYPE_0020_VIDEO_DECODE_STATISTICS</b>
+### -field D3D12DDI_QUERY_HEAP_TYPE_0020_VIDEO_DECODE_STATISTICS
 
 <dd>
 <p>Video decode statistics.</p>
 </dd>
 
-### -field <a id="D3D12DDI_QUERY_HEAP_TYPE_0032_COPY_QUEUE_TIMESTAMP"></a><a id="d3d12ddi_query_heap_type_0032_copy_queue_timestamp"></a><b>D3D12DDI_QUERY_HEAP_TYPE_0032_COPY_QUEUE_TIMESTAMP</b>
+### -field D3D12DDI_QUERY_HEAP_TYPE_0032_COPY_QUEUE_TIMESTAMP
 
 <dd>
 <p>Copy queue timestamp.</p>

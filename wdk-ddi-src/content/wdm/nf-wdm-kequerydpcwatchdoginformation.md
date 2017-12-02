@@ -55,7 +55,7 @@ NTSTATUS KeQueryDpcWatchdogInformation(
 ## -parameters
 <dl>
 
-### -param <i>WatchdogInformation</i> [out]
+### -param WatchdogInformation [out]
 
 <dd>
 <p>A pointer to a caller-supplied <a href="..\wdm\ns-wdm--kdpc-watchdog-information.md">KDPC_WATCHDOG_INFORMATION</a> structure. The routine writes the current DPC watchdog timer values to this structure.</p>

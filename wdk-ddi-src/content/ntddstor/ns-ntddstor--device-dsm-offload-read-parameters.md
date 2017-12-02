@@ -57,19 +57,19 @@ typedef struct _DEVICE_DSM_OFFLOAD_READ_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Not used. Set to 0.</p>
 </dd>
 
-### -field <b>TimeToLive</b>
+### -field TimeToLive
 
 <dd>
 <p>The duration, in milliseconds, for which the requested data ranges should remain valid.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>

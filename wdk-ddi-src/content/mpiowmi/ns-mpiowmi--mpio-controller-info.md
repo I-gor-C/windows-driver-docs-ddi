@@ -59,37 +59,37 @@ typedef struct _MPIO_CONTROLLER_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>IdentifierType</b>
+### -field IdentifierType
 
 <dd>
 <p>An unsigned 32-bitfield that represents the identifier type for the controller.</p>
 </dd>
 
-### -field <b>IdentifierLength</b>
+### -field IdentifierLength
 
 <dd>
 <p>An unsigned 32-bitfield that represents the length of the controller's identifier.</p>
 </dd>
 
-### -field <b>Identifier</b>
+### -field Identifier
 
 <dd>
 <p>A 32-byte array that contains the actual identifier (serial number) of the controller.</p>
 </dd>
 
-### -field <b>ControllerState</b>
+### -field ControllerState
 
 <dd>
 <p>An unsigned 32-bitfield that represents the controller state.</p>
 </dd>
 
-### -field <b>Pad</b>
+### -field Pad
 
 <dd>
 <p>Should be zero.</p>
 </dd>
 
-### -field <b>AssociatedDsm</b>
+### -field AssociatedDsm
 
 <dd>
 <p>A string field of maximum length 63 characters. This string field returns the friendly name of the DSM that controls the devices that are exposed by this controller.</p>

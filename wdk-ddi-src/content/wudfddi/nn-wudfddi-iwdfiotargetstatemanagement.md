@@ -7,7 +7,7 @@ old-location: wdf\iwdfiotargetstatemanagement.htm
 old-project: wdf
 ms.assetid: 6870b6fa-1a90-4a7a-935a-4ce8eda940a1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

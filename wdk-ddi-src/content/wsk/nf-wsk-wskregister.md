@@ -7,7 +7,7 @@ old-location: netvista\wskregister.htm
 old-project: netvista
 ms.assetid: 340933ad-1a71-421c-b1e1-360aa9c441fd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WskRegister
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ NTSTATUS WskRegister(
 ## -parameters
 <dl>
 
-### -param <i>WskClientNpi</i> [in]
+### -param WskClientNpi [in]
 
 <dd>
 <p>A pointer to the client NPI implemented by the WSK application.</p>
 </dd>
 
-### -param <i>WskRegistration</i> [out]
+### -param WskRegistration [out]
 
 <dd>
 <p>A pointer to a memory location that identifies a WSK application's registration instance. This
@@ -107,7 +107,7 @@ NTSTATUS WskRegister(
     <b>WskRegister</b> and 
     <a href="..\wsk\nf-wsk-wskderegister.md">WskDeregister</a> functions is the preferred
     method for registering and unregistering WSK applications. The 
-    <a href="NULL">Network Module Registrar</a> remains
+    <a href="netvista.network_module_registrar2">Network Module Registrar</a> remains
     available for compatibility.
 </p>
 
@@ -180,4 +180,4 @@ NTSTATUS WskRegister(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WskRegister function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WskRegister function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

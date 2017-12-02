@@ -58,19 +58,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type. </p>
 </dd>
 
-### -field <b>Value1</b>
+### -field Value1
 
 <dd>
 <p>Specifies the first value of the property. This member is read/write.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Indicates, for get requests, the current setting for the specified property from the values listed below. Indicates, for set requests, the desired setting for the specified property from the values listed below. This member can be set to one of the following values that are defined in <i>ksmedia.h</i>:</p>
@@ -115,7 +115,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Indicates the minidriver's camera control capabilities for the specified property. This member is read-only. This member can be set to one of the following values that are defined in <i>ksmedia.h</i>:</p>
@@ -160,7 +160,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>Value2</b>
+### -field Value2
 
 <dd>
 <p>Specifies the second value of the property. This member is read/write.</p>

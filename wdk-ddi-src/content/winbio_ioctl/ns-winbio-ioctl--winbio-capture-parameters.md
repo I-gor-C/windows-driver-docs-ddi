@@ -59,13 +59,13 @@ typedef struct _WINBIO_CAPTURE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>PayloadSize</b>
+### -field PayloadSize
 
 <dd>
 <p>The total size of the payload.</p>
 </dd>
 
-### -field <b>Purpose</b>
+### -field Purpose
 
 <dd>
 <p>A WINBIO_BIR_PURPOSE purpose, that specifies how captured data is to be used, and as a result, how it should be optimized.  Some sensors will go into a different mode depending on the reason for the data capture.</p>
@@ -88,19 +88,19 @@ typedef struct _WINBIO_CAPTURE_PARAMETERS {
 </table></span></div>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>Specifies the <a href="..\winbio_types\ns-winbio-types--winbio-registered-format.md">WINBIO_REGISTERED_FORMAT</a> format of the data to be returned.</p>
 </dd>
 
-### -field <b>VendorFormat</b>
+### -field VendorFormat
 
 <dd>
 <p>An optional WINBIO_UUID vendor GUID.  This indicates the preferred format of the vendor-specific data in the BIR.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies the WINBIO_BIR_DATA_FLAGS level of processing and other attributes for the data to be returned.  If format owner and type are the Windows standard, this must be WINBIO_DATA_FLAG_RAW.</p>

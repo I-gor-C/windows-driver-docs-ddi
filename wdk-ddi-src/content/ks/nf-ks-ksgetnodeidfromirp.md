@@ -54,10 +54,10 @@ ULONG KsGetNodeIdFromIrp(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>A pointer to the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure for which to determine the associated node ID. This IRP must have been sent to a file object corresponding to a filter, pin, or node.</p>
+<p>A pointer to the <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure for which to determine the associated node ID. This IRP must have been sent to a file object corresponding to a filter, pin, or node.</p>
 </dd>
 </dl>
 
@@ -120,7 +120,7 @@ ULONG KsGetNodeIdFromIrp(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\ks\nf-ks-ksaddirptocancelablequeue.md">KsAddIrpToCancelableQueue</a>

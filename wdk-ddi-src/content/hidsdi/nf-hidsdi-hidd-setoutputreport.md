@@ -56,20 +56,20 @@ BOOLEAN __stdcall HidD_SetOutputReport(
 ## -parameters
 <dl>
 
-### -param <i>HidDeviceObject</i> [in]
+### -param HidDeviceObject [in]
 
 <dd>
 <p>Specifies an open handle to a top-level collection.</p>
 </dd>
 
-### -param <i>ReportBuffer</i> [in]
+### -param ReportBuffer [in]
 
 <dd>
 <p>Pointer to a caller-allocated output report buffer that the caller uses to specify a report ID.</p>
 <p>For more information about this parameter, see the Remarks section.</p>
 </dd>
 
-### -param <i>ReportBufferLength</i> [in]
+### -param ReportBufferLength [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the report buffer. The report buffer must be large enough to hold the output report -- excluding its report ID, if report IDs are used -- plus one additional byte that specifies a nonzero report ID or zero.</p>
@@ -97,11 +97,11 @@ BOOLEAN __stdcall HidD_SetOutputReport(
 <p>For more information, see the following topics:</p>
 
 <p>
-<a href="NULL">Sending HID Reports</a>
+<a href="https://msdn.microsoft.com/a4571b79-847b-4db0-be02-ac2f922162bb">Sending HID Reports</a>
 </p>
 
 <p>
-<a href="NULL">Interpreting HID Reports</a>
+<a href="https://msdn.microsoft.com/10f8c3a1-ad60-4c99-a425-fa8c9a3be0e1">Interpreting HID Reports</a>
 </p>
 
 ## -requirements

@@ -7,7 +7,7 @@ old-location: netvista\rilsendsupservicedataparams_2.htm
 old-project: netvista
 ms.assetid: de9c7d56-5b57-4809-b5cf-93234c934d55
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSENDSUPSERVICEDATAPARAMS, RILSENDSUPSERVICEDATAPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILSENDSUPSERVICEDATAPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwDataSize</b>
+### -field dwDataSize
 
 <dd></dd>
 
-### -field <b>wszData</b>
+### -field wszData
 
 <dd></dd>
 </dl>

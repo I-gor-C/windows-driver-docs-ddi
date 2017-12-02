@@ -59,13 +59,13 @@ VOID BthReuseBrb(
 ## -parameters
 <dl>
 
-### -param <i>pBrb</i> [in, out]
+### -param pBrb [in, out]
 
 <dd>
 <p>Pointer to the BRB to reuse.</p>
 </dd>
 
-### -param <i>brbType</i> [in]
+### -param brbType [in]
 
 <dd>
 <p>Specifies a value from the 

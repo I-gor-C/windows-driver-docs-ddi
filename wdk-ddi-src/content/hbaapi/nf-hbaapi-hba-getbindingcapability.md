@@ -56,19 +56,19 @@ HBA_STATUS HBA_API HBA_GetBindingCapability(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
 </dd>
 
-### -param <i>HbaPortWWN</i> [in]
+### -param HbaPortWWN [in]
 
 <dd>
 <p>Contains a 64-bit worldwide name (WWN) that uniquely identifies the local HBA port whose persistent binding capabilities will be retrieved. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.</p>
 </dd>
 
-### -param <i>Flags</i> [out]
+### -param Flags [out]
 
 <dd>
 <p>Contains a bitwise OR of flags associated with the <a href="storage.hba_bind_type">HBA_BIND_TYPE</a> WMI property qualifier that represent the persistent binding capabilities of the port. </p>

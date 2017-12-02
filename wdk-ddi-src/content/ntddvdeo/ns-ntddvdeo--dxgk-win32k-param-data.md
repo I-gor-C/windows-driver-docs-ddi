@@ -58,31 +58,31 @@ typedef struct _DXGK_WIN32K_PARAM_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>PathsArray</b>
+### -field PathsArray
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>ModesArray</b>
+### -field ModesArray
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>NumPathArrayElements</b>
+### -field NumPathArrayElements
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>NumModeArrayElements</b>
+### -field NumModeArrayElements
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>SDCFlags</b>
+### -field SDCFlags
 
 <dd>
 <p>Reserved for system use.</p>

@@ -61,49 +61,49 @@ typedef struct _SUB_Q_CURRENT_POSITION {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Indicates, among other things, the length of the Q subchannel data that was retrieved. See <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-header.md">SUB_Q_HEADER</a> for more details. </p>
 </dd>
 
-### -field <b>FormatCode</b>
+### -field FormatCode
 
 <dd>
 <p>Should have a value of IOCTL_CDROM_CURRENT_POSITION. </p>
 </dd>
 
-### -field <b>Control</b>
+### -field Control
 
 <dd>
 <p>Defines various types of information within the table of contents lead-in area. For more information about the permissible values for this member, see specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS). </p>
 </dd>
 
-### -field <b>ADR</b>
+### -field ADR
 
 <dd>
 <p>Indicates the type of information encoded in the Q subchannel of the block. For information about the permissible values for this member, see specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS). </p>
 </dd>
 
-### -field <b>TrackNumber</b>
+### -field TrackNumber
 
 <dd>
 <p>Contains the current track number.</p>
 </dd>
 
-### -field <b>IndexNumber</b>
+### -field IndexNumber
 
 <dd>
 <p>Contains the current index number.</p>
 </dd>
 
-### -field <b>AbsoluteAddress</b>
+### -field AbsoluteAddress
 
 <dd>
 <p>Gives the current location relative to the logical beginning of the media. The bytes in this array are arranged in big-endian order. <b>AbsoluteAddress</b>[0] contains the most significant byte, and <b>AbsoluteAddress</b>[3] contains the least significant byte. </p>
 </dd>
 
-### -field <b>TrackRelativeAddress</b>
+### -field TrackRelativeAddress
 
 <dd>
 <p>Gives the current location relative to the logical beginning of the current track. The bytes in this array are arranged in big-endian order. <b>TrackRelativeAddress</b>[0] contains the most significant byte, and <b>TrackRelativeAddress</b>[3] contains the least significant byte. </p>

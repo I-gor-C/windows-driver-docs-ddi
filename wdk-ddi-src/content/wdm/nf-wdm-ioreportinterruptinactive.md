@@ -55,7 +55,7 @@ VOID IoReportInterruptInactive(
 ## -parameters
 <dl>
 
-### -param <i>Parameters</i> [in]
+### -param Parameters [in]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--io-report-interrupt-active-state-parameters.md">IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS</a> structure that contains the connection context associated with the interrupt. The caller received this context from the <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> call that registered the ISR.</p>

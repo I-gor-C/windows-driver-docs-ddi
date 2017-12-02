@@ -7,7 +7,7 @@ old-location: debugger\idebuginputcallbacks_endinput.htm
 old-project: debugger
 ms.assetid: e22b616c-51f6-4687-95b0-eb833ceb9ec3
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugInputCallbacks, EndInput, IDebugInputCallbacks::EndInput
 ms.prod: windows-hardware
 ms.technology: windows-devices

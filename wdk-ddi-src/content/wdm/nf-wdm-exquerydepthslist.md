@@ -55,7 +55,7 @@ USHORT ExQueryDepthSList(
 ## -parameters
 <dl>
 
-### -param <i>SListHead</i> [in]
+### -param SListHead [in]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563810">SLIST_HEADER</a> structure that serves as the header for the sequenced singly linked list. <i>SListHead</i> must have been initialized by calling <a href="kernel.exinitializeslisthead">ExInitializeSListHead</a>.</p>

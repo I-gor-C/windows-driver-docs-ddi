@@ -54,7 +54,7 @@ typedef struct _PEP_PPM_IDLE_CANCEL {
 ## -struct-fields
 <dl>
 
-### -field <b>CancelCode</b>
+### -field CancelCode
 
 <dd>
 <p>[in] A <a href="kernel.pep_processor_idle_cancel_code">PEP_PROCESSOR_IDLE_CANCEL_CODE</a> enumeration value that indicates why the processor could not enter the idle state selected by the platform extension plug-in (PEP).</p>

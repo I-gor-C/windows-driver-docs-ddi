@@ -55,13 +55,13 @@ typedef struct _MSFC_EventBuffer {
 ## -struct-fields
 <dl>
 
-### -field <b>EventType</b>
+### -field EventType
 
 <dd>
 <p>Indicates the type of the event. The values that can be assigned to this member are defined by the <a href="storage.event_types_qualifiers">EVENT_TYPE_QUALIFIERS</a> WMI class qualifier.</p>
 </dd>
 
-### -field <b>EventInfo</b>
+### -field EventInfo
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-eventinfo.md">HBA_EventInfo</a> that holds information about the events that were retrieved. </p>

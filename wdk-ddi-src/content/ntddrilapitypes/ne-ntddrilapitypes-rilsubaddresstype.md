@@ -7,7 +7,7 @@ old-location: netvista\rilsubaddresstype.htm
 old-project: netvista
 ms.assetid: 18c4f26a-6463-4157-bd81-6bbb2100eff2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILSUBADDRESSTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SUBADDRTYPE_USER"></a><a id="ril_subaddrtype_user"></a><b>RIL_SUBADDRTYPE_USER</b>
+### -field RIL_SUBADDRTYPE_USER
 
 <dd></dd>
 
-### -field <a id="RIL_SUBADDRTYPE_MAX"></a><a id="ril_subaddrtype_max"></a><b>RIL_SUBADDRTYPE_MAX</b>
+### -field RIL_SUBADDRTYPE_MAX
 
 <dd></dd>
 </dl>

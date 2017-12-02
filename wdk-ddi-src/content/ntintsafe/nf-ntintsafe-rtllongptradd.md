@@ -56,19 +56,19 @@ NTSTATUS RtlLongPtrAdd(
 ## -parameters
 <dl>
 
-### -param <i>u8Augend</i> [in]
+### -param u8Augend [in]
 
 <dd>
 <p>The first value in the equation.</p>
 </dd>
 
-### -param <i>u8Addend</i> [in]
+### -param u8Addend [in]
 
 <dd>
 <p>The value to add to <i>u8Augend</i>.</p>
 </dd>
 
-### -param <i>pu8Result</i> [out]
+### -param pu8Result [out]
 
 <dd>
 <p>A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

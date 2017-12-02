@@ -56,14 +56,14 @@ typedef struct IDARG_OUT_PARSEMONITORDESCRIPTION {
 ## -struct-fields
 <dl>
 
-### -field <b>MonitorModeBufferOutputCount</b>
+### -field MonitorModeBufferOutputCount
 
 <dd>
 <p>
                      [out] If the <a href="..\iddcx\ns-iddcx-idarg-in-parsemonitordescription.md">IDARG_IN_PARSEMONITORDESCRIPTION</a> value <b>pMonitorModes</b> was NULL, then the driver should set this to the number of monitor modes the driver would generate for the specified monitor description. f the <b>IDARG_IN_PARSEMONITORDESCRIPTION</b> value <b>pMonitorModes</b> was non-NULL then this is the count of the monitor modes that the driver copied to that buffer.</p>
 </dd>
 
-### -field <b>PreferredMonitorModeIdx</b>
+### -field PreferredMonitorModeIdx
 
 <dd>
 <p>

@@ -62,55 +62,55 @@ HBA_STATUS HBA_API HBA_SendScsiInquiry(
 ## -parameters
 <dl>
 
-### -param <i>handle</i> [in]
+### -param handle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the target port is located.</p>
 </dd>
 
-### -param <i>portWWN</i> [in]
+### -param portWWN [in]
 
 <dd>
 <p>Contains a 64-bit worldwide name (WWN) that uniquely identifies the remote target port to which the SCSI inquiry command is sent. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
-### -param <i>fcLUN</i> [in]
+### -param fcLUN [in]
 
 <dd>
 <p>Indicates the fibre channel logical unit number of the logical unit to which the SCSI inquiry command is sent. </p>
 </dd>
 
-### -param <i>EVPD</i> [in]
+### -param EVPD [in]
 
 <dd>
 <p>Indicates, when 0, that the inquiry command retrieves the standard SCSI inquiry data. When this member is set to 1, it indicates the inquiry command retrieves the vital product data (VPD) specified by <i>PageCode</i>.</p>
 </dd>
 
-### -param <i>PageCode</i> [in]
+### -param PageCode [in]
 
 <dd>
 <p>Indicates the VPD page code to retrieve when <i>EVPD</i> is set to 1. If <i>EVPD </i>is not set to 1, <i>PageCode </i>is ignored.</p>
 </dd>
 
-### -param <i>pRspBuffer</i> [out]
+### -param pRspBuffer [out]
 
 <dd>
 <p>Pointer to a buffer that receives the output data of the SCSI inquiry command.</p>
 </dd>
 
-### -param <i>pRespBufferSize</i> [in]
+### -param pRespBufferSize [in]
 
 <dd>
 <p>Indicates the size, in bytes, of the buffer at <i>pRspBuffer</i>.</p>
 </dd>
 
-### -param <i>pSenseBuffer</i> [out]
+### -param pSenseBuffer [out]
 
 <dd>
 <p>Pointer to a buffer that receives the SCSI sense data.</p>
 </dd>
 
-### -param <i>SenseBufferSize</i> [in]
+### -param SenseBufferSize [in]
 
 <dd>
 <p>On input, indicates the size, in bytes, of the buffer at <i>pSenseBuffer</i>. On output, this member indicates the number of bytes of sense data returned. </p>

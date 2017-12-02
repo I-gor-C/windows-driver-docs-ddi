@@ -55,13 +55,13 @@ typedef struct _MOUNTMGR_DRIVE_LETTER_TARGET {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceNameLength</b>
+### -field DeviceNameLength
 
 <dd>
 <p>Contains the length, in bytes, of device name. </p>
 </dd>
 
-### -field <b>DeviceName</b>
+### -field DeviceName
 
 <dd>
 <p>Contains the nonpersistent target device name. </p>
@@ -71,7 +71,7 @@ typedef struct _MOUNTMGR_DRIVE_LETTER_TARGET {
 ## -remarks
 <p>The mount manager responds to the IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER request by furnishing the client with a drive letter for the target device. </p>
 
-<p>Nonpersistent target names must contain the full path of a target object name in the system object tree. For example: "\Device\HarddiskVolume1". For a discussion of the difference between drive letters and nonpersistent target device names, see <a href="NULL">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
+<p>Nonpersistent target names must contain the full path of a target object name in the system object tree. For example: "\Device\HarddiskVolume1". For a discussion of the difference between drive letters and nonpersistent target device names, see <a href="storage.supporting_mount_manager_requests_in_a_storage_class_driver">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
 
 ## -requirements
 <table>

@@ -55,11 +55,11 @@ typedef enum D3DKMT_MULTIPLANE_OVERLAY_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP"></a><a id="d3dkmt_multiplane_overlay_flag_vertical_flip"></a><b>D3DKMT_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP</b>
+### -field D3DKMT_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP
 
 <dd></dd>
 
-### -field <a id="D3DKMT_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP"></a><a id="d3dkmt_multiplane_overlay_flag_horizontal_flip"></a><b>D3DKMT_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP</b>
+### -field D3DKMT_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP
 
 <dd></dd>
 </dl>

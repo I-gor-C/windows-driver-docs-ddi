@@ -74,121 +74,121 @@ typedef enum _INTERFACE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="InterfaceTypeUndefined"></a><a id="interfacetypeundefined"></a><a id="INTERFACETYPEUNDEFINED"></a><b>InterfaceTypeUndefined</b>
+### -field InterfaceTypeUndefined
 
 <dd>
 <p>Indicates that the interface type is undefined. </p>
 </dd>
 
-### -field <a id="Internal"></a><a id="internal"></a><a id="INTERNAL"></a><b>Internal</b>
+### -field Internal
 
 <dd>
 <p>For internal use only. </p>
 </dd>
 
-### -field <a id="Isa"></a><a id="isa"></a><a id="ISA"></a><b>Isa</b>
+### -field Isa
 
 <dd>
 <p>Indicates that the interface is published by the ISA bus driver. </p>
 </dd>
 
-### -field <a id="Eisa"></a><a id="eisa"></a><a id="EISA"></a><b>Eisa</b>
+### -field Eisa
 
 <dd>
 <p>Indicates that the interface is published by the EISA bus driver. </p>
 </dd>
 
-### -field <a id="MicroChannel"></a><a id="microchannel"></a><a id="MICROCHANNEL"></a><b>MicroChannel</b>
+### -field MicroChannel
 
 <dd>
 <p>Indicates that the interface is published by the MicroChannel bus driver.</p>
 </dd>
 
-### -field <a id="TurboChannel"></a><a id="turbochannel"></a><a id="TURBOCHANNEL"></a><b>TurboChannel</b>
+### -field TurboChannel
 
 <dd>
 <p>Indicates that the interface is published by the TurboChannel bus driver.</p>
 </dd>
 
-### -field <a id="PCIBus"></a><a id="pcibus"></a><a id="PCIBUS"></a><b>PCIBus</b>
+### -field PCIBus
 
 <dd>
 <p>Indicates that the interface is published by the PCI bus driver.</p>
 </dd>
 
-### -field <a id="VMEBus"></a><a id="vmebus"></a><a id="VMEBUS"></a><b>VMEBus</b>
+### -field VMEBus
 
 <dd>
 <p>Indicates that the interface is published by the VME bus driver.</p>
 </dd>
 
-### -field <a id="NuBus"></a><a id="nubus"></a><a id="NUBUS"></a><b>NuBus</b>
+### -field NuBus
 
 <dd>
 <p>Indicates that the interface is published by the NuBus driver.</p>
 </dd>
 
-### -field <a id="PCMCIABus"></a><a id="pcmciabus"></a><a id="PCMCIABUS"></a><b>PCMCIABus</b>
+### -field PCMCIABus
 
 <dd>
 <p>Indicates that the interface is published by the PCMCIA bus driver.</p>
 </dd>
 
-### -field <a id="CBus"></a><a id="cbus"></a><a id="CBUS"></a><b>CBus</b>
+### -field CBus
 
 <dd>
 <p>Indicates that the interface is published by the Cbus driver.</p>
 </dd>
 
-### -field <a id="MPIBus"></a><a id="mpibus"></a><a id="MPIBUS"></a><b>MPIBus</b>
+### -field MPIBus
 
 <dd>
 <p>Indicates that the interface is published by the MPI bus driver.</p>
 </dd>
 
-### -field <a id="MPSABus"></a><a id="mpsabus"></a><a id="MPSABUS"></a><b>MPSABus</b>
+### -field MPSABus
 
 <dd>
 <p>Indicates that the interface is published by the MPSA bus driver.</p>
 </dd>
 
-### -field <a id="ProcessorInternal"></a><a id="processorinternal"></a><a id="PROCESSORINTERNAL"></a><b>ProcessorInternal</b>
+### -field ProcessorInternal
 
 <dd>
 <p>Indicates that the interface is published by the ISA bus driver.</p>
 </dd>
 
-### -field <a id="InternalPowerBus"></a><a id="internalpowerbus"></a><a id="INTERNALPOWERBUS"></a><b>InternalPowerBus</b>
+### -field InternalPowerBus
 
 <dd>
 <p>Indicates that the interface is published for an internal power bus. Some devices have power control ports that allow them to share power control with other devices. The Windows architecture represents these devices as slots on a virtual bus called an "internal power bus." </p>
 </dd>
 
-### -field <a id="PNPISABus"></a><a id="pnpisabus"></a><a id="PNPISABUS"></a><b>PNPISABus</b>
+### -field PNPISABus
 
 <dd>
 <p>Indicates that the interface is published by the PNPISA bus driver.</p>
 </dd>
 
-### -field <a id="PNPBus"></a><a id="pnpbus"></a><a id="PNPBUS"></a><b>PNPBus</b>
+### -field PNPBus
 
 <dd>
 <p>Indicates that the interface is published by the PNP bus driver.</p>
 </dd>
 
-### -field <a id="Vmcs"></a><a id="vmcs"></a><a id="VMCS"></a><b>Vmcs</b>
+### -field Vmcs
 
 <dd>
 <p>Reserved for use by the operating system.</p>
 </dd>
 
-### -field <a id="ACPIBus"></a><a id="acpibus"></a><a id="ACPIBUS"></a><b>ACPIBus</b>
+### -field ACPIBus
 
 <dd>
 <p>Indicates that the interface is published by the ACPI bus driver. The ACPI bus driver enumerates devices that are described in the ACPI firmware of the hardware platform. These devices might physically reside on buses that are controlled by other bus drivers, but the ACPI bus driver must enumerate these devices because the other bus drivers cannot detect them. This interface type is defined starting with Windows 8.</p>
 </dd>
 
-### -field <a id="MaximumInterfaceType"></a><a id="maximuminterfacetype"></a><a id="MAXIMUMINTERFACETYPE"></a><b>MaximumInterfaceType</b>
+### -field MaximumInterfaceType
 
 <dd>
 <p>Marks the upper limit of the possible bus types.</p>

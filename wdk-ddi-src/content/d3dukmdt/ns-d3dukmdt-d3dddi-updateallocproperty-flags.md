@@ -60,20 +60,20 @@ typedef struct _D3DDDI_UPDATEALLOCPROPERTY_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>AccessedPhysically </b>
+### -field AccessedPhysically 
 
 <dd>
 <p>A UINT value that specifies whether the allocation is accessed by its physical address.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that is contained in D3DDDI_UPDATEALLOC_PROPERTY_FLAGS that can hold one 32-bit value that identifies how to unlock a resource.</p>

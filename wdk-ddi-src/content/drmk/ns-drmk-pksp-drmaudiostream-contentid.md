@@ -62,55 +62,55 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies the property to get or set. This member is a structure of type <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Pointer to context data. This is the context specified in the <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a> function's <i>DrmForward</i> parameter.</p>
 </dd>
 
-### -field <b>DrmAddContentHandlers</b>
+### -field DrmAddContentHandlers
 
 <dd>
 <p>Pointer to <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a> function.</p>
 </dd>
 
-### -field <b>DrmCreateContentMixed</b>
+### -field DrmCreateContentMixed
 
 <dd>
 <p>Pointer to <a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a> function.</p>
 </dd>
 
-### -field <b>DrmDestroyContent</b>
+### -field DrmDestroyContent
 
 <dd>
 <p>Pointer to <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a> function.</p>
 </dd>
 
-### -field <b>DrmForwardContentToDeviceObject</b>
+### -field DrmForwardContentToDeviceObject
 
 <dd>
 <p>Pointer to <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a> function.</p>
 </dd>
 
-### -field <b>DrmForwardContentToFileObject</b>
+### -field DrmForwardContentToFileObject
 
 <dd>
 <p>Pointer to <a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a> function.</p>
 </dd>
 
-### -field <b>DrmForwardContentToInterface</b>
+### -field DrmForwardContentToInterface
 
 <dd>
 <p>Pointer to <a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a> function.</p>
 </dd>
 
-### -field <b>DrmGetContentRights</b>
+### -field DrmGetContentRights
 
 <dd>
 <p>Pointer to <a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a> function.</p>

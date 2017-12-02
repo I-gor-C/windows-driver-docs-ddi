@@ -57,25 +57,25 @@ typedef struct _MSiSCSI_TargetMappings {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueAdapterId</b>
+### -field UniqueAdapterId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="..\iscsimgt\ns-iscsimgt--msiscsi-hbainformation.md">MSiSCSI_HBAInformation</a> structure.</p>
 </dd>
 
-### -field <b>TargetMappingCount</b>
+### -field TargetMappingCount
 
 <dd>
 <p>The number of mappings in the <b>TargetMappings</b> member.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for Microsoft use only.</p>
 </dd>
 
-### -field <b>TargetMappings</b>
+### -field TargetMappings
 
 <dd>
 <p>A variable-length array of <a href="..\iscsidef\ns-iscsidef--iscsi-targetmapping.md">ISCSI_TargetMapping</a> structures, each of which provides a list of LUN mappings that are associated with a particular iSCSI session that is associated with the adapter ID.</p>

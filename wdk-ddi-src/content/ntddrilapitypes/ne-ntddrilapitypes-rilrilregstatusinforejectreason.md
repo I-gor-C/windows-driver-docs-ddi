@@ -7,7 +7,7 @@ old-location: netvista\rilrilregstatusinforejectreason.htm
 old-project: netvista
 ms.assetid: 17aad504-4223-4764-8a24-536a81807650
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,75 +71,75 @@ typedef enum _RILRILREGSTATUSINFOREJECTREASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_REGREJECTREASON_IMSIUNK_HLR"></a><a id="ril_regrejectreason_imsiunk_hlr"></a><b>RIL_REGREJECTREASON_IMSIUNK_HLR</b>
+### -field RIL_REGREJECTREASON_IMSIUNK_HLR
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_ILLEGAL_MS"></a><a id="ril_regrejectreason_illegal_ms"></a><b>RIL_REGREJECTREASON_ILLEGAL_MS</b>
+### -field RIL_REGREJECTREASON_ILLEGAL_MS
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_IMSIUNK_VLR"></a><a id="ril_regrejectreason_imsiunk_vlr"></a><b>RIL_REGREJECTREASON_IMSIUNK_VLR</b>
+### -field RIL_REGREJECTREASON_IMSIUNK_VLR
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_IMSI_NOTACCEPTED"></a><a id="ril_regrejectreason_imsi_notaccepted"></a><b>RIL_REGREJECTREASON_IMSI_NOTACCEPTED</b>
+### -field RIL_REGREJECTREASON_IMSI_NOTACCEPTED
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_ILLEGAL_ME"></a><a id="ril_regrejectreason_illegal_me"></a><b>RIL_REGREJECTREASON_ILLEGAL_ME</b>
+### -field RIL_REGREJECTREASON_ILLEGAL_ME
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_PLMN_NOTALLOWED"></a><a id="ril_regrejectreason_plmn_notallowed"></a><b>RIL_REGREJECTREASON_PLMN_NOTALLOWED</b>
+### -field RIL_REGREJECTREASON_PLMN_NOTALLOWED
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_LOCAREA_NOTALLOWED"></a><a id="ril_regrejectreason_locarea_notallowed"></a><b>RIL_REGREJECTREASON_LOCAREA_NOTALLOWED</b>
+### -field RIL_REGREJECTREASON_LOCAREA_NOTALLOWED
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_ROAMING_NOTALLOWED"></a><a id="ril_regrejectreason_roaming_notallowed"></a><b>RIL_REGREJECTREASON_ROAMING_NOTALLOWED</b>
+### -field RIL_REGREJECTREASON_ROAMING_NOTALLOWED
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_NOSUITABLECELL"></a><a id="ril_regrejectreason_nosuitablecell"></a><b>RIL_REGREJECTREASON_NOSUITABLECELL</b>
+### -field RIL_REGREJECTREASON_NOSUITABLECELL
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_NETWORKFAILURE"></a><a id="ril_regrejectreason_networkfailure"></a><b>RIL_REGREJECTREASON_NETWORKFAILURE</b>
+### -field RIL_REGREJECTREASON_NETWORKFAILURE
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_MACFAILURE"></a><a id="ril_regrejectreason_macfailure"></a><b>RIL_REGREJECTREASON_MACFAILURE</b>
+### -field RIL_REGREJECTREASON_MACFAILURE
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_SYNCHFAILURE"></a><a id="ril_regrejectreason_synchfailure"></a><b>RIL_REGREJECTREASON_SYNCHFAILURE</b>
+### -field RIL_REGREJECTREASON_SYNCHFAILURE
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_CONGESTION"></a><a id="ril_regrejectreason_congestion"></a><b>RIL_REGREJECTREASON_CONGESTION</b>
+### -field RIL_REGREJECTREASON_CONGESTION
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_GSMAUTH_NOTACCEPTED"></a><a id="ril_regrejectreason_gsmauth_notaccepted"></a><b>RIL_REGREJECTREASON_GSMAUTH_NOTACCEPTED</b>
+### -field RIL_REGREJECTREASON_GSMAUTH_NOTACCEPTED
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_CSG_NOTAUTHORIZED"></a><a id="ril_regrejectreason_csg_notauthorized"></a><b>RIL_REGREJECTREASON_CSG_NOTAUTHORIZED</b>
+### -field RIL_REGREJECTREASON_CSG_NOTAUTHORIZED
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_SVCOPT_NOTSUPPORTED"></a><a id="ril_regrejectreason_svcopt_notsupported"></a><b>RIL_REGREJECTREASON_SVCOPT_NOTSUPPORTED</b>
+### -field RIL_REGREJECTREASON_SVCOPT_NOTSUPPORTED
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_REQSVCOPT_NOTSUBSCRIBED"></a><a id="ril_regrejectreason_reqsvcopt_notsubscribed"></a><b>RIL_REGREJECTREASON_REQSVCOPT_NOTSUBSCRIBED</b>
+### -field RIL_REGREJECTREASON_REQSVCOPT_NOTSUBSCRIBED
 
 <dd></dd>
 
-### -field <a id="RIL_REGREJECTREASON_SVCOPT_OUTOFORDER"></a><a id="ril_regrejectreason_svcopt_outoforder"></a><b>RIL_REGREJECTREASON_SVCOPT_OUTOFORDER</b>
+### -field RIL_REGREJECTREASON_SVCOPT_OUTOFORDER
 
 <dd></dd>
 </dl>

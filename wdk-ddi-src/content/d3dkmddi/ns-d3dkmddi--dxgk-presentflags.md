@@ -76,28 +76,28 @@ typedef struct _DXGK_PRESENTFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Blt</b>
+### -field Blt
 
 <dd>
 <p>[in] A UINT value that specifies whether a copy operation, instead of a flip operation, occurs between source and destination surfaces.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>ColorFill</b>
+### -field ColorFill
 
 <dd>
 <p>[in] A UINT value that specifies whether a source exists to present from. If this member is set, no source exists, and the driver should fill the destination rectangle on the destination surface with the A8R8G8B8 color that the <b>Color</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-present.md">DXGKARG_PRESENT</a> structure specifies.</p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>Flip</b>
+### -field Flip
 
 <dd>
 <p>[in] A UINT value that specifies whether a flip operation occurs between back and primary surfaces. If this member is set, the driver should perform the present operation by pointing the video scan output to the source rather than copying from the source to the destination. This type of present operation is tear-free.</p>
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>FlipWithNoWait</b>
+### -field FlipWithNoWait
 
 <dd>
 <p>[in] A UINT value that specifies whether tear-free flip operations should not stall the graphics pipeline. If a tear-free flip stalls the graphics pipeline, the graphics processing unit (GPU) must wait for the tear-free flip to take effect before it runs the subsequent command. </p>
@@ -105,28 +105,28 @@ typedef struct _DXGK_PRESENTFLAGS {
 <p>Setting this member is equivalent to setting the fourth bit of the 32-bit <b>Value</b> member (0x00000008).</p>
 </dd>
 
-### -field <b>SrcColorKey</b>
+### -field SrcColorKey
 
 <dd>
 <p>[in] A UINT value that specifies whether to perform source color-keying by using the value in the <b>Color</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-present.md">DXGKARG_PRESENT</a> structure. That is, any pixel in the source surface that matches the color key should not be copied to the destination surface, and all of the source pixels that do not match the color key should be copied.</p>
 <p>Setting this member is equivalent to setting the fifth bit of the 32-bit <b>Value</b> member (0x00000010).</p>
 </dd>
 
-### -field <b>DstColorKey</b>
+### -field DstColorKey
 
 <dd>
 <p>[in] A UINT value that specifies whether to perform destination color-keying by using the value in the <b>Color</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-present.md">DXGKARG_PRESENT</a> structure. That is, any pixel in the destination surface that matches the color key should be replaced with the corresponding pixel from the source surface, and all destination pixels that do not match the color key should not be replaced.</p>
 <p>Setting this member is equivalent to setting the sixth bit of the 32-bit <b>Value</b> member (0x00000020).</p>
 </dd>
 
-### -field <b>LinearToSrgb</b>
+### -field LinearToSrgb
 
 <dd>
 <p>[in] A UINT value that specifies whether to convert the linear-formatted source to sRGB format during the copy operation. sRGB format is gamma corrected. For more information about the sRGB format, visit the <a href="http://go.microsoft.com/fwlink/p/?linkid=10112">sRGB</a> website.</p>
 <p>Setting this member is equivalent to setting the seventh bit of the 32-bit <b>Value</b> member (0x00000040).</p>
 </dd>
 
-### -field <b>Rotate</b>
+### -field Rotate
 
 <dd>
 <p>[in] A UINT value that specifies whether to rotate the presentation data to match the current orientation of the screen during the presentation bit-block transfer (bitblt). The current orientation of the screen is set in the <b>Rotation</b> member of a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path-transformation.md">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure, which is set in the <b>ContentTransformation</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure for the video present path.</p>
@@ -134,7 +134,7 @@ typedef struct _DXGK_PRESENTFLAGS {
 <p>Setting this member is equivalent to setting the eighth bit of the 32-bit <b>Value</b> member (0x00000080).</p>
 </dd>
 
-### -field <b>FlipStereo</b>
+### -field FlipStereo
 
 <dd>
 <p>[in] Specifies whether the driver should flip both left and right images of a stereo allocation.</p>
@@ -146,7 +146,7 @@ typedef struct _DXGK_PRESENTFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>FlipStereoTemporaryMono</b>
+### -field FlipStereoTemporaryMono
 
 <dd>
 <p>[in] Specifies whether the driver should use the left image of a stereo allocation for the right and left portions of a stereo frame. The driver performs the same present operation as with <b>FlipStereo</b>, except that it should scan out only from the left image to produce both images of a stereo frame.</p>
@@ -158,7 +158,7 @@ typedef struct _DXGK_PRESENTFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>FlipStereoPreferRight</b>
+### -field FlipStereoPreferRight
 
 <dd>
 <p>[in] Specifies that when the driver clones a stereo primary allocation to a mono monitor, it should use the right image.</p>
@@ -168,7 +168,7 @@ typedef struct _DXGK_PRESENTFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>BltStereoUseRight</b>
+### -field BltStereoUseRight
 
 <dd>
 <p>[in] Specifies that when the driver presents from a stereo allocation to a mono allocation, it should use the right image. If not set, the driver should use the left image.</p>
@@ -176,7 +176,7 @@ typedef struct _DXGK_PRESENTFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>FlipWithMultiPlaneOverlay</b>
+### -field FlipWithMultiPlaneOverlay
 
 <dd>
 <p>[in] Specifies whether a flip operation occurs between an overlay plane and the primary surface. If this member is set, the driver should perform the present operation by pointing the video scan output to the source plane rather than copying from the source plane to the destination.</p>
@@ -184,7 +184,7 @@ typedef struct _DXGK_PRESENTFLAGS {
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
@@ -192,14 +192,14 @@ typedef struct _DXGK_PRESENTFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>Setting this member to zero is equivalent to setting the remaining 24 bits (0xFFFFFF00) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>[in] A member in the union that DXGK_PRESENTFLAGS contains that can hold a 32-bit value that identifies the type of present operation to perform.</p>

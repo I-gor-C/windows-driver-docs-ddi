@@ -54,7 +54,7 @@ typedef struct _D3DDDIARG_VALIDATETEXTURESTAGESTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>NumPasses</b>
+### -field NumPasses
 
 <dd>
 <p>[in] The number of passes in which the hardware can perform the blending operations that are specified in the current state.</p>

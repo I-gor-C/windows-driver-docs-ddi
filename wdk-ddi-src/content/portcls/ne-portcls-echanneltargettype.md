@@ -56,19 +56,19 @@ typedef enum _eChannelTargetType {
 ## -enum-fields
 <dl>
 
-### -field <a id="eVolumeAttribute"></a><a id="evolumeattribute"></a><a id="EVOLUMEATTRIBUTE"></a><b>eVolumeAttribute</b>
+### -field eVolumeAttribute
 
 <dd>
 <p>Indicates a volume level control node.</p>
 </dd>
 
-### -field <a id="eMuteAttribute"></a><a id="emuteattribute"></a><a id="EMUTEATTRIBUTE"></a><b>eMuteAttribute</b>
+### -field eMuteAttribute
 
 <dd>
 <p>Indicates a Mute node.</p>
 </dd>
 
-### -field <a id="ePeakMeterAttribute"></a><a id="epeakmeterattribute"></a><a id="EPEAKMETERATTRIBUTE"></a><b>ePeakMeterAttribute</b>
+### -field ePeakMeterAttribute
 
 <dd>
 <p>Indicates a PeakMeter node.</p>

@@ -58,25 +58,25 @@ typedef struct _STOR_UNIT_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceAttentionSupported</b>
+### -field DeviceAttentionSupported
 
 <dd>
 <p>Set to 1 if device attention is supported for the unit. Otherwise, set to 0.</p>
 </dd>
 
-### -field <b>AsyncNotificationSupported</b>
+### -field AsyncNotificationSupported
 
 <dd>
 <p>Set to 1 if the device supports asynchronous notifications. Otherwise, set to 0.</p>
 </dd>
 
-### -field <b>D3ColdNotSupported</b>
+### -field D3ColdNotSupported
 
 <dd>
 <p>Set to 1 if the D3 Cold power state is NOT supported. Otherwise, set to 0.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved bits. Must be set to 0.</p>

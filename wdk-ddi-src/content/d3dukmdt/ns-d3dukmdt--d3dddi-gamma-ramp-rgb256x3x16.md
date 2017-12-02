@@ -56,19 +56,19 @@ typedef struct _D3DDDI_GAMMA_RAMP_RGB256x3x16 {
 ## -struct-fields
 <dl>
 
-### -field <b>Red</b>
+### -field Red
 
 <dd>
 <p>An array of 16-bit values that holds the gamma function for the red color channel.</p>
 </dd>
 
-### -field <b>Green</b>
+### -field Green
 
 <dd>
 <p>An array of 16-bit values that holds the gamma function for the green color channel.</p>
 </dd>
 
-### -field <b>Blue</b>
+### -field Blue
 
 <dd>
 <p>An array of 16-bit values that holds the gamma function for the blue color channel.</p>

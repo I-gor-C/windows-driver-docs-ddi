@@ -55,7 +55,7 @@ VOID IoFreeErrorLogEntry(
 ## -parameters
 <dl>
 
-### -param <i>ElEntry</i> [in]
+### -param ElEntry [in]
 
 <dd>
 <p>Pointer to an error log packet allocated by <a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>. </p>
@@ -66,7 +66,7 @@ VOID IoFreeErrorLogEntry(
 <p>None</p>
 
 ## -remarks
-<p>Drivers use <b>IoFreeErrorLogEntry</b> to free an error log entry allocated by <a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>. <a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a> also frees any error log entries passed to it, so drivers must not call both on the same log entry.</p>
+<p>Drivers use <b>IoFreeErrorLogEntry</b> to free an error log entry allocated by <a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>. <a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a> also frees any error log entries passed to it, so drivers must not call both on the same log entry.</p>
 
 ## -requirements
 <table>
@@ -129,7 +129,7 @@ VOID IoFreeErrorLogEntry(
 <a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
+<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
 </dt>
 </dl>
 <p> </p>

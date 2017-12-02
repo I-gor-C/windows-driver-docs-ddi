@@ -54,7 +54,7 @@ USHORT IoSizeOfIrp(
 ## -parameters
 <dl>
 
-### -param <i>StackSize</i> [in]
+### -param StackSize [in]
 
 <dd>
 <p>Specifies the number of stack locations for the IRP. </p>

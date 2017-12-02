@@ -7,7 +7,7 @@ old-location: ifsk\fltgetvolumename.htm
 old-project: ifsk
 ms.assetid: 50815b33-d417-4499-9423-f65697396200
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltGetVolumeName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ NTSTATUS FltGetVolumeName(
 ## -parameters
 <dl>
 
-### -param <i>Volume</i> [in]
+### -param Volume [in]
 
 <dd>
 <p>An opaque pointer for the volume. </p>
 </dd>
 
-### -param <i>VolumeName</i> [in, out, optional]
+### -param VolumeName [in, out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the volume's non-persistent device object name (for example, "\Device\HarddiskVolume1") when STATUS_SUCCESS is returned.  Be aware that pool for the <b>Buffer</b> member of this structure is caller-allocated also. This parameter is optional and can be <b>NULL</b>. However, <i>VolumeName</i> must be non-<b>NULL</b> if <i>BufferSizeNeeded</i> is <b>NULL</b>.</p>
 </dd>
 
-### -param <i>BufferSizeNeeded</i> [out, optional]
+### -param BufferSizeNeeded [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the size, in bytes, of the requested volume name.   If <b>FltGetVolumeName</b> returns STATUS_BUFFER_TOO_SMALL, <i>BufferSizeNeeded</i> receives the size of the buffer (pointed to by the <b>Buffer</b> member of the UNICODE_STRING structure) that is required for this routine to succeed.</p>
@@ -98,7 +98,7 @@ NTSTATUS FltGetVolumeName(
 
 <p>To get an opaque volume pointer for a volume with a given name, call <a href="..\fltkernel\nf-fltkernel-fltgetvolumefromname.md">FltGetVolumeFromName</a>. </p>
 
-<p>For more information about how to name a volume, see <a href="NULL">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
+<p>For more information about how to name a volume, see <a href="storage.supporting_mount_manager_requests_in_a_storage_class_driver">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
 
 ## -requirements
 <table>
@@ -169,4 +169,4 @@ NTSTATUS FltGetVolumeName(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetVolumeName routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetVolumeName routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

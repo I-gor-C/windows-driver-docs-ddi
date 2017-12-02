@@ -56,7 +56,7 @@ typedef struct IDARG_IN_COMMITMODES {
 ## -struct-fields
 <dl>
 
-### -field <b>PathCount</b>
+### -field PathCount
 
 <dd>
 <p>
@@ -64,7 +64,7 @@ typedef struct IDARG_IN_COMMITMODES {
                  </p>
 </dd>
 
-### -field <b>pPaths</b>
+### -field pPaths
 
 <dd>
 <p>

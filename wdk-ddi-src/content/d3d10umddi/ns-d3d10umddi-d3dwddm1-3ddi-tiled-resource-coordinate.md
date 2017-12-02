@@ -57,25 +57,25 @@ typedef struct D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE {
 ## -struct-fields
 <dl>
 
-### -field <b>X</b>
+### -field X
 
 <dd>
 <p>The <i>x</i> coordinate of the tiled resource. Used for buffer, 1-D, 2-D, and 3-D rendering.</p>
 </dd>
 
-### -field <b>Y</b>
+### -field Y
 
 <dd>
 <p>The <i>y</i> coordinate of the tiled resource. Used for 2-D and 3-D rendering.</p>
 </dd>
 
-### -field <b>Z</b>
+### -field Z
 
 <dd>
 <p>The <i>z</i> coordinate of the tiled resource. Used for 3-D rendering.</p>
 </dd>
 
-### -field <b>Subresource</b>
+### -field Subresource
 
 <dd>
 <p>The subresource of the tiled resource. Used to index into mipmaps and arrays for 1-D, 2-D, and 3-D rendering.</p>

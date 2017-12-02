@@ -61,43 +61,43 @@ PUSB_INTERFACE_DESCRIPTOR USBD_ParseConfigurationDescriptorEx(
 ## -parameters
 <dl>
 
-### -param <i>ConfigurationDescriptor</i> [in]
+### -param ConfigurationDescriptor [in]
 
 <dd>
 <p>Pointer to a USB configuration descriptor that contains the interface for which to search.</p>
 </dd>
 
-### -param <i>StartPosition</i> [in]
+### -param StartPosition [in]
 
 <dd>
 <p>Pointer to the address within the configuration descriptor, provided at <i>ConfigurationDescriptor</i>, to begin searching from. To search from the beginning of the configuration descriptor, the parameters <i>ConfigurationDescriptor</i> and <i>StartPosition</i> must be the same address.</p>
 </dd>
 
-### -param <i>InterfaceNumber</i> [in]
+### -param InterfaceNumber [in]
 
 <dd>
 <p>Specifies the device-defined index of the interface to be retrieved. This should be set to -1 if it should not be a search criterion.</p>
 </dd>
 
-### -param <i>AlternateSetting</i> [in]
+### -param AlternateSetting [in]
 
 <dd>
 <p>Specifies the device-defined alternate-setting index of the interface to be retrieved. If the caller does not wish the alternate setting value to be a search criterion, this parameter should be set to -1.</p>
 </dd>
 
-### -param <i>InterfaceClass</i> [in]
+### -param InterfaceClass [in]
 
 <dd>
 <p>Specifies the device- or USB-defined identifier for the interface class of the interface to be retrieved. If the caller does not wish the interface class value to be a search criterion, this parameter should be set to -1.</p>
 </dd>
 
-### -param <i>InterfaceSubClass</i> [in]
+### -param InterfaceSubClass [in]
 
 <dd>
 <p>Specifies the device- or USB-defined identifier for the interface subclass of the interface to be retrieved. If the caller does not wish the interface subclass value to be a search criterion, this parameter should be set to -1.</p>
 </dd>
 
-### -param <i>InterfaceProtocol</i> [in]
+### -param InterfaceProtocol [in]
 
 <dd>
 <p>Specifies the device- or USB-defined identifier for the interface protocol of the interface to be retrieved. If the caller does not wish the interface protocol value to be a search criterion, this parameter should be set to -1.</p>

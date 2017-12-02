@@ -55,13 +55,13 @@ typedef struct _DXGK_QUERYDISPLAYIDOUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The length of the Display ID.</p>
 </dd>
 
-### -field <b>pDescriptor</b>
+### -field pDescriptor
 
 <dd>
 <p>A pointer to the descriptor of the ID.</p>

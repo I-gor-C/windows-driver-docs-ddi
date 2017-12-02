@@ -82,79 +82,79 @@ typedef struct _D3DHAL_D3DEXTENDEDCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size in bytes of this D3DHAL_D3DEXTENDEDCAPS structure.</p>
 </dd>
 
-### -field <b>dwMinTextureWidth, dwMaxTextureWidth</b>
+### -field dwMinTextureWidth, dwMaxTextureWidth
 
 <dd>
 <p>Specify the minimum and maximum texture widths, in pixels, supported by the driver or device. This member is typically a power of 2. These members are provided as hints to the application, and it is the application's responsibility to adjust texture sizes when necessary.</p>
 </dd>
 
-### -field <b>dwMinTextureHeight, dwMaxTextureHeight</b>
+### -field dwMinTextureHeight, dwMaxTextureHeight
 
 <dd>
 <p>Specify the minimum and maximum texture heights, in pixels, supported by the driver. This member is typically a power of 2.</p>
 </dd>
 
-### -field <b>dwMinStippleWidth, dwMaxStippleWidth</b>
+### -field dwMinStippleWidth, dwMaxStippleWidth
 
 <dd>
 <p>Specify the minimum and maximum stipple widths, in pixels, supported by the driver.</p>
 </dd>
 
-### -field <b>dwMinStippleHeight, dwMaxStippleHeight</b>
+### -field dwMinStippleHeight, dwMaxStippleHeight
 
 <dd>
 <p>Specify the minimum and maximum stipple heights, in pixels, supported by the driver.</p>
 </dd>
 
-### -field <b>dwMaxTextureRepeat</b>
+### -field dwMaxTextureRepeat
 
 <dd>
 <p>Specifies the full range of integer (subfractional) bits of the postnormalized texture indexes. If the D3DDEVCAPS_TEXREPEATNOTSCALEDBYSIZE bit is set, then the number of times a texture can be wrapped is specified by this member. If the D3DDEVCAPS_TEXREPEATNOTSCALEDBYSIZE bit is not set, then the number of time a texture can be wrapped is given by the expression: <b>dwMaxTextureRepeat</b> * (<i>texture size</i>).</p>
 </dd>
 
-### -field <b>dwMaxTextureAspectRatio</b>
+### -field dwMaxTextureAspectRatio
 
 <dd>
 <p>Specifies the maximum texture aspect ratio supported by the hardware. This member is typically a power of 2. This maximum aspect ratio is provided as a measure of the texture's height in pixels divided by its width in pixels, or its width divided by height, whichever produces the greater result. For example, a texture that is 8192 pixels wide by 1 pixel high or 1 pixel wide by 8192 high is invalid with a display device that only supports a maximum aspect ratio of 4092. If the hardware is not limited in aspect ratio, <b>dwMaxTextureAspectRatio</b> is the larger of <b>dwMaxTextureWidth</b> and <b>dwMaxTextureHeight</b>.</p>
 </dd>
 
-### -field <b>dwMaxAnisotropy</b>
+### -field dwMaxAnisotropy
 
 <dd>
 <p>Specifies the maximum valid value for the D3DRENDERSTATE_ANISOTROPY render state. If the driver's hardware does not support anisotropic filtering, the driver should set this member to 1. Setting this member to 0 represents an invalid value.</p>
 </dd>
 
-### -field <b>dvGuardBandLeft</b>
+### -field dvGuardBandLeft
 
 <dd></dd>
 
-### -field <b>dvGuardBandTop</b>
+### -field dvGuardBandTop
 
 <dd></dd>
 
-### -field <b>dvGuardBandRight</b>
+### -field dvGuardBandRight
 
 <dd></dd>
 
-### -field <b>dvGuardBandBottom</b>
+### -field dvGuardBandBottom
 
 <dd>
 <p>Specify the screen-space coordinates, in pixels, of the guard-band clip region. The upper-left corner of this rectangle has coordinates (<b>dvGuardBandLeft</b>, <b>dvGuardBandTop</b>). The lower-left corner has coordinates (<b>dvGuardBandRight</b>, <b>dvGuardBandBottom</b>). Coordinates inside this rectangle but outside the viewport rectangle are automatically clipped. </p>
 </dd>
 
-### -field <b>dvExtentsAdjust</b>
+### -field dvExtentsAdjust
 
 <dd>
 <p>Specifies the number of pixels required to adjust the extents rectangle outward to accommodate antialiasing kernels.</p>
 </dd>
 
-### -field <b>dwStencilCaps</b>
+### -field dwStencilCaps
 
 <dd>
 <p>Specifies the stencil buffer operations supported by the driver or device. For further descriptions of the stencil buffer operations shown in the following table, see D3DSTENCILOP in the DirectX SDK documentation. Stencil operations are assumed to be valid for all three stencil buffer operation render states (D3DRENDERSTATE_STENCILFAIL, D3DRENDERSTATE_STENCILPASS, and D3DRENDERSTATE_STENCILZFAIL). This member can be a bitwise OR of any of the following values:</p>
@@ -231,14 +231,14 @@ typedef struct _D3DHAL_D3DEXTENDEDCAPS {
 <p> </p>
 </dd>
 
-### -field <b>dwFVFCaps</b>
+### -field dwFVFCaps
 
 <dd>
 <p>Specifies the number of texture coordinates that the driver can process. This value can be an integer in the range 0 through 8, where 0 indicates that the driver does not support texturing, 1 indicates that the driver can process only one set of texture coordinates, 2 indicates that the driver can process two sets of texture coordinates, and so on.</p>
 <p>A driver must be able to parse all texture coordinates present in the vertex data regardless of the number of texture coordinates that the driver actually uses. The driver should use the index provided with the D3DTSS_TEXCOORDINDEX value of the D3DTEXTURESTAGESTATETYPE enumeration, described in the DirectX SDK documentation, to determine what texture coordinate set to use when rendering.</p>
 </dd>
 
-### -field <b>dwTextureOpCaps</b>
+### -field dwTextureOpCaps
 
 <dd>
 <p>Specifies the texture operations supported by the device. See D3DTEXTUREOP in the DirectX SDK documentation for descriptions of the texture operations listed in the following table. This member can be a bitwise OR of the following values:</p>
@@ -443,43 +443,43 @@ typedef struct _D3DHAL_D3DEXTENDEDCAPS {
 <p> </p>
 </dd>
 
-### -field <b>wMaxTextureBlendStages</b>
+### -field wMaxTextureBlendStages
 
 <dd>
 <p>Specifies the maximum number of texture blending stages supported by this device.</p>
 </dd>
 
-### -field <b>wMaxSimultaneousTextures</b>
+### -field wMaxSimultaneousTextures
 
 <dd>
 <p>Specifies the maximum number of textures that can be simultaneously bound to the texture blending stages for this device. That is, <b>wMaxSimultaneousTextures</b> specifies how many of the texture stages can have textures bound to them through the <b>lDirect3DDevice7::SetTexture</b> method. See the Microsoft Windows SDK documentation for more information about this method.</p>
 </dd>
 
-### -field <b>dwMaxActiveLights</b>
+### -field dwMaxActiveLights
 
 <dd>
 <p>Specifies the maximum number of active lights supported by this device. This only needs to be specified in drivers that support hardware transform and lighting (and therefore specify D3DDEVCAPS_HWTRANSFORMANDLIGHT in their device caps).</p>
 </dd>
 
-### -field <b>dvMaxVertexW</b>
+### -field dvMaxVertexW
 
 <dd>
 <p>Specifies the maximum W range supported by this device. This only needs to be specified in drivers that support W buffering (and therefore specify D3DPRASTERCAPS_WBUFFER in their rasterization caps). The units for W depth values depend on the running application. For example, the application might specify depth in meters.</p>
 </dd>
 
-### -field <b>wMaxUserClipPlanes</b>
+### -field wMaxUserClipPlanes
 
 <dd>
 <p>Specifies the maximum number of user-defined clip planes supported. </p>
 </dd>
 
-### -field <b>wMaxVertexBlendMatrices</b>
+### -field wMaxVertexBlendMatrices
 
 <dd>
 <p>Specifies the number of world matrices supported for vertex blending.</p>
 </dd>
 
-### -field <b>dwVertexProcessingCaps</b>
+### -field dwVertexProcessingCaps
 
 <dd>
 <p>Specifies the vertex processing caps that are supported by the driver. This member can be a bitwise OR of the following values:</p>
@@ -556,25 +556,25 @@ typedef struct _D3DHAL_D3DEXTENDEDCAPS {
 <p> </p>
 </dd>
 
-### -field <b>dwReserved1</b>
+### -field dwReserved1
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>dwReserved2</b>
+### -field dwReserved2
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>dwReserved3</b>
+### -field dwReserved3
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>dwReserved4</b>
+### -field dwReserved4
 
 <dd>
 <p>Reserved for system use.</p>

@@ -65,25 +65,25 @@ typedef union _WHEA_TIMESTAMP {
 ## -struct-fields
 <dl>
 
-### -field <b>Seconds</b>
+### -field Seconds
 
 <dd>
 <p>The number of seconds past the minute.</p>
 </dd>
 
-### -field <b>Minutes</b>
+### -field Minutes
 
 <dd>
 <p>The number of minutes past the hour.</p>
 </dd>
 
-### -field <b>Hours</b>
+### -field Hours
 
 <dd>
 <p>The hour in the day.</p>
 </dd>
 
-### -field <b>Precise</b>
+### -field Precise
 
 <dd>
 <p>If this member is set to 1, the timestamp correlates precisely to the time of the error event.</p>
@@ -91,37 +91,37 @@ typedef union _WHEA_TIMESTAMP {
 <div> </div>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Day</b>
+### -field Day
 
 <dd>
 <p>The day of the month.</p>
 </dd>
 
-### -field <b>Month</b>
+### -field Month
 
 <dd>
 <p>The month of the year.</p>
 </dd>
 
-### -field <b>Year</b>
+### -field Year
 
 <dd>
 <p>The year within the century.</p>
 </dd>
 
-### -field <b>Century</b>
+### -field Century
 
 <dd>
 <p>The century.</p>
 </dd>
 
-### -field <b>AsLARGE_INTEGER</b>
+### -field AsLARGE_INTEGER
 
 <dd>
 <p>A LARGE_INTEGER representation of the contents of the WHEA_TIMESTAMP union.</p>

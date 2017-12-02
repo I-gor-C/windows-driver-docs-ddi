@@ -7,7 +7,7 @@ old-location: sensors\gnss_cwtestdata.htm
 old-project: sensors
 ms.assetid: 7F1C8574-8891-4ACB-BB25-2666148E3D02
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_CWTESTDATA, GNSS_CWTESTDATA, *PGNSS_CWTESTDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>TestResultStatus</b>
+### -field TestResultStatus
 
 <dd>
 <p>NTSTATUS value indicating whether this fix contains a valid data, or if the GNSS engine or driver encountered any errors in getting the measurements for the carrier wave test.</p>
@@ -85,20 +85,20 @@ typedef struct {
 </ul>
 </dd>
 
-### -field <b>SignalToNoiseRatio</b>
+### -field SignalToNoiseRatio
 
 <dd>
 <p>Signal to noise ratio in the carrier wave in dB-Hz.</p>
 </dd>
 
-### -field <b>Frequency</b>
+### -field Frequency
 
 <dd>
 <p>Frequency of the carrier wave detected in the measurement band.</p>
 <p>This frequency is provided as a difference to GPS frequency (1575.42 MHz) in kHz.</p>
 </dd>
 
-### -field <b>Unused[512]</b>
+### -field Unused[512]
 
 <dd>
 <p>Padding buffer.</p>

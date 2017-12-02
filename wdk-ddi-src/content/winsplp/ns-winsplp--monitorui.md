@@ -68,21 +68,21 @@ typedef struct _MONITORUI {
 ## -struct-fields
 <dl>
 
-### -field <b>dwMonitorUISize</b>
+### -field dwMonitorUISize
 
 <dd>
 <p>Size, in bytes, of the MONITORUI structure.</p>
 </dd>
 
-### -field <b>pfnAddPortUI</b>
+### -field pfnAddPortUI
 
 <dd></dd>
 
-### -field <b>pfnConfigurePortUI</b>
+### -field pfnConfigurePortUI
 
 <dd></dd>
 
-### -field <b>pfnDeletePortUI</b>
+### -field pfnDeletePortUI
 
 <dd></dd>
 </dl>

@@ -55,13 +55,13 @@ PORTCLASSAPI NTSTATUS NTAPI PcGetPhysicalDeviceObject(
 ## -parameters
 <dl>
 
-### -param <i>pDeviceObject</i> [in]
+### -param pDeviceObject [in]
 
 <dd>
 <p>Pointer to the device object for the device.</p>
 </dd>
 
-### -param <i>ppPhysicalObject</i> [out]
+### -param ppPhysicalObject [out]
 
 <dd>
 <p>Pointer to the physical object for the device.</p>

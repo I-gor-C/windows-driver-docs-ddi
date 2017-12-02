@@ -54,7 +54,7 @@ typedef struct _NFCRM_RADIO_STATE  {
 ## -struct-fields
 <dl>
 
-### -field <b>MediaRadioOn</b>
+### -field MediaRadioOn
 
 <dd>
 <p>This is a boolean flag that indicates whether the media radio is on.</p>

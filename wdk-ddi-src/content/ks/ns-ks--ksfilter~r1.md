@@ -56,22 +56,22 @@ typedef struct _KSFILTER {
 ## -struct-fields
 <dl>
 
-### -field <b>Descriptor</b>
+### -field Descriptor
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksfilter-descriptor.md">KSFILTER_DESCRIPTOR</a> structure that describes the characteristics of this particular filter.</p>
 </dd>
 
-### -field <b>Bag</b>
+### -field Bag
 
 <dd>
-<p>This member specifies the KSOBJECT_BAG (equivalent to type PVOID) associated with this filter instance. <a href="NULL">Object Bags</a> are structures used to associate dynamic memory with a specific AVStream object. Anything in the filter object bag is automatically cleaned up when the filter is deleted.</p>
+<p>This member specifies the KSOBJECT_BAG (equivalent to type PVOID) associated with this filter instance. <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a> are structures used to associate dynamic memory with a specific AVStream object. Anything in the filter object bag is automatically cleaned up when the filter is deleted.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
-<p>A pointer that is used by the client to associate context information with the specific filter instance. Typically, such context information is associated in the filter's <b>Create</b> member as defined in the KSFILTER_DISPATCH table for this filter instance. Any dynamically allocated context information should be placed in the object bag with <a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>. <b>Context</b> is initialized to the value of the <b>Context</b> member of the parent <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> at the time the filter is created. See <a href="NULL">AVStream Object Hierarchy</a>.</p>
+<p>A pointer that is used by the client to associate context information with the specific filter instance. Typically, such context information is associated in the filter's <b>Create</b> member as defined in the KSFILTER_DISPATCH table for this filter instance. Any dynamically allocated context information should be placed in the object bag with <a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>. <b>Context</b> is initialized to the value of the <b>Context</b> member of the parent <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> at the time the filter is created. See <a href="https://msdn.microsoft.com/b7d6f06d-6c97-414e-a453-d375e2d7ccf5">AVStream Object Hierarchy</a>.</p>
 </dd>
 </dl>
 
@@ -80,7 +80,7 @@ typedef struct _KSFILTER {
 
 <p>Hardware filters typically do not use KSFILTER because the focus of the hardware driver is the platform transition: the movement of data between the host and the external hardware. This transition is typically handled by code associated with an AVStream queue object.</p>
 
-<p>Also see <a href="NULL">Object Bags</a>.</p>
+<p>Also see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a>.</p>
 
 ## -requirements
 <table>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains parameters for a request to get information about the specified hub. This structure is passed by UCX in request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object of the <a href="buses.evt_ucx_usbdevice_hub_info">EVT_UCX_USBDEVICE_HUB_INFO</a> callback function.</p>
+<p>Contains parameters for a request to get information about the specified hub. This structure is passed by UCX in request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object of the <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-hub-info.md">EVT_UCX_USBDEVICE_HUB_INFO</a> callback function.</p>
 
 
 ## -syntax
@@ -62,25 +62,25 @@ typedef struct _USBDEVICE_HUB_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
-<p>A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
+<p>A <a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-mgmt-header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
 </dd>
 
-### -field <b>NumberOfPorts</b>
+### -field NumberOfPorts
 
 <dd>
 <p>The count of ports available for the USB hub, filled by the client driver.</p>
 </dd>
 
-### -field <b>NumberOfTTs</b>
+### -field NumberOfTTs
 
 <dd>
 <p>The count of TT hubs, filled by the client driver.</p>
 </dd>
 
-### -field <b>TTThinkTime</b>
+### -field TTThinkTime
 
 <dd>
 <p>The ThinkTime property of the TT hub, filled by the client driver.</p>
@@ -107,7 +107,7 @@ typedef struct _USBDEVICE_HUB_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_ucx_usbdevice_hub_info">EVT_UCX_USBDEVICE_HUB_INFO</a>
+<a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-hub-info.md">EVT_UCX_USBDEVICE_HUB_INFO</a>
 </dt>
 </dl>
 <p> </p>

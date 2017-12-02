@@ -56,13 +56,13 @@ ULONG RtlCheckBit(
 ## -parameters
 <dl>
 
-### -param <i>BitMapHeader</i> [in]
+### -param BitMapHeader [in]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a> routine. </p>
 </dd>
 
-### -param <i>BitPosition</i> [in]
+### -param BitPosition [in]
 
 <dd>
 <p>Specifies which bit to check. This is a zero-based value indicating the position of the bit to be tested. </p>

@@ -75,127 +75,127 @@ typedef struct _D3D12DDIARG_CREATE_PIPELINE_STATE_0033 {
 ## -struct-fields
 <dl>
 
-### -field <b>hComputeShader</b>
+### -field hComputeShader
 
 <dd>
 <p>The compute shader.</p>
 </dd>
 
-### -field <b>hVertexShader</b>
+### -field hVertexShader
 
 <dd>
 <p>The vertex shader.</p>
 </dd>
 
-### -field <b>hPixelShader</b>
+### -field hPixelShader
 
 <dd>
 <p>The pixel shader.</p>
 </dd>
 
-### -field <b>hDomainShader</b>
+### -field hDomainShader
 
 <dd>
 <p>The domain shader.</p>
 </dd>
 
-### -field <b>hHullShader</b>
+### -field hHullShader
 
 <dd>
 <p>The hull shader.</p>
 </dd>
 
-### -field <b>hGeometryShader</b>
+### -field hGeometryShader
 
 <dd>
 <p>The geometry shader.</p>
 </dd>
 
-### -field <b>hRootSignature</b>
+### -field hRootSignature
 
 <dd>
 <p>The root signature.</p>
 </dd>
 
-### -field <b>hBlendState</b>
+### -field hBlendState
 
 <dd>
 <p>The blend state.</p>
 </dd>
 
-### -field <b>SampleMask</b>
+### -field SampleMask
 
 <dd>
 <p>The sample mask.</p>
 </dd>
 
-### -field <b>hRasterizerState</b>
+### -field hRasterizerState
 
 <dd>
 <p>The rasterizer state.</p>
 </dd>
 
-### -field <b>hDepthStencilState</b>
+### -field hDepthStencilState
 
 <dd>
 <p>The depth stencil state.</p>
 </dd>
 
-### -field <b>hElementLayout</b>
+### -field hElementLayout
 
 <dd>
 <p>The element layout.</p>
 </dd>
 
-### -field <b>IBStripCutValue</b>
+### -field IBStripCutValue
 
 <dd>
 <p>The index buffer strip cut value.</p>
 </dd>
 
-### -field <b>PrimitiveTopologyType</b>
+### -field PrimitiveTopologyType
 
 <dd>
 <p>The primitive topology type.</p>
 </dd>
 
-### -field <b>NumRenderTargets</b>
+### -field NumRenderTargets
 
 <dd>
 <p>The number of render targets.</p>
 </dd>
 
-### -field <b>RTVFormats</b>
+### -field RTVFormats
 
 <dd>
 <p>The RTV formats.</p>
 </dd>
 
-### -field <b>DSVFormat</b>
+### -field DSVFormat
 
 <dd>
 <p>The DSV format.</p>
 </dd>
 
-### -field <b>SampleDesc</b>
+### -field SampleDesc
 
 <dd>
 <p>The sample description.</p>
 </dd>
 
-### -field <b>NodeMask</b>
+### -field NodeMask
 
 <dd>
 <p>Represents the set of nodes.</p>
 </dd>
 
-### -field <b>LibraryReference</b>
+### -field LibraryReference
 
 <dd>
 <p>The library reference.</p>
 </dd>
 
-### -field <b>ViewInstancingDesc</b>
+### -field ViewInstancingDesc
 
 <dd>
 <p>The view instancing description.</p>

@@ -58,31 +58,31 @@ typedef struct _BAND_LOCATION_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>StructSize</b>
+### -field StructSize
 
 <dd>
 <p>The size of the structure in bytes. Set to <b>sizeof</b>(BAND_LOCATION_INFO).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>BandStart</b>
+### -field BandStart
 
 <dd>
 <p>The offset in bytes of this band location on the storage device. This value is always 0 for the global band.</p>
 </dd>
 
-### -field <b>BandSize</b>
+### -field BandSize
 
 <dd>
 <p>The size in bytes of the band configured at this location. This value is set to the maximum size possible for the global band.</p>
 </dd>
 
-### -field <b>Metadata</b>
+### -field Metadata
 
 <dd>
 <p>A metadata field used as a data area for a band management application.</p>

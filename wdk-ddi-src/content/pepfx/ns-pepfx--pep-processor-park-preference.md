@@ -56,19 +56,19 @@ typedef struct _PEP_PROCESSOR_PARK_PREFERENCE {
 ## -struct-fields
 <dl>
 
-### -field <b>Processor</b>
+### -field Processor
 
 <dd>
 <p>A <b>PEPHANDLE</b> value that identifies the processor. The PEP supplied this handle in a previous <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>PoPreference</b>
+### -field PoPreference
 
 <dd>
 <p>The operating system's parking preference for this processor. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>PepPreference</b>
+### -field PepPreference
 
 <dd>
 <p>The PEP's parking preference for this processor. For more information, see Remarks.</p>

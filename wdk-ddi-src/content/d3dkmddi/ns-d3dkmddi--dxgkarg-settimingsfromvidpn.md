@@ -58,31 +58,31 @@ typedef struct _DXGKARG_SETTIMINGSFROMVIDPN {
 ## -struct-fields
 <dl>
 
-### -field <b>hFunctionalVidPn</b>
+### -field hFunctionalVidPn
 
 <dd>
 <p>Handle to a functional VidPn which describes the display configuration the OS is attempting to apply.</p>
 </dd>
 
-### -field <b>SetFlags</b>
+### -field SetFlags
 
 <dd>
 <p> A DXGK_SET_TIMING_FLAGS structure that requests specific actions from the driver on the SetTimingsFromVidPn call.</p>
 </dd>
 
-### -field <b>pResultsFlags</b>
+### -field pResultsFlags
 
 <dd>
 <p>Pointer to a DXGK_SET_TIMING_RESULTS structure that the driver should use to report overall results from the SetTimingsFromVidPn call.</p>
 </dd>
 
-### -field <b>PathCount</b>
+### -field PathCount
 
 <dd>
 <p>Number of pointers in the array pointed to by pSetTimingPathInfo.</p>
 </dd>
 
-### -field <b>pSetTimingPathInfo</b>
+### -field pSetTimingPathInfo
 
 <dd>
 <p>An array of pointers to DXGK_SET_TIMING_PATH_INFO structures that specify per path details of the timings to be set. It also allows feedback from the driver on additional work the OS needs to do either before the timings changes can be made, or after changes are complete.</p>

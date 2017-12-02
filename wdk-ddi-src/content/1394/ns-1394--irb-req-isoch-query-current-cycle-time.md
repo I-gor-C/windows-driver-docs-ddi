@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_query_current_cycle_time.htm
 old-project: IEEE
 ms.assetid: 4C42FB6D-BD5B-4376-A618-15AD6754AD9B
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_ISOCH_QUERY_CURRENT_CYCLE_TIME, IRB_REQ_ISOCH_QUERY_CURRENT_CYCLE_TIME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ typedef struct _IRB_REQ_ISOCH_QUERY_CURRENT_CYCLE_TIME {
 ## -struct-fields
 <dl>
 
-### -field <b>CycleTime</b>
+### -field CycleTime
 
 <dd>
 <p>On success, specifies the current isochronous cycle time. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537067">CYCLE_TIME</a> entry for details.</p>

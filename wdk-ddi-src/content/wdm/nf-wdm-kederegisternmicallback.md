@@ -55,7 +55,7 @@ NTSTATUS KeDeregisterNmiCallback(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Specifies the value returned by <a href="..\wdm\nf-wdm-keregisternmicallback.md">KeRegisterNmiCallback</a> when the NMI callback was registered. </p>

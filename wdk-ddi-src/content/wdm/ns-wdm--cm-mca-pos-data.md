@@ -59,23 +59,23 @@ typedef struct _CM_MCA_POS_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>AdapterId</b>
+### -field AdapterId
 
 <dd></dd>
 
-### -field <b>PosData1</b>
+### -field PosData1
 
 <dd></dd>
 
-### -field <b>PosData2</b>
+### -field PosData2
 
 <dd></dd>
 
-### -field <b>PosData3</b>
+### -field PosData3
 
 <dd></dd>
 
-### -field <b>PosData4</b>
+### -field PosData4
 
 <dd></dd>
 </dl>

@@ -60,25 +60,25 @@ VOID APIENTRY SetBlendState(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hState</i> [in]
+### -param hState [in]
 
 <dd>
 <p> A handle to the blend state to set.</p>
 </dd>
 
-### -param <i>pBlendFactor</i> [in]
+### -param pBlendFactor [in]
 
 <dd>
 <p> A four-element array of single-precision float vectors that the driver uses to set the blend state.</p>
 </dd>
 
-### -param <i>SampleMask</i> [in]
+### -param SampleMask [in]
 
 <dd>
 <p> A sample format mask.</p>

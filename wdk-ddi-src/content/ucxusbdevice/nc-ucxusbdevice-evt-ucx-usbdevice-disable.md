@@ -61,16 +61,16 @@ typedef EVT_UCX_USBDEVICE_DISABLE PEVT_UCX_USBDEVICE_DISABLE;
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
-<p>A structure of type <a href="buses._usbdevice_disable">USBDEVICE_DISABLE</a>.</p>
+<p>A structure of type <a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-disable.md">USBDEVICE_DISABLE</a>.</p>
 </dd>
 </dl>
 
@@ -78,9 +78,9 @@ typedef EVT_UCX_USBDEVICE_DISABLE PEVT_UCX_USBDEVICE_DISABLE;
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a> method.</p>
+<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a> method.</p>
 
-<p>When the client driver has released controller resources, it completes the WDFREQUEST.  After completion, the only callback function that UCX  calls referencing this USB device is <a href="buses.evt_ucx_usbdevice_enable">EVT_UCX_USBDEVICE_ENABLE</a>.</p>
+<p>When the client driver has released controller resources, it completes the WDFREQUEST.  After completion, the only callback function that UCX  calls referencing this USB device is <a href="..\ucxusbdevice\nc-ucxusbdevice-evt-ucx-usbdevice-enable.md">EVT_UCX_USBDEVICE_ENABLE</a>.</p>
 
 <p>  While the device is disabled, UCX does not schedule transfers
     for it.
@@ -133,7 +133,7 @@ typedef EVT_UCX_USBDEVICE_DISABLE PEVT_UCX_USBDEVICE_DISABLE;
 ## -see-also
 <dl>
 <dt>
-<a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a>
+<a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a>
 </dt>
 </dl>
 <p> </p>

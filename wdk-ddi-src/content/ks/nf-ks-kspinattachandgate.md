@@ -55,13 +55,13 @@ void KsPinAttachAndGate(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure to use an input to the AND gate.</p>
 </dd>
 
-### -param <i>AndGate</i> [in, optional]
+### -param AndGate [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksgate.md">KSGATE</a> structure that is the previously initialized AND gate to connect to the relevant filter's AND gate. If this optional parameter is <b>NULL</b>, any <b>KSGATE</b> currently attached to the pin is detached.</p>
@@ -72,7 +72,7 @@ void KsPinAttachAndGate(
 <p>None</p>
 
 ## -remarks
-<p>To insert the gate, first call <a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>. Then call <b>KsPinAttachAndGate</b>. For more information, see <a href="NULL">Flow Control Gates in AVStream</a>.</p>
+<p>To insert the gate, first call <a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>. Then call <b>KsPinAttachAndGate</b>. For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.</p>
 
 <p><b>KsPinAttachAndGate </b>must be called at IRQL = PASSIVE_LEVEL before the pin in question leaves KSSTATE_STOP.</p>
 

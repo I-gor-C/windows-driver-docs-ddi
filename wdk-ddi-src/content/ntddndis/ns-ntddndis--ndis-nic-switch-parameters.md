@@ -7,7 +7,7 @@ old-location: netvista\ndis_nic_switch_parameters.htm
 old-project: netvista
 ms.assetid: BC43A7DF-51B4-4571-86C5-12B332B13084
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_NIC_SWITCH_PARAMETERS, NDIS_NIC_SWITCH_PARAMETERS, *PNDIS_NIC_SWITCH_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ typedef struct _NDIS_NIC_SWITCH_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_NIC_SWITCH_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -70,7 +70,7 @@ typedef struct _NDIS_NIC_SWITCH_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_NIC_SWITCH_PARAMETERS_REVISION_1"></a><a id="ndis_nic_switch_parameters_revision_1"></a>NDIS_NIC_SWITCH_PARAMETERS_REVISION_1
+### -field NDIS_NIC_SWITCH_PARAMETERS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30 and later.</p>
@@ -79,7 +79,7 @@ typedef struct _NDIS_NIC_SWITCH_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p> A ULONG value that contains a bitwise OR of flags. The following flags are defined for this member. 
@@ -87,7 +87,7 @@ typedef struct _NDIS_NIC_SWITCH_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_NIC_SWITCH_PARAMETERS_SWITCH_NAME_CHANGED"></a><a id="ndis_nic_switch_parameters_switch_name_changed"></a>NDIS_NIC_SWITCH_PARAMETERS_SWITCH_NAME_CHANGED
+### -field NDIS_NIC_SWITCH_PARAMETERS_SWITCH_NAME_CHANGED
 
 <dd>
 <p>This flag specifies that the field that has been updated in the <b>NDIS_NIC_SWITCH_PARAMETERS</b> structure is the <b>SwitchName</b> member.</p>
@@ -97,7 +97,7 @@ typedef struct _NDIS_NIC_SWITCH_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>SwitchType</b>
+### -field SwitchType
 
 <dd>
 <p>An 
@@ -107,7 +107,7 @@ typedef struct _NDIS_NIC_SWITCH_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>SwitchId</b>
+### -field SwitchId
 
 <dd>
 <p>An NDIS_NIC_SWITCH_ID value that contains a switch identifier. The switch identifier is an integer between zero and the number of switches that the network adapter supports. An NDIS_DEFAULT_SWITCH_ID value indicates the default network adapter switch.
@@ -117,13 +117,13 @@ typedef struct _NDIS_NIC_SWITCH_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>SwitchFriendlyName</b>
+### -field SwitchFriendlyName
 
 <dd>
 <p>An NDIS_NIC_SWITCH_FRIENDLY_NAME value that contains a description for the switch.</p>
 </dd>
 
-### -field <b>NumVFs</b>
+### -field NumVFs
 
 <dd>
 <p>A ULONG value that specifies the number of PCI Express (PCIe) Virtual Functions (VFs) that are enabled on the network adapter. VFs are enabled on the adapter when virtualization is enabled through a call to <a href="..\ndis\nf-ndis-ndismenablevirtualization.md">NdisMEnableVirtualization</a>.</p>
@@ -131,19 +131,19 @@ typedef struct _NDIS_NIC_SWITCH_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>NdisReserved1</b>
+### -field NdisReserved1
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>NdisReserved2</b>
+### -field NdisReserved2
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>NdisReserved3</b>
+### -field NdisReserved3
 
 <dd>
 <p>Reserved for NDIS.</p>
@@ -153,7 +153,7 @@ typedef struct _NDIS_NIC_SWITCH_PARAMETERS {
 ## -remarks
 <p>The <b>NDIS_NIC_SWITCH_PARAMETERS</b> structure is used in OID method requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451815">OID_NIC_SWITCH_CREATE_SWITCH</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh451823">OID_NIC_SWITCH_PARAMETERS</a>. These OID requests set or query the configuration parameters of a network adapter switch. </p>
 
-<p>For more information about the SR-IOV interface, see 	<a href="NULL">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
+<p>For more information about the SR-IOV interface, see 	<a href="netvista.overview_of_single_root_i_o_virtualization__sr-iov_">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
 
 ## -requirements
 <table>
@@ -198,4 +198,4 @@ typedef struct _NDIS_NIC_SWITCH_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

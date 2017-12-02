@@ -57,25 +57,25 @@ typedef struct HBA_ScsiId {
 ## -struct-fields
 <dl>
 
-### -field <b>OSDeviceName</b>
+### -field OSDeviceName
 
 <dd>
 <p>Contains a name assigned to the device by the operating system. For example: "\device\ScsiPort3."</p>
 </dd>
 
-### -field <b>ScsiBusNumber</b>
+### -field ScsiBusNumber
 
 <dd>
 <p>Contains the number assigned by the operating system to SCSI bus that the device is on. </p>
 </dd>
 
-### -field <b>ScsiTargetNumber</b>
+### -field ScsiTargetNumber
 
 <dd>
 <p>Contains the target ID number assigned by the operating system to the target device.  </p>
 </dd>
 
-### -field <b>ScsiOSLun</b>
+### -field ScsiOSLun
 
 <dd>
 <p>Contains the logical unit number assigned by the operating system to the logical unit. </p>

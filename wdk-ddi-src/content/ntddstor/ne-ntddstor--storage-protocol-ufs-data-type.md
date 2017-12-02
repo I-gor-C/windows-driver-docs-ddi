@@ -56,19 +56,19 @@ typedef enum _STORAGE_PROTOCOL_UFS_DATA_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UfsDataTypeUnknown"></a><a id="ufsdatatypeunknown"></a><a id="UFSDATATYPEUNKNOWN"></a><b>UfsDataTypeUnknown</b>
+### -field UfsDataTypeUnknown
 
 <dd>
 <p>Unknown data type.</p>
 </dd>
 
-### -field <a id="____UfsDataTypeQueryDescriptor"></a><a id="____ufsdatatypequerydescriptor"></a><a id="____UFSDATATYPEQUERYDESCRIPTOR"></a><b>    UfsDataTypeQueryDescriptor</b>
+### -field     UfsDataTypeQueryDescriptor
 
 <dd>
 <p>Query Descriptor data type. Retrieved by command UfsSrbQueryProtocolQueryDescriptor.</p>
 </dd>
 
-### -field <a id="________UfsDataTypeMax"></a><a id="________ufsdatatypemax"></a><a id="________UFSDATATYPEMAX"></a><b>        UfsDataTypeMax</b>
+### -field         UfsDataTypeMax
 
 <dd>
 <p>Max size of data type.</p>

@@ -57,25 +57,25 @@ typedef struct _DXGKARG_UNMAPCPUHOSTAPERTURE {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfPages</b>
+### -field NumberOfPages
 
 <dd>
 <p>Specifies the number of pages being unmapped.</p>
 </dd>
 
-### -field <b>pCpuHostAperturePages</b>
+### -field pCpuHostAperturePages
 
 <dd>
 <p>Array of CPU host aperture pages to unmap. This is an array of page indices from the start of the CPU host aperture physical address.</p>
 </dd>
 
-### -field <b>SegmentId</b>
+### -field SegmentId
 
 <dd>
 <p>The driver segment identifier (starting from 1) of the segment for which the CPU host aperture is unmapped.</p>
 </dd>
 
-### -field <b>PhysicalAdapterIndex</b>
+### -field PhysicalAdapterIndex
 
 <dd>
 <p>The zero-based physical adapter index in a linked display adapter link.</p>

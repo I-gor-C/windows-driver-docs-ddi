@@ -60,43 +60,43 @@ typedef struct _D3DKMT_GETMULTISAMPLEMETHODLIST {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[in] A handle to the graphics adapter.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the allocation is on. </p>
 </dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>[in] The width of the allocation, in pixels.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[in] The height of the allocation, in pixels.</p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation.</p>
 </dd>
 
-### -field <b>pMethodList</b>
+### -field pMethodList
 
 <dd>
 <p>[out] An array of <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-multisamplemethod.md">D3DKMT_MULTISAMPLEMETHOD</a> structures that describe the list of multiple-sampling methods used for the allocation; otherwise, this member is <b>NULL</b>.</p>
 </dd>
 
-### -field <b>MethodCount</b>
+### -field MethodCount
 
 <dd>
 <p>[in/out] On input, the number of elements that the array that is specified by <b>pMethodList</b> can hold. On output, this member specifies the required number of elements that the array that is specified by <b>pMethodList</b> should hold. </p>

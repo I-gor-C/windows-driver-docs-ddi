@@ -58,31 +58,31 @@ typedef struct STORAGE_BREAK_RESERVATION_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Contains the length of this structure in bytes.</p>
 </dd>
 
-### -field <b>_unused</b>
+### -field _unused
 
 <dd>
 <p>Reserved. Do not use. </p>
 </dd>
 
-### -field <b>PathId</b>
+### -field PathId
 
 <dd>
 <p>Indicates the number of the bus to be reset. </p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>Contains the number of the target device.</p>
 </dd>
 
-### -field <b>Lun</b>
+### -field Lun
 
 <dd>
 <p>Contains the logical unit number. </p>

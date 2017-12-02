@@ -61,24 +61,24 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <dl>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Describes the external device's capabilities.</p>
 </dd>
 
-### -field <b>DevPort</b>
+### -field DevPort
 
 <dd>
 <p>Specifies the external device's port. For example:</p>
@@ -86,7 +86,7 @@ typedef struct {
 <p>DEV_PORT_USB</p>
 </dd>
 
-### -field <b>PowerState</b>
+### -field PowerState
 
 <dd>
 <p>Specifies the external device's power state:</p>
@@ -95,13 +95,13 @@ typedef struct {
 <p>ED_POWER_OFF</p>
 </dd>
 
-### -field <b>pawchString</b>
+### -field pawchString
 
 <dd>
 <p>Specifies the external device's ID and version.</p>
 </dd>
 
-### -field <b>NodeUniqueID</b>
+### -field NodeUniqueID
 
 <dd>
 <p>Specifies the external device's unique node Id.</p>

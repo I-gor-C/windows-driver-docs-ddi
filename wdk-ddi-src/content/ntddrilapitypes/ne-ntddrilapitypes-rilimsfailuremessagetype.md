@@ -7,7 +7,7 @@ old-location: netvista\rilimsfailuremessagetype.htm
 old-project: netvista
 ms.assetid: e40241e6-90ee-4bbb-8fde-f52ffd838c1f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILIMSFAILUREMESSAGETYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_IMSFAILUREMESSAGETYPE_SUBSCRIBE"></a><a id="ril_imsfailuremessagetype_subscribe"></a><b>RIL_IMSFAILUREMESSAGETYPE_SUBSCRIBE</b>
+### -field RIL_IMSFAILUREMESSAGETYPE_SUBSCRIBE
 
 <dd></dd>
 
-### -field <a id="RIL_IMSFAILUREMESSAGETYPE_INCALL"></a><a id="ril_imsfailuremessagetype_incall"></a><b>RIL_IMSFAILUREMESSAGETYPE_INCALL</b>
+### -field RIL_IMSFAILUREMESSAGETYPE_INCALL
 
 <dd></dd>
 
-### -field <a id="RIL_IMSFAILUREMESSAGETYPE_MAX"></a><a id="ril_imsfailuremessagetype_max"></a><b>RIL_IMSFAILUREMESSAGETYPE_MAX</b>
+### -field RIL_IMSFAILUREMESSAGETYPE_MAX
 
 <dd></dd>
 </dl>

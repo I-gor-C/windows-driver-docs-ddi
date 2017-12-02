@@ -57,25 +57,25 @@ typedef struct _DXVADDI_VALUERANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>MinValue</b>
+### -field MinValue
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the minimum value that is allowed for a given property.</p>
 </dd>
 
-### -field <b>MaxValue</b>
+### -field MaxValue
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the maximum value that is allowed for a given property.</p>
 </dd>
 
-### -field <b>DefaultValue</b>
+### -field DefaultValue
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the default value for a given property.</p>
 </dd>
 
-### -field <b>StepSize</b>
+### -field StepSize
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the step size increment for a given property.</p>

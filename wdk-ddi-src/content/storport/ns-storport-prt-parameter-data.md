@@ -61,13 +61,13 @@ typedef struct _RT_PARAMETER_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>    ParameterDataLength</b>
+### -field     ParameterDataLength
 
 <dd>
 <p>Indicates the number of bytes that follow in the parameter data.</p>
 </dd>
 
-### -field <b>Origin</b>
+### -field Origin
 
 <dd>
 <p>Indicates the most recent event that initialized the returned device clock.</p>
@@ -127,7 +127,7 @@ typedef struct _RT_PARAMETER_DATA {
 <tr>
 <td width="40%"><a id=""></a><dl>
 
-### -field <b></b>
+### -field 
 
 
 ### -field 4 to 7
@@ -142,25 +142,25 @@ typedef struct _RT_PARAMETER_DATA {
 <p> </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Timestamp</b>
+### -field Timestamp
 
 <dd>
 <p>Contains the current value of a device clock.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved for future use.</p>

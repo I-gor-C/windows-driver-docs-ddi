@@ -7,7 +7,7 @@ old-location: netvista\rilnitzinfo_v2.htm
 old-project: netvista
 ms.assetid: 31980e7f-b767-4f63-9dc6-efce582d84ea
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILNITZINFO_V2, RILNITZINFO_V2, *LPRILNITZINFO_V2, RILNITZINFO, *LPRILNITZINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef struct _RILNITZINFO_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>TimeZoneOffsetMinutes</b>
+### -field TimeZoneOffsetMinutes
 
 <dd></dd>
 
-### -field <b>DaylightSavingOffsetMinutes</b>
+### -field DaylightSavingOffsetMinutes
 
 <dd></dd>
 
-### -field <b>SysTime</b>
+### -field SysTime
 
 <dd></dd>
 
-### -field <b>dwSystemTypes</b>
+### -field dwSystemTypes
 
 <dd></dd>
 </dl>

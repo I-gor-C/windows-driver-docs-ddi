@@ -55,7 +55,7 @@ ULONG64 KeQueryInterruptTimePrecise(
 ## -parameters
 <dl>
 
-### -param <i>QpcTimeStamp</i> [out]
+### -param QpcTimeStamp [out]
 
 <dd>
 <p>A pointer to a ULONG64 variable into which the routine writes the performance counter value used to interpolate the return value.</p>
@@ -72,7 +72,7 @@ ULONG64 KeQueryInterruptTimePrecise(
 
 <p>To provide an interrupt time value that is more precise than that of <a href="..\wdm\nf-wdm-kequeryinterrupttime.md">KeQueryInterruptTime</a>, <b>KeQueryInterruptTimePrecise</b> uses the system performance counter to measure the time elapsed since the last clock timer interrupt, and adds this time to the interrupt time associated with the latest clock time. The interrupt time reported by <b>KeQueryInterruptTimePrecise</b> is accurate to within a microsecond.</p>
 
-<p>On some hardware platforms, a <b>KeQueryInterruptTimePrecise</b> call might be slower than a <a href="..\wdm\nf-wdm-kequeryinterrupttime.md">KeQueryInterruptTime</a> call. The reason is that <b>KeQueryInterruptTimePrecise</b> reads the performance counter, which can introduce an additional delay. For more information, see <a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>.</p>
+<p>On some hardware platforms, a <b>KeQueryInterruptTimePrecise</b> call might be slower than a <a href="..\wdm\nf-wdm-kequeryinterrupttime.md">KeQueryInterruptTime</a> call. The reason is that <b>KeQueryInterruptTimePrecise</b> reads the performance counter, which can introduce an additional delay. For more information, see <a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>.</p>
 
 <p>Call the <a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a> routine to determine the size of a system clock tick.</p>
 

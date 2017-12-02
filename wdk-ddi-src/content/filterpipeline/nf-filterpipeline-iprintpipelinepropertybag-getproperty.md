@@ -55,13 +55,13 @@ HRESULT GetProperty(
 ## -parameters
 <dl>
 
-### -param <i>pszName</i> [in]
+### -param pszName [in]
 
 <dd>
 <p>The name of the property that you want to get from the property bag.</p>
 </dd>
 
-### -param <i>pVar</i> [out]
+### -param pVar [out]
 
 <dd>
 <p>The <b>VARIANT</b> value to get from the property bag.</p>

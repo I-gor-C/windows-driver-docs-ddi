@@ -58,31 +58,31 @@ HRESULT KsMethod(
 ## -parameters
 <dl>
 
-### -param <i>Method</i> [in]
+### -param Method [in]
 
 <dd>
 <p>Pointer to a <a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a> structure that describes a method and the request type of the method request. </p>
 </dd>
 
-### -param <i>MethodLength</i> [in]
+### -param MethodLength [in]
 
 <dd>
 <p>Size, in bytes, of the buffer at <i>Method</i>. </p>
 </dd>
 
-### -param <i>MethodData</i> [in, out]
+### -param MethodData [in, out]
 
 <dd>
 <p>Pointer to a buffer that contains data and buffer space for a KSMETHOD_TYPE_SEND operation, or buffer space that receives data for all other operations. </p>
 </dd>
 
-### -param <i>DataLength</i> [in]
+### -param DataLength [in]
 
 <dd>
 <p>Size, in bytes, of the buffer at <i>MethodData</i>. </p>
 </dd>
 
-### -param <i>BytesReturned</i> [in, out]
+### -param BytesReturned [in, out]
 
 <dd>
 <p>Pointer to a variable that receives the size, in bytes, of the data that <b>KsMethod</b> stores in the buffer at <i>MethodData</i>. </p>

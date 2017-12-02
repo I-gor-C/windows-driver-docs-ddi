@@ -55,13 +55,13 @@ PUNKNOWN __inline KsPinRegisterAggregatedClientUnknown(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure.</p>
 </dd>
 
-### -param <i>ClientUnknown</i> [in]
+### -param ClientUnknown [in]
 
 <dd>
 <p>A pointer to an <b>IUnknown</b> interface.</p>

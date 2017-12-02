@@ -57,25 +57,25 @@ NTSTATUS KsTopologyPropertyHandler(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP handling the property request.</p>
 </dd>
 
-### -param <i>Property</i> [in]
+### -param Property [in]
 
 <dd>
 <p>Specifies the specific property being queried.</p>
 </dd>
 
-### -param <i>Data</i> [in, out]
+### -param Data [in, out]
 
 <dd>
 <p>Specifies the topology property-specific data.</p>
 </dd>
 
-### -param <i>Topology</i> [in]
+### -param Topology [in]
 
 <dd>
 <p>Points to a <a href="stream.kstopology">KSTOPOLOGY</a> structure containing the topology information.</p>

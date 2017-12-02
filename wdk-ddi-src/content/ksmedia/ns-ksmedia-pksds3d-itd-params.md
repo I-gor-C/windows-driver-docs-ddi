@@ -59,37 +59,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Channel</b>
+### -field Channel
 
 <dd>
 <p>Specifies the channel number (channel 0 is the left channel; channel 1 is the right channel).</p>
 </dd>
 
-### -field <b>VolSmoothScale</b>
+### -field VolSmoothScale
 
 <dd>
 <p>Specifies the ramp factor for scaling volume levels. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>TotalDryAttenuation</b>
+### -field TotalDryAttenuation
 
 <dd>
 <p>Specifies the attenuation factor for the "dry" signal (the original signal before applying a low-pass filter to produce a muffled effect). For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>TotalWetAttenuation</b>
+### -field TotalWetAttenuation
 
 <dd>
 <p>Specifies the attenuation factor for the "wet" signal (the muffled signal after the low-pass filter is applied). For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>SmoothFrequency</b>
+### -field SmoothFrequency
 
 <dd>
 <p>Specifies the sample frequency of the audio stream. When changing to a new <b>TotalDryAttenuation</b> or <b>TotalWetAttenuation</b> value, the ITD algorithm needs this value to determine the number of samples over which to apply smoothing in order to complete the transition within some fixed time interval. For example, the ITD algorithm implemented by the <a href="audio.kernel_mode_wdm_audio_components#kmixer_system_driver#kmixer_system_driver">KMixer system driver</a> uses a transition time interval of roughly 1/8 second.</p>
 </dd>
 
-### -field <b>Delay</b>
+### -field Delay
 
 <dd>
 <p>Specifies the time delay for this channel. The delay is expressed as an integer number of samples.</p>

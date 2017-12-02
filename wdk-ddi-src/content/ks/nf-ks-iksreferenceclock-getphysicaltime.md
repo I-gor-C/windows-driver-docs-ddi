@@ -66,7 +66,7 @@ LONGLONG GetPhysicalTime();
 
 <p>Clocks are not required to support a 100-nanosecond resolution. To determine the clock resolution, clients can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565092">KSPROPERTY_CLOCK_RESOLUTION</a> request.</p>
 
-<p>For more information, see <a href="NULL">AVStream Clocks</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/fc1d5bca-72e3-48e2-b46f-09a13bba83b4">AVStream Clocks</a>.</p>
 
 <p>AVStream uses the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565088">KSPROPERTY_CLOCK_PHYSICALTIME</a> property to retrieve the physical time.</p>
 

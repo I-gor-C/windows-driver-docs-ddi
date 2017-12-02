@@ -54,7 +54,7 @@ PKSDEVICE __inline KsFilterFactoryGetDevice(
 ## -parameters
 <dl>
 
-### -param <i>FilterFactory</i> [in]
+### -param FilterFactory [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> structure for which to find the corresponding AVStream device.</p>
@@ -67,7 +67,7 @@ PKSDEVICE __inline KsFilterFactoryGetDevice(
 ## -remarks
 <p>This call is an inline function call to <a href="..\ks\nf-ks-ksgetdevice.md">KsGetDevice</a>.</p>
 
-<p>For more information about the AVStream object hierarchy, see  <a href="NULL">AVStream Overview</a>.</p>
+<p>For more information about the AVStream object hierarchy, see  <a href="https://msdn.microsoft.com/305039fe-0a00-4f3e-ae1a-61c50a2f2fb3">AVStream Overview</a>.</p>
 
 ## -requirements
 <table>

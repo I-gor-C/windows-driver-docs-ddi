@@ -57,19 +57,19 @@ typedef struct _USB_NODE_CONNECTION_DRIVERKEY_NAME {
 ## -struct-fields
 <dl>
 
-### -field <b>ConnectionIndex</b>
+### -field ConnectionIndex
 
 <dd>
 <p>On input, the port number that the device is connected to.</p>
 </dd>
 
-### -field <b>ActualLength</b>
+### -field ActualLength
 
 <dd>
 <p>On output, the length, in bytes, of the string in <b>DriverKeyName</b>.</p>
 </dd>
 
-### -field <b>DriverKeyName</b>
+### -field DriverKeyName
 
 <dd>
 <p>On output, the driver key name for the device that is attached to the port that is indicated by <b>ConnectionIndex</b>. This name is represented as a Unicode string.</p>

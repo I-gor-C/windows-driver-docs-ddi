@@ -55,13 +55,13 @@ NTSTATUS KsAddDevice(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>A pointer to the WDM driver object for the minidriver.</p>
 </dd>
 
-### -param <i>PhysicalDeviceObject</i> [in]
+### -param PhysicalDeviceObject [in]
 
 <dd>
 <p>A pointer to the WDM physical device object.</p>

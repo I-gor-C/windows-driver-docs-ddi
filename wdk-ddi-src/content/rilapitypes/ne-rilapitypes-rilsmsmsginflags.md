@@ -7,7 +7,7 @@ old-location: netvista\rilsmsmsginflags_2.htm
 old-project: netvista
 ms.assetid: 83842f98-6ec5-443a-ad48-492a487a6dae
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILSMSMSGINFLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SMSMSGIN_IMS"></a><a id="ril_smsmsgin_ims"></a><b>RIL_SMSMSGIN_IMS</b>
+### -field RIL_SMSMSGIN_IMS
 
 <dd></dd>
 
-### -field <a id="RIL_SMSMSGIN_ALL"></a><a id="ril_smsmsgin_all"></a><b>RIL_SMSMSGIN_ALL</b>
+### -field RIL_SMSMSGIN_ALL
 
 <dd></dd>
 </dl>

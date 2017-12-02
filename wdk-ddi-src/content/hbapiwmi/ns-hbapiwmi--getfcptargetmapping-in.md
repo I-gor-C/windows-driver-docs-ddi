@@ -55,13 +55,13 @@ typedef struct _GetFcpTargetMapping_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>HbaPortWWN</b>
+### -field HbaPortWWN
 
 <dd>
 <p>Contains a worldwide name for the port whose table of mappings is to be retrieved. </p>
 </dd>
 
-### -field <b>InEntryCount</b>
+### -field InEntryCount
 
 <dd>
 <p>Indicates the total number of persistent bindings associated with the HBA.</p>

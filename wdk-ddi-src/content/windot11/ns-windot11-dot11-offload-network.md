@@ -7,7 +7,7 @@ old-location: netvista\dot11_offload_network.htm
 old-project: netvista
 ms.assetid: 75DC558F-801B-42ED-9282-127E86E78923
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_OFFLOAD_NETWORK, DOT11_OFFLOAD_NETWORK, *PDOT11_OFFLOAD_NETWORK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,25 +56,25 @@ typedef struct _DOT11_OFFLOAD_NETWORK {
 ## -struct-fields
 <dl>
 
-### -field <b>Ssid</b>
+### -field Ssid
 
 <dd>
 <p>SSID interface.</p>
 </dd>
 
-### -field <b>UnicastCipher</b>
+### -field UnicastCipher
 
 <dd>
 <p>Cipher algorithm for data encryption and decryption.</p>
 </dd>
 
-### -field <b>AuthAlgo</b>
+### -field AuthAlgo
 
 <dd>
 <p>Wireless LAN authentication algorithm.</p>
 </dd>
 
-### -field <b>Dot11ChannelHints[DOT11_MAX_CHANNEL_HINTS]</b>
+### -field Dot11ChannelHints[DOT11_MAX_CHANNEL_HINTS]
 
 <dd>
 <p>Array of hints listing 802.11 PHY and media types and channels.</p>

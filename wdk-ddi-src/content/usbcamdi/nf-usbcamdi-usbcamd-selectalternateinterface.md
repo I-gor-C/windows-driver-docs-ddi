@@ -56,13 +56,13 @@ NTSTATUS USBCAMD_SelectAlternateInterface(
 ## -parameters
 <dl>
 
-### -param <i>DeviceContext</i> [in]
+### -param DeviceContext [in]
 
 <dd>
 <p>Pointer to a device-specific context.</p>
 </dd>
 
-### -param <i>RequestInterface</i> [in, out]
+### -param RequestInterface [in, out]
 
 <dd>
 <p>Pointer to a <a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a> structure initialized with the proper values for a SELECT_INTERFACE URB request. This interface structure corresponds to a single isochronous interface on the device.</p>

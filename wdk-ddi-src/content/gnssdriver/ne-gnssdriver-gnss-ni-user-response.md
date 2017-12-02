@@ -7,7 +7,7 @@ old-location: sensors\gnss_ni_user_response.htm
 old-project: sensors
 ms.assetid: FD4A244D-641C-46A7-8777-8F64A5400D23
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="GNSS_Ni_UserResponseAccept"></a><a id="gnss_ni_userresponseaccept"></a><a id="GNSS_NI_USERRESPONSEACCEPT"></a><b>GNSS_Ni_UserResponseAccept</b>
+### -field GNSS_Ni_UserResponseAccept
 
 <dd>
 <p>Indicates that the user accepted the NI request.</p>
 </dd>
 
-### -field <a id="GNSS_Ni_UserResponseDeny"></a><a id="gnss_ni_userresponsedeny"></a><a id="GNSS_NI_USERRESPONSEDENY"></a><b>GNSS_Ni_UserResponseDeny</b>
+### -field GNSS_Ni_UserResponseDeny
 
 <dd>
 <p>Indicates that the user denied the NI request.</p>
 </dd>
 
-### -field <a id="GNSS_Ni_UserResponseTimeout"></a><a id="gnss_ni_userresponsetimeout"></a><a id="GNSS_NI_USERRESPONSETIMEOUT"></a><b>GNSS_Ni_UserResponseTimeout</b>
+### -field GNSS_Ni_UserResponseTimeout
 
 <dd>
 <p>Indicates that the request timed out without a user response.</p>

@@ -54,7 +54,7 @@ typedef struct _DeleteInitiatorNodeName_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>DeletedInitiatorName</b>
+### -field DeletedInitiatorName
 
 <dd>
 <p>The iSCSI initiator node name that is to be deleted.</p>

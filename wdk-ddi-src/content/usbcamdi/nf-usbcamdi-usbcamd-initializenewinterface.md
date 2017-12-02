@@ -58,25 +58,25 @@ ULONG USBCAMD_InitializeNewInterface(
 ## -parameters
 <dl>
 
-### -param <i>DeviceContext</i> [in]
+### -param DeviceContext [in]
 
 <dd>
 <p>Pointer to device-specific context.</p>
 </dd>
 
-### -param <i>DeviceData</i> [in]
+### -param DeviceData [in]
 
 <dd>
 <p>Pointer to a <a href="..\usbcamdi\ns-usbcamdi--usbcamd-device-data2.md">USBCAMD_DEVICE_DATA2</a> structure.</p>
 </dd>
 
-### -param <i>Version</i> [in]
+### -param Version [in]
 
 <dd>
 <p>Specifies the version information. This value should be set to the value USBCAMD_VERSION_200 for use with USBCAMD version 2.0.</p>
 </dd>
 
-### -param <i>CamControlFlag</i> [in]
+### -param CamControlFlag [in]
 
 <dd>
 <p>Specifies how USBCAMD and the camera minidriver should interact. The camera minidriver should set this value to one or more of the following:</p>

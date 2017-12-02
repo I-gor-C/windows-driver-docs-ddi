@@ -7,7 +7,7 @@ old-location: ifsk\fltcompareinstancealtitudes.htm
 old-project: ifsk
 ms.assetid: aed86b34-4a9e-4c39-be0f-fa57829fa926
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltCompareInstanceAltitudes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ LONG FltCompareInstanceAltitudes(
 ## -parameters
 <dl>
 
-### -param <i>Instance1</i> [in]
+### -param Instance1 [in]
 
 <dd>
 <p>Pointer to the first instance. </p>
 </dd>
 
-### -param <i>Instance2</i> [in]
+### -param Instance2 [in]
 
 <dd>
 <p>Pointer to the second instance. </p>
@@ -151,4 +151,4 @@ LONG FltCompareInstanceAltitudes(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCompareInstanceAltitudes function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCompareInstanceAltitudes function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

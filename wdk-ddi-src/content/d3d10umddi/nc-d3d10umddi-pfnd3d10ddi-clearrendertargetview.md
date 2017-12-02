@@ -59,19 +59,19 @@ VOID APIENTRY ClearRenderTargetView(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hRenderTargetView</i> [in]
+### -param hRenderTargetView [in]
 
 <dd>
 <p> A handle to the render-target view to clear. </p>
 </dd>
 
-### -param <i>pColorRGBA</i> [in]
+### -param pColorRGBA [in]
 
 <dd>
 <p> A four-element array of single-precision float vectors that the driver uses to clear a render-target view. Array element 0 is red (R), 1 is green (G), 2 is blue (B), and 3 is alpha (A).</p>

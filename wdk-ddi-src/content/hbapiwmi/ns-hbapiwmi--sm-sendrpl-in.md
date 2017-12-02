@@ -58,31 +58,31 @@ typedef struct _SM_SendRPL_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>HbaPortWWN</b>
+### -field HbaPortWWN
 
 <dd>
 <p>A worldwide name (WWN) for the local port through which the read port list (RPL) command is sent.</p>
 </dd>
 
-### -field <b>AgentWWN</b>
+### -field AgentWWN
 
 <dd>
 <p>A worldwide name (WWN) for the port that is to be queried for a list of ports of type FC_Port. For a definition of FC_Port, see the T11 committee's <i>Fibre Channel HBA API</i> specification<i>.</i></p>
 </dd>
 
-### -field <b>AgentDomain</b>
+### -field AgentDomain
 
 <dd>
 <p>The domain number for the domain controller that is to be queried for a list of ports of type FC_Port. For a definition of FC_Port, see the T11 committee's <i>Fibre Channel HBA API</i> specification.</p>
 </dd>
 
-### -field <b>PortIndex</b>
+### -field PortIndex
 
 <dd>
 <p>The port index of the first port in the list of ports of type FC_Port to be returned.</p>
 </dd>
 
-### -field <b>InRespBufferMaxSize</b>
+### -field InRespBufferMaxSize
 
 <dd>
 <p>The response buffer size.</p>

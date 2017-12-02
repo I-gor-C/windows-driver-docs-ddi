@@ -57,25 +57,25 @@ typedef struct _CDROM_TOC_SESSION_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Indicates the length, in bytes, of the table of contents data. This length value does not include the length of the <b>Length </b>member itself. </p>
 </dd>
 
-### -field <b>FirstCompleteSession</b>
+### -field FirstCompleteSession
 
 <dd>
 <p>Contains the number of the first complete session. </p>
 </dd>
 
-### -field <b>LastCompleteSession</b>
+### -field LastCompleteSession
 
 <dd>
 <p>Contains the number of the last complete session. </p>
 </dd>
 
-### -field <b>TrackData</b>
+### -field TrackData
 
 <dd>
 <p>Contains data for the first track of the last finished session. This data includes the starting address and number of the track.</p>

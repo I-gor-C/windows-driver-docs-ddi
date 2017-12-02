@@ -7,7 +7,7 @@ old-location: netvista\ril_getuicclockstate.htm
 old-project: netvista
 ms.assetid: a831f49b-203e-4672-aced-679f0835dabb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetUiccLockState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_GetUiccLockState(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>lpRilUiccLock</i> 
+### -param lpRilUiccLock 
 
 <dd></dd>
 </dl>

@@ -56,13 +56,13 @@ typedef struct tagWNODE_TOO_SMALL {
 ## -struct-fields
 <dl>
 
-### -field <b>WnodeHeader</b>
+### -field WnodeHeader
 
 <dd>
 <p>Is a <a href="..\wmistr\ns-wmistr--wnode-header.md">WNODE_HEADER</a> structure that contains information common to all <b>WNODE_<i>XXX</i></b> structures, such as the buffer size, the GUID that represents a data block associated with a request, and flags that provide information about the <b>WNODE_<i>XXX</i></b> data being passed or returned.</p>
 </dd>
 
-### -field <b>SizeNeeded</b>
+### -field SizeNeeded
 
 <dd>
 <p>Specifies the size of the buffer needed to receive all of the <b>WNODE_<i>XXX</i></b> data to be returned.</p>

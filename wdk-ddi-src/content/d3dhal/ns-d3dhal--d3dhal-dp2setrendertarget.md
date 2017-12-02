@@ -55,13 +55,13 @@ typedef struct _D3DHAL_DP2SETRENDERTARGET {
 ## -struct-fields
 <dl>
 
-### -field <b>hRenderTarget</b>
+### -field hRenderTarget
 
 <dd>
 <p>Specifies a handle to the rendering target.</p>
 </dd>
 
-### -field <b>hZBuffer</b>
+### -field hZBuffer
 
 <dd>
 <p>Specifies a handle to the depth buffer.</p>

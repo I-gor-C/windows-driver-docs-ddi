@@ -7,7 +7,7 @@ old-location: image\istidevice_getcapabilities.htm
 old-project: image
 ms.assetid: 4c5d8834-a78d-443e-bfec-1d9fcddb9331
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDevice, GetCapabilities, IStiDevice::GetCapabilities
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT GetCapabilities(
 ## -parameters
 <dl>
 
-### -param <i>pDevCaps</i> [in, out]
+### -param pDevCaps [in, out]
 
 <dd>
 <p>Caller-supplied pointer to an empty <a href="..\sti\ns-sti--sti-dev-caps.md">STI_DEV_CAPS</a> structure.</p>

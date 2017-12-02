@@ -54,7 +54,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>fLargeRoom</b>
+### -field fLargeRoom
 
 <dd>
 <p>Specifies the type and calibration of the mixing room used for the final audio mixing session. If <b>TRUE</b>, a large room with an X curve (described in the AC-3 specification; for more information, see the following Remarks section) was used. If <b>FALSE</b>, a small room with a flat curve was used.</p>

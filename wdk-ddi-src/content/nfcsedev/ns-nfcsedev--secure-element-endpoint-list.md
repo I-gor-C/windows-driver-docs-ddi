@@ -56,13 +56,13 @@ typedef struct _SECURE_ELEMENT_ENDPOINT_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfEndpoints</b>
+### -field NumberOfEndpoints
 
 <dd>
 <p>The number of enumerated endpoints on the NFC controller.</p>
 </dd>
 
-### -field <b>EndpointList[ANYSIZE_ARRAY]</b>
+### -field EndpointList[ANYSIZE_ARRAY]
 
 <dd>
 <p>An array of <a href="..\nfcsedev\ns-nfcsedev--secure-element-endpoint-info.md">SECURE_ELEMENT_ENDPOINT_INFO</a> structures.</p>

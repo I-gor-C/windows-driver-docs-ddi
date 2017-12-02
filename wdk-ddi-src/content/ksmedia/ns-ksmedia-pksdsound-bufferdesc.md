@@ -56,32 +56,32 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies the buffer configuration. This member can be set to the bitwise OR of one or more of the following flag bits:</p>
 <p></p>
 <dl>
 
-### -field <a id="KSDSOUND_BUFFER_PRIMARY"></a><a id="ksdsound_buffer_primary"></a>KSDSOUND_BUFFER_PRIMARY
+### -field KSDSOUND_BUFFER_PRIMARY
 
 <dd>
 <p>Indicates that the buffer is a primary sound buffer (the buffer the user hears when a game is playing).</p>
 </dd>
 
-### -field <a id="KSDSOUND_BUFFER_STATIC"></a><a id="ksdsound_buffer_static"></a>KSDSOUND_BUFFER_STATIC
+### -field KSDSOUND_BUFFER_STATIC
 
 <dd>
 <p>Indicates that the buffer will be used for static sound data.</p>
 </dd>
 
-### -field <a id="KSDSOUND_BUFFER_LOCHARDWARE"></a><a id="ksdsound_buffer_lochardware"></a>KSDSOUND_BUFFER_LOCHARDWARE
+### -field KSDSOUND_BUFFER_LOCHARDWARE
 
 <dd>
 <p>Forces the buffer to use hardware mixing.</p>
 </dd>
 
-### -field <a id="KSDSOUND_BUFFER_LOCSOFTWARE"></a><a id="ksdsound_buffer_locsoftware"></a>KSDSOUND_BUFFER_LOCSOFTWARE
+### -field KSDSOUND_BUFFER_LOCSOFTWARE
 
 <dd>
 <p>Forces the buffer to be stored in system memory and use software mixing.</p>
@@ -89,44 +89,44 @@ typedef struct {
 </dl>
 </dd>
 
-### -field <b>Control</b>
+### -field Control
 
 <dd>
 <p>Specifies the capabilities of the buffer. The capabilities of a buffer are represented by a set of control flags. This member can be set to the bitwise OR of one or more of the following flag bits:</p>
 <p></p>
 <dl>
 
-### -field <a id="KSDSOUND_BUFFER_CTRL_3D"></a><a id="ksdsound_buffer_ctrl_3d"></a>KSDSOUND_BUFFER_CTRL_3D
+### -field KSDSOUND_BUFFER_CTRL_3D
 
 <dd>
 <p>Indicates that the buffer is either a primary buffer or a secondary buffer with 3D-control capability. If this bit is set, the KS pin representing the buffer implements a 3D node (<a href="https://msdn.microsoft.com/library/windows/hardware/ff537148">KSNODETYPE_3D_EFFECTS</a>). If the KSDSOUND_BUFFER_CTRL_HRTF_3D bit is set, the 3D node supports the optional <a href="https://msdn.microsoft.com/library/windows/hardware/ff537482">KSPROPSETID_Hrtf3d</a> property set.</p>
 </dd>
 
-### -field <a id="KSDSOUND_BUFFER_CTRL_FREQUENCY"></a><a id="ksdsound_buffer_ctrl_frequency"></a>KSDSOUND_BUFFER_CTRL_FREQUENCY
+### -field KSDSOUND_BUFFER_CTRL_FREQUENCY
 
 <dd>
 <p>Indicates that the buffer has frequency-control capability. If this bit is set, the pin representing the buffer implements a sample-rate conversion (<a href="https://msdn.microsoft.com/library/windows/hardware/ff537190">KSNODETYPE_SRC</a>) node.</p>
 </dd>
 
-### -field <a id="KSDSOUND_BUFFER_CTRL_HRTF_3D"></a><a id="ksdsound_buffer_ctrl_hrtf_3d"></a>KSDSOUND_BUFFER_CTRL_HRTF_3D
+### -field KSDSOUND_BUFFER_CTRL_HRTF_3D
 
 <dd>
 <p>Indicates that the buffer uses a head-related transfer function (HRTF) for 3D control. If this bit is set, then the KSDSOUND_BUFFER_CTRL_3D bit must also be set.</p>
 </dd>
 
-### -field <a id="KSDSOUND_BUFFER_CTRL_PAN"></a><a id="ksdsound_buffer_ctrl_pan"></a>KSDSOUND_BUFFER_CTRL_PAN
+### -field KSDSOUND_BUFFER_CTRL_PAN
 
 <dd>
-<p>Indicates that the buffer has pan-control capability. If this bit is set, the pin representing the buffer implements a volume node (<a href="https://msdn.microsoft.com/library/windows/hardware/ff537208">KSNODETYPE_VOLUME</a>) to control panning. For more information, see <a href="NULL">DirectSound Node-Ordering Requirements</a>.</p>
+<p>Indicates that the buffer has pan-control capability. If this bit is set, the pin representing the buffer implements a volume node (<a href="https://msdn.microsoft.com/library/windows/hardware/ff537208">KSNODETYPE_VOLUME</a>) to control panning. For more information, see <a href="https://msdn.microsoft.com/baca55f5-c669-4bd2-82b5-3985030864f2">DirectSound Node-Ordering Requirements</a>.</p>
 </dd>
 
-### -field <a id="KSDSOUND_BUFFER_CTRL_VOLUME"></a><a id="ksdsound_buffer_ctrl_volume"></a>KSDSOUND_BUFFER_CTRL_VOLUME
+### -field KSDSOUND_BUFFER_CTRL_VOLUME
 
 <dd>
 <p>Indicates that the buffer has volume-control capability. If this bit is set, the pin representing the buffer implements a volume node (<a href="https://msdn.microsoft.com/library/windows/hardware/ff537208">KSNODETYPE_VOLUME</a>) to control the stream's volume level.</p>
 </dd>
 
-### -field <a id="KSDSOUND_BUFFER_CTRL_POSITIONNOTIFY"></a><a id="ksdsound_buffer_ctrl_positionnotify"></a>KSDSOUND_BUFFER_CTRL_POSITIONNOTIFY
+### -field KSDSOUND_BUFFER_CTRL_POSITIONNOTIFY
 
 <dd>
 <p>Indicates that the buffer has position-notification capability. If this bit is set, the pin representing the buffer supports the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537297">KSPROPERTY_AUDIO_POSITION</a> property.</p>
@@ -134,7 +134,7 @@ typedef struct {
 </dl>
 </dd>
 
-### -field <b>WaveFormatEx</b>
+### -field WaveFormatEx
 
 <dd>
 <p>Specifies the wave-data format of the buffer. This member is a structure of type <a href="audio.waveformatex">WAVEFORMATEX</a>.</p>

@@ -65,67 +65,67 @@ typedef struct _DXGK_VIDPNTOPOLOGY_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnGetNumPaths</b>
+### -field pfnGetNumPaths
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-getnumpaths.md">pfnGetNumPaths</a> function.</p>
 </dd>
 
-### -field <b>pfnGetNumPathsFromSource</b>
+### -field pfnGetNumPathsFromSource
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-getnumpathsfromsource.md">pfnGetNumPathsFromSource</a> function.</p>
 </dd>
 
-### -field <b>pfnEnumPathTargetsFromSource</b>
+### -field pfnEnumPathTargetsFromSource
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-enumpathtargetsfromsource.md">pfnEnumPathTargetsFromSource</a> function.</p>
 </dd>
 
-### -field <b>pfnGetPathSourceFromTarget</b>
+### -field pfnGetPathSourceFromTarget
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-getpathsourcefromtarget.md">pfnGetPathSourceFromTarget</a> function.</p>
 </dd>
 
-### -field <b>pfnAcquirePathInfo</b>
+### -field pfnAcquirePathInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-acquirepathinfo.md">pfnAcquirePathInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnAcquireFirstPathInfo</b>
+### -field pfnAcquireFirstPathInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-acquirefirstpathinfo.md">pfnAcquireFirstPathInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnAcquireNextPathInfo</b>
+### -field pfnAcquireNextPathInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-acquirenextpathinfo.md">pfnAcquireNextPathInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnUpdatePathSupportInfo</b>
+### -field pfnUpdatePathSupportInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-updatepathsupportinfo.md">pfnUpdatePathSupportInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnReleasePathInfo</b>
+### -field pfnReleasePathInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-releasepathinfo.md">pfnReleasePathInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateNewPathInfo</b>
+### -field pfnCreateNewPathInfo
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-createnewpathinfo.md">pfnCreateNewPathInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnAddPath</b>
+### -field pfnAddPath
 
 <dd>
 <p>
@@ -133,7 +133,7 @@ typedef struct _DXGK_VIDPNTOPOLOGY_INTERFACE {
      </p>
 </dd>
 
-### -field <b>pfnRemovePath</b>
+### -field pfnRemovePath
 
 <dd>
 <p>A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-removepath.md">pfnRemovePath</a> function.</p>

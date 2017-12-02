@@ -65,73 +65,73 @@ typedef struct _D3DKMT_SUBMITCOMMAND {
 ## -struct-fields
 <dl>
 
-### -field <b>Commands</b>
+### -field Commands
 
 <dd>
 <p>The GPU virtual address for the commands being submitted to the context for execution. This information is provided to the driver during command submission and is also used for debugging purposes.</p>
 </dd>
 
-### -field <b>CommandLength</b>
+### -field CommandLength
 
 <dd>
 <p>Specifies the length, in bytes, of the commands being submitted to the GPU. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>An instance of the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-submitcommandflags.md">D3DDDICB_SUBMITCOMMANDFLAGS</a> structure.</p>
 </dd>
 
-### -field <b>PresentHistoryToken</b>
+### -field PresentHistoryToken
 
 <dd>
 <p>This member is reserved for future use.</p>
 </dd>
 
-### -field <b>BroadcastContextCount</b>
+### -field BroadcastContextCount
 
 <dd>
 <p>Specifies the number of context these command should be submitted to. This count must be at least 1.</p>
 </dd>
 
-### -field <b>BroadcastContext</b>
+### -field BroadcastContext
 
 <dd>
 <p>Specifies the handle of the context to execute the specified commands.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>Pointer to the driver private data to submitted by the user mode driver.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>Size of the private driver data information being passed. This size must be smaller than the size requested by the kernel mode  driver for submission private driver data or the call will fail.</p>
 </dd>
 
-### -field <b>NumPrimaries</b>
+### -field NumPrimaries
 
 <dd>
 <p>Specifies the number of primaries and swapchain back buffers being written to by the submitted commands. This is equal to the number of allocations in the <b>WrittenPrimaries</b> array.</p>
 </dd>
 
-### -field <b>WrittenPrimaries</b>
+### -field WrittenPrimaries
 
 <dd>
 <p>Arrays of handle to the primaries and swapchain back buffers being written to by the submitted commands.</p>
 </dd>
 
-### -field <b>NumHistoryBuffers</b>
+### -field NumHistoryBuffers
 
 <dd>
 <p>This member is reserved for future use.</p>
 </dd>
 
-### -field <b>HistoryBufferArray</b>
+### -field HistoryBufferArray
 
 <dd>
 <p>This member is reserved for future use.</p>

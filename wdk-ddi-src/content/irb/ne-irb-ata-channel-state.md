@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="ChannelStateDisabled"></a><a id="channelstatedisabled"></a><a id="CHANNELSTATEDISABLED"></a><b>ChannelStateDisabled</b>
+### -field ChannelStateDisabled
 
 <dd>
 <p>Indicates that the channel is disabled.</p>
 </dd>
 
-### -field <a id="ChannelStateEnabled"></a><a id="channelstateenabled"></a><a id="CHANNELSTATEENABLED"></a><b>ChannelStateEnabled</b>
+### -field ChannelStateEnabled
 
 <dd>
 <p>Indicates that the channel is enabled.</p>
 </dd>
 
-### -field <a id="ChannelStateUnKnown"></a><a id="channelstateunknown"></a><a id="CHANNELSTATEUNKNOWN"></a><b>ChannelStateUnKnown</b>
+### -field ChannelStateUnKnown
 
 <dd>
 <p>Indicates that the state of the channel is unknown.</p>

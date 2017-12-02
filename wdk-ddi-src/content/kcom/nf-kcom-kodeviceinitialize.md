@@ -55,7 +55,7 @@ NTSTATUS KoDeviceInitialize(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to a device object. The device object is assumed to contain a KSOBJECT_HEADER in its device extension.</p>

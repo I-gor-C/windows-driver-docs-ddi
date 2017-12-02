@@ -58,7 +58,7 @@ ULONG vDbgPrintEx(
 ## -parameters
 <dl>
 
-### -param <i>ComponentId</i> [in]
+### -param ComponentId [in]
 
 <dd>
 <p>The component that is calling this routine. This parameter must be one of the component name filter IDs that are defined in Dpfilter.h. To avoid mixing your driver's output with the output of Windows components, you should use only the following values for <i>ComponentId</i>:</p>
@@ -84,19 +84,19 @@ ULONG vDbgPrintEx(
 </ul>
 </dd>
 
-### -param <i>Level</i> [in]
+### -param Level [in]
 
 <dd>
-<p>The severity of the message that is being sent. This parameter can be any 32-bit integer. Values between 0 and 31 (inclusive) are treated differently than values between 32 and 0xFFFFFFFF. For more information about how the values are treated, see <a href="NULL">Reading and Filtering Debugging Messages</a>.</p>
+<p>The severity of the message that is being sent. This parameter can be any 32-bit integer. Values between 0 and 31 (inclusive) are treated differently than values between 32 and 0xFFFFFFFF. For more information about how the values are treated, see <a href="https://msdn.microsoft.com/2ad320f6-596d-4b4c-bfad-d570c856bcc7">Reading and Filtering Debugging Messages</a>.</p>
 </dd>
 
-### -param <i>Format</i> [in]
+### -param Format [in]
 
 <dd>
 <p>A pointer to the format string to print. The <i>Format</i> string supports most of the <b>printf</b>-style formatting codes. However, you can use the Unicode format codes (<b>%C</b>, <b>%S</b>, <b>%lc</b>, <b>%ls</b>, <b>%wc</b>, <b>%ws</b>, and <b>%wZ</b>) only with IRQL = PASSIVE_LEVEL. The <b>vDbgPrintEx</b> routine does not support any of the floating point types (<b>%f</b>, <b>%e</b>, <b>%E</b>, <b>%g</b>, <b>%G</b>, <b>%a</b>, or <b>%A</b>).</p>
 </dd>
 
-### -param <i>arglist</i> [in]
+### -param arglist [in]
 
 <dd>
 <p>An argument list for the format string. The <b>vDbgPrintEx</b> routine uses this list in the same way that <b>vprintf</b> does.</p>
@@ -111,7 +111,7 @@ ULONG vDbgPrintEx(
 
 <p><b>vDbgPrintEx</b> can be called at IRQL &lt;= DIRQL. However, you can use Unicode format codes (%<b>wc</b> and %<b>ws</b>) only at IRQL = PASSIVE_LEVEL. Also, because the debugger uses interprocess interrupts (IPIs) to communicate with other processors, calling <b>vDbgPrintEx</b> at IRQL &gt; DIRQL can cause deadlocks.</p>
 
-<p><b>vDbgPrintEx</b> either passes the string that it creates to the kernel debugger or does nothing at all, depending on the values of <i>ComponentId</i>, <i>Level</i>, and the corresponding component filter masks. For more information about what <b>vDbgPrintEx</b> does, see <a href="NULL">Reading and Filtering Debugging Messages</a>.</p>
+<p><b>vDbgPrintEx</b> either passes the string that it creates to the kernel debugger or does nothing at all, depending on the values of <i>ComponentId</i>, <i>Level</i>, and the corresponding component filter masks. For more information about what <b>vDbgPrintEx</b> does, see <a href="https://msdn.microsoft.com/2ad320f6-596d-4b4c-bfad-d570c856bcc7">Reading and Filtering Debugging Messages</a>.</p>
 
 <p>Unless it is absolutely necessary, you should not obtain a string from user input or another process and pass it to <b>vDbgPrintEx</b>. If you do use a string that you did not create, you must verify that this string is a valid format string and that the format codes match the argument list in type and quantity. The best coding practice is for all <i>Format</i> strings to be static and defined at compile time.</p>
 

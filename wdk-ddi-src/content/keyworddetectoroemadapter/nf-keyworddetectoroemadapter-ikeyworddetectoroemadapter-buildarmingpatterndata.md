@@ -57,25 +57,25 @@ HRESULT BuildArmingPatternData(
 ## -parameters
 <dl>
 
-### -param <i>ModelData</i> [in]
+### -param ModelData [in]
 
 <dd>
 <p>A pointer to <b>IStream</b> bound to model data for the <a href="audio.keywordselector">KEYWORDSELECTOR</a> values in the <i>KeywordSelectors</i> parameter.</p>
 </dd>
 
-### -param <i>KeywordSelectors</i> [in]
+### -param KeywordSelectors [in]
 
 <dd>
 <p>An array of <a href="audio.keywordselector">KEYWORDSELECTOR</a> structures identifying the desired set of matches for the keyword detector to arm.</p>
 </dd>
 
-### -param <i>NumKeywordSelectors</i> [in]
+### -param NumKeywordSelectors [in]
 
 <dd>
 <p>The number of items in the <i>KeywordSelectors</i> array. Only one key word selector is supported and this field must be set to one.</p>
 </dd>
 
-### -param <i>ppPatternData</i> [out]
+### -param ppPatternData [out]
 
 <dd>
 <p>The pattern data for the operating system to pass to the audio driver. The OEMDLL allocates the memory calling <a href="com.cotaskmemalloc">CoTaskMemAlloc</a>. The operating system will free the memory by calling <a href="com.cotaskmemfree">CoTaskMemFree</a>.</p>

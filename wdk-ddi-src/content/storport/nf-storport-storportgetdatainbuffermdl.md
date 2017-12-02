@@ -57,19 +57,19 @@ ULONG StorPortGetDataInBufferMdl(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>Srb</i> [in]
+### -param Srb [in]
 
 <dd>
 <p>The request block to containing the data described by the MDL pointed to by <i>Mdl</i>.</p>
 </dd>
 
-### -param <i>Mdl</i> [out]
+### -param Mdl [out]
 
 <dd>
 <p>A pointer to  an MDL address to receive the MDL for <i>Srb</i>.</p>

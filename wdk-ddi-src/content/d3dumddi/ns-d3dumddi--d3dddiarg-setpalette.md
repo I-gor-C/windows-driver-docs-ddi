@@ -56,13 +56,13 @@ typedef struct _D3DDDIARG_SETPALETTE {
 ## -struct-fields
 <dl>
 
-### -field <b>PaletteHandle</b>
+### -field PaletteHandle
 
 <dd>
 <p>[in] A handle to the palette to be set up. If the value of <b>PaletteHandle</b> is zero, the surface that is specified by <b>hResource</b> should be uncoupled from any palette that it might have been associated with previously.</p>
 </dd>
 
-### -field <b>PaletteFlags</b>
+### -field PaletteFlags
 
 <dd>
 <p>[in] A valid bitwise OR of the following flags that specify the attributes of the palette.</p>
@@ -99,7 +99,7 @@ typedef struct _D3DDDIARG_SETPALETTE {
 <p> </p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A handle to the surface (texture) with which the palette that is identified by <b>PaletteHandle</b> is associated.</p>

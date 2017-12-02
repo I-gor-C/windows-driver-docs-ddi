@@ -7,7 +7,7 @@ old-location: ifsk\ecp_open_parameters.htm
 old-project: ifsk
 ms.assetid: 1223C77A-EAEC-4FCF-B2CC-F1E2935AF5CB
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: ECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS, *PECP_OPEN_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef struct _ECP_OPEN_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size of this context structure, in bytes.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use. This must be initialized to 0.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags that Specify the parameters or purpose for opening a file. Contains one of the following values:</p>

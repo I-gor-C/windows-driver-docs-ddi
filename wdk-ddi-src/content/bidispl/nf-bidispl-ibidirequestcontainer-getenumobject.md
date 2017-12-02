@@ -54,7 +54,7 @@ HRESULT IBidiRequestContainer::GetEnumObject(
 ## -parameters
 <dl>
 
-### -param <i>ppenum</i> [out]
+### -param ppenum [out]
 
 <dd>
 <p>Pointer to the variable that receives a pointer to the <a href="_com_ienumunknown">IEnumUnknown</a> interface that enumerates the bidi requests in the container.</p>

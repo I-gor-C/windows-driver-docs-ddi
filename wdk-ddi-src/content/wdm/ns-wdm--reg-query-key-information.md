@@ -62,49 +62,49 @@ typedef struct _REG_QUERY_KEY_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Object</b>
+### -field Object
 
 <dd>
 <p>A pointer to the registry key object for the key whose metadata is about to be queried.</p>
 </dd>
 
-### -field <b>KeyInformationClass</b>
+### -field KeyInformationClass
 
 <dd>
 <p>The <a href="..\wdm\ne-wdm--key-information-class.md">KEY_INFORMATION_CLASS</a> value that indicates the type of information to be returned by the system.</p>
 </dd>
 
-### -field <b>KeyInformation</b>
+### -field KeyInformation
 
 <dd>
 <p>A pointer to a buffer that contains the information to be returned by the system. The format of the buffer depends on the value of <b>KeyInformationClass</b>. For more information see <a href="..\wdm\ne-wdm--key-information-class.md">KEY_INFORMATION_CLASS</a>.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Specifies the size, in bytes, of the <b>KeyInformation</b> buffer.</p>
 </dd>
 
-### -field <b>ResultLength</b>
+### -field ResultLength
 
 <dd>
 <p>Pointer to a variable that receives (from the system) the amount of valid data, in bytes, in the <b>KeyInformation</b> buffer.</p>
 </dd>
 
-### -field <b>CallContext</b>
+### -field CallContext
 
 <dd>
 <p>Optional driver-defined context information that the driver's <a href="kernel.registrycallback">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system. </p>
 </dd>
 
-### -field <b>ObjectContext</b>
+### -field ObjectContext
 
 <dd>
 <p>A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system. </p>

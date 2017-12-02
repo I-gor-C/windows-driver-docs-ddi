@@ -55,13 +55,13 @@ typedef struct _CDROM_EXCLUSIVE_LOCK_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>LockState</b>
+### -field LockState
 
 <dd>
 <p>A Boolean value that indicates whether the CD-ROM device is locked for exclusive access. If <b>TRUE</b>, the device is locked. If <b>FALSE</b>, the device is not locked.</p>
 </dd>
 
-### -field <b>CallerName</b>
+### -field CallerName
 
 <dd>
 <p>A <b>NULL</b>-terminated string that identifies the application or system component that has a lock on the CD-ROM device. The length of the string must be less than or equal to CDROM_EXCLUSIVE_CALLER_LENGTH bytes, including the <b>NULL</b> character at the end of the string. The string must contain alphanumerics (A - Z, a - z, 0 - 9), spaces, periods, commas, colons (:), semi-colons (;), hyphens (-), and underscores (_).</p>

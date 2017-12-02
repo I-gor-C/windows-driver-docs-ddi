@@ -55,7 +55,7 @@ STORPORT_API STOR_PHYSICAL_ADDRESS StorPortConvertUlongToPhysicalAddress(
 ## -parameters
 <dl>
 
-### -param <i>UlongAddress</i> [in]
+### -param UlongAddress [in]
 
 <dd>
 <p>Contains the address to be converted.</p>

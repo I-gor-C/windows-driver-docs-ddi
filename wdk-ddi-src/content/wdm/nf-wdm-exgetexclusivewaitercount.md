@@ -55,7 +55,7 @@ ULONG ExGetExclusiveWaiterCount(
 ## -parameters
 <dl>
 
-### -param <i>Resource</i> [in]
+### -param Resource [in]
 
 <dd>
 <p>A pointer to the resource to be tested.</p>

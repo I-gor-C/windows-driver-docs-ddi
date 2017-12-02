@@ -7,13 +7,13 @@ old-location: debugger\writemsr.htm
 old-project: debugger
 ms.assetid: a88c2c74-ab9a-4d9a-aeb7-d08bfe497da4
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: WriteMsr
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -56,13 +56,13 @@ __inline VOID WriteMsr(
 ## -parameters
 <dl>
 
-### -param <i>MsrReg</i> [in]
+### -param MsrReg [in]
 
 <dd>
 <p>Specifies the ID number of the MSR.</p>
 </dd>
 
-### -param <i>MsrValue</i> [in]
+### -param MsrValue [in]
 
 <dd>
 <p>Specifies the new value of the MSR.</p>
@@ -93,7 +93,7 @@ __inline VOID WriteMsr(
 </th>
 <td width="70%">
 <dl>
-<dt>Dbgeng.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Dbgeng.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

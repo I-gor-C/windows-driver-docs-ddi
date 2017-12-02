@@ -61,52 +61,52 @@ NTSTATUS IoReportDetectedDevice(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>Pointer to the driver object of the driver that detected the device.</p>
 </dd>
 
-### -param <i>LegacyBusType</i> [in]
+### -param LegacyBusType [in]
 
 <dd>
 <p>Specifies the type of bus on which the device resides. The PnP manager uses this information to match the reported device to its PnP-enumerated instance, if one exists.</p>
 <p>The interface types, such as <b>PCIBus</b>, are defined in Wdm.h. If a driver does not know the <i>LegacyBusType</i> for the device, the driver supplies the value <b>InterfaceTypeUndefined</b> for this parameter.</p>
 </dd>
 
-### -param <i>BusNumber</i> [in]
+### -param BusNumber [in]
 
 <dd>
 <p>Specifies the bus number for the device. The PnP manager uses this information to match the reported device to its PnP-enumerated instance, if one exists.</p>
 <p>The bus number distinguishes the bus on which the device resides from other buses of the same type on the computer. The bus-numbering scheme is bus-specific. If a driver does not know the <i>BusNumber</i> for the device, the driver supplies the value -1 for this parameter. </p>
 </dd>
 
-### -param <i>SlotNumber</i> [in]
+### -param SlotNumber [in]
 
 <dd>
 <p>Specifies the logical slot number of the device. The PnP manager uses this information to match the reported device to its PnP-enumerated instance, if one exists.</p>
 <p>If a driver does not know the <i>SlotNumber</i> for the device, the driver supplies the value -1 for this parameter.</p>
 </dd>
 
-### -param <i>ResourceList</i> [in, optional]
+### -param ResourceList [in, optional]
 
 <dd>
 <p>Pointer to the resource list the driver used to detect the device. Resources in this list are in raw, untranslated form. </p>
 </dd>
 
-### -param <i>ResourceRequirements</i> [in, optional]
+### -param ResourceRequirements [in, optional]
 
 <dd>
 <p>Optionally points to a resource requirements list for the detected device. <b>NULL</b> if the caller does not have this information for the device.</p>
 </dd>
 
-### -param <i>ResourceAssigned</i> [in]
+### -param ResourceAssigned [in]
 
 <dd>
 <p>Specifies whether the device's resources have already been reported to the PnP manager. If <i>ResourceAssigned</i> is <b>TRUE</b>, the resources have already been reported, possibly with <a href="..\ntddk\nf-ntddk-ioreportresourcefordetection.md">IoReportResourceForDetection</a>, and the PnP manager will not attempt to claim them on behalf of the device. If <b>TRUE</b>, the PnP manager will also not claim resources when the device is root-enumerated on subsequent boots.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in, out]
+### -param DeviceObject [in, out]
 
 <dd>
 <p>Optionally points to a PDO for the detected device. </p>

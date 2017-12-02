@@ -54,7 +54,7 @@ HRESULT GetWriteStream(
 ## -parameters
 <dl>
 
-### -param <i>ppWriteStream</i> [out]
+### -param ppWriteStream [out]
 
 <dd>
 <p>The stream that the filter should use to write page markup to send data.</p>

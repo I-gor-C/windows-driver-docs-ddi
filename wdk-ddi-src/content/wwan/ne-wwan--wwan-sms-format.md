@@ -7,7 +7,7 @@ old-location: netvista\wwan_sms_format.htm
 old-project: netvista
 ms.assetid: fb583ded-8292-4486-8e85-3d3039611d14
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ typedef enum _WWAN_SMS_FORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanSmsFormatPdu"></a><a id="wwansmsformatpdu"></a><a id="WWANSMSFORMATPDU"></a><b>WwanSmsFormatPdu</b>
+### -field WwanSmsFormatPdu
 
 <dd>
 <p>SMS messages are in PDU format. For GSM-based devices, messages are hexadecimal strings that
@@ -70,25 +70,25 @@ typedef enum _WWAN_SMS_FORMAT {
      Spectrum Systems".</p>
 </dd>
 
-### -field <a id="WwanSmsFormatReserved0"></a><a id="wwansmsformatreserved0"></a><a id="WWANSMSFORMATRESERVED0"></a><b>WwanSmsFormatReserved0</b>
+### -field WwanSmsFormatReserved0
 
 <dd>
 <p>This value is reserved for future use. Do not use.</p>
 </dd>
 
-### -field <a id="WwanSmsFormatReserved1"></a><a id="wwansmsformatreserved1"></a><a id="WWANSMSFORMATRESERVED1"></a><b>WwanSmsFormatReserved1</b>
+### -field WwanSmsFormatReserved1
 
 <dd>
 <p>This value is reserved for future use. Do not use.</p>
 </dd>
 
-### -field <a id="WwanSmsFormatReserved2"></a><a id="wwansmsformatreserved2"></a><a id="WWANSMSFORMATRESERVED2"></a><b>WwanSmsFormatReserved2</b>
+### -field WwanSmsFormatReserved2
 
 <dd>
 <p>This value is reserved for future use. Do not use.</p>
 </dd>
 
-### -field <a id="WwanSmsFormatCdma"></a><a id="wwansmsformatcdma"></a><a id="WWANSMSFORMATCDMA"></a><b>WwanSmsFormatCdma</b>
+### -field WwanSmsFormatCdma
 
 <dd>
 <p>The message is in text format. For more information, see 
@@ -97,7 +97,7 @@ typedef enum _WWAN_SMS_FORMAT {
      only to CDMA-based devices.</p>
 </dd>
 
-### -field <a id="WwanSmsFormatMax"></a><a id="wwansmsformatmax"></a><a id="WWANSMSFORMATMAX"></a><b>WwanSmsFormatMax</b>
+### -field WwanSmsFormatMax
 
 <dd>
 <p>This value is reserved. Do not use.</p>
@@ -154,4 +154,4 @@ typedef enum _WWAN_SMS_FORMAT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_FORMAT enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_FORMAT enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

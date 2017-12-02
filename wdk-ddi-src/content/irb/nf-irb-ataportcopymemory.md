@@ -56,19 +56,19 @@ VOID AtaPortCopyMemory(
 ## -parameters
 <dl>
 
-### -param <i>WriteBuffer</i> [out]
+### -param WriteBuffer [out]
 
 <dd>
 <p>A pointer to the destination buffer.</p>
 </dd>
 
-### -param <i>ReadBuffer</i> [in]
+### -param ReadBuffer [in]
 
 <dd>
 <p>A pointer to the source buffer.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the number of bytes to transfer from <i>ReadBuffer</i> to <i>WriteBuffer</i>.</p>

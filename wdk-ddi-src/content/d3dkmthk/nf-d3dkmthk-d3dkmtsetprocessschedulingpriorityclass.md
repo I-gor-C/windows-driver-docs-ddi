@@ -55,13 +55,13 @@ NTSTATUS APIENTRY D3DKMTSetProcessSchedulingPriorityClass(
 ## -parameters
 <dl>
 
-### -param <i>hProcess</i> [in]
+### -param hProcess [in]
 
 <dd>
 <p>A handle to the process that scheduling priority is set for.</p>
 </dd>
 
-### -param <i>Priority</i> [in]
+### -param Priority [in]
 
 <dd>
 <p>A <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-schedulingpriorityclass.md">D3DKMT_SCHEDULINGPRIORITYCLASS</a>-typed value that indicates the priority level to set for the process.</p>

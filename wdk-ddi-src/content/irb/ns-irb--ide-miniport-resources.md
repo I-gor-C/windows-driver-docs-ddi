@@ -55,13 +55,13 @@ typedef struct _IDE_MINIPORT_RESOURCES {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfAccessRanges</b>
+### -field NumberOfAccessRanges
 
 <dd>
 <p>Contains the number of access ranges pointed to by <b>IdeAccessRange</b>. Each is a range either of memory addresses or I/O port addresses.</p>
 </dd>
 
-### -field <b>IdeAccessRange</b>
+### -field IdeAccessRange
 
 <dd>
 <p>Pointer to the first address range in a series of contiguous address ranges defined by a structure of type <a href="..\irb\ns-irb--ide-access-range.md">IDE_ACCESS_RANGE</a>. The value in the <b>NumberOfAccessRanges</b> member indicates how many address ranges are provided. The port driver populates each <b>IDE_ACCESS_RANGE</b> structure with the address ranges allocated for the controller.</p>

@@ -7,7 +7,7 @@ old-location: netvista\wdi_p2p_go_internal_reset_policy.htm
 old-project: netvista
 ms.assetid: 7932A2BB-DD6D-4DF7-BDF9-4E476B06B0B5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ typedef enum _WDI_P2P_GO_INTERNAL_RESET_POLICY {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_P2P_GO_INTERNAL_RESET_POLICY_USE_LAST_CHANNEL"></a><a id="wdi_p2p_go_internal_reset_policy_use_last_channel"></a><b>WDI_P2P_GO_INTERNAL_RESET_POLICY_USE_LAST_CHANNEL</b>
+### -field WDI_P2P_GO_INTERNAL_RESET_POLICY_USE_LAST_CHANNEL
 
 <dd>
 <p>If an internal-to-firmware Group Owner reset is performed, post-reset Group Owner must operate on the same operating channel as before the internal reset operation.</p>
 </dd>
 
-### -field <a id="WDI_P2P_GO_INTERNAL_RESET_POLICY_ALLOW_CHANNEL_OPTIMIZATION"></a><a id="wdi_p2p_go_internal_reset_policy_allow_channel_optimization"></a><b>WDI_P2P_GO_INTERNAL_RESET_POLICY_ALLOW_CHANNEL_OPTIMIZATION</b>
+### -field WDI_P2P_GO_INTERNAL_RESET_POLICY_ALLOW_CHANNEL_OPTIMIZATION
 
 <dd>
 <p>If an internal-to-firmware Group Owner reset is performed, firmware may freely decide its new operating channel. For example, firmware may choose to minimize channel switching by adopting station port channel. If there is no optimization to be done, fall back to selecting previous operating channel.</p>

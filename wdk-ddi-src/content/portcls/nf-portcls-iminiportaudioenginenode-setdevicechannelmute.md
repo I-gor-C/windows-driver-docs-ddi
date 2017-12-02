@@ -56,19 +56,19 @@ NTSTATUS SetDeviceChannelMute(
 ## -parameters
 <dl>
 
-### -param <i>ulNodeId</i> [in]
+### -param ulNodeId [in]
 
 <dd>
 <p>The ID for the node that represents the audio device.</p>
 </dd>
 
-### -param <i>ulChannel</i> [in]
+### -param ulChannel [in]
 
 <dd>
 <p>The audio device channel.</p>
 </dd>
 
-### -param <i>bMute</i> [in]
+### -param bMute [in]
 
 <dd>
 <p>The state to which the Mute node for the audio device channel will be set.</p>

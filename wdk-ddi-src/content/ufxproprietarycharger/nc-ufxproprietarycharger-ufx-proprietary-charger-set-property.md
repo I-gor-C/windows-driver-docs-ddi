@@ -61,13 +61,13 @@ typedef UFX_PROPRIETARY_CHARGER_SET_PROPERTY PFN_UFX_PROPRIETARY_CHARGER_SET_PRO
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>    A pointer to a driver-defined context.</p>
 </dd>
 
-### -param <i>Property</i> [in]
+### -param Property [in]
 
 <dd>
 <p>    A pointer to a <b>CONFIGURABLE_CHARGER_PROPERTY_HEADER</b> structure (defined in charging.h) that describes the configurable charger property to set.</p>

@@ -55,13 +55,13 @@ typedef enum _PEP_ACPI_OBJECT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PepAcpiObjectTypeMethod"></a><a id="pepacpiobjecttypemethod"></a><a id="PEPACPIOBJECTTYPEMETHOD"></a><b>PepAcpiObjectTypeMethod</b>
+### -field PepAcpiObjectTypeMethod
 
 <dd>
 <p>The object is an ACPI control method.</p>
 </dd>
 
-### -field <a id="PepAcpiObjectTypeMaximum"></a><a id="pepacpiobjecttypemaximum"></a><a id="PEPACPIOBJECTTYPEMAXIMUM"></a><b>PepAcpiObjectTypeMaximum</b>
+### -field PepAcpiObjectTypeMaximum
 
 <dd>
 <p>Reserved for use by the operating system.</p>

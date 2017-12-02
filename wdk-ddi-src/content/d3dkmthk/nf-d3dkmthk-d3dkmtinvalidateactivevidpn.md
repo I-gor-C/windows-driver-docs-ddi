@@ -58,7 +58,7 @@ NTSTATUS D3DKMTInvalidateActiveVidPn(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-invalidateactivevidpn.md">D3DKMT_INVALIDATEACTIVEVIDPN</a> structure that describes parameters that invalidate the active VidPN currently in use.</p>

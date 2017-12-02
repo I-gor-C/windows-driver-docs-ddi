@@ -55,13 +55,13 @@ typedef struct _PEP_PPM_QUERY_FEEDBACK_COUNTERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>[in] The number of processor performance feedback counters supported by the PEP. The PEP previously supplied this count in response to a <a href="kernel.pep_notify_ppm_query_capabilities">PEP_NOTIFY_PPM_QUERY_CAPABILITIES</a> notification.</p>
 </dd>
 
-### -field <b>Counters</b>
+### -field Counters
 
 <dd>
 <p>[out] The first element in an array of <a href="..\pepfx\ns-pepfx--pep-processor-feedback-counter.md">PEP_PROCESSOR_FEEDBACK_COUNTER</a> structures. If this array contains more than one element, the additional elements immediately follow the end of the <b>PEP_PPM_QUERY_FEEDBACK_COUNTERS</b> structure. The <b>Count</b> member specifies the number of elements in this array. For more information, see Remarks.</p>

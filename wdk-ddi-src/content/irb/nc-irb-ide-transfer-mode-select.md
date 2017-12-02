@@ -58,13 +58,13 @@ BOOLEAN AtaControllerTransferModeSelect(
 ## -parameters
 <dl>
 
-### -param <i>ControllerExtension</i> [in]
+### -param ControllerExtension [in]
 
 <dd>
 <p>A pointer to the controller extension.</p>
 </dd>
 
-### -param <i>TransferModeParams</i> [in, out]
+### -param TransferModeParams [in, out]
 
 <dd>
 <p>A pointer to a structure of type <a href="..\irb\ns-irb--ide-transfer-mode-parameters.md">IDE_TRANSFER_MODE_PARAMETERS</a> that indicates to the miniport driver the channel on which to set the transfer modes and which transfer modes are available. </p>

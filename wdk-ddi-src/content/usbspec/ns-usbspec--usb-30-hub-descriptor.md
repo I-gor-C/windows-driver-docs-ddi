@@ -63,13 +63,13 @@ typedef struct _USB_30_HUB_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>The length, in bytes, of the descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorType</b>
+### -field bDescriptorType
 
 <dd>
 <p>    The descriptor type. For SuperSpeed hub descriptors, the value must be USB_30_HUB_DESCRIPTOR_TYPE (0x2A).
@@ -77,43 +77,43 @@ typedef struct _USB_30_HUB_DESCRIPTOR {
 </p>
 </dd>
 
-### -field <b>bNumberOfPorts</b>
+### -field bNumberOfPorts
 
 <dd>
 <p>    The number of ports on the hub.</p>
 </dd>
 
-### -field <b>wHubCharacteristics</b>
+### -field wHubCharacteristics
 
 <dd>
 <p>    The hub characteristics. </p>
 </dd>
 
-### -field <b>bPowerOnToPowerGood</b>
+### -field bPowerOnToPowerGood
 
 <dd>
 <p>    The time, in 2-millisecond intervals, that it takes the device to turn on completely.</p>
 </dd>
 
-### -field <b>bHubControlCurrent</b>
+### -field bHubControlCurrent
 
 <dd>
 <p>The maximum current requirements, in milliamperes, of the controller component of the hub.</p>
 </dd>
 
-### -field <b>bHubHdrDecLat</b>
+### -field bHubHdrDecLat
 
 <dd>
 <p>The    hub packet header decode latency.</p>
 </dd>
 
-### -field <b>wHubDelay</b>
+### -field wHubDelay
 
 <dd>
 <p>    The average delay, in nanoseconds, that is introduced by the hub.</p>
 </dd>
 
-### -field <b>DeviceRemovable</b>
+### -field DeviceRemovable
 
 <dd>
 <p>    Indicates whether a removable device is attached to each port.</p>

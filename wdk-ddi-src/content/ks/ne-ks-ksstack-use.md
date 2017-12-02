@@ -56,15 +56,15 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KsStackCopyToNewLocation"></a><a id="ksstackcopytonewlocation"></a><a id="KSSTACKCOPYTONEWLOCATION"></a><b>KsStackCopyToNewLocation</b>
+### -field KsStackCopyToNewLocation
 
 <dd></dd>
 
-### -field <a id="KsStackReuseCurrentLocation"></a><a id="ksstackreusecurrentlocation"></a><a id="KSSTACKREUSECURRENTLOCATION"></a><b>KsStackReuseCurrentLocation</b>
+### -field KsStackReuseCurrentLocation
 
 <dd></dd>
 
-### -field <a id="KsStackUseNewLocation"></a><a id="ksstackusenewlocation"></a><a id="KSSTACKUSENEWLOCATION"></a><b>KsStackUseNewLocation</b>
+### -field KsStackUseNewLocation
 
 <dd></dd>
 </dl>

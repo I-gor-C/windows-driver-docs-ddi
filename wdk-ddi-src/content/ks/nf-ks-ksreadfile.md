@@ -61,49 +61,49 @@ NTSTATUS KsReadFile(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Specifies the file object to perform the read against.</p>
 </dd>
 
-### -param <i>Event</i> [in, optional]
+### -param Event [in, optional]
 
 <dd>
 <p>Optionally contains the event to use in the read. If no event is passed, the call is assumed to be on a synchronous file object. If not, the caller is waiting for the file object's event, or it may be asynchronously completed. If the file has been opened for synchronous I/O, this must be <b>NULL</b>. If the variable is used, it must be an event allocated by the object manager.</p>
 </dd>
 
-### -param <i>PortContext</i> [in, optional]
+### -param PortContext [in, optional]
 
 <dd>
 <p>Optionally contains context information for a completion port.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>Specifies the address where the status information is to be returned. This is always assumed to be a valid address, regardless of the requester mode.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Specifies the buffer in which to place the data read. If the buffer needs to be probed and locked, an exception handler is used, along with <i>RequesterMode</i>.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the size of the buffer passed.</p>
 </dd>
 
-### -param <i>Key</i> [in, optional]
+### -param Key [in, optional]
 
 <dd>
 <p>Optionally contains a key, or zero if none</p>
 </dd>
 
-### -param <i>RequestorMode</i> [in]
+### -param RequestorMode [in]
 
 <dd>
 <p>Indicates the processor mode to place in the read IRP if one needs to be generated. Additionally, it is used if the buffer needs to be probed and locked. This variable also determines if a fast I/O call can be performed. If the requester mode is not KernelMode, but the previous mode was, then fast I/O cannot be used.</p>

@@ -54,7 +54,7 @@ LONGLONG GetCorrelatedPhysicalTime(
 ## -parameters
 <dl>
 
-### -param <i>SystemTime</i> [out]
+### -param SystemTime [out]
 
 <dd>
 <p>Specifies the current system time in 100 nanosecond units.</p>
@@ -67,7 +67,7 @@ LONGLONG GetCorrelatedPhysicalTime(
 ## -remarks
 <p>Use this method to determine the difference between physical time and system time. <b>IKsReferenceClock::GetCorrelatedPhysicalTime</b> returns the times that both clocks show at the same moment.</p>
 
-<p>For more information, see <a href="NULL">AVStream Clocks</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/fc1d5bca-72e3-48e2-b46f-09a13bba83b4">AVStream Clocks</a>.</p>
 
 <p>AVStream uses the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564461">KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME</a> property to retrieve the correlated physical time.</p>
 

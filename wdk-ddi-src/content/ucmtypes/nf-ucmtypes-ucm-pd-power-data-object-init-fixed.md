@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a to the <a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a> for a Fixed Supply type Power Data Object.</p>
+<p>Initializes a to the <a href="..\ucmtypes\ns-ucmtypes--ucm-pd-power-data-object.md">UCM_PD_POWER_DATA_OBJECT</a> for a Fixed Supply type Power Data Object.</p>
 
 
 ## -syntax
@@ -55,10 +55,10 @@ FORCEINLINE void UCM_PD_POWER_DATA_OBJECT_INIT_FIXED(
 ## -parameters
 <dl>
 
-### -param <i>Pdo</i> [out]
+### -param Pdo [out]
 
 <dd>
-<p>A pointer to a <a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a> structure in which the <b>FixedSupplyPdo.FixedSupply</b> member is set to <b>UcmPdPdoTypeFixedSupply</b>.</p>
+<p>A pointer to a <a href="..\ucmtypes\ns-ucmtypes--ucm-pd-power-data-object.md">UCM_PD_POWER_DATA_OBJECT</a> structure in which the <b>FixedSupplyPdo.FixedSupply</b> member is set to <b>UcmPdPdoTypeFixedSupply</b>.</p>
 </dd>
 </dl>
 
@@ -119,7 +119,7 @@ FORCEINLINE void UCM_PD_POWER_DATA_OBJECT_INIT_FIXED(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a>
+<a href="..\ucmtypes\ns-ucmtypes--ucm-pd-power-data-object.md">UCM_PD_POWER_DATA_OBJECT</a>
 </dt>
 </dl>
 <p> </p>

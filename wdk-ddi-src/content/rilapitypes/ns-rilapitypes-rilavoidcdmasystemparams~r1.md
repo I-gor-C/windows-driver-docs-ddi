@@ -7,7 +7,7 @@ old-location: netvista\rilavoidcdmasystemparams_2.htm
 old-project: netvista
 ms.assetid: bd938bd9-479a-434c-91d6-93ec76ebe5d6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILAVOIDCDMASYSTEMPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILAVOIDCDMASYSTEMPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwAvoidanceReqType</b>
+### -field dwAvoidanceReqType
 
 <dd></dd>
 </dl>

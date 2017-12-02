@@ -54,7 +54,7 @@ typedef struct _PEP_PPM_PERF_CHECK_COMPLETE {
 ## -struct-fields
 <dl>
 
-### -field <b>EvaluationTime</b>
+### -field EvaluationTime
 
 <dd>
 <p>[in] The interrupt time of the performance check evaluation that initiated this notification.</p>

@@ -62,55 +62,55 @@ typedef struct D3D12DDI_RESOURCE_ALLOCATION_INFO_0022 {
 ## -struct-fields
 <dl>
 
-### -field <b>ResourceDataSize</b>
+### -field ResourceDataSize
 
 <dd>
 <p>The data size of  the resource. </p>
 </dd>
 
-### -field <b>UINT64</b>
+### -field UINT64
 
 <dd>
 <p>The additional size of the data header.</p>
 </dd>
 
-### -field <b>AdditionalDataSize</b>
+### -field AdditionalDataSize
 
 <dd>
 <p>The additional data size.</p>
 </dd>
 
-### -field <b>ResourceDataAlignment</b>
+### -field ResourceDataAlignment
 
 <dd>
 <p>The data alignment of the resource.</p>
 </dd>
 
-### -field <b>AdditionalDataHeaderAlignment</b>
+### -field AdditionalDataHeaderAlignment
 
 <dd>
 <p>The data alignment of the additional header.</p>
 </dd>
 
-### -field <b>AdditionalDataAlignment</b>
+### -field AdditionalDataAlignment
 
 <dd>
 <p>The additional data alignment. </p>
 </dd>
 
-### -field <b>Layout</b>
+### -field Layout
 
 <dd>
 <p>The texture layout as a <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi-texture-layout.md">D3D12DDI_TEXTURE_LAYOUT</a> value. </p>
 </dd>
 
-### -field <b>MipLevelSwizzleTransition</b>
+### -field MipLevelSwizzleTransition
 
 <dd>
 <p>The MIP level for a swizzle transition.</p>
 </dd>
 
-### -field <b>PlaneSliceSwizzleTransition</b>
+### -field PlaneSliceSwizzleTransition
 
 <dd>
 <p>The plane slice for a swizzle transition. </p>

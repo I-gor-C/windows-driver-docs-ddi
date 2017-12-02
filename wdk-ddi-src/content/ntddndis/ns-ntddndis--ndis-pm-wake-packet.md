@@ -7,7 +7,7 @@ old-location: netvista\ndis_pm_wake_packet.htm
 old-project: netvista
 ms.assetid: b3d7adcf-79cd-42f4-ada2-c57de6310020
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PM_WAKE_PACKET, NDIS_PM_WAKE_PACKET, *PNDIS_PM_WAKE_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ typedef struct _NDIS_PM_WAKE_PACKET {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_PM_WAKE_PACKET</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -68,7 +68,7 @@ typedef struct _NDIS_PM_WAKE_PACKET {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_SIZEOF_PM_WAKE_PACKET_REVISION_1"></a><a id="ndis_sizeof_pm_wake_packet_revision_1"></a>NDIS_SIZEOF_PM_WAKE_PACKET_REVISION_1
+### -field NDIS_SIZEOF_PM_WAKE_PACKET_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30 and later.</p>
@@ -77,7 +77,7 @@ typedef struct _NDIS_PM_WAKE_PACKET {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. This member is reserved for NDIS.
@@ -85,13 +85,13 @@ typedef struct _NDIS_PM_WAKE_PACKET {
 </p>
 </dd>
 
-### -field <b>PatternId</b>
+### -field PatternId
 
 <dd>
 <p>A <b>ULONG</b> value that specifies the identifier of the wake-on-LAN (WOL) pattern that matches the wake packet. This identifier is specified by the <b>PatternId</b> member of the <a href="..\ntddndis\ns-ntddndis--ndis-pm-wol-pattern.md">NDIS_PM_WOL_PATTERN</a> structure that is passed to the driver during an OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569764">OID_PM_ADD_WOL_PATTERN</a>.</p>
 </dd>
 
-### -field <b>PatternFriendlyName</b>
+### -field PatternFriendlyName
 
 <dd>
 <p>An <a href="..\ntddndis\ns-ntddndis--ndis-pm-counted-string.md">NDIS_PM_COUNTED_STRING</a> value that contains the friendly description of the wake pattern that is specified by the  <b>PatternId</b> member.
@@ -102,13 +102,13 @@ This value is specified by the <b>FriendlyName</b> member of the <a href="..\ntd
 <div> </div>
 </dd>
 
-### -field <b>OriginalPacketSize</b>
+### -field OriginalPacketSize
 
 <dd>
 <p>A <b>ULONG</b> value that specifies the original length, in units of bytes, of the wake packet.</p>
 </dd>
 
-### -field <b>SavedPacketSize</b>
+### -field SavedPacketSize
 
 <dd>
 <p>A <b>ULONG</b> value that specifies the length, in units of bytes, of the wake packet data that follows this structure. 
@@ -117,7 +117,7 @@ This value is specified by the <b>FriendlyName</b> member of the <a href="..\ntd
 <div> </div>
 </dd>
 
-### -field <b>SavedPacketOffset</b>
+### -field SavedPacketOffset
 
 <dd>
 <p>A <b>ULONG</b> value that specifies the offset, in units of bytes, to the wake packet data that follows this structure. The offset is measured from the start of the <b>NDIS_PM_WAKE_PACKET</b> structure to the beginning of a buffer that contains the wake packet.</p>
@@ -127,7 +127,7 @@ This value is specified by the <b>FriendlyName</b> member of the <a href="..\ntd
 </dl>
 
 ## -remarks
-<p>The <b>NDIS_PM_WAKE_PACKET</b> structure is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439808">NDIS_STATUS_PM_WAKE_REASON</a> status indication. For more information about how to issue this status indication, see <a href="NULL">Issuing NDIS Wake Reason Status Indications</a>.</p>
+<p>The <b>NDIS_PM_WAKE_PACKET</b> structure is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439808">NDIS_STATUS_PM_WAKE_REASON</a> status indication. For more information about how to issue this status indication, see <a href="netvista.issuing_ndis_wake_reason_indications">Issuing NDIS Wake Reason Status Indications</a>.</p>
 
 ## -requirements
 <table>
@@ -172,4 +172,4 @@ This value is specified by the <b>FriendlyName</b> member of the <a href="..\ntd
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_WAKE_PACKET structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_WAKE_PACKET structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -67,67 +67,67 @@ typedef struct _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceType</b>
+### -field DeviceType
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>DeviceTypeQualifier</b>
+### -field DeviceTypeQualifier
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>PageCode</b>
+### -field PageCode
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>PageLength</b>
+### -field PageLength
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>URSWRZ</b>
+### -field URSWRZ
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>OptimalNumberOfOpenSequentialWritePreferredZone</b>
+### -field OptimalNumberOfOpenSequentialWritePreferredZone
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZone</b>
+### -field OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZone
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>MaxNumberOfOpenSequentialWriteRequiredZone</b>
+### -field MaxNumberOfOpenSequentialWriteRequiredZone
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>N/A</p>

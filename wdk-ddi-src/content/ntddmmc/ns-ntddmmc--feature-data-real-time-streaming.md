@@ -61,49 +61,49 @@ typedef struct _FEATURE_DATA_REAL_TIME_STREAMING {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>StreamRecording</b>
+### -field StreamRecording
 
 <dd>
 <p>Indicates, when set to 1, that the device supports the stream recording operation. When set to zero, this bit indicates that the device might not support the stream recording operation. </p>
 </dd>
 
-### -field <b>WriteSpeedInGetPerf</b>
+### -field WriteSpeedInGetPerf
 
 <dd>
 <p>Indicates, when set to 1, that the device supports the write speed data of the GET PERFORMANCE command and the WRC field of the SETSTREAMING command. </p>
 </dd>
 
-### -field <b>WriteSpeedInMP2A</b>
+### -field WriteSpeedInMP2A
 
 <dd>
 <p>Indicates, when set to 1, that the device supports CD/DVD capabilities &amp; mechanical status mode page.</p>
 </dd>
 
-### -field <b>SetCDSpeed</b>
+### -field SetCDSpeed
 
 <dd>
 <p>Indicates, when set to 1, that the device supports the SET CD SPEED command. When set to zero, it indicates that the device does not support the SET CD SPEED command.</p>
 </dd>
 
-### -field <b>ReadBufferCapacityBlock</b>
+### -field ReadBufferCapacityBlock
 
 <dd>
 <p>Indicates, when set to 1, that the device supports the READ BUFFERCAPACITY command.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. </p>

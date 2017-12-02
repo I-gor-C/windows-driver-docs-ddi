@@ -57,19 +57,19 @@ typedef struct _USB_NODE_CONNECTION_NAME {
 ## -struct-fields
 <dl>
 
-### -field <b>ConnectionIndex</b>
+### -field ConnectionIndex
 
 <dd>
 <p>A value that is greater than or equal to 1 that specifies the number of the port to which the hub is attached.</p>
 </dd>
 
-### -field <b>ActualLength</b>
+### -field ActualLength
 
 <dd>
 <p>The length, in bytes, of the attached hub's symbolic link.</p>
 </dd>
 
-### -field <b>NodeName</b>
+### -field NodeName
 
 <dd>
 <p>A Unicode symbolic link for the downstream hub that is attached to the port that is indicated by <b>ConnectionIndex</b>. If there is no attached device, the attached device does not have a symbolic link, or if the device is not a hub, <b>NodeName</b>[0] will contain a value of UNICODE_NULL.</p>

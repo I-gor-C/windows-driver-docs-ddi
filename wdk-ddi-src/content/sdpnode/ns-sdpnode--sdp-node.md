@@ -59,7 +59,7 @@ typedef struct _SDP_NODE {
 ## -struct-fields
 <dl>
 
-### -field <b>hdr</b>
+### -field hdr
 
 <dd>
 <p>An 
@@ -67,7 +67,7 @@ typedef struct _SDP_NODE {
      links to peer SDP_NODE structures and the data type of the current node.</p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>The size, in bytes, of the 
@@ -75,13 +75,13 @@ typedef struct _SDP_NODE {
      <b>u</b> member.</p>
 </dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <p>An SDP_NODE_DATA union that contains the data associated with the SDP record's node.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use. Do not use.</p>

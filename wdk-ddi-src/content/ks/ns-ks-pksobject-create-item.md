@@ -58,31 +58,31 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Create</b>
+### -field Create
 
 <dd>
 <p>Contains the create dispatch function for this particular base object class. See <a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a> for the signature of this function type.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Points to a buffer that can be used to store object type-specific context information. Additional information is in the Remarks section below.</p>
 </dd>
 
-### -field <b>ObjectClass</b>
+### -field ObjectClass
 
 <dd>
 <p>Points to a Unicode string that identifies the object class. This is the string that was used to register with PnP for a particular class of object supported by this device.</p>
 </dd>
 
-### -field <b>SecurityDescriptor</b>
+### -field SecurityDescriptor
 
 <dd>
 <p>Contains a pointer to a <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> for this type of object, otherwise <b>NULL</b>. If security is used, this must be freed when the object type is no longer used. This must use pool memory, and cannot be shared, as it may be replaced. If this is modified, the <b>Flags</b> element is updated. Optional.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies the request type. Flags can have the values listed in the following table.</p>

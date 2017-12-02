@@ -7,7 +7,7 @@ old-location: ifsk\object_information_class.htm
 old-project: ifsk
 ms.assetid: fbcca01d-2dd6-405a-9ec2-709652e9dcd6
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: VOLUME_READ_PLEX_INPUT, VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ typedef enum _OBJECT_INFORMATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="ObjectBasicInformation"></a><a id="objectbasicinformation"></a><a id="OBJECTBASICINFORMATION"></a><b>ObjectBasicInformation</b>
+### -field ObjectBasicInformation
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs--public-object-basic-information.md">PUBLIC_OBJECT_BASIC_INFORMATION</a> structure is supplied.</p>
 </dd>
 
-### -field <a id="ObjectTypeInformation"></a><a id="objecttypeinformation"></a><a id="OBJECTTYPEINFORMATION"></a><b>ObjectTypeInformation</b>
+### -field ObjectTypeInformation
 
 <dd>
 <p>A <a href="..\ntifs\ns-ntifs---public-object-type-information.md">PUBLIC_OBJECT_TYPE_INFORMATION</a> structure is supplied.</p>
@@ -107,4 +107,4 @@ typedef enum _OBJECT_INFORMATION_CLASS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20OBJECT_INFORMATION_CLASS enumeration%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20OBJECT_INFORMATION_CLASS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\rilpsmediapreference_2.htm
 old-project: netvista
 ms.assetid: 607c00a2-6f7e-4a68-87da-f54b8dd73b88
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef enum _RILPSMEDIAPREFERENCE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PSMPREF_WIFIONLY"></a><a id="ril_psmpref_wifionly"></a><b>RIL_PSMPREF_WIFIONLY</b>
+### -field RIL_PSMPREF_WIFIONLY
 
 <dd></dd>
 
-### -field <a id="RIL_PSMPREF_WIFIPREFERRED"></a><a id="ril_psmpref_wifipreferred"></a><b>RIL_PSMPREF_WIFIPREFERRED</b>
+### -field RIL_PSMPREF_WIFIPREFERRED
 
 <dd></dd>
 
-### -field <a id="RIL_PSMPREF_CELLONLY"></a><a id="ril_psmpref_cellonly"></a><b>RIL_PSMPREF_CELLONLY</b>
+### -field RIL_PSMPREF_CELLONLY
 
 <dd></dd>
 
-### -field <a id="RIL_PSMPREF_CELLPREFERRED"></a><a id="ril_psmpref_cellpreferred"></a><b>RIL_PSMPREF_CELLPREFERRED</b>
+### -field RIL_PSMPREF_CELLPREFERRED
 
 <dd></dd>
 
-### -field <a id="RIL_PSMPREF_NUMBER_OF_VALUES"></a><a id="ril_psmpref_number_of_values"></a><b>RIL_PSMPREF_NUMBER_OF_VALUES</b>
+### -field RIL_PSMPREF_NUMBER_OF_VALUES
 
 <dd></dd>
 </dl>

@@ -58,31 +58,31 @@ typedef struct _D3DKMT_DESTROYALLOCATION2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A <b>D3DKMT_HANDLE</b> data type that represents a kernel-mode handle to the device that the resource, allocations, or both are associated with.</p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A <b>D3DKMT_HANDLE</b> data type that represents a kernel-mode handle to the resource that is associated with the allocations when releasing a resource. If a resource handle is specified, all of the allocations that are associated with it are automatically released.</p>
 </dd>
 
-### -field <b>phAllocationList</b>
+### -field phAllocationList
 
 <dd>
 <p>[in] An array of <b>D3DKMT_HANDLE</b> data types that represent kernel-mode handles to the allocations. If any allocation in the list is associated with a resource, all of the allocations in the list must also be associated with the same resource. If the OpenGL installable client driver sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, the installable client driver must set <b>phAllocationList</b> to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>AllocationCount</b>
+### -field AllocationCount
 
 <dd>
 <p>[in] The number of allocations in the array that <b>phAllocationList</b> specifies. If the OpenGL installable client driver sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, the <b>AllocationCount</b> member is ignored by the OpenGL runtime.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-destroyallocation2flags.md">D3DDDICB_DESTROYALLOCATION2FLAGS</a> structure that contains additional details about the operation.</p>

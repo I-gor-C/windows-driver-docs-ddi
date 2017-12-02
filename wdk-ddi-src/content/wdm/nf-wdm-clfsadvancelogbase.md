@@ -57,19 +57,19 @@ NTSTATUS ClfsAdvanceLogBase(
 ## -parameters
 <dl>
 
-### -param <i>pvMarshalContext</i> [in, out]
+### -param pvMarshalContext [in, out]
 
 <dd>
 <p>A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.</p>
 </dd>
 
-### -param <i>plsnBase</i> [in]
+### -param plsnBase [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that contains the new base LSN. This parameter must be the LSN of one of the records in the stream. Also, this parameter must be greater than or equal to the stream's current base LSN and less than or equal to the stream's current last LSN.</p>
 </dd>
 
-### -param <i>fFlags</i> [in]
+### -param fFlags [in]
 
 <dd>
 <p>This parameter is reserved for system use. Callers must set this parameter to zero.</p>

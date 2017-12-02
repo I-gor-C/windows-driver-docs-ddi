@@ -92,19 +92,19 @@ typedef struct _UFS_DEVICE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>Specifies the length, in bytes, of this descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorIDN</b>
+### -field bDescriptorIDN
 
 <dd>
 <p>Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_DEVICE_IDN</b>.</p>
 </dd>
 
-### -field <b>bDevice</b>
+### -field bDevice
 
 <dd>
 <p>Specifies the device type.</p>
@@ -125,7 +125,7 @@ typedef struct _UFS_DEVICE_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>bDeviceClass</b>
+### -field bDeviceClass
 
 <dd>
 <p>Specifies the device class.</p>
@@ -146,7 +146,7 @@ typedef struct _UFS_DEVICE_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>bDeviceSubClass</b>
+### -field bDeviceSubClass
 
 <dd>
 <p>Specifies the UFS mass storage subclasses in a bit map as follows:</p>
@@ -175,7 +175,7 @@ typedef struct _UFS_DEVICE_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>bProtocol</b>
+### -field bProtocol
 
 <dd>
 <p>Specifies the protocol support by the UFS device.</p>
@@ -196,19 +196,19 @@ typedef struct _UFS_DEVICE_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b> bNumberLU</b>
+### -field  bNumberLU
 
 <dd>
 <p>Specifies the number of Logical Units. This does not include the number of well known logical units.</p>
 </dd>
 
-### -field <b>bNumberWLU</b>
+### -field bNumberWLU
 
 <dd>
 <p>Specifies the number of well known logical units.</p>
 </dd>
 
-### -field <b>bBootEnable</b>
+### -field bBootEnable
 
 <dd>
 <p>Specifies if a device's boot feature is enabled.</p>
@@ -233,7 +233,7 @@ typedef struct _UFS_DEVICE_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>bDescrAccessEn</b>
+### -field bDescrAccessEn
 
 <dd>
 <p>Indicates whether the Device Descriptor can be
@@ -260,7 +260,7 @@ boot sequence.</p>
 <p> </p>
 </dd>
 
-### -field <b>bInitPowerMode</b>
+### -field bInitPowerMode
 
 <dd>
 <p><b>bInitPowerMode</b> defines the Power Mode
@@ -286,14 +286,14 @@ after device initialization or hardware reset.</p>
 <p> </p>
 </dd>
 
-### -field <b>bHighPriorityLUN</b>
+### -field bHighPriorityLUN
 
 <dd>
 <p><b>bHighPriorityLUN</b> defines the high priority
 logical unit.</p>
 </dd>
 
-### -field <b>bSecureRemovalType</b>
+### -field bSecureRemovalType
 
 <dd>
 <p>Specifies the secure removal type.</p>
@@ -332,7 +332,7 @@ define mechanism.</td>
 <p> </p>
 </dd>
 
-### -field <b>bSecurityLU</b>
+### -field bSecurityLU
 
 <dd>
 <p>Specifies if there is support for security LU's</p>
@@ -357,7 +357,7 @@ define mechanism.</td>
 <p> </p>
 </dd>
 
-### -field <b>bBackgroundOpsTermLat</b>
+### -field bBackgroundOpsTermLat
 
 <dd>
 <p><b>bBackgroundOpsTermLat</b> defines the maximum latency for starting data transmission when background
@@ -370,56 +370,56 @@ expected to terminate background operations within the latency limit.</li>
 </ul>
 </dd>
 
-### -field <b>bInitActiveICCLevel</b>
+### -field bInitActiveICCLevel
 
 <dd>
 <p><b>bInitActiveICCLevel</b> defines the <b>bActiveICCLevel</b>
 value after power on or reset. The range of the value is from 0x00 to 0x0F. </p>
 </dd>
 
-### -field <b>wSpecVersion</b>
+### -field wSpecVersion
 
 <dd>
 <p>Indicates the specification version in Binary Coded Decimal (BCD) format.</p>
 </dd>
 
-### -field <b>wManufactureDate</b>
+### -field wManufactureDate
 
 <dd>
 <p>Specifies the manufacturing date  in BCD format as 0xMMYY.</p>
 </dd>
 
-### -field <b>iManufacturerName</b>
+### -field iManufacturerName
 
 <dd>
 <p>Contains an index value to the string which contains the manufacturer's name.</p>
 </dd>
 
-### -field <b>iProductName</b>
+### -field iProductName
 
 <dd>
 <p>Contains an index value to the string which contains the product's name.</p>
 </dd>
 
-### -field <b>iSerialNumberID</b>
+### -field iSerialNumberID
 
 <dd>
 <p>Contains an index value to the string which contains the serial's number.</p>
 </dd>
 
-### -field <b>iOemID</b>
+### -field iOemID
 
 <dd>
 <p>Contains an index value to the string which contains the OEM ID.</p>
 </dd>
 
-### -field <b>wManufacturerID</b>
+### -field wManufacturerID
 
 <dd>
 <p>Specifies the Manufacturer ID of the device.</p>
 </dd>
 
-### -field <b>bUD0BaseOffset</b>
+### -field bUD0BaseOffset
 
 <dd>
 <p>Specifies the Offset of Unit Descriptor 0's configurable
@@ -427,27 +427,27 @@ parameters within the Configuration
 Descriptor, <a href="storage.ufs_config_descriptor">UFS_CONFIG_DESCRIPTOR</a>.</p>
 </dd>
 
-### -field <b>bUDConfigPLength</b>
+### -field bUDConfigPLength
 
 <dd>
 <p>Total size of a <b>UFS_UNIT_CONFIG_DESCRIPTOR</b>'s
 parameters.</p>
 </dd>
 
-### -field <b>bDeviceRTTCap</b>
+### -field bDeviceRTTCap
 
 <dd>
 <p>Specifies the maximum number of outstanding READY TO TRANSFER UPIU'S
 supported by device. The minimum value is 2.</p>
 </dd>
 
-### -field <b>wPeriodicRTCUpdate</b>
+### -field wPeriodicRTCUpdate
 
 <dd>
 <p>Specifies the frequency and method of real-time clock updates. Bits 10 to 15 are reserved.</p>
 </dd>
 
-### -field <b>bUFSFeaturesSupport</b>
+### -field bUFSFeaturesSupport
 
 <dd>
 <p>Specifies which features are supported on this device. A feature is supported if its related bit is set to 1.</p>
@@ -476,7 +476,7 @@ supported by device. The minimum value is 2.</p>
 <p> </p>
 </dd>
 
-### -field <b>bFFUTimeout</b>
+### -field bFFUTimeout
 
 <dd>
 <p>The maximum time, in seconds, that access
@@ -485,20 +485,20 @@ any ports associated due to execution of a
 WRITE BUFFER command.</p>
 </dd>
 
-### -field <b>bQueueDepth</b>
+### -field bQueueDepth
 
 <dd>
 <p>Specifies the queue depth. If this member is equal to 0, the device implements the per-LU
 queuing architecture.</p>
 </dd>
 
-### -field <b>wDeviceVersion</b>
+### -field wDeviceVersion
 
 <dd>
 <p>Specifies the device version.</p>
 </dd>
 
-### -field <b>bNumSecureWPArea</b>
+### -field bNumSecureWPArea
 
 <dd>
 <p>Specifies the total number of
@@ -506,7 +506,7 @@ Secure Write Protect Areas supported by the
 device. The value of this member is between <b>bNumberLU</b> and 32</p>
 </dd>
 
-### -field <b>dPSAMaxDataSize</b>
+### -field dPSAMaxDataSize
 
 <dd>
 <p>Specifies the maximum
@@ -514,7 +514,7 @@ amount of data that may be written during the
 pre-soldering phase of the PSA flow.</p>
 </dd>
 
-### -field <b>bPSAStateTimeout</b>
+### -field bPSAStateTimeout
 
 <dd>
 <p>Specifies the command
@@ -522,20 +522,20 @@ maximum timeout for a change in <b>bPSAState</b>. The timeout value is calculate
 <p>100 x 2 ^ <b>bPSAStateTimeout</b></p>
 </dd>
 
-### -field <b> iProductRevisionLevel</b>
+### -field  iProductRevisionLevel
 
 <dd>
 <p>Specifies the index to the string which contains the Product
 Revision Level.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for future use.</p>

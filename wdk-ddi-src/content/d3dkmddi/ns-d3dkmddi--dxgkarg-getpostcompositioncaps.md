@@ -56,19 +56,19 @@ typedef struct _DXGKARG_GETPOSTCOMPOSITIONCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] Indicates the VidPn source for which post composition capabilities are queried.</p>
 </dd>
 
-### -field <b>MaxStretchFactor</b>
+### -field MaxStretchFactor
 
 <dd>
 <p>[out] Indicates the maximum stretch factor that can be applied.</p>
 </dd>
 
-### -field <b>MaxShrinkFactor</b>
+### -field MaxShrinkFactor
 
 <dd>
 <p>[out] Indicates the maximum shrink factor that can be applied.</p>

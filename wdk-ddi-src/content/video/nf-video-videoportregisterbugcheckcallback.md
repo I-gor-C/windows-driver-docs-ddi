@@ -58,25 +58,25 @@ VP_STATUS VideoPortRegisterBugcheckCallback(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>BugcheckCode</i> [in]
+### -param BugcheckCode [in]
 
 <dd>
 <p>Indicates the bug check code for which to be called back. Currently, the miniport driver can register only for bug check code 0xEA.</p>
 </dd>
 
-### -param <i>Callback</i> [in]
+### -param Callback [in]
 
 <dd>
 <p>Pointer to the miniport driver's <a href="..\video\nc-video-pvideo-bugcheck-callback.md">HwVidBugcheckCallback</a> function. This function must be nonpaged, and must not reference pageable code or data. The miniport driver can set this parameter to <b>NULL</b> to indicate that the bug check callback should be unhooked. </p>
 </dd>
 
-### -param <i>BugcheckDataSize</i> [in]
+### -param BugcheckDataSize [in]
 
 <dd>
 <p>Indicates the sum of BUGCHECK_DATA_SIZE_RESERVED and the number of bytes of data the miniport driver will provide for inclusion in the dump file. The value of this parameter must be less than or equal to 4000. The miniport driver can set this parameter to zero to indicate that the bug check callback should be unhooked.</p>

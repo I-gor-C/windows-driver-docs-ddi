@@ -61,43 +61,43 @@ typedef enum _UMDETW_ALLOCATION_SEMANTIC {
 ## -enum-fields
 <dl>
 
-### -field <a id="UMDETW_ALLOCATION_SEMANTIC_NONE"></a><a id="umdetw_allocation_semantic_none"></a><b>UMDETW_ALLOCATION_SEMANTIC_NONE</b>
+### -field UMDETW_ALLOCATION_SEMANTIC_NONE
 
 <dd>
 <p>The allocation is created for a Direct3D resource.</p>
 </dd>
 
-### -field <a id="UMDETW_ALLOCATION_SEMANTIC_DMA_BUFFER"></a><a id="umdetw_allocation_semantic_dma_buffer"></a><b>UMDETW_ALLOCATION_SEMANTIC_DMA_BUFFER</b>
+### -field UMDETW_ALLOCATION_SEMANTIC_DMA_BUFFER
 
 <dd>
 <p>The allocation is used as a DMA buffer.</p>
 </dd>
 
-### -field <a id="UMDETW_ALLOCATION_SEMANTIC_UPLOAD_STAGING"></a><a id="umdetw_allocation_semantic_upload_staging"></a><b>UMDETW_ALLOCATION_SEMANTIC_UPLOAD_STAGING</b>
+### -field UMDETW_ALLOCATION_SEMANTIC_UPLOAD_STAGING
 
 <dd>
 <p>The allocation is used as a staging allocation to upload and download data to and from video memory.</p>
 </dd>
 
-### -field <a id="UMDETW_ALLOCATION_SEMANTIC_DOWNLOAD_STAGING"></a><a id="umdetw_allocation_semantic_download_staging"></a><b>UMDETW_ALLOCATION_SEMANTIC_DOWNLOAD_STAGING</b>
+### -field UMDETW_ALLOCATION_SEMANTIC_DOWNLOAD_STAGING
 
 <dd>
 <p>The allocation is used exclusively as a staging allocation to download data from video memory.</p>
 </dd>
 
-### -field <a id="UMDETW_ALLOCATION_SEMANTIC_CONTEXT_SAVE"></a><a id="umdetw_allocation_semantic_context_save"></a><b>UMDETW_ALLOCATION_SEMANTIC_CONTEXT_SAVE</b>
+### -field UMDETW_ALLOCATION_SEMANTIC_CONTEXT_SAVE
 
 <dd>
 <p>The allocation is used as a GPU context save area.</p>
 </dd>
 
-### -field <a id="UMDETW_ALLOCATION_SEMANTIC_DRIVER_OTHER_MIN"></a><a id="umdetw_allocation_semantic_driver_other_min"></a><b>UMDETW_ALLOCATION_SEMANTIC_DRIVER_OTHER_MIN</b>
+### -field UMDETW_ALLOCATION_SEMANTIC_DRIVER_OTHER_MIN
 
 <dd>
 <p>The driver can use this semantic value for its own internal purposes.</p>
 </dd>
 
-### -field <a id="UMDETW_ALLOCATION_SEMANTIC_DRIVER_OTHER_MAX"></a><a id="umdetw_allocation_semantic_driver_other_max"></a><b>UMDETW_ALLOCATION_SEMANTIC_DRIVER_OTHER_MAX</b>
+### -field UMDETW_ALLOCATION_SEMANTIC_DRIVER_OTHER_MAX
 
 <dd>
 <p>The driver can use this semantic value for its own internal purposes.</p>

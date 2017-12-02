@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTWaitForVerticalBlankEvent(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-waitforverticalblankevent.md">D3DKMT_WAITFORVERTICALBLANKEVENT</a> structure that describes parameters for waiting for the vertical blank to occur.</p>

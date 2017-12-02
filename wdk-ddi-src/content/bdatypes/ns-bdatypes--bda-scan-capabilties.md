@@ -55,11 +55,11 @@ typedef struct _BDA_SCAN_CAPABILTIES {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>ul64AnalogStandardsSupported</b>
+### -field ul64AnalogStandardsSupported
 
 <dd></dd>
 </dl>

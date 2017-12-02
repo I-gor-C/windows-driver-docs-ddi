@@ -7,7 +7,7 @@ old-location: netvista\_dot11_wfd_secondary_device_type_list.htm
 old-project: netvista
 ms.assetid: ABD61A6C-EE0A-49AF-AE8C-75014C2A09D4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ typedef struct _DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Specifies the type, revision and size of the <b>DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST</b> structure. The required settings for the members of <b>Header</b> are the following:</p>
@@ -81,19 +81,19 @@ typedef struct _DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST {
 <p> </p>
 </dd>
 
-### -field <b>uNumOfEntries</b>
+### -field uNumOfEntries
 
 <dd>
 <p>The number of entries present in <b>SecondaryDeviceTypes</b>.</p>
 </dd>
 
-### -field <b>uTotalNumOfEntries</b>
+### -field uTotalNumOfEntries
 
 <dd>
 <p>The maximum number of entries the <b>SecondaryDeviceTypes</b> array can contain.</p>
 </dd>
 
-### -field <b>SecondaryDeviceTypes</b>
+### -field SecondaryDeviceTypes
 
 <dd>
 <p>An array of secondary device types.</p>

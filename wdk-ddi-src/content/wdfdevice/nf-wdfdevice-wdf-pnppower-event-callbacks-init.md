@@ -7,7 +7,7 @@ old-location: wdf\wdf_pnppower_event_callbacks_init.htm
 old-project: wdf
 ms.assetid: f84e200b-542d-4885-a091-9e311b4ab697
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_PNPPOWER_EVENT_CALLBACKS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ VOID WDF_PNPPOWER_EVENT_CALLBACKS_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Callbacks</i> [out]
+### -param Callbacks [out]
 
 <dd>
 <p>A pointer to a driver-allocated <a href="..\wdfdevice\ns-wdfdevice--wdf-pnppower-event-callbacks.md">WDF_PNPPOWER_EVENT_CALLBACKS</a> structure.</p>

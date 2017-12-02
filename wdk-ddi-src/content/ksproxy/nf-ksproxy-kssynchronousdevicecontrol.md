@@ -60,43 +60,43 @@ HRESULT KsSynchronousDeviceControl(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Handle to the KS object on which to perform the operation.</p>
 </dd>
 
-### -param <i>IoControl</i> [in]
+### -param IoControl [in]
 
 <dd>
 <p>Control code that identifies a specific type of operation to perform on a KS object. </p>
 </dd>
 
-### -param <i>InBuffer</i> [in, optional]
+### -param InBuffer [in, optional]
 
 <dd>
 <p>Pointer to a buffer that contains data that specifies the operation to perform. </p>
 </dd>
 
-### -param <i>InLength</i> [in]
+### -param InLength [in]
 
 <dd>
 <p>Size, in bytes, of the buffer at <i>InBuffer</i>.</p>
 </dd>
 
-### -param <i>OutBuffer</i> [out, optional]
+### -param OutBuffer [out, optional]
 
 <dd>
 <p>Pointer to a buffer that contains either data for the operation or buffer space that receives data for the operation. </p>
 </dd>
 
-### -param <i>OutLength</i> [in]
+### -param OutLength [in]
 
 <dd>
 <p>Size, in bytes, of the buffer at <i>OutBuffer</i>.</p>
 </dd>
 
-### -param <i>BytesReturned</i> [in, out]
+### -param BytesReturned [in, out]
 
 <dd>
 <p>Pointer to a variable that receives the size, in bytes, of the data that <b>KsSynchronousDeviceControl</b> stores in the buffer at <i>OutBuffer</i>. </p>
@@ -115,7 +115,7 @@ HRESULT KsSynchronousDeviceControl(
 
 <p>Set <i>IoControl</i> to <a href="..\ks\ni-ks-ioctl-ks-method.md">IOCTL_KS_METHOD</a> to execute a method. Set <i>InBuffer</i> to point to a <a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a> structure that specifies the method of the method set to execute and whether to read and/or write data related to the method. To read data, set <i>OutBuffer</i> to point to that data. To write data, set <i>OutBuffer</i> to receive that data.</p>
 
-<p>Set <i>IoControl</i> to <a href="..\ks\ni-ks-ioctl-ks-enable-event.md">IOCTL_KS_ENABLE_EVENT</a> to request that the KS object specified by <i>Handle</i> notify the application whenever a specific event action occurs. Set <i>InBuffer</i> to point to a <a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a> structure that specifies the event of the event set about which to notify. Set <i>OutBuffer</i> to point to a <a href="stream.kseventdata">KSEVENTDATA</a> structure that describes how the KS object should notify the application when the event occurs. Also see <a href="NULL">KS Events</a>.</p>
+<p>Set <i>IoControl</i> to <a href="..\ks\ni-ks-ioctl-ks-enable-event.md">IOCTL_KS_ENABLE_EVENT</a> to request that the KS object specified by <i>Handle</i> notify the application whenever a specific event action occurs. Set <i>InBuffer</i> to point to a <a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a> structure that specifies the event of the event set about which to notify. Set <i>OutBuffer</i> to point to a <a href="stream.kseventdata">KSEVENTDATA</a> structure that describes how the KS object should notify the application when the event occurs. Also see <a href="https://msdn.microsoft.com/3eaa1d65-8417-4a07-b358-823394baec9b">KS Events</a>.</p>
 
 <p>Set <i>IoControl</i> to <a href="..\ks\ni-ks-ioctl-ks-disable-event.md">IOCTL_KS_DISABLE_EVENT</a> to inform the KS object specified by <i>Handle</i> to stop notifying the application whenever a specific event action occurs. Set <i>InBuffer</i> to point to the <a href="stream.kseventdata">KSEVENTDATA</a> structure that was previously used in the event-notification request. </p>
 

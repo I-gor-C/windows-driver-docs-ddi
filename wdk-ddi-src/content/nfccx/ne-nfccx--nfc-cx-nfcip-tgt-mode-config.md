@@ -61,35 +61,35 @@ typedef enum _NFC_CX_NFCIP_TGT_MODE_CONFIG {
 ## -enum-fields
 <dl>
 
-### -field <a id="NFC_CX_NFCIP_NFC_A"></a><a id="nfc_cx_nfcip_nfc_a"></a><b>NFC_CX_NFCIP_NFC_A</b>
+### -field NFC_CX_NFCIP_NFC_A
 
 <dd></dd>
 
-### -field <a id="NFC_CX_NFCIP_NFC_F_212"></a><a id="nfc_cx_nfcip_nfc_f_212"></a><b>NFC_CX_NFCIP_NFC_F_212</b>
+### -field NFC_CX_NFCIP_NFC_F_212
 
 <dd></dd>
 
-### -field <a id="NFC_CX_NFCIP_NFC_F_424"></a><a id="nfc_cx_nfcip_nfc_f_424"></a><b>NFC_CX_NFCIP_NFC_F_424</b>
+### -field NFC_CX_NFCIP_NFC_F_424
 
 <dd></dd>
 
-### -field <a id="NFC_CX_NFCIP_NFC_ACTIVE"></a><a id="nfc_cx_nfcip_nfc_active"></a><b>NFC_CX_NFCIP_NFC_ACTIVE</b>
+### -field NFC_CX_NFCIP_NFC_ACTIVE
 
 <dd></dd>
 
-### -field <a id="NFC_CX_NFCIP_NFC_ACTIVE_A"></a><a id="nfc_cx_nfcip_nfc_active_a"></a><b>NFC_CX_NFCIP_NFC_ACTIVE_A</b>
+### -field NFC_CX_NFCIP_NFC_ACTIVE_A
 
 <dd></dd>
 
-### -field <a id="NFC_CX_NFCIP_NFC_ACTIVE_F_212"></a><a id="nfc_cx_nfcip_nfc_active_f_212"></a><b>NFC_CX_NFCIP_NFC_ACTIVE_F_212</b>
+### -field NFC_CX_NFCIP_NFC_ACTIVE_F_212
 
 <dd></dd>
 
-### -field <a id="NFC_CX_NFCIP_NFC_ACTIVE_F_424"></a><a id="nfc_cx_nfcip_nfc_active_f_424"></a><b>NFC_CX_NFCIP_NFC_ACTIVE_F_424</b>
+### -field NFC_CX_NFCIP_NFC_ACTIVE_F_424
 
 <dd></dd>
 
-### -field <a id="NFC_CX_NFCIP_DEFAULT"></a><a id="nfc_cx_nfcip_default"></a><b>NFC_CX_NFCIP_DEFAULT</b>
+### -field NFC_CX_NFCIP_DEFAULT
 
 <dd></dd>
 </dl>

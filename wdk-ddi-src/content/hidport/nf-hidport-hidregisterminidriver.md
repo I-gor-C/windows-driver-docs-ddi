@@ -54,7 +54,7 @@ NTSTATUS HidRegisterMinidriver(
 ## -parameters
 <dl>
 
-### -param <i>MinidriverRegistration</i> [in]
+### -param MinidriverRegistration [in]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that contains an initialized <a href="..\hidport\ns-hidport--hid-minidriver-registration.md">HID_MINIDRIVER_REGISTRATION</a> structure for the minidriver.</p>
@@ -75,7 +75,7 @@ NTSTATUS HidRegisterMinidriver(
 ## -remarks
 <p>Before calling this routine, HID minidrivers must initialize all members of the HID_MINIDRIVER_REGISTRATION structure that is provided at <i>MinidriverRegistration</i>. For information about these members, see <a href="..\hidport\ns-hidport--hid-minidriver-registration.md">HID_MINIDRIVER_REGISTRATION</a>.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

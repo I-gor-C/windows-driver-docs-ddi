@@ -7,7 +7,7 @@ old-location: netvista\ndisoffloadtcpdisconnect.htm
 old-project: netvista
 ms.assetid: f8abff30-b641-4581-8532-8292993ca9f6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisOffloadTcpDisconnect
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NDIS_STATUS NdisOffloadTcpDisconnect(
 ## -parameters
 <dl>
 
-### -param <i>NdisOffloadHandle</i> [in]
+### -param NdisOffloadHandle [in]
 
 <dd>
 <p>A pointer to an 
@@ -71,7 +71,7 @@ NDIS_STATUS NdisOffloadTcpDisconnect(
      Referencing Offloaded State Through an Intermediate Driver</a>.</p>
 </dd>
 
-### -param <i>NetBufferList</i> [in]
+### -param NetBufferList [in]
 
 <dd>
 <p>A pointer to a single 
@@ -80,7 +80,7 @@ NDIS_STATUS NdisOffloadTcpDisconnect(
      NET_BUFFER_LIST structure.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>As one of the following values, the type of disconnect to be performed:
@@ -88,14 +88,14 @@ NDIS_STATUS NdisOffloadTcpDisconnect(
 <p></p>
 <dl>
 
-### -param <a id="TCP_DISCONNECT_ABORTIVE_CLOSE"></a><a id="tcp_disconnect_abortive_close"></a><b>TCP_DISCONNECT_ABORTIVE_CLOSE</b>
+### -param TCP_DISCONNECT_ABORTIVE_CLOSE
 
 <dd>
 <p>Specifies that the offload target perform an abortive disconnect by sending an RST
        segment.</p>
 </dd>
 
-### -param <a id="TCP_DISCONNECT_GRACEFUL_CLOSE"></a><a id="tcp_disconnect_graceful_close"></a><b>TCP_DISCONNECT_GRACEFUL_CLOSE</b>
+### -param TCP_DISCONNECT_GRACEFUL_CLOSE
 
 <dd>
 <p>Specifies that the offload target perform a graceful disconnect by sending a FIN segment.</p>
@@ -115,7 +115,7 @@ NDIS_STATUS NdisOffloadTcpDisconnect(
     MiniportTcpOffloadDisconnect</a> function, an intermediate driver calls the 
     <b>NdisOffloadTcpDisconnect</b> function to propagate the disconnect operation to the underlying
     intermediate driver or offload target. For more information, see 
-    <a href="NULL">Propagating I/O Operations</a>.</p>
+    <a href="netvista.propagating_i_o_operations">Propagating I/O Operations</a>.</p>
 
 <p>To the 
     <b>NdisOffloadTcp<i>Xxx</i></b>
@@ -201,4 +201,4 @@ NDIS_STATUS NdisOffloadTcpDisconnect(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOffloadTcpDisconnect function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOffloadTcpDisconnect function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

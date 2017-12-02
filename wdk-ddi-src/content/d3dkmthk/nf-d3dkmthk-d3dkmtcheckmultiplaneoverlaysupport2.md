@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTCheckMultiPlaneOverlaySupport2(
 ## -parameters
 <dl>
 
-### -param <i></i> [in, out]
+### -param  [in, out]
 
 <dd></dd>
 </dl>

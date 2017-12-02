@@ -13,7 +13,7 @@ Usbfnattach.h contain these programming interfaces:
 | ---- |:---- |
 | [USBFN_GET_ATTACH_ACTION callback](nc-usbfnattach-usbfn-get-attach-action.md) | The filter driver's implementation that gets invoked when charger is attached to the port. |
 | [USBFN_GET_ATTACH_ACTION_ABORT callback](nc-usbfnattach-usbfn-get-attach-action-abort.md) | The filter driver's implementation to abort an attach-detect operation. |
-| [USBFN_SET_DEVICE_STATE callback](nc-usbfnattach-usbfn-set-device-state.md) | The filter driver's implementation to abort an attach-detect operation. |
+| [USBFN_SET_DEVICE_STATE callback](nc-usbfnattach-usbfn-set-device-state.md) | The filter driver's implementation to set the device state and operating bus speed. |
 
 ## Structures
 

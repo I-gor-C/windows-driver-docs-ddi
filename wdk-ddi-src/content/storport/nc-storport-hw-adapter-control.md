@@ -60,13 +60,13 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 ## -parameters
 <dl>
 
-### -param <i>DeviceExtension</i> [in]
+### -param DeviceExtension [in]
 
 <dd>
 <p>A pointer to the miniport driver's per-HBA storage area. </p>
 </dd>
 
-### -param <i>ControlType</i> [in]
+### -param ControlType [in]
 
 <dd>
 <p>Specifies  an adapter-control operation. Each control type initiates an action by the miniport driver. The following are the  control types and their meanings. Also  listed, are the current IRQL and the spinlock acquired when the control type issued.</p>
@@ -289,7 +289,7 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 <p> </p>
 </dd>
 
-### -param <i>Parameters</i> [in]
+### -param Parameters [in]
 
 <dd>
 <p>Contains information related to the <i>ControlType</i>.  </p>
@@ -320,13 +320,13 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 <p></p>
 <dl>
 
-### -param <a id="MaxControlType"></a><a id="maxcontroltype"></a><a id="MAXCONTROLTYPE"></a><b>MaxControlType</b>
+### -param MaxControlType
 
 <dd>
 <p>Specifies the number of entries in the <b>SupportedTypeList</b> array.</p>
 </dd>
 
-### -param <a id="SupportedTypeList"></a><a id="supportedtypelist"></a><a id="SUPPORTEDTYPELIST"></a><b>SupportedTypeList</b>
+### -param SupportedTypeList
 
 <dd>
 <p>Points to a caller-allocated array of BOOLEAN values that indicate the control types implemented by the miniport driver. The port driver initializes each element to <b>FALSE</b>. </p>
@@ -435,19 +435,19 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 <p></p>
 <dl>
 
-### -param <a id="PowerSettingGuid"></a><a id="powersettingguid"></a><a id="POWERSETTINGGUID"></a><b>PowerSettingGuid</b>
+### -param PowerSettingGuid
 
 <dd>
 <p>The GUID of the power setting that changed.</p>
 </dd>
 
-### -param <a id="Value"></a><a id="value"></a><a id="VALUE"></a><b>Value</b>
+### -param Value
 
 <dd>
 <p>Data representing the new value for the power setting.</p>
 </dd>
 
-### -param <a id="ValueLength"></a><a id="valuelength"></a><a id="VALUELENGTH"></a><b>ValueLength</b>
+### -param ValueLength
 
 <dd>
 <p>Length in bytes of the data pointed to by <b>Value.</b></p>
@@ -481,19 +481,19 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 <p></p>
 <dl>
 
-### -param <a id="Version"></a><a id="version"></a><a id="VERSION"></a><b>Version</b>
+### -param Version
 
 <dd>
 <p>The version of the filter. This is currently set to STOR_FILTER_RESOURCE_REQUIREMENTS_V1.</p>
 </dd>
 
-### -param <a id="Size"></a><a id="size"></a><a id="SIZE"></a><b>Size</b>
+### -param Size
 
 <dd>
 <p>The size of this structure.</p>
 </dd>
 
-### -param <a id="IoResourceRequirementsList"></a><a id="ioresourcerequirementslist"></a><a id="IORESOURCEREQUIREMENTSLIST"></a><b>IoResourceRequirementsList</b>
+### -param IoResourceRequirementsList
 
 <dd>
 <p>The IO resource requirements list. For more information see the <a href="..\wdm\ns-wdm--io-resource-requirements-list.md">IO_RESOURCE_REQUIREMENTS_LIST</a> structure.</p>
@@ -525,19 +525,19 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 <p></p>
 <dl>
 
-### -param <a id="Header"></a><a id="header"></a><a id="HEADER"></a><b>Header</b>
+### -param Header
 
 <dd>
 <p>The power control header structure.</p>
 </dd>
 
-### -param <a id="PowerAction"></a><a id="poweraction"></a><a id="POWERACTION"></a><b>PowerAction</b>
+### -param PowerAction
 
 <dd>
 <p>The power action indicator. For a runtime power transition, <b>PowerAction</b> set to <b>StorPowerActionNone</b>.</p>
 </dd>
 
-### -param <a id="PowerState"></a><a id="powerstate"></a><a id="POWERSTATE"></a><b>PowerState</b>
+### -param PowerState
 
 <dd>
 <p>The current adapter power state. This is either <b>StorPowerDeviceD0</b> or <b>StorPowerDeviceD3</b> for  the power on or power of states respectively.</p>
@@ -577,19 +577,19 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 <p></p>
 <dl>
 
-### -param <a id="Header"></a><a id="header"></a><a id="HEADER"></a><b>Header</b>
+### -param Header
 
 <dd>
 <p>The power control header structure.</p>
 </dd>
 
-### -param <a id="ComponentIndex"></a><a id="componentindex"></a><a id="COMPONENTINDEX"></a><b>ComponentIndex</b>
+### -param ComponentIndex
 
 <dd>
 <p>Index of the device component with the active status. The component index is always 0 for an adapter.</p>
 </dd>
 
-### -param <a id="Active"></a><a id="active"></a><a id="ACTIVE"></a><b>Active</b>
+### -param Active
 
 <dd>
 <p>The active status of the component. <b>Active</b> is always set to <b>TRUE</b>.</p>
@@ -621,19 +621,19 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 <p></p>
 <dl>
 
-### -param <a id="Header"></a><a id="header"></a><a id="HEADER"></a><b>Header</b>
+### -param Header
 
 <dd>
 <p>The power control header structure.</p>
 </dd>
 
-### -param <a id="ComponentIndex"></a><a id="componentindex"></a><a id="COMPONENTINDEX"></a><b>ComponentIndex</b>
+### -param ComponentIndex
 
 <dd>
 <p>Index of the device component with the active status. The component index is always 0 for an adapter.</p>
 </dd>
 
-### -param <a id="FState"></a><a id="fstate"></a><a id="FSTATE"></a><b>FState</b>
+### -param FState
 
 <dd>
 <p>The F-state to set for the adapter component. The F0 state is the only component power state set for an adapter.</p>
@@ -669,43 +669,43 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 <p></p>
 <dl>
 
-### -param <a id="Header"></a><a id="header"></a><a id="HEADER"></a><b>Header</b>
+### -param Header
 
 <dd>
 <p>The power control header structure.</p>
 </dd>
 
-### -param <a id="PowerControlCode"></a><a id="powercontrolcode"></a><a id="POWERCONTROLCODE"></a><b>PowerControlCode</b>
+### -param PowerControlCode
 
 <dd>
 <p>A power control code GUID identifying the private control private control operation to execute for the adapter.</p>
 </dd>
 
-### -param <a id="InBufferSize"></a><a id="inbuffersize"></a><a id="INBUFFERSIZE"></a><b>InBufferSize</b>
+### -param InBufferSize
 
 <dd>
 <p>The size, in bytes, of the input buffer at <i>InBuffer</i>.</p>
 </dd>
 
-### -param <a id="OutBufferSize"></a><a id="outbuffersize"></a><a id="OUTBUFFERSIZE"></a><b>OutBufferSize</b>
+### -param OutBufferSize
 
 <dd>
 <p>The size, in bytes, of the output buffer at <i>OutBuffer</i>.</p>
 </dd>
 
-### -param <a id="InBuffer"></a><a id="inbuffer"></a><a id="INBUFFER"></a><b>InBuffer</b>
+### -param InBuffer
 
 <dd>
 <p>The buffer containing input parameters and data for the private power control call.</p>
 </dd>
 
-### -param <a id="OutBuffer"></a><a id="outbuffer"></a><a id="OUTBUFFER"></a><b>OutBuffer</b>
+### -param OutBuffer
 
 <dd>
 <p>The buffer where the resulting output parameters and data are returned for the private power control call.</p>
 </dd>
 
-### -param <a id="BytesReturned"></a><a id="bytesreturned"></a><a id="BYTESRETURNED"></a><b>BytesReturned</b>
+### -param BytesReturned
 
 <dd>
 <p>The size, in bytes, of the data returned in <i>OutBuffer</i>.</p>
@@ -774,31 +774,31 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 <p></p>
 <dl>
 
-### -param <a id="RaidSystemPowerUnknown"></a><a id="raidsystempowerunknown"></a><a id="RAIDSYSTEMPOWERUNKNOWN"></a>RaidSystemPowerUnknown
+### -param RaidSystemPowerUnknown
 
 <dd>
 <p>Unknown power usage.</p>
 </dd>
 
-### -param <a id="RaidSystemPowerLowest"></a><a id="raidsystempowerlowest"></a><a id="RAIDSYSTEMPOWERLOWEST"></a>RaidSystemPowerLowest
+### -param RaidSystemPowerLowest
 
 <dd>
 <p>Lowest power usage.</p>
 </dd>
 
-### -param <a id="RaidSystemPowerLow"></a><a id="raidsystempowerlow"></a><a id="RAIDSYSTEMPOWERLOW"></a>RaidSystemPowerLow
+### -param RaidSystemPowerLow
 
 <dd>
 <p>Low power usage.</p>
 </dd>
 
-### -param <a id="RaidSystemPowerMedium"></a><a id="raidsystempowermedium"></a><a id="RAIDSYSTEMPOWERMEDIUM"></a>RaidSystemPowerMedium
+### -param RaidSystemPowerMedium
 
 <dd>
 <p>Medium power usage.</p>
 </dd>
 
-### -param <a id="RaidSystemPowerHigh"></a><a id="raidsystempowerhigh"></a><a id="RAIDSYSTEMPOWERHIGH"></a>RaidSystemPowerHigh
+### -param RaidSystemPowerHigh
 
 <dd>
 <p>High power usage.</p>
@@ -839,7 +839,7 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 
 <p>The name <b>HwStorAdapterControl</b>  is just a placeholder. The actual prototype of this routine is defined in <i>storport.h</i> as follows:</p>
 
-<p>To define an <b>HwStorAdapterControl</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
+<p>To define an <b>HwStorAdapterControl</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
 
 <p> For example, to define a <b>HwStorAdapterControl</b> callback routine that is named <i>MyHwAdapterControl</i>, use the <b>HW_ADAPTER_CONTROL</b> type as shown in this code example:</p>
 

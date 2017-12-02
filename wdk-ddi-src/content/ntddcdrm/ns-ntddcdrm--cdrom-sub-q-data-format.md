@@ -55,14 +55,14 @@ typedef struct _CDROM_SUB_Q_DATA_FORMAT {
 ## -struct-fields
 <dl>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>Specifies which subset of the Q data the read operation should return, as follows: </p>
 <p></p>
 <dl>
 
-### -field <a id="IOCTL_CDROM_CURRENT_POSITION_"></a><a id="ioctl_cdrom_current_position_"></a>IOCTL_CDROM_CURRENT_POSITION 
+### -field IOCTL_CDROM_CURRENT_POSITION 
 
 <dd>
 <p>Indicates that the read operation should return position information such as the track number, the index number, the absolute address, and the track relative address. If the IOCTL_CDROM_Q_CHANNEL device control IRP specifies this format, the information is returned in the <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-current-position.md">SUB_Q_CURRENT_POSITION</a> member of the <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-channel-data.md">SUB_Q_CHANNEL_DATA</a> structure.</p>
@@ -71,7 +71,7 @@ typedef struct _CDROM_SUB_Q_DATA_FORMAT {
 <p></p>
 <dl>
 
-### -field <a id="IOCTL_CDROM_MEDIA_CATALOG"></a><a id="ioctl_cdrom_media_catalog"></a>IOCTL_CDROM_MEDIA_CATALOG
+### -field IOCTL_CDROM_MEDIA_CATALOG
 
 <dd>
 <p>Indicates that the read operation should return the media catalog number. If the IOCTL_CDROM_Q_CHANNEL device control IRP specifies this format, the information is returned in the <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-media-catalog-number.md">SUB_Q_MEDIA_CATALOG_NUMBER</a> member of the <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-channel-data.md">SUB_Q_CHANNEL_DATA</a> structure.</p>
@@ -80,7 +80,7 @@ typedef struct _CDROM_SUB_Q_DATA_FORMAT {
 <p></p>
 <dl>
 
-### -field <a id="IOCTL_CDROM_TRACK_ISRC"></a><a id="ioctl_cdrom_track_isrc"></a>IOCTL_CDROM_TRACK_ISRC
+### -field IOCTL_CDROM_TRACK_ISRC
 
 <dd>
 <p>Indicates that the read operation should return the ISO/IEC 3901 Track International Standard Recording Code (ISRC). This code gives a unique number to an audio track. If the IOCTL_CDROM_Q_CHANNEL device control IRP specifies this format, the information is returned in the <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-track-isrc.md">SUB_Q_TRACK_ISRC</a> member of the <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-channel-data.md">SUB_Q_CHANNEL_DATA</a> structure.</p>
@@ -88,7 +88,7 @@ typedef struct _CDROM_SUB_Q_DATA_FORMAT {
 </dl>
 </dd>
 
-### -field <b>Track</b>
+### -field Track
 
 <dd>
 <p>Indicates the track number where the CD-ROM driver must read the Q subchannel data. If <b>Format</b> is set to IOCTL_CDROM_MEDIA_CATALOG, then the <b>Track</b> member must be set to zero.</p>

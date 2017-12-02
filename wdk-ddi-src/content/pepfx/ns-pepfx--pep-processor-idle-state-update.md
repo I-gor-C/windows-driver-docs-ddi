@@ -56,19 +56,19 @@ typedef struct _PEP_PROCESSOR_IDLE_STATE_UPDATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of this structure. Set this member to PEP_PROCESSOR_IDLE_STATE_UPDATE_VERSION.</p>
 </dd>
 
-### -field <b>Latency</b>
+### -field Latency
 
 <dd>
 <p>The worst-case latency, in 100-nanosecond units, that the platform requires to wake from this platform idle state in response to a wake event.</p>
 </dd>
 
-### -field <b>BreakEvenDuration</b>
+### -field BreakEvenDuration
 
 <dd>
 <p>The minimum amount of time, specified in 100-nanosecond units, that the platform must spend in this idle state to make a transition to this state worthwhile. PoFx uses this member value as a hint to avoid switching the platform to an idle state unless the platform is likely to remain in this state for at least the amount of time specified by <b>BreakEvenDuration</b>.</p>

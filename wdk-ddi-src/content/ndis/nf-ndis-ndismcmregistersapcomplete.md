@@ -7,7 +7,7 @@ old-location: netvista\ndismcmregistersapcomplete.htm
 old-project: netvista
 ms.assetid: 53f94e25-ca6c-4230-8447-d36774322dc7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMCmRegisterSapComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,14 +59,14 @@ VOID NdisMCmRegisterSapComplete(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>Specifies the final status for the client's original request to register the SAP, either
      NDIS_STATUS_SUCCESS or any caller-determined NDIS_STATUS_<i>XXX</i><u>except</u> NDIS_STATUS_PENDING.</p>
 </dd>
 
-### -param <i>NdisSapHandle</i> [in]
+### -param NdisSapHandle [in]
 
 <dd>
 <p>Specifies the NDIS-supplied handle to the SAP if the registration is successful. The call manager
@@ -74,7 +74,7 @@ VOID NdisMCmRegisterSapComplete(
      <i>ProtocolCmRegisterSap</i> function.</p>
 </dd>
 
-### -param <i>CallMgrSapContext</i> [in]
+### -param CallMgrSapContext [in]
 
 <dd>
 <p>Specifies the handle to a caller-supplied resident context area in which the MCM driver maintains
@@ -186,4 +186,4 @@ VOID NdisMCmRegisterSapComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmRegisterSapComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmRegisterSapComplete function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

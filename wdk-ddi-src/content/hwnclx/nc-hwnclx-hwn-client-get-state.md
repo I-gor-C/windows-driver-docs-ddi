@@ -65,13 +65,13 @@ typedef HWN_CLIENT_GET_STATE *PHWN_CLIENT_GET_STATE;
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to the client driver's context information. This memory space is available for use by the client driver. It is allocated as part of the framework object context space by <b>WdfDeviceCreate</b>. For more information, see <a href="gpiobtn.hwn_client_registration_packet">HWN_CLIENT_REGISTRATION_PACKET</a> and  <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/framework-object-context-space">Framework Object Context Space</a>.</p>
 </dd>
 
-### -param <i>OutputBuffer</i> [out]
+### -param OutputBuffer [out]
 
 <dd>
 <p>Buffer of <i>OutputBufferLength</i> bytes for writing hardware notification status. If the function succeeds, the buffer will contain a <a href="gpiobtn.hwn_header">HWN_HEADER</a> structure including one or more <a href="gpiobtn.hwn_settings">HWN_SETTINGS</a> structures.</p>
@@ -80,25 +80,25 @@ typedef HWN_CLIENT_GET_STATE *PHWN_CLIENT_GET_STATE;
 <div> </div>
 </dd>
 
-### -param <i>OutputBufferLength</i> [in]
+### -param OutputBufferLength [in]
 
 <dd>
 <p>The size of <i>OutputBuffer</i> in bytes.</p>
 </dd>
 
-### -param <i>InputBuffer</i> [in]
+### -param InputBuffer [in]
 
 <dd>
 <p>Buffer of <i>InputBufferLength</i> bytes containing a <a href="gpiobtn.hwn_header">HWN_HEADER</a> holding one or more <a href="gpiobtn.hwn_settings">HWN_SETTINGS</a> structures where the IDs for the requested hardware notification components are stored in the <b>HwNId</b> field. This buffer can be NULL.</p>
 </dd>
 
-### -param <i>InputBufferLength</i> [in]
+### -param InputBufferLength [in]
 
 <dd>
 <p>The size of <i>InputBuffer</i> in bytes.</p>
 </dd>
 
-### -param <i>BytesRead</i> [out]
+### -param BytesRead [out]
 
 <dd>
 <p>Pointer to a variable that indicates the number of bytes read by the function.</p>

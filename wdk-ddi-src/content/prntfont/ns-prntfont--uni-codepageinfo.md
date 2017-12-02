@@ -57,19 +57,19 @@ typedef struct _UNI_CODEPAGEINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>dwCodePage</b>
+### -field dwCodePage
 
 <dd>
 <p>Identifies a Windows code page.</p>
 </dd>
 
-### -field <b>SelectSymbolSet</b>
+### -field SelectSymbolSet
 
 <dd>
 <p>Is an <a href="..\prntfont\ns-prntfont--invoc.md">INVOC</a> structure containing the printer command to select the code page's symbol set.</p>
 </dd>
 
-### -field <b>UnSelectSymbolSet</b>
+### -field UnSelectSymbolSet
 
 <dd>
 <p>Is an <a href="..\prntfont\ns-prntfont--invoc.md">INVOC</a> structure containing the printer command to deselect the code page's symbol set.</p>

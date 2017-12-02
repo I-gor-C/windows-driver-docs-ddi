@@ -57,19 +57,19 @@ FORCEINLINE NTSTATUS UdecxUsbDeviceInitAddDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbDeviceInit</i> [in, out]
+### -param UdecxUsbDeviceInit [in, out]
 
 <dd>
-<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>. </p>
+<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>. </p>
 </dd>
 
-### -param <i>Descriptor</i> [in]
+### -param Descriptor [in]
 
 <dd>
 <p>A caller-allocated buffer that contains the USB descriptor to add to the device.</p>
 </dd>
 
-### -param <i>DescriptorLength</i> [in]
+### -param DescriptorLength [in]
 
 <dd>
 <p>The length of the descriptor buffer.</p>
@@ -141,7 +141,7 @@ FORCEINLINE NTSTATUS UdecxUsbDeviceInitAddDescriptor(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>
 </dt>
 <dt>
 <a href="buses.standard_usb_descriptors">Standard USB descriptors</a>

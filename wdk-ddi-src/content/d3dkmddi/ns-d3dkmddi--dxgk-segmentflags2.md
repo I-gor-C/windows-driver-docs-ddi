@@ -63,37 +63,37 @@ typedef struct _DXGK_SEGMENTFLAGS2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Aperture</b>
+### -field Aperture
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>PopulatedFromSystemMemory</b>
+### -field PopulatedFromSystemMemory
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>SystemMemoryReservedByBios</b>
+### -field SystemMemoryReservedByBios
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>CpuVisible</b>
+### -field CpuVisible
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>Reserved for system use.</p>

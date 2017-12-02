@@ -7,7 +7,7 @@ old-location: debugger\outputcurrentstate.htm
 old-project: debugger
 ms.assetid: 3d176438-5551-48a4-b757-81c14d84c075
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl3, OutputCurrentState, IDebugControl3::OutputCurrentState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ HRESULT OutputCurrentState(
 ## -parameters
 <dl>
 
-### -param <i>OutputControl</i> [in]
+### -param OutputControl [in]
 
 <dd>
-<p>Specifies which clients to send the output to.  For possible values see <a href="debugger.debug_outctl_xxx">DEBUG_OUTCTL_XXX</a>.</p>
+<p>Specifies which clients to send the output to.  For possible values see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541517">DEBUG_OUTCTL_XXX</a>.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies the bit set that determines the information to print to the debugger console.  <i>Flags</i> can be any combination of values from the following table.</p>
@@ -109,7 +109,7 @@ HRESULT OutputCurrentState(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

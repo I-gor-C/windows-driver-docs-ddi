@@ -7,7 +7,7 @@ old-location: netvista\rilsetsystemselectionprefsparams_v2_2.htm
 old-project: netvista
 ms.assetid: d6284633-1f56-412c-a97a-b6c740129cce
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSETSYSTEMSELECTIONPREFSPARAMS_V2, RILSETSYSTEMSELECTIONPREFSPARAMS_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef struct _RILSETSYSTEMSELECTIONPREFSPARAMS_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd></dd>
 
-### -field <b>rilSystemSelectionPrefs</b>
+### -field rilSystemSelectionPrefs
 
 <dd></dd>
 </dl>

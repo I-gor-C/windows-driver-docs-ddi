@@ -54,7 +54,7 @@ void KsReleaseDevice(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> structure representing the AVStream device for which to release synchronous control.</p>
@@ -67,7 +67,7 @@ void KsReleaseDevice(
 ## -remarks
 <p><b>KsReleaseDevice </b>is used by a client that has finished accessing the device in a synchronous manner following a previous call to <a href="..\ks\nf-ks-ksacquiredevice.md">KsAcquireDevice</a>.</p>
 
-<p>For more information, see <a href="NULL">Mutexes in AVStream</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>. </p>
 
 ## -requirements
 <table>

@@ -58,33 +58,33 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTShareObjects(
 ## -parameters
 <dl>
 
-### -param <i>cObjects</i> [in]
+### -param cObjects [in]
 
 <dd>
 <p>The number of resource objects specified by the <i>hObjects</i> parameter.</p>
 <p>The number of resource objects must be ≤<b>D3DKMT_MAX_OBJECTS_PER_HANDLE</b>.</p>
 </dd>
 
-### -param <i>hObjects</i> [in]
+### -param hObjects [in]
 
 <dd>
 <p>A pointer to an array of local kernel-mode handles that specify the resource objects to be shared.</p>
 <p>For more information on using <i>hObjects</i>, see the Remarks section.</p>
 </dd>
 
-### -param <i>pObjectAttributes</i> [in]
+### -param pObjectAttributes [in]
 
 <dd>
 <p>A pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies attributes of the  resource objects.</p>
 </dd>
 
-### -param <i>dwDesiredAccess</i> [in]
+### -param dwDesiredAccess [in]
 
 <dd>
 <p>Specifies read and write access for the resource.</p>
 </dd>
 
-### -param <i>phSharedNtHandle</i> [out]
+### -param phSharedNtHandle [out]
 
 <dd>
 <p>A pointer to a shared NT handle  that specifies the resource objects.</p>

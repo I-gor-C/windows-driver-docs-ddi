@@ -7,7 +7,7 @@ old-location: image\wiasformatargs.htm
 old-project: image
 ms.assetid: 409c4ff6-3a0e-408a-879d-2875ac245fb8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiasFormatArgs
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ BSTR __cdecl wiasFormatArgs(
 ## -parameters
 <dl>
 
-### -param <i>lpszFormat, ...</i> 
+### -param lpszFormat, ... 
 
 <dd>
 <p>Specifies a variable argument list, which starts with an ANSI format string containing the message and any format specifiers. The ellipsis (...) specifies a variable number of arguments that follow the format string.</p>

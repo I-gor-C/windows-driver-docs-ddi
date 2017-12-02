@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_power_policy_state.htm
 old-project: wdf
 ms.assetid: 87fa78f7-417a-4720-9520-0eb90486630a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -210,623 +210,623 @@ typedef enum _WDF_DEVICE_POWER_POLICY_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfDevStatePwrPolInvalid"></a><a id="wdfdevstatepwrpolinvalid"></a><a id="WDFDEVSTATEPWRPOLINVALID"></a><b>WdfDevStatePwrPolInvalid</b>
+### -field WdfDevStatePwrPolInvalid
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolObjectCreated"></a><a id="wdfdevstatepwrpolobjectcreated"></a><a id="WDFDEVSTATEPWRPOLOBJECTCREATED"></a><b>WdfDevStatePwrPolObjectCreated</b>
+### -field WdfDevStatePwrPolObjectCreated
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStarting"></a><a id="wdfdevstatepwrpolstarting"></a><a id="WDFDEVSTATEPWRPOLSTARTING"></a><b>WdfDevStatePwrPolStarting</b>
+### -field WdfDevStatePwrPolStarting
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStartingSucceeded"></a><a id="wdfdevstatepwrpolstartingsucceeded"></a><a id="WDFDEVSTATEPWRPOLSTARTINGSUCCEEDED"></a><b>WdfDevStatePwrPolStartingSucceeded</b>
+### -field WdfDevStatePwrPolStartingSucceeded
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStartingFailed"></a><a id="wdfdevstatepwrpolstartingfailed"></a><a id="WDFDEVSTATEPWRPOLSTARTINGFAILED"></a><b>WdfDevStatePwrPolStartingFailed</b>
+### -field WdfDevStatePwrPolStartingFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStartingDecideS0Wake"></a><a id="wdfdevstatepwrpolstartingdecides0wake"></a><a id="WDFDEVSTATEPWRPOLSTARTINGDECIDES0WAKE"></a><b>WdfDevStatePwrPolStartingDecideS0Wake</b>
+### -field WdfDevStatePwrPolStartingDecideS0Wake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStartedIdleCapable"></a><a id="wdfdevstatepwrpolstartedidlecapable"></a><a id="WDFDEVSTATEPWRPOLSTARTEDIDLECAPABLE"></a><b>WdfDevStatePwrPolStartedIdleCapable</b>
+### -field WdfDevStatePwrPolStartedIdleCapable
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredNoWake"></a><a id="wdfdevstatepwrpoltimerexpirednowake"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDNOWAKE"></a><b>WdfDevStatePwrPolTimerExpiredNoWake</b>
+### -field WdfDevStatePwrPolTimerExpiredNoWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredNoWakeCompletePowerDown"></a><a id="wdfdevstatepwrpoltimerexpirednowakecompletepowerdown"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDNOWAKECOMPLETEPOWERDOWN"></a><b>WdfDevStatePwrPolTimerExpiredNoWakeCompletePowerDown</b>
+### -field WdfDevStatePwrPolTimerExpiredNoWakeCompletePowerDown
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWaitingUnarmed"></a><a id="wdfdevstatepwrpolwaitingunarmed"></a><a id="WDFDEVSTATEPWRPOLWAITINGUNARMED"></a><b>WdfDevStatePwrPolWaitingUnarmed</b>
+### -field WdfDevStatePwrPolWaitingUnarmed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWaitingUnarmedQueryIdle"></a><a id="wdfdevstatepwrpolwaitingunarmedqueryidle"></a><a id="WDFDEVSTATEPWRPOLWAITINGUNARMEDQUERYIDLE"></a><b>WdfDevStatePwrPolWaitingUnarmedQueryIdle</b>
+### -field WdfDevStatePwrPolWaitingUnarmedQueryIdle
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolS0NoWakePowerUp"></a><a id="wdfdevstatepwrpols0nowakepowerup"></a><a id="WDFDEVSTATEPWRPOLS0NOWAKEPOWERUP"></a><b>WdfDevStatePwrPolS0NoWakePowerUp</b>
+### -field WdfDevStatePwrPolS0NoWakePowerUp
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolS0NoWakeCompletePowerUp"></a><a id="wdfdevstatepwrpols0nowakecompletepowerup"></a><a id="WDFDEVSTATEPWRPOLS0NOWAKECOMPLETEPOWERUP"></a><b>WdfDevStatePwrPolS0NoWakeCompletePowerUp</b>
+### -field WdfDevStatePwrPolS0NoWakeCompletePowerUp
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemSleepFromDeviceWaitingUnarmed"></a><a id="wdfdevstatepwrpolsystemsleepfromdevicewaitingunarmed"></a><a id="WDFDEVSTATEPWRPOLSYSTEMSLEEPFROMDEVICEWAITINGUNARMED"></a><b>WdfDevStatePwrPolSystemSleepFromDeviceWaitingUnarmed</b>
+### -field WdfDevStatePwrPolSystemSleepFromDeviceWaitingUnarmed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemSleepNeedWake"></a><a id="wdfdevstatepwrpolsystemsleepneedwake"></a><a id="WDFDEVSTATEPWRPOLSYSTEMSLEEPNEEDWAKE"></a><b>WdfDevStatePwrPolSystemSleepNeedWake</b>
+### -field WdfDevStatePwrPolSystemSleepNeedWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemSleepNeedWakeCompletePowerUp"></a><a id="wdfdevstatepwrpolsystemsleepneedwakecompletepowerup"></a><a id="WDFDEVSTATEPWRPOLSYSTEMSLEEPNEEDWAKECOMPLETEPOWERUP"></a><b>WdfDevStatePwrPolSystemSleepNeedWakeCompletePowerUp</b>
+### -field WdfDevStatePwrPolSystemSleepNeedWakeCompletePowerUp
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemSleepPowerRequestFailed"></a><a id="wdfdevstatepwrpolsystemsleeppowerrequestfailed"></a><a id="WDFDEVSTATEPWRPOLSYSTEMSLEEPPOWERREQUESTFAILED"></a><b>WdfDevStatePwrPolSystemSleepPowerRequestFailed</b>
+### -field WdfDevStatePwrPolSystemSleepPowerRequestFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolCheckPowerPageable"></a><a id="wdfdevstatepwrpolcheckpowerpageable"></a><a id="WDFDEVSTATEPWRPOLCHECKPOWERPAGEABLE"></a><b>WdfDevStatePwrPolCheckPowerPageable</b>
+### -field WdfDevStatePwrPolCheckPowerPageable
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSleepingWakeWakeArrived"></a><a id="wdfdevstatepwrpolsleepingwakewakearrived"></a><a id="WDFDEVSTATEPWRPOLSLEEPINGWAKEWAKEARRIVED"></a><b>WdfDevStatePwrPolSleepingWakeWakeArrived</b>
+### -field WdfDevStatePwrPolSleepingWakeWakeArrived
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSleepingWakeRevertArmWake"></a><a id="wdfdevstatepwrpolsleepingwakerevertarmwake"></a><a id="WDFDEVSTATEPWRPOLSLEEPINGWAKEREVERTARMWAKE"></a><b>WdfDevStatePwrPolSleepingWakeRevertArmWake</b>
+### -field WdfDevStatePwrPolSleepingWakeRevertArmWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemAsleepWakeArmed"></a><a id="wdfdevstatepwrpolsystemasleepwakearmed"></a><a id="WDFDEVSTATEPWRPOLSYSTEMASLEEPWAKEARMED"></a><b>WdfDevStatePwrPolSystemAsleepWakeArmed</b>
+### -field WdfDevStatePwrPolSystemAsleepWakeArmed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWakeEnabled"></a><a id="wdfdevstatepwrpolsystemwakedevicewakeenabled"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWAKEENABLED"></a><b>WdfDevStatePwrPolSystemWakeDeviceWakeEnabled</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWakeEnabled
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWakeEnabledWakeCanceled"></a><a id="wdfdevstatepwrpolsystemwakedevicewakeenabledwakecanceled"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWAKEENABLEDWAKECANCELED"></a><b>WdfDevStatePwrPolSystemWakeDeviceWakeEnabledWakeCanceled</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWakeEnabledWakeCanceled
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWakeDisarm"></a><a id="wdfdevstatepwrpolsystemwakedevicewakedisarm"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWAKEDISARM"></a><b>WdfDevStatePwrPolSystemWakeDeviceWakeDisarm</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWakeDisarm
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWakeTriggered"></a><a id="wdfdevstatepwrpolsystemwakedevicewaketriggered"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWAKETRIGGERED"></a><b>WdfDevStatePwrPolSystemWakeDeviceWakeTriggered</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWakeTriggered
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredS0"></a><a id="wdfdevstatepwrpolsystemwakedevicewaketriggereds0"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWAKETRIGGEREDS0"></a><b>WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredS0</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredS0
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWokeDisarm"></a><a id="wdfdevstatepwrpolsystemwakedevicewokedisarm"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWOKEDISARM"></a><b>WdfDevStatePwrPolSystemWakeDeviceWokeDisarm</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWokeDisarm
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSleepingWakeWakeArrivedNP"></a><a id="wdfdevstatepwrpolsleepingwakewakearrivednp"></a><a id="WDFDEVSTATEPWRPOLSLEEPINGWAKEWAKEARRIVEDNP"></a><b>WdfDevStatePwrPolSleepingWakeWakeArrivedNP</b>
+### -field WdfDevStatePwrPolSleepingWakeWakeArrivedNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSleepingWakeRevertArmWakeNP"></a><a id="wdfdevstatepwrpolsleepingwakerevertarmwakenp"></a><a id="WDFDEVSTATEPWRPOLSLEEPINGWAKEREVERTARMWAKENP"></a><b>WdfDevStatePwrPolSleepingWakeRevertArmWakeNP</b>
+### -field WdfDevStatePwrPolSleepingWakeRevertArmWakeNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSleepingWakePowerDownFailed"></a><a id="wdfdevstatepwrpolsleepingwakepowerdownfailed"></a><a id="WDFDEVSTATEPWRPOLSLEEPINGWAKEPOWERDOWNFAILED"></a><b>WdfDevStatePwrPolSleepingWakePowerDownFailed</b>
+### -field WdfDevStatePwrPolSleepingWakePowerDownFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSleepingWakePowerDownFailedWakeCanceled"></a><a id="wdfdevstatepwrpolsleepingwakepowerdownfailedwakecanceled"></a><a id="WDFDEVSTATEPWRPOLSLEEPINGWAKEPOWERDOWNFAILEDWAKECANCELED"></a><b>WdfDevStatePwrPolSleepingWakePowerDownFailedWakeCanceled</b>
+### -field WdfDevStatePwrPolSleepingWakePowerDownFailedWakeCanceled
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemAsleepWakeArmedNP"></a><a id="wdfdevstatepwrpolsystemasleepwakearmednp"></a><a id="WDFDEVSTATEPWRPOLSYSTEMASLEEPWAKEARMEDNP"></a><b>WdfDevStatePwrPolSystemAsleepWakeArmedNP</b>
+### -field WdfDevStatePwrPolSystemAsleepWakeArmedNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWakeEnabledNP"></a><a id="wdfdevstatepwrpolsystemwakedevicewakeenablednp"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWAKEENABLEDNP"></a><b>WdfDevStatePwrPolSystemWakeDeviceWakeEnabledNP</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWakeEnabledNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWakeEnabledWakeCanceledNP"></a><a id="wdfdevstatepwrpolsystemwakedevicewakeenabledwakecancelednp"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWAKEENABLEDWAKECANCELEDNP"></a><b>WdfDevStatePwrPolSystemWakeDeviceWakeEnabledWakeCanceledNP</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWakeEnabledWakeCanceledNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWakeDisarmNP"></a><a id="wdfdevstatepwrpolsystemwakedevicewakedisarmnp"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWAKEDISARMNP"></a><b>WdfDevStatePwrPolSystemWakeDeviceWakeDisarmNP</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWakeDisarmNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredNP"></a><a id="wdfdevstatepwrpolsystemwakedevicewaketriggerednp"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWAKETRIGGEREDNP"></a><b>WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredNP</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredS0NP"></a><a id="wdfdevstatepwrpolsystemwakedevicewaketriggereds0np"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWAKETRIGGEREDS0NP"></a><b>WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredS0NP</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredS0NP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWokeDisarmNP"></a><a id="wdfdevstatepwrpolsystemwakedevicewokedisarmnp"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWOKEDISARMNP"></a><b>WdfDevStatePwrPolSystemWakeDeviceWokeDisarmNP</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWokeDisarmNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWakeCompletePowerUp"></a><a id="wdfdevstatepwrpolsystemwakedevicewakecompletepowerup"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWAKECOMPLETEPOWERUP"></a><b>WdfDevStatePwrPolSystemWakeDeviceWakeCompletePowerUp</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWakeCompletePowerUp
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSleeping"></a><a id="wdfdevstatepwrpolsleeping"></a><a id="WDFDEVSTATEPWRPOLSLEEPING"></a><b>WdfDevStatePwrPolSleeping</b>
+### -field WdfDevStatePwrPolSleeping
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSleepingNoWakePowerDown"></a><a id="wdfdevstatepwrpolsleepingnowakepowerdown"></a><a id="WDFDEVSTATEPWRPOLSLEEPINGNOWAKEPOWERDOWN"></a><b>WdfDevStatePwrPolSleepingNoWakePowerDown</b>
+### -field WdfDevStatePwrPolSleepingNoWakePowerDown
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSleepingNoWakeCompletePowerDown"></a><a id="wdfdevstatepwrpolsleepingnowakecompletepowerdown"></a><a id="WDFDEVSTATEPWRPOLSLEEPINGNOWAKECOMPLETEPOWERDOWN"></a><b>WdfDevStatePwrPolSleepingNoWakeCompletePowerDown</b>
+### -field WdfDevStatePwrPolSleepingNoWakeCompletePowerDown
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSleepingNoWakeDxRequestFailed"></a><a id="wdfdevstatepwrpolsleepingnowakedxrequestfailed"></a><a id="WDFDEVSTATEPWRPOLSLEEPINGNOWAKEDXREQUESTFAILED"></a><b>WdfDevStatePwrPolSleepingNoWakeDxRequestFailed</b>
+### -field WdfDevStatePwrPolSleepingNoWakeDxRequestFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSleepingWakePowerDown"></a><a id="wdfdevstatepwrpolsleepingwakepowerdown"></a><a id="WDFDEVSTATEPWRPOLSLEEPINGWAKEPOWERDOWN"></a><b>WdfDevStatePwrPolSleepingWakePowerDown</b>
+### -field WdfDevStatePwrPolSleepingWakePowerDown
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSleepingSendWake"></a><a id="wdfdevstatepwrpolsleepingsendwake"></a><a id="WDFDEVSTATEPWRPOLSLEEPINGSENDWAKE"></a><b>WdfDevStatePwrPolSleepingSendWake</b>
+### -field WdfDevStatePwrPolSleepingSendWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemAsleepNoWake"></a><a id="wdfdevstatepwrpolsystemasleepnowake"></a><a id="WDFDEVSTATEPWRPOLSYSTEMASLEEPNOWAKE"></a><b>WdfDevStatePwrPolSystemAsleepNoWake</b>
+### -field WdfDevStatePwrPolSystemAsleepNoWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWakeDisabled"></a><a id="wdfdevstatepwrpolsystemwakedevicewakedisabled"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWAKEDISABLED"></a><b>WdfDevStatePwrPolSystemWakeDeviceWakeDisabled</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWakeDisabled
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceToD0"></a><a id="wdfdevstatepwrpolsystemwakedevicetod0"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICETOD0"></a><b>WdfDevStatePwrPolSystemWakeDeviceToD0</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceToD0
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceToD0CompletePowerUp"></a><a id="wdfdevstatepwrpolsystemwakedevicetod0completepowerup"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICETOD0COMPLETEPOWERUP"></a><b>WdfDevStatePwrPolSystemWakeDeviceToD0CompletePowerUp</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceToD0CompletePowerUp
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeQueryIdle"></a><a id="wdfdevstatepwrpolsystemwakequeryidle"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEQUERYIDLE"></a><b>WdfDevStatePwrPolSystemWakeQueryIdle</b>
+### -field WdfDevStatePwrPolSystemWakeQueryIdle
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStartedWakeCapable"></a><a id="wdfdevstatepwrpolstartedwakecapable"></a><a id="WDFDEVSTATEPWRPOLSTARTEDWAKECAPABLE"></a><b>WdfDevStatePwrPolStartedWakeCapable</b>
+### -field WdfDevStatePwrPolStartedWakeCapable
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredDecideUsbSS"></a><a id="wdfdevstatepwrpoltimerexpireddecideusbss"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDDECIDEUSBSS"></a><b>WdfDevStatePwrPolTimerExpiredDecideUsbSS</b>
+### -field WdfDevStatePwrPolTimerExpiredDecideUsbSS
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapablePowerDown"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapablepowerdown"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLEPOWERDOWN"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDown</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapablePowerDown
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapableSendWake"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapablesendwake"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLESENDWAKE"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapableSendWake</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapableSendWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapableUsbSS"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapableusbss"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLEUSBSS"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapableUsbSS</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapableUsbSS
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapableWakeArrived"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapablewakearrived"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLEWAKEARRIVED"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapableWakeArrived</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapableWakeArrived
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapableCancelWake"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapablecancelwake"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLECANCELWAKE"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapableCancelWake</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapableCancelWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapableWakeCanceled"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapablewakecanceled"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLEWAKECANCELED"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapableWakeCanceled</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapableWakeCanceled
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapableCleanup"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapablecleanup"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLECLEANUP"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapableCleanup</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapableCleanup
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapableDxAllocFailed"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapabledxallocfailed"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLEDXALLOCFAILED"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapableDxAllocFailed</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapableDxAllocFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCompletedPowerDown"></a><a id="wdfdevstatepwrpoltimerexpiredwakecompletedpowerdown"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECOMPLETEDPOWERDOWN"></a><b>WdfDevStatePwrPolTimerExpiredWakeCompletedPowerDown</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCompletedPowerDown
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCompletedPowerUp"></a><a id="wdfdevstatepwrpoltimerexpiredwakecompletedpowerup"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECOMPLETEDPOWERUP"></a><b>WdfDevStatePwrPolTimerExpiredWakeCompletedPowerUp</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCompletedPowerUp
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWaitingArmedUsbSS"></a><a id="wdfdevstatepwrpolwaitingarmedusbss"></a><a id="WDFDEVSTATEPWRPOLWAITINGARMEDUSBSS"></a><b>WdfDevStatePwrPolWaitingArmedUsbSS</b>
+### -field WdfDevStatePwrPolWaitingArmedUsbSS
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWaitingArmed"></a><a id="wdfdevstatepwrpolwaitingarmed"></a><a id="WDFDEVSTATEPWRPOLWAITINGARMED"></a><b>WdfDevStatePwrPolWaitingArmed</b>
+### -field WdfDevStatePwrPolWaitingArmed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWaitingArmedQueryIdle"></a><a id="wdfdevstatepwrpolwaitingarmedqueryidle"></a><a id="WDFDEVSTATEPWRPOLWAITINGARMEDQUERYIDLE"></a><b>WdfDevStatePwrPolWaitingArmedQueryIdle</b>
+### -field WdfDevStatePwrPolWaitingArmedQueryIdle
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolIoPresentArmed"></a><a id="wdfdevstatepwrpoliopresentarmed"></a><a id="WDFDEVSTATEPWRPOLIOPRESENTARMED"></a><b>WdfDevStatePwrPolIoPresentArmed</b>
+### -field WdfDevStatePwrPolIoPresentArmed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolIoPresentArmedWakeCanceled"></a><a id="wdfdevstatepwrpoliopresentarmedwakecanceled"></a><a id="WDFDEVSTATEPWRPOLIOPRESENTARMEDWAKECANCELED"></a><b>WdfDevStatePwrPolIoPresentArmedWakeCanceled</b>
+### -field WdfDevStatePwrPolIoPresentArmedWakeCanceled
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolS0WakeDisarm"></a><a id="wdfdevstatepwrpols0wakedisarm"></a><a id="WDFDEVSTATEPWRPOLS0WAKEDISARM"></a><b>WdfDevStatePwrPolS0WakeDisarm</b>
+### -field WdfDevStatePwrPolS0WakeDisarm
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolS0WakeCompletePowerUp"></a><a id="wdfdevstatepwrpols0wakecompletepowerup"></a><a id="WDFDEVSTATEPWRPOLS0WAKECOMPLETEPOWERUP"></a><b>WdfDevStatePwrPolS0WakeCompletePowerUp</b>
+### -field WdfDevStatePwrPolS0WakeCompletePowerUp
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeSucceeded"></a><a id="wdfdevstatepwrpoltimerexpiredwakesucceeded"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKESUCCEEDED"></a><b>WdfDevStatePwrPolTimerExpiredWakeSucceeded</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeSucceeded
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCompletedDisarm"></a><a id="wdfdevstatepwrpoltimerexpiredwakecompleteddisarm"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECOMPLETEDDISARM"></a><b>WdfDevStatePwrPolTimerExpiredWakeCompletedDisarm</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCompletedDisarm
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapableWakeSucceeded"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapablewakesucceeded"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLEWAKESUCCEEDED"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapableWakeSucceeded</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapableWakeSucceeded
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapableWakeFailed"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapablewakefailed"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLEWAKEFAILED"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapableWakeFailed</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapableWakeFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWakeFailedUsbSS"></a><a id="wdfdevstatepwrpolwakefailedusbss"></a><a id="WDFDEVSTATEPWRPOLWAKEFAILEDUSBSS"></a><b>WdfDevStatePwrPolWakeFailedUsbSS</b>
+### -field WdfDevStatePwrPolWakeFailedUsbSS
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedCancelWake"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapablepowerdownfailedcancelwake"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLEPOWERDOWNFAILEDCANCELWAKE"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedCancelWake</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedCancelWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedWakeCanceled"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapablepowerdownfailedwakecanceled"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLEPOWERDOWNFAILEDWAKECANCELED"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedWakeCanceled</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedWakeCanceled
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedUsbSS"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapablepowerdownfailedusbss"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLEPOWERDOWNFAILEDUSBSS"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedUsbSS</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedUsbSS
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolCancelingWakeForSystemSleep"></a><a id="wdfdevstatepwrpolcancelingwakeforsystemsleep"></a><a id="WDFDEVSTATEPWRPOLCANCELINGWAKEFORSYSTEMSLEEP"></a><b>WdfDevStatePwrPolCancelingWakeForSystemSleep</b>
+### -field WdfDevStatePwrPolCancelingWakeForSystemSleep
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolCancelingWakeForSystemSleepWakeCanceled"></a><a id="wdfdevstatepwrpolcancelingwakeforsystemsleepwakecanceled"></a><a id="WDFDEVSTATEPWRPOLCANCELINGWAKEFORSYSTEMSLEEPWAKECANCELED"></a><b>WdfDevStatePwrPolCancelingWakeForSystemSleepWakeCanceled</b>
+### -field WdfDevStatePwrPolCancelingWakeForSystemSleepWakeCanceled
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolDisarmingWakeForSystemSleepCompletePowerUp"></a><a id="wdfdevstatepwrpoldisarmingwakeforsystemsleepcompletepowerup"></a><a id="WDFDEVSTATEPWRPOLDISARMINGWAKEFORSYSTEMSLEEPCOMPLETEPOWERUP"></a><b>WdfDevStatePwrPolDisarmingWakeForSystemSleepCompletePowerUp</b>
+### -field WdfDevStatePwrPolDisarmingWakeForSystemSleepCompletePowerUp
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolPowerUpForSystemSleepFailed"></a><a id="wdfdevstatepwrpolpowerupforsystemsleepfailed"></a><a id="WDFDEVSTATEPWRPOLPOWERUPFORSYSTEMSLEEPFAILED"></a><b>WdfDevStatePwrPolPowerUpForSystemSleepFailed</b>
+### -field WdfDevStatePwrPolPowerUpForSystemSleepFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWokeFromS0UsbSS"></a><a id="wdfdevstatepwrpolwokefroms0usbss"></a><a id="WDFDEVSTATEPWRPOLWOKEFROMS0USBSS"></a><b>WdfDevStatePwrPolWokeFromS0UsbSS</b>
+### -field WdfDevStatePwrPolWokeFromS0UsbSS
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWokeFromS0"></a><a id="wdfdevstatepwrpolwokefroms0"></a><a id="WDFDEVSTATEPWRPOLWOKEFROMS0"></a><b>WdfDevStatePwrPolWokeFromS0</b>
+### -field WdfDevStatePwrPolWokeFromS0
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWokeFromS0NotifyDriver"></a><a id="wdfdevstatepwrpolwokefroms0notifydriver"></a><a id="WDFDEVSTATEPWRPOLWOKEFROMS0NOTIFYDRIVER"></a><b>WdfDevStatePwrPolWokeFromS0NotifyDriver</b>
+### -field WdfDevStatePwrPolWokeFromS0NotifyDriver
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingResetDevice"></a><a id="wdfdevstatepwrpolstoppingresetdevice"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGRESETDEVICE"></a><b>WdfDevStatePwrPolStoppingResetDevice</b>
+### -field WdfDevStatePwrPolStoppingResetDevice
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingResetDeviceCompletePowerUp"></a><a id="wdfdevstatepwrpolstoppingresetdevicecompletepowerup"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGRESETDEVICECOMPLETEPOWERUP"></a><b>WdfDevStatePwrPolStoppingResetDeviceCompletePowerUp</b>
+### -field WdfDevStatePwrPolStoppingResetDeviceCompletePowerUp
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingResetDeviceFailed"></a><a id="wdfdevstatepwrpolstoppingresetdevicefailed"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGRESETDEVICEFAILED"></a><b>WdfDevStatePwrPolStoppingResetDeviceFailed</b>
+### -field WdfDevStatePwrPolStoppingResetDeviceFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingD0"></a><a id="wdfdevstatepwrpolstoppingd0"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGD0"></a><b>WdfDevStatePwrPolStoppingD0</b>
+### -field WdfDevStatePwrPolStoppingD0
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingD0Failed"></a><a id="wdfdevstatepwrpolstoppingd0failed"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGD0FAILED"></a><b>WdfDevStatePwrPolStoppingD0Failed</b>
+### -field WdfDevStatePwrPolStoppingD0Failed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingDisarmWake"></a><a id="wdfdevstatepwrpolstoppingdisarmwake"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGDISARMWAKE"></a><b>WdfDevStatePwrPolStoppingDisarmWake</b>
+### -field WdfDevStatePwrPolStoppingDisarmWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingDisarmWakeCancelWake"></a><a id="wdfdevstatepwrpolstoppingdisarmwakecancelwake"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGDISARMWAKECANCELWAKE"></a><b>WdfDevStatePwrPolStoppingDisarmWakeCancelWake</b>
+### -field WdfDevStatePwrPolStoppingDisarmWakeCancelWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingDisarmWakeWakeCanceled"></a><a id="wdfdevstatepwrpolstoppingdisarmwakewakecanceled"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGDISARMWAKEWAKECANCELED"></a><b>WdfDevStatePwrPolStoppingDisarmWakeWakeCanceled</b>
+### -field WdfDevStatePwrPolStoppingDisarmWakeWakeCanceled
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStopping"></a><a id="wdfdevstatepwrpolstopping"></a><a id="WDFDEVSTATEPWRPOLSTOPPING"></a><b>WdfDevStatePwrPolStopping</b>
+### -field WdfDevStatePwrPolStopping
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingFailed"></a><a id="wdfdevstatepwrpolstoppingfailed"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGFAILED"></a><b>WdfDevStatePwrPolStoppingFailed</b>
+### -field WdfDevStatePwrPolStoppingFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingSendStatus"></a><a id="wdfdevstatepwrpolstoppingsendstatus"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGSENDSTATUS"></a><b>WdfDevStatePwrPolStoppingSendStatus</b>
+### -field WdfDevStatePwrPolStoppingSendStatus
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingCancelTimer"></a><a id="wdfdevstatepwrpolstoppingcanceltimer"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGCANCELTIMER"></a><b>WdfDevStatePwrPolStoppingCancelTimer</b>
+### -field WdfDevStatePwrPolStoppingCancelTimer
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingWaitForIdleTimeout"></a><a id="wdfdevstatepwrpolstoppingwaitforidletimeout"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGWAITFORIDLETIMEOUT"></a><b>WdfDevStatePwrPolStoppingWaitForIdleTimeout</b>
+### -field WdfDevStatePwrPolStoppingWaitForIdleTimeout
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingCancelUsbSS"></a><a id="wdfdevstatepwrpolstoppingcancelusbss"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGCANCELUSBSS"></a><b>WdfDevStatePwrPolStoppingCancelUsbSS</b>
+### -field WdfDevStatePwrPolStoppingCancelUsbSS
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingWaitForUsbSSCompletion"></a><a id="wdfdevstatepwrpolstoppingwaitforusbsscompletion"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGWAITFORUSBSSCOMPLETION"></a><b>WdfDevStatePwrPolStoppingWaitForUsbSSCompletion</b>
+### -field WdfDevStatePwrPolStoppingWaitForUsbSSCompletion
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingCancelWake"></a><a id="wdfdevstatepwrpolstoppingcancelwake"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGCANCELWAKE"></a><b>WdfDevStatePwrPolStoppingCancelWake</b>
+### -field WdfDevStatePwrPolStoppingCancelWake
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStopped"></a><a id="wdfdevstatepwrpolstopped"></a><a id="WDFDEVSTATEPWRPOLSTOPPED"></a><b>WdfDevStatePwrPolStopped</b>
+### -field WdfDevStatePwrPolStopped
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolCancelUsbSS"></a><a id="wdfdevstatepwrpolcancelusbss"></a><a id="WDFDEVSTATEPWRPOLCANCELUSBSS"></a><b>WdfDevStatePwrPolCancelUsbSS</b>
+### -field WdfDevStatePwrPolCancelUsbSS
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStarted"></a><a id="wdfdevstatepwrpolstarted"></a><a id="WDFDEVSTATEPWRPOLSTARTED"></a><b>WdfDevStatePwrPolStarted</b>
+### -field WdfDevStatePwrPolStarted
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStartedCancelTimer"></a><a id="wdfdevstatepwrpolstartedcanceltimer"></a><a id="WDFDEVSTATEPWRPOLSTARTEDCANCELTIMER"></a><b>WdfDevStatePwrPolStartedCancelTimer</b>
+### -field WdfDevStatePwrPolStartedCancelTimer
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStartedWaitForIdleTimeout"></a><a id="wdfdevstatepwrpolstartedwaitforidletimeout"></a><a id="WDFDEVSTATEPWRPOLSTARTEDWAITFORIDLETIMEOUT"></a><b>WdfDevStatePwrPolStartedWaitForIdleTimeout</b>
+### -field WdfDevStatePwrPolStartedWaitForIdleTimeout
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStartedWakeCapableCancelTimerForSleep"></a><a id="wdfdevstatepwrpolstartedwakecapablecanceltimerforsleep"></a><a id="WDFDEVSTATEPWRPOLSTARTEDWAKECAPABLECANCELTIMERFORSLEEP"></a><b>WdfDevStatePwrPolStartedWakeCapableCancelTimerForSleep</b>
+### -field WdfDevStatePwrPolStartedWakeCapableCancelTimerForSleep
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStartedWakeCapableWaitForIdleTimeout"></a><a id="wdfdevstatepwrpolstartedwakecapablewaitforidletimeout"></a><a id="WDFDEVSTATEPWRPOLSTARTEDWAKECAPABLEWAITFORIDLETIMEOUT"></a><b>WdfDevStatePwrPolStartedWakeCapableWaitForIdleTimeout</b>
+### -field WdfDevStatePwrPolStartedWakeCapableWaitForIdleTimeout
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStartedWakeCapableSleepingUsbSS"></a><a id="wdfdevstatepwrpolstartedwakecapablesleepingusbss"></a><a id="WDFDEVSTATEPWRPOLSTARTEDWAKECAPABLESLEEPINGUSBSS"></a><b>WdfDevStatePwrPolStartedWakeCapableSleepingUsbSS</b>
+### -field WdfDevStatePwrPolStartedWakeCapableSleepingUsbSS
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStartedIdleCapableCancelTimerForSleep"></a><a id="wdfdevstatepwrpolstartedidlecapablecanceltimerforsleep"></a><a id="WDFDEVSTATEPWRPOLSTARTEDIDLECAPABLECANCELTIMERFORSLEEP"></a><b>WdfDevStatePwrPolStartedIdleCapableCancelTimerForSleep</b>
+### -field WdfDevStatePwrPolStartedIdleCapableCancelTimerForSleep
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStartedIdleCapableWaitForIdleTimeout"></a><a id="wdfdevstatepwrpolstartedidlecapablewaitforidletimeout"></a><a id="WDFDEVSTATEPWRPOLSTARTEDIDLECAPABLEWAITFORIDLETIMEOUT"></a><b>WdfDevStatePwrPolStartedIdleCapableWaitForIdleTimeout</b>
+### -field WdfDevStatePwrPolStartedIdleCapableWaitForIdleTimeout
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolDeviceD0PowerRequestFailed"></a><a id="wdfdevstatepwrpoldeviced0powerrequestfailed"></a><a id="WDFDEVSTATEPWRPOLDEVICED0POWERREQUESTFAILED"></a><b>WdfDevStatePwrPolDeviceD0PowerRequestFailed</b>
+### -field WdfDevStatePwrPolDeviceD0PowerRequestFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolDevicePowerRequestFailed"></a><a id="wdfdevstatepwrpoldevicepowerrequestfailed"></a><a id="WDFDEVSTATEPWRPOLDEVICEPOWERREQUESTFAILED"></a><b>WdfDevStatePwrPolDevicePowerRequestFailed</b>
+### -field WdfDevStatePwrPolDevicePowerRequestFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolGotoDx"></a><a id="wdfdevstatepwrpolgotodx"></a><a id="WDFDEVSTATEPWRPOLGOTODX"></a><b>WdfDevStatePwrPolGotoDx</b>
+### -field WdfDevStatePwrPolGotoDx
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolGotoDxInDx"></a><a id="wdfdevstatepwrpolgotodxindx"></a><a id="WDFDEVSTATEPWRPOLGOTODXINDX"></a><b>WdfDevStatePwrPolGotoDxInDx</b>
+### -field WdfDevStatePwrPolGotoDxInDx
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolDx"></a><a id="wdfdevstatepwrpoldx"></a><a id="WDFDEVSTATEPWRPOLDX"></a><b>WdfDevStatePwrPolDx</b>
+### -field WdfDevStatePwrPolDx
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolGotoD0"></a><a id="wdfdevstatepwrpolgotod0"></a><a id="WDFDEVSTATEPWRPOLGOTOD0"></a><b>WdfDevStatePwrPolGotoD0</b>
+### -field WdfDevStatePwrPolGotoD0
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolGotoD0InD0"></a><a id="wdfdevstatepwrpolgotod0ind0"></a><a id="WDFDEVSTATEPWRPOLGOTOD0IND0"></a><b>WdfDevStatePwrPolGotoD0InD0</b>
+### -field WdfDevStatePwrPolGotoD0InD0
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolFinal"></a><a id="wdfdevstatepwrpolfinal"></a><a id="WDFDEVSTATEPWRPOLFINAL"></a><b>WdfDevStatePwrPolFinal</b>
+### -field WdfDevStatePwrPolFinal
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSleepingPowerDownNotProcessed"></a><a id="wdfdevstatepwrpolsleepingpowerdownnotprocessed"></a><a id="WDFDEVSTATEPWRPOLSLEEPINGPOWERDOWNNOTPROCESSED"></a><b>WdfDevStatePwrPolSleepingPowerDownNotProcessed</b>
+### -field WdfDevStatePwrPolSleepingPowerDownNotProcessed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownNotProcessed"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapablepowerdownnotprocessed"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLEPOWERDOWNNOTPROCESSED"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownNotProcessed</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownNotProcessed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredNoWakePowerDownNotProcessed"></a><a id="wdfdevstatepwrpoltimerexpirednowakepowerdownnotprocessed"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDNOWAKEPOWERDOWNNOTPROCESSED"></a><b>WdfDevStatePwrPolTimerExpiredNoWakePowerDownNotProcessed</b>
+### -field WdfDevStatePwrPolTimerExpiredNoWakePowerDownNotProcessed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredNoWakePoweredDownDisableIdleTimer"></a><a id="wdfdevstatepwrpoltimerexpirednowakepowereddowndisableidletimer"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDNOWAKEPOWEREDDOWNDISABLEIDLETIMER"></a><b>WdfDevStatePwrPolTimerExpiredNoWakePoweredDownDisableIdleTimer</b>
+### -field WdfDevStatePwrPolTimerExpiredNoWakePoweredDownDisableIdleTimer
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingWaitingForImplicitPowerDown"></a><a id="wdfdevstatepwrpolstoppingwaitingforimplicitpowerdown"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGWAITINGFORIMPLICITPOWERDOWN"></a><b>WdfDevStatePwrPolStoppingWaitingForImplicitPowerDown</b>
+### -field WdfDevStatePwrPolStoppingWaitingForImplicitPowerDown
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingPoweringUp"></a><a id="wdfdevstatepwrpolstoppingpoweringup"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGPOWERINGUP"></a><b>WdfDevStatePwrPolStoppingPoweringUp</b>
+### -field WdfDevStatePwrPolStoppingPoweringUp
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingPoweringDown"></a><a id="wdfdevstatepwrpolstoppingpoweringdown"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGPOWERINGDOWN"></a><b>WdfDevStatePwrPolStoppingPoweringDown</b>
+### -field WdfDevStatePwrPolStoppingPoweringDown
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolPowerUpForSystemSleepNotSeen"></a><a id="wdfdevstatepwrpolpowerupforsystemsleepnotseen"></a><a id="WDFDEVSTATEPWRPOLPOWERUPFORSYSTEMSLEEPNOTSEEN"></a><b>WdfDevStatePwrPolPowerUpForSystemSleepNotSeen</b>
+### -field WdfDevStatePwrPolPowerUpForSystemSleepNotSeen
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWaitingArmedStoppingCancelUsbSS"></a><a id="wdfdevstatepwrpolwaitingarmedstoppingcancelusbss"></a><a id="WDFDEVSTATEPWRPOLWAITINGARMEDSTOPPINGCANCELUSBSS"></a><b>WdfDevStatePwrPolWaitingArmedStoppingCancelUsbSS</b>
+### -field WdfDevStatePwrPolWaitingArmedStoppingCancelUsbSS
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWaitingArmedWakeFailedCancelUsbSS"></a><a id="wdfdevstatepwrpolwaitingarmedwakefailedcancelusbss"></a><a id="WDFDEVSTATEPWRPOLWAITINGARMEDWAKEFAILEDCANCELUSBSS"></a><b>WdfDevStatePwrPolWaitingArmedWakeFailedCancelUsbSS</b>
+### -field WdfDevStatePwrPolWaitingArmedWakeFailedCancelUsbSS
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWaitingArmedIoPresentCancelUsbSS"></a><a id="wdfdevstatepwrpolwaitingarmediopresentcancelusbss"></a><a id="WDFDEVSTATEPWRPOLWAITINGARMEDIOPRESENTCANCELUSBSS"></a><b>WdfDevStatePwrPolWaitingArmedIoPresentCancelUsbSS</b>
+### -field WdfDevStatePwrPolWaitingArmedIoPresentCancelUsbSS
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWaitingArmedWakeSucceededCancelUsbSS"></a><a id="wdfdevstatepwrpolwaitingarmedwakesucceededcancelusbss"></a><a id="WDFDEVSTATEPWRPOLWAITINGARMEDWAKESUCCEEDEDCANCELUSBSS"></a><b>WdfDevStatePwrPolWaitingArmedWakeSucceededCancelUsbSS</b>
+### -field WdfDevStatePwrPolWaitingArmedWakeSucceededCancelUsbSS
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolCancelingUsbSSForSystemSleep"></a><a id="wdfdevstatepwrpolcancelingusbssforsystemsleep"></a><a id="WDFDEVSTATEPWRPOLCANCELINGUSBSSFORSYSTEMSLEEP"></a><b>WdfDevStatePwrPolCancelingUsbSSForSystemSleep</b>
+### -field WdfDevStatePwrPolCancelingUsbSSForSystemSleep
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppingD0CancelUsbSS"></a><a id="wdfdevstatepwrpolstoppingd0cancelusbss"></a><a id="WDFDEVSTATEPWRPOLSTOPPINGD0CANCELUSBSS"></a><b>WdfDevStatePwrPolStoppingD0CancelUsbSS</b>
+### -field WdfDevStatePwrPolStoppingD0CancelUsbSS
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStartingPoweredUp"></a><a id="wdfdevstatepwrpolstartingpoweredup"></a><a id="WDFDEVSTATEPWRPOLSTARTINGPOWEREDUP"></a><b>WdfDevStatePwrPolStartingPoweredUp</b>
+### -field WdfDevStatePwrPolStartingPoweredUp
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolIdleCapableDeviceIdle"></a><a id="wdfdevstatepwrpolidlecapabledeviceidle"></a><a id="WDFDEVSTATEPWRPOLIDLECAPABLEDEVICEIDLE"></a><b>WdfDevStatePwrPolIdleCapableDeviceIdle</b>
+### -field WdfDevStatePwrPolIdleCapableDeviceIdle
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolDeviceIdleReturnToActive"></a><a id="wdfdevstatepwrpoldeviceidlereturntoactive"></a><a id="WDFDEVSTATEPWRPOLDEVICEIDLERETURNTOACTIVE"></a><b>WdfDevStatePwrPolDeviceIdleReturnToActive</b>
+### -field WdfDevStatePwrPolDeviceIdleReturnToActive
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolDeviceIdleSleeping"></a><a id="wdfdevstatepwrpoldeviceidlesleeping"></a><a id="WDFDEVSTATEPWRPOLDEVICEIDLESLEEPING"></a><b>WdfDevStatePwrPolDeviceIdleSleeping</b>
+### -field WdfDevStatePwrPolDeviceIdleSleeping
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolDeviceIdleStopping"></a><a id="wdfdevstatepwrpoldeviceidlestopping"></a><a id="WDFDEVSTATEPWRPOLDEVICEIDLESTOPPING"></a><b>WdfDevStatePwrPolDeviceIdleStopping</b>
+### -field WdfDevStatePwrPolDeviceIdleStopping
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredNoWakeUndoPowerDown"></a><a id="wdfdevstatepwrpoltimerexpirednowakeundopowerdown"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDNOWAKEUNDOPOWERDOWN"></a><b>WdfDevStatePwrPolTimerExpiredNoWakeUndoPowerDown</b>
+### -field WdfDevStatePwrPolTimerExpiredNoWakeUndoPowerDown
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWakeCapableDeviceIdle"></a><a id="wdfdevstatepwrpolwakecapabledeviceidle"></a><a id="WDFDEVSTATEPWRPOLWAKECAPABLEDEVICEIDLE"></a><b>WdfDevStatePwrPolWakeCapableDeviceIdle</b>
+### -field WdfDevStatePwrPolWakeCapableDeviceIdle
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWakeCapableUsbSSCompleted"></a><a id="wdfdevstatepwrpolwakecapableusbsscompleted"></a><a id="WDFDEVSTATEPWRPOLWAKECAPABLEUSBSSCOMPLETED"></a><b>WdfDevStatePwrPolWakeCapableUsbSSCompleted</b>
+### -field WdfDevStatePwrPolWakeCapableUsbSSCompleted
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapableUndoPowerDown"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapableundopowerdown"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLEUNDOPOWERDOWN"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapableUndoPowerDown</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapableUndoPowerDown
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCompletedHardwareStarted"></a><a id="wdfdevstatepwrpoltimerexpiredwakecompletedhardwarestarted"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECOMPLETEDHARDWARESTARTED"></a><b>WdfDevStatePwrPolTimerExpiredWakeCompletedHardwareStarted</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCompletedHardwareStarted
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStoppedRemoving"></a><a id="wdfdevstatepwrpolstoppedremoving"></a><a id="WDFDEVSTATEPWRPOLSTOPPEDREMOVING"></a><b>WdfDevStatePwrPolStoppedRemoving</b>
+### -field WdfDevStatePwrPolStoppedRemoving
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolRemoved"></a><a id="wdfdevstatepwrpolremoved"></a><a id="WDFDEVSTATEPWRPOLREMOVED"></a><b>WdfDevStatePwrPolRemoved</b>
+### -field WdfDevStatePwrPolRemoved
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolRestarting"></a><a id="wdfdevstatepwrpolrestarting"></a><a id="WDFDEVSTATEPWRPOLRESTARTING"></a><b>WdfDevStatePwrPolRestarting</b>
+### -field WdfDevStatePwrPolRestarting
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolRestartingFailed"></a><a id="wdfdevstatepwrpolrestartingfailed"></a><a id="WDFDEVSTATEPWRPOLRESTARTINGFAILED"></a><b>WdfDevStatePwrPolRestartingFailed</b>
+### -field WdfDevStatePwrPolRestartingFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolStartingPoweredUpFailed"></a><a id="wdfdevstatepwrpolstartingpoweredupfailed"></a><a id="WDFDEVSTATEPWRPOLSTARTINGPOWEREDUPFAILED"></a><b>WdfDevStatePwrPolStartingPoweredUpFailed</b>
+### -field WdfDevStatePwrPolStartingPoweredUpFailed
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredNoWakeReturnToActive"></a><a id="wdfdevstatepwrpoltimerexpirednowakereturntoactive"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDNOWAKERETURNTOACTIVE"></a><b>WdfDevStatePwrPolTimerExpiredNoWakeReturnToActive</b>
+### -field WdfDevStatePwrPolTimerExpiredNoWakeReturnToActive
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWaitingArmedWakeInterruptFired"></a><a id="wdfdevstatepwrpolwaitingarmedwakeinterruptfired"></a><a id="WDFDEVSTATEPWRPOLWAITINGARMEDWAKEINTERRUPTFIRED"></a><b>WdfDevStatePwrPolWaitingArmedWakeInterruptFired</b>
+### -field WdfDevStatePwrPolWaitingArmedWakeInterruptFired
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWakeInterruptFired"></a><a id="wdfdevstatepwrpolsystemwakedevicewakeinterruptfired"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWAKEINTERRUPTFIRED"></a><b>WdfDevStatePwrPolSystemWakeDeviceWakeInterruptFired</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWakeInterruptFired
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolSystemWakeDeviceWakeInterruptFiredNP"></a><a id="wdfdevstatepwrpolsystemwakedevicewakeinterruptfirednp"></a><a id="WDFDEVSTATEPWRPOLSYSTEMWAKEDEVICEWAKEINTERRUPTFIREDNP"></a><b>WdfDevStatePwrPolSystemWakeDeviceWakeInterruptFiredNP</b>
+### -field WdfDevStatePwrPolSystemWakeDeviceWakeInterruptFiredNP
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapableWakeInterruptArrived"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapablewakeinterruptarrived"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLEWAKEINTERRUPTARRIVED"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapableWakeInterruptArrived</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapableWakeInterruptArrived
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedWakeInterruptArrived"></a><a id="wdfdevstatepwrpoltimerexpiredwakecapablepowerdownfailedwakeinterruptarrived"></a><a id="WDFDEVSTATEPWRPOLTIMEREXPIREDWAKECAPABLEPOWERDOWNFAILEDWAKEINTERRUPTARRIVED"></a><b>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedWakeInterruptArrived</b>
+### -field WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedWakeInterruptArrived
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolWaitingArmedWakeInterruptFiredDuringPowerDown"></a><a id="wdfdevstatepwrpolwaitingarmedwakeinterruptfiredduringpowerdown"></a><a id="WDFDEVSTATEPWRPOLWAITINGARMEDWAKEINTERRUPTFIREDDURINGPOWERDOWN"></a><b>WdfDevStatePwrPolWaitingArmedWakeInterruptFiredDuringPowerDown</b>
+### -field WdfDevStatePwrPolWaitingArmedWakeInterruptFiredDuringPowerDown
 
 <dd></dd>
 
-### -field <a id="WdfDevStatePwrPolNull"></a><a id="wdfdevstatepwrpolnull"></a><a id="WDFDEVSTATEPWRPOLNULL"></a><b>WdfDevStatePwrPolNull</b>
+### -field WdfDevStatePwrPolNull
 
 <dd></dd>
 </dl>

@@ -55,7 +55,7 @@ typedef struct IDARG_OUT_RELEASEANDACQUIREBUFFER {
 ## -struct-fields
 <dl>
 
-### -field <b>MetaData</b>
+### -field MetaData
 
 <dd>
 <p>

@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>NumberOfLines</b>
+### -field NumberOfLines
 
 <dd>
 <p>Indicates the number of lines detected in the incoming analog video signal.</p>
 </dd>
 
-### -field <b>SignalLocked</b>
+### -field SignalLocked
 
 <dd>
 <p>Indicates whether the signal is locked. Zero indicates that the signal is not locked. A nonzero value indicates the signal is locked.</p>

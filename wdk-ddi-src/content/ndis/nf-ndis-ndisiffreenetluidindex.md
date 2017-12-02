@@ -7,7 +7,7 @@ old-location: netvista\ndisiffreenetluidindex.htm
 old-project: netvista
 ms.assetid: eba881f8-e946-44a8-9624-37f63471fb65
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisIfFreeNetLuidIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ NDIS_STATUS NdisIfFreeNetLuidIndex(
 ## -parameters
 <dl>
 
-### -param <i>IfType</i> [in]
+### -param IfType [in]
 
 <dd>
 <p>The interface type that the index was allocated for. The caller must provide the same value that
@@ -70,7 +70,7 @@ NDIS_STATUS NdisIfFreeNetLuidIndex(
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff565767">NDIS Interface Types</a>.</p>
 </dd>
 
-### -param <i>NetLuidIndex</i> [in]
+### -param NetLuidIndex [in]
 
 <dd>
 <p>The NET_LUID index value that NDIS should free. This index was allocated in a previous call to 
@@ -180,4 +180,4 @@ NDIS_STATUS NdisIfFreeNetLuidIndex(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfFreeNetLuidIndex function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfFreeNetLuidIndex function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

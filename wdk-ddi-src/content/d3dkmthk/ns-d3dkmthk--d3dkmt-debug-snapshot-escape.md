@@ -58,13 +58,13 @@ typedef struct _D3DKMT_DEBUG_SNAPSHOT_ESCAPE {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>[out] The actual length of the snapshot written in the <b>Buffer</b> member.</p>
 </dd>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>[out] The buffer to place the snapshot in.</p>

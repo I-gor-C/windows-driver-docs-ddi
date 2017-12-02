@@ -7,7 +7,7 @@ old-location: netvista\wsk_buf.htm
 old-project: netvista
 ms.assetid: bef653d3-5de3-4af3-8c1f-cff55619e2e9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WSK_BUF, WSK_BUF, *PWSK_BUF
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct _WSK_BUF {
 ## -struct-fields
 <dl>
 
-### -field <b>Mdl</b>
+### -field Mdl
 
 <dd>
 <p>A pointer to a memory descriptor list (MDL). The MDL can be a single MDL or the first MDL in an
@@ -66,7 +66,7 @@ typedef struct _WSK_BUF {
      <b>Length</b> member is zero, this pointer can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>An offset to where the data starts in the MDL. If the 
@@ -76,7 +76,7 @@ typedef struct _WSK_BUF {
      <b>Offset</b> member is not used.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>When a WSK_BUF structure is used to describe a buffer of data to be sent over a socket, this
@@ -150,4 +150,4 @@ typedef struct _WSK_BUF {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_BUF structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_BUF structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

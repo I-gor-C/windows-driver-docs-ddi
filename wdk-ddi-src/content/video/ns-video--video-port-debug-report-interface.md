@@ -71,49 +71,49 @@ typedef struct _VIDEO_PORT_DEBUG_REPORT_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the interface returned by the video port driver. Currently, the only supported version is VIDEO_PORT_DEBUG_REPORT_INTERFACE_VERSION_1.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Pointer to a context that is provided by the video port driver.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>Pointer to an interface reference function that is implemented by the video port driver.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>Pointer to an interface dereference function that is implemented by the video port driver.</p>
 </dd>
 
-### -field <b>DbgReportCreate</b>
+### -field DbgReportCreate
 
 <dd>
 <p>Pointer to the video port driver's <a href="display.dbgreportcreate">DbgReportCreate</a> function. </p>
 </dd>
 
-### -field <b>DbgReportSecondaryData</b>
+### -field DbgReportSecondaryData
 
 <dd>
 <p>Pointer to the video port driver's <a href="display.dbgreportsecondarydata">DbgReportSecondaryData</a> function. </p>
 </dd>
 
-### -field <b>DbgReportComplete</b>
+### -field DbgReportComplete
 
 <dd>
 <p>Pointer to the video port driver's <a href="display.dbgreportcomplete">DbgReportComplete</a> function. </p>

@@ -61,26 +61,26 @@ typedef struct _DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>ValidPhysicalAdapterMask</b>
+### -field ValidPhysicalAdapterMask
 
 <dd>
 <p>A UINT value that specifies whether the driver provides a physical adapter mask. If this member is set, the driver provides a physical adapter mask in the <b>PhysicalAdapterMask</b> member of the <b>CrtcVsync</b> structure that is contained in the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-notify-interrupt-data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure. </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>HsyncFlipCompletion</b>
+### -field HsyncFlipCompletion
 
 <dd>
 <p>A UINT value that specifies whether the Hsync flip has been completed.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS contains that can hold a 32-bit value.</p>

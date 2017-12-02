@@ -62,49 +62,49 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="StorPowerActionNone"></a><a id="storpoweractionnone"></a><a id="STORPOWERACTIONNONE"></a><b>StorPowerActionNone</b>
+### -field StorPowerActionNone
 
 <dd>
 <p>No system shutdown is about to occur.</p>
 </dd>
 
-### -field <a id="StorPowerActionReserved"></a><a id="storpoweractionreserved"></a><a id="STORPOWERACTIONRESERVED"></a><b>StorPowerActionReserved</b>
+### -field StorPowerActionReserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <a id="StorPowerActionSleep"></a><a id="storpoweractionsleep"></a><a id="STORPOWERACTIONSLEEP"></a><b>StorPowerActionSleep</b>
+### -field StorPowerActionSleep
 
 <dd>
 <p>The system is entering standby.</p>
 </dd>
 
-### -field <a id="StorPowerActionHibernate"></a><a id="storpoweractionhibernate"></a><a id="STORPOWERACTIONHIBERNATE"></a><b>StorPowerActionHibernate</b>
+### -field StorPowerActionHibernate
 
 <dd>
 <p>The system is entering hibernation.</p>
 </dd>
 
-### -field <a id="StorPowerActionShutdown"></a><a id="storpoweractionshutdown"></a><a id="STORPOWERACTIONSHUTDOWN"></a><b>StorPowerActionShutdown</b>
+### -field StorPowerActionShutdown
 
 <dd>
 <p>The system is shutting down, but the type of shutdown is not known.</p>
 </dd>
 
-### -field <a id="StorPowerActionShutdownReset"></a><a id="storpoweractionshutdownreset"></a><a id="STORPOWERACTIONSHUTDOWNRESET"></a><b>StorPowerActionShutdownReset</b>
+### -field StorPowerActionShutdownReset
 
 <dd>
 <p>The system is shutting down and resetting.</p>
 </dd>
 
-### -field <a id="StorPowerActionShutdownOff"></a><a id="storpoweractionshutdownoff"></a><a id="STORPOWERACTIONSHUTDOWNOFF"></a><b>StorPowerActionShutdownOff</b>
+### -field StorPowerActionShutdownOff
 
 <dd>
 <p>The system is shutting down and powering off.</p>
 </dd>
 
-### -field <a id="StorPowerActionWarmEject"></a><a id="storpoweractionwarmeject"></a><a id="STORPOWERACTIONWARMEJECT"></a><b>StorPowerActionWarmEject</b>
+### -field StorPowerActionWarmEject
 
 <dd>
 <p>The system is preparing for ejection.</p>

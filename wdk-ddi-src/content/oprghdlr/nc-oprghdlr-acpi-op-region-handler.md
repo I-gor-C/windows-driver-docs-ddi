@@ -7,7 +7,7 @@ old-location: acpi\pacpi_op_region_handler.htm
 old-project: acpi
 ms.assetid: c3a5af59-c97c-42be-bc43-afa30ad710ec
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: RILGBATOKEN, RILGBATOKEN, *LPRILGBATOKEN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ NTSTATUS EXPORT AcpiOpRegionHandler(
 ## -parameters
 <dl>
 
-### -param <i>AccessType</i> 
+### -param AccessType 
 
 <dd>
 <p>Specifies one of the following access types.</p>
@@ -93,43 +93,43 @@ NTSTATUS EXPORT AcpiOpRegionHandler(
 <p> </p>
 </dd>
 
-### -param <i>OperationRegionObject</i> 
+### -param OperationRegionObject 
 
 <dd>
 <p>Specifies the operation region object returned by <a href="..\oprghdlr\nf-oprghdlr-registeropregionhandler.md">RegisterOpRegionHandler</a> for the operation region handler.</p>
 </dd>
 
-### -param <i>Address</i> 
+### -param Address 
 
 <dd>
 <p>Specifies a byte offset in the operation region memory buffer. Depending on the access type, data is transferred to or from this memory location. </p>
 </dd>
 
-### -param <i>Size</i> 
+### -param Size 
 
 <dd>
 <p>Specifies the number of bytes to access.</p>
 </dd>
 
-### -param <i>Data</i> 
+### -param Data 
 
 <dd>
 <p>Pointer to the data buffer supplied by the ACPI driver that is associated with the access. For a read access, bytes are transferred from the operation region memory buffer to the data buffer. For a write access, bytes are transferred from the data buffer to the operation region memory buffer.</p>
 </dd>
 
-### -param <i>Context</i> 
+### -param Context 
 
 <dd>
 <p>Pointer to the same operation region context that the function driver specified when it registered the operation region handler.</p>
 </dd>
 
-### -param <i>CompletionHandler</i> 
+### -param CompletionHandler 
 
 <dd>
 <p>Reserved for internal use.</p>
 </dd>
 
-### -param <i>CompletionContext</i> 
+### -param CompletionContext 
 
 <dd>
 <p>Reserved for internal use.</p>
@@ -199,4 +199,4 @@ NTSTATUS EXPORT AcpiOpRegionHandler(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [acpi\acpi]:%20ACPI_OP_REGION_HANDLER callback function%20 RELEASE:%20(11/16/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [acpi\acpi]:%20ACPI_OP_REGION_HANDLER callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

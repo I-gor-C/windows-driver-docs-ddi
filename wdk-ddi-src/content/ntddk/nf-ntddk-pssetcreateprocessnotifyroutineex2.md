@@ -56,19 +56,19 @@ NTSTATUS PsSetCreateProcessNotifyRoutineEx2(
 ## -parameters
 <dl>
 
-### -param <i> NotifyType</i> [in]
+### -param  NotifyType [in]
 
 <dd>
 <p>A <a href="..\ntddk\ne-ntddk--pscreateprocessnotifytype.md">PSCREATEPROCESSNOTIFYTYPE</a>-type value that indicates the type of process notification.</p>
 </dd>
 
-### -param <i>NotifyInformation</i> [in]
+### -param NotifyInformation [in]
 
 <dd>
 <p>The address of the notification information for the specified type of process notification. If <i>NotifyType</i> is <b>PsCreateProcessNotifySubsystems</b>, <i>NotifyInformation</i> is a  <a href="..\ntddk\nc-ntddk-pcreate-process-notify-routine-ex.md">PCREATE_PROCESS_NOTIFY_ROUTINE_EX</a> that specifies the entry point of the caller-supplied process-creation callback. </p>
 </dd>
 
-### -param <i>Remove</i> [in]
+### -param Remove [in]
 
 <dd>
 <p>A Boolean value that specifies whether <b>PsSetCreateProcessNotifyRoutineEx2</b> will add or remove a specified routine from the list of callback routines. If this parameter is <b>TRUE</b>, the specified routine is removed from the list of callback routines. If this parameter is <b>FALSE</b>, the specified routine is added to the list of callback routines. If <i>Remove</i> is <b>TRUE</b>, the system also waits for all in-flight callback routines to complete before returning.</p>

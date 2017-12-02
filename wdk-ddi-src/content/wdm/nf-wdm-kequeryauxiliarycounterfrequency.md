@@ -55,7 +55,7 @@ NTSTATUS KeQueryAuxiliaryCounterFrequency(
 ## -parameters
 <dl>
 
-### -param <i>AuxiliaryCounterFrequency</i> [out, optional]
+### -param AuxiliaryCounterFrequency [out, optional]
 
 <dd>
 <p>A pointer to a variable to which <b>KeQueryAuxiliaryCounterFrequency</b> writes the auxiliary counter frequency, in ticks per second. This parameter can be NULL.</p>

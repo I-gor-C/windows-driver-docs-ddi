@@ -7,7 +7,7 @@ old-location: ifsk\refs_smr_volume_gc_action.htm
 old-project: ifsk
 ms.assetid: 9A9D174A-0E9E-4B3A-BF91-3000128C58C7
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: VOLUME_READ_PLEX_INPUT, VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ typedef enum _REFS_SMR_VOLUME_GC_ACTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="SmrGcActionStart"></a><a id="smrgcactionstart"></a><a id="SMRGCACTIONSTART"></a><b>SmrGcActionStart</b>
+### -field SmrGcActionStart
 
 <dd>
 <p>Specifies to start garbage collection or resume from a previously paused garbage collection.  By default, garbage collection is off on Shingled Magnetic Recording (SMR) volumes.  Only users with admin rights can modify this setting.</p>
 </dd>
 
-### -field <a id="SmrGcActionStartFullSpeed"></a><a id="smrgcactionstartfullspeed"></a><a id="SMRGCACTIONSTARTFULLSPEED"></a><b>SmrGcActionStartFullSpeed</b>
+### -field SmrGcActionStartFullSpeed
 
 <dd>
 <p>Specifies to start or resume garbage collection at full speed.  Issuing Read/ Write I/O up to one SMR band size (256mb) at a time.</p>
 </dd>
 
-### -field <a id="SmrGcActionPause"></a><a id="smrgcactionpause"></a><a id="SMRGCACTIONPAUSE"></a><b>SmrGcActionPause</b>
+### -field SmrGcActionPause
 
 <dd>
 <p>Specifies to temporarily stop the garbage collection if it's in progress.  If the garbage collection is not in progress, there will be no operation.</p>
 </dd>
 
-### -field <a id="SmrGcActionStop"></a><a id="smrgcactionstop"></a><a id="SMRGCACTIONSTOP"></a><b>SmrGcActionStop</b>
+### -field SmrGcActionStop
 
 <dd>
 <p>Specifies to stop the garbage collection process and removes the ability to resume.  If garbage collection was paused previously, this will clear the ability to resume from the point of the pause.</p>
@@ -115,4 +115,4 @@ typedef enum _REFS_SMR_VOLUME_GC_ACTION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20REFS_SMR_VOLUME_GC_ACTION enumeration%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20REFS_SMR_VOLUME_GC_ACTION enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

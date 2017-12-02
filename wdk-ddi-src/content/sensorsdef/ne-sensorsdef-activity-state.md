@@ -7,7 +7,7 @@ old-location: sensors\activity_states.htm
 old-project: sensors
 ms.assetid: E602F16A-AFD8-4698-AC90-1686887FFEA6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,61 +64,61 @@ typedef enum _ACTIVITY_STATES {
 ## -enum-fields
 <dl>
 
-### -field <a id="ActivityState_Unknown"></a><a id="activitystate_unknown"></a><a id="ACTIVITYSTATE_UNKNOWN"></a><b>ActivityState_Unknown</b>
+### -field ActivityState_Unknown
 
 <dd>
 <p>The sensor cannot accurately determine the current activity.</p>
 </dd>
 
-### -field <a id="ActivityState_Stationary"></a><a id="activitystate_stationary"></a><a id="ACTIVITYSTATE_STATIONARY"></a><b>ActivityState_Stationary</b>
+### -field ActivityState_Stationary
 
 <dd>
 <p>Indicates that the sensor is currently stationary.</p>
 </dd>
 
-### -field <a id="ActivityState_Fidgeting"></a><a id="activitystate_fidgeting"></a><a id="ACTIVITYSTATE_FIDGETING"></a><b>ActivityState_Fidgeting</b>
+### -field ActivityState_Fidgeting
 
 <dd>
 <p>Describes the current activity as "fidgeting."</p>
 </dd>
 
-### -field <a id="ActivityState_Walking"></a><a id="activitystate_walking"></a><a id="ACTIVITYSTATE_WALKING"></a><b>ActivityState_Walking</b>
+### -field ActivityState_Walking
 
 <dd>
 <p>Describes the current activity as "walking."</p>
 </dd>
 
-### -field <a id="ActivityState_Running"></a><a id="activitystate_running"></a><a id="ACTIVITYSTATE_RUNNING"></a><b>ActivityState_Running</b>
+### -field ActivityState_Running
 
 <dd>
 <p>Describes the current activity as "running."</p>
 </dd>
 
-### -field <a id="ActivityState_InVehicle"></a><a id="activitystate_invehicle"></a><a id="ACTIVITYSTATE_INVEHICLE"></a><b>ActivityState_InVehicle</b>
+### -field ActivityState_InVehicle
 
 <dd>
 <p>Describes the current activity as "traveling in a vehicle."</p>
 </dd>
 
-### -field <a id="ActivityState_Biking"></a><a id="activitystate_biking"></a><a id="ACTIVITYSTATE_BIKING"></a><b>ActivityState_Biking</b>
+### -field ActivityState_Biking
 
 <dd>
 <p>Describes the current activity as "biking."</p>
 </dd>
 
-### -field <a id="ActivityState_Idle"></a><a id="activitystate_idle"></a><a id="ACTIVITYSTATE_IDLE"></a><b>ActivityState_Idle</b>
+### -field ActivityState_Idle
 
 <dd>
 <p>Describes the current activity as "idle."</p>
 </dd>
 
-### -field <a id="ActivityState_Max"></a><a id="activitystate_max"></a><a id="ACTIVITYSTATE_MAX"></a><b>ActivityState_Max</b>
+### -field ActivityState_Max
 
 <dd>
 <p>Indicates that the current activity state is generating maximum sensor values. In this scenario the sensor doesn't indicate what the activity is.</p>
 </dd>
 
-### -field <a id="ActivityState_Force_Dword"></a><a id="activitystate_force_dword"></a><a id="ACTIVITYSTATE_FORCE_DWORD"></a><b>ActivityState_Force_Dword</b>
+### -field ActivityState_Force_Dword
 
 <dd>
 <p>Used to force the ACTIVITY_STATE enum to a 32-bit data type (a DWORD).</p>
@@ -150,4 +150,4 @@ typedef enum _ACTIVITY_STATES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20ACTIVITY_STATE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20ACTIVITY_STATE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

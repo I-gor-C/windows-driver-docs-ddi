@@ -7,7 +7,7 @@ old-location: ifsk\wim_provider_update_overlay_input.htm
 old-project: ifsk
 ms.assetid: FA100AE0-4725-426F-B57B-C32AC9B75477
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: WIM_PROVIDER_UPDATE_OVERLAY_INPUT, WIM_PROVIDER_UPDATE_OVERLAY_INPUT, *PWIM_PROVIDER_UPDATE_OVERLAY_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef struct _WIM_PROVIDER_ADD_OVERLAY_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>DataSourceId</b>
+### -field DataSourceId
 
 <dd>
 <p>An identifier value for the WIM file data source to update.</p>
 </dd>
 
-### -field <b>WimFileNameOffset</b>
+### -field WimFileNameOffset
 
 <dd>
 <p>The offset, in bytes, from the beginning of this structure of the file name for the WIM file to add as a backing source. The file name is a string of <b>WCHAR</b> character values.</p>
 </dd>
 
-### -field <b>WimFileNameLength</b>
+### -field WimFileNameLength
 
 <dd>
 <p>The length, in bytes, of the file name at found at  <b>WimFileNameOffset</b>.</p>
@@ -119,4 +119,4 @@ typedef struct _WIM_PROVIDER_ADD_OVERLAY_INPUT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20WIM_PROVIDER_UPDATE_OVERLAY_INPUT structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20WIM_PROVIDER_UPDATE_OVERLAY_INPUT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

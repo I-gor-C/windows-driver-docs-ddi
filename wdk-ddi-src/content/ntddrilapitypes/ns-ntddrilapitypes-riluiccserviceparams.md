@@ -7,7 +7,7 @@ old-location: netvista\riluiccserviceparams.htm
 old-project: netvista
 ms.assetid: 0f43b2be-d371-42d8-825b-56362de05c5e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS, *LPRILUICCSERVICEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _RILUICCSERVICEPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>service</b>
+### -field service
 
 <dd></dd>
 
-### -field <b>fHasLockVerification</b>
+### -field fHasLockVerification
 
 <dd></dd>
 
-### -field <b>lockCredential</b>
+### -field lockCredential
 
 <dd></dd>
 
-### -field <b>fEnable</b>
+### -field fEnable
 
 <dd></dd>
 </dl>

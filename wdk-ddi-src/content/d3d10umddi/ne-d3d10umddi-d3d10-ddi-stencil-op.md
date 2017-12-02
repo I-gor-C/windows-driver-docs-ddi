@@ -61,49 +61,49 @@ typedef enum D3D10_DDI_STENCIL_OP {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D10_DDI_STENCIL_OP_KEEP"></a><a id="d3d10_ddi_stencil_op_keep"></a><b>D3D10_DDI_STENCIL_OP_KEEP</b>
+### -field D3D10_DDI_STENCIL_OP_KEEP
 
 <dd>
 <p>Do not update the entry in the stencil buffer. D3D10_DDI_STENCIL_OP_KEEP is the default value.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_STENCIL_OP_ZERO"></a><a id="d3d10_ddi_stencil_op_zero"></a><b>D3D10_DDI_STENCIL_OP_ZERO</b>
+### -field D3D10_DDI_STENCIL_OP_ZERO
 
 <dd>
 <p>Set the stencil-buffer entry to 0.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_STENCIL_OP_REPLACE"></a><a id="d3d10_ddi_stencil_op_replace"></a><b>D3D10_DDI_STENCIL_OP_REPLACE</b>
+### -field D3D10_DDI_STENCIL_OP_REPLACE
 
 <dd>
 <p>Replace the stencil-buffer entry with a reference value.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_STENCIL_OP_INCR_SAT"></a><a id="d3d10_ddi_stencil_op_incr_sat"></a><b>D3D10_DDI_STENCIL_OP_INCR_SAT</b>
+### -field D3D10_DDI_STENCIL_OP_INCR_SAT
 
 <dd>
 <p>Increment the stencil-buffer entry, clamping to the maximum value.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_STENCIL_OP_DECR_SAT"></a><a id="d3d10_ddi_stencil_op_decr_sat"></a><b>D3D10_DDI_STENCIL_OP_DECR_SAT</b>
+### -field D3D10_DDI_STENCIL_OP_DECR_SAT
 
 <dd>
 <p>Decrement the stencil-buffer entry, clamping to zero.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_STENCIL_OP_INVERT"></a><a id="d3d10_ddi_stencil_op_invert"></a><b>D3D10_DDI_STENCIL_OP_INVERT</b>
+### -field D3D10_DDI_STENCIL_OP_INVERT
 
 <dd>
 <p>Invert the bits in the stencil-buffer entry.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_STENCIL_OP_INCR"></a><a id="d3d10_ddi_stencil_op_incr"></a><b>D3D10_DDI_STENCIL_OP_INCR</b>
+### -field D3D10_DDI_STENCIL_OP_INCR
 
 <dd>
 <p>Increment the stencil-buffer entry, wrapping to zero if the new value exceeds the maximum value.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_STENCIL_OP_DECR"></a><a id="d3d10_ddi_stencil_op_decr"></a><b>D3D10_DDI_STENCIL_OP_DECR</b>
+### -field D3D10_DDI_STENCIL_OP_DECR
 
 <dd>
 <p>Decrement the stencil-buffer entry, wrapping to the maximum value if the new value is less than zero.</p>

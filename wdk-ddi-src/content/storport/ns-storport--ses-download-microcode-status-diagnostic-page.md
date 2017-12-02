@@ -60,33 +60,33 @@ typedef struct _SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE {
 ## -struct-fields
 <dl>
 
-### -field <b>PageCode</b>
+### -field PageCode
 
 <dd>
 <p>Indicates the diagnostic page being sent or requested. . The value of this is 0x0E.</p>
 </dd>
 
-### -field <b>NumberOfSecondarySubEnclosures</b>
+### -field NumberOfSecondarySubEnclosures
 
 <dd>
 <p>Indicates the number of download microcode status
 descriptors in <i>Descriptors</i>, not including the primary <a href="storage._ses_download_microcode_status_descriptor">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>. This value shall
-be set to the same value as the <i>NumberOfSecondarySubEnclosures</i> field in the <a href="..\minitape\ns-minitape--ses-configuration-diagnostic-page.md">SES_CONFIGURATION_DIAGNOSTIC_PAGE</a> structure.</p>
+be set to the same value as the <i>NumberOfSecondarySubEnclosures</i> field in the <a href="..\storport\ns-storport--ses-configuration-diagnostic-page.md">SES_CONFIGURATION_DIAGNOSTIC_PAGE</a> structure.</p>
 </dd>
 
-### -field <b>PageLength</b>
+### -field PageLength
 
 <dd>
 <p>Indicates the number of bytes that follow in the diagnostic page.</p>
 </dd>
 
-### -field <b>GenerationCode</b>
+### -field GenerationCode
 
 <dd>
 <p>Indicates the value of the generation code </p>
 </dd>
 
-### -field <b>Descriptors</b>
+### -field Descriptors
 
 <dd>
 <p>Contains a <a href="storage._ses_download_microcode_status_descriptor">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a> for each

@@ -54,7 +54,7 @@ VOID AtaPortBusChangeDetected(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> 
+### -param ChannelExtension 
 
 <dd>
 <p>A pointer to the channel extension. </p>

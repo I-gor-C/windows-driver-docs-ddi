@@ -7,7 +7,7 @@ old-location: wdf\write_port_buffer_uchar.htm
 old-project: wdf
 ms.assetid: E0E0BD93-6A5B-4D60-B08C-8862D9F2670D
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_PORT_BUFFER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,26 +60,26 @@ void WRITE_PORT_BUFFER_UCHAR(
 ## -parameters
 <dl>
 
-### -param <i>pDevice</i> [in]
+### -param pDevice [in]
 
 <dd>
 <p>Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.</p>
 </dd>
 
-### -param <i>Port</i> [in]
+### -param Port [in]
 
 <dd>
 <p>A pointer to the port, which must be a mapped memory range in I/O space.
 </p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to a buffer from which an array of UCHAR values is to be written.</p>
 </dd>
 
-### -param <i>Count </i> [in]
+### -param Count  [in]
 
 <dd>
 <p>Specifies the number of bytes to be written to the buffer.</p>

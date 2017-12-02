@@ -59,37 +59,37 @@ typedef struct D3D10DDI_MIPINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>TexelWidth</b>
+### -field TexelWidth
 
 <dd>
 <p>[in] The width, in texels, of the surface or volume, or the length, in texels, of the linear resource.</p>
 </dd>
 
-### -field <b>TexelHeight</b>
+### -field TexelHeight
 
 <dd>
 <p>[in] The height, in texels, of the surface or volume.</p>
 </dd>
 
-### -field <b>TexelDepth</b>
+### -field TexelDepth
 
 <dd>
 <p>[in] The depth, in texels, of the volume.</p>
 </dd>
 
-### -field <b>PhysicalWidth</b>
+### -field PhysicalWidth
 
 <dd>
 <p>[in] The width, in pixels, of the surface or volume, or the length, in pixels, of the linear resource.</p>
 </dd>
 
-### -field <b>PhysicalHeight</b>
+### -field PhysicalHeight
 
 <dd>
 <p>[in] The height, in pixels, of the surface or volume.</p>
 </dd>
 
-### -field <b>PhysicalDepth</b>
+### -field PhysicalDepth
 
 <dd>
 <p>[in] The depth, in pixels, of the volume.</p>

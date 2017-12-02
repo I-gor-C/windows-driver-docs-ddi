@@ -56,19 +56,19 @@ void KsFilterRegisterPowerCallbacks(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure for which to register power callbacks. In order to receive power notification messages, <i>Filter</i> must be filter-centric.</p>
 </dd>
 
-### -param <i>Sleep</i> [in, optional]
+### -param Sleep [in, optional]
 
 <dd>
 <p>A pointer to a function that handles sleep requests for the device. If <b>NULL</b>, no sleep callback is registered. For more information, see the Remarks section below.</p>
 </dd>
 
-### -param <i>Wake</i> [in, optional]
+### -param Wake [in, optional]
 
 <dd>
 <p>A pointer to a function that handles wake requests for the device. If <b>NULL</b>, no wake callback is specified. For more information, see the Remarks section below.</p>
@@ -85,7 +85,7 @@ void KsFilterRegisterPowerCallbacks(
 
 <p>For information about device power states, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543162">Device Power States</a>. </p>
 
-<p>Also see <a href="NULL">Initializing an AVStream Minidriver</a> and <a href="NULL">Filter-Centric Processing</a>.</p>
+<p>Also see <a href="https://msdn.microsoft.com/666d6efb-93ec-43f3-87c5-ea1a3983bfd0">Initializing an AVStream Minidriver</a> and <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>.</p>
 
 ## -requirements
 <table>

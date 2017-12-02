@@ -56,19 +56,19 @@ NTSTATUS RtlCharToInteger(
 ## -parameters
 <dl>
 
-### -param <i>String</i> [in]
+### -param String [in]
 
 <dd>
 <p>Pointer to a null-terminated, single-byte character string. </p>
 </dd>
 
-### -param <i>Base</i> [in, optional]
+### -param Base [in, optional]
 
 <dd>
 <p>Specifies decimal, binary, octal, or hexadecimal base. If this parameter is not given, the routine will look for 0x, 0o, and 0b prefixes in the input string to determine if the base should be decimal (default), binary, octal, or hexadecimal.</p>
 </dd>
 
-### -param <i>Value</i> [out]
+### -param Value [out]
 
 <dd>
 <p>Pointer to a location to which the converted value is returned. </p>

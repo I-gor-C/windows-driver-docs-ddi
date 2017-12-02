@@ -58,7 +58,7 @@ typedef struct IDDCX_TARGET_MODE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -66,14 +66,14 @@ typedef struct IDDCX_TARGET_MODE {
                  </p>
 </dd>
 
-### -field <b>TargetVideoSignalInfo</b>
+### -field TargetVideoSignalInfo
 
 <dd>
 <p>The details of the target mode signal. 
                  </p>
 </dd>
 
-### -field <b>RequiredBandwidth</b>
+### -field RequiredBandwidth
 
 <dd>
 <p>The display pipeline bandwidth required for this mode.

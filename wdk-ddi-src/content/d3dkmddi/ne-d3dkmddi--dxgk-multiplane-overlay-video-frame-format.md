@@ -56,19 +56,19 @@ typedef enum _DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_PROGRESSIVE"></a><a id="dxgk_multiplane_overlay_video_frame_format_progressive"></a><b>DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_PROGRESSIVE</b>
+### -field DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_PROGRESSIVE
 
 <dd>
 <p>Progressive scan format.</p>
 </dd>
 
-### -field <a id="DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST"></a><a id="dxgk_multiplane_overlay_video_frame_format_interlaced_top_field_first"></a><b>DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST</b>
+### -field DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>
 </dd>
 
-### -field <a id="DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST"></a><a id="dxgk_multiplane_overlay_video_frame_format_interlaced_bottom_field_first"></a><b>DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST</b>
+### -field DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>

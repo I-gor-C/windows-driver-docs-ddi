@@ -58,32 +58,32 @@ typedef enum _DXVA_DestinationFlags {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVA_DestinationFlagMask"></a><a id="dxva_destinationflagmask"></a><a id="DXVA_DESTINATIONFLAGMASK"></a><b>DXVA_DestinationFlagMask</b>
+### -field DXVA_DestinationFlagMask
 
 <dd>
 <p>Specifies the destination-flag mask, which consists of the first 4 bits of a DWORD.</p>
 </dd>
 
-### -field <a id="DXVA_DestinationFlag_Background_Changed"></a><a id="dxva_destinationflag_background_changed"></a><a id="DXVA_DESTINATIONFLAG_BACKGROUND_CHANGED"></a><b>DXVA_DestinationFlag_Background_Changed</b>
+### -field DXVA_DestinationFlag_Background_Changed
 
 <dd>
 <p>Indicates that the background color of the destination surface changed. </p>
 </dd>
 
-### -field <a id="DXVA_DestinationFlag_TargetRect_Changed"></a><a id="dxva_destinationflag_targetrect_changed"></a><a id="DXVA_DESTINATIONFLAG_TARGETRECT_CHANGED"></a><b>DXVA_DestinationFlag_TargetRect_Changed</b>
+### -field DXVA_DestinationFlag_TargetRect_Changed
 
 <dd>
 <p>Indicates that the target rectangle of the destination surface changed. </p>
 </dd>
 
-### -field <a id="DXVA_DestinationFlag_ColorData_Changed"></a><a id="dxva_destinationflag_colordata_changed"></a><a id="DXVA_DESTINATIONFLAG_COLORDATA_CHANGED"></a><b>DXVA_DestinationFlag_ColorData_Changed</b>
+### -field DXVA_DestinationFlag_ColorData_Changed
 
 <dd>
 <p>Indicates that format information for the destination surface changed. 
 </p>
 </dd>
 
-### -field <a id="DXVA_DestinationFlag_Alpha_Changed"></a><a id="dxva_destinationflag_alpha_changed"></a><a id="DXVA_DESTINATIONFLAG_ALPHA_CHANGED"></a><b>DXVA_DestinationFlag_Alpha_Changed</b>
+### -field DXVA_DestinationFlag_Alpha_Changed
 
 <dd>
 <p>Indicates that the planar alpha value for the destination surface changed.</p>

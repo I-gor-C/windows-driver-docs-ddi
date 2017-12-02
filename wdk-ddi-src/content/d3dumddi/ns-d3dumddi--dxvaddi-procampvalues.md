@@ -57,25 +57,25 @@ typedef struct _DXVADDI_PROCAMPVALUES {
 ## -struct-fields
 <dl>
 
-### -field <b>Brightness</b>
+### -field Brightness
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the brightness of the output image, as it is written to the destination surface.</p>
 </dd>
 
-### -field <b>Contrast</b>
+### -field Contrast
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the contrast of the output image, as it is written to the destination surface.</p>
 </dd>
 
-### -field <b>Hue</b>
+### -field Hue
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the hue of the output image, as it is written to the destination surface.</p>
 </dd>
 
-### -field <b>Saturation</b>
+### -field Saturation
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the saturation of the output image, as it is written to the destination surface.</p>

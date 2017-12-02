@@ -58,31 +58,31 @@ typedef struct _BTHX_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>MaxAclTransferInSize</b>
+### -field MaxAclTransferInSize
 
 <dd>
 <p>The maximum size, in bytes, of the ACL packets the transport layer can accept.</p>
 </dd>
 
-### -field <b>ScoSupport</b>
+### -field ScoSupport
 
 <dd>
 <p>The type of SCO supported. This must be set to <b>ScoSupportHCIBypass</b>.</p>
 </dd>
 
-### -field <b>MaxScoChannels</b>
+### -field MaxScoChannels
 
 <dd>
 <p>The maximum supported number of SCO channels. This must be set to 1.</p>
 </dd>
 
-### -field <b>IsDeviceIdleCapable</b>
+### -field IsDeviceIdleCapable
 
 <dd>
 <p>Whether the device supports idle/sleep power state. TRUE if the device can support idle (in low duty cycle state), else FALSE.</p>
 </dd>
 
-### -field <b>IsDeviceWakeCapable</b>
+### -field IsDeviceWakeCapable
 
 <dd>
 <p>Whether the device supports remote wake. TRUE if the device supports waking the system from sleep, else FALSE.</p>

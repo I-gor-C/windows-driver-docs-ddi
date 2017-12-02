@@ -67,85 +67,85 @@ typedef enum _BUS_DATA_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="ConfigurationSpaceUndefined"></a><a id="configurationspaceundefined"></a><a id="CONFIGURATIONSPACEUNDEFINED"></a><b>ConfigurationSpaceUndefined</b>
+### -field ConfigurationSpaceUndefined
 
 <dd>
 <p>Indicates that the type of bus configuration space is undefined.</p>
 </dd>
 
-### -field <a id="Cmos"></a><a id="cmos"></a><a id="CMOS"></a><b>Cmos</b>
+### -field Cmos
 
 <dd>
 <p>Indicates CMOS data.</p>
 </dd>
 
-### -field <a id="EisaConfiguration"></a><a id="eisaconfiguration"></a><a id="EISACONFIGURATION"></a><b>EisaConfiguration</b>
+### -field EisaConfiguration
 
 <dd>
 <p>Indicates an EISA bus configuration space.</p>
 </dd>
 
-### -field <a id="Pos"></a><a id="pos"></a><a id="POS"></a><b>Pos</b>
+### -field Pos
 
 <dd>
 <p>For internal use only.</p>
 </dd>
 
-### -field <a id="CbusConfiguration"></a><a id="cbusconfiguration"></a><a id="CBUSCONFIGURATION"></a><b>CbusConfiguration</b>
+### -field CbusConfiguration
 
 <dd>
 <p>Indicates Cbus configuration space.</p>
 </dd>
 
-### -field <a id="PCIConfiguration"></a><a id="pciconfiguration"></a><a id="PCICONFIGURATION"></a><b>PCIConfiguration</b>
+### -field PCIConfiguration
 
 <dd>
 <p>Indicates PCI configuration space.</p>
 </dd>
 
-### -field <a id="VMEConfiguration"></a><a id="vmeconfiguration"></a><a id="VMECONFIGURATION"></a><b>VMEConfiguration</b>
+### -field VMEConfiguration
 
 <dd>
 <p>Indicates VME configuration space.</p>
 </dd>
 
-### -field <a id="NuBusConfiguration"></a><a id="nubusconfiguration"></a><a id="NUBUSCONFIGURATION"></a><b>NuBusConfiguration</b>
+### -field NuBusConfiguration
 
 <dd>
 <p>Indicates NuBus configuration space.</p>
 </dd>
 
-### -field <a id="PCMCIAConfiguration"></a><a id="pcmciaconfiguration"></a><a id="PCMCIACONFIGURATION"></a><b>PCMCIAConfiguration</b>
+### -field PCMCIAConfiguration
 
 <dd>
 <p>Indicates PCMCIA configuration space.</p>
 </dd>
 
-### -field <a id="MPIConfiguration"></a><a id="mpiconfiguration"></a><a id="MPICONFIGURATION"></a><b>MPIConfiguration</b>
+### -field MPIConfiguration
 
 <dd>
 <p>Indicates MPI configuration space.</p>
 </dd>
 
-### -field <a id="MPSAConfiguration"></a><a id="mpsaconfiguration"></a><a id="MPSACONFIGURATION"></a><b>MPSAConfiguration</b>
+### -field MPSAConfiguration
 
 <dd>
 <p>Indicates MPSA configuration space.</p>
 </dd>
 
-### -field <a id="PNPISAConfiguration"></a><a id="pnpisaconfiguration"></a><a id="PNPISACONFIGURATION"></a><b>PNPISAConfiguration</b>
+### -field PNPISAConfiguration
 
 <dd>
 <p>Indicates PNPISA configuration space.</p>
 </dd>
 
-### -field <a id="SgiInternalConfiguration"></a><a id="sgiinternalconfiguration"></a><a id="SGIINTERNALCONFIGURATION"></a><b>SgiInternalConfiguration</b>
+### -field SgiInternalConfiguration
 
 <dd>
 <p>Indicates SGI internal bus configuration space.</p>
 </dd>
 
-### -field <a id="MaximumBusDataType"></a><a id="maximumbusdatatype"></a><a id="MAXIMUMBUSDATATYPE"></a><b>MaximumBusDataType</b>
+### -field MaximumBusDataType
 
 <dd>
 <p>Indicates the upper limit of the bus configuration space types.</p>

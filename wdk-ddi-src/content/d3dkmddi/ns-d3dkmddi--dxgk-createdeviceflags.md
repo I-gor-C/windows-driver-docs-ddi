@@ -62,14 +62,14 @@ typedef struct _DXGK_CREATEDEVICEFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>SystemDevice</b>
+### -field SystemDevice
 
 <dd>
 <p>A UINT value that specifies whether devices that the driver's <a href="display.dxgkddicreatedevice">DxgkDdiCreateDevice</a> function creates are system devices.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>GdiDevice</b>
+### -field GdiDevice
 
 <dd>
 <p>A UINT value that specifies whether the devices that the driver's <a href="display.dxgkddicreatedevice">DxgkDdiCreateDevice</a> function creates are GDI-specific devices.</p>
@@ -77,20 +77,20 @@ typedef struct _DXGK_CREATEDEVICEFLAGS {
 <p>This member is available beginning with Windows 7.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting bits 3 through 31 (0x7FFFFFFC) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>DXGK_DEVICE_RESERVED0</b>
+### -field DXGK_DEVICE_RESERVED0
 
 <dd>
 <p>Supported beginning with Windows 8.</p>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the last bit (0x80000000) of the 32-bit <b>Value</b> member to zero.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that DXGK_CREATEDEVICEFLAGS contains that can hold a 32-bit value that identifies how to create devices.</p>

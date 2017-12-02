@@ -58,31 +58,31 @@ NTSTATUS KsProperty(
 ## -parameters
 <dl>
 
-### -param <i>Property</i> [in]
+### -param Property [in]
 
 <dd>
 <p>Pointer to a structure that describes a property and the request type of the property request. This structure must be either a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> or a structure that contains a <b>KSPROPERTY</b> structure as its first member. An example of a structure that can be pointed to by this member is the <a href="stream.ksproperty_videoprocamp_s">KSPROPERTY_VIDEOPROCAMP_S</a> structure.</p>
 </dd>
 
-### -param <i>PropertyLength</i> [in]
+### -param PropertyLength [in]
 
 <dd>
 <p>Specifies size, in bytes, of the buffer at <i>Property</i>.</p>
 </dd>
 
-### -param <i>PropertyData</i> [in, out]
+### -param PropertyData [in, out]
 
 <dd>
 <p>Pointer to a buffer that contains data for a KSPROPERTY_TYPE_SET, KSPROPERTY_TYPE_UNSERIALIZESET, or KSPROPERTY_TYPE_UNSERIALIZERAW operation, or buffer space that receives data for all other operations.</p>
 </dd>
 
-### -param <i>DataLength</i> [in]
+### -param DataLength [in]
 
 <dd>
 <p>Specifies size, in bytes, of the buffer at <i>PropertyData</i>.</p>
 </dd>
 
-### -param <i>BytesReturned</i> [out]
+### -param BytesReturned [out]
 
 <dd>
 <p>Pointer to a variable that receives the size, in bytes, of the data that <b>KsProperty</b> stores in the buffer at <i>PropertyData</i>. If no data is stored, the size is zero.</p>

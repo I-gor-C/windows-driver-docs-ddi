@@ -54,7 +54,7 @@ PHYSICAL_ADDRESS MmGetPhysicalAddress(
 ## -parameters
 <dl>
 
-### -param <i>BaseAddress</i> [in]
+### -param BaseAddress [in]
 
 <dd>
 <p>Pointer to the virtual address for which to return the physical address. </p>

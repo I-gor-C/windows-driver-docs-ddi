@@ -58,31 +58,31 @@ typedef struct tagKS_AMVPDIMINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>dwFieldWidth</b>
+### -field dwFieldWidth
 
 <dd>
 <p>Specifies the field width.</p>
 </dd>
 
-### -field <b>dwFieldHeight</b>
+### -field dwFieldHeight
 
 <dd>
 <p>Specifies the field height.</p>
 </dd>
 
-### -field <b>dwVBIWidth</b>
+### -field dwVBIWidth
 
 <dd>
 <p>Specifies the VBI data width.</p>
 </dd>
 
-### -field <b>dwVBIHeight</b>
+### -field dwVBIHeight
 
 <dd>
 <p>Specifies the VBI data height.</p>
 </dd>
 
-### -field <b>rcValidRegion</b>
+### -field rcValidRegion
 
 <dd>
 <p>Describes a valid rectangle for data cropping.</p>

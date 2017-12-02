@@ -59,37 +59,37 @@ typedef struct _FEATURE_DATA_RANDOM_READABLE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>LogicalBlockSize</b>
+### -field LogicalBlockSize
 
 <dd>
 <p>Indicates the number of bytes per logical block. The bytes of this value are arranged in big-endian order. <b>LogicalBlockSize</b>[0] contains the most significant byte, and <b>LogicalBlockSize</b>[3] contains the least significant byte.</p>
 </dd>
 
-### -field <b>Blocking</b>
+### -field Blocking
 
 <dd>
 <p>Indicates the number of logical blocks per device-readable unit. The bytes of this value are arranged in big-endian order. <b>Blocking</b>[0] contains the most significant byte, and <b>Blocking</b>[1] contains the least significant byte. </p>
 </dd>
 
-### -field <b>ErrorRecoveryPagePresent</b>
+### -field ErrorRecoveryPagePresent
 
 <dd>
 <p>Indicates, when set to zero, that the read/write error recovery mode page might not be present. When set to 1, it indicates that the error recovery page is present. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. </p>

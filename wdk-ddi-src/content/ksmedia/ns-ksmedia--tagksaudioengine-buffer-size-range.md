@@ -55,13 +55,13 @@ typedef struct _KSAUDIO_BUFFER_SIZE_RANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>MaxBufferBytes</b>
+### -field MaxBufferBytes
 
 <dd>
 <p>Specifies the maximun available DMA buffer size in bytes that the hardware Audio Engine can support, at the instance when it is called.  The capability and availability  of the DMA engine and the internal DSP buffer are all taken into consideration.</p>
 </dd>
 
-### -field <b>MinBufferBytes</b>
+### -field MinBufferBytes
 
 <dd>
 <p>Specifies the minimum buffer size in bytes that the hardware Audio Engine can support, at the instance when it is called. The minimum size is calculated to be the minimum size of buffer that will not cause frequent audio glitching.</p>

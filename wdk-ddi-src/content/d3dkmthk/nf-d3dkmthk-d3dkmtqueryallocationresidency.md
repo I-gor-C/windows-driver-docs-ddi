@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTQueryAllocationResidency(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-queryallocationresidency.md">D3DKMT_QUERYALLOCATIONRESIDENCY</a> structure that contains information for retrieving the residency status of a resource or list of allocations.</p>

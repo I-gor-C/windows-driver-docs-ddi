@@ -7,7 +7,7 @@ old-location: sd\sffdisk_dpcmd.htm
 old-project: SD
 ms.assetid: 55a034e7-68fa-4f4a-b7c6-da215405375a
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/30/2017
 ms.keywords: SERCX_BUFFER_DESCRIPTOR,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="SFFDISK_DP_IS_SUPPORTED"></a><a id="sffdisk_dp_is_supported"></a><b>SFFDISK_DP_IS_SUPPORTED</b>
+### -field SFFDISK_DP_IS_SUPPORTED
 
 <dd>
 <p>The operation requests verification from the card that it supports command class 7.</p>
 </dd>
 
-### -field <a id="SFFDISK_DP_SET_PASSWORD"></a><a id="sffdisk_dp_set_password"></a><b>SFFDISK_DP_SET_PASSWORD</b>
+### -field SFFDISK_DP_SET_PASSWORD
 
 <dd>
 <p>The operation sets the password.</p>
 </dd>
 
-### -field <a id="SFFDISK_DP_LOCK_DEVICE"></a><a id="sffdisk_dp_lock_device"></a><b>SFFDISK_DP_LOCK_DEVICE</b>
+### -field SFFDISK_DP_LOCK_DEVICE
 
 <dd>
 <p>The operation locks the device.</p>
 </dd>
 
-### -field <a id="SFFDISK_DP_UNLOCK_DEVICE"></a><a id="sffdisk_dp_unlock_device"></a><b>SFFDISK_DP_UNLOCK_DEVICE</b>
+### -field SFFDISK_DP_UNLOCK_DEVICE
 
 <dd>
 <p>The operation unlocks the device.</p>
 </dd>
 
-### -field <a id="SFFDISK_DP_RESET_DEVICE_ALL_DATA"></a><a id="sffdisk_dp_reset_device_all_data"></a><b>SFFDISK_DP_RESET_DEVICE_ALL_DATA</b>
+### -field SFFDISK_DP_RESET_DEVICE_ALL_DATA
 
 <dd>
 <p>The operation resets the device.</p>
@@ -115,4 +115,4 @@ typedef enum  {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SFFDISK_DPCMD enumeration%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SFFDISK_DPCMD enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

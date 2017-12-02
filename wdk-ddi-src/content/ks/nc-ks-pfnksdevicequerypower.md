@@ -63,43 +63,43 @@ NTSTATUS AVStrMiniDeviceQueryPower(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>Pointer to the <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> structure that dispatched the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a>.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a> issued by <i>Device</i>.</p>
 </dd>
 
-### -param <i>DeviceTo</i> [in]
+### -param DeviceTo [in]
 
 <dd>
 <p>The power state requested by the issuer of <i>Irp</i>.</p>
 </dd>
 
-### -param <i>DeviceFrom</i> [in]
+### -param DeviceFrom [in]
 
 <dd>
 <p>The current device power state.</p>
 </dd>
 
-### -param <i>SystemTo</i> [in]
+### -param SystemTo [in]
 
 <dd>
 <p>System state to transition to, specified when a system power state transition is being queried. This value is unspecified if the call is due to a device power state change query.</p>
 </dd>
 
-### -param <i>SystemFrom</i> [in]
+### -param SystemFrom [in]
 
 <dd>
 <p>Current system state, specified when a system power state transition is being queried. This value is unspecified if the call is due to a device power state change query.</p>
 </dd>
 
-### -param <i>Action</i> [in]
+### -param Action [in]
 
 <dd>
 <p>Specifies additional information about the requested transition. Possible values are enumerators of the POWER_ACTION type.</p>

@@ -54,7 +54,7 @@ NTSTATUS GetPacketCount(
 ## -parameters
 <dl>
 
-### -param <i>pPacketCount </i> [out]
+### -param pPacketCount  [out]
 
 <dd>
 <p>pPacketCount returns the number of packets completely transferred from the WaveRT buffer into hardware. 

@@ -58,25 +58,25 @@ NTSTATUS RtlSetDaclSecurityDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>SecurityDescriptor</i> [in, out]
+### -param SecurityDescriptor [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> structure. This structure is the security descriptor to which the DACL is to be applied.</p>
 </dd>
 
-### -param <i>DaclPresent</i> [in]
+### -param DaclPresent [in]
 
 <dd>
 <p>Whether to indicate that a DACL is present in the security descriptor. If this parameter is <b>FALSE</b>, <b>RtlSetDaclSecurityDescriptor</b> sets the SE_DACL_PRESENT control flag in the security descriptor to <b>FALSE</b>. In this case, the remaining optional parameters (<i>Dacl</i> and <i>DaclDefaulted</i>) are ignored. If <i>DaclPresent</i> is <b>TRUE</b>, the SE_DACL_PRESENT flag in the security descriptor is set to <b>TRUE</b> and the remaining optional parameters are <u>not</u> ignored. For more information about the SE_DACL_PRESENT flag, see <a href="ifsk.security_descriptor_control">SECURITY_DESCRIPTOR_CONTROL</a>.</p>
 </dd>
 
-### -param <i>Dacl</i> [in, optional]
+### -param Dacl [in, optional]
 
 <dd>
 <p>A pointer to the DACL for the security descriptor. If this parameter is <b>NULL</b>, the DACL pointer in the security descriptor is set to <b>NULL</b>. A <b>NULL</b> DACL pointer unconditionally grants all access to an object and is not the same as an empty DACL. An empty DACL denies all access to an object. If <i>Dacl</i> is non-<b>NULL</b>, the <a href="..\ntifs\ns-ntifs--acl.md">ACL</a> structure supplied by the caller is referenced by, but not copied into, the security descriptor. The caller can allocate the <b>ACL</b> structure from paged system memory, and can call the <a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a> routine to initialize the structure.</p>
 </dd>
 
-### -param <i>DaclDefaulted</i> [in, optional]
+### -param DaclDefaulted [in, optional]
 
 <dd>
 <p>Whether the DACL was supplied by some default mechanism, or was explicitly specified by the caller. If this parameter is <b>TRUE</b>, the DACL was supplied by a default mechanism. If <i>DaclDefaulted</i> is <b>FALSE</b>, the caller explicitly specified the DACL. <b>RtlSetDaclSecurityDescriptor</b> copies the value specified for this parameter to the SE_DACL_DEFAULTED control flag in the security descriptor. For more information about the SE_DACL_DEFAULTED flag, see <a href="ifsk.security_descriptor_control">SECURITY_DESCRIPTOR_CONTROL</a>.</p>

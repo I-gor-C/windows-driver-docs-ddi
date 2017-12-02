@@ -56,19 +56,19 @@ typedef struct _BDA_PID_MAP {
 ## -struct-fields
 <dl>
 
-### -field <b>MediaSampleContent</b>
+### -field MediaSampleContent
 
 <dd>
 <p>MEDIA_SAMPLE_CONTENT enumerated type value that specifies the type of media content that packets contain. </p>
 </dd>
 
-### -field <b>ulcPIDs</b>
+### -field ulcPIDs
 
 <dd>
 <p>Number of PIDs in the <b>aulPIDs</b> array. </p>
 </dd>
 
-### -field <b>aulPIDs</b>
+### -field aulPIDs
 
 <dd>
 <p>Array of PIDs that identify packets to map to the output of a PID filter. </p>

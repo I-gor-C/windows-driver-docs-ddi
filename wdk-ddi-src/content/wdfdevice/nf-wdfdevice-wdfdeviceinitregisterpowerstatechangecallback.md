@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitregisterpowerstatechangecallback.htm
 old-project: wdf
 ms.assetid: f3c09dfb-d327-488b-8e5d-77a579d1e1f0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceInitRegisterPowerStateChangeCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ NTSTATUS WdfDeviceInitRegisterPowerStateChangeCallback(
 ## -parameters
 <dl>
 
-### -param <i>DeviceInit</i> [in]
+### -param DeviceInit [in]
 
 <dd>
 <p>A caller-supplied pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure.</p>
 </dd>
 
-### -param <i>PowerState</i> [in]
+### -param PowerState [in]
 
 <dd>
 <p>A <a href="..\wdfdevice\ne-wdfdevice--wdf-device-power-state.md">WDF_DEVICE_POWER_STATE</a> enumerator that identifies the power machine state for which the driver is requesting notification.</p>
 </dd>
 
-### -param <i>EvtDevicePowerStateChange</i> [in]
+### -param EvtDevicePowerStateChange [in]
 
 <dd>
 <p>A caller-supplied pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-power-state-change-notification.md">EvtDevicePowerStateChange</a> event callback function.</p>
 </dd>
 
-### -param <i>CallbackTypes</i> [in]
+### -param CallbackTypes [in]
 
 <dd>
 <p>An ORed combination of <a href="..\wdfdevice\ne-wdfdevice--wdf-state-notification-type.md">WDF_STATE_NOTIFICATION_TYPE</a>-typed enumerators.</p>

@@ -54,7 +54,7 @@ PKSFILTER __inline KsFilterGetNextSiblingFilter(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure for which to find the next sibling filter.</p>
@@ -65,7 +65,7 @@ PKSFILTER __inline KsFilterGetNextSiblingFilter(
 <p><b>KsFilterGetNextSiblingFilter</b> returns a pointer to the next sibling <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure of <i>Filter</i>. If no such instantiated filter exists, it returns <b>NULL</b>.</p>
 
 ## -remarks
-<p>This call is an inline function call to <a href="..\ks\nf-ks-ksgetnextsibling.md">KsGetNextSibling</a>. Note that the object hierarchy is only guaranteed stable while the appropriate mutex is held, in this case the device mutex. For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>This call is an inline function call to <a href="..\ks\nf-ks-ksgetnextsibling.md">KsGetNextSibling</a>. Note that the object hierarchy is only guaranteed stable while the appropriate mutex is held, in this case the device mutex. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 ## -requirements
 <table>

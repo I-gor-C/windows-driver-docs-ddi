@@ -55,13 +55,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Input</b>
+### -field Input
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-input.md">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> structure that contains the GUID for the query and other data.</p>
 </dd>
 
-### -field <b>DecodeHandle</b>
+### -field DecodeHandle
 
 <dd>
 <p>A handle to a decode device.</p>

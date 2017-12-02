@@ -56,19 +56,19 @@ KSDDKAPI NTSTATUS NTAPI KsFilterCreateNode(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure on which to create a new topology node.</p>
 </dd>
 
-### -param <i>NodeDescriptor</i> [in]
+### -param NodeDescriptor [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksnode-descriptor.md">KSNODE_DESCRIPTOR</a> structure that describes the new node.</p>
 </dd>
 
-### -param <i>NodeID</i> [out]
+### -param NodeID [out]
 
 <dd>
 <p>A pointer to a ULONG where AVStream places the ID of the new node.</p>
@@ -79,7 +79,7 @@ KSDDKAPI NTSTATUS NTAPI KsFilterCreateNode(
 <p><b>KsFilterCreateNode</b>  returns the success or failure of creating the node. The call may fail because of invalid parameters, low memory, or other reasons.</p>
 
 ## -remarks
-<p>Note that the filter control mutex must be held before calling this function. For more information, see <a href="NULL">Filter Control Mutex in AVStream</a>.</p>
+<p>Note that the filter control mutex must be held before calling this function. For more information, see <a href="https://msdn.microsoft.com/402795a0-e567-4e7e-a7d8-b2ce29ffb8fd">Filter Control Mutex in AVStream</a>.</p>
 
 ## -requirements
 <table>

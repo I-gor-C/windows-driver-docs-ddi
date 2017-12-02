@@ -7,7 +7,7 @@ old-location: ifsk\rtlenumerategenerictablelikeadirectory.htm
 old-project: ifsk
 ms.assetid: 206c8b70-575d-47e2-a03d-4c88e0d92fe0
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlEnumerateGenericTableLikeADirectory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ PVOID RtlEnumerateGenericTableLikeADirectory(
 ## -parameters
 <dl>
 
-### -param <i>Table</i> [in]
+### -param Table [in]
 
 <dd>
 <p>A pointer to the Adelson-Velsky/Landis (AVL) table (<a href="..\ntddk\ns-ntddk--rtl-avl-table.md">RTL_AVL_TABLE</a>) that will be enumerated.</p>
 </dd>
 
-### -param <i>MatchFunction</i> [in, optional]
+### -param MatchFunction [in, optional]
 
 <dd>
 <p>A match function that determines which entries to return. If not specified, all nodes are returned.</p>
 </dd>
 
-### -param <i>MatchData</i> [in, optional]
+### -param MatchData [in, optional]
 
 <dd>
 <p>The data to pass to the match function.</p>
 </dd>
 
-### -param <i>NextFlag</i> [in]
+### -param NextFlag [in]
 
 <dd>
 <p>If <i>RestartKey</i> is not <b>NULL</b>, a value of <b>TRUE</b> indicates that the enumeration will skip an element. If <b>FALSE</b> the enumeration resumes where it left off in the previous call to <b>RtlEnumerateGenericTableLikeADirectory</b>. If <i>RestartKey</i> is <b>NULL</b>, a value of <b>TRUE</b> instructs <b>RtlEnumerateGenericTableLikeADirectory</b> to return the next entry in the tree after the entry that matches the data in <i>Buffer</i>. A value of <b>FALSE</b> instructs <b>RtlEnumerateGenericTableLikeADirectory</b> to return the entry in the tree that matches the data in <i>Buffer</i>.</p>
 </dd>
 
-### -param <i>RestartKey</i> [in, out]
+### -param RestartKey [in, out]
 
 <dd>
 <p>A value that determines where to begin or resume the enumeration of generic table elements. If <i>RestartKey</i> is <b>NULL</b>, the enumeration begins or resumes from the position that is described in <i>Buffer</i>. If not <b>NULL</b>, the enumeration resumes from the point that <i>RestartKey</i> indicates. On return, the <i>RestartKey</i> holds a value that indicates the place in the tree where the enumeration left off. On the next call to <b>RtlEnumerateGenericTableLikeADirectory</b> caller should pass the same value back in to inform <b>RtlEnumerateGenericTableLikeADirectory</b> where to resume the enumeration. The following code example illustrates how to do this:</p>
@@ -119,13 +119,13 @@ for (ptr = NULL; ptr != NULL;  ) {
 <p>If a node is deleted from the tree between calls to <b>RtlEnumerateGenericTableLikeADirectory</b>, enumeration resumes from the position in the tree that is described in <i>Buffer</i>, no matter what the value of <i>RestartKey</i>.</p>
 </dd>
 
-### -param <i>DeleteCount</i> [in, out]
+### -param DeleteCount [in, out]
 
 <dd>
 <p>On output, a value that indicates the current count of entries deleted from the table. Caller must pass this value back in on the next call to <b>RtlEnumerateGenericTableLikeADirectory</b>. This value helps the <b>RtlEnumerateGenericTableLikeADirectory</b> routine determine if deletions from the table have occurred between calls to <b>RtlEnumerateGenericTableLikeADirectory</b>. If deletions have occurred, the enumeration resumes with the table entry that matches the data in <i>Buffer</i>, and not with the table entry indicated by <i>RestartKey</i>. If <i>RestartKey</i> is <b>NULL</b>, this parameter has no effect on the enumeration..</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A key expression that determines where to begin the enumeration, when <i>RestartKey</i> is <b>NULL</b>. Caller can pass in a saved key that matches a particular entry in the table and the enumeration will begin at the entry specified by the saved key, provided <i>RestartKey</i> is <b>NULL</b> and <i>NextFlag</i> is <b>FALSE</b>. To return the key that immediately follows a saved key, pass in the key here, set <i>RestartKey</i> to <b>NULL</b> and <i>NextFlag</i> to <b>TRUE</b>. If the saved key has been deleted, enumeration will begin with the next matched key. </p>
@@ -234,4 +234,4 @@ for (ptr = NULL; ptr != NULL;  ) {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlEnumerateGenericTableLikeADirectory routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlEnumerateGenericTableLikeADirectory routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

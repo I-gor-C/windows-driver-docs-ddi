@@ -57,25 +57,25 @@ typedef enum _STREAMING_CONTROL_REQUEST_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="CdromStreamingDisable"></a><a id="cdromstreamingdisable"></a><a id="CDROMSTREAMINGDISABLE"></a><b>CdromStreamingDisable</b>
+### -field CdromStreamingDisable
 
 <dd>
 <p>Streaming read and streaming write requests will be disabled for the requested file handle.</p>
 </dd>
 
-### -field <a id="CdromStreamingEnableForReadOnly"></a><a id="cdromstreamingenableforreadonly"></a><a id="CDROMSTREAMINGENABLEFORREADONLY"></a><b>CdromStreamingEnableForReadOnly</b>
+### -field CdromStreamingEnableForReadOnly
 
 <dd>
 <p>Streaming read requests will be enabled, and streaming write requests will be disabled, for the requested file handle.</p>
 </dd>
 
-### -field <a id="____CdromStreamingEnableForWriteOnly_"></a><a id="____cdromstreamingenableforwriteonly_"></a><a id="____CDROMSTREAMINGENABLEFORWRITEONLY_"></a><b>    CdromStreamingEnableForWriteOnly </b>
+### -field     CdromStreamingEnableForWriteOnly 
 
 <dd>
 <p>Streaming read requests will be disabled, and streaming write requests will be enabled, for the requested file handle.</p>
 </dd>
 
-### -field <a id="CdromStreamingEnableForReadWrite"></a><a id="cdromstreamingenableforreadwrite"></a><a id="CDROMSTREAMINGENABLEFORREADWRITE"></a><b>CdromStreamingEnableForReadWrite</b>
+### -field CdromStreamingEnableForReadWrite
 
 <dd>
 <p>Streaming read and streaming write requests will be enabled for the requested file handle.</p>

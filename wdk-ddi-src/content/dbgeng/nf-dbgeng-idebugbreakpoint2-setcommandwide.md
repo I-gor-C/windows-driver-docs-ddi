@@ -7,7 +7,7 @@ old-location: debugger\setcommandwide.htm
 old-project: debugger
 ms.assetid: 3edab087-01e4-4cd4-82d3-38d67962c93c
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugBreakpoint2, SetCommandWide, IDebugBreakpoint2::SetCommandWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT SetCommandWide(
 ## -parameters
 <dl>
 
-### -param <i>Command</i> [in]
+### -param Command [in]
 
 <dd>
 <p>The command string that is executed when the breakpoint is triggered.</p>

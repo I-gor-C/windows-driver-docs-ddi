@@ -56,19 +56,19 @@ typedef enum _SECURE_ELEMENT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="Integrated"></a><a id="integrated"></a><a id="INTEGRATED"></a><b>Integrated</b>
+### -field Integrated
 
 <dd>
 <p>Integrated secure element.</p>
 </dd>
 
-### -field <a id="External"></a><a id="external"></a><a id="EXTERNAL"></a><b>External</b>
+### -field External
 
 <dd>
 <p>Separate UICC-based secure element.</p>
 </dd>
 
-### -field <a id="DeviceHost"></a><a id="devicehost"></a><a id="DEVICEHOST"></a><b>DeviceHost</b>
+### -field DeviceHost
 
 <dd>
 <p>Separate HCE-based secure element.</p>

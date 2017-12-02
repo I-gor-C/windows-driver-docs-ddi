@@ -7,7 +7,7 @@ old-location: wdf\wdf_release_hardware_order_on_failure.htm
 old-project: wdf
 ms.assetid: 534B1E39-6B11-4954-8792-41A25FCA31B2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ typedef enum _WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfReleaseHardwareOrderOnFailureInvalid"></a><a id="wdfreleasehardwareorderonfailureinvalid"></a><a id="WDFRELEASEHARDWAREORDERONFAILUREINVALID"></a><b>WdfReleaseHardwareOrderOnFailureInvalid</b>
+### -field WdfReleaseHardwareOrderOnFailureInvalid
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="WdfReleaseHardwareOrderOnFailureEarly"></a><a id="wdfreleasehardwareorderonfailureearly"></a><a id="WDFRELEASEHARDWAREORDERONFAILUREEARLY"></a><b>WdfReleaseHardwareOrderOnFailureEarly</b>
+### -field WdfReleaseHardwareOrderOnFailureEarly
 
 <dd>
 <p>Except under certain error conditions, the framework calls the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-release-hardware.md">EvtDeviceReleaseHardware</a> callback function after it has called the <i>EvtDeviceReleaseHardware</i> function for all child devices that the driver enumerates. For more information, see Remarks.</p>
 </dd>
 
-### -field <a id="WdfReleaseHardwareOrderOnFailureAfterDescendants"></a><a id="wdfreleasehardwareorderonfailureafterdescendants"></a><a id="WDFRELEASEHARDWAREORDERONFAILUREAFTERDESCENDANTS"></a><b>WdfReleaseHardwareOrderOnFailureAfterDescendants</b>
+### -field WdfReleaseHardwareOrderOnFailureAfterDescendants
 
 <dd>
 <p>The framework always calls the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-release-hardware.md">EvtDeviceReleaseHardware</a> callback function after it has called the <i>EvtDeviceReleaseHardware</i> function for all child devices that the driver enumerates.</p>
@@ -126,4 +126,4 @@ typedef enum _WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

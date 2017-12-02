@@ -57,13 +57,13 @@ NTSTATUS RtlStringCbPrintf(
 ## -parameters
 <dl>
 
-### -param <i>pszDest</i> [out]
+### -param pszDest [out]
 
 <dd>
 <p>A pointer to a caller-supplied buffer that receives a formatted, null-terminated string. The function creates this string from both the formatting string that is supplied by <i>pszFormat</i> and the function's argument list. </p>
 </dd>
 
-### -param <i>cbDest</i> [in]
+### -param cbDest [in]
 
 <dd>
 <p>The size of the destination buffer, in bytes. The buffer must be large enough to contain the formatted string plus the terminating null character. </p>
@@ -71,13 +71,13 @@ NTSTATUS RtlStringCbPrintf(
 <p>For ANSI strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(char). </p>
 </dd>
 
-### -param <i>pszFormat</i> [in]
+### -param pszFormat [in]
 
 <dd>
 <p>A pointer to a null-terminated text string that contains <b>printf</b>-styled <a href="http://msdn.microsoft.com/en-us/library/56e442dc.aspx">formatting directives</a>.</p>
 </dd>
 
-### -param <i>...</i> 
+### -param ... 
 
 <dd>
 <p>A list of arguments that are interpreted by the function based on formatting directives contained in the <i>pszFormat</i> string.</p>

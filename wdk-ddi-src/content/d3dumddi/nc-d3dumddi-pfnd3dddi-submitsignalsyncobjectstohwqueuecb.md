@@ -55,13 +55,13 @@ _Check_return_ HRESULT APIENTRY CALLBACK PFND3DDDI_SUBMITSIGNALSYNCOBJECTSTOHWQU
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the device.</p>
 </dd>
 
-### -param <i>submitSignalSyncoObjectsToHwQueue</i> [in]
+### -param submitSignalSyncoObjectsToHwQueue [in]
 
 <dd>
 <p>A pointer to the structure holding information on submitting a signal command to the hardware queue.</p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>StorPortRegistryReadAdapterKey</b> routine is called by the miniport driver to read the hardware or device registry adapter keys located in registry at HKLM/CurrentControlSet/Enum/&lt;Instance path&gt;/DeviceParameters/... these keys are read from in the <a href="NULL">INF DDInstall.HW Section</a>.</p>
+<p>The <b>StorPortRegistryReadAdapterKey</b> routine is called by the miniport driver to read the hardware or device registry adapter keys located in registry at HKLM/CurrentControlSet/Enum/&lt;Instance path&gt;/DeviceParameters/... these keys are read from in the <a href="devinst.inf_ddinstall_hw_section">INF DDInstall.HW Section</a>.</p>
 
 
 ## -syntax
@@ -60,25 +60,25 @@ STORPORT_STATUS StorPortRegistryWriteAdapterKey(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. The miniport driver must be running at IRQL PASSIVE_LEVEL when it calls this routine.</p>
 </dd>
 
-### -param <i>SubKeyName</i> [in, optional]
+### -param SubKeyName [in, optional]
 
 <dd>
 <p>The miniport subkey.</p>
 </dd>
 
-### -param <i>ValueName</i> [in]
+### -param ValueName [in]
 
 <dd>
 <p>The name of the Value under the key.</p>
 </dd>
 
-### -param <i>ValueType</i> [in]
+### -param ValueType [in]
 
 <dd>
 <p>One of the following registry data types.</p>
@@ -195,13 +195,13 @@ STORPORT_STATUS StorPortRegistryWriteAdapterKey(
 <p> </p>
 </dd>
 
-### -param <i>ValueData</i> [in, out]
+### -param ValueData [in, out]
 
 <dd>
 <p>Pointer to a the data that contains the registry data to be read. The data is converted from UNICODE to a NULL-terminated ASCII string.</p>
 </dd>
 
-### -param <i>ValueDataLength</i> [in, out]
+### -param ValueDataLength [in, out]
 
 <dd>
 <p>Specifies the size of the data pointed to by <i>ValueData</i>.</p>

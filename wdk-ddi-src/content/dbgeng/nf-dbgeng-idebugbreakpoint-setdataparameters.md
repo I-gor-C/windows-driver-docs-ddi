@@ -7,7 +7,7 @@ old-location: debugger\setdataparameters.htm
 old-project: debugger
 ms.assetid: 66878652-be29-479f-8e00-a9d8ab1b0db7
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugBreakpoint, SetDataParameters, IDebugBreakpoint::SetDataParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ HRESULT SetDataParameters(
 ## -parameters
 <dl>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>The size, in bytes, of the memory block whose access triggers the breakpoint.  For more information about restrictions on the value of <i>Size</i> based on the processor type, see <a href="debugger.controlling_breakpoint_flags_and_parameters#valid_parameters_for_processor_breakpoints#valid_parameters_for_processor_breakpoints">Valid Parameters for Processor Breakpoints</a>.</p>
 </dd>
 
-### -param <i>AccessType</i> [in]
+### -param AccessType [in]
 
 <dd>
 <p>The type of access that triggers the breakpoint. For a list of possible value, see <a href="debugger.controlling_breakpoint_flags_and_parameters#valid_parameters_for_processor_breakpoints#valid_parameters_for_processor_breakpoints">Valid Parameters for Processor Breakpoints</a>.</p>
@@ -77,7 +77,7 @@ HRESULT SetDataParameters(
 
 <p> </p>
 
-<p>This method can also return other error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
+<p>This method can also return other error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.</p>
 
 ## -remarks
 <p>For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>

@@ -61,49 +61,49 @@ typedef enum _DXGKMDT_OPM_PROTECTION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKMDT_OPM_PROTECTION_TYPE_OTHER"></a><a id="dxgkmdt_opm_protection_type_other"></a><b>DXGKMDT_OPM_PROTECTION_TYPE_OTHER</b>
+### -field DXGKMDT_OPM_PROTECTION_TYPE_OTHER
 
 <dd>
 <p>Indicates a protection type other than those given in the following constants of this enumeration. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_PROTECTION_TYPE_NONE"></a><a id="dxgkmdt_opm_protection_type_none"></a><b>DXGKMDT_OPM_PROTECTION_TYPE_NONE</b>
+### -field DXGKMDT_OPM_PROTECTION_TYPE_NONE
 
 <dd>
 <p>Indicates that the video output does not support any protection type. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_PROTECTION_TYPE_COPP_COMPATIBLE_HDCP"></a><a id="dxgkmdt_opm_protection_type_copp_compatible_hdcp"></a><b>DXGKMDT_OPM_PROTECTION_TYPE_COPP_COMPATIBLE_HDCP</b>
+### -field DXGKMDT_OPM_PROTECTION_TYPE_COPP_COMPATIBLE_HDCP
 
 <dd>
 <p>Indicates that the protected output supports High-bandwidth Digital Content Protection (HDCP) that is compatible with Certified Output Protection Protocol (COPP). For more information about HDCP, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=38728">HDCP Specification Revision 1.1</a>. This protection type can be used only with protected output objects that have COPP semantics. OPM can use this value in a call to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-copp-compatible-information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a> function to determine whether a protected output supports COPP-compatible HDCP. OPM can also use this value in a call to the driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-configure-protected-output.md">DxgkDdiOPMConfigureProtectedOutput</a> function to change the COPP-compatible HDCP protection level. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_PROTECTION_TYPE_ACP"></a><a id="dxgkmdt_opm_protection_type_acp"></a><b>DXGKMDT_OPM_PROTECTION_TYPE_ACP</b>
+### -field DXGKMDT_OPM_PROTECTION_TYPE_ACP
 
 <dd>
 <p>Indicates that the protected output supports Analog Copy Protection (ACP). ACP protects analog TV signals. Currently, OPM can use ACP to protect signals from composite outputs, S-Video outputs, or component outputs. For more information about ACP, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=71273">Rovi (formerly Macrovision)</a> website. OPM can use this value in a call to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-copp-compatible-information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a> function to determine whether a protected output supports ACP. OPM can also use this value in a call to the driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-configure-protected-output.md">DxgkDdiOPMConfigureProtectedOutput</a> function to change the ACP protection level. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_PROTECTION_TYPE_CGMSA"></a><a id="dxgkmdt_opm_protection_type_cgmsa"></a><b>DXGKMDT_OPM_PROTECTION_TYPE_CGMSA</b>
+### -field DXGKMDT_OPM_PROTECTION_TYPE_CGMSA
 
 <dd>
 <p>Indicates that the protected output supports Content Generation Management System Analog (CGMS-A). CGMS-A protects analog TV signals. Currently, OPM can use CGMS-A to protect signals from composite outputs, S-Video outputs, or component outputs. For more information about CGMS-A, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70568">CGMS-A article</a>. OPM can use this value in a call to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-copp-compatible-information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a> function to determine whether a protected output supports CGMS-A. OPM can also use this value in a call to the driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-configure-protected-output.md">DxgkDdiOPMConfigureProtectedOutput</a> function to change the CGMS-A protection level. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_PROTECTION_TYPE_HDCP"></a><a id="dxgkmdt_opm_protection_type_hdcp"></a><b>DXGKMDT_OPM_PROTECTION_TYPE_HDCP</b>
+### -field DXGKMDT_OPM_PROTECTION_TYPE_HDCP
 
 <dd>
 <p>Indicates that the protected output supports HDCP. This protection type can be used only with protected output objects that have OPM semantics. OPM can use this value in a call to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a> function to determine whether a protected output supports HDCP. OPM can also use this value in a call to the driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-configure-protected-output.md">DxgkDdiOPMConfigureProtectedOutput</a> function to change the HDCP protection level. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_PROTECTION_TYPE_DPCP"></a><a id="dxgkmdt_opm_protection_type_dpcp"></a><b>DXGKMDT_OPM_PROTECTION_TYPE_DPCP</b>
+### -field DXGKMDT_OPM_PROTECTION_TYPE_DPCP
 
 <dd>
 <p>Indicates that the protected output supports DisplayPort Copy Protection (DPCP). For more information about DisplayPort, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=71382">DisplayPort article</a>. This protection type can be used only with protected output objects that have OPM semantics. OPM can use this value in a call to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a> function to determine whether a protected output supports DPCP. OPM can also use this value in a call to the driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-configure-protected-output.md">DxgkDdiOPMConfigureProtectedOutput</a> function to change the DPCP protection level. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_PROTECTION_TYPE_MASK"></a><a id="dxgkmdt_opm_protection_type_mask"></a><b>DXGKMDT_OPM_PROTECTION_TYPE_MASK</b>
+### -field DXGKMDT_OPM_PROTECTION_TYPE_MASK
 
 <dd>
 <p>A mask value that indicates the valid bitfields in a bitwise OR combination of the values from this enumeration. </p>

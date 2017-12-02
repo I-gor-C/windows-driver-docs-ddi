@@ -7,7 +7,7 @@ old-location: netvista\completionfn.htm
 old-project: netvista
 ms.assetid: c03656ec-f0fe-49f5-8a04-2d26ef23c50a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,7 +42,7 @@ req.iface:
 <p>The filter engine calls a callout's 
   <i>completionFn</i> callout function whenever packet data, described by the 
   <i>netBufferList</i> parameter in one of the 
-  <a href="NULL">packet injection functions</a>, has been
+  <a href="netvista.packet_injection_functions">packet injection functions</a>, has been
   injected into the network stack.</p>
 
 
@@ -63,25 +63,25 @@ void NTAPI completionFn(
 ## -parameters
 <dl>
 
-### -param <i>context</i> [in]
+### -param context [in]
 
 <dd>
 <p>A pointer to the 
      <i>completionContext</i> parameter of one of the 
-     <a href="NULL">packet injection functions</a> called
+     <a href="netvista.packet_injection_functions">packet injection functions</a> called
      by the callout driver.</p>
 </dd>
 
-### -param <i>netBufferList</i> [in, out]
+### -param netBufferList [in, out]
 
 <dd>
 <p>The pointer passed in the 
      <i>netBufferList</i> parameter of one of the 
-     <a href="NULL">packet injection functions</a> called
+     <a href="netvista.packet_injection_functions">packet injection functions</a> called
      by the callout driver.</p>
 </dd>
 
-### -param <i>dispatchLevel</i> [in]
+### -param dispatchLevel [in]
 
 <dd>
 <p>A value that indicates the IRQL at which the 
@@ -106,7 +106,7 @@ void NTAPI completionFn(
 
 <p>After packet data in a cloned or created <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure chain has successfully been
     injected into the network stack by one of the 
-    <a href="NULL">packet injection functions</a>, 
+    <a href="netvista.packet_injection_functions">packet injection functions</a>, 
     <i>completionFn</i> is called.</p>
 
 <p>If the 
@@ -179,9 +179,9 @@ void NTAPI completionFn(
 <a href="netvista.callout_driver_callout_functions">Callout Driver Callout Functions</a>
 </dt>
 <dt>
-<a href="NULL">Packet Injection Functions</a>
+<a href="netvista.packet_injection_functions">Packet Injection Functions</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_INJECT_COMPLETE0 callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_INJECT_COMPLETE0 callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

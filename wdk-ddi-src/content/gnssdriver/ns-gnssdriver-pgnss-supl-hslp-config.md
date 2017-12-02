@@ -7,7 +7,7 @@ old-location: sensors\gnss_supl_hslp_config.htm
 old-project: sensors
 ms.assetid: 08CCC4A8-2D85-436D-B18E-77C91A24F59C
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_SUPL_HSLP_CONFIG, GNSS_SUPL_HSLP_CONFIG, *PGNSS_SUPL_HSLP_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>SuplHslp[MAX_SERVER_URL_NAME]</b>
+### -field SuplHslp[MAX_SERVER_URL_NAME]
 
 <dd>
 <p>This is the SUPL server address with TCP port. The server address will be a FQDN as indicated in the OMA SUPL specs.</p>
 </dd>
 
-### -field <b>SuplHslpFromImsi[MAX_SERVER_URL_NAME]</b>
+### -field SuplHslpFromImsi[MAX_SERVER_URL_NAME]
 
 <dd>
 <p>This is the SUPL server address as derived from IMSI.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Unused[512]</b>
+### -field Unused[512]
 
 <dd>
 <p>Padding buffer.</p>

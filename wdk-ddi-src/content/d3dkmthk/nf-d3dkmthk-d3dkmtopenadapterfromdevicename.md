@@ -54,7 +54,7 @@ NTSTATUS D3DKMTOpenAdapterFromDeviceName(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openadapterfromdevicename.md">D3DKMT_OPENADAPTERFROMDEVICENAME</a> structure that describes the parameters that are required to perform the mapping.</p>

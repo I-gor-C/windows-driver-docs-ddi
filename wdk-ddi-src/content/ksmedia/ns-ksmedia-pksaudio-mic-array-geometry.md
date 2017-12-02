@@ -63,13 +63,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>usVersion</b>
+### -field usVersion
 
 <dd>
 <p>Specifies the version number of the KSAUDIO_MIC_ARRAY_GEOMETRY structure. This member is a BCD value and is currently set to 0x0100, which represents a version number of 1.0.</p>
 </dd>
 
-### -field <b>usMicArrayType</b>
+### -field usMicArrayType
 
 <dd>
 <p>Specifies the type of microphone array in use. This member can be any one of the KSMICARRAY_MICARRAYTYPE enumeration values shown in the following table.</p>
@@ -110,49 +110,49 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>wVerticalAngleBegin</b>
+### -field wVerticalAngleBegin
 
 <dd>
 <p>Specifies the vertical angle of the start of the working volume of the microphone array.</p>
 </dd>
 
-### -field <b>wVerticalAngleEnd</b>
+### -field wVerticalAngleEnd
 
 <dd>
 <p>Specifies the vertical angle of the end of the working volume of the microphone array.</p>
 </dd>
 
-### -field <b>wHorizontalAngleBegin</b>
+### -field wHorizontalAngleBegin
 
 <dd>
 <p>Work Volume HorizontalAngle Begin</p>
 </dd>
 
-### -field <b>wHorizontalAngleEnd</b>
+### -field wHorizontalAngleEnd
 
 <dd>
 <p>Work Volume HorizontalAngle End</p>
 </dd>
 
-### -field <b>usFrequencyBandLo</b>
+### -field usFrequencyBandLo
 
 <dd>
 <p>Specifies the low end of the frequency range for the microphone array.</p>
 </dd>
 
-### -field <b>usFrequencyBandHi</b>
+### -field usFrequencyBandHi
 
 <dd>
 <p>Specifies the high end of the frequency range for the microphone array.</p>
 </dd>
 
-### -field <b>usNumberOfMicrophones</b>
+### -field usNumberOfMicrophones
 
 <dd>
 <p>Specifies the number of microphones in the microphone array.</p>
 </dd>
 
-### -field <b>KsMicCoord</b>
+### -field KsMicCoord
 
 <dd>
 <p>Specifies the array of KSAUDIO_MICROPHONE_COORDINATES structures that contains the locations of the microphones in the array.</p>

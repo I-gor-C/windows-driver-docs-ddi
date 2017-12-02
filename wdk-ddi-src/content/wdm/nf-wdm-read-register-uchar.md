@@ -55,7 +55,7 @@ UCHAR READ_REGISTER_UCHAR(
 ## -parameters
 <dl>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>Pointer to the register address, which must be a mapped range in memory space. </p>

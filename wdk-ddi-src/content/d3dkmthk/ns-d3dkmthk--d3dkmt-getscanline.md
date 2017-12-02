@@ -57,25 +57,25 @@ typedef struct _D3DKMT_GETSCANLINE {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[in] A handle to a graphics adapter.</p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The identifier of a graphics adapter's video present source.</p>
 </dd>
 
-### -field <b>InVerticalBlank</b>
+### -field InVerticalBlank
 
 <dd>
 <p>[out] A Boolean variable that receives <b>TRUE</b> if the video present source is in vertical blanking mode and <b>FALSE</b> if the video present source is not in vertical blanking mode.</p>
 </dd>
 
-### -field <b>ScanLine</b>
+### -field ScanLine
 
 <dd>
 <p>[out] The video present source's current scan line.</p>

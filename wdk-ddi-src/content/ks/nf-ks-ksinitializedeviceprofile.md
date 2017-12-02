@@ -55,7 +55,7 @@ req.iface:
 ## -parameters
 <dl>
 
-### -param <i>FilterFactory</i> [in]
+### -param FilterFactory [in]
 
 <dd>
 <p>This is the <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> that was created by the camera driver to uniquely identify the camera’s filter factory.</p>

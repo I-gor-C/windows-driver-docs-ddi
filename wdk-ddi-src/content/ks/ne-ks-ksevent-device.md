@@ -55,13 +55,13 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSEVENT_DEVICE_LOST"></a><a id="ksevent_device_lost"></a><b>KSEVENT_DEVICE_LOST</b>
+### -field KSEVENT_DEVICE_LOST
 
 <dd>
 <p>A camera device has been removed from the system. See <a href="https://msdn.microsoft.com/library/windows/hardware/jj156039">KSEVENT_DEVICE_LOST</a>.</p>
 </dd>
 
-### -field <a id="KSEVENT_DEVICE_PREEMPTED"></a><a id="ksevent_device_preempted"></a><b>KSEVENT_DEVICE_PREEMPTED</b>
+### -field KSEVENT_DEVICE_PREEMPTED
 
 <dd>
 <p>A camera device has been preempted by a new Windows app. See <a href="https://msdn.microsoft.com/library/windows/hardware/jj156040">KSEVENT_DEVICE_PREEMPTED</a>.</p>

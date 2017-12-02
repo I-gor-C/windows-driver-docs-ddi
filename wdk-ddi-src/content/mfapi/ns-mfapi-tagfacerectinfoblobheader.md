@@ -55,13 +55,13 @@ typedef struct tagFaceRectInfoBlobHeader {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of this header + all following <a href="stream.facerectinfo">FaceRectInfo</a> structures.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Number of <b>FaceRectInfo</b> structures in the blob.</p>

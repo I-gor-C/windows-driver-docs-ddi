@@ -54,7 +54,7 @@ void IoUnRegisterBootDriverCallback(
 ## -parameters
 <dl>
 
-### -param <i>CallbackHandle</i> [in]
+### -param CallbackHandle [in]
 
 <dd>
 <p>A handle returned from a previous call to <a href="..\ntddk\nf-ntddk-ioregisterbootdrivercallback.md">IoRegisterBootDriverCallback</a>.</p>

@@ -59,31 +59,31 @@ NTSTATUS USBD_GetPdoRegistryParameter(
 ## -parameters
 <dl>
 
-### -param <i>PhysicalDeviceObject</i> [in]
+### -param PhysicalDeviceObject [in]
 
 <dd>
 <p>Specifies the device object for the USB device.</p>
 </dd>
 
-### -param <i>Parameter</i> [in, out]
+### -param Parameter [in, out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that receives the registry value.</p>
 </dd>
 
-### -param <i>ParameterLength</i> [in]
+### -param ParameterLength [in]
 
 <dd>
 <p>Size, in bytes, of the buffer that is pointed to by <i>Parameter</i>.</p>
 </dd>
 
-### -param <i>KeyName</i> [in]
+### -param KeyName [in]
 
 <dd>
 <p>Pointer to a string containing the name of the registry key.</p>
 </dd>
 
-### -param <i>KeyNameLength</i> [in]
+### -param KeyNameLength [in]
 
 <dd>
 <p>Size, in bytes, of the buffer that is pointed to by <i>KeyName</i>.</p>

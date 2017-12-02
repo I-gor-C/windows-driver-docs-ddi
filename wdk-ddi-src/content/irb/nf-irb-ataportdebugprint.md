@@ -55,13 +55,13 @@ VOID AtaPortDebugPrint(
 ## -parameters
 <dl>
 
-### -param <i>DebugPrintLevel</i> 
+### -param DebugPrintLevel 
 
 <dd>
 <p>Determines how much debug information to display. </p>
 </dd>
 
-### -param <i>DebugMessage</i> 
+### -param DebugMessage 
 
 <dd>
 <p>A pointer to the debug message to display.</p>
@@ -72,7 +72,7 @@ VOID AtaPortDebugPrint(
 <p>None </p>
 
 ## -remarks
-<p>The verbosity of debug output is determined by <i>DebugPrintLevel</i> and a port driver-specific mask. Use the <b>nt!kd_idep_mask</b> command to set the desired level of verbosity. For more information about the kernel debugger, see the <a href="NULL">Using a Debugger</a> topic </p>
+<p>The verbosity of debug output is determined by <i>DebugPrintLevel</i> and a port driver-specific mask. Use the <b>nt!kd_idep_mask</b> command to set the desired level of verbosity. For more information about the kernel debugger, see the <a href="https://msdn.microsoft.com/e2490442-9d90-454b-95e0-db8c5d7fa19a">Using a Debugger</a> topic </p>
 
 ## -requirements
 <table>

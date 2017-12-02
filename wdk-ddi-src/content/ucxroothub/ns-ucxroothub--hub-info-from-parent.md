@@ -69,93 +69,93 @@ typedef struct _HUB_INFO_FROM_PARENT {
 ## -struct-fields
 <dl>
 
-### -field <b>IoTarget</b>
+### -field IoTarget
 
 <dd>
 <p>A pointer to the WDM device object of the parent that represents the I/O target.</p>
 </dd>
 
-### -field <b>DeviceDescriptor</b>
+### -field DeviceDescriptor
 
 <dd>
 <p>A <a href="..\usbspec\ns-usbspec--usb-device-descriptor.md">USB_DEVICE_DESCRIPTOR</a> structure that contains the device descriptor.</p>
 </dd>
 
-### -field <b>U1ExitLatency</b>
+### -field U1ExitLatency
 
 <dd>
 <p>The time to transition from the U1 state. </p>
 </dd>
 
-### -field <b>U2ExitLatency</b>
+### -field U2ExitLatency
 
 <dd>
 <p>The time to transition from the U2 state. </p>
 </dd>
 
-### -field <b>ExitLatencyOfSlowestLinkForU1</b>
+### -field ExitLatencyOfSlowestLinkForU1
 
 <dd>
 <p>The exit latency for the slowest link for U1 transition.</p>
 </dd>
 
-### -field <b>DepthOfSlowestLinkForU1</b>
+### -field DepthOfSlowestLinkForU1
 
 <dd>
 <p>The depth of the hub based on which the latency
         for the slowest link is calculated for a U1 transition.</p>
 </dd>
 
-### -field <b>ExitLatencyOfSlowestLinkForU2</b>
+### -field ExitLatencyOfSlowestLinkForU2
 
 <dd>
 <p>The exit latency for the slowest link for U2 transition.</p>
 </dd>
 
-### -field <b>DepthOfSlowestLinkForU2</b>
+### -field DepthOfSlowestLinkForU2
 
 <dd>
 <p>The depth of the hub based on which the latency
         for the slowest link is calculated for a U2 transition.</p>
 </dd>
 
-### -field <b>HostInitiatedU1ExitLatency</b>
+### -field HostInitiatedU1ExitLatency
 
 <dd>
 <p>Host-initiated exit latency to transition from the U1 state. </p>
 </dd>
 
-### -field <b>HostInitiatedU2ExitLatency</b>
+### -field HostInitiatedU2ExitLatency
 
 <dd>
 <p>Host-initiated exit latency to transition from the U2 state. </p>
 </dd>
 
-### -field <b>TotalHubDepth</b>
+### -field TotalHubDepth
 
 <dd>
 <p>Total hub depth.</p>
 </dd>
 
-### -field <b>TotalTPPropogationDelay</b>
+### -field TotalTPPropogationDelay
 
 <dd>
 <p>The total TP propagation delay.</p>
 </dd>
 
-### -field <b>HubFlags</b>
+### -field HubFlags
 
 <dd>
-<p>A bitwise-OR of <a href="buses._parent_hub_flags">PARENT_HUB_FLAGS</a> flags.</p>
+<p>A bitwise-OR of <a href="..\ucxroothub\ns-ucxroothub--parent-hub-flags.md">PARENT_HUB_FLAGS</a> flags.</p>
 </dd>
 
-### -field <b>SublinkSpeedAttr</b>
+### -field SublinkSpeedAttr
 
 <dd>
 <p>A pointer to a <b>USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED</b> structure that describes the USB 3.1capability's sublink speed attributes. For structure declaration, see Usbspec.h</p>
 </dd>
 
-### -field <b>SublinkSpeedAttrCount</b>
+### -field SublinkSpeedAttrCount
 
 <dd>
 <p>The count of sublink speed attributes.</p>

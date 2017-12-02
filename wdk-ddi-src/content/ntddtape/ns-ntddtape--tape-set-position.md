@@ -57,68 +57,68 @@ typedef struct _TAPE_SET_POSITION {
 ## -struct-fields
 <dl>
 
-### -field <b>Method</b>
+### -field Method
 
 <dd>
 <p>Indicates the type of positioning to perform. This member must have one of the following values:</p>
 <p></p>
 <dl>
 
-### -field <a id="TAPE_REWIND"></a><a id="tape_rewind"></a>TAPE_REWIND
+### -field TAPE_REWIND
 
 <dd>
 <p>Positions the tape at the beginning of the partition indicated in <b>Partition</b> if the media is partitioned, and to the beginning of the media if the media is not partitioned. If the media is not partitioned, <b>Partition</b> must be set to zero. The <b>Offset</b> member is ignored. </p>
 </dd>
 
-### -field <a id="TAPE_ABSOLUTE_BLOCK"></a><a id="tape_absolute_block"></a>TAPE_ABSOLUTE_BLOCK
+### -field TAPE_ABSOLUTE_BLOCK
 
 <dd>
 <p>Positions the tape at the absolute block address located at the offset from the beginning specified by <b>Offset</b>. The value in the <b>Partition</b> member is ignored. </p>
 </dd>
 
-### -field <a id="TAPE_LOGICAL_BLOCK"></a><a id="tape_logical_block"></a>TAPE_LOGICAL_BLOCK
+### -field TAPE_LOGICAL_BLOCK
 
 <dd>
 <p>Positions the tape to the logical block address specified by <b>Offset</b>, relative to the beginning of the partition indicated in <b>Partition</b>. If the media is not partitioned, <b>Partition</b> must be set to zero. </p>
 </dd>
 
-### -field <a id="TAPE_PSEUDO_LOGICAL_BLOCK"></a><a id="tape_pseudo_logical_block"></a>TAPE_PSEUDO_LOGICAL_BLOCK
+### -field TAPE_PSEUDO_LOGICAL_BLOCK
 
 <dd>
 <p>Positions the tape to the pseudological block address specified by <b>Offset</b>, relative to the beginning of the partition indicated in <b>Partition</b>. If the media is not partitioned, <b>Partition</b> must be to zero.</p>
 </dd>
 
-### -field <a id="TAPE_SPACE_END_OF_DATA"></a><a id="tape_space_end_of_data"></a>TAPE_SPACE_END_OF_DATA
+### -field TAPE_SPACE_END_OF_DATA
 
 <dd>
 <p>Positions the tape at the end of the partition indicated in <b>Partition</b>, or if the media is not partitioned, at the end of the tape. The <b>Offset</b> member is ignored. </p>
 </dd>
 
-### -field <a id="TAPE_SPACE_RELATIVE_BLOCKS"></a><a id="tape_space_relative_blocks"></a>TAPE_SPACE_RELATIVE_BLOCKS
+### -field TAPE_SPACE_RELATIVE_BLOCKS
 
 <dd>
 <p>Starting from the current position, positions the tape immediately after the number of blocks specified by <b>Offset</b>. The <b>Partition</b> member is ignored. </p>
 </dd>
 
-### -field <a id="TAPE_SPACE_FILEMARKS"></a><a id="tape_space_filemarks"></a>TAPE_SPACE_FILEMARKS
+### -field TAPE_SPACE_FILEMARKS
 
 <dd>
 <p>Starting from the current position, positions the tape immediately after the number of filemarks specified by <b>Offset</b>. The <b>Partition</b> member is ignored. </p>
 </dd>
 
-### -field <a id="TAPE_SPACE_SEQUENTIAL_FMKS"></a><a id="tape_space_sequential_fmks"></a>TAPE_SPACE_SEQUENTIAL_FMKS
+### -field TAPE_SPACE_SEQUENTIAL_FMKS
 
 <dd>
 <p>Starting from the current position, positions the tape immediately after the next occurrence, if any, of the number of consecutive filemarks specified by <b>Offset</b>. The <b>Partition</b> member is ignored. </p>
 </dd>
 
-### -field <a id="TAPE_SPACE_SETMARKS"></a><a id="tape_space_setmarks"></a>TAPE_SPACE_SETMARKS
+### -field TAPE_SPACE_SETMARKS
 
 <dd>
 <p>Starting from the current position, positions the tape immediately after the number of setmarks specified by <b>Offset</b>. The <b>Partition</b> member is ignored. </p>
 </dd>
 
-### -field <a id="TAPE_SPACE_SEQUENTIAL_SMKS"></a><a id="tape_space_sequential_smks"></a>TAPE_SPACE_SEQUENTIAL_SMKS
+### -field TAPE_SPACE_SEQUENTIAL_SMKS
 
 <dd>
 <p>Starting from the current position, positions the tape immediately after the next occurrence, if any, of the number of consecutive setmarks specified by <b>Offset</b>. The <b>Partition</b> member is ignored. </p>
@@ -126,7 +126,7 @@ typedef struct _TAPE_SET_POSITION {
 </dl>
 </dd>
 
-### -field <b>Partition</b>
+### -field Partition
 
 <dd>
 <p>Indicates the partition in which to set the tape's position. This member must have one of the following values:</p>
@@ -146,13 +146,13 @@ typedef struct _TAPE_SET_POSITION {
 <p>If the media is not partitioned, this member is zero. </p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Specifies an offset whose type depends on the value in <b>Method</b>. If the specified method positions the tape to a block address, <b>Offset</b> specifies the byte offset into the specified partition. If the specified method is to skip blocks, filemarks, or setmarks, <b>Offset</b> specifies the number to skip. If <b>Offset</b> is zero, the tape is positioned at the beginning of the partition. </p>
 </dd>
 
-### -field <b>Immediate</b>
+### -field Immediate
 
 <dd>
 <p>When set to <b>TRUE</b>, indicates that the target device should return status immediately. When set to <b>FALSE</b>, indicates that the device should return status after the operation is complete. </p>

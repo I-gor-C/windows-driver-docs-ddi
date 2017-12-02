@@ -56,19 +56,19 @@ typedef struct _D3D12DDI_CRYPTO_SESSION_TRANSFORM_TRANSCRYPT_OUTPUT_ARGUMENTS_00
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>Enable.</p>
 </dd>
 
-### -field <b>pIV</b>
+### -field pIV
 
 <dd>
 <p>Initialization vector.</p>
 </dd>
 
-### -field <b>IVSize</b>
+### -field IVSize
 
 <dd>
 <p>Initialization vector size.</p>

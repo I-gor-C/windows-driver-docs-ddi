@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Describes information required to reset an endpoint. This structure is passed by UCX in the <a href="buses.evt_ucx_endpoint_reset">EVT_UCX_ENDPOINT_RESET</a> callback function.</p>
+<p>Describes information required to reset an endpoint. This structure is passed by UCX in the <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-reset.md">EVT_UCX_ENDPOINT_RESET</a> callback function.</p>
 
 
 ## -syntax
@@ -61,22 +61,22 @@ typedef struct _ENDPOINT_RESET {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
-<p>A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that stores handles to the USB hub or device whose endpoints.</p>
+<p>A <a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-mgmt-header.md">USBDEVICE_MGMT_HEADER</a> structure that stores handles to the USB hub or device whose endpoints.</p>
 </dd>
 
-### -field <b>Endpoint</b>
+### -field Endpoint
 
 <dd>
 <p>A handle to the device endpoint to reset.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
-<p>A <a href="buses.endpoint_reset_flags">ENDPOINT_RESET_FLAGS</a> value that indicates reset parameters.</p>
+<p>A <a href="..\ucxendpoint\ne-ucxendpoint--endpoint-reset-flags.md">ENDPOINT_RESET_FLAGS</a> value that indicates reset parameters.</p>
 </dd>
 </dl>
 
@@ -100,7 +100,7 @@ typedef struct _ENDPOINT_RESET {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.endpoint_reset_flags">ENDPOINT_RESET_FLAGS</a>
+<a href="..\ucxendpoint\ne-ucxendpoint--endpoint-reset-flags.md">ENDPOINT_RESET_FLAGS</a>
 </dt>
 </dl>
 <p> </p>

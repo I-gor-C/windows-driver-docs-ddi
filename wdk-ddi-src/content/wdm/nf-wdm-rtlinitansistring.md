@@ -56,13 +56,13 @@ VOID RtlInitAnsiString(
 ## -parameters
 <dl>
 
-### -param <i>DestinationString</i> [out]
+### -param DestinationString [out]
 
 <dd>
 <p>A pointer to the <a href="kernel.ansi_string">ANSI_STRING</a> structure to be initialized.</p>
 </dd>
 
-### -param <i>SourceString</i> [in, optional]
+### -param SourceString [in, optional]
 
 <dd>
 <p>A pointer to a null-terminated character string. This string is used to initialize the counted string pointed to by <i>DestinationString</i>.</p>

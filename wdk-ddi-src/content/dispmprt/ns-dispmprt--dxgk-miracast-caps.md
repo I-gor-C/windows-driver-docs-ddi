@@ -61,30 +61,30 @@ typedef struct _DXGK_MIRACAST_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>MaxChunkPrivateDriverDataSize</b>
+### -field MaxChunkPrivateDriverDataSize
 
 <dd>
 <p>The maximum size, in bytes, of the private data that the display miniport driver will pass when it reports a <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-interrupt-type.md">DXGK_INTERRUPT_TYPE</a> interrupt type of <b>DXGK_INTERRUPT_MICACAST_CHUNK_PROCESSING_COMPLETE</b>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <dl>
 
-### -field <b>HdcpSupport</b>
+### -field HdcpSupport
 
 <dd>
 <p>Indicates whether the display adapter supports the Miracast High-bandwidth Digital Content Protection (HDCP) feature.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. The display miniport driver must set this value to zero.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>Holds a 32-bit value that identifies the capabilities of the Miracast device.</p>

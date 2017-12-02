@@ -7,7 +7,7 @@ old-location: ifsk\fltattachvolumeataltitude.htm
 old-project: ifsk
 ms.assetid: d6e6f66a-77ed-4c1c-92d5-97a806cfbd68
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltAttachVolumeAtAltitude
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ NTSTATUS FltAttachVolumeAtAltitude(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in, out]
+### -param Filter [in, out]
 
 <dd>
 <p>Opaque filter pointer for the caller. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>Volume</i> [in, out]
+### -param Volume [in, out]
 
 <dd>
 <p>Opaque volume pointer for the volume that the minifilter driver instance is to be attached to. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>Altitude</i> [in]
+### -param Altitude [in]
 
 <dd>
 <p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure containing the altitude string for the instance. This parameter is required and cannot be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.) </p>
 </dd>
 
-### -param <i>InstanceName</i> [in, optional]
+### -param InstanceName [in, optional]
 
 <dd>
 <p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure containing the instance name for the new instance. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, <b>FltAttachVolumeAtAltitude</b> generates an instance name from the minifilter driver name and the altitude string that <i>Altitude </i>points to. The generated name is truncated, if necessary, to INSTANCE_NAME_MAX_CHARS characters. </p>
 </dd>
 
-### -param <i>RetInstance</i> [out, optional]
+### -param RetInstance [out, optional]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives an opaque instance pointer for the newly created instance. This parameter is optional and can be <b>NULL</b>. </p>
@@ -198,4 +198,4 @@ NTSTATUS FltAttachVolumeAtAltitude(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAttachVolumeAtAltitude routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAttachVolumeAtAltitude routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

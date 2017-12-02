@@ -57,25 +57,25 @@ typedef struct DVD_READ_STRUCTURE {
 ## -struct-fields
 <dl>
 
-### -field <b>BlockByteOffset</b>
+### -field BlockByteOffset
 
 <dd>
 <p>Contains an offset to the logical block address of the descriptor to be retrieved. </p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>Indicates the type of DVD descriptor to retrieve. See the <a href="..\ntddcdvd\ne-ntddcdvd-dvd-structure-format.md">DVD_STRUCTURE_FORMAT</a> enumeration type for further information about the values that can be assigned to this member. </p>
 </dd>
 
-### -field <b>SessionId</b>
+### -field SessionId
 
 <dd>
 <p>Contains the DVD session ID. </p>
 </dd>
 
-### -field <b>LayerNumber</b>
+### -field LayerNumber
 
 <dd>
 <p>Contains the number of the layer where the descriptor is to be retrieved.</p>

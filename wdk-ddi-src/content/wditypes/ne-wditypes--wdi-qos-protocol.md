@@ -7,7 +7,7 @@ old-location: netvista\wdi_qos_protocol.htm
 old-project: netvista
 ms.assetid: 39466BF7-0517-4113-9C94-26D8691CCCC1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _WDI_QOS_PROTOCOL {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_QOS_PROTOCOL_NONE"></a><a id="wdi_qos_protocol_none"></a><b>WDI_QOS_PROTOCOL_NONE</b>
+### -field WDI_QOS_PROTOCOL_NONE
 
 <dd>
 <p>None</p>
 </dd>
 
-### -field <a id="WDI_QOS_PROTOCOL_WMM"></a><a id="wdi_qos_protocol_wmm"></a><b>WDI_QOS_PROTOCOL_WMM</b>
+### -field WDI_QOS_PROTOCOL_WMM
 
 <dd>
 <p>Wi-Fi Multimedia (WMM, formerly known as Wireless Multimedia Extensions)</p>
 </dd>
 
-### -field <a id="WDI_QOS_PROTOCOL_11E"></a><a id="wdi_qos_protocol_11e"></a><b>WDI_QOS_PROTOCOL_11E</b>
+### -field WDI_QOS_PROTOCOL_11E
 
 <dd>
 <p>802.11E</p>

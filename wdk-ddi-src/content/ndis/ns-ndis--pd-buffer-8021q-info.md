@@ -7,7 +7,7 @@ old-location: netvista\pd_buffer_8021q_info.htm
 old-project: netvista
 ms.assetid: B5B2051E-C62F-4E3D-9C52-DE46145A2C24
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PD_BUFFER_8021Q_INFO, PD_BUFFER_8021Q_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef struct _PD_BUFFER_8021Q_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>UserPriority</b>
+### -field UserPriority
 
 <dd>
 <p>The user priority.</p>
 </dd>
 
-### -field <b>CanonicalFormatId</b>
+### -field CanonicalFormatId
 
 <dd>
 <p>The canonical format ID.</p>
 </dd>
 
-### -field <b>VlanId</b>
+### -field VlanId
 
 <dd>
 <p>The virtual LAN ID.</p>

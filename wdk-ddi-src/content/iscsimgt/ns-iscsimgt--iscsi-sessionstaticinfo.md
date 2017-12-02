@@ -70,49 +70,49 @@ typedef struct _ISCSI_SessionStaticInfo {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueSessionId</b>
+### -field UniqueSessionId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the <b>ISID</b> and <b>TSID</b> members.</p>
 </dd>
 
-### -field <b>InitiatoriSCSIName</b>
+### -field InitiatoriSCSIName
 
 <dd>
 <p>A wide character string that specifies the initiator node name.</p>
 </dd>
 
-### -field <b>TargetiSCSIName</b>
+### -field TargetiSCSIName
 
 <dd>
 <p>A wide character string that specifies the node name of the target.</p>
 </dd>
 
-### -field <b>TSID</b>
+### -field TSID
 
 <dd>
 <p>An internal value that specifies the portion of the iSCSI session ID that the target provides. The iSCSI protocol uses TSID together with ISID to identify the session. Do not confuse TSID with the session ID that <b>UniqueSessionId</b> specifies.</p>
 </dd>
 
-### -field <b>ISID</b>
+### -field ISID
 
 <dd>
 <p>An internal value that specifies the portion of the iSCSI session ID that the initiator provides.</p>
 </dd>
 
-### -field <b>InitialR2t</b>
+### -field InitialR2t
 
 <dd>
 <p>A Boolean value that indicates if the initiator must wait for a ready-to-send (R2T) request before sending data to the target. If this member is <b>TRUE</b>, the initiator must wait for a ready-to-send (R2T) request before sending data to the target. If this member is <b>FALSE</b>, the initiator can send unsolicited data within limits that the value of <b>FirstBurstLength</b> specifies.</p>
 </dd>
 
-### -field <b>ImmediateData</b>
+### -field ImmediateData
 
 <dd>
 <p>A Boolean value that indicates if the initiator and target have agreed to allow the transmission of immediate data in the session. (<i>Immediate data</i> is data that the initiator piggybacks onto an iSCSI command PDU.) If this member is <b>TRUE</b>, the initiator and target have agreed to allow the transmission of immediate data in this session.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>An <a href="storage.iscsi_session_type_qualifiers">ISCSI_SESSION_TYPE_QUALIFIERS</a> enumeration value that specifies the type of logon session.</p>
@@ -157,56 +157,56 @@ typedef struct _ISCSI_SessionStaticInfo {
 <p> </p>
 </dd>
 
-### -field <b>DataSequenceInOrder</b>
+### -field DataSequenceInOrder
 
 <dd>
 <p>A Boolean value that indicates whether sequences of data PDUs must be transmitted by using continuously increasing offsets, except during error recovery. If this member is <b>TRUE</b>, sequences of data PDUs must be transmitted by using continuously increasing offsets, except during error recovery. If this member is <b>FALSE</b>, sequences of data PDUs can be transmitted in any order. </p>
 <p>The value in <b>DataSequenceInOrder</b> indicates the ordering of the sequences themselves, not the ordering of the data PDUs within each sequence. The <b>DataPduInOrder</b> member indicates the ordering of the data PDUs within each sequence. </p>
 </dd>
 
-### -field <b>DataPduInOrder</b>
+### -field DataPduInOrder
 
 <dd>
 <p>A Boolean value that indicates whether the data PDUs within a sequence of data PDUs must be located at continuously increasing addresses. If this member is <b>TRUE</b>, the data PDUs within a sequence of data PDUs must be located at continuously increasing addresses, with no gaps or overlay between PDUs. If this member is <b>FALSE</b>, the data PDUs within each sequence can be in any order. </p>
 </dd>
 
-### -field <b>ErrorRecoveryLevel</b>
+### -field ErrorRecoveryLevel
 
 <dd>
 <p>The level of error recovery that the initiator and the target negotiated. Higher numbers represent more elaborate recovery schemes. Currently, this member must be 0 or ULONG_VALUE_UNKNOWN.</p>
 </dd>
 
-### -field <b>MaxOutstandingR2t</b>
+### -field MaxOutstandingR2t
 
 <dd>
 <p>The maximum number of outstanding ready-to-transmit (R2T) requests that are allowed for each task within this session. </p>
 </dd>
 
-### -field <b>FirstBurstLength</b>
+### -field FirstBurstLength
 
 <dd>
 <p>The maximum amount of unsolicited data, in bytes, that you can send within this session. </p>
 </dd>
 
-### -field <b>MaxBurstLength</b>
+### -field MaxBurstLength
 
 <dd>
 <p>The maximum number of bytes that you can send within a single sequence of Data-In or Data-Out PDUs. </p>
 </dd>
 
-### -field <b>MaxConnections</b>
+### -field MaxConnections
 
 <dd>
 <p>The maximum number of connections that are allowed within this session.</p>
 </dd>
 
-### -field <b>ConnectionCount</b>
+### -field ConnectionCount
 
 <dd>
 <p>The number of connections that currently belong to this session.</p>
 </dd>
 
-### -field <b>ConnectionsList</b>
+### -field ConnectionsList
 
 <dd>
 <p>A variable length array of <a href="..\iscsimgt\ns-iscsimgt--iscsi-connectionstaticinfo.md">ISCSI_ConnectionStaticInfo</a> structures that specifies the static configuration data for each connection that is associated with this session. <b>ConnectionCount</b> indicates the number of elements in the array.</p>

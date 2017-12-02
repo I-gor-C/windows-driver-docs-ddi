@@ -57,25 +57,25 @@ PIRP KsRemoveIrpFromCancelableQueue(
 ## -parameters
 <dl>
 
-### -param <i>QueueHead</i> [in, out]
+### -param QueueHead [in, out]
 
 <dd>
 <p>Points to the head of the queue from which to remove the IRP.</p>
 </dd>
 
-### -param <i>SpinLock</i> [in]
+### -param SpinLock [in]
 
 <dd>
 <p>Points to driver's spin lock for queue access.</p>
 </dd>
 
-### -param <i>ListLocation</i> [in]
+### -param ListLocation [in]
 
 <dd>
 <p>Indicates whether this IRP should come from the beginning or end of the queue.</p>
 </dd>
 
-### -param <i>RemovalOperation</i> [in]
+### -param RemovalOperation [in]
 
 <dd>
 <p>Specifies whether the IRP is removed from the list or just acquired by setting the cancel function to <b>NULL</b>. If it is only acquired, the IRP must be later released with <b>KsReleaseIrpOnCancelableQueue</b> or completely removed with <b>KsRemoveSpecificIrpFromCancelableQueue</b>.</p>

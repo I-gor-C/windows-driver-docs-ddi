@@ -7,7 +7,7 @@ old-location: netvista\rilcallvideomediastateparammask.htm
 old-project: netvista
 ms.assetid: e36617c0-8471-417d-9135-bdd29c586172
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILCALLVIDEOMEDIASTATEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_CALLVIDEO_FLAGS"></a><a id="ril_param_callvideo_flags"></a><b>RIL_PARAM_CALLVIDEO_FLAGS</b>
+### -field RIL_PARAM_CALLVIDEO_FLAGS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CALLVIDEO_CONTEXTID"></a><a id="ril_param_callvideo_contextid"></a><b>RIL_PARAM_CALLVIDEO_CONTEXTID</b>
+### -field RIL_PARAM_CALLVIDEO_CONTEXTID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CALLVIDEO_ALL"></a><a id="ril_param_callvideo_all"></a><b>RIL_PARAM_CALLVIDEO_ALL</b>
+### -field RIL_PARAM_CALLVIDEO_ALL
 
 <dd></dd>
 </dl>

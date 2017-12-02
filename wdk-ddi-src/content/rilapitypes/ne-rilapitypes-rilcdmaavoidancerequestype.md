@@ -7,7 +7,7 @@ old-location: netvista\rilcdmaavoidancerequestype_2.htm
 old-project: netvista
 ms.assetid: e234a3bf-599b-4ccc-961e-a395b0453658
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef enum _RILCDMAAVOIDANCEREQUESTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_AVOID_SYS_CLR_LIST"></a><a id="ril_avoid_sys_clr_list"></a><b>RIL_AVOID_SYS_CLR_LIST</b>
+### -field RIL_AVOID_SYS_CLR_LIST
 
 <dd></dd>
 </dl>

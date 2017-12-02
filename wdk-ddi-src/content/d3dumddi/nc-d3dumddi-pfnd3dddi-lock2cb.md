@@ -58,13 +58,13 @@ HRESULT APIENTRY CALLBACK* pfnLock2Cb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-lock2.md">D3DDDICB_LOCK2</a> structure that describes the allocation to lock.</p>

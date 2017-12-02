@@ -7,7 +7,7 @@ old-location: netvista\wwan_context.htm
 old-project: netvista
 ms.assetid: 81687237-7b24-439f-b706-e0bf95b4de68
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_CONTEXT, WWAN_CONTEXT, *PWWAN_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ typedef struct _WWAN_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>ContextId</b>
+### -field ContextId
 
 <dd>
 <p>A unique ID for this context.
@@ -74,7 +74,7 @@ typedef struct _WWAN_CONTEXT {
      <i>query</i> OID_WWAN_PROVISIONED_CONTEXT requests.</p>
 </dd>
 
-### -field <b>ContextType</b>
+### -field ContextType
 
 <dd>
 <p>Specifies the type of context being represented, for example, Internet connectivity, VPN (a
@@ -82,7 +82,7 @@ typedef struct _WWAN_CONTEXT {
      <b>WwanContextTypeNone</b> for empty or unprovisioned contexts.</p>
 </dd>
 
-### -field <b>AccessString</b>
+### -field AccessString
 
 <dd>
 <p>A NULL-terminated string to access the network. For GSM-based networks, this would be an Access
@@ -93,19 +93,19 @@ typedef struct _WWAN_CONTEXT {
 <p>The size of the string should not exceed 100 bytes.</p>
 </dd>
 
-### -field <b>UserName</b>
+### -field UserName
 
 <dd>
 <p>The username to use for authentication. This member can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Password</b>
+### -field Password
 
 <dd>
 <p>The password to use for authentication. This member can be <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Compression</b>
+### -field Compression
 
 <dd>
 <p>Specifies the compression to be used in the data connection for header and data. This member
@@ -113,7 +113,7 @@ typedef struct _WWAN_CONTEXT {
      <b>WwanCompressionNone</b> for CDMA-based devices.</p>
 </dd>
 
-### -field <b>AuthType</b>
+### -field AuthType
 
 <dd>
 <p>Authentication type to use for the PDP activation.</p>
@@ -163,4 +163,4 @@ typedef struct _WWAN_CONTEXT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CONTEXT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CONTEXT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

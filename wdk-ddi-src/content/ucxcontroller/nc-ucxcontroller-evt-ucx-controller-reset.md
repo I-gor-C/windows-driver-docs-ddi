@@ -60,7 +60,7 @@ typedef EVT_UCX_CONTROLLER_RESET PEVT_UCX_CONTROLLER_RESET;
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
@@ -73,9 +73,9 @@ typedef EVT_UCX_CONTROLLER_RESET PEVT_UCX_CONTROLLER_RESET;
 ## -remarks
 <p>The UCX client driver registers its <i>EVT_UCX_CONTROLLER_RESET</i> implementation with the USB host controller extension (UCX) by calling the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 
-<p>The client driver indicates completion of this event by calling the <a href="buses._ucxcontrollerresetcomplete">UcxControllerResetComplete</a> method. Doing so ensures that UCX does not call <i>EVT_UCX_CONTROLLER_RESET</i> a second time before this event callback completes.</p>
+<p>The client driver indicates completion of this event by calling the <a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollerresetcomplete.md">UcxControllerResetComplete</a> method. Doing so ensures that UCX does not call <i>EVT_UCX_CONTROLLER_RESET</i> a second time before this event callback completes.</p>
 
-<p>If the client driver calls <a href="buses._ucxcontrollerneedsreset">UcxControllerNeedsReset</a>, UCX calls this event callback function.  However, UCX may call this event callback function even when the client driver has not called <b>UcxControllerNeedsReset</b>. </p>
+<p>If the client driver calls <a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollerneedsreset.md">UcxControllerNeedsReset</a>, UCX calls this event callback function.  However, UCX may call this event callback function even when the client driver has not called <b>UcxControllerNeedsReset</b>. </p>
 
 ## -requirements
 <table>
@@ -121,10 +121,10 @@ typedef EVT_UCX_CONTROLLER_RESET PEVT_UCX_CONTROLLER_RESET;
 <a href="buses._ucxcontrollercreate">UcxControllerCreate</a>
 </dt>
 <dt>
-<a href="buses._ucxcontrollerresetcomplete">UcxControllerResetComplete</a>
+<a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollerresetcomplete.md">UcxControllerResetComplete</a>
 </dt>
 <dt>
-<a href="buses._ucxcontrollerneedsreset">UcxControllerNeedsReset</a>
+<a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollerneedsreset.md">UcxControllerNeedsReset</a>
 </dt>
 </dl>
 <p> </p>

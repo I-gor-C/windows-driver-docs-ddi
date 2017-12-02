@@ -57,19 +57,19 @@ typedef struct _WINBIO_GET_INDICATOR {
 ## -struct-fields
 <dl>
 
-### -field <b>PayloadSize</b>
+### -field PayloadSize
 
 <dd>
 <p>Specifies the total size of the payload, which includes the fixed length structure and any variable data at the end.</p>
 </dd>
 
-### -field <b>WinBioHresult</b>
+### -field WinBioHresult
 
 <dd>
 <p>Specifies an HRESULT that contains the status of the I/O operation. See <a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-get-indicator.md">IOCTL_BIOMETRIC_GET_INDICATOR</a> for possible values.</p>
 </dd>
 
-### -field <b>IndicatorStatus</b>
+### -field IndicatorStatus
 
 <dd>
 <p>Specifies a WINBIO_INDICATOR_STATUS, which indicates whether the indicator light is on or off.</p>

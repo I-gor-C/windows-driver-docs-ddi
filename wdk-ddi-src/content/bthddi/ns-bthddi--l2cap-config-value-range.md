@@ -59,19 +59,19 @@ typedef struct _L2CAP_CONFIG_VALUE_RANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>Min</b>
+### -field Min
 
 <dd>
 <p>The minimum value that the local system will accept.</p>
 </dd>
 
-### -field <b>Preferred</b>
+### -field Preferred
 
 <dd>
 <p>The ideal value that the local system requests that the remote device accept.</p>
 </dd>
 
-### -field <b>Max</b>
+### -field Max
 
 <dd>
 <p>The maximum value that the local system will accept.</p>

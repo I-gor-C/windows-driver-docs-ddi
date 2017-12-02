@@ -58,56 +58,56 @@ NTSTATUS RtlUnicodeStringPrintfEx(
 ## -parameters
 <dl>
 
-### -param <i>DestinationString</i> [out]
+### -param DestinationString [out]
 
 <dd>
 <p>Optional. A pointer to a <b>UNICODE_STRING</b> structure that receives a formatted string. <b>RtlUnicodeStringPrintfEx</b> creates this string from both the formatting string that <i>pszFormat</i> specifies and the function's argument list. The maximum number of characters in the string is NTSTRSAFE_UNICODE_STRING_MAX_CCH. <i>DestinationString</i> can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.</p>
 </dd>
 
-### -param <i>RemainingString</i> [out, optional]
+### -param RemainingString [out, optional]
 
 <dd>
 <p>Optional. If the caller supplies a non-<b>NULL</b> pointer to a <b>UNICODE_STRING</b> structure, <b>RtlUnicodeStringPrintfEx</b> sets this structure's <b>Buffer</b> member to the end of the formatted string, sets the structure's <b>Length</b> member to zero, and sets the structure's <b>MaximumLength</b> member to the number of bytes that are remaining in the destination buffer. <i>RemainingString</i> can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.</p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>One or more flags and, optionally, a fill byte. The flags are defined as follows:</p>
 <p></p>
 <dl>
 
-### -param <a id="STRSAFE_FILL_BEHIND"></a><a id="strsafe_fill_behind"></a>STRSAFE_FILL_BEHIND
+### -param STRSAFE_FILL_BEHIND
 
 <dd>
 <p>If this flag is set and the function succeeds, the low byte of <i>dwFlags</i> is used to fill the portion of the destination buffer that follows the last character in the string.</p>
 </dd>
 
-### -param <a id="STRSAFE_IGNORE_NULLS_"></a><a id="strsafe_ignore_nulls_"></a>STRSAFE_IGNORE_NULLS 
+### -param STRSAFE_IGNORE_NULLS 
 
 <dd>
 <p>If this flag is set, the source or destination pointer, or both, can be <b>NULL</b>. <b>RtlUnicodeStringPrintfEx</b> treats <b>NULL</b> source buffer pointers like empty strings (TEXT("")), which can be copied. <b>NULL</b> destination buffer pointers cannot receive nonempty strings.</p>
 </dd>
 
-### -param <a id="STRSAFE_FILL_ON_FAILURE_"></a><a id="strsafe_fill_on_failure_"></a>STRSAFE_FILL_ON_FAILURE 
+### -param STRSAFE_FILL_ON_FAILURE 
 
 <dd>
 <p>If this flag is set and the function fails, the low byte of <i>dwFlags</i> is used to fill the entire destination buffer. This operation overwrites any preexisting buffer contents.</p>
 </dd>
 
-### -param <a id="STRSAFE_NULL_ON_FAILURE_"></a><a id="strsafe_null_on_failure_"></a>STRSAFE_NULL_ON_FAILURE 
+### -param STRSAFE_NULL_ON_FAILURE 
 
 <dd>
 <p>If this flag is set and the function fails, the destination buffer is set to an empty string (TEXT("")). This operation overwrites any preexisting buffer contents.</p>
 </dd>
 
-### -param <a id="STRSAFE_NO_TRUNCATION_"></a><a id="strsafe_no_truncation_"></a>STRSAFE_NO_TRUNCATION 
+### -param STRSAFE_NO_TRUNCATION 
 
 <dd>
 <p>If this flag is set and the function returns STATUS_BUFFER_OVERFLOW, the contents of the destination buffer are not modified.</p>
 </dd>
 
-### -param <a id="STRSAFE_ZERO_LENGTH_ON_FAILURE"></a><a id="strsafe_zero_length_on_failure"></a>STRSAFE_ZERO_LENGTH_ON_FAILURE
+### -param STRSAFE_ZERO_LENGTH_ON_FAILURE
 
 <dd>
 <p>If this flag is set and the function returns STATUS_BUFFER_OVERFLOW, the destination string length is set to zero bytes.</p>
@@ -115,13 +115,13 @@ NTSTATUS RtlUnicodeStringPrintfEx(
 </dl>
 </dd>
 
-### -param <i>pszFormat</i> [in]
+### -param pszFormat [in]
 
 <dd>
 <p>A pointer to a null-terminated text string that contains <b>printf</b>-styled formatting directives. This pointer can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.</p>
 </dd>
 
-### -param <i>...</i> 
+### -param ... 
 
 <dd>
 <p>Optional. A list of arguments that <b>RtlUnicodeStringPrintfEx</b> interprets, based on formatting directives that the <i>pszFormat</i> string specifies.</p>

@@ -57,19 +57,19 @@ typedef struct _ACCESS_RANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>RangeStart</b>
+### -field RangeStart
 
 <dd>
 <p>Contains an address of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff565350">SCSI_PHYSICAL_ADDRESS</a> that specifies the bus-relative base address of the range. This is an address that can be passed into <a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>.</p>
 </dd>
 
-### -field <b>RangeLength</b>
+### -field RangeLength
 
 <dd>
 <p>Specifies the size, in bytes, or number of ports in the range. A miniport driver must ensure that this value matches the range actually decoded by the adapter. For example, if the HBA uses seven registers but responds to eight, this member should be set to 8.</p>
 </dd>
 
-### -field <b>RangeInMemory</b>
+### -field RangeInMemory
 
 <dd>
 <p>Indicates the range is in memory when <b>TRUE</b>, rather than in I/O space. When <b>FALSE</b>, the range is in I/O space. </p>

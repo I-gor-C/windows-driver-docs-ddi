@@ -7,7 +7,7 @@ old-location: netvista\protocolindicateoffloadevent.htm
 old-project: netvista
 ms.assetid: 608c1c7c-1eb3-4d86-9471-313fce2df00e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: BINARY_DATA, BINARY_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ VOID ProtocolIndicateOffloadEvent(
 ## -parameters
 <dl>
 
-### -param <i>ProtocolBindingContext</i> [in]
+### -param ProtocolBindingContext [in]
 
 <dd>
 <p>A handle to a context area that was allocated by the protocol driver. The driver maintains the per
@@ -73,7 +73,7 @@ VOID ProtocolIndicateOffloadEvent(
      <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.</p>
 </dd>
 
-### -param <i>OffloadBlockList</i> [in]
+### -param OffloadBlockList [in]
 
 <dd>
 <p>A pointer to an 
@@ -95,7 +95,7 @@ VOID ProtocolIndicateOffloadEvent(
      <i>OffloadBlockList</i> pointer.</p>
 </dd>
 
-### -param <i>IndicationCode</i> [in]
+### -param IndicationCode [in]
 
 <dd>
 <p>The event being indicated as one of the following INDICATE_OFFLOAD_EVENT values:
@@ -103,14 +103,14 @@ VOID ProtocolIndicateOffloadEvent(
 <p></p>
 <dl>
 
-### -param <a id="NeighborReachabilityQuery"></a><a id="neighborreachabilityquery"></a><a id="NEIGHBORREACHABILITYQUERY"></a><b>NeighborReachabilityQuery</b>
+### -param NeighborReachabilityQuery
 
 <dd>
 <p>Indicates that a neighbor cache entry (NCE) has become stale. For more information about NCEs,
        see RFC 2461.</p>
 </dd>
 
-### -param <a id="NeighborReachabilityInDoubt"></a><a id="neighborreachabilityindoubt"></a><a id="NEIGHBORREACHABILITYINDOUBT"></a><b>NeighborReachabilityInDoubt</b>
+### -param NeighborReachabilityInDoubt
 
 <dd>
 <p>Reserved.</p>
@@ -161,4 +161,4 @@ VOID ProtocolIndicateOffloadEvent(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20INDICATE_OFFLOAD_EVENT_HANDLER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20INDICATE_OFFLOAD_EVENT_HANDLER callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

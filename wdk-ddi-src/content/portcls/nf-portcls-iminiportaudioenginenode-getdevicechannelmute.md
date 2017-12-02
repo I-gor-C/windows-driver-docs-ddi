@@ -56,19 +56,19 @@ NTSTATUS GetDeviceChannelMute(
 ## -parameters
 <dl>
 
-### -param <i>ulNodeId</i> [in]
+### -param ulNodeId [in]
 
 <dd>
 <p>The ID for the node that represents the audio device.</p>
 </dd>
 
-### -param <i>ulChannel</i> [in]
+### -param ulChannel [in]
 
 <dd>
 <p>The audio device channel.</p>
 </dd>
 
-### -param <i>pbMute</i> [out]
+### -param pbMute [out]
 
 <dd>
 <p>The current state of the Mute node for the audio device channel.</p>

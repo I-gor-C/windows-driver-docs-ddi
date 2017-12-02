@@ -63,37 +63,37 @@ NTSTATUS APIENTRY USBCAMD_BulkReadWrite(
 ## -parameters
 <dl>
 
-### -param <i>DeviceContext</i> [in]
+### -param DeviceContext [in]
 
 <dd>
 <p>Pointer to the camera minidriver's device context.</p>
 </dd>
 
-### -param <i>PipeIndex</i> [in]
+### -param PipeIndex [in]
 
 <dd>
 <p>Specifies the index of the bulk pipe.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to the read or write buffer. If this parameter is set to <b>NULL</b> for a read request, USBCAMD pulls a data SRB from the SRB read queue of the stream associated with this pipe. Write requests with a <b>NULL</b> buffer pointer are only permitted on the still pin if an SRB_WRITE_DATA request has been submitted to the still pin.</p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>Specifies the length of the read/write buffer in bytes.</p>
 </dd>
 
-### -param <i>CommandComplete</i> [in]
+### -param CommandComplete [in]
 
 <dd>
 <p>Pointer to a camera minidriver defined <a href="stream.commandcompletefunction">CommandCompleteFunction</a>, which is called when the bulk read or write is completed. This value can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>CommandContext</i> [in]
+### -param CommandContext [in]
 
 <dd>
 <p>Pointer to a block of memory, that is passed as an argument to the camera minidriver defined <a href="stream.commandcompletefunction">CommandCompleteFunction</a>.</p>

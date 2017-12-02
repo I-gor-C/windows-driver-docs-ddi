@@ -55,13 +55,13 @@ typedef struct _KEY_NAME_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NameLength</b>
+### -field NameLength
 
 <dd>
 <p>The size, in bytes, of the key name string in the <b>Name</b> array.</p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>An array of wide characters that contains the name of the key. This character string is <u>not</u> null-terminated. Only the first element in this array is included in the <b>KEY_NAME_INFORMATION</b> structure definition. The storage for the remaining elements in the array immediately follows this element.</p>

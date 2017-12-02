@@ -56,19 +56,19 @@ NTSTATUS KsProbeStreamIrp(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>Specifies the IRP whose input and output buffers are to be mapped. The requester mode of the IRP is used when probing the buffers.</p>
 </dd>
 
-### -param <i>ProbeFlags</i> [in]
+### -param ProbeFlags [in]
 
 <dd>
 <p>Specifies flags specifying how to probe the streaming IRP; the flags are listed in the following table.</p>
 </dd>
 
-### -param <i>HeaderSize</i> [in, optional]
+### -param HeaderSize [in, optional]
 
 <dd>
 <p>Specifies the size to validate each header header against passed to this client, or zero if no validation is to be done. If used, it is assumed that the entire buffer passed is a multiple of this header size, unless the buffer instead contains a single format change header.</p>

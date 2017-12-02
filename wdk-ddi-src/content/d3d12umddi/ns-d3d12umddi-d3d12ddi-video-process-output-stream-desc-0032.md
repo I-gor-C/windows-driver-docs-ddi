@@ -60,31 +60,31 @@ typedef struct _D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>The DXGI format of the output texture.</p>
 </dd>
 
-### -field <b>ColorSpace</b>
+### -field ColorSpace
 
 <dd>
 <p>A DXGI_COLOR_SPACE_TYPE value that specifies the colorspace for the video processor output surface.</p>
 </dd>
 
-### -field <b>AlphaFillMode</b>
+### -field AlphaFillMode
 
 <dd>
 <p>The alpha fill mode for data that the video processor writes to the render target.  See D3D12DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE.</p>
 </dd>
 
-### -field <b>AlphaFillModeSourceStreamIndex</b>
+### -field AlphaFillModeSourceStreamIndex
 
 <dd>
 <p>The zero-based index of an input stream. This parameter is used if AlphaFillMode is D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_SOURCE_STREAM. Otherwise, the parameter is ignored.</p>
 </dd>
 
-### -field <b>BackgroundColor[4]</b>
+### -field BackgroundColor[4]
 
 <dd>
 <p>The video processor uses the background color to fill areas of the target rectangle that do not contain a video image. Areas outside the target rectangle are not affected.  The meaning of the values is specified by the ColorSpace parameter.</p>
@@ -118,13 +118,13 @@ typedef struct _D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032 {
 <p> </p>
 </dd>
 
-### -field <b>FrameRate</b>
+### -field FrameRate
 
 <dd>
 <p>The frame rate of the output video stream, specified as a DXGI_RATIONAL structure.</p>
 </dd>
 
-### -field <b>EnableStereo</b>
+### -field EnableStereo
 
 <dd>
 <p>If TRUE, stereo output is enabled. Otherwise, the video processor produces mono video frames.</p>

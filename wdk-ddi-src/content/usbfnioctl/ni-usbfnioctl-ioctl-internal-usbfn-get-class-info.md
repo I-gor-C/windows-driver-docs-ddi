@@ -54,20 +54,20 @@ req.product: Windows 10 or later.
 <p>None.</p>
 
 ### -output-buffer
-<p>A pointer to a buffer that contains a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.</p>
+<p>A pointer to a buffer that contains a <a href="..\usbfnbase\ns-usbfnbase--usbfn-class-information-packet.md">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.</p>
 
-<p>A pointer to a buffer that contains a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.</p>
+<p>A pointer to a buffer that contains a <a href="..\usbfnbase\ns-usbfnbase--usbfn-class-information-packet.md">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.</p>
 
-<p>A pointer to a buffer that contains a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.</p>
+<p>A pointer to a buffer that contains a <a href="..\usbfnbase\ns-usbfnbase--usbfn-class-information-packet.md">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.</p>
 
 ### -output-buffer-length
-<p>The size of a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
+<p>The size of a <a href="..\usbfnbase\ns-usbfnbase--usbfn-class-information-packet.md">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
 
-<p>The size of a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
+<p>The size of a <a href="..\usbfnbase\ns-usbfnbase--usbfn-class-information-packet.md">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
 
-<p>The size of a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
+<p>The size of a <a href="..\usbfnbase\ns-usbfnbase--usbfn-class-information-packet.md">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
 
-<p>The size of a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
+<p>The size of a <a href="..\usbfnbase\ns-usbfnbase--usbfn-class-information-packet.md">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
 
 ### -in-out-buffer
 

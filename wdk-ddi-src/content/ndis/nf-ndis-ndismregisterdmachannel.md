@@ -7,7 +7,7 @@ old-location: netvista\ndismregisterdmachannel.htm
 old-project: netvista
 ms.assetid: 32e92f77-8f45-408b-a284-c00d3b5bd1b4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMRegisterDmaChannel
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NDIS_STATUS NdisMRegisterDmaChannel(
 ## -parameters
 <dl>
 
-### -param <i>MiniportDmaHandle</i> [out]
+### -param MiniportDmaHandle [out]
 
 <dd>
 <p>A pointer to a caller-supplied variable in which this function returns a handle the miniport
@@ -69,7 +69,7 @@ NDIS_STATUS NdisMRegisterDmaChannel(
      <b>NdisM<i>Xxx</i></b> system DMA functions.</p>
 </dd>
 
-### -param <i>MiniportAdapterHandle</i> [in]
+### -param MiniportAdapterHandle [in]
 
 <dd>
 <p>The miniport adapter handle input to the 
@@ -77,20 +77,20 @@ NDIS_STATUS NdisMRegisterDmaChannel(
      MiniportInitializeEx</a> function.</p>
 </dd>
 
-### -param <i>DmaChannel</i> [in]
+### -param DmaChannel [in]
 
 <dd>
 <p>Ignored. Set the DMA channel, if any, at 
      <i>DmaDescription</i> .</p>
 </dd>
 
-### -param <i>Dma32BitAddresses</i> [in]
+### -param Dma32BitAddresses [in]
 
 <dd>
 <p>A boolean value that is <b>TRUE</b> if the NIC has 32 address lines. Otherwise, it is <b>FALSE</b>.</p>
 </dd>
 
-### -param <i>DmaDescription</i> [in]
+### -param DmaDescription [in]
 
 <dd>
 <p>A pointer to an NDIS_DMA_DESCRIPTION structure filled in by the caller. This structure is defined
@@ -118,21 +118,21 @@ NDIS_STATUS NdisMRegisterDmaChannel(
 <p></p>
 <dl>
 
-### -param <a id="DemandMode"></a><a id="demandmode"></a><a id="DEMANDMODE"></a><b>DemandMode</b>
+### -param DemandMode
 
 <dd>
 <p>A boolean value that is <b>TRUE</b> if the subordinate NIC uses the system DMA controller's demand
        mode. Otherwise, it is <b>FALSE</b>.</p>
 </dd>
 
-### -param <a id="AutoInitialize"></a><a id="autoinitialize"></a><a id="AUTOINITIALIZE"></a><b>AutoInitialize</b>
+### -param AutoInitialize
 
 <dd>
 <p>A boolean value that is <b>TRUE</b> if the subordinate NIC uses the system DMA controller's
        autoinitialize mode. Otherwise, it is <b>FALSE</b>.</p>
 </dd>
 
-### -param <a id="DmaChannelSpecified"></a><a id="dmachannelspecified"></a><a id="DMACHANNELSPECIFIED"></a><b>DmaChannelSpecified</b>
+### -param DmaChannelSpecified
 
 <dd>
 <p>A boolean value that is <b>TRUE</b> if 
@@ -140,7 +140,7 @@ NDIS_STATUS NdisMRegisterDmaChannel(
        NIC. Otherwise, it is <b>FALSE</b>.</p>
 </dd>
 
-### -param <a id="DmaWidth"></a><a id="dmawidth"></a><a id="DMAWIDTH"></a><b>DmaWidth</b>
+### -param DmaWidth
 
 <dd>
 <p>The transfer width for DMA operations, one of 
@@ -149,7 +149,7 @@ NDIS_STATUS NdisMRegisterDmaChannel(
        <b>Width32Bits</b>.</p>
 </dd>
 
-### -param <a id="DmaSpeed"></a><a id="dmaspeed"></a><a id="DMASPEED"></a><b>DmaSpeed</b>
+### -param DmaSpeed
 
 <dd>
 <p>The DMA speed as one of 
@@ -159,14 +159,14 @@ NDIS_STATUS NdisMRegisterDmaChannel(
        <b>TypeC</b>.</p>
 </dd>
 
-### -param <a id="DmaPort"></a><a id="dmaport"></a><a id="DMAPORT"></a><b>DmaPort</b>
+### -param DmaPort
 
 <dd>
 <p>This member refers to the MCA bus, which is no longer supported. This member must be
        zero.</p>
 </dd>
 
-### -param <a id="DmaChannel"></a><a id="dmachannel"></a><a id="DMACHANNEL"></a><b>DmaChannel</b>
+### -param DmaChannel
 
 <dd>
 <p>The bus-relative number of the system DMA controller channel used by the NIC.</p>
@@ -174,7 +174,7 @@ NDIS_STATUS NdisMRegisterDmaChannel(
 </dl>
 </dd>
 
-### -param <i>MaximumLength</i> [in]
+### -param MaximumLength [in]
 
 <dd>
 <p>The maximum number of bytes that the NIC can transfer in a single DMA operation. If the NIC has
@@ -306,4 +306,4 @@ NDIS_STATUS NdisMRegisterDmaChannel(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterDmaChannel function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterDmaChannel function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

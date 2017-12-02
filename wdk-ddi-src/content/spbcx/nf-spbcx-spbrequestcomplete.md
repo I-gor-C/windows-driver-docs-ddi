@@ -7,7 +7,7 @@ old-location: spb\spbrequestcomplete.htm
 old-project: SPB
 ms.assetid: 356BC81E-8FE9-4BC7-83E5-20A64D149A0D
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/30/2017
 ms.keywords: SpbRequestComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,32 +56,32 @@ VOID SpbRequestComplete(
 ## -parameters
 <dl>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>An <a href="buses.spbrequest_object_handle">SPBREQUEST</a> handle to the I/O request to complete. The SPB controller driver previously received this handle through one of its registered <a href="https://msdn.microsoft.com/1DA1FF41-FB01-45CC-B0C1-EAF2C81D0CDA">event callback functions</a>.</p>
 </dd>
 
-### -param <i>CompletionStatus</i> [in]
+### -param CompletionStatus [in]
 
 <dd>
 <p>An NTSTATUS value that represents the completion status of the request. Valid status values include, but are not limited to, the following:</p>
 <p></p>
 <dl>
 
-### -param <a id="STATUS_SUCCESS"></a><a id="status_success"></a>STATUS_SUCCESS
+### -param STATUS_SUCCESS
 
 <dd>
 <p>The I/O request completed successfully.</p>
 </dd>
 
-### -param <a id="STATUS_CANCELLED"></a><a id="status_cancelled"></a>STATUS_CANCELLED
+### -param STATUS_CANCELLED
 
 <dd>
 <p>The I/O request is canceled.</p>
 </dd>
 
-### -param <a id="STATUS_UNSUCCESSFUL"></a><a id="status_unsuccessful"></a>STATUS_UNSUCCESSFUL
+### -param STATUS_UNSUCCESSFUL
 
 <dd>
 <p>The driver encountered an error while processing the I/O request.</p>
@@ -175,4 +175,4 @@ VOID SpbRequestComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SpbRequestComplete method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SpbRequestComplete method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

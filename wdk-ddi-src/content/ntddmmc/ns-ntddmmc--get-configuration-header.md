@@ -57,25 +57,25 @@ typedef struct _GET_CONFIGURATION_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>DataLength</b>
+### -field DataLength
 
 <dd>
 <p>Indicates the amount of data, in bytes, that is being returned in the buffer area pointed to by the <b>Data</b> member. If the data length is greater than 65,530 bytes, multiple GET CONFIGURATION commands will be required for the Initiator to read all configuration data. The bytes in this array are arranged in big-endian order. <b>DataLength</b>[0] has the most significant byte, and  <b>DataLength</b>[3] has the least significant byte.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>CurrentProfile</b>
+### -field CurrentProfile
 
 <dd>
 <p>Contains an enumerator value of type <a href="..\ntddmmc\ne-ntddmmc--feature-profile-type.md">FEATURE_PROFILE_TYPE</a> that indicates the device's current profile. The bytes in this array are arranged in big-endian order. <b>CurrentProfile</b>[0] has the most significant byte, and  <b>CurrentProfile</b>[3] has the least significant byte.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>Contains the feature data, beginning with the <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a>.</p>

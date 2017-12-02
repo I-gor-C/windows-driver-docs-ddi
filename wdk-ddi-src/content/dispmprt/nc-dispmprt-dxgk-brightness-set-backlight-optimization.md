@@ -58,13 +58,13 @@ NTSTATUS* DxgkDdiSetBacklightOptimization(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>OptimizationLevel</i> [in]
+### -param OptimizationLevel [in]
 
 <dd>
 <p>A value of type <a href="..\d3dkmdt\ne-d3dkmdt-dxgk-backlight-optimization-level.md">DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</a> that indicates the optimization level of brightness control.</p>

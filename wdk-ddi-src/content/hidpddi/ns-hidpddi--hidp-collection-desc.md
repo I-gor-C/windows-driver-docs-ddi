@@ -62,55 +62,55 @@ typedef struct _HIDP_COLLECTION_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>UsagePage</b>
+### -field UsagePage
 
 <dd>
 <p>Specifies the usage page of the usage ID specified by <b>Usage</b>.</p>
 </dd>
 
-### -field <b>Usage</b>
+### -field Usage
 
 <dd>
 <p>Indicates a usage ID.</p>
 </dd>
 
-### -field <b>CollectionNumber</b>
+### -field CollectionNumber
 
 <dd>
 <p>The index of the collection in the array of  <b>HIDP_COLLECTION_DESC</b> structure. This is a 1-based value.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for internal system use. Must be 0.</p>
 </dd>
 
-### -field <b>InputLength</b>
+### -field InputLength
 
 <dd>
 <p>The maximum length of an input report of this collection.</p>
 </dd>
 
-### -field <b>OutputLength</b>
+### -field OutputLength
 
 <dd>
 <p>The maximum length of an output report of this collection.</p>
 </dd>
 
-### -field <b>FeatureLength</b>
+### -field FeatureLength
 
 <dd>
 <p>The maximum length of a feature report of this collection.</p>
 </dd>
 
-### -field <b>PreparsedDataLength</b>
+### -field PreparsedDataLength
 
 <dd>
 <p>The length of the preparsed data pointed to by <i>PreparsedData</i>.</p>
 </dd>
 
-### -field <b>PreparsedData</b>
+### -field PreparsedData
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543586">_HIDP_PREPARSED_DATA</a> structure that contains a top-level collection's preparsed data.</p>

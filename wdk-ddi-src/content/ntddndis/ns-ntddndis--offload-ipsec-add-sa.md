@@ -7,7 +7,7 @@ old-location: netvista\offload_ipsec_add_sa.htm
 old-project: netvista
 ms.assetid: 592d338c-8ab0-4163-bcfa-75c941b83c3d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: OFFLOAD_IPSEC_ADD_SA, OFFLOAD_IPSEC_ADD_SA, *POFFLOAD_IPSEC_ADD_SA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,31 +69,31 @@ typedef struct _OFFLOAD_IPSEC_ADD_SA {
 ## -struct-fields
 <dl>
 
-### -field <b>SrcAddr</b>
+### -field SrcAddr
 
 <dd>
 <p>The IP address of the source host (the host sending the packets).</p>
 </dd>
 
-### -field <b>SrcMask</b>
+### -field SrcMask
 
 <dd>
 <p>The subnet mask for the source IP address.</p>
 </dd>
 
-### -field <b>DestAddr</b>
+### -field DestAddr
 
 <dd>
 <p>The IP address of the destination host (the host receiving the packets).</p>
 </dd>
 
-### -field <b>DestMask</b>
+### -field DestMask
 
 <dd>
 <p>The subnet mask for the destination IP address.</p>
 </dd>
 
-### -field <b>Protocol</b>
+### -field Protocol
 
 <dd>
 <p>The IP protocol. You can specify any combination of IP protocol types (such as TCP, UDP, or ICMP).
@@ -102,21 +102,21 @@ typedef struct _OFFLOAD_IPSEC_ADD_SA {
      <b>Protocol</b> is set to zero, the SA applies to any IP protocol.</p>
 </dd>
 
-### -field <b>SrcPort</b>
+### -field SrcPort
 
 <dd>
 <p>A source TCP or UDP port. If 
      <b>SrcPort</b> is set to zero, the SA applies to any source TCP/UDP port.</p>
 </dd>
 
-### -field <b>DestPort</b>
+### -field DestPort
 
 <dd>
 <p>A destination TCP or UDP port. If 
      <b>DestPort</b> is set to zero, the SA applies to any source TCP/UDP port.</p>
 </dd>
 
-### -field <b>SrcTunnelAddr</b>
+### -field SrcTunnelAddr
 
 <dd>
 <p>The IP address for the source endpoint, such as a connector, of a tunnel. The miniport driver uses
@@ -126,7 +126,7 @@ typedef struct _OFFLOAD_IPSEC_ADD_SA {
      <b>SrcTunnelAddr</b> is set to zero for an SA that applies to the transport portion of a packet.</p>
 </dd>
 
-### -field <b>DestTunnelAddr</b>
+### -field DestTunnelAddr
 
 <dd>
 <p>The IP address for the destination endpoint, such as a connector, of a tunnel. The miniport driver
@@ -136,7 +136,7 @@ typedef struct _OFFLOAD_IPSEC_ADD_SA {
      <b>DestTunnelAddr</b> is set to zero for an SA that applies to the transport portion of a packet.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitmask that indicates whether the SA that is being added is an inbound or outbound SA as
@@ -145,13 +145,13 @@ typedef struct _OFFLOAD_IPSEC_ADD_SA {
 <p></p>
 <dl>
 
-### -field <a id="OFFLOAD_INBOUND_SA"></a><a id="offload_inbound_sa"></a><b>OFFLOAD_INBOUND_SA</b>
+### -field OFFLOAD_INBOUND_SA
 
 <dd>
 <p>Specifies an inbound SA.</p>
 </dd>
 
-### -field <a id="OFFLOAD_OUTBOUND_SA"></a><a id="offload_outbound_sa"></a><b>OFFLOAD_OUTBOUND_SA</b>
+### -field OFFLOAD_OUTBOUND_SA
 
 <dd>
 <p>Specifies an outbound SA.</p>
@@ -159,7 +159,7 @@ typedef struct _OFFLOAD_IPSEC_ADD_SA {
 </dl>
 </dd>
 
-### -field <b>NumSAs</b>
+### -field NumSAs
 
 <dd>
 <p>The number of elements in the 
@@ -168,7 +168,7 @@ typedef struct _OFFLOAD_IPSEC_ADD_SA {
      OFFLOAD_SECURITY_ASSOCIATION</a> structure.</p>
 </dd>
 
-### -field <b>SecAssoc</b>
+### -field SecAssoc
 
 <dd>
 <p>A variable-length array that contains the information about the Internet Protocol security (IPsec)
@@ -183,7 +183,7 @@ typedef struct _OFFLOAD_IPSEC_ADD_SA {
      supported: encryption/decryption (ESP) followed by authentication (AH).</p>
 </dd>
 
-### -field <b>OffloadHandle</b>
+### -field OffloadHandle
 
 <dd>
 <p>The handle to the newly created SA. The miniport driver supplies this handle before completing the
@@ -197,14 +197,14 @@ typedef struct _OFFLOAD_IPSEC_ADD_SA {
      OID_TCP_TASK_IPSEC_DELETE_SA</a> request.</p>
 </dd>
 
-### -field <b>KeyLen</b>
+### -field KeyLen
 
 <dd>
 <p>The length, in bytes, of the buffer at 
      <b>KeyMat</b> .</p>
 </dd>
 
-### -field <b>KeyMat</b>
+### -field KeyMat
 
 <dd>
 <p>A variable-length array that contains keys for the SAs specified at 
@@ -264,4 +264,4 @@ typedef struct _OFFLOAD_IPSEC_ADD_SA {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20OFFLOAD_IPSEC_ADD_SA structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20OFFLOAD_IPSEC_ADD_SA structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

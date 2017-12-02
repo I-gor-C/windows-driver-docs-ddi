@@ -7,7 +7,7 @@ old-location: netvista\sockaddr_storage.htm
 old-project: netvista
 ms.assetid: 27e56c1a-ce11-4cdb-9be8-25ed2f94fb37
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: sockaddr_storage,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct sockaddr_storage {
 ## -struct-fields
 <dl>
 
-### -field <b>ss_family</b>
+### -field ss_family
 
 <dd>
 <p>The address family for the transport address. For more information about supported address
@@ -65,20 +65,20 @@ typedef struct sockaddr_storage {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571151">WSK Address Families</a>.</p>
 </dd>
 
-### -field <b>__ss_pad1</b>
+### -field __ss_pad1
 
 <dd>
 <p>A padding of 6 bytes that puts the 
      <b>__ss_align</b> member on an eight-byte boundary within the structure.</p>
 </dd>
 
-### -field <b>__ss_align</b>
+### -field __ss_align
 
 <dd>
 <p>A 64-bit value that forces the structure to be 8-byte aligned.</p>
 </dd>
 
-### -field <b>__ss_pad2</b>
+### -field __ss_pad2
 
 <dd>
 <p>A padding of an additional 112 bytes that brings the total size of the SOCKADDR_STORAGE structure
@@ -123,4 +123,4 @@ typedef struct sockaddr_storage {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20SOCKADDR_STORAGE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20SOCKADDR_STORAGE structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

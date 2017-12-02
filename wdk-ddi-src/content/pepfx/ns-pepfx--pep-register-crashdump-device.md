@@ -55,13 +55,13 @@ typedef struct _PEP_REGISTER_CRASHDUMP_DEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>PowerOnDumpDeviceCallback</b>
+### -field PowerOnDumpDeviceCallback
 
 <dd>
 <p>[out] A pointer to a <a href="kernel.powerondumpdevicecallback">PowerOnDumpDeviceCallback</a> callback routine that is implemented by the platform extension plug-in (PEP). This routine handles requests from the Windows kernel to turn on the crash-dump device so that a crash dump can be saved. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff551880">Kernel-Mode Dump Files</a>.</p>
 </dd>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] A PEPHANDLE value that identifies the crash-dump device. The PEP supplied this handle in response to a previous <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification.</p>

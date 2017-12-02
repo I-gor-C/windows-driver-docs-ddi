@@ -57,13 +57,13 @@ BOOLEAN SeValidSecurityDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the size in bytes of the given security descriptor.</p>
 </dd>
 
-### -param <i>SecurityDescriptor</i> [in]
+### -param SecurityDescriptor [in]
 
 <dd>
 <p>Pointer to the self-relative <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a>, which must be buffered somewhere in system space.</p>

@@ -59,25 +59,25 @@ BOOLEAN __inline AtaPortRegistryChannelSubkeyRead(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the channel extension. </p>
 </dd>
 
-### -param <i>ControllerNumber</i> [in]
+### -param ControllerNumber [in]
 
 <dd>
 <p>Contains the controller number. </p>
 </dd>
 
-### -param <i>ValueName</i> [in]
+### -param ValueName [in]
 
 <dd>
 <p>Contains the name of the registry value from which to read. </p>
 </dd>
 
-### -param <i>ValueType</i> [in]
+### -param ValueType [in]
 
 <dd>
 <p>Indicates the type of data that is contained in the registry value. This member should be assigned one of values indicated in the following table. </p>
@@ -114,13 +114,13 @@ BOOLEAN __inline AtaPortRegistryChannelSubkeyRead(
 <p> </p>
 </dd>
 
-### -param <i>Buffer</i> [out, optional]
+### -param Buffer [out, optional]
 
 <dd>
 <p>A pointer to the destination buffer where the data that is read from the registry will be written. </p>
 </dd>
 
-### -param <i>Length</i> [in, out]
+### -param Length [in, out]
 
 <dd>
 <p>A pointer to the number of bytes of data to copy. If the operation fails, the location that is pointed to by <i>Length</i> will update to the length of data that was successfully copied from the registry.</p>

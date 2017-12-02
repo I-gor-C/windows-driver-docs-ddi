@@ -64,44 +64,44 @@ typedef struct _DXVAHDDDI_VPDEVCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] Reserved. Must be zero. </p>
 </dd>
 
-### -field <b>DeviceCaps</b>
+### -field DeviceCaps
 
 <dd>
 <p>[out] A bitwise OR of the following values from the DXVAHDDDI_DEVICE_CAPS enumeration to indicate device-specific capabilities.</p>
 <p></p>
 <dl>
 
-### -field <a id="DXVAHDDDI_DEVICE_CAPS_LINEAR_SPACE__0x1_"></a><a id="dxvahdddi_device_caps_linear_space__0x1_"></a><a id="DXVAHDDDI_DEVICE_CAPS_LINEAR_SPACE__0X1_"></a>DXVAHDDDI_DEVICE_CAPS_LINEAR_SPACE (0x1)
+### -field DXVAHDDDI_DEVICE_CAPS_LINEAR_SPACE (0x1)
 
 <dd>
 <p>The driver can blend video content in linear space. Because the video content is traditionally in non-linear space and gamma 2.2 corrected (<a href="http://go.microsoft.com/fwlink/p/?linkid=10112">sRGB</a>), the driver can convert the video content to linear space before performing blending operations to achieve better results.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_DEVICE_CAPS_xvYCC__0x2_"></a><a id="dxvahdddi_device_caps_xvycc__0x2_"></a><a id="DXVAHDDDI_DEVICE_CAPS_XVYCC__0X2_"></a>DXVAHDDDI_DEVICE_CAPS_xvYCC (0x2)
+### -field DXVAHDDDI_DEVICE_CAPS_xvYCC (0x2)
 
 <dd>
 <p>The driver can perform video processing while retaining the extended gamut color when the driver inputs from and outputs to the YCbCr format type.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_DEVICE_CAPS_RGB_RANGE_CONVERSION__0x4_"></a><a id="dxvahdddi_device_caps_rgb_range_conversion__0x4_"></a><a id="DXVAHDDDI_DEVICE_CAPS_RGB_RANGE_CONVERSION__0X4_"></a>DXVAHDDDI_DEVICE_CAPS_RGB_RANGE_CONVERSION (0x4)
+### -field DXVAHDDDI_DEVICE_CAPS_RGB_RANGE_CONVERSION (0x4)
 
 <dd>
 <p>The driver can perform the range conversion when both input and output are RGB color space but the range is different (for example, the input is full range RGB and the output is limited range RGB). If this value is not set, the driver ignores the RGB range and composes the RGB input stream to the RGB output without changing the range.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_DEVICE_CAPS_YCbCr_MATRIX_CONVERSION__0x8_"></a><a id="dxvahdddi_device_caps_ycbcr_matrix_conversion__0x8_"></a><a id="DXVAHDDDI_DEVICE_CAPS_YCBCR_MATRIX_CONVERSION__0X8_"></a>DXVAHDDDI_DEVICE_CAPS_YCbCr_MATRIX_CONVERSION (0x8)
+### -field DXVAHDDDI_DEVICE_CAPS_YCbCr_MATRIX_CONVERSION (0x8)
 
 <dd>
 <p>The driver can perform the matrix conversion when both input and output are YCbCr color space but the matrix is different (for example, the input is BT.601 and the output is BT.709). If this value is not set, the driver ignores the YCbCr matrix and composes the YCbCr input stream to the YCbCr output without changing the matrix.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_DEVICE_CAPS_NOMINAL_RANGE__0x10_"></a><a id="dxvahdddi_device_caps_nominal_range__0x10_"></a><a id="DXVAHDDDI_DEVICE_CAPS_NOMINAL_RANGE__0X10_"></a>DXVAHDDDI_DEVICE_CAPS_NOMINAL_RANGE (0x10)
+### -field DXVAHDDDI_DEVICE_CAPS_NOMINAL_RANGE (0x10)
 
 <dd>
 <p>The video processor can convert between luminance ranges when the input and output use different luminance ranges.</p>
@@ -112,38 +112,38 @@ typedef struct _DXVAHDDDI_VPDEVCAPS {
 <p>The driver determines that the XR_BIAS, FP16, and FP32 formats (wide gamut formats) are in linear space and so can retain the extended gamut color regardless of whether the preceding capability values are set. </p>
 </dd>
 
-### -field <b>FeatureCaps</b>
+### -field FeatureCaps
 
 <dd>
 <p>[out] A bitwise OR of the following values from the DXVAHDDDI_FEATURE_CAPS enumeration to indicate feature-specific capabilities.</p>
 <p></p>
 <dl>
 
-### -field <a id="DXVAHDDDI_FEATURE_CAPS_ALPHA_FILL__0x1_"></a><a id="dxvahdddi_feature_caps_alpha_fill__0x1_"></a><a id="DXVAHDDDI_FEATURE_CAPS_ALPHA_FILL__0X1_"></a>DXVAHDDDI_FEATURE_CAPS_ALPHA_FILL (0x1)
+### -field DXVAHDDDI_FEATURE_CAPS_ALPHA_FILL (0x1)
 
 <dd>
 <p>The driver can set the alpha values inside the target rectangle on the output surface as specified for the alpha-fill mode. For more information about this operation, see <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-alpha-fill-data.md">DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA</a>.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FEATURE_CAPS_CONSTRICTION__0x2_"></a><a id="dxvahdddi_feature_caps_constriction__0x2_"></a><a id="DXVAHDDDI_FEATURE_CAPS_CONSTRICTION__0X2_"></a>DXVAHDDDI_FEATURE_CAPS_CONSTRICTION (0x2)
+### -field DXVAHDDDI_FEATURE_CAPS_CONSTRICTION (0x2)
 
 <dd>
 <p>The driver can down-sample the composed target rectangle. For more information about this operation, see <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-constriction-data.md">DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA</a>.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FEATURE_CAPS_LUMA_KEY__0x4_"></a><a id="dxvahdddi_feature_caps_luma_key__0x4_"></a><a id="DXVAHDDDI_FEATURE_CAPS_LUMA_KEY__0X4_"></a>DXVAHDDDI_FEATURE_CAPS_LUMA_KEY (0x4)
+### -field DXVAHDDDI_FEATURE_CAPS_LUMA_KEY (0x4)
 
 <dd>
 <p>The driver can make pixels within a luma-key range transparent. For more information about this operation, see <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-luma-key-data.md">DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA</a>.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FEATURE_CAPS_ALPHA_PALETTE__0x8_"></a><a id="dxvahdddi_feature_caps_alpha_palette__0x8_"></a><a id="DXVAHDDDI_FEATURE_CAPS_ALPHA_PALETTE__0X8_"></a>DXVAHDDDI_FEATURE_CAPS_ALPHA_PALETTE (0x8)
+### -field DXVAHDDDI_FEATURE_CAPS_ALPHA_PALETTE (0x8)
 
 <dd>
 <p>The driver can apply the alpha value of the palette entry. For more information about alpha blending, see <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-alpha-data.md">DXVAHDDDI_STREAM_STATE_ALPHA_DATA</a>.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FEATURE_CAPS_ROTATION__0x10_"></a><a id="dxvahdddi_feature_caps_rotation__0x10_"></a><a id="DXVAHDDDI_FEATURE_CAPS_ROTATION__0X10_"></a>DXVAHDDDI_FEATURE_CAPS_ROTATION (0x10)
+### -field DXVAHDDDI_FEATURE_CAPS_ROTATION (0x10)
 
 <dd>
 <p>The driver can apply discrete display rotation values to the display output surface. For more information about this operation, see <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-rotation-data.md">DXVAHDDDI_STREAM_STATE_ROTATION_DATA</a>.</p>
@@ -152,50 +152,50 @@ typedef struct _DXVAHDDDI_VPDEVCAPS {
 </dl>
 </dd>
 
-### -field <b>FilterCaps</b>
+### -field FilterCaps
 
 <dd>
 <p>[out] A bitwise OR of the following values from the DXVAHDDDI_FILTER_CAPS enumeration to indicate filter-specific capabilities.</p>
 <p></p>
 <dl>
 
-### -field <a id="DXVAHDDDI_FILTER_CAPS_BRIGHTNESS__0x1_"></a><a id="dxvahdddi_filter_caps_brightness__0x1_"></a><a id="DXVAHDDDI_FILTER_CAPS_BRIGHTNESS__0X1_"></a>DXVAHDDDI_FILTER_CAPS_BRIGHTNESS (0x1)
+### -field DXVAHDDDI_FILTER_CAPS_BRIGHTNESS (0x1)
 
 <dd>
 <p>The driver supports brightness ProcAmp.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FILTER_CAPS_CONTRAST__0x2_"></a><a id="dxvahdddi_filter_caps_contrast__0x2_"></a><a id="DXVAHDDDI_FILTER_CAPS_CONTRAST__0X2_"></a>DXVAHDDDI_FILTER_CAPS_CONTRAST (0x2)
+### -field DXVAHDDDI_FILTER_CAPS_CONTRAST (0x2)
 
 <dd>
 <p>The driver supports contrast ProcAmp.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FILTER_CAPS_HUE__0x4_"></a><a id="dxvahdddi_filter_caps_hue__0x4_"></a><a id="DXVAHDDDI_FILTER_CAPS_HUE__0X4_"></a>DXVAHDDDI_FILTER_CAPS_HUE (0x4)
+### -field DXVAHDDDI_FILTER_CAPS_HUE (0x4)
 
 <dd>
 <p>The driver supports hue ProcAmp.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FILTER_CAPS_SATURATION__0x8_"></a><a id="dxvahdddi_filter_caps_saturation__0x8_"></a><a id="DXVAHDDDI_FILTER_CAPS_SATURATION__0X8_"></a>DXVAHDDDI_FILTER_CAPS_SATURATION (0x8)
+### -field DXVAHDDDI_FILTER_CAPS_SATURATION (0x8)
 
 <dd>
 <p>The driver supports saturation ProcAmp.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FILTER_CAPS_NOISE_REDUCTION__0x10_"></a><a id="dxvahdddi_filter_caps_noise_reduction__0x10_"></a><a id="DXVAHDDDI_FILTER_CAPS_NOISE_REDUCTION__0X10_"></a>DXVAHDDDI_FILTER_CAPS_NOISE_REDUCTION (0x10)
+### -field DXVAHDDDI_FILTER_CAPS_NOISE_REDUCTION (0x10)
 
 <dd>
 <p>The driver supports noise-reduction filter.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FILTER_CAPS_EDGE_ENHANCEMENT__0x20_"></a><a id="dxvahdddi_filter_caps_edge_enhancement__0x20_"></a><a id="DXVAHDDDI_FILTER_CAPS_EDGE_ENHANCEMENT__0X20_"></a>DXVAHDDDI_FILTER_CAPS_EDGE_ENHANCEMENT (0x20)
+### -field DXVAHDDDI_FILTER_CAPS_EDGE_ENHANCEMENT (0x20)
 
 <dd>
 <p>The driver supports edge-enhancement filter.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_FILTER_CAPS_ANAMORPHIC_SCALING__0x40_"></a><a id="dxvahdddi_filter_caps_anamorphic_scaling__0x40_"></a><a id="DXVAHDDDI_FILTER_CAPS_ANAMORPHIC_SCALING__0X40_"></a>DXVAHDDDI_FILTER_CAPS_ANAMORPHIC_SCALING (0x40)
+### -field DXVAHDDDI_FILTER_CAPS_ANAMORPHIC_SCALING (0x40)
 
 <dd>
 <p>The driver can scale from the source rectangle to the destination rectangle linearly or nonlinearly. If the driver has this capability, it can stretch 4:3 standard video content to 16:9 widescreen.</p>
@@ -203,32 +203,32 @@ typedef struct _DXVAHDDDI_VPDEVCAPS {
 </dl>
 </dd>
 
-### -field <b>InputFormatCaps</b>
+### -field InputFormatCaps
 
 <dd>
 <p>[out] A bitwise OR of the following values from the DXVAHDDDI_INPUT_FORMAT_CAPS enumeration to indicate input-format-specific capabilities.</p>
 <p></p>
 <dl>
 
-### -field <a id="DXVAHDDDI_INPUT_FORMAT_CAPS_RGB_INTERLACED__0x1_"></a><a id="dxvahdddi_input_format_caps_rgb_interlaced__0x1_"></a><a id="DXVAHDDDI_INPUT_FORMAT_CAPS_RGB_INTERLACED__0X1_"></a>DXVAHDDDI_INPUT_FORMAT_CAPS_RGB_INTERLACED (0x1)
+### -field DXVAHDDDI_INPUT_FORMAT_CAPS_RGB_INTERLACED (0x1)
 
 <dd>
 <p>The driver can deinterlace the input stream with RGB format type.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_INPUT_FORMAT_CAPS_RGB_PROCAMP__0x2_"></a><a id="dxvahdddi_input_format_caps_rgb_procamp__0x2_"></a><a id="DXVAHDDDI_INPUT_FORMAT_CAPS_RGB_PROCAMP__0X2_"></a>DXVAHDDDI_INPUT_FORMAT_CAPS_RGB_PROCAMP (0x2)
+### -field DXVAHDDDI_INPUT_FORMAT_CAPS_RGB_PROCAMP (0x2)
 
 <dd>
 <p>The driver can apply a ProcAmp filter to the input stream with RGB format type.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_INPUT_FORMAT_CAPS_RGB_LUMA_KEY__0x4_"></a><a id="dxvahdddi_input_format_caps_rgb_luma_key__0x4_"></a><a id="DXVAHDDDI_INPUT_FORMAT_CAPS_RGB_LUMA_KEY__0X4_"></a>DXVAHDDDI_INPUT_FORMAT_CAPS_RGB_LUMA_KEY (0x4)
+### -field DXVAHDDDI_INPUT_FORMAT_CAPS_RGB_LUMA_KEY (0x4)
 
 <dd>
 <p>The driver can luma-key the input stream with RGB format type.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_INPUT_FORMAT_CAPS_PALETTE_INTERLACED__0x8_"></a><a id="dxvahdddi_input_format_caps_palette_interlaced__0x8_"></a><a id="DXVAHDDDI_INPUT_FORMAT_CAPS_PALETTE_INTERLACED__0X8_"></a>DXVAHDDDI_INPUT_FORMAT_CAPS_PALETTE_INTERLACED (0x8)
+### -field DXVAHDDDI_INPUT_FORMAT_CAPS_PALETTE_INTERLACED (0x8)
 
 <dd>
 <p>The driver can deinterlace the input stream with palettized format type.</p>
@@ -239,37 +239,37 @@ typedef struct _DXVAHDDDI_VPDEVCAPS {
 <p>For example, when the driver sets the <b>RGB_Range</b> and <b>YCbCr_Matrix</b> members of <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-input-color-space-data.md">DXVAHDDDI_STREAM_STATE_INPUT_COLOR_SPACE_DATA</a> to 0 and 1 respectively, the driver converts from full range RGB to BT.709 YCbCr before the driver applies ProcAmp, and then converts the input stream back to full range RGB. </p>
 </dd>
 
-### -field <b>InputPool</b>
+### -field InputPool
 
 <dd>
 <p>[out] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-pool.md">D3DDDI_POOL</a>-typed value that indicates the memory pool from which the input surfaces should be allocated. </p>
 </dd>
 
-### -field <b>OutputFormatCount</b>
+### -field OutputFormatCount
 
 <dd>
 <p>[out] The number of supported output formats. The driver returns an array of <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a> enumeration types for the output formats that the decode device supports when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPOUTPUTFORMATS value set. </p>
 </dd>
 
-### -field <b>InputFormatCount</b>
+### -field InputFormatCount
 
 <dd>
 <p>[out] The number of supported input formats. The driver returns an array of <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a> enumeration types for the input formats that the decode device supports when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPINPUTFORMATS value set. </p>
 </dd>
 
-### -field <b>VideoProcessorCount</b>
+### -field VideoProcessorCount
 
 <dd>
 <p>[out] The number of supported video processors. The driver returns an array of <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpcaps.md">DXVAHDDDI_VPCAPS</a> structures for the capabilities for each video processor that the decode device supports when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPCAPS value set. </p>
 </dd>
 
-### -field <b>MaxInputStreams</b>
+### -field MaxInputStreams
 
 <dd>
 <p>[out] The driver can enable the maximum number of input streams at a time. </p>
 </dd>
 
-### -field <b>MaxStreamStates</b>
+### -field MaxStreamStates
 
 <dd>
 <p>[out] The maximum number of stream states. </p>

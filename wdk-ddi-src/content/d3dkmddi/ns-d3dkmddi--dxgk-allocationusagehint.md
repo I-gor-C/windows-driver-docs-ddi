@@ -55,13 +55,13 @@ typedef struct _DXGK_ALLOCATIONUSAGEHINT {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>[out] A positive integer that indicates the version of the allocation.</p>
 </dd>
 
-### -field <b>v1</b>
+### -field v1
 
 <dd>
 <p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationusageinfo1.md">DXGK_ALLOCATIONUSAGEINFO1</a> structure that describes how an allocation can be used in direct memory access (DMA) buffering.</p>

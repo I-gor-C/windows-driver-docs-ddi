@@ -55,7 +55,7 @@ typedef struct IDARG_IN_SWAPCHAINSETDEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>pDevice</b>
+### -field pDevice
 
 <dd>
 <p>

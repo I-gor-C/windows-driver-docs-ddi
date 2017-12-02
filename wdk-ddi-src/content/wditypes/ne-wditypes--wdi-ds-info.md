@@ -7,7 +7,7 @@ old-location: netvista\wdi_ds_info.htm
 old-project: netvista
 ms.assetid: 4375FF5C-8772-43AB-844B-4AD5E044AF55
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _WDI_DS_INFO {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_DS_CHANGED"></a><a id="wdi_ds_changed"></a><b>WDI_DS_CHANGED</b>
+### -field WDI_DS_CHANGED
 
 <dd>
 <p>New DS.</p>
 </dd>
 
-### -field <a id="WDI_DS_UNCHANGED"></a><a id="wdi_ds_unchanged"></a><b>WDI_DS_UNCHANGED</b>
+### -field WDI_DS_UNCHANGED
 
 <dd>
 <p>Same DS as previously associated.</p>
 </dd>
 
-### -field <a id="WDI_DS_UNKNOWN"></a><a id="wdi_ds_unknown"></a><b>WDI_DS_UNKNOWN</b>
+### -field WDI_DS_UNKNOWN
 
 <dd>
 <p>Unable to determine if the DS has changed.</p>

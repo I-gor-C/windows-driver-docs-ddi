@@ -61,7 +61,7 @@ typedef struct _DXGK_CHILD_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>
@@ -69,19 +69,19 @@ typedef struct _DXGK_CHILD_CAPABILITIES {
      </p>
 <dl>
 
-### -field <b>VideoOutput</b>
+### -field VideoOutput
 
 <dd>
 <p>A <a href="..\dispmprt\ns-dispmprt--dxgk-video-output-capabilities.md">DXGK_VIDEO_OUTPUT_CAPABILITIES</a> structure that contains information about a video output. This member is meaningful only if the child device has type <b>TypeVideoOutput</b>.</p>
 </dd>
 
-### -field <b>Other</b>
+### -field Other
 
 <dd>
 <p>A structure whose only member must be equal to zero if the child device has type <b>TypeOther</b>.</p>
 <dl>
 
-### -field <b>MustBeZero</b>
+### -field MustBeZero
 
 <dd>
 <p>A UINT value that must be equal to zero.</p>
@@ -89,7 +89,7 @@ typedef struct _DXGK_CHILD_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>IntegratedDisplayChild</b>
+### -field IntegratedDisplayChild
 
 <dd>
 <p>Returns the integrated display child specific fields of the child capabilities.</p>
@@ -97,7 +97,7 @@ typedef struct _DXGK_CHILD_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>HpdAwareness</b>
+### -field HpdAwareness
 
 <dd>
 <p>A <a href="..\d3dkmdt\ne-d3dkmdt--dxgk-child-device-hpd-awareness.md">DXGK_CHILD_DEVICE_HPD_AWARENESS</a> enumerator that indicates the child device's level of hot-plug awareness.</p>

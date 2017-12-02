@@ -61,49 +61,49 @@ typedef struct _DXGK_AGP_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of the AGP interface. Version number constants are defined in <i>Dispmprt.h</i> (for example, DXGK_AGP_INTERFACE_VERSION_1).</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to a context that is provided by the display port driver.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to an interface reference function that is implemented by the display port driver.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to an interface dereference function that is implemented by the display port driver.</p>
 </dd>
 
-### -field <b>AgpAllocatePool</b>
+### -field AgpAllocatePool
 
 <dd>
 <p>A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb-agp-allocate-pool.md">AgpAllocatePool</a> function.</p>
 </dd>
 
-### -field <b>AgpFreePool</b>
+### -field AgpFreePool
 
 <dd>
 <p>A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb-agp-free-pool.md">AgpFreePool</a> function.</p>
 </dd>
 
-### -field <b>AgpSetCommand</b>
+### -field AgpSetCommand
 
 <dd>
 <p>A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb-agp-set-command.md">AgpSetCommand</a> function.</p>

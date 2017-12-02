@@ -54,7 +54,7 @@ VOID WdmlibIoDisconnectInterruptEx(
 ## -parameters
 <dl>
 
-### -param <i>Parameters</i> [in, out]
+### -param Parameters [in, out]
 
 <dd>
 <p>Pointer to an <a href="..\wdm\ns-wdm--io-disconnect-interrupt-parameters.md">IO_DISCONNECT_INTERRUPT_PARAMETERS</a> structure that contains the connection context for  the interrupt being disconnected.</p>

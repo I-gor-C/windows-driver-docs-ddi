@@ -7,7 +7,7 @@ old-location: netvista\ndis_wmi_set_header.htm
 old-project: netvista
 ms.assetid: ea6f37e0-a46f-41d9-84f2-624f5727863a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WMI_SET_HEADER, NDIS_WMI_SET_HEADER, *PNDIS_WMI_SET_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ typedef struct _NDIS_WMI_SET_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -72,7 +72,7 @@ typedef struct _NDIS_WMI_SET_HEADER {
      sizeof(NDIS_WMI_SET_HEADER).</p>
 </dd>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>The miniport adapter port, if any. If the GUID is not specific to a port, 
@@ -82,7 +82,7 @@ typedef struct _NDIS_WMI_SET_HEADER {
      miniport adapter.</p>
 </dd>
 
-### -field <b>NetLuid</b>
+### -field NetLuid
 
 <dd>
 <p>The NDIS network interface name of the miniport adapter. WMI clients can use the 
@@ -91,7 +91,7 @@ typedef struct _NDIS_WMI_SET_HEADER {
      <b>NetLuid</b> value.</p>
 </dd>
 
-### -field <b>RequestId</b>
+### -field RequestId
 
 <dd>
 <p>An identifier for the request. If a miniport driver must complete a request immediately and it
@@ -109,7 +109,7 @@ typedef struct _NDIS_WMI_SET_HEADER {
      <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>.</p>
 </dd>
 
-### -field <b>Timeout</b>
+### -field Timeout
 
 <dd>
 <p>A time-out, in seconds, for the request. NDIS can reset the driver or cancel the request if the
@@ -118,7 +118,7 @@ typedef struct _NDIS_WMI_SET_HEADER {
       <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>.</p>
 </dd>
 
-### -field <b>Padding</b>
+### -field Padding
 
 <dd>
 <p>This member is reserved</p>
@@ -167,4 +167,4 @@ typedef struct _NDIS_WMI_SET_HEADER {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WMI_SET_HEADER structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WMI_SET_HEADER structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

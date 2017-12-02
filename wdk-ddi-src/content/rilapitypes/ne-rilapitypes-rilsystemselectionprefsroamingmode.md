@@ -7,7 +7,7 @@ old-location: netvista\rilsystemselectionprefsroamingmode_2.htm
 old-project: netvista
 ms.assetid: 7dbb25a5-7bcc-453d-854e-7796acbfd079
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILSYSTEMSELECTIONPREFSROAMINGMODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_ROAMMODE_AUTOMATIC"></a><a id="ril_roammode_automatic"></a><b>RIL_ROAMMODE_AUTOMATIC</b>
+### -field RIL_ROAMMODE_AUTOMATIC
 
 <dd></dd>
 
-### -field <a id="RIL_ROAMMODE_DOMESTIC"></a><a id="ril_roammode_domestic"></a><b>RIL_ROAMMODE_DOMESTIC</b>
+### -field RIL_ROAMMODE_DOMESTIC
 
 <dd></dd>
 
-### -field <a id="RIL_ROAMMODE_MAX"></a><a id="ril_roammode_max"></a><b>RIL_ROAMMODE_MAX</b>
+### -field RIL_ROAMMODE_MAX
 
 <dd></dd>
 </dl>

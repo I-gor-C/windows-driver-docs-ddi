@@ -55,13 +55,13 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT_INPUT"></a><a id="d3d11_1ddi_video_processor_format_support_input"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT_INPUT</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT_INPUT
 
 <dd>
 <p>The format can be used as the input to the video processor.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT_OUTPUT"></a><a id="d3d11_1ddi_video_processor_format_support_output"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT_OUTPUT</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT_OUTPUT
 
 <dd>
 <p>The format can be used as the output from the video processor.</p>

@@ -59,19 +59,19 @@ _Check_return_ NTSTATUS APIENTRY* DxgkDdiSetPowerComponentFState(
 ## -parameters
 <dl>
 
-### -param <i>DriverContext</i> [in]
+### -param DriverContext [in]
 
 <dd>
 <p>A handle to a context block associated with a display adapter. The display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>ComponentIndex</i> 
+### -param ComponentIndex 
 
 <dd>
 <p>The power component index specified by  <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>.<b>pInputData</b> in a call to the <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function.</p>
 </dd>
 
-### -param <i>FState</i> 
+### -param FState 
 
 <dd>
 <p>An F-state value that the display miniport driver has reported to the DirectX graphics kernel subsystem.</p>

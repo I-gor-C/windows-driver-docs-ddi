@@ -59,31 +59,31 @@ typedef struct _STORAGE_OFFLOAD_READ_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>OffloadReadFlags</b>
+### -field OffloadReadFlags
 
 <dd>
 <p>Not used. Set to 0.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>LengthProtected</b>
+### -field LengthProtected
 
 <dd>
 <p>The total length, in bytes, of data read and held by the copy provider for <b>Token</b>.</p>
 </dd>
 
-### -field <b>TokenLength</b>
+### -field TokenLength
 
 <dd>
 <p>The length, in bytes, of <b>Token</b>.</p>
 </dd>
 
-### -field <b>Token</b>
+### -field Token
 
 <dd>
 <p>A unique identifier returned by the copy provider, marking the data set ranges that are read.</p>

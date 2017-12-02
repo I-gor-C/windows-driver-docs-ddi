@@ -61,13 +61,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>ReservationKey</b>
+### -field ReservationKey
 
 <dd>
 <p>The ReservationKey field contains an 8-byte value that is provided by the application client to the device server. This value identifies the initiator that is the source of the Persistent Reserve Out command.</p>
 </dd>
 
-### -field <b>ServiceActionReservationKey</b>
+### -field ServiceActionReservationKey
 
 <dd>
 <p>The ServiceActionReservationKey field contains information that is needed for the following four service actions:</p>
@@ -87,13 +87,13 @@ typedef struct {
 </ul>
 </dd>
 
-### -field <b>ScopeSpecificAddress</b>
+### -field ScopeSpecificAddress
 
 <dd>
 <p>The ScopeSpecificAddress field contains the element address that has zeros placed in the most significant bits to fit the field. This is true if the scope of a reservation is set to ELEMENT_SCOPE. Otherwise, this field is set to all zeros.</p>
 </dd>
 
-### -field <b>ActivatePersistThroughPowerLoss</b>
+### -field ActivatePersistThroughPowerLoss
 
 <dd>
 <p>The ActivatePersistThroughPowerLoss (APTPL) bit is valid only for the following service actions:</p>
@@ -107,19 +107,19 @@ typedef struct {
 </ul>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. Must be zero.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. Must be zero.</p>
 </dd>
 
-### -field <b>Obsolete</b>
+### -field Obsolete
 
 <dd>
 <p>Reserved. Must be zero.</p>

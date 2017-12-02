@@ -57,19 +57,19 @@ NTSTATUS TmEnableCallbacks(
 ## -parameters
 <dl>
 
-### -param <i>ResourceManager</i> [in]
+### -param ResourceManager [in]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/b44f2035-ee9f-453b-b12d-89ca36a8b280">resource manager object</a>. To obtain this pointer, your component must call <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a> or <a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a> provided.</p>
 </dd>
 
-### -param <i>CallbackRoutine</i> [in]
+### -param CallbackRoutine [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.resourcemanagernotification">ResourceManagerNotification</a> routine.</p>
 </dd>
 
-### -param <i>RMKey</i> [in, optional]
+### -param RMKey [in, optional]
 
 <dd>
 <p>A caller-defined context value that uniquely identifies the resource manager. The caller's <i>ResourceManagerNotification</i> routine receives this value as input.</p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>HidD_FreePreparsedData</b> routine releases the resources that the HID class driver allocated to hold a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="NULL">preparsed data</a>.</p>
+<p>The <b>HidD_FreePreparsedData</b> routine releases the resources that the HID class driver allocated to hold a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.</p>
 
 
 ## -syntax
@@ -54,7 +54,7 @@ BOOLEAN __stdcall HidD_FreePreparsedData(
 ## -parameters
 <dl>
 
-### -param <i>PreparsedData</i> [in]
+### -param PreparsedData [in]
 
 <dd>
 <p>Pointer to the buffer, returned by <a href="..\hidsdi\nf-hidsdi-hidd-getpreparseddata.md">HidD_GetPreparsedData</a>, that is freed.</p>
@@ -69,7 +69,7 @@ BOOLEAN __stdcall HidD_FreePreparsedData(
 
 <p>To obtain a collection's preparsed data, use <a href="..\hidsdi\nf-hidsdi-hidd-getpreparseddata.md">HidD_GetPreparsedData</a>.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>.</p>
 
 ## -requirements
 <table>

@@ -58,31 +58,31 @@ NTSTATUS ZwSetVolumeInformationFile(
 ## -parameters
 <dl>
 
-### -param <i>FileHandle</i> [in]
+### -param FileHandle [in]
 
 <dd>
 <p>Handle to a file object for an open file, directory, storage device, or volume whose volume information is to be modified. </p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>Pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the operation. </p>
 </dd>
 
-### -param <i>FsInformation</i> [in]
+### -param FsInformation [in]
 
 <dd>
 <p>Pointer to a caller-allocated buffer containing the volume information to be modified. The structure of the information in this buffer depends on the value of <i>FsInformationClass</i>, as shown in the following table. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Size in bytes of the buffer pointed to by <i>FsInformation</i>. The caller should set this parameter according to the given <i>FsInformationClass</i>. </p>
 </dd>
 
-### -param <i>FsInformationClass</i> [in]
+### -param FsInformationClass [in]
 
 <dd>
 <p>Type of volume information to be set. One of the following: </p>

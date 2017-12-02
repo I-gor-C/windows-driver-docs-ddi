@@ -73,91 +73,91 @@ typedef struct _REG_CREATE_KEY_INFORMATION_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>CompleteName</b>
+### -field CompleteName
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the path of the new registry key. The path can be absolute or relative. If the path is absolute, this structure contains a fully qualified path that starts with the "\" character. For an absolute path, the <b>RootObject</b> member specifies the <b>\REGISTRY</b> key, which is the root directory of the registry tree. If the path is relative, the path starts with a character other than "\", and is relative to the key that is specified by the <b>RootObject</b> member. </p>
 </dd>
 
-### -field <b>RootObject</b>
+### -field RootObject
 
 <dd>
 <p>A pointer to a registry key object that represents the root registry key for the path that is specified by the <b>CompleteName</b> member. </p>
 </dd>
 
-### -field <b>ObjectType</b>
+### -field ObjectType
 
 <dd>
 <p>This member is reserved for use by the operating system. Drivers must not access this member. </p>
 </dd>
 
-### -field <b>Options</b>
+### -field Options
 
 <dd>
 <p>Specifies the options for the key-create routine to use to create or open the new key. For more information, see the description of the <i>CreateOptions</i> parameter of the <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> routine and the description of the <i>OpenOptions</i> parameter of the <a href="..\wdm\nf-wdm-zwopenkeyex.md">ZwOpenKeyEx</a> routine. </p>
 </dd>
 
-### -field <b>Class</b>
+### -field Class
 
 <dd>
 <p>A pointer to a <b>UNICODE_STRING</b> structure that identifies the object class of the new key. For more information about this member, see the <i>Class</i> parameter of the <b>ZwCreateKey</b> routine. This pointer value can be <b>NULL</b>. </p>
 </dd>
 
-### -field <b>SecurityDescriptor</b>
+### -field SecurityDescriptor
 
 <dd>
 <p>A pointer to a <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> structure that contains security information for the key object. This pointer was obtained from the <b>SecurityDescriptor</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that was passed as an input parameter in the call to create the new registry key. </p>
 </dd>
 
-### -field <b>SecurityQualityOfService</b>
+### -field SecurityQualityOfService
 
 <dd>
 <p>A pointer to a <a href="http://go.microsoft.com/fwlink/p/?linkid=155042">SECURITY_QUALITY_OF_SERVICE</a> structure. This structure indicates whether a server can impersonate the client that is trying to create the registry key, and, if impersonation is permitted, the extent to which it is permitted. </p>
 </dd>
 
-### -field <b>DesiredAccess</b>
+### -field DesiredAccess
 
 <dd>
 <p>The access mask that was specified by the thread that is trying to create the registry key. For more information about this access mask, see the description of the <i>DesiredAccess</i> parameter of the <b>ZwCreateKey</b> routine. </p>
 </dd>
 
-### -field <b>GrantedAccess</b>
+### -field GrantedAccess
 
 <dd>
 <p>An access mask that indicates the access rights that were granted to the thread that is trying to create the registry key. For more information about this member, see the following Remarks section. </p>
 </dd>
 
-### -field <b>Disposition</b>
+### -field Disposition
 
 <dd>
 <p>A value that indicates whether the requested registry operation will create a new key or open an existing one. For more information about this member, see the description of the <i>Disposition</i> parameter of the <b>ZwCreateKey</b> routine and the following Remarks section. </p>
 </dd>
 
-### -field <b>ResultObject</b>
+### -field ResultObject
 
 <dd>
 <p>A pointer to a location that receives the address of the key object that represents the created registry key. </p>
 </dd>
 
-### -field <b>CallContext</b>
+### -field CallContext
 
 <dd>
 <p>Optional driver-defined context information that the driver's <i>RegistryCallback</i> routine can supply. </p>
 </dd>
 
-### -field <b>RootObjectContext</b>
+### -field RootObjectContext
 
 <dd>
 <p>A pointer to driver-defined context information that the driver has associated with the root of the path of the registry object by calling the <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a> routine. </p>
 </dd>
 
-### -field <b>Transaction</b>
+### -field Transaction
 
 <dd>
 <p>A pointer to a transaction object for the registry operation. You can supply this pointer to the <a href="..\ntifs\nf-ntifs-obopenobjectbypointer.md">ObOpenObjectByPointer</a> routine to obtain the corresponding transaction handle. If this member is <b>NULL</b>, the operation is being performed in non-transactional context. </p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The structure version number. This member distinguishes the <a href="..\wdm\ns-wdm--reg-create-key-information.md">REG_CREATE_KEY_INFORMATION</a> structure in Windows Vista from the <b>REG_CREATE_KEY_INFORMATION_V1</b> structure in Windows 7 and later versions of Windows. The following version numbers are currently defined.</p>
@@ -187,13 +187,13 @@ typedef struct _REG_CREATE_KEY_INFORMATION_V1 {
 <p>Future versions of this structure might add new members but will not change the members that are already defined in existing versions of the structure. This member is defined in the <b>REG_CREATE_KEY_INFORMATION_V1</b> structure that is supported in Windows 7 and later versions of the Windows operating systems. In the <b>REG_CREATE_KEY_INFORMATION</b> structure that Windows Vista supports, this member is named <b>Reserved</b> and is set to zero. Filter drivers should rely on the version number and not the operating system version to determine which version of the structure they are using. </p>
 </dd>
 
-### -field <b>RemainingName</b>
+### -field RemainingName
 
 <dd>
 <p>A pointer to a <b>UNICODE_STRING</b> structure that contains the relative path of the new registry key. This member always expresses the path of the new key relative to the path of the key that is specified by the <b>RootObject</b> member. In contrast, the <b>CompleteName</b> member can contain an absolute path if the <b>RootObject</b> member specifies the <b>\REGISTRY</b> key. </p>
 </dd>
 
-### -field <b>Wow64Flags</b>
+### -field Wow64Flags
 
 <dd>
 <p>Contains the Wow64 flags from the access mask that was passed as an input parameter in the call to create the new registry key. This member indicates whether a 32-bit client program that is running on a 64-bit version of Windows is trying to create a registry key. This member is set to zero or to one of the following flag bits:</p>
@@ -208,7 +208,7 @@ typedef struct _REG_CREATE_KEY_INFORMATION_V1 {
 <p>These flag bits are defined in the Wdm.h and Winnt.h header files. For more information about these flags, see <a href="http://go.microsoft.com/fwlink/p/?linkid=155080">Registry Key Security and Access Rights</a>. </p>
 </dd>
 
-### -field <b>Attributes</b>
+### -field Attributes
 
 <dd>
 <p>Contains the object-attribute flags from the <b>Attributes</b> member of the <b>OBJECT_ATTRIBUTES</b> structure that was passed as an input parameter in the call to create the new registry key. This member might contain one or more of the following flag bits:</p>
@@ -226,7 +226,7 @@ typedef struct _REG_CREATE_KEY_INFORMATION_V1 {
 <p>For more information about these flags, see <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a>. </p>
 </dd>
 
-### -field <b>CheckAccessMode</b>
+### -field CheckAccessMode
 
 <dd>
 <p>Indicates how the configuration manager performs the security access check for the call to create the new key. This member contains one of the following MODE enumeration values from the Wdm.h header file:</p>

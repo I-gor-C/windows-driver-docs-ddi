@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: <= PASSIVE_LEVEL
 req.iface: 
 ---
 
@@ -56,19 +56,19 @@ typedef enum _BTHX_HCI_PACKET_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="HciPacketCommand"></a><a id="hcipacketcommand"></a><a id="HCIPACKETCOMMAND"></a><b>HciPacketCommand</b>
+### -field HciPacketCommand
 
 <dd>
 <p>The packet represents a command.</p>
 </dd>
 
-### -field <a id="HciPacketAclData"></a><a id="hcipacketacldata"></a><a id="HCIPACKETACLDATA"></a><b>HciPacketAclData</b>
+### -field HciPacketAclData
 
 <dd>
 <p>The packet represents ACL data.</p>
 </dd>
 
-### -field <a id="HciPacketEvent"></a><a id="hcipacketevent"></a><a id="HCIPACKETEVENT"></a><b>HciPacketEvent</b>
+### -field HciPacketEvent
 
 <dd>
 <p>The packet represents an event.</p>

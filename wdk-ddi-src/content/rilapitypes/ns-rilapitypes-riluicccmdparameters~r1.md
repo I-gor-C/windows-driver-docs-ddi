@@ -7,7 +7,7 @@ old-location: netvista\riluicccmdparameters_2.htm
 old-project: netvista
 ms.assetid: 8ebffcdc-672b-4cfd-9ff2-a911b7c4dde5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUICCCMDPARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef struct _RILUICCCMDPARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>filePath</b>
+### -field filePath
 
 <dd></dd>
 
-### -field <b>dwParameter1</b>
+### -field dwParameter1
 
 <dd></dd>
 
-### -field <b>dwParameter2</b>
+### -field dwParameter2
 
 <dd></dd>
 
-### -field <b>dwParameter3</b>
+### -field dwParameter3
 
 <dd></dd>
 </dl>

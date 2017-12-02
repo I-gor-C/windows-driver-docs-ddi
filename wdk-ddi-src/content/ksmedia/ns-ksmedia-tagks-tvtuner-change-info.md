@@ -57,7 +57,7 @@ typedef struct tagKS_TVTUNER_CHANGE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Specifies flags indicating the status of the tuning operation. This member must be set to one of the following values that are defined in <i>ksmedia.h</i>:</p>
@@ -86,19 +86,19 @@ typedef struct tagKS_TVTUNER_CHANGE_INFO {
 <p> </p>
 </dd>
 
-### -field <b>dwCountryCode</b>
+### -field dwCountryCode
 
 <dd>
 <p>Specifies the country code in use. This corresponds to the International Telecommunications Unit (ITU) long distance dialing code.</p>
 </dd>
 
-### -field <b>dwAnalogVideoStandard</b>
+### -field dwAnalogVideoStandard
 
 <dd>
 <p>Specifies the current analog video standard. This member should be set to a value from the <a href="..\ksmedia\ne-ksmedia-ks-analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.</p>
 </dd>
 
-### -field <b>dwChannel</b>
+### -field dwChannel
 
 <dd>
 <p>Specifies the current channel number.</p>

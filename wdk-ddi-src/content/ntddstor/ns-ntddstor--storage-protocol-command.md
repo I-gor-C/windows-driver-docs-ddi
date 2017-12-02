@@ -72,25 +72,25 @@ typedef struct _STORAGE_PROTOCOL_COMMAND {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure. This should be set to <b>STORAGE_PROTOCOL_STRUCTURE_VERSION</b>.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The size of this structure. This should be set to sizeof(<b>STORAGE_PROTOCOL_COMMAND</b>).</p>
 </dd>
 
-### -field <b>ProtocolType</b>
+### -field ProtocolType
 
 <dd>
 <p>The protocol type.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags set for this request. The following are valid flags.</p>
@@ -107,7 +107,7 @@ typedef struct _STORAGE_PROTOCOL_COMMAND {
 <p> </p>
 </dd>
 
-### -field <b>ReturnStatus</b>
+### -field ReturnStatus
 
 <dd>
 <p>The status of the request made to the storage device. In Windows 10, possible values include: </p>
@@ -156,85 +156,85 @@ typedef struct _STORAGE_PROTOCOL_COMMAND {
 <p> </p>
 </dd>
 
-### -field <b>ErrorCode</b>
+### -field ErrorCode
 
 <dd>
 <p>The error code for this request. This is optionally set.</p>
 </dd>
 
-### -field <b>CommandLength</b>
+### -field CommandLength
 
 <dd>
 <p>The length of the command. A non-zero value must be set by the caller.</p>
 </dd>
 
-### -field <b>ErrorInfoLength</b>
+### -field ErrorInfoLength
 
 <dd>
 <p>The length of the error buffer. This is optionally set and can be set to 0.</p>
 </dd>
 
-### -field <b>DataToDeviceTransferLength</b>
+### -field DataToDeviceTransferLength
 
 <dd>
 <p>The size of the buffer that is to be transferred to the device. This is only used with a WRITE request.</p>
 </dd>
 
-### -field <b>DataFromDeviceTransferLength</b>
+### -field DataFromDeviceTransferLength
 
 <dd>
 <p>The size of the buffer this is to be transferred from the device. This is only used with a READ request.</p>
 </dd>
 
-### -field <b>TimeOutValue</b>
+### -field TimeOutValue
 
 <dd>
 <p>How long to wait for the device until timing out. This is set in units of seconds.</p>
 </dd>
 
-### -field <b>ErrorInfoOffset</b>
+### -field ErrorInfoOffset
 
 <dd>
 <p>The offset of the error buffer. This must be pointer-aligned.</p>
 </dd>
 
-### -field <b>DataToDeviceBufferOffset</b>
+### -field DataToDeviceBufferOffset
 
 <dd>
 <p>The offset of the buffer that is to be transferred to the device. This must be pointer-aligned and is only used with a WRITE request.</p>
 </dd>
 
-### -field <b>DataFromDeviceBufferOffset</b>
+### -field DataFromDeviceBufferOffset
 
 <dd>
 <p>The offset of the buffer that is to be transferred from the device. This must be pointer-aligned and is only used with a READ request.</p>
 </dd>
 
-### -field <b>CommandSpecific</b>
+### -field CommandSpecific
 
 <dd>
 <p>Command-specific data passed along with the command. This depends on the command from the driver, and is optionally set.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>FixedProtocolReturnData</b>
+### -field FixedProtocolReturnData
 
 <dd>
 <p>The return data. This is optionally set. Some protocols such as NVMe, may return a small amount of data (DWORD0 from completion queue entry) without the need of a separate device data transfer.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Command[ANYSIZE_ARRAY]</b>
+### -field Command[ANYSIZE_ARRAY]
 
 <dd>
 <p>The vendor-specific command that is to be passed-through to the device. </p>

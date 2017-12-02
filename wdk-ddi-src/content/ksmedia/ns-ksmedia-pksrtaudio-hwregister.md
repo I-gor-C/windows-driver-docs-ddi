@@ -58,31 +58,31 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Register</b>
+### -field Register
 
 <dd>
 <p>Pointer to the register. This member specifies the virtual address into which the register is mapped.</p>
 </dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>Specifies the width, in bits, of the register. The value of this member can be 32 or 64.</p>
 </dd>
 
-### -field <b>Numerator</b>
+### -field Numerator
 
 <dd>
 <p>Specifies the numerator of the frequency at which the clock register increments. See the following Remarks. section.</p>
 </dd>
 
-### -field <b>Denominator</b>
+### -field Denominator
 
 <dd>
 <p>Specifies the denominator of the frequency at which the clock register increments. See the following Remarks. section.</p>
 </dd>
 
-### -field <b>Accuracy</b>
+### -field Accuracy
 
 <dd>
 <p>Specifies the accuracy of the clock or position register. See the following Remarks section.</p>

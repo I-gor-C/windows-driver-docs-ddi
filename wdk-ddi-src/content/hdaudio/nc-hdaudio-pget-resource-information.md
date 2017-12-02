@@ -60,19 +60,19 @@ VOID GetResourceInformation(
 ## -parameters
 <dl>
 
-### -param <i>context</i> [in]
+### -param context [in]
 
 <dd>
 <p>Specifies the context value from the <b>Context</b> member of the <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface.md">HDAUDIO_BUS_INTERFACE</a><u>, </u><a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-v2.md">HDAUDIO_BUS_INTERFACE_V2</a>, or <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a> structure.</p>
 </dd>
 
-### -param <i>codecAddress</i> [out]
+### -param codecAddress [out]
 
 <dd>
 <p>Retrieves a codec address. This parameter points to a caller-allocated UCHAR variable into which the routine writes a codec address. The codec address identifies the serial data in (SDI) line on which the codec supplies response data to the HD Audio bus controller. A bus controller with <i>n</i> SDI pins can support up to <i>n</i> codecs with addresses that range from 0 to <i>n</i>-1.</p>
 </dd>
 
-### -param <i>functionGroupStartNode</i> [out]
+### -param functionGroupStartNode [out]
 
 <dd>
 <p>Retrieves the function group's starting node ID. This parameter points to a caller-allocated UCHAR variable into which the routine writes the node ID. For more information, see the following Remarks section.</p>

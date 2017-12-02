@@ -7,7 +7,7 @@ old-location: netvista\rilcapslockingpwdlengthparammask_2.htm
 old-project: netvista
 ms.assetid: da244ee1-abb5-4b3f-8b2c-6726fbf32e76
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILCAPSLOCKINGPWDLENGTHPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_CLPL_PASSWORDLENGTH"></a><a id="ril_param_clpl_passwordlength"></a><b>RIL_PARAM_CLPL_PASSWORDLENGTH</b>
+### -field RIL_PARAM_CLPL_PASSWORDLENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CLPL_ALL"></a><a id="ril_param_clpl_all"></a><b>RIL_PARAM_CLPL_ALL</b>
+### -field RIL_PARAM_CLPL_ALL
 
 <dd></dd>
 </dl>

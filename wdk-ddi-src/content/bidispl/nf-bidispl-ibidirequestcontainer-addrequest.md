@@ -54,7 +54,7 @@ HRESULT IBidiRequestContainer::AddRequest(
 ## -parameters
 <dl>
 
-### -param <i>pRequest</i> [in]
+### -param pRequest [in]
 
 <dd>
 <p>A pointer to the <a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a> interface.</p>

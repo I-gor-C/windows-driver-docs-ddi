@@ -7,7 +7,7 @@ old-location: wdf\oninterruptworkitem.htm
 old-project: wdf
 ms.assetid: 10677BC2-2A98-41C8-BAE9-1FA3689ACD93
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,13 +61,13 @@ void OnInterruptWorkItem(
 ## -parameters
 <dl>
 
-### -param <i>Interrupt</i> [in]
+### -param Interrupt [in]
 
 <dd>
 <p>A pointer to the interrupt object interface associated with the work item.</p>
 </dd>
 
-### -param <i>AssociatedObject</i> [in]
+### -param AssociatedObject [in]
 
 <dd>
 <p>A pointer to the associated object.</p>
@@ -142,4 +142,4 @@ For more information about handling interrupts in UMDF drivers, see <a href="wdf
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_INTERRUPT_WORKITEM callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_INTERRUPT_WORKITEM callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

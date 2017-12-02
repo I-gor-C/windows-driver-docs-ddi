@@ -59,37 +59,37 @@ typedef struct _STORAGE_IDENTIFIER {
 ## -struct-fields
 <dl>
 
-### -field <b>CodeSet</b>
+### -field CodeSet
 
 <dd>
 <p>Specifies the code set used by a SCSI identification descriptor to identify a logical unit.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Contains an enumerator value of type <a href="storage.storage_identifier_type">STORAGE_IDENTIFIER_TYPE</a> that indicates the identifier type.</p>
 </dd>
 
-### -field <b>IdentifierSize</b>
+### -field IdentifierSize
 
 <dd>
 <p>Specifies the size in bytes of the identifier.</p>
 </dd>
 
-### -field <b>NextOffset</b>
+### -field NextOffset
 
 <dd>
 <p>Specifies the offset in bytes from the current descriptor to the next descriptor.</p>
 </dd>
 
-### -field <b>Association</b>
+### -field Association
 
 <dd>
 <p>Contains an enumerator value of type <a href="storage.storage_association_type">STORAGE_ASSOCIATION_TYPE</a> that indicates whether the descriptor identifies a device or a port.</p>
 </dd>
 
-### -field <b>Identifier</b>
+### -field Identifier
 
 <dd>
 <p>Contains the identifier associated with this descriptor.</p>

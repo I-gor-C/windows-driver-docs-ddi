@@ -7,7 +7,7 @@ old-location: ieee\bus_reset_data.htm
 old-project: IEEE
 ms.assetid: 82A01880-AC8D-4285-A780-EE195F186B71
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: BUS_RESET_DATA, BUS_RESET_DATA, *PBUS_RESET_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,31 +57,31 @@ typedef struct _BUS_RESET_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>ResetContext</b>
+### -field ResetContext
 
 <dd>
 <p>Pointer to a client driver-defined context when a bus reset occurs. The argument that is specified in the <b>u.BusResetNotification.ResetContext</b> parameter when the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537638">REQUEST_BUS_RESET_NOTIFICATION</a> request is sent.</p>
 </dd>
 
-### -field <b>GenerationCount</b>
+### -field GenerationCount
 
 <dd>
 <p>The current generation of the 1394 bus.</p>
 </dd>
 
-### -field <b>DeviceNodeId</b>
+### -field DeviceNodeId
 
 <dd>
 <p>The 1394 address for the device.</p>
 </dd>
 
-### -field <b>LocalNodeId</b>
+### -field LocalNodeId
 
 <dd>
 <p>The 1394 address for the local host.</p>
 </dd>
 
-### -field <b>SpeedToNode</b>
+### -field SpeedToNode
 
 <dd>
 <p>The negotiated speed to the device. The possible values are as follows:</p>
@@ -144,4 +144,4 @@ typedef struct _BUS_RESET_DATA {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20BUS_RESET_DATA structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20BUS_RESET_DATA structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,19 +56,19 @@ NTSTATUS RtlStringCchCat(
 ## -parameters
 <dl>
 
-### -param <i>pszDest</i> [in, out]
+### -param pszDest [in, out]
 
 <dd>
 <p>A pointer to a buffer which, on input, contains a null-terminated string to which <i>pszSrc</i> will be concatenated. On output, this is the destination buffer that contains the entire resultant string. The string at <i>pszSrc</i> is added to the end of the string at <i>pszDest</i> and terminated with a null character. </p>
 </dd>
 
-### -param <i>cchDest</i> [in]
+### -param cchDest [in]
 
 <dd>
 <p>The size, in characters, of the destination buffer. The maximum number of characters allowed is NTSTRSAFE_MAX_CCH. </p>
 </dd>
 
-### -param <i>pszSrc</i> [in]
+### -param pszSrc [in]
 
 <dd>
 <p>A pointer to a null-terminated string. This string will be concatenated to the end of the string that is contained in the buffer at <i>pszDest</i>.</p>

@@ -55,11 +55,11 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSMETHOD_STREAMALLOCATOR_ALLOC"></a><a id="ksmethod_streamallocator_alloc"></a><b>KSMETHOD_STREAMALLOCATOR_ALLOC</b>
+### -field KSMETHOD_STREAMALLOCATOR_ALLOC
 
 <dd></dd>
 
-### -field <a id="KSMETHOD_STREAMALLOCATOR_FREE"></a><a id="ksmethod_streamallocator_free"></a><b>KSMETHOD_STREAMALLOCATOR_FREE</b>
+### -field KSMETHOD_STREAMALLOCATOR_FREE
 
 <dd></dd>
 </dl>

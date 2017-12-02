@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_TOPOLOGY_CATEGORIES"></a><a id="ksproperty_topology_categories"></a><b>KSPROPERTY_TOPOLOGY_CATEGORIES</b>
+### -field KSPROPERTY_TOPOLOGY_CATEGORIES
 
 <dd>
 <p>Specify to query for the array of functional categories that a driver supports.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_TOPOLOGY_NODES"></a><a id="ksproperty_topology_nodes"></a><b>KSPROPERTY_TOPOLOGY_NODES</b>
+### -field KSPROPERTY_TOPOLOGY_NODES
 
 <dd>
 <p>Specify for a list of the topology nodes and node types GUIDs supported by the filter.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_TOPOLOGY_CONNECTIONS"></a><a id="ksproperty_topology_connections"></a><b>KSPROPERTY_TOPOLOGY_CONNECTIONS</b>
+### -field KSPROPERTY_TOPOLOGY_CONNECTIONS
 
 <dd>
 <p>Specify to query all connections between nodes of a KS filter.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_TOPOLOGY_NAME"></a><a id="ksproperty_topology_name"></a><b>KSPROPERTY_TOPOLOGY_NAME</b>
+### -field KSPROPERTY_TOPOLOGY_NAME
 
 <dd>
 <p>Specify to provide the localized Unicode string name of the node.</p>

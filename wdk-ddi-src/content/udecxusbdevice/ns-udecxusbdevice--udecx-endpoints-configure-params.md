@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains the configuration options specified by USB device emulation class extension (UdeCx) to the client driver when the class extension invokes <a href="buses.evt_udecx_usb_device_endpoints_configure">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a>.</p>
+<p>Contains the configuration options specified by USB device emulation class extension (UdeCx) to the client driver when the class extension invokes <a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-endpoints-configure.md">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a>.</p>
 
 
 ## -syntax
@@ -63,55 +63,55 @@ typedef struct _UDECX_ENDPOINTS_CONFIGURE_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of this structure.</p>
 </dd>
 
-### -field <b>ConfigureType</b>
+### -field ConfigureType
 
 <dd>
-<p>A <a href="buses.udecx_endpoints_configure_type">UDECX_ENDPOINTS_CONFIGURE_TYPE</a>-typed value that indicates whether the configuration, interface setting, or endpoint must be configured. </p>
+<p>A <a href="..\udecxusbdevice\ne-udecxusbdevice--udecx-endpoints-configure-type.md">UDECX_ENDPOINTS_CONFIGURE_TYPE</a>-typed value that indicates whether the configuration, interface setting, or endpoint must be configured. </p>
 </dd>
 
-### -field <b>NewConfigurationValue</b>
+### -field NewConfigurationValue
 
 <dd>
 <p>If <b>ConfigureType</b> is <b>UdecxEndpointsConfigureTypeDeviceConfigurationChange</b>, this value is <b>bConfigurationValue</b> of the new configuration descriptor (<a href="..\usbspec\ns-usbspec--usb-configuration-descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a>).</p>
 </dd>
 
-### -field <b>InterfaceNumber</b>
+### -field InterfaceNumber
 
 <dd>
 <p>If <b>ConfigureType</b> is <b>UdecxEndpointsConfigureTypeInterfaceSettingChange</b>, this value is <b>bInterfaceNumber</b> of the current interface descriptor (<a href="..\usbspec\ns-usbspec--usb-interface-descriptor.md">USB_INTERFACE_DESCRIPTOR</a>).</p>
 </dd>
 
-### -field <b>NewInterfaceSetting</b>
+### -field NewInterfaceSetting
 
 <dd>
 <p>If <b>ConfigureType</b> is <b>UdecxEndpointsConfigureTypeInterfaceSettingChange</b>, this value is <b>bAlternateSetting</b> of the interface descriptor (<a href="..\usbspec\ns-usbspec--usb-interface-descriptor.md">USB_INTERFACE_DESCRIPTOR</a>) to set.</p>
 </dd>
 
-### -field <b>EndpointsToConfigureCount</b>
+### -field EndpointsToConfigureCount
 
 <dd>
 <p>The number entries in the array pointed to by <i>EndpointsToConfigure</i>. This value indicates number of endpoints that must be configured.</p>
 </dd>
 
-### -field <b>EndpointsToConfigure</b>
+### -field EndpointsToConfigure
 
 <dd>
 <p>A pointer to an array of UDECXUSBENDPOINT handles that indicates the endpoint objects to be configured.</p>
 </dd>
 
-### -field <b>ReleasedEndpointsCount</b>
+### -field ReleasedEndpointsCount
 
 <dd>
 <p>The number entries in the array pointed to by <i>EndpointsToConfigure</i>. This value indicates number of endpoints to release.</p>
 </dd>
 
-### -field <b>EndpointsToConfigure</b>
+### -field EndpointsToConfigure
 
 <dd>
 <p>A pointer to an array of UDECXUSBENDPOINT handles that indicates the endpoint objects that must be released.</p>
@@ -138,7 +138,7 @@ typedef struct _UDECX_ENDPOINTS_CONFIGURE_PARAMS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_udecx_usb_device_endpoints_configure">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a>
+<a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-endpoints-configure.md">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a>
 </dt>
 </dl>
 <p> </p>

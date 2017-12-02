@@ -7,7 +7,7 @@ old-location: netvista\riluiccresponseparammask_2.htm
 old-project: netvista
 ms.assetid: b281375a-a2bf-4b19-af94-a3902cf462b2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILUICCRESPONSEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_SR_STATUSWORD2"></a><a id="ril_param_sr_statusword2"></a><b>RIL_PARAM_SR_STATUSWORD2</b>
+### -field RIL_PARAM_SR_STATUSWORD2
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SR_RESPONSESIZE"></a><a id="ril_param_sr_responsesize"></a><b>RIL_PARAM_SR_RESPONSESIZE</b>
+### -field RIL_PARAM_SR_RESPONSESIZE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SR_RESPONSE"></a><a id="ril_param_sr_response"></a><b>RIL_PARAM_SR_RESPONSE</b>
+### -field RIL_PARAM_SR_RESPONSE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SR_ALL"></a><a id="ril_param_sr_all"></a><b>RIL_PARAM_SR_ALL</b>
+### -field RIL_PARAM_SR_ALL
 
 <dd></dd>
 </dl>

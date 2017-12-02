@@ -7,7 +7,7 @@ old-location: netvista\wskgetaddressinfo.htm
 old-project: netvista
 ms.assetid: 688619b9-ab0b-4459-8f1b-74815043a190
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
 ## -parameters
 <dl>
 
-### -param <i>Client</i> [in]
+### -param Client [in]
 
 <dd>
 <p>[in] A pointer to a 
@@ -77,7 +77,7 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
      WskCaptureProviderNPI</a> function.</p>
 </dd>
 
-### -param <i>NodeName</i> [in, optional]
+### -param NodeName [in, optional]
 
 <dd>
 <p>[in] An optional pointer to a 
@@ -87,7 +87,7 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
      address.</p>
 </dd>
 
-### -param <i>ServiceName</i> [in, optional]
+### -param ServiceName [in, optional]
 
 <dd>
 <p>[in] An optional pointer to a 
@@ -95,20 +95,20 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
      Unicode string that represents a service name or a port number.</p>
 </dd>
 
-### -param <i>NameSpace</i> [in, optional]
+### -param NameSpace [in, optional]
 
 <dd>
 <p>[in] An optional namespace identifier that specifies the namespace providers that are queried.
      Only namespace providers that support the specified namespace can be queried successfully.</p>
 </dd>
 
-### -param <i>Provider</i> [in, optional]
+### -param Provider [in, optional]
 
 <dd>
 <p>[in] An optional pointer to a GUID of a specific namespace provider to be queried.</p>
 </dd>
 
-### -param <i>Hints</i> [in, optional]
+### -param Hints [in, optional]
 
 <dd>
 <p>[in] An optional pointer to an <a href="winsock.addrinfoex">ADDRINFOEXW</a> structure that provides hints about the type of socket
@@ -124,7 +124,7 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
 <div> </div>
 </dd>
 
-### -param <i>Result</i> [out]
+### -param Result [out]
 
 <dd>
 <p>[out] A pointer to a caller-allocated buffer that receives a linked list of one or more
@@ -144,7 +144,7 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
 <div> </div>
 </dd>
 
-### -param <i>OwningProcess</i> [in, optional]
+### -param OwningProcess [in, optional]
 
 <dd>
 <p>[in] An optional pointer to the process from which the function retrieves the security context.
@@ -157,7 +157,7 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
      function fails and returns STATUS_INVALID_PARAMETER.</p>
 </dd>
 
-### -param <i>OwningThread</i> [in, optional]
+### -param OwningThread [in, optional]
 
 <dd>
 <p>[in] An optional pointer to the thread from which the function retrieves the security context.
@@ -168,7 +168,7 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
      function fails and returns STATUS_INVALID_PARAMETER.</p>
 </dd>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>[in/out] A pointer to an I/O request packet (IRP) to use to complete the request asynchronously.
@@ -263,4 +263,4 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_ADDRESS_INFO callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_ADDRESS_INFO callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

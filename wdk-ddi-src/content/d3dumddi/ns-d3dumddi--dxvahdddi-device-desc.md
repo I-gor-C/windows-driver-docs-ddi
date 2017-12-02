@@ -55,13 +55,13 @@ typedef struct _DXVAHDDDI_DEVICE_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>pContentDesc</b>
+### -field pContentDesc
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-content-desc.md">DXVAHDDDI_CONTENT_DESC</a> structure that describes how the device decodes content. </p>
 </dd>
 
-### -field <b>Usage</b>
+### -field Usage
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-device-usage.md">DXVAHDDDI_DEVICE_USAGE</a>-typed value that indicates how the decode device plays video. </p>

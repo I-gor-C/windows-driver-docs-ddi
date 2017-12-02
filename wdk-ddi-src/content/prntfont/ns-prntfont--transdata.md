@@ -61,14 +61,14 @@ typedef struct _TRANSDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>ubCodePageID</b>
+### -field ubCodePageID
 
 <dd>
 <p>Specifies the zero-based index of a particular structure in the array of <a href="..\prntfont\ns-prntfont--uni-codepageinfo.md">UNI_CODEPAGEINFO</a> structures. The first structure in this array has an index of 0, the second structure has an index of 1, and so on.</p>
 <p>The <b>loCodePageOffset</b> member of the <a href="..\prntfont\ns-prntfont--uni-glyphsetdata.md">UNI_GLYPHSETDATA</a> structure contains the offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of the array of UNI_CODEPAGEINFO structures.</p>
 </dd>
 
-### -field <b>ubType</b>
+### -field ubType
 
 <dd>
 <p>Is a set of one or more bit flags, as follows:</p>
@@ -177,24 +177,24 @@ typedef struct _TRANSDATA {
 <p> </p>
 </dd>
 
-### -field <b>uCode</b>
+### -field uCode
 
 <dd>
 <dl>
 
-### -field <b>sCode</b>
+### -field sCode
 
 <dd>
 <p>Specifies the offset to a command string. The offset is relative to the beginning of the <a href="..\prntfont\ns-prntfont--maptable.md">MAPTABLE</a> structure containing the TRANSDATA array. The first word of the command string must be the command size. Valid if the MTYPE_COMPOSE flag is set in <b>uType</b>.</p>
 </dd>
 
-### -field <b>ubCode</b>
+### -field ubCode
 
 <dd>
 <p>Specifies a one-byte character code. Valid if the MTYPE_DIRECT flag is set in <b>uType</b>.</p>
 </dd>
 
-### -field <b>ubPairs</b>
+### -field ubPairs
 
 <dd>
 <p>Specifies a two-byte character code. Valid if the MTYPE_PAIRED flag is set in <b>uType</b>.</p>

@@ -59,38 +59,38 @@ BOOL FindFirstPrinterChangeNotification(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> 
+### -param hPrinter 
 
 <dd>
 <p>Caller-supplied printer handle, identifying the printer for which event notification is being requested. This handle must have been previously obtained from OpenPrinter (described in the Microsoft Windows SDK documentation).</p>
 </dd>
 
-### -param <i>fdwFlags</i> 
+### -param fdwFlags 
 
 <dd>
 <p>One or more caller-supplied PRINTER_CHANGE-prefixed flags. For more information, see the description of <b>FindFirstPrinterChangeNotification</b> in the Windows SDK documentation.</p>
 </dd>
 
-### -param <i>fdwOptions</i> 
+### -param fdwOptions 
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -param <i>hNotify</i> 
+### -param hNotify 
 
 <dd>
 <p>Caller-supplied notification handle. This handle must be saved and used as input to <a href="..\winsplp\nf-winsplp-replyprinterchangenotification.md">ReplyPrinterChangeNotification</a> and <a href="..\winsplp\nf-winsplp-partialreplyprinterchangenotification.md">PartialReplyPrinterChangeNotification</a>.</p>
 </dd>
 
-### -param <i>pfdwStatus</i> 
+### -param pfdwStatus 
 
 <dd>
 <p>Caller-supplied pointer to a location to receive provider-specified flags. The following flags are defined.</p>
 <p></p>
 <dl>
 
-### -param <a id="PRINTER_NOTIFY_STATUS_ENDPOINT_"></a><a id="printer_notify_status_endpoint_"></a>PRINTER_NOTIFY_STATUS_ENDPOINT 
+### -param PRINTER_NOTIFY_STATUS_ENDPOINT 
 
 <dd>
 <p>If set, the print provider supplies print change notifications, by either the polling or the change notification method. (The notification method is identified by the PRINTER_NOTIFY_STATUS_POLL flag.)</p>
@@ -99,7 +99,7 @@ BOOL FindFirstPrinterChangeNotification(
 <p></p>
 <dl>
 
-### -param <a id="PRINTER_NOTIFY_STATUS_POLL_"></a><a id="printer_notify_status_poll_"></a>PRINTER_NOTIFY_STATUS_POLL 
+### -param PRINTER_NOTIFY_STATUS_POLL 
 
 <dd>
 <p>If set, the print application must poll to detect printer changes.</p>
@@ -110,7 +110,7 @@ BOOL FindFirstPrinterChangeNotification(
 <p></p>
 <dl>
 
-### -param <a id="PRINTER_NOTIFY_STATUS_INFO_"></a><a id="printer_notify_status_info_"></a>PRINTER_NOTIFY_STATUS_INFO 
+### -param PRINTER_NOTIFY_STATUS_INFO 
 
 <dd>
 <p>Not used.</p>
@@ -118,13 +118,13 @@ BOOL FindFirstPrinterChangeNotification(
 </dl>
 </dd>
 
-### -param <i>pPrinterNotifyOptions</i> 
+### -param pPrinterNotifyOptions 
 
 <dd>
 <p>Caller-supplied pointer to a PRINTER_NOTIFY_OPTIONS structure (described in the Windows SDK documentation).</p>
 </dd>
 
-### -param <i>pPrinterNotifyInit</i> 
+### -param pPrinterNotifyInit 
 
 <dd>
 <p>Not used.</p>
@@ -145,7 +145,7 @@ BOOL FindFirstPrinterChangeNotification(
 
 <p>Both polled and nonpolled print provider must return the current state of all requested information types whenever its <a href="print.refreshprinterchangenotification">RefreshPrinterChangeNotification</a> function is called.</p>
 
-<p>For additional information, see <a href="NULL">Supporting Printer Change Notifications</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/e75c6f89-9cef-4900-af89-edf1f7f786c7">Supporting Printer Change Notifications</a>.</p>
 
 ## -requirements
 <table>

@@ -57,25 +57,25 @@ typedef struct _D3D12DDIARG_OPENADAPTER {
 ## -struct-fields
 <dl>
 
-### -field <b>hRTAdapter</b>
+### -field hRTAdapter
 
 <dd>
 <p>[in] A runtime handle to the graphics adapter object that specifies the handle that the driver should use to query for graphics adapter capabilities when the driver calls the Microsoft Direct3D runtime-supplied <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-queryadapterinfocb.md">pfnQueryAdapterInfoCb</a> callback function. </p>
 </dd>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd>
 <p>[out] A handle to the graphics adapter object that specifies the handle that the Direct3D runtime uses in subsequent driver calls to identify the graphics adapter object. The driver generates a unique handle and passes it back to the Direct3D runtime. </p>
 </dd>
 
-### -field <b>pAdapterCallbacks</b>
+### -field pAdapterCallbacks
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddi-adaptercallbacks.md">D3DDDI_ADAPTERCALLBACKS</a> structure that contains the Direct3D runtime-supplied <b>pfnQueryAdapterInfoCb</b> callback function that the driver can use.</p>
 </dd>
 
-### -field <b>pAdapterFuncs</b>
+### -field pAdapterFuncs
 
 <dd>
 <p>[out] A pointer to a D3D12DDI_ADAPTERFUNCS structure that contains a table of user-mode display driver adapter-specific functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver about operations that are specific to the graphics adapter.</p>

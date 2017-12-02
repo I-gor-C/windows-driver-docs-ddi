@@ -71,25 +71,25 @@ typedef struct _HDAUDIO_CODEC_RESPONSE {
 ## -struct-fields
 <dl>
 
-### -field ( <i>unnamed struct</i> )
+### -field ( unnamed struct )
 
 <dd>
 <p>Specifies a 26-bit unsolicited response value.</p>
 <dl>
 
-### -field <b>Unsolicited</b>
+### -field Unsolicited
 
 <dd>
 <p>Specifies a 32-bit unsolicited response value that consists of a 26-bit response value and a 6-bit tag value.</p>
 <dl>
 
-### -field <b>Response</b>
+### -field Response
 
 <dd>
 <p>Specifies a 26-bit unsolicited response value.</p>
 </dd>
 
-### -field <b>Tag</b>
+### -field Tag
 
 <dd>
 <p>Specifies a 6-bit tag value for an unsolicited response.</p>
@@ -97,31 +97,31 @@ typedef struct _HDAUDIO_CODEC_RESPONSE {
 </dl>
 </dd>
 
-### -field <b>Response</b>
+### -field Response
 
 <dd>
 <p>Specifies a 26-bit unsolicited response value.</p>
 </dd>
 
-### -field <b>SDataIn</b>
+### -field SDataIn
 
 <dd>
 <p>Specifies the 4-bit codec address (SDI line) of the codec that generates the response.</p>
 </dd>
 
-### -field <b>IsUnsolicitedResponse</b>
+### -field IsUnsolicitedResponse
 
 <dd>
 <p>Specifies whether the response is unsolicited. If 1, the response is unsolicited. If 0, the response is solicited (that is, a response to a codec command).</p>
 </dd>
 
-### -field <b>HasFifoOverrun</b>
+### -field HasFifoOverrun
 
 <dd>
 <p>Specifies whether a FIFO overrun occurred in the response input ring buffer (RIRB). If 1, a FIFO overrun occurred. If 0, a FIFO overrun did not occur.</p>
 </dd>
 
-### -field <b>IsValid</b>
+### -field IsValid
 
 <dd>
 <p>Specifies whether the response is valid. If 1, the response is valid. If 0, it is not valid.</p>
@@ -129,7 +129,7 @@ typedef struct _HDAUDIO_CODEC_RESPONSE {
 </dl>
 </dd>
 
-### -field <b>CompleteResponse</b>
+### -field CompleteResponse
 
 <dd>
 <p>Specifies a complete, 64-bit response summary that consists of a 32-bit response, 4-bit codec address, three status bits, and 25 unused bits (set to zero). This value is mostly used in debug messages.</p>

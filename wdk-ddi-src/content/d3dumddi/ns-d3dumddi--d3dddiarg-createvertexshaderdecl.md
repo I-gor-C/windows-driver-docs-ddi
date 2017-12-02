@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_CREATEVERTEXSHADERDECL {
 ## -struct-fields
 <dl>
 
-### -field <b>NumVertexElements</b>
+### -field NumVertexElements
 
 <dd>
 <p>[in] The number of vertex elements in the array that is passed to the <i>pVertexElements</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createvertexshaderdecl.md">CreateVertexShaderDecl</a> function.</p>
 </dd>
 
-### -field <b>ShaderHandle</b>
+### -field ShaderHandle
 
 <dd>
 <p>[out] A handle to the vertex shader declaration.</p>

@@ -58,13 +58,13 @@ typedef struct _DXGKARG_QUERYADAPTERINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-queryadapterinfotype.md">DXGK_QUERYADAPTERINFOTYPE</a>-typed value that indicates the type of information to retrieve.</p>
 </dd>
 
-### -field <b>pInputData</b>
+### -field pInputData
 
 <dd>
 <p>[in] A pointer to input information for the query. </p>
@@ -72,13 +72,13 @@ typedef struct _DXGKARG_QUERYADAPTERINFO {
 <p>An input buffer is not required when <b>Type</b> specifies the DXGKQAITYPE_DRIVERCAPS value.</p>
 </dd>
 
-### -field <b>InputDataSize</b>
+### -field InputDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the input data that <b>pInputData</b> points to.</p>
 </dd>
 
-### -field <b>pOutputData</b>
+### -field pOutputData
 
 <dd>
 <p>[out] A pointer to an output buffer that the display miniport driver fills with the required information.</p>
@@ -115,7 +115,7 @@ typedef struct _DXGKARG_QUERYADAPTERINFO {
 <p> </p>
 </dd>
 
-### -field <b>OutputDataSize</b>
+### -field OutputDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the output data that <b>pOutputData</b> points to.</p>

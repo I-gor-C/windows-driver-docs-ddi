@@ -7,7 +7,7 @@ old-location: netvista\vmbpacketsetpointer.htm
 old-project: netvista
 ms.assetid: FFEBEBD0-1FF2-4F27-B028-051B117CA325
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbPacketSetPointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ VOID VmbPacketSetPointer(
 ## -parameters
 <dl>
 
-### -param <i>PacketObject</i> [in]
+### -param PacketObject [in]
 
 <dd>
 <p>A handle for a VMBus packet.</p>
 </dd>
 
-### -param <i>Pointer</i> [in, optional]
+### -param Pointer [in, optional]
 
 <dd>
 <p> An arbitrary pointer to save in the context of the packet.</p>

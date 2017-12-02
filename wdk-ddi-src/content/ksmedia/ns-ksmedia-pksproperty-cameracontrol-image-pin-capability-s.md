@@ -55,20 +55,20 @@ typedef struct _KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S {
 ## -struct-fields
 <dl>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Indicates the image pin control capabilities.</p>
 <dl class="indent">
 
-### -field <a id="KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_EXCLUSIVE_WITH_RECORD"></a><a id="ksproperty_cameracontrol_image_pin_capability_exclusive_with_record"></a><p><a id="KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_EXCLUSIVE_WITH_RECORD"></a><a id="ksproperty_cameracontrol_image_pin_capability_exclusive_with_record"></a><b>KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_EXCLUSIVE_WITH_RECORD</b></p>
+### -field KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_EXCLUSIVE_WITH_RECORD
 
 
 <dd>
 <p>If set, the image pin and the record pin cannot function simultaneously.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_SEQUENCE_EXCLUSIVE_WITH_RECORD"></a><a id="ksproperty_cameracontrol_image_pin_capability_sequence_exclusive_with_record"></a><p><a id="KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_SEQUENCE_EXCLUSIVE_WITH_RECORD"></a><a id="ksproperty_cameracontrol_image_pin_capability_sequence_exclusive_with_record"></a><b>KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_SEQUENCE_EXCLUSIVE_WITH_RECORD</b></p>
+### -field KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_SEQUENCE_EXCLUSIVE_WITH_RECORD
 
 
 <dd>
@@ -77,7 +77,7 @@ typedef struct _KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S {
 </dl>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>

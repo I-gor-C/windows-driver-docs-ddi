@@ -56,13 +56,13 @@ typedef struct _WINBIO_BLANK_PAYLOAD {
 ## -struct-fields
 <dl>
 
-### -field <b>PayloadSize</b>
+### -field PayloadSize
 
 <dd>
 <p> The total size of the payload.  This includes the fixed length structure and any variable data at the end.</p>
 </dd>
 
-### -field <b>WinBioHresult</b>
+### -field WinBioHresult
 
 <dd>
 <p>The status detail of the I/O operation.  This is where WINBIO error and information codes will be passed. The following table shows possible values.</p>

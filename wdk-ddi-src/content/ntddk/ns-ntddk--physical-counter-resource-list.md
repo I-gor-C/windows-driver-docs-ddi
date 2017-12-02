@@ -55,13 +55,13 @@ typedef struct _PHYSICAL_COUNTER_RESOURCE_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>The number of elements in the <b>Descriptors</b> array. </p>
 </dd>
 
-### -field <b>Descriptors</b>
+### -field Descriptors
 
 <dd>
 <p>The first element in an array of <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structures. If the array contains more than one element, the remaining elements immediately follow the first element. </p>

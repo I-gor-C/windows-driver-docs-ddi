@@ -58,7 +58,7 @@ typedef struct D3DWDDM1_3DDI_TILE_REGION_SIZE {
 ## -struct-fields
 <dl>
 
-### -field <b>NumTiles</b>
+### -field NumTiles
 
 <dd>
 <p>The number of tiles within the tiled region.</p>
@@ -66,7 +66,7 @@ typedef struct D3DWDDM1_3DDI_TILE_REGION_SIZE {
 <div> </div>
 </dd>
 
-### -field <b>bUseBox</b>
+### -field bUseBox
 
 <dd>
 <p>If <b>TRUE</b>, the tiled region is defined by the <b>Width</b>, <b>Height</b>, and <b>Depth</b> members. In this case, one update region cannot span mipmaps, although it can span array slices using the  <b>Depth</b> member.</p>
@@ -75,19 +75,19 @@ typedef struct D3DWDDM1_3DDI_TILE_REGION_SIZE {
                   is specified as a separate parameter outside this structure.</p>
 </dd>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>The width (in the <i>x</i>-direction) of the tiled region. Used for buffer, 1-D, 2-D, and 3-D rendering.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>The height (in the <i>y</i>-direction) of the tiled region. Used for 2-D and 3-D rendering.</p>
 </dd>
 
-### -field <b>Depth</b>
+### -field Depth
 
 <dd>
 <p>The depth (in the <i>z</i>-direction) of the tiled region. Used for 3-D rendering or for arrays. In the case of arrays, advancing in depth skips to the next slice of the same mipmap size.</p>

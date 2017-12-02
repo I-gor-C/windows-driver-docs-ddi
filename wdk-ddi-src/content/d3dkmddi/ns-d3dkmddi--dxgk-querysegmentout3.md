@@ -58,31 +58,31 @@ typedef struct _DXGK_QUERYSEGMENTOUT3 {
 ## -struct-fields
 <dl>
 
-### -field <b>NbSegment</b>
+### -field NbSegment
 
 <dd>
 <p>[out] The number of memory segments that the driver supports.</p>
 </dd>
 
-### -field <b>pSegmentDescriptor</b>
+### -field pSegmentDescriptor
 
 <dd>
 <p>[out] An array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor3.md">DXGK_SEGMENTDESCRIPTOR3</a> structures that the driver populates with information about the segments it supports. The size of the array is the value that <b>NbSegment</b> specifies.</p>
 </dd>
 
-### -field <b>PagingBufferSegmentId</b>
+### -field PagingBufferSegmentId
 
 <dd>
 <p>[out] The identifier of the segment that the video memory manager should allocate the paging buffer from. This segment must be an aperture segment.</p>
 </dd>
 
-### -field <b>PagingBufferSize</b>
+### -field PagingBufferSize
 
 <dd>
 <p>[out] The size, in bytes, that the video memory manager should allocate for the paging buffer.</p>
 </dd>
 
-### -field <b>PagingBufferPrivateDataSize</b>
+### -field PagingBufferPrivateDataSize
 
 <dd>
 <p>[out] The size, in bytes, of the driver-resident private data structure that is associated with each paging buffer. Memory for this private data structure is allocated from nonpaged pool. If the driver specifies zero for <b>PagingBufferPrivateDataSize</b>, no memory is allocated for the private data structure.</p>

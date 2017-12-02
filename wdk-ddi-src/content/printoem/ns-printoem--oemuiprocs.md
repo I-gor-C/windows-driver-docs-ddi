@@ -57,13 +57,13 @@ typedef struct _OEMUIPROCS {
 ## -struct-fields
 <dl>
 
-### -field <b>DrvGetDriverSetting</b>
+### -field DrvGetDriverSetting
 
 <dd>
 <p>Pointer to the printer driver's <b>DrvGetDriverSetting</b> function. (To obtain this function's address in kernel mode, see <a href="..\printoem\ns-printoem--drvprocs.md">DRVPROCS</a>.)</p>
 </dd>
 
-### -field <b>DrvUpdateUISetting</b>
+### -field DrvUpdateUISetting
 
 <dd>
 <p>Pointer to the printer driver's <b>DrvUpdateUISetting</b> function.</p>

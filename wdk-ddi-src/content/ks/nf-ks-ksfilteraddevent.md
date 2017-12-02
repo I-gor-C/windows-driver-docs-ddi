@@ -55,13 +55,13 @@ void _inline KsFilterAddEvent(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p><i>A pointer</i> to a <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure representing the filter to which to add a specified event.</p>
 </dd>
 
-### -param <i>EventEntry</i> [in]
+### -param EventEntry [in]
 
 <dd>
 <p><i>A pointer</i> to an <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a> structure describing the event to add to <i>Filter</i>.</p>

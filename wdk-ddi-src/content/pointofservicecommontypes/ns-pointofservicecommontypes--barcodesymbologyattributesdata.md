@@ -62,59 +62,59 @@ typedef struct _BarcodeSymbologyAttributesData {
 ## -struct-fields
 <dl>
 
-### -field <b>Symbology</b>
+### -field Symbology
 
 <dd>
 <p>The barcode symbology  to set or get attributes to or from.</p>
 <p>For more information, see the <a href="pos.barcodesymbology">BarcodeSymbology</a> enumeration topic.</p>
 </dd>
 
-### -field <b>IsCheckDigitValidationSupported</b>
+### -field IsCheckDigitValidationSupported
 
 <dd>
 <p>Indicates whether the barcode scanner supports check digit of the symbology. Non-zero if supported.</p>
 </dd>
 
-### -field <b>IsCheckDigitValidationEnabled</b>
+### -field IsCheckDigitValidationEnabled
 
 <dd>
 <p>Indicates whether the target barcodes are expected to contain a check digit.</p>
 <p>Some barcodes may have the last digit as a validation digit to ensure  decoding accuracy.  Barcode scanners may choose to support the feature or not. Non-zero if enabled.</p>
 </dd>
 
-### -field <b>IsCheckDigitTransmissionSupported</b>
+### -field IsCheckDigitTransmissionSupported
 
 <dd>
 <p>Indicates whether the barcode scanner supports check digit transmission. Non-zero if supported.</p>
 </dd>
 
-### -field <b>IsCheckDigitTransmissionEnabled</b>
+### -field IsCheckDigitTransmissionEnabled
 
 <dd>
 <p>Indicates whether the check digit is transmitted along with the decoded data. Non-zero if enabled.</p>
 </dd>
 
-### -field <b>IsDecodeLengthSupported</b>
+### -field IsDecodeLengthSupported
 
 <dd>
 <p>Indicates whether the barcode scanner supports setting decode length for the symbology.</p>
 <p>For example, the API can be used to set to read barcodes of decode length between 2 and 8.  This helps with filtering the target barcodes. Non-zero if supported.</p>
 </dd>
 
-### -field <b>DecodeLengthType</b>
+### -field DecodeLengthType
 
 <dd>
 <p> The decode length type, which can be set to support a range, two discrete values, or be set to any length.
  For more information, see the <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes--barcodesymbologydecodelengthtype.md">BarcodeSymbologyDecodeLengthType</a>.</p>
 </dd>
 
-### -field <b>DecodeLength1</b>
+### -field DecodeLength1
 
 <dd>
 <p>The first  value in a range, or the  first  discrete value.</p>
 </dd>
 
-### -field <b>DecodeLength2</b>
+### -field DecodeLength2
 
 <dd>
 <p>The last value in a range, or a second discrete value.</p>

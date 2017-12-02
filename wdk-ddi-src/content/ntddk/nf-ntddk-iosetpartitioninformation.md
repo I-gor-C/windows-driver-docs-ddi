@@ -58,25 +58,25 @@ NTSTATUS FASTCALL IoSetPartitionInformation(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object representing the device on which the partition type is to be set.</p>
 </dd>
 
-### -param <i>SectorSize</i> [in]
+### -param SectorSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of sectors on the disk.</p>
 </dd>
 
-### -param <i>PartitionNumber</i> [in]
+### -param PartitionNumber [in]
 
 <dd>
 <p>Specifies the partition number on the device whose partition type is to be set.</p>
 </dd>
 
-### -param <i>PartitionType</i> [in]
+### -param PartitionType [in]
 
 <dd>
 <p>Specifies the type for the partition. For a list of some of the key partition types see <a href="..\ntdddisk\ns-ntdddisk--partition-information.md">PARTITION_INFORMATION</a>. </p>

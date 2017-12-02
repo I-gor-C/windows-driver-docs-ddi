@@ -55,13 +55,13 @@ typedef struct _SYNTHVOICEPRIORITY_INSTANCE {
 ## -struct-fields
 <dl>
 
-### -field <b>ChannelGroup</b>
+### -field ChannelGroup
 
 <dd>
 <p>Specifies the channel group that the voice belongs to. Channel groups are numbered beginning at zero. Each channel group contains 16 channels.</p>
 </dd>
 
-### -field <b>Channel</b>
+### -field Channel
 
 <dd>
 <p>Specifies the channel that the voice is on. This member contains a channel number in the range 0 through 15. It identifies a channel in the channel group.</p>

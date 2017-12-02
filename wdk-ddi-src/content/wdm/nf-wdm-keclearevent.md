@@ -55,7 +55,7 @@ VOID KeClearEvent(
 ## -parameters
 <dl>
 
-### -param <i>Event</i> [in, out]
+### -param Event [in, out]
 
 <dd>
 <p>Pointer to an initialized dispatcher object of type event for which the caller supplies the storage. </p>

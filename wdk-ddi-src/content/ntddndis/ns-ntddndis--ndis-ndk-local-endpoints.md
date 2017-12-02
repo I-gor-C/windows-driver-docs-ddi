@@ -7,7 +7,7 @@ old-location: netvista\ndis_ndk_local_endpoints.htm
 old-project: netvista
 ms.assetid: AF14B883-780E-42BE-9D8F-75C17011425B
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_NDK_LOCAL_ENDPOINTS, NDIS_NDK_LOCAL_ENDPOINTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct _NDIS_NDK_LOCAL_ENDPOINTS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>An <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure that describes this <b>NDIS_NDK_LOCAL_ENDPOINTS</b> structure. Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:</p>
@@ -68,19 +68,19 @@ typedef struct _NDIS_NDK_LOCAL_ENDPOINTS {
 </ul>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>The number of elements in the endpoints array that is passed in the <b>LocalEndpoints</b> member. Each element in the array is an <a href="..\ntddndis\ns-ntddndis--ndis-ndk-local-endpoint-entry.md">NDIS_NDK_LOCAL_ENDPOINT_ENTRY</a> structure.</p>
 </dd>
 
-### -field <b>NDLocalEndpointsMappedtoTCPLocalEndpoints</b>
+### -field NDLocalEndpointsMappedtoTCPLocalEndpoints
 
 <dd>
 <p>A <b>BOOLEAN</b> value that specifies how the endpoints are mapped. If the RDMA technology for the NDK provider requires the provider to map ND local endpoints to TCP local endpoints, the NDK provider must set the <b>NDLocalEndpointsMappedtoTCPLocalEndpoints</b> member to TRUE. Otherwise, <b>NDLocalEndpointsMappedtoTCPLocalEndpoints</b> is FALSE.</p>
 </dd>
 
-### -field <b>LocalEndpoints</b>
+### -field LocalEndpoints
 
 <dd>
 <p>A variable-sized array of <a href="..\ntddndis\ns-ntddndis--ndis-ndk-local-endpoint-entry.md">NDIS_NDK_LOCAL_ENDPOINT_ENTRY</a> structures where the size of the array is determined by the number of local endpoints being returned. The <b>Count</b> member  specifies the number of elements in the local endpoint array.</p>
@@ -155,4 +155,4 @@ typedef struct _NDIS_NDK_LOCAL_ENDPOINTS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NDK_LOCAL_ENDPOINTS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NDK_LOCAL_ENDPOINTS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

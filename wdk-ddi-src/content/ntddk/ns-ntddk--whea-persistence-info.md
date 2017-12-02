@@ -62,43 +62,43 @@ typedef union _WHEA_PERSISTENCE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>The signature of the error record when it is stored in the platform's persistent data storage. This member contains the value 'RE'.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The length, in bytes, of the error record when it is stored in the platform's persistent data storage.</p>
 </dd>
 
-### -field <b>Identifier</b>
+### -field Identifier
 
 <dd>
 <p>An identifier that uniquely identifies the error record when it is stored in the platform's persistent data storage. The data type for this identifier is WHEA_ERROR_RECORD_ID.</p>
 </dd>
 
-### -field <b>Attributes</b>
+### -field Attributes
 
 <dd>
 <p>Attribute flags that describe the error record. No attributes are currently defined.</p>
 </dd>
 
-### -field <b>DoNotLog</b>
+### -field DoNotLog
 
 <dd>
 <p>A single bit that indicates that WHEA should not log an entry in the system event log for the error record.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. This member must be zero.</p>
 </dd>
 
-### -field <b>AsULONGLONG</b>
+### -field AsULONGLONG
 
 <dd>
 <p>A ULONGLONG representation of the contents of the WHEA_PERSISTENCE_INFO union.</p>

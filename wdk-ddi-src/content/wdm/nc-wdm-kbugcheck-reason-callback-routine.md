@@ -61,25 +61,25 @@ VOID BugCheckDumpIoCallback(
 ## -parameters
 <dl>
 
-### -param <i>Reason</i> [in]
+### -param Reason [in]
 
 <dd>
 <p>Specifies the situation in which the callback is executed. For <i>BugCheckDumpIoCallback</i>, the value of this parameter is always <b>KbCallbackDumpIo</b>. <b>KbCallbackDumpIo</b> is a <a href="..\wdm\ne-wdm--kbugcheck-callback-reason.md">KBUGCHECK_CALLBACK_REASON</a> enumeration value.</p>
 </dd>
 
-### -param <i>Record</i> [in]
+### -param Record [in]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551873">KBUGCHECK_REASON_CALLBACK_RECORD</a> structure that the driver passed when registering this callback.</p>
 </dd>
 
-### -param <i>ReasonSpecificData</i> [in, out]
+### -param ReasonSpecificData [in, out]
 
 <dd>
 <p>Pointer to a <a href="..\wdm\ns-wdm--kbugcheck-dump-io.md">KBUGCHECK_DUMP_IO</a> structure that describes the current I/O operation.</p>
 </dd>
 
-### -param <i>ReasonSpecificDataLength</i> [in]
+### -param ReasonSpecificDataLength [in]
 
 <dd>
 <p>Specifies the size of the buffer  supplied by the <i>ReasonSpecificData</i> parameter. For <i>BugCheckDumpIoCallback</i>, the value of this parameter is always <b>sizeof</b>(<b>KBUGCHECK_DUMP_IO</b>).</p>
@@ -102,7 +102,7 @@ VOID BugCheckDumpIoCallback(
 
 <p>A <i>BugCheckDumpIoCallback</i> routine is strongly restricted in the actions it can take. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566401">Writing a Bug Check Callback Routine</a>.</p>
 
-<p>To define a <i>BugCheckDumpIoCallback</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define a <i>BugCheckDumpIoCallback</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define a <i>BugCheckDumpIoCallback</i> callback routine that is named <code>MyBugCheckDumpIoCallback</code>, use the KBUGCHECK_REASON_CALLBACK_ROUTINE type as shown in this code example:</p>
 

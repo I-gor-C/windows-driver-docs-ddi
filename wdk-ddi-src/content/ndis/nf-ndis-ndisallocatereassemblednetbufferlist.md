@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatereassemblednetbufferlist.htm
 old-project: netvista
 ms.assetid: 6a7fcb43-93bf-4351-8198-1d788b1bcc8c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisAllocateReassembledNetBufferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,13 +61,13 @@ PNET_BUFFER_LIST NdisAllocateReassembledNetBufferList(
 ## -parameters
 <dl>
 
-### -param <i>FragmentedNetBufferList</i> [in]
+### -param FragmentedNetBufferList [in]
 
 <dd>
 <p>A pointer to the NET_BUFFER_LIST structure to reassemble.</p>
 </dd>
 
-### -param <i>NetBufferAndNetBufferListPoolHandle</i> [in, optional]
+### -param NetBufferAndNetBufferListPoolHandle [in, optional]
 
 <dd>
 <p>A NET_BUFFER_LIST structure pool handle that was previously returned from the 
@@ -79,7 +79,7 @@ PNET_BUFFER_LIST NdisAllocateReassembledNetBufferList(
      <b>DataSize</b> member set to zero. If this parameter is <b>NULL</b>, NDIS uses an internal pool.</p>
 </dd>
 
-### -param <i>StartOffset</i> [in]
+### -param StartOffset [in]
 
 <dd>
 <p>The amount of data to skip at the beginning of each source 
@@ -88,14 +88,14 @@ PNET_BUFFER_LIST NdisAllocateReassembledNetBufferList(
      <b>DataOffset</b> member of the NET_BUFFER structure.</p>
 </dd>
 
-### -param <i>DataOffsetDelta</i> [in]
+### -param DataOffsetDelta [in]
 
 <dd>
 <p>The number of bytes of 
      <i>used data space</i> to add to in the reassembled NET_BUFFER structure.</p>
 </dd>
 
-### -param <i>DataBackFill</i> [in]
+### -param DataBackFill [in]
 
 <dd>
 <p>If allocation of 
@@ -104,7 +104,7 @@ PNET_BUFFER_LIST NdisAllocateReassembledNetBufferList(
      <i>DataOffsetDelta</i> to allocate.</p>
 </dd>
 
-### -param <i>AllocateReassembleFlags</i> [in]
+### -param AllocateReassembleFlags [in]
 
 <dd>
 <p>NDIS flags that can be combined with an OR operation. Set this parameter to zero. There are
@@ -218,4 +218,4 @@ PNET_BUFFER_LIST NdisAllocateReassembledNetBufferList(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateReassembledNetBufferList function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateReassembledNetBufferList function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

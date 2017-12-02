@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbackswide_exitthread.htm
 old-project: debugger
 ms.assetid: 77933fa9-ff30-45cf-894d-83a425802e25
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugEventCallbacksWide, ExitThread, IDebugEventCallbacksWide::ExitThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT ExitThread(
 ## -parameters
 <dl>
 
-### -param <i>ExitCode</i> [in]
+### -param ExitCode [in]
 
 <dd>
 <p>Specifies the exit code for the thread.</p>
@@ -62,7 +62,7 @@ HRESULT ExitThread(
 </dl>
 
 ## -returns
-<p>This method returns a <a href="debugger.debug_status_xxx">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
+<p>This method returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541651">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
 
 ## -remarks
 <p>This method is only called by the engine if the DEBUG_EVENT_EXIT_THREAD flag is set in the mask returned by <a href="debugger.idebugeventcallbackswide_getinterestmask">IDebugEventCallbacksWide::GetInterestMask</a>.</p>

@@ -58,7 +58,7 @@ typedef struct _DDRAW_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>Caps</b>
+### -field Caps
 
 <dd>
 <p>[out] A valid bitwise OR of the following general capability bits that the driver supports.</p>
@@ -95,7 +95,7 @@ typedef struct _DDRAW_CAPS {
 <p> </p>
 </dd>
 
-### -field <b>Caps2</b>
+### -field Caps2
 
 <dd>
 <p>[out] A valid bitwise OR of more of the following general capability bits that the driver supports.</p>
@@ -148,7 +148,7 @@ typedef struct _DDRAW_CAPS {
 <p> </p>
 </dd>
 
-### -field <b>CKeyCaps</b>
+### -field CKeyCaps
 
 <dd>
 <p>[out] A valid bitwise OR of the following color key capability bits that the driver supports.</p>
@@ -177,7 +177,7 @@ typedef struct _DDRAW_CAPS {
 <p> </p>
 </dd>
 
-### -field <b>FxCaps</b>
+### -field FxCaps
 
 <dd>
 <p>[out] A valid bitwise OR of the following stretching and effects capability bits that the driver supports.</p>
@@ -206,7 +206,7 @@ typedef struct _DDRAW_CAPS {
 <p> </p>
 </dd>
 
-### -field <b>MaxVideoPorts</b>
+### -field MaxVideoPorts
 
 <dd>
 <p>[out] The maximum number of video ports that the device supports.</p>

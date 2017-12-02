@@ -55,13 +55,13 @@ typedef struct _DXGKVGPU_ESCAPE_WRITE_PCI_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Offset, in bytes, in the PCI config space.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size, in bytes, to write</p>

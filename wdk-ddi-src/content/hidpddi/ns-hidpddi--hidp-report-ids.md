@@ -59,31 +59,31 @@ typedef struct _HIDP_REPORT_IDS {
 ## -struct-fields
 <dl>
 
-### -field <b>ReportID</b>
+### -field ReportID
 
 <dd>
 <p>The report ID of the top-level collection.</p>
 </dd>
 
-### -field <b>CollectionNumber</b>
+### -field CollectionNumber
 
 <dd>
 <p>The index of the collection in the array of  <a href="..\hidpddi\ns-hidpddi--hidp-collection-desc.md">HIDP_COLLECTION_DESC</a> structure.</p>
 </dd>
 
-### -field <b>InputLength</b>
+### -field InputLength
 
 <dd>
 <p>The length of an input report of this report ID. </p>
 </dd>
 
-### -field <b>OutputLength</b>
+### -field OutputLength
 
 <dd>
 <p>The length of an output report of this report ID. An input report, an output report, and a feature report can use the same report.</p>
 </dd>
 
-### -field <b>FeatureLength</b>
+### -field FeatureLength
 
 <dd>
 <p>The length of a feature report of this report ID.</p>

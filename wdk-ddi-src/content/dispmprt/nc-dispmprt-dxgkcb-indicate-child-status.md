@@ -58,13 +58,13 @@ NTSTATUS DxgkCbIndicateChildStatus(
 ## -parameters
 <dl>
 
-### -param <i>DeviceHandle</i> [in]
+### -param DeviceHandle [in]
 
 <dd>
 <p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
 </dd>
 
-### -param <i>ChildStatus</i> [in]
+### -param ChildStatus [in]
 
 <dd>
 <p>A pointer to a <a href="..\dispmprt\ns-dispmprt--dxgk-child-status.md">DXGK_CHILD_STATUS</a> structure that identifies the child device and describes the current status of the child device.</p>

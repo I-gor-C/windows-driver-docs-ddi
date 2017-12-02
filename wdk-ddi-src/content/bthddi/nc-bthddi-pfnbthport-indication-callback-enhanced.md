@@ -60,7 +60,7 @@ VOID WINAPI BluetoothPortIndicationCallbackEnhanced(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>For
@@ -69,7 +69,7 @@ VOID WINAPI BluetoothPortIndicationCallbackEnhanced(
      <a href="bltooth._brb_l2ca_open_enhanced_channel">_BRB_L2CA_OPEN_ENHANCED_CHANNEL</a> structure.</p>
 </dd>
 
-### -param <i>Indication</i> [in]
+### -param Indication [in]
 
 <dd>
 <p>An 
@@ -77,7 +77,7 @@ VOID WINAPI BluetoothPortIndicationCallbackEnhanced(
      of L2CAP event.</p>
 </dd>
 
-### -param <i>Parameters</i> [in]
+### -param Parameters [in]
 
 <dd>
 <p>An 

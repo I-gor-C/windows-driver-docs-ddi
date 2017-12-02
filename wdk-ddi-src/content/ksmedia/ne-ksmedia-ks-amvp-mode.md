@@ -58,31 +58,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_AMVP_MODE_WEAVE"></a><a id="ks_amvp_mode_weave"></a><b>KS_AMVP_MODE_WEAVE</b>
+### -field KS_AMVP_MODE_WEAVE
 
 <dd>
 <p>Specifies the weave method to display interlaced video. In the weave mode, alternating fields are combined to form a single frame.</p>
 </dd>
 
-### -field <a id="KS_AMVP_MODE_BOBINTERLEAVED"></a><a id="ks_amvp_mode_bobinterleaved"></a><b>KS_AMVP_MODE_BOBINTERLEAVED</b>
+### -field KS_AMVP_MODE_BOBINTERLEAVED
 
 <dd>
 <p>Specifies the interleaved bob method to display video. In the interleaved bob mode, each field is displayed individually, and the gaps between fields are filled with interpolated values.</p>
 </dd>
 
-### -field <a id="KS_AMVP_MODE_BOBNONINTERLEAVED"></a><a id="ks_amvp_mode_bobnoninterleaved"></a><b>KS_AMVP_MODE_BOBNONINTERLEAVED</b>
+### -field KS_AMVP_MODE_BOBNONINTERLEAVED
 
 <dd>
 <p>Specifies the non-interleaved bob method to display video.</p>
 </dd>
 
-### -field <a id="KS_AMVP_MODE_SKIPEVEN"></a><a id="ks_amvp_mode_skipeven"></a><b>KS_AMVP_MODE_SKIPEVEN</b>
+### -field KS_AMVP_MODE_SKIPEVEN
 
 <dd>
 <p>Specifies that even video fields should be skipped when displaying video.</p>
 </dd>
 
-### -field <a id="KS_AMVP_MODE_SKIPODD"></a><a id="ks_amvp_mode_skipodd"></a><b>KS_AMVP_MODE_SKIPODD</b>
+### -field KS_AMVP_MODE_SKIPODD
 
 <dd>
 <p>Specifies that odd video fields should be skipped when displaying video.</p>

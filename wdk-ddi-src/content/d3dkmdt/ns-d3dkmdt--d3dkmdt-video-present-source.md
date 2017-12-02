@@ -55,13 +55,13 @@ typedef struct _D3DKMDT_VIDEO_PRESENT_SOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>The identifier of a video present source.</p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Reserved for future use.</p>

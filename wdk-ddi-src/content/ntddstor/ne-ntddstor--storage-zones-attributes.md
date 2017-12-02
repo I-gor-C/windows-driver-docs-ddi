@@ -60,25 +60,25 @@ typedef enum _STORAGE_ZONES_ATTRIBUTES {
 ## -enum-fields
 <dl>
 
-### -field <a id="ZonesAttributeTypeAndLengthMayDifferent"></a><a id="zonesattributetypeandlengthmaydifferent"></a><a id="ZONESATTRIBUTETYPEANDLENGTHMAYDIFFERENT"></a><b>ZonesAttributeTypeAndLengthMayDifferent</b>
+### -field ZonesAttributeTypeAndLengthMayDifferent
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <a id="ZonesAttributeTypeSameLengthSame"></a><a id="zonesattributetypesamelengthsame"></a><a id="ZONESATTRIBUTETYPESAMELENGTHSAME"></a><b>ZonesAttributeTypeSameLengthSame</b>
+### -field ZonesAttributeTypeSameLengthSame
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <a id="ZonesAttributeTypeSameLastZoneLengthDifferent"></a><a id="zonesattributetypesamelastzonelengthdifferent"></a><a id="ZONESATTRIBUTETYPESAMELASTZONELENGTHDIFFERENT"></a><b>ZonesAttributeTypeSameLastZoneLengthDifferent</b>
+### -field ZonesAttributeTypeSameLastZoneLengthDifferent
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <a id="ZonesAttributeTypeMayDifferentLengthSame"></a><a id="zonesattributetypemaydifferentlengthsame"></a><a id="ZONESATTRIBUTETYPEMAYDIFFERENTLENGTHSAME"></a><b>ZonesAttributeTypeMayDifferentLengthSame</b>
+### -field ZonesAttributeTypeMayDifferentLengthSame
 
 <dd>
 <p>N/A</p>

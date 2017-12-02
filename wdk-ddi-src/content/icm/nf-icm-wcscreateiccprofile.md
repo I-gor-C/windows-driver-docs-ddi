@@ -55,20 +55,20 @@ HPROFILE WcsCreateIccProfile(
 ## -parameters
 <dl>
 
-### -param <i>hWcsProfile</i> [in]
+### -param hWcsProfile [in]
 
 <dd>
 <p>A handle to the WCS color profile to transform. See Remarks.</p>
 </dd>
 
-### -param <i>dwOptions</i> [in]
+### -param dwOptions [in]
 
 <dd>
 <p>A flag value that specifies the profile conversion options. This parameter must take the following value:</p>
 <p></p>
 <dl>
 
-### -param <a id="PREFER_WCS_PROFILES"></a><a id="prefer_wcs_profiles"></a>PREFER_WCS_PROFILES
+### -param PREFER_WCS_PROFILES
 
 <dd>
 <p>Specifies that when WCS encounters an ICC profile, it should extract and use the WCS profiles that are contained in <b>WcsProfilesTag</b>.</p>

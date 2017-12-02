@@ -56,13 +56,13 @@ VOID IoCompleteRequest(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to the IRP to be completed.</p>
 </dd>
 
-### -param <i>PriorityBoost</i> [in]
+### -param PriorityBoost [in]
 
 <dd>
 <p>Specifies a system-defined constant by which to increment the run-time priority of the original thread that requested the operation. This value is IO_NO_INCREMENT if the original thread requested an operation the driver could complete quickly (so the requesting thread is not compensated for its assumed wait for I/O to be completed) or if the IRP is completed with an error. Otherwise, the set of <i>PriorityBoost</i> constants are device-type-specific. See Ntddk.h or Wdm.h for these constants.</p>

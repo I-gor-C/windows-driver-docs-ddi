@@ -7,7 +7,7 @@ old-location: netvista\ipsec_offload_v2_add_sa.htm
 old-project: netvista
 ms.assetid: 78c5e765-40e5-47f0-8460-a86124fb43d8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IPSEC_OFFLOAD_V2_ADD_SA, IPSEC_OFFLOAD_V2_ADD_SA, *PIPSEC_OFFLOAD_V2_ADD_SA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,7 +74,7 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -86,14 +86,14 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA {
      <b>Size</b> member to NDIS_SIZEOF_IPSEC_OFFLOAD_V2_ADD_SA_REVISION_1.</p>
 </dd>
 
-### -field <b>Next</b>
+### -field Next
 
 <dd>
 <p>A pointer to an IPSEC_OFFLOAD_V2_ADD_SA structure that is the next structure in a linked list. If
      the pointer is <b>NULL</b>, the current structure is the last structure in the list.</p>
 </dd>
 
-### -field <b>NumExtHdrs</b>
+### -field NumExtHdrs
 
 <dd>
 <p>The number of IPsec extension headers. This member can be one of the following values.
@@ -155,7 +155,7 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA {
 <p> </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitmask that indicates whether the SA that is being added is an inbound or outbound SA as
@@ -164,7 +164,7 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA {
 <p></p>
 <dl>
 
-### -field <a id="IPSEC_OFFLOAD_V2_IPv6"></a><a id="ipsec_offload_v2_ipv6"></a><a id="IPSEC_OFFLOAD_V2_IPV6"></a>IPSEC_OFFLOAD_V2_IPv6
+### -field IPSEC_OFFLOAD_V2_IPv6
 
 <dd>
 <p>If this flag is set, the addresses are IPv6. Otherwise, the addresses are IPv4</p>
@@ -173,7 +173,7 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA {
 <p></p>
 <dl>
 
-### -field <a id="IPSEC_OFFLOAD_V2_INBOUND"></a><a id="ipsec_offload_v2_inbound"></a>IPSEC_OFFLOAD_V2_INBOUND
+### -field IPSEC_OFFLOAD_V2_INBOUND
 
 <dd>
 <p>If this flag is set, the SA is inbound. Otherwise, the SA is outbound.</p>
@@ -181,19 +181,19 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA {
 </dl>
 </dd>
 
-### -field <b>IPv4Endpoints</b>
+### -field IPv4Endpoints
 
 <dd>
 <p>The IPv4 endpoint addresses. This structure contains the following members:</p>
 <dl>
 
-### -field <b>SrcAddr</b>
+### -field SrcAddr
 
 <dd>
 <p>The IPv4 address of the source host (the host that is sending the packets).</p>
 </dd>
 
-### -field <b>DestAddr</b>
+### -field DestAddr
 
 <dd>
 <p>The IPv4 address of the destination host (the host that is receiving the packets).</p>
@@ -201,19 +201,19 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA {
 </dl>
 </dd>
 
-### -field <b>IPv6Endpoints</b>
+### -field IPv6Endpoints
 
 <dd>
 <p>The IPv6 endpoint addresses. This structure contains the following members:</p>
 <dl>
 
-### -field <b>SrcAddr</b>
+### -field SrcAddr
 
 <dd>
 <p>The IPv6 address of the source host (the host that is sending the packets).</p>
 </dd>
 
-### -field <b>DestAddr</b>
+### -field DestAddr
 
 <dd>
 <p>The IPv6 address of the destination host (the host that is receiving the packets).</p>
@@ -221,7 +221,7 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA {
 </dl>
 </dd>
 
-### -field <b>OffloadHandle</b>
+### -field OffloadHandle
 
 <dd>
 <p>The handle to the newly created SA. The miniport driver supplies this handle before completing the
@@ -238,7 +238,7 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA {
      OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a> request.</p>
 </dd>
 
-### -field <b>UdpEspEncapsulation</b>
+### -field UdpEspEncapsulation
 
 <dd>
 <p>The UDP ESP encapsulation type. This member can be one or more of the following flags:
@@ -246,33 +246,33 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA {
 <p></p>
 <dl>
 
-### -field <a id="IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_NONE"></a><a id="ipsec_offload_v2_udp_esp_encapsulation_none"></a>IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_NONE
+### -field IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_NONE
 
 <dd>
 <p>No UDP encapsulation is used.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT"></a><a id="ipsec_offload_v2_udp_esp_encapsulation_transport"></a>IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT
+### -field IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT
 
 <dd>
 <p>An ESP-encapsulated transport-mode packet is encapsulated by UDP.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TUNNEL"></a><a id="ipsec_offload_v2_udp_esp_encapsulation_tunnel"></a>IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TUNNEL
+### -field IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TUNNEL
 
 <dd>
 <p>The tunnel-mode portion of a packet is UDP-encapsulated. The transport-mode portion of the
        packet is not UDP-encapsulated and is not ESP-protected.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_TRANSPORT_OVER_UDP_ESP_ENCAPSULATION_TUNNEL"></a><a id="ipsec_offload_v2_transport_over_udp_esp_encapsulation_tunnel"></a>IPSEC_OFFLOAD_V2_TRANSPORT_OVER_UDP_ESP_ENCAPSULATION_TUNNEL
+### -field IPSEC_OFFLOAD_V2_TRANSPORT_OVER_UDP_ESP_ENCAPSULATION_TUNNEL
 
 <dd>
 <p>The tunnel-mode portion of a packet is UDP-encapsulated. The transport-mode portion of a packet
        is not UDP-encapsulated but is ESP-protected.</p>
 </dd>
 
-### -field <a id="IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT_OVER_TUNNEL"></a><a id="ipsec_offload_v2_udp_esp_encapsulation_transport_over_tunnel"></a>IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT_OVER_TUNNEL
+### -field IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT_OVER_TUNNEL
 
 <dd>
 <p>The tunnel-mode portion of a packet is not UDP-encapsulated. The transport-mode portion of a
@@ -281,7 +281,7 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA {
 </dl>
 </dd>
 
-### -field <b>SecAssoc</b>
+### -field SecAssoc
 
 <dd>
 <p>An array with two elements that contain the information about the IPsec operations (AH, ESP, or
@@ -299,14 +299,14 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA {
      operations is supported: encryption/decryption (ESP) followed by authentication (AH).</p>
 </dd>
 
-### -field <b>KeyLength</b>
+### -field KeyLength
 
 <dd>
 <p>The length, in bytes, of the buffer at 
      <b>KeyData</b> .</p>
 </dd>
 
-### -field <b>KeyData</b>
+### -field KeyData
 
 <dd>
 <p>A variable-length array that contains keys for the SAs that are specified at 
@@ -399,4 +399,4 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_ADD_SA structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_ADD_SA structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -55,7 +55,7 @@ VOID KeDeregisterProcessorChangeCallback(
 ## -parameters
 <dl>
 
-### -param <i>CallbackHandle</i> [in]
+### -param CallbackHandle [in]
 
 <dd>
 <p>The callback registration handle that was returned by the <a href="..\wdm\nf-wdm-keregisterprocessorchangecallback.md">KeRegisterProcessorChangeCallback</a> routine when the callback function was registered with the operating system. </p>

@@ -59,31 +59,31 @@ BOOLEAN KeRegisterBugCheckCallback(
 ## -parameters
 <dl>
 
-### -param <i>CallbackRecord</i> [out]
+### -param CallbackRecord [out]
 
 <dd>
 <p>Pointer to a callback record that was previously initialized by <a href="https://msdn.microsoft.com/library/windows/hardware/ff552109">KeInitializeCallbackRecord</a>, for which the caller provides nonpaged storage. </p>
 </dd>
 
-### -param <i>CallbackRoutine</i> [in]
+### -param CallbackRoutine [in]
 
 <dd>
 <p>Pointer to the driver-supplied <a href="kernel.bugcheckcallback">BugCheckCallback</a> routine. </p>
 </dd>
 
-### -param <i>Buffer</i> [in, optional]
+### -param Buffer [in, optional]
 
 <dd>
 <p>Pointer to a caller-supplied buffer, which must be in resident memory, such as nonpaged pool. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the size in bytes of the caller-allocated buffer. </p>
 </dd>
 
-### -param <i>Component</i> [in]
+### -param Component [in]
 
 <dd>
 <p>Pointer to a null-terminated ANSI string that identifies the caller. This string usually contains the name of the device driver, or possibly of its device. </p>

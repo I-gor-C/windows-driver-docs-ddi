@@ -63,61 +63,61 @@ typedef struct _KSPROCESSPIN {
 ## -struct-fields
 <dl>
 
-### -field <b>Pin</b>
+### -field Pin
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure that the KSPROCESSPIN structure is describing. Everything in the structure refers to this KSPIN.</p>
 </dd>
 
-### -field <b>StreamPointer</b>
+### -field StreamPointer
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure that points into the input stream at the current input location or into the output stream at the current output location. This can be used, for example, by output pins to stamp information onto the associated <a href="stream.ksstream_header">KSSTREAM_HEADER</a> (ProcessPin-&gt;StreamPointer-&gt;StreamHeader-&gt;Flags=...).</p>
 </dd>
 
-### -field <b>InPlaceCounterpart</b>
+### -field InPlaceCounterpart
 
 <dd>
 <p>A pointer to a KSPROCESSPIN structure. If this KSPROCESSPIN is not part of an <a href="wdkgloss.i#wdkgloss.inplace#wdkgloss.inplace"><i>inplace</i></a> transform, AVStream sets <b>InPlaceCounterpart</b> to <b>NULL</b>. If this KSPROCESSPIN is the input to an inplace transform, <b>InPlaceCounterpart</b> points to the output process pin for the transform. If this KSPROCESSPIN is the output of an inplace transform, <b>InPlaceCounterpart</b> points to the input process pin for the transform.</p>
 </dd>
 
-### -field <b>DelegateBranch</b>
+### -field DelegateBranch
 
 <dd>
 <p>A pointer to a KSPROCESSPIN structure. If frames coming out of this KSPROCESSPIN are being split and sent to multiple sink pins, and the split does not cause a data copy (that is, the split sends the frames in a read-only manner and all of the split pin instances are in the same pipe), <b>DelegateBranch</b> points to the first instance of the process pin. The splitter automatically handles any process pin that has a non-<b>NULL</b><b>DelegateBranch</b>.</p>
 </dd>
 
-### -field <b>CopySource</b>
+### -field CopySource
 
 <dd>
 <p>A pointer to a KSPROCESSPIN structure. If frames coming out of this process pin are being split and sent to multiple sink pins in a manner that causes a data copy (that is, one of the downstream filters is modifying the data frame by using an in-place transform), <b>CopySource</b> points to the process pin from which the frame was copied. The splitter automatically handles any process pin that has a non-<b>NULL</b><b>CopySource</b>.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>A pointer to a buffer. If the pin described by this process entry is an input pin, <b>Data</b> points to the next available byte of data to be input. If the pin described by this process entry is an output pin, <b>Data</b> points to an output buffer in which processed data is placed.</p>
 </dd>
 
-### -field <b>BytesAvailable</b>
+### -field BytesAvailable
 
 <dd>
 <p>This member specifies how many bytes of data are available in <b>Data</b>.</p>
 </dd>
 
-### -field <b>BytesUsed</b>
+### -field BytesUsed
 
 <dd>
 <p>This member specifies how many bytes of this data frame have been used by the process function. AVStream drivers should set this member to update how much they have read or written.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>This member contains a copy of the flags from the relevant <a href="stream.ksstream_header">KSSTREAM_HEADER</a> structure, if this KSPROCESSPIN is an input pin.</p>
 </dd>
 
-### -field <b>Terminate</b>
+### -field Terminate
 
 <dd>
 <p>This member indicates whether the current data frame should be sent downstream after the process dispatch finishes. If <b>TRUE</b>, the frame is sent downstream even if all data has not been consumed. If <b>FALSE</b>, the frame is not released until all data is consumed.</p>
@@ -125,7 +125,7 @@ typedef struct _KSPROCESSPIN {
 </dl>
 
 ## -remarks
-<p>The KSPROCESSPIN structure is used in the <a href="NULL">filter-centric processing</a> model. You can use this structure to access data on a specific input pin or to write out processed data to an output pin.</p>
+<p>The KSPROCESSPIN structure is used in the <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">filter-centric processing</a> model. You can use this structure to access data on a specific input pin or to write out processed data to an output pin.</p>
 
 <p>Only filter-centric clients use process pins. Further, process pins that have a non-<b>NULL</b><b>DelegateBranch</b> or a non-<b>NULL</b><b>CopySource</b> typically are not of concern to the client. The splitter automatically handles process pins with these pointers.</p>
 

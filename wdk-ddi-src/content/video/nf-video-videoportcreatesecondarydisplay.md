@@ -57,19 +57,19 @@ VP_STATUS VideoPortCreateSecondaryDisplay(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension. This is the hardware extension for the device that wants to create additional display device objects.</p>
 </dd>
 
-### -param <i>SecondaryDeviceExtension</i> [in, out]
+### -param SecondaryDeviceExtension [in, out]
 
 <dd>
 <p>Pointer to the location in which to store the hardware device extension for the secondary display device.</p>
 </dd>
 
-### -param <i>ulFlag</i> [in]
+### -param ulFlag [in]
 
 <dd>
 <p>Is a set of attributes for the secondary display device. This parameter is restricted to the following value:</p>

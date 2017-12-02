@@ -58,25 +58,25 @@ typedef struct _OB_PRE_DUPLICATE_HANDLE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>DesiredAccess</b>
+### -field DesiredAccess
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that specifies the access rights to grant for the handle. By default, this member equals <i>OriginalDesiredAccess</i>, but the <i>ObjectPreCallback</i> routine can modify this value to restrict the access that is granted. For a description of the access rights that drivers can use, see <a href="..\wdm\ns-wdm--ob-pre-create-handle-information.md">OB_PRE_CREATE_HANDLE_INFORMATION</a>.</p>
 </dd>
 
-### -field <b>OriginalDesiredAccess</b>
+### -field OriginalDesiredAccess
 
 <dd>
 <p>An ACCESS_MASK value that specifies the original access that was requested for the handle.</p>
 </dd>
 
-### -field <b>SourceProcess</b>
+### -field SourceProcess
 
 <dd>
 <p>A pointer to the process object for the process that is the source of the handle.</p>
 </dd>
 
-### -field <b>TargetProcess</b>
+### -field TargetProcess
 
 <dd>
 <p>A pointer to the process object for the process that receives the duplicated handle. </p>

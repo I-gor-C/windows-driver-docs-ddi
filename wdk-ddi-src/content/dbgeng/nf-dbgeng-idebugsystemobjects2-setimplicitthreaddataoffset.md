@@ -7,7 +7,7 @@ old-location: debugger\setimplicitthreaddataoffset.htm
 old-project: debugger
 ms.assetid: 1562a2f4-0eea-44fd-b350-ccc17d8cd65e
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSystemObjects2, SetImplicitThreadDataOffset, IDebugSystemObjects2::SetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT SetImplicitThreadDataOffset(
 ## -parameters
 <dl>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the location in the target's memory address space of the data structure of the system thread that is to become the implicit thread for the current process.  If this is zero, the implicit thread for the current process is set to the default implicit thread.</p>
@@ -62,7 +62,7 @@ HRESULT SetImplicitThreadDataOffset(
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

@@ -69,13 +69,13 @@ typedef struct _D3DDeviceDesc_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size in bytes of this D3DDEVICEDESC_V1 structure.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Identifies the members of this structure that contain valid data. This member can be a bitwise OR of any of the following values:</p>
@@ -176,13 +176,13 @@ typedef struct _D3DDeviceDesc_V1 {
 <p> </p>
 </dd>
 
-### -field <b>dcmColorModel</b>
+### -field dcmColorModel
 
 <dd>
 <p>Specifies the device's color model. </p>
 </dd>
 
-### -field <b>dwDevCaps</b>
+### -field dwDevCaps
 
 <dd>
 <p>Identifies the capabilities of the device. This member can be a bitwise OR of any of the following values:</p>
@@ -356,69 +356,69 @@ typedef struct _D3DDeviceDesc_V1 {
 <p> </p>
 </dd>
 
-### -field <b>dtcTransformCaps</b>
+### -field dtcTransformCaps
 
 <dd>
 <p>Specifies a D3DTRANSFORMCAPS structure that specifies the transformation capabilities of the device. The driver must set the <b>dwCaps</b> member of that structure to zero.</p>
 </dd>
 
-### -field <b>bClipping</b>
+### -field bClipping
 
 <dd>
 <p>Set to <b>TRUE</b> by the driver if the device can perform 3D clipping. </p>
 </dd>
 
-### -field <b>dlcLightingCaps</b>
+### -field dlcLightingCaps
 
 <dd>
 <p>Specifies the lighting capabilities of the device. This is a <a href="..\d3dcaps\ns-d3dcaps--d3dlightingcaps.md">D3DLIGHTINGCAPS</a> structure. The driver must set the <b>dwCaps</b>, <b>dwLightingModel</b>, and <b>dwNumLights</b> members of that structure to zero.</p>
 </dd>
 
-### -field <b>dpcLineCaps</b>
+### -field dpcLineCaps
 
 <dd>
 <p>Specifies a <a href="..\d3dcaps\ns-d3dcaps--d3dprimcaps.md">D3DPRIMCAPS</a> structure that defines the drawing capabilities of the device for line primitives.</p>
 </dd>
 
-### -field <b>dpcTriCaps</b>
+### -field dpcTriCaps
 
 <dd>
 <p>Specifies a <a href="..\d3dcaps\ns-d3dcaps--d3dprimcaps.md">D3DPRIMCAPS</a> structure that defines the drawing capabilities of the device for triangle primitives.</p>
 </dd>
 
-### -field <b>dwDeviceRenderBitDepth</b>
+### -field dwDeviceRenderBitDepth
 
 <dd>
 <p>Specifies the device's rendering bit-depth. This member can be a bitwise OR of the following DirectDraw bit-depth constants: DDBD_8, DDBD_16, DDBD_24, or DDBD_32. </p>
 </dd>
 
-### -field <b>dwDeviceZBufferBitDepth</b>
+### -field dwDeviceZBufferBitDepth
 
 <dd>
 <p>Specifies the device's z-buffer bit-depth. This member can be a bitwise OR of the following DirectDraw bit-depth constants: DDBD_8, DDBD_16, DDBD_24, or DDBD_32.</p>
 </dd>
 
-### -field <b>dwMaxBufferSize</b>
+### -field dwMaxBufferSize
 
 <dd>
 <p>Must be set to zero.</p>
 </dd>
 
-### -field <b>dwMaxVertexCount</b>
+### -field dwMaxVertexCount
 
 <dd>
 <dl>
 
-### -field <b>DirectX 7 and later versions</b>
+### -field DirectX 7 and later versions
 
 
 ### -field Set this member to zero because it is no longer relevant.
 
 
-### -field <b>DirectX 6</b>
+### -field DirectX 6
 
 
-### -field Specifies the maximum number of vertices that the device can handle in a single call to <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>. The runtime cannot handle more than 0xFFFE vertices; therefore, never set this member to greater than 0xFFFE.
+### -field Specifies the maximum number of vertices that the device can handle in a single call to D3dDrawPrimitives2. The runtime cannot handle more than 0xFFFE vertices; therefore, never set this member to greater than 0xFFFE.
 
 </dl>
 </dd>

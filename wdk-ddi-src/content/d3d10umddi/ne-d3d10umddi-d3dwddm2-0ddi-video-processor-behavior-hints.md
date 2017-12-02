@@ -56,19 +56,19 @@ typedef enum D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINTS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINT_MULTIPLANE_OVERLAY_ROTATION"></a><a id="d3dwddm2_0ddi_video_processor_behavior_hint_multiplane_overlay_rotation"></a><b>D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINT_MULTIPLANE_OVERLAY_ROTATION</b>
+### -field D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINT_MULTIPLANE_OVERLAY_ROTATION
 
 <dd>
 <p>Indicates that multi-plane overlay hardware can perform the rotation operation more efficiently than <a href="display.videoprocessorblt">VideoProcessorBlt</a>. </p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINT_MULTIPLANE_OVERLAY_RESIZE"></a><a id="d3dwddm2_0ddi_video_processor_behavior_hint_multiplane_overlay_resize"></a><b>D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINT_MULTIPLANE_OVERLAY_RESIZE</b>
+### -field D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINT_MULTIPLANE_OVERLAY_RESIZE
 
 <dd>
 <p>Indicates that the multi-plane overlay hardware can perform the scaling operation more efficiently than <a href="display.videoprocessorblt">VideoProcessorBlt</a>. </p>
 </dd>
 
-### -field <a id="D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINT_MULTIPLANE_OVERLAY_COLOR_SPACE_CONVERSION"></a><a id="d3dwddm2_0ddi_video_processor_behavior_hint_multiplane_overlay_color_space_conversion"></a><b>D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINT_MULTIPLANE_OVERLAY_COLOR_SPACE_CONVERSION</b>
+### -field D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINT_MULTIPLANE_OVERLAY_COLOR_SPACE_CONVERSION
 
 <dd>
 <p>Indicates that the multi-plane overlay hardware can perform the colorspace conversion operation more efficiently than <a href="display.videoprocessorblt">VideoProcessorBlt</a>. </p>

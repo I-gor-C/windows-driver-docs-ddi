@@ -63,7 +63,7 @@ typedef struct _DXVA_COPPSetSignalingCmdData {
 ## -struct-fields
 <dl>
 
-### -field <b>ActiveTVProtectionStandard</b>
+### -field ActiveTVProtectionStandard
 
 <dd>
 <p>Specifies a valid ORed combination of the following values from the <b>COPP_TVProtectionStandard</b> enumeration type that indicates the type of television signals on which to set protection:</p>
@@ -122,13 +122,13 @@ typedef struct _DXVA_COPPSetSignalingCmdData {
 </ul>
 </dd>
 
-### -field <b>AspectRatioChangeMask1</b>
+### -field AspectRatioChangeMask1
 
 <dd>
 <p>Specifies the COPP_ImageAspectRatio_EN300294_Mask (0x00000007) constant that indicates that only the first 3 bits in the following <b>AspectRatioData1</b> member are valid.</p>
 </dd>
 
-### -field <b>AspectRatioData1</b>
+### -field AspectRatioData1
 
 <dd>
 <p>Specifies one of the following values from the <b>COPP_ImageAspectRatio_EN300294</b> enumeration type to indicate an ETSI EN 300 294 value.</p>
@@ -160,43 +160,43 @@ typedef struct _DXVA_COPPSetSignalingCmdData {
 </ul>
 </dd>
 
-### -field <b>AspectRatioChangeMask2</b>
+### -field AspectRatioChangeMask2
 
 <dd>
 <p>Specifies a value that indicates the valid bitfields in the following <b>AspectRatioData2</b> member.</p>
 </dd>
 
-### -field <b>AspectRatioData2</b>
+### -field AspectRatioData2
 
 <dd>
 <p>Specifies 32-bit data for additional aspect ratio-related data to be set for specific protection standards. This data can be used to express End and Q0 values for EIA-608-B, or active format description for CEA-805-A Type B packets.</p>
 </dd>
 
-### -field <b>AspectRatioChangeMask3</b>
+### -field AspectRatioChangeMask3
 
 <dd>
 <p>Specifies a value that indicates the valid bitfields in the following <b>AspectRatioData3</b> member.</p>
 </dd>
 
-### -field <b>AspectRatioData3</b>
+### -field AspectRatioData3
 
 <dd>
 <p>Specifies 32-bit data for additional aspect ratio-related data to be set for specific protection standards. This data can be used to express End and Q0 values for EIA-608-B, or active format description for CEA-805-A Type B packets.</p>
 </dd>
 
-### -field <b>ExtendedInfoChangeMask</b>
+### -field ExtendedInfoChangeMask
 
 <dd>
 <p>Specifies an array of values that indicate the valid bitfields in the respective elements of the following <b>ExtendedInfoData</b> array member.</p>
 </dd>
 
-### -field <b>ExtendedInfoData</b>
+### -field ExtendedInfoData
 
 <dd>
 <p>Specifies an array of additional 32-bit data values to be set. Not currently used.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Should be set to zero.</p>

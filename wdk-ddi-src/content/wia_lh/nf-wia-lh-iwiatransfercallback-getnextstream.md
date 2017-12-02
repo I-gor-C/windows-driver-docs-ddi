@@ -7,7 +7,7 @@ old-location: image\iwiatransfercallback_getnextstream.htm
 old-project: image
 ms.assetid: 025c29d3-1167-4aa3-8399-01dab5729267
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IWiaTransferCallback, GetNextStream, IWiaTransferCallback::GetNextStream
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ HRESULT GetNextStream(
 ## -parameters
 <dl>
 
-### -param <i>lFlags</i> [in]
+### -param lFlags [in]
 
 <dd>
 <p>Is reserved. Set to zero. </p>
 </dd>
 
-### -param <i>bstrItemName</i> [in]
+### -param bstrItemName [in]
 
 <dd>
 <p>Specifies a string containing the name of the item.</p>
 </dd>
 
-### -param <i>bstrFullItemName</i> [in]
+### -param bstrFullItemName [in]
 
 <dd>
 <p>Specifies a string containing the full name of the item. </p>
 </dd>
 
-### -param <i>ppDestination</i> [out]
+### -param ppDestination [out]
 
 <dd>
 <p>Specifies a pointer to the output stream. </p>
@@ -130,4 +130,4 @@ HRESULT GetNextStream(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaTransferCallback::GetNextStream method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaTransferCallback::GetNextStream method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

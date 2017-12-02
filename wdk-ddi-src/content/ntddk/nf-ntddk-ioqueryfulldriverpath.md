@@ -55,13 +55,13 @@ NTSTATUS IoQueryFullDriverPath(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a> structure. This structure must be the driver object for the calling driver.</p>
 </dd>
 
-### -param <i>FullPath</i> [out]
+### -param FullPath [out]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure. On successful return, this structure contains the path name.</p>
@@ -84,7 +84,7 @@ NTSTATUS IoQueryFullDriverPath(
 
 <p>The caller allocates the <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure pointed to by the <i>FullPath</i> parameter, but does not need to initialize this structure. <b>IoQueryFullDriverPath</b> assumes that the original contents of this structure are invalid and overwrites them. This routine allocates a string buffer from paged system memory, sets the <b>Buffer</b> member of the structure to point to this buffer, and sets the <b>MaximumLength</b> and <b>Buffer</b> members to describe the buffer and its contents.</p>
 
-<p>The caller is responsible for freeing the storage pointed to by <i>FullPath</i>-&gt;<b>Buffer</b> when the full path string is no longer needed. Typically, the caller frees this storage by calling a routine such as <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>.</p>
+<p>The caller is responsible for freeing the storage pointed to by <i>FullPath</i>-&gt;<b>Buffer</b> when the full path string is no longer needed. Typically, the caller frees this storage by calling a routine such as <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>.</p>
 
 ## -requirements
 <table>
@@ -152,7 +152,7 @@ NTSTATUS IoQueryFullDriverPath(
 <a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
 <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>

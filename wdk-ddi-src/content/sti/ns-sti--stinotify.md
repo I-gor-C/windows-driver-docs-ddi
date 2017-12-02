@@ -7,7 +7,7 @@ old-location: image\stinotify.htm
 old-project: image
 ms.assetid: 7dc42f9a-2e55-4ae5-a951-7d1d3b14564b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: STINOTIFY, STINOTIFY, *LPSTINOTIFY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _STINOTIFY {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Caller-supplied size, in bytes, of the STINOTIFY structure.</p>
 </dd>
 
-### -field <b>guidNotificationCode</b>
+### -field guidNotificationCode
 
 <dd>
-<p>GUID of the event. For more information, see <a href="NULL">Still Image Device Events</a>.</p>
+<p>GUID of the event. For more information, see <a href="https://msdn.microsoft.com/5f9be89c-8442-4894-b2f6-a4d3558464bf">Still Image Device Events</a>.</p>
 </dd>
 
-### -field <b>abNotificationData</b>
+### -field abNotificationData
 
 <dd>
 <p>Byte array containing optional, vendor-defined information.</p>

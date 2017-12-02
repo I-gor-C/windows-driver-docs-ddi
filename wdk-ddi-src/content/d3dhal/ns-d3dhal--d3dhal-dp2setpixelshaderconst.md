@@ -58,13 +58,13 @@ typedef struct _D3DHAL_DP2SETPIXELSHADERCONST {
 ## -struct-fields
 <dl>
 
-### -field <b>dwRegister</b>
+### -field dwRegister
 
 <dd>
 <p>Specifies the index of the first register to set.</p>
 </dd>
 
-### -field <b>dwCount</b>
+### -field dwCount
 
 <dd>
 <p>Specifies the number of registers to set. Immediately following this data structure in the DP2 stream are <b>dwCount</b> vectors of four single precision floating-point numbers. This is the data to copy to the target registers.</p>

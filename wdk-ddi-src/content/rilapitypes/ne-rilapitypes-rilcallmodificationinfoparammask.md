@@ -7,7 +7,7 @@ old-location: netvista\rilcallmodificationinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 78726ec3-f777-4165-baec-c2c013e4c86a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef enum _RILCALLMODIFICATIONINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_CMI_ID"></a><a id="ril_param_cmi_id"></a><b>RIL_PARAM_CMI_ID</b>
+### -field RIL_PARAM_CMI_ID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CMI_MODIFICATIONTYPE"></a><a id="ril_param_cmi_modificationtype"></a><b>RIL_PARAM_CMI_MODIFICATIONTYPE</b>
+### -field RIL_PARAM_CMI_MODIFICATIONTYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CMI_OLDCALLTYPE"></a><a id="ril_param_cmi_oldcalltype"></a><b>RIL_PARAM_CMI_OLDCALLTYPE</b>
+### -field RIL_PARAM_CMI_OLDCALLTYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CMI_NEWCALLTYPE"></a><a id="ril_param_cmi_newcalltype"></a><b>RIL_PARAM_CMI_NEWCALLTYPE</b>
+### -field RIL_PARAM_CMI_NEWCALLTYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CMI_ADDRESS"></a><a id="ril_param_cmi_address"></a><b>RIL_PARAM_CMI_ADDRESS</b>
+### -field RIL_PARAM_CMI_ADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CMI_ALPHAIDENTIFIER"></a><a id="ril_param_cmi_alphaidentifier"></a><b>RIL_PARAM_CMI_ALPHAIDENTIFIER</b>
+### -field RIL_PARAM_CMI_ALPHAIDENTIFIER
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CMI_ALL"></a><a id="ril_param_cmi_all"></a><b>RIL_PARAM_CMI_ALL</b>
+### -field RIL_PARAM_CMI_ALL
 
 <dd></dd>
 </dl>

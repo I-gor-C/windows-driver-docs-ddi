@@ -57,19 +57,19 @@ HRESULT FilterGraphics(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pBuf</i> 
+### -param pBuf 
 
 <dd>
 <p>Caller-supplied pointer to a buffer containing scan line data to be printed.</p>
 </dd>
 
-### -param <i>dwLen</i> 
+### -param dwLen 
 
 <dd>
 <p>Caller-supplied value representing the length, in bytes, of the data pointed to by <i>pBuf</i>.</p>
@@ -126,7 +126,7 @@ HRESULT FilterGraphics(
 
 <p>The <code>IPrintOemUni::FilterGraphics</code> method gives you access to the scan line data itself and gives you the ability to post-process the raster data.</p>
 
-<p>For more information about customizing Unidrv's rendering operations, see <a href="NULL">Unidrv-Specific Customized Rendering</a>.</p>
+<p>For more information about customizing Unidrv's rendering operations, see <a href="https://msdn.microsoft.com/aff39531-ca40-4985-b458-c6217f8a2e5c">Unidrv-Specific Customized Rendering</a>.</p>
 
 ## -requirements
 <table>

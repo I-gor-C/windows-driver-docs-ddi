@@ -54,7 +54,7 @@ BOOLEAN __inline KsGateGetStateUnsafe(
 ## -parameters
 <dl>
 
-### -param <i>Gate</i> [in]
+### -param Gate [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksgate.md">KSGATE</a> structure representing the gate for which to return the state.</p>

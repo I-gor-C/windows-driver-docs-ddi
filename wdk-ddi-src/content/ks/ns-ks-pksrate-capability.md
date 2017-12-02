@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>A structure of type <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> that specifies the property identifier.</p>
 </dd>
 
-### -field <b>Rate</b>
+### -field Rate
 
 <dd>
 <p>A structure of type <a href="stream.ksrate">KSRATE</a> that specifies the requested rate.</p>

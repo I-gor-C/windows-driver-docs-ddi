@@ -56,19 +56,19 @@ typedef struct tagKS_DATARANGE_IMAGE {
 ## -struct-fields
 <dl>
 
-### -field <b>DataRange</b>
+### -field DataRange
 
 <dd>
 <p>A <a href="stream.ksdatarange">KSDATARANGE</a> structure that specifies the data range supported by this pin type.</p>
 </dd>
 
-### -field <b>ConfigCaps</b>
+### -field ConfigCaps
 
 <dd>
 <p>A <a href="..\ksmedia\ns-ksmedia--ks-video-stream-config-caps.md">KS_VIDEO_STREAM_CONFIG_CAPS</a> structure that specifies the configuration of the stream, including scaling, cropping, and frame and data rates.</p>
 </dd>
 
-### -field <b>ImageInfoHeader</b>
+### -field ImageInfoHeader
 
 <dd>
 <p>A <a href="stream.ks_bitmapinfoheader">KS_BITMAPINFOHEADER</a> structure that specifies image color and dimension information that the still image capture stream would provide.</p>

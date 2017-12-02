@@ -7,7 +7,7 @@ old-location: ifsk\rxsetminirdrcancelroutine.htm
 old-project: ifsk
 ms.assetid: 5b74b4c4-d1a3-4587-900a-b54eebfeb553
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxSetMinirdrCancelRoutine
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ NTSTATUS RxSetMinirdrCancelRoutine(
 ## -parameters
 <dl>
 
-### -param <i>RxContext</i> [in, out]
+### -param RxContext [in, out]
 
 <dd>
 <p>A pointer to the RX_CONTEXT structure. </p>
 </dd>
 
-### -param <i>MRxCancelRoutine</i> [in]
+### -param MRxCancelRoutine [in]
 
 <dd>
 <p>A pointer to a cancel routine. </p>
@@ -143,4 +143,4 @@ NTSTATUS RxSetMinirdrCancelRoutine(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxSetMinirdrCancelRoutine routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxSetMinirdrCancelRoutine routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

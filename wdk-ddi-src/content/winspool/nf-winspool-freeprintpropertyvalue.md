@@ -56,7 +56,7 @@ DWORD WINAPI FreePrintPropertyValue(
 ## -parameters
 <dl>
 
-### -param <i>pValue</i> [in, out]
+### -param pValue [in, out]
 
 <dd>
 <p>Pointer to <b>PrintPropertyValue</b> structure that is returned from <a href="..\winspool\nf-winspool-getjobnamedpropertyvalue.md">GetJobNamedPropertyValue</a>. 

@@ -60,37 +60,37 @@ typedef struct _PCW_REGISTRATION_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The numeric value that specifies the version of Performance Counters for Windows (PCW) that the provider supports.</p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>A pointer to the string that contains the name of the counter set to register.</p>
 </dd>
 
-### -field <b>CounterCount</b>
+### -field CounterCount
 
 <dd>
 <p>The number of counters that are exposed by this registration.</p>
 </dd>
 
-### -field <b>Counters</b>
+### -field Counters
 
 <dd>
 <p>A pointer to the array that describes the counters.</p>
 </dd>
 
-### -field <b>Callback</b>
+### -field Callback
 
 <dd>
 <p>A pointer to the optional <a href="..\wdm\nc-wdm-pcw-callback.md">PcwCallback</a> function that notifies the provider about events related to this counter set.</p>
 </dd>
 
-### -field <b>CallbackContext</b>
+### -field CallbackContext
 
 <dd>
 <p>A pointer to the callback context.  </p>

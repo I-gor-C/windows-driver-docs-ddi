@@ -60,7 +60,7 @@ typedef struct _DXGK_SET_TIMING_RESULTS {
 ## -struct-fields
 <dl>
 
-### -field <b>ConnectionStatusChanges</b>
+### -field ConnectionStatusChanges
 
 <dd>
 <p>If set, indicates that one or more connector status changes were detected in the course of this call so the OS needs to call DxgkDdiQueryConnectionStatus to catch up with all changes and to resync with the current state.  </p>
@@ -68,13 +68,13 @@ typedef struct _DXGK_SET_TIMING_RESULTS {
 <div> </div>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>UINT used to operate on the combined bit-fields.</p>

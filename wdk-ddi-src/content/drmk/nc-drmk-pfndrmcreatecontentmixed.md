@@ -61,19 +61,19 @@ typedef PFNDRMCREATECONTENTMIXED DRMCreateContentMixed;
 ## -parameters
 <dl>
 
-### -param <i>paContentId</i> [in]
+### -param paContentId [in]
 
 <dd>
 <p>This parameter is reserved for system use.</p>
 </dd>
 
-### -param <i>cContentId</i> [in]
+### -param cContentId [in]
 
 <dd>
 <p>This parameter is reserved for system use.</p>
 </dd>
 
-### -param <i>pMixedContentId</i> [out]
+### -param pMixedContentId [out]
 
 <dd>
 <p>This parameter is reserved for system use.</p>

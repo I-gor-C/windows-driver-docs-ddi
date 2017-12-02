@@ -54,7 +54,7 @@ NTSTATUS GetResolution(
 ## -parameters
 <dl>
 
-### -param <i>Resolution</i> [out]
+### -param Resolution [out]
 
 <dd>
 <p>Specifies granularity and notification error of the clock in a <a href="stream.ksresolution">KSRESOLUTION</a> structure.</p>
@@ -69,7 +69,7 @@ NTSTATUS GetResolution(
 
 <p>The least amount of notification error greater than the clock granularity is zero units; less accurate clocks use larger numbers to indicate  error. The proxy can use this resolution property to determine maximum error and resolution in event notification and synchronization.</p>
 
-<p>For more information, see <a href="NULL">AVStream Clocks</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/fc1d5bca-72e3-48e2-b46f-09a13bba83b4">AVStream Clocks</a>.</p>
 
 <p>AVStream uses the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565092">KSPROPERTY_CLOCK_RESOLUTION</a> property to retrieve the clock resolution.</p>
 

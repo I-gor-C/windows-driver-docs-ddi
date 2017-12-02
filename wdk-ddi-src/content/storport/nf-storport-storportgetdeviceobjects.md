@@ -58,25 +58,25 @@ ULONG StorPortGetDeviceObjects(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>AdapterDeviceObject</i> [out]
+### -param AdapterDeviceObject [out]
 
 <dd>
 <p>A pointer to receive the functional device object (FDO) of the adapter.</p>
 </dd>
 
-### -param <i>PhysicalDeviceObject</i> [out]
+### -param PhysicalDeviceObject [out]
 
 <dd>
 <p>A pointer to receive the physical device object (PDO).</p>
 </dd>
 
-### -param <i>LowerDeviceObject</i> [out]
+### -param LowerDeviceObject [out]
 
 <dd>
 <p>A pointer to receive the device object of lower device to which the FDO is attached.</p>

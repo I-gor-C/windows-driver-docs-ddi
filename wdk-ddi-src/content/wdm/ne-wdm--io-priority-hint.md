@@ -60,37 +60,37 @@ typedef enum _IO_PRIORITY_HINT {
 ## -enum-fields
 <dl>
 
-### -field <a id="IoPriorityVeryLow"></a><a id="iopriorityverylow"></a><a id="IOPRIORITYVERYLOW"></a><b>IoPriorityVeryLow</b>
+### -field IoPriorityVeryLow
 
 <dd>
 <p>Specifies the lowest possible priority hint level. The system uses this value for background I/O operations.</p>
 </dd>
 
-### -field <a id="IoPriorityLow"></a><a id="ioprioritylow"></a><a id="IOPRIORITYLOW"></a><b>IoPriorityLow</b>
+### -field IoPriorityLow
 
 <dd>
 <p>Specifies a low-priority hint level. </p>
 </dd>
 
-### -field <a id="IoPriorityNormal"></a><a id="ioprioritynormal"></a><a id="IOPRIORITYNORMAL"></a><b>IoPriorityNormal</b>
+### -field IoPriorityNormal
 
 <dd>
 <p>Specifies a normal-priority hint level. This value is the default setting for an IRP.</p>
 </dd>
 
-### -field <a id="IoPriorityHigh"></a><a id="iopriorityhigh"></a><a id="IOPRIORITYHIGH"></a><b>IoPriorityHigh</b>
+### -field IoPriorityHigh
 
 <dd>
 <p>Specifies a high-priority hint level. This value is reserved for use by the system.</p>
 </dd>
 
-### -field <a id="IoPriorityCritical"></a><a id="ioprioritycritical"></a><a id="IOPRIORITYCRITICAL"></a><b>IoPriorityCritical</b>
+### -field IoPriorityCritical
 
 <dd>
 <p>Specifies the highest-priority hint level. This value is reserved for use by the system.</p>
 </dd>
 
-### -field <a id="MaxIoPriorityTypes"></a><a id="maxioprioritytypes"></a><a id="MAXIOPRIORITYTYPES"></a><b>MaxIoPriorityTypes</b>
+### -field MaxIoPriorityTypes
 
 <dd>
 <p>Marks the limit for priority hints. Any priority hint value must be less than <b>MaxIoPriorityTypes</b>.</p>

@@ -59,19 +59,19 @@ USBD_STATUS USBD_ValidateConfigurationDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>ConfigDesc</i> [in]
+### -param ConfigDesc [in]
 
 <dd>
 <p>Pointer to a configuration descriptor that includes all interface, endpoint, vendor, and class-specific descriptors retrieved from a USB device.  </p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>Size, in bytes, of the configuration descriptor being validated.</p>
 </dd>
 
-### -param <i>Level</i> [in]
+### -param Level [in]
 
 <dd>
 <p>Level of validation to be performed.  The following are valid values:</p>
@@ -83,13 +83,13 @@ USBD_STATUS USBD_ValidateConfigurationDescriptor(
 </ul>
 </dd>
 
-### -param <i>Offset</i> [out]
+### -param Offset [out]
 
 <dd>
 <p>  Offset within configuration descriptor where validation failed.  Only valid when a status other than USBD_STATUS_SUCCESS is returned.</p>
 </dd>
 
-### -param <i>Tag</i> [in, optional]
+### -param Tag [in, optional]
 
 <dd>
 <p>Pool tag used by <b>USBD_ValidateConfigurationDescriptor</b> when allocating memory.  </p>

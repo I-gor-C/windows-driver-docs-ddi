@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY pfnUpdateAllocationPropertyCb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device associated with the allocation</p>
 </dd>
 
-### -param <i>*pUpdateAllocationProperty</i> [in, out]
+### -param *pUpdateAllocationProperty [in, out]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt761856">D3DDDI_UPDATEALLOCPROPERTY</a> structure that describes how to update the allocation with the desired properties.</p>

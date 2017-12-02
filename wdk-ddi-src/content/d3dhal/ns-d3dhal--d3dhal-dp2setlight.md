@@ -55,13 +55,13 @@ typedef struct _D3DHAL_DP2SETLIGHT {
 ## -struct-fields
 <dl>
 
-### -field <b>dwIndex</b>
+### -field dwIndex
 
 <dd>
 <p>Specifies an index into an array of lights.</p>
 </dd>
 
-### -field <b>dwDataType</b>
+### -field dwDataType
 
 <dd>
 <p>Specifies the type of data being passed.</p>

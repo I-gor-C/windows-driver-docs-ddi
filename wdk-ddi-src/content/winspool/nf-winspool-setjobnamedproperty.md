@@ -57,17 +57,17 @@ DWORD WINAPI SetJobNamedProperty(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd></dd>
 
-### -param <i>JobId</i> [in]
+### -param JobId [in]
 
 <dd>
 <p>TD</p>
 </dd>
 
-### -param <i>pProperty</i> [in]
+### -param pProperty [in]
 
 <dd></dd>
 </dl>

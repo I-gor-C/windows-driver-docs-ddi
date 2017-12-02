@@ -55,11 +55,11 @@ typedef struct _BDA_USERACTIVITY_INTERVAL {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>ulActivityInterval</b>
+### -field ulActivityInterval
 
 <dd></dd>
 </dl>

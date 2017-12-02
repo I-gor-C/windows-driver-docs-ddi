@@ -65,73 +65,73 @@ typedef enum _DXGKMDT_OPM_BUS_TYPE_AND_IMPLEMENTATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKMDT_OPM_BUS_TYPE_OTHER"></a><a id="dxgkmdt_opm_bus_type_other"></a><b>DXGKMDT_OPM_BUS_TYPE_OTHER</b>
+### -field DXGKMDT_OPM_BUS_TYPE_OTHER
 
 <dd>
 <p>Indicates that the graphics adapter does not communicate with the north bridge by using the PCI, PCI-X, PCI Express, or AGP expansion bus. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_BUS_TYPE_PCI"></a><a id="dxgkmdt_opm_bus_type_pci"></a><b>DXGKMDT_OPM_BUS_TYPE_PCI</b>
+### -field DXGKMDT_OPM_BUS_TYPE_PCI
 
 <dd>
 <p>Indicates that the PCI bus is used to transfer data from a computer's main memory to the graphics adapter. For information about the PCI bus, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=71290">PCI Local Bus Specification</a>. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_BUS_TYPE_PCIX"></a><a id="dxgkmdt_opm_bus_type_pcix"></a><b>DXGKMDT_OPM_BUS_TYPE_PCIX</b>
+### -field DXGKMDT_OPM_BUS_TYPE_PCIX
 
 <dd>
 <p>Indicates that the PCI-X bus is used to transfer data from a computer's main memory to the graphics adapter. For information about PCI-X, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=71293">PCI-X Specification</a>. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_BUS_TYPE_PCIEXPRESS"></a><a id="dxgkmdt_opm_bus_type_pciexpress"></a><b>DXGKMDT_OPM_BUS_TYPE_PCIEXPRESS</b>
+### -field DXGKMDT_OPM_BUS_TYPE_PCIEXPRESS
 
 <dd>
 <p>Indicates that the PCI Express bus is used to transfer data from a computer's main memory to the graphics adapter. For information about PCI Express, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=69486">PCI Express Specification</a>. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_BUS_TYPE_AGP"></a><a id="dxgkmdt_opm_bus_type_agp"></a><b>DXGKMDT_OPM_BUS_TYPE_AGP</b>
+### -field DXGKMDT_OPM_BUS_TYPE_AGP
 
 <dd>
 <p>Indicates that the Accelerated Graphics Port (AGP) is used to transfer data from a computer's main memory to the graphics adapter. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_INSIDE_OF_CHIPSET"></a><a id="dxgkmdt_opm_bus_implementation_modifier_inside_of_chipset"></a><b>DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_INSIDE_OF_CHIPSET</b>
+### -field DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_INSIDE_OF_CHIPSET
 
 <dd>
 <p>Indicates that the implementation for the graphics adapter is in a motherboard chipset's north bridge. A graphics adapter reports this implementation modifier to imply that data never goes over an expansion bus when data is transferred from main memory to the graphics adapter. PCI, PCI-X, PCI Express, and AGP are examples of expansion buses. This value cannot be combined with DXGKMDT_OPM_BUS_TYPE_PCI, DXGKMDT_OPM_BUS_TYPE_PCIX, DXGKMDT_OPM_BUS_TYPE_PCIEXPRESS, or DXGKMDT_OPM_BUS_TYPE_AGP. This value should only be set if an OPM protected output has OPM semantics. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_TRACKS_ON_MOTHER_BOARD_TO_CHIP"></a><a id="dxgkmdt_opm_bus_implementation_modifier_tracks_on_mother_board_to_chip"></a><b>DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_TRACKS_ON_MOTHER_BOARD_TO_CHIP</b>
+### -field DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_TRACKS_ON_MOTHER_BOARD_TO_CHIP
 
 <dd>
 <p>Indicates that the graphics adapter is connected to a motherboard chipset's north bridge by tracks on the motherboard and all of the graphics adapter's chips (integrated circuits (ICs)) are soldered to the motherboard. This value can be combined with any bus-type value (DXGKMDT_OPM_BUS_TYPE_PCI, DXGKMDT_OPM_BUS_TYPE_PCIX, DXGKMDT_OPM_BUS_TYPE_PCIEXPRESS, or DXGKMDT_OPM_BUS_TYPE_AGP) and should only be set if an OPM-protected output has OPM semantics. For more information about this bus-implementation modifier, see the Remarks section. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_TRACKS_ON_MOTHER_BOARD_TO_SOCKET"></a><a id="dxgkmdt_opm_bus_implementation_modifier_tracks_on_mother_board_to_socket"></a><b>DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_TRACKS_ON_MOTHER_BOARD_TO_SOCKET</b>
+### -field DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_TRACKS_ON_MOTHER_BOARD_TO_SOCKET
 
 <dd>
 <p>Indicates that the graphics adapter is connected to a motherboard chipset's north bridge by tracks on the motherboard and all of the graphics adapter's chips are connected through sockets to the motherboard. This value can be combined with any bus-type value (DXGKMDT_OPM_BUS_TYPE_PCI, DXGKMDT_OPM_BUS_TYPE_PCIX, DXGKMDT_OPM_BUS_TYPE_PCIEXPRESS, or DXGKMDT_OPM_BUS_TYPE_AGP) and should only be set if an OPM-protected output has OPM semantics. For more information about this bus-implementation modifier, see the Remarks section. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_DAUGHTER_BOARD_CONNECTOR"></a><a id="dxgkmdt_opm_bus_implementation_modifier_daughter_board_connector"></a><b>DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_DAUGHTER_BOARD_CONNECTOR</b>
+### -field DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_DAUGHTER_BOARD_CONNECTOR
 
 <dd>
 <p>Indicates that the graphics adapter is connected to the motherboard through a daughterboard connector. Mobile PCI Express Module (MXM) and Advanced eXpress I/O Module (Axiom) are examples of daughterboard connectors. This value should be set only if an OPM-protected output has OPM semantics. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_DAUGHTER_BOARD_CONNECTOR_INSIDE_OF_NUAE"></a><a id="dxgkmdt_opm_bus_implementation_modifier_daughter_board_connector_inside_of_nuae"></a><b>DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_DAUGHTER_BOARD_CONNECTOR_INSIDE_OF_NUAE</b>
+### -field DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_DAUGHTER_BOARD_CONNECTOR_INSIDE_OF_NUAE
 
 <dd>
 <p>Indicates that the graphics adapter is connected to the motherboard through a daughterboard connector and that the graphics adapter is inside a non-user accessible enclosure (NUAE). This value should be set only if an OPM-protected output has OPM semantics. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_NON_STANDARD"></a><a id="dxgkmdt_opm_bus_implementation_modifier_non_standard"></a><b>DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_NON_STANDARD</b>
+### -field DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_NON_STANDARD
 
 <dd>
 <p>(Optional.) Indicates that any of the optional implementation modifier values (DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_Xxx) are set in the 32-bit bus characteristics ULONG value. For more information about this ULONG, see the Remarks section. This value should be set only if an OPM-protected output has OPM semantics. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_COPP_COMPATIBLE_BUS_TYPE_INTEGRATED"></a><a id="dxgkmdt_opm_copp_compatible_bus_type_integrated"></a><b>DXGKMDT_OPM_COPP_COMPATIBLE_BUS_TYPE_INTEGRATED</b>
+### -field DXGKMDT_OPM_COPP_COMPATIBLE_BUS_TYPE_INTEGRATED
 
 <dd>
 <p>This value can only be set if an OPM-protected output has COPP semantics and should not be set if an OPM-protected output has OPM semantics. This value is equivalent to the <a href="https://msdn.microsoft.com/c9ff0fd3-c063-4450-ae66-54153b3dc53c">COPP</a> COPP_BusType_Integrated flag that is used in the <b>dwData</b> member of the <a href="..\dxva\ns-dxva--dxva-coppstatusdata.md">DXVA_COPPStatusData</a> structure in the <a href="https://msdn.microsoft.com/24cb232b-e289-45c8-8d55-42614a4dfd54">Windows 2000 Display Driver Model</a>. </p>

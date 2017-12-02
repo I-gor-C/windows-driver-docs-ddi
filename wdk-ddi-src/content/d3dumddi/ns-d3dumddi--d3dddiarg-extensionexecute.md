@@ -59,37 +59,37 @@ typedef struct _D3DDDIARG_EXTENSIONEXECUTE {
 ## -struct-fields
 <dl>
 
-### -field <b>hExtension</b>
+### -field hExtension
 
 <dd>
 <p>[in] A handle to the DirectX VA extension device. The user-mode display driver returns this handle in a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createextensiondevice.md">CreateExtensionDevice</a> function.</p>
 </dd>
 
-### -field <b>Function</b>
+### -field Function
 
 <dd>
 <p>[in] A specific operation to perform. The possible values for this member are defined by the extension device.</p>
 </dd>
 
-### -field <b>pPrivateInput</b>
+### -field pPrivateInput
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-privatedata.md">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to perform the extension operation.</p>
 </dd>
 
-### -field <b>pPrivateOutput</b>
+### -field pPrivateOutput
 
 <dd>
 <p>[in] A pointer to a DXVADDI_PRIVATEDATA structure that contains data about the extension operation that the driver returns.</p>
 </dd>
 
-### -field <b>NumBuffers</b>
+### -field NumBuffers
 
 <dd>
 <p>[in] The number of buffers in the list that is pointed to by <b>pBuffers</b>.</p>
 </dd>
 
-### -field <b>pBuffers</b>
+### -field pBuffers
 
 <dd>
 <p>

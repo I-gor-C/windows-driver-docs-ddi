@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="CPT_ICC"></a><a id="cpt_icc"></a><b>CPT_ICC</b>
+### -field CPT_ICC
 
 <dd>
 <p>Specifies an ICC profile. If this value is specified, only the CPST_RGB_WORKING_SPACE and CPST_CUSTOM_WORKING_SPACE values of <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a> are valid.</p>
 </dd>
 
-### -field <a id="CPT_DMP"></a><a id="cpt_dmp"></a><b>CPT_DMP</b>
+### -field CPT_DMP
 
 <dd>
 <p>Specifies a WCS device model profile (DMP). If this value is specified, only the CPST_RGB_WORKING_SPACE and CPST_CUSTOM_WORKING_SPACE values of <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a> are valid.</p>
 </dd>
 
-### -field <a id="CPT_CAMP"></a><a id="cpt_camp"></a><b>CPT_CAMP</b>
+### -field CPT_CAMP
 
 <dd>
 <p>Specifies a WCS color appearance model profile (CAMP). If this value is specified, only the CPST_NONE value of <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a> is valid.</p>
 </dd>
 
-### -field <a id="CPT_GMMP"></a><a id="cpt_gmmp"></a><b>CPT_GMMP</b>
+### -field CPT_GMMP
 
 <dd>
 <p>Specifies a WCS gamut map model profile (GMMP). If this value is specified, only the CPST_PERCEPTUAL, CPST_SATURATION, CPST_RELATIVE_COLORIMETRIC, and CPST_ABSOLUTE_COLORIMETRIC values of <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a> are valid. Any one of these values may optionally be combined (in a bitwise OR operation) with CPST_DEFAULT.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilltekind.htm
 old-project: netvista
 ms.assetid: e7457252-0ca9-4cea-bc06-283573e49331
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef enum _RILLTEKIND {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_LTEKIND_FDD"></a><a id="ril_ltekind_fdd"></a><b>RIL_LTEKIND_FDD</b>
+### -field RIL_LTEKIND_FDD
 
 <dd></dd>
 
-### -field <a id="RIL_LTEKIND_TDD"></a><a id="ril_ltekind_tdd"></a><b>RIL_LTEKIND_TDD</b>
+### -field RIL_LTEKIND_TDD
 
 <dd></dd>
 
-### -field <a id="RIL_LTEKIND_RESERVED"></a><a id="ril_ltekind_reserved"></a><b>RIL_LTEKIND_RESERVED</b>
+### -field RIL_LTEKIND_RESERVED
 
 <dd></dd>
 
-### -field <a id="RIL_LTEKIND_UNKNOWN_CA"></a><a id="ril_ltekind_unknown_ca"></a><b>RIL_LTEKIND_UNKNOWN_CA</b>
+### -field RIL_LTEKIND_UNKNOWN_CA
 
 <dd></dd>
 
-### -field <a id="RIL_LTEKIND_FDD_CA"></a><a id="ril_ltekind_fdd_ca"></a><b>RIL_LTEKIND_FDD_CA</b>
+### -field RIL_LTEKIND_FDD_CA
 
 <dd></dd>
 
-### -field <a id="RIL_LTEKIND_TDD_CA"></a><a id="ril_ltekind_tdd_ca"></a><b>RIL_LTEKIND_TDD_CA</b>
+### -field RIL_LTEKIND_TDD_CA
 
 <dd></dd>
 
-### -field <a id="RIL_LTEKIND_MAX"></a><a id="ril_ltekind_max"></a><b>RIL_LTEKIND_MAX</b>
+### -field RIL_LTEKIND_MAX
 
 <dd></dd>
 </dl>

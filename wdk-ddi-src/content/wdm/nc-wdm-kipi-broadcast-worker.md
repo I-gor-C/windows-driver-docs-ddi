@@ -58,7 +58,7 @@ ULONG_PTR IpiGenericCall(
 ## -parameters
 <dl>
 
-### -param <i>Argument</i> [in]
+### -param Argument [in]
 
 <dd>
 <p>Supplies the value that was passed to the <a href="..\wdm\nf-wdm-keipigenericcall.md">KeIpiGenericCall</a> routine that called <i>IpiGenericCall</i>.</p>
@@ -71,7 +71,7 @@ ULONG_PTR IpiGenericCall(
 ## -remarks
 <p><i>IpiGenericCall</i> routines run at IRQL = IPI_LEVEL, which is greater than DIRQL for every device. <i>IpiGenericCall</i> routines must satisfy the same restrictions as bug check callback routines. For more information about these restrictions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566401">Writing a Bug Check Callback Routine</a>.</p>
 
-<p>To define an <i>IpiGenericCall</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define an <i>IpiGenericCall</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define an <i>IpiGenericCall</i> callback routine that is named <code>MyIpiGenericCall</code>, use the KIPI_BROADCAST_WORKER type as shown in this code example:</p>
 

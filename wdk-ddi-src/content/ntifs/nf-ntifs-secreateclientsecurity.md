@@ -7,7 +7,7 @@ old-location: ifsk\secreateclientsecurity.htm
 old-project: ifsk
 ms.assetid: 10aadf41-79c4-46d6-a5ae-e8b3b5f338f0
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: SeCreateClientSecurity
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ NTSTATUS SeCreateClientSecurity(
 ## -parameters
 <dl>
 
-### -param <i>ClientThread</i> [in]
+### -param ClientThread [in]
 
 <dd>
 <p>Pointer to the thread of the client to be impersonated.</p>
 </dd>
 
-### -param <i>ClientSecurityQos</i> [in]
+### -param ClientSecurityQos [in]
 
 <dd>
 <p>Pointer to a caller-allocated SECURITY_QUALITY_OF_SERVICE structure indicating what form of impersonation is to be performed.</p>
 </dd>
 
-### -param <i>ServerIsRemote</i> [in]
+### -param ServerIsRemote [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if the server of the client's request is remote.</p>
 </dd>
 
-### -param <i>ClientContext</i> [out]
+### -param ClientContext [out]
 
 <dd>
 <p>Pointer to a caller-allocated SECURITY_CLIENT_CONTEXT structure to be initialized.</p>
@@ -167,4 +167,4 @@ NTSTATUS SeCreateClientSecurity(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeCreateClientSecurity routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeCreateClientSecurity routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

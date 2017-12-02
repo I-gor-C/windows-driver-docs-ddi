@@ -7,7 +7,7 @@ old-location: netvista\fwpsinjectnetworkreceiveasync0.htm
 old-project: netvista
 ms.assetid: c34b2be1-fe1c-4a99-ac9c-ddd40b97d8d0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsInjectNetworkReceiveAsync0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
 ## -parameters
 <dl>
 
-### -param <i>injectionHandle</i> [in]
+### -param injectionHandle [in]
 
 <dd>
 <p>An injection handle that was previously created by a call to the 
@@ -71,7 +71,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
      <i>flags</i> parameter set to FWPS_INJECTION_TYPE_NETWORK.</p>
 </dd>
 
-### -param <i>injectionContext</i> [in, optional]
+### -param injectionContext [in, optional]
 
 <dd>
 <p>An optional handle to the injection context. If specified, it can be obtained by calling the 
@@ -80,13 +80,13 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
      <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b>.</p>
 </dd>
 
-### -param <i>flags</i> [in]
+### -param flags [in]
 
 <dd>
 <p>Reserved. Callout drivers must set this parameter to zero.</p>
 </dd>
 
-### -param <i>compartmentId</i> [in]
+### -param compartmentId [in]
 
 <dd>
 <p>The identifier of the routing compartment into which the packet data is injected, specified as a 
@@ -101,7 +101,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
      <b>currentMetadataValues</b> member. Otherwise, set this parameter to UNSPECIFIED_COMPARTMENT_ID.</p>
 </dd>
 
-### -param <i>interfaceIndex</i> [in]
+### -param interfaceIndex [in]
 
 <dd>
 <p>The index of the interface on which the original packet data was received. A callout driver should
@@ -111,7 +111,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
      indicated.</p>
 </dd>
 
-### -param <i>subInterfaceIndex</i> [in]
+### -param subInterfaceIndex [in]
 
 <dd>
 <p>The index of the subinterface on which the original packet data was received. A callout driver
@@ -121,7 +121,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
      indicated.</p>
 </dd>
 
-### -param <i>netBufferList</i> [in, out]
+### -param netBufferList [in, out]
 
 <dd>
 <p>A pointer to a 
@@ -135,7 +135,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
      IP header.</p>
 </dd>
 
-### -param <i>completionFn</i> [in]
+### -param completionFn [in]
 
 <dd>
 <p>A pointer to a 
@@ -144,7 +144,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
      <i>netBufferList</i> parameter, has been injected into the network stack.</p>
 </dd>
 
-### -param <i>completionContext</i> [in, optional]
+### -param completionContext [in, optional]
 
 <dd>
 <p>A pointer to a callout driver–provided context that is passed to the callout function pointed to
@@ -183,7 +183,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
     data path. This function can execute asynchronously. Callout drivers normally inject data into the
     network stack when modifying packet data. For more information about how a callout driver can modify
     packet data, see 
-    <a href="NULL">Callout Driver Operations</a>.</p>
+    <a href="netvista.callout_driver_operations">Callout Driver Operations</a>.</p>
 
 <p>If the return value is not STATUS_SUCCESS, the completion function will not be called. In this case,
     the net buffer list pointed to by 
@@ -296,4 +296,4 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectNetworkReceiveAsync0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectNetworkReceiveAsync0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

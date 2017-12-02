@@ -59,7 +59,7 @@ NTSTATUS ClfsDeleteLogFile(
 ## -parameters
 <dl>
 
-### -param <i>puszLogFileName</i> [in]
+### -param puszLogFileName [in]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that supplies the name of the CLFS stream to be deleted. </p>
@@ -67,25 +67,25 @@ NTSTATUS ClfsDeleteLogFile(
 <p>If the stream to be deleted is one of the streams of a multiplexed log, the name has the form log:<i>physical log name</i>::<i>stream name</i>, where <i>physical log name</i> is the path name of  the physical log on the underlying file system and <i>stream name</i> is the unique name of the stream to be deleted.</p>
 </dd>
 
-### -param <i>psdLogFile</i> [in, optional]
+### -param psdLogFile [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> structure that supplies the security attributes for accessing the stream. This parameter can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>fLogOptionFlag</i> [in]
+### -param fLogOptionFlag [in]
 
 <dd>
 <p>A value that indicates the relationship between CLFS and the component that is deleting the log. For a list of possible values, see the description of the <i>fLogOptionFlag</i> parameter of the <b>ClfsCreateLogFile</b> routine.</p>
 </dd>
 
-### -param <i>pvContext</i> [in, optional]
+### -param pvContext [in, optional]
 
 <dd>
 <p>A pointer to a context. The way the context is interpreted depends on the value passed in <i>fLogOptionFlag</i>.</p>
 </dd>
 
-### -param <i>cbContext</i> [in]
+### -param cbContext [in]
 
 <dd>
 <p>The size, in bytes, of the context pointed to by <i>pvContex</i>t. If <i>pvContext</i> is not <b>NULL</b>, this parameter must be greater than zero.</p>

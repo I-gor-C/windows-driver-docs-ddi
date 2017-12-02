@@ -57,25 +57,25 @@ typedef struct _D3DKMT_ADDSURFACETOSWAPCHAIN {
 ## -struct-fields
 <dl>
 
-### -field <b>hNtSwapChain</b>
+### -field hNtSwapChain
 
 <dd>
 <p>An NT handle for the swapchain in this process.</p>
 </dd>
 
-### -field <b>bProducer</b>
+### -field bProducer
 
 <dd>
 <p>Indicates if the surface is a producer or consumer.</p>
 </dd>
 
-### -field <b>hNtSurfaceHandle</b>
+### -field hNtSurfaceHandle
 
 <dd>
 <p>An NT handle for the surface to be added.</p>
 </dd>
 
-### -field <b>BufferIdx</b>
+### -field BufferIdx
 
 <dd>
 <p>Index of were the texture was placed on the surface table.</p>

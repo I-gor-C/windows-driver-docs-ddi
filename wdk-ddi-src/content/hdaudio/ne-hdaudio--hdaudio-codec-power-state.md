@@ -62,43 +62,43 @@ typedef enum _HDAUDIO_CODEC_POWER_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PowerCodecUnspecified_"></a><a id="powercodecunspecified_"></a><a id="POWERCODECUNSPECIFIED_"></a><b>PowerCodecUnspecified </b>
+### -field PowerCodecUnspecified 
 
 <dd>
 <p>An unspecified power state.</p>
 </dd>
 
-### -field <a id="PowerCodecD0"></a><a id="powercodecd0"></a><a id="POWERCODECD0"></a><b>PowerCodecD0</b>
+### -field PowerCodecD0
 
 <dd>
 <p>Power state D0</p>
 </dd>
 
-### -field <a id="PowerCodecD1"></a><a id="powercodecd1"></a><a id="POWERCODECD1"></a><b>PowerCodecD1</b>
+### -field PowerCodecD1
 
 <dd>
 <p>Power state D1</p>
 </dd>
 
-### -field <a id="PowerCodecD2"></a><a id="powercodecd2"></a><a id="POWERCODECD2"></a><b>PowerCodecD2</b>
+### -field PowerCodecD2
 
 <dd>
 <p>Power state D2</p>
 </dd>
 
-### -field <a id="PowerCodecD3"></a><a id="powercodecd3"></a><a id="POWERCODECD3"></a><b>PowerCodecD3</b>
+### -field PowerCodecD3
 
 <dd>
 <p>Power state D3</p>
 </dd>
 
-### -field <a id="PowerCodecD3Cold"></a><a id="powercodecd3cold"></a><a id="POWERCODECD3COLD"></a><b>PowerCodecD3Cold</b>
+### -field PowerCodecD3Cold
 
 <dd>
 <p>Power state D3 Cold</p>
 </dd>
 
-### -field <a id="PowerCodecMaximum"></a><a id="powercodecmaximum"></a><a id="POWERCODECMAXIMUM"></a><b>PowerCodecMaximum</b>
+### -field PowerCodecMaximum
 
 <dd>
 <p>Power state Maximum</p>

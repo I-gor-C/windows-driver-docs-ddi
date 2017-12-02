@@ -54,7 +54,7 @@ VOID NFC_CX_RF_DISCOVERY_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
 <p>A pointer to the NFC_CX_RF_DISCOVERY_CONFIG structure that the function initializes.</p>

@@ -68,91 +68,91 @@ typedef struct _D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeIndex</b>
+### -field NodeIndex
 
 <dd>
 <p>Node index.</p>
 </dd>
 
-### -field <b>InputSample</b>
+### -field InputSample
 
 <dd>
 <p>Input sample.</p>
 </dd>
 
-### -field <b>InputFieldType</b>
+### -field InputFieldType
 
 <dd>
 <p>Input field type.</p>
 </dd>
 
-### -field <b>InputStereoFormat</b>
+### -field InputStereoFormat
 
 <dd>
 <p>Input stereo format.</p>
 </dd>
 
-### -field <b>InputFrameRate</b>
+### -field InputFrameRate
 
 <dd>
 <p>Input frame rate.</p>
 </dd>
 
-### -field <b>OutputFormat</b>
+### -field OutputFormat
 
 <dd>
 <p>Output format.</p>
 </dd>
 
-### -field <b>OutputStereoFormat</b>
+### -field OutputStereoFormat
 
 <dd>
 <p>Output stereo format.</p>
 </dd>
 
-### -field <b>OutputFrameRate</b>
+### -field OutputFrameRate
 
 <dd>
 <p>Output frame rate.</p>
 </dd>
 
-### -field <b>SupportFlags</b>
+### -field SupportFlags
 
 <dd>
 <p>Support flags.</p>
 </dd>
 
-### -field <b>ScaleSupport</b>
+### -field ScaleSupport
 
 <dd>
 <p>Scale support.</p>
 </dd>
 
-### -field <b>FeatureSupport</b>
+### -field FeatureSupport
 
 <dd>
 <p>Feature support.</p>
 </dd>
 
-### -field <b>DeinterlaceSupport</b>
+### -field DeinterlaceSupport
 
 <dd>
 <p>Deinterlace support.</p>
 </dd>
 
-### -field <b>AutoProcessingSupport</b>
+### -field AutoProcessingSupport
 
 <dd>
 <p>Auto processing support.</p>
 </dd>
 
-### -field <b>FilterSupport</b>
+### -field FilterSupport
 
 <dd>
 <p>Filter support.</p>
 </dd>
 
-### -field <b>FilterRangeSupport</b>
+### -field FilterRangeSupport
 
 <dd>
 <p>Filter range support.</p>

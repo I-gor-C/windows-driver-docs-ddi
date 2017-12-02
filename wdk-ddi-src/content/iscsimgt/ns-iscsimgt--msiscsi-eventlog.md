@@ -57,25 +57,25 @@ typedef struct _MSiSCSI_EventLog {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>This specifies the EVENTLOG_MESSAGE_QUALIFIERS type of event log message.</p>
 </dd>
 
-### -field <b>LogToEventLog</b>
+### -field LogToEventLog
 
 <dd>
 <p>If this value it set to 1, the message will be logged to the system event log.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>This specifies the size of the Additional Data field.</p>
 </dd>
 
-### -field <b>AdditionalData[1]</b>
+### -field AdditionalData[1]
 
 <dd>
 <p>This provides additional information associated with this event.</p>

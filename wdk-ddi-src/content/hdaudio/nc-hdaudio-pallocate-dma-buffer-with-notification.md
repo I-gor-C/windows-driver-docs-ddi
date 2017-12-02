@@ -65,49 +65,49 @@ NTSTATUS AllocateDmaBufferWithNotification(
 ## -parameters
 <dl>
 
-### -param <i>context</i> [in]
+### -param context [in]
 
 <dd>
 <p>Specifies the context value from the Context member of the <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-v2.md">HDAUDIO_BUS_INTERFACE_V2</a> structure.</p>
 </dd>
 
-### -param <i>handle</i> [in]
+### -param handle [in]
 
 <dd>
 <p>A handle that identifies the DMA engine. This handle value was obtained from a previous call to <a href="..\hdaudio\nc-hdaudio-pallocate-capture-dma-engine.md">AllocateCaptureDmaEngine</a> or <a href="..\hdaudio\nc-hdaudio-pallocate-render-dma-engine.md">AllocateRenderDmaEngine</a>.</p>
 </dd>
 
-### -param <i>notificationCount</i> [in]
+### -param notificationCount [in]
 
 <dd>
 <p>Specifies the number of notifications that are needed, based on DMA progression through the audio buffer.  Currently, a value of 1 or 2 is supported.  When the value is 1, any registered notification events are signaled each time the cyclic audio buffer is completed and DMA wraps back to the beginning.  When the value is 2, any registered notification events are notified as DMA passes the midpoint of the audio buffer as well as at the end (or the wraparound point).</p>
 </dd>
 
-### -param <i>requestedBufferSize</i> [in]
+### -param requestedBufferSize [in]
 
 <dd>
 <p>Specifies the requested buffer size, in bytes.</p>
 </dd>
 
-### -param <i>bufferMdl</i> [out]
+### -param bufferMdl [out]
 
 <dd>
 <p>Retrieves the physical memory pages that contain the allocated buffer. This parameter points to a caller-allocated variable that is a pointer to a memory descriptor list (PMDL). This routine writes a pointer that describes the memory descriptor list buffer, to the PMDL variable.</p>
 </dd>
 
-### -param <i>allocatedBufferSize</i> [out]
+### -param allocatedBufferSize [out]
 
 <dd>
 <p>Retrieves the allocated buffer size, in bytes. This parameter points to a caller-allocated SIZE_T variable into which the routine writes the size of the allocated buffer.</p>
 </dd>
 
-### -param <i>streamID</i> [out]
+### -param streamID [out]
 
 <dd>
 <p>Retrieves the stream identifier. This parameter points to a caller-allocated UCHAR variable into which the routine writes the stream identifier that the routine assigns to the stream.</p>
 </dd>
 
-### -param <i>fifoSize</i> [out]
+### -param fifoSize [out]
 
 <dd>
 <p>Retrieves the DMA engine's FIFO size, in bytes. This parameter points to a caller-allocated ULONG variable into which the routine writes the FIFO size.</p>

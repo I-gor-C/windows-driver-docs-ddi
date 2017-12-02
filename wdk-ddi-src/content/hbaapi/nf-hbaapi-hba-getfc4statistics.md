@@ -57,25 +57,25 @@ HBA_STATUS HBA_API HBA_GetFC4Statistics(
 ## -parameters
 <dl>
 
-### -param <i>handle</i> [in]
+### -param handle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
 </dd>
 
-### -param <i>portWWN</i> [in]
+### -param portWWN [in]
 
 <dd>
 <p>Contains a 64-bit world-wide name (WWN) that uniquely identifies the local HBA port for which this routine retrieves traffic statistics for a specific FC-4 protocol. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.</p>
 </dd>
 
-### -param <i>FC4type</i> [in]
+### -param FC4type [in]
 
 <dd>
 <p>Contains a value that indicates the type FC-4 protocol. For an explanation of FC4 types and the values that can be assigned to this parameter, see the T11 committee's <i>Fibre Channel Generic Services - 4 </i>specification. </p>
 </dd>
 
-### -param <i>statistics</i> [out]
+### -param statistics [out]
 
 <dd>
 <p>Pointer to a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fc4statistics.md">HBA_FC4Statistics</a> that contains statistics for the specified port and FC-4 protocol. </p>

@@ -54,7 +54,7 @@ typedef struct _ClearPathHealthCounters_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PathID</b>
+### -field PathID
 
 <dd>
 <p>A 64-bitfield that specifies the path that is associated with the device.</p>

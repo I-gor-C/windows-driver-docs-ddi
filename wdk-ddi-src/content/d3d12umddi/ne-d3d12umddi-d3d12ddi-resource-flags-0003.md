@@ -62,55 +62,55 @@ typedef enum D3D12DDI_RESOURCE_FLAGS_0003 {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_RESOURCE_FLAG_0003_NONE"></a><a id="d3d12ddi_resource_flag_0003_none"></a><b>D3D12DDI_RESOURCE_FLAG_0003_NONE</b>
+### -field D3D12DDI_RESOURCE_FLAG_0003_NONE
 
 <dd>
 <p>Constant for no flags.</p>
 </dd>
 
-### -field <a id="D3D12DDI_RESOURCE_FLAG_0003_RENDER_TARGET"></a><a id="d3d12ddi_resource_flag_0003_render_target"></a><b>D3D12DDI_RESOURCE_FLAG_0003_RENDER_TARGET</b>
+### -field D3D12DDI_RESOURCE_FLAG_0003_RENDER_TARGET
 
 <dd>
 <p>Render target.</p>
 </dd>
 
-### -field <a id="D3D12DDI_RESOURCE_FLAG_0003_DEPTH_STENCIL"></a><a id="d3d12ddi_resource_flag_0003_depth_stencil"></a><b>D3D12DDI_RESOURCE_FLAG_0003_DEPTH_STENCIL</b>
+### -field D3D12DDI_RESOURCE_FLAG_0003_DEPTH_STENCIL
 
 <dd>
 <p>Depth stencil.</p>
 </dd>
 
-### -field <a id="D3D12DDI_RESOURCE_FLAG_0003_CROSS_ADAPTER"></a><a id="d3d12ddi_resource_flag_0003_cross_adapter"></a><b>D3D12DDI_RESOURCE_FLAG_0003_CROSS_ADAPTER</b>
+### -field D3D12DDI_RESOURCE_FLAG_0003_CROSS_ADAPTER
 
 <dd>
 <p>Cross adapter.</p>
 </dd>
 
-### -field <a id="D3D12DDI_RESOURCE_FLAG_0003_SIMULTANEOUS_ACCESS"></a><a id="d3d12ddi_resource_flag_0003_simultaneous_access"></a><b>D3D12DDI_RESOURCE_FLAG_0003_SIMULTANEOUS_ACCESS</b>
+### -field D3D12DDI_RESOURCE_FLAG_0003_SIMULTANEOUS_ACCESS
 
 <dd>
 <p>Simultaneous access.</p>
 </dd>
 
-### -field <a id="D3D12DDI_RESOURCE_FLAG_0003_SHADER_RESOURCE"></a><a id="d3d12ddi_resource_flag_0003_shader_resource"></a><b>D3D12DDI_RESOURCE_FLAG_0003_SHADER_RESOURCE</b>
+### -field D3D12DDI_RESOURCE_FLAG_0003_SHADER_RESOURCE
 
 <dd>
 <p>Shader resource.</p>
 </dd>
 
-### -field <a id="D3D12DDI_RESOURCE_FLAG_0020_VIDEO_DECODE_REFERENCE_ONLY"></a><a id="d3d12ddi_resource_flag_0020_video_decode_reference_only"></a><b>D3D12DDI_RESOURCE_FLAG_0020_VIDEO_DECODE_REFERENCE_ONLY</b>
+### -field D3D12DDI_RESOURCE_FLAG_0020_VIDEO_DECODE_REFERENCE_ONLY
 
 <dd>
 <p>Video decode reference only.</p>
 </dd>
 
-### -field <a id="D3D12DDI_RESOURCE_FLAG_0020_CONTENT_PROTECTION_"></a><a id="d3d12ddi_resource_flag_0020_content_protection_"></a><b>D3D12DDI_RESOURCE_FLAG_0020_CONTENT_PROTECTION </b>
+### -field D3D12DDI_RESOURCE_FLAG_0020_CONTENT_PROTECTION 
 
 <dd>
 <p>Content protection.</p>
 </dd>
 
-### -field <a id="D3D12DDI_RESOURCE_FLAG_0022_UNORDERED_ACCESS"></a><a id="d3d12ddi_resource_flag_0022_unordered_access"></a><b>D3D12DDI_RESOURCE_FLAG_0022_UNORDERED_ACCESS</b>
+### -field D3D12DDI_RESOURCE_FLAG_0022_UNORDERED_ACCESS
 
 <dd>
 <p>Unordered access. This value is available as a resource flag for the fallback plans.</p>

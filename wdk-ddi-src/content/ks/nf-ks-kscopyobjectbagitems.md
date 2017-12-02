@@ -55,13 +55,13 @@ NTSTATUS KsCopyObjectBagItems(
 ## -parameters
 <dl>
 
-### -param <i>ObjectBagDestination</i> [in]
+### -param ObjectBagDestination [in]
 
 <dd>
 <p>The KSOBJECT_BAG (equivalent to type PVOID) into which to copy items.</p>
 </dd>
 
-### -param <i>ObjectBagSource</i> [in]
+### -param ObjectBagSource [in]
 
 <dd>
 <p>The KSOBJECT_BAG from which items are copied to <i>ObjectBagDestination.</i></p>
@@ -72,7 +72,7 @@ NTSTATUS KsCopyObjectBagItems(
 <p>Returns STATUS_SUCCESS if the copy is successful. Otherwise, it returns an error code. Most often, this is STATUS_INSUFFICIENT_RESOURCES indicating insufficient system resources to complete the copy operation. If STATUS_INSUFFICIENT_RESOURCES is returned, it is quite possible that some, but not all, of the items have been copied from <i>ObjectBagSource</i> to <i>ObjectBagDestination</i>.</p>
 
 ## -remarks
-<p>Note that mutexes for both bags should be held. If the object bag in question is associated with a filter or a pin, acquire the filter control mutex. If the object bag belongs to a filter factory or the device, acquire the device mutex. For more information, see <a href="NULL">Object Bags</a> and <a href="NULL">Mutexes in AVStream</a>. </p>
+<p>Note that mutexes for both bags should be held. If the object bag in question is associated with a filter or a pin, acquire the filter control mutex. If the object bag belongs to a filter factory or the device, acquire the device mutex. For more information, see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a> and <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>. </p>
 
 ## -requirements
 <table>

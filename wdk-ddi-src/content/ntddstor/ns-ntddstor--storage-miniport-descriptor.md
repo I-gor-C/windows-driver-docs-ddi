@@ -62,58 +62,58 @@ typedef struct _STORAGE_MINIPORT_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Contains the size of this structure, in bytes. The value of this member will change as members are added to 
       the structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the total size of the data returned, in bytes. This may include data that follows this 
       structure.</p>
 </dd>
 
-### -field <b>Portdriver</b>
+### -field Portdriver
 
 <dd>
 <p>Type of port driver as enumerated by the 
      <a href="storage.storage_port_code_set">STORAGE_PORT_CODE_SET</a> enumeration.</p>
 </dd>
 
-### -field <b>LUNResetSupported</b>
+### -field LUNResetSupported
 
 <dd>
 <p>Indicates whether a LUN reset is supported.</p>
 </dd>
 
-### -field <b>TargetResetSupported</b>
+### -field TargetResetSupported
 
 <dd>
 <p>Indicates whether a target reset is supported.</p>
 </dd>
 
-### -field <b>IoTimeoutValue</b>
+### -field IoTimeoutValue
 
 <dd>
 <p><b>Introduced in Windows 8:  </b>Indicates the timeout value for the device, in milliseconds (ms).</p>
 </dd>
 
-### -field <b>ExtraIoInfoSupported</b>
+### -field ExtraIoInfoSupported
 
 <dd>
 <p><b>Introduced in Windows 8.1:  </b>Indicates if extra I/O info is supported.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p><b>Introduced in Windows 8.1:  </b>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p><b>Introduced in Windows 8.1:  </b>Reserved for future use.</p>

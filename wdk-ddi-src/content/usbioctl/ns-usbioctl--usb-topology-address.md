@@ -59,31 +59,31 @@ typedef struct _USB_TOPOLOGY_ADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>PciBusNumber</b>
+### -field PciBusNumber
 
 <dd>
 <p>Specifies the PCI bus number of the USB host controller to which the USB device is attached. </p>
 </dd>
 
-### -field <b>PciDeviceNumber</b>
+### -field PciDeviceNumber
 
 <dd>
 <p>Specifies the PCI device number of the USB host controller to which the USB device is attached. </p>
 </dd>
 
-### -field <b>PciFunctionNumber</b>
+### -field PciFunctionNumber
 
 <dd>
 <p>Specifies the PCI function number of the USB host controller to which the USB device is attached. </p>
 </dd>
 
-### -field <b>RootHubPortNumber</b>
+### -field RootHubPortNumber
 
 <dd>
 <p>Specifies the root hub port number through which the USB device is connected.  The USB device can be connected to the root port directly, or it can be connected through 1 or more external USB hubs to the port. </p>
 </dd>
 
-### -field <b>HubPortNumber</b>
+### -field HubPortNumber
 
 <dd>
 <p>An array containing the port number on each external hub (between the root hub and the device) through which the USB device is connected.  The first element of the array indicates the port on the hub that is connected directly to the root hub.  An array containing all zeros indicates that the device is connected directly to the root hub. </p>

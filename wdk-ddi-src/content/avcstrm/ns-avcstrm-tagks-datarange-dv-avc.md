@@ -56,19 +56,19 @@ typedef struct tagKS_DATARANGE_DV_AVC {
 ## -struct-fields
 <dl>
 
-### -field <b>DataRange</b>
+### -field DataRange
 
 <dd>
 <p>Specifies the range of supported AV/C digital video formats.</p>
 </dd>
 
-### -field <b>DVVideoInfo</b>
+### -field DVVideoInfo
 
 <dd>
 <p>Specifies the digital video information, for example, sound tracks and video information.</p>
 </dd>
 
-### -field <b>ConnectInfo</b>
+### -field ConnectInfo
 
 <dd>
 <p>Specifies the AV/C preconnection info.</p>

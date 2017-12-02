@@ -7,13 +7,13 @@ old-location: debugger\readphysical.htm
 old-project: debugger
 ms.assetid: 02ca3358-7740-4eda-ab7c-f4b8a88389c2
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: ReadPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -58,25 +58,25 @@ __inline VOID ReadPhysical(
 ## -parameters
 <dl>
 
-### -param <i>address</i> 
+### -param address 
 
 <dd>
 <p>Specifies the physical address to read.</p>
 </dd>
 
-### -param <i>buf</i> 
+### -param buf 
 
 <dd>
 <p>Specifies the address of an array of bytes to hold the data that is read.</p>
 </dd>
 
-### -param <i>size</i> 
+### -param size 
 
 <dd>
 <p>Specifies the number of bytes to read. </p>
 </dd>
 
-### -param <i>sizer</i> 
+### -param sizer 
 
 <dd>
 <p>Receives the number of bytes actually read.</p>
@@ -108,7 +108,7 @@ __inline VOID ReadPhysical(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

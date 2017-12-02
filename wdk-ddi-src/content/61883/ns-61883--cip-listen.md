@@ -2,12 +2,12 @@
 UID: NS.61883._CIP_LISTEN
 title: CIP_LISTEN
 author: windows-driver-content
-description: This structure is used for a listen request.
+description: This structure is used for a listen request. The request begins isochronous reception on the specified connection.
 old-location: ieee\cip_listen.htm
 old-project: IEEE
 ms.assetid: 362ABECF-66D3-4B0B-913B-59F7196D6BFD
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: CIP_LISTEN, CIP_LISTEN, *PCIP_LISTEN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,7 +38,7 @@ req.irql:
 
 
 ## -description
-<p>This structure is used for a listen request.</p>
+<p>This structure is used for a listen request. The request begins isochronous reception on the specified connection. This request will start capturing CIP packets, whether the packets have frames attached. </p>
 
 
 ## -syntax
@@ -53,15 +53,19 @@ typedef struct _CIP_LISTEN {
 ## -struct-fields
 <dl>
 
-### -field <b><b>hConnect</b></b>
+### -field hConnect
 
 <dd>
-<p>The handle of the connection to begin isochronous reception.</p>
+<p>On input, the handle of the connection to begin isochronous reception.</p>
 </dd>
 </dl>
 
 ## -remarks
+<p>If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. </p>
 
+<p>If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INVALID_PARAMETER.</p>
+
+<p>If the protocol driver is unable to allocate resources, it sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INSUFFICIENT_RESOURCES.</p>
 
 ## -requirements
 <table>
@@ -85,4 +89,4 @@ typedef struct _CIP_LISTEN {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CIP_LISTEN structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CIP_LISTEN structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

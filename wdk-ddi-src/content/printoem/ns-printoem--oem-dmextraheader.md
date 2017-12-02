@@ -57,19 +57,19 @@ typedef struct _OEM_DMEXTRAHEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Total size, in bytes, of the added private DEVMODEW structure members, including the bytes contained in the OEM_DMEXTRAHEADER structure.</p>
 </dd>
 
-### -field <b>dwSignature</b>
+### -field dwSignature
 
 <dd>
 <p>Unique signature value that the plug-in also returns when its <a href="print.iprintoemui_getinfo">IPrintOemUI::GetInfo</a> method receives the OEMGI_GETSIGNATURE flag.</p>
 </dd>
 
-### -field <b>dwVersion</b>
+### -field dwVersion
 
 <dd>
 <p>Version number of the user interface plug-in that is defining the private DEVMODEW structure members. The version format is developer-defined.</p>
@@ -77,7 +77,7 @@ typedef struct _OEM_DMEXTRAHEADER {
 </dl>
 
 ## -remarks
-<p>For more information about adding DEVMODEW structure members, see <a href="NULL">Providing DEVMODE Structure Additions</a>. </p>
+<p>For more information about adding DEVMODEW structure members, see <a href="https://msdn.microsoft.com/7ce698f5-14c7-484d-be3d-b41c690b9576">Providing DEVMODE Structure Additions</a>. </p>
 
 ## -requirements
 <table>

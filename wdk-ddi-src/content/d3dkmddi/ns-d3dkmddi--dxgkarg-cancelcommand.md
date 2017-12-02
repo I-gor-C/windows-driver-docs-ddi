@@ -68,96 +68,96 @@ typedef struct _DXGKARG_CANCELCOMMAND {
 ## -struct-fields
 <dl>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] If the driver is multiple-engine aware (that is, the driver supports context creation), a handle to the device context that the cancel request originated from. </p>
 <p>For some paging operations, <b>hContext</b> is <b>NULL</b> (for example, paging operations that evict the content of the entire frame buffer during power management). Paging operations are indicated by the <b>Paging</b> bit-field flag in the <b>Flags</b> member.</p>
 </dd>
 
-### -field <b>pDmaBuffer</b>
+### -field pDmaBuffer
 
 <dd>
 <p>[out] A pointer to the start of the DMA buffer, which is aligned on 4 KB.</p>
 </dd>
 
-### -field <b>DmaBufferSize</b>
+### -field DmaBufferSize
 
 <dd>
 <p>[in] The size, in bytes, of the DMA buffer that <b>pDmaBuffer</b> points to.</p>
 </dd>
 
-### -field <b>DmaBufferSubmissionStartOffset</b>
+### -field DmaBufferSubmissionStartOffset
 
 <dd>
 <p>[in] The offset, in bytes, from the beginning of the DMA buffer that <b>pDmaBuffer</b> specifies to the start of the portion of the DMA buffer that requires canceling. The offset that is received at patch time matches the offset that is received at submission time.</p>
 </dd>
 
-### -field <b>DmaBufferSubmissionEndOffset</b>
+### -field DmaBufferSubmissionEndOffset
 
 <dd>
 <p>[in] The offset, in bytes, from the beginning of the DMA buffer that <b>pDmaBuffer</b> specifies to the end of the portion of the DMA buffer that requires canceling.</p>
 </dd>
 
-### -field <b>pDmaBufferPrivateData</b>
+### -field pDmaBufferPrivateData
 
 <dd>
 <p>[in] A pointer to the driver-resident private data that is associated with the DMA buffer that <b>pDmaBuffer</b> points to. </p>
 </dd>
 
-### -field <b>DmaBufferPrivateDataSize</b>
+### -field DmaBufferPrivateDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the private driver data at <b>pDmaBufferPrivateData</b>.</p>
 <p>Note that <b>DmaBufferPrivateDataSize</b> represents the entire length of the private driver data buffer; however, the portion that is associated with the current cancellation request might be smaller.</p>
 </dd>
 
-### -field <b>DmaBufferPrivateDataSubmissionStartOffset</b>
+### -field DmaBufferPrivateDataSubmissionStartOffset
 
 <dd>
 <p>[in] The offset, in bytes, from the beginning of the DMA buffer private data that <b>pDmaBufferPrivateData</b> specifies to the start of the portion of the private data that is associated with the current cancellation request.</p>
 </dd>
 
-### -field <b>DmaBufferPrivateDataSubmissionEndOffset</b>
+### -field DmaBufferPrivateDataSubmissionEndOffset
 
 <dd>
 <p>[in] The offset, in bytes, from the beginning of the DMA buffer private data that <b>pDmaBufferPrivateData</b> specifies to the end of the portion of the private data that is associated with the current cancellation request.</p>
 </dd>
 
-### -field <b>pAllocationList</b>
+### -field pAllocationList
 
 <dd>
 <p>[in] A pointer to an array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationlist.md">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that is associated with the DMA buffer that <b>pDmaBuffer</b> points to. </p>
 </dd>
 
-### -field <b>AllocationListSize</b>
+### -field AllocationListSize
 
 <dd>
 <p>[in] The number of elements in the array that <b>pAllocationList</b> specifies.</p>
 <p>Note that <b>AllocationListSize</b> represents the total size of the allocation list; however, the portion of the allocation list that is associated with the current cancellation request might be smaller. </p>
 </dd>
 
-### -field <b>pPatchLocationList</b>
+### -field pPatchLocationList
 
 <dd>
 <p>[in] A pointer to an array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures for the list of patch locations that is associated with the DMA buffer that <b>pDmaBuffer</b> points to.</p>
 <p>Note that the array can begin with an element that is before the range that is used to patch the DMA buffer.</p>
 </dd>
 
-### -field <b>PatchLocationListSize</b>
+### -field PatchLocationListSize
 
 <dd>
 <p>[in] The number of elements in the array that <b>pPatchLocationList</b> specifies.</p>
 <p>Note that <b>PatchLocationListSize</b> represents the total size of the patch-location list; however, the range that the driver must process is typically smaller. </p>
 </dd>
 
-### -field <b>PatchLocationListSubmissionStart</b>
+### -field PatchLocationListSubmissionStart
 
 <dd>
 <p>[in] The index of the first element in the patch-location list that <b>pPatchLocationList</b> specifies that must be processed. </p>
 </dd>
 
-### -field <b>PatchLocationListSubmissionLength</b>
+### -field PatchLocationListSubmissionLength
 
 <dd>
 <p>[in] The number of elements in the patch-location list that <b>pPatchLocationList</b> specifies that must be processed.</p>

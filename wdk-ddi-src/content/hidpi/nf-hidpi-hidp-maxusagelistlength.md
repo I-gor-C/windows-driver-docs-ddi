@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>HidP_MaxUsageListLength</b> routine returns the maximum number of <a href="NULL">HID usages</a> that <a href="..\hidpi\nf-hidpi-hidp-getusages.md">HidP_GetUsages</a> can return for a specified type of HID report and a specified <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>.</p>
+<p>The <b>HidP_MaxUsageListLength</b> routine returns the maximum number of <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">HID usages</a> that <a href="..\hidpi\nf-hidpi-hidp-getusages.md">HidP_GetUsages</a> can return for a specified type of HID report and a specified <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>.</p>
 
 
 ## -syntax
@@ -56,30 +56,30 @@ ULONG __stdcall HidP_MaxUsageListLength(
 ## -parameters
 <dl>
 
-### -param <i>ReportType</i> [in]
+### -param ReportType [in]
 
 <dd>
 <p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the report type.</p>
 </dd>
 
-### -param <i>UsagePage</i> [in]
+### -param UsagePage [in]
 
 <dd>
 <p>Specifies a <a href="hid.hid_usages#usage_page#usage_page">usage page</a> as a search criteria. If <i>UsagePage</i> is zero, the routine returns the number of all the buttons in the collection.</p>
 </dd>
 
-### -param <i>PreparsedData</i> [in]
+### -param PreparsedData [in]
 
 <dd>
-<p>Pointer to a top-level collection's <a href="NULL">preparsed data</a>.</p>
+<p>Pointer to a top-level collection's <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.</p>
 </dd>
 </dl>
 
 ## -returns
-<p>If successful, <b>HidP_MaxUsageListLength</b> returns the maximum number of <a href="NULL">HID usages</a> that <a href="..\hidpi\nf-hidpi-hidp-getusages.md">HidP_GetUsages</a> can return for a specified type of HID report and a specified <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>. If the specified preparsed data or report type is not valid, the routine returns zero.</p>
+<p>If successful, <b>HidP_MaxUsageListLength</b> returns the maximum number of <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">HID usages</a> that <a href="..\hidpi\nf-hidpi-hidp-getusages.md">HidP_GetUsages</a> can return for a specified type of HID report and a specified <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>. If the specified preparsed data or report type is not valid, the routine returns zero.</p>
 
 ## -remarks
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 ## -requirements
 <table>

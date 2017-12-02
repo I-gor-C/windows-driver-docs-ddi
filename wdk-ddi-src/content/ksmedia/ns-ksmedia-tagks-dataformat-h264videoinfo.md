@@ -55,13 +55,13 @@ typedef struct _KS_DATAFORMAT_H264VIDEOINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>DataFormat</b>
+### -field DataFormat
 
 <dd>
 <p>Specifies the major identifier for the format. </p>
 </dd>
 
-### -field <b>H264VideoInfoHeader</b>
+### -field H264VideoInfoHeader
 
 <dd>
 <p>Specifies the details of the video stream.</p>

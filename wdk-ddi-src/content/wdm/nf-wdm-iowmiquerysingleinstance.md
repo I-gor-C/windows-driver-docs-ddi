@@ -58,25 +58,25 @@ NTSTATUS IoWMIQuerySingleInstance(
 ## -parameters
 <dl>
 
-### -param <i>DataBlockObject</i> [in]
+### -param DataBlockObject [in]
 
 <dd>
 <p>Pointer to a WMI data block object. The caller opens the data block object for the WMI class with the <a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a> routine. The object must be opened with the WMIGUID_QUERY access right.</p>
 </dd>
 
-### -param <i>InstanceName</i> [in]
+### -param InstanceName [in]
 
 <dd>
 <p>Specifies the name of the instance of the data block. This value corresponds to the value of the <b>InstanceName</b> property for the block.</p>
 </dd>
 
-### -param <i>InOutBufferSize</i> [in, out]
+### -param InOutBufferSize [in, out]
 
 <dd>
 <p>Pointer to a memory location that specifies the size of the buffer passed in the <i>OutBuffer</i> parameter. If the routine succeeds, it updates the memory location to specify the number of bytes actually stored in <i>OutBuffer</i>. If the routine fails with status code of STATUS_BUFFER_TOO_SMALL, it returns the number of bytes required to return the data.</p>
 </dd>
 
-### -param <i>OutBuffer</i> [out, optional]
+### -param OutBuffer [out, optional]
 
 <dd>
 <p>Pointer to the buffer where the routine returns the WMI data. The routine returns a variable-sized <a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a> structure. <i>OutBuffer</i> must point to a buffer allocated from nonpaged pool.</p>

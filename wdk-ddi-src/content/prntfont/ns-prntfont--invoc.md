@@ -56,26 +56,26 @@ typedef struct _INVOC {
 ## -struct-fields
 <dl>
 
-### -field <b>dwCount</b>
+### -field dwCount
 
 <dd>
 <p>Specifies the number of characters in the command.</p>
 </dd>
 
-### -field <b>loOffset</b>
+### -field loOffset
 
 <dd>
 <p>Indicates one of the following:</p>
 <p></p>
 <dl>
 
-### -field <a id="For_.ufm_files_"></a><a id="for_.ufm_files_"></a><a id="FOR_.UFM_FILES_"></a>For .ufm files:
+### -field For .ufm files:
 
 <dd>
 <p>Specifies the byte offset from the beginning of the .ufm file's <a href="..\prntfont\ns-prntfont--unidrvinfo.md">UNIDRVINFO</a> structure to beginning of the command string.</p>
 </dd>
 
-### -field <a id="For_.gtt_files_"></a><a id="for_.gtt_files_"></a><a id="FOR_.GTT_FILES_"></a>For .gtt files:
+### -field For .gtt files:
 
 <dd>
 <p>Specifies the byte offset from the beginning of the .gtt file's <a href="..\prntfont\ns-prntfont--uni-codepageinfo.md">UNI_CODEPAGEINFO</a> structure to beginning of the command string.</p>

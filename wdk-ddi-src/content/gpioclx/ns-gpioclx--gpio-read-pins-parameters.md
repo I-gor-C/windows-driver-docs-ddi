@@ -59,37 +59,37 @@ typedef struct _GPIO_READ_PINS_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>BankId</b>
+### -field BankId
 
 <dd>
 <p>The identifier for the bank of GPIO pins that contains the pins to read. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.</p>
 </dd>
 
-### -field <b>PinNumberTable</b>
+### -field PinNumberTable
 
 <dd>
 <p>A pointer to an array of bank-relative PIN_NUMBER values. Each array element specifies the number of a GPIO pin to read from. If this bank has N pins, the pins are numbered 0 to N–1. The number of elements in this array is specified by the <b>PinCount</b> member.</p>
 </dd>
 
-### -field <b>PinCount</b>
+### -field PinCount
 
 <dd>
 <p>The number of elements in the <b>PinNumberTable</b> array.</p>
 </dd>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>A pointer to a buffer to hold the values that the GPIO controller driver reads from the GPIO pins that are specified by the <b>PinNumberTable</b> array. Array element 0 specifies the GPIO pin whose value is saved to bit 0 (the least significant bit) in the buffer, array element 1 specifies the GPIO pin whose value is saved to bit 1 in the buffer, and so on.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A set of flags to control the GPIO pin read operation. If the <b>WriteConfiguredPins</b> flag bit is set, the GPIO controller driver can read from a GPIO pin that is configured for write operations.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>

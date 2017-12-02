@@ -61,31 +61,31 @@ typedef struct _D3DHAL_DP2BUFFERBLT {
 ## -struct-fields
 <dl>
 
-### -field <b>dwDDDestSurface</b>
+### -field dwDDDestSurface
 
 <dd>
 <p>Specifies the handle to the destination vertex or index buffer.</p>
 </dd>
 
-### -field <b>dwDDSrcSurface</b>
+### -field dwDDSrcSurface
 
 <dd>
 <p>Specifies the handle to the source vertex or index buffer.</p>
 </dd>
 
-### -field <b>dwOffset</b>
+### -field dwOffset
 
 <dd>
 <p>Specifies the offset, in bytes, of the destination buffer the copy should be directed into.</p>
 </dd>
 
-### -field <b>rSrc</b>
+### -field rSrc
 
 <dd>
 <p>Specifies what range of the source buffer should be copied. This is a D3DRANGE structure, which is described in the Microsoft Windows SDK documentation, and contains a UINT offset in bytes and a UINT size in bytes.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Unused.</p>

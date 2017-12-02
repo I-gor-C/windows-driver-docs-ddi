@@ -58,19 +58,19 @@ typedef struct _CREATE_DISK {
 ## -struct-fields
 <dl>
 
-### -field <b>PartitionStyle</b>
+### -field PartitionStyle
 
 <dd>
 <p>Takes a <a href="storage.partition_style">PARTITION_STYLE</a> enumerated value that specifies the type of partition table to use when formatting the disk.</p>
 </dd>
 
-### -field <b>Mbr</b>
+### -field Mbr
 
 <dd>
 <p>Contains the signature used to initialize an MBR-style disk partition for the first time. This member is valid when <b>PartitionStyle</b> is PARTITION_STYLE_MBR. For more information, see <a href="..\ntdddisk\ns-ntdddisk--create-disk-mbr.md">CREATE_DISK_MBR</a>.</p>
 </dd>
 
-### -field <b>Gpt</b>
+### -field Gpt
 
 <dd>
 <p>Contains data used to initialize a GPT-style disk partition for the first time. This member is valid when <b>PartitionStyle</b> is PARTITION_STYLE_GPT. For more information, see <a href="..\ntdddisk\ns-ntdddisk--create-disk-gpt.md">CREATE_DISK_GPT</a>. </p>

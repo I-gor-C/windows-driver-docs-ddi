@@ -58,13 +58,13 @@ VOID APIENTRY RelocateDeviceFuncs(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pDeviceFunctions</i> [in]
+### -param pDeviceFunctions [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-devicefuncs.md">D3D10DDI_DEVICEFUNCS</a> structure that contains pointers to the functions of the user-mode display driver. </p>

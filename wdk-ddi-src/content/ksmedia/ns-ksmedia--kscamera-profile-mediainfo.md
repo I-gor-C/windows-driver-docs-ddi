@@ -66,20 +66,20 @@ typedef struct _KSCAMERA_PROFILE_MEDIAINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Resolution</b>
+### -field Resolution
 
 <dd>
 <p>The X (horizontal) and Y (vertical) frame size in pixels.</p>
 </dd>
 
-### -field <b>MaxFrameRate</b>
+### -field MaxFrameRate
 
 <dd>
 <p>The numerator/denominator ratio of frame rate (for example, 30 / 1 = 30fps).  This frame rate represents the maximum frame rate of the specified resolution under ideal lighting conditions.  Actual frame rate may be lower than this value.</p>
 <p>For photo media information, if photo sequence cannot be enabled because of hardware constraints for the given photo resolution, the frame rate must be set to 0 (numerator=0, denominator=0).  This will inform the application layer that photo sequence control will be rejected by the driver when that particular photo media type is selected.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The  bitwise OR of one or more of the following flags:</p>
@@ -97,25 +97,25 @@ typedef struct _KSCAMERA_PROFILE_MEDIAINFO {
 </ul>
 </dd>
 
-### -field <b>Data0</b>
+### -field Data0
 
 <dd>
 <p>Reserved. Must be set to 0.</p>
 </dd>
 
-### -field <b>Data1</b>
+### -field Data1
 
 <dd>
 <p>Reserved. Must be set to 0.</p>
 </dd>
 
-### -field <b>Data2</b>
+### -field Data2
 
 <dd>
 <p>Reserved. Must be set to 0.</p>
 </dd>
 
-### -field <b>Data3</b>
+### -field Data3
 
 <dd>
 <p>Reserved. Must be set to 0.</p>

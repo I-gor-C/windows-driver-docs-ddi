@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>This structure is used by the <a href="buses._hub_info_from_parent">HUB_INFO_FROM_PARENT</a> structure to get hub information from the parent.</p>
+<p>This structure is used by the <a href="..\ucxroothub\ns-ucxroothub--hub-info-from-parent.md">HUB_INFO_FROM_PARENT</a> structure to get hub information from the parent.</p>
 
 
 ## -syntax
@@ -59,19 +59,19 @@ typedef union _PARENT_HUB_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>AsUlong32</b>
+### -field AsUlong32
 
 <dd>
 <p>The size of structure represented as a LONG (32-bit) value.</p>
 </dd>
 
-### -field <b>DisableLpmForAllDownstreamDevices</b>
+### -field DisableLpmForAllDownstreamDevices
 
 <dd>
 <p>Indicates that all devices behind the hub must be disabled.</p>
 </dd>
 
-### -field <b>HubIsHighSpeedCapable</b>
+### -field HubIsHighSpeedCapable
 
 <dd>
 <p>Indicates that the hub is high-speed capable.</p>
@@ -98,7 +98,7 @@ typedef union _PARENT_HUB_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._hub_info_from_parent">HUB_INFO_FROM_PARENT</a>
+<a href="..\ucxroothub\ns-ucxroothub--hub-info-from-parent.md">HUB_INFO_FROM_PARENT</a>
 </dt>
 </dl>
 <p> </p>

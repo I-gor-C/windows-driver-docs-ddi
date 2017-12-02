@@ -7,7 +7,7 @@ old-location: ifsk\rxdispatchtoworkerthread.htm
 old-project: ifsk
 ms.assetid: 426d28fa-abfe-44d9-9b15-119f92367b40
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxDispatchToWorkerThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,32 +58,32 @@ NTSTATUS RxDispatchToWorkerThread(
 ## -parameters
 <dl>
 
-### -param <i>pMRxDeviceObject</i> [in]
+### -param pMRxDeviceObject [in]
 
 <dd>
 <p>A pointer to the device object of the corresponding network mini-redirector driver.</p>
 </dd>
 
-### -param <i>WorkQueueType</i> [in]
+### -param WorkQueueType [in]
 
 <dd>
 <p>The type of the work queue representing the priority of the task. The <i>WorkQueueType</i> parameter can be one of can be one of the following enumerations for WORK_QUEUE_TYPE:</p>
 <p></p>
 <dl>
 
-### -param <a id="CriticalWorkQueue"></a><a id="criticalworkqueue"></a><a id="CRITICALWORKQUEUE"></a>CriticalWorkQueue
+### -param CriticalWorkQueue
 
 <dd>
 <p>Insert the WORK_QUEUE_ITEM into the queue from which a system thread with a real-time priority attribute will process the work item.</p>
 </dd>
 
-### -param <a id="DelayedWorkQueue"></a><a id="delayedworkqueue"></a><a id="DELAYEDWORKQUEUE"></a>DelayedWorkQueue
+### -param DelayedWorkQueue
 
 <dd>
 <p>Insert the WORK_QUEUE_ITEM into the queue from which a system thread with a variable priority attribute will process the work item.</p>
 </dd>
 
-### -param <a id="HyperCriticalWorkQueue"></a><a id="hypercriticalworkqueue"></a><a id="HYPERCRITICALWORKQUEUE"></a>HyperCriticalWorkQueue
+### -param HyperCriticalWorkQueue
 
 <dd>
 <p>Insert the WORK_QUEUE_ITEM into the queue from which a system thread will process the work item so that the routine to be invoked is not blocked.</p>
@@ -91,13 +91,13 @@ NTSTATUS RxDispatchToWorkerThread(
 </dl>
 </dd>
 
-### -param <i>Routine</i> [in]
+### -param Routine [in]
 
 <dd>
 <p>A pointer to the routine to be invoked.</p>
 </dd>
 
-### -param <i>pContext</i> [in]
+### -param pContext [in]
 
 <dd>
 <p>A pointer to a context parameter associated with the work item to complete that is passed to the driver.</p>
@@ -169,4 +169,4 @@ NTSTATUS RxDispatchToWorkerThread(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxDispatchToWorkerThread routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxDispatchToWorkerThread routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

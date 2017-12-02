@@ -57,13 +57,13 @@ typedef struct _MS_SMHBA_FC_PHY {
 ## -struct-fields
 <dl>
 
-### -field <b>PhySupportSpeed</b>
+### -field PhySupportSpeed
 
 <dd>
 <p>The signaling bit rates at which the port can operate. For a list of the values that this member supports, see PhySpeed.</p>
 </dd>
 
-### -field <b>PhySpeed</b>
+### -field PhySpeed
 
 <dd>
 <p>The signaling bit rates at which PortWWN is currently operating. This member must have one of the values in the following table.</p>
@@ -128,7 +128,7 @@ typedef struct _MS_SMHBA_FC_PHY {
 <p> </p>
 </dd>
 
-### -field <b>PhyType</b>
+### -field PhyType
 
 <dd>
 <p>The port type. This member must have one of the values in the following table.</p>
@@ -233,7 +233,7 @@ typedef struct _MS_SMHBA_FC_PHY {
 <p> </p>
 </dd>
 
-### -field <b>MaxFrameSize</b>
+### -field MaxFrameSize
 
 <dd>
 <p>The maximum frame size, in bytes, that is supported by PortWWN.</p>

@@ -59,7 +59,7 @@ _Check_return_ HRESULT APIENTRY* pfnFlush1(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).
@@ -67,7 +67,7 @@ _Check_return_ HRESULT APIENTRY* pfnFlush1(
 </p>
 </dd>
 
-### -param <i>FlushFlags</i> 
+### -param FlushFlags 
 
 <dd>
 <p>A value from the <a href="..\d3dumddi\ne-d3dumddi-d3dddi-flush-flags.md">D3DDDI_FLUSH_FLAGS</a> enumeration that indicates whether the driver should continue to submit command buffers if there have been no new commands.</p>

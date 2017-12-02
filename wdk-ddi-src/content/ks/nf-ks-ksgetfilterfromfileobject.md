@@ -54,7 +54,7 @@ PKSFILTER __inline KsGetFilterFromFileObject(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a> for which to return the associated AVStream filter object.</p>

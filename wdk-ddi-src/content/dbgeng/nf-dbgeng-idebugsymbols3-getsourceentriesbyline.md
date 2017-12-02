@@ -7,7 +7,7 @@ old-location: debugger\getsourceentriesbyline.htm
 old-project: debugger
 ms.assetid: 02ab63fe-0c59-480c-a333-a9b14d83ad68
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSymbols3, GetSourceEntriesByLine, IDebugSymbols3::GetSourceEntriesByLine
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ HRESULT GetSourceEntriesByLine(
 ## -parameters
 <dl>
 
-### -param <i>Line</i> [in]
+### -param Line [in]
 
 <dd>
 <p>Specifies the line in the source file for which to query.  The number for the first line is <b>1</b>.</p>
 </dd>
 
-### -param <i>File</i> [in]
+### -param File [in]
 
 <dd>
 <p>Specifies the source file.  The symbols for each module in the target are queried for this file.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies bit flags that control the behavior of this method.  <i>Flags</i> can be any combination of values from the following table.</p>
@@ -118,19 +118,19 @@ HRESULT GetSourceEntriesByLine(
 <p>To use the default set of flags, set <i>Flags</i> to DEBUG_GSEL_DEFAULT.  This has all the flags in the previous table turned off.</p>
 </dd>
 
-### -param <i>Entries</i> [out, optional]
+### -param Entries [out, optional]
 
 <dd>
 <p>Receives the locations in the target's memory that correspond to the source lines queried for.  Each entry in this array is of type <a href="..\dbgeng\ns-dbgeng--debug-symbol-source-entry.md">DEBUG_SYMBOL_SOURCE_ENTRY</a> and contains the source line number along with a location in the target's memory.</p>
 </dd>
 
-### -param <i>EntriesCount</i> [in]
+### -param EntriesCount [in]
 
 <dd>
 <p>Specifies the number of entries in the <i>Entries</i> array.</p>
 </dd>
 
-### -param <i>EntriesAvailable</i> [out, optional]
+### -param EntriesAvailable [out, optional]
 
 <dd>
 <p>Receives the number of locations that match the query found in the target's memory.</p>
@@ -138,7 +138,7 @@ HRESULT GetSourceEntriesByLine(
 </dl>
 
 ## -returns
-<p>These methods can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>These methods can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>S_FALSE</b></dt>
@@ -191,4 +191,4 @@ HRESULT GetSourceEntriesByLine(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetSourceEntriesByLine method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetSourceEntriesByLine method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

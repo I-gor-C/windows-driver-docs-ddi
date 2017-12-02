@@ -55,7 +55,7 @@ VOID KeRevertToUserGroupAffinityThread(
 ## -parameters
 <dl>
 
-### -param <i>PreviousAffinity</i> [in]
+### -param PreviousAffinity [in]
 
 <dd>
 <p>A pointer to the group affinity to restore. This parameter points to a <a href="..\miniport\ns-miniport--group-affinity.md">GROUP_AFFINITY</a> structure that contains a group number and an affinity mask. The affinity mask specifies the set of logical processors that the user thread can run on. </p>

@@ -54,7 +54,7 @@ typedef struct D3D12DDI_RESOURCE_UAV_BARRIER {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>The handle of resource.</p>

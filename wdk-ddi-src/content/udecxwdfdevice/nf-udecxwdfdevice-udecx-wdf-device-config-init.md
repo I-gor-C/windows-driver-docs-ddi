@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="buses.udecx_wdf_device_config">UDECX_WDF_DEVICE_CONFIG</a> structure.</p>
+<p>Initializes a <a href="..\udecxwdfdevice\ns-udecxwdfdevice--udecx-wdf-device-config.md">UDECX_WDF_DEVICE_CONFIG</a> structure.</p>
 
 
 ## -syntax
@@ -56,16 +56,16 @@ FORCEINLINE void UDECX_WDF_DEVICE_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
-<p>A pointer to a <a href="buses.udecx_wdf_device_config">UDECX_WDF_DEVICE_CONFIG</a> structure to initialize.</p>
+<p>A pointer to a <a href="..\udecxwdfdevice\ns-udecxwdfdevice--udecx-wdf-device-config.md">UDECX_WDF_DEVICE_CONFIG</a> structure to initialize.</p>
 </dd>
 
-### -param <i>EvtUdecxWdfDeviceQueryUsbCapability</i> [in]
+### -param EvtUdecxWdfDeviceQueryUsbCapability [in]
 
 <dd>
-<p>A pointer to an <a href="buses.evt_udecx_wdf_device_query_usb_capability">EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY</a> callback function.</p>
+<p>A pointer to an <a href="..\udecxwdfdevice\nc-udecxwdfdevice-evt-udecx-wdf-device-query-usb-capability.md">EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY</a> callback function.</p>
 </dd>
 </dl>
 
@@ -134,10 +134,10 @@ FORCEINLINE void UDECX_WDF_DEVICE_CONFIG_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecx_wdf_device_config">UDECX_WDF_DEVICE_CONFIG</a>
+<a href="..\udecxwdfdevice\ns-udecxwdfdevice--udecx-wdf-device-config.md">UDECX_WDF_DEVICE_CONFIG</a>
 </dt>
 <dt>
-<a href="buses.udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a>
+<a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation.md">UdecxWdfDeviceAddUsbDeviceEmulation</a>
 </dt>
 </dl>
 <p> </p>

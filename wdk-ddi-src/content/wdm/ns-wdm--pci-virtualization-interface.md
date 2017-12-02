@@ -66,67 +66,67 @@ typedef struct _PCI_VIRTUALIZATION_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The driver-defined interface version.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to interface-specific context information.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to an <a href="kernel.interfacereference">InterfaceReference</a> routine that increments the interface's reference count.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to an <a href="kernel.interfacedereference">InterfaceDereference</a> routine that decrements the interface's reference count.</p>
 </dd>
 
-### -field <b>SetVirtualFunctionData</b>
+### -field SetVirtualFunctionData
 
 <dd>
 <p>A pointer to a <a href="..\wdm\nc-wdm-set-virtual-device-data.md">SetVirtualFunctionData</a> routine that writes data to the PCIe configuration space of an SR-IOV device's VF.</p>
 </dd>
 
-### -field <b>GetVirtualFunctionData</b>
+### -field GetVirtualFunctionData
 
 <dd>
 <p>A pointer to a <a href="..\wdm\nc-wdm-get-virtual-device-data.md">GetVirtualFunctionData</a> routine that reads data from the PCIe configuration space of an SR-IOV device's VF.</p>
 </dd>
 
-### -field <b>GetLocation</b>
+### -field GetLocation
 
 <dd>
 <p>A pointer to a <a href="..\wdm\nc-wdm-get-virtual-device-location.md">GetLocation</a> routine that provides information about the current device location of a VF  in the PCIe hierarchy. This information is necessary for a virtualization system that is using an I/O memory management unit (IOMMU) to route traffic to or from the device.</p>
 </dd>
 
-### -field <b>GetResources</b>
+### -field GetResources
 
 <dd>
 <p>A pointer to a <a href="..\wdm\nc-wdm-get-virtual-device-resources.md">GetResources</a> routine that provides information about the resources that are available for virtualization on an SR-IOV device.</p>
 </dd>
 
-### -field <b>EnableVirtualization</b>
+### -field EnableVirtualization
 
 <dd>
 <p>A pointer to an <a href="..\wdm\nc-wdm-enable-virtualization.md">EnableVirtualization</a> routine that enables or disables virtualization on an SR-IOV device.</p>
 </dd>
 
-### -field <b>GetVirtualFunctionProbedBars</b>
+### -field GetVirtualFunctionProbedBars
 
 <dd>
 <p>A pointer to a <a href="..\wdm\nc-wdm-get-virtual-function-probed-bars.md">GetVirtualFunctionProbedBars</a> routine that allows a non-privileged Hyper-V virtual machine (VM) to determine what would be read from the PCIe Base Address Registers (BARs) of a VF after a query by the PCI bus driver. The PCI driver performs this query to determine the memory or I/O address space that the device requires.</p>

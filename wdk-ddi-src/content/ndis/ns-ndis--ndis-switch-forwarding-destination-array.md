@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_forwarding_destination_array.htm
 old-project: netvista
 ms.assetid: f48b3b5f-000e-4e57-87b7-52ce542773f7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ typedef struct _NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -71,7 +71,7 @@ typedef struct _NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY_REVISION_1"></a><a id="ndis_switch_forwarding_destination_array_revision_1"></a>NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY_REVISION_1
+### -field NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30 and later.</p>
@@ -80,20 +80,20 @@ typedef struct _NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY {
 </dl>
 </dd>
 
-### -field <b>ElementSize</b>
+### -field ElementSize
 
 <dd>
 <p>A ULONG value that specifies the size, in bytes, of each <a href="..\ndis\ns-ndis--ndis-switch-port-destination.md">NDIS_SWITCH_PORT_DESTINATION</a> element that follows the <b>NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</b> structure. </p>
 </dd>
 
-### -field <b>NumElements</b>
+### -field NumElements
 
 <dd>
 <p>A ULONG value that specifies the total number of <a href="..\ndis\ns-ndis--ndis-switch-port-destination.md">NDIS_SWITCH_PORT_DESTINATION</a> elements in the <b>NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</b> structure. </p>
 <p>The value of the <b>NumElements</b> member specifies the number of currently used <a href="..\ndis\ns-ndis--ndis-switch-port-destination.md">NDIS_SWITCH_PORT_DESTINATION</a> elements (as specified by the <b>NumDestinations</b> member) plus the number of elements that are available for new destination ports. The number of unused <b>NDIS_SWITCH_PORT_DESTINATION</b> elements in the <b>NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</b> structure is calculated by (<b>NumElements</b> - <b>NumDestinations</b>).</p>
 </dd>
 
-### -field <b>NumDestinations</b>
+### -field NumDestinations
 
 <dd>
 <p>A ULONG value that specifies the number of <a href="..\ndis\ns-ndis--ndis-switch-port-destination.md">NDIS_SWITCH_PORT_DESTINATION</a> elements in the <b>NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</b> structure that specify port destinations. </p>
@@ -101,7 +101,7 @@ typedef struct _NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY {
 <div> </div>
 </dd>
 
-### -field <b>FirstElement</b>
+### -field FirstElement
 
 <dd>
 <p>A pointer to the first <a href="..\ndis\ns-ndis--ndis-switch-port-destination.md">NDIS_SWITCH_PORT_DESTINATION</a> element in the buffer that contains the <b>NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</b> structure and all its elements.</p>
@@ -115,7 +115,7 @@ typedef struct _NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY {
 
 <p>The extensible switch extension calls the <a href="netvista.GetNetBufferListDestinations">GetNetBufferListDestinations</a> function to obtain the array of port destinations for a packet. <i>GetNetBufferListDestinations</i> returns a pointer to the <b>NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</b> structure in the <i>Destinations</i> parameter.</p>
 
-<p>For more information, see <a href="NULL">Querying a Packet's Extensible Switch Destination Port Data</a>.</p>
+<p>For more information, see <a href="netvista.querying_a_packet_s_extensible_switch_destination_port_data">Querying a Packet's Extensible Switch Destination Port Data</a>.</p>
 
 <p>Add or modify the destination ports for the packet. </p>
 
@@ -127,7 +127,7 @@ typedef struct _NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY {
 
 <p>If the extension adds or modifies port destinations, it must call <a href="netvista.UpdateNetBufferListDestinations">UpdateNetBufferListDestinations</a> to commit the changes to the destination ports to the packet's OOB data in the <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 
-<p>For more information, see <a href="NULL">Managing Hyper-V Extensible Switch Destination Port Data</a>.</p>
+<p>For more information, see <a href="netvista.managing_hyper_v_extensible_switch_destination_port_data">Managing Hyper-V Extensible Switch Destination Port Data</a>.</p>
 
 <p>Extensible switch extensions can use the <a href="https://msdn.microsoft.com/library/windows/hardware/hh598225">NDIS_SWITCH_PORT_DESTINATION_AT_ARRAY_INDEX</a> macro to access <a href="..\ndis\ns-ndis--ndis-switch-port-destination.md">NDIS_SWITCH_PORT_DESTINATION</a> elements in an <b>NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</b> array.</p>
 
@@ -157,19 +157,19 @@ typedef struct _NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY {
 <dl>
 <dt><b></b></dt>
 <dt>
-<a href="NULL">Adding Extensible Switch Destination Port Data to a Packet</a>
+<a href="netvista.adding_extensible_switch_destination_port_data_to_a_packet">Adding Extensible Switch Destination Port Data to a Packet</a>
 </dt>
 <dt>
-<a href="NULL">Excluding Packet Delivery to Extensible Switch Destination Ports</a>
+<a href="netvista.excluding_packet_delivery_to_extensible_switch_destination_ports">Excluding Packet Delivery to Extensible Switch Destination Ports</a>
 </dt>
 <dt>
-<a href="NULL">Forwarding Extensions</a>
+<a href="netvista.forwarding_extensions">Forwarding Extensions</a>
 </dt>
 <dt>
-<a href="NULL">Hybrid Forwarding</a>
+<a href="netvista.hybrid_forwarding">Hybrid Forwarding</a>
 </dt>
 <dt>
-<a href="NULL">Overview of the Hyper-V Extensible Switch</a>
+<a href="netvista.overview_of_the_hyper_v_extensible_switch">Overview of the Hyper-V Extensible Switch</a>
 </dt>
 <dt>
 <a href="netvista.GetNetBufferListDestinations">GetNetBufferListDestinations</a>
@@ -192,4 +192,4 @@ typedef struct _NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

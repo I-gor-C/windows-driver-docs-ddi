@@ -56,19 +56,19 @@ typedef struct _AddTarget_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>HbaPortWWN</b>
+### -field HbaPortWWN
 
 <dd>
 <p>Contains the worldwide name of the local port whose events the WMI client will receive. </p>
 </dd>
 
-### -field <b>DiscoveredPortWWN</b>
+### -field DiscoveredPortWWN
 
 <dd>
 <p>Contains a worldwide name that specifies the discovered target whose events the WMI client will receive.</p>
 </dd>
 
-### -field <b>AllTargets</b>
+### -field AllTargets
 
 <dd>
 <p>Indicates the scope of the target events to report. If this member is zero, the WMI client will receive events associated with the port that is indicated by <i>DiscoveredPortWWN</i>. If this member is nonzero, the WMI client will all events associated with all currently discovered targets as well as targets that are discovered in the future. </p>

@@ -56,13 +56,13 @@ ULONG StorPortGetCurrentProcessorNumber(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>ProcNumber</i> [out]
+### -param ProcNumber [out]
 
 <dd>
 <p>A pointer to a processor number structure that holds the return data.</p>

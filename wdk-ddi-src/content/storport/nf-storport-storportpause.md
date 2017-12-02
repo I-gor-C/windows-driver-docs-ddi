@@ -56,13 +56,13 @@ STORPORT_API BOOLEAN StorPortPause(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the hardware device extension of the adapter to pause. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device.</p>
 </dd>
 
-### -param <i>TimeOut</i> [in]
+### -param TimeOut [in]
 
 <dd>
 <p>Specifies the interval of time, in seconds, that the adapter is to be paused. </p>

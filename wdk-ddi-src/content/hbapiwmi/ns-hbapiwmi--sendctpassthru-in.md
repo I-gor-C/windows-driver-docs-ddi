@@ -56,19 +56,19 @@ typedef struct _SendCTPassThru_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>Contains a worldwide name for the HBA through which the target is accessed. </p>
 </dd>
 
-### -field <b>RequestBufferCount</b>
+### -field RequestBufferCount
 
 <dd>
 <p>Indicates the size in bytes of the buffer that will hold the results of the common transport command. </p>
 </dd>
 
-### -field <b>RequestBuffer</b>
+### -field RequestBuffer
 
 <dd>
 <p>Contains the results of the common transport command. </p>

@@ -55,13 +55,13 @@ typedef struct _BDA_TEMPLATE_PIN_JOINT {
 ## -struct-fields
 <dl>
 
-### -field <b>uliTemplateConnection</b>
+### -field uliTemplateConnection
 
 <dd>
 <p>Index of an element in a array of template connections (KSTOPOLOGY_CONNECTION or BDA_TEMPLATE_CONNECTION array) that represents the joint.</p>
 </dd>
 
-### -field <b>ulcInstancesMax</b>
+### -field ulcInstancesMax
 
 <dd>
 <p>Maximum number of possible instances of the joint in the template topology.</p>

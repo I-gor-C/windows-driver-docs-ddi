@@ -57,25 +57,25 @@ typedef enum _DXGK_DISPLAY_TECHNOLOGY {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_DT_INVALID"></a><a id="dxgk_dt_invalid"></a><b>DXGK_DT_INVALID</b>
+### -field DXGK_DT_INVALID
 
 <dd>
 <p>Invalid type.</p>
 </dd>
 
-### -field <a id="DXGK_DT_OTHER"></a><a id="dxgk_dt_other"></a><b>DXGK_DT_OTHER</b>
+### -field DXGK_DT_OTHER
 
 <dd>
 <p>A display technology which does not match one of the defined, valid types.</p>
 </dd>
 
-### -field <a id="DXGK_DT_LCD"></a><a id="dxgk_dt_lcd"></a><b>DXGK_DT_LCD</b>
+### -field DXGK_DT_LCD
 
 <dd>
 <p>A display using an LCD panel.</p>
 </dd>
 
-### -field <a id="DXGK_DT_OLED"></a><a id="dxgk_dt_oled"></a><b>DXGK_DT_OLED</b>
+### -field DXGK_DT_OLED
 
 <dd>
 <p>A display using an OLED panel.</p>

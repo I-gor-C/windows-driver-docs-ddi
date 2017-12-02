@@ -57,19 +57,19 @@ BOOLEAN RtlValidRelativeSecurityDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>SecurityDescriptorInput</i> [in]
+### -param SecurityDescriptorInput [in]
 
 <dd>
 <p>A pointer to the buffer that contains the security descriptor in self-relative format. The buffer must begin with a <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> structure, which is followed by the rest of the security descriptor data.</p>
 </dd>
 
-### -param <i>SecurityDescriptorLength</i> [in]
+### -param SecurityDescriptorLength [in]
 
 <dd>
 <p>The size of the <i>SecurityDescriptorInput</i> structure. </p>
 </dd>
 
-### -param <i>RequiredInformation</i> [in]
+### -param RequiredInformation [in]
 
 <dd>
 <p>A <a href="ifsk.security_information">SECURITY_INFORMATION</a> value that specifies the information that is required to be contained in the security descriptor. </p>

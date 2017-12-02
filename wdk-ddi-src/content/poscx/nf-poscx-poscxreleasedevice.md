@@ -58,13 +58,13 @@ NTSTATUS PosCxReleaseDevice(
 ## -parameters
 <dl>
 
-### -param <i>device</i> [in]
+### -param device [in]
 
 <dd>
 <p>A handle to a framework device object that represents the device.</p>
 </dd>
 
-### -param <i>fileObject</i> [in]
+### -param fileObject [in]
 
 <dd>
 <p>      A handle to a framework file object that identifies the caller.</p>

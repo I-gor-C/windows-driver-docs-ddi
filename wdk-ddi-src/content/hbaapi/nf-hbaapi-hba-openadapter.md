@@ -54,7 +54,7 @@ HBA_HANDLE HBA_API HBA_OpenAdapter(
 ## -parameters
 <dl>
 
-### -param <i>SniaAdapterName</i> [in]
+### -param SniaAdapterName [in]
 
 <dd>
 <p>Indicates the name of the HBA to open. </p>

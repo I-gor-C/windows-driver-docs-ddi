@@ -56,19 +56,19 @@ typedef struct _INTERNAL_I8042_START_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size, in bytes, of an INTERNAL_I8042_START_INFORMATION structure.</p>
 </dd>
 
-### -field <b>InterruptObject</b>
+### -field InterruptObject
 
 <dd>
 <p>Pointer to an interrupt object. I8042prt supplies the interrupt object.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

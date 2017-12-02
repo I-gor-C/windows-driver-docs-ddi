@@ -56,13 +56,13 @@ HRESULT SetBytes(
 ## -parameters
 <dl>
 
-### -param <i>bstrName</i> [in]
+### -param bstrName [in]
 
 <dd>
 <p>The array to write to.</p>
 </dd>
 
-### -param <i>pdispArray</i> [in]
+### -param pdispArray [in]
 
 <dd>
 <p>The JavaScript array to write.</p>

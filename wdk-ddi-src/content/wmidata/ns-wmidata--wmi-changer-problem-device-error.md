@@ -55,7 +55,7 @@ typedef struct _WMI_CHANGER_PROBLEM_DEVICE_ERROR {
 ## -struct-fields
 <dl>
 
-### -field <b>ChangerProblemType</b>
+### -field ChangerProblemType
 
 <dd>
 <p>Contains one of the enumeration values defined for the <a href="..\ntddchgr\ne-ntddchgr--changer-device-problem-type.md">CHANGER_DEVICE_PROBLEM_TYPE</a> enumeration data type. The minidriver sets <b>ChangerProblemType</b> to the appropriate enumerator value. </p>

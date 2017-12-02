@@ -7,7 +7,7 @@ old-location: netvista\rilopenuicclogicalchannelinfo.htm
 old-project: netvista
 ms.assetid: 5001f623-5b53-4ae7-9b5b-dc3bd5bdcc70
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILOPENUICCLOGICALCHANNELINFO, RILOPENUICCLOGICALCHANNELINFO, *LPRILOPENUICCLOGICALCHANNELINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef struct _RILOPENUICCLOGICALCHANNELINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwChannelId</b>
+### -field dwChannelId
 
 <dd></dd>
 
-### -field <b>dwSelectResponseLength</b>
+### -field dwSelectResponseLength
 
 <dd></dd>
 
-### -field <b>bSelectResponse</b>
+### -field bSelectResponse
 
 <dd></dd>
 </dl>

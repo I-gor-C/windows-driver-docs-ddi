@@ -59,37 +59,37 @@ NTSTATUS KsEnableEvent(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP with the enable request being handled. The file object associated with the IRP is stored with the event for later comparison when disabling the event.</p>
 </dd>
 
-### -param <i>EventSetsCount</i> [in]
+### -param EventSetsCount [in]
 
 <dd>
 <p>Indicates the number of event set structures being passed.</p>
 </dd>
 
-### -param <i>EventSet</i> [in]
+### -param EventSet [in]
 
 <dd>
 <p>Specifies a pointer to the list of event set information.</p>
 </dd>
 
-### -param <i>EventsList</i> [in, out]
+### -param EventsList [in, out]
 
 <dd>
 <p>If the enabling event's KSEVENT_SET.AddHandler for the event set is <b>NULL</b>, it must point to the head of the list of KSEVENT_ENTRY items on which the event is to be added. This function assumes a single list for at least a subset of events.</p>
 </dd>
 
-### -param <i>EventsFlags</i> [in, optional]
+### -param EventsFlags [in, optional]
 
 <dd>
 <p>Specifies <a href="..\ks\ne-ks-ksevents-locktype.md">KSEVENTS_LOCKTYPE</a> flags specifying the type of exclusion lock to be used in accessing the event list, if any. If no flag is set, then no lock is taken. If a handler is specified already, this parameter is ignored.</p>
 </dd>
 
-### -param <i>EventsLock</i> [in, optional]
+### -param EventsLock [in, optional]
 
 <dd>
 <p>If the KSEVENT_SET.AddHandler for the event set containing the event being enabled is <b>NULL</b>, then this is used to synchronize access to the list. This value can be <b>NULL</b> if no flag is set in <i>EventsFlags</i>.</p>

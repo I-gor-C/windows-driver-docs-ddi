@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>A KSPROPERTY structure that the client initializes appropriately prior to calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff537385">KSPROPERTY_RTAUDIO_REGISTER_NOTIFICATION_EVENT</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff537387">KSPROPERTY_RTAUDIO_UNREGISTER_NOTIFICATION_EVENT</a>.</p>
 </dd>
 
-### -field <b>NotificationEvent</b>
+### -field NotificationEvent
 
 <dd>
 <p>Specifies a user-mode event handle to be registered or unregistered for event notifications.</p>

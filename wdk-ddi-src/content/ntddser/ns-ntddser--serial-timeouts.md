@@ -58,31 +58,31 @@ typedef struct _SERIAL_TIMEOUTS {
 ## -struct-fields
 <dl>
 
-### -field <b>ReadIntervalTimeout</b>
+### -field ReadIntervalTimeout
 
 <dd>
 <p>The maximum amount of time, in milliseconds, that is allowed between two consecutive bytes in a read operation. A read operation that exceeds this maximum times out. This maximum does not apply to the time interval that precedes the reading of the first byte. A value of zero indicates that interval time-outs are not used. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>ReadTotalTimeoutMultiplier</b>
+### -field ReadTotalTimeoutMultiplier
 
 <dd>
 <p>The maximum amount of time, in milliseconds, that is allowed per byte in a read operation. A read operation that exceeds this maximum times out. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>ReadTotalTimeoutConstant</b>
+### -field ReadTotalTimeoutConstant
 
 <dd>
 <p>The maximum amount of additional time, in milliseconds, that is allowed per read operation. A read operation that exceeds this maximum times out. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>WriteTotalTimeoutMultiplier</b>
+### -field WriteTotalTimeoutMultiplier
 
 <dd>
 <p>The maximum total time, in milliseconds, that is allowed per byte in a write operation. A write operation that exceeds this maximum times out. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>WriteTotalTimeoutConstant</b>
+### -field WriteTotalTimeoutConstant
 
 <dd>
 <p>The maximum amount of additional time, in milliseconds, that is allowed per write operation. A write operation that exceeds this maximum times out. For more information, see Remarks.</p>

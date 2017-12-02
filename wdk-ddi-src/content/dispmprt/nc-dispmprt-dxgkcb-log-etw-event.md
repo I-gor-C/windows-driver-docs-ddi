@@ -60,25 +60,25 @@ VOID DxgkCbLogEtwEvent(
 ## -parameters
 <dl>
 
-### -param <i>EventGuid</i> [in]
+### -param EventGuid [in]
 
 <dd>
 <p>A GUID that identifies the event to be logged.</p>
 </dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>A constant that specifies the event type. These constants  are defined in Evntrace.h and have the form of <b>EVENT_TRACE_TYPE_XX</b>.</p>
 </dd>
 
-### -param <i>EventBufferSize</i> [in]
+### -param EventBufferSize [in]
 
 <dd>
 <p>The size, in bytes, of the buffer pointed to by <i>EventBuffer</i>. There is a significant performance penalty if the buffer is larger than 256 bytes.</p>
 </dd>
 
-### -param <i>EventBuffer</i> [in]
+### -param EventBuffer [in]
 
 <dd>
 <p>A pointer to a buffer that contains the information to be logged.</p>

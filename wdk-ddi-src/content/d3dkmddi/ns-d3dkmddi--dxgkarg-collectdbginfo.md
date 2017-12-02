@@ -57,7 +57,7 @@ typedef struct _DXGKARG_COLLECTDBGINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Reason</b>
+### -field Reason
 
 <dd>
 <p>[in] The <a href="https://msdn.microsoft.com/DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB">bug-check code</a> for which to return debug information in the buffer that <b>pBuffer</b> points to. These are possible values:</p>
@@ -69,7 +69,7 @@ typedef struct _DXGKARG_COLLECTDBGINFO {
 <tr>
 <td width="40%"><a id="VIDEO_TDR_TIMEOUT_DETECTED"></a><a id="video_tdr_timeout_detected"></a><dl>
 
-### -field <b>VIDEO_TDR_TIMEOUT_DETECTED</b>
+### -field VIDEO_TDR_TIMEOUT_DETECTED
 
 
 ### -field 0x117
@@ -83,7 +83,7 @@ typedef struct _DXGKARG_COLLECTDBGINFO {
 <tr>
 <td width="40%"><a id="VIDEO_ENGINE_TIMEOUT_DETECTED"></a><a id="video_engine_timeout_detected"></a><dl>
 
-### -field <b>VIDEO_ENGINE_TIMEOUT_DETECTED</b>
+### -field VIDEO_ENGINE_TIMEOUT_DETECTED
 
 
 ### -field 0x141
@@ -99,19 +99,19 @@ typedef struct _DXGKARG_COLLECTDBGINFO {
 <p> </p>
 </dd>
 
-### -field <b>pBuffer</b>
+### -field pBuffer
 
 <dd>
 <p>[out] A pointer to a buffer that receives the debug information that <b>Reason</b> specifies.</p>
 </dd>
 
-### -field <b>BufferSize</b>
+### -field BufferSize
 
 <dd>
 <p>[in] The maximum size, in bytes, to copy to the buffer that <b>pBuffer</b> points to.</p>
 </dd>
 
-### -field <b>pExtension</b>
+### -field pExtension
 
 <dd>
 <p>[out] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-collectdbginfo-ext.md">DXGKARG_COLLECTDBGINFO_EXT</a> structure that is allocated by the operating system and that the driver optionally populates with debug extension information.</p>

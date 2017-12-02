@@ -54,7 +54,7 @@ typedef struct _FILE_ACCESS_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>AccessFlags</b>
+### -field AccessFlags
 
 <dd>
 <p>Flags that specify a set of access rights in the access mask of an access control entry. This member is a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>.</p>

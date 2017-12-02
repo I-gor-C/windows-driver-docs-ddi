@@ -57,19 +57,19 @@ KSDDKAPI HRESULT NTAPI KsCreateClock2(
 ## -parameters
 <dl>
 
-### -param <i>ConnectionHandle</i> [in]
+### -param ConnectionHandle [in]
 
 <dd>
 <p>Specifies the handle to the connection on which to create the clock.</p>
 </dd>
 
-### -param <i>ClockCreate</i> [in]
+### -param ClockCreate [in]
 
 <dd>
 <p>Specifies clock create parameters. This currently consists of a flag that must be set to zero.</p>
 </dd>
 
-### -param <i>ClockHandle</i> [out]
+### -param ClockHandle [out]
 
 <dd>
 <p>Specifies the new clock handle.</p>

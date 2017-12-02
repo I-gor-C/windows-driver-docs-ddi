@@ -7,7 +7,7 @@ old-location: netvista\ndis_object_header.htm
 old-project: netvista
 ms.assetid: 59d1a9b0-a4d0-4a24-aa2f-2167b0f53caa
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_OBJECT_HEADER, NDIS_OBJECT_HEADER, *PNDIS_OBJECT_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,14 +57,14 @@ typedef struct _NDIS_OBJECT_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of NDIS object that a structure describes. Use this member to identify the type of
      structure in a memory dump.</p>
 </dd>
 
-### -field <b>Revision</b>
+### -field Revision
 
 <dd>
 <p>The revision number of the structure. Every NDIS structure that has an NDIS_OBJECT_HEADER member
@@ -73,7 +73,7 @@ typedef struct _NDIS_OBJECT_HEADER {
      <b>Revision</b> member value at run time and use the appropriate version of the structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The total size, in bytes, of the NDIS object structure that includes the NDIS_OBJECT_HEADER

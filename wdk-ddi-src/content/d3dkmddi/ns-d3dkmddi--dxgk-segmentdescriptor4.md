@@ -63,25 +63,25 @@ typedef struct _DXGK_SEGMENTDESCRIPTOR4 {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Segment bit field flags</p>
 </dd>
 
-### -field <b>BaseAddress</b>
+### -field BaseAddress
 
 <dd>
 <p>The physical base address for the segment in the GPU.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of the segment in bytes.</p>
 </dd>
 
-### -field <b>CommitLimit</b>
+### -field CommitLimit
 
 <dd>
 <p>The maximum number of bytes that can be committed to this segment. </p>
@@ -89,25 +89,25 @@ typedef struct _DXGK_SEGMENTDESCRIPTOR4 {
 <div> </div>
 </dd>
 
-### -field <b>SystemMemoryEndAddress</b>
+### -field SystemMemoryEndAddress
 
 <dd>
 <p>For segments that are partially composed of system memory, all allocations ending after this address are purged during hibernate.</p>
 </dd>
 
-### -field <b>CpuTranslatedAddress</b>
+### -field CpuTranslatedAddress
 
 <dd>
 <p>If <b>Flags.SupportsCpuHostAperture</b>==<b>FALSE</b> and the segment is CPU visible, this will be the CPU physical base address of the segment.</p>
 </dd>
 
-### -field <b>CpuHostAperture</b>
+### -field CpuHostAperture
 
 <dd>
 <p>If <b>Flags.SupportsCpuHostAperture</b>==<b>TRUE</b>, this will have the CPU address and size of the <b>CPUHostAperture</b>.</p>
 </dd>
 
-### -field <b>NumInvalidMemoryRanges</b>
+### -field NumInvalidMemoryRanges
 
 <dd>
 <p>The number of invalid memory ranges in the segment. If this value is not zero, the kernel mode driver will be called with DdiQueryAdapterInfo(DXGKQAITYPE_SEGMENTMEMORYSTATE) to get information about invalid memory ranges.</p>

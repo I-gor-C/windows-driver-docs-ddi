@@ -113,43 +113,43 @@ typedef struct _PRINTIFI32 {
 ## -struct-fields
 <dl>
 
-### -field <b>cjThis</b>
+### -field cjThis
 
 <dd>
 <p>Specifies the size in bytes of this structure. The specified size includes any Unicode strings appended to the end of this structure, plus the size in bytes of the optional <a href="display.ifiextra">IFIEXTRA</a> structure.</p>
 </dd>
 
-### -field <b>cjIfiExtra</b>
+### -field cjIfiExtra
 
 <dd>
 <p>Specifies the size in bytes of the IFIEXTRA structure that follows this structure. A value of zero indicates that no IFIEXTRA structure is present.</p>
 </dd>
 
-### -field <b>dpwszFamilyName</b>
+### -field dpwszFamilyName
 
 <dd>
 <p>Specifies the offset in bytes to a null-terminated Unicode string containing the family name of the font (for example, "Times Roman"). Generally, this string immediately follows this structure. This string should be the same as the name recorded in the <b>lfFaceName</b> member of the Win32 LOGFONT structure.</p>
 </dd>
 
-### -field <b>dpwszStyleName</b>
+### -field dpwszStyleName
 
 <dd>
 <p>Specifies the offset in bytes to a null-terminated Unicode string describing the style of the font (for example, "Bold").</p>
 </dd>
 
-### -field <b>dpwszFaceName</b>
+### -field dpwszFaceName
 
 <dd>
 <p>Specifies the offset in bytes to a null-terminated Unicode string representing the unique and complete name of the font. The name contains the family and subfamily names of the font (for example, "Times New Roman Bold").</p>
 </dd>
 
-### -field <b>dpwszUniqueName</b>
+### -field dpwszUniqueName
 
 <dd>
 <p>Specifies the offset in bytes to a null-terminated Unicode string representing the unique identifier of the font (for example, "Monotype:Times New Roman:1990").</p>
 </dd>
 
-### -field <b>dpFontSim</b>
+### -field dpFontSim
 
 <dd>
 <p>Specifies the offset in bytes from the beginning of this structure to a <a href="display.fontsim">FONTSIM</a> structure that describes the simulations that the font supports. The driver should set this member to a nonzero value only if the font supports bold, italic, or bold italic simulations; otherwise, the driver should set this to zero.</p>
@@ -157,32 +157,32 @@ typedef struct _PRINTIFI32 {
 <p>The offsets in the <a href="display.fontsim">FONTSIM</a> structure are relative to the base of the FONTSIM structure.</p>
 </dd>
 
-### -field <b>lEmbedId</b>
+### -field lEmbedId
 
 <dd>
 <p>Specifies the Embedding ID of the font. This value is TrueType-specific and should be set to zero by all other font providers.</p>
 </dd>
 
-### -field <b>lItalicAngle</b>
+### -field lItalicAngle
 
 <dd>
 <p>Specifies the italic angle of the font. This value is TrueType-specific and should be set to zero by all other font providers.</p>
 </dd>
 
-### -field <b>lCharBias</b>
+### -field lCharBias
 
 <dd>
 <p>Specifies the character bias. This value is TrueType-specific and should be set to zero by all other font providers.</p>
 </dd>
 
-### -field <b>dpCharSets</b>
+### -field dpCharSets
 
 <dd>
 <p>Specifies the offset from the beginning of this structure to an array containing a list of all Windows character sets supported by this font. The array is 16 bytes in size and is always terminated with DEFAULT_CHARSET. The first value of the array should identify the Windows character set that has the best and most complete coverage in the font; this value should also be stored in <b>jWinCharSet</b>. For instance, if this is a Japanese font that also supports US ANSI and Cyrillic character sets, then <b>jWinCharSet</b> should be set to SHIFTJIS_CHARSET and the array identified by <b>dpCharSets</b> would contain SHIFTJIS_CHARSET, ANSI_CHARSET, RUSSIAN_CHARSET, DEFAULT_CHARSET.</p>
 <p>If this font does not support more than one Windows character set, <b>dpCharSets</b> should be set to zero.</p>
 </dd>
 
-### -field <b>jWinCharSet</b>
+### -field jWinCharSet
 
 <dd>
 <p>Identifies the character set best supported by this font. If the font supports only a single Windows character set, the driver should store the corresponding value in <b>jWinCharSet</b>. The driver should not store DEFAULT_CHARSET in this field. This member can be one of the following values:</p>
@@ -331,7 +331,7 @@ typedef struct _PRINTIFI32 {
 <p> </p>
 </dd>
 
-### -field <b>jWinPitchAndFamily</b>
+### -field jWinPitchAndFamily
 
 <dd>
 <p>Specifies the pitch of the font. The two low-order bits specify the pitch of the font and can be one of the following values:</p>
@@ -416,13 +416,13 @@ typedef struct _PRINTIFI32 {
 <p> </p>
 </dd>
 
-### -field <b>usWinWeight</b>
+### -field usWinWeight
 
 <dd>
 <p>Specifies the weight of the font in the range 0 to 1000 (for example, 400 is normal and 700 is bold). This value is provided to the application in the <b>lfWeight</b> member of the Win32 LOGFONT structure.</p>
 </dd>
 
-### -field <b>flInfo</b>
+### -field flInfo
 
 <dd>
 <p>Specifies additional information about the font. This field can be a combination of the following flag values:</p>
@@ -431,7 +431,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_1BPP"></a><a id="fm_info_1bpp"></a>FM_INFO_1BPP
+### -field FM_INFO_1BPP
 
 <dd>
 <p>Indicates that a glyph bitmap has a color depth of one bit per pixel. For Windows NT 3.1, the first version of Windows NT, this flag must be set.</p>
@@ -440,7 +440,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_4BPP"></a><a id="fm_info_4bpp"></a>FM_INFO_4BPP
+### -field FM_INFO_4BPP
 
 <dd>
 <p>Indicates that a glyph bitmap has a color depth of four bits per pixel. The driver should set this if the font supports antialiased glyph bitmaps with 16 levels of gray.</p>
@@ -449,7 +449,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_8BPP"></a><a id="fm_info_8bpp"></a>FM_INFO_8BPP
+### -field FM_INFO_8BPP
 
 <dd>
 <p>Indicates that a glyph bitmap has a color depth of eight bits per pixel. The current version of GDI will ignore this setting as it does not support color fonts.</p>
@@ -458,7 +458,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_16BPP"></a><a id="fm_info_16bpp"></a>FM_INFO_16BPP
+### -field FM_INFO_16BPP
 
 <dd>
 <p>Indicates that a glyph bitmap has a color depth of 16 bits per pixel. The current version of GDI will ignore this setting as it does not support color fonts.</p>
@@ -467,7 +467,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_24BPP"></a><a id="fm_info_24bpp"></a>FM_INFO_24BPP
+### -field FM_INFO_24BPP
 
 <dd>
 <p>Indicates that a glyph bitmap has a color depth of 24 bits per pixel. The current version of GDI will ignore this setting as it does not support color fonts.</p>
@@ -476,7 +476,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_32BPP"></a><a id="fm_info_32bpp"></a>FM_INFO_32BPP
+### -field FM_INFO_32BPP
 
 <dd>
 <p>Indicates that a glyph bitmap has a color depth of 32 bits per pixel. The current version of GDI will ignore this setting as it does not support color fonts.</p>
@@ -485,7 +485,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_90DEGREE_ROTATIONS"></a><a id="fm_info_90degree_rotations"></a>FM_INFO_90DEGREE_ROTATIONS
+### -field FM_INFO_90DEGREE_ROTATIONS
 
 <dd>
 <p>Indicates that the font can be realized in 90 degree rotations of the original notional shape. GDI requests the rotation of a font by including the rotation in the notional to device transformation passed to the driver when creating the font. This member has meaning only when the FM_INFO_ARB_XFORMS flag has not been set.</p>
@@ -494,7 +494,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_ANISOTROPIC_SCALING_ONLY"></a><a id="fm_info_anisotropic_scaling_only"></a>FM_INFO_ANISOTROPIC_SCALING_ONLY
+### -field FM_INFO_ANISOTROPIC_SCALING_ONLY
 
 <dd>
 <p>Indicates that the font supports only arbitrary anisotropic scaling. That is, transforms are equivalent to a diagonal matrix multiplied by a positive real number. If this flag is set, then the FM_INFO_ARB_XFORMS and the FM_INFO_ISOTROPIC_SCALING_ONLY flags cannot be set. If the FM_INFO_90DEGREE_ROTATIONS flag is also set, the font supports transformations that are a combination of a simple anisotropic scaling followed by a rotation by a multiple of 90 degrees.</p>
@@ -503,7 +503,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_ARB_XFORMS"></a><a id="fm_info_arb_xforms"></a>FM_INFO_ARB_XFORMS
+### -field FM_INFO_ARB_XFORMS
 
 <dd>
 <p>Indicates that a font can be realized under a continuous range of two dimensional linear transformations.</p>
@@ -512,7 +512,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_CONSTANT_WIDTH"></a><a id="fm_info_constant_width"></a>FM_INFO_CONSTANT_WIDTH
+### -field FM_INFO_CONSTANT_WIDTH
 
 <dd>
 <p>Indicates that all glyphs of the font under all realizations have the same value of character increment. If this flag is set, the FM_INFO_OPTICALLY_FIXED_PITCH flag must also be set.</p>
@@ -521,7 +521,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_DBCS_FIXED_PITCH"></a><a id="fm_info_dbcs_fixed_pitch"></a>FM_INFO_DBCS_FIXED_PITCH
+### -field FM_INFO_DBCS_FIXED_PITCH
 
 <dd>
 <p>Indicates that double-byte characters for this font are fixed pitch. Nothing is implied about single byte characters. This flag is meaningful only for fonts that support a double-byte character set (DBCS), such as shift JIS. Fonts that do not support a DBCS should not set this flag.</p>
@@ -530,7 +530,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_DO_NOT_ENUMERATE"></a><a id="fm_info_do_not_enumerate"></a>FM_INFO_DO_NOT_ENUMERATE
+### -field FM_INFO_DO_NOT_ENUMERATE
 
 <dd>
 <p>Indicates that this font will not be enumerated by the Win32 <b>EnumFontFamiliesEx</b>, <b>EnumFontFamilies</b> or <b>EnumFonts</b> routines. Moreover, the string returned to a Win32 application call to <b>GetTextFace</b> will be retrieved from the string <b>dpwszUniqueName</b>. This flag allows the font provider to associate more than one PRINTIFI32 structure with one of its fonts.</p>
@@ -539,7 +539,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_DSIG"></a><a id="fm_info_dsig"></a>FM_INFO_DSIG
+### -field FM_INFO_DSIG
 
 <dd>
 <p>Indicates that a font is compliant with the Unicode standard.</p>
@@ -548,7 +548,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_FAMILY_EQUIV"></a><a id="fm_info_family_equiv"></a>FM_INFO_FAMILY_EQUIV
+### -field FM_INFO_FAMILY_EQUIV
 
 <dd>
 <p>Indicates that the <b>dpwszFamilyName</b> offset in PRINTIFI32 is actually the offset to a list of equivalent family names or aliases. The first name is the base or real name; the subsequent names are equivalents or aliases. Each name in the list is null-terminated; the list is terminated by two zeros.</p>
@@ -568,7 +568,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_IGNORE_TC_RA_ABLE"></a><a id="fm_info_ignore_tc_ra_able"></a>FM_INFO_IGNORE_TC_RA_ABLE
+### -field FM_INFO_IGNORE_TC_RA_ABLE
 
 <dd>
 <p>Indicates that, for this font, the TC_RA_ABLE flag is ignored.</p>
@@ -577,7 +577,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_INTEGER_WIDTH"></a><a id="fm_info_integer_width"></a>FM_INFO_INTEGER_WIDTH
+### -field FM_INFO_INTEGER_WIDTH
 
 <dd>
 <p>Indicates that all glyphs have nonfractional advance widths. Bitmap fonts usually set this flag.</p>
@@ -586,7 +586,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_INTEGRAL_SCALING"></a><a id="fm_info_integral_scaling"></a>FM_INFO_INTEGRAL_SCALING
+### -field FM_INFO_INTEGRAL_SCALING
 
 <dd>
 <p>Indicates that the font can be scaled by an integral amount in both the x and y directions. If this flag is set, then the driver must be able to render glyphs in the case where the notional to device transformation is scaled by integral amounts in the x and y directions. GDI requests the integral scaling of a font by including the axial scalings in the notional to device transformation passed to the driver when creating the font. This flag is meaningful only when the FM_INFO_ARB_XFORMS flag has not been set.</p>
@@ -595,7 +595,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_ISOTROPIC_SCALING_ONLY"></a><a id="fm_info_isotropic_scaling_only"></a>FM_INFO_ISOTROPIC_SCALING_ONLY
+### -field FM_INFO_ISOTROPIC_SCALING_ONLY
 
 <dd>
 <p>Indicates that the font supports arbitrary isotropic scaling only. That is, transforms are equivalent to the identity matrix multiplied by a positive real number. If this flag is set, then neither the FM_INFO_ARB_XFORMS nor the FM_INFO_ANISOTROPIC_SCALING_ONLY flags can be set. If the FM_INFO_90DEGREE_ROTATIONS flag is set, the font supports transformations equivalent to an isotropic scaling followed by a rotation by a multiple of 90 degrees.</p>
@@ -604,7 +604,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_OPTICALLY_FIXED_PITCH"></a><a id="fm_info_optically_fixed_pitch"></a>FM_INFO_OPTICALLY_FIXED_PITCH
+### -field FM_INFO_OPTICALLY_FIXED_PITCH
 
 <dd>
 <p>Indicates that this font is considered typographically as fixed pitch. This is an optical quality of the font and does not necessarily indicate that all the glyphs of the font have the same character increment.</p>
@@ -613,7 +613,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_NONNEGATIVE_AC"></a><a id="fm_info_nonnegative_ac"></a>FM_INFO_NONNEGATIVE_AC
+### -field FM_INFO_NONNEGATIVE_AC
 
 <dd>
 <p>Indicates that all glyphs of this font have nonnegative <i>a</i> and <i>c</i> spacing. That is, the glyph black box never extends outside the region bordered by the character origin and the character concatenation point.</p>
@@ -622,7 +622,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_NOT_CONTIGUOUS"></a><a id="fm_info_not_contiguous"></a>FM_INFO_NOT_CONTIGUOUS
+### -field FM_INFO_NOT_CONTIGUOUS
 
 <dd>
 <p>Indicates that the supported character set is not contiguous.</p>
@@ -631,7 +631,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_RETURNS_BITMAPS"></a><a id="fm_info_returns_bitmaps"></a>FM_INFO_RETURNS_BITMAPS
+### -field FM_INFO_RETURNS_BITMAPS
 
 <dd>
 <p>Indicates that the font contains a valid digital signature.</p>
@@ -640,7 +640,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_RETURNS_OUTLINES"></a><a id="fm_info_returns_outlines"></a>FM_INFO_RETURNS_OUTLINES
+### -field FM_INFO_RETURNS_OUTLINES
 
 <dd>
 <p>Indicates that for any glyph supported by the driver, GDI can request a <a href="display.pathobj">PATHOBJ</a> structure that describes the outline of that glyph. If possible, when the outline is filled using GDI's path filling conventions, the resulting bitmap should be identical to the bitmap returned by the driver. The FM_INFO_RETURNS_OUTLINES and FM_INFO_RETURNS_STOKES flags cannot be set concurrently.</p>
@@ -649,7 +649,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_RETURNS_STROKES"></a><a id="fm_info_returns_strokes"></a>FM_INFO_RETURNS_STROKES
+### -field FM_INFO_RETURNS_STROKES
 
 <dd>
 <p>Indicates that for any glyph supported by the drivers, GDI can request a PATHOBJ structure that describes the spline of the glyph. This path cannot be filled but can be stroked to give a representation of the glyph. The FM_INFO_RETURNS_OUTLINES and FM_INFO_RETURNS_STOKES flags cannot be set concurrently.</p>
@@ -658,7 +658,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_RIGHT_HANDED"></a><a id="fm_info_right_handed"></a>FM_INFO_RIGHT_HANDED
+### -field FM_INFO_RIGHT_HANDED
 
 <dd>
 <p>Indicates that the ascent direction of the font is 90 degrees counterclockwise from the baseline direction. The ascent direction is the direction along which height is measured and is always perpendicular to the baseline direction.</p>
@@ -667,7 +667,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_TECH_BITMAP"></a><a id="fm_info_tech_bitmap"></a>FM_INFO_TECH_BITMAP
+### -field FM_INFO_TECH_BITMAP
 
 <dd>
 <p>Indicates that the font is a bitmap font.</p>
@@ -676,7 +676,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_TECH_CFF"></a><a id="fm_info_tech_cff"></a>FM_INFO_TECH_CFF
+### -field FM_INFO_TECH_CFF
 
 <dd>
 <p>Indicates that the font is a Pscript OpenType font that contains a Compact Font Format (CFF) table.</p>
@@ -685,7 +685,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_TECH_MM"></a><a id="fm_info_tech_mm"></a>FM_INFO_TECH_MM
+### -field FM_INFO_TECH_MM
 
 <dd>
 <p>Indicates that this is a Multiple Master (MM) font.</p>
@@ -694,7 +694,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_TECH_OUTLINE_NOT_TRUETYPE"></a><a id="fm_info_tech_outline_not_truetype"></a>FM_INFO_TECH_OUTLINE_NOT_TRUETYPE
+### -field FM_INFO_TECH_OUTLINE_NOT_TRUETYPE
 
 <dd>
 <p>Indicates that the font is based on a scalable font technology that uses outline paths, but is not based on TrueType. This flag does not specify whether the paths returned for this font should be filled or stroked; the consumer should examine the FM_INFO_RETURNS_STROKES and FM_INFO_RETURNS_OUTLINES flags for this information.</p>
@@ -703,7 +703,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_TECH_STROKE"></a><a id="fm_info_tech_stroke"></a>FM_INFO_TECH_STROKE
+### -field FM_INFO_TECH_STROKE
 
 <dd>
 <p>Indicates that the font is based on a stroked font technology. This flag does not specify whether the paths returned for this font should be filled or stroked; the consumer should examine the FM_INFO_RETURNS_STROKES and FM_INFO_RETURNS_OUTLINES flags for this information.</p>
@@ -712,7 +712,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_TECH_TRUETYPE"></a><a id="fm_info_tech_truetype"></a>FM_INFO_TECH_TRUETYPE
+### -field FM_INFO_TECH_TRUETYPE
 
 <dd>
 <p>Indicates that the font is a TrueType font.</p>
@@ -721,7 +721,7 @@ typedef struct _PRINTIFI32 {
 <p></p>
 <dl>
 
-### -field <a id="FM_INFO_TECH_TYPE1"></a><a id="fm_info_tech_type1"></a>FM_INFO_TECH_TYPE1
+### -field FM_INFO_TECH_TYPE1
 
 <dd>
 <p>Indicates that this font is a PostScript screen font (either Type1 or OpenType PostScript).</p>
@@ -729,7 +729,7 @@ typedef struct _PRINTIFI32 {
 </dl>
 </dd>
 
-### -field <b>fsSelection</b>
+### -field fsSelection
 
 <dd>
 <p>Specifies a combination of the following flags:</p>
@@ -798,7 +798,7 @@ typedef struct _PRINTIFI32 {
 <p> </p>
 </dd>
 
-### -field <b>fsType</b>
+### -field fsType
 
 <dd>
 <p>This is a TrueType-specific bitfield indicating certain properties for the font, such as font embedding and licensing rights for the font. Embeddable fonts can be stored in a document. When a document with embedded fonts is opened on a system that does not have the font installed (the remote system), the embedded font can be loaded for temporary (and in some cases permanent) use on that system by an embedding-aware application. Embedding licensing rights are granted by the font vendor. The following flags can be set:</p>
@@ -849,253 +849,253 @@ typedef struct _PRINTIFI32 {
 <p>If multiple embedding bits are set, the <i>least</i> restrictive license granted takes precedence. For example, if bits 1 and 3 are set, bit 3 takes precedence over bit 1and the font can be embedded with Editable rights. For compatibility purposes, most vendors granting Editable embedding rights also set the Preview &amp; Print bit (0x000C). This permits an application that only supports Preview &amp; Print embedding to detect that font embedding is allowed.</p>
 </dd>
 
-### -field <b>fwdUnitsPerEm</b>
+### -field fwdUnitsPerEm
 
 <dd>
 <p>Specifies the em-height of the font.</p>
 </dd>
 
-### -field <b>fwdLowestPPEm</b>
+### -field fwdLowestPPEm
 
 <dd>
 <p>Specifies the smallest readable size of the font, in pixels. This value is ignored for bitmap fonts.</p>
 </dd>
 
-### -field <b>fwdWinAscender</b>
+### -field fwdWinAscender
 
 <dd>
 <p>Specifies the Windows ascender value for the font.</p>
 </dd>
 
-### -field <b>fwdWinDescender</b>
+### -field fwdWinDescender
 
 <dd>
 <p>Specifies the Windows descender value for the font.</p>
 </dd>
 
-### -field <b>fwdMacAscender</b>
+### -field fwdMacAscender
 
 <dd>
 <p>Specifies the Macintosh ascender value for the font.</p>
 </dd>
 
-### -field <b>fwdMacDescender</b>
+### -field fwdMacDescender
 
 <dd>
 <p>Specifies the Macintosh descender value for the font. This number is typically less than zero. It measures the signed displacement from the base line of the lowest descender in the Macintosh character set.</p>
 </dd>
 
-### -field <b>fwdMacLineGap</b>
+### -field fwdMacLineGap
 
 <dd>
 <p>Specifies the Macintosh line gap for the font. The suggested Macintosh interline spacing is equal to <b>fwdMacLineGap</b> + <b>fwdMacAscender</b> âˆ’ <b>fwdMacDescender</b>.</p>
 </dd>
 
-### -field <b>fwdTypoAscender</b>
+### -field fwdTypoAscender
 
 <dd>
 <p>Specifies the typographic ascender value for the font.</p>
 </dd>
 
-### -field <b>fwdTypoDescender</b>
+### -field fwdTypoDescender
 
 <dd>
 <p>Specifies the typographic descender value for the font. This value specifies the signed displacement of the lowest descender from the baseline.</p>
 </dd>
 
-### -field <b>fwdTypoLineGap</b>
+### -field fwdTypoLineGap
 
 <dd>
 <p>Specifies the typographic line gap for the font.</p>
 </dd>
 
-### -field <b>fwdAveCharWidth</b>
+### -field fwdAveCharWidth
 
 <dd>
 <p>Specifies the arithmetic average of the width of all of the 26 lower case letters 'a' through 'z' of the Latin alphabet and the space character. If any of the 26 lowercase letters are not present, then this member should be set equal to the weighted average of all glyphs in the font.</p>
 </dd>
 
-### -field <b>fwdMaxCharInc</b>
+### -field fwdMaxCharInc
 
 <dd>
 <p>Specifies the maximum character increment of all glyphs in the font.</p>
 </dd>
 
-### -field <b>fwdCapHeight</b>
+### -field fwdCapHeight
 
 <dd>
 <p>Specifies the height of the optical line describing the top of the uppercase 'H' in font units (FUnits). This might not be the same as the measured height of the uppercase 'H.' If this information does not exist, <b>fwdCapHeight</b> should be set to zero, which indicates that it is undefined.</p>
 </dd>
 
-### -field <b>fwdXHeight</b>
+### -field fwdXHeight
 
 <dd>
 <p>Specifies the height of the optical line describing the height of the lowercase 'x' in font units. This might not be the same as the measured height of the lowercase 'x.' A value of zero indicates that this member is undefined.</p>
 </dd>
 
-### -field <b>fwdSubscriptXSize</b>
+### -field fwdSubscriptXSize
 
 <dd>
 <p>Specifies the suggested character width (the size along the baseline direction) of the subscript font.</p>
 </dd>
 
-### -field <b>fwdSubscriptYSize</b>
+### -field fwdSubscriptYSize
 
 <dd>
 <p>Specifies the suggested character height (the size along the ascender direction) of the subscript font.</p>
 </dd>
 
-### -field <b>fwdSubscriptXOffset</b>
+### -field fwdSubscriptXOffset
 
 <dd>
 <p>Specifies the suggested offset in the baseline direction of the subscript character. The offset is with respect to the character origin of the base character.</p>
 </dd>
 
-### -field <b>fwdSubscriptYOffset</b>
+### -field fwdSubscriptYOffset
 
 <dd>
 <p>Specifies the suggested offset in the baseline direction of the subscript character. The offset is taken from the character origin of the base character.</p>
 </dd>
 
-### -field <b>fwdSuperscriptXSize</b>
+### -field fwdSuperscriptXSize
 
 <dd>
 <p>Specifies the suggested character width (the size along the baseline direction) of the superscript font.</p>
 </dd>
 
-### -field <b>fwdSuperscriptYSize</b>
+### -field fwdSuperscriptYSize
 
 <dd>
 <p>Specifies the suggested character height (the size along the ascender direction) of the superscript font.</p>
 </dd>
 
-### -field <b>fwdSuperscriptXOffset</b>
+### -field fwdSuperscriptXOffset
 
 <dd>
 <p>Specifies the suggested offset in the baseline direction of the superscript character. The offset is taken from the character origin of the base character.</p>
 </dd>
 
-### -field <b>fwdSuperscriptYOffset</b>
+### -field fwdSuperscriptYOffset
 
 <dd>
 <p>Specifies the suggested offset in the baseline direction of the superscript character. The offset is taken from the character origin of the base character.</p>
 </dd>
 
-### -field <b>fwdUnderscoreSize</b>
+### -field fwdUnderscoreSize
 
 <dd>
 <p>Specifies the suggested width of the underscore bar, in font units.</p>
 </dd>
 
-### -field <b>fwdUnderscorePosition</b>
+### -field fwdUnderscorePosition
 
 <dd>
 <p>Specifies the suggested displacement, in font units, from the base line to the middle of the underscore bar.</p>
 </dd>
 
-### -field <b>fwdStrikeoutSize</b>
+### -field fwdStrikeoutSize
 
 <dd>
 <p>Specifies the suggested width of the strike-out bar, in font coordinates.</p>
 </dd>
 
-### -field <b>fwdStrikeoutPosition</b>
+### -field fwdStrikeoutPosition
 
 <dd>
 <p>Specifies the suggested displacement of the middle of the strikeout bar from the baseline.</p>
 </dd>
 
-### -field <b>chFirstChar</b>
+### -field chFirstChar
 
 <dd>
 <p>Specifies the lowest supported character in the code page specified in <b>jWinCharSet</b>. This field is provided for Windows 3.1 compatibility.</p>
 </dd>
 
-### -field <b>chLastChar</b>
+### -field chLastChar
 
 <dd>
 <p>Specifies the highest supported character in the code page specified in <b>jWinCharSet</b>. This field is provided for Windows 3.1 compatibility.</p>
 </dd>
 
-### -field <b>chDefaultChar</b>
+### -field chDefaultChar
 
 <dd>
 <p>Specifies the default character in the code page specified in <b>jWinCharSet</b>. This field is provided for Windows 3.1 compatibility.</p>
 </dd>
 
-### -field <b>chBreakChar</b>
+### -field chBreakChar
 
 <dd>
 <p>Specifies the break character in the code page specified in <b>jWinCharSet</b>. This field is provided for Windows 3.1 compatibility.</p>
 </dd>
 
-### -field <b>wcFirstChar</b>
+### -field wcFirstChar
 
 <dd>
 <p>Specifies the supported character with the smallest Unicode character code.</p>
 </dd>
 
-### -field <b>wcLastChar</b>
+### -field wcLastChar
 
 <dd>
 <p>Specifies the supported character with the largest Unicode character code.</p>
 </dd>
 
-### -field <b>wcDefaultChar</b>
+### -field wcDefaultChar
 
 <dd>
 <p>Specifies the character to be substituted when an application requests a character that is not supported by the font.</p>
 </dd>
 
-### -field <b>wcBreakChar</b>
+### -field wcBreakChar
 
 <dd>
 <p>Specifies the code point of the space character or its equivalent.</p>
 </dd>
 
-### -field <b>ptlBaseline</b>
+### -field ptlBaseline
 
 <dd>
 <p>Specifies a <a href="display.pointl">POINTL</a> structure that contains the intended writing direction of this font. For example, a typical Latin font specifies a value of (1,0).</p>
 </dd>
 
-### -field <b>ptlAspect</b>
+### -field ptlAspect
 
 <dd>
 <p>Specifies a POINTL structure that contains the aspect ratio of the pixel centers for which the bitmap font was designed. This value is used only by bitmap fonts.</p>
 </dd>
 
-### -field <b>ptlCaret</b>
+### -field ptlCaret
 
 <dd>
 <p>Specifies a POINTL structure that contains the direction of the ascender direction of the font. For example, the value for a nonitalicized Latin font is (0,1) while an italicized Latin font might specify a value of (2,5).</p>
 </dd>
 
-### -field <b>rclFontBox</b>
+### -field rclFontBox
 
 <dd>
 <p>Specifies a <a href="display.rectl">RECTL</a> structure that describes the bounding box of all glyphs in the font in design space.</p>
 </dd>
 
-### -field <b>achVendId</b>
+### -field achVendId
 
 <dd>
 <p>Specifies a four character identifier for the font vendor. Identifiers are documented in the Microsoft TrueType specification.</p>
 </dd>
 
-### -field <b>cKerningPairs</b>
+### -field cKerningPairs
 
 <dd>
 <p>Specifies the number of kerning pairs associated with this font.</p>
 </dd>
 
-### -field <b>ulPanoseCulture</b>
+### -field ulPanoseCulture
 
 <dd>
 <p>Specifies the manner in which to interpret the panose number. This number should be set to FM_PANOSE_CULTURE_LATIN for Latin-based fonts. See the Microsoft Window SDK documentation for information about the PANOSE structure.</p>
 </dd>
 
-### -field <b>panose</b>
+### -field panose
 
 <dd>
 <p>Is an array of 10 bytes used to describe the visual characteristics of a given typeface. These characteristics are then used to associate the font with other fonts of similar appearance having different names. See the Window SDK documentation for information about the PANOSE structure.</p>

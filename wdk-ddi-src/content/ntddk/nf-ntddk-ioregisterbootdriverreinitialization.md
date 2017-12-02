@@ -56,19 +56,19 @@ VOID IoRegisterBootDriverReinitialization(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>Pointer to the driver object for the boot driver to be reinitialized.</p>
 </dd>
 
-### -param <i>DriverReinitializationRoutine</i> [in]
+### -param DriverReinitializationRoutine [in]
 
 <dd>
 <p>Pointer to the driver's <a href="..\ntddk\nc-ntddk-driver-reinitialize.md">Reinitialize</a> routine.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>Optional context pointer to be passed to the driver's reinitialization routine.</p>

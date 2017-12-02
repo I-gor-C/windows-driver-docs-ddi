@@ -55,13 +55,13 @@ PIRP IoMakeAssociatedIrp(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to the master IRP that was input to a highest-level driver's Dispatch routine.</p>
 </dd>
 
-### -param <i>StackSize</i> [in]
+### -param StackSize [in]
 
 <dd>
 <p>Specifies the number of stack locations to be allocated for the associated IRP. The value must be at least equal to the <i>StackSize</i> of the next-lower driver's device object, but the associated IRP can have an additional stack location for the caller. </p>
@@ -159,7 +159,7 @@ PIRP IoMakeAssociatedIrp(
 <a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 </dl>
 <p> </p>

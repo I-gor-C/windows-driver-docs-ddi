@@ -56,14 +56,14 @@ typedef struct IDARG_IN_MAXDISPLAYPIPELINERATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Reason</b>
+### -field Reason
 
 <dd>
 <p>
                      Indicates the reason why the driver is updating the rate.</p>
 </dd>
 
-### -field <b>MaxDisplayPipelineRate</b>
+### -field MaxDisplayPipelineRate
 
 <dd>
 <p>

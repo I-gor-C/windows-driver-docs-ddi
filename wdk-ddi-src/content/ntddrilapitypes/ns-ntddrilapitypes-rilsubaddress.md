@@ -7,7 +7,7 @@ old-location: netvista\rilsubaddress.htm
 old-project: netvista
 ms.assetid: 0a1f9e89-df17-4802-9685-06a2eedbc0e5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSUBADDRESS, RILSUBADDRESS, *LPRILSUBADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _RILSUBADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwType</b>
+### -field dwType
 
 <dd></dd>
 
-### -field <b>wszSubAddress</b>
+### -field wszSubAddress
 
 <dd></dd>
 </dl>

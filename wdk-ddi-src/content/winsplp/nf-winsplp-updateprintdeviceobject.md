@@ -54,13 +54,13 @@ HRESULT WINAPI UpdatePrintDeviceObject(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd>
 <p>The HANDLE to an open printer. This should be a handle that was returned by the <b>AddPrinter</b> or <b>OpenPrinter</b> spooler functions.</p>
 </dd>
 
-### -param <i>hDeviceObject</i> [in]
+### -param hDeviceObject [in]
 
 <dd>
 <p>The HANDLE to the device object to be updated. This should be a device object that was created with <a href="..\winsplp\nf-winsplp-addprintdeviceobject.md">AddPrintDeviceObject</a>.</p>

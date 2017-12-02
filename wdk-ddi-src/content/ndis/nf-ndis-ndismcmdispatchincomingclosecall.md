@@ -7,7 +7,7 @@ old-location: netvista\ndismcmdispatchincomingclosecall.htm
 old-project: netvista
 ms.assetid: 843050e1-a1ec-4313-b527-529c4ff6ca07
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMCmDispatchIncomingCloseCall
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ VOID NdisMCmDispatchIncomingCloseCall(
 ## -parameters
 <dl>
 
-### -param <i>CloseStatus</i> [in]
+### -param CloseStatus [in]
 
 <dd>
 <p>Specifies a caller-determined NDIS_STATUS_<i>XXX</i>, indicating the reason for the disconnect request. During normal network operations, an MCM
@@ -66,7 +66,7 @@ VOID NdisMCmDispatchIncomingCloseCall(
      party, to close an active call.</p>
 </dd>
 
-### -param <i>NdisVcHandle</i> [in]
+### -param NdisVcHandle [in]
 
 <dd>
 <p>Specifies the handle to the VC of the call being disconnected. This handle was supplied by NDIS
@@ -76,14 +76,14 @@ VOID NdisMCmDispatchIncomingCloseCall(
      <a href="..\ndis\nc-ndis-protocol-co-create-vc.md">ProtocolCoCreateVc</a> function.</p>
 </dd>
 
-### -param <i>Buffer</i> [in, optional]
+### -param Buffer [in, optional]
 
 <dd>
 <p>Pointer to a caller-allocated resident buffer containing additional protocol-specific disconnect
      data, if any. Depending on the underlying medium, this pointer can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Size</i> [in]
+### -param Size [in]
 
 <dd>
 <p>Specifies the size in bytes of the buffer, zero if 
@@ -221,4 +221,4 @@ VOID NdisMCmDispatchIncomingCloseCall(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDispatchIncomingCloseCall function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDispatchIncomingCloseCall function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

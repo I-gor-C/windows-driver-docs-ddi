@@ -7,13 +7,13 @@ old-location: debugger\searchmemory.htm
 old-project: debugger
 ms.assetid: 7e07c47e-803b-44fa-9d0f-aa86475246d2
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: SearchMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -59,31 +59,31 @@ __inline VOID SearchMemory(
 ## -parameters
 <dl>
 
-### -param <i>SearchAddress</i> 
+### -param SearchAddress 
 
 <dd>
 <p>Specifies the address in the target's virtual memory from which to start the search.</p>
 </dd>
 
-### -param <i>SearchLength</i> 
+### -param SearchLength 
 
 <dd>
 <p>Specifies the size, in bytes, of the memory to search.  For a successful match, the pattern must be found before <i>SearchLength</i> bytes have been examined.</p>
 </dd>
 
-### -param <i>PatternLength</i> 
+### -param PatternLength 
 
 <dd>
 <p>Specifies the size, in bytes, of the pattern to search for.</p>
 </dd>
 
-### -param <i>Pattern</i> 
+### -param Pattern 
 
 <dd>
 <p>Specifies the pattern to search for.</p>
 </dd>
 
-### -param <i>FoundAddress</i> 
+### -param FoundAddress 
 
 <dd>
 <p>Receives the location of the pattern, found in the target's virtual memory.  If the pattern was not found, the value in <i>FoundAddress</i> is unchanged by this function.</p>
@@ -114,7 +114,7 @@ __inline VOID SearchMemory(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

@@ -7,7 +7,7 @@ old-location: netvista\rilexecutorflag.htm
 old-project: netvista
 ms.assetid: b388a5d9-3549-472d-8ebe-b618751626ed
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef enum _RILEXECUTORFLAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_EXECUTORFLAG_HIGHPRIORITY"></a><a id="ril_executorflag_highpriority"></a><b>RIL_EXECUTORFLAG_HIGHPRIORITY</b>
+### -field RIL_EXECUTORFLAG_HIGHPRIORITY
 
 <dd></dd>
 
-### -field <a id="RIL_EXECUTORFLAG_ALL"></a><a id="ril_executorflag_all"></a><b>RIL_EXECUTORFLAG_ALL</b>
+### -field RIL_EXECUTORFLAG_ALL
 
 <dd></dd>
 </dl>

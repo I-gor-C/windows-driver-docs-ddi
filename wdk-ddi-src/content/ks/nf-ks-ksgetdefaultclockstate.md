@@ -55,7 +55,7 @@ KSSTATE KsGetDefaultClockState(
 ## -parameters
 <dl>
 
-### -param <i>DefaultClock</i> [in]
+### -param DefaultClock [in]
 
 <dd>
 <p>Specifies an initialized, default clock structure that is shared among any instance of the default clock for the parent.</p>

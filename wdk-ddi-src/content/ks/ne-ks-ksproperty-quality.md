@@ -55,13 +55,13 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_QUALITY_REPORT"></a><a id="ksproperty_quality_report"></a><b>KSPROPERTY_QUALITY_REPORT</b>
+### -field KSPROPERTY_QUALITY_REPORT
 
 <dd>
 <p>Specify if the pin supports quality management.</p>
 </dd>
 
-### -field <a id="KSPROPERTY_QUALITY_ERROR"></a><a id="ksproperty_quality_error"></a><b>KSPROPERTY_QUALITY_ERROR</b>
+### -field KSPROPERTY_QUALITY_ERROR
 
 <dd>
 <p>Specify if the pin supports quality management.</p>

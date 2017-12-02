@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_power_policy_wake_settings_init.htm
 old-project: wdf
 ms.assetid: bb712c92-c926-4a7a-a126-db4db3bc728f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ VOID WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Settings</i> [out]
+### -param Settings [out]
 
 <dd>
 <p>A pointer to a driver-allocated <a href="..\wdfdevice\ns-wdfdevice--wdf-device-power-policy-wake-settings.md">WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS</a> structure.</p>

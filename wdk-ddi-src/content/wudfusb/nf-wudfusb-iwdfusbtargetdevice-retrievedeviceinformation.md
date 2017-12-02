@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetdevice_retrievedeviceinformation.htm
 old-project: wdf
 ms.assetid: 04e3dfba-3313-4575-9956-5b1861b8212a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFUsbTargetDevice, RetrieveDeviceInformation, IWDFUsbTargetDevice::RetrieveDeviceInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,20 +58,20 @@ HRESULT RetrieveDeviceInformation(
 ## -parameters
 <dl>
 
-### -param <i>InformationType</i> [in]
+### -param InformationType [in]
 
 <dd>
 <p>The type of information that the UMDF driver requests about the device.  
 </p>
 </dd>
 
-### -param <i>BufferLength</i> [in, out]
+### -param BufferLength [in, out]
 
 <dd>
 <p>A pointer to a variable that, on input, contains the size, in bytes, of the buffer that <b>RetrieveDeviceInformation</b> supplies in <i>Buffer</i>. On output, this parameter contains the size that <b>RetrieveDeviceInformation</b> requires for <i>Buffer</i>.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>A pointer that receives the buffer that contains the device information.</p>
@@ -161,4 +161,4 @@ HRESULT RetrieveDeviceInformation(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetDevice::RetrieveDeviceInformation method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetDevice::RetrieveDeviceInformation method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

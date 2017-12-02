@@ -56,13 +56,13 @@ BOOL GdiStartDocEMF(
 ## -parameters
 <dl>
 
-### -param <i>SpoolFileHandle</i> 
+### -param SpoolFileHandle 
 
 <dd>
 <p>Caller-supplied spool file handle, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>.</p>
 </dd>
 
-### -param <i>pDocInfo</i> 
+### -param pDocInfo 
 
 <dd>
 <p>Caller-supplied pointer to a DOCINFOW structure (described in the Microsoft Window SDK documentation).</p>
@@ -81,7 +81,7 @@ BOOL GdiStartDocEMF(
 
 <p>The print processor must set the <b>lpszDocName</b> member of the DOCINFOW structure to the document name pointer, previously received by the <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a> function.</p>
 
-<p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.</p>
 
 ## -requirements
 <table>

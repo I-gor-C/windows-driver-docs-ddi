@@ -56,13 +56,13 @@ HRESULT Read(
 ## -parameters
 <dl>
 
-### -param <i>cbRead</i> [in]
+### -param cbRead [in]
 
 <dd>
 <p>The number of bytes to read.</p>
 </dd>
 
-### -param <i>ppdispArray</i> [out, retval]
+### -param ppdispArray [out, retval]
 
 <dd>
 <p>The returned array.</p>

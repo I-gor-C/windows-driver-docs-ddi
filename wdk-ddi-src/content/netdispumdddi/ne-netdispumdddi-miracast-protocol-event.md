@@ -58,31 +58,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="MIRACAST_PROTOCOL_EVENT_IFRAME_RQ"></a><a id="miracast_protocol_event_iframe_rq"></a><b>MIRACAST_PROTOCOL_EVENT_IFRAME_RQ</b>
+### -field MIRACAST_PROTOCOL_EVENT_IFRAME_RQ
 
 <dd>
 <p>The driver received a request for a new IDR type of I-frame from the Miracast sink.</p>
 </dd>
 
-### -field <a id="MIRACAST_PROTOCOL_EVENT_MONITOR_ARRIVE"></a><a id="miracast_protocol_event_monitor_arrive"></a><b>MIRACAST_PROTOCOL_EVENT_MONITOR_ARRIVE</b>
+### -field MIRACAST_PROTOCOL_EVENT_MONITOR_ARRIVE
 
 <dd>
 <p>The driver received a monitor connection event from the Miracast sink.</p>
 </dd>
 
-### -field <a id="MIRACAST_PROTOCOL_EVENT_MONITOR_DEPART"></a><a id="miracast_protocol_event_monitor_depart"></a><b>MIRACAST_PROTOCOL_EVENT_MONITOR_DEPART</b>
+### -field MIRACAST_PROTOCOL_EVENT_MONITOR_DEPART
 
 <dd>
 <p>The driver received a monitor disconnection event from the Miracast sink.</p>
 </dd>
 
-### -field <a id="MIRACAST_PROTOCOL_EVENT_SINK_FAILED_PREFERRED_MODE_CHANGE"></a><a id="miracast_protocol_event_sink_failed_preferred_mode_change"></a><b>MIRACAST_PROTOCOL_EVENT_SINK_FAILED_PREFERRED_MODE_CHANGE</b>
+### -field MIRACAST_PROTOCOL_EVENT_SINK_FAILED_PREFERRED_MODE_CHANGE
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>
 </dd>
 
-### -field <a id="MIRACAST_PROTOCOL_EVENT_FORCE_UINT32"></a><a id="miracast_protocol_event_force_uint32"></a><b>MIRACAST_PROTOCOL_EVENT_FORCE_UINT32</b>
+### -field MIRACAST_PROTOCOL_EVENT_FORCE_UINT32
 
 <dd>
 <p>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</p>

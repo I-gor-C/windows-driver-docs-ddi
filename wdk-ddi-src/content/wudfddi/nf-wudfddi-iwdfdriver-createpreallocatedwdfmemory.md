@@ -7,7 +7,7 @@ old-location: wdf\iwdfdriver_createpreallocatedwdfmemory.htm
 old-project: wdf
 ms.assetid: 9c24f42b-0f1d-4b93-99af-f4a5069b5223
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFDriver, CreatePreallocatedWdfMemory, IWDFDriver::CreatePreallocatedWdfMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,13 +60,13 @@ HRESULT CreatePreallocatedWdfMemory(
 ## -parameters
 <dl>
 
-### -param <i>pBuff</i> [in]
+### -param pBuff [in]
 
 <dd>
 <p>A pointer to a driver-supplied data buffer for the memory object.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>
@@ -74,19 +74,19 @@ HRESULT CreatePreallocatedWdfMemory(
      </p>
 </dd>
 
-### -param <i>pCallbackInterface</i> [in, optional]
+### -param pCallbackInterface [in, optional]
 
 <dd>
 <p>A pointer to the <b>IUnknown</b> interface that the framework uses to determine the object-related event callback functions that the driver subscribes to on the newly created memory object. This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require notification. The <b>IUnknown</b> interface is used for object cleanup and disposal. If the driver passes a valid pointer, the framework will call <b>QueryInterface</b> on the <b>IUnknown</b> interface for the <a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a> interface. If the framework obtains the driver's <b>IObjectCleanup</b> interface, the framework can subsequently call the driver's <a href="wdf.iobjectcleanup_oncleanup">IObjectCleanup::OnCleanup</a> method to notify the driver that the memory object is cleaned up. </p>
 </dd>
 
-### -param <i>pParentObject</i> [in, optional]
+### -param pParentObject [in, optional]
 
 <dd>
 <p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a> interface for the parent object of the created memory object. If <b>NULL</b>, the driver object becomes the default parent. </p>
 </dd>
 
-### -param <i>ppWdfMemory</i> [out]
+### -param ppWdfMemory [out]
 
 <dd>
 <p>A pointer to a buffer that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface for the newly created WDF memory object.</p>
@@ -180,4 +180,4 @@ HRESULT CreatePreallocatedWdfMemory(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDriver::CreatePreallocatedWdfMemory method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDriver::CreatePreallocatedWdfMemory method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

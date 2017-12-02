@@ -7,7 +7,7 @@ old-location: ifsk\rxpdereferenceandfinalizenetfcb.htm
 old-project: ifsk
 ms.assetid: 954a4811-4515-4ed4-a4f1-df598d08fc77
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxpDereferenceAndFinalizeNetFcb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ BOOLEAN RxpDereferenceAndFinalizeNetFcb(
 ## -parameters
 <dl>
 
-### -param <i>Fcb</i> [out]
+### -param Fcb [out]
 
 <dd>
 <p>A pointer to the FCB structure to be dereferenced and finalized.</p>
 </dd>
 
-### -param <i>RxContext</i> [in]
+### -param RxContext [in]
 
 <dd>
 <p>A pointer to the RX_CONTEXT structure associated with the <i>Fcb</i> parameter.</p>
 </dd>
 
-### -param <i>RecursiveFinalize</i> [in]
+### -param RecursiveFinalize [in]
 
 <dd>
 <p>A parameter that indicates if this should be a recursive finalize operation.</p>
 </dd>
 
-### -param <i>ForceFinalize</i> [in]
+### -param ForceFinalize [in]
 
 <dd>
 <p>A parameter that indicates if this routine should force the <i>Fcb</i> parameter to be finalized.</p>
@@ -144,4 +144,4 @@ BOOLEAN RxpDereferenceAndFinalizeNetFcb(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxpDereferenceAndFinalizeNetFcb function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxpDereferenceAndFinalizeNetFcb function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

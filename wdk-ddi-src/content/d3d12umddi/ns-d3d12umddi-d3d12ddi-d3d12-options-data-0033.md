@@ -66,79 +66,79 @@ typedef struct _D3D12DDI_D3D12_OPTIONS_DATA_0033 {
 ## -struct-fields
 <dl>
 
-### -field <b>ResourceBindingTier</b>
+### -field ResourceBindingTier
 
 <dd>
 <p>Resource binding tier.</p>
 </dd>
 
-### -field <b>ConservativeRasterizationTier</b>
+### -field ConservativeRasterizationTier
 
 <dd>
 <p>Conservative rasterization tier.</p>
 </dd>
 
-### -field <b>TiledResourcesTier</b>
+### -field TiledResourcesTier
 
 <dd>
 <p>Tiled resource tier.</p>
 </dd>
 
-### -field <b>CrossNodeSharingTier</b>
+### -field CrossNodeSharingTier
 
 <dd>
 <p>Cross node sharing tier.</p>
 </dd>
 
-### -field <b>VPAndRTArrayIndexFromAnyShaderFeedingRasterizerSupportedWithoutGSEmulation</b>
+### -field VPAndRTArrayIndexFromAnyShaderFeedingRasterizerSupportedWithoutGSEmulation
 
 <dd>
 <p>VP and RT array index from any shader feeding rasterizer supported without GS emulation.</p>
 </dd>
 
-### -field <b>OutputMergerLogicOp</b>
+### -field OutputMergerLogicOp
 
 <dd>
 <p>Output merger logic option.</p>
 </dd>
 
-### -field <b>ResourceHeapTier</b>
+### -field ResourceHeapTier
 
 <dd>
 <p>Resource heap tier.</p>
 </dd>
 
-### -field <b>DepthBoundsTestSupported</b>
+### -field DepthBoundsTestSupported
 
 <dd>
 <p>Depth bounds test supported.</p>
 </dd>
 
-### -field <b>ProgrammableSamplePositionsTier</b>
+### -field ProgrammableSamplePositionsTier
 
 <dd>
 <p>Programmable sample positions tier.</p>
 </dd>
 
-### -field <b>CopyQueueTimestampQueriesSupported</b>
+### -field CopyQueueTimestampQueriesSupported
 
 <dd>
 <p>Copy queue timestamp queries supported.</p>
 </dd>
 
-### -field <b>WriteBufferImmediateQueueFlags</b>
+### -field WriteBufferImmediateQueueFlags
 
 <dd>
 <p>Write buffer immediate queue flags.</p>
 </dd>
 
-### -field <b>ViewInstancingTier</b>
+### -field ViewInstancingTier
 
 <dd>
 <p>View instancing tier.</p>
 </dd>
 
-### -field <b>BarycentricsSupported</b>
+### -field BarycentricsSupported
 
 <dd>
 <p>Barycentrics supported.</p>

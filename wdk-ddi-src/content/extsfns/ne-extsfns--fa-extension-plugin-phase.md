@@ -7,7 +7,7 @@ old-location: debugger\fa_extension_plugin_phase.htm
 old-project: debugger
 ms.assetid: 67BDC6F7-4099-4AE9-931A-302FDBE1B05C
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: EVENT_TRACE_HEADER, EVENT_TRACE_HEADER, *PEVENT_TRACE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef enum _FA_EXTENSION_PLUGIN_PHASE {
 ## -enum-fields
 <dl>
 
-### -field <a id="FA_PLUGIN_INITILIZATION"></a><a id="fa_plugin_initilization"></a><b>FA_PLUGIN_INITILIZATION</b>
+### -field FA_PLUGIN_INITILIZATION
 
 <dd>
 <p>The analysis is in the initialization phase. This is after the primary data such as
@@ -65,7 +65,7 @@ typedef enum _FA_EXTENSION_PLUGIN_PHASE {
      mode) is initialized.</p>
 </dd>
 
-### -field <a id="FA_PLUGIN_STACK_ANALYSIS"></a><a id="fa_plugin_stack_analysis"></a><b>FA_PLUGIN_STACK_ANALYSIS</b>
+### -field FA_PLUGIN_STACK_ANALYSIS
 
 <dd>
 <p>The analysis is in the stack analysis phase. This is after the stack is analyzed, and
@@ -73,13 +73,13 @@ typedef enum _FA_EXTENSION_PLUGIN_PHASE {
      module.</p>
 </dd>
 
-### -field <a id="FA_PLUGIN_PRE_BUCKETING"></a><a id="fa_plugin_pre_bucketing"></a><b>FA_PLUGIN_PRE_BUCKETING</b>
+### -field FA_PLUGIN_PRE_BUCKETING
 
 <dd>
 <p>The analysis is in the prebucketing phase. This is just before the analysis engine generates a bucket.</p>
 </dd>
 
-### -field <a id="FA_PLUGIN_POST_BUCKETING"></a><a id="fa_plugin_post_bucketing"></a><b>FA_PLUGIN_POST_BUCKETING</b>
+### -field FA_PLUGIN_POST_BUCKETING
 
 <dd>
 <p>The analysis is in the post bucketing phase. This is just after the analysis engine generates a bucket.</p>
@@ -117,4 +117,4 @@ typedef enum _FA_EXTENSION_PLUGIN_PHASE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20FA_EXTENSION_PLUGIN_PHASE enumeration%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20FA_EXTENSION_PLUGIN_PHASE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

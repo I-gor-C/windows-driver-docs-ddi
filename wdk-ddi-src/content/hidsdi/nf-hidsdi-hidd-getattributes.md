@@ -55,13 +55,13 @@ BOOLEAN __stdcall HidD_GetAttributes(
 ## -parameters
 <dl>
 
-### -param <i>HidDeviceObject</i> [in]
+### -param HidDeviceObject [in]
 
 <dd>
 <p>Specifies an open handle to a top-level collection.</p>
 </dd>
 
-### -param <i>Attributes</i> [out]
+### -param Attributes [out]
 
 <dd>
 <p>Pointer to a caller-allocated <a href="..\hidsdi\ns-hidsdi--hidd-attributes.md">HIDD_ATTRIBUTES</a> structure that returns the attributes of the collection specified by <i>HidDeviceObject</i>.</p>
@@ -74,7 +74,7 @@ BOOLEAN __stdcall HidD_GetAttributes(
 ## -remarks
 <p>Only user-mode applications can call <b>HidD_GetAttributes</b>. Kernel-mode drivers can use <a href="..\hidclass\ni-hidclass-ioctl-hid-get-collection-information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a>.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>.</p>
 
 ## -requirements
 <table>

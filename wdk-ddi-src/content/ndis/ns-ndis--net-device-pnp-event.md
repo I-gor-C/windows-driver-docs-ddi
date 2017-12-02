@@ -7,7 +7,7 @@ old-location: netvista\net_device_pnp_event.htm
 old-project: netvista
 ms.assetid: 79298332-2d34-4ef3-ad43-5d218e3f6612
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NET_DEVICE_PNP_EVENT, NET_DEVICE_PNP_EVENT, *PNET_DEVICE_PNP_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ typedef struct _NET_DEVICE_PNP_EVENT {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -72,7 +72,7 @@ typedef struct _NET_DEVICE_PNP_EVENT {
      <b>Size</b> member to <b>NDIS_SIZEOF_NET_DEVICE_PNP_EVENT_REVISION_1</b>.</p>
 </dd>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>The source port of the PnP event notification. If the status indication is not specific to a port,
@@ -80,7 +80,7 @@ typedef struct _NET_DEVICE_PNP_EVENT {
      <b>PortNumber</b> is zero.</p>
 </dd>
 
-### -field <b>DevicePnPEvent</b>
+### -field DevicePnPEvent
 
 <dd>
 <p>An event code that describes the PnP event as one of the following: 
@@ -88,14 +88,14 @@ typedef struct _NET_DEVICE_PNP_EVENT {
 <p></p>
 <dl>
 
-### -field <a id="NdisDevicePnPEventSurpriseRemoved"></a><a id="ndisdevicepnpeventsurpriseremoved"></a><a id="NDISDEVICEPNPEVENTSURPRISEREMOVED"></a><b>NdisDevicePnPEventSurpriseRemoved</b>
+### -field NdisDevicePnPEventSurpriseRemoved
 
 <dd>
 <p>The network interface card (NIC) has been unexpectedly removed from the
-       computer. For more information, see <a href="NULL">Handling the Surprise Removal of a NIC</a>.</p>
+       computer. For more information, see <a href="netvista.handling_the_surprise_removal_of_a_nic">Handling the Surprise Removal of a NIC</a>.</p>
 </dd>
 
-### -field <a id="NdisDevicePnPEventPowerProfileChanged"></a><a id="ndisdevicepnpeventpowerprofilechanged"></a><a id="NDISDEVICEPNPEVENTPOWERPROFILECHANGED"></a><b>NdisDevicePnPEventPowerProfileChanged</b>
+### -field NdisDevicePnPEventPowerProfileChanged
 
 <dd>
 <p>The power profile of the host system has changed.</p>
@@ -103,7 +103,7 @@ typedef struct _NET_DEVICE_PNP_EVENT {
 </dl>
 </dd>
 
-### -field <b>InformationBuffer</b>
+### -field InformationBuffer
 
 <dd>
 <p>A pointer to a buffer. If NDIS sets the 
@@ -114,13 +114,13 @@ typedef struct _NET_DEVICE_PNP_EVENT {
 <p></p>
 <dl>
 
-### -field <a id="NdisPowerProfileBattery"></a><a id="ndispowerprofilebattery"></a><a id="NDISPOWERPROFILEBATTERY"></a><b>NdisPowerProfileBattery</b>
+### -field NdisPowerProfileBattery
 
 <dd>
 <p>The host system is running on battery power.</p>
 </dd>
 
-### -field <a id="NdisPowerProfileAcOnline"></a><a id="ndispowerprofileaconline"></a><a id="NDISPOWERPROFILEACONLINE"></a><b>NdisPowerProfileAcOnline</b>
+### -field NdisPowerProfileAcOnline
 
 <dd>
 <p>The host system is running on AC power.</p>
@@ -132,14 +132,14 @@ typedef struct _NET_DEVICE_PNP_EVENT {
      <b>InformationBuffer</b> is <b>NULL</b>.</p>
 </dd>
 
-### -field <b>InformationBufferLength</b>
+### -field InformationBufferLength
 
 <dd>
 <p>The length, in bytes, of the buffer in the 
      <b>InformationBuffer</b> member.</p>
 </dd>
 
-### -field <b>NdisReserved</b>
+### -field NdisReserved
 
 <dd>
 <p>Reserved for NDIS.</p>
@@ -191,4 +191,4 @@ typedef struct _NET_DEVICE_PNP_EVENT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DEVICE_PNP_EVENT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DEVICE_PNP_EVENT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

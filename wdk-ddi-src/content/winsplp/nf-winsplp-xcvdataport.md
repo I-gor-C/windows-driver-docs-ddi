@@ -61,43 +61,43 @@ DWORD XcvDataPort(
 ## -parameters
 <dl>
 
-### -param <i>hXcv</i> [in]
+### -param hXcv [in]
 
 <dd>
 <p>Caller-supplied printer handle, obtained by calling <b>OpenPrinter</b> (described in the Microsoft Windows SDK documentation). This handle is created and returned by the <a href="..\winsplp\nf-winsplp-xcvopenport.md">XcvOpenPort</a> function.</p>
 </dd>
 
-### -param <i>pszDataName</i> [in]
+### -param pszDataName [in]
 
 <dd>
 <p>Caller-supplied pointer to a string representing the name of the data being requested. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>pInputData</i> [in]
+### -param pInputData [in]
 
 <dd>
 <p>Caller-supplied pointer to a buffer containing input data.</p>
 </dd>
 
-### -param <i>cbInputData</i> 
+### -param cbInputData 
 
 <dd>
 <p>Caller-supplied size, in bytes, of the buffer pointed to by <i>pInputData</i>.</p>
 </dd>
 
-### -param <i>pOutputData</i> [out]
+### -param pOutputData [out]
 
 <dd>
 <p>Caller-supplied pointer to a buffer to receive output data.</p>
 </dd>
 
-### -param <i>cbOutputData</i> 
+### -param cbOutputData 
 
 <dd>
 <p>Caller-supplied size, in bytes, of the buffer pointed to by <i>pOutputData</i>.</p>
 </dd>
 
-### -param <i>pcbOutputNeeded</i> [out]
+### -param pcbOutputNeeded [out]
 
 <dd>
 <p>Caller-supplied pointer to a location to receive the minimum size, in bytes, required for the buffer pointed to by <i>pOutputData</i>.</p>
@@ -148,7 +148,7 @@ DWORD XcvDataPort(
 
 <p>Validate the contents of the buffer pointed to by the <i>pInputData</i> parameter. When the spooler calls the <b>XcvOpenPort</b> function, it performs no validation on the contents of this buffer. The monitor can make no assumptions about the validity of this data, which can come from a malicious application.</p>
 
-<p>If you are writing a port monitor that will communicate with TCPMON, see <a href="NULL">TCPMON Xcv Interface</a>.</p>
+<p>If you are writing a port monitor that will communicate with TCPMON, see <a href="https://msdn.microsoft.com/7b2b1cff-ab8f-44e0-9327-dc60a0072bf5">TCPMON Xcv Interface</a>.</p>
 
 ## -requirements
 <table>

@@ -56,19 +56,19 @@ NTSTATUS RtlUIntSub(
 ## -parameters
 <dl>
 
-### -param <i>uMinuend</i> [in]
+### -param uMinuend [in]
 
 <dd>
 <p>The value from which <i>u8Subtrahend</i> is subtracted.</p>
 </dd>
 
-### -param <i>uSubtrahend</i> [in]
+### -param uSubtrahend [in]
 
 <dd>
 <p>The value to subtract from <i>u8Minuend</i>.</p>
 </dd>
 
-### -param <i>puResult</i> [out]
+### -param puResult [out]
 
 <dd>
 <p>A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

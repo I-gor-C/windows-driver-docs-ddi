@@ -56,19 +56,19 @@ typedef enum _CDROM_PERFORMANCE_EXCEPTION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="CdromNominalPerformance"></a><a id="cdromnominalperformance"></a><a id="CDROMNOMINALPERFORMANCE"></a><b>CdromNominalPerformance</b>
+### -field CdromNominalPerformance
 
 <dd>
 <p>Requests nominal performance parameters.</p>
 </dd>
 
-### -field <a id="CdromEntirePerformanceList"></a><a id="cdromentireperformancelist"></a><a id="CDROMENTIREPERFORMANCELIST"></a><b>CdromEntirePerformanceList</b>
+### -field CdromEntirePerformanceList
 
 <dd>
 <p>Requests the entire performance list, as qualified by the <b>StartingLba</b> field of the <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-performance-request.md">CDROM_PERFORMANCE_REQUEST</a> structure.</p>
 </dd>
 
-### -field <a id="___CdromPerformanceExceptionsOnly_"></a><a id="___cdromperformanceexceptionsonly_"></a><a id="___CDROMPERFORMANCEEXCEPTIONSONLY_"></a><b>   CdromPerformanceExceptionsOnly </b>
+### -field    CdromPerformanceExceptionsOnly 
 
 <dd>
 <p>Requests only performance exceptions that cause the performance to fall outside the nominal.</p>

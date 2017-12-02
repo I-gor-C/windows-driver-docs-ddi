@@ -54,7 +54,7 @@ VOID SetPreFetchOffset(
 ## -parameters
 <dl>
 
-### -param <i>PreFetchOffset</i> [in]
+### -param PreFetchOffset [in]
 
 <dd>
 <p>Specifies the prefetch offset size in bytes.</p>
@@ -75,7 +75,7 @@ VOID SetPreFetchOffset(
 
 <p>For more information about write cursors and play cursors, see <a href="audio.ksaudio_position">KSAUDIO_POSITION</a>.</p>
 
-<p>For information about using <code>SetPreFetchOffset</code> to control a DirectSound stream's prefetch offset, see <a href="NULL">Prefetch Offsets</a>.</p>
+<p>For information about using <code>SetPreFetchOffset</code> to control a DirectSound stream's prefetch offset, see <a href="https://msdn.microsoft.com/92a0163f-29b1-4e15-88ab-67e1097d015e">Prefetch Offsets</a>.</p>
 
 ## -requirements
 <table>

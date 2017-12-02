@@ -7,7 +7,7 @@ old-location: wdf\iwdfdeviceinitialize_retrievedevicepropertystore.htm
 old-project: wdf
 ms.assetid: 57d03610-b195-4691-8ee9-26c93560700c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFDeviceInitialize, RetrieveDevicePropertyStore, IWDFDeviceInitialize::RetrieveDevicePropertyStore
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ HRESULT RetrieveDevicePropertyStore(
 ## -parameters
 <dl>
 
-### -param <i>pcwszServiceName</i> [in, optional]
+### -param pcwszServiceName [in, optional]
 
 <dd>
 <p>A pointer to a <b>NULL</b>-terminated string that represents the name of the device property store. This parameter is optional. The driver can pass <b>NULL</b> if the driver does not supply a name for a device property store. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-property-store-retrieve-flags.md">WDF_PROPERTY_STORE_RETRIEVE_FLAGS</a>-typed value that identifies how to retrieve the device property store. </p>
 </dd>
 
-### -param <i>ppPropStore</i> [out]
+### -param ppPropStore [out]
 
 <dd>
 <p>A pointer to a buffer that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfnamedpropertystore.md">IWDFNamedPropertyStore</a> interface that is used to retrieve device properties.</p>
 </dd>
 
-### -param <i>pDisposition</i> [out, optional]
+### -param pDisposition [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives a <a href="..\wudfddi_types\ne-wudfddi-types--wdf-property-store-disposition.md">WDF_PROPERTY_STORE_DISPOSITION</a>-typed value that identifies whether the framework created the device property store or the device property store already existed. This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the disposition information. </p>
@@ -160,4 +160,4 @@ HRESULT RetrieveDevicePropertyStore(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDeviceInitialize::RetrieveDevicePropertyStore method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDeviceInitialize::RetrieveDevicePropertyStore method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

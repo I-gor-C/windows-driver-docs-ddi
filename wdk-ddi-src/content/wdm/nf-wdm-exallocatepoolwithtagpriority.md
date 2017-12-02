@@ -58,7 +58,7 @@ PVOID ExAllocatePoolWithTagPriority(
 ## -parameters
 <dl>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>The type of pool memory to allocate. For a description of the available pool memory types, see <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a>.</p>
@@ -66,19 +66,19 @@ PVOID ExAllocatePoolWithTagPriority(
 <p>Similarly, you can modify the <i>PoolType</i> value by bitwise-ORing this value with the POOL_COLD_ALLOCATION flag as a hint to the kernel to allocate the memory from pages that are likely to be paged out  quickly. To reduce the amount of resident pool memory as much as possible, you should not reference these allocations frequently. The POOL_COLD_ALLOCATION flag is only advisory and is available starting with Windows XP.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>The number of bytes to allocate.</p>
 </dd>
 
-### -param <i>Tag</i> [in]
+### -param Tag [in]
 
 <dd>
 <p>The pool tag to use for the allocated memory. For more information, see the <i>Tag</i> parameter of <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>.</p>
 </dd>
 
-### -param <i>Priority</i> [in]
+### -param Priority [in]
 
 <dd>
 <p>The priority of this request. Set this parameter to one of the following <b>EX_POOL_PRIORITY</b> enumeration values.</p>
@@ -113,7 +113,7 @@ PVOID ExAllocatePoolWithTagPriority(
 </tr>
 </table>
 <p> </p>
-<p>The <b>EX_POOL_PRIORITY</b> enumeration defines <b><i>Xxx</i>SpecialPoolOverrun</b> and <b><i>Xxx</i>SpecialPoolUnderrun</b> variants to specify how memory should be allocated when <a href="https://msdn.microsoft.com/library/windows/hardware/ff557262">Driver Verifier</a> (or special pool) is enabled. If the driver specifies <b><i>Xxx</i>SpecialPoolUnderrun</b>, when the <a href="https://msdn.microsoft.com/ab464d5b-7bad-494e-80cd-e32ca9e9fa8d">memory manager</a> allocates memory from <a href="NULL">special pool</a>, it allocates it at the start of a physical page. If the driver specifies <b><i>Xxx</i>SpecialPoolOverrun</b>, the memory manager allocates it at the end of a physical page.</p>
+<p>The <b>EX_POOL_PRIORITY</b> enumeration defines <b><i>Xxx</i>SpecialPoolOverrun</b> and <b><i>Xxx</i>SpecialPoolUnderrun</b> variants to specify how memory should be allocated when <a href="https://msdn.microsoft.com/library/windows/hardware/ff557262">Driver Verifier</a> (or special pool) is enabled. If the driver specifies <b><i>Xxx</i>SpecialPoolUnderrun</b>, when the <a href="https://msdn.microsoft.com/ab464d5b-7bad-494e-80cd-e32ca9e9fa8d">memory manager</a> allocates memory from <a href="https://msdn.microsoft.com/b1381a75-279a-42b7-b18d-43aba796424b">special pool</a>, it allocates it at the start of a physical page. If the driver specifies <b><i>Xxx</i>SpecialPoolOverrun</b>, the memory manager allocates it at the end of a physical page.</p>
 </dd>
 </dl>
 
@@ -203,7 +203,7 @@ PVOID ExAllocatePoolWithTagPriority(
 <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
 <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a>

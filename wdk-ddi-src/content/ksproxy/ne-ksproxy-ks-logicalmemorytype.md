@@ -60,31 +60,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_MemoryTypeDontCare"></a><a id="ks_memorytypedontcare"></a><a id="KS_MEMORYTYPEDONTCARE"></a><b>KS_MemoryTypeDontCare</b>
+### -field KS_MemoryTypeDontCare
 
 <dd></dd>
 
-### -field <a id="KS_MemoryTypeKernelPaged"></a><a id="ks_memorytypekernelpaged"></a><a id="KS_MEMORYTYPEKERNELPAGED"></a><b>KS_MemoryTypeKernelPaged</b>
+### -field KS_MemoryTypeKernelPaged
 
 <dd></dd>
 
-### -field <a id="KS_MemoryTypeKernelNonPaged"></a><a id="ks_memorytypekernelnonpaged"></a><a id="KS_MEMORYTYPEKERNELNONPAGED"></a><b>KS_MemoryTypeKernelNonPaged</b>
+### -field KS_MemoryTypeKernelNonPaged
 
 <dd></dd>
 
-### -field <a id="KS_MemoryTypeDeviceHostMapped"></a><a id="ks_memorytypedevicehostmapped"></a><a id="KS_MEMORYTYPEDEVICEHOSTMAPPED"></a><b>KS_MemoryTypeDeviceHostMapped</b>
+### -field KS_MemoryTypeDeviceHostMapped
 
 <dd></dd>
 
-### -field <a id="KS_MemoryTypeDeviceSpecific"></a><a id="ks_memorytypedevicespecific"></a><a id="KS_MEMORYTYPEDEVICESPECIFIC"></a><b>KS_MemoryTypeDeviceSpecific</b>
+### -field KS_MemoryTypeDeviceSpecific
 
 <dd></dd>
 
-### -field <a id="KS_MemoryTypeUser"></a><a id="ks_memorytypeuser"></a><a id="KS_MEMORYTYPEUSER"></a><b>KS_MemoryTypeUser</b>
+### -field KS_MemoryTypeUser
 
 <dd></dd>
 
-### -field <a id="KS_MemoryTypeAnyHost"></a><a id="ks_memorytypeanyhost"></a><a id="KS_MEMORYTYPEANYHOST"></a><b>KS_MemoryTypeAnyHost</b>
+### -field KS_MemoryTypeAnyHost
 
 <dd></dd>
 </dl>

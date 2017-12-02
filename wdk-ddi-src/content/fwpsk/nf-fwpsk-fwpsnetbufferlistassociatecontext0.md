@@ -7,7 +7,7 @@ old-location: netvista\fwpsnetbufferlistassociatecontext0.htm
 old-project: netvista
 ms.assetid: 31135396-303b-4b94-8616-a4b7be207fa1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsNetBufferListAssociateContext0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,20 +63,20 @@ NTSTATUS NTAPI FwpsNetBufferListAssociateContext0(
 ## -parameters
 <dl>
 
-### -param <i>netBufferList</i> [in, out]
+### -param netBufferList [in, out]
 
 <dd>
 <p>A network buffer list that indicates one or more packets of interest to the callout driver.</p>
 </dd>
 
-### -param <i>layerId</i> [in]
+### -param layerId [in]
 
 <dd>
 <p>The identifier of the layer in which the context is being associated. When calling this function
      from the NDIS receive path, set this parameter to FWPS_LAYER_NON_WFP.</p>
 </dd>
 
-### -param <i>context</i> [in]
+### -param context [in]
 
 <dd>
 <p>Arbitrary context information set by the callout driver. The filter engine will pass this context
@@ -85,7 +85,7 @@ NTSTATUS NTAPI FwpsNetBufferListAssociateContext0(
      FWPS_NET_BUFFER_LIST_NOTIFY_FN0</a>.</p>
 </dd>
 
-### -param <i>contextTag</i> [in]
+### -param contextTag [in]
 
 <dd>
 <p>A locally unique identifier obtained by calling the 
@@ -93,19 +93,19 @@ NTSTATUS NTAPI FwpsNetBufferListAssociateContext0(
      FwpsNetBufferListGetTagForContext0</a> function.</p>
 </dd>
 
-### -param <i>providerGUID</i> [in]
+### -param providerGUID [in]
 
 <dd>
 <p>The provider GUID.</p>
 </dd>
 
-### -param <i>deviceObject</i> [in, out]
+### -param deviceObject [in, out]
 
 <dd>
 <p>A pointer to the callout driver's device object.</p>
 </dd>
 
-### -param <i>notifyFn</i> [in]
+### -param notifyFn [in]
 
 <dd>
 <p>A pointer to the callout driver's 
@@ -114,7 +114,7 @@ NTSTATUS NTAPI FwpsNetBufferListAssociateContext0(
      function.</p>
 </dd>
 
-### -param <i>flags</i> [in]
+### -param flags [in]
 
 <dd>
 <p>This parameter is reserved for future use and is set to zero.</p>
@@ -210,9 +210,9 @@ NTSTATUS NTAPI FwpsNetBufferListAssociateContext0(
    FwpsNetBufferListRetrieveContext0</a>
 </dt>
 <dt>
-<a href="NULL">Using Packet Tagging</a>
+<a href="netvista.using_packet_tagging">Using Packet Tagging</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListAssociateContext0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListAssociateContext0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

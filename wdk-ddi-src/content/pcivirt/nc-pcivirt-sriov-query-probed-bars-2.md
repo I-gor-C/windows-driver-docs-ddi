@@ -63,7 +63,7 @@ typedef SRIOV_QUERY_PROBED_BARS_2 *PSRIOV_QUERY_PROBED_BARS_2;
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to a driver-defined context.
@@ -71,13 +71,13 @@ typedef SRIOV_QUERY_PROBED_BARS_2 *PSRIOV_QUERY_PROBED_BARS_2;
                 </p>
 </dd>
 
-### -param <i>VfIndex</i> [in]
+### -param VfIndex [in]
 
 <dd>
 <p>A zero-based index of the VF that is being queried. </p>
 </dd>
 
-### -param <i>BaseRegisterValues</i> [out]
+### -param BaseRegisterValues [out]
 
 <dd>
 <p>A pointer to an array of variables that is bounded by the number of BARs in a PCI device.</p>

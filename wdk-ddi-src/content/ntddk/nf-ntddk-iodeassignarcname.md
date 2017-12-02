@@ -54,7 +54,7 @@ VOID IoDeassignArcName(
 ## -parameters
 <dl>
 
-### -param <i>ArcName</i> [in]
+### -param ArcName [in]
 
 <dd>
 <p>Pointer to a buffered Unicode string that is the ARC name. </p>

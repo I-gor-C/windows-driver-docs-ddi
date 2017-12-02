@@ -56,19 +56,19 @@ NTSTATUS RtlDWordPtrMult(
 ## -parameters
 <dl>
 
-### -param <i>dwMultiplicand</i> [in]
+### -param dwMultiplicand [in]
 
 <dd>
 <p>The value to be multiplied by <i>dwMultiplier</i>.</p>
 </dd>
 
-### -param <i>dwMultiplier</i> [in]
+### -param dwMultiplier [in]
 
 <dd>
 <p>The value by which to multiply <i>dwMultiplicand</i>.</p>
 </dd>
 
-### -param <i>pdwResult</i> [out]
+### -param pdwResult [out]
 
 <dd>
 <p>A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

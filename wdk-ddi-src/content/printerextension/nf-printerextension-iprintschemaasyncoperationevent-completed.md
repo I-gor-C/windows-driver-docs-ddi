@@ -56,13 +56,13 @@ HRESULT Completed(
 ## -parameters
 <dl>
 
-### -param <i>pTicket</i> [in]
+### -param pTicket [in]
 
 <dd>
 <p>The print ticket.</p>
 </dd>
 
-### -param <i>hrOperation</i> [in]
+### -param hrOperation [in]
 
 <dd>
 <p>The result of the completed operation.</p>

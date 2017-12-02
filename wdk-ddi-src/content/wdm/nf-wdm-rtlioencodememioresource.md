@@ -60,37 +60,37 @@ NTSTATUS RtlIoEncodeMemIoResource(
 ## -parameters
 <dl>
 
-### -param <i>Descriptor</i> [in]
+### -param Descriptor [in]
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--io-resource-descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structure to update.</p>
 </dd>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>The resource type of the address range. This parameter can be <b>CmResourceTypeMemory</b>, <b>CmResourceTypeMemoryLarge</b>, or <b>CmResourceTypePort</b>. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>The length, in bytes, of the range of assignable addresses. </p>
 </dd>
 
-### -param <i>Alignment</i> [in]
+### -param Alignment [in]
 
 <dd>
 <p>The alignment, in bytes, of the starting address of address range.</p>
 </dd>
 
-### -param <i>MinimumAddress</i> [in]
+### -param MinimumAddress [in]
 
 <dd>
 <p>The minimum address that can be assigned to the device. </p>
 </dd>
 
-### -param <i>MaximumAddress</i> [in]
+### -param MaximumAddress [in]
 
 <dd>
 <p>The maximum address that can be assigned to the device.</p>

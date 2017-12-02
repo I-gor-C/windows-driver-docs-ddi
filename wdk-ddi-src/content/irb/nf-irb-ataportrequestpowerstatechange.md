@@ -57,25 +57,25 @@ VOID AtaPortRequestPowerStateChange(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> 
+### -param ChannelExtension 
 
 <dd>
 <p>A pointer to the channel extension. </p>
 </dd>
 
-### -param <i>TargetId</i> 
+### -param TargetId 
 
 <dd>
 <p>Specifies the target identifier of the device. </p>
 </dd>
 
-### -param <i>Lun</i> 
+### -param Lun 
 
 <dd>
 <p>Specifies the logical unit number (LUN). </p>
 </dd>
 
-### -param <i>DesiredPowerState</i> 
+### -param DesiredPowerState 
 
 <dd>
 <p>Contains an enumerator value of type <a href="..\irb\ne-irb-ide-power-state.md">IDE_POWER_STATE</a> that indicates the power state to which the indicated device should be changed. </p>

@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicegetsystempoweraction.htm
 old-project: wdf
 ms.assetid: 5c4e44cd-94a3-4265-b195-7a5711d8035d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceGetSystemPowerAction
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ POWER_ACTION WdfDeviceGetSystemPowerAction(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>

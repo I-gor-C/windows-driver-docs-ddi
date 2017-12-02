@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbackswide_createprocess.htm
 old-project: debugger
 ms.assetid: d5378b35-da27-419f-a161-0c542aa4a9f9
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugEventCallbacksWide, CreateProcess, IDebugEventCallbacksWide::CreateProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,67 +64,67 @@ HRESULT CreateProcess(
 ## -parameters
 <dl>
 
-### -param <i>ImageFileHandle</i> [in]
+### -param ImageFileHandle [in]
 
 <dd>
 <p>Specifies the handle to the process's image file.    If this information is not available, <i>ImageFileHandle</i> will be <b>NULL</b>.  </p>
 </dd>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Specifies the handle to the process.  This parameter corresponds to the <b>hProcess</b> field in the CREATE_PROCESS_DEBUG_INFO structure.  If this information is not available, <i>ImageFileHandle</i> will be <b>NULL</b>.  </p>
 </dd>
 
-### -param <i>BaseOffset</i> [in]
+### -param BaseOffset [in]
 
 <dd>
 <p>Specifies the base address of the process's executable image in the target's memory address space.  If this information is not available, <i>BaseOffset</i> will be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ModuleSize</i> [in]
+### -param ModuleSize [in]
 
 <dd>
 <p>Specifies the process's executable image size in bytes.  If this information is not available, <i>ModuleSize</i> will be zero.</p>
 </dd>
 
-### -param <i>ModuleName</i> [in, optional]
+### -param ModuleName [in, optional]
 
 <dd>
 <p>Specifies the simplified module name that is used by the debugger engine.  In most cases, this matches the image file name excluding the extension. If this information is not available, <i>ModuleName</i> will be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ImageName</i> [in, optional]
+### -param ImageName [in, optional]
 
 <dd>
 <p>Specifies the process's executable-image file name, which can include the path.   If this information is not available, <i>ImageName</i> will be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>CheckSum</i> [in]
+### -param CheckSum [in]
 
 <dd>
 <p>Specifies the checksum of the process's executable image.  If this information is not available, <i>CheckSum</i> will be zero.</p>
 </dd>
 
-### -param <i>TimeDateStamp</i> [in]
+### -param TimeDateStamp [in]
 
 <dd>
 <p>Specifies the time and date stamp of the process's executable-image file.  If this information is not available, <i>TimeDateStamp</i> will be zero.</p>
 </dd>
 
-### -param <i>InitialThreadHandle</i> [in]
+### -param InitialThreadHandle [in]
 
 <dd>
 <p>Specifies the handle to the process's initial thread.  This parameter corresponds to the <b>hThread</b> field in the CREATE_PROCESS_DEBUG_INFO structure.  If this information is not available, <i>InitialThreadHandle</i> will be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>ThreadDataOffset</i> [in]
+### -param ThreadDataOffset [in]
 
 <dd>
 <p>Specifies a block of data that the operating system maintains for this thread.  The actual data in the block is operating system-specific.  If this information is not available, <i>ThreadDataOffset</i> will be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>StartOffset</i> [in]
+### -param StartOffset [in]
 
 <dd>
 <p>Specifies the starting address of the thread in the process's virtual address space.    If this information is not available, <i>StartOffset</i> will be <b>NULL</b>.</p>
@@ -132,7 +132,7 @@ HRESULT CreateProcess(
 </dl>
 
 ## -returns
-<p>This method returns a <a href="debugger.debug_status_xxx">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
+<p>This method returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541651">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
 
 ## -remarks
 <p>This method is only called by the engine if the DEBUG_EVENT_CREATE_PROCESS flag is set in the mask returned by <a href="debugger.idebugeventcallbackswide_getinterestmask">IDebugEventCallbacksWide::GetInterestMask</a>.</p>

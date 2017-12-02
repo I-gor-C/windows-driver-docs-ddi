@@ -56,13 +56,13 @@ NTSTATUS RtlStringCbLength(
 ## -parameters
 <dl>
 
-### -param <i>psz</i> [in]
+### -param psz [in]
 
 <dd>
 <p>A pointer to a buffer that contains a null-terminated string, the length of which will be checked.</p>
 </dd>
 
-### -param <i>cbMax</i> [in]
+### -param cbMax [in]
 
 <dd>
 <p>The maximum number of bytes allowed in the buffer that is pointed to by <i>psz</i>, including the terminating null character. </p>
@@ -70,7 +70,7 @@ NTSTATUS RtlStringCbLength(
 <p>For ANSI strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(char). </p>
 </dd>
 
-### -param <i>pcb</i> [out, optional]
+### -param pcb [out, optional]
 
 <dd>
 <p>If the caller supplies a non-<b>NULL</b> address pointer, the function loads the address with the length, in bytes, of the string that is contained in the buffer. The length does not include the string's terminating null character.</p>

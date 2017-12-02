@@ -55,13 +55,13 @@ typedef struct _D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>Dst</b>
+### -field Dst
 
 <dd>
 <p>Destination.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>Value.</p>

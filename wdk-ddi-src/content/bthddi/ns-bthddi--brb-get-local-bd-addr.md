@@ -55,7 +55,7 @@ struct _BRB_GET_LOCAL_BD_ADDR {
 ## -struct-fields
 <dl>
 
-### -field <b>Hdr</b>
+### -field Hdr
 
 <dd>
 <p>A 
@@ -63,7 +63,7 @@ struct _BRB_GET_LOCAL_BD_ADDR {
      about the current BRB.</p>
 </dd>
 
-### -field <b>BtAddress</b>
+### -field BtAddress
 
 <dd>
 <p>An output member that receives the address of the local radio.</p>

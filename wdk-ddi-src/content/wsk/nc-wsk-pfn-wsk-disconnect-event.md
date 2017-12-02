@@ -7,7 +7,7 @@ old-location: netvista\wskdisconnectevent.htm
 old-project: netvista
 ms.assetid: bf12d7b3-080e-46d9-b276-76d42068e7c6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NTSTATUS APIENTRY WskDisconnectEvent(
 ## -parameters
 <dl>
 
-### -param <i>SocketContext</i> [in, optional]
+### -param SocketContext [in, optional]
 
 <dd>
 <p>A pointer to the socket context for the connection-oriented socket that has been disconnected. The
@@ -90,7 +90,7 @@ NTSTATUS APIENTRY WskDisconnectEvent(
 </ul>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of a combination of the following flags:
@@ -98,14 +98,14 @@ NTSTATUS APIENTRY WskDisconnectEvent(
 <p></p>
 <dl>
 
-### -param <a id="WSK_FLAG_ABORTIVE"></a><a id="wsk_flag_abortive"></a>WSK_FLAG_ABORTIVE
+### -param WSK_FLAG_ABORTIVE
 
 <dd>
 <p>The remote application performed an abortive disconnect of the socket. If this flag is not set,
        the remote application performed a graceful disconnect of the socket.</p>
 </dd>
 
-### -param <a id="WSK_FLAG_AT_DISPATCH_LEVEL"></a><a id="wsk_flag_at_dispatch_level"></a>WSK_FLAG_AT_DISPATCH_LEVEL
+### -param WSK_FLAG_AT_DISPATCH_LEVEL
 
 <dd>
 <p>The WSK subsystem called the 
@@ -208,4 +208,4 @@ NTSTATUS APIENTRY WskDisconnectEvent(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_DISCONNECT_EVENT callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_DISCONNECT_EVENT callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="PmiMeasurementConfiguration"></a><a id="pmimeasurementconfiguration"></a><a id="PMIMEASUREMENTCONFIGURATION"></a><b>PmiMeasurementConfiguration</b>
+### -field PmiMeasurementConfiguration
 
 <dd>
 <p>The PMI configuration data, formatted as a <a href="..\pmi\ns-pmi--pmi-measurement-configuration.md">PMI_MEASUREMENT_CONFIGURATION</a> structure, contains information about the measurement configuration of the power meter.</p>
 </dd>
 
-### -field <a id="PmiBudgetingConfiguration"></a><a id="pmibudgetingconfiguration"></a><a id="PMIBUDGETINGCONFIGURATION"></a><b>PmiBudgetingConfiguration</b>
+### -field PmiBudgetingConfiguration
 
 <dd>
 <p>The PMI configuration data, formatted as a <a href="..\pmi\ns-pmi--pmi-budgeting-configuration.md">PMI_BUDGETING_CONFIGURATION</a> structure, contains information about the budgeting configuration of the power meter.</p>
 </dd>
 
-### -field <a id="PmiThresholdConfiguration"></a><a id="pmithresholdconfiguration"></a><a id="PMITHRESHOLDCONFIGURATION"></a><b>PmiThresholdConfiguration</b>
+### -field PmiThresholdConfiguration
 
 <dd>
 <p>The PMI configuration data, formatted as a <a href="..\pmi\ns-pmi--pmi-threshold-configuration.md">PMI_THRESHOLD_CONFIGURATION</a> structure, contains information about the budgeting configuration of the power meter.</p>
 </dd>
 
-### -field <a id="PmiConfigurationMax"></a><a id="pmiconfigurationmax"></a><a id="PMICONFIGURATIONMAX"></a><b>PmiConfigurationMax</b>
+### -field PmiConfigurationMax
 
 <dd>
 <p>The maximum number of PMI configuration structures.</p>

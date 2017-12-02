@@ -59,19 +59,19 @@ BOOLEAN IdeHwControl(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the channel extension.</p>
 </dd>
 
-### -param <i>ControlAction</i> [in]
+### -param ControlAction [in]
 
 <dd>
 <p>Contains an enumerator value of type <a href="..\irb\ne-irb-ide-control-action.md">IDE_CONTROL_ACTION</a> that indicates the control action to perform. </p>
 </dd>
 
-### -param <i>Parameters</i> [in, out]
+### -param Parameters [in, out]
 
 <dd>
 <p>A pointer to a buffer that contains the parameters that are associated with the control action. This parameter can have one of the values in the following table.</p>
@@ -114,7 +114,7 @@ BOOLEAN IdeHwControl(
 ## -remarks
 <p>The port driver makes sure that there is no outstanding I/O on the channel before it invokes this routine. The miniport driver can have its own power policy methods when the system enters a different power state. In order to achieve this, the miniport driver needs to do the following:</p>
 
-<p>Add a power policy setting scheme into the miniport driver's INF file. A GUID is needed to present a miniport driver-defined power policy. For more information about the power settings directive, see <a href="NULL">INF AddPowerSetting Directive</a>. More information about the GUIDs can be found at <a href="https://msdn.microsoft.com/library/windows/hardware/mt608265">Disk settings</a>.</p>
+<p>Add a power policy setting scheme into the miniport driver's INF file. A GUID is needed to present a miniport driver-defined power policy. For more information about the power settings directive, see <a href="devinst.inf_addpowersetting_directive">INF AddPowerSetting Directive</a>. More information about the GUIDs can be found at <a href="https://msdn.microsoft.com/library/windows/hardware/mt608265">Disk settings</a>.</p>
 
 <p>After vendor-defined power management is registered, the miniport driver will be able to receive calls to its <i>IdeHwControl</i> routine with control action <b>IdeVendorDefined</b> when the system power scheme changes.</p>
 

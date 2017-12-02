@@ -57,25 +57,25 @@ typedef struct _D3DKMDT_PALETTEDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Red</b>
+### -field Red
 
 <dd>
 <p>An 8-bit value for the red portion of the color registers.</p>
 </dd>
 
-### -field <b>Green</b>
+### -field Green
 
 <dd>
 <p>An 8-bit value for the green portion of the color registers.</p>
 </dd>
 
-### -field <b>Blue</b>
+### -field Blue
 
 <dd>
 <p>An 8-bit value for the blue portion of the color registers.</p>
 </dd>
 
-### -field <b>Unused</b>
+### -field Unused
 
 <dd>
 <p>An unused portion of the display.</p>

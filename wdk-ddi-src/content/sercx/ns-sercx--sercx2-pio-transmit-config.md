@@ -63,55 +63,55 @@ typedef struct _SERCX2_PIO_TRANSMIT_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
-### -field <b>EvtSerCx2PioTransmitInitializeTransaction</b>
+### -field EvtSerCx2PioTransmitInitializeTransaction
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-pio-transmit-initialize-transaction.md">EvtSerCx2PioTransmitInitializeTransaction</a> event callback function. This member must point to a valid function.</p>
 </dd>
 
-### -field <b>EvtSerCx2PioTransmitCleanupTransaction</b>
+### -field EvtSerCx2PioTransmitCleanupTransaction
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-pio-transmit-cleanup-transaction.md">EvtSerCx2PioTransmitCleanupTransaction</a> event callback function. This member must point to a valid function.</p>
 </dd>
 
-### -field <b>EvtSerCx2PioTransmitWriteBuffer</b>
+### -field EvtSerCx2PioTransmitWriteBuffer
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-pio-transmit-write-buffer.md">EvtSerCx2PioTransmitWriteBuffer</a> event callback function. This member must point to a valid function.</p>
 </dd>
 
-### -field <b>EvtSerCx2PioTransmitEnableReadyNotification</b>
+### -field EvtSerCx2PioTransmitEnableReadyNotification
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-pio-transmit-enable-ready-notification.md">EvtSerCx2PioTransmitEnableReadyNotification</a> event callback function. This member must point to a valid function.</p>
 </dd>
 
-### -field <b>EvtSerCx2PioTransmitCancelReadyNotification</b>
+### -field EvtSerCx2PioTransmitCancelReadyNotification
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-pio-transmit-cancel-ready-notification.md">EvtSerCx2PioTransmitCancelReadyNotification</a> event callback function. This member must point to a valid function.</p>
 </dd>
 
-### -field <b>EvtSerCx2PioTransmitDrainFifo</b>
+### -field EvtSerCx2PioTransmitDrainFifo
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-pio-transmit-drain-fifo.md">EvtSerCx2PioTransmitDrainFifo</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function. However, a driver that implements this function must also implement <i>EvtSerCx2PioTransmitCancelDrainFifo</i> and <i>EvtSerCx2PioTransmitPurgeFifo</i> functions.</p>
 </dd>
 
-### -field <b>EvtSerCx2PioTransmitCancelDrainFifo</b>
+### -field EvtSerCx2PioTransmitCancelDrainFifo
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-pio-transmit-cancel-drain-fifo.md">EvtSerCx2PioTransmitCancelDrainFifo</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function. However, a driver that implements this function must also implement <i>EvtSerCx2PioTransmitDrainFifo</i> and <i>EvtSerCx2PioTransmitPurgeFifo</i> functions.</p>
 </dd>
 
-### -field <b>EvtSerCx2PioTransmitPurgeFifo</b>
+### -field EvtSerCx2PioTransmitPurgeFifo
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-pio-transmit-purge-fifo.md">EvtSerCx2PioTransmitPurgeFifo</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function. However, a driver that implements this function must also implement <i>EvtSerCx2PioTransmitDrainFifo</i> and <i>EvtSerCx2PioTransmitCancelDrainFifo</i> functions.</p>

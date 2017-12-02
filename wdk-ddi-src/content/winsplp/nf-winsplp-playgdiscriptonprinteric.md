@@ -60,27 +60,27 @@ BOOL WINAPI PlayGdiScriptOnPrinterIC(
 ## -parameters
 <dl>
 
-### -param <i>hPrinterIC</i> [in]
+### -param hPrinterIC [in]
 
 <dd></dd>
 
-### -param <i>pIn</i> [in]
+### -param pIn [in]
 
 <dd></dd>
 
-### -param <i>cIn</i> [in]
+### -param cIn [in]
 
 <dd></dd>
 
-### -param <i>pOut</i> [out]
+### -param pOut [out]
 
 <dd></dd>
 
-### -param <i>cOut</i> [in]
+### -param cOut [in]
 
 <dd></dd>
 
-### -param <i>ul</i> [in]
+### -param ul [in]
 
 <dd></dd>
 </dl>

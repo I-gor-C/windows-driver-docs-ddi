@@ -54,7 +54,7 @@ HRESULT KsIsMediaTypeInRanges(
 ## -parameters
 <dl>
 
-### -param <i>DataRanges</i> [in]
+### -param DataRanges [in]
 
 <dd>
 <p>Pointer to a buffer that contains a <a href="stream.ksmultiple_item">KSMULTIPLE_ITEM</a> structure, followed by a sequence of extensible <a href="stream.ksdatarange">KSDATARANGE</a> structures, aligned on 64-bit boundaries. The KSMULTIPLE_ITEM structure is a header that describes the size of the buffer and the number of entries in the list that follows the header.</p>

@@ -57,14 +57,14 @@ typedef struct _CO_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of the vendor-specific option stored in the L2CAP_CONFIG_OPTION structure. This can
      accept either an option or a hint.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The size, in bytes, of the vendor-specific option stored in the L2CAP_CONFIG_OPTION

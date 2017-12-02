@@ -66,79 +66,79 @@ typedef struct _D3DDDI_LIGHT {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>[in] A D3DLIGHTTYPE-typed value that indicates the type of the light source. For more information about D3DLIGHTTYPE, see the Microsoft Windows SDK documentation.</p>
 </dd>
 
-### -field <b>Diffuse</b>
+### -field Diffuse
 
 <dd>
 <p>[in] A D3DCOLORVALUE structure that indicates the diffuse color that is emitted by the light. For more information about D3DCOLORVALUE, see the Windows SDK documentation.</p>
 </dd>
 
-### -field <b>Specular</b>
+### -field Specular
 
 <dd>
 <p>[in] A D3DCOLORVALUE structure that indicates the specular color that is emitted by the light.</p>
 </dd>
 
-### -field <b>Ambient</b>
+### -field Ambient
 
 <dd>
 <p>[in] A D3DCOLORVALUE structure that indicates the ambient color that is emitted by the light.</p>
 </dd>
 
-### -field <b>Position</b>
+### -field Position
 
 <dd>
 <p>[in] A D3DVECTOR structure that indicates the position of the light in world space. This member has no meaning for directional lights (that is, if D3DLIGHT_DIRECTIONAL is set in the <b>Type</b> member) and is ignored in that situation. For more information about D3DVECTOR, see the Windows SDK documentation.</p>
 </dd>
 
-### -field <b>Direction</b>
+### -field Direction
 
 <dd>
 <p>[in] A D3DVECTOR structure that indicates the direction that the light is pointing in world space. This member has meaning only for directional lights and spotlights (that is, if D3DLIGHT_DIRECTIONAL and D3DLIGHT_SPOT are set in <b>Type</b>). This vector is not required to be normalized, but it should have a nonzero length.</p>
 </dd>
 
-### -field <b>Range</b>
+### -field Range
 
 <dd>
 <p>[in] The distance beyond which the light has no effect. The maximum allowable value for this member is D3DLIGHT_RANGE_MAX, which is defined as the square root of FLT_MAX. This member does not affect directional lights.</p>
 </dd>
 
-### -field <b>Falloff</b>
+### -field Falloff
 
 <dd>
 <p>[in] The decrease in illumination between a spotlight's inner cone (the angle that is specified by the <b>Theta</b> member) and the outer edge of the outer cone (the angle that is specified by the <b>Phi</b> member). The effect of falloff on the lighting is subtle. Furthermore, a small performance penalty is incurred by shaping the falloff curve. For these reasons, most developers set this member to 1.0.</p>
 </dd>
 
-### -field <b>Attenuation0</b>
+### -field Attenuation0
 
 <dd>
 <p>[in] The light's constant attenuation factor. Attenuation values specify how the light intensity changes over distance. Attenuation does not affect directional lights. Valid values for this member range from 0.0 through infinity.</p>
 </dd>
 
-### -field <b>Attenuation1</b>
+### -field Attenuation1
 
 <dd>
 <p>[in] The light's linear attenuation factor. Attenuation values specify how the light intensity changes over distance. Attenuation does not affect directional lights. Valid values for this member range from 0.0 through infinity.</p>
 </dd>
 
-### -field <b>Attenuation2</b>
+### -field Attenuation2
 
 <dd>
 <p>[in] The light's quadratic attenuation factor. Attenuation values specify how the light intensity changes over distance. Attenuation does not affect directional lights. Valid values for this member range from 0.0 through infinity.</p>
 </dd>
 
-### -field <b>Theta</b>
+### -field Theta
 
 <dd>
 <p>[in] The angle, in radians, of a spotlight's inner cone--that is, the fully illuminated spotlight cone. This value must be in the range from 0 through the value that is specified by the <b>Phi</b> member.</p>
 </dd>
 
-### -field <b>Phi</b>
+### -field Phi
 
 <dd>
 <p>[in] The angle, in radians, that defines the outer edge of the spotlight's outer cone. Points outside this cone are not lit by the spotlight. This value must be between 0 and Pi.</p>

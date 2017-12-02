@@ -70,26 +70,26 @@ typedef struct _D3DDDICB_LOCKFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>ReadOnly</b>
+### -field ReadOnly
 
 <dd>
 <p>A UINT value that specifies whether the locked allocation can only be read from. Setting this member is equivalent to setting the first bit of the 32-bit  <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>WriteOnly</b>
+### -field WriteOnly
 
 <dd>
 <p>A UINT value that specifies whether the locked allocation can only be written to. Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>DonotWait</b>
+### -field DonotWait
 
 <dd>
 <p>A UINT value that specifies whether the video memory manager should wait to lock the allocation. If this member is set, the memory manager fails the call to <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lockcb.md">pfnLockCb</a> with D3DERR_WASSTILLDRAWING if the graphics hardware is using the allocation.</p>
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>IgnoreSync</b>
+### -field IgnoreSync
 
 <dd>
 <p>A UINT value that specifies whether the video memory manager should check whether the graphics hardware is using the allocation. If this member is set, the memory manager should not check.</p>
@@ -97,21 +97,21 @@ typedef struct _D3DDDICB_LOCKFLAGS {
 <p>Setting this member is equivalent to setting the fourth bit of the 32-bit <b>Value</b> member (0x00000008).</p>
 </dd>
 
-### -field <b>LockEntire</b>
+### -field LockEntire
 
 <dd>
 <p>A UINT value that specifies whether the entire allocation region is locked rather than just a subregion.</p>
 <p>Setting this member is equivalent to setting the fifth bit of the 32-bit <b>Value</b> member (0x00000010).</p>
 </dd>
 
-### -field <b>DonotEvict</b>
+### -field DonotEvict
 
 <dd>
 <p>A UINT value that specifies whether the video memory manager should evict the allocation so that the lock can succeed. If this member is set, the memory manager should not evict the allocation. If the allocation must be evicted to handle the lock request, the memory manager fails the call to <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lockcb.md">pfnLockCb</a> with D3DERR_NOTAVAILABLE. Eviction might be necessary when all of the deswizzling apertures are exhausted.</p>
 <p>Setting this member is equivalent to setting the sixth bit of the 32-bit <b>Value</b> member (0x00000020).</p>
 </dd>
 
-### -field <b>AcquireAperture</b>
+### -field AcquireAperture
 
 <dd>
 <p>A UINT value that specifies whether the video memory manager should call the display miniport driver's <a href="display.dxgkddiacquireswizzlingrange">DxgkDdiAcquireSwizzlingRange</a> function to set up an unswizzling aperture for the allocation.</p>
@@ -120,7 +120,7 @@ typedef struct _D3DDDICB_LOCKFLAGS {
 <p>Setting this member is equivalent to setting the seventh bit of the 32-bit <b>Value</b> member (0x00000040).</p>
 </dd>
 
-### -field <b>Discard</b>
+### -field Discard
 
 <dd>
 <p>A UINT value that specifies whether the video memory manager can rename or multiple-buffer the allocation. For more information about renaming allocations, see <a href="https://msdn.microsoft.com/f22e19ba-9ff3-4aa1-a3f0-103f67ea7c60">Requesting to Rename an Allocation</a>.</p>
@@ -128,14 +128,14 @@ typedef struct _D3DDDICB_LOCKFLAGS {
 <p>Setting this member is equivalent to setting the eighth bit of the 32-bit <b>Value</b> member (0x00000080).</p>
 </dd>
 
-### -field <b>NoExistingReference</b>
+### -field NoExistingReference
 
 <dd>
 <p>A UINT value that specifies whether the user-mode display driver currently does not have queued in its command buffer a reference to any instance of the allocation that is being locked. The driver should use the <b>NoExistingReference</b> member after the video memory manager fails the lock request by using only the <b>Discard</b> flag and after the driver flushes its current command buffer to the kernel. The driver should use <b>NoExistingReference</b> in combination with <b>Discard</b>.</p>
 <p>Setting this member is equivalent to setting the ninth bit of the 32-bit <b>Value</b> member (0x00000100).</p>
 </dd>
 
-### -field <b>UseAlternateVA</b>
+### -field UseAlternateVA
 
 <dd>
 <p>A UINT value that specifies whether the display miniport driver can lock an allocation at a different physical address than the allocation's current segment location or with a different memory footprint than was previously allocated. When this flag is specified, the display miniport driver can update the base address and size of the physical address range that the allocation is CPU accessible through (by updating the <b>RangeSize</b> and <b>CPUTranslatedAddress</b> members of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-acquireswizzlingrange.md">DXGKARG_ACQUIRESWIZZLINGRANGE</a> structure in a call to the <a href="display.dxgkddiacquireswizzlingrange">DxgkDdiAcquireSwizzlingRange</a> function). When this flag is specified, the video memory manager attempts to allocate a new virtual address to handle the lock request rather than use the allocation backing store virtual address. However, if the video memory manager cannot allocate the new virtual address, the lock request fails.</p>
@@ -163,7 +163,7 @@ typedef struct _D3DDDICB_LOCKFLAGS {
 <p>Setting this member is equivalent to setting the tenth bit of the 32-bit <b>Value</b> member (0x00000200).</p>
 </dd>
 
-### -field <b>IgnoreReadSync</b>
+### -field IgnoreReadSync
 
 <dd>
 <p>A UINT value that specifies whether the video memory manager should wait only for pending Graphics Processing Unit (GPU) write operations to the allocation to complete. If this member is set, the memory manager is not required to wait for GPU read operations to complete. That is, as soon as the last GPU write operation completes, the lock can return even though the GPU might still be reading from the allocation.</p>
@@ -171,13 +171,13 @@ typedef struct _D3DDDICB_LOCKFLAGS {
 <p>Setting this member is equivalent to setting the eleventh bit of the 32-bit <b>Value</b> member (0x00000400).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 21 bits (0xFFFFF800) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that is contained in D3DDDICB_LOCKFLAGS that can hold one 32-bit value that identifies how to lock an allocation.</p>

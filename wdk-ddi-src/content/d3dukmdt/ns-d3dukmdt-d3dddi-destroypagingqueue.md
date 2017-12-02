@@ -54,7 +54,7 @@ typedef struct D3DDDI_DESTROYPAGINGQUEUE {
 ## -struct-fields
 <dl>
 
-### -field <b>hPagingQueue</b>
+### -field hPagingQueue
 
 <dd>
 <p>[in] A paging queue handle to be destroyed.</p>

@@ -7,7 +7,7 @@ old-location: netvista\fwpsgetpacketlistsecurityinformation0.htm
 old-project: netvista
 ms.assetid: c3391615-963b-4916-9280-ce782269692c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsGetPacketListSecurityInformation0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ NTSTATUS NTAPI FwpsGetPacketListSecurityInformation0(
 ## -parameters
 <dl>
 
-### -param <i>packetList</i> [in]
+### -param packetList [in]
 
 <dd>
 <p>A pointer to the 
@@ -66,7 +66,7 @@ NTSTATUS NTAPI FwpsGetPacketListSecurityInformation0(
      associated information is being retrieved.</p>
 </dd>
 
-### -param <i>queryFlags</i> [in]
+### -param queryFlags [in]
 
 <dd>
 <p>A UINT32 value that contains a bitwise OR of a combination of the following flags that specify the
@@ -75,19 +75,19 @@ NTSTATUS NTAPI FwpsGetPacketListSecurityInformation0(
 <p></p>
 <dl>
 
-### -param <a id="FWPS_PACKET_LIST_INFORMATION_QUERY_INBOUND"></a><a id="fwps_packet_list_information_query_inbound"></a>FWPS_PACKET_LIST_INFORMATION_QUERY_INBOUND
+### -param FWPS_PACKET_LIST_INFORMATION_QUERY_INBOUND
 
 <dd>
 <p>Retrieve information for an inbound packet list.</p>
 </dd>
 
-### -param <a id="FWPS_PACKET_LIST_INFORMATION_QUERY_OUTBOUND"></a><a id="fwps_packet_list_information_query_outbound"></a>FWPS_PACKET_LIST_INFORMATION_QUERY_OUTBOUND
+### -param FWPS_PACKET_LIST_INFORMATION_QUERY_OUTBOUND
 
 <dd>
 <p>Retrieve information for an outbound packet list.</p>
 </dd>
 
-### -param <a id="FWPS_PACKET_LIST_INFORMATION_QUERY_IPSEC"></a><a id="fwps_packet_list_information_query_ipsec"></a>FWPS_PACKET_LIST_INFORMATION_QUERY_IPSEC
+### -param FWPS_PACKET_LIST_INFORMATION_QUERY_IPSEC
 
 <dd>
 <p>Retrieve the IPsec information associated with the packet list. This flag must be used in
@@ -95,19 +95,19 @@ NTSTATUS NTAPI FwpsGetPacketListSecurityInformation0(
        FWPS_PACKET_LIST_INFORMATION_QUERY_OUTBOUND flag.</p>
 </dd>
 
-### -param <a id="FWPS_PACKET_LIST_INFORMATION_QUERY_FWP"></a><a id="fwps_packet_list_information_query_fwp"></a>FWPS_PACKET_LIST_INFORMATION_QUERY_FWP
+### -param FWPS_PACKET_LIST_INFORMATION_QUERY_FWP
 
 <dd>
 <p>Retrieve the Windows Filtering Platform information associated with the packet list.</p>
 </dd>
 
-### -param <a id="FWPS_PACKET_LIST_INFORMATION_QUERY_ALL_INBOUND"></a><a id="fwps_packet_list_information_query_all_inbound"></a>FWPS_PACKET_LIST_INFORMATION_QUERY_ALL_INBOUND
+### -param FWPS_PACKET_LIST_INFORMATION_QUERY_ALL_INBOUND
 
 <dd>
 <p>Retrieve all information associated with an inbound packet list.</p>
 </dd>
 
-### -param <a id="FWPS_PACKET_LIST_INFORMATION_QUERY_ALL_OUTBOUND"></a><a id="fwps_packet_list_information_query_all_outbound"></a>FWPS_PACKET_LIST_INFORMATION_QUERY_ALL_OUTBOUND
+### -param FWPS_PACKET_LIST_INFORMATION_QUERY_ALL_OUTBOUND
 
 <dd>
 <p>Retrieve all information associated with an outbound packet list.</p>
@@ -115,7 +115,7 @@ NTSTATUS NTAPI FwpsGetPacketListSecurityInformation0(
 </dl>
 </dd>
 
-### -param <i>packetInformation</i> [in, out]
+### -param packetInformation [in, out]
 
 <dd>
 <p>A pointer to an 
@@ -205,4 +205,4 @@ NTSTATUS NTAPI FwpsGetPacketListSecurityInformation0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsGetPacketListSecurityInformation0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsGetPacketListSecurityInformation0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

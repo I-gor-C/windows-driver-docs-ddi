@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwidetail_2.htm
 old-project: netvista
 ms.assetid: 58b0c3bc-f63a-4db7-a5e1-767f12b7655a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMSGMWIDETAIL,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef struct _RILMSGMWIDETAIL {
 ## -struct-fields
 <dl>
 
-### -field <b>dwMwiType</b>
+### -field dwMwiType
 
 <dd></dd>
 
-### -field <b>dwMwiPriority</b>
+### -field dwMwiPriority
 
 <dd></dd>
 
-### -field <b>raToAddress</b>
+### -field raToAddress
 
 <dd></dd>
 
-### -field <b>raFromAddress</b>
+### -field raFromAddress
 
 <dd></dd>
 
-### -field <b>stDateSent</b>
+### -field stDateSent
 
 <dd></dd>
 
-### -field <b>wszSubject</b>
+### -field wszSubject
 
 <dd></dd>
 
-### -field <b>wszMessageId</b>
+### -field wszMessageId
 
 <dd></dd>
 </dl>

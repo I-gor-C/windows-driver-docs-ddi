@@ -56,19 +56,19 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_NORMAL"></a><a id="d3d11_1ddi_video_processor_output_rate_normal"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_NORMAL</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_NORMAL
 
 <dd>
 <p>The output is the normal frame rate.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_HALF"></a><a id="d3d11_1ddi_video_processor_output_rate_half"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_HALF</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_HALF
 
 <dd>
 <p>The output is half the frame rate.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_CUSTOM"></a><a id="d3d11_1ddi_video_processor_output_rate_custom"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_CUSTOM</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_CUSTOM
 
 <dd>
 <p>The output is a custom frame rate.</p>

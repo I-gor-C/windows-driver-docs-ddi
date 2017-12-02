@@ -56,19 +56,19 @@ typedef enum D3DDDI_SCANLINEORDERING {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_SCANLINEORDERING_UNKNOWN"></a><a id="d3dddi_scanlineordering_unknown"></a><b>D3DDDI_SCANLINEORDERING_UNKNOWN</b>
+### -field D3DDDI_SCANLINEORDERING_UNKNOWN
 
 <dd>
 <p>The value indicates that scan-line ordering is unknown. </p>
 </dd>
 
-### -field <a id="D3DDDI_SCANLINEORDERING_PROGRESSIVE"></a><a id="d3dddi_scanlineordering_progressive"></a><b>D3DDDI_SCANLINEORDERING_PROGRESSIVE</b>
+### -field D3DDDI_SCANLINEORDERING_PROGRESSIVE
 
 <dd>
 <p>The value indicates that scan-line ordering is progressive. </p>
 </dd>
 
-### -field <a id="D3DDDI_SCANLINEORDERING_INTERLACED"></a><a id="d3dddi_scanlineordering_interlaced"></a><b>D3DDDI_SCANLINEORDERING_INTERLACED</b>
+### -field D3DDDI_SCANLINEORDERING_INTERLACED
 
 <dd>
 <p>The value indicates that scan-line ordering is interlaced. </p>

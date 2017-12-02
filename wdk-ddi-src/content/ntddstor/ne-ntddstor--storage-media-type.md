@@ -116,379 +116,379 @@ typedef enum _STORAGE_MEDIA_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DDS_4mm"></a><a id="dds_4mm"></a><a id="DDS_4MM"></a><b>DDS_4mm</b>
+### -field DDS_4mm
 
 <dd>
 <p>Indicates a DAT DDS1 or DDS2 tape device (all vendors).</p>
 </dd>
 
-### -field <a id="MiniQic"></a><a id="miniqic"></a><a id="MINIQIC"></a><b>MiniQic</b>
+### -field MiniQic
 
 <dd>
 <p>Indicates a mini-QIC tape device. </p>
 </dd>
 
-### -field <a id="Travan"></a><a id="travan"></a><a id="TRAVAN"></a><b>Travan</b>
+### -field Travan
 
 <dd>
 <p>Indicates a Travan TR-1, 2 or 3 tape device. </p>
 </dd>
 
-### -field <a id="QIC"></a><a id="qic"></a><b>QIC</b>
+### -field QIC
 
 <dd>
 <p>Indicates a QIC tape device. </p>
 </dd>
 
-### -field <a id="MP_8mm"></a><a id="mp_8mm"></a><a id="MP_8MM"></a><b>MP_8mm</b>
+### -field MP_8mm
 
 <dd>
 <p>Indicates an 8mm Exabyte metal particle tape device. </p>
 </dd>
 
-### -field <a id="AME_8mm"></a><a id="ame_8mm"></a><a id="AME_8MM"></a><b>AME_8mm</b>
+### -field AME_8mm
 
 <dd>
 <p>Indicates an 8mm Exabyte advanced metal tape device.</p>
 </dd>
 
-### -field <a id="AIT1_8mm"></a><a id="ait1_8mm"></a><a id="AIT1_8MM"></a><b>AIT1_8mm</b>
+### -field AIT1_8mm
 
 <dd>
 <p>Indicates an 8mm Sony AIT tape device. </p>
 </dd>
 
-### -field <a id="DLT"></a><a id="dlt"></a><b>DLT</b>
+### -field DLT
 
 <dd>
 <p>Indicates a DLT compact IIIxt or IV tape device. </p>
 </dd>
 
-### -field <a id="NCTP"></a><a id="nctp"></a><b>NCTP</b>
+### -field NCTP
 
 <dd>
 <p>Indicates a Philips NCTP tape device. </p>
 </dd>
 
-### -field <a id="IBM_3480"></a><a id="ibm_3480"></a><b>IBM_3480</b>
+### -field IBM_3480
 
 <dd>
 <p>Indicates an IBM 3480 tape device. </p>
 </dd>
 
-### -field <a id="IBM_3490E"></a><a id="ibm_3490e"></a><b>IBM_3490E</b>
+### -field IBM_3490E
 
 <dd>
 <p>Indicates an IBM 3490E tape device.</p>
 </dd>
 
-### -field <a id="IBM_Magstar_3590"></a><a id="ibm_magstar_3590"></a><a id="IBM_MAGSTAR_3590"></a><b>IBM_Magstar_3590</b>
+### -field IBM_Magstar_3590
 
 <dd>
 <p>Indicates an IBM Magstar 3590 tape device. </p>
 </dd>
 
-### -field <a id="IBM_Magstar_MP"></a><a id="ibm_magstar_mp"></a><a id="IBM_MAGSTAR_MP"></a><b>IBM_Magstar_MP</b>
+### -field IBM_Magstar_MP
 
 <dd>
 <p>Indicates an IBM Magstar MP tape device. </p>
 </dd>
 
-### -field <a id="STK_DATA_D3"></a><a id="stk_data_d3"></a><b>STK_DATA_D3</b>
+### -field STK_DATA_D3
 
 <dd>
 <p>Indicates an STK data D3 tape device. </p>
 </dd>
 
-### -field <a id="SONY_DTF"></a><a id="sony_dtf"></a><b>SONY_DTF</b>
+### -field SONY_DTF
 
 <dd>
 <p>Indicates a Sony DTF tape device. </p>
 </dd>
 
-### -field <a id="DV_6mm"></a><a id="dv_6mm"></a><a id="DV_6MM"></a><b>DV_6mm</b>
+### -field DV_6mm
 
 <dd>
 <p>Indicates a 6mm digital video tape device. </p>
 </dd>
 
-### -field <a id="DMI"></a><a id="dmi"></a><b>DMI</b>
+### -field DMI
 
 <dd>
 <p>Indicates a Exabyte DMI tape device and compatible devices. </p>
 </dd>
 
-### -field <a id="SONY_D2"></a><a id="sony_d2"></a><b>SONY_D2</b>
+### -field SONY_D2
 
 <dd>
 <p>Indicates a Sony D2S or D2L tape device. </p>
 </dd>
 
-### -field <a id="CLEANER_CARTRIDGE"></a><a id="cleaner_cartridge"></a><b>CLEANER_CARTRIDGE</b>
+### -field CLEANER_CARTRIDGE
 
 <dd>
 <p>Indicates a drive type that supports drive cleaners. </p>
 </dd>
 
-### -field <a id="CD_ROM"></a><a id="cd_rom"></a><b>CD_ROM</b>
+### -field CD_ROM
 
 <dd>
 <p>Indicates a CD optical disk. </p>
 </dd>
 
-### -field <a id="CD_R"></a><a id="cd_r"></a><b>CD_R</b>
+### -field CD_R
 
 <dd>
 <p>Indicates a CD-recordable (write once) optical disk. </p>
 </dd>
 
-### -field <a id="CD_RW"></a><a id="cd_rw"></a><b>CD_RW</b>
+### -field CD_RW
 
 <dd>
 <p>Indicates a CD-rewritable optical disk. </p>
 </dd>
 
-### -field <a id="DVD_ROM"></a><a id="dvd_rom"></a><b>DVD_ROM</b>
+### -field DVD_ROM
 
 <dd>
 <p>Indicates a DVD-ROM optical disk. </p>
 </dd>
 
-### -field <a id="DVD_R"></a><a id="dvd_r"></a><b>DVD_R</b>
+### -field DVD_R
 
 <dd>
 <p>Indicates a DVD-recordable (write once) optical disk. </p>
 </dd>
 
-### -field <a id="DVD_RW"></a><a id="dvd_rw"></a><b>DVD_RW</b>
+### -field DVD_RW
 
 <dd>
 <p>Indicates a DVD-rewritable optical disk. </p>
 </dd>
 
-### -field <a id="MO_3_RW"></a><a id="mo_3_rw"></a><b>MO_3_RW</b>
+### -field MO_3_RW
 
 <dd>
 <p>Indicates a 3.5" rewritable MO optical disk. </p>
 </dd>
 
-### -field <a id="MO_5_WO"></a><a id="mo_5_wo"></a><b>MO_5_WO</b>
+### -field MO_5_WO
 
 <dd>
 <p>Indicates a MO 5.25" write once optical disk. </p>
 </dd>
 
-### -field <a id="MO_5_RW"></a><a id="mo_5_rw"></a><b>MO_5_RW</b>
+### -field MO_5_RW
 
 <dd>
 <p>Indicates a MO 5.25" rewritable (not LIMDOW) optical disk.</p>
 </dd>
 
-### -field <a id="MO_5_LIMDOW"></a><a id="mo_5_limdow"></a><b>MO_5_LIMDOW</b>
+### -field MO_5_LIMDOW
 
 <dd>
 <p>Indicates a MO 5.25" rewritable (LIMDOW) optical disk. </p>
 </dd>
 
-### -field <a id="PC_5_WO"></a><a id="pc_5_wo"></a><b>PC_5_WO</b>
+### -field PC_5_WO
 
 <dd>
 <p>Indicates a phase change 5.25" write once optical disk. </p>
 </dd>
 
-### -field <a id="PC_5_RW"></a><a id="pc_5_rw"></a><b>PC_5_RW</b>
+### -field PC_5_RW
 
 <dd>
 <p>Indicates a phase change 5.25" rewritable optical disk. </p>
 </dd>
 
-### -field <a id="PD_5_RW"></a><a id="pd_5_rw"></a><b>PD_5_RW</b>
+### -field PD_5_RW
 
 <dd>
 <p>Indicates a phase change dual rewritable optical disk. </p>
 </dd>
 
-### -field <a id="ABL_5_WO"></a><a id="abl_5_wo"></a><b>ABL_5_WO</b>
+### -field ABL_5_WO
 
 <dd>
 <p>Indicates a ablative 5.25" write once optical disk. </p>
 </dd>
 
-### -field <a id="PINNACLE_APEX_5_RW"></a><a id="pinnacle_apex_5_rw"></a><b>PINNACLE_APEX_5_RW</b>
+### -field PINNACLE_APEX_5_RW
 
 <dd>
 <p>Indicates a pinnacle apex 4.6-GB rewritable optical disk.</p>
 </dd>
 
-### -field <a id="SONY_12_WO"></a><a id="sony_12_wo"></a><b>SONY_12_WO</b>
+### -field SONY_12_WO
 
 <dd>
 <p>Indicates a Sony 12" write once optical disk. </p>
 </dd>
 
-### -field <a id="PHILIPS_12_WO"></a><a id="philips_12_wo"></a><b>PHILIPS_12_WO</b>
+### -field PHILIPS_12_WO
 
 <dd>
 <p>Indicates a Philips/LMS 12" write once optical disk. </p>
 </dd>
 
-### -field <a id="HITACHI_12_WO"></a><a id="hitachi_12_wo"></a><b>HITACHI_12_WO</b>
+### -field HITACHI_12_WO
 
 <dd>
 <p>Indicates a Hitachi 12" write once optical disk. </p>
 </dd>
 
-### -field <a id="CYGNET_12_WO"></a><a id="cygnet_12_wo"></a><b>CYGNET_12_WO</b>
+### -field CYGNET_12_WO
 
 <dd>
 <p>Indicates a Cygnet/ATG 12" write once optical disk. </p>
 </dd>
 
-### -field <a id="KODAK_14_WO"></a><a id="kodak_14_wo"></a><b>KODAK_14_WO</b>
+### -field KODAK_14_WO
 
 <dd>
 <p>Indicates a Kodak 14" write once optical disk. </p>
 </dd>
 
-### -field <a id="MO_NFR_525"></a><a id="mo_nfr_525"></a><b>MO_NFR_525</b>
+### -field MO_NFR_525
 
 <dd>
 <p>Indicates a near field recording (Terastor) optical disk. </p>
 </dd>
 
-### -field <a id="NIKON_12_RW"></a><a id="nikon_12_rw"></a><b>NIKON_12_RW</b>
+### -field NIKON_12_RW
 
 <dd>
 <p>Indicates a Nikon 12" rewritable optical disk. </p>
 </dd>
 
-### -field <a id="IOMEGA_ZIP"></a><a id="iomega_zip"></a><b>IOMEGA_ZIP</b>
+### -field IOMEGA_ZIP
 
 <dd>
 <p>Indicates Iomega zip magnetic disk device. </p>
 </dd>
 
-### -field <a id="IOMEGA_JAZ"></a><a id="iomega_jaz"></a><b>IOMEGA_JAZ</b>
+### -field IOMEGA_JAZ
 
 <dd>
 <p>Indicates an Iomega Jaz magnetic disk device. </p>
 </dd>
 
-### -field <a id="SYQUEST_EZ135"></a><a id="syquest_ez135"></a><b>SYQUEST_EZ135</b>
+### -field SYQUEST_EZ135
 
 <dd>
 <p>Indicates a Syquest EZ135 magnetic disk device. </p>
 </dd>
 
-### -field <a id="SYQUEST_EZFLYER"></a><a id="syquest_ezflyer"></a><b>SYQUEST_EZFLYER</b>
+### -field SYQUEST_EZFLYER
 
 <dd>
 <p>Indicates a Syquest EzFlyer magnetic disk device. </p>
 </dd>
 
-### -field <a id="SYQUEST_SYJET"></a><a id="syquest_syjet"></a><b>SYQUEST_SYJET</b>
+### -field SYQUEST_SYJET
 
 <dd>
 <p>Indicates a Syquest SyJet magnetic disk device. </p>
 </dd>
 
-### -field <a id="AVATAR_F2"></a><a id="avatar_f2"></a><b>AVATAR_F2</b>
+### -field AVATAR_F2
 
 <dd>
 <p>Indicates a 2.5" Floppy device. </p>
 </dd>
 
-### -field <a id="MP2_8mm"></a><a id="mp2_8mm"></a><a id="MP2_8MM"></a><b>MP2_8mm</b>
+### -field MP2_8mm
 
 <dd>
 <p>Indicates an 8mm Hitachi tape device. </p>
 </dd>
 
-### -field <a id="DST_S"></a><a id="dst_s"></a><b>DST_S</b>
+### -field DST_S
 
 <dd>
 <p>Indicates a type DST Ampex small tape device. </p>
 </dd>
 
-### -field <a id="DST_M"></a><a id="dst_m"></a><b>DST_M</b>
+### -field DST_M
 
 <dd>
 <p>Indicates a type DST Ampex medium tape device. </p>
 </dd>
 
-### -field <a id="DST_L"></a><a id="dst_l"></a><b>DST_L</b>
+### -field DST_L
 
 <dd>
 <p>Indicates a type DST Ampex large tape device. </p>
 </dd>
 
-### -field <a id="VXATape_1"></a><a id="vxatape_1"></a><a id="VXATAPE_1"></a><b>VXATape_1</b>
+### -field VXATape_1
 
 <dd>
 <p>Indicates an 8mm Ecrix tape device. </p>
 </dd>
 
-### -field <a id="VXATape_2"></a><a id="vxatape_2"></a><a id="VXATAPE_2"></a><b>VXATape_2</b>
+### -field VXATape_2
 
 <dd>
 <p>Indicates an 8mm Ecrix tape device. </p>
 </dd>
 
-### -field <a id="STK_9840"></a><a id="stk_9840"></a><b>STK_9840</b>
+### -field STK_9840
 
 <dd>
 <p>Indicates an STK 9840 device. </p>
 </dd>
 
-### -field <a id="LTO_Ultrium"></a><a id="lto_ultrium"></a><a id="LTO_ULTRIUM"></a><b>LTO_Ultrium</b>
+### -field LTO_Ultrium
 
 <dd>
 <p>Indicates an IBM, HP, or Seagate LTO Ultrium device. </p>
 </dd>
 
-### -field <a id="LTO_Accelis"></a><a id="lto_accelis"></a><a id="LTO_ACCELIS"></a><b>LTO_Accelis</b>
+### -field LTO_Accelis
 
 <dd>
 <p>Indicates an IBM, HP, or Seagate LTO Accelis</p>
 </dd>
 
-### -field <a id="DVD_RAM"></a><a id="dvd_ram"></a><b>DVD_RAM</b>
+### -field DVD_RAM
 
 <dd>
 <p>Indicates a DVD-RAM optical device. </p>
 </dd>
 
-### -field <a id="AIT_8mm"></a><a id="ait_8mm"></a><a id="AIT_8MM"></a><b>AIT_8mm</b>
+### -field AIT_8mm
 
 <dd>
 <p>Indicates an AIT2 or higher 8mm tape device. </p>
 </dd>
 
-### -field <a id="ADR_1"></a><a id="adr_1"></a><b>ADR_1</b>
+### -field ADR_1
 
 <dd>
 <p>Indicates an on-stream ADR media type device. </p>
 </dd>
 
-### -field <a id="ADR_2"></a><a id="adr_2"></a><b>ADR_2</b>
+### -field ADR_2
 
 <dd>
 <p>Indicates an on-stream ADR media type device. </p>
 </dd>
 
-### -field <a id="STK_9940"></a><a id="stk_9940"></a><b>STK_9940</b>
+### -field STK_9940
 
 <dd>
 <p>STK 9940</p>
 </dd>
 
-### -field <a id="SAIT"></a><a id="sait"></a><b>SAIT</b>
+### -field SAIT
 
 <dd>
 <p>SAIT Tapes</p>
 </dd>
 
-### -field <a id="VXATape"></a><a id="vxatape"></a><a id="VXATAPE"></a><b>VXATape</b>
+### -field VXATape
 
 <dd>
 <p>VXA (Ecrix 8mm) Tape</p>

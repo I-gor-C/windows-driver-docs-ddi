@@ -60,13 +60,13 @@ NTSTATUS APIENTRY DxgkCbUpdateContextAllocation(
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>A handle to the display adapter.</p>
 </dd>
 
-### -param <i>pArgs</i> [in]
+### -param pArgs [in]
 
 <dd>
 <p>The <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-updatecontextallocation.md">DXGKARGCB_UPDATECONTEXTALLOCATION</a> structure that describes the operation.</p>

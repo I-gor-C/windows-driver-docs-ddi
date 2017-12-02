@@ -58,13 +58,13 @@ typedef struct _D3DHAL_DP2CREATEQUERY {
 ## -struct-fields
 <dl>
 
-### -field <b>dwQueryID</b>
+### -field dwQueryID
 
 <dd>
 <p>Identifies the query.</p>
 </dd>
 
-### -field <b>QueryType</b>
+### -field QueryType
 
 <dd>
 <p>Specifies a value from the D3DQUERYTYPE enumeration that indicates the query capability for which the driver creates resources.</p>

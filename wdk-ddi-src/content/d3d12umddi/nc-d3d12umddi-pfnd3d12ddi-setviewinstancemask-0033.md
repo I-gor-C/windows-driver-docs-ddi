@@ -55,13 +55,13 @@ VOID APIENTRY* PFND3D12DDI_SETVIEWINSTANCEMASK_0033(
 ## -parameters
 <dl>
 
-### -param <i>hCommandList</i> 
+### -param hCommandList 
 
 <dd>
 <p>The command list.</p>
 </dd>
 
-### -param <i>Mask</i> 
+### -param Mask 
 
 <dd>
 <p>The mask that will be set.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookinfo_2.htm
 old-project: netvista
 ms.assetid: bd302343-c9e3-4d1d-b991-ac19fbdb2da3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILPHONEBOOKINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,75 +72,75 @@ typedef struct _RILPHONEBOOKINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwUsed</b>
+### -field dwUsed
 
 <dd></dd>
 
-### -field <b>dwTotal</b>
+### -field dwTotal
 
 <dd></dd>
 
-### -field <b>dwMaxAddressLength</b>
+### -field dwMaxAddressLength
 
 <dd></dd>
 
-### -field <b>dwMaxTextLength</b>
+### -field dwMaxTextLength
 
 <dd></dd>
 
-### -field <b>dwMaxAdditionalNumbers</b>
+### -field dwMaxAdditionalNumbers
 
 <dd></dd>
 
-### -field <b>dwMaxAdditionalNumberLength</b>
+### -field dwMaxAdditionalNumberLength
 
 <dd></dd>
 
-### -field <b>dwMaxAdditionalNumberTextLength</b>
+### -field dwMaxAdditionalNumberTextLength
 
 <dd></dd>
 
-### -field <b>dwUsedAdditionalNumberStrings</b>
+### -field dwUsedAdditionalNumberStrings
 
 <dd></dd>
 
-### -field <b>dwTotalAdditionalNumberStrings</b>
+### -field dwTotalAdditionalNumberStrings
 
 <dd></dd>
 
-### -field <b>dwMaxEmails</b>
+### -field dwMaxEmails
 
 <dd></dd>
 
-### -field <b>dwMaxEmailAddressLength</b>
+### -field dwMaxEmailAddressLength
 
 <dd></dd>
 
-### -field <b>dwMaxGroups</b>
+### -field dwMaxGroups
 
 <dd></dd>
 
-### -field <b>dwMaxGroupStringLength</b>
+### -field dwMaxGroupStringLength
 
 <dd></dd>
 
-### -field <b>dwUsedGroupStrings</b>
+### -field dwUsedGroupStrings
 
 <dd></dd>
 
-### -field <b>dwTotalGroupStrings</b>
+### -field dwTotalGroupStrings
 
 <dd></dd>
 
-### -field <b>dwMaxSecondNameStringLength</b>
+### -field dwMaxSecondNameStringLength
 
 <dd></dd>
 </dl>

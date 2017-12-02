@@ -61,25 +61,25 @@ PVOID APIENTRY AgpReserveVirtual(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>ProcessHandle</i> [in]
+### -param ProcessHandle [in]
 
 <dd>
 <p>Handle of the process in which to reserve the virtual address range. If <b>ProcessHandle</b> is 0, then the virtual address range is allocated in system space.</p>
 </dd>
 
-### -param <i>PhysicalReserveContext</i> [in]
+### -param PhysicalReserveContext [in]
 
 <dd>
 <p>Is the context handle that identifies the reserved physical address range with which to associate the virtual memory reservation. This context was obtained from <a href="..\videoagp\nc-videoagp-pagp-reserve-physical.md">AgpReservePhysical</a>.</p>
 </dd>
 
-### -param <i>VirtualReserveContext</i> [out]
+### -param VirtualReserveContext [out]
 
 <dd>
 <p>Is the location in which the video port driver writes a context handle that identifies the reserved virtual memory.</p>

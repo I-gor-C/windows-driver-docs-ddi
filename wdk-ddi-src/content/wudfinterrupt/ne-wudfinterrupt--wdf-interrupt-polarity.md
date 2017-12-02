@@ -7,7 +7,7 @@ old-location: wdf\wdf_interrupt_polarity_umdf.htm
 old-project: wdf
 ms.assetid: 30E61DCE-D88C-47B5-B5CD-3C43C6157FBA
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _WDF_INTERRUPT_POLARITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfInterruptPolarityUnknown"></a><a id="wdfinterruptpolarityunknown"></a><a id="WDFINTERRUPTPOLARITYUNKNOWN"></a><b>WdfInterruptPolarityUnknown</b>
+### -field WdfInterruptPolarityUnknown
 
 <dd>
 <p>The interrupt signal's polarity is unknown.</p>
 </dd>
 
-### -field <a id="WdfInterruptActiveHigh"></a><a id="wdfinterruptactivehigh"></a><a id="WDFINTERRUPTACTIVEHIGH"></a><b>WdfInterruptActiveHigh</b>
+### -field WdfInterruptActiveHigh
 
 <dd>
 <p>The interrupt signal is active when it is high.</p>
 </dd>
 
-### -field <a id="WdfInterruptActiveLow"></a><a id="wdfinterruptactivelow"></a><a id="WDFINTERRUPTACTIVELOW"></a><b>WdfInterruptActiveLow</b>
+### -field WdfInterruptActiveLow
 
 <dd>
 <p>The interrupt signal is active when it is low.</p>

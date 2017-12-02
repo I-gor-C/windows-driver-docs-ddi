@@ -55,13 +55,13 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES {
 ## -struct-fields
 <dl>
 
-### -field <b>NumRanges</b>
+### -field NumRanges
 
 <dd>
 <p>The number of elements in the <b>pRanges</b> array.</p>
 </dd>
 
-### -field <b>pRanges</b>
+### -field pRanges
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-buildpagingbuffer-copy-range.md">DXGK_BUILDPAGINGBUFFER_COPY_RANGE</a> structure describing each range of page table entries to copy.</p>

@@ -7,7 +7,7 @@ old-location: wdf\write_register_uchar.htm
 old-project: wdf
 ms.assetid: C56D6CD8-7D23-4DA7-9241-F72ADBDD2770
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ void WRITE_REGISTER_UCHAR(
 ## -parameters
 <dl>
 
-### -param <i>pDevice</i> [in]
+### -param pDevice [in]
 
 <dd>
 <p>Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.</p>
 </dd>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>A pointer to the register, which must be a mapped range in memory space.</p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>Specifies a byte to write to the register.</p>

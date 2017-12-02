@@ -54,7 +54,7 @@ LPGUID IoSetActivityIdThread(
 ## -parameters
 <dl>
 
-### -param <i>ActivityId</i> 
+### -param ActivityId 
 
 <dd>
 <p>The activity ID provided by caller.</p>

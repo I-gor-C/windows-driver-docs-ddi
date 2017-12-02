@@ -55,13 +55,13 @@ VOID APIENTRY* PFND3D12DDI_DESTROYPROTECTEDRESOURCESESSION_0030(
 ## -parameters
 <dl>
 
-### -param <i>hDrvDevice</i> 
+### -param hDrvDevice 
 
 <dd>
 <p>The hardware device being processed.</p>
 </dd>
 
-### -param <i>hDrvProtectedResourceSession</i> 
+### -param hDrvProtectedResourceSession 
 
 <dd>
 <p>The protected resource session.</p>

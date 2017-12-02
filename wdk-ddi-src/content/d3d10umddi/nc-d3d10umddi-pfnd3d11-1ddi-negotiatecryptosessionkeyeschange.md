@@ -60,7 +60,7 @@ HRESULT APIENTRY* NegotiateCryptoSessionKeyExchange(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).
@@ -68,7 +68,7 @@ HRESULT APIENTRY* NegotiateCryptoSessionKeyExchange(
 </p>
 </dd>
 
-### -param <i>hCryptoSession</i> [in]
+### -param hCryptoSession [in]
 
 <dd>
 <p>A handle to the cryptographic session object that was created through a call to the <a href="display.createcryptosession1">CreateCryptoSession</a> function. 
@@ -76,7 +76,7 @@ HRESULT APIENTRY* NegotiateCryptoSessionKeyExchange(
 </p>
 </dd>
 
-### -param <i>DataSize</i> [in]
+### -param DataSize [in]
 
 <dd>
 <p>The size, in bytes, of the data in the <i>pData</i> array.
@@ -84,7 +84,7 @@ HRESULT APIENTRY* NegotiateCryptoSessionKeyExchange(
 </p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a byte array that contains the encrypted session key.</p>

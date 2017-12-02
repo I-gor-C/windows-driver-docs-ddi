@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTSetVidPnSourceOwner(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setvidpnsourceowner.md">D3DKMT_SETVIDPNSOURCEOWNER</a> structure that describes the parameters for setting or releasing.</p>

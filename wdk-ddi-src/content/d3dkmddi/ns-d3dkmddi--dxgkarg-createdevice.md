@@ -62,33 +62,33 @@ typedef struct _DXGKARG_CREATEDEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>A handle to the graphics context device. On input to the <a href="display.dxgkddicreatedevice">DxgkDdiCreateDevice</a> function, <b>hDevice</b> specifies the handle that the driver should use when it calls back into the Microsoft DirectX graphics kernel subsystem. </p>
 <p>The driver generates a unique handle and passes it back to the DirectX graphics subsystem. On output from the <a href="display.dxgkddicreatedevice">DxgkDdiCreateDevice</a> function, <b>hDevice</b> specifies the handle that the DirectX graphics subsystem should use in subsequent driver calls to identify the device.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p> A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-createdeviceflags.md">DXGK_CREATEDEVICEFLAGS</a> structure that identifies how to create the device.</p>
 </dd>
 
-### -field <b>pInfo</b>
+### -field pInfo
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-deviceinfo.md">DXGK_DEVICEINFO</a> structure that contains parameters that the DirectX graphics subsystem requires from the display miniport driver.</p>
 </dd>
 
-### -field <b>Pasid</b>
+### -field Pasid
 
 <dd>
 <p>The owner process PASID for a support vector machine GPU.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>hKmdProcess</b>
+### -field hKmdProcess
 
 <dd>
 <p>A handle to the corresponding kernel mode driver process object.</p>

@@ -56,19 +56,19 @@ typedef enum _DXVAHDDDI_OUTPUT_RATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVAHDDDI_OUTPUT_RATE_NORMAL"></a><a id="dxvahdddi_output_rate_normal"></a><b>DXVAHDDDI_OUTPUT_RATE_NORMAL</b>
+### -field DXVAHDDDI_OUTPUT_RATE_NORMAL
 
 <dd>
 <p>A value that specifies that the driver should use normal output rate, which is when one progressive frame becomes one progressive frame and one interlaced frame (two fields) becomes two progressive frames. </p>
 </dd>
 
-### -field <a id="DXVAHDDDI_OUTPUT_RATE_HALF"></a><a id="dxvahdddi_output_rate_half"></a><b>DXVAHDDDI_OUTPUT_RATE_HALF</b>
+### -field DXVAHDDDI_OUTPUT_RATE_HALF
 
 <dd>
 <p>A value that specifies that the driver should use half output rate, which is when one progressive frame becomes one progressive frame and one interlaced frame (two fields) becomes one progressive frame.</p>
 </dd>
 
-### -field <a id="DXVAHDDDI_OUTPUT_RATE_CUSTOM"></a><a id="dxvahdddi_output_rate_custom"></a><b>DXVAHDDDI_OUTPUT_RATE_CUSTOM</b>
+### -field DXVAHDDDI_OUTPUT_RATE_CUSTOM
 
 <dd>
 <p>A value that specifies that the driver should use a custom output rate for the frame rate conversion or the inverse telecine. For more information about custom output rate, see <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-custom-rate-data.md">DXVAHDDDI_CUSTOM_RATE_DATA</a>. </p>

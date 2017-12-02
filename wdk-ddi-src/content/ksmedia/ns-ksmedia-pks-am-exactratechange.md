@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>OutputZeroTime</b>
+### -field OutputZeroTime
 
 <dd>
 <p>Indicates an "input" time stamp that maps to a zero output time stamp.</p>
 </dd>
 
-### -field <b>Rate</b>
+### -field Rate
 
 <dd>
 <p>Specifies the new rate. This value is multiplied by 10000 (decimal).</p>

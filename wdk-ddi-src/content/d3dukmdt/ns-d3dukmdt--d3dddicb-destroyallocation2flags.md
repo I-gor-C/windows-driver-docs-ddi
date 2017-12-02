@@ -65,7 +65,7 @@ typedef struct _D3DDDICB_DESTROYALLOCATION2FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>AssumeNotInUse</b>
+### -field AssumeNotInUse
 
 <dd>
 <table>
@@ -102,7 +102,7 @@ typedef struct _D3DDDICB_DESTROYALLOCATION2FLAGS {
 <p> </p>
 </dd>
 
-### -field <b>SynchronousDestroy</b>
+### -field SynchronousDestroy
 
 <dd>
 <table>
@@ -139,19 +139,19 @@ typedef struct _D3DDDICB_DESTROYALLOCATION2FLAGS {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>SystemUseOnly</b>
+### -field SystemUseOnly
 
 <dd>
 <p>This member is reserved and should not be used by the user mode driver.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The consolidated value of the fields in the structure.</p>

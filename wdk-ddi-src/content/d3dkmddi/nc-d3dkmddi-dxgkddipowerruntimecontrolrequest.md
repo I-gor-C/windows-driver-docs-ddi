@@ -63,43 +63,43 @@ _Check_return_ NTSTATUS APIENTRY* DxgkDdiPowerRuntimeControlRequest(
 ## -parameters
 <dl>
 
-### -param <i>DriverContext</i> [in]
+### -param DriverContext [in]
 
 <dd>
 <p>A handle to a context block associated with a display adapter. The display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>PowerControlCode</i> [in]
+### -param PowerControlCode [in]
 
 <dd>
 <p>A pointer to a GUID that defines the meaning of the PEP's control request. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>InBuffer</i> [in, optional]
+### -param InBuffer [in, optional]
 
 <dd>
 <p>An optional pointer to an input buffer.</p>
 </dd>
 
-### -param <i>InBufferSize</i> [in]
+### -param InBufferSize [in]
 
 <dd>
 <p>The size, in bytes, of the buffer that <i>InBuffer</i> points to.</p>
 </dd>
 
-### -param <i>OutBuffer</i> [out, optional]
+### -param OutBuffer [out, optional]
 
 <dd>
 <p>An optional pointer to an output buffer.</p>
 </dd>
 
-### -param <i>OutBufferSize</i> [in]
+### -param OutBufferSize [in]
 
 <dd>
 <p>The size, in bytes, of the buffer that <i>OutBuffer</i> points to.</p>
 </dd>
 
-### -param <i>BytesReturned</i> [out, optional]
+### -param BytesReturned [out, optional]
 
 <dd>
 <p>An optional pointer to a buffer that contains the number of bytes that are written by the display miniport driver to the output buffer.</p>

@@ -57,13 +57,13 @@ HRESULT IddCxSwapChainSetDevice(
 ## -parameters
 <dl>
 
-### -param <i>SwapChainObject</i> [in]
+### -param SwapChainObject [in]
 
 <dd>
 <p>The swap-chain object that will be setup with a particular DXGI device.</p>
 </dd>
 
-### -param <i>pInArgs</i> [in]
+### -param pInArgs [in]
 
 <dd>
 <p>Input arguments to the function</p>

@@ -56,19 +56,19 @@ typedef struct _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>[in] A Boolean value that specifies whether the pixel aspect ratios are available. The default value is <b>FALSE</b>, which indicates that the pixel aspect ratios are not available. </p>
 </dd>
 
-### -field <b>SourceAspectRatio</b>
+### -field SourceAspectRatio
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies the pixel aspect ratio of the source. The default is (1, 1). </p>
 </dd>
 
-### -field <b>DestinationAspectRatio</b>
+### -field DestinationAspectRatio
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies the pixel aspect ratio of the destination. The default is (1, 1). </p>

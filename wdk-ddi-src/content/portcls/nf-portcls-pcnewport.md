@@ -55,13 +55,13 @@ NTSTATUS PcNewPort(
 ## -parameters
 <dl>
 
-### -param <i>OutPort</i> [out]
+### -param OutPort [out]
 
 <dd>
 <p>Output pointer for the port-driver object created by this function. This parameter points to a caller-allocated pointer variable into which the function outputs the pointer to the newly created <a href="..\portcls\nn-portcls-iport.md">IPort</a> object. This object has the port interface that is specified by the <i>ClassId</i> parameter. Specify a valid, non-NULL pointer value for this parameter.</p>
 </dd>
 
-### -param <i>ClassId</i> [in]
+### -param ClassId [in]
 
 <dd>
 <p>Specifies the type of port interface that is being requested. For more information, see the following Remarks section.</p>
@@ -114,9 +114,9 @@ NTSTATUS PcNewPort(
 
 <p>In Microsoft Windows XP and later, the MIDI and DirectMusic port drivers share the same internal software implementation. This means that the <b>CLSID_PortMidi</b> GUID is equivalent to <b>CLSID_PortDMus</b>.</p>
 
-<p>For more information about creating port and miniport drivers for subdevices, see <a href="NULL">Subdevice Creation</a>.</p>
+<p>For more information about creating port and miniport drivers for subdevices, see <a href="https://msdn.microsoft.com/e4ba1209-adc6-48c3-9633-247e9e3849bc">Subdevice Creation</a>.</p>
 
-<p>The <i>OutPort</i> parameter follows the <a href="NULL">reference-counting conventions for COM objects</a>. </p>
+<p>The <i>OutPort</i> parameter follows the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>. </p>
 
 ## -requirements
 <table>

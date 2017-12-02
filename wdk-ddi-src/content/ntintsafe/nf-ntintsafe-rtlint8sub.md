@@ -56,19 +56,19 @@ NTSTATUS RtlInt8Sub(
 ## -parameters
 <dl>
 
-### -param <i>i8Minuend</i> [in]
+### -param i8Minuend [in]
 
 <dd>
 <p>The value from which <i>i8Subtrahend</i> is subtracted.</p>
 </dd>
 
-### -param <i>i8Subtrahend</i> [in]
+### -param i8Subtrahend [in]
 
 <dd>
 <p>The value to subtract from <i>i8Minuend</i>.</p>
 </dd>
 
-### -param <i>pi8Result</i> [out]
+### -param pi8Result [out]
 
 <dd>
 <p>A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

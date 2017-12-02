@@ -58,31 +58,31 @@ typedef struct _PCMETHOD_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>MajorTarget</b>
+### -field MajorTarget
 
 <dd>
 <p>Pointer to the <a href="com.iunknown">IUnknown</a> interface of a miniport object that supports the method set and method specified by <b>MethodItem</b>.</p>
 </dd>
 
-### -field <b>MinorTarget</b>
+### -field MinorTarget
 
 <dd>
 <p>Pointer to an <a href="com.iunknown">IUnknown</a> interface of a stream object associated with <b>MajorTarget</b>. If the request does not specify a minor target, set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Node</b>
+### -field Node
 
 <dd>
 <p>Specifies the node ID of the target node for the request. If the target is not a node, this member is set to ULONG(-1).</p>
 </dd>
 
-### -field <b>MethodItem</b>
+### -field MethodItem
 
 <dd>
 <p>Pointer to a <a href="audio.pcmethod_item">PCMETHOD_ITEM</a> structure that describes a method supported by a filter, pin, or node.</p>
 </dd>
 
-### -field <b>Verb</b>
+### -field Verb
 
 <dd>
 <p>Specifies the type of method request. This member can be set to the bitwise OR of one or more of the flag bits in the following table.</p>

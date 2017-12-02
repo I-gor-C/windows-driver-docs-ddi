@@ -58,19 +58,19 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>omac</b>
+### -field omac
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-omac.md">D3D11_1DDI_OMAC</a> structure that contains a Message Authentication Code (MAC) of the data. The driver uses Advanced Encryption Standard (AES)-based one-key CBC MAC (OMAC) to calculate this value for the block of data that appears after this structure member.</p>
 </dd>
 
-### -field <b>ConfigureType</b>
+### -field ConfigureType
 
 <dd>
 <p>A GUID that specifies the command. The following GUIDs are defined.</p>
 <dl class="indent">
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_CONFIGURE_ENCRYPTION_WHEN_ACCESSIBLE_GUID"></a><a id="d3d11_1ddi_authenticated_configure_encryption_when_accessible_guid"></a><p><a id="D3D11_1DDI_AUTHENTICATED_CONFIGURE_ENCRYPTION_WHEN_ACCESSIBLE_GUID"></a><a id="d3d11_1ddi_authenticated_configure_encryption_when_accessible_guid"></a><b>D3D11_1DDI_AUTHENTICATED_CONFIGURE_ENCRYPTION_WHEN_ACCESSIBLE_GUID</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_CONFIGURE_ENCRYPTION_WHEN_ACCESSIBLE_GUID
 
 
 <dd>
@@ -79,7 +79,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_OUTPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION_GUID"></a><a id="d3d11_1ddi_authenticated_configure_crypto_session_guid"></a><p><a id="D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION_GUID"></a><a id="d3d11_1ddi_authenticated_configure_crypto_session_guid"></a><b>D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION_GUID</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION_GUID
 
 
 <dd>
@@ -88,7 +88,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_OUTPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_CONFIGURE_INITIALIZE_GUID"></a><a id="d3d11_1ddi_authenticated_configure_initialize_guid"></a><p><a id="D3D11_1DDI_AUTHENTICATED_CONFIGURE_INITIALIZE_GUID"></a><a id="d3d11_1ddi_authenticated_configure_initialize_guid"></a><b>D3D11_1DDI_AUTHENTICATED_CONFIGURE_INITIALIZE_GUID</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_CONFIGURE_INITIALIZE_GUID
 
 
 <dd>
@@ -99,7 +99,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_OUTPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_CONFIGURE_PROTECTION_GUID"></a><a id="d3d11_1ddi_authenticated_configure_protection_guid"></a><p><a id="D3D11_1DDI_AUTHENTICATED_CONFIGURE_PROTECTION_GUID"></a><a id="d3d11_1ddi_authenticated_configure_protection_guid"></a><b>D3D11_1DDI_AUTHENTICATED_CONFIGURE_PROTECTION_GUID</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_CONFIGURE_PROTECTION_GUID
 
 
 <dd>
@@ -110,7 +110,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_OUTPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_CONFIGURE_SHARED_RESOURCE_GUID"></a><a id="d3d11_1ddi_authenticated_configure_shared_resource_guid"></a><p><a id="D3D11_1DDI_AUTHENTICATED_CONFIGURE_SHARED_RESOURCE_GUID"></a><a id="d3d11_1ddi_authenticated_configure_shared_resource_guid"></a><b>D3D11_1DDI_AUTHENTICATED_CONFIGURE_SHARED_RESOURCE_GUID</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_CONFIGURE_SHARED_RESOURCE_GUID
 
 
 <dd>
@@ -123,13 +123,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_OUTPUT {
 </dl>
 </dd>
 
-### -field <b>hChannel</b>
+### -field hChannel
 
 <dd>
 <p>A handle to the authenticated channel. This handle was created through a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createauthenticatedchannel.md">CreateAuthenticatedChannel(D3D11_1)</a> function.</p>
 </dd>
 
-### -field <b>SequenceNumber</b>
+### -field SequenceNumber
 
 <dd>
 <p>The query sequence number.</p>
@@ -137,7 +137,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_OUTPUT {
 <div> </div>
 </dd>
 
-### -field <b>ReturnCode</b>
+### -field ReturnCode
 
 <dd>
 <p>The return code that the driver returns when the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-configureauthenticatedchannel.md">ConfigureAuthenticatedChannel(D3D11_1)</a> function is called.</p>

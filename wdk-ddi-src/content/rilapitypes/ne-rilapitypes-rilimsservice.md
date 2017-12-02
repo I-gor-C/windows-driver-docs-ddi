@@ -7,7 +7,7 @@ old-location: netvista\rilimsservice_2.htm
 old-project: netvista
 ms.assetid: 9cac61e7-8260-49ef-881d-6430acb622a8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,35 +62,35 @@ typedef enum _RILIMSSERVICE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_IMS_SERVICE_VOICE"></a><a id="ril_ims_service_voice"></a><b>RIL_IMS_SERVICE_VOICE</b>
+### -field RIL_IMS_SERVICE_VOICE
 
 <dd></dd>
 
-### -field <a id="RIL_IMS_SERVICE_VIDEO"></a><a id="ril_ims_service_video"></a><b>RIL_IMS_SERVICE_VIDEO</b>
+### -field RIL_IMS_SERVICE_VIDEO
 
 <dd></dd>
 
-### -field <a id="RIL_IMS_SERVICE_CUSTOM"></a><a id="ril_ims_service_custom"></a><b>RIL_IMS_SERVICE_CUSTOM</b>
+### -field RIL_IMS_SERVICE_CUSTOM
 
 <dd></dd>
 
-### -field <a id="RIL_IMS_SERVICE_SUPSVC"></a><a id="ril_ims_service_supsvc"></a><b>RIL_IMS_SERVICE_SUPSVC</b>
+### -field RIL_IMS_SERVICE_SUPSVC
 
 <dd></dd>
 
-### -field <a id="RIL_IMS_SERVICE_RCS"></a><a id="ril_ims_service_rcs"></a><b>RIL_IMS_SERVICE_RCS</b>
+### -field RIL_IMS_SERVICE_RCS
 
 <dd></dd>
 
-### -field <a id="RIL_IMS_SERVICE_USSD"></a><a id="ril_ims_service_ussd"></a><b>RIL_IMS_SERVICE_USSD</b>
+### -field RIL_IMS_SERVICE_USSD
 
 <dd></dd>
 
-### -field <a id="RIL_IMS_SERVICE_E_VOICE"></a><a id="ril_ims_service_e_voice"></a><b>RIL_IMS_SERVICE_E_VOICE</b>
+### -field RIL_IMS_SERVICE_E_VOICE
 
 <dd></dd>
 
-### -field <a id="RIL_IMS_SERVICE_ALL"></a><a id="ril_ims_service_all"></a><b>RIL_IMS_SERVICE_ALL</b>
+### -field RIL_IMS_SERVICE_ALL
 
 <dd></dd>
 </dl>

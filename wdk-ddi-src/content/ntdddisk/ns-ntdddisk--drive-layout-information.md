@@ -57,19 +57,19 @@ typedef struct _DRIVE_LAYOUT_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>PartitionCount</b>
+### -field PartitionCount
 
 <dd>
 <p>Contains the number of partitions on the drive. </p>
 </dd>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>Contains the disk signature.</p>
 </dd>
 
-### -field <b>PartitionEntry</b>
+### -field PartitionEntry
 
 <dd>
 <p>Contains a variable-length array of <a href="..\ntdddisk\ns-ntdddisk--partition-information.md">PARTITION_INFORMATION</a> structures, one for each partition on the drive. </p>

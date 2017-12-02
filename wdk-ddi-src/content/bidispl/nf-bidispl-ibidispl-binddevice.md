@@ -55,13 +55,13 @@ HRESULT IBidiSpl::BindDevice(
 ## -parameters
 <dl>
 
-### -param <i>pszDeviceName</i> [in]
+### -param pszDeviceName [in]
 
 <dd>
 <p>A pointer to a null-terminated string that contains name of the printer or print server. If <b>NULL</b>, it indicates the local printer server.</p>
 </dd>
 
-### -param <i>dwAccess</i> [in]
+### -param dwAccess [in]
 
 <dd>
 <p>The access privileges for the printer. This parameter can be one of the following values.</p>
@@ -73,7 +73,7 @@ HRESULT IBidiSpl::BindDevice(
 <tr>
 <td width="40%"><a id="BIDI_ACCESS_ADMINISTRATOR"></a><a id="bidi_access_administrator"></a><dl>
 
-### -param <b>BIDI_ACCESS_ADMINISTRATOR</b>
+### -param BIDI_ACCESS_ADMINISTRATOR
 
 </dl>
 </td>
@@ -84,7 +84,7 @@ HRESULT IBidiSpl::BindDevice(
 <tr>
 <td width="40%"><a id="BIDI_ACCESS_USER"></a><a id="bidi_access_user"></a><dl>
 
-### -param <b>BIDI_ACCESS_USER</b>
+### -param BIDI_ACCESS_USER
 
 </dl>
 </td>

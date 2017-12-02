@@ -71,13 +71,13 @@ typedef struct _USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>Specifies the length, in bytes, of this descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorType</b>
+### -field bDescriptorType
 
 <dd>
 <p>Specifies the descriptor type. Must be set to USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR.
@@ -85,35 +85,35 @@ typedef struct _USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR {
 </p>
 </dd>
 
-### -field <b>bMaxBurst</b>
+### -field bMaxBurst
 
 <dd>
 <p>Specifies the maximum number of packets that the endpoint can send or receive as a part of a burst.</p>
 </dd>
 
-### -field <b>bmAttributes</b>
+### -field bmAttributes
 
 <dd>
 <dl>
 
-### -field <b>AsUchar</b>
+### -field AsUchar
 
 <dd>
 <p>Specifies the length of the structures.</p>
 </dd>
 
-### -field <b>Bulk</b>
+### -field Bulk
 
 <dd>
 <dl>
 
-### -field <b>MaxStreams</b>
+### -field MaxStreams
 
 <dd>
 <p>Specifies the maximum number of streams supported by the bulk endpoint.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. Do not use.</p>
@@ -121,18 +121,18 @@ typedef struct _USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Isochronous</b>
+### -field Isochronous
 
 <dd>
 <dl>
 
-### -field <b>Mult</b>
+### -field Mult
 
 <dd>
 <p>Specifies a zero-based number that determines the maximum number of packets (bMaxBurst *  (Mult + 1)) that can be sent to the endpoint within a service interval.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. Do not use.</p>
@@ -142,7 +142,7 @@ typedef struct _USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>wBytesPerInterval</b>
+### -field wBytesPerInterval
 
 <dd>
 <p>Number of bytes per interval.</p>

@@ -55,13 +55,13 @@ typedef struct _D3DKMT_MOVE_RECT {
 ## -struct-fields
 <dl>
 
-### -field <b>SourcePoint</b>
+### -field SourcePoint
 
 <dd>
 <p>A <a href="display.point">POINT</a> structure that describes the source (<i>x, y</i>) point where the source rectangle is copied from.</p>
 </dd>
 
-### -field <b>DestRect</b>
+### -field DestRect
 
 <dd>
 <p>A <a href="display.rect">RECT</a> structure that contains the destination rectangle where the dirty rectangle is copied to.</p>

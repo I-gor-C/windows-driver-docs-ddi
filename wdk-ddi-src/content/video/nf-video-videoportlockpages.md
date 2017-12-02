@@ -60,31 +60,31 @@ BOOLEAN VideoPortLockPages(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>pVrp</i> [in, out]
+### -param pVrp [in, out]
 
 <dd>
 <p>Pointer to a <a href="..\video\ns-video--video-request-packet.md">VIDEO_REQUEST_PACKET</a> structure. The miniport driver must have set <b>InputBuffer</b> and <b>InputBufferLength</b> to contain the virtual address and the size in bytes, respectively, of the memory to be locked for the transfer. This memory was allocated by the display driver and passed to the miniport driver through an IOCTL. The video port returns a pointer to and the size in bytes of the scatter/gather list in <b>OutputBuffer</b> and <b>OutputBufferLength</b>, respectively.</p>
 </dd>
 
-### -param <i>pUEvent</i> [in]
+### -param pUEvent [in]
 
 <dd>
 <p>Pointer to a mapped user event that is to be set by the miniport driver, or <b>NULL</b>. The user event was mapped by the display driver and passed to the miniport driver through an IOCTL.</p>
 </dd>
 
-### -param <i>pDisplayEvent</i> [in]
+### -param pDisplayEvent [in]
 
 <dd>
 <p>Pointer to an event that is to be set by the miniport driver, or <b>NULL</b>. This event was created by and received from the display driver through an IOCTL.</p>
 </dd>
 
-### -param <i>DmaFlags</i> [in]
+### -param DmaFlags [in]
 
 <dd>
 <p>Specifies the action to be performed. This parameter must be one of the following values:</p>

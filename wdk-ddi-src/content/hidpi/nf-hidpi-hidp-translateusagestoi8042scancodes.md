@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>HidP_TranslateUsagesToI8042ScanCodes</b> routine maps a list of <a href="NULL">HID usages</a> on the HID_USAGE_PAGE_KEYBOARD usage page to their respective PS/2 scan codes (Scan Code Set 1).</p>
+<p>The <b>HidP_TranslateUsagesToI8042ScanCodes</b> routine maps a list of <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">HID usages</a> on the HID_USAGE_PAGE_KEYBOARD usage page to their respective PS/2 scan codes (Scan Code Set 1).</p>
 
 
 ## -syntax
@@ -59,19 +59,19 @@ NTSTATUS __stdcall HidP_TranslateUsagesToI8042ScanCodes(
 ## -parameters
 <dl>
 
-### -param <i>ChangedUsageList</i> [in]
+### -param ChangedUsageList [in]
 
 <dd>
 <p>Pointer to a list of keyboard (button) usages. The translate usages routine interprets a zero as a delimiter that ends the usage list. </p>
 </dd>
 
-### -param <i>UsageListLength</i> [in]
+### -param UsageListLength [in]
 
 <dd>
 <p>Specifies the maximum possible number of usages in the changed usage list. </p>
 </dd>
 
-### -param <i>KeyAction</i> [in]
+### -param KeyAction [in]
 
 <dd>
 <p>Identifies the key direction for the specified change usage list. </p>
@@ -91,13 +91,13 @@ NTSTATUS __stdcall HidP_TranslateUsagesToI8042ScanCodes(
 <p></p>
 <dl>
 
-### -param <a id="HidP_Keyboard_Break"></a><a id="hidp_keyboard_break"></a><a id="HIDP_KEYBOARD_BREAK"></a>HidP_Keyboard_Break
+### -param HidP_Keyboard_Break
 
 <dd>
 <p>Specifies a <i>break</i> direction (key up). The changed usage list contains the usages set to OFF that were previously set to ON (which corresponds to the keys that were previously down, but are now up).</p>
 </dd>
 
-### -param <a id="HidPKeyboard_Make"></a><a id="hidpkeyboard_make"></a><a id="HIDPKEYBOARD_MAKE"></a>HidPKeyboard_Make
+### -param HidPKeyboard_Make
 
 <dd>
 <p>Specifies a <i>make</i> direction (key down). The changed usage list contains the usages set to ON that were previously set to OFF (which corresponds to the keys that were previously up, but now are down).</p>
@@ -105,7 +105,7 @@ NTSTATUS __stdcall HidP_TranslateUsagesToI8042ScanCodes(
 </dl>
 </dd>
 
-### -param <i>ModifierState</i> [in, out]
+### -param ModifierState [in, out]
 
 <dd>
 <p>Pointer to a _HIDP_KEYBOARD_MODIFIER_STATE structure that the caller maintains for use by the translate usages routine. The modifier state structure identifies the state of the keyboard modifier keys. </p>
@@ -140,7 +140,7 @@ NTSTATUS __stdcall HidP_TranslateUsagesToI8042ScanCodes(
 <p>See the Remarks section for more information about how a modifier state structure is used with the translate usage routine.</p>
 </dd>
 
-### -param <i>InsertCodesProcedure</i> [in]
+### -param InsertCodesProcedure [in]
 
 <dd>
 <p>Pointer to a caller-supplied PHIDP_INSERT_SCANCODES-typed callback routine that the translate usage routine uses to return the mapped scan codes to the caller of the translate usage routine.</p>
@@ -161,19 +161,19 @@ NTSTATUS __stdcall HidP_TranslateUsagesToI8042ScanCodes(
 <p></p>
 <dl>
 
-### -param <a id="Context"></a><a id="context"></a><a id="CONTEXT"></a><i>Context</i>
+### -param Context
 
 <dd>
 <p>Pointer to the context of the caller of the translate usage routine. The translate usage routine passes the <i>InsertCodesContext</i> pointer to the <i>InsertCodesProcedure</i> routine.</p>
 </dd>
 
-### -param <a id="NewScanCodes"></a><a id="newscancodes"></a><a id="NEWSCANCODES"></a><i>NewScanCodes</i>
+### -param NewScanCodes
 
 <dd>
 <p>Pointer to the first byte of a scan code that the translate usage routine returns to the caller of the translate usage routine.</p>
 </dd>
 
-### -param <a id="Length"></a><a id="length"></a><a id="LENGTH"></a><i>Length</i>
+### -param Length
 
 <dd>
 <p>Specifies the length, in bytes, of the scan code. A scan code cannot exceed four bytes.</p>
@@ -181,7 +181,7 @@ NTSTATUS __stdcall HidP_TranslateUsagesToI8042ScanCodes(
 </dl>
 </dd>
 
-### -param <i>InsertCodesContext</i> [in, optional]
+### -param InsertCodesContext [in, optional]
 
 <dd>
 <p>Pointer to a caller-defined context that the translate usage routine passes to the <i>InsertCodesProcedure</i> routine.</p>

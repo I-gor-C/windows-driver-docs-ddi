@@ -62,49 +62,49 @@ typedef struct _WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>DescriptorType</b>
+### -field DescriptorType
 
 <dd>
 <p>The descriptor type identifying this structure. The descriptor type is defined in <i>storport.h</i> as <b>BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR_TYPE_WINDOWS</b>.</p>
 </dd>
 
-### -field <b>DescriptorLength</b>
+### -field DescriptorLength
 
 <dd>
 <p>The length of this structure starting with the <b>VendorSpecific</b> member.</p>
 </dd>
 
-### -field <b>VendorSpecific</b>
+### -field VendorSpecific
 
 <dd>
 <p>Vendor specific bytes included in the descriptor. Windows applications must treat this member as reserved and ignore the reported value.</p>
 </dd>
 
-### -field <b>MaximumRangeDescriptors</b>
+### -field MaximumRangeDescriptors
 
 <dd>
 <p>The maximum number of range descriptors that may be included along with the <a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a> or the <a href="storage.write_using_token_header">WRITE_USING_TOKEN_HEADER</a> structures.</p>
 </dd>
 
-### -field <b>MaximumInactivityTimer</b>
+### -field MaximumInactivityTimer
 
 <dd>
 <p>The maximum available to specify as the timeout value in the <b>InactivityTimeout</b> member of the <a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a> structure.</p>
 </dd>
 
-### -field <b>DefaultInactivityTimer</b>
+### -field DefaultInactivityTimer
 
 <dd>
 <p>The default value that is used by the copy provider when the <b>InactivityTimeout</b> of the <a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a> structure is set to 0.</p>
 </dd>
 
-### -field <b>MaximumTokenTransferSize</b>
+### -field MaximumTokenTransferSize
 
 <dd>
 <p>The maximum number of logical blocks that can be specified as a total of the block range descriptors in the <a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a> or the <a href="storage.write_using_token_header">WRITE_USING_TOKEN_HEADER</a> structures.</p>
 </dd>
 
-### -field <b>OptimalTransferCount</b>
+### -field OptimalTransferCount
 
 <dd>
 <p>The optimal number of logical blocks, as a maximum, to specify as a total of the block range descriptors in the <a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a> or the <a href="storage.write_using_token_header">WRITE_USING_TOKEN_HEADER</a> structures. Offload data transfer performance may degrade if the transfer count is larger than this value.</p>

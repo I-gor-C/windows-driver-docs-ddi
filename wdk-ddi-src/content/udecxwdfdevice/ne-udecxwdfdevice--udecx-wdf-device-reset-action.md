@@ -56,13 +56,13 @@ typedef enum _UDECX_WDF_DEVICE_RESET_ACTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="UdecxWdfDeviceResetActionResetEachUsbDevice"></a><a id="udecxwdfdeviceresetactionreseteachusbdevice"></a><a id="UDECXWDFDEVICERESETACTIONRESETEACHUSBDEVICE"></a><b>UdecxWdfDeviceResetActionResetEachUsbDevice</b>
+### -field UdecxWdfDeviceResetActionResetEachUsbDevice
 
 <dd>
 <p>Each device that is attached to the controller is reset.</p>
 </dd>
 
-### -field <a id="UdecxWdfDeviceResetActionResetWdfDevice"></a><a id="udecxwdfdeviceresetactionresetwdfdevice"></a><a id="UDECXWDFDEVICERESETACTIONRESETWDFDEVICE"></a><b>UdecxWdfDeviceResetActionResetWdfDevice</b>
+### -field UdecxWdfDeviceResetActionResetWdfDevice
 
 <dd>
 <p>The emulated host controller is reset.</p>
@@ -89,10 +89,10 @@ typedef enum _UDECX_WDF_DEVICE_RESET_ACTION {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_udecx_wdf_device_reset">EVT_UDECX_WDF_DEVICE_RESET</a>
+<a href="..\udecxwdfdevice\nc-udecxwdfdevice-evt-udecx-wdf-device-reset.md">EVT_UDECX_WDF_DEVICE_RESET</a>
 </dt>
 <dt>
-<a href="buses.udecx_wdf_device_config">UDECX_WDF_DEVICE_CONFIG</a>
+<a href="..\udecxwdfdevice\ns-udecxwdfdevice--udecx-wdf-device-config.md">UDECX_WDF_DEVICE_CONFIG</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: wdf\wdfusbtargetdeviceselectconfigtype.htm
 old-project: wdf
 ms.assetid: d3637f5e-d4c1-430c-8511-8aac18fceee2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_TIMER_CONFIG, WDF_TIMER_CONFIG, *PWDF_TIMER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,43 +62,43 @@ typedef enum _WdfUsbTargetDeviceSelectConfigType {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfUsbTargetDeviceSelectConfigTypeInvalid"></a><a id="wdfusbtargetdeviceselectconfigtypeinvalid"></a><a id="WDFUSBTARGETDEVICESELECTCONFIGTYPEINVALID"></a><b>WdfUsbTargetDeviceSelectConfigTypeInvalid</b>
+### -field WdfUsbTargetDeviceSelectConfigTypeInvalid
 
 <dd>
 <p>For internal use only.</p>
 </dd>
 
-### -field <a id="WdfUsbTargetDeviceSelectConfigTypeDeconfig"></a><a id="wdfusbtargetdeviceselectconfigtypedeconfig"></a><a id="WDFUSBTARGETDEVICESELECTCONFIGTYPEDECONFIG"></a><b>WdfUsbTargetDeviceSelectConfigTypeDeconfig</b>
+### -field WdfUsbTargetDeviceSelectConfigTypeDeconfig
 
 <dd>
 <p>Deconfigure the device. This value applies to KMDF only.</p>
 </dd>
 
-### -field <a id="WdfUsbTargetDeviceSelectConfigTypeSingleInterface"></a><a id="wdfusbtargetdeviceselectconfigtypesingleinterface"></a><a id="WDFUSBTARGETDEVICESELECTCONFIGTYPESINGLEINTERFACE"></a><b>WdfUsbTargetDeviceSelectConfigTypeSingleInterface</b>
+### -field WdfUsbTargetDeviceSelectConfigTypeSingleInterface
 
 <dd>
 <p>Configure the device to use a single, specified interface. This value applies to KMDF and UMDF.</p>
 </dd>
 
-### -field <a id="WdfUsbTargetDeviceSelectConfigTypeMultiInterface"></a><a id="wdfusbtargetdeviceselectconfigtypemultiinterface"></a><a id="WDFUSBTARGETDEVICESELECTCONFIGTYPEMULTIINTERFACE"></a><b>WdfUsbTargetDeviceSelectConfigTypeMultiInterface</b>
+### -field WdfUsbTargetDeviceSelectConfigTypeMultiInterface
 
 <dd>
 <p>Configure the device to use multiple interfaces. This value applies to KMDF and UMDF.</p>
 </dd>
 
-### -field <a id="WdfUsbTargetDeviceSelectConfigTypeInterfacesPairs"></a><a id="wdfusbtargetdeviceselectconfigtypeinterfacespairs"></a><a id="WDFUSBTARGETDEVICESELECTCONFIGTYPEINTERFACESPAIRS"></a><b>WdfUsbTargetDeviceSelectConfigTypeInterfacesPairs</b>
+### -field WdfUsbTargetDeviceSelectConfigTypeInterfacesPairs
 
 <dd>
 <p>Configure the device to use multiple interfaces, possibly with alternate settings. Alternate settings are described in the USB specification.  This value applies to KMDF and UMDF.</p>
 </dd>
 
-### -field <a id="WdfUsbTargetDeviceSelectConfigTypeInterfacesDescriptor"></a><a id="wdfusbtargetdeviceselectconfigtypeinterfacesdescriptor"></a><a id="WDFUSBTARGETDEVICESELECTCONFIGTYPEINTERFACESDESCRIPTOR"></a><b>WdfUsbTargetDeviceSelectConfigTypeInterfacesDescriptor</b>
+### -field WdfUsbTargetDeviceSelectConfigTypeInterfacesDescriptor
 
 <dd>
 <p>Configure the device by using configuration parameters that are contained in USB descriptors. This value applies to KMDF only.</p>
 </dd>
 
-### -field <a id="WdfUsbTargetDeviceSelectConfigTypeUrb"></a><a id="wdfusbtargetdeviceselectconfigtypeurb"></a><a id="WDFUSBTARGETDEVICESELECTCONFIGTYPEURB"></a><b>WdfUsbTargetDeviceSelectConfigTypeUrb</b>
+### -field WdfUsbTargetDeviceSelectConfigTypeUrb
 
 <dd>
 <p>Configure the device by using configuration parameters that are contained in a driver-supplied URB structure. This value applies to KMDF only.</p>
@@ -152,4 +152,4 @@ typedef enum _WdfUsbTargetDeviceSelectConfigType {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceSelectConfigType enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceSelectConfigType enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

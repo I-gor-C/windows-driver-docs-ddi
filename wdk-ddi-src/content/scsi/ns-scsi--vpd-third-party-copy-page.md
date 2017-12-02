@@ -59,31 +59,31 @@ typedef struct _VPD_THIRD_PARTY_COPY_PAGE {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceType</b>
+### -field DeviceType
 
 <dd>
 <p>The device type. This is the same device type defined for use in the inquiry data for the storage device.</p>
 </dd>
 
-### -field <b>DeviceTypeQualifier</b>
+### -field DeviceTypeQualifier
 
 <dd>
 <p>A qualifier code for the device. Currently, <b>DEVICE_CONNECTED</b>, is the only valid value.</p>
 </dd>
 
-### -field <b>PageCode</b>
+### -field PageCode
 
 <dd>
 <p>The page code for the VPD third party copy page. This page code is defined as 0x8f.</p>
 </dd>
 
-### -field <b>PageLength</b>
+### -field PageLength
 
 <dd>
 <p>The length, in bytes, of the VPD page. For offload data transfer on Windows, <b>PageLength</b> must be &gt;= 0x24.</p>
 </dd>
 
-### -field <b>ThirdPartyCopyDescriptors</b>
+### -field ThirdPartyCopyDescriptors
 
 <dd>
 <p>Support descriptors for copy operations. On Windows systems, <b>ThirdPartyCopyDescriptors</b>  will contain one descriptor formatted as a <a href="..\scsi\ns-scsi--windows-block-device-token-limits-descriptor.md">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a> structure.</p>

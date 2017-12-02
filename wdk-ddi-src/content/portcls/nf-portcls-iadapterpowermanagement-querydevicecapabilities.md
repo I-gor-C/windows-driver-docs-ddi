@@ -54,7 +54,7 @@ NTSTATUS QueryDeviceCapabilities(
 ## -parameters
 <dl>
 
-### -param <i>PowerDeviceCaps</i> [in]
+### -param PowerDeviceCaps [in]
 
 <dd>
 <p>Pointer to a <a href="..\wdm\ns-wdm--device-capabilities.md">DEVICE_CAPABILITIES</a> structure specifying the device's capabilities</p>

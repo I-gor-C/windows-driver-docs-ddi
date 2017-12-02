@@ -57,25 +57,25 @@ typedef enum _DXGK_CHILD_DEVICE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="TypeUninitialized"></a><a id="typeuninitialized"></a><a id="TYPEUNINITIALIZED"></a><b>TypeUninitialized</b>
+### -field TypeUninitialized
 
 <dd>
 <p>Indicates that a variable of type DXGK_CHILD_DEVICE_TYPE has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="TypeVideoOutput"></a><a id="typevideooutput"></a><a id="TYPEVIDEOOUTPUT"></a><b>TypeVideoOutput</b>
+### -field TypeVideoOutput
 
 <dd>
 <p>Indicates that the child device is a video output. A video output is the circuitry on the display adapter that supplies a video signal to an external or integrated monitor (or other display device). Note that monitors, integrated LCD panels, and other devices that actually display an image are not considered child devices of the display adapter. </p>
 </dd>
 
-### -field <a id="TypeOther"></a><a id="typeother"></a><a id="TYPEOTHER"></a><b>TypeOther</b>
+### -field TypeOther
 
 <dd>
 <p>Indicates that the child device is not a video output. TV tuners, crossbar switches, and MPEG2 codecs are examples of child devices that are not video outputs.</p>
 </dd>
 
-### -field <a id="TypeIntegratedDisplay"></a><a id="typeintegrateddisplay"></a><a id="TYPEINTEGRATEDDISPLAY"></a><b>TypeIntegratedDisplay</b>
+### -field TypeIntegratedDisplay
 
 <dd>
 <p>Type indicating that this target is permanently connected to an integrated display.</p>

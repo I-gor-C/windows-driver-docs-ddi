@@ -7,7 +7,7 @@ old-location: netvista\wwan_sim_class.htm
 old-project: netvista
 ms.assetid: 4d66874b-bb1d-43e5-a4b2-525face7de81
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,32 +60,32 @@ typedef enum _WWAN_SIM_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanSimClassUnknown"></a><a id="wwansimclassunknown"></a><a id="WWANSIMCLASSUNKNOWN"></a><b>WwanSimClassUnknown</b>
+### -field WwanSimClassUnknown
 
 <dd>
 <p>The device supports an unknown class of SIM.</p>
 </dd>
 
-### -field <a id="WwanSimClassSimLogical"></a><a id="wwansimclasssimlogical"></a><a id="WWANSIMCLASSSIMLOGICAL"></a><b>WwanSimClassSimLogical</b>
+### -field WwanSimClassSimLogical
 
 <dd>
 <p>The device supports a logical or embedded SIM.</p>
 </dd>
 
-### -field <a id="WwanSimClassSimRemovable"></a><a id="wwansimclasssimremovable"></a><a id="WWANSIMCLASSSIMREMOVABLE"></a><b>WwanSimClassSimRemovable</b>
+### -field WwanSimClassSimRemovable
 
 <dd>
 <p>The device supports a removable SIM.</p>
 </dd>
 
-### -field <a id="WwanSimClassSimRemote"></a><a id="wwansimclasssimremote"></a><a id="WWANSIMCLASSSIMREMOTE"></a><b>WwanSimClassSimRemote</b>
+### -field WwanSimClassSimRemote
 
 <dd>
 <p>The device supports a remote SIM that is not physically attached to MB device. For example, a
      tethered cellular telephone modem.</p>
 </dd>
 
-### -field <a id="WwanSimClassMax"></a><a id="wwansimclassmax"></a><a id="WWANSIMCLASSMAX"></a><b>WwanSimClassMax</b>
+### -field WwanSimClassMax
 
 <dd>
 <p>The total number of supported SIM classes.</p>
@@ -125,4 +125,4 @@ typedef enum _WWAN_SIM_CLASS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SIM_CLASS enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SIM_CLASS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,19 +56,19 @@ typedef struct _BDA_CA_MODULE_UI {
 ## -struct-fields
 <dl>
 
-### -field <b>ulFormat</b>
+### -field ulFormat
 
 <dd>
 <p>Value that specifies the format of the UI. </p>
 </dd>
 
-### -field <b>ulbcDesc</b>
+### -field ulbcDesc
 
 <dd>
 <p>Number of descriptors in the <b>ulDesc</b> array. </p>
 </dd>
 
-### -field <b>ulDesc</b>
+### -field ulDesc
 
 <dd>
 <p>Array of descriptors for the UI. </p>

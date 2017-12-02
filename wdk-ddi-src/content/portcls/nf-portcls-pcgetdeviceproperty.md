@@ -58,31 +58,31 @@ NTSTATUS PcGetDeviceProperty(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object for the device. This parameter points to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> system structure but is cast to type PVOID.</p>
 </dd>
 
-### -param <i>DeviceProperty</i> [in]
+### -param DeviceProperty [in]
 
 <dd>
 <p>Specifies the Plug and Play device property that is requested. For a list of property specifier values, see the following Remarks section.</p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>Specifies the length in bytes of the buffer that is to receive the requested property data.</p>
 </dd>
 
-### -param <i>PropertyBuffer</i> [out]
+### -param PropertyBuffer [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer into which the method is to write the requested property data. The buffer must be large enough to contain the number of bytes specified in <i>BufferLength</i>.</p>
 </dd>
 
-### -param <i>ResultLength</i> [out]
+### -param ResultLength [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable into which the method outputs a count specifying the number of bytes actually written to the buffer. If the buffer size specified in <i>BufferLength</i> is too small to hold the property data, the method instead outputs the number of bytes required for the property data and returns STATUS_BUFFER_TOO_SMALL.</p>

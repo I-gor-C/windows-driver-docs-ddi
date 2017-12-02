@@ -57,25 +57,25 @@ typedef struct _DXVADDI_AYUVSAMPLE16 {
 ## -struct-fields
 <dl>
 
-### -field <b>Cr</b>
+### -field Cr
 
 <dd>
 <p>[in] A 16-bit chrominance (V) sample value.</p>
 </dd>
 
-### -field <b>Cb</b>
+### -field Cb
 
 <dd>
 <p>[in] A 16-bit chrominance (U) sample value.</p>
 </dd>
 
-### -field <b>Y</b>
+### -field Y
 
 <dd>
 <p>[in] A 16-bit luminance (Y) sample value.</p>
 </dd>
 
-### -field <b>Alpha</b>
+### -field Alpha
 
 <dd>
 <p>[in] The 16-bit opacity of the pixel when it is used as a source graphic for blending with another picture. </p>

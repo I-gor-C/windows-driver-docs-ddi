@@ -7,7 +7,7 @@ old-location: ifsk\rxpreparetoreparsesymboliclink.htm
 old-project: ifsk
 ms.assetid: 6a05b25f-e529-469a-8bfc-e75c0f7a9a8a
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxPrepareToReparseSymbolicLink
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ NTSTATUS RxPrepareToReparseSymbolicLink(
 ## -parameters
 <dl>
 
-### -param <i>RxContext</i> 
+### -param RxContext 
 
 <dd>
 <p>A pointer to the RX_CONTEXT structure.</p>
 </dd>
 
-### -param <i>SymbolicLinkEmbeddedInOldPath</i> 
+### -param SymbolicLinkEmbeddedInOldPath 
 
 <dd>
 <p>A Boolean value that indicates that a symbolic link was encountered. If the value is <b>TRUE</b>, a symbolic link was encountered as part of the traversal of the old path.</p>
 </dd>
 
-### -param <i>NewPath</i> 
+### -param NewPath 
 
 <dd>
 <p>A pointer to a Unicode string that contains the new path name to be traversed.</p>
 </dd>
 
-### -param <i>NewPathIsAbsolute</i> 
+### -param NewPathIsAbsolute 
 
 <dd>
 <p>A Boolean value that indicates if the new path is absolute. If this value is <b>FALSE</b>, \Device\Mup should be prepended to <i>NewPath</i>. If this value is <b>TRUE</b>, the <i>NewPath</i> parameter is the full path to reparse. In this case, the buffer that contains <i>NewPath</i> is used directly, rather than allocating a new buffer.</p>
 </dd>
 
-### -param <i>ReparseRequired</i> 
+### -param ReparseRequired 
 
 <dd>
 <p>A pointer to a Boolean value that indicates whether a reparse is required. If this value is <b>TRUE</b>, a reparse is required.</p>
@@ -152,4 +152,4 @@ NTSTATUS RxPrepareToReparseSymbolicLink(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxPrepareToReparseSymbolicLink routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxPrepareToReparseSymbolicLink routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

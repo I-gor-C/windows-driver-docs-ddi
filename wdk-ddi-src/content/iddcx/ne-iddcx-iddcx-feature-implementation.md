@@ -59,7 +59,7 @@ typedef enum _IDDCX_FEATURE_IMPLEMENTATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="IDDCX_FEATURE_IMPLEMENTATION_UNINITIALIZED"></a><a id="iddcx_feature_implementation_uninitialized"></a><b>IDDCX_FEATURE_IMPLEMENTATION_UNINITIALIZED</b>
+### -field IDDCX_FEATURE_IMPLEMENTATION_UNINITIALIZED
 
 <dd>
 <p>
@@ -67,7 +67,7 @@ typedef enum _IDDCX_FEATURE_IMPLEMENTATION {
                     Indicates that an <b>IDDCX_FEATURE_IMPLEMENTATION</b> variable has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="IDDCX_FEATURE_IMPLEMENTATION_NONE"></a><a id="iddcx_feature_implementation_none"></a><b>IDDCX_FEATURE_IMPLEMENTATION_NONE</b>
+### -field IDDCX_FEATURE_IMPLEMENTATION_NONE
 
 <dd>
 <p>
@@ -75,7 +75,7 @@ typedef enum _IDDCX_FEATURE_IMPLEMENTATION {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_FEATURE_IMPLEMENTATION_HARDWARE"></a><a id="iddcx_feature_implementation_hardware"></a><b>IDDCX_FEATURE_IMPLEMENTATION_HARDWARE</b>
+### -field IDDCX_FEATURE_IMPLEMENTATION_HARDWARE
 
 <dd>
 <p>
@@ -83,7 +83,7 @@ typedef enum _IDDCX_FEATURE_IMPLEMENTATION {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_FEATURE_IMPLEMENTATION_SOFTWARE"></a><a id="iddcx_feature_implementation_software"></a><b>IDDCX_FEATURE_IMPLEMENTATION_SOFTWARE</b>
+### -field IDDCX_FEATURE_IMPLEMENTATION_SOFTWARE
 
 <dd>
 <p>

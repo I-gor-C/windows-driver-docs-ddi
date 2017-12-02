@@ -7,7 +7,7 @@ old-location: ifsk\ioreplacefileobjectname.htm
 old-project: ifsk
 ms.assetid: 1550a35f-2733-4ee8-9715-d82f96eb5da7
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: IoReplaceFileObjectName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ NTSTATUS IoReplaceFileObjectName(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to the file object whose file name is being replaced. </p>
 </dd>
 
-### -param <i>NewFileName</i> [in]
+### -param NewFileName [in]
 
 <dd>
 <p>Pointer to the string buffer for the new name for the file object.</p>
 </dd>
 
-### -param <i>FileNameLength</i> [in]
+### -param FileNameLength [in]
 
 <dd>
 <p>Length, in bytes, of the new name for the file object. </p>

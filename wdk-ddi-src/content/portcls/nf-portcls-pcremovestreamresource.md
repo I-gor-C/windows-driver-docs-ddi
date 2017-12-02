@@ -54,7 +54,7 @@ NTSTATUS  PcRemoveStreamResource(
 ## -parameters
 <dl>
 
-### -param <i>ResourceHandle</i> [in]
+### -param ResourceHandle [in]
 
 <dd>
 <p>PCSTREAMRESOURCE– Resource handle returned by PcAddStreamResource.  

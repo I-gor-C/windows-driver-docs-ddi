@@ -56,19 +56,19 @@ NTSTATUS IoPropagateActivityIdToThread(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>The IRP whose ID will be propagated to the thread.</p>
 </dd>
 
-### -param <i>PropagatedId</i> [out]
+### -param PropagatedId [out]
 
 <dd>
 <p>A pointer to memory allocated by the caller to store the ID in the thread.</p>
 </dd>
 
-### -param <i>*OriginalId</i> [out]
+### -param *OriginalId [out]
 
 <dd>
 <p>Upon successfully returning from the call, holds the ID that was previously set on the thread. The driver must call <a href="..\ntddk\nf-ntddk-ioclearactivityidthread.md">IoClearActivityIdThread</a> with this pointer when tracing is completed within the same thread context.</p>

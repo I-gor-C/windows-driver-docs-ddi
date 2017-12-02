@@ -7,7 +7,7 @@ old-location: netvista\rilserviceprovisioningstatus_2.htm
 old-project: netvista
 ms.assetid: 044d89f7-6167-4e85-b4b4-d706a1499480
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef enum _RILSERVICEPROVISIONINGSTATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SVCPROV_NOTPROVISIONED"></a><a id="ril_svcprov_notprovisioned"></a><b>RIL_SVCPROV_NOTPROVISIONED</b>
+### -field RIL_SVCPROV_NOTPROVISIONED
 
 <dd></dd>
 
-### -field <a id="RIL_SVCPROV_PROVISIONED"></a><a id="ril_svcprov_provisioned"></a><b>RIL_SVCPROV_PROVISIONED</b>
+### -field RIL_SVCPROV_PROVISIONED
 
 <dd></dd>
 
-### -field <a id="RIL_SVCPROV_TEMPMODERESTRICTED"></a><a id="ril_svcprov_tempmoderestricted"></a><b>RIL_SVCPROV_TEMPMODERESTRICTED</b>
+### -field RIL_SVCPROV_TEMPMODERESTRICTED
 
 <dd></dd>
 
-### -field <a id="RIL_SVCPROV_TEMPMODEALLOWED"></a><a id="ril_svcprov_tempmodeallowed"></a><b>RIL_SVCPROV_TEMPMODEALLOWED</b>
+### -field RIL_SVCPROV_TEMPMODEALLOWED
 
 <dd></dd>
 
-### -field <a id="RIL_SVCPROV_MAX"></a><a id="ril_svcprov_max"></a><b>RIL_SVCPROV_MAX</b>
+### -field RIL_SVCPROV_MAX
 
 <dd></dd>
 </dl>

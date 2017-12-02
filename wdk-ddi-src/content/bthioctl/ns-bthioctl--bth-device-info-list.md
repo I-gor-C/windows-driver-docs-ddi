@@ -56,13 +56,13 @@ typedef struct _BTH_DEVICE_INFO_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>numOfDevices</b>
+### -field numOfDevices
 
 <dd>
 <p>The number of devices that have been discovered.</p>
 </dd>
 
-### -field <b>deviceList</b>
+### -field deviceList
 
 <dd>
 <p>An open-ended array of 

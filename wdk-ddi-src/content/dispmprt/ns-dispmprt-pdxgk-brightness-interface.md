@@ -61,49 +61,49 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of the brightness interface. Version number constants are defined in Dispmprt.h (for example, <b>DXGK_BRIGHTNESS_INTERFACE_VERSION_1</b>).</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to a private context block.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to an interface reference function that is implemented by the display miniport driver.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to an interface dereference function that is implemented by the display miniport driver.</p>
 </dd>
 
-### -field <b>GetPossibleBrightness</b>
+### -field GetPossibleBrightness
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk-brightness-get-possible.md">DxgkDdiGetPossibleBrightness</a> function.</p>
 </dd>
 
-### -field <b>SetBrightness</b>
+### -field SetBrightness
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk-brightness-set.md">DxgkDdiSetBrightness</a> function.</p>
 </dd>
 
-### -field <b>GetBrightness</b>
+### -field GetBrightness
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk-brightness-get.md">DxgkDdiGetBrightness</a> function.</p>

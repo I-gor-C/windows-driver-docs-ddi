@@ -59,25 +59,25 @@ typedef enum _STREAM_PRIORITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="High"></a><a id="high"></a><a id="HIGH"></a><b>High</b>
+### -field High
 
 <dd>
 <p>Highest priority, IRQL equal to the adapter's ISR.</p>
 </dd>
 
-### -field <a id="Dispatch"></a><a id="dispatch"></a><a id="DISPATCH"></a><b>Dispatch</b>
+### -field Dispatch
 
 <dd>
 <p>Medium priority, IRQL equal to dispatch level.</p>
 </dd>
 
-### -field <a id="Low"></a><a id="low"></a><a id="LOW"></a><b>Low</b>
+### -field Low
 
 <dd>
 <p>Lowest priority, IRQL equal to passive or APC level.</p>
 </dd>
 
-### -field <a id="LowToHigh___________________"></a><a id="lowtohigh___________________"></a><a id="LOWTOHIGH___________________"></a><b>LowToHigh                   </b>
+### -field LowToHigh                   
 
 <dd>
 <p>Go from low priority to high priority.</p>

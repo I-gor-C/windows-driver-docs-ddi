@@ -55,13 +55,13 @@ typedef enum _BDCB_CALLBACK_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="BdCbStatusUpdate"></a><a id="bdcbstatusupdate"></a><a id="BDCBSTATUSUPDATE"></a><b>BdCbStatusUpdate</b>
+### -field BdCbStatusUpdate
 
 <dd>
 <p>A status update provided by the system to a boot-start driver.</p>
 </dd>
 
-### -field <a id="BdCbInitializeImage"></a><a id="bdcbinitializeimage"></a><a id="BDCBINITIALIZEIMAGE"></a><b>BdCbInitializeImage</b>
+### -field BdCbInitializeImage
 
 <dd>
 <p>A boot image is about to be initialized. During this callback, boot-start drivers may classify a boot image as a known good image or a known bad image.</p>

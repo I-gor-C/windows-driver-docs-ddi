@@ -62,13 +62,13 @@ NTSTATUS ZwCreateEnlistment(
 ## -parameters
 <dl>
 
-### -param <i>EnlistmentHandle</i> [out]
+### -param EnlistmentHandle [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives a handle to the new enlistment object if the call to <b>ZwCreateEnlistment</b> succeeds.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that specifies the caller's requested access to the enlistment object. In addition to the access rights that are defined for all kinds of objects (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>), the caller can specify any of the following access right flags for enlistment objects:</p>
@@ -161,25 +161,25 @@ NTSTATUS ZwCreateEnlistment(
 <p> </p>
 </dd>
 
-### -param <i>ResourceManagerHandle</i> [in]
+### -param ResourceManagerHandle [in]
 
 <dd>
 <p>A handle to the caller's <a href="https://msdn.microsoft.com/b44f2035-ee9f-453b-b12d-89ca36a8b280">resource manager object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a> or <a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a>.</p>
 </dd>
 
-### -param <i>TransactionHandle</i> [in]
+### -param TransactionHandle [in]
 
 <dd>
 <p>A handle to a <a href="https://msdn.microsoft.com/124105bd-70be-49b1-8ea4-af6ba1f3cf16">transaction object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a> or <a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>. KTM adds this transaction to the list of transactions that the calling resource manager is handling.</p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in, optional]
+### -param ObjectAttributes [in, optional]
 
 <dd>
 <p>A pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> routine to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>CreateOptions</i> [in, optional]
+### -param CreateOptions [in, optional]
 
 <dd>
 <p>Enlistment option flags. The following table contains the only available flag. </p>
@@ -201,13 +201,13 @@ NTSTATUS ZwCreateEnlistment(
 <p>This parameter is optional and can be zero. </p>
 </dd>
 
-### -param <i>NotificationMask</i> [in]
+### -param NotificationMask [in]
 
 <dd>
 <p>A bitwise OR of TRANSACTION_NOTIFY_<i>XXX</i> values that are defined in Ktmtypes.h. This mask specifies the types of <a href="https://msdn.microsoft.com/library/windows/hardware/ff564815">transaction notifications</a> that KTM sends to the caller.</p>
 </dd>
 
-### -param <i>EnlistmentKey</i> [in, optional]
+### -param EnlistmentKey [in, optional]
 
 <dd>
 <p>A pointer to caller-defined information that uniquely identifies the enlistment. The resource manager receives this pointer when it calls <a href="..\wdm\nf-wdm-zwgetnotificationresourcemanager.md">ZwGetNotificationResourceManager</a> or when KTM calls the <a href="kernel.resourcemanagernotification">ResourceManagerNotification</a> callback routine. The resource manager can maintain a reference count for this key by calling <a href="..\wdm\nf-wdm-tmreferenceenlistmentkey.md">TmReferenceEnlistmentKey</a> and <a href="..\wdm\nf-wdm-tmdereferenceenlistmentkey.md">TmDereferenceEnlistmentKey</a>. This parameter is optional and can be <b>NULL</b>. </p>

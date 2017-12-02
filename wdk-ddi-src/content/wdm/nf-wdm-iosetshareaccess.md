@@ -58,13 +58,13 @@ VOID IoSetShareAccess(
 ## -parameters
 <dl>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the type of access requested for the <i>FileObject</i>. See <a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a> for a complete list of system-defined <i>DesiredAccess </i>flags.</p>
 </dd>
 
-### -param <i>DesiredShareAccess</i> [in]
+### -param DesiredShareAccess [in]
 
 <dd>
 <p>Specifies the type of share access to be set for the file object. This value can be zero, or any combination of the following:</p>
@@ -81,13 +81,13 @@ VOID IoSetShareAccess(
 </dl>
 </dd>
 
-### -param <i>FileObject</i> [in, out]
+### -param FileObject [in, out]
 
 <dd>
 <p>Pointer to the file object whose share access is being set or reset.</p>
 </dd>
 
-### -param <i>ShareAccess</i> [out]
+### -param ShareAccess [out]
 
 <dd>
 <p>Pointer to the SHARE_ACCESS structure associated with <i>FileObject</i>. Drivers should treat this structure as opaque. </p>

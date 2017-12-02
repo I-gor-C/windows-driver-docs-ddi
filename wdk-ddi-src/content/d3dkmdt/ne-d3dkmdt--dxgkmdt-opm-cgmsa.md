@@ -59,37 +59,37 @@ typedef enum _DXGKMDT_OPM_CGMSA {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKMDT_OPM_CGMSA_OFF"></a><a id="dxgkmdt_opm_cgmsa_off"></a><b>DXGKMDT_OPM_CGMSA_OFF</b>
+### -field DXGKMDT_OPM_CGMSA_OFF
 
 <dd>
 <p>Indicates that a video output's signal is not protected with the CGMS-A output protection scheme. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_CGMSA_COPY_FREELY"></a><a id="dxgkmdt_opm_cgmsa_copy_freely"></a><b>DXGKMDT_OPM_CGMSA_COPY_FREELY</b>
+### -field DXGKMDT_OPM_CGMSA_COPY_FREELY
 
 <dd>
 <p>Indicates that the signal from a physical video output can be copied an infinite number of times. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_CGMSA_COPY_NO_MORE"></a><a id="dxgkmdt_opm_cgmsa_copy_no_more"></a><b>DXGKMDT_OPM_CGMSA_COPY_NO_MORE</b>
+### -field DXGKMDT_OPM_CGMSA_COPY_NO_MORE
 
 <dd>
 <p>Indicates that the signal from a physical video output cannot be copied because the signal was already copied once. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_CGMSA_COPY_ONE_GENERATION"></a><a id="dxgkmdt_opm_cgmsa_copy_one_generation"></a><b>DXGKMDT_OPM_CGMSA_COPY_ONE_GENERATION</b>
+### -field DXGKMDT_OPM_CGMSA_COPY_ONE_GENERATION
 
 <dd>
 <p>Indicates that the signal from a physical video output can be copied once. However, the copy can never be copied. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_CGMSA_COPY_NEVER"></a><a id="dxgkmdt_opm_cgmsa_copy_never"></a><b>DXGKMDT_OPM_CGMSA_COPY_NEVER</b>
+### -field DXGKMDT_OPM_CGMSA_COPY_NEVER
 
 <dd>
 <p>Indicates that the signal from a physical video output can never be copied. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_REDISTRIBUTION_CONTROL_REQUIRED"></a><a id="dxgkmdt_opm_redistribution_control_required"></a><b>DXGKMDT_OPM_REDISTRIBUTION_CONTROL_REQUIRED</b>
+### -field DXGKMDT_OPM_REDISTRIBUTION_CONTROL_REQUIRED
 
 <dd>
 <p>Indicates that the technological control of consumer redistribution is enabled. </p>

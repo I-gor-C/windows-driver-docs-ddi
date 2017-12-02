@@ -57,19 +57,19 @@ typedef struct _BLOCK_DEVICE_RANGE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>LogicalBlockAddress</b>
+### -field LogicalBlockAddress
 
 <dd>
 <p>The starting logical block address of a block range.</p>
 </dd>
 
-### -field <b>TransferLength</b>
+### -field TransferLength
 
 <dd>
 <p>The length, in logical blocks, of the block range.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved bytes.</p>

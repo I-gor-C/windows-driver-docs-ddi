@@ -7,7 +7,7 @@ old-location: netvista\riluiccapppersocheckstatusstate_2.htm
 old-project: netvista
 ms.assetid: 389c20de-7ff2-47c6-8393-529e401e56e0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILUICCAPPPERSOCHECKSTATUSSTATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PERSOCHECKSTATE_PASS"></a><a id="ril_persocheckstate_pass"></a><b>RIL_PERSOCHECKSTATE_PASS</b>
+### -field RIL_PERSOCHECKSTATE_PASS
 
 <dd></dd>
 
-### -field <a id="RIL_PERSOCHECKSTATE_FAIL"></a><a id="ril_persocheckstate_fail"></a><b>RIL_PERSOCHECKSTATE_FAIL</b>
+### -field RIL_PERSOCHECKSTATE_FAIL
 
 <dd></dd>
 
-### -field <a id="RIL_PERSOCHECKSTATE_MAX"></a><a id="ril_persocheckstate_max"></a><b>RIL_PERSOCHECKSTATE_MAX</b>
+### -field RIL_PERSOCHECKSTATE_MAX
 
 <dd></dd>
 </dl>

@@ -57,25 +57,25 @@ typedef struct _DXGK_QUERYSEGMENTMEMORYSTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>DriverSegmentId</b>
+### -field DriverSegmentId
 
 <dd>
 <p>A  1-based segment identifier of a local GPU memory segment.</p>
 </dd>
 
-### -field <b>PhysicalAdapterIndex</b>
+### -field PhysicalAdapterIndex
 
 <dd>
 <p>Physical adapter index in a linked display adapter link.</p>
 </dd>
 
-### -field <b>NumInvalidMemoryRanges</b>
+### -field NumInvalidMemoryRanges
 
 <dd>
 <p>The number of entries in the <b>pMemoryRanges</b> array. This is the value returned by the kernel mode driver in <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor4.md">DXGK_SEGMENTDESCRIPTOR4</a>.</p>
 </dd>
 
-### -field <b>pMemoryRanges</b>
+### -field pMemoryRanges
 
 <dd>
 <p>Array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-memoryrange.md">DXGK_MEMORYRANGE</a> structures for the invalid memory ranges.</p>

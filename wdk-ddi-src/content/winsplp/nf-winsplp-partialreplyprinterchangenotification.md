@@ -56,13 +56,13 @@ BOOL PartialReplyPrinterChangeNotification(
 ## -parameters
 <dl>
 
-### -param <i>hNotify</i> [in]
+### -param hNotify [in]
 
 <dd>
 <p>Caller-supplied handle. This handle must have been previously received as the <i>hNotify</i> input to the print provider's <a href="..\winspool\nf-winspool-findfirstprinterchangenotification.md">FindFirstPrinterChangeNotification</a> function.</p>
 </dd>
 
-### -param <i>pInfoDataSrc</i> [in, optional]
+### -param pInfoDataSrc [in, optional]
 
 <dd>
 <p>Caller-supplied pointer to a PRINTER_NOTIFY_INFO_DATA structure (described in the Microsoft Windows SDK documentation). Can be <b>NULL</b>. For more information, see the following Remarks section.</p>
@@ -79,7 +79,7 @@ BOOL PartialReplyPrinterChangeNotification(
 
 <p>If <i>pInfoDataSrc</i> is <b>NULL</b>, all stored information associated with the specified handle is deleted from the spooler. The function accomplishes this deletion by freeing all buffers associated with <i>pBuf</i> members of PRINTER_NOTIFY_INFO_DATA structures belonging to the specified handle. The function then sets the PRINTER_NOTIFY_INFO_DISCARDED flag in the stored PRINTER_NOTIFY_INFO structure.</p>
 
-<p>For additional information, see <a href="NULL">Supporting Printer Change Notifications</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/e75c6f89-9cef-4900-af89-edf1f7f786c7">Supporting Printer Change Notifications</a>.</p>
 
 ## -requirements
 <table>

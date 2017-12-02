@@ -7,7 +7,7 @@ old-location: netvista\ndismgetdeviceproperty.htm
 old-project: netvista
 ms.assetid: caef96b6-1b94-475d-9f78-66ae6d6ac979
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMGetDeviceProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ VOID NdisMGetDeviceProperty(
 ## -parameters
 <dl>
 
-### -param <i>MiniportAdapterHandle</i> [in]
+### -param MiniportAdapterHandle [in]
 
 <dd>
 <p>The NDIS handle that identifies the miniport adapter. This handle was originally passed to the 
@@ -69,7 +69,7 @@ VOID NdisMGetDeviceProperty(
      MiniportInitializeEx</a> function.</p>
 </dd>
 
-### -param <i>PhysicalDeviceObject</i> [out, optional]
+### -param PhysicalDeviceObject [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer. The buffer receives a pointer to a 
@@ -77,7 +77,7 @@ VOID NdisMGetDeviceProperty(
      physical device for the miniport adapter. This pointer is optional.</p>
 </dd>
 
-### -param <i>FunctionalDeviceObject</i> [out, optional]
+### -param FunctionalDeviceObject [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer. The buffer receives a pointer to a 
@@ -86,7 +86,7 @@ VOID NdisMGetDeviceProperty(
      This pointer is optional.</p>
 </dd>
 
-### -param <i>NextDeviceObject</i> [out, optional]
+### -param NextDeviceObject [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer. The buffer receives a pointer to a 
@@ -96,7 +96,7 @@ VOID NdisMGetDeviceProperty(
      object that is associated with a bus driver or HAL This pointer is optional.</p>
 </dd>
 
-### -param <i>AllocatedResources</i> [out, optional]
+### -param AllocatedResources [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives a pointer to a 
@@ -106,7 +106,7 @@ VOID NdisMGetDeviceProperty(
      pointer is optional.</p>
 </dd>
 
-### -param <i>AllocatedResourcesTranslated</i> [out, optional]
+### -param AllocatedResourcesTranslated [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives a pointer to a 
@@ -213,4 +213,4 @@ VOID NdisMGetDeviceProperty(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMGetDeviceProperty function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMGetDeviceProperty function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

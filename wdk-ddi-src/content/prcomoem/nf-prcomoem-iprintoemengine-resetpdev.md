@@ -56,11 +56,11 @@ HRESULT ResetPDEV(
 ## -parameters
 <dl>
 
-### -param <i>pdevobjOld</i> 
+### -param pdevobjOld 
 
 <dd></dd>
 
-### -param <i>pdevobjNew</i> 
+### -param pdevobjNew 
 
 <dd></dd>
 </dl>

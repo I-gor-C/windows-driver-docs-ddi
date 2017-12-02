@@ -56,19 +56,19 @@ typedef struct HBA_FcpScsiEntryV2 {
 ## -struct-fields
 <dl>
 
-### -field <b>ScsiId</b>
+### -field ScsiId
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-scsiid.md">HBA_ScsiId</a> that holds information that the operating system uses to identify a SCSI device. </p>
 </dd>
 
-### -field <b>FcpId</b>
+### -field FcpId
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fcpid.md">HBA_FcpId</a> that uniquely identifies the device anywhere on the fibre channel network. </p>
 </dd>
 
-### -field <b>LUID</b>
+### -field LUID
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-luid.md">HBA_LUID</a> that holds a logical unit descriptor for the device that the operating system derives from SCSI inquiry data. </p>

@@ -55,13 +55,13 @@ typedef struct _KSAUDIO_PRESENTATION_POSITION {
 ## -struct-fields
 <dl>
 
-### -field <b>u64PositionInBlocks</b>
+### -field u64PositionInBlocks
 
 <dd>
 <p>Specifies the block offset from the start of the stream to the current post-decoded, uncompressed position in the stream. A "block" refers to the group of channels in the same sample. So, for example, in a PCM stream a block is the same as a frame. However, for compressed formats a block is a single sample within a frame. This means that for a typical MP3 stream that has 1152 samples in a frame, there are 1152 blocks. </p>
 </dd>
 
-### -field <b>u64QPCPosition</b>
+### -field u64QPCPosition
 
 <dd>
 <p>Specifies the value of the performance counter at the time that the audio driver reads the presentation position in response to the <b>KSAUDIO_PRESENTATION_POSITION</b> call. A driver writes to this field with the value read from calling <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff553053(v=vs.85).aspx">KeQueryPerformanceCounter</a> when a snapshot is taken of the presentation position.</p>

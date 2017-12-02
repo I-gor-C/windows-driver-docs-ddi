@@ -57,25 +57,25 @@ typedef struct _DXVAHDDDI_COLOR_YCbCrA {
 ## -struct-fields
 <dl>
 
-### -field <b>Y</b>
+### -field Y
 
 <dd>
 <p>[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the luma component of the YCbCr color. </p>
 </dd>
 
-### -field <b>Cb</b>
+### -field Cb
 
 <dd>
 <p>[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the blue chroma component of the YCbCr color. </p>
 </dd>
 
-### -field <b>Cr</b>
+### -field Cr
 
 <dd>
 <p>[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the red chroma component of the YCbCr color. </p>
 </dd>
 
-### -field <b>A</b>
+### -field A
 
 <dd>
 <p>[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the alpha component (that is, the transparency level) of the YCbCr color.</p>

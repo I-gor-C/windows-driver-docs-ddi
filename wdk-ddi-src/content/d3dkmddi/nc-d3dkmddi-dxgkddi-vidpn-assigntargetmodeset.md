@@ -59,19 +59,19 @@ NTSTATUS APIENTRY pfnAssignTargetModeSet(
 ## -parameters
 <dl>
 
-### -param <i>hVidPn</i> [in]
+### -param hVidPn [in]
 
 <dd>
 <p>[in] A handle to a VidPN object. The VidPN manager previously provided this handle to the display miniport driver by calling <a href="display.dxgkddienumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a> or <a href="display.dxgkddirecommendfunctionalvidpn">DxgkDdiRecommendFunctionalVidPn</a>.</p>
 </dd>
 
-### -param <i>VidPnTargetId</i> [in]
+### -param VidPnTargetId [in]
 
 <dd>
 <p>[in] An integer that identifies one of the video present targets associated with the VidPN object.</p>
 </dd>
 
-### -param <i>hVidPnTargetModeSet</i> [in]
+### -param hVidPnTargetModeSet [in]
 
 <dd>
 <p>[in] A handle to the target mode set object that is to be assigned to the target identified by <i>VidPnTargetId</i>. The display miniport driver previously obtained this handle by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-createnewtargetmodeset.md">pfnCreateNewTargetModeSet</a>.</p>

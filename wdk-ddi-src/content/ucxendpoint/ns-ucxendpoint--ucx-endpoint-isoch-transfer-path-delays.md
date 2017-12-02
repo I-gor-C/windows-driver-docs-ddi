@@ -56,14 +56,14 @@ typedef struct _UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS {
 ## -struct-fields
 <dl>
 
-### -field <b>MaximumSendPathDelayInMilliSeconds</b>
+### -field MaximumSendPathDelayInMilliSeconds
 
 <dd>
 <p>The maximum delay in milliseconds from the time the  client driver's isochronous transfer is received by the USB driver stack to the time the transfer is programmed in the host controller. The host controller could either be a local host (as in case of wired USB) or it could be a remote controller as in case of Media-Agnostic USB (MA-USB). In case of MA-USB, it includes the maximum delay associated with the network medium.  
   </p>
 </dd>
 
-### -field <b>MaximumCompletionPathDelayInMilliSeconds</b>
+### -field MaximumCompletionPathDelayInMilliSeconds
 
 <dd>
 <p>The maximum delay in milliseconds from the time an isochronous transfer is completed by the (local or remote) host controller to the time the corresponding client driver's request is completed by the USB driver stack. For MA-USB, it includes the maximum delay associated with the network medium.</p>
@@ -106,7 +106,7 @@ typedef struct _UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_ucx_endpoint_get_isoch_transfer_path_delays_">EVT_UCX_ENDPOINT_GET_ISOCH_TRANSFER_PATH_DELAYS</a>
+<a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-get-isoch-transfer-path-delays.md">EVT_UCX_ENDPOINT_GET_ISOCH_TRANSFER_PATH_DELAYS</a>
 </dt>
 </dl>
 <p> </p>

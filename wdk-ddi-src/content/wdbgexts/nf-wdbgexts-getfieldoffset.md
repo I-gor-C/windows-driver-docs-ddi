@@ -7,13 +7,13 @@ old-location: debugger\getfieldoffset.htm
 old-project: debugger
 ms.assetid: 3e5e782b-1a72-446d-9d15-c0f513f3440c
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: GetFieldOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -57,19 +57,19 @@ __inline ULONG GetFieldOffset(
 ## -parameters
 <dl>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>Specifies the name of the type of the structure.  This can be qualified with a module name, for example, <b>mymodule!mystruct</b>.</p>
 </dd>
 
-### -param <i>Field</i> [in]
+### -param Field [in]
 
 <dd>
 <p>Specifies the name of the member in the structure.  Submembers can be specified by using a period-separated path, for example, "myfield.mysubfield".</p>
 </dd>
 
-### -param <i>pOffset</i> [out]
+### -param pOffset [out]
 
 <dd>
 <p>Receives the offset of the member from the beginning of an instance of the structure.</p>
@@ -100,7 +100,7 @@ __inline ULONG GetFieldOffset(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

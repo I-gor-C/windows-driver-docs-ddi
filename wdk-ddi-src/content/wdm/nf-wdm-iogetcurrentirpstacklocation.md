@@ -55,10 +55,10 @@ PIO_STACK_LOCATION IoGetCurrentIrpStackLocation(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>A pointer to the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a>.</p>
+<p>A pointer to the <a href="..\wdm\ns-wdm--irp.md">IRP</a>.</p>
 </dd>
 </dl>
 
@@ -125,7 +125,7 @@ PIO_STACK_LOCATION IoGetCurrentIrpStackLocation(
 <a href="..\wdm\nf-wdm-iosetnextirpstacklocation.md">IoSetNextIrpStackLocation</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 </dl>
 <p> </p>

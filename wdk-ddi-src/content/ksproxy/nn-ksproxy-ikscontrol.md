@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>IKsControl</b> interface provides user-mode methods that control a KS filter or KS pin. See the <a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a> AVStream COM interface for information about the user-mode equivalent of this interface. 
+<p>The <b>IKsControl</b> interface provides user-mode methods that control a KS filter or KS pin. See the <a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a> AVStream COM interface for information about the user-mode equivalent of this interface. 
 </p>
 
 
@@ -148,7 +148,7 @@ req.iface:
 ## -see-also
 <dl>
 <dt>
-<a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl (AVStream COM Interface)</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl (AVStream COM Interface)</a>
 </dt>
 </dl>
 <p> </p>

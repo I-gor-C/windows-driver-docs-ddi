@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="IdePowerUnSpecified"></a><a id="idepowerunspecified"></a><a id="IDEPOWERUNSPECIFIED"></a><b>IdePowerUnSpecified</b>
+### -field IdePowerUnSpecified
 
 <dd>
 <p>Indicates that the power level is unspecified.</p>
 </dd>
 
-### -field <a id="IdePowerD0"></a><a id="idepowerd0"></a><a id="IDEPOWERD0"></a><b>IdePowerD0</b>
+### -field IdePowerD0
 
 <dd>
 <p>Indicates a device power level of 0.</p>
 </dd>
 
-### -field <a id="IdePowerD3"></a><a id="idepowerd3"></a><a id="IDEPOWERD3"></a><b>IdePowerD3</b>
+### -field IdePowerD3
 
 <dd>
 <p>Indicates a device power level of 3.</p>

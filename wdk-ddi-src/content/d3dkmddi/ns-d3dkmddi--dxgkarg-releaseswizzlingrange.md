@@ -56,19 +56,19 @@ typedef struct _DXGKARG_RELEASESWIZZLINGRANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>hAllocation</b>
+### -field hAllocation
 
 <dd>
 <p>[in] A handle to the allocation that the display miniport driver assigns and that is returned through the driver's <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function.</p>
 </dd>
 
-### -field <b>PrivateDriverData</b>
+### -field PrivateDriverData
 
 <dd>
 <p>[in] The 32 bits of private data that the user-mode display driver sent when the display miniport driver's <a href="display.dxgkddiacquireswizzlingrange">DxgkDdiAcquireSwizzlingRange</a> function was called to acquire the swizzling range.</p>
 </dd>
 
-### -field <b>RangeId</b>
+### -field RangeId
 
 <dd>
 <p>[in] The zero-based identifier of the swizzling range that the <a href="display.dxgkddireleaseswizzlingrange">DxgkDdiReleaseSwizzlingRange</a> function releases.</p>

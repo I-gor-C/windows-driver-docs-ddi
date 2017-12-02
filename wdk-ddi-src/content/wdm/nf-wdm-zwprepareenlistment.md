@@ -56,13 +56,13 @@ NTSTATUS ZwPrepareEnlistment(
 ## -parameters
 <dl>
 
-### -param <i>EnlistmentHandle</i> [in]
+### -param EnlistmentHandle [in]
 
 <dd>
 <p>A handle to an <a href="https://msdn.microsoft.com/80e61475-4bb7-4eaa-b9f1-ff95eac9bc77">enlistment object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a> or <a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>. The object must represent a <a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">superior enlistment</a> and the handle must have ENLISTMENT_SUPERIOR_RIGHTS access to the object.</p>
 </dd>
 
-### -param <i>TmVirtualClock</i> [in, optional]
+### -param TmVirtualClock [in, optional]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/de01b0f1-86b1-4e7d-af22-84dbbe3a3f83">virtual clock value</a>. This parameter is optional and can be <b>NULL</b>.</p>

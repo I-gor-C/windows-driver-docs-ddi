@@ -55,13 +55,13 @@ typedef enum D3DDDI_COPY_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_COPY_NO_OVERWRITE"></a><a id="d3dddi_copy_no_overwrite"></a><b>D3DDDI_COPY_NO_OVERWRITE</b>
+### -field D3DDDI_COPY_NO_OVERWRITE
 
 <dd>
 <p>The caller guarantees that the portion of the surface that is being written to with new data is not currently being referenced or accessed by any previous render operation. The driver can take advantage of this capability to optimize performance and memory usage.</p>
 </dd>
 
-### -field <a id="D3DDDI_COPY_DISCARD"></a><a id="d3dddi_copy_discard"></a><b>D3DDDI_COPY_DISCARD</b>
+### -field D3DDDI_COPY_DISCARD
 
 <dd>
 <p>The user-mode display driver can discard previous contents of the entire resource. The driver can take advantage of this capability to optimize performance and memory usage.</p>

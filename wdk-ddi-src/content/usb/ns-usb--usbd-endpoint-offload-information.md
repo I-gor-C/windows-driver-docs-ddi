@@ -74,122 +74,122 @@ typedef struct _USBD_ENDPOINT_OFFLOAD_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure.</p>
 </dd>
 
-### -field <b>EndpointAddress</b>
+### -field EndpointAddress
 
 <dd>
 <p>Specifies the USB-defined endpoint address. </p>
 </dd>
 
-### -field <b>ResourceId</b>
+### -field ResourceId
 
 <dd>
 <p>The resource identifier.</p>
 </dd>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
-<p>A <a href="buses.usbd_endpoint_offload_mode">USBD_ENDPOINT_OFFLOAD_MODE</a>-type value that indicates whether endpoint offloading is handled in software or the USB device or host controller.</p>
+<p>A <a href="..\usb\ne-usb--usbd-endpoint-offload-mode.md">USBD_ENDPOINT_OFFLOAD_MODE</a>-type value that indicates whether endpoint offloading is handled in software or the USB device or host controller.</p>
 </dd>
 
-### -field <b>RootHubPortNumber</b>
+### -field RootHubPortNumber
 
 <dd>
 <p>The port number of the root hub.</p>
 </dd>
 
-### -field <b>RouteString</b>
+### -field RouteString
 
 <dd>
 <p>The route string.</p>
 </dd>
 
-### -field <b>Speed</b>
+### -field Speed
 
 <dd>
 <p>The route string.</p>
 </dd>
 
-### -field <b>UsbDeviceAddress</b>
+### -field UsbDeviceAddress
 
 <dd>
 <p>The USB device address.</p>
 </dd>
 
-### -field <b>SlotId</b>
+### -field SlotId
 
 <dd>
 <p>The slot identifier.</p>
 </dd>
 
-### -field <b>MultiTT</b>
+### -field MultiTT
 
 <dd>
 <p>Transaction Translator (TT) hub. </p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>PHYSICAL_ADDRESS</b>
+### -field PHYSICAL_ADDRESS
 
 <dd>
 <p>The logical address of the current segment of the transfer data.</p>
 </dd>
 
-### -field <b>PVOID</b>
+### -field PVOID
 
 <dd>
 <p>The virtual address of the current segment of the transfer data.</p>
 </dd>
 
-### -field <b>size_t</b>
+### -field size_t
 
 <dd>
 <p>The size of the requested data.</p>
 </dd>
 
-### -field <b>ULONG</b>
+### -field ULONG
 
 <dd>
 <p>The cycle state of the transfer.</p>
 </dd>
 
-### -field <b>ULONG</b>
+### -field ULONG
 
 <dd>
 <p>Reserved message for endpoint offload mode.
 </p>
 </dd>
 
-### -field <b>PHYSICAL_ADDRESS</b>
+### -field PHYSICAL_ADDRESS
 
 <dd>
 <p>The logical address of the current segment of the transfer data.</p>
 </dd>
 
-### -field <b>PVOID</b>
+### -field PVOID
 
 <dd>
 <p>The virtual address of the current segment of the transfer data.</p>
 </dd>
 
-### -field <b>size_t</b>
+### -field size_t
 
 <dd>
 <p>The size of the requested data.</p>
 </dd>
 
-### -field <b>ULONG</b>
+### -field ULONG
 
 <dd>
 <p>The cycle state of the transfer.</p>

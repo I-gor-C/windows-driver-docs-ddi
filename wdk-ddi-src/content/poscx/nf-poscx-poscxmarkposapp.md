@@ -58,19 +58,19 @@ NTSTATUS PosCxMarkPosApp(
 ## -parameters
 <dl>
 
-### -param <i>device</i> [in]
+### -param device [in]
 
 <dd>
 <p>A handle to a framework device object that represents the device.</p>
 </dd>
 
-### -param <i>fileObject</i> [in]
+### -param fileObject [in]
 
 <dd>
 <p>A handle to a framework file object that identifies the caller, usually acquired with <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetfileobject.md">WdfRequestGetFileObject</a>.</p>
 </dd>
 
-### -param <i>isPosApp</i> [in]
+### -param isPosApp [in]
 
 <dd>
 <p>Specifies if the open instance is associated with a point-of-service application. Set to TRUE if it is associated with a point-of-service application. Otherwise, set to FALSE.</p>

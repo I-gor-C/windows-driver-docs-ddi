@@ -66,14 +66,14 @@ typedef struct _DMUS_KERNEL_EVENT {
 ## -struct-fields
 <dl>
 
-### -field <b>bReserved</b>
+### -field bReserved
 
 <dd>
 <p>
       Miniport drivers should not modify this member. Reserved for future use. Do not use.</p>
 </dd>
 
-### -field <b>cbStruct</b>
+### -field cbStruct
 
 <dd>
 <p>
@@ -81,38 +81,38 @@ typedef struct _DMUS_KERNEL_EVENT {
        This member specifies the size of the DMUS_KERNEL_EVENT structure itself and could change in the future.</p>
 </dd>
 
-### -field <b>cbEvent</b>
+### -field cbEvent
 
 <dd>
 <p>Specifies the unrounded number of event bytes referred to by <b>uData</b>.</p>
 </dd>
 
-### -field <b>usChannelGroup</b>
+### -field usChannelGroup
 
 <dd>
 <p>Specifies which channel group (set of 16 MIDI channels) receives or originated this event. This is unique only within the target MIDI device (miniport driver).</p>
 </dd>
 
-### -field <b>usFlags</b>
+### -field usFlags
 
 <dd>
 <p>Specifies whether an event is a package and whether this event concludes the message. A package encapsulates a list of events that should be dealt with atomically. This member is a bitfield that can be set to the bitwise OR of one or more of the following flag bits:</p>
 <p></p>
 <dl>
 
-### -field <a id="DMUS_KEF_EVENT_COMPLETE__zero_"></a><a id="dmus_kef_event_complete__zero_"></a><a id="DMUS_KEF_EVENT_COMPLETE__ZERO_"></a>DMUS_KEF_EVENT_COMPLETE (zero)
+### -field DMUS_KEF_EVENT_COMPLETE (zero)
 
 <dd>
 <p>Specifies messages in which the entire message is contained either in <b>uData.abData</b> or in the buffer pointed to by <b>uData.pbData</b>. The former includes all short messages, and potentially includes very brief SysEx messages (see Microsoft Windows SDK documentation) as well. Keep in mind that <b>sizeof</b>(PBYTE) can be 8 instead of 4 on 64-bit versions of Windows.</p>
 </dd>
 
-### -field <a id="DMUS_KEF_EVENT_INCOMPLETE"></a><a id="dmus_kef_event_incomplete"></a>DMUS_KEF_EVENT_INCOMPLETE
+### -field DMUS_KEF_EVENT_INCOMPLETE
 
 <dd>
 <p>Specifies that this event is an incomplete package or SysEx message (see Windows SDK documentation). This flag specifies that the message continues beyond this event. During MIDI capture, the miniport driver can send "uncooked" MIDI events (raw MIDI input data) to the capture sink by specifying this flag.</p>
 </dd>
 
-### -field <a id="DMUS_KEF_PACKAGE_EVENT"></a><a id="dmus_kef_package_event"></a>DMUS_KEF_PACKAGE_EVENT
+### -field DMUS_KEF_PACKAGE_EVENT
 
 <dd>
 <p>Specifies that this event is a package. The <b>uData.pPackageEvt</b> field contains a pointer to a chain of events which should be dealt with atomically.</p>
@@ -120,42 +120,42 @@ typedef struct _DMUS_KERNEL_EVENT {
 </dl>
 </dd>
 
-### -field <b>ullPresTime100ns</b>
+### -field ullPresTime100ns
 
 <dd>
 <p>Specifies the presentation time for this event. This 64-bit value is expressed in 100-nanosecond units. The master clock should be used to evaluate this presentation time.</p>
 </dd>
 
-### -field <b>ullBytePosition</b>
+### -field ullBytePosition
 
 <dd>
 <p>8 16</p>
 </dd>
 
-### -field <b>pNextEvt</b>
+### -field pNextEvt
 
 <dd>
 <p>Pointer to the next event in the list, or <b>NULL</b> if no event follows. This facilitates passing chains of identically time-stamped messages to the miniport driver. Additionally, hardware that does its own mixing can receive or transmit groups of messages at one time.</p>
 </dd>
 
-### -field <b>uData</b>
+### -field uData
 
 <dd>
 <dl>
 
-### -field <b>abData</b>
+### -field abData
 
 <dd>
 <p>A byte array containing <b>cbEvent</b> bytes of event data. The event data are typically MIDI status and data bytes. This member of <b>uData</b> is used if <b>cbEvent</b> is less than or equal to <b>sizeof</b>(PBYTE).</p>
 </dd>
 
-### -field <b>pbData</b>
+### -field pbData
 
 <dd>
 <p>Pointer to a buffer containing <b>cbEvent</b> bytes of event data. The event data are typically MIDI status and data bytes. This member of <b>uData</b> is used if <b>uFlags</b> is set to DMUS_KEF_EVENT_COMPLETE and <b>cbEvent</b> is greater than <b>sizeof</b>(PBYTE).</p>
 </dd>
 
-### -field <b>pPackageEvt</b>
+### -field pPackageEvt
 
 <dd>
 <p>Pointer to a chain of events, which is in the form of a linked list of DMUS_KERNEL_EVENT structures. The event data typically consist of MIDI status and data bytes. The events in the list are to be handled together. This member of <b>uData</b> is used if <b>uFlags</b> is set to DMUS_KEF_PACKAGE_EVENT.</p>
@@ -167,7 +167,7 @@ typedef struct _DMUS_KERNEL_EVENT {
 ## -remarks
 <p>The DMUS_KERNEL_EVENT structure is used by WDM audio drivers that provide kernel streaming support for DirectMusic.</p>
 
-<p>While capturing a MIDI stream, the DMus port driver calls the <a href="audio.iallocatormxf_getmessage">IAllocatorMXF::GetMessage</a> method to retrieve DMUS_KERNEL_EVENT structures to hold the captured data. While rendering a MIDI stream, the port driver calls the <a href="audio.imxf_putmessage">IMXF::PutMessage</a> method to discard DMUS_KERNEL_EVENT structures as it finishes reading them. For more information, see <a href="NULL">MIDI Transport</a>.</p>
+<p>While capturing a MIDI stream, the DMus port driver calls the <a href="audio.iallocatormxf_getmessage">IAllocatorMXF::GetMessage</a> method to retrieve DMUS_KERNEL_EVENT structures to hold the captured data. While rendering a MIDI stream, the port driver calls the <a href="audio.imxf_putmessage">IMXF::PutMessage</a> method to discard DMUS_KERNEL_EVENT structures as it finishes reading them. For more information, see <a href="https://msdn.microsoft.com/ce9ec589-0aea-4ed9-a60d-50f2ddfb0c13">MIDI Transport</a>.</p>
 
 <p>In the case of MIDI capture, the DMUS_KERNEL_EVENT structure can be packaged with single, multiple, or fragmentary MIDI messages. The <b>usFlags</b> member should be set to DMUS_KEF_EVENT_INCOMPLETE unless it is a single complete MIDI message. This structure also contains:</p>
 
@@ -179,7 +179,7 @@ typedef struct _DMUS_KERNEL_EVENT {
 
 <p>&lt;<i>pin</i>, <i>channel_group</i>, <i>channel</i>&gt;</p>
 
-<p>Presentation time does not advance during the states KSSTATE_PAUSE and KSSTATE_STOP, and is reset during KSSTATE_STOP. For more information, see <a href="NULL">KS Clocks</a>.</p>
+<p>Presentation time does not advance during the states KSSTATE_PAUSE and KSSTATE_STOP, and is reset during KSSTATE_STOP. For more information, see <a href="https://msdn.microsoft.com/e3ffc7ca-f3cd-4989-af40-78b6a2438f95">KS Clocks</a>.</p>
 
 ## -requirements
 <table>

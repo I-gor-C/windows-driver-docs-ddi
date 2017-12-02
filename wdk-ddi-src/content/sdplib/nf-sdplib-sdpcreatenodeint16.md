@@ -58,13 +58,13 @@ PSDP_NODE SdpCreateNodeInt16(
 ## -parameters
 <dl>
 
-### -param <i>sVal</i> [in]
+### -param sVal [in]
 
 <dd>
 <p>The 16-bit integer value that is used to initialize the SDP_NODE structure.</p>
 </dd>
 
-### -param <i>tag</i> [in]
+### -param tag [in]
 
 <dd>
 <p>A profile driver defined tag to associate with the node.</p>

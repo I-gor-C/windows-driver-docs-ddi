@@ -56,19 +56,19 @@ typedef struct _DXGK_DEVICE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>DescriptorOffset</b>
+### -field DescriptorOffset
 
 <dd>
 <p>An integer that indicates an offset, in bytes, into the EDID. This member specifies the beginning of the requested data. </p>
 </dd>
 
-### -field <b>DescriptorLength</b>
+### -field DescriptorLength
 
 <dd>
 <p>An integer that indicates the length, in bytes, of the buffer pointed to by <b>DescriptorBuffer</b>.</p>
 </dd>
 
-### -field <b>DescriptorBuffer</b>
+### -field DescriptorBuffer
 
 <dd>
 <p>A pointer to a buffer that receives all or a portion of the monitor's EDID. This buffer is allocated by the display port driver and filled in by the display miniport driver. The display miniport driver must not write more than <b>DescriptorLength</b> bytes to this buffer.</p>

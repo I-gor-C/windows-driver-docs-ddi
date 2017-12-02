@@ -55,13 +55,13 @@ _Check_return_ HRESULT APIENTRY CALLBACK PFND3DDDI_DESTROYHWQUEUECB(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the device.</p>
 </dd>
 
-### -param <i>destroyHwQueue</i> [in]
+### -param destroyHwQueue [in]
 
 <dd>
 <p>A pointer to the structure holding information to destroy the hardware queue.</p>

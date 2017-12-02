@@ -58,27 +58,27 @@ typedef enum _HPMI_HINT_BOOL {
 ## -enum-fields
 <dl>
 
-### -field <a id="HpmiBoolUnavailable"></a><a id="hpmiboolunavailable"></a><a id="HPMIBOOLUNAVAILABLE"></a><b>HpmiBoolUnavailable</b>
+### -field HpmiBoolUnavailable
 
 <dd>
 <p>No data is available.</p>
 </dd>
 
-### -field <a id="HpmiBoolFalse"></a><a id="hpmiboolfalse"></a><a id="HPMIBOOLFALSE"></a><b>HpmiBoolFalse</b>
+### -field HpmiBoolFalse
 
 <dd>
 <p>Condition is asserted to be false.
 </p>
 </dd>
 
-### -field <a id="HpmiBoolTrue"></a><a id="hpmibooltrue"></a><a id="HPMIBOOLTRUE"></a><b>HpmiBoolTrue</b>
+### -field HpmiBoolTrue
 
 <dd>
 <p>Condition is asserted to be true.
 </p>
 </dd>
 
-### -field <a id="HpmiBoolMax"></a><a id="hpmiboolmax"></a><a id="HPMIBOOLMAX"></a><b>HpmiBoolMax</b>
+### -field HpmiBoolMax
 
 <dd>
 <p>Value is not used. </p>

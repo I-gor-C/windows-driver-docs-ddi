@@ -54,10 +54,10 @@ VOID PoDeletePowerRequest(
 ## -parameters
 <dl>
 
-### -param <i>PowerRequest</i> [in, out]
+### -param PowerRequest [in, out]
 
 <dd>
-<p>A pointer to a power request object that was created by the <a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.</p>
+<p>A pointer to a power request object that was created by the <a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.</p>
 </dd>
 </dl>
 
@@ -130,7 +130,7 @@ VOID PoDeletePowerRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a>
+<a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a>
 </dt>
 </dl>
 <p> </p>

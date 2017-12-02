@@ -58,25 +58,25 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_LINEAR_SPACE"></a><a id="d3d11_1ddi_video_processor_device_caps_linear_space"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_LINEAR_SPACE</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_LINEAR_SPACE
 
 <dd>
 <p>The video processor can blend video content in linear color space. Most video content is gamma corrected, resulting in nonlinear values. This capability flag means that the video processor converts colors to linear space before blending, which produces better results.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_xvYCC"></a><a id="d3d11_1ddi_video_processor_device_caps_xvycc"></a><a id="D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_XVYCC"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_xvYCC</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_xvYCC
 
 <dd>
 <p>The video processor supports the xvYCC color space for YCbCr data.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_RGB_RANGE_CONVERSION"></a><a id="d3d11_1ddi_video_processor_device_caps_rgb_range_conversion"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_RGB_RANGE_CONVERSION</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_RGB_RANGE_CONVERSION
 
 <dd>
 <p>The video processor can perform range conversion when the input and output are both RGB but use different color ranges (0–255 or 16–235, for 8-bit RGB).</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_YCbCr_MATRIX_CONVERSION"></a><a id="d3d11_1ddi_video_processor_device_caps_ycbcr_matrix_conversion"></a><a id="D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_YCBCR_MATRIX_CONVERSION"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_YCbCr_MATRIX_CONVERSION</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_YCbCr_MATRIX_CONVERSION
 
 <dd>
 <p>The video processor can apply a matrix conversion to YCbCr values when the input and output are both YCbCr. For example, the driver can convert colors from BT.601 to BT.709. 
@@ -84,7 +84,7 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_NOMINAL_RANGE"></a><a id="d3d11_1ddi_video_processor_device_caps_nominal_range"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_NOMINAL_RANGE</b>
+### -field D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_NOMINAL_RANGE
 
 <dd>
 <p>The video processor can convert between luminance ranges when the input and output use different luminance ranges.</p>

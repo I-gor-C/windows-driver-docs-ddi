@@ -58,7 +58,7 @@ typedef enum _IDDCX_GAMMARAMP_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="IDDCX_GAMMARAMP_TYPE_UNINITIALIZED"></a><a id="iddcx_gammaramp_type_uninitialized"></a><b>IDDCX_GAMMARAMP_TYPE_UNINITIALIZED</b>
+### -field IDDCX_GAMMARAMP_TYPE_UNINITIALIZED
 
 <dd>
 <p>
@@ -66,7 +66,7 @@ typedef enum _IDDCX_GAMMARAMP_TYPE {
                     Indicates that an <b>IDDCX_GAMMARAMP_TYPE</b> variable has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="IDDCX_GAMMARAMP_TYPE_DEFAULT"></a><a id="iddcx_gammaramp_type_default"></a><b>IDDCX_GAMMARAMP_TYPE_DEFAULT</b>
+### -field IDDCX_GAMMARAMP_TYPE_DEFAULT
 
 <dd>
 <p>
@@ -74,7 +74,7 @@ typedef enum _IDDCX_GAMMARAMP_TYPE {
                     </p>
 </dd>
 
-### -field <a id="IDDCX_GAMMARAMP_TYPE_RGB256x3x16"></a><a id="iddcx_gammaramp_type_rgb256x3x16"></a><a id="IDDCX_GAMMARAMP_TYPE_RGB256X3X16"></a><b>IDDCX_GAMMARAMP_TYPE_RGB256x3x16</b>
+### -field IDDCX_GAMMARAMP_TYPE_RGB256x3x16
 
 <dd>
 <p>

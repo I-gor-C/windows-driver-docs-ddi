@@ -7,7 +7,7 @@ old-location: netvista\rilcallsupportcaps.htm
 old-project: netvista
 ms.assetid: 1573a1bd-8c47-4fdc-89d1-242e91ff0e47
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,39 +62,39 @@ typedef enum _RILCALLSUPPORTCAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CAPS_CALLSUPPORT_CD"></a><a id="ril_caps_callsupport_cd"></a><b>RIL_CAPS_CALLSUPPORT_CD</b>
+### -field RIL_CAPS_CALLSUPPORT_CD
 
 <dd></dd>
 
-### -field <a id="RIL_CAPS_CALLSUPPORT_CNAP"></a><a id="ril_caps_callsupport_cnap"></a><b>RIL_CAPS_CALLSUPPORT_CNAP</b>
+### -field RIL_CAPS_CALLSUPPORT_CNAP
 
 <dd></dd>
 
-### -field <a id="RIL_CAPS_CALLSUPPORT_CUG"></a><a id="ril_caps_callsupport_cug"></a><b>RIL_CAPS_CALLSUPPORT_CUG</b>
+### -field RIL_CAPS_CALLSUPPORT_CUG
 
 <dd></dd>
 
-### -field <a id="RIL_CAPS_CALLSUPPORT_EMLPP"></a><a id="ril_caps_callsupport_emlpp"></a><b>RIL_CAPS_CALLSUPPORT_EMLPP</b>
+### -field RIL_CAPS_CALLSUPPORT_EMLPP
 
 <dd></dd>
 
-### -field <a id="RIL_CAPS_CALLSUPPORT_FM"></a><a id="ril_caps_callsupport_fm"></a><b>RIL_CAPS_CALLSUPPORT_FM</b>
+### -field RIL_CAPS_CALLSUPPORT_FM
 
 <dd></dd>
 
-### -field <a id="RIL_CAPS_CALLSUPPORT_MSP"></a><a id="ril_caps_callsupport_msp"></a><b>RIL_CAPS_CALLSUPPORT_MSP</b>
+### -field RIL_CAPS_CALLSUPPORT_MSP
 
 <dd></dd>
 
-### -field <a id="RIL_CAPS_CALLSUPPORT_USSD_PHASE2"></a><a id="ril_caps_callsupport_ussd_phase2"></a><b>RIL_CAPS_CALLSUPPORT_USSD_PHASE2</b>
+### -field RIL_CAPS_CALLSUPPORT_USSD_PHASE2
 
 <dd></dd>
 
-### -field <a id="RIL_CAPS_CALLSUPPORT_USS"></a><a id="ril_caps_callsupport_uss"></a><b>RIL_CAPS_CALLSUPPORT_USS</b>
+### -field RIL_CAPS_CALLSUPPORT_USS
 
 <dd></dd>
 
-### -field <a id="RIL_CAPS_CALLSUPPORT_ALL"></a><a id="ril_caps_callsupport_all"></a><b>RIL_CAPS_CALLSUPPORT_ALL</b>
+### -field RIL_CAPS_CALLSUPPORT_ALL
 
 <dd></dd>
 </dl>

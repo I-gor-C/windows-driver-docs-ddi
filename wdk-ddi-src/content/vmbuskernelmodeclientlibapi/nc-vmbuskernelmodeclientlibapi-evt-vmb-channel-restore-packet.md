@@ -7,7 +7,7 @@ old-location: netvista\evt_vmb_channel_restore_packet.htm
 old-project: netvista
 ms.assetid: 9C89CFCB-4B8A-40D3-B982-2F7836A636A3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VideoPortGetAgpServices
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,34 +66,34 @@ typedef EVT_VMB_CHANNEL_RESTORE_PACKET PFN_VMB_CHANNEL_RESTORE_PACKET;
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>The channel on which the packet arrives.</p>
 </dd>
 
-### -param <i>LibBuf</i> [in]
+### -param LibBuf [in]
 
 <dd>
 <p>Pointer to packet object state internal to the Kernel Mode Client Library (KMCL).
 </p>
 </dd>
 
-### -param <i>LibBufSize</i> [in]
+### -param LibBufSize [in]
 
 <dd>
 <p>Size of the <i>LibBuf</i> parameter, in bytes.
 </p>
 </dd>
 
-### -param <i>SaveBuf</i> [in]
+### -param SaveBuf [in]
 
 <dd>
 <p>Pointer to transaction state specific to the VSP.
 </p>
 </dd>
 
-### -param <i>SaveBufSize</i> [in]
+### -param SaveBufSize [in]
 
 <dd>
 <p>Size of the <i>SaveBuf</i> parameter, in bytes.
@@ -152,4 +152,4 @@ callback function, then this is provided in <i>SaveBuf</i>, and restored by the 
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20EVT_VMB_CHANNEL_RESTORE_PACKET callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20EVT_VMB_CHANNEL_RESTORE_PACKET callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

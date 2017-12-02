@@ -24,31 +24,31 @@ This header is used by IEEE. For more information, see
 | [BUS_GENERATION_NODE structure](ns-61883--bus-generation-node.md) | The BUS_GENERATION_NODE structure is used in conjunction with the Av61883_GetUnitInfo request to retrieve bus characteristics. |
 | [BUS_RESET_NOTIFY structure](ns-61883--bus-reset-notify.md) | This structure is used to register or deregister the PBUS_RESET_ROUTINE callback. |
 | [CIP_ATTACH_FRAME structure](ns-61883--cip-attach-frame.md) | This structure is used in an attach frame request. |
-| [CIP_CANCEL_FRAME structure](ns-61883--cip-cancel-frame.md) | This structure is used in a cancel frame request. |
+| [CIP_CANCEL_FRAME structure](ns-61883--cip-cancel-frame.md) | The request cancels an attached frame buffer. A frame can be canceled while the stream is running. |
 | [CIP_DATA_FORMAT_VER2 structure](ns-61883--cip-data-format-ver2.md) | This structure is a CIP data format which is used by CMP_CONNECT_VER2. |
 | [CIP_DATA_FORMAT_VER3 structure](ns-61883--cip-data-format-ver3.md) | This structure is used by CipDataFormat. |
 | [CIP_FRAME structure](ns-61883--cip-frame.md) | The CIP_FRAME structure describes a frame to be attached to an input or output plug. |
 | [CIP_FRAME structure](ns-61883--cip-frame~r1.md) | The CIP_FRAME structure describes a frame to be attached to an input or output plug. |
-| [CIP_LISTEN structure](ns-61883--cip-listen.md) | This structure is used for a listen request. |
+| [CIP_LISTEN structure](ns-61883--cip-listen.md) | This structure is used for a listen request. The request begins isochronous reception on the specified connection. |
 | [CIP_NOTIFY_INFO structure](ns-61883--cip-notify-info.md) | The CIP_NOTIFY_INFO structure contains information about the frame. |
 | [CIP_STOP structure](ns-61883--cip-stop.md) | This structure is used to stop transmission or reception. |
 | [CIP_TALK structure](ns-61883--cip-talk.md) | This structure is used to begin transmission. |
 | [CIP_VALIDATE_INFO structure](ns-61883--cip-validate-info.md) | The CIP_VALIDATE_INFO structure contains information about the frame. |
-| [CMP_CONNECT_VER2 structure](ns-61883--cmp-connect-ver2.md) | This structure contains information for a connection request. |
+| [CMP_CONNECT_VER2 structure](ns-61883--cmp-connect-ver2.md) | This structure contains information for a connection request. The request attempts to make a connection to a plug control register on the local host. |
 | [CMP_CONNECT_VER3 structure](ns-61883--cmp-connect-ver3.md) | This structure contains information for a connection request. |
 | [CMP_CREATE_PLUG structure](ns-61883--cmp-create-plug.md) | This structure is used to create a plug. |
-| [CMP_DELETE_PLUG structure](ns-61883--cmp-delete-plug.md) | This structure is used to create a plug. |
+| [CMP_DELETE_PLUG structure](ns-61883--cmp-delete-plug.md) | This structure is used to delete a plug.Av61883_CreatePlug. |
 | [CMP_DISCONNECT structure](ns-61883--cmp-disconnect.md) | This structure is used to break a connection. |
 | [CMP_GET_PLUG_HANDLE structure](ns-61883--cmp-get-plug-handle.md) | This structure is used in getting the handle of a plug. |
 | [CMP_GET_PLUG_STATE structure](ns-61883--cmp-get-plug-state.md) | This structure is used in getting the state of a plug. |
 | [CMP_MONITOR_INFO structure](ns-61883--cmp-monitor-info.md) | The CMP_MONITOR_INFO structure is used in conjunction with the Av61883_MonitorPlugs request to allow a driver to monitor access to local oPCR and iPCR plugs. |
-| [CMP_MONITOR_PLUGS structure](ns-61883--cmp-monitor-plugs.md) | This structure is used to monitor plug access. |
+| [CMP_MONITOR_PLUGS structure](ns-61883--cmp-monitor-plugs.md) | This structure is used to monitor plug access. The request allows a driver to monitor all access to local oPCR and iPCR plugs. |
 | [CMP_NOTIFY_INFO structure](ns-61883--cmp-notify-info.md) | This structure is used by the PCMP_NOTIFY_ROUTINE callback. |
 | [CMP_SET_PLUG structure](ns-61883--cmp-set-plug.md) | This structure is used to assign settings to a plug. |
 | [FCP_FRAME structure](ns-61883--fcp-frame.md) | The FCP_FRAME structure describes a function control protocol (FCP) request. |
 | [FCP_GET_REQUEST structure](ns-61883--fcp-get-request.md) | This structure is used for a get request. |
-| [FCP_GET_RESPONSE structure](ns-61883--fcp-get-response.md) | This structure is used for a get response. |
-| [FCP_GET_RESPONSE structure](ns-61883--fcp-get-response~r1.md) | This structure is used for a get response. |
+| [FCP_GET_RESPONSE structure](ns-61883--fcp-get-response.md) | The structure is used in a request yjsy retrieves the next FCP response from the queue of requests maintained by the IEC-61883 protocol driver. |
+| [FCP_GET_RESPONSE structure](ns-61883--fcp-get-response~r1.md) | The structure is used in a request yjsy retrieves the next FCP response from the queue of requests maintained by the IEC-61883 protocol driver. |
 | [FCP_SEND_REQUEST structure](ns-61883--fcp-send-request.md) | This structure is used for a send request. |
 | [FCP_SEND_REQUEST structure](ns-61883--fcp-send-request~r1.md) | This structure is used for a send request. |
 | [FCP_SEND_RESPONSE structure](ns-61883--fcp-send-response.md) | This structure is used for a send response. |

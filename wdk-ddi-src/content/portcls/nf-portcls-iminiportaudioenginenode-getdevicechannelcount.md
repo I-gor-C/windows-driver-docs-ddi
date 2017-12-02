@@ -56,19 +56,19 @@ NTSTATUS GetDeviceChannelCount(
 ## -parameters
 <dl>
 
-### -param <i>ulNodeId</i> [in]
+### -param ulNodeId [in]
 
 <dd>
 <p>The ID of the node that represents the audio device.</p>
 </dd>
 
-### -param <i>targetType</i> [in]
+### -param targetType [in]
 
 <dd>
 <p>An <a href="..\portcls\ne-portcls-echanneltargettype.md">eChannelTargetType</a> enumerated value that specifies the types of target nodes in the channels. For example, there could be Volume, Mute or PeakMeter nodes.</p>
 </dd>
 
-### -param <i>pulChannelCount</i> [out]
+### -param pulChannelCount [out]
 
 <dd>
 <p>The number of channels supported by the audio device.</p>

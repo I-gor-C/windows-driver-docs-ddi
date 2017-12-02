@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: <= PASSIVE_LEVEL
 req.iface: 
 ---
 
@@ -70,7 +70,7 @@ typedef struct _BTHDDI_SDP_PARSE_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>A structure that describes the 
@@ -79,79 +79,79 @@ typedef struct _BTHDDI_SDP_PARSE_INTERFACE {
      <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a>.</p>
 </dd>
 
-### -field <b>SdpValidateStream</b>
+### -field SdpValidateStream
 
 <dd>
 <p>A pointer to the 
-     <a href="bltooth.sdpvalidatestream">SdpValidateStream</a> function.</p>
+     <a href="..\bthsdpddi\nc-bthsdpddi-pvalidatestream.md">SdpValidateStream</a> function.</p>
 </dd>
 
-### -field <b>SdpConvertStreamToTree</b>
+### -field SdpConvertStreamToTree
 
 <dd>
 <p>A pointer to the 
-     <a href="bltooth.sdpconvertstreamtotree">
+     <a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">
      SdpConvertStreamToTree</a> function.</p>
 </dd>
 
-### -field <b>SdpConvertTreeToStream</b>
+### -field SdpConvertTreeToStream
 
 <dd>
 <p>A pointer to the 
-     <a href="bltooth.sdpconverttreetostream">
+     <a href="..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md">
      SdpConvertTreeToStream</a> function.</p>
 </dd>
 
-### -field <b>SdpFreeTree</b>
+### -field SdpFreeTree
 
 <dd>
 <p>A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a> function.</p>
 </dd>
 
-### -field <b>SdpByteSwapUuid128</b>
+### -field SdpByteSwapUuid128
 
 <dd>
 <p>A pointer to the 
-     <a href="bltooth.sdpbyteswapuuid128">SdpByteSwapUuid128</a> function.</p>
+     <a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuuid128.md">SdpByteSwapUuid128</a> function.</p>
 </dd>
 
-### -field <b>SdpByteSwapUint128</b>
+### -field SdpByteSwapUint128
 
 <dd>
 <p>A pointer to the 
-     <a href="bltooth.sdpbyteswapuint128">SdpByteSwapUint128</a> function.</p>
+     <a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuint128.md">SdpByteSwapUint128</a> function.</p>
 </dd>
 
-### -field <b>SdpByteSwapUint64</b>
+### -field SdpByteSwapUint64
 
 <dd>
 <p>A pointer to the 
-     <a href="bltooth.sdpbyteswapuint64">SdpByteSwapUint64</a> function.</p>
+     <a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuint64.md">SdpByteSwapUint64</a> function.</p>
 </dd>
 
-### -field <b>SdpRetrieveUuid128</b>
+### -field SdpRetrieveUuid128
 
 <dd>
 <p>A pointer to the 
-     <a href="bltooth.sdpretrieveuuid128">SdpRetrieveUuid128</a> function.</p>
+     <a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuuid128.md">SdpRetrieveUuid128</a> function.</p>
 </dd>
 
-### -field <b>SdpRetrieveUint128</b>
+### -field SdpRetrieveUint128
 
 <dd>
 <p>A pointer to the 
-     <a href="bltooth.sdpretrieveuint128">SdpRetrieveUint128</a> function.</p>
+     <a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md">SdpRetrieveUint128</a> function.</p>
 </dd>
 
-### -field <b>SdpRetrieveUint64</b>
+### -field SdpRetrieveUint64
 
 <dd>
 <p>A pointer to the 
-     <a href="bltooth.sdpretrieveuint64">SdpRetrieveUint64</a> function.</p>
+     <a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md">SdpRetrieveUint64</a> function.</p>
 </dd>
 
-### -field <b>SdpFindAttributeInTree</b>
+### -field SdpFindAttributeInTree
 
 <dd>
 <p>A pointer to the 
@@ -159,32 +159,32 @@ typedef struct _BTHDDI_SDP_PARSE_INTERFACE {
      SdpFindAttributeInTree</a> function.</p>
 </dd>
 
-### -field <b>SdpGetNextElement</b>
+### -field SdpGetNextElement
 
 <dd>
 <p>A pointer to the 
-     <a href="bltooth.sdpgetnextelement">SdpGetNextElement</a> function.</p>
+     <a href="..\bthsdpddi\nc-bthsdpddi-pgetnextelement.md">SdpGetNextElement</a> function.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for future use. Do not use.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for future use. Do not use.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved for future use. Do not use.</p>
 </dd>
 
-### -field <b>Reserved4</b>
+### -field Reserved4
 
 <dd>
 <p>Reserved for future use. Do not use.</p>
@@ -227,40 +227,40 @@ typedef struct _BTHDDI_SDP_PARSE_INTERFACE {
 <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a>
 </dt>
 <dt>
-<a href="bltooth.sdpvalidatestream">SdpValidateStream</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pvalidatestream.md">SdpValidateStream</a>
 </dt>
 <dt>
-<a href="bltooth.sdpconvertstreamtotree">SdpConvertStreamToTree</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a>
 </dt>
 <dt>
-<a href="bltooth.sdpconverttreetostream">SdpConvertTreeToStream</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md">SdpConvertTreeToStream</a>
 </dt>
 <dt>
 <a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a>
 </dt>
 <dt>
-<a href="bltooth.sdpbyteswapuuid128">SdpByteSwapUuid128</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuuid128.md">SdpByteSwapUuid128</a>
 </dt>
 <dt>
-<a href="bltooth.sdpbyteswapuint128">SdpByteSwapUint128</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuint128.md">SdpByteSwapUint128</a>
 </dt>
 <dt>
-<a href="bltooth.sdpbyteswapuint64">SdpByteSwapUint64</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuint64.md">SdpByteSwapUint64</a>
 </dt>
 <dt>
-<a href="bltooth.sdpretrieveuuid128">SdpRetrieveUuid128</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuuid128.md">SdpRetrieveUuid128</a>
 </dt>
 <dt>
-<a href="bltooth.sdpretrieveuint128">SdpRetrieveUint128</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md">SdpRetrieveUint128</a>
 </dt>
 <dt>
-<a href="bltooth.sdpretrieveuint64">SdpRetrieveUint64</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md">SdpRetrieveUint64</a>
 </dt>
 <dt>
 <a href="..\sdplib\nf-sdplib-sdpfindattributeintree.md">SdpFindAttributeInTree</a>
 </dt>
 <dt>
-<a href="bltooth.sdpgetnextelement">SdpGetNextElement</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pgetnextelement.md">SdpGetNextElement</a>
 </dt>
 </dl>
 <p> </p>

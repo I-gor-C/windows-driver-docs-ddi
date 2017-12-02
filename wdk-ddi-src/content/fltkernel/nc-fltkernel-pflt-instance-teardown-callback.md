@@ -7,7 +7,7 @@ old-location: ifsk\pflt_instance_teardown_callback.htm
 old-project: ifsk
 ms.assetid: d2f87c47-7f26-4c22-a5b8-2be8f309d1ba
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: IXpsPartIterator, Reset, IXpsPartIterator::Reset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ typedef VOID ( *PFLT_INSTANCE_TEARDOWN_CALLBACK)(
 ## -parameters
 <dl>
 
-### -param <i>FltObjects</i> [in]
+### -param FltObjects [in]
 
 <dd>
 <p>Pointer to an <a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a> structure that contains opaque pointers for the objects related to the current I/O operation. </p>
 </dd>
 
-### -param <i>Reason</i> [in]
+### -param Reason [in]
 
 <dd>
 <p>Flag that indicates why the minifilter driver instance is being torn down. One of the following: </p>
@@ -159,7 +159,7 @@ typedef VOID ( *PFLT_INSTANCE_TEARDOWN_CALLBACK)(
 
 <p>There are any outstanding I/O operations that were initiated by the minifilter driver. </p>
 
-<p>If the minifilter driver instance is being torn down because the minifilter driver is being unloaded, the unload operation appears to hang until the <i>InstanceTeardownCompleteCallback</i> routine returns. To debug these kinds of problems, you should enable the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557262">Driver Verifier</a> on your minifilter driver. The Filter Verifier <a href="NULL">I/O Verification</a> option can help identify possible causes, such as unreleased references, that would prevent the minifilter driver from unloading. For more information, see <a href="ifsk.development_and_testing_tools#filter_verifier#filter_verifier">Filter Verifier</a>. </p>
+<p>If the minifilter driver instance is being torn down because the minifilter driver is being unloaded, the unload operation appears to hang until the <i>InstanceTeardownCompleteCallback</i> routine returns. To debug these kinds of problems, you should enable the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557262">Driver Verifier</a> on your minifilter driver. The Filter Verifier <a href="https://msdn.microsoft.com/41b77bba-fae8-453b-9872-911f5d5be3e6">I/O Verification</a> option can help identify possible causes, such as unreleased references, that would prevent the minifilter driver from unloading. For more information, see <a href="ifsk.development_and_testing_tools#filter_verifier#filter_verifier">Filter Verifier</a>. </p>
 
 <p>Note that referencing the instance (by calling <a href="..\fltkernel\nf-fltkernel-fltobjectreference.md">FltObjectReference</a>) does not prevent the <i>InstanceTeardownCompleteCallback</i> routine from being called. </p>
 
@@ -235,4 +235,4 @@ typedef VOID ( *PFLT_INSTANCE_TEARDOWN_CALLBACK)(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_INSTANCE_TEARDOWN_CALLBACK function pointer%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_INSTANCE_TEARDOWN_CALLBACK function pointer%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

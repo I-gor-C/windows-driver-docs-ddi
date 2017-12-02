@@ -55,7 +55,7 @@ PBIDI_RESPONSE_CONTAINER RouterAllocBidiResponseContainer(
 ## -parameters
 <dl>
 
-### -param <i>cSize</i> [in]
+### -param cSize [in]
 
 <dd>
 <p>Specifies the number of BIDI_RESPONSE_DATA structures to be allocated.</p>

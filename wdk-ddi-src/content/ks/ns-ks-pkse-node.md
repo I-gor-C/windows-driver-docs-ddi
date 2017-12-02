@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Event</b>
+### -field Event
 
 <dd>
 <p>A structure of type <a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a> that identifies the requested event.</p>
 </dd>
 
-### -field <b>NodeId</b>
+### -field NodeId
 
 <dd>
 <p>Specifies the node ID.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. Should be set to zero.</p>

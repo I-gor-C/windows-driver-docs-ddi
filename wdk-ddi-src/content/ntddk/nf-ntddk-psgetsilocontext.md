@@ -56,19 +56,19 @@ NTSTATUS PsGetSiloContext(
 ## -parameters
 <dl>
 
-### -param <i>Silo</i> [in]
+### -param Silo [in]
 
 <dd>
 <p>The silo where the silo context is to exist. This parameter is required and it cannot be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ContextSlot</i> [in]
+### -param ContextSlot [in]
 
 <dd>
 <p>The slot where the silo context is to exist. A slot allocated by the <a href="..\ntddk\nf-ntddk-psallocsilocontextslot.md">PsAllocSiloContextSlot</a> routine.</p>
 </dd>
 
-### -param <i>ReturnedSiloContext</i> 
+### -param ReturnedSiloContext 
 
 <dd>
 <p>Receives a referenced pointer to the silo context. On failure, the value received will be <b>NULL</b>.</p>

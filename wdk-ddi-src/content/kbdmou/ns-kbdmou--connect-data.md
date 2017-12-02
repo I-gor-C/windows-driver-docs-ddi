@@ -55,13 +55,13 @@ typedef struct _CONNECT_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>ClassDeviceObject</b>
+### -field ClassDeviceObject
 
 <dd>
 <p>Pointer to an upper-level class <a href="wdkgloss.f#wdkgloss.filter_device_object#wdkgloss.filter_device_object"><i>filter device object</i></a> (filter DO).</p>
 </dd>
 
-### -field <b>ClassService</b>
+### -field ClassService
 
 <dd>
 <p>Specifies the class service routine. See  <a href="..\kbdmou\nc-kbdmou-pservice-callback-routine.md">PSERVICE_CALLBACK_ROUTINE</a>.</p>

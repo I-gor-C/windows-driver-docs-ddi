@@ -58,25 +58,25 @@ typedef struct _D3D12DDI_VIDEO_SIZE_RANGE_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>MaxWidth</b>
+### -field MaxWidth
 
 <dd>
 <p>Maximum width.</p>
 </dd>
 
-### -field <b>MaxHeight</b>
+### -field MaxHeight
 
 <dd>
 <p>Maximum height.</p>
 </dd>
 
-### -field <b>MinWidth</b>
+### -field MinWidth
 
 <dd>
 <p>Minimum width.</p>
 </dd>
 
-### -field <b>MinHeight</b>
+### -field MinHeight
 
 <dd>
 <p>Minimum height.</p>

@@ -59,13 +59,13 @@ typedef struct _D3DKMT_CREATESTANDARDALLOCATIONFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for use by the operating system.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The value used to operate over the other members.</p>

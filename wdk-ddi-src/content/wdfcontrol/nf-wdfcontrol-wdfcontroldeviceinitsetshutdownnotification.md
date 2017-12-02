@@ -7,7 +7,7 @@ old-location: wdf\wdfcontroldeviceinitsetshutdownnotification.htm
 old-project: wdf
 ms.assetid: 43a5a017-f5de-4906-acbb-96419b4a3f1c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfControlDeviceInitSetShutdownNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ VOID WdfControlDeviceInitSetShutdownNotification(
 ## -parameters
 <dl>
 
-### -param <i>DeviceInit</i> [in]
+### -param DeviceInit [in]
 
 <dd>
 <p>A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure that the driver obtained by calling <a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitallocate.md">WdfControlDeviceInitAllocate</a>.</p>
 </dd>
 
-### -param <i>Notification</i> [in]
+### -param Notification [in]
 
 <dd>
 <p>A pointer to the driver's <a href="wdf.evtdeviceshutdownnotification">EvtDeviceShutdownNotification</a> event callback function.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>One or more <a href="..\wdfcontrol\ne-wdfcontrol--wdf-device-shutdown-flags.md">WDF_DEVICE_SHUTDOWN_FLAGS</a>-typed flags that indicate when the <a href="wdf.evtdeviceshutdownnotification">EvtDeviceShutdownNotification</a> callback function will be called.</p>
@@ -160,4 +160,4 @@ VOID WdfControlDeviceInitSetShutdownNotification(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfControlDeviceInitSetShutdownNotification method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfControlDeviceInitSetShutdownNotification method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

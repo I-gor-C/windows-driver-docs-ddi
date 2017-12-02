@@ -55,11 +55,11 @@ typedef enum D3DKMT_MULTIPLANE_OVERLAY_BLEND {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_MULTIPLANE_OVERLAY_BLEND_OPAQUE"></a><a id="d3dkmt_multiplane_overlay_blend_opaque"></a><b>D3DKMT_MULTIPLANE_OVERLAY_BLEND_OPAQUE</b>
+### -field D3DKMT_MULTIPLANE_OVERLAY_BLEND_OPAQUE
 
 <dd></dd>
 
-### -field <a id="D3DKMT_MULTIPLANE_OVERLAY_BLEND_ALPHABLEND"></a><a id="d3dkmt_multiplane_overlay_blend_alphablend"></a><b>D3DKMT_MULTIPLANE_OVERLAY_BLEND_ALPHABLEND</b>
+### -field D3DKMT_MULTIPLANE_OVERLAY_BLEND_ALPHABLEND
 
 <dd></dd>
 </dl>

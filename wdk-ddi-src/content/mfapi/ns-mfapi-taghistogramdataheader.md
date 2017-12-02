@@ -56,19 +56,19 @@ typedef struct tagHistogramDataHeader {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size in bytes of this header + all following histogram data.</p>
 </dd>
 
-### -field <b>ChannelMask</b>
+### -field ChannelMask
 
 <dd>
 <p>Mask of the color channel for the histogram data.</p>
 </dd>
 
-### -field <b>Linear</b>
+### -field Linear
 
 <dd>
 <p>1 if linear, 0 if nonlinear.</p>

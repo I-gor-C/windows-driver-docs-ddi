@@ -58,25 +58,25 @@ typedef struct _SECURE_ELEMENT_EVENT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>guidSecureElementId</b>
+### -field guidSecureElementId
 
 <dd>
 <p>This is a unique identifier for the secure element.</p>
 </dd>
 
-### -field <b>eEventType</b>
+### -field eEventType
 
 <dd>
 <p>This is an event type. For more information about the types, see the <a href="..\nfcsedev\ne-nfcsedev--secure-element-event-type.md">SECURE_ELEMENT_EVENT_TYPE</a> enumeration topic.</p>
 </dd>
 
-### -field <b>cbEventData</b>
+### -field cbEventData
 
 <dd>
 <p>This is the amount of bytes for the pbEventData array.</p>
 </dd>
 
-### -field <b>pbEventData[ANYSIZE_ARRAY]</b>
+### -field pbEventData[ANYSIZE_ARRAY]
 
 <dd>
 <p>This is the event data buffer. When <b>eEventType</b> is <b>HceActivated</b> or <b>HceDeactivated</b>, this member contains a pointer to a <a href="..\nfcsedev\ns-nfcsedev--secure-element-hce-activation-payload.md">SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD</a> structure. The <b>bConnectionId</b> member in that structure is the same ID value that’s used in <a href="..\nfcsedev\ns-nfcsedev--secure-element-hce-data-packet.md">SECURE_ELEMENT_HCE_DATA_PACKET</a> to send and receive an HCE packet with <a href="..\nfcsedev\ni-nfcsedev-ioctl-nfcse-hce-remote-send.md">IOCTL_NFCSE_HCE_REMOTE_SEND</a> and <a href="..\nfcsedev\ni-nfcsedev-ioctl-nfcse-hce-remote-recv.md">IOCTL_NFCSE_HCE_REMOTE_RECV</a>.</p>

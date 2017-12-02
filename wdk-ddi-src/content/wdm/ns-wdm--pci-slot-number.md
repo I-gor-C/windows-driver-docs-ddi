@@ -62,18 +62,18 @@ typedef struct _PCI_SLOT_NUMBER {
 ## -struct-fields
 <dl>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <dl>
 
-### -field <b>bits</b>
+### -field bits
 
 <dd>
 <p>Specifies the particular device on a multifunction adapter at the given slot that is being configured. The <b>DeviceNumber</b> indicates the logical slot number for the adapter; the <b>FunctionNumber</b> indicates the particular device on that adapter.</p>
 </dd>
 
-### -field <b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>Specifies the logical slot number of the device being configured.</p>

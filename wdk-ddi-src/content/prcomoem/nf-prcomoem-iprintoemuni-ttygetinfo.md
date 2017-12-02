@@ -59,20 +59,20 @@ HRESULT TTYGetInfo(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>dwInfoIndex</i> 
+### -param dwInfoIndex 
 
 <dd>
 <p>Caller-supplied constant identifying the type of information being requested. The following constant values are defined:</p>
 <p></p>
 <dl>
 
-### -param <a id="OEMTTY_INFO_CODEPAGE"></a><a id="oemtty_info_codepage"></a>OEMTTY_INFO_CODEPAGE
+### -param OEMTTY_INFO_CODEPAGE
 
 <dd>
 <p>The <i>pOutputBuf</i> parameter points to a DWORD in which the method should return the number of the code page to be used.</p>
@@ -81,7 +81,7 @@ HRESULT TTYGetInfo(
 <p></p>
 <dl>
 
-### -param <a id="OEMTTY_INFO_MARGINS"></a><a id="oemtty_info_margins"></a>OEMTTY_INFO_MARGINS
+### -param OEMTTY_INFO_MARGINS
 
 <dd>
 <p>The <i>pOutputBuf</i> parameter points to a RECT structure in which the method should return page margin widths, in tenths of millimeters (for example, 20 represents 2 mm). If the entire page is printable, all margin values must be 0.</p>
@@ -90,7 +90,7 @@ HRESULT TTYGetInfo(
 <p></p>
 <dl>
 
-### -param <a id="OEMTTY_INFO_NUM_UFMS_"></a><a id="oemtty_info_num_ufms_"></a>OEMTTY_INFO_NUM_UFMS 
+### -param OEMTTY_INFO_NUM_UFMS 
 
 <dd>
 <p>The <i>pOutputBuf</i> parameter points to a DWORD in which the method should return the number of resource IDs of the <a href="wdkgloss.u#wdkgloss.unidrv_font_metrics__ufm_#wdkgloss.unidrv_font_metrics__ufm_"><i>UFMs</i></a> for 10, 12, and 17 CPI fonts. To actually obtain these resource IDs, perform a query using OEMTTY_INFO_UFM_IDS.</p>
@@ -99,7 +99,7 @@ HRESULT TTYGetInfo(
 <p></p>
 <dl>
 
-### -param <a id="OEMTTY_INFO_UFM_IDS_"></a><a id="oemtty_info_ufm_ids_"></a>OEMTTY_INFO_UFM_IDS 
+### -param OEMTTY_INFO_UFM_IDS 
 
 <dd>
 <p>The <i>pOutputBuf</i> parameter points to an array of DWORDs of sufficient size to hold the number of resource IDs of the UFMs for 10, 12, and 17 CPI fonts. (This number is obtained by using OEMTTY_INFO_NUM_UFMS in a query.) The method should return the resource IDs of the <a href="wdkgloss.u#wdkgloss.unidrv_font_metrics__ufm_#wdkgloss.unidrv_font_metrics__ufm_"><i>UFMs</i></a> for 10,12, and 17 CPI fonts. </p>
@@ -107,19 +107,19 @@ HRESULT TTYGetInfo(
 </dl>
 </dd>
 
-### -param <i>pOutputBuf</i> 
+### -param pOutputBuf 
 
 <dd>
 <p>Caller-supplied pointer to a buffer to receive the requested information.</p>
 </dd>
 
-### -param <i>dwSize</i> 
+### -param dwSize 
 
 <dd>
 <p>Caller-supplied size, in bytes, of the buffer pointed to by <i>pOutputBuf</i>.</p>
 </dd>
 
-### -param <i>pcbcNeeded</i> 
+### -param pcbcNeeded 
 
 <dd>
 <p>Caller-supplied pointer to a location to receive the number of bytes written into the buffer pointed to by <i>pOutputBuf</i>. If the number of bytes required is smaller than the number specified by <i>dwSize</i>, the method should supply the required size and return E_FAIL.</p>

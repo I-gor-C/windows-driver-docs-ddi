@@ -7,7 +7,7 @@ old-location: netvista\rilmsgserviceinfo.htm
 old-project: netvista
 ms.assetid: 21b1c6ef-b8f3-4230-bc3f-7ac19c6cb2d1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMSGSERVICEINFO, RILMSGSERVICEINFO, *LPRILMSGSERVICEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef struct _RILMSGSERVICEINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwMsgSupport</b>
+### -field dwMsgSupport
 
 <dd></dd>
 
-### -field <b>dwStoreUsed</b>
+### -field dwStoreUsed
 
 <dd></dd>
 
-### -field <b>dwStoreTotal</b>
+### -field dwStoreTotal
 
 <dd></dd>
 </dl>

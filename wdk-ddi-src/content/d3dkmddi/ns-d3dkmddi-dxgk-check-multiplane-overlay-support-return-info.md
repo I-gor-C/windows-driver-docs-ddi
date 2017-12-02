@@ -61,27 +61,27 @@ typedef struct DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_RETURN_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>FailingPlane</b>
+### -field FailingPlane
 
 <dd>
 <p>The zero-based index of the first overlay plane in the list of planes that the hardware cannot support. For example, if planes 0 and 1 could have been supported, but not plane 2, then the driver should set <b>FailingPlane</b> to 2.</p>
 <p>Setting this member is equivalent to setting the first 4 bits of the 32-bit <b>Value</b> member (0x0000000F).</p>
 </dd>
 
-### -field <b>TryAgain</b>
+### -field TryAgain
 
 <dd>
 <p>The multiplane overlay configuration isn't supported because of a transient condition, which isn't permanent and should end soon. Therefore the support check call should be tried again and will probably succeed after another one or two VSync intervals.</p>
 <p>Setting this member is equivalent to setting the fifth bit of the 32-bit <b>Value</b> member (0x00000010).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 27 bits (0xFFFFFFE0) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A 32-bit value that identifies the hardware support limitations.</p>

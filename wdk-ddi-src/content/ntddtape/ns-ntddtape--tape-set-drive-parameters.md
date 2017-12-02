@@ -58,31 +58,31 @@ typedef struct _TAPE_SET_DRIVE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>ECC</b>
+### -field ECC
 
 <dd>
 <p>When set to <b>TRUE</b>, instructs the device to use hardware error correction. When <b>FALSE</b>, the device does not use hardware error correction.</p>
 </dd>
 
-### -field <b>Compression</b>
+### -field Compression
 
 <dd>
 <p>When set to <b>TRUE</b>, instructs the device to compress data prior to writing it. If a drive must be at beginning of partition before it can set compression (TAPE_DRIVE_SET_CMP_BOP_ONLY), the caller is responsible for positioning the drive before attempting to set compression. When <b>FALSE</b>, the device does not compress data prior to writing it. </p>
 </dd>
 
-### -field <b>DataPadding</b>
+### -field DataPadding
 
 <dd>
 <p>When set to <b>TRUE</b>, instructs the device to pad data with zeros. This is to keep the tape streaming until data is ready. When <b>FALSE</b>, the device does not pad data with zeros.</p>
 </dd>
 
-### -field <b>ReportSetmarks</b>
+### -field ReportSetmarks
 
 <dd>
 <p>When set to <b>TRUE</b>, instructs the device to report setmarks encountered during read or space operations. When <b>FALSE</b>, the device does not report setmarks encountered during read or space operations.</p>
 </dd>
 
-### -field <b>EOTWarningZoneSize</b>
+### -field EOTWarningZoneSize
 
 <dd>
 <p>Indicates the size in bytes of the early warning zone toward the end of the tape in which the drive returns a check condition when it enters the zone.</p>

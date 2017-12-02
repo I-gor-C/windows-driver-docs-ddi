@@ -58,19 +58,19 @@ HRESULT QueryJobAttributes(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> 
+### -param hPrinter 
 
 <dd>
 <p>Specifies the caller-supplied printer handle.</p>
 </dd>
 
-### -param <i>pDevmode</i> 
+### -param pDevmode 
 
 <dd>
 <p>Pointer to a caller-supplied <a href="display.devmodew">DEVMODEW</a> structure.</p>
 </dd>
 
-### -param <i>dwLevel</i> 
+### -param dwLevel 
 
 <dd>
 <p>Specifies a caller-supplied value indicating the type of structure pointed to by <i>lpAttributeInfo</i>, as indicated in the following table.</p>
@@ -128,7 +128,7 @@ HRESULT QueryJobAttributes(
 </dl>
 </dd>
 
-### -param <i>lpAttributeInfo</i> 
+### -param lpAttributeInfo 
 
 <dd>
 <p>Pointer to a memory location that receives the address of a structure of the type identified by <i>dwLevel</i>.</p>

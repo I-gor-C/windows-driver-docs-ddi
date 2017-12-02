@@ -58,25 +58,25 @@ typedef struct _NFC_CX_LLCP_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p> Size of this structure in bytes.</p>
 </dd>
 
-### -field <b>Miu</b>
+### -field Miu
 
 <dd>
 <p>Max information unit in bytes. Default is 1024.</p>
 </dd>
 
-### -field <b>LinkTimeout</b>
+### -field LinkTimeout
 
 <dd>
 <p> LTO timeout in multiples of 10 milliseconds. Default is 100 (1 second).</p>
 </dd>
 
-### -field <b>RecvWindowSize</b>
+### -field RecvWindowSize
 
 <dd>
 <p>The receive window size per LLCP spec. Default value is 5.</p>

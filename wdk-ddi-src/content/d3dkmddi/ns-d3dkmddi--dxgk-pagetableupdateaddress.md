@@ -58,19 +58,19 @@ typedef struct _DXGK_PAGETABLEUPDATEADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>CpuVirtual</b>
+### -field CpuVirtual
 
 <dd>
 <p>The CPU virtual address of the page table to update.</p>
 </dd>
 
-### -field <b>GpuPhysical</b>
+### -field GpuPhysical
 
 <dd>
 <p>The GPU physical address of the page table to update.</p>
 </dd>
 
-### -field <b>GpuVirtual</b>
+### -field GpuVirtual
 
 <dd>
 <p>The GPU virtual address of the page table to update.</p>

@@ -57,25 +57,25 @@ typedef struct _SM_AddTarget_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>HbaPortWWN</b>
+### -field HbaPortWWN
 
 <dd>
 <p>The worldwide name (WWN) of the local port whose events the WMI client will receive.</p>
 </dd>
 
-### -field <b>DiscoveredPortWWN</b>
+### -field DiscoveredPortWWN
 
 <dd>
 <p>A worldwide name (WWN) that specifies the discovered target whose events the WMI client will receive.</p>
 </dd>
 
-### -field <b>DomainPortWWN</b>
+### -field DomainPortWWN
 
 <dd>
 <p>A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.</p>
 </dd>
 
-### -field <b>AllTargets</b>
+### -field AllTargets
 
 <dd>
 <p>The scope of the target events to report. If this member is zero, the WMI client will receive events that are associated with the port that is indicated by DiscoveredPortWWN. If this member is nonzero, the WMI client will receive events that are associated with all currently discovered targets as well as targets that are discovered in the future.</p>

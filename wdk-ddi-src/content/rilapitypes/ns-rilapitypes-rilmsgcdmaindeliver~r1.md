@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmaindeliver_2.htm
 old-project: netvista
 ms.assetid: 0729c3e5-c95d-44fb-9aa4-079833b94619
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMSGCDMAINDELIVER,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -77,95 +77,95 @@ typedef struct _RILMSGCDMAINDELIVER {
 ## -struct-fields
 <dl>
 
-### -field <b>raOrigAddress</b>
+### -field raOrigAddress
 
 <dd></dd>
 
-### -field <b>rsaOrigSubaddr</b>
+### -field rsaOrigSubaddr
 
 <dd></dd>
 
-### -field <b>stSCReceiveTime</b>
+### -field stSCReceiveTime
 
 <dd></dd>
 
-### -field <b>stValidityPeriodAbs</b>
+### -field stValidityPeriodAbs
 
 <dd></dd>
 
-### -field <b>stValidityPeriodRel</b>
+### -field stValidityPeriodRel
 
 <dd></dd>
 
-### -field <b>stDeferredDelTimeAbs</b>
+### -field stDeferredDelTimeAbs
 
 <dd></dd>
 
-### -field <b>stDeferredDelTimeRel</b>
+### -field stDeferredDelTimeRel
 
 <dd></dd>
 
-### -field <b>dwNumMsgs</b>
+### -field dwNumMsgs
 
 <dd></dd>
 
-### -field <b>raCallBackNumber</b>
+### -field raCallBackNumber
 
 <dd></dd>
 
-### -field <b>dwMsgPriority</b>
+### -field dwMsgPriority
 
 <dd></dd>
 
-### -field <b>dwAlertOnMsgDelivery</b>
+### -field dwAlertOnMsgDelivery
 
 <dd></dd>
 
-### -field <b>dwMsgPrivacy</b>
+### -field dwMsgPrivacy
 
 <dd></dd>
 
-### -field <b>bUserAckRequest</b>
+### -field bUserAckRequest
 
 <dd></dd>
 
-### -field <b>dwMsgDisplayMode</b>
+### -field dwMsgDisplayMode
 
 <dd></dd>
 
-### -field <b>dwTeleservice</b>
+### -field dwTeleservice
 
 <dd></dd>
 
-### -field <b>dwServiceID</b>
+### -field dwServiceID
 
 <dd></dd>
 
-### -field <b>dwMsgID</b>
+### -field dwMsgID
 
 <dd></dd>
 
-### -field <b>dwMsgLang</b>
+### -field dwMsgLang
 
 <dd></dd>
 
-### -field <b>dwMsgEncoding</b>
+### -field dwMsgEncoding
 
 <dd></dd>
 
-### -field <b>cbHdrLength</b>
+### -field cbHdrLength
 
 <dd></dd>
 
-### -field <b>cchMsgLength</b>
+### -field cchMsgLength
 
 <dd></dd>
 
-### -field <b>rgbHdr</b>
+### -field rgbHdr
 
 <dd></dd>
 
-### -field <b>rgbMsg</b>
+### -field rgbMsg
 
 <dd></dd>
 </dl>

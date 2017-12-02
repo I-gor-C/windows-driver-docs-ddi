@@ -65,19 +65,19 @@ typedef struct _D3DDDICB_ALLOCATE {
 ## -struct-fields
 <dl>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in] A pointer to private data, which is passed to the display miniport driver. This data is per resource and not per allocation. If allocations are attached to an existing resource, the current data should overwrite the former data.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the private data that is pointed to by <b>pPrivateDriverData</b>.</p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A handle to the resource that is associated with the allocations. </p>
@@ -85,7 +85,7 @@ typedef struct _D3DDDICB_ALLOCATE {
 <p>The Microsoft Direct3D runtime should use this handle in driver calls to identify the resource.</p>
 </dd>
 
-### -field <b>hKMResource</b>
+### -field hKMResource
 
 <dd>
 <p>[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the resource that is associated with the allocations.</p>
@@ -93,26 +93,26 @@ typedef struct _D3DDDICB_ALLOCATE {
 <p>The Direct3D runtime generates a unique handle and passes it back to the user-mode display driver. The user-mode display driver can insert the kernel-mode resource handle in the command stream for subsequent use by the display miniport driver.</p>
 </dd>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of elements in the array at <b>pAllocationInfo</b>, which represents the number of allocations to allocate.</p>
 </dd>
 
-### -field <b>pAllocationInfo</b>
+### -field pAllocationInfo
 
 <dd>
 <p>[in] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-allocationinfo.md">D3DDDI_ALLOCATIONINFO</a> structures that describe the allocations to allocate.</p>
 </dd>
 
-### -field <b>pAllocationInfo2</b>
+### -field pAllocationInfo2
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
 <p>This member is available beginning with Windows 7.</p>
 </dd>
 
-### -field <b>pAllocationInfo</b>
+### -field pAllocationInfo
 
 <dd>
 <p>[in] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-allocationinfo.md">D3DDDI_ALLOCATIONINFO</a> structures that describe the allocations to allocate.</p>

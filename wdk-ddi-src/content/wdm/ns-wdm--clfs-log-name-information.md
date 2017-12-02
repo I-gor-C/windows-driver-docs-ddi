@@ -56,13 +56,13 @@ typedef struct _CLFS_LOG_NAME_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NameLengthInBytes</b>
+### -field NameLengthInBytes
 
 <dd>
 <p>The size, in bytes, of the log name.</p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>An array of wide characters that holds the log name. </p>

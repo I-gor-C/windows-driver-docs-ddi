@@ -58,25 +58,25 @@ typedef struct _I2C_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>WriteClockLine</b>
+### -field WriteClockLine
 
 <dd>
 <p>A pointer to the <a href="..\video\nc-video-pvideo-write-clock-line.md">WriteClockLine</a> function implemented by the video miniport driver.</p>
 </dd>
 
-### -field <b>WriteDataLine</b>
+### -field WriteDataLine
 
 <dd>
 <p>A pointer to the <a href="..\video\nc-video-pvideo-write-data-line.md">WriteDataLine</a> function implemented by the video miniport driver.</p>
 </dd>
 
-### -field <b>ReadClockLine</b>
+### -field ReadClockLine
 
 <dd>
 <p>A pointer to the <a href="..\video\nc-video-pvideo-read-clock-line.md">ReadClockLine</a> function implemented by the video miniport driver.</p>
 </dd>
 
-### -field <b>ReadDataLine</b>
+### -field ReadDataLine
 
 <dd>
 <p>A pointer to the <a href="..\video\nc-video-pvideo-read-data-line.md">ReadDataLine</a> function implemented by the video miniport driver.</p>

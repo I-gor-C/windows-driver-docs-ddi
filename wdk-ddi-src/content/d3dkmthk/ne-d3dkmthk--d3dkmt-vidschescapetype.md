@@ -62,27 +62,27 @@ typedef enum _D3DKMT_VIDSCHESCAPETYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_VIDSCHESCAPETYPE_PREEMPTIONCONTROL"></a><a id="d3dkmt_vidschescapetype_preemptioncontrol"></a><b>D3DKMT_VIDSCHESCAPETYPE_PREEMPTIONCONTROL</b>
+### -field D3DKMT_VIDSCHESCAPETYPE_PREEMPTIONCONTROL
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDSCHESCAPETYPE_SUSPENDSCHEDULER"></a><a id="d3dkmt_vidschescapetype_suspendscheduler"></a><b>D3DKMT_VIDSCHESCAPETYPE_SUSPENDSCHEDULER</b>
+### -field D3DKMT_VIDSCHESCAPETYPE_SUSPENDSCHEDULER
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDSCHESCAPETYPE_TDRCONTROL"></a><a id="d3dkmt_vidschescapetype_tdrcontrol"></a><b>D3DKMT_VIDSCHESCAPETYPE_TDRCONTROL</b>
+### -field D3DKMT_VIDSCHESCAPETYPE_TDRCONTROL
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDSCHESCAPETYPE_SUSPENDRESUME"></a><a id="d3dkmt_vidschescapetype_suspendresume"></a><b>D3DKMT_VIDSCHESCAPETYPE_SUSPENDRESUME</b>
+### -field D3DKMT_VIDSCHESCAPETYPE_SUSPENDRESUME
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDSCHESCAPETYPE_ENABLECONTEXTDELAY"></a><a id="d3dkmt_vidschescapetype_enablecontextdelay"></a><b>D3DKMT_VIDSCHESCAPETYPE_ENABLECONTEXTDELAY</b>
+### -field D3DKMT_VIDSCHESCAPETYPE_ENABLECONTEXTDELAY
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDSCHESCAPETYPE_CONFIGURE_TDR_LIMIT"></a><a id="d3dkmt_vidschescapetype_configure_tdr_limit"></a><b>D3DKMT_VIDSCHESCAPETYPE_CONFIGURE_TDR_LIMIT</b>
+### -field D3DKMT_VIDSCHESCAPETYPE_CONFIGURE_TDR_LIMIT
 
 <dd></dd>
 </dl>

@@ -67,7 +67,7 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Contains the size of the structure 
@@ -75,7 +75,7 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
       The value of this member will change as members are added to the structure.</p>
 </dd>
 
-### -field <b>Action</b>
+### -field Action
 
 <dd>
 <p>The action to be performed as specified by a 
@@ -90,7 +90,7 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 <tr>
 <td width="40%"><a id="DeviceDsmActionFlag_NonDestructive"></a><a id="devicedsmactionflag_nondestructive"></a><a id="DEVICEDSMACTIONFLAG_NONDESTRUCTIVE"></a><dl>
 
-### -field <b><b>DeviceDsmActionFlag_NonDestructive</b></b>
+### -field DeviceDsmActionFlag_NonDestructive
 
 </dl>
 </td>
@@ -110,7 +110,7 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 <p> </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>These flags are global to all control actions. The following flags can be set in the 
@@ -123,7 +123,7 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 <tr>
 <td width="40%"><a id="DEVICE_DSM_FLAG_ENTIRE_DATA_SET_RANGE"></a><a id="device_dsm_flag_entire_data_set_range"></a><dl>
 
-### -field <b><b>DEVICE_DSM_FLAG_ENTIRE_DATA_SET_RANGE</b></b>
+### -field DEVICE_DSM_FLAG_ENTIRE_DATA_SET_RANGE
 
 </dl>
 </td>
@@ -137,7 +137,7 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 <p> </p>
 </dd>
 
-### -field <b>ParameterBlockOffset</b>
+### -field ParameterBlockOffset
 
 <dd>
 <p>Specifies the start of the parameter block within the system buffer of the 
@@ -151,7 +151,7 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 <p>If set to zero, then the parameter block does not exist.</p>
 </dd>
 
-### -field <b>ParameterBlockLength</b>
+### -field ParameterBlockLength
 
 <dd>
 <p>Specifies the length, in bytes, of the parameter block within the payload of the 
@@ -160,7 +160,7 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 <p>If set to zero, then the parameter block does not exist.</p>
 </dd>
 
-### -field <b>DataSetRangesOffset</b>
+### -field DataSetRangesOffset
 
 <dd>
 <p>Specifies the start of the block of data set ranges within the system buffer of the 
@@ -173,7 +173,7 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 <p>If set to zero, then the block of data set ranges does not exist. </p>
 </dd>
 
-### -field <b>DataSetRangesLength</b>
+### -field DataSetRangesLength
 
 <dd>
 <p>Specifies the length, in bytes, of the block of data set ranges within the payload of the 

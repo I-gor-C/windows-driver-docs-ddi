@@ -56,19 +56,19 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The sum of this structure size, all <a href="stream.kscamera_extendedprop_roi_ispcontrol">KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL</a> structures, and all KSCAMERA_EXTENDEDPROP_ROI_RECTINFO structures that follow</p>
 </dd>
 
-### -field <b>ControlCount</b>
+### -field ControlCount
 
 <dd>
 <p>The number of ISP controls. If this value is 0, the ROI control will remove all ROIs previously configured. This effectively clears up all ROIs configured and resets the driver to the default ROI.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

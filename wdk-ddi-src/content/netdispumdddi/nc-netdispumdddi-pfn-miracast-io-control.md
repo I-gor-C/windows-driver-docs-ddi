@@ -65,44 +65,44 @@ NTSTATUS MiracastIoControl(
 ## -parameters
 <dl>
 
-### -param <i>hMiracastDeviceHandle</i> [in]
+### -param hMiracastDeviceHandle [in]
 
 <dd>
 <p>A handle that represents a Miracast device. The Miracast user-mode driver previously obtained this handle as the <i>hMiracastDeviceHandle</i> parameter in a call to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-create-miracast-context.md">CreateMiracastContext</a> function.</p>
 </dd>
 
-### -param <i>HardwareAccess</i> [in]
+### -param HardwareAccess [in]
 
 <dd>
 <p>A Boolean value that indicates whether this I/O control request from the user-mode display driver needs to flush all the pending GPU DMA buffers.</p>
 <p>We don't recommend that the driver set this value to <b>TRUE</b> except when necessary, because flushing the GPU will create substantial processing overhead.</p>
 </dd>
 
-### -param <i>InputBufferSize</i> [in]
+### -param InputBufferSize [in]
 
 <dd>
 <p>The size, in bytes, of the input buffer pointed to by <i>pInputBuffer</i>.</p>
 </dd>
 
-### -param <i>pInputBuffer</i> [in]
+### -param pInputBuffer [in]
 
 <dd>
 <p>A pointer to the input buffer. The <i>InputBufferSize</i> parameter specifies the size of the buffer.</p>
 </dd>
 
-### -param <i>OutputBufferSize</i> [in]
+### -param OutputBufferSize [in]
 
 <dd>
 <p>The size, in bytes, of the output buffer pointed to by <i>pOutputBuffer</i>.</p>
 </dd>
 
-### -param <i>pOutputBuffer</i> [out]
+### -param pOutputBuffer [out]
 
 <dd>
 <p>A driver-supplied pointer to the output buffer. The <i>OutputBufferSize</i> parameter specifies the size of the buffer.</p>
 </dd>
 
-### -param <i>pBytesReturned</i> [out, optional]
+### -param pBytesReturned [out, optional]
 
 <dd>
 <p>An optional driver-supplied pointer to a <b>UINT</b>-type variable that holds the number of bytes that the display miniport driver returned.</p>

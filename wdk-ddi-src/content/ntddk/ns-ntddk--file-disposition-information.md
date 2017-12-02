@@ -54,7 +54,7 @@ typedef struct _FILE_DISPOSITION_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>DeleteFile</b>
+### -field DeleteFile
 
 <dd>
 <p>Indicates whether the operating system file should delete the file when the file is closed. Set this member to <b>TRUE</b> to delete the file when it is closed. Otherwise, set to <b>FALSE</b>. Setting this member to <b>FALSE</b> has no effect if the handle was opened with FILE_FLAG_DELETE_ON_CLOSE.</p>

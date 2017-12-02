@@ -56,13 +56,13 @@ VOID IoReleaseRemoveLock(
 ## -parameters
 <dl>
 
-### -param <i>RemoveLock</i> [in]
+### -param RemoveLock [in]
 
 <dd>
 <p>Pointer to an <b>IO_REMOVE_LOCK</b> structure that the caller passed to a previous call to <b>IoAcquireRemoveLock</b>. </p>
 </dd>
 
-### -param <i>Tag</i> [in]
+### -param Tag [in]
 
 <dd>
 <p>Pointer to a caller-supplied tag that was passed to a previous call to <b>IoAcquireRemoveLock</b>. </p>

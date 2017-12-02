@@ -60,19 +60,19 @@ NTSTATUS CamFreeBandwidthEx(
 ## -parameters
 <dl>
 
-### -param <i>BusDeviceObject</i> 
+### -param BusDeviceObject 
 
 <dd>
 <p>Pointer to the camera minidriver's device object created by the USB hub.</p>
 </dd>
 
-### -param <i>DeviceContext</i> 
+### -param DeviceContext 
 
 <dd>
 <p>Pointer to the camera minidriver's device context.</p>
 </dd>
 
-### -param <i>StreamNumber</i> 
+### -param StreamNumber 
 
 <dd>
 <p>Indicates stream number.</p>

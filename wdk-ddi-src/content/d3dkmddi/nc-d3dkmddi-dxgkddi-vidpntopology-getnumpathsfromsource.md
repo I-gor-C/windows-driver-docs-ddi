@@ -59,19 +59,19 @@ NTSTATUS APIENTRY pfnGetNumPathsFromSource(
 ## -parameters
 <dl>
 
-### -param <i>hVidPnTopology</i> [in]
+### -param hVidPnTopology [in]
 
 <dd>
 <p>[in] A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-gettopology.md">pfnGetTopology</a> function of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpn-interface.md">DXGK_VIDPN_INTERFACE</a> interface.</p>
 </dd>
 
-### -param <i>VidPnSourceId</i> [in]
+### -param VidPnSourceId [in]
 
 <dd>
 <p>[in] An integer that identifies a particular video present source.</p>
 </dd>
 
-### -param <i>pNumPathsFromSource</i> [out]
+### -param pNumPathsFromSource [out]
 
 <dd>
 <p>[out] A pointer to a SIZE_T-typed variable that receives the number of paths that contain the specified source.</p>

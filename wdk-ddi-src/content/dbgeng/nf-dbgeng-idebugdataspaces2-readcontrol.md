@@ -7,7 +7,7 @@ old-location: debugger\readcontrol.htm
 old-project: debugger
 ms.assetid: 52f65e2a-97a7-4c1c-a021-208bc2520b7d
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugDataSpaces2, ReadControl, IDebugDataSpaces2::ReadControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ HRESULT ReadControl(
 ## -parameters
 <dl>
 
-### -param <i>Processor</i> [in]
+### -param Processor [in]
 
 <dd>
 <p>Specifies the processor whose information is to be read.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the offset in the control space of the memory to read.</p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Receives the data read from the control-space memory.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size in bytes of the buffer <i>Buffer</i>.  This is the maximum number of bytes that will be read.</p>
 </dd>
 
-### -param <i>BytesRead</i> [out, optional]
+### -param BytesRead [out, optional]
 
 <dd>
 <p>Receives the number of bytes returned in the buffer <i>Buffer</i>.  If <i>BytesRead</i> is <b>NULL</b>, this information is not returned.</p>
@@ -96,7 +96,7 @@ HRESULT ReadControl(
 
 <p> </p>
 
-<p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
+<p>This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p>
 
 ## -remarks
 <p>This method is only available in kernel-mode debugging.</p>

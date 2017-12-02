@@ -55,13 +55,13 @@ typedef struct _PEP_PPM_QUERY_COORDINATED_STATES {
 ## -struct-fields
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>[in] The size of the <b>States</b> array. This will be equal to the <b>PlatformStateCount</b> returned from the query platform states notification.  </p>
 </dd>
 
-### -field <b>States</b>
+### -field States
 
 <dd>
 <p>[out] An array of <a href="..\pepfx\ns-pepfx--pep-coordinated-idle-state.md">PEP_COORDINATED_IDLE_STATE</a> structures that contains information about each coordinated idle state that the PEP supports.</p>

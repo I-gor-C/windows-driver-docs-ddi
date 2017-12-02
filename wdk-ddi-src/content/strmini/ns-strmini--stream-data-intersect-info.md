@@ -58,25 +58,25 @@ typedef struct _STREAM_DATA_INTERSECT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>StreamNumber</b>
+### -field StreamNumber
 
 <dd>
 <p>Specifies the stream number. This corresponds to the offset of the stream within the minidriver's array of <a href="..\strmini\ns-strmini--hw-stream-information.md">HW_STREAM_INFORMATION</a> structures. The possible data formats depend on the stream type.</p>
 </dd>
 
-### -field <b>DataRange</b>
+### -field DataRange
 
 <dd>
 <p>Pointer to the data ranges to be examined for a match.</p>
 </dd>
 
-### -field <b>DataFormatBuffer</b>
+### -field DataFormatBuffer
 
 <dd>
 <p>Pointer to the buffer the minidriver fills in with the matching data format.</p>
 </dd>
 
-### -field <b>SizeOfDataFormatBuffer</b>
+### -field SizeOfDataFormatBuffer
 
 <dd>
 <p>Specifies the size in bytes of the <b>DataFormatBuffer</b>.</p>

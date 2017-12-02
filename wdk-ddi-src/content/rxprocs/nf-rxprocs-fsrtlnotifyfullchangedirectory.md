@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlnotifyfullchangedirectory.htm
 old-project: ifsk
 ms.assetid: 42e5340e-0be4-49d1-a219-88b7425a41ef
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FsRtlNotifyFullChangeDirectory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,43 +64,43 @@ VOID FsRtlNotifyFullChangeDirectory(
 ## -parameters
 <dl>
 
-### -param <i>NotifySync</i> [in]
+### -param NotifySync [in]
 
 <dd>
 <p>A pointer to an opaque synchronization object for the notify list for the current volume.</p>
 </dd>
 
-### -param <i>NotifyList</i> [in]
+### -param NotifyList [in]
 
 <dd>
 <p>A pointer to the head of a notify list. Each element in the list is an opaque notify structure.</p>
 </dd>
 
-### -param <i>FsContext</i> [in]
+### -param FsContext [in]
 
 <dd>
 <p>A pointer to a unique value assigned by the file system to identify the notify structure to be created as belonging to a particular file object. If a <i>TraverseCallback</i> routine is supplied, <i>FsContext</i> is passed as the <i>NotifyContext</i> parameter to that routine.</p>
 </dd>
 
-### -param <i>FullDirectoryName</i> [in]
+### -param FullDirectoryName [in]
 
 <dd>
 <p>A pointer to an ANSI or Unicode string that contains the full name for the directory associated with this notify structure. Ignored if <i>NotifyIrp</i> is <b>NULL</b>.</p>
 </dd>
 
-### -param <i>WatchTree</i> [in]
+### -param WatchTree [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if all subdirectories of this directory should also be watched. Set to <b>FALSE</b> if only the directory itself is to be watched. Ignored if <i>NotifyIrp</i> is <b>NULL</b>.</p>
 </dd>
 
-### -param <i>IgnoreBuffer</i> [in]
+### -param IgnoreBuffer [in]
 
 <dd>
 <p>Set to <b>TRUE</b> to ignore any user buffers and force the directory to be reenumerated. This action speeds the operation. Ignored if <i>NotifyIrp</i> is <b>NULL</b>.</p>
 </dd>
 
-### -param <i>CompletionFilter</i> [in]
+### -param CompletionFilter [in]
 
 <dd>
 <p>Bitmask of flags that specify the types of changes to files or subdirectories that should cause the queue of pending notify IRPs to be completed. The possible flag values are described following.</p>
@@ -218,13 +218,13 @@ VOID FsRtlNotifyFullChangeDirectory(
 <p><i>CompletionFilter</i> is ignored if <i>NotifyIrp</i> is <b>NULL</b>.</p>
 </dd>
 
-### -param <i>NotifyIrp</i> [in, optional]
+### -param NotifyIrp [in, optional]
 
 <dd>
 <p>A pointer to the IRP to complete on notify change. If <i>NotifyIrp</i> is <b>NULL</b>, this means that the file stream represented by this file object is being deleted.</p>
 </dd>
 
-### -param <i>TraverseCallback</i> [in, optional]
+### -param TraverseCallback [in, optional]
 
 <dd>
 <p>Optional pointer to a callback routine to be invoked when a change occurs in a subdirectory being watched in a directory tree. This lets the file system check whether the watcher has traverse access to that directory. Such a caller-supplied routine is declared as follows:</p>
@@ -246,7 +246,7 @@ VOID FsRtlNotifyFullChangeDirectory(
 <p>For more information about the <i>TargetContext</i> parameter, see the <i>TargetContext</i> parameter of <a href="ifsk.fsrtlnotifyfullreportchange">FsRtlNotifyFullReportChange</a>. <i>TraverseCallback</i> is ignored if <i>NotifyIrp</i> is <b>NULL</b>.</p>
 </dd>
 
-### -param <i>SubjectContext</i> [in, optional]
+### -param SubjectContext [in, optional]
 
 <dd>
 <p>A pointer to a context structure to be passed to <i>TraverseCallback</i>. <b>FsRtlNotifyFullChangeDirectory</b> releases the context and frees the structure after using it. Ignored if <i>NotifyIrp</i> is <b>NULL</b>. If a <i>TraverseCallback</i> routine is supplied, <i>SubjectContext</i> is passed as the <i>SubjectContext</i> parameter to that routine.</p>
@@ -333,4 +333,4 @@ VOID FsRtlNotifyFullChangeDirectory(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlNotifyFullChangeDirectory routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlNotifyFullChangeDirectory routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

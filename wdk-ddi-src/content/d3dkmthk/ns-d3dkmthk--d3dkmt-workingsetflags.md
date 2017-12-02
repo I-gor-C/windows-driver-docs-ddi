@@ -55,14 +55,14 @@ typedef struct _D3DKMT_WORKINGSETFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>UseDefault</b>
+### -field UseDefault
 
 <dd>
 <p>A UINT value that specifies whether the display miniport driver uses the default working set.</p>
 <p>Setting this member is equivalent to setting the first bit of a 32-bit value (0x00000001).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of a 32-bit value to zeros. </p>

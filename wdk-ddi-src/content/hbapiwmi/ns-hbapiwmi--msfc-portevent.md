@@ -56,19 +56,19 @@ typedef struct _MSFC_PortEvent {
 ## -struct-fields
 <dl>
 
-### -field <b>EventType</b>
+### -field EventType
 
 <dd>
 <p>Indicates the type of the event. The values that can be assigned to this member are defined by the <a href="storage.event_types_qualifiers">EVENT_TYPE_QUALIFIERS</a> WMI class qualifier.</p>
 </dd>
 
-### -field <b>FabricPortId</b>
+### -field FabricPortId
 
 <dd>
 <p>Contains the fabric port ID. </p>
 </dd>
 
-### -field <b>PortWWN</b>
+### -field PortWWN
 
 <dd>
 <p>Contains the worldwide name that indicates the port for which the event occurred. </p>

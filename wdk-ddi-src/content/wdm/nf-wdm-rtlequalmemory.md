@@ -57,19 +57,19 @@ LOGICAL RtlEqualMemory(
 ## -parameters
 <dl>
 
-### -param <i>Source1</i> [in]
+### -param Source1 [in]
 
 <dd>
 <p>Pointer to a caller-allocated block of memory to compare. </p>
 </dd>
 
-### -param <i>Source2</i> [in]
+### -param Source2 [in]
 
 <dd>
 <p>Pointer to a caller-allocated block of memory that is compared to the block of memory to which <i>Source1</i> points. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the number of bytes to be compared. </p>

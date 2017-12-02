@@ -59,37 +59,37 @@ HRESULT APIENTRY* PFND3D12DDI_GETKEYBASEDATA_0030(
 ## -parameters
 <dl>
 
-### -param <i>hDrvDevice</i> 
+### -param hDrvDevice 
 
 <dd>
 <p>The device being processed.</p>
 </dd>
 
-### -param <i>hDrvCryptoSession</i> 
+### -param hDrvCryptoSession 
 
 <dd>
 <p>The crypto session.</p>
 </dd>
 
-### -param <i>pKeyInputData</i> [in]
+### -param pKeyInputData [in]
 
 <dd>
 <p>A pointer to key input data.</p>
 </dd>
 
-### -param <i>KeyInputDataSize</i> 
+### -param KeyInputDataSize 
 
 <dd>
 <p>The size of the key input data.</p>
 </dd>
 
-### -param <i>pKeyBaseData</i> [out]
+### -param pKeyBaseData [out]
 
 <dd>
 <p>A pointer to key base data.</p>
 </dd>
 
-### -param <i>KeyBaseDataSize</i> 
+### -param KeyBaseDataSize 
 
 <dd>
 <p>The size of the key base data.</p>

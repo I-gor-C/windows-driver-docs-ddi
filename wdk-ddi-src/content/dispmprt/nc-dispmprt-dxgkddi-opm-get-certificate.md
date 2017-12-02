@@ -60,25 +60,25 @@ NTSTATUS DxgkDdiOPMGetCertificate(
 ## -parameters
 <dl>
 
-### -param <i>MiniportDeviceContext</i> [in]
+### -param MiniportDeviceContext [in]
 
 <dd>
 <p>A handle to a context block associated with a display adapter. Previously, the display miniport driver's <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a> function provided this handle to the DirectX graphics kernel subsystem.</p>
 </dd>
 
-### -param <i>CertificateType</i> [in]
+### -param CertificateType [in]
 
 <dd>
 <p>A <a href="..\d3dkmdt\ne-d3dkmdt--dxgkmdt-certificate-type.md">DXGKMDT_CERTIFICATE_TYPE</a>-typed value that identifies the type of certificate to retrieve.</p>
 </dd>
 
-### -param <i>CertificateSize</i> [in]
+### -param CertificateSize [in]
 
 <dd>
 <p>The size, in bytes, of the certificate to retrieve. This size was returned by a call to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-certificate-size.md">DxgkDdiOPMGetCertificateSize</a> function.</p>
 </dd>
 
-### -param <i>CertificateBuffer</i> [out]
+### -param CertificateBuffer [out]
 
 <dd>
 <p>A pointer to a buffer that receives the requested certificate if <i>DxgkDdiOPMGetCertificate</i> returns successfully. If <i>DxgkDdiOPMGetCertificate</i> fails, the contents of the buffer are unchanged.</p>

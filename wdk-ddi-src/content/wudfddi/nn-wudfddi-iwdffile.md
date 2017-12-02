@@ -7,7 +7,7 @@ old-location: wdf\iwdffile.htm
 old-project: wdf
 ms.assetid: bf8e5ab1-9a17-4eb5-8c54-34670ea27068
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -56,7 +56,7 @@ typedef struct _PEP_PPM_PARK_SELECTION {
 ## -struct-fields
 <dl>
 
-### -field <b>AdditionalUnparkedProcessors</b>
+### -field AdditionalUnparkedProcessors
 
 <dd>
 <p>[in] The number of additional processors that need to be parked.</p>
@@ -64,26 +64,26 @@ typedef struct _PEP_PPM_PARK_SELECTION {
 <p>This number does <u>not</u> include processors in the <b>Processors</b> array for which the operating system sets the <b>PoPreference</b> value to PROCESSOR_PARK_PREFERENCE_PARKED.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>[in] The number of elements in the array pointed to by the <b>Processors</b> member.</p>
 </dd>
 
-### -field <b>Processors</b>
+### -field Processors
 
 <dd>
 <p>[in/out] A pointer to an array of <a href="..\pepfx\ns-pepfx--pep-processor-park-preference.md">PEP_PROCESSOR_PARK_PREFERENCE</a> structures. The <b>Count</b> member specifies the number of elements in the array.</p>
 <p></p>
 <dl>
 
-### -field <a id="On_input"></a><a id="on_input"></a><a id="ON_INPUT"></a>On input
+### -field On input
 
 <dd>
 <p>Each array element indicates the parking preferences for a particular processor.</p>
 </dd>
 
-### -field <a id="On_output"></a><a id="on_output"></a><a id="ON_OUTPUT"></a>On output
+### -field On output
 
 <dd>
 <p>Returns the PEP parking preference for each processor.</p>

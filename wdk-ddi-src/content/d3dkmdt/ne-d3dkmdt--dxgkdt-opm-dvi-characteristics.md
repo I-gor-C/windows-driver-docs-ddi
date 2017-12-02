@@ -56,19 +56,19 @@ typedef enum _DXGKDT_OPM_DVI_CHARACTERISTICS {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKMDT_OPM_DVI_CHARACTERISTIC_1_0"></a><a id="dxgkmdt_opm_dvi_characteristic_1_0"></a><b>DXGKMDT_OPM_DVI_CHARACTERISTIC_1_0</b>
+### -field DXGKMDT_OPM_DVI_CHARACTERISTIC_1_0
 
 <dd>
 <p>Indicates that the DVI electrical characteristics are version 1.0. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_DVI_CHARACTERISTIC_1_1_OR_ABOVE"></a><a id="dxgkmdt_opm_dvi_characteristic_1_1_or_above"></a><b>DXGKMDT_OPM_DVI_CHARACTERISTIC_1_1_OR_ABOVE</b>
+### -field DXGKMDT_OPM_DVI_CHARACTERISTIC_1_1_OR_ABOVE
 
 <dd>
 <p>Indicates that the DVI electrical characteristics are version 1.1 or later. </p>
 </dd>
 
-### -field <a id="DXGKMDT_OPM_DVI_CHARACTERISTICS_FORCE_ULONG"></a><a id="dxgkmdt_opm_dvi_characteristics_force_ulong"></a><b>DXGKMDT_OPM_DVI_CHARACTERISTICS_FORCE_ULONG</b>
+### -field DXGKMDT_OPM_DVI_CHARACTERISTICS_FORCE_ULONG
 
 <dd>
 <p>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</p>

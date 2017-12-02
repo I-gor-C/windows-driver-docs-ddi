@@ -57,19 +57,19 @@ typedef enum _TRANSACTION_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="TransactionStateNormal"></a><a id="transactionstatenormal"></a><a id="TRANSACTIONSTATENORMAL"></a><b>TransactionStateNormal</b>
+### -field TransactionStateNormal
 
 <dd>
 <p>The transaction's state is neither in doubt nor committed.</p>
 </dd>
 
-### -field <a id="TransactionStateIndoubt"></a><a id="transactionstateindoubt"></a><a id="TRANSACTIONSTATEINDOUBT"></a><b>TransactionStateIndoubt</b>
+### -field TransactionStateIndoubt
 
 <dd>
 <p>The transaction's state is in doubt (that is, KTM cannot determine whether the transaction should be committed or rolled back). A transaction that has been prepared enters the "in doubt" state if its <a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">superior transaction manager</a> becomes unavailable.</p>
 </dd>
 
-### -field <a id="TransactionStateCommittedNotify"></a><a id="transactionstatecommittednotify"></a><a id="TRANSACTIONSTATECOMMITTEDNOTIFY"></a><b>TransactionStateCommittedNotify</b>
+### -field TransactionStateCommittedNotify
 
 <dd>
 <p>The transaction has been committed. Commit notifications might (or might not) have been delivered to all enlistments.</p>

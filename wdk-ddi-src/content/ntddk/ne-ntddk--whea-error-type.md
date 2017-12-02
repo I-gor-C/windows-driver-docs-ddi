@@ -60,43 +60,43 @@ typedef enum _WHEA_ERROR_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WheaErrTypeProcessor"></a><a id="wheaerrtypeprocessor"></a><a id="WHEAERRTYPEPROCESSOR"></a><b>WheaErrTypeProcessor</b>
+### -field WheaErrTypeProcessor
 
 <dd>
 <p>A processor reported the hardware error.</p>
 </dd>
 
-### -field <a id="WheaErrTypeMemory"></a><a id="wheaerrtypememory"></a><a id="WHEAERRTYPEMEMORY"></a><b>WheaErrTypeMemory</b>
+### -field WheaErrTypeMemory
 
 <dd>
 <p>The memory hierarchy reported the hardware error.</p>
 </dd>
 
-### -field <a id="WheaErrTypePCIExpress"></a><a id="wheaerrtypepciexpress"></a><a id="WHEAERRTYPEPCIEXPRESS"></a><b>WheaErrTypePCIExpress</b>
+### -field WheaErrTypePCIExpress
 
 <dd>
 <p>A PCI Express root port reported the hardware error.</p>
 </dd>
 
-### -field <a id="WheaErrTypeNMI"></a><a id="wheaerrtypenmi"></a><a id="WHEAERRTYPENMI"></a><b>WheaErrTypeNMI</b>
+### -field WheaErrTypeNMI
 
 <dd>
 <p>A nonmaskable interrupt (NMI) was signaled.</p>
 </dd>
 
-### -field <a id="WheaErrTypePCIXBus"></a><a id="wheaerrtypepcixbus"></a><a id="WHEAERRTYPEPCIXBUS"></a><b>WheaErrTypePCIXBus</b>
+### -field WheaErrTypePCIXBus
 
 <dd>
 <p>A PCI or PCI-X bus reported the hardware error.</p>
 </dd>
 
-### -field <a id="WheaErrTypePCIXDevice"></a><a id="wheaerrtypepcixdevice"></a><a id="WHEAERRTYPEPCIXDEVICE"></a><b>WheaErrTypePCIXDevice</b>
+### -field WheaErrTypePCIXDevice
 
 <dd>
 <p>A PCI or PCI-X device reported the hardware error.</p>
 </dd>
 
-### -field <a id="WheaErrTypeGeneric"></a><a id="wheaerrtypegeneric"></a><a id="WHEAERRTYPEGENERIC"></a><b>WheaErrTypeGeneric</b>
+### -field WheaErrTypeGeneric
 
 <dd>
 <p>A hardware component that does not conform to any of the other WHEA_ERROR_TYPE enumeration values reported the hardware error.</p>

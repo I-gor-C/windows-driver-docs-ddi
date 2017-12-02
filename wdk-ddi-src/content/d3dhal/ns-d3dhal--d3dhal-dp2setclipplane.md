@@ -55,13 +55,13 @@ typedef struct _D3DHAL_DP2SETCLIPPLANE {
 ## -struct-fields
 <dl>
 
-### -field <b>dwIndex</b>
+### -field dwIndex
 
 <dd>
 <p>Specifies the index of the clipping plane for which the plane equation coefficients will be set.</p>
 </dd>
 
-### -field <b>plane</b>
+### -field plane
 
 <dd>
 <p>Specifies a four-element array of the coefficients A, B, C, and D, in that order, in the general plane equation for the clipping plane. </p>

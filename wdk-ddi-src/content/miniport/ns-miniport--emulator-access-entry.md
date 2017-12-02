@@ -59,25 +59,25 @@ typedef struct _EMULATOR_ACCESS_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>BasePort</b>
+### -field BasePort
 
 <dd>
 <p>Specifies the bus-relative physical address of the I/O port or ports to be hooked out by the V86 emulator. This value and the range of ports must fall within an access range of I/O ports already claimed in the registry by <b>VideoPortGetAccessRanges</b> or <b>VideoPortVerifyAccessRanges</b>.</p>
 </dd>
 
-### -field <b>NumConsecutivePorts</b>
+### -field NumConsecutivePorts
 
 <dd>
 <p>Specifies the number of consecutive ports to be hooked by the V86 emulator, starting at <b>BasePort</b>. This value is determined by the width of each hooked I/O port. For example, if port addresses 0x3C0 and 0x3C1 are hooked as a single USHORT-addressable port, this value should be 1.</p>
 </dd>
 
-### -field <b>AccessType</b>
+### -field AccessType
 
 <dd>
 <p>Specifies the size of the data transferred through the given I/O port as one of <b>Uchar</b>, <b>Ulong</b>, or <b>Ushort</b>.</p>
 </dd>
 
-### -field <b>AccessMode</b>
+### -field AccessMode
 
 <dd>
 <p>Specifies how the given I/O port can be accessed as one or a combination (ORed) of the following values:</p>
@@ -94,13 +94,13 @@ typedef struct _EMULATOR_ACCESS_ENTRY {
 <p>The I/O port range must be accessible in at least one of the preceding modes.</p>
 </dd>
 
-### -field <b>StringSupport</b>
+### -field StringSupport
 
 <dd>
 <p>Indicates whether the driver-supplied <i>SvgaHwIoPortXxx</i> function supports string accesses in cases where many values of the given <b>AccessType</b> are "pumped" through an I/O port consecutively. If this member is set to <b>TRUE</b>, the <b>Routine</b> member must specify the entry point of a miniport driver-supplied<i> SvgaHwIoPortXxxString</i> function.</p>
 </dd>
 
-### -field <b>Routine</b>
+### -field Routine
 
 <dd>
 <p>Pointer to the miniport driver's <i>SvgaHwIoPortXxx</i> that handles accesses to the port or ports described in this structure.</p>

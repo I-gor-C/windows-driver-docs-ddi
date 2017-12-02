@@ -58,13 +58,13 @@ VOID HDAudioBdlIsr(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>The HD Audio bus driver calls the ISR with the same context value that the client specified in the context parameter of the preceding SetupDmaEngineWithBdl call. For more information, see <a href="..\hdaudio\nc-hdaudio-psetup-dma-engine-with-bdl.md">PSETUP_DMA_ENGINE_WITH_BDL</a>.</p>
 </dd>
 
-### -param <i>InterruptBitMask</i> [in]
+### -param InterruptBitMask [in]
 
 <dd>
 <p>The interruptBitMask parameter contains the bits from the HD Audio controller device's stream status register that indicate the reason for the interrupt. The following table shows the meaning of the individual bits in interruptBitMask.</p>

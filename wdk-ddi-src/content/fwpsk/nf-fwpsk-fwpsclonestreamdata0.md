@@ -7,7 +7,7 @@ old-location: netvista\fwpsclonestreamdata0.htm
 old-project: netvista
 ms.assetid: 66041ccb-e63a-4843-85ec-d93b924bb335
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsCloneStreamData0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ NTSTATUS NTAPI FwpsCloneStreamData0(
 ## -parameters
 <dl>
 
-### -param <i>calloutStreamData</i> [in, out]
+### -param calloutStreamData [in, out]
 
 <dd>
 <p>A pointer to the original 
@@ -69,7 +69,7 @@ NTSTATUS NTAPI FwpsCloneStreamData0(
      <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure cloned.</p>
 </dd>
 
-### -param <i>netBufferListPoolHandle</i> [in, optional]
+### -param netBufferListPoolHandle [in, optional]
 
 <dd>
 <p>A 
@@ -78,7 +78,7 @@ NTSTATUS NTAPI FwpsCloneStreamData0(
      <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">NdisAllocateNetBufferListPool</a> function. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>netBufferPoolHandle</i> [in, optional]
+### -param netBufferPoolHandle [in, optional]
 
 <dd>
 <p>A 
@@ -88,14 +88,14 @@ NTSTATUS NTAPI FwpsCloneStreamData0(
      NdisAllocateNetBufferPool</a> function. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>allocateCloneFlags</i> [in]
+### -param allocateCloneFlags [in]
 
 <dd>
 <p>There are currently no flags defined for this function. Callout drivers should set this parameter
      to zero.</p>
 </dd>
 
-### -param <i>netBufferListChain</i> [out]
+### -param netBufferListChain [out]
 
 <dd>
 <p>A pointer to a location that receives a pointer to a chain of 
@@ -213,4 +213,4 @@ NTSTATUS NTAPI FwpsCloneStreamData0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsCloneStreamData0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsCloneStreamData0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

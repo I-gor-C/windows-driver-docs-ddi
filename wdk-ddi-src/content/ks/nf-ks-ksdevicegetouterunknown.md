@@ -54,7 +54,7 @@ PUNKNOWN __inline KsDeviceGetOuterUnknown(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> structure for which to get the outer unknown interface.</p>
@@ -125,7 +125,7 @@ PUNKNOWN __inline KsDeviceGetOuterUnknown(
 <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
 </dt>
 <dt>
-<a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 </dt>
 </dl>
 <p> </p>

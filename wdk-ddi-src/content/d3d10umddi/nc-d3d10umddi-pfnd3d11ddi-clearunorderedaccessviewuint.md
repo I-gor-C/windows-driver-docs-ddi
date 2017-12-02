@@ -59,19 +59,19 @@ VOID APIENTRY ClearUnorderedAccessViewUINT(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hUnorderedAccessView</i> [in]
+### -param hUnorderedAccessView [in]
 
 <dd>
 <p> A handle to the unordered-access view to clear. </p>
 </dd>
 
-### -param <i>pUints</i> [in]
+### -param pUints [in]
 
 <dd>
 <p> A four-element array of unsigned integers that the driver uses to clear an unordered-access view. </p>

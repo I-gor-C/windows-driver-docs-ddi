@@ -56,11 +56,11 @@ HANDLE WINAPI CreatePrinterIC(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd></dd>
 
-### -param <i>pDevMode</i> [in, optional]
+### -param pDevMode [in, optional]
 
 <dd></dd>
 </dl>

@@ -59,19 +59,19 @@ typedef struct _D3DKMDT_GDISURFACEDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>[in] The width of the surface, in pixels.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[in] The height of the surface, in pixels.</p>
 </dd>
 
-### -field <b>Format</b>
+### -field Format
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface. The following formats are supported:</p>
@@ -95,19 +95,19 @@ typedef struct _D3DKMDT_GDISURFACEDATA {
 <p>The D3DDDIFMT_A8 format is used only for D3DKMDT_GDISURFACE_STAGING and D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE staging surface types from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a> enumeration.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>[in] A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a>-typed value that indicates the surface type.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] Reserved for future use. Must be zero.</p>
 </dd>
 
-### -field <b>Pitch</b>
+### -field Pitch
 
 <dd>
 <p>[out] The width of the surface, which includes padding, in bytes. The display miniport driver must return the pitch value for all allocations of <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a> type D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE,  D3DKMDT_GDISURFACE_EXISTINGSYSMEM, and D3DKMDT_GDISURFACE_TEXTURE_CROSSADAPTER.</p>

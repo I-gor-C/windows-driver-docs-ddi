@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSSTATE_STOP"></a><a id="ksstate_stop"></a><b>KSSTATE_STOP</b>
+### -field KSSTATE_STOP
 
 <dd>
 <p>Indicates that the object is in minimum resource consumption mode.</p>
 </dd>
 
-### -field <a id="KSSTATE_ACQUIRE"></a><a id="ksstate_acquire"></a><b>KSSTATE_ACQUIRE</b>
+### -field KSSTATE_ACQUIRE
 
 <dd>
 <p>Indicates that the object is acquiring resources.</p>
 </dd>
 
-### -field <a id="KSSTATE_PAUSE"></a><a id="ksstate_pause"></a><b>KSSTATE_PAUSE</b>
+### -field KSSTATE_PAUSE
 
 <dd>
 <p>Indicates that the object is preparing to make instant transition to Run state.</p>
 </dd>
 
-### -field <a id="KSSTATE_RUN"></a><a id="ksstate_run"></a><b>KSSTATE_RUN</b>
+### -field KSSTATE_RUN
 
 <dd>
 <p>Indicates that the object is actively streaming.</p>

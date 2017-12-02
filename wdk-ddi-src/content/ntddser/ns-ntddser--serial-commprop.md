@@ -71,43 +71,43 @@ typedef struct _SERIAL_COMMPROP {
 ## -struct-fields
 <dl>
 
-### -field <b>PacketLength</b>
+### -field PacketLength
 
 <dd>
 <p>The size, in bytes, of the data packet that starts with this structure and that contains the requested property data. This size includes the <b>SERIAL_COMMPROP</b> structure and any additional <b>ProvChar</b> array elements that follow this structure.</p>
 </dd>
 
-### -field <b>PacketVersion</b>
+### -field PacketVersion
 
 <dd>
 <p>The version of this structure. The current version number is 2.</p>
 </dd>
 
-### -field <b>ServiceMask</b>
+### -field ServiceMask
 
 <dd>
 <p>A bitmask that indicates which services are implemented by this communications provider. This member is always set to SERIAL_SP_SERIALCOMM by serial communications providers, including modem providers. The <b>ProvSubType</b> member indicates the specific type of serial communications that are implemented (for example, modem).</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>MaxTxQueue</b>
+### -field MaxTxQueue
 
 <dd>
 <p>Maximum transmit queue size. The maximum size, in bytes, of the serial controller driver's internal output buffer. A value of zero indicates that no maximum value is imposed by the serial provider.</p>
 </dd>
 
-### -field <b>MaxRxQueue</b>
+### -field MaxRxQueue
 
 <dd>
 <p>Maximum receive queue size. The maximum size, in bytes, of the serial controller driver's internal input buffer. A value of zero indicates that no maximum value is imposed by the serial provider.</p>
 </dd>
 
-### -field <b>MaxBaud</b>
+### -field MaxBaud
 
 <dd>
 <p>The maximum acceptable baud rate. An <a href="https://msdn.microsoft.com/4A9B80F1-4DE1-4D35-ADDF-90058A4F8388">extension-based serial controller driver</a> sets this member to a baud rate expressed in bits per second (bps). For example, if the serial controller supports a maximum baud rate of 115,200 bps, the driver sets <b>MaxBaud</b> = 115200.</p>
@@ -201,7 +201,7 @@ typedef struct _SERIAL_COMMPROP {
 <p> </p>
 </dd>
 
-### -field <b>ProvSubType</b>
+### -field ProvSubType
 
 <dd>
 <p>The specific communications provider type. When the <b>ServiceMask</b> member is set to SERIAL_SP_SERIALCOMM, <b>ProvSubType</b> is set to one of the following values.</p>
@@ -266,7 +266,7 @@ typedef struct _SERIAL_COMMPROP {
 <p> </p>
 </dd>
 
-### -field <b>ProvCapabilities</b>
+### -field ProvCapabilities
 
 <dd>
 <p>The capabilities offered by the provider. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.</p>
@@ -319,7 +319,7 @@ typedef struct _SERIAL_COMMPROP {
 <p> </p>
 </dd>
 
-### -field <b>SettableParams</b>
+### -field SettableParams
 
 <dd>
 <p>A bitmask that indicates the communication parameter that can be changed. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.</p>
@@ -360,14 +360,14 @@ typedef struct _SERIAL_COMMPROP {
 <p> </p>
 </dd>
 
-### -field <b>SettableBaud</b>
+### -field SettableBaud
 
 <dd>
 <p>A bitmask that indicates the baud rates that can be used. For a table that describes the SERIAL_BAUD_<i>XXX</i> flag bits that are defined for this member, see the description of the <b>MaxBaud</b> member. <b>SettableBaud</b> is set to zero or to the bitwise-OR or one or more of these flag bits.</p>
 <p>Serial controller drivers set the SERIAL_BAUD_USER flag bit in the <b>SettableBaud</b> bitmask value to indicate that they support higher baud rates than those that can be expressed by the other SERIAL_BAUD_<i>XXX</i> flag bits. For example, a driver that supports baud rates of 57600, 115200, 230400, and 460800 bps sets <b>SettableBaud</b> = (SERIAL_BAUD_57600 |  SERIAL_BAUD_115200 |  SERIAL_BAUD_USER).</p>
 </dd>
 
-### -field <b>SettableData</b>
+### -field SettableData
 
 <dd>
 <p>The number of data bits that can be set. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.</p>
@@ -404,7 +404,7 @@ typedef struct _SERIAL_COMMPROP {
 <p> </p>
 </dd>
 
-### -field <b>SettableStopParity</b>
+### -field SettableStopParity
 
 <dd>
 <p>The stop-bit and parity settings that can be selected. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.</p>
@@ -449,14 +449,14 @@ typedef struct _SERIAL_COMMPROP {
 <p> </p>
 </dd>
 
-### -field <b>CurrentTxQueue</b>
+### -field CurrentTxQueue
 
 <dd>
 <p>Transmit queue size. This member specifies the size, in bytes, of the serial controller driver's internal output buffer. A value of zero indicates that the buffer size is unavailable.</p>
 <p>For SerCx2 and SerCx, the associated serial controller driver typically sets this member to zero. Serial.sys sets this member to a nonzero value that indicates the output buffer size.</p>
 </dd>
 
-### -field <b>CurrentRxQueue</b>
+### -field CurrentRxQueue
 
 <dd>
 <p>Receive queue size. This member specifies the size, in bytes, of the serial controller driver's internal input buffer. A value of zero indicates that the buffer size is unavailable.</p>
@@ -464,19 +464,19 @@ typedef struct _SERIAL_COMMPROP {
 <p>Serial.sys sets this member to a nonzero value that indicates the input buffer size.</p>
 </dd>
 
-### -field <b>ProvSpec1</b>
+### -field ProvSpec1
 
 <dd>
 <p>Provider-specific data. Applications should ignore this member unless provider-specific data about the data format required by the serial port is available.</p>
 </dd>
 
-### -field <b>ProvSpec2</b>
+### -field ProvSpec2
 
 <dd>
 <p>Provider-specific data. Applications should ignore this member unless provider-specific data about the data format required by the serial port is available.</p>
 </dd>
 
-### -field <b>ProvChar</b>
+### -field ProvChar
 
 <dd>
 <p>Provider-specific data. Applications should ignore this member unless provider-specific data about the data format required by the serial port is available. This member is the first element in a wide-character array of one or more elements. Any additional elements immediately follow this member. The <b>PacketLength</b> member specifies the size of the <b>SERIAL_COMMPROP</b> structure plus any additional <b>ProvChar</b> array elements that follow this structure.</p>

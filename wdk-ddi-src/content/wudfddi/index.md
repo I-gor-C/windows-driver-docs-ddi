@@ -75,7 +75,9 @@ Wudfddi.h contain these programming interfaces:
 | [IWDFDevice3::CreateWorkItem method](nf-wudfddi-iwdfdevice3-createworkitem.md) | The CreateWorkItem method creates a framework work-item object, which can subsequently be added to the framework’s work-item queue. |
 | [IWDFDevice3::GetHardwareRegisterMappedAddress method](nf-wudfddi-iwdfdevice3-gethardwareregistermappedaddress.md) | A driver calls GetHardwareRegisterMappedAddress to get the user-mode mapped address of the memory resource it earlier mapped using MapIoSpace. |
 | [IWDFDevice3::MapIoSpace method](nf-wudfddi-iwdfdevice3-mapiospace.md) | The MapIoSpace method maps the given physical address range to system address space and returns a pseudo base address. |
+| [IWDFDevice3::ReadFromHardware method](nf-wudfddi-iwdfdevice3-readfromhardware.md) | The ReadFromHardware method is used internally by the framework. Do not use. |
 | [IWDFDevice3::UnmapIoSpace method](nf-wudfddi-iwdfdevice3-unmapiospace.md) | The UnmapIoSpace method unmaps a specified range of physical addresses previously mapped by MapIoSpace method. |
+| [IWDFDevice3::WriteToHardware method](nf-wudfddi-iwdfdevice3-writetohardware.md) | The WriteToHardware method is used internally by the framework. Do not use. |
 | [IWDFDevice::AssignDeviceInterfaceState method](nf-wudfddi-iwdfdevice-assigndeviceinterfacestate.md) | The AssignDeviceInterfaceState method enables or disables the specified device interface instance for a device. |
 | [IWDFDevice::CommitPnpState method](nf-wudfddi-iwdfdevice-commitpnpstate.md) | The CommitPnpState method commits the state of the Plug and Play (PnP) property (that is, turns on, turns off, or sets to the default state) that the IWDFDevice |
 | [IWDFDevice::ConfigureRequestDispatching method](nf-wudfddi-iwdfdevice-configurerequestdispatching.md) | The ConfigureRequestDispatching method configures the queuing of I/O requests of the specified type to the specified I/O queue. |

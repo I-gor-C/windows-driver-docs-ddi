@@ -58,19 +58,19 @@ NTSTATUS CmRegisterCallback(
 ## -parameters
 <dl>
 
-### -param <i>Function</i> [in]
+### -param Function [in]
 
 <dd>
 <p>A pointer to the <a href="kernel.registrycallback">RegistryCallback</a> routine to register.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>A driver-defined value that the configuration manager will pass as the <i>CallbackContext</i> parameter to the <i>RegistryCallback</i> routine</p>
 </dd>
 
-### -param <i>Cookie</i> [out]
+### -param Cookie [out]
 
 <dd>
 <p>A pointer to a LARGE_INTEGER variable that receives the value that identifies the callback routine. When you unregister the callback routine, pass this value as the <i>Cookie</i> parameter to <a href="..\wdm\nf-wdm-cmunregistercallback.md">CmUnRegisterCallback</a>. </p>

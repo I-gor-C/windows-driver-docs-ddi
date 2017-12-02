@@ -7,7 +7,7 @@ old-location: netvista\wwan_ussd_session_state.htm
 old-project: netvista
 ms.assetid: 5111A10F-F66F-4667-A77E-63691CCD282D
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ typedef enum _WWAN_USSD_SESSION_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanUssdSessionStateNew"></a><a id="wwanussdsessionstatenew"></a><a id="WWANUSSDSESSIONSTATENEW"></a><b>WwanUssdSessionStateNew</b>
+### -field WwanUssdSessionStateNew
 
 <dd>
 <p>The USSD string is the first message of a USSD session.</p>
 </dd>
 
-### -field <a id="WwanUssdSessionStateExisting"></a><a id="wwanussdsessionstateexisting"></a><a id="WWANUSSDSESSIONSTATEEXISTING"></a><b>WwanUssdSessionStateExisting</b>
+### -field WwanUssdSessionStateExisting
 
 <dd>
 <p>The USSD string is not the first message of a USSD session.</p>

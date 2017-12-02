@@ -2,12 +2,12 @@
 UID: NS.61883._CMP_MONITOR_PLUGS
 title: CMP_MONITOR_PLUGS
 author: windows-driver-content
-description: This structure is used to monitor plug access.
+description: This structure is used to monitor plug access. The request allows a driver to monitor all access to local oPCR and iPCR plugs.
 old-location: ieee\cmp_monitor_plugs.htm
 old-project: IEEE
 ms.assetid: D281BCBB-CDC6-442C-9A47-DF07D1BE1B28
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: CMP_MONITOR_PLUGS, CMP_MONITOR_PLUGS, *PCMP_MONITOR_PLUGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,7 +38,7 @@ req.irql:
 
 
 ## -description
-<p>This structure is used to monitor plug access.</p>
+<p>This structure is used to monitor plug access. The request allows a driver to monitor all access to local oPCR and iPCR plugs.</p>
 
 
 ## -syntax
@@ -55,16 +55,16 @@ typedef struct _CMP_MONITOR_PLUGS {
 ## -struct-fields
 <dl>
 
-### -field <b><b>Flags</b></b>
+### -field Flags
 
 <dd>
-<p>The caller sets this member to REGISTER_MONITOR_PLUG_NOTIFY to register to monitor all local plug access. This member can also be set to DEREGISTER_MONITOR_PLUG_NOTIFY to stop monitoring local plug access.</p>
+<p>On input, the caller sets this member to REGISTER_MONITOR_PLUG_NOTIFY to register to monitor all local plug access. This member can also be set to DEREGISTER_MONITOR_PLUG_NOTIFY to stop monitoring local plug access.</p>
 </dd>
 
-### -field <b><b>pfnNotify</b></b>
+### -field pfnNotify
 
 <dd>
-<p>Pointer to a caller-supplied function to be called by the protocol driver when a local plug is accessed. </p>
+<p>On input, aointer to a caller-supplied function to be called by the protocol driver when a local plug is accessed. </p>
 <p>This function uses the following prototype: </p>
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -82,23 +82,25 @@ typedef struct _CMP_MONITOR_PLUGS {
 <p></p>
 <dl>
 
-### -field <a id="MonitorInfo"></a><a id="monitorinfo"></a><a id="MONITORINFO"></a><i>MonitorInfo</i>
+### -field MonitorInfo
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537050">CMP_MONITOR_INFO</a> structure containing the contents of the plug that was modified. </p>
+<p>On input, a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537050">CMP_MONITOR_INFO</a> structure containing the contents of the plug that was modified. </p>
 </dd>
 </dl>
 </dd>
 
-### -field <b><b>Context</b></b>
+### -field Context
 
 <dd>
-<p>Pointer to a caller-defined context for the function at <b>pfnNotify</b>.</p>
+<p>On input, a pointer to a caller-defined context for the function at <b>pfnNotify</b>.</p>
 </dd>
 </dl>
 
 ## -remarks
+<p>If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. </p>
 
+<p>If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INVALID_PARAMETER.</p>
 
 ## -requirements
 <table>
@@ -122,4 +124,4 @@ typedef struct _CMP_MONITOR_PLUGS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CMP_MONITOR_PLUGS structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CMP_MONITOR_PLUGS structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

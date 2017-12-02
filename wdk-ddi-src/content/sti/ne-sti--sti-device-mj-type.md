@@ -7,7 +7,7 @@ old-location: image\sti_device_type.htm
 old-project: image
 ms.assetid: f5ab3aa3-c24e-4716-b94a-525c6b6776dc
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: STORAGE_REQUEST_BLOCK, STORAGE_REQUEST_BLOCK, *PSTORAGE_REQUEST_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ typedef enum _STI_DEVICE_MJ_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="StiDeviceTypeDefault"></a><a id="stidevicetypedefault"></a><a id="STIDEVICETYPEDEFAULT"></a><b>StiDeviceTypeDefault</b>
+### -field StiDeviceTypeDefault
 
 <dd>
 <p>Default type.</p>
 </dd>
 
-### -field <a id="StiDeviceTypeScanner"></a><a id="stidevicetypescanner"></a><a id="STIDEVICETYPESCANNER"></a><b>StiDeviceTypeScanner</b>
+### -field StiDeviceTypeScanner
 
 <dd>
 <p>Scanner.</p>
 </dd>
 
-### -field <a id="StiDeviceTypeDigitalCamera"></a><a id="stidevicetypedigitalcamera"></a><a id="STIDEVICETYPEDIGITALCAMERA"></a><b>StiDeviceTypeDigitalCamera</b>
+### -field StiDeviceTypeDigitalCamera
 
 <dd>
 <p>Digital camera.</p>
 </dd>
 
-### -field <a id="StiDeviceTypeStreamingVideo"></a><a id="stidevicetypestreamingvideo"></a><a id="STIDEVICETYPESTREAMINGVIDEO"></a><b>StiDeviceTypeStreamingVideo</b>
+### -field StiDeviceTypeStreamingVideo
 
 <dd>
 <p>Streaming video.</p>

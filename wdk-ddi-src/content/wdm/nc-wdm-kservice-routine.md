@@ -59,13 +59,13 @@ BOOLEAN InterruptService(
 ## -parameters
 <dl>
 
-### -param <i>Interrupt</i> [in]
+### -param Interrupt [in]
 
 <dd>
 <p>Caller-supplied pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a> structure for the interrupt.</p>
 </dd>
 
-### -param <i>ServiceContext</i> [in]
+### -param ServiceContext [in]
 
 <dd>
 <p>Caller-supplied pointer to context information, specified in a previous call to <a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a> or <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>.</p>
@@ -86,7 +86,7 @@ BOOLEAN InterruptService(
 
 <p>For more information about implementing ISRs, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547974">Interrupt Service Routines</a>.</p>
 
-<p>To define an <i>InterruptService</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
+<p>To define an <i>InterruptService</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define an <i>InterruptService</i> callback routine that is named <code>MyInterruptService</code>, use the KSERVICE_ROUTINE type as shown in this code example:</p>
 

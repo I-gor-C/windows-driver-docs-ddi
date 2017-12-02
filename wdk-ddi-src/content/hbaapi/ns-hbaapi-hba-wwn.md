@@ -54,7 +54,7 @@ typedef struct HBA_wwn {
 ## -struct-fields
 <dl>
 
-### -field <b>wwn</b>
+### -field wwn
 
 <dd>
 <p>Contains a 64 bit world-wide name (WWN) that uniquely identifies an HBA. .</p>

@@ -61,25 +61,25 @@ PVOID APIENTRY AgpCommitVirtual(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the device extension of the miniport driver'.</p>
 </dd>
 
-### -param <i>VirtualReserveContext</i> [in]
+### -param VirtualReserveContext [in]
 
 <dd>
 <p>Identifies a reserved virtual address range. The context handle was obtained from <a href="..\videoagp\nc-videoagp-pagp-reserve-virtual.md">AgpReserveVirtual</a>.</p>
 </dd>
 
-### -param <i>Pages</i> [in]
+### -param Pages [in]
 
 <dd>
 <p>Specifies the number of pages of virtual memory to map.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the page offset at which to commit the pages. The offset is applied to the reserved virtual address range that is identified by <b>VirtualReserveContext</b>.</p>

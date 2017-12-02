@@ -7,7 +7,7 @@ old-location: ifsk\fltcreatecommunicationport.htm
 old-project: ifsk
 ms.assetid: 9987ed6b-7792-4035-9640-9ee9595e854a
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltCreateCommunicationPort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,19 +61,19 @@ NTSTATUS FltCreateCommunicationPort(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>Opaque filter pointer for the caller. </p>
 </dd>
 
-### -param <i>ServerPort</i> [out]
+### -param ServerPort [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives an opaque port handle for the communication server port. The minifilter driver uses this handle to listen for incoming connection requests from a user-mode application. </p>
 </dd>
 
-### -param <i>ObjectAttributes</i> [in]
+### -param ObjectAttributes [in]
 
 <dd>
 <p>Pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the attributes of the communication server port. This structure must have been initialized by a previous call to <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>. This parameter is required and cannot be <b>NULL</b>. Members of this structure for a communication port object include the following. </p>
@@ -119,13 +119,13 @@ NTSTATUS FltCreateCommunicationPort(
 <p> </p>
 </dd>
 
-### -param <i>ServerPortCookie</i> [in, optional]
+### -param ServerPortCookie [in, optional]
 
 <dd>
 <p>Pointer to context information defined by the minifilter driver. This information can be used to distinguish among multiple communication server ports that are created by the same minifilter driver. The Filter Manager passes this context pointer as a parameter to the <i>ConnectNotifyCallback</i> routine. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>ConnectNotifyCallback</i> [in]
+### -param ConnectNotifyCallback [in]
 
 <dd>
 <p>Pointer to a caller-supplied callback routine. The Filter Manager calls this routine whenever a user-mode application calls <a href="ifsk.filterconnectcommunicationport">FilterConnectCommunicationPort</a> to send a connection request to the minifilter driver. This parameter is required and cannot be <b>NULL</b>. This routine is called at IRQL = PASSIVE_LEVEL. </p>
@@ -150,7 +150,7 @@ NTSTATUS FltCreateCommunicationPort(
 <p></p>
 <dl>
 
-### -param <a id="ClientPort"></a><a id="clientport"></a><a id="CLIENTPORT"></a><i>ClientPort</i>
+### -param ClientPort
 
 <dd>
 <p>Opaque handle for the new client port that is established between the user-mode application and the kernel-mode minifilter driver. </p>
@@ -158,25 +158,25 @@ NTSTATUS FltCreateCommunicationPort(
 <p>The minifilter driver must eventually close this client port. The client port is closed by calling <a href="..\fltkernel\nf-fltkernel-fltcloseclientport.md">FltCloseClientPort</a>, usually from the minifilter driver's <i>DisconnectNotifyCallback</i> routine. </p>
 </dd>
 
-### -param <a id="ServerPortCookie"></a><a id="serverportcookie"></a><a id="SERVERPORTCOOKIE"></a><i>ServerPortCookie</i>
+### -param ServerPortCookie
 
 <dd>
 <p>Pointer to context information defined by the minifilter driver. This information can be used to distinguish among multiple communication server ports that are created by the same minifilter driver. When the server port was created, the minifilter driver passed this context pointer as a parameter to <b>FltCreateCommunicationPort</b>. </p>
 </dd>
 
-### -param <a id="ConnectionContext"></a><a id="connectioncontext"></a><a id="CONNECTIONCONTEXT"></a><i>ConnectionContext</i>
+### -param ConnectionContext
 
 <dd>
 <p>Context information pointer that the user-mode application passed in the <i>lpContext</i> parameter to <b>FilterConnectCommunicationPort</b>. </p>
 </dd>
 
-### -param <a id="SizeOfContext"></a><a id="sizeofcontext"></a><a id="SIZEOFCONTEXT"></a><i>SizeOfContext</i>
+### -param SizeOfContext
 
 <dd>
 <p>Size, in bytes, of the buffer that <i>ConnectionContext </i>points to. </p>
 </dd>
 
-### -param <a id="ConnectionPortCookie"></a><a id="connectionportcookie"></a><a id="CONNECTIONPORTCOOKIE"></a><i>ConnectionPortCookie</i>
+### -param ConnectionPortCookie
 
 <dd>
 <p>Pointer to information that uniquely identifies this client port. This information is defined by the minifilter driver. The Filter Manager passes this context pointer as a parameter to the minifilter driver's <i>DisconnectNotifyCallback</i> and <i>MessageNotifyCallback</i> routines. </p>
@@ -184,7 +184,7 @@ NTSTATUS FltCreateCommunicationPort(
 </dl>
 </dd>
 
-### -param <i>DisconnectNotifyCallback</i> [in]
+### -param DisconnectNotifyCallback [in]
 
 <dd>
 <p>Pointer to a caller-supplied callback routine to be called whenever the user-mode handle count for the client port reaches zero or when the minifilter driver is about to be unloaded. This parameter is required and cannot be <b>NULL</b>. This routine is called at IRQL = PASSIVE_LEVEL. </p>
@@ -205,7 +205,7 @@ NTSTATUS FltCreateCommunicationPort(
 <p></p>
 <dl>
 
-### -param <a id="ConnectionCookie"></a><a id="connectioncookie"></a><a id="CONNECTIONCOOKIE"></a><i>ConnectionCookie</i>
+### -param ConnectionCookie
 
 <dd>
 <p>Pointer to information that uniquely identifies this client port. This information is defined by the minifilter driver. When the client port was created, the minifilter driver returned this context pointer in the <i>ConnectionPortCookie</i> parameter of its <i>ConnectNotifyCallback</i> routine. </p>
@@ -213,7 +213,7 @@ NTSTATUS FltCreateCommunicationPort(
 </dl>
 </dd>
 
-### -param <i>MessageNotifyCallback</i> [in, optional]
+### -param MessageNotifyCallback [in, optional]
 
 <dd>
 <p>Pointer to a caller-supplied callback routine. The Filter Manager calls this routine, at IRQL = PASSIVE_LEVEL, whenever a user-mode application calls <a href="ifsk.filtersendmessage">FilterSendMessage</a> to send a message to the minifilter driver through the client port. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, any request made from user mode to send data to the port will receive an error. </p>
@@ -239,13 +239,13 @@ NTSTATUS FltCreateCommunicationPort(
 <p></p>
 <dl>
 
-### -param <a id="PortCookie"></a><a id="portcookie"></a><a id="PORTCOOKIE"></a><i>PortCookie</i>
+### -param PortCookie
 
 <dd>
 <p>Pointer to information that uniquely identifies this client port. This information is defined by the minifilter driver. When the client port was created, the minifilter driver returned this context pointer in the <i>ConnectionPortCookie</i> parameter of its <i>ConnectNotifyCallback</i> routine. </p>
 </dd>
 
-### -param <a id="InputBuffer"></a><a id="inputbuffer"></a><a id="INPUTBUFFER"></a><i>InputBuffer</i>
+### -param InputBuffer
 
 <dd>
 <p>Pointer to a caller-allocated buffer containing the message to be sent to the minifilter driver. </p>
@@ -254,13 +254,13 @@ NTSTATUS FltCreateCommunicationPort(
 <p>This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <a id="InputBufferLength"></a><a id="inputbufferlength"></a><a id="INPUTBUFFERLENGTH"></a><i>InputBufferLength</i>
+### -param InputBufferLength
 
 <dd>
 <p>Size, in bytes, of the buffer that <i>InputBuffer </i>points to. This parameter is ignored if <i>InputBuffer</i> is <b>NULL</b>. </p>
 </dd>
 
-### -param <a id="OutputBuffer"></a><a id="outputbuffer"></a><a id="OUTPUTBUFFER"></a><i>OutputBuffer</i>
+### -param OutputBuffer
 
 <dd>
 <p>Pointer to a caller-allocated buffer that receives the reply (if any) from the minifilter driver. </p>
@@ -269,13 +269,13 @@ NTSTATUS FltCreateCommunicationPort(
 <p>This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <a id="OutputBufferLength"></a><a id="outputbufferlength"></a><a id="OUTPUTBUFFERLENGTH"></a><i>OutputBufferLength</i>
+### -param OutputBufferLength
 
 <dd>
 <p>Size, in bytes, of the buffer that <i>OutputBuffer </i>points to. This parameter is ignored if <i>OutputBuffer</i> is <b>NULL</b>. </p>
 </dd>
 
-### -param <a id="ReturnOutputBufferLength"></a><a id="returnoutputbufferlength"></a><a id="RETURNOUTPUTBUFFERLENGTH"></a><i>ReturnOutputBufferLength</i>
+### -param ReturnOutputBufferLength
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the number of bytes returned in the buffer that <i>OutputBuffer</i> points to. </p>
@@ -283,7 +283,7 @@ NTSTATUS FltCreateCommunicationPort(
 </dl>
 </dd>
 
-### -param <i>MaxConnections</i> [in]
+### -param MaxConnections [in]
 
 <dd>
 <p>Maximum number of simultaneous client connections to be allowed for this server port. This parameter is required and must be greater than zero. </p>
@@ -412,4 +412,4 @@ NTSTATUS FltCreateCommunicationPort(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateCommunicationPort function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateCommunicationPort function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

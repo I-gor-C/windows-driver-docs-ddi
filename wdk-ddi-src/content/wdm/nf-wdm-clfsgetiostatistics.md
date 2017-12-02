@@ -59,31 +59,31 @@ NTSTATUS ClfsGetIoStatistics(
 ## -parameters
 <dl>
 
-### -param <i>plfoLog</i> [in]
+### -param plfoLog [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents a CLFS stream. The I/O statistics will be collected for the stream's underlying log on stable storage. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>.</p>
 </dd>
 
-### -param <i>pvStatsBuffer</i> [in, out]
+### -param pvStatsBuffer [in, out]
 
 <dd>
 <p>A pointer to a <a href="kernel.clfs_io_statistics">CLFS_IO_STATISTICS</a> structure that receives the I/O statistics data.</p>
 </dd>
 
-### -param <i>cbStatsBuffer</i> [in]
+### -param cbStatsBuffer [in]
 
 <dd>
 <p>The size, in bytes, of the buffer pointed to by <i>pvStatsBuffer</i>. This parameter must be at least <b>sizeof</b>(<a href="kernel.clfs_io_statistics_header">CLFS_IO_STATISTICS_HEADER</a>). If this parameter is less than <b>sizeof</b>(<b>CLFS_IO_STATISTICS</b>), <i>pvStatsBuffer</i> will receive only a portion of the available I/O statistics.</p>
 </dd>
 
-### -param <i>eStatsClass</i> [in]
+### -param eStatsClass [in]
 
 <dd>
 <p>This parameter is reserved for future use.</p>
 </dd>
 
-### -param <i>pcbStatsWritten</i> [out, optional]
+### -param pcbStatsWritten [out, optional]
 
 <dd>
 <p>A pointer to a ULONG-typed variable that receives the number of bytes actually written to <i>pvStatsBuffer</i>. This parameter can be <b>NULL</b>.</p>

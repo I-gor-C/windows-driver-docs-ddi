@@ -60,26 +60,26 @@ typedef struct _PTS_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Controls how the remaining members of this structure are calculated. This member can have one of the following values:</p>
 <p></p>
 <dl>
 
-### -field <a id="PTS_TYPE_DEFAULT"></a><a id="pts_type_default"></a>PTS_TYPE_DEFAULT
+### -field PTS_TYPE_DEFAULT
 
 <dd>
 <p>Calculates standard parameters for PTS.</p>
 </dd>
 
-### -field <a id="PTS_TYPE_OPTIMAL"></a><a id="pts_type_optimal"></a>PTS_TYPE_OPTIMAL
+### -field PTS_TYPE_OPTIMAL
 
 <dd>
 <p>Calculates the best possible parameters for PTS.</p>
 </dd>
 
-### -field <a id="PTS_TYPE_USER"></a><a id="pts_type_user"></a>PTS_TYPE_USER
+### -field PTS_TYPE_USER
 
 <dd>
 <p>Calculates user-defined parameters for PTS.</p>
@@ -88,31 +88,31 @@ typedef struct _PTS_DATA {
 </dl>
 </dd>
 
-### -field <b>Fl</b>
+### -field Fl
 
 <dd>
 <p>The Fl value to use as part of PTS1 for the PTS request.</p>
 </dd>
 
-### -field <b>Dl</b>
+### -field Dl
 
 <dd>
 <p>The Dl value to use as part of PTS1 for the PTS request.</p>
 </dd>
 
-### -field <b>CLKFrequency</b>
+### -field CLKFrequency
 
 <dd>
 <p>Contains the clock frequency. Some smart card readers must be programmed by using the new clock frequency to use after the PTS request.</p>
 </dd>
 
-### -field <b>DataRate</b>
+### -field DataRate
 
 <dd>
 <p>Contains the new data rate. Some smart card readers (for example, serial readers) must be set to the new data rate to use after a PTS request.</p>
 </dd>
 
-### -field <b>StopBits</b>
+### -field StopBits
 
 <dd>
 <p>Contains the number of stop bits to use with the inserted card.</p>

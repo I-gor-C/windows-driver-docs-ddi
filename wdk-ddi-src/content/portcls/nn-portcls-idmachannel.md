@@ -49,9 +49,9 @@ req.iface:
 <p>
 <a href="audio.iportwavecyclic_newslavedmachannel">IPortWaveCyclic::NewSlaveDmaChannel</a>
 </p>
-<p>A miniport driver can also implement its own <code>IDmaChannel</code> interface if it requires capabilities that are not in the port driver's default implementation. For more information about this, see <a href="NULL">Wave Filters</a>. When the port driver calls the miniport driver's <b>NewStream</b> method (for example, <a href="audio.iminiportwavecyclic_newstream">IMiniportWaveCyclic::NewStream</a>), the method outputs the miniport driver's <code>IDmaChannel</code> object to the port driver. <code>IDmaChannel</code> inherits from the <b>IUnknown</b> interface.</p>
+<p>A miniport driver can also implement its own <code>IDmaChannel</code> interface if it requires capabilities that are not in the port driver's default implementation. For more information about this, see <a href="https://msdn.microsoft.com/9e364c8f-55c3-4ec9-a9ce-9ee0f6a0746b">Wave Filters</a>. When the port driver calls the miniport driver's <b>NewStream</b> method (for example, <a href="audio.iminiportwavecyclic_newstream">IMiniportWaveCyclic::NewStream</a>), the method outputs the miniport driver's <code>IDmaChannel</code> object to the port driver. <code>IDmaChannel</code> inherits from the <b>IUnknown</b> interface.</p>
 <p>The current implementation of the <code>IDmaChannel</code> interface in Portcls.sys is not multithread-safe because it does not internally synchronize access to shared data. Typically, a single driver thread calls the methods of an <code>IDmaChannel</code> object. In this case, there is no risk of two method calls simultaneously accessing the same data. However, if multiple threads can potentially call the methods of an <code>IDmaChannel</code> object at the same time, the driver writer must synchronize the method calls to prevent internal data corruption.</p>
-<p>For more information, see <a href="NULL">DMA Channel Objects</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2064bbdf-62b7-454f-8764-b2aa21636c02">DMA Channel Objects</a>.</p>
 
 
 ## -inheritance

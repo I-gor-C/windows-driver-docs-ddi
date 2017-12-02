@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_feature_status_parameters.htm
 old-project: netvista
 ms.assetid: 6d365e49-49ff-4b00-8cce-cf0c25cc2491
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_SWITCH_FEATURE_STATUS_PARAMETERS, NDIS_SWITCH_FEATURE_STATUS_PARAMETERS, *PNDIS_SWITCH_FEATURE_STATUS_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ typedef struct _NDIS_SWITCH_FEATURE_STATUS_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_SWITCH_FEATURE_STATUS_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -75,7 +75,7 @@ typedef struct _NDIS_SWITCH_FEATURE_STATUS_PARAMETERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_SWITCH_FEATURE_STATUS_PARAMETERS_REVISION_1"></a><a id="ndis_switch_feature_status_parameters_revision_1"></a>NDIS_SWITCH_FEATURE_STATUS_PARAMETERS_REVISION_1
+### -field NDIS_SWITCH_FEATURE_STATUS_PARAMETERS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30 and later.</p>
@@ -84,13 +84,13 @@ typedef struct _NDIS_SWITCH_FEATURE_STATUS_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>FeatureStatusType</b>
+### -field FeatureStatusType
 
 <dd>
 <p>An <a href="..\ntddndis\ne-ntddndis--ndis-switch-feature-status-type.md">NDIS_SWITCH_FEATURE_STATUS_TYPE</a> enumeration value that specifies the type of the feature status information for the extensible switch.</p>
@@ -98,15 +98,15 @@ typedef struct _NDIS_SWITCH_FEATURE_STATUS_PARAMETERS {
 <div> </div>
 </dd>
 
-### -field <b>FeatureStatusId</b>
+### -field FeatureStatusId
 
 <dd>
 <p>A GUID value that identifies the feature status information for the extensible switch.
 
-This  value is defined in the managed object format (MOF) class definition for the feature status information. For more information, see <a href="NULL">Custom Switch Property Definition and Registration</a>.</p>
+This  value is defined in the managed object format (MOF) class definition for the feature status information. For more information, see <a href="netvista.custom_switch_property_definition_and_registration">Custom Switch Property Definition and Registration</a>.</p>
 </dd>
 
-### -field <b>FeatureStatusInstanceId</b>
+### -field FeatureStatusInstanceId
 
 <dd>
 <p>An NDIS_SWITCH_OBJECT_INSTANCE_ID value that identifies the instance of the  feature status information for the extensible switch.
@@ -114,13 +114,13 @@ This  value is defined in the managed object format (MOF) class definition for t
 </p>
 </dd>
 
-### -field <b>FeatureStatusVersion</b>
+### -field FeatureStatusVersion
 
 <dd>
 <p>An NDIS_SWITCH_OBJECT_VERSION value that identifies the version of the feature status information for the extensible switch. This value is defined in the MOF class definition for the feature status information.</p>
 </dd>
 
-### -field <b>SerializationVersion</b>
+### -field SerializationVersion
 
 <dd>
 <p>An NDIS_SWITCH_OBJECT_SERIALIZATION_VERSION value that identifies the format version of the serialized status information for the feature status information. This data is serialized for access by the extension from the MOF file that defined the property.</p>
@@ -128,14 +128,14 @@ This  value is defined in the managed object format (MOF) class definition for t
 <div> </div>
 </dd>
 
-### -field <b>FeatureStatusBufferOffset</b>
+### -field FeatureStatusBufferOffset
 
 <dd>
 <p>A ULONG value that specifies the offset, in bytes, to the feature status buffer  that follows the <b>NDIS_SWITCH_FEATURE_STATUS_PARAMETERS</b> structure. The status buffer contains an <a href="..\ntddndis\ns-ntddndis--ndis-switch-feature-status-custom.md">NDIS_SWITCH_FEATURE_STATUS_CUSTOM</a> structure. </p>
 <p>The offset is measured from the start of the <b>NDIS_SWITCH_FEATURE_STATUS_PARAMETERS</b> structure up to the beginning of the <a href="..\ntddndis\ns-ntddndis--ndis-switch-feature-status-custom.md">NDIS_SWITCH_FEATURE_STATUS_CUSTOM</a> structure. </p>
 </dd>
 
-### -field <b>FeatureStatusBufferLength</b>
+### -field FeatureStatusBufferLength
 
 <dd>
 <p>A ULONG value that specifies the size, in bytes, of the feature status buffer.</p>
@@ -189,4 +189,4 @@ This  value is defined in the managed object format (MOF) class definition for t
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_FEATURE_STATUS_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_FEATURE_STATUS_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

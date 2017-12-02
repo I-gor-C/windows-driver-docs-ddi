@@ -7,7 +7,7 @@ old-location: netvista\ndisclnotifycloseaddressfamilycomplete.htm
 old-project: netvista
 ms.assetid: 5d2bbf08-ea5c-4dad-8c30-9a655d25222a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisClNotifyCloseAddressFamilyComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ VOID NdisClNotifyCloseAddressFamilyComplete(
 ## -parameters
 <dl>
 
-### -param <i>NdisAfHandle</i> [in]
+### -param NdisAfHandle [in]
 
 <dd>
 <p>An AF handle that NDIS supplied to the caller's 
@@ -67,7 +67,7 @@ VOID NdisClNotifyCloseAddressFamilyComplete(
      NdisClOpenAddressFamilyEx</a> function.</p>
 </dd>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>The completion status for close AF notification.
@@ -76,13 +76,13 @@ VOID NdisClNotifyCloseAddressFamilyComplete(
 <p></p>
 <dl>
 
-### -param <a id="NDIS_STATUS_SUCCESS"></a><a id="ndis_status_success"></a>NDIS_STATUS_SUCCESS
+### -param NDIS_STATUS_SUCCESS
 
 <dd>
 <p>The client successfully closed its address family.</p>
 </dd>
 
-### -param <a id="NDIS_STATUS_XXX"></a><a id="ndis_status_xxx"></a>NDIS_STATUS_<i>XXX</i>
+### -param NDIS_STATUS_XXX
 
 <dd>
 <p>The client failed the request for some driver-determined reason.</p>
@@ -180,4 +180,4 @@ VOID NdisClNotifyCloseAddressFamilyComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClNotifyCloseAddressFamilyComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClNotifyCloseAddressFamilyComplete function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

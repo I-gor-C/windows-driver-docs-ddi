@@ -62,42 +62,42 @@ typedef struct _BIDI_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>dwBidiType</b>
+### -field dwBidiType
 
 <dd>
 <p>Specifies the type of data in a bidi request as one of the values listed in the <a href="..\winspool\ne-winspool-bidi-type.md">BIDI_TYPE</a> enumeration. The value of this member determines which one of the following five union members is valid.</p>
 </dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <dl>
 
-### -field <b>bData</b>
+### -field bData
 
 <dd>
 <p>Specifies the Boolean value. This member is valid only if the value of <b>dwBidiType</b> is BIDI_BOOL, one of the BIDI_TYPE enumerators.</p>
 </dd>
 
-### -field <b>iData</b>
+### -field iData
 
 <dd>
 <p>Specifies the integer value. This member is valid only if the value of <b>dwBidiType</b> is BIDI_INT, one of the BIDI_TYPE enumerators.</p>
 </dd>
 
-### -field <b>sData</b>
+### -field sData
 
 <dd>
 <p>Pointer to a memory location at which the first byte of the string is stored. This member is valid only if the value of <b>dwBidiType</b> is BIDI_STRING or BIDI_TEXT, two of the BIDI_TYPE enumerators.</p>
 </dd>
 
-### -field <b>fData</b>
+### -field fData
 
 <dd>
 <p>Specifies the floating-point value. This member is valid only if the value of <b>dwBidiType</b> is BIDI_FLOAT, one of the BIDI_TYPE enumerators.</p>
 </dd>
 
-### -field <b>biData</b>
+### -field biData
 
 <dd>
 <p>Specifies a <a href="..\winspool\ns-winspool--binary-container.md">BINARY_CONTAINER</a> structure that holds the binary data. This member is valid only if the value of <b>dwBidiType</b> is BIDI_BLOB, one of the BIDI_TYPE enumerators.</p>

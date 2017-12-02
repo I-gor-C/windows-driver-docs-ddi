@@ -57,25 +57,25 @@ typedef struct _HIDD_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size, in bytes, of a HIDD_ATTRIBUTES structure.</p>
 </dd>
 
-### -field <b>VendorID</b>
+### -field VendorID
 
 <dd>
 <p>Specifies a HID device's vendor ID.</p>
 </dd>
 
-### -field <b>ProductID</b>
+### -field ProductID
 
 <dd>
 <p>Specifies a HID device's product ID.</p>
 </dd>
 
-### -field <b>VersionNumber</b>
+### -field VersionNumber
 
 <dd>
 <p>Specifies the manufacturer's revision number for a HIDClass device.</p>

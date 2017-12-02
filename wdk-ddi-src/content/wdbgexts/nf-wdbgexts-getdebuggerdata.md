@@ -7,13 +7,13 @@ old-location: debugger\getdebuggerdata.htm
 old-project: debugger
 ms.assetid: a07afa2e-1f7d-4685-9ede-8b7805dd6583
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: GetDebuggerData
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Wdbgexts.h, Dbgeng.h
+req.include-header: Wdbgexts.h, Dbgeng.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -57,19 +57,19 @@ ULONG GetDebuggerData(
 ## -parameters
 <dl>
 
-### -param <i>Tag</i> 
+### -param Tag 
 
 <dd>
 <p>This should be set equal to KDBG_TAG. (This value is specified in wdbgexts.h.)</p>
 </dd>
 
-### -param <i>Buf</i> 
+### -param Buf 
 
 <dd>
 <p>Points to the debugger data block.</p>
 </dd>
 
-### -param <i>Size</i> 
+### -param Size 
 
 <dd>
 <p>Specifies the size of the data block, including the header.</p>
@@ -100,7 +100,7 @@ ULONG GetDebuggerData(
 </th>
 <td width="70%">
 <dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Wdbgexts.h, or Dbgeng.h)</dt>
+<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
 </dl>
 </td>
 </tr>

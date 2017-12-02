@@ -59,7 +59,7 @@ ULONG KdPrintEx(
 ## -parameters
 <dl>
 
-### -param <i>ComponentId</i> [in]
+### -param ComponentId [in]
 
 <dd>
 <p>Specifies the component calling this routine. This must be one of the component name filter IDs defined in the dpfilter.h header file. To avoid mixing your driver's output with the output of Windows components, you should use only the following values for <i>ComponentId</i>:</p>
@@ -85,19 +85,19 @@ ULONG KdPrintEx(
 </ul>
 </dd>
 
-### -param <i>Level</i> [in]
+### -param Level [in]
 
 <dd>
-<p>Specifies the severity of this message. This can be any 32-bit integer. Values between 0 and 31 (inclusive) are treated differently than values between 32 and 0xFFFFFFFF. For details, see <a href="NULL">Reading and Filtering Debugging Messages</a>.</p>
+<p>Specifies the severity of this message. This can be any 32-bit integer. Values between 0 and 31 (inclusive) are treated differently than values between 32 and 0xFFFFFFFF. For details, see <a href="https://msdn.microsoft.com/2ad320f6-596d-4b4c-bfad-d570c856bcc7">Reading and Filtering Debugging Messages</a>.</p>
 </dd>
 
-### -param <i>Format</i> [in]
+### -param Format [in]
 
 <dd>
 <p>Specifies a pointer to the format string to print. The <i>Format</i> string supports most of the <b>printf</b>-style <a href="http://go.microsoft.com/fwlink/p/?linkid=83949">format specification fields</a>. However, the Unicode format codes (<b>%C</b>, <b>%S</b>, <b>%lc</b>, <b>%ls</b>, <b>%wc</b>, <b>%ws</b>, and <b>%wZ</b>) can only be used with IRQL = PASSIVE_LEVEL. The <b>KdPrintEx</b> routine does not support any of the floating point types (<b>%f</b>, <b>%e</b>, <b>%E</b>, <b>%g</b>, <b>%G</b>, <b>%a</b>, or <b>%A</b>).</p>
 </dd>
 
-### -param <i>arguments</i> 
+### -param arguments 
 
 <dd>
 <p>Specifies arguments for the format string, as in <b>printf</b>.</p>
@@ -108,11 +108,11 @@ ULONG KdPrintEx(
 <p>If successful, <b>KdPrintEx</b> returns the NTSTATUS code STATUS_SUCCESS; otherwise, it returns the appropriate error code.</p>
 
 ## -remarks
-<p><b>KdPrintEx</b> is identical to the <b>DbgPrintEx</b> routine in code that is compiled for a debug configuration. This routine has no effect in code that is compiled for a release build. Only kernel-mode drivers can call the <b>KdPrintEx</b> routine.<div class="alert"><b>Note</b>  The Windows Driver Kit (WDK) 8 and WDK 7 manage the <b>DBG</b> preprocessor constant define appropriately for debug (check) and release (free) builds. For more information, see <a href="NULL">Conditional Compilation and the Build Environment</a>.</div>
+<p><b>KdPrintEx</b> is identical to the <b>DbgPrintEx</b> routine in code that is compiled for a debug configuration. This routine has no effect in code that is compiled for a release build. Only kernel-mode drivers can call the <b>KdPrintEx</b> routine.<div class="alert"><b>Note</b>  The Windows Driver Kit (WDK) 8 and WDK 7 manage the <b>DBG</b> preprocessor constant define appropriately for debug (check) and release (free) builds. For more information, see <a href="https://msdn.microsoft.com/7879b6c6-4985-4817-a8bc-b287397df721">Conditional Compilation and the Build Environment</a>.</div>
 <div> </div>
 </p>
 
-<p><b>KdPrintEx</b> either passes the specified string to the kernel debugger or does nothing at all, depending on the values of <i>ComponentId</i>, <i>Level</i>, and the corresponding component filter masks. For details, see <a href="NULL">Reading and Filtering Debugging Messages</a>.</p>
+<p><b>KdPrintEx</b> either passes the specified string to the kernel debugger or does nothing at all, depending on the values of <i>ComponentId</i>, <i>Level</i>, and the corresponding component filter masks. For details, see <a href="https://msdn.microsoft.com/2ad320f6-596d-4b4c-bfad-d570c856bcc7">Reading and Filtering Debugging Messages</a>.</p>
 
 <p>Unless it is absolutely necessary, you should not obtain a string from user input or another process and pass it to <b>KdPrintEx</b>. If you do use a string that you did not create, you must verify that this is a valid format string, and that the format codes match the argument list in type and quantity. The best coding practice is for all <i>Format</i> strings to be static and defined at compile time.</p>
 

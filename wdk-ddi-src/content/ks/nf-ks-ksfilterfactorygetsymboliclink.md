@@ -54,7 +54,7 @@ PUNICODE_STRING KsFilterFactoryGetSymbolicLink(
 ## -parameters
 <dl>
 
-### -param <i>FilterFactory</i> [in]
+### -param FilterFactory [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> structure for which to acquire the symbolic link.</p>

@@ -54,7 +54,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTPresentMultiPlaneOverlay(
 ## -parameters
 <dl>
 
-### -param <i>pPresent</i> [in]
+### -param pPresent [in]
 
 <dd></dd>
 </dl>

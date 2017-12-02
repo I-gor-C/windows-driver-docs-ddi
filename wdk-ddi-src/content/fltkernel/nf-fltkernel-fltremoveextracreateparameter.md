@@ -7,7 +7,7 @@ old-location: ifsk\fltremoveextracreateparameter.htm
 old-project: ifsk
 ms.assetid: 924e9108-f0cf-4202-905c-04a27c15dfa3
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltRemoveExtraCreateParameter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ NTSTATUS FltRemoveExtraCreateParameter(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>Opaque filter pointer for the minifilter driver. This pointer uniquely identifies the minifilter driver and remains constant as long as the minifilter driver is loaded.</p>
 </dd>
 
-### -param <i>EcpList</i> [in, out]
+### -param EcpList [in, out]
 
 <dd>
 <p>Pointer to the extra create parameter (ECP) list that contains the ECP context structure to be detached from the given list.</p>
 </dd>
 
-### -param <i>EcpType</i> [in]
+### -param EcpType [in]
 
 <dd>
 <p>Pointer to a user-defined GUID that uniquely identifies the ECP context structure to be detached from the list.</p>
 </dd>
 
-### -param <i>EcpContext</i> [out]
+### -param EcpContext [out]
 
 <dd>
 <p>Pointer to the detached ECP context structure.  If the ECP context structure is successfully detached from the given list, this parameter will be set to point to the detached ECP context structure.  If the ECP context structure is not found in the given ECP list, this parameter is set to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>EcpContextSize</i> [out, optional]
+### -param EcpContextSize [out, optional]
 
 <dd>
 <p>Optional parameter that receives the size of the detached ECP context structure.  If this parameter is present when the routine is called, the parameter will receive the size, in bytes, of the detached ECP context structure.  If the given ECP context structure was not found in the given ECP list, this parameter is undefined. </p>
@@ -199,4 +199,4 @@ NTSTATUS FltRemoveExtraCreateParameter(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltRemoveExtraCreateParameter routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltRemoveExtraCreateParameter routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

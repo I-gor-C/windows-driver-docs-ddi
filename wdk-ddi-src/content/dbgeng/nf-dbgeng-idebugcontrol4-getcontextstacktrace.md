@@ -7,7 +7,7 @@ old-location: debugger\getcontextstacktrace.htm
 old-project: debugger
 ms.assetid: 8d7a461e-46bf-4556-b13c-805bb5af572e
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl4, GetContextStackTrace, IDebugControl4::GetContextStackTrace
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,49 +61,49 @@ HRESULT GetContextStackTrace(
 ## -parameters
 <dl>
 
-### -param <i>StartContext</i> [in, optional]
+### -param StartContext [in, optional]
 
 <dd>
 <p>Specifies the register context for the top of the stack.</p>
 </dd>
 
-### -param <i>StartContextSize</i> [in]
+### -param StartContextSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the <i>StartContext</i> register context.</p>
 </dd>
 
-### -param <i>Frames</i> [out, optional]
+### -param Frames [out, optional]
 
 <dd>
 <p>Receives the stack frames.  The number of elements this array holds is <i>FrameSize</i>.  If <i>Frames</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>FramesSize</i> [in]
+### -param FramesSize [in]
 
 <dd>
 <p>Specifies the number of items in the array <i>Frames</i>.</p>
 </dd>
 
-### -param <i>FrameContexts</i> [out, optional]
+### -param FrameContexts [out, optional]
 
 <dd>
 <p>Receives the reconstructed register context for each frame in the stack.  The entries in this array correspond to the entries in the <i>Frames</i> array.  The type of the thread context is the CONTEXT structure for the target's effective processor.  If <i>FrameContexts</i> is <b>NULL</b>, this information is not returned.</p>
 </dd>
 
-### -param <i>FrameContextsSize</i> [in]
+### -param FrameContextsSize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the memory pointed to by <i>FrameContexts</i>.  The number of stack frames returned equals the number of contexts returned, and <i>FrameContextsSize</i> must equal <i>FramesSize</i> times <i>FrameContextsEntrySize</i>.</p>
 </dd>
 
-### -param <i>FrameContextsEntrySize</i> [in]
+### -param FrameContextsEntrySize [in]
 
 <dd>
 <p>Specifies the size, in bytes, of each frame context in <i>FrameContexts</i>.</p>
 </dd>
 
-### -param <i>FramesFilled</i> [out, optional]
+### -param FramesFilled [out, optional]
 
 <dd>
 <p>Receives the number of frames that were placed in the array <i>Frames</i> and contexts in <i>FrameContexts</i>.  If <i>FramesFilled</i> is <b>NULL</b>, this information is not returned.</p>
@@ -117,7 +117,7 @@ HRESULT GetContextStackTrace(
 
 <p> </p>
 
-<p>This method can also return error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
+<p>This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.</p>
 
 ## -remarks
 <p>The stack trace returned to <i>Frames</i> and <i>FrameContexts</i> can be printed using <a href="debugger.outputcontextstacktrace">OutputContextStackTrace</a>.</p>
@@ -165,4 +165,4 @@ HRESULT GetContextStackTrace(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::GetContextStackTrace method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::GetContextStackTrace method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

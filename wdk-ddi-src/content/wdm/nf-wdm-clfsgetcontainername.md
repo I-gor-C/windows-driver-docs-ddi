@@ -58,25 +58,25 @@ NTSTATUS ClfsGetContainerName(
 ## -parameters
 <dl>
 
-### -param <i>plfoLog</i> [in]
+### -param plfoLog [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents a CLFS log. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>.</p>
 </dd>
 
-### -param <i>cidLogicalContainer</i> [in]
+### -param cidLogicalContainer [in]
 
 <dd>
 <p>The logical identifier of a container in the CLFS log.</p>
 </dd>
 
-### -param <i>puszContainerName</i> [out]
+### -param puszContainerName [out]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure. The <b>Buffer</b> member of <i>puszContainerName</i> must point to a caller-allocated buffer that receives the path name of the container. The <b>MaximumLength</b> member must supply the size of the buffer.</p>
 </dd>
 
-### -param <i>pcActualLenContainerName</i> [out, optional]
+### -param pcActualLenContainerName [out, optional]
 
 <dd>
 <p>A pointer to a ULONG-typed variable that receives the actual length, in Unicode characters, of the container's path name. This parameter can be <b>NULL</b>.</p>

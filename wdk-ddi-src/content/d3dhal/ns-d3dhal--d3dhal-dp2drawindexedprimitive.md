@@ -62,26 +62,26 @@ typedef struct _D3DHAL_DP2DRAWINDEXEDPRIMITIVE {
 ## -struct-fields
 <dl>
 
-### -field <b>primType</b>
+### -field primType
 
 <dd>
 <p>Specifies the type of primitive to draw (one of D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP or D3DPT_TRIANGLEFAN).</p>
 </dd>
 
-### -field <b>BaseVertexIndex</b>
+### -field BaseVertexIndex
 
 <dd>
 <p>Specifies the amount that should be added to each index referenced by the various primitives to determine the actual index of the vertex elements in each vertex stream.</p>
 <p>
 <dl>
 
-### -field <b>DirectX 8.1 and earlier versions only.</b>
+### -field DirectX 8.1 and earlier versions only.
 
 
 ### -field Specified using a DWORD.
 
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
 ### -field Specified using an INT.
@@ -90,25 +90,25 @@ typedef struct _D3DHAL_DP2DRAWINDEXEDPRIMITIVE {
 </p>
 </dd>
 
-### -field <b>MinIndex</b>
+### -field MinIndex
 
 <dd>
 <p>Specifies the minimum index of a range of vertices that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.</p>
 </dd>
 
-### -field <b>NumVertices</b>
+### -field NumVertices
 
 <dd>
 <p>Specifies the number of vertices in a range that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.</p>
 </dd>
 
-### -field <b>StartIndex</b>
+### -field StartIndex
 
 <dd>
 <p>Specifies the first index in the index buffer from which indices are read to draw the primitives.</p>
 </dd>
 
-### -field <b>PrimitiveCount</b>
+### -field PrimitiveCount
 
 <dd>
 <p>Specifies the number of triangles, lines or points to draw for the given primitive.</p>

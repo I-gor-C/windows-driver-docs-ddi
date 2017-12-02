@@ -7,7 +7,7 @@ old-location: netvista\ril3gpp2isdnalerting.htm
 old-project: netvista
 ms.assetid: e3ba9bdd-2741-4a6c-9613-1ced31fc3dbf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef enum _RIL3GPP2ISDNALERTING {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_3GPP2ISDNALERTING_NORMAL"></a><a id="ril_3gpp2isdnalerting_normal"></a><b>RIL_3GPP2ISDNALERTING_NORMAL</b>
+### -field RIL_3GPP2ISDNALERTING_NORMAL
 
 <dd></dd>
 
-### -field <a id="RIL_3GPP2ISDNALERTING_INTERGROUP"></a><a id="ril_3gpp2isdnalerting_intergroup"></a><b>RIL_3GPP2ISDNALERTING_INTERGROUP</b>
+### -field RIL_3GPP2ISDNALERTING_INTERGROUP
 
 <dd></dd>
 
-### -field <a id="RIL_3GPP2ISDNALERTING_SPECIAL"></a><a id="ril_3gpp2isdnalerting_special"></a><b>RIL_3GPP2ISDNALERTING_SPECIAL</b>
+### -field RIL_3GPP2ISDNALERTING_SPECIAL
 
 <dd></dd>
 
-### -field <a id="RIL_3GPP2ISDNALERTING_PINGRING"></a><a id="ril_3gpp2isdnalerting_pingring"></a><b>RIL_3GPP2ISDNALERTING_PINGRING</b>
+### -field RIL_3GPP2ISDNALERTING_PINGRING
 
 <dd></dd>
 
-### -field <a id="RIL_3GPP2ISDNALERTING_MAX"></a><a id="ril_3gpp2isdnalerting_max"></a><b>RIL_3GPP2ISDNALERTING_MAX</b>
+### -field RIL_3GPP2ISDNALERTING_MAX
 
 <dd></dd>
 </dl>

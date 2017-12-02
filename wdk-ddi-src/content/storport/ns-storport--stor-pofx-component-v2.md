@@ -62,49 +62,49 @@ typedef struct _STOR_POFX_COMPONENT_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of this structure. Set this member to <b>STOR_POFX_DEVICE_VERSION_V2</b>.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure. Set this value to <b>STOR_POFX_COMPONENT_V2_SIZE</b>.</p>
 </dd>
 
-### -field <b>FStateCount</b>
+### -field FStateCount
 
 <dd>
 <p>The number of elements in the array that is pointed to by the <b>FStates</b> member. Additionally, this member specifies the number of functional power states (F-state) that the component supports. A component must support at least one F-state (F0).</p>
 </dd>
 
-### -field <b>DeepestWakeableIdleState</b>
+### -field DeepestWakeableIdleState
 
 <dd>
 <p>The index of the deepest F-state from which the component can wake. Specify 0 for F0, 1 for F1, and so on. This index must be less than <b>FStateCount</b>.</p>
 </dd>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>A component ID that uniquely identifies this component with respect to the other components in the device. The driver should specify a nonzero value for this member if the power management framework (PoFx) requires a component ID to distinguish this component from other, similar components in the same device. The component IDs supported by Storport are STORPORT_POFX_ADAPTER_GUID and STORPORT_POFX_LUN_GUID.</p>
 </dd>
 
-### -field <b>DeepestAdapterPowerRequiredFState</b>
+### -field DeepestAdapterPowerRequiredFState
 
 <dd>
 <p>The deepest F-State that this component can be in where the adapter still requires power. This is only relevant for components whose ID is STOR_POFX_LUN_GUID</p>
 </dd>
 
-### -field <b>DeepestCrashDumpReadyFState</b>
+### -field DeepestCrashDumpReadyFState
 
 <dd>
 <p>The deepest F-State that the component can be in where the miniport can power up the component in the event a crash occurs and a crash dump needs to be written.</p>
 </dd>
 
-### -field <b>FStates</b>
+### -field FStates
 
 <dd>
 <p>A array of  <a href="..\storport\ns-storport--stor-pofx-component-idle-state.md">STOR_POFX_COMPONENT_IDLE_STATE</a> structures. The length of this array is specified by the <b>FStateCount</b> member. Each array element specifies the attributes of an F-state that is supported by the component. Element 0 describes F0, element 1 describes F1, and so on. When more than one idle state structure is required, the additional structures are allocated at the end of the <b>STOR_ POFX_COMPONENT</b> structure and the <b>FStateCount</b> is set to 1, the value of ANYSIZE_ARRAY, plus the count of the additional structures.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilalphaidentifier.htm
 old-project: netvista
 ms.assetid: 2f7e8df5-31ae-4e1a-8dbb-89bfe8fc422d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILALPHAIDENTIFIER, RILALPHAIDENTIFIER, *LPRILALPHAIDENTIFIER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _RILALPHAIDENTIFIER {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwType</b>
+### -field dwType
 
 <dd></dd>
 
-### -field <b>wszReason</b>
+### -field wszReason
 
 <dd></dd>
 </dl>

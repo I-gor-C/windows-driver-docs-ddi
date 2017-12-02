@@ -60,37 +60,37 @@ typedef struct _REG_REPLACE_KEY_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Object</b>
+### -field Object
 
 <dd>
 <p>A pointer to a registry key object for the key whose metadata is about to be replaced.</p>
 </dd>
 
-### -field <b>OldFileName</b>
+### -field OldFileName
 
 <dd>
 <p>The name of the file that receives a backup copy of the registry information being replaced.</p>
 </dd>
 
-### -field <b>NewFileName</b>
+### -field NewFileName
 
 <dd>
 <p>The name of the file with the registry information. This file is typically created by using the <b>RegSaveKey</b> function.</p>
 </dd>
 
-### -field <b>CallContext</b>
+### -field CallContext
 
 <dd>
 <p>Optional driver-defined context information that the driver's <a href="kernel.registrycallback">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.</p>
 </dd>
 
-### -field <b>ObjectContext</b>
+### -field ObjectContext
 
 <dd>
 <p>A pointer to driver-defined context information, which the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.</p>

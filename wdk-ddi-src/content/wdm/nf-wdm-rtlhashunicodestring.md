@@ -58,25 +58,25 @@ NTSTATUS RtlHashUnicodeString(
 ## -parameters
 <dl>
 
-### -param <i>String</i> [in]
+### -param String [in]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the Unicode string to be converted to a hash value.</p>
 </dd>
 
-### -param <i>CaseInSensitive</i> [in]
+### -param CaseInSensitive [in]
 
 <dd>
 <p>Specifies whether to treat the Unicode string as case sensitive when computing the hash value. If <i>CaseInSensitive</i> is <b>TRUE</b>, a lowercase and uppercase string hash to the same value. </p>
 </dd>
 
-### -param <i>HashAlgorithm</i> [in]
+### -param HashAlgorithm [in]
 
 <dd>
 <p>The hash algorithm to use. If <i>HashAlgorithm</i> is HASH_STRING_ALGORITHM_X65599, <b>RtlHashUnicodeString</b> uses the x65599 hashing algorithm. If <i>HashAlgorithm</i> is HASH_STRING_ALGORITHM_DEFAULT, <b>RtlHashUnicodeString</b> uses the default algorithm. Currently, the default algorithm is the x65599 hashing algorithm.</p>
 </dd>
 
-### -param <i>HashValue</i> [out]
+### -param HashValue [out]
 
 <dd>
 <p>A pointer to a ULONG variable that receives the hash value.</p>

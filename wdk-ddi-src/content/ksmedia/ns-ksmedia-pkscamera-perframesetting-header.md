@@ -59,37 +59,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this header, frame headers, item headers, value payloads, custom items, and custom data for all frames.</p>
 </dd>
 
-### -field <b>FrameCount</b>
+### -field FrameCount
 
 <dd>
 <p>The number of frame settings in this per-frame settings payload.</p>
 </dd>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>LoopCount</b>
+### -field LoopCount
 
 <dd>
 <p>The number of repeats for this per-frame setting. This is always 1.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

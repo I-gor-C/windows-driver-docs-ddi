@@ -7,7 +7,7 @@ old-location: wdf\evtdeviceusagenotificationex.htm
 old-project: wdf
 ms.assetid: A5C3E247-4883-4BFE-B36A-45AA989F36C9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,19 +61,19 @@ NTSTATUS EvtDeviceUsageNotificationEx(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>NotificationType</i> [in]
+### -param NotificationType [in]
 
 <dd>
 <p>A <a href="..\wdfdevice\ne-wdfdevice--wdf-special-file-type.md">WDF_SPECIAL_FILE_TYPE</a>-typed value that identifies the type of special file that the system is storing on the specified device.</p>
 </dd>
 
-### -param <i>IsInNotificationPath</i> [in]
+### -param IsInNotificationPath [in]
 
 <dd>
 <p>A Boolean value which, if <b>TRUE</b>, indicates that the system has starting using the special file and, if <b>FALSE</b>, indicates that the system has finished using the special file.</p>
@@ -92,13 +92,13 @@ NTSTATUS EvtDeviceUsageNotificationEx(
 
 <p>For more information about special files, see <a href="wdf.supporting_special_files">Supporting Special Files</a>.</p>
 
-<p>To define an <i>EvtDeviceUsageNotificationEx</i> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
+<p>To define an <i>EvtDeviceUsageNotificationEx</i> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
 
 <p>For example, to define an <i>EvtDeviceUsageNotificationEx</i> callback function that is named <i>MyDeviceUsageNotificationEx</i>, use the <b>EVT_WDF_DEVICE_USAGE_NOTIFICATION_EX</b> type as shown in this code example:</p>
 
 <p>Then, implement your callback function as follows.</p>
 
-<p>The <b>EVT_WDF_DEVICE_USAGE_NOTIFICATION_EX</b> function type is defined in the Wdfdevice.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDF_DEVICE_USAGE_NOTIFICATION_EX</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-US/library/c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.</p>
+<p>The <b>EVT_WDF_DEVICE_USAGE_NOTIFICATION_EX</b> function type is defined in the Wdfdevice.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDF_DEVICE_USAGE_NOTIFICATION_EX</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-US/library/c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.</p>
 
 ## -requirements
 <table>

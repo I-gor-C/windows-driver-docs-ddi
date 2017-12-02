@@ -58,31 +58,31 @@ typedef struct _PEP_NOTIFY_COMPONENT_IDLE_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>Component</b>
+### -field Component
 
 <dd>
 <p>[in] The index that identifies the component. This member is an index into the <b>Components</b> array in the <a href="..\pepfx\ns-pepfx--pep-device-register-v2.md">PEP_DEVICE_REGISTER_V2</a> structure that the PEP previously supplied in response to the <b>PEP_DPM_REGISTER_DEVICE</b> notification for this device. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
 </dd>
 
-### -field <b>IdleState</b>
+### -field IdleState
 
 <dd>
 <p>[in] The new F<i>x</i> power state that the component will transition to. If this parameter is zero, the new state is F0; if this parameter is one, the new state is F1; and so on.</p>
 </dd>
 
-### -field <b>DriverNotified</b>
+### -field DriverNotified
 
 <dd>
 <p>[in] Whether the driver for the device has already been notified of the pending transition to the new F<i>x</i> state. If TRUE, the <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) already notified the driver by calling the driver's <a href="kernel.componentidlestatecallback">ComponentIdleStateCallback</a> callback routine. If FALSE, PoFx has not yet notified the driver.</p>
 </dd>
 
-### -field <b>Completed</b>
+### -field Completed
 
 <dd>
 <p>[out] Whether the PEP has completed all necessary preparations for the specified component to enter the new F<i>x</i> state. Set to TRUE to indicate that the PEP has completed all necessary preparations, or to FALSE to indicate that is has not.</p>

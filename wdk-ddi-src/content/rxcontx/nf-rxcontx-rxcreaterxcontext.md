@@ -7,7 +7,7 @@ old-location: ifsk\rxcreaterxcontext.htm
 old-project: ifsk
 ms.assetid: ff39aebb-03c0-4ba4-844a-417579ed2bbf
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxCreateRxContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,38 +57,38 @@ PRX_CONTEXT RxCreateRxContext(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in, optional]
+### -param Irp [in, optional]
 
 <dd>
 <p>A pointer to the IRP to be encapsulated by this RX_CONTEXT structure.</p>
 </dd>
 
-### -param <i>RxDeviceObject</i> [in]
+### -param RxDeviceObject [in]
 
 <dd>
 <p>A pointer to the device object to which this RX_CONTEXT and IRP apply.</p>
 </dd>
 
-### -param <i>InitialContextFlags</i> [in]
+### -param InitialContextFlags [in]
 
 <dd>
 <p>The set of initial values for the <b>Flags</b> member of the RX_CONTEXT data structure to be stored in the RX_CONTEXT structure. These initial values can be any combination of the following enumerations:</p>
 <p></p>
 <dl>
 
-### -param <a id="RX_CONTEXT_FLAG_WAIT_"></a><a id="rx_context_flag_wait_"></a>RX_CONTEXT_FLAG_WAIT 
+### -param RX_CONTEXT_FLAG_WAIT 
 
 <dd>
 <p>When this value is set, the IRP should be not be posted for later execution by the file system process, but should be waited on to complete.</p>
 </dd>
 
-### -param <a id="RX_CONTEXT_FLAG_MUST_SUCCEED"></a><a id="rx_context_flag_must_succeed"></a>RX_CONTEXT_FLAG_MUST_SUCCEED
+### -param RX_CONTEXT_FLAG_MUST_SUCCEED
 
 <dd>
 <p>When this value is set, the operation must succeed. This value is not currently used by RDBSS, but it may be used by network mini-redirector drivers. </p>
 </dd>
 
-### -param <a id="RX_CONTEXT_FLAG_MUST_SUCCEED_NONBLOCKING"></a><a id="rx_context_flag_must_succeed_nonblocking"></a>RX_CONTEXT_FLAG_MUST_SUCCEED_NONBLOCKING
+### -param RX_CONTEXT_FLAG_MUST_SUCCEED_NONBLOCKING
 
 <dd>
 <p>When this value is set, the operation must succeed for non-blocking operations. This value is not currently used by RDBSS, but it may be used by network mini-redirector drivers. </p>
@@ -176,4 +176,4 @@ PRX_CONTEXT RxCreateRxContext(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCreateRxContext function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCreateRxContext function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

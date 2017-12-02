@@ -7,7 +7,7 @@ old-location: netvista\wwan_ipv4_address.htm
 old-project: netvista
 ms.assetid: D75EAC9E-8E65-437E-83AA-59B422527C6C
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_IPV4_ADDRESS, WWAN_IPV4_ADDRESS, *PWWAN_IPV4_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ typedef struct _WWAN_IPV4_ADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>OnLinkPrefixLength</b>
+### -field OnLinkPrefixLength
 
 <dd>
 <p>The length of the prefix or network part of the IP address of the PDP context.</p>
 </dd>
 
-### -field <b>IPV4Address[4]</b>
+### -field IPV4Address[4]
 
 <dd>
 <p>The IPV4 address of the PDP context.</p>

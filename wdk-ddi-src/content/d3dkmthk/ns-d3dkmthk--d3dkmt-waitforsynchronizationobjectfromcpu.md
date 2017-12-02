@@ -59,37 +59,37 @@ typedef struct _D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] The device handle to wait on.</p>
 </dd>
 
-### -field <b>ObjectCount</b>
+### -field ObjectCount
 
 <dd>
 <p>[in] The number of synchronization objects in the <b>ObjectHandleArray</b> and fence values in the <b>FenceValueArray</b>. </p>
 </dd>
 
-### -field <b>ObjectHandleArray</b>
+### -field ObjectHandleArray
 
 <dd>
 <p>[in] An array of kernel-mode handles to the synchronization events to wait for.</p>
 </dd>
 
-### -field <b>FenceValueArray</b>
+### -field FenceValueArray
 
 <dd>
 <p>[in] An array of 64-bit monitored fence values to wait for, each corresponding to an object in the <b>ObjectHandleArray</b>.</p>
 </dd>
 
-### -field <b>hAsyncEvent</b>
+### -field hAsyncEvent
 
 <dd>
 <p>[in] When not <b>NULL</b>, specifies the event to be signaled when the wait condition is satisfied. When <b>NULL</b>, the call will not return until the wait condition is satisfied.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-waitforsynchronizationobjectfromcpu-flags.md">D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS</a> structure describing the operation.</p>
@@ -101,7 +101,7 @@ typedef struct _D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU {
 <tr>
 <td width="40%"><a id="WaitAny"></a><a id="waitany"></a><a id="WAITANY"></a><dl>
 
-### -field <b>WaitAny</b>
+### -field WaitAny
 
 
 ### -field FALSE
@@ -115,7 +115,7 @@ typedef struct _D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU {
 <tr>
 <td width="40%"><a id="WaitAny"></a><a id="waitany"></a><a id="WAITANY"></a><dl>
 
-### -field <b>WaitAny</b>
+### -field WaitAny
 
 
 ### -field TRUE

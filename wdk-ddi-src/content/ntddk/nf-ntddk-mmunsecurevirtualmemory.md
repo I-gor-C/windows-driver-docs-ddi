@@ -54,7 +54,7 @@ VOID MmUnsecureVirtualMemory(
 ## -parameters
 <dl>
 
-### -param <i>SecureHandle</i> [in]
+### -param SecureHandle [in]
 
 <dd>
 <p>Specifies the value returned by <a href="..\ntddk\nf-ntddk-mmsecurevirtualmemory.md">MmSecureVirtualMemory</a> for the memory address range. </p>

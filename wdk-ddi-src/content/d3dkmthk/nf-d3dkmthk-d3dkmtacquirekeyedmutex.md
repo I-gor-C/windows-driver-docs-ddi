@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTAcquireKeyedMutex(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-acquirekeyedmutex.md">D3DKMT_ACQUIREKEYEDMUTEX</a> structure that specifies the keyed mutex object to acquire. </p>

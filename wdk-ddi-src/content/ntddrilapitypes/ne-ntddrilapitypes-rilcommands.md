@@ -7,7 +7,7 @@ old-location: netvista\rilcommands.htm
 old-project: netvista
 ms.assetid: 45aae3e3-eee9-4518-b96b-eae5db7e1243
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -181,515 +181,515 @@ typedef enum _RILCOMMANDS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_COMMAND_GETNEXTNOTIFICATION"></a><a id="ril_command_getnextnotification"></a><b>RIL_COMMAND_GETNEXTNOTIFICATION</b>
+### -field RIL_COMMAND_GETNEXTNOTIFICATION
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_ENABLENOTIFICATIONS"></a><a id="ril_command_enablenotifications"></a><b>RIL_COMMAND_ENABLENOTIFICATIONS</b>
+### -field RIL_COMMAND_ENABLENOTIFICATIONS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_DISABLENOTIFICATIONS"></a><a id="ril_command_disablenotifications"></a><b>RIL_COMMAND_DISABLENOTIFICATIONS</b>
+### -field RIL_COMMAND_DISABLENOTIFICATIONS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETDRIVERVERSION"></a><a id="ril_command_getdriverversion"></a><b>RIL_COMMAND_GETDRIVERVERSION</b>
+### -field RIL_COMMAND_GETDRIVERVERSION
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETDEVCAPS"></a><a id="ril_command_getdevcaps"></a><b>RIL_COMMAND_GETDEVCAPS</b>
+### -field RIL_COMMAND_GETDEVCAPS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETDEVICEINFO"></a><a id="ril_command_getdeviceinfo"></a><b>RIL_COMMAND_GETDEVICEINFO</b>
+### -field RIL_COMMAND_GETDEVICEINFO
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETEQUIPMENTSTATE"></a><a id="ril_command_getequipmentstate"></a><b>RIL_COMMAND_GETEQUIPMENTSTATE</b>
+### -field RIL_COMMAND_GETEQUIPMENTSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETEQUIPMENTSTATE"></a><a id="ril_command_setequipmentstate"></a><b>RIL_COMMAND_SETEQUIPMENTSTATE</b>
+### -field RIL_COMMAND_SETEQUIPMENTSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETNOTIFICATIONFILTERSTATE"></a><a id="ril_command_setnotificationfilterstate"></a><b>RIL_COMMAND_SETNOTIFICATIONFILTERSTATE</b>
+### -field RIL_COMMAND_SETNOTIFICATIONFILTERSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETNOTIFICATIONFILTERSTATE"></a><a id="ril_command_getnotificationfilterstate"></a><b>RIL_COMMAND_GETNOTIFICATIONFILTERSTATE</b>
+### -field RIL_COMMAND_GETNOTIFICATIONFILTERSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_ENUMERATESLOTS"></a><a id="ril_command_enumerateslots"></a><b>RIL_COMMAND_ENUMERATESLOTS</b>
+### -field RIL_COMMAND_ENUMERATESLOTS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETCARDINFO"></a><a id="ril_command_getcardinfo"></a><b>RIL_COMMAND_GETCARDINFO</b>
+### -field RIL_COMMAND_GETCARDINFO
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETSLOTPOWER"></a><a id="ril_command_setslotpower"></a><b>RIL_COMMAND_SETSLOTPOWER</b>
+### -field RIL_COMMAND_SETSLOTPOWER
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETUICCRECORDSTATUS"></a><a id="ril_command_getuiccrecordstatus"></a><b>RIL_COMMAND_GETUICCRECORDSTATUS</b>
+### -field RIL_COMMAND_GETUICCRECORDSTATUS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SENDRESTRICTEDUICCCMD"></a><a id="ril_command_sendrestricteduicccmd"></a><b>RIL_COMMAND_SENDRESTRICTEDUICCCMD</b>
+### -field RIL_COMMAND_SENDRESTRICTEDUICCCMD
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_WATCHUICCFILECHANGE"></a><a id="ril_command_watchuiccfilechange"></a><b>RIL_COMMAND_WATCHUICCFILECHANGE</b>
+### -field RIL_COMMAND_WATCHUICCFILECHANGE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETUICCPRLID"></a><a id="ril_command_getuiccprlid"></a><b>RIL_COMMAND_GETUICCPRLID</b>
+### -field RIL_COMMAND_GETUICCPRLID
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETIMSI"></a><a id="ril_command_getimsi"></a><b>RIL_COMMAND_GETIMSI</b>
+### -field RIL_COMMAND_GETIMSI
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETSUBSCRIBERNUMBERS"></a><a id="ril_command_getsubscribernumbers"></a><b>RIL_COMMAND_GETSUBSCRIBERNUMBERS</b>
+### -field RIL_COMMAND_GETSUBSCRIBERNUMBERS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETUICCLOCKSTATE"></a><a id="ril_command_getuicclockstate"></a><b>RIL_COMMAND_GETUICCLOCKSTATE</b>
+### -field RIL_COMMAND_GETUICCLOCKSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETUICCSERVICELOCK"></a><a id="ril_command_getuiccservicelock"></a><b>RIL_COMMAND_GETUICCSERVICELOCK</b>
+### -field RIL_COMMAND_GETUICCSERVICELOCK
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_VERIFYUICCLOCK"></a><a id="ril_command_verifyuicclock"></a><b>RIL_COMMAND_VERIFYUICCLOCK</b>
+### -field RIL_COMMAND_VERIFYUICCLOCK
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETUICCLOCKENABLED"></a><a id="ril_command_setuicclockenabled"></a><b>RIL_COMMAND_SETUICCLOCKENABLED</b>
+### -field RIL_COMMAND_SETUICCLOCKENABLED
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_UNBLOCKUICCLOCK"></a><a id="ril_command_unblockuicclock"></a><b>RIL_COMMAND_UNBLOCKUICCLOCK</b>
+### -field RIL_COMMAND_UNBLOCKUICCLOCK
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_CHANGEUICCLOCKPASSWORD"></a><a id="ril_command_changeuicclockpassword"></a><b>RIL_COMMAND_CHANGEUICCLOCKPASSWORD</b>
+### -field RIL_COMMAND_CHANGEUICCLOCKPASSWORD
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETUICCAPPPERSOCHECKSTATE"></a><a id="ril_command_getuiccapppersocheckstate"></a><b>RIL_COMMAND_GETUICCAPPPERSOCHECKSTATE</b>
+### -field RIL_COMMAND_GETUICCAPPPERSOCHECKSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETPERSODEACTIVATIONSTATE"></a><a id="ril_command_getpersodeactivationstate"></a><b>RIL_COMMAND_GETPERSODEACTIVATIONSTATE</b>
+### -field RIL_COMMAND_GETPERSODEACTIVATIONSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_DEACTIVATEPERSO"></a><a id="ril_command_deactivateperso"></a><b>RIL_COMMAND_DEACTIVATEPERSO</b>
+### -field RIL_COMMAND_DEACTIVATEPERSO
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_READPHONEBOOKENTRIES"></a><a id="ril_command_readphonebookentries"></a><b>RIL_COMMAND_READPHONEBOOKENTRIES</b>
+### -field RIL_COMMAND_READPHONEBOOKENTRIES
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_WRITEPHONEBOOKENTRY"></a><a id="ril_command_writephonebookentry"></a><b>RIL_COMMAND_WRITEPHONEBOOKENTRY</b>
+### -field RIL_COMMAND_WRITEPHONEBOOKENTRY
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_DELETEPHONEBOOKENTRY"></a><a id="ril_command_deletephonebookentry"></a><b>RIL_COMMAND_DELETEPHONEBOOKENTRY</b>
+### -field RIL_COMMAND_DELETEPHONEBOOKENTRY
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETPHONEBOOKOPTIONS"></a><a id="ril_command_getphonebookoptions"></a><b>RIL_COMMAND_GETPHONEBOOKOPTIONS</b>
+### -field RIL_COMMAND_GETPHONEBOOKOPTIONS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETALLADDITIONALNUMBERSTRINGS"></a><a id="ril_command_getalladditionalnumberstrings"></a><b>RIL_COMMAND_GETALLADDITIONALNUMBERSTRINGS</b>
+### -field RIL_COMMAND_GETALLADDITIONALNUMBERSTRINGS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETALLEMERGENCYNUMBERS"></a><a id="ril_command_getallemergencynumbers"></a><b>RIL_COMMAND_GETALLEMERGENCYNUMBERS</b>
+### -field RIL_COMMAND_GETALLEMERGENCYNUMBERS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETRADIOCONFIGURATION"></a><a id="ril_command_setradioconfiguration"></a><b>RIL_COMMAND_SETRADIOCONFIGURATION</b>
+### -field RIL_COMMAND_SETRADIOCONFIGURATION
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETRADIOCONFIGURATION"></a><a id="ril_command_getradioconfiguration"></a><b>RIL_COMMAND_GETRADIOCONFIGURATION</b>
+### -field RIL_COMMAND_GETRADIOCONFIGURATION
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETEXECUTORCONFIG"></a><a id="ril_command_setexecutorconfig"></a><b>RIL_COMMAND_SETEXECUTORCONFIG</b>
+### -field RIL_COMMAND_SETEXECUTORCONFIG
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETEXECUTORCONFIG"></a><a id="ril_command_getexecutorconfig"></a><b>RIL_COMMAND_GETEXECUTORCONFIG</b>
+### -field RIL_COMMAND_GETEXECUTORCONFIG
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETSYSTEMSELECTIONPREFS"></a><a id="ril_command_setsystemselectionprefs"></a><b>RIL_COMMAND_SETSYSTEMSELECTIONPREFS</b>
+### -field RIL_COMMAND_SETSYSTEMSELECTIONPREFS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETSYSTEMSELECTIONPREFS"></a><a id="ril_command_getsystemselectionprefs"></a><b>RIL_COMMAND_GETSYSTEMSELECTIONPREFS</b>
+### -field RIL_COMMAND_GETSYSTEMSELECTIONPREFS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETOPERATORLIST"></a><a id="ril_command_getoperatorlist"></a><b>RIL_COMMAND_GETOPERATORLIST</b>
+### -field RIL_COMMAND_GETOPERATORLIST
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETPREFERREDOPERATORLIST"></a><a id="ril_command_getpreferredoperatorlist"></a><b>RIL_COMMAND_GETPREFERREDOPERATORLIST</b>
+### -field RIL_COMMAND_GETPREFERREDOPERATORLIST
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETCURRENTREGSTATUS"></a><a id="ril_command_getcurrentregstatus"></a><b>RIL_COMMAND_GETCURRENTREGSTATUS</b>
+### -field RIL_COMMAND_GETCURRENTREGSTATUS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETSIGNALQUALITY"></a><a id="ril_command_getsignalquality"></a><b>RIL_COMMAND_GETSIGNALQUALITY</b>
+### -field RIL_COMMAND_GETSIGNALQUALITY
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SENDUICCTOOLKITCMDRESPONSE"></a><a id="ril_command_senduicctoolkitcmdresponse"></a><b>RIL_COMMAND_SENDUICCTOOLKITCMDRESPONSE</b>
+### -field RIL_COMMAND_SENDUICCTOOLKITCMDRESPONSE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SENDUICCTOOLKITENVELOPE"></a><a id="ril_command_senduicctoolkitenvelope"></a><b>RIL_COMMAND_SENDUICCTOOLKITENVELOPE</b>
+### -field RIL_COMMAND_SENDUICCTOOLKITENVELOPE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_DIAL"></a><a id="ril_command_dial"></a><b>RIL_COMMAND_DIAL</b>
+### -field RIL_COMMAND_DIAL
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_MANAGECALLS"></a><a id="ril_command_managecalls"></a><b>RIL_COMMAND_MANAGECALLS</b>
+### -field RIL_COMMAND_MANAGECALLS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_EMERGENCYMODECONTROL"></a><a id="ril_command_emergencymodecontrol"></a><b>RIL_COMMAND_EMERGENCYMODECONTROL</b>
+### -field RIL_COMMAND_EMERGENCYMODECONTROL
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETCALLFORWARDINGSETTINGS"></a><a id="ril_command_getcallforwardingsettings"></a><b>RIL_COMMAND_GETCALLFORWARDINGSETTINGS</b>
+### -field RIL_COMMAND_GETCALLFORWARDINGSETTINGS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETCALLFORWARDINGSTATUS"></a><a id="ril_command_setcallforwardingstatus"></a><b>RIL_COMMAND_SETCALLFORWARDINGSTATUS</b>
+### -field RIL_COMMAND_SETCALLFORWARDINGSTATUS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_ADDCALLFORWARDING"></a><a id="ril_command_addcallforwarding"></a><b>RIL_COMMAND_ADDCALLFORWARDING</b>
+### -field RIL_COMMAND_ADDCALLFORWARDING
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_REMOVECALLFORWARDING"></a><a id="ril_command_removecallforwarding"></a><b>RIL_COMMAND_REMOVECALLFORWARDING</b>
+### -field RIL_COMMAND_REMOVECALLFORWARDING
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETCALLBARRINGSTATUS"></a><a id="ril_command_getcallbarringstatus"></a><b>RIL_COMMAND_GETCALLBARRINGSTATUS</b>
+### -field RIL_COMMAND_GETCALLBARRINGSTATUS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETCALLBARRINGSTATUS"></a><a id="ril_command_setcallbarringstatus"></a><b>RIL_COMMAND_SETCALLBARRINGSTATUS</b>
+### -field RIL_COMMAND_SETCALLBARRINGSTATUS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_CHANGECALLBARRINGPASSWORD"></a><a id="ril_command_changecallbarringpassword"></a><b>RIL_COMMAND_CHANGECALLBARRINGPASSWORD</b>
+### -field RIL_COMMAND_CHANGECALLBARRINGPASSWORD
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETCALLWAITINGSETTINGS"></a><a id="ril_command_getcallwaitingsettings"></a><b>RIL_COMMAND_GETCALLWAITINGSETTINGS</b>
+### -field RIL_COMMAND_GETCALLWAITINGSETTINGS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETCALLWAITINGSTATUS"></a><a id="ril_command_setcallwaitingstatus"></a><b>RIL_COMMAND_SETCALLWAITINGSTATUS</b>
+### -field RIL_COMMAND_SETCALLWAITINGSTATUS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETCALLERIDSETTINGS"></a><a id="ril_command_getcalleridsettings"></a><b>RIL_COMMAND_GETCALLERIDSETTINGS</b>
+### -field RIL_COMMAND_GETCALLERIDSETTINGS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETDIALEDIDSETTINGS"></a><a id="ril_command_getdialedidsettings"></a><b>RIL_COMMAND_GETDIALEDIDSETTINGS</b>
+### -field RIL_COMMAND_GETDIALEDIDSETTINGS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETHIDECONNECTEDIDSETTINGS"></a><a id="ril_command_gethideconnectedidsettings"></a><b>RIL_COMMAND_GETHIDECONNECTEDIDSETTINGS</b>
+### -field RIL_COMMAND_GETHIDECONNECTEDIDSETTINGS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETHIDEIDSETTINGS"></a><a id="ril_command_gethideidsettings"></a><b>RIL_COMMAND_GETHIDEIDSETTINGS</b>
+### -field RIL_COMMAND_GETHIDEIDSETTINGS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SENDFLASH"></a><a id="ril_command_sendflash"></a><b>RIL_COMMAND_SENDFLASH</b>
+### -field RIL_COMMAND_SENDFLASH
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SENDSUPSERVICEDATA"></a><a id="ril_command_sendsupservicedata"></a><b>RIL_COMMAND_SENDSUPSERVICEDATA</b>
+### -field RIL_COMMAND_SENDSUPSERVICEDATA
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SENDDTMF"></a><a id="ril_command_senddtmf"></a><b>RIL_COMMAND_SENDDTMF</b>
+### -field RIL_COMMAND_SENDDTMF
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_STARTDTMF"></a><a id="ril_command_startdtmf"></a><b>RIL_COMMAND_STARTDTMF</b>
+### -field RIL_COMMAND_STARTDTMF
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_STOPDTMF"></a><a id="ril_command_stopdtmf"></a><b>RIL_COMMAND_STOPDTMF</b>
+### -field RIL_COMMAND_STOPDTMF
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETMSGSERVICEOPTIONS"></a><a id="ril_command_getmsgserviceoptions"></a><b>RIL_COMMAND_GETMSGSERVICEOPTIONS</b>
+### -field RIL_COMMAND_GETMSGSERVICEOPTIONS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_READMSG"></a><a id="ril_command_readmsg"></a><b>RIL_COMMAND_READMSG</b>
+### -field RIL_COMMAND_READMSG
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_WRITEMSG"></a><a id="ril_command_writemsg"></a><b>RIL_COMMAND_WRITEMSG</b>
+### -field RIL_COMMAND_WRITEMSG
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_DELETEMSG"></a><a id="ril_command_deletemsg"></a><b>RIL_COMMAND_DELETEMSG</b>
+### -field RIL_COMMAND_DELETEMSG
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETCELLBROADCASTMSGCONFIG"></a><a id="ril_command_getcellbroadcastmsgconfig"></a><b>RIL_COMMAND_GETCELLBROADCASTMSGCONFIG</b>
+### -field RIL_COMMAND_GETCELLBROADCASTMSGCONFIG
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETCELLBROADCASTMSGCONFIG"></a><a id="ril_command_setcellbroadcastmsgconfig"></a><b>RIL_COMMAND_SETCELLBROADCASTMSGCONFIG</b>
+### -field RIL_COMMAND_SETCELLBROADCASTMSGCONFIG
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETMSGINUICCSTATUS"></a><a id="ril_command_getmsginuiccstatus"></a><b>RIL_COMMAND_GETMSGINUICCSTATUS</b>
+### -field RIL_COMMAND_GETMSGINUICCSTATUS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETMSGINUICCSTATUS"></a><a id="ril_command_setmsginuiccstatus"></a><b>RIL_COMMAND_SETMSGINUICCSTATUS</b>
+### -field RIL_COMMAND_SETMSGINUICCSTATUS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETMSGMEMORYSTATUS"></a><a id="ril_command_setmsgmemorystatus"></a><b>RIL_COMMAND_SETMSGMEMORYSTATUS</b>
+### -field RIL_COMMAND_SETMSGMEMORYSTATUS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SENDMSG"></a><a id="ril_command_sendmsg"></a><b>RIL_COMMAND_SENDMSG</b>
+### -field RIL_COMMAND_SENDMSG
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETSMSC"></a><a id="ril_command_getsmsc"></a><b>RIL_COMMAND_GETSMSC</b>
+### -field RIL_COMMAND_GETSMSC
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETSMSC"></a><a id="ril_command_setsmsc"></a><b>RIL_COMMAND_SETSMSC</b>
+### -field RIL_COMMAND_SETSMSC
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETIMSSTATUS"></a><a id="ril_command_getimsstatus"></a><b>RIL_COMMAND_GETIMSSTATUS</b>
+### -field RIL_COMMAND_GETIMSSTATUS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETPOSITIONINFO"></a><a id="ril_command_getpositioninfo"></a><b>RIL_COMMAND_GETPOSITIONINFO</b>
+### -field RIL_COMMAND_GETPOSITIONINFO
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETRADIOSTATEGROUPS"></a><a id="ril_command_getradiostategroups"></a><b>RIL_COMMAND_GETRADIOSTATEGROUPS</b>
+### -field RIL_COMMAND_GETRADIOSTATEGROUPS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETRADIOSTATEDETAILS"></a><a id="ril_command_getradiostatedetails"></a><b>RIL_COMMAND_GETRADIOSTATEDETAILS</b>
+### -field RIL_COMMAND_GETRADIOSTATEDETAILS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETRADIOSTATEDETAILS"></a><a id="ril_command_setradiostatedetails"></a><b>RIL_COMMAND_SETRADIOSTATEDETAILS</b>
+### -field RIL_COMMAND_SETRADIOSTATEDETAILS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_RADIOSTATEPASSWORDCOMPARE"></a><a id="ril_command_radiostatepasswordcompare"></a><b>RIL_COMMAND_RADIOSTATEPASSWORDCOMPARE</b>
+### -field RIL_COMMAND_RADIOSTATEPASSWORDCOMPARE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_RADIOSTATEGETPASSWORDRETRYCOUNT"></a><a id="ril_command_radiostategetpasswordretrycount"></a><b>RIL_COMMAND_RADIOSTATEGETPASSWORDRETRYCOUNT</b>
+### -field RIL_COMMAND_RADIOSTATEGETPASSWORDRETRYCOUNT
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_DEVSPECIFIC"></a><a id="ril_command_devspecific"></a><b>RIL_COMMAND_DEVSPECIFIC</b>
+### -field RIL_COMMAND_DEVSPECIFIC
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETRFSTATE"></a><a id="ril_command_setrfstate"></a><b>RIL_COMMAND_SETRFSTATE</b>
+### -field RIL_COMMAND_SETRFSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETRFSTATE"></a><a id="ril_command_getrfstate"></a><b>RIL_COMMAND_GETRFSTATE</b>
+### -field RIL_COMMAND_GETRFSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETDMPROFILECONFIGINFO"></a><a id="ril_command_getdmprofileconfiginfo"></a><b>RIL_COMMAND_GETDMPROFILECONFIGINFO</b>
+### -field RIL_COMMAND_GETDMPROFILECONFIGINFO
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETDMPROFILECONFIGINFO"></a><a id="ril_command_setdmprofileconfiginfo"></a><b>RIL_COMMAND_SETDMPROFILECONFIGINFO</b>
+### -field RIL_COMMAND_SETDMPROFILECONFIGINFO
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_WRITEADDITIONALNUMBERSTRING"></a><a id="ril_command_writeadditionalnumberstring"></a><b>RIL_COMMAND_WRITEADDITIONALNUMBERSTRING</b>
+### -field RIL_COMMAND_WRITEADDITIONALNUMBERSTRING
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_DELETEADDITIONALNUMBERSTRING"></a><a id="ril_command_deleteadditionalnumberstring"></a><b>RIL_COMMAND_DELETEADDITIONALNUMBERSTRING</b>
+### -field RIL_COMMAND_DELETEADDITIONALNUMBERSTRING
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETUICCATR"></a><a id="ril_command_getuiccatr"></a><b>RIL_COMMAND_GETUICCATR</b>
+### -field RIL_COMMAND_GETUICCATR
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_OPENUICCLOGICALCHANNEL"></a><a id="ril_command_openuicclogicalchannel"></a><b>RIL_COMMAND_OPENUICCLOGICALCHANNEL</b>
+### -field RIL_COMMAND_OPENUICCLOGICALCHANNEL
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_CLOSEUICCLOGICALCHANNEL"></a><a id="ril_command_closeuicclogicalchannel"></a><b>RIL_COMMAND_CLOSEUICCLOGICALCHANNEL</b>
+### -field RIL_COMMAND_CLOSEUICCLOGICALCHANNEL
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_EXCHANGEUICCAPDU"></a><a id="ril_command_exchangeuiccapdu"></a><b>RIL_COMMAND_EXCHANGEUICCAPDU</b>
+### -field RIL_COMMAND_EXCHANGEUICCAPDU
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SENDSUPSERVICEDATARESPONSE"></a><a id="ril_command_sendsupservicedataresponse"></a><b>RIL_COMMAND_SENDSUPSERVICEDATARESPONSE</b>
+### -field RIL_COMMAND_SENDSUPSERVICEDATARESPONSE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_CANCELSUPSERVICEDATASESSION"></a><a id="ril_command_cancelsupservicedatasession"></a><b>RIL_COMMAND_CANCELSUPSERVICEDATASESSION</b>
+### -field RIL_COMMAND_CANCELSUPSERVICEDATASESSION
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETUICCTOOLKITPROFILE"></a><a id="ril_command_setuicctoolkitprofile"></a><b>RIL_COMMAND_SETUICCTOOLKITPROFILE</b>
+### -field RIL_COMMAND_SETUICCTOOLKITPROFILE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETUICCTOOLKITPROFILE"></a><a id="ril_command_getuicctoolkitprofile"></a><b>RIL_COMMAND_GETUICCTOOLKITPROFILE</b>
+### -field RIL_COMMAND_GETUICCTOOLKITPROFILE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_REGISTERUICCTOOLKITSERVICE"></a><a id="ril_command_registeruicctoolkitservice"></a><b>RIL_COMMAND_REGISTERUICCTOOLKITSERVICE</b>
+### -field RIL_COMMAND_REGISTERUICCTOOLKITSERVICE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SENDMSGACK"></a><a id="ril_command_sendmsgack"></a><b>RIL_COMMAND_SENDMSGACK</b>
+### -field RIL_COMMAND_SENDMSGACK
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_CLOSEUICCLOGICALCHANNELGROUP"></a><a id="ril_command_closeuicclogicalchannelgroup"></a><b>RIL_COMMAND_CLOSEUICCLOGICALCHANNELGROUP</b>
+### -field RIL_COMMAND_CLOSEUICCLOGICALCHANNELGROUP
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETPREFERREDOPERATORLIST"></a><a id="ril_command_setpreferredoperatorlist"></a><b>RIL_COMMAND_SETPREFERREDOPERATORLIST</b>
+### -field RIL_COMMAND_SETPREFERREDOPERATORLIST
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETUICCSERVICESTATE"></a><a id="ril_command_getuiccservicestate"></a><b>RIL_COMMAND_GETUICCSERVICESTATE</b>
+### -field RIL_COMMAND_GETUICCSERVICESTATE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETUICCSERVICESTATE"></a><a id="ril_command_setuiccservicestate"></a><b>RIL_COMMAND_SETUICCSERVICESTATE</b>
+### -field RIL_COMMAND_SETUICCSERVICESTATE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETCALLLIST"></a><a id="ril_command_getcalllist"></a><b>RIL_COMMAND_GETCALLLIST</b>
+### -field RIL_COMMAND_GETCALLLIST
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETEXECUTORFOCUS"></a><a id="ril_command_getexecutorfocus"></a><b>RIL_COMMAND_GETEXECUTORFOCUS</b>
+### -field RIL_COMMAND_GETEXECUTORFOCUS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETEXECUTORFOCUS"></a><a id="ril_command_setexecutorfocus"></a><b>RIL_COMMAND_SETEXECUTORFOCUS</b>
+### -field RIL_COMMAND_SETEXECUTORFOCUS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETEMERGENCYMODE"></a><a id="ril_command_getemergencymode"></a><b>RIL_COMMAND_GETEMERGENCYMODE</b>
+### -field RIL_COMMAND_GETEMERGENCYMODE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETEXECUTORRFSTATE"></a><a id="ril_command_getexecutorrfstate"></a><b>RIL_COMMAND_GETEXECUTORRFSTATE</b>
+### -field RIL_COMMAND_GETEXECUTORRFSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETEXECUTORRFSTATE"></a><a id="ril_command_setexecutorrfstate"></a><b>RIL_COMMAND_SETEXECUTORRFSTATE</b>
+### -field RIL_COMMAND_SETEXECUTORRFSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_RESETMODEM"></a><a id="ril_command_resetmodem"></a><b>RIL_COMMAND_RESETMODEM</b>
+### -field RIL_COMMAND_RESETMODEM
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_CANCELGETOPERATORLIST"></a><a id="ril_command_cancelgetoperatorlist"></a><b>RIL_COMMAND_CANCELGETOPERATORLIST</b>
+### -field RIL_COMMAND_CANCELGETOPERATORLIST
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_AVOIDCDMASYSTEM"></a><a id="ril_command_avoidcdmasystem"></a><b>RIL_COMMAND_AVOIDCDMASYSTEM</b>
+### -field RIL_COMMAND_AVOIDCDMASYSTEM
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETPSMEDIACONFIGURATION"></a><a id="ril_command_setpsmediaconfiguration"></a><b>RIL_COMMAND_SETPSMEDIACONFIGURATION</b>
+### -field RIL_COMMAND_SETPSMEDIACONFIGURATION
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETPSMEDIACONFIGURATION"></a><a id="ril_command_getpsmediaconfiguration"></a><b>RIL_COMMAND_GETPSMEDIACONFIGURATION</b>
+### -field RIL_COMMAND_GETPSMEDIACONFIGURATION
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETGEOLOCATIONDATA"></a><a id="ril_command_setgeolocationdata"></a><b>RIL_COMMAND_SETGEOLOCATIONDATA</b>
+### -field RIL_COMMAND_SETGEOLOCATIONDATA
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SETTERMINALCAPABILITY"></a><a id="ril_command_setterminalcapability"></a><b>RIL_COMMAND_SETTERMINALCAPABILITY</b>
+### -field RIL_COMMAND_SETTERMINALCAPABILITY
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_GETTERMINALCAPABILITY"></a><a id="ril_command_getterminalcapability"></a><b>RIL_COMMAND_GETTERMINALCAPABILITY</b>
+### -field RIL_COMMAND_GETTERMINALCAPABILITY
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_SENDRTT"></a><a id="ril_command_sendrtt"></a><b>RIL_COMMAND_SENDRTT</b>
+### -field RIL_COMMAND_SENDRTT
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_ENABLEMODEMFILTERS"></a><a id="ril_command_enablemodemfilters"></a><b>RIL_COMMAND_ENABLEMODEMFILTERS</b>
+### -field RIL_COMMAND_ENABLEMODEMFILTERS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_DISABLEMODEMFILTERS"></a><a id="ril_command_disablemodemfilters"></a><b>RIL_COMMAND_DISABLEMODEMFILTERS</b>
+### -field RIL_COMMAND_DISABLEMODEMFILTERS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_STARTMODEMLOGS"></a><a id="ril_command_startmodemlogs"></a><b>RIL_COMMAND_STARTMODEMLOGS</b>
+### -field RIL_COMMAND_STARTMODEMLOGS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_STOPMODEMLOGS"></a><a id="ril_command_stopmodemlogs"></a><b>RIL_COMMAND_STOPMODEMLOGS</b>
+### -field RIL_COMMAND_STOPMODEMLOGS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_DRAINMODEMLOGS"></a><a id="ril_command_drainmodemlogs"></a><b>RIL_COMMAND_DRAINMODEMLOGS</b>
+### -field RIL_COMMAND_DRAINMODEMLOGS
 
 <dd></dd>
 
-### -field <a id="RIL_COMMAND_COUNT"></a><a id="ril_command_count"></a><b>RIL_COMMAND_COUNT</b>
+### -field RIL_COMMAND_COUNT
 
 <dd></dd>
 </dl>

@@ -62,7 +62,7 @@ LONGLONG GetTime();
 ## -remarks
 <p>Do not call this method when obtaining a time stamp for the <b>PresentationTime</b> member of <a href="stream.ksstream_header">KSSTREAM_HEADER</a>. Instead, call <a href="stream.iksreferenceclock_getcorrelatedtime">IKsReferenceClock::GetCorrelatedTime</a> in this situation.</p>
 
-<p>For more information, see <a href="NULL">AVStream Clocks</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/fc1d5bca-72e3-48e2-b46f-09a13bba83b4">AVStream Clocks</a>.</p>
 
 <p>AVStream uses the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565095">KSPROPERTY_CLOCK_TIME</a> property to retrieve the current clock time.</p>
 

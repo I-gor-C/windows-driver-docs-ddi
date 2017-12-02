@@ -56,19 +56,19 @@ NTSTATUS DxgkInitializeDisplayOnlyDriver(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a> structure. The KMDOD previously obtained this pointer in its <a href="display.driverentry_of_display_miniport_driver">DriverEntry</a> function.</p>
 </dd>
 
-### -param <i>RegistryPath</i> [in]
+### -param RegistryPath [in]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that supplies the path to the KMDOD's service registry key.  The KMDOD previously obtained this pointer in its <a href="display.driverentry_of_display_miniport_driver">DriverEntry</a> function.</p>
 </dd>
 
-### -param <i>KmdDodInitializationData</i> [in]
+### -param KmdDodInitializationData [in]
 
 <dd>
 <p>A pointer to a <a href="..\dispmprt\ns-dispmprt--kmddod-initialization-data.md">KMDDOD_INITIALIZATION_DATA</a> structure that supplies the DirectX graphics kernel subsystem with pointers to functions implemented by the KMDOD.</p>

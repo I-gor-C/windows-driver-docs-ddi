@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatenetbufferlist.htm
 old-project: netvista
 ms.assetid: 9c821aac-9abd-4041-a15e-64306ada1c02
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisAllocateNetBufferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ PNET_BUFFER_LIST NdisAllocateNetBufferList(
 ## -parameters
 <dl>
 
-### -param <i>PoolHandle</i> [in]
+### -param PoolHandle [in]
 
 <dd>
 <p>A NET_BUFFER_LIST structure pool handle that was previously returned from a call to 
@@ -67,7 +67,7 @@ PNET_BUFFER_LIST NdisAllocateNetBufferList(
      NdisAllocateNetBufferListPool</a>.</p>
 </dd>
 
-### -param <i>ContextSize</i> [in]
+### -param ContextSize [in]
 
 <dd>
 <p>The amount of 
@@ -77,7 +77,7 @@ PNET_BUFFER_LIST NdisAllocateNetBufferList(
      <i>ContextSize</i> must be a multiple of the value defined by MEMORY_ALLOCATION_ALIGNMENT.</p>
 </dd>
 
-### -param <i>ContextBackFill</i> [in]
+### -param ContextBackFill [in]
 
 <dd>
 <p>The amount of 
@@ -197,4 +197,4 @@ PNET_BUFFER_LIST NdisAllocateNetBufferList(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferList function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferList function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

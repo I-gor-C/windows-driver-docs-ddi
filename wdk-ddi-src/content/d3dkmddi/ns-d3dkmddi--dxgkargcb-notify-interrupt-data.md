@@ -126,30 +126,30 @@ typedef struct _DXGKARGCB_NOTIFY_INTERRUPT_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>InterruptType</b>
+### -field InterruptType
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-interrupt-type.md">DXGK_INTERRUPT_TYPE</a>-typed value that indicates the type of interrupt that the display miniport driver notifies the GPU scheduler about.</p>
 </dd>
 
-### -field <b>DmaCompleted</b>
+### -field DmaCompleted
 
 <dd>
 <dl>
 
-### -field <b>SubmissionFenceId</b>
+### -field SubmissionFenceId
 
 <dd>
 <p>[in] The submission identifier of the completed command.</p>
 </dd>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>[in] The zero-based index of the node that generates the notification.</p>
 </dd>
 
-### -field <b>EngineOrdinal</b>
+### -field EngineOrdinal
 
 <dd>
 <p>[in] The zero-based index of the engine, within the node that <b>NodeOrdinal</b> specifies, that generates the notification. For graphics adapters that are not part of a link, you should always set <b>EngineOrdinal</b> to 0. For graphics adapters that are part of a link, set <b>EngineOrdinal</b> to the adapter index of the adapter in the link that the interrupting engine belongs to.</p>
@@ -157,30 +157,30 @@ typedef struct _DXGKARGCB_NOTIFY_INTERRUPT_DATA {
 </dl>
 </dd>
 
-### -field <b>DmaPreempted</b>
+### -field DmaPreempted
 
 <dd>
 <dl>
 
-### -field <b>PreemptionFenceId</b>
+### -field PreemptionFenceId
 
 <dd>
 <p>[in] The submission identifier of the preempting request.</p>
 </dd>
 
-### -field <b>LastCompletedFenceId</b>
+### -field LastCompletedFenceId
 
 <dd>
 <p>[in] The submission identifier of the last completed command before preemption.</p>
 </dd>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>[in] The zero-based index of the node that generates the notification.</p>
 </dd>
 
-### -field <b>EngineOrdinal</b>
+### -field EngineOrdinal
 
 <dd>
 <p>[in] The zero-based index of the engine, within the node that <b>NodeOrdinal</b> specifies, that generates the notification. For graphics adapters that are not part of a link, you should always set <b>EngineOrdinal</b> set to 0. For graphics adapters that are part of a link, set <b>EngineOrdinal</b> to the adapter index of the adapter in the link that the interrupting engine belongs to. The GPU scheduler determines that hardware preempted all commands between the preemption request and the submission that <b>LastCompletedFenceId</b> specifies.</p>
@@ -188,30 +188,30 @@ typedef struct _DXGKARGCB_NOTIFY_INTERRUPT_DATA {
 </dl>
 </dd>
 
-### -field <b>DmaFaulted</b>
+### -field DmaFaulted
 
 <dd>
 <dl>
 
-### -field <b>FaultedFenceId</b>
+### -field FaultedFenceId
 
 <dd>
 <p>[in] The identifier of the faulty command.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>[in] The status of the faulty command.</p>
 </dd>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>[in] The zero-based index of the node that generates the notification.</p>
 </dd>
 
-### -field <b>EngineOrdinal</b>
+### -field EngineOrdinal
 
 <dd>
 <p>[in] The zero-based index of the engine, within the node that <b>NodeOrdinal</b> specifies, that generates the notification. For graphics adapters that are not part of a link, you should always set <b>EngineOrdinal</b> to 0. For graphics adapters that are part of a link, set <b>EngineOrdinal</b> to the adapter index of the adapter in the link that the interrupting engine belongs to. </p>
@@ -219,24 +219,24 @@ typedef struct _DXGKARGCB_NOTIFY_INTERRUPT_DATA {
 </dl>
 </dd>
 
-### -field <b>CrtcVsync</b>
+### -field CrtcVsync
 
 <dd>
 <dl>
 
-### -field <b>VidPnTargetId</b>
+### -field VidPnTargetId
 
 <dd>
 <p>[in] The zero-based identification number of the video present target in a path of a video present network (VidPN) topology. This number represents the video present target where the vertical sync occurs.</p>
 </dd>
 
-### -field <b>PhysicalAddress</b>
+### -field PhysicalAddress
 
 <dd>
 <p>[in] The physical address of the displaying buffer. When monitor visibility is off, the operating system still expects a non-<b>NULL</b> physical address. This address should be set to the physical address that the pixel pipeline would read from if visibility were on.</p>
 </dd>
 
-### -field <b>PhysicalAdapterMask</b>
+### -field PhysicalAdapterMask
 
 <dd>
 <p>[in] The physical adapter mask where the vertical sync occurs. If this member contains a valid value, the driver must also set the <b>ValidPhysicalAdapterMask</b> bit-field flag in the <b>Flags</b> member. </p>
@@ -244,12 +244,12 @@ typedef struct _DXGKARGCB_NOTIFY_INTERRUPT_DATA {
 </dl>
 </dd>
 
-### -field <b>DisplayOnlyVsync</b>
+### -field DisplayOnlyVsync
 
 <dd>
 <dl>
 
-### -field <b>VidPnTargetId</b>
+### -field VidPnTargetId
 
 <dd>
 <p>[in] For a display-only driver, the zero-based identification number of the video present target in a path of a video present network (VidPN) topology. This number represents the video present target where the vertical sync occurs.</p>
@@ -258,34 +258,34 @@ typedef struct _DXGKARGCB_NOTIFY_INTERRUPT_DATA {
 </dl>
 </dd>
 
-### -field <b>CrtcVsyncWithMultiPlaneOverlay</b>
+### -field CrtcVsyncWithMultiPlaneOverlay
 
 <dd>
 <p>Provides VSync notifications for display miniport drivers that support multiplane overlays.</p>
 <dl>
 
-### -field <b>VidPnTargetId</b>
+### -field VidPnTargetId
 
 <dd>
 <p>[in] The zero-based identification number of the video present target in a path of a video present network (VidPN) topology. This number represents the video present target where the vertical sync occurs.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>PhysicalAdapterMask</b>
+### -field PhysicalAdapterMask
 
 <dd>
 <p>[in] The physical adapter mask where the vertical sync occurs. If this member contains a valid value, the driver must also set the <b>ValidPhysicalAdapterMask</b> bit-field flag in the <b>Flags</b> member.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>MultiPlaneOverlayVsyncInfoCount</b>
+### -field MultiPlaneOverlayVsyncInfoCount
 
 <dd>
 <p>The number of overlay planes that are available to display.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>pMultiPlaneOverlayVsyncInfo</b>
+### -field pMultiPlaneOverlayVsyncInfo
 
 <dd>
 <p>[in] A pointer to  a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-vsync-info.md">DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO</a> structure that specifies an overlay plane to display during a VSync interval.</p>
@@ -294,41 +294,41 @@ typedef struct _DXGKARGCB_NOTIFY_INTERRUPT_DATA {
 </dl>
 </dd>
 
-### -field <b>DisplayOnlyPresentProgress</b>
+### -field DisplayOnlyPresentProgress
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-present-displayonly-progress.md">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a> structure that provides the progress of a kernel mode display-only driver's (KMDOD) present operation.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>MiracastEncodeChunkCompleted</b>
+### -field MiracastEncodeChunkCompleted
 
 <dd>
 <p>Supported by WDDM 1.3 and later display miniport drivers running on Windows 8.1 and later.</p>
 <dl>
 
-### -field <b>VidPnTargetId</b>
+### -field VidPnTargetId
 
 <dd>
 <p>[in] The zero-based identification number of the video present target in a path of a video present network (VidPN) topology. This number represents the video present target where the encoding is being performed.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>ChunkInfo</b>
+### -field ChunkInfo
 
 <dd>
 <p>A <a href="..\d3dukmdt\ns-d3dukmdt-dxgk-miracast-chunk-info.md">DXGK_MIRACAST_CHUNK_INFO</a> encode chunk information structure that the display miniport driver wants to report.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>A pointer to a block of private data that describes this encode chunk. </p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>PrivateDataDriverSize</b>
+### -field PrivateDataDriverSize
 
 <dd>
 <p>The size, in bytes, of the block of private data in <b>pPrivateDriverData</b>.
@@ -336,7 +336,7 @@ This value must not be larger than the <b>MaxChunkPrivateDriverDataSize</b> valu
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>A value of type <b>NTSTATUS</b> that indicates whether the encode chunk was successfully added to the queue of chunks. If successful, <b>STATUS_SUCCESS</b> is returned. If any other value is returned, the chunk could not be added to the queue, and all outstanding chunks will be lost.</p>
@@ -349,7 +349,7 @@ This value must not be larger than the <b>MaxChunkPrivateDriverDataSize</b> valu
 <tr>
 <td width="40%"><a id="STATUS_SUCCESS"></a><a id="status_success"></a><dl>
 
-### -field <b>STATUS_SUCCESS</b>
+### -field STATUS_SUCCESS
 
 </dl>
 </td>
@@ -360,7 +360,7 @@ This value must not be larger than the <b>MaxChunkPrivateDriverDataSize</b> valu
 <tr>
 <td width="40%"><a id="STATUS_INVALID_PARAMETER"></a><a id="status_invalid_parameter"></a><dl>
 
-### -field <b>STATUS_INVALID_PARAMETER</b>
+### -field STATUS_INVALID_PARAMETER
 
 </dl>
 </td>
@@ -372,7 +372,7 @@ This value must not be larger than the <b>MaxChunkPrivateDriverDataSize</b> valu
 <tr>
 <td width="40%"><a id="STATUS_NO_MEMORY"></a><a id="status_no_memory"></a><dl>
 
-### -field <b>STATUS_NO_MEMORY</b>
+### -field STATUS_NO_MEMORY
 
 </dl>
 </td>
@@ -386,12 +386,12 @@ This value must not be larger than the <b>MaxChunkPrivateDriverDataSize</b> valu
 </dl>
 </dd>
 
-### -field <b>DmaPageFaulted</b>
+### -field DmaPageFaulted
 
 <dd>
 <dl>
 
-### -field <b>FaultedFenceId</b>
+### -field FaultedFenceId
 
 <dd>
 <p>Submission fence ID of faulted command.</p>
@@ -401,63 +401,63 @@ If the faulted fence cannot be determined reliably, <b>PageFaultFlags</b> should
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>FaultedPrimitiveAPISequenceNumber</b>
+### -field FaultedPrimitiveAPISequenceNumber
 
 <dd>
 <p> When per draw fence write is enabled, this identifies the draw operation that caused the page fault, or <b>DXGK_PRIMITIVE_API_SEQUENCE_NUMBER_UNKNOWN</b> if such information is not available.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>FaultedPipelineStage</b>
+### -field FaultedPipelineStage
 
 <dd>
 <p>Render pipeline stage during which the fault was generated, or <b>DXGK_RENDER_PIPELINE_STAGE_UNKNOWN</b> if such information is not available.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>FaultedBindTableEntry</b>
+### -field FaultedBindTableEntry
 
 <dd>
 <p>A bind table index of a resource being accessed at the time of the fault, or <b>DXGK_BIND_TABLE_ENTRY_UNKNOWN</b> if such information is not available.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>PageFaultFlags</b>
+### -field PageFaultFlags
 
 <dd>
 <p>Flags described in <a href="..\d3dkmdt\ne-d3dkmdt--dxgk-page-fault-flags.md">DXGK_PAGE_FAULT_FLAGS</a> enumeration specifying the nature of the fault.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>FaultedVirtualAddress</b>
+### -field FaultedVirtualAddress
 
 <dd>
 <p>GPU virtual address of fault, or <b>D3DGPU_NULL</b> if the fault has another cause. In the latter case, <b>FaultErrorCode</b> field should be used to describe the GPU error.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>Node ordinal of the engine generating the notification.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>EngineOrdinal</b>
+### -field EngineOrdinal
 
 <dd>
 <p>Engine ordinal of the engine generating the notification.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>PageTableLevel</b>
+### -field PageTableLevel
 
 <dd>
 <p>Describes page table level that the faulting operation was attempted on.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>FaultErrorCode</b>
+### -field FaultErrorCode
 
 <dd>
 <p>
@@ -465,7 +465,7 @@ If the faulted fence cannot be determined reliably, <b>PageFaultFlags</b> should
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>FaultedProcessHandle</b>
+### -field FaultedProcessHandle
 
 <dd>
 <p>DirectX graphics kernel process handle of the process that generated page fault, or <b>NULL</b> if the faulted process cannot be determined.</p>
@@ -474,48 +474,48 @@ If the faulted fence cannot be determined reliably, <b>PageFaultFlags</b> should
 </dl>
 </dd>
 
-### -field <b>VidPnTargetId</b>
+### -field VidPnTargetId
 
 <dd>
 <p>The zero-based identification number of the video present target in a path of a video present network (VidPN) topology. This number represents the video present target where the vertical sync occurs.</p>
 </dd>
 
-### -field <b>PhysicalAdapterMask</b>
+### -field PhysicalAdapterMask
 
 <dd>
 <p>The physical adapter mask where the vertical sync occurs. If this member contains a valid value, the driver must also set the ValidPhysicalAdapterMask bit-field flag in the Flags member.</p>
 </dd>
 
-### -field <b>MultiPlaneOverlayVsyncInfoCount</b>
+### -field MultiPlaneOverlayVsyncInfoCount
 
 <dd>
 <p>The number of overlay planes that are available to display.</p>
 </dd>
 
-### -field <b>pMultiPlaneOverlayVsyncInfo</b>
+### -field pMultiPlaneOverlayVsyncInfo
 
 <dd>
 <p>A pointer to a DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2 structure that specifies information for each overlay plane updated by the VSync.</p>
 </dd>
 
-### -field <b>GpuFrequency</b>
+### -field GpuFrequency
 
 <dd>
 <p>The frequency of the GPU clock counter. </p>
 </dd>
 
-### -field <b>GpuClockCounter</b>
+### -field GpuClockCounter
 
 <dd>
 <p>The GPU clock counter at the time of the VSYNC interrupt. Combined with GpuFrequency, this indicates the time of the VSYNC interrupt. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>An array of 32-bit values that are reserved for future use.</p>
@@ -523,7 +523,7 @@ If the faulted fence cannot be determined reliably, <b>PageFaultFlags</b> should
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgkcb-notify-interrupt-data-flags.md">DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS</a> structure that indicates if the display miniport driver provides a physical adapter mask in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-notify-interrupt.md">DxgkCbNotifyInterrupt</a> function.</p>

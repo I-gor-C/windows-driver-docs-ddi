@@ -7,7 +7,7 @@ old-location: netvista\rilcallaudiomediastate_2.htm
 old-project: netvista
 ms.assetid: f15f609d-605b-4f4c-8f57-01c6b426d8b5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLAUDIOMEDIASTATE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef struct _RILCALLAUDIOMEDIASTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwAudioSource</b>
+### -field dwAudioSource
 
 <dd></dd>
 
-### -field <b>dwAudioQuality</b>
+### -field dwAudioQuality
 
 <dd></dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd></dd>
 </dl>

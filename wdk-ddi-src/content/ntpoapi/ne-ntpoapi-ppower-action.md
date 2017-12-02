@@ -7,7 +7,7 @@ old-location: wdf\power_action.htm
 old-project: wdf
 ms.assetid: 0c4a5eb8-d364-4e5d-9d2f-2605c8c34f63
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NLSTABLEINFO, NLSTABLEINFO, *PNLSTABLEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,49 +62,49 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="PowerActionNone"></a><a id="poweractionnone"></a><a id="POWERACTIONNONE"></a><b>PowerActionNone</b>
+### -field PowerActionNone
 
 <dd>
 <p>No power action is taking place.</p>
 </dd>
 
-### -field <a id="PowerActionReserved"></a><a id="poweractionreserved"></a><a id="POWERACTIONRESERVED"></a><b>PowerActionReserved</b>
+### -field PowerActionReserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="PowerActionSleep"></a><a id="poweractionsleep"></a><a id="POWERACTIONSLEEP"></a><b>PowerActionSleep</b>
+### -field PowerActionSleep
 
 <dd>
 <p>The computer is entering a <a href="https://msdn.microsoft.com/2fd883b5-4e89-4ce9-b75a-b821348ac860">system sleeping (S1, S2, or S3) state</a>.</p>
 </dd>
 
-### -field <a id="PowerActionHibernate"></a><a id="poweractionhibernate"></a><a id="POWERACTIONHIBERNATE"></a><b>PowerActionHibernate</b>
+### -field PowerActionHibernate
 
 <dd>
 <p>The computer is entering its <a href="https://msdn.microsoft.com/2fd883b5-4e89-4ce9-b75a-b821348ac860">hibernation (S4) state</a>.</p>
 </dd>
 
-### -field <a id="PowerActionShutdown"></a><a id="poweractionshutdown"></a><a id="POWERACTIONSHUTDOWN"></a><b>PowerActionShutdown</b>
+### -field PowerActionShutdown
 
 <dd>
 <p>The computer is entering its <a href="https://msdn.microsoft.com/c08d688d-c31a-4d57-a343-406edfa35e8f">shutdown (S5) state</a>. After all devices have entered their <a href="https://msdn.microsoft.com/f594a63f-10ce-439d-abe3-d342555d98f0">off (D3) state</a>, the computer remains powered on until an administrator presses the power button.</p>
 </dd>
 
-### -field <a id="PowerActionShutdownReset"></a><a id="poweractionshutdownreset"></a><a id="POWERACTIONSHUTDOWNRESET"></a><b>PowerActionShutdownReset</b>
+### -field PowerActionShutdownReset
 
 <dd>
 <p>The computer is entering its shutdown (S5) state. After all devices have entered their off (D3) state, the computer automatically powers off and then immediately restarts and returns to its working (S0) state.</p>
 </dd>
 
-### -field <a id="PowerActionShutdownOff"></a><a id="poweractionshutdownoff"></a><a id="POWERACTIONSHUTDOWNOFF"></a><b>PowerActionShutdownOff</b>
+### -field PowerActionShutdownOff
 
 <dd>
 <p>The computer is entering its shutdown (S5) state. After all devices have entered their off (D3) state, the computer automatically powers off.</p>
 </dd>
 
-### -field <a id="PowerActionWarmEject"></a><a id="poweractionwarmeject"></a><a id="POWERACTIONWARMEJECT"></a><b>PowerActionWarmEject</b>
+### -field PowerActionWarmEject
 
 <dd>
 <p>The computer is being ejected from an ACPI-compatible dock device. Typically, the computer's power state does not change.</p>
@@ -152,4 +152,4 @@ typedef enum  {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20POWER_ACTION enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20POWER_ACTION enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

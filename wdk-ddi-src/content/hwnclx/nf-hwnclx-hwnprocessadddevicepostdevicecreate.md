@@ -58,19 +58,19 @@ FORCEINLINE NTSTATUS  HwNProcessAddDevicePostDeviceCreate(
 ## -parameters
 <dl>
 
-### -param <i>Driver</i> [in]
+### -param Driver [in]
 
 <dd>
 <p>Handle to the client drivers framework driver object. </p>
 </dd>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>Handle to the framework device object. </p>
 </dd>
 
-### -param <i>DeviceGuid</i> [in]
+### -param DeviceGuid [in]
 
 <dd>
 <p>Pointer to the GUID for the client driver. Valid values are defined in Hwn.h, which ships with Window SDK.</p>

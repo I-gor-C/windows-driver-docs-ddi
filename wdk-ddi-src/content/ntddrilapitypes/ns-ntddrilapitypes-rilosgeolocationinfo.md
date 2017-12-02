@@ -7,7 +7,7 @@ old-location: netvista\rilosgeolocationinfo.htm
 old-project: netvista
 ms.assetid: 9a56152e-fb38-4470-8834-a0cbdd7b70ec
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILOSGEOLOCATIONINFO, RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,71 +70,71 @@ typedef struct _RILOSGEOLOCATIONINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwLatitude</b>
+### -field dwLatitude
 
 <dd></dd>
 
-### -field <b>dwLongitude</b>
+### -field dwLongitude
 
 <dd></dd>
 
-### -field <b>dwAltitude</b>
+### -field dwAltitude
 
 <dd></dd>
 
-### -field <b>dwAccuracy</b>
+### -field dwAccuracy
 
 <dd></dd>
 
-### -field <b>dwLocationInformationMask</b>
+### -field dwLocationInformationMask
 
 <dd></dd>
 
-### -field <b>stTimeStamp</b>
+### -field stTimeStamp
 
 <dd></dd>
 
-### -field <b>wszAddressLine1</b>
+### -field wszAddressLine1
 
 <dd></dd>
 
-### -field <b>wszAddressLine2</b>
+### -field wszAddressLine2
 
 <dd></dd>
 
-### -field <b>wszCity</b>
+### -field wszCity
 
 <dd></dd>
 
-### -field <b>wszState</b>
+### -field wszState
 
 <dd></dd>
 
-### -field <b>wszCountry</b>
+### -field wszCountry
 
 <dd></dd>
 
-### -field <b>wszPostalCode</b>
+### -field wszPostalCode
 
 <dd></dd>
 
-### -field <b>wszFormattedAddress</b>
+### -field wszFormattedAddress
 
 <dd></dd>
 
-### -field <b>wszCountryCode</b>
+### -field wszCountryCode
 
 <dd></dd>
 
-### -field <b>wszRegionCode</b>
+### -field wszRegionCode
 
 <dd></dd>
 </dl>

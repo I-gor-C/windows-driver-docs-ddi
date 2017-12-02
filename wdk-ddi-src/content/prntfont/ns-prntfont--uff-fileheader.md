@@ -63,49 +63,49 @@ typedef struct _UFF_FILEHEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSignature</b>
+### -field dwSignature
 
 <dd>
 <p>Specifies the signature for .uff files. This value must be UFF_FILE_MAGIC.</p>
 </dd>
 
-### -field <b>dwVersion</b>
+### -field dwVersion
 
 <dd>
 <p>Specifies the format version for .uff files. This value must be UFF_VERSION_NUMBER. The HIWORD contains the major version number and the LOWORD contains the minor version number.</p>
 </dd>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes, of the UFF_FILEHEADER structure.</p>
 </dd>
 
-### -field <b>nFonts</b>
+### -field nFonts
 
 <dd>
 <p>Specifies the number of fonts specified within the .uff file and identified by <a href="..\prntfont\ns-prntfont--data-header.md">DATA_HEADER</a> structures. This is also the number of <a href="..\prntfont\ns-prntfont--uff-fontdirectory.md">UFF_FONTDIRECTORY</a> structures within the .uff file.</p>
 </dd>
 
-### -field <b>nGlyphSets</b>
+### -field nGlyphSets
 
 <dd>
 <p>Specifies the  number of glyph sets specified within the .uff file and identified by DATA_HEADER structures. Some fonts might share a glyph set.</p>
 </dd>
 
-### -field <b>nVarData</b>
+### -field nVarData
 
 <dd>
 <p>Specifies the  number of variable data sections specified within the .uff file and identified by DATA_HEADER structures.</p>
 </dd>
 
-### -field <b>offFontDir</b>
+### -field offFontDir
 
 <dd>
 <p>Specifies the offset, in bytes, from the beginning of the .uff file to the beginning of the first <a href="..\prntfont\ns-prntfont--uff-fontdirectory.md">UFF_FONTDIRECTORY</a> structure.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Is a set of bit flags, as specified in the following table.</p>
@@ -126,7 +126,7 @@ typedef struct _UFF_FILEHEADER {
 <p> </p>
 </dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd>
 <p>Reserved. Must be set to zero.</p>

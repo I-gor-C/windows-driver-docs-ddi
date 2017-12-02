@@ -60,19 +60,19 @@ typedef struct _UFS_DEVICE_HEALTH_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>Specifies the length, in bytes, of this descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorIDN</b>
+### -field bDescriptorIDN
 
 <dd>
 <p>Specifies the descriptor's Identification value. <b>UFS_DEVICE_HEALTH_DESCRIPTOR </b>will have a value of <b>UFS_DESC_HEALTH_IDN</b>.</p>
 </dd>
 
-### -field <b>bPreEOLInfo</b>
+### -field bPreEOLInfo
 
 <dd>
 <p>Contains Pre-End of Life Information. This member supplies information about a device's life time as reflected by the average number of reserved blocks. Contains one of the following values:</p>
@@ -107,7 +107,7 @@ reserved blocks.</td>
 <p> </p>
 </dd>
 
-### -field <b>bDeviceLifeTimeEstA</b>
+### -field bDeviceLifeTimeEstA
 
 <dd>
 <p><b>bDeviceLifeTimeEstA</b> provides an estimation of how much of a device's estimated life time has been used based on the amount of performed program/erase cycles. This calculation is vendor-specific and is referred as method A. Contains one of the following values:</p>
@@ -172,13 +172,13 @@ reserved blocks.</td>
 <p> </p>
 </dd>
 
-### -field <b>bDeviceLifeTimeEstB</b>
+### -field bDeviceLifeTimeEstB
 
 <dd>
 <p><b>bDeviceLifeTimeEstB</b> provides an estimation of how much of a device's estimated life time has been used based on the amount of performed program/erase cycles. This calculation is vendor-specific and is referred as method B. Contains the same possible values as <b>bDeviceLifeTimeEstA</b>.</p>
 </dd>
 
-### -field <b>VendorPropInfo[32]</b>
+### -field VendorPropInfo[32]
 
 <dd>
 <p>Reserved for vendor use.</p>

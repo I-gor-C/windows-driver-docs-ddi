@@ -55,7 +55,7 @@ VOID IoDisconnectInterrupt(
 ## -parameters
 <dl>
 
-### -param <i>InterruptObject</i> [in]
+### -param InterruptObject [in]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a> structure. The caller obtained this pointer from the <a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a> call that previously connected the interrupt or interrupts.</p>

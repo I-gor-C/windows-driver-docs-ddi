@@ -60,19 +60,19 @@ typedef struct _STOR_RICH_DEVICE_DESCRIPTION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the structure. Must be STOR_RICH_DEVICE_DESCRIPTION_STRUCTURE_VERSION.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of the structure. </p>
 </dd>
 
-### -field <b>VendorId</b>
+### -field VendorId
 
 <dd>
 <p>A string representing the device’s vendor ID. May be an empty string if ModelNumber is provided.
@@ -80,7 +80,7 @@ typedef struct _STOR_RICH_DEVICE_DESCRIPTION {
 </p>
 </dd>
 
-### -field <b>ModelNumber</b>
+### -field ModelNumber
 
 <dd>
 <p>A string representing the device’s model.
@@ -90,7 +90,7 @@ typedef struct _STOR_RICH_DEVICE_DESCRIPTION {
 </p>
 </dd>
 
-### -field <b>FirmwareRevision</b>
+### -field FirmwareRevision
 
 <dd>
 <p>A string representing the device’s currently active firmware revision.

@@ -57,25 +57,25 @@ typedef struct tagKS_MPEG1VIDEOINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>hdr</b>
+### -field hdr
 
 <dd>
 <p>Specifies a <a href="stream.ks_videoinfoheader">KS_VIDEOINFOHEADER</a> structure that describes the details of the video stream.</p>
 </dd>
 
-### -field <b>dwStartTimeCode</b>
+### -field dwStartTimeCode
 
 <dd>
 <p>A 25-bit "group-of-pictures" time code at the start of data.</p>
 </dd>
 
-### -field <b>cbSequenceHeader</b>
+### -field cbSequenceHeader
 
 <dd>
 <p>The length of the <b>bSequenceHeader</b> member, in bytes.</p>
 </dd>
 
-### -field <b>bSequenceHeader</b>
+### -field bSequenceHeader
 
 <dd>
 <p>The length of the <b>bSequenceHeader</b> member, in bytes.</p>

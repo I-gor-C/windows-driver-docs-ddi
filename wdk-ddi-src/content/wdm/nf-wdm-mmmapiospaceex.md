@@ -57,19 +57,19 @@ PVOID MmMapIoSpace(
 ## -parameters
 <dl>
 
-### -param <i>PhysicalAddress</i> [in]
+### -param PhysicalAddress [in]
 
 <dd>
 <p>Specifies the starting physical address of the I/O range to be mapped.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>Specifies a value greater than zero, indicating the number of bytes to be mapped.</p>
 </dd>
 
-### -param <i>Protect</i> [in]
+### -param Protect [in]
 
 <dd>
 <p>Flag bits that specify the protection to use for the mapped range. The caller must set one of the following flag bits in the <i>Protect</i> parameter.</p>

@@ -60,31 +60,31 @@ typedef struct _DRIVE_LAYOUT_INFORMATION_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>PartitionStyle</b>
+### -field PartitionStyle
 
 <dd>
 <p>Takes a <a href="storage.partition_style">PARTITION_STYLE</a> enumerated value that specifies the type of partition table the disk contains.</p>
 </dd>
 
-### -field <b>PartitionCount</b>
+### -field PartitionCount
 
 <dd>
 <p>Indicates the number of partitions detected on the disk.</p>
 </dd>
 
-### -field <b>Mbr</b>
+### -field Mbr
 
 <dd>
 <p>Indicates the drive layout information for a disk with a Master Boot Record. This member is valid when <b>PartitionStyle</b> is PARTITION_STYLE_MBR.  See the definition of <a href="..\ntdddisk\ns-ntdddisk--drive-layout-information-mbr.md">DRIVE_LAYOUT_INFORMATION_MBR</a> for more information.</p>
 </dd>
 
-### -field <b>Gpt</b>
+### -field Gpt
 
 <dd>
 <p>Indicates the drive layout information for a disk with a GUID Partition Table. This member is valid when <b>PartitionStyle</b> is PARTITION_STYLE_GPT. See definition of <a href="..\ntdddisk\ns-ntdddisk--drive-layout-information-gpt.md">DRIVE_LAYOUT_INFORMATION_GPT</a> for more information. </p>
 </dd>
 
-### -field <b>PartitionEntry</b>
+### -field PartitionEntry
 
 <dd>
 <p>Contains a variable-length array of <a href="..\ntdddisk\ns-ntdddisk--partition-information-ex.md">PARTITION_INFORMATION_EX</a> structures, one for each partition on the drive. </p>

@@ -63,55 +63,55 @@ typedef struct _USB_NODE_CONNECTION_INFORMATION_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>ConnectionIndex</b>
+### -field ConnectionIndex
 
 <dd>
 <p>Contains a value greater than or equal to 1 that specifies the number of the port.</p>
 </dd>
 
-### -field <b>DeviceDescriptor</b>
+### -field DeviceDescriptor
 
 <dd>
 <p>Contains a structure of type <a href="..\usbspec\ns-usbspec--usb-device-descriptor.md">USB_DEVICE_DESCRIPTOR</a> that reports the USB device descriptor returned by the attached device during enumeration.</p>
 </dd>
 
-### -field <b>CurrentConfigurationValue</b>
+### -field CurrentConfigurationValue
 
 <dd>
 <p>Contains the ID used with the SetConfiguration request to specify that current configuration of the device connected to the indicated port. For an explanation of this value, see the Universal Serial Bus Specification.</p>
 </dd>
 
-### -field <b>Speed</b>
+### -field Speed
 
 <dd>
 <p>Contains a value of type <a href="..\usbspec\ne-usbspec--usb-device-speed.md">USB_DEVICE_SPEED</a> that indicates the speed of the device. </p>
 </dd>
 
-### -field <b>DeviceIsHub</b>
+### -field DeviceIsHub
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the device attached to the port is a hub.</p>
 </dd>
 
-### -field <b>DeviceAddress</b>
+### -field DeviceAddress
 
 <dd>
 <p>Contains the USB-assigned, bus-relative address of the device that is attached to the port.</p>
 </dd>
 
-### -field <b>NumberOfOpenPipes</b>
+### -field NumberOfOpenPipes
 
 <dd>
 <p>Indicates the number of open USB pipes associated with the port.</p>
 </dd>
 
-### -field <b>ConnectionStatus</b>
+### -field ConnectionStatus
 
 <dd>
 <p>Contains an enumerator of type <a href="..\usbioctl\ne-usbioctl--usb-connection-status.md">USB_CONNECTION_STATUS</a> that indicates the connection status.</p>
 </dd>
 
-### -field <b>PipeList</b>
+### -field PipeList
 
 <dd>
 <p>Contains an array of structures of type <a href="..\usbioctl\ns-usbioctl--usb-pipe-info.md">USB_PIPE_INFO</a> that describes the open pipes associated with the port. Pipe descriptions include the schedule offset of the pipe and the associated endpoint descriptor. This information can be used to calculate bandwidth usage.</p>

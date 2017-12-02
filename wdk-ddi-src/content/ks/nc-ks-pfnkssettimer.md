@@ -60,25 +60,25 @@ BOOLEAN KStrSetTimer(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to the minidriver-supplied information context. The minidriver passes the information context to <a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a> in the function's <i>DeferredContext</i> parameter when the minidriver allocates a custom DPC timer object.</p>
 </dd>
 
-### -param <i>Timer</i> [in]
+### -param Timer [in]
 
 <dd>
 <p>Pointer to a timer object allocated by the minidriver.</p>
 </dd>
 
-### -param <i>DueTime</i> [in]
+### -param DueTime [in]
 
 <dd>
 <p>Specifies the absolute or relative time at which the timer is to expire. If the value of the <i>DueTime</i> parameter is negative, the expiration time is relative to the current system time. Otherwise, the expiration time is absolute. The expiration time is expressed in system time units (100-nanosecond intervals). Absolute expiration times track any changes in the system time; relative expiration times are not affected by system time changes.</p>
 </dd>
 
-### -param <i>Dpc</i> [in]
+### -param Dpc [in]
 
 <dd>
 <p>Pointer to a DPC object that the minidriver initialized using <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>. This parameter is optional.</p>

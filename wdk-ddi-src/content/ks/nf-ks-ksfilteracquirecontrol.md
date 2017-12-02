@@ -54,7 +54,7 @@ void __inline KsFilterAcquireControl(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>The <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> for which to acquire the control mutex.</p>
@@ -65,7 +65,7 @@ void __inline KsFilterAcquireControl(
 <p>None</p>
 
 ## -remarks
-<p>This function is an inline call to <a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a> with the appropriate typecasting. Minidrivers that manipulate the filter control mutex should call this function instead of calling <b>KsAcquireControl </b>directly. For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>This function is an inline call to <a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a> with the appropriate typecasting. Minidrivers that manipulate the filter control mutex should call this function instead of calling <b>KsAcquireControl </b>directly. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 ## -requirements
 <table>

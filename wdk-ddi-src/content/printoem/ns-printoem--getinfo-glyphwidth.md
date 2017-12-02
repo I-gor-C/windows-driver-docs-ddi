@@ -59,13 +59,13 @@ typedef struct _GETINFO_GLYPHWIDTH {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Size, in bytes, of the GETINFO_GLYPHWIDTH structure. Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
-### -field <b>dwType</b>
+### -field dwType
 
 <dd>
 <p>Specifies the type of the glyph specifier array pointed to by <b>pGlyph</b>. Valid values are:</p>
@@ -80,19 +80,19 @@ typedef struct _GETINFO_GLYPHWIDTH {
 <p>Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
-### -field <b>dwCount</b>
+### -field dwCount
 
 <dd>
 <p>Specifies the number of elements in the array pointed to by <b>pGlyph</b>. Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
-### -field <b>pGlyph</b>
+### -field pGlyph
 
 <dd>
 <p>Pointer to an array of glyph specifiers. The array element type is indicated by <b>dwType</b>. Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
-### -field <b>plWidth</b>
+### -field plWidth
 
 <dd>
 <p>Pointer to a location into which Unidrv's <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function places the width value. The pointer is supplied by the <i>UNIFONTOBJ_GetInfo</i> caller.</p>

@@ -59,25 +59,25 @@ typedef union _PROCESS_READWRITEVM_LOGGING_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>EnableReadVmLogging</b>
+### -field EnableReadVmLogging
 
 <dd>
 <p>Enables or disables read access. Non-zero values enables telemetry, zero disables it.</p>
 </dd>
 
-### -field <b>EnableWriteVmLogging</b>
+### -field EnableWriteVmLogging
 
 <dd>
 <p>Enables or disables write access. Non-zero values enables telemetry, zero disables it.</p>
 </dd>
 
-### -field <b>Unused</b>
+### -field Unused
 
 <dd>
 <p>Do not use.</p>

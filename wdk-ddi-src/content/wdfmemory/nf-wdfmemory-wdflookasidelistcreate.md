@@ -7,7 +7,7 @@ old-location: wdf\wdflookasidelistcreate.htm
 old-project: wdf
 ms.assetid: 37fc86b0-de8c-469b-94bb-ad482b9c7202
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfLookasideListCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ NTSTATUS WdfLookasideListCreate(
 ## -parameters
 <dl>
 
-### -param <i>LookasideAttributes</i> [in, optional]
+### -param LookasideAttributes [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains object attributes for the new lookaside-list object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>The nonzero size, in bytes, of the buffer that the framework will allocate for each memory object. </p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a>-typed value that specifies the type of memory to be allocated. </p>
 </dd>
 
-### -param <i>MemoryAttributes</i> [in, optional]
+### -param MemoryAttributes [in, optional]
 
 <dd>
 <p>A pointer to a <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains object attributes for each memory object that the driver obtains from the lookaside list. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.</p>
 </dd>
 
-### -param <i>PoolTag</i> [in, optional]
+### -param PoolTag [in, optional]
 
 <dd>
 <p>A driver-defined pool tag for each memory object's buffer. Debuggers display this tag. Drivers typically specify a character string of up to four characters, delimited by single quotation marks, in reverse order (for example, 'dcba'). The ASCII value of each character in the tag must be between 0 and 127. Debugging your driver is easier if each pool tag is unique. </p>
@@ -93,7 +93,7 @@ NTSTATUS WdfLookasideListCreate(
 <p>For KMDF versions 1.5 and later, your driver can use the <b>DriverPoolTag</b> member of the <a href="..\wdfdriver\ns-wdfdriver--wdf-driver-config.md">WDF_DRIVER_CONFIG</a> structure to specify a default pool tag.</p>
 </dd>
 
-### -param <i>Lookaside</i> [out]
+### -param Lookaside [out]
 
 <dd>
 <p>A pointer to a location that receives a handle to the new lookaside-list object.</p>
@@ -200,4 +200,4 @@ NTSTATUS WdfLookasideListCreate(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfLookasideListCreate method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfLookasideListCreate method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

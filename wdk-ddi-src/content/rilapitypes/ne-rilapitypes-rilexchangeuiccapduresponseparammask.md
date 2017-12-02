@@ -7,7 +7,7 @@ old-location: netvista\rilexchangeuiccapduresponseparammask_2.htm
 old-project: netvista
 ms.assetid: 6192920a-138b-49d9-ba78-84e3e70cb8df
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILEXCHANGEUICCAPDURESPONSEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_EUAR_RESPONSEAPDU"></a><a id="ril_param_euar_responseapdu"></a><b>RIL_PARAM_EUAR_RESPONSEAPDU</b>
+### -field RIL_PARAM_EUAR_RESPONSEAPDU
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_EUAR_ALL"></a><a id="ril_param_euar_all"></a><b>RIL_PARAM_EUAR_ALL</b>
+### -field RIL_PARAM_EUAR_ALL
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilcallforwardingsettings.htm
 old-project: netvista
 ms.assetid: 3603bc82-0058-43bd-9d45-90c198a20040
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLFORWARDINGSETTINGS, RILCALLFORWARDINGSETTINGS, *LPRILCALLFORWARDINGSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef struct _RILCALLFORWARDINGSETTINGS {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwStatus</b>
+### -field dwStatus
 
 <dd></dd>
 
-### -field <b>dwInfoClasses</b>
+### -field dwInfoClasses
 
 <dd></dd>
 
-### -field <b>raAddress</b>
+### -field raAddress
 
 <dd></dd>
 
-### -field <b>rsaSubAddress</b>
+### -field rsaSubAddress
 
 <dd></dd>
 
-### -field <b>dwDelayTime</b>
+### -field dwDelayTime
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: netvista\ndissendnetbufferlists.htm
 old-project: netvista
 ms.assetid: f615acc4-7e3e-4390-8a6a-e68663fcc162
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisSendNetBufferLists
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ VOID NdisSendNetBufferLists(
 ## -parameters
 <dl>
 
-### -param <i>NdisBindingHandle</i> [in]
+### -param NdisBindingHandle [in]
 
 <dd>
 <p>A handle that identifies the target adapter. A previous call to 
@@ -67,7 +67,7 @@ VOID NdisSendNetBufferLists(
      handle.</p>
 </dd>
 
-### -param <i>NetBufferLists</i> [in]
+### -param NetBufferLists [in]
 
 <dd>
 <p>A pointer to a linked list of 
@@ -76,7 +76,7 @@ VOID NdisSendNetBufferLists(
      <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structures.</p>
 </dd>
 
-### -param <i>PortNumber</i> [in]
+### -param PortNumber [in]
 
 <dd>
 <p>A port number that identifies a miniport adapter port. The default port number of a miniport
@@ -84,7 +84,7 @@ VOID NdisSendNetBufferLists(
      port.</p>
 </dd>
 
-### -param <i>SendFlags</i> [in]
+### -param SendFlags [in]
 
 <dd>
 <p>Flags that define attributes for the send operation. The flags can be combined with an OR
@@ -93,14 +93,14 @@ VOID NdisSendNetBufferLists(
 <p></p>
 <dl>
 
-### -param <a id="NDIS_SEND_FLAGS_DISPATCH_LEVEL"></a><a id="ndis_send_flags_dispatch_level"></a>NDIS_SEND_FLAGS_DISPATCH_LEVEL
+### -param NDIS_SEND_FLAGS_DISPATCH_LEVEL
 
 <dd>
 <p>Specifies that the current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
-       <a href="NULL">Dispatch IRQL Tracking</a>.</p>
+       <a href="netvista.dispatch_irql_tracking">Dispatch IRQL Tracking</a>.</p>
 </dd>
 
-### -param <a id="NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK"></a><a id="ndis_send_flags_check_for_loopback"></a>NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK
+### -param NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK
 
 <dd>
 <p>Specifies that NDIS should check for loopback. By default, NDIS does not loop back data to the
@@ -292,4 +292,4 @@ VOID NdisSendNetBufferLists(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSendNetBufferLists function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSendNetBufferLists function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

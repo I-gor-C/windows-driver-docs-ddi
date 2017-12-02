@@ -55,13 +55,13 @@ typedef enum _DXGK_DISPLAY_DESCRIPTOR_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_DDT_INVALID"></a><a id="dxgk_ddt_invalid"></a><b>DXGK_DDT_INVALID</b>
+### -field DXGK_DDT_INVALID
 
 <dd>
 <p>Invalid type.</p>
 </dd>
 
-### -field <a id="DXGK_DDT_EDID"></a><a id="dxgk_ddt_edid"></a><b>DXGK_DDT_EDID</b>
+### -field DXGK_DDT_EDID
 
 <dd>
 <p>A VESA EDID descriptor.</p>

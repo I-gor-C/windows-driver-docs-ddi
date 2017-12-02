@@ -72,109 +72,109 @@ typedef struct _MINIPORT_DUMP_POINTERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Set to DUMP_MINIPORT_VERSION_1.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Set to sizeof(MINIPORT_DUMP_POINTERS).</p>
 </dd>
 
-### -field <b>DriverName</b>
+### -field DriverName
 
 <dd>
 <p>The wide-character name of the miniport driver without path information (for example, Miniport.sys).</p>
 </dd>
 
-### -field <b>AdapterObject</b>
+### -field AdapterObject
 
 <dd>
 <p>Set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>MappedRegisterBase</b>
+### -field MappedRegisterBase
 
 <dd>
 <p>Set to zero.</p>
 </dd>
 
-### -field <b>CommonBufferSize</b>
+### -field CommonBufferSize
 
 <dd>
 <p>The size of the common buffer that is required. The size must not be greater than 64 KB (65,536 bytes).</p>
 </dd>
 
-### -field <b>MiniportPrivateDumpData</b>
+### -field MiniportPrivateDumpData
 
 <dd>
 <p>The context that is to be passed to the miniport driver's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine during the crash dump. The context is passed in the <b>Reserved</b> member or, starting with Windows 8, the <b>MiniportDumpData</b> member of the <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a> structure.</p>
 </dd>
 
-### -field <b>SystemIoBusNumber</b>
+### -field SystemIoBusNumber
 
 <dd>
 <p>Specifies the system-assigned number of the I/O bus to which the HBA is connected. The Storport driver initializes this member. Miniport drivers that work with the Storport driver must not change this member. For more information, see the <b>SystemIoBusNumber</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
-### -field <b>AdapterInterfaceType</b>
+### -field AdapterInterfaceType
 
 <dd>
 <p>Identifies the I/O bus interface. The Storport driver initializes this member. Miniport drivers that work with the Storport driver must not modify this member. For more information, see the <b>AdapterInterfaceType</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
-### -field <b>MaximumTransferLength</b>
+### -field MaximumTransferLength
 
 <dd>
 <p>Specifies the maximum number of bytes the HBA can transfer in a single transfer operation in crashdump mode. By default, the value of this member is SP_UNINITIALIZED_VALUE, which indicates an unlimited maximum transfer size. This value is specific to the dump operation of the miniport and may differ from the value in the <b>MaximumTransferLength</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
-### -field <b>NumberOfPhysicalBreaks</b>
+### -field NumberOfPhysicalBreaks
 
 <dd>
 <p>Specifies the maximum number of breaks between address ranges that a data buffer can have to create scatter/gather lists. In other words, the number of scatter/gather list entries that the adapter can support minus one. For more information, see the <b>NumberOfPhysicalBreaks</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
-### -field <b>AlignmentMask</b>
+### -field AlignmentMask
 
 <dd>
 <p>Contains a mask that indicates the alignment restrictions for buffers that are required by the HBA for transfer operations. Valid mask values are also restricted by characteristics of the memory managers on different versions of the Microsoft Windows operating systems. The valid mask values are 0 (byte aligned), 0x1 (word aligned), 0x3 (DWORD aligned), and 0x7 (double DWORD aligned). The miniport driver should set this mask if the HBA supports scatter/gather. The same considerations apply to the <b>AlignmentMask</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
-### -field <b>NumberOfAccessRanges</b>
+### -field NumberOfAccessRanges
 
 <dd>
 <p>Specifies the number of <b>AccessRanges</b> elements in the array. For more information, see the <b>NumberOfAccessRanges</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
-### -field <b>(*AccessRanges)</b>
+### -field (*AccessRanges)
 
 <dd>
 <p>A pointer to an array of ACCESS_RANGE-type elements. The Storport driver initializes this member. Miniport drivers that work with the Storport driver must not change this member. For more information, see the <b>AccessRanges</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>.</p>
 </dd>
 
-### -field <b>NumberOfBuses</b>
+### -field NumberOfBuses
 
 <dd>
 <p>Specifies the number of buses that are controlled by the adapter. By default, the value of this member is zero. For more information, see the <b>NumberOfBuses</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
-### -field <b>Master</b>
+### -field Master
 
 <dd>
 <p>Indicates, when <b>TRUE</b>, that the HBA is a bus master. The Storport driver initializes this member to <b>TRUE</b>, because its miniport drivers must support bus-mastering DMA. Miniport drivers that work with the Storport driver must not change this value. For more information, see the <b>Master</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
-### -field <b>MapBuffers</b>
+### -field MapBuffers
 
 <dd>
 <p>Indicates whether the Storport driver maps SRB data buffer addresses to system virtual addresses. For more information, see the <b>MapBuffers</b> member of <a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a>.</p>
 </dd>
 
-### -field <b>MaximumNumberOfTargets</b>
+### -field MaximumNumberOfTargets
 
 <dd>
 <p>Specifies the number of target peripherals that the adapter can control. For more information, see the <b>MaximumNumberOfTargets</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>

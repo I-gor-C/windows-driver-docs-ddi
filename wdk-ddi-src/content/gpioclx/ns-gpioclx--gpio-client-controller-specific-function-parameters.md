@@ -58,31 +58,31 @@ typedef struct _GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>InputBuffer</b>
+### -field InputBuffer
 
 <dd>
 <p>A pointer to an input buffer from which the general-purpose I/O (GPIO) controller driver reads the input parameters for the controller-specific operation. This member can be NULL if the operation does not require input parameters.</p>
 </dd>
 
-### -field <b>InputBufferLength</b>
+### -field InputBufferLength
 
 <dd>
 <p>The size, in bytes, of the input buffer pointed to by <b>InputBuffer</b>.</p>
 </dd>
 
-### -field <b>OutputBuffer</b>
+### -field OutputBuffer
 
 <dd>
 <p>A pointer to an output buffer to which the GPIO controller driver writes the results for the controller-specific operation. This member can be NULL if the operation does not require output parameters.</p>
 </dd>
 
-### -field <b>OutputBufferLength</b>
+### -field OutputBufferLength
 
 <dd>
 <p>The size, in bytes, of the output buffer pointed to by <b>OutputBuffer</b>.</p>
 </dd>
 
-### -field <b>BytesWritten</b>
+### -field BytesWritten
 
 <dd>
 <p>The number of bytes written to the output buffer. The GPIO controller driver sets the value of this member to indicate how much data was written to the output buffer. If no data was written to the output buffer, or if <b>OutputBuffer</b> = NULL, the driver should set <b>BytesWritten</b> = 0.</p>

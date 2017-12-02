@@ -59,33 +59,33 @@ typedef struct _MS_SMHBA_PORTATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>PortType</b>
+### -field PortType
 
 <dd>
 <p>An integer that indicates the port type of the SMHBA port.</p>
 </dd>
 
-### -field <b>PortState</b>
+### -field PortState
 
 <dd>
 <p>An integer that indicates the current state of the SMHBA port.</p>
 </dd>
 
-### -field <b>PortSpecificAttributesSize</b>
+### -field PortSpecificAttributesSize
 
 <dd></dd>
 
-### -field <b>OSDeviceName</b>
+### -field OSDeviceName
 
 <dd>
 <p>A nonpersistent operating system target name, for example "\Device\HarddiskVolume1".</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd></dd>
 
-### -field <b>PortSpecificAttributes</b>
+### -field PortSpecificAttributes
 
 <dd></dd>
 </dl>

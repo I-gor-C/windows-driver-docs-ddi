@@ -58,19 +58,19 @@ BOOL DrvQueryJobAttributes(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd>
 <p>Caller-supplied printer handle.</p>
 </dd>
 
-### -param <i>pDevMode</i> [in]
+### -param pDevMode [in]
 
 <dd>
 <p>Caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure.</p>
 </dd>
 
-### -param <i>dwLevel</i> [in]
+### -param dwLevel [in]
 
 <dd>
 <p>Caller-supplied value indicating the type of structure pointed to by <i>lpAttributeInfo</i>, as indicated in the following table.</p>
@@ -123,7 +123,7 @@ BOOL DrvQueryJobAttributes(
 <p> </p>
 </dd>
 
-### -param <i>lpAttributeInfo</i> [out]
+### -param lpAttributeInfo [out]
 
 <dd>
 <p>Caller-supplied pointer to a structure identified by <i>dwLevel</i>.</p>
@@ -134,7 +134,7 @@ BOOL DrvQueryJobAttributes(
 <p>If the operation succeeds, the function should return <b>TRUE</b>. Otherwise, it should return <b>FALSE</b>. Returning <b>FALSE</b> causes the current print job to be canceled.</p>
 
 ## -remarks
-<p>A <a href="NULL">printer interface DLL</a> can optionally provide a <b>DrvQueryJobAttributes</b> function. If the function is provided, it should fill in the supplied structure, described by <i>dwLevel</i> and <i>plAttributeInfo</i>, to indicate the current print job's user-requested attributes (such as N-up parameters and the number of copies) and the driver's ability to support those attributes. The function is typically called by the EMF print processor, so it can determine which job attributes can be handled by the driver (or printer), and which must be handled by the print processor.</p>
+<p>A <a href="https://msdn.microsoft.com/2a8cf38f-8e27-4e08-9c0f-5d1a4cd854ac">printer interface DLL</a> can optionally provide a <b>DrvQueryJobAttributes</b> function. If the function is provided, it should fill in the supplied structure, described by <i>dwLevel</i> and <i>plAttributeInfo</i>, to indicate the current print job's user-requested attributes (such as N-up parameters and the number of copies) and the driver's ability to support those attributes. The function is typically called by the EMF print processor, so it can determine which job attributes can be handled by the driver (or printer), and which must be handled by the print processor.</p>
 
 <p>For descriptions of the job attributes that the function can specify, see the descriptions of <a href="..\winddiui\ns-winddiui--attribute-info-1.md">ATTRIBUTE_INFO_1</a>, <a href="..\winddiui\ns-winddiui--attribute-info-2.md">ATTRIBUTE_INFO_2</a>, <a href="..\winddiui\ns-winddiui--attribute-info-3.md">ATTRIBUTE_INFO_3</a>, and <a href="..\winddiui\ns-winddiui--attribute-info-4.md">ATTRIBUTE_INFO_4</a>.</p>
 

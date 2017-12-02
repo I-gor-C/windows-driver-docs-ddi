@@ -56,19 +56,19 @@ typedef struct _SM_SetPersistentBinding_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.</p>
 </dd>
 
-### -field <b>OutStatusCount</b>
+### -field OutStatusCount
 
 <dd>
 <p>The number of entries.</p>
 </dd>
 
-### -field <b>EntryStatus</b>
+### -field EntryStatus
 
 <dd>
 <p>The status of each entry.</p>

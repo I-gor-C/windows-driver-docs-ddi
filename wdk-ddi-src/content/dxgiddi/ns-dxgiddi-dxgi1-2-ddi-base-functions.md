@@ -68,91 +68,91 @@ typedef struct _DXGI1_2_DDI_BASE_FUNCTIONS {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnPresent</b>
+### -field pfnPresent
 
 <dd>
 <p>A pointer to the driver's <a href="display.presentdxgi">PresentDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnGetGammaCaps</b>
+### -field pfnGetGammaCaps
 
 <dd>
 <p>A pointer to the driver's <a href="display.getgammacapsdxgi">GetGammaCapsDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnSetDisplayMode</b>
+### -field pfnSetDisplayMode
 
 <dd>
 <p>A pointer to the driver's <a href="display.setdisplaymodedxgi">SetDisplayModeDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnSetResourcePriority</b>
+### -field pfnSetResourcePriority
 
 <dd>
 <p>A pointer to the driver's <a href="display.setresourceprioritydxgi">SetResourcePriorityDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnQueryResourceResidency</b>
+### -field pfnQueryResourceResidency
 
 <dd>
 <p>A pointer to the driver's <a href="display.queryresourceresidencydxgi">QueryResourceResidencyDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnRotateResourceIdentities</b>
+### -field pfnRotateResourceIdentities
 
 <dd>
 <p>A pointer to the driver's <a href="display.rotateresourceidentitiesdxgi">RotateResourceIdentitiesDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnBlt</b>
+### -field pfnBlt
 
 <dd>
 <p>A pointer to the driver's <a href="display.bltdxgi">BltDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnResolveSharedResource</b>
+### -field pfnResolveSharedResource
 
 <dd>
 <p>A pointer to the driver's <a href="display.resolvesharedresourcedxgi">ResolveSharedResourceDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnBlt1</b>
+### -field pfnBlt1
 
 <dd>
 <p>A pointer to the driver's  <a href="display.blt1dxgi">Blt1DXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnOfferResources</b>
+### -field pfnOfferResources
 
 <dd>
 <p>A pointer to the driver's <a href="display.pfnofferresources">pfnOfferResources</a> function.</p>
 </dd>
 
-### -field <b>pfnReclaimResources</b>
+### -field pfnReclaimResources
 
 <dd>
 <p>A pointer to the driver's <a href="display.pfnreclaimresources">pfnReclaimResources</a> function.</p>
 </dd>
 
-### -field <b>pfnGetMultiPlaneOverlayCaps</b>
+### -field pfnGetMultiPlaneOverlayCaps
 
 <dd>
 <p>A pointer to the driver's <a href="display.pfngetmultiplaneoverlaycaps">pfnGetMultiPlaneOverlayCaps</a> function. Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>pfnGetMultiPlaneOverlayFilterRange</b>
+### -field pfnGetMultiPlaneOverlayFilterRange
 
 <dd>
 <p>This member is reserved and should be set to zero. Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>pfnCheckMultiPlaneOverlaySupport</b>
+### -field pfnCheckMultiPlaneOverlaySupport
 
 <dd>
 <p>A pointer to the driver's <a href="display.pfncheckmultiplaneoverlaysupport__dxgi_">pfnCheckMultiPlaneOverlaySupport (DXGI)</a> function. Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>pfnPresentMultiPlaneOverlay</b>
+### -field pfnPresentMultiPlaneOverlay
 
 <dd>
 <p>A pointer to the driver's <a href="display.pfnpresentmultiplaneoverlay__dxgi_">pfnPresentMultiplaneOverlay (DXGI)</a> function. Supported starting with Windows 8.1.</p>

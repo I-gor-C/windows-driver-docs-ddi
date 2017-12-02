@@ -7,7 +7,7 @@ old-location: netvista\fwpmengineopen0.htm
 old-project: netvista
 ms.assetid: 4d805ffe-7cf9-4cbc-9077-e191ddc24ecd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,14 +59,14 @@ NTSTATUS NTAPI FwpmEngineOpen0(
 ## -parameters
 <dl>
 
-### -param <i>serverName</i> [in, optional]
+### -param serverName [in, optional]
 
 <dd>
 <p>A pointer to a NULL-terminated string that specifies the standard DNS name of the system on which
      the session to the filter engine is opened. Callout drivers must specify <b>NULL</b> for this parameter.</p>
 </dd>
 
-### -param <i>authnService</i> [in]
+### -param authnService [in]
 
 <dd>
 <p>The authentication service to use. For a list of valid choices for this parameter, see
@@ -74,7 +74,7 @@ NTSTATUS NTAPI FwpmEngineOpen0(
      drivers must specify either RPC_C_AUTHN_WINNT or RPC_C_AUTHN_DEFAULT for this parameter.</p>
 </dd>
 
-### -param <i>authIdentity</i> [in, optional]
+### -param authIdentity [in, optional]
 
 <dd>
 <p>A pointer to a <b>SEC_WINNT_AUTH_IDENTITY_W</b> structure that contains the authentication and
@@ -83,7 +83,7 @@ NTSTATUS NTAPI FwpmEngineOpen0(
      parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>session</i> [in, optional]
+### -param session [in, optional]
 
 <dd>
 <p>A pointer to an 
@@ -92,7 +92,7 @@ NTSTATUS NTAPI FwpmEngineOpen0(
      <b>NULL</b>.</p>
 </dd>
 
-### -param <i>engineHandle</i> [out]
+### -param engineHandle [out]
 
 <dd>
 <p>A pointer to a variable that receives a handle for the open session to the filter engine.</p>
@@ -209,4 +209,4 @@ NTSTATUS NTAPI FwpmEngineOpen0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmEngineOpen0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmEngineOpen0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

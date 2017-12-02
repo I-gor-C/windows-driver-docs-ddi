@@ -65,43 +65,43 @@ typedef struct _DXVADDI_VIDEOSAMPLEFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>PaletteChanged</b>
+### -field PaletteChanged
 
 <dd>
 <p>A UINT value that specifies whether the palette of the sample frame changed. Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>SrcRectChanged</b>
+### -field SrcRectChanged
 
 <dd>
 <p>A UINT value that specifies whether the source rectangle of the sample frame changed. Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>DstRectChanged</b>
+### -field DstRectChanged
 
 <dd>
 <p>A UINT value that specifies whether the destination rectangle of the sample frame changed. Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>ColorDataChanged</b>
+### -field ColorDataChanged
 
 <dd>
 <p>A UINT value that specifies whether the color data of the sample frame changed. Setting this member is equivalent to setting the fourth bit of the 32-bit <b>Value</b> member (0x00000008).</p>
 </dd>
 
-### -field <b>PlanarAlphaChanged</b>
+### -field PlanarAlphaChanged
 
 <dd>
 <p>A UINT value that specifies whether the alpha (transparency) data of the sample frame changed. Setting this member is equivalent to setting the fourth bit of the 32-bit <b>Value</b> member (0x00000008).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the sixth through sixteenth bits (0x0000FFE0) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>SampleData</b>
+### -field SampleData
 
 <dd>
 <p>A UINT value that contains video sample data. Setting this member is equivalent to setting the seventeenth through thirty-second bits (0xFFFF0000) of the 32-bit <b>Value</b> member. The following bits can be set:</p>
@@ -110,7 +110,7 @@ typedef struct _DXVADDI_VIDEOSAMPLEFLAGS {
 <p>DXVADDI_SAMPLEDATA_RFF_TFF_PRESENT (0x0004) </p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that is contained in DXVADDI_VIDEOSAMPLEFLAGS that can hold one 32-bit value that identifies changes in the current sample frame from the previous sample frame.</p>

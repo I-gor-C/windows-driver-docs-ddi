@@ -7,7 +7,7 @@ old-location: netvista\wdi_exemption_action_type.htm
 old-project: netvista
 ms.assetid: 46640961-828c-411b-b1b9-bcceb04bdf17
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef enum _WDI_EXEMPTION_ACTION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_EXEMPT_NO_EXEMPTION"></a><a id="wdi_exempt_no_exemption"></a><b>WDI_EXEMPT_NO_EXEMPTION</b>
+### -field WDI_EXEMPT_NO_EXEMPTION
 
 <dd>
 <p>Packets are not exempt from any cipher operations performed by the port.</p>
 </dd>
 
-### -field <a id="WDI_EXEMPT_ALWAYS"></a><a id="wdi_exempt_always"></a><b>WDI_EXEMPT_ALWAYS</b>
+### -field WDI_EXEMPT_ALWAYS
 
 <dd>
 <p>On send, packets are exempt from cipher operations and are transmitted unencrypted. On receive, the received packet is discarded if the Protected Frame subfield of the Frame Control field in the 802.11 MAC header is set to 1.</p>
 </dd>
 
-### -field <a id="WDI_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE"></a><a id="wdi_exempt_on_key_mapping_key_unavailable"></a><b>WDI_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE</b>
+### -field WDI_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE
 
 <dd>
 <p>On send, packets are exempt from cipher operations if there is no key-mapping key for the packet's destination MAC address. On receive, the received packet is discarded if a key-mapping key for the source MAC address is available and the Protected Frame subfield of the Frame Control field in the 802.11 MAC header is set to 0.</p>

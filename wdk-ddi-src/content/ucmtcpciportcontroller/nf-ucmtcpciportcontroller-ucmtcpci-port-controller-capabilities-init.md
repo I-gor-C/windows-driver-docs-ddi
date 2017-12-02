@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-                        Initializes the <a href="buses.ucmtcpci_port_controller_capabilities">UCMTCPCI_PORT_CONTROLLER_CAPABILITIES</a> structure.
+                        Initializes the <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller--ucmtcpci-port-controller-capabilities.md">UCMTCPCI_PORT_CONTROLLER_CAPABILITIES</a> structure.
                 </p>
 
 
@@ -57,10 +57,10 @@ VOID UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Capabilities</i> [out]
+### -param Capabilities [out]
 
 <dd>
-<p>A pointer to the driver-allocated <a href="buses.ucmtcpci_port_controller_capabilities">UCMTCPCI_PORT_CONTROLLER_CAPABILITIE</a>S structure.</p>
+<p>A pointer to the driver-allocated <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller--ucmtcpci-port-controller-capabilities.md">UCMTCPCI_PORT_CONTROLLER_CAPABILITIE</a>S structure.</p>
 </dd>
 </dl>
 
@@ -111,7 +111,7 @@ VOID UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>
+<a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>
 </dt>
 </dl>
 <p> </p>

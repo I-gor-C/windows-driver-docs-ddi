@@ -61,49 +61,49 @@ typedef struct _PO_FX_CORE_DEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of this structure.</p>
 </dd>
 
-### -field <b>ComponentCount</b>
+### -field ComponentCount
 
 <dd>
 <p>The number of elements in the <b>Components</b> array at the end of this structure. This count includes all elements of the array, and includes both the first element, which is a member of this structure,  and any additional elements that follow the end of this structure.</p>
 </dd>
 
-### -field <b>ComponentActiveConditionCallback</b>
+### -field ComponentActiveConditionCallback
 
 <dd>
 <p>A pointer to a  <a href="kernel.componentactiveconditioncallback">ComponentActiveConditionCallback</a> callback routine. PoFx calls this routine to notify the driver that the specified component completed a transition from the idle condition to the active condition.</p>
 </dd>
 
-### -field <b>ComponentIdleConditionCallback</b>
+### -field ComponentIdleConditionCallback
 
 <dd>
 <p>A pointer to a <a href="kernel.componentidleconditioncallback">ComponentIdleConditionCallback</a> callback routine. PoFx calls this routine to notify the driver that the specified component completed a transition from the active condition to the idle condition.</p>
 </dd>
 
-### -field <b>ComponentCriticalTransitionCallback</b>
+### -field ComponentCriticalTransitionCallback
 
 <dd>
 <p>A pointer to a <a href="kernel.componentcriticaltransitioncallback">ComponentCriticalTransitionCallback</a> callback routine. PoFx calls this routine to notify the driver that the specified component is about to make a transition between the idle condition and the active condition.</p>
 </dd>
 
-### -field <b>ComponentIdleStateCallback</b>
+### -field ComponentIdleStateCallback
 
 <dd>
 <p>A pointer to a <a href="kernel.componentidlestatecallback">ComponentIdleStateCallback</a> callback routine. PoFx calls this routine to notify the driver of a pending change to the F<i>x</i> power state of the specified component.</p>
 </dd>
 
-### -field <b>DeviceContext</b>
+### -field DeviceContext
 
 <dd>
 <p>A pointer to a PEP-defined device context. PoFx supplies this pointer as the first parameter in calls to the <i>ComponentActiveConditionCallback</i>, <i>ComponentIdleConditionCallback</i>, <i>ComponentCriticalTransitionCallback</i>, and <i>ComponentIdleStateCallback</i> routines. This context is opaque to PoFx.</p>
 </dd>
 
-### -field <b>Components</b>
+### -field Components
 
 <dd>
 <p>The first element in an array of <a href="kernel.po_fx_component">PO_FX_COMPONENT</a> structures. Each element in the array describes the power attributes of a component in the device. If the array contains more than one element, the additional elements immediately follow the end of the <b>PO_FX_CORE_DEVICE</b> structure. The number of elements in the array is specified in the <b>ComponentCount</b> member of the <b>PO_FX_CORE_DEVICE</b> structure.</p>

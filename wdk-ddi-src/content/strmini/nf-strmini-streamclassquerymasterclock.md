@@ -58,25 +58,25 @@ VOID StreamClassQueryMasterClock(
 ## -parameters
 <dl>
 
-### -param <i>HwStreamObject</i> [in]
+### -param HwStreamObject [in]
 
 <dd>
 <p>Pointer to a <a href="..\strmini\ns-strmini--hw-stream-object~r1.md">HW_STREAM_OBJECT</a> indicating the stream that is querying its master clock. The stream may only have one query pending at a time. The class driver passes this value to the callback in the <b>HwStreamObject</b> member of the callback's <i>TimeContext</i> parameter.</p>
 </dd>
 
-### -param <i>MasterClockHandle</i> [in]
+### -param MasterClockHandle [in]
 
 <dd>
 <p>Specifies the handle for the master clock that is being queried. The class driver passes this in the SRB_INDICATE_MASTER_CLOCK request to the minidriver's <a href="stream.strminireceivestreamcontrolpacket">StrMiniReceiveStreamControlPacket</a> routine.</p>
 </dd>
 
-### -param <i>TimeFunction</i> [in]
+### -param TimeFunction [in]
 
 <dd>
 <p>Specifies what time function to query the master clock for. See <a href="..\strmini\ns-strmini--hw-time-context.md">HW_TIME_CONTEXT</a> for the possible values. The class driver passes this value to the callback in the <b>Function</b> member of the <i>TimeContext</i> parameter.</p>
 </dd>
 
-### -param <i>ClockCallbackRoutine</i> [in]
+### -param ClockCallbackRoutine [in]
 
 <dd>
 <p>Specifies the routine to which the class driver passes the results. The function prototype must be:</p>

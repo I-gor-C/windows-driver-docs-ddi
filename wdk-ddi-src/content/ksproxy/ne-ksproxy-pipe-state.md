@@ -58,23 +58,23 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="PipeState_DontCare"></a><a id="pipestate_dontcare"></a><a id="PIPESTATE_DONTCARE"></a><b>PipeState_DontCare</b>
+### -field PipeState_DontCare
 
 <dd></dd>
 
-### -field <a id="PipeState_RangeNotFixed"></a><a id="pipestate_rangenotfixed"></a><a id="PIPESTATE_RANGENOTFIXED"></a><b>PipeState_RangeNotFixed</b>
+### -field PipeState_RangeNotFixed
 
 <dd></dd>
 
-### -field <a id="PipeState_RangeFixed"></a><a id="pipestate_rangefixed"></a><a id="PIPESTATE_RANGEFIXED"></a><b>PipeState_RangeFixed</b>
+### -field PipeState_RangeFixed
 
 <dd></dd>
 
-### -field <a id="PipeState_CompressionUnknown"></a><a id="pipestate_compressionunknown"></a><a id="PIPESTATE_COMPRESSIONUNKNOWN"></a><b>PipeState_CompressionUnknown</b>
+### -field PipeState_CompressionUnknown
 
 <dd></dd>
 
-### -field <a id="PipeState_Finalized"></a><a id="pipestate_finalized"></a><a id="PIPESTATE_FINALIZED"></a><b>PipeState_Finalized</b>
+### -field PipeState_Finalized
 
 <dd></dd>
 </dl>

@@ -57,13 +57,13 @@ NTSTATUS KsGetBusEnumParentFDOFromChildPDO(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the child's PDO.</p>
 </dd>
 
-### -param <i>FunctionalDeviceObject</i> [out]
+### -param FunctionalDeviceObject [out]
 
 <dd>
 <p>Pointer to the device object to receive the parent's FDO.</p>

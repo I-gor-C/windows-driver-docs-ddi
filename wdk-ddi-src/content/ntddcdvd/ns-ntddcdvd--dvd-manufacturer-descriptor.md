@@ -54,7 +54,7 @@ typedef struct _DVD_MANUFACTURER_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>ManufacturingInformation</b>
+### -field ManufacturingInformation
 
 <dd>
 <p>Contains an array holding the manufacturing information taken from the DVD media lead-in area. In the case of DVD-R multisession disc, this information is taken from the last border-in area.</p>

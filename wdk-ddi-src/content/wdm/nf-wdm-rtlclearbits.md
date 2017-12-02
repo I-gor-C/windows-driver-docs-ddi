@@ -57,19 +57,19 @@ VOID RtlClearBits(
 ## -parameters
 <dl>
 
-### -param <i>BitMapHeader</i> [in]
+### -param BitMapHeader [in]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a> routine.</p>
 </dd>
 
-### -param <i>StartingIndex</i> [in]
+### -param StartingIndex [in]
 
 <dd>
 <p>The index of the first bit in the bit range that is to be cleared. If the bitmap contains N bits, the bits are numbered from 0 to N-1.</p>
 </dd>
 
-### -param <i>NumberToClear</i> [in]
+### -param NumberToClear [in]
 
 <dd>
 <p>Specifies how many bits to clear. If the bitmap contains N bits, this parameter can be a value in the range 1 to (N - <i>StartingIndex</i>).</p>

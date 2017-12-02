@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_send_and_invalidate.htm
 old-project: netvista
 ms.assetid: 7E344DFA-159A-4084-905A-0A0F9F102051
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,34 +62,34 @@ NTSTATUS NDK_FN_SEND_AND_INVALIDATE(
 ## -parameters
 <dl>
 
-### -param <i>pNdkQp</i> [in]
+### -param pNdkQp [in]
 
 <dd>
 <p>A pointer to an NDK queue pair (QP) object
 (<a href="..\ndkpi\ns-ndkpi--ndk-qp.md">NDK_QP</a>).</p>
 </dd>
 
-### -param <i>RequestContext</i> [in, optional]
+### -param RequestContext [in, optional]
 
 <dd>
 <p>A context value to be returned in the <b>RequestContext</b> member of the <a href="..\ndkpi\ns-ndkpi--ndk-result-ex.md">NDK_RESULT_EX</a> structure for this request.
 </p>
 </dd>
 
-### -param <i>pSgl</i> 
+### -param pSgl 
 
 <dd>
 <p>An array of SGE (<a href="..\ndkpi\ns-ndkpi--ndk-sge.md">NDK_SGE</a>)  structures that represent the buffers holding the data to send.</p>
 </dd>
 
-### -param <i>nSge</i> [in]
+### -param nSge [in]
 
 <dd>
 <p>The number of SGE structures in the array  that is specified in the <i>pSgl</i>
 parameter.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A bitwise OR of flags that specify the operations that are allowed. The following flags are supported:</p>
@@ -101,7 +101,7 @@ parameter.</p>
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_SILENT_SUCCESS"></a><a id="ndk_op_flag_silent_success"></a><dl>
 
-### -param <b>NDK_OP_FLAG_SILENT_SUCCESS</b>
+### -param NDK_OP_FLAG_SILENT_SUCCESS
 
 
 ### -param 0x00000001
@@ -115,7 +115,7 @@ parameter.</p>
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_READ_FENCE"></a><a id="ndk_op_flag_read_fence"></a><dl>
 
-### -param <b>NDK_OP_FLAG_READ_FENCE</b>
+### -param NDK_OP_FLAG_READ_FENCE
 
 
 ### -param 0x00000002
@@ -129,7 +129,7 @@ parameter.</p>
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_SEND_AND_SOLICIT_EVENT"></a><a id="ndk_op_flag_send_and_solicit_event"></a><dl>
 
-### -param <b>NDK_OP_FLAG_SEND_AND_SOLICIT_EVENT</b>
+### -param NDK_OP_FLAG_SEND_AND_SOLICIT_EVENT
 
 
 ### -param 0x00000004
@@ -143,7 +143,7 @@ parameter.</p>
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_INLINE"></a><a id="ndk_op_flag_inline"></a><dl>
 
-### -param <b>NDK_OP_FLAG_INLINE</b>
+### -param NDK_OP_FLAG_INLINE
 
 
 ### -param 0x00000040
@@ -157,7 +157,7 @@ parameter.</p>
 <tr>
 <td width="40%"><a id="NDK_OP_FLAG_DEFER"></a><a id="ndk_op_flag_defer"></a><dl>
 
-### -param <b>NDK_OP_FLAG_DEFER</b>
+### -param NDK_OP_FLAG_DEFER
 
 
 ### -param 0x00000200
@@ -165,7 +165,7 @@ parameter.</p>
 </dl>
 </td>
 <td width="60%">
-<p>Indicates to the NDK provider that it may defer indicating the request to hardware for processing. For more information about this flag, see <a href="NULL">NDKPI Deferred Processing Scheme</a>.</p>
+<p>Indicates to the NDK provider that it may defer indicating the request to hardware for processing. For more information about this flag, see <a href="netvista.ndkpi_deferred_processing_scheme">NDKPI Deferred Processing Scheme</a>.</p>
 <p><b>Note</b>  This flag is supported only in NDKPI 1.2 (Windows Server 2012 R2) and later.</p>
 </td>
 </tr>
@@ -173,7 +173,7 @@ parameter.</p>
 <p> </p>
 </dd>
 
-### -param <i>RemoteToken</i> [in]
+### -param RemoteToken [in]
 
 <dd>
 <p>The remote token to be invalidated at the peer upon receive completion. The NDK provider at the receiving peer must abort the connection, as specified by lower layer transport rules, if an invalid token was specified by the sending peer.</p>
@@ -263,15 +263,15 @@ parameter.</p>
 <a href="..\ndkpi\ns-ndkpi--ndk-sge.md">NDK_SGE</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Completion Handling Requirements</a>
+<a href="netvista.ndkpi_completion_handling_requirements">NDKPI Completion Handling Requirements</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Deferred Processing Scheme</a>
+<a href="netvista.ndkpi_deferred_processing_scheme">NDKPI Deferred Processing Scheme</a>
 </dt>
 <dt>
-<a href="NULL">NDKPI Work Request Posting Requirements</a>
+<a href="netvista.ndkpi_work_request_posting_requirements">NDKPI Work Request Posting Requirements</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_SEND_AND_INVALIDATE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_SEND_AND_INVALIDATE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

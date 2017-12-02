@@ -56,19 +56,19 @@ NTSTATUS GetSupportedDeviceFormats(
 ## -parameters
 <dl>
 
-### -param <i>ulNodeId</i> [in]
+### -param ulNodeId [in]
 
 <dd>
 <p>The ID of the node that represents the audio device.</p>
 </dd>
 
-### -param <i>pFormats</i> [out]
+### -param pFormats [out]
 
 <dd>
 <p>A structure of type <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff563441(v=vs.85).aspx">KSMULTIPLE_ITEM</a> that points to the array of audio data formats supported by the audio device.</p>
 </dd>
 
-### -param <i>ulBufferSize</i> [in]
+### -param ulBufferSize [in]
 
 <dd>
 <p>The buffer size for the audio data format information.</p>

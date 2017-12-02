@@ -55,13 +55,13 @@ typedef enum _WRITE_ROTATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="CdromDefaultRotation"></a><a id="cdromdefaultrotation"></a><a id="CDROMDEFAULTROTATION"></a><b>CdromDefaultRotation</b>
+### -field CdromDefaultRotation
 
 <dd>
 <p>The CD-ROM drive uses the (default) constant linear velocity (CLV) method when it writes to a CD.</p>
 </dd>
 
-### -field <a id="CdromCAVRotation"></a><a id="cdromcavrotation"></a><a id="CDROMCAVROTATION"></a><b>CdromCAVRotation</b>
+### -field CdromCAVRotation
 
 <dd>
 <p>The CD-ROM drive uses the (default) constant angular velocity (CAV) method when it writes to a CD.</p>

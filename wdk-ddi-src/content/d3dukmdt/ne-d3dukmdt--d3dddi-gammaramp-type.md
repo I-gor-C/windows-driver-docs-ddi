@@ -60,31 +60,31 @@ typedef enum _D3DDDI_GAMMARAMP_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_GAMMARAMP_UNINITIALIZED"></a><a id="d3dddi_gammaramp_uninitialized"></a><b>D3DDDI_GAMMARAMP_UNINITIALIZED</b>
+### -field D3DDDI_GAMMARAMP_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DDDI_GAMMARAMP_TYPE has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DDDI_GAMMARAMP_DEFAULT"></a><a id="d3dddi_gammaramp_default"></a><b>D3DDDI_GAMMARAMP_DEFAULT</b>
+### -field D3DDDI_GAMMARAMP_DEFAULT
 
 <dd>
 <p>Indicates the default gamma ramp.</p>
 </dd>
 
-### -field <a id="D3DDDI_GAMMARAMP_RGB256x3x16"></a><a id="d3dddi_gammaramp_rgb256x3x16"></a><a id="D3DDDI_GAMMARAMP_RGB256X3X16"></a><b>D3DDDI_GAMMARAMP_RGB256x3x16</b>
+### -field D3DDDI_GAMMARAMP_RGB256x3x16
 
 <dd>
 <p>Indicates that the gamma lookup table contains three arrays, one each for the red, green, and blue color channels. Each array has 256 16-bit values.</p>
 </dd>
 
-### -field <a id="D3DDDI_GAMMARAMP_DXGI_1"></a><a id="d3dddi_gammaramp_dxgi_1"></a><b>D3DDDI_GAMMARAMP_DXGI_1</b>
+### -field D3DDDI_GAMMARAMP_DXGI_1
 
 <dd>
 <p>Indicates that the gamma lookup table is described by a <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-gamma-ramp-dxgi-1.md">D3DDDI_GAMMA_RAMP_DXGI_1</a> structure. </p>
 </dd>
 
-### -field <a id="D3DDDI_GAMMARAMP_MATRIX_3x4"></a><a id="d3dddi_gammaramp_matrix_3x4"></a><a id="D3DDDI_GAMMARAMP_MATRIX_3X4"></a><b>D3DDDI_GAMMARAMP_MATRIX_3x4</b>
+### -field D3DDDI_GAMMARAMP_MATRIX_3x4
 
 <dd>
 <p>Indicates that the colorspace transform is defined by a D3DDDI_3X4_COLORSPACE_TRANSFORM structure.</p>

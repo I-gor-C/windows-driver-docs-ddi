@@ -54,7 +54,7 @@ LOGICAL IoIsValidIrpStatus(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>The status code to be validated.</p>

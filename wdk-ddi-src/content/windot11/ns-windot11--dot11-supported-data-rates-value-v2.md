@@ -7,7 +7,7 @@ old-location: netvista\dot11_supported_data_rates_value_v2.htm
 old-project: netvista
 ms.assetid: 2407204b-215c-481e-876d-740bc3d55ee3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_SUPPORTED_DATA_RATES_VALUE_V2, DOT11_SUPPORTED_DATA_RATES_VALUE_V2, *PDOT11_SUPPORTED_DATA_RATES_VALUE_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,14 +54,14 @@ typedef struct _DOT11_SUPPORTED_DATA_RATES_VALUE_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>ucSupportedTxDataRatesValue</b>
+### -field ucSupportedTxDataRatesValue
 
 <dd>
 <p>An array of the transmit data rates supported by the Physical Layer Convergence Procedure (PLCP)
      and Physical Media Dependent (PMD) sublayer of the PHY.</p>
 </dd>
 
-### -field <b>ucSupportedRxDataRatesValue</b>
+### -field ucSupportedRxDataRatesValue
 
 <dd>
 <p>An array of the receive data rates supported by the PLCP and PMD of the PHY.</p>
@@ -128,4 +128,4 @@ typedef struct _DOT11_SUPPORTED_DATA_RATES_VALUE_V2 {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SUPPORTED_DATA_RATES_VALUE_V2 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SUPPORTED_DATA_RATES_VALUE_V2 structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

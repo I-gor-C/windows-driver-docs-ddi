@@ -55,13 +55,13 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSDEVICE_THERMAL_STATE_LOW"></a><a id="ksdevice_thermal_state_low"></a><b>KSDEVICE_THERMAL_STATE_LOW</b>
+### -field KSDEVICE_THERMAL_STATE_LOW
 
 <dd>
 <p>This represents the LOW value for thermal notifications. This is usually determined by the Avstream driver and conveyed to KS in response to the thermal notification callbacks.</p>
 </dd>
 
-### -field <a id="KSDEVICE_THERMAL_STATE_HIGH"></a><a id="ksdevice_thermal_state_high"></a><b>KSDEVICE_THERMAL_STATE_HIGH</b>
+### -field KSDEVICE_THERMAL_STATE_HIGH
 
 <dd>
 <p>This represents the HIGH value for thermal notifications. This is usually determined by the Avstream driver and conveyed to KS in response to the thermal notification callbacks.</p>

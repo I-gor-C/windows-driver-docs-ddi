@@ -61,14 +61,14 @@ typedef struct _D3DDDI_CREATEDEVICEFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>AllowMultithreading</b>
+### -field AllowMultithreading
 
 <dd>
 <p>A UINT value that specifies whether the user-mode display driver can run multiple threads simultaneously when it processes calls to its functions from the Microsoft Direct3D runtime. For situations where the driver must disable multi-threading even when <b>AllowMultithreading</b> is set, see <a href="https://msdn.microsoft.com/906d6b31-a447-4a94-b1a5-cd3028722db7">Supporting Multiple Processors</a>. </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>AllowFlipBatching</b>
+### -field AllowFlipBatching
 
 <dd>
 <p>A UINT value that specifies whether the user-mode display driver can queue flip operation requests so the driver can process them later on another thread. This flag applies only to when a driver implements its own threading. In this situation, the driver is not required to immediately call the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-presentcb.md">pfnPresentCb</a> function when its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-present.md">Present</a> function is called. </p>
@@ -76,13 +76,13 @@ typedef struct _D3DDDI_CREATEDEVICEFLAGS {
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 30 bits (0xFFFFFFFD) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that is contained in D3DDDI_CREATEDEVICEFLAGS that can hold one 32-bit value that identifies how to create the device.</p>

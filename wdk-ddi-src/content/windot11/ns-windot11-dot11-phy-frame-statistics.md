@@ -7,7 +7,7 @@ old-location: netvista\dot11_phy_frame_statistics.htm
 old-project: netvista
 ms.assetid: 2adf102b-52aa-40e4-b3de-9189803339bf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_PHY_FRAME_STATISTICS, DOT11_PHY_FRAME_STATISTICS, *PDOT11_PHY_FRAME_STATISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,21 +70,21 @@ typedef struct DOT11_PHY_FRAME_STATISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>ullTransmittedFrameCount</b>
+### -field ullTransmittedFrameCount
 
 <dd>
 <p>The number of MSDU packets and MMPDU frames that the IEEE PHY layer of the 802.11 station has
      successfully transmitted.</p>
 </dd>
 
-### -field <b>ullMulticastTransmittedFrameCount</b>
+### -field ullMulticastTransmittedFrameCount
 
 <dd>
 <p>The number of multicast or broadcast MSDU packets and MMPDU frames that the IEEE PHY layer of the
      802.11 station has successfully transmitted.</p>
 </dd>
 
-### -field <b>ullFailedCount</b>
+### -field ullFailedCount
 
 <dd>
 <p>The number of MSDU packets and MMPDU frames that the 802.11 station failed to transmit after
@@ -95,14 +95,14 @@ typedef struct DOT11_PHY_FRAME_STATISTICS {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569380">OID_DOT11_LONG_RETRY_LIMIT</a>.</p>
 </dd>
 
-### -field <b>ullRetryCount</b>
+### -field ullRetryCount
 
 <dd>
 <p>The number of MSDU packets and MMPDU frames that the 802.11 station successfully transmitted after
      one or more attempts.</p>
 </dd>
 
-### -field <b>ullMultipleRetryCount</b>
+### -field ullMultipleRetryCount
 
 <dd>
 <p>The number of MSDU packets and MMPDU frames that the 802.11 station successfully transmitted after
@@ -112,7 +112,7 @@ typedef struct DOT11_PHY_FRAME_STATISTICS {
      transmitted successfully after one or more of its MPDU fragments required retransmission.</p>
 </dd>
 
-### -field <b>ullMaxTXLifetimeExceededCount</b>
+### -field ullMaxTXLifetimeExceededCount
 
 <dd>
 <p>The number of MSDU packets and MMPDU frames that the 802.11 station failed to transmit because of
@@ -122,35 +122,35 @@ typedef struct DOT11_PHY_FRAME_STATISTICS {
      OID_DOT11_MAX_TRANSMIT_MSDU_LIFETIME</a>.</p>
 </dd>
 
-### -field <b>ullTransmittedFragmentCount</b>
+### -field ullTransmittedFragmentCount
 
 <dd>
 <p>The number of MPDU frames that the 802.11 station transmitted and acknowledged through a received
      802.11 ACK frame.</p>
 </dd>
 
-### -field <b>ullRTSSuccessCount</b>
+### -field ullRTSSuccessCount
 
 <dd>
 <p>The number of times that the 802.11 station received a Clear To Send (CTS) frame in response to a
      Request To Send (RTS) frame.</p>
 </dd>
 
-### -field <b>ullRTSFailureCount</b>
+### -field ullRTSFailureCount
 
 <dd>
 <p>The number of times that the 802.11 station did not receive a CTS frame in response to an RTS
      frame.</p>
 </dd>
 
-### -field <b>ullACKFailureCount</b>
+### -field ullACKFailureCount
 
 <dd>
 <p>The number of times that the 802.11 station expected and did not receive an Acknowledgement (ACK)
      frame.</p>
 </dd>
 
-### -field <b>ullReceivedFrameCount</b>
+### -field ullReceivedFrameCount
 
 <dd>
 <p>The total number of MSDU packets and MMPDU frames that the 802.11 station has successfully
@@ -164,7 +164,7 @@ typedef struct DOT11_PHY_FRAME_STATISTICS {
      this member to DOT11_STATISTICS_UNKNOWN.</p>
 </dd>
 
-### -field <b>ullMulticastReceivedFrameCount</b>
+### -field ullMulticastReceivedFrameCount
 
 <dd>
 <p>The number of multicast or broadcast MSDU packets and MMPDU frames that the 802.11 station has
@@ -178,7 +178,7 @@ typedef struct DOT11_PHY_FRAME_STATISTICS {
      this member to DOT11_STATISTICS_UNKNOWN.</p>
 </dd>
 
-### -field <b>ullPromiscuousReceivedFrameCount</b>
+### -field ullPromiscuousReceivedFrameCount
 
 <dd>
 <p>The number of MSDU packets or MMPDU frames received by the 802.11 station when a promiscuous
@@ -202,7 +202,7 @@ typedef struct DOT11_PHY_FRAME_STATISTICS {
 </ul>
 </dd>
 
-### -field <b>ullMaxRXLifetimeExceededCount</b>
+### -field ullMaxRXLifetimeExceededCount
 
 <dd>
 <p>The number if MSDU packets and MMPDU frames that the 802.11 station discarded because of a timeout
@@ -212,20 +212,20 @@ typedef struct DOT11_PHY_FRAME_STATISTICS {
      OID_DOT11_MAX_RECEIVE_LIFETIME</a>.</p>
 </dd>
 
-### -field <b>ullFrameDuplicateCount</b>
+### -field ullFrameDuplicateCount
 
 <dd>
 <p>The number of duplicate MPDU frames that the 802.11 station received. The 802.11 station
      determines duplicate frames through the Sequence Control field of the 802.11 MAC header.</p>
 </dd>
 
-### -field <b>ullReceivedFragmentCount</b>
+### -field ullReceivedFragmentCount
 
 <dd>
 <p>The number of MPDU frames received by the 802.11 station for MSDU packets or MMPDU frames.</p>
 </dd>
 
-### -field <b>ullPromiscuousReceivedFragmentCount</b>
+### -field ullPromiscuousReceivedFragmentCount
 
 <dd>
 <p>The number of MPDU frames received by the 802.11 station for MSDU packets or MMPDU frames when a
@@ -249,7 +249,7 @@ typedef struct DOT11_PHY_FRAME_STATISTICS {
 </ul>
 </dd>
 
-### -field <b>ullFCSErrorCount</b>
+### -field ullFCSErrorCount
 
 <dd>
 <p>The number of MPDU frames that the 802.11 station received with FCS errors.</p>
@@ -298,7 +298,7 @@ typedef struct DOT11_PHY_FRAME_STATISTICS {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569420">OID_DOT11_STATISTICS</a>
 </dt>
 <dt>
-<a href="NULL">Native 802.11 Statistics</a>
+<a href="netvista.native_802_11_statistics">Native 802.11 Statistics</a>
 </dt>
 <dt>
 <a href="netvista.extensible_station_phy_statistics">Extensible Station PHY
@@ -307,4 +307,4 @@ typedef struct DOT11_PHY_FRAME_STATISTICS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_FRAME_STATISTICS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_FRAME_STATISTICS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

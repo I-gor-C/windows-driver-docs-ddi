@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_SETCLIPPLANE {
 ## -struct-fields
 <dl>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>[in] The index of the clipping plane for which the plane equation coefficients are set.</p>
 </dd>
 
-### -field <b>Plane</b>
+### -field Plane
 
 <dd>
 <p>[in] A four-element array of the coefficients A, B, C, and D, in that order, in the general plane equation for the clipping plane. </p>

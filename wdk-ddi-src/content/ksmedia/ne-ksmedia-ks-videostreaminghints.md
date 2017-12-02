@@ -58,31 +58,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_StreamingHint_FrameInterval"></a><a id="ks_streaminghint_frameinterval"></a><a id="KS_STREAMINGHINT_FRAMEINTERVAL"></a><b>KS_StreamingHint_FrameInterval</b>
+### -field KS_StreamingHint_FrameInterval
 
 <dd>
 <p>Specifies compression that is based on the interval between video frames.</p>
 </dd>
 
-### -field <a id="KS_StreamingHint_KeyFrameRate"></a><a id="ks_streaminghint_keyframerate"></a><a id="KS_STREAMINGHINT_KEYFRAMERATE"></a><b>KS_StreamingHint_KeyFrameRate</b>
+### -field KS_StreamingHint_KeyFrameRate
 
 <dd>
 <p>Specifies compression that is based on key frames.</p>
 </dd>
 
-### -field <a id="KS_StreamingHint_PFrameRate"></a><a id="ks_streaminghint_pframerate"></a><a id="KS_STREAMINGHINT_PFRAMERATE"></a><b>KS_StreamingHint_PFrameRate</b>
+### -field KS_StreamingHint_PFrameRate
 
 <dd>
 <p>Specifies compression that is based on predicted frames.</p>
 </dd>
 
-### -field <a id="KS_StreamingHint_CompQuality"></a><a id="ks_streaminghint_compquality"></a><a id="KS_STREAMINGHINT_COMPQUALITY"></a><b>KS_StreamingHint_CompQuality</b>
+### -field KS_StreamingHint_CompQuality
 
 <dd>
 <p>Specifies compression that is based on compression quality.</p>
 </dd>
 
-### -field <a id="KS_StreamingHint_CompWindowSize"></a><a id="ks_streaminghint_compwindowsize"></a><a id="KS_STREAMINGHINT_COMPWINDOWSIZE"></a><b>KS_StreamingHint_CompWindowSize</b>
+### -field KS_StreamingHint_CompWindowSize
 
 <dd>
 <p>Specifies compression that is based on compression window size.</p>

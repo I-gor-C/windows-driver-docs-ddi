@@ -56,19 +56,19 @@ typedef struct _D3DKMT_UNLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that the allocation is associated with.</p>
 </dd>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of allocations in the array that <b>phAllocations</b> specifies. </p>
 </dd>
 
-### -field <b>phAllocations</b>
+### -field phAllocations
 
 <dd>
 <p>[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations to unlock.</p>

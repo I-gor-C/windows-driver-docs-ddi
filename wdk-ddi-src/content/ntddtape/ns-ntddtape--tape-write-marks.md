@@ -56,7 +56,7 @@ typedef struct _TAPE_WRITE_MARKS {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Indicates the type of mark to write. This member can have one of the following values: </p>
@@ -101,13 +101,13 @@ typedef struct _TAPE_WRITE_MARKS {
 <p> </p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Indicates the number of marks to write. </p>
 </dd>
 
-### -field <b>Immediate</b>
+### -field Immediate
 
 <dd>
 <p>When set to <b>TRUE</b>, indicates that the target device should return status immediately. When set to <b>FALSE</b>, indicates that the device should return status after the operation is complete.</p>

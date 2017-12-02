@@ -7,7 +7,7 @@ old-location: netvista\wdi_operation_mode.htm
 old-project: netvista
 ms.assetid: 9838eeb9-6bd6-46a5-9361-6af3aa2d3014
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ typedef enum _WDI_OPERATION_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_OPERATION_MODE_STA"></a><a id="wdi_operation_mode_sta"></a><b>WDI_OPERATION_MODE_STA</b>
+### -field WDI_OPERATION_MODE_STA
 
 <dd>
 <p>Infrastructure client.</p>
 </dd>
 
-### -field <a id="WDI_OPERATION_MODE_P2P_DEVICE"></a><a id="wdi_operation_mode_p2p_device"></a><b>WDI_OPERATION_MODE_P2P_DEVICE</b>
+### -field WDI_OPERATION_MODE_P2P_DEVICE
 
 <dd>
 <p>Wi-Fi Direct Device.</p>
 </dd>
 
-### -field <a id="WDI_OPERATION_MODE_P2P_CLIENT"></a><a id="wdi_operation_mode_p2p_client"></a><b>WDI_OPERATION_MODE_P2P_CLIENT</b>
+### -field WDI_OPERATION_MODE_P2P_CLIENT
 
 <dd>
 <p>Wi-Fi Direct Client.</p>
 </dd>
 
-### -field <a id="WDI_OPERATION_MODE_P2P_GO"></a><a id="wdi_operation_mode_p2p_go"></a><b>WDI_OPERATION_MODE_P2P_GO</b>
+### -field WDI_OPERATION_MODE_P2P_GO
 
 <dd>
 <p>Wi-Fi Direct Group Owner.</p>

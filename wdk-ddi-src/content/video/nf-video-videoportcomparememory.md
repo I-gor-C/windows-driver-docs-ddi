@@ -57,19 +57,19 @@ ULONG VideoPortCompareMemory(
 ## -parameters
 <dl>
 
-### -param <i>Source1</i> 
+### -param Source1 
 
 <dd>
 <p>Pointer to the first block of memory to compare.</p>
 </dd>
 
-### -param <i>Source2</i> 
+### -param Source2 
 
 <dd>
 <p>Pointer to the second block of memory to compare.</p>
 </dd>
 
-### -param <i>Length</i> 
+### -param Length 
 
 <dd>
 <p>Specifies the number of bytes to be compared.</p>

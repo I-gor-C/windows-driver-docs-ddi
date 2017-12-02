@@ -7,7 +7,7 @@ old-location: wdf\iwdfunifiedpropertystore_setpropertydata.htm
 old-project: wdf
 ms.assetid: 07A79E40-6C49-4AF8-90B8-26652C46B6F1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFUnifiedPropertyStore, SetPropertyData, IWDFUnifiedPropertyStore::SetPropertyData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ HRESULT SetPropertyData(
 ## -parameters
 <dl>
 
-### -param <i>PropertyKey</i> [in]
+### -param PropertyKey [in]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a> structure that specifies the device property key.</p>
 </dd>
 
-### -param <i>Lcid</i> [in]
+### -param Lcid [in]
 
 <dd>
 <p>Specifies a locale identifier. Set this parameter either to a language-specific LCID value or to LOCALE_NEUTRAL. The LOCALE_NEUTRAL LCID specifies that the property is language-neutral (that is, not specific to any language). Do not set this parameter to LOCALE_SYSTEM_DEFAULT or LOCALE_USER_DEFAULT. For more information about language-specific LCID values, see <a href="http://msdn.microsoft.com/en-us/library/cc233968(PROT.10).aspx">LCID Structure</a>.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Reserved. Drivers should set this value to 0.</p>
 </dd>
 
-### -param <i>PropertyType</i> [in]
+### -param PropertyType [in]
 
 <dd>
 <p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543546">DEVPROPTYPE</a> value that specifies the type of the data that is provided in the <i>PropertyData</i> buffer.</p>
 </dd>
 
-### -param <i>PropertyDataSize</i> [in]
+### -param PropertyDataSize [in]
 
 <dd>
 <p>The size, in bytes, of the buffer that <i>PropertyData</i> points to.</p>
 </dd>
 
-### -param <i>PropertyData</i> [in, optional]
+### -param PropertyData [in, optional]
 
 <dd>
 <p>A pointer to the device property data. Set this parameter to <b>NULL</b> to delete the specified property.</p>
@@ -116,7 +116,7 @@ HRESULT SetPropertyData(
 
 <p>In particular, you can use this method to modify a device's <a href="wdf.using_the_registry_in_umdf_drivers">hardware key</a> or an instance of a device interface class. When you call <a href="wdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore">IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore</a>, set the <i>RootSpecifier</i> parameter's <b>RootClass</b> member to <b>WdfPropertyStoreRootClassHardwareKey</b> or <b>WdfPropertyStoreRootClassDeviceInterfaceKey</b>.  </p>
 
-<p>If you specify  <b>WdfPropertyStoreRootClassHardwareKey</b>, then when you call <b>SetPropertyData</b>, you must provide a custom <a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a> value in the <i>PropertyKey</i> parameter, and  not a PnP-defined key. The value must have been previously set by calling <b>SetPropertyData</b>, a <a href="devinst.using_device_installation_functions#ddk_setupdi_device_property_functions_dg#ddk_setupdi_device_property_functions_dg">SetupDI device property function</a>, or by using the <a href="NULL">INF AddProperty directive</a>.</p>
+<p>If you specify  <b>WdfPropertyStoreRootClassHardwareKey</b>, then when you call <b>SetPropertyData</b>, you must provide a custom <a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a> value in the <i>PropertyKey</i> parameter, and  not a PnP-defined key. The value must have been previously set by calling <b>SetPropertyData</b>, a <a href="devinst.using_device_installation_functions#ddk_setupdi_device_property_functions_dg#ddk_setupdi_device_property_functions_dg">SetupDI device property function</a>, or by using the <a href="devinst.using_the_inf_addproperty_directive_and_the_inf_delproperty_directive">INF AddProperty directive</a>.</p>
 
 <p>If the driver specifies <b>WdfPropertyStoreRootClassDeviceInterfaceKey</b>, the requested interface must be one that the UMDF driver previously registered at runtime.</p>
 
@@ -198,4 +198,4 @@ If the driver registers an interface in its INF file, it must set associated pro
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUnifiedPropertyStore::SetPropertyData method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUnifiedPropertyStore::SetPropertyData method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

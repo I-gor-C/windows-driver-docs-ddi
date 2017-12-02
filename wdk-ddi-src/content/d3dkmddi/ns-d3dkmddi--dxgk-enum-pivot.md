@@ -55,13 +55,13 @@ typedef struct _DXGK_ENUM_PIVOT {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>If the pivot of the enumeration is a video present source, this member is the identifier of that source.</p>
 </dd>
 
-### -field <b>VidPnTargetId</b>
+### -field VidPnTargetId
 
 <dd>
 <p>If the pivot of the enumeration is a video present target, this member is the identifier of that target.</p>

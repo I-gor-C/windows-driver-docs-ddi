@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_free_bandwidth.htm
 old-project: IEEE
 ms.assetid: 1401F3B5-4F3F-47C1-88F9-96AFCCF2AA7E
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_ISOCH_FREE_BANDWIDTH, IRB_REQ_ISOCH_FREE_BANDWIDTH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,7 +53,7 @@ typedef struct _IRB_REQ_ISOCH_FREE_BANDWIDTH {
 ## -struct-fields
 <dl>
 
-### -field <b>hBandwidth</b>
+### -field hBandwidth
 
 <dd>
 <p>Specifies the bandwidth handle to release. </p>
@@ -61,7 +61,11 @@ typedef struct _IRB_REQ_ISOCH_FREE_BANDWIDTH {
 </dl>
 
 ## -remarks
+<p>If successful, the bus driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS, and the isochronous bandwidth is returned to the pool of available bandwidth.</p>
 
+<p>A status of STATUS_INVALID_GENERATION also indicates success. </p>
+
+<p>Do not resend the REQUEST_ISOCH_FREE_BANDWIDTH request in order to release isochronous bandwidth if the request failed with the STATUS_INVALID_GENERATION error code. In that case, it is safe to assume that isochronous bandwidth was released as a result of 1394 bus generation changes.</p>
 
 ## -requirements
 <table>

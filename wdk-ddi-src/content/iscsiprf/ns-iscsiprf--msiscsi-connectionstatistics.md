@@ -61,49 +61,49 @@ typedef struct _MSiSCSI_ConnectionStatistics {
 ## -struct-fields
 <dl>
 
-### -field <b>iSCSIName</b>
+### -field iSCSIName
 
 <dd>
 <p>A wide character string that contains the name of the iSCSI target.</p>
 </dd>
 
-### -field <b>CID</b>
+### -field CID
 
 <dd>
 <p>The iSCSI connection identifier (ID) for this connection instance. This ID is an internal value that the iSCSI protocol uses to identify the connection. Do not use this ID. Application software should use the connection identifier that the <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods return in the <i>UniqueConnectionId</i> parameter.</p>
 </dd>
 
-### -field <b>USID</b>
+### -field USID
 
 <dd>
 <p>The iSCSI session ID for this connection instance. This ID is an internal value that the iSCSI protocol uses to identify the session. Application software should use the session identifier that the <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods return in the <i>UniqueSessionId</i> parameter.</p>
 </dd>
 
-### -field <b>UniqueAdapterId</b>
+### -field UniqueAdapterId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this ID. The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="..\iscsimgt\ns-iscsimgt--msiscsi-hbainformation.md">MSiSCSI_HBAInformation</a> structure.</p>
 </dd>
 
-### -field <b>BytesSent</b>
+### -field BytesSent
 
 <dd>
 <p>The number of bytes that are sent over this connection. </p>
 </dd>
 
-### -field <b>BytesReceived</b>
+### -field BytesReceived
 
 <dd>
 <p>The number of bytes that are received over this connection. </p>
 </dd>
 
-### -field <b>PDUCommandsSent</b>
+### -field PDUCommandsSent
 
 <dd>
 <p>The number of PDUs that are sent over this connection. </p>
 </dd>
 
-### -field <b>PDUResponsesReceived</b>
+### -field PDUResponsesReceived
 
 <dd>
 <p>The number of PDUs that are received over this connection.</p>

@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>KSP_NODE structure that describes a property and node type.</p>
 </dd>
 
-### -field <b>EsPid</b>
+### -field EsPid
 
 <dd>
 <p>Packet identifier (PID) that identifies packets in the elementary stream.</p>

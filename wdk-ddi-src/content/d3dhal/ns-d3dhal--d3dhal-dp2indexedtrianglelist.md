@@ -57,25 +57,25 @@ typedef struct _D3DHAL_DP2INDEXEDTRIANGLELIST {
 ## -struct-fields
 <dl>
 
-### -field <b>wV1</b>
+### -field wV1
 
 <dd>
 <p>Specifies the index into the vertex buffer location containing coordinate data for the first vertex of the triangle.</p>
 </dd>
 
-### -field <b>wV2</b>
+### -field wV2
 
 <dd>
 <p>Specifies the index to the vertex buffer location containing coordinate data for the second vertex of the triangle.</p>
 </dd>
 
-### -field <b>wV3</b>
+### -field wV3
 
 <dd>
 <p>Specifies the index to the vertex buffer location containing coordinate data for the third vertex of the triangle.</p>
 </dd>
 
-### -field <b>wFlags</b>
+### -field wFlags
 
 <dd>
 <p>Specifies the flags that describe how the driver should render the triangle. This member can be a bitwise OR of the following values: </p>

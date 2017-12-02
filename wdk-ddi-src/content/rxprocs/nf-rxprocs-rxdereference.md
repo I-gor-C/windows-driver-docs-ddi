@@ -7,7 +7,7 @@ old-location: ifsk\rxdereference.htm
 old-project: ifsk
 ms.assetid: 4f63fc92-56e3-4414-a912-09ed0de59c92
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxDereference
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,32 +56,32 @@ VOID RxDereference(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in, out]
+### -param Instance [in, out]
 
 <dd>
 <p>A pointer to the reference-counted data structure to be dereferenced. </p>
 </dd>
 
-### -param <i>LockHoldingState</i> [in]
+### -param LockHoldingState [in]
 
 <dd>
 <p>The mode in which the appropriate lock for this data structure is held. This parameter can be one of the following values for the LOCK_HOLDING_STATE enumeration:</p>
 <p></p>
 <dl>
 
-### -param <a id="LHS_LockNotHeld"></a><a id="lhs_locknotheld"></a><a id="LHS_LOCKNOTHELD"></a>LHS_LockNotHeld
+### -param LHS_LockNotHeld
 
 <dd>
 <p>A lock is not currently held.</p>
 </dd>
 
-### -param <a id="LHS_SharedLockHeld"></a><a id="lhs_sharedlockheld"></a><a id="LHS_SHAREDLOCKHELD"></a>LHS_SharedLockHeld
+### -param LHS_SharedLockHeld
 
 <dd>
 <p>A shared lock is being held.</p>
 </dd>
 
-### -param <a id="LHS_ExclusiveLockHeld"></a><a id="lhs_exclusivelockheld"></a><a id="LHS_EXCLUSIVELOCKHELD"></a>LHS_ExclusiveLockHeld
+### -param LHS_ExclusiveLockHeld
 
 <dd>
 <p>An exclusive lock is being held.</p>
@@ -167,4 +167,4 @@ VOID RxDereference(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxDereference function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxDereference function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

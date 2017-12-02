@@ -57,19 +57,19 @@ VP_STATUS VideoPortUnmapMemory(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>VirtualAddress</i> 
+### -param VirtualAddress 
 
 <dd>
 <p>Pointer to a virtual address within the mapped range to be released.</p>
 </dd>
 
-### -param <i>ProcessHandle</i> 
+### -param ProcessHandle 
 
 <dd>
 <p>Should be set to zero, or to the process handle specified when the miniport driver called <b>VideoPortMapMemory</b>.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilnitznotificationcaps_2.htm
 old-project: netvista
 ms.assetid: 74f62528-57ec-4142-a1b0-0d779e9d0ca0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILNITZNOTIFICATIONCAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CAPS_NITZ_ENABLED"></a><a id="ril_caps_nitz_enabled"></a><b>RIL_CAPS_NITZ_ENABLED</b>
+### -field RIL_CAPS_NITZ_ENABLED
 
 <dd></dd>
 
-### -field <a id="RIL_CAPS_NITZ_MAX"></a><a id="ril_caps_nitz_max"></a><b>RIL_CAPS_NITZ_MAX</b>
+### -field RIL_CAPS_NITZ_MAX
 
 <dd></dd>
 </dl>

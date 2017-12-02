@@ -55,7 +55,7 @@ HRESULT RouterUnregisterForPrintAsyncNotifications(
 ## -parameters
 <dl>
 
-### -param <i>hNotify</i> [in]
+### -param hNotify [in]
 
 <dd>
 <p>The registration handle returned by the <a href="..\prnasntp\nf-prnasntp-routerregisterforprintasyncnotifications.md">RouterRegisterForPrintAsyncNotifications</a> function.</p>

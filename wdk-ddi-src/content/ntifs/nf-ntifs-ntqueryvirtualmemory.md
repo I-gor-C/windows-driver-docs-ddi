@@ -61,7 +61,7 @@ NTSTATUS ZwQueryVirtualMemory(
 ## -parameters
 <dl>
 
-### -param <i>ProcessHandle</i> [in]
+### -param ProcessHandle [in]
 
 <dd>
 <p>A handle for the process in whose context the pages to be queried reside. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566431">ZwCurrentProcess</a> macro to specify the current process.
@@ -69,7 +69,7 @@ NTSTATUS ZwQueryVirtualMemory(
 </p>
 </dd>
 
-### -param <i>BaseAddress</i> [in, optional]
+### -param BaseAddress [in, optional]
 
 <dd>
 <p>The base address of the region of pages to be
@@ -77,14 +77,14 @@ NTSTATUS ZwQueryVirtualMemory(
                   address boundary.</p>
 </dd>
 
-### -param <i>MemoryInformationClass</i> [in]
+### -param MemoryInformationClass [in]
 
 <dd>
 <p>The memory information class about which
                              to retrieve information. Currently, the only supported <a href="..\ntifs\ne-ntifs--memory-information-class.md">MEMORY_INFORMATION_CLASS</a> value is <b>MemoryBasicInformation</b>.</p>
 </dd>
 
-### -param <i>MemoryInformation</i> [out]
+### -param MemoryInformation [out]
 
 <dd>
 <p>A pointer to a buffer that receives the specified
@@ -92,14 +92,14 @@ NTSTATUS ZwQueryVirtualMemory(
                         depend on the specified information class specified in the <i>MemoryInformationClass</i> parameter. When the value <b>MemoryBasicInformation</b> is passed to <i>MemoryInformationClass</i>, the <i>MemoryInformationClass</i> parameter value is a <a href="..\ntifs\ns-ntifs--memory-basic-information.md">MEMORY_BASIC_INFORMATION</a>. </p>
 </dd>
 
-### -param <i>MemoryInformationLength</i> [in]
+### -param MemoryInformationLength [in]
 
 <dd>
 <p>Specifies the length in bytes of
                               the memory information buffer.</p>
 </dd>
 
-### -param <i>ReturnLength</i> [out, optional]
+### -param ReturnLength [out, optional]
 
 <dd>
 <p>An optional pointer which, if specified, receives the

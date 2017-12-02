@@ -56,13 +56,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>MediaPresent</b>
+### -field MediaPresent
 
 <dd>
 <p>Specifies if media is present in the external device. <b>TRUE</b> if media is loaded, <b>FALSE</b> otherwise.</p>
 </dd>
 
-### -field <b>MediaType</b>
+### -field MediaType
 
 <dd>
 <p>Indicates the type of the media loaded in an external device.</p>
@@ -99,7 +99,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>RecordInhibit</b>
+### -field RecordInhibit
 
 <dd>
 <p>Specifies if recording is inhibited on the media. <b>TRUE</b> if recording onto the media is inhibited, <b>FALSE</b> otherwise.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilexecutorfocusstateparammask_2.htm
 old-project: netvista
 ms.assetid: 3c5d14cf-bfbc-439c-9ade-1a672f0b3fca
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILEXECUTORFOCUSSTATEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_EXECUTORFOCUSSTATE_STATE"></a><a id="ril_param_executorfocusstate_state"></a><b>RIL_PARAM_EXECUTORFOCUSSTATE_STATE</b>
+### -field RIL_PARAM_EXECUTORFOCUSSTATE_STATE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_EXECUTORFOCUSSTATE_ALL"></a><a id="ril_param_executorfocusstate_all"></a><b>RIL_PARAM_EXECUTORFOCUSSTATE_ALL</b>
+### -field RIL_PARAM_EXECUTORFOCUSSTATE_ALL
 
 <dd></dd>
 </dl>

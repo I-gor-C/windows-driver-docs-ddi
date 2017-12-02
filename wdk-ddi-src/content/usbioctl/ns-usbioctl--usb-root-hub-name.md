@@ -56,13 +56,13 @@ typedef struct _USB_ROOT_HUB_NAME {
 ## -struct-fields
 <dl>
 
-### -field <b>ActualLength</b>
+### -field ActualLength
 
 <dd>
 <p>Size of the entire data structure in bytes.</p>
 </dd>
 
-### -field <b>RootHubName</b>
+### -field RootHubName
 
 <dd>
 <p>Specifies the Unicode string containing the root hub's symbolic device name.</p>

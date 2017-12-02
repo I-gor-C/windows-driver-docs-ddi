@@ -56,19 +56,19 @@ typedef struct _D3DKMT_CREATEKEYEDMUTEX {
 ## -struct-fields
 <dl>
 
-### -field <b>InitialValue</b>
+### -field InitialValue
 
 <dd>
 <p>[in] A 64-bit value that specifies the initial value to create the keyed mutex for. </p>
 </dd>
 
-### -field <b>hSharedHandle</b>
+### -field hSharedHandle
 
 <dd>
 <p>[out] A D3DKMT_HANDLE data type that represents a kernel-mode shared global handle to the keyed mutex object. </p>
 </dd>
 
-### -field <b>hKeyedMutex</b>
+### -field hKeyedMutex
 
 <dd>
 <p>[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the keyed mutex object in the current process. </p>

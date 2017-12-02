@@ -55,13 +55,13 @@ typedef struct _D3DHAL_DP2ZRANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>dvMinZ</b>
+### -field dvMinZ
 
 <dd>
 <p>Specifies the minimum z value for the Mvs matrix described in the <a href="https://msdn.microsoft.com/b45aa56e-2d8c-412a-b581-a1e2002d4fac">Hardware Transform and Lighting</a> section of the design guide.</p>
 </dd>
 
-### -field <b>dvMaxZ</b>
+### -field dvMaxZ
 
 <dd>
 <p>Specifies the maximum z value for the Mvs matrix described in the <a href="https://msdn.microsoft.com/b45aa56e-2d8c-412a-b581-a1e2002d4fac">Hardware Transform and Lighting</a> section of the design guide.</p>

@@ -59,23 +59,23 @@ DWORD WINAPI CallRouterFindFirstPrinterChangeNotification(
 ## -parameters
 <dl>
 
-### -param <i>hPrinterRPC</i> [in]
+### -param hPrinterRPC [in]
 
 <dd></dd>
 
-### -param <i>fdwFilterFlags</i> 
+### -param fdwFilterFlags 
 
 <dd></dd>
 
-### -param <i>fdwOptions</i> 
+### -param fdwOptions 
 
 <dd></dd>
 
-### -param <i>hNotify</i> [in]
+### -param hNotify [in]
 
 <dd></dd>
 
-### -param <i>pPrinterNotifyOptions</i> [in]
+### -param pPrinterNotifyOptions [in]
 
 <dd></dd>
 </dl>

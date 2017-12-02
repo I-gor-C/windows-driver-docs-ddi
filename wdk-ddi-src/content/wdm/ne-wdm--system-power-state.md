@@ -62,49 +62,49 @@ typedef enum _SYSTEM_POWER_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PowerSystemUnspecified"></a><a id="powersystemunspecified"></a><a id="POWERSYSTEMUNSPECIFIED"></a><b>PowerSystemUnspecified</b>
+### -field PowerSystemUnspecified
 
 <dd>
 <p>Indicates an unspecified system power state. </p>
 </dd>
 
-### -field <a id="PowerSystemWorking"></a><a id="powersystemworking"></a><a id="POWERSYSTEMWORKING"></a><b>PowerSystemWorking</b>
+### -field PowerSystemWorking
 
 <dd>
 <p>Indicates maximum system power, which corresponds to <a href="https://msdn.microsoft.com/library/windows/hardware/ff564591">system working state S0</a>. </p>
 </dd>
 
-### -field <a id="PowerSystemSleeping1"></a><a id="powersystemsleeping1"></a><a id="POWERSYSTEMSLEEPING1"></a><b>PowerSystemSleeping1</b>
+### -field PowerSystemSleeping1
 
 <dd>
 <p>Indicates a <a href="https://msdn.microsoft.com/2fd883b5-4e89-4ce9-b75a-b821348ac860">system sleeping state</a> less than <b>PowerSystemWorking</b> and greater than <b>PowerSystemSleeping2</b>, which corresponds to system power state S1. </p>
 </dd>
 
-### -field <a id="PowerSystemSleeping2"></a><a id="powersystemsleeping2"></a><a id="POWERSYSTEMSLEEPING2"></a><b>PowerSystemSleeping2</b>
+### -field PowerSystemSleeping2
 
 <dd>
 <p>Indicates a system sleeping state less than <b>PowerSystemSleeping1</b> and greater than <b>PowerSystemSleeping3</b>, which corresponds to system power state S2. </p>
 </dd>
 
-### -field <a id="PowerSystemSleeping3"></a><a id="powersystemsleeping3"></a><a id="POWERSYSTEMSLEEPING3"></a><b>PowerSystemSleeping3</b>
+### -field PowerSystemSleeping3
 
 <dd>
 <p>Indicates a system sleeping state less than <b>PowerSystemSleeping2</b> and greater than <b>PowerSystemHibernate</b>, which corresponds to system power state S3. </p>
 </dd>
 
-### -field <a id="PowerSystemHibernate"></a><a id="powersystemhibernate"></a><a id="POWERSYSTEMHIBERNATE"></a><b>PowerSystemHibernate</b>
+### -field PowerSystemHibernate
 
 <dd>
 <p>Indicates the lowest-powered sleeping state, which corresponds to system power state S4. </p>
 </dd>
 
-### -field <a id="PowerSystemShutdown"></a><a id="powersystemshutdown"></a><a id="POWERSYSTEMSHUTDOWN"></a><b>PowerSystemShutdown</b>
+### -field PowerSystemShutdown
 
 <dd>
 <p>Indicates the system is turned off, which corresponds to <a href="https://msdn.microsoft.com/library/windows/hardware/ff564572">system shutdown state S5</a>. </p>
 </dd>
 
-### -field <a id="PowerSystemMaximum"></a><a id="powersystemmaximum"></a><a id="POWERSYSTEMMAXIMUM"></a><b>PowerSystemMaximum</b>
+### -field PowerSystemMaximum
 
 <dd>
 <p>The number of system power state values for this enumeration type that represents actual power states. This value is the number of elements in the <b>DeviceState</b> member of the <a href="..\wdm\ns-wdm--device-capabilities.md">DEVICE_CAPABILITIES</a> structure for a device. The other system power state values are less than this value.</p>

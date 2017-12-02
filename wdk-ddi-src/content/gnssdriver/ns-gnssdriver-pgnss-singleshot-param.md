@@ -7,7 +7,7 @@ old-location: sensors\gnss_singleshot_param.htm
 old-project: sensors
 ms.assetid: BD1CB6CE-4196-4B85-AED0-A7B8ED957ADF
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_SINGLESHOT_PARAM, GNSS_SINGLESHOT_PARAM, *PGNSS_SINGLESHOT_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>ResponseTime</b>
+### -field ResponseTime
 
 <dd>
 <p>Response time is maximum remaining time that an application can wait for a fix or an error. </p>

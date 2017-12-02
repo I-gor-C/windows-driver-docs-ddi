@@ -54,7 +54,7 @@ typedef struct _PEP_PPM_INITIATE_WAKE {
 ## -struct-fields
 <dl>
 
-### -field <b>NeedInterruptForCompletion</b>
+### -field NeedInterruptForCompletion
 
 <dd>
 <p>[out] Whether the processor requires an interrupt finish waking up from an idle state. Set to <b>TRUE</b> if the processor requires an interrupt, or to <b>FALSE</b> if it does not.</p>

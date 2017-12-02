@@ -56,13 +56,13 @@ typedef struct _UNIDRV_PRIVATE_DEVMODE {
 ## -struct-fields
 <dl>
 
-### -field <b>wReserved</b>
+### -field wReserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>wSize</b>
+### -field wSize
 
 <dd>
 <p>The size, in bytes, of the private portion of Unidrv's <a href="display.devmodew">DEVMODEW</a> structure.</p>

@@ -58,13 +58,13 @@ NTSTATUS APIENTRY pfnAcquireFirstModeInfo(
 ## -parameters
 <dl>
 
-### -param <i>hVidPnSourceModeSet</i> [in]
+### -param hVidPnSourceModeSet [in]
 
 <dd>
 <p>[in] A handle to a VidPN source mode set object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-acquiresourcemodeset.md">pfnAcquireSourceModeSet</a> function of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpn-interface.md">DXGK_VIDPN_INTERFACE</a> interface.</p>
 </dd>
 
-### -param <i>ppFirstVidPnSourceModeInfo</i> [out]
+### -param ppFirstVidPnSourceModeInfo [out]
 
 <dd>
 <p>[out] A pointer to a variable that receives a pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-source-mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a> structure. The structure contains a variety of information about the mode, including its ID, type, and rendering format.</p>

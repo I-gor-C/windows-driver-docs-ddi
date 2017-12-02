@@ -134,10 +134,10 @@ VOID KeLeaveCriticalRegion(void);
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-keareapcsdisabled.md">KeAreApcsDisabled</a>
+<a href="..\wdm\nf-wdm-keareapcsdisabled.md">KeAreApcsDisabled</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a>
+<a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a>
 </dt>
 </dl>
 <p> </p>

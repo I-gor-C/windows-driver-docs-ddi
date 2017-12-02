@@ -54,7 +54,7 @@ IO_PAGING_PRIORITY IoGetPagingIoPriority(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to the IRP to be tested for paging priority.</p>

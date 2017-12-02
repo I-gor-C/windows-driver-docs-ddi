@@ -60,19 +60,19 @@ VP_STATUS HwVidGetPowerState(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.</p>
 </dd>
 
-### -param <i>HwId</i> 
+### -param HwId 
 
 <dd>
 <p>Pointer to a 32-bit <a href="wdkgloss.d#wdkgloss.device_id#wdkgloss.device_id"><i>device ID</i></a> that uniquely identifies the device that the miniport driver should query. This parameter is returned by the miniport driver's <a href="..\video\nc-video-pvideo-hw-get-child-descriptor.md">HwVidGetVideoChildDescriptor</a> function. Alternatively, a value of DISPLAY_ADAPTER_HW_ID indicates that power information is being requested of the adapter itself.</p>
 </dd>
 
-### -param <i>VideoPowerControl</i> 
+### -param VideoPowerControl 
 
 <dd>
 <p>Pointer to a <a href="..\ntddvdeo\ns-ntddvdeo--video-power-management.md">VIDEO_POWER_MANAGEMENT</a> structure that specifies the power state for which support is being queried.</p>

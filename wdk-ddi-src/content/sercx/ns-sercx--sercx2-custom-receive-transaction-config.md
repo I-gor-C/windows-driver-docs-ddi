@@ -60,37 +60,37 @@ typedef struct _SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
-### -field <b>EvtSerCx2CustomReceiveTransactionInitialize</b>
+### -field EvtSerCx2CustomReceiveTransactionInitialize
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-custom-receive-transaction-initialize.md">EvtSerCx2CustomReceiveTransactionInitialize</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>
 </dd>
 
-### -field <b>EvtSerCx2CustomReceiveTransactionStart</b>
+### -field EvtSerCx2CustomReceiveTransactionStart
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-custom-receive-transaction-start.md">EvtSerCx2CustomReceiveTransactionStart</a> event callback function. This member must point to a valid function.</p>
 </dd>
 
-### -field <b>EvtSerCx2CustomReceiveTransactionCleanup</b>
+### -field EvtSerCx2CustomReceiveTransactionCleanup
 
 <dd>
 <p>A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt-sercx2-custom-receive-transaction-cleanup.md">EvtSerCx2CustomReceiveTransactionCleanup</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>
 </dd>
 
-### -field <b>EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</b>
+### -field EvtSerCx2CustomReceiveTransactionEnableNewDataNotification
 
 <dd>
 <p>A pointer to the driver-implemented <a href="serports.evtsercx2customreceivetransactionenablenewdatanotification">EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.</p>
 </dd>
 
-### -field <b>EvtSerCx2CustomReceiveTransactionQueryProgress</b>
+### -field EvtSerCx2CustomReceiveTransactionQueryProgress
 
 <dd>
 <p>A pointer to the driver-implemented <a href="serports.evtsercx2customreceivetransactionqueryprogress">EvtSerCx2CustomReceiveTransactionQueryProgress</a> event callback function. This member must point to a valid function.</p>

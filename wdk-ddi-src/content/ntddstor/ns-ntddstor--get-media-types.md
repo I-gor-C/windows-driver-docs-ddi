@@ -56,19 +56,19 @@ typedef struct _GET_MEDIA_TYPES {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceType</b>
+### -field DeviceType
 
 <dd>
 <p>Specifies one of the system-defined FILE_DEVICE_<i>XXX</i> constants indicating the type of device (such as FILE_DEVICE_DISK, FILE_DEVICE_KEYBOARD, and so forth) or a vendor-defined value for a new type of device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a>. </p>
 </dd>
 
-### -field <b>MediaInfoCount</b>
+### -field MediaInfoCount
 
 <dd>
 <p>Contains the number of <a href="..\ntddstor\ns-ntddstor--device-media-info.md">DEVICE_MEDIA_INFO</a> structures in the array starting at <b>MediaInfo</b>.</p>
 </dd>
 
-### -field <b>MediaInfo</b>
+### -field MediaInfo
 
 <dd>
 <p>Contains an array whose first element holds the first DEVICE_MEDIA_INFO structure in the array.</p>

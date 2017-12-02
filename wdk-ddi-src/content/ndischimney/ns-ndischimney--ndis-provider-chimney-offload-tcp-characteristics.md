@@ -7,7 +7,7 @@ old-location: netvista\ndis_provider_chimney_offload_tcp_characteristics.htm
 old-project: netvista
 ms.assetid: 3eabbad5-b84b-4034-a0b6-d4d515cbc117
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, *PNDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ typedef struct _NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The header of the NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure. The header is
@@ -75,20 +75,20 @@ typedef struct _NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS {
      <b>Type</b> member of the header is not significant.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>OffloadType</b>
+### -field OffloadType
 
 <dd>
 <p>The chimney offload type. The only allowable value is 
      <b>NdisTcpChimneyOffload</b>, which specifies a TCP chimney.</p>
 </dd>
 
-### -field <b>TcpOffloadSendHandler</b>
+### -field TcpOffloadSendHandler
 
 <dd>
 <p>The entry point of the driver's 
@@ -96,7 +96,7 @@ typedef struct _NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS {
      MiniportTcpOffloadSend</a> function.</p>
 </dd>
 
-### -field <b>TcpOffloadReceiveHandler</b>
+### -field TcpOffloadReceiveHandler
 
 <dd>
 <p>The entry point of the driver's 
@@ -104,7 +104,7 @@ typedef struct _NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS {
      MiniportTcpOffloadReceive</a> function.</p>
 </dd>
 
-### -field <b>TcpOffloadDisconnectHandler</b>
+### -field TcpOffloadDisconnectHandler
 
 <dd>
 <p>The entry point of the driver's 
@@ -112,7 +112,7 @@ typedef struct _NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS {
      MiniportTcpOffloadDisconnect</a> function.</p>
 </dd>
 
-### -field <b>TcpOffloadForwardHandler</b>
+### -field TcpOffloadForwardHandler
 
 <dd>
 <p>The entry point of the driver's 
@@ -120,7 +120,7 @@ typedef struct _NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS {
      MiniportTcpOffloadForward</a> function.</p>
 </dd>
 
-### -field <b>TcpOffloadReceiveReturnHandler</b>
+### -field TcpOffloadReceiveReturnHandler
 
 <dd>
 <p>The entry point of the driver's 
@@ -182,4 +182,4 @@ typedef struct _NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

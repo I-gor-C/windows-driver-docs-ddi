@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This routine creates a buffer from the paged pool and copies the reference string associated with the PDO into this buffer. It is the caller's responsibility to free the buffer using <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>.</p>
+<p>This routine creates a buffer from the paged pool and copies the reference string associated with the PDO into this buffer. It is the caller's responsibility to free the buffer using <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>.</p>
 
 
 ## -prototype
@@ -58,13 +58,13 @@ NTSTATUS KStrQueryReferenceString(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Pointer to a device extension of the device's PDO.</p>
 </dd>
 
-### -param <i>String</i> [in, out]
+### -param String [in, out]
 
 <dd>
 <p>Pointer to a string containing the reference string associated with the PDO.</p>

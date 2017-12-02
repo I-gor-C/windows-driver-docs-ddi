@@ -7,7 +7,7 @@ old-location: netvista\dot11_extsta_attributes.htm
 old-project: netvista
 ms.assetid: 319017a7-f398-46f7-ab03-1dcb057c1332
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_EXTSTA_ATTRIBUTES,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -81,7 +81,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>DOT11_EXTSTA_ATTRIBUTES</b> structure. This member is formatted as
@@ -93,13 +93,13 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="Type"></a><a id="type"></a><a id="TYPE"></a><b>Type</b>
+### -field Type
 
 <dd>
 <p>This member must be set to <b>NDIS_OBJECT_TYPE_DEFAULT</b>.</p>
 </dd>
 
-### -field <a id="Revision"></a><a id="revision"></a><a id="REVISION"></a><b>Revision</b>
+### -field Revision
 
 <dd>
 <p>This member must be set to one of the following values according to the operating system that
@@ -108,20 +108,20 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="DOT11_EXTSTA_ATTRIBUTES_REVISION_1"></a><a id="dot11_extsta_attributes_revision_1"></a>DOT11_EXTSTA_ATTRIBUTES_REVISION_1
+### -field DOT11_EXTSTA_ATTRIBUTES_REVISION_1
 
 <dd>
 <p>Windows Vista</p>
 </dd>
 
-### -field <a id="DOT11_EXTSTA_ATTRIBUTES_REVISION_2"></a><a id="dot11_extsta_attributes_revision_2"></a>DOT11_EXTSTA_ATTRIBUTES_REVISION_2
+### -field DOT11_EXTSTA_ATTRIBUTES_REVISION_2
 
 <dd>
 <p>Windows Vista with Service Pack 1 (SP1) or later versions of the Windows operating
          systems</p>
 </dd>
 
-### -field <a id="DOT11_EXTSTA_ATTRIBUTES_REVISION_3"></a><a id="dot11_extsta_attributes_revision_3"></a>DOT11_EXTSTA_ATTRIBUTES_REVISION_3
+### -field DOT11_EXTSTA_ATTRIBUTES_REVISION_3
 
 <dd>
 <p>Windows 8 or later versions of the Windows operating
@@ -132,7 +132,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
        <b>bSafeModeImplemented</b> member.</p>
 </dd>
 
-### -field <a id="Size"></a><a id="size"></a><a id="SIZE"></a><b>Size</b>
+### -field Size
 
 <dd>
 <p>This member must be set to 
@@ -143,7 +143,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>uScanSSIDListSize</b>
+### -field uScanSSIDListSize
 
 <dd>
 <p>The maximum number of service set identifiers (SSIDs) supported by the 802.11 station for scan
@@ -154,7 +154,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      set.</p>
 </dd>
 
-### -field <b>uDesiredBSSIDListSize</b>
+### -field uDesiredBSSIDListSize
 
 <dd>
 <p>The maximum number of entries in the desired list of basic service set identifiers (BSSIDs)
@@ -165,7 +165,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      OID_DOT11_DESIRED_BSSID_LIST</a>.</p>
 </dd>
 
-### -field <b>uDesiredSSIDListSize</b>
+### -field uDesiredSSIDListSize
 
 <dd>
 <p>The maximum number of entries in the desired SSID list supported by the 802.11 station. The 802.11
@@ -176,7 +176,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      OID_DOT11_DESIRED_SSID_LIST</a>.</p>
 </dd>
 
-### -field <b>uExcludedMacAddressListSize</b>
+### -field uExcludedMacAddressListSize
 
 <dd>
 <p>The maximum number of entries in the excluded MAC address list supported by the 802.11 station.
@@ -187,7 +187,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      OID_DOT11_EXCLUDED_MAC_ADDRESS_LIST</a>.</p>
 </dd>
 
-### -field <b>uPrivacyExemptionListSize</b>
+### -field uPrivacyExemptionListSize
 
 <dd>
 <p>The maximum number of entries in the privacy exemption list supported by the 802.11 station. The
@@ -198,7 +198,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      OID_DOT11_PRIVACY_EXEMPTION_LIST</a>.</p>
 </dd>
 
-### -field <b>uKeyMappingTableSize</b>
+### -field uKeyMappingTableSize
 
 <dd>
 <p>The maximum number of cipher key-mapping keys supported by the 802.11 station. It is recommended
@@ -209,7 +209,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      OID_DOT11_CIPHER_KEY_MAPPING_KEY</a>.</p>
 </dd>
 
-### -field <b>uDefaultKeyTableSize</b>
+### -field uDefaultKeyTableSize
 
 <dd>
 <p>The maximum number of cipher keys the 802.11 station supports for the default key and per-station
@@ -220,7 +220,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      can be four or greater.</p>
 </dd>
 
-### -field <b>uWEPKeyValueMaxLength</b>
+### -field uWEPKeyValueMaxLength
 
 <dd>
 <p>The maximum length, in bytes, of a WEP cipher key supported by the 802.11 station.
@@ -271,7 +271,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
 <p> </p>
 </dd>
 
-### -field <b>uPMKIDCacheSize</b>
+### -field uPMKIDCacheSize
 
 <dd>
 <p>The maximum number of entries in the pairwise master key identifier (PMKID) cache supported by the
@@ -283,17 +283,17 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569400">OID_DOT11_PMKID_LIST</a>.</p>
 </dd>
 
-### -field <b>uMaxNumPerSTADefaultKeyTables</b>
+### -field uMaxNumPerSTADefaultKeyTables
 
 <dd>
 <p>The maximum number of per-station default cipher key tables supported by the 802.11 station. It is
      recommended that the 802.11 station support at least 32 per-station default cipher key tables.
      </p>
 <p>For more information about per-station default cipher key tables, see 
-     <a href="NULL">Per-Station Default Keys</a>.</p>
+     <a href="netvista.per_station_default_keys">Per-Station Default Keys</a>.</p>
 </dd>
 
-### -field <b>bStrictlyOrderedServiceClassImplemented</b>
+### -field bStrictlyOrderedServiceClassImplemented
 
 <dd>
 <p>A Boolean value that, if set to <b>TRUE</b>, specifies that the 802.11 station supports the IEEE 802.11
@@ -303,7 +303,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      802.11-2012 standard.</p>
 </dd>
 
-### -field <b>ucSupportedQoSProtocolFlags</b>
+### -field ucSupportedQoSProtocolFlags
 
 <dd>
 <p>A set of flags that specify the quality of service (QoS) protocols that the NIC implements. This
@@ -312,13 +312,13 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="DOT11_QOS_PROTOCOL_FLAG_WMM"></a><a id="dot11_qos_protocol_flag_wmm"></a>DOT11_QOS_PROTOCOL_FLAG_WMM
+### -field DOT11_QOS_PROTOCOL_FLAG_WMM
 
 <dd>
 <p>The NIC implements the 802.11 WMM QoS protocol.</p>
 </dd>
 
-### -field <a id="DOT11_QOS_PROTOCOL_FLAG_11E"></a><a id="dot11_qos_protocol_flag_11e"></a>DOT11_QOS_PROTOCOL_FLAG_11E
+### -field DOT11_QOS_PROTOCOL_FLAG_11E
 
 <dd>
 <p>The NIC implements the 802.11e QoS protocol.</p>
@@ -326,7 +326,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
 </dl>
 </dd>
 
-### -field <b>bSafeModeImplemented</b>
+### -field bSafeModeImplemented
 
 <dd>
 <p>The safe mode support capability of the NIC/miniport driver combination. The operating system
@@ -336,7 +336,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="Revision___DOT11_EXTSTA_ATTRIBUTES_REVISION_1"></a><a id="revision___dot11_extsta_attributes_revision_1"></a><a id="REVISION___DOT11_EXTSTA_ATTRIBUTES_REVISION_1"></a>Revision = DOT11_EXTSTA_ATTRIBUTES_REVISION_1
+### -field Revision = DOT11_EXTSTA_ATTRIBUTES_REVISION_1
 
 <dd>
 <p>The operating system interprets the 
@@ -344,7 +344,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
        802.11 safe mode of operation. Otherwise, the value is <b>FALSE</b>.</p>
 </dd>
 
-### -field <a id="Revision___DOT11_EXTSTA_ATTRIBUTES_REVISION_2_or_higher"></a><a id="revision___dot11_extsta_attributes_revision_2_or_higher"></a><a id="REVISION___DOT11_EXTSTA_ATTRIBUTES_REVISION_2_OR_HIGHER"></a>Revision = DOT11_EXTSTA_ATTRIBUTES_REVISION_2 or higher
+### -field Revision = DOT11_EXTSTA_ATTRIBUTES_REVISION_2 or higher
 
 <dd>
 <p>The operating system interprets the 
@@ -369,7 +369,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      OID_DOT11_SAFE_MODE_ENABLED</a>.</p>
 </dd>
 
-### -field <b>uNumSupportedCountryOrRegionStrings</b>
+### -field uNumSupportedCountryOrRegionStrings
 
 <dd>
 <p>The number of country or region strings supported by the 802.11 station. If the 802.11 station
@@ -380,7 +380,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      <b>uNumSupportedCountryOrRegionStrings</b> to zero.</p>
 </dd>
 
-### -field <b>pSupportedCountryOrRegionStrings</b>
+### -field pSupportedCountryOrRegionStrings
 
 <dd>
 <p>A pointer to an array of 802.11d country or region strings that are supported by the 802.11
@@ -389,7 +389,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      DOT11_COUNTRY_OR_REGION_STRING</a> structure.</p>
 </dd>
 
-### -field <b>uInfraNumSupportedUcastAlgoPairs</b>
+### -field uInfraNumSupportedUcastAlgoPairs
 
 <dd>
 <p>The number of authentication and cipher algorithms supported by the 802.11 station for sending and
@@ -401,7 +401,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      <b>pInfraSupportedUcastAlgoPairs</b> member.</p>
 </dd>
 
-### -field <b>pInfraSupportedUcastAlgoPairs</b>
+### -field pInfraSupportedUcastAlgoPairs
 
 <dd>
 <p>A pointer to an array of authentication and cipher algorithms supported by the 802.11 station for
@@ -411,7 +411,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      DOT11_AUTH_CIPHER_PAIR</a> structure.</p>
 </dd>
 
-### -field <b>uInfraNumSupportedMcastAlgoPairs</b>
+### -field uInfraNumSupportedMcastAlgoPairs
 
 <dd>
 <p>The number of authentication and cipher algorithms supported by the 802.11 station for sending and
@@ -423,7 +423,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      <b>pInfraSupportedMcastAlgoPairs</b> member.</p>
 </dd>
 
-### -field <b>pInfraSupportedMcastAlgoPairs</b>
+### -field pInfraSupportedMcastAlgoPairs
 
 <dd>
 <p>A pointer to an array of authentication and cipher algorithms supported by the 802.11 station for
@@ -433,7 +433,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      DOT11_AUTH_CIPHER_PAIR</a> structure.</p>
 </dd>
 
-### -field <b>uAdhocNumSupportedUcastAlgoPairs</b>
+### -field uAdhocNumSupportedUcastAlgoPairs
 
 <dd>
 <p>The number of authentication and cipher algorithms supported by the 802.11 station for sending and
@@ -444,7 +444,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      <b>pAdhocSupportedUcastAlgoPairs</b> member.</p>
 </dd>
 
-### -field <b>pAdhocSupportedUcastAlgoPairs</b>
+### -field pAdhocSupportedUcastAlgoPairs
 
 <dd>
 <p>A pointer to an array of authentication and cipher algorithms supported by the 802.11 station for
@@ -453,7 +453,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      DOT11_AUTH_CIPHER_PAIR</a> structure.</p>
 </dd>
 
-### -field <b>uAdhocNumSupportedMcastAlgoPairs</b>
+### -field uAdhocNumSupportedMcastAlgoPairs
 
 <dd>
 <p>The number of authentication and cipher algorithms supported by the 802.11 station for sending and
@@ -464,7 +464,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      <b>pAdhocSupportedMcastAlgoPairs</b> member.</p>
 </dd>
 
-### -field <b>pAdhocSupportedMcastAlgoPairs</b>
+### -field pAdhocSupportedMcastAlgoPairs
 
 <dd>
 <p>A pointer to an array of authentication and cipher algorithms supported by the 802.11 station for
@@ -474,31 +474,31 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
      DOT11_AUTH_CIPHER_PAIR</a> structure.</p>
 </dd>
 
-### -field <b>bAutoPowerSaveMode</b>
+### -field bAutoPowerSaveMode
 
 <dd>
 <p>The support capability of the NIC/miniport driver combination to autonomously manage power well, including detection and negotiation of proper Wi-Fi Power Save Mode (PSM) between the device and the Wi-Fi Access Point. NDIS 6.30 compliant Wi-Fi miniport drivers should set this member to TRUE.</p>
 </dd>
 
-### -field <b>uMaxNetworkOffloadListSize</b>
+### -field uMaxNetworkOffloadListSize
 
 <dd>
 <p>The maximum number of networks a miniport driver can offload, if it has the ability to support the Network List Offload capability.</p>
 </dd>
 
-### -field <b>bMFPCapable</b>
+### -field bMFPCapable
 
 <dd>
 <p>The support capability of the NIC/miniport driver to combination to support management frame protection between the device and the Wi-Fi Access Point  as specified in the 802.11w-2009 specification. Set to TRUE if supported. Otherwise, this member should be set to FALSE. </p>
 </dd>
 
-### -field <b>uInfraNumSupportedMcastMgmtAlgoPairs</b>
+### -field uInfraNumSupportedMcastMgmtAlgoPairs
 
 <dd>
 <p>The length of the array of authentication and cipher algorithm pairs pointed to in <b>pInfraSupportedMcastMgmtAlgoPairs</b>.</p>
 </dd>
 
-### -field <b>pInfraSupportedMcastMgmtAlgoPairs</b>
+### -field pInfraSupportedMcastMgmtAlgoPairs
 
 <dd>
 <p>A pointer to an array of authentication and cipher algorithm pair which the device supports for MFP in Infra mode. The recommended cipher for Windows 8 is BIP with WPA or WPA2 authentication. Each entry in the array is
@@ -598,9 +598,9 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>
 </dt>
 <dt>
-<a href="NULL">Per-Station Default Keys</a>
+<a href="netvista.per_station_default_keys">Per-Station Default Keys</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTSTA_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTSTA_ATTRIBUTES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

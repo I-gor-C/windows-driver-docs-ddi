@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTSetDisplayMode(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setdisplaymode.md">D3DKMT_SETDISPLAYMODE</a> structure that describes the allocation that is used to scan out.</p>

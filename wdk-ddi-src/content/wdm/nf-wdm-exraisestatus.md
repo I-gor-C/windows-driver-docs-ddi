@@ -55,7 +55,7 @@ VOID ExRaiseStatus(
 ## -parameters
 <dl>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>Specifies one of the system-defined STATUS_<i>XXX</i> values. </p>

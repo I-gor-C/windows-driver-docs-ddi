@@ -61,43 +61,43 @@ typedef struct _BTHHFP_DESCRIPTOR2 {
 ## -struct-fields
 <dl>
 
-### -field <b>InputPinCategory</b>
+### -field InputPinCategory
 
 <dd>
 <p>KS pin category for the input function of the paired HFP device.</p>
 </dd>
 
-### -field <b>OutputPinCategory</b>
+### -field OutputPinCategory
 
 <dd>
 <p>KS pin category for the output function of the paired HFP device.</p>
 </dd>
 
-### -field <b>ContainerId</b>
+### -field ContainerId
 
 <dd>
 <p>The PnP container ID for the paired HFP device.</p>
 </dd>
 
-### -field <b>SupportsVolume</b>
+### -field SupportsVolume
 
 <dd>
 <p>Indicates whether the paired HFP device supports remote volume control.</p>
 </dd>
 
-### -field <b>VolumePropertyValuesSize</b>
+### -field VolumePropertyValuesSize
 
 <dd>
 <p>If remote volume control is supported, this member contains the size of the data returned by the <a href="..\bthhfpddi\ni-bthhfpddi-ioctl-bthhfp-device-get-volumepropertyvalues.md">IOCTL_BTHHFP_DEVICE_GET_VOLUMEPROPERTYVALUES</a> request.</p>
 </dd>
 
-### -field <b>FriendlyName</b>
+### -field FriendlyName
 
 <dd>
 <p>An indirect string identifying the human readable friendly name of the paired HFP device.</p>
 </dd>
 
-### -field <b>SupportsNREC</b>
+### -field SupportsNREC
 
 <dd>
 <p>Indicates whether the paired HFP device supports noise reduction / echo cancellation (NREC).</p>

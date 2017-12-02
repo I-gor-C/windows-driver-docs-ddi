@@ -56,7 +56,7 @@ typedef struct _SERIAL_LINE_CONTROL {
 ## -struct-fields
 <dl>
 
-### -field <b>StopBits</b>
+### -field StopBits
 
 <dd>
 <p>The number of stop bits used at the end of each character that is transmitted or received. This member is set to one of the following values.</p>
@@ -81,7 +81,7 @@ typedef struct _SERIAL_LINE_CONTROL {
 <p> </p>
 </dd>
 
-### -field <b>Parity</b>
+### -field Parity
 
 <dd>
 <p>The type of parity checking used for each character that is transmitted or received. This member is set to one of the following values.</p>
@@ -114,7 +114,7 @@ typedef struct _SERIAL_LINE_CONTROL {
 <p> </p>
 </dd>
 
-### -field <b>WordLength</b>
+### -field WordLength
 
 <dd>
 <p>Data bits per character. This member indicates the number of data bits in each character value that is transmitted or received, and does not include parity bits or stop bits. <b>WordLength</b> values in the range 5 to 8 are typically supported.</p>

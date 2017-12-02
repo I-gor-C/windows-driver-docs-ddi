@@ -60,22 +60,22 @@ void EvtUsbDeviceEndpointsConfigure(
 ## -parameters
 <dl>
 
-### -param <i>UdecxUsbDevice</i> [in]
+### -param UdecxUsbDevice [in]
 
 <dd>
-<p>A handle to UDE device object. The client driver created this object in a previous call to <a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.</p>
+<p>A handle to UDE device object. The client driver created this object in a previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a>.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object that represents the request.</p>
 </dd>
 
-### -param <i>Params</i> [in]
+### -param Params [in]
 
 <dd>
-<p>A pointer to a <a href="buses.udecx_endpoints_configure_params">UDECX_ENDPOINTS_CONFIGURE_PARAMS</a> structure that describes the configuration options.</p>
+<p>A pointer to a <a href="..\udecxusbdevice\ns-udecxusbdevice--udecx-endpoints-configure-params.md">UDECX_ENDPOINTS_CONFIGURE_PARAMS</a> structure that describes the configuration options.</p>
 </dd>
 </dl>
 
@@ -83,11 +83,11 @@ void EvtUsbDeviceEndpointsConfigure(
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The client driver registered this callback function in a previous call to <a href="buses.udecxusbdeviceinitsetstatechangecallbacks">UdecxUsbDeviceInitSetStateChangeCallbacks</a> by supplying a function pointer to its implementation.</p>
+<p>The client driver registered this callback function in a previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitsetstatechangecallbacks.md">UdecxUsbDeviceInitSetStateChangeCallbacks</a> by supplying a function pointer to its implementation.</p>
 
 <p>The class extension invokes this  callback function to request the client driver to configure one or more new endpoints into hardware, and/or informs the driver when one or more existing endpoints is no longer being used. </p>
 
-<p>After creating endpoints, for each new endpoint, the client driver must call <a href="buses.udecxusbendpointsetwdfioqueue">UdecxUsbEndpointSetWdfIoQueue</a> before completing the request.
+<p>After creating endpoints, for each new endpoint, the client driver must call <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointsetwdfioqueue.md">UdecxUsbEndpointSetWdfIoQueue</a> before completing the request.
 </p>
 
 <p>After releasing endpoints, the client driver should not use framework queue objects associated with the endpoints. The class extension considers those queues as purged to prevent future requests.
@@ -147,7 +147,7 @@ void EvtUsbDeviceEndpointsConfigure(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbendpointsetwdfioqueue">UdecxUsbEndpointSetWdfIoQueue</a>
+<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointsetwdfioqueue.md">UdecxUsbEndpointSetWdfIoQueue</a>
 </dt>
 <dt>
 <a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>

@@ -60,37 +60,37 @@ typedef struct _FEATURE_DATA_WRITE_PROTECT {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>SupportsSWPPBit</b>
+### -field SupportsSWPPBit
 
 <dd>
 <p>Indicates, when set to 1, that the device supports set/release PWP status. If additionally <b>SupportsPersistentWriteProtect</b> is set to 1, the device supports the SEND DVD STRUCTURE command with Format = 0xC0. For more details on the write protect feature see the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. </p>
 </dd>
 
-### -field <b>SupportsPersistentWriteProtect</b>
+### -field SupportsPersistentWriteProtect
 
 <dd>
 <p>Indicates, when set to 1, that the device supports the persistent write protect bit of the time-out &amp; protect mode page. For more details on the write protect feature see the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. </p>
 </dd>
 
-### -field <b>WriteInhibitDCB</b>
+### -field WriteInhibitDCB
 
 <dd></dd>
 
-### -field <b>DiscWriteProtectPAC</b>
+### -field DiscWriteProtectPAC
 
 <dd></dd>
 
-### -field <b>Reserved01</b>
+### -field Reserved01
 
 <dd></dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. </p>

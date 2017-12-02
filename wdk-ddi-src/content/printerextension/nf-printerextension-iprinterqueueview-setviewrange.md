@@ -56,13 +56,13 @@ HRESULT SetViewRange(
 ## -parameters
 <dl>
 
-### -param <i>ulViewOffset</i> [in]
+### -param ulViewOffset [in]
 
 <dd>
 <p>The start of the range of jobs being monitored. Note that the offset value uses a zero-based index.</p>
 </dd>
 
-### -param <i>ulViewSize</i> [in]
+### -param ulViewSize [in]
 
 <dd>
 <p>The  size of the range of jobs being monitored.</p>

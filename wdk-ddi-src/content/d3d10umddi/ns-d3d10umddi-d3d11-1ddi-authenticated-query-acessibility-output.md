@@ -57,25 +57,25 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_ACESSIBILITY_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Output</b>
+### -field Output
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure that contains a Message Authentication Code (MAC) and other data.</p>
 </dd>
 
-### -field <b>BusType</b>
+### -field BusType
 
 <dd>
 <p>A bitwise <b>OR</b> of flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-bus-type.md">D3D11_1DDI_BUS_TYPE</a> enumeration.</p>
 </dd>
 
-### -field <b>AccessibleInContiguousBlocks</b>
+### -field AccessibleInContiguousBlocks
 
 <dd>
 <p>If <b>TRUE</b>, contiguous blocks of video memory may be accessible to the CPU or the bus.</p>
 </dd>
 
-### -field <b>AccessibleInNonContiguousBlocks</b>
+### -field AccessibleInNonContiguousBlocks
 
 <dd>
 <p>If <b>TRUE</b>, non-contiguous blocks of video memory may be accessible to the CPU or the bus.</p>

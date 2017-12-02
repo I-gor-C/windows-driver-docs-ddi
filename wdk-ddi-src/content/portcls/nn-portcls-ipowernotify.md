@@ -59,7 +59,7 @@ req.iface:
 <p>The <code>IPowerNotify</code> interface provides a single method that the port driver calls to notify the miniport driver when a change in power state occurs.</p>
 <p>For example, when the operating system tells a wave audio device to go to a sleep state, the port driver pauses any active streams and then calls the power-notification callback to inform the miniport driver of the impending power down. The miniport driver then has an opportunity to save any necessary context before the adapter's <b>PowerChangeState</b> method is called.</p>
 <p>The process is reversed when the device is powering up. PortCls first calls the adapter's <b>PowerChangeState</b> method to power up the adapter. The port driver then calls the miniport driver's callback to allow the miniport driver to restore its context. Finally, the port driver unpauses any previously paused active audio streams.</p>
-<p>For more information, see <a href="NULL">Implementing IPowerNotify</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/8bd8b4c8-1961-41ea-ba98-41e3a732ed37">Implementing IPowerNotify</a>.</p>
 
 
 ## -inheritance

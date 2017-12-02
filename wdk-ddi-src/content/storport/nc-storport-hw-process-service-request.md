@@ -59,13 +59,13 @@ VOID HwStorProcessServiceRequest(
 ## -parameters
 <dl>
 
-### -param <i>DeviceExtension</i> 
+### -param DeviceExtension 
 
 <dd>
 <p>A pointer to the virtual miniport driver's per-adapter storage area.</p>
 </dd>
 
-### -param <i>Irp</i> 
+### -param Irp 
 
 <dd>
 <p>A pointer to the I/O request.</p>
@@ -80,7 +80,7 @@ VOID HwStorProcessServiceRequest(
 
 <p>The port driver calls the Storport virtual miniport driver's <b>HwStorProcessServiceRequest</b> routine at PASSIVE_LEVEL. The virtual miniport driver completes the IRP by calling the <a href="..\storport\nf-storport-storportcompleteserviceirp.md">StorPortCompleteServiceIrp</a> routine.</p>
 
-<p>To define an <b>HwStorProcessServiceRequest</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
+<p>To define an <b>HwStorProcessServiceRequest</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
 
 <p> For example, to define a <b>HwStorProcessServiceRequest</b> callback routine that is named <i>MyHwProcessServiceRequest</i>, use the <b>HW_PROCESS_SERVICE_REQUEST</b> type as shown in this code example:</p>
 

@@ -7,7 +7,7 @@ old-location: wdf\wdf_dispatch_irp_to_io_queue_flags.htm
 old-project: wdf
 ms.assetid: 6A205F51-990F-4721-B4C7-B96E944D2A54
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDF_DISPATCH_IRP_TO_IO_QUEUE_NO_FLAGS"></a><a id="wdf_dispatch_irp_to_io_queue_no_flags"></a><b>WDF_DISPATCH_IRP_TO_IO_QUEUE_NO_FLAGS</b>
+### -field WDF_DISPATCH_IRP_TO_IO_QUEUE_NO_FLAGS
 
 <dd>
 <p>No flags are set.</p>
 </dd>
 
-### -field <a id="WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK"></a><a id="wdf_dispatch_irp_to_io_queue_invoke_incallerctx_callback"></a><b>WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK</b>
+### -field WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK
 
 <dd>
 <p>Specifies that the framework should call the <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-io-in-caller-context.md">EvtIoInCallerContext</a> callback function before inserting the request into the queue.</p>
 </dd>
 
-### -field <a id="WDF_DISPATCH_IRP_TO_IO_QUEUE_PREPROCESSED_IRP"></a><a id="wdf_dispatch_irp_to_io_queue_preprocessed_irp"></a><b>WDF_DISPATCH_IRP_TO_IO_QUEUE_PREPROCESSED_IRP</b>
+### -field WDF_DISPATCH_IRP_TO_IO_QUEUE_PREPROCESSED_IRP
 
 <dd>
 <p>Specifies that the IRP was preprocessed by the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdfdevice-wdm-irp-preprocess.md">EvtDeviceWdmIrpPreprocess</a> callback function.  Accordingly, the framework adjusts the IRP's stack location to the next entry before inserting it into the queue.</p>
@@ -113,4 +113,4 @@ typedef enum _WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

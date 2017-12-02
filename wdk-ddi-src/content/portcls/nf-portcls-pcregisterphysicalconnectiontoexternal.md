@@ -58,31 +58,31 @@ NTSTATUS PcRegisterPhysicalConnectionToExternal(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object for the device. This is a system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
 </dd>
 
-### -param <i>FromUnknown</i> [in]
+### -param FromUnknown [in]
 
 <dd>
 <p>Pointer to the <a href="..\portcls\nn-portcls-iport.md">IPort</a> interface of a port driver object. The port driver object that is associated with <i>FromUnknown</i> is bound to the subdevice that supplies the connection's data source (output) pin.</p>
 </dd>
 
-### -param <i>FromPin</i> [in]
+### -param FromPin [in]
 
 <dd>
 <p>Specifies a pin ID. This parameter identifies the source (output) pin on the filter that is associated with the <i>FromUnknown</i> interface.</p>
 </dd>
 
-### -param <i>ToString</i> [in]
+### -param ToString [in]
 
 <dd>
 <p>Pointer to a null-terminated Unicode string containing the symbolic link name of the external filter that supplies the sink pin for the connection.</p>
 </dd>
 
-### -param <i>ToPin</i> [in]
+### -param ToPin [in]
 
 <dd>
 <p>Specifies a pin ID. This parameter identifies the sink (input) pin on the external filter named by <i>ToString</i>.</p>
@@ -101,7 +101,7 @@ NTSTATUS PcRegisterPhysicalConnectionToExternal(
 
 <p>The information that is required to register an external physical connection must be supplied to the two drivers. This can be done either during an initial coordinated install of the two devices, or dynamically by a user-mode configuration program that coordinates changes to the configuration of both devices.</p>
 
-<p>An adapter driver can call the <a href="audio.iunregisterphysicalconnection_unregisterphysicalconnectiontoexternal">IUnregisterPhysicalConnection::UnregisterPhysicalConnectionToExternal</a> method to delete the registration of a physical connection that was registered by a previous call to <b>PcRegisterPhysicalConnectionToExternal</b>. For more information, see <a href="NULL">Dynamic Audio Subdevices</a>.</p>
+<p>An adapter driver can call the <a href="audio.iunregisterphysicalconnection_unregisterphysicalconnectiontoexternal">IUnregisterPhysicalConnection::UnregisterPhysicalConnectionToExternal</a> method to delete the registration of a physical connection that was registered by a previous call to <b>PcRegisterPhysicalConnectionToExternal</b>. For more information, see <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890-aae1-5ecf58f2e22a">Dynamic Audio Subdevices</a>.</p>
 
 ## -requirements
 <table>

@@ -57,19 +57,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KsAcquireOnly"></a><a id="ksacquireonly"></a><a id="KSACQUIREONLY"></a><b>KsAcquireOnly</b>
+### -field KsAcquireOnly
 
 <dd></dd>
 
-### -field <a id="KsAcquireAndRemove"></a><a id="ksacquireandremove"></a><a id="KSACQUIREANDREMOVE"></a><b>KsAcquireAndRemove</b>
+### -field KsAcquireAndRemove
 
 <dd></dd>
 
-### -field <a id="KsAcquireOnlySingleItem"></a><a id="ksacquireonlysingleitem"></a><a id="KSACQUIREONLYSINGLEITEM"></a><b>KsAcquireOnlySingleItem</b>
+### -field KsAcquireOnlySingleItem
 
 <dd></dd>
 
-### -field <a id="KsAcquireAndRemoveOnlySingleItem"></a><a id="ksacquireandremoveonlysingleitem"></a><a id="KSACQUIREANDREMOVEONLYSINGLEITEM"></a><b>KsAcquireAndRemoveOnlySingleItem</b>
+### -field KsAcquireAndRemoveOnlySingleItem
 
 <dd></dd>
 </dl>

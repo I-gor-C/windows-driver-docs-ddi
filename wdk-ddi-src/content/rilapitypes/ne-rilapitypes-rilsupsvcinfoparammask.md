@@ -7,7 +7,7 @@ old-location: netvista\rilsupsvcinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 52dd2092-939a-491b-af2d-2ea86eabf99a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,71 +71,71 @@ typedef enum _RILSUPSVCINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_SSI_FROM_NETWORK"></a><a id="ril_param_ssi_from_network"></a><b>RIL_PARAM_SSI_FROM_NETWORK</b>
+### -field RIL_PARAM_SSI_FROM_NETWORK
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_FAILURE_REASON"></a><a id="ril_param_ssi_failure_reason"></a><b>RIL_PARAM_SSI_FAILURE_REASON</b>
+### -field RIL_PARAM_SSI_FAILURE_REASON
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_SUPSVC_ACTION"></a><a id="ril_param_ssi_supsvc_action"></a><b>RIL_PARAM_SSI_SUPSVC_ACTION</b>
+### -field RIL_PARAM_SSI_SUPSVC_ACTION
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_SUPSVC_TYPE"></a><a id="ril_param_ssi_supsvc_type"></a><b>RIL_PARAM_SSI_SUPSVC_TYPE</b>
+### -field RIL_PARAM_SSI_SUPSVC_TYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_CALL_FORWARDING_REASON"></a><a id="ril_param_ssi_call_forwarding_reason"></a><b>RIL_PARAM_SSI_CALL_FORWARDING_REASON</b>
+### -field RIL_PARAM_SSI_CALL_FORWARDING_REASON
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_CALL_BARRING_TYPE"></a><a id="ril_param_ssi_call_barring_type"></a><b>RIL_PARAM_SSI_CALL_BARRING_TYPE</b>
+### -field RIL_PARAM_SSI_CALL_BARRING_TYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_INFOCLASSES"></a><a id="ril_param_ssi_infoclasses"></a><b>RIL_PARAM_SSI_INFOCLASSES</b>
+### -field RIL_PARAM_SSI_INFOCLASSES
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_ALPHA_IDENTIFIER"></a><a id="ril_param_ssi_alpha_identifier"></a><b>RIL_PARAM_SSI_ALPHA_IDENTIFIER</b>
+### -field RIL_PARAM_SSI_ALPHA_IDENTIFIER
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_CALL_BARRING_PASSWORD"></a><a id="ril_param_ssi_call_barring_password"></a><b>RIL_PARAM_SSI_CALL_BARRING_PASSWORD</b>
+### -field RIL_PARAM_SSI_CALL_BARRING_PASSWORD
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_NEW_CALL_BARRING_PASSWORD"></a><a id="ril_param_ssi_new_call_barring_password"></a><b>RIL_PARAM_SSI_NEW_CALL_BARRING_PASSWORD</b>
+### -field RIL_PARAM_SSI_NEW_CALL_BARRING_PASSWORD
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_CALL_FORWARDING_SETTINGS"></a><a id="ril_param_ssi_call_forwarding_settings"></a><b>RIL_PARAM_SSI_CALL_FORWARDING_SETTINGS</b>
+### -field RIL_PARAM_SSI_CALL_FORWARDING_SETTINGS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_CALLER_ID_SETTINGS"></a><a id="ril_param_ssi_caller_id_settings"></a><b>RIL_PARAM_SSI_CALLER_ID_SETTINGS</b>
+### -field RIL_PARAM_SSI_CALLER_ID_SETTINGS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_DIALED_ID_SETTINGS"></a><a id="ril_param_ssi_dialed_id_settings"></a><b>RIL_PARAM_SSI_DIALED_ID_SETTINGS</b>
+### -field RIL_PARAM_SSI_DIALED_ID_SETTINGS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_HIDE_ID_SETTINGS"></a><a id="ril_param_ssi_hide_id_settings"></a><b>RIL_PARAM_SSI_HIDE_ID_SETTINGS</b>
+### -field RIL_PARAM_SSI_HIDE_ID_SETTINGS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_CONNECTED_ID_SETTINGS"></a><a id="ril_param_ssi_connected_id_settings"></a><b>RIL_PARAM_SSI_CONNECTED_ID_SETTINGS</b>
+### -field RIL_PARAM_SSI_CONNECTED_ID_SETTINGS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_SUPSERVICE_DATA"></a><a id="ril_param_ssi_supservice_data"></a><b>RIL_PARAM_SSI_SUPSERVICE_DATA</b>
+### -field RIL_PARAM_SSI_SUPSERVICE_DATA
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_SSI_ALL"></a><a id="ril_param_ssi_all"></a><b>RIL_PARAM_SSI_ALL</b>
+### -field RIL_PARAM_SSI_ALL
 
 <dd></dd>
 </dl>

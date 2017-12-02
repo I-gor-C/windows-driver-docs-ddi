@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>PropTypeSet</b>
+### -field PropTypeSet
 
 <dd>
 <p>Specifies a KSIDENTIFIER structure (see <a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>) that identifies the data type of the property. The <b>Set</b> member of a KSIDENTIFIER structure indicates the set of value types supported, and the <b>Id</b> member of the same structure identifies the type within the set.</p>
 </dd>
 
-### -field <b>MembersListCount</b>
+### -field MembersListCount
 
 <dd>
 <p>Specifies the number of entries in the array pointed to by <b>MembersList</b>.</p>
 </dd>
 
-### -field <b>MembersList</b>
+### -field MembersList
 
 <dd>
 <p>Points to an array of <a href="stream.ksproperty_memberslist">KSPROPERTY_MEMBERSLIST</a> structures. Each entry specifies a list of possible values or sets of values that the property may assume.</p>
@@ -90,7 +90,7 @@ typedef struct {
 
 <p>A driver can specify a pointer to a KSPROPERTY_VALUES structure in the relevant KSPROPERTY_ITEM for a property.</p>
 
-<p>For more information, see <a href="NULL">KS Properties</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88-aaf9-ff1ddbfd30f7">KS Properties</a>.</p>
 
 ## -requirements
 <table>

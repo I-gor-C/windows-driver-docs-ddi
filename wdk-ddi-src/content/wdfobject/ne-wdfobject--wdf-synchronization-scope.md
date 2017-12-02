@@ -7,7 +7,7 @@ old-location: wdf\wdf_synchronization_scope.htm
 old-project: wdf
 ms.assetid: a251bf5c-c09b-4097-a9ed-82f2312ac408
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDriverMiniportUnload
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ typedef enum _WDF_SYNCHRONIZATION_SCOPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfSynchronizationScopeInvalid"></a><a id="wdfsynchronizationscopeinvalid"></a><a id="WDFSYNCHRONIZATIONSCOPEINVALID"></a><b>WdfSynchronizationScopeInvalid</b>
+### -field WdfSynchronizationScopeInvalid
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="WdfSynchronizationScopeInheritFromParent"></a><a id="wdfsynchronizationscopeinheritfromparent"></a><a id="WDFSYNCHRONIZATIONSCOPEINHERITFROMPARENT"></a><b>WdfSynchronizationScopeInheritFromParent</b>
+### -field WdfSynchronizationScopeInheritFromParent
 
 <dd>
 <p>The framework uses the synchronization scope value that was specified for the object's parent object. This value is the default if a driver does not specify a WDF_SYNCHRONIZATION_SCOPE-typed value.</p>
 </dd>
 
-### -field <a id="WdfSynchronizationScopeDevice"></a><a id="wdfsynchronizationscopedevice"></a><a id="WDFSYNCHRONIZATIONSCOPEDEVICE"></a><b>WdfSynchronizationScopeDevice</b>
+### -field WdfSynchronizationScopeDevice
 
 <dd>
 <p>The framework synchronizes execution of the event callback functions of all queue and file objects that are underneath a device object in the driver's object hierarchy. </p>
@@ -80,7 +80,7 @@ typedef enum _WDF_SYNCHRONIZATION_SCOPE {
 <p>The framework obtains the device object's synchronization lock before calling a callback function. Therefore, these callback functions run one at a time. However, if the driver creates multiple objects of the same type, but under different device objects, their event callback functions might run concurrently on a multiprocessor system.</p>
 </dd>
 
-### -field <a id="WdfSynchronizationScopeQueue"></a><a id="wdfsynchronizationscopequeue"></a><a id="WDFSYNCHRONIZATIONSCOPEQUEUE"></a><b>WdfSynchronizationScopeQueue</b>
+### -field WdfSynchronizationScopeQueue
 
 <dd>
 <p>This value affects queue objects only. The framework synchronizes the event callback functions of the queue object so that only one executes at a time. </p>
@@ -90,7 +90,7 @@ typedef enum _WDF_SYNCHRONIZATION_SCOPE {
 <p>For framework versions 1.9 and later, a driver should set <b>WdfSynchronizationScopeQueue</b> for individual queue objects. To use this scope with earlier versions of the framework, the driver must set <b>WdfSynchronizationScopeQueue</b> for the parent device object and <b>WdfSynchronizationScopeInheritFromParent</b> for the queue object.</p>
 </dd>
 
-### -field <a id="WdfSynchronizationScopeNone"></a><a id="wdfsynchronizationscopenone"></a><a id="WDFSYNCHRONIZATIONSCOPENONE"></a><b>WdfSynchronizationScopeNone</b>
+### -field WdfSynchronizationScopeNone
 
 <dd>
 <p>The framework does not synchronize the object's event callback functions, so the callback functions might run concurrently on a multiprocessor system.</p>
@@ -150,4 +150,4 @@ typedef enum _WDF_SYNCHRONIZATION_SCOPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_SYNCHRONIZATION_SCOPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_SYNCHRONIZATION_SCOPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

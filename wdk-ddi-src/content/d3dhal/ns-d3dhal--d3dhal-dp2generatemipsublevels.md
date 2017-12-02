@@ -58,13 +58,13 @@ typedef struct _D3DHAL_DP2GENERATEMIPSUBLEVELS {
 ## -struct-fields
 <dl>
 
-### -field <b>hSurface</b>
+### -field hSurface
 
 <dd>
 <p>Specifies the surface handle used in the generation.</p>
 </dd>
 
-### -field <b>Filter</b>
+### -field Filter
 
 <dd>
 <p>Specifies the filter type used in the generation.</p>

@@ -63,55 +63,55 @@ typedef enum _WORK_QUEUE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="CriticalWorkQueue"></a><a id="criticalworkqueue"></a><a id="CRITICALWORKQUEUE"></a><b>CriticalWorkQueue</b>
+### -field CriticalWorkQueue
 
 <dd>
 <p>Indicates a real-time system worker thread. The assigned priority level is 13.</p>
 </dd>
 
-### -field <a id="DelayedWorkQueue"></a><a id="delayedworkqueue"></a><a id="DELAYEDWORKQUEUE"></a><b>DelayedWorkQueue</b>
+### -field DelayedWorkQueue
 
 <dd>
 <p>Indicates an ordinary worker thread. The assigned priority level is 12.</p>
 </dd>
 
-### -field <a id="HyperCriticalWorkQueue"></a><a id="hypercriticalworkqueue"></a><a id="HYPERCRITICALWORKQUEUE"></a><b>HyperCriticalWorkQueue</b>
+### -field HyperCriticalWorkQueue
 
 <dd>
 <p>System  priority level. The assigned priority level is 15.</p>
 </dd>
 
-### -field <a id="NormalWorkQueue"></a><a id="normalworkqueue"></a><a id="NORMALWORKQUEUE"></a><b>NormalWorkQueue</b>
+### -field NormalWorkQueue
 
 <dd>
 <p>System priority level. The assigned priority level is 8</p>
 </dd>
 
-### -field <a id="BackgroundWorkQueue"></a><a id="backgroundworkqueue"></a><a id="BACKGROUNDWORKQUEUE"></a><b>BackgroundWorkQueue</b>
+### -field BackgroundWorkQueue
 
 <dd>
 <p>System priority level. The assigned priority level is 7.</p>
 </dd>
 
-### -field <a id="RealTimeWorkQueue"></a><a id="realtimeworkqueue"></a><a id="REALTIMEWORKQUEUE"></a><b>RealTimeWorkQueue</b>
+### -field RealTimeWorkQueue
 
 <dd>
 <p>System  priority level. The assigned priority level is18.</p>
 </dd>
 
-### -field <a id="SuperCriticalWorkQueue"></a><a id="supercriticalworkqueue"></a><a id="SUPERCRITICALWORKQUEUE"></a><b>SuperCriticalWorkQueue</b>
+### -field SuperCriticalWorkQueue
 
 <dd>
 <p>System  priority level. The assigned priority level is 14.</p>
 </dd>
 
-### -field <a id="MaximumWorkQueue"></a><a id="maximumworkqueue"></a><a id="MAXIMUMWORKQUEUE"></a><b>MaximumWorkQueue</b>
+### -field MaximumWorkQueue
 
 <dd>
 <p>System  priority maximum. No priority level assigned.</p>
 </dd>
 
-### -field <a id="CustomPriorityWorkQueue"></a><a id="custompriorityworkqueue"></a><a id="CUSTOMPRIORITYWORKQUEUE"></a><b>CustomPriorityWorkQueue</b>
+### -field CustomPriorityWorkQueue
 
 <dd>
 <p>The queue has a custom priority level assigned by the caller. The <b>CustomPriorityWorkQueue</b> value is the base priority level for the custom priority queue. Work items are queued at a particular priority by setting <i>QueueType</i> to <b>CustomPriorityWorkQueue</b> + <i>Priority</i> where <i>Priority</i> is the <b>KPRIORITY</b> value for the work item.</p>

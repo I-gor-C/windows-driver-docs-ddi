@@ -7,7 +7,7 @@ old-location: netvista\ndismregisterwdiminiportdriver.htm
 old-project: netvista
 ms.assetid: 60FE4E6C-38D4-438F-983B-7336926F6FE2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMRegisterWdiMiniportDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ NDIS_STATUS NdisMRegisterWdiMiniportDriver(
 ## -parameters
 <dl>
 
-### -param <i>DriverObject</i> [in]
+### -param DriverObject [in]
 
 <dd>
 <p>A pointer to an opaque driver object that the miniport driver received in its 
@@ -69,7 +69,7 @@ NDIS_STATUS NdisMRegisterWdiMiniportDriver(
      Miniport Drivers</a>).</p>
 </dd>
 
-### -param <i>RegistryPath</i> [in]
+### -param RegistryPath [in]
 
 <dd>
 <p>A pointer to an opaque registry path that the miniport driver received in its 
@@ -77,14 +77,14 @@ NDIS_STATUS NdisMRegisterWdiMiniportDriver(
      <i>Argument2</i> parameter.</p>
 </dd>
 
-### -param <i>NdisDriverContext</i> [in, optional]
+### -param NdisDriverContext [in, optional]
 
 <dd>
 <p>A handle to a driver-allocated context area where the driver maintains state and configuration
      information.</p>
 </dd>
 
-### -param <i>MiniportDriverCharacteristics</i> [in]
+### -param MiniportDriverCharacteristics [in]
 
 <dd>
 <p>A pointer to an 
@@ -92,7 +92,7 @@ NDIS_STATUS NdisMRegisterWdiMiniportDriver(
      NDIS_MINIPORT_DRIVER_CHARACTERISTICS</a> structure that the caller initialized.</p>
 </dd>
 
-### -param <i>MiniportWdiCharacteristics</i> [in]
+### -param MiniportWdiCharacteristics [in]
 
 <dd>
 <p>A pointer to an 
@@ -100,7 +100,7 @@ NDIS_STATUS NdisMRegisterWdiMiniportDriver(
      <a href="..\dot11wdi\ns-dot11wdi--ndis-miniport-driver-wdi-characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a> structure that the caller initialized.</p>
 </dd>
 
-### -param <i>NdisMiniportDriverHandle</i> [out]
+### -param NdisMiniportDriverHandle [out]
 
 <dd>
 <p>A pointer to a caller-supplied handle variable. NDIS writes a handle to this variable that
@@ -198,4 +198,4 @@ NDIS_STATUS NdisMRegisterWdiMiniportDriver(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterWdiMiniportDriver function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterWdiMiniportDriver function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

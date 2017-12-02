@@ -57,7 +57,7 @@ typedef struct IDARG_IN_UPDATEMODES {
 ## -struct-fields
 <dl>
 
-### -field <b>Reason</b>
+### -field Reason
 
 <dd>
 <p>
@@ -65,14 +65,14 @@ typedef struct IDARG_IN_UPDATEMODES {
                  </p>
 </dd>
 
-### -field <b>TargetModeCount</b>
+### -field TargetModeCount
 
 <dd>
 <p>
                      [in] Number of target modes in the <b>pTargetModes</b> buffer.  This cannot be zero.</p>
 </dd>
 
-### -field <b>pTargetModes</b>
+### -field pTargetModes
 
 <dd>
 <p>

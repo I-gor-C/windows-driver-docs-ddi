@@ -7,7 +7,7 @@ old-location: netvista\ndk_logical_address_mapping.htm
 old-project: netvista
 ms.assetid: 7FB34813-5F89-4B9C-9594-B23E7D4736C6
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDK_LOGICAL_ADDRESS_MAPPING, NDK_LOGICAL_ADDRESS_MAPPING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,20 +56,20 @@ typedef struct _NDK_LOGICAL_ADDRESS_MAPPING {
 ## -struct-fields
 <dl>
 
-### -field <b>AdapterContext</b>
+### -field AdapterContext
 
 <dd>
 <p>Reserved for the NDK provider's use. The NDK consumer must not modify this member.</p>
 </dd>
 
-### -field <b>AdapterPageCount</b>
+### -field AdapterPageCount
 
 <dd>
 <p>	The number of entries in the array that is specified in the  <b>AdapterPageArray</b> member.
 </p>
 </dd>
 
-### -field <b>AdapterPageArray</b>
+### -field AdapterPageArray
 
 <dd>
 <p>An array of adapter logical addresses. Each logical address in the array corresponds to a page, of <b>PAGE_SIZE</b> bytes in length, and must be <b>PAGE_SIZE</b>-aligned. The array of pages correspond to a virtually contiguous memory region.
@@ -130,4 +130,4 @@ The <b>NDK_LOGICAL_ADDRESS</b> datatype is defined as follows:</p>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_LOGICAL_ADDRESS_MAPPING structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_LOGICAL_ADDRESS_MAPPING structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

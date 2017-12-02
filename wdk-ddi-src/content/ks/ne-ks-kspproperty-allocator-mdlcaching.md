@@ -54,7 +54,7 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSPROPERTY_ALLOCATOR_CLEANUP_CACHEDMDLPAGES"></a><a id="ksproperty_allocator_cleanup_cachedmdlpages"></a><b>KSPROPERTY_ALLOCATOR_CLEANUP_CACHEDMDLPAGES</b>
+### -field KSPROPERTY_ALLOCATOR_CLEANUP_CACHEDMDLPAGES
 
 <dd>
 <p>This value is used internally by the operating system.</p>

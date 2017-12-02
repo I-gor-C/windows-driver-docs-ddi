@@ -59,13 +59,13 @@ typedef struct _KBUGCHECK_ADD_PAGES {
 ## -struct-fields
 <dl>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Contains private context data for the exclusive use of the callback routine. The callback routine can set this member to any value. Typically, if the callback routine needs to be called more than one time, the routine sets this member to point to a driver-supplied buffer during the initial call. During subsequent calls, the callback routine can read the previous contents of this buffer and update its contents. Before the initial call to the callback routine, <b>Context</b> is <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>
@@ -74,19 +74,19 @@ typedef struct _KBUGCHECK_ADD_PAGES {
 <p></p>
 <dl>
 
-### -field <a id="KB_ADD_PAGES_FLAG_VIRTUAL_ADDRESS"></a><a id="kb_add_pages_flag_virtual_address"></a>KB_ADD_PAGES_FLAG_VIRTUAL_ADDRESS
+### -field KB_ADD_PAGES_FLAG_VIRTUAL_ADDRESS
 
 <dd>
 <p>Indicates that the <b>Address</b> member contains a virtual address.</p>
 </dd>
 
-### -field <a id="KB_ADD_PAGES_FLAG_PHYSICAL_ADDRESS"></a><a id="kb_add_pages_flag_physical_address"></a>KB_ADD_PAGES_FLAG_PHYSICAL_ADDRESS
+### -field KB_ADD_PAGES_FLAG_PHYSICAL_ADDRESS
 
 <dd>
 <p>Indicates that the <b>Address</b> member contains a physical address.</p>
 </dd>
 
-### -field <a id="KB_ADD_PAGES_FLAG_ADDITIONAL_RANGES_EXIST"></a><a id="kb_add_pages_flag_additional_ranges_exist"></a>KB_ADD_PAGES_FLAG_ADDITIONAL_RANGES_EXIST
+### -field KB_ADD_PAGES_FLAG_ADDITIONAL_RANGES_EXIST
 
 <dd>
 <p>Indicates that the callback routine requests that it be called again so that it can add more pages.</p>
@@ -95,19 +95,19 @@ typedef struct _KBUGCHECK_ADD_PAGES {
 <p>The callback routine must set either the KB_ADD_PAGES_FLAG_VIRTUAL_ADDRESS flag or the KB_ADD_PAGES_FLAG_PHYSICAL_ADDRESS flag, but not both. On entry to the callback routine, <b>Flags</b> is initialized to zero.</p>
 </dd>
 
-### -field <b>BugCheckCode</b>
+### -field BugCheckCode
 
 <dd>
 <p>Contains a bug check code, which specifies the reason for the bug check. The callback routine can use this information to decide whether to add any pages to the crash dump file. For a full list of bug check codes, see the Bugcodes.h    header file.</p>
 </dd>
 
-### -field <b>Address</b>
+### -field Address
 
 <dd>
 <p>Specifies the physical or virtual address of the page or pages that the callback routine requests be added to the crash dump file.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Specifies the number of contiguous pages to add to the crash dump file, starting from the virtual or physical address that is specified by the <b>Address</b> member. If <b>Count</b> &gt; 1 and <b>Address</b> is a virtual address, the pages are contiguous in virtual memory space. If <b>Count</b> &gt; 1 and <b>Address</b> is a physical address, the pages are contiguous in physical memory space. The callback routine can set this member to zero to indicate that it does not need to add any pages to the crash dump file.</p>

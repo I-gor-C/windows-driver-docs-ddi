@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceassignmofresourcename.htm
 old-project: wdf
 ms.assetid: b4ab0a7b-9c5a-4295-94fc-35310ca8e05b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceAssignMofResourceName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ NTSTATUS WdfDeviceAssignMofResourceName(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>MofResourceName</i> [in]
+### -param MofResourceName [in]
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that specifies the name of a MOF resource. </p>

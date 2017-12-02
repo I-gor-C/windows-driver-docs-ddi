@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvvalidateprofile.htm
 old-project: netvista
 ms.assetid: 724a6c17-e020-44e1-9d00-332daa5dbdfb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ DWORD APIENTRY Dot11ExtIhvValidateProfile(
 ## -parameters
 <dl>
 
-### -param <i>hIhvExtAdapter</i> [in, optional]
+### -param hIhvExtAdapter [in, optional]
 
 <dd>
 <p>The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) adapter. This
@@ -69,7 +69,7 @@ DWORD APIENTRY Dot11ExtIhvValidateProfile(
      Handler function.</p>
 </dd>
 
-### -param <i>pIhvProfileParams</i> [in, optional]
+### -param pIhvProfileParams [in, optional]
 
 <dd>
 <p>A pointer to a 
@@ -78,7 +78,7 @@ DWORD APIENTRY Dot11ExtIhvValidateProfile(
      set (BSS) network to which the profile extensions will be applied.</p>
 </dd>
 
-### -param <i>pIhvConnProfile</i> [in]
+### -param pIhvConnProfile [in]
 
 <dd>
 <p>A pointer to a 
@@ -87,7 +87,7 @@ DWORD APIENTRY Dot11ExtIhvValidateProfile(
      profile.</p>
 </dd>
 
-### -param <i>pIhvSecProfile</i> [in]
+### -param pIhvSecProfile [in]
 
 <dd>
 <p>A pointer to a 
@@ -96,7 +96,7 @@ DWORD APIENTRY Dot11ExtIhvValidateProfile(
      profile.</p>
 </dd>
 
-### -param <i>pdwReasonCode</i> [out]
+### -param pdwReasonCode [out]
 
 <dd>
 <p>A pointer to a DWORD value, which provides additional information for the return value of the 
@@ -194,4 +194,4 @@ DWORD APIENTRY Dot11ExtIhvValidateProfile(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_VALIDATE_PROFILE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_VALIDATE_PROFILE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -58,10 +58,10 @@ void EvtUdecxWdfDeviceReset(
 ## -parameters
 <dl>
 
-### -param <i>UdecxWdfDevice</i> [in]
+### -param UdecxWdfDevice [in]
 
 <dd>
-<p>A handle to a framework device object that represents the controller. The client driver initialized this object in the previous call to <a href="buses.udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a>.</p>
+<p>A handle to a framework device object that represents the controller. The client driver initialized this object in the previous call to <a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation.md">UdecxWdfDeviceAddUsbDeviceEmulation</a>.</p>
 </dd>
 </dl>
 
@@ -70,8 +70,8 @@ void EvtUdecxWdfDeviceReset(
 
 ## -remarks
 <p>The USB device emulation  class extension (UdeCx) invokes this callback function to notify the client driver that it must handle a reset request including resetting all downstream devices attached to the emulated host controller.
-This call is asynchronous. The client driver signals completion with status information by calling <a href="buses.udecxwdfdeviceresetcomplete">UdecxWdfDeviceResetComplete</a>.
-If the client specified <b>UdeWdfDeviceResetActionResetEachUsbDevice</b> in <a href="buses.udecx_wdf_device_config">UDECX_WDF_DEVICE_CONFIG</a> (during the <a href="buses.udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a> call), this callback is never used. Instead, each connected attached device receives an <i>EVT_UDECX_WDF_DEVICE_RESET</i> callback.
+This call is asynchronous. The client driver signals completion with status information by calling <a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecxwdfdeviceresetcomplete.md">UdecxWdfDeviceResetComplete</a>.
+If the client specified <b>UdeWdfDeviceResetActionResetEachUsbDevice</b> in <a href="..\udecxwdfdevice\ns-udecxwdfdevice--udecx-wdf-device-config.md">UDECX_WDF_DEVICE_CONFIG</a> (during the <a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation.md">UdecxWdfDeviceAddUsbDeviceEmulation</a> call), this callback is never used. Instead, each connected attached device receives an <i>EVT_UDECX_WDF_DEVICE_RESET</i> callback.
 </p>
 
 ## -requirements

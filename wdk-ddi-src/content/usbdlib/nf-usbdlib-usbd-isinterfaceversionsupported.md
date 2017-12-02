@@ -56,13 +56,13 @@ BOOLEAN USBD_IsInterfaceVersionSupported(
 ## -parameters
 <dl>
 
-### -param <i>USBDHandle</i> [in]
+### -param USBDHandle [in]
 
 <dd>
 <p>USBD handle that is retrieved by the client driver in a previous call to  the <a href="..\usbdlib\nf-usbdlib-usbd-createhandle.md">USBD_CreateHandle</a> routine.</p>
 </dd>
 
-### -param <i>USBDInterfaceVersion</i> [in]
+### -param USBDInterfaceVersion [in]
 
 <dd>
 <p>A 	LONG value that represents the USBD interface version to check against the USB driver stack. Possible values include  USBD_INTERFACE_VERSION_602 or USBD_INTERFACE_VERSION_600. For more information, see Remarks.</p>

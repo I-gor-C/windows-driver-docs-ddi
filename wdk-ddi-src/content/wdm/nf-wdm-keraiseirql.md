@@ -56,13 +56,13 @@ VOID KeRaiseIrql(
 ## -parameters
 <dl>
 
-### -param <i>NewIrql</i> [in]
+### -param NewIrql [in]
 
 <dd>
 <p>Specifies the new IRQL to which the hardware priority is to be raised.</p>
 </dd>
 
-### -param <i>OldIrql</i> [out]
+### -param OldIrql [out]
 
 <dd>
 <p>Pointer to the storage for the original (unraised) IRQL value to be used in a subsequent call to <a href="..\wdm\nf-wdm-kelowerirql.md">KeLowerIrql</a>.</p>

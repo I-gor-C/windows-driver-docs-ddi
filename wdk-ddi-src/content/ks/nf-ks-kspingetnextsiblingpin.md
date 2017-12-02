@@ -54,7 +54,7 @@ PKSPIN KsPinGetNextSiblingPin(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure for which to find the next instantiated sibling pin.</p>
@@ -65,7 +65,7 @@ PKSPIN KsPinGetNextSiblingPin(
 <p><b>KsPinGetNextSiblingPin</b> returns a pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure representing the next instantiated sibling pin of <i>Pin</i>. If no such pin exists, returns <b>NULL</b>.</p>
 
 ## -remarks
-<p><b>KsPinGetNextSiblingPin</b> is an inline function call to <a href="..\ks\nf-ks-ksgetnextsibling.md">KsGetNextSibling</a>. Note that the object hierarchy is only stable while the appropriate mutex is held, in this case the filter control mutex. For more information, see <a href="NULL">Mutexes in AVStream</a>. </p>
+<p><b>KsPinGetNextSiblingPin</b> is an inline function call to <a href="..\ks\nf-ks-ksgetnextsibling.md">KsGetNextSibling</a>. Note that the object hierarchy is only stable while the appropriate mutex is held, in this case the filter control mutex. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>. </p>
 
 ## -requirements
 <table>

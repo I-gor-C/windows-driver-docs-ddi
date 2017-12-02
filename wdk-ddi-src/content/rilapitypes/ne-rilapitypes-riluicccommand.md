@@ -7,7 +7,7 @@ old-location: netvista\riluicccommand_2.htm
 old-project: netvista
 ms.assetid: 13861810-91a6-4027-81a0-297b049e3ee4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILUICCCOMMAND {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_UICCCMD_READRECORD"></a><a id="ril_uicccmd_readrecord"></a><b>RIL_UICCCMD_READRECORD</b>
+### -field RIL_UICCCMD_READRECORD
 
 <dd></dd>
 
-### -field <a id="RIL_UICCCMD_UPDATEBINARY"></a><a id="ril_uicccmd_updatebinary"></a><b>RIL_UICCCMD_UPDATEBINARY</b>
+### -field RIL_UICCCMD_UPDATEBINARY
 
 <dd></dd>
 
-### -field <a id="RIL_UICCCMD_UPDATERECORD"></a><a id="ril_uicccmd_updaterecord"></a><b>RIL_UICCCMD_UPDATERECORD</b>
+### -field RIL_UICCCMD_UPDATERECORD
 
 <dd></dd>
 
-### -field <a id="RIL_UICCCMD_MAX"></a><a id="ril_uicccmd_max"></a><b>RIL_UICCCMD_MAX</b>
+### -field RIL_UICCCMD_MAX
 
 <dd></dd>
 </dl>

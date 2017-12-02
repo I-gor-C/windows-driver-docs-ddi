@@ -55,7 +55,7 @@ PVOID KeRegisterBoundCallback(
 ## -parameters
 <dl>
 
-### -param <i>CallbackRoutine</i> [in]
+### -param CallbackRoutine [in]
 
 <dd>
 <p>Pointer to a <a href="kernel.boundcallback">BoundCallback</a> function.</p>

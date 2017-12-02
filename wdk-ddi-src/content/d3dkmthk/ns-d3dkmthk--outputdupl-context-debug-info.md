@@ -59,27 +59,27 @@ typedef struct _OUTPUTDUPL_CONTEXT_DEBUG_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd></dd>
 
-### -field <b>ProcessID</b>
+### -field ProcessID
 
 <dd></dd>
 
-### -field <b>AccumulatedPresents</b>
+### -field AccumulatedPresents
 
 <dd></dd>
 
-### -field <b>LastPresentTime</b>
+### -field LastPresentTime
 
 <dd></dd>
 
-### -field <b>LastMouseTime</b>
+### -field LastMouseTime
 
 <dd></dd>
 
-### -field <b>ProcessName</b>
+### -field ProcessName
 
 <dd></dd>
 </dl>

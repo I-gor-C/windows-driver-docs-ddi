@@ -54,7 +54,7 @@ NTSTATUS NfcCxDeviceDeinitialize(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> 
+### -param Device 
 
 <dd>
 <p>A handle to a framework device object.</p>

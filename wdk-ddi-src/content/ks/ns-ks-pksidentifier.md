@@ -61,25 +61,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Set</b>
+### -field Set
 
 <dd>
 <p>Specifies the globally unique set identifier.</p>
 </dd>
 
-### -field <b>Id</b>
+### -field Id
 
 <dd>
 <p>Specifies the set-specific identifier for an item within the set.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies values used for various set types, such as properties and methods. Zero when not used.</p>
 </dd>
 
-### -field <b>Alignment</b>
+### -field Alignment
 
 <dd>
 <p>Not used.  A member of an unnamed union used to force proper alignment on the unnamed structure.</p>

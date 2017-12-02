@@ -7,7 +7,7 @@ old-location: wdf\wdf_fileobject_class.htm
 old-project: wdf
 ms.assetid: e0887061-eafe-4dba-bb7a-58bf949e2d08
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ typedef enum _WDF_FILEOBJECT_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfFileObjectInvalid"></a><a id="wdffileobjectinvalid"></a><a id="WDFFILEOBJECTINVALID"></a><b>WdfFileObjectInvalid</b>
+### -field WdfFileObjectInvalid
 
 <dd>
 <p>Reserved for internal use.</p>
 </dd>
 
-### -field <a id="WdfFileObjectNotRequired"></a><a id="wdffileobjectnotrequired"></a><a id="WDFFILEOBJECTNOTREQUIRED"></a><b>WdfFileObjectNotRequired</b>
+### -field WdfFileObjectNotRequired
 
 <dd>
 <p>The driver does not require a framework file object.</p>
 </dd>
 
-### -field <a id="WdfFileObjectWdfCanUseFsContext"></a><a id="wdffileobjectwdfcanusefscontext"></a><a id="WDFFILEOBJECTWDFCANUSEFSCONTEXT"></a><b>WdfFileObjectWdfCanUseFsContext</b>
+### -field WdfFileObjectWdfCanUseFsContext
 
 <dd>
 <p>The driver requires a framework file object. The framework can store the object's handle in the <b>FsContext</b> member of the file's Windows Driver Model (WDM) <a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a> structure.</p>
 </dd>
 
-### -field <a id="WdfFileObjectWdfCanUseFsContext2"></a><a id="wdffileobjectwdfcanusefscontext2"></a><a id="WDFFILEOBJECTWDFCANUSEFSCONTEXT2"></a><b>WdfFileObjectWdfCanUseFsContext2</b>
+### -field WdfFileObjectWdfCanUseFsContext2
 
 <dd>
 <p>The driver requires a framework file object. The framework can store the object's handle in the <b>FsContext2</b> member of the file's WDM FILE_OBJECT structure.</p>
 </dd>
 
-### -field <a id="WdfFileObjectWdfCannotUseFsContexts"></a><a id="wdffileobjectwdfcannotusefscontexts"></a><a id="WDFFILEOBJECTWDFCANNOTUSEFSCONTEXTS"></a><b>WdfFileObjectWdfCannotUseFsContexts</b>
+### -field WdfFileObjectWdfCannotUseFsContexts
 
 <dd>
 <p>The driver requires a framework file object. The framework cannot store the object's handle in the <b>FsContext</b> or <b>FsContext2</b> member of the file's WDM FILE_OBJECT structure, because one or more drivers are using these members. Therefore, the framework must store the handle internally.</p>
 </dd>
 
-### -field <a id="WdfFileObjectCanBeOptional"></a><a id="wdffileobjectcanbeoptional"></a><a id="WDFFILEOBJECTCANBEOPTIONAL"></a><b>WdfFileObjectCanBeOptional</b>
+### -field WdfFileObjectCanBeOptional
 
 <dd>
 <p>The driver typically requires a framework file object, but the driver can also handle special situations in which a framework file object is missing or different. For more information about these situations, see the following Remarks section. </p>
@@ -155,4 +155,4 @@ typedef enum _WDF_FILEOBJECT_CLASS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_FILEOBJECT_CLASS enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_FILEOBJECT_CLASS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -66,19 +66,19 @@ VP_STATUS HwVidQueryDeviceCallback(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.</p>
 </dd>
 
-### -param <i>Context</i> 
+### -param Context 
 
 <dd>
 <p>Pointer to the context value set up by <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a>. Usually, it points to the VIDEO_PORT_CONFIG_INFO buffer or to an offset in that buffer.</p>
 </dd>
 
-### -param <i>DeviceDataType</i> 
+### -param DeviceDataType 
 
 <dd>
 <p>Specifies the type of configuration information that was requested, which is one of the following:</p>
@@ -102,37 +102,37 @@ VP_STATUS HwVidQueryDeviceCallback(
 <p>Miniport drivers of x86-type video adapters usually specify <b>VpBusData</b>, particularly for adapters on EISA buses. The <b>VpControllerData</b> and <b>VpMonitorData</b> values have meaning only on ARC-compliant platforms. The <b>VpCmosData</b> and <b>VpMachineData</b> values are seldom used.  </p>
 </dd>
 
-### -param <i>Identifier</i> 
+### -param Identifier 
 
 <dd>
 <p>Pointer to the name of the device as determined by the ARC firmware. This parameter should be used only on ARC-compliant platforms. Otherwise, this pointer should be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>IdentifierLength</i> 
+### -param IdentifierLength 
 
 <dd>
 <p>Specifies the size in bytes of the buffered <i>Identifier</i> string<i>.</i> The value should be zero if the machine is not ARC-compliant.</p>
 </dd>
 
-### -param <i>ConfigurationData</i> 
+### -param ConfigurationData 
 
 <dd>
 <p>Pointer to hardware configuration data. The format of this data is determined by the specified <i>DeviceDataType</i> and by the <b>AdapterInterfaceType</b> value in the VIDEO_PORT_CONFIG_INFO.</p>
 </dd>
 
-### -param <i>ConfigurationDataLength</i> 
+### -param ConfigurationDataLength 
 
 <dd>
 <p>Specifies the size in bytes of the <i>ConfigurationData</i> buffer. In effect, this indicates how much information was collected from the registry and stored in the <i>ConfigurationData</i> buffer allocated by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.</p>
 </dd>
 
-### -param <i>ComponentInformation</i> 
+### -param ComponentInformation 
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -param <i>ComponentInformationLength</i> 
+### -param ComponentInformationLength 
 
 <dd>
 <p>Reserved for system use.</p>

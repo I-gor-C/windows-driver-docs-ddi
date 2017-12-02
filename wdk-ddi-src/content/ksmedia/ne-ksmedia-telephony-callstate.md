@@ -57,25 +57,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="TELEPHONY_CALLSTATE_DISABLED"></a><a id="telephony_callstate_disabled"></a><b>TELEPHONY_CALLSTATE_DISABLED</b>
+### -field TELEPHONY_CALLSTATE_DISABLED
 
 <dd>
 <p>Specifies that the phone call is disabled.</p>
 </dd>
 
-### -field <a id="TELEPHONY_CALLSTATE_ENABLED"></a><a id="telephony_callstate_enabled"></a><b>TELEPHONY_CALLSTATE_ENABLED</b>
+### -field TELEPHONY_CALLSTATE_ENABLED
 
 <dd>
 <p>Specifies that the phone call is enabled. This constant is set in a number of situations. For example, it will be set by the audio driver when the provider change operation is <b>TELEPHONY_PROVIDERCHANGEOP_END</b> and when <b>TELEPHONY_CALLCONTROLOP_ENABLE</b> is received.</p>
 </dd>
 
-### -field <a id="TELEPHONY_CALLSTATE_HOLD"></a><a id="telephony_callstate_hold"></a><b>TELEPHONY_CALLSTATE_HOLD</b>
+### -field TELEPHONY_CALLSTATE_HOLD
 
 <dd>
 <p>Specifies that the phone call is on hold.</p>
 </dd>
 
-### -field <a id="TELEPHONY_CALLSTATE_PROVIDERTRANSITION"></a><a id="telephony_callstate_providertransition"></a><b>TELEPHONY_CALLSTATE_PROVIDERTRANSITION</b>
+### -field TELEPHONY_CALLSTATE_PROVIDERTRANSITION
 
 <dd>
 <p>Specifies that the phone call is disabled. This constant is set by the audio driver when the provider change operation is <b>TELEPHONY_PROVIDERCHANGEOP_BEGIN</b>.</p>

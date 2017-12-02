@@ -54,7 +54,7 @@ typedef struct D3D11_1DDI_OMAC {
 ## -struct-fields
 <dl>
 
-### -field <b>Omac</b>
+### -field Omac
 
 <dd>
 <p>A byte array that contains the cryptographic MAC value of the message.</p>

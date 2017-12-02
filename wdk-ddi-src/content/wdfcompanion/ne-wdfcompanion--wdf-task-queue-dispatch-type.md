@@ -7,7 +7,7 @@ old-location: wdf\wdf_task_queue_dispatch_type.htm
 old-project: wdf
 ms.assetid: 27cc4067-33de-4f2d-abad-05c73c875458
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _WDF_TASK_QUEUE_DISPATCH_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfTaskQueueDispatchInvalid"></a><a id="wdftaskqueuedispatchinvalid"></a><a id="WDFTASKQUEUEDISPATCHINVALID"></a><b>WdfTaskQueueDispatchInvalid</b>
+### -field WdfTaskQueueDispatchInvalid
 
 <dd></dd>
 
-### -field <a id="WdfTaskQueueDispatchSequential"></a><a id="wdftaskqueuedispatchsequential"></a><a id="WDFTASKQUEUEDISPATCHSEQUENTIAL"></a><b>WdfTaskQueueDispatchSequential</b>
+### -field WdfTaskQueueDispatchSequential
 
 <dd></dd>
 
-### -field <a id="WdfTaskQueueDispatchParallel"></a><a id="wdftaskqueuedispatchparallel"></a><a id="WDFTASKQUEUEDISPATCHPARALLEL"></a><b>WdfTaskQueueDispatchParallel</b>
+### -field WdfTaskQueueDispatchParallel
 
 <dd></dd>
 
-### -field <a id="WdfTaskQueueDispatchMax"></a><a id="wdftaskqueuedispatchmax"></a><a id="WDFTASKQUEUEDISPATCHMAX"></a><b>WdfTaskQueueDispatchMax</b>
+### -field WdfTaskQueueDispatchMax
 
 <dd></dd>
 </dl>

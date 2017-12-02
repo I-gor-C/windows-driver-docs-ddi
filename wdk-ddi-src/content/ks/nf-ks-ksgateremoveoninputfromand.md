@@ -54,7 +54,7 @@ void __inline KsGateRemoveOnInputFromAnd(
 ## -parameters
 <dl>
 
-### -param <i>AndGate</i> [in]
+### -param AndGate [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksgate.md">KSGATE</a> structure representing the AND gate from which to remove an ON input.</p>
@@ -67,7 +67,7 @@ void __inline KsGateRemoveOnInputFromAnd(
 ## -remarks
 <p><b>KsGateRemoveOnInputFromAnd</b> should only be used on gates that were specifically created as AND gates; AVStream does not verify that the given gate is truly an AND gate.</p>
 
-<p>For more information, see <a href="NULL">Flow Control Gates in AVStream</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.</p>
 
 <p>This call is an empty function. It should be used for code readability and clarity. </p>
 

@@ -56,19 +56,19 @@ NTSTATUS KsValidateTopologyNodeCreateRequest(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP with the node create request being handled.</p>
 </dd>
 
-### -param <i>Topology</i> [in]
+### -param Topology [in]
 
 <dd>
 <p>Specifies the topology structure associated with the parent object. This is used to validate the create request.</p>
 </dd>
 
-### -param <i>NodeCreate</i> [out]
+### -param NodeCreate [out]
 
 <dd>
 <p>Location for the node create structure pointer passed to the create request.</p>

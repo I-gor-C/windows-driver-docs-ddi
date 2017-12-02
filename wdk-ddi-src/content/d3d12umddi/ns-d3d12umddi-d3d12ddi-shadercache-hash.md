@@ -54,7 +54,7 @@ typedef struct D3D12DDI_SHADERCACHE_HASH {
 ## -struct-fields
 <dl>
 
-### -field <b>Hash</b>
+### -field Hash
 
 <dd>
 <p>A hash value.</p>

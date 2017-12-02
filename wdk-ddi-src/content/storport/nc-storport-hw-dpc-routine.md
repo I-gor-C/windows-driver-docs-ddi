@@ -61,25 +61,25 @@ VOID HwStorDpcRoutine(
 ## -parameters
 <dl>
 
-### -param <i>Dpc</i> 
+### -param Dpc 
 
 <dd>
 <p>A pointer to a Storport DPC  context. </p>
 </dd>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>A pointer to the per-adapter device extension. </p>
 </dd>
 
-### -param <i>SystemArgument1</i> 
+### -param SystemArgument1 
 
 <dd>
 <p>A pointer to caller-supplied information.</p>
 </dd>
 
-### -param <i>SystemArgument2</i> 
+### -param SystemArgument2 
 
 <dd>
 <p>A pointer to caller-supplied information.</p>
@@ -98,7 +98,7 @@ VOID HwStorDpcRoutine(
 
 <p>The port driver calls the <b>HwStorDpcRoutine</b> routine at DISPATCH IRQL.</p>
 
-<p>To define an <b>HwStorDpcRoutine</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
+<p>To define an <b>HwStorDpcRoutine</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
 
 <p> For example, to define a <b>HwStorDpcRoutine</b> callback routine that is named <i>MyHwDpcRoutine</i>, use the <b>HW_DPC_ROUTINE</b> type as shown in this code example:</p>
 

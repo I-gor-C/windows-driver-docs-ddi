@@ -59,13 +59,13 @@ NTSTATUS PsGetJobServerSilo(
 ## -parameters
 <dl>
 
-### -param <i>Job</i> [in, optional]
+### -param Job [in, optional]
 
 <dd>
 <p>A job object.</p>
 </dd>
 
-### -param <i>ServerSilo</i> [out]
+### -param ServerSilo [out]
 
 <dd>
 <p> A pointer that receives the server silo for the job.</p>

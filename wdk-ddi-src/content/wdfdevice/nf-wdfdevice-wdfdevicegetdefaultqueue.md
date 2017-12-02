@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicegetdefaultqueue.htm
 old-project: wdf
 ms.assetid: 914c4ef8-2210-468c-8720-11f8adf9dce7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceGetDefaultQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ WDFQUEUE WdfDeviceGetDefaultQueue(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>

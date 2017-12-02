@@ -59,31 +59,31 @@ NTSTATUS KeWaitForSingleObject(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>Pointer to an initialized dispatcher object (event, mutex, semaphore, thread, or timer) for which the caller supplies the storage.</p>
 </dd>
 
-### -param <i>WaitReason</i> [in]
+### -param WaitReason [in]
 
 <dd>
 <p>Specifies the reason for the wait. A driver should set this value to <b>Executive</b>, unless it is doing work on behalf of a user and is running in the context of a user thread, in which case it should set this value to <b>UserRequest</b>.</p>
 </dd>
 
-### -param <i>WaitMode</i> [in]
+### -param WaitMode [in]
 
 <dd>
 <p>Specifies whether the caller waits in <b>KernelMode</b> or <b>UserMode</b>. Lowest-level and intermediate drivers should specify <b>KernelMode</b>. If the given <i>Object</i> is a mutex, the caller must specify <b>KernelMode</b>.</p>
 </dd>
 
-### -param <i>Alertable</i> [in]
+### -param Alertable [in]
 
 <dd>
 <p>Specifies a Boolean value that is <b>TRUE</b> if the wait is alertable and <b>FALSE</b> otherwise.</p>
 </dd>
 
-### -param <i>Timeout</i> [in, optional]
+### -param Timeout [in, optional]
 
 <dd>
 <p>Pointer to a time-out value that specifies the absolute or relative time, in 100-nanosecond units, at which the wait is to be completed.</p>

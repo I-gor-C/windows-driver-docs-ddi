@@ -54,7 +54,7 @@ typedef struct _DVD_DISK_KEY_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>DiskKeyData</b>
+### -field DiskKeyData
 
 <dd>
 <p>Pointer to a buffer containing the disc key data obfuscated by the bus key.</p>

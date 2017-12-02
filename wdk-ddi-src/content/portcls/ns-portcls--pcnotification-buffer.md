@@ -54,7 +54,7 @@ typedef struct _PCNOTIFICATION_BUFFER {
 ## -struct-fields
 <dl>
 
-### -field <b>NotificationBuffer</b>
+### -field NotificationBuffer
 
 <dd>
 <p>The notification buffer used by <a href="..\portcls\nn-portcls-iportclsnotifications.md">IPortClsNotifications</a>.</p>

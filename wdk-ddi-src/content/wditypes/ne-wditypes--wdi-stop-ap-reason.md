@@ -7,7 +7,7 @@ old-location: netvista\wdi_stop_ap_reason.htm
 old-project: netvista
 ms.assetid: F0CACC25-2F7B-431A-8AAB-CBE495178CC1
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ typedef enum _WDI_STOP_AP_REASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_STOP_AP_REASON_FREQUENCY_NOT_AVAILABLE"></a><a id="wdi_stop_ap_reason_frequency_not_available"></a><b>WDI_STOP_AP_REASON_FREQUENCY_NOT_AVAILABLE</b>
+### -field WDI_STOP_AP_REASON_FREQUENCY_NOT_AVAILABLE
 
 <dd>
 <p>The adapter determined that no valid operating frequency is available.</p>
 </dd>
 
-### -field <a id="WDI_STOP_AP_REASON_CHANNEL_NOT_AVAILABLE"></a><a id="wdi_stop_ap_reason_channel_not_available"></a><b>WDI_STOP_AP_REASON_CHANNEL_NOT_AVAILABLE</b>
+### -field WDI_STOP_AP_REASON_CHANNEL_NOT_AVAILABLE
 
 <dd>
 <p>The adapter determined that no operating channel is available.</p>
 </dd>
 
-### -field <a id="WDI_STOP_AP_REASON_AP_ACTIVE"></a><a id="wdi_stop_ap_reason_ap_active"></a><b>WDI_STOP_AP_REASON_AP_ACTIVE</b>
+### -field WDI_STOP_AP_REASON_AP_ACTIVE
 
 <dd>
 <p>The adapter determined that an AP is already active on another 802.11 MAC entity for this physical wireless LAN adapter.</p>
 </dd>
 
-### -field <a id="WDI_STOP_AP_REASON_IHV_START"></a><a id="wdi_stop_ap_reason_ihv_start"></a><b>WDI_STOP_AP_REASON_IHV_START</b>
+### -field WDI_STOP_AP_REASON_IHV_START
 
 <dd>
 <p>The start value of possible IHV-specified reasons.</p>
 </dd>
 
-### -field <a id="WDI_STOP_AP_REASON_IHV_END"></a><a id="wdi_stop_ap_reason_ihv_end"></a><b>WDI_STOP_AP_REASON_IHV_END</b>
+### -field WDI_STOP_AP_REASON_IHV_END
 
 <dd>
 <p>The end value of possible IHV-specified reasons.</p>

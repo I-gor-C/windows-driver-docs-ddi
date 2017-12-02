@@ -57,25 +57,25 @@ typedef struct _KSRTAUDIO_GETREADPACKET_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>       PacketNumber</b>
+### -field        PacketNumber
 
 <dd>
 <p>Returns the packet number relative to the start of capture. </p>
 </dd>
 
-### -field <b>       Flags</b>
+### -field        Flags
 
 <dd>
 <p>Reserved for future use. Must be set to 0. </p>
 </dd>
 
-### -field <b>PerformanceCounterValue</b>
+### -field PerformanceCounterValue
 
 <dd>
 <p>Returns the performance counter value corresponding to the sampling instant of the first sample in the packet. </p>
 </dd>
 
-### -field <b>        MoreData</b>
+### -field         MoreData
 
 <dd>
 <p>Returns TRUE if there is more data ready immediately. The OS may optionally immediately call this routine again after processing the packet to get the next packet information. If the driver returns FALSE, then capture is operating at real time. </p>

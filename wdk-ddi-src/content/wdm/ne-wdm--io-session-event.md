@@ -61,43 +61,43 @@ typedef enum _IO_SESSION_EVENT {
 ## -enum-fields
 <dl>
 
-### -field <a id="IoSessionEventCreated"></a><a id="iosessioneventcreated"></a><a id="IOSESSIONEVENTCREATED"></a><b>IoSessionEventCreated</b>
+### -field IoSessionEventCreated
 
 <dd>
 <p>The user session was created.</p>
 </dd>
 
-### -field <a id="IoSessionEventTerminated"></a><a id="iosessioneventterminated"></a><a id="IOSESSIONEVENTTERMINATED"></a><b>IoSessionEventTerminated</b>
+### -field IoSessionEventTerminated
 
 <dd>
 <p>The user session terminated.</p>
 </dd>
 
-### -field <a id="IoSessionEventConnected"></a><a id="iosessioneventconnected"></a><a id="IOSESSIONEVENTCONNECTED"></a><b>IoSessionEventConnected</b>
+### -field IoSessionEventConnected
 
 <dd>
 <p>The user session was connected.</p>
 </dd>
 
-### -field <a id="IoSessionEventDisconnected"></a><a id="iosessioneventdisconnected"></a><a id="IOSESSIONEVENTDISCONNECTED"></a><b>IoSessionEventDisconnected</b>
+### -field IoSessionEventDisconnected
 
 <dd>
 <p>The user session was disconnected.</p>
 </dd>
 
-### -field <a id="IoSessionEventLogon"></a><a id="iosessioneventlogon"></a><a id="IOSESSIONEVENTLOGON"></a><b>IoSessionEventLogon</b>
+### -field IoSessionEventLogon
 
 <dd>
 <p>The user logged on to the session.</p>
 </dd>
 
-### -field <a id="IoSessionEventLogoff"></a><a id="iosessioneventlogoff"></a><a id="IOSESSIONEVENTLOGOFF"></a><b>IoSessionEventLogoff</b>
+### -field IoSessionEventLogoff
 
 <dd>
 <p>The user logged off of the session.</p>
 </dd>
 
-### -field <a id="IoSessionEventMax"></a><a id="iosessioneventmax"></a><a id="IOSESSIONEVENTMAX"></a><b>IoSessionEventMax</b>
+### -field IoSessionEventMax
 
 <dd>
 <p>Specifies the maximum value in this enumeration type.</p>

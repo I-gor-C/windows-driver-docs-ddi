@@ -57,19 +57,19 @@ NTSTATUS IoGetDeviceInterfaceAlias(
 ## -parameters
 <dl>
 
-### -param <i>SymbolicLinkName</i> [in]
+### -param SymbolicLinkName [in]
 
 <dd>
 <p>Pointer to the name of the device interface instance for which to retrieve an alias. The caller typically received this string from a call to <a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a> or in a PnP notification structure.</p>
 </dd>
 
-### -param <i>AliasInterfaceClassGuid</i> [in]
+### -param AliasInterfaceClassGuid [in]
 
 <dd>
 <p>Pointer to a GUID specifying the interface class of the alias to retrieve.</p>
 </dd>
 
-### -param <i>AliasSymbolicLinkName</i> [out]
+### -param AliasSymbolicLinkName [out]
 
 <dd>
 <p>Specifies a pointer to a <b>NULL</b> Unicode string. On successful return, <i>AliasSymbolicLinkName</i>.<b>Buffer</b> points to a string containing the name of the alias. The caller must free the Unicode string with <a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a> when it is no longer needed.</p>

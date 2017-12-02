@@ -61,31 +61,31 @@ NTSTATUS AVStrMiniPinSetDataFormat(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>Pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure for which the data format is changing.</p>
 </dd>
 
-### -param <i>OldFormat</i> [in, optional]
+### -param OldFormat [in, optional]
 
 <dd>
 <p>Optional. Pointer to a <a href="stream.ksdataformat">KSDATAFORMAT</a> structure. Minidrivers can use this field to determine the data format that the pin was using before this call. If <b>NULL</b>, indicates that no data format has been set for the pin and that <i>Pin's</i> create dispatch has not yet been made. A <b>NULL</b> value here indicates that this routine was called at initialization time for format verification.</p>
 </dd>
 
-### -param <i>OldAttributeList</i> [in, optional]
+### -param OldAttributeList [in, optional]
 
 <dd>
 <p>Optional. Pointer to a <a href="stream.ksmultiple_item">KSMULTIPLE_ITEM</a> structure that stores attributes for the previous format.</p>
 </dd>
 
-### -param <i>DataRange</i> [in]
+### -param DataRange [in]
 
 <dd>
 <p>Pointer to a <a href="stream.ksdatarange">KSDATARANGE</a> structure. The data range for the new format.</p>
 </dd>
 
-### -param <i>AttributeRange</i> [in, optional]
+### -param AttributeRange [in, optional]
 
 <dd>
 <p>Optional. The attribute range for the new format.</p>
@@ -96,7 +96,7 @@ NTSTATUS AVStrMiniPinSetDataFormat(
 <p>Return STATUS_SUCCESS if <i>Pin</i>'s <b>ConnectionFormat</b> member matches the range that was passed to this routine. Return STATUS_NO_MATCH if <b>ConnectionFormat</b> does not match the passed range and the minidriver would like to continue to attempt to find a match with another range. Return an error code of choice if <b>ConnectionFormat</b> does not match the passed range and the minidriver does not want to continue to try to find a match with another range. Do not return STATUS_PENDING.</p>
 
 ## -remarks
-<p>In a ring 3 graph, the Kernel Streaming Proxy module (KsProxy) sets the data format based on the agreed upon connection format or a dynamic format change. KsProxy issues a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565103">KSPROPERTY_CONNECTION_DATAFORMAT</a> request which, after some initial validation, is translated into this dispatch call to the minidriver. See <a href="stream.kernel_streaming_proxy_reference">Kernel Streaming Proxy</a>. For more information, see <a href="NULL">KS Data Formats and Data Ranges</a> and <a href="https://msdn.microsoft.com/44281574-8258-47a3-857d-fd44bb949f17">DataRange Intersections in AVStream</a>.</p>
+<p>In a ring 3 graph, the Kernel Streaming Proxy module (KsProxy) sets the data format based on the agreed upon connection format or a dynamic format change. KsProxy issues a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565103">KSPROPERTY_CONNECTION_DATAFORMAT</a> request which, after some initial validation, is translated into this dispatch call to the minidriver. See <a href="stream.kernel_streaming_proxy_reference">Kernel Streaming Proxy</a>. For more information, see <a href="https://msdn.microsoft.com/44b55a5a-ec58-4c1e-b780-e20829fe3edf">KS Data Formats and Data Ranges</a> and <a href="https://msdn.microsoft.com/44281574-8258-47a3-857d-fd44bb949f17">DataRange Intersections in AVStream</a>.</p>
 
 <p>The minidriver specifies the address for <i>AVStrMiniPinSetDataFormat</i> in the <b>SetDataFormat</b> member of its <a href="..\ks\ns-ks--kspin-dispatch.md">KSPIN_DISPATCH</a> structure.</p>
 

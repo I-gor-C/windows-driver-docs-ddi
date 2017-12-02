@@ -7,7 +7,7 @@ old-location: wdf\wdfregistrywdmgethandle.htm
 old-project: wdf
 ms.assetid: 60638048-9009-4943-ba61-b724612852df
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfRegistryWdmGetHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ HANDLE WdfRegistryWdmGetHandle(
 ## -parameters
 <dl>
 
-### -param <i>Key</i> [in]
+### -param Key [in]
 
 <dd>
 <p>A handle to a registry-key object that represents an opened registry key.</p>

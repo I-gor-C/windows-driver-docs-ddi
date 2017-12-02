@@ -62,19 +62,19 @@ NTSTATUS ClfsCreateMarshallingArea(
 ## -parameters
 <dl>
 
-### -param <i>plfoLog</i> [in]
+### -param plfoLog [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents a CLFS stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>.</p>
 </dd>
 
-### -param <i>ePoolType</i> [in]
+### -param ePoolType [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a> value that specifies the type of memory (paged, non-paged, for example) that the new marshalling area will use for its log I/O blocks.</p>
 </dd>
 
-### -param <i>pfnAllocBuffer</i> [in, optional]
+### -param pfnAllocBuffer [in, optional]
 
 <dd>
 <p>Either <b>NULL</b> or a pointer to a caller-supplied function that allocates a log I/O block for the marshalling area. The allocation function has the following prototype:</p>
@@ -96,7 +96,7 @@ NTSTATUS ClfsCreateMarshallingArea(
 <p>The return value of the allocation function is a pointer to the newly allocated log I/O block.</p>
 </dd>
 
-### -param <i>pfnFreeBuffer</i> [in, optional]
+### -param pfnFreeBuffer [in, optional]
 
 <dd>
 <p>Either <b>NULL</b> or a pointer to a caller-supplied function that frees a log I/O block that was previously allocated by <i>pfnAllocBuffer</i>. The function has the following prototype:</p>
@@ -115,25 +115,25 @@ NTSTATUS ClfsCreateMarshallingArea(
 </table></span></div>
 </dd>
 
-### -param <i>cbMarshallingBuffer</i> [in]
+### -param cbMarshallingBuffer [in]
 
 <dd>
 <p>The size, in bytes, of the individual log I/O blocks that the new marshalling area uses. This must be a multiple of the sector size on the stable storage medium. The sector size is the <i>lpBytesPerSector</i> value returned from <b>GetDiskFreeSpace</b>.</p>
 </dd>
 
-### -param <i>cMaxWriteBuffers</i> [in]
+### -param cMaxWriteBuffers [in]
 
 <dd>
 <p>The maximum number of I/O blocks that can be allocated at one time for write operations. This parameter affects the frequency of data flushes. If you do not need to control the frequency of data flushes, set this parameter to INFINITE.</p>
 </dd>
 
-### -param <i>cMaxReadBuffers</i> [in]
+### -param cMaxReadBuffers [in]
 
 <dd>
 <p>The maximum number of log I/O blocks that can be allocated at one time for read operations.</p>
 </dd>
 
-### -param <i>ppvMarshalContext</i> [out]
+### -param ppvMarshalContext [out]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to an opaque context that represents the new marshalling area.</p>

@@ -55,7 +55,7 @@ LARGE_INTEGER RtlConvertUlongToLargeInteger(
 ## -parameters
 <dl>
 
-### -param <i>UnsignedInteger</i> [in]
+### -param UnsignedInteger [in]
 
 <dd>
 <p>Specifies a value of type ULONG.</p>

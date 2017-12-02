@@ -63,35 +63,35 @@ typedef enum _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="ReadyForNextDeviceRequest"></a><a id="readyfornextdevicerequest"></a><a id="READYFORNEXTDEVICEREQUEST"></a><b>ReadyForNextDeviceRequest</b>
+### -field ReadyForNextDeviceRequest
 
 <dd>
 <p>Indicates that the minidriver is ready for the next device request.</p>
 </dd>
 
-### -field <a id="DeviceRequestComplete"></a><a id="devicerequestcomplete"></a><a id="DEVICEREQUESTCOMPLETE"></a><b>DeviceRequestComplete</b>
+### -field DeviceRequestComplete
 
 <dd>
 <p>Indicates that the specified device SRB has completed.</p>
 </dd>
 
-### -field <a id="SignalMultipleDeviceEvents"></a><a id="signalmultipledeviceevents"></a><a id="SIGNALMULTIPLEDEVICEEVENTS"></a><b>SignalMultipleDeviceEvents</b>
+### -field SignalMultipleDeviceEvents
 
 <dd></dd>
 
-### -field <a id="SignalDeviceEvent"></a><a id="signaldeviceevent"></a><a id="SIGNALDEVICEEVENT"></a><b>SignalDeviceEvent</b>
+### -field SignalDeviceEvent
 
 <dd></dd>
 
-### -field <a id="DeleteDeviceEvent"></a><a id="deletedeviceevent"></a><a id="DELETEDEVICEEVENT"></a><b>DeleteDeviceEvent</b>
+### -field DeleteDeviceEvent
 
 <dd></dd>
 
-### -field <a id="SignalMultipleDeviceInstanceEvents"></a><a id="signalmultipledeviceinstanceevents"></a><a id="SIGNALMULTIPLEDEVICEINSTANCEEVENTS"></a><b>SignalMultipleDeviceInstanceEvents</b>
+### -field SignalMultipleDeviceInstanceEvents
 
 <dd></dd>
 
-### -field <a id="DeviceNotificationMaximum"></a><a id="devicenotificationmaximum"></a><a id="DEVICENOTIFICATIONMAXIMUM"></a><b>DeviceNotificationMaximum</b>
+### -field DeviceNotificationMaximum
 
 <dd></dd>
 </dl>

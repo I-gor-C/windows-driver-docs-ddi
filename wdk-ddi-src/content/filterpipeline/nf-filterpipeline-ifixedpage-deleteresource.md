@@ -54,7 +54,7 @@ HRESULT DeleteResource(
 ## -parameters
 <dl>
 
-### -param <i>uri</i> [in]
+### -param uri [in]
 
 <dd>
 <p>The URI to the resource that should be unassociated from the page.</p>

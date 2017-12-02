@@ -68,85 +68,85 @@ typedef struct _VIDEO_PORT_AGP_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size in bytes of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the interface to be returned by the video port driver. The current interface version is defined in <i>video.h</i> and has the form VIDEO_PORT_AGP_INTERFACE_<i>N</i>.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Pointer to a video port driver-defined context for the interface.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>Pointer to the video port driver-implemented reference routine for this interface.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>Pointer to the video port driver-implemented dereference routine for this interface.</p>
 </dd>
 
-### -field <b>AgpReservePhysical</b>
+### -field AgpReservePhysical
 
 <dd>
 <p>Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp-reserve-physical.md">AgpReservePhysical</a> routine.</p>
 </dd>
 
-### -field <b>AgpReleasePhysical</b>
+### -field AgpReleasePhysical
 
 <dd>
 <p>Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp-release-physical.md">AgpReleasePhysical</a> routine.</p>
 </dd>
 
-### -field <b>AgpCommitPhysical</b>
+### -field AgpCommitPhysical
 
 <dd>
 <p>Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp-commit-physical.md">AgpCommitPhysical</a> routine.</p>
 </dd>
 
-### -field <b>AgpFreePhysical</b>
+### -field AgpFreePhysical
 
 <dd>
 <p>Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp-free-physical.md">AgpFreePhysical</a> routine.</p>
 </dd>
 
-### -field <b>AgpReserveVirtual</b>
+### -field AgpReserveVirtual
 
 <dd>
 <p>Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp-reserve-virtual.md">AgpReserveVirtual</a> routine.</p>
 </dd>
 
-### -field <b>AgpReleaseVirtual</b>
+### -field AgpReleaseVirtual
 
 <dd>
 <p>Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp-release-virtual.md">AgpReleaseVirtual</a> routine.</p>
 </dd>
 
-### -field <b>AgpCommitVirtual</b>
+### -field AgpCommitVirtual
 
 <dd>
 <p>Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp-commit-virtual.md">AgpCommitVirtual</a> routine.</p>
 </dd>
 
-### -field <b>AgpFreeVirtual</b>
+### -field AgpFreeVirtual
 
 <dd>
 <p>Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp-free-virtual.md">AgpFreeVirtual</a> routine.</p>
 </dd>
 
-### -field <b>AgpAllocationLimit</b>
+### -field AgpAllocationLimit
 
 <dd>
 <p>Specifies the maximum total number of bytes of AGP memory that a miniport driver can commit.</p>

@@ -57,19 +57,19 @@ typedef enum _TRISTATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="TriStateUnknown"></a><a id="tristateunknown"></a><a id="TRISTATEUNKNOWN"></a><b>TriStateUnknown</b>
+### -field TriStateUnknown
 
 <dd>
 <p>State is unknown.</p>
 </dd>
 
-### -field <a id="TriStateFalse"></a><a id="tristatefalse"></a><a id="TRISTATEFALSE"></a><b>TriStateFalse</b>
+### -field TriStateFalse
 
 <dd>
 <p>State is a false boolean value.</p>
 </dd>
 
-### -field <a id="TriStateTrue"></a><a id="tristatetrue"></a><a id="TRISTATETRUE"></a><b>TriStateTrue</b>
+### -field TriStateTrue
 
 <dd>
 <p>State is a true boolean value.</p>

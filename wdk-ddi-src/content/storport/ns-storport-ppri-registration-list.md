@@ -57,20 +57,20 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Generation</b>
+### -field Generation
 
 <dd>
 <p>The Generation field contains a 32-bit counter that is maintained by the device server, which is incremented every time a Persistent Reserve Out command requests a REGISTER, REGISTER AND IGNORE</p>
 <p>EXISTING KEY, CLEAR, PREEMPT, or PREEMPT AND ABORT service action.</p>
 </dd>
 
-### -field <b>AdditionalLength</b>
+### -field AdditionalLength
 
 <dd>
 <p>The AdditionalLength field contains a count of the number of bytes in the reservation key list.</p>
 </dd>
 
-### -field <b>ReservationKeyList[0]</b>
+### -field ReservationKeyList[0]
 
 <dd>
 <p>The reservation key list contains the 8-byte reservation keys for all initiators that have registered by using all ports with the device server.</p>

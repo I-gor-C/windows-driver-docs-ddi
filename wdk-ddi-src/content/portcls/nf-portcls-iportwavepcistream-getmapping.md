@@ -58,31 +58,31 @@ NTSTATUS GetMapping(
 ## -parameters
 <dl>
 
-### -param <i>Tag</i> [in]
+### -param Tag [in]
 
 <dd>
 <p>Specifies a tag value to associate with the mapping. The port driver can use this tag in a subsequent <a href="audio.iminiportwavepcistream_revokemappings">IMiniportWavePciStream::RevokeMappings</a> call to identify the mapping in the list of mappings to be revoked. The miniport driver uses the tag to identify the mapping in the <a href="audio.iportwavepcistream_releasemapping">IPortWavePciStream::ReleaseMapping</a> call that releases the mapping.</p>
 </dd>
 
-### -param <i>PhysicalAddress</i> [out]
+### -param PhysicalAddress [out]
 
 <dd>
 <p>Output pointer for the physical address. This parameter points to a caller-allocated pointer variable into which the method writes the physical address of the mapping. Specify a valid, non-NULL pointer value for this parameter.</p>
 </dd>
 
-### -param <i>VirtualAddress</i> [out]
+### -param VirtualAddress [out]
 
 <dd>
 <p>Output pointer for the virtual address. This parameter points to a caller-allocated pointer variable into which the method writes the virtual address of the mapping. Specify a valid, non-NULL pointer value for this parameter.</p>
 </dd>
 
-### -param <i>ByteCount</i> [out]
+### -param ByteCount [out]
 
 <dd>
 <p>Output pointer for the byte count. This parameter points to a caller-allocated ULONG variable into which the method writes the number of bytes in the mapping. Specify a valid, non-NULL pointer value for this parameter.</p>
 </dd>
 
-### -param <i>Flags</i> [out]
+### -param Flags [out]
 
 <dd>
 <p>Output pointer for the status flag. This parameter points to a caller-allocated ULONG variable into which the method writes a status flag. Specify a valid, non-NULL pointer value for this parameter. A nonzero flag value indicates that the mapping acquired in this call is the last mapping in an I/O packet. This flag can be used to signal that the hardware should interrupt the miniport driver when it is done with this mapping. In response to the interrupt, the miniport driver can obtain new mappings to deliver to the hardware. The miniport driver is not obligated to use the flag in this way.</p>
@@ -119,7 +119,7 @@ NTSTATUS GetMapping(
 
 <p>The <i>Flags</i> parameter indicates whether the call to <code>GetMapping</code> retrieved the final mapping in the portion of the audio data buffer that is attached to the current mapping IRP. When <i>Flags</i> indicates that a mapping is the last mapping in an IRP, a miniport driver can arm a hardware interrupt to fire when the miniport driver finishes playing that mapping. When the interrupt fires, this event informs the miniport driver that it needs to acquire more mappings to add to its DMA queue. The <i>Flags</i> parameter is typically used by a miniport driver that manages a single playback stream from the <a href="audio.kernel_mode_wdm_audio_components#kmixer_system_driver#kmixer_system_driver">KMixer system driver</a>. KMixer uses several mapping IRPs (a minimum of three in the current KMixer implementation) to buffer a single playback stream. Thus, if the miniport driver generates a hardware interrupt each time the DMA controller finishes with the final mapping in an IRP, interrupts should occur frequently enough to keep the DMA queue from starving.</p>
 
-<p>The <i>Flags</i> parameter is typically ignored by miniport drivers that manage one or more DirectSound hardware-accelerated streams (see <a href="NULL">DirectSound Hardware Acceleration in WDM Audio</a>). In the case of a DirectSound buffer, the entire buffer can be attached to a single IRP. If the buffer is large and the miniport driver schedules a hardware interrupt only when it reaches the end of the buffer, interrupts will occur so far apart that the DMA queue might starve. In addition, if the driver is managing a large number of streams, scheduling a hardware interrupt each time the <i>Flags</i> parameter signals a final-mapping condition on a stream might generate so many interrupts that performance can be degraded. In these circumstances, the miniport driver should not rely on hardware interrupts to acquire mappings. Instead, it should schedule timer DPCs to occur at regular intervals to acquire mappings.</p>
+<p>The <i>Flags</i> parameter is typically ignored by miniport drivers that manage one or more DirectSound hardware-accelerated streams (see <a href="https://msdn.microsoft.com/75c34a10-1956-4117-b5b9-73de6d615521">DirectSound Hardware Acceleration in WDM Audio</a>). In the case of a DirectSound buffer, the entire buffer can be attached to a single IRP. If the buffer is large and the miniport driver schedules a hardware interrupt only when it reaches the end of the buffer, interrupts will occur so far apart that the DMA queue might starve. In addition, if the driver is managing a large number of streams, scheduling a hardware interrupt each time the <i>Flags</i> parameter signals a final-mapping condition on a stream might generate so many interrupts that performance can be degraded. In these circumstances, the miniport driver should not rely on hardware interrupts to acquire mappings. Instead, it should schedule timer DPCs to occur at regular intervals to acquire mappings.</p>
 
 <p>A miniport driver is most likely to call <code>GetMapping</code> during a call to the miniport stream object's <b>SetState</b>, <b>Service</b>, or <b>MappingAvailable</b> method (see <a href="..\portcls\nn-portcls-iminiportwavepcistream.md">IMiniportWavePciStream</a>).</p>
 
@@ -129,7 +129,7 @@ NTSTATUS GetMapping(
 
 <p>In Windows 98/Me, Windows 2000, Windows XP, and Windows Server 2003, the <code>GetMapping</code> method never outputs a mapping that spans more than 16 pages. This limit might change in future Windows releases.</p>
 
-<p>For more information about mappings, see <a href="NULL">WavePci Latency</a>.</p>
+<p>For more information about mappings, see <a href="https://msdn.microsoft.com/6d83c015-cf8f-40b4-bf28-de865a5bfe2d">WavePci Latency</a>.</p>
 
 ## -requirements
 <table>

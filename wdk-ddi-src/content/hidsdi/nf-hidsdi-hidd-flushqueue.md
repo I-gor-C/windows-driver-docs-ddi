@@ -54,7 +54,7 @@ BOOLEAN __stdcall HidD_FlushQueue(
 ## -parameters
 <dl>
 
-### -param <i>HidDeviceObject</i> [in]
+### -param HidDeviceObject [in]
 
 <dd>
 <p>Specifies an open handle to the top-level collection whose input queue is flushed.</p>
@@ -67,7 +67,7 @@ BOOLEAN __stdcall HidD_FlushQueue(
 ## -remarks
 <p>Only user-mode applications can call <b>HidD_FlushQueue</b>. Kernel-mode drivers can use an <a href="..\hidclass\ni-hidclass-ioctl-hid-flush-queue.md">IOCTL_HID_FLUSH_QUEUE</a> request.</p>
 
-<p>For more information, see <a href="NULL">HID Collections</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>.</p>
 
 ## -requirements
 <table>

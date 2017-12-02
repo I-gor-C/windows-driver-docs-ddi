@@ -60,37 +60,37 @@ typedef struct _SERCX2_CUSTOM_TRANSMIT_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2customtransmitcreate.md">SerCx2CustomTransmitCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
-### -field <b>Alignment</b>
+### -field Alignment
 
 <dd>
 <p>Data alignment requirement. Specifies how the starting address of a transfer in a custom-transmit transaction must be aligned in memory. Set this member to the appropriate FILE_<i>XXX</i>_ALIGNMENT constant in the Wdm.h header file. For example, FILE_WORD_ALIGNMENT indicates that the starting address must be aligned to two-byte boundary in memory, FILE_LONG_ALIGNMENT indicates that the address must be aligned to a four-byte boundary, and so on.</p>
 </dd>
 
-### -field <b>MinimumTransactionLength</b>
+### -field MinimumTransactionLength
 
 <dd>
 <p>The minimum length, in bytes, of a data transfer in a custom-transmit transaction. If the length of the buffer in a write (<a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>) request is less than this minimum length, SerCx2 uses programmed I/O (PIO) for the transaction.</p>
 </dd>
 
-### -field <b>MaximumTransactionLength</b>
+### -field MaximumTransactionLength
 
 <dd>
 <p>The maximum length, in bytes, of a data transfer in a custom-transmit transaction. If the size of the buffer in the write request is larger than this maximum length, SerCx2 uses multiple custom-transmit transactions to handle the request, and limits each transaction to the maximum length.</p>
 </dd>
 
-### -field <b>MinimumTransferUnit</b>
+### -field MinimumTransferUnit
 
 <dd>
 <p>The minimum transfer unit. The number of bytes to transfer in a custom-transmit transaction must be an integer multiple of the minimum transfer unit. To indicate that the default minimum transfer unit should be used, set this member to zero. For more information about the default minimum transfer unit, see <a href="..\wdm\ns-wdm--dma-adapter-info-v1.md">DMA_ADAPTER_INFO_V1</a>.</p>
 </dd>
 
-### -field <b>Exclusive</b>
+### -field Exclusive
 
 <dd>
 <p>Whether to use custom-transmit transactions exclusively to handle write (<a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>) requests. Set to <b>TRUE</b> to indicate that write requests should use custom-transmit transactions exclusively. Set to <b>FALSE</b> to indicate that write requests can use a combination of custom-transmit transactions and PIO-transmit transactions.</p>

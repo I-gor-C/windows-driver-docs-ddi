@@ -63,61 +63,61 @@ typedef struct _AddConnectionToSession_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueAdapterId</b>
+### -field UniqueAdapterId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies an adapter and a particular loaded instance of a storage miniport driver that manages the adapter. This identifier is unique, not only on the computer where the adapter is located, but also across the entire network. </p>
 </dd>
 
-### -field <b>UniqueSessionId</b>
+### -field UniqueSessionId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in their <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
 </dd>
 
-### -field <b>SecurityFlags</b>
+### -field SecurityFlags
 
 <dd>
 <p>A bitwise OR of flags that indicate the security requirements of a target. For a list of possible values for this member, see <a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>.</p>
 </dd>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>The number of the port from which to initiate the target logon session. </p>
 </dd>
 
-### -field <b>LoginOptions</b>
+### -field LoginOptions
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-loginoptions.md">ISCSI_LoginOptions</a> structure that describes the characteristics of the target logon session that a connection will be added to. </p>
 </dd>
 
-### -field <b>TargetPortal</b>
+### -field TargetPortal
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-targetportal.md">ISCSI_TargetPortal</a> structure that indicates which target portal to use to make the additional connection. The <b>AddConnectionToSession</b> method calls the <b>LoginToTarget</b> method to establish the new connection. If <b>LoginToTarget</b> fails with a status value of either ISCSC_TARGET_MOVED_PERMANENTLY or ISCSC_TARGET_MOVED_TEMPORARILY. <b>TargetPortal</b> will indicate, on output from <b>AddConnectionToSession</b>, the portal that the logon operation should be redirected to. For more information about the ISCSC_TARGET_MOVED_PERMANENTLY and ISCSC_TARGET_MOVED_TEMPORARILY status values, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.</p>
 </dd>
 
-### -field <b>UsernameSize</b>
+### -field UsernameSize
 
 <dd>
 <p>The username size, in bytes.</p>
 </dd>
 
-### -field <b>PasswordSize</b>
+### -field PasswordSize
 
 <dd>
 <p>The password size, in bytes.</p>
 </dd>
 
-### -field <b>KeySize</b>
+### -field KeySize
 
 <dd>
 <p>The preshared key size, in bytes.</p>
 </dd>
 
-### -field <b>Key</b>
+### -field Key
 
 <dd>
 <p>A variable-length array of characters that specifies the preshared key that is associated with the target IP address. The number of elements in the array is specified by the KeySize field.</p>

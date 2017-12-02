@@ -55,13 +55,13 @@ NTSTATUS GetStreamChannelPeakMeter(
 ## -parameters
 <dl>
 
-### -param <i>ulChannel</i> [in]
+### -param ulChannel [in]
 
 <dd>
 <p>The channel of the audio stream.</p>
 </dd>
 
-### -param <i>plPeakMeter</i> [out]
+### -param plPeakMeter [out]
 
 <dd>
 <p>The PeakMeter value.</p>

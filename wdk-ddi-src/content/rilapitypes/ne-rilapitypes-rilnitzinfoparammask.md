@@ -7,7 +7,7 @@ old-location: netvista\rilnitzinfoparammask_2.htm
 old-project: netvista
 ms.assetid: c9ee5373-53eb-4356-8969-4d7bfea13779
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef enum _RILNITZINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_NITZ_TIMEZONEOFFSET"></a><a id="ril_param_nitz_timezoneoffset"></a><b>RIL_PARAM_NITZ_TIMEZONEOFFSET</b>
+### -field RIL_PARAM_NITZ_TIMEZONEOFFSET
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_NITZ_DAYLIGHTSAVINGOFFSET"></a><a id="ril_param_nitz_daylightsavingoffset"></a><b>RIL_PARAM_NITZ_DAYLIGHTSAVINGOFFSET</b>
+### -field RIL_PARAM_NITZ_DAYLIGHTSAVINGOFFSET
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_NITZ_SYSTEMTIME"></a><a id="ril_param_nitz_systemtime"></a><b>RIL_PARAM_NITZ_SYSTEMTIME</b>
+### -field RIL_PARAM_NITZ_SYSTEMTIME
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_NITZ_SYSTEMTYPE"></a><a id="ril_param_nitz_systemtype"></a><b>RIL_PARAM_NITZ_SYSTEMTYPE</b>
+### -field RIL_PARAM_NITZ_SYSTEMTYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_NITZ_ALL"></a><a id="ril_param_nitz_all"></a><b>RIL_PARAM_NITZ_ALL</b>
+### -field RIL_PARAM_NITZ_ALL
 
 <dd></dd>
 </dl>

@@ -67,13 +67,13 @@ typedef struct _UNIDRVINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes, of the UNIDRVINFO structure.</p>
 </dd>
 
-### -field <b>flGenFlags</b>
+### -field flGenFlags
 
 <dd>
 <p>Contains one or more bit flags describing font characteristics. The following flags are defined:</p>
@@ -110,7 +110,7 @@ typedef struct _UNIDRVINFO {
 <p> </p>
 </dd>
 
-### -field <b>wType</b>
+### -field wType
 
 <dd>
 <p>Contains an integer constant describing the font type. The following constants are defined: </p>
@@ -171,7 +171,7 @@ typedef struct _UNIDRVINFO {
 <p> </p>
 </dd>
 
-### -field <b>fCaps</b>
+### -field fCaps
 
 <dd>
 <p>Contains one or more bit flags identifying limitations on the capabilities provided by a device font. The following flags are defined:</p>
@@ -241,55 +241,55 @@ typedef struct _UNIDRVINFO {
 <p> </p>
 </dd>
 
-### -field <b>wXRes</b>
+### -field wXRes
 
 <dd>
 <p>Specifies the font's x-resolution.</p>
 </dd>
 
-### -field <b>wYRes</b>
+### -field wYRes
 
 <dd>
 <p>Specifies the font's y-resolution.</p>
 </dd>
 
-### -field <b>sYAdjust</b>
+### -field sYAdjust
 
 <dd>
 <p>Specifies the amount of vertical adjustment required before output of double-height characters on dot-matrix printers.</p>
 </dd>
 
-### -field <b>sYMoved</b>
+### -field sYMoved
 
 <dd>
 <p>Specifies the amount of vertical cursor movement that results when a double-height character is printed on a dot-matrix printer.</p>
 </dd>
 
-### -field <b>wPrivateData</b>
+### -field wPrivateData
 
 <dd>
 <p>Can be used for printer-specific information such as, for example, HP DeskJet permutations.</p>
 </dd>
 
-### -field <b>sShift</b>
+### -field sShift
 
 <dd>
 <p>Specifies the number of pixels by which each character must be shifted. Used for the Microsoft Z1a cartridge.</p>
 </dd>
 
-### -field <b>SelectFont</b>
+### -field SelectFont
 
 <dd>
 <p>Is an <a href="..\prntfont\ns-prntfont--invoc.md">INVOC</a> structure containing the printer's font selection command.</p>
 </dd>
 
-### -field <b>UnSelectFont</b>
+### -field UnSelectFont
 
 <dd>
 <p>Is an INVOC structure containing the printer's font deselection command.</p>
 </dd>
 
-### -field <b>wReserved</b>
+### -field wReserved
 
 <dd>
 <p>Not used.</p>

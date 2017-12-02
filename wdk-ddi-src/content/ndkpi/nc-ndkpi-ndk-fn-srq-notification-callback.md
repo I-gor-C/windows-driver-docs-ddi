@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_srq_notification_callback.htm
 old-project: netvista
 ms.assetid: 3063F991-DDC5-4E52-979B-6CFCD11A604C
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ VOID NdkSrqNotificationCallback(
 ## -parameters
 <dl>
 
-### -param <i>SrqNotificationContext</i> [in, optional]
+### -param SrqNotificationContext [in, optional]
 
 <dd>
 <p>A context area that was specified in the <i>SrqNotificationContext</i> parameter of the <i>NdkCreateSrq</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-create-srq.md">NDK_FN_CREATE_SRQ</a>) function when the SRQ  object was created.</p>
 </dd>
 
-### -param <i>SrqStatus</i> [in]
+### -param SrqStatus [in]
 
 <dd>
 <p>Indicates if a fatal SRQ error occurred. The following status codes are defined:

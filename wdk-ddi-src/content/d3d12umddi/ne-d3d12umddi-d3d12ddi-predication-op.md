@@ -55,13 +55,13 @@ typedef enum D3D12DDI_PREDICATION_OP {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_PREDICATION_OP_EQUAL_ZERO"></a><a id="d3d12ddi_predication_op_equal_zero"></a><b>D3D12DDI_PREDICATION_OP_EQUAL_ZERO</b>
+### -field D3D12DDI_PREDICATION_OP_EQUAL_ZERO
 
 <dd>
 <p>All the bits in a 64 bit buffer are zero (0).</p>
 </dd>
 
-### -field <a id="D3D12DDI_PREDICATION_OP_NOT_EQUAL_ZERO"></a><a id="d3d12ddi_predication_op_not_equal_zero"></a><b>D3D12DDI_PREDICATION_OP_NOT_EQUAL_ZERO</b>
+### -field D3D12DDI_PREDICATION_OP_NOT_EQUAL_ZERO
 
 <dd>
 <p>Not all of the bits in a 64 bit buffer are zero (0).</p>

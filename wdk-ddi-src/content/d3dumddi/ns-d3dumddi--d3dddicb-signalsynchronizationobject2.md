@@ -63,52 +63,52 @@ typedef struct _D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2 {
 ## -struct-fields
 <dl>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] A handle to a Direct3D context that signals the synchronization events in the array that the <b>ObjectHandleArray</b> member specifies.</p>
 </dd>
 
-### -field <b>ObjectCount</b>
+### -field ObjectCount
 
 <dd>
 <p>[in] The number of synchronization events in the <b>ObjectHandleArray</b> array.</p>
 </dd>
 
-### -field <b>ObjectHandleArray</b>
+### -field ObjectHandleArray
 
 <dd>
 <p>[in] An array of handles to the synchronization events that the context that is specified by the <b>hContext</b> member signals. The <b>D3DDDI_MAX_OBJECT_SIGNALED</b> constant, which is defined as 32, indicates the maximum number of synchronization events that the context can signal.</p>
 <p>All synchronization objects must be created on the same logical adapter as the  context specified by <b>hContext</b>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-signalflags.md">D3DDDICB_SIGNALFLAGS</a> structure that indicates, in bit-field flags, signaling behavior.</p>
 </dd>
 
-### -field <b>BroadcastContextCount</b>
+### -field BroadcastContextCount
 
 <dd>
 <p>[in] The number of contexts to broadcast this signal buffer to.</p>
 </dd>
 
-### -field <b>BroadcastContext</b>
+### -field BroadcastContext
 
 <dd>
 <p>[in] An array of <b>D3DKMT_HANDLE</b> data types that represent kernel-mode handles to the additional contexts to broadcast the current signal command to. The <b>D3DDDI_MAX_BROADCAST_CONTEXT</b> constant, which is defined as 64, defines the maximum number of synchronization events that the context can signal to.</p>
 <p>All contexts must be created for the same Direct3D device and the context that is specified by <b>hContext</b>.</p>
 </dd>
 
-### -field <b>FenceValue</b>
+### -field FenceValue
 
 <dd>
 <p>[in] A 64-bit value that specifies the current fence value of the GPU synchronization object.</p>
 <p>This value applies only if the GPU synchronization object is of type <b>D3DDDI_FENCE</b>—namely, the <b>Type</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-synchronizationobjectinfo2.md">D3DDDI_SYNCHRONIZATIONOBJECTINFO2</a> structure has a value of <b>D3DDDI_FENCE</b>.</p>
 </dd>
 
-### -field <b>CpuEventHandle</b>
+### -field CpuEventHandle
 
 <dd>
 <p>[in] The handle of an event object that will be signaled when the signal command is processed. This member must be set only when <b>Flags</b>.<b>EnqueueCpuEvent</b> is specified.</p>

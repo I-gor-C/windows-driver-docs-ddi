@@ -7,7 +7,7 @@ old-location: netvista\dot11_phy_type_info.htm
 old-project: netvista
 ms.assetid: 9b0cbcc4-e38a-4266-afc5-8b2755d79f4c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_PHY_TYPE_INFO, DOT11_PHY_TYPE_INFO, *PDOT11_PHY_TYPE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ typedef struct _DOT11_PHY_TYPE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>dot11PhyType</b>
+### -field dot11PhyType
 
 <dd>
 <p>The type of PHY that the 802.11 station will use for the scan. The PHY type is defined by the 
@@ -74,7 +74,7 @@ typedef struct _DOT11_PHY_TYPE_INFO {
 </p>
 </dd>
 
-### -field <b>uPhyId</b>
+### -field uPhyId
 
 <dd>
 <p>The identifier (ID) of the PHY that the 802.11 station will use for the scan. The PHY ID is the
@@ -86,7 +86,7 @@ typedef struct _DOT11_PHY_TYPE_INFO {
 <div> </div>
 </dd>
 
-### -field <b>bUseParameters</b>
+### -field bUseParameters
 
 <dd>
 <p>If this member is <b>TRUE</b>, the 802.11 station uses the other members of this structure to configure
@@ -101,14 +101,14 @@ typedef struct _DOT11_PHY_TYPE_INFO {
 </p>
 </dd>
 
-### -field <b>uProbeDelay</b>
+### -field uProbeDelay
 
 <dd>
 <p>The amount of time, in microseconds, that the 802.11 station must wait before transmitting an
      802.11 Probe Request frame during active scanning.</p>
 </dd>
 
-### -field <b>uMinChannelTime</b>
+### -field uMinChannelTime
 
 <dd>
 <p>The minimum amount of time, in 802.11 time units (TU), that the 802.11 station spends on each
@@ -118,7 +118,7 @@ typedef struct _DOT11_PHY_TYPE_INFO {
      <b>uProbeDelay</b> .</p>
 </dd>
 
-### -field <b>uMaxChannelTime</b>
+### -field uMaxChannelTime
 
 <dd>
 <p>The maximum amount of time, in 802.11 time units (TU), that the 802.11 station spends on each
@@ -128,7 +128,7 @@ typedef struct _DOT11_PHY_TYPE_INFO {
      <b>uProbeDelay</b> .</p>
 </dd>
 
-### -field <b>ChDescriptionType</b>
+### -field ChDescriptionType
 
 <dd>
 <p>This member specifies the method used to interpret the entries in the 
@@ -138,7 +138,7 @@ typedef struct _DOT11_PHY_TYPE_INFO {
 <p></p>
 <dl>
 
-### -field <a id="ch_description_type_logical________"></a><a id="CH_DESCRIPTION_TYPE_LOGICAL________"></a>ch_description_type_logical
+### -field ch_description_type_logical
        
 
 <dd>
@@ -146,7 +146,7 @@ typedef struct _DOT11_PHY_TYPE_INFO {
        standard.</p>
 </dd>
 
-### -field <a id="ch_description_type_center_frequency________"></a><a id="CH_DESCRIPTION_TYPE_CENTER_FREQUENCY________"></a>ch_description_type_center_frequency
+### -field ch_description_type_center_frequency
        
 
 <dd>
@@ -155,14 +155,14 @@ typedef struct _DOT11_PHY_TYPE_INFO {
 </dl>
 </dd>
 
-### -field <b>uChannelListSize</b>
+### -field uChannelListSize
 
 <dd>
 <p>The length, in bytes, of the 
      <b>ucChannelListBuffer</b> array. Each entry in this array is formatted as a ULONG data type.</p>
 </dd>
 
-### -field <b>ucChannelListBuffer</b>
+### -field ucChannelListBuffer
 
 <dd>
 <p>An array containing channel descriptions for the PHY type specified in the 
@@ -219,4 +219,4 @@ typedef struct _DOT11_PHY_TYPE_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_TYPE_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_TYPE_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

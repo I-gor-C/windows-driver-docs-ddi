@@ -63,52 +63,52 @@ LONG ExtDeviceMode(
 ## -parameters
 <dl>
 
-### -param <i>hWnd</i> [in, optional]
+### -param hWnd [in, optional]
 
 <dd>
 <p>Handle to the parent window for the printer-configuration property sheet.</p>
 </dd>
 
-### -param <i>hInst</i> [in, optional]
+### -param hInst [in, optional]
 
 <dd>
 <p>
       Not used. Handle to the module instance of the device driver. </p>
 </dd>
 
-### -param <i>pDevModeOutput</i> [in, out]
+### -param pDevModeOutput [in, out]
 
 <dd>
 <p>Pointer to the DEVMODE structure that receives the printer configuration data supplied in the buffer pointed to by the <i>pDevModeInput</i> parameter. </p>
 </dd>
 
-### -param <i>pDeviceName</i> [in, optional]
+### -param pDeviceName [in, optional]
 
 <dd>
 <p>Pointer to a NULL-terminated string that contains the name of the device for which the printer configuration property sheet is displayed.</p>
 </dd>
 
-### -param <i>pPort</i> [in, optional]
+### -param pPort [in, optional]
 
 <dd>
 <p>Pointer to a NULL-terminated string that contains the name of the port to which the device is connected, such as LPT1.</p>
 </dd>
 
-### -param <i>pDevModeInput</i> [in, optional]
+### -param pDevModeInput [in, optional]
 
 <dd>
 <p>Pointer to the DEVMODE structure that the operating system uses to initialize the property sheet fields. </p>
 <p>This parameter is used only if the DM_IN_BUFFER flag is set in the <i>fMode</i> parameter. If DM_IN_BUFFER is not set, the operating system uses the printer's default DEVMODE structure.</p>
 </dd>
 
-### -param <i>pProfile</i> [in, optional]
+### -param pProfile [in, optional]
 
 <dd>
 <p>
       Not used. Pointer to a NULL-terminated string that contains the name of the initialization file in which initialization information is recorded and read from. </p>
 </dd>
 
-### -param <i>fMode</i> 
+### -param fMode 
 
 <dd>
 <p>Specifies the operations that the function performs. If this parameter is zero, the <b>ExtDeviceMode</b> function returns the number of bytes required by the printer driver's DEVMODE structure. Otherwise, this parameter can be set to one or more of the following flag values.</p>

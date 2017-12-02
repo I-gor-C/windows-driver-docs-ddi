@@ -54,7 +54,7 @@ NTSTATUS D3DKMTCreateHwContext(
 ## -parameters
 <dl>
 
-### -param <i>createHwContext</i> [in, out]
+### -param createHwContext [in, out]
 
 <dd>
 <p>A structure holding the information needed to create a new hardware context.</p>

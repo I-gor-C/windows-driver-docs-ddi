@@ -58,13 +58,13 @@ HRESULT APIENTRY CALLBACK* pfnDestroyPagingQueueCb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device.</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-destroypagingqueue.md">D3DDDI_DESTROYPAGINGQUEUE</a> structure that describes the operation to perform.

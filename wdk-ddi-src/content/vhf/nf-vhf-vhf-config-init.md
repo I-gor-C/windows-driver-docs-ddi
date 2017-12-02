@@ -58,25 +58,25 @@ FORCEINLINE void VHF_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
 <p>A pointer to the <a href="..\vhf\ns-vhf--vhf-config.md">VHF_CONFIG</a> structure to initialize.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure for the HID source driver. Get that pointer by calling  <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmgetdeviceobject.md">WdfDeviceWdmGetDeviceObject</a> and passing the WDFDEVICE handle that the driver received in the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call. </p>
 </dd>
 
-### -param <i>ReportDescriptorLength</i> [in]
+### -param ReportDescriptorLength [in]
 
 <dd>
 <p>The length of the HID Report Descriptor contained in a buffer pointer by <i>ReportDescriptor</i>.</p>
 </dd>
 
-### -param <i>ReportDescriptor</i> 
+### -param ReportDescriptor 
 
 <dd>
 <p>A pointer to a HID source driver-allocated buffer that contains the  HID Report Descriptor.</p>
@@ -142,7 +142,7 @@ FORCEINLINE void VHF_CONFIG_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="NULL">Write a HID source driver by using Virtual HID Framework (VHF)</a>
+<a href="https://msdn.microsoft.com/26964963-792F-4529-B4FC-110BF5C65B35">Write a HID source driver by using Virtual HID Framework (VHF)</a>
 </dt>
 </dl>
 <p> </p>

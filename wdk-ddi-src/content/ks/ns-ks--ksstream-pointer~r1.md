@@ -59,37 +59,37 @@ typedef struct _KSSTREAM_POINTER {
 ## -struct-fields
 <dl>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to client-requested context information. The leading edge and trailing edge stream pointers have this member set to <b>NULL</b>. Cloned stream pointers can specify that they wish to have context information via the mechanism described in <a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>. </p>
 </dd>
 
-### -field <b>Pin</b>
+### -field Pin
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure to which this stream pointer belongs.</p>
 </dd>
 
-### -field <b>StreamHeader</b>
+### -field StreamHeader
 
 <dd>
 <p>A pointer to the stream header object for the data frame that this stream pointer currently points to. See <a href="stream.ksstream_header">KSSTREAM_HEADER</a> for more information.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>A pointer to a structure of type <a href="..\ks\ns-ks--ksstream-pointer-offset.md">KSSTREAM_POINTER_OFFSET</a>. Points to either <b>OffsetIn</b> or <b>OffsetOut</b> depending on whether the pin to which this stream pointer belongs is an input pin or output pin.</p>
 </dd>
 
-### -field <b>OffsetIn</b>
+### -field OffsetIn
 
 <dd>
 <p>This member specifies a structure of type <a href="..\ks\ns-ks--ksstream-pointer-offset.md">KSSTREAM_POINTER_OFFSET</a> describing the data currently pointed to by the stream pointer.</p>
 </dd>
 
-### -field <b>OffsetOut</b>
+### -field OffsetOut
 
 <dd>
 <p>This member specifies a structure of type <a href="..\ks\ns-ks--ksstream-pointer-offset.md">KSSTREAM_POINTER_OFFSET</a>. Use this member to output data on an output pin.</p>
@@ -97,9 +97,9 @@ typedef struct _KSSTREAM_POINTER {
 </dl>
 
 ## -remarks
-<p>A queue object for a stream has at minimum one hard-defined stream pointer: the leading-edge stream pointer. For more information, see <a href="NULL">Leading and Trailing Edge Stream Pointers</a>.</p>
+<p>A queue object for a stream has at minimum one hard-defined stream pointer: the leading-edge stream pointer. For more information, see <a href="https://msdn.microsoft.com/73ab974f-8034-421f-980a-2393d84ec54c">Leading and Trailing Edge Stream Pointers</a>.</p>
 
-<p>For general information about stream pointers, see <a href="NULL">Stream Pointers</a>.</p>
+<p>For general information about stream pointers, see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736f">Stream Pointers</a>.</p>
 
 ## -requirements
 <table>

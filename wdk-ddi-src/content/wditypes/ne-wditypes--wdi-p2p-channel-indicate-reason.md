@@ -7,7 +7,7 @@ old-location: netvista\wdi_p2p_channel_indicate_reason.htm
 old-project: netvista
 ms.assetid: F6C2D044-E64B-4DA5-A168-20C99F325451
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _WDI_P2P_CHANNEL_INDICATE_REASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_P2P_CHANNEL_INDICATE_REASON_NEW_CONNECTION"></a><a id="wdi_p2p_channel_indicate_reason_new_connection"></a><b>WDI_P2P_CHANNEL_INDICATE_REASON_NEW_CONNECTION</b>
+### -field WDI_P2P_CHANNEL_INDICATE_REASON_NEW_CONNECTION
 
 <dd>
 <p>New connection set up.</p>
 </dd>
 
-### -field <a id="WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_REQUESTED"></a><a id="wdi_p2p_channel_indicate_reason_ecsa_requested"></a><b>WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_REQUESTED</b>
+### -field WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_REQUESTED
 
 <dd>
 <p>eCSA request from the peer.</p>
 </dd>
 
-### -field <a id="WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_GO_INITIATED"></a><a id="wdi_p2p_channel_indicate_reason_ecsa_go_initiated"></a><b>WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_GO_INITIATED</b>
+### -field WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_GO_INITIATED
 
 <dd>
 <p>eCSA initiated by GO.</p>

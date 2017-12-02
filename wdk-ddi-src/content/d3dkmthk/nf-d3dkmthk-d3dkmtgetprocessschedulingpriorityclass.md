@@ -55,13 +55,13 @@ NTSTATUS D3DKMTGetProcessSchedulingPriorityClass(
 ## -parameters
 <dl>
 
-### -param <i>hProcess</i> [in]
+### -param hProcess [in]
 
 <dd>
 <p>A handle to the process for which scheduling priority is set.</p>
 </dd>
 
-### -param <i>pPriority</i> [out]
+### -param pPriority [out]
 
 <dd>
 <p>A pointer to a variable that receives a <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-schedulingpriorityclass.md">D3DKMT_SCHEDULINGPRIORITYCLASS</a>-typed value that indicates the priority level for the process.</p>

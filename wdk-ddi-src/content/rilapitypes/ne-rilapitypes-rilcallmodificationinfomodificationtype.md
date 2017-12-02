@@ -7,7 +7,7 @@ old-location: netvista\rilcallmodificationinfomodificationtype_2.htm
 old-project: netvista
 ms.assetid: e73abe84-1688-40f1-9b8c-e4e34cc87b78
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILCALLMODIFICATIONINFOMODIFICATIONTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLMODIFICATIONTYPE_BLOCKED"></a><a id="ril_callmodificationtype_blocked"></a><b>RIL_CALLMODIFICATIONTYPE_BLOCKED</b>
+### -field RIL_CALLMODIFICATIONTYPE_BLOCKED
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMODIFICATIONTYPE_MODIFIED"></a><a id="ril_callmodificationtype_modified"></a><b>RIL_CALLMODIFICATIONTYPE_MODIFIED</b>
+### -field RIL_CALLMODIFICATIONTYPE_MODIFIED
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMODIFICATIONTYPE_MAX"></a><a id="ril_callmodificationtype_max"></a><b>RIL_CALLMODIFICATIONTYPE_MAX</b>
+### -field RIL_CALLMODIFICATIONTYPE_MAX
 
 <dd></dd>
 </dl>

@@ -54,7 +54,7 @@ typedef enum _D3DKMDT_TEXT_RENDERING_FORMAT {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_TRF_UNINITIALIZED"></a><a id="d3dkmdt_trf_uninitialized"></a><b>D3DKMDT_TRF_UNINITIALIZED</b>
+### -field D3DKMDT_TRF_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_TEXT_RENDERING_FORMAT has not yet been assigned a meaningful value.</p>

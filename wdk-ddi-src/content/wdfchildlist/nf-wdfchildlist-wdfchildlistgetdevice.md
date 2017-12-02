@@ -7,7 +7,7 @@ old-location: wdf\wdfchildlistgetdevice.htm
 old-project: wdf
 ms.assetid: 5d51ec82-4891-47f1-8fc1-b20cb611d7fe
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfChildListGetDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ WDFDEVICE WdfChildListGetDevice(
 ## -parameters
 <dl>
 
-### -param <i>ChildList</i> [in]
+### -param ChildList [in]
 
 <dd>
 <p>A handle to a framework child-list object.</p>

@@ -74,127 +74,127 @@ typedef struct _MSiSCSI_MMIPSECStats {
 ## -struct-fields
 <dl>
 
-### -field <b>ActiveAcquire</b>
+### -field ActiveAcquire
 
 <dd>
 <p>The number of active require requests that the IPsec driver has sent to the Internet Key Exchange (IKE) service. Typically, the number of active acquire requests is 1. Under a heavy load, the number of active acquire requests is 1 plus the number of requests that are waiting in the queue of the IKE service. </p>
 </dd>
 
-### -field <b>ActiveReceive</b>
+### -field ActiveReceive
 
 <dd>
 <p>The number of IKE messages (that is, active receive requests) that are queued for processing.</p>
 </dd>
 
-### -field <b>AcquireFailures</b>
+### -field AcquireFailures
 
 <dd>
 <p>The number of active acquire requests that have failed.</p>
 </dd>
 
-### -field <b>ReceiveFailures</b>
+### -field ReceiveFailures
 
 <dd>
 <p>The number of failures that have occurred while drivers in the TCP stack are receiving IKE messages.</p>
 </dd>
 
-### -field <b>SendFailures</b>
+### -field SendFailures
 
 <dd>
 <p>The number of failures that have occurred while drivers in the TCP stack are sending IKE messages.</p>
 </dd>
 
-### -field <b>AcquireHeapSize</b>
+### -field AcquireHeapSize
 
 <dd>
 <p>The number of IKE messages that the acquire heap can hold. This number increases under a heavy load and then gradually decreases over time, as the acquire heap is emptied.</p>
 </dd>
 
-### -field <b>ReceiveHeapSize</b>
+### -field ReceiveHeapSize
 
 <dd>
 <p>The number of incoming IKE messages that the IKE receive buffers can hold.</p>
 </dd>
 
-### -field <b>NegotiationFailures</b>
+### -field NegotiationFailures
 
 <dd>
 <p>The total number of negotiation failures that occurred during main mode (also known as <i>phase 1</i>) negotiation or during quick mode (also known as <i>phase 2</i>) negotiation.</p>
 </dd>
 
-### -field <b>AuthenticationFailures</b>
+### -field AuthenticationFailures
 
 <dd>
 <p>The number of identity authentication failures that occurred during main mode negotiation. This number includes kerberos failures, certificate failures, and preshared key failures.</p>
 </dd>
 
-### -field <b>InvalidCookiesReceived</b>
+### -field InvalidCookiesReceived
 
 <dd>
 <p>The number of invalid cookies that the initiator has received in IKE messages. Cookies are invalid if the cookie state does not correspond to the state of an active main mode security association (SA).</p>
 </dd>
 
-### -field <b>TotalGetSPI</b>
+### -field TotalGetSPI
 
 <dd>
 <p>The number of requests that the IKE service submitted to obtain a unique security parameters index (SPI).</p>
 </dd>
 
-### -field <b>KeyAdditions</b>
+### -field KeyAdditions
 
 <dd>
 <p>The number of outbound quick mode SAs that the IKE service has added.</p>
 </dd>
 
-### -field <b>KeyUpdates</b>
+### -field KeyUpdates
 
 <dd>
 <p>The number of inbound quick mode SAs that the IKE service has added.</p>
 </dd>
 
-### -field <b>GetSPIFailures</b>
+### -field GetSPIFailures
 
 <dd>
 <p>The total number of unsuccessful attempts that the IKE service has made to obtain a unique SPI. </p>
 </dd>
 
-### -field <b>KeyAdditionFailures</b>
+### -field KeyAdditionFailures
 
 <dd>
 <p>The number of outbound quick-mode SAs that the IKE service has submitted unsuccessfully.</p>
 </dd>
 
-### -field <b>KeyUpdateFailures</b>
+### -field KeyUpdateFailures
 
 <dd>
 <p>The number of inbound quick-mode SAs that the IKE service has added.</p>
 </dd>
 
-### -field <b>ConnectionListSize</b>
+### -field ConnectionListSize
 
 <dd>
 <p>The number of quick-mode state entries.</p>
 </dd>
 
-### -field <b>OakleyMainMode</b>
+### -field OakleyMainMode
 
 <dd>
 <p>The number of successful SAs that are created during main mode negotiations.</p>
 </dd>
 
-### -field <b>OakleyQuickMode</b>
+### -field OakleyQuickMode
 
 <dd>
 <p>The number of successful SAs that are created during quick-mode negotiations.</p>
 </dd>
 
-### -field <b>InvalidPackets</b>
+### -field InvalidPackets
 
 <dd>
 <p>The number of received IKE messages that are invalid, including IKE messages with invalid header fields, incorrect payload lengths, or incorrect (nonzero) responder cookies that should be 0.</p>
 </dd>
 
-### -field <b>SoftAssociations</b>
+### -field SoftAssociations
 
 <dd>
 <p>The number of negotiations that resulted in the use of plaintext SAs (also known as <i>soft SAs</i>). This value typically reflects the number of associations that the initiator established with computers that did not respond to main mode negotiation attempts. Computers that do not respond might not support IPSec, or they might support IPSec but not have an IPSec policy with which to negotiate security with an IPSec peer.</p>

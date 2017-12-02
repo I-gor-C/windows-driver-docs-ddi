@@ -65,73 +65,73 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="COLOR_GRAY"></a><a id="color_gray"></a><b>COLOR_GRAY</b>
+### -field COLOR_GRAY
 
 <dd>
 <p>Specifies a 16-bit gray-scale pixel value. Correlates to the ICM GRAYCOLOR.</p>
 </dd>
 
-### -field <a id="COLOR_RGB"></a><a id="color_rgb"></a><b>COLOR_RGB</b>
+### -field COLOR_RGB
 
 <dd>
 <p>Specifies a 48-bit RGB pixel value. Correlates to the ICM RGBCOLOR structure.</p>
 </dd>
 
-### -field <a id="COLOR_XYZ"></a><a id="color_xyz"></a><b>COLOR_XYZ</b>
+### -field COLOR_XYZ
 
 <dd>
 <p>Specifies a 48-bit CIEXYZ pixel value. Correlates to the ICM XYZCOLOR structure.</p>
 </dd>
 
-### -field <a id="COLOR_Yxy"></a><a id="color_yxy"></a><a id="COLOR_YXY"></a><b>COLOR_Yxy</b>
+### -field COLOR_Yxy
 
 <dd>
 <p>Specifies a 48-bit CIE Yxy pixel value. Correlates to the ICM YxyCOLOR structure.</p>
 </dd>
 
-### -field <a id="COLOR_Lab"></a><a id="color_lab"></a><a id="COLOR_LAB"></a><b>COLOR_Lab</b>
+### -field COLOR_Lab
 
 <dd>
 <p>Specifies a 48-bit CIELAB pixel value. Correlates to the ICM LabCOLOR structure.</p>
 </dd>
 
-### -field <a id="COLOR_3_CHANNEL"></a><a id="color_3_channel"></a><b>COLOR_3_CHANNEL</b>
+### -field COLOR_3_CHANNEL
 
 <dd>
 <p>Specifies a 48-bit generic three-channel pixel value. Correlates to the ICM GENERIC3CHANNEL structure.</p>
 </dd>
 
-### -field <a id="COLOR_CMYK"></a><a id="color_cmyk"></a><b>COLOR_CMYK</b>
+### -field COLOR_CMYK
 
 <dd>
 <p>Specifies a 48-bit CMYK pixel value. Correlates to the ICM CMYKCOLOR structure.</p>
 </dd>
 
-### -field <a id="COLOR_5_CHANNEL"></a><a id="color_5_channel"></a><b>COLOR_5_CHANNEL</b>
+### -field COLOR_5_CHANNEL
 
 <dd>
 <p>Specifies a 64-bit generic five-channel pixel value.</p>
 </dd>
 
-### -field <a id="COLOR_6_CHANNEL"></a><a id="color_6_channel"></a><b>COLOR_6_CHANNEL</b>
+### -field COLOR_6_CHANNEL
 
 <dd>
 <p>Specifies a 64-bit generic six-channel pixel value.</p>
 </dd>
 
-### -field <a id="COLOR_7_CHANNEL"></a><a id="color_7_channel"></a><b>COLOR_7_CHANNEL</b>
+### -field COLOR_7_CHANNEL
 
 <dd>
 <p>Specifies a 64-bit generic seven-channel pixel value.</p>
 </dd>
 
-### -field <a id="COLOR_8_CHANNEL"></a><a id="color_8_channel"></a><b>COLOR_8_CHANNEL</b>
+### -field COLOR_8_CHANNEL
 
 <dd>
 <p>Specifies a 64-bit generic eight-channel pixel value.</p>
 </dd>
 
-### -field <a id="COLOR_NAMED"></a><a id="color_named"></a><b>COLOR_NAMED</b>
+### -field COLOR_NAMED
 
 <dd>
 <p>Specifies a 32-bit named color-indexed pixel value. Correlates to the ICM NAMEDCOLOR structure.</p>

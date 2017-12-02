@@ -7,7 +7,7 @@ old-location: netvista\ndis_pm_capabilities.htm
 old-project: netvista
 ms.assetid: 713c8ecc-e0a5-480a-9c53-e331aeaeb38e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PM_CAPABILITIES, NDIS_PM_CAPABILITIES, *PNDIS_PM_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_PM_CAPABILITIES</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -78,14 +78,14 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_PM_CAPABILITIES_REVISION_2"></a><a id="ndis_pm_capabilities_revision_2"></a>NDIS_PM_CAPABILITIES_REVISION_2
+### -field NDIS_PM_CAPABILITIES_REVISION_2
 
 <dd>
 <p>Added various changes for NDIS 6.30.</p>
 <p>Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_CAPABILITIES_REVISION_2.</p>
 </dd>
 
-### -field <a id="NDIS_PM_CAPABILITIES_REVISION_1"></a><a id="ndis_pm_capabilities_revision_1"></a>NDIS_PM_CAPABILITIES_REVISION_1
+### -field NDIS_PM_CAPABILITIES_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.20.</p>
@@ -94,7 +94,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. For NDIS 6.20, this member is reserved for NDIS.</p>
@@ -102,7 +102,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_PM_WAKE_PACKET_INDICATION_SUPPORTED"></a><a id="ndis_pm_wake_packet_indication_supported"></a>NDIS_PM_WAKE_PACKET_INDICATION_SUPPORTED
+### -field NDIS_PM_WAKE_PACKET_INDICATION_SUPPORTED
 
 <dd>
 <p>If this flag is set, the network adapter must be able to save the received packet that caused the adapter to generate a wake-up event.</p>
@@ -122,7 +122,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p>For more information about this power management capability, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439831">NDIS Wake Reason Status Indications</a>.</p>
 </dd>
 
-### -field <a id="NDIS_PM_SELECTIVE_SUSPEND_SUPPORTED"></a><a id="ndis_pm_selective_suspend_supported"></a>NDIS_PM_SELECTIVE_SUSPEND_SUPPORTED
+### -field NDIS_PM_SELECTIVE_SUSPEND_SUPPORTED
 
 <dd>
 <p>If this flag is set, the miniport driver supports NDIS selective suspend for network adapters. </p>
@@ -131,7 +131,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>SupportedWoLPacketPatterns</b>
+### -field SupportedWoLPacketPatterns
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of flags that specify the wake-on-LAN (WOL) patterns that
@@ -144,14 +144,14 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_PM_WOL_BITMAP_PATTERN_SUPPORTED"></a><a id="ndis_pm_wol_bitmap_pattern_supported"></a>NDIS_PM_WOL_BITMAP_PATTERN_SUPPORTED
+### -field NDIS_PM_WOL_BITMAP_PATTERN_SUPPORTED
 
 <dd>
 <p>The network adapter can generate a wake-up event when it receives a packet that matches a
        configured bitmap pattern.</p>
 </dd>
 
-### -field <a id="NDIS_PM_WOL_MAGIC_PACKET_SUPPORTED"></a><a id="ndis_pm_wol_magic_packet_supported"></a>NDIS_PM_WOL_MAGIC_PACKET_SUPPORTED
+### -field NDIS_PM_WOL_MAGIC_PACKET_SUPPORTED
 
 <dd>
 <p>The network adapter can generate a wake-up event when it receives a WOL magic packet. A 
@@ -159,21 +159,21 @@ typedef struct _NDIS_PM_CAPABILITIES {
        immediately by 16 contiguous copies of the receiving network adapter's Ethernet address.</p>
 </dd>
 
-### -field <a id="NDIS_PM_WOL_IPV4_TCP_SYN_SUPPORTED"></a><a id="ndis_pm_wol_ipv4_tcp_syn_supported"></a>NDIS_PM_WOL_IPV4_TCP_SYN_SUPPORTED
+### -field NDIS_PM_WOL_IPV4_TCP_SYN_SUPPORTED
 
 <dd>
 <p>The network adapter can generate a wake-up event when it receives an IPv4 TCP SYN packet.
        Remote hosts send TCP SYN packets to initiate a TCP connection to the local computer.</p>
 </dd>
 
-### -field <a id="NDIS_PM_WOL_IPV6_TCP_SYN_SUPPORTED"></a><a id="ndis_pm_wol_ipv6_tcp_syn_supported"></a>NDIS_PM_WOL_IPV6_TCP_SYN_SUPPORTED
+### -field NDIS_PM_WOL_IPV6_TCP_SYN_SUPPORTED
 
 <dd>
 <p>The network adapter can generate a wake-up event when it receives an IPv6 TCP SYN
        packet.</p>
 </dd>
 
-### -field <a id="NDIS_PM_WOL_IPV4_DEST_ADDR_WILDCARD_SUPPORTED"></a><a id="ndis_pm_wol_ipv4_dest_addr_wildcard_supported"></a>NDIS_PM_WOL_IPV4_DEST_ADDR_WILDCARD_SUPPORTED
+### -field NDIS_PM_WOL_IPV4_DEST_ADDR_WILDCARD_SUPPORTED
 
 <dd>
 <p>If this flag is set, the network adapter supports as 
@@ -203,7 +203,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_PM_WOL_IPV6_DEST_ADDR_WILDCARD_SUPPORTED"></a><a id="ndis_pm_wol_ipv6_dest_addr_wildcard_supported"></a>NDIS_PM_WOL_IPV6_DEST_ADDR_WILDCARD_SUPPORTED
+### -field NDIS_PM_WOL_IPV6_DEST_ADDR_WILDCARD_SUPPORTED
 
 <dd>
 <p>If this flag is set, the network adapter supports as 
@@ -233,7 +233,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <a id="NDIS_PM_WOL_EAPOL_REQUEST_ID_MESSAGE_SUPPORTED"></a><a id="ndis_pm_wol_eapol_request_id_message_supported"></a>NDIS_PM_WOL_EAPOL_REQUEST_ID_MESSAGE_SUPPORTED
+### -field NDIS_PM_WOL_EAPOL_REQUEST_ID_MESSAGE_SUPPORTED
 
 <dd>
 <p>The network adapter can generate a wake-up event when it receives an EAPOL request identifier
@@ -242,7 +242,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>NumTotalWoLPatterns</b>
+### -field NumTotalWoLPatterns
 
 <dd>
 <p>A <b>ULONG</b> value that contains the total number of WOL patterns that a network adapter supports. This is the sum of "number of
@@ -256,21 +256,21 @@ typedef struct _NDIS_PM_CAPABILITIES {
      <a href="..\ntddndis\ns-ntddndis--ndis-pm-wol-pattern.md">NDIS_PM_WOL_PATTERN</a>.</p>
 </dd>
 
-### -field <b>MaxWoLPatternSize</b>
+### -field MaxWoLPatternSize
 
 <dd>
 <p>A ULONG value that contains the maximum number of bytes that can be compared with a
      pattern.</p>
 </dd>
 
-### -field <b>MaxWoLPatternOffset</b>
+### -field MaxWoLPatternOffset
 
 <dd>
 <p>A ULONG value that contains the number of bytes in a packet that can be examined, starting at
      the beginning of the MAC header.</p>
 </dd>
 
-### -field <b>MaxWoLPacketSaveBuffer</b>
+### -field MaxWoLPacketSaveBuffer
 
 <dd>
 <p>A ULONG value that contains the number of bytes of a WOL packet that a miniport driver can save to
@@ -279,7 +279,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <b>SupportedProtocolOffloads</b>
+### -field SupportedProtocolOffloads
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags that specify the protocol offload features that
@@ -289,7 +289,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_PM_PROTOCOL_OFFLOAD_ARP_SUPPORTED"></a><a id="ndis_pm_protocol_offload_arp_supported"></a>NDIS_PM_PROTOCOL_OFFLOAD_ARP_SUPPORTED
+### -field NDIS_PM_PROTOCOL_OFFLOAD_ARP_SUPPORTED
 
 <dd>
 <p>If this bit is set, the network adapter can respond to IPv4 ARP packets while it is in a low
@@ -298,7 +298,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p>For more information about the ARP protocol, see RFC 826.</p>
 </dd>
 
-### -field <a id="NDIS_PM_PROTOCOL_OFFLOAD_NS_SUPPORTED"></a><a id="ndis_pm_protocol_offload_ns_supported"></a>NDIS_PM_PROTOCOL_OFFLOAD_NS_SUPPORTED
+### -field NDIS_PM_PROTOCOL_OFFLOAD_NS_SUPPORTED
 
 <dd>
 <p>If this bit is set, the network adapter can respond to IPv6 Neighbor Solicitation (NS) packets
@@ -307,7 +307,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p>For more information about IPv6 NS messages, see <a href="http://go.microsoft.com/fwlink/p/?linkid=268370">RFC 4861</a>.</p>
 </dd>
 
-### -field <a id="NDIS_PM_PROTOCOL_OFFLOAD_80211_RSN_REKEY_SUPPORTED"></a><a id="ndis_pm_protocol_offload_80211_rsn_rekey_supported"></a>NDIS_PM_PROTOCOL_OFFLOAD_80211_RSN_REKEY_SUPPORTED
+### -field NDIS_PM_PROTOCOL_OFFLOAD_80211_RSN_REKEY_SUPPORTED
 
 <dd>
 <p>The network adapter can respond to IEEE 802.11i Robust Security Network (RSN) re-key requests
@@ -316,14 +316,14 @@ typedef struct _NDIS_PM_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>NumArpOffloadIPv4Addresses</b>
+### -field NumArpOffloadIPv4Addresses
 
 <dd>
 <p>A <b>ULONG</b> value that contains the number of IPv4 addresses that the adapter supports for ARP
      offload.</p>
 </dd>
 
-### -field <b>NumNSOffloadIPv6Addresses</b>
+### -field NumNSOffloadIPv6Addresses
 
 <dd>
 <p>A <b>ULONG</b> value that contains the number of IPv6 NS offload requests that the adapter supports. This should be at least 2.</p>
@@ -331,7 +331,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <b>MinMagicPacketWakeUp</b>
+### -field MinMagicPacketWakeUp
 
 <dd>
 <p>Specifies the lowest device power state from which a network adapter can signal a wake-up event on receipt of
@@ -345,7 +345,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="_________NdisDeviceStateUnspecified________"></a><a id="_________ndisdevicestateunspecified________"></a><a id="_________NDISDEVICESTATEUNSPECIFIED________"></a>
+### -field 
         NdisDeviceStateUnspecified
        
 
@@ -355,7 +355,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <a id="_________NdisDeviceStateD0________"></a><a id="_________ndisdevicestated0________"></a><a id="_________NDISDEVICESTATED0________"></a>
+### -field 
         NdisDeviceStateD0
        
 
@@ -366,7 +366,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <a id="_________NdisDeviceStateD1________"></a><a id="_________ndisdevicestated1________"></a><a id="_________NDISDEVICESTATED1________"></a>
+### -field 
         NdisDeviceStateD1
        
 
@@ -374,7 +374,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p>The network adapter can signal a magic packet wake-up from a device power state of D1.</p>
 </dd>
 
-### -field <a id="_________NdisDeviceStateD2________"></a><a id="_________ndisdevicestated2________"></a><a id="_________NDISDEVICESTATED2________"></a>
+### -field 
         NdisDeviceStateD2
        
 
@@ -382,7 +382,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p>The network adapter can signal a magic packet wake-up from a device state of D2.</p>
 </dd>
 
-### -field <a id="_________NdisDeviceStateD3________"></a><a id="_________ndisdevicestated3________"></a><a id="_________NDISDEVICESTATED3________"></a>
+### -field 
         NdisDeviceStateD3
        
 
@@ -392,7 +392,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>MinPatternWakeUp</b>
+### -field MinPatternWakeUp
 
 <dd>
 <p>Specifies the lowest device power state from which a network adapter can signal a wake-up event on receipt of
@@ -402,7 +402,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="_________NdisDeviceStateUnspecified________"></a><a id="_________ndisdevicestateunspecified________"></a><a id="_________NDISDEVICESTATEUNSPECIFIED________"></a>
+### -field 
         NdisDeviceStateUnspecified
        
 
@@ -412,7 +412,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <a id="_________NdisDeviceStateD0________"></a><a id="_________ndisdevicestated0________"></a><a id="_________NDISDEVICESTATED0________"></a>
+### -field 
         NdisDeviceStateD0
        
 
@@ -423,7 +423,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <a id="_________NdisDeviceStateD1________"></a><a id="_________ndisdevicestated1________"></a><a id="_________NDISDEVICESTATED1________"></a>
+### -field 
         NdisDeviceStateD1
        
 
@@ -431,7 +431,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p>The network adapter can signal a pattern-match wake-up from a device power state of D1.</p>
 </dd>
 
-### -field <a id="_________NdisDeviceStateD2________"></a><a id="_________ndisdevicestated2________"></a><a id="_________NDISDEVICESTATED2________"></a>
+### -field 
         NdisDeviceStateD2
        
 
@@ -439,7 +439,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p>The network adapter can signal a pattern-match wake-up from a device power state of D2.</p>
 </dd>
 
-### -field <a id="_________NdisDeviceStateD3________"></a><a id="_________ndisdevicestated3________"></a><a id="_________NDISDEVICESTATED3________"></a>
+### -field 
         NdisDeviceStateD3
        
 
@@ -449,7 +449,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>MinLinkChangeWakeUp</b>
+### -field MinLinkChangeWakeUp
 
 <dd>
 <p>Starting with NDIS 6.20, this member specifies the lowest device power state from which a network adapter can signal a wake-up event when the link
@@ -461,7 +461,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="_________NdisDeviceStateUnspecified________"></a><a id="_________ndisdevicestateunspecified________"></a><a id="_________NDISDEVICESTATEUNSPECIFIED________"></a>
+### -field 
         NdisDeviceStateUnspecified
        
 
@@ -471,7 +471,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <a id="_________NdisDeviceStateD0________"></a><a id="_________ndisdevicestated0________"></a><a id="_________NDISDEVICESTATED0________"></a>
+### -field 
         NdisDeviceStateD0
        
 
@@ -482,7 +482,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <div> </div>
 </dd>
 
-### -field <a id="_________NdisDeviceStateD1________"></a><a id="_________ndisdevicestated1________"></a><a id="_________NDISDEVICESTATED1________"></a>
+### -field 
         NdisDeviceStateD1
        
 
@@ -490,7 +490,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p>The network adapter can signal a link change wake-up from a device power state of D1.</p>
 </dd>
 
-### -field <a id="_________NdisDeviceStateD2________"></a><a id="_________ndisdevicestated2________"></a><a id="_________NDISDEVICESTATED2________"></a>
+### -field 
         NdisDeviceStateD2
        
 
@@ -498,7 +498,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p>The network adapter can signal a link change wake-up from a device power state of D2.</p>
 </dd>
 
-### -field <a id="_________NdisDeviceStateD3________"></a><a id="_________ndisdevicestated3________"></a><a id="_________NDISDEVICESTATED3________"></a>
+### -field 
         NdisDeviceStateD3
        
 
@@ -508,7 +508,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>SupportedWakeUpEvents</b>
+### -field SupportedWakeUpEvents
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. These flags specify the   media-independent wake-up events that a network adapter supports. 
@@ -517,13 +517,13 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_PM_WAKE_ON_MEDIA_CONNECT_SUPPORTED"></a><a id="ndis_pm_wake_on_media_connect_supported"></a>NDIS_PM_WAKE_ON_MEDIA_CONNECT_SUPPORTED
+### -field NDIS_PM_WAKE_ON_MEDIA_CONNECT_SUPPORTED
 
 <dd>
 <p>If this flag is set, the network adapter can generate a wake-up event when it becomes connected to the networking interface.</p>
 </dd>
 
-### -field <a id="NDIS_PM_WAKE_ON_MEDIA_DISCONNECT_SUPPORTED"></a><a id="ndis_pm_wake_on_media_disconnect_supported"></a>NDIS_PM_WAKE_ON_MEDIA_DISCONNECT_SUPPORTED
+### -field NDIS_PM_WAKE_ON_MEDIA_DISCONNECT_SUPPORTED
 
 <dd>
 <p>If this flag is set, the network adapter can generate a wake-up event when it becomes disconnected to the networking interface.</p>
@@ -531,7 +531,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 </dl>
 </dd>
 
-### -field <b>MediaSpecificWakeUpEvents</b>
+### -field MediaSpecificWakeUpEvents
 
 <dd>
 <p>A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. These flags specify the media-specific wake-up events that a network adapter supports. 
@@ -540,44 +540,44 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_WLAN_WAKE_ON_NLO_DISCOVERY_SUPPORTED"></a><a id="ndis_wlan_wake_on_nlo_discovery_supported"></a>NDIS_WLAN_WAKE_ON_NLO_DISCOVERY_SUPPORTED
+### -field NDIS_WLAN_WAKE_ON_NLO_DISCOVERY_SUPPORTED
 
 <dd>
 <p>If this flag is set, the 802.11 network adapter can generate a wake-up event if it detects a service set identifier (SSID) that was specified through a network list offload (NLO). </p>
-<p>For more information about NLO, see <a href="NULL">Wi-Fi Network List Offload</a>.</p>
+<p>For more information about NLO, see <a href="netvista.wi-fi_network_list_offload">Wi-Fi Network List Offload</a>.</p>
 </dd>
 
-### -field <a id="NDIS_WLAN_WAKE_ON_AP_ASSOCIATION_LOST_SUPPORTED"></a><a id="ndis_wlan_wake_on_ap_association_lost_supported"></a>NDIS_WLAN_WAKE_ON_AP_ASSOCIATION_LOST_SUPPORTED
+### -field NDIS_WLAN_WAKE_ON_AP_ASSOCIATION_LOST_SUPPORTED
 
 <dd>
 <p>If this flag is set, the 802.11 network adapter can generate a wake-up event if it disassociates with the access point (AP).</p>
 </dd>
 
-### -field <a id="NDIS_WLAN_WAKE_ON_GTK_HANDSHAKE_ERROR_SUPPORTED"></a><a id="ndis_wlan_wake_on_gtk_handshake_error_supported"></a>NDIS_WLAN_WAKE_ON_GTK_HANDSHAKE_ERROR_SUPPORTED
+### -field NDIS_WLAN_WAKE_ON_GTK_HANDSHAKE_ERROR_SUPPORTED
 
 <dd>
 <p>If this flag is set, the 802.11 network adapter can generate a wake-up event if it encounters an error during the IEEE 802.11i RSN group transient key (GTK) handshake with the AP.</p>
 </dd>
 
-### -field <a id="NDIS_WLAN_WAKE_ON_4WAY_HANDSHAKE_REQUEST_SUPPORTED"></a><a id="ndis_wlan_wake_on_4way_handshake_request_supported"></a>NDIS_WLAN_WAKE_ON_4WAY_HANDSHAKE_REQUEST_SUPPORTED
+### -field NDIS_WLAN_WAKE_ON_4WAY_HANDSHAKE_REQUEST_SUPPORTED
 
 <dd>
 <p>If this flag is set, the 802.11 network adapter can generate a wake-up event if it receives the first frame of the IEEE 802.11i RSN 4-way handshake with the AP. This handshake is performed when the adapter authenticates with the AP.</p>
 </dd>
 
-### -field <a id="NDIS_WWAN_WAKE_ON_REGISTER_STATE_SUPPORTED"></a><a id="ndis_wwan_wake_on_register_state_supported"></a>NDIS_WWAN_WAKE_ON_REGISTER_STATE_SUPPORTED
+### -field NDIS_WWAN_WAKE_ON_REGISTER_STATE_SUPPORTED
 
 <dd>
 <p>If this flag is set, the mobile broadband (MB) network adapter can generate a wake-up event if its registration state to the MB Service has changed.</p>
 </dd>
 
-### -field <a id="NDIS_WWAN_WAKE_ON_SMS_RECEIVE_SUPPORTED"></a><a id="ndis_wwan_wake_on_sms_receive_supported"></a>NDIS_WWAN_WAKE_ON_SMS_RECEIVE_SUPPORTED
+### -field NDIS_WWAN_WAKE_ON_SMS_RECEIVE_SUPPORTED
 
 <dd>
 <p>If this flag is set, the MB network adapter can generate a wake-up event if the MB Service has to be notified about the receipt of a Short Message Service (SMS) message. The adapter generates this wake-up event either after the completion of a previously issued <a href="https://msdn.microsoft.com/library/windows/hardware/ff569839">OID_WWAN_SMS_READ</a> query request, or the arrival of a new class-0 (flash/alert) message from the network provider as an event notification.</p>
 </dd>
 
-### -field <a id="NDIS_WWAN_WAKE_ON_USSD_RECEIVE_SUPPORTED"></a><a id="ndis_wwan_wake_on_ussd_receive_supported"></a>NDIS_WWAN_WAKE_ON_USSD_RECEIVE_SUPPORTED
+### -field NDIS_WWAN_WAKE_ON_USSD_RECEIVE_SUPPORTED
 
 <dd>
 <p>If this flag is set, the MB network adapter can generate a wake-up event if it receives an Unstructured Supplementary Service Data (USSD) message.</p>
@@ -666,4 +666,4 @@ typedef struct _NDIS_PM_CAPABILITIES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_CAPABILITIES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_CAPABILITIES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,13 +56,13 @@ HRESULT GetAt(
 ## -parameters
 <dl>
 
-### -param <i>ulIndex</i> [in]
+### -param ulIndex [in]
 
 <dd>
 <p>Index of the <b>IPrintJob</b> object within the collection.</p>
 </dd>
 
-### -param <i>ppJob</i> [out, retval]
+### -param ppJob [out, retval]
 
 <dd>
 <p>Pointer to an <b>IPrintJob</b> object.</p>

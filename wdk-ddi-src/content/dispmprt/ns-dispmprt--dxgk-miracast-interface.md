@@ -62,55 +62,55 @@ typedef struct _DXGK_MIRACAST_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of the Miracast interface. Version number constants are defined in Dispmprt.h (for example, DXGK_MIRACAST_DISPLAY_INTERFACE_VERSION_1).</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to a context that is provided by the display miniport driver.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to an interface reference function that is implemented by the display miniport driver.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to an interface dereference function that is implemented by the display miniport driver.</p>
 </dd>
 
-### -field <b>DxgkDdiMiracastQueryCaps</b>
+### -field DxgkDdiMiracastQueryCaps
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-miracast-query-caps.md">DxgkDdiMiracastQueryCaps</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiMiracastCreateContext</b>
+### -field DxgkDdiMiracastCreateContext
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-miracast-create-context.md">DxgkDdiMiracastCreateContext</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiMiracastIoControl</b>
+### -field DxgkDdiMiracastIoControl
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-miracast-handle-io-control.md">DxgkDdiMiracastIoControl</a> function.</p>
 </dd>
 
-### -field <b>DxgkDdiMiracastDestroyContext</b>
+### -field DxgkDdiMiracastDestroyContext
 
 <dd>
 <p>A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-miracast-destroy-context.md">DxgkDdiMiracastDestroyContext</a> function.</p>

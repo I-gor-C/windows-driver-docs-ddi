@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_GETQUERYDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>hQuery</b>
+### -field hQuery
 
 <dd>
 <p>[in] The handle to the query that was created by the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createquery.md">CreateQuery</a> function.</p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>[out] A pointer to a buffer that the driver fills with data that is related to a query, if the query type is one that requires data. </p>

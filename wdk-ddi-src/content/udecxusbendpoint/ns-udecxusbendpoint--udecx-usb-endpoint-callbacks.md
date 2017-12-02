@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains function pointers to endpoint callback functions implemented by the UDE client driver. Initialize this structure by calling <a href="buses.udecx_usb_endpoint_callbacks_init">UDECX_USB_ENDPOINT_CALLBACKS_INIT</a>.</p>
+<p>Contains function pointers to endpoint callback functions implemented by the UDE client driver. Initialize this structure by calling <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecx-usb-endpoint-callbacks-init.md">UDECX_USB_ENDPOINT_CALLBACKS_INIT</a>.</p>
 
 
 ## -syntax
@@ -58,28 +58,28 @@ typedef struct _UDECX_USB_ENDPOINT_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure.</p>
 </dd>
 
-### -field <b>EvtUsbEndpointReset</b>
+### -field EvtUsbEndpointReset
 
 <dd>
-<p>Required. A pointer to an <a href="buses.evt_udecx_usb_endpoint_reset">EVT_UDECX_USB_ENDPOINT_RESET</a> callback function implemented by a UDE client driver.</p>
+<p>Required. A pointer to an <a href="..\udecxusbendpoint\nc-udecxusbendpoint-evt-udecx-usb-endpoint-reset.md">EVT_UDECX_USB_ENDPOINT_RESET</a> callback function implemented by a UDE client driver.</p>
 </dd>
 
-### -field <b>EvtUsbEndpointStart</b>
+### -field EvtUsbEndpointStart
 
 <dd>
-<p>Optional. A pointer to an <a href="buses.evt_udecx_usb_endpoint_start">EVT_UDECX_USB_ENDPOINT_START</a> callback function implemented by a UDE client driver.</p>
+<p>Optional. A pointer to an <a href="..\udecxusbendpoint\nc-udecxusbendpoint-evt-udecx-usb-endpoint-start.md">EVT_UDECX_USB_ENDPOINT_START</a> callback function implemented by a UDE client driver.</p>
 </dd>
 
-### -field <b>EvtUsbEndpointPurge</b>
+### -field EvtUsbEndpointPurge
 
 <dd>
-<p>Optional. A pointer to an <a href="buses.evt_udecx_usb_endpoint_purge">EVT_UDECX_USB_ENDPOINT_PURGE</a> callback function implemented by a UDE client driver.</p>
+<p>Optional. A pointer to an <a href="..\udecxusbendpoint\nc-udecxusbendpoint-evt-udecx-usb-endpoint-purge.md">EVT_UDECX_USB_ENDPOINT_PURGE</a> callback function implemented by a UDE client driver.</p>
 </dd>
 </dl>
 
@@ -103,10 +103,10 @@ typedef struct _UDECX_USB_ENDPOINT_CALLBACKS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbendpointinitsetcallbacks">UdecxUsbEndpointInitSetCallbacks</a>
+<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointinitsetcallbacks.md">UdecxUsbEndpointInitSetCallbacks</a>
 </dt>
 <dt>
-<a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a>
+<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>
 </dt>
 </dl>
 <p> </p>

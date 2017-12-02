@@ -59,19 +59,19 @@ VOID APIENTRY* pfnCheckExistingResourceAllocationInfo(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>A device handle.</p>
 </dd>
 
-### -param <i>hResource</i> 
+### -param hResource 
 
 <dd>
 <p>A resource handle.</p>
 </dd>
 
-### -param <i>pInfo</i> [out]
+### -param pInfo [out]
 
 <dd>
 <p>Information for resource allocation. </p>

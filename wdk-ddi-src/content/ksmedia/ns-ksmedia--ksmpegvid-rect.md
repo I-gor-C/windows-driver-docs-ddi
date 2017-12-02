@@ -55,19 +55,19 @@ typedef struct _KSMPEGVID_RECT {
 ## -struct-fields
 <dl>
 
-### -field <b>StartX</b>
+### -field StartX
 
 <dd></dd>
 
-### -field <b>StartY</b>
+### -field StartY
 
 <dd></dd>
 
-### -field <b>EndX</b>
+### -field EndX
 
 <dd></dd>
 
-### -field <b>EndY</b>
+### -field EndY
 
 <dd></dd>
 </dl>

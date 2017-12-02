@@ -61,7 +61,7 @@ typedef struct _L2CAP_CONFIG_OPTION {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>A 
@@ -69,7 +69,7 @@ typedef struct _L2CAP_CONFIG_OPTION {
      about vendor-specific configuration options.</p>
 </dd>
 
-### -field <b>DynamicBuffer</b>
+### -field DynamicBuffer
 
 <dd>
 <p>A pointer to a buffer that contains additional L2CAP channel parameters that are defined either by
@@ -78,7 +78,7 @@ typedef struct _L2CAP_CONFIG_OPTION {
      parameters.</p>
 </dd>
 
-### -field <b>FixedBuffer</b>
+### -field FixedBuffer
 
 <dd>
 <p>A buffer that contains additional L2CAP channel parameters that are defined either by the profile
@@ -86,7 +86,7 @@ typedef struct _L2CAP_CONFIG_OPTION {
      <b>Flags</b> member is set to CO_FIXED to indicate that this member contains the extra parameters.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A combination of flags that determines which of this structure's buffer members contain

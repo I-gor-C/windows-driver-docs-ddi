@@ -67,7 +67,7 @@ typedef struct _D3DDDI_RESOURCEFLAGS2 {
 ## -struct-fields
 <dl>
 
-### -field <b>VideoEncoder</b>
+### -field VideoEncoder
 
 <dd>
 <p>If set, indicates that the resource can be used as a capture buffer and/or a video encoder input resource.</p>
@@ -75,14 +75,14 @@ typedef struct _D3DDDI_RESOURCEFLAGS2 {
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>UserMemory</b>
+### -field UserMemory
 
 <dd>
 <p>If set, indicates that the memory for this surface was allocated by the application, not by the Direct3D runtime.</p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>CrossAdapter</b>
+### -field CrossAdapter
 
 <dd>
 <p>If set, indicates that the resource is  a shared cross-adapter resource.</p>
@@ -90,20 +90,20 @@ typedef struct _D3DDDI_RESOURCEFLAGS2 {
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 29 bits (0xFFFFFFF8) of the 32-bit <b>Value</b> member to zeros.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 30 bits (0xFFFFFFFC) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A 32-bit value that identifies the type of resource to create.</p>

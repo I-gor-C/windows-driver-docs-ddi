@@ -55,7 +55,7 @@ typedef struct _FILE_IS_REMOTE_DEVICE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>IsRemote</b>
+### -field IsRemote
 
 <dd>
 <p>A value that indicates whether the file system that contains the file is a remote file system.</p>

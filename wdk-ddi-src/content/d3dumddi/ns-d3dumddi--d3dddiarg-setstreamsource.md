@@ -57,26 +57,26 @@ typedef struct _D3DDDIARG_SETSTREAMSOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>Stream</b>
+### -field Stream
 
 <dd>
 <p>[in] The stream to bind, which is a value between zero and the maximum number of streams that are specified by the driver.</p>
 </dd>
 
-### -field <b>hVertexBuffer</b>
+### -field hVertexBuffer
 
 <dd>
 <p>[in] A handle to the vertex buffer. If this member is zero, the stream should no longer be bound to a vertex buffer.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>[in] The offset in bytes into the stream. </p>
 <p>The <b>Offset</b> value must be DWORD-aligned.</p>
 </dd>
 
-### -field <b>Stride</b>
+### -field Stride
 
 <dd>
 <p>[in] The size, in bytes, from one vertex to the next vertex. If <b>Stride</b> is set to zero, all of the vertices receive the same data for processing. </p>

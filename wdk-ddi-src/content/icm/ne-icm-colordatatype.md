@@ -60,43 +60,43 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="COLOR_BYTE"></a><a id="color_byte"></a><b>COLOR_BYTE</b>
+### -field COLOR_BYTE
 
 <dd>
 <p>Color data is stored as 8 bits per channel, with a value from 0 to 255, inclusive.</p>
 </dd>
 
-### -field <a id="COLOR_WORD"></a><a id="color_word"></a><b>COLOR_WORD</b>
+### -field COLOR_WORD
 
 <dd>
 <p>Color data is stored as 16 bits per channel, with a value from 0 to 65535, inclusive.</p>
 </dd>
 
-### -field <a id="COLOR_FLOAT"></a><a id="color_float"></a><b>COLOR_FLOAT</b>
+### -field COLOR_FLOAT
 
 <dd>
 <p>Color data is stored as 32 bits value per channel, as defined by the IEEE 32-bit floating point standard.</p>
 </dd>
 
-### -field <a id="COLOR_S2DOT13FIXED"></a><a id="color_s2dot13fixed"></a><b>COLOR_S2DOT13FIXED</b>
+### -field COLOR_S2DOT13FIXED
 
 <dd>
 <p>Color data is stored as 16 bits per channel, with a fixed range of -4 to +4, inclusive. A signed format is used, with 1 bit for the sign, 2 bits for the integer portion, and 13 bits for the fractional portion.</p>
 </dd>
 
-### -field <a id="COLOR_10b_R10G10B10A2"></a><a id="color_10b_r10g10b10a2"></a><a id="COLOR_10B_R10G10B10A2"></a><b>COLOR_10b_R10G10B10A2</b>
+### -field COLOR_10b_R10G10B10A2
 
 <dd>
 <p>Packed WORD per channel. data range [0, 1]</p>
 </dd>
 
-### -field <a id="COLOR_10b_R10G10B10A2_XR"></a><a id="color_10b_r10g10b10a2_xr"></a><a id="COLOR_10B_R10G10B10A2_XR"></a><b>COLOR_10b_R10G10B10A2_XR</b>
+### -field COLOR_10b_R10G10B10A2_XR
 
 <dd>
 <p>Packed extended range WORD per channel. data range [-1, 3]</p>
 </dd>
 
-### -field <a id="COLOR_FLOAT16"></a><a id="color_float16"></a><b>COLOR_FLOAT16</b>
+### -field COLOR_FLOAT16
 
 <dd>
 <p>FLOAT16 per channel.</p>

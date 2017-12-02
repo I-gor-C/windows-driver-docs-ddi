@@ -7,7 +7,7 @@ old-location: wdf\wdf_fileobject_config.htm
 old-project: wdf
 ms.assetid: 6fefc35f-fbbd-4c5e-bb8f-25ad3b6cdb67
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_FILEOBJECT_CONFIG, WDF_FILEOBJECT_CONFIG, *PWDF_FILEOBJECT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ typedef struct _WDF_FILEOBJECT_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>EvtDeviceFileCreate</b>
+### -field EvtDeviceFileCreate
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-file-create.md">EvtDeviceFileCreate</a> callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtFileClose</b>
+### -field EvtFileClose
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-file-close.md">EvtFileClose</a> callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtFileCleanup</b>
+### -field EvtFileCleanup
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-file-cleanup.md">EvtFileCleanup</a> callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>AutoForwardCleanupClose</b>
+### -field AutoForwardCleanupClose
 
 <dd>
 <p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed value. For more information about this member, see the following Comments section.</p>
 </dd>
 
-### -field <b>FileObjectClass</b>
+### -field FileObjectClass
 
 <dd>
 <p>A <a href="..\wdfdevice\ne-wdfdevice--wdf-fileobject-class.md">WDF_FILEOBJECT_CLASS</a>-typed value that identifies whether the driver requires a framework file object to represent each file that an application or another driver creates or opens. Additionally, this value specifies where the framework can store the object's handle. </p>

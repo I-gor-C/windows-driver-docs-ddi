@@ -55,13 +55,13 @@ typedef struct _D3DKMT_DESTROYDCFROMMEMORY {
 ## -struct-fields
 <dl>
 
-### -field <b>hDc</b>
+### -field hDc
 
 <dd>
 <p>[in] A handle to the display context. </p>
 </dd>
 
-### -field <b>hBitmap</b>
+### -field hBitmap
 
 <dd>
 <p>[in] A handle to a bitmap that is related to the display context. </p>

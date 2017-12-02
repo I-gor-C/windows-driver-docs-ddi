@@ -54,7 +54,7 @@ IMemAllocator* KsPeekAllocator(
 ## -parameters
 <dl>
 
-### -param <i>Operation</i> [in]
+### -param Operation [in]
 
 <dd>
 <p>A value that specifies the type of operation. This value can be one of the following values from the KSPEEKOPERATION enumerated type.</p>

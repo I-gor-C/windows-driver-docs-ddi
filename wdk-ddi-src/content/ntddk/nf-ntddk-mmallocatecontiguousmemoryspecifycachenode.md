@@ -59,37 +59,37 @@ PVOID MmAllocateContiguousMemorySpecifyCacheNode(
 ## -parameters
 <dl>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>The size, in bytes, of the block of contiguous memory to allocate. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>LowestAcceptableAddress</i> [in]
+### -param LowestAcceptableAddress [in]
 
 <dd>
 <p>The lowest valid physical address the caller can use. For example, if a device can address only locations above the first 8 megabytes of the processor's physical memory address range, the driver for this device  should set <i>LowestAcceptableAddress</i> to 0x0000000000800000.</p>
 </dd>
 
-### -param <i>HighestAcceptableAddress</i> [in]
+### -param HighestAcceptableAddress [in]
 
 <dd>
 <p>The highest valid physical address the caller can use. For example, if a device can address only locations in the first 16 megabytes of the processor's physical memory address range, the driver for this device should set <i>HighestAcceptableAddress</i> to 0x0000000000FFFFFF.</p>
 </dd>
 
-### -param <i>BoundaryAddressMultiple</i> [in, optional]
+### -param BoundaryAddressMultiple [in, optional]
 
 <dd>
 <p>The physical address multiple that the allocated buffer must not cross. A physical address multiple must always be a power of two. This parameter is optional and can be specified as zero to indicate that the device has no special memory boundary restrictions. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>CacheType</i> [in]
+### -param CacheType [in]
 
 <dd>
 <p>Specifies a <a href="..\wdm\ne-wdm--memory-caching-type.md">MEMORY_CACHING_TYPE</a> value, which indicates the type of caching requested for the contiguous physical memory.</p>
 </dd>
 
-### -param <i>PreferredNode</i> [in]
+### -param PreferredNode [in]
 
 <dd>
 <p>The preferred node number. If a multiprocessor system contains N nodes, the nodes are numbered 0 to N-1. If MM_ANY_NODE_OK is specified or the machine only has one node, then the allocation is satisfied from any node. Otherwise, the allocation is made from the preferred node or if a satisfactory range cannot be found from the preferred node, then <b>NULL</b> is returned.</p>

@@ -55,13 +55,13 @@ NTSTATUS NfcCxSetRfDiscoveryConfig(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> 
+### -param Device 
 
 <dd>
 <p>A handle to a framework device object.</p>
 </dd>
 
-### -param <i>Config</i> 
+### -param Config 
 
 <dd>
 <p>A pointer to an <a href="..\nfccx\ns-nfccx--nfc-cx-rf-discovery-config.md">NFC_CX_RF_DISCOVERY_CONFIG</a> structure.</p>

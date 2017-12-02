@@ -57,19 +57,19 @@ VOID WRITE_PORT_BUFFER_UCHAR(
 ## -parameters
 <dl>
 
-### -param <i>Port</i> [in]
+### -param Port [in]
 
 <dd>
 <p>Pointer to the port, which must be a mapped memory range in I/O space.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to a buffer from which an array of UCHAR values is to be written.</p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>Specifies the number of bytes to be written to the port. </p>

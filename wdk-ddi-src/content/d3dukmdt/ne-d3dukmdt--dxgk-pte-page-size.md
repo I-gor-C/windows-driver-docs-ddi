@@ -55,13 +55,13 @@ typedef enum _DXGK_PTE_PAGE_SIZE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_PTE_PAGE_TABLE_PAGE_4KB"></a><a id="dxgk_pte_page_table_page_4kb"></a><b>DXGK_PTE_PAGE_TABLE_PAGE_4KB</b>
+### -field DXGK_PTE_PAGE_TABLE_PAGE_4KB
 
 <dd>
 <p>Indicates the lower page table level uses 4 KB pages. </p>
 </dd>
 
-### -field <a id="DXGK_PTE_PAGE_TABLE_PAGE_64KB"></a><a id="dxgk_pte_page_table_page_64kb"></a><b>DXGK_PTE_PAGE_TABLE_PAGE_64KB</b>
+### -field DXGK_PTE_PAGE_TABLE_PAGE_64KB
 
 <dd>
 <p>Indicates the lower page table level uses 64 KB pages. </p>

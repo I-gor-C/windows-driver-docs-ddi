@@ -54,7 +54,7 @@ typedef struct _DXGKMDT_OPM_HDCP_KEY_SELECTION_VECTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>abKeySelectionVector</b>
+### -field abKeySelectionVector
 
 <dd>
 <p>A 5-byte array that comprises the HDCP KSV. Byte 0 is the least significant byte and byte 4 is the most significant byte. </p>

@@ -56,19 +56,19 @@ NTSTATUS RtlUnicodeStringCbCopyStringN(
 ## -parameters
 <dl>
 
-### -param <i>DestinationString</i> [out]
+### -param DestinationString [out]
 
 <dd>
 <p>A pointer to a <b>UNICODE_STRING</b> structure that receives the copied string. The string that the <i>pszSrc</i> parameter points to (excluding the terminating null) is copied into the buffer that the <i>DestinationString</i> parameter's <b>UNICODE_STRING</b> structure points to. The maximum number of bytes in the string is NTSTRSAFE_UNICODE_STRING_MAX_CCH * sizeof(WCHAR).</p>
 </dd>
 
-### -param <i>pszSrc</i> [in]
+### -param pszSrc [in]
 
 <dd>
 <p>A pointer to the string to be copied.</p>
 </dd>
 
-### -param <i>cbToCopy</i> [in]
+### -param cbToCopy [in]
 
 <dd>
 <p>The number of bytes to be copied from the source to the destination.</p>

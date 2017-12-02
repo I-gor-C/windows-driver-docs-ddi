@@ -58,13 +58,13 @@ BOOLEAN IdeHwStartIo(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the miniport driver per channel device extension.</p>
 </dd>
 
-### -param <i>Irb</i> [in]
+### -param Irb [in]
 
 <dd>
 <p>A pointer to a structure of type <a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) to process.</p>

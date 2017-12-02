@@ -7,7 +7,7 @@ old-location: image\iwiatransfercallback_transfercallback.htm
 old-project: image
 ms.assetid: dc6c2057-9617-4c69-ac79-2a8f910a1ee2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IWiaTransferCallback, TransferCallback, IWiaTransferCallback::TransferCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ HRESULT TransferCallback(
 ## -parameters
 <dl>
 
-### -param <i>lFlags</i> [in]
+### -param lFlags [in]
 
 <dd>
 <p>Currently unused. Should be set to zero.</p>
 </dd>
 
-### -param <i>WiaTransferParams</i> [in]
+### -param WiaTransferParams [in]
 
 <dd>
 <p>Specifies a pointer to a WiaTransferParams structure. This structure is defined in the Microsoft Windows SDK documentation.</p>

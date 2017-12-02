@@ -58,31 +58,31 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_ROTATION"></a><a id="dxgi_ddi_multiplane_overlay_feature_caps_rotation"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_ROTATION</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_ROTATION
 
 <dd>
 <p>The overlay plane can rotate the data 90, 180, and 270 degrees.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_VERTICAL_FLIP"></a><a id="dxgi_ddi_multiplane_overlay_feature_caps_vertical_flip"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_VERTICAL_FLIP</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_VERTICAL_FLIP
 
 <dd>
 <p>The overlay plane can flip the data vertically, making it appear upside-down.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HORIZONTAL_FLIP"></a><a id="dxgi_ddi_multiplane_overlay_feature_caps_horizontal_flip"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HORIZONTAL_FLIP</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HORIZONTAL_FLIP
 
 <dd>
 <p>The overlay plane can flip the data horizontally, making it appear as a right-to-left mirror image.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_DEINTERLACE"></a><a id="dxgi_ddi_multiplane_overlay_feature_caps_deinterlace"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_DEINTERLACE</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_DEINTERLACE
 
 <dd>
 <p>Reserved for system use. The user-mode display driver should not use this value.</p>
 </dd>
 
-### -field <a id="DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_STEREO"></a><a id="dxgi_ddi_multiplane_overlay_feature_caps_stereo"></a><b>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_STEREO</b>
+### -field DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_STEREO
 
 <dd>
 <p>Reserved for system use. The user-mode display driver should not use this value.</p>

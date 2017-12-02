@@ -65,21 +65,21 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>ePropertyType</b>
+### -field ePropertyType
 
 <dd></dd>
 
-### -field <b>value</b>
+### -field value
 
 <dd>
 <dl>
 
-### -field <b>propertyBlob</b>
+### -field propertyBlob
 
 <dd>
 <dl>
 
-### -field <b>pBuf</b>
+### -field pBuf
 
 <dd>
 <p>TD</p>

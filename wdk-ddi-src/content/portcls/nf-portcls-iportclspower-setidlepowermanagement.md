@@ -55,13 +55,13 @@ NTSTATUS SetIdlePowerManagement(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Specifies a pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.</p>
 </dd>
 
-### -param <i>bEnabled</i> [in]
+### -param bEnabled [in]
 
 <dd>
 <p>Specifies a Boolean variable that indicates whether idle state detection is enabled or disabled.</p>

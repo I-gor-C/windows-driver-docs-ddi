@@ -57,13 +57,13 @@ PVOID MmMapLockedPages(
 ## -parameters
 <dl>
 
-### -param <i>MemoryDescriptorList</i> [in]
+### -param MemoryDescriptorList [in]
 
 <dd>
 <p>Pointer to an MDL that was updated by <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>.</p>
 </dd>
 
-### -param <i>AccessMode</i> [in]
+### -param AccessMode [in]
 
 <dd>
 <p>Specifies the access mode in which to map the MDL, either <b>KernelMode</b> or <b>UserMode</b>. Almost all drivers should use <b>KernelMode</b>.</p>

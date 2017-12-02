@@ -63,68 +63,68 @@ typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION {
 ## -struct-fields
 <dl>
 
-### -field <b>ValidBits</b>
+### -field ValidBits
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-pciexpress-error-section-validbits.md">WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.</p>
 </dd>
 
-### -field <b>PortType</b>
+### -field PortType
 
 <dd>
 <p>The device type or port type of the PCIe component where the error occurred. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="WheaPciExpressEndpoint"></a><a id="wheapciexpressendpoint"></a><a id="WHEAPCIEXPRESSENDPOINT"></a><b>WheaPciExpressEndpoint</b>
+### -field WheaPciExpressEndpoint
 
 <dd>
 <p>A PCIe endpoint device.</p>
 </dd>
 
-### -field <a id="WheaPciExpressLegacyEndpoint"></a><a id="wheapciexpresslegacyendpoint"></a><a id="WHEAPCIEXPRESSLEGACYENDPOINT"></a><b>WheaPciExpressLegacyEndpoint</b>
+### -field WheaPciExpressLegacyEndpoint
 
 <dd>
 <p>A legacy PCIe endpoint device.</p>
 </dd>
 
-### -field <a id="WheaPciExpressRootPort"></a><a id="wheapciexpressrootport"></a><a id="WHEAPCIEXPRESSROOTPORT"></a><b>WheaPciExpressRootPort</b>
+### -field WheaPciExpressRootPort
 
 <dd>
 <p>A root port of a PCIe root complex.</p>
 </dd>
 
-### -field <a id="WheaPciExpressUpstreamSwitchPort"></a><a id="wheapciexpressupstreamswitchport"></a><a id="WHEAPCIEXPRESSUPSTREAMSWITCHPORT"></a><b>WheaPciExpressUpstreamSwitchPort</b>
+### -field WheaPciExpressUpstreamSwitchPort
 
 <dd>
 <p>An upstream port of a PCIe switch.</p>
 </dd>
 
-### -field <a id="WheaPciExpressDownstreamSwitchPort"></a><a id="wheapciexpressdownstreamswitchport"></a><a id="WHEAPCIEXPRESSDOWNSTREAMSWITCHPORT"></a><b>WheaPciExpressDownstreamSwitchPort</b>
+### -field WheaPciExpressDownstreamSwitchPort
 
 <dd>
 <p>A downstream port of a PCIe switch.</p>
 </dd>
 
-### -field <a id="WheaPciExpressToPciXBridge"></a><a id="wheapciexpresstopcixbridge"></a><a id="WHEAPCIEXPRESSTOPCIXBRIDGE"></a><b>WheaPciExpressToPciXBridge</b>
+### -field WheaPciExpressToPciXBridge
 
 <dd>
 <p>A PCIe-to-PCI or PCI-X bridge.</p>
 </dd>
 
-### -field <a id="WheaPciXToExpressBridge"></a><a id="wheapcixtoexpressbridge"></a><a id="WHEAPCIXTOEXPRESSBRIDGE"></a><b>WheaPciXToExpressBridge</b>
+### -field WheaPciXToExpressBridge
 
 <dd>
 <p>A PCI or PCI-X-to-PCIe bridge.</p>
 </dd>
 
-### -field <a id="WheaPciExpressRootComplexIntegratedEndpoint"></a><a id="wheapciexpressrootcomplexintegratedendpoint"></a><a id="WHEAPCIEXPRESSROOTCOMPLEXINTEGRATEDENDPOINT"></a><b>WheaPciExpressRootComplexIntegratedEndpoint</b>
+### -field WheaPciExpressRootComplexIntegratedEndpoint
 
 <dd>
 <p>A PCIe endpoint device that is integrated into the root complex.</p>
 </dd>
 
-### -field <a id="WheaPciExpressRootComplexEventCollector"></a><a id="wheapciexpressrootcomplexeventcollector"></a><a id="WHEAPCIEXPRESSROOTCOMPLEXEVENTCOLLECTOR"></a><b>WheaPciExpressRootComplexEventCollector</b>
+### -field WheaPciExpressRootComplexEventCollector
 
 <dd>
 <p>A PCIe root complex event collector.</p>
@@ -133,7 +133,7 @@ typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION {
 <p>This member contains valid data only if the <b>ValidBits.PortType</b> bit is set.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>A WHEA_PCIEXPRESS_VERSION union that contains the version of the PCIe specification that is supported by the hardware platform. The WHEA_PCIEXPRESS_VERSION union is defined as follows:</p>
@@ -157,25 +157,25 @@ typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION {
 <p></p>
 <dl>
 
-### -field <a id="MinorVersion"></a><a id="minorversion"></a><a id="MINORVERSION"></a><b>MinorVersion</b>
+### -field MinorVersion
 
 <dd>
 <p>The minor version number.</p>
 </dd>
 
-### -field <a id="MajorVersion"></a><a id="majorversion"></a><a id="MAJORVERSION"></a><b>MajorVersion</b>
+### -field MajorVersion
 
 <dd>
 <p>The major version number.</p>
 </dd>
 
-### -field <a id="Reserved"></a><a id="reserved"></a><a id="RESERVED"></a><b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="AsULONG"></a><a id="asulong"></a><a id="ASULONG"></a><b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the WHEA_PCIEXPRESS_VERSION union.</p>
@@ -184,7 +184,7 @@ typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION {
 <p>This member contains valid data only if the <b>ValidBits.Version</b> bit is set.</p>
 </dd>
 
-### -field <b>CommandStatus</b>
+### -field CommandStatus
 
 <dd>
 <p>A WHEA_PCIEXPRESS_COMMAND_STATUS union that contains the contents of the PCI command and status registers of the PCIe device where the error occurred. The WHEA_PCIEXPRESS_COMMAND_STATUS union is defined as follows:</p>
@@ -207,19 +207,19 @@ typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION {
 <p></p>
 <dl>
 
-### -field <a id="Command"></a><a id="command"></a><a id="COMMAND"></a><b>Command</b>
+### -field Command
 
 <dd>
 <p>The contents of the PCI command register.</p>
 </dd>
 
-### -field <a id="Status"></a><a id="status"></a><a id="STATUS"></a><b>Status</b>
+### -field Status
 
 <dd>
 <p>The contents of the PCI status register.</p>
 </dd>
 
-### -field <a id="AsULONG"></a><a id="asulong"></a><a id="ASULONG"></a><b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the WHEA_PCIEXPRESS_COMMAND_STATUS union.</p>
@@ -228,13 +228,13 @@ typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION {
 <p>This member contains valid data only if the <b>ValidBits.CommandStatus</b> bit is set.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>DeviceId</b>
+### -field DeviceId
 
 <dd>
 <p>A WHEA_PCIEXPRESS_DEVICE_ID structure that contains data that identifies the PCIe device where the error occurred. The WHEA_PCIEXPRESS_DEVICE_ID structure is defined as follows:</p>
@@ -262,67 +262,67 @@ typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION {
 <p></p>
 <dl>
 
-### -field <a id="VendorID"></a><a id="vendorid"></a><a id="VENDORID"></a><b>VendorID</b>
+### -field VendorID
 
 <dd>
 <p>The vendor ID of the device.</p>
 </dd>
 
-### -field <a id="DeviceId"></a><a id="deviceid"></a><a id="DEVICEID"></a><b>DeviceId</b>
+### -field DeviceId
 
 <dd>
 <p>The device ID of the device.</p>
 </dd>
 
-### -field <a id="ClassCode"></a><a id="classcode"></a><a id="CLASSCODE"></a><b>ClassCode</b>
+### -field ClassCode
 
 <dd>
 <p>The class code of the device.</p>
 </dd>
 
-### -field <a id="FunctionNumber"></a><a id="functionnumber"></a><a id="FUNCTIONNUMBER"></a><b>FunctionNumber</b>
+### -field FunctionNumber
 
 <dd>
 <p>The function number of the device on the bus.</p>
 </dd>
 
-### -field <a id="DeviceNumber"></a><a id="devicenumber"></a><a id="DEVICENUMBER"></a><b>DeviceNumber</b>
+### -field DeviceNumber
 
 <dd>
 <p>The device number of the device on the bus.</p>
 </dd>
 
-### -field <a id="Segment"></a><a id="segment"></a><a id="SEGMENT"></a><b>Segment</b>
+### -field Segment
 
 <dd>
 <p>The number of the bus segment that contains the device.</p>
 </dd>
 
-### -field <a id="PrimaryBusNumber"></a><a id="primarybusnumber"></a><a id="PRIMARYBUSNUMBER"></a><b>PrimaryBusNumber</b>
+### -field PrimaryBusNumber
 
 <dd>
 <p>The root port/bridge primary bus number or the device bus number.</p>
 </dd>
 
-### -field <a id="SecondaryBusNumber"></a><a id="secondarybusnumber"></a><a id="SECONDARYBUSNUMBER"></a><b>SecondaryBusNumber</b>
+### -field SecondaryBusNumber
 
 <dd>
 <p>The root port/bridge secondary bus number.</p>
 </dd>
 
-### -field <a id="Reserved1"></a><a id="reserved1"></a><a id="RESERVED1"></a><b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="SlotNumber"></a><a id="slotnumber"></a><a id="SLOTNUMBER"></a><b>SlotNumber</b>
+### -field SlotNumber
 
 <dd>
 <p>The slot number where the device is located in the system.</p>
 </dd>
 
-### -field <a id="Reserved2"></a><a id="reserved2"></a><a id="RESERVED2"></a><b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for system use.</p>
@@ -331,14 +331,14 @@ typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION {
 <p>This member contains valid data only if the <b>ValidBits.DeviceId</b> bit is set.</p>
 </dd>
 
-### -field <b>DeviceSerialNumber</b>
+### -field DeviceSerialNumber
 
 <dd>
 <p>The serial number of the PCIe device where the error occurred.</p>
 <p>This member contains valid data only if the <b>ValidBits.DeviceSerialNumber</b> bit is set.</p>
 </dd>
 
-### -field <b>BridgeControlStatus</b>
+### -field BridgeControlStatus
 
 <dd>
 <p>A WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS union that contains the contents of the PCI control and secondary status registers of the bridge device where the error occurred. The WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS union is defined as follows:</p>
@@ -361,19 +361,19 @@ typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION {
 <p></p>
 <dl>
 
-### -field <a id="BridgeSecondaryStatus"></a><a id="bridgesecondarystatus"></a><a id="BRIDGESECONDARYSTATUS"></a><b>BridgeSecondaryStatus</b>
+### -field BridgeSecondaryStatus
 
 <dd>
 <p>The contents of the secondary status register of the bridge device.</p>
 </dd>
 
-### -field <a id="BridgeControl"></a><a id="bridgecontrol"></a><a id="BRIDGECONTROL"></a><b>BridgeControl</b>
+### -field BridgeControl
 
 <dd>
 <p>The contents of the control register of the bridge device.</p>
 </dd>
 
-### -field <a id="AsULONG"></a><a id="asulong"></a><a id="ASULONG"></a><b>AsULONG</b>
+### -field AsULONG
 
 <dd>
 <p>A ULONG representation of the contents of the WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS union.</p>
@@ -382,14 +382,14 @@ typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION {
 <p>This member contains valid data only if the <b>ValidBits.BridgeControlStatus</b> bit is set.</p>
 </dd>
 
-### -field <b>ExpressCapability</b>
+### -field ExpressCapability
 
 <dd>
 <p>A buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537460">PCI_EXPRESS_CAPABILITY</a> structure that describes the PCIe capability structure for the device where the error occurred.</p>
 <p>This member contains valid data only if the <b>ValidBits.ExpressCapability</b> bit is set.</p>
 </dd>
 
-### -field <b>AerInfo</b>
+### -field AerInfo
 
 <dd>
 <p>A buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a> structure that describes the PCIe advanced error reporting (AER) extended capability structure for the device where the error occurred.</p>

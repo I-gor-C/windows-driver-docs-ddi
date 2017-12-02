@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelpacketgetexternaldata.htm
 old-project: netvista
 ms.assetid: 844AB898-E6F0-4C75-9364-1BE31AAB88E7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbChannelPacketGetExternalData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,14 +59,14 @@ NTSTATUS VmbChannelPacketGetExternalData(
 ## -parameters
 <dl>
 
-### -param <i>PacketCompletionContext</i> [in]
+### -param PacketCompletionContext [in]
 
 <dd>
 <p>A  handle that identifies the incoming packet and is used to refer to the packet
 once processing is finished.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p> Flags that control how the MDL is mapped. The possible flag values are: </p>
@@ -78,7 +78,7 @@ once processing is finished.</p>
 <tr>
 <td width="40%"><a id="VMBUS_CHANNEL_PACKET_EXTERNAL_DATA_FLAG_READ_ONLY"></a><a id="vmbus_channel_packet_external_data_flag_read_only"></a><dl>
 
-### -param <b>VMBUS_CHANNEL_PACKET_EXTERNAL_DATA_FLAG_READ_ONLY</b>
+### -param VMBUS_CHANNEL_PACKET_EXTERNAL_DATA_FLAG_READ_ONLY
 
 </dl>
 </td>
@@ -90,7 +90,7 @@ once processing is finished.</p>
 <p> </p>
 </dd>
 
-### -param <i>Mdl</i> [out]
+### -param Mdl [out]
 
 <dd>
 <p> A pointer to the mapped MDL.</p>
@@ -195,4 +195,4 @@ An alternative to using a virtual address would be to just pass the MDL on down 
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20VmbChannelPacketGetExternalData function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20VmbChannelPacketGetExternalData function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

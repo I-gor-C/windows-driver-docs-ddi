@@ -60,25 +60,25 @@ __checkReturn HRESULT APIENTRY Clear(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-clear.md">D3DDDIARG_CLEAR</a> structure that describes the parameters of the hardware-assisted clearing operation.</p>
 </dd>
 
-### -param <i>NumRect</i> [in]
+### -param NumRect [in]
 
 <dd>
 <p> The number of rectangles in the array at <b>pRect</b> to be cleared. If the number of rectangles is set to zero, <b>Clear</b> should clear the entire render target, depth buffer, and stencil buffer. In this situation, the contents of the array at <b>pRect</b> are undefined and the driver should not attempt to read them.</p>
 </dd>
 
-### -param <i>pRect</i> [in]
+### -param pRect [in]
 
 <dd>
 <p> An array of <a href="display.rect">RECT</a> structures that indicate the rectangular areas of the buffer that the driver should clear.</p>

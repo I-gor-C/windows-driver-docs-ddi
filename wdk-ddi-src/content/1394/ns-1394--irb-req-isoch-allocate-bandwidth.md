@@ -7,7 +7,7 @@ old-location: ieee\irb_req_isoch_allocate_bandwidth.htm
 old-project: IEEE
 ms.assetid: 68118E69-5644-4FE4-A75B-CE0FC427BA06
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH, IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ typedef struct _IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH {
 ## -struct-fields
 <dl>
 
-### -field <b>nMaxBytesPerFrameRequested</b>
+### -field nMaxBytesPerFrameRequested
 
 <dd>
 <p>Specifies the bandwidth requested, in bytes per isochronous frame. If the host controller is configured to strip away the packet headers, the device driver does not need to include the packet header size in the number of bytes requested. The driver also does not need to round the value up to the nearest quadlet.</p>
 </dd>
 
-### -field <b>fulSpeed</b>
+### -field fulSpeed
 
 <dd>
 <p>Specifies the connection speed to use in allocating bandwidth. The possible speed values are SPEED_FLAGS_xxx, where xxx is the (approximate) transfer rate in megabits per second. Existing hardware supports transfer rates of 100, 200, and 400 Mb/sec.</p>
@@ -103,19 +103,19 @@ typedef struct _IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH {
 <div> </div>
 </dd>
 
-### -field <b>hBandwidth</b>
+### -field hBandwidth
 
 <dd>
 <p>Specifies the handle to use to refer to the bandwidth resource. The caller can set the IRB_FLAG_ALLOW_REMOTE_FREE flag in <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537350">IRB</a> structure to indicate that the system should free the memory allocated for this handle. If caller does not set this flag, then caller will have to free the bandwidth handle. </p>
 </dd>
 
-### -field <b>BytesPerFrameAvailable</b>
+### -field BytesPerFrameAvailable
 
 <dd>
 <p>Specifies the bytes per frame that are available after the allocation attempt. Drivers should not rely on this bandwidth being available, since another device may allocate or deallocate bandwidth at any time. The bus driver fills in this member, even if the request fails.</p>
 </dd>
 
-### -field <b>SpeedSelected</b>
+### -field SpeedSelected
 
 <dd>
 <p>Specifies the actual speed selected in allocating bandwidth. The value is one of SPEED_FLAGS_xxx (see the <b>fulSpeed</b> member description above).</p>
@@ -123,7 +123,7 @@ typedef struct _IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH {
 <div> </div>
 </dd>
 
-### -field <b>nBandwidthUnitsRequired</b>
+### -field nBandwidthUnitsRequired
 
 <dd>
 <p>This is a pre-calculated value.</p>

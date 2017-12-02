@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_QUERYRESOURCERESIDENCY {
 ## -struct-fields
 <dl>
 
-### -field <b>pHandleList</b>
+### -field pHandleList
 
 <dd>
 <p>[in] An array of handles to resources whose residency is queried. <b>pHandleList</b> cannot be <b>NULL</b>. A resource can be an object, which is derived from the <b>IDirect3DResource9</b> interface for a texture, volume texture, cube texture, vertex buffer, index buffer, or surface. For more information about <b>IDirect3DResource9</b>, see the DirectX SDK documentation.</p>
 </dd>
 
-### -field <b>NumResources</b>
+### -field NumResources
 
 <dd>
 <p>[in] The number of resources in the array in the <b>pHandleList</b> member. The range is from 1 through 0xFFFFF.</p>

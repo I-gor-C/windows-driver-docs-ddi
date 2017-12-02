@@ -7,7 +7,7 @@ old-location: wdf\wdfpdoinitassigninstanceid.htm
 old-project: wdf
 ms.assetid: f843f8ce-81ee-4b8b-8583-dde3becb5460
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfPdoInitAssignInstanceID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]</p>
-<p>The <b>WdfPdoInitAssignInstanceID</b> method updates the <a href="NULL">instance ID</a> for a child device.</p>
+<p>The <b>WdfPdoInitAssignInstanceID</b> method updates the <a href="devinst.instance_ids">instance ID</a> for a child device.</p>
 
 
 ## -syntax
@@ -57,16 +57,16 @@ NTSTATUS WdfPdoInitAssignInstanceID(
 ## -parameters
 <dl>
 
-### -param <i>DeviceInit</i> [in]
+### -param DeviceInit [in]
 
 <dd>
 <p>A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure.</p>
 </dd>
 
-### -param <i>InstanceID</i> [in]
+### -param InstanceID [in]
 
 <dd>
-<p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains an <a href="NULL">instance ID</a> string. The driver can allocate the string's buffer from paged pool. </p>
+<p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains an <a href="devinst.instance_ids">instance ID</a> string. The driver can allocate the string's buffer from paged pool. </p>
 </dd>
 </dl>
 
@@ -82,7 +82,7 @@ NTSTATUS WdfPdoInitAssignInstanceID(
 <p>The method might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.</p>
 
 ## -remarks
-<p>For more information about instance IDs, see <a href="NULL">Device Identification Strings</a>.</p>
+<p>For more information about instance IDs, see <a href="devinst.device_identification_strings">Device Identification Strings</a>.</p>
 
 <p>The driver must call <b>WdfPdoInitAssignInstanceID</b> before calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. For more information about calling <b>WdfDeviceCreate</b>, see <a href="wdf.creating_a_framework_device_object">Creating a Framework Device Object</a>.</p>
 
@@ -163,4 +163,4 @@ NTSTATUS WdfPdoInitAssignInstanceID(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfPdoInitAssignInstanceID method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfPdoInitAssignInstanceID method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

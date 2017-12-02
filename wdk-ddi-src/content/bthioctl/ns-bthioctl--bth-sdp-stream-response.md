@@ -56,20 +56,20 @@ typedef struct _BTH_SDP_STREAM_RESPONSE {
 ## -struct-fields
 <dl>
 
-### -field <b>requiredSize</b>
+### -field requiredSize
 
 <dd>
 <p>The size, in bytes, of the entire SDP record. This value can be useful if the output buffer is too
      small to hold the entire record.</p>
 </dd>
 
-### -field <b>responseSize</b>
+### -field responseSize
 
 <dd>
 <p>The size, in bytes, of the raw SDP record stream that follows this structure.</p>
 </dd>
 
-### -field <b>response</b>
+### -field response
 
 <dd>
 <p>The first byte of the SDP record stream.</p>

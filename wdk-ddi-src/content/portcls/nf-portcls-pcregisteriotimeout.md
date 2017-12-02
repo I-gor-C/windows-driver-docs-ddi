@@ -57,19 +57,19 @@ NTSTATUS PcRegisterIoTimeout(
 ## -parameters
 <dl>
 
-### -param <i>pDeviceObject</i> [in]
+### -param pDeviceObject [in]
 
 <dd>
 <p>Pointer to a device object representing a device on which I/O operations can time out. This parameter must point to a system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>. When calling the I/O-timer callback routine, the port class driver passes this pointer as the first of two call parameters. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>pTimerRoutine</i> [in]
+### -param pTimerRoutine [in]
 
 <dd>
 <p>Pointer to the driver-supplied I/O-timer callback routine. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>pContext</i> [in]
+### -param pContext [in]
 
 <dd>
 <p>Pointer to the driver-specific context. When calling the I/O-timer callback routine, the port class driver passes this pointer as the second of two call parameters. For more information, see the following Remarks section.</p>

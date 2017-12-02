@@ -62,19 +62,19 @@ typedef EVT_UCX_ENDPOINT_RESET PEVT_UCX_ENDPOINT_RESET;
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>Endpoint</i> [in]
+### -param Endpoint [in]
 
 <dd>
 <p>A handle to a UCXENDPOINT object that represents the endpoint.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object that the client driver completes when the reset operation is finished.</p>
@@ -85,7 +85,7 @@ typedef EVT_UCX_ENDPOINT_RESET PEVT_UCX_ENDPOINT_RESET;
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
+<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
  method.</p>
 
 <p>The client driver returns completion status in the WDFREQUEST, which it might complete

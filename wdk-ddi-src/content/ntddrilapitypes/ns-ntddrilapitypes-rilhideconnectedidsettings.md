@@ -7,7 +7,7 @@ old-location: netvista\rilhideconnectedidsettings.htm
 old-project: netvista
 ms.assetid: a0445969-b4b5-43f3-a8dc-a8d61bf44d94
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILHIDECONNECTEDIDSETTINGS, RILHIDECONNECTEDIDSETTINGS, *LPRILHIDECONNECTEDIDSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef struct _RILHIDECONNECTEDIDSETTINGS {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwStatus</b>
+### -field dwStatus
 
 <dd></dd>
 
-### -field <b>dwProvisioning</b>
+### -field dwProvisioning
 
 <dd></dd>
 </dl>

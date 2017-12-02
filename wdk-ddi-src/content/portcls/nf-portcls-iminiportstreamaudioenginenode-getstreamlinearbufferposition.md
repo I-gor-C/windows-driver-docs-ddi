@@ -54,7 +54,7 @@ NTSTATUS GetStreamLinearBufferPosition(
 ## -parameters
 <dl>
 
-### -param <i>pullLinearBufferPosition</i> [out]
+### -param pullLinearBufferPosition [out]
 
 <dd>
 <p>The number of bytes that the DMA has fetched.</p>

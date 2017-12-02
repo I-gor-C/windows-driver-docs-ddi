@@ -57,19 +57,19 @@ FORCEINLINE NTSTATUS UdecxUsbEndpointCreate(
 ## -parameters
 <dl>
 
-### -param <i>Init</i> [in, out]
+### -param Init [in, out]
 
 <dd>
-<p>A pointer to an <b>UDECXUSBENDPOINT_INIT</b> structure that the client driver retrieved in the previous call to <a href="buses.udecxusbsimpleendpointinitallocate">UdecxUsbSimpleEndpointInitAllocate</a>.</p>
+<p>A pointer to an <b>UDECXUSBENDPOINT_INIT</b> structure that the client driver retrieved in the previous call to <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbsimpleendpointinitallocate.md">UdecxUsbSimpleEndpointInitAllocate</a>.</p>
 </dd>
 
-### -param <i>Attributes</i> [in, optional]
+### -param Attributes [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the USB device object. </p>
 </dd>
 
-### -param <i>UdecxUsbEndpoint</i> [out]
+### -param UdecxUsbEndpoint [out]
 
 <dd>
 <p>A pointer to a variable that receives a handle to the new UDE endpoint object that represents the simple endpoint on the  USB device.</p>
@@ -141,7 +141,7 @@ FORCEINLINE NTSTATUS UdecxUsbEndpointCreate(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbsimpleendpointinitallocate">UdecxUsbSimpleEndpointInitAllocate</a>
+<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbsimpleendpointinitallocate.md">UdecxUsbSimpleEndpointInitAllocate</a>
 </dt>
 <dt>
 <a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>

@@ -55,7 +55,7 @@ VOID IoDeleteDevice(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object to be deleted. </p>

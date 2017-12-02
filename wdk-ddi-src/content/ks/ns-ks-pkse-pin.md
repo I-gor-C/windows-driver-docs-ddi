@@ -56,15 +56,15 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Event</b>
+### -field Event
 
 <dd></dd>
 
-### -field <b>PinId</b>
+### -field PinId
 
 <dd></dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd></dd>
 </dl>

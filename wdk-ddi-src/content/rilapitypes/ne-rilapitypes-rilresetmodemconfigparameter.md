@@ -7,7 +7,7 @@ old-location: netvista\rilresetmodemconfigparameter_2.htm
 old-project: netvista
 ms.assetid: 6467bd24-bc2f-4d41-ba8a-a6b46fcc9853
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef enum _RILRESETMODEMCONFIGPARAMETER {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_RESETMODEMCONFIGPARAMETER_MAX"></a><a id="ril_resetmodemconfigparameter_max"></a><b>RIL_RESETMODEMCONFIGPARAMETER_MAX</b>
+### -field RIL_RESETMODEMCONFIGPARAMETER_MAX
 
 <dd></dd>
 </dl>

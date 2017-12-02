@@ -205,913 +205,913 @@ typedef struct D3DWDDM2_0DDI_DEVICEFUNCS {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnDefaultConstantBufferUpdateSubresourceUP</b>
+### -field pfnDefaultConstantBufferUpdateSubresourceUP
 
 <dd>
 <p>A pointer to the <a href="display.DefaultConstantBufferUpdateSubresourceUP">DefaultConstantBufferUpdateSubresourceUP</a> function.</p>
 </dd>
 
-### -field <b>pfnVsSetConstantBuffers</b>
+### -field pfnVsSetConstantBuffers
 
 <dd>
 <p>A pointer to the <a href="display.VsSetConstantBuffers">VsSetConstantBuffers</a> function.</p>
 </dd>
 
-### -field <b>pfnPsSetShaderResources</b>
+### -field pfnPsSetShaderResources
 
 <dd>
 <p>A pointer to the <a href="display.PsSetShaderResources">PsSetShaderResources</a> function.</p>
 </dd>
 
-### -field <b>pfnPsSetShader</b>
+### -field pfnPsSetShader
 
 <dd>
 <p>A pointer to the <a href="display.PsSetShader">PsSetShader</a> function.</p>
 </dd>
 
-### -field <b>pfnPsSetSamplers</b>
+### -field pfnPsSetSamplers
 
 <dd>
 <p>A pointer to the <a href="display.PsSetSamplers">PsSetSamplers</a> function.</p>
 </dd>
 
-### -field <b>pfnVsSetShader</b>
+### -field pfnVsSetShader
 
 <dd>
 <p>A pointer to the <a href="display.VsSetShader">VsSetShader</a> function.</p>
 </dd>
 
-### -field <b>pfnDrawIndexed</b>
+### -field pfnDrawIndexed
 
 <dd>
 <p>A pointer to the <a href="display.DrawIndexed">DrawIndexed</a> function.</p>
 </dd>
 
-### -field <b>pfnDraw</b>
+### -field pfnDraw
 
 <dd>
 <p>A pointer to the <a href="display.Draw">Draw</a> function.</p>
 </dd>
 
-### -field <b>pfnPsSetConstantBuffers</b>
+### -field pfnPsSetConstantBuffers
 
 <dd>
 <p>A pointer to the <a href="display.PsSetConstantBuffers">PsSetConstantBuffers</a> function.</p>
 </dd>
 
-### -field <b>pfnIaSetInputLayout</b>
+### -field pfnIaSetInputLayout
 
 <dd>
 <p>A pointer to the <a href="display.IaSetInputLayout">IaSetInputLayout</a> function.</p>
 </dd>
 
-### -field <b>pfnIaSetVertexBuffers</b>
+### -field pfnIaSetVertexBuffers
 
 <dd>
 <p>A pointer to the <a href="display.IaSetVertexBuffers">IaSetVertexBuffers</a> function.</p>
 </dd>
 
-### -field <b>pfnIaSetIndexBuffer</b>
+### -field pfnIaSetIndexBuffer
 
 <dd>
 <p>A pointer to the <a href="display.IaSetIndexBuffer">IaSetIndexBuffer</a> function.</p>
 </dd>
 
-### -field <b>pfnDrawIndexedInstanced</b>
+### -field pfnDrawIndexedInstanced
 
 <dd>
 <p>A pointer to the <a href="display.DrawIndexedInstanced">DrawIndexedInstanced</a> function.</p>
 </dd>
 
-### -field <b>pfnDrawInstanced</b>
+### -field pfnDrawInstanced
 
 <dd>
 <p>A pointer to the <a href="display.DrawInstanced">DrawInstanced</a> function.</p>
 </dd>
 
-### -field <b>pfnGsSetConstantBuffers</b>
+### -field pfnGsSetConstantBuffers
 
 <dd>
 <p>A pointer to the <a href="display.GsSetConstantBuffers">GsSetConstantBuffers</a> function.</p>
 </dd>
 
-### -field <b>pfnGsSetShader</b>
+### -field pfnGsSetShader
 
 <dd>
 <p>A pointer to the <a href="display.GsSetShader">GsSetShader</a> function.</p>
 </dd>
 
-### -field <b>pfnIaSetTopology</b>
+### -field pfnIaSetTopology
 
 <dd>
 <p>A pointer to the <a href="display.IaSetTopology">IaSetTopology</a> function.</p>
 </dd>
 
-### -field <b>pfnVsSetShaderResources</b>
+### -field pfnVsSetShaderResources
 
 <dd>
 <p>A pointer to the <a href="display.VsSetShaderResources">VsSetShaderResources</a> function.</p>
 </dd>
 
-### -field <b>pfnVsSetSamplers</b>
+### -field pfnVsSetSamplers
 
 <dd>
 <p>A pointer to the <a href="display.VsSetSamplers">VsSetSamplers</a> function.</p>
 </dd>
 
-### -field <b>pfnGsSetShaderResources</b>
+### -field pfnGsSetShaderResources
 
 <dd>
 <p>A pointer to the <a href="display.GsSetShaderResources">GsSetShaderResources</a> function.</p>
 </dd>
 
-### -field <b>pfnGsSetSamplers</b>
+### -field pfnGsSetSamplers
 
 <dd>
 <p>A pointer to the <a href="display.GsSetSamplers">GsSetSamplers</a> function.</p>
 </dd>
 
-### -field <b>pfnSetRenderTargets</b>
+### -field pfnSetRenderTargets
 
 <dd>
 <p>A pointer to the <a href="display.SetRenderTargets">SetRenderTargets</a> function.</p>
 </dd>
 
-### -field <b>pfnShaderResourceViewReadAfterWriteHazard</b>
+### -field pfnShaderResourceViewReadAfterWriteHazard
 
 <dd>
 <p>A pointer to the <a href="display.ShaderResourceViewReadAfterWriteHazard">ShaderResourceViewReadAfterWriteHazard</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceReadAfterWriteHazard</b>
+### -field pfnResourceReadAfterWriteHazard
 
 <dd>
 <p>A pointer to the <a href="display.ResourceReadAfterWriteHazard">ResourceReadAfterWriteHazard</a> function.</p>
 </dd>
 
-### -field <b>pfnSetBlendState</b>
+### -field pfnSetBlendState
 
 <dd>
 <p>A pointer to the <a href="display.SetBlendState">SetBlendState</a> function.</p>
 </dd>
 
-### -field <b>pfnSetDepthStencilState</b>
+### -field pfnSetDepthStencilState
 
 <dd>
 <p>A pointer to the <a href="display.SetDepthStencilState">SetDepthStencilState</a> function.</p>
 </dd>
 
-### -field <b>pfnSetRasterizerState</b>
+### -field pfnSetRasterizerState
 
 <dd>
 <p>A pointer to the <a href="display.SetRasterizerState">SetRasterizerState</a> function.</p>
 </dd>
 
-### -field <b>pfnQueryEnd</b>
+### -field pfnQueryEnd
 
 <dd>
 <p>A pointer to the <a href="display.QueryEnd">QueryEnd</a> function.</p>
 </dd>
 
-### -field <b>pfnQueryBegin</b>
+### -field pfnQueryBegin
 
 <dd>
 <p>A pointer to the <a href="display.QueryBegin">QueryBegin</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceCopyRegion</b>
+### -field pfnResourceCopyRegion
 
 <dd>
 <p>A pointer to the <a href="display.ResourceCopyRegion">ResourceCopyRegion</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceUpdateSubresourceUP</b>
+### -field pfnResourceUpdateSubresourceUP
 
 <dd>
 <p>A pointer to the <a href="display.ResourceUpdateSubresourceUP">ResourceUpdateSubresourceUP</a> function.</p>
 </dd>
 
-### -field <b>pfnSoSetTargets</b>
+### -field pfnSoSetTargets
 
 <dd>
 <p>A pointer to the <a href="display.SoSetTargets">SoSetTargets</a> function.</p>
 </dd>
 
-### -field <b>pfnDrawAuto</b>
+### -field pfnDrawAuto
 
 <dd>
 <p>A pointer to the <a href="display.DrawAuto">DrawAuto</a> function.</p>
 </dd>
 
-### -field <b>pfnSetViewports</b>
+### -field pfnSetViewports
 
 <dd>
 <p>A pointer to the <a href="display.SetViewports">SetViewports</a> function.</p>
 </dd>
 
-### -field <b>pfnSetScissorRects</b>
+### -field pfnSetScissorRects
 
 <dd>
 <p>A pointer to the <a href="display.SetScissorRects">SetScissorRects</a> function.</p>
 </dd>
 
-### -field <b>pfnClearRenderTargetView</b>
+### -field pfnClearRenderTargetView
 
 <dd>
 <p>A pointer to the <a href="display.ClearRenderTargetView">ClearRenderTargetView</a> function.</p>
 </dd>
 
-### -field <b>pfnClearDepthStencilView</b>
+### -field pfnClearDepthStencilView
 
 <dd>
 <p>A pointer to the <a href="display.ClearDepthStencilView">ClearDepthStencilView</a> function.</p>
 </dd>
 
-### -field <b>pfnSetPredication</b>
+### -field pfnSetPredication
 
 <dd>
 <p>A pointer to the <a href="display.SetPredication">SetPredication</a> function.</p>
 </dd>
 
-### -field <b>pfnQueryGetData</b>
+### -field pfnQueryGetData
 
 <dd>
 <p>A pointer to the <a href="display.QueryGetData">QueryGetData</a> function.</p>
 </dd>
 
-### -field <b>pfnFlush</b>
+### -field pfnFlush
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh463886">Flush</a> function.</p>
 </dd>
 
-### -field <b>pfnGenMips</b>
+### -field pfnGenMips
 
 <dd>
 <p>A pointer to the <a href="display.GenMips">GenMips</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceCopy</b>
+### -field pfnResourceCopy
 
 <dd>
 <p>A pointer to the <a href="display.ResourceCopy">ResourceCopy</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceResolveSubresource</b>
+### -field pfnResourceResolveSubresource
 
 <dd>
 <p>A pointer to the <a href="display.ResourceResolveSubresource">ResourceResolveSubresource</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceMap</b>
+### -field pfnResourceMap
 
 <dd>
 <p>A pointer to the <a href="display.ResourceMap">ResourceMap</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceUnmap</b>
+### -field pfnResourceUnmap
 
 <dd>
 <p>A pointer to the <a href="display.ResourceUnmap">ResourceUnmap</a> function.</p>
 </dd>
 
-### -field <b>pfnResourceIsStagingBusy</b>
+### -field pfnResourceIsStagingBusy
 
 <dd>
 <p>A pointer to the <a href="display.ResourceIsStagingBusy">ResourceIsStagingBusy</a> function.</p>
 </dd>
 
-### -field <b>pfnRelocateDeviceFuncs</b>
+### -field pfnRelocateDeviceFuncs
 
 <dd>
 <p>A pointer to the <a href="display.RelocateDeviceFuncs">RelocateDeviceFuncs</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateResourceSize</b>
+### -field pfnCalcPrivateResourceSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateResourceSize">CalcPrivateResourceSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateOpenedResourceSize</b>
+### -field pfnCalcPrivateOpenedResourceSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateOpenedResourceSize">CalcPrivateOpenedResourceSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateResource</b>
+### -field pfnCreateResource
 
 <dd>
 <p>A pointer to the <a href="display.CreateResource">CreateResource</a> function.</p>
 </dd>
 
-### -field <b>pfnOpenResource</b>
+### -field pfnOpenResource
 
 <dd>
 <p>A pointer to the <a href="display.OpenResource">OpenResource</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyResource</b>
+### -field pfnDestroyResource
 
 <dd>
 <p>A pointer to the <a href="display.DestroyResource">DestroyResource</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateShaderResourceViewSize</b>
+### -field pfnCalcPrivateShaderResourceViewSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateShaderResourceViewSize">CalcPrivateShaderResourceViewSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateShaderResourceView</b>
+### -field pfnCreateShaderResourceView
 
 <dd>
 <p>A pointer to the <a href="display.CreateShaderResourceView">CreateShaderResourceView</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyShaderResourceView</b>
+### -field pfnDestroyShaderResourceView
 
 <dd>
 <p>A pointer to the <a href="display.DestroyShaderResourceView">DestroyShaderResourceView</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateRenderTargetViewSize</b>
+### -field pfnCalcPrivateRenderTargetViewSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateRenderTargetViewSize">CalcPrivateRenderTargetViewSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateRenderTargetView</b>
+### -field pfnCreateRenderTargetView
 
 <dd>
 <p>A pointer to the <a href="display.CreateRenderTargetView">CreateRenderTargetView</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyRenderTargetView</b>
+### -field pfnDestroyRenderTargetView
 
 <dd>
 <p>A pointer to the <a href="display.DestroyRenderTargetView">DestroyRenderTargetView</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateDepthStencilViewSize</b>
+### -field pfnCalcPrivateDepthStencilViewSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateDepthStencilViewSize">CalcPrivateDepthStencilViewSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateDepthStencilView</b>
+### -field pfnCreateDepthStencilView
 
 <dd>
 <p>A pointer to the <a href="display.CreateDepthStencilView">CreateDepthStencilView</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyDepthStencilView</b>
+### -field pfnDestroyDepthStencilView
 
 <dd>
 <p>A pointer to the <a href="display.DestroyDepthStencilView">DestroyDepthStencilView</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateElementLayoutSize</b>
+### -field pfnCalcPrivateElementLayoutSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateElementLayoutSize">CalcPrivateElementLayoutSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateElementLayout</b>
+### -field pfnCreateElementLayout
 
 <dd>
 <p>A pointer to the <a href="display.CreateElementLayout">CreateElementLayout</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyElementLayout</b>
+### -field pfnDestroyElementLayout
 
 <dd>
 <p>A pointer to the <a href="display.DestroyElementLayout">DestroyElementLayout</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateBlendStateSize</b>
+### -field pfnCalcPrivateBlendStateSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateBlendStateSize">CalcPrivateBlendStateSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateBlendState</b>
+### -field pfnCreateBlendState
 
 <dd>
 <p>A pointer to the <a href="display.CreateBlendState">CreateBlendState</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyBlendState</b>
+### -field pfnDestroyBlendState
 
 <dd>
 <p>A pointer to the <a href="display.DestroyBlendState">DestroyBlendState</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateDepthStencilStateSize</b>
+### -field pfnCalcPrivateDepthStencilStateSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateDepthStencilStateSize">CalcPrivateDepthStencilStateSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateDepthStencilState</b>
+### -field pfnCreateDepthStencilState
 
 <dd>
 <p>A pointer to the <a href="display.CreateDepthStencilState">CreateDepthStencilState</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyDepthStencilState</b>
+### -field pfnDestroyDepthStencilState
 
 <dd>
 <p>A pointer to the <a href="display.DestroyDepthStencilState">DestroyDepthStencilState</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateRasterizerStateSize</b>
+### -field pfnCalcPrivateRasterizerStateSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateRasterizerStateSize">CalcPrivateRasterizerStateSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateRasterizerState</b>
+### -field pfnCreateRasterizerState
 
 <dd>
 <p>A pointer to the <a href="display.CreateRasterizerState">CreateRasterizerState</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyRasterizerState</b>
+### -field pfnDestroyRasterizerState
 
 <dd>
 <p>A pointer to the <a href="display.DestroyRasterizerState">DestroyRasterizerState</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateShaderSize</b>
+### -field pfnCalcPrivateShaderSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateShaderSize">CalcPrivateShaderSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateVertexShader</b>
+### -field pfnCreateVertexShader
 
 <dd>
 <p>A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createvertexshader.md">CreateVertexShader</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateGeometryShader</b>
+### -field pfnCreateGeometryShader
 
 <dd>
 <p>A pointer to the <a href="display.CreateGeometryShader">CreateGeometryShader</a> function.</p>
 </dd>
 
-### -field <b>pfnCreatePixelShader</b>
+### -field pfnCreatePixelShader
 
 <dd>
 <p>A pointer to the <a href="display.CreatePixelShader">CreatePixelShader</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateGeometryShaderWithStreamOutput</b>
+### -field pfnCalcPrivateGeometryShaderWithStreamOutput
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateGeometryShaderWithStreamOutput">CalcPrivateGeometryShaderWithStreamOutput</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateGeometryShaderWithStreamOutput</b>
+### -field pfnCreateGeometryShaderWithStreamOutput
 
 <dd>
 <p>A pointer to the <a href="display.CreateGeometryShaderWithStreamOutput">CreateGeometryShaderWithStreamOutput</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyShader</b>
+### -field pfnDestroyShader
 
 <dd>
 <p>A pointer to the <a href="display.DestroyShader">DestroyShader</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateSamplerSize</b>
+### -field pfnCalcPrivateSamplerSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateSamplerSize">CalcPrivateSamplerSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateSampler</b>
+### -field pfnCreateSampler
 
 <dd>
 <p>A pointer to the <a href="display.CreateSampler">CreateSampler</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroySampler</b>
+### -field pfnDestroySampler
 
 <dd>
 <p>A pointer to the <a href="display.DestroySampler">DestroySampler</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateQuerySize</b>
+### -field pfnCalcPrivateQuerySize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateQuerySize">CalcPrivateQuerySize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateQuery</b>
+### -field pfnCreateQuery
 
 <dd>
 <p>A pointer to the <a href="display.CreateQuery">CreateQuery</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyQuery</b>
+### -field pfnDestroyQuery
 
 <dd>
 <p>A pointer to the <a href="display.DestroyQuery">DestroyQuery</a> function.</p>
 </dd>
 
-### -field <b>pfnCheckFormatSupport</b>
+### -field pfnCheckFormatSupport
 
 <dd>
 <p>A pointer to the <a href="display.CheckFormatSupport">CheckFormatSupport</a> function.</p>
 </dd>
 
-### -field <b>pfnCheckMultisampleQualityLevels</b>
+### -field pfnCheckMultisampleQualityLevels
 
 <dd>
 <p>A pointer to the <a href="display.CheckMultisampleQualityLevels">CheckMultisampleQualityLevels</a> function.</p>
 </dd>
 
-### -field <b>pfnCheckCounterInfo</b>
+### -field pfnCheckCounterInfo
 
 <dd>
 <p>A pointer to the <a href="display.CheckCounterInfo">CheckCounterInfo</a> function.</p>
 </dd>
 
-### -field <b>pfnCheckCounter</b>
+### -field pfnCheckCounter
 
 <dd>
 <p>A pointer to the <a href="display.CheckCounter">CheckCounter</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyDevice</b>
+### -field pfnDestroyDevice
 
 <dd>
 <p>A pointer to the <a href="display.DestroyDevice">DestroyDevice</a> function.</p>
 </dd>
 
-### -field <b>pfnSetTextFilterSize</b>
+### -field pfnSetTextFilterSize
 
 <dd>
 <p>A pointer to the <a href="display.SetTextFilterSize">SetTextFilterSize</a> function.</p>
 </dd>
 
-### -field <b>pfnDrawIndexedInstancedIndirect</b>
+### -field pfnDrawIndexedInstancedIndirect
 
 <dd>
 <p>A pointer to the <a href="display.DrawIndexedInstancedIndirect">DrawIndexedInstancedIndirect</a> function.</p>
 </dd>
 
-### -field <b>pfnDrawInstancedIndirect</b>
+### -field pfnDrawInstancedIndirect
 
 <dd>
 <p>A pointer to the <a href="display.DrawInstancedIndirect">DrawInstancedIndirect</a> function.</p>
 </dd>
 
-### -field <b>pfnCommandListExecute</b>
+### -field pfnCommandListExecute
 
 <dd>
 <p>A pointer to the <a href="display.CommandListExecute">CommandListExecute</a> function.</p>
 </dd>
 
-### -field <b>pfnHsSetShaderResources</b>
+### -field pfnHsSetShaderResources
 
 <dd>
 <p>A pointer to the <a href="display.HsSetShaderResources">HsSetShaderResources</a> function.</p>
 </dd>
 
-### -field <b>pfnHsSetShader</b>
+### -field pfnHsSetShader
 
 <dd>
 <p>A pointer to the <a href="display.HsSetShader">HsSetShader</a> function.</p>
 </dd>
 
-### -field <b>pfnHsSetSamplers</b>
+### -field pfnHsSetSamplers
 
 <dd>
 <p>A pointer to the <a href="display.HsSetSamplers">HsSetSamplers</a> function.</p>
 </dd>
 
-### -field <b>pfnHsSetConstantBuffers</b>
+### -field pfnHsSetConstantBuffers
 
 <dd>
 <p>A pointer to the <a href="display.HsSetConstantBuffers">HsSetConstantBuffers</a> function.</p>
 </dd>
 
-### -field <b>pfnDsSetShaderResources</b>
+### -field pfnDsSetShaderResources
 
 <dd>
 <p>A pointer to the <a href="display.DsSetShaderResources">DsSetShaderResources</a> function.</p>
 </dd>
 
-### -field <b>pfnDsSetShader</b>
+### -field pfnDsSetShader
 
 <dd>
 <p>A pointer to the <a href="display.DsSetShader">DsSetShader</a> function.</p>
 </dd>
 
-### -field <b>pfnDsSetSamplers</b>
+### -field pfnDsSetSamplers
 
 <dd>
 <p>A pointer to the <a href="display.DsSetSamplers">DsSetSamplers</a> function.</p>
 </dd>
 
-### -field <b>pfnDsSetConstantBuffers</b>
+### -field pfnDsSetConstantBuffers
 
 <dd>
 <p>A pointer to the <a href="display.DsSetConstantBuffers">DsSetConstantBuffers</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateHullShader</b>
+### -field pfnCreateHullShader
 
 <dd>
 <p>A pointer to the <a href="display.CreateHullShader">CreateHullShader</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateDomainShader</b>
+### -field pfnCreateDomainShader
 
 <dd>
 <p>A pointer to the <a href="display.CreateDomainShader">CreateDomainShader</a> function.</p>
 </dd>
 
-### -field <b>pfnCheckDeferredContextHandleSizes</b>
+### -field pfnCheckDeferredContextHandleSizes
 
 <dd>
 <p>A pointer to the <a href="display.CheckDeferredContextHandleSizes">CheckDeferredContextHandleSizes</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcDeferredContextHandleSize</b>
+### -field pfnCalcDeferredContextHandleSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcDeferredContextHandleSize">CalcDeferredContextHandleSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateDeferredContextSize</b>
+### -field pfnCalcPrivateDeferredContextSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateDeferredContextSize">CalcPrivateDeferredContextSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateDeferredContext</b>
+### -field pfnCreateDeferredContext
 
 <dd>
 <p>A pointer to the <a href="display.CreateDeferredContext">CreateDeferredContext</a> function.</p>
 </dd>
 
-### -field <b>pfnAbandonCommandList</b>
+### -field pfnAbandonCommandList
 
 <dd>
 <p>A pointer to the <a href="display.AbandonCommandList">AbandonCommandList</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateCommandListSize</b>
+### -field pfnCalcPrivateCommandListSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateCommandListSize">CalcPrivateCommandListSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateCommandList</b>
+### -field pfnCreateCommandList
 
 <dd>
 <p>A pointer to the <a href="display.CreateCommandList">CreateCommandList</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyCommandList</b>
+### -field pfnDestroyCommandList
 
 <dd>
 <p>A pointer to the <a href="display.DestroyCommandList">DestroyCommandList</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateTessellationShaderSize</b>
+### -field pfnCalcPrivateTessellationShaderSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateTessellationShaderSize">CalcPrivateTessellationShaderSize</a> function.</p>
 </dd>
 
-### -field <b>pfnPsSetShaderWithIfaces</b>
+### -field pfnPsSetShaderWithIfaces
 
 <dd>
 <p>A pointer to the <a href="display.PsSetShaderWithIfaces">PsSetShaderWithIfaces</a> function.</p>
 </dd>
 
-### -field <b>pfnVsSetShaderWithIfaces</b>
+### -field pfnVsSetShaderWithIfaces
 
 <dd>
 <p>A pointer to the <a href="display.VsSetShaderWithIfaces">VsSetShaderWithIfaces</a> function.</p>
 </dd>
 
-### -field <b>pfnGsSetShaderWithIfaces</b>
+### -field pfnGsSetShaderWithIfaces
 
 <dd>
 <p>A pointer to the <a href="display.GsSetShaderWithIfaces">GsSetShaderWithIfaces</a> function.</p>
 </dd>
 
-### -field <b>pfnHsSetShaderWithIfaces</b>
+### -field pfnHsSetShaderWithIfaces
 
 <dd>
 <p>A pointer to the <a href="display.HsSetShaderWithIfaces">HsSetShaderWithIfaces</a> function.</p>
 </dd>
 
-### -field <b>pfnDsSetShaderWithIfaces</b>
+### -field pfnDsSetShaderWithIfaces
 
 <dd>
 <p>A pointer to the <a href="display.DsSetShaderWithIfaces">DsSetShaderWithIfaces</a> function.</p>
 </dd>
 
-### -field <b>pfnCsSetShaderWithIfaces</b>
+### -field pfnCsSetShaderWithIfaces
 
 <dd>
 <p>A pointer to the <a href="display.CsSetShaderWithIfaces">CsSetShaderWithIfaces</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateComputeShader</b>
+### -field pfnCreateComputeShader
 
 <dd>
 <p>A pointer to the <a href="display.CreateComputeShader">CreateComputeShader</a> function.</p>
 </dd>
 
-### -field <b>pfnCsSetShader</b>
+### -field pfnCsSetShader
 
 <dd>
 <p>A pointer to the <a href="display.CsSetShader">CsSetShader</a> function.</p>
 </dd>
 
-### -field <b>pfnCsSetShaderResources</b>
+### -field pfnCsSetShaderResources
 
 <dd>
 <p>A pointer to the <a href="display.CsSetShaderResources">CsSetShaderResources</a> function.</p>
 </dd>
 
-### -field <b>pfnCsSetSamplers</b>
+### -field pfnCsSetSamplers
 
 <dd>
 <p>A pointer to the <a href="display.CsSetSamplers">CsSetSamplers</a> function.</p>
 </dd>
 
-### -field <b>pfnCsSetConstantBuffers</b>
+### -field pfnCsSetConstantBuffers
 
 <dd>
 <p>A pointer to the <a href="display.CsSetConstantBuffers">CsSetConstantBuffers</a> function.</p>
 </dd>
 
-### -field <b>pfnCalcPrivateUnorderedAccessViewSize</b>
+### -field pfnCalcPrivateUnorderedAccessViewSize
 
 <dd>
 <p>A pointer to the <a href="display.CalcPrivateUnorderedAccessViewSize">CalcPrivateUnorderedAccessViewSize</a> function.</p>
 </dd>
 
-### -field <b>pfnCreateUnorderedAccessView</b>
+### -field pfnCreateUnorderedAccessView
 
 <dd>
 <p>A pointer to the <a href="display.CreateUnorderedAccessView">CreateUnorderedAccessView</a> function.</p>
 </dd>
 
-### -field <b>pfnDestroyUnorderedAccessView</b>
+### -field pfnDestroyUnorderedAccessView
 
 <dd>
 <p>A pointer to the <a href="display.DestroyUnorderedAccessView">DestroyUnorderedAccessView</a> function.</p>
 </dd>
 
-### -field <b>pfnClearUnorderedAccessViewUint</b>
+### -field pfnClearUnorderedAccessViewUint
 
 <dd>
 <p>A pointer to the <a href="display.ClearUnorderedAccessViewUint">ClearUnorderedAccessViewUint</a> function.</p>
 </dd>
 
-### -field <b>pfnClearUnorderedAccessViewFloat</b>
+### -field pfnClearUnorderedAccessViewFloat
 
 <dd>
 <p>A pointer to the <a href="display.ClearUnorderedAccessViewFloat">ClearUnorderedAccessViewFloat</a> function.</p>
 </dd>
 
-### -field <b>pfnCsSetUnorderedAccessViews</b>
+### -field pfnCsSetUnorderedAccessViews
 
 <dd>
 <p>A pointer to the <a href="display.CsSetUnorderedAccessViews">CsSetUnorderedAccessViews</a> function.</p>
 </dd>
 
-### -field <b>pfnDispatch</b>
+### -field pfnDispatch
 
 <dd>
 <p>A pointer to the <a href="display.Dispatch">Dispatch</a> function.</p>
 </dd>
 
-### -field <b>pfnDispatchIndirect</b>
+### -field pfnDispatchIndirect
 
 <dd>
 <p>A pointer to the <a href="display.DispatchIndirect">DispatchIndirect</a> function.</p>
 </dd>
 
-### -field <b>pfnSetResourceMinLOD</b>
+### -field pfnSetResourceMinLOD
 
 <dd>
 <p>A pointer to the <a href="display.SetResourceMinLOD">SetResourceMinLOD</a> function.</p>
 </dd>
 
-### -field <b>pfnCopyStructureCount</b>
+### -field pfnCopyStructureCount
 
 <dd>
 <p>A pointer to the <a href="display.CopyStructureCount">CopyStructureCount</a> function.</p>
 </dd>
 
-### -field <b>pfnRecycleCommandList</b>
+### -field pfnRecycleCommandList
 
 <dd>
 <p>A pointer to the <a href="display.RecycleCommandList">RecycleCommandList</a> function.</p>
 </dd>
 
-### -field <b>pfnRecycleCreateCommandList</b>
+### -field pfnRecycleCreateCommandList
 
 <dd>
 <p>A pointer to the <a href="display.RecycleCreateCommandList">RecycleCreateCommandList</a> function.</p>
 </dd>
 
-### -field <b>pfnRecycleCreateDeferredContext</b>
+### -field pfnRecycleCreateDeferredContext
 
 <dd>
 <p>A pointer to the <a href="display.RecycleCreateDeferredContext">RecycleCreateDeferredContext</a> function.</p>
 </dd>
 
-### -field <b>pfnDiscard</b>
+### -field pfnDiscard
 
 <dd>
 <p>A pointer to the <a href="display.Discard">Discard</a> function.</p>
 </dd>
 
-### -field <b>pfnAssignDebugBinary</b>
+### -field pfnAssignDebugBinary
 
 <dd>
 <p>A pointer to the <a href="display.AssignDebugBinary">AssignDebugBinary</a> function.</p>
 </dd>
 
-### -field <b>pfnCheckDirectFlipSupport</b>
+### -field pfnCheckDirectFlipSupport
 
 <dd>
 <p>A pointer to the <a href="display.CheckDirectFlipSupport">CheckDirectFlipSupport</a> function.</p>
 </dd>
 
-### -field <b>pfnClearView</b>
+### -field pfnClearView
 
 <dd>
 <p>A pointer to the <a href="display.ClearView">ClearView</a> function.</p>
 </dd>
 
-### -field <b>pfnUpdateTileMappings</b>
+### -field pfnUpdateTileMappings
 
 <dd>
 <p>A pointer to the <a href="display.UpdateTileMappings">UpdateTileMappings</a> function.</p>
 </dd>
 
-### -field <b>pfnCopyTileMappings</b>
+### -field pfnCopyTileMappings
 
 <dd>
 <p>A pointer to the <a href="display.CopyTileMappings">CopyTileMappings</a> function.</p>
 </dd>
 
-### -field <b>pfnCopyTiles</b>
+### -field pfnCopyTiles
 
 <dd>
 <p>A pointer to the <a href="display.CopyTiles">CopyTiles</a> function.</p>
 </dd>
 
-### -field <b>pfnUpdateTiles</b>
+### -field pfnUpdateTiles
 
 <dd>
 <p>A pointer to the <a href="display.UpdateTiles">UpdateTiles</a> function.</p>
 </dd>
 
-### -field <b>pfnTiledResourceBarrier</b>
+### -field pfnTiledResourceBarrier
 
 <dd>
 <p>A pointer to the <a href="display.TiledResourceBarrier">TiledResourceBarrier</a> function.</p>
 </dd>
 
-### -field <b>pfnGetMipPacking</b>
+### -field pfnGetMipPacking
 
 <dd>
 <p>A pointer to the <a href="display.GetMipPacking">GetMipPacking</a> function.</p>
 </dd>
 
-### -field <b>pfnResizeTilePool</b>
+### -field pfnResizeTilePool
 
 <dd>
 <p>A pointer to the <a href="display.ResizeTilePool">ResizeTilePool</a> function.</p>
 </dd>
 
-### -field <b>pfnSetMarker</b>
+### -field pfnSetMarker
 
 <dd>
 <p>A pointer to the <a href="display.SetMarker">SetMarker</a> function.</p>
 </dd>
 
-### -field <b>pfnSetMarkerMode</b>
+### -field pfnSetMarkerMode
 
 <dd>
 <p>A pointer to the <a href="display.SetMarkerMode">SetMarkerMode</a> function.</p>
 </dd>
 
-### -field <b>pfnSetHardwareProtection</b>
+### -field pfnSetHardwareProtection
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn906369">SetHardwareProtection</a> function.</p>

@@ -58,31 +58,31 @@ typedef enum _D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAGS_0030 {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_NONE"></a><a id="d3d12ddi_crypto_session_support_flag_0030_none"></a><b>D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_NONE</b>
+### -field D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_NONE
 
 <dd>
 <p>No flag is defined.</p>
 </dd>
 
-### -field <a id="D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_SUPPORTED"></a><a id="d3d12ddi_crypto_session_support_flag_0030_supported"></a><b>D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_SUPPORTED</b>
+### -field D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_SUPPORTED
 
 <dd>
 <p>The crypto session support flag is supported.</p>
 </dd>
 
-### -field <a id="D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_HEADER_DECRYPTION_REQUIRED"></a><a id="d3d12ddi_crypto_session_support_flag_0030_header_decryption_required"></a><b>D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_HEADER_DECRYPTION_REQUIRED</b>
+### -field D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_HEADER_DECRYPTION_REQUIRED
 
 <dd>
 <p>The crypto session support flag requires a header decryption.</p>
 </dd>
 
-### -field <a id="D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_INDEPENDENT_DECRYPTION_REQUIRED"></a><a id="d3d12ddi_crypto_session_support_flag_0030_independent_decryption_required"></a><b>D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_INDEPENDENT_DECRYPTION_REQUIRED</b>
+### -field D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_INDEPENDENT_DECRYPTION_REQUIRED
 
 <dd>
 <p>The crypto session support flag requires an independent decyption.</p>
 </dd>
 
-### -field <a id="D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_TRANSCRYPTION_REQUIRED"></a><a id="d3d12ddi_crypto_session_support_flag_0030_transcryption_required"></a><b>D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_TRANSCRYPTION_REQUIRED</b>
+### -field D3D12DDI_CRYPTO_SESSION_SUPPORT_FLAG_0030_TRANSCRYPTION_REQUIRED
 
 <dd>
 <p>The crypto session support flag requires transcryption.</p>

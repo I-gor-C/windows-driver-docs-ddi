@@ -57,13 +57,13 @@ typedef struct D3D11_1DDI_VIDEO_COLOR {
 ## -struct-fields
 <dl>
 
-### -field <b>YCbCr</b>
+### -field YCbCr
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-color-ycbcra.md">D3D11_1DDI_VIDEO_COLOR_YCbCrA</a> structure that contains a YCbCr color value.</p>
 </dd>
 
-### -field <b>RGBA</b>
+### -field RGBA
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-color-rgba.md">D3D11_1DDI_VIDEO_COLOR_RGBA</a> structure that contains an RGB color value.</p>

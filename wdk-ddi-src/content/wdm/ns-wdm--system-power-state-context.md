@@ -66,55 +66,55 @@ typedef struct _SYSTEM_POWER_STATE_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>DUMMYUNIONNAME</b>
+### -field DUMMYUNIONNAME
 
 <dd>
 <p>Unnamed union.</p>
 <dl>
 
-### -field <b>DUMMYSTRUCTNAME</b>
+### -field DUMMYSTRUCTNAME
 
 <dd>
 <p>Unnamed structure.</p>
 <dl>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Opaque member. Reserved for system use.</p>
 </dd>
 
-### -field <b>TargetSystemState</b>
+### -field TargetSystemState
 
 <dd>
 <p>The target system power state of the previous <a href="https://msdn.microsoft.com/a37e8dda-af7a-4f28-bf04-908a74bb5b2f">system power IRP</a> that the driver received. This member is set to a <a href="..\wdm\ne-wdm--system-power-state.md">SYSTEM_POWER_STATE</a> enumeration value. Drivers should treat this member as read-only.</p>
 </dd>
 
-### -field <b>EffectiveSystemState</b>
+### -field EffectiveSystemState
 
 <dd>
 <p>The effective previous system power state, as perceived by the user. This member is set to a <b>SYSTEM_POWER_STATE</b> enumeration value. Drivers should treat this member as read-only. This member value might not match the <b>TargetSystemState</b> member if, for example, the previous system power IRP indicated that the computer was about to enter hibernation, but a hybrid shutdown instead occurred to prepare the computer for a fast startup. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>CurrentSystemState</b>
+### -field CurrentSystemState
 
 <dd>
 <p>Opaque member. Reserved for system use.</p>
 </dd>
 
-### -field <b>IgnoreHibernationPath</b>
+### -field IgnoreHibernationPath
 
 <dd>
 <p>Opaque member. Reserved for system use.</p>
 </dd>
 
-### -field <b>PseudoTransition</b>
+### -field PseudoTransition
 
 <dd>
 <p>Opaque member. Reserved for system use.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Opaque member. Reserved for system use.</p>
@@ -122,7 +122,7 @@ typedef struct _SYSTEM_POWER_STATE_CONTEXT {
 </dl>
 </dd>
 
-### -field <b>ContextAsUlong</b>
+### -field ContextAsUlong
 
 <dd>
 <p>Opaque member. Reserved for system use.</p>

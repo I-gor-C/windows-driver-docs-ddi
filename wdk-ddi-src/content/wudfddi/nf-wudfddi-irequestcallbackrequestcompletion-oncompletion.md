@@ -7,7 +7,7 @@ old-location: wdf\irequestcallbackrequestcompletion_oncompletion.htm
 old-project: wdf
 ms.assetid: 1a4787da-2813-4a7a-820a-5c078175aba5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IRequestCallbackRequestCompletion, OnCompletion, IRequestCallbackRequestCompletion::OnCompletion
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ void OnCompletion(
 ## -parameters
 <dl>
 
-### -param <i>pWdfRequest</i> [in]
+### -param pWdfRequest [in]
 
 <dd>
 <p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a> interface that represents the framework request object. </p>
 </dd>
 
-### -param <i>pIoTarget</i> [in]
+### -param pIoTarget [in]
 
 <dd>
 <p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a> interface for the I/O target object that represents the lower driver in the stack where the request was previously sent. </p>
 </dd>
 
-### -param <i>pParams</i> [in]
+### -param pParams [in]
 
 <dd>
 <p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfrequestcompletionparams.md">IWDFRequestCompletionParams</a> interface for the parameters object for the completion request. </p>
 </dd>
 
-### -param <i>pContext</i> [in]
+### -param pContext [in]
 
 <dd>
 <p>A pointer to a buffer that contains context information that is related to the completion request.</p>
@@ -124,4 +124,4 @@ void OnCompletion(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IRequestCallbackRequestCompletion::OnCompletion method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IRequestCallbackRequestCompletion::OnCompletion method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

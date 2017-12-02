@@ -55,13 +55,13 @@ BOOLEAN __inline AtaPortRequestSynchronizedRoutine(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the channel extension.</p>
 </dd>
 
-### -param <i>SynchronizedRoutine</i> [in]
+### -param SynchronizedRoutine [in]
 
 <dd>
 <p>A pointer to the routine to call. </p>

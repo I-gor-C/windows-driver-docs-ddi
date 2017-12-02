@@ -62,49 +62,49 @@ typedef struct _SCSIWMILIB_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>GuidCount</b>
+### -field GuidCount
 
 <dd>
 <p>Specifies the number of structures in the SCSIWMIGUIDREGINFO array at <b>GuidList</b>.</p>
 </dd>
 
-### -field <b>GuidList</b>
+### -field GuidList
 
 <dd>
 <p>Points to an array of <b>GuidCount</b> SCSIWMIGUIDREGINFO structures that contain registration information for each block.</p>
 </dd>
 
-### -field <b>QueryWmiRegInfo</b>
+### -field QueryWmiRegInfo
 
 <dd>
 <p>Points to the driver's <a href="storage.hwscsiwmiqueryreginfo">HwScsiWmiQueryReginfo</a> routine, which is a required entry point for miniport drivers that support WMI.</p>
 </dd>
 
-### -field <b>QueryWmiDataBlock</b>
+### -field QueryWmiDataBlock
 
 <dd>
 <p>Points to the driver's <a href="storage.hwscsiwmiquerydatablock">HwScsiWmiQueryDataBlock</a> routine, which is a required entry point for miniport drivers that support WMI.</p>
 </dd>
 
-### -field <b>SetWmiDataBlock</b>
+### -field SetWmiDataBlock
 
 <dd>
 <p>Points to the driver's <a href="storage.hwscsiwmisetdatablock">HwScsiWmiSetDataBlock</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b></p>
 </dd>
 
-### -field <b>SetWmiDataItem</b>
+### -field SetWmiDataItem
 
 <dd>
 <p>Points to the driver's <a href="storage.hwscsiwmisetdataitem">HwScsiWmiSetDataItem</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>ExecuteWmiMethod</b>
+### -field ExecuteWmiMethod
 
 <dd>
 <p>Points to the driver's <a href="storage.hwscsiwmiexecutemethod">HwScsiWmiExecuteMethod</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b></p>
 </dd>
 
-### -field <b>WmiFunctionControl</b>
+### -field WmiFunctionControl
 
 <dd>
 <p>Points to the driver's <a href="storage.hwscsiwmifunctioncontrol">HwScsiWmiFunctionControl</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b>. </p>

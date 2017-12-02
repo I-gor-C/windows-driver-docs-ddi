@@ -7,7 +7,7 @@ old-location: acpi\acpi_eval_input_buffer_simple_integer_v2_ex.htm
 old-project: acpi
 ms.assetid: 26F68B49-8205-4132-93E7-BFE8FE695D9C
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/30/2017
 ms.keywords: ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>Defines the <b>ULONG</b> member <b>Signature</b>.</p>
 </dd>
 
-### -field <b>MethodName[256]</b>
+### -field MethodName[256]
 
 <dd>
 <p>NULL terminated name string.</p>
 </dd>
 
-### -field <b>IntegerArgument</b>
+### -field IntegerArgument
 
 <dd>
 <p>Defines the <b>ULONG64</b> member <b>IntegerArgument</b>.</p>

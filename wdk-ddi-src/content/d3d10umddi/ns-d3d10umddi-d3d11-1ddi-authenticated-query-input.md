@@ -56,13 +56,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>QueryType</b>
+### -field QueryType
 
 <dd>
 <p>A GUID that specifies the query. The following GUIDs are defined.</p>
 <dl class="indent">
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ATTRIBUTES"></a><a id="d3d11_1ddi_authenticated_query_accessibility_attributes"></a><p><a id="D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ATTRIBUTES"></a><a id="d3d11_1ddi_authenticated_query_accessibility_attributes"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ATTRIBUTES</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ATTRIBUTES
 
 
 <dd>
@@ -73,7 +73,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE"></a><a id="d3d11_1ddi_authenticated_query_channel_type"></a><p><a id="D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE"></a><a id="d3d11_1ddi_authenticated_query_channel_type"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE
 
 
 <dd>
@@ -82,7 +82,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION"></a><a id="d3d11_1ddi_authenticated_query_crypto_session"></a><p><a id="D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION"></a><a id="d3d11_1ddi_authenticated_query_crypto_session"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION
 
 
 <dd>
@@ -93,7 +93,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_QUERY_CURRENT_ENCRYPTION_WHEN_ACCESSIBLE"></a><a id="d3d11_1ddi_authenticated_query_current_encryption_when_accessible"></a><p><a id="D3D11_1DDI_AUTHENTICATED_QUERY_CURRENT_ENCRYPTION_WHEN_ACCESSIBLE"></a><a id="d3d11_1ddi_authenticated_query_current_encryption_when_accessible"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_CURRENT_ENCRYPTION_WHEN_ACCESSIBLE</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_QUERY_CURRENT_ENCRYPTION_WHEN_ACCESSIBLE
 
 
 <dd>
@@ -102,7 +102,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE"></a><a id="d3d11_1ddi_authenticated_query_device_handle"></a><p><a id="D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE"></a><a id="d3d11_1ddi_authenticated_query_device_handle"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE
 
 
 <dd>
@@ -111,7 +111,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID"></a><a id="d3d11_1ddi_authenticated_query_encryption_when_accessible_guid"></a><p><a id="D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID"></a><a id="d3d11_1ddi_authenticated_query_encryption_when_accessible_guid"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID
 
 
 <dd>
@@ -122,7 +122,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID_COUNT"></a><a id="d3d11_1ddi_authenticated_query_encryption_when_accessible_guid_count"></a><p><a id="D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID_COUNT"></a><a id="d3d11_1ddi_authenticated_query_encryption_when_accessible_guid_count"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID_COUNT</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID_COUNT
 
 
 <dd>
@@ -131,7 +131,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID"></a><a id="d3d11_1ddi_authenticated_query_output_id"></a><p><a id="D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID"></a><a id="d3d11_1ddi_authenticated_query_output_id"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID
 
 
 <dd>
@@ -142,7 +142,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT"></a><a id="d3d11_1ddi_authenticated_query_output_id_count"></a><p><a id="D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT"></a><a id="d3d11_1ddi_authenticated_query_output_id_count"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT
 
 
 <dd>
@@ -153,7 +153,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION"></a><a id="d3d11_1ddi_authenticated_query_protection"></a><p><a id="D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION"></a><a id="d3d11_1ddi_authenticated_query_protection"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION
 
 
 <dd>
@@ -162,7 +162,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS"></a><a id="d3d11_1ddi_authenticated_query_restricted_shared_resource_process"></a><p><a id="D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS"></a><a id="d3d11_1ddi_authenticated_query_restricted_shared_resource_process"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS
 
 
 <dd>
@@ -173,7 +173,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT"></a><a id="d3d11_1ddi_authenticated_query_restricted_shared_resource_process_count"></a><p><a id="D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT"></a><a id="d3d11_1ddi_authenticated_query_restricted_shared_resource_process_count"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT
 
 
 <dd>
@@ -182,7 +182,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT"></a><a id="d3d11_1ddi_authenticated_query_unrestricted_protected_shared_resource_count"></a><p><a id="D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT"></a><a id="d3d11_1ddi_authenticated_query_unrestricted_protected_shared_resource_count"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT</b></p>
+### -field D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT
 
 
 <dd>
@@ -193,13 +193,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 </dl>
 </dd>
 
-### -field <b>hChannel</b>
+### -field hChannel
 
 <dd>
 <p>A handle to the authenticated channel. This handle was created through a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createauthenticatedchannel.md">CreateAuthenticatedChannel(D3D11_1)</a> function.</p>
 </dd>
 
-### -field <b>SequenceNumber</b>
+### -field SequenceNumber
 
 <dd>
 <p>The query sequence number. At the start of the session, generate a cryptographically secure 32-bit random number to use as the starting sequence number. For each query, increment the sequence number by 1.</p>

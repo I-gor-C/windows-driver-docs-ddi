@@ -65,19 +65,19 @@ typedef struct _STORAGE_LB_PROVISIONING_MAP_RESOURCES {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure. This is set to <b>sizeof</b>(STORAGE_LB_PROVISIONING_MAP_RESOURCES).</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure.</p>
 </dd>
 
-### -field <b>AvailableMappingResourcesValid</b>
+### -field AvailableMappingResourcesValid
 
 <dd>
 <p>The validity of the <b>AvailableMappingResources</b> member.</p>
@@ -114,7 +114,7 @@ typedef struct _STORAGE_LB_PROVISIONING_MAP_RESOURCES {
 <p> </p>
 </dd>
 
-### -field <b>UsedMappingResourcesValid</b>
+### -field UsedMappingResourcesValid
 
 <dd>
 <p>The validity of the <b>UsedMappingResources</b> member.</p>
@@ -151,19 +151,19 @@ typedef struct _STORAGE_LB_PROVISIONING_MAP_RESOURCES {
 <p> </p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AvailableMappingResourcesScope</b>
+### -field AvailableMappingResourcesScope
 
 <dd>
 <p>Resources scope available to a LUN or a LUN pool.</p>
@@ -175,7 +175,7 @@ typedef struct _STORAGE_LB_PROVISIONING_MAP_RESOURCES {
 <tr>
 <td width="40%"><a id="LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED"></a><a id="log_page_lbp_resource_scope_not_reported"></a><dl>
 
-### -field <b>LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED</b>
+### -field LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED
 
 
 ### -field 0
@@ -189,7 +189,7 @@ typedef struct _STORAGE_LB_PROVISIONING_MAP_RESOURCES {
 <tr>
 <td width="40%"><a id="LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN"></a><a id="log_page_lbp_resource_scope_dedicated_to_lun"></a><dl>
 
-### -field <b>LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN</b>
+### -field LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN
 
 
 ### -field 1
@@ -203,7 +203,7 @@ typedef struct _STORAGE_LB_PROVISIONING_MAP_RESOURCES {
 <tr>
 <td width="40%"><a id="LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN"></a><a id="log_page_lbp_resource_scope_not_dedicated_to_lun"></a><dl>
 
-### -field <b>LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN</b>
+### -field LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN
 
 
 ### -field 2
@@ -218,7 +218,7 @@ typedef struct _STORAGE_LB_PROVISIONING_MAP_RESOURCES {
 <p> </p>
 </dd>
 
-### -field <b>UsedMappingResourcesScope</b>
+### -field UsedMappingResourcesScope
 
 <dd>
 <p>Resources scope used by a LUN or LUN pool.</p>
@@ -230,7 +230,7 @@ typedef struct _STORAGE_LB_PROVISIONING_MAP_RESOURCES {
 <tr>
 <td width="40%"><a id="LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED"></a><a id="log_page_lbp_resource_scope_not_reported"></a><dl>
 
-### -field <b>LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED</b>
+### -field LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED
 
 
 ### -field 0
@@ -244,7 +244,7 @@ typedef struct _STORAGE_LB_PROVISIONING_MAP_RESOURCES {
 <tr>
 <td width="40%"><a id="LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN"></a><a id="log_page_lbp_resource_scope_dedicated_to_lun"></a><dl>
 
-### -field <b>LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN</b>
+### -field LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN
 
 
 ### -field 1
@@ -258,7 +258,7 @@ typedef struct _STORAGE_LB_PROVISIONING_MAP_RESOURCES {
 <tr>
 <td width="40%"><a id="LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN"></a><a id="log_page_lbp_resource_scope_not_dedicated_to_lun"></a><dl>
 
-### -field <b>LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN</b>
+### -field LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN
 
 
 ### -field 2
@@ -273,25 +273,25 @@ typedef struct _STORAGE_LB_PROVISIONING_MAP_RESOURCES {
 <p> </p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AvailableMappingResources</b>
+### -field AvailableMappingResources
 
 <dd>
 <p>The count, in bytes, of the available mapping resources for a disk.</p>
 </dd>
 
-### -field <b>UsedMappingResources</b>
+### -field UsedMappingResources
 
 <dd>
 <p>The count, in bytes, of the used mapping resources for a disk.</p>

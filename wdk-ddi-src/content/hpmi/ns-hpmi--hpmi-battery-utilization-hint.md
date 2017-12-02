@@ -60,13 +60,13 @@ typedef struct _HPMI_BATTERY_UTILIZATION_HINT {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Set to HPMI_BATTERY_UTILIZATION_HINT_VERSION_1.</p>
 </dd>
 
-### -field <b>PreserveNonHotSwappableBatteries</b>
+### -field PreserveNonHotSwappableBatteries
 
 <dd>
 <p> Interpretation of values:</p>

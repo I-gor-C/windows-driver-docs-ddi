@@ -55,13 +55,13 @@ typedef struct _AACS_BINDING_NONCE {
 ## -struct-fields
 <dl>
 
-### -field <b>BindingNonce</b>
+### -field BindingNonce
 
 <dd>
 <p>The binding nonce for the requested logical block address(es) (LBAs).</p>
 </dd>
 
-### -field <b>MAC</b>
+### -field MAC
 
 <dd>
 <p>A message authentication code (MAC) that clients can use to verify that the binding nonce is for the current Advanced Access Content System (AACS) Authentication sequence.</p>

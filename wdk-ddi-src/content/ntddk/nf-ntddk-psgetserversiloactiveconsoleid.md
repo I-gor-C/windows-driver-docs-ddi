@@ -57,7 +57,7 @@ ULONG  PsGetServerSiloActiveConsoleId(
 ## -parameters
 <dl>
 
-### -param <i>Silo</i> 
+### -param Silo 
 
 <dd>
 <p>A pointer to the silo of the job. </p>

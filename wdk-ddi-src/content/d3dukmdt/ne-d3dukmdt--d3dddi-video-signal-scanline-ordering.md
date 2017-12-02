@@ -58,31 +58,31 @@ typedef enum _D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_VSSLO_UNINITIALIZED"></a><a id="d3dddi_vsslo_uninitialized"></a><b>D3DDDI_VSSLO_UNINITIALIZED</b>
+### -field D3DDDI_VSSLO_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DDDI_VSSLO_PROGRESSIVE"></a><a id="d3dddi_vsslo_progressive"></a><b>D3DDDI_VSSLO_PROGRESSIVE</b>
+### -field D3DDDI_VSSLO_PROGRESSIVE
 
 <dd>
 <p>Indicates that each field contains an entire frame.</p>
 </dd>
 
-### -field <a id="D3DDDI_VSSLO_INTERLACED_UPPERFIELDFIRST"></a><a id="d3dddi_vsslo_interlaced_upperfieldfirst"></a><b>D3DDDI_VSSLO_INTERLACED_UPPERFIELDFIRST</b>
+### -field D3DDDI_VSSLO_INTERLACED_UPPERFIELDFIRST
 
 <dd>
 <p>Indicates that each field contains half of a frame, and the odd scan lines are displayed first. </p>
 </dd>
 
-### -field <a id="D3DDDI_VSSLO_INTERLACED_LOWERFIELDFIRST"></a><a id="d3dddi_vsslo_interlaced_lowerfieldfirst"></a><b>D3DDDI_VSSLO_INTERLACED_LOWERFIELDFIRST</b>
+### -field D3DDDI_VSSLO_INTERLACED_LOWERFIELDFIRST
 
 <dd>
 <p>Indicates that each field contains half of a frame, and the even scan lines are displayed first. </p>
 </dd>
 
-### -field <a id="D3DDDI_VSSLO_OTHER"></a><a id="d3dddi_vsslo_other"></a><b>D3DDDI_VSSLO_OTHER</b>
+### -field D3DDDI_VSSLO_OTHER
 
 <dd>
 <p>Indicates that the video signal has a scan line ordering other than those given in the previous constants of this enumeration.</p>

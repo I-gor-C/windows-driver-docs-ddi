@@ -56,19 +56,19 @@ NTSTATUS RtlIntAdd(
 ## -parameters
 <dl>
 
-### -param <i>iAugend</i> [in]
+### -param iAugend [in]
 
 <dd>
 <p>The first value in the equation.</p>
 </dd>
 
-### -param <i>iAddend</i> [in]
+### -param iAddend [in]
 
 <dd>
 <p>The value to add to <i>iAugend</i>.</p>
 </dd>
 
-### -param <i>piResult</i> [out]
+### -param piResult [out]
 
 <dd>
 <p>A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

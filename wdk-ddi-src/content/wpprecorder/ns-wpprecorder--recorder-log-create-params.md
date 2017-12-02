@@ -62,49 +62,49 @@ typedef struct _RECORDER_LOG_CREATE_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p> Size of this structure.</p>
 </dd>
 
-### -field <b>LogTag</b>
+### -field LogTag
 
 <dd>
 <p> Optional tag to associate with the allocated memory of the log.</p>
 </dd>
 
-### -field <b>TotalBufferSize</b>
+### -field TotalBufferSize
 
 <dd>
 <p>Size in bytes for the log area.</p>
 </dd>
 
-### -field <b>ErrorPartitionSize</b>
+### -field ErrorPartitionSize
 
 <dd>
 <p> The number of bytes out  of <b>TotalBufferSize</b> used to log error messages. Zero indicates no error partition.</p>
 </dd>
 
-### -field <b>LogIdentifierAppendValue</b>
+### -field LogIdentifierAppendValue
 
 <dd>
 <p> Number/pointer to append to log identifier.</p>
 </dd>
 
-### -field <b>LogIdentifierAppendValueSet</b>
+### -field LogIdentifierAppendValueSet
 
 <dd>
 <p> Specifies whether <b>LogIdentifierAppendValue</b> has been set.</p>
 </dd>
 
-### -field <b>LogIdentifierSize</b>
+### -field LogIdentifierSize
 
 <dd>
 <p> Size of <b>LogIdentifier</b> field, in bytes (according to client's definition).</p>
 </dd>
 
-### -field <b>LogIdentifier</b>
+### -field LogIdentifier
 
 <dd>
 <p>Identifier to print when debug messages are merged. Lives at end of structure so that, if at some point clients have different definitions of the array size, it remains simple to read the rest of the structure.</p>

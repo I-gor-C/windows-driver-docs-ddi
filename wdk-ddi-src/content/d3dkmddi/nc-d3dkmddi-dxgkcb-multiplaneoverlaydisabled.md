@@ -55,13 +55,13 @@ req.iface:
 ## -parameters
 <dl>
 
-### -param <i>hAdapter</i> [in]
+### -param hAdapter [in]
 
 <dd>
 <p>Indicates the adapter on which the current multiplane overlay hardware configuration is no longer supported.</p>
 </dd>
 
-### -param <i>VidPnSourceId</i> [in]
+### -param VidPnSourceId [in]
 
 <dd>
 <p>Indicates the VidPnSourceId on which the current multiplane overlay hardware configuration is no longer supported.</p>

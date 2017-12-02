@@ -55,7 +55,7 @@ typedef struct _DXGK_INTEGRATED_DISPLAY_CHILD {
 ## -struct-fields
 <dl>
 
-### -field <b>InterfaceTechnology</b>
+### -field InterfaceTechnology
 
 <dd>
 <p>Provides the type of connection used for the integrated display.  Typically, this would be one of the inherently internal display types:</p>
@@ -76,7 +76,7 @@ typedef struct _DXGK_INTEGRATED_DISPLAY_CHILD {
 </ul>
 </dd>
 
-### -field <b>DescriptorLength</b>
+### -field DescriptorLength
 
 <dd>
 <p>The size in bytes of the descriptor which will be in the Descriptor field of the DXGK_QUERYINTEGRATEDDISPLAYOUT structure.</p>

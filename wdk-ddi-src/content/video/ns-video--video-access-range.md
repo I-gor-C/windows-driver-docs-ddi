@@ -61,40 +61,40 @@ typedef struct _VIDEO_ACCESS_RANGE {
 ## -struct-fields
 <dl>
 
-### -field <b>RangeStart</b>
+### -field RangeStart
 
 <dd>
 <p>Specifies the bus-relative base address of a memory or I/O port range for an element in the access ranges array passed to <a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a> or returned by <a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>.</p>
 <p>Specifies the bus-relative base address of an I/O port range for an array to be passed to <a href="..\video\nf-video-videoportsettrappedemulatorports.md">VideoPortSetTrappedEmulatorPorts</a>.</p>
 </dd>
 
-### -field <b>RangeLength</b>
+### -field RangeLength
 
 <dd>
 <p>Specifies the number of I/O ports or size in bytes for the range.</p>
 </dd>
 
-### -field <b>RangeInIoSpace</b>
+### -field RangeInIoSpace
 
 <dd>
 <p>Specifies whether the range is in I/O space or in memory space. A value of <b>TRUE</b> (1) indicates that the range is in I/O space; a value of <b>FALSE</b> (0) indicates the range is in memory space.</p>
 </dd>
 
-### -field <b>RangeVisible</b>
+### -field RangeVisible
 
 <dd>
 <p>Is ignored if the miniport driver's <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a> function is setting up the access ranges array.</p>
 <p>Is set to <b>TRUE</b> by VGA-compatible miniport drivers and passed to <b>VideoPortSetTrappedEmulatorPorts</b> to enable direct access to the I/O port range by a full-screen MS-DOS application. If set to <b>FALSE</b>, application-issued instructions continue to be trapped and forwarded to the miniport driver's <i>SvgaHwIoXxx</i> function for validation.</p>
 </dd>
 
-### -field <b>RangeShareable</b>
+### -field RangeShareable
 
 <dd>
 <p>Is set to <b>TRUE</b> if the access range described by this element can be shared with another driver and/or device or to <b>FALSE</b> if the range cannot be shared.</p>
 <p>Is ignored by VideoPortSetTrappedEmulatorPorts.</p>
 </dd>
 
-### -field <b>RangePassive</b>
+### -field RangePassive
 
 <dd>
 <p>Indicates whether the device actually uses the port. Values for this member are shown in the following table.</p>

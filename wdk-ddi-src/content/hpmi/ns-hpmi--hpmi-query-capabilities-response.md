@@ -56,20 +56,20 @@ typedef struct _HPMI_QUERY_CAPABILITIES_RESPONSE {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Set to HPMI_QUERY_CAPABILITIES_VERSION_1.  </p>
 </dd>
 
-### -field <b>RequestService</b>
+### -field RequestService
 
 <dd>
 <p>Requests one or more Windows services as defined by
     HPMI_REQUEST_SERVICE_XXX.</p>
 </dd>
 
-### -field <b>SdbCapabilities</b>
+### -field SdbCapabilities
 
 <dd>
 <p>Specifies Software Defined Battery (SDB) features supported by the system.

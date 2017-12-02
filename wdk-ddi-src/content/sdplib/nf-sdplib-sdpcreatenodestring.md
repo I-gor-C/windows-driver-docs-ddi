@@ -59,19 +59,19 @@ PSDP_NODE SdpCreateNodeString(
 ## -parameters
 <dl>
 
-### -param <i>string</i> [in]
+### -param string [in]
 
 <dd>
 <p>A pointer to the string value to initialize the SDP_NODE structure.</p>
 </dd>
 
-### -param <i>StringLength</i> 
+### -param StringLength 
 
 <dd>
 <p>An unsigned long integer value that holds the length of the string.</p>
 </dd>
 
-### -param <i>tag</i> [in]
+### -param tag [in]
 
 <dd>
 <p>A profile driver defined tag to associate with the node.</p>

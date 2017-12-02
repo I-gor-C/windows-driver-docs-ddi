@@ -7,7 +7,7 @@ old-location: netvista\vmbpacketrestore.htm
 old-project: netvista
 ms.assetid: CE8BBFB7-FC6C-458B-89EC-355A6DD18399
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbPacketRestore
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,21 +59,21 @@ NTSTATUS VmbPacketRestore(
 ## -parameters
 <dl>
 
-### -param <i>PacketObject</i> [in]
+### -param PacketObject [in]
 
 <dd>
 <p>This is a handle of a VMBus packet.
 </p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to buffer that contains previously saved context.
 </p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>The size, in bytes, of buffer.</p>

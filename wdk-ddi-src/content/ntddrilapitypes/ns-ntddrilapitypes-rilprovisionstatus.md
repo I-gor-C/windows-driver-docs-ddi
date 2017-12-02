@@ -7,7 +7,7 @@ old-location: netvista\rilprovisionstatus.htm
 old-project: netvista
 ms.assetid: 5295f07d-9800-47f0-a827-515fcdad04eb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILPROVISIONSTATUS, RILPROVISIONSTATUS, *LPRILPROVISIONSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef struct _RILPROVISIONSTATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwProvisionStatus</b>
+### -field dwProvisionStatus
 
 <dd></dd>
 </dl>

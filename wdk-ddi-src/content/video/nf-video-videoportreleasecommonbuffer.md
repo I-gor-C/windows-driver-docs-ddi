@@ -60,37 +60,37 @@ VOID VideoPortReleaseCommonBuffer(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>VpDmaAdapter</i> [in]
+### -param VpDmaAdapter [in]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This is the structure returned after a call to <a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the number of bytes of memory to be freed.</p>
 </dd>
 
-### -param <i>LogicalAddress</i> [in]
+### -param LogicalAddress [in]
 
 <dd>
 <p>Specifies the logical address of the buffer to be freed.</p>
 </dd>
 
-### -param <i>VirtualAddress</i> [in]
+### -param VirtualAddress [in]
 
 <dd>
 <p>Pointer to the corresponding virtual address of the allocated memory range. This value was obtained in a prior call to <a href="..\video\nf-video-videoportallocatecommonbuffer.md">VideoPortAllocateCommonBuffer</a>.</p>
 </dd>
 
-### -param <i>CacheEnabled</i> [in]
+### -param CacheEnabled [in]
 
 <dd>
 <p>Indicates whether the allocated memory is cached. A value of <b>TRUE</b> indicates that the allocated memory is cached.</p>

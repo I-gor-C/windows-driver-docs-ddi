@@ -14,6 +14,7 @@
 ### [SPB_TRANSFER_LIST_ENTRY_INIT_NON_PAGED function](../spb/nf-spb-spb-transfer-list-entry-init-non-paged.md)
 ### [SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE function](../spb/nf-spb-spb-transfer-list-entry-init-simple.md)
 ### [SPB_TRANSFER_LIST_INIT function](../spb/nf-spb-spb-transfer-list-init.md)
+### [SpbIoctl enumeration](../spb/ne-spb-spbioctl.md)
 ## [Spbcx.h](../spbcx/index.md)
 ### [EVT_SPB_CONTROLLER_LOCK callback](../spbcx/nc-spbcx-evt-spb-controller-lock.md)
 ### [EVT_SPB_CONTROLLER_OTHER callback](../spbcx/nc-spbcx-evt-spb-controller-other.md)

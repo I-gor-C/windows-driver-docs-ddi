@@ -57,25 +57,25 @@ typedef enum _PEP_PROCESSOR_IDLE_CANCEL_CODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PepIdleCancelWorkPending"></a><a id="pepidlecancelworkpending"></a><a id="PEPIDLECANCELWORKPENDING"></a><b>PepIdleCancelWorkPending</b>
+### -field PepIdleCancelWorkPending
 
 <dd>
 <p>The processor has pending work that prevents it from entering the selected idle state.</p>
 </dd>
 
-### -field <a id="PepIdleCancelDependencyCheckFailed"></a><a id="pepidlecanceldependencycheckfailed"></a><a id="PEPIDLECANCELDEPENDENCYCHECKFAILED"></a><b>PepIdleCancelDependencyCheckFailed</b>
+### -field PepIdleCancelDependencyCheckFailed
 
 <dd>
 <p>The processor can enter the selected idle state only after one or more secondary processors have entered their corresponding idle states, but not all of these secondary processors have entered the correct idle states.</p>
 </dd>
 
-### -field <a id="PepIdleCancelNoCState"></a><a id="pepidlecancelnocstate"></a><a id="PEPIDLECANCELNOCSTATE"></a><b>PepIdleCancelNoCState</b>
+### -field PepIdleCancelNoCState
 
 <dd>
 <p>The selected idle state corresponds to a C-state that is not supported. The PEP previously received a <a href="kernel.pep_notify_ppm_cst_states">PEP_NOTIFY_PPM_CST_STATES</a> notification that supplied a list of the supported C-states for this processor.</p>
 </dd>
 
-### -field <a id="PepIdleCancelMax"></a><a id="pepidlecancelmax"></a><a id="PEPIDLECANCELMAX"></a><b>PepIdleCancelMax</b>
+### -field PepIdleCancelMax
 
 <dd>
 <p>Reserved for use by the operating system.</p>

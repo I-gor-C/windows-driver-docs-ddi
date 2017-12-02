@@ -7,7 +7,7 @@ old-location: debugger\debug_typed_data.htm
 old-project: debugger
 ms.assetid: 3173e69e-a6e5-4459-a57e-94cf7b10ef32
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: DEBUG_TYPED_DATA, DEBUG_TYPED_DATA, *PDEBUG_TYPED_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,37 +65,37 @@ typedef struct _DEBUG_TYPED_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>ModBase</b>
+### -field ModBase
 
 <dd>
 <p>The base address of the module, in the target's virtual address space, that contains the typed data.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>The location of the typed data in the target's memory. <b>Offset</b> is a virtual memory address unless there are flags present in <b>Flags</b> that specify that <b>Offset</b> is a physical memory address.</p>
 </dd>
 
-### -field <b>EngineHandle</b>
+### -field EngineHandle
 
 <dd>
 <p>Set to zero.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>The data cast to a ULONG64. If <b>Flags</b> does not contain the DEBUG_TYPED_DATA_IS_IN_MEMORY flag, the data is not available and <b>Data</b> is set to zero.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of the data.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The flags describing the target's memory in which the data resides. The following bit flags can be set.</p>
@@ -148,32 +148,32 @@ typedef struct _DEBUG_TYPED_DATA {
 <p> </p>
 </dd>
 
-### -field <b>TypeId</b>
+### -field TypeId
 
 <dd>
 <p>The type ID for the data's type.</p>
 </dd>
 
-### -field <b>BaseTypeId</b>
+### -field BaseTypeId
 
 <dd>
 <p>For generated types, the type ID of the type on which the data's type is based. For example, if the typed data represents a pointer (or an array), <b>BaseTypeId</b> is the type of the object pointed to (or held in the array).</p>
 <p>For other types, <b>BaseTypeId</b> is the same as <b>TypeId</b>.</p>
 </dd>
 
-### -field <b>Tag</b>
+### -field Tag
 
 <dd>
 <p>The symbol tag of the typed data. This is a value from the <b>SymTagEnum</b> enumeration. For descriptions of the values, see the DbgHelp API documentation.</p>
 </dd>
 
-### -field <b>Register</b>
+### -field Register
 
 <dd>
 <p>The index of the processor's register containing the data, or zero if the data is not contained in a register.  (Note that the zero value can represent either that the data is not in a register or that it is in the register whose index is zero.) </p>
 </dd>
 
-### -field <b>Internal</b>
+### -field Internal
 
 <dd>
 <p>Internal <a href="debugger.introduction#debugger_engine#debugger_engine">debugger engine</a> data.</p>
@@ -211,4 +211,4 @@ typedef struct _DEBUG_TYPED_DATA {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20DEBUG_TYPED_DATA structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20DEBUG_TYPED_DATA structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

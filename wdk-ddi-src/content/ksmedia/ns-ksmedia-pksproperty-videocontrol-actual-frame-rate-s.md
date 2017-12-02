@@ -59,37 +59,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>StreamIndex</b>
+### -field StreamIndex
 
 <dd>
 <p>Contains the zero-based index of the stream.</p>
 </dd>
 
-### -field <b>RangeIndex</b>
+### -field RangeIndex
 
 <dd>
 <p>Contains the zero-based index into the range list. The value contained at this location specifies the range in which frame rate information is being requested.</p>
 </dd>
 
-### -field <b>Dimensions</b>
+### -field Dimensions
 
 <dd>
 <p>Specifies the width and height of the image.</p>
 </dd>
 
-### -field <b>CurrentActualFrameRate</b>
+### -field CurrentActualFrameRate
 
 <dd>
 <p>Specifies the actual frame rate for the specified stream and range. Frame rate values are expressed in 100-nanosecond units.</p>
 </dd>
 
-### -field <b>CurrentMaxAvailableFrameRate</b>
+### -field CurrentMaxAvailableFrameRate
 
 <dd>
 <p>Specifies the maximum frame rate for the specified stream and range. Frame rate values are expressed in 100-nanosecond units.</p>

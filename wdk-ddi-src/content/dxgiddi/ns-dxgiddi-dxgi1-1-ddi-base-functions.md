@@ -61,49 +61,49 @@ typedef struct DXGI1_1_DDI_BASE_FUNCTIONS {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnPresent</b>
+### -field pfnPresent
 
 <dd>
 <p>A pointer to the driver's <a href="display.presentdxgi">PresentDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnGetGammaCaps</b>
+### -field pfnGetGammaCaps
 
 <dd>
 <p>A pointer to the driver's <a href="display.getgammacapsdxgi">GetGammaCapsDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnSetDisplayMode</b>
+### -field pfnSetDisplayMode
 
 <dd>
 <p>A pointer to the driver's <a href="display.setdisplaymodedxgi">SetDisplayModeDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnSetResourcePriority</b>
+### -field pfnSetResourcePriority
 
 <dd>
 <p>A pointer to the driver's <a href="display.setresourceprioritydxgi">SetResourcePriorityDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnQueryResourceResidency</b>
+### -field pfnQueryResourceResidency
 
 <dd>
 <p>A pointer to the driver's <a href="display.queryresourceresidencydxgi">QueryResourceResidencyDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnRotateResourceIdentities</b>
+### -field pfnRotateResourceIdentities
 
 <dd>
 <p>A pointer to the driver's <a href="display.rotateresourceidentitiesdxgi">RotateResourceIdentitiesDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnBlt</b>
+### -field pfnBlt
 
 <dd>
 <p>A pointer to the driver's <a href="display.bltdxgi">BltDXGI</a> function.</p>
 </dd>
 
-### -field <b>pfnResolveSharedResource</b>
+### -field pfnResolveSharedResource
 
 <dd>
 <p>A pointer to the driver's <a href="display.resolvesharedresourcedxgi">ResolveSharedResourceDXGI</a> function.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ril_senddtmf.htm
 old-project: netvista
 ms.assetid: 4091a37e-5115-4213-9242-76b119ad28fc
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SendDTMF
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,27 +62,27 @@ HRESULT  RIL_SendDTMF(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>lpszChars</i> 
+### -param lpszChars 
 
 <dd></dd>
 
-### -param <i>dwDigitOnTimeMs</i> 
+### -param dwDigitOnTimeMs 
 
 <dd></dd>
 
-### -param <i>dwDigitOffTimeMs</i> 
+### -param dwDigitOffTimeMs 
 
 <dd></dd>
 </dl>

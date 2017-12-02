@@ -7,7 +7,7 @@ old-location: netvista\dot11_supported_dsss_channel_list.htm
 old-project: netvista
 ms.assetid: 45941a4d-12e0-4a80-b04e-9e349126f5ff
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_SUPPORTED_DSSS_CHANNEL_LIST, DOT11_SUPPORTED_DSSS_CHANNEL_LIST, *PDOT11_SUPPORTED_DSSS_CHANNEL_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,21 +55,21 @@ typedef struct _DOT11_SUPPORTED_DSSS_CHANNEL_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>uNumOfEntries</b>
+### -field uNumOfEntries
 
 <dd>
 <p>The number of entries in the 
      <b>dot11SupportedDSSSChannel</b> array.</p>
 </dd>
 
-### -field <b>uTotalNumOfEntries</b>
+### -field uTotalNumOfEntries
 
 <dd>
 <p>The maximum number of entries that the 
      <b>dot11SupportedDSSSChannel</b> array can contain.</p>
 </dd>
 
-### -field <b>dot11SupportedDSSSChannel</b>
+### -field dot11SupportedDSSSChannel
 
 <dd>
 <p>An array that specifies the list of supported frequency channels that the NIC can operate with.
@@ -119,4 +119,4 @@ typedef struct _DOT11_SUPPORTED_DSSS_CHANNEL_LIST {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SUPPORTED_DSSS_CHANNEL_LIST structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SUPPORTED_DSSS_CHANNEL_LIST structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

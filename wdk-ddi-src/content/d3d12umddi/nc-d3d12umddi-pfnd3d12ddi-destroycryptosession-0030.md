@@ -55,13 +55,13 @@ VOID APIENTRY* PFND3D12DDI_DESTROYCRYPTOSESSION_0030(
 ## -parameters
 <dl>
 
-### -param <i>hDrvDevice</i> 
+### -param hDrvDevice 
 
 <dd>
 <p>The hardware device being processed.</p>
 </dd>
 
-### -param <i>hDrvCryptoSession</i> 
+### -param hDrvCryptoSession 
 
 <dd>
 <p>The crypto session</p>

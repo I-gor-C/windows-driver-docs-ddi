@@ -55,13 +55,13 @@ HRESULT Current(
 ## -parameters
 <dl>
 
-### -param <i>pUri</i> [out]
+### -param pUri [out]
 
 <dd>
 <p>A pointer to the URI of the part. If <b>NULL</b>, the <i>ppXpsPartparameter</i> might still be valid.</p>
 </dd>
 
-### -param <i>ppXpsPart</i> [out]
+### -param ppXpsPart [out]
 
 <dd>
 <p>The current part in the iterator. If <b>NULL</b>, the <i>pUri</i> parameter might still be valid.</p>

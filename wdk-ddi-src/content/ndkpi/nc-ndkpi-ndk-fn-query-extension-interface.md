@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_query_extension_interface.htm
 old-project: netvista
 ms.assetid: 439C990E-6978-4D0F-8453-6EB2FED1DB77
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,26 +60,26 @@ NTSTATUS NdkQqueryExtensionInterface(
 ## -parameters
 <dl>
 
-### -param <i>pNdkObject</i> [in]
+### -param pNdkObject [in]
 
 <dd>
 <p>	A pointer to the object header (<a href="..\ndkpi\ns-ndkpi--ndk-object-header.md">NDK_OBJECT_HEADER</a>) for the object being queried.</p>
 </dd>
 
-### -param <i>ExtensionInterfaceID</i> [in]
+### -param ExtensionInterfaceID [in]
 
 <dd>
 <p>A pointer to the GUID that identifies the extension interface.</p>
 </dd>
 
-### -param <i>ExtensionInterfaceVersion</i> [in]
+### -param ExtensionInterfaceVersion [in]
 
 <dd>
 <p>	The requested version (<a href="netvista.ndk_version">NDK_VERSION</a>) of the extension interface.
 </p>
 </dd>
 
-### -param <i>pExtensionInterface</i> [out]
+### -param pExtensionInterface [out]
 
 <dd>
 <p>A pointer to an   <a href="..\ndkpi\ns-ndkpi--ndk-extension-interface.md">NDK_EXTENSION_INTERFACE</a> structure that the provider  initialized if the function returns STATUS_SUCCESS.</p>
@@ -172,4 +172,4 @@ NTSTATUS NdkQqueryExtensionInterface(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_QUERY_EXTENSION_INTERFACE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_QUERY_EXTENSION_INTERFACE callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

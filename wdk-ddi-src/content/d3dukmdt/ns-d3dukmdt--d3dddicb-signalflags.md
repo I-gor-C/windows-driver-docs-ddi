@@ -65,14 +65,14 @@ typedef struct _D3DDDICB_SIGNALFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>SignalAtSubmission</b>
+### -field SignalAtSubmission
 
 <dd>
 <p>A UINT value that specifies whether a context should signal synchronization objects when the previously queued packet is submitted rather than completed (which is the default behavior).</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit  <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>EnqueueCpuEvent</b>
+### -field EnqueueCpuEvent
 
 <dd>
 <p>A UINT value that modifies the behavior of the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-signalsynchronizationobject2cb.md">pfnSignalSynchronizationObject2Cb</a> function. When this member is set,  the event specified by the <b>CpuEventHandle</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-signalsynchronizationobject2.md">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2</a> structure is signaled when all contexts specified in  <b>D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2</b>  process the signal command.</p>
@@ -85,7 +85,7 @@ typedef struct _D3DDDICB_SIGNALFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
@@ -93,13 +93,13 @@ typedef struct _D3DDDICB_SIGNALFLAGS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that is contained in D3DDDICB_SIGNALFLAGS that can hold one 32-bit value that identifies signaling behavior.</p>

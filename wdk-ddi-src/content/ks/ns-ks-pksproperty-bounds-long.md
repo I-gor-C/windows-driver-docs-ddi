@@ -61,25 +61,25 @@ typedef union {
 ## -struct-fields
 <dl>
 
-### -field <b>SignedMinimum</b>
+### -field SignedMinimum
 
 <dd>
 <p>Specifies a minimum bound as a signed 32-bit value.</p>
 </dd>
 
-### -field <b>SignedMaximum</b>
+### -field SignedMaximum
 
 <dd>
 <p>Specifies a maximum bound as a signed 32-bit value.</p>
 </dd>
 
-### -field <b>UnsignedMinimum</b>
+### -field UnsignedMinimum
 
 <dd>
 <p>Specifies a minimum bound as an unsigned 32-bit value.</p>
 </dd>
 
-### -field <b>UnsignedMaximum</b>
+### -field UnsignedMaximum
 
 <dd>
 <p>Specifies a maximum bound as an unsigned 32-bit value.</p>

@@ -58,25 +58,25 @@ typedef struct _DXVA_ProcAmpControlCaps {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size of this structure in bytes.</p>
 </dd>
 
-### -field <b>InputPool</b>
+### -field InputPool
 
 <dd>
 <p>Indicates the memory pool from which the ProcAmp control source surfaces should be allocated. For more information, see the D3DPOOL enumeration in the Microsoft Window SDK documentation.</p>
 </dd>
 
-### -field <b>d3dOutputFormat</b>
+### -field d3dOutputFormat
 
 <dd>
 <p>Indicates the Direct3D surface format of the output frames. Usually the ProcAmp device outputs frames in a surface format that matches the input surface format. This member ensures that the <a href="wdkgloss.v#wdkgloss.video_mixer_renderer__vmr_#wdkgloss.video_mixer_renderer__vmr_"><i>VMR</i></a> or other video renderer is able to supply the correct format for the output frame surfaces to the ProcAmp control hardware. If the <b>DXVA_VideoProcess_YUV2RGB</b> flag is returned in the <a href="..\dxva\ne-dxva--dxva-videoprocesscaps.md">DXVA_VideoProcessCaps</a> structure, the VMR assumes that valid output formats are specified by this member as well as the RGB32 format.</p>
 </dd>
 
-### -field <b>ProcAmpControlProps</b>
+### -field ProcAmpControlProps
 
 <dd>
 <p>Identifies the ProcAmp operations that the hardware supports. The driver should return a logical combination of the following ProcAmp operations.</p>
@@ -129,7 +129,7 @@ typedef struct _DXVA_ProcAmpControlCaps {
 <p> </p>
 </dd>
 
-### -field <b>VideoProcessingCaps</b>
+### -field VideoProcessingCaps
 
 <dd>
 <p>Identifies the operations that can be performed by the ProcAmp control hardware concurrently with the requested ProcAmp adjustment. The driver should return a logical combination of one of the following ProcAmp operations.</p>

@@ -60,19 +60,19 @@ typedef struct _D3DDDI_CREATEHWQUEUEFLAGS  {
 ## -struct-fields
 <dl>
 
-### -field <b>DisableGpuTimeout</b>
+### -field DisableGpuTimeout
 
 <dd>
 <p>Indicates that GPU timeout should be disabled.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>This value is used to operate over the members collectively.</p>

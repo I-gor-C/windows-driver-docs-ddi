@@ -62,38 +62,38 @@ typedef struct _DXGK_COLORIMETRY {
 ## -struct-fields
 <dl>
 
-### -field <b>RedPoint</b>
+### -field RedPoint
 
 <dd>
 <p>Override for display red point.  Note, each dimension is a 10-bit value stored in the least significant bits.
 Zero indicates no override.</p>
 </dd>
 
-### -field <b>GreenPoint</b>
+### -field GreenPoint
 
 <dd>
 <p>Override for display green point. Note, each dimension is a 10-bit value stored in the least significant bits.</p>
 </dd>
 
-### -field <b>BluePoint</b>
+### -field BluePoint
 
 <dd>
 <p>Override for display blue point. Note, each dimension is a 10-bit value stored in the least significant bits.</p>
 </dd>
 
-### -field <b>WhitePoint</b>
+### -field WhitePoint
 
 <dd>
 <p>Override for display white point. Note, each dimension is a 10-bit value stored in the least significant bits.</p>
 </dd>
 
-### -field <b>MinLuminance</b>
+### -field MinLuminance
 
 <dd>
 <p>Override for the minimum luminance value supported by the display measured in one ten thousandth of a nit.  Only valid if MaxLuminance is non-zero.  Zero is a valid value.</p>
 </dd>
 
-### -field <b>MaxLuminance</b>
+### -field MaxLuminance
 
 <dd>
 <p>Override for the maximum luminance value supported by the display measured in one ten thousandth of a nit.  This luminance level is expected to be supported for only a relatively small area in any given frame.  
@@ -101,7 +101,7 @@ Zero indicates no override of MaxLuminance, MaxFullFrameLuminance or MinLuminanc
 </p>
 </dd>
 
-### -field <b>MaxFullFrameLuminance</b>
+### -field MaxFullFrameLuminance
 
 <dd>
 <p>Override for the max full frame luminance value supported by the display measured in one ten thousandth of a nit.  This luminance level must be supported across every pixel in the frame simultaneously in order to provide an estimate of the average luminance value which can be supported by the display across a frame.
@@ -109,13 +109,13 @@ Only valid if MaxLuminance is non-zero.  Zero is not a valid override.
 </p>
 </dd>
 
-### -field <b>FormatBitDepths</b>
+### -field FormatBitDepths
 
 <dd>
 <p>Overrides the supported bits per color channel in each of the five color encodings specified for wire-formats.  At least one bit must be set, excluding the Preference field which is reserved and must be zero.</p>
 </dd>
 
-### -field <b>StandardColorimetryFlags</b>
+### -field StandardColorimetryFlags
 
 <dd>
 <p>Indicates support for specific colorimetry and EOTF capabilities using bit-fields.</p>

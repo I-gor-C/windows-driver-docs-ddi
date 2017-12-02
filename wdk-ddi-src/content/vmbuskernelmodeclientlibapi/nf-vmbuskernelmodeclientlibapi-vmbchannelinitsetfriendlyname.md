@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelinitsetfriendlyname.htm
 old-project: netvista
 ms.assetid: 17FEFFDB-DCCC-4782-9F99-195A03F4901E
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbChannelInitSetFriendlyName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,14 +59,14 @@ NTSTATUS
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>A handle for the channel to name.
 </p>
 </dd>
 
-### -param <i>Name</i> [in]
+### -param Name [in]
 
 <dd>
 <p>The new friendly name of the channel.</p>

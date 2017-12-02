@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequestcompletionparams_getreadparameters.htm
 old-project: wdf
 ms.assetid: 8f38616e-498b-485e-84c8-de62477b5871
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFIoRequestCompletionParams, GetReadParameters, IWDFIoRequestCompletionParams::GetReadParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,21 +58,21 @@ void  GetReadParameters(
 ## -parameters
 <dl>
 
-### -param <i>ppReadMemory</i> [out]
+### -param ppReadMemory [out]
 
 <dd>
 <p>A pointer to a variable that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface for access to the read buffer for the completion of the read request. </p>
 <p>This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information. </p>
 </dd>
 
-### -param <i>pBytesRead</i> [out]
+### -param pBytesRead [out]
 
 <dd>
 <p>A pointer to a variable that receives the size, in bytes, of the read buffer for the completion of the read request.</p>
 <p>This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information. </p>
 </dd>
 
-### -param <i>pReadMemoryOffset</i> [out]
+### -param pReadMemoryOffset [out]
 
 <dd>
 <p>A pointer to a variable that receives the offset, in bytes, into the read buffer for the completion of the read request.</p>
@@ -147,4 +147,4 @@ void  GetReadParameters(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequestCompletionParams::GetReadParameters method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequestCompletionParams::GetReadParameters method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

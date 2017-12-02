@@ -56,13 +56,13 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="ScsiWmiEventControl"></a><a id="scsiwmieventcontrol"></a><a id="SCSIWMIEVENTCONTROL"></a><b>ScsiWmiEventControl</b>
+### -field ScsiWmiEventControl
 
 <dd>
 <p>Indicates that a WMI event is to be enabled or disabled. </p>
 </dd>
 
-### -field <a id="ScsiWmiDataBlockControl"></a><a id="scsiwmidatablockcontrol"></a><a id="SCSIWMIDATABLOCKCONTROL"></a><b>ScsiWmiDataBlockControl</b>
+### -field ScsiWmiDataBlockControl
 
 <dd>
 <p>Indicates that a data collection for a block is to be enabled or disabled.  </p>

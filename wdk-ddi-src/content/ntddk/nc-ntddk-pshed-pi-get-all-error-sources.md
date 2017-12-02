@@ -60,25 +60,25 @@ NTSTATUS GetAllErrorSources(
 ## -parameters
 <dl>
 
-### -param <i>PluginContext</i> [in, out, optional]
+### -param PluginContext [in, out, optional]
 
 <dd>
 <p>A pointer to the context area that was specified in the <b>Context</b> member of the <a href="..\ntddk\ns-ntddk--whea-pshed-plugin-registration-packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure when the PSHED plug-in called the <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a> function to register itself with the PSHED.</p>
 </dd>
 
-### -param <i>Count</i> [in, out]
+### -param Count [in, out]
 
 <dd>
 <p>A pointer to a ULONG-typed variable. When the <i>GetAllErrorSources</i> callback function is called, this variable contains the number of error source descriptor structures that are contained in the buffer pointed to by the <i>ErrorSources</i> parameter as provided by the PSHED. If the <i>GetAllErrorSources</i> callback function changes the number of error source descriptor structures that are in the buffer, it must set this variable to the new number of error source descriptor structures before it returns.</p>
 </dd>
 
-### -param <i>ErrorSources</i> [in, out]
+### -param ErrorSources [in, out]
 
 <dd>
 <p>A pointer to a buffer that receives an array of <a href="..\ntddk\ns-ntddk--whea-error-source-descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structures that represents all of the error sources that are implemented by the hardware platform. When the <i>GetAllErrorSources</i> callback function is called, this buffer contains an initial list of error source descriptor structures that is provided by the PSHED. The PSHED plug-in can make changes to the list so that it accurately represents all of the error sources that are implemented by the hardware platform.</p>
 </dd>
 
-### -param <i>Length</i> [in, out]
+### -param Length [in, out]
 
 <dd>
 <p>A pointer to a ULONG-typed variable that contains the size, in bytes, of the buffer pointed to by the <i>ErrorSources</i> parameter. If the size is too small to contain the modified list of error source descriptor structures, the <i>GetAllErrorSources</i> callback function sets this variable to the buffer size that is required to contain the list and returns STATUS_BUFFER_TOO_SMALL.</p>

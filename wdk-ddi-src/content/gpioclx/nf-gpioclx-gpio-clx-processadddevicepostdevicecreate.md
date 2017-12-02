@@ -55,13 +55,13 @@ NTSTATUS GPIO_CLX_ProcessAddDevicePostDeviceCreate(
 ## -parameters
 <dl>
 
-### -param <i>Driver</i> [in]
+### -param Driver [in]
 
 <dd>
 <p>A WDFDRIVER handle to the framework driver object for the GPIO controller driver.</p>
 </dd>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A WDFDEVICE handle to the framework device object that represents the GPIO controller. The caller obtained this handle from the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call that created the device object.</p>

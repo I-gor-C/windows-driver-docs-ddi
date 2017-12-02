@@ -7,7 +7,7 @@ old-location: wdf\wdffileobjectgetflags.htm
 old-project: wdf
 ms.assetid: f2f30acb-cab7-444a-8b86-6001a8a325b9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfFileObjectGetFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ ULONG WdfFileObjectGetFlags(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>A handle to a framework file object.</p>

@@ -55,7 +55,7 @@ typedef struct _FILE_POSITION_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>CurrentByteOffset</b>
+### -field CurrentByteOffset
 
 <dd>
 <p>The byte offset of the current file pointer.</p>

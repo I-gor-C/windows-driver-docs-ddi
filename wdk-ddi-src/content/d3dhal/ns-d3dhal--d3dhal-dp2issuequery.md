@@ -58,13 +58,13 @@ typedef struct _D3DHAL_DP2ISSUEQUERY {
 ## -struct-fields
 <dl>
 
-### -field <b>dwQueryID</b>
+### -field dwQueryID
 
 <dd>
 <p>Identifies the query for which the driver asynchronously provides information.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Specifies the state of the query. This member can contain one or more of the following flags: </p>

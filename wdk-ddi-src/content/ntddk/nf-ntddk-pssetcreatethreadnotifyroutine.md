@@ -54,7 +54,7 @@ NTSTATUS PsSetCreateThreadNotifyRoutine(
 ## -parameters
 <dl>
 
-### -param <i>NotifyRoutine</i> [in]
+### -param NotifyRoutine [in]
 
 <dd>
 <p>A pointer to the driver's implementation of <a href="..\ntddk\nc-ntddk-pcreate-thread-notify-routine.md">PCREATE_THREAD_NOTIFY_ROUTINE</a> routine. </p>

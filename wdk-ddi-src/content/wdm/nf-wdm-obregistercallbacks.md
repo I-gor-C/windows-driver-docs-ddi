@@ -56,13 +56,13 @@ NTSTATUS ObRegisterCallbacks(
 ## -parameters
 <dl>
 
-### -param <i>CallBackRegistration</i> [in]
+### -param CallBackRegistration [in]
 
 <dd>
 <p>A pointer to an <a href="..\wdm\ns-wdm--ob-callback-registration.md">OB_CALLBACK_REGISTRATION</a> structure that specifies the list of callback routines and other registration information.</p>
 </dd>
 
-### -param <i>RegistrationHandle</i> [out]
+### -param RegistrationHandle [out]
 
 <dd>
 <p>A pointer to a variable that receives a value that identifies the set of registered callback routines. The caller passes this value to the <a href="..\wdm\nf-wdm-obunregistercallbacks.md">ObUnRegisterCallbacks</a> routine to unregister the set of callbacks. </p>

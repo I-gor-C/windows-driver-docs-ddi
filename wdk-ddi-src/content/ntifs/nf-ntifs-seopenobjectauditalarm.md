@@ -7,7 +7,7 @@ old-location: ifsk\seopenobjectauditalarm.htm
 old-project: ifsk
 ms.assetid: a4310cf8-1518-4d25-b2f9-a232ddd9c535
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: SeOpenObjectAuditAlarm
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,55 +62,55 @@ VOID SeOpenObjectAuditAlarm(
 ## -parameters
 <dl>
 
-### -param <i>ObjectTypeName</i> [in]
+### -param ObjectTypeName [in]
 
 <dd>
 <p>Pointer to a null-terminated string specifying the type of object to which the client is requesting access. This string appears in any audit message that is generated.</p>
 </dd>
 
-### -param <i>Object</i> [in, optional]
+### -param Object [in, optional]
 
 <dd>
 <p>Address of the object being opened. This value is needed only to enter into log messages. If the open attempt fails, the value of <i>Object</i> is ignored. Otherwise, it must be provided.</p>
 </dd>
 
-### -param <i>AbsoluteObjectName</i> [in, optional]
+### -param AbsoluteObjectName [in, optional]
 
 <dd>
 <p>Pointer to a null-terminated string specifying the name of the object being opened. This string appears in any audit message that is generated.</p>
 </dd>
 
-### -param <i>SecurityDescriptor</i> [in]
+### -param SecurityDescriptor [in]
 
 <dd>
 <p>A pointer to the security descriptor structure for the object being opened.</p>
 </dd>
 
-### -param <i>AccessState</i> [in]
+### -param AccessState [in]
 
 <dd>
 <p>Pointer to an access state structure containing the object's subject context, remaining desired access types, granted access types, and, optionally, a privilege set to indicate which privileges were used to permit the access.</p>
 </dd>
 
-### -param <i>ObjectCreated</i> [in]
+### -param ObjectCreated [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if the open operation causes a new object to be created, or <b>FALSE</b> if an existing object is opened.</p>
 </dd>
 
-### -param <i>AccessGranted</i> [in]
+### -param AccessGranted [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if open access was granted based on a previous access check or privilege check, or <b>FALSE</b> if it was denied.</p>
 </dd>
 
-### -param <i>AccessMode</i> [in]
+### -param AccessMode [in]
 
 <dd>
 <p>Access mode used for the access check. Either <b>UserMode</b> or <b>KernelMode</b>.</p>
 </dd>
 
-### -param <i>GenerateOnClose</i> [out]
+### -param GenerateOnClose [out]
 
 <dd>
 <p>Pointer to a flag set by the audit generation routine when <b>SeOpenObjectAuditAlarm</b> returns.  </p>
@@ -214,4 +214,4 @@ VOID SeOpenObjectAuditAlarm(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeOpenObjectAuditAlarm routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeOpenObjectAuditAlarm routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -57,19 +57,19 @@ STDMETHOD EnumOptions(
 ## -parameters
 <dl>
 
-### -param <i>pszFeatureKeyword</i> [in]
+### -param pszFeatureKeyword [in]
 
 <dd>
 <p>An ANSI character string that contains the feature whose options are requested. </p>
 </dd>
 
-### -param <i>pOptionList[]</i> [out]
+### -param pOptionList[] [out]
 
 <dd>
 <p>A pointer to an array of ANSI character strings that contain all of the options for the feature that is specified in the <i>pszFeatureKeyword</i> parameter. <b>IPrintCoreHelperPS::EnumOptions</b> is responsible for allocating the memory for the array. The last element of the array must be a <b>NULL</b> string.</p>
 </dd>
 
-### -param <i>pdwNumOptions</i> [out]
+### -param pdwNumOptions [out]
 
 <dd>
 <p>A pointer to a variable that receives the number of options in the option array that is pointed to by the <i>pOptionList</i> parameter.</p>

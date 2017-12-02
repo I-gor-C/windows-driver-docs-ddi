@@ -56,13 +56,13 @@ LONG KeReleaseMutex(
 ## -parameters
 <dl>
 
-### -param <i>Mutex</i> [in, out]
+### -param Mutex [in, out]
 
 <dd>
 <p>A pointer to an initialized mutex object for which the caller provides the storage.</p>
 </dd>
 
-### -param <i>Wait</i> [in]
+### -param Wait [in]
 
 <dd>
 <p>Specifies whether the call to <b>KeReleaseMutex</b> is to be immediately followed by a call to one of the <b>KeWait<i>Xxx</i></b> routines. If <b>TRUE</b>, the <b>KeReleaseMutex</b> call must be followed by a call to <a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>, <a href="kernel.kewaitformutexobject">KeWaitForMutexObject</a>, or <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>. For more information, see the following Remarks section. </p>

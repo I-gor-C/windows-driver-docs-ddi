@@ -55,13 +55,13 @@ typedef struct _MOUNTDEV_NAME {
 ## -struct-fields
 <dl>
 
-### -field <b>NameLength</b>
+### -field NameLength
 
 <dd>
 <p>Contains the length of the name, in bytes. </p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>Contains a variable-sized array of wide characters that holds the name of the device mount point. The name may be a nonpersistent target name such as "\Device\HarddiskVolume1", a persistent symbolic link name such as a drive letter, "\DosDevices\D:", or a mount point such as "\DosDevices\E:\FilesysD\mnt". </p>

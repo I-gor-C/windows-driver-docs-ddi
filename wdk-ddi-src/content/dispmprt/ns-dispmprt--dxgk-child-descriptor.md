@@ -57,25 +57,25 @@ typedef struct _DXGK_CHILD_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>ChildDeviceType</b>
+### -field ChildDeviceType
 
 <dd>
 <p>A member of the <a href="..\dispmprt\ne-dispmprt--dxgk-child-device-type.md">DXGK_CHILD_DEVICE_TYPE</a> enumeration that indicates the type of the child device.</p>
 </dd>
 
-### -field <b>ChildCapabilities</b>
+### -field ChildCapabilities
 
 <dd>
 <p>A <a href="..\dispmprt\ns-dispmprt--dxgk-child-capabilities.md">DXGK_CHILD_CAPABILITIES</a> structure that describes the capabilities of the child device.</p>
 </dd>
 
-### -field <b>AcpiUid</b>
+### -field AcpiUid
 
 <dd>
 <p>If the child device is an ACPI device, this member contains the unique ACPI identifier of the child device.</p>
 </dd>
 
-### -field <b>ChildUid</b>
+### -field ChildUid
 
 <dd>
 <p>A unique identifier, created by the display miniport driver, that identifies the child device.</p>

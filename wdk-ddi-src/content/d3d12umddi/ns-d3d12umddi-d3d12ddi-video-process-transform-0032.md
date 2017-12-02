@@ -56,19 +56,19 @@ typedef struct _D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>SourceRectangle</b>
+### -field SourceRectangle
 
 <dd>
 <p>Source rectangle.</p>
 </dd>
 
-### -field <b>DestinationRectangle</b>
+### -field DestinationRectangle
 
 <dd>
 <p>Destination rectangle.</p>
 </dd>
 
-### -field <b>Orientation</b>
+### -field Orientation
 
 <dd>
 <p>Orientation.</p>

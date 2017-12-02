@@ -60,37 +60,37 @@ HRESULT RouterCreatePrintAsyncNotificationChannel(
 ## -parameters
 <dl>
 
-### -param <i>pName</i> [in]
+### -param pName [in]
 
 <dd>
 <p>A pointer to a null-terminated string that specifies the name of the printer or print server.</p>
 </dd>
 
-### -param <i>pNotificationType</i> [in]
+### -param pNotificationType [in]
 
 <dd>
 <p>A pointer to a GUID that represents the type of notifications sent through this channel.</p>
 </dd>
 
-### -param <i>eNotificationFilter</i> [in]
+### -param eNotificationFilter [in]
 
 <dd>
 <p>A filter for the session or user that receives the notifications.</p>
 </dd>
 
-### -param <i>eConversationStyle</i> [in]
+### -param eConversationStyle [in]
 
 <dd>
 <p>The type of communication: unidirectional or bidirectional.</p>
 </dd>
 
-### -param <i>pCallback</i> [in]
+### -param pCallback [in]
 
 <dd>
 <p>A pointer to the callback function that is called to deliver the response notifications, when bidirectional communication is in effect. This parameter is ignored when unidirectional communication is in effect.</p>
 </dd>
 
-### -param <i>ppIAsyncNotification</i> [out]
+### -param ppIAsyncNotification [out]
 
 <dd>
 <p>A pointer to a variable that receives the address of the interface object that represents the notification channel.</p>
@@ -101,7 +101,7 @@ HRESULT RouterCreatePrintAsyncNotificationChannel(
 <p><code>RouterCreatePrintAsyncNotificationChannel</code> returns S_OK on success and returns a standard COM error code otherwise.</p>
 
 ## -remarks
-<p>In some cases, you must release the channel that you created with the <code>RouterCreatePrintAsyncNotificationChannel</code> function by calling <b>Release</b> on IPrintAsyncNotifyChannel. For information about when to release a channel, see <a href="NULL">Notification Channel</a>.</p>
+<p>In some cases, you must release the channel that you created with the <code>RouterCreatePrintAsyncNotificationChannel</code> function by calling <b>Release</b> on IPrintAsyncNotifyChannel. For information about when to release a channel, see <a href="https://msdn.microsoft.com/3161342a-0737-4f3b-bb16-32d6949bceea">Notification Channel</a>.</p>
 
 ## -requirements
 <table>

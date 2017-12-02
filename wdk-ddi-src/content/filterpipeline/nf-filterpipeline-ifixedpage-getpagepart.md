@@ -55,13 +55,13 @@ HRESULT GetPagePart(
 ## -parameters
 <dl>
 
-### -param <i>uri</i> [in]
+### -param uri [in]
 
 <dd>
 <p>The URI for a part. For example, the filter might parse the page markup and find a referenced font. The filter can use the font URI in a call to <b>GetPagePart</b>. The filter could then retrieve the font object that is associated with the page.</p>
 </dd>
 
-### -param <i>ppUnk</i> [out]
+### -param ppUnk [out]
 
 <dd>
 <p>The object that is to be queried.</p>

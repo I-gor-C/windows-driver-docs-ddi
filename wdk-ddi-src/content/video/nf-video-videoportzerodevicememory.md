@@ -56,13 +56,13 @@ VOID VideoPortZeroDeviceMemory(
 ## -parameters
 <dl>
 
-### -param <i>Destination</i> [out]
+### -param Destination [out]
 
 <dd>
 <p>Specifies the base address of the adapter memory area. This value must be a mapped logical address returned by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.</p>
 </dd>
 
-### -param <i>Length</i> 
+### -param Length 
 
 <dd>
 <p>Specifies the size, in bytes, to be filled.</p>

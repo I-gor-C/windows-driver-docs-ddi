@@ -55,13 +55,13 @@ typedef struct D3D11_1DDI_AES_CTR_IV {
 ## -struct-fields
 <dl>
 
-### -field <b>IV</b>
+### -field IV
 
 <dd>
 <p>The IV, in big-endian format.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>The block count, in big-endian format.</p>

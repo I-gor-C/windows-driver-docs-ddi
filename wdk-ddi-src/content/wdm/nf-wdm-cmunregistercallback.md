@@ -55,7 +55,7 @@ NTSTATUS CmUnRegisterCallback(
 ## -parameters
 <dl>
 
-### -param <i>Cookie</i> [in]
+### -param Cookie [in]
 
 <dd>
 <p>A LARGE_INTEGER value that identifies the callback routine to unregister. <b>CmRegisterCallback</b> provided this value when you registered the callback routine. </p>

@@ -58,13 +58,13 @@ typedef struct _D3DKMT_QUERYALLOCATIONRESIDENCY {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that the resource or list of allocations are associated with.</p>
 </dd>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A handle to a resource whose residency is queried. If the OpenGL ICD uses the array that <b>phAllocationList</b> specifies to query for residency, it sets <b>hResource</b> to <b>NULL</b>. If the OpenGL ICD sets <b>hResource</b> to a non-<b>NULL</b> value, it must set the <b>AllocationCount</b> member to zero and <b>phAllocationList</b> to <b>NULL</b>. </p>
@@ -73,20 +73,20 @@ typedef struct _D3DKMT_QUERYALLOCATIONRESIDENCY {
 <p>To retrieve detailed residency information about each allocation that belongs to a resource, the allocation must be queried.</p>
 </dd>
 
-### -field <b>phAllocationList</b>
+### -field phAllocationList
 
 <dd>
 <p>[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations. The OpenGL ICD uses these handles to query for residency status. </p>
 <p>If the OpenGL ICD sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, it must set <b>phAllocationList</b> to <b>NULL</b>. </p>
 </dd>
 
-### -field <b>AllocationCount</b>
+### -field AllocationCount
 
 <dd>
 <p>[in] The number of allocations in the array that <b>phAllocationList</b> specifies. If the OpenGL ICD sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, it must set <b>AllocationCount</b> to zero.</p>
 </dd>
 
-### -field <b>pResidencyStatus</b>
+### -field pResidencyStatus
 
 <dd>
 <p>[out] A pointer to an array of D3DKMT_ALLOCATIONRESIDENCYSTATUS enumerators. If the <b>hResource</b> member is non-<b>NULL</b>, the array contains a single element and receives one of the enumerators that are listed in the following table to indicate the residency status of the resource. If <b>hResource</b> is <b>NULL</b>, the number of elements in the array is specified by the <b>AllocationCount</b> member, and each element receives one of the following enumerators to indicate the residency status of the corresponding allocation in the <b>phAllocationList</b> array.</p>

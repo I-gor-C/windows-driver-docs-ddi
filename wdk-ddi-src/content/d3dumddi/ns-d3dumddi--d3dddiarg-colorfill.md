@@ -58,31 +58,31 @@ typedef struct _D3DDDIARG_COLORFILL {
 ## -struct-fields
 <dl>
 
-### -field <b>hResource</b>
+### -field hResource
 
 <dd>
 <p>[in] A handle to the resource.</p>
 </dd>
 
-### -field <b>SubResourceIndex</b>
+### -field SubResourceIndex
 
 <dd>
 <p>[in] The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource, or surface, on which a rectangular area is color-filled.</p>
 </dd>
 
-### -field <b>DstRect</b>
+### -field DstRect
 
 <dd>
 <p>[in] A <a href="display.rectl">RECTL</a> structure that indicates the upper-left and lower-right points of a rectangle on the surface to color fill. </p>
 </dd>
 
-### -field <b>Color</b>
+### -field Color
 
 <dd>
 <p>A D3DCOLOR data type for the A8R8G8B8 fill color. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-colorfillflags.md">D3DDDI_COLORFILLFLAGS</a> structure that identifies the type of color-fill operation to perform. </p>

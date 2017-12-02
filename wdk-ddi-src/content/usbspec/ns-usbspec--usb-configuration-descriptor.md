@@ -62,43 +62,43 @@ typedef struct _USB_CONFIGURATION_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>Specifies the length, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>bDescriptorType</b>
+### -field bDescriptorType
 
 <dd>
 <p>Specifies the descriptor type. Must be set to USB_CONFIGURATION_DESCRIPTOR_TYPE.</p>
 </dd>
 
-### -field <b>wTotalLength</b>
+### -field wTotalLength
 
 <dd>
 <p>Specifies the total length, in bytes, of all data for the configuration. The length includes all interface, endpoint, class, or vendor-specific descriptors that are returned with the configuration descriptor.</p>
 </dd>
 
-### -field <b>bNumInterfaces</b>
+### -field bNumInterfaces
 
 <dd>
 <p>Specifies the total number of interfaces supported by this configuration.</p>
 </dd>
 
-### -field <b>bConfigurationValue</b>
+### -field bConfigurationValue
 
 <dd>
 <p>Contains the value that is used to select a configuration. This value is passed to the USB SetConfiguration request , as described in version 1.1 of the Universal Serial Bus Specification. The port driver does not currently expose a service that allows higher-level drivers to set the configuration. </p>
 </dd>
 
-### -field <b>iConfiguration</b>
+### -field iConfiguration
 
 <dd>
 <p>Specifies the device-defined index of the string descriptor for this configuration.</p>
 </dd>
 
-### -field <b>bmAttributes</b>
+### -field bmAttributes
 
 <dd>
 <p>Specifies a bitmap to describe behavior of this configuration. The bits are described and set in little-endian order.</p>
@@ -143,7 +143,7 @@ typedef struct _USB_CONFIGURATION_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>MaxPower</b>
+### -field MaxPower
 
 <dd>
 <p>Specifies the power requirements of this device in two-milliampere units. This member is valid only if bit seven is set in <b>bmAttributes</b>.</p>

@@ -81,40 +81,40 @@ typedef struct _DXGK_VIDMMCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>OutOfOrderLock</b>
+### -field OutOfOrderLock
 
 <dd>
 <p>Specifies whether the driver can lock allocation instances other than the latest instance. The driver typically sets this value for DDI threading and load balancing if a DDI thread must lock a vertex buffer that an application thread had previously locked and discarded. </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001). </p>
 </dd>
 
-### -field <b>DedicatedPagingEngine</b>
+### -field DedicatedPagingEngine
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>PagingEngineCanSwizzle</b>
+### -field PagingEngineCanSwizzle
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>SectionBackedPrimary</b>
+### -field SectionBackedPrimary
 
 <dd>
 <p>Specifies whether the driver supports section-backed primary allocations.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>CrossAdapterResource</b>
+### -field CrossAdapterResource
 
 <dd>
 <p>Specifies whether the driver supports cross-adapter resources in a <a href="display.using_cross-adapter_resources_in_a_hybrid_system#definition_of_a_hybrid_system#definition_of_a_hybrid_system">hybrid system</a>.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>VirtualAddressingSupported</b>
+### -field VirtualAddressingSupported
 
 <dd>
 <p>Specifies whether the driver supports virtual memory addressing.</p>
@@ -124,54 +124,54 @@ typedef struct _DXGK_VIDMMCAPS {
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>GpuMmuSupported</b>
+### -field GpuMmuSupported
 
 <dd>
 <p>Specifies whether the adapter supports the <i>GpuMmu</i> model. An adapter cannot support the <i>GpuMmu</i> and the <i>IoMmu</i> models on different engines at the same time.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>IoMmuSupported</b>
+### -field IoMmuSupported
 
 <dd>
 <p>Specifies whether the adapter supports the <i>IoMmu</i> model. An adapter cannot support the <i>GpuMmu</i> and the <i>IoMmu</i> models on different engines at the same time.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>ReplicateGdiContent</b>
+### -field ReplicateGdiContent
 
 <dd>
 <p>Specifies whether the adapter supports the replication of GDI content.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 31 bits (after setting <b>OutOfOrderLock</b>) of the <b>Value</b> member to zeros.</p>
 <p>Note that this version of the <b>Reserved</b> member is available only if DXGKDDI_INTERFACE_VERSION &lt; DXGKDDI_INTERFACE_VERSION_WIN7.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 31 bits (after setting <b>OutOfOrderLock</b>) of the <b>Value</b> member to zeros. </p>
 <p>Note that this version of the <b>Reserved</b> member is available only if DXGKDDI_INTERFACE_VERSION &lt; DXGKDDI_INTERFACE_VERSION_WIN7.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>
@@ -179,7 +179,7 @@ typedef struct _DXGK_VIDMMCAPS {
       </p>
 </dd>
 
-### -field <b>PagingNode</b>
+### -field PagingNode
 
 <dd>
 <p>The zero-based index of the node to use for paging operations. If the driver does not set the <b>MultiEngineAware</b> bit-field member of the <b>SchedulingCaps</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a> structure, the DirectX graphics kernel subsystem ignores the setting of <b>PagingNode</b>. </p>

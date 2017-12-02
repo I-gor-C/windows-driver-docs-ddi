@@ -55,13 +55,13 @@ typedef struct _tagKSTOPOLOGY_ENDPOINTIDPAIR {
 ## -struct-fields
 <dl>
 
-### -field <b>RenderEndpoint</b>
+### -field RenderEndpoint
 
 <dd>
 <p>Specifies the render endpoint ID.</p>
 </dd>
 
-### -field <b>CaptureEndpoint</b>
+### -field CaptureEndpoint
 
 <dd>
 <p>Specifies the capture endpoint ID. </p>

@@ -7,7 +7,7 @@ old-location: image\wia_dev_cap_drv.htm
 old-project: image
 ms.assetid: 4024d455-2393-481f-8cb5-b33346ca85c7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: WIA_DEV_CAP_DRV,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,14 +59,14 @@ typedef struct _WIA_DEV_CAP_DRV {
 ## -struct-fields
 <dl>
 
-### -field <b>guid</b>
+### -field guid
 
 <dd>
 <p>Points to a GUID that identifies the device capability. This member can be set to any of the values specified for WIA device commands (WIA_CMD_<i>XXX</i> commands) or WIA event identifiers (WIA_EVENT_<i>XXX</i> event identifiers). See the Microsoft Windows SDK documentation for more information.</p>
 <p>The driver can define its own capability GUID that it can send down to the device. An application would need to have specific knowledge about that capability in order for it to be able to respond to the new capability, however. An application normally recognizes only the standard WIA command and event GUIDs (WIA_CMD_XXX and WIA_EVENT_XXX).</p>
 </dd>
 
-### -field <b>ulFlags</b>
+### -field ulFlags
 
 <dd>
 <p>Specifies the type of event. This member can be set to one or both of the following: </p>
@@ -95,19 +95,19 @@ typedef struct _WIA_DEV_CAP_DRV {
 <p> </p>
 </dd>
 
-### -field <b>wszName</b>
+### -field wszName
 
 <dd>
 <p>Specifies a string that contains a short version of the capability name. </p>
 </dd>
 
-### -field <b>wszDescription</b>
+### -field wszDescription
 
 <dd>
 <p>Specifies a string containing the version of the capability name that can be displayed to the user.</p>
 </dd>
 
-### -field <b>wszIcon</b>
+### -field wszIcon
 
 <dd>
 <p>Specifies a string containing the name of the icon for this capability. The icon can be displayed to the user .</p>
@@ -147,9 +147,9 @@ typedef struct _WIA_DEV_CAP_DRV {
 <a href="image.iwiaminidrv_drvgetcapabilities">IWiaMiniDrv::drvGetCapabilities</a>
 </dt>
 <dt>
-<a href="NULL">Driver Capabilities</a>
+<a href="https://msdn.microsoft.com/639eff56-655d-4b6a-95f0-daa1daf62fae">Driver Capabilities</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIA_DEV_CAP_DRV structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIA_DEV_CAP_DRV structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -58,31 +58,31 @@ typedef struct _MS_SMHBA_SAS_Port {
 ## -struct-fields
 <dl>
 
-### -field <b>PortProtocol</b>
+### -field PortProtocol
 
 <dd>
 <p>The protocols that are supported by this SAS port.</p>
 </dd>
 
-### -field <b>LocalSASAddress</b>
+### -field LocalSASAddress
 
 <dd>
 <p>The Port_Identifier of this SAS port</p>
 </dd>
 
-### -field <b>AttachedSASAddress</b>
+### -field AttachedSASAddress
 
 <dd>
 <p>The SAS address of the entity that is at the opposite end of the SAS link from this local SAS port.</p>
 </dd>
 
-### -field <b>NumberofDiscoveredPorts</b>
+### -field NumberofDiscoveredPorts
 
 <dd>
 <p>The number of end ports that are visible to the local SAS port. The discovered ports might also include SMP ports that are contained within SAS expander devices.</p>
 </dd>
 
-### -field <b>NumberofPhys</b>
+### -field NumberofPhys
 
 <dd>
 <p>The number of physical ports that are associated with this SAS port. If the value is more than one, this SAS port is considered to be a wide port.</p>

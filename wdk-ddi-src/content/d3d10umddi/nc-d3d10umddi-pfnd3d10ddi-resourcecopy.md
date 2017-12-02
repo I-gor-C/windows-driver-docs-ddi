@@ -59,19 +59,19 @@ VOID APIENTRY ResourceCopy(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hDstResource</i> [in]
+### -param hDstResource [in]
 
 <dd>
 <p> A handle to the destination resource to copy to.</p>
 </dd>
 
-### -param <i>hSrcResource</i> [in]
+### -param hSrcResource [in]
 
 <dd>
 <p> A handle to the source resource to copy from.</p>

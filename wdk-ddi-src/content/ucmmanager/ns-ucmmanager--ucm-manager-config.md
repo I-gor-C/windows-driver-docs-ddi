@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Describes the configuration options for the UCM Manager. An initialized <b>UCM_MANAGER_CONFIG</b> structure is an input parameter value to   <a href="buses.ucminitializedevice">UcmInitializeDevice</a>.</p>
+<p>Describes the configuration options for the UCM Manager. An initialized <b>UCM_MANAGER_CONFIG</b> structure is an input parameter value to   <a href="..\ucmmanager\nf-ucmmanager-ucminitializedevice.md">UcmInitializeDevice</a>.</p>
 
 
 ## -syntax
@@ -55,10 +55,10 @@ typedef struct _UCM_MANAGER_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>               Size</b>
+### -field                Size
 
 <dd>
-<p>Size of the <b>UCM_MANAGER_CONFIG</b> structure. Initialize this structure by calling <a href="buses.ucm_manager_config_init">UCM_MANAGER_CONFIG_INIT</a>.</p>
+<p>Size of the <b>UCM_MANAGER_CONFIG</b> structure. Initialize this structure by calling <a href="..\ucmmanager\nf-ucmmanager-ucm-manager-config-init.md">UCM_MANAGER_CONFIG_INIT</a>.</p>
 </dd>
 </dl>
 
@@ -114,7 +114,7 @@ typedef struct _UCM_MANAGER_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucm_manager_config_init">UCM_MANAGER_CONFIG_INIT</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucm-manager-config-init.md">UCM_MANAGER_CONFIG_INIT</a>
 </dt>
 </dl>
 <p> </p>

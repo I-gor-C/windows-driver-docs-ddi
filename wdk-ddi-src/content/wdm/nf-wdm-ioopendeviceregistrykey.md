@@ -58,13 +58,13 @@ NTSTATUS IoOpenDeviceRegistryKey(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the PDO of the device instance for which the registry key is to be opened.</p>
 </dd>
 
-### -param <i>DevInstKeyType</i> [in]
+### -param DevInstKeyType [in]
 
 <dd>
 <p>Specifies flags indicating whether to open a device-specific hardware key or a driver-specific software key. The flags also indicate whether the key is relative to the current hardware profile. For more information about hardware and software keys, see <a href="devinst.overview_of_registry_trees_and_keys">Registry Keys for Drivers</a>.</p>
@@ -72,19 +72,19 @@ NTSTATUS IoOpenDeviceRegistryKey(
 <p></p>
 <dl>
 
-### -param <a id="PLUGPLAY_REGKEY_DEVICE"></a><a id="plugplay_regkey_device"></a>PLUGPLAY_REGKEY_DEVICE
+### -param PLUGPLAY_REGKEY_DEVICE
 
 <dd>
 <p>Open the <b>Device Parameters</b> subkey under the device's <a href="wdkgloss.h#wdkgloss.hardware_key#wdkgloss.hardware_key"><i>hardware key</i></a>. The key is located under the key for the device instance specified by <i>DeviceObject</i>. This flag cannot be specified with PLUGPLAY_REGKEY_DRIVER.</p>
 </dd>
 
-### -param <a id="PLUGPLAY_REGKEY_DRIVER"></a><a id="plugplay_regkey_driver"></a>PLUGPLAY_REGKEY_DRIVER
+### -param PLUGPLAY_REGKEY_DRIVER
 
 <dd>
 <p>Open a <a href="wdkgloss.s#wdkgloss.software_key#wdkgloss.software_key"><i>software key</i></a> for storing driver-specific information. This flag cannot be specified with PLUGPLAY_REGKEY_DEVICE.</p>
 </dd>
 
-### -param <a id="PLUGPLAY_REGKEY_CURRENT_HWPROFILE"></a><a id="plugplay_regkey_current_hwprofile"></a>PLUGPLAY_REGKEY_CURRENT_HWPROFILE
+### -param PLUGPLAY_REGKEY_CURRENT_HWPROFILE
 
 <dd>
 <p>Open a key relative to the current hardware profile for device or driver information. This allows the driver to access configuration information that is hardware-profile-specific. The caller must specify either PLUGPLAY_REGKEY_DEVICE or PLUGPLAY_REGKEY_DRIVER with this flag. </p>
@@ -92,13 +92,13 @@ NTSTATUS IoOpenDeviceRegistryKey(
 </dl>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the access the caller needs to the key. See the <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> routine for a description of each KEY_<i>XXX</i> access right.</p>
 </dd>
 
-### -param <i>DevInstRegKey</i> [out]
+### -param DevInstRegKey [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that, on successful return, contains a handle to the requested registry key. </p>

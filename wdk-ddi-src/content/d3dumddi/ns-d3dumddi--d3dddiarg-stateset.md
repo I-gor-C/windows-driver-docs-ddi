@@ -56,7 +56,7 @@ typedef struct _D3DDDIARG_STATESET {
 ## -struct-fields
 <dl>
 
-### -field <b>Operation</b>
+### -field Operation
 
 <dd>
 <p>[in] The operation to perform, which can be one of the following values.</p>
@@ -117,7 +117,7 @@ typedef struct _D3DDDIARG_STATESET {
 <p> </p>
 </dd>
 
-### -field <b>StateBlockType</b>
+### -field StateBlockType
 
 <dd>
 <p>[in] A D3DSTATEBLOCKTYPE-typed value that indicates the type of state that the driver should record. This member can be one of the following values.</p>
@@ -373,7 +373,7 @@ D3DTSS_TEXTURETRANSFORMFLAGS</code></pre>
 <p> </p>
 </dd>
 
-### -field <b>hStateSet</b>
+### -field hStateSet
 
 <dd>
 <p>[in/out] A handle to the state block that is manipulated by the operation that is specified in the <b>Operation</b> member.</p>

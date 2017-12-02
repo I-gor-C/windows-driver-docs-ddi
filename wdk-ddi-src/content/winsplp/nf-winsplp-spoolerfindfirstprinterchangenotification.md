@@ -62,35 +62,35 @@ BOOL WINAPI SpoolerFindFirstPrinterChangeNotification(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd></dd>
 
-### -param <i>fdwFilterFlags</i> 
+### -param fdwFilterFlags 
 
 <dd></dd>
 
-### -param <i>fdwOptions</i> 
+### -param fdwOptions 
 
 <dd></dd>
 
-### -param <i>pPrinterNotifyOptions</i> [in]
+### -param pPrinterNotifyOptions [in]
 
 <dd></dd>
 
-### -param <i>pvReserved</i> [in, optional]
+### -param pvReserved [in, optional]
 
 <dd></dd>
 
-### -param <i>pNotificationConfig</i> [in]
+### -param pNotificationConfig [in]
 
 <dd></dd>
 
-### -param <i>phNotify</i> [out, optional]
+### -param phNotify [out, optional]
 
 <dd></dd>
 
-### -param <i>phEvent</i> [out, optional]
+### -param phEvent [out, optional]
 
 <dd></dd>
 </dl>

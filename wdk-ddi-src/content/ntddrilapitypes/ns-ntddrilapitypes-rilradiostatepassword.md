@@ -7,7 +7,7 @@ old-location: netvista\rilradiostatepassword.htm
 old-project: netvista
 ms.assetid: 5329a688-ca72-456c-b9fa-32a922783d97
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILRADIOSTATEPASSWORD, RILRADIOSTATEPASSWORD, *LPRILRADIOSTATEPASSWORD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILRADIOSTATEPASSWORD {
 ## -struct-fields
 <dl>
 
-### -field <b>dwPasswordId</b>
+### -field dwPasswordId
 
 <dd></dd>
 
-### -field <b>wszPassword</b>
+### -field wszPassword
 
 <dd></dd>
 </dl>

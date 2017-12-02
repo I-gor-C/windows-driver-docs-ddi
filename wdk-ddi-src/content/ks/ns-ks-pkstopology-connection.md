@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>FromNode</b>
+### -field FromNode
 
 <dd>
 <p>Specifies the node ID of the node on the upstream end of the connection. If this end of the connection is an external pin on the filter -- not a logical pin on a node--set this member to the null node-ID value, KSFILTER_NODE.</p>
 </dd>
 
-### -field <b>FromNodePin</b>
+### -field FromNodePin
 
 <dd>
 <p>Specifies the pin ID for the upstream end of the connection. If <b>FromNode </b>is KSFILTER_NODE, the pin on this end of the connection is an external pin on the filter. If not, the pin on this end is a logical pin on an internal node.</p>
 </dd>
 
-### -field <b>ToNode</b>
+### -field ToNode
 
 <dd>
 <p>Specifies the node ID of the node on the downstream end of the connection. If this end of the connection is an external pin on the filter--not a logical pin on a node -- set this member to the null node-ID value, KSFILTER_NODE.</p>
 </dd>
 
-### -field <b>ToNodePin</b>
+### -field ToNodePin
 
 <dd>
 <p>Specifies the pin ID for the downstream end of the connection. If <b>ToNode</b> is KSFILTER_NODE, the pin on this end of the connection is an external pin on the filter. If not, the pin on this end is a logical pin on an internal node.</p>

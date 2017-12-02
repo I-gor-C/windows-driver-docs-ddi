@@ -57,19 +57,19 @@ typedef struct _PRINTER_EVENT_ATTRIBUTES_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Specifies the size of this structure.</p>
 </dd>
 
-### -field <b>dwOldAttributes</b>
+### -field dwOldAttributes
 
 <dd>
 <p>A set of bits describing the current printer attributes.</p>
 </dd>
 
-### -field <b>dwNewAttributes</b>
+### -field dwNewAttributes
 
 <dd>
 <p>A set of bits describing the new printer attributes to be applied to the printer.</p>

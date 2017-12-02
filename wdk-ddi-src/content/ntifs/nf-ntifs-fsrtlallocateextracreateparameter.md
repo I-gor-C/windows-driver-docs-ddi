@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlallocateextracreateparameter.htm
 old-project: ifsk
 ms.assetid: 644680a9-ec56-4d65-890f-fbc11badf2b7
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FsRtlAllocateExtraCreateParameter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ NTSTATUS FsRtlAllocateExtraCreateParameter(
 ## -parameters
 <dl>
 
-### -param <i>EcpType</i> [in]
+### -param EcpType [in]
 
 <dd>
 <p>A pointer to a user-defined GUID that indicates the type of the ECP context structure.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff565392">Using GUIDs in Drivers</a> for more information.</p>
 </dd>
 
-### -param <i>SizeOfContext</i> [in]
+### -param SizeOfContext [in]
 
 <dd>
 <p>The size, in bytes, of the user-defined context structure.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Defines pool allocation options.  The following describes how pool will be allocated when one or more of the listed flag values are combined with the <i>Flags</i> parameter by using a bitwise OR operation:  </p>
@@ -86,19 +86,19 @@ NTSTATUS FsRtlAllocateExtraCreateParameter(
 <p>If more than one flag is used, all of the effects associated with the utilized flag values will occur.</p>
 </dd>
 
-### -param <i>CleanupCallback</i> [in, optional]
+### -param CleanupCallback [in, optional]
 
 <dd>
 <p>Optional pointer to a filter-defined cleanup callback routine of type <a href="..\ntifs\nc-ntifs-pfsrtl-extra-create-parameter-cleanup-callback.md">PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK</a>.  The cleanup callback routine is called when the ECP structure (created by the <b>FsRtlAllocateExtraCreateParameter</b> routine) is deleted.  Set this parameter to <b>NULL</b> if a cleanup callback routine is not applicable.</p>
 </dd>
 
-### -param <i>PoolTag</i> [in]
+### -param PoolTag [in]
 
 <dd>
 <p>Specifies the pool tag for the allocated memory. For more information, see the <i>Tag</i> parameter of <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>.</p>
 </dd>
 
-### -param <i>EcpContext</i> [out]
+### -param EcpContext [out]
 
 <dd>
 <p>Receives a pointer to the allocated ECP context structure.  If the routine failed to allocate sufficient pool, the value pointed to by <i>EcpContext </i>will be <b>NULL</b> and <b>FsRtlAllocateExtraCreateParameter</b> will return status code STATUS_INSUFFICIENT_RESOURCES.</p>
@@ -220,4 +220,4 @@ NTSTATUS FsRtlAllocateExtraCreateParameter(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAllocateExtraCreateParameter routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAllocateExtraCreateParameter routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

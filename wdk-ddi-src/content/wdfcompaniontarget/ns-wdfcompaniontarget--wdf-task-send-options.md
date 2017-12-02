@@ -7,7 +7,7 @@ old-location: wdf\wdf_task_send_options.htm
 old-project: wdf
 ms.assetid: cb2fd11c-c6a5-4499-a340-f96ffcfbbe0f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_TASK_SEND_OPTIONS, WDF_TASK_SEND_OPTIONS, *PWDF_TASK_SEND_OPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _WDF_TASK_SEND_OPTIONS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd></dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd></dd>
 
-### -field <b>Timeout</b>
+### -field Timeout
 
 <dd></dd>
 </dl>

@@ -7,7 +7,7 @@ old-location: netvista\fwpsapplymodifiedlayerdata0.htm
 old-project: netvista
 ms.assetid: d32c19b6-462e-48e3-b22b-02542dca9cc4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpsApplyModifiedLayerData0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ void NTAPI FwpsApplyModifiedLayerData0(
 ## -parameters
 <dl>
 
-### -param <i>classifyHandle</i> [in]
+### -param classifyHandle [in]
 
 <dd>
 <p>The classification handle that identifies the callout driver's processing at the current layer.
@@ -67,7 +67,7 @@ void NTAPI FwpsApplyModifiedLayerData0(
      FwpsAcquireClassifyHandle0</a>.</p>
 </dd>
 
-### -param <i>modifiedLayerData</i> [in]
+### -param modifiedLayerData [in]
 
 <dd>
 <p>The data buffer obtained by calling 
@@ -75,7 +75,7 @@ void NTAPI FwpsApplyModifiedLayerData0(
      types are defined as structures.</p>
 </dd>
 
-### -param <i>flags</i> [in]
+### -param flags [in]
 
 <dd>
 <p>
@@ -89,7 +89,7 @@ void NTAPI FwpsApplyModifiedLayerData0(
 <tr>
 <td width="40%"><a id="FWPS_CLASSIFY_FLAG_REAUTHORIZE_IF_MODIFIED_BY_OTHERS"></a><a id="fwps_classify_flag_reauthorize_if_modified_by_others"></a><dl>
 
-### -param <b>FWPS_CLASSIFY_FLAG_REAUTHORIZE_IF_MODIFIED_BY_OTHERS</b>
+### -param FWPS_CLASSIFY_FLAG_REAUTHORIZE_IF_MODIFIED_BY_OTHERS
 
 </dl>
 </td>
@@ -186,4 +186,4 @@ void NTAPI FwpsApplyModifiedLayerData0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsApplyModifiedLayerData0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsApplyModifiedLayerData0 function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

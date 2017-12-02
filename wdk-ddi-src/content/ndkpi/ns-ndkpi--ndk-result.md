@@ -7,7 +7,7 @@ old-location: netvista\ndk_result.htm
 old-project: netvista
 ms.assetid: B7898C81-E90D-4210-BEAE-1E629FCD7195
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDK_RESULT, NDK_RESULT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ typedef struct _NDK_RESULT {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The NDK request completion status.</p>
 </dd>
 
-### -field <b>BytesTransferred</b>
+### -field BytesTransferred
 
 <dd>
 <p>The number of bytes transferred. The value of this member  is valid only for <i>NdkReceive</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-receive.md">NDK_FN_RECEIVE</a>) request completions. The member is undefined for all other NDK request completions.</p>
 </dd>
 
-### -field <b>QPContext</b>
+### -field QPContext
 
 <dd>
 <p>A context value for all requests that are posted over a queue pair (QP). The NDK consumer specified this  pointer when it called the <i>NdkCreateQp</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-create-qp.md">NDK_FN_CREATE_QP</a>) function to create the <a href="..\ndkpi\ns-ndkpi--ndk-qp.md">NDK_QP</a> object.</p>
 </dd>
 
-### -field <b>RequestContext</b>
+### -field RequestContext
 
 <dd>
 <p>A request context value specified by the NDK consumer when  a request is posted.</p>
@@ -139,4 +139,4 @@ typedef struct _NDK_RESULT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_RESULT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_RESULT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

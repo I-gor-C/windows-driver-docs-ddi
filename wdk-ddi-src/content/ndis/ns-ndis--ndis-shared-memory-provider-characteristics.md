@@ -7,7 +7,7 @@ old-location: netvista\ndis_shared_memory_provider_characteristics.htm
 old-project: netvista
 ms.assetid: 45001da1-5fe3-4383-8da7-31e3ee115c1f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, *PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct _NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -71,13 +71,13 @@ typedef struct _NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS {
      <b>Size</b> member to NDIS_SIZEOF_SHARED_MEMORY_PROVIDER_CHARACTERISTICS_REVISION_1.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>ProviderContext</b>
+### -field ProviderContext
 
 <dd>
 <p>An NDIS_HANDLE to a block of driver-allocated context information that stores information about
@@ -86,7 +86,7 @@ typedef struct _NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS {
      <i>ProviderContext</i> parameter.</p>
 </dd>
 
-### -field <b>AllocateSharedMemoryHandler</b>
+### -field AllocateSharedMemoryHandler
 
 <dd>
 <p>An entry point for the 
@@ -94,7 +94,7 @@ typedef struct _NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS {
      NetAllocateSharedMemory</a> function.</p>
 </dd>
 
-### -field <b>FreeSharedMemoryHandler</b>
+### -field FreeSharedMemoryHandler
 
 <dd>
 <p>An entry point for the 
@@ -147,4 +147,4 @@ typedef struct _NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

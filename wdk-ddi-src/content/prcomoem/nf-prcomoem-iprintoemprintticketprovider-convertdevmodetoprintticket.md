@@ -59,31 +59,31 @@ HRESULT ConvertDevModeToPrintTicket(
 ## -parameters
 <dl>
 
-### -param <i>cbDevmode</i> [in]
+### -param cbDevmode [in]
 
 <dd>
 <p>The size, in bytes, of the input <a href="display.devmodew">DEVMODEW</a> structure. The size includes both the public and private portions of this structure.</p>
 </dd>
 
-### -param <i>pDevmode</i> [in]
+### -param pDevmode [in]
 
 <dd>
 <p>A pointer to the input DEVMODEW structure.</p>
 </dd>
 
-### -param <i>cbDrvPrivateSize</i> [in]
+### -param cbDrvPrivateSize [in]
 
 <dd>
 <p>The size, in bytes, of the plug-in's private DEVMODEW structure. </p>
 </dd>
 
-### -param <i>pPrivateDevmode</i> [in]
+### -param pPrivateDevmode [in]
 
 <dd>
 <p>A pointer to the plug-in's private <a href="display.devmodew">DEVMODEW</a> structure.</p>
 </dd>
 
-### -param <i>pPrintTicket</i> [in, out]
+### -param pPrintTicket [in, out]
 
 <dd>
 <p>A pointer to the partially-completed print ticket. When <code>IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket</code> returns, all of the entries in the print ticket should be filled in.</p>

@@ -57,25 +57,25 @@ NTSTATUS KsAllocateObjectCreateItem(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [in]
+### -param Header [in]
 
 <dd>
 <p>Points to the device header on which to attach the create item.</p>
 </dd>
 
-### -param <i>CreateItem</i> [in]
+### -param CreateItem [in]
 
 <dd>
 <p>Contains the create item to attach.</p>
 </dd>
 
-### -param <i>AllocateEntry</i> [in]
+### -param AllocateEntry [in]
 
 <dd>
 <p>Indicates whether the create item pointer passed should be attached directly to the header, or if a copy of it should be made instead.</p>
 </dd>
 
-### -param <i>ItemFreeCallback</i> [in, optional]
+### -param ItemFreeCallback [in, optional]
 
 <dd>
 <p>Optionally contains a pointer to a minidriver-defined <a href="stream.kstritemfreecallback">KStrItemFreeCallback</a> function to be called when the create entry is being destroyed upon freeing the device header. This is only valid when <i>AllocateEntry</i> is <b>TRUE</b>.</p>

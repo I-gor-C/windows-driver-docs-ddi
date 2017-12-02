@@ -56,13 +56,13 @@ HRESULT UpgradePrinter(
 ## -parameters
 <dl>
 
-### -param <i>dwLevel</i> 
+### -param dwLevel 
 
 <dd>
 <p>Caller-supplied version number of the structure pointed to by <i>pDriverUpgradeInfo</i>. Current valid value is 1.</p>
 </dd>
 
-### -param <i>pDriverUpgradeInfo</i> 
+### -param pDriverUpgradeInfo 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\winddiui\ns-winddiui--driver-upgrade-info-1.md">DRIVER_UPGRADE_INFO_1</a> structure.</p>
@@ -87,7 +87,7 @@ HRESULT UpgradePrinter(
 
 <p>If <code>IPrintOemUI::UpgradePrinter</code> methods are exported by multiple user interface plug-ins, the methods are called in the order that the plug-ins are specified for installation.</p>
 
-<p>For more information about creating and installing user interface plug-ins, see <a href="NULL">Customizing Microsoft's Printer Drivers</a>.</p>
+<p>For more information about creating and installing user interface plug-ins, see <a href="https://msdn.microsoft.com/b7761209-1f6f-4288-af47-4ed855c2e629">Customizing Microsoft's Printer Drivers</a>.</p>
 
 ## -requirements
 <table>

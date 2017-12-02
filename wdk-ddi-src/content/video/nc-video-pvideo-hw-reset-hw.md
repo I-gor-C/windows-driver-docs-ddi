@@ -60,19 +60,19 @@ BOOLEAN HwVidResetHw(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.</p>
 </dd>
 
-### -param <i>Columns</i> 
+### -param Columns 
 
 <dd>
 <p>Specifies the number of columns of the mode to be set up.</p>
 </dd>
 
-### -param <i>Rows</i> 
+### -param Rows 
 
 <dd>
 <p>Specifies the number of rows of the mode to be set up.</p>

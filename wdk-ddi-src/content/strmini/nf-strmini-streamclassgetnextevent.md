@@ -59,31 +59,31 @@ PKSEVENT_ENTRY StreamClassGetNextEvent(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in, optional]
+### -param HwDeviceExtension [in, optional]
 
 <dd>
 <p>Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="..\strmini\ns-strmini--hw-initialization-data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="..\strmini\ns-strmini--hw-stream-request-block.md">HW_STREAM_REQUEST_BLOCK</a>, <a href="..\strmini\ns-strmini--hw-stream-object~r1.md">HW_STREAM_OBJECT</a>, <a href="..\strmini\ns-strmini--hw-time-context.md">HW_TIME_CONTEXT</a>, and <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.</p>
 </dd>
 
-### -param <i>HwStreamObject</i> [in, optional]
+### -param HwStreamObject [in, optional]
 
 <dd>
 <p>Pointer to a <a href="..\strmini\ns-strmini--hw-stream-object~r1.md">HW_STREAM_OBJECT</a>. Set to <b>NULL</b> to search the event queue of the device itself. To search the event queue of a particular stream, set to the stream's stream object.</p>
 </dd>
 
-### -param <i>EventGuid</i> [in, optional]
+### -param EventGuid [in, optional]
 
 <dd>
 <p>Specifies the event set to match when walking the queue, or <b>NULL</b> to match any event set.</p>
 </dd>
 
-### -param <i>EventItem</i> [in]
+### -param EventItem [in]
 
 <dd>
 <p>Specifies the event ID to match when walking the queue, or -1 to match any event.</p>
 </dd>
 
-### -param <i>CurrentEvent</i> [in, optional]
+### -param CurrentEvent [in, optional]
 
 <dd>
 <p>Pointer to an event in the event queue, or <b>NULL</b>.</p>

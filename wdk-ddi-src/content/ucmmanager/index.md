@@ -15,6 +15,7 @@ Ucmmanager.h contain these programming interfaces:
 | [UCM_CONNECTOR_PD_CONFIG_INIT function](nf-ucmmanager-ucm-connector-pd-config-init.md) | Initializes a UCM_CONNECTOR_PD_CONFIG structure. |
 | [UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS_INIT function](nf-ucmmanager-ucm-connector-pd-conn-state-changed-params-init.md) | Initializes a UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS structure. |
 | [UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT function](nf-ucmmanager-ucm-connector-typec-attach-params-init.md) | Initializes a UCM_CONNECTOR_TYPEC_ATTACH_PARAMS structure. |
+| [UCM_CONNECTOR_TYPEC_CONFIG_INIT function](nf-ucmmanager-ucm-connector-typec-config-init.md) | Initializes the UCM_CONNECTOR_TYPEC_CONFIG structure. |
 | [UCM_MANAGER_CONFIG_INIT function](nf-ucmmanager-ucm-manager-config-init.md) | Initializes a UCM_MANAGER_CONFIG structure. |
 
 ## Callback functions

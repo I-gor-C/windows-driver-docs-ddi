@@ -63,25 +63,25 @@ typedef enum _D3DKMT_DEVICEEXECUTION_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_DEVICEEXECUTION_ACTIVE"></a><a id="d3dkmt_deviceexecution_active"></a><b>D3DKMT_DEVICEEXECUTION_ACTIVE</b>
+### -field D3DKMT_DEVICEEXECUTION_ACTIVE
 
 <dd>
 <p>The device is actively executing.</p>
 </dd>
 
-### -field <a id="D3DKMT_DEVICEEXECUTION_RESET"></a><a id="d3dkmt_deviceexecution_reset"></a><b>D3DKMT_DEVICEEXECUTION_RESET</b>
+### -field D3DKMT_DEVICEEXECUTION_RESET
 
 <dd>
 <p>The device is reset.</p>
 </dd>
 
-### -field <a id="D3DKMT_DEVICEEXECUTION_HUNG"></a><a id="d3dkmt_deviceexecution_hung"></a><b>D3DKMT_DEVICEEXECUTION_HUNG</b>
+### -field D3DKMT_DEVICEEXECUTION_HUNG
 
 <dd>
 <p>The device is hung. The device is unable to continue.</p>
 </dd>
 
-### -field <a id="D3DKMT_DEVICEEXECUTION_STOPPED"></a><a id="d3dkmt_deviceexecution_stopped"></a><b>D3DKMT_DEVICEEXECUTION_STOPPED</b>
+### -field D3DKMT_DEVICEEXECUTION_STOPPED
 
 <dd>
 <p>
@@ -89,25 +89,25 @@ typedef enum _D3DKMT_DEVICEEXECUTION_STATE {
      </p>
 </dd>
 
-### -field <a id="D3DKMT_DEVICEEXECUTION_ERROR_OUTOFMEMORY"></a><a id="d3dkmt_deviceexecution_error_outofmemory"></a><b>D3DKMT_DEVICEEXECUTION_ERROR_OUTOFMEMORY</b>
+### -field D3DKMT_DEVICEEXECUTION_ERROR_OUTOFMEMORY
 
 <dd>
 <p>Even after the video memory manager split the DMA buffer, the video memory manager could not page-in all of the required allocations into video memory at the same time. The device is unable to continue.</p>
 </dd>
 
-### -field <a id="D3DKMT_DEVICEEXECUTION_ERROR_DMAFAULT"></a><a id="d3dkmt_deviceexecution_error_dmafault"></a><b>D3DKMT_DEVICEEXECUTION_ERROR_DMAFAULT</b>
+### -field D3DKMT_DEVICEEXECUTION_ERROR_DMAFAULT
 
 <dd>
 <p>The display miniport driver reported a fault while processing a DMA buffer for the device. The device is unable to continue.</p>
 </dd>
 
-### -field <a id="D3DKMT_DEVICEEXECUTION_ERROR_DMAPAGEFAULT"></a><a id="d3dkmt_deviceexecution_error_dmapagefault"></a><b>D3DKMT_DEVICEEXECUTION_ERROR_DMAPAGEFAULT</b>
+### -field D3DKMT_DEVICEEXECUTION_ERROR_DMAPAGEFAULT
 
 <dd>
 <p>The display miniport driver reported a page fault while processing a DMA buffer for the device. The device is unable to continue.</p>
 </dd>
 
-### -field <a id=""></a><b></b>
+### -field 
 
 <dd></dd>
 </dl>

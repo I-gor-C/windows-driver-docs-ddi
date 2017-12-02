@@ -56,7 +56,7 @@ VP_STATUS VideoPortEnableInterrupt(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>

@@ -7,7 +7,7 @@ old-location: netvista\dot11_peer_info.htm
 old-project: netvista
 ms.assetid: f1d5bbd9-45e3-4802-ab9b-77ff6bdcd6ec
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_PEER_INFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,21 +65,21 @@ typedef struct _DOT11_PEER_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>MacAddress</b>
+### -field MacAddress
 
 <dd>
 <p>The media access control (MAC) address of the peer station within an independent BSS (IBSS)
      network.</p>
 </dd>
 
-### -field <b>usCapabilityInformation</b>
+### -field usCapabilityInformation
 
 <dd>
 <p>The 802.11 Capability Information field from the beacon or probe response frames that the 802.11
      station most recently received from the peer.</p>
 </dd>
 
-### -field <b>AuthAlgo</b>
+### -field AuthAlgo
 
 <dd>
 <p>The authentication algorithm that the 802.11 station resolved with the peer station during the
@@ -90,7 +90,7 @@ typedef struct _DOT11_PEER_INFO {
 <p>This member is not defined if the peer is not associated.</p>
 </dd>
 
-### -field <b>UnicastCipherAlgo</b>
+### -field UnicastCipherAlgo
 
 <dd>
 <p>The unicast cipher algorithm that the 802.11 station resolved with the peer station during the
@@ -101,7 +101,7 @@ typedef struct _DOT11_PEER_INFO {
 <p>This member is not defined if the peer is not associated.</p>
 </dd>
 
-### -field <b>MulticastCipherAlgo</b>
+### -field MulticastCipherAlgo
 
 <dd>
 <p>The multicast cipher algorithm that the 802.11 station resolved with the peer station during the
@@ -112,7 +112,7 @@ typedef struct _DOT11_PEER_INFO {
 <p>This member is not defined if the peer is not associated.</p>
 </dd>
 
-### -field <b>bWpsEnabled</b>
+### -field bWpsEnabled
 
 <dd>
 <p>A Boolean value that indicates whether WiFi Protected Setup (WPS) is enabled for the peer station.
@@ -122,7 +122,7 @@ typedef struct _DOT11_PEER_INFO {
 <p>This member should not be used if the peer is not associated.</p>
 </dd>
 
-### -field <b>usListenInterval</b>
+### -field usListenInterval
 
 <dd>
 <p>A USHORT value that defines the 802.11 Listen Interval field that was obtained from the
@@ -131,7 +131,7 @@ typedef struct _DOT11_PEER_INFO {
 <p>This member has a value of zero if the peer is not associated.</p>
 </dd>
 
-### -field <b>ucSupportedRates</b>
+### -field ucSupportedRates
 
 <dd>
 <p>A UCHAR value that specifies the data rates supported by the peer station. These rates are based
@@ -146,7 +146,7 @@ typedef struct _DOT11_PEER_INFO {
 <p>This member has a value of zero if the peer is not associated.</p>
 </dd>
 
-### -field <b>usAssociationID</b>
+### -field usAssociationID
 
 <dd>
 <p>A USHORT value that specifies the 802.11 Association ID field from the association or
@@ -155,7 +155,7 @@ typedef struct _DOT11_PEER_INFO {
 <p>This member has a value of 0xFFFF if the peer is not associated.</p>
 </dd>
 
-### -field <b>AssociationState</b>
+### -field AssociationState
 
 <dd>
 <p>A 
@@ -171,7 +171,7 @@ typedef struct _DOT11_PEER_INFO {
      <b>dot11_assoc_state_auth_unassoc</b> enumeration value may not be applicable.</p>
 </dd>
 
-### -field <b>PowerMode</b>
+### -field PowerMode
 
 <dd>
 <p>A 
@@ -179,7 +179,7 @@ typedef struct _DOT11_PEER_INFO {
      the latest power management mode of the peer station.</p>
 </dd>
 
-### -field <b>liAssociationUpTime</b>
+### -field liAssociationUpTime
 
 <dd>
 <p>A LARGEINTEGER value that specifies the timestamp when the 802.11 association procedure successfully
@@ -190,7 +190,7 @@ typedef struct _DOT11_PEER_INFO {
 <p>This member has a value of zero if the peer is not associated.</p>
 </dd>
 
-### -field <b>Statistics</b>
+### -field Statistics
 
 <dd>
 <p>The statistics counters for data traffic, defined by the 
@@ -249,4 +249,4 @@ typedef struct _DOT11_PEER_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PEER_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PEER_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

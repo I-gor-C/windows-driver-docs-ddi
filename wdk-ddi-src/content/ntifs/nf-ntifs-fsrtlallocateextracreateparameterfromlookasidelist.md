@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlallocateextracreateparameterfromlookasidelist.htm
 old-project: ifsk
 ms.assetid: 6dd1aa9d-58e6-484b-b372-4c1d9f6d04f3
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FsRtlAllocateExtraCreateParameterFromLookasideList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ NTSTATUS FsRtlAllocateExtraCreateParameterFromLookasideList(
 ## -parameters
 <dl>
 
-### -param <i>EcpType</i> [in]
+### -param EcpType [in]
 
 <dd>
 <p>Pointer to a GUID that indicates the type of ECP for whicha context structure should be allocated. For more information about ECPs, see <a href="ifsk.using_extra_create_parameters_with_an_irp_mj_create_operation">Using Extra Create Parameters with an IRP_MJ_CREATE Operation</a>.</p>
 </dd>
 
-### -param <i>SizeOfContext</i> [in]
+### -param SizeOfContext [in]
 
 <dd>
 <p>The size, in bytes, of the ECP context structure. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Defines pool allocation options. If the value of the <i>SizeOfContext</i> parameter is larger than the size, in bytes, of the lookaside list that the <i>LookasideList</i> parameter points to, <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> allocates the ECP context structure from system pool instead of the lookaside list. In this case, if the <i>Flags</i> parameter contains the FSRTL_ALLOCATE_ECP_FLAG_CHARGE_QUOTA bit flag value, system pool allocated by <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> is charged against the current process' memory quota. For more information about bit flag values, see the <i>Flags</i> parameter of <a href="..\ntifs\nf-ntifs-fsrtlallocateextracreateparameter.md">FsRtlAllocateExtraCreateParameter</a>. In the more typical case, when <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> allocates memory for the ECP context structure from the lookaside list, <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> ignores the FSRTL_ALLOCATE_ECP_FLAG_CHARGE_QUOTA bit flag. </p>
 </dd>
 
-### -param <i>CleanupCallback</i> [in, optional]
+### -param CleanupCallback [in, optional]
 
 <dd>
 <p>Optional pointer to a minifilter-defined cleanup callback routine of type <a href="..\ntifs\nc-ntifs-pfsrtl-extra-create-parameter-cleanup-callback.md">PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK</a>. The cleanup callback routine is called when the ECP context structure is deleted. Set this parameter to <b>NULL</b> if a cleanup callback routine is not applicable.</p>
 </dd>
 
-### -param <i>LookasideList</i> [in, out]
+### -param LookasideList [in, out]
 
 <dd>
 <p>Pointer to an initialized lookaside list from which <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> attempts to allocate pool (for the ECP context structure). To initialize the lookaside list, use the <a href="..\ntifs\nf-ntifs-fsrtlinitextracreateparameterlookasidelist.md">FsRtlInitExtraCreateParameterLookasideList</a> routine. </p>
 </dd>
 
-### -param <i>EcpContext</i> [out]
+### -param EcpContext [out]
 
 <dd>
 <p>Pointer to a location that receives a pointer to the allocated ECP context structure. If <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> failed to allocate sufficient pool for the ECP context structure, <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> sets <i>EcpContext </i>to <b>NULL</b> and returns status code STATUS_INSUFFICIENT_RESOURCES.</p>
@@ -191,4 +191,4 @@ NTSTATUS FsRtlAllocateExtraCreateParameterFromLookasideList(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAllocateExtraCreateParameterFromLookasideList routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAllocateExtraCreateParameterFromLookasideList routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

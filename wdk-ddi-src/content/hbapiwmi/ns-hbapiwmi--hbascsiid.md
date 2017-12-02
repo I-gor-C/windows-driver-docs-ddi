@@ -57,25 +57,25 @@ typedef struct _HBAScsiID {
 ## -struct-fields
 <dl>
 
-### -field <b>ScsiBusNumber</b>
+### -field ScsiBusNumber
 
 <dd>
 <p>Contains the bus number. </p>
 </dd>
 
-### -field <b>ScsiTargetNumber</b>
+### -field ScsiTargetNumber
 
 <dd>
 <p>Contains the target device number. </p>
 </dd>
 
-### -field <b>ScsiOSLun</b>
+### -field ScsiOSLun
 
 <dd>
 <p>Contains the logical unit number (LUN). </p>
 </dd>
 
-### -field <b>OSDeviceName</b>
+### -field OSDeviceName
 
 <dd>
 <p>Contains a nonpersistent target name such as "\Device\HarddiskVolume1".</p>

@@ -7,7 +7,7 @@ old-location: ifsk\fltqueryvolumeinformationfile.htm
 old-project: ifsk
 ms.assetid: 3f93ce0a-f1f0-4b5b-aaf3-ce6698eb5055
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltQueryVolumeInformationFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ NTSTATUS FltQueryVolumeInformationFile(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>File object pointer for an open file, directory, storage device, or volume. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>FsInformation</i> [out]
+### -param FsInformation [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that receives information about the file. The <i>FsInformationClass</i> parameter specifies the type of information. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Size, in bytes, of the <i>FsInformation</i> buffer. </p>
 </dd>
 
-### -param <i>FsInformationClass</i> [in]
+### -param FsInformationClass [in]
 
 <dd>
 <p>Type of volume information to be returned. One of the following:</p>
@@ -95,7 +95,7 @@ NTSTATUS FltQueryVolumeInformationFile(
 <tr>
 <td width="40%"><a id="FileFsAttributeInformation"></a><a id="filefsattributeinformation"></a><a id="FILEFSATTRIBUTEINFORMATION"></a><dl>
 
-### -param <b>FileFsAttributeInformation</b>
+### -param FileFsAttributeInformation
 
 </dl>
 </td>
@@ -106,7 +106,7 @@ NTSTATUS FltQueryVolumeInformationFile(
 <tr>
 <td width="40%"><a id="FileFsControlInformation"></a><a id="filefscontrolinformation"></a><a id="FILEFSCONTROLINFORMATION"></a><dl>
 
-### -param <b>FileFsControlInformation</b>
+### -param FileFsControlInformation
 
 </dl>
 </td>
@@ -117,7 +117,7 @@ NTSTATUS FltQueryVolumeInformationFile(
 <tr>
 <td width="40%"><a id="FileFsDeviceInformation"></a><a id="filefsdeviceinformation"></a><a id="FILEFSDEVICEINFORMATION"></a><dl>
 
-### -param <b>FileFsDeviceInformation</b>
+### -param FileFsDeviceInformation
 
 </dl>
 </td>
@@ -128,7 +128,7 @@ NTSTATUS FltQueryVolumeInformationFile(
 <tr>
 <td width="40%"><a id="FileFsDriverPathInformation"></a><a id="filefsdriverpathinformation"></a><a id="FILEFSDRIVERPATHINFORMATION"></a><dl>
 
-### -param <b>FileFsDriverPathInformation</b>
+### -param FileFsDriverPathInformation
 
 </dl>
 </td>
@@ -139,7 +139,7 @@ NTSTATUS FltQueryVolumeInformationFile(
 <tr>
 <td width="40%"><a id="FileFsFullSizeInformation"></a><a id="filefsfullsizeinformation"></a><a id="FILEFSFULLSIZEINFORMATION"></a><dl>
 
-### -param <b>FileFsFullSizeInformation</b>
+### -param FileFsFullSizeInformation
 
 </dl>
 </td>
@@ -150,7 +150,7 @@ NTSTATUS FltQueryVolumeInformationFile(
 <tr>
 <td width="40%"><a id="FileFsObjectIdInformation"></a><a id="filefsobjectidinformation"></a><a id="FILEFSOBJECTIDINFORMATION"></a><dl>
 
-### -param <b>FileFsObjectIdInformation</b>
+### -param FileFsObjectIdInformation
 
 </dl>
 </td>
@@ -161,7 +161,7 @@ NTSTATUS FltQueryVolumeInformationFile(
 <tr>
 <td width="40%"><a id="FileFsSizeInformation"></a><a id="filefssizeinformation"></a><a id="FILEFSSIZEINFORMATION"></a><dl>
 
-### -param <b>FileFsSizeInformation</b>
+### -param FileFsSizeInformation
 
 </dl>
 </td>
@@ -172,7 +172,7 @@ NTSTATUS FltQueryVolumeInformationFile(
 <tr>
 <td width="40%"><a id="FileFsVolumeInformation"></a><a id="filefsvolumeinformation"></a><a id="FILEFSVOLUMEINFORMATION"></a><dl>
 
-### -param <b>FileFsVolumeInformation</b>
+### -param FileFsVolumeInformation
 
 </dl>
 </td>
@@ -183,7 +183,7 @@ NTSTATUS FltQueryVolumeInformationFile(
 <tr>
 <td width="40%"><a id="FileFsSectorSizeInformation"></a><a id="filefssectorsizeinformation"></a><a id="FILEFSSECTORSIZEINFORMATION"></a><dl>
 
-### -param <b>FileFsSectorSizeInformation</b>
+### -param FileFsSectorSizeInformation
 
 </dl>
 </td>
@@ -195,7 +195,7 @@ NTSTATUS FltQueryVolumeInformationFile(
 <p> </p>
 </dd>
 
-### -param <i>LengthReturned</i> [out, optional]
+### -param LengthReturned [out, optional]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the size, in bytes, of the information returned in the <i>FsInformation</i> buffer. This parameter is optional and can be <b>NULL</b>. </p>
@@ -301,4 +301,4 @@ NTSTATUS FltQueryVolumeInformationFile(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryVolumeInformationFile function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryVolumeInformationFile function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -65,61 +65,61 @@ BOOLEAN SeAccessCheck(
 ## -parameters
 <dl>
 
-### -param <i>SecurityDescriptor</i> [in]
+### -param SecurityDescriptor [in]
 
 <dd>
 <p>Pointer to the <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> structure that describes the security descriptor protecting the object being accessed. </p>
 </dd>
 
-### -param <i>SubjectSecurityContext</i> [in]
+### -param SubjectSecurityContext [in]
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563714">SECURITY_SUBJECT_CONTEXT</a> structure that specifies the subject's captured security context.</p>
 </dd>
 
-### -param <i>SubjectContextLocked</i> [in]
+### -param SubjectContextLocked [in]
 
 <dd>
 <p>Indicates whether the user's subject context is locked, so that it does not have to be locked again.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> bitmask for the access rights that the caller is attempting to acquire.  If the caller sets the MAXIMUM_ALLOWED bit, the routine performs all DACL checks. However, the routine does not do any privilege checks, unless the caller specifically requests them by setting the ACCESS_SYSTEM_SECURITY or WRITE_OWNER bits.</p>
 </dd>
 
-### -param <i>PreviouslyGrantedAccess</i> [in]
+### -param PreviouslyGrantedAccess [in]
 
 <dd>
 <p>Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> bitmask of access rights already granted, such as access rights granted as a result of holding a privilege.</p>
 </dd>
 
-### -param <i>Privileges</i> [out]
+### -param Privileges [out]
 
 <dd>
 <p>Pointer to a caller-supplied variable to be set to the address of the <a href="..\wdm\ns-wdm--privilege-set.md">PRIVILEGE_SET</a> structure that will be used as part of the access validation, or this parameter can be <b>NULL</b>. The returned buffer, if any, must be released by the caller with <a href="..\ntifs\nf-ntifs-sefreeprivileges.md">SeFreePrivileges</a>.</p>
 </dd>
 
-### -param <i>GenericMapping</i> [in]
+### -param GenericMapping [in]
 
 <dd>
 <p>Pointer to the <a href="..\wdm\ns-wdm--generic-mapping.md">GENERIC_MAPPING</a> structure associated with this object type. This value specifies the specific access rights implied by each GENERIC_<i>XXX</i> access right.</p>
 </dd>
 
-### -param <i>AccessMode</i> [in]
+### -param AccessMode [in]
 
 <dd>
 <p>Specifies the access mode to be used in the check, either <b>UserMode</b> or <b>KernelMode</b>.</p>
 </dd>
 
-### -param <i>GrantedAccess</i> [out]
+### -param GrantedAccess [out]
 
 <dd>
 <p>Pointer to a returned access mask indicating the granted access. If the caller specifies MAXIMUM_ALLOWED, and the DACL in <i>SecurityDescriptor</i> is <b>NULL</b>, then the routine returns GENERIC_ALL plus any additional access the caller explicitly requests.</p>
 </dd>
 
-### -param <i>AccessStatus</i> [out]
+### -param AccessStatus [out]
 
 <dd>
 <p>Pointer to the status value indicating why access was denied.</p>

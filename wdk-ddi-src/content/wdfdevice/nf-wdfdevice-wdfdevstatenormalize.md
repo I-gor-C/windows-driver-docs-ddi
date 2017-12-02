@@ -7,7 +7,7 @@ old-location: wdf\wdfdevstatenormalize.htm
 old-project: wdf
 ms.assetid: 0243de8b-0f47-4f0a-af25-beb6365386dd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDevStateNormalize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ ULONG WdfDevStateNormalize(
 ## -parameters
 <dl>
 
-### -param <i>State</i> [in]
+### -param State [in]
 
 <dd>
 <p>A state machine value that is returned from <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepnpstate.md">WdfDeviceGetDevicePnpState</a>, <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerstate.md">WdfDeviceGetDevicePowerState</a>, or <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerpolicystate.md">WdfDeviceGetDevicePowerPolicyState</a>.</p>

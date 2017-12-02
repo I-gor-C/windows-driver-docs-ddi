@@ -57,25 +57,25 @@ typedef struct _D3DDDIRECT {
 ## -struct-fields
 <dl>
 
-### -field <b>left</b>
+### -field left
 
 <dd>
 <p>[in] The x-coordinate of the upper-left corner of the rectangle.</p>
 </dd>
 
-### -field <b>top</b>
+### -field top
 
 <dd>
 <p>[in] The y-coordinate of the upper-left corner of the rectangle.</p>
 </dd>
 
-### -field <b>right</b>
+### -field right
 
 <dd>
 <p>[in] The x-coordinate of the lower-right corner of the rectangle.</p>
 </dd>
 
-### -field <b>bottom</b>
+### -field bottom
 
 <dd>
 <p>[in] The y-coordinate of the lower-right corner of the rectangle.</p>

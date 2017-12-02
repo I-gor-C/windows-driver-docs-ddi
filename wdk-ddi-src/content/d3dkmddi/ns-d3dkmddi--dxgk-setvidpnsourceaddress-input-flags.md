@@ -63,7 +63,7 @@ typedef struct _DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>FlipStereo</b>
+### -field FlipStereo
 
 <dd>
 <p>Specifies whether the driver flips both left and right images of a stereo allocation.</p>
@@ -73,14 +73,14 @@ typedef struct _DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS {
 <div> </div>
 </dd>
 
-### -field <b>FlipStereoTemporaryMono</b>
+### -field FlipStereoTemporaryMono
 
 <dd>
 <p>Specifies whether the driver uses the left image of a stereo allocation for the right and left portions of a stereo frame. The driver performs the same present operation as with FlipStereo, except that it scans out only from the left image to produce both images of a stereo frame.</p>
 <p>This member should be set only if the driver reports support for this option in the current display mode by setting the Type member of the D3DKMDT_VIDPN_SOURCE_MODE structure to D3DKMDT_RMT_GRAPHICS_STEREO_ADVANCED_SCAN.</p>
 </dd>
 
-### -field <b>FlipStereoPreferRight </b>
+### -field FlipStereoPreferRight 
 
 <dd>
 <p>Specifies that when the driver clones a stereo primary allocation to a mono monitor, it uses the right image.</p>
@@ -88,19 +88,19 @@ typedef struct _DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS {
 <div> </div>
 </dd>
 
-### -field <b>RetryAtLowerIrql</b>
+### -field RetryAtLowerIrql
 
 <dd>
 <p>The scheduler sets this flag if the call is made at PASSIVE_LEVEL. Hence, the driver can perform hardware changes in this call</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 28 bits (0xFFFFFFF8) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd></dd>
 </dl>

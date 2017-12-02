@@ -63,61 +63,61 @@ typedef struct _HIDP_LINK_COLLECTION_NODE {
 ## -struct-fields
 <dl>
 
-### -field <b>LinkUsage</b>
+### -field LinkUsage
 
 <dd>
 <p>Specifies the <a href="hid.hid_usages#usage_id#usage_id">usage ID</a> of a top-level collection.</p>
 </dd>
 
-### -field <b>LinkUsagePage</b>
+### -field LinkUsagePage
 
 <dd>
 <p>Specifies the <a href="hid.hid_usages#usage_page#usage_page">usage page</a> of the collection.</p>
 </dd>
 
-### -field <b>Parent</b>
+### -field Parent
 
 <dd>
 <p>Specifies the index of the collection's parent collection. If the collection has no parent, <b>Parent</b> is zero.</p>
 </dd>
 
-### -field <b>NumberOfChildren</b>
+### -field NumberOfChildren
 
 <dd>
 <p>Specifies the number of child collections that the collection contains.</p>
 </dd>
 
-### -field <b>NextSibling</b>
+### -field NextSibling
 
 <dd>
 <p>Specifies the index of the collection's immediate sibling. If the collection has no sibling, <b>NextSibling</b> is zero.</p>
 </dd>
 
-### -field <b>FirstChild</b>
+### -field FirstChild
 
 <dd>
 <p>Specifies the index of the collection's first child collection. If the collection has no children, <b>FirstChild</b> is zero.</p>
 </dd>
 
-### -field <b>CollectionType</b>
+### -field CollectionType
 
 <dd>
 <p>Specifies the type of collection item.</p>
 </dd>
 
-### -field <b>IsAlias</b>
+### -field IsAlias
 
 <dd>
 <p>Specifies, if <b>TRUE</b>, that this collection is an <a href="hid.link_collections#aliased_collections#aliased_collections">aliased collection</a>. Otherwise, if <b>FALSE</b>, the collection is not aliased.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for internal system use.</p>
 </dd>
 
-### -field <b>UserContext</b>
+### -field UserContext
 
 <dd>
 <p>Pointer to application-specific information.</p>

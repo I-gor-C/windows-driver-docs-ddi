@@ -57,19 +57,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="PerRequestExtension"></a><a id="perrequestextension"></a><a id="PERREQUESTEXTENSION"></a><b>PerRequestExtension</b>
+### -field PerRequestExtension
 
 <dd>
 <p>Indicates the physical address of the SRB extension.</p>
 </dd>
 
-### -field <a id="DmaBuffer"></a><a id="dmabuffer"></a><a id="DMABUFFER"></a><b>DmaBuffer</b>
+### -field DmaBuffer
 
 <dd>
 <p>Indicates the physical address of the DMA buffer.</p>
 </dd>
 
-### -field <a id="SRBDataBuffer"></a><a id="srbdatabuffer"></a><a id="SRBDATABUFFER"></a><b>SRBDataBuffer</b>
+### -field SRBDataBuffer
 
 <dd>
 <p>Indicates the physical address of a data buffer.</p>

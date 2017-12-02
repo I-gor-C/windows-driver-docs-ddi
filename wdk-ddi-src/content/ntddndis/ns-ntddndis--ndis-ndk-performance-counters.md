@@ -7,7 +7,7 @@ old-location: netvista\ndis_ndk_performance_counters.htm
 old-project: netvista
 ms.assetid: DA752989-B49B-4832-8821-8B45AB3304CD
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_NDK_PERFORMANCE_COUNTERS, NDIS_NDK_PERFORMANCE_COUNTERS, *PNDIS_NDK_PERFORMANCE_COUNTERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,181 +83,181 @@ typedef struct _NDIS_NDK_PERFORMANCE_COUNTERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Connect</b>
+### -field Connect
 
 <dd>
 <p>The number of outbound connections established. In a bitmask of counters (for example, <b>MissingCounterMask</b> member of the <a href="..\ntddndis\ns-ntddndis--ndis-ndk-capabilities.md">NDIS_NDK_CAPABILITIES</a> structure), this is counter 0.</p>
 </dd>
 
-### -field <b>Accept</b>
+### -field Accept
 
 <dd>
 <p>The number of inbound <i>RDMA</i> connections established. In a bitmask of counters (for example, <b>MissingCounterMask</b> member of the <a href="..\ntddndis\ns-ntddndis--ndis-ndk-capabilities.md">NDIS_NDK_CAPABILITIES</a> structure), this is counter 1.</p>
 </dd>
 
-### -field <b>ConnectFailure</b>
+### -field ConnectFailure
 
 <dd>
 <p>The  number of inbound and outbound <i>RDMA</i> connect attempts that  failed. In a bitmask of counters, this is counter 2.</p>
 </dd>
 
-### -field <b>ConnectionError</b>
+### -field ConnectionError
 
 <dd>
 <p>The number of established connections with  an error before a consumer disconnected the connection. In a bitmask of counters, this is counter 3.</p>
 </dd>
 
-### -field <b>ActiveConnection</b>
+### -field ActiveConnection
 
 <dd>
 <p>The number of  active <i>RDMA</i> connections. In a bitmask of counters, this is counter 4.</p>
 </dd>
 
-### -field <b>Reserved01</b>
+### -field Reserved01
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved02</b>
+### -field Reserved02
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved03</b>
+### -field Reserved03
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved04</b>
+### -field Reserved04
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved05</b>
+### -field Reserved05
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved06</b>
+### -field Reserved06
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved07</b>
+### -field Reserved07
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved08</b>
+### -field Reserved08
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved09</b>
+### -field Reserved09
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved10</b>
+### -field Reserved10
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved11</b>
+### -field Reserved11
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved12</b>
+### -field Reserved12
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved13</b>
+### -field Reserved13
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved14</b>
+### -field Reserved14
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved15</b>
+### -field Reserved15
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved16</b>
+### -field Reserved16
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved17</b>
+### -field Reserved17
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved18</b>
+### -field Reserved18
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved19</b>
+### -field Reserved19
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserved20</b>
+### -field Reserved20
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>CQError</b>
+### -field CQError
 
 <dd>
 <p>The number of <i>RDMA</i> completion queue (CQs) that went into an error state. In a bitmask of counters, this is counter 25.</p>
 </dd>
 
-### -field <b>RDMAInOctets</b>
+### -field RDMAInOctets
 
 <dd>
 <p>The number of bytes  for all incoming <i>RDMA</i> traffic. This should include additional layer two protocol overhead.  In a bitmask of counters, this is counter 26.</p>
 </dd>
 
-### -field <b>RDMAOutOctets</b>
+### -field RDMAOutOctets
 
 <dd>
 <p>The number of bytes  for all outgoing <i>RDMA</i> traffic.  This should include additional layer two protocol overhead.  In a bitmask of counters, this is counter 27.</p>
 </dd>
 
-### -field <b>RDMAInFrames</b>
+### -field RDMAInFrames
 
 <dd>
 <p>The number, in frames,  of layer two frames that carry incoming <i>RDMA</i> traffic. In a bitmask of counters, this is counter 28.</p>
 </dd>
 
-### -field <b>RDMAOutFrames</b>
+### -field RDMAOutFrames
 
 <dd>
 <p>The number, in frames,  of layer two frames that carry outgoing <i>RDMA</i> traffic. In a bitmask of counters, this is counter 29.</p>
@@ -324,4 +324,4 @@ typedef struct _NDIS_NDK_PERFORMANCE_COUNTERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NDK_PERFORMANCE_COUNTERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NDK_PERFORMANCE_COUNTERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

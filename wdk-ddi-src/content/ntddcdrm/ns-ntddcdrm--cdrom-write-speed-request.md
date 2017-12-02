@@ -54,7 +54,7 @@ typedef struct _CDROM_WRITE_SPEED_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>RequestType</b>
+### -field RequestType
 
 <dd>
 <p>As defined in the <a href="..\ntddcdrm\ne-ntddcdrm--cdrom-performance-request-type.md">CDROM_PERFORMANCE_REQUEST_TYPE</a>    enumeration.</p>

@@ -61,7 +61,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>FocusRect</b>
+### -field FocusRect
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that specifies the rectangular region in which the device should set the focus. This structure is available only to Windows apps.</p>
@@ -69,28 +69,28 @@ typedef struct {
 <p>The rectangle's coordinates are with respect to the preview video resolution.</p>
 </dd>
 
-### -field <b>AutoFocusLock</b>
+### -field AutoFocusLock
 
 <dd>
 <p>If <b>TRUE</b>, the device should lock the focus to the current value.</p>
 <p>This member should be ignored if <b>FocusRect</b> is not a valid value.</p>
 </dd>
 
-### -field <b>AutoExposureLock</b>
+### -field AutoExposureLock
 
 <dd>
 <p>If <b>TRUE</b>, the device should lock the exposure to the current value.</p>
 <p>This member should be ignored if <b>FocusRect</b> is not a valid value.</p>
 </dd>
 
-### -field <b>AutoWhitebalanceLock</b>
+### -field AutoWhitebalanceLock
 
 <dd>
 <p>If <b>TRUE</b>, the device should lock the white balance setting to the current value.</p>
 <p>This member should be ignored if <b>FocusRect</b> is not a valid value.</p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Indicates whether the device and driver support setting the region of interest automatically or manually. This member a bitwise <b>OR</b> of these possible values:</p>
@@ -102,7 +102,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_FLAGS_AUTO"></a><a id="ksproperty_cameracontrol_region_of_interest_flags_auto"></a><dl>
 
-### -field <b>KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_FLAGS_AUTO</b>
+### -field KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_FLAGS_AUTO
 
 </dl>
 </td>
@@ -113,7 +113,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_FLAGS_MANUAL"></a><a id="ksproperty_cameracontrol_region_of_interest_flags_manual"></a><dl>
 
-### -field <b>KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_FLAGS_MANUAL</b>
+### -field KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_FLAGS_MANUAL
 
 </dl>
 </td>
@@ -124,7 +124,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_FLAGS_ASYNC"></a><a id="ksproperty_cameracontrol_region_of_interest_flags_async"></a><dl>
 
-### -field <b>KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_FLAGS_ASYNC</b>
+### -field KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_FLAGS_ASYNC
 
 </dl>
 </td>
@@ -137,7 +137,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>Configuration</b>
+### -field Configuration
 
 <dd>
 <p>Configuration flags for control operations for the region. This is a bitwise OR combination of the following values.</p>
@@ -150,7 +150,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="_KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONFIG_FOCUS"></a><a id="_ksproperty_cameracontrol_region_of_interest_config_focus"></a><dl>
 
-### -field <b> KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONFIG_FOCUS</b>
+### -field  KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONFIG_FOCUS
 
 </dl>
 </td>
@@ -161,7 +161,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONFIG_EXPOSURE"></a><a id="ksproperty_cameracontrol_region_of_interest_config_exposure"></a><dl>
 
-### -field <b>KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONFIG_EXPOSURE</b>
+### -field KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONFIG_EXPOSURE
 
 </dl>
 </td>
@@ -172,7 +172,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONFIG_WB"></a><a id="ksproperty_cameracontrol_region_of_interest_config_wb"></a><dl>
 
-### -field <b>KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONFIG_WB</b>
+### -field KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONFIG_WB
 
 </dl>
 </td>
@@ -183,7 +183,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONVERGEMODE"></a><a id="ksproperty_cameracontrol_region_of_interest_convergemode"></a><dl>
 
-### -field <b>KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONVERGEMODE</b>
+### -field KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONVERGEMODE
 
 </dl>
 </td>

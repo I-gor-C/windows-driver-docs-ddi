@@ -55,13 +55,13 @@ void KsAddEvent(
 ## -parameters
 <dl>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>The object to which to add the event.</p>
 </dd>
 
-### -param <i>EventEntry</i> [in]
+### -param EventEntry [in]
 
 <dd>
 <p>A pointer to an <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a> structure describing the event to add to <i>Object</i>.</p>

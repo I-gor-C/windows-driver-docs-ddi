@@ -59,31 +59,31 @@ typedef enum _IO_PAGING_PRIORITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="IoPagingPriorityInvalid"></a><a id="iopagingpriorityinvalid"></a><a id="IOPAGINGPRIORITYINVALID"></a><b>IoPagingPriorityInvalid</b>
+### -field IoPagingPriorityInvalid
 
 <dd>
 <p>The IRP is not a paging I/O IRP.</p>
 </dd>
 
-### -field <a id="IoPagingPriorityNormal"></a><a id="iopagingprioritynormal"></a><a id="IOPAGINGPRIORITYNORMAL"></a><b>IoPagingPriorityNormal</b>
+### -field IoPagingPriorityNormal
 
 <dd>
 <p>The associated IRP has a normal priority level for paging I/O. </p>
 </dd>
 
-### -field <a id="IoPagingPriorityHigh"></a><a id="iopagingpriorityhigh"></a><a id="IOPAGINGPRIORITYHIGH"></a><b>IoPagingPriorityHigh</b>
+### -field IoPagingPriorityHigh
 
 <dd>
 <p>The associated IRP has a high priority level for paging I/O. </p>
 </dd>
 
-### -field <a id="IoPagingPriorityReserved1"></a><a id="iopagingpriorityreserved1"></a><a id="IOPAGINGPRIORITYRESERVED1"></a><b>IoPagingPriorityReserved1</b>
+### -field IoPagingPriorityReserved1
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="IoPagingPriorityReserved2"></a><a id="iopagingpriorityreserved2"></a><a id="IOPAGINGPRIORITYRESERVED2"></a><b>IoPagingPriorityReserved2</b>
+### -field IoPagingPriorityReserved2
 
 <dd>
 <p>Reserved for system use. </p>

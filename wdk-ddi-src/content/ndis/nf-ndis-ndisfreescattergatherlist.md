@@ -7,7 +7,7 @@ old-location: netvista\ndisfreescattergatherlist.htm
 old-project: netvista
 ms.assetid: 140be989-e578-4bfe-8b9e-56abb274933a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisFreeScatterGatherList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ VOID NdisFreeScatterGatherList(
 ## -parameters
 <dl>
 
-### -param <i>NdisHandle</i> [in]
+### -param NdisHandle [in]
 
 <dd>
 <p>An NDIS driver or instance handle that was obtained during caller initialization. This should be
@@ -66,7 +66,7 @@ VOID NdisFreeScatterGatherList(
      NdisBuildScatterGatherList</a> function when the scatter/gather list was created.</p>
 </dd>
 
-### -param <i>ScatterGatherListBuffer</i> [in]
+### -param ScatterGatherListBuffer [in]
 
 <dd>
 <p>A pointer to a caller-provided 
@@ -75,7 +75,7 @@ VOID NdisFreeScatterGatherList(
      <b>NdisBuildScatterGatherList</b> function when the scatter/gather list was allocated.</p>
 </dd>
 
-### -param <i>WriteToDevice</i> [in]
+### -param WriteToDevice [in]
 
 <dd>
 <p>A BOOLEAN value that is set to <b>TRUE</b> if the scatter/gather list was used for writing to the device.
@@ -153,4 +153,4 @@ VOID NdisFreeScatterGatherList(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeScatterGatherList function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeScatterGatherList function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

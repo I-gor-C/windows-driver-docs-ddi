@@ -61,43 +61,43 @@ typedef struct _REG_POST_OPERATION_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Object</b>
+### -field Object
 
 <dd>
 <p>A pointer to the registry key object for which the operation has completed. This member is valid only if the Status member of the structure is set to STATUS_SUCCESS. For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=613134">Invalid Key Object Pointers in Registry Notifications</a>.</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The NTSTATUS-typed value that the system will return for the registry operation.</p>
 </dd>
 
-### -field <b>PreInformation</b>
+### -field PreInformation
 
 <dd>
 <p>A pointer to the structure that contains preprocessing information for the registry operation that has completed. For example, if the <a href="kernel.registrycallback">RegistryCallback</a> routine is processing a <b>RegNtPostQueryValueKey</b> operation, the <b>PreInformation</b> member points to a <a href="..\wdm\ns-wdm--reg-query-value-key-information.md">REG_QUERY_VALUE_KEY_INFORMATION</a> structure. This member is defined for Windows Vista and later versions of the Windows operating system.</p>
 </dd>
 
-### -field <b>ReturnStatus</b>
+### -field ReturnStatus
 
 <dd>
 <p>A driver-supplied NTSTATUS-typed value. If the driver's <i>RegistryCallback</i> routine returns STATUS_CALLBACK_BYPASS, the operating system uses the <b>ReturnStatus</b> member's value as the status that it returns to the thread that initiated the registry operation. (In such cases, the operating system also copies the <b>ReturnStatus</b> member's value to the <b>Status</b> member.) Otherwise, this member is ignored. This member is defined for Windows Vista and later versions of the Windows operating system.</p>
 </dd>
 
-### -field <b>CallContext</b>
+### -field CallContext
 
 <dd>
 <p>Optional driver-defined context information that the driver's <a href="kernel.registrycallback">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.</p>
 </dd>
 
-### -field <b>ObjectContext</b>
+### -field ObjectContext
 
 <dd>
 <p>A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.</p>

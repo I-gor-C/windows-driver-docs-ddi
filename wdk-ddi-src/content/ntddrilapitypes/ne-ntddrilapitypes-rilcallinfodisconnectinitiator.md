@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfodisconnectinitiator.htm
 old-project: netvista
 ms.assetid: df3c3cb9-583c-4a6e-9477-843067865418
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILCALLINFODISCONNECTINITIATOR {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DISCINIT_LOCAL"></a><a id="ril_discinit_local"></a><b>RIL_DISCINIT_LOCAL</b>
+### -field RIL_DISCINIT_LOCAL
 
 <dd></dd>
 
-### -field <a id="RIL_DISCINIT_REMOTE"></a><a id="ril_discinit_remote"></a><b>RIL_DISCINIT_REMOTE</b>
+### -field RIL_DISCINIT_REMOTE
 
 <dd></dd>
 
-### -field <a id="RIL_DISCINIT_MAX"></a><a id="ril_discinit_max"></a><b>RIL_DISCINIT_MAX</b>
+### -field RIL_DISCINIT_MAX
 
 <dd></dd>
 </dl>

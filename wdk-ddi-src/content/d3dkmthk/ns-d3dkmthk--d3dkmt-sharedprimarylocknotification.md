@@ -56,19 +56,19 @@ typedef struct _D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>AdapterLuid</b>
+### -field AdapterLuid
 
 <dd>
 <p>[in] The locally unique identifier (<a href="kernel.luid">LUID</a>) of the graphics adapter on which the GDI shared primary surface exists. </p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology on which the GDI shared primary surface exists. </p>
 </dd>
 
-### -field <b>LockRect</b>
+### -field LockRect
 
 <dd>
 <p>[in] A <a href="display.rectl">RECTL</a> structure that indicates the upper-left and lower-right points of a rectangle on the shared primary surface; the operating system disables all sprites that intersect with this rectangle. If the OpenGL ICD specifies zero for each member of RECTL, the operating system disables all sprites on the shared primary surface.</p>

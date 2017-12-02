@@ -60,38 +60,38 @@ ULONG ScsiPortGetBusData(
 ## -parameters
 <dl>
 
-### -param <i>DeviceExtension</i> [in]
+### -param DeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's per-HBA storage area.</p>
 </dd>
 
-### -param <i>BusDataType</i> [in]
+### -param BusDataType [in]
 
 <dd>
 <p>Contains a value of type <a href="..\ntddk\ne-ntddk--bus-data-type.md">BUS_DATA_TYPE</a> that specifies the type of bus-specific configuration data to be returned. Currently, this value can be one of the following: <b>Cmos</b>, <b>EisaConfiguration</b>, <b>Pos</b>, or <b>PCIConfiguration</b>. However, additional types of bus configuration will be supported in the future. The upper bound on the types supported is always <b>MaximumBusDataType</b>.</p>
 </dd>
 
-### -param <i>SystemIoBusNumber</i> [in]
+### -param SystemIoBusNumber [in]
 
 <dd>
 <p>Specifies the system-assigned number of the I/O bus. The miniport driver's <a href="storage.hwscsifindadapter">HwScsiFindAdapter</a> routine obtains this value from the input PORT_CONFIGURATION_INFORMATION <b>SystemIoBusNumber</b> member.</p>
 </dd>
 
-### -param <i>SlotNumber</i> [in]
+### -param SlotNumber [in]
 
 <dd>
 <p>Specifies the logical slot number or location of the device.</p>
 <p>If <b>PCIConfiguration</b> is specified as the <i>BusDataType</i>, this parameter must be specified as a PCI_SLOT_NUMBER-type value.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>Pointer to a buffer or area to which the configuration data is returned or, if the given <i>Length</i> is zero, points to a location to which the operating system-specific port driver returns a pointer to a buffer that it allocates.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the maximum number of bytes to return at <i>Buffer</i>, or zero if the caller requires the operating system-specific port driver to allocate a buffer to contain the data.</p>

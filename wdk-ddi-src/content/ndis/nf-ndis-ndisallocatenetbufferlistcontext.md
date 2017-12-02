@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatenetbufferlistcontext.htm
 old-project: netvista
 ms.assetid: 3bbad723-86bf-4206-9e51-52a66efaec20
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisAllocateNetBufferListContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,20 +61,20 @@ NDIS_STATUS NdisAllocateNetBufferListContext(
 ## -parameters
 <dl>
 
-### -param <i>NetBufferList</i> [in]
+### -param NetBufferList [in]
 
 <dd>
 <p>A pointer to a previously allocated NET_BUFFER_LIST structure.</p>
 </dd>
 
-### -param <i>ContextSize</i> [in]
+### -param ContextSize [in]
 
 <dd>
 <p>The amount of context space to allocate in the NET_BUFFER_LIST_CONTEXT structure. This amount must
      be a multiple of the value defined by MEMORY_ALLOCATION_ALIGNMENT.</p>
 </dd>
 
-### -param <i>ContextBackFill</i> [in]
+### -param ContextBackFill [in]
 
 <dd>
 <p>The amount of memory, in addition to the value of 
@@ -82,7 +82,7 @@ NDIS_STATUS NdisAllocateNetBufferListContext(
      a multiple of the value defined by MEMORY_ALLOCATION_ALIGNMENT.</p>
 </dd>
 
-### -param <i>PoolTag</i> [in]
+### -param PoolTag [in]
 
 <dd>
 <p>A kernel pool tag that NDIS uses to allocate the memory for the NET_BUFFER_LIST_CONTEXT structure,
@@ -193,4 +193,4 @@ NDIS_STATUS NdisAllocateNetBufferListContext(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferListContext function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferListContext function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

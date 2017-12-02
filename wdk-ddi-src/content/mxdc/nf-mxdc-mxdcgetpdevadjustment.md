@@ -60,43 +60,43 @@ HRESULT MxdcGetPDEVAdjustment(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd>
 <p>The handle of the currently instantiated printer.</p>
 </dd>
 
-### -param <i>cbDevMode</i> [in]
+### -param cbDevMode [in]
 
 <dd>
 <p>The size of the <a href="display.devmodew">DEVMODE</a> structure, in bytes, including the driver's private DEVMODE data.</p>
 </dd>
 
-### -param <i>pDevMode</i> [in]
+### -param pDevMode [in]
 
 <dd>
 <p>A copy of the DEVMODE structure that the MXDC received. The printer interface DLL uses information from this structure to return the requested data.</p>
 </dd>
 
-### -param <i>cbIn</i> [in]
+### -param cbIn [in]
 
 <dd>
 <p>An input parameter that designates the size of the <i>pvIn</i> parameter, in bytes. This parameter is currently not used and its value is zero.</p>
 </dd>
 
-### -param <i>pvIn</i> [in, optional]
+### -param pvIn [in, optional]
 
 <dd>
 <p>A parameter that consists of data that is sent to the printer interface DLL from the MXDC. This parameter is currently not used and its value is <b>NULL</b>.</p>
 </dd>
 
-### -param <i>cbPrintPropertiesCollection</i> [in]
+### -param cbPrintPropertiesCollection [in]
 
 <dd>
 <p>The size of the <a href="https://msdn.microsoft.com/240e14d1-d8ee-403c-b728-b14941775634">PrintPropertiesCollection</a> data structure, in bytes.</p>
 </dd>
 
-### -param <i>pOut</i> [in, out]
+### -param pOut [in, out]
 
 <dd>
 <p>The <b>PrintPropertiesCollection</b> data structure from which the printer interface's DLL gets the requested data. This structure is defined in WinSpool.h. The requested fields might be pre-filled with the MXDC's default data. The printer interface DLL must ignore the fields that it does not understand.</p>

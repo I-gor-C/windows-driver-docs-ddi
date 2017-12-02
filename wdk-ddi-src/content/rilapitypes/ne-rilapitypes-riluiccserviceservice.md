@@ -7,7 +7,7 @@ old-location: netvista\riluiccserviceservice_2.htm
 old-project: netvista
 ms.assetid: bc3df2dd-caa7-4614-a243-3df13e3c0e84
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILUICCSERVICESERVICE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_UICCOPERATION_SERVICE_BDN"></a><a id="ril_uiccoperation_service_bdn"></a><b>RIL_UICCOPERATION_SERVICE_BDN</b>
+### -field RIL_UICCOPERATION_SERVICE_BDN
 
 <dd></dd>
 
-### -field <a id="RIL_UICCOPERATION_SERVICE_ACL"></a><a id="ril_uiccoperation_service_acl"></a><b>RIL_UICCOPERATION_SERVICE_ACL</b>
+### -field RIL_UICCOPERATION_SERVICE_ACL
 
 <dd></dd>
 
-### -field <a id="RIL_UICCOPERATION_SERVICE_MAX"></a><a id="ril_uiccoperation_service_max"></a><b>RIL_UICCOPERATION_SERVICE_MAX</b>
+### -field RIL_UICCOPERATION_SERVICE_MAX
 
 <dd></dd>
 </dl>

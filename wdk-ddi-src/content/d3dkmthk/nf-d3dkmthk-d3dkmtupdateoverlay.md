@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTUpdateOverlay(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-updateoverlay.md">D3DKMT_UPDATEOVERLAY</a> structure that describes how to modify the overlay.</p>

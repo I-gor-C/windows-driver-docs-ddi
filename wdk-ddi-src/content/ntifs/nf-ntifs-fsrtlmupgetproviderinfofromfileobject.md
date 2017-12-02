@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlmupgetproviderinfofromfileobject.htm
 old-project: ifsk
 ms.assetid: 3f4d8c5c-3a83-4027-8d9e-5ff7db4a6853
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FsRtlMupGetProviderInfoFromFileObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ NTSTATUS FsRtlMupGetProviderInfoFromFileObject(
 ## -parameters
 <dl>
 
-### -param <i>pFileObject</i> [in]
+### -param pFileObject [in]
 
 <dd>
 <p>A pointer to a file object of a file that is located on a remote file system.</p>
 </dd>
 
-### -param <i>Level</i> [in]
+### -param Level [in]
 
 <dd>
 <p>The level of information that is returned by the <b>FsRtlMupGetProviderInfoFromFileObject</b> routine. For more information about the possible values for this parameter, see the Remarks section.</p>
 </dd>
 
-### -param <i>pBuffer</i> [out]
+### -param pBuffer [out]
 
 <dd>
 <p>A pointer to a buffer that receives the information that is returned by the <b>FsRtlMupGetProviderInfoFromFileObject</b> routine. For more information about the format of the data that is returned in this buffer, see the Remarks section.</p>
 </dd>
 
-### -param <i>pBufferSize</i> [in, out]
+### -param pBufferSize [in, out]
 
 <dd>
 <p>A pointer to a ULONG-typed variable that contains the size, in bytes, of the buffer that is pointed to by the <i>pBuffer</i> parameter. If the routine succeeds, this variable receives the size, in bytes, of data that is returned in the buffer.</p>
@@ -182,4 +182,4 @@ NTSTATUS FsRtlMupGetProviderInfoFromFileObject(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlMupGetProviderInfoFromFileObject routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlMupGetProviderInfoFromFileObject routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

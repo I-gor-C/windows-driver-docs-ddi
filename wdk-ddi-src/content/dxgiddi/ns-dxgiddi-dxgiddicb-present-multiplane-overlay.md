@@ -59,25 +59,25 @@ typedef struct DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>pDXGIContext</b>
+### -field pDXGIContext
 
 <dd>
 <p>[in] A handle to the Microsoft DirectX Graphics Infrastructure (DXGI)  context. This handle is opaque to the driver. The driver should assign the handle from the <b>pDXGIContext</b> member of the <a href="..\dxgiddi\ns-dxgiddi--dxgi-ddi-arg-presentmultiplaneoverlay.md">DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY</a> structure that the driver received in a call to its <a href="display.pfnpresentmultiplaneoverlay__dxgi_">pfnPresentMultiplaneOverlay (DXGI)</a> function to this member.</p>
 </dd>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[in] A handle to the context that the driver submits the copy operation to. The user-mode display driver previously created this context by calling the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function.</p>
 </dd>
 
-### -field <b>BroadcastContextCount</b>
+### -field BroadcastContextCount
 
 <dd>
 <p>[in] The number of additional contexts in the array that the <b>BroadcastContext</b> member specifies.</p>
 </dd>
 
-### -field <b>BroadcastContext</b>
+### -field BroadcastContext
 
 <dd>
 <p>[in] An array of handles to the additional contexts to broadcast the current present operation to. The <b>D3DDDI_MAX_BROADCAST_CONTEXT</b> constant, which is defined as 64, defines the maximum number of additional contexts that the user-mode display driver can broadcast the current present operation to. </p>
@@ -85,13 +85,13 @@ typedef struct DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY {
 <p>The original context that the <b>hContext</b> member specifies and that the user-mode display driver presents to is not an element in the <b>BroadcastContext</b> array. For example, if the <b>BroadcastContext</b> array contains one element, the user-mode display driver sends the present operation to the owning context (<b>hContext</b>) and broadcasts to that one additional context. </p>
 </dd>
 
-### -field <b>AllocationInfoCount</b>
+### -field AllocationInfoCount
 
 <dd>
 <p>[in] The number of allocations in the array that the <b>AllocationInfo</b> member specifies. The maximum number is 16, the value of the <b>DXGI_DDI_MAX_MULTIPLANE_OVERLAY_ALLOCATIONS</b> constant.</p>
 </dd>
 
-### -field <b>AllocationInfo</b>
+### -field AllocationInfo
 
 <dd>
 <p>An array of structures of type <a href="..\dxgiddi\ns-dxgiddi-dxgiddi-multiplane-overlay-allocation-info.md">DXGIDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO</a> that specify info about the multiplane overlay allocations.</p>

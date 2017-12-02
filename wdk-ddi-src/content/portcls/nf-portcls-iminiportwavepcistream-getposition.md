@@ -54,7 +54,7 @@ NTSTATUS GetPosition(
 ## -parameters
 <dl>
 
-### -param <i>Position</i> [out]
+### -param Position [out]
 
 <dd>
 <p>Output pointer for the position value. This parameter points to a caller-allocated ULONGLONG variable into which the method writes the current byte position of the stream.</p>
@@ -83,7 +83,7 @@ NTSTATUS GetPosition(
 
 <p>Audio hardware that internally buffers a portion of a playback or capture stream might make a precise position reading more difficult to obtain. In this case, the driver should estimate the current position as accurately as possible. For example, if an audio device prefetches the playback stream into an internal buffer, the driver might need to take both the buffer size and timing information into account in order to properly estimate the play position.</p>
 
-<p>The WavePci port driver implements a property handler for <a href="https://msdn.microsoft.com/library/windows/hardware/ff537297">KSPROPERTY_AUDIO_POSITION</a>. This property handler calls the <code>GetPosition</code> method to obtain the current play or record position from the miniport driver. For more information, see <a href="NULL">Audio Position Property</a>. </p>
+<p>The WavePci port driver implements a property handler for <a href="https://msdn.microsoft.com/library/windows/hardware/ff537297">KSPROPERTY_AUDIO_POSITION</a>. This property handler calls the <code>GetPosition</code> method to obtain the current play or record position from the miniport driver. For more information, see <a href="https://msdn.microsoft.com/893fea84-9136-4107-96d2-8a4e2ab7bd2a">Audio Position Property</a>. </p>
 
 ## -requirements
 <table>

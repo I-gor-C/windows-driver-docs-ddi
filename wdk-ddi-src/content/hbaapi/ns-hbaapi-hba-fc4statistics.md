@@ -58,31 +58,31 @@ typedef struct HBA_FC4Statistics {
 ## -struct-fields
 <dl>
 
-### -field <b>InputRequests</b>
+### -field InputRequests
 
 <dd>
 <p>Contains the number of input requests that a port has received.</p>
 </dd>
 
-### -field <b>OutputRequests</b>
+### -field OutputRequests
 
 <dd>
 <p>Contains the number of output requests that a port has received.</p>
 </dd>
 
-### -field <b>ControlRequests</b>
+### -field ControlRequests
 
 <dd>
 <p>Contains the number of control requests that a port has received.</p>
 </dd>
 
-### -field <b>InputMegabytes</b>
+### -field InputMegabytes
 
 <dd>
 <p>Contains the number of megabytes of input data that a port has received.</p>
 </dd>
 
-### -field <b>OutputMegabytes</b>
+### -field OutputMegabytes
 
 <dd>
 <p>Contains the number of megabytes of output data that a port has transmitted.</p>

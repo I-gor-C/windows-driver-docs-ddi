@@ -55,13 +55,13 @@ typedef struct _SCSI_ADAPTER_BUS_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfBuses</b>
+### -field NumberOfBuses
 
 <dd>
 <p>Contains the number of buses on the adapter for which inquiry data is being reported. </p>
 </dd>
 
-### -field <b>BusData</b>
+### -field BusData
 
 <dd>
 <p>Contains a variable length array of <a href="..\ntddscsi\ns-ntddscsi--scsi-bus-data.md">SCSI_BUS_DATA</a> structures that hold the inquiry data. </p>

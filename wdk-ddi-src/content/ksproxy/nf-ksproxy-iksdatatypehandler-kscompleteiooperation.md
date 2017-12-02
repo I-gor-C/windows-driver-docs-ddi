@@ -57,19 +57,19 @@ HRESULT KsCompleteIoOperation(
 ## -parameters
 <dl>
 
-### -param <i>Sample</i> [in, out]
+### -param Sample [in, out]
 
 <dd>
 <p>Pointer to the <b>IMediaSample</b> interface for the associated media sample.</p>
 </dd>
 
-### -param <i>StreamHeader</i> [in, out]
+### -param StreamHeader [in, out]
 
 <dd>
 <p>Pointer to a buffer that contains the extended header information.</p>
 </dd>
 
-### -param <i>IoOperation</i> [in]
+### -param IoOperation [in]
 
 <dd>
 <p>Value that specifies the type of I/O operation. This value can be one of the following values from the KSIOOPERATION enumerated type:</p>
@@ -98,7 +98,7 @@ HRESULT KsCompleteIoOperation(
 <p> </p>
 </dd>
 
-### -param <i>Cancelled</i> [in]
+### -param Cancelled [in]
 
 <dd>
 <p>Boolean value that is <b>TRUE</b> if the I/O operation was canceled and <b>FALSE</b> otherwise.</p>

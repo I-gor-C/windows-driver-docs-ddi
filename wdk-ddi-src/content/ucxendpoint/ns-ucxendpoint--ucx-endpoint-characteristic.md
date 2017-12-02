@@ -59,19 +59,19 @@ typedef struct _UCX_ENDPOINT_CHARACTERISTIC {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Size of this structure.</p>
 </dd>
 
-### -field <b>CharacteristicType</b>
+### -field CharacteristicType
 
 <dd>
-<p>A <a href="buses.ucx_endpoint_characteristic_type">UCX_ENDPOINT_CHARACTERISTIC_TYPE</a>-type value that indicates the type of endpoint characteristic.</p>
+<p>A <a href="..\ucxendpoint\ne-ucxendpoint--ucx-endpoint-characteristic-type.md">UCX_ENDPOINT_CHARACTERISTIC_TYPE</a>-type value that indicates the type of endpoint characteristic.</p>
 </dd>
 
-### -field <b>Priority</b>
+### -field Priority
 
 <dd>
 <p>A <a href="buses.ucx_endpoint_characteristic_priority">UCX_CONTROLLER_ENDPOINT_CHARACTERISTIC_PRIORITY</a>-typed value that indicates the priority of the endpoint.</p>
@@ -114,7 +114,7 @@ typedef struct _UCX_ENDPOINT_CHARACTERISTIC {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_ucx_endpoint_set_characteristic">EVT_UCX_ENDPOINT_SET_CHARACTERISTIC</a>
+<a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-endpoint-set-characteristic.md">EVT_UCX_ENDPOINT_SET_CHARACTERISTIC</a>
 </dt>
 <dt>
 <a href="buses.ucx_endpoint_characteristic_priority">UCX_CONTROLLER_ENDPOINT_CHARACTERISTIC_PRIORITY</a>

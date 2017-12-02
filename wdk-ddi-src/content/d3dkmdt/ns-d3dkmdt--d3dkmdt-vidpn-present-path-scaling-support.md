@@ -58,32 +58,32 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT {
 ## -struct-fields
 <dl>
 
-### -field <b>Identity</b>
+### -field Identity
 
 <dd>
 <p>The path is capable of displaying content with no transformation.</p>
 </dd>
 
-### -field <b>Centered</b>
+### -field Centered
 
 <dd>
 <p>The path is capable of displaying centered content.</p>
 </dd>
 
-### -field <b>Stretched</b>
+### -field Stretched
 
 <dd>
 <p>The path is capable of displaying scaled content.</p>
 </dd>
 
-### -field <b>AspectRatioCenteredMax</b>
+### -field AspectRatioCenteredMax
 
 <dd>
 <p>The path is capable of scaling source content to fit the target while preserving the aspect ratio of the source.</p>
 <p>This member is available beginning with Windows 7.</p>
 </dd>
 
-### -field <b>Custom</b>
+### -field Custom
 
 <dd>
 <p>The path is capable of displaying one or more scaling modes that are not described by other members of this structure.</p>

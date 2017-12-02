@@ -54,7 +54,7 @@ ULONG KsIncrementCountedWorker(
 ## -parameters
 <dl>
 
-### -param <i>Worker</i> [in]
+### -param Worker [in]
 
 <dd>
 <p>Contains the previously allocated worker.</p>

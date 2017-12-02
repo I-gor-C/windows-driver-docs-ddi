@@ -55,7 +55,7 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Flash</b>
+### -field Flash
 
 <dd>
 <p>Indicates requested flash settings. This value must be one of these possible values:</p>
@@ -67,7 +67,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="KSPROPERTY_CAMERACONTROL_FLASH_OFF"></a><a id="ksproperty_cameracontrol_flash_off"></a><dl>
 
-### -field <b>KSPROPERTY_CAMERACONTROL_FLASH_OFF</b>
+### -field KSPROPERTY_CAMERACONTROL_FLASH_OFF
 
 </dl>
 </td>
@@ -78,7 +78,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="KSPROPERTY_CAMERACONTROL_FLASH_ON"></a><a id="ksproperty_cameracontrol_flash_on"></a><dl>
 
-### -field <b>KSPROPERTY_CAMERACONTROL_FLASH_ON</b>
+### -field KSPROPERTY_CAMERACONTROL_FLASH_ON
 
 </dl>
 </td>
@@ -89,7 +89,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="KSPROPERTY_CAMERACONTROL_FLASH_AUTO"></a><a id="ksproperty_cameracontrol_flash_auto"></a><dl>
 
-### -field <b>KSPROPERTY_CAMERACONTROL_FLASH_AUTO</b>
+### -field KSPROPERTY_CAMERACONTROL_FLASH_AUTO
 
 </dl>
 </td>
@@ -101,7 +101,7 @@ typedef struct {
 <p> </p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <p>Indicates the flash modes that the device supports. This value is a bitwise <b>OR</b> of these possible values:</p>
@@ -113,7 +113,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="KSPROPERTY_CAMERACONTROL_FLASH_FLAGS_AUTO"></a><a id="ksproperty_cameracontrol_flash_flags_auto"></a><dl>
 
-### -field <b>KSPROPERTY_CAMERACONTROL_FLASH_FLAGS_AUTO</b>
+### -field KSPROPERTY_CAMERACONTROL_FLASH_FLAGS_AUTO
 
 </dl>
 </td>
@@ -124,7 +124,7 @@ typedef struct {
 <tr>
 <td width="40%"><a id="KSPROPERTY_CAMERACONTROL_FLASH_FLAGS_MANUAL"></a><a id="ksproperty_cameracontrol_flash_flags_manual"></a><dl>
 
-### -field <b>KSPROPERTY_CAMERACONTROL_FLASH_FLAGS_MANUAL</b>
+### -field KSPROPERTY_CAMERACONTROL_FLASH_FLAGS_MANUAL
 
 </dl>
 </td>

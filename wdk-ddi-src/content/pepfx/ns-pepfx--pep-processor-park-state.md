@@ -56,19 +56,19 @@ typedef struct _PEP_PROCESSOR_PARK_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Processor</b>
+### -field Processor
 
 <dd>
 <p>Specifies the <b>PEPHANDLE</b> associated with this processor.</p>
 </dd>
 
-### -field <b>Parked</b>
+### -field Parked
 
 <dd>
 <p>Specifies whether or not this processor is parked.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_pm_wol_pattern.htm
 old-project: netvista
 ms.assetid: 2ca1fdbe-efd3-4607-aab1-751e6d5d025b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_PM_WOL_PATTERN, NDIS_PM_WOL_PATTERN, *PNDIS_PM_WOL_PATTERN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -86,7 +86,7 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_PM_WOL_PATTERN</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -94,14 +94,14 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_PM_WOL_PATTERN_REVISION_2"></a><a id="ndis_pm_wol_pattern_revision_2"></a>NDIS_PM_WOL_PATTERN_REVISION_2
+### -field NDIS_PM_WOL_PATTERN_REVISION_2
 
 <dd>
 <p>Revisions made to  the <a href="..\ntddndis\ne-ntddndis--ndis-pm-wol-packet.md">NDIS_PM_WOL_PACKET</a> enumeration for NDIS 6.30.</p>
 <p>Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_WOL_PATTERN_REVISION_2.</p>
 </dd>
 
-### -field <a id="NDIS_PM_WOL_PATTERN_REVISION_1"></a><a id="ndis_pm_wol_pattern_revision_1"></a>NDIS_PM_WOL_PATTERN_REVISION_1
+### -field NDIS_PM_WOL_PATTERN_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.20.</p>
@@ -110,13 +110,13 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 </dl>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>Priority</b>
+### -field Priority
 
 <dd>
 <p>A ULONG value that contains the priority of the WOL pattern. If an overlying driver adds a higher
@@ -128,19 +128,19 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_PM_WOL_PRIORITY_LOWEST"></a><a id="ndis_pm_wol_priority_lowest"></a>NDIS_PM_WOL_PRIORITY_LOWEST
+### -field NDIS_PM_WOL_PRIORITY_LOWEST
 
 <dd>
 <p>Specifies the lowest priority WOL pattern.</p>
 </dd>
 
-### -field <a id="NDIS_PM_WOL_PRIORITY_NORMAL"></a><a id="ndis_pm_wol_priority_normal"></a>NDIS_PM_WOL_PRIORITY_NORMAL
+### -field NDIS_PM_WOL_PRIORITY_NORMAL
 
 <dd>
 <p>Specifies a normal priority WOL pattern.</p>
 </dd>
 
-### -field <a id="NDIS_PM_WOL_PRIORITY_HIGHEST"></a><a id="ndis_pm_wol_priority_highest"></a>NDIS_PM_WOL_PRIORITY_HIGHEST
+### -field NDIS_PM_WOL_PRIORITY_HIGHEST
 
 <dd>
 <p>Specifies the highest priority WOL pattern.</p>
@@ -148,7 +148,7 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 </dl>
 </dd>
 
-### -field <b>WoLPacketType</b>
+### -field WoLPacketType
 
 <dd>
 <p>An 
@@ -156,7 +156,7 @@ typedef struct _NDIS_PM_WOL_PATTERN {
      specifies the type of the WOL packet.</p>
 </dd>
 
-### -field <b>FriendlyName</b>
+### -field FriendlyName
 
 <dd>
 <p>An 
@@ -164,7 +164,7 @@ typedef struct _NDIS_PM_WOL_PATTERN {
      that contains the user-readable description of the WOL packet.</p>
 </dd>
 
-### -field <b>PatternId</b>
+### -field PatternId
 
 <dd>
 <p>A ULONG value that contains an NDIS-provided value that identifies the WOL pattern. Before NDIS
@@ -174,7 +174,7 @@ typedef struct _NDIS_PM_WOL_PATTERN {
      <b>PatternId</b> to a value that is unique among the WOL patterns on a network adapter.</p>
 </dd>
 
-### -field <b>NextWoLPatternOffset</b>
+### -field NextWoLPatternOffset
 
 <dd>
 <p>A ULONG value that contains an offset, in bytes. The 
@@ -184,44 +184,44 @@ typedef struct _NDIS_PM_WOL_PATTERN {
      <b>NextWoLPatternOffset</b> is zero, the current structure is the last structure in the list.</p>
 </dd>
 
-### -field <b>WoLPattern</b>
+### -field WoLPattern
 
 <dd>
 <p>A union that contains the following member structures.</p>
 <dl>
 
-### -field <b>IPv4TcpSynParameters</b>
+### -field IPv4TcpSynParameters
 
 <dd>
 <p>A structure that contains IPv4 TCP SYN information. This structure contains the following
       members:</p>
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>IPv4SourceAddress</b>
+### -field IPv4SourceAddress
 
 <dd>
 <p>The IPv4 source address in the TCP SYN packet.</p>
 </dd>
 
-### -field <b>IPv4DestAddress</b>
+### -field IPv4DestAddress
 
 <dd>
 <p>The IPv4 destination address in the TCP SYN packet.</p>
 </dd>
 
-### -field <b>TCPSourcePortNumber</b>
+### -field TCPSourcePortNumber
 
 <dd>
 <p>The TCP source port number in the TCP SYN packet.</p>
 </dd>
 
-### -field <b>TCPDestPortNumber</b>
+### -field TCPDestPortNumber
 
 <dd>
 <p>The TCP destination port number in the TCP SYN packet.</p>
@@ -229,38 +229,38 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 </dl>
 </dd>
 
-### -field <b>IPv6TcpSynParameters</b>
+### -field IPv6TcpSynParameters
 
 <dd>
 <p>A structure that contains IPv6 TCP SYN information. This structure contains the following
       members:</p>
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>IPv6SourceAddress</b>
+### -field IPv6SourceAddress
 
 <dd>
 <p>The IPv6 source address in the TCP SYN packet.</p>
 </dd>
 
-### -field <b>IPv6DestAddress</b>
+### -field IPv6DestAddress
 
 <dd>
 <p>The IPv6 destination address in the TCP SYN packet.</p>
 </dd>
 
-### -field <b>TCPSourcePortNumber</b>
+### -field TCPSourcePortNumber
 
 <dd>
 <p>The TCP source port in the TCP SYN packet.</p>
 </dd>
 
-### -field <b>TCPDestPortNumber</b>
+### -field TCPDestPortNumber
 
 <dd>
 <p>The TCP destination port in the TCP SYN packet.</p>
@@ -268,14 +268,14 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 </dl>
 </dd>
 
-### -field <b>EapolRequestIdMessageParameters</b>
+### -field EapolRequestIdMessageParameters
 
 <dd>
 <p>A structure that contains 802.1X EAPOL request identity message parameters. This structure
       contains the following members:</p>
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.</p>
@@ -283,20 +283,20 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 </dl>
 </dd>
 
-### -field <b>WoLBitMapPattern</b>
+### -field WoLBitMapPattern
 
 <dd>
 <p>A structure that specifies a WOL bitmap pattern. For more information about bitmap patterns, see
       the Remarks section. The structure has the following members:</p>
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>MaskOffset</b>
+### -field MaskOffset
 
 <dd>
 <p>The offset, in bytes, for a mask buffer from the beginning of the NDIS_PM_WOL_PATTERN
@@ -307,20 +307,20 @@ typedef struct _NDIS_PM_WOL_PATTERN {
         byte to the incoming packet with the byte specified in the pattern.</p>
 </dd>
 
-### -field <b>MaskSize</b>
+### -field MaskSize
 
 <dd>
 <p>The size, in bytes, of the mask.</p>
 </dd>
 
-### -field <b>PatternOffset</b>
+### -field PatternOffset
 
 <dd>
 <p>The offset, in bytes, for a pattern buffer from the beginning of the NDIS_PM_WOL_PATTERN
        structure.</p>
 </dd>
 
-### -field <b>PatternSize</b>
+### -field PatternSize
 
 <dd>
 <p>The size, in bytes, of the pattern.</p>
@@ -406,4 +406,4 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_WOL_PATTERN structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_WOL_PATTERN structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

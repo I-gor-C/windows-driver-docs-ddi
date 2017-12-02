@@ -7,7 +7,7 @@ old-location: ifsk\fsrtl_per_stream_context.htm
 old-project: ifsk
 ms.assetid: 108c224c-ae42-414f-951d-cb225059d525
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FSRTL_PER_STREAM_CONTEXT, FSRTL_PER_STREAM_CONTEXT, *PFSRTL_PER_STREAM_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,26 +57,26 @@ typedef struct _FSRTL_PER_STREAM_CONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>Links</b>
+### -field Links
 
 <dd>
 <p>Link for this structure in the list of all per-stream context structures associated with the same file stream. <a href="..\ntifs\nf-ntifs-fsrtlinsertperstreamcontext.md">FsRtlInsertPerStreamContext</a> inserts this member into the list of all per-stream context structures for a file stream. To get a pointer to the head of the list from a file object, use the <a href="..\ntifs\nf-ntifs-fsrtlgetperstreamcontextpointer.md">FsRtlGetPerStreamContextPointer</a> macro, and cast the result to a <b>PFSRTL_ADVANCED_FCB_HEADER</b> pointer. The list pointer is the <b>FilterContexts</b> member in the advanced file control block (FCB) header structure for the file stream. </p>
 </dd>
 
-### -field <b>OwnerId</b>
+### -field OwnerId
 
 <dd>
 <p>Pointer to a filter-driver-allocated variable that uniquely identifies the owner of the per-stream context structure. The format of this variable is filter-driver-specific. Filter writers should choose a value that is both meaningful and convenient, such as the address of a driver object or device object. Filter drivers must set this member to a non-<b>NULL</b> value. </p>
 </dd>
 
-### -field <b>InstanceId</b>
+### -field InstanceId
 
 <dd>
 <p>Pointer to a filter-driver-allocated variable that can be used to distinguish among per-stream context structures created by the same filter driver. The format of this variable is filter-driver-specific. Filter writers should choose a value that is both meaningful and convenient, such as the address of the stream context object for the file stream. (To get this address from a file object, use the <a href="..\ntifs\nf-ntifs-fsrtlgetperstreamcontextpointer.md">FsRtlGetPerStreamContextPointer</a> macro.) </p>
 <p>This member is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -field <b>FreeCallback</b>
+### -field FreeCallback
 
 <dd>
 <p>Pointer to a callback routine that frees the per-stream context structure. This routine and its parameters are defined as follows: </p>
@@ -96,7 +96,7 @@ typedef struct _FSRTL_PER_STREAM_CONTEXT {
 <p></p>
 <dl>
 
-### -field <a id="Buffer"></a><a id="buffer"></a><a id="BUFFER"></a><i>Buffer</i>
+### -field Buffer
 
 <dd>
 <p>Pointer to the <b>FSRTL_PER_STREAM_CONTEXT</b> structure to free. </p>
@@ -170,4 +170,4 @@ typedef struct _FSRTL_PER_STREAM_CONTEXT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSRTL_PER_STREAM_CONTEXT structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSRTL_PER_STREAM_CONTEXT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,13 +56,13 @@ typedef struct _SCARD_IO_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>dwProtocol</b>
+### -field dwProtocol
 
 <dd>
 <p>Specifies the protocol ID.</p>
 </dd>
 
-### -field <b>cbPciLength</b>
+### -field cbPciLength
 
 <dd>
 <p>Specifies the protocol control information length.</p>

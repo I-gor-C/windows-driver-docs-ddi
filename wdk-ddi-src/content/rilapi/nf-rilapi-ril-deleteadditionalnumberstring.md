@@ -7,7 +7,7 @@ old-location: netvista\ril_deleteadditionalnumberstring.htm
 old-project: netvista
 ms.assetid: 6d115616-85d4-43f8-b0c8-ea5b5c2e4eff
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_DeleteAdditionalNumberString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_DeleteAdditionalNumberString(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>hUiccApp</i> 
+### -param hUiccApp 
 
 <dd></dd>
 
-### -param <i>dwNumId</i> 
+### -param dwNumId 
 
 <dd></dd>
 </dl>

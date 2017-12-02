@@ -67,49 +67,49 @@ typedef struct _PEP_COMPONENT_PERF_SET {
 ## -struct-fields
 <dl>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>An optional string that describes the device property controlled by this P-state set.  For example, this string might be "Clock frequency" or "Memory bandwidth". If no such string is available for this P-state, the <b>Name</b> member is set to NULL. Otherwise, this member contains a pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the string.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Set to zero. No flag bits are currently defined for this member.</p>
 </dd>
 
-### -field <b>Unit</b>
+### -field Unit
 
 <dd>
 <p>A <a href="..\pepfx\ne-pepfx--pep-perf-state-unit.md">PEP_PERF_STATE_UNIT</a> structure that specifies the units in which the performance values for this P-state set are expressed. Component performance can be expressed in hertz (frequency) or in bits per second (bandwidth).</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="..\pepfx\ne-pepfx--pep-perf-state-type.md">PEP_PERF_STATE_TYPE</a> enumeration value that indicates the type of performance information that is specified for this component. This member indicates whether the performance values for this P-state set are specified as a list of discrete values or as a continuous range of values.</p>
 </dd>
 
-### -field ( <i>unnamed union</i> )
+### -field ( unnamed union )
 
 <dd>
 <p>A union that contains the performance measurement values for this P-state. This union contains either a list of discrete values (if <b>Type</b> = <b>PepPerfStateTypeDiscrete</b>) or a continuous range of values (if <b>Type</b> = <b>PepPerfStateTypeRange</b>).</p>
 <dl>
 
-### -field <b>Discrete</b>
+### -field Discrete
 
 <dd>
 <p>The list of discrete performance values for this P-state set.</p>
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>The number of P-states in this P-state set.</p>
 </dd>
 
-### -field <b>States</b>
+### -field States
 
 <dd>
 <p>A pointer to an array of <a href="..\pepfx\ns-pepfx--pep-perf-state.md">PEP_PERF_STATE</a> structures, each of which describes a discrete performance value in this P-state set. The <b>Count</b> member specifies the number of elements in this array. A P-state is identified by its array index. If the array contains N elements, P-state indexes range from 0 to N–1.</p>
@@ -117,19 +117,19 @@ typedef struct _PEP_COMPONENT_PERF_SET {
 </dl>
 </dd>
 
-### -field <b>Range</b>
+### -field Range
 
 <dd>
 <p>The range of discrete performance measurement values for this P-state set.</p>
 <dl>
 
-### -field <b>Minimum</b>
+### -field Minimum
 
 <dd>
 <p>The minimum value in the range. This value is expressed in the units indicated by the <b>Unit</b> member.</p>
 </dd>
 
-### -field <b>Maximum</b>
+### -field Maximum
 
 <dd>
 <p>The maximum value in the range. This value is expressed in the units indicated by the <b>Unit</b> member.</p>

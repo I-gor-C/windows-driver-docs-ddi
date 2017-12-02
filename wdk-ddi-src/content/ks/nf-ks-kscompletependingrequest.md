@@ -54,10 +54,10 @@ void KsCompletePendingRequest(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
-<p>A pointer to the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure that must be completed; this is passed in the dispatch function that returned a STATUS_PENDING.</p>
+<p>A pointer to the <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure that must be completed; this is passed in the dispatch function that returned a STATUS_PENDING.</p>
 </dd>
 </dl>
 
@@ -128,7 +128,7 @@ void KsCompletePendingRequest(
 <a href="..\ks\ns-ks--ksfilter-dispatch.md">KSFILTER_DISPATCH</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a>

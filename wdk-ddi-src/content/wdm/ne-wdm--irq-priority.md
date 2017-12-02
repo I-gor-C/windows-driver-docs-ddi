@@ -58,25 +58,25 @@ typedef enum _IRQ_PRIORITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="IrqPriorityUndefined"></a><a id="irqpriorityundefined"></a><a id="IRQPRIORITYUNDEFINED"></a><b>IrqPriorityUndefined</b>
+### -field IrqPriorityUndefined
 
 <dd>
 <p>Specifies that the device does not require any particular priority for its interrupts.</p>
 </dd>
 
-### -field <a id="IrqPriorityLow"></a><a id="irqprioritylow"></a><a id="IRQPRIORITYLOW"></a><b>IrqPriorityLow</b>
+### -field IrqPriorityLow
 
 <dd>
 <p>Specifies that the device's interrupts are of low priority. This setting is appropiate for devices that can tolerate higher-than-normal latency.</p>
 </dd>
 
-### -field <a id="IrqPriorityNormal"></a><a id="irqprioritynormal"></a><a id="IRQPRIORITYNORMAL"></a><b>IrqPriorityNormal</b>
+### -field IrqPriorityNormal
 
 <dd>
 <p>Specifies that the device's interrupts are of normal priority. </p>
 </dd>
 
-### -field <a id="IrqPriorityHigh"></a><a id="irqpriorityhigh"></a><a id="IRQPRIORITYHIGH"></a><b>IrqPriorityHigh</b>
+### -field IrqPriorityHigh
 
 <dd>
 <p>Specifies that the device's interrupts are of high priority. This setting is appropriate for devices that require low latency. </p>

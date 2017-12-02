@@ -55,7 +55,7 @@ typedef struct _D3DDDIARG_CREATEAUTHENTICATEDCHANNEL {
 ## -struct-fields
 <dl>
 
-### -field <b>ChannelType</b>
+### -field ChannelType
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ne-d3dumddi--ddiauthenticatedchanneltype.md">DDIAUTHENTICATEDCHANNELTYPE</a>-typed value that indicates the channel type to create. This member can be one of the following values.</p>
@@ -84,7 +84,7 @@ typedef struct _D3DDDIARG_CREATEAUTHENTICATEDCHANNEL {
 <p> </p>
 </dd>
 
-### -field <b>hChannel</b>
+### -field hChannel
 
 <dd>
 <p>[out] A handle to the channel. The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createauthenticatedchannel.md">CreateAuthenticatedChannel</a> function returns this handle to the Microsoft Direct3D runtime. </p>

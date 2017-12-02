@@ -55,13 +55,13 @@ typedef struct _FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>SerialNumber</b>
+### -field SerialNumber
 
 <dd>
 <p>Contains an array that indicates the serial number of the device in ASCII graphic codes (0x020 through 0x07e). </p>

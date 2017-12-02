@@ -60,43 +60,43 @@ typedef struct _DXGK_DISPLAY_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>A UINT value that specifies the width of the current display mode in units of pixels.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>A UINT value that specifies the height of the current display mode  in units of pixels.</p>
 </dd>
 
-### -field <b>Pitch</b>
+### -field Pitch
 
 <dd>
 <p>A UINT value that specifies the total number of bytes contained in one screen line.</p>
 </dd>
 
-### -field <b>ColorFormat</b>
+### -field ColorFormat
 
 <dd>
 <p>A value of type <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a> that indicates the pixel color format of the current display mode. The driver does not have to support all color formats in the <b>D3DDDIFORMAT</b> structure. For more information on formats that must be supported, see <a href="display.DxgkCbAcquirePostDisplayOwnership">DxgkCbAcquirePostDisplayOwnership</a> and <a href="display.dxgkddireleasepostdisplayownership">DxgkDdiStopDeviceAndReleasePostDisplayOwnership</a>.</p>
 </dd>
 
-### -field <b>PhysicAddress</b>
+### -field PhysicAddress
 
 <dd>
 <p>The physical start address of the frame buffer for the current display mode.</p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>An integer value that specifies the identifier of the video present target on the display adapter that the display device is connected to.</p>
 </dd>
 
-### -field <b>AcpiId</b>
+### -field AcpiId
 
 <dd>
 <p>A ULONG value that specifies the ACPI identifier of the video present target specified by the <b>TargetId</b> member.</p>

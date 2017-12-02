@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmamsgpriority_2.htm
 old-project: netvista
 ms.assetid: 3fc5f220-09ae-4f8e-8616-549a5371e2f0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILMSGCDMAMSGPRIORITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGPRIORITY_HIGH"></a><a id="ril_msgpriority_high"></a><b>RIL_MSGPRIORITY_HIGH</b>
+### -field RIL_MSGPRIORITY_HIGH
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPRIORITY_URGENT"></a><a id="ril_msgpriority_urgent"></a><b>RIL_MSGPRIORITY_URGENT</b>
+### -field RIL_MSGPRIORITY_URGENT
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPRIORITY_EMERGENCY"></a><a id="ril_msgpriority_emergency"></a><b>RIL_MSGPRIORITY_EMERGENCY</b>
+### -field RIL_MSGPRIORITY_EMERGENCY
 
 <dd></dd>
 
-### -field <a id="RIL_MSGPRIORITY_MAX"></a><a id="ril_msgpriority_max"></a><b>RIL_MSGPRIORITY_MAX</b>
+### -field RIL_MSGPRIORITY_MAX
 
 <dd></dd>
 </dl>

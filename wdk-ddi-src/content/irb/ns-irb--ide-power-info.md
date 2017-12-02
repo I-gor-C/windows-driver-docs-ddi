@@ -55,13 +55,13 @@ typedef struct _IDE_POWER_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>CurrentPowerState</b>
+### -field CurrentPowerState
 
 <dd>
 <p>Contains an enumeration value of type <a href="..\irb\ne-irb-ide-power-state.md">IDE_POWER_STATE</a> that indicates the current power state of the device.</p>
 </dd>
 
-### -field <b>DesiredPowerState</b>
+### -field DesiredPowerState
 
 <dd>
 <p>Contains an enumeration value of type IDE_POWER_STATE that indicates the power state to which the device will be changed.</p>

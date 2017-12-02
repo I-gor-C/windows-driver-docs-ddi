@@ -7,7 +7,7 @@ old-location: netvista\rilcallaudiomediastateparammask.htm
 old-project: netvista
 ms.assetid: ad016fd6-1fbf-4600-809b-b0a9b368a87b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILCALLAUDIOMEDIASTATEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_CALLAUDIO_QUALITY"></a><a id="ril_param_callaudio_quality"></a><b>RIL_PARAM_CALLAUDIO_QUALITY</b>
+### -field RIL_PARAM_CALLAUDIO_QUALITY
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CALLAUDIO_FLAGS"></a><a id="ril_param_callaudio_flags"></a><b>RIL_PARAM_CALLAUDIO_FLAGS</b>
+### -field RIL_PARAM_CALLAUDIO_FLAGS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CALLAUDIO_ALL"></a><a id="ril_param_callaudio_all"></a><b>RIL_PARAM_CALLAUDIO_ALL</b>
+### -field RIL_PARAM_CALLAUDIO_ALL
 
 <dd></dd>
 </dl>

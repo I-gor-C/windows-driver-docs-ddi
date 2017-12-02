@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY GetQueryData(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getquerydata.md">D3DDDIARG_GETQUERYDATA</a> structure that contains the information about the query that is retrieved from the driver.</p>

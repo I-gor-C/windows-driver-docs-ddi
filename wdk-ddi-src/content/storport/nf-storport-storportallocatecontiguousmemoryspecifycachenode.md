@@ -62,49 +62,49 @@ ULONG StorPortAllocateContiguousMemorySpecifyCacheNode(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>The number of bytes to allocate.</p>
 </dd>
 
-### -param <i>LowestAcceptableAddress</i> [in]
+### -param LowestAcceptableAddress [in]
 
 <dd>
 <p>The lowest physical address that is valid for the allocation. For example, if the device can only reference physical memory in the 8 MB to 16 MB range, this value would be set to 0x800000 (8 MB).</p>
 </dd>
 
-### -param <i>HighestAcceptableAddress</i> [in]
+### -param HighestAcceptableAddress [in]
 
 <dd>
 <p>The highest physical address that is valid for the allocation. For example, if the device can only reference physical memory below 16 MB, this value would be set to 0xFFFFFF (16 MB - 1).</p>
 </dd>
 
-### -param <i>BoundaryAddressMultiple</i> [in, optional]
+### -param BoundaryAddressMultiple [in, optional]
 
 <dd>
 <p>The physical address multiple that this allocation must not cross.</p>
 </dd>
 
-### -param <i>CacheType</i> [in]
+### -param CacheType [in]
 
 <dd>
 <p>The desired cache type for the mapping.</p>
 </dd>
 
-### -param <i>PreferredNode</i> [in]
+### -param PreferredNode [in]
 
 <dd>
 <p>The preferred node from which the allocation should be made if pages are available on that node.</p>
 </dd>
 
-### -param <i>BufferPointer</i> [out]
+### -param BufferPointer [out]
 
 <dd>
 <p>The variable that receives the starting address of the allocated memory block. Upon return from this routine, if this variable is zero, a contiguous range could not be found to satisfy the request. If this variable is not <b>NULL</b>, it contains a pointer (for example, a virtual address in the nonpaged portion of the system) to the allocated physically contiguous memory.</p>

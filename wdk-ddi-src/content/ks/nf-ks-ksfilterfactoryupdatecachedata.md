@@ -55,13 +55,13 @@ NTSTATUS KsFilterFactoryUpdateCacheData(
 ## -parameters
 <dl>
 
-### -param <i>FilterFactory</i> [in]
+### -param FilterFactory [in]
 
 <dd>
 <p>The <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> for which to update FilterData and Medium cache in the registry.</p>
 </dd>
 
-### -param <i>FilterDescriptor</i> [in, optional]
+### -param FilterDescriptor [in, optional]
 
 <dd>
 <p>An optional <a href="..\ks\ns-ks--ksfilter-descriptor.md">KSFILTER_DESCRIPTOR</a> for which the FilterData key and Medium cache will be updated. If <b>NULL</b>, <i>FilterFactory</i>'s descriptor is used instead. Provide if the filter factory uses dynamic pins and needs to update information for pins that have not yet been instantiated.</p>
@@ -82,7 +82,7 @@ NTSTATUS KsFilterFactoryUpdateCacheData(
 
 <p>In addition, <b>KsRegisterFilterWithNoKSPins</b> only allows one medium per registered pin. This may not be sufficient for a BDA minidriver.</p>
 
-<p>For more information, see <a href="NULL">AVStream Object Hierarchy</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/b7d6f06d-6c97-414e-a453-d375e2d7ccf5">AVStream Object Hierarchy</a>.</p>
 
 ## -requirements
 <table>

@@ -56,19 +56,19 @@ NTSTATUS PsInsertPermanentSiloContext(
 ## -parameters
 <dl>
 
-### -param <i>Silo</i> [in]
+### -param Silo [in]
 
 <dd>
 <p>The silo in which the object is to be inserted. This parameter is required and it cannot be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>ContextSlot</i> [in]
+### -param ContextSlot [in]
 
 <dd>
 <p>The slot in which the object is to be inserted. A slot allocated by the <a href="..\ntddk\nf-ntddk-psallocsilocontextslot.md">PsAllocSiloContextSlot</a> routine.</p>
 </dd>
 
-### -param <i>SiloContext</i> [in]
+### -param SiloContext [in]
 
 <dd>
 <p>The object to be inserted, created by the <a href="..\ntddk\nf-ntddk-pscreatesilocontext.md">PsCreateSiloContext</a> routine. The object must be created using the same silo as specified in the <i>Silo</i> parameter. This parameter is required and it cannot be <b>NULL</b>. </p>

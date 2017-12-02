@@ -61,49 +61,49 @@ typedef enum _DXVA_NominalRange {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVA_NominalRangeShift"></a><a id="dxva_nominalrangeshift"></a><a id="DXVA_NOMINALRANGESHIFT"></a><b>DXVA_NominalRangeShift</b>
+### -field DXVA_NominalRangeShift
 
 <dd>
 <p>Specifies to shift bits by 12 positions (DXVA_ExtColorData_ShiftBase + 4, or 8 + 4).</p>
 </dd>
 
-### -field <a id="DXVA_NominalRangeMask"></a><a id="dxva_nominalrangemask"></a><a id="DXVA_NOMINALRANGEMASK"></a><b>DXVA_NominalRangeMask</b>
+### -field DXVA_NominalRangeMask
 
 <dd>
 <p>Specifies the nominal range mask. 3 (0x00007000) bits of a DWORD can be used to specify nominal range.</p>
 </dd>
 
-### -field <a id="DXVA_NominalRange_Unknown"></a><a id="dxva_nominalrange_unknown"></a><a id="DXVA_NOMINALRANGE_UNKNOWN"></a><b>DXVA_NominalRange_Unknown</b>
+### -field DXVA_NominalRange_Unknown
 
 <dd>
 <p>Specifies that the nominal range is not specified.</p>
 </dd>
 
-### -field <a id="DXVA_NominalRange_Normal"></a><a id="dxva_nominalrange_normal"></a><a id="DXVA_NOMINALRANGE_NORMAL"></a><b>DXVA_NominalRange_Normal</b>
+### -field DXVA_NominalRange_Normal
 
 <dd>
 <p>Specifies that normalized chroma [0..1] maps to [0..255] (8bit) or [0..1023] (10 bit).</p>
 </dd>
 
-### -field <a id="DXVA_NominalRange_Wide"></a><a id="dxva_nominalrange_wide"></a><a id="DXVA_NOMINALRANGE_WIDE"></a><b>DXVA_NominalRange_Wide</b>
+### -field DXVA_NominalRange_Wide
 
 <dd>
 <p>Specifies that normalized chroma [0..1] maps to [16..235] (8bit) or [64..940] (10 bit).</p>
 </dd>
 
-### -field <a id="DXVA_NominalRange_0_255"></a><a id="dxva_nominalrange_0_255"></a><a id="DXVA_NOMINALRANGE_0_255"></a><b>DXVA_NominalRange_0_255</b>
+### -field DXVA_NominalRange_0_255
 
 <dd>
 <p>Specifies that normalized chroma [0..1] maps to [0..255] (8bit) or [0..1023] (10 bit).</p>
 </dd>
 
-### -field <a id="DXVA_NominalRange_16_235"></a><a id="dxva_nominalrange_16_235"></a><a id="DXVA_NOMINALRANGE_16_235"></a><b>DXVA_NominalRange_16_235</b>
+### -field DXVA_NominalRange_16_235
 
 <dd>
 <p>Specifies that normalized chroma [0..1] maps to [16..235] (8bit) or [64..940] (10 bit).</p>
 </dd>
 
-### -field <a id="DXVA_NominalRange_48_208"></a><a id="dxva_nominalrange_48_208"></a><a id="DXVA_NOMINALRANGE_48_208"></a><b>DXVA_NominalRange_48_208</b>
+### -field DXVA_NominalRange_48_208
 
 <dd>
 <p>Specifies that normalized chroma [0..1] maps to [48..208] (8bit) or [192..832] (10 bit).</p>

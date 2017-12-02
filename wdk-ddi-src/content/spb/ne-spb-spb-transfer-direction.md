@@ -7,7 +7,7 @@ old-location: spb\spb_transfer_direction.htm
 old-project: SPB
 ms.assetid: 617450AB-6AC8-485A-BD88-377F903EEE15
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/30/2017
 ms.keywords: VENDOR_ATTR, VENDOR_ATTR, *PVENDOR_ATTR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="SpbTransferDirectionNone"></a><a id="spbtransferdirectionnone"></a><a id="SPBTRANSFERDIRECTIONNONE"></a><b>SpbTransferDirectionNone</b>
+### -field SpbTransferDirectionNone
 
 <dd>
 <p>The data transfer direction is undefined.</p>
 </dd>
 
-### -field <a id="SpbTransferDirectionFromDevice"></a><a id="spbtransferdirectionfromdevice"></a><a id="SPBTRANSFERDIRECTIONFROMDEVICE"></a><b>SpbTransferDirectionFromDevice</b>
+### -field SpbTransferDirectionFromDevice
 
 <dd>
 <p>The data transfer direction is from the device to system memory (read from device).</p>
 </dd>
 
-### -field <a id="SpbTransferDirectionToDevice"></a><a id="spbtransferdirectiontodevice"></a><a id="SPBTRANSFERDIRECTIONTODEVICE"></a><b>SpbTransferDirectionToDevice</b>
+### -field SpbTransferDirectionToDevice
 
 <dd>
 <p>The data transfer direction is from system memory to the device (write to device).</p>
 </dd>
 
-### -field <a id="SpbTransferDirectionMax"></a><a id="spbtransferdirectionmax"></a><a id="SPBTRANSFERDIRECTIONMAX"></a><b>SpbTransferDirectionMax</b>
+### -field SpbTransferDirectionMax
 
 <dd>
 <p>Reserved for use by the operating system.</p>
@@ -146,4 +146,4 @@ typedef enum  {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_DIRECTION enumeration%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_DIRECTION enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

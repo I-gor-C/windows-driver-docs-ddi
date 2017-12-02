@@ -57,7 +57,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_FLAGS_NONE"></a><a id="iddcx_frame_statistics_flags_none"></a><b>IDDCX_FRAME_STATISTICS_FLAGS_NONE</b>
+### -field IDDCX_FRAME_STATISTICS_FLAGS_NONE
 
 <dd>
 <p>
@@ -65,7 +65,7 @@ typedef enum _IDDCX_FRAME_STATISTICS_FLAGS {
                     Indicates that there are no alterations to the frame.</p>
 </dd>
 
-### -field <a id="IDDCX_FRAME_STATISTICS_FLAGS_REDUCED_COLOR_FIDELITY"></a><a id="iddcx_frame_statistics_flags_reduced_color_fidelity"></a><b>IDDCX_FRAME_STATISTICS_FLAGS_REDUCED_COLOR_FIDELITY</b>
+### -field IDDCX_FRAME_STATISTICS_FLAGS_REDUCED_COLOR_FIDELITY
 
 <dd>
 <p>

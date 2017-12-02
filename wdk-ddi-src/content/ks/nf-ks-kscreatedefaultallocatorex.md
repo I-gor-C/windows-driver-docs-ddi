@@ -59,37 +59,37 @@ NTSTATUS KsCreateDefaultAllocatorEx(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Contains the IRP with the allocator create request being handled.</p>
 </dd>
 
-### -param <i>InitializeContext</i> [in, optional]
+### -param InitializeContext [in, optional]
 
 <dd>
 <p>Optionally contains a context to use with an external allocator. This is only used as the initialization context to the optional InitializeAllocator callback when creating an allocator context. The parameter is not otherwise used. If an external allocator is not provided, this parameter must be set to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>DefaultAllocate</i> [in, optional]
+### -param DefaultAllocate [in, optional]
 
 <dd>
 <p>Optionally contains an external allocate function that is used in place of the default pool allocation. If this is <b>NULL</b>, default allocation is used.</p>
 </dd>
 
-### -param <i>DefaultFree</i> [in, optional]
+### -param DefaultFree [in, optional]
 
 <dd>
 <p>Optionally contains an external free function that is used in place of the default pool allocation. If an external allocator is not provided, this parameter must be set to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>InitializeAllocator</i> [in, optional]
+### -param InitializeAllocator [in, optional]
 
 <dd>
 <p>Optionally contains an external allocator initialization function to which the InitializeContext parameter is passed. This function is expected to return an allocator context based on the allocator framing. If an external allocator is not provided, this parameter must be set to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>DeleteAllocator</i> [in, optional]
+### -param DeleteAllocator [in, optional]
 
 <dd>
 <p>Optionally contains an external allocator delete function that is used for external allocators.  If an external allocator is not provided, this parameter must be set to <b>NULL</b>.</p>

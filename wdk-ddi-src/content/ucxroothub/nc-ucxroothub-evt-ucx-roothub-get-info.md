@@ -61,16 +61,16 @@ typedef EVT_UCX_ROOTHUB_GET_INFO PEVT_UCX_ROOTHUB_GET_INFO;
 ## -parameters
 <dl>
 
-### -param <i>UcxRootHub</i> [in]
+### -param UcxRootHub [in]
 
 <dd>
 <p>A handle to a UCX object that represents the root hub.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
-<p>A structure of type <a href="buses._roothub_info">ROOTHUB_INFO</a>.</p>
+<p>A structure of type <a href="..\ucxroothub\ns-ucxroothub--roothub-info.md">ROOTHUB_INFO</a>.</p>
 </dd>
 </dl>
 
@@ -81,7 +81,7 @@ typedef EVT_UCX_ROOTHUB_GET_INFO PEVT_UCX_ROOTHUB_GET_INFO;
 <p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxroothubcreate">UcxRootHubCreate</a>
  method.</p>
 
-<p>The <a href="buses._roothub_info">_ROOTHUB_INFO</a> structure contains the number of USB 2.0 and USB 3.0 ports supported by the root hub.</p>
+<p>The <a href="..\ucxroothub\ns-ucxroothub--roothub-info.md">_ROOTHUB_INFO</a> structure contains the number of USB 2.0 and USB 3.0 ports supported by the root hub.</p>
 
 <p>After UCX calls  the <i>EVT_UCX_ROOTHUB_GET_INFO</i> function, the number of ports exposed by the root hub is guaranteed to remain the same. Note that these are virtual ports, not physical ports.  Each physical USB connector is represented by one or more 
 ports of different speed on the root hub.</p>
@@ -129,7 +129,7 @@ ports of different speed on the root hub.</p>
 ## -see-also
 <dl>
 <dt>
-<a href="buses._roothub_info">_ROOTHUB_INFO</a>
+<a href="..\ucxroothub\ns-ucxroothub--roothub-info.md">_ROOTHUB_INFO</a>
 </dt>
 </dl>
 <p> </p>

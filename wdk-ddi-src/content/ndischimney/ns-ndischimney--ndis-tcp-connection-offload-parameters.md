@@ -7,7 +7,7 @@ old-location: netvista\ndis_tcp_connection_offload_parameters.htm
 old-project: netvista
 ms.assetid: f8d3f971-2abc-425d-9929-518f093262a7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, *PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -85,7 +85,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
      <code>sizeof(NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS)</code>.</p>
 </dd>
 
-### -field <b>Encapsulation</b>
+### -field Encapsulation
 
 <dd>
 <p>An 
@@ -94,7 +94,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
      offload.</p>
 </dd>
 
-### -field <b>TicksPerSecond</b>
+### -field TicksPerSecond
 
 <dd>
 <p>A ULONG value that the TCP/IP driver stack sets to specify how many ticks of the host's clock
@@ -102,7 +102,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
      support this member.</p>
 </dd>
 
-### -field <b>TcpAckFrequency</b>
+### -field TcpAckFrequency
 
 <dd>
 <p>A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of segments that the
@@ -110,7 +110,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
      member.</p>
 </dd>
 
-### -field <b>TcpDelayedAckTicks</b>
+### -field TcpDelayedAckTicks
 
 <dd>
 <p>A UCHAR value that the TCP/IP driver stack sets to specify how many ticks, starting from the
@@ -119,7 +119,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
      target must support this member.</p>
 </dd>
 
-### -field <b>TcpMaximumRetransmissions</b>
+### -field TcpMaximumRetransmissions
 
 <dd>
 <p>A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of times that the
@@ -132,7 +132,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
      offload of the connection. An offload target must support this member.</p>
 </dd>
 
-### -field <b>TcpDoubtReachabilityRetransmissions</b>
+### -field TcpDoubtReachabilityRetransmissions
 
 <dd>
 <p>A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of times that the
@@ -142,7 +142,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
      offload target should support this member.</p>
 </dd>
 
-### -field <b>TcpSwsPreventionTicks</b>
+### -field TcpSwsPreventionTicks
 
 <dd>
 <p>A ULONG value that the TCP/IP driver stack sets to specify the number of ticks for the offload
@@ -151,7 +151,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
      window update. An offload target should support this member.</p>
 </dd>
 
-### -field <b>TcpDuplicateAckThreshold</b>
+### -field TcpDuplicateAckThreshold
 
 <dd>
 <p>A ULONG value that the TCP/IP driver stack sets to specify the number of duplicate acknowledgments
@@ -159,7 +159,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
      must support this member.</p>
 </dd>
 
-### -field <b>TcpPushTicks</b>
+### -field TcpPushTicks
 
 <dd>
 <p>A ULONG value that the TCP/IP driver stack sets to specify the number of ticks that an offload
@@ -168,14 +168,14 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
      target uses this value to initialize its push timer. An offload target must support this member.</p>
 </dd>
 
-### -field <b>NceStaleTicks</b>
+### -field NceStaleTicks
 
 <dd>
 <p>A ULONG value that the TCP/IP driver stack sets to indicate the number of ticks of inactivity that
      make a neighbor state object stale. An offload target must support this member.</p>
 </dd>
 
-### -field <b>CongestionAlgorithm</b>
+### -field CongestionAlgorithm
 
 <dd>
 <p>Reserved for future use.
@@ -222,7 +222,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="NULL">Full TCP Offload</a>
+<a href="netvista.full_tcp_offload">Full TCP Offload</a>
 </dt>
 <dt>
 <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
@@ -243,4 +243,4 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

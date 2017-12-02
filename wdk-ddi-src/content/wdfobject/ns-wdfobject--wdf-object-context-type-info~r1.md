@@ -7,7 +7,7 @@ old-location: wdf\wdf_object_context_type_info.htm
 old-project: wdf
 ms.assetid: 2b56183e-03aa-493a-84ba-03f9bc5daee2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef struct _WDF_OBJECT_CONTEXT_TYPE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>ContextName</b>
+### -field ContextName
 
 <dd>
 <p>A quoted string that represents the name of a driver-defined structure that contains an object's context information.</p>
 </dd>
 
-### -field <b>ContextSize</b>
+### -field ContextSize
 
 <dd>
 <p>The size, in bytes, of the structure that the <b>ContextName</b> member specifies. The framework allocates space for this structure when it creates an object. If the <b>ContextSizeOverride</b> member of the <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure is nonzero, its value overrides the value in the <b>ContextSize</b> member.</p>
 </dd>
 
-### -field <b>UniqueType</b>
+### -field UniqueType
 
 <dd>
 <p>For internal use.</p>
 </dd>
 
-### -field <b>EvtDriverGetUniqueContextType</b>
+### -field EvtDriverGetUniqueContextType
 
 <dd>
 <p>For internal use.</p>
@@ -147,4 +147,4 @@ typedef struct _WDF_OBJECT_CONTEXT_TYPE_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_OBJECT_CONTEXT_TYPE_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_OBJECT_CONTEXT_TYPE_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

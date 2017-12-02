@@ -54,7 +54,7 @@ void IoClearActivityIdThread(
 ## -parameters
 <dl>
 
-### -param <i>OriginalId</i> [in]
+### -param OriginalId [in]
 
 <dd>
 <p>The activity ID that was previously set on the thread.</p>

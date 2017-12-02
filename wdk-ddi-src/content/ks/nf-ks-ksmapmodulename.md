@@ -58,31 +58,31 @@ NTSTATUS KsMapModuleName(
 ## -parameters
 <dl>
 
-### -param <i>PhysicalDeviceObject</i> [in]
+### -param PhysicalDeviceObject [in]
 
 <dd>
 <p>Pointer to a DEVICE_OBJECT for which to return the requested information.</p>
 </dd>
 
-### -param <i>ModuleName</i> [in]
+### -param ModuleName [in]
 
 <dd>
 <p>Pointer to a buffer that contains the module name for which to return the requested information.</p>
 </dd>
 
-### -param <i>ImageName</i> [out]
+### -param ImageName [out]
 
 <dd>
 <p>A caller-allocated buffer that receives the image name for the specified resource.</p>
 </dd>
 
-### -param <i>ResourceId</i> [out]
+### -param ResourceId [out]
 
 <dd>
 <p>Pointer to a caller-supplied variable that receives the resource identifier.</p>
 </dd>
 
-### -param <i>ValueType</i> [out]
+### -param ValueType [out]
 
 <dd>
 <p>Pointer to a location into which the function returns the value type of the specified resource.</p>

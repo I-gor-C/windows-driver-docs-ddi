@@ -7,7 +7,7 @@ old-location: ifsk\fltgetcontextsex.htm
 old-project: ifsk
 ms.assetid: 99903B10-5FA8-430F-9E1F-90A45E07B7D0
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltGetContextsEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ VOID FltGetContextsEx(
 ## -parameters
 <dl>
 
-### -param <i>FltObjects</i> [in]
+### -param FltObjects [in]
 
 <dd>
 <p>Pointer to an <a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a> structure containing opaque pointers for the objects related to the current operation. (For more information about this parameter, see the  Remarks section.) </p>
 </dd>
 
-### -param <i>DesiredContexts</i> [in]
+### -param DesiredContexts [in]
 
 <dd>
 <p>Type of contexts to retrieve. This parameter can have one or more of the following values: </p>
@@ -95,13 +95,13 @@ VOID FltGetContextsEx(
 </dl>
 </dd>
 
-### -param <i>ContextsSize</i> [in]
+### -param ContextsSize [in]
 
 <dd>
 <p>The size, in bytes, of the <a href="..\fltkernel\ns-fltkernel--flt-related-contexts-ex.md">FLT_RELATED_CONTEXTS_EX</a> structure pointed to by <i>Contexts</i>. Set to <b>sizeof</b>(FLT_RELATED_CONTEXTS_EX).</p>
 </dd>
 
-### -param <i>Contexts</i> [out]
+### -param Contexts [out]
 
 <dd>
 <p>Pointer to a caller-allocated <a href="..\fltkernel\ns-fltkernel--flt-related-contexts-ex.md">FLT_RELATED_CONTEXTS_EX</a> structure that receives the requested contexts. Contexts that are not requested, or requested but not found, are set to zero. </p>
@@ -237,4 +237,4 @@ VOID FltGetContextsEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetContextsEx routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetContextsEx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

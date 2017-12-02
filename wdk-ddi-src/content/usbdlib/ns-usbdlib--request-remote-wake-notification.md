@@ -58,25 +58,25 @@ typedef struct _REQUEST_REMOTE_WAKE_NOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure. Set to 0.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of the <b>REQUEST_REMOTE_WAKE_NOTIFICATION</b> structure.</p>
 </dd>
 
-### -field <b>UsbdFunctionHandle</b>
+### -field UsbdFunctionHandle
 
 <dd>
 <p>A function handle that is associated with the function that sends the resume signal. The handle was obtained in a previous <a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-register-composite-device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a> request.</p>
 </dd>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>Specifies the device-defined index identifier of the interface with which the function is associated.</p>

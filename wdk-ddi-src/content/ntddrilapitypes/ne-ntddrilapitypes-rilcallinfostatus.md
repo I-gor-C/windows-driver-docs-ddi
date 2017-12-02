@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfostatus.htm
 old-project: netvista
 ms.assetid: 0f5806e8-a7be-4703-8847-abea2d0cb2e8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,35 +61,35 @@ typedef enum _RILCALLINFOSTATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CPISTAT_NEW_OUTGOING"></a><a id="ril_cpistat_new_outgoing"></a><b>RIL_CPISTAT_NEW_OUTGOING</b>
+### -field RIL_CPISTAT_NEW_OUTGOING
 
 <dd></dd>
 
-### -field <a id="RIL_CPISTAT_NEW_INCOMING"></a><a id="ril_cpistat_new_incoming"></a><b>RIL_CPISTAT_NEW_INCOMING</b>
+### -field RIL_CPISTAT_NEW_INCOMING
 
 <dd></dd>
 
-### -field <a id="RIL_CPISTAT_CONNECTED"></a><a id="ril_cpistat_connected"></a><b>RIL_CPISTAT_CONNECTED</b>
+### -field RIL_CPISTAT_CONNECTED
 
 <dd></dd>
 
-### -field <a id="RIL_CPISTAT_DISCONNECTED"></a><a id="ril_cpistat_disconnected"></a><b>RIL_CPISTAT_DISCONNECTED</b>
+### -field RIL_CPISTAT_DISCONNECTED
 
 <dd></dd>
 
-### -field <a id="RIL_CPISTAT_ONHOLD"></a><a id="ril_cpistat_onhold"></a><b>RIL_CPISTAT_ONHOLD</b>
+### -field RIL_CPISTAT_ONHOLD
 
 <dd></dd>
 
-### -field <a id="RIL_CPISTAT_MEDIA"></a><a id="ril_cpistat_media"></a><b>RIL_CPISTAT_MEDIA</b>
+### -field RIL_CPISTAT_MEDIA
 
 <dd></dd>
 
-### -field <a id="RIL_CPISTAT_HANDOVER"></a><a id="ril_cpistat_handover"></a><b>RIL_CPISTAT_HANDOVER</b>
+### -field RIL_CPISTAT_HANDOVER
 
 <dd></dd>
 
-### -field <a id="RIL_CPISTAT_MAX"></a><a id="ril_cpistat_max"></a><b>RIL_CPISTAT_MAX</b>
+### -field RIL_CPISTAT_MAX
 
 <dd></dd>
 </dl>

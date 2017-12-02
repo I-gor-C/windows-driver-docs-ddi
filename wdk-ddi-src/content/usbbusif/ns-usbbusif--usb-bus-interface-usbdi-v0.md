@@ -63,13 +63,13 @@ typedef struct _USB_BUS_INTERFACE_USBDI_V0 {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size in bytes of the buffer that holds the interface pointers. </p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Indicates, on input, the version of the interface. This member should have one of the following values:</p>
@@ -114,43 +114,43 @@ typedef struct _USB_BUS_INTERFACE_USBDI_V0 {
 <p> </p>
 </dd>
 
-### -field <b>BusContext</b>
+### -field BusContext
 
 <dd>
 <p>Contains information that describes the USB bus and the USB bus driver that exposes this interface. This is an opaque entity that the caller must pass to the interface routines. </p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="kernel.interfacereference">InterfaceReference</a>. </p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="kernel.interfacedereference">InterfaceDereference</a>. </p>
 </dd>
 
-### -field <b>GetUSBDIVersion</b>
+### -field GetUSBDIVersion
 
 <dd>
 <p>Pointer to a routine that returns the USB interface version number, the version number of USB specification that defines the interface, along with host controller capabilities information. This routine returns the highest USBDI interface version that is supported by the port driver. For more information about this routine, see <a href="buses.getusbdiversion">GetUSBDIVersion</a>. </p>
 </dd>
 
-### -field <b>QueryBusTime</b>
+### -field QueryBusTime
 
 <dd>
 <p>Pointer to a routine that returns the current 32-bit USB frame number. This routine replaces the <b>USBD_QueryBusTime</b> function provided by usbd.sys. For more information about this routine, see <a href="buses.querybustime">QueryBusTime</a>.</p>
 </dd>
 
-### -field <b>SubmitIsoOutUrb</b>
+### -field SubmitIsoOutUrb
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>QueryBusInformation</b>
+### -field QueryBusInformation
 
 <dd>
 <p>Pointer to a routine that returns information about the bus. The information that is returned depends on the value of the <b>Level </b>member. If <b>Level</b> is 0, this routine returns bus bandwidth information. If <b>Level</b> is 1, it returns bus bandwidth information and the host controller's symbolic name. This routine replaces the <b>USBD_QueryBusInformation</b> function provided by usbd.sys. For more information about this routine, see <a href="buses.querybusinformation">QueryBusInformation</a>. </p>

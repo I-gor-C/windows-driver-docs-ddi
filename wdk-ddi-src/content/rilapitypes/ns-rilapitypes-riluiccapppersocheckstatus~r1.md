@@ -7,7 +7,7 @@ old-location: netvista\riluiccapppersocheckstatus_2.htm
 old-project: netvista
 ms.assetid: 8e51ae9a-4670-4de1-bfca-bef8cb0c9cc9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILUICCAPPPERSOCHECKSTATUS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef struct _RILUICCAPPPERSOCHECKSTATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwPersoFeature</b>
+### -field dwPersoFeature
 
 <dd></dd>
 
-### -field <b>dwPersoCheckState</b>
+### -field dwPersoCheckState
 
 <dd></dd>
 </dl>

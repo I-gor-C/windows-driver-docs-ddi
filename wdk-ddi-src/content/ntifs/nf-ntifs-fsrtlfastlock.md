@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlfastlock.htm
 old-project: ifsk
 ms.assetid: c3e209b5-9925-4911-8c42-0f15c1c710be
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FsRtlFastLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,67 +64,67 @@ BOOLEAN FsRtlFastLock(
 ## -parameters
 <dl>
 
-### -param <i>FileLock</i> [in]
+### -param FileLock [in]
 
 <dd>
 <p>Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="ifsk.fsrtlallocatefilelock">FsRtlAllocateFileLock</a> or <a href="ifsk.fsrtlinitializefilelock">FsRtlInitializeFileLock</a>.</p>
 </dd>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to the file object for the open file. The file object must have been created with GENERIC_READ or GENERIC_WRITE access to the file (or both). </p>
 </dd>
 
-### -param <i>FileOffset</i> [in]
+### -param FileOffset [in]
 
 <dd>
 <p>Pointer to a variable that specifies the starting byte offset within the file of the range to be locked.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Pointer to a variable that specifies the length in bytes of the range to be locked.</p>
 </dd>
 
-### -param <i>ProcessId</i> [in]
+### -param ProcessId [in]
 
 <dd>
 <p>Pointer to the process ID for the process requesting the byte-range lock.</p>
 </dd>
 
-### -param <i>Key</i> [in]
+### -param Key [in]
 
 <dd>
 <p>The key to be assigned to the byte-range lock.</p>
 </dd>
 
-### -param <i>FailImmediately</i> [in]
+### -param FailImmediately [in]
 
 <dd>
 <p>Boolean value specifying whether the lock request should fail if the lock cannot be granted immediately. If the caller can be put into a wait state until the request is granted, set <i>FailImmediately</i> to <b>FALSE</b>. If it cannot, set <i>FailImmediately</i> to <b>TRUE</b>. </p>
 </dd>
 
-### -param <i>ExclusiveLock</i> [in]
+### -param ExclusiveLock [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if an exclusive lock is requested, <b>FALSE</b> if a shared lock is requested.</p>
 </dd>
 
-### -param <i>Iosb</i> [out]
+### -param Iosb [out]
 
 <dd>
 <p>Pointer to a caller-allocated IO_STATUS_BLOCK structure that receives status information about the lock request. </p>
 </dd>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Optional pointer to a context to use when releasing the byte-range lock. </p>
 </dd>
 
-### -param <i>AlreadySynchronized</i> [in]
+### -param AlreadySynchronized [in]
 
 <dd>
 <p>This parameter is obsolete, but is retained for compatibility with legacy drivers.</p>
@@ -184,4 +184,4 @@ BOOLEAN FsRtlFastLock(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlFastLock function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlFastLock function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -54,7 +54,7 @@ typedef struct IDARG_OUT_MONITORCREATE {
 ## -struct-fields
 <dl>
 
-### -field <b>MonitorObject</b>
+### -field MonitorObject
 
 <dd>
 <p>

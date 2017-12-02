@@ -54,7 +54,7 @@ NTSTATUS SetState(
 ## -parameters
 <dl>
 
-### -param <i>State</i> [in]
+### -param State [in]
 
 <dd>
 <p>Specifies the new state of the stream. This parameter is a <a href="stream.ksstate">KSSTATE</a> enumeration value. For more information, see the following Remarks section.</p>

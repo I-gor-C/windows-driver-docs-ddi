@@ -59,37 +59,37 @@ typedef enum _DXVADDI_VIDEOLIGHTING {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVADDI_VideoLightingMask"></a><a id="dxvaddi_videolightingmask"></a><a id="DXVADDI_VIDEOLIGHTINGMASK"></a><b>DXVADDI_VideoLightingMask</b>
+### -field DXVADDI_VideoLightingMask
 
 <dd>
 <p>The video lighting mask. The first 4 (0x0F) bits of a DWORD can be used to specify video lighting.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoLighting_Unknown"></a><a id="dxvaddi_videolighting_unknown"></a><a id="DXVADDI_VIDEOLIGHTING_UNKNOWN"></a><b>DXVADDI_VideoLighting_Unknown</b>
+### -field DXVADDI_VideoLighting_Unknown
 
 <dd>
 <p>The video lighting condition is not specified. The default is dim.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoLighting_bright"></a><a id="dxvaddi_videolighting_bright"></a><a id="DXVADDI_VIDEOLIGHTING_BRIGHT"></a><b>DXVADDI_VideoLighting_bright</b>
+### -field DXVADDI_VideoLighting_bright
 
 <dd>
 <p>A bright light for viewing video (for example, outside lighting conditions).</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoLighting_office"></a><a id="dxvaddi_videolighting_office"></a><a id="DXVADDI_VIDEOLIGHTING_OFFICE"></a><b>DXVADDI_VideoLighting_office</b>
+### -field DXVADDI_VideoLighting_office
 
 <dd>
 <p>A medium brightness light for viewing video (for example, lighting conditions in home offices).</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoLighting_dim"></a><a id="dxvaddi_videolighting_dim"></a><a id="DXVADDI_VIDEOLIGHTING_DIM"></a><b>DXVADDI_VideoLighting_dim</b>
+### -field DXVADDI_VideoLighting_dim
 
 <dd>
 <p>A dim light for viewing video (for example, low-level lighting in a living room while watching television). </p>
 </dd>
 
-### -field <a id="DXVADDI_VideoLighting_dark"></a><a id="dxvaddi_videolighting_dark"></a><a id="DXVADDI_VIDEOLIGHTING_DARK"></a><b>DXVADDI_VideoLighting_dark</b>
+### -field DXVADDI_VideoLighting_dark
 
 <dd>
 <p>Near-darkness for viewing video (for example, movie-theatre lighting).</p>

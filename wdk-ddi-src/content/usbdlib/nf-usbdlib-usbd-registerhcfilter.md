@@ -57,13 +57,13 @@ VOID USBD_RegisterHcFilter(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the device object that is the current top of the stack as reported by <a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>.</p>
 </dd>
 
-### -param <i>FilterDeviceObject</i> [in]
+### -param FilterDeviceObject [in]
 
 <dd>
 <p>Pointer to the filter device object created by the filter driver for its operations.</p>

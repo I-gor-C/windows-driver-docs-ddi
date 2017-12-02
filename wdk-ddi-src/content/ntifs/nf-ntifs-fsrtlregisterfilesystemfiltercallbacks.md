@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlregisterfilesystemfiltercallbacks.htm
 old-project: ifsk
 ms.assetid: cd6d2ab6-ce17-47db-b5d0-4f9543e15487
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FsRtlRegisterFileSystemFilterCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ NTSTATUS FsRtlRegisterFileSystemFilterCallbacks(
 ## -parameters
 <dl>
 
-### -param <i>FilterDriverObject</i> [in]
+### -param FilterDriverObject [in]
 
 <dd>
 <p>A pointer to the driver object for the filter or file system driver. </p>
 </dd>
 
-### -param <i>Callbacks</i> [in]
+### -param Callbacks [in]
 
 <dd>
 <p>A pointer to a structure that contains the entry points of caller-supplied notification callback routines. </p>

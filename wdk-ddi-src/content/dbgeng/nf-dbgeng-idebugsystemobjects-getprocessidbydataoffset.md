@@ -7,7 +7,7 @@ old-location: debugger\getprocessidbydataoffset.htm
 old-project: debugger
 ms.assetid: a2c094f4-f54d-4c3c-95e7-75df717db8cc
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSystemObjects, GetProcessIdByDataOffset, IDebugSystemObjects::GetProcessIdByDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ HRESULT GetProcessIdByDataOffset(
 ## -parameters
 <dl>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the location in the target's virtual address space of the data offset of the process.</p>
 </dd>
 
-### -param <i>Id</i> [out]
+### -param Id [out]
 
 <dd>
 <p>Receives the engine process ID for the process.</p>
@@ -69,7 +69,7 @@ HRESULT GetProcessIdByDataOffset(
 </dl>
 
 ## -returns
-<p>This method may also return other error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>E_NOTIMPL</b></dt>

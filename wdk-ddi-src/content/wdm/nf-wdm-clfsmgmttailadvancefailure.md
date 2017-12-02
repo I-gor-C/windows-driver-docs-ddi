@@ -56,13 +56,13 @@ NTSTATUS ClfsMgmtTailAdvanceFailure(
 ## -parameters
 <dl>
 
-### -param <i>Client</i> [in]
+### -param Client [in]
 
 <dd>
 <p>A pointer to the client. This is the value that was obtained through a call to the <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a> routine.</p>
 </dd>
 
-### -param <i>Reason</i> [in]
+### -param Reason [in]
 
 <dd>
 <p>A value that indicates why the log's tail could not be advanced. </p>

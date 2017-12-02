@@ -59,31 +59,31 @@ NTSTATUS ZwSetInformationVirtualMemory(
 ## -parameters
 <dl>
 
-### -param <i>ProcessHandle</i> [in]
+### -param ProcessHandle [in]
 
 <dd>
 <p>Specifies an open handle for the process in the context of which the operation is to be performed. This handle cannot be invalid. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556482">NtCurrentProcess</a> macro, defined in Ntddk.h, to specify the current process.</p>
 </dd>
 
-### -param <i>VmInformationClass</i> [in]
+### -param VmInformationClass [in]
 
 <dd>
 <p>Specifies the type of operation to perform. Set to  <b>VmPrefetchInformation</b> defined in the <b>VIRTUAL_MEMORY_INFORMATION_CLASS</b> enumeration, see ntddk.h. </p>
 </dd>
 
-### -param <i>NumberOfEntries</i> [in]
+### -param NumberOfEntries [in]
 
 <dd>
 <p> Number of entries in the array pointed to by the <i>VirtualAddresses</i> parameter. This parameter cannot be 0.</p>
 </dd>
 
-### -param <i>VirtualAddresses</i> [in]
+### -param VirtualAddresses [in]
 
 <dd>
 <p> Pointer to an array of MEMORY_RANGE_ENTRY structures in which each entry specifies a virtual address range to be processed. The virtual address ranges may cover any part of the process address space accessible by the target process.</p>
 </dd>
 
-### -param <i>VmInformation</i> [in]
+### -param VmInformation [in]
 
 <dd>
 <p>A pointer to a buffer that contains memory information.
@@ -93,7 +93,7 @@ NTSTATUS ZwSetInformationVirtualMemory(
 <p>If <i>VmInformationClass</i> is  <b>VmPrefetchInformation</b>, this parameter cannot be this parameter cannot be NULL and must point to a ULONG variable that is set to 0.</p>
 </dd>
 
-### -param <i>VmInformationLength</i> [in]
+### -param VmInformationLength [in]
 
 <dd>
 <p>The size of the buffer pointed to by  <i>VmInformation</i>. </p>

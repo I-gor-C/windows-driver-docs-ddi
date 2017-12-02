@@ -7,7 +7,7 @@ old-location: netvista\ndisfreeclonenetbufferlist.htm
 old-project: netvista
 ms.assetid: 3c632d54-8eb2-475b-8cdf-363028f67437
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisFreeCloneNetBufferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,14 +61,14 @@ VOID NdisFreeCloneNetBufferList(
 ## -parameters
 <dl>
 
-### -param <i>CloneNetBufferList</i> [in]
+### -param CloneNetBufferList [in]
 
 <dd>
 <p>A pointer to a NET_BUFFER_LIST structure that was allocated by calling 
      <b>NdisAllocateCloneNetBufferList</b>.</p>
 </dd>
 
-### -param <i>FreeCloneFlags</i> [in]
+### -param FreeCloneFlags [in]
 
 <dd>
 <p>NDIS flags that can be combined with an OR operation. The following flags are defined:
@@ -76,13 +76,13 @@ VOID NdisFreeCloneNetBufferList(
 <p></p>
 <dl>
 
-### -param <a id="NDIS_CLONE_FLAGS_RESERVED"></a><a id="ndis_clone_flags_reserved"></a>NDIS_CLONE_FLAGS_RESERVED
+### -param NDIS_CLONE_FLAGS_RESERVED
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -param <a id="NDIS_CLONE_FLAGS_USE_ORIGINAL_MDLS"></a><a id="ndis_clone_flags_use_original_mdls"></a>NDIS_CLONE_FLAGS_USE_ORIGINAL_MDLS
+### -param NDIS_CLONE_FLAGS_USE_ORIGINAL_MDLS
 
 <dd>
 <p>If this flag is set, NDIS did not allocate new MDLs for the cloned NET_BUFFER_LIST in the 
@@ -177,4 +177,4 @@ VOID NdisFreeCloneNetBufferList(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeCloneNetBufferList function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeCloneNetBufferList function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

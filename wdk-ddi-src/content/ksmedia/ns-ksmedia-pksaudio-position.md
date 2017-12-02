@@ -57,25 +57,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>PlayOffset</b>
+### -field PlayOffset
 
 <dd>
 <p>Specifies the current play position as a byte offset.</p>
 </dd>
 
-### -field <b>WriteOffset</b>
+### -field WriteOffset
 
 <dd>
 <p>Specifies the current write position as a byte offset.</p>
 </dd>
 
-### -field <b>PlayOffset</b>
+### -field PlayOffset
 
 <dd>
 <p>Specifies the current play position as a byte offset.</p>
 </dd>
 
-### -field <b>WriteOffset</b>
+### -field WriteOffset
 
 <dd>
 <p>Specifies the current write position as a byte offset.</p>
@@ -107,7 +107,7 @@ typedef struct {
 
 <p>The space between <b>PlayOffset</b> and <b>WriteOffset</b> is considered off-limits to the client because it represents the portion of the client buffer that has already been sent to the driver and might still be in use by the driver.</p>
 
-<p>For more information, see <a href="NULL">Audio Position Property</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/893fea84-9136-4107-96d2-8a4e2ab7bd2a">Audio Position Property</a>.</p>
 
 ## -requirements
 <table>

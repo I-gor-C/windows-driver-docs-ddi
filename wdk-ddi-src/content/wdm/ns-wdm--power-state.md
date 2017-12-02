@@ -56,13 +56,13 @@ typedef union _POWER_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>SystemState</b>
+### -field SystemState
 
 <dd>
 <p>A system power state value of type <a href="..\wdm\ne-wdm--system-power-state.md">SYSTEM_POWER_STATE</a>. </p>
 </dd>
 
-### -field <b>DeviceState</b>
+### -field DeviceState
 
 <dd>
 <p>A device power state value of type <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a>. </p>
@@ -70,7 +70,7 @@ typedef union _POWER_STATE {
 </dl>
 
 ## -remarks
-<p>The <b>POWER_STATE</b> union is used in conjunction with the <a href="..\wdm\ne-wdm--power-state-type.md">POWER_STATE_TYPE</a> enumeration type to specify a system power state value or a device power state value. This union is also used in cases where the power state type is implicitly determined by the context in which it is used. For example, see <a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a> and <a href="..\ntifs\nf-ntifs-posetpowerstate.md">PoSetPowerState</a>.</p>
+<p>The <b>POWER_STATE</b> union is used in conjunction with the <a href="..\wdm\ne-wdm--power-state-type.md">POWER_STATE_TYPE</a> enumeration type to specify a system power state value or a device power state value. This union is also used in cases where the power state type is implicitly determined by the context in which it is used. For example, see <a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a> and <a href="..\wdm\nf-wdm-posetpowerstate.md">PoSetPowerState</a>.</p>
 
 <p>For more information about power management, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548108">Introduction to Power Management</a>.</p>
 
@@ -97,7 +97,7 @@ typedef union _POWER_STATE {
 <a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-posetpowerstate.md">PoSetPowerState</a>
+<a href="..\wdm\nf-wdm-posetpowerstate.md">PoSetPowerState</a>
 </dt>
 <dt>
 <a href="..\wdm\ne-wdm--power-state-type.md">POWER_STATE_TYPE</a>

@@ -57,19 +57,19 @@ typedef enum _TRANSACTION_OUTCOME {
 ## -enum-fields
 <dl>
 
-### -field <a id="TransactionOutcomeUndetermined"></a><a id="transactionoutcomeundetermined"></a><a id="TRANSACTIONOUTCOMEUNDETERMINED"></a><b>TransactionOutcomeUndetermined</b>
+### -field TransactionOutcomeUndetermined
 
 <dd>
 <p>The transaction has not yet been committed or rolled back.</p>
 </dd>
 
-### -field <a id="TransactionOutcomeCommitted"></a><a id="transactionoutcomecommitted"></a><a id="TRANSACTIONOUTCOMECOMMITTED"></a><b>TransactionOutcomeCommitted</b>
+### -field TransactionOutcomeCommitted
 
 <dd>
 <p>The transaction has been committed.</p>
 </dd>
 
-### -field <a id="TransactionOutcomeAborted"></a><a id="transactionoutcomeaborted"></a><a id="TRANSACTIONOUTCOMEABORTED"></a><b>TransactionOutcomeAborted</b>
+### -field TransactionOutcomeAborted
 
 <dd>
 <p>The transaction has been rolled back.</p>

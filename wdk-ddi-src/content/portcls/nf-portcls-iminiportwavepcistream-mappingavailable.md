@@ -54,7 +54,7 @@ VOID MappingAvailable(
 ## -parameters
 <dl>
 
-### -param <i>None</i> 
+### -param None 
 
 <dd></dd>
 </dl>
@@ -67,7 +67,7 @@ VOID MappingAvailable(
 
 <p>The port driver (Portcls.sys) can call the <code>MappingAvailable</code> method at any level equal to or below DISPATCH_LEVEL, depending on the circumstances under which the call is made. As a result, the <code>MappingAvailable</code> method must be in a non-paged code segment and can only touch non-paged code.</p>
 
-<p>See the discussion of allocator framing in <a href="NULL">WavePci Latency</a>.</p>
+<p>See the discussion of allocator framing in <a href="https://msdn.microsoft.com/6d83c015-cf8f-40b4-bf28-de865a5bfe2d">WavePci Latency</a>.</p>
 
 ## -requirements
 <table>

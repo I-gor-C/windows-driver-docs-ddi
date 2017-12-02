@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains pointers to event callback functions implemented by the UDE client driver for a USB host controller. Initialize this structure by calling <a href="buses.udecx_wdf_device_config_init">UDECX_WDF_DEVICE_CONFIG_INIT</a>.</p>
+<p>Contains pointers to event callback functions implemented by the UDE client driver for a USB host controller. Initialize this structure by calling <a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecx-wdf-device-config-init.md">UDECX_WDF_DEVICE_CONFIG_INIT</a>.</p>
 
 
 ## -syntax
@@ -60,40 +60,40 @@ typedef struct _UDECX_WDF_DEVICE_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure.</p>
 </dd>
 
-### -field <b>NumberOfUsb20Ports</b>
+### -field NumberOfUsb20Ports
 
 <dd>
 <p>The number of USB 2.0 ports on the root hub of the emulated host controller.</p>
 </dd>
 
-### -field <b>NumberOfUsb30Ports</b>
+### -field NumberOfUsb30Ports
 
 <dd>
 <p>The number of USB 3.0 ports on the root hub of the emulated host controller.</p>
 </dd>
 
-### -field <b>EvtUdecxWdfDeviceQueryUsbCapability</b>
+### -field EvtUdecxWdfDeviceQueryUsbCapability
 
 <dd>
-<p>A pointer to an <a href="buses.evt_udecx_wdf_device_query_usb_capability">EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY</a> callback function.</p>
+<p>A pointer to an <a href="..\udecxwdfdevice\nc-udecxwdfdevice-evt-udecx-wdf-device-query-usb-capability.md">EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY</a> callback function.</p>
 </dd>
 
-### -field <b>ResetAction</b>
+### -field ResetAction
 
 <dd>
-<p>A <a href="buses.udecx_wdf_device_reset_action">UDECX_WDF_DEVICE_RESET_ACTION</a>-type value that indicates the reset action: each attached device or the host controller.</p>
+<p>A <a href="..\udecxwdfdevice\ne-udecxwdfdevice--udecx-wdf-device-reset-action.md">UDECX_WDF_DEVICE_RESET_ACTION</a>-type value that indicates the reset action: each attached device or the host controller.</p>
 </dd>
 
-### -field <b>EvtUdecxWdfDeviceReset</b>
+### -field EvtUdecxWdfDeviceReset
 
 <dd>
-<p>A pointer to an <a href="buses.evt_udecx_wdf_device_reset">EVT_UDECX_WDF_DEVICE_RESET</a> callback function.</p>
+<p>A pointer to an <a href="..\udecxwdfdevice\nc-udecxwdfdevice-evt-udecx-wdf-device-reset.md">EVT_UDECX_WDF_DEVICE_RESET</a> callback function.</p>
 </dd>
 </dl>
 
@@ -117,10 +117,10 @@ typedef struct _UDECX_WDF_DEVICE_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecx_wdf_device_config_init">UDECX_WDF_DEVICE_CONFIG_INIT</a>
+<a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecx-wdf-device-config-init.md">UDECX_WDF_DEVICE_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="buses.udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a>
+<a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation.md">UdecxWdfDeviceAddUsbDeviceEmulation</a>
 </dt>
 </dl>
 <p> </p>

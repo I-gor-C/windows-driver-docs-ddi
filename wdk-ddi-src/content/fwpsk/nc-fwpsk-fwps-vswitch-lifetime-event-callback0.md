@@ -7,7 +7,7 @@ old-location: netvista\fwps_vswitch_lifetime_event_callback0.htm
 old-project: netvista
 ms.assetid: 6A2058FB-AE3D-48F0-B1D9-3B8894A5419E
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,20 +66,20 @@ NTSTATUS NTAPI vSwitchLifetimeNotifyFn(
 ## -parameters
 <dl>
 
-### -param <i>notifyContext</i> [in, optional]
+### -param notifyContext [in, optional]
 
 <dd>
 <p>A pointer to a context supplied by the callout driver. The driver passed this pointer to the  <i>notifyContext</i> parameter of the <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a>
  function. This parameter is optional and can be NULL.</p>
 </dd>
 
-### -param <i>eventType</i> [in]
+### -param eventType [in]
 
 <dd>
 <p>The type of virtual switch event  specified as one of the <a href="netvista.fwps_vswitch_event_type">FWPS_VSWITCH_EVENT_TYPE</a> enumeration values. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>vSwitch</i> [in]
+### -param vSwitch [in]
 
 <dd>
 <p>A pointer to an <a href="..\fwpsk\ns-fwpsk--ndis-switch-parameters.md">NDIS_SWITCH_PARAMETERS</a> structure that contains information about a virtual switch.
@@ -88,14 +88,14 @@ NTSTATUS NTAPI vSwitchLifetimeNotifyFn(
 <div> </div>
 </dd>
 
-### -param <i>vSwitchPorts</i> [in, optional]
+### -param vSwitchPorts [in, optional]
 
 <dd>
 <p>A pointer to an <a href="..\fwpsk\ns-fwpsk--ndis-switch-port-array.md">NDIS_SWITCH_PORT_ARRAY</a> structure that specifies an array of port configuration parameters. Each element in the array specifies the parameters for a port on a virtual switch.   
 </p>
 </dd>
 
-### -param <i>vSwitchInterfaces</i> [in, optional]
+### -param vSwitchInterfaces [in, optional]
 
 <dd>
 <p>A pointer to an <a href="..\ntddndis\ns-ntddndis--ndis-switch-nic-array.md">NDIS_SWITCH_NIC_ARRAY</a> structure that specifies an array of miniport adapter configuration parameters. Each element in the array specifies the parameters for a virtual or physical miniport adapter that is attached to a port on a virtual switch.   
@@ -210,4 +210,4 @@ NTSTATUS NTAPI vSwitchLifetimeNotifyFn(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0 callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0 callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

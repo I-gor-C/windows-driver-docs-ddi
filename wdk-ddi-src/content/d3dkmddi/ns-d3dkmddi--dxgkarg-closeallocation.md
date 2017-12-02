@@ -55,13 +55,13 @@ typedef struct _DXGKARG_CLOSEALLOCATION {
 ## -struct-fields
 <dl>
 
-### -field <b>NumAllocations</b>
+### -field NumAllocations
 
 <dd>
 <p>[in] The number of elements in the array that <b>pOpenHandleList</b> specifies.</p>
 </dd>
 
-### -field <b>pOpenHandleList</b>
+### -field pOpenHandleList
 
 <dd>
 <p>[in] An array of handles to device-specific allocations to close.</p>

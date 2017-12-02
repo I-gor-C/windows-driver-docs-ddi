@@ -59,19 +59,19 @@ VOID APIENTRY Draw(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>VertexCount</i> [in]
+### -param VertexCount [in]
 
 <dd>
 <p> The number of vertices in the vertex buffer that vertices are read from to draw the primitives.</p>
 </dd>
 
-### -param <i>StartVertexLocation</i> [in]
+### -param StartVertexLocation [in]
 
 <dd>
 <p> The first vertex in the vertex buffer that vertices are read from to draw the primitives.</p>

@@ -60,25 +60,25 @@ typedef struct _PEP_PLATFORM_IDLE_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>InitiatingProcessor</b>
+### -field InitiatingProcessor
 
 <dd>
 <p>A <b>POHANDLE</b> value that identifies the processor that initiates the transition to this platform idle state, or <b>NULL</b> if any processor can initiate the transition. If non-NULL, this handle represents the registration of the processor (as a device) with the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx).</p>
 </dd>
 
-### -field <b>InitiatingState</b>
+### -field InitiatingState
 
 <dd>
 <p>The index of the processor idle state that the processor enters to initiate the platform's entry to the specified platform idle state. If the <b>IdleStates</b> array in the <a href="..\pepfx\ns-pepfx--pep-ppm-query-idle-states-v2.md">PEP_PPM_QUERY_IDLE_STATES_V2</a> structure contains N elements, the idle states are numbered 0 to Nâ€“1 in the order in which they appear in the array.</p>
 </dd>
 
-### -field <b>Latency</b>
+### -field Latency
 
 <dd>
 <p>The worst-case latency, in 100-nanosecond units, that the platform requires to wake from this idle state in response to a wake event.</p>
 </dd>
 
-### -field <b>BreakEvenDuration</b>
+### -field BreakEvenDuration
 
 <dd>
 <p>The minimum amount of time, specified in 100-nanosecond units, that the platform must spend in this idle state to make a transition to this state worthwhile. PoFx uses this member value as a hint to avoid switching the platform to an idle state unless the platform is likely to remain in this state for at least the amount of time specified by <b>BreakEvenDuration</b>.
@@ -86,19 +86,19 @@ typedef struct _PEP_PLATFORM_IDLE_STATE {
 </p>
 </dd>
 
-### -field <b>DependencyArrayUsed</b>
+### -field DependencyArrayUsed
 
 <dd>
 <p>The number of items in <b>DependencyArray</b> which were filled in by the PEP.</p>
 </dd>
 
-### -field <b>DependencyArrayCount</b>
+### -field DependencyArrayCount
 
 <dd>
 <p>The number of elements in the <b>DependencyArray</b> array. The array contains one element for each processor in the hardware platform.</p>
 </dd>
 
-### -field <b>DependencyArray</b>
+### -field DependencyArray
 
 <dd>
 <p>The first element in an array of <a href="..\pepfx\ns-pepfx--pep-processor-idle-dependency.md">PEP_PROCESSOR_IDLE_DEPENDENCY</a> structures. This array specifies the set of dependencies that the platform idle state has on each processor. If the platform contains N processors, the array contains N elements, and processors are numbered 0 to N-1 in the order in which they are represented in the array.</p>

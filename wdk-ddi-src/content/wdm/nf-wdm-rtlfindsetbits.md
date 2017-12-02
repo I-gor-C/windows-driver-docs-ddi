@@ -57,19 +57,19 @@ ULONG RtlFindSetBits(
 ## -parameters
 <dl>
 
-### -param <i>BitMapHeader</i> [in]
+### -param BitMapHeader [in]
 
 <dd>
 <p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a> routine. </p>
 </dd>
 
-### -param <i>NumberToFind</i> [in]
+### -param NumberToFind [in]
 
 <dd>
 <p>Specifies how many contiguous set bits will satisfy this request. </p>
 </dd>
 
-### -param <i>HintIndex</i> [in]
+### -param HintIndex [in]
 
 <dd>
 <p>Specifies a zero-based bit position around which to start looking for a set bit range of the given size. </p>

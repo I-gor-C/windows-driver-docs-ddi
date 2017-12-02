@@ -7,7 +7,7 @@ old-location: netvista\wsk_registration.htm
 old-project: netvista
 ms.assetid: 770c53bb-5e11-4bd4-a175-6ea6ae0bb782
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WSK_REGISTRATION, WSK_REGISTRATION, *PWSK_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef struct _WSK_REGISTRATION {
 ## -struct-fields
 <dl>
 
-### -field <b>ReservedRegistrationState</b>
+### -field ReservedRegistrationState
 
 <dd>
 <p>Reserved for system use. Do not use.</p>
 </dd>
 
-### -field <b>ReservedRegistrationContext</b>
+### -field ReservedRegistrationContext
 
 <dd>
 <p>Reserved for system use. Do not use.</p>
 </dd>
 
-### -field <b>ReservedRegistrationLock</b>
+### -field ReservedRegistrationLock
 
 <dd>
 <p>Reserved for system use. Do not use.</p>

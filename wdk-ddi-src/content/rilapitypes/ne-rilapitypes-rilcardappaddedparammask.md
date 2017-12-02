@@ -7,7 +7,7 @@ old-location: netvista\rilcardappaddedparammask_2.htm
 old-project: netvista
 ms.assetid: 47726715-306c-4167-8080-65085d1e7f8f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILCARDAPPADDEDPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_CARDAPPADDED_UICCAPPINFO"></a><a id="ril_param_cardappadded_uiccappinfo"></a><b>RIL_PARAM_CARDAPPADDED_UICCAPPINFO</b>
+### -field RIL_PARAM_CARDAPPADDED_UICCAPPINFO
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CARDAPPADDED_ALL"></a><a id="ril_param_cardappadded_all"></a><b>RIL_PARAM_CARDAPPADDED_ALL</b>
+### -field RIL_PARAM_CARDAPPADDED_ALL
 
 <dd></dd>
 </dl>

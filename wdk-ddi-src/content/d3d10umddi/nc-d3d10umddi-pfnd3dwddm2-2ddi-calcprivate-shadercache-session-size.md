@@ -57,7 +57,7 @@ SIZE_T APIENTRY* pfnCalcPrivateShaderCacheSessionSize(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>The handle of a device.</p>

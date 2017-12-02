@@ -54,7 +54,7 @@ typedef struct D3D12DDICAPS_UMD_BASED_COMMAND_QUEUE_PRIORITY_DATA_0023 {
 ## -struct-fields
 <dl>
 
-### -field <b>SupportedQueueFlagsForGlobalRealtimeQueues</b>
+### -field SupportedQueueFlagsForGlobalRealtimeQueues
 
 <dd>
 <p>Supported queue flags for global real-time queues.</p>

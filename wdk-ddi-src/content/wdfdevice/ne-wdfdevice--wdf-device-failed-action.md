@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_failed_action.htm
 old-project: wdf
 ms.assetid: 260fdda5-bc97-4522-96ca-1c29d41e8542
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _WDF_DEVICE_FAILED_ACTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfDeviceFailedUndefined"></a><a id="wdfdevicefailedundefined"></a><a id="WDFDEVICEFAILEDUNDEFINED"></a><b>WdfDeviceFailedUndefined</b>
+### -field WdfDeviceFailedUndefined
 
 <dd>
 <p>For internal use only.</p>
 </dd>
 
-### -field <a id="WdfDeviceFailedAttemptRestart"></a><a id="wdfdevicefailedattemptrestart"></a><a id="WDFDEVICEFAILEDATTEMPTRESTART"></a><b>WdfDeviceFailedAttemptRestart</b>
+### -field WdfDeviceFailedAttemptRestart
 
 <dd>
 <p>Supported in KMDF and starting in UMDF version 2.15.  If the device's drivers are not supporting other devices that are plugged into the computer, the I/O manager unloads the drivers. Next, the Plug and Play manager attempts to restart the device by requesting the bus driver to reenumerate its devices. If the bus driver supports reenumeration, your driver will be reloaded, if it was unloaded. If several consecutive restart attempts fail (because the restarted driver again reports an error), the framework stops trying to restart the device.</p>
 </dd>
 
-### -field <a id="WdfDeviceFailedNoRestart"></a><a id="wdfdevicefailednorestart"></a><a id="WDFDEVICEFAILEDNORESTART"></a><b>WdfDeviceFailedNoRestart</b>
+### -field WdfDeviceFailedNoRestart
 
 <dd>
 <p>If the device's drivers are not supporting other devices on the system, the I/O manager unloads the drivers. </p>
@@ -122,4 +122,4 @@ typedef enum _WDF_DEVICE_FAILED_ACTION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_FAILED_ACTION enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_FAILED_ACTION enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

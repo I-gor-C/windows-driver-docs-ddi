@@ -7,7 +7,7 @@ old-location: netvista\ndis_status_indication.htm
 old-project: netvista
 ms.assetid: bfab907d-a90d-46a0-bd51-6f2b418e3f39
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_STATUS_INDICATION, NDIS_STATUS_INDICATION, *PNDIS_STATUS_INDICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ typedef struct _NDIS_STATUS_INDICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -77,7 +77,7 @@ typedef struct _NDIS_STATUS_INDICATION {
      <b>Size</b> member to NDIS_SIZEOF_STATUS_INDICATION_REVISION_1.</p>
 </dd>
 
-### -field <b>SourceHandle</b>
+### -field SourceHandle
 
 <dd>
 <p>The source of the status indication. If the source is a miniport adapter, it should be the handle
@@ -89,14 +89,14 @@ typedef struct _NDIS_STATUS_INDICATION {
      <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function.</p>
 </dd>
 
-### -field <b>PortNumber</b>
+### -field PortNumber
 
 <dd>
 <p>The source port of the status indication. If the status indication is not specific to a port, set 
      <b>PortNumber</b> to zero.</p>
 </dd>
 
-### -field <b>StatusCode</b>
+### -field StatusCode
 
 <dd>
 <p>The status code, either provided by NDIS or propagated from the underlying drivers. The value is
@@ -104,14 +104,14 @@ typedef struct _NDIS_STATUS_INDICATION {
      <a href="netvista.status_indications">Status Indications</a>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The type of information in the status buffer at 
      <b>StatusBuffer</b> . Miniport drivers set this member to zero. This member is reserved for NDIS.</p>
 </dd>
 
-### -field <b>DestinationHandle</b>
+### -field DestinationHandle
 
 <dd>
 <p>A handle that identifies the overlying driver that should receive the status indication. If <b>NULL</b>,
@@ -121,7 +121,7 @@ typedef struct _NDIS_STATUS_INDICATION {
      <b>RequestId</b> member. For more information about OID requests, see the Remarks section.</p>
 </dd>
 
-### -field <b>RequestId</b>
+### -field RequestId
 
 <dd>
 <p>The OID request that is associated with the status indication. If there is no OID request that is
@@ -135,7 +135,7 @@ typedef struct _NDIS_STATUS_INDICATION {
 <p>For more information about OID requests, see the following Remarks section.</p>
 </dd>
 
-### -field <b>StatusBuffer</b>
+### -field StatusBuffer
 
 <dd>
 <p>A pointer to a buffer that contains medium-specific data that depends on the value at 
@@ -152,14 +152,14 @@ typedef struct _NDIS_STATUS_INDICATION {
      <b>StatusBufferSize</b> is set to zero.</p>
 </dd>
 
-### -field <b>StatusBufferSize</b>
+### -field StatusBufferSize
 
 <dd>
 <p>The length, in bytes, of the status information buffer at 
      <b>StatusBuffer</b> .</p>
 </dd>
 
-### -field <b>Guid</b>
+### -field Guid
 
 <dd>
 <p>A private GUID that NDIS uses to generate a WMI notification. For more information about private
@@ -167,7 +167,7 @@ typedef struct _NDIS_STATUS_INDICATION {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569641">OID_GEN_SUPPORTED_GUIDS</a>.</p>
 </dd>
 
-### -field <b>NdisReserved</b>
+### -field NdisReserved
 
 <dd>
 <p>Reserved for NDIS.</p>
@@ -273,4 +273,4 @@ typedef struct _NDIS_STATUS_INDICATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_STATUS_INDICATION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_STATUS_INDICATION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

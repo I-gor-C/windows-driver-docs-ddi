@@ -60,37 +60,37 @@ STDMETHOD DrvGetDriverSetting(
 ## -parameters
 <dl>
 
-### -param <i>pci </i> 
+### -param pci  
 
 <dd>
 <p>Caller-supplied pointer to an <a href="..\printoem\ns-printoem--oemuiobj.md">OEMUIOBJ</a> structure. </p>
 </dd>
 
-### -param <i>Feature</i> 
+### -param Feature 
 
 <dd>
 <p>Caller-supplied value identifying the printer feature for which option settings are returned. This can be either a string pointer or a constant, as described in the following Remarks section.</p>
 </dd>
 
-### -param <i>pOutput</i> 
+### -param pOutput 
 
 <dd>
 <p>Caller-supplied pointer to a buffer to receive the specified information. </p>
 </dd>
 
-### -param <i>cbSize</i> 
+### -param cbSize 
 
 <dd>
 <p>Caller-supplied size, in bytes, of the buffer pointed to by <i>pOutput</i>.</p>
 </dd>
 
-### -param <i>pcbNeeded </i> 
+### -param pcbNeeded  
 
 <dd>
 <p>Caller-supplied pointer to a location to receive the minimum buffer size required to contain the requested information. </p>
 </dd>
 
-### -param <i>pdwOptionsReturned </i> 
+### -param pdwOptionsReturned  
 
 <dd>
 <p>Caller-supplied pointer to a location to receive the number of option strings placed in <i>pOutput</i>.</p>
@@ -109,7 +109,7 @@ STDMETHOD DrvGetDriverSetting(
 <p> </p>
 
 ## -remarks
-<p>This method is inherited from the <a href="NULL">IPrintOemDriverUI COM Interface</a>, and can be called only by Windows XP and later Pscript5 UI plug-ins that do not fully replace the core driver's standard UI pages, and is supported during the UI plug-in's <a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a> and <a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a> functions, and their property sheet callback routines. When this method is supported, it has the same behavior as <a href="print.iprintoemdriverui_drvgetdriversetting">IPrintOemDriverUI::DrvGetDriverSetting</a>. When it is not supported, this method should return E_NOTIMPL.</p>
+<p>This method is inherited from the <a href="https://msdn.microsoft.com/ed11789f-750d-4f29-b5e0-ab299a1388db">IPrintOemDriverUI COM Interface</a>, and can be called only by Windows XP and later Pscript5 UI plug-ins that do not fully replace the core driver's standard UI pages, and is supported during the UI plug-in's <a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a> and <a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a> functions, and their property sheet callback routines. When this method is supported, it has the same behavior as <a href="print.iprintoemdriverui_drvgetdriversetting">IPrintOemDriverUI::DrvGetDriverSetting</a>. When it is not supported, this method should return E_NOTIMPL.</p>
 
 ## -requirements
 <table>

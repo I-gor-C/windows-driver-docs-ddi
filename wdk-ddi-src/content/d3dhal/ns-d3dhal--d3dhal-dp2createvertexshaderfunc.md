@@ -58,13 +58,13 @@ typedef struct _D3DHAL_DP2CREATEVERTEXSHADERFUNC {
 ## -struct-fields
 <dl>
 
-### -field <b>dwHandle</b>
+### -field dwHandle
 
 <dd>
 <p>Specifies the handle to the vertex shader code that is assigned by the runtime. This value is guaranteed to be subzero.</p>
 </dd>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the shader code size in bytes.</p>

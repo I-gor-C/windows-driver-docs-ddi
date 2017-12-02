@@ -56,19 +56,19 @@ HRESULT QuerySupported(
 ## -parameters
 <dl>
 
-### -param <i>PropSet</i> [in]
+### -param PropSet [in]
 
 <dd>
 <p>GUID that identifies the property set.</p>
 </dd>
 
-### -param <i>Id</i> [in]
+### -param Id [in]
 
 <dd>
 <p>Identifier of the property within the property set. </p>
 </dd>
 
-### -param <i>TypeSupport</i> [out]
+### -param TypeSupport [out]
 
 <dd>
 <p>Pointer to a variable that receives a bitmask enumerating the flags that indicate the support that the underlying driver provides. A driver can support a bitwise OR combination of the following flags: </p>

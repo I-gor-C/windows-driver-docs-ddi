@@ -7,7 +7,7 @@ old-location: ifsk\mrxextractnetrootname.htm
 old-project: ifsk
 ms.assetid: e990b7fc-a341-419d-b358-eac4fa2dca78
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,25 +60,25 @@ VOID MRxExtractNetRootName(
 ## -parameters
 <dl>
 
-### -param <i>FilePathName</i> [in]
+### -param FilePathName [in]
 
 <dd>
 <p>A pointer to a Unicode string that contains a pathname. </p>
 </dd>
 
-### -param <i>SrvCall</i> [in]
+### -param SrvCall [in]
 
 <dd>
 <p>A pointer to the SRV_CALL structure. </p>
 </dd>
 
-### -param <i>NetRootName</i> [out]
+### -param NetRootName [out]
 
 <dd>
 <p>On input, a pointer for storing a Unicode string. On success, this parameter will contain a pointer to a Unicode string that contains a NET_ROOT structure name. </p>
 </dd>
 
-### -param <i>RestOfName</i> [out, optional]
+### -param RestOfName [out, optional]
 
 <dd>
 <p>A pointer to a Unicode string that contains the rest of the name on success. This parameter is optional and can be a <b>NULL</b> pointer on input.</p>
@@ -141,4 +141,4 @@ VOID MRxExtractNetRootName(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxExtractNetRootName routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxExtractNetRootName routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

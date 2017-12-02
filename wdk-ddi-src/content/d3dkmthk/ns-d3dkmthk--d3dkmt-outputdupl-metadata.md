@@ -59,27 +59,27 @@ typedef struct _D3DKMT_OUTPUTDUPL_METADATA {
 ## -struct-fields
 <dl>
 
-### -field <b>hAdapter</b>
+### -field hAdapter
 
 <dd></dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd></dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd></dd>
 
-### -field <b>BufferSizeSupplied</b>
+### -field BufferSizeSupplied
 
 <dd></dd>
 
-### -field <b>pBuffer</b>
+### -field pBuffer
 
 <dd></dd>
 
-### -field <b>BufferSizeRequired</b>
+### -field BufferSizeRequired
 
 <dd></dd>
 </dl>

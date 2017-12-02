@@ -7,7 +7,7 @@ old-location: netvista\ril_sendmsg.htm
 old-project: netvista
 ms.assetid: 0ae1ed49-af07-4e34-80fa-34a55c973cfb
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SendMsg
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,27 +62,27 @@ HRESULT  RIL_SendMsg(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>hUiccApp</i> 
+### -param hUiccApp 
 
 <dd></dd>
 
-### -param <i>lpMessage</i> 
+### -param lpMessage 
 
 <dd></dd>
 
-### -param <i>dwOptions</i> 
+### -param dwOptions 
 
 <dd></dd>
 </dl>

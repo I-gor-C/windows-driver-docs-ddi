@@ -57,25 +57,25 @@ typedef struct _SM_GetTargetMapping_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>HBAStatus</b>
+### -field HBAStatus
 
 <dd>
 <p>The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.</p>
 </dd>
 
-### -field <b>TotalEntryCount</b>
+### -field TotalEntryCount
 
 <dd>
 <p>The total number of persistent bindings that are associated with the HBA.</p>
 </dd>
 
-### -field <b>OutEntryCount</b>
+### -field OutEntryCount
 
 <dd>
 <p>The total number of mappings that are retrieved. This value will be less than or equal to TotalEntryCount.</p>
 </dd>
 
-### -field <b>Entry</b>
+### -field Entry
 
 <dd>
 <p>An array of structures of type SMHBA_SCSIENTRY that describes an HBA's bindings between the operating system and the SAS identifiers.</p>

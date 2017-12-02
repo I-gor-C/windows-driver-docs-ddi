@@ -55,7 +55,7 @@ NTSTATUS APIENTRY D3DKMTUpdateGpuVirtualAddress(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-updategpuvirtualaddress.md">D3DKMT_UPDATEGPUVIRTUALADDRESS</a> structure that describes the operation.</p>

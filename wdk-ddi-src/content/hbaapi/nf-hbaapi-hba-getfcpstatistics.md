@@ -56,19 +56,19 @@ HBA_STATUS HBA_API HBA_GetFCPStatistics(
 ## -parameters
 <dl>
 
-### -param <i>handle</i> [in]
+### -param handle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
 </dd>
 
-### -param <i>lunit</i> [in]
+### -param lunit [in]
 
 <dd>
 <p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-scsiid.md">HBA_ScsiId</a> that contains information used by the operating system to identify a SCSI logical unit. </p>
 </dd>
 
-### -param <i>statistics</i> [out]
+### -param statistics [out]
 
 <dd>
 <p>Contains, on return, a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fc4statistics.md">HBA_FC4Statistics</a> that holds the traffic statistics that the FCP protocol has collected for the indicated logical unit. </p>

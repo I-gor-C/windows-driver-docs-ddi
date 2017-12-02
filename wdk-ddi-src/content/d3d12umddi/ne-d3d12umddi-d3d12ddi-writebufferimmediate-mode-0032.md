@@ -56,19 +56,19 @@ typedef enum _D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032 {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_DEFAULT"></a><a id="d3d12ddi_writebufferimmediate_mode_default"></a><b>D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_DEFAULT</b>
+### -field D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_DEFAULT
 
 <dd>
 <p>The write buffer immediate default value is 0x0.</p>
 </dd>
 
-### -field <a id="D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_MARKER_IN"></a><a id="d3d12ddi_writebufferimmediate_mode_marker_in"></a><b>D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_MARKER_IN</b>
+### -field D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_MARKER_IN
 
 <dd>
 <p>The write buffer immediate mode is marker in, and the value is 0x1.</p>
 </dd>
 
-### -field <a id="D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_MARKER_OUT"></a><a id="d3d12ddi_writebufferimmediate_mode_marker_out"></a><b>D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_MARKER_OUT</b>
+### -field D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_MARKER_OUT
 
 <dd>
 <p>The write buffer immediate  mode is marker out, and the value is 0x2.</p>

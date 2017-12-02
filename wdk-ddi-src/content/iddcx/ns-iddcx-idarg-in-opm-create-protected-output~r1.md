@@ -55,7 +55,7 @@ typedef struct IDARG_IN_OPM_CREATE_PROTECTED_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>VideoOutputSemantics</b>
+### -field VideoOutputSemantics
 
 <dd>
 <p>

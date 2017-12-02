@@ -57,7 +57,7 @@ VOID KStrItemFreeCallback(
 ## -parameters
 <dl>
 
-### -param <i>CreateItem</i> [in]
+### -param CreateItem [in]
 
 <dd>
 <p>Specifies a create item that was previously allocated by <a href="..\ks\nf-ks-ksallocateobjectcreateitem.md">KsAllocateObjectCreateItem</a>.</p>

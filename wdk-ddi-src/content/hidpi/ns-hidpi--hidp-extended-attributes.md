@@ -57,25 +57,25 @@ typedef struct _HIDP_EXTENDED_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>NumGlobalUnknowns</b>
+### -field NumGlobalUnknowns
 
 <dd>
 <p>Specifies the number of <a href="..\hidpi\ns-hidpi--hidp-unknown-token.md">HIDP_UNKNOWN_TOKEN</a> structures in the list specified by <b>Data</b>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for internal system use only.</p>
 </dd>
 
-### -field <b>GlobalUnknowns</b>
+### -field GlobalUnknowns
 
 <dd>
 <p>Reserved for internal system use only.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>Specifies the memory location where <a href="..\hidpi\nf-hidpi-hidp-getextendedattributes.md">HidP_GetExtendedAttributes</a> returns a variable length array of <a href="..\hidpi\ns-hidpi--hidp-unknown-token.md">HIDP_UNKNOWN_TOKEN</a> structures.</p>

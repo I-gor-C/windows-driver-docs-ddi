@@ -56,13 +56,13 @@ typedef enum _DEVICE_RESET_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="FunctionLevelDeviceReset"></a><a id="functionleveldevicereset"></a><a id="FUNCTIONLEVELDEVICERESET"></a><b>FunctionLevelDeviceReset</b>
+### -field FunctionLevelDeviceReset
 
 <dd>
 <p>A function-level device reset, which is restricted to a specific device.</p>
 </dd>
 
-### -field <a id="PlatformLevelDeviceReset"></a><a id="platformleveldevicereset"></a><a id="PLATFORMLEVELDEVICERESET"></a><b>PlatformLevelDeviceReset</b>
+### -field PlatformLevelDeviceReset
 
 <dd>
 <p>A platform-level device reset, which affects a specific device and all other devices that are connected to it via the same power rail or reset line.</p>

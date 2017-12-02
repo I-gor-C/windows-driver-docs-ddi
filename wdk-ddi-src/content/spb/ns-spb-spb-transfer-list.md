@@ -7,7 +7,7 @@ old-location: spb\spb_transfer_list.htm
 old-project: SPB
 ms.assetid: DC4E165B-4D3A-4C5F-9B6F-8CB825BAF4FD
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/30/2017
 ms.keywords: SPB_TRANSFER_LIST,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,25 +58,25 @@ typedef struct _SPB_TRANSFER_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of the <b>SPB_TRANSFER_LIST</b> structure. This size value does not include any <b>Transfers</b> array elements that might follow this structure. If new members are added to future versions of this structure, the <b>Size</b> value can be used to determine which version of the <b>SPB_TRANSFER_LIST</b> structure is being used.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for use by the operating system. Set to zero.</p>
 </dd>
 
-### -field <b>TransferCount</b>
+### -field TransferCount
 
 <dd>
 <p>The number of elements in the <b>Transfers</b> array. This array contains a minimum of one element.</p>
 </dd>
 
-### -field <b>Transfers</b>
+### -field Transfers
 
 <dd>
 <p>This member is the first element in an array of <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a> structures.  Each array element describes an individual transfer in the I/O transfer sequence. If the array contains more than one element, the additional array elements immediately follow the <b>SPB_TRANSFER_LIST</b> structure in memory. The transfers are performed in the order in which they appear in the array, starting with the first element.</p>
@@ -126,4 +126,4 @@ typedef struct _SPB_TRANSFER_LIST {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_LIST structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_LIST structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -54,7 +54,7 @@ VOID ExFreePool(
 ## -parameters
 <dl>
 
-### -param <i>P</i> [in]
+### -param P [in]
 
 <dd>
 <p>Specifies the address of the block of pool memory being deallocated. </p>

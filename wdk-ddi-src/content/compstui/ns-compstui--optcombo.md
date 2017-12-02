@@ -59,27 +59,27 @@ typedef struct _OPTCOMBO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd></dd>
 
-### -field <b>cListItem</b>
+### -field cListItem
 
 <dd></dd>
 
-### -field <b>pListItem</b>
+### -field pListItem
 
 <dd></dd>
 
-### -field <b>Sel</b>
+### -field Sel
 
 <dd></dd>
 
-### -field <b>dwReserved</b>
+### -field dwReserved
 
 <dd></dd>
 </dl>

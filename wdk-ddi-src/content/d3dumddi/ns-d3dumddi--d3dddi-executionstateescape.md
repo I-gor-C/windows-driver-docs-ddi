@@ -54,7 +54,7 @@ typedef struct _D3DDDI_EXECUTIONSTATEESCAPE {
 ## -struct-fields
 <dl>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>[Out] A value of type <a href="..\d3dumddi\ne-d3dumddi--d3dddi-deviceexecution-state.md">D3DDDI_DEVICEEXECUTION_STATE</a> that indicates the state of the device.</p>

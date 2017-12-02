@@ -57,19 +57,19 @@ typedef struct _SYSENV_VALUE {
 ## -struct-fields
 <dl>
 
-### -field <b>Attributes</b>
+### -field Attributes
 
 <dd>
 <p>Attributes of the system environment variable.</p>
 </dd>
 
-### -field <b>ValueLength</b>
+### -field ValueLength
 
 <dd>
 <p>The length of the value of the system environment variable.</p>
 </dd>
 
-### -field <b>UCHAR</b>
+### -field UCHAR
 
 <dd>
 <p>The value of the system environment variable.</p>

@@ -60,7 +60,7 @@ VOID KeEnterCriticalRegion(void);
 <p>None</p>
 
 ## -remarks
-<p>A driver calls this routine to enter a critical region in which the execution of normal kernel APCs is deferred until this driver exits the critical region by calling the <a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a> routine. Any caller of <b>KeEnterCriticalRegion</b> should call <b>KeLeaveCriticalRegion</b> as quickly as possible after entering a critical region.</p>
+<p>A driver calls this routine to enter a critical region in which the execution of normal kernel APCs is deferred until this driver exits the critical region by calling the <a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a> routine. Any caller of <b>KeEnterCriticalRegion</b> should call <b>KeLeaveCriticalRegion</b> as quickly as possible after entering a critical region.</p>
 
 <p>Highest-level drivers can call <b>KeEnterCriticalRegion</b> while running in the context of the thread that requested the current I/O operation.</p>
 
@@ -149,10 +149,10 @@ VOID KeEnterCriticalRegion(void);
 <a href="kernel.exreleaseresourceandleavecriticalregion">ExReleaseResourceAndLeaveCriticalRegion</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-keareapcsdisabled.md">KeAreApcsDisabled</a>
+<a href="..\wdm\nf-wdm-keareapcsdisabled.md">KeAreApcsDisabled</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
+<a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
 </dt>
 </dl>
 <p> </p>

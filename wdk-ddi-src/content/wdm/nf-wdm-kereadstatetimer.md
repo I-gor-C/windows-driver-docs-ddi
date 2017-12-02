@@ -55,7 +55,7 @@ BOOLEAN KeReadStateTimer(
 ## -parameters
 <dl>
 
-### -param <i>Timer</i> [in]
+### -param Timer [in]
 
 <dd>
 <p>A pointer to an initialized timer object, for which the caller provides the storage.</p>

@@ -60,31 +60,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="VideoPortServicesAGP"></a><a id="videoportservicesagp"></a><a id="VIDEOPORTSERVICESAGP"></a><b>VideoPortServicesAGP</b>
+### -field VideoPortServicesAGP
 
 <dd>
 <p>Represents the AGP interface. </p>
 </dd>
 
-### -field <a id="VideoPortServicesI2C"></a><a id="videoportservicesi2c"></a><a id="VIDEOPORTSERVICESI2C"></a><b>VideoPortServicesI2C</b>
+### -field VideoPortServicesI2C
 
 <dd>
 <p>Represents the I2C interface. </p>
 </dd>
 
-### -field <a id="VideoPortServicesHeadless"></a><a id="videoportservicesheadless"></a><a id="VIDEOPORTSERVICESHEADLESS"></a><b>VideoPortServicesHeadless</b>
+### -field VideoPortServicesHeadless
 
 <dd>
 <p>Represents the Headless interface. </p>
 </dd>
 
-### -field <a id="VideoPortServicesInt10"></a><a id="videoportservicesint10"></a><a id="VIDEOPORTSERVICESINT10"></a><b>VideoPortServicesInt10</b>
+### -field VideoPortServicesInt10
 
 <dd>
 <p>Represents the Int10 interface. </p>
 </dd>
 
-### -field <a id="VideoPortServicesDebugReport"></a><a id="videoportservicesdebugreport"></a><a id="VIDEOPORTSERVICESDEBUGREPORT"></a><b>VideoPortServicesDebugReport</b>
+### -field VideoPortServicesDebugReport
 
 <dd>
 <p>Represents the Debug Report interface, which is available in the following operating systems:
@@ -96,7 +96,7 @@ typedef enum  {
 </ul>
 </dd>
 
-### -field <a id="VideoPortServicesWCMemoryProtection"></a><a id="videoportserviceswcmemoryprotection"></a><a id="VIDEOPORTSERVICESWCMEMORYPROTECTION"></a><b>VideoPortServicesWCMemoryProtection</b>
+### -field VideoPortServicesWCMemoryProtection
 
 <dd>
 <p>Represents the WC Memory Protection interface. </p>

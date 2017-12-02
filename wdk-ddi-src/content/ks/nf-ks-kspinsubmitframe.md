@@ -58,31 +58,31 @@ NTSTATUS KsPinSubmitFrame(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure on which to submit a frame.</p>
 </dd>
 
-### -param <i>Data</i> [in, optional]
+### -param Data [in, optional]
 
 <dd>
 <p>A pointer to a frame buffer. This should be <b>NULL</b> if and only if <i>Size</i> is equal to 0. Optional.</p>
 </dd>
 
-### -param <i>Size</i> [in, optional]
+### -param Size [in, optional]
 
 <dd>
 <p>The size in bytes of the frame buffer to which the <i>Data</i> field points. If the <i>Data</i> field is <b>NULL</b>, set this parameter to zero. Optional.</p>
 </dd>
 
-### -param <i>StreamHeader</i> [in, optional]
+### -param StreamHeader [in, optional]
 
 <dd>
 <p>A pointer to a <a href="stream.ksstream_header">KSSTREAM_HEADER</a> structure. The stream header is copied if this parameter is supplied. Optional.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer. AVStream provides this pointer to the frame return callback registered through a call to <a href="..\ks\nf-ks-kspinregisterframereturncallback.md">KsPinRegisterFrameReturnCallback</a>. Optional.</p>

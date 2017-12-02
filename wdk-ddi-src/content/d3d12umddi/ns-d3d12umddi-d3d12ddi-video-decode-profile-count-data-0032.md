@@ -55,13 +55,13 @@ typedef struct _D3D12DDI_VIDEO_DECODE_PROFILE_COUNT_DATA_0032 {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeIndex</b>
+### -field NodeIndex
 
 <dd>
 <p>Node index.</p>
 </dd>
 
-### -field <b>ProfileCount</b>
+### -field ProfileCount
 
 <dd>
 <p>Profile count.</p>

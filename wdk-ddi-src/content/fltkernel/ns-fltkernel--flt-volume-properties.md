@@ -7,7 +7,7 @@ old-location: ifsk\flt_volume_properties.htm
 old-project: ifsk
 ms.assetid: e7be6cb6-a59d-4244-ba36-e7d5b36b1416
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FLT_VOLUME_PROPERTIES, FLT_VOLUME_PROPERTIES, *PFLT_VOLUME_PROPERTIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ typedef struct _FLT_VOLUME_PROPERTIES {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceType</b>
+### -field DeviceType
 
 <dd>
 <p>Receives the device type of the volume. Must be a valid storage device type, such as one of the following values defined in ntifs.h: </p>
@@ -89,31 +89,31 @@ typedef struct _FLT_VOLUME_PROPERTIES {
 <p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a>. </p>
 </dd>
 
-### -field <b>DeviceCharacteristics</b>
+### -field DeviceCharacteristics
 
 <dd>
 <p>Receives the device characteristics of the volume. For more information, see the reference entry for <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>. </p>
 </dd>
 
-### -field <b>DeviceObjectFlags</b>
+### -field DeviceObjectFlags
 
 <dd>
 <p>Receives the device object flags for the volume. For more information about these flags, see the reference entries for <a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a> and <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>. </p>
 </dd>
 
-### -field <b>AlignmentRequirement</b>
+### -field AlignmentRequirement
 
 <dd>
 <p>Receives the buffer alignment required by the underlying device. The value must be one of the FILE_<i>xxxx</i>_ALIGNMENT values defined in ntifs.h. For more information, see <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff547807">Initializing a Device Object</a>. </p>
 </dd>
 
-### -field <b>SectorSize</b>
+### -field SectorSize
 
 <dd>
 <p>Receives the volume sector size, in bytes. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Provides additional description of the volume. This member can be zero or one of the following flags. In versions prior to Windows 10, version 1607, this member was named <b>Reserved0</b> and reserved for system use.</p>
@@ -125,7 +125,7 @@ typedef struct _FLT_VOLUME_PROPERTIES {
 <tr>
 <td width="40%"><a id="VOL_PROP_FL_DAX_VOLUME"></a><a id="vol_prop_fl_dax_volume"></a><dl>
 
-### -field <b>VOL_PROP_FL_DAX_VOLUME</b>
+### -field VOL_PROP_FL_DAX_VOLUME
 
 </dl>
 </td>
@@ -137,20 +137,20 @@ typedef struct _FLT_VOLUME_PROPERTIES {
 <p> </p>
 </dd>
 
-### -field <b>FileSystemDriverName</b>
+### -field FileSystemDriverName
 
 <dd>
 <p>
 <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that receives the service name of the file system that is mounted on this volume. The buffer for this Unicode string is contiguous with this structure and does not need to be initialized before calling <a href="..\fltkernel\nf-fltkernel-fltgetvolumeproperties.md">FltGetVolumeProperties</a>. </p>
 </dd>
 
-### -field <b>FileSystemDeviceName</b>
+### -field FileSystemDeviceName
 
 <dd>
 <p>UNICODE_STRING structure that receives the name of the file system device object associated with this volume. The buffer for this Unicode string is contiguous with this structure and does not need to be initialized before calling <a href="..\fltkernel\nf-fltkernel-fltgetvolumeproperties.md">FltGetVolumeProperties</a>. </p>
 </dd>
 
-### -field <b>RealDeviceName</b>
+### -field RealDeviceName
 
 <dd>
 <p>UNICODE_STRING structure that receives the name of the storage device object associated with this volume. This structure is empty for network file systems. The buffer for this Unicode string is contiguous with this structure and does not need to be initialized before calling <a href="..\fltkernel\nf-fltkernel-fltgetvolumeproperties.md">FltGetVolumeProperties</a>. </p>
@@ -202,4 +202,4 @@ typedef struct _FLT_VOLUME_PROPERTIES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_VOLUME_PROPERTIES structure%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_VOLUME_PROPERTIES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

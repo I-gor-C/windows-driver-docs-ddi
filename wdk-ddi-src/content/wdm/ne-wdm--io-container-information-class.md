@@ -56,13 +56,13 @@ typedef enum _IO_CONTAINER_INFORMATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="IoSessionStateInformation"></a><a id="iosessionstateinformation"></a><a id="IOSESSIONSTATEINFORMATION"></a><b>IoSessionStateInformation</b>
+### -field IoSessionStateInformation
 
 <dd>
 <p>Session state information. A driver uses this enumeration constant to request information about a user session. </p>
 </dd>
 
-### -field <a id="IoMaxContainerInformationClass"></a><a id="iomaxcontainerinformationclass"></a><a id="IOMAXCONTAINERINFORMATIONCLASS"></a><b>IoMaxContainerInformationClass</b>
+### -field IoMaxContainerInformationClass
 
 <dd>
 <p>Specifies the maximum value in this enumeration type. </p>

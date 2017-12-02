@@ -55,13 +55,13 @@ typedef enum _DXGK_INTERRUPT_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_INTERRUPT_ENABLE____"></a><a id="dxgk_interrupt_enable____"></a><b>DXGK_INTERRUPT_ENABLE    </b>
+### -field DXGK_INTERRUPT_ENABLE    
 
 <dd>
 <p>Indicates that the interrupt is enabled.</p>
 </dd>
 
-### -field <a id="DXGK_INTERRUPT_DISABLE___"></a><a id="dxgk_interrupt_disable___"></a><b>DXGK_INTERRUPT_DISABLE   </b>
+### -field DXGK_INTERRUPT_DISABLE   
 
 <dd>
 <p>Indicates that the interrupt is disabled.</p>

@@ -61,49 +61,49 @@ typedef struct _LBA_FILTER_TABLE {
 ## -struct-fields
 <dl>
 
-### -field <b>StructSize</b>
+### -field StructSize
 
 <dd>
 <p>The size of this structure. This is set to <b>sizeof</b>(LBA_FILTER_TABLE).</p>
 </dd>
 
-### -field <b>GlobalReadLock</b>
+### -field GlobalReadLock
 
 <dd>
 <p>If TRUE, LBAs not included in the filter table are not readable. Otherwise unfiltered LBAs are readable if FALSE.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>GlobalWriteLock</b>
+### -field GlobalWriteLock
 
 <dd>
 <p>If TRUE, LBAs not included in the filter table are not writeable. Otherwise unfiltered LBAs are writeable if FALSE.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>LbaFilterCount</b>
+### -field LbaFilterCount
 
 <dd>
 <p>The number of filter entries in the filter table.</p>
 </dd>
 
-### -field <b>LbaFilterSize</b>
+### -field LbaFilterSize
 
 <dd>
 <p>The size in bytes of a filter table entry. This must be set to <b>sizeof</b>(LBA_FILTER_TABLE_ENTRY).</p>
 </dd>
 
-### -field <b>LbaFilterOffset</b>
+### -field LbaFilterOffset
 
 <dd>
 <p>The offset of the LBA filter table from the beginning of this structure. This will typically be <b>sizeof</b>(LBA_FILTER_TABLE).</p>

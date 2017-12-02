@@ -62,13 +62,13 @@ VOID APIENTRY* ClearView(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>HandleType</i> 
+### -param HandleType 
 
 <dd>
 <p>A value, of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi-handletype.md">D3D11DDI_HANDLETYPE</a>, that identifies the view handle type that supports this clear operation. Possible types are the following.</p>
@@ -79,25 +79,25 @@ VOID APIENTRY* ClearView(
 </ul>
 </dd>
 
-### -param <i>hView</i> 
+### -param hView 
 
 <dd>
 <p>A pointer to the resource view to clear.</p>
 </dd>
 
-### -param <i>Color</i> 
+### -param Color 
 
 <dd>
 <p>A 4-component array that represents the color to use to clear the resource view. For more details, see the Remarks section.</p>
 </dd>
 
-### -param <i>pRect</i> [in]
+### -param pRect [in]
 
 <dd>
 <p>An array of <a href="display.rect">RECT</a> structures for the rectangles in the resource view to clear. If <b>NULL</b>, <i>ClearView</i> clears the entire surface.</p>
 </dd>
 
-### -param <i>NumRects</i> 
+### -param NumRects 
 
 <dd>
 <p>The number of rectangles in the array that the  <i>pRect</i> parameter specifies.</p>

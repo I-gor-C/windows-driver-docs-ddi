@@ -56,19 +56,19 @@ NTSTATUS RtlInt8Add(
 ## -parameters
 <dl>
 
-### -param <i>i8Augend</i> [in]
+### -param i8Augend [in]
 
 <dd>
 <p>The first value in the equation.</p>
 </dd>
 
-### -param <i>i8Addend</i> [in]
+### -param i8Addend [in]
 
 <dd>
 <p>The value to add to <i>i8Augend</i>.</p>
 </dd>
 
-### -param <i>pi8Result</i> [out]
+### -param pi8Result [out]
 
 <dd>
 <p>A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

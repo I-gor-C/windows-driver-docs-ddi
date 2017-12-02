@@ -7,7 +7,7 @@ old-location: image\wiasvalidateitemproperties.htm
 old-project: image
 ms.assetid: d7858b1b-88cf-4e75-a466-40afdcb01d9b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiasValidateItemProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ HRESULT _stdcall wiasValidateItemProperties(
 ## -parameters
 <dl>
 
-### -param <i>pWiasContext</i> [in]
+### -param pWiasContext [in]
 
 <dd>
 <p>Pointer to a WIA item context.</p>
 </dd>
 
-### -param <i>nPropSpec</i> 
+### -param nPropSpec 
 
 <dd>
 <p>Specifies the number of properties to validate.</p>
 </dd>
 
-### -param <i>pPropSpec</i> [in]
+### -param pPropSpec [in]
 
 <dd>
 <p>Pointer to the first element of an array of PROPSPEC structures indicating the properties to validate.</p>

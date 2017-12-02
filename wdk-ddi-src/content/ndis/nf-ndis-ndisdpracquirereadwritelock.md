@@ -7,7 +7,7 @@ old-location: netvista\ndisdpracquirereadwritelock.htm
 old-project: netvista
 ms.assetid: 09B574FA-BCBA-4370-8F9F-BF30CE0BE52D
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisDprAcquireReadWriteLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,21 +58,21 @@ VOID NdisDprAcquireReadWriteLock(
 ## -parameters
 <dl>
 
-### -param <i>Lock</i> [in, out]
+### -param Lock [in, out]
 
 <dd>
 <p>A pointer to an opaque variable that represents a lock. The caller can use this lock to access
      shared resources.</p>
 </dd>
 
-### -param <i>fWrite</i> [in]
+### -param fWrite [in]
 
 <dd>
 <p>A Boolean value. If the value is TRUE, this function is provided with write access to shared
      resources; if the value is FALSE, this function is provided with read access.</p>
 </dd>
 
-### -param <i>LockState</i> [out]
+### -param LockState [out]
 
 <dd>
 <p>A pointer to an opaque variable that tracks the state of the lock. This variable exists in the
@@ -211,4 +211,4 @@ VOID NdisDprAcquireReadWriteLock(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisDprAcquireReadWriteLock function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisDprAcquireReadWriteLock function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,7 +56,7 @@ typedef struct IDDCX_OPM_GET_RANDOM_NUMBER {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>
@@ -64,7 +64,7 @@ typedef struct IDDCX_OPM_GET_RANDOM_NUMBER {
                  </p>
 </dd>
 
-### -field <b>RandomNumber</b>
+### -field RandomNumber
 
 <dd>
 <p>

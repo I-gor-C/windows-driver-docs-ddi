@@ -54,7 +54,7 @@ typedef enum D3DDDI_CHECK_DIRECT_FLIP_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_CHECKDIRECTFLIP_IMMEDIATE"></a><a id="d3dddi_checkdirectflip_immediate"></a><b>D3DDDI_CHECKDIRECTFLIP_IMMEDIATE</b>
+### -field D3DDDI_CHECKDIRECTFLIP_IMMEDIATE
 
 <dd>
 <p>Seamless flipping should occur immediately and does not have to be synchronized with a VSync interrupt.</p>

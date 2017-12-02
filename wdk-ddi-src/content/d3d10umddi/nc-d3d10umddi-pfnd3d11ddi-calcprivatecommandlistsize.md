@@ -58,13 +58,13 @@ SIZE_T APIENTRY CalcPrivateCommandListSize(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pCreateCommandList</i> [in]
+### -param pCreateCommandList [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-createcommandlist.md">D3D11DDIARG_CREATECOMMANDLIST</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region.</p>

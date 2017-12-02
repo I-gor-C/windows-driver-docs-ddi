@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY SetPixelShader(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hShaderHandle</i> [in]
+### -param hShaderHandle [in]
 
 <dd>
 <p> A handle to the pixel shader code object.</p>

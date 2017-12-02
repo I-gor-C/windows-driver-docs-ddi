@@ -59,25 +59,25 @@ VP_STATUS VideoPortMapMemory(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>PhysicalAddress</i> 
+### -param PhysicalAddress 
 
 <dd>
 <p>The bus-relative base address of the range to map.</p>
 </dd>
 
-### -param <i>Length</i> 
+### -param Length 
 
 <dd>
 <p>On input, specifies the number of bytes of video memory to map. On output, receives the size of the memory actually mapped, which might be rounded to a system-determined alignment boundary. (However, the miniport and display drivers cannot access any memory that is outside the range delimited by the input value at <i>Length</i>.)</p>
 </dd>
 
-### -param <i>InIoSpace</i> 
+### -param InIoSpace 
 
 <dd>
 <p>Pointer to a variable that indicates the location of the range. The variable can be one of the following flags or an ORed, compatible combination of these flags.</p>
@@ -131,7 +131,7 @@ VP_STATUS VideoPortMapMemory(
 <p> </p>
 </dd>
 
-### -param <i>VirtualAddress</i> 
+### -param VirtualAddress 
 
 <dd>
 <p>Pointer to a variable that, on input, is either <b>NULL</b> or a handle to a user-mode process. If the input value is <b>NULL</b>, this routine maps the video memory into system space. Otherwise, this routine maps the video memory into the virtual address space of the user-mode process that is identified by the handle. On output, receives the base virtual address of the mapping.</p>

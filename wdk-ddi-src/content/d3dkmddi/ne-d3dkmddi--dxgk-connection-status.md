@@ -63,49 +63,49 @@ typedef enum _DXGK_CONNECTION_STATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="ConnectionStatusUninitialized"></a><a id="connectionstatusuninitialized"></a><a id="CONNECTIONSTATUSUNINITIALIZED"></a><b>ConnectionStatusUninitialized</b>
+### -field ConnectionStatusUninitialized
 
 <dd>
 <p>Indicates that a variable of type DXGK_CONNECTION_STATUS has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="TargetStatusDisconnected"></a><a id="targetstatusdisconnected"></a><a id="TARGETSTATUSDISCONNECTED"></a><b>TargetStatusDisconnected</b>
+### -field TargetStatusDisconnected
 
 <dd>
 <p>Indicates that a target has been disconnected.  This implies that any other targets or monitors which are connected via this target have also been removed.  The implied removals do not need to be reported to the OS separately as the OS will comprehend that they have also been removed.  For joined targets, even though each constituent target must be reported, the disconnect is identified by the target which has gone away so only one report is required.</p>
 </dd>
 
-### -field <a id="TargetStatusConnected"></a><a id="targetstatusconnected"></a><a id="TARGETSTATUSCONNECTED"></a><b>TargetStatusConnected</b>
+### -field TargetStatusConnected
 
 <dd>
 <p>Indicates that a new target has been detected.  The new target is downstream, a child, of the original target.  The new target Id must be unique.</p>
 </dd>
 
-### -field <a id="TargetStatusJoined"></a><a id="targetstatusjoined"></a><a id="TARGETSTATUSJOINED"></a><b>TargetStatusJoined</b>
+### -field TargetStatusJoined
 
 <dd>
 <p>Indicates that a new target has been detected and that multiple targets are being joined together to form this new target.  Each target being joined together must be indicated to the OS with a DXGK_CONNECTION_CHANGE and all target join indications for a new target must be indicated within a single batch.</p>
 </dd>
 
-### -field <a id="MonitorStatusDisconnected"></a><a id="monitorstatusdisconnected"></a><a id="MONITORSTATUSDISCONNECTED"></a><b>MonitorStatusDisconnected</b>
+### -field MonitorStatusDisconnected
 
 <dd>
 <p>Indicates that the monitor has been disconnected.</p>
 </dd>
 
-### -field <a id="MonitorStatusUnknown"></a><a id="monitorstatusunknown"></a><a id="MONITORSTATUSUNKNOWN"></a><b>MonitorStatusUnknown</b>
+### -field MonitorStatusUnknown
 
 <dd>
 <p>Indicates that the driver cannot detect if a monitor is connected to the target and that the driver can support sending a valid timing to the target.  This is only valid for analog targets.</p>
 </dd>
 
-### -field <a id="MonitorStatusConnected"></a><a id="monitorstatusconnected"></a><a id="MONITORSTATUSCONNECTED"></a><b>MonitorStatusConnected</b>
+### -field MonitorStatusConnected
 
 <dd>
 <p>Indicates that a monitor has been detected.</p>
 </dd>
 
-### -field <a id="LinkConfigurationStarted"></a><a id="linkconfigurationstarted"></a><a id="LINKCONFIGURATIONSTARTED"></a><b>LinkConfigurationStarted</b>
+### -field LinkConfigurationStarted
 
 <dd>
 <p>Indicates that link configuration  is occurring on the specified target.  </p>
@@ -113,13 +113,13 @@ typedef enum _DXGK_CONNECTION_STATUS {
 <p>If the target was not enabled, then there is no impact on this target.  Any targets daisy-chained downstream from the specified target need to be notified to the OS as in configuration separately. Although the OS comprehends daisy-chaining, configuration is link generic so the OS does not attempt to infer the link configuration status of downstream devices.</p>
 </dd>
 
-### -field <a id="LinkConfigurationFailed"></a><a id="linkconfigurationfailed"></a><a id="LINKCONFIGURATIONFAILED"></a><b>LinkConfigurationFailed</b>
+### -field LinkConfigurationFailed
 
 <dd>
 <p>Indicates that link configuration has failed so the OS will need to retry SetTimingsFromVidPn after re-enumerating co-functional timings in order to find out the timings available based on the now completed configuration.</p>
 </dd>
 
-### -field <a id="LinkConfigurationSucceeded"></a><a id="linkconfigurationsucceeded"></a><a id="LINKCONFIGURATIONSUCCEEDED"></a><b>LinkConfigurationSucceeded</b>
+### -field LinkConfigurationSucceeded
 
 <dd>
 <p>Indicates that link configuration has completed successfully and that the requested display timing is active.</p>

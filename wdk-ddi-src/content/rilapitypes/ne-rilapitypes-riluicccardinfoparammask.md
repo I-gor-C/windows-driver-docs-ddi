@@ -7,7 +7,7 @@ old-location: netvista\riluicccardinfoparammask_2.htm
 old-project: netvista
 ms.assetid: f27c7f54-f939-4e9b-a27c-b0137fbb7cec
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILUICCCARDINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_CARDINFO_ICCID"></a><a id="ril_param_cardinfo_iccid"></a><b>RIL_PARAM_CARDINFO_ICCID</b>
+### -field RIL_PARAM_CARDINFO_ICCID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CARDINFO_NUMAPPS"></a><a id="ril_param_cardinfo_numapps"></a><b>RIL_PARAM_CARDINFO_NUMAPPS</b>
+### -field RIL_PARAM_CARDINFO_NUMAPPS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CARDINFO_APPINFO"></a><a id="ril_param_cardinfo_appinfo"></a><b>RIL_PARAM_CARDINFO_APPINFO</b>
+### -field RIL_PARAM_CARDINFO_APPINFO
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CARDINFO_ALL"></a><a id="ril_param_cardinfo_all"></a><b>RIL_PARAM_CARDINFO_ALL</b>
+### -field RIL_PARAM_CARDINFO_ALL
 
 <dd></dd>
 </dl>

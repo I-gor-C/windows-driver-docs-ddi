@@ -58,31 +58,31 @@ typedef struct _DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A handle to the display device (graphics context) on which the driver performs the presentation. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function to create the display device. </p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based video present network (VidPN) source identification number of the input for which the hardware support is queried.</p>
 </dd>
 
-### -field <b>NumPlaneInfo</b>
+### -field NumPlaneInfo
 
 <dd>
 <p>[out] The number of overlay planes that the hardware supports.</p>
 </dd>
 
-### -field <b>pPlaneInfo</b>
+### -field pPlaneInfo
 
 <dd>
 <p>[out] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-check-multiplaneoverlaysupport-plane-info.md">DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO</a> structure that specifies support attributes that the hardware provides for multiplane overlays.</p>
 </dd>
 
-### -field <b>Supported</b>
+### -field Supported
 
 <dd>
 <p>[out] <b>TRUE</b> if the hardware supports multiplane overlays, otherwise <b>FALSE</b>.

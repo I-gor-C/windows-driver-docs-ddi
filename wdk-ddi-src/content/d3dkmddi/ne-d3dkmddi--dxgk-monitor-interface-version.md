@@ -56,19 +56,19 @@ typedef enum _DXGK_MONITOR_INTERFACE_VERSION {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGK_MONITOR_INTERFACE_VERSION_UNINITIALIZED"></a><a id="dxgk_monitor_interface_version_uninitialized"></a><b>DXGK_MONITOR_INTERFACE_VERSION_UNINITIALIZED</b>
+### -field DXGK_MONITOR_INTERFACE_VERSION_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type DXGK_MONITOR_INTERFACE_VERSION has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="DXGK_MONITOR_INTERFACE_VERSION_V1"></a><a id="dxgk_monitor_interface_version_v1"></a><b>DXGK_MONITOR_INTERFACE_VERSION_V1</b>
+### -field DXGK_MONITOR_INTERFACE_VERSION_V1
 
 <dd>
 <p>Indicates version 1, available in Windows Vista and later versions of the Windows operating systems.</p>
 </dd>
 
-### -field <a id="DXGK_MONITOR_INTERFACE_VERSION_V2"></a><a id="dxgk_monitor_interface_version_v2"></a><b>DXGK_MONITOR_INTERFACE_VERSION_V2</b>
+### -field DXGK_MONITOR_INTERFACE_VERSION_V2
 
 <dd>
 <p>

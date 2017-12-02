@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_service_activation_status.htm
 old-project: netvista
 ms.assetid: 669ef35f-0e59-4ec3-b6cc-5cb2156b51a2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_SERVICE_ACTIVATION_STATUS, NDIS_WWAN_SERVICE_ACTIVATION_STATUS, *PNDIS_WWAN_SERVICE_ACTIVATION_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct _NDIS_WWAN_SERVICE_ACTIVATION_STATUS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The header with type, revision, and size information about the NDIS_WWAN_SERVICE_ACTIVATION_STATUS
@@ -101,7 +101,7 @@ typedef struct _NDIS_WWAN_SERVICE_ACTIVATION_STATUS {
      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
-### -field <b>uStatus</b>
+### -field uStatus
 
 <dd>
 <p>The status of the service activation operation. The following table shows the possible values for
@@ -198,7 +198,7 @@ typedef struct _NDIS_WWAN_SERVICE_ACTIVATION_STATUS {
 <p> </p>
 </dd>
 
-### -field <b>ServiceActivationStatus</b>
+### -field ServiceActivationStatus
 
 <dd>
 <p>A formatted 
@@ -245,4 +245,4 @@ typedef struct _NDIS_WWAN_SERVICE_ACTIVATION_STATUS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

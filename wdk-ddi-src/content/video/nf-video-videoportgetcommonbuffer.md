@@ -61,37 +61,37 @@ PVOID VideoPortGetCommonBuffer(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>DesiredLength</i> [in]
+### -param DesiredLength [in]
 
 <dd>
 <p>Specifies the requested number of bytes of memory.</p>
 </dd>
 
-### -param <i>Alignment</i> [in]
+### -param Alignment [in]
 
 <dd>
 <p>Specifies the requested alignment of the buffer. The video port driver currently ignores this parameter.</p>
 </dd>
 
-### -param <i>LogicalAddress</i> [out]
+### -param LogicalAddress [out]
 
 <dd>
 <p>Pointer to a variable that receives the logical address to be used by the adapter to access the allocated buffer.</p>
 </dd>
 
-### -param <i>pActualLength</i> [out]
+### -param pActualLength [out]
 
 <dd>
 <p>Pointer to a variable that receives the actual size, in bytes, of the buffer allocated for this request.</p>
 </dd>
 
-### -param <i>CacheEnabled</i> [in]
+### -param CacheEnabled [in]
 
 <dd>
 <p>Specifies whether the allocated memory can be cached.</p>

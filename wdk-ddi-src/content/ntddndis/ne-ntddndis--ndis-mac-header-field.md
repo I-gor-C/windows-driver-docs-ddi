@@ -7,7 +7,7 @@ old-location: netvista\ndis_mac_header_field.htm
 old-project: netvista
 ms.assetid: 31db285c-a7e7-4ba5-ba07-a60cfcfa9af9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT, *PGET_CONFIGURATION_IOCTL_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,25 +61,25 @@ typedef enum _NDIS_MAC_HEADER_FIELD {
 ## -enum-fields
 <dl>
 
-### -field <a id="NdisMacHeaderFieldUndefined"></a><a id="ndismacheaderfieldundefined"></a><a id="NDISMACHEADERFIELDUNDEFINED"></a><b>NdisMacHeaderFieldUndefined</b>
+### -field NdisMacHeaderFieldUndefined
 
 <dd>
 <p>An undefined MAC header field.</p>
 </dd>
 
-### -field <a id="NdisMacHeaderFieldDestinationAddress"></a><a id="ndismacheaderfielddestinationaddress"></a><a id="NDISMACHEADERFIELDDESTINATIONADDRESS"></a><b>NdisMacHeaderFieldDestinationAddress</b>
+### -field NdisMacHeaderFieldDestinationAddress
 
 <dd>
 <p>A destination address field.</p>
 </dd>
 
-### -field <a id="NdisMacHeaderFieldSourceAddress"></a><a id="ndismacheaderfieldsourceaddress"></a><a id="NDISMACHEADERFIELDSOURCEADDRESS"></a><b>NdisMacHeaderFieldSourceAddress</b>
+### -field NdisMacHeaderFieldSourceAddress
 
 <dd>
 <p>A source address field.</p>
 </dd>
 
-### -field <a id="NdisMacHeaderFieldProtocol"></a><a id="ndismacheaderfieldprotocol"></a><a id="NDISMACHEADERFIELDPROTOCOL"></a><b>NdisMacHeaderFieldProtocol</b>
+### -field NdisMacHeaderFieldProtocol
 
 <dd>
 <p>A protocol field in the DEC/Intel/Xerox (DIX) Ethernet
@@ -87,19 +87,19 @@ typedef enum _NDIS_MAC_HEADER_FIELD {
 MAC header.</p>
 </dd>
 
-### -field <a id="NdisMacHeaderFieldVlanId"></a><a id="ndismacheaderfieldvlanid"></a><a id="NDISMACHEADERFIELDVLANID"></a><b>NdisMacHeaderFieldVlanId</b>
+### -field NdisMacHeaderFieldVlanId
 
 <dd>
 <p>A virtual local area network (VLAN) identifier field.</p>
 </dd>
 
-### -field <a id="NdisMacHeaderFieldPriority"></a><a id="ndismacheaderfieldpriority"></a><a id="NDISMACHEADERFIELDPRIORITY"></a><b>NdisMacHeaderFieldPriority</b>
+### -field NdisMacHeaderFieldPriority
 
 <dd>
 <p>A VLAN priority field.</p>
 </dd>
 
-### -field <a id="NdisMacHeaderFieldPacketType"></a><a id="ndismacheaderfieldpackettype"></a><a id="NDISMACHEADERFIELDPACKETTYPE"></a><b>NdisMacHeaderFieldPacketType</b>
+### -field NdisMacHeaderFieldPacketType
 
 <dd>
 <p>A packet type field in the IEEE 802.2 subnetwork access protocol (SNAP) header of an 802.3
@@ -107,7 +107,7 @@ MAC header.</p>
 MAC header.</p>
 </dd>
 
-### -field <a id="NdisMacHeaderFieldMaximum"></a><a id="ndismacheaderfieldmaximum"></a><a id="NDISMACHEADERFIELDMAXIMUM"></a><b>NdisMacHeaderFieldMaximum</b>
+### -field NdisMacHeaderFieldMaximum
 
 <dd>
 <p>The maximum value for this enumeration. This value might change in future versions of the NDIS
@@ -151,4 +151,4 @@ MAC header.</p>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MAC_HEADER_FIELD enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MAC_HEADER_FIELD enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

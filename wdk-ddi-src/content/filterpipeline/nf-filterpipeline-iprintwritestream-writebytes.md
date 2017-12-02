@@ -56,19 +56,19 @@ HRESULT WriteBytes(
 ## -parameters
 <dl>
 
-### -param <i>pvBuffer</i> [in]
+### -param pvBuffer [in]
 
 <dd>
 <p>A pointer to the buffer that the bytes will be written from.</p>
 </dd>
 
-### -param <i>cbBuffer</i> [in]
+### -param cbBuffer [in]
 
 <dd>
 <p>The size of the buffer to be read from.</p>
 </dd>
 
-### -param <i>pcbWritten</i> [out]
+### -param pcbWritten [out]
 
 <dd>
 <p>A pointer to the number of bytes actually written. </p>

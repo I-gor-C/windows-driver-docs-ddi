@@ -66,62 +66,62 @@ typedef struct _D3DDDI_LOCKASYNCFLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>NoOverwrite</b>
+### -field NoOverwrite
 
 <dd>
 <p>A UINT value that specifies whether the locked resource can have data appended to it but the existing data in the resource cannot be modified. This member is used only with Microsoft Direct3D vertex buffer locks. </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Discard</b>
+### -field Discard
 
 <dd>
 <p>A UINT value that specifies whether the entire locked resource is modified. If this value is set, because the existing contents can be discarded, the contents require no preliminary processing.</p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>RangeValid</b>
+### -field RangeValid
 
 <dd>
 <p>A UINT value that specifies whether the locked resource is linear.</p>
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>AreaValid</b>
+### -field AreaValid
 
 <dd>
 <p>A UINT value that specifies whether the locked resource is a surface.</p>
 <p>Setting this member is equivalent to setting the fourth bit of the 32-bit <b>Value</b> member (0x00000008).</p>
 </dd>
 
-### -field <b>BoxValid</b>
+### -field BoxValid
 
 <dd>
 <p>A UINT value that specifies whether the locked resource is a volume.</p>
 <p>Setting this member is equivalent to setting the fifth bit of the 32-bit <b>Value</b> member (0x00000010).</p>
 </dd>
 
-### -field <b>NoExistingReferences</b>
+### -field NoExistingReferences
 
 <dd>
 <p>A UINT value that specifies whether the Microsoft Direct3D runtime has any queued references to the resource to be locked. If <b>NoExistingReferences</b> is set, the driver determines that no internally queued references to the resource are available. The driver can then set the <b>NoExistingReferences</b> bit-field flag of the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-lock.md">D3DDDICB_LOCK</a> structure when the driver calls the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lockcb.md">pfnLockCb</a> function to perform a lock-discard operation. </p>
 <p>Setting this member is equivalent to setting the sixth bit of the 32-bit <b>Value</b> member (0x00000020).</p>
 </dd>
 
-### -field <b>NotifyOnly</b>
+### -field NotifyOnly
 
 <dd>
 <p>A UINT value that specifies whether the lock call is for notification only. The Direct3D runtime sets <b>NotifyOnly</b> to <b>TRUE</b> when it locks runtime-allocated system memory surfaces. In this situation, the runtime ignores the pointer that the driver returns in the <b>pSurfData</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-lockasync.md">D3DDDIARG_LOCKASYNC</a> structure.</p>
 <p>Setting this member is equivalent to setting the seventh bit of the 32-bit <b>Value</b> member (0x00000040).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 25 bits (0xFFFFFF80) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that is contained in D3DDDI_LOCKASYNCFLAGS that can hold one 32-bit value that identifies how to lock a resource.</p>

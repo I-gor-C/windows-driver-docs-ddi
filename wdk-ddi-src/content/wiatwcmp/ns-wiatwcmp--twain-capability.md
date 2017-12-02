@@ -7,7 +7,7 @@ old-location: image\twain_capability.htm
 old-project: image
 ms.assetid: 79a2155d-eb06-4095-9fe6-b95d93e46211
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: TWAIN_CAPABILITY, TWAIN_CAPABILITY, *PTWAIN_CAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,13 +62,13 @@ typedef struct _TWAIN_CAPABILITY {
 ## -struct-fields
 <dl>
 
-### -field <b>lSize</b>
+### -field lSize
 
 <dd>
 <p>Specifies the size, in bytes, of the TWAIN_CAPABILITY structure.</p>
 </dd>
 
-### -field <b>lMSG</b>
+### -field lMSG
 
 <dd>
 <p>Specifies the particular TWAIN message, which can be one of the following values: </p>
@@ -121,19 +121,19 @@ typedef struct _TWAIN_CAPABILITY {
 <p> </p>
 </dd>
 
-### -field <b>lCapID</b>
+### -field lCapID
 
 <dd>
 <p>Specifies the ID of the capability to set or get.</p>
 </dd>
 
-### -field <b>lConType</b>
+### -field lConType
 
 <dd>
 <p>Specifies the capability's container type.</p>
 </dd>
 
-### -field <b>lRC</b>
+### -field lRC
 
 <dd>
 <p>Specifies the TWAIN return code. This value can be on of the following:</p>
@@ -170,7 +170,7 @@ typedef struct _TWAIN_CAPABILITY {
 <p> </p>
 </dd>
 
-### -field <b>lCC</b>
+### -field lCC
 
 <dd>
 <p>Specifies the TWAIN condition code. This value can be one of the following:</p>
@@ -207,13 +207,13 @@ typedef struct _TWAIN_CAPABILITY {
 <p> </p>
 </dd>
 
-### -field <b>lDataSize</b>
+### -field lDataSize
 
 <dd>
 <p>Specifies the size, in bytes of the data in the <b>Data</b> array.</p>
 </dd>
 
-### -field <b>Data</b>
+### -field Data
 
 <dd>
 <p>Is an array that contains the capability data. The actual size, in bytes, of the array is indicated by the <b>lDataSize</b> member.</p>
@@ -221,7 +221,7 @@ typedef struct _TWAIN_CAPABILITY {
 </dl>
 
 ## -remarks
-<p>A TWAIN-capable application communicates with a WIA driver by way of the TWAIN compatibility later to find out whether the driver has any private capabilities, and if so, what they are. A TWAIN_CAPABILITY structure is used in this communication. For more information, see <a href="NULL">TWAIN Compatibility</a>. </p>
+<p>A TWAIN-capable application communicates with a WIA driver by way of the TWAIN compatibility later to find out whether the driver has any private capabilities, and if so, what they are. A TWAIN_CAPABILITY structure is used in this communication. For more information, see <a href="https://msdn.microsoft.com/270e62dd-590c-4495-be22-002957932031">TWAIN Compatibility</a>. </p>
 
 <p>The TWAIN return codes and control codes are defined in <i>twain.h</i>, which can be obtained from the TWAIN Working Group (http://www.twain.org).</p>
 

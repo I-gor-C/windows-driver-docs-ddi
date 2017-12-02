@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>CurrentBitRate</b>
+### -field CurrentBitRate
 
 <dd>
 <p>The bit rate, in bits per second, that the operating system recommends that the audio/video encoder uses.</p>
 </dd>
 
-### -field <b>LocalMaxBitRate</b>
+### -field LocalMaxBitRate
 
 <dd>
 <p>The maximum bit rate, in bits per second, that the local Wi-Fi Direct hardware can support.</p>
 </dd>
 
-### -field <b>RemoteMaxBitRate</b>
+### -field RemoteMaxBitRate
 
 <dd>
 <p>The maximum bit rate, in bits per second, that the Miracast sink hardware can support.</p>

@@ -56,19 +56,19 @@ typedef struct _D3DDDIARG_CONFIGUREAUTHENTICATEDCHANNEL {
 ## -struct-fields
 <dl>
 
-### -field <b>InputSize</b>
+### -field InputSize
 
 <dd>
 <p>[in] The size, in bytes, of the input data that the <b>pInputData</b> member points to. </p>
 </dd>
 
-### -field <b>pInputData</b>
+### -field pInputData
 
 <dd>
 <p>[in] A pointer to a buffer that describes the configuration data to set. The definition of the input buffer depends on the configuration data that is set. The buffer that <b>pInputData</b> points to is defined identically to the input buffer that is passed to the <b>IDirect3DAuthenticatedChannel::Configure</b> method. For more information about <b>IDirect3DAuthenticatedChannel::Configure</b>, see the Windows SDK documentation. </p>
 </dd>
 
-### -field <b>pOutputData</b>
+### -field pOutputData
 
 <dd>
 <p>[in/out] A pointer to a buffer that describes the information that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-configureauthenicatedchannel.md">ConfigureAuthenticatedChannel</a> function returns. </p>

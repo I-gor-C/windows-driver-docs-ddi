@@ -68,91 +68,91 @@ typedef struct _WHEA_PSHED_PLUGIN_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>GetAllErrorSources</b>
+### -field GetAllErrorSources
 
 <dd>
 <p>A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-get-all-error-sources.md">GetAllErrorSources</a> callback function. If a PSHED plug-in does not participate in error source discovery, this member should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. This member should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>GetErrorSourceInfo</b>
+### -field GetErrorSourceInfo
 
 <dd>
 <p>A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-get-error-source-info.md">GetErrorSourceInfo</a> callback function. If a PSHED plug-in does not participate in error source discovery, this member should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>SetErrorSourceInfo</b>
+### -field SetErrorSourceInfo
 
 <dd>
 <p>A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-set-error-source-info.md">SetErrorSourceInfo</a> callback function. If a PSHED plug-in does not participate in error source control, this member should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EnableErrorSource</b>
+### -field EnableErrorSource
 
 <dd>
 <p>A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-enable-error-source.md">EnableErrorSource</a> callback function. If a PSHED plug-in does not participate in error source control, this member should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>DisableErrorSource</b>
+### -field DisableErrorSource
 
 <dd>
 <p>A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-disable-error-source.md">DisableErrorSource</a> callback function. If a PSHED plug-in does not participate in error source control, this member should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>WriteErrorRecord</b>
+### -field WriteErrorRecord
 
 <dd>
 <p>A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-write-error-record.md">WriteErrorRecord</a> callback function. If a PSHED plug-in does not participate in error record persistence, this member should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>ReadErrorRecord</b>
+### -field ReadErrorRecord
 
 <dd>
 <p>A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-read-error-record.md">ReadErrorRecord</a> callback function. If a PSHED plug-in does not participate in error record persistence, this member should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>ClearErrorRecord</b>
+### -field ClearErrorRecord
 
 <dd>
 <p>A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-clear-error-record.md">ClearErrorRecord</a> callback function. If a PSHED plug-in does not participate in error record persistence, this member should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>RetrieveErrorInfo</b>
+### -field RetrieveErrorInfo
 
 <dd>
 <p>A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-retrieve-error-info.md">RetrieveErrorInfo</a> callback function. If a PSHED plug-in does not participate in error information retrieval, this member should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>FinalizeErrorRecord</b>
+### -field FinalizeErrorRecord
 
 <dd>
 <p>A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-finalize-error-record.md">FinalizeErrorRecord</a> callback function. If a PSHED plug-in does not participate in error information retrieval, this member should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>ClearErrorStatus</b>
+### -field ClearErrorStatus
 
 <dd>
 <p>A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-clear-error-status.md">ClearErrorStatus</a> callback function. If a PSHED plug-in does not participate in error information retrieval, this member should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>AttemptRecovery</b>
+### -field AttemptRecovery
 
 <dd>
 <p>A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-attempt-error-recovery.md">AttemptRecovery</a> callback function. If a PSHED plug-in does not participate in error recovery, this member should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>GetInjectionCapabilities</b>
+### -field GetInjectionCapabilities
 
 <dd>
 <p>A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-get-injection-capabilities.md">GetInjectionCapabilities</a> callback function. If a PSHED plug-in does not participate in error injection, this member should be set to <b>NULL</b>.</p>
 </dd>
 
-### -field <b>InjectError</b>
+### -field InjectError
 
 <dd>
 <p>A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-inject-error.md">InjectError</a> callback function. If a PSHED plug-in does not participate in error injection, this member should be set to <b>NULL</b>.</p>

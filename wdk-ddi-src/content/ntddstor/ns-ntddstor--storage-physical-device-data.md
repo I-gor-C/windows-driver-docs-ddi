@@ -65,73 +65,73 @@ typedef struct _STORAGE_PHYSICAL_DEVICE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceId</b>
+### -field DeviceId
 
 <dd>
 <p>The hardware ID of the storage device.</p>
 </dd>
 
-### -field <b>Role</b>
+### -field Role
 
 <dd>
 <p>The role of the storage device. A bitmask can be use to specify multiple roles, including <b>STORAGE_COMPONENT_ROLE_CACHE</b> (0x00000001), <b>STORAGE_COMPONENT_ROLE_TIERING</b> (0x00000002), and <b>STORAGE_COMPONENT_ROLE_DATA</b> (0x00000004).</p>
 </dd>
 
-### -field <b>HealthStatus</b>
+### -field HealthStatus
 
 <dd>
 <p>Indicates the health status of a storage device, of type <a href="..\ntddstor\ne-ntddstor--storage-component-health-status.md">STORAGE_COMPONENT_HEALTH_STATUS</a>.</p>
 </dd>
 
-### -field <b>CommandProtocol</b>
+### -field CommandProtocol
 
 <dd>
 <p>Specifies the storage command protocols that are used between software and hardware, of type <a href="..\ntddstor\ne-ntddstor--storage-protocol-type.md">STORAGE_PROTOCOL_TYPE</a>.</p>
 </dd>
 
-### -field <b>SpecVersion</b>
+### -field SpecVersion
 
 <dd>
 <p>Indicates the specification of the storage device, of type <a href="..\ntddstor\ns-ntddstor--storage-spec-version.md">STORAGE_SPEC_VERSION</a>.</p>
 </dd>
 
-### -field <b>FormFactor</b>
+### -field FormFactor
 
 <dd>
 <p>Indicates the form factor of a storage device, of type <a href="..\ntddstor\ne-ntddstor--storage-device-form-factor.md">STORAGE_DEVICE_FORM_FACTOR</a>.</p>
 </dd>
 
-### -field <b>Vendor[8]</b>
+### -field Vendor[8]
 
 <dd>
 <p>The vendor name of the storage device.</p>
 </dd>
 
-### -field <b>Model[40]</b>
+### -field Model[40]
 
 <dd>
 <p>The model name of the storage device.</p>
 </dd>
 
-### -field <b>FirmwareRevision[16]</b>
+### -field FirmwareRevision[16]
 
 <dd>
 <p>The revision number of the storage device.</p>
 </dd>
 
-### -field <b>Capacity</b>
+### -field Capacity
 
 <dd>
 <p>The capacity of the storage device in units of kilobytes (1024 bytes).</p>
 </dd>
 
-### -field <b>PhysicalLocation[32]</b>
+### -field PhysicalLocation[32]
 
 <dd>
 <p>This member is reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved[2]</b>
+### -field Reserved[2]
 
 <dd>
 <p>Specifies if the storage device is reserved.</p>

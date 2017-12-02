@@ -57,19 +57,19 @@ VP_STATUS VideoPortQueryServices(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>ServicesType</i> [in]
+### -param ServicesType [in]
 
 <dd>
 <p>A value from the <a href="..\video\ne-video-video-port-services.md">VIDEO_PORT_SERVICES</a> enumerated type that specifies which interface is being requested.</p>
 </dd>
 
-### -param <i>Interface</i> [in, out]
+### -param Interface [in, out]
 
 <dd>
 <p>Pointer to an <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure, which contains basic information about the requested interface. See the following <b>Remarks</b> section for more information.</p>

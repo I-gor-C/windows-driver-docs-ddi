@@ -7,7 +7,7 @@ old-location: sensors\gnss_errorinfo.htm
 old-project: sensors
 ms.assetid: 754CD1DD-88E6-4E02-8E24-1939222FE326
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_ERRORINFO, GNSS_ERRORINFO, *PGNSS_ERRORINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>ErrorCode</b>
+### -field ErrorCode
 
 <dd>
 <p>Win32 Error Code associated with the event.</p>
@@ -79,19 +79,19 @@ typedef struct {
 </p>
 </dd>
 
-### -field <b>IsRecoverable</b>
+### -field IsRecoverable
 
 <dd>
 <p>If FALSE, the GNSS adapter needs to reset it’s state with the GNSS driver.</p>
 </dd>
 
-### -field <b>ErrorDescription[256]</b>
+### -field ErrorDescription[256]
 
 <dd>
 <p>Clear-text description of the error (not-localized) that is used for diagnostic purpose only.</p>
 </dd>
 
-### -field <b>Unused[512]</b>
+### -field Unused[512]
 
 <dd>
 <p>Padding buffer.</p>

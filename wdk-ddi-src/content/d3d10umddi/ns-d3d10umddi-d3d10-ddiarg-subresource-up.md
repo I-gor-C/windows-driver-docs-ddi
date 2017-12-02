@@ -56,19 +56,19 @@ typedef struct D3D10_DDIARG_SUBRESOURCE_UP {
 ## -struct-fields
 <dl>
 
-### -field <b>pSysMem</b>
+### -field pSysMem
 
 <dd>
 <p>[in] A pointer to a buffer that contains the contents of the subresource to copy from. </p>
 </dd>
 
-### -field <b>SysMemPitch</b>
+### -field SysMemPitch
 
 <dd>
 <p>[in] The pitch, in bytes, of the surface--that is, the distance, in bytes, to the start of the next row.</p>
 </dd>
 
-### -field <b>SysMemSlicePitch</b>
+### -field SysMemSlicePitch
 
 <dd>
 <p>[in] The pitch, in bytes, of the depth slice--that is, the distance, in bytes, to the start of the next depth, where a 3-D subresource is composed of width x rows x depth.  </p>

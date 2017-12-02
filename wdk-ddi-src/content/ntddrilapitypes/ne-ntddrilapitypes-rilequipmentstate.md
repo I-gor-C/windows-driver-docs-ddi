@@ -7,7 +7,7 @@ old-location: netvista\rilequipmentstate.htm
 old-project: netvista
 ms.assetid: aa00ebc4-c8de-4a73-ad43-77f4e173e617
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef enum _RILEQUIPMENTSTATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_EQSTATE_FULL"></a><a id="ril_eqstate_full"></a><b>RIL_EQSTATE_FULL</b>
+### -field RIL_EQSTATE_FULL
 
 <dd></dd>
 
-### -field <a id="RIL_EQSTATE_SHUTDOWN"></a><a id="ril_eqstate_shutdown"></a><b>RIL_EQSTATE_SHUTDOWN</b>
+### -field RIL_EQSTATE_SHUTDOWN
 
 <dd></dd>
 
-### -field <a id="RIL_EQSTATE_MAX"></a><a id="ril_eqstate_max"></a><b>RIL_EQSTATE_MAX</b>
+### -field RIL_EQSTATE_MAX
 
 <dd></dd>
 </dl>

@@ -61,49 +61,49 @@ typedef struct _STORAGE_TEMPERATURE_DATA_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Contains the size of this structure, in bytes. The value of this member will change as members are added to the structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the total size of the data returned, in bytes. This may include data that follows this structure.</p>
 </dd>
 
-### -field <b>CriticalTemperature</b>
+### -field CriticalTemperature
 
 <dd>
 <p>Indicates the minimum temperature in degrees Celsius that may prevent normal operation. Exceeding this temperature may result in possible data loss, automatic device shutdown, extreme performance throttling, or permanent damage.      </p>
 </dd>
 
-### -field <b>WarningTemperature</b>
+### -field WarningTemperature
 
 <dd>
 <p>Indicates the maximum temperature in degrees Celsius at which the device is capable of operating continuously without degrading operation or reliability.    </p>
 </dd>
 
-### -field <b>InfoCount</b>
+### -field InfoCount
 
 <dd>
 <p>Specifies the number of <a href="..\ntddstor\ns-ntddstor--storage-temperature-info.md">STORAGE_TEMPERATURE_INFO</a> structures reported in <b>TemperatureInfo</b>. More than one set of temperature data may be returned when there are multiple sensors in the drive.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>TemperatureInfo[ANYSIZE_ARRAY]</b>
+### -field TemperatureInfo[ANYSIZE_ARRAY]
 
 <dd>
 <p>Device temperature data, of type <a href="..\ntddstor\ns-ntddstor--storage-temperature-info.md">STORAGE_TEMPERATURE_INFO</a>.</p>

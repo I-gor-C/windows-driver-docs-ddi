@@ -56,19 +56,19 @@ NTSTATUS RtlULongLongSub(
 ## -parameters
 <dl>
 
-### -param <i>ullMinuend</i> [in]
+### -param ullMinuend [in]
 
 <dd>
 <p>The value from which <i>ullSubtrahend</i> is subtracted.</p>
 </dd>
 
-### -param <i>ullSubtrahend</i> [in]
+### -param ullSubtrahend [in]
 
 <dd>
 <p>The value to subtract from <i>ullMinuend</i>.</p>
 </dd>
 
-### -param <i>pullResult</i> [out]
+### -param pullResult [out]
 
 <dd>
 <p>A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

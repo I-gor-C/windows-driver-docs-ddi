@@ -59,31 +59,31 @@ typedef struct _SRBEX_DATA_BIDIRECTIONAL {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeBidirectional</b>.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Length of the data in this structure, in bytes, starting with the <b>DataInTransferLength</b> member. Set to SRBEX_DATA_BIDIRECTIONAL_LENGTH.</p>
 </dd>
 
-### -field <b>DataInTransferLength</b>
+### -field DataInTransferLength
 
 <dd>
 <p>Length of the data present  in the <b>DataInBuffer</b> member.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>This member is reserved. Set to 0.</p>
 </dd>
 
-### -field <b>DataInBuffer</b>
+### -field DataInBuffer
 
 <dd>
 <p>A pointer to the buffer that contains the data sent from the device.</p>
@@ -118,7 +118,7 @@ typedef struct _SRBEX_DATA_BIDIRECTIONAL {
 ## -see-also
 <dl>
 <dt>
-<a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

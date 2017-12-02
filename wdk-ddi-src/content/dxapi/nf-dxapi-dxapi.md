@@ -58,31 +58,31 @@ DWORD DxApi(
 ## -parameters
 <dl>
 
-### -param <i>dwFunctionNum</i> 
+### -param dwFunctionNum 
 
 <dd>
 <p>Indicates the behavior of the <b>DxApi</b> function (function identifier). See the Remarks section for the list of function identifiers.</p>
 </dd>
 
-### -param <i>lpvInBuffer</i> 
+### -param lpvInBuffer 
 
 <dd>
 <p>Points to the input buffer.</p>
 </dd>
 
-### -param <i>cbInBuffer</i> 
+### -param cbInBuffer 
 
 <dd>
 <p>Indicates the size in bytes of the input buffer.</p>
 </dd>
 
-### -param <i>lpvOutBuffer</i> 
+### -param lpvOutBuffer 
 
 <dd>
 <p>Points to the output buffer.</p>
 </dd>
 
-### -param <i>cbOutBuffer</i> 
+### -param cbOutBuffer 
 
 <dd>
 <p>Indicates the size in bytes of the output buffer.</p>

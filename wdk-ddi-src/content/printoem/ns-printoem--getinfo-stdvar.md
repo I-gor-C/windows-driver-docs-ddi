@@ -60,26 +60,26 @@ typedef struct _GETINFO_STDVAR {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes, of the GETINFO_STDVAR structure. Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
-### -field <b>dwNumOfVariable</b>
+### -field dwNumOfVariable
 
 <dd></dd>
 
-### -field <b>StdVar</b>
+### -field StdVar
 
 <dd>
 <p>Is an array specifying standard variable indexes and values. Each array element contains two members: a <b>dwStdVarID</b> member and an <b>lStdVariable</b> member.</p>
 <dl>
 
-### -field <b>dwStdVarID</b>
+### -field dwStdVarID
 
 <dd>
-<p>Specifies the <a href="NULL">standard variables</a> for which a value should be returned. Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller. Valid values are contained in the following table.</p>
+<p>Specifies the <a href="https://msdn.microsoft.com/d3f85c0f-7387-4301-8b1e-904471aed4b0">standard variables</a> for which a value should be returned. Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller. Valid values are contained in the following table.</p>
 <table>
 <tr>
 <th>Identifier</th>
@@ -202,7 +202,7 @@ typedef struct _GETINFO_STDVAR {
 <p>Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
-### -field <b>lStdVariable</b>
+### -field lStdVariable
 
 <dd>
 <p>Specifies the current value of the specified standard variable. Supplied by Unidrv's <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function.</p>
@@ -214,7 +214,7 @@ typedef struct _GETINFO_STDVAR {
 ## -remarks
 <p>To obtain the current value for one or more of Unidrv's standard variables, a rendering plug-in can supply the address of a GETINFO_STDVAR structure when calling Unidrv's <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function.</p>
 
-<p>For more information about <a href="NULL">standard variables</a>, see <a href="NULL">Microsoft Universal Printer Driver</a>.</p>
+<p>For more information about <a href="https://msdn.microsoft.com/d3f85c0f-7387-4301-8b1e-904471aed4b0">standard variables</a>, see <a href="https://msdn.microsoft.com/1f5d68a1-3552-44a9-a0c5-b3ec5fe22a22">Microsoft Universal Printer Driver</a>.</p>
 
 ## -requirements
 <table>

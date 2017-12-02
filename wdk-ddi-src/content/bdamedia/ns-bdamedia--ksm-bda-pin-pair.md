@@ -62,31 +62,31 @@ typedef struct _KSM_BDA_PIN_PAIR {
 ## -struct-fields
 <dl>
 
-### -field <b>Method</b>
+### -field Method
 
 <dd>
 <p>KSMETHOD structure that describes a method and request type of a method request.</p>
 </dd>
 
-### -field <b>InputPinId</b>
+### -field InputPinId
 
 <dd>
 <p>Member of the union in KSM_BDA_PIN_PAIR that contains the identifier (ID) of an input pin of the filter.</p>
 </dd>
 
-### -field <b>InputPinType</b>
+### -field InputPinType
 
 <dd>
 <p>Member of the union in KSM_BDA_PIN_PAIR that contains the value that specifies the input pin type.</p>
 </dd>
 
-### -field <b>OutputPinId</b>
+### -field OutputPinId
 
 <dd>
 <p>Member of the union in KSM_BDA_PIN_PAIR that contains the identifier (ID) of an output pin of the filter.</p>
 </dd>
 
-### -field <b>OutputPinType</b>
+### -field OutputPinType
 
 <dd>
 <p>Member of the union in KSM_BDA_PIN_PAIR that contains the value that specifies the output pin type.</p>

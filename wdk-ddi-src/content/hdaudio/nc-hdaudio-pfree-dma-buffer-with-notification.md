@@ -61,25 +61,25 @@ NTSTATUS FreeDmaBufferWithNotification(
 ## -parameters
 <dl>
 
-### -param <i>context</i> [in]
+### -param context [in]
 
 <dd>
 <p>Specifies the context value from the Context member of the <a href="..\hdaudio\ns-hdaudio--hdaudio-bus-interface-v2.md">HDAUDIO_BUS_INTERFACE_V2</a> structure.</p>
 </dd>
 
-### -param <i>handle</i> [in]
+### -param handle [in]
 
 <dd>
 <p>Handle that identifies the DMA engine. This handle value was obtained from a previous call to <a href="..\hdaudio\nc-hdaudio-pallocate-capture-dma-engine.md">AllocateCaptureDmaEngine</a> or <a href="..\hdaudio\nc-hdaudio-pallocate-render-dma-engine.md">AllocateRenderDmaEngine</a>.</p>
 </dd>
 
-### -param <i>bufferMdl</i> [in]
+### -param bufferMdl [in]
 
 <dd>
 <p>A pointer to the buffer MDL. This value was obtained from a previous call to AllocateDmaBufferWithNotification.</p>
 </dd>
 
-### -param <i>bufferSize</i> [in]
+### -param bufferSize [in]
 
 <dd>
 <p>The size of the buffer to be freed. This value was obtained from a previous call to AllocateDmaBufferWithNotification.</p>

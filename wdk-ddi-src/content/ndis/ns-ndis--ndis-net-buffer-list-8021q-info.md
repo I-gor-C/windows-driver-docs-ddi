@@ -7,7 +7,7 @@ old-location: netvista\ndis_net_buffer_list_8021q_info.htm
 old-project: netvista
 ms.assetid: 4314d3f9-2457-41f6-844c-197e5d05b0fe
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_NET_BUFFER_LIST_8021Q_INFO, NDIS_NET_BUFFER_LIST_8021Q_INFO, *PNDIS_NET_BUFFER_LIST_8021Q_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,7 @@ typedef struct _NDIS_NET_BUFFER_LIST_8021Q_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>TagHeader</b>
+### -field TagHeader
 
 <dd>
 <p>A member in the union that is contained in NDIS_NET_BUFFER_LIST_8021Q_INFO. 802.3 Ethernet
@@ -79,28 +79,28 @@ typedef struct _NDIS_NET_BUFFER_LIST_8021Q_INFO {
       <b>TagHeader</b> is a bit field with the following members:</p>
 <dl>
 
-### -field <b>UserPriority</b>
+### -field UserPriority
 
 <dd>
 <p>Specifies 802.1p priority information that is used to establish packet priority in shared-media
        802 networks. The bits in this member specify an 802.1p priority value.</p>
 </dd>
 
-### -field <b>CanonicalFormatId</b>
+### -field CanonicalFormatId
 
 <dd>
 <p>This member should be set to zero, which indicates that all MAC address information present in a
        packet is in canonical format (that is, simplest form).</p>
 </dd>
 
-### -field <b>VlanId</b>
+### -field VlanId
 
 <dd>
 <p>Identifies the VLAN that a packet belongs to. Outgoing packets are marked with the VLAN
        identifier.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
@@ -108,7 +108,7 @@ typedef struct _NDIS_NET_BUFFER_LIST_8021Q_INFO {
 </dl>
 </dd>
 
-### -field <b>WLanTagHeader</b>
+### -field WLanTagHeader
 
 <dd>
 <p>A member in the union that is contained in NDIS_NET_BUFFER_LIST_8021Q_INFO. Native 802.11
@@ -117,28 +117,28 @@ typedef struct _NDIS_NET_BUFFER_LIST_8021Q_INFO {
       <b>WLanTagHeader</b> is a bit field with the following members:</p>
 <dl>
 
-### -field <b>UserPriority</b>
+### -field UserPriority
 
 <dd>
 <p>Specifies 802.1p priority information that is used to establish packet priority in shared-media
        802 networks. The bits in this member specify an 802.1p priority value.</p>
 </dd>
 
-### -field <b>CanonicalFormatId</b>
+### -field CanonicalFormatId
 
 <dd>
 <p>This member should be set to zero, which indicates that all MAC address information present in a
        packet is in canonical format (that is, simplest form).</p>
 </dd>
 
-### -field <b>VlanId</b>
+### -field VlanId
 
 <dd>
 <p>Identifies the VLAN that a packet belongs to. Outgoing packets are marked with the VLAN
        identifier.</p>
 </dd>
 
-### -field <b>WMMInfo</b>
+### -field WMMInfo
 
 <dd>
 <p>A wireless multimedia (WMM) integer value that is the same as the traffic identifier (TID) fields
@@ -151,7 +151,7 @@ typedef struct _NDIS_NET_BUFFER_LIST_8021Q_INFO {
 <div> </div>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
@@ -159,7 +159,7 @@ typedef struct _NDIS_NET_BUFFER_LIST_8021Q_INFO {
 </dl>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that is contained in NDIS_NET_BUFFER_LIST_8021Q_INFO. 
@@ -238,4 +238,4 @@ typedef struct _NDIS_NET_BUFFER_LIST_8021Q_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NET_BUFFER_LIST_8021Q_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NET_BUFFER_LIST_8021Q_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

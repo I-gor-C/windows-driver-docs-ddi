@@ -79,7 +79,7 @@ typedef struct _BRB {
 ## -struct-fields
 <dl>
 
-### -field <b>BrbHeader</b>
+### -field BrbHeader
 
 <dd>
 <p>Describes basic information about the request being sent to the Bluetooth device. For more
@@ -87,7 +87,7 @@ typedef struct _BRB {
       <a href="..\bthddi\ns-bthddi--brb-header.md">BRB_HEADER</a>.</p>
 </dd>
 
-### -field <b>BrbGetDeviceInterfaceString</b>
+### -field BrbGetDeviceInterfaceString
 
 <dd>
 <p>Defines the format for a command to get the interface string of the current Bluetooth device
@@ -96,7 +96,7 @@ typedef struct _BRB {
       _BRB_GET_DEVICE_INTERFACE_STRING</a>.</p>
 </dd>
 
-### -field <b>BrbL2caRegisterServer</b>
+### -field BrbL2caRegisterServer
 
 <dd>
 <p>Defines the format for a command to register a L2CAP server. For more information about
@@ -105,7 +105,7 @@ typedef struct _BRB {
       _BRB_L2CA_REGISTER_SERVER</a>.</p>
 </dd>
 
-### -field <b>BrbL2caUnregisterServer</b>
+### -field BrbL2caUnregisterServer
 
 <dd>
 <p>Defines the format for a command to unregister a previously registered L2CAP server. For more
@@ -114,7 +114,7 @@ typedef struct _BRB {
       _BRB_L2CA_UNREGISTER_SERVER</a>.</p>
 </dd>
 
-### -field <b>BrbL2caOpenChannel</b>
+### -field BrbL2caOpenChannel
 
 <dd>
 <p>Defines the format of the L2CAP open channel and the L2CAP open channel response commands sent to
@@ -122,7 +122,7 @@ typedef struct _BRB {
       <a href="bltooth._brb_l2ca_open_channel">_BRB_L2CA_OPEN_CHANNEL</a>.</p>
 </dd>
 
-### -field <b>BrbL2caCloseChannel</b>
+### -field BrbL2caCloseChannel
 
 <dd>
 <p>Defines the format of a L2CAP close channel command sent to the Bluetooth device. For more
@@ -130,7 +130,7 @@ typedef struct _BRB {
       <a href="bltooth._brb_l2ca_close_channel">_BRB_L2CA_CLOSE_CHANNEL</a>.</p>
 </dd>
 
-### -field <b>BrbL2caPing</b>
+### -field BrbL2caPing
 
 <dd>
 <p>Defines the format of a command that sends a L2CAP_EchoReq message to and receives a
@@ -139,7 +139,7 @@ typedef struct _BRB {
       <a href="bltooth._brb_l2ca_ping">_BRB_L2CA_PING</a>.</p>
 </dd>
 
-### -field <b>BrbL2caAclTransfer</b>
+### -field BrbL2caAclTransfer
 
 <dd>
 <p>Defines the format of a command that performs read and write operations over a L2CAP connection
@@ -147,7 +147,7 @@ typedef struct _BRB {
       <a href="bltooth._brb_l2ca_acl_transfer">_BRB_L2CA_ACL_TRANSFER</a>.</p>
 </dd>
 
-### -field <b>BrbGetLocalBdAddress</b>
+### -field BrbGetLocalBdAddress
 
 <dd>
 <p>Defines the format of a command that returns the address of the local Bluetooth radio. For more
@@ -155,7 +155,7 @@ typedef struct _BRB {
       <a href="bltooth._brb_get_local_bd_addr">_BRB_GET_LOCAL_BD_ADDR</a>.</p>
 </dd>
 
-### -field <b>BrbPsm</b>
+### -field BrbPsm
 
 <dd>
 <p>Defines the format for the commands that register and unregister a Protocol/Service Multiplexer
@@ -163,7 +163,7 @@ typedef struct _BRB {
       <a href="bltooth._brb_psm">_BRB_PSM</a>.</p>
 </dd>
 
-### -field <b>BrbL2caUpdateChannel</b>
+### -field BrbL2caUpdateChannel
 
 <dd>
 <p>Defines the format of a command that updates the settings of a L2CAP channel to a Bluetooth
@@ -171,7 +171,7 @@ typedef struct _BRB {
       <a href="bltooth._brb_l2ca_update_channel">_BRB_L2CA_UPDATE_CHANNEL</a>.</p>
 </dd>
 
-### -field <b>BrbScoRegisterServer</b>
+### -field BrbScoRegisterServer
 
 <dd>
 <p>Defines the format for a command to register a SCO server. For more information about registering
@@ -179,7 +179,7 @@ typedef struct _BRB {
       <a href="bltooth._brb_sco_register_server">_BRB_SCO_REGISTER_SERVER</a>.</p>
 </dd>
 
-### -field <b>BrbScoUnregisterServer</b>
+### -field BrbScoUnregisterServer
 
 <dd>
 <p>Defines the format for a command to unregister a previously registered SCO server. For more
@@ -188,7 +188,7 @@ typedef struct _BRB {
       _BRB_SCO_UNREGISTER_SERVER</a>.</p>
 </dd>
 
-### -field <b>BrbScoOpenChannel</b>
+### -field BrbScoOpenChannel
 
 <dd>
 <p>Defines the format of SCO open channel and the SCO open channel response commands sent to the
@@ -196,7 +196,7 @@ typedef struct _BRB {
       <a href="bltooth._brb_sco_open_channel">_BRB_SCO_OPEN_CHANNEL</a>.</p>
 </dd>
 
-### -field <b>BrbScoCloseChannel</b>
+### -field BrbScoCloseChannel
 
 <dd>
 <p>Defines the format of a SCO close channel command sent to the Bluetooth device. For more
@@ -204,7 +204,7 @@ typedef struct _BRB {
       <a href="bltooth._brb_sco_close_channel">_BRB_SCO_CLOSE_CHANNEL</a>.</p>
 </dd>
 
-### -field <b>BrbScoFlushChannel</b>
+### -field BrbScoFlushChannel
 
 <dd>
 <p>Defines the format of a SCO flush channel command. For more information about flushing a SCO
@@ -212,7 +212,7 @@ typedef struct _BRB {
       <a href="bltooth._brb_sco_flush_channel">_BRB_SCO_FLUSH_CHANNEL</a>.</p>
 </dd>
 
-### -field <b>BrbScoTransfer</b>
+### -field BrbScoTransfer
 
 <dd>
 <p>Defines the format of a command that reads isochronous data from or writes data to a SCO channel
@@ -220,7 +220,7 @@ typedef struct _BRB {
       <a href="bltooth._brb_sco_transfer">_BRB_SCO_TRANSFER</a>.</p>
 </dd>
 
-### -field <b>BrbScoGetChannelInfo</b>
+### -field BrbScoGetChannelInfo
 
 <dd>
 <p>Defines the format of a command that reads the settings of a SCO channel to a Bluetooth device.
@@ -229,7 +229,7 @@ typedef struct _BRB {
       _BRB_SCO_GET_CHANNEL_INFO</a>.</p>
 </dd>
 
-### -field <b>BrbScoGetSystemInfo</b>
+### -field BrbScoGetSystemInfo
 
 <dd>
 <p>Defines the format of a command that reads the SCO settings of the local system. For more
@@ -237,7 +237,7 @@ typedef struct _BRB {
       <a href="bltooth._brb_sco_get_system_info">_BRB_SCO_GET_SYSTEM_INFO</a>.</p>
 </dd>
 
-### -field <b>BrbAclGetMode</b>
+### -field BrbAclGetMode
 
 <dd>
 <p>Defines the format of a command to get the current ACL mode. For more information about getting
@@ -245,7 +245,7 @@ typedef struct _BRB {
       <a href="bltooth._brb_acl_get_mode">_BRB_ACL_GET_MODE</a>.</p>
 </dd>
 
-### -field <b>BrbAclEnterActiveMode</b>
+### -field BrbAclEnterActiveMode
 
 <dd>
 <p>Defines the format of a command to enter active ACL mode. For more information about entering
@@ -254,7 +254,7 @@ typedef struct _BRB {
       _BRB_ACL_ENTER_ACTIVE_MODE</a>.</p>
 </dd>
 
-### -field <b>BrbL2caOpenEnhancedChannel</b>
+### -field BrbL2caOpenEnhancedChannel
 
 <dd>
 <p>Defines the format of the enhanced L2CAP open channel and the enhanced L2CAP open channel response commands sent to

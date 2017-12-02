@@ -7,7 +7,7 @@ old-location: netvista\rilpersodeactivationstateparammask_2.htm
 old-project: netvista
 ms.assetid: e7c74c78-80e8-485b-bee6-18175e73ab9a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILPERSODEACTIVATIONSTATEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_PDS_CK_ATTEMPTS"></a><a id="ril_param_pds_ck_attempts"></a><b>RIL_PARAM_PDS_CK_ATTEMPTS</b>
+### -field RIL_PARAM_PDS_CK_ATTEMPTS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PDS_PUK_ATTEMPTS"></a><a id="ril_param_pds_puk_attempts"></a><b>RIL_PARAM_PDS_PUK_ATTEMPTS</b>
+### -field RIL_PARAM_PDS_PUK_ATTEMPTS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PDS_ALL"></a><a id="ril_param_pds_all"></a><b>RIL_PARAM_PDS_ALL</b>
+### -field RIL_PARAM_PDS_ALL
 
 <dd></dd>
 </dl>

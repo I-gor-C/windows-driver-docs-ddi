@@ -7,7 +7,7 @@ old-location: netvista\evt_vmb_channel_process_packet.htm
 old-project: netvista
 ms.assetid: 46020122-0B0E-4C05-8B13-68100B227E93
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VideoPortGetAgpServices
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,33 +66,33 @@ typedef EVT_VMB_CHANNEL_PROCESS_PACKET PFN_VMB_CHANNEL_PROCESS_PACKET;
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>The channel on which the packet arrives.</p>
 </dd>
 
-### -param <i>Packet</i> [in]
+### -param Packet [in]
 
 <dd>
 <p>The completion context, which identifies this packet to Kernel Mode Client Library (KMCL) when the transaction can be retired.
 </p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>The packet which was sent by the opposite endpoint.  This value does not contain the VMBus and KMCL headers.
 </p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>The length of the <i>Buffer</i> parameter, in bytes.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Flags. Possible values include the following: </p>
@@ -104,7 +104,7 @@ typedef EVT_VMB_CHANNEL_PROCESS_PACKET PFN_VMB_CHANNEL_PROCESS_PACKET;
 <tr>
 <td width="40%"><a id="VMBUS_CHANNEL_PROCESS_PACKET_FLAGS"></a><a id="vmbus_channel_process_packet_flags"></a><dl>
 
-### -param <b>VMBUS_CHANNEL_PROCESS_PACKET_FLAGS</b>
+### -param VMBUS_CHANNEL_PROCESS_PACKET_FLAGS
 
 
 ### -param 0x1
@@ -170,4 +170,4 @@ has been configured to defer packet processing to a worker thread.</p>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20EVT_VMB_CHANNEL_PROCESS_PACKET callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20EVT_VMB_CHANNEL_PROCESS_PACKET callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -56,13 +56,13 @@ VOID RtlTimeToTimeFields(
 ## -parameters
 <dl>
 
-### -param <i>Time</i> [in]
+### -param Time [in]
 
 <dd>
 <p>Pointer to a buffer containing the absolute system time as a large integer, accurate to 100-nanosecond resolution.</p>
 </dd>
 
-### -param <i>TimeFields</i> [out]
+### -param TimeFields [out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer, which must be at least <b>sizeof</b>(<b>TIME_FIELDS</b>), to contain the returned information. </p>

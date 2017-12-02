@@ -56,19 +56,19 @@ typedef struct _DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Enable</b>
+### -field Enable
 
 <dd>
 <p>[in] A Boolean value that specifies whether the luma key is enabled. The default value is <b>FALSE</b>, which indicates that the luma key is disabled. </p>
 </dd>
 
-### -field <b>Lower</b>
+### -field Lower
 
 <dd>
 <p>[in] A FLOAT value in the 0.0 to 1.0 range that describes the lower luma-key value. The default value is 0.0. </p>
 </dd>
 
-### -field <b>Upper</b>
+### -field Upper
 
 <dd>
 <p>[in] A FLOAT value in the 0.0 to 1.0 range that describes the upper luma-key value. The default value is 0.0. </p>

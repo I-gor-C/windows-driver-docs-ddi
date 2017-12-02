@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_SETVERTEXSHADERCONST {
 ## -struct-fields
 <dl>
 
-### -field <b>Register</b>
+### -field Register
 
 <dd>
 <p>[in] The index of the first vertex shader constant register whose value is set.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>[in] The number of constant registers to set and, therefore, the number of values in the array that is passed in the <i>pRegisters</i> parameter in the call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setvertexshaderconst.md">SetVertexShaderConst</a>, <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setvertexshaderconst.md">SetVertexShaderConstI</a>, or <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setvertexshaderconstb.md">SetVertexShaderConstB</a> function.</p>

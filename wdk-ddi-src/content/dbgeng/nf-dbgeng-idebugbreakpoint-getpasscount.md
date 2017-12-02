@@ -7,7 +7,7 @@ old-location: debugger\getpasscount.htm
 old-project: debugger
 ms.assetid: d7abe2aa-a33c-4184-a850-d0efa1e99221
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugBreakpoint, GetPassCount, IDebugBreakpoint::GetPassCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ HRESULT GetPassCount(
 ## -parameters
 <dl>
 
-### -param <i>Count</i> [out]
+### -param Count [out]
 
 <dd>
 <p>The number of times that the target was originally required to hit the breakpoint before it is triggered.  The number of times that the target was originally required to pass the breakpoint without triggering it is the value that is returned to <i>Count</i>, minus one.</p>
@@ -68,7 +68,7 @@ HRESULT GetPassCount(
 
 <p> </p>
 
-<p>This method can also return error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
+<p>This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.</p>
 
 ## -remarks
 <p>The <b>GetPassCount</b> method returns the number of hits that were originally required to trigger the breakpoint. The <a href="debugger.getcurrentpasscount">GetCurrentPassCount</a> method returns the number of hits that still must occur to trigger the breakpoint. For example, if a breakpoint was created with a pass count of 20, and there have been 5 passes so far, this method <b>GetPassCount</b> returns 20 and <b>GetCurrentPassCount</b> returns 15.</p>

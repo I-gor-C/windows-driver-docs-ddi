@@ -62,55 +62,55 @@ typedef struct _MSFC_TM {
 ## -struct-fields
 <dl>
 
-### -field <b>tm_sec</b>
+### -field tm_sec
 
 <dd>
 <p>Indicates the number of seconds past the minute. This member must have a value between 0 and 59. </p>
 </dd>
 
-### -field <b>tm_min</b>
+### -field tm_min
 
 <dd>
 <p>Indicates the number of minutes after the hour. This member must have a value between 0 and 59.</p>
 </dd>
 
-### -field <b>tm_hour</b>
+### -field tm_hour
 
 <dd>
 <p>Indicates the number of hours since midnight. This member must have a value between 0 and 23.</p>
 </dd>
 
-### -field <b>tm_mday</b>
+### -field tm_mday
 
 <dd>
 <p>Indicates the day of the month. This member must have a value between 1 and 31.</p>
 </dd>
 
-### -field <b>tm_mon</b>
+### -field tm_mon
 
 <dd>
 <p>Indicates the number of months since January. This member must have a value between 0 and 11.</p>
 </dd>
 
-### -field <b>tm_year</b>
+### -field tm_year
 
 <dd>
 <p>Indicates the number of years since 1900. </p>
 </dd>
 
-### -field <b>tm_wday</b>
+### -field tm_wday
 
 <dd>
 <p>Indicates the number of days since Sunday. This member must have a value between 0 and 6.</p>
 </dd>
 
-### -field <b>tm_yday</b>
+### -field tm_yday
 
 <dd>
 <p>Indicates the number of days since January 1. This member must have a value between 0 and 365.</p>
 </dd>
 
-### -field <b>tm_isdst</b>
+### -field tm_isdst
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the time stamp complies with daylight savings time. When <b>FALSE</b>, indicates that the timestamp does not comply with daylight savings time. </p>

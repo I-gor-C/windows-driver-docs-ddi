@@ -56,13 +56,13 @@ typedef struct _TRANSACTIONMANAGER_BASIC_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>TmIdentity</b>
+### -field TmIdentity
 
 <dd>
 <p>A GUID that KTM has assigned to a transaction manager object.</p>
 </dd>
 
-### -field <b>VirtualClock</b>
+### -field VirtualClock
 
 <dd>
 <p>The <a href="https://msdn.microsoft.com/de01b0f1-86b1-4e7d-af22-84dbbe3a3f83">virtual clock value</a> that is currently associated with a transaction manager object.</p>

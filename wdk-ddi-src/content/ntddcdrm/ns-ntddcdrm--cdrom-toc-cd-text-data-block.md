@@ -65,14 +65,14 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>PackType</b>
+### -field PackType
 
 <dd>
 <p>Indicates the type of pack data, as follows:</p>
 <p></p>
 <dl>
 
-### -field <a id="CDROM_CD_TEXT_PACK_ALBUM_NAME_"></a><a id="cdrom_cd_text_pack_album_name_"></a>CDROM_CD_TEXT_PACK_ALBUM_NAME 
+### -field CDROM_CD_TEXT_PACK_ALBUM_NAME 
 
 <dd>
 <p>Title of album or track. </p>
@@ -81,7 +81,7 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_CD_TEXT_PACK_PERFORMER_"></a><a id="cdrom_cd_text_pack_performer_"></a>CDROM_CD_TEXT_PACK_PERFORMER 
+### -field CDROM_CD_TEXT_PACK_PERFORMER 
 
 <dd>
 <p>Names of the performers (in ASCII). </p>
@@ -90,7 +90,7 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_CD_TEXT_PACK_SONGWRITER_"></a><a id="cdrom_cd_text_pack_songwriter_"></a>CDROM_CD_TEXT_PACK_SONGWRITER 
+### -field CDROM_CD_TEXT_PACK_SONGWRITER 
 
 <dd>
 <p>Names of the songwriters (in ASCII). </p>
@@ -99,7 +99,7 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_CD_TEXT_PACK_COMPOSER_"></a><a id="cdrom_cd_text_pack_composer_"></a>CDROM_CD_TEXT_PACK_COMPOSER 
+### -field CDROM_CD_TEXT_PACK_COMPOSER 
 
 <dd>
 <p>Names of the composers (in ASCII). </p>
@@ -108,7 +108,7 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_CD_TEXT_PACK_ARRANGER_"></a><a id="cdrom_cd_text_pack_arranger_"></a>CDROM_CD_TEXT_PACK_ARRANGER 
+### -field CDROM_CD_TEXT_PACK_ARRANGER 
 
 <dd>
 <p>Names of the arrangers (in ASCII). </p>
@@ -117,7 +117,7 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_CD_TEXT_PACK_MESSAGES_"></a><a id="cdrom_cd_text_pack_messages_"></a>CDROM_CD_TEXT_PACK_MESSAGES 
+### -field CDROM_CD_TEXT_PACK_MESSAGES 
 
 <dd>
 <p>Messages from content provider and/or artist (in ASCII). </p>
@@ -126,7 +126,7 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_CD_TEXT_PACK_DISC_ID"></a><a id="cdrom_cd_text_pack_disc_id"></a>CDROM_CD_TEXT_PACK_DISC_ID
+### -field CDROM_CD_TEXT_PACK_DISC_ID
 
 <dd>
 <p>Disc identification information. </p>
@@ -135,7 +135,7 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_CD_TEXT_PACK_GENRE_"></a><a id="cdrom_cd_text_pack_genre_"></a>CDROM_CD_TEXT_PACK_GENRE 
+### -field CDROM_CD_TEXT_PACK_GENRE 
 
 <dd>
 <p>Genre identification and information. </p>
@@ -144,7 +144,7 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_CD_TEXT_PACK_TOC_INFO_"></a><a id="cdrom_cd_text_pack_toc_info_"></a>CDROM_CD_TEXT_PACK_TOC_INFO 
+### -field CDROM_CD_TEXT_PACK_TOC_INFO 
 
 <dd>
 <p>Table of contents information. </p>
@@ -153,7 +153,7 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_CD_TEXT_PACK_TOC_INFO2_"></a><a id="cdrom_cd_text_pack_toc_info2_"></a>CDROM_CD_TEXT_PACK_TOC_INFO2 
+### -field CDROM_CD_TEXT_PACK_TOC_INFO2 
 
 <dd>
 <p>Second table of contents information. </p>
@@ -162,7 +162,7 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_CD_TEXT_PACK_UPC_EAN_"></a><a id="cdrom_cd_text_pack_upc_ean_"></a>CDROM_CD_TEXT_PACK_UPC_EAN 
+### -field CDROM_CD_TEXT_PACK_UPC_EAN 
 
 <dd>
 <p>UPC/EAN code of the album and ISRC code of each track. </p>
@@ -171,7 +171,7 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="CDROM_CD_TEXT_PACK_SIZE_INFO_"></a><a id="cdrom_cd_text_pack_size_info_"></a>CDROM_CD_TEXT_PACK_SIZE_INFO 
+### -field CDROM_CD_TEXT_PACK_SIZE_INFO 
 
 <dd>
 <p>Size information for the block. </p>
@@ -179,55 +179,55 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 </dl>
 </dd>
 
-### -field <b>TrackNumber</b>
+### -field TrackNumber
 
 <dd>
 <p>See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member. </p>
 </dd>
 
-### -field <b>ExtensionFlag</b>
+### -field ExtensionFlag
 
 <dd>
 <p>Must be set to zero. </p>
 </dd>
 
-### -field <b>SequenceNumber</b>
+### -field SequenceNumber
 
 <dd>
 <p>See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member. </p>
 </dd>
 
-### -field <b>CharacterPosition</b>
+### -field CharacterPosition
 
 <dd>
 <p>See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member. </p>
 </dd>
 
-### -field <b>BlockNumber</b>
+### -field BlockNumber
 
 <dd>
 <p>See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member.  </p>
 </dd>
 
-### -field <b>Unicode</b>
+### -field Unicode
 
 <dd>
 <p>Indicates, when set to 1, that the text is stored in Unicode format. </p>
 </dd>
 
-### -field <b>Text</b>
+### -field Text
 
 <dd>
 <p>Contains text descriptor data in the form of 8-bit ASCII characters.</p>
 </dd>
 
-### -field <b>WText</b>
+### -field WText
 
 <dd>
 <p>Contains text descriptor data in the form of 16-bit (wide) characters.</p>
 </dd>
 
-### -field <b>CRC</b>
+### -field CRC
 
 <dd>
 <p>Contains the cyclic redundancy check.</p>

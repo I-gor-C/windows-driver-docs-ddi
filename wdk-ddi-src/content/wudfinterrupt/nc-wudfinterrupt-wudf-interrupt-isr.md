@@ -7,7 +7,7 @@ old-location: wdf\oninterruptisr.htm
 old-project: wdf
 ms.assetid: D4B8182A-67A5-4D64-A95C-5EB6A1C1E4F0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,19 +61,19 @@ BOOLEAN OnInterruptIsr(
 ## -parameters
 <dl>
 
-### -param <i>pInterrupt</i> [in]
+### -param pInterrupt [in]
 
 <dd>
 <p>A pointer to <a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a> interface.</p>
 </dd>
 
-### -param <i>MessageID</i> [in]
+### -param MessageID [in]
 
 <dd>
 <p>If the device is using message-signaled interrupts (MSIs), this parameter is the message number that identifies the device's hardware interrupt message. Otherwise, this value is 0.</p>
 </dd>
 
-### -param <i>Reserved</i> [in]
+### -param Reserved [in]
 
 <dd>
 <p>Reserved for system use.</p>
@@ -158,4 +158,4 @@ For more information about handling interrupts in UMDF drivers, see <a href="wdf
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_INTERRUPT_ISR callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_INTERRUPT_ISR callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -61,25 +61,25 @@ NTSTATUS ZwGetNotificationResourceManager(
 ## -parameters
 <dl>
 
-### -param <i>ResourceManagerHandle</i> [in]
+### -param ResourceManagerHandle [in]
 
 <dd>
 <p>A handle to a <a href="https://msdn.microsoft.com/b44f2035-ee9f-453b-b12d-89ca36a8b280">resource manager object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a> or <a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a>. The handle must have RESOURCEMANAGER_GET_NOTIFICATION access to the object.</p>
 </dd>
 
-### -param <i>TransactionNotification</i> [out]
+### -param TransactionNotification [out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives information about the retrieved notification. The buffer must be large enough to contain a <a href="kernel.transaction_notification">TRANSACTION_NOTIFICATION</a> structure plus additional notification-specific arguments.</p>
 </dd>
 
-### -param <i>NotificationLength</i> [in]
+### -param NotificationLength [in]
 
 <dd>
 <p>The length, in bytes, of the buffer that the <i>TransactionNotification </i>parameter points to. </p>
 </dd>
 
-### -param <i>Timeout</i> [in]
+### -param Timeout [in]
 
 <dd>
 <p>A pointer to a value that specifies a relative or absolute time, in units of 100 nanoseconds. This pointer is optional and can be <b>NULL</b>.</p>
@@ -89,19 +89,19 @@ NTSTATUS ZwGetNotificationResourceManager(
 <p>If the caller specifies a zero value (instead of a <b>NULL</b> pointer), <b>ZwGetNotificationResourceManager</b> returns immediately, whether a notification is available or not.</p>
 </dd>
 
-### -param <i>ReturnLength</i> [out, optional]
+### -param ReturnLength [out, optional]
 
 <dd>
 <p>An optional pointer to a variable. If this pointer is not <b>NULL</b>, and if the <i>NotificationLength</i> parameter's value is too small, <b>ZwGetNotificationResourceManager</b> supplies the required length in the variable and returns STATUS_BUFFER_TOO_SMALL.</p>
 </dd>
 
-### -param <i>Asynchronous</i> [in]
+### -param Asynchronous [in]
 
 <dd>
 <p>A ULONG value that must be zero. <b>ZwGetNotificationResourceManager</b> does not support asynchronous notifications. Use <a href="..\wdm\nf-wdm-tmenablecallbacks.md">TmEnableCallbacks</a> to enable asynchronous notifications. </p>
 </dd>
 
-### -param <i>AsynchronousContext</i> [in, optional]
+### -param AsynchronousContext [in, optional]
 
 <dd>
 <p>A pointer to a ULONG value. This pointer must be <b>NULL</b>.</p>

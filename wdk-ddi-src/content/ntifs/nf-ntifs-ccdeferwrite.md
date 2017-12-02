@@ -7,7 +7,7 @@ old-location: ifsk\ccdeferwrite.htm
 old-project: ifsk
 ms.assetid: a655bcde-c627-4c90-8579-348ab0174c27
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: CcDeferWrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ VOID CcDeferWrite(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to a file object for the cached file to which the data is to be written.</p>
 </dd>
 
-### -param <i>PostRoutine</i> [in]
+### -param PostRoutine [in]
 
 <dd>
 <p>Address of a routine for the cache manager to call to write to the cached file. Note that it is possible that this routine will be called immediately, even if <a href="..\ntifs\nf-ntifs-cccaniwrite.md">CcCanIWrite</a> has just returned <b>FALSE</b> .</p>
@@ -86,25 +86,25 @@ VOID (*PCC_POST_DEFERRED_WRITE) (
 </table></span></div>
 </dd>
 
-### -param <i>Context1</i> [in]
+### -param Context1 [in]
 
 <dd>
 <p>First parameter for the post routine at <i>PostRoutine</i>.</p>
 </dd>
 
-### -param <i>Context2</i> [in]
+### -param Context2 [in]
 
 <dd>
 <p>Second parameter for the post routine at <i>PostRoutine</i>.</p>
 </dd>
 
-### -param <i>BytesToWrite</i> [in]
+### -param BytesToWrite [in]
 
 <dd>
 <p>Number of bytes of data to be written.</p>
 </dd>
 
-### -param <i>Retrying</i> [in]
+### -param Retrying [in]
 
 <dd>
 <p>Set to <b>FALSE</b> if the request is being posted for the first time, <b>TRUE</b> otherwise.</p>
@@ -179,4 +179,4 @@ VOID (*PCC_POST_DEFERRED_WRITE) (
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcDeferWrite routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcDeferWrite routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

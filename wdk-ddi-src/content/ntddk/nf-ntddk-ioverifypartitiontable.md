@@ -56,13 +56,13 @@ NTSTATUS IoVerifyPartitionTable(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Specifies the device object of the disk to verify.</p>
 </dd>
 
-### -param <i>FixErrors</i> [in]
+### -param FixErrors [in]
 
 <dd>
 <p>Specifies if the routine should correct any correctable errors in the partition table.</p>

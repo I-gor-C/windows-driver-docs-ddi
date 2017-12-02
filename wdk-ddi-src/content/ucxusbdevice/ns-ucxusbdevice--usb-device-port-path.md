@@ -58,25 +58,25 @@ typedef struct _USB_DEVICE_PORT_PATH {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size in bytes of this structure.</p>
 </dd>
 
-### -field <b>PortPathDepth</b>
+### -field PortPathDepth
 
 <dd>
 <p>The depth of path in the USB topology tree, consisting of host controller, hubs, and devices.</p>
 </dd>
 
-### -field <b>TTHubDepth</b>
+### -field TTHubDepth
 
 <dd>
 <p>The depth of path in the USB topology tree from a TT hub. </p>
 </dd>
 
-### -field <b>PortPath</b>
+### -field PortPath
 
 <dd>
 <p>The index of connected USB port on the hub.</p>
@@ -103,7 +103,7 @@ typedef struct _USB_DEVICE_PORT_PATH {
 ## -see-also
 <dl>
 <dt>
-<a href="buses._ucxusbdevice_info">UCXUSBDEVICE_INFO</a>
+<a href="..\ucxcontroller\ns-ucxcontroller--ucxusbdevice-info.md">UCXUSBDEVICE_INFO</a>
 </dt>
 </dl>
 <p> </p>

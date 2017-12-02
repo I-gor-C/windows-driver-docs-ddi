@@ -55,7 +55,7 @@ BOOL GdiStartPageEMF(
 ## -parameters
 <dl>
 
-### -param <i>SpoolFileHandle</i> 
+### -param SpoolFileHandle 
 
 <dd>
 <p>Caller-supplied spool file handle, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>.</p>
@@ -70,7 +70,7 @@ BOOL GdiStartPageEMF(
 
 <p>A print processor must call the <b>GdiStartPageEMF</b> function each time a new physical page is to be created. It can then call <a href="..\winppi\nf-winppi-gdiplaypageemf.md">GdiPlayPageEMF</a> for each document page that is to be placed on the physical page.</p>
 
-<p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.</p>
 
 ## -requirements
 <table>

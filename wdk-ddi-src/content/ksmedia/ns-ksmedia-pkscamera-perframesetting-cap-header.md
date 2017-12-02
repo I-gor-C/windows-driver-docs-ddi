@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of the entire capability payload, including this header, all the item headers, and the item payloads that follow.</p>
 </dd>
 
-### -field <b>ItemCount</b>
+### -field ItemCount
 
 <dd>
 <p>The number of capability items.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Not used.</p>

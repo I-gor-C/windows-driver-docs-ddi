@@ -44,7 +44,7 @@ req.product: Windows 10 or later.
                         Initializes the <b>UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</b> structure.
                 
             
-        Call this function before calling <a href="buses.ucmtcpciportcontrolleralert">UcmTcpciPortControllerAlert</a>.</p>
+        Call this function before calling <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrolleralert.md">UcmTcpciPortControllerAlert</a>.</p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ VOID UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT(
 ## -parameters
 <dl>
 
-### -param <i>AlertData</i> [out]
+### -param AlertData [out]
 
 <dd>
 <p>A pointer to the driver-allocated <b>UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</b> structure.</p>

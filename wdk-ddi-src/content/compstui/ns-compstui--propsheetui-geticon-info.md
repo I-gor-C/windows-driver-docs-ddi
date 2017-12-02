@@ -58,31 +58,31 @@ typedef struct _PROPSHEETUI_GETICON_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>CPSUI-supplied size, in bytes, of the PROPSHEETUI_GETICON_INFO structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>cxIcon</b>
+### -field cxIcon
 
 <dd>
 <p>CPSUI-supplied icon width, in pixels.</p>
 </dd>
 
-### -field <b>cyIcon</b>
+### -field cyIcon
 
 <dd>
 <p>CPSUI-supplied icon height, in pixels.</p>
 </dd>
 
-### -field <b>hIcon</b>
+### -field hIcon
 
 <dd>
 <p>Receives an application-supplied icon handle. If the icon is not loaded, the member must be set to zero.</p>

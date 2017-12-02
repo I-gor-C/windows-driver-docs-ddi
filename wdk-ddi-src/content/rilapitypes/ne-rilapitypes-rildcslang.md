@@ -7,7 +7,7 @@ old-location: netvista\rildcslang_2.htm
 old-project: netvista
 ms.assetid: b6d50c5d-edc5-4037-9223-679fd19f195f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,91 +76,91 @@ typedef enum _RILDCSLANG {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DCSLANG_UNKNOWN"></a><a id="ril_dcslang_unknown"></a><b>RIL_DCSLANG_UNKNOWN</b>
+### -field RIL_DCSLANG_UNKNOWN
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_GERMAN"></a><a id="ril_dcslang_german"></a><b>RIL_DCSLANG_GERMAN</b>
+### -field RIL_DCSLANG_GERMAN
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_ENGLISH"></a><a id="ril_dcslang_english"></a><b>RIL_DCSLANG_ENGLISH</b>
+### -field RIL_DCSLANG_ENGLISH
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_ITALIAN"></a><a id="ril_dcslang_italian"></a><b>RIL_DCSLANG_ITALIAN</b>
+### -field RIL_DCSLANG_ITALIAN
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_FRENCH"></a><a id="ril_dcslang_french"></a><b>RIL_DCSLANG_FRENCH</b>
+### -field RIL_DCSLANG_FRENCH
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_SPANISH"></a><a id="ril_dcslang_spanish"></a><b>RIL_DCSLANG_SPANISH</b>
+### -field RIL_DCSLANG_SPANISH
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_DUTCH"></a><a id="ril_dcslang_dutch"></a><b>RIL_DCSLANG_DUTCH</b>
+### -field RIL_DCSLANG_DUTCH
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_SWEDISH"></a><a id="ril_dcslang_swedish"></a><b>RIL_DCSLANG_SWEDISH</b>
+### -field RIL_DCSLANG_SWEDISH
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_DANISH"></a><a id="ril_dcslang_danish"></a><b>RIL_DCSLANG_DANISH</b>
+### -field RIL_DCSLANG_DANISH
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_PORTUGUESE"></a><a id="ril_dcslang_portuguese"></a><b>RIL_DCSLANG_PORTUGUESE</b>
+### -field RIL_DCSLANG_PORTUGUESE
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_FINNISH"></a><a id="ril_dcslang_finnish"></a><b>RIL_DCSLANG_FINNISH</b>
+### -field RIL_DCSLANG_FINNISH
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_NORWEGIAN"></a><a id="ril_dcslang_norwegian"></a><b>RIL_DCSLANG_NORWEGIAN</b>
+### -field RIL_DCSLANG_NORWEGIAN
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_GREEK"></a><a id="ril_dcslang_greek"></a><b>RIL_DCSLANG_GREEK</b>
+### -field RIL_DCSLANG_GREEK
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_TURKISH"></a><a id="ril_dcslang_turkish"></a><b>RIL_DCSLANG_TURKISH</b>
+### -field RIL_DCSLANG_TURKISH
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_HUNGARIAN"></a><a id="ril_dcslang_hungarian"></a><b>RIL_DCSLANG_HUNGARIAN</b>
+### -field RIL_DCSLANG_HUNGARIAN
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_POLISH"></a><a id="ril_dcslang_polish"></a><b>RIL_DCSLANG_POLISH</b>
+### -field RIL_DCSLANG_POLISH
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_CZECH"></a><a id="ril_dcslang_czech"></a><b>RIL_DCSLANG_CZECH</b>
+### -field RIL_DCSLANG_CZECH
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_HEBREW"></a><a id="ril_dcslang_hebrew"></a><b>RIL_DCSLANG_HEBREW</b>
+### -field RIL_DCSLANG_HEBREW
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_ARABIC"></a><a id="ril_dcslang_arabic"></a><b>RIL_DCSLANG_ARABIC</b>
+### -field RIL_DCSLANG_ARABIC
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_RUSSIAN"></a><a id="ril_dcslang_russian"></a><b>RIL_DCSLANG_RUSSIAN</b>
+### -field RIL_DCSLANG_RUSSIAN
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_ICELANDIC"></a><a id="ril_dcslang_icelandic"></a><b>RIL_DCSLANG_ICELANDIC</b>
+### -field RIL_DCSLANG_ICELANDIC
 
 <dd></dd>
 
-### -field <a id="RIL_DCSLANG_ALL"></a><a id="ril_dcslang_all"></a><b>RIL_DCSLANG_ALL</b>
+### -field RIL_DCSLANG_ALL
 
 <dd></dd>
 </dl>

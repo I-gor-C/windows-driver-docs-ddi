@@ -60,25 +60,25 @@ NTSTATUS APIENTRY pfnAssignMultisamplingMethodSet(
 ## -parameters
 <dl>
 
-### -param <i>hVidPn</i> [in]
+### -param hVidPn [in]
 
 <dd>
 <p>[in] A handle to a VidPN object. The VidPN manager previously provided this handle to the display miniport driver by calling <a href="display.dxgkddienumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>.</p>
 </dd>
 
-### -param <i>VidPnSourceId</i> [in]
+### -param VidPnSourceId [in]
 
 <dd>
 <p>[in] An integer that identifies one of the video present sources associated with the VidPN object.</p>
 </dd>
 
-### -param <i>NumMethods</i> [in]
+### -param NumMethods [in]
 
 <dd>
 <p>[in] The number of elements in the <i>pSupportedMethodSet</i> array.</p>
 </dd>
 
-### -param <i>pSupportedMethodSet</i> [in]
+### -param pSupportedMethodSet [in]
 
 <dd>
 <p>[in] A pointer to an array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-multisamplingmethod.md">D3DDDI_MULTISAMPLINGMETHOD</a> structures, each of which describes a multisampling method.</p>

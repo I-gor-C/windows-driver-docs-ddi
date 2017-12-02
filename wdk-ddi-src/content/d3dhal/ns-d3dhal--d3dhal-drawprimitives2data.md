@@ -73,13 +73,13 @@ typedef struct _D3DHAL_DRAWPRIMITIVES2DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>dwhContext</b>
+### -field dwhContext
 
 <dd>
 <p>Specifies the context handle of the Direct3D device.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p>Specifies flags that provide additional instructions to the driver or provide information from the driver. This member can be a bitwise OR of the following values:</p>
@@ -156,7 +156,7 @@ typedef struct _D3DHAL_DRAWPRIMITIVES2DATA {
 <p> </p>
 </dd>
 
-### -field <b>dwVertexType</b>
+### -field dwVertexType
 
 <dd>
 <p>Identifies the <a href="https://msdn.microsoft.com/206f4275-bcb8-4e8e-9c11-c6fb5d9c561d">FVF</a> of the data in the vertex buffer; that is, <b>dwVertexType</b> specifies which per-vertex data fields are present in the vertex buffer that <b>lpDDVertex</b> or <b>lpVertices</b> points to. This member can be a bitwise OR of the values in the following table. Only one of the <i>D3DFVF_TEXx</i> flags is set.</p>
@@ -265,38 +265,38 @@ typedef struct _D3DHAL_DRAWPRIMITIVES2DATA {
 <p> </p>
 </dd>
 
-### -field <b>lpDDCommands</b>
+### -field lpDDCommands
 
 <dd>
 <dl>
 
-### -field <b>DirectX 8.1 and earlier versions only.
+### -field DirectX 8.1 and earlier versions only.
       </b>
 
 
-### -field Points to the <a href="display.dd_surface_local">DD_SURFACE_LOCAL</a> structure that identifies the DirectDraw surface containing the command data. The <b>fpVidMem</b> member of the embedded <a href="display.dd_surface_global">DD_SURFACE_GLOBAL</a> structure points to the buffer that contains state change and primitive drawing commands for the driver to process. Specifically, this buffer contains one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a> structures, each followed by a <i>D3DHAL_DP2Xxx</i> structure whose exact type is identified by D3DHAL_DP2COMMAND's <b>bCommand</b> member.
+### -field Points to the DD_SURFACE_LOCAL structure that identifies the DirectDraw surface containing the command data. The fpVidMem member of the embedded DD_SURFACE_GLOBAL structure points to the buffer that contains state change and primitive drawing commands for the driver to process. Specifically, this buffer contains one or more D3DHAL_DP2COMMAND structures, each followed by a D3DHAL_DP2Xxx structure whose exact type is identified by D3DHAL_DP2COMMAND's bCommand member.
 
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
-### -field In addition to the command-buffer functionality of DirectX 8.1 and earlier, this member can point to a response buffer that the driver returns. Specifically, this response buffer contains one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2response.md">D3DHAL_DP2RESPONSE</a> structures, each followed by either <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2responsequery.md">D3DHAL_DP2RESPONSEQUERY</a> structures or zero if the response token in the <b>bCommand</b> of D3DHAL_DP2RESPONSE is D3DDP2OP_RESPONSECONTINUE.
+### -field In addition to the command-buffer functionality of DirectX 8.1 and earlier, this member can point to a response buffer that the driver returns. Specifically, this response buffer contains one or more D3DHAL_DP2RESPONSE structures, each followed by either D3DHAL_DP2RESPONSEQUERY structures or zero if the response token in the bCommand of D3DHAL_DP2RESPONSE is D3DDP2OP_RESPONSECONTINUE.
 
 </dl>
 </dd>
 
-### -field <b>dwCommandOffset</b>
+### -field dwCommandOffset
 
 <dd>
 <dl>
 
-### -field <b>DirectX 8.1 and earlier versions only.</b>
+### -field DirectX 8.1 and earlier versions only.
 
 
-### -field Specifies the number of bytes into the surface that <b>lpDDCommands</b> points to and where the command data starts.
+### -field Specifies the number of bytes into the surface that lpDDCommands points to and where the command data starts.
 
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
 ### -field In addition to the command-offset functionality of DirectX 8.1 and earlier, can specify where the response data starts.
@@ -304,61 +304,61 @@ typedef struct _D3DHAL_DRAWPRIMITIVES2DATA {
 </dl>
 </dd>
 
-### -field <b>dwCommandLength</b>
+### -field dwCommandLength
 
 <dd>
 <p>Specifies the number of bytes of valid command data in the surface that <b>lpDDCommands</b> points to starting at <b>dwCommandOffset</b>.</p>
 </dd>
 
-### -field <b>lpDDVertex</b>
+### -field lpDDVertex
 
 <dd>
 <p>Points to the <a href="display.dd_surface_local">DD_SURFACE_LOCAL</a> structure that identifies the DirectDraw surface containing the vertex data when the D3DHALDP2_USERMEMVERTICES flag is not set in <b>dwFlags</b>. Forms a union with <b>lpVertices</b>. </p>
 </dd>
 
-### -field <b>lpVertices</b>
+### -field lpVertices
 
 <dd>
 <p>Points to a user-mode memory block containing vertex data when the D3DHALDP2_USERMEMVERTICES flag is set in <b>dwFlags</b>.</p>
 </dd>
 
-### -field <b>dwVertexOffset</b>
+### -field dwVertexOffset
 
 <dd>
 <p>Specifies the number of bytes into the surface pointed to by <b>lpDDVertex</b> or <b>lpVertices</b> where the vertex data starts.</p>
 </dd>
 
-### -field <b>dwVertexLength</b>
+### -field dwVertexLength
 
 <dd>
 <p>Specifies the number of vertices for which valid data exists in the surface pointed to by <b>lpDDVertex</b> or <b>lpVertices</b>. This valid data starts at <b>dwVertexOffset</b>.</p>
 </dd>
 
-### -field <b>dwReqVertexBufSize</b>
+### -field dwReqVertexBufSize
 
 <dd>
 <p>Specifies the minimum number of bytes that the driver must allocate for the swap vertex buffer. This member is valid only when the D3DHALDP2_REQVERTEXBUFSIZE flag is set. Drivers that do not support multibuffering of vertex buffers should ignore this member.</p>
 </dd>
 
-### -field <b>dwReqCommandBufSize</b>
+### -field dwReqCommandBufSize
 
 <dd>
 <p>Specifies the minimum number of bytes that the driver must increase the swap command buffer by. This member is valid only when the D3DHALDP2_REQCOMMANDBUFSIZE flag is set. Drivers that do not support multibuffering of command buffers should ignore this member.</p>
 </dd>
 
-### -field <b>lpdwRStates</b>
+### -field lpdwRStates
 
 <dd>
 <p>Points to a render state array that the driver should update when it parses render state commands from the command buffer. The driver should update this array only when the D3DHALDP2_EXECUTEBUFFER flag is set in <b>dwFlags</b>. The driver should use the <a href="..\d3d9types\ne-d3d9types--d3drenderstatetype.md">D3DRENDERSTATETYPE</a> enumerated types to update the appropriate element of the render state array. </p>
 </dd>
 
-### -field <b>dwVertexSize</b>
+### -field dwVertexSize
 
 <dd>
 <p>Specifies the size of each vertex, in bytes. This member forms a union with <b>ddrval</b>.</p>
 </dd>
 
-### -field <b>ddrval</b>
+### -field ddrval
 
 <dd>
 <p>Specifies the location where the driver writes the return value of <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>. D3D_OK indicates success. Otherwise, the driver should return the appropriate D3DERR_<i>Xxx</i> error code. For more information, see <a href="https://msdn.microsoft.com/033beb6e-5872-4cb3-8f39-459e2fff82cd">Return Codes for Direct3D Driver Callbacks</a>.</p>
@@ -387,21 +387,21 @@ typedef struct _D3DHAL_DRAWPRIMITIVES2DATA {
 <p> </p>
 </dd>
 
-### -field <b>dwErrorOffset</b>
+### -field dwErrorOffset
 
 <dd>
 <dl>
 
-### -field <b>DirectX 8.1 and earlier versions only.</b>
+### -field DirectX 8.1 and earlier versions only.
 
 
-### -field Specifies the location where the driver writes the offset into the surface that <b>lpDDCommands</b> points to where the first unhandled D3DHAL_DP2COMMAND can be found. The driver must set this value when it returns an error condition in <b>ddrval</b>.
+### -field Specifies the location where the driver writes the offset into the surface that lpDDCommands points to where the first unhandled D3DHAL_DP2COMMAND can be found. The driver must set this value when it returns an error condition in ddrval.
 
 
-### -field <b>DirectX 9.0 and later versions only.</b>
+### -field DirectX 9.0 and later versions only.
 
 
-### -field In addition to the error-offset functionality of DirectX 8.1 and earlier, the driver can specify the total size, in bytes, of the outgoing response buffer or zero if the response buffer is empty of responses. This member specifies response-buffer information only when the <b>ddrval</b> member is set to D3D_OK for successful completion. If this member is nonzero, it indicates that previously submitted queries using the D3DDP2OP_ISSUEQUERY operation completed and that responses to those queries are specified in <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2response.md">D3DHAL_DP2RESPONSE</a> and <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2responsequery.md">D3DHAL_DP2RESPONSEQUERY</a> structures and available in the outgoing response buffer. Each D3DHAL_DP2RESPONSEQUERY is followed by the following data related to the query: 
+### -field In addition to the error-offset functionality of DirectX 8.1 and earlier, the driver can specify the total size, in bytes, of the outgoing response buffer or zero if the response buffer is empty of responses. This member specifies response-buffer information only when the ddrval member is set to D3D_OK for successful completion. If this member is nonzero, it indicates that previously submitted queries using the D3DDP2OP_ISSUEQUERY operation completed and that responses to those queries are specified in D3DHAL_DP2RESPONSE and D3DHAL_DP2RESPONSEQUERY structures and available in the outgoing response buffer. Each D3DHAL_DP2RESPONSEQUERY is followed by the following data related to the query: 
 
 
 ### -field BOOL for D3DQUERYTYPE_EVENT 
@@ -417,7 +417,7 @@ typedef struct _D3DHAL_DRAWPRIMITIVES2DATA {
 ### -field The runtime parses the response buffer and updates its internal data structures.
 
 
-### -field If this member is zero and the <b>ddrval</b> member is set to D3D_OK, the runtime does not bother to check for responses to queries. 
+### -field If this member is zero and the ddrval member is set to D3D_OK, the runtime does not bother to check for responses to queries. 
 
 </dl>
 </dd>

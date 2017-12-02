@@ -59,31 +59,31 @@ typedef struct _OB_CALLBACK_REGISTRATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of object callback registration that is requested. Drivers should specify OB_FLT_REGISTRATION_VERSION.</p>
 </dd>
 
-### -field <b>OperationRegistrationCount</b>
+### -field OperationRegistrationCount
 
 <dd>
 <p>The number of entries in the <b>OperationRegistration</b> array.</p>
 </dd>
 
-### -field <b>Altitude</b>
+### -field Altitude
 
 <dd>
 <p>A Unicode string that specifies the altitude of the driver. For more information about altitude, see <a href="ifsk.load_order_groups_and_altitudes_for_minifilter_drivers">Load Order Groups and Altitudes for Minifilter Drivers</a>.</p>
 </dd>
 
-### -field <b>RegistrationContext</b>
+### -field RegistrationContext
 
 <dd>
 <p>The system passes the <b>RegistrationContext</b> value to the callback routine when the callback routine is run. The meaning of this value is driver-defined.</p>
 </dd>
 
-### -field <b>OperationRegistration</b>
+### -field OperationRegistration
 
 <dd>
 <p>A pointer to an array of <a href="..\wdm\ns-wdm--ob-operation-registration.md">OB_OPERATION_REGISTRATION</a> structures. Each structure specifies <a href="kernel.objectprecallback">ObjectPreCallback</a> and <a href="kernel.objectpostcallback">ObjectPostCallback</a> callback routines and the types of operations that the routines are called for. </p>

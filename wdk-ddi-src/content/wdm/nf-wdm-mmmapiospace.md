@@ -57,19 +57,19 @@ PVOID MmMapIoSpace(
 ## -parameters
 <dl>
 
-### -param <i>PhysicalAddress</i> [in]
+### -param PhysicalAddress [in]
 
 <dd>
 <p>Specifies the starting physical address of the I/O range to be mapped.</p>
 </dd>
 
-### -param <i>NumberOfBytes</i> [in]
+### -param NumberOfBytes [in]
 
 <dd>
 <p>Specifies a value greater than zero, indicating the number of bytes to be mapped.</p>
 </dd>
 
-### -param <i>CacheType</i> [in]
+### -param CacheType [in]
 
 <dd>
 <p>Specifies a <a href="..\wdm\ne-wdm--memory-caching-type.md">MEMORY_CACHING_TYPE</a> value, which indicates the cache attribute to use to map the physical address range.</p>

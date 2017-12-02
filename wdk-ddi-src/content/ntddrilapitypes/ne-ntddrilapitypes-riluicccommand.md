@@ -7,7 +7,7 @@ old-location: netvista\riluicccommand.htm
 old-project: netvista
 ms.assetid: 1c2ded31-9d2d-46e4-a23f-a48528fd448f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _RILUICCCOMMAND {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_UICCCMD_READRECORD"></a><a id="ril_uicccmd_readrecord"></a><b>RIL_UICCCMD_READRECORD</b>
+### -field RIL_UICCCMD_READRECORD
 
 <dd></dd>
 
-### -field <a id="RIL_UICCCMD_UPDATEBINARY"></a><a id="ril_uicccmd_updatebinary"></a><b>RIL_UICCCMD_UPDATEBINARY</b>
+### -field RIL_UICCCMD_UPDATEBINARY
 
 <dd></dd>
 
-### -field <a id="RIL_UICCCMD_UPDATERECORD"></a><a id="ril_uicccmd_updaterecord"></a><b>RIL_UICCCMD_UPDATERECORD</b>
+### -field RIL_UICCCMD_UPDATERECORD
 
 <dd></dd>
 
-### -field <a id="RIL_UICCCMD_MAX"></a><a id="ril_uicccmd_max"></a><b>RIL_UICCCMD_MAX</b>
+### -field RIL_UICCCMD_MAX
 
 <dd></dd>
 </dl>

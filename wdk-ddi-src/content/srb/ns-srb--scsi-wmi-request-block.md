@@ -77,74 +77,74 @@ typedef struct _SCSI_WMI_REQUEST_BLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Specifies the size in bytes of this structure.</p>
 </dd>
 
-### -field <b>Function</b>
+### -field Function
 
 <dd>
 <p>SRB_FUNCTION_WMI, which specifies that the request is a WMI request. If this member is not set to SRB_FUNCTION_WMI, the miniport driver should fail the request.</p>
 </dd>
 
-### -field <b>SrbStatus</b>
+### -field SrbStatus
 
 <dd>
 <p>Returns the status of the completed request. This member should be set by the miniport driver before it notifies the OS-specific driver that the request has completed by calling <a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a> with <b>RequestComplete</b>. The value of this member can be any value listed for <b>SrbStatus</b> in SCSI_REQUEST_BLOCK.</p>
 </dd>
 
-### -field <b>WMISubFunction</b>
+### -field WMISubFunction
 
 <dd>
 <p>Indicates the WMI action to be performed. A miniport driver calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a> with <i>MinorFunction</i> set to this value. The subfunction value corresponds to the WMI minor IRP number that identifies the WMI operation. </p>
 </dd>
 
-### -field <b>PathId</b>
+### -field PathId
 
 <dd>
 <p>Indicates the SCSI port or bus for the request. This value is zero-based. If SRB_WMI_FLAGS_ADAPTER_REQUEST is set in <b>WMIFlags</b>, this member is reserved.</p>
 </dd>
 
-### -field <b>TargetId</b>
+### -field TargetId
 
 <dd>
 <p>Indicates the target controller or device on the bus. If SRB_WMI_FLAGS_ADAPTER_REQUEST is set in <b>WMIFlags</b>, this member is reserved.</p>
 </dd>
 
-### -field <b>Lun</b>
+### -field Lun
 
 <dd>
 <p>Indicates the logical unit number of the device. If SRB_WMI_FLAGS_ADAPTER_REQUEST is set in <b>WMIFlags</b>, this member is reserved.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for system use and not available for use by miniport drivers.</p>
 </dd>
 
-### -field <b>WMIFlags</b>
+### -field WMIFlags
 
 <dd>
 <p>Indicates that the WMI request is for the adapter if SRB_WMI_FLAGS_ADAPTER_REQUEST is set and that <b>PathId</b>, <b>TargetId</b>, and <b>Lun</b> are reserved. Otherwise, <b>WMIFlags</b> will be <b>NULL</b>, indicating that the request is for the device specified by <b>PathId</b>, <b>TargetId</b>, and <b>Lun</b>.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for system use and not available for use by miniport drivers.</p>
 </dd>
 
-### -field <b>SrbFlags</b>
+### -field SrbFlags
 
 <dd>
 <p>Indicates various parameters and options about the request. <b>SrbFlags</b> is read-only. This member will be set to one or more of the following flags ORed together:</p>
 <p></p>
 <dl>
 
-### -field <a id="SRB_FLAGS_DATA_IN"></a><a id="srb_flags_data_in"></a>SRB_FLAGS_DATA_IN
+### -field SRB_FLAGS_DATA_IN
 
 <dd>
 <p>Indicates data will be transferred from the device to the system.</p>
@@ -153,7 +153,7 @@ typedef struct _SCSI_WMI_REQUEST_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="SRB_FLAGS_DATA_OUT"></a><a id="srb_flags_data_out"></a>SRB_FLAGS_DATA_OUT
+### -field SRB_FLAGS_DATA_OUT
 
 <dd>
 <p>Indicates data will be transferred from the system to the device.</p>
@@ -162,7 +162,7 @@ typedef struct _SCSI_WMI_REQUEST_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="SRB_FLAGS_NO_DATA_TRANSFER"></a><a id="srb_flags_no_data_transfer"></a>SRB_FLAGS_NO_DATA_TRANSFER
+### -field SRB_FLAGS_NO_DATA_TRANSFER
 
 <dd>
 <p>Indicates no data transfer with this request. If this is set, the flags SRB_FLAGS_DATA_OUT, SRB_FLAGS_DATA_IN, and SRB_FLAGS_UNSPECIFIED_DIRECTION are clear.</p>
@@ -171,7 +171,7 @@ typedef struct _SCSI_WMI_REQUEST_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="SRB_FLAGS_DISABLE_SYNCH_TRANSFER"></a><a id="srb_flags_disable_synch_transfer"></a>SRB_FLAGS_DISABLE_SYNCH_TRANSFER
+### -field SRB_FLAGS_DISABLE_SYNCH_TRANSFER
 
 <dd>
 <p>Indicates the HBA, if possible, should perform asynchronous I/O for this transfer request. If synchronous I/O was negotiated previously, the HBA must renegotiate for asynchronous I/O before performing the transfer.</p>
@@ -180,7 +180,7 @@ typedef struct _SCSI_WMI_REQUEST_BLOCK {
 <p></p>
 <dl>
 
-### -field <a id="SRB_FLAGS_DISABLE_DISCONNECT"></a><a id="srb_flags_disable_disconnect"></a>SRB_FLAGS_DISABLE_DISCONNECT
+### -field SRB_FLAGS_DISABLE_DISCONNECT
 
 <dd>
 <p>Indicates the HBA should not allow the target to disconnect from the SCSI bus during processing of this request.</p>
@@ -188,61 +188,61 @@ typedef struct _SCSI_WMI_REQUEST_BLOCK {
 </dl>
 </dd>
 
-### -field <b>DataTransferLength</b>
+### -field DataTransferLength
 
 <dd>
 <p>Indicates the size in bytes of the data buffer. A miniport driver calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a> with <i>BufferSize</i> set to this value. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred.</p>
 </dd>
 
-### -field <b>TimeOutValue</b>
+### -field TimeOutValue
 
 <dd>
 <p>Indicates the interval in seconds that the request can execute before the OS-specific port driver might consider it timed out. Miniport drivers are not required to time requests because the port driver already does.</p>
 </dd>
 
-### -field <b>DataBuffer</b>
+### -field DataBuffer
 
 <dd>
 <p>Points to the data buffer. A miniport driver calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a> with <i>Buffer</i> set to this value. Miniport drivers can use this value as a data pointer regardless of the value of <b>MapBuffers</b> in the PORT_CONFIGURATION_INFORMATION for the HBA. A miniport driver cannot transfer data directly into the buffer using DMA.</p>
 </dd>
 
-### -field <b>DataPath</b>
+### -field DataPath
 
 <dd>
 <p>Specifies the WMI data path for this request. A miniport driver calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a> with <i>DataPath</i> set to this value. </p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved for system use and not available for use by miniport drivers.</p>
 </dd>
 
-### -field <b>OriginalRequest</b>
+### -field OriginalRequest
 
 <dd>
 <p>Points to the IRP for this request. This member is irrelevant to miniport drivers.</p>
 </dd>
 
-### -field <b>SrbExtension</b>
+### -field SrbExtension
 
 <dd>
 <p>Points to the Srb extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the HW_INITIALIZATION_DATA. The memory at <b>SrbExtension</b> is not initialized by the OS-specific port driver, and the miniport driver-determined data can be accessed directly by the HBA. The corresponding physical address can be obtained by calling <a href="..\srb\nf-srb-scsiportgetphysicaladdress.md">ScsiPortGetPhysicalAddress</a> with the <b>SrbExtension</b> pointer.</p>
 </dd>
 
-### -field <b>Reserved4</b>
+### -field Reserved4
 
 <dd>
 <p>Reserved for system use and not available for use by miniport drivers.</p>
 </dd>
 
-### -field <b>Reserved6</b>
+### -field Reserved6
 
 <dd>
 <p>Reserved for system use and not available for use by miniport drivers. This member is valid starting with Windows Server 2003 with SP1.</p>
 </dd>
 
-### -field <b>Reserved5</b>
+### -field Reserved5
 
 <dd>
 <p>Reserved for system use and not available for use by miniport drivers.</p>

@@ -55,13 +55,13 @@ typedef struct _D3DDDICB_FREEGPUVIRTUALADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>BaseAddress</b>
+### -field BaseAddress
 
 <dd>
 <p>Specifies the base virtual address, in bytes, of the range to free. Must be aligned to 4 KB.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size, in bytes, of the range to free. Must be aligned to 4 KB.</p>

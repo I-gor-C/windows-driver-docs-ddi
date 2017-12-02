@@ -59,13 +59,13 @@ NTSTATUS CmCallbackGetKeyObjectIDEx(
 ## -parameters
 <dl>
 
-### -param <i>Cookie</i> [in]
+### -param Cookie [in]
 
 <dd>
 <p>A cookie value that represents the caller's registration to receive registry filter callbacks. The driver previously obtained this cookie value from the <a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a> or <a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a> routine.</p>
 </dd>
 
-### -param <i>Object</i> [in]
+### -param Object [in]
 
 <dd>
 <p>A pointer to the registry key object. This parameter is the pointer value that the driver's <a href="kernel.registrycallback">RegistryCallback</a> callback routine received in the <b>Object</b> member of one of the <b>REG_<i>XXX</i>_KEY_INFORMATION</b> structures.</p>
@@ -73,19 +73,19 @@ NTSTATUS CmCallbackGetKeyObjectIDEx(
 <div> </div>
 </dd>
 
-### -param <i>ObjectID</i> [out, optional]
+### -param ObjectID [out, optional]
 
 <dd>
 <p>A pointer to a location that receives a pointer to the key identifier for the registry key that <i>Object</i> represents. This identifier is unique across all keys in the registry. This parameter is optional and can be <b>NULL</b>. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>ObjectName</i> [out, optional]
+### -param ObjectName [out, optional]
 
 <dd>
 <p>A pointer to a location that receives a pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure. This structure contains the object name of the registry key object that <i>Object</i> specifies. The object name is actually the full path name of the registry key that the object represents. The caller is responsible for freeing this structure by calling the <a href="..\wdm\nf-wdm-cmcallbackreleasekeyobjectidex.md">CmCallbackReleaseKeyObjectIDEx</a> routine. This parameter is optional and can be <b>NULL</b>. For more information, see Remarks.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Reserved. Set to zero.</p>

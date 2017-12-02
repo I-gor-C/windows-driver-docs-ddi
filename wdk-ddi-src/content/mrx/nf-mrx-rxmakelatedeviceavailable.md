@@ -7,7 +7,7 @@ old-location: ifsk\rxmakelatedeviceavailable.htm
 old-project: ifsk
 ms.assetid: 0818907f-3346-42a2-b123-3298ea8f9a1d
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxMakeLateDeviceAvailable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ VOID RxMakeLateDeviceAvailable(
 ## -parameters
 <dl>
 
-### -param <i>RxDeviceObject</i> [in]
+### -param RxDeviceObject [in]
 
 <dd>
 <p>A pointer to the where the created device object is to be stored.</p>

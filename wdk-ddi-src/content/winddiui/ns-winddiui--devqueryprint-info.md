@@ -61,43 +61,43 @@ typedef struct _DEVQUERYPRINT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Spooler-supplied size, in bytes, of the DEVQUERYPRINT_INFO structure.</p>
 </dd>
 
-### -field <b>Level</b>
+### -field Level
 
 <dd>
 <p>Spooler-supplied level of the DEVQUERYPRINT_INFO structure. Currently, this member is always set to 1.</p>
 </dd>
 
-### -field <b>hPrinter</b>
+### -field hPrinter
 
 <dd>
 <p>Spooler-supplied printer handle.</p>
 </dd>
 
-### -field <b>pDevMode</b>
+### -field pDevMode
 
 <dd>
 <p>Spooler-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure describing printer characteristics required by the print job.</p>
 </dd>
 
-### -field <b>pszErrorStr</b>
+### -field pszErrorStr
 
 <dd>
 <p>Spooler-supplied pointer to a buffer to receive a NULL-terminated error text string, if the print job cannot be printed.</p>
 </dd>
 
-### -field <b>cchErrorStr</b>
+### -field cchErrorStr
 
 <dd>
 <p>Spooler-supplied size, in bytes, of the string buffer pointed to by <b>pszErrorStr</b>.</p>
 </dd>
 
-### -field <b>cchNeeded</b>
+### -field cchNeeded
 
 <dd>
 <p>Driver-supplied length, in bytes, of the error string supplied in the buffer pointed to by <b>pszErrorStr</b>. If the string is too large to fit in the buffer, the string should be truncated, but the untruncated length should be specified here.</p>

@@ -56,13 +56,13 @@ typedef struct _USB_HUB_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>HubDescriptor</b>
+### -field HubDescriptor
 
 <dd>
 <p>A <a href="..\usbspec\ns-usbspec--usb-hub-descriptor.md">USB_HUB_DESCRIPTOR</a> structure that contains selected information from the hub descriptor.</p>
 </dd>
 
-### -field <b>HubIsBusPowered</b>
+### -field HubIsBusPowered
 
 <dd>
 <p>A Boolean value that indicates whether the hub is bus-powered. <b>TRUE</b>, the hub is bus-powered; <b>FALSE</b>, the hub is self-powered.</p>

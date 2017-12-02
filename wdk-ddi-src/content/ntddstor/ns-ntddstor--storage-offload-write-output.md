@@ -57,7 +57,7 @@ typedef struct _STORAGE_OFFLOAD_WRITE_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>OffloadWriteFlags</b>
+### -field OffloadWriteFlags
 
 <dd>
 <p>Flags indicating the result of the offload write operation. This is set to one of the following.</p>
@@ -69,7 +69,7 @@ typedef struct _STORAGE_OFFLOAD_WRITE_OUTPUT {
 <tr>
 <td width="40%"><a id="STORAGE_OFFLOAD_WRITE_RANGE_TRUNCATED"></a><a id="storage_offload_write_range_truncated"></a><dl>
 
-### -field <b>STORAGE_OFFLOAD_WRITE_RANGE_TRUNCATED</b>
+### -field STORAGE_OFFLOAD_WRITE_RANGE_TRUNCATED
 
 </dl>
 </td>
@@ -80,7 +80,7 @@ typedef struct _STORAGE_OFFLOAD_WRITE_OUTPUT {
 <tr>
 <td width="40%"><a id="STORAGE_OFFLOAD_TOKEN_INVALID_________"></a><a id="storage_offload_token_invalid_________"></a><dl>
 
-### -field <b>STORAGE_OFFLOAD_TOKEN_INVALID         </b>
+### -field STORAGE_OFFLOAD_TOKEN_INVALID         
 
 </dl>
 </td>
@@ -92,13 +92,13 @@ typedef struct _STORAGE_OFFLOAD_WRITE_OUTPUT {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>LengthCopied</b>
+### -field LengthCopied
 
 <dd>
 <p>Bytes copied for the write request in <a href="..\ntddstor\ns-ntddstor--device-dsm-offload-write-parameters.md">DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS</a>.</p>

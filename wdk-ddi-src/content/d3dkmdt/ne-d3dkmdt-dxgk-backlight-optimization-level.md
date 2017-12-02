@@ -58,21 +58,21 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="DxgkBacklightOptimizationDisable"></a><a id="dxgkbacklightoptimizationdisable"></a><a id="DXGKBACKLIGHTOPTIMIZATIONDISABLE"></a><b>DxgkBacklightOptimizationDisable</b>
+### -field DxgkBacklightOptimizationDisable
 
 <dd>
 <p>The display miniport driver must completely disable adaptive brightness control.</p>
 <p>The operating system always sets this value if the system is on AC power.</p>
 </dd>
 
-### -field <a id="DxgkBacklightOptimizationDesktop"></a><a id="dxgkbacklightoptimizationdesktop"></a><a id="DXGKBACKLIGHTOPTIMIZATIONDESKTOP"></a><b>DxgkBacklightOptimizationDesktop</b>
+### -field DxgkBacklightOptimizationDesktop
 
 <dd>
 <p>The display miniport driver should optimize backlight settings for desktop presentation when the system is on DC power and the other possible scenarios (disabled, dynamic, and dimmed) are not active. This type of optimization is appropriate for displaying photos, internet browsers, common document types, and video playback controls.</p>
 <p>This is the default adaptive brightness setting when the system is on DC power.</p>
 </dd>
 
-### -field <a id="DxgkBacklightOptimizationDynamic"></a><a id="dxgkbacklightoptimizationdynamic"></a><a id="DXGKBACKLIGHTOPTIMIZATIONDYNAMIC"></a><b>DxgkBacklightOptimizationDynamic</b>
+### -field DxgkBacklightOptimizationDynamic
 
 <dd>
 <p>The display miniport driver should optimize backlight settings for presentation of full-screen video. Typical playback scenarios include playing movies and full-screen video. </p>
@@ -80,14 +80,14 @@ typedef enum  {
 <p>The operating system sets this value only when only full-screen video content is displayed on the screen. This value is not set if playback controls or charms are displayed during video playback; in this case, adaptive brightness will not be enabled.</p>
 </dd>
 
-### -field <a id="DxgkBacklightOptimizationDimmed"></a><a id="dxgkbacklightoptimizationdimmed"></a><a id="DXGKBACKLIGHTOPTIMIZATIONDIMMED"></a><b>DxgkBacklightOptimizationDimmed</b>
+### -field DxgkBacklightOptimizationDimmed
 
 <dd>
 <p>The display miniport driver should optimize backlight settings to display at a low light level that is still visible even if it is not easily readable. In this scenario the display is typically set to a 30 percent brightness level.</p>
 <p>After a defined period of no user input, the operating system sets this value to dim the display.</p>
 </dd>
 
-### -field <a id="DxgkBacklightOptimizationEDR"></a><a id="dxgkbacklightoptimizationedr"></a><a id="DXGKBACKLIGHTOPTIMIZATIONEDR"></a><b>DxgkBacklightOptimizationEDR</b>
+### -field DxgkBacklightOptimizationEDR
 
 <dd>
 <p>Optimization level which informs the driver that the display is being driven with either High Dynamic Range or Enhanced Dynamic Range content so any backlight optimizations can be tailored to the scenario.                                                                                                                                                                                                                                                                                                         </p>

@@ -54,7 +54,7 @@ typedef enum _MEMORY_INFORMATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="MemoryBasicInformation"></a><a id="memorybasicinformation"></a><a id="MEMORYBASICINFORMATION"></a><b>MemoryBasicInformation</b>
+### -field MemoryBasicInformation
 
 <dd>
 <p>Memory information described in the <a href="..\ntifs\ns-ntifs--memory-basic-information.md">MEMORY_BASIC_INFORMATION</a> structure will be retrieved.</p>

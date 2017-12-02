@@ -58,31 +58,31 @@ typedef struct _STORAGE_DIAGNOSTIC_REQUEST {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version of this structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the whole size of the structure and the associated data buffer.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>TargetType</b>
+### -field TargetType
 
 <dd>
 <p>Specifies the request target type. See definitions for <a href="..\ntddstor\ne-ntddstor--storage-diagnostic-target-type.md">STORAGE_DIAGNOSTIC_TARGET_TYPE</a>.</p>
 </dd>
 
-### -field <b>Level</b>
+### -field Level
 
 <dd>
 <p>Specifies the Diagnostic level. See definitions for <a href="..\ntddstor\ne-ntddstor--storage-diagnostic-level.md">STORAGE_DIAGNOSTIC_LEVEL</a>.</p>

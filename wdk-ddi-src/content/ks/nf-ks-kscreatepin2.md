@@ -58,25 +58,25 @@ KSDDKAPI HRESULT WINAPI KsCreatePin2(
 ## -parameters
 <dl>
 
-### -param <i>FilterHandle</i> [in]
+### -param FilterHandle [in]
 
 <dd>
 <p>Specifies the handle of the filter initiating the create request and where the connection will occur. </p>
 </dd>
 
-### -param <i>Connect</i> [in]
+### -param Connect [in]
 
 <dd>
 <p>Pointer to a <a href="stream.kspin_connect">KSPIN_CONNECT</a> structure that contains parameters for the requested connection. This should be followed in memory by a <a href="stream.ksdataformat">KSDATAFORMAT</a> data structure, describing the data format requested for the connection.</p>
 </dd>
 
-### -param <i>DesiredAccess</i> [in]
+### -param DesiredAccess [in]
 
 <dd>
 <p>Specifies the access desired to the pin. This is typically <b>GENERIC_READ</b> or <b>GENERIC_WRITE</b>. For data flowing into the pin this value should be set to <b>GENERIC_WRITE</b>, and for data flowing out of the pin this should be set to <b>GENERIC_READ</b> regardless of the communication method.</p>
 </dd>
 
-### -param <i>ConnectionHandle</i> [out]
+### -param ConnectionHandle [out]
 
 <dd>
 <p>Specifies the connection handle passed. The routine fills this in with a handle to the file object of the created connection. This value can then be used to disconnect with the <a href="base.closehandle">CloseHandle</a> function.</p>

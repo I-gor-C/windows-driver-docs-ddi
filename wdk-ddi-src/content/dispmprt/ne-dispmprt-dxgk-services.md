@@ -59,39 +59,39 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="DxgkServicesAgp"></a><a id="dxgkservicesagp"></a><a id="DXGKSERVICESAGP"></a><b>DxgkServicesAgp</b>
+### -field DxgkServicesAgp
 
 <dd>
 <p>Indicates the <a href="display.agp_interface">AGP Interface</a>.</p>
 </dd>
 
-### -field <a id="DxgkServicesDebugReport"></a><a id="dxgkservicesdebugreport"></a><a id="DXGKSERVICESDEBUGREPORT"></a><b>DxgkServicesDebugReport</b>
+### -field DxgkServicesDebugReport
 
 <dd>
 <p>Indicates the <a href="display.debug_report_interface">Debug Report interface</a>.</p>
 </dd>
 
-### -field <a id="DxgkServicesTimedOperation"></a><a id="dxgkservicestimedoperation"></a><a id="DXGKSERVICESTIMEDOPERATION"></a><b>DxgkServicesTimedOperation</b>
+### -field DxgkServicesTimedOperation
 
 <dd>
 <p>Indicates the <a href="display.timed_operation_interface">Timed Operation interface</a>.</p>
 </dd>
 
-### -field <a id="DxgkServicesSPB"></a><a id="dxgkservicesspb"></a><a id="DXGKSERVICESSPB"></a><b>DxgkServicesSPB</b>
+### -field DxgkServicesSPB
 
 <dd>
 <p>Indicates the <a href="display.simple__peripheral_bus__spb__interface">Simple  Peripheral Bus (SPB) Interface</a>.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="DxgkServicesBDD"></a><a id="dxgkservicesbdd"></a><a id="DXGKSERVICESBDD"></a><b>DxgkServicesBDD</b>
+### -field DxgkServicesBDD
 
 <dd>
 <p>Reserved for system use. Do not use in your driver.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="DxgkServicesFirmwareTable"></a><a id="dxgkservicesfirmwaretable"></a><a id="DXGKSERVICESFIRMWARETABLE"></a><b>DxgkServicesFirmwareTable</b>
+### -field DxgkServicesFirmwareTable
 
 <dd>
 <p>Indicates the <a href="display.system_firmware_table_interface">System Firmware Table Interface</a>.</p>

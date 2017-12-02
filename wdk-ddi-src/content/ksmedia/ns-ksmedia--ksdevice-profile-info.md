@@ -63,7 +63,7 @@ typedef struct _KSDEVICE_PROFILE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Defines the type of profile. Currently, the only defined type is <b>KSDEVICE_PROFILE_TYPE_CAMERA</b>.</p>
@@ -79,13 +79,13 @@ typedef struct _KSDEVICE_PROFILE_INFO {
 </table></span></div>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>This must be set to sizeof(KSDEVICE_PROFILE_INFO) structure.</p>
 </dd>
 
-### -field <b>Camera</b>
+### -field Camera
 
 <dd>
 <dl>

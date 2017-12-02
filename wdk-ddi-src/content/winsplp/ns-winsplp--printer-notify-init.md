@@ -57,15 +57,15 @@ typedef struct _PRINTER_NOTIFY_INIT {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd></dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd></dd>
 
-### -field <b>PollTime</b>
+### -field PollTime
 
 <dd></dd>
 </dl>

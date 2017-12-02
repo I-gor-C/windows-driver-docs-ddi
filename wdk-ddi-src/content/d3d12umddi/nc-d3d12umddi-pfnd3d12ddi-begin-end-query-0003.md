@@ -60,25 +60,25 @@ VOID  APIENTRY* pfnBeginQuery(
 ## -parameters
 <dl>
 
-### -param <i>hCommandList</i> 
+### -param hCommandList 
 
 <dd>
 <p>The handle of a command list for which to query. </p>
 </dd>
 
-### -param <i>hQueryHeap</i> 
+### -param hQueryHeap 
 
 <dd>
 <p>The handle of a query heap, which represents an array of query results.</p>
 </dd>
 
-### -param <i>QueryType</i> 
+### -param QueryType 
 
 <dd>
 <p>The type of query.</p>
 </dd>
 
-### -param <i>StartElement</i> 
+### -param StartElement 
 
 <dd>
 <p>The value of the start element.</p>

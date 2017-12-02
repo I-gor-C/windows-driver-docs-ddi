@@ -58,13 +58,13 @@ HRESULT APIENTRY CALLBACK* pfnTrimResidencySet(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device.</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-trimresidencyset.md">D3DDDIARG_TRIMRESIDENCYSET</a> structure that provides the details of the requested operation.

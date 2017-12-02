@@ -55,7 +55,7 @@ DWORD RouterFreeBidiResponseContainer(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>Pointer to the BIDI_RESPONSE_CONTAINER structure to be freed.</p>

@@ -59,19 +59,19 @@ void SetCreateThreadNotifyRoutine(
 ## -parameters
 <dl>
 
-### -param <i>ProcessId</i> [in]
+### -param ProcessId [in]
 
 <dd>
 <p>The process ID of the process.</p>
 </dd>
 
-### -param <i>ThreadId</i> [in]
+### -param ThreadId [in]
 
 <dd>
 <p>The thread ID of the thread.</p>
 </dd>
 
-### -param <i>Create</i> [in]
+### -param Create [in]
 
 <dd>
 <p>Indicates whether the thread was created (<b>TRUE</b>) or deleted (<b>FALSE</b>).</p>

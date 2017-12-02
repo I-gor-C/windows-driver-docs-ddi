@@ -59,31 +59,31 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes of the IPPARAMS structure. Supplied by Unidrv.</p>
 </dd>
 
-### -field <b>ptOffset</b>
+### -field ptOffset
 
 <dd>
 <p>Pointer to a <a href="display.point">POINT</a> structure containing the banded image's offset from the upper left corner of the drawing area. Supplied by Unidrv.</p>
 </dd>
 
-### -field <b>pHalftoneOption</b>
+### -field pHalftoneOption
 
 <dd>
 <p>Pointer to a string containing the name of the currently selected halftoning option. Supplied by Unidrv.</p>
 </dd>
 
-### -field <b>bBanding</b>
+### -field bBanding
 
 <dd>
 <p>Specifies whether image banding is active. If <b>TRUE</b>, image banding is active. If <b>FALSE</b>, image banding is not active. Supplied by Unidrv.</p>
 </dd>
 
-### -field <b>bBlankBand</b>
+### -field bBlankBand
 
 <dd>
 <p>Specifies whether a blank band was drawn in the source bitmap supplied to <a href="print.iprintoemuni_imageprocessing">IPrintOemUni::ImageProcessing</a>. A value of <b>TRUE</b> indicates that nothing was drawn in the source bitmap supplied to <b>IPrintOemUni::ImageProcessing</b>. A <b>TRUE</b> value also indicates that data in the source bitmap is invalid and should not be processed. Supplied by Unidrv.</p>

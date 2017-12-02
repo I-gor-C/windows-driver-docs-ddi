@@ -55,13 +55,13 @@ typedef enum D3D12DDI_COMMAND_QUEUE_CREATION_FLAGS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D12DDI_COMMAND_QUEUE_CREATION_FLAG_NONE"></a><a id="d3d12ddi_command_queue_creation_flag_none"></a><b>D3D12DDI_COMMAND_QUEUE_CREATION_FLAG_NONE</b>
+### -field D3D12DDI_COMMAND_QUEUE_CREATION_FLAG_NONE
 
 <dd>
 <p>Create queue with default value.</p>
 </dd>
 
-### -field <a id="D3D12DDI_COMMAND_QUEUE_CREATION_FLAG_GLOBAL_REALTIME_PRIORITY"></a><a id="d3d12ddi_command_queue_creation_flag_global_realtime_priority"></a><b>D3D12DDI_COMMAND_QUEUE_CREATION_FLAG_GLOBAL_REALTIME_PRIORITY</b>
+### -field D3D12DDI_COMMAND_QUEUE_CREATION_FLAG_GLOBAL_REALTIME_PRIORITY
 
 <dd>
 <p>Requires global real-time priority.</p>

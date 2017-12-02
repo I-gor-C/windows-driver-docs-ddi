@@ -57,25 +57,25 @@ typedef struct _DXGKARG_UPDATEHWCONTEXTSTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>hHwContext</b>
+### -field hHwContext
 
 <dd>
 <p>The hardware context whose priority or execution state is being changed.</p>
 </dd>
 
-### -field <b>ContextSwitchFence</b>
+### -field ContextSwitchFence
 
 <dd>
 <p>Context switch fence value associated with this state change request.</p>
 </dd>
 
-### -field <b>Priority</b>
+### -field Priority
 
 <dd>
 <p>Execution priority of this context relative to other running contexts on this node.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Context execution state flags.

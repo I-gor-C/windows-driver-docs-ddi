@@ -61,43 +61,43 @@ typedef struct _KSCAMERA_EXTENDEDPROP_VALUE {
 ## -struct-fields
 <dl>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The extended property value. </p>
 <dl>
 
-### -field <b>dbl</b>
+### -field dbl
 
 <dd>
 <p>The extended property expressed as a <b>double</b> value.</p>
 </dd>
 
-### -field <b>ull</b>
+### -field ull
 
 <dd>
 <p>The extended property expressed as a <b>ULONGLONG</b> value.</p>
 </dd>
 
-### -field <b>ul</b>
+### -field ul
 
 <dd>
 <p>The extended property expressed as a <b>ULONG</b> value.</p>
 </dd>
 
-### -field <b>ratio</b>
+### -field ratio
 
 <dd>
 <p>The extended property value expressed as a ratio.</p>
 </dd>
 
-### -field <b>l</b>
+### -field l
 
 <dd>
 <p>The extended property expressed as a <b>LONG</b> value.</p>
 </dd>
 
-### -field <b>ll</b>
+### -field ll
 
 <dd>
 <p>The extended property expressed as a <b>LONGLONG</b> value.</p>

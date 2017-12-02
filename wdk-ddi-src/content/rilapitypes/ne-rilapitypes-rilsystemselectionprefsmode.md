@@ -7,7 +7,7 @@ old-location: netvista\rilsystemselectionprefsmode_2.htm
 old-project: netvista
 ms.assetid: 10aa6bfb-5ada-42f6-8f89-d8d4066d196b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ typedef enum _RILSYSTEMSELECTIONPREFSMODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_OPSELMODE_MANUAL"></a><a id="ril_opselmode_manual"></a><b>RIL_OPSELMODE_MANUAL</b>
+### -field RIL_OPSELMODE_MANUAL
 
 <dd></dd>
 
-### -field <a id="RIL_OPSELMODE_MAX"></a><a id="ril_opselmode_max"></a><b>RIL_OPSELMODE_MAX</b>
+### -field RIL_OPSELMODE_MAX
 
 <dd></dd>
 </dl>

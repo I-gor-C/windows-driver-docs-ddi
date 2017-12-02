@@ -55,7 +55,7 @@ typedef struct _SRIOV_PROXY_QUERY_LUID_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceLuid</b>
+### -field DeviceLuid
 
 <dd>
 <p>Local unique

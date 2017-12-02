@@ -54,7 +54,7 @@ PEPROCESS WINAPI IoGetInitiatorProcess(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>The file object from which to retrieve the initiator process.</p>

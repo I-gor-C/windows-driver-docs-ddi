@@ -59,19 +59,19 @@ SIZE_T APIENTRY CalcPrivateTessellationShaderSize(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pCode</i> [in]
+### -param pCode [in]
 
 <dd>
 <p> An array of CONST UINT tokens that form the hull-shader code or domain-shader code.</p>
 </dd>
 
-### -param <i>pSignatures</i> [in]
+### -param pSignatures [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-tessellation-io-signatures.md">D3D11DDIARG_TESSELLATION_IO_SIGNATURES</a> structure that forms the hull or domain shader's signature.</p>

@@ -60,27 +60,27 @@ DWORD WINAPI PrinterMessageBoxW(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd></dd>
 
-### -param <i>Error</i> 
+### -param Error 
 
 <dd></dd>
 
-### -param <i>hWnd</i> [in]
+### -param hWnd [in]
 
 <dd></dd>
 
-### -param <i>pText</i> [in]
+### -param pText [in]
 
 <dd></dd>
 
-### -param <i>pCaption</i> [in]
+### -param pCaption [in]
 
 <dd></dd>
 
-### -param <i>dwType</i> 
+### -param dwType 
 
 <dd></dd>
 </dl>

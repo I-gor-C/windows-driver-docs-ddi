@@ -68,85 +68,85 @@ typedef struct _USB_DEVICE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>Specifies the length, in bytes, of this descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorType</b>
+### -field bDescriptorType
 
 <dd>
 <p>Specifies the descriptor type. Must be set to <b>USB_DEVICE_DESCRIPTOR_TYPE</b>.</p>
 </dd>
 
-### -field <b>bcdUSB</b>
+### -field bcdUSB
 
 <dd>
 <p>Identifies the version of the USB specification that this descriptor structure complies with. This value is a binary-coded decimal number.</p>
 </dd>
 
-### -field <b>bDeviceClass</b>
+### -field bDeviceClass
 
 <dd>
 <p>Specifies the class code of the device as assigned by the USB specification group.</p>
 </dd>
 
-### -field <b>bDeviceSubClass</b>
+### -field bDeviceSubClass
 
 <dd>
 <p>Specifies the subclass code of the device as assigned by the USB specification group.</p>
 </dd>
 
-### -field <b>bDeviceProtocol</b>
+### -field bDeviceProtocol
 
 <dd>
 <p>Specifies the protocol code of the device as assigned by the USB specification group.</p>
 </dd>
 
-### -field <b>bMaxPacketSize0</b>
+### -field bMaxPacketSize0
 
 <dd>
 <p>Specifies the maximum packet size, in bytes, for endpoint zero of the device. The value must be set to 8, 16, 32, or 64.</p>
 </dd>
 
-### -field <b>idVendor</b>
+### -field idVendor
 
 <dd>
 <p>Specifies the vendor identifier for the device as assigned by the USB specification committee.</p>
 </dd>
 
-### -field <b>idProduct</b>
+### -field idProduct
 
 <dd>
 <p>Specifies the product identifier. This value is assigned by the manufacturer and is device-specific.</p>
 </dd>
 
-### -field <b>bcdDevice</b>
+### -field bcdDevice
 
 <dd>
 <p>Identifies the version of the device. This value is a binary-coded decimal number.</p>
 </dd>
 
-### -field <b>iManufacturer</b>
+### -field iManufacturer
 
 <dd>
 <p>Specifies a device-defined index of the string descriptor that provides a string containing the name of the manufacturer of this device.</p>
 </dd>
 
-### -field <b>iProduct</b>
+### -field iProduct
 
 <dd>
 <p>Specifies a device-defined index of the string descriptor that provides a string that contains a description of the device.</p>
 </dd>
 
-### -field <b>iSerialNumber</b>
+### -field iSerialNumber
 
 <dd>
 <p>Specifies a device-defined index of the string descriptor that provides a string that contains a manufacturer-determined serial number for the device.</p>
 </dd>
 
-### -field <b>bNumConfigurations</b>
+### -field bNumConfigurations
 
 <dd>
 <p>Specifies the total number of possible configurations for the device.</p>

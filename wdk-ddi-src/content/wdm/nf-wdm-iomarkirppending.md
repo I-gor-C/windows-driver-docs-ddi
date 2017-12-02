@@ -55,7 +55,7 @@ VOID IoMarkIrpPending(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>Pointer to the IRP to be marked as pending.</p>
@@ -138,10 +138,10 @@ VOID IoMarkIrpPending(
 <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iostartpacket.md">IoStartPacket</a>
+<a href="..\wdm\nf-wdm-iostartpacket.md">IoStartPacket</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 </dl>
 <p> </p>

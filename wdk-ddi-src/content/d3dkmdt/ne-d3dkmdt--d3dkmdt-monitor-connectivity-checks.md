@@ -56,19 +56,19 @@ typedef enum _D3DKMDT_MONITOR_CONNECTIVITY_CHECKS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_MCC_UNINITIALIZED"></a><a id="d3dkmdt_mcc_uninitialized"></a><b>D3DKMDT_MCC_UNINITIALIZED</b>
+### -field D3DKMDT_MCC_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_MONITOR_CONNECTIVITY_CHECKS has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MCC_IGNORE"></a><a id="d3dkmdt_mcc_ignore"></a><b>D3DKMDT_MCC_IGNORE</b>
+### -field D3DKMDT_MCC_IGNORE
 
 <dd>
 <p>Indicates that <b>DxgkDdiCommitVidPn</b> does not need to verify that monitors are connected.</p>
 </dd>
 
-### -field <a id="D3DKMDT_MCC_ENFORCE"></a><a id="d3dkmdt_mcc_enforce"></a><b>D3DKMDT_MCC_ENFORCE</b>
+### -field D3DKMDT_MCC_ENFORCE
 
 <dd>
 <p>Indicates that <b>DxgkDdiCommitVidPn</b> must verify that monitors are connected.</p>

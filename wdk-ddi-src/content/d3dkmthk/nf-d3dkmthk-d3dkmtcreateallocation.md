@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTCreateAllocation(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createallocation.md">D3DKMT_CREATEALLOCATION</a> structure that contains information for creating allocations.</p>

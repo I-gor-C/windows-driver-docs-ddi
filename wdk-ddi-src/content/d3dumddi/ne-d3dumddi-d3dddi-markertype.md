@@ -55,13 +55,13 @@ typedef enum D3DDDI_MARKERTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDIMT_NONE"></a><a id="d3dddimt_none"></a><b>D3DDDIMT_NONE</b>
+### -field D3DDDIMT_NONE
 
 <dd>
 <p>No marker type is supported. This type is set on creation of the display device.</p>
 </dd>
 
-### -field <a id="D3DDDIMT_PROFILE"></a><a id="d3dddimt_profile"></a><b>D3DDDIMT_PROFILE</b>
+### -field D3DDDIMT_PROFILE
 
 <dd>
 <p>Profile mode, where the driver estimates the length of time the GPU takes to execute certain operations. The context submits GPU work for single-threaded user-mode DDIs. In this case, each time stamp denotes the end of GPU work.</p>

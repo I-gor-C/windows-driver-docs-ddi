@@ -54,7 +54,7 @@ HRESULT IBidiRequest::GetEnumCount(
 ## -parameters
 <dl>
 
-### -param <i>pdwTotal</i> [out]
+### -param pdwTotal [out]
 
 <dd>
 <p>A pointer to a variable that receives the number of output results.</p>

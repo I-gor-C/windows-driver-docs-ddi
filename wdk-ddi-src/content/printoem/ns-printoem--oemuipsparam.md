@@ -65,55 +65,55 @@ typedef struct _OEMUIPSPARAM {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Size of the OEMUIPSPARAM structure. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>poemuiobj</b>
+### -field poemuiobj
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>hPrinter</b>
+### -field hPrinter
 
 <dd>
 <p>Handle to the printer. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>pPrinterName</b>
+### -field pPrinterName
 
 <dd>
 <p>String containing the printer name. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>hModule</b>
+### -field hModule
 
 <dd>
 <p>Handle to the user interface plug-in. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>hOEMHeap</b>
+### -field hOEMHeap
 
 <dd>
 <p>Handle to a heap from which space can be allocated by calling the Microsoft Windows SDK <b>HeapAlloc</b> function. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
-### -field <b>pPublicDM</b>
+### -field pPublicDM
 
 <dd>
 <p></p>
 <dl>
 
-### -field <a id="For_calls_to_IPrintOemUI__DocumentPropertySheets_"></a><a id="for_calls_to_iprintoemui__documentpropertysheets_"></a><a id="FOR_CALLS_TO_IPRINTOEMUI__DOCUMENTPROPERTYSHEETS_"></a>For calls to <b>IPrintOemUI::DocumentPropertySheets</b>:
+### -field For calls to IPrintOemUI::DocumentPropertySheets:
 
 <dd>
 <p>Caller-supplied pointer to the printer's public DEVMODEW structure.</p>
 </dd>
 
-### -field <a id="For_calls_to_IPrintOemUI__DevicePropertySheets_"></a><a id="for_calls_to_iprintoemui__devicepropertysheets_"></a><a id="FOR_CALLS_TO_IPRINTOEMUI__DEVICEPROPERTYSHEETS_"></a>For calls to <b>IPrintOemUI::DevicePropertySheets</b>:
+### -field For calls to IPrintOemUI::DevicePropertySheets:
 
 <dd>
 <p>Not used.</p>
@@ -121,19 +121,19 @@ typedef struct _OEMUIPSPARAM {
 </dl>
 </dd>
 
-### -field <b>pOEMDM</b>
+### -field pOEMDM
 
 <dd>
 <p></p>
 <dl>
 
-### -field <a id="For_calls_to_IPrintOemUI__DocumentPropertySheets_"></a><a id="for_calls_to_iprintoemui__documentpropertysheets_"></a><a id="FOR_CALLS_TO_IPRINTOEMUI__DOCUMENTPROPERTYSHEETS_"></a>For calls to <b>IPrintOemUI::DocumentPropertySheets</b>:
+### -field For calls to IPrintOemUI::DocumentPropertySheets:
 
 <dd>
 <p>Caller-supplied pointer to the user interface plug-in's private DEVMODEW members.</p>
 </dd>
 
-### -field <a id="For_calls_to_IPrintOemUI__DevicePropertySheets_"></a><a id="for_calls_to_iprintoemui__devicepropertysheets_"></a><a id="FOR_CALLS_TO_IPRINTOEMUI__DEVICEPROPERTYSHEETS_"></a>For calls to <b>IPrintOemUI::DevicePropertySheets</b>:
+### -field For calls to IPrintOemUI::DevicePropertySheets:
 
 <dd>
 <p>Not used.</p>
@@ -141,25 +141,25 @@ typedef struct _OEMUIPSPARAM {
 </dl>
 </dd>
 
-### -field <b>pOEMUserData</b>
+### -field pOEMUserData
 
 <dd>
 <p>Pointer, supplied by user interface plug-in, to a location containing private information. This pointer is returned to the plug-in's <a href="..\compstui\nc-compstui--cpsuicallback.md">_CPSUICALLBACK</a>-typed callback function when a property sheet item has changed.</p>
 </dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd>
 <p></p>
 <dl>
 
-### -field <a id="For_calls_to_IPrintOemUI__DocumentPropertySheets_"></a><a id="for_calls_to_iprintoemui__documentpropertysheets_"></a><a id="FOR_CALLS_TO_IPRINTOEMUI__DOCUMENTPROPERTYSHEETS_"></a>For calls to <b>IPrintOemUI::DocumentPropertySheets</b>:
+### -field For calls to IPrintOemUI::DocumentPropertySheets:
 
 <dd>
 <p>Contains the contents of the <b>fMode</b> member of the DOCUMENTPROPERTYHEADER structure received by the printer driver's <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a> function.</p>
 </dd>
 
-### -field <a id="For_calls_to_IPrintOemUI__DevicePropertySheets_"></a><a id="for_calls_to_iprintoemui__devicepropertysheets_"></a><a id="FOR_CALLS_TO_IPRINTOEMUI__DEVICEPROPERTYSHEETS_"></a>For calls to <b>IPrintOemUI::DevicePropertySheets</b>:
+### -field For calls to IPrintOemUI::DevicePropertySheets:
 
 <dd>
 <p>Contains the contents of the <b>Flags</b> member of the DEVICEPROPERTYHEADER structure received by the printer driver's <a href="..\winddiui\nf-winddiui-drvdevicepropertysheets.md">DrvDevicePropertySheets</a> function.</p>
@@ -167,7 +167,7 @@ typedef struct _OEMUIPSPARAM {
 </dl>
 </dd>
 
-### -field <b>pOemEntry</b>
+### -field pOemEntry
 
 <dd>
 <p>Reserved for system use.</p>

@@ -67,19 +67,19 @@ typedef struct _PEP_ACPI_EXTENDED_ADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="..\pepfx\ne-pepfx--pep-acpi-resource-type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value describing this resource.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <a href="..\pepfx\ns-pepfx--pep-acpi-resource-flags.md">PEP_ACPI_RESOURCE_FLAGS</a> structure describing this resource.</p>
 </dd>
 
-### -field <b>ResourceFlags</b>
+### -field ResourceFlags
 
 <dd>
 <p>Indicates the type of resource this structure describes.</p>
@@ -152,7 +152,7 @@ typedef struct _PEP_ACPI_EXTENDED_ADDRESS {
 <p> </p>
 </dd>
 
-### -field <b>GeneralFlags</b>
+### -field GeneralFlags
 
 <dd>
 <p>A value containing the bit flags that are common to all resource types. </p>
@@ -164,7 +164,7 @@ typedef struct _PEP_ACPI_EXTENDED_ADDRESS {
 <tr>
 <td width="40%"><a id="0_-_Consumer_Producer_flag"></a><a id="0_-_consumer_producer_flag"></a><a id="0_-_CONSUMER_PRODUCER_FLAG"></a><dl>
 
-### -field <b>0 - Consumer/Producer flag</b>
+### -field 0 - Consumer/Producer flag
 
 </dl>
 </td>
@@ -175,7 +175,7 @@ typedef struct _PEP_ACPI_EXTENDED_ADDRESS {
 <tr>
 <td width="40%"><a id="1_-_Decode_type"></a><a id="1_-_decode_type"></a><a id="1_-_DECODE_TYPE"></a><dl>
 
-### -field <b>1 - Decode type</b>
+### -field 1 - Decode type
 
 </dl>
 </td>
@@ -187,7 +187,7 @@ typedef struct _PEP_ACPI_EXTENDED_ADDRESS {
 <tr>
 <td width="40%"><a id="2_-_Minimum_address_fixed"></a><a id="2_-_minimum_address_fixed"></a><a id="2_-_MINIMUM_ADDRESS_FIXED"></a><dl>
 
-### -field <b>2 - Minimum address fixed</b>
+### -field 2 - Minimum address fixed
 
 </dl>
 </td>
@@ -198,7 +198,7 @@ typedef struct _PEP_ACPI_EXTENDED_ADDRESS {
 <tr>
 <td width="40%"><a id="3_-_Max_address_fixed"></a><a id="3_-_max_address_fixed"></a><a id="3_-_MAX_ADDRESS_FIXED"></a><dl>
 
-### -field <b>3 - Max address fixed</b>
+### -field 3 - Max address fixed
 
 </dl>
 </td>
@@ -209,7 +209,7 @@ typedef struct _PEP_ACPI_EXTENDED_ADDRESS {
 <tr>
 <td width="40%"><a id="4_to_7_-_Reserved"></a><a id="4_to_7_-_reserved"></a><a id="4_TO_7_-_RESERVED"></a><dl>
 
-### -field <b>4 to 7 - Reserved</b>
+### -field 4 to 7 - Reserved
 
 </dl>
 </td>
@@ -221,7 +221,7 @@ typedef struct _PEP_ACPI_EXTENDED_ADDRESS {
 <p> </p>
 </dd>
 
-### -field <b>TypeSpecificFlags</b>
+### -field TypeSpecificFlags
 
 <dd>
 <p>The value of this member is dependent on the value in <b>ResourceFlags</b> member. The flags for each resource type are described in the tables below.</p>
@@ -236,7 +236,7 @@ typedef struct _PEP_ACPI_EXTENDED_ADDRESS {
 <tr>
 <td width="40%"><a id="0_-_Write_status"></a><a id="0_-_write_status"></a><a id="0_-_WRITE_STATUS"></a><dl>
 
-### -field <b>0 - Write status</b>
+### -field 0 - Write status
 
 </dl>
 </td>
@@ -247,7 +247,7 @@ typedef struct _PEP_ACPI_EXTENDED_ADDRESS {
 <tr>
 <td width="40%"><a id="1_to_2_-_Memory_attributes__MEM_"></a><a id="1_to_2_-_memory_attributes__mem_"></a><a id="1_TO_2_-_MEMORY_ATTRIBUTES__MEM_"></a><dl>
 
-### -field <b>1 to 2 - Memory attributes (MEM)</b>
+### -field 1 to 2 - Memory attributes (MEM)
 
 </dl>
 </td>
@@ -261,7 +261,7 @@ typedef struct _PEP_ACPI_EXTENDED_ADDRESS {
 <tr>
 <td width="40%"><a id="3_to_4_-_Memory_attributes__MTP_"></a><a id="3_to_4_-_memory_attributes__mtp_"></a><a id="3_TO_4_-_MEMORY_ATTRIBUTES__MTP_"></a><dl>
 
-### -field <b>3 to 4 - Memory attributes (MTP)</b>
+### -field 3 to 4 - Memory attributes (MTP)
 
 </dl>
 </td>
@@ -282,7 +282,7 @@ an NVS sleep.</p>
 <tr>
 <td width="40%"><a id="5_-_Memory_to_IO_translation"></a><a id="5_-_memory_to_io_translation"></a><a id="5_-_MEMORY_TO_IO_TRANSLATION"></a><dl>
 
-### -field <b>5 - Memory to IO translation</b>
+### -field 5 - Memory to IO translation
 
 </dl>
 </td>
@@ -294,7 +294,7 @@ an NVS sleep.</p>
 <tr>
 <td width="40%"><a id="6_to_7_-_Reserved"></a><a id="6_to_7_-_reserved"></a><a id="6_TO_7_-_RESERVED"></a><dl>
 
-### -field <b>6 to 7 - Reserved</b>
+### -field 6 to 7 - Reserved
 
 </dl>
 </td>
@@ -315,7 +315,7 @@ an NVS sleep.</p>
 <tr>
 <td width="40%"><a id="0_to_1_-_Range"></a><a id="0_to_1_-_range"></a><a id="0_TO_1_-_RANGE"></a><dl>
 
-### -field <b>0 to 1 - Range</b>
+### -field 0 to 1 - Range
 
 </dl>
 </td>
@@ -340,7 +340,7 @@ the ACPI namespace.
 <tr>
 <td width="40%"><a id="2_to_3_-_Reserved"></a><a id="2_to_3_-_reserved"></a><a id="2_TO_3_-_RESERVED"></a><dl>
 
-### -field <b>2 to 3 - Reserved</b>
+### -field 2 to 3 - Reserved
 
 </dl>
 </td>
@@ -351,7 +351,7 @@ the ACPI namespace.
 <tr>
 <td width="40%"><a id="4_-_IO_to_memory_translation"></a><a id="4_-_io_to_memory_translation"></a><a id="4_-_IO_TO_MEMORY_TRANSLATION"></a><dl>
 
-### -field <b>4 - IO to memory translation</b>
+### -field 4 - IO to memory translation
 
 </dl>
 </td>
@@ -363,7 +363,7 @@ the ACPI namespace.
 <tr>
 <td width="40%"><a id="5_-_Sparse_translation"></a><a id="5_-_sparse_translation"></a><a id="5_-_SPARSE_TRANSLATION"></a><dl>
 
-### -field <b>5 - Sparse translation</b>
+### -field 5 - Sparse translation
 
 </dl>
 </td>
@@ -383,7 +383,7 @@ to bits 12 to 21, this gives four bytes of IO ports on each 4 KB page.</p>
 <tr>
 <td width="40%"><a id="6_to_7_-_Reserved"></a><a id="6_to_7_-_reserved"></a><a id="6_TO_7_-_RESERVED"></a><dl>
 
-### -field <b>6 to 7 - Reserved</b>
+### -field 6 to 7 - Reserved
 
 </dl>
 </td>
@@ -404,7 +404,7 @@ to bits 12 to 21, this gives four bytes of IO ports on each 4 KB page.</p>
 <tr>
 <td width="40%"><a id="0_to_7_-_Reserved"></a><a id="0_to_7_-_reserved"></a><a id="0_TO_7_-_RESERVED"></a><dl>
 
-### -field <b>0 to 7 - Reserved</b>
+### -field 0 to 7 - Reserved
 
 </dl>
 </td>
@@ -416,55 +416,55 @@ to bits 12 to 21, this gives four bytes of IO ports on each 4 KB page.</p>
 <p> </p>
 </dd>
 
-### -field <b>RevisionId</b>
+### -field RevisionId
 
 <dd>
 <p>Indicates the revision of the extended address space descriptor detailed by this structure. For ACPI 3.0, this value is 1.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>Reserved. Must be set to zero.</dd>
 
-### -field <b>Granularity</b>
+### -field Granularity
 
 <dd>
 <p>A bit mask indicating which bits have been decoded.</p>
 </dd>
 
-### -field <b>MinimumAddress</b>
+### -field MinimumAddress
 
 <dd>
 <p>The minimum starting address. For bridges that translate addresses, this is the address space on the secondary side of the bridge.</p>
 </dd>
 
-### -field <b>MaximumAddress</b>
+### -field MaximumAddress
 
 <dd>
 <p>The maximum starting address. For bridges that translate addresses, this is the address space
 on the secondary side of the bridge.</p>
 </dd>
 
-### -field <b>TranslationAddress</b>
+### -field TranslationAddress
 
 <dd>
 <p>For bridges that translate addresses across the bridge, this is the
 address on the primary side. </p>
 </dd>
 
-### -field <b>AddressLength</b>
+### -field AddressLength
 
 <dd>
 <p>The address length.</p>
 </dd>
 
-### -field <b>TypeAttribute</b>
+### -field TypeAttribute
 
 <dd>
 <p>Indicates attributes that are specific to the resource type that is specified in the <b>ResourceFlags</b> member. If <b>ResourceFlags</b> is zero, this value is zero, otherwise the meaning of the value can be found in the <i>UEFI Specification</i> in the section titled <b>GetMemoryMap()</b>. </p>
 </dd>
 
-### -field <b>DescriptorName</b>
+### -field DescriptorName
 
 <dd>
 <p>The name of this resource descriptor.</p>

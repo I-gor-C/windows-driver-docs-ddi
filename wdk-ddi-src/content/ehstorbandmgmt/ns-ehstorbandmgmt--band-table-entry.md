@@ -56,19 +56,19 @@ typedef struct _BAND_TABLE_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>BandId</b>
+### -field BandId
 
 <dd>
 <p>The band identifier for a configured band on a storage device.</p>
 </dd>
 
-### -field <b>LocationInfo</b>
+### -field LocationInfo
 
 <dd>
 <p>The band location information.</p>
 </dd>
 
-### -field <b>SecurityInfo</b>
+### -field SecurityInfo
 
 <dd>
 <p>The band security information. This includes encryption algorithm information when selected in <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--enumerate-bands-parameters.md">ENUMERATE_BANDS_PARAMETERS</a>.</p>

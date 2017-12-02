@@ -56,13 +56,13 @@ ULONG KeQueryRuntimeThread(
 ## -parameters
 <dl>
 
-### -param <i>Thread</i> [in]
+### -param Thread [in]
 
 <dd>
 <p>Pointer to a dispatcher object of type KTHREAD.</p>
 </dd>
 
-### -param <i>UserTime</i> [out]
+### -param UserTime [out]
 
 <dd>
 <p>Pointer to the memory location where <b>KeQueryRuntimeThread</b> returns the accumulated user-mode run time of the current thread, in clock ticks.</p>

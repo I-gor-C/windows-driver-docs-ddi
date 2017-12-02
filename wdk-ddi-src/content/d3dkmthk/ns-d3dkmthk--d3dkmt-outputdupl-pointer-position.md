@@ -55,11 +55,11 @@ typedef struct _D3DKMT_OUTPUTDUPL_POINTER_POSITION {
 ## -struct-fields
 <dl>
 
-### -field <b>Position</b>
+### -field Position
 
 <dd></dd>
 
-### -field <b>Visible</b>
+### -field Visible
 
 <dd></dd>
 </dl>

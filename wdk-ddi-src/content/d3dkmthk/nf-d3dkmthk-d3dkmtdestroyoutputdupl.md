@@ -54,7 +54,7 @@ EXTERN_C NTSTATUS APIENTRY D3DKMTDestroyOutputDupl(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd></dd>
 </dl>

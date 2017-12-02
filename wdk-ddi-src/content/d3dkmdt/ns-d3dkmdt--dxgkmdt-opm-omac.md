@@ -54,7 +54,7 @@ typedef struct _DXGKMDT_OPM_OMAC {
 ## -struct-fields
 <dl>
 
-### -field <b>abOMAC</b>
+### -field abOMAC
 
 <dd>
 <p>A 16-byte array that comprises the OMAC.</p>

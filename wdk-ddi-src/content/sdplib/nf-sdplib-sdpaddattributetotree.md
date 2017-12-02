@@ -60,26 +60,26 @@ NTSTATUS SdpAddAttributeToTree(
 ## -parameters
 <dl>
 
-### -param <i>Root</i> [in]
+### -param Root [in]
 
 <dd>
 <p>The top level of the SDP record to which the 
      <b>SdpAddAttributeToTree</b> function attaches the SDP attribute node.</p>
 </dd>
 
-### -param <i>AttribId</i> [in]
+### -param AttribId [in]
 
 <dd>
 <p>The identifier of the attribute to attach.</p>
 </dd>
 
-### -param <i>AttribValueNode</i> [in]
+### -param AttribValueNode [in]
 
 <dd>
 <p>Pointer to the SDP node to be added as an attribute.</p>
 </dd>
 
-### -param <i>tag</i> [in]
+### -param tag [in]
 
 <dd>
 <p>Specifies a 4-byte 

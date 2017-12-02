@@ -7,7 +7,7 @@ old-location: netvista\rildialparams_v2_2.htm
 old-project: netvista
 ms.assetid: ca42a4c3-1589-4434-8d76-59f877e1e664
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILDIALPARAMS_V2, RILDIALPARAMS_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef struct _RILDIALPARAMS_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>raAddress</b>
+### -field raAddress
 
 <dd></dd>
 
-### -field <b>dwOptions</b>
+### -field dwOptions
 
 <dd></dd>
 
-### -field <b>dwType</b>
+### -field dwType
 
 <dd></dd>
 
-### -field <b>fHasMediaOffer</b>
+### -field fHasMediaOffer
 
 <dd></dd>
 
-### -field <b>rcmMediaOffer</b>
+### -field rcmMediaOffer
 
 <dd></dd>
 </dl>

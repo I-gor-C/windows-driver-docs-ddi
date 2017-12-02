@@ -55,11 +55,11 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSEVENT_CLOCK_INTERVAL_MARK"></a><a id="ksevent_clock_interval_mark"></a><b>KSEVENT_CLOCK_INTERVAL_MARK</b>
+### -field KSEVENT_CLOCK_INTERVAL_MARK
 
 <dd></dd>
 
-### -field <a id="KSEVENT_CLOCK_POSITION_MARK"></a><a id="ksevent_clock_position_mark"></a><b>KSEVENT_CLOCK_POSITION_MARK</b>
+### -field KSEVENT_CLOCK_POSITION_MARK
 
 <dd></dd>
 </dl>

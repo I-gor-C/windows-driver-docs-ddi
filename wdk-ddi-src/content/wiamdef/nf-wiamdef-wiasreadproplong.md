@@ -7,7 +7,7 @@ old-location: image\wiasreadproplong.htm
 old-project: image
 ms.assetid: 77fc58fd-1bcf-4a68-b083-fa2bfa3ac312
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiasReadPropLong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,31 @@ HRESULT _stdcall wiasReadPropLong(
 ## -parameters
 <dl>
 
-### -param <i>pWiasContext</i> [in]
+### -param pWiasContext [in]
 
 <dd>
 <p>Pointer to a WIA item context.</p>
 </dd>
 
-### -param <i>propid</i> 
+### -param propid 
 
 <dd>
 <p>Specifies the property identifier.</p>
 </dd>
 
-### -param <i>plVal</i> [out]
+### -param plVal [out]
 
 <dd>
 <p>Pointer to a memory location that receives the value of the property.</p>
 </dd>
 
-### -param <i>plValOld</i> [out, optional]
+### -param plValOld [out, optional]
 
 <dd>
 <p>Pointer to a memory location that receives the property's previous value. If this information is not needed, set this parameter to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>bMustExist</i> 
+### -param bMustExist 
 
 <dd>
 <p>Indicates whether the property must exist. If set to <b>TRUE</b>, the property must exist, if set to <b>FALSE</b>, the property does not have to exist.</p>
@@ -168,4 +168,4 @@ HRESULT _stdcall wiasReadPropLong(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasReadPropLong function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasReadPropLong function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

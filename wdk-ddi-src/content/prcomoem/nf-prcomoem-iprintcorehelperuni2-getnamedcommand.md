@@ -59,19 +59,19 @@ HRESULT GetNamedCommand(
 ## -parameters
 <dl>
 
-### -param <i>pDevmode</i> [in]
+### -param pDevmode [in]
 
 <dd>
 <p>A pointer to a DEVMODE structure.</p>
 </dd>
 
-### -param <i>cbSize</i> [in]
+### -param cbSize [in]
 
 <dd>
 <p>The number of bytes in <i>pDevmode</i>, not the number of bytes written.</p>
 </dd>
 
-### -param <i>pszCommandName</i> [in]
+### -param pszCommandName [in]
 
 <dd>
 <p>The command name. This parameter accepts standard command names from the GPD, except for those that require an *Order attribute. Those six sections of ordered command sequences are accessible via the following special command names:</p>
@@ -85,13 +85,13 @@ HRESULT GetNamedCommand(
 </ul>
 </dd>
 
-### -param <i>ppCommandBytes</i> [out]
+### -param ppCommandBytes [out]
 
 <dd>
 <p>The output buffer. This buffer does not need to be freed by the caller.</p>
 </dd>
 
-### -param <i>pcbCommandSize</i> [out]
+### -param pcbCommandSize [out]
 
 <dd>
 <p>The size of the output buffer.    </p>

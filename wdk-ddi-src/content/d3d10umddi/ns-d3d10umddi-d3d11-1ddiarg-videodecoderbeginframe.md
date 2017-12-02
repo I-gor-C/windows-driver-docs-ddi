@@ -56,20 +56,20 @@ typedef struct D3D11_1DDIARG_VIDEODECODERBEGINFRAME {
 ## -struct-fields
 <dl>
 
-### -field <b>hOutputView</b>
+### -field hOutputView
 
 <dd>
 <p>A handle to the driver's private data for the video decoder output view. This handle was created through a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createvideoprocessoroutputview.md">CreateVideoProcessorOutputView</a> function.</p>
 </dd>
 
-### -field <b>pContentKey</b>
+### -field pContentKey
 
 <dd>
 <p>A pointer to a content key that was used to encrypt the video frame data. If no content key was used, set this member to <b>NULL</b>. If the caller provides a content key, the caller must use the session key to encrypt the content key.</p>
 <p>For more information, see the <a href="display.videodecoderbeginframe">VideoDecoderBeginFrame</a> function.</p>
 </dd>
 
-### -field <b>ContentKeySize</b>
+### -field ContentKeySize
 
 <dd>
 <p>The size, in bytes, of the content key that is specified in the <b>pContentKey</b> member.</p>

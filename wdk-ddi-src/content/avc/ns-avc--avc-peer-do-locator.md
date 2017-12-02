@@ -56,19 +56,19 @@ typedef struct _AVC_PEER_DO_LOCATOR {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeAddress</b>
+### -field NodeAddress
 
 <dd>
 <p>Set to the NodeAddress of the device whose driver instance is to be located.</p>
 </dd>
 
-### -field <b>Generation</b>
+### -field Generation
 
 <dd>
 <p>Set to the Generation obtained with the NodeAddress.</p>
 </dd>
 
-### -field <b>DeviceObject</b>
+### -field DeviceObject
 
 <dd>
 <p>On success, points to the FDO of the <i>avc.sys</i> instance. The caller must release the reference to this object (by using <b>ObDereferenceObject</b>) when finished with it.</p>

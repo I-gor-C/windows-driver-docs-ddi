@@ -7,7 +7,7 @@ old-location: netvista\ril_readmsg.htm
 old-project: netvista
 ms.assetid: a38c089b-a5f4-4fd2-ab94-ead53228c5e9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_ReadMsg
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_ReadMsg(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>hUiccApp</i> 
+### -param hUiccApp 
 
 <dd></dd>
 
-### -param <i>dwIndex</i> 
+### -param dwIndex 
 
 <dd></dd>
 </dl>

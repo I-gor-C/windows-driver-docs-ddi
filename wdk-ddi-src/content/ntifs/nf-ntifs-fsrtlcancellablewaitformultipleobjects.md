@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlcancellablewaitformultipleobjects.htm
 old-project: ifsk
 ms.assetid: 9fb5805c-bb12-41ba-8c72-526b4193b6b5
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FsRtlCancellableWaitForMultipleObjects
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,25 +59,25 @@ NTSTATUS  FsRtlCancellableWaitForMultipleObjects(
 ## -parameters
 <dl>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>The number of objects to be waited on.</p>
 </dd>
 
-### -param <i>ObjectArray</i> [in]
+### -param ObjectArray [in]
 
 <dd>
 <p>A pointer to an array of pointers to dispatcher objects (events, mutexes, semaphores, threads, and timers) for which the caller supplies the storage.</p>
 </dd>
 
-### -param <i>WaitType</i> [in]
+### -param WaitType [in]
 
 <dd>
 <p>Either <b>WaitAll</b>, which indicates that all of the specified objects must attain a signaled state before the wait is satisfied; or <b>WaitAny</b>, which indicates that any one of the objects must attain a signaled state before the wait is satisfied.</p>
 </dd>
 
-### -param <i>Timeout</i> [in, optional]
+### -param Timeout [in, optional]
 
 <dd>
 <p>A pointer to an optional time-out value. This parameter specifies the absolute or relative time, in 100 nanosecond units, at which the wait is to be completed.</p>
@@ -87,13 +87,13 @@ NTSTATUS  FsRtlCancellableWaitForMultipleObjects(
 <p>A time-out value of zero (that is, <i>*Timeout</i> == 0) allows you to test a set of wait conditions, and to conditionally perform any additional actions if the wait can be immediately satisfied, as in the acquisition of a mutex.</p>
 </dd>
 
-### -param <i>WaitBlockArray</i> [in, optional]
+### -param WaitBlockArray [in, optional]
 
 <dd>
 <p>If <i>Count</i> &lt;= THREAD_WAIT_OBJECTS, <i>WaitBlockArray</i> can be <b>NULL</b>. Otherwise, this parameter must point to a memory buffer of <code>sizeof(KWAIT_BLOCK * Count)</code> bytes. The routine uses this buffer for record-keeping while performing the wait operation.</p>
 </dd>
 
-### -param <i>Irp</i> [in, optional]
+### -param Irp [in, optional]
 
 <dd>
 <p>A pointer to the original IRP that corresponds to the I/O operation that was issued by the user and that can be canceled by the user.  The caller must ensure that the IRP will remain valid for the duration of this routine and that the IRP must not have a cancel routine set (for example, <a href="..\wdm\nf-wdm-iosetcancelroutine.md">IoSetCancelRoutine</a> must not have been called on the IRP).  Note that the IRP must be held by the caller, it cannot be passed to a lower-level driver.</p>
@@ -138,7 +138,7 @@ NTSTATUS  FsRtlCancellableWaitForMultipleObjects(
 
 <p>A mutex can be recursively acquired only MINLONG times.  If this limit is exceeded, the routine raises a STATUS_MUTANT_LIMIT_EXCEEDED exception.</p>
 
-<p><b>FsRtlCancellableWaitForMultipleObjects</b> must be called at IRQL PASSIVE_LEVEL if the optional <i>Irp</i> parameter points to a valid IRP. If the <i>Irp</i> parameter is not used, the routine can be called at IRQL less or equal to APC_LEVEL. Normal kernel APCs can be disabled by the caller, if needed, by calling the <a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a> or <a href="ifsk.fsrtlenterfilesystem">FsRtlEnterFileSystem</a> routines. However, special kernel APCs must not be disabled. </p>
+<p><b>FsRtlCancellableWaitForMultipleObjects</b> must be called at IRQL PASSIVE_LEVEL if the optional <i>Irp</i> parameter points to a valid IRP. If the <i>Irp</i> parameter is not used, the routine can be called at IRQL less or equal to APC_LEVEL. Normal kernel APCs can be disabled by the caller, if needed, by calling the <a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a> or <a href="ifsk.fsrtlenterfilesystem">FsRtlEnterFileSystem</a> routines. However, special kernel APCs must not be disabled. </p>
 
 <p><b>FsRtlCancellableWaitForMultipleObjects</b> will assert on debug builds if the IRQL is greater or equal to APC_LEVEL and the <i>Irp</i> parameter points to a valid IRP.</p>
 
@@ -234,4 +234,4 @@ NTSTATUS  FsRtlCancellableWaitForMultipleObjects(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCancellableWaitForMultipleObjects routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCancellableWaitForMultipleObjects routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

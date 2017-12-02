@@ -7,7 +7,7 @@ old-location: ifsk\token_type.htm
 old-project: ifsk
 ms.assetid: 2ad78d17-9baa-45cf-a620-01c2ccd14338
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: VOLUME_READ_PLEX_INPUT, VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ typedef enum _TOKEN_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="TokenPrimary"></a><a id="tokenprimary"></a><a id="TOKENPRIMARY"></a><b>TokenPrimary</b>
+### -field TokenPrimary
 
 <dd>
 <p>Indicates a primary token. </p>
 </dd>
 
-### -field <a id="TokenImpersonation"></a><a id="tokenimpersonation"></a><a id="TOKENIMPERSONATION"></a><b>TokenImpersonation</b>
+### -field TokenImpersonation
 
 <dd>
 <p>Indicates an impersonation token. </p>
@@ -105,4 +105,4 @@ typedef enum _TOKEN_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TOKEN_TYPE enumeration%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TOKEN_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

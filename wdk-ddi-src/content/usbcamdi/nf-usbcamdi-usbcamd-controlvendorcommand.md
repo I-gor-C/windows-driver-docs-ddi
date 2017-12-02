@@ -63,55 +63,55 @@ NTSTATUS USBCAMD_ControlVendorCommand(
 ## -parameters
 <dl>
 
-### -param <i>DeviceContext</i> [in]
+### -param DeviceContext [in]
 
 <dd>
 <p>Pointer to device-specific context.</p>
 </dd>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>Specifies the value of the <b>Request</b> field for the vendor command.</p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>Specifies the value of the <b>Value</b> field for the vendor command.</p>
 </dd>
 
-### -param <i>Index</i> [in]
+### -param Index [in]
 
 <dd>
 <p>Specifies the value of the <b>Index</b> field for the vendor command.</p>
 </dd>
 
-### -param <i>Buffer</i> [in, out, optional]
+### -param Buffer [in, out, optional]
 
 <dd>
 <p>Pointer to a data buffer if the command has data. If the command does not have any data, this value is <b>NULL</b>.</p>
 </dd>
 
-### -param <i>BufferLength</i> [in, out]
+### -param BufferLength [in, out]
 
 <dd>
 <p>Pointer to the buffer length value. Buffer length is expressed in bytes. If the value of <i>Buffer</i> is <b>NULL</b>, <i>BufferLength</i> may also be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>GetData</i> [in]
+### -param GetData [in]
 
 <dd>
 <p><i>GetData</i> indicates data was sent from the device to the host.</p>
 </dd>
 
-### -param <i>CommandComplete</i> [in, optional]
+### -param CommandComplete [in, optional]
 
 <dd>
 <p>Pointer to a camera minidriver defined <a href="stream.commandcompletefunction">CommandCompleteFunction</a>, which is called when the bulk read or write is completed. This value can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>CommandContext</i> [in, optional]
+### -param CommandContext [in, optional]
 
 <dd>
 <p>Pointer to a block of memory, that is passed as an argument to the camera minidriver defined <a href="stream.commandcompletefunction">CommandCompleteFunction</a>.</p>

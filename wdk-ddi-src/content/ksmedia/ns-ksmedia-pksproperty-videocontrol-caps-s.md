@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>StreamIndex</b>
+### -field StreamIndex
 
 <dd>
 <p>Contains the zero-based index of the stream.</p>
 </dd>
 
-### -field <b>VideoControlCaps</b>
+### -field VideoControlCaps
 
 <dd>
 <p>Indicates the video control capabilities for the specified stream. This member must be set to one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks-videocontrolflags.md">KS_VideoControlFlags</a> enumeration.</p>

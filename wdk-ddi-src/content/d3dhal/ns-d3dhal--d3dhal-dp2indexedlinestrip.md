@@ -54,7 +54,7 @@ typedef struct _D3DHAL_DP2INDEXEDLINESTRIP {
 ## -struct-fields
 <dl>
 
-### -field <b>wV</b>
+### -field wV
 
 <dd>
 <p>Specifies the indexes into the vertex buffer from which the driver obtains coordinate data for the vertices making up the line strip. </p>

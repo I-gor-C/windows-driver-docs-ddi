@@ -56,13 +56,13 @@ PKEVENT IoCreateSynchronizationEvent(
 ## -parameters
 <dl>
 
-### -param <i>EventName</i> [in]
+### -param EventName [in]
 
 <dd>
 <p>Pointer to a buffer containing a null-terminated Unicode string that names the event.</p>
 </dd>
 
-### -param <i>EventHandle</i> [out]
+### -param EventHandle [out]
 
 <dd>
 <p>Pointer to a location in which to return a handle for the event object. In Windows Server 2003 and later versions of Windows, the returned handle is a <a href="wdkgloss.k#wdkgloss.kernel_handle#wdkgloss.kernel_handle"><i>kernel handle</i></a>. </p>

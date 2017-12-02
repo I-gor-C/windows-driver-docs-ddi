@@ -57,13 +57,13 @@ PVOID ExRegisterCallback(
 ## -parameters
 <dl>
 
-### -param <i>CallbackObject</i> [in, out]
+### -param CallbackObject [in, out]
 
 <dd>
 <p>A pointer to a callback object obtained from the <a href="..\wdm\nf-wdm-excreatecallback.md">ExCreateCallback</a> routine.</p>
 </dd>
 
-### -param <i>CallbackFunction</i> [in]
+### -param CallbackFunction [in]
 
 <dd>
 <p>A pointer to a driver-implemented callback routine, which must be nonpageable. The callback routine must conform to the following prototype:</p>
@@ -86,19 +86,19 @@ PVOID ExRegisterCallback(
 <p></p>
 <dl>
 
-### -param <a id="CallbackContext"></a><a id="callbackcontext"></a><a id="CALLBACKCONTEXT"></a><i>CallbackContext</i>
+### -param CallbackContext
 
 <dd>
 <p>A pointer to a driver-supplied context area as specified in the <i>CallbackContext</i> parameter of <b>ExRegisterCallback</b>.</p>
 </dd>
 
-### -param <a id="Argument1"></a><a id="argument1"></a><a id="ARGUMENT1"></a><i>Argument1</i>
+### -param Argument1
 
 <dd>
 <p>A pointer to a parameter defined by the callback object.</p>
 </dd>
 
-### -param <a id="Argument2"></a><a id="argument2"></a><a id="ARGUMENT2"></a><i>Argument2</i>
+### -param Argument2
 
 <dd>
 <p>A pointer to a parameter defined by the callback object.</p>
@@ -106,7 +106,7 @@ PVOID ExRegisterCallback(
 </dl>
 </dd>
 
-### -param <i>CallbackContext</i> [in, optional]
+### -param CallbackContext [in, optional]
 
 <dd>
 <p>A pointer to a caller-defined structure of data items to be passed as the context parameter of the callback routine each time it is called. Typically the context is part of the caller's device object extension.</p>

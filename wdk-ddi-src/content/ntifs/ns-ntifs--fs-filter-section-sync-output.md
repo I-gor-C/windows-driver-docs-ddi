@@ -7,7 +7,7 @@ old-location: ifsk\fs_filter_section_sync_output_.htm
 old-project: ifsk
 ms.assetid: 3378D971-B5D8-485B-8C58-BE5874445407
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FS_FILTER_SECTION_SYNC_OUTPUT, FS_FILTER_SECTION_SYNC_OUTPUT, *PFS_FILTER_SECTION_SYNC_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ typedef struct _FS_FILTER_SECTION_SYNC_OUTPUT  {
 ## -struct-fields
 <dl>
 
-### -field <b>StructureSize</b>
+### -field StructureSize
 
 <dd>
 <p>The size of the structure.</p>
 </dd>
 
-### -field <b>SizeReturned</b>
+### -field SizeReturned
 
 <dd>
 <p>The size of the structure which has been successfully populated with information on completion.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for future use.  Should be zero.</p>
 </dd>
 
-### -field <b>DesiredReadAlignment</b>
+### -field DesiredReadAlignment
 
 <dd>
 <p>Specifies the optimal size for efficient reads.  Faults from the section will attempt, but not guarantee, to read in multiples of this size.  This value should be a multiple of PAGE_SIZE.</p>

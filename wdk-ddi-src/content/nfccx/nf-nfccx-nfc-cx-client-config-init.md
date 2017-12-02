@@ -55,13 +55,13 @@ FORCEINLINE VOID  NFC_CX_CLIENT_CONFIG_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Config</i> [out]
+### -param Config [out]
 
 <dd>
 <p>A pointer to an <a href="..\nfccx\ns-nfccx--nfc-cx-client-config.md">NFC_CX_CLIENT_CONFIG</a> structure. </p>
 </dd>
 
-### -param <i>BusType</i> [in]
+### -param BusType [in]
 
 <dd>
 <p>An <a href="..\nfccx\ne-nfccx--nfc-cx-transport-type.md">NFC_CX_TRANSPORT_TYPE</a> enumeration. </p>

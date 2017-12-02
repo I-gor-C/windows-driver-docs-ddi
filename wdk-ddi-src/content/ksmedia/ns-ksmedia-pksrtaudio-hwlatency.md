@@ -56,19 +56,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>FifoSize</b>
+### -field FifoSize
 
 <dd>
 <p>Specifies the size, in bytes, of the hardware FIFO.</p>
 </dd>
 
-### -field <b>ChipsetDelay</b>
+### -field ChipsetDelay
 
 <dd>
 <p>Specifies the delay through the chipset in 100-nanosecond units.</p>
 </dd>
 
-### -field <b>CodecDelay</b>
+### -field CodecDelay
 
 <dd>
 <p>Specifies the delay through the codec in 100-nanosecond units.</p>

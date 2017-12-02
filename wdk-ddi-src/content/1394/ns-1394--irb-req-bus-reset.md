@@ -7,7 +7,7 @@ old-location: ieee\irb_req_bus_reset.htm
 old-project: IEEE
 ms.assetid: 56B7D001-2EC3-4397-B520-193CCF52A9EE
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_REQ_BUS_RESET, IRB_REQ_BUS_RESET
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,7 +53,7 @@ typedef struct _IRB_REQ_BUS_RESET {
 ## -struct-fields
 <dl>
 
-### -field <b>fulFlags</b>
+### -field fulFlags
 
 <dd>
 <p>Set this flag to BUS_RESET_FLAGS_FORCE_ROOT to make the local node the root node. All other values indicate that the node is not root.</p>

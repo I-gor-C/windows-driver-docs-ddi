@@ -56,19 +56,19 @@ BOOL WcsEnumColorProfilesSize(
 ## -parameters
 <dl>
 
-### -param <i>profileManagementScope</i> [in]
+### -param profileManagementScope [in]
 
 <dd>
 <p>A <a href="..\icm\ne-icm-wcs-profile-management-scope.md">WCS_PROFILE_MANAGEMENT_SCOPE</a> value that specifies the scope of the profile management operation performed by this function.</p>
 </dd>
 
-### -param <i>pEnumRecord</i> [in]
+### -param pEnumRecord [in]
 
 <dd>
 <p>A pointer to a structure that specifies the enumeration criteria.</p>
 </dd>
 
-### -param <i>pdwSize</i> [out]
+### -param pdwSize [out]
 
 <dd>
 <p>A pointer to a variable that receives the size of the buffer that is required to receive all enumerated profile names. This value is used by the <i>dwSize</i> parameter of the <a href="..\icm\nf-icm-wcsenumcolorprofiles.md">WcsEnumColorProfiles</a> function.</p>

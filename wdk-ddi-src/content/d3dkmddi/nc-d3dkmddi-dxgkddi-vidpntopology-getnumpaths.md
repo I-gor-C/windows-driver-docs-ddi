@@ -58,13 +58,13 @@ NTSTATUS APIENTRY pfnGetNumPaths(
 ## -parameters
 <dl>
 
-### -param <i>hVidPnTopology</i> [in]
+### -param hVidPnTopology [in]
 
 <dd>
 <p>[in] A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-gettopology.md">pfnGetTopology</a> function of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpn-interface.md">DXGK_VIDPN_INTERFACE</a> interface.</p>
 </dd>
 
-### -param <i>pNumPaths</i> [out]
+### -param pNumPaths [out]
 
 <dd>
 <p>[out] A pointer to a SIZE_T-typed variable that receives the number of paths.</p>

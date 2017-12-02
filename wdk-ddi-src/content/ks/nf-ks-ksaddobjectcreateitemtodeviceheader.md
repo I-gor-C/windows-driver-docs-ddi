@@ -58,31 +58,31 @@ NTSTATUS KsAddObjectCreateItemToDeviceHeader(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [in]
+### -param Header [in]
 
 <dd>
 <p>Points to the device header that contains the previously allocated child create table.</p>
 </dd>
 
-### -param <i>Create</i> [in]
+### -param Create [in]
 
 <dd>
 <p>Specifies the create dispatch function.</p>
 </dd>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>Specifies the context parameter.</p>
 </dd>
 
-### -param <i>ObjectClass</i> [in]
+### -param ObjectClass [in]
 
 <dd>
 <p>Specifies a pointer to a <b>NULL</b>-terminated character string that will be used for comparison on create requests. This pointer must remain valid while the device object is active.</p>
 </dd>
 
-### -param <i>SecurityDescriptor</i> [in, optional]
+### -param SecurityDescriptor [in, optional]
 
 <dd>
 <p>Specifies the security descriptor. This must remain valid while the device object is active. This parameter is optional.</p>

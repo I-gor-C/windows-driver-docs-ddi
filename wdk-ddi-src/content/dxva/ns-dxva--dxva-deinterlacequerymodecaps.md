@@ -56,19 +56,19 @@ typedef struct _DXVA_DeinterlaceQueryModeCaps {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Indicates the size of this structure.</p>
 </dd>
 
-### -field <b>Guid</b>
+### -field Guid
 
 <dd>
 <p>Specifies for which mode of deinterlacing the driver should return capabilities.</p>
 </dd>
 
-### -field <b>VideoDesc</b>
+### -field VideoDesc
 
 <dd>
 <p>Specifies a <a href="..\dxva\ns-dxva--dxva-videodesc.md">DXVA_VideoDesc</a> structure that describes the type of video that is to be deinterlaced.</p>

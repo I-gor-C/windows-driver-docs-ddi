@@ -7,7 +7,7 @@ old-location: netvista\wwan_ipv6_address.htm
 old-project: netvista
 ms.assetid: 3DAC7E30-B938-429C-B389-59F924216B04
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_IPV6_ADDRESS, WWAN_IPV6_ADDRESS, *PWWAN_IPV6_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ typedef struct _WWAN_IPV6_ADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>OnLinkPrefixLength</b>
+### -field OnLinkPrefixLength
 
 <dd>
 <p>The length of the prefix or network part of the IP address.</p>
 </dd>
 
-### -field <b>IPV6Address[16]</b>
+### -field IPV6Address[16]
 
 <dd>
 <p>The IPV6 address of the PDP context.</p>

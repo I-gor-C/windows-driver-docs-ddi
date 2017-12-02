@@ -55,7 +55,7 @@ PKDEVICE_QUEUE_ENTRY KeRemoveDeviceQueue(
 ## -parameters
 <dl>
 
-### -param <i>DeviceQueue</i> [in, out]
+### -param DeviceQueue [in, out]
 
 <dd>
 <p>Pointer to an initialized device queue object for which the caller provides the storage. </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilmsgclass_2.htm
 old-project: netvista
 ms.assetid: 95818f9a-9053-4fb3-8bcb-6e318ed6bae5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ typedef enum _RILMSGCLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGCLASS_INCOMING"></a><a id="ril_msgclass_incoming"></a><b>RIL_MSGCLASS_INCOMING</b>
+### -field RIL_MSGCLASS_INCOMING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCLASS_OUTGOING"></a><a id="ril_msgclass_outgoing"></a><b>RIL_MSGCLASS_OUTGOING</b>
+### -field RIL_MSGCLASS_OUTGOING
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCLASS_BROADCAST"></a><a id="ril_msgclass_broadcast"></a><b>RIL_MSGCLASS_BROADCAST</b>
+### -field RIL_MSGCLASS_BROADCAST
 
 <dd></dd>
 
-### -field <a id="RIL_MSGCLASS_ALL"></a><a id="ril_msgclass_all"></a><b>RIL_MSGCLASS_ALL</b>
+### -field RIL_MSGCLASS_ALL
 
 <dd></dd>
 </dl>

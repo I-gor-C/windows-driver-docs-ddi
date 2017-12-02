@@ -60,19 +60,19 @@ NTSTATUS PcwCallback(
 ## -parameters
 <dl>
 
-### -param <i>Type</i> [in]
+### -param Type [in]
 
 <dd>
 <p>The callback type. Specifies why the callback is called. Possible values are PcwCallbackAddCounter, PcwCallbackRemoveCounter, PcwCallbackEnumerateInstances, and PcwCallbackCollectData. </p>
 </dd>
 
-### -param <i>Info</i> [in]
+### -param Info [in]
 
 <dd>
 <p>A pointer to a PCW_CALLBACK_INFORMATION union that supplies details about the reason why the provider is being called.</p>
 </dd>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>A pointer to the callback context. This value is supplied by the provider when calling <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a>.</p>

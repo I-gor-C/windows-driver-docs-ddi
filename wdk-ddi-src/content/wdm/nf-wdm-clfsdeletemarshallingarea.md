@@ -55,7 +55,7 @@ NTSTATUS ClfsDeleteMarshallingArea(
 ## -parameters
 <dl>
 
-### -param <i>pvMarshalContext</i> [in]
+### -param pvMarshalContext [in]
 
 <dd>
 <p>A pointer to an opaque context that represents a marshalling area. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.</p>

@@ -56,7 +56,7 @@ NTSTATUS IoConnectInterruptEx(
 ## -parameters
 <dl>
 
-### -param <i>Parameters</i> [in, out]
+### -param Parameters [in, out]
 
 <dd>
 <p>For more information, see the <a href="..\iointex\nf-iointex-wdmlibioconnectinterruptex.md">WdmlibIoConnectInterruptEx</a> function.</p>

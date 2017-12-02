@@ -55,7 +55,7 @@ NTSTATUS ZwUnloadDriver(
 ## -parameters
 <dl>
 
-### -param <i>DriverServiceName</i> [in]
+### -param DriverServiceName [in]
 
 <dd>
 <p>Pointer to a counted Unicode string that specifies a path to the driver's registry key, <b>\Registry\Machine\System\CurrentControlSet\Services\</b><i>DriverName</i>, where <i>DriverName</i> is the name of the driver. </p>

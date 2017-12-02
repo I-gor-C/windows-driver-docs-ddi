@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>InputIndex</b>
+### -field InputIndex
 
 <dd>
 <p>Specifies the connection index to be used as the tuner input. This value should be in the range of 0 through (number of inputs-1).</p>

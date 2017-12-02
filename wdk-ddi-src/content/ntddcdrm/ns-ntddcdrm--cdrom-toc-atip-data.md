@@ -57,25 +57,25 @@ typedef struct _CDROM_TOC_ATIP_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Indicates the number of bytes to be transferred in response to the command. This length value does not include the length of the <b>Length </b>member itself. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Descriptors</b>
+### -field Descriptors
 
 <dd>
 <p>Contains zero or more ATIP data block descriptors of type <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-atip-data-block.md">CDROM_TOC_ATIP_DATA_BLOCK</a>. </p>

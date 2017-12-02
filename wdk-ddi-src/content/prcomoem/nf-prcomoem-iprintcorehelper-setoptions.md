@@ -61,43 +61,43 @@ STDMETHOD  SetOptions(
 ## -parameters
 <dl>
 
-### -param <i>pDevmode</i> [in, optional]
+### -param pDevmode [in, optional]
 
 <dd>
 <p>A pointer to a <a href="display.devmodew">DEVMODEW</a> structure. If this pointer is provided, <b>IPrintCoreHelper::SetOptions</b> should use the DEVMODEW structure that is pointed to by <i>pDevmode</i> instead of the default or current DEVMODEW structure. If this method is called from the plug-in provider or from either <a href="print.iprintoemps_devmode">IPrintOemPS::DevMode</a> or <a href="print.iprintoemuni_devmode">IPrintOemUni::DevMode</a>, this parameter is required. In most other situations, the parameter should be <b>NULL</b>. When the core driver sets <i>pDevmode</i> to <b>NULL</b>, it modifies its internal state rather than that of the passed-in DEVMODEW structure. This is required during operations such as full UI replacement, where the DEVMODEW structure returned by a DDI, such as <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a>, is being serviced by the core driver's UI module.</p>
 </dd>
 
-### -param <i>cbSize</i> [in]
+### -param cbSize [in]
 
 <dd>
 <p>The size, in bytes, of the DEVMODEW structure that is pointed to by the <i>pDevmode</i> parameter. </p>
 </dd>
 
-### -param <i>bResolveConflicts</i> [in]
+### -param bResolveConflicts [in]
 
 <dd>
 <p>A Boolean value that indicates whether <b>IPrintCoreHelper::SetOptions</b> should resolve conflicts that arise from one or more constraints specified in the GPD or PPD view of the configuration file, as well as constraints for functionality implemented by Unidrv or Pscript or the print processor. If <b>TRUE</b>, this method should attempt to resolve the conflict. If <b>FALSE</b>, this method should not attempt to resolve conflicts. For more information, see the Remarks section.</p>
 </dd>
 
-### -param <i>pFOPairs[]</i> [in]
+### -param pFOPairs[] [in]
 
 <dd>
 <p>An array of <a href="..\prcomoem\ns-prcomoem--print-feature-option.md">PRINT_FEATURE_OPTION</a> elements, where each element contains a feature-option pair. Each feature-option pair lists a feature and the option to select for that feature. All settings are applied sequentially. Duplicates are not disallowed, but settings that appear later in the array (that is, at a higher index) override those that appear earlier in the array. </p>
 </dd>
 
-### -param <i>cPairs</i> [in]
+### -param cPairs [in]
 
 <dd>
 <p>The number of feature-option pairs that are pointed to by the <i>pFOPairs</i> parameter. </p>
 </dd>
 
-### -param <i>pcPairsWritten</i> [out]
+### -param pcPairsWritten [out]
 
 <dd>
 <p>A pointer to a variable that receives the number of feature-option pairs that were successfully saved before <b>IPrintCoreHelper::SetOptions</b> returned or failed. If this method returns successfully, *<i>pcPairsWritten</i> will have the same value as <i>cPairs</i>. If the method fails, *<i>pcPairsWritten</i> can have any value from zero through the value of <i>cPairs</i>. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>pdwResult</i> [out]
+### -param pdwResult [out]
 
 <dd>
 <p>A pointer to a variable that receives the status of the conflict resolution. The status can be one of the following values.</p>

@@ -56,19 +56,19 @@ typedef struct _D3DHAL_DP2TEXTURESTAGESTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>wStage</b>
+### -field wStage
 
 <dd>
 <p>Identifies the texture stage where to update the texture state. This member can be an integer in the range 0 through 7, with the highest numbered texture being closest to the frame buffer.</p>
 </dd>
 
-### -field <b>TSState</b>
+### -field TSState
 
 <dd>
 <p>Specifies a D3DTEXTURESTAGESTATETYPE enumerated value that specifies the texture state to be updated. DirectX 9.0 and later applications can use values in the D3DSAMPLERSTATETYPE enumeration to control the characteristics of sampler texture-related render states. In DirectX 8.0 and earlier, these sampler states were included in the D3DTEXTURESTAGESTATETYPE enumeration. The runtime maps user-mode sampler states (D3DSAMP_<i>Xxx</i>) to kernel-mode D3DTSS_<i>Xxx</i> values so that drivers are not required to process user-mode sampler states. For more information about D3DTEXTURESTAGESTATETYPE and D3DSAMPLERSTATETYPE, see the DirectX SDK documentation.</p>
 </dd>
 
-### -field <b>dwValue</b>
+### -field dwValue
 
 <dd>
 <p>Specifies the value that the driver should update the texture state identified by <b>TSState</b> to.</p>

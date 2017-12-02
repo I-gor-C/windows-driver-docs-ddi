@@ -59,13 +59,13 @@ NTSTATUS ClfsMgmtSetLogFileSize(
 ## -parameters
 <dl>
 
-### -param <i>LogFile</i> [in]
+### -param LogFile [in]
 
 <dd>
 <p>A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents the CLFS log, or a stream within the log, to which containers are being added or deleted.</p>
 </dd>
 
-### -param <i>NewSizeInContainers</i> [in]
+### -param NewSizeInContainers [in]
 
 <dd>
 <p>A pointer to the requested log size. The caller sets this parameter to one of the following values.</p>
@@ -114,19 +114,19 @@ NTSTATUS ClfsMgmtSetLogFileSize(
 <p>To determine the actual log size, which might be different from the requested size, use the <i>ResultingSizeInContainers</i> parameter.</p>
 </dd>
 
-### -param <i>ResultingSizeInContainers</i> [out]
+### -param ResultingSizeInContainers [out]
 
 <dd>
 <p>A pointer to the resulting log size. If successful, the routine writes the actual size of the log, expressed as the number of containers in the log, to the location pointed to by this parameter.</p>
 </dd>
 
-### -param <i>CompletionRoutine</i> [in, optional]
+### -param CompletionRoutine [in, optional]
 
 <dd>
 <p> Not used.  Set to NULL.</p>
 </dd>
 
-### -param <i>CompletionRoutineData</i> [in, optional]
+### -param CompletionRoutineData [in, optional]
 
 <dd>
 <p> Not used. Set to NULL.</p>

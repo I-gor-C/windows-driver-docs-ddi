@@ -58,21 +58,21 @@ req.product: Windows 10 or later.
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd>
-<p>A handle to the printer object of interest. Use the <a href="NULL">OpenPrinter</a>, <a href="gdi.openprinter2">OpenPrinter2</a>, or the <a href="gdi.addprinter">AddPrinter</a> function to retrieve a printer handle. 
+<p>A handle to the printer object of interest. Use the <a href="https://msdn.microsoft.com/8bbb46a8-2bba-4d15-a2e2-4770b52d2505">OpenPrinter</a>, <a href="gdi.openprinter2">OpenPrinter2</a>, or the <a href="gdi.addprinter">AddPrinter</a> function to retrieve a printer handle. 
 </p>
 </dd>
 
-### -param <i>JobId</i> [in]
+### -param JobId [in]
 
 <dd>
 <p>Identifier that specifies the print job. You obtain a print job identifier by calling the <a href="gdi.addjob">AddJob</a> function or the <a href="..\printoem\nf-printoem-oemstartdoc.md">StartDoc</a> function. 
 </p>
 </dd>
 
-### -param <i>pszName</i> [in]
+### -param pszName [in]
 
 <dd>
 <p>Name of the property that will be deleted. 

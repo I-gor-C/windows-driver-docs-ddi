@@ -7,7 +7,7 @@ old-location: netvista\rilimssubscribetype_2.htm
 old-project: netvista
 ms.assetid: 84b2de56-55f9-471c-8d32-84fe1365dfbf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILIMSSUBSCRIBETYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_IMSSUBSCRIBETYPE_MWI"></a><a id="ril_imssubscribetype_mwi"></a><b>RIL_IMSSUBSCRIBETYPE_MWI</b>
+### -field RIL_IMSSUBSCRIBETYPE_MWI
 
 <dd></dd>
 
-### -field <a id="RIL_IMSSUBSCRIBETYPE_CONFERENCE"></a><a id="ril_imssubscribetype_conference"></a><b>RIL_IMSSUBSCRIBETYPE_CONFERENCE</b>
+### -field RIL_IMSSUBSCRIBETYPE_CONFERENCE
 
 <dd></dd>
 
-### -field <a id="RIL_IMSSUBSCRIBETYPE_MAX"></a><a id="ril_imssubscribetype_max"></a><b>RIL_IMSSUBSCRIBETYPE_MAX</b>
+### -field RIL_IMSSUBSCRIBETYPE_MAX
 
 <dd></dd>
 </dl>

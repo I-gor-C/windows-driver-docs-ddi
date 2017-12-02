@@ -7,7 +7,7 @@ old-location: netvista\rilprovisionstatusprovisionstatus.htm
 old-project: netvista
 ms.assetid: ed7fc20a-b5d5-4dc6-ab95-5ee9258dbdae
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef enum _RILPROVISIONSTATUSPROVISIONSTATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PROVISIONSTAT_SUCCESS"></a><a id="ril_provisionstat_success"></a><b>RIL_PROVISIONSTAT_SUCCESS</b>
+### -field RIL_PROVISIONSTAT_SUCCESS
 
 <dd></dd>
 
-### -field <a id="RIL_PROVISIONSTAT_FAILURE_END"></a><a id="ril_provisionstat_failure_end"></a><b>RIL_PROVISIONSTAT_FAILURE_END</b>
+### -field RIL_PROVISIONSTAT_FAILURE_END
 
 <dd></dd>
 
-### -field <a id="RIL_PROVISIONSTAT_FAILURE_RETRY"></a><a id="ril_provisionstat_failure_retry"></a><b>RIL_PROVISIONSTAT_FAILURE_RETRY</b>
+### -field RIL_PROVISIONSTAT_FAILURE_RETRY
 
 <dd></dd>
 
-### -field <a id="RIL_PROVISIONSTAT_NEEDED"></a><a id="ril_provisionstat_needed"></a><b>RIL_PROVISIONSTAT_NEEDED</b>
+### -field RIL_PROVISIONSTAT_NEEDED
 
 <dd></dd>
 
-### -field <a id="RIL_PROVISIONSTAT_BIP_STARTED"></a><a id="ril_provisionstat_bip_started"></a><b>RIL_PROVISIONSTAT_BIP_STARTED</b>
+### -field RIL_PROVISIONSTAT_BIP_STARTED
 
 <dd></dd>
 
-### -field <a id="RIL_PROVISIONSTAT_BIP_SUCCESS"></a><a id="ril_provisionstat_bip_success"></a><b>RIL_PROVISIONSTAT_BIP_SUCCESS</b>
+### -field RIL_PROVISIONSTAT_BIP_SUCCESS
 
 <dd></dd>
 
-### -field <a id="RIL_PROVISIONSTAT_MAX"></a><a id="ril_provisionstat_max"></a><b>RIL_PROVISIONSTAT_MAX</b>
+### -field RIL_PROVISIONSTAT_MAX
 
 <dd></dd>
 </dl>

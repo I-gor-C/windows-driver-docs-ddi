@@ -54,7 +54,7 @@ PKSGATE KsPinGetAndGate(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> for which to return the processing control gate.</p>
@@ -65,7 +65,7 @@ PKSGATE KsPinGetAndGate(
 <p>Returns a pointer to the <a href="..\ks\ns-ks--ksgate.md">KSGATE</a> representing the processing control gate for <i>Pin</i>.</p>
 
 ## -remarks
-<p>For more information, see <a href="NULL">Flow Control Gates in AVStream</a>.</p>
+<p>For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.</p>
 
 ## -requirements
 <table>

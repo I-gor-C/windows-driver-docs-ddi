@@ -59,31 +59,31 @@ NTSTATUS ZwEnumerateTransactionObject(
 ## -parameters
 <dl>
 
-### -param <i>RootObjectHandle</i> [in, optional]
+### -param RootObjectHandle [in, optional]
 
 <dd>
 <p>A handle to a KTM object. The routine enumerates the child objects of the specified object. This parameter is optional and can be <b>NULL</b>. For more information about valid values for this parameter, see the table in the following Remarks section.</p>
 </dd>
 
-### -param <i>QueryType</i> [in]
+### -param QueryType [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--ktmobject-type.md">KTMOBJECT_TYPE</a>-typed value that identifies the object type to enumerate. For more information about valid values for this parameter, see the table in the following Remarks section.</p>
 </dd>
 
-### -param <i>ObjectCursor</i> [in, out]
+### -param ObjectCursor [in, out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that begins with a <a href="..\wdm\ns-wdm--ktmobject-cursor.md">KTMOBJECT_CURSOR</a> structure. <b>ZwEnumerateTransactionObject</b> uses the buffer to store the GUIDs of objects that it finds.</p>
 </dd>
 
-### -param <i>ObjectCursorLength</i> [in]
+### -param ObjectCursorLength [in]
 
 <dd>
 <p>The length, in bytes, of the buffer that <i>ObjectCursor</i> points to.</p>
 </dd>
 
-### -param <i>ReturnLength</i> [out]
+### -param ReturnLength [out]
 
 <dd>
 <p>A pointer to a caller-allocated location that receives the number of bytes that <b>ZwEnumerateTransactionObject</b> returns in the <i>ObjectCursor</i> buffer, including the length of the <b>KTMOBJECT_CURSOR</b> structure and the length of all returned GUIDs.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilcallmodificationcausecode_2.htm
 old-project: netvista
 ms.assetid: 44309e4e-a0a0-4aed-b942-2d15b8ab07dc
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,35 +62,35 @@ typedef enum _RILCALLMODIFICATIONCAUSECODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_RTP_TIMEOUT"></a><a id="ril_call_modified_cause_downgrade_rtp_timeout"></a><b>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_RTP_TIMEOUT</b>
+### -field RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_RTP_TIMEOUT
 
 <dd></dd>
 
-### -field <a id="RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_QOS"></a><a id="ril_call_modified_cause_downgrade_qos"></a><b>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_QOS</b>
+### -field RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_QOS
 
 <dd></dd>
 
-### -field <a id="RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_PACKET_LOSS"></a><a id="ril_call_modified_cause_downgrade_packet_loss"></a><b>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_PACKET_LOSS</b>
+### -field RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_PACKET_LOSS
 
 <dd></dd>
 
-### -field <a id="RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_LOW_THROUGHPUT"></a><a id="ril_call_modified_cause_downgrade_low_throughput"></a><b>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_LOW_THROUGHPUT</b>
+### -field RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_LOW_THROUGHPUT
 
 <dd></dd>
 
-### -field <a id="RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_THERMAL_MITIGATION"></a><a id="ril_call_modified_cause_downgrade_thermal_mitigation"></a><b>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_THERMAL_MITIGATION</b>
+### -field RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_THERMAL_MITIGATION
 
 <dd></dd>
 
-### -field <a id="RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_LIPSYNC"></a><a id="ril_call_modified_cause_downgrade_lipsync"></a><b>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_LIPSYNC</b>
+### -field RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_LIPSYNC
 
 <dd></dd>
 
-### -field <a id="RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_GENERIC_ERROR"></a><a id="ril_call_modified_cause_downgrade_generic_error"></a><b>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_GENERIC_ERROR</b>
+### -field RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_GENERIC_ERROR
 
 <dd></dd>
 
-### -field <a id="RIL_CALL_MODIFIED_CAUSE_MAX"></a><a id="ril_call_modified_cause_max"></a><b>RIL_CALL_MODIFIED_CAUSE_MAX</b>
+### -field RIL_CALL_MODIFIED_CAUSE_MAX
 
 <dd></dd>
 </dl>

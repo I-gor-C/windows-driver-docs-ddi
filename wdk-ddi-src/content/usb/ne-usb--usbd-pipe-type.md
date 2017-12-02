@@ -58,25 +58,25 @@ typedef enum _USBD_PIPE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UsbdPipeTypeControl"></a><a id="usbdpipetypecontrol"></a><a id="USBDPIPETYPECONTROL"></a><b>UsbdPipeTypeControl</b>
+### -field UsbdPipeTypeControl
 
 <dd>
 <p>Indicates that the pipe is a control pipe. </p>
 </dd>
 
-### -field <a id="UsbdPipeTypeIsochronous"></a><a id="usbdpipetypeisochronous"></a><a id="USBDPIPETYPEISOCHRONOUS"></a><b>UsbdPipeTypeIsochronous</b>
+### -field UsbdPipeTypeIsochronous
 
 <dd>
 <p>Indicates that the pipe is an isochronous transfer pipe.</p>
 </dd>
 
-### -field <a id="UsbdPipeTypeBulk"></a><a id="usbdpipetypebulk"></a><a id="USBDPIPETYPEBULK"></a><b>UsbdPipeTypeBulk</b>
+### -field UsbdPipeTypeBulk
 
 <dd>
 <p>Indicates that the pipe is a bulk transfer pipe. </p>
 </dd>
 
-### -field <a id="UsbdPipeTypeInterrupt"></a><a id="usbdpipetypeinterrupt"></a><a id="USBDPIPETYPEINTERRUPT"></a><b>UsbdPipeTypeInterrupt</b>
+### -field UsbdPipeTypeInterrupt
 
 <dd>
 <p>Indicates that the pipe is a interrupt pipe. </p>

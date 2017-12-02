@@ -7,7 +7,7 @@ old-location: netvista\ril_avoidcdmasystem.htm
 old-project: netvista
 ms.assetid: 03b445ca-a2af-4d84-bb2e-fea9f5800e20
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_AvoidCDMASystem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_AvoidCDMASystem(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>requestType</i> 
+### -param requestType 
 
 <dd></dd>
 </dl>

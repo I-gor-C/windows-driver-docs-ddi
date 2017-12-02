@@ -55,13 +55,13 @@ typedef struct _D3DKMDT_2DREGION {
 ## -struct-fields
 <dl>
 
-### -field <b>cx</b>
+### -field cx
 
 <dd>
 <p>The horizontal component of the point or offset.</p>
 </dd>
 
-### -field <b>cy</b>
+### -field cy
 
 <dd>
 <p>The vertical component of the point or offset.</p>

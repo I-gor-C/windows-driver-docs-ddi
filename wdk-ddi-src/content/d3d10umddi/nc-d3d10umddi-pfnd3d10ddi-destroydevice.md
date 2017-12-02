@@ -57,7 +57,7 @@ VOID  APIENTRY DestroyDevice(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p> A handle to the display device (graphics context). The Microsoft Direct3D runtime will free the memory region that it previously allocated for the object. Therefore, the driver can no longer access this memory region. </p>

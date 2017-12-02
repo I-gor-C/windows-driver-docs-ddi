@@ -58,13 +58,13 @@ VOID UcmTcpciPortControllerSetHardwareRequestQueue(
 ## -parameters
 <dl>
 
-### -param <i>PortControllerObject</i> 
+### -param PortControllerObject 
 
 <dd>
-<p>Handle to the port controller object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.</p>
+<p>Handle to the port controller object that the client driver received in the previous call to <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>.</p>
 </dd>
 
-### -param <i>HardwareRequestQueue</i> 
+### -param HardwareRequestQueue 
 
 <dd>
 <p>A handle to the framework queue object to assign.</p>
@@ -75,7 +75,7 @@ VOID UcmTcpciPortControllerSetHardwareRequestQueue(
 <p>This method does not return a value.</p>
 
 ## -remarks
-<p>The client driver must call <b>UcmTcpciPortControllerSetHardwareRequestQueue</b> after creating the port controller object. The driver must call this method only once before calling <a href="buses.ucmtcpciportcontrollerstart">UcmTcpciPortControllerStart</a>.</p>
+<p>The client driver must call <b>UcmTcpciPortControllerSetHardwareRequestQueue</b> after creating the port controller object. The driver must call this method only once before calling <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollerstart.md">UcmTcpciPortControllerStart</a>.</p>
 
 <p>The parent of the queue object is the port controller object. 
 </p>
@@ -123,7 +123,7 @@ VOID UcmTcpciPortControllerSetHardwareRequestQueue(
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>
+<a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>
 </dt>
 </dl>
 <p> </p>

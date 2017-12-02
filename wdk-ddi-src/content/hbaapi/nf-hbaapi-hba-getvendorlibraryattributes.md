@@ -55,13 +55,13 @@ HBA_UINT32 HBA_API HBA_GetVendorLibraryAttributes(
 ## -parameters
 <dl>
 
-### -param <i>AdapterIndex</i> [in]
+### -param AdapterIndex [in]
 
 <dd>
 <p>Contains an adapter index that identifies which library to query. Each library is associated with one or more HBAs. This routine uses an index to identify the HBA so that the caller does not have to open the adapter to obtain a name or handle. The HBA API library can be associated with more than one HBA, so the same library attributes might be retrieved for different HBAs. The adapter index must be within the range of values returned by <a href="..\hbaapi\nf-hbaapi-hba-getnumberofadapters.md">HBA_GetNumberOfAdapters</a>. </p>
 </dd>
 
-### -param <i>Attributes</i> [out]
+### -param Attributes [out]
 
 <dd>
 <p>Pointer, on return, to a structure of type <a href="..\hbaapi\ns-hbaapi-hba-libraryattributes.md">HBA_LibraryAttributes</a> that holds the attributes of the library associated with the adapter referenced by <i>AdapterIndex</i>.</p>

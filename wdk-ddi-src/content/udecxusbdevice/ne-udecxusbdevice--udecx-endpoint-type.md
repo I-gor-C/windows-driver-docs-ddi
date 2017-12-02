@@ -57,22 +57,22 @@ typedef enum _UDECX_ENDPOINT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UdecxEndpointTypeInvalid"></a><a id="udecxendpointtypeinvalid"></a><a id="UDECXENDPOINTTYPEINVALID"></a><b>UdecxEndpointTypeInvalid</b>
+### -field UdecxEndpointTypeInvalid
 
 <dd>
 <p>The endpoint is not of a valid type.</p>
 </dd>
 
-### -field <a id="UdecxEndpointTypeSimple"></a><a id="udecxendpointtypesimple"></a><a id="UDECXENDPOINTTYPESIMPLE"></a><b>UdecxEndpointTypeSimple</b>
+### -field UdecxEndpointTypeSimple
 
 <dd>
 <p>The endpoint is defined in the first (and only) interface setting of the interface. That device has only one configuration. The client driver creates all endpoints before the device is detected. </p>
 </dd>
 
-### -field <a id="UdecxEndpointTypeDynamic"></a><a id="udecxendpointtypedynamic"></a><a id="UDECXENDPOINTTYPEDYNAMIC"></a><b>UdecxEndpointTypeDynamic</b>
+### -field UdecxEndpointTypeDynamic
 
 <dd>
-<p>The endpoint is dynamically created in the client driver's implementation of the <a href="buses.evt_udecx_usb_device_endpoints_configure">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a> callback.</p>
+<p>The endpoint is dynamically created in the client driver's implementation of the <a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-endpoints-configure.md">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a> callback.</p>
 </dd>
 </dl>
 
@@ -96,7 +96,7 @@ typedef enum _UDECX_ENDPOINT_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbdeviceinitsetendpointstype">UdecxUsbDeviceInitSetEndpointsType</a>
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitsetendpointstype.md">UdecxUsbDeviceInitSetEndpointsType</a>
 </dt>
 <dt>
 <a href="buses.usb_endpoints_and_their_pipes">USB endpoints</a>

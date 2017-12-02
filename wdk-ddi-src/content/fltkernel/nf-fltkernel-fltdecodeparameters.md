@@ -7,7 +7,7 @@ old-location: ifsk\fltdecodeparameters.htm
 old-project: ifsk
 ms.assetid: c0569a55-7bc0-4c98-80b9-c332c313ca5b
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltDecodeParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ NTSTATUS FltDecodeParameters(
 ## -parameters
 <dl>
 
-### -param <i>CallbackData</i> [in]
+### -param CallbackData [in]
 
 <dd>
 <p>Pointer to the callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation. </p>
 </dd>
 
-### -param <i>MdlAddressPointer</i> [out]
+### -param MdlAddressPointer [out]
 
 <dd>
 <p>Pointer to a caller-supplied variable that receives a pointer to the <b>MdlAddress</b> (or <b>OutputMdlAddress</b>) member of the callback data parameter (<a href="..\fltkernel\ns-fltkernel--flt-parameters.md">FLT_PARAMETERS</a>) structure (note that this member is itself a pointer). This parameter is optional and can be <b>NULL</b>. If the I/O operation does not have an MDL field, this parameter receives <b>NULL</b>. </p>
 </dd>
 
-### -param <i>Buffer</i> [out]
+### -param Buffer [out]
 
 <dd>
 <p>Pointer to a caller-supplied variable that receives a pointer to the appropriate buffer member (depending on the major function code) in the callback data parameter structure (note that this member is itself a pointer). </p>
 </dd>
 
-### -param <i>Length</i> [out]
+### -param Length [out]
 
 <dd>
 <p>Pointer to a caller-supplied variable that receives a pointer to the buffer length member in the callback data parameter structure. If the operation does not have a length field, this parameter receives <b>NULL</b>. </p>
 </dd>
 
-### -param <i>DesiredAccess</i> [out, optional]
+### -param DesiredAccess [out, optional]
 
 <dd>
 <p>Pointer to a caller-supplied variable that receives the type of access that is appropriate for this type of I/O operation, one of <code>IoReadAccess</code>, <code>IoWriteAccess</code>, or <code>IoModifyAccess</code>. <code>IoReadAccess</code> means that the minifilter driver can examine the contents of the buffer but cannot change the contents in place. <code>IoWriteAccess</code> and <code>IoModifyAccess</code>, which are equivalent, mean that the minifilter driver has read and write access to the buffer. </p>
@@ -186,4 +186,4 @@ NTSTATUS FltDecodeParameters(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltDecodeParameters routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltDecodeParameters routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

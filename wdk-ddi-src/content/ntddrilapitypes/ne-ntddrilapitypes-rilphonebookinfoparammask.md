@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookinfoparammask.htm
 old-project: netvista
 ms.assetid: 1aab5008-eb27-4f48-9d87-74959f932883
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,67 +69,67 @@ typedef enum _RILPHONEBOOKINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_PBI_TOTAL"></a><a id="ril_param_pbi_total"></a><b>RIL_PARAM_PBI_TOTAL</b>
+### -field RIL_PARAM_PBI_TOTAL
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBI_ADDRESSLENGTH"></a><a id="ril_param_pbi_addresslength"></a><b>RIL_PARAM_PBI_ADDRESSLENGTH</b>
+### -field RIL_PARAM_PBI_ADDRESSLENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBI_TEXTLENGTH"></a><a id="ril_param_pbi_textlength"></a><b>RIL_PARAM_PBI_TEXTLENGTH</b>
+### -field RIL_PARAM_PBI_TEXTLENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBI_MAXANR"></a><a id="ril_param_pbi_maxanr"></a><b>RIL_PARAM_PBI_MAXANR</b>
+### -field RIL_PARAM_PBI_MAXANR
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBI_MAXANRLENGTH"></a><a id="ril_param_pbi_maxanrlength"></a><b>RIL_PARAM_PBI_MAXANRLENGTH</b>
+### -field RIL_PARAM_PBI_MAXANRLENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBI_MAXAASTEXTLENGTH"></a><a id="ril_param_pbi_maxaastextlength"></a><b>RIL_PARAM_PBI_MAXAASTEXTLENGTH</b>
+### -field RIL_PARAM_PBI_MAXAASTEXTLENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBI_USEDAAS"></a><a id="ril_param_pbi_usedaas"></a><b>RIL_PARAM_PBI_USEDAAS</b>
+### -field RIL_PARAM_PBI_USEDAAS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBI_TOTALAAS"></a><a id="ril_param_pbi_totalaas"></a><b>RIL_PARAM_PBI_TOTALAAS</b>
+### -field RIL_PARAM_PBI_TOTALAAS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBI_MAXEMAILS"></a><a id="ril_param_pbi_maxemails"></a><b>RIL_PARAM_PBI_MAXEMAILS</b>
+### -field RIL_PARAM_PBI_MAXEMAILS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBI_MAXEMAILLENGTH"></a><a id="ril_param_pbi_maxemaillength"></a><b>RIL_PARAM_PBI_MAXEMAILLENGTH</b>
+### -field RIL_PARAM_PBI_MAXEMAILLENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBI_MAXGROUPS"></a><a id="ril_param_pbi_maxgroups"></a><b>RIL_PARAM_PBI_MAXGROUPS</b>
+### -field RIL_PARAM_PBI_MAXGROUPS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBI_MAXGASLENGTH"></a><a id="ril_param_pbi_maxgaslength"></a><b>RIL_PARAM_PBI_MAXGASLENGTH</b>
+### -field RIL_PARAM_PBI_MAXGASLENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBI_USEDGAS"></a><a id="ril_param_pbi_usedgas"></a><b>RIL_PARAM_PBI_USEDGAS</b>
+### -field RIL_PARAM_PBI_USEDGAS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBI_TOTALGAS"></a><a id="ril_param_pbi_totalgas"></a><b>RIL_PARAM_PBI_TOTALGAS</b>
+### -field RIL_PARAM_PBI_TOTALGAS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBI_MAXSNELENGTH"></a><a id="ril_param_pbi_maxsnelength"></a><b>RIL_PARAM_PBI_MAXSNELENGTH</b>
+### -field RIL_PARAM_PBI_MAXSNELENGTH
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBI_ALL"></a><a id="ril_param_pbi_all"></a><b>RIL_PARAM_PBI_ALL</b>
+### -field RIL_PARAM_PBI_ALL
 
 <dd></dd>
 </dl>

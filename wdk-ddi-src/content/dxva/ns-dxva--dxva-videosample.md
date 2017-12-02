@@ -57,25 +57,25 @@ typedef struct _DXVA_VideoSample {
 ## -struct-fields
 <dl>
 
-### -field <b>rtStart</b>
+### -field rtStart
 
 <dd>
 <p>Specifies the start time of the sample.</p>
 </dd>
 
-### -field <b>rtEnd</b>
+### -field rtEnd
 
 <dd>
 <p>Specifies the end time of the sample.</p>
 </dd>
 
-### -field <b>SampleFormat</b>
+### -field SampleFormat
 
 <dd>
 <p>Specifies the format of the sample as defined by a <a href="..\dxva\ne-dxva--dxva-sampleformat.md">DXVA_SampleFormat</a> structure.</p>
 </dd>
 
-### -field <b>lpDDSSrcSurface</b>
+### -field lpDDSSrcSurface
 
 <dd>
 <p>Pointer to a <a href="display.dd_surface_local">DD_SURFACE_LOCAL</a> structure.</p>

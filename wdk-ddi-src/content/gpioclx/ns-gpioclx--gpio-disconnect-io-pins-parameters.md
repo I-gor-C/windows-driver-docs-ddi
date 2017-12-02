@@ -58,31 +58,31 @@ typedef struct _GPIO_DISCONNECT_IO_PINS_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>BankId</b>
+### -field BankId
 
 <dd>
 <p>The identifier for the bank that contains the GPIO pins. If M is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to M–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.</p>
 </dd>
 
-### -field <b>PinNumberTable</b>
+### -field PinNumberTable
 
 <dd>
 <p>A pointer to an array of PIN_NUMBER values. Each array element specifies the number of a GPIO pin to disconnect from. If the GPIO controller has N pins, the pins are numbered 0 to N–1. The number of elements in this array is specified by the <b>PinCount</b> member.</p>
 </dd>
 
-### -field <b>PinCount</b>
+### -field PinCount
 
 <dd>
 <p>The number of elements in the <b>PinNumberTable</b> array.</p>
 </dd>
 
-### -field <b>DisconnectMode</b>
+### -field DisconnectMode
 
 <dd>
 <p>Whether the GPIO pins in the connection that is being closed are configured as inputs or as outputs. The value of this member is <b>ConnectModeInput</b> for a read-only connection, <b>ConnectModeOutput</b> for a write-only connection, or (<b>ConnectModeInput</b> | <b>ConnectModeOutput</b>) for a read/write connection. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439505">GPIO_CONNECT_IO_PINS_MODE</a>.</p>
 </dd>
 
-### -field <b>DisconnectFlags</b>
+### -field DisconnectFlags
 
 <dd>
 <p>A set of flags that control how the GPIO pins are to be configured after they are closed. If the <b>PreserveConfiguration</b> flag bit is set, the GPIO controller driver preserves the configuration of the pins after they are disconnected. For more information, see Remarks.</p>

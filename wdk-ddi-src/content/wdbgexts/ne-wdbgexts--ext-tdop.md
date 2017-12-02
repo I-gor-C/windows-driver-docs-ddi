@@ -7,7 +7,7 @@ old-location: debugger\ext_tdop.htm
 old-project: debugger
 ms.assetid: 1793aaff-b0ac-4858-8a15-56eace87a09a
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: VPCI_WRITE_BLOCK_INPUT, VPCI_WRITE_BLOCK_INPUT, *PVPCI_WRITE_BLOCK_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,121 +75,121 @@ typedef enum _EXT_TDOP {
 ## -enum-fields
 <dl>
 
-### -field <a id="EXT_TDOP_COPY"></a><a id="ext_tdop_copy"></a><b>EXT_TDOP_COPY</b>
+### -field EXT_TDOP_COPY
 
 <dd>
 <p>Makes a copy of a typed data description.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_RELEASE"></a><a id="ext_tdop_release"></a><b>EXT_TDOP_RELEASE</b>
+### -field EXT_TDOP_RELEASE
 
 <dd>
 <p>Releases a typed data description.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_SET_FROM_EXPR"></a><a id="ext_tdop_set_from_expr"></a><b>EXT_TDOP_SET_FROM_EXPR</b>
+### -field EXT_TDOP_SET_FROM_EXPR
 
 <dd>
 <p>Returns the value of an expression.</p>
 </dd>
 
-### -field <a id="_EXT_TDOP_SET_FROM_U64_EXPR"></a><a id="_ext_tdop_set_from_u64_expr"></a><b> EXT_TDOP_SET_FROM_U64_EXPR</b>
+### -field  EXT_TDOP_SET_FROM_U64_EXPR
 
 <dd>
 <p>Returns the value of an expression. An optional address can be provided as a parameter to the expression.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_GET_FIELD"></a><a id="ext_tdop_get_field"></a><b>EXT_TDOP_GET_FIELD</b>
+### -field EXT_TDOP_GET_FIELD
 
 <dd>
 <p>Returns a member of a structure.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_EVALUATE"></a><a id="ext_tdop_evaluate"></a><b>EXT_TDOP_EVALUATE</b>
+### -field EXT_TDOP_EVALUATE
 
 <dd>
 <p>Returns the value of an expression. An optional value can be provided as a parameter to the expression.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_GET_TYPE_NAME"></a><a id="ext_tdop_get_type_name"></a><b>EXT_TDOP_GET_TYPE_NAME</b>
+### -field EXT_TDOP_GET_TYPE_NAME
 
 <dd>
 <p>Returns the type name for typed data.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_OUTPUT_TYPE_NAME"></a><a id="ext_tdop_output_type_name"></a><b>EXT_TDOP_OUTPUT_TYPE_NAME</b>
+### -field EXT_TDOP_OUTPUT_TYPE_NAME
 
 <dd>
 <p>Prints the type name for typed data.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_OUTPUT_SIMPLE_VALUE"></a><a id="ext_tdop_output_simple_value"></a><b>EXT_TDOP_OUTPUT_SIMPLE_VALUE</b>
+### -field EXT_TDOP_OUTPUT_SIMPLE_VALUE
 
 <dd>
 <p>Prints the value of typed data.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_OUTPUT_FULL_VALUE"></a><a id="ext_tdop_output_full_value"></a><b>EXT_TDOP_OUTPUT_FULL_VALUE</b>
+### -field EXT_TDOP_OUTPUT_FULL_VALUE
 
 <dd>
 <p>Prints the type and value for typed data.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_HAS_FIELD"></a><a id="ext_tdop_has_field"></a><b>EXT_TDOP_HAS_FIELD</b>
+### -field EXT_TDOP_HAS_FIELD
 
 <dd>
 <p>Determines whether a structure contains a specified member.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_GET_FIELD_OFFSET"></a><a id="ext_tdop_get_field_offset"></a><b>EXT_TDOP_GET_FIELD_OFFSET</b>
+### -field EXT_TDOP_GET_FIELD_OFFSET
 
 <dd>
 <p>Returns the offset of a member within a structure.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_GET_ARRAY_ELEMENT"></a><a id="ext_tdop_get_array_element"></a><b>EXT_TDOP_GET_ARRAY_ELEMENT</b>
+### -field EXT_TDOP_GET_ARRAY_ELEMENT
 
 <dd>
 <p>Returns an element from an array.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_GET_DEREFERENCE"></a><a id="ext_tdop_get_dereference"></a><b>EXT_TDOP_GET_DEREFERENCE</b>
+### -field EXT_TDOP_GET_DEREFERENCE
 
 <dd>
 <p>Dereferences a pointer, returning the value it points to.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_GET_TYPE_SIZE"></a><a id="ext_tdop_get_type_size"></a><b>EXT_TDOP_GET_TYPE_SIZE</b>
+### -field EXT_TDOP_GET_TYPE_SIZE
 
 <dd>
 <p>Returns the size of the specified typed data.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_OUTPUT_TYPE_DEFINITION"></a><a id="ext_tdop_output_type_definition"></a><b>EXT_TDOP_OUTPUT_TYPE_DEFINITION</b>
+### -field EXT_TDOP_OUTPUT_TYPE_DEFINITION
 
 <dd>
 <p>Prints the definition of the type for the specified typed data.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_GET_POINTER_TO"></a><a id="ext_tdop_get_pointer_to"></a><b>EXT_TDOP_GET_POINTER_TO</b>
+### -field EXT_TDOP_GET_POINTER_TO
 
 <dd>
 <p>Returns a new typed data description that represents a pointer to specified typed data.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_SET_FROM_TYPE_ID_AND_U64"></a><a id="ext_tdop_set_from_type_id_and_u64"></a><b>EXT_TDOP_SET_FROM_TYPE_ID_AND_U64</b>
+### -field EXT_TDOP_SET_FROM_TYPE_ID_AND_U64
 
 <dd>
 <p>Creates a typed data description from a type and memory location.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_SET_PTR_FROM_TYPE_ID_AND_U64"></a><a id="ext_tdop_set_ptr_from_type_id_and_u64"></a><b>EXT_TDOP_SET_PTR_FROM_TYPE_ID_AND_U64</b>
+### -field EXT_TDOP_SET_PTR_FROM_TYPE_ID_AND_U64
 
 <dd>
 <p>Creates a typed data description representing a pointer to a specified memory location with specified type.</p>
 </dd>
 
-### -field <a id="EXT_TDOP_COUNT"></a><a id="ext_tdop_count"></a><b>EXT_TDOP_COUNT</b>
+### -field EXT_TDOP_COUNT
 
 <dd>
 <p>Does not specify an operation. Instead, it represents the number of suboperations defined in the EXT_TDOP enumeration.
@@ -228,4 +228,4 @@ typedef enum _EXT_TDOP {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20EXT_TDOP enumeration%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20EXT_TDOP enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

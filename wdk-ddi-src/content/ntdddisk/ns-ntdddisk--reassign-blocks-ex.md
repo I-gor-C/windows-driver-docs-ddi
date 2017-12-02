@@ -56,19 +56,19 @@ typedef struct _REASSIGN_BLOCKS_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>Contains the number of blocks in the array pointed to by <b>BlockNumber</b> to reassign.</p>
 </dd>
 
-### -field <b>BlockNumber</b>
+### -field BlockNumber
 
 <dd>
 <p>Contains an array of block numbers corresponding to damaged blocks. These numbers will be reassigned to good blocks taken from the device's spare block pool.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookentryparammask_2.htm
 old-project: netvista
 ms.assetid: c7c82022-b82d-4f8e-a736-3912d3286189
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,51 +66,51 @@ typedef enum _RILPHONEBOOKENTRYPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_PBE_ADDRESS"></a><a id="ril_param_pbe_address"></a><b>RIL_PARAM_PBE_ADDRESS</b>
+### -field RIL_PARAM_PBE_ADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBE_TEXT"></a><a id="ril_param_pbe_text"></a><b>RIL_PARAM_PBE_TEXT</b>
+### -field RIL_PARAM_PBE_TEXT
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBE_SECONDNAME"></a><a id="ril_param_pbe_secondname"></a><b>RIL_PARAM_PBE_SECONDNAME</b>
+### -field RIL_PARAM_PBE_SECONDNAME
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBE_GROUPIDCOUNT"></a><a id="ril_param_pbe_groupidcount"></a><b>RIL_PARAM_PBE_GROUPIDCOUNT</b>
+### -field RIL_PARAM_PBE_GROUPIDCOUNT
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBE_GROUPID"></a><a id="ril_param_pbe_groupid"></a><b>RIL_PARAM_PBE_GROUPID</b>
+### -field RIL_PARAM_PBE_GROUPID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBE_ADDITIONALNUMCOUNT"></a><a id="ril_param_pbe_additionalnumcount"></a><b>RIL_PARAM_PBE_ADDITIONALNUMCOUNT</b>
+### -field RIL_PARAM_PBE_ADDITIONALNUMCOUNT
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBE_ADDITIONALNUMSIZE"></a><a id="ril_param_pbe_additionalnumsize"></a><b>RIL_PARAM_PBE_ADDITIONALNUMSIZE</b>
+### -field RIL_PARAM_PBE_ADDITIONALNUMSIZE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBE_ADDITIONALNUMOFFSET"></a><a id="ril_param_pbe_additionalnumoffset"></a><b>RIL_PARAM_PBE_ADDITIONALNUMOFFSET</b>
+### -field RIL_PARAM_PBE_ADDITIONALNUMOFFSET
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBE_EMAILCOUNT"></a><a id="ril_param_pbe_emailcount"></a><b>RIL_PARAM_PBE_EMAILCOUNT</b>
+### -field RIL_PARAM_PBE_EMAILCOUNT
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBE_EMAILSIZE"></a><a id="ril_param_pbe_emailsize"></a><b>RIL_PARAM_PBE_EMAILSIZE</b>
+### -field RIL_PARAM_PBE_EMAILSIZE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBE_EMAILOFFSET"></a><a id="ril_param_pbe_emailoffset"></a><b>RIL_PARAM_PBE_EMAILOFFSET</b>
+### -field RIL_PARAM_PBE_EMAILOFFSET
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_PBE_ALL"></a><a id="ril_param_pbe_all"></a><b>RIL_PARAM_PBE_ALL</b>
+### -field RIL_PARAM_PBE_ALL
 
 <dd></dd>
 </dl>

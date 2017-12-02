@@ -59,31 +59,31 @@ NTSTATUS PcwAddInstance(
 ## -parameters
 <dl>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to the consumer buffer to which the instance of the counter set will be added. Depending on the purpose of the buffer, the function either adds an instance or collects data. </p>
 </dd>
 
-### -param <i>Name</i> [in]
+### -param Name [in]
 
 <dd>
 <p>A pointer to the Unicode string that contains the name of the instance of the counter set.</p>
 </dd>
 
-### -param <i>Id</i> [in]
+### -param Id [in]
 
 <dd>
 <p>A numeric value that specifies the <i>Id</i> (identifier) associated with the instance of the counter set.</p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>The number of data blocks associated with this instance.</p>
 </dd>
 
-### -param <i>Data</i> [in]
+### -param Data [in]
 
 <dd>
 <p>A pointer to an array of data blocks containing the counter values of this instance.</p>

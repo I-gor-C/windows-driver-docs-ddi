@@ -58,31 +58,31 @@ NTSTATUS RegisterAdapterObjectEx(
 ## -parameters
 <dl>
 
-### -param <i>AdapterObject</i> [in]
+### -param AdapterObject [in]
 
 <dd>
 <p>Pointer to the ADAPTER_OBJECT for the device. Must be acquired through <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> before calling <b>RegisterAdapterObjectEx</b>.</p>
 </dd>
 
-### -param <i>DeviceDescription</i> [in]
+### -param DeviceDescription [in]
 
 <dd>
 <p>Pointer to a structure of type <a href="..\wdm\ns-wdm--device-description.md">DEVICE_DESCRIPTION</a> that describes the attributes of the physical device for which the caller is registering a DMA object.</p>
 </dd>
 
-### -param <i>NumberOfMapRegisters</i> [in]
+### -param NumberOfMapRegisters [in]
 
 <dd>
 <p>Specifies the number of map registers returned from the minidriver's call to <b>IoGetDmaAdapter</b>.</p>
 </dd>
 
-### -param <i>MaxMappingsByteCount</i> [in]
+### -param MaxMappingsByteCount [in]
 
 <dd>
 <p>Specifies the maximum number of bytes that the device can handle for a single mapping. Enables AVStream to automatically break up large chunks of contiguous physical memory into multiple scatter/gather elements for devices that impose a size limit on individual mappings in DMA transfers. See important additional information about <b>MaxMappingsByteCount</b> on the <a href="..\ks\nf-ks-ksdeviceregisteradapterobject.md">KsDeviceRegisterAdapterObject</a> reference page.</p>
 </dd>
 
-### -param <i>MappingTableStride</i> [in]
+### -param MappingTableStride [in]
 
 <dd>
 <p>Specifies how many bytes each entry in the mapping table requires. This value must be at least <b>sizeof</b> (<a href="..\ks\ns-ks--ksmapping.md">KSMAPPING</a>) and can be as large as necessary.</p>
@@ -94,7 +94,7 @@ NTSTATUS RegisterAdapterObjectEx(
 <p><b>RegisterAdapterObjectEx</b> returns STATUS_SUCCESS if the DMA object was successfully registered. The method returns STATUS_INSUFFICIENT_RESOURCES if sufficient memory is not available.</p>
 
 ## -remarks
-<p>Also see <a href="NULL">Supporting DMA in 64-Bit AVStream Drivers</a>.</p>
+<p>Also see <a href="https://msdn.microsoft.com/1173a83f-8d9e-4678-bfb5-f2fb91e827be">Supporting DMA in 64-Bit AVStream Drivers</a>.</p>
 
 ## -requirements
 <table>

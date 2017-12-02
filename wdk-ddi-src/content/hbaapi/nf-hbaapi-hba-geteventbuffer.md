@@ -56,19 +56,19 @@ HBA_STATUS HBA_API HBA_GetEventBuffer(
 ## -parameters
 <dl>
 
-### -param <i>handle</i> [in]
+### -param handle [in]
 
 <dd>
 <p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
 </dd>
 
-### -param <i>EventBuffer</i> [out]
+### -param EventBuffer [out]
 
 <dd>
 <p>Pointer to a buffer that on return holds a structure of type <a href="..\hbaapi\ns-hbaapi-hba-eventinfo.md">HBA_EventInfo</a> that contains information about an event. </p>
 </dd>
 
-### -param <i>EventCount</i> [in, out]
+### -param EventCount [in, out]
 
 <dd>
 <p>Indicates, on input, the number of event records that fit in the buffer pointed to by <i>EventBuffer. </i>If the full number of events requested cannot be retrieved, on return, this member contains the number of event records actually retrieved. </p>

@@ -7,7 +7,7 @@ old-location: netvista\rildialparamsoptions.htm
 old-project: netvista
 ms.assetid: 78fef8f7-e6cd-4da6-9c2a-2eaf1da6339b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef enum _RILDIALPARAMSOPTIONS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_DIALOPT_RESTRICTID"></a><a id="ril_dialopt_restrictid"></a><b>RIL_DIALOPT_RESTRICTID</b>
+### -field RIL_DIALOPT_RESTRICTID
 
 <dd></dd>
 
-### -field <a id="RIL_DIALOPT_PRESENTID"></a><a id="ril_dialopt_presentid"></a><b>RIL_DIALOPT_PRESENTID</b>
+### -field RIL_DIALOPT_PRESENTID
 
 <dd></dd>
 
-### -field <a id="RIL_DIALOPT_ANYEXECUTORFOREMERGENCY"></a><a id="ril_dialopt_anyexecutorforemergency"></a><b>RIL_DIALOPT_ANYEXECUTORFOREMERGENCY</b>
+### -field RIL_DIALOPT_ANYEXECUTORFOREMERGENCY
 
 <dd></dd>
 
-### -field <a id="RIL_DIALOPT_RTTFULL"></a><a id="ril_dialopt_rttfull"></a><b>RIL_DIALOPT_RTTFULL</b>
+### -field RIL_DIALOPT_RTTFULL
 
 <dd></dd>
 
-### -field <a id="RIL_DIALOPT_ALL"></a><a id="ril_dialopt_all"></a><b>RIL_DIALOPT_ALL</b>
+### -field RIL_DIALOPT_ALL
 
 <dd></dd>
 </dl>

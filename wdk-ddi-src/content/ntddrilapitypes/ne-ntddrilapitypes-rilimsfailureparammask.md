@@ -7,7 +7,7 @@ old-location: netvista\rilimsfailureparammask.htm
 old-project: netvista
 ms.assetid: ba1542e9-da6f-4696-8f71-575000a7724e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ typedef enum _RILIMSFAILUREPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_IMSFAILURE_MESSAGETYPE"></a><a id="ril_param_imsfailure_messagetype"></a><b>RIL_PARAM_IMSFAILURE_MESSAGETYPE</b>
+### -field RIL_PARAM_IMSFAILURE_MESSAGETYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_IMSFAILURE_MESSAGESUBTYPE"></a><a id="ril_param_imsfailure_messagesubtype"></a><b>RIL_PARAM_IMSFAILURE_MESSAGESUBTYPE</b>
+### -field RIL_PARAM_IMSFAILURE_MESSAGESUBTYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_IMSFAILURE_ERRORCODE"></a><a id="ril_param_imsfailure_errorcode"></a><b>RIL_PARAM_IMSFAILURE_ERRORCODE</b>
+### -field RIL_PARAM_IMSFAILURE_ERRORCODE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_IMSFAILURE_ERRORSTRING"></a><a id="ril_param_imsfailure_errorstring"></a><b>RIL_PARAM_IMSFAILURE_ERRORSTRING</b>
+### -field RIL_PARAM_IMSFAILURE_ERRORSTRING
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_IMSFAILURE_ALL"></a><a id="ril_param_imsfailure_all"></a><b>RIL_PARAM_IMSFAILURE_ALL</b>
+### -field RIL_PARAM_IMSFAILURE_ALL
 
 <dd></dd>
 </dl>

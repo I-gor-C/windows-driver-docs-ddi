@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfo_v1_2.htm
 old-project: netvista
 ms.assetid: f630afff-d3ca-4ada-aa8c-5062893f2de5
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLINFO_V1,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,71 +71,71 @@ typedef struct _RILCALLINFO_V1 {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>dwID</b>
+### -field dwID
 
 <dd></dd>
 
-### -field <b>dwDirection</b>
+### -field dwDirection
 
 <dd></dd>
 
-### -field <b>dwStatus</b>
+### -field dwStatus
 
 <dd></dd>
 
-### -field <b>dwType</b>
+### -field dwType
 
 <dd></dd>
 
-### -field <b>dwMultiparty</b>
+### -field dwMultiparty
 
 <dd></dd>
 
-### -field <b>raAddress</b>
+### -field raAddress
 
 <dd></dd>
 
-### -field <b>rsaSubAddress</b>
+### -field rsaSubAddress
 
 <dd></dd>
 
-### -field <b>wszDescription</b>
+### -field wszDescription
 
 <dd></dd>
 
-### -field <b>dwNumberPresentationIndicator</b>
+### -field dwNumberPresentationIndicator
 
 <dd></dd>
 
-### -field <b>dwNamePresentationIndicator</b>
+### -field dwNamePresentationIndicator
 
 <dd></dd>
 
-### -field <b>fAlienCall</b>
+### -field fAlienCall
 
 <dd></dd>
 
-### -field <b>dwDisconnectInitiator</b>
+### -field dwDisconnectInitiator
 
 <dd></dd>
 
-### -field <b>dwDisconnectReason</b>
+### -field dwDisconnectReason
 
 <dd></dd>
 
-### -field <b>stDisconnectDetails</b>
+### -field stDisconnectDetails
 
 <dd></dd>
 </dl>

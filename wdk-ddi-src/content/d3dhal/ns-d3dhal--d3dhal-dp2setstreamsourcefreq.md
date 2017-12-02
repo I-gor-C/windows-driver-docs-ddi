@@ -58,13 +58,13 @@ typedef struct _D3DHAL_DP2SETSTREAMSOURCEFREQ {
 ## -struct-fields
 <dl>
 
-### -field <b>dwStream</b>
+### -field dwStream
 
 <dd>
 <p>Specifies the data stream, in the range from 0 to the maximum number of streams -1, whose frequency is being modified.</p>
 </dd>
 
-### -field <b>dwDivider</b>
+### -field dwDivider
 
 <dd>
 <p>Specifies the frequency divisor, which is the number of vertices after which data from the given stream is fetched into the vertex shader. This number can be greater than zero and at most 2^16-1 (WORD).</p>

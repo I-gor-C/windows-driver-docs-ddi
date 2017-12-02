@@ -7,7 +7,7 @@ old-location: netvista\wskaccept.htm
 old-project: netvista
 ms.assetid: 9fa8bb07-7ee5-400b-aaca-33db3911d79f
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ NTSTATUS WSKAPI * WskAccept(
 ## -parameters
 <dl>
 
-### -param <i>ListenSocket</i> [in]
+### -param ListenSocket [in]
 
 <dd>
 <p>A pointer to a 
@@ -70,14 +70,14 @@ NTSTATUS WSKAPI * WskAccept(
      object for the listening or stream socket that is being checked for an incoming connection.</p>
 </dd>
 
-### -param <i>Flags</i> 
+### -param Flags 
 
 <dd>
 <p>This parameter is reserved for system use. A WSK application must set this parameter to
      zero.</p>
 </dd>
 
-### -param <i>AcceptSocketContext</i> [in, optional]
+### -param AcceptSocketContext [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied context for the socket that is being accepted. The WSK subsystem
@@ -87,7 +87,7 @@ NTSTATUS WSKAPI * WskAccept(
      <b>NULL</b>.</p>
 </dd>
 
-### -param <i>AcceptSocketDispatch</i> [in, optional]
+### -param AcceptSocketDispatch [in, optional]
 
 <dd>
 <p>A pointer to a constant 
@@ -100,7 +100,7 @@ NTSTATUS WSKAPI * WskAccept(
      pointer to <b>NULL</b>.</p>
 </dd>
 
-### -param <i>LocalAddress</i> [out, optional]
+### -param LocalAddress [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives the local transport address on which the
@@ -110,7 +110,7 @@ NTSTATUS WSKAPI * WskAccept(
      <b>NULL</b>.</p>
 </dd>
 
-### -param <i>RemoteAddress</i> [out, optional]
+### -param RemoteAddress [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives the remote transport address from which the
@@ -120,7 +120,7 @@ NTSTATUS WSKAPI * WskAccept(
      <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Irp</i> [in, out]
+### -param Irp [in, out]
 
 <dd>
 <p>A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the accept operation
@@ -285,4 +285,4 @@ NTSTATUS WSKAPI * WskAccept(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_ACCEPT callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_ACCEPT callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

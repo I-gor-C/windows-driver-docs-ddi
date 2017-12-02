@@ -7,7 +7,7 @@ old-location: ifsk\rtlgetdaclsecuritydescriptor.htm
 old-project: ifsk
 ms.assetid: 23184d88-2c84-4fba-9d17-c4014d0eaea5
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlGetDaclSecurityDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,25 +57,25 @@ NTSTATUS RtlGetDaclSecurityDescriptor(
 ## -parameters
 <dl>
 
-### -param <i>SecurityDescriptor</i> [in]
+### -param SecurityDescriptor [in]
 
 <dd>
 <p>Pointer to the <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> whose DACL is to be returned.</p>
 </dd>
 
-### -param <i>DaclPresent</i> [out]
+### -param DaclPresent [out]
 
 <dd>
 <p>Pointer to a Boolean variable that indicates the presence of a DACL in the specified security descriptor. If this variable receives <b>TRUE</b>, the security descriptor contains a DACL, and the remaining output parameters receive valid values. If this variable receives <b>FALSE</b>, the security descriptor does not contain a DACL, and the remaining output parameters do not receive valid values.</p>
 </dd>
 
-### -param <i>Dacl</i> [out]
+### -param Dacl [out]
 
 <dd>
 <p>Pointer to a variable that receives the address of the DACL for the security descriptor. If the security descriptor does not have a DACL, this variable does not receive a value. If the security descriptor has a <b>NULL</b> DACL, this variable receives <b>NULL</b>. A <b>NULL</b> DACL implicitly allows all access to an object.</p>
 </dd>
 
-### -param <i>DaclDefaulted</i> [out]
+### -param DaclDefaulted [out]
 
 <dd>
 <p>Pointer to a Boolean variable that receives the value of the SE_DACL_DEFAULTED flag in the security descriptor's SECURITY_DESCRIPTOR_CONTROL structure. If this flag is <b>TRUE</b>, the DACL was retrieved by a default mechanism. If it is <b>FALSE</b>, the DACL was explicitly specified by a user. This value is valid only if <i>*Dacl</i> receives a non-<b>NULL</b> value. </p>
@@ -177,4 +177,4 @@ NTSTATUS RtlGetDaclSecurityDescriptor(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetDaclSecurityDescriptor routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetDaclSecurityDescriptor routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\ndismqueryprobedbars.htm
 old-project: netvista
 ms.assetid: 39deba08-3ff0-4037-b530-0cb4a01fc758
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMQueryProbedBars
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ NDIS_STATUS NdisMQueryProbedBars(
 ## -parameters
 <dl>
 
-### -param <i>NdisMiniportHandle</i> [in]
+### -param NdisMiniportHandle [in]
 
 <dd>
 <p>The network adapter handle that NDIS passed to the 
@@ -63,7 +63,7 @@ NDIS_STATUS NdisMQueryProbedBars(
      <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>.</p>
 </dd>
 
-### -param <i>BaseRegisterValues</i> [out]
+### -param BaseRegisterValues [out]
 
 <dd>
 <p>A pointer to an array of ULONG values. The array  contains a ULONG value for each BAR of the PCIe network adapter.</p>
@@ -99,9 +99,9 @@ address space is required for the BAR.</p>
 <p>During the handling of this OID request, the driver can call <b>NdisMQueryProbedBars</b> to obtain the values returned from the BAR query performed by the PCI driver.
 </p>
 
-<p>For more information on how to query PCI BAR registers for a VF, see <a href="NULL">Querying the PCI Base Address Registers of a Virtual Function</a>.</p>
+<p>For more information on how to query PCI BAR registers for a VF, see <a href="netvista.querying_the_pci_base_address_registers_of_a_virtual_function">Querying the PCI Base Address Registers of a Virtual Function</a>.</p>
 
-<p>For more information about the SR-IOV interface, see 	<a href="NULL">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
+<p>For more information about the SR-IOV interface, see 	<a href="netvista.overview_of_single_root_i_o_virtualization__sr-iov_">Overview of Single Root I/O Virtualization (SR-IOV)</a>.</p>
 
 <p>If an independent hardware vendor (IHV) provides a virtual bus driver (VBD) as part of its SR-IOV <a href="devinst.driver_packages">driver package</a>, its miniport driver must not call <b>NdisMQueryProbedBars</b>. Instead, the driver must interface with the VBD through a private communication channel, and request that the VBD call <a href="..\wdm\nc-wdm-get-virtual-function-probed-bars.md">GetVirtualFunctionProbedBars</a>. This function is exposed from the <a href="kernel.guid_pci_virtualization_interface">GUID_PCI_VIRTUALIZATION_INTERFACE</a> interface that is supported by the underlying PCI bus driver.</p>
 
@@ -172,4 +172,4 @@ address space is required for the BAR.</p>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMQueryProbedBars function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMQueryProbedBars function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

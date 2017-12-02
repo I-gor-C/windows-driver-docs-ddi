@@ -59,13 +59,13 @@ VOID APIENTRY DrawInstancedIndirect(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hBufferForArgs</i> [in]
+### -param hBufferForArgs [in]
 
 <dd>
 <p> A handle to a buffer that contains the arguments for <b>DrawInstancedIndirect</b> to process. The buffer contains the following tightly packed structure:</p>
@@ -87,7 +87,7 @@ VOID APIENTRY DrawInstancedIndirect(
 <p>For more information about these arguments, see the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-drawinstanced.md">DrawInstanced</a> reference page. </p>
 </dd>
 
-### -param <i>AlignedByteOffsetForArgs</i> [in]
+### -param AlignedByteOffsetForArgs [in]
 
 <dd>
 <p> The offset, in bytes, into the buffer that <i>hBufferForArgs</i> specifies. <i>AlignedByteOffsetForArgs</i> must be a multiple of four. </p>

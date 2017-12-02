@@ -7,7 +7,7 @@ old-location: netvista\dot11ext_ihv_profile_params.htm
 old-project: netvista
 ms.assetid: 9bf4b27c-3cf0-45a0-9e56-b01ad1ba6b19
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11EXT_IHV_PROFILE_PARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef struct _DOT11EXT_IHV_PROFILE_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>pSsidList</b>
+### -field pSsidList
 
 <dd>
 <p>A pointer to the list of service set identifiers (SSIDs) of the basic service set (BSS) network.
@@ -65,7 +65,7 @@ typedef struct _DOT11EXT_IHV_PROFILE_PARAMS {
      DOT11EXT_IHV_SSID_LIST</a> structure.</p>
 </dd>
 
-### -field <b>BssType</b>
+### -field BssType
 
 <dd>
 <p>The type of the BSS network. The 
@@ -73,7 +73,7 @@ typedef struct _DOT11EXT_IHV_PROFILE_PARAMS {
      <a href="..\wlantypes\ne-wlantypes--dot11-bss-type.md">DOT11_BSS_TYPE</a> enumeration.</p>
 </dd>
 
-### -field <b>pMSSecuritySettings</b>
+### -field pMSSecuritySettings
 
 <dd>
 <p>A pointer to a 
@@ -157,4 +157,4 @@ typedef struct _DOT11EXT_IHV_PROFILE_PARAMS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_IHV_PROFILE_PARAMS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_IHV_PROFILE_PARAMS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

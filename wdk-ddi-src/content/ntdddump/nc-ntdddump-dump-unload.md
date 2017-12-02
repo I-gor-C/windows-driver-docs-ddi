@@ -57,7 +57,7 @@ NTSTATUS Dump_Unload(
 ## -parameters
 <dl>
 
-### -param <i>FilterExtension</i> [in]
+### -param FilterExtension [in]
 
 <dd>
 <p>A pointer to a <a href="..\ntdddump\ns-ntdddump--filter-extension.md">FILTER_EXTENSION</a> structure.</p>

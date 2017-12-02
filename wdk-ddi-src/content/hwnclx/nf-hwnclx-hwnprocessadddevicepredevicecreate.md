@@ -56,19 +56,19 @@ FORCEINLINE NTSTATUS  HwNProcessAddDevicePreDeviceCreate(
 ## -parameters
 <dl>
 
-### -param <i>Driver</i> [in]
+### -param Driver [in]
 
 <dd>
 <p>Handle to the client drivers framework driver object. </p>
 </dd>
 
-### -param <i>DeviceInit</i> [in]
+### -param DeviceInit [in]
 
 <dd>
 <p>A pointer to a framework-allocated <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure. </p>
 </dd>
 
-### -param <i>FdoAttributes</i> [out]
+### -param FdoAttributes [out]
 
 <dd>
 <p>Pointer to a <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that describes the attributes of the client driver’s device object when it’s created. </p>

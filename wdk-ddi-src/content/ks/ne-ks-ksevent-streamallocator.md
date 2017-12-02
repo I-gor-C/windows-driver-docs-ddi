@@ -55,11 +55,11 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME"></a><a id="ksevent_streamallocator_internal_freeframe"></a><b>KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME</b>
+### -field KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME
 
 <dd></dd>
 
-### -field <a id="KSEVENT_STREAMALLOCATOR_FREEFRAME"></a><a id="ksevent_streamallocator_freeframe"></a><b>KSEVENT_STREAMALLOCATOR_FREEFRAME</b>
+### -field KSEVENT_STREAMALLOCATOR_FREEFRAME
 
 <dd></dd>
 </dl>

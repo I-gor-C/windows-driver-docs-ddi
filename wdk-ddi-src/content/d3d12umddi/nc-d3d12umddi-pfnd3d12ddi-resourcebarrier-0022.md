@@ -59,19 +59,19 @@ VOID APIENTRY* pfnResourceBarrier(
 ## -parameters
 <dl>
 
-### -param <i>hDrvCommandList</i> 
+### -param hDrvCommandList 
 
 <dd>
 <p>The handle of a command list.</p>
 </dd>
 
-### -param <i>Count</i> 
+### -param Count 
 
 <dd>
 <p>Specifies a count.</p>
 </dd>
 
-### -param <i>ResourceBarrier</i> [in]
+### -param ResourceBarrier [in]
 
 <dd>
 <p>A pointer to a resource barrier as a <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddiarg-resource-barrier-0022.md">D3D12DDIARG_RESOURCE_BARRIER_0022</a> structure. </p>

@@ -56,13 +56,13 @@ PDEVICE_OBJECT IoAttachDeviceToDeviceStack(
 ## -parameters
 <dl>
 
-### -param <i>SourceDevice</i> [in]
+### -param SourceDevice [in]
 
 <dd>
 <p>Pointer to the caller-created device object.</p>
 </dd>
 
-### -param <i>TargetDevice</i> [in]
+### -param TargetDevice [in]
 
 <dd>
 <p>Pointer to another driver's device object, such as a pointer returned by a preceding call to <a href="..\wdm\nf-wdm-iogetdeviceobjectpointer.md">IoGetDeviceObjectPointer</a>.</p>

@@ -7,7 +7,7 @@ old-location: ifsk\fltallocatecallbackdataex.htm
 old-project: ifsk
 ms.assetid: f03851a4-e1e9-4fee-b264-c2f91c6e8180
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltAllocateCallbackDataEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ NTSTATUS FltAllocateCallbackDataEx(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [in]
+### -param Instance [in]
 
 <dd>
 <p>An opaque instance pointer to the minifilter driver instance that is initiating the I/O operation. This parameter is required and cannot be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>FileObject</i> [in, optional]
+### -param FileObject [in, optional]
 
 <dd>
 <p>A pointer to a file object to be used in the I/O operation. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A value of zero or the following flag:</p>
@@ -77,7 +77,7 @@ NTSTATUS FltAllocateCallbackDataEx(
 <p>If this flag is set, the routine preallocates all the memory needed by the filter manager for additional structures to be used in an I/O request.</p>
 </dd>
 
-### -param <i>RetNewCallbackData</i> [out]
+### -param RetNewCallbackData [out]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the address of the newly allocated callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure.</p>
@@ -153,4 +153,4 @@ NTSTATUS FltAllocateCallbackDataEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocateCallbackDataEx routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocateCallbackDataEx routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

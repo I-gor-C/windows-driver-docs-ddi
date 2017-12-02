@@ -57,7 +57,7 @@ PVOID KeRegisterProcessorChangeCallback(
 ## -parameters
 <dl>
 
-### -param <i>CallbackFunction</i> [in]
+### -param CallbackFunction [in]
 
 <dd>
 <p>A pointer to a driver-supplied processor change callback function that is to be called by the operating system whenever a new processor is added to the hardware partition. A processor change callback function is defined as follows:</p>
@@ -79,19 +79,19 @@ PVOID KeRegisterProcessorChangeCallback(
 <p></p>
 <dl>
 
-### -param <a id="CallbackContext"></a><a id="callbackcontext"></a><a id="CALLBACKCONTEXT"></a><i>CallbackContext</i>
+### -param CallbackContext
 
 <dd>
 <p>The context that was supplied in the <i>CallbackContext</i> parameter to the <b>KeRegisterProcessorChangeCallback</b> routine when the callback function was registered with the operating system.</p>
 </dd>
 
-### -param <a id="ChangeContext"></a><a id="changecontext"></a><a id="CHANGECONTEXT"></a><i>ChangeContext</i>
+### -param ChangeContext
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--ke-processor-change-notify-context.md">KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT</a> structure that describes the processor change notification event.</p>
 </dd>
 
-### -param <a id="OperationStatus"></a><a id="operationstatus"></a><a id="OPERATIONSTATUS"></a><i>OperationStatus</i>
+### -param OperationStatus
 
 <dd>
 <p>A pointer to a variable that contains an NTSTATUS code. A device driver must not change the value of this variable except if an error occurs during the processing of the callback function when the <b>State</b> member of the <a href="..\wdm\ns-wdm--ke-processor-change-notify-context.md">KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT</a> structure that is pointed to by the <i>ChangeContext</i> parameter contains <b>KeProcessorAddStartNotify</b>.</p>
@@ -100,20 +100,20 @@ PVOID KeRegisterProcessorChangeCallback(
 <p>The processor change callback function is called at IRQL = PASSIVE_LEVEL.</p>
 </dd>
 
-### -param <i>CallbackContext</i> [in, optional]
+### -param CallbackContext [in, optional]
 
 <dd>
 <p>A driver-supplied context that is passed to the callback function. This parameter can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Optional flags that modify the behavior of the <b>KeRegisterProcessorChangeCallback</b> routine. The following is one possible flag:</p>
 <p></p>
 <dl>
 
-### -param <a id="KE_PROCESSOR_CHANGE_ADD_EXISTING"></a><a id="ke_processor_change_add_existing"></a>KE_PROCESSOR_CHANGE_ADD_EXISTING
+### -param KE_PROCESSOR_CHANGE_ADD_EXISTING
 
 <dd>
 <p>If this flag is set, the registered callback function is immediately called for each active processor that currently exists in the hardware partition, in addition to being called whenever a new processor is added to the hardware partition. If this flag is not set, the registered callback function is only called whenever a new processor is added to the system.</p>

@@ -70,49 +70,49 @@ typedef struct _DXGK_DEBUG_REPORT_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of the Debug Report interface. Version number constants are defined in <i>Dispmprt.h</i> (for example, DXGK_DEBUG_REPORT_INTERFACE_VERSION_1).</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to a context that is provided by the display port driver.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>A pointer to an interface reference function that is implemented by the display port driver.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>A pointer to an interface dereference function that is implemented by the display port driver.</p>
 </dd>
 
-### -field <b>DbgReportCreate</b>
+### -field DbgReportCreate
 
 <dd>
 <p>A pointer to the display port driver's <a href="display.dbgreportcreate2">DbgReportCreate</a> function.</p>
 </dd>
 
-### -field <b>DbgReportSecondaryData</b>
+### -field DbgReportSecondaryData
 
 <dd>
 <p>A pointer to the display port driver's <a href="display.dbgreportsecondarydata2">DbgReportSecondaryData</a> function.</p>
 </dd>
 
-### -field <b>DbgReportComplete</b>
+### -field DbgReportComplete
 
 <dd>
 <p>A pointer to the display port driver's <a href="display.dbgreportcomplete">DbgReportComplete</a> function. </p>

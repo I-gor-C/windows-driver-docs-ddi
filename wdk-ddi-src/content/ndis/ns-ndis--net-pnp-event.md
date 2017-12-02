@@ -7,7 +7,7 @@ old-location: netvista\net_pnp_event.htm
 old-project: netvista
 ms.assetid: b68fb279-c1d4-4f0b-8b04-b17a01a65560
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NET_PNP_EVENT, NET_PNP_EVENT, *PNET_PNP_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct _NET_PNP_EVENT {
 ## -struct-fields
 <dl>
 
-### -field <b>NetEvent</b>
+### -field NetEvent
 
 <dd>
 <p>An event code that describes the event as one of the following:
@@ -69,7 +69,7 @@ typedef struct _NET_PNP_EVENT {
 <p></p>
 <dl>
 
-### -field <a id="NetEventSetPower"></a><a id="neteventsetpower"></a><a id="NETEVENTSETPOWER"></a><b>NetEventSetPower</b>
+### -field NetEventSetPower
 
 <dd>
 <p>Indicates that the power manager has sent a Set Power request, which specifies a transition to a
@@ -78,7 +78,7 @@ typedef struct _NET_PNP_EVENT {
 <p>For more information, see the Remarks section.</p>
 </dd>
 
-### -field <a id="NetEventQueryPower"></a><a id="neteventquerypower"></a><a id="NETEVENTQUERYPOWER"></a><b>NetEventQueryPower</b>
+### -field NetEventQueryPower
 
 <dd>
 <p>Indicates that the power manager has sent a Query Power request, which requests a transition to
@@ -87,21 +87,21 @@ typedef struct _NET_PNP_EVENT {
 <p>For more information, see the Remarks section.</p>
 </dd>
 
-### -field <a id="NetEventQueryRemoveDevice"></a><a id="neteventqueryremovedevice"></a><a id="NETEVENTQUERYREMOVEDEVICE"></a><b>NetEventQueryRemoveDevice</b>
+### -field NetEventQueryRemoveDevice
 
 <dd>
 <p>Indicates that the PnP Manager has sent a Query Remove Device request. The PnP Manager sends
        this request to query whether a device can be removed without disrupting operations.</p>
 </dd>
 
-### -field <a id="NetEventCancelRemoveDevice"></a><a id="neteventcancelremovedevice"></a><a id="NETEVENTCANCELREMOVEDEVICE"></a><b>NetEventCancelRemoveDevice</b>
+### -field NetEventCancelRemoveDevice
 
 <dd>
 <p>Indicates that the PnP Manager has sent a Cancel Remove Device request. The PnP Manager sends
        this request to cancel the removal of a device after the PnP Manager sends a Query Remove Device request.</p>
 </dd>
 
-### -field <a id="NetEventReconfigure"></a><a id="neteventreconfigure"></a><a id="NETEVENTRECONFIGURE"></a><b>NetEventReconfigure</b>
+### -field NetEventReconfigure
 
 <dd>
 <p>Indicates that the configuration has changed for a network component. For example, if a user,
@@ -116,7 +116,7 @@ typedef struct _NET_PNP_EVENT {
        NetEventIMReEnableDevice.</p>
 </dd>
 
-### -field <a id="NetEventBindList"></a><a id="neteventbindlist"></a><a id="NETEVENTBINDLIST"></a><b>NetEventBindList</b>
+### -field NetEventBindList
 
 <dd>
 <p>Indicates to a protocol driver that its bind list processing order has been reconfigured. This
@@ -128,14 +128,14 @@ typedef struct _NET_PNP_EVENT {
        <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a> function.</p>
 </dd>
 
-### -field <a id="NetEventBindsComplete"></a><a id="neteventbindscomplete"></a><a id="NETEVENTBINDSCOMPLETE"></a><b>NetEventBindsComplete</b>
+### -field NetEventBindsComplete
 
 <dd>
 <p>Indicates that a protocol driver has bound to all the NICs that it can bind to. NDIS will not
        indicate any more NICs to the protocol unless a PnP NIC is plugged into the system.</p>
 </dd>
 
-### -field <a id="NetEventPnPCapabilities"></a><a id="neteventpnpcapabilities"></a><a id="NETEVENTPNPCAPABILITIES"></a><b>NetEventPnPCapabilities</b>
+### -field NetEventPnPCapabilities
 
 <dd>
 <p>Indicates that the user enabled or disabled the wake-up capabilities of the underlying adapter.
@@ -145,7 +145,7 @@ typedef struct _NET_PNP_EVENT {
        ProtocolNetPnPEvent</a> function.)</p>
 </dd>
 
-### -field <a id="NetEventPause"></a><a id="neteventpause"></a><a id="NETEVENTPAUSE"></a><b>NetEventPause</b>
+### -field NetEventPause
 
 <dd>
 <p>Indicates that the specified protocol binding should enter the 
@@ -154,7 +154,7 @@ typedef struct _NET_PNP_EVENT {
        binding.</p>
 </dd>
 
-### -field <a id="NetEventRestart"></a><a id="neteventrestart"></a><a id="NETEVENTRESTART"></a><b>NetEventRestart</b>
+### -field NetEventRestart
 
 <dd>
 <p>Indicates that the specified protocol binding has entered the 
@@ -163,21 +163,21 @@ typedef struct _NET_PNP_EVENT {
        Running state.</p>
 </dd>
 
-### -field <a id="NetEventPortActivation"></a><a id="neteventportactivation"></a><a id="NETEVENTPORTACTIVATION"></a><b>NetEventPortActivation</b>
+### -field NetEventPortActivation
 
 <dd>
 <p>Indicates the activation of a list of ports that are associated with the specified
        binding.</p>
 </dd>
 
-### -field <a id="NetEventPortDeactivation"></a><a id="neteventportdeactivation"></a><a id="NETEVENTPORTDEACTIVATION"></a><b>NetEventPortDeactivation</b>
+### -field NetEventPortDeactivation
 
 <dd>
 <p>Indicates the deactivation of a list of ports that are associated with the specified
        binding.</p>
 </dd>
 
-### -field <a id="NetEventIMReEnableDevice"></a><a id="neteventimreenabledevice"></a><a id="NETEVENTIMREENABLEDEVICE"></a><b>NetEventIMReEnableDevice</b>
+### -field NetEventIMReEnableDevice
 
 <dd>
 <p>Indicates that the configuration has changed for a virtual miniport of an NDIS 6.0 or later
@@ -192,37 +192,37 @@ typedef struct _NET_PNP_EVENT {
     <a href="http://go.microsoft.com/fwlink/p/?LinkId=617916">NDIS MUX Intermediate Driver and Notify Object</a> driver sample available in the <a href="http://go.microsoft.com/fwlink/p/?LinkId=616507">Windows driver samples</a> repository on GitHub.</p>
 </dd>
 
-### -field <a id="NetEventNDKEnable"></a><a id="neteventndkenable"></a><a id="NETEVENTNDKENABLE"></a><b>NetEventNDKEnable</b>
+### -field NetEventNDKEnable
 
 <dd>
 <p>Indicates that Network Direct Kernel (NDK) is currently enabled.</p>
 </dd>
 
-### -field <a id="NetEventNDKDisable"></a><a id="neteventndkdisable"></a><a id="NETEVENTNDKDISABLE"></a><b>NetEventNDKDisable</b>
+### -field NetEventNDKDisable
 
 <dd>
 <p>Indicates that NDK is currently disabled.</p>
 </dd>
 
-### -field <a id="NetEventFilterPreDetach"></a><a id="neteventfilterpredetach"></a><a id="NETEVENTFILTERPREDETACH"></a><b>NetEventFilterPreDetach</b>
+### -field NetEventFilterPreDetach
 
 <dd>
 <p>Indicates that a filter is about to be detached, so that the filter can perform any necessary cleanup that isn't possible in the <a href="..\ndis\nc-ndis-filter-detach.md">FilterDetach</a> handler (because the OID and indication paths are closed at that time).</p>
 </dd>
 
-### -field <a id="NetEventBindFailed"></a><a id="neteventbindfailed"></a><a id="NETEVENTBINDFAILED"></a><b>NetEventBindFailed</b>
+### -field NetEventBindFailed
 
 <dd>
 <p>Indicates that a binding event failure has occurred.</p>
 </dd>
 
-### -field <a id="NetEventSwitchActivate"></a><a id="neteventswitchactivate"></a><a id="NETEVENTSWITCHACTIVATE"></a><b>NetEventSwitchActivate</b>
+### -field NetEventSwitchActivate
 
 <dd>
-<p>Indicates that the Hyper-V Extensible Switch has completed activation, and switch extensions can now safely query for further switch configuration. The indication is only used in the Hyper-V Extensible Switch stack, issued by the extension miniport. See <a href="NULL">Querying the Hyper-V Extensible Switch Configuration</a> and <a href="..\fwpsk\ns-fwpsk--ndis-switch-parameters.md">NDIS_SWITCH_PARAMETERS</a> for more details. </p>
+<p>Indicates that the Hyper-V Extensible Switch has completed activation, and switch extensions can now safely query for further switch configuration. The indication is only used in the Hyper-V Extensible Switch stack, issued by the extension miniport. See <a href="netvista.querying_the_hyper_v_extensible_switch_configuration">Querying the Hyper-V Extensible Switch Configuration</a> and <a href="..\fwpsk\ns-fwpsk--ndis-switch-parameters.md">NDIS_SWITCH_PARAMETERS</a> for more details. </p>
 </dd>
 
-### -field <a id="NetEventInhibitBindsAbove"></a><a id="neteventinhibitbindsabove"></a><a id="NETEVENTINHIBITBINDSABOVE"></a><b>NetEventInhibitBindsAbove</b>
+### -field NetEventInhibitBindsAbove
 
 <dd>
 <p>A synchronous event that prevents other filters and protocols from binding to the miniport adapter. Any filters or protocols that were previously bound will be unbound before the event completes. The usage rules are below.</p>
@@ -238,7 +238,7 @@ typedef struct _NET_PNP_EVENT {
 and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event can optionally be issued by a miniport driver. Protocols and filters cannot receive this event or issue it.</p>
 </dd>
 
-### -field <a id="NetEventAllowBindsAbove"></a><a id="neteventallowbindsabove"></a><a id="NETEVENTALLOWBINDSABOVE"></a><b>NetEventAllowBindsAbove</b>
+### -field NetEventAllowBindsAbove
 
 <dd>
 <p>An asynchronous event that reverses the effects of NetEventInhibitBindsAbove. The usage rules are below.</p>
@@ -251,7 +251,7 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
 <p>This event is available starting with NDIS version 6.50 and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event can optionally be issued by a miniport driver. Protocols and filters cannot receive this event or issue it.</p>
 </dd>
 
-### -field <a id="NetEventRequirePause"></a><a id="neteventrequirepause"></a><a id="NETEVENTREQUIREPAUSE"></a><b>NetEventRequirePause</b>
+### -field NetEventRequirePause
 
 <dd>
 <p>A synchronous event that indicates the protocols and filters including the miniport adapter must be paused. The protocols and filters and the miniport adapter are guaranteed to be paused when the <a href="..\ndis\nf-ndis-ndismnetpnpevent.md">NdisMNetPnPEvent</a> routine returns. The usage rules are below.</p>
@@ -265,7 +265,7 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
 <p>This event is available starting with NDIS version 6.50 and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event can optionally be issued by a miniport driver. Protocols and filters cannot receive this event or issue it.</p>
 </dd>
 
-### -field <a id="NetEventAllowStart"></a><a id="neteventallowstart"></a><a id="NETEVENTALLOWSTART"></a><b>NetEventAllowStart</b>
+### -field NetEventAllowStart
 
 <dd>
 <p>An asynchronous event that indicates the protocols and filters including the miniport adapter does not need to be paused. The usage rules are below. There is no guaranteed pause state for any driver in the protocols and filters after the <a href="..\ndis\nf-ndis-ndismnetpnpevent.md">NdisMNetPnPEvent</a> routine returns. </p>
@@ -279,7 +279,7 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
 </dl>
 </dd>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>The address of a buffer that contains information that is specific to the event indicated in the 
@@ -288,7 +288,7 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
 <p></p>
 <dl>
 
-### -field <a id="NetEventSetPower"></a><a id="neteventsetpower"></a><a id="NETEVENTSETPOWER"></a><b>NetEventSetPower</b>
+### -field NetEventSetPower
 
 <dd>
 <p>The buffer contains the device power state to which the device is transitioning.
@@ -299,20 +299,20 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
 <p></p>
 <dl>
 
-### -field <a id="NdisDeviceStateUnspecified"></a><a id="ndisdevicestateunspecified"></a><a id="NDISDEVICESTATEUNSPECIFIED"></a><b>NdisDeviceStateUnspecified</b>
+### -field NdisDeviceStateUnspecified
 
 <dd>
 <p>The network device does not support power management.</p>
 </dd>
 
-### -field <a id="NdisDeviceStateD0"></a><a id="ndisdevicestated0"></a><a id="NDISDEVICESTATED0"></a><b>NdisDeviceStateD0</b>
+### -field NdisDeviceStateD0
 
 <dd>
 <p>The fully powered state, in which the device delivers full functionality and
          performance.</p>
 </dd>
 
-### -field <a id="NdisDeviceStateD1"></a><a id="ndisdevicestated1"></a><a id="NDISDEVICESTATED1"></a><b>NdisDeviceStateD1</b>
+### -field NdisDeviceStateD1
 
 <dd>
 <p>A low-power state, in which transmit requests from the host are not honored by the device,
@@ -321,7 +321,7 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
          device might be able to generate a wake-up signal.</p>
 </dd>
 
-### -field <a id="NdisDeviceStateD2"></a><a id="ndisdevicestated2"></a><a id="NDISDEVICESTATED2"></a><b>NdisDeviceStateD2</b>
+### -field NdisDeviceStateD2
 
 <dd>
 <p>A low-power state that is similar to 
@@ -329,7 +329,7 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
          is required to transition to the fully powered state.</p>
 </dd>
 
-### -field <a id="NdisDeviceStateD3"></a><a id="ndisdevicestated3"></a><a id="NDISDEVICESTATED3"></a><b>NdisDeviceStateD3</b>
+### -field NdisDeviceStateD3
 
 <dd>
 <p>The off state, in which power has been fully removed from the device.</p>
@@ -341,7 +341,7 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
        receiving network data.</p>
 </dd>
 
-### -field <a id="NetEventQueryPower"></a><a id="neteventquerypower"></a><a id="NETEVENTQUERYPOWER"></a><b>NetEventQueryPower</b>
+### -field NetEventQueryPower
 
 <dd>
 <p>The buffer contains the device power state that is requested for the device. The device state is
@@ -349,26 +349,26 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
        <b>NetEventSetPower</b> value description).</p>
 </dd>
 
-### -field <a id="NetEventQueryRemoveDevice"></a><a id="neteventqueryremovedevice"></a><a id="NETEVENTQUERYREMOVEDEVICE"></a><b>NetEventQueryRemoveDevice</b>
+### -field NetEventQueryRemoveDevice
 
 <dd>
 <p>The buffer contents are <b>NULL</b>.</p>
 </dd>
 
-### -field <a id="NetEventCancelRemoveDevice"></a><a id="neteventcancelremovedevice"></a><a id="NETEVENTCANCELREMOVEDEVICE"></a><b>NetEventCancelRemoveDevice</b>
+### -field NetEventCancelRemoveDevice
 
 <dd>
 <p>The buffer contents are <b>NULL</b>.</p>
 </dd>
 
-### -field <a id="NetEventReconfigure"></a><a id="neteventreconfigure"></a><a id="NETEVENTRECONFIGURE"></a><b>NetEventReconfigure</b>
+### -field NetEventReconfigure
 
 <dd>
 <p>The buffer can contain protocol-specific data. The protocol driver is responsible for validating
        this data.</p>
 </dd>
 
-### -field <a id="NetEventBindList"></a><a id="neteventbindlist"></a><a id="NETEVENTBINDLIST"></a><b>NetEventBindList</b>
+### -field NetEventBindList
 
 <dd>
 <p>The buffer contains a revised binding list for the network component that the 
@@ -379,13 +379,13 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
        driver is responsible for validating this list.</p>
 </dd>
 
-### -field <a id="NetEventBindsComplete"></a><a id="neteventbindscomplete"></a><a id="NETEVENTBINDSCOMPLETE"></a><b>NetEventBindsComplete</b>
+### -field NetEventBindsComplete
 
 <dd>
 <p>The buffer contents are <b>NULL</b>.</p>
 </dd>
 
-### -field <a id="NetEventPnPCapabilities"></a><a id="neteventpnpcapabilities"></a><a id="NETEVENTPNPCAPABILITIES"></a><b>NetEventPnPCapabilities</b>
+### -field NetEventPnPCapabilities
 
 <dd>
 <p>The buffer is a ULONG that contains a bitmask. When the NDIS_DEVICE_WAKE_UP_ENABLE flag is set
@@ -396,7 +396,7 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
        to zero, this flag indicates that the NIC's wake-up capabilities are disabled.</p>
 </dd>
 
-### -field <a id="NetEventPause"></a><a id="neteventpause"></a><a id="NETEVENTPAUSE"></a><b>NetEventPause</b>
+### -field NetEventPause
 
 <dd>
 <p>The buffer contains an 
@@ -404,7 +404,7 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
        NDIS_PROTOCOL_PAUSE_PARAMETERS</a> structure.</p>
 </dd>
 
-### -field <a id="NetEventRestart"></a><a id="neteventrestart"></a><a id="NETEVENTRESTART"></a><b>NetEventRestart</b>
+### -field NetEventRestart
 
 <dd>
 <p>The buffer might contain NULL or an 
@@ -417,7 +417,7 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
 <div> </div>
 </dd>
 
-### -field <a id="NetEventPortActivation"></a><a id="neteventportactivation"></a><a id="NETEVENTPORTACTIVATION"></a><b>NetEventPortActivation</b>
+### -field NetEventPortActivation
 
 <dd>
 <p>The buffer contains the first entry in a list of 
@@ -426,7 +426,7 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
        <b>Next</b> member of the NDIS_PORT structure to get the next structure in the list.</p>
 </dd>
 
-### -field <a id="NetEventPortDeactivation"></a><a id="neteventportdeactivation"></a><a id="NETEVENTPORTDEACTIVATION"></a><b>NetEventPortDeactivation</b>
+### -field NetEventPortDeactivation
 
 <dd>
 <p>The buffer contains an array of port numbers, of type NDIS_PORT_NUMBER (defined as ULONG), that
@@ -439,7 +439,7 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
        sizeof(NDIS_PORT_NUMBER).</p>
 </dd>
 
-### -field <a id="NetEventIMReEnableDevice"></a><a id="neteventimreenabledevice"></a><a id="NETEVENTIMREENABLEDEVICE"></a><b>NetEventIMReEnableDevice</b>
+### -field NetEventIMReEnableDevice
 
 <dd>
 <p>The buffer contains a pointer to a variable of type NDIS_STRING that contains a null-terminated
@@ -448,55 +448,55 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
        \Device\<i>DeviceName</i>.</p>
 </dd>
 
-### -field <a id="NetEventNDKEnable"></a><a id="neteventndkenable"></a><a id="NETEVENTNDKENABLE"></a><b>NetEventNDKEnable</b>
+### -field NetEventNDKEnable
 
 <dd>
 <p>The <b>Buffer</b> member is <b>NULL</b>.</p>
 </dd>
 
-### -field <a id="NetEventNDKDisable"></a><a id="neteventndkdisable"></a><a id="NETEVENTNDKDISABLE"></a><b>NetEventNDKDisable</b>
+### -field NetEventNDKDisable
 
 <dd>
 <p>The <b>Buffer</b> member is <b>NULL</b>.</p>
 </dd>
 
-### -field <a id="NetEventFilterPreDetach"></a><a id="neteventfilterpredetach"></a><a id="NETEVENTFILTERPREDETACH"></a><b>NetEventFilterPreDetach</b>
+### -field NetEventFilterPreDetach
 
 <dd>
 <p>The <b>Buffer</b> member is <b>NULL</b>.</p>
 </dd>
 
-### -field <a id="NetEventBindFailed"></a><a id="neteventbindfailed"></a><a id="NETEVENTBINDFAILED"></a><b>NetEventBindFailed</b>
+### -field NetEventBindFailed
 
 <dd>
 <p>The buffer contains an <a href="..\ndis\ns-ndis--ndis-bind-failed-notification.md">NDIS_BIND_FAILED_NOTIFICATION</a> structure.</p>
 </dd>
 
-### -field <a id="NetEventSwitchActivate"></a><a id="neteventswitchactivate"></a><a id="NETEVENTSWITCHACTIVATE"></a><b>NetEventSwitchActivate</b>
+### -field NetEventSwitchActivate
 
 <dd>
 <p>The buffer contents are NULL.</p>
 </dd>
 
-### -field <a id="NetEventAllowBindsAbove"></a><a id="neteventallowbindsabove"></a><a id="NETEVENTALLOWBINDSABOVE"></a><b>NetEventAllowBindsAbove</b>
+### -field NetEventAllowBindsAbove
 
 <dd>
 <p>The buffer contents are NULL.</p>
 </dd>
 
-### -field <a id="NetEventInhibitBindsAbove"></a><a id="neteventinhibitbindsabove"></a><a id="NETEVENTINHIBITBINDSABOVE"></a><b>NetEventInhibitBindsAbove</b>
+### -field NetEventInhibitBindsAbove
 
 <dd>
 <p>The buffer contents are NULL.</p>
 </dd>
 
-### -field <a id="NetEventAllowStart"></a><a id="neteventallowstart"></a><a id="NETEVENTALLOWSTART"></a><b>NetEventAllowStart</b>
+### -field NetEventAllowStart
 
 <dd>
 <p>The buffer contents are NULL.</p>
 </dd>
 
-### -field <a id="NetEventRequirePause"></a><a id="neteventrequirepause"></a><a id="NETEVENTREQUIREPAUSE"></a><b>NetEventRequirePause</b>
+### -field NetEventRequirePause
 
 <dd>
 <p>The buffer contents are NULL.</p>
@@ -504,32 +504,32 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
 </dl>
 </dd>
 
-### -field <b>BufferLength</b>
+### -field BufferLength
 
 <dd>
 <p>The number of bytes of event-specific information at 
      <b>Buffer</b>.</p>
 </dd>
 
-### -field <b>NdisReserved</b>
+### -field NdisReserved
 
 <dd>
 <p>An area reserved for used by NDIS.</p>
 </dd>
 
-### -field <b>TransportReserved</b>
+### -field TransportReserved
 
 <dd>
 <p>An area reserved for used by the transport driver.</p>
 </dd>
 
-### -field <b>TdiReserved</b>
+### -field TdiReserved
 
 <dd>
 <p>An area reserved for used by TDI.</p>
 </dd>
 
-### -field <b>TdiClientReserved</b>
+### -field TdiClientReserved
 
 <dd>
 <p>An area reserved for used by a TDI client.</p>
@@ -643,9 +643,9 @@ and must be used with V2 or later version of <b>NET_PNP_EVENT</b>. This event ca
 <a href="..\ndis\nc-ndis-protocol-net-pnp-event.md">ProtocolNetPnPEvent</a>
 </dt>
 <dt>
-<a href="NULL">Querying the Hyper-V Extensible Switch Configuration</a>
+<a href="netvista.querying_the_hyper_v_extensible_switch_configuration">Querying the Hyper-V Extensible Switch Configuration</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_PNP_EVENT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_PNP_EVENT structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -58,23 +58,23 @@ typedef struct _BDA_CAS_OPENMMIDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>ulDialogNumber</b>
+### -field ulDialogNumber
 
 <dd></dd>
 
-### -field <b>ulDialogRequest</b>
+### -field ulDialogRequest
 
 <dd></dd>
 
-### -field <b>uuidDialogType</b>
+### -field uuidDialogType
 
 <dd></dd>
 
-### -field <b>usDialogDataLength</b>
+### -field usDialogDataLength
 
 <dd></dd>
 
-### -field <b>argbDialogData</b>
+### -field argbDialogData
 
 <dd></dd>
 </dl>

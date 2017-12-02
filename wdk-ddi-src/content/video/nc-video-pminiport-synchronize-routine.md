@@ -58,7 +58,7 @@ BOOLEAN HwVidSynchronizeExecutionCallback(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> 
+### -param Context 
 
 <dd>
 <p>Pointer to context data passed to the callback routine through <b>VideoPortSynchronizeExecution</b>. Usually, this is a pointer to the device extension or an offset within the device extension.</p>

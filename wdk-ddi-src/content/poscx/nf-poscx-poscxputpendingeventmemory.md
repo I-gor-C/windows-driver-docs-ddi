@@ -61,27 +61,27 @@ NTSTATUS PosCxPutPendingEventMemory(
 ## -parameters
 <dl>
 
-### -param <i>device</i> [in]
+### -param device [in]
 
 <dd>
 <p>A handle to a framework device object that represents the device.</p>
 </dd>
 
-### -param <i>deviceInterfaceTag</i> [in]
+### -param deviceInterfaceTag [in]
 
 <dd>
 <p>The device interface associated with the event.  By default, only
           file objects that have the same tag will receive this event.</p>
 </dd>
 
-### -param <i>eventMemory</i> [in]
+### -param eventMemory [in]
 
 <dd>
 <p>The new event data memory object that contains both the point-of-service event header 
           and the data. PosCx will take over ownership of this passed in memory object.</p>
 </dd>
 
-### -param <i>eventAttr</i> [in]
+### -param eventAttr [in]
 
 <dd>
 <p>The event attributes.</p>

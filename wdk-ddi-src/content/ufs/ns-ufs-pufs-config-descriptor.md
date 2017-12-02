@@ -66,76 +66,76 @@ typedef struct _UFS_CONFIG_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>Specifies the size, in bytes, of this descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorIDN</b>
+### -field bDescriptorIDN
 
 <dd>
 <p>Specifies the Configuration Descriptor Type Identifier. This descriptor will have a value of <b>UFS_DESC_CONFIGURATION_IDN</b>.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>bBootEnable</b>
+### -field bBootEnable
 
 <dd>
 <p>Specifies if a device's boot feature is enabled.</p>
 </dd>
 
-### -field <b>bDescrAccessEn</b>
+### -field bDescrAccessEn
 
 <dd>
 <p>Enables access to the Device Descriptor after the
 partial initialization phase of the boot sequence.</p>
 </dd>
 
-### -field <b>bInitPowerMode</b>
+### -field bInitPowerMode
 
 <dd>
 <p>Specifies the power mode after device initialization
 or hardware reset.</p>
 </dd>
 
-### -field <b>bHighPriorityLUN</b>
+### -field bHighPriorityLUN
 
 <dd>
 <p><b>bHighPriorityLUN</b> configures the high priority logical unit.</p>
 </dd>
 
-### -field <b>bSecureRemovalType</b>
+### -field bSecureRemovalType
 
 <dd>
 <p>Configures the secure removal type.</p>
 </dd>
 
-### -field <b> bInitActiveICCLevel</b>
+### -field  bInitActiveICCLevel
 
 <dd>
 <p>Configures the ICC level in Active mode after device
 initialization or hardware reset.</p>
 </dd>
 
-### -field <b>wPeriodicRTCUpdate</b>
+### -field wPeriodicRTCUpdate
 
 <dd>
 <p>Specifies the frequency and method of real-time clock updates.</p>
 </dd>
 
-### -field <b> Reserved2</b>
+### -field  Reserved2
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>UnitConfig</b>
+### -field UnitConfig
 
 <dd>
 <p>Contains the configurable parameters of the Unit Descriptor. </p>

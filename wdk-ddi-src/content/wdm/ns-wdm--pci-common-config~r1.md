@@ -79,19 +79,19 @@ typedef struct _PCI_COMMON_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>VendorID</b>
+### -field VendorID
 
 <dd>
 <p>Identifies the manufacturer of the device. This must be a value allocated by the PCI SIG.</p>
 </dd>
 
-### -field <b>DeviceID</b>
+### -field DeviceID
 
 <dd>
 <p>Identifies the particular device. This value is assigned by the manufacturer.</p>
 </dd>
 
-### -field <b>Command</b>
+### -field Command
 
 <dd>
 <p>Accesses the PCI device's control register. Writing a zero to this register renders the device logically disconnected from the PCI bus except for configuration access. Otherwise, the functionality of the register is device-dependent. Possible system-defined bit encodings for this member include:</p>
@@ -129,7 +129,7 @@ typedef struct _PCI_COMMON_CONFIG {
 </dl>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>Accesses the PCI device's status register. The functionality of this register is device-dependent. Possible system-defined bit encodings for this member include:</p>
@@ -161,108 +161,108 @@ typedef struct _PCI_COMMON_CONFIG {
 </dl>
 </dd>
 
-### -field <b>RevisionID</b>
+### -field RevisionID
 
 <dd>
 <p>Specifies the revision level of the device described by the <b>DeviceID</b> member. This value is assigned by the manufacturer. </p>
 </dd>
 
-### -field <b>ProgIf</b>
+### -field ProgIf
 
 <dd>
 <p>Identifies the register-level programming interface, if any, for the device, according to the PCI classification scheme.</p>
 </dd>
 
-### -field <b>SubClass</b>
+### -field SubClass
 
 <dd>
 <p>Identifies the subtype, if any, of the device, according to the PCI classification scheme.</p>
 </dd>
 
-### -field <b>BaseClass</b>
+### -field BaseClass
 
 <dd>
 <p>Identifies type of the device, according to the PCI classification scheme.</p>
 </dd>
 
-### -field <b>CacheLineSize</b>
+### -field CacheLineSize
 
 <dd>
 <p>Contains the system cache line size in 32-bit units. This member is relevant only for PCI bus-master devices. The system determines this value during the boot process.</p>
 </dd>
 
-### -field <b>LatencyTimer</b>
+### -field LatencyTimer
 
 <dd>
 <p>Contains the value of the latency timer in units of PCI bus clocks. This member is relevant only for PCI bus-master devices. The system determines this value during the boot process.</p>
 </dd>
 
-### -field <b>HeaderType</b>
+### -field HeaderType
 
 <dd>
 <p>The system ORs the value of this member with PCI_MULTIFUNCTION, if appropriate to the device. The value of this member indicates the PCI_HEADER_TYPE_0 layout that follows.</p>
 </dd>
 
-### -field <b>BIST</b>
+### -field BIST
 
 <dd>
 <p>Zero indicates that the device does not support built-in self-test. Otherwise, the device supports built-in self-test according to the PCI standard.</p>
 </dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <dl>
 
-### -field <b>type0</b>
+### -field type0
 
 <dd>
 <p>Drivers call <a href="https://msdn.microsoft.com/library/windows/hardware/ff546580">HalAssignSlotResources</a> to configure these values and to get back the bus-relative values passed to other configuration routines.</p>
 <dl>
 
-### -field <b>BaseAddresses</b>
+### -field BaseAddresses
 
 <dd>
 <p>Base addresses.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>ROMBaseAddress</b>
+### -field ROMBaseAddress
 
 <dd>
 <p>ROM base address.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>InterruptLine</b>
+### -field InterruptLine
 
 <dd>
 <p>Interrupt line number.</p>
 </dd>
 
-### -field <b>InterruptPin</b>
+### -field InterruptPin
 
 <dd>
 <p>Interrupt pin number.</p>
 </dd>
 
-### -field <b>MinimumGrant</b>
+### -field MinimumGrant
 
 <dd>
 <p>Minimum grant.</p>
 </dd>
 
-### -field <b>MaximumLatency</b>
+### -field MaximumLatency
 
 <dd>
 <p>Maximum latency.</p>
@@ -272,7 +272,7 @@ typedef struct _PCI_COMMON_CONFIG {
 </dl>
 </dd>
 
-### -field <b>DeviceSpecific</b>
+### -field DeviceSpecific
 
 <dd>
 <p>Contains any device-specific initialization information that is available.</p>

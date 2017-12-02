@@ -57,19 +57,19 @@ typedef struct _IO_INTERRUPT_MESSAGE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>UnifiedIrql</b>
+### -field UnifiedIrql
 
 <dd>
 <p>Specifies the IRQL at which the driver's <a href="kernel.interruptmessageservice">InterruptMessageService</a> routine runs. If the driver specified an interrupt spin lock for its interrupts, <b>UnifiedIrql</b> also specifies the IRQL at which the interrupt spin lock is acquired. </p>
 </dd>
 
-### -field <b>MessageCount</b>
+### -field MessageCount
 
 <dd>
 <p>Specifies the number of message-signaled interrupts allocated for the driver.</p>
 </dd>
 
-### -field <b>MessageInfo</b>
+### -field MessageInfo
 
 <dd>
 <p>Variable-length array that specifies an <a href="..\wdm\ns-wdm--io-interrupt-message-info-entry.md">IO_INTERRUPT_MESSAGE_INFO_ENTRY</a> structure for each message-signaled interrupt allocated for the driver. The <b>MessageCount</b> member specifies the number of entries in this array. </p>

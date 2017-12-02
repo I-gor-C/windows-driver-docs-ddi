@@ -54,7 +54,7 @@ BOOLEAN KeSetKernelStackSwapEnable(
 ## -parameters
 <dl>
 
-### -param <i>Enable</i> [in]
+### -param Enable [in]
 
 <dd>
 <p>Specifies whether to enable swapping of the stack that belongs to the calling thread. If <b>TRUE</b>, swapping is enabled and the contents of the stack can be paged in and out of memory. If <b>FALSE</b>, swapping is disabled and the stack is memory-resident. </p>

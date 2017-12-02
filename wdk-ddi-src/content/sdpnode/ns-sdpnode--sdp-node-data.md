@@ -78,31 +78,31 @@ typedef union _SDP_NODE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>int128</b>
+### -field int128
 
 <dd>
 <p>The union member for a 128-bit integer.</p>
 </dd>
 
-### -field <b>uint128</b>
+### -field uint128
 
 <dd>
 <p>The union member for an unsigned 128-bit integer.</p>
 </dd>
 
-### -field <b>uuid128</b>
+### -field uuid128
 
 <dd>
 <p>The union member for a 128-bit universally unique identifier (UUID).</p>
 </dd>
 
-### -field <b>uuid32</b>
+### -field uuid32
 
 <dd>
 <p>The union member for a 32-bit UUID.</p>
 </dd>
 
-### -field <b>uuid16</b>
+### -field uuid16
 
 <dd>
 <p>
@@ -110,7 +110,7 @@ typedef union _SDP_NODE_DATA {
      </p>
 </dd>
 
-### -field <b>int64</b>
+### -field int64
 
 <dd>
 <p>
@@ -118,55 +118,55 @@ typedef union _SDP_NODE_DATA {
      </p>
 </dd>
 
-### -field <b>uint64</b>
+### -field uint64
 
 <dd>
 <p>The union member for an unsigned 64-bit integer.</p>
 </dd>
 
-### -field <b>int32</b>
+### -field int32
 
 <dd>
 <p>The union member for a 32-bit integer.</p>
 </dd>
 
-### -field <b>uint32</b>
+### -field uint32
 
 <dd>
 <p>The union member for an unsigned 32-bit integer.</p>
 </dd>
 
-### -field <b>int16</b>
+### -field int16
 
 <dd>
 <p>The union member for a 16-bit integer.</p>
 </dd>
 
-### -field <b>uint16</b>
+### -field uint16
 
 <dd>
 <p>The union member for an unsigned 16-bit integer.</p>
 </dd>
 
-### -field <b>int8</b>
+### -field int8
 
 <dd>
 <p>The union reserved for an 8-bit integer.</p>
 </dd>
 
-### -field <b>uint8</b>
+### -field uint8
 
 <dd>
 <p>The union member for an unsigned 8-bit integer.</p>
 </dd>
 
-### -field <b>boolean</b>
+### -field boolean
 
 <dd>
 <p>The union member for a Boolean value.</p>
 </dd>
 
-### -field <b>string</b>
+### -field string
 
 <dd>
 <p>
@@ -174,13 +174,13 @@ typedef union _SDP_NODE_DATA {
      </p>
 </dd>
 
-### -field <b>url</b>
+### -field url
 
 <dd>
 <p>The union member for a URL value.</p>
 </dd>
 
-### -field <b>sequence</b>
+### -field sequence
 
 <dd>
 <p>An 
@@ -188,25 +188,25 @@ typedef union _SDP_NODE_DATA {
      the elements of a sequence.</p>
 </dd>
 
-### -field <b>alternative</b>
+### -field alternative
 
 <dd>
 <p>An SDP_NODE_HEADER structure that references the elements of an alternate list sequence.</p>
 </dd>
 
-### -field <b>container</b>
+### -field container
 
 <dd>
 <p>A list of pointers to user-mode specific interfaces.</p>
 </dd>
 
-### -field ( <i>unnamed struct</i> )
+### -field ( unnamed struct )
 
 <dd>
 <p>The union member for a 128-bit integer.</p>
 <dl>
 
-### -field <b>stream</b>
+### -field stream
 
 <dd>
 <p>
@@ -214,7 +214,7 @@ typedef union _SDP_NODE_DATA {
       </p>
 </dd>
 
-### -field <b>streamLength</b>
+### -field streamLength
 
 <dd>
 <p>

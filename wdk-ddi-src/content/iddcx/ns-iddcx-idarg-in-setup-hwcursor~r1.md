@@ -56,7 +56,7 @@ typedef struct IDARG_IN_SETUP_HWCURSOR {
 ## -struct-fields
 <dl>
 
-### -field <b>CursorInfo</b>
+### -field CursorInfo
 
 <dd>
 <p>
@@ -64,7 +64,7 @@ typedef struct IDARG_IN_SETUP_HWCURSOR {
                  </p>
 </dd>
 
-### -field <b>hNewCursorDataAvailable</b>
+### -field hNewCursorDataAvailable
 
 <dd>
 <p>

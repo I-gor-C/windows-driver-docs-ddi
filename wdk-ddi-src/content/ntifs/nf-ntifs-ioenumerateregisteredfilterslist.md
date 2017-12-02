@@ -7,7 +7,7 @@ old-location: ifsk\ioenumerateregisteredfilterslist.htm
 old-project: ifsk
 ms.assetid: 7ac67110-bc92-457a-88f4-a21f2fa38174
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: IoEnumerateRegisteredFiltersList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ NTSTATUS IoEnumerateRegisteredFiltersList(
 ## -parameters
 <dl>
 
-### -param <i>DriverObjectList</i> [out]
+### -param DriverObjectList [out]
 
 <dd>
 <p>A pointer to a caller-allocated array that receives the driver object pointers. This parameter is optional and can be <b>NULL</b>. (See the following Remarks section.) </p>
 </dd>
 
-### -param <i>DriverObjectListSize</i> [in]
+### -param DriverObjectListSize [in]
 
 <dd>
 <p>Size, in bytes, of the <i>DriverObjectList</i> array. Can be zero. (See the following Remarks section.) </p>
 </dd>
 
-### -param <i>ActualNumberDriverObjects</i> [out]
+### -param ActualNumberDriverObjects [out]
 
 <dd>
 <p>Actual number of driver objects found. Note that if the array at <i>DriverObjectList</i> is too small, the number of driver object pointers that are copied into the array will be less than <i>ActualNumberDriverObjects</i>. </p>
@@ -174,4 +174,4 @@ NTSTATUS IoEnumerateRegisteredFiltersList(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoEnumerateRegisteredFiltersList routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoEnumerateRegisteredFiltersList routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

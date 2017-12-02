@@ -55,11 +55,11 @@ typedef struct _BDA_WMDRMTUNER_PIDPROTECTION {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>uuidKeyID</b>
+### -field uuidKeyID
 
 <dd></dd>
 </dl>

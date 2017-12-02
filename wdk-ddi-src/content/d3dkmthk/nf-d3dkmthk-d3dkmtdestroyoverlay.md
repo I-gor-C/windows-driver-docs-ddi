@@ -54,7 +54,7 @@ NTSTATUS D3DKMTDestroyOverlay(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroyoverlay.md">D3DKMT_DESTROYOVERLAY</a> structure that contains the handle to the overlay to destroy.</p>

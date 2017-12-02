@@ -61,49 +61,49 @@ typedef struct _DXGKARG_COLLECTDBGINFO_EXT {
 ## -struct-fields
 <dl>
 
-### -field <b>BucketingKey</b>
+### -field BucketingKey
 
 <dd>
 <p>[out] The optional integer key for Microsoft Online Crash Analysis (OCA) bucketing (that is, the categorizing of minidumps). </p>
 </dd>
 
-### -field <b>CurrentDmaBufferOffset</b>
+### -field CurrentDmaBufferOffset
 
 <dd>
 <p>[out] The optional execution offset into the current DMA buffer. The operating system uses the offset to optimize DMA data collection.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved4</b>
+### -field Reserved4
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved5</b>
+### -field Reserved5
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved6</b>
+### -field Reserved6
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Reserved7</b>
+### -field Reserved7
 
 <dd>
 <p>Reserved for future use.</p>

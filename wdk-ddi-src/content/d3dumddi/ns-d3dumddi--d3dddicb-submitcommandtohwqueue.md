@@ -59,13 +59,13 @@ typedef struct _D3DDDICB_SUBMITCOMMANDTOHWQUEUE {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>The combined UINT used to operate over the values.</p>

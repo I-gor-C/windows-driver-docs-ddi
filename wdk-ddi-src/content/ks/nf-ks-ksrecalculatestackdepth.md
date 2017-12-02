@@ -55,13 +55,13 @@ VOID KsRecalculateStackDepth(
 ## -parameters
 <dl>
 
-### -param <i>Header </i> [in]
+### -param Header  [in]
 
 <dd>
 <p>Points to a header previously allocated by <b>KsAllocateDeviceHeader</b>.</p>
 </dd>
 
-### -param <i>ReuseStackLocation </i> [in]
+### -param ReuseStackLocation  [in]
 
 <dd>
 <p>If this is set to <b>TRUE</b>, the current stack location is reused when any IRP is forwarded. This means that this object does not require its own stack location when forwarding IRPs and an extra location is not added to the maximum stack size. If set to <b>FALSE</b>, the calculated stack size is incremented by one. If the Pnp object stack is set, the reuse parameter also applies to that stack. Note that <b>KsDefaultDispatchPnp</b> always reuses the current stack location. The minimum stack depth is 1.</p>

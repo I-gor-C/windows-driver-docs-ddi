@@ -65,18 +65,18 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>StatisticType</b>
+### -field StatisticType
 
 <dd>
 <p>The type of statistics data from the <a href="..\netdispumdddi\ne-netdispumdddi-miracast-statistic-type.md">MIRACAST_STATISTIC_TYPE</a> enumeration.</p>
 </dd>
 
-### -field <b>EncodeComplete</b>
+### -field EncodeComplete
 
 <dd>
 <dl>
 
-### -field <b>ChunkInfo</b>
+### -field ChunkInfo
 
 <dd>
 <p>A <a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-info.md">MIRACAST_CHUNK_INFO</a> structure that provides info about an encode chunk that is identified by the <b>ChunkId</b> member.</p>
@@ -84,12 +84,12 @@ typedef struct {
 </dl>
 </dd>
 
-### -field <b>ChunkSent</b>
+### -field ChunkSent
 
 <dd>
 <dl>
 
-### -field <b>ChunkId</b>
+### -field ChunkId
 
 <dd>
 <p>The identifier for this chunk, of type <a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-id.md">MIRACAST_CHUNK_ID</a>.</p>
@@ -97,12 +97,12 @@ typedef struct {
 </dl>
 </dd>
 
-### -field <b>ProtocolEvent</b>
+### -field ProtocolEvent
 
 <dd>
 <dl>
 
-### -field <b>Event</b>
+### -field Event
 
 <dd>
 <p>The type of protocol event, given as a value of the <a href="..\netdispumdddi\ne-netdispumdddi-miracast-protocol-event.md">MIRACAST_PROTOCOL_EVENT</a> enumeration.</p>

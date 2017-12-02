@@ -131,7 +131,7 @@ HANDLE PsGetCurrentProcessId(void);
 <a href="kernel.psgetcurrentprocess">PsGetCurrentProcess</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 <dt>
 <a href="..\ntddk\nf-ntddk-psgetcurrentthreadid.md">PsGetCurrentThreadId</a>

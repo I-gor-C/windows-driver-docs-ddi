@@ -7,7 +7,7 @@ old-location: sensors\sensor_property_list_size.htm
 old-project: sensors
 ms.assetid: 17B53AAF-5027-4E45-ABAF-566771DDF1DE
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: SENSOR_PROPERTY_LIST_SIZE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ FORCEINLINE ULONG SENSOR_PROPERTY_LIST_SIZE(
 ## -parameters
 <dl>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>The number of PROPERTYKEY elements.</p>

@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>IOCTL_HID_GET_INPUT_REPORT returns an input report from a HID Class device.</p>
-<p>For general information about HIDClass devices, see <a href="NULL">HID Collections</a>. </p>
+<p>For general information about HIDClass devices, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. </p>
 
 
 ## -ioctlparameters

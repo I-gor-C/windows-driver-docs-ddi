@@ -84,13 +84,13 @@ typedef enum D3D11DDI_HANDLETYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D10DDI_HT_RESOURCE"></a><a id="d3d10ddi_ht_resource"></a><b>D3D10DDI_HT_RESOURCE</b>
+### -field D3D10DDI_HT_RESOURCE
 
 <dd>
 <p>A resource handle. </p>
 </dd>
 
-### -field <a id="D3D10DDI_HT_SHADERRESOURCEVIEW"></a><a id="d3d10ddi_ht_shaderresourceview"></a><b>D3D10DDI_HT_SHADERRESOURCEVIEW</b>
+### -field D3D10DDI_HT_SHADERRESOURCEVIEW
 
 <dd>
 <p>
@@ -98,157 +98,157 @@ typedef enum D3D11DDI_HANDLETYPE {
      </p>
 </dd>
 
-### -field <a id="D3D10DDI_HT_RENDERTARGETVIEW"></a><a id="d3d10ddi_ht_rendertargetview"></a><b>D3D10DDI_HT_RENDERTARGETVIEW</b>
+### -field D3D10DDI_HT_RENDERTARGETVIEW
 
 <dd>
 <p>A render-target-view handle. </p>
 </dd>
 
-### -field <a id="D3D10DDI_HT_DEPTHSTENCILVIEW"></a><a id="d3d10ddi_ht_depthstencilview"></a><b>D3D10DDI_HT_DEPTHSTENCILVIEW</b>
+### -field D3D10DDI_HT_DEPTHSTENCILVIEW
 
 <dd>
 <p>A depth-stencil-view handle. </p>
 </dd>
 
-### -field <a id="D3D10DDI_HT_SHADER"></a><a id="d3d10ddi_ht_shader"></a><b>D3D10DDI_HT_SHADER</b>
+### -field D3D10DDI_HT_SHADER
 
 <dd>
 <p>A shader handle. </p>
 </dd>
 
-### -field <a id="D3D10DDI_HT_ELEMENTLAYOUT"></a><a id="d3d10ddi_ht_elementlayout"></a><b>D3D10DDI_HT_ELEMENTLAYOUT</b>
+### -field D3D10DDI_HT_ELEMENTLAYOUT
 
 <dd>
 <p>A value that identifies an element-layout handle. </p>
 </dd>
 
-### -field <a id="D3D10DDI_HT_BLENDSTATE"></a><a id="d3d10ddi_ht_blendstate"></a><b>D3D10DDI_HT_BLENDSTATE</b>
+### -field D3D10DDI_HT_BLENDSTATE
 
 <dd>
 <p>A blend-state handle. </p>
 </dd>
 
-### -field <a id="D3D10DDI_HT_DEPTHSTENCILSTATE"></a><a id="d3d10ddi_ht_depthstencilstate"></a><b>D3D10DDI_HT_DEPTHSTENCILSTATE</b>
+### -field D3D10DDI_HT_DEPTHSTENCILSTATE
 
 <dd>
 <p>A depth-stencil-state handle. </p>
 </dd>
 
-### -field <a id="D3D10DDI_HT_RASTERIZERSTATE"></a><a id="d3d10ddi_ht_rasterizerstate"></a><b>D3D10DDI_HT_RASTERIZERSTATE</b>
+### -field D3D10DDI_HT_RASTERIZERSTATE
 
 <dd>
 <p>A rasterizer-state handle. </p>
 </dd>
 
-### -field <a id="D3D10DDI_HT_SAMPLERSTATE"></a><a id="d3d10ddi_ht_samplerstate"></a><b>D3D10DDI_HT_SAMPLERSTATE</b>
+### -field D3D10DDI_HT_SAMPLERSTATE
 
 <dd>
 <p>A sampler-state handle. </p>
 </dd>
 
-### -field <a id="D3D10DDI_HT_QUERY"></a><a id="d3d10ddi_ht_query"></a><b>D3D10DDI_HT_QUERY</b>
+### -field D3D10DDI_HT_QUERY
 
 <dd>
 <p>A query handle.</p>
 </dd>
 
-### -field <a id="D3D11DDI_HT_COMMANDLIST"></a><a id="d3d11ddi_ht_commandlist"></a><b>D3D11DDI_HT_COMMANDLIST</b>
+### -field D3D11DDI_HT_COMMANDLIST
 
 <dd>
 <p>A command-list handle. </p>
 </dd>
 
-### -field <a id="D3D11DDI_HT_UNORDEREDACCESSVIEW"></a><a id="d3d11ddi_ht_unorderedaccessview"></a><b>D3D11DDI_HT_UNORDEREDACCESSVIEW</b>
+### -field D3D11DDI_HT_UNORDEREDACCESSVIEW
 
 <dd>
 <p>An unordered-access-view handle. </p>
 </dd>
 
-### -field <a id="D3D11_1DDI_HT_DECODE"></a><a id="d3d11_1ddi_ht_decode"></a><b>D3D11_1DDI_HT_DECODE</b>
+### -field D3D11_1DDI_HT_DECODE
 
 <dd>
 <p>A video decoder handle.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_HT_VIDEOPROCESSORENUM"></a><a id="d3d11_1ddi_ht_videoprocessorenum"></a><b>D3D11_1DDI_HT_VIDEOPROCESSORENUM</b>
+### -field D3D11_1DDI_HT_VIDEOPROCESSORENUM
 
 <dd>
 <p>A video processor enumeration handle.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_HT_VIDEOPROCESSOR"></a><a id="d3d11_1ddi_ht_videoprocessor"></a><b>D3D11_1DDI_HT_VIDEOPROCESSOR</b>
+### -field D3D11_1DDI_HT_VIDEOPROCESSOR
 
 <dd>
 <p>A video processor handle.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_HT_VIDEODECODEROUTPUTVIEW"></a><a id="d3d11_1ddi_ht_videodecoderoutputview"></a><b>D3D11_1DDI_HT_VIDEODECODEROUTPUTVIEW</b>
+### -field D3D11_1DDI_HT_VIDEODECODEROUTPUTVIEW
 
 <dd>
 <p>A video decoder output-view handle.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_HT_VIDEOPROCESSORINPUTVIEW"></a><a id="d3d11_1ddi_ht_videoprocessorinputview"></a><b>D3D11_1DDI_HT_VIDEOPROCESSORINPUTVIEW</b>
+### -field D3D11_1DDI_HT_VIDEOPROCESSORINPUTVIEW
 
 <dd>
 <p>A video processor input-view handle.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_HT_VIDEOPROCESSOROUTPUTVIEW"></a><a id="d3d11_1ddi_ht_videoprocessoroutputview"></a><b>D3D11_1DDI_HT_VIDEOPROCESSOROUTPUTVIEW</b>
+### -field D3D11_1DDI_HT_VIDEOPROCESSOROUTPUTVIEW
 
 <dd>
 <p>A video processor output-view handle.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="____D3D12DDI_HT_COMMAND_QUEUE"></a><a id="____d3d12ddi_ht_command_queue"></a><b>    D3D12DDI_HT_COMMAND_QUEUE</b>
+### -field     D3D12DDI_HT_COMMAND_QUEUE
 
 <dd>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id="____D3D12DDI_HT_COMMAND_ALLOCATOR"></a><a id="____d3d12ddi_ht_command_allocator"></a><b>    D3D12DDI_HT_COMMAND_ALLOCATOR</b>
+### -field     D3D12DDI_HT_COMMAND_ALLOCATOR
 
 <dd>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id="____D3D12DDI_HT_PIPELINE_STATE"></a><a id="____d3d12ddi_ht_pipeline_state"></a><b>    D3D12DDI_HT_PIPELINE_STATE</b>
+### -field     D3D12DDI_HT_PIPELINE_STATE
 
 <dd>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id="____D3D12DDI_HT_COMMAND_LIST"></a><a id="____d3d12ddi_ht_command_list"></a><b>    D3D12DDI_HT_COMMAND_LIST</b>
+### -field     D3D12DDI_HT_COMMAND_LIST
 
 <dd>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id="____D3D12DDI_HT_FENCE"></a><a id="____d3d12ddi_ht_fence"></a><b>    D3D12DDI_HT_FENCE</b>
+### -field     D3D12DDI_HT_FENCE
 
 <dd>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id="____D3D12DDI_HT_DESCRIPTOR_HEAP"></a><a id="____d3d12ddi_ht_descriptor_heap"></a><b>    D3D12DDI_HT_DESCRIPTOR_HEAP</b>
+### -field     D3D12DDI_HT_DESCRIPTOR_HEAP
 
 <dd>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id="____D3D12DDI_HT_HEAP"></a><a id="____d3d12ddi_ht_heap"></a><b>    D3D12DDI_HT_HEAP</b>
+### -field     D3D12DDI_HT_HEAP
 
 <dd>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id="____D3D12DDI_HT_UNORDERED_ACCESS_VIEW_COUNTER"></a><a id="____d3d12ddi_ht_unordered_access_view_counter"></a><b>    D3D12DDI_HT_UNORDERED_ACCESS_VIEW_COUNTER</b>
+### -field     D3D12DDI_HT_UNORDERED_ACCESS_VIEW_COUNTER
 
 <dd>
 <p>Supported starting with Windows 10.</p>

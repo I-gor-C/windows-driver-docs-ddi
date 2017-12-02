@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookadditionalnumberinfo_2.htm
 old-project: netvista
 ms.assetid: c56dc6df-e547-42f4-9656-01de5e66909a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILPHONEBOOKADDITIONALNUMBERINFO, RILPHONEBOOKADDITIONALNUMBERINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef struct _RILPHONEBOOKADDITIONALNUMBERINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwRilPBANSSize</b>
+### -field dwRilPBANSSize
 
 <dd></dd>
 
-### -field <b>RilPBANS</b>
+### -field RilPBANS
 
 <dd></dd>
 </dl>

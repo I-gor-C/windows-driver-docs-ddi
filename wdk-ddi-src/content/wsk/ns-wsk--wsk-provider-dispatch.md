@@ -7,7 +7,7 @@ old-location: netvista\wsk_provider_dispatch.htm
 old-project: netvista
 ms.assetid: 864891dd-7db5-4343-9014-c6a284f1fd7e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WSK_PROVIDER_DISPATCH, WSK_PROVIDER_DISPATCH, *PWSK_PROVIDER_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ typedef struct _WSK_PROVIDER_DISPATCH {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the WSK 
@@ -73,34 +73,34 @@ typedef struct _WSK_PROVIDER_DISPATCH {
      (NPI)</a> that the WSK subsystem will use for its attachment to the WSK application.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>WskSocket</b>
+### -field WskSocket
 
 <dd>
 <p>A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn-wsk-socket.md">WskSocket</a> function.</p>
 </dd>
 
-### -field <b>WskSocketConnect</b>
+### -field WskSocketConnect
 
 <dd>
 <p>A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn-wsk-socket-connect.md">WskSocketConnect</a> function.</p>
 </dd>
 
-### -field <b>WskControlClient</b>
+### -field WskControlClient
 
 <dd>
 <p>A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn-wsk-control-client.md">WskControlClient</a> function.</p>
 </dd>
 
-### -field <b>WskGetAddressInfo</b>
+### -field WskGetAddressInfo
 
 <dd>
 <p>A pointer to the WSK subsystem's 
@@ -109,7 +109,7 @@ typedef struct _WSK_PROVIDER_DISPATCH {
 <p>This member is available beginning with Windows 7.</p>
 </dd>
 
-### -field <b>WskFreeAddressInfo</b>
+### -field WskFreeAddressInfo
 
 <dd>
 <p>A pointer to the WSK subsystem's 
@@ -118,7 +118,7 @@ typedef struct _WSK_PROVIDER_DISPATCH {
 <p>This member is available beginning with Windows 7.</p>
 </dd>
 
-### -field <b>WskGetNameInfo</b>
+### -field WskGetNameInfo
 
 <dd>
 <p>A pointer to the WSK subsystem's 
@@ -203,4 +203,4 @@ typedef struct _WSK_PROVIDER_DISPATCH {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_DISPATCH structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_DISPATCH structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

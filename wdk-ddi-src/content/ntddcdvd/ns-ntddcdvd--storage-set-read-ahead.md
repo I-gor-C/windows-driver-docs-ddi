@@ -55,13 +55,13 @@ typedef struct _STORAGE_SET_READ_AHEAD {
 ## -struct-fields
 <dl>
 
-### -field <b>TriggerAddress</b>
+### -field TriggerAddress
 
 <dd>
 <p>Indicates the address at which the device jumps to the target address. </p>
 </dd>
 
-### -field <b>TargetAddress</b>
+### -field TargetAddress
 
 <dd>
 <p>Indicates the address to jump to. </p>

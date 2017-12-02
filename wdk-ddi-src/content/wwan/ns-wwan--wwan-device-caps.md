@@ -7,7 +7,7 @@ old-location: netvista\wwan_device_caps.htm
 old-project: netvista
 ms.assetid: a8f9bea7-dafe-41be-a6c7-521b78a274ee
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_DEVICE_CAPS, WWAN_DEVICE_CAPS, *PWWAN_DEVICE_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,14 +72,14 @@ typedef struct _WWAN_DEVICE_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>WwanDeviceType</b>
+### -field WwanDeviceType
 
 <dd>
 <p>The type of the device. Miniport drivers must set the device type to be a value other than 
      <b>WwanDeviceTypeUnknown</b>.</p>
 </dd>
 
-### -field <b>WwanCellularClass</b>
+### -field WwanCellularClass
 
 <dd>
 <p>The cellular class of the device. Miniport drivers must set the cellular class to be a value other
@@ -89,7 +89,7 @@ typedef struct _WWAN_DEVICE_CAPS {
 <p>Miniport drivers that support multi-mode should set this to <b>WwanCellularClassGsm.</b></p>
 </dd>
 
-### -field <b>WwanVoiceClass</b>
+### -field WwanVoiceClass
 
 <dd>
 <p>The voice class of the device. This member informs the MB Service about the presence of circuit
@@ -99,7 +99,7 @@ typedef struct _WWAN_DEVICE_CAPS {
      <b>WwanVoiceClass</b> member allows the MB Service to support this feature in the future.</p>
 </dd>
 
-### -field <b>WwanSimClass</b>
+### -field WwanSimClass
 
 <dd>
 <p>The class of the Subscriber Identity Module (SIM card). Miniport drivers must set the SIM class to
@@ -107,7 +107,7 @@ typedef struct _WWAN_DEVICE_CAPS {
      <b>WwanSimClassUnknown</b>.</p>
 </dd>
 
-### -field <b>WwanDataClass</b>
+### -field WwanDataClass
 
 <dd>
 <p>A bitmap that represents the data-class(es) that the device supports. The following table shows
@@ -251,7 +251,7 @@ typedef struct _WWAN_DEVICE_CAPS {
 <p> </p>
 </dd>
 
-### -field <b>CustomDataClass</b>
+### -field CustomDataClass
 
 <dd>
 <p>A NULL-terminated string that represents the name of the custom data-class. This member is valid
@@ -259,7 +259,7 @@ typedef struct _WWAN_DEVICE_CAPS {
      <b>WwanDataClass</b> member.</p>
 </dd>
 
-### -field <b>WwanGsmBandClass</b>
+### -field WwanGsmBandClass
 
 <dd>
 <p>A bitmap that represents the frequency bands GSM-based devices support. The following table shows
@@ -373,7 +373,7 @@ typedef struct _WWAN_DEVICE_CAPS {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569824">OID_WWAN_DEVICE_CAPS</a>.</p>
 </dd>
 
-### -field <b>WwanCdmaBandClass</b>
+### -field WwanCdmaBandClass
 
 <dd>
 <p>A bitmap that represents the frequency bands CDMA-based devices support. The following table shows
@@ -553,7 +553,7 @@ typedef struct _WWAN_DEVICE_CAPS {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569824">OID_WWAN_DEVICE_CAPS</a>.</p>
 </dd>
 
-### -field <b>CustomBandClass</b>
+### -field CustomBandClass
 
 <dd>
 <p>A NULL-terminated string that represents the name of the custom band class. This member is valid
@@ -562,7 +562,7 @@ typedef struct _WWAN_DEVICE_CAPS {
      <b>WwanCdmaBandClass</b> members, as appropriate.</p>
 </dd>
 
-### -field <b>WwanSmsCaps</b>
+### -field WwanSmsCaps
 
 <dd>
 <p>A bitmap that represents the type of SMS messages and directional flow that the device supports.
@@ -627,7 +627,7 @@ typedef struct _WWAN_DEVICE_CAPS {
 <p>Miniport drivers should set this member to reflect support for only GSM PDU format for receiving and sending SMS when the current home provider is multi-mode capable. Therefure, if the miniport driver receives a SMS in the cellular class native format, for example CDMA TEXT or CDMA PDU, then the miniport driver is required to do the translation to GSM PDU and indicate it to the MB Service. Similarly if the miniport driver receives a send request in GSM PDU format then it is required to do the translation to its native cellular class format.</p>
 </dd>
 
-### -field <b>WwanControlCaps</b>
+### -field WwanControlCaps
 
 <dd>
 <p>A bitmap that represents the control capabilities that the device supports. The following table
@@ -727,7 +727,7 @@ typedef struct _WWAN_DEVICE_CAPS {
      device supports.</p>
 </dd>
 
-### -field <b>DeviceId</b>
+### -field DeviceId
 
 <dd>
 <p>A NULL-terminated string that represents the device ID.</p>
@@ -741,27 +741,27 @@ typedef struct _WWAN_DEVICE_CAPS {
      must be available even when the MB device/SIM requires a PIN to unlock.</p>
 </dd>
 
-### -field <b>Manufacturer</b>
+### -field Manufacturer
 
 <dd>
 <p>A NULL-terminated string that represents the manufacturer of the device. This member is
      optional.</p>
 </dd>
 
-### -field <b>Model</b>
+### -field Model
 
 <dd>
 <p>A NULL-terminated string that represents the model of the device. This member is optional.</p>
 </dd>
 
-### -field <b>FirmwareInfo</b>
+### -field FirmwareInfo
 
 <dd>
 <p>A NULL-terminated string that represents the firmware specific information about the device. This
      member is optional.</p>
 </dd>
 
-### -field <b>MaxActivatedContexts</b>
+### -field MaxActivatedContexts
 
 <dd>
 <p>The maximum number of activated contexts that are supported by the device. Miniport drivers should
@@ -769,7 +769,7 @@ typedef struct _WWAN_DEVICE_CAPS {
      <b>MaxActivatedContexts</b>.</p>
 </dd>
 
-### -field <b>WwanAuthAlgoCaps</b>
+### -field WwanAuthAlgoCaps
 
 <dd>
 <p>A bitmap that represents the types of authentication methods the MB device supports.</p>
@@ -816,7 +816,7 @@ typedef struct _WWAN_DEVICE_CAPS {
 <div> </div>
 </dd>
 
-### -field <b>CellularClassListHeader</b>
+### -field CellularClassListHeader
 
 <dd>
 <p>A formatted WWAN_LIST_HEADER object that represents a list of cellular classes that a multi-mode capable device supports. The <b>ElementType</b> member in WWAN_LIST_HEADER should always be set to <b>WwanStructCellularClass</b>. The <b>ElementCount</b> member in WWAN_LIST_HEADER is set to the number of cellular classes that follow the WWAN_LIST_HEADER structure. MB devices that are not multi-mode capable should set <b>ElementCount</b> to 0.</p>
@@ -884,4 +884,4 @@ typedef struct _WWAN_DEVICE_CAPS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DEVICE_CAPS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DEVICE_CAPS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

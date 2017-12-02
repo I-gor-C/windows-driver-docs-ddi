@@ -63,55 +63,55 @@ typedef struct _REG_QUERY_VALUE_KEY_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Object</b>
+### -field Object
 
 <dd>
 <p>A pointer to the registry key object for the key whose value entry is being queried.</p>
 </dd>
 
-### -field <b>ValueName</b>
+### -field ValueName
 
 <dd>
 <p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the name of the value entry to retrieve information for.</p>
 </dd>
 
-### -field <b>KeyValueInformationClass</b>
+### -field KeyValueInformationClass
 
 <dd>
 <p>The <a href="..\wdm\ne-wdm--key-value-information-class.md">KEY_VALUE_INFORMATION_CLASS</a> value that indicates the type of information to be returned by the system. </p>
 </dd>
 
-### -field <b>KeyValueInformation</b>
+### -field KeyValueInformation
 
 <dd>
 <p>A pointer to a buffer that contains the information to be returned by the system. The format of the buffer depends on the value of <b>KeyValueInformationClass</b>. For more information see <a href="..\wdm\ne-wdm--key-value-information-class.md">KEY_VALUE_INFORMATION_CLASS</a>.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The size, in bytes, of the <b>KeyValueInformation</b> buffer. </p>
 </dd>
 
-### -field <b>ResultLength</b>
+### -field ResultLength
 
 <dd>
 <p>A pointer to a variable that receives (from the system) the amount of valid data, in bytes, in the <b>KeyValueInformation</b> buffer. </p>
 </dd>
 
-### -field <b>CallContext</b>
+### -field CallContext
 
 <dd>
 <p>Optional driver-defined context information that the driver's <a href="kernel.registrycallback">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.</p>
 </dd>
 
-### -field <b>ObjectContext</b>
+### -field ObjectContext
 
 <dd>
 <p>A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system. </p>

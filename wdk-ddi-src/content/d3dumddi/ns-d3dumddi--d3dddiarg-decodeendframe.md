@@ -55,13 +55,13 @@ typedef struct _D3DDDIARG_DECODEENDFRAME {
 ## -struct-fields
 <dl>
 
-### -field <b>hDecode</b>
+### -field hDecode
 
 <dd>
 <p>A handle to the DirectX VA decode device. The user-mode display driver returns this handle in a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createdecodedevice.md">CreateDecodeDevice</a> function.</p>
 </dd>
 
-### -field <b>pHandleComplete</b>
+### -field pHandleComplete
 
 <dd>
 <p>This member is reserved and should be set to <b>NULL</b>. </p>

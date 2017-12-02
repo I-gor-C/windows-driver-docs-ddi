@@ -61,25 +61,25 @@ VOID HwVidExecuteDma(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.</p>
 </dd>
 
-### -param <i>VpDmaAdapter</i> 
+### -param VpDmaAdapter 
 
 <dd>
 <p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure was returned by a call to <a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>.</p>
 </dd>
 
-### -param <i>SGList</i> 
+### -param SGList 
 
 <dd>
 <p>Pointer to a <a href="..\video\ns-video--vp-scatter-gather-list.md">VP_SCATTER_GATHER_LIST</a> structure. The video port driver fills in the information in this structure, and passes this structure to the miniport driver.</p>
 </dd>
 
-### -param <i>Context</i> 
+### -param Context 
 
 <dd>
 <p>Pointer to the driver-determined context passed in from <b>VideoPortStartDma</b>.</p>

@@ -54,7 +54,7 @@ VOID AtaPortStallExecution(
 ## -parameters
 <dl>
 
-### -param <i>Delay</i> [in]
+### -param Delay [in]
 
 <dd>
 <p>Specifies the delay interval, in microseconds.</p>

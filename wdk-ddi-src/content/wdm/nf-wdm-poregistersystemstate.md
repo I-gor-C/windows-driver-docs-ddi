@@ -56,38 +56,38 @@ PVOID PoRegisterSystemState(
 ## -parameters
 <dl>
 
-### -param <i>StateHandle</i> [in, out]
+### -param StateHandle [in, out]
 
 <dd>
 <p>A pointer to a caller-supplied buffer for a registration state handle. The size, in bytes, of the buffer is <b>sizeof</b>(ULONG). If <b>NULL</b>, this is a new registration. If non-<b>NULL</b>, this parameter points to a handle that was returned by a previous call to <b>PoRegisterSystemState</b>.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Indicates the type of activity, as specified by a bitwise OR of one or more of the following values:</p>
 <p></p>
 <dl>
 
-### -param <a id="ES_SYSTEM_REQUIRED"></a><a id="es_system_required"></a>ES_SYSTEM_REQUIRED
+### -param ES_SYSTEM_REQUIRED
 
 <dd>
 <p>The system is not idle, regardless of apparent load.</p>
 </dd>
 
-### -param <a id="ES_DISPLAY_REQUIRED"></a><a id="es_display_required"></a>ES_DISPLAY_REQUIRED
+### -param ES_DISPLAY_REQUIRED
 
 <dd>
 <p>Use of the display is required.</p>
 </dd>
 
-### -param <a id="ES_USER_PRESENT"></a><a id="es_user_present"></a>ES_USER_PRESENT
+### -param ES_USER_PRESENT
 
 <dd>
 <p>A user is present.</p>
 </dd>
 
-### -param <a id="ES_CONTINUOUS"></a><a id="es_continuous"></a>ES_CONTINUOUS
+### -param ES_CONTINUOUS
 
 <dd>
 <p>The settings are continuous and should remain in effect until explicitly changed.</p>
@@ -100,7 +100,7 @@ PVOID PoRegisterSystemState(
 <p><b>PoRegisterSystemState</b> returns a handle to be used later to change or unregister the system busy state. It returns <b>NULL</b> if the handle could not be allocated.</p>
 
 ## -remarks
-<p><b>PoRegisterSystemState</b> registers the system busy state as indicated by the flags. The registration persists until the caller explicitly changes it with another call to <b>PoRegisterSystemState</b> or cancels it with a call to <a href="..\ntifs\nf-ntifs-pounregistersystemstate.md">PoUnregisterSystemState</a>.</p>
+<p><b>PoRegisterSystemState</b> registers the system busy state as indicated by the flags. The registration persists until the caller explicitly changes it with another call to <b>PoRegisterSystemState</b> or cancels it with a call to <a href="..\wdm\nf-wdm-pounregistersystemstate.md">PoUnregisterSystemState</a>.</p>
 
 <p>The <i>Flags</i> parameter specifies the type of activity in progress. Drivers can specify any combination of the flags.</p>
 
@@ -176,7 +176,7 @@ PVOID PoRegisterSystemState(
 <a href="..\wdm\nf-wdm-posetsystemstate.md">PoSetSystemState</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-pounregistersystemstate.md">PoUnregisterSystemState</a>
+<a href="..\wdm\nf-wdm-pounregistersystemstate.md">PoUnregisterSystemState</a>
 </dt>
 </dl>
 <p> </p>

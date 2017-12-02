@@ -7,7 +7,7 @@ old-location: netvista\rilsetpreferredoperatorlistparams.htm
 old-project: netvista
 ms.assetid: cec1db47-640c-467a-ba7d-270659ebbba2
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSETPREFERREDOPERATORLISTPARAMS, RILSETPREFERREDOPERATORLISTPARAMS, *LPRILSETPREFERREDOPERATORLISTPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef struct _RILSETPREFERREDOPERATORLISTPARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwPreferredListSize</b>
+### -field dwPreferredListSize
 
 <dd></dd>
 
-### -field <b>PreferredList</b>
+### -field PreferredList
 
 <dd></dd>
 </dl>

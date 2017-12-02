@@ -58,7 +58,7 @@ NTSTATUS ZwPowerInformation(
 ## -parameters
 <dl>
 
-### -param <i>InformationLevel</i> [in]
+### -param InformationLevel [in]
 
 <dd>
 <p>Specifies the requested information level, which indicates the specific power information to be set or retrieved. Currently, the only supported <i>POWER_INFORMATION_LEVEL</i> value is <b>PlatformInformation</b>.</p>
@@ -70,7 +70,7 @@ NTSTATUS ZwPowerInformation(
 <tr>
 <td width="40%"><a id="PlatformInformation"></a><a id="platforminformation"></a><a id="PLATFORMINFORMATION"></a><dl>
 
-### -param <b>PlatformInformation</b>
+### -param PlatformInformation
 
 </dl>
 </td>
@@ -82,25 +82,25 @@ NTSTATUS ZwPowerInformation(
 <p> </p>
 </dd>
 
-### -param <i>InputBuffer</i> [in, optional]
+### -param InputBuffer [in, optional]
 
 <dd>
 <p>Pointer to a caller-allocated input buffer. This parameter must be <b>NULL</b>, otherwise <b>ERROR_INVALID_PARAMETER</b> is returned. </p>
 </dd>
 
-### -param <i>InputBufferLength</i> [in]
+### -param InputBufferLength [in]
 
 <dd>
 <p>Size, in bytes, of the buffer at <i>InputBuffer</i>. The parameter must be set to zero.</p>
 </dd>
 
-### -param <i>OutputBuffer</i> [out, optional]
+### -param OutputBuffer [out, optional]
 
 <dd>
 <p>A pointer to an output buffer. The data type of this buffer depends on the information level requested in the <i>InformationLevel</i> parameter. For the <b>PlatformInformation</b> level, the only currently supported value, the <i>OutputBuffer </i> parameter is required and should be of the <a href="..\wdm\ns-wdm--power-platform-information.md">POWER_PLATFORM_INFORMATION</a> type.</p>
 </dd>
 
-### -param <i>OutputBufferLength</i> [in]
+### -param OutputBufferLength [in]
 
 <dd>
 <p>Size, in bytes, of the output buffer. Depending on the information level requested, the buffer may be variably sized. <i>PlatformInformation</i>, the only currently supported value, requires a buffer that is the size of a <a href="..\wdm\ns-wdm--power-platform-information.md">POWER_PLATFORM_INFORMATION</a> structure.</p>

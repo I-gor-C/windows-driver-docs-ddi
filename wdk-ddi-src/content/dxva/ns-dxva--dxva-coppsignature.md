@@ -54,7 +54,7 @@ typedef struct _DXVA_COPPSignature {
 ## -struct-fields
 <dl>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>Specifies an array for the concatenated sequence of items. </p>

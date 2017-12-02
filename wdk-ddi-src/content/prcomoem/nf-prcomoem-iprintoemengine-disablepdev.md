@@ -55,7 +55,7 @@ HRESULT DisablePDEV(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd></dd>
 </dl>

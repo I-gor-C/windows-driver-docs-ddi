@@ -58,31 +58,31 @@ typedef struct _DXGK_GRAPHICSPOWER_REGISTER_INPUT_V_1_1 {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The current version being used.</p>
 </dd>
 
-### -field <b>PrivateHandle</b>
+### -field PrivateHandle
 
 <dd>
 <p>A private handle to the device.</p>
 </dd>
 
-### -field <b>PowerNotificationCb</b>
+### -field PowerNotificationCb
 
 <dd>
 <p>Issues a power notification.</p>
 </dd>
 
-### -field <b>RemovalNotificationCb</b>
+### -field RemovalNotificationCb
 
 <dd>
 <p>Issues a removal notification.</p>
 </dd>
 
-### -field <b>FStateNotificationCb</b>
+### -field FStateNotificationCb
 
 <dd>
 <p>Issues a state notification.</p>

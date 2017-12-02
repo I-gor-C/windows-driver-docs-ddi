@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediaofferanswertype_2.htm
 old-project: netvista
 ms.assetid: 098392dc-f966-44f8-9202-9663b8cabc7e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,27 +60,27 @@ typedef enum _RILCALLMEDIAOFFERANSWERTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLMEDIAOFFERANSWERTYPE_CURRENT"></a><a id="ril_callmediaofferanswertype_current"></a><b>RIL_CALLMEDIAOFFERANSWERTYPE_CURRENT</b>
+### -field RIL_CALLMEDIAOFFERANSWERTYPE_CURRENT
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIAOFFERANSWERTYPE_OFFER"></a><a id="ril_callmediaofferanswertype_offer"></a><b>RIL_CALLMEDIAOFFERANSWERTYPE_OFFER</b>
+### -field RIL_CALLMEDIAOFFERANSWERTYPE_OFFER
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIAOFFERANSWERTYPE_ANSWER"></a><a id="ril_callmediaofferanswertype_answer"></a><b>RIL_CALLMEDIAOFFERANSWERTYPE_ANSWER</b>
+### -field RIL_CALLMEDIAOFFERANSWERTYPE_ANSWER
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIAOFFERANSWERTYPE_PEER_OFFER"></a><a id="ril_callmediaofferanswertype_peer_offer"></a><b>RIL_CALLMEDIAOFFERANSWERTYPE_PEER_OFFER</b>
+### -field RIL_CALLMEDIAOFFERANSWERTYPE_PEER_OFFER
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIAOFFERANSWERTYPE_PEER_ANSWER"></a><a id="ril_callmediaofferanswertype_peer_answer"></a><b>RIL_CALLMEDIAOFFERANSWERTYPE_PEER_ANSWER</b>
+### -field RIL_CALLMEDIAOFFERANSWERTYPE_PEER_ANSWER
 
 <dd></dd>
 
-### -field <a id="RIL_CALLMEDIAOFFERANSWERTYPE_MAX"></a><a id="ril_callmediaofferanswertype_max"></a><b>RIL_CALLMEDIAOFFERANSWERTYPE_MAX</b>
+### -field RIL_CALLMEDIAOFFERANSWERTYPE_MAX
 
 <dd></dd>
 </dl>

@@ -58,31 +58,31 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>omac</b>
+### -field omac
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-omac.md">D3D11_1DDI_OMAC</a> structure that contains a Message Authentication Code (MAC) of the data. The driver uses Advanced Encryption Standard (AES)-based one-key CBC MAC (OMAC) to calculate this value for the block of data that appears after this structure member.</p>
 </dd>
 
-### -field <b>QueryType</b>
+### -field QueryType
 
 <dd>
 <p>A GUID that specifies the query. For a list of possible values, see the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-input.md">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> structure.</p>
 </dd>
 
-### -field <b>hChannel</b>
+### -field hChannel
 
 <dd>
 <p>A handle to the authenticated channel. This handle was created through a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createauthenticatedchannel.md">CreateAuthenticatedChannel(D3D11_1)</a> function.</p>
 </dd>
 
-### -field <b>SequenceNumber</b>
+### -field SequenceNumber
 
 <dd>
 <p>The query sequence number.</p>
 </dd>
 
-### -field <b>ReturnCode</b>
+### -field ReturnCode
 
 <dd>
 <p>The return code that the driver returns when the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-queryauthenticatedchannel.md">QueryAuthenticatedChannel(D3D11_1)</a> function is called.</p>

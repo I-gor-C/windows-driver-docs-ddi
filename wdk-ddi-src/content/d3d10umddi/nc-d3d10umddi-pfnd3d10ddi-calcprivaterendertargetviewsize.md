@@ -58,13 +58,13 @@ SIZE_T APIENTRY CalcPrivateRenderTargetViewSize(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pCreateRenderTargetView</i> [in]
+### -param pCreateRenderTargetView [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createrendertargetview.md">D3D10DDIARG_CREATERENDERTARGETVIEW</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region. </p>

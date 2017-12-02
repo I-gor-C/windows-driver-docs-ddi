@@ -7,7 +7,7 @@ old-location: netvista\wdi_encapsulation_type.htm
 old-project: netvista
 ms.assetid: 6EDCC69B-F156-416B-9824-5E26F9834D14
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ typedef enum _WDI_ENCAPSULATION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_ENCAPSULATION_RFC_1042"></a><a id="wdi_encapsulation_rfc_1042"></a><b>WDI_ENCAPSULATION_RFC_1042</b>
+### -field WDI_ENCAPSULATION_RFC_1042
 
 <dd>
 <p>The encapsulation that is defined in IETF RFC 1042.</p>
 </dd>
 
-### -field <a id="WDI_ENCAPSULATION_802_1H"></a><a id="wdi_encapsulation_802_1h"></a><b>WDI_ENCAPSULATION_802_1H</b>
+### -field WDI_ENCAPSULATION_802_1H
 
 <dd>
 <p>The encapsulation that is defined in the IEEE 802.1h-1997 standard.</p>

@@ -61,49 +61,49 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>CategoriesCount</b>
+### -field CategoriesCount
 
 <dd>
 <p>Specifies the number of functional categories that the driver supports.</p>
 </dd>
 
-### -field <b>Categories</b>
+### -field Categories
 
 <dd>
 <p>Points to the beginning of the array of functional categories that the driver supports.</p>
 </dd>
 
-### -field <b>TopologyNodesCount</b>
+### -field TopologyNodesCount
 
 <dd>
 <p>Specifies the number of nodes that the driver supports.</p>
 </dd>
 
-### -field <b>TopologyNodes</b>
+### -field TopologyNodes
 
 <dd>
 <p>Points to the beginning of the array of GUIDs that describe the type of each node. For a list of video kernel streaming related nodes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560886">Kernel Streaming Topology Nodes</a>. For a list of audio kernel streaming related nodes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536219">Audio Topology Nodes</a>.</p>
 </dd>
 
-### -field <b>TopologyConnectionsCount</b>
+### -field TopologyConnectionsCount
 
 <dd>
 <p>Specifies the number of entries in the array pointed to by <b>TopologyConnections</b>. The node numbers of each entry must correspond to the array offset of the node within <b>TopologyNodes</b>. When this structure is a part of a streaming minidriver's <a href="..\strmini\ns-strmini--hw-stream-header.md">HW_STREAM_HEADER</a>, the pin numbers must correspond to the offsets within the array of <a href="..\strmini\ns-strmini--hw-stream-information.md">HW_STREAM_INFORMATION</a> structures in the minidriver's <a href="..\strmini\ns-strmini--hw-stream-descriptor.md">HW_STREAM_DESCRIPTOR</a> structure.</p>
 </dd>
 
-### -field <b>TopologyConnections</b>
+### -field TopologyConnections
 
 <dd>
 <p>Points to the beginning of the array of topology connections for this structure.</p>
 </dd>
 
-### -field <b>TopologyNodesNames</b>
+### -field TopologyNodesNames
 
 <dd>
 <p>Specifies the GUID of the localized Unicode string name for the node, stored in the registry.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for system use. Drivers should set this to zero.</p>

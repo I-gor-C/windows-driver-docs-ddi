@@ -55,13 +55,13 @@ typedef enum _CDROM_SPEED_REQUEST {
 ## -enum-fields
 <dl>
 
-### -field <a id="CdromSetSpeed"></a><a id="cdromsetspeed"></a><a id="CDROMSETSPEED"></a><b>CdromSetSpeed</b>
+### -field CdromSetSpeed
 
 <dd>
 <p>The CD-ROM class driver will use the SET CD SPEED command to set the spindle speed.</p>
 </dd>
 
-### -field <a id="CdromSetStreaming"></a><a id="cdromsetstreaming"></a><a id="CDROMSETSTREAMING"></a><b>CdromSetStreaming</b>
+### -field CdromSetStreaming
 
 <dd>
 <p>The CD-ROM class driver will use the SET STREAMING command to set the spindle speed.</p>

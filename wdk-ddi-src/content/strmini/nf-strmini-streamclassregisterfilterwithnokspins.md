@@ -60,37 +60,37 @@ NTSTATUS StreamClassRegisterFilterWithNoKSPins(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Points to the driver's device object.</p>
 </dd>
 
-### -param <i>InterfaceClassGUID</i> [in]
+### -param InterfaceClassGUID [in]
 
 <dd>
 <p>Specifies the interface class GUID to register.</p>
 </dd>
 
-### -param <i>PinCount</i> [in]
+### -param PinCount [in]
 
 <dd>
 <p>Specifies the number of pins on the filter.</p>
 </dd>
 
-### -param <i>PinDirection</i> [in]
+### -param PinDirection [in]
 
 <dd>
 <p>Specifies a <i>PinCount</i>-sized array of Boolean values, one for each pin on the filter. The values indicate the pin direction for each pin. If <b>TRUE</b>, this pin is an output pin. If <b>FALSE</b>, the pin is an input pin.</p>
 </dd>
 
-### -param <i>MediumList</i> [in]
+### -param MediumList [in]
 
 <dd>
 <p>Specifies a <i>PinCount</i>-sized array of <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structures, one for each pin on the filter.</p>
 </dd>
 
-### -param <i>CategoryList</i> [in, optional]
+### -param CategoryList [in, optional]
 
 <dd>
 <p>If non-NULL, specifies an array of pin category GUIDs, one for each pin on the filter.</p>

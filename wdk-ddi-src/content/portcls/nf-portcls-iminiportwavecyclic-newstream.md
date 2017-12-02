@@ -61,49 +61,49 @@ NTSTATUS NewStream(
 ## -parameters
 <dl>
 
-### -param <i>Stream</i> [out]
+### -param Stream [out]
 
 <dd>
 <p>Output pointer for the new stream. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the stream object's <a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a> interface. The caller specifies a valid, non-<b>NULL</b> pointer value for this parameter.</p>
 </dd>
 
-### -param <i>OuterUnknown</i> [in, optional]
+### -param OuterUnknown [in, optional]
 
 <dd>
 <p>Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate the stream object. This parameter is optional. If aggregation is not required, the caller specifies this parameter as <b>NULL</b>.</p>
 </dd>
 
-### -param <i>PoolType</i> [in]
+### -param PoolType [in]
 
 <dd>
 <p>Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter will be one of the nonpaged pool types defined in the <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a> enumeration.</p>
 </dd>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>Number of the pin that is to be opened. If the WaveCyclic miniport driver's <a href="audio.iminiport_getdescription">IMiniport::GetDescription</a> method outputs a filter descriptor that specifies a total of <i>n</i> pin factories on the filter, then valid values for parameter <i>Pin</i> are in the range 0 to <i>n</i>-1.</p>
 </dd>
 
-### -param <i>Capture</i> [in]
+### -param Capture [in]
 
 <dd>
 <p>Specifies whether to create a capture stream or a render stream. This parameter is <b>TRUE</b> for a capture (input) channel, and <b>FALSE</b> for a playback (output) channel.</p>
 </dd>
 
-### -param <i>DataFormat</i> [in]
+### -param DataFormat [in]
 
 <dd>
 <p>Pointer to a <a href="stream.ksdataformat">KSDATAFORMAT</a> structure indicating the format to use for this instance.</p>
 </dd>
 
-### -param <i>DmaChannel</i> [out]
+### -param DmaChannel [out]
 
 <dd>
 <p>Output pointer to the DMA channel. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a> interface of the miniport driver's DMA-channel object. The caller specifies a valid, non-<b>NULL</b> pointer value for this parameter. For more information, see the following Remarks section.</p>
 </dd>
 
-### -param <i>ServiceGroup</i> [out]
+### -param ServiceGroup [out]
 
 <dd>
 <p>Output pointer for the service group. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> interface of the stream's service group object. This is the service group that is being registered for interrupt notification. The caller specifies a valid, non-<b>NULL</b> pointer value for this parameter.</p>
@@ -142,7 +142,7 @@ NTSTATUS NewStream(
 <a href="audio.idmachannel_systemaddress">IDmaChannel::SystemAddress</a>
 </p>
 
-<p>The <i>Stream</i>, <i>OuterUnknown</i>, <i>DmaChannel</i>, and <i>ServiceGroup</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
+<p>The <i>Stream</i>, <i>OuterUnknown</i>, <i>DmaChannel</i>, and <i>ServiceGroup</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.</p>
 
 ## -requirements
 <table>

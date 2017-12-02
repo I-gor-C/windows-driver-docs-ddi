@@ -58,25 +58,25 @@ typedef enum _PCW_CALLBACK_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PcwCallbackAddCounter"></a><a id="pcwcallbackaddcounter"></a><a id="PCWCALLBACKADDCOUNTER"></a><b>PcwCallbackAddCounter</b>
+### -field PcwCallbackAddCounter
 
 <dd>
 <p>The provider is asked to add an instance of the counter set.</p>
 </dd>
 
-### -field <a id="PcwCallbackRemoveCounter"></a><a id="pcwcallbackremovecounter"></a><a id="PCWCALLBACKREMOVECOUNTER"></a><b>PcwCallbackRemoveCounter</b>
+### -field PcwCallbackRemoveCounter
 
 <dd>
 <p>The provider is asked to remove an instance of the counter set.</p>
 </dd>
 
-### -field <a id="PcwCallbackEnumerateInstances"></a><a id="pcwcallbackenumerateinstances"></a><a id="PCWCALLBACKENUMERATEINSTANCES"></a><b>PcwCallbackEnumerateInstances</b>
+### -field PcwCallbackEnumerateInstances
 
 <dd>
 <p>The provider is asked to enumerate instances of the counter set.</p>
 </dd>
 
-### -field <a id="PcwCallbackCollectData"></a><a id="pcwcallbackcollectdata"></a><a id="PCWCALLBACKCOLLECTDATA"></a><b>PcwCallbackCollectData</b>
+### -field PcwCallbackCollectData
 
 <dd>
 <p>The provider is asked to collect data from an instance of the counter set.</p>

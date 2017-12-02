@@ -7,7 +7,7 @@ old-location: netvista\rilpersodeactivationstate_2.htm
 old-project: netvista
 ms.assetid: fb8950ef-7e46-45eb-b23f-5431488e1954
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILPERSODEACTIVATIONSTATE, RILPERSODEACTIVATIONSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef struct _RILPERSODEACTIVATIONSTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwDePersoState</b>
+### -field dwDePersoState
 
 <dd></dd>
 
-### -field <b>dwNumCKAttemptsLeft</b>
+### -field dwNumCKAttemptsLeft
 
 <dd></dd>
 
-### -field <b>dwNumPUKAttemptsLeft</b>
+### -field dwNumPUKAttemptsLeft
 
 <dd></dd>
 </dl>

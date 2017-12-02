@@ -70,13 +70,13 @@ typedef struct _D3DPrimCaps {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes, of the D3DPRIMCAPS structure. </p>
 </dd>
 
-### -field <b>dwMiscCaps</b>
+### -field dwMiscCaps
 
 <dd>
 <p>Specifies the general capabilities for this primitive. This member can be one or more of the following:    
@@ -133,7 +133,7 @@ typedef struct _D3DPrimCaps {
 <p> </p>
 </dd>
 
-### -field <b>dwRasterCaps</b>
+### -field dwRasterCaps
 
 <dd>
 <p>Contains information about raster-drawing capabilities. This member can be one or more of the following:</p>
@@ -235,7 +235,7 @@ typedef struct _D3DPrimCaps {
 <p> </p>
 </dd>
 
-### -field <b>dwZCmpCaps</b>
+### -field dwZCmpCaps
 
 <dd>
 <p>Specifies Z-buffer comparison functions that the driver can perform through the D3DRENDERSTATE_ZFUNC render state. This member can be one or more of the following:  
@@ -288,7 +288,7 @@ typedef struct _D3DPrimCaps {
 <p> </p>
 </dd>
 
-### -field <b>dwSrcBlendCaps</b>
+### -field dwSrcBlendCaps
 
 <dd>
 <p>Specifies source blending capabilities supported by the driver through the D3DRENDERSTATE_SRCBLEND render state. This member can be one or more of the following values. (The RGBA values of the source and destination are indicated with the subscripts s and d.)  
@@ -362,19 +362,19 @@ typedef struct _D3DPrimCaps {
 <p> </p>
 </dd>
 
-### -field <b>dwDestBlendCaps</b>
+### -field dwDestBlendCaps
 
 <dd>
 <p>Specifies destination blending capabilities supported by the driver through the D3DRENDERSTATE_DESTBLEND render state. This member can be the same capabilities that are defined for the <b>dwSrcBlendCaps</b> member. </p>
 </dd>
 
-### -field <b>dwAlphaCmpCaps</b>
+### -field dwAlphaCmpCaps
 
 <dd>
 <p>Specifies alpha-test comparison functions that the driver can perform. This member uses the same comparison functions as are defined for the <b>dwZCmpCaps</b> member. If the <b>dwAlphaCmpCaps</b> member of the D3DPRIMCAPS structure is 0, the driver does not support alpha test render states D3DRENDERSTATE_ALPHAFUNC, D3DRENDERSTATE_ALPHAREF, and D3DRENDERSTATE_ALPHATESTENABLE. </p>
 </dd>
 
-### -field <b>dwShadeCaps</b>
+### -field dwShadeCaps
 
 <dd>
 <p>Specifies shading operations that the device can perform. It is assumed, in general, that if a device supports a given command (such as D3DOP_TRIANGLE) at all, it supports the D3DSHADE_FLAT mode (as specified in the D3DSHADEMODE enumerated type in the DirectX SDK documentation). This flag specifies whether the driver can also support Gouraud and Phong shading and whether alpha color components are supported for each of the three color-generation modes. When alpha components are not supported in a given mode, the alpha value of colors generated in that mode is implicitly 255. This is the maximum possible alpha (that is, the alpha component is at full intensity).</p>
@@ -442,7 +442,7 @@ D3DPSHADECAPS_SPECULARPHONGRGB</td>
 <p>Most hardware drivers should expose the D3DPSHADECAPS_COLORFLATRGB and D3DPSHADECAPS_COLORGOURAUDRGB capabilities. Hardware that supports intensity (grayscale) lighting (see D3DRENDERSTATE_MONOENABLE for more details) should also expose the D3DPSHADECAPS_COLORFLATMONO and D3DSHADECAPS_COLORGOURAUDMONO capabilities.</p>
 </dd>
 
-### -field <b>dwTextureCaps</b>
+### -field dwTextureCaps
 
 <dd>
 <p>Specifies miscellaneous texture-mapping capabilities. This member can be one or more of the following: </p>
@@ -517,7 +517,7 @@ D3DPSHADECAPS_SPECULARPHONGRGB</td>
 <p> </p>
 </dd>
 
-### -field <b>dwTextureFilterCaps</b>
+### -field dwTextureFilterCaps
 
 <dd>
 <p>Specifies texture-mapping capabilities. This member can be one or more of the following: 
@@ -601,7 +601,7 @@ Specifies that bilinear filtering on the magnify filter is supported.</td>
 <p> </p>
 </dd>
 
-### -field <b>dwTextureBlendCaps</b>
+### -field dwTextureBlendCaps
 
 <dd>
 <p>Specifies texture-blending capabilities. See the D3DRENDERSTATE_TEXTUREMAPBLEND enumerated type for discussions of the various texture-blending modes. This member can be one or more of the following:   
@@ -651,7 +651,7 @@ Specifies that bilinear filtering on the magnify filter is supported.</td>
 <p> </p>
 </dd>
 
-### -field <b>dwTextureAddressCaps</b>
+### -field dwTextureAddressCaps
 
 <dd>
 <p>Specifies the texture-addressing capabilities. This member can be one or more of the following, corresponding to D3DTEXTUREADDRESS texture-addressing modes:</p>
@@ -686,11 +686,11 @@ Specifies that bilinear filtering on the magnify filter is supported.</td>
 <p> </p>
 </dd>
 
-### -field <b>dwStippleWidth</b>
+### -field dwStippleWidth
 
 <dd></dd>
 
-### -field <b>dwStippleHeight</b>
+### -field dwStippleHeight
 
 <dd>
 <p>Specify the maximum width and height of the supported stipple (up to 32-by-32). </p>

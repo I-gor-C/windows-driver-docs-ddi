@@ -57,19 +57,19 @@ HRESULT DownloadFontHeader(
 ## -parameters
 <dl>
 
-### -param <i>pdevobj</i> 
+### -param pdevobj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pUFObj</i> 
+### -param pUFObj 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--unifontobj.md">UNIFONTOBJ</a> structure.</p>
 </dd>
 
-### -param <i>pdwResult</i> [out]
+### -param pdwResult [out]
 
 <dd>
 <p>Receives a method-supplied value representing the amount of printer memory, in bytes, required to store the font header information. If the operation fails, the returned value should be zero.</p>
@@ -102,7 +102,7 @@ HRESULT DownloadFontHeader(
 
 <p>If you implement the <code>IPrintOemUni::DownloadFontHeader</code> method, you must also implement the <a href="print.iprintoemuni_downloadcharglyph">IPrintOemUni::DownloadCharGlyph</a> method.</p>
 
-<p>For additional information see <a href="NULL">Customized Font Management</a>.</p>
+<p>For additional information see <a href="https://msdn.microsoft.com/6e643703-ace1-4660-990c-3a9ca735829d">Customized Font Management</a>.</p>
 
 ## -requirements
 <table>

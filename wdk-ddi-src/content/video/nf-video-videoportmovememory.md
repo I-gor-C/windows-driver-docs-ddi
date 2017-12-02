@@ -57,19 +57,19 @@ VOID VideoPortMoveMemory(
 ## -parameters
 <dl>
 
-### -param <i>Destination</i> [in, out]
+### -param Destination [in, out]
 
 <dd>
 <p>Pointer to the destination location.</p>
 </dd>
 
-### -param <i>Source</i> [in, out]
+### -param Source [in, out]
 
 <dd>
 <p>Pointer to the location of the data to copy.</p>
 </dd>
 
-### -param <i>Length</i> 
+### -param Length 
 
 <dd>
 <p>Specifies the number of bytes to copy.</p>

@@ -7,7 +7,7 @@ old-location: image\drv_version.htm
 old-project: image
 ms.assetid: 61b6dbd3-7565-4d63-bcc0-007df9793398
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: DRV_VERSION, DRV_VERSION, *PDRV_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _DRV_VERSION {
 ## -struct-fields
 <dl>
 
-### -field <b>major</b>
+### -field major
 
 <dd>
 <p>Major version number.</p>
 </dd>
 
-### -field <b>minor</b>
+### -field minor
 
 <dd>
 <p>Minor version number.</p>
 </dd>
 
-### -field <b>internal</b>
+### -field internal
 
 <dd>
 <p>Internal, vendor-specific version number.</p>

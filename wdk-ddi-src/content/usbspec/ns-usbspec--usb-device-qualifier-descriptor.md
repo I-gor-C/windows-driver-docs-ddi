@@ -63,55 +63,55 @@ typedef struct _USB_DEVICE_QUALIFIER_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>bLength</b>
+### -field bLength
 
 <dd>
 <p>Specifies the length, in bytes, of this descriptor.</p>
 </dd>
 
-### -field <b>bDescriptorType</b>
+### -field bDescriptorType
 
 <dd>
 <p>Specifies the descriptor type. Must be set to <b>USB_DEVICE_QUALIFIER_DESCRIPTOR_TYPE</b>.</p>
 </dd>
 
-### -field <b>bcdUSB</b>
+### -field bcdUSB
 
 <dd>
 <p>Identifies the version of the USB specification that this descriptor structure complies with. This value is a binary-coded decimal number.</p>
 </dd>
 
-### -field <b>bDeviceClass</b>
+### -field bDeviceClass
 
 <dd>
 <p>Specifies the class code of the device as assigned by the USB specification group.</p>
 </dd>
 
-### -field <b>bDeviceSubClass</b>
+### -field bDeviceSubClass
 
 <dd>
 <p>Specifies the subclass code of the device as assigned by the USB specification group.</p>
 </dd>
 
-### -field <b>bDeviceProtocol</b>
+### -field bDeviceProtocol
 
 <dd>
 <p>Specifies the protocol code of the device as assigned by the USB specification group.</p>
 </dd>
 
-### -field <b>bMaxPacketSize0</b>
+### -field bMaxPacketSize0
 
 <dd>
 <p>Specifies the maximum packet size, in bytes, for endpoint zero of the device. The value must be set to 8, 16, 32, or 64.</p>
 </dd>
 
-### -field <b>bNumConfigurations</b>
+### -field bNumConfigurations
 
 <dd>
 <p>Specifies the total number of possible configurations for the device.</p>
 </dd>
 
-### -field <b>bReserved</b>
+### -field bReserved
 
 <dd>
 <p>Reserved.</p>

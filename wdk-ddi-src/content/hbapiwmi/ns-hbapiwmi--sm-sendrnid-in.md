@@ -58,31 +58,31 @@ typedef struct _SM_SendRNID_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>HbaPortWWN</b>
+### -field HbaPortWWN
 
 <dd>
 <p>The worldwide name (WWN) of the local port.</p>
 </dd>
 
-### -field <b>DestWWN</b>
+### -field DestWWN
 
 <dd>
 <p>The worldwide name (WWN) of the destination port.</p>
 </dd>
 
-### -field <b>DestFCID</b>
+### -field DestFCID
 
 <dd>
 <p>The address identifier of the destination port.</p>
 </dd>
 
-### -field <b>NodeIdDataFormat</b>
+### -field NodeIdDataFormat
 
 <dd>
 <p>The node identification data format.</p>
 </dd>
 
-### -field <b>InRespBufferMaxSize</b>
+### -field InRespBufferMaxSize
 
 <dd>
 <p>The maximum response buffer size.</p>

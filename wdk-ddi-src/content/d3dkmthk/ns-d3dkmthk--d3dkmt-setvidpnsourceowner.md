@@ -57,13 +57,13 @@ typedef struct _D3DKMT_SETVIDPNSOURCEOWNER {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd>
 <p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that acquires or releases the VidPN source owner.</p>
 </dd>
 
-### -field <b>pType</b>
+### -field pType
 
 <dd>
 <p>[in] An array of owner types. Elements of the array can contain the following values from the D3DKMT_VIDPNSOURCEOWNER_TYPE enumeration type.</p>
@@ -108,13 +108,13 @@ typedef struct _D3DKMT_SETVIDPNSOURCEOWNER {
 <p> </p>
 </dd>
 
-### -field <b>pVidPnSourceId</b>
+### -field pVidPnSourceId
 
 <dd>
 <p>[in] An array of zero-based identification numbers of the video present sources in paths of a video present network (VidPN) topology.</p>
 </dd>
 
-### -field <b>VidPnSourceCount</b>
+### -field VidPnSourceCount
 
 <dd>
 <p>The number of valid entries in the array that <b>pVidPnSourceId</b> specifies.</p>

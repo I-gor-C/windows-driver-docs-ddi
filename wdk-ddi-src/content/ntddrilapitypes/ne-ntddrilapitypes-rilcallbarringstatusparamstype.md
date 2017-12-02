@@ -7,7 +7,7 @@ old-location: netvista\rilcallbarringstatusparamstype.htm
 old-project: netvista
 ms.assetid: 95c15362-227c-4912-9eec-a18fee92f340
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,39 +62,39 @@ typedef enum _RILCALLBARRINGSTATUSPARAMSTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_BARRTYPE_OUTGOINGINT"></a><a id="ril_barrtype_outgoingint"></a><b>RIL_BARRTYPE_OUTGOINGINT</b>
+### -field RIL_BARRTYPE_OUTGOINGINT
 
 <dd></dd>
 
-### -field <a id="RIL_BARRTYPE_OUTGOINGINTEXTOHOME"></a><a id="ril_barrtype_outgoingintextohome"></a><b>RIL_BARRTYPE_OUTGOINGINTEXTOHOME</b>
+### -field RIL_BARRTYPE_OUTGOINGINTEXTOHOME
 
 <dd></dd>
 
-### -field <a id="RIL_BARRTYPE_ALLINCOMING"></a><a id="ril_barrtype_allincoming"></a><b>RIL_BARRTYPE_ALLINCOMING</b>
+### -field RIL_BARRTYPE_ALLINCOMING
 
 <dd></dd>
 
-### -field <a id="RIL_BARRTYPE_INCOMINGROAMING"></a><a id="ril_barrtype_incomingroaming"></a><b>RIL_BARRTYPE_INCOMINGROAMING</b>
+### -field RIL_BARRTYPE_INCOMINGROAMING
 
 <dd></dd>
 
-### -field <a id="RIL_BARRTYPE_INCOMINGNOTINUICC"></a><a id="ril_barrtype_incomingnotinuicc"></a><b>RIL_BARRTYPE_INCOMINGNOTINUICC</b>
+### -field RIL_BARRTYPE_INCOMINGNOTINUICC
 
 <dd></dd>
 
-### -field <a id="RIL_BARRTYPE_ALLBARRING"></a><a id="ril_barrtype_allbarring"></a><b>RIL_BARRTYPE_ALLBARRING</b>
+### -field RIL_BARRTYPE_ALLBARRING
 
 <dd></dd>
 
-### -field <a id="RIL_BARRTYPE_ALLOUTGOINGBARRING"></a><a id="ril_barrtype_alloutgoingbarring"></a><b>RIL_BARRTYPE_ALLOUTGOINGBARRING</b>
+### -field RIL_BARRTYPE_ALLOUTGOINGBARRING
 
 <dd></dd>
 
-### -field <a id="RIL_BARRTYPE_ALLINCOMINGBARRING"></a><a id="ril_barrtype_allincomingbarring"></a><b>RIL_BARRTYPE_ALLINCOMINGBARRING</b>
+### -field RIL_BARRTYPE_ALLINCOMINGBARRING
 
 <dd></dd>
 
-### -field <a id="RIL_BARRTYPE_ALL"></a><a id="ril_barrtype_all"></a><b>RIL_BARRTYPE_ALL</b>
+### -field RIL_BARRTYPE_ALL
 
 <dd></dd>
 </dl>

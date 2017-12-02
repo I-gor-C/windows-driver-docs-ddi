@@ -62,35 +62,35 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>NominalRange</b>
+### -field NominalRange
 
 <dd>
 <p>If set, YUV values range from 16 to 235, inclusive, instead of the default range of 0 to 255, inclusive.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Bt709</b>
+### -field Bt709
 
 <dd>
 <p>If set, YUV values should be converted using the BT.709 standard, instead of the default BT.601 conversion.</p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>xvYCC</b>
+### -field xvYCC
 
 <dd>
 <p>If set, YUV values contain xvYCC data, instead of conventional YCbCr data.</p>
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero.</p>
 <p>Setting this member to zero is equivalent to setting the remaining 29 bits (0xFFFFFFF8) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A 32-bit value that identifies the type of blend operation to perform.</p>

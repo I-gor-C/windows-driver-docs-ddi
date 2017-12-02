@@ -54,7 +54,7 @@ NTSTATUS D3DKMTGetDisplayModeList(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getdisplaymodelist.md">D3DKMT_GETDISPLAYMODELIST</a> structure that describes a list of available display modes.</p>

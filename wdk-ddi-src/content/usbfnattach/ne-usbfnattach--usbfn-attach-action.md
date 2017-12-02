@@ -59,34 +59,34 @@ typedef enum _USBFN_ATTACH_ACTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="UsbfnPortDetected"></a><a id="usbfnportdetected"></a><a id="USBFNPORTDETECTED"></a><b>UsbfnPortDetected</b>
+### -field UsbfnPortDetected
 
 <dd>
-<p>The USB function stack uses the returned port type to determine charging current and notify the Charging Aggregation Driver (CAD) of the power source change.  If the detected port type is <b>UsbFnStandardDownstreamPort</b> or <b>UsbfnChargingDownstreamPort</b>, the USB function stack will attempt to connect to the host (see <a href="buses.usbfn_port_type">USBFN_PORT_TYPE</a> for more information).</p>
+<p>The USB function stack uses the returned port type to determine charging current and notify the Charging Aggregation Driver (CAD) of the power source change.  If the detected port type is <b>UsbFnStandardDownstreamPort</b> or <b>UsbfnChargingDownstreamPort</b>, the USB function stack will attempt to connect to the host (see <a href="..\usbfnbase\ne-usbfnbase--usbfn-port-type.md">USBFN_PORT_TYPE</a> for more information).</p>
 </dd>
 
-### -field <a id="UsbfnPortDetectedNoCad"></a><a id="usbfnportdetectednocad"></a><a id="USBFNPORTDETECTEDNOCAD"></a><b>UsbfnPortDetectedNoCad</b>
+### -field UsbfnPortDetectedNoCad
 
 <dd>
-<p>The USB function stack does not notify the CAD of the power source change.  If the detected port type is <b>UsbFnStandardDownstreamPort</b> or <b>UsbfnChargingDownstreamPort</b>, the USB function stack attempts to connect to the host (see <a href="buses.usbfn_port_type">USBFN_PORT_TYPE</a> for more information).</p>
+<p>The USB function stack does not notify the CAD of the power source change.  If the detected port type is <b>UsbFnStandardDownstreamPort</b> or <b>UsbfnChargingDownstreamPort</b>, the USB function stack attempts to connect to the host (see <a href="..\usbfnbase\ne-usbfnbase--usbfn-port-type.md">USBFN_PORT_TYPE</a> for more information).</p>
 </dd>
 
-### -field <a id="UsbfnProceedWithAttach"></a><a id="usbfnproceedwithattach"></a><a id="USBFNPROCEEDWITHATTACH"></a><b>UsbfnProceedWithAttach</b>
+### -field UsbfnProceedWithAttach
 
 <dd>
 <p>The USB function stack continues with the legacy software-based detection that exists in the client drivers, and issues the CAD notifications about power source notifications.</p>
 </dd>
 
-### -field <a id="UsbfnIgnoreAttach"></a><a id="usbfnignoreattach"></a><a id="USBFNIGNOREATTACH"></a><b>UsbfnIgnoreAttach</b>
+### -field UsbfnIgnoreAttach
 
 <dd>
 <p>The USB function stack discontinues further port detection operations and does not notify CAD of a power source update.</p>
 </dd>
 
-### -field <a id="UsbfnDetectProprietaryCharger"></a><a id="usbfndetectproprietarycharger"></a><a id="USBFNDETECTPROPRIETARYCHARGER"></a><b>UsbfnDetectProprietaryCharger</b>
+### -field UsbfnDetectProprietaryCharger
 
 <dd>
-<p>The USB function stack calls the <a href="buses.ufx_proprietary_charger_detect">UFX_PROPRIETARY_CHARGER_DETECT</a> event callback function implemented by the USB lower filter driver, to perform proprietary charger detection.</p>
+<p>The USB function stack calls the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx-proprietary-charger-detect.md">UFX_PROPRIETARY_CHARGER_DETECT</a> event callback function implemented by the USB lower filter driver, to perform proprietary charger detection.</p>
 </dd>
 </dl>
 
@@ -110,7 +110,7 @@ typedef enum _USBFN_ATTACH_ACTION {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbfn_get_attach_action">USBFN_GET_ATTACH_ACTION</a>
+<a href="..\usbfnattach\nc-usbfnattach-usbfn-get-attach-action.md">USBFN_GET_ATTACH_ACTION</a>
 </dt>
 </dl>
 <p> </p>

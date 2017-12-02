@@ -59,13 +59,13 @@ NTSTATUS ZwQueryInformationTransactionManager(
 ## -parameters
 <dl>
 
-### -param <i>TransactionManagerHandle</i> [in]
+### -param TransactionManagerHandle [in]
 
 <dd>
 <p>A handle to a <a href="https://msdn.microsoft.com/af53cda4-e2ab-47df-9311-a4da2a2ee08d">transaction manager object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreatetransactionmanager.md">ZwCreateTransactionManager</a> or <a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>. The handle must have TRANSACTIONMANAGER_QUERY_INFORMATION access to the object.</p>
 </dd>
 
-### -param <i>TransactionManagerInformationClass</i> [in]
+### -param TransactionManagerInformationClass [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--transactionmanager-information-class.md">TRANSACTIONMANAGER_INFORMATION_CLASS</a>-typed enumeration value that specifies the information to be obtained. This value must be one of the following:</p>
@@ -83,19 +83,19 @@ NTSTATUS ZwQueryInformationTransactionManager(
 <p>The enumeration's <b>TransactionManagerOnlineProbeInformation</b> value is not used with <b>ZwQueryInformationTransactionManager</b>. </p>
 </dd>
 
-### -param <i>TransactionManagerInformation</i> [out]
+### -param TransactionManagerInformation [out]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that receives the information that the <i>TransactionManagerInformationClass</i> parameter specifies. The buffer's structure type must be <a href="..\wdm\ns-wdm--transactionmanager-basic-information.md">TRANSACTIONMANAGER_BASIC_INFORMATION</a>, <a href="..\wdm\ns-wdm--transactionmanager-log-information.md">TRANSACTIONMANAGER_LOG_INFORMATION</a>, <a href="..\wdm\ns-wdm--transactionmanager-logpath-information.md">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a>, or <a href="..\wdm\ns-wdm--transactionmanager-recovery-information.md">TRANSACTIONMANAGER_RECOVERY_INFORMATION</a>.</p>
 </dd>
 
-### -param <i>TransactionManagerInformationLength</i> [in]
+### -param TransactionManagerInformationLength [in]
 
 <dd>
 <p>The length, in bytes, of the buffer that the <i>TransactionManagerInformation</i> parameter points to, including the length of any additional array elements that the caller has allocated to receive information.</p>
 </dd>
 
-### -param <i>ReturnLength</i> [out, optional]
+### -param ReturnLength [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the length, in bytes, of the information that KTM writes to the <i>TransactionManagerInformation</i> buffer. This parameter is optional and can be <b>NULL</b>.</p>

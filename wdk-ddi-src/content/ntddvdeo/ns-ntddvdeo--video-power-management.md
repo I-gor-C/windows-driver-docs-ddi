@@ -56,50 +56,50 @@ typedef struct _VIDEO_POWER_MANAGEMENT {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Is the size in bytes of this VIDEO_POWER_MANAGEMENT structure.</p>
 </dd>
 
-### -field <b>DPMSVersion</b>
+### -field DPMSVersion
 
 <dd>
 <p>Specifies the version of the Display Power Management Signaling (DPMS) standard supported by the device. Currently, the video port driver sets this member to zero, which corresponds with Version 1.0 of the <a href="wdkgloss.v#wdkgloss.video_electronics_standards_association__vesa_#wdkgloss.video_electronics_standards_association__vesa_"><i>VESA</i></a> DPMS Standard.</p>
 </dd>
 
-### -field <b>PowerState</b>
+### -field PowerState
 
 <dd>
 <p>Specifies the power management state to be set or queried. This member can be one of the following values in the VIDEO_POWER_STATE enumeration:</p>
 <p></p>
 <dl>
 
-### -field <a id="VideoPowerOn"></a><a id="videopoweron"></a><a id="VIDEOPOWERON"></a><b>VideoPowerOn</b>
+### -field VideoPowerOn
 
 <dd>
 <p>The monitor and graphics adapter are both fully powered on and operational.</p>
 </dd>
 
-### -field <a id="VideoPowerStandBy"></a><a id="videopowerstandby"></a><a id="VIDEOPOWERSTANDBY"></a><b>VideoPowerStandBy</b>
+### -field VideoPowerStandBy
 
 <dd>
 <p>The monitor is running at a reduced power level that requires a short recovery time to <b>VideoPowerOn</b>. The graphics adapter is powered on (registers are still active and video memory is refreshed); however, clocks might be lost.</p>
 </dd>
 
-### -field <a id="VideoPowerSuspend"></a><a id="videopowersuspend"></a><a id="VIDEOPOWERSUSPEND"></a><b>VideoPowerSuspend</b>
+### -field VideoPowerSuspend
 
 <dd>
 <p>The monitor is running at a substantially reduced power level that requires a possibly longer recovery time than <b>VideoPowerStandBy</b> to <b>VideoPowerOn</b>. The graphics adapter is off.</p>
 </dd>
 
-### -field <a id="VideoPowerOff"></a><a id="videopoweroff"></a><a id="VIDEOPOWEROFF"></a><b>VideoPowerOff</b>
+### -field VideoPowerOff
 
 <dd>
 <p>The monitor and graphics adapter are both off, consuming no power at all.</p>
 </dd>
 
-### -field <a id="VideoPowerHibernate"></a><a id="videopowerhibernate"></a><a id="VIDEOPOWERHIBERNATE"></a><b>VideoPowerHibernate</b>
+### -field VideoPowerHibernate
 
 <dd>
 <p>The monitor and graphics adapter are both fully powered on and operational.</p>

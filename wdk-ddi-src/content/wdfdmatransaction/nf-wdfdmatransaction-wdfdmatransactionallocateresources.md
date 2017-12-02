@@ -7,7 +7,7 @@ old-location: wdf\wdfdmatransactionallocateresources.htm
 old-project: wdf
 ms.assetid: 69D251D9-1B33-49FD-8D48-EFCBD6640632
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDmaTransactionAllocateResources
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ NTSTATUS WdfDmaTransactionAllocateResources(
 ## -parameters
 <dl>
 
-### -param <i>DmaTransaction</i> [in]
+### -param DmaTransaction [in]
 
 <dd>
 <p>A handle to the DMA transaction object for which DMA resources should be reserved.</p>
 </dd>
 
-### -param <i>DmaDirection</i> [in]
+### -param DmaDirection [in]
 
 <dd>
 <p>A <a href="..\wdfdmaenabler\ne-wdfdmaenabler--wdf-dma-direction.md">WDF_DMA_DIRECTION</a>-typed value specifying the DMA transfer direction for which the resources are being reserved. If the driver did not specify a duplex profile, the framework ignores this value.</p>
 </dd>
 
-### -param <i>RequiredMapRegisters</i> [in]
+### -param RequiredMapRegisters [in]
 
 <dd>
 <p>The number of map registers the driver wants to reserve. If zero, the framework derives the required number of map registers from the initialized transaction.</p>
 </dd>
 
-### -param <i>EvtReserveDmaFunction</i> [in]
+### -param EvtReserveDmaFunction [in]
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdmatransaction\nc-wdfdmatransaction-evt-wdf-reserve-dma.md">EvtReserveDma</a> event callback function.</p>
 </dd>
 
-### -param <i>EvtReserveDmaContext</i> [in]
+### -param EvtReserveDmaContext [in]
 
 <dd>
 <p>A pointer to a buffer containing the context to be provided to the driver's <a href="..\wdfdmatransaction\nc-wdfdmatransaction-evt-wdf-reserve-dma.md">EvtReserveDma</a> event callback function.</p>
@@ -205,4 +205,4 @@ NTSTATUS WdfDmaTransactionAllocateResources(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionAllocateResources method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionAllocateResources method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

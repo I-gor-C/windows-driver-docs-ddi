@@ -54,7 +54,7 @@ void PsUnregisterSiloMonitor(
 ## -parameters
 <dl>
 
-### -param <i>Monitor</i> [in]
+### -param Monitor [in]
 
 <dd>
 <p>The server silo monitor to unregister.</p>

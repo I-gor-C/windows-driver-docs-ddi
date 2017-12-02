@@ -55,13 +55,13 @@ typedef enum _IO_ACCESS_MODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="SequentialAccess"></a><a id="sequentialaccess"></a><a id="SEQUENTIALACCESS"></a><b>SequentialAccess</b>
+### -field SequentialAccess
 
 <dd>
 <p>Indicates that the input/output will be sent down in a sequential order.</p>
 </dd>
 
-### -field <a id="RandomAccess"></a><a id="randomaccess"></a><a id="RANDOMACCESS"></a><b>RandomAccess</b>
+### -field RandomAccess
 
 <dd>
 <p>Indicates that the input/output might not be in a predictable order.</p>

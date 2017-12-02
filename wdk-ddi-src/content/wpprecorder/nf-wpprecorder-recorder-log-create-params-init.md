@@ -56,13 +56,13 @@ FORCEINLINE  void RECORDER_LOG_CREATE_PARAMS_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Params</i> [out]
+### -param Params [out]
 
 <dd>
 <p>A pointer to the <a href="..\wpprecorder\ns-wpprecorder--recorder-log-create-params.md">RECORDER_LOG_CREATE_PARAMS</a> structure to initialize.</p>
 </dd>
 
-### -param <i>LogIdentifier</i> [in, optional]
+### -param LogIdentifier [in, optional]
 
 <dd></dd>
 </dl>

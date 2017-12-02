@@ -57,25 +57,25 @@ typedef struct _ScsiReadCapacity_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>Cdb</b>
+### -field Cdb
 
 <dd>
 <p>Contains the command descriptor block that holds the SCSI read capacity command to be sent to the target device. </p>
 </dd>
 
-### -field <b>HbaPortWWN</b>
+### -field HbaPortWWN
 
 <dd>
 <p>Contains a worldwise name for the HBA through which the target is accessed. </p>
 </dd>
 
-### -field <b>DiscoveredPortWWN</b>
+### -field DiscoveredPortWWN
 
 <dd>
 <p>Contains a worldwide name for the port through which the target device is accessed. </p>
 </dd>
 
-### -field <b>FcLun</b>
+### -field FcLun
 
 <dd>
 <p>Indicates the logical unit number of the logical unit that will receive the SCSI read capacity command.</p>

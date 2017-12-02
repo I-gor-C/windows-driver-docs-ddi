@@ -7,7 +7,7 @@ old-location: netvista\_dot11_wfd_device_entry.htm
 old-project: netvista
 ms.assetid: 548A40F7-1C02-4BF0-8F78-EB8C3C97CEB4
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_WFD_DEVICE_ENTRY,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,97 +68,97 @@ typedef struct _DOT11_WFD_DEVICE_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>uPhyId</b>
+### -field uPhyId
 
 <dd>
 <p>The identifer of the PHY the miniport used to detect the device. This identifier is in the index range of the list of supported PHYs returned from an <a href="https://msdn.microsoft.com/library/windows/hardware/ff569426">OID_DOT11_SUPPORTED_PHY_TYPES</a> query request. This identifer cannot be <b>DOT_PHY_ID_ANY</b>.</p>
 </dd>
 
-### -field <b>PhySpecificInfo</b>
+### -field PhySpecificInfo
 
 <dd>
 <p>The attributes of the PHY identified by <b>uPhyId</b>.</p>
 </dd>
 
-### -field <b>dot11BSSID</b>
+### -field dot11BSSID
 
 <dd>
 <p>The MAC address of the device that sent the beacon or probe response packet during a discovery.</p>
 </dd>
 
-### -field <b>dot11BSSType</b>
+### -field dot11BSSType
 
 <dd>
 <p>The BSS network type. This member is set to <b>dot11_BSS_type_infrastructure</b> for all discovered WFD devices and WFD GOs.</p>
 </dd>
 
-### -field <b>TransmitterAddress</b>
+### -field TransmitterAddress
 
 <dd>
 <p>The MAC address for the transmitter of the device that sent the beacon or probe response packet during a discovery.</p>
 </dd>
 
-### -field <b>lRSSI</b>
+### -field lRSSI
 
 <dd>
 <p>The recieved signal strength indicator value of the discovered device. The units for this value are in decibels referenced to 1 milliwatt (dBm).</p>
 </dd>
 
-### -field <b>uLinkQuality</b>
+### -field uLinkQuality
 
 <dd>
 <p>Link quality value ranging from 0 to 100. A value of 100 indicates highest link quality.</p>
 </dd>
 
-### -field <b>usBeaconPeriod</b>
+### -field usBeaconPeriod
 
 <dd>
 <p>The value received from the beacon interval field of the most recent beacon or probe response packet.</p>
 </dd>
 
-### -field <b>ullTimestamp</b>
+### -field ullTimestamp
 
 <dd>
 <p>The value received from the timestamp field of the most recent beacon or probe response packet.</p>
 </dd>
 
-### -field <b>ullBeaconHostTimestamp</b>
+### -field ullBeaconHostTimestamp
 
 <dd>
 <p>The timestamp, determined by a value returned from <a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a>, recording the time when the beacon packet was received.</p>
 </dd>
 
-### -field <b>ullProbeResponseHostTimestamp</b>
+### -field ullProbeResponseHostTimestamp
 
 <dd>
 <p>The timestamp, determined by a value returned from <a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a>, recording the time when the probe response packet was received.</p>
 </dd>
 
-### -field <b>usCapabilityInformation</b>
+### -field usCapabilityInformation
 
 <dd>
 <p>The value received from the capability field of the most recent beacon or probe response packet.</p>
 </dd>
 
-### -field <b>uBeaconIEsOffset</b>
+### -field uBeaconIEsOffset
 
 <dd>
 <p>The offset, in bytes, from the beginning of this structure  of the list of information elements (IEs) from the last beacon packet received from this device. If no beacon packet was received, this value should be 0.</p>
 </dd>
 
-### -field <b>uBeaconIEsLength</b>
+### -field uBeaconIEsLength
 
 <dd>
 <p>The length, in bytes, of the IEs at <b>uBeaconIEsOffset</b>. This is an exact length value and contains no padding for alignment. If no beacon packet was received, this value should be 0.</p>
 </dd>
 
-### -field <b>uProbeResponseIEsOffset</b>
+### -field uProbeResponseIEsOffset
 
 <dd>
 <p>The offset, in bytes, from the beginning of this structure  of the list of information elements (IEs) from the last probe response packet received from this device. If no beacon packet was received, this value should be 0.</p>
 </dd>
 
-### -field <b>uProbeResponseIEsLength</b>
+### -field uProbeResponseIEsLength
 
 <dd>
 <p>The length, in bytes, of the IEs at <b>uProbeResponseIEsOffset</b>. This is an exact length value and contains no padding for alignment. If no probe response packet was received, this value should be 0.</p>
@@ -216,4 +216,4 @@ typedef struct _DOT11_WFD_DEVICE_ENTRY {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20 DOT11_WFD_DEVICE_ENTRY structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20 DOT11_WFD_DEVICE_ENTRY structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

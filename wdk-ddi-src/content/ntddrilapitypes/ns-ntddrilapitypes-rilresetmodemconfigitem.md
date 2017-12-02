@@ -7,7 +7,7 @@ old-location: netvista\rilresetmodemconfigitem.htm
 old-project: netvista
 ms.assetid: 4e823f87-662c-491f-b368-f853f381e4b8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILRESETMODEMCONFIGITEM, RILRESETMODEMCONFIGITEM, *LPRILRESETMODEMCONFIGITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,11 +55,11 @@ typedef struct _RILRESETMODEMCONFIGITEM {
 ## -struct-fields
 <dl>
 
-### -field <b>dwModemConfigItem</b>
+### -field dwModemConfigItem
 
 <dd></dd>
 
-### -field <b>rrmcValue</b>
+### -field rrmcValue
 
 <dd></dd>
 </dl>

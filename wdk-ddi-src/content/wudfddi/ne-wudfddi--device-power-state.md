@@ -7,7 +7,7 @@ old-location: wdf\device_power_state.htm
 old-project: wdf
 ms.assetid: 7dd4d0ae-876a-4156-8a09-2ebc82a25117
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WSK_TRANSPORT, WSK_TRANSPORT, *PWSK_TRANSPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ typedef enum _DEVICE_POWER_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PowerDeviceUnspecified"></a><a id="powerdeviceunspecified"></a><a id="POWERDEVICEUNSPECIFIED"></a><b>PowerDeviceUnspecified</b>
+### -field PowerDeviceUnspecified
 
 <dd>
 <p>The device power state is unspecified.</p>
 </dd>
 
-### -field <a id="PowerDeviceD0"></a><a id="powerdeviced0"></a><a id="POWERDEVICED0"></a><b>PowerDeviceD0</b>
+### -field PowerDeviceD0
 
 <dd>
 <p>The device's working (D0) state. This is the device's highest power state.</p>
 </dd>
 
-### -field <a id="PowerDeviceD1"></a><a id="powerdeviced1"></a><a id="POWERDEVICED1"></a><b>PowerDeviceD1</b>
+### -field PowerDeviceD1
 
 <dd>
 <p>The device's D1 <a href="https://msdn.microsoft.com/f594a63f-10ce-439d-abe3-d342555d98f0">sleeping state</a>.</p>
 </dd>
 
-### -field <a id="PowerDeviceD2"></a><a id="powerdeviced2"></a><a id="POWERDEVICED2"></a><b>PowerDeviceD2</b>
+### -field PowerDeviceD2
 
 <dd>
 <p>The device's D2 sleeping state.</p>
 </dd>
 
-### -field <a id="PowerDeviceD3"></a><a id="powerdeviced3"></a><a id="POWERDEVICED3"></a><b>PowerDeviceD3</b>
+### -field PowerDeviceD3
 
 <dd>
 <p>The device's D3 sleeping state.</p>
 </dd>
 
-### -field <a id="PowerDeviceMaximum"></a><a id="powerdevicemaximum"></a><a id="POWERDEVICEMAXIMUM"></a><b>PowerDeviceMaximum</b>
+### -field PowerDeviceMaximum
 
 <dd>
 <p>For system use only.</p>
@@ -142,4 +142,4 @@ typedef enum _DEVICE_POWER_STATE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20DEVICE_POWER_STATE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20DEVICE_POWER_STATE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -54,7 +54,7 @@ HRESULT KsMediaSamplesCompleted(
 ## -parameters
 <dl>
 
-### -param <i>StreamSegment</i> [in]
+### -param StreamSegment [in]
 
 <dd>
 <p>Pointer to a <a href="..\ksproxy\ns-ksproxy--ksstream-segment.md">KSSTREAM_SEGMENT</a> structure that contains header information for a completed stream segment. </p>

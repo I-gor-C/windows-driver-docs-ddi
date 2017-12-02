@@ -7,7 +7,7 @@ old-location: debugger\idebugoutputcallbackswide_output.htm
 old-project: debugger
 ms.assetid: b57661c3-a18f-45ed-b7fc-f6471753566e
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugOutputCallbacksWide, Output, IDebugOutputCallbacksWide::Output
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ HRESULT Output(
 ## -parameters
 <dl>
 
-### -param <i>Mask</i> [in]
+### -param Mask [in]
 
 <dd>
-<p>Specifies the <a href="debugger.debug_output_xxx">DEBUG_OUTPUT_XXX</a> bit flags that indicate the nature of the output.</p>
+<p>Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541518">DEBUG_OUTPUT_XXX</a> bit flags that indicate the nature of the output.</p>
 </dd>
 
-### -param <i>Text</i> [in]
+### -param Text [in]
 
 <dd>
 <p>Specifies the output that is being sent.</p>

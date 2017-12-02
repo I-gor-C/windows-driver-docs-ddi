@@ -55,13 +55,13 @@ VOID KeSetTargetProcessorDpc(
 ## -parameters
 <dl>
 
-### -param <i>Dpc</i> [in, out]
+### -param Dpc [in, out]
 
 <dd>
 <p>Pointer to the caller's DPC object, which <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a> already initialized.</p>
 </dd>
 
-### -param <i>Number</i> [in]
+### -param Number [in]
 
 <dd>
 <p>Specifies the zero-based number of the target processor on which the DPC should be queued and executed.</p>
@@ -157,7 +157,7 @@ VOID KeSetTargetProcessorDpc(
 <a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
 </dt>
 <dt>
-<a href="..\ntddk\nf-ntddk-kesetimportancedpc.md">KeSetImportanceDpc</a>
+<a href="..\wdm\nf-wdm-kesetimportancedpc.md">KeSetImportanceDpc</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-kesettargetprocessordpcex.md">KeSetTargetProcessorDpcEx</a>

@@ -54,7 +54,7 @@ NTSTATUS GetOutputStreamPresentationPosition(
 ## -parameters
 <dl>
 
-### -param <i>pPresentationPosition</i> [out]
+### -param pPresentationPosition [out]
 
 <dd>
 <p> pPresentationPosition returns a <a href="audio.ksaudio_presentation_position">KSAUDIO_PRESENTATION_POSITION</a> structure that represents a recent presentation position in the audio data stream. For more information, see <a href="audio.iminiportstreamaudioenginenode_getstreampresentationposition">IMiniportStreamAudioEngineNode::GetStreamPresentationPosition</a>.</p>

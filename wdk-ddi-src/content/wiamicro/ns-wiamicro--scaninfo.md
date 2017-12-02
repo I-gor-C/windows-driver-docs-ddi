@@ -7,7 +7,7 @@ old-location: image\scaninfo.htm
 old-project: image
 ms.assetid: 58a0cc96-7180-4823-a4af-bf2d5fa49474
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: SCANINFO, SCANINFO, *PSCANINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,7 +90,7 @@ typedef struct _SCANINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>ADF</b>
+### -field ADF
 
 <dd>
 <p>Indicates whether the scanner supports an automatic document feeder (ADF). This member can be one of the following values:</p>
@@ -127,7 +127,7 @@ typedef struct _SCANINFO {
 <p> </p>
 </dd>
 
-### -field <b>TPA</b>
+### -field TPA
 
 <dd>
 <p>Indicates whether the scanner supports TPA (TransParency Adapter). The value can be:</p>
@@ -135,7 +135,7 @@ typedef struct _SCANINFO {
 <p>1 - supported</p>
 </dd>
 
-### -field <b>Endorser</b>
+### -field Endorser
 
 <dd>
 <p>Indicates whether the scanner has endorser capabilities. The value can be:</p>
@@ -143,49 +143,49 @@ typedef struct _SCANINFO {
 <p>1 - supported</p>
 </dd>
 
-### -field <b>OpticalXResolution</b>
+### -field OpticalXResolution
 
 <dd>
 <p>Specifies the horizontal dpi setting of the scanner optics.</p>
 </dd>
 
-### -field <b>OpticalYResolution</b>
+### -field OpticalYResolution
 
 <dd>
 <p>Specifies the vertical dpi setting of the scanner optics.</p>
 </dd>
 
-### -field <b>BedWidth</b>
+### -field BedWidth
 
 <dd>
 <p>Specifies the bed width of the scanner in thousandths of an inch.</p>
 </dd>
 
-### -field <b>BedHeight</b>
+### -field BedHeight
 
 <dd>
 <p>Specifies the bed height of the scanner in thousandths of an inch.</p>
 </dd>
 
-### -field <b>IntensityRange</b>
+### -field IntensityRange
 
 <dd>
 <p>Specifies the intensity/brightness range values of the scanner.</p>
 </dd>
 
-### -field <b>ContrastRange</b>
+### -field ContrastRange
 
 <dd>
 <p>Specifies the contrast range values of the scanner.</p>
 </dd>
 
-### -field <b>SupportedCompressionType</b>
+### -field SupportedCompressionType
 
 <dd>
 <p>Specifies a mask value of supported compression types. A value of zero indicates that no compression types are supported.</p>
 </dd>
 
-### -field <b>SupportedDataTypes</b>
+### -field SupportedDataTypes
 
 <dd>
 <p>Specifies a mask value of supported data types. A value of zero indicates that no data types are supported. This member can be the bitwise OR of the following.</p>
@@ -222,25 +222,25 @@ typedef struct _SCANINFO {
 <p> </p>
 </dd>
 
-### -field <b>WidthPixels</b>
+### -field WidthPixels
 
 <dd>
 <p>Specifies the width of the current image in pixels.</p>
 </dd>
 
-### -field <b>WidthBytes</b>
+### -field WidthBytes
 
 <dd>
 <p>Specifies the width of the current image in bytes.</p>
 </dd>
 
-### -field <b>Lines</b>
+### -field Lines
 
 <dd>
 <p>Specifies the height of the current image in pixels.</p>
 </dd>
 
-### -field <b>DataType</b>
+### -field DataType
 
 <dd>
 <p>Specifies the current data type set of the current image. This member can be set to one of the following.</p>
@@ -301,49 +301,49 @@ typedef struct _SCANINFO {
 <p> </p>
 </dd>
 
-### -field <b>PixelBits</b>
+### -field PixelBits
 
 <dd>
 <p>Specifies the current bit depth setting of the current image.</p>
 </dd>
 
-### -field <b>Intensity</b>
+### -field Intensity
 
 <dd>
 <p>Specifies the current intensity/brightness setting of the scanner.</p>
 </dd>
 
-### -field <b>Contrast</b>
+### -field Contrast
 
 <dd>
 <p>Specifies the current contrast setting of the scanner.</p>
 </dd>
 
-### -field <b>Xresolution</b>
+### -field Xresolution
 
 <dd>
 <p>Specifies the horizontal dpi setting of the scanner optics.</p>
 </dd>
 
-### -field <b>Yresolution</b>
+### -field Yresolution
 
 <dd>
 <p>Specifies the vertical dpi setting of the scanner optics.</p>
 </dd>
 
-### -field <b>Window</b>
+### -field Window
 
 <dd>
 <p>Specifies the current scanner window settings.</p>
 </dd>
 
-### -field <b>DitherPattern</b>
+### -field DitherPattern
 
 <dd>
 <p>Specifies the dither pattern of the scanner.</p>
 </dd>
 
-### -field <b>Negative</b>
+### -field Negative
 
 <dd>
 <p>Specifies whether negative is on or off. The value can be:</p>
@@ -351,7 +351,7 @@ typedef struct _SCANINFO {
 <p>1 - on</p>
 </dd>
 
-### -field <b>Mirror</b>
+### -field Mirror
 
 <dd>
 <p>Specifies whether mirror is on or off. The value can be:</p>
@@ -359,7 +359,7 @@ typedef struct _SCANINFO {
 <p>1 - on</p>
 </dd>
 
-### -field <b>AutoBack</b>
+### -field AutoBack
 
 <dd>
 <p>Specifies whether AutoBack is on or off. The value can be:</p>
@@ -367,19 +367,19 @@ typedef struct _SCANINFO {
 <p>1 - on</p>
 </dd>
 
-### -field <b>ColorDitherPattern</b>
+### -field ColorDitherPattern
 
 <dd>
 <p>Reserved. Set to zero.</p>
 </dd>
 
-### -field <b>ToneMap</b>
+### -field ToneMap
 
 <dd>
 <p>Reserved. Set to zero.</p>
 </dd>
 
-### -field <b>Compression</b>
+### -field Compression
 
 <dd>
 <p>Specifies whether compression is on or off for the scanner. The value can be:</p>
@@ -387,7 +387,7 @@ typedef struct _SCANINFO {
 <p>1 - on</p>
 </dd>
 
-### -field <b>RawDataFormat</b>
+### -field RawDataFormat
 
 <dd>
 <p>Specifies the raw data format for the scanner. The value can be:</p>
@@ -395,7 +395,7 @@ typedef struct _SCANINFO {
 <p>1 - planar data</p>
 </dd>
 
-### -field <b>RawPixelOrder</b>
+### -field RawPixelOrder
 
 <dd>
 <p>Specifies the pixel order for the scanner. The value can be:</p>
@@ -403,7 +403,7 @@ typedef struct _SCANINFO {
 <p>1 - BGR</p>
 </dd>
 
-### -field <b>bNeedDataAlignment</b>
+### -field bNeedDataAlignment
 
 <dd>
 <p>Specifies whether data alignment is needed for the scanner. The value can be:</p>
@@ -411,31 +411,31 @@ typedef struct _SCANINFO {
 <p>1 - true</p>
 </dd>
 
-### -field <b>DelayBetweenRead</b>
+### -field DelayBetweenRead
 
 <dd>
 <p>Specifies the time delay in milliseconds between <a href="..\wiamicro\nf-wiamicro-scan.md">Scan</a> function calls that the scanner can support.</p>
 </dd>
 
-### -field <b>MaxBufferSize</b>
+### -field MaxBufferSize
 
 <dd>
 <p>Specifies the maximum buffer size in the scanner.</p>
 </dd>
 
-### -field <b>DeviceIOHandles</b>
+### -field DeviceIOHandles
 
 <dd>
 <p>Specifies an array of device I/O handles needed for device communication.</p>
 </dd>
 
-### -field <b>lReserved</b>
+### -field lReserved
 
 <dd>
 <p>Specifies an array of reserved bits.</p>
 </dd>
 
-### -field <b>pMicroDriverContext</b>
+### -field pMicroDriverContext
 
 <dd>
 <p>Points to the microdriver's context. <i>This member is defined only for Microsoft Windows XP and later</i>. The microdriver allocates the buffer pointed to by this member. The buffer should be allocated in CMD_INITIALIZE, and freed in CMD_UNINITIALIZE. (See <a href="https://msdn.microsoft.com/library/windows/hardware/ff547067">Required Commands</a>.) The WIA Flatbed driver knows nothing of this pointer, and hence will not alter the memory pointed to by this member.</p>
@@ -478,4 +478,4 @@ typedef struct _SCANINFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20SCANINFO structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20SCANINFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

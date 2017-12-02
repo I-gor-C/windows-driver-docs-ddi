@@ -7,7 +7,7 @@ old-location: netvista\rilunsolicitedssinfonotificationcode.htm
 old-project: netvista
 ms.assetid: 03dd4659-29fc-4426-8d30-2bbc0b71f899
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,75 +71,75 @@ typedef enum _RILUNSOLICITEDSSINFONOTIFICATIONCODE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_UNSSSCODE_CUGCALL"></a><a id="ril_unssscode_cugcall"></a><b>RIL_UNSSSCODE_CUGCALL</b>
+### -field RIL_UNSSSCODE_CUGCALL
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_CALLPUTONHOLD"></a><a id="ril_unssscode_callputonhold"></a><b>RIL_UNSSSCODE_CALLPUTONHOLD</b>
+### -field RIL_UNSSSCODE_CALLPUTONHOLD
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_CALLRETRIEVED"></a><a id="ril_unssscode_callretrieved"></a><b>RIL_UNSSSCODE_CALLRETRIEVED</b>
+### -field RIL_UNSSSCODE_CALLRETRIEVED
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_ENTEREDMULTIPARTY"></a><a id="ril_unssscode_enteredmultiparty"></a><b>RIL_UNSSSCODE_ENTEREDMULTIPARTY</b>
+### -field RIL_UNSSSCODE_ENTEREDMULTIPARTY
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_HELDCALLRELEASED"></a><a id="ril_unssscode_heldcallreleased"></a><b>RIL_UNSSSCODE_HELDCALLRELEASED</b>
+### -field RIL_UNSSSCODE_HELDCALLRELEASED
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_FORWARDCHECKSS"></a><a id="ril_unssscode_forwardcheckss"></a><b>RIL_UNSSSCODE_FORWARDCHECKSS</b>
+### -field RIL_UNSSSCODE_FORWARDCHECKSS
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_ALERTINGEXPLICITCALLXFER"></a><a id="ril_unssscode_alertingexplicitcallxfer"></a><b>RIL_UNSSSCODE_ALERTINGEXPLICITCALLXFER</b>
+### -field RIL_UNSSSCODE_ALERTINGEXPLICITCALLXFER
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_CONNECTEDEXPLICITCALLXFER"></a><a id="ril_unssscode_connectedexplicitcallxfer"></a><b>RIL_UNSSSCODE_CONNECTEDEXPLICITCALLXFER</b>
+### -field RIL_UNSSSCODE_CONNECTEDEXPLICITCALLXFER
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_DEFLECTEDCALL"></a><a id="ril_unssscode_deflectedcall"></a><b>RIL_UNSSSCODE_DEFLECTEDCALL</b>
+### -field RIL_UNSSSCODE_DEFLECTEDCALL
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_ADDITIONALINCOMINGCF"></a><a id="ril_unssscode_additionalincomingcf"></a><b>RIL_UNSSSCODE_ADDITIONALINCOMINGCF</b>
+### -field RIL_UNSSSCODE_ADDITIONALINCOMINGCF
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_UNCONDITIONALCFACTIVE"></a><a id="ril_unssscode_unconditionalcfactive"></a><b>RIL_UNSSSCODE_UNCONDITIONALCFACTIVE</b>
+### -field RIL_UNSSSCODE_UNCONDITIONALCFACTIVE
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_SOMECONDITIONALCFACTIVE"></a><a id="ril_unssscode_someconditionalcfactive"></a><b>RIL_UNSSSCODE_SOMECONDITIONALCFACTIVE</b>
+### -field RIL_UNSSSCODE_SOMECONDITIONALCFACTIVE
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_CALLWASFORWARDED"></a><a id="ril_unssscode_callwasforwarded"></a><b>RIL_UNSSSCODE_CALLWASFORWARDED</b>
+### -field RIL_UNSSSCODE_CALLWASFORWARDED
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_CALLISWAITING"></a><a id="ril_unssscode_calliswaiting"></a><b>RIL_UNSSSCODE_CALLISWAITING</b>
+### -field RIL_UNSSSCODE_CALLISWAITING
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_OUTGOINGCALLSBARRED"></a><a id="ril_unssscode_outgoingcallsbarred"></a><b>RIL_UNSSSCODE_OUTGOINGCALLSBARRED</b>
+### -field RIL_UNSSSCODE_OUTGOINGCALLSBARRED
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_INCOMINGCALLSBARRED"></a><a id="ril_unssscode_incomingcallsbarred"></a><b>RIL_UNSSSCODE_INCOMINGCALLSBARRED</b>
+### -field RIL_UNSSSCODE_INCOMINGCALLSBARRED
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_CLIRSUPPRESSREJECT"></a><a id="ril_unssscode_clirsuppressreject"></a><b>RIL_UNSSSCODE_CLIRSUPPRESSREJECT</b>
+### -field RIL_UNSSSCODE_CLIRSUPPRESSREJECT
 
 <dd></dd>
 
-### -field <a id="RIL_UNSSSCODE_MAX"></a><a id="ril_unssscode_max"></a><b>RIL_UNSSSCODE_MAX</b>
+### -field RIL_UNSSSCODE_MAX
 
 <dd></dd>
 </dl>

@@ -54,7 +54,7 @@ typedef struct _DVD_BCA_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>BCAInformation</b>
+### -field BCAInformation
 
 <dd>
 <p>Contains an array that holds vendor-defined information retrieved from the burst cutting area.</p>

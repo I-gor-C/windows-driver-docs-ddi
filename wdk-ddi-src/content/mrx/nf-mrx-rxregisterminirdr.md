@@ -7,7 +7,7 @@ old-location: ifsk\rxregisterminirdr.htm
 old-project: ifsk
 ms.assetid: f9c2fedd-b513-4ea9-b915-cdcc05b88d6f
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxRegisterMinirdr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,50 +61,50 @@ NTSTATUS RxRegisterMinirdr(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [out]
+### -param DeviceObject [out]
 
 <dd>
 <p>A pointer to where the created device object will be stored.</p>
 </dd>
 
-### -param <i>DriverObject</i> [in, out]
+### -param DriverObject [in, out]
 
 <dd>
 <p>A pointer to the driver object of the network mini-redirector driver. Each driver receives a pointer to its driver object in a parameter to its <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine. This driver object will be used to create the device object for the network mini-redirector driver. </p>
 </dd>
 
-### -param <i>MrdrDispatch</i> [in]
+### -param MrdrDispatch [in]
 
 <dd>
 <p>A pointer to the dispatch table for the network mini-redirector. This dispatch table includes configuration information for the network mini-redirector and a table of pointers to callback routines implemented by the network mini-redirector kernel driver. RDBSS makes calls to the network mini-redirector driver through this list of callback routines. </p>
 </dd>
 
-### -param <i>Controls</i> [in]
+### -param Controls [in]
 
 <dd>
 <p>The set of options that determine capabilities of the network mini-redirector driver and how RDBSS should handle initialization and name table caching for the network mini-redirector driver. These options can include any combination of the following bits:</p>
 <p></p>
 <dl>
 
-### -param <a id="RX_REGISTERMINI_FLAG_DONT_PROVIDE_UNCS"></a><a id="rx_registermini_flag_dont_provide_uncs"></a>RX_REGISTERMINI_FLAG_DONT_PROVIDE_UNCS
+### -param RX_REGISTERMINI_FLAG_DONT_PROVIDE_UNCS
 
 <dd>
 <p>When this flag is set, it indicates that the network mini-redirector does not support UNC names.</p>
 </dd>
 
-### -param <a id="RX_REGISTERMINI_FLAG_DONT_PROVIDE_MAILSLOTS"></a><a id="rx_registermini_flag_dont_provide_mailslots"></a>RX_REGISTERMINI_FLAG_DONT_PROVIDE_MAILSLOTS
+### -param RX_REGISTERMINI_FLAG_DONT_PROVIDE_MAILSLOTS
 
 <dd>
 <p>When this flag is set, it indicates that the network mini-redirector does not support mailslots.</p>
 </dd>
 
-### -param <a id="RX_REGISTERMINI_FLAG_DONT_INIT_DRIVER_DISPATCH"></a><a id="rx_registermini_flag_dont_init_driver_dispatch"></a>RX_REGISTERMINI_FLAG_DONT_INIT_DRIVER_DISPATCH
+### -param RX_REGISTERMINI_FLAG_DONT_INIT_DRIVER_DISPATCH
 
 <dd>
 <p>When this flag is set, it indicates that the network mini-redirector does not want RDBSS to initialize the driver dispatch entry points of the mini-redirector driver to point to RDBSS internal routines. This option would only be used in unusual circumstances. Normally RDBSS would set the driver dispatch entry points and the fast I/O dispatch in the network mini-redirector driver object to point to routines internal to RDBSS.</p>
 </dd>
 
-### -param <a id="RX_REGISTERMINI_FLAG_DONT_INIT_PREFIX_N_SCAVENGER"></a><a id="rx_registermini_flag_dont_init_prefix_n_scavenger"></a>RX_REGISTERMINI_FLAG_DONT_INIT_PREFIX_N_SCAVENGER
+### -param RX_REGISTERMINI_FLAG_DONT_INIT_PREFIX_N_SCAVENGER
 
 <dd>
 <p>When this flag is set, it indicates that the network mini-redirector does not want RDBSS to initialize its internal network name table and scavenger data structures for scavenging this name table. This option would be set for a network mini-redirector that wants to handle caching for network share names itself and not use the RDBSS facilities for name caching and scavenging.</p>
@@ -112,25 +112,25 @@ NTSTATUS RxRegisterMinirdr(
 </dl>
 </dd>
 
-### -param <i>DeviceName</i> [in]
+### -param DeviceName [in]
 
 <dd>
 <p>A pointer to a buffer that contains a zero-terminated Unicode string that names the device object. The string must be a full path name. This parameter is passed as <i>DeviceName</i> to the <b>IoCreateDevice</b> routine by RDBSS.</p>
 </dd>
 
-### -param <i>DeviceExtensionSize</i> [in]
+### -param DeviceExtensionSize [in]
 
 <dd>
 <p>The size specified by the mini-redirector driver for the number of bytes to be allocated for the device extension of the device object. The internal structure of the device extension is driver-defined. This parameter is added to the size of the device extension used by RDBSS and passed as the <i>DeviceExtensionSize</i> parameter to the <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> routine by RDBSS.</p>
 </dd>
 
-### -param <i>DeviceType</i> [in]
+### -param DeviceType [in]
 
 <dd>
 <p>The device type used when the device object is created. This specifies one of the system-defined FILE_DEVICE_XXX constants that indicate the type of device or a vendor-defined value for a new type of device. This value would normally be FILE_DEVICE_NETWORK_FILE_SYSTEM for network mini-redirector drivers. This parameter is passed as <i>DeviceType</i> to the <b>IoCreateDevice</b> routine by RDBSS. </p>
 </dd>
 
-### -param <i>DeviceCharacteristics</i> [in]
+### -param DeviceCharacteristics [in]
 
 <dd>
 <p>The device characteristics used when the device object is created. This specifies one or more system-defined constants, combined together, that provide additional information about the driver's device. This value must include FILE_REMOTE_DEVICE for network mini-redirector drivers, but this might be combined with other characteristics such as FILE_DEVICE_SECURE_OPEN. This parameter is passed as <i>DeviceCharacteristics</i> to the <b>IoCreateDevice</b> routine by RDBSS. </p>
@@ -266,4 +266,4 @@ NTSTATUS RxRegisterMinirdr(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxRegisterMinirdr function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxRegisterMinirdr function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

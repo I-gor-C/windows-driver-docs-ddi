@@ -7,7 +7,7 @@ old-location: wdf\wdf_timer_config.htm
 old-project: wdf
 ms.assetid: 5ef6491d-90bb-472c-821a-b296bef17463
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_TIMER_CONFIG, WDF_TIMER_CONFIG, *PWDF_TIMER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef struct _WDF_TIMER_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>EvtTimerFunc</b>
+### -field EvtTimerFunc
 
 <dd>
 <p>A pointer to a driver-supplied <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>Period</b>
+### -field Period
 
 <dd>
 <p>A time period, in milliseconds. The framework calls the driver's <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function repeatedly, whenever the specified number of milliseconds elapses. If this value is zero, the framework does not call the driver's <i>EvtTimerFunc</i> callback function repeatedly. Instead, it calls the callback function once, after the <a href="..\wdftimer\nf-wdftimer-wdftimerstart.md">WdfTimerStart</a> method's <i>DueTime</i> has elapsed. (The time period must be zero if <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a> sets the execution level to <a href="..\wdfobject\ne-wdfobject--wdf-execution-level.md">WdfExecutionLevelPassive</a>.) The time period cannot be a negative value.</p>
 </dd>
 
-### -field <b>AutomaticSerialization</b>
+### -field AutomaticSerialization
 
 <dd>
 <p>A Boolean value that, if <b>TRUE</b>, indicates that the framework will synchronize execution of the timer object's <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function with callback functions from other objects that are underneath the timer's parent device object. For more information, see the following Remarks section. If <b>FALSE</b>, the framework does not synchronize execution of the <i>EvtTimerFunc</i> callback function.</p>
 </dd>
 
-### -field <b>TolerableDelay</b>
+### -field TolerableDelay
 
 <dd>
 <p>Specifies a tolerance, in milliseconds, for the timer period that <i>Period</i> specifies and for the initial time interval that the <a href="..\wdftimer\nf-wdftimer-wdftimerstart.md">WdfTimerStart</a> method's <i>DueTime</i> specifies. For a periodic timer, the time interval between two successive timer expirations will be in the range from (<i>Period</i> - <i>TolerableDelay</i>) to (<i>Period</i> + <i>TolerableDelay</i>). The initial expiration time will be in the range from <i>DueTime</i> to (<i>DueTime</i> + <i>TolerableDelay</i>). The <i>TolerableDelay</i> value cannot be negative.</p>
@@ -95,7 +95,7 @@ typedef struct _WDF_TIMER_CONFIG {
 <p>For more information about this member, see the following Remarks section.</p>
 </dd>
 
-### -field <b>UseHighResolutionTimer</b>
+### -field UseHighResolutionTimer
 
 <dd>
 <p><b>KMDF only</b></p>
@@ -176,4 +176,4 @@ typedef struct _WDF_TIMER_CONFIG {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_TIMER_CONFIG structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_TIMER_CONFIG structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

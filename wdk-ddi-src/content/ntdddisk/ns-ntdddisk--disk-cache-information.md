@@ -71,66 +71,66 @@ typedef struct _DISK_CACHE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>ParametersSavable</b>
+### -field ParametersSavable
 
 <dd>
 <p>Indicates, when set to 1, that the device is capable of saving any parameters in nonvolatile storage.</p>
 </dd>
 
-### -field <b>ReadCacheEnabled</b>
+### -field ReadCacheEnabled
 
 <dd>
 <p>Indicates, when set to 1, that the read cache is enabled.</p>
 </dd>
 
-### -field <b>WriteCacheEnabled</b>
+### -field WriteCacheEnabled
 
 <dd>
 <p>Indicates, when set to 1, that the write cache is enabled.</p>
 </dd>
 
-### -field <b>ReadRetentionPriority</b>
+### -field ReadRetentionPriority
 
 <dd>
 <p>Determines the likelihood of various types of data remaining in the cache. By means of this value, for instance, data cached from a READ or WRITE operation might be given a different priority than data cached under other circumstances, such as prefetch operations. Thus a value of <b>EqualPriority</b> indicates that no data is held in the cache on a preferential basis. When <b>ReadRetentionPriority</b> is set to <b>EqualPriority</b>, all types of data have equal access to cache memory. On the other hand, a value of <b>KeepPrefetchedData</b> indicates that a preference is to be given to prefetched data while a value of <b>KeepReadData</b> indicates that a preference is to be given to data cached from a READ operation. For more information about the values that can be assigned to this member see the <a href="..\ntdddisk\ne-ntdddisk-disk-cache-retention-priority.md">DISK_CACHE_RETENTION_PRIORITY</a> enumeration. </p>
 </dd>
 
-### -field <b>WriteRetentionPriority</b>
+### -field WriteRetentionPriority
 
 <dd>
 <p>See discussion under <b>ReadRetentionPriority</b>.</p>
 </dd>
 
-### -field <b>DisablePrefetchTransferLength</b>
+### -field DisablePrefetchTransferLength
 
 <dd>
 <p>Disables prefetching. Prefetching might be disabled whenever the number of blocks requested exceeds the value in <b>DisablePrefetchTransferLength</b>. When zero, prefetching is disabled no matter what the size of the block request.</p>
 </dd>
 
-### -field <b>PrefetchScalar</b>
+### -field PrefetchScalar
 
 <dd>
 <p>When <b>TRUE</b>, Indicates that <b>ScalarPrefetch.Maximum</b> should be used together with the transfer length to calculate the amount of data that can be prefetched. When <b>FALSE</b>, <b>BlockPrefetch.Maximum</b> will be the maximum number of disk blocks that can be prefetched.</p>
 </dd>
 
-### -field <b>ScalarPrefetch</b>
+### -field ScalarPrefetch
 
 <dd>
 <dl>
 
-### -field <b>Minimum</b>
+### -field Minimum
 
 <dd>
 <p>Contains the scalar multiplier of the transfer length of the request when <b>PrefetchScalar</b> is <b>TRUE</b>. If <b>PrefetchScalar</b> is <b>TRUE</b>, the value in <b>ScalarPrefetch.Minimum</b> is multiplied by the transfer length to obtain the minimum amount of data that can be prefetched into the cache on a disk operation. </p>
 </dd>
 
-### -field <b>Maximum</b>
+### -field Maximum
 
 <dd>
 <p>Contains the scalar multiplier of the transfer length of the request when <b>PrefetchScalar</b> is <b>TRUE</b>. If <b>PrefetchScalar</b> is <b>TRUE</b>, the value in <b>ScalarPrefetch.Maximum</b> is multiplied by the transfer length to obtain the maximum amount of data that can be prefetched into the cache on a disk operation. </p>
 </dd>
 
-### -field <b>MaximumBlocks</b>
+### -field MaximumBlocks
 
 <dd>
 <p>Contains the maximum size, in blocks, of the transfer length. </p>
@@ -138,18 +138,18 @@ typedef struct _DISK_CACHE_INFORMATION {
 </dl>
 </dd>
 
-### -field <b>BlockPrefetch</b>
+### -field BlockPrefetch
 
 <dd>
 <dl>
 
-### -field <b>Minimum</b>
+### -field Minimum
 
 <dd>
 <p>Contains the scalar multiplier of the transfer length of the request when <b>PrefetchScalar</b> is <b>TRUE</b>. If <b>PrefetchScalar</b> is <b>TRUE</b>, the value in <b>ScalarPrefetch.Minimum</b> is multiplied by the transfer length to obtain the minimum amount of data that can be prefetched into the cache on a disk operation. </p>
 </dd>
 
-### -field <b>Maximum</b>
+### -field Maximum
 
 <dd>
 <p>Contains the scalar multiplier of the transfer length of the request when <b>PrefetchScalar</b> is <b>TRUE</b>. If <b>PrefetchScalar</b> is <b>TRUE</b>, the value in <b>ScalarPrefetch.Maximum</b> is multiplied by the transfer length to obtain the maximum amount of data that can be prefetched into the cache on a disk operation. </p>

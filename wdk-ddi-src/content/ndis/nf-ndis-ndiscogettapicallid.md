@@ -7,7 +7,7 @@ old-location: netvista\ndiscogettapicallid.htm
 old-project: netvista
 ms.assetid: 3cb47545-177f-46ef-aff6-33ad8c9a6974
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisCoGetTapiCallId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ NDIS_STATUS NdisCoGetTapiCallId(
 ## -parameters
 <dl>
 
-### -param <i>NdisVcHandle</i> [in]
+### -param NdisVcHandle [in]
 
 <dd>
 <p>Specifies the NDIS handle to the VC. This handle was supplied by NDIS when the VC was originally
@@ -64,7 +64,7 @@ NDIS_STATUS NdisCoGetTapiCallId(
      <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> function.</p>
 </dd>
 
-### -param <i>TapiCallId</i> [in, out]
+### -param TapiCallId [in, out]
 
 <dd>
 <p>Pointer to a caller-allocated buffer that receives a data structure of type VAR_STRING. Upon
@@ -182,4 +182,4 @@ NDIS_STATUS NdisCoGetTapiCallId(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoGetTapiCallId function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoGetTapiCallId function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

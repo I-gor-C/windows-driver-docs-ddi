@@ -58,31 +58,31 @@ typedef struct _KSAUDIOMODULE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>ClassId</b>
+### -field ClassId
 
 <dd>
 <p>The ClassId of the audio module. The ClassId is an identifier that establishes what type of module this is. The value and mapping is established by the ISV and IHV.</p>
 </dd>
 
-### -field <b>InstanceId</b>
+### -field InstanceId
 
 <dd>
 <p>The InstanceId of the audio module.  The InstanceId is a unique identifier that distinguishes this instance of a module from another instance of a module. </p>
 </dd>
 
-### -field <b>VersionMajor</b>
+### -field VersionMajor
 
 <dd>
 <p>The major version of the audio module. Usage is defined by the implementer.</p>
 </dd>
 
-### -field <b>VersionMinor</b>
+### -field VersionMinor
 
 <dd>
 <p>The minor version of the audio module.  Usage is defined by the implementer.</p>
 </dd>
 
-### -field <b>Name[AUDIOMODULE_MAX_NAME_CCH_SIZE]</b>
+### -field Name[AUDIOMODULE_MAX_NAME_CCH_SIZE]
 
 <dd>
 <p>The friendly name of the audio module. The maximum length is AUDIOMODULE_MAX_NAME_CCH_SIZE wide characters. It is defined as 128 in KSMedia.h.</p>

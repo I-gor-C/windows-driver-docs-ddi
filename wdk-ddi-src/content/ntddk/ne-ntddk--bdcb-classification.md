@@ -58,31 +58,31 @@ typedef enum _BDCB_CLASSIFICATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="BdCbClassificationUnknownImage"></a><a id="bdcbclassificationunknownimage"></a><a id="BDCBCLASSIFICATIONUNKNOWNIMAGE"></a><b>BdCbClassificationUnknownImage</b>
+### -field BdCbClassificationUnknownImage
 
 <dd>
 <p>The boot start image has not been inspected by anti-malware or anti-malware does not have enough information to determine whether the binary is malware.</p>
 </dd>
 
-### -field <a id="BdCbClassificationKnownGoodImage"></a><a id="bdcbclassificationknowngoodimage"></a><a id="BDCBCLASSIFICATIONKNOWNGOODIMAGE"></a><b>BdCbClassificationKnownGoodImage</b>
+### -field BdCbClassificationKnownGoodImage
 
 <dd>
 <p>The boot start image has been inspected by anti-malware and found not to be malware.</p>
 </dd>
 
-### -field <a id="BdCbClassificationKnownBadImage"></a><a id="bdcbclassificationknownbadimage"></a><a id="BDCBCLASSIFICATIONKNOWNBADIMAGE"></a><b>BdCbClassificationKnownBadImage</b>
+### -field BdCbClassificationKnownBadImage
 
 <dd>
 <p>The boot start image has been inspected by anti-malware and found to be malware.</p>
 </dd>
 
-### -field <a id="BdCbClassificationKnownBadImageBootCritical"></a><a id="bdcbclassificationknownbadimagebootcritical"></a><a id="BDCBCLASSIFICATIONKNOWNBADIMAGEBOOTCRITICAL"></a><b>BdCbClassificationKnownBadImageBootCritical</b>
+### -field BdCbClassificationKnownBadImageBootCritical
 
 <dd>
 <p>The boot start image has been inspected by anti-malware and found to be malware, but the anti-malware boot-start driver also knows it to be critical to the success of the boot.</p>
 </dd>
 
-### -field <a id="BdCbClassificationEnd"></a><a id="bdcbclassificationend"></a><a id="BDCBCLASSIFICATIONEND"></a><b>BdCbClassificationEnd</b>
+### -field BdCbClassificationEnd
 
 <dd>
 <p>Do not use. Reserved for future use.</p>

@@ -54,7 +54,7 @@ HRESULT IBidiRequest::GetResult(
 ## -parameters
 <dl>
 
-### -param <i>phr</i> [out]
+### -param phr [out]
 
 <dd>
 <p>Pointer to a variable that specifies the status of the bidi request.</p>

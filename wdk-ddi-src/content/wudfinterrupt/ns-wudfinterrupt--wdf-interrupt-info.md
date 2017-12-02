@@ -7,7 +7,7 @@ old-location: wdf\wdf_interrupt_info_umdf.htm
 old-project: wdf
 ms.assetid: 37B997D1-6F5D-4685-BF46-2C33685C157F
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,73 +68,73 @@ typedef struct _WDF_INTERRUPT_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>This member is reserved for future use. </p>
 </dd>
 
-### -field <b>TargetProcessorSet</b>
+### -field TargetProcessorSet
 
 <dd>
 <p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>-typed value that specifies the interrupt's processor affinity.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>This member is reserved for future use. </p>
 </dd>
 
-### -field <b>MessageNumber</b>
+### -field MessageNumber
 
 <dd>
 <p>If the <b>MessageSignaled</b> member is TRUE, this is the interrupt's message number.</p>
 </dd>
 
-### -field <b>Vector</b>
+### -field Vector
 
 <dd>
 <p>The interrupt vector.</p>
 </dd>
 
-### -field <b>Irql</b>
+### -field Irql
 
 <dd>
 <p>The DIRQL at which the device interrupts.</p>
 </dd>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--kinterrupt-mode.md">KINTERRUPT_MODE</a>-typed enumerator that indicates whether the interrupt is level-triggered or edge-triggered. The KINTERRUPT_MODE enumeration type is defined in Wudfwdm.h.</p>
 </dd>
 
-### -field <b>Polarity</b>
+### -field Polarity
 
 <dd>
 <p>A <a href="..\wudfinterrupt\ne-wudfinterrupt--wdf-interrupt-polarity.md">WDF_INTERRUPT_POLARITY</a>-typed enumerator that identifies the interrupt signal's polarity.</p>
 </dd>
 
-### -field <b>MessageSignaled</b>
+### -field MessageSignaled
 
 <dd>
 <p>A Boolean value that, if TRUE, indicates that the interrupt is message-signaled. If FALSE, the interrupt is not message-signaled.</p>
 </dd>
 
-### -field <b>ShareDisposition</b>
+### -field ShareDisposition
 
 <dd>
 <p>A CM_SHARE_DISPOSITION-typed enumerator that indicates whether the interrupt is being shared. The value is <b>CmResourceShareShared</b> if the interrupt is being shared or <b>CmResourceShareDeviceExclusive</b> if the interrupt is not being shared. The CM_SHARE_DISPOSITION enumeration type is defined in Wudfwdm.h.</p>
 </dd>
 
-### -field <b>Group</b>
+### -field Group
 
 <dd>
 <p>A value that identifies the processor group that the <b>TargetProcessorSet</b> member applies to. This value is zero if the computer has only one processor group or if the operating system does not support processor groups. The <b>Group</b> member is available in version 1.9 and later versions of KMDF.</p>
@@ -194,4 +194,4 @@ typedef struct _WDF_INTERRUPT_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_INTERRUPT_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_INTERRUPT_INFO structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

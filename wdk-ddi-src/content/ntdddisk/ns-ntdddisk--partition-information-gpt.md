@@ -57,25 +57,25 @@ typedef struct _PARTITION_INFORMATION_GPT {
 ## -struct-fields
 <dl>
 
-### -field <b>PartitionType</b>
+### -field PartitionType
 
 <dd>
 <p>Specifies a GUID that uniquely identifies the partition type. The GUID data type is described on the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565392">Using GUIDs in Drivers</a> reference page. </p>
 </dd>
 
-### -field <b>PartitionId</b>
+### -field PartitionId
 
 <dd>
 <p>Specifies a GUID that uniquely identifies the partition. The GUID data type is described on the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565392">Using GUIDs in Drivers</a> reference page. </p>
 </dd>
 
-### -field <b>Attributes</b>
+### -field Attributes
 
 <dd>
 <p>Specifies the partition entry attributes used for diagnostics, recovery tools, and other firmware essential to the operation of the device. See Intel's <i>Extensible Firmware Interface</i> specification for further information.</p>
 </dd>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>Specifies the partition name in Unicode.</p>

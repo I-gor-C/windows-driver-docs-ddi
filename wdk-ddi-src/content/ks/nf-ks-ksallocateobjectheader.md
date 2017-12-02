@@ -59,14 +59,14 @@ NTSTATUS KsAllocateObjectHeader(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [out]
+### -param Header [out]
 
 <dd>
 <p>Points to the caller-allocated location in which to return a pointer to the initialized 
       <b>KSOBJECT_HEADER</b> if successful. </p>
 </dd>
 
-### -param <i>ItemsCount</i> [in]
+### -param ItemsCount [in]
 
 <dd>
 <p>Specifies the number of object create items in the <i>ItemsList</i> to be added to the 
@@ -74,7 +74,7 @@ NTSTATUS KsAllocateObjectHeader(
       <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ItemsList</i> [in, optional]
+### -param ItemsList [in, optional]
 
 <dd>
 <p>Optionally specifies a pointer to a caller-allocated buffer containing a series of 
@@ -82,14 +82,14 @@ NTSTATUS KsAllocateObjectHeader(
       the object header. Must be set to <b>NULL</b> if there are no object create items.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Points to the IRP, of major function <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>, 
       that contains the necessary information to complete the creation of the object header.</p>
 </dd>
 
-### -param <i>Table</i> [in]
+### -param Table [in]
 
 <dd>
 <p>Points to an initialized dispatch table for this file object.</p>

@@ -66,47 +66,47 @@ typedef struct D3DKMT_PRESENT_MULTIPLANE_OVERLAY {
 ## -struct-fields
 <dl>
 
-### -field <b>hDevice</b>
+### -field hDevice
 
 <dd></dd>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd></dd>
 
-### -field <b>BroadcastContextCount</b>
+### -field BroadcastContextCount
 
 <dd></dd>
 
-### -field <b>BroadcastContext</b>
+### -field BroadcastContext
 
 <dd></dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd></dd>
 
-### -field <b>PresentCount</b>
+### -field PresentCount
 
 <dd></dd>
 
-### -field <b>FlipInterval</b>
+### -field FlipInterval
 
 <dd></dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd></dd>
 
-### -field <b>PresentPlaneCount</b>
+### -field PresentPlaneCount
 
 <dd></dd>
 
-### -field <b>pPresentPlanes</b>
+### -field pPresentPlanes
 
 <dd></dd>
 
-### -field <b>Duration</b>
+### -field Duration
 
 <dd></dd>
 </dl>

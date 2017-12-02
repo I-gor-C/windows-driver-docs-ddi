@@ -54,7 +54,7 @@ NTSTATUS RegisterNotificationEvent(
 ## -parameters
 <dl>
 
-### -param <i>NotificationEvent</i> [in]
+### -param NotificationEvent [in]
 
 <dd>
 <p>A pointer to a kernel event (PKEVENT) to be registered for notification as DMA progresses.</p>

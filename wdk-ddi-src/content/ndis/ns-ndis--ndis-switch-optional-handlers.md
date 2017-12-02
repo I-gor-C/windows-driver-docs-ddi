@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_optional_handlers.htm
 old-project: netvista
 ms.assetid: aa8367c7-8366-4601-8c2a-4d96df5cfcd8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_SWITCH_OPTIONAL_HANDLERS, NDIS_SWITCH_OPTIONAL_HANDLERS, *PNDIS_SWITCH_OPTIONAL_HANDLERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ typedef struct _NDIS_SWITCH_OPTIONAL_HANDLERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The type, revision, and size of the <b>NDIS_SWITCH_OPTIONAL_HANDLERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
@@ -75,7 +75,7 @@ typedef struct _NDIS_SWITCH_OPTIONAL_HANDLERS {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_SWITCH_OPTIONAL_HANDLERS_REVISION_1"></a><a id="ndis_switch_optional_handlers_revision_1"></a>NDIS_SWITCH_OPTIONAL_HANDLERS_REVISION_1
+### -field NDIS_SWITCH_OPTIONAL_HANDLERS_REVISION_1
 
 <dd>
 <p>Original version for NDIS 6.30 and later.</p>
@@ -84,79 +84,79 @@ typedef struct _NDIS_SWITCH_OPTIONAL_HANDLERS {
 </dl>
 </dd>
 
-### -field <b>AllocateNetBufferListForwardingContext</b>
+### -field AllocateNetBufferListForwardingContext
 
 <dd>
 <p>A pointer to the <a href="netvista.AllocateNetBufferListForwardingContext">AllocateNetBufferListForwardingContext</a> function.</p>
 </dd>
 
-### -field <b>FreeNetBufferListForwardingContext</b>
+### -field FreeNetBufferListForwardingContext
 
 <dd>
 <p>A pointer to the <a href="netvista.FreeNetBufferListForwardingContext">FreeNetBufferListForwardingContext</a> function.</p>
 </dd>
 
-### -field <b>SetNetBufferListSource</b>
+### -field SetNetBufferListSource
 
 <dd>
 <p>A pointer to the <a href="..\ndis\nc-ndis-ndis-switch-set-net-buffer-list-source.md">SetNetBufferListSource</a> function.</p>
 </dd>
 
-### -field <b>AddNetBufferListDestination</b>
+### -field AddNetBufferListDestination
 
 <dd>
 <p>A pointer to the <a href="netvista.AddNetBufferListDestination">AddNetBufferListDestination</a> function.</p>
 </dd>
 
-### -field <b>GrowNetBufferListDestinations</b>
+### -field GrowNetBufferListDestinations
 
 <dd>
 <p>A pointer to the <a href="..\ndis\nc-ndis-ndis-switch-grow-net-buffer-list-destinations.md">GrowNetBufferListDestinations</a> function.</p>
 </dd>
 
-### -field <b>GetNetBufferListDestinations</b>
+### -field GetNetBufferListDestinations
 
 <dd>
 <p>A pointer to the <a href="netvista.GetNetBufferListDestinations">GetNetBufferListDestinations</a> function.</p>
 </dd>
 
-### -field <b>UpdateNetBufferListDestinations</b>
+### -field UpdateNetBufferListDestinations
 
 <dd>
 <p>A pointer to the <a href="netvista.UpdateNetBufferListDestinations">UpdateNetBufferListDestinations</a> function.</p>
 </dd>
 
-### -field <b>CopyNetBufferListInfo</b>
+### -field CopyNetBufferListInfo
 
 <dd>
 <p>A pointer to the <a href="netvista.CopyNetBufferListInfo">CopyNetBufferListInfo</a> function.</p>
 </dd>
 
-### -field <b>ReferenceSwitchNic</b>
+### -field ReferenceSwitchNic
 
 <dd>
 <p>A pointer to the <a href="netvista.ReferenceSwitchNic">ReferenceSwitchNic</a> function.</p>
 </dd>
 
-### -field <b>DereferenceSwitchNic</b>
+### -field DereferenceSwitchNic
 
 <dd>
 <p>A pointer to the <a href="netvista.DereferenceSwitchNic">DereferenceSwitchNic</a> function.</p>
 </dd>
 
-### -field <b>ReferenceSwitchPort</b>
+### -field ReferenceSwitchPort
 
 <dd>
 <p>A pointer to the <a href="netvista.ReferenceSwitchPort">ReferenceSwitchPort</a> function.</p>
 </dd>
 
-### -field <b>DereferenceSwitchPort</b>
+### -field DereferenceSwitchPort
 
 <dd>
 <p>A pointer to the <a href="netvista.DereferenceSwitchPort">DereferenceSwitchPort</a> function.</p>
 </dd>
 
-### -field <b>ReportFilteredNetBufferLists</b>
+### -field ReportFilteredNetBufferLists
 
 <dd>
 <p>A pointer to the <a href="..\ndis\nc-ndis-ndis-switch-report-filtered-net-buffer-lists.md">ReportFilteredNetBufferLists</a> function.</p>
@@ -169,7 +169,7 @@ typedef struct _NDIS_SWITCH_OPTIONAL_HANDLERS {
 <p>
 <ul>
 <li>
-<p>Allocate or free  the forwarding context. This data is stored in the out-of-band (OOB) data of a packet's  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure. For more information about the forwarding context, see <a href="NULL">Hyper-V Extensible Switch Forwarding Context</a>.</p>
+<p>Allocate or free  the forwarding context. This data is stored in the out-of-band (OOB) data of a packet's  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure. For more information about the forwarding context, see <a href="netvista.hyper_v_extensible_switch_forwarding_context">Hyper-V Extensible Switch Forwarding Context</a>.</p>
 </li>
 <li>
 <p>Get or set the destination ports that are contained in a packet's forwarding context.</p>
@@ -180,7 +180,7 @@ typedef struct _NDIS_SWITCH_OPTIONAL_HANDLERS {
 </ul>
 </p>
 
-<p>Allocate or free  the forwarding context. This data is stored in the out-of-band (OOB) data of a packet's  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure. For more information about the forwarding context, see <a href="NULL">Hyper-V Extensible Switch Forwarding Context</a>.</p>
+<p>Allocate or free  the forwarding context. This data is stored in the out-of-band (OOB) data of a packet's  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure. For more information about the forwarding context, see <a href="netvista.hyper_v_extensible_switch_forwarding_context">Hyper-V Extensible Switch Forwarding Context</a>.</p>
 
 <p>Get or set the destination ports that are contained in a packet's forwarding context.</p>
 
@@ -264,4 +264,4 @@ typedef struct _NDIS_SWITCH_OPTIONAL_HANDLERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_OPTIONAL_HANDLERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_OPTIONAL_HANDLERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

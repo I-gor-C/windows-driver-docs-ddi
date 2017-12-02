@@ -55,13 +55,13 @@ typedef struct _DXGKARGCB_ENUMHANDLECHILDREN {
 ## -struct-fields
 <dl>
 
-### -field <b>hObject</b>
+### -field hObject
 
 <dd>
 <p>[in] A handle to the parent resource of a group of child allocations. This handle is the kernel-mode handle that the Microsoft DirectX graphics kernel subsystem (which is part of <i>Dxgkrnl.sys</i>) assigned for the parent resource.</p>
 </dd>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>[in] The index into the array of allocations that belongs to the resource that <b>hObject</b> specifies.</p>

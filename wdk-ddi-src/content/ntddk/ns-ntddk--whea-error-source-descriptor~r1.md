@@ -75,80 +75,80 @@ typedef struct _WHEA_ERROR_SOURCE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The size, in bytes, of the WHEA_ERROR_SOURCE_DESCRIPTOR structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of the WHEA_ERROR_SOURCE_DESCRIPTOR structure. This member contains the value WHEA_ERROR_SOURCE_DESCRIPTOR_VERSION_10.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="..\ntddk\ne-ntddk--whea-error-source-type.md">WHEA_ERROR_SOURCE_TYPE</a>-typed value that specifies the type of the error source.</p>
 </dd>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>A <a href="..\ntddk\ne-ntddk--whea-error-source-state.md">WHEA_ERROR_SOURCE_STATE</a>-typed value that specifies the state of the error source.</p>
 </dd>
 
-### -field <b>MaxRawDataLength</b>
+### -field MaxRawDataLength
 
 <dd>
 <p>The maximum number of bytes of raw data included in a hardware error packet that is reported by this error source. This number must be large enough to include any additional platform-specific error information that is added to the hardware error packet by the PSHED or by a PSHED plug-in.</p>
 </dd>
 
-### -field <b>NumRecordsToPreallocate</b>
+### -field NumRecordsToPreallocate
 
 <dd>
 <p>The number of error records that should be pre-allocated for hardware errors that are reported by this error source.</p>
 </dd>
 
-### -field <b>MaxSectionsPerRecord</b>
+### -field MaxSectionsPerRecord
 
 <dd>
 <p>The maximum number of error record sections that are required in an error record to describe a hardware error that is reported by this error source. This number must be large enough to include any additional error record sections that are added to the error record by the PSHED or by a PSHED plug-in during the processing of the error.</p>
 </dd>
 
-### -field <b>ErrorSourceId</b>
+### -field ErrorSourceId
 
 <dd>
 <p>The identifier of the error source. This identifier is unique only on the system where the error source exists.</p>
 </dd>
 
-### -field <b>PlatformErrorSourceId</b>
+### -field PlatformErrorSourceId
 
 <dd>
 <p>The identifier of the error source as enumerated by the hardware platform. This identifier is unique only on the system where the error source exists.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bitwise OR'ed combination of flags that describes the error source. Possible flags are:</p>
 <p></p>
 <dl>
 
-### -field <a id="WHEA_ERROR_SOURCE_FLAG_DEFAULTSOURCE"></a><a id="whea_error_source_flag_defaultsource"></a>WHEA_ERROR_SOURCE_FLAG_DEFAULTSOURCE
+### -field WHEA_ERROR_SOURCE_FLAG_DEFAULTSOURCE
 
 <dd>
 <p>This flag indicates that the error source is a default error source for the type of hardware platform on which it exists.</p>
 </dd>
 
-### -field <a id="WHEA_ERROR_SOURCE_FLAG_FIRMWAREFIRST"></a><a id="whea_error_source_flag_firmwarefirst"></a>WHEA_ERROR_SOURCE_FLAG_FIRMWAREFIRST
+### -field WHEA_ERROR_SOURCE_FLAG_FIRMWAREFIRST
 
 <dd>
 <p>This flag indicates that the errors that are reported by this error source are handled by the firmware before control of the hardware error processing is passed to the operating system.</p>
 </dd>
 
-### -field <a id="WHEA_ERROR_SOURCE_FLAG_GLOBAL"></a><a id="whea_error_source_flag_global"></a>WHEA_ERROR_SOURCE_FLAG_GLOBAL
+### -field WHEA_ERROR_SOURCE_FLAG_GLOBAL
 
 <dd>
 <p>This flag indicates that the settings specified for the error source are to be applied to all of the error sources in the system that are of the same type as that specified in the <b>Type</b> member.</p>
@@ -156,67 +156,67 @@ typedef struct _WHEA_ERROR_SOURCE_DESCRIPTOR {
 </dl>
 </dd>
 
-### -field <b>Info</b>
+### -field Info
 
 <dd>
 <p>A union of descriptor structures that are specific to each different type of error source.</p>
 <dl>
 
-### -field <b>XpfMceDescriptor</b>
+### -field XpfMceDescriptor
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-xpf-mce-descriptor.md">WHEA_XPF_MCE_DESCRIPTOR</a> structure that describes an x86 or x64 processor machine check exception (MCE) error source.</p>
 </dd>
 
-### -field <b>XpfCmcDescriptor</b>
+### -field XpfCmcDescriptor
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-xpf-cmc-descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a> structure that describes an x86 or x64 processor corrected machine check (CMC) error source.</p>
 </dd>
 
-### -field <b>XpfNmiDescriptor</b>
+### -field XpfNmiDescriptor
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-xpf-nmi-descriptor.md">WHEA_XPF_NMI_DESCRIPTOR</a> structure that describes an x86 or x64 processor nonmaskable interrupt (NMI) error source.</p>
 </dd>
 
-### -field <b>IpfMcaDescriptor</b>
+### -field IpfMcaDescriptor
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-ipf-mca-descriptor.md">WHEA_IPF_MCA_DESCRIPTOR</a> structure that describes an Itanium processor machine check abort (MCA) error source.</p>
 </dd>
 
-### -field <b>IpfCmcDescriptor</b>
+### -field IpfCmcDescriptor
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-ipf-cmc-descriptor.md">WHEA_IPF_CMC_DESCRIPTOR</a> structure that describes an Itanium processor corrected machine check (CMC) error source.</p>
 </dd>
 
-### -field <b>IpfCpeDescriptor</b>
+### -field IpfCpeDescriptor
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-ipf-cpe-descriptor.md">WHEA_IPF_CPE_DESCRIPTOR</a> structure that describes an Itanium processor corrected platform error (CPE) error source.</p>
 </dd>
 
-### -field <b>AerRootportDescriptor</b>
+### -field AerRootportDescriptor
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-aer-rootport-descriptor.md">WHEA_AER_ROOTPORT_DESCRIPTOR</a> structure that describes a PCI Express (PCIe) root port error source.</p>
 </dd>
 
-### -field <b>AerEndpointDescriptor</b>
+### -field AerEndpointDescriptor
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-aer-endpoint-descriptor.md">WHEA_AER_ENDPOINT_DESCRIPTOR</a> structure that describes a PCIe endpoint error source. </p>
 </dd>
 
-### -field <b>AerBridgeDescriptor</b>
+### -field AerBridgeDescriptor
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-aer-bridge-descriptor.md">WHEA_AER_BRIDGE_DESCRIPTOR</a> structure that describes a PCIe bridge error source.</p>
 </dd>
 
-### -field <b>GenErrDescriptor</b>
+### -field GenErrDescriptor
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-generic-error-descriptor.md">WHEA_GENERIC_ERROR_DESCRIPTOR</a> structure that describes a generic error source.</p>

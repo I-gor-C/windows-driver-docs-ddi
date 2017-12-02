@@ -77,145 +77,145 @@ typedef struct _CDROM_TOC_ATIP_DATA_BLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>CdrwReferenceSpeed</b>
+### -field CdrwReferenceSpeed
 
 <dd>
 <p>Indicates the recommended write speed for the media. Values 0x00 to 0x01 are reserved. A value of 0x02 indicates a CD-ROM speed of 4X. A value of 0x03 indicates a CD-ROM speed of 8X. Values 0x04 to 0x07 are reserved. </p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>WritePower</b>
+### -field WritePower
 
 <dd>
 <p>Indicates media's recommended initial laser power setting. The high order bit must be set to 1. The setting of the other bits varies between CD-R and CD-RW media. For an explanation of the values these bits can have, see the <i>SCSI Multimedia Commands - 3</i> (MMC-3) specification. </p>
 </dd>
 
-### -field <b>True1</b>
+### -field True1
 
 <dd>
 <p>Must be set to 1. </p>
 </dd>
 
-### -field <b>Reserved4</b>
+### -field Reserved4
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>UnrestrictedUse</b>
+### -field UnrestrictedUse
 
 <dd>
 <p>Indicates, when set to 1, that the mounted disc is defined for unrestricted use. When set to zero, indicates that the mounted disc is defined for restricted use. </p>
 </dd>
 
-### -field <b>Reserved5</b>
+### -field Reserved5
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>A3Valid</b>
+### -field A3Valid
 
 <dd>
 <p>Indicates that bytes 16-18 (bytes 12-14 of the ATIP descriptor) are valid when set to 1. When set to zero, indicates that bytes 16-18 are invalid. </p>
 </dd>
 
-### -field <b>A2Valid</b>
+### -field A2Valid
 
 <dd>
 <p>Indicates that A2 values field is valid when set to 1. When set to zero, indicates that the A2 values field is invalid. </p>
 </dd>
 
-### -field <b>A1Valid</b>
+### -field A1Valid
 
 <dd>
 <p>Indicates that A3 values field is valid when set to 1. When set to zero, indicates that the A3 values field is invalid. </p>
 </dd>
 
-### -field <b>DiscSubType</b>
+### -field DiscSubType
 
 <dd>
 <p>Must be set to zero. </p>
 </dd>
 
-### -field <b>IsCdrw</b>
+### -field IsCdrw
 
 <dd>
 <p>Indicates the media is rewritable (CD-RW) when set to 1. When set to zero, indicates the media is write-once (CD-R). </p>
 </dd>
 
-### -field <b>True2</b>
+### -field True2
 
 <dd>
 <p>Must be set to 1. </p>
 </dd>
 
-### -field <b>Reserved7</b>
+### -field Reserved7
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>LeadInMsf</b>
+### -field LeadInMsf
 
 <dd>
 <p>Indicates the ATIP start time of lead-in, in terms of minutes, seconds, and frames. Valid values of the first byte are from 0x50 to 0x63. For an explanation of the values that the second and third bytes can have, see the <i>SCSI Multimedia Commands - 3</i> (MMC-3) specification. </p>
 </dd>
 
-### -field <b>Reserved8</b>
+### -field Reserved8
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>LeadOutMsf</b>
+### -field LeadOutMsf
 
 <dd>
 <p>Indicates the ATIP last possible start time of lead-out in terms of minutes, seconds, and frames. Valid values of the first byte are from 0x0 to 0x04F. For an explanation of the values that the second and third bytes can have, see the <i>SCSI Multimedia Commands - 3</i> (MMC-3) specification. </p>
 </dd>
 
-### -field <b>Reserved9</b>
+### -field Reserved9
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>A1Values</b>
+### -field A1Values
 
 <dd>
 <p>See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member. </p>
 </dd>
 
-### -field <b>Reserved10</b>
+### -field Reserved10
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>A2Values</b>
+### -field A2Values
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Reserved11</b>
+### -field Reserved11
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>A3Values</b>
+### -field A3Values
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>Reserved12</b>
+### -field Reserved12
 
 <dd>
 <p>Reserved. </p>

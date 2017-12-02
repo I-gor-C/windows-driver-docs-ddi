@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>fCopyrighted</b>
+### -field fCopyrighted
 
 <dd>
 <p>Indicates whether the stream is copyrighted. If <b>TRUE</b>, the stream is copyrighted. If <b>FALSE</b>, the stream is not copyrighted and is not subject to copy protection.</p>
 </dd>
 
-### -field <b>fOriginal</b>
+### -field fOriginal
 
 <dd>
 <p>Indicates whether the stream is an original, first-generation copy of a stream or a second-generation copy of the original. If <b>TRUE</b>, the stream is original. If <b>FALSE</b>, it is a second-generation copy.</p>

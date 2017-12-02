@@ -62,49 +62,49 @@ typedef struct _IO_INTERRUPT_MESSAGE_INFO_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>MessageAddress</b>
+### -field MessageAddress
 
 <dd>
 <p>Specifies the physical address that triggers the interrupt message.</p>
 </dd>
 
-### -field <b>TargetProcessorSet</b>
+### -field TargetProcessorSet
 
 <dd>
 <p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a> value that determines the set of processors that can receive the interrupt.</p>
 </dd>
 
-### -field <b>InterruptObject</b>
+### -field InterruptObject
 
 <dd>
 <p>Pointer to the interrupt object that represents the interrupt. </p>
 </dd>
 
-### -field <b>MessageData</b>
+### -field MessageData
 
 <dd>
 <p>Specifies the value to be written to the address specified by <b>MessageAddress</b> to trigger the interrupt.</p>
 </dd>
 
-### -field <b>Vector</b>
+### -field Vector
 
 <dd>
 <p>Specifies the interrupt vector for the interrupt. </p>
 </dd>
 
-### -field <b>Irql</b>
+### -field Irql
 
 <dd>
 <p>Specifies the device IRQL (DIRQL) for the interrupt. </p>
 </dd>
 
-### -field <b>Mode</b>
+### -field Mode
 
 <dd>
 <p>Specifies a <a href="..\wdm\ne-wdm--kinterrupt-mode.md">KINTERRUPT_MODE</a> value that determines whether the interrupt is level-sensitive or latched. </p>
 </dd>
 
-### -field <b>Polarity</b>
+### -field Polarity
 
 <dd>
 <p>Specifies a <a href="..\wdm\ne-wdm--kinterrupt-polarity.md">KINTERRUPT_POLARITY</a> value that determines whether the interrupt is active-high or active-low. </p>

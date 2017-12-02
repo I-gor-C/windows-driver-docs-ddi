@@ -54,7 +54,7 @@ PIMAGE_EXPORT_DIRECTORY AuxKlibGetImageExportDirectory(
 ## -parameters
 <dl>
 
-### -param <i>ImageBase</i> [in]
+### -param ImageBase [in]
 
 <dd>
 <p>A pointer to the base of an image, which is obtained by calling <a href="..\aux_klib\nf-aux-klib-auxklibquerymoduleinformation.md">AuxKlibQueryModuleInformation</a>. </p>

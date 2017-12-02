@@ -60,43 +60,43 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSCAMERA_PERFRAMESETTING_ITEM_EXPOSURE_TIME"></a><a id="kscamera_perframesetting_item_exposure_time"></a><b>KSCAMERA_PERFRAMESETTING_ITEM_EXPOSURE_TIME</b>
+### -field KSCAMERA_PERFRAMESETTING_ITEM_EXPOSURE_TIME
 
 <dd>
 <p>This is an exposure item type.</p>
 </dd>
 
-### -field <a id="KSCAMERA_PERFRAMESETTING_ITEM_FLASH"></a><a id="kscamera_perframesetting_item_flash"></a><b>KSCAMERA_PERFRAMESETTING_ITEM_FLASH</b>
+### -field KSCAMERA_PERFRAMESETTING_ITEM_FLASH
 
 <dd>
 <p>This is a flash item type.</p>
 </dd>
 
-### -field <a id="KSCAMERA_PERFRAMESETTING_ITEM_EXPOSURE_COMPENSATION"></a><a id="kscamera_perframesetting_item_exposure_compensation"></a><b>KSCAMERA_PERFRAMESETTING_ITEM_EXPOSURE_COMPENSATION</b>
+### -field KSCAMERA_PERFRAMESETTING_ITEM_EXPOSURE_COMPENSATION
 
 <dd>
 <p>This is an exposure compensation type.</p>
 </dd>
 
-### -field <a id="KSCAMERA_PERFRAMESETTING_ITEM_ISO"></a><a id="kscamera_perframesetting_item_iso"></a><b>KSCAMERA_PERFRAMESETTING_ITEM_ISO</b>
+### -field KSCAMERA_PERFRAMESETTING_ITEM_ISO
 
 <dd>
 <p>This is an ISO item type.</p>
 </dd>
 
-### -field <a id="KSCAMERA_PERFRAMESETTING_ITEM_FOCUS"></a><a id="kscamera_perframesetting_item_focus"></a><b>KSCAMERA_PERFRAMESETTING_ITEM_FOCUS</b>
+### -field KSCAMERA_PERFRAMESETTING_ITEM_FOCUS
 
 <dd>
 <p>This is a focus item type.</p>
 </dd>
 
-### -field <a id="KSCAMERA_PERFRAMESETTING_ITEM_PHOTOCONFIRMATION"></a><a id="kscamera_perframesetting_item_photoconfirmation"></a><b>KSCAMERA_PERFRAMESETTING_ITEM_PHOTOCONFIRMATION</b>
+### -field KSCAMERA_PERFRAMESETTING_ITEM_PHOTOCONFIRMATION
 
 <dd>
 <p>This is a photo confirmation item type.</p>
 </dd>
 
-### -field <a id="KSCAMERA_PERFRAMESETTING_ITEM_CUSTOM"></a><a id="kscamera_perframesetting_item_custom"></a><b>KSCAMERA_PERFRAMESETTING_ITEM_CUSTOM</b>
+### -field KSCAMERA_PERFRAMESETTING_ITEM_CUSTOM
 
 <dd>
 <p>This is a custom item type.</p>

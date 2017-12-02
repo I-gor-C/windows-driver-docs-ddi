@@ -7,7 +7,7 @@ old-location: wdf\wdf_pnppower_event_callbacks.htm
 old-project: wdf
 ms.assetid: 2bfd677f-f2bd-49d7-b572-d7df4de0425c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_PNPPOWER_EVENT_CALLBACKS, WDF_PNPPOWER_EVENT_CALLBACKS, *PWDF_PNPPOWER_EVENT_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,109 +73,109 @@ typedef struct _WDF_PNPPOWER_EVENT_CALLBACKS {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>EvtDeviceD0Entry</b>
+### -field EvtDeviceD0Entry
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-d0-entry.md">EvtDeviceD0Entry</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceD0EntryPostInterruptsEnabled</b>
+### -field EvtDeviceD0EntryPostInterruptsEnabled
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-d0-entry-post-interrupts-enabled.md">EvtDeviceD0EntryPostInterruptsEnabled</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceD0Exit</b>
+### -field EvtDeviceD0Exit
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-d0-exit.md">EvtDeviceD0Exit</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceD0ExitPreInterruptsDisabled</b>
+### -field EvtDeviceD0ExitPreInterruptsDisabled
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-d0-exit-pre-interrupts-disabled.md">EvtDeviceD0ExitPreInterruptsDisabled</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDevicePrepareHardware</b>
+### -field EvtDevicePrepareHardware
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-prepare-hardware.md">EvtDevicePrepareHardware</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceReleaseHardware</b>
+### -field EvtDeviceReleaseHardware
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-release-hardware.md">EvtDeviceReleaseHardware</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceSelfManagedIoCleanup</b>
+### -field EvtDeviceSelfManagedIoCleanup
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-self-managed-io-cleanup.md">EvtDeviceSelfManagedIoCleanup</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceSelfManagedIoFlush</b>
+### -field EvtDeviceSelfManagedIoFlush
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-self-managed-io-flush.md">EvtDeviceSelfManagedIoFlush</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceSelfManagedIoInit</b>
+### -field EvtDeviceSelfManagedIoInit
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-self-managed-io-init.md">EvtDeviceSelfManagedIoInit</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceSelfManagedIoSuspend</b>
+### -field EvtDeviceSelfManagedIoSuspend
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-self-managed-io-suspend.md">EvtDeviceSelfManagedIoSuspend</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceSelfManagedIoRestart</b>
+### -field EvtDeviceSelfManagedIoRestart
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-self-managed-io-restart.md">EvtDeviceSelfManagedIoRestart</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceSurpriseRemoval</b>
+### -field EvtDeviceSurpriseRemoval
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-surprise-removal.md">EvtDeviceSurpriseRemoval</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceQueryRemove</b>
+### -field EvtDeviceQueryRemove
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-query-remove.md">EvtDeviceQueryRemove</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceQueryStop</b>
+### -field EvtDeviceQueryStop
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-query-stop.md">EvtDeviceQueryStop</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceUsageNotification</b>
+### -field EvtDeviceUsageNotification
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-usage-notification.md">EvtDeviceUsageNotification</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceRelationsQuery</b>
+### -field EvtDeviceRelationsQuery
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-relations-query.md">EvtDeviceRelationsQuery</a> event callback function, or <b>NULL</b>.</p>
 </dd>
 
-### -field <b>EvtDeviceUsageNotificationEx</b>
+### -field EvtDeviceUsageNotificationEx
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-usage-notification-ex.md">EvtDeviceUsageNotificationEx</a> event callback function, or <b>NULL</b>. The <b>EvtDeviceUsageNotificationEx</b> member is available in version 1.11 and later versions of KMDF.
@@ -226,4 +226,4 @@ A driver can register either <b>EvtDeviceRelationsQuery</b> or <b>EvtDeviceUsage
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PNPPOWER_EVENT_CALLBACKS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PNPPOWER_EVENT_CALLBACKS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

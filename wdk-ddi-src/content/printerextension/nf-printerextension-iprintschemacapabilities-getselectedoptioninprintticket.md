@@ -56,13 +56,13 @@ HRESULT GetSelectedOptionInPrintTicket(
 ## -parameters
 <dl>
 
-### -param <i>pFeature</i> [in]
+### -param pFeature [in]
 
 <dd>
 <p>The specified feature.</p>
 </dd>
 
-### -param <i>ppOption</i> [out, retval]
+### -param ppOption [out, retval]
 
 <dd>
 <p>The returned option.</p>

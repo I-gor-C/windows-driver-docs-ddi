@@ -56,19 +56,19 @@ NTSTATUS BdaCreateTopology(
 ## -parameters
 <dl>
 
-### -param <i>pKSFilter</i> [in]
+### -param pKSFilter [in]
 
 <dd>
 <p>Points to the BDA filter on which to create topology.</p>
 </dd>
 
-### -param <i>InputPinId</i> [in]
+### -param InputPinId [in]
 
 <dd>
 <p>Specifies the identifier of the filter's input pin.</p>
 </dd>
 
-### -param <i>OutputPinId</i> [in]
+### -param OutputPinId [in]
 
 <dd>
 <p>Specifies the identifier of the filter's output pin.</p>

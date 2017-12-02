@@ -56,19 +56,19 @@ void KsPinRegisterPowerCallbacks(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure for which to register power callbacks. Note that the pin must actually process (be pin-centric) in order to receive power notification messages.</p>
 </dd>
 
-### -param <i>Sleep</i> [in, optional]
+### -param Sleep [in, optional]
 
 <dd>
 <p>This parameter supplies the address of a <a href="stream.avstrminipinpower">AVStrMiniPinPower</a>  function that handles sleep requests for the device. Optional.</p>
 </dd>
 
-### -param <i>Wake</i> [in, optional]
+### -param Wake [in, optional]
 
 <dd>
 <p>This parameter supplies the address of a <a href="stream.avstrminipinpower">AVStrMiniPinPower</a>  function that handles wake requests for the device. Optional.</p>

@@ -59,37 +59,37 @@ typedef enum _STORAGE_CRYPTO_ALGORITHM_ID {
 ## -enum-fields
 <dl>
 
-### -field <a id="StorageCryptoAlgorithmUnknown"></a><a id="storagecryptoalgorithmunknown"></a><a id="STORAGECRYPTOALGORITHMUNKNOWN"></a><b>StorageCryptoAlgorithmUnknown</b>
+### -field StorageCryptoAlgorithmUnknown
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="StorageCryptoAlgorithmXTSAES"></a><a id="storagecryptoalgorithmxtsaes"></a><a id="STORAGECRYPTOALGORITHMXTSAES"></a><b>StorageCryptoAlgorithmXTSAES</b>
+### -field StorageCryptoAlgorithmXTSAES
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="StorageCryptoAlgorithmBitlockerAESCBC"></a><a id="storagecryptoalgorithmbitlockeraescbc"></a><a id="STORAGECRYPTOALGORITHMBITLOCKERAESCBC"></a><b>StorageCryptoAlgorithmBitlockerAESCBC</b>
+### -field StorageCryptoAlgorithmBitlockerAESCBC
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="StorageCryptoAlgorithmAESECB"></a><a id="storagecryptoalgorithmaesecb"></a><a id="STORAGECRYPTOALGORITHMAESECB"></a><b>StorageCryptoAlgorithmAESECB</b>
+### -field StorageCryptoAlgorithmAESECB
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="StorageCryptoAlgorithmESSIVAESCBC"></a><a id="storagecryptoalgorithmessivaescbc"></a><a id="STORAGECRYPTOALGORITHMESSIVAESCBC"></a><b>StorageCryptoAlgorithmESSIVAESCBC</b>
+### -field StorageCryptoAlgorithmESSIVAESCBC
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <a id="StorageCryptoAlgorithmMax"></a><a id="storagecryptoalgorithmmax"></a><a id="STORAGECRYPTOALGORITHMMAX"></a><b>StorageCryptoAlgorithmMax</b>
+### -field StorageCryptoAlgorithmMax
 
 <dd>
 <p>Reserved for system use.</p>

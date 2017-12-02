@@ -59,37 +59,37 @@ typedef struct _DXGKARG_RECOMMENDFUNCTIONALVIDPN {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfVidPnTargets</b>
+### -field NumberOfVidPnTargets
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>pVidPnTargetPrioritizationVector</b>
+### -field pVidPnTargetPrioritizationVector
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>hRecommendedFunctionalVidPn</b>
+### -field hRecommendedFunctionalVidPn
 
 <dd>
 <p>A handle, provided by the caller, to an empty VidPN object. <i>DxgkDdiRecommendFunctionalVidPn</i> must add a path (source-target pair) to the VidPN's topology and must pin modes on the path's source and target. For information about adding paths to a topology and creating mode sets for video present sources and targets, see <a href="https://msdn.microsoft.com/5dedac8c-9a99-4b3a-81be-39819135cd97">VidPN Objects and Interfaces</a>.</p>
 </dd>
 
-### -field <b>RequestReason</b>
+### -field RequestReason
 
 <dd>
 <p>A <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-recommendfunctionalvidpn-reason.md">DXGK_RECOMMENDFUNCTIONALVIDPN_REASON</a> value that indicates why the caller is requesting a functional VidPN.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>A pointer to a buffer that contains private data that is passed from a user-mode application to the display miniport driver.</p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>The size, in bytes, of the data block pointed to by <i>pPrivateDriverData</i>.</p>

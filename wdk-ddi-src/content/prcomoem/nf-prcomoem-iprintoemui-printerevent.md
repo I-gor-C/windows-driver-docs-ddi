@@ -58,25 +58,25 @@ HRESULT PrinterEvent(
 ## -parameters
 <dl>
 
-### -param <i>pPrinterName</i> 
+### -param pPrinterName 
 
 <dd>
 <p>Caller-supplied pointer to a NULL-terminated printer name string. The string can identify a local printer ("<i>PrinterName</i>") or remote printer ("\\<i>Machine</i>\<i>PrinterName</i>").</p>
 </dd>
 
-### -param <i>iDriverEvent</i> 
+### -param iDriverEvent 
 
 <dd>
 <p>Caller-supplied value identifying the event that has occurred. For a list of valid values, see <a href="..\winddiui\nf-winddiui-drvprinterevent.md">DrvPrinterEvent</a>.</p>
 </dd>
 
-### -param <i>dwFlags</i> 
+### -param dwFlags 
 
 <dd>
 <p>Caller-supplied flags. For a list of valid flags, see <b>DrvPrinterEvent</b>.</p>
 </dd>
 
-### -param <i>lParam</i> 
+### -param lParam 
 
 <dd>
 <p>Caller-supplied event-specific parameter. For more information, see <b>DrvPrinterEvent</b>.</p>
@@ -101,7 +101,7 @@ HRESULT PrinterEvent(
 
 <p>If <code>IPrintOemUI::PrinterEvent</code> methods are exported by multiple user interface plug-ins, the methods are called in the order that the plug-ins are specified for installation.</p>
 
-<p>For more information about creating and installing user interface plug-ins, see <a href="NULL">Customizing Microsoft's Printer Drivers</a>.</p>
+<p>For more information about creating and installing user interface plug-ins, see <a href="https://msdn.microsoft.com/b7761209-1f6f-4288-af47-4ed855c2e629">Customizing Microsoft's Printer Drivers</a>.</p>
 
 ## -requirements
 <table>

@@ -60,10 +60,10 @@ typedef EVT_UFX_DEVICE_PORT_DETECT PFN_UFX_DEVICE_PORT_DETECT;
 ## -parameters
 <dl>
 
-### -param <i>UfxDevice</i> [in]
+### -param UfxDevice [in]
 
 <dd>
-<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.</p>
+<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>.</p>
 </dd>
 </dl>
 
@@ -71,9 +71,9 @@ typedef EVT_UFX_DEVICE_PORT_DETECT PFN_UFX_DEVICE_PORT_DETECT;
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The client driver for the function host controller registers its <i>EVT_UFX_DEVICE_PORT_DETECT</i> implementation with the USB function class extension (UFX) by calling the <a href="buses.ufxdevicecreate">UfxDeviceCreate</a> method.</p>
+<p>The client driver for the function host controller registers its <i>EVT_UFX_DEVICE_PORT_DETECT</i> implementation with the USB function class extension (UFX) by calling the <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a> method.</p>
 
-<p>The client driver must indicate completion of port detection by calling the <a href="buses.ufxdeviceportdetectcomplete">UfxDevicePortDetectComplete</a> or <a href="buses.ufxdeviceportdetectcompleteex">UfxDevicePortDetectCompleteEx</a> methods.</p>
+<p>The client driver must indicate completion of port detection by calling the <a href="..\ufxclient\nf-ufxclient-ufxdeviceportdetectcomplete.md">UfxDevicePortDetectComplete</a> or <a href="..\ufxclient\nf-ufxclient-ufxdeviceportdetectcompleteex.md">UfxDevicePortDetectCompleteEx</a> methods.</p>
 
 ## -requirements
 <table>
@@ -116,10 +116,10 @@ typedef EVT_UFX_DEVICE_PORT_DETECT PFN_UFX_DEVICE_PORT_DETECT;
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ufxdevicecreate">UfxDeviceCreate</a>
+<a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>
 </dt>
 <dt>
-<a href="buses.ufxdeviceeventcomplete">UfxDeviceEventComplete</a>
+<a href="..\ufxclient\nf-ufxclient-ufxdeviceeventcomplete.md">UfxDeviceEventComplete</a>
 </dt>
 </dl>
 <p> </p>

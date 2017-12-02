@@ -63,61 +63,61 @@ typedef struct _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>ulNewTVProtectionStandard</b>
+### -field ulNewTVProtectionStandard
 
 <dd>
 <p>A <a href="..\d3dkmdt\ne-d3dkmdt--dxgkmdt-opm-protection-standard.md">DXGKMDT_OPM_PROTECTION_STANDARD</a>-typed value that indicates the type of television signal to set ACP and CGMS-A signaling for on the protected output. </p>
 </dd>
 
-### -field <b>ulAspectRatioChangeMask1</b>
+### -field ulAspectRatioChangeMask1
 
 <dd>
 <p>A mask value that indicates the valid bits to change in the following <b>ulAspectRatioData1</b> member.</p>
 </dd>
 
-### -field <b>ulAspectRatioData1</b>
+### -field ulAspectRatioData1
 
 <dd>
 <p>32-bit data that indicates the aspect ratio value to set for the active protection standard.</p>
 </dd>
 
-### -field <b>ulAspectRatioChangeMask2</b>
+### -field ulAspectRatioChangeMask2
 
 <dd>
 <p>A mask value that indicates the valid bits to change in the following <b>ulAspectRatioData2</b> member. </p>
 </dd>
 
-### -field <b>ulAspectRatioData2</b>
+### -field ulAspectRatioData2
 
 <dd>
 <p>32-bit data for additional aspect ratio-related data for specific protection standards. This data can be used to express End and Q0 values for EIA-608-B, or active format description for CEA-805-A Type B packets. </p>
 </dd>
 
-### -field <b>ulAspectRatioChangeMask3</b>
+### -field ulAspectRatioChangeMask3
 
 <dd>
 <p>A mask value that indicates the valid bits to change in the following <b>ulAspectRatioData3</b> member. </p>
 </dd>
 
-### -field <b>ulAspectRatioData3</b>
+### -field ulAspectRatioData3
 
 <dd>
 <p>32-bit data for additional aspect ratio-related data for specific protection standards. This data can be used to express End and Q0 values for EIA-608-B, or active format description for CEA-805-A Type B packets. </p>
 </dd>
 
-### -field <b>ulReserved</b>
+### -field ulReserved
 
 <dd>
 <p>Reserved. Must be set to zero. </p>
 </dd>
 
-### -field <b>ulReserved2</b>
+### -field ulReserved2
 
 <dd>
 <p>Reserved. Must be set to zero. </p>
 </dd>
 
-### -field <b>ulReserved3</b>
+### -field ulReserved3
 
 <dd>
 <p>Reserved. Must be set to zero. </p>

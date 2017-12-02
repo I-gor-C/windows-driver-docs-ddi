@@ -54,7 +54,7 @@ HBA_UINT32 HBA_API HBA_GetWrapperLibraryAttributes(
 ## -parameters
 <dl>
 
-### -param <i>Attributes</i> [out]
+### -param Attributes [out]
 
 <dd>
 <p>Pointer, on return, to a structure of type <a href="..\hbaapi\ns-hbaapi-hba-libraryattributes.md">HBA_LibraryAttributes</a> that holds the attributes of the wrapper library.</p>

@@ -7,7 +7,7 @@ old-location: wdf\wdf_interrupt_policy_umdf.htm
 old-project: wdf
 ms.assetid: 92E2A992-8A0B-4E0F-B615-DC6E30E4A227
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,37 +61,37 @@ typedef enum _WDF_INTERRUPT_POLICY {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfIrqPolicyMachineDefault"></a><a id="wdfirqpolicymachinedefault"></a><a id="WDFIRQPOLICYMACHINEDEFAULT"></a><b>WdfIrqPolicyMachineDefault</b>
+### -field WdfIrqPolicyMachineDefault
 
 <dd>
 <p>Use the system's default affinity policy.</p>
 </dd>
 
-### -field <a id="WdfIrqPolicyAllCloseProcessors"></a><a id="wdfirqpolicyallcloseprocessors"></a><a id="WDFIRQPOLICYALLCLOSEPROCESSORS"></a><b>WdfIrqPolicyAllCloseProcessors</b>
+### -field WdfIrqPolicyAllCloseProcessors
 
 <dd>
 <p>For NUMA systems, the PnP manager should assign the device's interrupts to processors that are close to the device. For non-NUMA systems, specifying <b>WdfIrqPolicyAllCloseProcessors</b> is the same as specifying <b>WdfIrqPolicyAllProcessorsInMachine</b>.</p>
 </dd>
 
-### -field <a id="WdfIrqPolicyOneCloseProcessor"></a><a id="wdfirqpolicyonecloseprocessor"></a><a id="WDFIRQPOLICYONECLOSEPROCESSOR"></a><b>WdfIrqPolicyOneCloseProcessor</b>
+### -field WdfIrqPolicyOneCloseProcessor
 
 <dd>
 <p>For NUMA systems, the PnP manager should assign one interrupt to a processor that is close to the device. For non-NUMA systems, the PnP manager can assign the interrupt to any processor.</p>
 </dd>
 
-### -field <a id="WdfIrqPolicyAllProcessorsInMachine"></a><a id="wdfirqpolicyallprocessorsinmachine"></a><a id="WDFIRQPOLICYALLPROCESSORSINMACHINE"></a><b>WdfIrqPolicyAllProcessorsInMachine</b>
+### -field WdfIrqPolicyAllProcessorsInMachine
 
 <dd>
 <p>The PnP manager can assign a device's interrupts to any of the system's processors.</p>
 </dd>
 
-### -field <a id="WdfIrqPolicySpecifiedProcessors"></a><a id="wdfirqpolicyspecifiedprocessors"></a><a id="WDFIRQPOLICYSPECIFIEDPROCESSORS"></a><b>WdfIrqPolicySpecifiedProcessors</b>
+### -field WdfIrqPolicySpecifiedProcessors
 
 <dd>
 <p>The PnP manager should assign the device's interrupts only to specified processors.</p>
 </dd>
 
-### -field <a id="WdfIrqPolicySpreadMessagesAcrossAllProcessors"></a><a id="wdfirqpolicyspreadmessagesacrossallprocessors"></a><a id="WDFIRQPOLICYSPREADMESSAGESACROSSALLPROCESSORS"></a><b>WdfIrqPolicySpreadMessagesAcrossAllProcessors</b>
+### -field WdfIrqPolicySpreadMessagesAcrossAllProcessors
 
 <dd>
 <p>The PnP manager should assign different message-based interrupts to different processors, if possible. </p>
@@ -139,4 +139,4 @@ typedef enum _WDF_INTERRUPT_POLICY {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_INTERRUPT_POLICY enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_INTERRUPT_POLICY enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

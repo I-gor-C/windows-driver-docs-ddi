@@ -62,19 +62,19 @@ BOOL APIENTRY UNIFONTOBJ_GetInfo(
 ## -parameters
 <dl>
 
-### -param <i>pUFObj</i> 
+### -param pUFObj 
 
 <dd>
 <p>Pointer to the <a href="..\printoem\ns-printoem--unifontobj.md">UNIFONTOBJ</a> structure received by the function that is making the callback to <b>UNIFONTOBJ_GetInfo</b>. Supplied by the caller.</p>
 </dd>
 
-### -param <i>dwInfoID</i> 
+### -param dwInfoID 
 
 <dd>
 <p>Specifies the type of structure pointed to by <i>pData</i>. Supplied by the caller. See the following table.</p>
 </dd>
 
-### -param <i>pData</i> 
+### -param pData 
 
 <dd>
 <p>Pointer to a structure, as indicated in the following table. Supplied by the caller.</p>
@@ -152,13 +152,13 @@ BOOL APIENTRY UNIFONTOBJ_GetInfo(
 </dl>
 </dd>
 
-### -param <i>dwDataSize</i> 
+### -param dwDataSize 
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer pointed to by <i>pData</i>. Supplied by the caller.</p>
 </dd>
 
-### -param <i>pcbNeeded</i> 
+### -param pcbNeeded 
 
 <dd>
 <p>Pointer to a location that receives the minimum buffer size, in bytes, required to contain the structure identified by <i>dwInfoID</i>. Supplied by the caller.</p>
@@ -169,7 +169,7 @@ BOOL APIENTRY UNIFONTOBJ_GetInfo(
 <p>If the operation succeeds, the function returns <b>TRUE</b>. Otherwise it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>The <b>UNIFONTOBJ_GetInfo</b> callback function allows a <a href="https://msdn.microsoft.com/e55ca083-2790-4929-9e5b-6fce49eb0404">rendering plug-in</a> to call back into Unidrv to obtain font or glyph information from GDI, needed for handling <a href="NULL">customized font management</a> operations.</p>
+<p>The <b>UNIFONTOBJ_GetInfo</b> callback function allows a <a href="https://msdn.microsoft.com/e55ca083-2790-4929-9e5b-6fce49eb0404">rendering plug-in</a> to call back into Unidrv to obtain font or glyph information from GDI, needed for handling <a href="https://msdn.microsoft.com/6e643703-ace1-4660-990c-3a9ca735829d">customized font management</a> operations.</p>
 
 <p>A rendering plug-in receives the <b>UNIFONTOBJ_GetInfo</b> function's address in the <a href="..\printoem\ns-printoem--unifontobj.md">UNIFONTOBJ</a> structure that is passed to the font customization methods.</p>
 
@@ -209,7 +209,7 @@ BOOL APIENTRY UNIFONTOBJ_GetInfo(
 <a href="..\printoem\ns-printoem--getinfo-stdvar.md">GETINFO_STDVAR</a>
 </p>
 
-<p>The current value for one or more of Unidrv's <a href="NULL">standard variables</a>.</p>
+<p>The current value for one or more of Unidrv's <a href="https://msdn.microsoft.com/d3f85c0f-7387-4301-8b1e-904471aed4b0">standard variables</a>.</p>
 
 <p>If the buffer described by <i>pData</i> and <i>dwDataSize</i> is too small to receive the structure indicated by <i>dwInfoID</i>, the function loads the required buffer size into the location pointed by <i>pcbNeeded</i> and returns <b>FALSE</b>.</p>
 

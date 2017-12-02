@@ -62,49 +62,49 @@ typedef struct _DOCUMENTPROPERTYHEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd>
 <p>Size, in bytes, of the DOCUMENTPROPERTYHEADER structure.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Must be zero.</p>
 </dd>
 
-### -field <b>hPrinter</b>
+### -field hPrinter
 
 <dd>
 <p>Printer handle.</p>
 </dd>
 
-### -field <b>pszPrinterName</b>
+### -field pszPrinterName
 
 <dd>
 <p>Pointer to a NULL-terminated string representing the printer's name.</p>
 </dd>
 
-### -field <b>pdmIn</b>
+### -field pdmIn
 
 <dd>
 <p>Pointer to an input <a href="display.devmodew">DEVMODEW</a> structure that the <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a> function should copy into the printer interface DLL's internal DEVMODEW structure (before the property sheet is displayed, if applicable). If DM_IN_BUFFER or DM_MODIFY is not set in <b>fMode</b>, this pointer is <b>NULL</b>.</p>
 </dd>
 
-### -field <b>pdmOut</b>
+### -field pdmOut
 
 <dd>
 <p>Pointer to an output DEVMODEW structure into which the <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a> function should copy the printer interface DLL's internal DEVMODEW contents (after the property sheet has been displayed, if applicable). If DM_OUT_BUFFER or DM_COPY is not set in <b>fMode</b>, this pointer is <b>NULL</b>.</p>
 </dd>
 
-### -field <b>cbOut</b>
+### -field cbOut
 
 <dd>
 <p>Specifies the size, in bytes, of the buffer to which <b>pdmOut</b> points. For more information, see the following Remarks section.</p>
 </dd>
 
-### -field <b>fMode</b>
+### -field fMode
 
 <dd>
 <p>One or more of the bit flags listed in the following table. (The flags are defined in header files Wingdi.h and Winddiui.h.)</p>

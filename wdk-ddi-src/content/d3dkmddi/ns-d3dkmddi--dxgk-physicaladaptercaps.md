@@ -58,25 +58,25 @@ typedef struct _DXGK_PHYSICALADAPTERCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>NumExecutionNodes</b>
+### -field NumExecutionNodes
 
 <dd>
 <p>The number of execution nodes in the physical adapter.</p>
 </dd>
 
-### -field <b>PagingNodeIndex</b>
+### -field PagingNodeIndex
 
 <dd>
 <p>Index of the paging node for the physical adapter.</p>
 </dd>
 
-### -field <b>DxgkPhysicalAdapterHandle</b>
+### -field DxgkPhysicalAdapterHandle
 
 <dd>
 <p>Handle, which is passed to the kernel mode driver as <b>DXGKRNL_INTERFACE::DeviceHandle</b> in <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <table>
@@ -87,10 +87,10 @@ typedef struct _DXGK_PHYSICALADAPTERCAPS {
 <tr>
 <td width="40%"><a id="Flags.IoMmuSupported"></a><a id="flags.iommusupported"></a><a id="FLAGS.IOMMUSUPPORTED"></a><dl>
 
-### -field <b>Flags.IoMmuSupported</b>
+### -field Flags.IoMmuSupported
 
 
-### -field <b>TRUE</b>
+### -field TRUE
 
 </dl>
 </td>
@@ -101,10 +101,10 @@ typedef struct _DXGK_PHYSICALADAPTERCAPS {
 <tr>
 <td width="40%"><a id="Flags.GpuMmuSupported"></a><a id="flags.gpummusupported"></a><a id="FLAGS.GPUMMUSUPPORTED"></a><dl>
 
-### -field <b>Flags.GpuMmuSupported</b>
+### -field Flags.GpuMmuSupported
 
 
-### -field <b>TRUE</b>
+### -field TRUE
 
 </dl>
 </td>
@@ -115,10 +115,10 @@ typedef struct _DXGK_PHYSICALADAPTERCAPS {
 <tr>
 <td width="40%"><a id="Flags.MovePagingSupported"></a><a id="flags.movepagingsupported"></a><a id="FLAGS.MOVEPAGINGSUPPORTED"></a><dl>
 
-### -field <b>Flags.MovePagingSupported</b>
+### -field Flags.MovePagingSupported
 
 
-### -field <b>TRUE</b>
+### -field TRUE
 
 </dl>
 </td>
@@ -129,10 +129,10 @@ typedef struct _DXGK_PHYSICALADAPTERCAPS {
 <tr>
 <td width="40%"><a id="Flags.VPRPagingContextRequired"></a><a id="flags.vprpagingcontextrequired"></a><a id="FLAGS.VPRPAGINGCONTEXTREQUIRED"></a><dl>
 
-### -field <b>Flags.VPRPagingContextRequired</b>
+### -field Flags.VPRPagingContextRequired
 
 
-### -field <b>TRUE</b>
+### -field TRUE
 
 </dl>
 </td>
@@ -144,7 +144,7 @@ typedef struct _DXGK_PHYSICALADAPTERCAPS {
 <p> </p>
 </dd>
 
-### -field <b>VPRPagingNode</b>
+### -field VPRPagingNode
 
 <dd>
 <p>Index of the node to be used for move paging in  the VPR.</p>

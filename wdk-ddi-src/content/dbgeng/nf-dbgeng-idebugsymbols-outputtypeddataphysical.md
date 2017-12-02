@@ -7,7 +7,7 @@ old-location: debugger\outputtypeddataphysical.htm
 old-project: debugger
 ms.assetid: 0c2ae1ff-bbf1-462f-b9ab-49f74cf12fae
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugSymbols, OutputTypedDataPhysical, IDebugSymbols::OutputTypedDataPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,39 +58,39 @@ HRESULT OutputTypedDataPhysical(
 ## -parameters
 <dl>
 
-### -param <i>OutputControl</i> [in]
+### -param OutputControl [in]
 
 <dd>
-<p>Specifies the output control used to determine which output callbacks can receive the output.  See <a href="debugger.debug_outctl_xxx">DEBUG_OUTCTL_XXX</a> for possible values.</p>
+<p>Specifies the output control used to determine which output callbacks can receive the output.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff541517">DEBUG_OUTCTL_XXX</a> for possible values.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>Specifies the physical address in the target computer's memory of the variable.</p>
 </dd>
 
-### -param <i>Module</i> [in]
+### -param Module [in]
 
 <dd>
 <p>Specifies the base address of the module containing the type of the variable.</p>
 </dd>
 
-### -param <i>TypeId</i> [in]
+### -param TypeId [in]
 
 <dd>
 <p>Specifies the type ID of the type of the variable.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
-<p>Specifies the bit-set containing the formatting options.  See <a href="debugger.debug_typeopts_xxx">DEBUG_TYPEOPTS_XXX</a> for possible values.</p>
+<p>Specifies the bit-set containing the formatting options.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff541712">DEBUG_TYPEOPTS_XXX</a> for possible values.</p>
 </dd>
 </dl>
 
 ## -returns
-<p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p><dl>
+<p>This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p><dl>
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p>
 

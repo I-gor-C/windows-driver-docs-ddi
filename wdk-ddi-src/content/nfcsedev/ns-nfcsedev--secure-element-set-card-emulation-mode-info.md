@@ -55,13 +55,13 @@ typedef struct _SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>guidSecureElementId</b>
+### -field guidSecureElementId
 
 <dd>
 <p>This is a unique identifier for the secure element.</p>
 </dd>
 
-### -field <b>eMode</b>
+### -field eMode
 
 <dd>
 <p>Card emulation mode: off, power dependent, or power-independent.

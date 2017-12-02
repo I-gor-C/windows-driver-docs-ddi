@@ -64,13 +64,13 @@ typedef enum _D3DKMDT_GDISURFACETYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_GDISURFACE_INVALID"></a><a id="d3dkmdt_gdisurface_invalid"></a><b>D3DKMDT_GDISURFACE_INVALID</b>
+### -field D3DKMDT_GDISURFACE_INVALID
 
 <dd>
 <p>The driver should not see this value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_GDISURFACE_TEXTURE"></a><a id="d3dkmdt_gdisurface_texture"></a><b>D3DKMDT_GDISURFACE_TEXTURE</b>
+### -field D3DKMDT_GDISURFACE_TEXTURE
 
 <dd>
 <p>Indicates that the surface has the following properties:</p>
@@ -93,7 +93,7 @@ typedef enum _D3DKMDT_GDISURFACETYPE {
 </ul>
 </dd>
 
-### -field <a id="D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE"></a><a id="d3dkmdt_gdisurface_staging_cpuvisible"></a><b>D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE</b>
+### -field D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE
 
 <dd>
 <p>Indicates that the surface has the following properties:</p>
@@ -116,7 +116,7 @@ typedef enum _D3DKMDT_GDISURFACETYPE {
 </ul>
 </dd>
 
-### -field <a id="D3DKMDT_GDISURFACE_STAGING"></a><a id="d3dkmdt_gdisurface_staging"></a><b>D3DKMDT_GDISURFACE_STAGING</b>
+### -field D3DKMDT_GDISURFACE_STAGING
 
 <dd>
 <p>Indicates that the surface has the following properties:</p>
@@ -133,7 +133,7 @@ typedef enum _D3DKMDT_GDISURFACETYPE {
 </ul>
 </dd>
 
-### -field <a id="D3DKMDT_GDISURFACE_LOOKUPTABLE"></a><a id="d3dkmdt_gdisurface_lookuptable"></a><b>D3DKMDT_GDISURFACE_LOOKUPTABLE</b>
+### -field D3DKMDT_GDISURFACE_LOOKUPTABLE
 
 <dd>
 <p>Indicates that the surface has the following properties:</p>
@@ -153,7 +153,7 @@ typedef enum _D3DKMDT_GDISURFACETYPE {
 </ul>
 </dd>
 
-### -field <a id="D3DKMDT_GDISURFACE_EXISTINGSYSMEM"></a><a id="d3dkmdt_gdisurface_existingsysmem"></a><b>D3DKMDT_GDISURFACE_EXISTINGSYSMEM</b>
+### -field D3DKMDT_GDISURFACE_EXISTINGSYSMEM
 
 <dd>
 <p>Indicates that the surface has the following properties:</p>
@@ -173,14 +173,14 @@ typedef enum _D3DKMDT_GDISURFACETYPE {
 </ul>
 </dd>
 
-### -field <a id="D3DKMDT_GDISURFACE_TEXTURE_CPUVISIBLE"></a><a id="d3dkmdt_gdisurface_texture_cpuvisible"></a><b>D3DKMDT_GDISURFACE_TEXTURE_CPUVISIBLE</b>
+### -field D3DKMDT_GDISURFACE_TEXTURE_CPUVISIBLE
 
 <dd>
 <p>Reserved for system use. Do not use this value in your driver.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <a id="D3DKMDT_GDISURFACE_TEXTURE_CROSSADAPTER"></a><a id="d3dkmdt_gdisurface_texture_crossadapter"></a><b>D3DKMDT_GDISURFACE_TEXTURE_CROSSADAPTER</b>
+### -field D3DKMDT_GDISURFACE_TEXTURE_CROSSADAPTER
 
 <dd>
 <p>Indicates that the surface has the following properties:</p>
@@ -198,7 +198,7 @@ typedef enum _D3DKMDT_GDISURFACETYPE {
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <a id="D3DKMDT_GDISURFACE_TEXTURE_CPUVISIBLE_CROSSADAPTER"></a><a id="d3dkmdt_gdisurface_texture_cpuvisible_crossadapter"></a><b>D3DKMDT_GDISURFACE_TEXTURE_CPUVISIBLE_CROSSADAPTER</b>
+### -field D3DKMDT_GDISURFACE_TEXTURE_CPUVISIBLE_CROSSADAPTER
 
 <dd>
 <p>Reserved for system use. Do not use this value in your driver.</p>

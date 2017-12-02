@@ -58,31 +58,31 @@ typedef enum D3D10_DDI_MAP {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D10_DDI_MAP_READ"></a><a id="d3d10_ddi_map_read"></a><b>D3D10_DDI_MAP_READ</b>
+### -field D3D10_DDI_MAP_READ
 
 <dd>
 <p>Read access is requested for the CPU to the subresource.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_MAP_WRITE"></a><a id="d3d10_ddi_map_write"></a><b>D3D10_DDI_MAP_WRITE</b>
+### -field D3D10_DDI_MAP_WRITE
 
 <dd>
 <p>Write access is requested for the CPU to the subresource.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_MAP_READWRITE"></a><a id="d3d10_ddi_map_readwrite"></a><b>D3D10_DDI_MAP_READWRITE</b>
+### -field D3D10_DDI_MAP_READWRITE
 
 <dd>
 <p>Read and write access is requested for the CPU to the subresource.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_MAP_WRITE_DISCARD"></a><a id="d3d10_ddi_map_write_discard"></a><b>D3D10_DDI_MAP_WRITE_DISCARD</b>
+### -field D3D10_DDI_MAP_WRITE_DISCARD
 
 <dd>
 <p>Write access is requested for the CPU to the subresource. However, the contents of the subresource become undefined during this operation because the requesting application might completely write over the entire region of memory. You can use this access level only with dynamic resources. </p>
 </dd>
 
-### -field <a id="D3D10_DDI_MAP_WRITE_NOOVERWRITE"></a><a id="d3d10_ddi_map_write_nooverwrite"></a><b>D3D10_DDI_MAP_WRITE_NOOVERWRITE</b>
+### -field D3D10_DDI_MAP_WRITE_NOOVERWRITE
 
 <dd>
 <p>Write access is requested for the CPU to the subresource. However, the requesting application will not overwrite any data that was previously used by the GPU. You can use this access level only with dynamic vertex and index buffers. </p>

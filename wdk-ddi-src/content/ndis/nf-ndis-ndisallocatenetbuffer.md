@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatenetbuffer.htm
 old-project: netvista
 ms.assetid: b10c5a4b-fb43-4880-9641-ff2dcf0e5cb3
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisAllocateNetBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ PNET_BUFFER NdisAllocateNetBuffer(
 ## -parameters
 <dl>
 
-### -param <i>PoolHandle</i> [in]
+### -param PoolHandle [in]
 
 <dd>
 <p>A <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure pool handle that was previously returned from a call to 
@@ -68,14 +68,14 @@ PNET_BUFFER NdisAllocateNetBuffer(
      NdisAllocateNetBufferPool</a>.</p>
 </dd>
 
-### -param <i>MdlChain</i> [in, optional]
+### -param MdlChain [in, optional]
 
 <dd>
 <p>A pointer to an MDL chain that NDIS uses to initialize the new <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure. 
      <i>MdlChain</i> can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>DataOffset</i> [in]
+### -param DataOffset [in]
 
 <dd>
 <p>The initial offset, in bytes, from the start of the buffer to the start of the 
@@ -86,7 +86,7 @@ PNET_BUFFER NdisAllocateNetBuffer(
      <i>DataOffset</i> must be 0.</p>
 </dd>
 
-### -param <i>DataLength</i> [in]
+### -param DataLength [in]
 
 <dd>
 <p>The length of the 
@@ -199,4 +199,4 @@ PNET_BUFFER NdisAllocateNetBuffer(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBuffer function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBuffer function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

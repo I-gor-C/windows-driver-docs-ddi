@@ -57,25 +57,25 @@ typedef struct _KS_DVD_YUV {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved. Do not use.</p>
 </dd>
 
-### -field <b>Y</b>
+### -field Y
 
 <dd>
 <p>Indicates the luminance (brightness) component of the color.</p>
 </dd>
 
-### -field <b>V</b>
+### -field V
 
 <dd>
 <p>Indicates the color-red (chrominance) component of the color.</p>
 </dd>
 
-### -field <b>U</b>
+### -field U
 
 <dd>
 <p>Indicates the color-blue (chrominance) component of the color.</p>

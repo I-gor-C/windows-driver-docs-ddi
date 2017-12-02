@@ -7,7 +7,7 @@ old-location: netvista\dot11_privacy_exemption.htm
 old-project: netvista
 ms.assetid: ee4499d0-3275-419d-9ab2-89edd77e0374
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_PRIVACY_EXEMPTION, DOT11_PRIVACY_EXEMPTION, *PDOT11_PRIVACY_EXEMPTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ typedef struct DOT11_PRIVACY_EXEMPTION {
 ## -struct-fields
 <dl>
 
-### -field <b>usEtherType</b>
+### -field usEtherType
 
 <dd>
 <p>The value of the IEEE EtherType in big-endian byte order.</p>
 </dd>
 
-### -field <b>usExemptionActionType</b>
+### -field usExemptionActionType
 
 <dd>
 <p>The type of exemption for the specified EtherType. The following exemption types are defined:
@@ -69,14 +69,14 @@ typedef struct DOT11_PRIVACY_EXEMPTION {
 <p></p>
 <dl>
 
-### -field <a id="DOT11_EXEMPT_ALWAYS"></a><a id="dot11_exempt_always"></a>DOT11_EXEMPT_ALWAYS
+### -field DOT11_EXEMPT_ALWAYS
 
 <dd>
 <p>The 802.11 station must discard the received packet if the Protected Frame subfield of the Frame
        Control field in the 802.11 MAC header is set to one.</p>
 </dd>
 
-### -field <a id="DOT11_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE"></a><a id="dot11_exempt_on_key_mapping_key_unavailable"></a>DOT11_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE
+### -field DOT11_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE
 
 <dd>
 <p>The 802.11 station must discard the received packet if a key-mapping key for the source MAC
@@ -86,7 +86,7 @@ typedef struct DOT11_PRIVACY_EXEMPTION {
 </dl>
 </dd>
 
-### -field <b>usExemptionPacketType</b>
+### -field usExemptionPacketType
 
 <dd>
 <p>The type of packet that the exemption for the specified EtherType applies to. The following packet
@@ -95,19 +95,19 @@ typedef struct DOT11_PRIVACY_EXEMPTION {
 <p></p>
 <dl>
 
-### -field <a id="DOT11_EXEMPT_UNICAST"></a><a id="dot11_exempt_unicast"></a>DOT11_EXEMPT_UNICAST
+### -field DOT11_EXEMPT_UNICAST
 
 <dd>
 <p>Exempt only unicast packets.</p>
 </dd>
 
-### -field <a id="DOT11_EXEMPT_MULTICAST"></a><a id="dot11_exempt_multicast"></a>DOT11_EXEMPT_MULTICAST
+### -field DOT11_EXEMPT_MULTICAST
 
 <dd>
 <p>Exempt only multicast or broadcast packets.</p>
 </dd>
 
-### -field <a id="DOT11_EXEMPT_BOTH"></a><a id="dot11_exempt_both"></a>DOT11_EXEMPT_BOTH
+### -field DOT11_EXEMPT_BOTH
 
 <dd>
 <p>Exempt all packet types.</p>
@@ -155,4 +155,4 @@ typedef struct DOT11_PRIVACY_EXEMPTION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PRIVACY_EXEMPTION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PRIVACY_EXEMPTION structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

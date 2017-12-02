@@ -58,31 +58,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_CAPTURE_ALLOC_INVALID"></a><a id="ks_capture_alloc_invalid"></a><b>KS_CAPTURE_ALLOC_INVALID</b>
+### -field KS_CAPTURE_ALLOC_INVALID
 
 <dd>
 <p>Invalid memory surface.</p>
 </dd>
 
-### -field <a id="KS_CAPTURE_ALLOC_SYSTEM"></a><a id="ks_capture_alloc_system"></a><b>KS_CAPTURE_ALLOC_SYSTEM</b>
+### -field KS_CAPTURE_ALLOC_SYSTEM
 
 <dd>
 <p>Not currently supported. </p>
 </dd>
 
-### -field <a id="KS_CAPTURE_ALLOC_VRAM"></a><a id="ks_capture_alloc_vram"></a><b>KS_CAPTURE_ALLOC_VRAM</b>
+### -field KS_CAPTURE_ALLOC_VRAM
 
 <dd>
 <p>Identifies a surface in display memory.</p>
 </dd>
 
-### -field <a id="KS_CAPTURE_ALLOC_SYSTEM_AGP"></a><a id="ks_capture_alloc_system_agp"></a><b>KS_CAPTURE_ALLOC_SYSTEM_AGP</b>
+### -field KS_CAPTURE_ALLOC_SYSTEM_AGP
 
 <dd>
 <p>Identifies a surface in system memory that is tagged as AGP accessible. </p>
 </dd>
 
-### -field <a id="KS_CAPTURE_ALLOC_VRAM_MAPPED"></a><a id="ks_capture_alloc_vram_mapped"></a><b>KS_CAPTURE_ALLOC_VRAM_MAPPED</b>
+### -field KS_CAPTURE_ALLOC_VRAM_MAPPED
 
 <dd>
 <p>Not currently supported.  </p>

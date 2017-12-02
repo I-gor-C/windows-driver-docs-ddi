@@ -55,7 +55,7 @@ VOID RouterFreeBidiMem(
 ## -parameters
 <dl>
 
-### -param <i>pMemPointer</i> [in]
+### -param pMemPointer [in]
 
 <dd>
 <p>Pointer to the memory to be freed.</p>

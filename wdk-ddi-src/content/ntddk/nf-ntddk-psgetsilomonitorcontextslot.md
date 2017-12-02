@@ -54,7 +54,7 @@ ULONG PsGetSiloMonitorContextSlot(
 ## -parameters
 <dl>
 
-### -param <i>Monitor</i> [in]
+### -param Monitor [in]
 
 <dd>
 <p>A pointer to the silo monitor.</p>

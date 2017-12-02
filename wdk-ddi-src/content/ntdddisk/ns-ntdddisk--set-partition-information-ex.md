@@ -58,19 +58,19 @@ typedef struct _SET_PARTITION_INFORMATION_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>PartitionStyle</b>
+### -field PartitionStyle
 
 <dd>
 <p>Takes a <a href="storage.partition_style">PARTITION_STYLE</a> enumerated value that specifies the type of partition table that contains the partition.</p>
 </dd>
 
-### -field <b>Mbr</b>
+### -field Mbr
 
 <dd>
 <p>Contains the information for a Master Boot Record partition that is not held in common with a GUID Partition Table partition. This member is valid when <b>PartitionStyle</b> member is set to PARTITION_STYLE_MBR. For a definition of this structure, see <a href="storage.set_partition_information_mbr">SET_PARTITION_INFORMATION_MBR</a>.</p>
 </dd>
 
-### -field <b>Gpt</b>
+### -field Gpt
 
 <dd>
 <p>Contains the information for a GUID Partition Table partition that is not held in common with a Master Boot Record partition. This member is valid when <b>PartitionStyle</b> member is set to PARTITION_STYLE_GPT. For a definition of this structure, see <a href="storage.set_partition_information_gpt">SET_PARTITION_INFORMATION_GPT</a>.</p>

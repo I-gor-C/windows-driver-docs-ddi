@@ -7,7 +7,7 @@ old-location: netvista\ndisgetshareddataalignment.htm
 old-project: netvista
 ms.assetid: 561315b4-8866-4f48-8138-12b1a38f743e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisGetSharedDataAlignment
 ms.prod: windows-hardware
 ms.technology: windows-devices

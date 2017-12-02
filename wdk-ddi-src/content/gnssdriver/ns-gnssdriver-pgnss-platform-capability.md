@@ -7,7 +7,7 @@ old-location: sensors\gnss_platform_capability.htm
 old-project: sensors
 ms.assetid: A97DE517-26ED-452F-9066-94F73BC47BDE
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_PLATFORM_CAPABILITY, GNSS_PLATFORM_CAPABILITY, *PGNSS_PLATFORM_CAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>SupportAgnssInjection</b>
+### -field SupportAgnssInjection
 
 <dd>
 <p>Indicates that the platform supports AGNSS injection via the location platform.</p>
 </dd>
 
-### -field <b>AgnssFormatSupported</b>
+### -field AgnssFormatSupported
 
 <dd>
 <p>Specifies a bitmask containing the different AGNSS formats (GNSS_AGNSSFORMAT_*) that the GNSS driver or device supports.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>Unused[512]</b>
+### -field Unused[512]
 
 <dd>
 <p>Padding buffer.</p>

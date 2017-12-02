@@ -7,7 +7,7 @@ old-location: netvista\rilmessagestatus_2.htm
 old-project: netvista
 ms.assetid: 30ae1eff-447c-4f6f-8f6c-cd8bc657d32d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef enum _RILMESSAGESTATUS {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_MSGSTATUS_RECUNREAD"></a><a id="ril_msgstatus_recunread"></a><b>RIL_MSGSTATUS_RECUNREAD</b>
+### -field RIL_MSGSTATUS_RECUNREAD
 
 <dd></dd>
 
-### -field <a id="RIL_MSGSTATUS_RECREAD"></a><a id="ril_msgstatus_recread"></a><b>RIL_MSGSTATUS_RECREAD</b>
+### -field RIL_MSGSTATUS_RECREAD
 
 <dd></dd>
 
-### -field <a id="RIL_MSGSTATUS_STOUNSENT"></a><a id="ril_msgstatus_stounsent"></a><b>RIL_MSGSTATUS_STOUNSENT</b>
+### -field RIL_MSGSTATUS_STOUNSENT
 
 <dd></dd>
 
-### -field <a id="RIL_MSGSTATUS_STOSENT"></a><a id="ril_msgstatus_stosent"></a><b>RIL_MSGSTATUS_STOSENT</b>
+### -field RIL_MSGSTATUS_STOSENT
 
 <dd></dd>
 
-### -field <a id="RIL_MSGSTATUS_MAX"></a><a id="ril_msgstatus_max"></a><b>RIL_MSGSTATUS_MAX</b>
+### -field RIL_MSGSTATUS_MAX
 
 <dd></dd>
 </dl>

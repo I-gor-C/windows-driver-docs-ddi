@@ -56,13 +56,13 @@ LPMONITOR2 InitializePrintMonitor2(
 ## -parameters
 <dl>
 
-### -param <i>pMonitorInit</i> [in]
+### -param pMonitorInit [in]
 
 <dd>
 <p>Caller-supplied pointer to a <a href="..\winsplp\ns-winsplp--monitorinit.md">MONITORINIT</a> structure.</p>
 </dd>
 
-### -param <i>phMonitor</i> [out]
+### -param phMonitor [out]
 
 <dd>
 <p>Caller-supplied location in which the function returns a monitor handle.</p>
@@ -73,7 +73,7 @@ LPMONITOR2 InitializePrintMonitor2(
 <p>If the operation succeeds, the function should return a pointer to a <a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a> structure. Otherwise the function should call SetLastError (described in the Microsoft Windows SDK documentation) to set an error code, and return <b>NULL</b>.</p>
 
 ## -remarks
-<p>The <b>InitializePrintMonitor2</b> function must be exported by <a href="NULL">language monitors</a> and by port monitor server DLLs. The function is called immediately after the monitor DLL is loaded, and is not called again until the DLL is reloaded. Its purposes are to allow the monitor to initialize itself, and to provide the spooler with pointers to internal monitor functions. Function pointers are contained in a <a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a> structure.</p>
+<p>The <b>InitializePrintMonitor2</b> function must be exported by <a href="https://msdn.microsoft.com/26ba1c22-390a-4187-b67a-3f3497964f8e">language monitors</a> and by port monitor server DLLs. The function is called immediately after the monitor DLL is loaded, and is not called again until the DLL is reloaded. Its purposes are to allow the monitor to initialize itself, and to provide the spooler with pointers to internal monitor functions. Function pointers are contained in a <a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a> structure.</p>
 
 <p>The <a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a> structure is larger in Windows XP than it was in Windows 2000. In order to ensure that a monitor developed with the Windows XP Driver Development Kit (DDK) will install on Windows XP and Windows 2000, the monitor must do the following:</p>
 

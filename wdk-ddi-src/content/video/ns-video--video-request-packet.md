@@ -60,37 +60,37 @@ typedef struct _VIDEO_REQUEST_PACKET {
 ## -struct-fields
 <dl>
 
-### -field <b>IoControlCode</b>
+### -field IoControlCode
 
 <dd>
 <p>Specifies an IOCTL_VIDEO_<i>XXX</i> value passed to the <b>EngDeviceIoControl</b> function by the caller and sent to the video port driver in an IRP code. For more information about the set of system-defined IOCTL_VIDEO_<i>XXX</i> that miniport drivers must support, see <a href="display.video_miniport_driver_i_o_control_codes">Video Miniport Driver I/O Control Codes</a>.</p>
 </dd>
 
-### -field <b>StatusBlock</b>
+### -field StatusBlock
 
 <dd>
 <p>Pointer to a STATUS_BLOCK structure in the <a href="wdkgloss.v#wdkgloss.video_request_packet__vrp_#wdkgloss.video_request_packet__vrp_"><i>VRP</i></a>. <b>StatusBlock</b> is filled in by the miniport driver with return information upon completion of each VRP.</p>
 </dd>
 
-### -field <b>InputBuffer</b>
+### -field InputBuffer
 
 <dd>
 <p>Pointer to an input buffer that contains information passed in by the caller. The structure for the data depends on the value of <b>IoControlCode</b>. This member actually points to the same buffer as that indicated by <b>OutputBuffer</b>.</p>
 </dd>
 
-### -field <b>InputBufferLength</b>
+### -field InputBufferLength
 
 <dd>
 <p>Specifies the size in bytes of the input buffer.</p>
 </dd>
 
-### -field <b>OutputBuffer</b>
+### -field OutputBuffer
 
 <dd>
 <p>Pointer to an output buffer into which the miniport driver transfers data to be returned to the caller. The structure for the data depends on the value of <b>IoControlCode.</b> Because this member points to the same buffer as <b>InputBuffer</b>, a miniport driver must not write output in the <b>OutputBuffer</b> before it has consumed all input data from the <b>InputBuffer</b>.</p>
 </dd>
 
-### -field <b>OutputBufferLength</b>
+### -field OutputBufferLength
 
 <dd>
 <p>Specifies the size in bytes of the output buffer. A miniport driver cannot enlarge this buffer. A miniport driver should set the <b>Status</b> member of the <b>StatusBlock</b> with ERROR_INSUFFICIENT_BUFFER or ERROR_MORE_DATA if the given <b>OutputBuffer</b> is too small to contain all the returned information.</p>

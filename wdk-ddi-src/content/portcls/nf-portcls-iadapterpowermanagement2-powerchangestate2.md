@@ -55,13 +55,13 @@ void PowerChangeState2(
 ## -parameters
 <dl>
 
-### -param <i>NewDeviceState</i> [in]
+### -param NewDeviceState [in]
 
 <dd>
 <p>Specifies the new power state that Portcls has requested for the device. This parameter is an enumeration of type <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a>.</p>
 </dd>
 
-### -param <i>NewSystemState</i> [in]
+### -param NewSystemState [in]
 
 <dd>
 <p>Specifies the new power state that Portcls has requested for the system. This parameter is an enumeration of type <a href="..\wdm\ne-wdm--system-power-state.md">SYSTEM_POWER_STATE</a>.</p>

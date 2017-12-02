@@ -60,43 +60,43 @@ NTSTATUS RtlStringCchCopyNEx(
 ## -parameters
 <dl>
 
-### -param <i>pszDest</i> [out, optional]
+### -param pszDest [out, optional]
 
 <dd>
 <p>A pointer to a caller-supplied buffer that receives the copied string. The string at <i>pszSrc</i> is copied to the buffer at <i>pszDest</i> and terminated with a null character. The <i>pszDest</i> pointer can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.</p>
 </dd>
 
-### -param <i>cchDest </i> [in]
+### -param cchDest  [in]
 
 <dd>
 <p>The size, in characters, of the destination buffer. The maximum number of characters allowed is NTSTRSAFE_MAX_CCH. If <i>pszDest</i> is <b>NULL</b>, <i>cchDest</i> must be zero.</p>
 </dd>
 
-### -param <i>pszSrc</i> [in, optional]
+### -param pszSrc [in, optional]
 
 <dd>
 <p>A pointer to a caller-supplied, null-terminated string. </p>
 </dd>
 
-### -param <i>cchSrc</i> [in]
+### -param cchSrc [in]
 
 <dd>
 <p>The maximum number of characters to copy from <i>pszSrc</i> to the buffer that is supplied by <i>pszDest</i>.</p>
 </dd>
 
-### -param <i>ppszDestEnd</i> [out, optional]
+### -param ppszDestEnd [out, optional]
 
 <dd>
 <p>If the caller supplies a non-<b>NULL</b> address pointer then, after the copy operation completes, the function loads that address with a pointer to the destination buffer's resulting null string terminator. </p>
 </dd>
 
-### -param <i>pcchRemaining</i> [out, optional]
+### -param pcchRemaining [out, optional]
 
 <dd>
 <p>If the caller supplies a non-<b>NULL</b> address pointer, the function loads the address with the number of unused characters that are in the buffer pointed to by <i>pszDest</i>, including the terminating null character.</p>
 </dd>
 
-### -param <i>dwFlags</i> [in]
+### -param dwFlags [in]
 
 <dd>
 <p>One or more flags and, optionally, a fill byte. The flags are defined as follows:</p>
@@ -108,7 +108,7 @@ NTSTATUS RtlStringCchCopyNEx(
 <tr>
 <td width="40%"><a id="STRSAFE_FILL_BEHIND_NULL"></a><a id="strsafe_fill_behind_null"></a><dl>
 
-### -param <b>STRSAFE_FILL_BEHIND_NULL</b>
+### -param STRSAFE_FILL_BEHIND_NULL
 
 </dl>
 </td>
@@ -119,7 +119,7 @@ NTSTATUS RtlStringCchCopyNEx(
 <tr>
 <td width="40%"><a id="STRSAFE_IGNORE_NULLS"></a><a id="strsafe_ignore_nulls"></a><dl>
 
-### -param <b>STRSAFE_IGNORE_NULLS</b>
+### -param STRSAFE_IGNORE_NULLS
 
 </dl>
 </td>
@@ -130,7 +130,7 @@ NTSTATUS RtlStringCchCopyNEx(
 <tr>
 <td width="40%"><a id="STRSAFE_FILL_ON_FAILURE"></a><a id="strsafe_fill_on_failure"></a><dl>
 
-### -param <b>STRSAFE_FILL_ON_FAILURE</b>
+### -param STRSAFE_FILL_ON_FAILURE
 
 </dl>
 </td>
@@ -141,7 +141,7 @@ NTSTATUS RtlStringCchCopyNEx(
 <tr>
 <td width="40%"><a id="STRSAFE_NULL_ON_FAILURE"></a><a id="strsafe_null_on_failure"></a><dl>
 
-### -param <b>STRSAFE_NULL_ON_FAILURE</b>
+### -param STRSAFE_NULL_ON_FAILURE
 
 </dl>
 </td>
@@ -152,7 +152,7 @@ NTSTATUS RtlStringCchCopyNEx(
 <tr>
 <td width="40%"><a id="STRSAFE_NO_TRUNCATION"></a><a id="strsafe_no_truncation"></a><dl>
 
-### -param <b>STRSAFE_NO_TRUNCATION</b>
+### -param STRSAFE_NO_TRUNCATION
 
 </dl>
 </td>

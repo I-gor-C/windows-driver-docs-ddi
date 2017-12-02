@@ -55,13 +55,13 @@ typedef enum D3DDDICAPS_SHADER_MIN_PRECISION {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDICAPS_SHADER_MIN_PRECISION_10_BIT"></a><a id="d3dddicaps_shader_min_precision_10_bit"></a><b>D3DDDICAPS_SHADER_MIN_PRECISION_10_BIT</b>
+### -field D3DDDICAPS_SHADER_MIN_PRECISION_10_BIT
 
 <dd>
 <p>The minimum precision level is 10-bit.</p>
 </dd>
 
-### -field <a id="D3DDDICAPS_SHADER_MIN_PRECISION_16_BIT"></a><a id="d3dddicaps_shader_min_precision_16_bit"></a><b>D3DDDICAPS_SHADER_MIN_PRECISION_16_BIT</b>
+### -field D3DDDICAPS_SHADER_MIN_PRECISION_16_BIT
 
 <dd>
 <p>The minimum precision level is 16-bit.</p>

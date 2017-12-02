@@ -58,25 +58,25 @@ typedef enum _UCM_PD_CONN_STATE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UcmPdConnStateInvalid"></a><a id="ucmpdconnstateinvalid"></a><a id="UCMPDCONNSTATEINVALID"></a><b>UcmPdConnStateInvalid</b>
+### -field UcmPdConnStateInvalid
 
 <dd>
 <p>Indicates the PD negotiation state is invalid.</p>
 </dd>
 
-### -field <a id="UcmPdConnStateNotSupported"></a><a id="ucmpdconnstatenotsupported"></a><a id="UCMPDCONNSTATENOTSUPPORTED"></a><b>UcmPdConnStateNotSupported</b>
+### -field UcmPdConnStateNotSupported
 
 <dd>
 <p>Indicates a PD connection is not supported. </p>
 </dd>
 
-### -field <a id="UcmPdConnStateNegotiationFailed"></a><a id="ucmpdconnstatenegotiationfailed"></a><a id="UCMPDCONNSTATENEGOTIATIONFAILED"></a><b>UcmPdConnStateNegotiationFailed</b>
+### -field UcmPdConnStateNegotiationFailed
 
 <dd>
 <p>Indicates the PD negotiation failed.</p>
 </dd>
 
-### -field <a id="UcmPdConnStateNegotiationSucceeded"></a><a id="ucmpdconnstatenegotiationsucceeded"></a><a id="UCMPDCONNSTATENEGOTIATIONSUCCEEDED"></a><b>UcmPdConnStateNegotiationSucceeded</b>
+### -field UcmPdConnStateNegotiationSucceeded
 
 <dd>
 <p>Indicates the PD negotiation succeeded.</p>
@@ -135,7 +135,7 @@ typedef enum _UCM_PD_CONN_STATE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmconnectorpdconnectionstatechanged">UcmConnectorPdConnectionStateChanged</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorpdconnectionstatechanged.md">UcmConnectorPdConnectionStateChanged</a>
 </dt>
 </dl>
 <p> </p>

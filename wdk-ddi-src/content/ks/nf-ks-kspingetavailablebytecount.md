@@ -56,19 +56,19 @@ NTSTATUS KsPinGetAvailableByteCount(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure for which to calculate these queue parameters.</p>
 </dd>
 
-### -param <i>InputDataBytes</i> [out, optional]
+### -param InputDataBytes [out, optional]
 
 <dd>
 <p>A pointer to a LONG value in which the routine returns the number of input data bytes ahead of the leading edge. Caller sets to <b>NULL</b> if this value is not requested.</p>
 </dd>
 
-### -param <i>OutputBufferBytes</i> [out, optional]
+### -param OutputBufferBytes [out, optional]
 
 <dd>
 <p>A pointer to  a LONG value in which the routine returns the number of output buffer bytes ahead of the leading edge. Caller sets to <b>NULL</b> if this value is not requested.</p>
@@ -81,13 +81,13 @@ NTSTATUS KsPinGetAvailableByteCount(
 ## -remarks
 <p>Noninplace pins should use <i>InputDataBytes</i> for input pins and <i>OutputBufferBytes</i> for output pins.</p>
 
-<p>The results of this call are not guaranteed to be safe unless either the processing mutex is held at call-time, or the caller has privately synchronized before calling the routine. To private synchronize, ensure that the pin does not transition from Acquire to Stop while the routine is executing. See <a href="NULL">Processing Mutex in AVStream</a>.</p>
+<p>The results of this call are not guaranteed to be safe unless either the processing mutex is held at call-time, or the caller has privately synchronized before calling the routine. To private synchronize, ensure that the pin does not transition from Acquire to Stop while the routine is executing. See <a href="https://msdn.microsoft.com/dd84fe3f-352e-4641-99d7-792ccecb0b40">Processing Mutex in AVStream</a>.</p>
 
 <p>Also note that in-place transform can supply input and output counts.</p>
 
 <p>In Windows XP and DirectX 8.0, the <i>InputDataBytes</i> count is not valid unless frames that the filter receives are full.</p>
 
-<p>For additional information, see <a href="NULL">Leading and Trailing Edge Stream Pointers</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/73ab974f-8034-421f-980a-2393d84ec54c">Leading and Trailing Edge Stream Pointers</a>.</p>
 
 ## -requirements
 <table>

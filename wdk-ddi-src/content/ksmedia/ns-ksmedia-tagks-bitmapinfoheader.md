@@ -64,67 +64,67 @@ typedef struct tagKS_BITMAPINFOHEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>biSize</b>
+### -field biSize
 
 <dd>
 <p>Specifies the size of the structure in bytes.</p>
 </dd>
 
-### -field <b>biWidth</b>
+### -field biWidth
 
 <dd>
 <p>Specifies the width of the bitmap in pixels.</p>
 </dd>
 
-### -field <b>biHeight</b>
+### -field biHeight
 
 <dd>
 <p>Specifies the height of the bitmap in pixels.</p>
 </dd>
 
-### -field <b>biPlanes</b>
+### -field biPlanes
 
 <dd>
 <p>Specifies the number of planes. This is always set to 1.</p>
 </dd>
 
-### -field <b>biBitCount</b>
+### -field biBitCount
 
 <dd>
 <p>Specifies the color bits per pixel. For example, 1, 4, 8, or 24.</p>
 </dd>
 
-### -field <b>biCompression</b>
+### -field biCompression
 
 <dd>
 <p>Specifies the compression scheme.</p>
 </dd>
 
-### -field <b>biSizeImage</b>
+### -field biSizeImage
 
 <dd>
 <p>Specifies the size of bitmap bits in bytes. (Only required if using compression.)</p>
 </dd>
 
-### -field <b>biXPelsPerMeter</b>
+### -field biXPelsPerMeter
 
 <dd>
 <p>Specifies the horizontal resolution in pixels per meter.</p>
 </dd>
 
-### -field <b>biYPelsPerMeter</b>
+### -field biYPelsPerMeter
 
 <dd>
 <p>Specifies the vertical resolution in pixels per meter.</p>
 </dd>
 
-### -field <b>biClrUsed</b>
+### -field biClrUsed
 
 <dd>
 <p>Specifies the number of colors used in the image.</p>
 </dd>
 
-### -field <b>biClrImportant</b>
+### -field biClrImportant
 
 <dd>
 <p>Specifies the number of important colors in the image.</p>

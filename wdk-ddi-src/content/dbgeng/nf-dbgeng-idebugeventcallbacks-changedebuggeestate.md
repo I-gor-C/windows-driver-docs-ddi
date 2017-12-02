@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbacks_changedebuggeestate.htm
 old-project: debugger
 ms.assetid: 157a420a-18ad-46cf-ae93-603e9226ee4f
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugEventCallbacks, ChangeDebuggeeState, IDebugEventCallbacks::ChangeDebuggeeState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ HRESULT ChangeDebuggeeState(
 ## -parameters
 <dl>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies the type of changes made to the target.  <i>Flags</i> may take one of the following values:</p>
@@ -100,25 +100,25 @@ HRESULT ChangeDebuggeeState(
 <p> </p>
 </dd>
 
-### -param <i>Argument</i> [in]
+### -param Argument [in]
 
 <dd>
 <p>Provides additional information about the change in the target. The interpretation of the value of <i>Argument</i> depends on the value of <i>Flags</i>:<p></p>
 <dl>
 
-### -param <a id="DEBUG_CDS_ALL"></a><a id="debug_cds_all"></a>DEBUG_CDS_ALL
+### -param DEBUG_CDS_ALL
 
 <dd>
 <p>The value of <i>Argument</i> is zero.</p>
 </dd>
 
-### -param <a id="DEBUG_CDS_REGISTERS"></a><a id="debug_cds_registers"></a>DEBUG_CDS_REGISTERS
+### -param DEBUG_CDS_REGISTERS
 
 <dd>
 <p>If a single register has changed, the value of <i>Argument</i> is the index of that register.  Otherwise, the value of <i>Argument</i> is DEBUG_ANY_ID.</p>
 </dd>
 
-### -param <a id="DEBUG_CDS_DATA"></a><a id="debug_cds_data"></a>DEBUG_CDS_DATA
+### -param DEBUG_CDS_DATA
 
 <dd>
 <p>The value of <i>Argument</i> specifies which data space was changed.  The following table contains the possible values of <i>Argument</i>.</p>
@@ -179,7 +179,7 @@ HRESULT ChangeDebuggeeState(
 <p> </p>
 </dd>
 
-### -param <a id="DEBUG_CDS_REFRESH"></a><a id="debug_cds_refresh"></a>DEBUG_CDS_REFRESH
+### -param DEBUG_CDS_REFRESH
 
 <dd>
 <p>The following table contains the possible values of <i>Argument</i>.</p>

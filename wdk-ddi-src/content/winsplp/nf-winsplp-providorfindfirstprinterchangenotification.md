@@ -60,27 +60,27 @@ BOOL WINAPI ProvidorFindFirstPrinterChangeNotification(
 ## -parameters
 <dl>
 
-### -param <i>hPrinter</i> [in]
+### -param hPrinter [in]
 
 <dd></dd>
 
-### -param <i>fdwFlags</i> 
+### -param fdwFlags 
 
 <dd></dd>
 
-### -param <i>fdwOptions</i> 
+### -param fdwOptions 
 
 <dd></dd>
 
-### -param <i>hNotify</i> [in]
+### -param hNotify [in]
 
 <dd></dd>
 
-### -param <i>pPrinterNotifyOptions</i> [in, optional]
+### -param pPrinterNotifyOptions [in, optional]
 
 <dd></dd>
 
-### -param <i>pvReserved1</i> [out, optional]
+### -param pvReserved1 [out, optional]
 
 <dd></dd>
 </dl>

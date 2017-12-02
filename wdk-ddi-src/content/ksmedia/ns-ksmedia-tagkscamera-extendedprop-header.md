@@ -59,38 +59,38 @@ typedef struct _KSCAMERA_EXTENDEDPROP_HEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The extended property version number. This is set to 1.</p>
 </dd>
 
-### -field <b>PinId</b>
+### -field PinId
 
 <dd>
 <p>The pin ID that corresponds with the property.  If <b>PinId</b> is set to (ULONG)-1, the control applies to the filter.  Otherwise, the camera driver must route this control to the corresponding pin when that pin is created (or if already available).</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The total size, in bytes of the entire payload. This includes the <b>KSCAMERA_EXTENDEDPROP_HEADER</b> structure and the following control specific payload data.</p>
 </dd>
 
-### -field <b>Result</b>
+### -field Result
 
 <dd>
 <p>For a set operation, this is 0.  For queries, <b>Result</b> contains any failure code the driver provides for the most recent control operation.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The settings in <b>Flags</b> may vary depending on the control.</p>
 <p>The high order bit of the <b>Flags</b> value is reserved.  This bit serves as the cancel flag and is defined as <b>KSCAMERA_EXTENDEDPROP_FLAG_CANCELOPERATION</b>.  This flag is only meaningful for asynchronous controls.</p>
 </dd>
 
-### -field <b>Capability</b>
+### -field Capability
 
 <dd>
 <p>This member is read only and indicates the standard capabilities of the control. The following capabilities are defined.</p>
@@ -102,7 +102,7 @@ typedef struct _KSCAMERA_EXTENDEDPROP_HEADER {
 <tr>
 <td width="40%"><a id="KSCAMERA_EXTENDEDPROP_CAPS_ASYNCCONTROL"></a><a id="kscamera_extendedprop_caps_asynccontrol"></a><dl>
 
-### -field <b>KSCAMERA_EXTENDEDPROP_CAPS_ASYNCCONTROL</b>
+### -field KSCAMERA_EXTENDEDPROP_CAPS_ASYNCCONTROL
 
 </dl>
 </td>
@@ -113,7 +113,7 @@ typedef struct _KSCAMERA_EXTENDEDPROP_HEADER {
 <tr>
 <td width="40%"><a id="KSCAMERA_EXTENDEDPROP_CAPS_CANCELLABLE"></a><a id="kscamera_extendedprop_caps_cancellable"></a><dl>
 
-### -field <b>KSCAMERA_EXTENDEDPROP_CAPS_CANCELLABLE</b>
+### -field KSCAMERA_EXTENDEDPROP_CAPS_CANCELLABLE
 
 </dl>
 </td>

@@ -56,20 +56,20 @@ NTSTATUS PcUnregisterIoTimeout(
 ## -parameters
 <dl>
 
-### -param <i>pDeviceObject</i> [in]
+### -param pDeviceObject [in]
 
 <dd>
 <p>Pointer to the same device object that the driver supplied when it previously called <a href="..\portcls\nf-portcls-pcregisteriotimeout.md">PcRegisterIoTimeout</a>. The device object is a system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
 </dd>
 
-### -param <i>pTimerRoutine</i> [in]
+### -param pTimerRoutine [in]
 
 <dd>
 <p>Pointer to the same I/O-timer callback routine that the driver supplied when it previously called <a href="..\portcls\nf-portcls-pcregisteriotimeout.md">PcRegisterIoTimeout</a>
 </p>
 </dd>
 
-### -param <i>pContext</i> [in]
+### -param pContext [in]
 
 <dd>
 <p>Pointer to the same driver-determined context that the driver supplied when it previously called <a href="..\portcls\nf-portcls-pcregisteriotimeout.md">PcRegisterIoTimeout</a>

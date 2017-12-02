@@ -7,7 +7,7 @@ old-location: sensors\gnss_selftestresult.htm
 old-project: sensors
 ms.assetid: 572A2C38-A990-4225-A3FC-6E899A248B1C
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT, *PGNSS_SELFTESTRESULT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,19 +61,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>TestResultStatus</b>
+### -field TestResultStatus
 
 <dd>
 <p>NTSTATUS value indicating:</p>
@@ -87,31 +87,31 @@ typedef struct {
 </ul>
 </dd>
 
-### -field <b>Result</b>
+### -field Result
 
 <dd>
 <p>The final result of the self-test.</p>
 </dd>
 
-### -field <b>PinFailedBitMask</b>
+### -field PinFailedBitMask
 
 <dd>
 <p>The bit mask for adapter pins that failed the test.</p>
 </dd>
 
-### -field <b>Unused[512]</b>
+### -field Unused[512]
 
 <dd>
 <p>Padding buffer.</p>
 </dd>
 
-### -field <b>OutBufLen</b>
+### -field OutBufLen
 
 <dd>
 <p>The length of the buffer for returning any additional information about the self-test.</p>
 </dd>
 
-### -field <b>OutBuffer[BYTE]</b>
+### -field OutBuffer[BYTE]
 
 <dd>
 <p>The buffer that will contain the additional information about the self-test.</p>

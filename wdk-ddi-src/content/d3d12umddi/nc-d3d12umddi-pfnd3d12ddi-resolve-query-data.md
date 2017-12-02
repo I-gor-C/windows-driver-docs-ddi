@@ -63,43 +63,43 @@ VOID APIENTRY* pfnResolveQueryData(
 ## -parameters
 <dl>
 
-### -param <i>hCommandList</i> 
+### -param hCommandList 
 
 <dd>
 <p>The handle of a command list.</p>
 </dd>
 
-### -param <i>hQueryHeap</i> 
+### -param hQueryHeap 
 
 <dd>
 <p>The handle of a query heap.</p>
 </dd>
 
-### -param <i>QueryType</i> 
+### -param QueryType 
 
 <dd>
 <p>A query type.</p>
 </dd>
 
-### -param <i>StartElement</i> 
+### -param StartElement 
 
 <dd>
 <p>The value of the start element.</p>
 </dd>
 
-### -param <i>ElementCount</i> 
+### -param ElementCount 
 
 <dd>
 <p>The element count.</p>
 </dd>
 
-### -param <i>hDrvDestinationBuffer</i> 
+### -param hDrvDestinationBuffer 
 
 <dd>
 <p>The handle of a destination buffer.</p>
 </dd>
 
-### -param <i>DestinationOffset</i> 
+### -param DestinationOffset 
 
 <dd>
 <p>The destination offset.</p>

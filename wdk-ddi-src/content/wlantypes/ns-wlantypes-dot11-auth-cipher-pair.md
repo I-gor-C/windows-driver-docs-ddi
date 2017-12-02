@@ -7,7 +7,7 @@ old-location: netvista\dot11_auth_cipher_pair.htm
 old-project: netvista
 ms.assetid: 301e9c21-69e7-48d3-b170-de01684f4a12
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_AUTH_CIPHER_PAIR, DOT11_AUTH_CIPHER_PAIR, *PDOT11_AUTH_CIPHER_PAIR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,14 +54,14 @@ typedef struct DOT11_AUTH_CIPHER_PAIR {
 ## -struct-fields
 <dl>
 
-### -field <b>AuthAlgoId</b>
+### -field AuthAlgoId
 
 <dd>
 <p>An authentication algorithm as specified by a 
      <a href="..\wlantypes\ne-wlantypes--dot11-auth-algorithm.md">DOT11_AUTH_ALGORITHM</a> value.</p>
 </dd>
 
-### -field <b>CipherAlgoId</b>
+### -field CipherAlgoId
 
 <dd>
 <p>A cipher algorithm as specified by a 
@@ -92,7 +92,7 @@ typedef struct DOT11_AUTH_CIPHER_PAIR {
 
 <p>If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport driver must allow
     peer stations to associate with the Extensible AP by using 
-    <a href="NULL">Open System Authentication</a> or 
+    <a href="netvista.open_system_authentication">Open System Authentication</a> or 
     <a href="https://msdn.microsoft.com/41dd280b-e54c-4233-8051-45e7b1284d1d">Wired Equivalent Privacy (WEP)</a> algorithms, regardless of
     the enabled authorization and cipher algorithms. For more information about WPS and Extensible AP, see 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569436">OID_DOT11_WPS_ENABLED</a>.</p>
@@ -142,4 +142,4 @@ typedef struct DOT11_AUTH_CIPHER_PAIR {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_AUTH_CIPHER_PAIR structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_AUTH_CIPHER_PAIR structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

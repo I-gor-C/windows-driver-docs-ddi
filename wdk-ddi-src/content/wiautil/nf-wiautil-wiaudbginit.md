@@ -7,7 +7,7 @@ old-location: image\wiaudbginit.htm
 old-project: image
 ms.assetid: a9308d66-c8b0-4e0e-8203-e2b3f91b7e27
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiauDbgInit
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ void __stdcall wiauDbgInit(
 ## -parameters
 <dl>
 
-### -param <i>hInstance</i> [in, optional]
+### -param hInstance [in, optional]
 
 <dd>
 <p>Is the handle to the DLL instance.</p>

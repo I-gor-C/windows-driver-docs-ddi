@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelsettransactionquota.htm
 old-project: netvista
 ms.assetid: C88F03BE-96D3-46A7-8269-1ECBFA539111
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbChannelSetTransactionQuota
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ VOID VmbChannelSetTransactionQuota(
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>A handle for a channel.  </p>
 </dd>
 
-### -param <i>Quota</i> [in]
+### -param Quota [in]
 
 <dd>
 <p> The maximum outstanding packet quota. This value must be greater than 0.</p>

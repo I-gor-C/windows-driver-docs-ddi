@@ -94,43 +94,43 @@ typedef struct _CLFS_MGMT_POLICY {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the <b>CLFS_MGMT_POLICY</b> structure. Set this to <b>CLFS_MGMT_POLICY_VERSION</b>.</p>
 </dd>
 
-### -field <b>LengthInBytes</b>
+### -field LengthInBytes
 
 <dd>
 <p>The length of the <b>CLFS_MGMT_POLICY</b> structure.</p>
 </dd>
 
-### -field <b>PolicyFlags</b>
+### -field PolicyFlags
 
 <dd>
 <p>The flags that apply to this instance of the <b>CLFS_MGMT_POLICY</b> structure. The only flag that has been implemented for this release is <b>LOG_POLICY_OVERWRITE</b>, which indicates that when the policy is installed, it will replace the policy of the same type, if such a policy already exists.</p>
 </dd>
 
-### -field <b>PolicyType</b>
+### -field PolicyType
 
 <dd>
 <p>A value of the <a href="..\wdm\ne-wdm--clfs-mgmt-policy-type.md">CLFS_MGMT_POLICY_TYPE</a> enumeration that supplies the type of this instance of the <b>CLFS_MGMT_POLICY</b> structure.</p>
 </dd>
 
-### -field <b>PolicyParameters</b>
+### -field PolicyParameters
 
 <dd>
 <p>The union that provides the detailed information about this instance of the <b>CLFS_MGMT_POLICY</b> structure.</p>
 <dl>
 
-### -field <b>MaximumSize</b>
+### -field MaximumSize
 
 <dd>
 <p>The structure that provides the detailed information about a policy whose <b>PolicyType</b> is <b>ClfsMgmtPolicyMaximumSize</b>.</p>
 <dl>
 
-### -field <b>Containers</b>
+### -field Containers
 
 <dd>
 <p>The maximum number of containers that the log will use.</p>
@@ -138,13 +138,13 @@ typedef struct _CLFS_MGMT_POLICY {
 </dl>
 </dd>
 
-### -field <b>MinimumSize</b>
+### -field MinimumSize
 
 <dd>
 <p>The structure that provides the detailed information about a policy whose <b>PolicyType</b> is <b>ClfsMgmtPolicyMinimumSize</b>.</p>
 <dl>
 
-### -field <b>Containers</b>
+### -field Containers
 
 <dd>
 <p>The minimum number of containers that the log will use.</p>
@@ -152,13 +152,13 @@ typedef struct _CLFS_MGMT_POLICY {
 </dl>
 </dd>
 
-### -field <b>NewContainerSize</b>
+### -field NewContainerSize
 
 <dd>
 <p>The structure that provides the detailed information about a policy whose <b>PolicyType</b> is <b>ClfsMgmtPolicyNewContainerSize</b>.</p>
 <dl>
 
-### -field <b>SizeInBytes</b>
+### -field SizeInBytes
 
 <dd>
 <p>The size of each of the log's containers.</p>
@@ -166,19 +166,19 @@ typedef struct _CLFS_MGMT_POLICY {
 </dl>
 </dd>
 
-### -field <b>GrowthRate</b>
+### -field GrowthRate
 
 <dd>
 <p>The structure that provides the detailed information about a policy whose <b>PolicyType</b> is <b>ClfsMgmtPolicyGrowthRate</b>.</p>
 <dl>
 
-### -field <b>AbsoluteGrowthInContainers</b>
+### -field AbsoluteGrowthInContainers
 
 <dd>
 <p>The number of containers that should be added when the size of the log is increased. If the <b>RelativeGrowthPercentage</b> member is nonzero, then <b>AbsoluteGrowthInContainers</b> must be zero.</p>
 </dd>
 
-### -field <b>RelativeGrowthPercentage</b>
+### -field RelativeGrowthPercentage
 
 <dd>
 <p>The percentage by which the log's size should increase when the log grows, expressed as a number between zero and 100. For example, if the log consisted of 32 containers and <b>RelativeGrowthPercentage</b> was ten, then, when the log needed to grow, it would grow by three (32 * 10 percent, rounded down to the nearest integer) containers. If the <b>AbsoluteGrowthInContainers</b> member is nonzero, then <b>RelativeGrowthPercentage</b> must be zero.</p>
@@ -186,19 +186,19 @@ typedef struct _CLFS_MGMT_POLICY {
 </dl>
 </dd>
 
-### -field <b>LogTail</b>
+### -field LogTail
 
 <dd>
 <p>The structure that provides the detailed information about a policy whose <b>PolicyType</b> is <b>ClfsMgmtPolicyLogTail</b>.</p>
 <dl>
 
-### -field <b>MinimumAvailablePercentage</b>
+### -field MinimumAvailablePercentage
 
 <dd>
 <p>When CLFS management notifies the client to move its log tail, it will specify that the tail be moved to an LSN that leaves at least <b>MinimumAvailablePercentage</b> percent of the log free. If the <b>MinimumAvailableContainers</b> member is nonzero, then <b>MinimumAvailablePercentage</b> must be zero.</p>
 </dd>
 
-### -field <b>MinimumAvailableContainers</b>
+### -field MinimumAvailableContainers
 
 <dd>
 <p>When CLFS management notifies the client to move its log tail, it will specify that the tail be moved to an LSN that leaves at least <b>MinimumAvailableContainers</b> containers free. If the <b>MinimumAvailablePercentage</b> member is nonzero, then <b>MinimumAvailableContainers</b> must be zero.</p>
@@ -206,13 +206,13 @@ typedef struct _CLFS_MGMT_POLICY {
 </dl>
 </dd>
 
-### -field <b>AutoShrink</b>
+### -field AutoShrink
 
 <dd>
 <p>The structure that provides the detailed information about a policy whose <b>PolicyType</b> is <b>ClfsMgmtPolicyAutoShrink</b>.</p>
 <dl>
 
-### -field <b>Percentage</b>
+### -field Percentage
 
 <dd>
 <p>When the percentage of free space in the log reaches <b>Percentage</b>, the log will shrink. Percentage is expressed as a number between 0 and 100, so a value of 25 would mean 25 percent.</p>
@@ -220,13 +220,13 @@ typedef struct _CLFS_MGMT_POLICY {
 </dl>
 </dd>
 
-### -field <b>AutoGrow</b>
+### -field AutoGrow
 
 <dd>
 <p>The structure that provides the detailed information about a policy whose <b>PolicyType</b> is <b>ClfsMgmtPolicyAutoGrow</b>.</p>
 <dl>
 
-### -field <b>Enabled</b>
+### -field Enabled
 
 <dd>
 <p>A numeric value that determines whether automatic log growth is enabled. Any nonzero value enables automatic growth.</p>
@@ -234,19 +234,19 @@ typedef struct _CLFS_MGMT_POLICY {
 </dl>
 </dd>
 
-### -field <b>NewContainerPrefix</b>
+### -field NewContainerPrefix
 
 <dd>
 <p>The structure that provides the detailed information about a policy whose <b>PolicyType</b> is <b>ClfsMgmtPolicyNewContainerPrefix</b>.</p>
 <dl>
 
-### -field <b>PrefixLengthInBytes</b>
+### -field PrefixLengthInBytes
 
 <dd>
 <p>The length, in bytes, of the <b>PrefixString</b> member.</p>
 </dd>
 
-### -field <b>PrefixString</b>
+### -field PrefixString
 
 <dd>
 <p>A wide-character string that contains the full path to the directory where the log's containers reside, as well as a prefix that will be used as part of the file name for each container in the log.</p>
@@ -254,13 +254,13 @@ typedef struct _CLFS_MGMT_POLICY {
 </dl>
 </dd>
 
-### -field <b>NewContainerSuffix</b>
+### -field NewContainerSuffix
 
 <dd>
 <p>The structure that provides the detailed information about a policy whose <b>PolicyType</b> is <b>ClfsMgmtPolicyNewContainerSuffix</b>.</p>
 <dl>
 
-### -field <b>NextContainerSuffix</b>
+### -field NextContainerSuffix
 
 <dd>
 <p>The number to use as the suffix of the file name for the next container in the log. To form the file name, the number is converted to a string of decimal digits and appended to the prefix string. The number is incremented for the file name of each subsequent container.</p>
@@ -268,19 +268,19 @@ typedef struct _CLFS_MGMT_POLICY {
 </dl>
 </dd>
 
-### -field <b>NewContainerExtension</b>
+### -field NewContainerExtension
 
 <dd>
 <p>The structure that provides the detailed information about a policy whose <b>PolicyType</b> is <b>ClfsMgmtPolicyNewContainerExtension</b>.</p>
 <dl>
 
-### -field <b>ExtensionLengthInBytes</b>
+### -field ExtensionLengthInBytes
 
 <dd>
 <p>The length, in bytes, of the <b>ExtensionString</b> member.</p>
 </dd>
 
-### -field <b>ExtensionString</b>
+### -field ExtensionString
 
 <dd>
 <p>A wide-character string that contains the extension to the file name for each container in the log. Container file names are built using the format [prefix][suffix][.extension]. An extension is optional. The default extension is the empty string.</p>

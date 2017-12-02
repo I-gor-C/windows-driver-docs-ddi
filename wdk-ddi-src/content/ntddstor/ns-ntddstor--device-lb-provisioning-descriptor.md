@@ -65,19 +65,19 @@ typedef struct _DEVICE_LB_PROVISIONING_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of this structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure. This is set to <b>sizeof</b>(DEVICE_LB_PROVISIONING_DESCRIPTOR).</p>
 </dd>
 
-### -field <b>ThinProvisioningEnabled</b>
+### -field ThinProvisioningEnabled
 
 <dd>
 <p>The thin provisioning–enabled status.</p>
@@ -114,7 +114,7 @@ typedef struct _DEVICE_LB_PROVISIONING_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>ThinProvisioningReadZeros</b>
+### -field ThinProvisioningReadZeros
 
 <dd>
 <p>Reads to unmapped regions return zeros.</p>
@@ -151,7 +151,7 @@ typedef struct _DEVICE_LB_PROVISIONING_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>AnchorSupported</b>
+### -field AnchorSupported
 
 <dd>
 <p>Support for the anchored LBA mapping state.</p>
@@ -188,7 +188,7 @@ typedef struct _DEVICE_LB_PROVISIONING_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>UnmapGranularityAlignmentValid</b>
+### -field UnmapGranularityAlignmentValid
 
 <dd>
 <p>The validity of unmap granularity alignment for the device.</p>
@@ -225,37 +225,37 @@ typedef struct _DEVICE_LB_PROVISIONING_DESCRIPTOR {
 <p> </p>
 </dd>
 
-### -field <b>Reserverd0</b>
+### -field Reserverd0
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Reserverd1</b>
+### -field Reserverd1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>OptimalUnmapGranularity</b>
+### -field OptimalUnmapGranularity
 
 <dd>
 <p>The optimal number of blocks for unmap granularity for the device.</p>
 </dd>
 
-### -field <b>UnmapGranularityAlignment</b>
+### -field UnmapGranularityAlignment
 
 <dd>
 <p>The current value, in blocks, set for unmap granularity alignment on the device.   The value <b>UnmapGranularityAlignmentValid</b> indicates the validity of this member.</p>
 </dd>
 
-### -field <b>MaxUnmapLbaCount</b>
+### -field MaxUnmapLbaCount
 
 <dd>
 <p>Maximum amount of LBAs that can be unmapped in a single UNMAP command, in units of logical blocks. This is valid only in Windows 10 and above.</p>
 </dd>
 
-### -field <b>MaxUnmapBlockDescriptorCount</b>
+### -field MaxUnmapBlockDescriptorCount
 
 <dd>
 <p>Maximum number of descriptors allowed in a single UNMAP command. This is valid only in Windows 10 and above.</p>

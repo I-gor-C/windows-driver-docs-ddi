@@ -65,43 +65,43 @@ typedef struct _PCSTREAMRESOURCE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p> This field is init to the size of the struct.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for future use. Set to zero. 
 </p>
 </dd>
 
-### -field <b>Pdo</b>
+### -field Pdo
 
 <dd>
 <p>The physical device object of the stack that created this resource. </p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The union of the different stream resource types.</p>
 </dd>
 
-### -field <b>Resource</b>
+### -field Resource
 
 <dd>
 <dl>
 
-### -field <b>Thread</b>
+### -field Thread
 
 <dd>
 <p>Thread.</p>
 </dd>
 
-### -field <b> ResourceSet</b>
+### -field  ResourceSet
 
 <dd>
 <p>Reserved for future use, set to NULL. Only device-scoped resources are supported at this time.</p>

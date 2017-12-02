@@ -57,13 +57,13 @@ FORCEINLINE void UdecxUrbComplete(
 ## -parameters
 <dl>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object that contains the <a href="..\usb\ns-usb--urb.md">URB</a> for the transfer.</p>
 </dd>
 
-### -param <i>UsbdStatus</i> [in]
+### -param UsbdStatus [in]
 
 <dd>
 <p>A <a href="buses.usbd_status">USBD_STATUS</a>-typed value that indicates the success or failure of the completed URB request. </p>

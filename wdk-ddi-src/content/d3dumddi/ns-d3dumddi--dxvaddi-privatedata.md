@@ -55,13 +55,13 @@ typedef struct _DXVADDI_PRIVATEDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>[in] A pointer to a buffer that contains decoder data.</p>
 </dd>
 
-### -field <b>DataSize</b>
+### -field DataSize
 
 <dd>
 <p>[in] The size, in bytes, of the buffer that is pointed to by <b>pData</b>.</p>

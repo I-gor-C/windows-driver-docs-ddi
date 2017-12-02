@@ -61,43 +61,43 @@ typedef struct _VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size in bytes of this structure.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Specifies the version of the interface to be returned by the miniport driver. The current interface version is defined in <i>video.h</i>, and has the form VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE_VERSION_<i>N</i>.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Pointer to a miniport driver-defined context for the interface.</p>
 </dd>
 
-### -field <b>InterfaceReference</b>
+### -field InterfaceReference
 
 <dd>
 <p>Pointer to the video port driver-implemented reference routine for this interface.</p>
 </dd>
 
-### -field <b>InterfaceDereference</b>
+### -field InterfaceDereference
 
 <dd>
 <p>Pointer to the video port driver-implemented dereference routine for this interface.</p>
 </dd>
 
-### -field <b>VideoPortProtectWCMemory</b>
+### -field VideoPortProtectWCMemory
 
 <dd>
 <p>Pointer to the video port driver's <a href="..\video\nc-video-protect-wc-memory.md">VideoPortProtectWCMemory</a> callback routine.</p>
 </dd>
 
-### -field <b>VideoPortRestoreWCMemory</b>
+### -field VideoPortRestoreWCMemory
 
 <dd>
 <p>Pointer to the video port driver's <a href="..\video\nc-video-restore-wc-memory.md">VideoPortRestoreWCMemory</a> callback routine.</p>

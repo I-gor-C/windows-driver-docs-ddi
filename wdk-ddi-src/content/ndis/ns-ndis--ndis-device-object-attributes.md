@@ -7,7 +7,7 @@ old-location: netvista\ndis_device_object_attributes.htm
 old-project: netvista
 ms.assetid: 658e1597-eacf-4e9e-9f10-37f7646d38ad
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_DEVICE_OBJECT_ATTRIBUTES, NDIS_DEVICE_OBJECT_ATTRIBUTES, *PNDIS_DEVICE_OBJECT_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ typedef struct _NDIS_DEVICE_OBJECT_ATTRIBUTES {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -74,7 +74,7 @@ typedef struct _NDIS_DEVICE_OBJECT_ATTRIBUTES {
      <b>Size</b> member to NDIS_SIZEOF_DEVICE_OBJECT_ATTRIBUTES_REVISION_1.</p>
 </dd>
 
-### -field <b>DeviceName</b>
+### -field DeviceName
 
 <dd>
 <p>A pointer to a variable of type NDIS_STRING that contains a null-terminated Unicode string that
@@ -83,7 +83,7 @@ typedef struct _NDIS_DEVICE_OBJECT_ATTRIBUTES {
      <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> type.</p>
 </dd>
 
-### -field <b>SymbolicName</b>
+### -field SymbolicName
 
 <dd>
 <p>A pointer to a variable of type NDIS_STRING that contains a Unicode string that is the
@@ -92,7 +92,7 @@ typedef struct _NDIS_DEVICE_OBJECT_ATTRIBUTES {
      \DosDevices\<i>SymbolicName</i>.</p>
 </dd>
 
-### -field <b>MajorFunctions</b>
+### -field MajorFunctions
 
 <dd>
 <p>A pointer to an array of one or more entry points for the device driver's dispatch routines. A
@@ -117,13 +117,13 @@ typedef struct _NDIS_DEVICE_OBJECT_ATTRIBUTES {
 <p></p>
 <dl>
 
-### -field <a id="DeviceObject"></a><a id="deviceobject"></a><a id="DEVICEOBJECT"></a><i>DeviceObject</i>
+### -field DeviceObject
 
 <dd>
 <p>The device object for the dispatch routine.</p>
 </dd>
 
-### -field <a id="Irp"></a><a id="irp"></a><a id="IRP"></a><i>Irp</i>
+### -field Irp
 
 <dd>
 <p>The IRP for the dispatch routine.</p>
@@ -134,14 +134,14 @@ typedef struct _NDIS_DEVICE_OBJECT_ATTRIBUTES {
      IRPs.</p>
 </dd>
 
-### -field <b>ExtensionSize</b>
+### -field ExtensionSize
 
 <dd>
 <p>The driver-determined number of bytes to be allocated for the device extension of the device
      object. The internal structure of the device extension is driver-defined.</p>
 </dd>
 
-### -field <b>DefaultSDDLString</b>
+### -field DefaultSDDLString
 
 <dd>
 <p>A string representation for the default security settings of the device object. The security that
@@ -152,7 +152,7 @@ typedef struct _NDIS_DEVICE_OBJECT_ATTRIBUTES {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff563688">Securing Device Objects</a>.</p>
 </dd>
 
-### -field <b>DeviceClassGuid</b>
+### -field DeviceClassGuid
 
 <dd>
 <p>Reserved for NDIS. Set this member to <b>NULL</b>.</p>
@@ -203,4 +203,4 @@ typedef struct _NDIS_DEVICE_OBJECT_ATTRIBUTES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_DEVICE_OBJECT_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_DEVICE_OBJECT_ATTRIBUTES structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

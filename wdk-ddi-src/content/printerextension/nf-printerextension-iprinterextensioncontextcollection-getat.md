@@ -56,13 +56,13 @@ HRESULT GetAt(
 ## -parameters
 <dl>
 
-### -param <i>ulIndex</i> [in]
+### -param ulIndex [in]
 
 <dd>
 <p>The index of the <a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a> object within the collection.</p>
 </dd>
 
-### -param <i>ppContext</i> [out, retval]
+### -param ppContext [out, retval]
 
 <dd>
 <p>Pointer to an <a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a> interface.</p>

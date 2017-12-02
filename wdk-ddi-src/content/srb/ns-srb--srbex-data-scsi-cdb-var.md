@@ -63,55 +63,55 @@ typedef struct _SRBEX_DATA_SCSI_CDB_VAR {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeScsiCdbVar</b>.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Length of the data in this structure starting with the <b>ScsiStatus</b> member. This value ranges between SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MIN and SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MAX.</p>
 </dd>
 
-### -field <b>ScsiStatus</b>
+### -field ScsiStatus
 
 <dd>
 <p>The SCSI status code returned for the submitted SRB.</p>
 </dd>
 
-### -field <b>SenseInfoBufferLength</b>
+### -field SenseInfoBufferLength
 
 <dd>
 <p>The length of the sense information returned in the buffer pointed to by <b>SenseInfoBuffer</b>.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved. Contains zeros.</p>
 </dd>
 
-### -field <b>CdbLength</b>
+### -field CdbLength
 
 <dd>
 <p>The length of the CDB data, in bytes, of the <b>Cdb</b> array.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>This member is reserved. Contains zeros.</p>
 </dd>
 
-### -field <b>SenseInfoBuffer</b>
+### -field SenseInfoBuffer
 
 <dd>
 <p>A pointer to a buffer containing any returned sense information.</p>
 </dd>
 
-### -field <b>Cdb</b>
+### -field Cdb
 
 <dd>
 <p>A variable length array containing the CDB buffer.</p>
@@ -119,7 +119,7 @@ typedef struct _SRBEX_DATA_SCSI_CDB_VAR {
 </dl>
 
 ## -remarks
-<p>For CDB data sizes less than 32 bytes, the <a href="..\srb\ns-srb--srbex-data-scsi-cdb32.md">SRBEX_DATA_SCSI_CDB32</a> structure, and possibly the <a href="..\srb\ns-srb--srbex-data-scsi-cdb16.md">SRBEX_DATA_SCSI_CDB16</a> structure, may be used instead. The maximum CDB data allowed in the <b>Cdb</b> array is SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MAX - SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MIN + 1. The length specified in <b>CdbLength</b> must be less than or equal to this value.</p>
+<p>For CDB data sizes less than 32 bytes, the <a href="..\storport\ns-storport--srbex-data-scsi-cdb32.md">SRBEX_DATA_SCSI_CDB32</a> structure, and possibly the <a href="..\storport\ns-storport--srbex-data-scsi-cdb16.md">SRBEX_DATA_SCSI_CDB16</a> structure, may be used instead. The maximum CDB data allowed in the <b>Cdb</b> array is SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MAX - SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MIN + 1. The length specified in <b>CdbLength</b> must be less than or equal to this value.</p>
 
 ## -requirements
 <table>
@@ -146,13 +146,13 @@ typedef struct _SRBEX_DATA_SCSI_CDB_VAR {
 ## -see-also
 <dl>
 <dt>
-<a href="..\srb\ns-srb--srbex-data-scsi-cdb16.md">SRBEX_DATA_SCSI_CDB16</a>
+<a href="..\storport\ns-storport--srbex-data-scsi-cdb16.md">SRBEX_DATA_SCSI_CDB16</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb--srbex-data-scsi-cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
+<a href="..\storport\ns-storport--srbex-data-scsi-cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

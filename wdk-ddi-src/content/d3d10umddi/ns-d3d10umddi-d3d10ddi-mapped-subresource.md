@@ -56,19 +56,19 @@ typedef struct D3D10DDI_MAPPED_SUBRESOURCE {
 ## -struct-fields
 <dl>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>[out] A pointer to a buffer that contains the contents of the subresource.</p>
 </dd>
 
-### -field <b>RowPitch</b>
+### -field RowPitch
 
 <dd>
 <p>[out] The row pitch,  width, or physical size (in bytes) of the data.</p>
 </dd>
 
-### -field <b>DepthPitch</b>
+### -field DepthPitch
 
 <dd>
 <p>[out] The deptch pitch,  width, or physical size (in bytes) of the data.</p>

@@ -68,43 +68,43 @@ typedef struct _PO_FX_COMPONENT_PERF_SET {
 ## -struct-fields
 <dl>
 
-### -field <b>Name</b>
+### -field Name
 
 <dd>
 <p>An optional character string used to describe the component property controlled by the performance state set. For example, "Clock frequency" or "Memory bandwidth".</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Set to 0. Currently, no flags are defined for this member.</p>
 </dd>
 
-### -field <b>Unit</b>
+### -field Unit
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--po-fx-perf-state-unit.md">PO_FX_PERF_STATE_UNIT</a> value that specifies the type of unit that is controlled by the performance state set. </p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--po-fx-perf-state-type.md">PO_FX_PERF_STATE_TYPE</a> value that specifies the type of performance states in the set (a discrete number of states or a continuous distribution of states between a minimum and maximum value). </p>
 </dd>
 
-### -field <b>Discrete</b>
+### -field Discrete
 
 <dd>
 <p>For sets that represent a discrete number of performance states (that is, where the <b>Type</b> member is <b>PoFxPerfStateTypeDiscrete</b>), this nested structure describes the  states.</p>
 <dl>
 
-### -field <b>Count</b>
+### -field Count
 
 <dd>
 <p>The number of performance states in the set.</p>
 </dd>
 
-### -field <b>States</b>
+### -field States
 
 <dd>
 <p>A pointer to a <a href="..\wdm\ns-wdm--po-fx-perf-state.md">PO_FX_PERF_STATE</a> array. The length of this array is specified by the <b>Count</b> member. Each array element describes one power state in the set.</p>
@@ -112,19 +112,19 @@ typedef struct _PO_FX_COMPONENT_PERF_SET {
 </dl>
 </dd>
 
-### -field <b>Range</b>
+### -field Range
 
 <dd>
 <p>For sets that represent a continuous distribution of performance states (that is, where the <b>Type</b> member is <b>PoFxPerfStateTypeRange</b>), this nested structure describes the minimum and maximum value of the range of performance states.</p>
 <dl>
 
-### -field <b>Minimum</b>
+### -field Minimum
 
 <dd>
 <p>The minimum performance state value.</p>
 </dd>
 
-### -field <b>Maximum</b>
+### -field Maximum
 
 <dd>
 <p>The maximum performance state value.</p>

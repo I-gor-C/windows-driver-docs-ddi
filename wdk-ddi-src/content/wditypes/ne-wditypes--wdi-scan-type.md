@@ -7,7 +7,7 @@ old-location: netvista\wdi_scan_type.htm
 old-project: netvista
 ms.assetid: DF4ECD03-2C2F-44B3-82BE-E57B333AF069
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef enum _WDI_SCAN_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WDI_SCAN_TYPE_ACTIVE_ONLY"></a><a id="wdi_scan_type_active_only"></a><b>WDI_SCAN_TYPE_ACTIVE_ONLY</b>
+### -field WDI_SCAN_TYPE_ACTIVE_ONLY
 
 <dd>
 <p>The port should transmit a probe request on the channels that it scans. Even for active scans, the port must follow regulatory restrictions on the channel and must not scan on channels that would need a passive scan.</p>
 </dd>
 
-### -field <a id="WDI_SCAN_TYPE_PASSIVE_ONLY"></a><a id="wdi_scan_type_passive_only"></a><b>WDI_SCAN_TYPE_PASSIVE_ONLY</b>
+### -field WDI_SCAN_TYPE_PASSIVE_ONLY
 
 <dd>
 <p>The port should not transmit a probe request on the channels that it scans.</p>
 </dd>
 
-### -field <a id="WDI_SCAN_TYPE_AUTO"></a><a id="wdi_scan_type_auto"></a><b>WDI_SCAN_TYPE_AUTO</b>
+### -field WDI_SCAN_TYPE_AUTO
 
 <dd>
 <p>The port can perform an active or passive can or can use a combination of both scan types. It should prefer using Active scans when possible. This is the default scan type setting.</p>

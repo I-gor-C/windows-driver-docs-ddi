@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTCreateKeyedMutex(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createkeyedmutex.md">D3DKMT_CREATEKEYEDMUTEX</a> structure that describes a keyed mutex object to create. </p>

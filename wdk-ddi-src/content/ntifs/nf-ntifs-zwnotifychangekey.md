@@ -63,26 +63,26 @@ NTSTATUS ZwNotifyChangeKey(
 ## -parameters
 <dl>
 
-### -param <i>KeyHandle</i> [in]
+### -param KeyHandle [in]
 
 <dd>
 <p>Handle to the key to register a notification routine for. This handle is created by a successful call to <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> or <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>. The caller must have specified KEY_NOTIFY access.</p>
 </dd>
 
-### -param <i>Event</i> [in, optional]
+### -param Event [in, optional]
 
 <dd>
 <p>Handle to a caller-created event. If not <b>NULL</b>, the caller is placed into a wait state until the operation succeeds, at which time the event is set to the Signaled state. </p>
 </dd>
 
-### -param <i>ApcRoutine</i> [in, optional]
+### -param ApcRoutine [in, optional]
 
 <dd>
 <p> For a user-mode call, this parameter points to a caller-supplied APC routine that is run after the operation is completed. This parameter is optional and can be <b>NULL</b>.</p>
 <p>  For a kernel-mode call, this parameter must be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>ApcContext</i> [in, optional]
+### -param ApcContext [in, optional]
 
 <dd>
 <p>The meaning of this parameter depends on whether the routine is called from kernel mode or from user mode. For a kernel-mode call, set this parameter to one of the following <a href="..\wdm\ne-wdm--work-queue-type.md">WORK_QUEUE_TYPE</a> enumeration values:</p>
@@ -97,38 +97,38 @@ NTSTATUS ZwNotifyChangeKey(
 <p>The parameter value must be cast to type PVOID. For a user-mode call, this parameter points to a caller-specified context for the APC routine. This value is passed to the APC routine when it is run. </p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>Pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that contains the final status and information about the operation. For successful calls that return data, the number of bytes written to <i>Buffer</i> is supplied in <i>IoStatusBlock</i>-&gt;<b>Information</b>.</p>
 </dd>
 
-### -param <i>CompletionFilter</i> [in]
+### -param CompletionFilter [in]
 
 <dd>
 <p>Bitmask of operations that cause the driver to be notified. Specify one or more of the following flags:</p>
 <p></p>
 <dl>
 
-### -param <a id="REG_NOTIFY_CHANGE_NAME"></a><a id="reg_notify_change_name"></a>REG_NOTIFY_CHANGE_NAME
+### -param REG_NOTIFY_CHANGE_NAME
 
 <dd>
 <p>Notify the caller if a subkey is added or deleted.</p>
 </dd>
 
-### -param <a id="REG_NOTIFY_CHANGE_ATTRIBUTES"></a><a id="reg_notify_change_attributes"></a>REG_NOTIFY_CHANGE_ATTRIBUTES
+### -param REG_NOTIFY_CHANGE_ATTRIBUTES
 
 <dd>
 <p>Notify the caller of changes to the attributes of the key, such as the security descriptor information.</p>
 </dd>
 
-### -param <a id="REG_NOTIFY_CHANGE_LAST_SET"></a><a id="reg_notify_change_last_set"></a>REG_NOTIFY_CHANGE_LAST_SET
+### -param REG_NOTIFY_CHANGE_LAST_SET
 
 <dd>
 <p>Notify the caller of changes to a value of the key. This can include adding or deleting a value, or changing an existing value. (The caller receives no notification if the new value written to the key matches the previous value of the key.)</p>
 </dd>
 
-### -param <a id="REG_NOTIFY_CHANGE_SECURITY"></a><a id="reg_notify_change_security"></a>REG_NOTIFY_CHANGE_SECURITY
+### -param REG_NOTIFY_CHANGE_SECURITY
 
 <dd>
 <p>Notify the caller of changes to the security descriptor of the key.</p>
@@ -136,25 +136,25 @@ NTSTATUS ZwNotifyChangeKey(
 </dl>
 </dd>
 
-### -param <i>WatchTree</i> [in]
+### -param WatchTree [in]
 
 <dd>
 <p>If <b>TRUE</b>, the driver is notified about changes to all subkeys of the specified key. If <b>FALSE</b>, the driver is only notified for changes to the specified key.</p>
 </dd>
 
-### -param <i>Buffer</i> [out, optional]
+### -param Buffer [out, optional]
 
 <dd>
 <p>Reserved. Specify <b>NULL</b>.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Reserved. Specify zero.</p>
 </dd>
 
-### -param <i>Asynchronous</i> [in]
+### -param Asynchronous [in]
 
 <dd>
 <p>If <b>FALSE</b>, the routine does not return until the specified event occurs. If <b>TRUE</b>, the routine returns immediately. </p>

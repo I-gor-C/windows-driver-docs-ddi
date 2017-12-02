@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="ISCSI_ENCRYPT_NONE"></a><a id="iscsi_encrypt_none"></a><b>ISCSI_ENCRYPT_NONE</b>
+### -field ISCSI_ENCRYPT_NONE
 
 <dd>
 <p>No type of encryption is supported. </p>
 </dd>
 
-### -field <a id="ISCSI_ENCRYPT_3DES_HMAC_SHA1"></a><a id="iscsi_encrypt_3des_hmac_sha1"></a><b>ISCSI_ENCRYPT_3DES_HMAC_SHA1</b>
+### -field ISCSI_ENCRYPT_3DES_HMAC_SHA1
 
 <dd>
 <p>The initiator or target supports triple data encryption standard (DES), hashed message authentication code (HMAC), and the secure hash algorithm, version 1. </p>
 </dd>
 
-### -field <a id="ISCSI_ENCRYPT_AES_CTR"></a><a id="iscsi_encrypt_aes_ctr"></a><b>ISCSI_ENCRYPT_AES_CTR</b>
+### -field ISCSI_ENCRYPT_AES_CTR
 
 <dd>
 <p>The initiator or target supports advanced encryption standard (AES) counter mode (CTR). </p>

@@ -62,49 +62,49 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>Specifies the current status, or the failure code for a JOB_ERROR event.</p>
 </dd>
 
-### -field <b>pDocumentName</b>
+### -field pDocumentName
 
 <dd>
 <p>Specifies the name of the printed document.</p>
 </dd>
 
-### -field <b>pUserName</b>
+### -field pUserName
 
 <dd>
 <p>Specifies the user who submitted the job.</p>
 </dd>
 
-### -field <b>pMachineName</b>
+### -field pMachineName
 
 <dd>
 <p>Specifies the name of the client machine printing the job</p>
 </dd>
 
-### -field <b>pPrinterName</b>
+### -field pPrinterName
 
 <dd>
 <p>Specifies the name of the print connection.</p>
 </dd>
 
-### -field <b>pPortName</b>
+### -field pPortName
 
 <dd>
 <p>Specifies the name of the port the job printed on.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the 64-bit size of the job.</p>
 </dd>
 
-### -field <b>TotalPages</b>
+### -field TotalPages
 
 <dd>
 <p>Specifies the total number of pages in the job.</p>

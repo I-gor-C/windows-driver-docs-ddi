@@ -55,13 +55,13 @@ typedef struct _D3DHAL_DP2SETRENDERTARGET2 {
 ## -struct-fields
 <dl>
 
-### -field <b>RTIndex</b>
+### -field RTIndex
 
 <dd>
 <p>Specifies an index into the rendering target.</p>
 </dd>
 
-### -field <b>hRenderTarget</b>
+### -field hRenderTarget
 
 <dd>
 <p>Specifies a handle to the rendering target.</p>

@@ -7,7 +7,7 @@ old-location: wdf\iqueuecallbackwrite.htm
 old-project: wdf
 ms.assetid: 8b44e1e1-c648-4eec-bb3e-ab327dc08f98
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

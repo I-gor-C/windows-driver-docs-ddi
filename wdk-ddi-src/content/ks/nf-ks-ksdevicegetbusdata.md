@@ -58,31 +58,31 @@ ULONG KsDeviceGetBusData(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A pointer to the <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> structure representing the given AVStream device for which data from the bus should be read. </p>
 </dd>
 
-### -param <i>DataType</i> [in]
+### -param DataType [in]
 
 <dd>
 <p>This parameter indicates the type of bus data to be read. Zero corresponds to configuration space. For further information, see the discussion of <b>WhichSpace</b> in the reference page for <a href="https://msdn.microsoft.com/library/windows/hardware/ff551727">IRP_MN_READ_CONFIG</a>.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to a buffer that receives the data read from the bus. Must be at least as large as <i>Length</i>.</p>
 </dd>
 
-### -param <i>Offset</i> [in]
+### -param Offset [in]
 
 <dd>
 <p>This parameter contains the byte offset in the space specified by <i>DataType</i> from which data is read.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>This parameter specifies the number of bytes to read into <i>Buffer</i>.</p>

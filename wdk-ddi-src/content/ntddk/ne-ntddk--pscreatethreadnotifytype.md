@@ -55,14 +55,14 @@ typedef enum _PSCREATETHREADNOTIFYTYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="PsCreateThreadNotifyNonSystem"></a><a id="pscreatethreadnotifynonsystem"></a><a id="PSCREATETHREADNOTIFYNONSYSTEM"></a><b>PsCreateThreadNotifyNonSystem</b>
+### -field PsCreateThreadNotifyNonSystem
 
 <dd>
 <p>The driver-registered callback function is executed on the new non-system thread, which enables the callback function to perform tasks such as setting the initial thread context.
 </p>
 </dd>
 
-### -field <a id="PsCreateThreadNotifySubsystems"></a><a id="pscreatethreadnotifysubsystems"></a><a id="PSCREATETHREADNOTIFYSUBSYSTEMS"></a><b>PsCreateThreadNotifySubsystems</b>
+### -field PsCreateThreadNotifySubsystems
 
 <dd>
 <p>Indicates that the driver-registered callback function is invoked for threads of all subsystems.  Drivers can call <a href="base.ntqueryinformationthread">NtQueryInformationThread</a> to determine the underlying subsystem. The query retrieves a  <a href="..\ntddk\ne-ntddk--subsystem-information-type.md">SUBSYSTEM_INFORMATION_TYPE</a> value.</p>

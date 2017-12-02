@@ -60,43 +60,43 @@ typedef struct _DXGKARG_CREATECONTEXT {
 ## -struct-fields
 <dl>
 
-### -field <b>hContext</b>
+### -field hContext
 
 <dd>
 <p>[out] A handle to the context that a display miniport driver returns from a call to its <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a> function. This handle represents the context in subsequent calls to the driver's <a href="display.dxgkddipresent">DxgkDdiPresent</a>, <a href="display.dxgkddirender">DxgkDdiRender</a>, and <a href="display.dxgkddidestroycontext">DxgkDdiDestroyContext</a> functions.</p>
 </dd>
 
-### -field <b>NodeOrdinal</b>
+### -field NodeOrdinal
 
 <dd>
 <p>[in] The node that the context is created for.</p>
 </dd>
 
-### -field <b>EngineAffinity</b>
+### -field EngineAffinity
 
 <dd>
 <p>[in] The engine within the node that <b>NodeOrdinal</b> specifies that the context is created for. </p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-createcontextflags.md">DXGK_CREATECONTEXTFLAGS</a> structure that identifies how to create the context.</p>
 </dd>
 
-### -field <b>pPrivateDriverData</b>
+### -field pPrivateDriverData
 
 <dd>
 <p>[in] A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver. </p>
 </dd>
 
-### -field <b>PrivateDriverDataSize</b>
+### -field PrivateDriverDataSize
 
 <dd>
 <p>[in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.</p>
 </dd>
 
-### -field <b>ContextInfo</b>
+### -field ContextInfo
 
 <dd>
 <p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-contextinfo.md">DXGK_CONTEXTINFO</a> structure that the display miniport driver populates to describe the device context.</p>

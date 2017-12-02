@@ -58,19 +58,19 @@ typedef struct _D3DKMT_CREATESTANDARDALLOCATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of the standard allocation.</p>
 </dd>
 
-### -field <b>ExistingHeapData</b>
+### -field ExistingHeapData
 
 <dd>
 <p>Holds information on the existing heap.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Holds the flags needed to create a standard allocation.</p>

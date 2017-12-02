@@ -54,7 +54,7 @@ typedef struct _D3DKMT_DESTROYPROTECTEDSESSION {
 ## -struct-fields
 <dl>
 
-### -field <b>hHandle</b>
+### -field hHandle
 
 <dd>
 <p>The protected session handle.</p>

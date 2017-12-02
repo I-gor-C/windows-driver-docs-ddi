@@ -7,7 +7,7 @@ old-location: sensors\gnss_supl_ni_info.htm
 old-project: sensors
 ms.assetid: 78D19A0C-E247-4DDA-A689-494B5A61A673
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_SUPL_NI_INFO, GNSS_SUPL_NI_INFO, *PGNSS_SUPL_NI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,33 +58,33 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>RequestorId[MAX_PATH]</b>
+### -field RequestorId[MAX_PATH]
 
 <dd>
 <p>Requestor ID.</p>
 <p>This will be displayed on the notification dialog to the user. The GNSS driver must provide a UNICODE string that is decoded per the encoding scheme required by the mobile operator.</p>
 </dd>
 
-### -field <b>ClientName[MAX_PATH]</b>
+### -field ClientName[MAX_PATH]
 
 <dd>
 <p>Name of the client that requests the location of the device.</p>
 <p>This will be displayed on the notification dialog to the user. The GNSS driver must provide a UNICODE string that is decoded per the encoding scheme required by the mobile operator.</p>
 </dd>
 
-### -field <b>SuplNiUrl[MAX_SERVER_URL_NAME]</b>
+### -field SuplNiUrl[MAX_SERVER_URL_NAME]
 
 <dd>
 <p>NI URL information.</p>

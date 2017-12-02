@@ -7,7 +7,7 @@ old-location: wdf\wdf_request_type__umdf_.htm
 old-project: wdf
 ms.assetid: a883f22e-0d6f-4755-882b-ad5a60a09271
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,91 +71,91 @@ typedef enum _WDF_REQUEST_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="WdfRequestUndefined"></a><a id="wdfrequestundefined"></a><a id="WDFREQUESTUNDEFINED"></a><b>WdfRequestUndefined</b>
+### -field WdfRequestUndefined
 
 <dd>
 <p>The type of the request object is undefined.</p>
 </dd>
 
-### -field <a id="WdfRequestCreate"></a><a id="wdfrequestcreate"></a><a id="WDFREQUESTCREATE"></a><b>WdfRequestCreate</b>
+### -field WdfRequestCreate
 
 <dd>
 <p>The request object represents a file creation request. The driver receives this type of request object when an application opens a device by calling the Microsoft Win32 <b>CreateFile</b> function. The framework delivers this type of request, along with a newly created file object (<a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>), to the driver's <a href="wdf.iqueuecallbackcreate_oncreatefile">IQueueCallbackCreate::OnCreateFile</a> callback function. The new file object represents the HANDLE-typed file handle that the Win32 <b>CreateFile</b> returns. </p>
 </dd>
 
-### -field <a id="WdfRequestCleanup"></a><a id="wdfrequestcleanup"></a><a id="WDFREQUESTCLEANUP"></a><b>WdfRequestCleanup</b>
+### -field WdfRequestCleanup
 
 <dd>
 <p> The request object represents a file cleanup request. The driver receives this type of request object after an application's call to the Win32 <b>CloseHandle</b> function closes the last handle to a file object, but possibly before all of the file's outstanding I/O requests have been completed or canceled. The framework delivers this type of request to the driver's <a href="wdf.ifilecallbackcleanup_oncleanupfile">IFileCallbackCleanup::OnCleanupFile</a> callback function. (Also see <b>WdfRequestClose</b>.)</p>
 </dd>
 
-### -field <a id="WdfRequestRead"></a><a id="wdfrequestread"></a><a id="WDFREQUESTREAD"></a><b>WdfRequestRead</b>
+### -field WdfRequestRead
 
 <dd>
 <p>The request object represents a read request. This driver receives this type of I/O request when an application calls the Win32 <b>ReadFile</b> or <b>ReadFileEx</b> function. The framework delivers this type of request to the driver's <a href="wdf.iqueuecallbackread_onread">IQueueCallbackRead::OnRead</a> callback function.</p>
 </dd>
 
-### -field <a id="WdfRequestWrite"></a><a id="wdfrequestwrite"></a><a id="WDFREQUESTWRITE"></a><b>WdfRequestWrite</b>
+### -field WdfRequestWrite
 
 <dd>
 <p>The request object represents a write request. This driver receives this type of I/O request when an application calls the Win32 <b>WriteFile</b> or <b>WriteFileEx</b> function. The framework delivers this type of request to  the driver's <a href="wdf.iqueuecallbackwrite_onwrite">IQueueCallbackWrite::OnWrite</a> callback function.</p>
 </dd>
 
-### -field <a id="WdfRequestDeviceIoControl"></a><a id="wdfrequestdeviceiocontrol"></a><a id="WDFREQUESTDEVICEIOCONTROL"></a><b>WdfRequestDeviceIoControl</b>
+### -field WdfRequestDeviceIoControl
 
 <dd>
 <p>The request object represents a device I/O control request. This driver receives this type of I/O request when an application calls the Win32 <b>DeviceIoControl</b> function. The framework delivers this type of request to  the driver's <a href="wdf.iqueuecallbackdeviceiocontrol_ondeviceiocontrol">IQueueCallbackDeviceIoControl::OnDeviceIoControl</a> callback function.</p>
 </dd>
 
-### -field <a id="WdfRequestClose"></a><a id="wdfrequestclose"></a><a id="WDFREQUESTCLOSE"></a><b>WdfRequestClose</b>
+### -field WdfRequestClose
 
 <dd>
 <p>The request object represents a file close request.  The driver receives this type of request object after an application's call to the Win32 <b>CloseHandle</b> function closes the last handle to a file object, and after all of the file's outstanding I/O requests have been completed or canceled.  The framework delivers this type of request to the driver's <a href="wdf.ifilecallbackclose_onclosefile">IFileCallbackClose::OnCloseFile</a> callback function. (Also see <b>WdfRequestCleanup</b>.)</p>
 </dd>
 
-### -field <a id="WdfRequestUsb"></a><a id="wdfrequestusb"></a><a id="WDFREQUESTUSB"></a><b>WdfRequestUsb</b>
+### -field WdfRequestUsb
 
 <dd>
 <p>The request object was sent to a USB port. The <a href="wdf.iwdfrequestcompletionparams_getcompletedrequesttype">IWDFRequestCompletionParams::GetCompletedRequestType</a> method can return this value. </p>
 </dd>
 
-### -field <a id="WdfRequestOther"></a><a id="wdfrequestother"></a><a id="WDFREQUESTOTHER"></a><b>WdfRequestOther</b>
+### -field WdfRequestOther
 
 <dd>
 <p>This value is reserved for internal use only.</p>
 </dd>
 
-### -field <a id="WdfRequestInternalIoctl"></a><a id="wdfrequestinternalioctl"></a><a id="WDFREQUESTINTERNALIOCTL"></a><b>WdfRequestInternalIoctl</b>
+### -field WdfRequestInternalIoctl
 
 <dd>
 <p>This value is reserved for internal use only.</p>
 </dd>
 
-### -field <a id="WdfRequestTypeNoFormat"></a><a id="wdfrequesttypenoformat"></a><a id="WDFREQUESTTYPENOFORMAT"></a><b>WdfRequestTypeNoFormat</b>
+### -field WdfRequestTypeNoFormat
 
 <dd>
 <p>The request object's type has not been specified.</p>
 </dd>
 
-### -field <a id="WdfRequestFlushBuffers_"></a><a id="wdfrequestflushbuffers_"></a><a id="WDFREQUESTFLUSHBUFFERS_"></a><b>WdfRequestFlushBuffers </b>
+### -field WdfRequestFlushBuffers 
 
 <dd>
 <p>The request object represents a request to flush cached buffers. The framework delivers this type of request to the driver's <a href="wdf.iqueuecallbackdefaultiohandler_ondefaultiohandler">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a> callback function. </p>
 </dd>
 
-### -field <a id="WdfRequestQueryInformation_"></a><a id="wdfrequestqueryinformation_"></a><a id="WDFREQUESTQUERYINFORMATION_"></a><b>WdfRequestQueryInformation </b>
+### -field WdfRequestQueryInformation 
 
 <dd>
 <p>The request object represents a request to obtain information about a file. The framework delivers this type of request to the driver's <a href="wdf.iqueuecallbackdefaultiohandler_ondefaultiohandler">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a> callback function. </p>
 </dd>
 
-### -field <a id="WdfRequestSetInformation"></a><a id="wdfrequestsetinformation"></a><a id="WDFREQUESTSETINFORMATION"></a><b>WdfRequestSetInformation</b>
+### -field WdfRequestSetInformation
 
 <dd>
 <p>The request object represents a request to set information about a file. The framework delivers this type of request to the driver's <a href="wdf.iqueuecallbackdefaultiohandler_ondefaultiohandler">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a> callback function. </p>
 </dd>
 
-### -field <a id="WdfRequestMaximum"></a><a id="wdfrequestmaximum"></a><a id="WDFREQUESTMAXIMUM"></a><b>WdfRequestMaximum</b>
+### -field WdfRequestMaximum
 
 <dd>
 <p>The maximum value for the enumeration is exceeded.</p>
@@ -207,4 +207,4 @@ typedef enum _WDF_REQUEST_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

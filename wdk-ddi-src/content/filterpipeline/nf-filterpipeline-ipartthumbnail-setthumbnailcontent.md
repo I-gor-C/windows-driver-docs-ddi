@@ -54,7 +54,7 @@ HRESULT SetThumbnailContent(
 ## -parameters
 <dl>
 
-### -param <i>contentType</i> [in]
+### -param contentType [in]
 
 <dd>
 <p>The type of content for the thumbnail.</p>

@@ -7,7 +7,7 @@ old-location: sensors\gnss_geofence_state.htm
 old-project: sensors
 ms.assetid: 881363B2-CF4C-4D18-9F45-829771A2D325
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,19 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="GNSS_GeofenceState_Unknown"></a><a id="gnss_geofencestate_unknown"></a><a id="GNSS_GEOFENCESTATE_UNKNOWN"></a><b>GNSS_GeofenceState_Unknown</b>
+### -field GNSS_GeofenceState_Unknown
 
 <dd>
 <p>The state of the geofence is unknown.</p>
 </dd>
 
-### -field <a id="GNSS_GeofenceState_Entered"></a><a id="gnss_geofencestate_entered"></a><a id="GNSS_GEOFENCESTATE_ENTERED"></a><b>GNSS_GeofenceState_Entered</b>
+### -field GNSS_GeofenceState_Entered
 
 <dd>
 <p>The geofence has been entered.</p>
 </dd>
 
-### -field <a id="GNSS_GeofenceState_Exited"></a><a id="gnss_geofencestate_exited"></a><a id="GNSS_GEOFENCESTATE_EXITED"></a><b>GNSS_GeofenceState_Exited</b>
+### -field GNSS_GeofenceState_Exited
 
 <dd>
 <p>The geofence has been exited.</p>

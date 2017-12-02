@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains the handle to the default endpoint to update in a framework request that is passed by UCX when it invokes <a href="buses.evt_ucx_default_endpoint_update">EVT_UCX_DEFAULT_ENDPOINT_UPDATE</a> callback function.</p>
+<p>Contains the handle to the default endpoint to update in a framework request that is passed by UCX when it invokes <a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-default-endpoint-update.md">EVT_UCX_DEFAULT_ENDPOINT_UPDATE</a> callback function.</p>
 
 
 ## -syntax
@@ -61,19 +61,19 @@ typedef struct _DEFAULT_ENDPOINT_UPDATE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
-<p>A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that contains header information related to the USB device or hub endpoint.</p>
+<p>A <a href="..\ucxusbdevice\ns-ucxusbdevice--usbdevice-mgmt-header.md">USBDEVICE_MGMT_HEADER</a> structure that contains header information related to the USB device or hub endpoint.</p>
 </dd>
 
-### -field <b>DefaultEndpoint</b>
+### -field DefaultEndpoint
 
 <dd>
 <p>A handle to the  default endpoint to update.</p>
 </dd>
 
-### -field <b>MaxPacketSize</b>
+### -field MaxPacketSize
 
 <dd>
 <p>The maximum packet size of the default endpoint.</p>
@@ -100,7 +100,7 @@ typedef struct _DEFAULT_ENDPOINT_UPDATE {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.evt_ucx_default_endpoint_update">EVT_UCX_DEFAULT_ENDPOINT_UPDATE</a>
+<a href="..\ucxendpoint\nc-ucxendpoint-evt-ucx-default-endpoint-update.md">EVT_UCX_DEFAULT_ENDPOINT_UPDATE</a>
 </dt>
 </dl>
 <p> </p>

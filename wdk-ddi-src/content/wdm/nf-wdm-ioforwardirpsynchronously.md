@@ -56,13 +56,13 @@ BOOLEAN IoForwardIrpSynchronously(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Specifies the device object of the driver to which the IRP is sent. </p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP to send. </p>

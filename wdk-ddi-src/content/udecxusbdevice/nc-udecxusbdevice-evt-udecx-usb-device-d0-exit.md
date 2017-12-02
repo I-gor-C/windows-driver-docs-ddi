@@ -60,22 +60,22 @@ NTSTATUS EvtUsbDeviceLinkPowerExit(
 ## -parameters
 <dl>
 
-### -param <i>UdecxWdfDevice</i> [in]
+### -param UdecxWdfDevice [in]
 
 <dd>
-<p>A handle to a framework device object that represents the controller to which the USB device is attached. The client driver initialized this object in a previous call to <a href="buses.udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a>.</p>
+<p>A handle to a framework device object that represents the controller to which the USB device is attached. The client driver initialized this object in a previous call to <a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation.md">UdecxWdfDeviceAddUsbDeviceEmulation</a>.</p>
 </dd>
 
-### -param <i>UdecxUsbDevice</i> [in]
+### -param UdecxUsbDevice [in]
 
 <dd>
-<p>A handle to UDE device object. The client driver created this object in a previous call to <a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.</p>
+<p>A handle to UDE device object. The client driver created this object in a previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a>.</p>
 </dd>
 
-### -param <i>WakeSetting</i> [in]
+### -param WakeSetting [in]
 
 <dd>
-<p>A <a href="buses.udecx_usb_device_wake_setting">UDECX_USB_DEVICE_WAKE_SETTING</a>-type value that indicates remote wake capability of the USB device.</p>
+<p>A <a href="..\udecxusbdevice\ne-udecxusbdevice--udecx-usb-device-wake-setting.md">UDECX_USB_DEVICE_WAKE_SETTING</a>-type value that indicates remote wake capability of the USB device.</p>
 </dd>
 </dl>
 
@@ -83,12 +83,12 @@ NTSTATUS EvtUsbDeviceLinkPowerExit(
 <p>If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE.</p>
 
 ## -remarks
-<p>The client driver registered the function in a previous call to <a href="buses.udecxusbdeviceinitsetstatechangecallbacks">UdecxUsbDeviceInitSetStateChangeCallbacks</a> by supplying a function pointer to its implementation.</p>
+<p>The client driver registered the function in a previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitsetstatechangecallbacks.md">UdecxUsbDeviceInitSetStateChangeCallbacks</a> by supplying a function pointer to its implementation.</p>
 
 <p>In the callback implementation, the client driver for the USB device is expected to perform steps to send the device to a low power state. In this function, the driver can initiate its wake-up from a low link power state, function suspend, or both.
-To do so, the driver for a USB 2.0 device must call the <a href="buses.udecxusbdevicesignalwake">UdecxUsbDeviceSignalWake</a> method.  USB 3.0 devices must use <a href="buses.udecxusbdevicesignalfunctionwake">UdecxUsbDeviceSignalFunctionWake</a>.</p>
+To do so, the driver for a USB 2.0 device must call the <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicesignalwake.md">UdecxUsbDeviceSignalWake</a> method.  USB 3.0 devices must use <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicesignalfunctionwake.md">UdecxUsbDeviceSignalFunctionWake</a>.</p>
 
-<p>The power request may be completed asynchronously by returning STATUS_PENDING, and then later calling <a href="buses.udecxusbdevicelinkpowerexitcomplete">UdecxUsbDeviceLinkPowerExitComplete</a> with the actual completion code.
+<p>The power request may be completed asynchronously by returning STATUS_PENDING, and then later calling <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicelinkpowerexitcomplete.md">UdecxUsbDeviceLinkPowerExitComplete</a> with the actual completion code.
 </p>
 
 ## -requirements
@@ -140,13 +140,13 @@ To do so, the driver for a USB 2.0 device must call the <a href="buses.udecxusbd
 ## -see-also
 <dl>
 <dt>
-<a href="buses.udecxusbdevicesignalwake">UdecxUsbDeviceSignalWake</a>
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicesignalwake.md">UdecxUsbDeviceSignalWake</a>
 </dt>
 <dt>
-<a href="buses.udecxusbdevicelinkpowerexitcomplete">UdecxUsbDeviceLinkPowerExitComplete</a>
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicelinkpowerexitcomplete.md">UdecxUsbDeviceLinkPowerExitComplete</a>
 </dt>
 <dt>
-<a href="buses.evt_udecx_usb_device_d0_entry">EVT_UDECX_USB_DEVICE_D0_ENTRY</a>
+<a href="..\udecxusbdevice\nc-udecxusbdevice-evt-udecx-usb-device-d0-entry.md">EVT_UDECX_USB_DEVICE_D0_ENTRY</a>
 </dt>
 <dt>
 <a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>

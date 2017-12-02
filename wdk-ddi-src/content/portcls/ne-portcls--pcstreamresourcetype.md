@@ -56,19 +56,19 @@ typedef enum PcStreamResourceType {
 ## -enum-fields
 <dl>
 
-### -field <a id="ePcStreamResourceInterrupt"></a><a id="epcstreamresourceinterrupt"></a><a id="EPCSTREAMRESOURCEINTERRUPT"></a><b>ePcStreamResourceInterrupt</b>
+### -field ePcStreamResourceInterrupt
 
 <dd>
 <p>The resource is a PKINTERRUPT. </p>
 </dd>
 
-### -field <a id="ePcStreamResourceThread"></a><a id="epcstreamresourcethread"></a><a id="EPCSTREAMRESOURCETHREAD"></a><b>ePcStreamResourceThread</b>
+### -field ePcStreamResourceThread
 
 <dd>
 <p> The resource is a PETHREAD. </p>
 </dd>
 
-### -field <a id="ePcStreamResourceSet"></a><a id="epcstreamresourceset"></a><a id="EPCSTREAMRESOURCESET"></a><b>ePcStreamResourceSet</b>
+### -field ePcStreamResourceSet
 
 <dd>
 <p>The resource is a link to another device-stack’s resources. </p>

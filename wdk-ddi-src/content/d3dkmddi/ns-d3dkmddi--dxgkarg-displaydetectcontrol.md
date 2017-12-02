@@ -57,19 +57,19 @@ typedef struct _DXGKARG_DISPLAYDETECTCONTROL {
 ## -struct-fields
 <dl>
 
-### -field <b>TargetID</b>
+### -field TargetID
 
 <dd>
 <p>The identifier of a display adapter's video present target.  Ignored if the type is not DXGK_DDCT_POLLONE.</p>
 </dd>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Detection action type requested.</p>
 </dd>
 
-### -field <b>NonDestructiveOnly</b>
+### -field NonDestructiveOnly
 
 <dd>
 <p>Only used for polling the types of requests.
@@ -78,7 +78,7 @@ If FALSE, the driver should perform any action necessary to detect the status of
 </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This value is reserved for system use.</p>

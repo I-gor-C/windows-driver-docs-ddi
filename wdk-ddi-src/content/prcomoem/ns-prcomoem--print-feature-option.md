@@ -56,13 +56,13 @@ typedef struct _PRINT_FEATURE_OPTION {
 ## -struct-fields
 <dl>
 
-### -field <b>pszFeature</b>
+### -field pszFeature
 
 <dd>
 <p>The printing feature.</p>
 </dd>
 
-### -field <b>pszOption</b>
+### -field pszOption
 
 <dd>
 <p>One of the options for the printing feature.</p>

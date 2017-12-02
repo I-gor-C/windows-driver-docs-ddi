@@ -7,7 +7,7 @@ old-location: netvista\npi_registration_instance.htm
 old-project: netvista
 ms.assetid: a368f9d9-a7e0-4b35-ba14-b0919f74029d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NPI_REGISTRATION_INSTANCE, NPI_REGISTRATION_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,20 +60,20 @@ typedef struct _NPI_REGISTRATION_INSTANCE {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the NMR with which the network module is registering. A network module should set
      this member to zero.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of the NPI_REGISTRATION_INSTANCE structure.</p>
 </dd>
 
-### -field <b>NpiId</b>
+### -field NpiId
 
 <dd>
 <p>A pointer to the 
@@ -94,7 +94,7 @@ typedef CONST NPIID *PNPIID;</pre>
 </table></span></div>
 </dd>
 
-### -field <b>ModuleId</b>
+### -field ModuleId
 
 <dd>
 <p>A pointer to an 
@@ -102,7 +102,7 @@ typedef CONST NPIID *PNPIID;</pre>
      identifies the network module.</p>
 </dd>
 
-### -field <b>Number</b>
+### -field Number
 
 <dd>
 <p>The implementation number of the 
@@ -117,7 +117,7 @@ typedef CONST NPIID *PNPIID;</pre>
      zero.</p>
 </dd>
 
-### -field <b>NpiSpecificCharacteristics</b>
+### -field NpiSpecificCharacteristics
 
 <dd>
 <p>A pointer to a structure that specifies characteristics that are unique to the network module. The
@@ -196,4 +196,4 @@ typedef CONST NPIID *PNPIID;</pre>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_REGISTRATION_INSTANCE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_REGISTRATION_INSTANCE structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

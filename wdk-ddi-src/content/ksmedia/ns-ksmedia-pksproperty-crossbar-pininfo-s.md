@@ -59,25 +59,25 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>Direction</b>
+### -field Direction
 
 <dd>
 <p>Specifies the minidriver-provided direction of data flow for the pin specified in <b>Index</b>. This value can be either <b>KSPIN_DATAFLOW_IN</b> or KSPIN_DATAFLOW_OUT.</p>
 </dd>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>Specifies the zero-based index of the pin for which crossbar information is being queried. Input pins are queried separately from output pins.</p>
 </dd>
 
-### -field <b>PinType</b>
+### -field PinType
 
 <dd>
 <p>Specifies the minidriver-provided type of physical connector. This member must be set to one of the KS_PhysicalConnectorType enumerated values defined in <i>ksmedia.h</i>:</p>
@@ -107,13 +107,13 @@ typedef struct {
 <p>KS_PhysConn_Audio_AudioDecoder</p>
 </dd>
 
-### -field <b>RelatedPinIndex</b>
+### -field RelatedPinIndex
 
 <dd>
 <p>Specifies the optional pin index of a pin that is related to the pin specified in <b>Index</b>. For example, the minidriver can set the <b>RelatedPinIndex</b> to the pin index of the audio stream that goes with a video stream in <b>Index</b>. <b>RelatedPinIndex</b> applies only to pins of the same direction (input or output) as the pin being queried. If no other pins are related to the current pin, the minidriver should return (-1).</p>
 </dd>
 
-### -field <b>Medium</b>
+### -field Medium
 
 <dd>
 <p>Specifies a <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structure that represents the hardware connection for the pin. This information is returned by the minidriver.</p>

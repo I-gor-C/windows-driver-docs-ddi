@@ -55,13 +55,13 @@ typedef enum _D3DKMT_QUEUEDLIMIT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_SET_QUEUEDLIMIT_PRESENT"></a><a id="d3dkmt_set_queuedlimit_present"></a><b>D3DKMT_SET_QUEUEDLIMIT_PRESENT</b>
+### -field D3DKMT_SET_QUEUEDLIMIT_PRESENT
 
 <dd>
 <p>Indicates to set the limit for the number of present operations that can be queued. </p>
 </dd>
 
-### -field <a id="D3DKMT_GET_QUEUEDLIMIT_PRESENT"></a><a id="d3dkmt_get_queuedlimit_present"></a><b>D3DKMT_GET_QUEUEDLIMIT_PRESENT</b>
+### -field D3DKMT_GET_QUEUEDLIMIT_PRESENT
 
 <dd>
 <p>Indicates to retrieve the limit for the number of present operations that can be queued. </p>

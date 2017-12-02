@@ -59,31 +59,31 @@ NTSTATUS ZwQueryInformationResourceManager(
 ## -parameters
 <dl>
 
-### -param <i>ResourceManagerHandle</i> [in]
+### -param ResourceManagerHandle [in]
 
 <dd>
 <p>A handle to a resource manager object that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a> or <a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a>. The handle must have RESOURCEMANAGER_QUERY_INFORMATION access to the object.</p>
 </dd>
 
-### -param <i>ResourceManagerInformationClass</i> [in]
+### -param ResourceManagerInformationClass [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--resourcemanager-information-class.md">RESOURCEMANAGER_INFORMATION_CLASS</a>-typed value that specifies the information to retrieve. This value must be <b>ResourceManagerBasicInformation</b>.</p>
 </dd>
 
-### -param <i>ResourceManagerInformation</i> [out]
+### -param ResourceManagerInformation [out]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wdm\ns-wdm--resourcemanager-basic-information.md">RESOURCEMANAGER_BASIC_INFORMATION</a> structure that receives information from <b>ZwQueryInformationResourceManager</b>.</p>
 </dd>
 
-### -param <i>ResourceManagerInformationLength</i> [in]
+### -param ResourceManagerInformationLength [in]
 
 <dd>
 <p>The length, in bytes, of the buffer that the <i>ResourceManagerInformation</i> parameter points to.</p>
 </dd>
 
-### -param <i>ReturnLength</i> [out, optional]
+### -param ReturnLength [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated variable that receives the length, in bytes, of the information that KTM writes to the <i>ResourceManagerInformation</i> buffer. This parameter is optional and can be <b>NULL</b>.</p>

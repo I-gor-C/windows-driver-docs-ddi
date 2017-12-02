@@ -58,26 +58,26 @@ NTSTATUS ZwSetInformationEnlistment(
 ## -parameters
 <dl>
 
-### -param <i>EnlistmentHandle</i> [in]
+### -param EnlistmentHandle [in]
 
 <dd>
 <p>A handle to an enlistment object that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a> or <a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>. The handle must have ENLISTMENT_SET_INFORMATION access to the object.</p>
 </dd>
 
-### -param <i>EnlistmentInformationClass</i> [in]
+### -param EnlistmentInformationClass [in]
 
 <dd>
 <p>A <a href="..\wdm\ne-wdm--enlistment-information-class.md">ENLISTMENT_INFORMATION_CLASS</a>-typed enumeration value that specifies the type of information to be set. This value must be <b>EnlistmentRecoveryInformation</b>.</p>
 <p>The enumeration's <b>EnlistmentBasicInformation</b> and <b>EnlistmentFullInformation</b> values are not used with <b>ZwSetInformationEnlistment</b>. </p>
 </dd>
 
-### -param <i>EnlistmentInformation</i> [in]
+### -param EnlistmentInformation [in]
 
 <dd>
 <p>A pointer to a caller-allocated buffer that contains caller-defined recovery information for the enlistment.</p>
 </dd>
 
-### -param <i>EnlistmentInformationLength</i> [in]
+### -param EnlistmentInformationLength [in]
 
 <dd>
 <p>The length, in bytes, of the buffer that the <i>EnlistmentInformation</i> parameter points to.</p>

@@ -7,7 +7,7 @@ old-location: debugger\debug_register_description.htm
 old-project: debugger
 ms.assetid: 92e7800d-4de6-498c-87f8-8690d7e8fc51
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: DEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION, *PDEBUG_REGISTER_DESCRIPTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,43 +60,43 @@ typedef struct _DEBUG_REGISTER_DESCRIPTION {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The type of value that this register holds.  The possible values are the same as for the <b>Type</b> field in the <a href="..\dbgeng\ns-dbgeng--debug-value.md">DEBUG_VALUE</a> structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A bit field of flags for the register.  Currently, the only bit that can be set is DEBUG_REGISTER_SUB_REGISTER, which indicates that this register is a subregister.</p>
 </dd>
 
-### -field <b>SubregMaster</b>
+### -field SubregMaster
 
 <dd>
 <p>The index of the register of which this register is a sub-register.  This field is only used if the DEBUG_REGISTER_SUB_REGISTER bit is set in <b>Flags</b>; otherwise, it is set to zero.</p>
 </dd>
 
-### -field <b>SubregLength</b>
+### -field SubregLength
 
 <dd>
 <p>The size, in bits, of this sub-register.  This field is only used if the DEBUG_REGISTER_SUB_REGISTER bit is set in <b>Flags</b>; otherwise, it is set to zero.</p>
 </dd>
 
-### -field <b>SubregMask</b>
+### -field SubregMask
 
 <dd>
 <p>The bit mask that converts the register specified in <b>SubregMaster</b> into this sub-register.  This field is only used if the DEBUG_REGISTER_SUB_REGISTER bit is set in <b>Flags</b>; otherwise, it is set to zero.</p>
 </dd>
 
-### -field <b>SubregShift</b>
+### -field SubregShift
 
 <dd>
 <p>The bit shift that converts the register specified in <b>SubregMaster</b> into this sub-register.  This field is only used if the DEBUG_REGISTER_SUB_REGISTER bit is set in <b>Flags</b>; otherwise, it is set to zero.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>Reserved for system use.</p>

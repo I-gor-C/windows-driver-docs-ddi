@@ -59,19 +59,19 @@ NTSTATUS ClearErrorRecord(
 ## -parameters
 <dl>
 
-### -param <i>PluginContext</i> [in, out, optional]
+### -param PluginContext [in, out, optional]
 
 <dd>
 <p>A pointer to the context area that was specified in the <b>Context</b> member of the <a href="..\ntddk\ns-ntddk--whea-pshed-plugin-registration-packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure when the PSHED plug-in called the <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a> function to register itself with the PSHED.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>A bit-wise OR'ed combination of flags that affect the clear operation. No flags are currently defined.</p>
 </dd>
 
-### -param <i>ErrorRecordId</i> [in]
+### -param ErrorRecordId [in]
 
 <dd>
 <p>The identifier of the error record that is being cleared from the system's persistent data storage. This identifier should be compared to the <b>Header.RecordId</b> member of each <a href="..\ntddk\ns-ntddk--whea-error-record.md">WHEA_ERROR_RECORD</a> structure that has been written to the system's persistent data storage to identify the error record to be cleared.</p>

@@ -59,37 +59,37 @@ typedef struct _PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE {
 ## -struct-fields
 <dl>
 
-### -field <b>DeviceHandle</b>
+### -field DeviceHandle
 
 <dd>
 <p>[in] A PEPHANDLE value that identifies the device's registration for ACPI services. The platform extension plug-in (PEP) supplied this handle in response to a previous <a href="kernel.pep_notify_acpi_register_device">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a> notification.</p>
 </dd>
 
-### -field <b>TotalBufferSize</b>
+### -field TotalBufferSize
 
 <dd>
 <p>[in, out] On input, the total size, in bytes, of the buffer that the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) allocated for this structure and for any <b>Objects</b> array elements that follow the structure. If the input value of <b>TotalBufferSize</b> is not large enough to contain this structure and all the <b>Objects</b> array elements, the PEP overwrites the input value with the required size and sets the <b>Status</b> member to STATUS_BUFFER_TOO_SMALL. For more information, see Remarks.</p>
 </dd>
 
-### -field <b>RequestFlags</b>
+### -field RequestFlags
 
 <dd>
 <p>[in] A set of input flags. No flags are currently defined for this member, which is always set to PEP_ACPI_EDN_FLAG_NONE (0x0).</p>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>[out] An NTSTATUS value that indicates the status of the requested device-namespace enumeration. Set this member to STATUS_SUCCESS if the PEP succeeds in enumerating the objects in the device namespace. Set to STATUS_BUFFER_TOO_SMALL if the input value in the <b>TotalBufferSize</b> member indicates that the allocated buffer is not large enough to contain the <b>PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE</b> structure and <b>Objects</b> array.</p>
 </dd>
 
-### -field <b>ObjectCount</b>
+### -field ObjectCount
 
 <dd>
 <p>[out] The number of elements in the <b>Objects</b> array.</p>
 </dd>
 
-### -field <b>Objects</b>
+### -field Objects
 
 <dd>
 <p>[out] The first element in an array of <a href="..\pepfx\ns-pepfx--pep-acpi-object-name-with-type.md">PEP_ACPI_OBJECT_NAME_WITH_TYPE</a> structures that describe the objects in the ACPI namespace of the device. If this array contains more than one element, the additional array elements follow the end of the <b>PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE</b> structure.</p>

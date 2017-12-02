@@ -55,98 +55,98 @@ BOOLEAN ExIsProcessorFeaturePresent(
 ## -parameters
 <dl>
 
-### -param <i>ProcessorFeature</i> [in]
+### -param ProcessorFeature [in]
 
 <dd>
 <p>Specifies one of the following constant values:</p>
 <p></p>
 <dl>
 
-### -param <a id="PF_FLOATING_POINT_PRECISION_ERRATA"></a><a id="pf_floating_point_precision_errata"></a>PF_FLOATING_POINT_PRECISION_ERRATA
+### -param PF_FLOATING_POINT_PRECISION_ERRATA
 
 <dd>
 <p>The processor has the Pentium floating-point divide bug.</p>
 </dd>
 
-### -param <a id="PF_FLOATING_POINT_EMULATED"></a><a id="pf_floating_point_emulated"></a>PF_FLOATING_POINT_EMULATED
+### -param PF_FLOATING_POINT_EMULATED
 
 <dd>
 <p>The processor does not have floating-point hardware.</p>
 </dd>
 
-### -param <a id="PF_COMPARE_EXCHANGE_DOUBLE"></a><a id="pf_compare_exchange_double"></a>PF_COMPARE_EXCHANGE_DOUBLE
+### -param PF_COMPARE_EXCHANGE_DOUBLE
 
 <dd>
 <p>The processor has an 8-byte, memory-locked compare and exchange (CMPXCHG8B) instruction.</p>
 </dd>
 
-### -param <a id="PF_MMX_INSTRUCTIONS_AVAILABLE"></a><a id="pf_mmx_instructions_available"></a>PF_MMX_INSTRUCTIONS_AVAILABLE
+### -param PF_MMX_INSTRUCTIONS_AVAILABLE
 
 <dd>
 <p>The processor supports MMX instructions in hardware.</p>
 </dd>
 
-### -param <a id="PF_XMMI_INSTRUCTIONS_AVAILABLE"></a><a id="pf_xmmi_instructions_available"></a>PF_XMMI_INSTRUCTIONS_AVAILABLE
+### -param PF_XMMI_INSTRUCTIONS_AVAILABLE
 
 <dd>
 <p>The processor supports SSE instructions in hardware.</p>
 </dd>
 
-### -param <a id="PF_3DNOW_INSTRUCTIONS_AVAILABLE"></a><a id="pf_3dnow_instructions_available"></a>PF_3DNOW_INSTRUCTIONS_AVAILABLE
+### -param PF_3DNOW_INSTRUCTIONS_AVAILABLE
 
 <dd>
 <p>The processor supports AMD 3DNow instructions.</p>
 </dd>
 
-### -param <a id="PF_RDTSC_INSTRUCTION_AVAILABLE"></a><a id="pf_rdtsc_instruction_available"></a>PF_RDTSC_INSTRUCTION_AVAILABLE
+### -param PF_RDTSC_INSTRUCTION_AVAILABLE
 
 <dd>
 <p>The processor supports a read-timestamp-counter (RDTSC) instruction.</p>
 </dd>
 
-### -param <a id="PF_PAE_ENABLED"></a><a id="pf_pae_enabled"></a>PF_PAE_ENABLED
+### -param PF_PAE_ENABLED
 
 <dd>
 <p>The processor implements Physical Address Extension (PAE) support.</p>
 </dd>
 
-### -param <a id="PF_XMMI64_INSTRUCTIONS_AVAILABLE"></a><a id="pf_xmmi64_instructions_available"></a>PF_XMMI64_INSTRUCTIONS_AVAILABLE
+### -param PF_XMMI64_INSTRUCTIONS_AVAILABLE
 
 <dd>
 <p>The processor supports SSE2 instructions in hardware. This parameter value is supported only in Windows XP and later versions of Windows.</p>
 </dd>
 
-### -param <a id="PF_SSE_DAZ_MODE_AVAILABLE"></a><a id="pf_sse_daz_mode_available"></a>PF_SSE_DAZ_MODE_AVAILABLE
+### -param PF_SSE_DAZ_MODE_AVAILABLE
 
 <dd>
 <p>The processor supports the denormals-are-zero (DAZ) mode for SSE instructions. This parameter value is supported only in Windows Vista and later versions of Windows.</p>
 </dd>
 
-### -param <a id="PF_NX_ENABLED"></a><a id="pf_nx_enabled"></a>PF_NX_ENABLED
+### -param PF_NX_ENABLED
 
 <dd>
 <p><a href="http://go.microsoft.com/fwlink/p/?linkid=165498">Data execution prevention</a> is enabled. This parameter value is supported only in Windows Vista and later versions of Windows.</p>
 </dd>
 
-### -param <a id="PF_SSE3_INSTRUCTIONS_AVAILABLE"></a><a id="pf_sse3_instructions_available"></a>PF_SSE3_INSTRUCTIONS_AVAILABLE
+### -param PF_SSE3_INSTRUCTIONS_AVAILABLE
 
 <dd>
 <p>The processor supports SSE3 instructions. This parameter value is supported only in Windows Vista and later versions of Windows.</p>
 </dd>
 
-### -param <a id="PF_COMPARE_EXCHANGE128"></a><a id="pf_compare_exchange128"></a>PF_COMPARE_EXCHANGE128
+### -param PF_COMPARE_EXCHANGE128
 
 <dd>
 <p>The atomic compare and exchange 128-bit operation (CMPXCHG16B) is available. This parameter value is supported only in Windows Vista and later versions of Windows.</p>
 </dd>
 
-### -param <a id="PF_COMPARE64_EXCHANGE128"></a><a id="pf_compare64_exchange128"></a>PF_COMPARE64_EXCHANGE128
+### -param PF_COMPARE64_EXCHANGE128
 
 <dd>
 <p>The atomic compare 64-bit and exchange 128-bit operation (CMP8XCHG16) is available. This parameter value is supported only in Windows Vista and later versions of Windows.</p>
 </dd>
 
-### -param <a id="PF_XSAVE_ENABLED"></a><a id="pf_xsave_enabled"></a>PF_XSAVE_ENABLED
+### -param PF_XSAVE_ENABLED
 
 <dd>
 <p>The processor supports the XSAVE and XRSTOR instructions. This parameter value is supported only in Windows 7 and later versions of Windows.</p>

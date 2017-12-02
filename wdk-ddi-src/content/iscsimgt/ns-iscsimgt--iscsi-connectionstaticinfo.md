@@ -68,19 +68,19 @@ typedef struct _ISCSI_ConnectionStaticInfo {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueConnectionId</b>
+### -field UniqueConnectionId
 
 <dd>
 <p>The connection identifier (ID) that the operating system and application software use to uniquely identify the connection. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in the <i>UniqueConnectionId</i> parameter. Do not confuse this value with the connection ID (CID).</p>
 </dd>
 
-### -field <b>CID</b>
+### -field CID
 
 <dd>
 <p>The iSCSI connection ID (CID) for this connection instance. The iSCSI protocol uses this value to identify the connection.</p>
 </dd>
 
-### -field <b>State</b>
+### -field State
 
 <dd>
 <p>The type of connection state. This member can have the following symbolic constant values, which are defined in <i>Iscsimgt.h</i>.</p>
@@ -117,13 +117,13 @@ typedef struct _ISCSI_ConnectionStaticInfo {
 <p> </p>
 </dd>
 
-### -field <b>Protocol</b>
+### -field Protocol
 
 <dd>
 <p>The transport protocol that is used to establish this connection instance. For a list of values that you can assign to this member, see <a href="storage.iscsi_connection_protocol_type_qualifiers">ISCSI_CONNECTION_PROTOCOL_TYPE_QUALIFIERS</a>.</p>
 </dd>
 
-### -field <b>HeaderIntegrity</b>
+### -field HeaderIntegrity
 
 <dd>
 <p>The name of the iSCSI header digest scheme that is associated with this connection session. This member can have the following symbolic constant values, which are defined in <i>Iscsimgt.h</i>.</p>
@@ -152,7 +152,7 @@ typedef struct _ISCSI_ConnectionStaticInfo {
 <p> </p>
 </dd>
 
-### -field <b>DataIntegrity</b>
+### -field DataIntegrity
 
 <dd>
 <p>The name of the iSCSI data digest scheme that is associated with this connection session. This member can have the following symbolic constant values, which are defined in <i>Iscsimgt.h</i>.</p>
@@ -181,55 +181,55 @@ typedef struct _ISCSI_ConnectionStaticInfo {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for Microsoft use only. You must set this member to 0.</p>
 </dd>
 
-### -field <b>MaxRecvDataSegmentLength</b>
+### -field MaxRecvDataSegmentLength
 
 <dd>
 <p>The maximum data payload size, in bytes, that is supported for command or data PDUs within this connection session.</p>
 </dd>
 
-### -field <b>AuthType</b>
+### -field AuthType
 
 <dd>
 <p>The type of authentication that is used to establish a connection. The <a href="storage.iscsi_connectionstaticinfo_wmi_class">ISCSI_ConnectionStaticInfo WMI Class</a>, which is defined in <i>Mgmt.mof</i>, does specify values for this member; but if your software includes <i>Iscsidsc.h</i>, it can use the <a href="storage.iscsi_auth_types">ISCSI_AUTH_TYPES</a> enumeration to assign values to this member.</p>
 </dd>
 
-### -field <b>LocalAddr</b>
+### -field LocalAddr
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that holds the IP address of the local network card that the initiator uses to connect to the network.</p>
 </dd>
 
-### -field <b>LocalPort</b>
+### -field LocalPort
 
 <dd>
 <p>The local port number that this connection instance uses.</p>
 </dd>
 
-### -field <b>RemoteAddr</b>
+### -field RemoteAddr
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that holds the IP address of the remote network card that this connection instance uses.</p>
 </dd>
 
-### -field <b>RemotePort</b>
+### -field RemotePort
 
 <dd>
 <p>The remote port number that the initiator used to make the connection.</p>
 </dd>
 
-### -field <b>EstimatedThroughput</b>
+### -field EstimatedThroughput
 
 <dd>
 <p>The estimated throughput, in bytes per second, of the connection.</p>
 </dd>
 
-### -field <b>MaxDatagramSize</b>
+### -field MaxDatagramSize
 
 <dd>
 <p>The maximum size, in bytes, of the datagram that the transport supports.</p>

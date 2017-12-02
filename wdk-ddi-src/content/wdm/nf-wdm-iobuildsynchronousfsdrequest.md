@@ -61,43 +61,43 @@ PIRP IoBuildSynchronousFsdRequest(
 ## -parameters
 <dl>
 
-### -param <i>MajorFunction</i> [in]
+### -param MajorFunction [in]
 
 <dd>
 <p>The major function code for the IRP. This code can be <a href="https://msdn.microsoft.com/library/windows/hardware/ff549268">IRP_MJ_PNP</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549235">IRP_MJ_FLUSH_BUFFERS</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff549423">IRP_MJ_SHUTDOWN</a>.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to the <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure for the next-lower driver's device object, which represents the target device.</p>
 </dd>
 
-### -param <i>Buffer</i> [in, out]
+### -param Buffer [in, out]
 
 <dd>
 <p>A pointer to a data buffer. If <i>MajorFunction</i> is <b>IRP_MJ_WRITE</b>, the buffer contains data to be written. If <i>MajorFunction</i> is <b>IRP_MJ_READ</b>, the buffer receives data. If <i>MajorFunction</i> is <b>IRP_MJ_FLUSH_BUFFERS</b> or <b>IRP_MJ_SHUTDOWN</b>, this parameter must be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>Length</i> [in, optional]
+### -param Length [in, optional]
 
 <dd>
 <p>The length, in bytes, of the buffer pointed to by <i>Buffer</i>. For devices such as disks, this value must be an integer multiple of the sector size. Starting with Windows 8, the sector size can be 4,096 or 512 bytes. In earlier versions of Windows, the sector size is always 512 bytes. This parameter is required for read and write requests, but must be zero for flush and shutdown requests.</p>
 </dd>
 
-### -param <i>StartingOffset</i> [in, optional]
+### -param StartingOffset [in, optional]
 
 <dd>
 <p>A pointer to the offset on the disk, for read and write requests. The units and meaning of this value are driver-specific. This parameter is required for read and write requests, but must be zero for flush and shutdown requests.</p>
 </dd>
 
-### -param <i>Event</i> [in]
+### -param Event [in]
 
 <dd>
 <p>A pointer to a caller-allocated and initialized event object. The I/O manager sets the event to the Signaled state when a lower-level driver completes the requested operation. After calling <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>, the driver can wait for the event object.</p>
 </dd>
 
-### -param <i>IoStatusBlock</i> [out]
+### -param IoStatusBlock [out]
 
 <dd>
 <p>A pointer to a location that receives the I/O status block that is set when the IRP is completed by a lower-level driver.</p>
@@ -105,7 +105,7 @@ PIRP IoBuildSynchronousFsdRequest(
 </dl>
 
 ## -returns
-<p>If the operation succeeds, <b>IoBuildSynchronousFsdRequest</b> returns a pointer to an initialized <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure, with the next-lower driver's I/O stack location set up from the supplied parameters. Otherwise, the routine returns <b>NULL</b>.</p>
+<p>If the operation succeeds, <b>IoBuildSynchronousFsdRequest</b> returns a pointer to an initialized <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure, with the next-lower driver's I/O stack location set up from the supplied parameters. Otherwise, the routine returns <b>NULL</b>.</p>
 
 ## -remarks
 <p>A file system driver (FSD) or other higher-level driver can call <b>IoBuildSynchronousFsdRequest</b> to set up IRPs that it synchronously sends to lower-level drivers.</p>
@@ -206,7 +206,7 @@ PIRP IoBuildSynchronousFsdRequest(
 <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>

@@ -7,7 +7,7 @@ old-location: netvista\rildrvnotification.htm
 old-project: netvista
 ms.assetid: 15567aae-a8ab-4289-9dd7-5bf7df80bfc9
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILDRVNOTIFICATION, RILDRVNOTIFICATION, *LPRILDRVNOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,27 +59,27 @@ typedef struct _RILDRVNOTIFICATION {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>cbSizeNeeded</b>
+### -field cbSizeNeeded
 
 <dd></dd>
 
-### -field <b>dwCode</b>
+### -field dwCode
 
 <dd></dd>
 
-### -field <b>hrCmdID</b>
+### -field hrCmdID
 
 <dd></dd>
 
-### -field <b>dwDataSize</b>
+### -field dwDataSize
 
 <dd></dd>
 
-### -field <b>pbData</b>
+### -field pbData
 
 <dd></dd>
 </dl>

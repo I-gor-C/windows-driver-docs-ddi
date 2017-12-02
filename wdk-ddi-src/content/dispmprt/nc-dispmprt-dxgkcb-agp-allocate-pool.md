@@ -61,31 +61,31 @@ NTSTATUS APIENTRY AgpAllocatePool(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A handle to a context block associated with an AGP interface. The display miniport driver previously received this handle in the <b>Context</b> member of the DXGK_AGP_INTERFACE structure that was filled in by <a href="..\dispmprt\nc-dispmprt-dxgkcb-query-services.md">DxgkCbQueryServices</a>.</p>
 </dd>
 
-### -param <i>AllocationSize</i> [in]
+### -param AllocationSize [in]
 
 <dd>
 <p>The size, in bytes, of the AGP memory to be allocated.</p>
 </dd>
 
-### -param <i>CacheType</i> [in]
+### -param CacheType [in]
 
 <dd>
 <p>A constant from the <a href="..\wdm\ne-wdm--memory-caching-type.md">MEMORY_CACHING_TYPE</a> enumeration that specifies whether the CPU can use caching or write combining when it accesses the allocated AGP memory.</p>
 </dd>
 
-### -param <i>PhysicalAddress</i> [out]
+### -param PhysicalAddress [out]
 
 <dd>
 <p>A pointer to a PHYSICAL_ADDRESS structure that receives the base physical address of the AGP allocation. This is the base of the physical address range that the GPU will use to access the AGP memory.</p>
 </dd>
 
-### -param <i>VirtualAddress</i> [out]
+### -param VirtualAddress [out]
 
 <dd>
 <p>A pointer to a variable that receives the base virtual address, in system space, of the AGP allocation. This is the base of the virtual address range that the CPU will use to access the AGP memory.</p>

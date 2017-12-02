@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicegetiotarget.htm
 old-project: wdf
 ms.assetid: a0749324-8b4e-4b82-8c51-b1b8883d521e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfDeviceGetIoTarget
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ WDFIOTARGET WdfDeviceGetIoTarget(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A handle to a framework device object.</p>

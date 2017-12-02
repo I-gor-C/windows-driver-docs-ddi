@@ -68,74 +68,74 @@ typedef union _PCI_EXPRESS_DEVICE_CONTROL_REGISTER {
 ## -struct-fields
 <dl>
 
-### -field <b>CorrectableErrorEnable</b>
+### -field CorrectableErrorEnable
 
 <dd>
 <p>A single bit that indicates that reporting of correctable errors is enabled for the device.</p>
 </dd>
 
-### -field <b>NonFatalErrorEnable</b>
+### -field NonFatalErrorEnable
 
 <dd>
 <p>A single bit that indicates that reporting of non-fatal uncorrectable errors is enabled for the device.</p>
 </dd>
 
-### -field <b>FatalErrorEnable</b>
+### -field FatalErrorEnable
 
 <dd>
 <p>A single bit that indicates that reporting of non-fatal uncorrectable errors is enabled for the device.</p>
 </dd>
 
-### -field <b>UnsupportedRequestErrorEnable</b>
+### -field UnsupportedRequestErrorEnable
 
 <dd>
 <p>A single bit that indicates that reporting of unsupported requests is enabled for the device.</p>
 </dd>
 
-### -field <b>EnableRelaxedOrder</b>
+### -field EnableRelaxedOrder
 
 <dd>
 <p>A single bit that indicates that the device is permitted to set the relaxed ordering bit in the attributes field for any transactions that it initiates that do not require strong write ordering.</p>
 </dd>
 
-### -field <b>MaxPayloadSize</b>
+### -field MaxPayloadSize
 
 <dd>
 <p>The maximum payload size for the device. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="MaxPayload128Bytes"></a><a id="maxpayload128bytes"></a><a id="MAXPAYLOAD128BYTES"></a><b>MaxPayload128Bytes</b>
+### -field MaxPayload128Bytes
 
 <dd>
 <p>128 byte maximum payload size</p>
 </dd>
 
-### -field <a id="MaxPayload256Bytes"></a><a id="maxpayload256bytes"></a><a id="MAXPAYLOAD256BYTES"></a><b>MaxPayload256Bytes</b>
+### -field MaxPayload256Bytes
 
 <dd>
 <p>256 byte maximum payload size</p>
 </dd>
 
-### -field <a id="MaxPayload512Bytes"></a><a id="maxpayload512bytes"></a><a id="MAXPAYLOAD512BYTES"></a><b>MaxPayload512Bytes</b>
+### -field MaxPayload512Bytes
 
 <dd>
 <p>512 byte maximum payload size</p>
 </dd>
 
-### -field <a id="MaxPayload1024Bytes"></a><a id="maxpayload1024bytes"></a><a id="MAXPAYLOAD1024BYTES"></a><b>MaxPayload1024Bytes</b>
+### -field MaxPayload1024Bytes
 
 <dd>
 <p>1024 byte maximum payload size</p>
 </dd>
 
-### -field <a id="MaxPayload2048Bytes"></a><a id="maxpayload2048bytes"></a><a id="MAXPAYLOAD2048BYTES"></a><b>MaxPayload2048Bytes</b>
+### -field MaxPayload2048Bytes
 
 <dd>
 <p>2048 byte maximum payload size</p>
 </dd>
 
-### -field <a id="MaxPayload4096Bytes"></a><a id="maxpayload4096bytes"></a><a id="MAXPAYLOAD4096BYTES"></a><b>MaxPayload4096Bytes</b>
+### -field MaxPayload4096Bytes
 
 <dd>
 <p>4096 byte maximum payload size</p>
@@ -144,68 +144,68 @@ typedef union _PCI_EXPRESS_DEVICE_CONTROL_REGISTER {
 <p>This value must not exceed the maximum payload size that is specified in the PCIe device capabilities register of the PCIe capability structure.</p>
 </dd>
 
-### -field <b>ExtendedTagEnable</b>
+### -field ExtendedTagEnable
 
 <dd>
 <p>A single bit that indicates that the device is enabled to use an 8-bit Tag field in a PCIe transaction descriptor when the device is a requester. This bit can be set only if the PCIe device capabilities register of the PCIe capability structure indicates that the extended tag size is supported.</p>
 </dd>
 
-### -field <b>PhantomFunctionsEnable</b>
+### -field PhantomFunctionsEnable
 
 <dd>
 <p>A single bit that indicates that the device is enabled to use unused function numbers (phantom functions) to extend the number of outstanding transactions that are allowed for the device. This bit can be set only if the PCIe device capabilities register of the PCIe capability structure indicates that phantom functions are supported.</p>
 </dd>
 
-### -field <b>AuxPowerEnable</b>
+### -field AuxPowerEnable
 
 <dd>
 <p>A single bit that indicates that the device is enabled to draw AUX power independent of power management events (PME) AUX power.</p>
 </dd>
 
-### -field <b>NoSnoopEnable</b>
+### -field NoSnoopEnable
 
 <dd>
 <p>A single bit that indicates that the device is permitted to set the No Snoop bit in the Requester Attributes field of transactions that it initiates that do not require hardware enforced cache coherency.</p>
 </dd>
 
-### -field <b>MaxReadRequestSize</b>
+### -field MaxReadRequestSize
 
 <dd>
 <p>The maximum read request size for the device as a requester. Possible values are:</p>
 <p></p>
 <dl>
 
-### -field <a id="MaxPayload128Bytes"></a><a id="maxpayload128bytes"></a><a id="MAXPAYLOAD128BYTES"></a><b>MaxPayload128Bytes</b>
+### -field MaxPayload128Bytes
 
 <dd>
 <p>128 byte maximum read request size</p>
 </dd>
 
-### -field <a id="MaxPayload256Bytes"></a><a id="maxpayload256bytes"></a><a id="MAXPAYLOAD256BYTES"></a><b>MaxPayload256Bytes</b>
+### -field MaxPayload256Bytes
 
 <dd>
 <p>256 byte maximum read request size</p>
 </dd>
 
-### -field <a id="MaxPayload512Bytes"></a><a id="maxpayload512bytes"></a><a id="MAXPAYLOAD512BYTES"></a><b>MaxPayload512Bytes</b>
+### -field MaxPayload512Bytes
 
 <dd>
 <p>512 byte maximum read request size</p>
 </dd>
 
-### -field <a id="MaxPayload1024Bytes"></a><a id="maxpayload1024bytes"></a><a id="MAXPAYLOAD1024BYTES"></a><b>MaxPayload1024Bytes</b>
+### -field MaxPayload1024Bytes
 
 <dd>
 <p>1024 byte maximum read request size</p>
 </dd>
 
-### -field <a id="MaxPayload2048Bytes"></a><a id="maxpayload2048bytes"></a><a id="MAXPAYLOAD2048BYTES"></a><b>MaxPayload2048Bytes</b>
+### -field MaxPayload2048Bytes
 
 <dd>
 <p>2048 byte maximum read request size</p>
 </dd>
 
-### -field <a id="MaxPayload4096Bytes"></a><a id="maxpayload4096bytes"></a><a id="MAXPAYLOAD4096BYTES"></a><b>MaxPayload4096Bytes</b>
+### -field MaxPayload4096Bytes
 
 <dd>
 <p>4096 byte maximum read request size</p>
@@ -213,13 +213,13 @@ typedef union _PCI_EXPRESS_DEVICE_CONTROL_REGISTER {
 </dl>
 </dd>
 
-### -field <b>BridgeConfigRetryEnable</b>
+### -field BridgeConfigRetryEnable
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>AsUSHORT</b>
+### -field AsUSHORT
 
 <dd>
 <p>A USHORT representation of the contents of the <b>PCI_EXPRESS_DEVICE_CONTROL_REGISTER</b> structure.</p>

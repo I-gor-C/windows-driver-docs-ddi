@@ -7,7 +7,7 @@ old-location: netvista\wwan_voice_class.htm
 old-project: netvista
 ms.assetid: 288a7b44-b842-41f8-8ece-d14a709b0717
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef enum _WWAN_VOICE_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="WwanVoiceClassUnknown"></a><a id="wwanvoiceclassunknown"></a><a id="WWANVOICECLASSUNKNOWN"></a><b>WwanVoiceClassUnknown</b>
+### -field WwanVoiceClassUnknown
 
 <dd>
 <p>The device uses an unknown method to support voice connections.</p>
 </dd>
 
-### -field <a id="WwanVoiceClassNoVoice"></a><a id="wwanvoiceclassnovoice"></a><a id="WWANVOICECLASSNOVOICE"></a><b>WwanVoiceClassNoVoice</b>
+### -field WwanVoiceClassNoVoice
 
 <dd>
 <p>The device does not support voice connections.</p>
 </dd>
 
-### -field <a id="WwanVoiceClassSeparateVoiceData"></a><a id="wwanvoiceclassseparatevoicedata"></a><a id="WWANVOICECLASSSEPARATEVOICEDATA"></a><b>WwanVoiceClassSeparateVoiceData</b>
+### -field WwanVoiceClassSeparateVoiceData
 
 <dd>
 <p>The device supports separate voice and data connections.</p>
 </dd>
 
-### -field <a id="WwanVoiceClassSimultaneousVoiceData"></a><a id="wwanvoiceclasssimultaneousvoicedata"></a><a id="WWANVOICECLASSSIMULTANEOUSVOICEDATA"></a><b>WwanVoiceClassSimultaneousVoiceData</b>
+### -field WwanVoiceClassSimultaneousVoiceData
 
 <dd>
 <p>The device supports simultaneous voice and data connections.</p>
 </dd>
 
-### -field <a id="WwanVoiceClassMax"></a><a id="wwanvoiceclassmax"></a><a id="WWANVOICECLASSMAX"></a><b>WwanVoiceClassMax</b>
+### -field WwanVoiceClassMax
 
 <dd>
 <p>The total number of supported cellular voice classes.</p>
@@ -124,4 +124,4 @@ typedef enum _WWAN_VOICE_CLASS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_VOICE_CLASS enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_VOICE_CLASS enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

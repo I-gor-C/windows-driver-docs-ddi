@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The HID_MINIDRIVER_REGISTRATION structure contains registration information that a HID minidriver passes to the <a href="NULL">HID Client Drivers</a> when the minidriver registers with the class driver.</p>
+<p>The HID_MINIDRIVER_REGISTRATION structure contains registration information that a HID minidriver passes to the <a href="https://msdn.microsoft.com/E7C57273-B661-4B82-816E-E1466DAF67EA">HID Client Drivers</a> when the minidriver registers with the class driver.</p>
 
 
 ## -syntax
@@ -59,37 +59,37 @@ typedef struct _HID_MINIDRIVER_REGISTRATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Revision</b>
+### -field Revision
 
 <dd>
 <p>Specifies the HID version that this minidriver supports.</p>
 </dd>
 
-### -field <b>DriverObject</b>
+### -field DriverObject
 
 <dd>
 <p>Pointer to the minidriver's <a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a>.</p>
 </dd>
 
-### -field <b>RegistryPath</b>
+### -field RegistryPath
 
 <dd>
 <p>Pointer to the minidriver's registry path.</p>
 </dd>
 
-### -field <b>DeviceExtensionSize</b>
+### -field DeviceExtensionSize
 
 <dd>
 <p>Specifies the length, in bytes, that the minidriver requests for a device extension.</p>
 </dd>
 
-### -field <b>DevicesArePolled</b>
+### -field DevicesArePolled
 
 <dd>
 <p>Specifies that the devices on the bus that this minidriver supports must be polled in order to obtain data from the device.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for internal system use.</p>

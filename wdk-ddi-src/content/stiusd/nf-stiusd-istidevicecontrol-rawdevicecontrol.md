@@ -7,7 +7,7 @@ old-location: image\istidevicecontrol_rawdevicecontrol.htm
 old-project: image
 ms.assetid: 107C7EB4-9C72-49CF-A330-7D517CC67F35
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiDeviceControl, RawDeviceControl, IStiDeviceControl::RawDeviceControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,37 +60,37 @@ HRESULT RawDeviceControl(
 ## -parameters
 <dl>
 
-### -param <i>EscapeFunction</i> 
+### -param EscapeFunction 
 
 <dd>
 <p>Defines the <b>USD_CONTROL_CODE</b> parameter <i>EscapeFunction.</i></p>
 </dd>
 
-### -param <i>lpInData</i> 
+### -param lpInData 
 
 <dd>
 <p>Defines the <b>LPVOID</b> parameter <i>lpInData.</i></p>
 </dd>
 
-### -param <i>cbInDataSize</i> 
+### -param cbInDataSize 
 
 <dd>
 <p>Defines the <b>DWORD</b> parameter <i>cbInDataSize.</i></p>
 </dd>
 
-### -param <i>pOutData</i> 
+### -param pOutData 
 
 <dd>
 <p>Defines the <b>LPVOID</b> parameter <i>pOutData.</i></p>
 </dd>
 
-### -param <i>dwOutDataSize</i> 
+### -param dwOutDataSize 
 
 <dd>
 <p>Defines the <b>DWORD</b> parameter <i>dwOutDataSize.</i></p>
 </dd>
 
-### -param <i>pdwActualData</i> 
+### -param pdwActualData 
 
 <dd>
 <p>Defines the <b>LPDWORD</b> parameter <i>pdwActualData.</i></p>
@@ -125,4 +125,4 @@ HRESULT RawDeviceControl(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IStiDeviceControl::RawDeviceControl method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IStiDeviceControl::RawDeviceControl method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

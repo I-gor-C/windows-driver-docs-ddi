@@ -54,7 +54,7 @@ typedef struct _PEP_PPM_QUERY_PLATFORM_STATES {
 ## -struct-fields
 <dl>
 
-### -field <b>PlatformStateCount</b>
+### -field PlatformStateCount
 
 <dd>
 <p>The number of platform idle states supported by the platform.</p>

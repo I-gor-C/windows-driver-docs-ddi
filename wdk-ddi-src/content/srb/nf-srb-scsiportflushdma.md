@@ -55,7 +55,7 @@ VOID ScsiPortFlushDma(
 ## -parameters
 <dl>
 
-### -param <i>DeviceExtension</i> [in]
+### -param DeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's per-HBA storage area.</p>

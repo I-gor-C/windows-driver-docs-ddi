@@ -64,13 +64,13 @@ typedef EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY PEVT_UCX_CONTROLLER_QUERY_USB_CA
 ## -parameters
 <dl>
 
-### -param <i>UcxController</i> [in]
+### -param UcxController [in]
 
 <dd>
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
-### -param <i>CapabilityType</i> [in]
+### -param CapabilityType [in]
 
 <dd>
 <p>Pointer to a GUID specifying the requested capability. The possible  <i>PGUID</i>  values are  as follows:</p>
@@ -91,20 +91,20 @@ typedef EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY PEVT_UCX_CONTROLLER_QUERY_USB_CA
 <p>   See the Remarks section of <a href="buses.usbd_getcapability">USBD_QueryUsbCapability</a> for more information.</p>
 </dd>
 
-### -param <i>OutputBufferLength</i> [in]
+### -param OutputBufferLength [in]
 
 <dd>
 <p>The length, in bytes, of the request's output buffer, if an output buffer is available.</p>
 </dd>
 
-### -param <i>OutputBuffer</i> [out, optional]
+### -param OutputBuffer [out, optional]
 
 <dd>
 <p>A pointer to a location that receives the buffer's address. Certain capabilities may need to provide additional information
         to UCX in this buffer.</p>
 </dd>
 
-### -param <i>ResultLength</i> [out]
+### -param ResultLength [out]
 
 <dd>
 <p>A location that, on return, contains the size, in bytes, of the information that the callback function stored in <i>OutputBuffer.</i></p>

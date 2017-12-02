@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelstart.htm
 old-project: netvista
 ms.assetid: A318FD24-4E48-4DE4-B919-DD1D701F7EA7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: VmbChannelStart
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ VOID VmbChannelStart(
 ## -parameters
 <dl>
 
-### -param <i>Channel</i> [in]
+### -param Channel [in]
 
 <dd>
 <p>A handle for a channel that this function modifies.</p>

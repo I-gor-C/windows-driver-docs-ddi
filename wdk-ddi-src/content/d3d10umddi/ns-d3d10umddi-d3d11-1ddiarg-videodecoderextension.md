@@ -60,43 +60,43 @@ typedef struct D3D11_1DDIARG_VIDEODECODEREXTENSION {
 ## -struct-fields
 <dl>
 
-### -field <b>Function</b>
+### -field Function
 
 <dd>
 <p>The function number. This number identifies the operation to perform. Currently no function numbers are defined.</p>
 </dd>
 
-### -field <b>pPrivateInputData</b>
+### -field pPrivateInputData
 
 <dd>
 <p>A pointer to a buffer that contains input data for the driver.</p>
 </dd>
 
-### -field <b>PrivateInputDataSize</b>
+### -field PrivateInputDataSize
 
 <dd>
 <p>The size of the buffer pointed to by <b>pPrivateInputData</b>, in bytes.</p>
 </dd>
 
-### -field <b>pPrivateOutputData</b>
+### -field pPrivateOutputData
 
 <dd>
 <p>A pointer to a buffer that the driver can use to write output data.</p>
 </dd>
 
-### -field <b>PrivateOutputDataSize</b>
+### -field PrivateOutputDataSize
 
 <dd>
 <p>The size of the buffer pointed to by <b>pPrivateOutputData</b>, in bytes.</p>
 </dd>
 
-### -field <b>ResourceCount</b>
+### -field ResourceCount
 
 <dd>
 <p>The number of elements in the <b>pResourceList</b> array. If <b>pResourceList</b> is <b>NULL</b>, set <b>ResourceCount</b> to zero.</p>
 </dd>
 
-### -field <b>pResourceList</b>
+### -field pResourceList
 
 <dd>
 <p>A pointer to an array of resource handles. Use this member to pass Direct3D resources to the driver.</p>

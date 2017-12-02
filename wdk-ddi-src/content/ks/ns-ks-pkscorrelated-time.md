@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Time</b>
+### -field Time
 
 <dd>
 <p>Specifies the current clock time in 100-nanosecond units.</p>
 </dd>
 
-### -field <b>SystemTime</b>
+### -field SystemTime
 
 <dd>
 <p>A 64-bit integer containing the number of clock ticks since system boot.</p>
@@ -71,7 +71,7 @@ typedef struct {
 ## -remarks
 <p>Supply this structure in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564465">KSPROPERTY_CLOCK_CORRELATEDTIME</a> property request.</p>
 
-<p>The system time is acquired from <a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>. Note that the performance counter is not suspended when the machine is suspended, so that correlations change when the machine goes through a suspend.</p>
+<p>The system time is acquired from <a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>. Note that the performance counter is not suspended when the machine is suspended, so that correlations change when the machine goes through a suspend.</p>
 
 ## -requirements
 <table>
@@ -93,7 +93,7 @@ typedef struct {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564465">KSPROPERTY_CLOCK_CORRELATEDTIME</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
 </dt>
 </dl>
 <p> </p>

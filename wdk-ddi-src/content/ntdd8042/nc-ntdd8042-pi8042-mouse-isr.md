@@ -64,49 +64,49 @@ BOOLEAN MouseIsr(
 ## -parameters
 <dl>
 
-### -param <i>IsrContext</i> [in]
+### -param IsrContext [in]
 
 <dd>
 <p>Pointer to the filter device object of the driver that supplies this callback.</p>
 </dd>
 
-### -param <i>CurrentInput</i> [in]
+### -param CurrentInput [in]
 
 <dd>
 <p>Pointer to the input <a href="hid.mouse_input_data">MOUSE_INPUT_DATA</a> structure being constructed by the ISR.</p>
 </dd>
 
-### -param <i>CurrentOutput</i> [in]
+### -param CurrentOutput [in]
 
 <dd>
 <p>Pointer to an <a href="..\ntdd8042\ns-ntdd8042--output-packet.md">OUTPUT_PACKET</a> structure, which specifies an array of bytes being written to the hardware device.</p>
 </dd>
 
-### -param <i>StatusByte</i> [in]
+### -param StatusByte [in]
 
 <dd>
 <p>Specifies a status byte that is read from I/O port 60 when the interrupt occurs.</p>
 </dd>
 
-### -param <i>Byte</i> [in]
+### -param Byte [in]
 
 <dd>
 <p>Specifies a data byte that is read from I/O port 64 when the interrupt occurs.</p>
 </dd>
 
-### -param <i>ContinueProcessing</i> [in, out]
+### -param ContinueProcessing [in, out]
 
 <dd>
 <p>Specifies, if <b>TRUE</b>, that processing in the I8042prt mouse ISR will continue after this callback completes. Otherwise, processing does not continue.</p>
 </dd>
 
-### -param <i>MouseState</i> [in]
+### -param MouseState [in]
 
 <dd>
 <p>Pointer to a <a href="..\ntdd8042\ne-ntdd8042--mouse-state.md">MOUSE_STATE</a> enumeration value, which identifies the state of mouse input.</p>
 </dd>
 
-### -param <i>ResetSubState</i> [in]
+### -param ResetSubState [in]
 
 <dd>
 <p>Pointer to MOUSE_RESET_SUBSTATE enumeration value, which identifies the mouse reset substate. See the Remarks section.</p>

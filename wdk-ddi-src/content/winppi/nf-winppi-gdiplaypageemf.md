@@ -59,31 +59,31 @@ BOOL GdiPlayPageEMF(
 ## -parameters
 <dl>
 
-### -param <i>SpoolFileHandle</i> 
+### -param SpoolFileHandle 
 
 <dd>
 <p>Caller-supplied spool file handle, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>.</p>
 </dd>
 
-### -param <i>hemf</i> 
+### -param hemf 
 
 <dd>
 <p>Caller-supplied page handle, obtained by calling <a href="..\winppi\nf-winppi-gdigetpagehandle.md">GdiGetPageHandle</a>, identifying the page for which records are to be played.</p>
 </dd>
 
-### -param <i>prectDocument</i> 
+### -param prectDocument 
 
 <dd>
 <p>Caller-supplied pointer to a <a href="display.rect">RECT</a> structure specifying the rectangle into which the page is to be drawn.</p>
 </dd>
 
-### -param <i>prectBorder</i> 
+### -param prectBorder 
 
 <dd>
 <p>Caller-supplied pointer to a RECT structure specifying the page's border rectangle (if any). Can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>prectClip</i> 
+### -param prectClip 
 
 <dd>
 <p>Caller-supplied pointer to a RECT structure specifying the coordinates of the page's clip region (if any). Can be <b>NULL</b>.</p>
@@ -102,7 +102,7 @@ BOOL GdiPlayPageEMF(
 
 <p>The <i>prectBorder</i> parameter, if it is non-<b>NULL</b>, describes a solid-line border rectangle to be drawn around the document page. If <i>prectBorder</i> is <b>NULL</b>, no such border will be drawn.</p>
 
-<p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
+<p>For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.</p>
 
 ## -requirements
 <table>

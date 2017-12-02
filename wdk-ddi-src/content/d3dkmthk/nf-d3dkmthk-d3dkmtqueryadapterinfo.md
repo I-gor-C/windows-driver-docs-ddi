@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTQueryAdapterInfo(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a> structure that is filled with specified information about the graphics hardware. </p>

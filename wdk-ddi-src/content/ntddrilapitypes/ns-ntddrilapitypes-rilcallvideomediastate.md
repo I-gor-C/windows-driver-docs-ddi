@@ -7,7 +7,7 @@ old-location: netvista\rilcallvideomediastate.htm
 old-project: netvista
 ms.assetid: f40b9989-a911-4b89-a5a3-dda9a225b576
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILCALLVIDEOMEDIASTATE, RILCALLVIDEOMEDIASTATE, *LPRILCALLVIDEOMEDIASTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,19 @@ typedef struct _RILCALLVIDEOMEDIASTATE {
 ## -struct-fields
 <dl>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwPeerCapabilities</b>
+### -field dwPeerCapabilities
 
 <dd></dd>
 
-### -field <b>dwFlags</b>
+### -field dwFlags
 
 <dd></dd>
 
-### -field <b>dwContextID</b>
+### -field dwContextID
 
 <dd></dd>
 </dl>

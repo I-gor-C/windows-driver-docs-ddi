@@ -7,7 +7,7 @@ old-location: debugger\readbugcheckdata.htm
 old-project: debugger
 ms.assetid: 3ede32f5-9671-4f38-a33f-96536300267b
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: IDebugControl, ReadBugCheckData, IDebugControl::ReadBugCheckData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ HRESULT ReadBugCheckData(
 ## -parameters
 <dl>
 
-### -param <i>Code</i> [out]
+### -param Code [out]
 
 <dd>
 <p>Receives the bug check code.</p>
 </dd>
 
-### -param <i>Arg1</i> [out]
+### -param Arg1 [out]
 
 <dd>
 <p>Receives the first parameter associated with the bug check.  The interpretation of this parameter depends on the bug check code.</p>
 </dd>
 
-### -param <i>Arg2</i> [out]
+### -param Arg2 [out]
 
 <dd>
 <p>Receives the second parameter associated with the bug check.  The interpretation of this parameter depends on the bug check code.</p>
 </dd>
 
-### -param <i>Arg3</i> [out]
+### -param Arg3 [out]
 
 <dd>
 <p>Receives the third parameter associated with the bug check.  The interpretation of this parameter depends on the bug check code.</p>
 </dd>
 
-### -param <i>Arg4</i> [out]
+### -param Arg4 [out]
 
 <dd>
 <p>Receives the fourth parameter associated with the bug check.  The interpretation of this parameter depends on the bug check code.</p>
@@ -96,7 +96,7 @@ HRESULT ReadBugCheckData(
 
 <p> </p>
 
-<p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
+<p>This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.</p>
 
 ## -remarks
 <p>This method is only available in kernel-mode debugging.</p>

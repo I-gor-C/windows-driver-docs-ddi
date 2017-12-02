@@ -55,7 +55,7 @@ req.product: Windows 10 or later.
 ## -parameters
 <dl>
 
-### -param <i>Register</i> [in]
+### -param Register [in]
 
 <dd>
 <p>Pointer to the register where the data is to be read. </p>

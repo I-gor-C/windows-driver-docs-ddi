@@ -57,25 +57,25 @@ typedef enum _NFC_CX_HOST_ACTION {
 ## -enum-fields
 <dl>
 
-### -field <a id="HostActionStart"></a><a id="hostactionstart"></a><a id="HOSTACTIONSTART"></a><b>HostActionStart</b>
+### -field HostActionStart
 
 <dd>
 <p>Specifies full initialization.</p>
 </dd>
 
-### -field <a id="HostActionStop"></a><a id="hostactionstop"></a><a id="HOSTACTIONSTOP"></a><b>HostActionStop</b>
+### -field HostActionStop
 
 <dd>
 <p>Specifies de-initialization.</p>
 </dd>
 
-### -field <a id="HostActionRestart"></a><a id="hostactionrestart"></a><a id="HOSTACTIONRESTART"></a><b>HostActionRestart</b>
+### -field HostActionRestart
 
 <dd>
 <p>Specifies a full driver restart.</p>
 </dd>
 
-### -field <a id="HostActionUnload"></a><a id="hostactionunload"></a><a id="HOSTACTIONUNLOAD"></a><b>HostActionUnload</b>
+### -field HostActionUnload
 
 <dd>
 <p>Specifies to unload the driver.</p>

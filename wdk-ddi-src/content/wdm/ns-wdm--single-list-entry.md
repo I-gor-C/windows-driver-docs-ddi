@@ -55,7 +55,7 @@ typedef struct _SINGLE_LIST_ENTRY {
 ## -struct-fields
 <dl>
 
-### -field <b>Next</b>
+### -field Next
 
 <dd>
 <p>For a <b>SINGLE_LIST_ENTRY</b> that serves as a list entry, the <b>Next</b> member points to the next entry in the list, or <b>NULL</b> if there is no next entry in the list. For a <b>SINGLE_LIST_ENTRY</b> that serves as the list header, the <b>Next</b> member points to the first entry in the list, or <b>NULL</b> if the list is empty.</p>

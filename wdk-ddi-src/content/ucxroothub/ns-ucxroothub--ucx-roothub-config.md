@@ -69,91 +69,91 @@ typedef struct _UCX_ROOTHUB_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size in bytes of this structure.</p>
 </dd>
 
-### -field <b>NumberOfPresentedControlUrbCallbacks</b>
+### -field NumberOfPresentedControlUrbCallbacks
 
 <dd>
 <p>The number of control requests sent to the default endpoint.</p>
 </dd>
 
-### -field <b>EvtRootHubClearHubFeature</b>
+### -field EvtRootHubClearHubFeature
 
 <dd>
-<p>A pointer to the <a href="buses.evt_ucx_roothub_control_urb">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
+<p>A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-control-urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
 </dd>
 
-### -field <b>EvtRootHubClearPortFeature</b>
+### -field EvtRootHubClearPortFeature
 
 <dd>
-<p>A pointer to the <a href="buses.evt_ucx_roothub_control_urb">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
+<p>A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-control-urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
 </dd>
 
-### -field <b>EvtRootHubGetHubStatus</b>
+### -field EvtRootHubGetHubStatus
 
 <dd>
-<p>A pointer to the <a href="buses.evt_ucx_roothub_control_urb">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
+<p>A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-control-urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
 </dd>
 
-### -field <b>EvtRootHubGetPortStatus</b>
+### -field EvtRootHubGetPortStatus
 
 <dd>
-<p>A pointer to the <a href="buses.evt_ucx_roothub_control_urb">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
+<p>A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-control-urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
 </dd>
 
-### -field <b>EvtRootHubSetHubFeature</b>
+### -field EvtRootHubSetHubFeature
 
 <dd>
-<p>A pointer to the <a href="buses.evt_ucx_roothub_control_urb">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
+<p>A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-control-urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
 </dd>
 
-### -field <b>EvtRootHubSetPortFeature</b>
+### -field EvtRootHubSetPortFeature
 
 <dd>
-<p>A pointer to the <a href="buses.evt_ucx_roothub_control_urb">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
+<p>A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-control-urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
 </dd>
 
-### -field <b>EvtRootHubGetPortErrorCount</b>
+### -field EvtRootHubGetPortErrorCount
 
 <dd>
-<p>A pointer to the <a href="buses.evt_ucx_roothub_control_urb">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
+<p>A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-control-urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
 </dd>
 
-### -field <b>EvtRootHubControlUrb</b>
+### -field EvtRootHubControlUrb
 
 <dd>
-<p>A pointer to the <a href="buses.evt_ucx_roothub_control_urb">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
+<p>A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-control-urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.</p>
 </dd>
 
-### -field <b>EvtRootHubInterruptTx</b>
+### -field EvtRootHubInterruptTx
 
 <dd>
-<p>A pointer to the <a href="buses.evt_ucx_roothub_interrupt_tx">EVT_UCX_ROOTHUB_INTERRUPT_TX</a> callback function.</p>
+<p>A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-interrupt-tx.md">EVT_UCX_ROOTHUB_INTERRUPT_TX</a> callback function.</p>
 </dd>
 
-### -field <b>EvtRootHubGetInfo</b>
+### -field EvtRootHubGetInfo
 
 <dd>
-<p>A pointer to the <a href="buses.evt_ucx_roothub_get_info">EVT_UCX_ROOTHUB_GET_INFO</a> callback function.</p>
+<p>A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-get-info.md">EVT_UCX_ROOTHUB_GET_INFO</a> callback function.</p>
 </dd>
 
-### -field <b>EvtRootHubGet20PortInfo</b>
+### -field EvtRootHubGet20PortInfo
 
 <dd>
-<p>A pointer to the <a href="buses.evt_ucx_roothub_get_20port_info">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function.</p>
+<p>A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-get-20port-info.md">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function.</p>
 </dd>
 
-### -field <b>EvtRootHubGet30PortInfo</b>
+### -field EvtRootHubGet30PortInfo
 
 <dd>
-<p>A pointer to the <a href="buses.evt_ucx_roothub_get_30port_info">EVT_UCX_ROOTHUB_GET_30PORT_INFO</a> callback function.</p>
+<p>A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt-ucx-roothub-get-30port-info.md">EVT_UCX_ROOTHUB_GET_30PORT_INFO</a> callback function.</p>
 </dd>
 
-### -field <b>WdfRequestAttributes</b>
+### -field WdfRequestAttributes
 
 <dd>
 <p>A pointer to a <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies initialization parameters.</p>

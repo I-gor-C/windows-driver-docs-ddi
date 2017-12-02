@@ -55,13 +55,13 @@ typedef struct _D3DHAL_DP2SETPRIORITY {
 ## -struct-fields
 <dl>
 
-### -field <b>dwDDSurface</b>
+### -field dwDDSurface
 
 <dd>
 <p>Specifies the handle of the texture. </p>
 </dd>
 
-### -field <b>dwPriority</b>
+### -field dwPriority
 
 <dd>
 <p>Specifies the priority of the <b>dwDDDestSurface</b> texture. A texture's priority value can be set anywhere in the range from 0 to 0xFFFFFFFF.</p>

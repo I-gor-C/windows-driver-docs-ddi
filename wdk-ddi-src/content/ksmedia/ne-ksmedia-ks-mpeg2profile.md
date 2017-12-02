@@ -58,31 +58,31 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KS_MPEG2Profile_Simple"></a><a id="ks_mpeg2profile_simple"></a><a id="KS_MPEG2PROFILE_SIMPLE"></a><b>KS_MPEG2Profile_Simple</b>
+### -field KS_MPEG2Profile_Simple
 
 <dd>
 <p>Specifies the simple MPEG-2 profile, generally intended for software applications and some cable television.</p>
 </dd>
 
-### -field <a id="KS_MPEG2Profile_Main"></a><a id="ks_mpeg2profile_main"></a><a id="KS_MPEG2PROFILE_MAIN"></a><b>KS_MPEG2Profile_Main</b>
+### -field KS_MPEG2Profile_Main
 
 <dd>
 <p>Specifies the main MPEG-2 profile, generally intended for cable or satellite television.</p>
 </dd>
 
-### -field <a id="KS_MPEG2Profile_SNRScalable"></a><a id="ks_mpeg2profile_snrscalable"></a><a id="KS_MPEG2PROFILE_SNRSCALABLE"></a><b>KS_MPEG2Profile_SNRScalable</b>
+### -field KS_MPEG2Profile_SNRScalable
 
 <dd>
 <p>Similar to <b>KS_MPEG2Profile_Main</b>, with scalable signal-to-noise.</p>
 </dd>
 
-### -field <a id="KS_MPEG2Profile_SpatiallyScalable"></a><a id="ks_mpeg2profile_spatiallyscalable"></a><a id="KS_MPEG2PROFILE_SPATIALLYSCALABLE"></a><b>KS_MPEG2Profile_SpatiallyScalable</b>
+### -field KS_MPEG2Profile_SpatiallyScalable
 
 <dd>
 <p>Similar to <b>KS_MPEG2Profile_Main</b>, with spatial scalability.</p>
 </dd>
 
-### -field <a id="KS_MPEG2Profile_High"></a><a id="ks_mpeg2profile_high"></a><a id="KS_MPEG2PROFILE_HIGH"></a><b>KS_MPEG2Profile_High</b>
+### -field KS_MPEG2Profile_High
 
 <dd>
 <p>Similar to <b>KS_MPEG2Profile_Main</b>, with spatial scalability, scalable signal-to-noise, and 4:2:2 macroblocks.</p>

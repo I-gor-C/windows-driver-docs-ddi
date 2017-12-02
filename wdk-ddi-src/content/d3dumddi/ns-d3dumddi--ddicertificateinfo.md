@@ -56,19 +56,19 @@ typedef struct _DDICERTIFICATEINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>CertificateType</b>
+### -field CertificateType
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ne-d3dumddi--d3dddi-certificatetype.md">D3DDDI_CERTIFICATETYPE</a>-typed value that indicates the certificate type.</p>
 </dd>
 
-### -field <b>ChannelType</b>
+### -field ChannelType
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ne-d3dumddi--ddiauthenticatedchanneltype.md">DDIAUTHENTICATEDCHANNELTYPE</a>-typed value that indicates the authenticated-channel type. </p>
 </dd>
 
-### -field <b>CryptoSessionType</b>
+### -field CryptoSessionType
 
 <dd>
 <p>[in] A GUID that indicates the encryption session. </p>

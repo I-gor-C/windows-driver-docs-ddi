@@ -55,7 +55,7 @@ HRESULT SetSize(
 ## -parameters
 <dl>
 
-### -param <i>lSize</i> [in]
+### -param lSize [in]
 
 <dd>
 <p>The new size in bytes.</p>

@@ -64,43 +64,43 @@ NTSTATUS APIENTRY USBCAMD_WaitOnDeviceEvent(
 ## -parameters
 <dl>
 
-### -param <i>DeviceContext</i> [in]
+### -param DeviceContext [in]
 
 <dd>
 <p>A pointer to device-specific context.</p>
 </dd>
 
-### -param <i>PipeIndex</i> [in]
+### -param PipeIndex [in]
 
 <dd>
 <p>Specifies the index of the interrupt pipe.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A pointer to the read buffer.</p>
 </dd>
 
-### -param <i>BufferLength</i> [in]
+### -param BufferLength [in]
 
 <dd>
 <p>Length of the read buffer, in bytes.</p>
 </dd>
 
-### -param <i>EventComplete</i> [in]
+### -param EventComplete [in]
 
 <dd>
 <p>Pointer to a camera minidriver defined <a href="stream.commandcompletefunction">CommandCompleteFunction</a>, which is called when the interrupt read is completed This value can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>EventContext</i> [in]
+### -param EventContext [in]
 
 <dd>
 <p>Pointer to a block of memory, that is passed as an argument to the camera minidriver defined <a href="stream.commandcompletefunction">CommandCompleteFunction</a>.</p>
 </dd>
 
-### -param <i>LoopBack</i> [in]
+### -param LoopBack [in]
 
 <dd>
 <p>Specifies if USBCAMD is to resubmit another read request to the interrupt pipe every time an interrupt read is completed. Set to <b>TRUE</b></p>

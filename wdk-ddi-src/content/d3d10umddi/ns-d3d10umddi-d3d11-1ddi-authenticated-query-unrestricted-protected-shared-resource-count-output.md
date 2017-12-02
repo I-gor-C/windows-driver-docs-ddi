@@ -55,13 +55,13 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESO
 ## -struct-fields
 <dl>
 
-### -field <b>Output</b>
+### -field Output
 
 <dd>
 <p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure that contains a Message Authentication Code (MAC) and other data.</p>
 </dd>
 
-### -field <b>UnrestrictedProtectedSharedResourceCount</b>
+### -field UnrestrictedProtectedSharedResourceCount
 
 <dd>
 <p>The number of protected, shared resources that can be opened by any process without restrictions.</p>

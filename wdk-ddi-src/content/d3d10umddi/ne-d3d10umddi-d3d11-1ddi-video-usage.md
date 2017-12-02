@@ -56,19 +56,19 @@ typedef enum D3D11_1DDI_VIDEO_USAGE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D11_1DDI_VIDEO_USAGE_PLAYBACK_NORMAL"></a><a id="d3d11_1ddi_video_usage_playback_normal"></a><b>D3D11_1DDI_VIDEO_USAGE_PLAYBACK_NORMAL</b>
+### -field D3D11_1DDI_VIDEO_USAGE_PLAYBACK_NORMAL
 
 <dd>
 <p>Specifies that the device plays video at normal speed.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_USAGE_OPTIMAL_SPEED"></a><a id="d3d11_1ddi_video_usage_optimal_speed"></a><b>D3D11_1DDI_VIDEO_USAGE_OPTIMAL_SPEED</b>
+### -field D3D11_1DDI_VIDEO_USAGE_OPTIMAL_SPEED
 
 <dd>
 <p>Specifies that the device plays video at optimal speed.</p>
 </dd>
 
-### -field <a id="D3D11_1DDI_VIDEO_USAGE_OPTIMAL_QUALITY"></a><a id="d3d11_1ddi_video_usage_optimal_quality"></a><b>D3D11_1DDI_VIDEO_USAGE_OPTIMAL_QUALITY</b>
+### -field D3D11_1DDI_VIDEO_USAGE_OPTIMAL_QUALITY
 
 <dd>
 <p>Specifies that the device plays video at optimal quality.</p>

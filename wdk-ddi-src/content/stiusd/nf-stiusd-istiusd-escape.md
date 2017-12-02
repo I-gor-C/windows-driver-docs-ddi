@@ -7,7 +7,7 @@ old-location: image\istiusd_escape.htm
 old-project: image
 ms.assetid: 9129e776-b5d0-4f53-b2be-67e593369c6c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: IStiUSD, Escape, IStiUSD::Escape
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,37 +60,37 @@ HRESULT Escape(
 ## -parameters
 <dl>
 
-### -param <i>EscapeFunction</i> 
+### -param EscapeFunction 
 
 <dd>
 <p>Caller-supplied, vendor-defined, DWORD-sized value representing an I/O operation. Vendor-defined values must be greater than STI_RAW_RESERVED, which is defined in <i>Sti.h</i>.</p>
 </dd>
 
-### -param <i>lpInData</i> 
+### -param lpInData 
 
 <dd>
 <p>Caller-supplied pointer to a buffer containing data sent to the device.</p>
 </dd>
 
-### -param <i>cbInDataSize</i> 
+### -param cbInDataSize 
 
 <dd>
 <p>Caller-supplied length, in bytes, of the buffer pointed to by <i>lpInData</i>.</p>
 </dd>
 
-### -param <i>pOutData</i> 
+### -param pOutData 
 
 <dd>
 <p>Caller-supplied pointer to a memory buffer to receive data from the device.</p>
 </dd>
 
-### -param <i>dwOutDataSize</i> 
+### -param dwOutDataSize 
 
 <dd>
 <p>Caller-supplied length, in bytes, of the buffer pointed to by <i>lpOutData</i>.</p>
 </dd>
 
-### -param <i>pdwActualData</i> 
+### -param pdwActualData 
 
 <dd>
 <p>Receives the number of bytes actually written to <i>pOutData</i>.</p>
@@ -135,4 +135,4 @@ HRESULT Escape(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IStiUSD::Escape method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IStiUSD::Escape method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

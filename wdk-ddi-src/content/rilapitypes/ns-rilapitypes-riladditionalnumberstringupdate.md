@@ -7,7 +7,7 @@ old-location: netvista\riladditionalnumberstringupdate_2.htm
 old-project: netvista
 ms.assetid: b2675395-08b6-44e6-8052-1fdd7b693c31
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILADDITIONALNUMBERSTRINGUPDATE, RILADDITIONALNUMBERSTRINGUPDATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,23 +59,23 @@ typedef struct _RILADDITIONALNUMBERSTRINGUPDATE {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>hUiccApp</b>
+### -field hUiccApp
 
 <dd></dd>
 
-### -field <b>dwOpType</b>
+### -field dwOpType
 
 <dd></dd>
 
-### -field <b>dwNumId</b>
+### -field dwNumId
 
 <dd></dd>
 
-### -field <b>wszText</b>
+### -field wszText
 
 <dd></dd>
 </dl>

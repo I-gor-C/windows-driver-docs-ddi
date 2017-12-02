@@ -55,13 +55,13 @@ typedef struct D3D11_1DDIARG_CREATEAUTHENTICATEDCHANNEL {
 ## -struct-fields
 <dl>
 
-### -field <b>ChannelType</b>
+### -field ChannelType
 
 <dd>
 <p>Specifies the type of channel, as a member of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-authenticated-channel-type.md">D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE</a> enumeration.</p>
 </dd>
 
-### -field <b>hChannel</b>
+### -field hChannel
 
 <dd>
 <p>A handle to the authenticated channel object.</p>

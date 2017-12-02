@@ -59,37 +59,37 @@ typedef struct _DXGK_TIMED_OPERATION {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>[in] The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>OwnerTag</b>
+### -field OwnerTag
 
 <dd>
 <p>[system] A pointer to the place in the code that started the timed operation.</p>
 </dd>
 
-### -field <b>OsHandled</b>
+### -field OsHandled
 
 <dd>
 <p>[system] For system use only. </p>
 </dd>
 
-### -field <b>TimeoutTriggered</b>
+### -field TimeoutTriggered
 
 <dd>
 <p>[out] A Boolean value that specifies whether the time-out was triggered. </p>
 </dd>
 
-### -field <b>Timeout</b>
+### -field Timeout
 
 <dd>
 <p>[system] For system use only. </p>
 </dd>
 
-### -field <b>StartTick</b>
+### -field StartTick
 
 <dd>
 <p>[system] For system use only. </p>

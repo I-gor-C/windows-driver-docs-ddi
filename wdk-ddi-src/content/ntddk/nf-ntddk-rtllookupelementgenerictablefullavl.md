@@ -7,7 +7,7 @@ old-location: ifsk\rtllookupelementgenerictablefullavl.htm
 old-project: ifsk
 ms.assetid: fddb2e23-ddb3-48bc-a94e-0ca9a8580b78
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlLookupElementGenericTableFullAvl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,44 +57,44 @@ PVOID RtlLookupElementGenericTableFullAvl(
 ## -parameters
 <dl>
 
-### -param <i>Table</i> [in]
+### -param Table [in]
 
 <dd>
 <p>Pointer to the generic Adelson-Velsky/Landis (AVL) table (<a href="..\ntddk\ns-ntddk--rtl-avl-table.md">RTL_AVL_TABLE</a>). The table must have been initialized by calling <a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>.</p>
 </dd>
 
-### -param <i>Buffer</i> [in]
+### -param Buffer [in]
 
 <dd>
 <p>A buffer of search data to pass to the <i>CompareRoutine</i> that was registered when <a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a> initialized the generic table. For more information, see the description of <b>RtlInitializeGenericTableAvl</b>.</p>
 </dd>
 
-### -param <i>NodeOrParent</i> [out]
+### -param NodeOrParent [out]
 
 <dd>
 <p>On output, a value that describes the relationship of the <i>NodeOrParent</i> with the table entry (node) that <b>RtlLookupElementGenericTableFullAvl</b> is searching for. The <i>SearchResult</i> parameter can have any of the following values:</p>
 <p></p>
 <dl>
 
-### -param <a id="TableEmptyTree"></a><a id="tableemptytree"></a><a id="TABLEEMPTYTREE"></a><b>TableEmptyTree</b>
+### -param TableEmptyTree
 
 <dd>
 <p>The tree was empty. The contents of <i>NodeOrParent</i> has <i>not</i> been altered.</p>
 </dd>
 
-### -param <a id="TableFoundNode"></a><a id="tablefoundnode"></a><a id="TABLEFOUNDNODE"></a><b>TableFoundNode</b>
+### -param TableFoundNode
 
 <dd>
 <p>The <b>RtlLookupElementGenericTableFullAvl</b> routine found a table entry whose key matches the data in <i>Buffer</i>. <i>NodeOrParent</i> contains a pointer to the matched entry.</p>
 </dd>
 
-### -param <a id="TableInsertAsLeft"></a><a id="tableinsertasleft"></a><a id="TABLEINSERTASLEFT"></a><b>TableInsertAsLeft</b>
+### -param TableInsertAsLeft
 
 <dd>
 <p>The <b>RtlLookupElementGenericTableFullAvl</b> routine did <i>not</i>find a table entry whose key matches the data in <i>Buffer</i>. I<i>not</i>f the entry that <b>RtlLookupElementGenericTableFullAvl</b> searched for were in the table, it would be the left child of the entry that <i>NodeOrParent</i> points to.</p>
 </dd>
 
-### -param <a id="TableInsertAsRight"></a><a id="tableinsertasright"></a><a id="TABLEINSERTASRIGHT"></a><b>TableInsertAsRight</b>
+### -param TableInsertAsRight
 
 <dd>
 <p>The <b>RtlLookupElementGenericTableFullAvl</b> routine did <i>not</i>find a table entry whose key matches the data in <i>Buffer</i>. If the entry that <b>RtlLookupElementGenericTableFullAvl</b> searched for were in the table, it would be the right child of the entry that <i>NodeOrParent</i> points to.</p>
@@ -102,7 +102,7 @@ PVOID RtlLookupElementGenericTableFullAvl(
 </dl>
 </dd>
 
-### -param <i>SearchResult</i> [out]
+### -param SearchResult [out]
 
 <dd>
 <p>A pointer to a table entry. If the <b>RtlLookupElementGenericTableFullAvl</b> routine matches an entry, <i>NodeOrParent</i>points to the matched entry. If the <b>RtlLookupElementGenericTableFullAvl</b> routine fails to find a match, <i>NodeOrParent</i> points to the entry that would be the parent of the entry that <b>RtlLookupElementGenericTableFullAvl</b> routine was searching for.</p>
@@ -201,4 +201,4 @@ PVOID RtlLookupElementGenericTableFullAvl(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlLookupElementGenericTableFullAvl routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlLookupElementGenericTableFullAvl routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

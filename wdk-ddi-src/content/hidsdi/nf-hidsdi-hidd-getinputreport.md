@@ -56,20 +56,20 @@ BOOLEAN __stdcall HidD_GetInputReport(
 ## -parameters
 <dl>
 
-### -param <i>HidDeviceObject</i> [in]
+### -param HidDeviceObject [in]
 
 <dd>
 <p>Specifies an open handle to a top-level collection.</p>
 </dd>
 
-### -param <i>ReportBuffer</i> [out]
+### -param ReportBuffer [out]
 
 <dd>
 <p>Pointer to a caller-allocated input report buffer that the caller uses to specify a HID report ID and <b>HidD_GetInputReport</b> uses to return the specified input report. </p>
 <p>For more information about this parameter, see the Remarks section.</p>
 </dd>
 
-### -param <i>ReportBufferLength</i> [in]
+### -param ReportBufferLength [in]
 
 <dd>
 <p>Specifies the size, in bytes, of the report buffer. The report buffer must be large enough to hold the input report -- excluding its report ID, if report IDs are used -- plus one additional byte that specifies a nonzero report ID or zero.</p>
@@ -95,7 +95,7 @@ BOOLEAN __stdcall HidD_GetInputReport(
 <p>Only user-mode applications can call <b>HidD_GetInputReport</b>. Kernel-mode drivers can use an <a href="..\hidclass\ni-hidclass-ioctl-hid-get-input-report.md">IOCTL_HID_GET_INPUT_REPORT</a> request.</p>
 
 <p>
-    For more information, see <a href="NULL">Interpreting HID Reports</a>.
+    For more information, see <a href="https://msdn.microsoft.com/10f8c3a1-ad60-4c99-a425-fa8c9a3be0e1">Interpreting HID Reports</a>.
     
    </p>
 

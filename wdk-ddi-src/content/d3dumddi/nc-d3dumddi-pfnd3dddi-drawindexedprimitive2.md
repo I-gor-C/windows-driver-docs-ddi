@@ -61,31 +61,31 @@ __checkReturn HRESULT APIENTRY DrawIndexedPrimitive2(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-drawindexedprimitive2.md">D3DDDIARG_DRAWINDEXEDPRIMITIVE2</a> structure that describes the primitive to draw.</p>
 </dd>
 
-### -param <i>dwIndicesSize</i> [in]
+### -param dwIndicesSize [in]
 
 <dd>
 <p> The size, in bytes, of indexes in the buffer that <i>pIndexBuffer</i> points to. This size is 2 or 4 bytes. </p>
 </dd>
 
-### -param <i>pIndexBuffer</i> [in]
+### -param pIndexBuffer [in]
 
 <dd>
 <p> A pointer to a buffer of index data to be drawn.</p>
 </dd>
 
-### -param <i>pFlagBuffer</i> [in, optional]
+### -param pFlagBuffer [in, optional]
 
 <dd>
 <p> A pointer to a 32-bit value that contains triangle-edge flags, which are used only during line-fill mode. The first three bits (0/1/2) of the 32-bit value specify how the three edges of the corresponding triangle are rendered. If a bit is set to 1, its associated triangle edge is rendered; otherwise, the edge is not rendered.</p>

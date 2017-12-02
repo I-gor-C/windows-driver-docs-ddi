@@ -57,25 +57,25 @@ typedef enum _WHEA_ERROR_SEVERITY {
 ## -enum-fields
 <dl>
 
-### -field <a id="WheaErrSevRecoverable"></a><a id="wheaerrsevrecoverable"></a><a id="WHEAERRSEVRECOVERABLE"></a><b>WheaErrSevRecoverable</b>
+### -field WheaErrSevRecoverable
 
 <dd>
 <p>The error has not been corrected but might be recoverable.</p>
 </dd>
 
-### -field <a id="WheaErrSevFatal"></a><a id="wheaerrsevfatal"></a><a id="WHEAERRSEVFATAL"></a><b>WheaErrSevFatal</b>
+### -field WheaErrSevFatal
 
 <dd>
 <p>The error has not been corrected and is fatal.</p>
 </dd>
 
-### -field <a id="WheaErrSevCorrected"></a><a id="wheaerrsevcorrected"></a><a id="WHEAERRSEVCORRECTED"></a><b>WheaErrSevCorrected</b>
+### -field WheaErrSevCorrected
 
 <dd>
 <p>The error has been corrected by the hardware or firmware.</p>
 </dd>
 
-### -field <a id="WheaErrSevInformational"></a><a id="wheaerrsevinformational"></a><a id="WHEAERRSEVINFORMATIONAL"></a><b>WheaErrSevInformational</b>
+### -field WheaErrSevInformational
 
 <dd>
 <p>An error has not occurred.</p>

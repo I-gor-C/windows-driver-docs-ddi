@@ -7,7 +7,7 @@ old-location: ieee\irb_req_receive_phy_packets.htm
 old-project: IEEE
 ms.assetid: FE160EB4-EDBD-4783-A02D-F82D2842ADD0
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB_RECEIVE_PHY_PACKETS, IRB_REQ_RECEIVE_PHY_PACKETS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ typedef struct _IRB_REQ_RECEIVE_PHY_PACKETS {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies whether a callback should be registered or deactivated. Use REGISTER_PHY_PACKET_NOTIFICATION to register PhyPacketRoutine as the callback. Use DEREGISTER_PHY_PACKET_NOTIFICATION to deactivate any previously registered callbacks.</p>
 </dd>
 
-### -field <b>PhyPacketRoutine</b>
+### -field PhyPacketRoutine
 
 <dd>
 <p>Points to the notification routine for received PHY packets. The following prototype illustrates the notification routine:</p>
@@ -81,7 +81,7 @@ typedef struct _IRB_REQ_RECEIVE_PHY_PACKETS {
 <p><a id="Context"></a><a id="context"></a><a id="CONTEXT"></a><b>Context</b></p>
 </td>
 <td width="60%">
-<p>The argument that is specified in the <b>u.ReceivePhyPackets.PhyPacketContext</b> parameter when the <a href="https://msdn.microsoft.com/65E0AAFC-FCFD-477F-B2E5-34B5A1498F0F">REQUEST_RECEIVE_PHY_PACKET</a> request is sent.</p>
+<p>The argument that is specified in the <b>u.ReceivePhyPackets.PhyPacketContext</b> parameter when the <a href="buses.request_receive_phy_packets">REQUEST_RECEIVE_PHY_PACKET</a> request is sent.</p>
 </td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ typedef struct _IRB_REQ_RECEIVE_PHY_PACKETS {
 <p> </p>
 </dd>
 
-### -field <b>PhyPacketContext</b>
+### -field PhyPacketContext
 
 <dd>
 <p>Specifies the Context argument to be passed to the PhyPacketRoutine.</p>

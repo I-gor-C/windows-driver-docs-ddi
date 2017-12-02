@@ -54,7 +54,7 @@ typedef struct _AVC_SUBUNIT_INFO_BLOCK {
 ## -struct-fields
 <dl>
 
-### -field <b>Info</b>
+### -field Info
 
 <dd>
 <p>Ignored on input. On output, this contains up to eight contiguous pages of subunit information in the format of the AV/C SUBUNIT_INFO unit command. The subunit information pages are terminated with 0xff. See Section 9.11 of the AV/C Digital Interface Command Set General Specification, Rev 3.0. This specification can be found at the <a href="http://go.microsoft.com/fwlink/p/?linkid=8728">1394 Trade Association</a> website.</p>

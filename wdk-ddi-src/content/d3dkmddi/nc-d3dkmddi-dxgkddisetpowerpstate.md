@@ -59,15 +59,15 @@ NTSTATUS APIENTRY DxgkDdiSetPowerPState(
 ## -parameters
 <dl>
 
-### -param <i>DriverContext</i> [in]
+### -param DriverContext [in]
 
 <dd></dd>
 
-### -param <i>ComponentIndex</i> [in]
+### -param ComponentIndex [in]
 
 <dd></dd>
 
-### -param <i>RequestedComponentPState</i> [in]
+### -param RequestedComponentPState [in]
 
 <dd></dd>
 </dl>

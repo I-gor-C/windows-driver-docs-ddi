@@ -70,43 +70,43 @@ typedef enum D3D10_DDI_BLEND {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3D10_DDI_BLEND_ZERO"></a><a id="d3d10_ddi_blend_zero"></a><b>D3D10_DDI_BLEND_ZERO</b>
+### -field D3D10_DDI_BLEND_ZERO
 
 <dd>
 <p>Blend factor is (0, 0, 0, 0).</p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_ONE"></a><a id="d3d10_ddi_blend_one"></a><b>D3D10_DDI_BLEND_ONE</b>
+### -field D3D10_DDI_BLEND_ONE
 
 <dd>
 <p>Blend factor is (1, 1, 1, 1).</p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_SRC_COLOR"></a><a id="d3d10_ddi_blend_src_color"></a><b>D3D10_DDI_BLEND_SRC_COLOR</b>
+### -field D3D10_DDI_BLEND_SRC_COLOR
 
 <dd>
 <p>Blend factor is (Rₛ,Gₛ,Bₛ,Aₛ).</p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_INV_SRC_COLOR"></a><a id="d3d10_ddi_blend_inv_src_color"></a><b>D3D10_DDI_BLEND_INV_SRC_COLOR</b>
+### -field D3D10_DDI_BLEND_INV_SRC_COLOR
 
 <dd>
 <p>Blend factor is (1 - Rₛ, 1 - Gₛ, 1 - Bₛ, 1 - Aₛ). </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_SRC_ALPHA"></a><a id="d3d10_ddi_blend_src_alpha"></a><b>D3D10_DDI_BLEND_SRC_ALPHA</b>
+### -field D3D10_DDI_BLEND_SRC_ALPHA
 
 <dd>
 <p>Blend factor is (Aₛ, Aₛ, Aₛ, Aₛ). </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_INV_SRC_ALPHA"></a><a id="d3d10_ddi_blend_inv_src_alpha"></a><b>D3D10_DDI_BLEND_INV_SRC_ALPHA</b>
+### -field D3D10_DDI_BLEND_INV_SRC_ALPHA
 
 <dd>
 <p>Blend factor is ( 1 - Aₛ, 1 - Aₛ, 1 - Aₛ, 1 - Aₛ). </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_DEST_ALPHA"></a><a id="d3d10_ddi_blend_dest_alpha"></a><b>D3D10_DDI_BLEND_DEST_ALPHA</b>
+### -field D3D10_DDI_BLEND_DEST_ALPHA
 
 <dd>
 <p>
@@ -114,31 +114,31 @@ typedef enum D3D10_DDI_BLEND {
      </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_INV_DEST_ALPHA"></a><a id="d3d10_ddi_blend_inv_dest_alpha"></a><b>D3D10_DDI_BLEND_INV_DEST_ALPHA</b>
+### -field D3D10_DDI_BLEND_INV_DEST_ALPHA
 
 <dd>
 <p>Blend factor is (1 - A<sub>d</sub>, 1 - A<sub>d</sub>, 1 - A<sub>d</sub>, 1 - A<sub>d</sub>) of the current render target that is being blended. </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_DEST_COLOR"></a><a id="d3d10_ddi_blend_dest_color"></a><b>D3D10_DDI_BLEND_DEST_COLOR</b>
+### -field D3D10_DDI_BLEND_DEST_COLOR
 
 <dd>
 <p>Blend factor is (R<sub>d</sub>, G<sub>d</sub>, B<sub>d</sub>, A<sub>d</sub>) of the current render target that is being blended. </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_INV_DEST_COLOR"></a><a id="d3d10_ddi_blend_inv_dest_color"></a><b>D3D10_DDI_BLEND_INV_DEST_COLOR</b>
+### -field D3D10_DDI_BLEND_INV_DEST_COLOR
 
 <dd>
 <p>Blend factor is (1 - R<sub>d</sub>, 1 - G<sub>d</sub>, 1 - B<sub>d</sub>, 1 - A<sub>d</sub>) of the current render target that is being blended.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_SRC_ALPHASAT"></a><a id="d3d10_ddi_blend_src_alphasat"></a><b>D3D10_DDI_BLEND_SRC_ALPHASAT</b>
+### -field D3D10_DDI_BLEND_SRC_ALPHASAT
 
 <dd>
 <p>Blend factor is (f, f, f, 1); f = min(A, 1 - A<sub>d</sub>). </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_BLEND_FACTOR"></a><a id="d3d10_ddi_blend_blend_factor"></a><b>D3D10_DDI_BLEND_BLEND_FACTOR</b>
+### -field D3D10_DDI_BLEND_BLEND_FACTOR
 
 <dd>
 <p>
@@ -146,31 +146,31 @@ typedef enum D3D10_DDI_BLEND {
      </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_INVBLEND_FACTOR"></a><a id="d3d10_ddi_blend_invblend_factor"></a><b>D3D10_DDI_BLEND_INVBLEND_FACTOR</b>
+### -field D3D10_DDI_BLEND_INVBLEND_FACTOR
 
 <dd>
 <p>Inverted constant color-blending factor that the frame-buffer blender uses.</p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_SRC1_COLOR"></a><a id="d3d10_ddi_blend_src1_color"></a><b>D3D10_DDI_BLEND_SRC1_COLOR</b>
+### -field D3D10_DDI_BLEND_SRC1_COLOR
 
 <dd>
 <p>Blend factor is the red, green, and blue (RGB) components of a pixel shader output register (PS output o1.rgb). </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_INV_SRC1_COLOR"></a><a id="d3d10_ddi_blend_inv_src1_color"></a><b>D3D10_DDI_BLEND_INV_SRC1_COLOR</b>
+### -field D3D10_DDI_BLEND_INV_SRC1_COLOR
 
 <dd>
 <p>Blend factor is the inversion of the RGB components of a pixel shader output register (1.0f - PS output o1.rgb). </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_SRC1_ALPHA"></a><a id="d3d10_ddi_blend_src1_alpha"></a><b>D3D10_DDI_BLEND_SRC1_ALPHA</b>
+### -field D3D10_DDI_BLEND_SRC1_ALPHA
 
 <dd>
 <p>Blend factor is the alpha component of a pixel shader output register (PS output o1.a). </p>
 </dd>
 
-### -field <a id="D3D10_DDI_BLEND_INV_SRC1_ALPHA"></a><a id="d3d10_ddi_blend_inv_src1_alpha"></a><b>D3D10_DDI_BLEND_INV_SRC1_ALPHA</b>
+### -field D3D10_DDI_BLEND_INV_SRC1_ALPHA
 
 <dd>
 <p>Blend factor is the inversion of the alpha component of a pixel shader output register (1.0f - PS output o1.a). </p>

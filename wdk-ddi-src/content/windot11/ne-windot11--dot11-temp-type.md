@@ -7,7 +7,7 @@ old-location: netvista\dot11_temp_type.htm
 old-project: netvista
 ms.assetid: 73275e2e-b738-4adc-b89e-2cd152de6c75
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PRINTER_EVENT_ATTRIBUTES_INFO, PRINTER_EVENT_ATTRIBUTES_INFO, *PPRINTER_EVENT_ATTRIBUTES_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,19 @@ typedef enum _DOT11_TEMP_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="dot11_temp_type_unknown"></a><a id="DOT11_TEMP_TYPE_UNKNOWN"></a><b>dot11_temp_type_unknown</b>
+### -field dot11_temp_type_unknown
 
 <dd>
 <p>An uninitialized or unknown temperature type.</p>
 </dd>
 
-### -field <a id="dot11_temp_type_1"></a><a id="DOT11_TEMP_TYPE_1"></a><b>dot11_temp_type_1</b>
+### -field dot11_temp_type_1
 
 <dd>
 <p>The commercial temperature range from 0 through 40 degrees Celsius.</p>
 </dd>
 
-### -field <a id="dot11_temp_type_2"></a><a id="DOT11_TEMP_TYPE_2"></a><b>dot11_temp_type_2</b>
+### -field dot11_temp_type_2
 
 <dd>
 <p>The industrial temperature range from -30 through 70 degrees Celsius.</p>
@@ -112,4 +112,4 @@ typedef enum _DOT11_TEMP_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_TEMP_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_TEMP_TYPE enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

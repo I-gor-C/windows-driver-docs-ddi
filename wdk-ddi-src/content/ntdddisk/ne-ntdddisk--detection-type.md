@@ -56,19 +56,19 @@ typedef enum _DETECTION_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DetectNone"></a><a id="detectnone"></a><a id="DETECTNONE"></a><b>DetectNone</b>
+### -field DetectNone
 
 <dd>
 <p>Indicates that the disk contains neither an INT 13h partition nor an extended INT 13h partition.</p>
 </dd>
 
-### -field <a id="DetectInt13"></a><a id="detectint13"></a><a id="DETECTINT13"></a><b>DetectInt13</b>
+### -field DetectInt13
 
 <dd>
 <p>Indicates that the disk has a standard INT 13h partition.</p>
 </dd>
 
-### -field <a id="DetectExInt13"></a><a id="detectexint13"></a><a id="DETECTEXINT13"></a><b>DetectExInt13</b>
+### -field DetectExInt13
 
 <dd>
 <p>Indicates that the disk contains an extended INT 13h partition. </p>

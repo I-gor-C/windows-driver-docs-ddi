@@ -7,7 +7,7 @@ old-location: netvista\rilemergencynumbercategory.htm
 old-project: netvista
 ms.assetid: f1ad9a15-70c8-4331-b350-f681aa216aaf
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,31 +60,31 @@ typedef enum _RILEMERGENCYNUMBERCATEGORY {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_ENUM_AMBULANCE"></a><a id="ril_enum_ambulance"></a><b>RIL_ENUM_AMBULANCE</b>
+### -field RIL_ENUM_AMBULANCE
 
 <dd></dd>
 
-### -field <a id="RIL_ENUM_FIRE_BRIGADE"></a><a id="ril_enum_fire_brigade"></a><b>RIL_ENUM_FIRE_BRIGADE</b>
+### -field RIL_ENUM_FIRE_BRIGADE
 
 <dd></dd>
 
-### -field <a id="RIL_ENUM_MARINE_GUARD"></a><a id="ril_enum_marine_guard"></a><b>RIL_ENUM_MARINE_GUARD</b>
+### -field RIL_ENUM_MARINE_GUARD
 
 <dd></dd>
 
-### -field <a id="RIL_ENUM_MOUNTAIN_RESCUE"></a><a id="ril_enum_mountain_rescue"></a><b>RIL_ENUM_MOUNTAIN_RESCUE</b>
+### -field RIL_ENUM_MOUNTAIN_RESCUE
 
 <dd></dd>
 
-### -field <a id="RIL_ENUM_MANUAL_ECALL"></a><a id="ril_enum_manual_ecall"></a><b>RIL_ENUM_MANUAL_ECALL</b>
+### -field RIL_ENUM_MANUAL_ECALL
 
 <dd></dd>
 
-### -field <a id="RIL_ENUM_AUTO_ECALL"></a><a id="ril_enum_auto_ecall"></a><b>RIL_ENUM_AUTO_ECALL</b>
+### -field RIL_ENUM_AUTO_ECALL
 
 <dd></dd>
 
-### -field <a id="RIL_ENUM_ALL"></a><a id="ril_enum_all"></a><b>RIL_ENUM_ALL</b>
+### -field RIL_ENUM_ALL
 
 <dd></dd>
 </dl>

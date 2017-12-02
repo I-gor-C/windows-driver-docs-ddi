@@ -7,7 +7,7 @@ old-location: netvista\ril_setcallforwardingstatus.htm
 old-project: netvista
 ms.assetid: c73e3b75-e11d-44b8-9a4a-c98ccfe1c820
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_SetCallForwardingStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,31 +63,31 @@ HRESULT  RIL_SetCallForwardingStatus(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwExecutor</i> 
+### -param dwExecutor 
 
 <dd></dd>
 
-### -param <i>dwReason</i> 
+### -param dwReason 
 
 <dd></dd>
 
-### -param <i>fAllClasses</i> 
+### -param fAllClasses 
 
 <dd></dd>
 
-### -param <i>dwInfoClasses</i> 
+### -param dwInfoClasses 
 
 <dd></dd>
 
-### -param <i>dwStatus</i> 
+### -param dwStatus 
 
 <dd></dd>
 </dl>

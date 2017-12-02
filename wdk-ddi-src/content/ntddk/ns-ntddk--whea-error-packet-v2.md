@@ -69,98 +69,98 @@ typedef struct _WHEA_ERROR_PACKET_V2 {
 ## -struct-fields
 <dl>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>The signature of the hardware error packet. This member contains the value WHEA_ERROR_PACKET_V2_SIGNATURE.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version of the WHEA_ERROR_PACKET_V2 structure. This member contains the value WHEA_ERROR_PKT_V2_VERSION.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The size, in bytes, of the hardware error packet, including the hardware error data and PSHED data.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <a href="..\ntddk\ns-ntddk--whea-error-packet-flags.md">WHEA_ERROR_PACKET_FLAGS</a> union that specifies the format of the hardware error data. </p>
 </dd>
 
-### -field <b>ErrorType</b>
+### -field ErrorType
 
 <dd>
 <p>A <a href="..\ntddk\ne-ntddk--whea-error-type.md">WHEA_ERROR_TYPE</a> value that specifies the type of hardware component that reported the hardware error.</p>
 </dd>
 
-### -field <b>ErrorSeverity</b>
+### -field ErrorSeverity
 
 <dd>
 <p>A <a href="..\ntddk\ne-ntddk--whea-error-severity.md">WHEA_ERROR_SEVERITY</a> value that specifies the severity of the error condition.</p>
 </dd>
 
-### -field <b>ErrorSourceId</b>
+### -field ErrorSourceId
 
 <dd>
 <p>The identifier of the error source that reported the hardware error.</p>
 </dd>
 
-### -field <b>ErrorSourceType</b>
+### -field ErrorSourceType
 
 <dd>
 <p>A <a href="..\ntddk\ne-ntddk--whea-error-source-type.md">WHEA_ERROR_SOURCE_TYPE</a> value that indicates the type of the error source that reported the hardware error.</p>
 </dd>
 
-### -field <b>NotifyType</b>
+### -field NotifyType
 
 <dd>
 <p>A GUID that identifies the notification mechanism by which an error condition is reported to the operating system. The following are the GUIDs for the standard notification types:</p>
 <p></p>
 <dl>
 
-### -field <a id="CMC_NOTIFY_TYPE_GUID"></a><a id="cmc_notify_type_guid"></a>CMC_NOTIFY_TYPE_GUID
+### -field CMC_NOTIFY_TYPE_GUID
 
 <dd>
 <p>Corrected Machine Check (CMC)</p>
 </dd>
 
-### -field <a id="CPE_NOTIFY_TYPE_GUID"></a><a id="cpe_notify_type_guid"></a>CPE_NOTIFY_TYPE_GUID
+### -field CPE_NOTIFY_TYPE_GUID
 
 <dd>
 <p>Corrected Platform Error (CPE)</p>
 </dd>
 
-### -field <a id="MCE_NOTIFY_TYPE_GUID"></a><a id="mce_notify_type_guid"></a>MCE_NOTIFY_TYPE_GUID
+### -field MCE_NOTIFY_TYPE_GUID
 
 <dd>
 <p>Machine Check Exception (MCE)</p>
 </dd>
 
-### -field <a id="PCIe_NOTIFY_TYPE_GUID"></a><a id="pcie_notify_type_guid"></a><a id="PCIE_NOTIFY_TYPE_GUID"></a>PCIe_NOTIFY_TYPE_GUID
+### -field PCIe_NOTIFY_TYPE_GUID
 
 <dd>
 <p>PCI Express (PCIe) Error</p>
 </dd>
 
-### -field <a id="INIT_NOTIFY_TYPE_GUID"></a><a id="init_notify_type_guid"></a>INIT_NOTIFY_TYPE_GUID
+### -field INIT_NOTIFY_TYPE_GUID
 
 <dd>
 <p>INIT Error Record (INIT)</p>
 </dd>
 
-### -field <a id="NMI_NOTIFY_TYPE_GUID"></a><a id="nmi_notify_type_guid"></a>NMI_NOTIFY_TYPE_GUID
+### -field NMI_NOTIFY_TYPE_GUID
 
 <dd>
 <p>Nonmaskable Interrupt (NMI)</p>
 </dd>
 
-### -field <a id="BOOT_NOTIFY_TYPE_GUID"></a><a id="boot_notify_type_guid"></a>BOOT_NOTIFY_TYPE_GUID
+### -field BOOT_NOTIFY_TYPE_GUID
 
 <dd>
 <p>Boot Error Record (BOOT)</p>
@@ -169,43 +169,43 @@ typedef struct _WHEA_ERROR_PACKET_V2 {
 <p>For error notification types that do not conform to one of the standard types in the previous list, a platform-specific GUID can be defined to identify the notification mechanism. If the notification type does not correspond to any of the standard notification types or any platform-specific notification types, this member is set to GENERIC_NOTIFY_TYPE_GUID.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>DataFormat</b>
+### -field DataFormat
 
 <dd>
 <p>A <a href="..\ntddk\ne-ntddk--whea-error-packet-data-format.md">WHEA_ERROR_PACKET_DATA_FORMAT</a> value  that indicates the format of the hardware error information that is contained in the data that is referenced through the <b>DataOffset </b>and <b>DataLength</b> members.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>DataOffset</b>
+### -field DataOffset
 
 <dd>
 <p>An offset, in bytes, for hardware error data from the status registers for the error source. The format of the hardware error data is specified by the <b>DataFormat</b> member. The offset of the hardware error information is relative to the start of the WHEA_ERROR_PACKET_V2 structure.</p>
 </dd>
 
-### -field <b>DataLength</b>
+### -field DataLength
 
 <dd>
 <p>The length, in bytes, of the hardware error data.</p>
 </dd>
 
-### -field <b>PshedDataOffset</b>
+### -field PshedDataOffset
 
 <dd>
 <p>An offset, in bytes, for a data buffer where a PSHED plug-in can add additional platform-specific error data to the hardware error packet. The offset of the PSHED data buffer is relative to the start of the WHEA_ERROR_PACKET_V2 structure.</p>
 </dd>
 
-### -field <b>PshedDataLength</b>
+### -field PshedDataLength
 
 <dd>
 <p>The length, in bytes, of the PSHED data buffer.</p>

@@ -7,7 +7,7 @@ old-location: netvista\riluiccchannelgroup_2.htm
 old-project: netvista
 ms.assetid: cbb5fbb1-7042-45fe-81eb-2fca0f413572
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

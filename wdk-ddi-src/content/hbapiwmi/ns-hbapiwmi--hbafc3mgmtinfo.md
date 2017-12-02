@@ -64,67 +64,67 @@ typedef struct _HBAFC3MgmtInfo {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueAdapterId</b>
+### -field UniqueAdapterId
 
 <dd>
 <p>Contains a unique identifier for the adapter. </p>
 </dd>
 
-### -field <b>wwn</b>
+### -field wwn
 
 <dd>
 <p>Contains a worldwide name for the adapter, as described in the T11 committee's <i>Fibre Channel HBA API </i>specification. </p>
 </dd>
 
-### -field <b>unittype</b>
+### -field unittype
 
 <dd>
 <p>Describes the type of HBA, as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.</p>
 </dd>
 
-### -field <b>PortId</b>
+### -field PortId
 
 <dd>
 <p>Contains a value corresponding to the physical port number field of the specific identification data as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.</p>
 </dd>
 
-### -field <b>NumberOfAttachedNodes</b>
+### -field NumberOfAttachedNodes
 
 <dd>
 <p>Contains the number of nodes attached to the topology as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.</p>
 </dd>
 
-### -field <b>IPVersion</b>
+### -field IPVersion
 
 <dd>
 <p>Contains the concatenated node management and IP version fields of the specific identification data as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.</p>
 </dd>
 
-### -field <b>UDPPort</b>
+### -field UDPPort
 
 <dd>
 <p>Indicates the value of the UDP/TCP port number field of the specific identification data as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.</p>
 </dd>
 
-### -field <b>IPAddress</b>
+### -field IPAddress
 
 <dd>
 <p>Indicates the value of the IP address field of the specific identification data as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.</p>
 </dd>
 
-### -field <b>reserved</b>
+### -field reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>TopologyDiscoveryFlags</b>
+### -field TopologyDiscoveryFlags
 
 <dd>
 <p>Indicates the value of the vendor specific field in word 12 of the specific identification data as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.</p>
 </dd>
 
-### -field <b>reserved1</b>
+### -field reserved1
 
 <dd>
 <p>Reserved.</p>

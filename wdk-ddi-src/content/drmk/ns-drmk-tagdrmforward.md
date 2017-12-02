@@ -57,25 +57,25 @@ typedef struct tagDRMFORWARD {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>No flag bits are currently defined. Set this member to zero.</p>
 </dd>
 
-### -field <b>DeviceObject</b>
+### -field DeviceObject
 
 <dd>
 <p>Pointer to the device object, which is a system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
 </dd>
 
-### -field <b>FileObject</b>
+### -field FileObject
 
 <dd>
 <p>Pointer to the file object, which is a system structure of type <a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a>.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>Pointer to context data. For more information, see the following Remarks section.</p>
@@ -93,7 +93,7 @@ typedef struct tagDRMFORWARD {
 
 <p>By convention, if the downstream module is a KS filter, the <b>Context</b> member points to a file object that specifies the KS pin to which the <b>DrmForwardContentToDeviceObject</b> function sends the property request. In other words, the <b>Context</b> member points to the same file object as the <b>FileObject</b> member.</p>
 
-<p>The DRMFORWARD structure is also used by the <a href="..\portcls\nf-portcls-pcforwardcontenttodeviceobject.md">PcForwardContentToDeviceObject</a> function and the <a href="audio.idrmport2_forwardcontenttodeviceobject">IDrmPort2::ForwardContentToDeviceObject</a> method, which are alternative entry points for the <b>DrmForwardContentToDeviceObject</b> function. For more information, see <a href="NULL">DRM Functions and Interfaces</a>.</p>
+<p>The DRMFORWARD structure is also used by the <a href="..\portcls\nf-portcls-pcforwardcontenttodeviceobject.md">PcForwardContentToDeviceObject</a> function and the <a href="audio.idrmport2_forwardcontenttodeviceobject">IDrmPort2::ForwardContentToDeviceObject</a> method, which are alternative entry points for the <b>DrmForwardContentToDeviceObject</b> function. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.</p>
 
 <p>When an audio driver forwards DRM content to a system-supplied USB driver, the following conditions apply: <ul>
 <li><b>DRMFORWARD.DeviceObject</b> must be placed at the top of the device stack.</li>
@@ -102,7 +102,7 @@ typedef struct tagDRMFORWARD {
 </ul>
 </p>
 
-<p>For general information about DRM, see <a href="NULL">Digital Rights Management</a>.</p>
+<p>For general information about DRM, see <a href="https://msdn.microsoft.com/7ce19196-5180-421f-b6be-ac4a235a8c16">Digital Rights Management</a>.</p>
 
 ## -requirements
 <table>

@@ -56,19 +56,19 @@ typedef struct _D3DKMDT_STAGINGSURFACEDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Width</b>
+### -field Width
 
 <dd>
 <p>[in] The width of the staging buffer, in pixels.</p>
 </dd>
 
-### -field <b>Height</b>
+### -field Height
 
 <dd>
 <p>[in] The height of the staging buffer, in pixels.</p>
 </dd>
 
-### -field <b>Pitch</b>
+### -field Pitch
 
 <dd>
 <p>[out] The width of the staging buffer, in bytes. The driver must return the pitch value because the staging buffer is lockable. </p>

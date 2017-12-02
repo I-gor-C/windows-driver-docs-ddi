@@ -58,31 +58,31 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Set</b>
+### -field Set
 
 <dd>
 <p>Specifies a GUID the identifies the kernel streaming method set. For more information about method set GUIDs, see <b>Remarks</b>.</p>
 </dd>
 
-### -field <b>MethodsCount</b>
+### -field MethodsCount
 
 <dd>
 <p>Specifies the number of methods in this method set.</p>
 </dd>
 
-### -field <b>MethodItem</b>
+### -field MethodItem
 
 <dd>
 <p>Points to an array of <a href="stream.ksmethod_item">KSMETHOD_ITEM</a> structures. Each structure describes one method of the method set.</p>
 </dd>
 
-### -field <b>FastIoCount</b>
+### -field FastIoCount
 
 <dd>
 <p>Reserved for system use. Do not use.</p>
 </dd>
 
-### -field <b>FastIoTable</b>
+### -field FastIoTable
 
 <dd>
 <p>Reserved for system use. Do not use.</p>

@@ -57,25 +57,25 @@ typedef struct D3D10_DDI_DEPTH_STENCILOP_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>StencilFailOp</b>
+### -field StencilFailOp
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-stencil-op.md">D3D10_DDI_STENCIL_OP</a>-typed value that indicates the operation to perform if the stencil test fails.</p>
 </dd>
 
-### -field <b>StencilDepthFailOp</b>
+### -field StencilDepthFailOp
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-stencil-op.md">D3D10_DDI_STENCIL_OP</a>-typed value that indicates the operation to perform if the stencil test passes and the depth test fails.</p>
 </dd>
 
-### -field <b>StencilPassOp</b>
+### -field StencilPassOp
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-stencil-op.md">D3D10_DDI_STENCIL_OP</a>-typed value that indicates the operation to perform if both stencil and depth tests pass.</p>
 </dd>
 
-### -field <b>StencilFunc</b>
+### -field StencilFunc
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-comparison-func.md">D3D10_DDI_COMPARISON_FUNC</a>-typed value that indicates the stencil-comparison function to perform.</p>

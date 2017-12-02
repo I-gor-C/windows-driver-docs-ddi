@@ -59,25 +59,25 @@ typedef struct _PO_FX_DEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of this structure. Set this member to <b>STOR_POFX_DEVICE_VERSION_V1</b>.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size of this structure. Set this value to <b>STOR_POFX_DEVICE_SIZE</b>.</p>
 </dd>
 
-### -field <b>ComponentCount</b>
+### -field ComponentCount
 
 <dd>
 <p>The number of elements in the <b>Components</b> array. Set this member to 1. Currently, only a single component is supported for either a storage adapter or logical unit.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>The device power state capabilities flags. The miniport sets one or more of the PoFx device flags to enable or disable power state capabilities.</p>
@@ -92,7 +92,7 @@ typedef struct _PO_FX_DEVICE {
 <tr>
 <td width="40%"><a id="STOR_POFX_DEVICE_FLAG_DISABLE_INTERRUPTS_ON_D3"></a><a id="stor_pofx_device_flag_disable_interrupts_on_d3"></a><dl>
 
-### -field <b>STOR_POFX_DEVICE_FLAG_DISABLE_INTERRUPTS_ON_D3</b>
+### -field STOR_POFX_DEVICE_FLAG_DISABLE_INTERRUPTS_ON_D3
 
 </dl>
 </td>
@@ -103,7 +103,7 @@ typedef struct _PO_FX_DEVICE {
 <tr>
 <td width="40%"><a id="STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD"></a><a id="stor_pofx_device_flag_enable_d3_cold"></a><dl>
 
-### -field <b>STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD</b>
+### -field STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD
 
 </dl>
 </td>
@@ -115,7 +115,7 @@ typedef struct _PO_FX_DEVICE {
 <tr>
 <td width="40%"><a id="STOR_POFX_DEVICE_FLAG_NO_D0"></a><a id="stor_pofx_device_flag_no_d0"></a><dl>
 
-### -field <b>STOR_POFX_DEVICE_FLAG_NO_D0</b>
+### -field STOR_POFX_DEVICE_FLAG_NO_D0
 
 </dl>
 </td>
@@ -126,7 +126,7 @@ typedef struct _PO_FX_DEVICE {
 <tr>
 <td width="40%"><a id="STOR_POFX_DEVICE_FLAG_NO_D3"></a><a id="stor_pofx_device_flag_no_d3"></a><dl>
 
-### -field <b>STOR_POFX_DEVICE_FLAG_NO_D3</b>
+### -field STOR_POFX_DEVICE_FLAG_NO_D3
 
 </dl>
 </td>
@@ -137,7 +137,7 @@ typedef struct _PO_FX_DEVICE {
 <tr>
 <td width="40%"><a id="STOR_POFX_DEVICE_FLAG_NO_DUMP_ACTIVE"></a><a id="stor_pofx_device_flag_no_dump_active"></a><dl>
 
-### -field <b>STOR_POFX_DEVICE_FLAG_NO_DUMP_ACTIVE</b>
+### -field STOR_POFX_DEVICE_FLAG_NO_DUMP_ACTIVE
 
 </dl>
 </td>
@@ -150,7 +150,7 @@ This flag indicates whether a device is available for dump when it is idle.</p>
 <p> </p>
 </dd>
 
-### -field <b>Components</b>
+### -field Components
 
 <dd>
 <p>This member is the first element in an array of one or more <a href="kernel.po_fx_component">STOR_POFX_COMPONENT</a> elements. If the array contains more than one element, the additional elements immediately follow the <b>STOR_POFX_DEVICE</b> structure. The array contains one element for each component in the device.  Currently, storage devices have only  one component so additional component structures are unnecessary.</p>

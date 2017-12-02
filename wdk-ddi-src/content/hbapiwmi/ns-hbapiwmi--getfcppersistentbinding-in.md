@@ -54,7 +54,7 @@ typedef struct _GetFcpPersistentBinding_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>InEntryCount</b>
+### -field InEntryCount
 
 <dd>
 <p>Indicates the number of binding entries that will fit in the buffer that the WMI client provides when it calls the <a href="storage.getfcppersistentbinding">GetFcpPersistentBinding</a> WMI method.</p>

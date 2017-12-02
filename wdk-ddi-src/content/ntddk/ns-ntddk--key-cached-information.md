@@ -61,49 +61,49 @@ typedef struct _KEY_CACHED_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>LastWriteTime</b>
+### -field LastWriteTime
 
 <dd>
 <p>The last time the key or any of its values changed. This time value is expressed in absolute system time format. Absolute system time is the number of 100-nanosecond intervals since the start of the year 1601 in the Gregorian calendar.</p>
 </dd>
 
-### -field <b>TitleIndex</b>
+### -field TitleIndex
 
 <dd>
 <p>Device and intermediate drivers should ignore this member.</p>
 </dd>
 
-### -field <b>SubKeys</b>
+### -field SubKeys
 
 <dd>
 <p>The number of subkeys for a key.</p>
 </dd>
 
-### -field <b>MaxNameLen</b>
+### -field MaxNameLen
 
 <dd>
 <p>The maximum number of bytes for a subkey name.</p>
 </dd>
 
-### -field <b>Values</b>
+### -field Values
 
 <dd>
 <p>The number of value entries.</p>
 </dd>
 
-### -field <b>MaxValueNameLen</b>
+### -field MaxValueNameLen
 
 <dd>
 <p>The maximum length, in bytes, of any value entry name.</p>
 </dd>
 
-### -field <b>MaxValueDataLen</b>
+### -field MaxValueDataLen
 
 <dd>
 <p>The maximum length, in bytes, of a value entry data field.</p>
 </dd>
 
-### -field <b>NameLength</b>
+### -field NameLength
 
 <dd>
 <p>The size, in bytes, of the key name.</p>

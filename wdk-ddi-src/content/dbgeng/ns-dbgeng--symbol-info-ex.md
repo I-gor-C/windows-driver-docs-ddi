@@ -7,7 +7,7 @@ old-location: debugger\symbol_info_ex.htm
 old-project: debugger
 ms.assetid: BDB8179A-4A97-4E83-B4A4-7B8358B3510C
 ms.author: windowsdriverdev
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.keywords: SYMBOL_INFO_EX, SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ typedef struct _SYMBOL_INFO_EX {
 ## -struct-fields
 <dl>
 
-### -field <b>SizeOfStruct</b>
+### -field SizeOfStruct
 
 <dd>
 <p>Set to sizeof(SYMBOL_INFO_EX).</p>
 </dd>
 
-### -field <b>TypeOfInfo</b>
+### -field TypeOfInfo
 
 <dd>
 <p>Type of the symbol information stored.  DEBUG_SYMINFO_BREAKPOINT_SOURCE_LINE is the only supported type.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>Address of the first line that does not correspond to compiler added glue line.</p>
 </dd>
 
-### -field <b>Line</b>
+### -field Line
 
 <dd>
 <p>First line number that does not correspond to a compiler added glue line.</p>
 </dd>
 
-### -field <b>Displacement</b>
+### -field Displacement
 
 <dd>
 <p>Line displacement: Offset between given address and the first instruction of the line.</p>
 </dd>
 
-### -field <b>Reserved[4]</b>
+### -field Reserved[4]
 
 <dd>
 <p>Reserved for future use. This parameter can be set to any value.</p>

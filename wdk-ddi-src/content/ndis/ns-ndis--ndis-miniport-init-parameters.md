@@ -7,7 +7,7 @@ old-location: netvista\ndis_miniport_init_parameters.htm
 old-project: netvista
 ms.assetid: 945d921b-3024-4c4f-a50d-e996c6183db7
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_MINIPORT_INIT_PARAMETERS, NDIS_MINIPORT_INIT_PARAMETERS, *PNDIS_MINIPORT_INIT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ typedef struct _NDIS_MINIPORT_INIT_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -75,13 +75,13 @@ typedef struct _NDIS_MINIPORT_INIT_PARAMETERS {
      <b>Size</b> member to NDIS_SIZEOF_MINIPORT_INIT_PARAMETER_REVISION_1.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for NDIS.</p>
 </dd>
 
-### -field <b>AllocatedResources</b>
+### -field AllocatedResources
 
 <dd>
 <p>A pointer to an NDIS_RESOURCE_LIST-type structure that lists the hardware resources that the Plug
@@ -91,7 +91,7 @@ typedef struct _NDIS_MINIPORT_INIT_PARAMETERS {
      2000 and later platforms.</p>
 </dd>
 
-### -field <b>IMDeviceInstanceContext</b>
+### -field IMDeviceInstanceContext
 
 <dd>
 <p>A pointer to the context area for a virtual device that an intermediate driver supports. The
@@ -102,7 +102,7 @@ typedef struct _NDIS_MINIPORT_INIT_PARAMETERS {
      <b>IMDeviceInstanceContext</b> is <b>NULL</b>.</p>
 </dd>
 
-### -field <b>MiniportAddDeviceContext</b>
+### -field MiniportAddDeviceContext
 
 <dd>
 <p>A handle for a driver-allocated context area, or <b>NULL</b>. The miniport driver specifies this handle,
@@ -110,13 +110,13 @@ typedef struct _NDIS_MINIPORT_INIT_PARAMETERS {
      <a href="..\ndis\nc-ndis-miniport-add-device.md">MiniportAddDevice</a> function.</p>
 </dd>
 
-### -field <b>IfIndex</b>
+### -field IfIndex
 
 <dd>
 <p>The network interface index that is associated with the miniport adapter.</p>
 </dd>
 
-### -field <b>NetLuid</b>
+### -field NetLuid
 
 <dd>
 <p>The 
@@ -124,7 +124,7 @@ typedef struct _NDIS_MINIPORT_INIT_PARAMETERS {
      miniport adapter.</p>
 </dd>
 
-### -field <b>DefaultPortAuthStates</b>
+### -field DefaultPortAuthStates
 
 <dd>
 <p>A pointer to an 
@@ -135,7 +135,7 @@ typedef struct _NDIS_MINIPORT_INIT_PARAMETERS {
      OID_GEN_PORT_AUTHENTICATION_PARAMETERS</a>.</p>
 </dd>
 
-### -field <b>PciDeviceCustomProperties</b>
+### -field PciDeviceCustomProperties
 
 <dd>
 <p>A pointer to an 
@@ -208,4 +208,4 @@ typedef struct _NDIS_MINIPORT_INIT_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_INIT_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_INIT_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

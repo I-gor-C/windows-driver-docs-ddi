@@ -58,13 +58,13 @@ HRESULT APIENTRY CALLBACK* pfnUnlock2Cb(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-unlock2.md">D3DDDICB_UNLOCK2</a> structure that describes the allocation to unlock.</p>

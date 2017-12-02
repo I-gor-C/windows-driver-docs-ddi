@@ -66,49 +66,49 @@ typedef enum _D3DDDI_SYNCHRONIZATIONOBJECT_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DDDI_SYNCHRONIZATION_MUTEX"></a><a id="d3dddi_synchronization_mutex"></a><b>D3DDDI_SYNCHRONIZATION_MUTEX</b>
+### -field D3DDDI_SYNCHRONIZATION_MUTEX
 
 <dd>
 <p>The synchronization object is a synchronization mutex.</p>
 <p>Supported starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="D3DDDI_SEMAPHORE"></a><a id="d3dddi_semaphore"></a><b>D3DDDI_SEMAPHORE</b>
+### -field D3DDDI_SEMAPHORE
 
 <dd>
 <p>The synchronization object is a semaphore.</p>
 <p>Supported starting with Windows Vista.</p>
 </dd>
 
-### -field <a id="D3DDDI_FENCE"></a><a id="d3dddi_fence"></a><b>D3DDDI_FENCE</b>
+### -field D3DDDI_FENCE
 
 <dd>
 <p>The synchronization object is a fence. </p>
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <a id="D3DDDI_CPU_NOTIFICATION"></a><a id="d3dddi_cpu_notification"></a><b>D3DDDI_CPU_NOTIFICATION</b>
+### -field D3DDDI_CPU_NOTIFICATION
 
 <dd>
 <p>The synchronization object is a CPU notification.</p>
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <a id="D3DDDI_MONITORED_FENCE"></a><a id="d3dddi_monitored_fence"></a><b>D3DDDI_MONITORED_FENCE</b>
+### -field D3DDDI_MONITORED_FENCE
 
 <dd>
 <p>The synchronization object is a monitored fence.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id="D3DDDI_MONITORED_FENCE"></a><a id="d3dddi_monitored_fence"></a><b>D3DDDI_MONITORED_FENCE</b>
+### -field D3DDDI_MONITORED_FENCE
 
 <dd>
 <p>The synchronization object is a periodic monitored fence.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
-### -field <a id=""></a><b></b>
+### -field 
 
 <dd></dd>
 </dl>

@@ -56,13 +56,13 @@ LOGICAL IoWithinStackLimits(
 ## -parameters
 <dl>
 
-### -param <i>RegionStart</i> [in]
+### -param RegionStart [in]
 
 <dd>
 <p>A pointer to the start of the region.</p>
 </dd>
 
-### -param <i>RegionSize</i> [in]
+### -param RegionSize [in]
 
 <dd>
 <p>The size of the region.</p>

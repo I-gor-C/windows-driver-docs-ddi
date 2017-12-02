@@ -59,37 +59,37 @@ typedef enum _D3DKMDT_COLOR_BASIS {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMDT_CB_UNINITIALIZED"></a><a id="d3dkmdt_cb_uninitialized"></a><b>D3DKMDT_CB_UNINITIALIZED</b>
+### -field D3DKMDT_CB_UNINITIALIZED
 
 <dd>
 <p>Indicates that a variable of type D3DKMDT_COLOR_BASIS has not yet been assigned a meaningful value.</p>
 </dd>
 
-### -field <a id="D3DKMDT_CB_INTENSITY"></a><a id="d3dkmdt_cb_intensity"></a><b>D3DKMDT_CB_INTENSITY</b>
+### -field D3DKMDT_CB_INTENSITY
 
 <dd>
 <p>Indicates an encoding scheme that relies only on intensity. This basis is used for monochrome images.</p>
 </dd>
 
-### -field <a id="D3DKMDT_CB_SRGB"></a><a id="d3dkmdt_cb_srgb"></a><b>D3DKMDT_CB_SRGB</b>
+### -field D3DKMDT_CB_SRGB
 
 <dd>
 <p>Indicates the SRGB color basis.</p>
 </dd>
 
-### -field <a id="D3DKMDT_CB_SCRGB"></a><a id="d3dkmdt_cb_scrgb"></a><b>D3DKMDT_CB_SCRGB</b>
+### -field D3DKMDT_CB_SCRGB
 
 <dd>
 <p>Indicates the SCRGB color basis.</p>
 </dd>
 
-### -field <a id="D3DKMDT_CB_YCBCR"></a><a id="d3dkmdt_cb_ycbcr"></a><b>D3DKMDT_CB_YCBCR</b>
+### -field D3DKMDT_CB_YCBCR
 
 <dd>
 <p>Indicates the YCBCR color basis.</p>
 </dd>
 
-### -field <a id="D3DKMDT_CB_YPBPR"></a><a id="d3dkmdt_cb_ypbpr"></a><b>D3DKMDT_CB_YPBPR</b>
+### -field D3DKMDT_CB_YPBPR
 
 <dd>
 <p>Indicates the YPBPR color basis.</p>

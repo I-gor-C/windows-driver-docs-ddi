@@ -59,13 +59,13 @@ VOID SetD3ColdSupport(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="..\wdm\ns-wdm--d3cold-support-interface.md">D3COLD_SUPPORT_INTERFACE</a> structure for the interface.</p>
 </dd>
 
-### -param <i>D3ColdSupport</i> [in]
+### -param D3ColdSupport [in]
 
 <dd>
 <p>Whether to allow transitions from D3hot to D3cold. Set to <b>TRUE</b> to enable these transitions. Otherwise, set to <b>FALSE.</b> For more information, see Remarks.</p>

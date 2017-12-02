@@ -65,70 +65,70 @@ typedef struct _DEVICE_COPY_OFFLOAD_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Contains the size of this structure, in bytes. The value of this member will change as members are added to 
       the structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the total size of the data returned, in bytes. This may include data that follows this 
       structure.</p>
 </dd>
 
-### -field <b>MaximumTokenLifetime</b>
+### -field MaximumTokenLifetime
 
 <dd>
 <p>The maximum lifetime of the token, in seconds.</p>
 </dd>
 
-### -field <b>DefaultTokenLifetime</b>
+### -field DefaultTokenLifetime
 
 <dd>
 <p>The default lifetime of the token, in seconds.</p>
 </dd>
 
-### -field <b>MaximumTransferSize</b>
+### -field MaximumTransferSize
 
 <dd>
 <p>The maximum transfer size, in bytes.</p>
 </dd>
 
-### -field <b>OptimalTransferCount</b>
+### -field OptimalTransferCount
 
 <dd>
 <p>The optimal transfer size, in bytes.</p>
 </dd>
 
-### -field <b>MaximumDataDescriptors</b>
+### -field MaximumDataDescriptors
 
 <dd>
 <p>The maximum number of data descriptors.</p>
 </dd>
 
-### -field <b>MaximumTransferLengthPerDescriptor</b>
+### -field MaximumTransferLengthPerDescriptor
 
 <dd>
 <p>The maximum transfer length, in blocks, per descriptor.</p>
 </dd>
 
-### -field <b>OptimalTransferLengthPerDescriptor</b>
+### -field OptimalTransferLengthPerDescriptor
 
 <dd>
 <p>The optimal transfer length, in blocks, per descriptor.</p>
 </dd>
 
-### -field <b>OptimalTransferLengthGranularity</b>
+### -field OptimalTransferLengthGranularity
 
 <dd>
 <p>The granularity of the optimal transfer length, in blocks. Transfer lengths that are not an even multiple 
       of this length may be delayed.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for future use.</p>

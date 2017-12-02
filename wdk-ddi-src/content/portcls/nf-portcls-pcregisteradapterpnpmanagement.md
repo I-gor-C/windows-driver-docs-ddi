@@ -55,13 +55,13 @@ NTSTATUS PcRegisterAdapterPnPManagement(
 ## -parameters
 <dl>
 
-### -param <i>pUnknown</i> [in]
+### -param pUnknown [in]
 
 <dd>
 <p>Pointer to an adapter driver object's <a href="com.iunknown">IUnknown</a> interface. The PortCls system driver queries this object for its <a href="..\portcls\nn-portcls-iadapterpnpmanagement.md">IAdapterPnpManagement</a> interface.</p>
 </dd>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Specifies a pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.</p>
@@ -74,7 +74,7 @@ NTSTATUS PcRegisterAdapterPnPManagement(
 ## -remarks
 <p>Portcls uses <b>PcRegisterAdapterPnpManagement</b> and <a href="..\portcls\nf-portcls-pcunregisteradapterpnpmanagement.md">PcUnregisterAdapterPnpManagement</a> to support PNP rebalance.</p>
 
-<p>For more information,  see <a href="NULL">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>
+<p>For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430A-BCAF-04E13FA15382">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>
 
 ## -requirements
 <table>
@@ -138,7 +138,7 @@ NTSTATUS PcRegisterAdapterPnPManagement(
 <a href="..\portcls\nn-portcls-iadapterpnpmanagement.md">IAdapterPnpManagement</a>
 </dt>
 <dt>
-<a href="NULL">Implement PnP Rebalance for PortCls Audio Drivers</a>
+<a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430A-BCAF-04E13FA15382">Implement PnP Rebalance for PortCls Audio Drivers</a>
 </dt>
 </dl>
 <p> </p>

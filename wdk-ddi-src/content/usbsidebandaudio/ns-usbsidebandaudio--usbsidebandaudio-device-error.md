@@ -58,19 +58,19 @@ typedef struct _USBSIDEBANDAUDIO_DEVICE_ERROR {
 ## -struct-fields
 <dl>
 
-### -field <b>Reserved 0</b>
+### -field Reserved 0
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <b>Reserved 1</b>
+### -field Reserved 1
 
 <dd>
 <p>TBD</p>
 </dd>
 
-### -field <b>Reserved 2</b>
+### -field Reserved 2
 
 <dd>
 <p>TBD</p>

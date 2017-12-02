@@ -7,7 +7,7 @@ old-location: netvista\ndis_nic_switch_vport_interrupt_moderation.htm
 old-project: netvista
 ms.assetid: 86ec2e8f-1a89-4c0a-b761-d9bf0d3dc35a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT, *PGET_CONFIGURATION_IOCTL_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,37 +59,37 @@ typedef enum _NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION {
 ## -enum-fields
 <dl>
 
-### -field <a id="NdisNicSwitchVPortIntModUndefined"></a><a id="ndisnicswitchvportintmodundefined"></a><a id="NDISNICSWITCHVPORTINTMODUNDEFINED"></a><b>NdisNicSwitchVPortIntModUndefined</b>
+### -field NdisNicSwitchVPortIntModUndefined
 
 <dd>
 <p>Interrupt moderation for the VPort is not defined.</p>
 </dd>
 
-### -field <a id="NdisNicSwitchVPortIntModAdaptive"></a><a id="ndisnicswitchvportintmodadaptive"></a><a id="NDISNICSWITCHVPORTINTMODADAPTIVE"></a><b>NdisNicSwitchVPortIntModAdaptive</b>
+### -field NdisNicSwitchVPortIntModAdaptive
 
 <dd>
 <p>Interrupt moderation for the VPort is adaptive. This state enables the network adapter to adjust the interrupt moderation rate for the VPort based on the pattern of network traffic.</p>
 </dd>
 
-### -field <a id="NdisNicSwitchVPortIntModOff"></a><a id="ndisnicswitchvportintmodoff"></a><a id="NDISNICSWITCHVPORTINTMODOFF"></a><b>NdisNicSwitchVPortIntModOff</b>
+### -field NdisNicSwitchVPortIntModOff
 
 <dd>
 <p>Interrupt moderation for the VPort is disabled.</p>
 </dd>
 
-### -field <a id="NdisNicSwitchVPortIntModLow"></a><a id="ndisnicswitchvportintmodlow"></a><a id="NDISNICSWITCHVPORTINTMODLOW"></a><b>NdisNicSwitchVPortIntModLow</b>
+### -field NdisNicSwitchVPortIntModLow
 
 <dd>
 <p>Interrupt moderation for the VPort is low.</p>
 </dd>
 
-### -field <a id="NdisNicSwitchVPortIntModMedium"></a><a id="ndisnicswitchvportintmodmedium"></a><a id="NDISNICSWITCHVPORTINTMODMEDIUM"></a><b>NdisNicSwitchVPortIntModMedium</b>
+### -field NdisNicSwitchVPortIntModMedium
 
 <dd>
 <p>Interrupt moderation for the VPort is medium.</p>
 </dd>
 
-### -field <a id="NdisNicSwitchVPortIntModHigh"></a><a id="ndisnicswitchvportintmodhigh"></a><a id="NDISNICSWITCHVPORTINTMODHIGH"></a><b>NdisNicSwitchVPortIntModHigh</b>
+### -field NdisNicSwitchVPortIntModHigh
 
 <dd>
 <p>Interrupt moderation for the VPort is high.</p>
@@ -135,4 +135,4 @@ typedef enum _NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION enumeration%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

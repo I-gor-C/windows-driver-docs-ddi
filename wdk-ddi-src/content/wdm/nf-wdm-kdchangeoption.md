@@ -60,37 +60,37 @@ NTSTATUS KdChangeOption(
 ## -parameters
 <dl>
 
-### -param <i>Option</i> [in]
+### -param Option [in]
 
 <dd>
 <p>A value from the KD_OPTION enumeration that indicates the kernel state to access and change. The value of this parameter determines the format and required length of the <i>InBuffer</i> and <i>OutBuffer</i>. Currently, the only valid value is KD_OPTION_SET_BLOCK_ENABLE. </p>
 </dd>
 
-### -param <i>InBufferBytes</i> [in, optional]
+### -param InBufferBytes [in, optional]
 
 <dd>
 <p>The size, in bytes, of the buffer at <i>InBuffer</i>. This value is optional. </p>
 </dd>
 
-### -param <i>InBuffer</i> [in]
+### -param InBuffer [in]
 
 <dd>
 <p>A pointer to a caller-allocated input buffer that contains information about the kernel state to change. If <i>Option</i> specifies a kernel state that does not require input data, this pointer can be <b>NULL</b>.</p>
 </dd>
 
-### -param <i>OutBufferBytes</i> [in, optional]
+### -param OutBufferBytes [in, optional]
 
 <dd>
 <p>The size, in bytes, of the buffer at <i>OutBuffer</i>. This value is optional.</p>
 </dd>
 
-### -param <i>OutBuffer</i> [out]
+### -param OutBuffer [out]
 
 <dd>
 <p>A pointer to a caller-allocated output buffer in which information that pertains to the kernel state is returned. If <i>Option</i> specifies a kernel state that does not produce output data, this pointer can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>OutBufferNeeded</i> [out, optional]
+### -param OutBufferNeeded [out, optional]
 
 <dd>
 <p>A pointer to a variable that receives the size, in bytes, of the required output buffer at <i>OutBuffer</i>. This value is optional.</p>

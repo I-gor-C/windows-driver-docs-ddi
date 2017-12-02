@@ -54,7 +54,7 @@ void __inline KsPinReleaseControl(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure representing the pin for which to release the control mutex.</p>
@@ -65,7 +65,7 @@ void __inline KsPinReleaseControl(
 <p>None</p>
 
 ## -remarks
-<p>The pin control mutex is the same mutex that is used by <i>Pin</i>'s parent. In other words, the pin control mutex <i>is</i> the filter control mutex of <i>Pin</i>'s parent. For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>The pin control mutex is the same mutex that is used by <i>Pin</i>'s parent. In other words, the pin control mutex <i>is</i> the filter control mutex of <i>Pin</i>'s parent. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 <p>Note that this function is an inline call to <a href="..\ks\nf-ks-ksreleasecontrol.md">KsReleaseControl</a>. Minidrivers manipulating a pin should call this function instead of calling <b>KsReleaseControl</b> directly. </p>
 

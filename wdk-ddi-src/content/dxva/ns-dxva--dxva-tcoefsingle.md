@@ -55,14 +55,14 @@ typedef struct _DXVA_TCoefSingle {
 ## -struct-fields
 <dl>
 
-### -field <b>wIndexWithEOB</b>
+### -field wIndexWithEOB
 
 <dd>
 <p>This member contains two fields: <i>TCoefIDX </i>and <i>TCoefEOB</i>.</p>
 <p></p>
 <dl>
 
-### -field <a id="TCoefIDX"></a><a id="tcoefidx"></a><a id="TCOEFIDX"></a><i>TCoefIDX</i>
+### -field TCoefIDX
 
 <dd>
 <p>Specifies the scan index of the coefficient in the block, as determined from the <b>bConfigHostInverseScan</b> member of the <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure. This field is in the 15 most significant bits of the <b>wIndexWithEOB </b>member.</p>
@@ -78,7 +78,7 @@ typedef struct _DXVA_TCoefSingle {
 <p><i>TCoefIDX</i> must always be less than 64.</p>
 </dd>
 
-### -field <a id="TCoefEOB"></a><a id="tcoefeob"></a><a id="TCOEFEOB"></a><i>TCoefEOB</i>
+### -field TCoefEOB
 
 <dd>
 <p>Indicates whether the current coefficient is the last one associated with the current block of transform coefficients. A value of 1 indicates that the current coefficient is the last one for the block and a value of zero indicates that it is not. This field is in the least significant bit of the <b>wIndexWithEOB</b> member. </p>
@@ -86,7 +86,7 @@ typedef struct _DXVA_TCoefSingle {
 </dl>
 </dd>
 
-### -field <b>TCoefValue</b>
+### -field TCoefValue
 
 <dd>
 <p>Indicates the value of the coefficient in the block. <b>TCoefValue</b> must be clipped to the appropriate range as specified in <a href="https://msdn.microsoft.com/7736a226-1122-4380-b09f-a8560c0cd609">Low-Level IDCT Processing Elements</a> by the host prior to passing the coefficient value to the accelerator for <a href="wdkgloss.i#wdkgloss.idct#wdkgloss.idct"><i>IDCT</i></a> operation. MPEG-2 mismatch control, if necessary, is also the responsibility of the host, not the accelerator. (This might require the creation of extra "phantom" nonzero coefficients.)</p>

@@ -60,13 +60,13 @@ NTSTATUS GetIdleWakeInfo(
 ## -parameters
 <dl>
 
-### -param <i>Context</i> [in, optional]
+### -param Context [in, optional]
 
 <dd>
 <p>A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="..\wdm\ns-wdm--d3cold-support-interface.md">D3COLD_SUPPORT_INTERFACE</a> structure for the interface.</p>
 </dd>
 
-### -param <i>SystemPowerState</i> [in]
+### -param SystemPowerState [in]
 
 <dd>
 <p>System power state. Set this parameter to one of the following <a href="..\wdm\ne-wdm--system-power-state.md">SYSTEM_POWER_STATE</a> enumeration values:</p>
@@ -80,7 +80,7 @@ NTSTATUS GetIdleWakeInfo(
 <p>These values represent system power states S0 (system working state) through S4. For the <i>SystemPowerState</i> value supplied by the caller, the routine determines the deepest device power state from which the device can issue a wake signal.</p>
 </dd>
 
-### -param <i>DeepestWakeableDstate</i> [out]
+### -param DeepestWakeableDstate [out]
 
 <dd>
 <p>Deepest wakeable Dx state. This parameter is a pointer to a <a href="..\wdm\ne-wdm--device-wake-depth.md">DEVICE_WAKE_DEPTH</a> variable. If the call is successful, the routine writes one of the following enumeration values to this variable:</p>

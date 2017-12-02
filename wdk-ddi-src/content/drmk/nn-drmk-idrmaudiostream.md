@@ -39,7 +39,7 @@ req.iface: IDrmAudioStream
 
 
 ## -description
-<p>The <code>IDrmAudioStream</code> interface assigns DRM protection to the digital content in an audio stream. (For information about DRM-protected content, see <a href="NULL">Digital Rights Management</a>) This interface is implemented by a WaveCyclic or WavePci miniport driver and is exposed to the WaveCyclic or WavePci port driver. To determine whether a miniport driver supports this interface, the WaveCyclic or WavePci port driver calls the miniport stream object's <b>QueryInterface</b> method with REFIID <b>IID_IDrmAudioStream</b>. <code>IDrmAudioStream</code> inherits from the <b>IUnknown</b> interface.</p>
+<p>The <code>IDrmAudioStream</code> interface assigns DRM protection to the digital content in an audio stream. (For information about DRM-protected content, see <a href="https://msdn.microsoft.com/7ce19196-5180-421f-b6be-ac4a235a8c16">Digital Rights Management</a>) This interface is implemented by a WaveCyclic or WavePci miniport driver and is exposed to the WaveCyclic or WavePci port driver. To determine whether a miniport driver supports this interface, the WaveCyclic or WavePci port driver calls the miniport stream object's <b>QueryInterface</b> method with REFIID <b>IID_IDrmAudioStream</b>. <code>IDrmAudioStream</code> inherits from the <b>IUnknown</b> interface.</p>
 <p>The port driver uses the <code>IDrmAudioStream</code> interface if it is supported by either of the following stream objects:</p>
 <p>A stream object created by <a href="audio.iminiportwavecyclic_newstream">IMiniportWaveCyclic::NewStream</a>
 </p>

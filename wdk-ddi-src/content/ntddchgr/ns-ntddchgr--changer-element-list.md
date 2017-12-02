@@ -55,13 +55,13 @@ typedef struct _CHANGER_ELEMENT_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>Element</b>
+### -field Element
 
 <dd>
 <p>Describes the first element of type <a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a> in a range <b>NumberOfElements</b> long.</p>
 </dd>
 
-### -field <b>NumberOfElements</b>
+### -field NumberOfElements
 
 <dd>
 <p>Specifies the number of elements in the range.</p>

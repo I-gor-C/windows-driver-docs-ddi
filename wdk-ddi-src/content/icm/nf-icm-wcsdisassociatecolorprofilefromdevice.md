@@ -56,19 +56,19 @@ BOOL WcsDisassociateColorProfileFromDevice(
 ## -parameters
 <dl>
 
-### -param <i>profileManagementScope</i> [in]
+### -param profileManagementScope [in]
 
 <dd>
 <p>A <a href="..\icm\ne-icm-wcs-profile-management-scope.md">WCS_PROFILE_MANAGEMENT_SCOPE</a> value that specifies the scope of this profile management operation.</p>
 </dd>
 
-### -param <i>pProfileName</i> [in]
+### -param pProfileName [in]
 
 <dd>
 <p>A pointer to the file name of the profile to disassociate.</p>
 </dd>
 
-### -param <i>pDeviceName</i> [in]
+### -param pDeviceName [in]
 
 <dd>
 <p>A pointer to the name of the device from which the profile is to be disassociated.</p>

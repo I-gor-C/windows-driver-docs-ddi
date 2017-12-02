@@ -57,19 +57,19 @@ VP_STATUS VideoPortVerifyAccessRanges(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>NumAccessRanges</i> 
+### -param NumAccessRanges 
 
 <dd>
 <p>Specifies the number of elements in the <i>AccessRanges</i> array, or zero.</p>
 </dd>
 
-### -param <i>AccessRanges</i> [in, optional]
+### -param AccessRanges [in, optional]
 
 <dd>
 <p>Pointer to the miniport driver's access ranges array, or <b>NULL</b>. Each <a href="..\video\ns-video--video-access-range.md">VIDEO_ACCESS_RANGE</a>-type element in this array specifies a bus-relative range of device memory, I/O ports, or register addresses for the adapter.</p>

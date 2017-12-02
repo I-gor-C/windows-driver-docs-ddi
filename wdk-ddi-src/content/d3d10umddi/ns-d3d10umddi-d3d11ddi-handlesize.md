@@ -55,13 +55,13 @@ typedef struct D3D11DDI_HANDLESIZE {
 ## -struct-fields
 <dl>
 
-### -field <b>HandleType</b>
+### -field HandleType
 
 <dd>
 <p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi-handletype.md">D3D11DDI_HANDLETYPE</a>-typed value that identifies the handle type. </p>
 </dd>
 
-### -field <b>DriverPrivateSize</b>
+### -field DriverPrivateSize
 
 <dd>
 <p>[in] The size, in bytes, of the driver-private memory space that holds the handle data. </p>

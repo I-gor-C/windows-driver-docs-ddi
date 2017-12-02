@@ -63,19 +63,19 @@ typedef struct _SRBEX_DATA_IO_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeIoInfo</b>.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>Length of the data in this structure, in bytes, starting with the <b>Flags</b> member. Set to SRBEX_DATA_IO_INFO_LENGTH.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Flags set for handling the request. May be a combination of these values:</p>
@@ -87,7 +87,7 @@ typedef struct _SRBEX_DATA_IO_INFO {
 <tr>
 <td width="40%"><a id="REQUEST_INFO_NO_CACHE_FLAG"></a><a id="request_info_no_cache_flag"></a><dl>
 
-### -field <b>REQUEST_INFO_NO_CACHE_FLAG</b>
+### -field REQUEST_INFO_NO_CACHE_FLAG
 
 </dl>
 </td>
@@ -98,7 +98,7 @@ typedef struct _SRBEX_DATA_IO_INFO {
 <tr>
 <td width="40%"><a id="REQUEST_INFO_PAGING_IO_FLAG"></a><a id="request_info_paging_io_flag"></a><dl>
 
-### -field <b>REQUEST_INFO_PAGING_IO_FLAG</b>
+### -field REQUEST_INFO_PAGING_IO_FLAG
 
 </dl>
 </td>
@@ -109,7 +109,7 @@ typedef struct _SRBEX_DATA_IO_INFO {
 <tr>
 <td width="40%"><a id="REQUEST_INFO_SEQUENTIAL_IO_FLAG"></a><a id="request_info_sequential_io_flag"></a><dl>
 
-### -field <b>REQUEST_INFO_SEQUENTIAL_IO_FLAG</b>
+### -field REQUEST_INFO_SEQUENTIAL_IO_FLAG
 
 </dl>
 </td>
@@ -120,7 +120,7 @@ typedef struct _SRBEX_DATA_IO_INFO {
 <tr>
 <td width="40%"><a id="REQUEST_INFO_TEMPORARY_FLAG"></a><a id="request_info_temporary_flag"></a><dl>
 
-### -field <b>REQUEST_INFO_TEMPORARY_FLAG</b>
+### -field REQUEST_INFO_TEMPORARY_FLAG
 
 </dl>
 </td>
@@ -131,7 +131,7 @@ typedef struct _SRBEX_DATA_IO_INFO {
 <tr>
 <td width="40%"><a id="REQUEST_INFO_WRITE_THROUGH_FLAG"></a><a id="request_info_write_through_flag"></a><dl>
 
-### -field <b>REQUEST_INFO_WRITE_THROUGH_FLAG</b>
+### -field REQUEST_INFO_WRITE_THROUGH_FLAG
 
 </dl>
 </td>
@@ -142,7 +142,7 @@ typedef struct _SRBEX_DATA_IO_INFO {
 <tr>
 <td width="40%"><a id="REQUEST_INFO_HYBRID_WRITE_THROUGH_FLAG"></a><a id="request_info_hybrid_write_through_flag"></a><dl>
 
-### -field <b>REQUEST_INFO_HYBRID_WRITE_THROUGH_FLAG</b>
+### -field REQUEST_INFO_HYBRID_WRITE_THROUGH_FLAG
 
 </dl>
 </td>
@@ -154,7 +154,7 @@ typedef struct _SRBEX_DATA_IO_INFO {
 <tr>
 <td width="40%"><a id="REQUEST_INFO_VALID_CACHEPRIORITY_FLAG"></a><a id="request_info_valid_cachepriority_flag"></a><dl>
 
-### -field <b>REQUEST_INFO_VALID_CACHEPRIORITY_FLAG</b>
+### -field REQUEST_INFO_VALID_CACHEPRIORITY_FLAG
 
 </dl>
 </td>
@@ -167,38 +167,38 @@ typedef struct _SRBEX_DATA_IO_INFO {
 <p> </p>
 </dd>
 
-### -field <b>Key</b>
+### -field Key
 
 <dd>
 <p>A tag value to identify a block of data transferred.</p>
 </dd>
 
-### -field <b>RWLength</b>
+### -field RWLength
 
 <dd>
 <p>The length, in bytes of the data to transfer.</p>
 </dd>
 
-### -field <b>IsWriteRequest</b>
+### -field IsWriteRequest
 
 <dd>
 <p>TRUE if the I/O operation in the SRB is a write request. Otherwise, FALSE; the I/O operation is a read request.</p>
 </dd>
 
-### -field <b>CachePriority</b>
+### -field CachePriority
 
 <dd>
 <p>Priority level for a hybrid cache read or write.</p>
 <p>This member is valid starting with Windows 8.1 Update.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved. Set to 0.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>This member is reserved. Set to 0.</p>
@@ -234,7 +234,7 @@ typedef struct _SRBEX_DATA_IO_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

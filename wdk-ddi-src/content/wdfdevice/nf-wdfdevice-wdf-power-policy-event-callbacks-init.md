@@ -7,7 +7,7 @@ old-location: wdf\wdf_power_policy_event_callbacks_init.htm
 old-project: wdf
 ms.assetid: 09ab4995-58be-4d87-adf7-e843e637ac09
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_POWER_POLICY_EVENT_CALLBACKS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ VOID WDF_POWER_POLICY_EVENT_CALLBACKS_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Callbacks</i> [out]
+### -param Callbacks [out]
 
 <dd>
 <p>A pointer to a driver-allocated <a href="..\wdfdevice\ns-wdfdevice--wdf-power-policy-event-callbacks.md">WDF_POWER_POLICY_EVENT_CALLBACKS</a> structure.</p>

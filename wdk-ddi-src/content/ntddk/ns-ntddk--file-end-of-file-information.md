@@ -54,7 +54,7 @@ typedef struct _FILE_END_OF_FILE_INFORMATION {
 ## -struct-fields
 <dl>
 
-### -field <b>EndOfFile</b>
+### -field EndOfFile
 
 <dd>
 <p>The absolute new end of file position as a byte offset from the start of the file. </p>

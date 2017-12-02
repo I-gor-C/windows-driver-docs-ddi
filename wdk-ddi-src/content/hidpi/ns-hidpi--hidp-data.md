@@ -59,25 +59,25 @@ typedef struct _HIDP_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>DataIndex</b>
+### -field DataIndex
 
 <dd>
 <p>Specifies the data index of a control.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved for internal system use only.</p>
 </dd>
 
-### -field <b>RawValue</b>
+### -field RawValue
 
 <dd>
 <p>Contains the binary data extracted from a report if the control is a value.</p>
 </dd>
 
-### -field <b>On</b>
+### -field On
 
 <dd>
 <p>Specifies, if <b>TRUE</b> and the control is a button, that the button is set to ON (1). Otherwise, if <b>On</b> is <b>FALSE</b> and the control is a button, the button is set to OFF (zero).</p>
@@ -85,7 +85,7 @@ typedef struct _HIDP_DATA {
 </dl>
 
 ## -remarks
-<p>See <a href="NULL">Extracting and Setting Control Data by Data Indices</a>.</p>
+<p>See <a href="https://msdn.microsoft.com/d26d169f-4116-4d81-94c7-63c92d22877d">Extracting and Setting Control Data by Data Indices</a>.</p>
 
 ## -requirements
 <table>

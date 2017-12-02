@@ -55,13 +55,13 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="TELEPHONY_CALLCONTROLOP_DISABLE"></a><a id="telephony_callcontrolop_disable"></a><b>TELEPHONY_CALLCONTROLOP_DISABLE</b>
+### -field TELEPHONY_CALLCONTROLOP_DISABLE
 
 <dd>
 <p>Disables a phone call.</p>
 </dd>
 
-### -field <a id="TELEPHONY_CALLCONTROLOP_ENABLE"></a><a id="telephony_callcontrolop_enable"></a><b>TELEPHONY_CALLCONTROLOP_ENABLE</b>
+### -field TELEPHONY_CALLCONTROLOP_ENABLE
 
 <dd>
 <p>Enables a phone call.</p>

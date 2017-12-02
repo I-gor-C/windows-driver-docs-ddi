@@ -57,25 +57,25 @@ typedef struct D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>Caps</b>
+### -field Caps
 
 <dd>
 <p>A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-content-protection-caps.md">D3D11_1DDI_CONTENT_PROTECTION_CAPS</a> enumeration.</p>
 </dd>
 
-### -field <b>KeyExchangeTypeCount</b>
+### -field KeyExchangeTypeCount
 
 <dd>
 <p>The number of cryptographic key-exchange types that are supported by the driver. To get the list of key-exchange types, call the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-getcryptokeyexchangetype.md">GetCryptoKeyExchangeType</a> function.</p>
 </dd>
 
-### -field <b>BlockAlignmentSize</b>
+### -field BlockAlignmentSize
 
 <dd>
 <p>The encyrption block size, in bytes. The size of data to be encrypted must be a multiple of this value.</p>
 </dd>
 
-### -field <b>ProtectedMemorySize</b>
+### -field ProtectedMemorySize
 
 <dd>
 <p>The total amount of memory, in bytes, that can be used to hold protected surfaces.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilcallvideomediastateparammask_2.htm
 old-project: netvista
 ms.assetid: 4cd834ba-c2f0-4b48-bc24-adf1cf2610f8
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILCALLVIDEOMEDIASTATEPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_CALLVIDEO_FLAGS"></a><a id="ril_param_callvideo_flags"></a><b>RIL_PARAM_CALLVIDEO_FLAGS</b>
+### -field RIL_PARAM_CALLVIDEO_FLAGS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CALLVIDEO_CONTEXTID"></a><a id="ril_param_callvideo_contextid"></a><b>RIL_PARAM_CALLVIDEO_CONTEXTID</b>
+### -field RIL_PARAM_CALLVIDEO_CONTEXTID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CALLVIDEO_ALL"></a><a id="ril_param_callvideo_all"></a><b>RIL_PARAM_CALLVIDEO_ALL</b>
+### -field RIL_PARAM_CALLVIDEO_ALL
 
 <dd></dd>
 </dl>

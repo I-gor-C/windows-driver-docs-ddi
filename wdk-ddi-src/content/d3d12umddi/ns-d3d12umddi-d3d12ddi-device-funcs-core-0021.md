@@ -56,19 +56,19 @@ typedef struct D3D12DDI_DEVICE_FUNCS_CORE_0021 {
 ## -struct-fields
 <dl>
 
-### -field <b>pfnCalcPrivatePipelineStateSize</b>
+### -field pfnCalcPrivatePipelineStateSize
 
 <dd>
 <p>A callback function that calculates the size of a private pipeline state.</p>
 </dd>
 
-### -field <b>pfnCreatePipelineState</b>
+### -field pfnCreatePipelineState
 
 <dd>
 <p>A callback function that creates a pipeline state.</p>
 </dd>
 
-### -field <b>pfnDestroyPipelineState</b>
+### -field pfnDestroyPipelineState
 
 <dd>
 <p>A callback function that destroys  a pipeline state.</p>

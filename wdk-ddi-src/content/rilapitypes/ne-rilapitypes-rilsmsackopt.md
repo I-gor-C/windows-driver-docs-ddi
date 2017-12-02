@@ -7,7 +7,7 @@ old-location: netvista\rilsmsackopt_2.htm
 old-project: netvista
 ms.assetid: a8430f5f-000f-4dea-acd9-2f0df2c6e67d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ typedef enum _RILSMSACKOPT {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_SMSACKOPT_IMS"></a><a id="ril_smsackopt_ims"></a><b>RIL_SMSACKOPT_IMS</b>
+### -field RIL_SMSACKOPT_IMS
 
 <dd></dd>
 </dl>

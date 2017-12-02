@@ -7,7 +7,7 @@ old-location: ifsk\rtltimetosecondssince1980.htm
 old-project: ifsk
 ms.assetid: 76a0fc34-a3e9-4f97-9c60-e7d179b1e6c3
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RtlTimeToSecondsSince1980
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ BOOLEAN RtlTimeToSecondsSince1980(
 ## -parameters
 <dl>
 
-### -param <i>Time</i> [in]
+### -param Time [in]
 
 <dd>
 <p>Pointer to a variable that specifies the system time value to be converted. The approximate valid range for this variable begins at 1980 and ends around 2115. </p>
 </dd>
 
-### -param <i>ElapsedSeconds</i> [out]
+### -param ElapsedSeconds [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the corresponding number of seconds since midnight, December 31, 1979. </p>
@@ -145,4 +145,4 @@ BOOLEAN RtlTimeToSecondsSince1980(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlTimeToSecondsSince1980 routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlTimeToSecondsSince1980 routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

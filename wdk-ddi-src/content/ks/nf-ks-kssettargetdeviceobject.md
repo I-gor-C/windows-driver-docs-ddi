@@ -55,13 +55,13 @@ VOID KsSetTargetDeviceObject(
 ## -parameters
 <dl>
 
-### -param <i>Header</i> [in]
+### -param Header [in]
 
 <dd>
 <p>Points to a header previously allocated by <a href="..\ks\nf-ks-ksallocateobjectheader.md">KsAllocateObjectHeader</a>.</p>
 </dd>
 
-### -param <i>TargetDevice</i> [in, optional]
+### -param TargetDevice [in, optional]
 
 <dd>
 <p>Optionally contains the target device object that will be used when recalculating the stack depth for the underlying device object. If the value is <b>NULL</b>, any current setting is removed. If the value is any setting other than <b>NULL</b>, the current setting is replaced.</p>

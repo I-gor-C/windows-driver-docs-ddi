@@ -58,31 +58,31 @@ typedef struct _D3DDDIARG_BUFFERBLT1 {
 ## -struct-fields
 <dl>
 
-### -field <b>hDstResource</b>
+### -field hDstResource
 
 <dd>
 <p>A handle to the destination resource.</p>
 </dd>
 
-### -field <b>hSrcResource</b>
+### -field hSrcResource
 
 <dd>
 <p>A handle to the source resource.</p>
 </dd>
 
-### -field <b>Offset</b>
+### -field Offset
 
 <dd>
 <p>The offset in the destination surface, in bytes.</p>
 </dd>
 
-### -field <b>SrcRange</b>
+### -field SrcRange
 
 <dd>
 <p>The source range.</p>
 </dd>
 
-### -field <b>CopyFlags</b>
+### -field CopyFlags
 
 <dd>
 <p>A value that specifies characteristics of a copy operation as a bitwise OR of the values in the <a href="..\d3dumddi\ne-d3dumddi-d3dddi-copy-flags.md">D3DDDI_COPY_FLAGS</a> enumeration type.</p>

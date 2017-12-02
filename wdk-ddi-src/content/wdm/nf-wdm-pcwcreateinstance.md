@@ -59,31 +59,31 @@ NTSTATUS PcwCreateInstance(
 ## -parameters
 <dl>
 
-### -param <i>Instance</i> [out]
+### -param Instance [out]
 
 <dd>
 <p>A pointer to receive the newly created instance.</p>
 </dd>
 
-### -param <i>Registration</i> [in]
+### -param Registration [in]
 
 <dd>
 <p>A pointer to the registered provider that owns this instance of the counter set.</p>
 </dd>
 
-### -param <i>Name</i> [in]
+### -param Name [in]
 
 <dd>
 <p>A pointer to the Unicode string that contains the name of the instance of the counter set.</p>
 </dd>
 
-### -param <i>Count</i> [in]
+### -param Count [in]
 
 <dd>
 <p>The number of data blocks that are associated with this instance.</p>
 </dd>
 
-### -param <i>Data</i> [in]
+### -param Data [in]
 
 <dd>
 <p>A pointer to an array of data blocks that contains the counter values of this instance.</p>

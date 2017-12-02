@@ -57,25 +57,25 @@ typedef struct _ScsiInquiry_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueSessionId</b>
+### -field UniqueSessionId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
 </dd>
 
-### -field <b>Lun</b>
+### -field Lun
 
 <dd>
 <p>A 64-bit number that, together with the name of the target, uniquely identifies the logical unit.</p>
 </dd>
 
-### -field <b>InquiryFlags</b>
+### -field InquiryFlags
 
 <dd>
 <p>The inquiry flags to set in the SCSI inquiry command. A value of 1 in the lowest order bit (0x01) indicates that the enable vital product data (EVPD) bit will be set in the inquiry command and the device server will return the optional vital product data that the page code field specifies in the inquiry command. A value of 1 in the second bit (0x02) indicates that the command support data bit will be set in the inquiry command and the device server will return the optional command support data that the operation code field specifies in the inquiry command.</p>
 </dd>
 
-### -field <b>PageCode</b>
+### -field PageCode
 
 <dd>
 <p>The page code field in the SCSI inquiry command.</p>
@@ -111,7 +111,7 @@ typedef struct _ScsiInquiry_IN {
 <a href="storage.scsiinquiry">ScsiInquiry</a>
 </dt>
 <dt>
-<a href="..\hbapiwmi\ns-hbapiwmi--scsiinquiry-out.md">ScsiInquiry_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--scsiinquiry-out.md">ScsiInquiry_OUT</a>
 </dt>
 </dl>
 <p> </p>

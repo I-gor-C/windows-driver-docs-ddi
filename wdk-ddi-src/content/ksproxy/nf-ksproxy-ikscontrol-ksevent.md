@@ -58,31 +58,31 @@ HRESULT KsEvent(
 ## -parameters
 <dl>
 
-### -param <i>Event</i> [in, optional]
+### -param Event [in, optional]
 
 <dd>
 <p>Pointer to a <a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a> structure that describes an event to enable the event and <b>NULL</b> to disable the event.</p>
 </dd>
 
-### -param <i>EventLength</i> [in]
+### -param EventLength [in]
 
 <dd>
 <p>Size, in bytes, of the buffer at <i>Event</i> when the event is enabled and zero when the event is disabled. </p>
 </dd>
 
-### -param <i>EventData</i> [in, out]
+### -param EventData [in, out]
 
 <dd>
 <p>Pointer to a <a href="stream.kseventdata">KSEVENTDATA</a> structure that contains data for the event and buffer space that receives data for the event. </p>
 </dd>
 
-### -param <i>DataLength</i> [in]
+### -param DataLength [in]
 
 <dd>
 <p>Size, in bytes, of the buffer at <i>EventData</i>. </p>
 </dd>
 
-### -param <i>BytesReturned</i> [in, out]
+### -param BytesReturned [in, out]
 
 <dd>
 <p>Pointer to a variable that receives the size, in bytes, of the data that <b>KsEvent</b> stores in the buffer at <i>EventData</i>. </p>

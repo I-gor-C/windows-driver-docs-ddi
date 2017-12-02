@@ -57,13 +57,13 @@ void USBD_UrbFree(
 ## -parameters
 <dl>
 
-### -param <i>USBDHandle</i> [in]
+### -param USBDHandle [in]
 
 <dd>
 <p>USBD handle that is retrieved by the client driver in a previous call to  the <a href="..\usbdlib\nf-usbdlib-usbd-createhandle.md">USBD_CreateHandle</a> routine.</p>
 </dd>
 
-### -param <i>Urb</i> [in]
+### -param Urb [in]
 
 <dd>
 <p>Pointer to the <a href="..\usb\ns-usb--urb.md">URB</a> structure to be released.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ril3gpptone_2.htm
 old-project: netvista
 ms.assetid: 05981a37-ce5c-4214-82b7-c8705102bd6a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,31 +61,31 @@ typedef enum _RIL3GPPTONE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_3GPPTONE_RINGBACK"></a><a id="ril_3gpptone_ringback"></a><b>RIL_3GPPTONE_RINGBACK</b>
+### -field RIL_3GPPTONE_RINGBACK
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPTONE_BUSY"></a><a id="ril_3gpptone_busy"></a><b>RIL_3GPPTONE_BUSY</b>
+### -field RIL_3GPPTONE_BUSY
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPTONE_CONGESTION"></a><a id="ril_3gpptone_congestion"></a><b>RIL_3GPPTONE_CONGESTION</b>
+### -field RIL_3GPPTONE_CONGESTION
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPTONE_AUTHENTICATIONFAILURE"></a><a id="ril_3gpptone_authenticationfailure"></a><b>RIL_3GPPTONE_AUTHENTICATIONFAILURE</b>
+### -field RIL_3GPPTONE_AUTHENTICATIONFAILURE
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPTONE_NUMBERUNOBTAINABLE"></a><a id="ril_3gpptone_numberunobtainable"></a><b>RIL_3GPPTONE_NUMBERUNOBTAINABLE</b>
+### -field RIL_3GPPTONE_NUMBERUNOBTAINABLE
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPTONE_CALLDROPPED"></a><a id="ril_3gpptone_calldropped"></a><b>RIL_3GPPTONE_CALLDROPPED</b>
+### -field RIL_3GPPTONE_CALLDROPPED
 
 <dd></dd>
 
-### -field <a id="RIL_3GPPTONE_MAX"></a><a id="ril_3gpptone_max"></a><b>RIL_3GPPTONE_MAX</b>
+### -field RIL_3GPPTONE_MAX
 
 <dd></dd>
 </dl>

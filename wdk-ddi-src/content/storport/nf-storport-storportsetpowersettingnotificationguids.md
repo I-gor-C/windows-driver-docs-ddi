@@ -57,25 +57,25 @@ ULONG StorPortSetPowerSettingNotificationGuids(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>A pointer to the hardware device extension for the host bus adapter (HBA).</p>
 </dd>
 
-### -param <i>GuidCount</i> [in]
+### -param GuidCount [in]
 
 <dd>
 <p>The number of GUIDs in the <i>Guid</i> array.</p>
 </dd>
 
-### -param <i>Guid</i> [in]
+### -param Guid [in]
 
 <dd>
 <p>An array of power setting GUIDs to register for notification. A typical use for registering these GUIDs is for SATA miniports to receive notifications for AHCI Link Power Management setting changes. The  AHCI Link Power Management settings defined by the Microsoft AHCI StorPort miniport driver are the following.</p>
 <dl class="indent">
 
-### -param <a id="HIPM_DIPM_Setting"></a><a id="hipm_dipm_setting"></a><a id="HIPM_DIPM_SETTING"></a><p><a id="HIPM_DIPM_Setting"></a><a id="hipm_dipm_setting"></a><a id="HIPM_DIPM_SETTING"></a><b>HIPM/DIPM Setting</b> (0b2d69d7-a2a1-449c-9680-f91c70521c60)</p>
+### -param HIPM/DIPM Setting (0b2d69d7-a2a1-449c-9680-f91c70521c60)
 
 
 <dd>
@@ -105,7 +105,7 @@ ULONG StorPortSetPowerSettingNotificationGuids(
 <p> </p>
 </dd>
 
-### -param <a id="Adaptive_Setting"></a><a id="adaptive_setting"></a><a id="ADAPTIVE_SETTING"></a><p><a id="Adaptive_Setting"></a><a id="adaptive_setting"></a><a id="ADAPTIVE_SETTING"></a><b>Adaptive Setting</b> (dab60367-53fe-4fbc-825e-521d069d2456)</p>
+### -param Adaptive Setting (dab60367-53fe-4fbc-825e-521d069d2456)
 
 
 <dd>

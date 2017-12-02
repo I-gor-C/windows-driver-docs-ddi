@@ -54,7 +54,7 @@ PKSFILTERFACTORY __inline KsDeviceGetFirstChildFilterFactory(
 ## -parameters
 <dl>
 
-### -param <i>Device</i> [in]
+### -param Device [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> structure representing the AVStream device for which to find the first child filter factory.</p>
@@ -65,9 +65,9 @@ PKSFILTERFACTORY __inline KsDeviceGetFirstChildFilterFactory(
 <p>Returns a pointer to a <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> structure representing the first child filter factory of <i>Device</i>. If there are no filter factories registered on <i>Device</i>, <b>NULL</b> is returned.</p>
 
 ## -remarks
-<p>This call is an inline function call to <a href="..\ks\nf-ks-ksgetfirstchild.md">KsGetFirstChild</a>. Note that the object hierarchy is only guaranteed stable while the appropriate mutex is held, in this case the device mutex. For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>This call is an inline function call to <a href="..\ks\nf-ks-ksgetfirstchild.md">KsGetFirstChild</a>. Note that the object hierarchy is only guaranteed stable while the appropriate mutex is held, in this case the device mutex. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
-<p>For a graphical representation of AVStream parent/child relationships, see the diagram in <a href="NULL">AVStream Object Hierarchy</a>.</p>
+<p>For a graphical representation of AVStream parent/child relationships, see the diagram in <a href="https://msdn.microsoft.com/b7d6f06d-6c97-414e-a453-d375e2d7ccf5">AVStream Object Hierarchy</a>.</p>
 
 ## -requirements
 <table>

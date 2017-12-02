@@ -7,7 +7,7 @@ old-location: netvista\wwan_registration_state.htm
 old-project: netvista
 ms.assetid: 72a41403-9e22-4212-955a-16e243f7af1d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WWAN_REGISTRATION_STATE, WWAN_REGISTRATION_STATE, *PWWAN_REGISTRATION_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ typedef struct _WWAN_REGISTRATION_STATE {
 ## -struct-fields
 <dl>
 
-### -field <b>uNwError</b>
+### -field uNwError
 
 <dd>
 <p>A network specific error, in the event of a registration failure. For more information about this
@@ -70,7 +70,7 @@ typedef struct _WWAN_REGISTRATION_STATE {
      "Remarks" section.</p>
 </dd>
 
-### -field <b>RegisterState</b>
+### -field RegisterState
 
 <dd>
 <p>The registration state of the device. For a list of defined values, see 
@@ -84,14 +84,14 @@ typedef struct _WWAN_REGISTRATION_STATE {
      <b>WwanRegisterStateRoaming</b>.</p>
 </dd>
 
-### -field <b>RegisterMode</b>
+### -field RegisterMode
 
 <dd>
 <p>The registration mode of the device. For a list of defined values, see 
      <a href="..\wwan\ne-wwan--wwan-register-mode.md">WWAN_REGISTER_MODE</a>.</p>
 </dd>
 
-### -field <b>ProviderId</b>
+### -field ProviderId
 
 <dd>
 <p>A NULL-terminated numeric (0-9) string that represents the network provider identity.
@@ -118,7 +118,7 @@ typedef struct _WWAN_REGISTRATION_STATE {
      available.</p>
 </dd>
 
-### -field <b>ProviderName</b>
+### -field ProviderName
 
 <dd>
 <p>A NULL-terminated string that represents the network provider's name. This member is limited to,
@@ -132,7 +132,7 @@ typedef struct _WWAN_REGISTRATION_STATE {
      information.</p>
 </dd>
 
-### -field <b>RoamingText</b>
+### -field RoamingText
 
 <dd>
 <p>A NULL-terminated string to inform the user that the device is roaming. This member is limited to
@@ -143,7 +143,7 @@ typedef struct _WWAN_REGISTRATION_STATE {
      <b>WwanRegisterStateRoaming</b>. This member is optional.</p>
 </dd>
 
-### -field <b>WwanRegFlags</b>
+### -field WwanRegFlags
 
 <dd>
 <p>Registration flags.</p>
@@ -180,7 +180,7 @@ typedef struct _WWAN_REGISTRATION_STATE {
 <p> </p>
 </dd>
 
-### -field <b>CurrentCellularClass</b>
+### -field CurrentCellularClass
 
 <dd>
 <p>The current cellular class of the registered network. For networks that only support a single cellular class this member should be set to that cellular class. For multi-mode capable networks the miniport driver sends  NDIS_STATUS_WWAN_REGISTER_STATE notifications to the MB service when the network changes its cellular class.</p>
@@ -193,7 +193,7 @@ typedef struct _WWAN_REGISTRATION_STATE {
     <b>uNwError</b> member. If there is no network specific error or the network specific error is not known,
     miniport drivers should set this member to zero. The 
     "Status Indication Structure" section in 
-    <a href="NULL">MB Operational Semantics</a> shows the
+    <a href="netvista.mb_operational_semantics">MB Operational Semantics</a> shows the
     registration cause code failure values that are defined in the 
     <i>3GPP TS 24.008 Specification</i>.</p>
 
@@ -272,4 +272,4 @@ typedef struct _WWAN_REGISTRATION_STATE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_REGISTRATION_STATE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_REGISTRATION_STATE structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

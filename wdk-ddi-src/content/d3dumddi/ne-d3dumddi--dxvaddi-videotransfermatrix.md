@@ -58,31 +58,31 @@ typedef enum _DXVADDI_VIDEOTRANSFERMATRIX {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVADDI_VideoTransferMatrixMask"></a><a id="dxvaddi_videotransfermatrixmask"></a><a id="DXVADDI_VIDEOTRANSFERMATRIXMASK"></a><b>DXVADDI_VideoTransferMatrixMask</b>
+### -field DXVADDI_VideoTransferMatrixMask
 
 <dd>
 <p>Specifies the video transfer matrix mask. The first 3 (0x07) bits of a DWORD can be used to specify video transfer matrix.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoTransferMatrix_Unknown"></a><a id="dxvaddi_videotransfermatrix_unknown"></a><a id="DXVADDI_VIDEOTRANSFERMATRIX_UNKNOWN"></a><b>DXVADDI_VideoTransferMatrix_Unknown</b>
+### -field DXVADDI_VideoTransferMatrix_Unknown
 
 <dd>
 <p>Specifies that the video transfer matrix is not specified. The default value is BT601 for standard definition (SD) video and BT709 for high definition (HD) video.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoTransferMatrix_BT709"></a><a id="dxvaddi_videotransfermatrix_bt709"></a><a id="DXVADDI_VIDEOTRANSFERMATRIX_BT709"></a><b>DXVADDI_VideoTransferMatrix_BT709</b>
+### -field DXVADDI_VideoTransferMatrix_BT709
 
 <dd>
 <p>Specifies the BT709 transfer matrix.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoTransferMatrix_BT601"></a><a id="dxvaddi_videotransfermatrix_bt601"></a><a id="DXVADDI_VIDEOTRANSFERMATRIX_BT601"></a><b>DXVADDI_VideoTransferMatrix_BT601</b>
+### -field DXVADDI_VideoTransferMatrix_BT601
 
 <dd>
 <p>Specifies the BT601 transfer matrix.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoTransferMatrix_SMPTE240M"></a><a id="dxvaddi_videotransfermatrix_smpte240m"></a><a id="DXVADDI_VIDEOTRANSFERMATRIX_SMPTE240M"></a><b>DXVADDI_VideoTransferMatrix_SMPTE240M</b>
+### -field DXVADDI_VideoTransferMatrix_SMPTE240M
 
 <dd>
 <p>Specifies a HD video standard that is rarely used in Japan.</p>

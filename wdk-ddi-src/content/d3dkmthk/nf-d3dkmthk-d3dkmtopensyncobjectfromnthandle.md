@@ -54,7 +54,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOpenSyncObjectFromNtHandle(
 ## -parameters
 <dl>
 
-### -param <i>pObject</i> [in, out]
+### -param pObject [in, out]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-opensyncobjectfromnthandle.md">D3DKMT_OPENSYNCOBJECTFROMNTHANDLE</a> structure that describes information that is required to perform the mapping.</p>

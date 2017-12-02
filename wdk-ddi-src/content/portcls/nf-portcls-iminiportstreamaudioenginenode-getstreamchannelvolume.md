@@ -55,13 +55,13 @@ NTSTATUS GetStreamChannelVolume(
 ## -parameters
 <dl>
 
-### -param <i> ulChannel</i> [in]
+### -param  ulChannel [in]
 
 <dd>
 <p>The audio stream channel.</p>
 </dd>
 
-### -param <i>plValue</i> [out]
+### -param plValue [out]
 
 <dd>
 <p>The current volume level.</p>

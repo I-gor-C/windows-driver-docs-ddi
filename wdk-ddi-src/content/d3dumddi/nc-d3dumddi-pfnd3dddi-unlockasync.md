@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY UnlockAsync(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to a display device (that is, the graphics context).</p>
 </dd>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-unlockasync.md">D3DDDIARG_UNLOCKASYNC</a> structure that describes the resource or surface within the resource to unlock.</p>

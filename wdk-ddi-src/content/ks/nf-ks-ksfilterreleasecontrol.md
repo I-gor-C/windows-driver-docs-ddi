@@ -54,7 +54,7 @@ void __inline KsFilterReleaseControl(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure representing the AVStream filter for which to release the control mutex.</p>
@@ -67,7 +67,7 @@ void __inline KsFilterReleaseControl(
 ## -remarks
 <p>This function is an inline call to <a href="..\ks\nf-ks-ksreleasecontrol.md">KsReleaseControl</a> with the appropriate typecasting. When manipulating a filter, minidrivers should call this function instead of calling <b>KsReleaseControl</b> directly.</p>
 
-<p>For a description of the filter control mutex, see <a href="NULL">Mutexes in AVStream</a>.</p>
+<p>For a description of the filter control mutex, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</p>
 
 ## -requirements
 <table>

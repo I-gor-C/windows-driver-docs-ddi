@@ -59,7 +59,7 @@ NTSTATUS APIENTRY D3DKMTSubmitCommand(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in]
+### -param pData [in]
 
 <dd>
 <p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-submitcommand.md">D3DKMT_SUBMITCOMMAND</a> structure that describes the operation.</p>

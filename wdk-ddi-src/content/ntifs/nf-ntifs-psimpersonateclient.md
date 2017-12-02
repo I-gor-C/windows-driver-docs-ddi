@@ -7,7 +7,7 @@ old-location: ifsk\psimpersonateclient.htm
 old-project: ifsk
 ms.assetid: 69cc1253-07eb-43cf-abc7-5ad02ecb014d
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: PsImpersonateClient
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,31 +58,31 @@ NTSTATUS PsImpersonateClient(
 ## -parameters
 <dl>
 
-### -param <i>Thread</i> [in, out]
+### -param Thread [in, out]
 
 <dd>
 <p>Pointer to the server thread that is to impersonate the client. </p>
 </dd>
 
-### -param <i>Token</i> [in]
+### -param Token [in]
 
 <dd>
 <p>Pointer to the token to be assigned as the impersonation token. This token can be a primary token or an impersonation token. Set to <b>NULL</b> to end the impersonation. </p>
 </dd>
 
-### -param <i>CopyOnOpen</i> [in]
+### -param CopyOnOpen [in]
 
 <dd>
 <p>Specifies whether the token can be opened directly. Set to <b>TRUE</b> to specify that the token cannot be opened directly. In this case, the token must be duplicated, and the duplicate token used instead. Set to <b>FALSE</b> to allow the token to be opened directly. </p>
 </dd>
 
-### -param <i>EffectiveOnly</i> [in]
+### -param EffectiveOnly [in]
 
 <dd>
 <p>Set to <b>FALSE</b> to allow the server to enable groups and privileges that are currently disabled in the client security context, <b>TRUE</b> otherwise.</p>
 </dd>
 
-### -param <i>ImpersonationLevel</i> [in]
+### -param ImpersonationLevel [in]
 
 <dd>
 <p>A <a href="..\wudfddi\ne-wudfddi--security-impersonation-level.md">SECURITY_IMPERSONATION_LEVEL</a> value that specifies the impersonation level at which the server is to access the token. </p>
@@ -180,7 +180,7 @@ NTSTATUS PsImpersonateClient(
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 <dt>
 <a href="..\ntifs\nf-ntifs-psreferenceimpersonationtoken.md">PsReferenceImpersonationToken</a>
@@ -197,4 +197,4 @@ NTSTATUS PsImpersonateClient(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PsImpersonateClient routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PsImpersonateClient routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

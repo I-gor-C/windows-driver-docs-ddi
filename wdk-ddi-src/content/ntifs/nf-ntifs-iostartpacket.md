@@ -57,25 +57,25 @@ VOID IoStartPacket(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>Pointer to the target device object for the IRP.</p>
 </dd>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Pointer to the IRP to be processed.</p>
 </dd>
 
-### -param <i>Key</i> [in, optional]
+### -param Key [in, optional]
 
 <dd>
 <p>Pointer to a value that determines where to insert the packet into the device queue. If this is zero, the packet is inserted at the tail of the device queue.</p>
 </dd>
 
-### -param <i>CancelFunction</i> [in, optional]
+### -param CancelFunction [in, optional]
 
 <dd>
 <p>Specifies the entry point for a driver-supplied <a href="kernel.cancel">Cancel</a> routine.</p>
@@ -166,10 +166,10 @@ VOID IoStartPacket(
 <a href="..\wdm\nf-wdm-iosetcancelroutine.md">IoSetCancelRoutine</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iostartnextpacket.md">IoStartNextPacket</a>
+<a href="..\wdm\nf-wdm-iostartnextpacket.md">IoStartNextPacket</a>
 </dt>
 <dt>
-<a href="..\ntifs\nf-ntifs-iostartnextpacketbykey.md">IoStartNextPacketByKey</a>
+<a href="..\wdm\nf-wdm-iostartnextpacketbykey.md">IoStartNextPacketByKey</a>
 </dt>
 </dl>
 <p> </p>

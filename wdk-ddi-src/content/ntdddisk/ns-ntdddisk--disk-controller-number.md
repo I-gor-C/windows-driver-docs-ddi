@@ -55,13 +55,13 @@ typedef struct _DISK_CONTROLLER_NUMBER {
 ## -struct-fields
 <dl>
 
-### -field <b>ControllerNumber</b>
+### -field ControllerNumber
 
 <dd>
 <p>Contains the number of the IDE controller for the disk.</p>
 </dd>
 
-### -field <b>DiskNumber</b>
+### -field DiskNumber
 
 <dd>
 <p>Contains the number of the disk.</p>

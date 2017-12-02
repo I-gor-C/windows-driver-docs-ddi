@@ -72,25 +72,25 @@ typedef struct _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT {
 ## -struct-fields
 <dl>
 
-### -field <b>RequestType</b>
+### -field RequestType
 
 <dd>
 <p>The type of attribute information that is being requested. This member is set to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh698240">CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE</a> enumeration value.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size, in bytes, of the <b>CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</b> structure.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A set of flag bits that supply additional information about the type of attribute request indicated by the <b>RequestType</b> member. No flags are currently defined for the <b>Flags</b> member.</p>
 </dd>
 
-### -field ( <i>unnamed union</i> )
+### -field ( unnamed union )
 
 <dd>
 <p>A union of members that contain input information for the various types of attribute requests. The <b>RequestType</b> member determines which member of this union is used. The following table shows the union member that corresponds to each valid <b>RequestType</b> value.</p>
@@ -115,13 +115,13 @@ typedef struct _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT {
 <p> </p>
 <dl>
 
-### -field <b>BankPowerInformation</b>
+### -field BankPowerInformation
 
 <dd>
 <p>A structure that contains information about the GPIO bank whose power attributes are being requested.</p>
 <dl>
 
-### -field <b>BankId</b>
+### -field BankId
 
 <dd>
 <p>The identifier for a bank of GPIO pins. If M is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to M–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.</p>
@@ -129,25 +129,25 @@ typedef struct _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT {
 </dl>
 </dd>
 
-### -field <b>BankInterruptBinding</b>
+### -field BankInterruptBinding
 
 <dd>
 <p>A structure that contains information about the interrupt resources that are assigned to the GPIO controller.</p>
 <dl>
 
-### -field <b>ResourcesTranslated</b>
+### -field ResourcesTranslated
 
 <dd>
 <p>A handle to a framework resource-list object that identifies the translated hardware resources that the Plug and Play manager has assigned to the device.</p>
 </dd>
 
-### -field <b>ResourcesRaw</b>
+### -field ResourcesRaw
 
 <dd>
 <p>A handle to a framework resource-list object that identifies the raw hardware resources that the Plug and Play manager has assigned to the device.</p>
 </dd>
 
-### -field <b>TotalBanks</b>
+### -field TotalBanks
 
 <dd>
 <p>The number of banks in the GPIO controller. This member indicates the expected length of the <b>BankInterruptBinding.ResourceMapping</b> array in the caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/hh698239">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</a> structure, if the caller supplies a non-NULL pointer to this structure.</p>
@@ -155,31 +155,31 @@ typedef struct _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT {
 </dl>
 </dd>
 
-### -field <b>ControllerFunctionBankMapping</b>
+### -field ControllerFunctionBankMapping
 
 <dd>
 <p>A structure that contains information about an I/O control request (IOCTL).</p>
 <dl>
 
-### -field <b>InputBuffer</b>
+### -field InputBuffer
 
 <dd>
 <p>A pointer to the input buffer for the IOCTL.</p>
 </dd>
 
-### -field <b>InputBufferSize</b>
+### -field InputBufferSize
 
 <dd>
 <p>The size, in bytes, of the input buffer for the IOCTL.</p>
 </dd>
 
-### -field <b>OutputBufferSize</b>
+### -field OutputBufferSize
 
 <dd>
 <p>The size, in bytes, of the output buffer for the IOCTL.</p>
 </dd>
 
-### -field <b>TotalBanks</b>
+### -field TotalBanks
 
 <dd>
 <p>The number of banks in the GPIO controller. This member indicates the expected length of the <b>ControllerFunctionBankMapping.Mapping</b> array in the caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/hh698239">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</a> structure, if the caller supplies a non-NULL pointer to this structure.</p>

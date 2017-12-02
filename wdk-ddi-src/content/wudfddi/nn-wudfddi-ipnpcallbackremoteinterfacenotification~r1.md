@@ -7,7 +7,7 @@ old-location: wdf\ipnpcallbackremoteinterfacenotification.htm
 old-project: wdf
 ms.assetid: 99d670dd-2358-4f1a-b111-72484bf3132c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

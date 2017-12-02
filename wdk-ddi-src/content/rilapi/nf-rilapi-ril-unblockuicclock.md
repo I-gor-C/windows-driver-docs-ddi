@@ -7,7 +7,7 @@ old-location: netvista\ril_unblockuicclock.htm
 old-project: netvista
 ms.assetid: a8cddfa1-b15e-4832-8c9c-12d378bc682d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_UnblockUiccLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ HRESULT  RIL_UnblockUiccLock(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>lpLockCredential</i> 
+### -param lpLockCredential 
 
 <dd></dd>
 
-### -param <i>lpszNewPassword</i> 
+### -param lpszNewPassword 
 
 <dd></dd>
 </dl>

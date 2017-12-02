@@ -56,32 +56,32 @@ BOOL WcsSetUsePerUserProfiles(
 ## -parameters
 <dl>
 
-### -param <i>pDeviceName</i> [in]
+### -param pDeviceName [in]
 
 <dd>
 <p>A pointer to a string that contains the friendly name of the device.</p>
 </dd>
 
-### -param <i>dwDeviceClass</i> [in]
+### -param dwDeviceClass [in]
 
 <dd>
 <p>A flag value that specifies the class of the device. This parameter must take one of the following values:</p>
 <p></p>
 <dl>
 
-### -param <a id="CLASS_MONITOR"></a><a id="class_monitor"></a>CLASS_MONITOR
+### -param CLASS_MONITOR
 
 <dd>
 <p>Specifies a display device.</p>
 </dd>
 
-### -param <a id="CLASS_PRINTER"></a><a id="class_printer"></a>CLASS_PRINTER
+### -param CLASS_PRINTER
 
 <dd>
 <p>Specifies a printer.</p>
 </dd>
 
-### -param <a id="CLASS_SCANNER"></a><a id="class_scanner"></a>CLASS_SCANNER
+### -param CLASS_SCANNER
 
 <dd>
 <p>Specifies an image capture device.</p>
@@ -89,7 +89,7 @@ BOOL WcsSetUsePerUserProfiles(
 </dl>
 </dd>
 
-### -param <i>usePerUserProfiles</i> [in]
+### -param usePerUserProfiles [in]
 
 <dd>
 <p>A Boolean value that is <b>TRUE</b> if the user wants to use a per-user profile association list for the specified device; otherwise <b>FALSE</b>.</p>

@@ -7,7 +7,7 @@ old-location: ieee\irb.htm
 old-project: IEEE
 ms.assetid: 456712c9-720c-436c-b1db-a6d53c358e22
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/29/2017
 ms.keywords: IRB, IRB, *PIRB
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,31 +57,31 @@ typedef struct _IRB {
 ## -struct-fields
 <dl>
 
-### -field <b>FunctionNumber</b>
+### -field FunctionNumber
 
 <dd>
 <p>Determines the type of request. Each request type is documented under the value of <b>FunctionNumber</b> in <a href="https://msdn.microsoft.com/library/windows/hardware/ff537211">IEEE 1394 Bus I/O Requests</a>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved. Drivers must set this member to zero with one exception. When making a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537647">REQUEST_ISOCH_ALLOCATE_BANDWIDTH</a> request, the caller can set the IRB_FLAG_ALLOW_REMOTE_FREE flag in <b>Flags</b> to indicate that the system should free the bandwidth handle memory pointed to be <b>IsochAllocateBandwidth.hBandwidth</b>. If caller does not set this flag, then caller will have to free the bandwidth handle. </p>
 </dd>
 
-### -field <b>BusReserved</b>
+### -field BusReserved
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>PortReserved</b>
+### -field PortReserved
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>u</b>
+### -field u
 
 <dd>
 <p>Specifies a union of structures, one for each value of <b>FunctionNumber</b>. The applicable submembers of <b>u</b> for each request are described with each request type in <a href="https://msdn.microsoft.com/library/windows/hardware/ff537211">IEEE 1394 Bus I/O Requests</a>.</p>
@@ -212,7 +212,7 @@ typedef struct _IRB {
 </tr>
 <tr>
 <td>
-<a href="https://msdn.microsoft.com/65E0AAFC-FCFD-477F-B2E5-34B5A1498F0F">REQUEST_RECEIVE_PHY_PACKET</a>
+<a href="buses.request_receive_phy_packets">REQUEST_RECEIVE_PHY_PACKET</a>
 </td>
 <td>ReceivePhyPackets</td>
 </tr>
@@ -246,4 +246,4 @@ typedef struct _IRB {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20IRB structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20IRB structure%20 RELEASE:%20(11/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

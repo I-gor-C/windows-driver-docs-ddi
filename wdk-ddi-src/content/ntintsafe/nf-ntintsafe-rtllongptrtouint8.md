@@ -55,13 +55,13 @@ NTSTATUS RtlLongPtrToUInt8(
 ## -parameters
 <dl>
 
-### -param <i>lOperand</i> [in]
+### -param lOperand [in]
 
 <dd>
 <p>The value to be converted.</p>
 </dd>
 
-### -param <i>pui8Result</i> [out]
+### -param pui8Result [out]
 
 <dd>
 <p>A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

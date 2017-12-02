@@ -61,19 +61,19 @@ VOID APIENTRY* ResizeTilePool(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> 
+### -param hDevice 
 
 <dd>
 <p>A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hTilePool</i> 
+### -param hTilePool 
 
 <dd>
 <p>A handle to the tile pool to resize.</p>
 </dd>
 
-### -param <i>NewSizeInBytes</i> 
+### -param NewSizeInBytes 
 
 <dd>
 <p>The new size, in bytes, of the tile pool. The size must be a multiple of 64 KB or zero.</p>

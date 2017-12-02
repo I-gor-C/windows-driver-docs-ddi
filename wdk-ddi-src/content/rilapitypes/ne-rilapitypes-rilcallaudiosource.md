@@ -7,7 +7,7 @@ old-location: netvista\rilcallaudiosource_2.htm
 old-project: netvista
 ms.assetid: 9da5508a-7397-4260-b5d8-16b0d624b98b
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILCALLAUDIOSOURCE {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_CALLAUDIOSOURCE_PKT_MODEM"></a><a id="ril_callaudiosource_pkt_modem"></a><b>RIL_CALLAUDIOSOURCE_PKT_MODEM</b>
+### -field RIL_CALLAUDIOSOURCE_PKT_MODEM
 
 <dd></dd>
 
-### -field <a id="RIL_CALLAUDIOSOURCE_PKT_APP"></a><a id="ril_callaudiosource_pkt_app"></a><b>RIL_CALLAUDIOSOURCE_PKT_APP</b>
+### -field RIL_CALLAUDIOSOURCE_PKT_APP
 
 <dd></dd>
 
-### -field <a id="RIL_CALLAUDIOSOURCE_MAX"></a><a id="ril_callaudiosource_max"></a><b>RIL_CALLAUDIOSOURCE_MAX</b>
+### -field RIL_CALLAUDIOSOURCE_MAX
 
 <dd></dd>
 </dl>

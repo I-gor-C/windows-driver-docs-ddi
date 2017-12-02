@@ -63,21 +63,21 @@ typedef struct DXGI_DDI_PRESENT_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>Blt</b>
+### -field Blt
 
 <dd>
 <p>Specifies whether to perform a bit-block transfer (bitblt) data to the primary surface. </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>Flip</b>
+### -field Flip
 
 <dd>
 <p>Specifies whether to flip to a new surface. </p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>PreferRight</b>
+### -field PreferRight
 
 <dd>
 <p>Supported in Windows 8 and later versions.</p>
@@ -86,7 +86,7 @@ typedef struct DXGI_DDI_PRESENT_FLAGS {
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
-### -field <b>TemporaryMono</b>
+### -field TemporaryMono
 
 <dd>
 <p>Supported in Windows 8 and later versions.</p>
@@ -94,13 +94,13 @@ typedef struct DXGI_DDI_PRESENT_FLAGS {
 <p>Setting this member is equivalent to setting the fourth bit of the 32-bit <b>Value</b> member (0x00000008).</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 28 bits (0xFFFFFFF0) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A member in the union that is contained in DXGI_DDI_PRESENT_FLAGS that can hold one 32-bit value that identifies how to perform a present operation.</p>

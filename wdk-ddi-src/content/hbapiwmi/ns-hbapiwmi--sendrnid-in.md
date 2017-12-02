@@ -55,13 +55,13 @@ typedef struct _SendRNID_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>wwn</b>
+### -field wwn
 
 <dd>
 <p>Contains a worldwide name for the port to which the request node identification data (RNID) command is sent. </p>
 </dd>
 
-### -field <b>wwntype</b>
+### -field wwntype
 
 <dd>
 <p>Deprecated. Do not use. </p>

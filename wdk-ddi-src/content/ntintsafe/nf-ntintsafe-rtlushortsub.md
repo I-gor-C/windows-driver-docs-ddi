@@ -56,19 +56,19 @@ NTSTATUS RtlUShortSub(
 ## -parameters
 <dl>
 
-### -param <i>usMinuend</i> [in]
+### -param usMinuend [in]
 
 <dd>
 <p>The value from which <i>usSubtrahend</i> is subtracted.</p>
 </dd>
 
-### -param <i>usSubtrahend</i> [in]
+### -param usSubtrahend [in]
 
 <dd>
 <p>The value to subtract from <i>usMinuend</i>.</p>
 </dd>
 
-### -param <i>pusResult</i> [out]
+### -param pusResult [out]
 
 <dd>
 <p>A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

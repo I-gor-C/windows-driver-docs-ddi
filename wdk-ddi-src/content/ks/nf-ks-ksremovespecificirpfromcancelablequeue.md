@@ -54,7 +54,7 @@ VOID KsRemoveSpecificIrpFromCancelableQueue(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Points to I/O request packet.</p>

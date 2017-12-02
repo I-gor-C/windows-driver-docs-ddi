@@ -63,61 +63,61 @@ typedef enum _DXVADDI_VIDEOCHROMASUBSAMPLING {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXVADDI_VideoChromaSubsamplingMask"></a><a id="dxvaddi_videochromasubsamplingmask"></a><a id="DXVADDI_VIDEOCHROMASUBSAMPLINGMASK"></a><b>DXVADDI_VideoChromaSubsamplingMask</b>
+### -field DXVADDI_VideoChromaSubsamplingMask
 
 <dd>
 <p>The video chroma subsampling mask. The first four (0x0F) bits of a DWORD can be used to specify video chroma subsampling.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoChromaSubsampling_Unknown"></a><a id="dxvaddi_videochromasubsampling_unknown"></a><a id="DXVADDI_VIDEOCHROMASUBSAMPLING_UNKNOWN"></a><b>DXVADDI_VideoChromaSubsampling_Unknown</b>
+### -field DXVADDI_VideoChromaSubsampling_Unknown
 
 <dd>
 <p>The video chroma subsampling is not specified.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoChromaSubsampling_ProgressiveChroma"></a><a id="dxvaddi_videochromasubsampling_progressivechroma"></a><a id="DXVADDI_VIDEOCHROMASUBSAMPLING_PROGRESSIVECHROMA"></a><b>DXVADDI_VideoChromaSubsampling_ProgressiveChroma</b>
+### -field DXVADDI_VideoChromaSubsampling_ProgressiveChroma
 
 <dd>
 <p>The video chroma subsampling is progressive.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoChromaSubsampling_Horizontally_Cosited"></a><a id="dxvaddi_videochromasubsampling_horizontally_cosited"></a><a id="DXVADDI_VIDEOCHROMASUBSAMPLING_HORIZONTALLY_COSITED"></a><b>DXVADDI_VideoChromaSubsampling_Horizontally_Cosited</b>
+### -field DXVADDI_VideoChromaSubsampling_Horizontally_Cosited
 
 <dd>
 <p>Chroma samples are aligned on multiples of the luma samples horizontally.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoChromaSubsampling_Vertically_Cosited"></a><a id="dxvaddi_videochromasubsampling_vertically_cosited"></a><a id="DXVADDI_VIDEOCHROMASUBSAMPLING_VERTICALLY_COSITED"></a><b>DXVADDI_VideoChromaSubsampling_Vertically_Cosited</b>
+### -field DXVADDI_VideoChromaSubsampling_Vertically_Cosited
 
 <dd>
 <p>Chroma samples are aligned on multiples of the luma samples vertically.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes"></a><a id="dxvaddi_videochromasubsampling_vertically_alignedchromaplanes"></a><a id="DXVADDI_VIDEOCHROMASUBSAMPLING_VERTICALLY_ALIGNEDCHROMAPLANES"></a><b>DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</b>
+### -field DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes
 
 <dd>
 <p>The Pb and Pr (or Cb and Cr) planes have the same phase alignment. This value can be set only to 0 in the <b>VideoChromaSubsampling</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure if the data is vertically cosited.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoChromaSubsampling_MPEG2"></a><a id="dxvaddi_videochromasubsampling_mpeg2"></a><a id="DXVADDI_VIDEOCHROMASUBSAMPLING_MPEG2"></a><b>DXVADDI_VideoChromaSubsampling_MPEG2</b>
+### -field DXVADDI_VideoChromaSubsampling_MPEG2
 
 <dd>
 <p>A bitwise OR of the <b>DXVADDI_VideoChromaSubsampling_Horizontally_Cosited</b> and <b>DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</b> values that are used with 4:2:0 data.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoChromaSubsampling_MPEG1"></a><a id="dxvaddi_videochromasubsampling_mpeg1"></a><a id="DXVADDI_VIDEOCHROMASUBSAMPLING_MPEG1"></a><b>DXVADDI_VideoChromaSubsampling_MPEG1</b>
+### -field DXVADDI_VideoChromaSubsampling_MPEG1
 
 <dd>
 <p>The <b>DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</b> value that is used with 4:2:0 data.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoChromaSubsampling_DV_PAL"></a><a id="dxvaddi_videochromasubsampling_dv_pal"></a><a id="DXVADDI_VIDEOCHROMASUBSAMPLING_DV_PAL"></a><b>DXVADDI_VideoChromaSubsampling_DV_PAL</b>
+### -field DXVADDI_VideoChromaSubsampling_DV_PAL
 
 <dd>
 <p>A bitwise OR of the <b>DXVADDI_VideoChromaSubsampling_Horizontally_Cosited</b> and <b>DXVADDI_VideoChromaSubsampling_Vertically_Cosited</b> values that are used with 4:2:0 data.</p>
 </dd>
 
-### -field <a id="DXVADDI_VideoChromaSubsampling_Cosited"></a><a id="dxvaddi_videochromasubsampling_cosited"></a><a id="DXVADDI_VIDEOCHROMASUBSAMPLING_COSITED"></a><b>DXVADDI_VideoChromaSubsampling_Cosited</b>
+### -field DXVADDI_VideoChromaSubsampling_Cosited
 
 <dd>
 <p>A bitwise OR of the <b>DXVADDI_VideoChromaSubsampling_Horizontally_Cosited</b>, and <b>DXVADDI_VideoChromaSubsampling_Vertically_Cosited</b>, and <b>DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</b> values that are used with 4:4:4, 4:2:2, and 4:1:1 data.</p>

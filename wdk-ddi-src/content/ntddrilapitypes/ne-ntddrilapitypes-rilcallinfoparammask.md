@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfoparammask.htm
 old-project: netvista
 ms.assetid: 7e6138f6-4728-4072-9600-749594f23b68
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,87 +74,87 @@ typedef enum _RILCALLINFOPARAMMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_PARAM_CI_ID"></a><a id="ril_param_ci_id"></a><b>RIL_PARAM_CI_ID</b>
+### -field RIL_PARAM_CI_ID
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_DIRECTION"></a><a id="ril_param_ci_direction"></a><b>RIL_PARAM_CI_DIRECTION</b>
+### -field RIL_PARAM_CI_DIRECTION
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_STATUS"></a><a id="ril_param_ci_status"></a><b>RIL_PARAM_CI_STATUS</b>
+### -field RIL_PARAM_CI_STATUS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_TYPE"></a><a id="ril_param_ci_type"></a><b>RIL_PARAM_CI_TYPE</b>
+### -field RIL_PARAM_CI_TYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_MULTIPARTY"></a><a id="ril_param_ci_multiparty"></a><b>RIL_PARAM_CI_MULTIPARTY</b>
+### -field RIL_PARAM_CI_MULTIPARTY
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_ADDRESS"></a><a id="ril_param_ci_address"></a><b>RIL_PARAM_CI_ADDRESS</b>
+### -field RIL_PARAM_CI_ADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_SUBADDRESS"></a><a id="ril_param_ci_subaddress"></a><b>RIL_PARAM_CI_SUBADDRESS</b>
+### -field RIL_PARAM_CI_SUBADDRESS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_DESCRIPTION"></a><a id="ril_param_ci_description"></a><b>RIL_PARAM_CI_DESCRIPTION</b>
+### -field RIL_PARAM_CI_DESCRIPTION
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_NUM_PRES_IND"></a><a id="ril_param_ci_num_pres_ind"></a><b>RIL_PARAM_CI_NUM_PRES_IND</b>
+### -field RIL_PARAM_CI_NUM_PRES_IND
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_NAME_PRES_IND"></a><a id="ril_param_ci_name_pres_ind"></a><b>RIL_PARAM_CI_NAME_PRES_IND</b>
+### -field RIL_PARAM_CI_NAME_PRES_IND
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_FLAGS"></a><a id="ril_param_ci_flags"></a><b>RIL_PARAM_CI_FLAGS</b>
+### -field RIL_PARAM_CI_FLAGS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_DISCONNECTINITIATOR"></a><a id="ril_param_ci_disconnectinitiator"></a><b>RIL_PARAM_CI_DISCONNECTINITIATOR</b>
+### -field RIL_PARAM_CI_DISCONNECTINITIATOR
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_DISCONNECTREASON"></a><a id="ril_param_ci_disconnectreason"></a><b>RIL_PARAM_CI_DISCONNECTREASON</b>
+### -field RIL_PARAM_CI_DISCONNECTREASON
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_DISCONNECTDETAILS"></a><a id="ril_param_ci_disconnectdetails"></a><b>RIL_PARAM_CI_DISCONNECTDETAILS</b>
+### -field RIL_PARAM_CI_DISCONNECTDETAILS
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_OFFERANSWER"></a><a id="ril_param_ci_offeranswer"></a><b>RIL_PARAM_CI_OFFERANSWER</b>
+### -field RIL_PARAM_CI_OFFERANSWER
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_HANDOVERSTATE"></a><a id="ril_param_ci_handoverstate"></a><b>RIL_PARAM_CI_HANDOVERSTATE</b>
+### -field RIL_PARAM_CI_HANDOVERSTATE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_CALLMODIFICATIONCAUSE"></a><a id="ril_param_ci_callmodificationcause"></a><b>RIL_PARAM_CI_CALLMODIFICATIONCAUSE</b>
+### -field RIL_PARAM_CI_CALLMODIFICATIONCAUSE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_RTTMODETYPE"></a><a id="ril_param_ci_rttmodetype"></a><b>RIL_PARAM_CI_RTTMODETYPE</b>
+### -field RIL_PARAM_CI_RTTMODETYPE
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_RTTCAPINFO"></a><a id="ril_param_ci_rttcapinfo"></a><b>RIL_PARAM_CI_RTTCAPINFO</b>
+### -field RIL_PARAM_CI_RTTCAPINFO
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_RTTACTION"></a><a id="ril_param_ci_rttaction"></a><b>RIL_PARAM_CI_RTTACTION</b>
+### -field RIL_PARAM_CI_RTTACTION
 
 <dd></dd>
 
-### -field <a id="RIL_PARAM_CI_ALL"></a><a id="ril_param_ci_all"></a><b>RIL_PARAM_CI_ALL</b>
+### -field RIL_PARAM_CI_ALL
 
 <dd></dd>
 </dl>

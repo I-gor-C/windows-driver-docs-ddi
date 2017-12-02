@@ -7,7 +7,7 @@ old-location: netvista\ril_getpersodeactivationstate.htm
 old-project: netvista
 ms.assetid: c82cfde4-f214-4722-8f59-d727ad5bfe7e
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_GetPersoDeactivationState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,15 +59,15 @@ HRESULT  RIL_GetPersoDeactivationState(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwPersoFeature</i> 
+### -param dwPersoFeature 
 
 <dd></dd>
 </dl>

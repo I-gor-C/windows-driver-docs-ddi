@@ -59,37 +59,37 @@ void PinCount(
 ## -parameters
 <dl>
 
-### -param <i>PinId</i> [in]
+### -param PinId [in]
 
 <dd>
 <p>Specifies the pin ID. If a filter contains <i>n</i> pin factories, valid pin IDs range from 0 to <i>n</i>-1.</p>
 </dd>
 
-### -param <i>FilterNecessary</i> [in, out]
+### -param FilterNecessary [in, out]
 
 <dd>
 <p>Specifies the minimum number of pins that the pin factory should instantiate before the filter can perform I/O operations.</p>
 </dd>
 
-### -param <i>FilterCurrent</i> [in, out]
+### -param FilterCurrent [in, out]
 
 <dd>
 <p>Specifies the current number of pin instances. This number counts the pins that the pin factory has already instantiated on the filter.</p>
 </dd>
 
-### -param <i>FilterPossible</i> [in, out]
+### -param FilterPossible [in, out]
 
 <dd>
 <p>Specifies the maximum number of pins that the pin factory can instantiate on the filter. Set to KSINSTANCE_INDETERMINATE if there is no maximum.</p>
 </dd>
 
-### -param <i>GlobalCurrent</i> [in, out]
+### -param GlobalCurrent [in, out]
 
 <dd>
 <p>Specifies the current number of pins that the pin factory has instantiated on the driver.</p>
 </dd>
 
-### -param <i>GlobalPossible</i> [in, out]
+### -param GlobalPossible [in, out]
 
 <dd>
 <p>Specifies the maximum number of pins that the pin factory can instantiate on the driver. Set to KSINSTANCE_INDETERMINATE if there is no maximum.</p>

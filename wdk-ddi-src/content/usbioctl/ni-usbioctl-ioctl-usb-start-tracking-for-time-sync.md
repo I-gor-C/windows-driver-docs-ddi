@@ -82,7 +82,7 @@ I/O Status block
 ## -remarks
 <p>When this IOCTL request completes, the USB driver stack enables certain interrupts from the host controller to keep track of closest frame/microframe boundary in order  to predict the system QPC value with accuracy. Enabling the hardware interrupts adds an overhead to the power consumption because the CPU wakes up every 2.048 seconds when working in the D0 power state. Therefore we recommend that the caller should register for time sync services only when needed.</p>
 
-<p>The driver stack disables those interrupts when it receives and completes the <a href="buses._ioctl_usb_stop_tracking_for_time_sync">IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC</a> request.  </p>
+<p>The driver stack disables those interrupts when it receives and completes the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-stop-tracking-for-time-sync.md">IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC</a> request.  </p>
 
 ## -requirements
 <table>

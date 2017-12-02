@@ -55,13 +55,13 @@ typedef struct _RemoveConnectionFromSession_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>UniqueSessionId</b>
+### -field UniqueSessionId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in their <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
 </dd>
 
-### -field <b>UniqueConnectionId</b>
+### -field UniqueConnectionId
 
 <dd>
 <p>A 64-bit integer that uniquely identifies the connection. Do not confuse this value with the connection ID (CID).</p>

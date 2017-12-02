@@ -56,21 +56,21 @@ typedef struct _STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Contains the size of this structure, in bytes, as defined by <code>Sizeof(STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR)</code>. The value of this member will change as members are added to 
       the structure. </p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the total size of the data returned, in bytes. This may include data that follows this 
       structure.</p>
 </dd>
 
-### -field <b>MediumProductType</b>
+### -field MediumProductType
 
 <dd>
 <p>Specifies the product type of the storage device.</p>

@@ -55,13 +55,13 @@ NTSTATUS DrmForwardContentToFileObject(
 ## -parameters
 <dl>
 
-### -param <i>ContentId</i> [in]
+### -param ContentId [in]
 
 <dd>
 <p>Specifies the DRM content ID. This parameter identifies a protected KS audio stream.</p>
 </dd>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>Pointer to a file object that represents the KS audio pin to which the KS audio stream is sent.</p>
@@ -80,7 +80,7 @@ NTSTATUS DrmForwardContentToFileObject(
 
 <p>The <code>DrmForwardContentToFileObject</code> function authenticates the KS audio filter that implements the KS audio pin represented by <i>FileObject</i>. If <code>DrmForwardContentToFileObject</code> successfully authenticates the KS audio filter, it sets the KS property <a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a> on the audio pin that is represented by <i>FileObject</i>. The property data includes a DRM content ID and a <a href="audio.drmrights">DRMRIGHTS</a> structure. <code>DrmForwardContentToFileObject</code> makes no use of <i>FileObject</i> after returning.</p>
 
-<p><code>DrmForwardContentToFileObject</code> performs the same function as <a href="..\portcls\nf-portcls-pcforwardcontenttofileobject.md">PcForwardContentToFileObject</a> and <a href="audio.idrmport_forwardcontenttofileobject">IDrmPort::ForwardContentToFileObject</a>. For more information, see <a href="NULL">DRM Functions and Interfaces</a>.</p>
+<p><code>DrmForwardContentToFileObject</code> performs the same function as <a href="..\portcls\nf-portcls-pcforwardcontenttofileobject.md">PcForwardContentToFileObject</a> and <a href="audio.idrmport_forwardcontenttofileobject">IDrmPort::ForwardContentToFileObject</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.</p>
 
 ## -requirements
 <table>

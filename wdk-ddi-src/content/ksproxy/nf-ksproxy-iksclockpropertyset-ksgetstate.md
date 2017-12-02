@@ -54,7 +54,7 @@ HRESULT KsGetState(
 ## -parameters
 <dl>
 
-### -param <i>State</i> [out]
+### -param State [out]
 
 <dd>
 <p>Pointer to a variable that receives a value that specifies the streaming state of a pin. This value can be one of the following values from the <a href="stream.ksstate">KSSTATE</a> enumerated type:</p>

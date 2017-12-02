@@ -57,19 +57,19 @@ typedef enum _URS_HOST_INTERFACE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="UrsHostInterfaceTypeEhci"></a><a id="urshostinterfacetypeehci"></a><a id="URSHOSTINTERFACETYPEEHCI"></a><b>UrsHostInterfaceTypeEhci</b>
+### -field UrsHostInterfaceTypeEhci
 
 <dd>
 <p>Indicates an EHCI host controller.</p>
 </dd>
 
-### -field <a id="UrsHostInterfaceTypeXhci"></a><a id="urshostinterfacetypexhci"></a><a id="URSHOSTINTERFACETYPEXHCI"></a><b>UrsHostInterfaceTypeXhci</b>
+### -field UrsHostInterfaceTypeXhci
 
 <dd>
 <p>Indicates an xHCI host controller.</p>
 </dd>
 
-### -field <a id="UrsHostInterfaceTypeOther"></a><a id="urshostinterfacetypeother"></a><a id="URSHOSTINTERFACETYPEOTHER"></a><b>UrsHostInterfaceTypeOther</b>
+### -field UrsHostInterfaceTypeOther
 
 <dd>
 <p>Indicates a generic host controller.</p>

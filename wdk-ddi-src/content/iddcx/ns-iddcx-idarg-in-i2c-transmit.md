@@ -58,7 +58,7 @@ typedef struct IDARG_IN_I2C_TRANSMIT {
 ## -struct-fields
 <dl>
 
-### -field <b>SevenBitI2CAddress</b>
+### -field SevenBitI2CAddress
 
 <dd>
 <p>
@@ -66,7 +66,7 @@ typedef struct IDARG_IN_I2C_TRANSMIT {
                  </p>
 </dd>
 
-### -field <b>DataSizeInBytes</b>
+### -field DataSizeInBytes
 
 <dd>
 <p>
@@ -74,7 +74,7 @@ typedef struct IDARG_IN_I2C_TRANSMIT {
                  </p>
 </dd>
 
-### -field <b>pData</b>
+### -field pData
 
 <dd>
 <p>

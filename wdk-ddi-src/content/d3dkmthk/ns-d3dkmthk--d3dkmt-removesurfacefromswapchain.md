@@ -58,25 +58,25 @@ typedef struct _D3DKMT_REMOVESURFACEFROMSWAPCHAIN {
 ## -struct-fields
 <dl>
 
-### -field <b>hNtSwapChain</b>
+### -field hNtSwapChain
 
 <dd>
 <p>The NT handle for the swapchain in this process.</p>
 </dd>
 
-### -field <b>bProducer</b>
+### -field bProducer
 
 <dd>
 <p>Indicates if the handle is a producer or consumer.</p>
 </dd>
 
-### -field <b>hNtSurfaceHandle</b>
+### -field hNtSurfaceHandle
 
 <dd>
 <p>The NT handle of the surface to remove.</p>
 </dd>
 
-### -field <b>BufferIdx</b>
+### -field BufferIdx
 
 <dd>
 <p>The buffer index of the surface to remove.</p>

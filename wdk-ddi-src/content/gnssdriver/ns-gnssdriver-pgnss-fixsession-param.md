@@ -7,7 +7,7 @@ old-location: sensors\gnss_fixsession_param.htm
 old-project: sensors
 ms.assetid: D51126FD-0448-487A-BD4E-170901E90B1E
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PGNSS_FIXSESSION_PARAM, GNSS_FIXSESSION_PARAM, *PGNSS_FIXSESSION_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,19 +68,19 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Structure size.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>Version number.</p>
 </dd>
 
-### -field <b>FixSessionID</b>
+### -field FixSessionID
 
 <dd>
 <p>This is a unique identifier for a particular fix session.</p>
@@ -88,33 +88,33 @@ typedef struct {
 <p>The GNSS driver must associate all fix related data to the original fix session by using the FixSessionID field. If the GNSS driver does not support multiple fix sessions, it may use the session ID of the last fix session request.</p>
 </dd>
 
-### -field <b>SessionType</b>
+### -field SessionType
 
 <dd>
 <p>Identifies the type or recurrence type of this fix session.</p>
 </dd>
 
-### -field <b>HorizontalAccuracy</b>
+### -field HorizontalAccuracy
 
 <dd>
 <p>The horizontal accuracy of the fix requested is only advisory information for the GNSS driver that can be used in an implementation-specific manner for making appropriate tradeoffs internally to satisfy the request.</p>
 <p>A value of 0 indicates no particular accuracy is mandated by the GNSS adapter.</p>
 </dd>
 
-### -field <b>HorizontalConfidence</b>
+### -field HorizontalConfidence
 
 <dd>
 <p>The horizontal confidence is the circular confidence requested for this fix.</p>
 <p>The platform expects fixes with a 95% confidence. The GNSS driver should honor this confidence value when it returns the fix and accuracy from the GNSS engine.</p>
 </dd>
 
-### -field <b>Reserved[9]</b>
+### -field Reserved[9]
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>FixLevelOfDetails</b>
+### -field FixLevelOfDetails
 
 <dd>
 <p>Indicates the level of detail needed when the GNSS driver returns the fix information.</p>
@@ -122,31 +122,31 @@ typedef struct {
 <p>This flag is OR-ed with the bit-values defined in GNSS_FIXDETAIL_* mask.</p>
 </dd>
 
-### -field <b>SingleShotParam</b>
+### -field SingleShotParam
 
 <dd>
 <p>The <a href="sensors.gnss_singleshot_param">GNSS_SINGLESHOT_PARAM</a> structure defines the parameters for a single-shot fix session.</p>
 </dd>
 
-### -field <b>DistanceParam</b>
+### -field DistanceParam
 
 <dd>
 <p>The <a href="sensors.gnss_distancetracking_param">GNSS_DISTANCETRACKING_PARAM</a> structure defines the parameters for a distance-based tracking fix session.</p>
 </dd>
 
-### -field <b>ContinuousParam</b>
+### -field ContinuousParam
 
 <dd>
 <p>The <a href="sensors.gnss_continuoustracking_param">GNSS_CONTINUOUSTRACKING_PARAM</a> structure defines the parameters for a continuous tracking fix session.</p>
 </dd>
 
-### -field <b>LkgFixParam</b>
+### -field LkgFixParam
 
 <dd>
 <p>The <a href="sensors.gnss_lkgfix_param">GNSS_LKGFIX_PARAM</a>  structure is not used currently by the system.</p>
 </dd>
 
-### -field <b>Unused[512]</b>
+### -field Unused[512]
 
 <dd>
 <p>Padding buffer.</p>

@@ -7,7 +7,7 @@ old-location: ifsk\rxlogeventwithbufferdirect.htm
 old-project: ifsk
 ms.assetid: 09a7d452-efa1-4846-8077-1f6ce60515e7
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: RxLogEventWithBufferDirect
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,43 +61,43 @@ VOID RxLogEventWithBufferDirect(
 ## -parameters
 <dl>
 
-### -param <i>DeviceObject</i> [in]
+### -param DeviceObject [in]
 
 <dd>
 <p>A pointer to the RDBSS device object.</p>
 </dd>
 
-### -param <i>OriginatorId</i> [in]
+### -param OriginatorId [in]
 
 <dd>
 <p>The string indicating the caller generating the error.</p>
 </dd>
 
-### -param <i>EventId</i> [in]
+### -param EventId [in]
 
 <dd>
 <p>The value indicating the I/O error log code which is different than an NTSTATUS value returned by a routine. The legal I/O error log code values are defined in the <i>ntiolog.h</i> header file included with the Microsoft Windows SDK and Visual Studio. </p>
 </dd>
 
-### -param <i>Status</i> [in]
+### -param Status [in]
 
 <dd>
 <p>The value indicating the status code of a routine indicating a failure.</p>
 </dd>
 
-### -param <i>DataBuffer</i> [in]
+### -param DataBuffer [in]
 
 <dd>
 <p>A pointer to a data buffer to be added to the I/O error log structure.</p>
 </dd>
 
-### -param <i>DataBufferLength</i> [in]
+### -param DataBufferLength [in]
 
 <dd>
 <p>The length of the data buffer to be added to the I/O error log structure.</p>
 </dd>
 
-### -param <i>LineNumber</i> [in]
+### -param LineNumber [in]
 
 <dd>
 <p>The line number in the source code file where this failure occurred.</p>
@@ -160,4 +160,4 @@ VOID RxLogEventWithBufferDirect(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxLogEventWithBufferDirect function%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxLogEventWithBufferDirect function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

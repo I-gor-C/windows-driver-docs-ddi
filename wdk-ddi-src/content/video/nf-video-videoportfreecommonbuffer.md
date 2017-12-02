@@ -60,31 +60,31 @@ VOID VideoPortFreeCommonBuffer(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Specifies the number of bytes of memory to be freed.</p>
 </dd>
 
-### -param <i>VirtualAddress</i> [in]
+### -param VirtualAddress [in]
 
 <dd>
 <p>Pointer to the corresponding virtual address of the allocated memory range.</p>
 </dd>
 
-### -param <i>LogicalAddress</i> [in]
+### -param LogicalAddress [in]
 
 <dd>
 <p>Specifies the logical address of the buffer to be freed.</p>
 </dd>
 
-### -param <i>CacheEnabled</i> [in]
+### -param CacheEnabled [in]
 
 <dd>
 <p>Indicates whether the allocated memory is cached.</p>

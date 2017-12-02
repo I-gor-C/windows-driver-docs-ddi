@@ -57,19 +57,19 @@ typedef struct _SERCX_BUFFER_DESCRIPTOR {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.  The <a href="..\sercx\nf-sercx-sercxretrievereceivebuffer.md">SerCxRetrieveReceiveBuffer</a> and <a href="..\sercx\nf-sercx-sercxretrievetransmitbuffer.md">SerCxRetrieveTransmitBuffer</a> methods use this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
-### -field <b>Buffer</b>
+### -field Buffer
 
 <dd>
 <p>The virtual memory address of the buffer. The memory for the buffer is nonpaged.</p>
 </dd>
 
-### -field <b>Length</b>
+### -field Length
 
 <dd>
 <p>The number of bytes available in the buffer. This size determines the maximize number of bytes that can be transferred by the receive or transmit operation.</p>

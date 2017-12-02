@@ -42,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 <p>
              Stores the values of all status registers of the port controller. This structure is used in the 
-             <a href="buses.ioctl_ucmtcpci_port_controller_get_status">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS</a> request.</p>
+             <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl-ucmtcpci-port-controller-get-status.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS</a> request.</p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_GET_STATUS_OUT_PARAMS {
 ## -struct-fields
 <dl>
 
-### -field <b>CCStatus</b>
+### -field CCStatus
 
 <dd>
 <p>
@@ -67,7 +67,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_GET_STATUS_OUT_PARAMS {
                  <b>UCMTCPCI_PORT_CONTROLLER_CC_STATUS</b> structure that describes the CC_STATUS Register defined as per the Universal Serial Bus Type-C Port Controller Interface Specification. This structure is declared in UcmTcpciSpec.h.</p>
 </dd>
 
-### -field <b>PowerStatus</b>
+### -field PowerStatus
 
 <dd>
 <p>
@@ -75,7 +75,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_GET_STATUS_OUT_PARAMS {
                  <b>UCMTCPCI_PORT_CONTROLLER_POWER_STATUS</b> structure that describes the POWER_STATUS Register defined as per the Universal Serial Bus Type-C Port Controller Interface Specification. This structure is declared in UcmTcpciSpec.h.</p>
 </dd>
 
-### -field <b>FaultStatus</b>
+### -field FaultStatus
 
 <dd>
 <p>
@@ -104,7 +104,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_GET_STATUS_OUT_PARAMS {
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ioctl_ucmtcpci_port_controller_get_status">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS</a>
+<a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl-ucmtcpci-port-controller-get-status.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS</a>
 </dt>
 </dl>
 <p> </p>

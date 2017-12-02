@@ -56,7 +56,7 @@ typedef struct _KSRTAUDIO_SETWRITEPACKET_INFO {
 ## -struct-fields
 <dl>
 
-### -field <b>PacketNumber</b>
+### -field PacketNumber
 
 <dd>
 <p> The number of the packet written by the OS to the WaveRT buffer. Depending on the values returned by the driver in the KSPROPERTY_RTAUDIO_GETPACKETCOUNT property, the PacketNumber may skip values. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/mt171559">KSPROPERTY_RTAUDIO_PACKETCOUNT</a>. 
@@ -64,7 +64,7 @@ typedef struct _KSRTAUDIO_SETWRITEPACKET_INFO {
 </p>
 </dd>
 
-### -field <b>Flags </b>
+### -field Flags 
 
 <dd>
 <p>Additional attributes related to the packet or stream. 
@@ -75,7 +75,7 @@ typedef struct _KSRTAUDIO_SETWRITEPACKET_INFO {
 </p>
 </dd>
 
-### -field <b>EosPacketLength</b>
+### -field EosPacketLength
 
 <dd>
 <p>The length of the EOS packet if <i>KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM</i> is specified in Flags. Zero is a valid value. If <i>KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM</i> is not specified in Flags, this parameter is ignored. The EosPacketLength is measured in bytes.</p>

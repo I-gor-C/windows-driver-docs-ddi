@@ -54,7 +54,7 @@ HRESULT GetPartCompression(
 ## -parameters
 <dl>
 
-### -param <i>pCompression</i> [out]
+### -param pCompression [out]
 
 <dd>
 <p>A pointer to the compression option data for the part.</p>

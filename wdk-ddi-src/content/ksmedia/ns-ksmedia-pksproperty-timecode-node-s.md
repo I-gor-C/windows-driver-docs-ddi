@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>NodeProperty</b>
+### -field NodeProperty
 
 <dd>
 <p>Specifies an initialized <a href="stream.ksp_node">KSP_NODE</a> structure that describes the property set, property ID, request type, and node ID.</p>
 </dd>
 
-### -field <b>TimecodeSamp</b>
+### -field TimecodeSamp
 
 <dd>
 <p>Specifies the timecode sample. Timecode, absolute track number (ATN) and relative time counter (RTC) are in the <b>TimecodeSamp.timecode.dwFrames</b> member.</p>

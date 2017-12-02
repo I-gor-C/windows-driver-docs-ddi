@@ -70,7 +70,7 @@ typedef struct _DXVA_ConfigPictureDecode {
 ## -struct-fields
 <dl>
 
-### -field <b>dwFunction</b>
+### -field dwFunction
 
 <dd>
 <p>Indicates the type of query or response when using probing and locking commands. The most significant 24 bits of <b>dwFunction</b> is the <a href="https://msdn.microsoft.com/bfb1a98e-b9f0-4baa-b486-b2ff33a8bac5">DXVA_ConfigQueryOrReplyFlag</a> variable.</p>
@@ -78,50 +78,50 @@ typedef struct _DXVA_ConfigPictureDecode {
 <p>The least significant 8 bits of <b>dwFunction</b> is the <a href="https://msdn.microsoft.com/6db9fa71-7bc2-4eb6-afcb-b16df48f7e8b">bDXVA_Func variable</a> that, in this case, is equal to 1.</p>
 </dd>
 
-### -field <b>dwReservedBits</b>
+### -field dwReservedBits
 
 <dd>
 <p>Reserved bits used for packing and alignment. These bits are zero.</p>
 </dd>
 
-### -field <b>guidConfigBitstreamEncryption</b>
+### -field guidConfigBitstreamEncryption
 
 <dd>
 <p>Indicates a GUID associated with the encryption protocol type for bitstream data buffers. The value DXVA_NoEncrypt (a GUID name defined in <i>dxva.h</i>) indicates that encryption is not applied. This is DXVA_NoEncrypt if <b>bConfigBitstreamRaw</b> is zero.</p>
 </dd>
 
-### -field <b>guidConfigMBcontrolEncryption</b>
+### -field guidConfigMBcontrolEncryption
 
 <dd>
 <p>Indicates a GUID associated with the encryption protocol type for <a href="https://msdn.microsoft.com/7a416992-04d3-4307-83b3-9fb94c17d60e">macroblock control buffers</a>. The value DXVA_NoEncrypt (a GUID name defined in <i>dxva.h</i>) indicates that encryption is not applied. This is DXVA_NoEncrypt if <b>bConfigBitstreamRaw</b> is 1. </p>
 </dd>
 
-### -field <b>guidConfigResidDiffEncryption</b>
+### -field guidConfigResidDiffEncryption
 
 <dd>
 <p>Indicates a GUID associated with the encryption protocol type for residual difference decoding data buffers (buffers containing spatial-domain data or sets of transform-domain coefficients for accelerator-based <a href="wdkgloss.i#wdkgloss.idct#wdkgloss.idct"><i>IDCT</i></a>). This is DXVA_NoEncrypt if <b>bConfigBitstreamRaw</b> is 1. (DXVA_NoEncrypt is a GUID defined in <i>dxva.h</i> that indicates encryption is not applied.)</p>
 </dd>
 
-### -field <b>bConfigBitstreamRaw</b>
+### -field bConfigBitstreamRaw
 
 <dd>
 <p>Contains the bitstream processing indicator. A value of 1 specifies that the picture data will be sent in bitstream buffers as raw bitstream content. A value of zero specifies that picture data will be sent using macroblock control command buffers. </p>
 <p>This is zero if <b>bConfigResidDiffHost</b> is 1 or if <b>bConfigResidDiffAccelerator</b> is 1. The value zero is considered the basic level of support. The additional support of level one is preferred. </p>
 </dd>
 
-### -field <b>bConfigMBcontrolRasterOrder</b>
+### -field bConfigMBcontrolRasterOrder
 
 <dd>
 <p>Specifies whether macroblock control commands are in raster scan order or in arbitrary order. A value of 1 specifies that the macroblock control commands within each macroblock control command buffer are in raster scan order, and a value of zero indicates arbitrary order. Currently, a driver is allowed to restrict support to raster scan order; however, a driver should support both arbitrary and raster scan order.</p>
 </dd>
 
-### -field <b>bConfigResidDiffHost</b>
+### -field bConfigResidDiffHost
 
 <dd>
 <p>Contains the host residual difference configuration (See <a href="https://msdn.microsoft.com/7a416992-04d3-4307-83b3-9fb94c17d60e">Macroblock-Oriented Picture Decoding</a> for more information). A value of 1 specifies that some residual difference decoding data may be sent as blocks in the spatial domain from the host. A value of zero specifies that spatial domain data will not be sent. This member is zero if <b>bConfigBitstreamRaw</b> is 1. It is preferred that an accelerator support both zero and 1.</p>
 </dd>
 
-### -field <b>bConfigSpatialResid8</b>
+### -field bConfigSpatialResid8
 
 <dd>
 <p>Indicates the word size used to represent residual difference spatial-domain blocks for predicted (nonintra) pictures when using host-based residual difference decoding (when <b>bConfigResidDiffHost</b> is equal to 1).</p>
@@ -149,25 +149,25 @@ typedef struct _DXVA_ConfigPictureDecode {
 <div> </div>
 </dd>
 
-### -field <b>bConfigResid8Subtraction</b>
+### -field bConfigResid8Subtraction
 
 <dd>
 <p>When equal to 1, indicates that 8-bit difference overflow blocks are subtracted rather than added. Must be zero unless <b>bConfigSpatialResid8</b> is 1. The preferred value for an accelerator to support is 1 if <b>bConfigSpatialResid8</b> is 1. The ability to subtract differences rather than to add them allows 8-bit difference decoding to be fully compliant with the full +/-255 range of values required in video decoder specifications. This is because +255 cannot be represented as the addition of two signed 8-bit numbers but any number in the range +/-255 can be represented as the difference between two signed 8-bit numbers (+255 is equal to +127 minus âˆ’128).</p>
 </dd>
 
-### -field <b>bConfigSpatialHost8or9Clipping</b>
+### -field bConfigSpatialHost8or9Clipping
 
 <dd>
 <p>When equal to 1, indicates that spatial-domain blocks for intra macroblocks are clipped to an 8-bit range on the host and that spatial-domain blocks for nonintra macroblocks are clipped to a 9-bit range on the host. A value of zero indicates that no such clipping is performed by the host. Must be zero unless <b>bConfigSpatialResid8</b> is equal to zero and <b>bConfigResidDiffHost</b> is equal to 1. The preferred value for an accelerator to support is zero.</p>
 </dd>
 
-### -field <b>bConfigSpatialResidInterleaved</b>
+### -field bConfigSpatialResidInterleaved
 
 <dd>
 <p>When equal to 1, indicates that any spatial-domain residual difference data is sent in a chrominance-interleaved form matching the YUV format chrominance interleaving pattern. Must be zero unless <b>bConfigResidDiffHost</b> is 1 and the YUV format is NV12 or NV21. The preferred value for an accelerator to support is zero.</p>
 </dd>
 
-### -field <b>bConfigIntraResidUnsigned</b>
+### -field bConfigIntraResidUnsigned
 
 <dd>
 <p>Indicates the method of representation of spatial-domain blocks of residual difference data for intra blocks when using host-based difference decoding (when <b>bConfigResidDiffHost</b> is equal to 1).</p>
@@ -193,7 +193,7 @@ typedef struct _DXVA_ConfigPictureDecode {
 <p>The preferred value for an accelerator to support is zero for <b>bConfigIntraResidUnsigned</b>.</p>
 </dd>
 
-### -field <b>bConfigResidDiffAccelerator</b>
+### -field bConfigResidDiffAccelerator
 
 <dd>
 <p>Contains the accelerator residual difference configuration. A value of 1 indicates that transform-domain blocks of coefficient data may be sent from the host for accelerator-based IDCT. A value of zero specifies that accelerator-based IDCT will not be used. If both <b>bConfigResidDiffHost</b> and <b>bConfigResidDiffAccelerator</b> are 1, some residual difference decoding will be done on the host and some on the accelerator, as indicated by macroblock-level control commands. This member must be zero if <b>bConfigBitstreamRaw</b> is 1. </p>
@@ -201,14 +201,14 @@ typedef struct _DXVA_ConfigPictureDecode {
 <p>When <b>bConfigResidDiffAccelerator</b> and <b>bConfigResidDiffHost</b> are equal to 1, residual difference decoding can be shared between the host and accelerator on a macroblock basis. This is considered an even higher level of accelerator capability than when <b>bConfigResidDiffAccelerator</b> is equal to 1 and <b>bConfigResidDiffHost</b> is equal to zero.</p>
 </dd>
 
-### -field <b>bConfigHostInverseScan</b>
+### -field bConfigHostInverseScan
 
 <dd>
 <p>Indicates whether the inverse scan for transform-domain block processing is performed on the host or the accelerator. A value of 1 indicates that the inverse scan for transform-domain block processing will be performed on the host, and absolute indices will be sent instead for any transform coefficients. A value of zero indicates that inverse scan will be performed on the accelerator. This member must be zero if <b>bConfigResidDiffAccelerator</b> is zero or if <b>bConfig4GroupedCoefs</b> is 1.</p>
 <p>The preferred value for an accelerator to support is 1 if <b>bConfigResidDiffAccelerator</b> is 1.</p>
 </dd>
 
-### -field <b>bConfigSpecificIDCT</b>
+### -field bConfigSpecificIDCT
 
 <dd>
 <p>Indicates the use of a specific <a href="wdkgloss.i#wdkgloss.idct#wdkgloss.idct"><i>IDCT</i></a> method for off-host IDCT. A value of 1 indicates use of the IDCT specified in Annex W of ITU-T Recommendation H.263. A value of zero indicates that any compliant IDCT can be used for off-host IDCT. (Values other than zero and 1 are reserved for future use.)</p>
@@ -217,7 +217,7 @@ typedef struct _DXVA_ConfigPictureDecode {
 <div> </div>
 </dd>
 
-### -field <b>bConfig4GroupedCoefs</b>
+### -field bConfig4GroupedCoefs
 
 <dd>
 <p>A value of 1 indicates that transform coefficients for off-host IDCT will be sent using the <a href="..\dxva\ns-dxva--dxva-tcoef4group.md">DXVA_TCoef4Group</a> structure rather than the <a href="..\dxva\ns-dxva--dxva-tcoefsingle.md">DXVA_TCoefSingle</a> structure. This is zero if <b>bConfigResidDiffAccelerator</b> is zero or if <b>bConfigHostInverseScan</b> is 1.</p>

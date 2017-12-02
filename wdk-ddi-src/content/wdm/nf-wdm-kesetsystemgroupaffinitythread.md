@@ -56,13 +56,13 @@ VOID KeSetSystemGroupAffinityThread(
 ## -parameters
 <dl>
 
-### -param <i>Affinity</i> [in]
+### -param Affinity [in]
 
 <dd>
 <p>A pointer to a <a href="..\miniport\ns-miniport--group-affinity.md">GROUP_AFFINITY</a> structure that specifies the new group number and group-relative affinity mask for the calling thread.</p>
 </dd>
 
-### -param <i>PreviousAffinity</i> [out, optional]
+### -param PreviousAffinity [out, optional]
 
 <dd>
 <p>A pointer to a caller-allocated <b>GROUP_AFFINITY</b> structure into which the routine writes information about the previous group affinity of the calling thread. The caller can later use this pointer as an input parameter to the <a href="..\wdm\nf-wdm-kereverttousergroupaffinitythread.md">KeRevertToUserGroupAffinityThread</a> routine to restore the previous thread affinity. Frequently, <b>KeSetSystemGroupAffinityThread</b> writes values to this structure that are not valid group affinities but that have special meaning to <b>KeRevertToUserGroupAffinityThread</b>. Do not supply pointers to these special values as <i>Affinity</i> parameters in subsequent <b>KeSetSystemGroupAffinityThread</b> calls.</p>

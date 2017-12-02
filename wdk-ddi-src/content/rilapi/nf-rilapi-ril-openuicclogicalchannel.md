@@ -7,7 +7,7 @@ old-location: netvista\ril_openuicclogicalchannel.htm
 old-project: netvista
 ms.assetid: 8e77d55d-62f5-450c-9d9a-41acfece84c0
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_OpenUiccLogicalChannel
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,31 +63,31 @@ HRESULT  RIL_OpenUiccLogicalChannel(
 ## -parameters
 <dl>
 
-### -param <i>hRil</i> 
+### -param hRil 
 
 <dd></dd>
 
-### -param <i>lpContext</i> 
+### -param lpContext 
 
 <dd></dd>
 
-### -param <i>dwSlotIndex</i> 
+### -param dwSlotIndex 
 
 <dd></dd>
 
-### -param <i>dwChannelGroup</i> 
+### -param dwChannelGroup 
 
 <dd></dd>
 
-### -param <i>dwAppIdLength</i> 
+### -param dwAppIdLength 
 
 <dd></dd>
 
-### -param <i>pbAppId</i> 
+### -param pbAppId 
 
 <dd></dd>
 
-### -param <i>dwSelectP2Arg</i> 
+### -param dwSelectP2Arg 
 
 <dd></dd>
 </dl>

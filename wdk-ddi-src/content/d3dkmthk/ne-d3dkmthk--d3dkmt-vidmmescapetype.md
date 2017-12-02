@@ -68,59 +68,59 @@ typedef enum _D3DKMT_VIDMMESCAPETYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DKMT_VIDMMESCAPETYPE_SETFAULT"></a><a id="d3dkmt_vidmmescapetype_setfault"></a><b>D3DKMT_VIDMMESCAPETYPE_SETFAULT</b>
+### -field D3DKMT_VIDMMESCAPETYPE_SETFAULT
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDMMESCAPETYPE_RUN_COHERENCY_TEST"></a><a id="d3dkmt_vidmmescapetype_run_coherency_test"></a><b>D3DKMT_VIDMMESCAPETYPE_RUN_COHERENCY_TEST</b>
+### -field D3DKMT_VIDMMESCAPETYPE_RUN_COHERENCY_TEST
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDMMESCAPETYPE_RUN_UNMAP_TO_DUMMY_PAGE_TEST"></a><a id="d3dkmt_vidmmescapetype_run_unmap_to_dummy_page_test"></a><b>D3DKMT_VIDMMESCAPETYPE_RUN_UNMAP_TO_DUMMY_PAGE_TEST</b>
+### -field D3DKMT_VIDMMESCAPETYPE_RUN_UNMAP_TO_DUMMY_PAGE_TEST
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDMMESCAPETYPE_APERTURE_CORRUPTION_CHECK"></a><a id="d3dkmt_vidmmescapetype_aperture_corruption_check"></a><b>D3DKMT_VIDMMESCAPETYPE_APERTURE_CORRUPTION_CHECK</b>
+### -field D3DKMT_VIDMMESCAPETYPE_APERTURE_CORRUPTION_CHECK
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDMMESCAPETYPE_SUSPEND_CPU_ACCESS_TEST"></a><a id="d3dkmt_vidmmescapetype_suspend_cpu_access_test"></a><b>D3DKMT_VIDMMESCAPETYPE_SUSPEND_CPU_ACCESS_TEST</b>
+### -field D3DKMT_VIDMMESCAPETYPE_SUSPEND_CPU_ACCESS_TEST
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDMMESCAPETYPE_EVICT"></a><a id="d3dkmt_vidmmescapetype_evict"></a><b>D3DKMT_VIDMMESCAPETYPE_EVICT</b>
+### -field D3DKMT_VIDMMESCAPETYPE_EVICT
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDMMESCAPETYPE_EVICT_BY_NT_HANDLE"></a><a id="d3dkmt_vidmmescapetype_evict_by_nt_handle"></a><b>D3DKMT_VIDMMESCAPETYPE_EVICT_BY_NT_HANDLE</b>
+### -field D3DKMT_VIDMMESCAPETYPE_EVICT_BY_NT_HANDLE
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDMMESCAPETYPE_GET_VAD_INFO"></a><a id="d3dkmt_vidmmescapetype_get_vad_info"></a><b>D3DKMT_VIDMMESCAPETYPE_GET_VAD_INFO</b>
+### -field D3DKMT_VIDMMESCAPETYPE_GET_VAD_INFO
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDMMESCAPETYPE_SET_BUDGET"></a><a id="d3dkmt_vidmmescapetype_set_budget"></a><b>D3DKMT_VIDMMESCAPETYPE_SET_BUDGET</b>
+### -field D3DKMT_VIDMMESCAPETYPE_SET_BUDGET
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDMMESCAPETYPE_SUSPEND_PROCESS"></a><a id="d3dkmt_vidmmescapetype_suspend_process"></a><b>D3DKMT_VIDMMESCAPETYPE_SUSPEND_PROCESS</b>
+### -field D3DKMT_VIDMMESCAPETYPE_SUSPEND_PROCESS
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDMMESCAPETYPE_RESUME_PROCESS"></a><a id="d3dkmt_vidmmescapetype_resume_process"></a><b>D3DKMT_VIDMMESCAPETYPE_RESUME_PROCESS</b>
+### -field D3DKMT_VIDMMESCAPETYPE_RESUME_PROCESS
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDMMESCAPETYPE_GET_BUDGET"></a><a id="d3dkmt_vidmmescapetype_get_budget"></a><b>D3DKMT_VIDMMESCAPETYPE_GET_BUDGET</b>
+### -field D3DKMT_VIDMMESCAPETYPE_GET_BUDGET
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDMMESCAPETYPE_SET_TRIM_INTERVALS"></a><a id="d3dkmt_vidmmescapetype_set_trim_intervals"></a><b>D3DKMT_VIDMMESCAPETYPE_SET_TRIM_INTERVALS</b>
+### -field D3DKMT_VIDMMESCAPETYPE_SET_TRIM_INTERVALS
 
 <dd></dd>
 
-### -field <a id="D3DKMT_VIDMMESCAPETYPE_EVICT_BY_CRITERIA"></a><a id="d3dkmt_vidmmescapetype_evict_by_criteria"></a><b>D3DKMT_VIDMMESCAPETYPE_EVICT_BY_CRITERIA</b>
+### -field D3DKMT_VIDMMESCAPETYPE_EVICT_BY_CRITERIA
 
 <dd></dd>
 </dl>

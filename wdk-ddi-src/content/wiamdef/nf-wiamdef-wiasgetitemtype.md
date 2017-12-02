@@ -7,7 +7,7 @@ old-location: image\wiasgetitemtype.htm
 old-project: image
 ms.assetid: 9659d669-ccf3-423a-9c81-12232a978d07
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/30/2017
 ms.keywords: wiasGetItemType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ HRESULT _stdcall wiasGetItemType(
 ## -parameters
 <dl>
 
-### -param <i>pWiasContext</i> [in]
+### -param pWiasContext [in]
 
 <dd>
 <p>Pointer to a WIA item context.</p>
 </dd>
 
-### -param <i>plItemType</i> [out]
+### -param plItemType [out]
 
 <dd>
 <p>Pointer to a memory location that receives a value indicating the type of the item. See the Microsoft Windows SDK documentation for a list of the WIA item type flags.</p>

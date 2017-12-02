@@ -54,7 +54,7 @@ typedef struct _RemoveConnectionFromSession_OUT {
 ## -struct-fields
 <dl>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>This specifies the status of the <a href="storage.removeconnectionfromsession">RemoveConnectionFromSession</a> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.</p>

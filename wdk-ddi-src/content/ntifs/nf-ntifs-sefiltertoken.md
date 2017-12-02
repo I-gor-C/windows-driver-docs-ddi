@@ -7,7 +7,7 @@ old-location: ifsk\sefiltertoken.htm
 old-project: ifsk
 ms.assetid: 2de3980a-da78-4cdd-916b-0801f38f3637
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: SeFilterToken
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ NTSTATUS SeFilterToken(
 ## -parameters
 <dl>
 
-### -param <i>ExistingToken</i> [in]
+### -param ExistingToken [in]
 
 <dd>
 <p>Pointer to a primary or impersonation token. The token can also be a restricted token. This token must already be open for TOKEN_DUPLICATE access. This pointer can be obtained from an existing token handle by calling <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>, specifying TOKEN_DUPLICATE as the <i>DesiredAccess</i> type. </p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>Specifies additional privilege options. This parameter can be zero or a combination of the following values. </p>
@@ -94,7 +94,7 @@ NTSTATUS SeFilterToken(
 <p> </p>
 </dd>
 
-### -param <i>SidsToDisable</i> [in, optional]
+### -param SidsToDisable [in, optional]
 
 <dd>
 <p>Pointer to a TOKEN_GROUPS structure containing an array of SID_AND_ATTRIBUTES structures that specify the deny-only SIDs in the restricted token. The system uses a deny-only SID to deny access to a securable object. The absence of a deny-only SID does not allow access. </p>
@@ -104,7 +104,7 @@ NTSTATUS SeFilterToken(
 <p>This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>PrivilegesToDelete</i> [in, optional]
+### -param PrivilegesToDelete [in, optional]
 
 <dd>
 <p>Pointer to a TOKEN_PRIVILEGES structure containing an array of LUID_AND_ATTRIBUTES structures that specify the privileges to delete in the restricted token. </p>
@@ -113,7 +113,7 @@ NTSTATUS SeFilterToken(
 <p>This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>RestrictedSids</i> [in, optional]
+### -param RestrictedSids [in, optional]
 
 <dd>
 <p>Pointer to a TOKEN_GROUPS structure containing an array of SID_AND_ATTRIBUTES structures that specify a list of restricting SIDs for the new token. If the existing token is a restricted token, the list of restricting SIDs for the new token is the intersection of this array and the list of restricting SIDs for the existing token. </p>
@@ -121,7 +121,7 @@ NTSTATUS SeFilterToken(
 <p>This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
-### -param <i>NewToken</i> [out]
+### -param NewToken [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the address of the new restricted token. The new token is the same type, primary or impersonation, as the existing token. </p>
@@ -244,4 +244,4 @@ NTSTATUS SeFilterToken(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeFilterToken routine%20 RELEASE:%20(11/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeFilterToken routine%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

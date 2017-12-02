@@ -57,25 +57,25 @@ typedef enum _DXGKMDT_CERTIFICATE_TYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="DXGKMDT_OPM_CERTIFICATE"></a><a id="dxgkmdt_opm_certificate"></a><b>DXGKMDT_OPM_CERTIFICATE</b>
+### -field DXGKMDT_OPM_CERTIFICATE
 
 <dd>
 <p>Indicates an Output Protection Management (OPM) certificate. </p>
 </dd>
 
-### -field <a id="DXGKMDT_COPP_CERTIFICATE"></a><a id="dxgkmdt_copp_certificate"></a><b>DXGKMDT_COPP_CERTIFICATE</b>
+### -field DXGKMDT_COPP_CERTIFICATE
 
 <dd>
 <p>Indicates a Certified Output Protection Protocol (COPP) certificate. </p>
 </dd>
 
-### -field <a id="DXGKMDT_UAB_CERTIFICATE"></a><a id="dxgkmdt_uab_certificate"></a><b>DXGKMDT_UAB_CERTIFICATE</b>
+### -field DXGKMDT_UAB_CERTIFICATE
 
 <dd>
 <p>Indicates a User Accessible Bus (UAB) certificate. </p>
 </dd>
 
-### -field <a id="DXGKMDT_FORCE_ULONG"></a><a id="dxgkmdt_force_ulong"></a><b>DXGKMDT_FORCE_ULONG</b>
+### -field DXGKMDT_FORCE_ULONG
 
 <dd>
 <p>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value. </p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The SPLCLIENT_INFO_1 structure is used as input to the <a href="..\winsplp\nf-winsplp-generatecopyfilepaths.md">GenerateCopyFilePaths</a> function that is exported by <a href="NULL">Point and Print DLLs</a>.</p>
+<p>The SPLCLIENT_INFO_1 structure is used as input to the <a href="..\winsplp\nf-winsplp-generatecopyfilepaths.md">GenerateCopyFilePaths</a> function that is exported by <a href="https://msdn.microsoft.com/7ead940e-8426-4756-890f-f3607dc1f9ca">Point and Print DLLs</a>.</p>
 
 
 ## -syntax
@@ -61,43 +61,43 @@ typedef struct _SPLCLIENT_INFO_1 {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Size of the SPLCLIENT_INFO_1 structure.</p>
 </dd>
 
-### -field <b>pMachineName</b>
+### -field pMachineName
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>pUserName</b>
+### -field pUserName
 
 <dd>
 <p>Not used.</p>
 </dd>
 
-### -field <b>dwBuildNum</b>
+### -field dwBuildNum
 
 <dd>
 <p>The build number of the version of the NT-based operating system running on the client, as returned by the Microsoft Window SDK <b>GetVersionEx</b> function.</p>
 </dd>
 
-### -field <b>dwMajorVersion</b>
+### -field dwMajorVersion
 
 <dd>
 <p>The major version number of the NT-based operating system print spooler running on the client.</p>
 </dd>
 
-### -field <b>dwMinorVersion</b>
+### -field dwMinorVersion
 
 <dd>
 <p>The minor version number of the NT-based operating system print spooler running on the client.</p>
 </dd>
 
-### -field <b>wProcessorArchitecture</b>
+### -field wProcessorArchitecture
 
 <dd>
 <p>The client's processor architecture, as returned by the Window SDK <b>GetSystemInfo</b> function.</p>

@@ -58,23 +58,23 @@ typedef enum  {
 ## -enum-fields
 <dl>
 
-### -field <a id="KSEVENT_CONNECTION_POSITIONUPDATE"></a><a id="ksevent_connection_positionupdate"></a><b>KSEVENT_CONNECTION_POSITIONUPDATE</b>
+### -field KSEVENT_CONNECTION_POSITIONUPDATE
 
 <dd></dd>
 
-### -field <a id="KSEVENT_CONNECTION_DATADISCONTINUITY"></a><a id="ksevent_connection_datadiscontinuity"></a><b>KSEVENT_CONNECTION_DATADISCONTINUITY</b>
+### -field KSEVENT_CONNECTION_DATADISCONTINUITY
 
 <dd></dd>
 
-### -field <a id="KSEVENT_CONNECTION_TIMEDISCONTINUITY"></a><a id="ksevent_connection_timediscontinuity"></a><b>KSEVENT_CONNECTION_TIMEDISCONTINUITY</b>
+### -field KSEVENT_CONNECTION_TIMEDISCONTINUITY
 
 <dd></dd>
 
-### -field <a id="KSEVENT_CONNECTION_PRIORITY"></a><a id="ksevent_connection_priority"></a><b>KSEVENT_CONNECTION_PRIORITY</b>
+### -field KSEVENT_CONNECTION_PRIORITY
 
 <dd></dd>
 
-### -field <a id="KSEVENT_CONNECTION_ENDOFSTREAM"></a><a id="ksevent_connection_endofstream"></a><b>KSEVENT_CONNECTION_ENDOFSTREAM</b>
+### -field KSEVENT_CONNECTION_ENDOFSTREAM
 
 <dd></dd>
 </dl>

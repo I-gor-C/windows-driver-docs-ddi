@@ -72,109 +72,109 @@ typedef struct _CM_FLOPPY_DEVICE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>The version number of this structure.</p>
 </dd>
 
-### -field <b>Revision</b>
+### -field Revision
 
 <dd>
 <p>The revision of this structure.</p>
 </dd>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The floppy disk density size.</p>
 </dd>
 
-### -field <b>MaxDensity</b>
+### -field MaxDensity
 
 <dd>
 <p>The maximum density.</p>
 </dd>
 
-### -field <b>MountDensity</b>
+### -field MountDensity
 
 <dd>
 <p>The mount density.</p>
 </dd>
 
-### -field <b>StepRateHeadUnloadTime</b>
+### -field StepRateHeadUnloadTime
 
 <dd>
 <p>The step rate head unload time in milliseconds.</p>
 </dd>
 
-### -field <b>HeadLoadTime</b>
+### -field HeadLoadTime
 
 <dd>
 <p>The head load time in milliseconds.</p>
 </dd>
 
-### -field <b>MotorOffTime</b>
+### -field MotorOffTime
 
 <dd>
 <p>The motor off time in seconds.</p>
 </dd>
 
-### -field <b>SectorLengthCode</b>
+### -field SectorLengthCode
 
 <dd>
 <p>Indicates the sector size as an exponent in the formula ((2**<i>code</i>) * 128). </p>
 </dd>
 
-### -field <b>SectorPerTrack</b>
+### -field SectorPerTrack
 
 <dd>
 <p>The number of sectors per track.</p>
 </dd>
 
-### -field <b>ReadWriteGapLength</b>
+### -field ReadWriteGapLength
 
 <dd>
 <p>The read/write gap length, in bytes.</p>
 </dd>
 
-### -field <b>DataTransferLength</b>
+### -field DataTransferLength
 
 <dd>
 <p>The data transfer length, in bytes, not including the synchronization field.</p>
 </dd>
 
-### -field <b>FormatGapLength</b>
+### -field FormatGapLength
 
 <dd>
 <p>The format gap length, in bytes.</p>
 </dd>
 
-### -field <b>FormatFillCharacter</b>
+### -field FormatFillCharacter
 
 <dd>
 <p>The format fill character.</p>
 </dd>
 
-### -field <b>HeadSettleTime</b>
+### -field HeadSettleTime
 
 <dd>
 <p>The head settle time in milliseconds.</p>
 </dd>
 
-### -field <b>MotorSettleTime</b>
+### -field MotorSettleTime
 
 <dd>
 <p>The motor settle time in milliseconds.</p>
 </dd>
 
-### -field <b>MaximumTrackValue</b>
+### -field MaximumTrackValue
 
 <dd>
 <p>The maximum track number on the media. Track numbers are zero-based values.</p>
 </dd>
 
-### -field <b>DataTransferRate</b>
+### -field DataTransferRate
 
 <dd>
 <p>The value written to the Datarate register before accessing the media. </p>

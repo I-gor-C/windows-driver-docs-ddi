@@ -56,13 +56,13 @@ NTSTATUS TmDereferenceEnlistmentKey(
 ## -parameters
 <dl>
 
-### -param <i>Enlistment</i> [in]
+### -param Enlistment [in]
 
 <dd>
 <p>A pointer to an enlistment object. Your component can receive this pointer as input to a <a href="kernel.resourcemanagernotification">ResourceManagerNotification</a> callback routine. Alternatively, your component can call <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>, <a href="..\wdm\nf-wdm-tmcreateenlistment.md">TmCreateEnlistment</a>, or <a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a> provided.</p>
 </dd>
 
-### -param <i>LastReference</i> [out, optional]
+### -param LastReference [out, optional]
 
 <dd>
 <p>A pointer to a BOOLEAN-typed variable. This variable receives <b>TRUE</b> if the reference count is zero after <b>TmDereferenceEnlistmentKey</b> decrements it. Otherwise, the variable receives <b>FALSE</b>.</p>

@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>Property</b>
+### -field Property
 
 <dd>
 <p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
-### -field <b>AutoDetect</b>
+### -field AutoDetect
 
 <dd>
 <p>A Boolean value that indicates whether the tuning device can automatically detect the tuner standard from the signal. <b>TRUE</b> indicates that the tuning device can automatically detect the tuner standard from the signal. <b>FALSE</b> indicates that the tuning device cannot automatically detect the tuner standard. </p>

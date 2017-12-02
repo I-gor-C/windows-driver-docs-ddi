@@ -59,19 +59,19 @@ VOID APIENTRY ResourceUnmap(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hResource</i> [in]
+### -param hResource [in]
 
 <dd>
 <p> A handle to the resource to unmap.</p>
 </dd>
 
-### -param <i>Subresource</i> [in]
+### -param Subresource [in]
 
 <dd>
 <p> An index that indicates the subresource to unmap. </p>

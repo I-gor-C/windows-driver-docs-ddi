@@ -62,7 +62,7 @@ typedef struct _STORAGE_OFFLOAD_TOKEN {
 ## -struct-fields
 <dl>
 
-### -field <b>TokenType</b>
+### -field TokenType
 
 <dd>
 <p>The type of token contained in this structure. <b>TokenType</b> is set to either of the following:</p>
@@ -74,7 +74,7 @@ typedef struct _STORAGE_OFFLOAD_TOKEN {
 <tr>
 <td width="40%"><a id="STORAGE_OFFLOAD_TOKEN_TYPE_ZERO_DATA"></a><a id="storage_offload_token_type_zero_data"></a><dl>
 
-### -field <b>STORAGE_OFFLOAD_TOKEN_TYPE_ZERO_DATA</b>
+### -field STORAGE_OFFLOAD_TOKEN_TYPE_ZERO_DATA
 
 </dl>
 </td>
@@ -85,7 +85,7 @@ typedef struct _STORAGE_OFFLOAD_TOKEN {
 <tr>
 <td width="40%"><a id="Any_other_value"></a><a id="any_other_value"></a><a id="ANY_OTHER_VALUE"></a><dl>
 
-### -field <b>Any other value</b>
+### -field Any other value
 
 </dl>
 </td>
@@ -97,25 +97,25 @@ typedef struct _STORAGE_OFFLOAD_TOKEN {
 <p> </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>TokenIdLength</b>
+### -field TokenIdLength
 
 <dd>
 <p>The length of the token data in <b>Token</b>.</p>
 </dd>
 
-### -field <b>StorageOffloadZeroDataToken</b>
+### -field StorageOffloadZeroDataToken
 
 <dd>
 <p>The token value when the data it represents is considered as all zeros. This member is valid when <b>TokenType</b> is set to <b>STORAGE_OFFLOAD_TOKEN_TYPE_ZERO_DATA</b>.</p>
 <dl>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>
@@ -123,7 +123,7 @@ typedef struct _STORAGE_OFFLOAD_TOKEN {
 </dl>
 </dd>
 
-### -field <b>Token</b>
+### -field Token
 
 <dd>
 <p>The vendor-supplied token value representing a  data set range for an offload read or write operation.</p>

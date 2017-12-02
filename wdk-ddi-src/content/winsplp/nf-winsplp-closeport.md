@@ -55,7 +55,7 @@ BOOL ClosePort(
 ## -parameters
 <dl>
 
-### -param <i>hPort</i> [in]
+### -param hPort [in]
 
 <dd>
 <p>Caller-supplied pointer to a port handle.</p>
@@ -67,7 +67,7 @@ BOOL ClosePort(
 
 ## -remarks
 <p>
-<a href="NULL">Language monitors</a> and port monitor server DLLs are required to define a <b>ClosePort</b> function and include the function's address in a <a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a> structure.</p>
+<a href="https://msdn.microsoft.com/26ba1c22-390a-4187-b67a-3f3497964f8e">Language monitors</a> and port monitor server DLLs are required to define a <b>ClosePort</b> function and include the function's address in a <a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a> structure.</p>
 
 <p>The handle received as the function's <i>hPort</i> argument is the port handle that the monitor's <a href="..\winsplp\nf-winsplp-openport.md">OpenPort</a> or <a href="print.openportex">OpenPortEx</a> function supplied.</p>
 

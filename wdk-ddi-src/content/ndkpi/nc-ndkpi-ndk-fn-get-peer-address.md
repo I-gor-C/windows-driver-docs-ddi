@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_get_peer_address.htm
 old-project: netvista
 ms.assetid: 7015FBC6-BACD-4154-A6E5-15A949BA5906
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ NTSTATUS NdkGetPeerAddress(
 ## -parameters
 <dl>
 
-### -param <i>pNdkConnector</i> [in]
+### -param pNdkConnector [in]
 
 <dd>
 <p>A pointer to an NDK connector object (<a href="..\ndkpi\ns-ndkpi--ndk-connector.md">NDK_CONNECTOR</a>).</p>
 </dd>
 
-### -param <i>pAddress</i> 
+### -param pAddress 
 
 <dd>
 <p>A remote address is returned in this buffer.</p>
 </dd>
 
-### -param <i>pAddressLength</i> 
+### -param pAddressLength 
 
 <dd>
 <p>The size, in bytes, of the address buffer for input, and the size, in bytes, of the actual address written into the buffer for output.</p>
@@ -150,4 +150,4 @@ NTSTATUS NdkGetPeerAddress(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_GET_PEER_ADDRESS callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_GET_PEER_ADDRESS callback function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

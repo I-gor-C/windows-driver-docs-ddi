@@ -55,7 +55,7 @@ VOID SERCX_BUFFER_DESCRIPTOR_INIT(
 ## -parameters
 <dl>
 
-### -param <i>Descriptor</i> [out]
+### -param Descriptor [out]
 
 <dd>
 <p>A pointer to the <b>SERCX_BUFFER_DESCRIPTOR</b> structure that is to be initialized.</p>

@@ -60,19 +60,19 @@ typedef struct _DXGKCB_NOTIFY_MPO_VSYNC_FLAGS {
 ## -struct-fields
 <dl>
 
-### -field <b>PostPresentNeeded</b>
+### -field PostPresentNeeded
 
 <dd>
 <p>The driver sets this flag to indicate that scheduler must call DXGDDI_POSTMULTIPLANEOVERLAYPRESENT for this flip entry. </p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of the 32-bit <b>Value</b> member to zeros.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd></dd>
 </dl>

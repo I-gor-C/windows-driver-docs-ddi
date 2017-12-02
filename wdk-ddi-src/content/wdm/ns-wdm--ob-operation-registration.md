@@ -58,7 +58,7 @@ typedef struct _OB_OPERATION_REGISTRATION {
 ## -struct-fields
 <dl>
 
-### -field <b>ObjectType</b>
+### -field ObjectType
 
 <dd>
 <p>A pointer to the object type that triggers the callback routine. Specify one of the following values:</p>
@@ -69,20 +69,20 @@ typedef struct _OB_OPERATION_REGISTRATION {
 </ul>
 </dd>
 
-### -field <b>Operations</b>
+### -field Operations
 
 <dd>
 <p>Specify one or more of the following flags:</p>
 <p></p>
 <dl>
 
-### -field <a id="OB_OPERATION_HANDLE_CREATE"></a><a id="ob_operation_handle_create"></a>OB_OPERATION_HANDLE_CREATE
+### -field OB_OPERATION_HANDLE_CREATE
 
 <dd>
 <p>A new process, thread, or desktop handle was or will be opened.</p>
 </dd>
 
-### -field <a id="OB_OPERATION_HANDLE_DUPLICATE"></a><a id="ob_operation_handle_duplicate"></a>OB_OPERATION_HANDLE_DUPLICATE
+### -field OB_OPERATION_HANDLE_DUPLICATE
 
 <dd>
 <p>A process, thread, or desktop handle was or will be duplicated.</p>
@@ -90,13 +90,13 @@ typedef struct _OB_OPERATION_REGISTRATION {
 </dl>
 </dd>
 
-### -field <b>PreOperation</b>
+### -field PreOperation
 
 <dd>
 <p>A pointer to an <a href="kernel.objectprecallback">ObjectPreCallback</a> routine. The system calls this routine before the requested operation occurs.</p>
 </dd>
 
-### -field <b>PostOperation</b>
+### -field PostOperation
 
 <dd>
 <p>A pointer to an <a href="kernel.objectpostcallback">ObjectPostCallback</a> routine. The system calls this routine after the requested operation occurs.</p>

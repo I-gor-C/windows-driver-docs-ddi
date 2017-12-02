@@ -54,7 +54,7 @@ HRESULT FlushData(
 ## -parameters
 <dl>
 
-### -param <i>None</i> 
+### -param None 
 
 <dd>
 <p>None</p>

@@ -56,19 +56,19 @@ NTSTATUS KsMethodHandler(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP with the method request being handled.</p>
 </dd>
 
-### -param <i>MethodSetsCount</i> [in]
+### -param MethodSetsCount [in]
 
 <dd>
 <p>Indicates the number of method set structures being passed.</p>
 </dd>
 
-### -param <i>MethodSet</i> [in]
+### -param MethodSet [in]
 
 <dd>
 <p>Specifies the pointer to the list of method set information.</p>

@@ -63,24 +63,24 @@ typedef struct _DISK_SIGNATURE {
 ## -struct-fields
 <dl>
 
-### -field <b>PartitionStyle</b>
+### -field PartitionStyle
 
 <dd>
 <p>Specifies the type of partition.  See <a href="storage.partition_style">PARTITION_STYLE</a> for a description of the possible values.</p>
 </dd>
 
-### -field <b>Mbr</b>
+### -field Mbr
 
 <dd>
 <dl>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>Specifies the signature value, which uniquely identifies the disk. The <b>Mbr</b> member of the union is used to specify the disk signature data for a disk formatted with a Master Boot Record (MBR) format partition table. This member is valid when <b>PartitionStyle</b> is PARTITION_STYLE_MBR. </p>
 </dd>
 
-### -field <b>CheckSum</b>
+### -field CheckSum
 
 <dd>
 <p>Specifies the checksum for the master boot record. The <b>Mbr</b> member of the union is used to specify the disk signature data for a disk formatted with a Master Boot Record (MBR) format partition table. This member is valid when <b>PartitionStyle</b> is PARTITION_STYLE_MBR. </p>
@@ -88,12 +88,12 @@ typedef struct _DISK_SIGNATURE {
 </dl>
 </dd>
 
-### -field <b>Gpt</b>
+### -field Gpt
 
 <dd>
 <dl>
 
-### -field <b>DiskId</b>
+### -field DiskId
 
 <dd>
 <p>Specifies the GUID that uniquely identifies the disk. The <b>Gpt</b> member of the union is used to specify the disk signature data for a disk that is formatted with a GUID Partition Table (GPT) format partition table. The GUID data type is described on the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565392">Using GUIDs in Drivers</a> reference page. This member is valid when <b>PartitionStyle</b> is PARTITION_STYLE_GPT. </p>

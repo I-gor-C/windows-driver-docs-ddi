@@ -54,7 +54,7 @@ typedef struct _SetInitiatorNodeName_IN {
 ## -struct-fields
 <dl>
 
-### -field <b>CreatedInitiatorName</b>
+### -field CreatedInitiatorName
 
 <dd>
 <p>The new initiator name.</p>

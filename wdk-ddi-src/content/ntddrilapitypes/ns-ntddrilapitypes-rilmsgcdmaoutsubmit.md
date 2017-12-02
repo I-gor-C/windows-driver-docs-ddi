@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmaoutsubmit.htm
 old-project: netvista
 ms.assetid: 3ed93cff-7974-4cf9-9b89-f4a8e52c4c3d
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILMSGCDMAOUTSUBMIT, RILMSGCDMAOUTSUBMIT, *LPRILMSGCDMAOUTSUBMIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,95 +76,95 @@ typedef struct _RILMSGCDMAOUTSUBMIT {
 ## -struct-fields
 <dl>
 
-### -field <b>raDestAddress</b>
+### -field raDestAddress
 
 <dd></dd>
 
-### -field <b>rsaDestSubaddr</b>
+### -field rsaDestSubaddr
 
 <dd></dd>
 
-### -field <b>bDigit</b>
+### -field bDigit
 
 <dd></dd>
 
-### -field <b>stValidityPeriodAbs</b>
+### -field stValidityPeriodAbs
 
 <dd></dd>
 
-### -field <b>stValidityPeriodRel</b>
+### -field stValidityPeriodRel
 
 <dd></dd>
 
-### -field <b>stDeferredDelTimeAbs</b>
+### -field stDeferredDelTimeAbs
 
 <dd></dd>
 
-### -field <b>stDeferredDelTimeRel</b>
+### -field stDeferredDelTimeRel
 
 <dd></dd>
 
-### -field <b>bDeliveryAckRequest</b>
+### -field bDeliveryAckRequest
 
 <dd></dd>
 
-### -field <b>bUserAckRequest</b>
+### -field bUserAckRequest
 
 <dd></dd>
 
-### -field <b>bBearerReplyRequest</b>
+### -field bBearerReplyRequest
 
 <dd></dd>
 
-### -field <b>dwReplySeqNumber</b>
+### -field dwReplySeqNumber
 
 <dd></dd>
 
-### -field <b>dwMsgDisplayMode</b>
+### -field dwMsgDisplayMode
 
 <dd></dd>
 
-### -field <b>raCallBackNumber</b>
+### -field raCallBackNumber
 
 <dd></dd>
 
-### -field <b>dwMsgPriority</b>
+### -field dwMsgPriority
 
 <dd></dd>
 
-### -field <b>dwMsgPrivacy</b>
+### -field dwMsgPrivacy
 
 <dd></dd>
 
-### -field <b>dwTeleservice</b>
+### -field dwTeleservice
 
 <dd></dd>
 
-### -field <b>dwMsgID</b>
+### -field dwMsgID
 
 <dd></dd>
 
-### -field <b>dwMsgLang</b>
+### -field dwMsgLang
 
 <dd></dd>
 
-### -field <b>dwMsgEncoding</b>
+### -field dwMsgEncoding
 
 <dd></dd>
 
-### -field <b>cbHdrLength</b>
+### -field cbHdrLength
 
 <dd></dd>
 
-### -field <b>cchMsgLength</b>
+### -field cchMsgLength
 
 <dd></dd>
 
-### -field <b>rgbHdr</b>
+### -field rgbHdr
 
 <dd></dd>
 
-### -field <b>rgbMsg</b>
+### -field rgbMsg
 
 <dd></dd>
 </dl>

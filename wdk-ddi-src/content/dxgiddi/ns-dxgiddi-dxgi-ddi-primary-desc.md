@@ -57,7 +57,7 @@ typedef struct DXGI_DDI_PRIMARY_DESC {
 ## -struct-fields
 <dl>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A valid bitwise OR of any of the following values that indicates how the resource is displayed. </p>
@@ -96,19 +96,19 @@ typedef struct DXGI_DDI_PRIMARY_DESC {
 <p> </p>
 </dd>
 
-### -field <b>VidPnSourceId</b>
+### -field VidPnSourceId
 
 <dd>
 <p>[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the primary surface is created on. </p>
 </dd>
 
-### -field <b>ModeDesc</b>
+### -field ModeDesc
 
 <dd>
 <p>[in] A <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-mode-desc.md">DXGI_DDI_MODE_DESC</a> structure that describes the display mode. </p>
 </dd>
 
-### -field <b>DriverFlags</b>
+### -field DriverFlags
 
 <dd>
 <p>[out] A valid bitwise OR of values that indicate how the driver can display the resource. </p>

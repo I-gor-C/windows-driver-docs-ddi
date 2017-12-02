@@ -66,57 +66,57 @@ typedef struct _DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA {
 ## -struct-fields
 <dl>
 
-### -field <b>StandardAllocationType</b>
+### -field StandardAllocationType
 
 <dd>
 <p>[in] A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-standardallocation-type.md">D3DKMDT_STANDARDALLOCATION_TYPE</a>-typed value that identifies the type of standard allocation to describe.</p>
 </dd>
 
-### -field <b>pCreateSharedPrimarySurfaceData</b>
+### -field pCreateSharedPrimarySurfaceData
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-sharedprimarysurfacedata.md">D3DKMDT_SHAREDPRIMARYSURFACEDATA</a> structure, if <b>StandardAllocationType</b> specifies D3DKMDT_STANDARDALLOCATION_SHAREDPRIMARYSURFACE.</p>
 </dd>
 
-### -field <b>pCreateShadowSurfaceData</b>
+### -field pCreateShadowSurfaceData
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-shadowsurfacedata.md">D3DKMDT_SHADOWSURFACEDATA</a> structure, if <b>StandardAllocationType</b> specifies D3DKMDT_STANDARDALLOCATION_SHADOWSURFACE.</p>
 </dd>
 
-### -field <b>pCreateStagingSurfaceData</b>
+### -field pCreateStagingSurfaceData
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-stagingsurfacedata.md">D3DKMDT_STAGINGSURFACEDATA</a> structure, if <b>StandardAllocationType</b> specifies D3DKMDT_STANDARDALLOCATION_STAGINGSURFACE.</p>
 </dd>
 
-### -field <b>pCreateGdiSurfaceData</b>
+### -field pCreateGdiSurfaceData
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-gdisurfacedata.md">D3DKMDT_GDISURFACEDATA</a> structure, only available if <b>StandardAllocationType</b> specifies D3DKMDT_STANDARDALLOCATION_GDISURFACE.</p>
 <p>This member is available beginning with Windows 7.</p>
 </dd>
 
-### -field <b>pAllocationPrivateDriverData</b>
+### -field pAllocationPrivateDriverData
 
 <dd>
 <p>[in/out] A pointer to a block of allocation private data that describes the standard allocation type; otherwise, this member is <b>NULL</b>. The allocation private data that the display miniport driver's <a href="display.dxgkddigetstandardallocationdriverdata">DxgkDdiGetStandardAllocationDriverData</a> function returns depends on the type that the driver requests in <b>StandardAllocationType</b>.</p>
 </dd>
 
-### -field <b>AllocationPrivateDriverDataSize</b>
+### -field AllocationPrivateDriverDataSize
 
 <dd>
 <p>[out] The size, in bytes, of the allocation private data that <b>pAllocationPrivateDriverData</b> points to. If the driver sets <b>pAllocationPrivateDriverData</b> to <b>NULL</b>, the driver should set <b>AllocationPrivateDriverDataSize</b> to the size of the buffer that the driver requires to describe the given standard allocation type.</p>
 <p>If the driver does not use private data for each allocation for standard allocations types, the driver can set <b>AllocationPrivateDriverDataSize</b> to zero. </p>
 </dd>
 
-### -field <b>pResourcePrivateDriverData</b>
+### -field pResourcePrivateDriverData
 
 <dd>
 <p>[in/out] A pointer to a block of resource private data that describes the standard allocation type; otherwise, this member is <b>NULL</b>. The resource private data that the display miniport driver's <a href="display.dxgkddigetstandardallocationdriverdata">DxgkDdiGetStandardAllocationDriverData</a> function returns depends on the type that the driver requests in <b>StandardAllocationType</b>.</p>
 </dd>
 
-### -field <b>ResourcePrivateDriverDataSize</b>
+### -field ResourcePrivateDriverDataSize
 
 <dd>
 <p>[out] The size, in bytes, of the resource private data that <b>pResourcePrivateDriverData</b> points to. If the driver sets <b>pResourcePrivateDriverData</b> to <b>NULL</b>, the driver should set <b>ResourcePrivateDriverDataSize</b> to the size of the buffer that the driver requires to describe the given standard allocation type.</p>

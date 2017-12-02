@@ -59,19 +59,19 @@ NTSTATUS KStrAllocator(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Specifies the IRP for which the buffer allocation request is being made.</p>
 </dd>
 
-### -param <i>BufferSize</i> [in]
+### -param BufferSize [in]
 
 <dd>
 <p>Specifies the size of buffer needed. This size covers all parameters in the request.</p>
 </dd>
 
-### -param <i>InputOperation</i> [in]
+### -param InputOperation [in]
 
 <dd>
 <p>Set to <b>TRUE</b> if this is an input operation, meaning that on successful return, the Irp-&gt;IoStatus.Information field will contain the number of bytes to copy back to the original input buffer.</p>

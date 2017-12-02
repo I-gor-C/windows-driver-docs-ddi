@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>The <code>IMiniportWaveRTStreamNotification</code> interface is supported in Windows Vista and later Windows operating systems, and it augments the <a href="..\portcls\nn-portcls-iminiportwavertstream.md">IMiniportWaveRTStream</a> interface, providing additional methods to facilitate DMA driver event notifications. </p>
-<p>To access the <code>IMiniportWaveRTStreamNotification</code> interface, the <a href="NULL">WaveRT port driver</a> calls the <a href="audio.iminiportwavert_newstream">IMiniportWaveRT::NewStream</a> method and receives an <a href="..\portcls\nn-portcls-iminiportwavertstream.md">IMiniportWaveRTStream</a> interface. The WaveRT port driver then queries the <b>IMiniportWaveRTStream</b> interface, uisng QueryInterface, and receives the <code>IMiniportWaveRTStreamNotification</code> interface. </p>
+<p>To access the <code>IMiniportWaveRTStreamNotification</code> interface, the <a href="https://msdn.microsoft.com/d25e37e2-2e29-4bf9-8150-221ebef88c87">WaveRT port driver</a> calls the <a href="audio.iminiportwavert_newstream">IMiniportWaveRT::NewStream</a> method and receives an <a href="..\portcls\nn-portcls-iminiportwavertstream.md">IMiniportWaveRTStream</a> interface. The WaveRT port driver then queries the <b>IMiniportWaveRTStream</b> interface, uisng QueryInterface, and receives the <code>IMiniportWaveRTStreamNotification</code> interface. </p>
 <p><code>IMiniportWaveRTStreamNotification</code> inherits from the <b>IUnknown</b> interface.</p>
 
 

@@ -54,7 +54,7 @@ typedef struct _D3DDDIARG_CREATELIGHT {
 ## -struct-fields
 <dl>
 
-### -field <b>Index</b>
+### -field Index
 
 <dd>
 <p>[in] The index of the light to create.</p>

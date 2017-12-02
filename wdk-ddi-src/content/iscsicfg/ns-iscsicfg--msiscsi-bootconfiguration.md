@@ -63,61 +63,61 @@ typedef struct _MSiSCSI_BootConfiguration {
 ## -struct-fields
 <dl>
 
-### -field <b>LUN</b>
+### -field LUN
 
 <dd>
 <p>The logical unit number (LUN) that identifies the logical unit on the target that functions as a boot device.</p>
 </dd>
 
-### -field <b>SecurityFlags</b>
+### -field SecurityFlags
 
 <dd>
 <p>A bitwise OR of security flags that indicate the security requirements of the boot device. For a list of possible flags for this member, see <a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>.</p>
 </dd>
 
-### -field <b>UsernameSize</b>
+### -field UsernameSize
 
 <dd>
 <p>The size, in bytes, of the string in <b>Username</b>.</p>
 </dd>
 
-### -field <b>PasswordSize</b>
+### -field PasswordSize
 
 <dd>
 <p>The size, in bytes, of the string in <b>Password</b>.</p>
 </dd>
 
-### -field <b>DiscoverBootDevice</b>
+### -field DiscoverBootDevice
 
 <dd>
 <p>A Boolean value that indicates whether the system should dynamically discover the boot device. If this member is <b>TRUE</b>, the system should dynamically discover the boot device. </p>
 </dd>
 
-### -field <b>InitiatorNode</b>
+### -field InitiatorNode
 
 <dd>
 <p>The iSCSI name of the initiator node to use for connecting to the boot device. If this member is <b>NULL</b>, the HBA can choose any initiator node. The iSCSI name for the initiator uniquely identifies the initiator anywhere in the world. For more information about how to specify this name, see the <i>iSCSI </i>specification that is published by the Internet Engineering Task Force (IETF) of the IP storage working group. </p>
 </dd>
 
-### -field <b>TargetName</b>
+### -field TargetName
 
 <dd>
 <p>The iSCSI name for the target that contains the boot device.</p>
 </dd>
 
-### -field <b>TargetPortal</b>
+### -field TargetPortal
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-targetportal.md">ISCSI_TargetPortal</a> structure that specifies the portal to use for the connection.</p>
 </dd>
 
-### -field <b>LoginOptions</b>
+### -field LoginOptions
 
 <dd>
 <p>A <a href="..\iscsidef\ns-iscsidef--iscsi-loginoptions.md">ISCSI_LoginOptions</a> structure that specifies the characteristics of the logon session to establish with the boot device.</p>
 </dd>
 
-### -field <b>Username</b>
+### -field Username
 
 <dd>
 <p>A variable length array of characters that specifies the user name to use with the challenge handshake authentication protocol (CHAP). The user name is also known as the <i>CHAP name</i> (CHAP_N). The initiator uses the CHAP name to authenticate the target.</p>

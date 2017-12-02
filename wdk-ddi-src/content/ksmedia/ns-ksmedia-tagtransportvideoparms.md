@@ -55,13 +55,13 @@ typedef struct tagTRANSPORTVIDEOPARMS {
 ## -struct-fields
 <dl>
 
-### -field <b>OutputMode</b>
+### -field OutputMode
 
 <dd>
 <p>Specifies the video output mode. For example ED_PLAYBACK.</p>
 </dd>
 
-### -field <b>Input</b>
+### -field Input
 
 <dd>
 <p>Specifies the video input to use. For example, specify zero to use the first (zeroth) video input.</p>

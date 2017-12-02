@@ -54,7 +54,7 @@ typedef struct HBA_LUID {
 ## -struct-fields
 <dl>
 
-### -field <b>buffer</b>
+### -field buffer
 
 <dd>
 <p>Contains a buffer that holds the identification descriptor.</p>

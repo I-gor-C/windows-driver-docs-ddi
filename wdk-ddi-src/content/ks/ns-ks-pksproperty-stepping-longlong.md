@@ -55,13 +55,13 @@ typedef struct {
 ## -struct-fields
 <dl>
 
-### -field <b>SteppingDelta</b>
+### -field SteppingDelta
 
 <dd>
 <p>Specifies the step value that should be used to create legal values within the range defined in <b>Bounds</b>.</p>
 </dd>
 
-### -field <b>Bounds</b>
+### -field Bounds
 
 <dd>
 <p>Specifies a structure of type <a href="stream.ksproperty_bounds_longlong">KSPROPERTY_BOUNDS_LONGLONG</a> that specifies the range of values over which the <b>SteppingDelta</b> is valid.</p>

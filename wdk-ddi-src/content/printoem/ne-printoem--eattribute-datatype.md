@@ -65,67 +65,67 @@ typedef enum _EATTRIBUTE_DATATYPE {
 ## -enum-fields
 <dl>
 
-### -field <a id="kADT_UNKNOWN"></a><a id="kadt_unknown"></a><a id="KADT_UNKNOWN"></a><b>kADT_UNKNOWN</b>
+### -field kADT_UNKNOWN
 
 <dd>
 <p>The attribute is of unknown type.</p>
 </dd>
 
-### -field <a id="kADT_BOOL"></a><a id="kadt_bool"></a><a id="KADT_BOOL"></a><b>kADT_BOOL</b>
+### -field kADT_BOOL
 
 <dd>
 <p>The attribute is of type BOOL.</p>
 </dd>
 
-### -field <a id="kADT_INT"></a><a id="kadt_int"></a><a id="KADT_INT"></a><b>kADT_INT</b>
+### -field kADT_INT
 
 <dd>
 <p>The attribute is of type INT.</p>
 </dd>
 
-### -field <a id="kADT_LONG"></a><a id="kadt_long"></a><a id="KADT_LONG"></a><b>kADT_LONG</b>
+### -field kADT_LONG
 
 <dd>
 <p>The attribute is of type LONG.</p>
 </dd>
 
-### -field <a id="kADT_DWORD"></a><a id="kadt_dword"></a><a id="KADT_DWORD"></a><b>kADT_DWORD</b>
+### -field kADT_DWORD
 
 <dd>
 <p>The attribute is of type DWORD.</p>
 </dd>
 
-### -field <a id="kADT_ASCII"></a><a id="kadt_ascii"></a><a id="KADT_ASCII"></a><b>kADT_ASCII</b>
+### -field kADT_ASCII
 
 <dd>
 <p>The attribute is an ASCII string. </p>
 </dd>
 
-### -field <a id="kADT_UNICODE"></a><a id="kadt_unicode"></a><a id="KADT_UNICODE"></a><b>kADT_UNICODE</b>
+### -field kADT_UNICODE
 
 <dd>
 <p>The attribute is a Unicode string.</p>
 </dd>
 
-### -field <a id="kADT_BINARY"></a><a id="kadt_binary"></a><a id="KADT_BINARY"></a><b>kADT_BINARY</b>
+### -field kADT_BINARY
 
 <dd>
 <p>The attribute consists of binary data.</p>
 </dd>
 
-### -field <a id="kADT_SIZE"></a><a id="kadt_size"></a><a id="KADT_SIZE"></a><b>kADT_SIZE</b>
+### -field kADT_SIZE
 
 <dd>
 <p>The attribute is of type SIZE.</p>
 </dd>
 
-### -field <a id="kADT_RECT"></a><a id="kadt_rect"></a><a id="KADT_RECT"></a><b>kADT_RECT</b>
+### -field kADT_RECT
 
 <dd>
 <p>The attribute is of type RECT.</p>
 </dd>
 
-### -field <a id="kADT_CUSTOMSIZEPARAMS"></a><a id="kadt_customsizeparams"></a><a id="KADT_CUSTOMSIZEPARAMS"></a><b>kADT_CUSTOMSIZEPARAMS</b>
+### -field kADT_CUSTOMSIZEPARAMS
 
 <dd>
 <p>The attribute is an array containing CUSTOMPARAM_MAX (a constant defined in printoem.h) elements. Each element is a <a href="..\printoem\ns-printoem--customsizeparam.md">CUSTOMSIZEPARAM</a> structure.</p>

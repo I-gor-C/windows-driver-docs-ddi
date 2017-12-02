@@ -83,9 +83,9 @@ Otherwise, Status to the appropriate error condition as a NTSTATUS code.
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 ## -remarks
-<p>The driver must first allocate or reuse an I/O request packet (<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>). You can use the <a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a> function to specifically allocate an IOCTL IRP. You can also use general-purpose IRP creation and initialization functions, such as <a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>, <a href="..\wdm\nf-wdm-ioreuseirp.md">IoReuseIrp</a>, or <a href="..\wdm\nf-wdm-ioinitializeirp.md">IoInitializeIrp</a>. For more information about IRP allocation, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542899">Creating IRPs for Lower-Level Drivers</a>.</p>
+<p>The driver must first allocate or reuse an I/O request packet (<a href="..\wdm\ns-wdm--irp.md">IRP</a>). You can use the <a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a> function to specifically allocate an IOCTL IRP. You can also use general-purpose IRP creation and initialization functions, such as <a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>, <a href="..\wdm\nf-wdm-ioreuseirp.md">IoReuseIrp</a>, or <a href="..\wdm\nf-wdm-ioinitializeirp.md">IoInitializeIrp</a>. For more information about IRP allocation, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542899">Creating IRPs for Lower-Level Drivers</a>.</p>
 
-<p>The driver must then set the  members of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure as described in the following table.</p>
+<p>The driver must then set the  members of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> structure as described in the following table.</p>
 
 <p>The address of the caller-allocated buffer that will contain the configuration data to be read.</p>
 
@@ -118,7 +118,7 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 
 <p>The device object of the lower driver.</p>
 
-<p>The address of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> that was previously allocated and initialized. For more information, see <a href="#preparing_an_i_o_request_packet_structure">Preparing an I/O Request Packet (IRP) Structure</a>.</p>
+<p>The address of the <a href="..\wdm\ns-wdm--irp.md">IRP</a> that was previously allocated and initialized. For more information, see <a href="#preparing_an_i_o_request_packet_structure">Preparing an I/O Request Packet (IRP) Structure</a>.</p>
 
 <p>      When the <b>IOCTL_VPCI_READ_BLOCK</b> IOCTL request is completed, the <b>Status</b> member of the caller-allocated <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure is set to one of the values in the following table.</p>
 
@@ -200,7 +200,7 @@ This operating system runs within the Hyper-V parent partition.</p>
 <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
+<a href="..\wdm\ns-wdm--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550766">IRP_MJ_INTERNAL_DEVICE_CONTROL</a>

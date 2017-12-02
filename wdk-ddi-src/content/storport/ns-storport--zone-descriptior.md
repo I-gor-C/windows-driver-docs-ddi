@@ -68,67 +68,67 @@ typedef struct _ZONE_DESCRIPTIOR {
 ## -struct-fields
 <dl>
 
-### -field <b>ZoneType</b>
+### -field ZoneType
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reset</b>
+### -field Reset
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Non_Seq</b>
+### -field Non_Seq
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>ZoneCondition</b>
+### -field ZoneCondition
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>ZoneLength</b>
+### -field ZoneLength
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>ZoneStartLBA</b>
+### -field ZoneStartLBA
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>WritePointerLBA</b>
+### -field WritePointerLBA
 
 <dd>
 <p>N/A</p>
 </dd>
 
-### -field <b>Reserved4</b>
+### -field Reserved4
 
 <dd>
 <p>N/A</p>

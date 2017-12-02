@@ -55,7 +55,7 @@ VOID ExInitializeRundownProtection(
 ## -parameters
 <dl>
 
-### -param <i>RunRef</i> [out]
+### -param RunRef [out]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/jj569379">EX_RUNDOWN_REF</a> structure that is to be initialized. The allocation must be 4-byte aligned on 32-bit platforms, and 8-byte aligned on 64-bit platforms. For more information, see Remarks.</p>

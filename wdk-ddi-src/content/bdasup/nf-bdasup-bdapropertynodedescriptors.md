@@ -56,19 +56,19 @@ NTSTATUS BdaPropertyNodeDescriptors(
 ## -parameters
 <dl>
 
-### -param <i>Irp</i> [in]
+### -param Irp [in]
 
 <dd>
 <p>Points to the IRP for the request to retrieve the list of nodes. The BDA minidriver receives this IRP with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564324">KSPROPERTY_BDA_NODE_DESCRIPTORS</a> request.</p>
 </dd>
 
-### -param <i>pKSProperty</i> [in]
+### -param pKSProperty [in]
 
 <dd>
 <p>Points to a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property and request type of the property request.</p>
 </dd>
 
-### -param <i>pguidProperty</i> [out, optional]
+### -param pguidProperty [out, optional]
 
 <dd>
 <p>Points to an array that receives the list of GUIDs for the nodes in a template topology. </p>

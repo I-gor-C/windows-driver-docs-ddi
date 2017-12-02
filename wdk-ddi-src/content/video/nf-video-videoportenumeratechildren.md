@@ -56,13 +56,13 @@ VP_STATUS VideoPortEnumerateChildren(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> [in]
+### -param HwDeviceExtension [in]
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>Reserved</i> [in]
+### -param Reserved [in]
 
 <dd>
 <p>Must be set to <b>NULL</b>.</p>

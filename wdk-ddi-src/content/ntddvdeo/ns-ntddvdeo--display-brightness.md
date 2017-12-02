@@ -56,19 +56,19 @@ typedef struct _DISPLAY_BRIGHTNESS {
 ## -struct-fields
 <dl>
 
-### -field <b>ucDisplayPolicy</b>
+### -field ucDisplayPolicy
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>ucACBrightness</b>
+### -field ucACBrightness
 
 <dd>
 <p>Reserved for system use.</p>
 </dd>
 
-### -field <b>ucDCBrightness</b>
+### -field ucDCBrightness
 
 <dd>
 <p>Reserved for system use.</p>

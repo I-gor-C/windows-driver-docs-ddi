@@ -56,19 +56,19 @@ typedef struct _DXGKARG_GETSCANLINE {
 ## -struct-fields
 <dl>
 
-### -field <b>VidPnTargetId</b>
+### -field VidPnTargetId
 
 <dd>
 <p>[in] The identifier of a display adapter's video present target.</p>
 </dd>
 
-### -field <b>InVerticalBlank</b>
+### -field InVerticalBlank
 
 <dd>
 <p>[out] A Boolean variable that receives <b>TRUE</b> if the video present target is in vertical blanking mode and <b>FALSE</b> if the video present target is not in vertical blanking mode.</p>
 </dd>
 
-### -field <b>ScanLine</b>
+### -field ScanLine
 
 <dd>
 <p>[out] The video present target's current scan line.</p>

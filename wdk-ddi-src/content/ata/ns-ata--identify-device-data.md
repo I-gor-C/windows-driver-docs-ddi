@@ -298,54 +298,54 @@ typedef struct _IDENTIFY_DEVICE_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>GeneralConfiguration</b>
+### -field GeneralConfiguration
 
 <dd>
 <dl>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Retired3</b>
+### -field Retired3
 
 <dd>
 <p>This member is no longer used.</p>
 </dd>
 
-### -field <b>ResponseIncomplete</b>
+### -field ResponseIncomplete
 
 <dd>
 <p>Indicates that the response was incomplete.</p>
 </dd>
 
-### -field <b>Retired2</b>
+### -field Retired2
 
 <dd>
 <p>This member is no longer used.</p>
 </dd>
 
-### -field <b>FixedDevice</b>
+### -field FixedDevice
 
 <dd>
 <p>Indicates when set to 1 that the device is fixed.</p>
 </dd>
 
-### -field <b>RemovableMedia</b>
+### -field RemovableMedia
 
 <dd>
 <p>Indicates when set to 1 that the media is removable.</p>
 </dd>
 
-### -field <b>Retired1</b>
+### -field Retired1
 
 <dd>
 <p>This member is no longer used.</p>
 </dd>
 
-### -field <b>DeviceType</b>
+### -field DeviceType
 
 <dd>
 <p>Indicates when set to 1 that the device is an ATA device.</p>
@@ -353,144 +353,144 @@ typedef struct _IDENTIFY_DEVICE_DATA {
 </dl>
 </dd>
 
-### -field <b>NumCylinders</b>
+### -field NumCylinders
 
 <dd>
 <p>Indicates the number of cylinders on the device.</p>
 </dd>
 
-### -field <b>ReservedWord2</b>
+### -field ReservedWord2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>NumHeads</b>
+### -field NumHeads
 
 <dd>
 <p>Number of logical heads on the device.</p>
 </dd>
 
-### -field <b>Retired1</b>
+### -field Retired1
 
 <dd>
 <p>This member is no longer used.</p>
 </dd>
 
-### -field <b>NumSectorsPerTrack</b>
+### -field NumSectorsPerTrack
 
 <dd>
 <p>Indicates the number of sectors per track.</p>
 </dd>
 
-### -field <b>VendorUnique1</b>
+### -field VendorUnique1
 
 <dd>
 <p>Contains the first ID of the device's vendor.</p>
 </dd>
 
-### -field <b>SerialNumber</b>
+### -field SerialNumber
 
 <dd>
 <p>Contains the serial number of the device.</p>
 </dd>
 
-### -field <b>Retired2</b>
+### -field Retired2
 
 <dd>
 <p>This member is no longer used.</p>
 </dd>
 
-### -field <b>Obsolete1</b>
+### -field Obsolete1
 
 <dd>
 <p>This member is obsolete. Do not use.</p>
 </dd>
 
-### -field <b>FirmwareRevision</b>
+### -field FirmwareRevision
 
 <dd>
 <p>Contains the revision number of the device's firmware.</p>
 </dd>
 
-### -field <b>ModelNumber</b>
+### -field ModelNumber
 
 <dd>
 <p>Contains the device's model number.</p>
 </dd>
 
-### -field <b>MaximumBlockTransfer</b>
+### -field MaximumBlockTransfer
 
 <dd>
 <p>Contains the maximum number of blocks allowed in a single transfer.</p>
 </dd>
 
-### -field <b>VendorUnique2</b>
+### -field VendorUnique2
 
 <dd>
 <p>Contains the second ID of the device's vendor.</p>
 </dd>
 
-### -field <b>ReservedWord48</b>
+### -field ReservedWord48
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Capabilities</b>
+### -field Capabilities
 
 <dd>
 <dl>
 
-### -field <b>ReservedByte49</b>
+### -field ReservedByte49
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>DmaSupported</b>
+### -field DmaSupported
 
 <dd>
 <p>Indicates that the device supports DMA operations.</p>
 </dd>
 
-### -field <b>LbaSupported</b>
+### -field LbaSupported
 
 <dd>
 <p>Indicates that the device supports logical block addressing.</p>
 </dd>
 
-### -field <b>IordyDisable</b>
+### -field IordyDisable
 
 <dd>
 <p>Indicates when set to 1 that I/O channel ready is disabled for the device.</p>
 </dd>
 
-### -field <b>IordySupported</b>
+### -field IordySupported
 
 <dd>
 <p>Indicates when set to 1 that I/O channel ready is supported by the device.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>StandybyTimerSupport</b>
+### -field StandybyTimerSupport
 
 <dd>
 <p>Indicates when set to 1 that the device supports standby timers.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>ReservedWord50</b>
+### -field ReservedWord50
 
 <dd>
 <p>Reserved.</p>
@@ -498,322 +498,322 @@ typedef struct _IDENTIFY_DEVICE_DATA {
 </dl>
 </dd>
 
-### -field <b>ObsoleteWords51</b>
+### -field ObsoleteWords51
 
 <dd>
 <p>This member is obsolete. Do not use.</p>
 </dd>
 
-### -field <b>TranslationFieldsValid</b>
+### -field TranslationFieldsValid
 
 <dd>
 <p>Contains a bitfield whose bits indicate which of the bytes in the identify data package contain valid address translation information. For more information about how this bitfield is defined, see the <i>ATA/ATAPI specification</i>.</p>
 </dd>
 
-### -field <b>Reserved3</b>
+### -field Reserved3
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>NumberOfCurrentCylinders</b>
+### -field NumberOfCurrentCylinders
 
 <dd>
 <p>Indicates the number of cylinders on the device.</p>
 </dd>
 
-### -field <b>NumberOfCurrentHeads</b>
+### -field NumberOfCurrentHeads
 
 <dd>
 <p>Indicates the number of heads on the device.</p>
 </dd>
 
-### -field <b>CurrentSectorsPerTrack</b>
+### -field CurrentSectorsPerTrack
 
 <dd>
 <p>Indicates the number of sectors per track.</p>
 </dd>
 
-### -field <b>CurrentSectorCapacity</b>
+### -field CurrentSectorCapacity
 
 <dd>
 <p>Indicates the number of sectors on the device.</p>
 </dd>
 
-### -field <b>CurrentMultiSectorSetting</b>
+### -field CurrentMultiSectorSetting
 
 <dd>
 <p>Indicates the multisector setting.</p>
 </dd>
 
-### -field <b>MultiSectorSettingValid</b>
+### -field MultiSectorSettingValid
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the multisector setting is valid.</p>
 </dd>
 
-### -field <b>ReservedByte59</b>
+### -field ReservedByte59
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>UserAddressableSectors</b>
+### -field UserAddressableSectors
 
 <dd>
 <p>Indicates the total number of user-addressable sectors.</p>
 </dd>
 
-### -field <b>ObsoleteWord62</b>
+### -field ObsoleteWord62
 
 <dd>
 <p>This member is obsolete. Do not use.</p>
 </dd>
 
-### -field <b>MultiWordDMASupport</b>
+### -field MultiWordDMASupport
 
 <dd>
 <p>Indicates which DMA modes the device supports.</p>
 </dd>
 
-### -field <b>MultiWordDMAActive</b>
+### -field MultiWordDMAActive
 
 <dd>
 <p>Indicates which DMA modes are currently selected.</p>
 </dd>
 
-### -field <b>AdvancedPIOModes</b>
+### -field AdvancedPIOModes
 
 <dd></dd>
 
-### -field <b>ReservedByte64</b>
+### -field ReservedByte64
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>MinimumMWXferCycleTime</b>
+### -field MinimumMWXferCycleTime
 
 <dd>
 <p>Indicates the minimum multiword DMA transfer cycle time per word.</p>
 </dd>
 
-### -field <b>RecommendedMWXferCycleTime</b>
+### -field RecommendedMWXferCycleTime
 
 <dd>
 <p>Indicates the recommended multiword DMA transfer cycle time per word.</p>
 </dd>
 
-### -field <b>MinimumPIOCycleTime</b>
+### -field MinimumPIOCycleTime
 
 <dd>
 <p>Indicates the minimum PIO transfer cycle time without flow control.</p>
 </dd>
 
-### -field <b>MinimumPIOCycleTimeIORDY</b>
+### -field MinimumPIOCycleTimeIORDY
 
 <dd>
 <p>Indicates the minimum PIO transfer cycle time with IORDY flow control.</p>
 </dd>
 
-### -field <b>ReservedWords69</b>
+### -field ReservedWords69
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>QueueDepth</b>
+### -field QueueDepth
 
 <dd>
 <p>Indicates the maximum queue depth.</p>
 </dd>
 
-### -field <b>ReservedWord75</b>
+### -field ReservedWord75
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>ReservedWords76</b>
+### -field ReservedWords76
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>MajorRevision</b>
+### -field MajorRevision
 
 <dd>
 <p>Indicates the device's major revision number.</p>
 </dd>
 
-### -field <b>MinorRevision</b>
+### -field MinorRevision
 
 <dd>
 <p>Indicates the device's minor revision number.</p>
 </dd>
 
-### -field <b>CommandSetSupport</b>
+### -field CommandSetSupport
 
 <dd>
 <dl>
 
-### -field <b>SmartCommands</b>
+### -field SmartCommands
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the SMART feature set.</p>
 </dd>
 
-### -field <b>SecurityMode</b>
+### -field SecurityMode
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the security mode feature set.</p>
 </dd>
 
-### -field <b>PowerManagement</b>
+### -field PowerManagement
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the mandatory power management feature set.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>WriteCache</b>
+### -field WriteCache
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports a write cache.</p>
 </dd>
 
-### -field <b>LookAhead</b>
+### -field LookAhead
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports lookahead.</p>
 </dd>
 
-### -field <b>ReleaseInterrupt</b>
+### -field ReleaseInterrupt
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports release interrupt.</p>
 </dd>
 
-### -field <b>ServiceInterrupt</b>
+### -field ServiceInterrupt
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports service interrupt.</p>
 </dd>
 
-### -field <b>DeviceReset</b>
+### -field DeviceReset
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the device reset command.</p>
 </dd>
 
-### -field <b>HostProtectedArea</b>
+### -field HostProtectedArea
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the host protected area feature set.</p>
 </dd>
 
-### -field <b>Obsolete1</b>
+### -field Obsolete1
 
 <dd>
 <p>This member is obsolete. Do not use.</p>
 </dd>
 
-### -field <b>WriteBuffer</b>
+### -field WriteBuffer
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the write buffer command.</p>
 </dd>
 
-### -field <b>ReadBuffer</b>
+### -field ReadBuffer
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the read buffer command.</p>
 </dd>
 
-### -field <b>Nop</b>
+### -field Nop
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the NOP command.</p>
 </dd>
 
-### -field <b>Obsolete2</b>
+### -field Obsolete2
 
 <dd>
 <p>Obsolete. Do not use.</p>
 </dd>
 
-### -field <b>DownloadMicrocode</b>
+### -field DownloadMicrocode
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the DOWNLOAD MICROCODE command.</p>
 </dd>
 
-### -field <b>DmaQueued</b>
+### -field DmaQueued
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports READ/WRITE DMA QUEUED command.</p>
 </dd>
 
-### -field <b>Cfa</b>
+### -field Cfa
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the CFA feature set.</p>
 </dd>
 
-### -field <b>AdvancedPm</b>
+### -field AdvancedPm
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the advanced power management feature set.</p>
 </dd>
 
-### -field <b>Msn</b>
+### -field Msn
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the media status notification feature set.</p>
 </dd>
 
-### -field <b>PowerUpInStandby</b>
+### -field PowerUpInStandby
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports power-up in standby feature set.</p>
 </dd>
 
-### -field <b>ManualPowerUp</b>
+### -field ManualPowerUp
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the SET FEATURES subcommand required to spin up the device after power-up.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>SetMax</b>
+### -field SetMax
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the SET MAX security extension command.</p>
 </dd>
 
-### -field <b>Acoustics</b>
+### -field Acoustics
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the automatic acoustic management feature set.</p>
 </dd>
 
-### -field <b>BigLba</b>
+### -field BigLba
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the 48-bit address feature set.</p>
 </dd>
 
-### -field <b>Resrved3</b>
+### -field Resrved3
 
 <dd>
 <p>Reserved.</p>
@@ -821,7 +821,7 @@ typedef struct _IDENTIFY_DEVICE_DATA {
 </dl>
 </dd>
 
-### -field <b>CommandSetActive</b>
+### -field CommandSetActive
 
 <dd>
 <dl>
@@ -830,163 +830,163 @@ typedef struct _IDENTIFY_DEVICE_DATA {
 </dl>
 <dl>
 
-### -field <b>SmartCommands</b>
+### -field SmartCommands
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the SMART feature set.</p>
 </dd>
 
-### -field <b>SecurityMode</b>
+### -field SecurityMode
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the security mode feature set.</p>
 </dd>
 
-### -field <b>PowerManagement</b>
+### -field PowerManagement
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the mandatory power management feature set.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>WriteCache</b>
+### -field WriteCache
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports a write cache.</p>
 </dd>
 
-### -field <b>LookAhead</b>
+### -field LookAhead
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports lookahead.</p>
 </dd>
 
-### -field <b>ReleaseInterrupt</b>
+### -field ReleaseInterrupt
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports release interrupt.</p>
 </dd>
 
-### -field <b>ServiceInterrupt</b>
+### -field ServiceInterrupt
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports service interrupt.</p>
 </dd>
 
-### -field <b>DeviceReset</b>
+### -field DeviceReset
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the device reset command.</p>
 </dd>
 
-### -field <b>HostProtectedArea</b>
+### -field HostProtectedArea
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the host protected area feature set.</p>
 </dd>
 
-### -field <b>Obsolete1</b>
+### -field Obsolete1
 
 <dd>
 <p>This member is obsolete. Do not use.</p>
 </dd>
 
-### -field <b>WriteBuffer</b>
+### -field WriteBuffer
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the write buffer command.</p>
 </dd>
 
-### -field <b>ReadBuffer</b>
+### -field ReadBuffer
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the read buffer command.</p>
 </dd>
 
-### -field <b>Nop</b>
+### -field Nop
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the NOP command.</p>
 </dd>
 
-### -field <b>Obsolete2</b>
+### -field Obsolete2
 
 <dd>
 <p>Obsolete. Do not use.</p>
 </dd>
 
-### -field <b>DownloadMicrocode</b>
+### -field DownloadMicrocode
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the DOWNLOAD MICROCODE command.</p>
 </dd>
 
-### -field <b>DmaQueued</b>
+### -field DmaQueued
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports READ/WRITE DMA QUEUED command.</p>
 </dd>
 
-### -field <b>Cfa</b>
+### -field Cfa
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the CFA feature set.</p>
 </dd>
 
-### -field <b>AdvancedPm</b>
+### -field AdvancedPm
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the advanced power management feature set.</p>
 </dd>
 
-### -field <b>Msn</b>
+### -field Msn
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the media status notification feature set.</p>
 </dd>
 
-### -field <b>PowerUpInStandby</b>
+### -field PowerUpInStandby
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports power-up in standby feature set.</p>
 </dd>
 
-### -field <b>ManualPowerUp</b>
+### -field ManualPowerUp
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the SET FEATURES subcommand required to spin up the device after power-up.</p>
 </dd>
 
-### -field <b>Reserved2</b>
+### -field Reserved2
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>SetMax</b>
+### -field SetMax
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the SET MAX security extension command.</p>
 </dd>
 
-### -field <b>Acoustics</b>
+### -field Acoustics
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the automatic acoustic management feature set.</p>
 </dd>
 
-### -field <b>BigLba</b>
+### -field BigLba
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports the 48-bit address feature set.</p>
 </dd>
 
-### -field <b>Resrved3</b>
+### -field Resrved3
 
 <dd>
 <p>Reserved.</p>
@@ -994,68 +994,68 @@ typedef struct _IDENTIFY_DEVICE_DATA {
 </dl>
 </dd>
 
-### -field <b>UltraDMASupport</b>
+### -field UltraDMASupport
 
 <dd>
 <p>Contains a bitmap indicating which ultraDMA modes the device supports.</p>
 </dd>
 
-### -field <b>UltraDMAActive</b>
+### -field UltraDMAActive
 
 <dd>
 <p>Contains a bitmap indicating which ultraDMA modes are selected.</p>
 </dd>
 
-### -field <b>ReservedWord89</b>
+### -field ReservedWord89
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>HardwareResetResult</b>
+### -field HardwareResetResult
 
 <dd>
 <p>Indicates the result of a hardware reset. For more information about the values assigned to this member, see the <i>ATA/ATAP specification</i>.</p>
 </dd>
 
-### -field <b>CurrentAcousticValue</b>
+### -field CurrentAcousticValue
 
 <dd>
 <p>Indicates the current acoustic management value.</p>
 </dd>
 
-### -field <b>RecommendedAcousticValue</b>
+### -field RecommendedAcousticValue
 
 <dd>
 <p>Contain the device vendor's recommended acoustic management value.</p>
 </dd>
 
-### -field <b>ReservedWord95</b>
+### -field ReservedWord95
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>Max48BitLBA</b>
+### -field Max48BitLBA
 
 <dd>
 <p>Contains the maximum user LBA for the 48-bit address feature set.</p>
 </dd>
 
-### -field <b>StreamingTransferTime</b>
+### -field StreamingTransferTime
 
 <dd></dd>
 
-### -field <b>ReservedWord105</b>
+### -field ReservedWord105
 
 <dd></dd>
 
-### -field <b>PhysicalLogicalSectorSize</b>
+### -field PhysicalLogicalSectorSize
 
 <dd>
 <dl>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
@@ -1063,32 +1063,32 @@ typedef struct _IDENTIFY_DEVICE_DATA {
 </dl>
 </dd>
 
-### -field <b>InterSeekDelay</b>
+### -field InterSeekDelay
 
 <dd></dd>
 
-### -field <b>WorldWideName</b>
+### -field WorldWideName
 
 <dd></dd>
 
-### -field <b>ReservedForWorldWideName128</b>
+### -field ReservedForWorldWideName128
 
 <dd></dd>
 
-### -field <b>ReservedForTlcTechnicalReport</b>
+### -field ReservedForTlcTechnicalReport
 
 <dd></dd>
 
-### -field <b>WordsPerLogicalSector</b>
+### -field WordsPerLogicalSector
 
 <dd></dd>
 
-### -field <b>CommandSetSupportExt</b>
+### -field CommandSetSupportExt
 
 <dd>
 <dl>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
@@ -1096,12 +1096,12 @@ typedef struct _IDENTIFY_DEVICE_DATA {
 </dl>
 </dd>
 
-### -field <b>CommandSetActiveExt</b>
+### -field CommandSetActiveExt
 
 <dd>
 <dl>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
@@ -1109,27 +1109,27 @@ typedef struct _IDENTIFY_DEVICE_DATA {
 </dl>
 </dd>
 
-### -field <b>ReservedForExpandedSupportandActive</b>
+### -field ReservedForExpandedSupportandActive
 
 <dd></dd>
 
-### -field <b>MsnSupport</b>
+### -field MsnSupport
 
 <dd>
 <p>Indicates when <b>TRUE</b> that the device supports media status notification.</p>
 </dd>
 
-### -field <b>ReservedWord1274</b>
+### -field ReservedWord1274
 
 <dd></dd>
 
-### -field <b>SecurityStatus</b>
+### -field SecurityStatus
 
 <dd>
 <p>Contains a bitmap that indicates the security status. For more information about the meaning of each individual bit, see the <i>ATA/ATAPI specification</i>.</p>
 <dl>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
@@ -1137,75 +1137,75 @@ typedef struct _IDENTIFY_DEVICE_DATA {
 </dl>
 </dd>
 
-### -field <b>ReservedWord129</b>
+### -field ReservedWord129
 
 <dd>
 <p>Reserved.</p>
 </dd>
 
-### -field <b>CfaPowerModel</b>
+### -field CfaPowerModel
 
 <dd>
 </dd>
 
-### -field <b>ReservedForCfaWord161</b>
+### -field ReservedForCfaWord161
 
 <dd>
 <p>Words 161-168</p>
 </dd>
 
-### -field <b>DataSetManagementFeature</b>
+### -field DataSetManagementFeature
 
 <dd>
 </dd>
 
-### -field <b>ReservedForCfaWord170</b>
+### -field ReservedForCfaWord170
 
 <dd>
 <p>Words 170-175</p>
 </dd>
 
-### -field <b>CurrentMediaSerialNumber</b>
+### -field CurrentMediaSerialNumber
 
 <dd>
 <p>Words 176-205</p>
 </dd>
 
-### -field <b>ReservedWord206</b>
+### -field ReservedWord206
 
 <dd>
 <p>Word 206</p>
 </dd>
 
-### -field <b>ReservedWord207</b>
+### -field ReservedWord207
 
 <dd>
 <p>Words 207-208</p>
 </dd>
 
-### -field <b>BlockAlignment</b>
+### -field BlockAlignment
 
 <dd>
 </dd>
 
-### -field <b>WriteReadVerifySectorCountMode3Only</b>
+### -field WriteReadVerifySectorCountMode3Only
 
 <dd>
 <p>Words 210-211</p>
 </dd>
 
-### -field <b>WriteReadVerifySectorCountMode2Only</b>
+### -field WriteReadVerifySectorCountMode2Only
 
 <dd>
 <p>Words 212-213</p>
 </dd>
 
-### -field <b>NVCacheCapabilities</b>
+### -field NVCacheCapabilities
 
 <dd>
 <dl>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved.</p>
@@ -1213,40 +1213,40 @@ typedef struct _IDENTIFY_DEVICE_DATA {
 </dl>
 </dd>
 
-### -field <b>NVCacheSizeLSW</b>
+### -field NVCacheSizeLSW
 
 <dd></dd>
 
-### -field <b>NVCacheSizeMSW</b>
+### -field NVCacheSizeMSW
 
 <dd></dd>
 
-### -field <b>NominalMediaRotationRate</b>
+### -field NominalMediaRotationRate
 
 <dd></dd>
 
-### -field <b>ReservedWord218</b>
+### -field ReservedWord218
 
 <dd></dd>
 
-### -field <b>NVCacheOptions</b>
+### -field NVCacheOptions
 
 <dd>
 </dd>
 
-### -field <b>ReservedWord220</b>
+### -field ReservedWord220
 
 <dd>
 <p>Words 220-254</p>
 </dd>
 
-### -field <b>Signature</b>
+### -field Signature
 
 <dd>
 <p>Indicates the disk signature.</p>
 </dd>
 
-### -field <b>CheckSum</b>
+### -field CheckSum
 
 <dd>
 <p>Indicates the checksum.</p>

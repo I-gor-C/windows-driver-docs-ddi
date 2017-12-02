@@ -54,7 +54,7 @@ typedef struct _D3DDDICB_DESTROYHWQUEUE {
 ## -struct-fields
 <dl>
 
-### -field <b>hHwQueue</b>
+### -field hHwQueue
 
 <dd>
 <p>Handle to the queue to destroy.</p>

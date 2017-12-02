@@ -54,7 +54,7 @@ VOID KsFlushClient(
 ## -parameters
 <dl>
 
-### -param <i>Pin</i> [in]
+### -param Pin [in]
 
 <dd>
 <p>Pointer to the <a href="..\ksproxy\nn-ksproxy-ikspin~r1.md">IKsPin</a> interface for the pin from which to flush information.</p>

@@ -67,20 +67,20 @@ typedef struct _SCO_INDICATION_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>ConnectionHandle</b>
+### -field ConnectionHandle
 
 <dd>
 <p>A connection handle to the remote device. This handle is only valid for notifications that arrive
      over an established SCO connection.</p>
 </dd>
 
-### -field <b>BtAddress</b>
+### -field BtAddress
 
 <dd>
 <p>The Bluetooth address of the remote device.</p>
 </dd>
 
-### -field <b>Parameters</b>
+### -field Parameters
 
 <dd>
 <dl>
@@ -89,20 +89,20 @@ typedef struct _SCO_INDICATION_PARAMETERS {
 </dl>
 <dl>
 
-### -field <b>Connect</b>
+### -field Connect
 
 <dd>
 <p>The structure that contains parameters for the 
       <b>ScoIndicationRemoteConnectSCO_INDICATION_CODE</b> event.</p>
 <dl>
 
-### -field <b>Request</b>
+### -field Request
 
 <dd>
 <p>The structure that contains the parameters for the SCO connection request.</p>
 <dl>
 
-### -field <b>LinkType</b>
+### -field LinkType
 
 <dd>
 <p>A value from the 
@@ -114,14 +114,14 @@ typedef struct _SCO_INDICATION_PARAMETERS {
 </dl>
 </dd>
 
-### -field <b>Disconnect</b>
+### -field Disconnect
 
 <dd>
 <p>The structure that contains parameters for the 
       <b>ScoIndicationRemoteDisconnectSCO_INDICATION_CODE</b> event.</p>
 <dl>
 
-### -field <b>Reason</b>
+### -field Reason
 
 <dd>
 <p>A 
@@ -129,7 +129,7 @@ typedef struct _SCO_INDICATION_PARAMETERS {
        indicates why the SCO connection was terminated.</p>
 </dd>
 
-### -field <b>CloseNow</b>
+### -field CloseNow
 
 <dd>
 <p>A Boolean value that a profile driver can set to indicate whether the SCO connection to the

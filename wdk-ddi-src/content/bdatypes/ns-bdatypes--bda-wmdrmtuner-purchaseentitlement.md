@@ -57,19 +57,19 @@ typedef struct _BDA_WMDRMTUNER_PURCHASEENTITLEMENT {
 ## -struct-fields
 <dl>
 
-### -field <b>lResult</b>
+### -field lResult
 
 <dd></dd>
 
-### -field <b>ulDescrambleStatus</b>
+### -field ulDescrambleStatus
 
 <dd></dd>
 
-### -field <b>ulCaptureTokenLength</b>
+### -field ulCaptureTokenLength
 
 <dd></dd>
 
-### -field <b>argbCaptureTokenBuffer</b>
+### -field argbCaptureTokenBuffer
 
 <dd></dd>
 </dl>

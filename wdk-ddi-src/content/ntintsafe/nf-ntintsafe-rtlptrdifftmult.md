@@ -56,19 +56,19 @@ NTSTATUS RtlPtrdiffTMult(
 ## -parameters
 <dl>
 
-### -param <i>Multiplicand</i> [in]
+### -param Multiplicand [in]
 
 <dd>
 <p>The value to be multiplied by <i>Multiplier</i>.</p>
 </dd>
 
-### -param <i>Multiplier</i> [in]
+### -param Multiplier [in]
 
 <dd>
 <p>The value by which to multiply <i>Multiplicand</i>.</p>
 </dd>
 
-### -param <i>pResult</i> [out]
+### -param pResult [out]
 
 <dd>
 <p>A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.</p>

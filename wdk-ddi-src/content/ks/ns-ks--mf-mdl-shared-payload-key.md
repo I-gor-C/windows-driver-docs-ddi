@@ -59,25 +59,25 @@ typedef union _MF_MDL_SHARED_PAYLOAD_KEY {
 ## -struct-fields
 <dl>
 
-### -field <b>combined</b>
+### -field combined
 
 <dd>
 <p>This member is used internally by the operating system.</p>
 <dl>
 
-### -field <b>pHandle</b>
+### -field pHandle
 
 <dd>
 <p>This member is used internally by the operating system.</p>
 </dd>
 
-### -field <b>fHandle</b>
+### -field fHandle
 
 <dd>
 <p>This member is used internally by the operating system.</p>
 </dd>
 
-### -field <b>uPayload</b>
+### -field uPayload
 
 <dd>
 <p>This member is used internally by the operating system.</p>
@@ -85,7 +85,7 @@ typedef union _MF_MDL_SHARED_PAYLOAD_KEY {
 </dl>
 </dd>
 
-### -field <b>GMDLHandle</b>
+### -field GMDLHandle
 
 <dd>
 <p>This structure is used internally by the operating system.</p>

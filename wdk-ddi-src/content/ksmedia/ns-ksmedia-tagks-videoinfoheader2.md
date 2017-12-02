@@ -68,37 +68,37 @@ typedef struct tagKS_VIDEOINFOHEADER2 {
 ## -struct-fields
 <dl>
 
-### -field <b>rcSource</b>
+### -field rcSource
 
 <dd>
 <p>Specifies a clipping rectangle that selects the portion of the active video signal to use. </p>
 </dd>
 
-### -field <b>rcTarget</b>
+### -field rcTarget
 
 <dd>
 <p>Specifies a rectangle that indicates what part of the target buffer to use.</p>
 </dd>
 
-### -field <b>dwBitRate</b>
+### -field dwBitRate
 
 <dd>
 <p>Specifies a value that indicates the video stream's appropriate data rate, in bits per second.</p>
 </dd>
 
-### -field <b>dwBitErrorRate</b>
+### -field dwBitErrorRate
 
 <dd>
 <p>Specifies a value that indicates the video stream's data error rate, in bit errors per second.</p>
 </dd>
 
-### -field <b>AvgTimePerFrame</b>
+### -field AvgTimePerFrame
 
 <dd>
 <p>Specifies the average time per frame, in 100-nanosecond units.</p>
 </dd>
 
-### -field <b>dwInterlaceFlags</b>
+### -field dwInterlaceFlags
 
 <dd>
 <p>Specifies interlace information. Undefined flags must be set to zero, or the connection may be rejected. This member can be set to one or more (logical OR) values that are defined in <i>ksmedia.h</i>:</p>
@@ -215,25 +215,25 @@ typedef struct tagKS_VIDEOINFOHEADER2 {
 <p> </p>
 </dd>
 
-### -field <b>dwCopyProtectFlags</b>
+### -field dwCopyProtectFlags
 
 <dd>
 <p>Specifies a KSCOPYPROTECTRestrictDuplication value (0x00000001) to indicate if duplication of a stream should be restricted. If undefined, specify zero or the connection will be rejected.</p>
 </dd>
 
-### -field <b>dwPictAspectRatioX</b>
+### -field dwPictAspectRatioX
 
 <dd>
 <p>Specifies the <i>x</i> dimension of the picture-aspect ratio (for example, 16 for a 16 × 9 display). The value is expressed in inches-by-inches, not pixels-by-pixels.</p>
 </dd>
 
-### -field <b>dwPictAspectRatioY</b>
+### -field dwPictAspectRatioY
 
 <dd>
 <p>Specifies the <i>y</i> dimension of the picture aspect ratio (for example, 9 for 16 × 9 display). The value is expressed in inches-by-inches, not pixels-by-pixels.</p>
 </dd>
 
-### -field <b>dwControlFlags</b>
+### -field dwControlFlags
 
 <dd>
 <p>In operating systems prior to Windows Vista, this member was named <b>dwReserved1</b> and was required to be zero. In Windows Vista, <b>dwReserved1</b> was combined in a union with a new member named <b>dwControlFlags</b>. If used, <b>dwControlFlags</b> contains a bitwise OR of the flags in the following table.</p>
@@ -282,19 +282,19 @@ typedef struct tagKS_VIDEOINFOHEADER2 {
 <p>See the Remarks section later in this topic for more information about <b>dwControlFlags</b>.</p>
 </dd>
 
-### -field <b>dwReserved1</b>
+### -field dwReserved1
 
 <dd>
 <p>This member is for backward compatibility. See <b>dwControlFlags </b>for more information.</p>
 </dd>
 
-### -field <b>dwReserved2</b>
+### -field dwReserved2
 
 <dd>
 <p>Reserved for system use. Must be set to zero or the connection will be rejected.</p>
 </dd>
 
-### -field <b>bmiHeader</b>
+### -field bmiHeader
 
 <dd>
 <p>Indicates a <a href="stream.ks_bitmapinfoheader">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information for the video image bitmap.</p>

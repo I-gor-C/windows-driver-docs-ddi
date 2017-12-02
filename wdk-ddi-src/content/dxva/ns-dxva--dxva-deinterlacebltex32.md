@@ -62,56 +62,56 @@ typedef struct _DXVA_DeinterlaceBltEx32 {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>Specifies the size of the structure, in bytes.</p>
 </dd>
 
-### -field <b>BackgroundColor</b>
+### -field BackgroundColor
 
 <dd>
 <p>Specifies a <a href="..\dxva\ns-dxva--dxva-ayuvsample2.md">DXVA_AYUVsample2</a> structure that identifies background color and opacity level. For Windows Server 2003 with SP1 and Windows XP with SP2, the opacity level is not used and should be ignored by the driver.</p>
 </dd>
 
-### -field <b>rcTarget</b>
+### -field rcTarget
 
 <dd>
 <p>Specifies a pointer to a <a href="display.rect">RECT</a> structure that describes the location within the destination surface to which the output image is written. Note that the output image is restricted to the pixels within the <b>rcTarget</b> rectangle--that is, every pixel within this rectangle must be written to; pixels outside this rectangle must not be modified. </p>
 </dd>
 
-### -field <b>rtTarget</b>
+### -field rtTarget
 
 <dd>
 <p>Identifies the location of the output frame within the sequence of input frames. If only deinterlacing is performed, the target time should coincide with either the starting display time of a sample, as defined in the <a href="..\dxva\ns-dxva--dxva-videosample32.md">DXVA_VideoSample32</a> structure, or the midpoint between the starting display time and the ending display time. For more information, see Remarks.</p>
 <p>If a frame-rate conversion is requested, the <b>rtTarget</b> time can be different from any of the <b>rtStart</b> times of the samples.</p>
 </dd>
 
-### -field <b>NumSourceSurfaces</b>
+### -field NumSourceSurfaces
 
 <dd>
 <p>Specifies the number of valid surfaces passed in the <b>Source</b> array.</p>
 </dd>
 
-### -field <b>Alpha</b>
+### -field Alpha
 
 <dd>
 <p>Specifies the planar-transparency value of the output image as it is written to the destination surface. For Windows Server 2003 with SP1 and Windows XP with SP2, this value is always 1.0F, which indicates that the overall image is opaque and that no alpha blending on the overall image is required.</p>
 </dd>
 
-### -field <b>Source</b>
+### -field Source
 
 <dd>
 <p>Specifies an array of DXVA_VideoSample32 structures that describe the input samples that are required for the deinterlacing, frame-rate conversion, and substream-compositing operations. For information about how input samples are arranged in this array, see <a href="https://msdn.microsoft.com/99110b1a-1511-44f5-a4bb-a5e38fd41fff">Input Buffer Order</a>.</p>
 </dd>
 
-### -field <b>DestinationFormat</b>
+### -field DestinationFormat
 
 <dd>
 <p>Specifies format information for the destination surface. For Windows Server 2003 with SP1 and Windows XP with SP2, this member is set to 0.</p>
 </dd>
 
-### -field <b>DestinationFlags</b>
+### -field DestinationFlags
 
 <dd>
 <p>Specifies a collection of flags that indicate changes in the current destination surface from the previous destination surface. This member is a bitwise-OR of one or more of the flags in the <a href="..\dxva\ne-dxva--dxva-destinationflags.md">DXVA_DestinationFlags</a> enumeration type.</p>

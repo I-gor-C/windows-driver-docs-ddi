@@ -7,7 +7,7 @@ old-location: netvista\ndismallocatenetbuffersglist.htm
 old-project: netvista
 ms.assetid: 3fd8d121-a249-433a-a93d-4027a4bfcb61
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NdisMAllocateNetBufferSGList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ NDIS_STATUS NdisMAllocateNetBufferSGList(
 ## -parameters
 <dl>
 
-### -param <i>NdisMiniportDmaHandle</i> [in]
+### -param NdisMiniportDmaHandle [in]
 
 <dd>
 <p>A handle to a context area that NDIS uses to manage a DMA resource. The caller obtained this
@@ -71,7 +71,7 @@ NDIS_STATUS NdisMAllocateNetBufferSGList(
      NdisMRegisterScatterGatherDma</a> function.</p>
 </dd>
 
-### -param <i>NetBuffer</i> [in]
+### -param NetBuffer [in]
 
 <dd>
 <p>A pointer to a NET_BUFFER structure. 
@@ -82,7 +82,7 @@ NDIS_STATUS NdisMAllocateNetBufferSGList(
      <a href="..\ndis\ns-ndis--net-buffer-data.md">NET_BUFFER_DATA</a> structure.</p>
 </dd>
 
-### -param <i>Context</i> [in]
+### -param Context [in]
 
 <dd>
 <p>A pointer to a context area that the caller created. HAL passes this pointer to 
@@ -90,7 +90,7 @@ NDIS_STATUS NdisMAllocateNetBufferSGList(
      creates the scatter/gather list. The caller can use this context area for its own purposes.</p>
 </dd>
 
-### -param <i>Flags</i> [in]
+### -param Flags [in]
 
 <dd>
 <p>NDIS flags that can be combined with an OR operation. To clear all the flags, set this member to
@@ -102,7 +102,7 @@ NDIS_STATUS NdisMAllocateNetBufferSGList(
      operations, should clear this flag.</p>
 </dd>
 
-### -param <i>ScatterGatherListBuffer</i> [in, optional]
+### -param ScatterGatherListBuffer [in, optional]
 
 <dd>
 <p>If not <b>NULL</b>, 
@@ -110,7 +110,7 @@ NDIS_STATUS NdisMAllocateNetBufferSGList(
      scatter/gather list. If <b>NULL</b>, NDIS allocates storage for the scatter/gather list.</p>
 </dd>
 
-### -param <i>ScatterGatherListBufferSize</i> [in]
+### -param ScatterGatherListBufferSize [in]
 
 <dd>
 <p>If the 
@@ -260,18 +260,18 @@ NDIS_STATUS NdisMAllocateNetBufferSGList(
    NdisMRegisterScatterGatherDma</a>
 </dt>
 <dt>
-<a href="NULL">Allocating and Freeing Scatter/Gather Lists</a>
+<a href="netvista.allocating_and_freeing_scatter_gather_lists">Allocating and Freeing Scatter/Gather Lists</a>
 </dt>
 <dt>
-<a href="NULL">Miniport Driver Scatter/Gather DMA</a>
+<a href="netvista.scatter_gather_dma2">Miniport Driver Scatter/Gather DMA</a>
 </dt>
 <dt>
-<a href="NULL">NDIS Scatter/Gather DMA</a>
+<a href="netvista.ndis_scatter_gather_dma">NDIS Scatter/Gather DMA</a>
 </dt>
 <dt>
-<a href="NULL">Registering and Deregistering DMA Channels</a>
+<a href="netvista.registering_and_deregistering_dma_channels">Registering and Deregistering DMA Channels</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateNetBufferSGList function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateNetBufferSGList function%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

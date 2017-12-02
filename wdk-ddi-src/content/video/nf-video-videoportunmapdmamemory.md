@@ -59,25 +59,25 @@ BOOLEAN VideoPortUnmapDmaMemory(
 ## -parameters
 <dl>
 
-### -param <i>HwDeviceExtension</i> 
+### -param HwDeviceExtension 
 
 <dd>
 <p>Pointer to the miniport driver's device extension.</p>
 </dd>
 
-### -param <i>VirtualAddress</i> 
+### -param VirtualAddress 
 
 <dd>
 <p>Pointer to a virtual address within the mapped range to be released.</p>
 </dd>
 
-### -param <i>ProcessHandle</i> 
+### -param ProcessHandle 
 
 <dd>
 <p>Is the handle to the current process.</p>
 </dd>
 
-### -param <i>BoardMemoryHandle</i> 
+### -param BoardMemoryHandle 
 
 <dd>
 <p>Is the handle to adapter's memory.</p>

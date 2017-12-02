@@ -56,13 +56,13 @@ typedef struct _GETINFO_MEMORY {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSize</b>
+### -field dwSize
 
 <dd>
 <p>Specifies the size, in bytes, of the GETINFO_MEMORY structure. Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
-### -field <b>dwRemainingMemory</b>
+### -field dwRemainingMemory
 
 <dd>
 <p>Specifies the amount, in bytes, of currently available printer memory. Supplied by Unidrv's <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function.</p>

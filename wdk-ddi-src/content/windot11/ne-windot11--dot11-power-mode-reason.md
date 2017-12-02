@@ -7,7 +7,7 @@ old-location: netvista\dot11_power_mode_reason.htm
 old-project: netvista
 ms.assetid: 0B8402B5-CFDA-402F-BA7A-A44478333C04
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: PRINTER_EVENT_ATTRIBUTES_INFO, PRINTER_EVENT_ATTRIBUTES_INFO, *PPRINTER_EVENT_ATTRIBUTES_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,37 +58,37 @@ typedef enum _DOT11_POWER_MODE_REASON {
 ## -enum-fields
 <dl>
 
-### -field <a id="dot11_power_mode_reason_no_change"></a><a id="DOT11_POWER_MODE_REASON_NO_CHANGE"></a><b>dot11_power_mode_reason_no_change</b>
+### -field dot11_power_mode_reason_no_change
 
 <dd>
 <p>Device is initially in this state and has not changed since.</p>
 </dd>
 
-### -field <a id="dot11_power_mode_reason_noncompliant_AP"></a><a id="dot11_power_mode_reason_noncompliant_ap"></a><a id="DOT11_POWER_MODE_REASON_NONCOMPLIANT_AP"></a><b>dot11_power_mode_reason_noncompliant_AP</b>
+### -field dot11_power_mode_reason_noncompliant_AP
 
 <dd>
 <p>AP is not compliant. As to be in CAM.</p>
 </dd>
 
-### -field <a id="dot11_power_mode_reason_legacy_WFD_device"></a><a id="dot11_power_mode_reason_legacy_wfd_device"></a><a id="DOT11_POWER_MODE_REASON_LEGACY_WFD_DEVICE"></a><b>dot11_power_mode_reason_legacy_WFD_device</b>
+### -field dot11_power_mode_reason_legacy_WFD_device
 
 <dd>
 <p>WFD device is legacy.</p>
 </dd>
 
-### -field <a id="dot11_power_mode_reason_compliant_AP"></a><a id="dot11_power_mode_reason_compliant_ap"></a><a id="DOT11_POWER_MODE_REASON_COMPLIANT_AP"></a><b>dot11_power_mode_reason_compliant_AP</b>
+### -field dot11_power_mode_reason_compliant_AP
 
 <dd>
 <p>AP is compliant.</p>
 </dd>
 
-### -field <a id="dot11_power_mode_reason_compliant_WFD_device"></a><a id="dot11_power_mode_reason_compliant_wfd_device"></a><a id="DOT11_POWER_MODE_REASON_COMPLIANT_WFD_DEVICE"></a><b>dot11_power_mode_reason_compliant_WFD_device</b>
+### -field dot11_power_mode_reason_compliant_WFD_device
 
 <dd>
 <p>All connected WFD device can do PSM.</p>
 </dd>
 
-### -field <a id="dot11_power_mode_reason_others"></a><a id="DOT11_POWER_MODE_REASON_OTHERS"></a><b>dot11_power_mode_reason_others</b>
+### -field dot11_power_mode_reason_others
 
 <dd>
 <p>Other reason.</p>

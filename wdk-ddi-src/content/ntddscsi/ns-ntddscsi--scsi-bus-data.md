@@ -56,19 +56,19 @@ typedef struct _SCSI_BUS_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>NumberOfLogicalUnits</b>
+### -field NumberOfLogicalUnits
 
 <dd>
 <p>Contains the number of logical units on the bus for which inquiry data is being retrieved. </p>
 </dd>
 
-### -field <b>InitiatorBusId</b>
+### -field InitiatorBusId
 
 <dd>
 <p>Contains the SCSI bus ID for the adapter. </p>
 </dd>
 
-### -field <b>InquiryDataOffset</b>
+### -field InquiryDataOffset
 
 <dd>
 <p>Contains an offset from the beginning of the SCSI_ADAPTER_BUS_INFO structure to the inquiry data.</p>

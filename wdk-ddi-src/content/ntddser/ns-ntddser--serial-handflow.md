@@ -57,7 +57,7 @@ typedef struct _SERIAL_HANDFLOW {
 ## -struct-fields
 <dl>
 
-### -field <b>ControlHandShake</b>
+### -field ControlHandShake
 
 <dd>
 <p>A bitmask that specifies the control lines that the serial port uses for flow control. This member is set to zero or to the bitwise-OR or one or more of the following flags.</p>
@@ -99,7 +99,7 @@ typedef struct _SERIAL_HANDFLOW {
 <p>SerCx2 supports the SERIAL_CTS_HANDSHAKE flag, and may or may not support the other six flags defined for this member, depending on the serial controller driver and the capabilities of the serial controller hardware. SerCx supports only the first four flags in the preceding table. Serial.sys supports all of the flags in the preceding table.</p>
 </dd>
 
-### -field <b>FlowReplace</b>
+### -field FlowReplace
 
 <dd>
 <p>A bitmask that specifies flow control behavior. This member is set to zero or to the bitwise-OR or one or more of the following flags.</p>
@@ -149,13 +149,13 @@ typedef struct _SERIAL_HANDFLOW {
 <p>SerCx2 supports the SERIAL_RTS_CONTROL and SERIAL_RTS_HANDSHAKE flags, but typically does not support the other six flags defined for this member, depending on the serial controller driver and the capabilities of the serial controller hardware. SerCx supports only the SERIAL_RTS_CONTROL and SERIAL_RTS_HANDSHAKE flags. Serial.sys supports all of the flags in the preceding table.</p>
 </dd>
 
-### -field <b>XonLimit</b>
+### -field XonLimit
 
 <dd>
 <p>XON limit. When the number of characters in the internal receive buffer falls below the XON limit, the serial controller driver uses the flow control signals to tell the sender to resume sending characters.</p>
 </dd>
 
-### -field <b>XoffLimit</b>
+### -field XoffLimit
 
 <dd>
 <p>XOFF limit. When the number of characters in the internal receive buffer reaches the XOFF limit, the serial controller driver uses the flow control signals to tell the sender to stop sending characters.</p>

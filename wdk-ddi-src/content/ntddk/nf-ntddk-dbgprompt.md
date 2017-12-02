@@ -56,19 +56,19 @@ ULONG DbgPrompt(
 ## -parameters
 <dl>
 
-### -param <i>Prompt</i> [in]
+### -param Prompt [in]
 
 <dd>
 <p>A pointer to a NULL-terminated constant character string that the debugger will display as a user prompt. The maximum size of this string is 512 characters.</p>
 </dd>
 
-### -param <i>Response</i> [out]
+### -param Response [out]
 
 <dd>
 <p>A pointer to a character array buffer that receives the user's response, including a terminating newline character. The maximum size of this buffer is 512 characters.</p>
 </dd>
 
-### -param <i>MaximumResponseLength</i> [in]
+### -param MaximumResponseLength [in]
 
 <dd>
 <p>The size, in characters, of the buffer that receives the user's response. This size is the maximum number of characters that the routine will return.</p>

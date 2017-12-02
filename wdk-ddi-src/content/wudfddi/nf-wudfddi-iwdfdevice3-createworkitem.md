@@ -7,7 +7,7 @@ old-location: wdf\iwdfdevice3_createworkitem.htm
 old-project: wdf
 ms.assetid: B34EABF4-C659-4DB4-AEC6-94F544D79221
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: IWDFDevice3, CreateWorkItem, IWDFDevice3::CreateWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ HRESULT CreateWorkItem(
 ## -parameters
 <dl>
 
-### -param <i>pConfig</i> [in]
+### -param pConfig [in]
 
 <dd>
 <p>A pointer to a caller-allocated <a href="..\wudfworkitem\ns-wudfworkitem--wudf-workitem-config.md">WUDF_WORKITEM_CONFIG</a> structure that the driver must have already initialized by calling <a href="..\wudfworkitem\nf-wudfworkitem-wudf-workitem-config-init.md">WUDF_WORKITEM_CONFIG_INIT</a>.</p>
 </dd>
 
-### -param <i>pParentObject</i> [in, optional]
+### -param pParentObject [in, optional]
 
 <dd>
 <p>A pointer to the parent object interface or NULL.</p>
 </dd>
 
-### -param <i>ppWorkItem</i> [out]
+### -param ppWorkItem [out]
 
 <dd>
 <p>A pointer to a buffer that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfworkitem.md">IWDFWorkItem</a> interface for the new WorkItem object.</p>
@@ -155,4 +155,4 @@ HRESULT CreateWorkItem(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice3::CreateWorkItem method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice3::CreateWorkItem method%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

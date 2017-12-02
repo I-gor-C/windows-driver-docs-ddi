@@ -7,7 +7,7 @@ old-location: netvista\rilsupsvcinfo_2.htm
 old-project: netvista
 ms.assetid: b3b86cf8-0e0c-4ed1-9d8c-6f2fef00b9cd
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILSUPSVCINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,79 +73,79 @@ typedef struct _RILSUPSVCINFO {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwParams</b>
+### -field dwParams
 
 <dd></dd>
 
-### -field <b>dwExecutor</b>
+### -field dwExecutor
 
 <dd></dd>
 
-### -field <b>fFromNetwork</b>
+### -field fFromNetwork
 
 <dd></dd>
 
-### -field <b>dwFailureReason</b>
+### -field dwFailureReason
 
 <dd></dd>
 
-### -field <b>dwSupSvcAction</b>
+### -field dwSupSvcAction
 
 <dd></dd>
 
-### -field <b>dwCallForwardingReason</b>
+### -field dwCallForwardingReason
 
 <dd></dd>
 
-### -field <b>dwCallBarringType</b>
+### -field dwCallBarringType
 
 <dd></dd>
 
-### -field <b>dwSupSvcType</b>
+### -field dwSupSvcType
 
 <dd></dd>
 
-### -field <b>dwInfoClasses</b>
+### -field dwInfoClasses
 
 <dd></dd>
 
-### -field <b>aiIdentifier</b>
+### -field aiIdentifier
 
 <dd></dd>
 
-### -field <b>szCallBarringPassword</b>
+### -field szCallBarringPassword
 
 <dd></dd>
 
-### -field <b>szNewCallBarringPassword</b>
+### -field szNewCallBarringPassword
 
 <dd></dd>
 
-### -field <b>callForwardSettings</b>
+### -field callForwardSettings
 
 <dd></dd>
 
-### -field <b>callerIdSettings</b>
+### -field callerIdSettings
 
 <dd></dd>
 
-### -field <b>dialedIdSettings</b>
+### -field dialedIdSettings
 
 <dd></dd>
 
-### -field <b>hideIdSettings</b>
+### -field hideIdSettings
 
 <dd></dd>
 
-### -field <b>hideConnectedIdSettings</b>
+### -field hideConnectedIdSettings
 
 <dd></dd>
 
-### -field <b>supServiceData</b>
+### -field supServiceData
 
 <dd></dd>
 </dl>

@@ -55,13 +55,13 @@ void IoTransferActivityId(
 ## -parameters
 <dl>
 
-### -param <i>ActivityId</i> [in]
+### -param ActivityId [in]
 
 <dd>
 <p>The source activity ID.</p>
 </dd>
 
-### -param <i>RelatedActivityId</i> [in]
+### -param RelatedActivityId [in]
 
 <dd>
 <p>The new activity ID to be transferred from the source activity ID.</p>

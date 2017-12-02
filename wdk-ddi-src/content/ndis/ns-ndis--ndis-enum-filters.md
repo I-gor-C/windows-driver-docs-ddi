@@ -7,7 +7,7 @@ old-location: netvista\ndis_enum_filters.htm
 old-project: netvista
 ms.assetid: 0f57e226-dd60-4e62-8622-bfab5c66f537
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_ENUM_FILTERS, NDIS_ENUM_FILTERS, *PNDIS_ENUM_FILTERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ typedef struct _NDIS_ENUM_FILTERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -72,27 +72,27 @@ typedef struct _NDIS_ENUM_FILTERS {
      <b>Size</b> member to NDIS_SIZEOF_ENUM_FILTERS_REVISION_1.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>NumberOfFilters</b>
+### -field NumberOfFilters
 
 <dd>
 <p>The number of filter information structures that are included in the array in the 
      <b>Filter</b> member.</p>
 </dd>
 
-### -field <b>OffsetFirstFilter</b>
+### -field OffsetFirstFilter
 
 <dd>
 <p>The offset, in bytes, to the first member of array at the 
      <b>Filter</b> member from the beginning of the NDIS_ENUM_FILTERS structure.</p>
 </dd>
 
-### -field <b>Filter</b>
+### -field Filter
 
 <dd>
 <p>An array that contains zero or more 
@@ -146,4 +146,4 @@ typedef struct _NDIS_ENUM_FILTERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_ENUM_FILTERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_ENUM_FILTERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

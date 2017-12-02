@@ -58,13 +58,13 @@ NTSTATUS ZwQuerySecurityObject(
 ## -parameters
 <dl>
 
-### -param <i>Handle</i> [in]
+### -param Handle [in]
 
 <dd>
 <p>Handle for the object whose security descriptor is to be queried. This handle must have the access specified in the Meaning column of the table shown in the description of the <i>SecurityInformation</i> parameter. </p>
 </dd>
 
-### -param <i>SecurityInformation</i> [in]
+### -param SecurityInformation [in]
 
 <dd>
 <p>Pointer to a <a href="ifsk.security_information">SECURITY_INFORMATION</a> value specifying the information to be queried.</p>
@@ -109,19 +109,19 @@ NTSTATUS ZwQuerySecurityObject(
 <p> </p>
 </dd>
 
-### -param <i>SecurityDescriptor</i> [out]
+### -param SecurityDescriptor [out]
 
 <dd>
 <p>Caller-allocated buffer that <b>ZwQuerySecurityObject</b> fills with a copy of the specified security descriptor. The <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> structure is returned in self-relative format. </p>
 </dd>
 
-### -param <i>Length</i> [in]
+### -param Length [in]
 
 <dd>
 <p>Size, in bytes, of the buffer pointed to by <i>SecurityDescriptor</i>. </p>
 </dd>
 
-### -param <i>LengthNeeded</i> [out]
+### -param LengthNeeded [out]
 
 <dd>
 <p>Pointer to a caller-allocated variable that receives the number of bytes required to store the copied security descriptor. </p>

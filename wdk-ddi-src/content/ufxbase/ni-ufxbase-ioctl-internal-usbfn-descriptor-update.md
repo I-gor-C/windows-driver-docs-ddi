@@ -105,7 +105,7 @@ I/O Status block
 		  such as <b>STATUS_INVALID_PARAMETER</b> or <b>STATUS_INSUFFICIENT_RESOURCES</b>.</p>
 
 ## -remarks
-<p>UFX sends this IOCTL to the command queue created for the endpoint by <a href="buses.ufxendpointcreate">UfxEndpointCreate</a>.  The client driver is expected to update the configuration of the endpoint on the controller with the parameters contained in the endpoint descriptor.</p>
+<p>UFX sends this IOCTL to the command queue created for the endpoint by <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>.  The client driver is expected to update the configuration of the endpoint on the controller with the parameters contained in the endpoint descriptor.</p>
 
 ## -requirements
 <table>

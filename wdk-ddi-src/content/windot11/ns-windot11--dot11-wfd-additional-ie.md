@@ -7,7 +7,7 @@ old-location: netvista\_dot11_wfd_additional_ie.htm
 old-project: netvista
 ms.assetid: F381C8DB-DC69-4820-BDCE-2F1DF3482FDD
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: DOT11_WFD_ADDITIONAL_IE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct _DOT11_WFD_ADDITIONAL_IE {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Specifies the type, revision and size of the <b>DOT11_WFD_ADDITIONAL_IE</b> structure. The required settings for the members of <b>Header</b> are the following:</p>
@@ -84,37 +84,37 @@ typedef struct _DOT11_WFD_ADDITIONAL_IE {
 <p> </p>
 </dd>
 
-### -field <b>uBeaconIEsOffset</b>
+### -field uBeaconIEsOffset
 
 <dd>
 <p>The offset, in bytes, of an array of beacon IEs. This offset is relative to the start of the buffer that contains this structure. The Wi-Fi Direct (WFD) port must add these addition IEs to the beacon packets when it is acting as a Group Owner.</p>
 </dd>
 
-### -field <b>uBeaconIEsLength</b>
+### -field uBeaconIEsLength
 
 <dd>
 <p>The length, in bytes, of the additional IEs at  <b>uBeaconIEsOffset</b>. This member is ignored when the WFD port is operating in device or client mode.</p>
 </dd>
 
-### -field <b>uProbeResponseIEsOffset</b>
+### -field uProbeResponseIEsOffset
 
 <dd>
 <p>The offset, in bytes, of an array of probe response IEs. This offset is relative to the start of the buffer that contains this structure. The Wi-Fi Direct (WFD) port must add these addition IEs to the probe response packets when it is acting as a WFD device or Group Owner.</p>
 </dd>
 
-### -field <b>uProbeResponseIEsLength</b>
+### -field uProbeResponseIEsLength
 
 <dd>
 <p>The length, in bytes, of the additional IEs at  <b>uProbeResponseIEsOffset</b>. This member is ignored when the WFD port is operating in client mode.</p>
 </dd>
 
-### -field <b>uDefaultRequestIEsOffset</b>
+### -field uDefaultRequestIEsOffset
 
 <dd>
 <p>The offset, in bytes, of an array of probe request IEs. This offset is relative to the start of the buffer that contains this structure. The Wi-Fi Direct (WFD) port must add these addition IEs to the probe request packets it transmits.</p>
 </dd>
 
-### -field <b>uDefaultRequestIEsLength</b>
+### -field uDefaultRequestIEsLength
 
 <dd>
 <p>The length, in bytes, of the additional IEs at  <b>uDefaultRequestIEsOffset</b>.</p>

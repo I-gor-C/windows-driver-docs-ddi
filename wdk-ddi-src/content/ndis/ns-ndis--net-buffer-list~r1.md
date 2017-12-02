@@ -7,7 +7,7 @@ old-location: netvista\net_buffer_list.htm
 old-project: netvista
 ms.assetid: 3b61a424-33f8-4b33-aaef-f68f0026ce27
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NET_BUFFER_LIST, NET_BUFFER_LIST, *PNET_BUFFER_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ typedef struct _NET_BUFFER_LIST {
 ## -struct-fields
 <dl>
 
-### -field <b>NetBufferListHeader</b>
+### -field NetBufferListHeader
 
 <dd>
 <p>A 
@@ -76,7 +76,7 @@ typedef struct _NET_BUFFER_LIST {
      NET_BUFFER_LIST_HEADER</a> structure.</p>
 </dd>
 
-### -field <b>Context</b>
+### -field Context
 
 <dd>
 <p>A pointer to a 
@@ -113,7 +113,7 @@ typedef struct _NET_BUFFER_LIST {
 </dl>
 </dd>
 
-### -field <b>ParentNetBufferList</b>
+### -field ParentNetBufferList
 
 <dd>
 <p>If this NET_BUFFER_LIST structure is a clone of another NET_BUFFER_LIST structure, this member
@@ -123,32 +123,32 @@ typedef struct _NET_BUFFER_LIST {
      NdisAllocateCloneNetBufferList</a> function to create a clone.</p>
 </dd>
 
-### -field <b>NdisPoolHandle</b>
+### -field NdisPoolHandle
 
 <dd>
 <p>A pool handle that identifies the NET_BUFFER_LIST pool from which the NET_BUFFER_LIST structure
      was allocated.</p>
 </dd>
 
-### -field <b>NdisReserved</b>
+### -field NdisReserved
 
 <dd>
 <p>Reserved for use by NDIS.</p>
 </dd>
 
-### -field <b>ProtocolReserved</b>
+### -field ProtocolReserved
 
 <dd>
 <p>Reserved for use by protocol drivers.</p>
 </dd>
 
-### -field <b>MiniportReserved</b>
+### -field MiniportReserved
 
 <dd>
 <p>Reserved for use by miniport drivers.</p>
 </dd>
 
-### -field <b>Scratch</b>
+### -field Scratch
 
 <dd>
 <p>Data that is defined by the current owner of the NET_BUFFER_LIST structure. The current owner,
@@ -157,7 +157,7 @@ typedef struct _NET_BUFFER_LIST {
      NDIS or another driver can overwrite this member.</p>
 </dd>
 
-### -field <b>SourceHandle</b>
+### -field SourceHandle
 
 <dd>
 <p>A handle that NDIS provided to the driver in a binding or attaching operation by using one of the
@@ -166,7 +166,7 @@ typedef struct _NET_BUFFER_LIST {
 <p></p>
 <dl>
 
-### -field <a id="Miniport_Driver"></a><a id="miniport_driver"></a><a id="MINIPORT_DRIVER"></a>Miniport Driver
+### -field Miniport Driver
 
 <dd>
 <p>
@@ -174,7 +174,7 @@ typedef struct _NET_BUFFER_LIST {
 </p>
 </dd>
 
-### -field <a id="Protocol_Driver"></a><a id="protocol_driver"></a><a id="PROTOCOL_DRIVER"></a>Protocol Driver
+### -field Protocol Driver
 
 <dd>
 <p>
@@ -182,7 +182,7 @@ typedef struct _NET_BUFFER_LIST {
 </p>
 </dd>
 
-### -field <a id="Filter_Driver"></a><a id="filter_driver"></a><a id="FILTER_DRIVER"></a>Filter Driver
+### -field Filter Driver
 
 <dd>
 <p>
@@ -195,7 +195,7 @@ typedef struct _NET_BUFFER_LIST {
      structure.</p>
 </dd>
 
-### -field <b>NblFlags</b>
+### -field NblFlags
 
 <dd>
 <p>This member contains flags that can be combined with a bitwise OR operation.
@@ -212,13 +212,13 @@ typedef struct _NET_BUFFER_LIST {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_NBL_FLAGS_SEND_READ_ONLY"></a><a id="ndis_nbl_flags_send_read_only"></a>NDIS_NBL_FLAGS_SEND_READ_ONLY
+### -field NDIS_NBL_FLAGS_SEND_READ_ONLY
 
 <dd>
 <p>If set, the NET_BUFFER_LIST structure and its data are read-only for send operations.</p>
 </dd>
 
-### -field <a id="NDIS_NBL_FLAGS_RECV_READ_ONLY"></a><a id="ndis_nbl_flags_recv_read_only"></a>NDIS_NBL_FLAGS_RECV_READ_ONLY
+### -field NDIS_NBL_FLAGS_RECV_READ_ONLY
 
 <dd>
 <p>If set, the NET_BUFFER_LIST structure and its data are read-only for receive operations.</p>
@@ -228,21 +228,21 @@ typedef struct _NET_BUFFER_LIST {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_NBL_FLAGS_IS_IPV4"></a><a id="ndis_nbl_flags_is_ipv4"></a>NDIS_NBL_FLAGS_IS_IPV4
+### -field NDIS_NBL_FLAGS_IS_IPV4
 
 <dd>
 <p>All of the Ethernet frames in this NET_BUFFER_LIST structure are IPv4 frames. If this flag is
        set, the header-data split provider must not set the NDIS_NBL_FLAGS_IS_IPV6 flag.</p>
 </dd>
 
-### -field <a id="NDIS_NBL_FLAGS_IS_IPV6"></a><a id="ndis_nbl_flags_is_ipv6"></a>NDIS_NBL_FLAGS_IS_IPV6
+### -field NDIS_NBL_FLAGS_IS_IPV6
 
 <dd>
 <p>All of the Ethernet frames in this NET_BUFFER_LIST structure are IPv6 frames. If this flag is
        set, the header-data split provider must not set the NDIS_NBL_FLAGS_IS_IPV4 flag.</p>
 </dd>
 
-### -field <a id="NDIS_NBL_FLAGS_IS_TCP"></a><a id="ndis_nbl_flags_is_tcp"></a>NDIS_NBL_FLAGS_IS_TCP
+### -field NDIS_NBL_FLAGS_IS_TCP
 
 <dd>
 <p>All of the Ethernet frames in this NET_BUFFER_LIST structure are TCP frames. If this flag is
@@ -250,7 +250,7 @@ typedef struct _NET_BUFFER_LIST {
        set the NDIS_NBL_FLAGS_IS_IPV4 flag or the NDIS_NBL_FLAGS_IS_IPV6 flag.</p>
 </dd>
 
-### -field <a id="NDIS_NBL_FLAGS_IS_UDP"></a><a id="ndis_nbl_flags_is_udp"></a>NDIS_NBL_FLAGS_IS_UDP
+### -field NDIS_NBL_FLAGS_IS_UDP
 
 <dd>
 <p>All of the Ethernet frames in this NET_BUFFER_LIST structure are UDP frames. If this flag is
@@ -258,7 +258,7 @@ typedef struct _NET_BUFFER_LIST {
        set the NDIS_NBL_FLAGS_IS_IPV4 flag or the NDIS_NBL_FLAGS_IS_IPV6 flag.</p>
 </dd>
 
-### -field <a id="NDIS_NBL_FLAGS_IS_LOOPBACK_PACKET"></a><a id="ndis_nbl_flags_is_loopback_packet"></a>NDIS_NBL_FLAGS_IS_LOOPBACK_PACKET
+### -field NDIS_NBL_FLAGS_IS_LOOPBACK_PACKET
 
 <dd>
 <p>All of the packets that are associated with this NET_BUFFER_LIST structure are loopback
@@ -270,14 +270,14 @@ typedef struct _NET_BUFFER_LIST {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_NBL_FLAGS_HD_SPLIT"></a><a id="ndis_nbl_flags_hd_split"></a>NDIS_NBL_FLAGS_HD_SPLIT
+### -field NDIS_NBL_FLAGS_HD_SPLIT
 
 <dd>
 <p>The header and data are split in all of the Ethernet frames that are associated with this
        NET_BUFFER_LIST structure.</p>
 </dd>
 
-### -field <a id="NDIS_NBL_FLAGS_SPLIT_AT_UPPER_LAYER_PROTOCOL_HEADER"></a><a id="ndis_nbl_flags_split_at_upper_layer_protocol_header"></a>NDIS_NBL_FLAGS_SPLIT_AT_UPPER_LAYER_PROTOCOL_HEADER
+### -field NDIS_NBL_FLAGS_SPLIT_AT_UPPER_LAYER_PROTOCOL_HEADER
 
 <dd>
 <p>All of the Ethernet frames in this NET_BUFFER_LIST are split at the beginning of the upper layer
@@ -287,7 +287,7 @@ typedef struct _NET_BUFFER_LIST {
        NDIS_NBL_FLAGS_SPLIT_AT_UPPER_LAYER_PROTOCOL_PAYLOAD flag.</p>
 </dd>
 
-### -field <a id="NDIS_NBL_FLAGS_SPLIT_AT_UPPER_LAYER_PROTOCOL_PAYLOAD"></a><a id="ndis_nbl_flags_split_at_upper_layer_protocol_payload"></a>NDIS_NBL_FLAGS_SPLIT_AT_UPPER_LAYER_PROTOCOL_PAYLOAD
+### -field NDIS_NBL_FLAGS_SPLIT_AT_UPPER_LAYER_PROTOCOL_PAYLOAD
 
 <dd>
 <p>All of the Ethernet frames in this NET_BUFFER_LIST structure are split at the beginning of the
@@ -299,14 +299,14 @@ typedef struct _NET_BUFFER_LIST {
 </dl>
 </dd>
 
-### -field <b>ChildRefCount</b>
+### -field ChildRefCount
 
 <dd>
 <p>If this NET_BUFFER_LIST structure has clones (is a parent), this member specifies the number of
      outstanding clones. Otherwise, this member is zero.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Attributes of the NET_BUFFER_LIST structure. The following definitions specify a bit mask for a set
@@ -314,7 +314,7 @@ typedef struct _NET_BUFFER_LIST {
 <p></p>
 <dl>
 
-### -field <a id="NBL_FLAGS_PROTOCOL_RESERVED"></a><a id="nbl_flags_protocol_reserved"></a>NBL_FLAGS_PROTOCOL_RESERVED
+### -field NBL_FLAGS_PROTOCOL_RESERVED
 
 <dd>
 <p>This set is reserved for protocol drivers.</p>
@@ -322,13 +322,13 @@ typedef struct _NET_BUFFER_LIST {
 <div> </div>
 </dd>
 
-### -field <a id="NBL_FLAGS_MINIPORT_RESERVED"></a><a id="nbl_flags_miniport_reserved"></a>NBL_FLAGS_MINIPORT_RESERVED
+### -field NBL_FLAGS_MINIPORT_RESERVED
 
 <dd>
 <p>This set is reserved for miniport drivers.</p>
 </dd>
 
-### -field <a id="NBL_FLAGS_SCRATCH"></a><a id="nbl_flags_scratch"></a>NBL_FLAGS_SCRATCH
+### -field NBL_FLAGS_SCRATCH
 
 <dd>
 <p>The current owner of the NET_BUFFER_LIST structure, either NDIS or an NDIS driver, can use this
@@ -336,7 +336,7 @@ typedef struct _NET_BUFFER_LIST {
         flags.</p>
 </dd>
 
-### -field <a id="NBL_FLAGS_NDIS_RESERVED"></a><a id="nbl_flags_ndis_reserved"></a>NBL_FLAGS_NDIS_RESERVED
+### -field NBL_FLAGS_NDIS_RESERVED
 
 <dd>
 <p>This set is reserved for NDIS.</p>
@@ -344,7 +344,7 @@ typedef struct _NET_BUFFER_LIST {
 </dl>
 </dd>
 
-### -field <b>Status</b>
+### -field Status
 
 <dd>
 <p>The final completion status of a network data operation on this NET_BUFFER_LIST structure.
@@ -355,34 +355,34 @@ typedef struct _NET_BUFFER_LIST {
 <p></p>
 <dl>
 
-### -field <a id="NDIS_STATUS_SUCCESS"></a><a id="ndis_status_success"></a>NDIS_STATUS_SUCCESS
+### -field NDIS_STATUS_SUCCESS
 
 <dd>
 <p>All the network data described by NET_BUFFER structures associated with this NET_BUFFER_LIST
        structure was successfully transmitted over the network.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_INVALID_LENGTH"></a><a id="ndis_status_invalid_length"></a>NDIS_STATUS_INVALID_LENGTH
+### -field NDIS_STATUS_INVALID_LENGTH
 
 <dd>
 <p>The size of the data in some NET_BUFFER structures associated with this NET_BUFFER_LIST
        structure was too large for the underlying NIC.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_RESOURCES"></a><a id="ndis_status_resources"></a>NDIS_STATUS_RESOURCES
+### -field NDIS_STATUS_RESOURCES
 
 <dd>
 <p>The send request for this NET_BUFFER_LIST structure failed due to insufficient resources.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_FAILURE"></a><a id="ndis_status_failure"></a>NDIS_STATUS_FAILURE
+### -field NDIS_STATUS_FAILURE
 
 <dd>
 <p>This send request for this NET_BUFFER_LIST structure failed due to some reason other than those
        stated in the previous three values.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_SEND_ABORTED"></a><a id="ndis_status_send_aborted"></a>NDIS_STATUS_SEND_ABORTED
+### -field NDIS_STATUS_SEND_ABORTED
 
 <dd>
 <p>NDIS called the 
@@ -390,13 +390,13 @@ typedef struct _NET_BUFFER_LIST {
        cancel the send operation for this NET_BUFFER_LIST structure.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_RESET_IN_PROGRESS"></a><a id="ndis_status_reset_in_progress"></a>NDIS_STATUS_RESET_IN_PROGRESS
+### -field NDIS_STATUS_RESET_IN_PROGRESS
 
 <dd>
 <p>The miniport driver aborted the send request due to a reset.</p>
 </dd>
 
-### -field <a id="NDIS_STATUS_PAUSED"></a><a id="ndis_status_paused"></a>NDIS_STATUS_PAUSED
+### -field NDIS_STATUS_PAUSED
 
 <dd>
 <p>If a driver must reject send requests because it is paused, it sets the complete status in each
@@ -405,7 +405,7 @@ typedef struct _NET_BUFFER_LIST {
 </dl>
 </dd>
 
-### -field <b>NetBufferListInfo</b>
+### -field NetBufferListInfo
 
 <dd>
 <p>An array of values containing information that is common to all NET_BUFFER structures in the list.
@@ -647,4 +647,4 @@ typedef struct _NET_BUFFER_LIST {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER_LIST structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER_LIST structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

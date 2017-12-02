@@ -76,7 +76,21 @@ Gnssdriver.h contain these programming interfaces:
 | [IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT IOCTL](ni-gnssdriver-ioctl-gnss-listen-breadcrumbing-alert.md) | The IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT control code is used to request alert information from GNSS_BREADCRUMBING_ALERT_DATA when the breadcrumbing buffer has reached a level at which OS read operations should be performed. |
 | [IOCTL_GNSS_LISTEN_DRIVER_REQUEST IOCTL](ni-gnssdriver-ioctl-gnss-listen-driver-request.md) | The IOCTL_GNSS_LISTEN_DRIVER_REQUEST control code is used by the GNSS driver to get data from the HLOS. |
 | [IOCTL_GNSS_LISTEN_ERROR IOCTL](ni-gnssdriver-ioctl-gnss-listen-error.md) | The IOCTL_GNSS_LISTEN_ERROR control code is used to start listening for ERROR events from the driver. |
+| [IOCTL_GNSS_LISTEN_GEOFENCES_TRACKINGSTATUS IOCTL](ni-gnssdriver-ioctl-gnss-listen-geofences-trackingstatus.md) | The IOCTL_GNSS_LISTEN_GEOFENCES_TRACKINGSTATUS control code is used to receive geofence tracking status from the driver. |
 | [IOCTL_GNSS_LISTEN_GEOFENCE_ALERT IOCTL](ni-gnssdriver-ioctl-gnss-listen-geofence-alert.md) | The IOCTL_GNSS_LISTEN_GEOFENCE_ALERT control code is used to start listening for geofence alerts from the driver. |
+| [IOCTL_GNSS_LISTEN_NI IOCTL](ni-gnssdriver-ioctl-gnss-listen-ni.md) | The IOCTL_GNSS_LISTEN_NI control code is used to start listening for a SUPL NI request. |
+| [IOCTL_GNSS_LISTEN_NMEA IOCTL](ni-gnssdriver-ioctl-gnss-listen-nmea.md) | The IOCTL_GNSS_LISTEN_NMEA control code is used to start listening for NMEA events from the driver. |
+| [IOCTL_GNSS_MODIFY_FIXSESSION IOCTL](ni-gnssdriver-ioctl-gnss-modify-fixsession.md) | The IOCTL_GNSS_MODIFY_FIXSESSION control code is used by the GNSS adapter to modify the fix session parameters of an active fix session. |
+| [IOCTL_GNSS_POP_BREADCRUMBS IOCTL](ni-gnssdriver-ioctl-gnss-pop-breadcrumbs.md) | The IOCTL_GNSS_POP_BREADCRUMBS control code is used to request a list of breadcrumbs contained in GNSS_BREADCRUMB_LIST. |
+| [IOCTL_GNSS_RESPOND_NI IOCTL](ni-gnssdriver-ioctl-gnss-respond-ni.md) | The IOCTL_GNSS_RESPOND_NI control code is used by the GNSS adapter to respond to an NI request that was asynchronously communicated to it by the GNSS driver through the resolution of an IOCTL_GNSS_LISTEN_NI request. |
+| [IOCTL_GNSS_SEND_DRIVERCOMMAND IOCTL](ni-gnssdriver-ioctl-gnss-send-drivercommand.md) | The IOCTL_GNSS_SEND_DRIVERCOMMAND control code is used by the GNSS adapter to execute well-defined commands on the driver and also to set driver configuration parameters. |
+| [IOCTL_GNSS_SEND_PLATFORM_CAPABILITY IOCTL](ni-gnssdriver-ioctl-gnss-send-platform-capability.md) | The IOCTL_GNSS_SEND_PLATFORM_CAPABILITY control code is used by the GNSS adapter to communicate the various location-specific platform capabilities. |
+| [IOCTL_GNSS_SET_SUPL_HSLP IOCTL](ni-gnssdriver-ioctl-gnss-set-supl-hslp.md) | The IOCTL_GNSS_SET_SUPL_HSLP control code is used by the GNSS adapter to set the SUPL H-SLP address. |
+| [IOCTL_GNSS_SET_V2UPL_CONFIG IOCTL](ni-gnssdriver-ioctl-gnss-set-v2upl-config.md) | The IOCTL_GNSS_SET_V2UPL_CONFIG control code is used by the GNSS adapter to set configuration for v2 user plane location for CDMA, which consist of the MPC address, and in testing mode, potentially the PDE address. |
+| [IOCTL_GNSS_START_BREADCRUMBING IOCTL](ni-gnssdriver-ioctl-gnss-start-breadcrumbing.md) | The IOCTL_GNSS_START_BREADCRUMBING control code is used to start and configure breadcrumbing. |
+| [IOCTL_GNSS_START_FIXSESSION IOCTL](ni-gnssdriver-ioctl-gnss-start-fixsession.md) | The IOCTL_GNSS_START_FIXSESSION control code is used by the GNSS adapter to start a fix session. |
+| [IOCTL_GNSS_STOP_BREADCRUMBING IOCTL](ni-gnssdriver-ioctl-gnss-stop-breadcrumbing.md) | The IOCTL_GNSS_STOP_BREADCRUMBING control code is used to stop breadcrumbing. |
+| [IOCTL_GNSS_STOP_FIXSESSION IOCTL](ni-gnssdriver-ioctl-gnss-stop-fixsession.md) | The IOCTL_GNSS_STOP_FIXSESSION control code is used by the GNSS adapter to stop an active fix session. |
 
 ## Enumerations
 

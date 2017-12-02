@@ -56,13 +56,13 @@ LONG InterlockedExchangeAdd(
 ## -parameters
 <dl>
 
-### -param <i>Addend</i> [in, out]
+### -param Addend [in, out]
 
 <dd>
 <p>A pointer to an integer variable.</p>
 </dd>
 
-### -param <i>Value</i> [in]
+### -param Value [in]
 
 <dd>
 <p>Specifies the value to be added to <i>Addend</i>. </p>

@@ -7,7 +7,7 @@ old-location: ifsk\_directory_notify_information_class.htm
 old-project: ifsk
 ms.assetid: 77c2515b-f20a-47ac-9564-9eab009cf625
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,13 +57,13 @@ typedef enum _DIRECTORY_NOTIFY_INFORMATION_CLASS {
 ## -enum-fields
 <dl>
 
-### -field <a id="DirectoryNotifyInformation"></a><a id="directorynotifyinformation"></a><a id="DIRECTORYNOTIFYINFORMATION"></a><b>DirectoryNotifyInformation</b>
+### -field DirectoryNotifyInformation
 
 <dd>
 <p>A <b>FILE_NOTIFY_INFORMATION </b>structure.</p>
 </dd>
 
-### -field <a id="DirectoryNotifyExtendedInformation"></a><a id="directorynotifyextendedinformation"></a><a id="DIRECTORYNOTIFYEXTENDEDINFORMATION"></a><b>DirectoryNotifyExtendedInformation</b>
+### -field DirectoryNotifyExtendedInformation
 
 <dd>
 <p>A <b>FILE_NOTIFY_EXTENDED_INFORMATION</b> structure.</p>

@@ -54,7 +54,7 @@ typedef struct _DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA {
 ## -struct-fields
 <dl>
 
-### -field <b>FrameFormat</b>
+### -field FrameFormat
 
 <dd>
 <p>[in] A <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-frame-format.md">DXVAHDDDI_FRAME_FORMAT</a>-typed value that indicates the frame format of the input stream. The default value is DXVAHDDDI_FRAME_FORMAT_PROGRESSIVE, which indicates progressive format. </p>

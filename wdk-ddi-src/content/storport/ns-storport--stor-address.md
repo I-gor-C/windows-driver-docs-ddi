@@ -59,7 +59,7 @@ typedef struct _STOR_ADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>Type</b>
+### -field Type
 
 <dd>
 <p>The address type. This can be one of the following:</p>
@@ -71,7 +71,7 @@ typedef struct _STOR_ADDRESS {
 <tr>
 <td width="40%"><a id="STOR_ADDRESS_TYPE_UNKNOWN"></a><a id="stor_address_type_unknown"></a><dl>
 
-### -field <b>STOR_ADDRESS_TYPE_UNKNOWN</b>
+### -field STOR_ADDRESS_TYPE_UNKNOWN
 
 </dl>
 </td>
@@ -82,7 +82,7 @@ typedef struct _STOR_ADDRESS {
 <tr>
 <td width="40%"><a id="STOR_ADDRESS_TYPE_BTL8"></a><a id="stor_address_type_btl8"></a><dl>
 
-### -field <b>STOR_ADDRESS_TYPE_BTL8</b>
+### -field STOR_ADDRESS_TYPE_BTL8
 
 </dl>
 </td>
@@ -94,19 +94,19 @@ typedef struct _STOR_ADDRESS {
 <p> </p>
 </dd>
 
-### -field <b>Port</b>
+### -field Port
 
 <dd>
 <p>The host bus adapter (HBA) port number.</p>
 </dd>
 
-### -field <b>AddressLength</b>
+### -field AddressLength
 
 <dd>
 <p>The byte length of the <b>AddressData</b>. If <b>Type</b> is set to <b>STOR_ADDRESS_TYPE_BTL8</b>, this value is <b>STOR_ADDR_BTL8_ADDRESS_LENGTH</b>.</p>
 </dd>
 
-### -field <b>AddressData</b>
+### -field AddressData
 
 <dd>
 <p>The address data specific to an address type.</p>
@@ -141,7 +141,7 @@ typedef struct _STOR_ADDRESS {
 ## -see-also
 <dl>
 <dt>
-<a href="..\scsi\ns-scsi--stor-addr-btl8.md">STOR_ADDR_BTL8</a>
+<a href="..\storport\ns-storport--stor-addr-btl8.md">STOR_ADDR_BTL8</a>
 </dt>
 <dt>
 <a href="..\storport\nf-storport-storportsetunitattributes.md">StorPortSetUnitAttributes</a>

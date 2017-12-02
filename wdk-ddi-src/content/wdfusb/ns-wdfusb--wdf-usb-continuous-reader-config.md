@@ -7,7 +7,7 @@ old-location: wdf\wdf_usb_continuous_reader_config.htm
 old-project: wdf
 ms.assetid: 9b98d5f1-6052-4c52-b3d4-031c8a0db51c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WDF_USB_CONTINUOUS_READER_CONFIG, WDF_USB_CONTINUOUS_READER_CONFIG, *PWDF_USB_CONTINUOUS_READER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,55 +64,55 @@ typedef struct _WDF_USB_CONTINUOUS_READER_CONFIG {
 ## -struct-fields
 <dl>
 
-### -field <b>Size</b>
+### -field Size
 
 <dd>
 <p>The size, in bytes, of this structure.</p>
 </dd>
 
-### -field <b>TransferLength</b>
+### -field TransferLength
 
 <dd>
 <p>The maximum length, in bytes, of data that can be received from the device.</p>
 </dd>
 
-### -field <b>HeaderLength</b>
+### -field HeaderLength
 
 <dd>
 <p>An offset, in bytes, into the buffer that receives data from the device. The framework will store data from the device in a read buffer, beginning at the offset value. In other words, this space precedes the <b>TransferLength</b>-sized space in which the framework stores data from the device. </p>
 </dd>
 
-### -field <b>TrailerLength</b>
+### -field TrailerLength
 
 <dd>
 <p>The length, in bytes, of a trailing buffer space. This space follows the <b>TransferLength</b>-sized space in which the framework stores data from the device. </p>
 </dd>
 
-### -field <b>NumPendingReads</b>
+### -field NumPendingReads
 
 <dd>
 <p>The number of read requests that the framework will queue to receive data from the I/O target. If this value is zero, the framework uses a default number of read requests. If the specified value is greater than the permitted maximum, the framework uses the permitted maximum. For more information about the <b>NumPendingReads</b> member, see the following Remarks section.</p>
 </dd>
 
-### -field <b>BufferAttributes</b>
+### -field BufferAttributes
 
 <dd>
 <p>A <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the framework memory object that the framework creates for each read request. This member can be <b>NULL</b>. You cannot set the <b>ParentObject</b> member of the WDF_OBJECT_ATTRIBUTES structure. </p>
 </dd>
 
-### -field <b>EvtUsbTargetPipeReadComplete</b>
+### -field EvtUsbTargetPipeReadComplete
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfusb\nc-wdfusb-evt-wdf-usb-reader-completion-routine.md">EvtUsbTargetPipeReadComplete</a> callback function.</p>
 </dd>
 
-### -field <b>EvtUsbTargetPipeReadCompleteContext</b>
+### -field EvtUsbTargetPipeReadCompleteContext
 
 <dd>
 <p>An untyped pointer to driver-defined context information that the framework passes to the driver's <a href="..\wdfusb\nc-wdfusb-evt-wdf-usb-reader-completion-routine.md">EvtUsbTargetPipeReadComplete</a> callback function.</p>
 </dd>
 
-### -field <b>EvtUsbTargetPipeReadersFailed</b>
+### -field EvtUsbTargetPipeReadersFailed
 
 <dd>
 <p>A pointer to the driver's <a href="..\wdfusb\nc-wdfusb-evt-wdf-usb-readers-failed.md">EvtUsbTargetPipeReadersFailed</a> callback function. This pointer is optional and can be <b>NULL</b>. For more information about about this parameter, see the Remarks section of <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeconfigcontinuousreader.md">WdfUsbTargetPipeConfigContinuousReader</a>.</p>
@@ -188,4 +188,4 @@ typedef struct _WDF_USB_CONTINUOUS_READER_CONFIG {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_CONTINUOUS_READER_CONFIG structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_CONTINUOUS_READER_CONFIG structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

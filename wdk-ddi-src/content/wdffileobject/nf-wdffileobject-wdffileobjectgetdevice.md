@@ -7,7 +7,7 @@ old-location: wdf\wdffileobjectgetdevice.htm
 old-project: wdf
 ms.assetid: 10bb8bbd-0347-4ceb-844e-87f049813684
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfFileObjectGetDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ WDFDEVICE WdfFileObjectGetDevice(
 ## -parameters
 <dl>
 
-### -param <i>FileObject</i> [in]
+### -param FileObject [in]
 
 <dd>
 <p>A handle to a framework file object.</p>

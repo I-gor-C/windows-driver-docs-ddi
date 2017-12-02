@@ -85,39 +85,39 @@ typedef struct D3D10DDIARG_CREATEDEVICE {
 ## -struct-fields
 <dl>
 
-### -field <b>hRTDevice</b>
+### -field hRTDevice
 
 <dd>
 <p>[in] A handle to the display device (graphics context) that specifies the handle that the driver should use when it calls back into the Direct3D runtime (that is, when the driver calls functions that the <b>pKTCallbacks</b> member specifies). </p>
 </dd>
 
-### -field <b>Interface</b>
+### -field Interface
 
 <dd>
 <p>[in] The Direct3D interface version. The high 16 bits store the major release number (such as 10, 11, and so on); the low 16 bits store the minor release number (such as 0, 1, 2, and so on). The minor release number will be increased when a change to the interface is released.</p>
 </dd>
 
-### -field <b>Version</b>
+### -field Version
 
 <dd>
 <p>[in] A number that the driver can use to identify when the Direct3D runtime was built. The high 16 bits represent the build number; the low 16 bits represent the revision number. </p>
 <p>The driver is required only to monitor the high 16 bits. The driver should ensure that the runtime build version that is passed in is greater than or equal to the current build version of the driver. The driver should return a failure from its <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function if the passed in build version is incompatible. </p>
 </dd>
 
-### -field <b>pKTCallbacks</b>
+### -field pKTCallbacks
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a> structure that contains a table of Direct3D runtime callback functions that the driver can use to access kernel services.</p>
 </dd>
 
-### -field <b>pDeviceFuncs</b>
+### -field pDeviceFuncs
 
 <dd>
 <p>[in/out] A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-devicefuncs.md">D3D10DDI_DEVICEFUNCS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
 <p>The driver should fill its Direct3D version 10.0 functions in the supplied <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-devicefuncs.md">D3D10DDI_DEVICEFUNCS</a> structure when the value in the <b>Interface</b> member is <b>D3D10_0_DDI_INTERFACE_VERSION</b>.  </p>
 </dd>
 
-### -field <b>p10_1DeviceFuncs</b>
+### -field p10_1DeviceFuncs
 
 <dd>
 <p>[in/out] A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-1ddi-devicefuncs.md">D3D10_1DDI_DEVICEFUNCS</a> structure that the user-mode display driver fills with a table of its functions. Version 10.1 of the Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
@@ -125,7 +125,7 @@ typedef struct D3D10DDIARG_CREATEDEVICE {
 <p>Supported starting with Windows Vista with SP1 and Windows Server 2008.</p>
 </dd>
 
-### -field <b>p11DeviceFuncs</b>
+### -field p11DeviceFuncs
 
 <dd>
 <p>[in/out] A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-devicefuncs~r1.md">D3D11DDI_DEVICEFUNCS</a> structure that the user-mode display driver fills with a table of its functions. Version 11 of the Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
@@ -133,7 +133,7 @@ typedef struct D3D10DDIARG_CREATEDEVICE {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>p11_1DeviceFuncs</b>
+### -field p11_1DeviceFuncs
 
 <dd>
 <p>[in/out] A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-devicefuncs~r1.md">D3D11_1DDI_DEVICEFUNCS</a> structure that the user-mode display driver fills with a table of its functions. Starting with version 11.1, the Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
@@ -141,7 +141,7 @@ typedef struct D3D10DDIARG_CREATEDEVICE {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>pWDDM1_3DeviceFuncs</b>
+### -field pWDDM1_3DeviceFuncs
 
 <dd>
 <p>[in/out] A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1-3ddi-devicefuncs~r1.md">D3DWDDM1_3DDI_DEVICEFUNCS</a> structure that the user-mode display driver fills with a table of its functions. Version 11.2 of the Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
@@ -149,58 +149,58 @@ typedef struct D3D10DDIARG_CREATEDEVICE {
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
-### -field <b>hDrvDevice</b>
+### -field hDrvDevice
 
 <dd>
 <p>[in/out] A handle to the display device (graphics context) that the Direct3D runtime uses in subsequent driver calls to identify the display device.</p>
 </dd>
 
-### -field <b>DXGIBaseDDI</b>
+### -field DXGIBaseDDI
 
 <dd>
 <p>[in/out] A <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-base-args.md">DXGI_DDI_BASE_ARGS</a> structure that provides access to the DXGI. The DXGI DDI handles low-level tasks like presenting rendered frames to an output, controlling gamma, and managing a full-screen transition. </p>
 </dd>
 
-### -field <b>hRTCoreLayer</b>
+### -field hRTCoreLayer
 
 <dd>
 <p>[in] A handle that the driver should use when it calls back into the Direct3D runtime to access core Direct3D 10 functionality (that is, when the driver calls functions that the <b>pUMCallbacks</b> member specifies). </p>
 </dd>
 
-### -field <b>pUMCallbacks</b>
+### -field pUMCallbacks
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-corelayer-devicecallbacks.md">D3D10DDI_CORELAYER_DEVICECALLBACKS</a> structure that contains a table of Direct3D 10 runtime callback functions that the driver can use to access core user-mode runtime functionality. </p>
 </dd>
 
-### -field <b>p11UMCallbacks</b>
+### -field p11UMCallbacks
 
 <dd>
 <p>[in] A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-corelayer-devicecallbacks~r1.md">D3D11DDI_CORELAYER_DEVICECALLBACKS</a> structure that contains a table of Direct3D 11 runtime callback functions, which the driver can use to access core user-mode runtime functionality.</p>
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>[in] A valid bitwise OR of flag values that identify how to create the display device. The Direct3D runtime supports the following flags:  </p>
 <p></p>
 <dl>
 
-### -field <a id="D3D10DDI_CREATEDEVICE_FLAG_DISABLE_EXTRA_THREAD_CREATION__0x1__"></a><a id="d3d10ddi_createdevice_flag_disable_extra_thread_creation__0x1__"></a><a id="D3D10DDI_CREATEDEVICE_FLAG_DISABLE_EXTRA_THREAD_CREATION__0X1__"></a>D3D10DDI_CREATEDEVICE_FLAG_DISABLE_EXTRA_THREAD_CREATION (0x1) 
+### -field D3D10DDI_CREATEDEVICE_FLAG_DISABLE_EXTRA_THREAD_CREATION (0x1) 
 
 <dd>
 <p>If this flag is set, the user-mode display driver should not run multiple threads simultaneously when it processes calls to its functions from the Direct3D runtime. A driver can typically start and run multiple threads to process operations faster, unless the <b>D3D10DDI_CREATEDEVICE_FLAG_DISABLE_EXTRA_THREAD_CREATION</b> flag is set.</p>
 </dd>
 
-### -field <a id="D3D11DDI_CREATEDEVICE_FLAG_SINGLETHREADED__0x10__"></a><a id="d3d11ddi_createdevice_flag_singlethreaded__0x10__"></a><a id="D3D11DDI_CREATEDEVICE_FLAG_SINGLETHREADED__0X10__"></a>D3D11DDI_CREATEDEVICE_FLAG_SINGLETHREADED (0x10) 
+### -field D3D11DDI_CREATEDEVICE_FLAG_SINGLETHREADED (0x10) 
 
 <dd>
 <p>This flag informs the user-mode display driver that the application is single threaded. The Direct3D 11 runtime allows multiple application threads to enter the driver if the driver allows this mode of operation. However, not all applications can run multiple threads. If this flag is set, the driver does not expect multiple threads to enter it and run simultaneously. The driver can avoid synchronization if this flag is set.</p>
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <a id="The_flag_that_is_set_in_the_0xE_mask_of_the_Flags_member"></a><a id="the_flag_that_is_set_in_the_0xe_mask_of_the_flags_member"></a><a id="THE_FLAG_THAT_IS_SET_IN_THE_0XE_MASK_OF_THE_FLAGS_MEMBER"></a>The flag that is set in the 0xE mask of the <b>Flags</b> member
+### -field The flag that is set in the 0xE mask of the Flags member
 
 <dd>
 <p>This flag represents the level of 3-D pipeline that the driver should support for the display device. The driver uses the following constant and macros to extract one of the values from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi-3dpipelinelevel.md">D3D11DDI_3DPIPELINELEVEL</a> enumeration that represent the 3-D pipeline level to support. The value in the <b>Flags</b> member is formatted like the <b>Caps</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-3dpipelinesupport-caps.md">D3D11DDI_3DPIPELINESUPPORT_CAPS</a> structure.</p>
@@ -223,7 +223,7 @@ typedef struct D3D10DDIARG_CREATEDEVICE {
 </dl>
 </dd>
 
-### -field <b>ppfnRetrieveSubObject</b>
+### -field ppfnRetrieveSubObject
 
 <dd>
 <p>[in/out] A pointer to a <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-retrievesubobject.md">RetrieveSubObject(D3D11_1)</a> function that retrieves subparts of a Direct3D driver device object.</p>

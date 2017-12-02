@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_scale_parameters.htm
 old-project: netvista
 ms.assetid: 0d51042e-06b4-4105-889f-84a368e5735a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: NDIS_RECEIVE_SCALE_PARAMETERS, NDIS_RECEIVE_SCALE_PARAMETERS, *PNDIS_RECEIVE_SCALE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,7 +72,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>The 
@@ -91,7 +91,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
      <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_SCALE_PARAMETERS_REVISION_1</b>.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>A <b>USHORT</b> value that indicates what the miniport driver should do with the receive-scale
@@ -110,7 +110,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_RSS_PARAM_FLAG_BASE_CPU_UNCHANGED"></a><a id="ndis_rss_param_flag_base_cpu_unchanged"></a><dl>
 
-### -field <b>NDIS_RSS_PARAM_FLAG_BASE_CPU_UNCHANGED</b>
+### -field NDIS_RSS_PARAM_FLAG_BASE_CPU_UNCHANGED
 
 </dl>
 </td>
@@ -122,7 +122,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_RSS_PARAM_FLAG_HASH_INFO_UNCHANGED"></a><a id="ndis_rss_param_flag_hash_info_unchanged"></a><dl>
 
-### -field <b>NDIS_RSS_PARAM_FLAG_HASH_INFO_UNCHANGED</b>
+### -field NDIS_RSS_PARAM_FLAG_HASH_INFO_UNCHANGED
 
 </dl>
 </td>
@@ -135,7 +135,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_RSS_PARAM_FLAG_ITABLE_UNCHANGED"></a><a id="ndis_rss_param_flag_itable_unchanged"></a><dl>
 
-### -field <b>NDIS_RSS_PARAM_FLAG_ITABLE_UNCHANGED</b>
+### -field NDIS_RSS_PARAM_FLAG_ITABLE_UNCHANGED
 
 </dl>
 </td>
@@ -146,7 +146,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_RSS_PARAM_FLAG_HASH_KEY_UNCHANGED"></a><a id="ndis_rss_param_flag_hash_key_unchanged"></a><dl>
 
-### -field <b>NDIS_RSS_PARAM_FLAG_HASH_KEY_UNCHANGED</b>
+### -field NDIS_RSS_PARAM_FLAG_HASH_KEY_UNCHANGED
 
 </dl>
 </td>
@@ -157,7 +157,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
 <tr>
 <td width="40%"><a id="NDIS_RSS_PARAM_FLAG_DISABLE_RSS"></a><a id="ndis_rss_param_flag_disable_rss"></a><dl>
 
-### -field <b>NDIS_RSS_PARAM_FLAG_DISABLE_RSS</b>
+### -field NDIS_RSS_PARAM_FLAG_DISABLE_RSS
 
 </dl>
 </td>
@@ -170,7 +170,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
 <p> </p>
 </dd>
 
-### -field <b>BaseCpuNumber</b>
+### -field BaseCpuNumber
 
 <dd>
 <p>The lowest number CPU to use for RSS. Because this value is incorporated into the indirection
@@ -178,7 +178,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
      <b>BaseCpuNumber</b> to zero.</p>
 </dd>
 
-### -field <b>HashInformation</b>
+### -field HashInformation
 
 <dd>
 <p>In a set request, this member is the hash type and hash function that the NIC should use to compute the hash
@@ -196,26 +196,26 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff567264">NDIS_RSS_HASH_FUNC_FROM_HASH_INFO</a> macro to get the hash function.</p>
 </dd>
 
-### -field <b>IndirectionTableSize</b>
+### -field IndirectionTableSize
 
 <dd>
 <p>The size of the indirection table, in bytes. The upper layer driver that sets the RSS parameters, must ensure that the number of entries in the indirection table is a power of 2.</p>
 </dd>
 
-### -field <b>IndirectionTableOffset</b>
+### -field IndirectionTableOffset
 
 <dd>
 <p>The offset of the indirection table from the beginning of the <b>NDIS_RECEIVE_SCALE_PARAMETERS</b>
      structure. Use this offset to get the indirection table.</p>
 </dd>
 
-### -field <b>HashSecretKeySize</b>
+### -field HashSecretKeySize
 
 <dd>
 <p>The size of the secret key array of the hash function, in bytes. The size of the array is 40 bytes for NdisHashFunctionToeplitz.</p>
 </dd>
 
-### -field <b>HashSecretKeyOffset</b>
+### -field HashSecretKeyOffset
 
 <dd>
 <p>The offset of the secret key array of the hash function from the beginning of the
@@ -225,26 +225,26 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
 <p>In a query request, the secret key contains the data that the NIC is using.</p>
 </dd>
 
-### -field <b>ProcessorMasksOffset</b>
+### -field ProcessorMasksOffset
 
 <dd>
 <p>The offset of an array of processor masks from the beginning of the <b>NDIS_RECEIVE_SCALE_PARAMETERS</b>
      structure.</p>
 </dd>
 
-### -field <b>NumberOfProcessorMasks</b>
+### -field NumberOfProcessorMasks
 
 <dd>
 <p>The number of elements in an array of type <a href="..\miniport\ns-miniport--group-affinity.md">GROUP_AFFINITY</a> representing the processors used in the indirection table</p>
 </dd>
 
-### -field <b>ProcessorMasksEntrySize</b>
+### -field ProcessorMasksEntrySize
 
 <dd>
 <p>The size, in bytes, of a processor mask array entry.</p>
 </dd>
 
-### -field <b>DefaultProcessorNumber</b>
+### -field DefaultProcessorNumber
 
 <dd>
 <p>Specifies the default RSS processor.</p>
@@ -333,4 +333,4 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_SCALE_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_SCALE_PARAMETERS structure%20 RELEASE:%20(11/30/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -55,13 +55,13 @@ BOOLEAN __inline AtaPortControllerSyncRoutine(
 ## -parameters
 <dl>
 
-### -param <i>ChannelExtension</i> [in]
+### -param ChannelExtension [in]
 
 <dd>
 <p>A pointer to the channel extension. </p>
 </dd>
 
-### -param <i>ControllerSyncRoutine</i> [in]
+### -param ControllerSyncRoutine [in]
 
 <dd>
 <p>A pointer to the routine to call. </p>

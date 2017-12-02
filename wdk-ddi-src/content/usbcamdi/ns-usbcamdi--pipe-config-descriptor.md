@@ -56,7 +56,7 @@ typedef struct _pipe_config_descriptor {
 ## -struct-fields
 <dl>
 
-### -field <b>StreamAssociation</b>
+### -field StreamAssociation
 
 <dd>
 <p>Specifies the type of stream. This should be set to one of the following values:</p>
@@ -93,7 +93,7 @@ typedef struct _pipe_config_descriptor {
 <p> </p>
 </dd>
 
-### -field <b>PipeConfigFlags</b>
+### -field PipeConfigFlags
 
 <dd>
 <p>Specifies the pipe characteristics. This should be set to one of the following values:</p>

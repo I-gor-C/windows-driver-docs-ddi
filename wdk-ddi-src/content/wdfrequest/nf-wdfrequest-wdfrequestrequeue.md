@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestrequeue.htm
 old-project: wdf
 ms.assetid: 955859d2-7c4f-454c-8621-84bacf0b9770
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: WdfRequestRequeue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ NTSTATUS WdfRequestRequeue(
 ## -parameters
 <dl>
 
-### -param <i>Request</i> [in]
+### -param Request [in]
 
 <dd>
 <p>A handle to a framework request object. </p>

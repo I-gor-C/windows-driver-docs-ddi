@@ -87,21 +87,21 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 ## -struct-fields
 <dl>
 
-### -field <b>NoScreenToScreenBlt</b>
+### -field NoScreenToScreenBlt
 
 <dd>
 <p>[in] A UINT value that specifies whether the display miniport driver can perform a bit-block transfer (bitblt) from the primary surface to the same primary surface. If <b>NoScreenToScreenBlt</b> is set, the driver cannot perform a screen-to-screen bit-block transfer. Therefore, the Microsoft DirectX graphics kernel subsystem (<i>Dxgkrnl.sys</i>) will not request the driver to perform such a bit-block transfer.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
-### -field <b>NoOverlapScreenBlt</b>
+### -field NoOverlapScreenBlt
 
 <dd>
 <p>[in] A UINT value that specifies whether the display miniport driver can perform a bit-block transfer that overlaps. If <b>NoOverlapScreenBlt</b> is set, the driver cannot perform a bit-block transfer that overlaps. Therefore, the DirectX graphics kernel subsystem will not request the driver to perform such a bit-block transfer.</p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
-### -field <b>SupportKernelModeCommandBuffer</b>
+### -field SupportKernelModeCommandBuffer
 
 <dd>
 <p> [in] A UINT value that specifies whether the display miniport driver supports GDI hardware-accelerated command buffer processing. If <b>SupportKernelModeCommandBuffer</b> is set, the driver can perform various hardware-accelerated bit-block transfer (bitblt) and fill operations when the DirectX graphics kernel subsystem calls the display miniport driver's <a href="display.dxgkddirenderkm">DxgkDdiRenderKm</a> function.</p>
@@ -111,7 +111,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>NoSameBitmapAlphaBlend</b>
+### -field NoSameBitmapAlphaBlend
 
 <dd>
 <p>[in] A UINT value that specifies whether the display miniport driver can perform an alpha-blending operation when the source and destination allocations are the same. If <b>NoSameBitmapAlphaBlend</b> is set, the driver cannot perform such an operation and the DirectX graphics kernel subsystem will not request it.</p>
@@ -119,7 +119,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>NoSameBitmapStretchBlt</b>
+### -field NoSameBitmapStretchBlt
 
 <dd>
 <p>[in] A UINT value that specifies whether the display miniport driver can perform a stretch bit-block transfer operation when the source and destination allocations are the same. If <b>NoSameBitmapStretchBlt</b> is set, the driver cannot perform such an operation and the DirectX graphics kernel subsystem will not request it.</p>
@@ -127,7 +127,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>NoSameBitmapTransparentBlt</b>
+### -field NoSameBitmapTransparentBlt
 
 <dd>
 <p>[in] A UINT value that specifies whether the display miniport driver can perform a transparent bit-block transfer operation when the source and destination allocations are the same. If <b>NoSameBitmapStretchBlt</b> is set, the driver cannot perform such an operation and the DirectX graphics kernel subsystem will not request it.</p>
@@ -135,7 +135,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>NoSameBitmapOverlappedAlphaBlend</b>
+### -field NoSameBitmapOverlappedAlphaBlend
 
 <dd>
 <p>[in] A UINT value that specifies whether the display miniport driver can perform an alpha-blending operation when the source and destination allocations are the same and source and destination rectangles overlap. If <b>NoSameBitmapOverlappedAlphaBlend</b> is set, the driver cannot perform such an operation and the DirectX graphics kernel subsystem will not request it.</p>
@@ -143,7 +143,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>NoSameBitmapOverlappedStretchBlt</b>
+### -field NoSameBitmapOverlappedStretchBlt
 
 <dd>
 <p>[in] A UINT value that specifies whether the display miniport driver can perform a stretch bit-block transfer operation when the source and destination allocations are the same and source and destination rectangles overlap. If <b>NoSameBitmapOverlappedStretchBlt</b> is set, the driver cannot perform such an operation and the DirectX graphics kernel subsystem will not request it.</p>
@@ -151,7 +151,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>DriverSupportsCddDwmInterop</b>
+### -field DriverSupportsCddDwmInterop
 
 <dd>
 <p>[in] A UINT value that specifies whether the display miniport driver supports Canonical Display Driver (CDD) present operations to texture allocations that are created by the user-mode driver for the Desktop Windows Manager (DWM) to use. If <b>DriverSupportsCddDwmInterop</b> is set, the display miniport driver supports such present operations.</p>
@@ -160,7 +160,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>Reserved0</b>
+### -field Reserved0
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
@@ -168,7 +168,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>AlignmentShift</b>
+### -field AlignmentShift
 
 <dd>
 <p>[in] A UINT value that specifies the minimum alignment value, in bytes, that the <b>XxxPitch</b> members of the DXGK_GDIARG_XXX structures require. <b>AlignmentShift</b> is given as a binary exponent. For example, to specify a required alignment value of 16 bytes, the display miniport driver should set <b>AlignmentShift</b> = 4. The minimum value is <b>AlignmentShift</b> = 2, which specifies a 4-byte alignment.</p>
@@ -176,7 +176,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>MaxTextureWidthShift</b>
+### -field MaxTextureWidthShift
 
 <dd>
 <p>[in] A UINT value that specifies the maximum texture width that the display miniport driver supports, which is computed as:</p>
@@ -186,7 +186,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>MaxTextureHeightShift</b>
+### -field MaxTextureHeightShift
 
 <dd>
 <p>[in] A UINT value that specifies the maximum texture height that the display miniport driver supports, which is computed as:</p>
@@ -196,7 +196,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>SupportAllBltRops</b>
+### -field SupportAllBltRops
 
 <dd>
 <p>[in] A UINT value that specifies whether the display miniport driver supports all GDI ROP3 raster operations with solid color as a pattern in BitBlt and ColorFill commands. If <b>SupportAllBltRops</b> is set, the driver supports such raster operations.</p>
@@ -204,7 +204,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>SupportMirrorStretchBlt</b>
+### -field SupportMirrorStretchBlt
 
 <dd>
 <p>[in] A UINT value that specifies whether the display miniport driver supports Stretch Blt operations (using the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-stretchblt.md">DXGK_GDIARG_STRETCHBLT</a> structure) in mirror mode. If <b>SupportMirrorStretchBlt </b>is set, the driver supports such operations.</p>
@@ -212,7 +212,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>SupportMonoStretchBltModes</b>
+### -field SupportMonoStretchBltModes
 
 <dd>
 <p>[in] A UINT value that specifies whether the display miniport driver supports Stretch Blt operations (using the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-stretchblt.md">DXGK_GDIARG_STRETCHBLT</a> structure) in BLACKONWHITE or WHITEONBLACK monochromatic rendering modes. If <b>SupportMonoStretchBltModes</b> is set, the driver supports such operations.</p>
@@ -220,7 +220,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>StagingRectStartPitchAligned</b>
+### -field StagingRectStartPitchAligned
 
 <dd>
 <p>[in] A UINT value that specifies whether the display miniport driver requires the starting point (upper-left point) in the rectangle on a CPU-visible staging surface to be pitch-aligned, which means that the left coordinate is 0. If <b>AlignmentShift</b> is set, the upper-left point of the rectangle is pitch-aligned.</p>
@@ -228,7 +228,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>NoSameBitmapBitBlt</b>
+### -field NoSameBitmapBitBlt
 
 <dd>
 <p>[in] A UINT value that specifies whether the display miniport driver can perform a bit-block transfer operation when the source and destination allocations are the same. If <b>NoSameBitmapBitBlt</b> is set, the driver cannot perform such an operation. Therefore, the DirectX graphics kernel subsystem will not request that the driver perform such an operation.</p>
@@ -236,7 +236,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>NoSameBitmapOverlappedBitBlt</b>
+### -field NoSameBitmapOverlappedBitBlt
 
 <dd>
 <p>[in] A UINT value that specifies whether the display miniport driver can perform a bit-block transfer operation when the source and destination allocations are the same and source and destination rectangles overlap. If <b>NoSameBitmapOverlappedBitBlt</b> is set, the driver cannot perform such an operation and the DirectX graphics kernel subsystem will not request it.</p>
@@ -244,14 +244,14 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>[in] This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the twentieth bit of the 32-bit <b>Value</b> member (0x00080000). </p>
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>NoTempSurfaceForClearTypeBlend</b>
+### -field NoTempSurfaceForClearTypeBlend
 
 <dd>
 <p>[in] A UINT value that specifies whether the driver needs a temporary surface during processing of commands that are specified by the <b>ClearTypeBlend</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-renderkm-command.md">DXGK_RENDERKM_COMMAND</a> structure. If <b>NoTempSurfaceForClearTypeBlend</b> is set, the driver does not need a temporary surface. In this case, the driver will use less video memory.</p>
@@ -259,7 +259,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 7.</p>
 </dd>
 
-### -field <b>SupportSoftwareDeviceBitmaps</b>
+### -field SupportSoftwareDeviceBitmaps
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
@@ -267,7 +267,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>NoCacheCoherentApertureMemory</b>
+### -field NoCacheCoherentApertureMemory
 
 <dd>
 <p>[in] </p>
@@ -276,7 +276,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>SupportLinearHeap</b>
+### -field SupportLinearHeap
 
 <dd>
 <p>[in] The driver supports linear heap allocation from staging surfaces. </p>
@@ -284,7 +284,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
@@ -292,7 +292,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Reserved</b>
+### -field Reserved
 
 <dd>
 <p>[in] This member is reserved and should be set to zero.</p>
@@ -300,7 +300,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 <p>Supported starting with Windows 8.</p>
 </dd>
 
-### -field <b>Value</b>
+### -field Value
 
 <dd>
 <p>A 32-bit value that identifies the driver's presentation capabilities.</p>

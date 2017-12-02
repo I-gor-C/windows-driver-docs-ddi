@@ -57,25 +57,25 @@ typedef struct _BDA_ISDBCAS_REQUESTHEADER {
 ## -struct-fields
 <dl>
 
-### -field <b>bInstruction</b>
+### -field bInstruction
 
 <dd>
 <p>EMD/EMG</p>
 </dd>
 
-### -field <b>bReserved</b>
+### -field bReserved
 
 <dd>
 <p>Reserved for future use.</p>
 </dd>
 
-### -field <b>ulDataLength</b>
+### -field ulDataLength
 
 <dd>
 <p>Specifies the size in bytes of the <b>argbIsdbCommand</b> member.</p>
 </dd>
 
-### -field <b>argbIsdbCommand</b>
+### -field argbIsdbCommand
 
 <dd></dd>
 </dl>

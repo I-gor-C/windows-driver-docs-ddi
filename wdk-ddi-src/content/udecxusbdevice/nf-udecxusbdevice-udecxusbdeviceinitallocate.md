@@ -55,10 +55,10 @@ FORCEINLINE PUDECXUSBDEVICE_INIT UdecxUsbDeviceInitAllocate(
 ## -parameters
 <dl>
 
-### -param <i>UdecxWdfDevice</i> [in]
+### -param UdecxWdfDevice [in]
 
 <dd>
-<p>A handle to a framework device object that represents the a USB device. The client driver initialized this object in the previous call to <a href="buses.udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a>.</p>
+<p>A handle to a framework device object that represents the a USB device. The client driver initialized this object in the previous call to <a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation.md">UdecxWdfDeviceAddUsbDeviceEmulation</a>.</p>
 </dd>
 </dl>
 
@@ -66,7 +66,7 @@ FORCEINLINE PUDECXUSBDEVICE_INIT UdecxUsbDeviceInitAllocate(
 <p>This method returns a pointer to an opaque <b>UDECXUSBDEVICE_INIT</b> that contains the initialization parameters. The structure is allocated by the USB device emulation  class extension (UdeCx).</p>
 
 ## -remarks
-<p>The UDE client driver calls this method to allocate parameters for the virtual device that is created by a subsequent call to <a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a>. If the device is not created or the driver is finished using the resources, the driver must free the resources by calling <a href="buses.udecxusbdeviceinitfree">UdecxUsbDeviceInitFree</a>.</p>
+<p>The UDE client driver calls this method to allocate parameters for the virtual device that is created by a subsequent call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a>. If the device is not created or the driver is finished using the resources, the driver must free the resources by calling <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitfree.md">UdecxUsbDeviceInitFree</a>.</p>
 
 ## -requirements
 <table>

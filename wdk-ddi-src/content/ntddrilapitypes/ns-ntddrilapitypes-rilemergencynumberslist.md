@@ -7,7 +7,7 @@ old-location: netvista\rilemergencynumberslist.htm
 old-project: netvista
 ms.assetid: bfeaff04-6dd2-4889-9ab3-f20361dc2f5c
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST, *LPRILEMERGENCYNUMBERSLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,15 +56,15 @@ typedef struct _RILEMERGENCYNUMBERSLIST {
 ## -struct-fields
 <dl>
 
-### -field <b>cbSize</b>
+### -field cbSize
 
 <dd></dd>
 
-### -field <b>dwRilENSize</b>
+### -field dwRilENSize
 
 <dd></dd>
 
-### -field <b>RilEN</b>
+### -field RilEN
 
 <dd></dd>
 </dl>

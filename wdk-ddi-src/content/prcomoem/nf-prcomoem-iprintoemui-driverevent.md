@@ -58,7 +58,7 @@ HRESULT DriverEvent(
 ## -parameters
 <dl>
 
-### -param <i>dwDriverEvent</i> 
+### -param dwDriverEvent 
 
 <dd>
 <p>Caller-supplied bit flag indicating the event that has occurred. Valid flags are listed in the following table.</p>
@@ -87,7 +87,7 @@ HRESULT DriverEvent(
 <p> </p>
 </dd>
 
-### -param <i>dwLevel</i> 
+### -param dwLevel 
 
 <dd>
 <p>Caller-supplied value indicating the type of structure pointed to by the <i>pDriverInfo</i> parameter, as indicated in the following table.</p>
@@ -129,13 +129,13 @@ HRESULT DriverEvent(
 </dl>
 </dd>
 
-### -param <i>pDriverInfo</i> 
+### -param pDriverInfo 
 
 <dd>
 <p>Caller-supplied pointer to a structure whose type is identified by the <i>dwLevel</i> parameter.</p>
 </dd>
 
-### -param <i>lParam</i> 
+### -param lParam 
 
 <dd>
 <p>Caller-supplied flags. See the following Remarks section.</p>
@@ -160,7 +160,7 @@ HRESULT DriverEvent(
 
 <p>If <code>IPrintOemUI::DriverEvent</code> methods are exported by multiple user interface plug-ins, the methods are called in the order that the plug-ins are specified for installation.</p>
 
-<p>For more information about creating and installing user interface plug-ins, see <a href="NULL">Customizing Microsoft's Printer Drivers</a>.</p>
+<p>For more information about creating and installing user interface plug-ins, see <a href="https://msdn.microsoft.com/b7761209-1f6f-4288-af47-4ed855c2e629">Customizing Microsoft's Printer Drivers</a>.</p>
 
 ## -requirements
 <table>

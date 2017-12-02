@@ -56,19 +56,19 @@ typedef struct _D3DKMT_ADAPTERADDRESS {
 ## -struct-fields
 <dl>
 
-### -field <b>BusNumber</b>
+### -field BusNumber
 
 <dd>
 <p>[out] The number of the bus that the graphics adapter's physical device is located on.</p>
 </dd>
 
-### -field <b>DeviceNumber</b>
+### -field DeviceNumber
 
 <dd>
 <p>[out] The index of the graphics adapter's physical device on the bus.</p>
 </dd>
 
-### -field <b>FunctionNumber</b>
+### -field FunctionNumber
 
 <dd>
 <p>[out] The function number of the graphics adapter on the physical device.</p>

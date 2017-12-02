@@ -63,43 +63,43 @@ typedef struct _D3DHAL_DP2BLT {
 ## -struct-fields
 <dl>
 
-### -field <b>dwSource</b>
+### -field dwSource
 
 <dd>
 <p>Specifies the handle to the source surface.</p>
 </dd>
 
-### -field <b>rSource</b>
+### -field rSource
 
 <dd>
 <p>Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the source surface. These points define the area of the source blit data and its position on the source surface.</p>
 </dd>
 
-### -field <b>dwSourceMipLevel</b>
+### -field dwSourceMipLevel
 
 <dd>
 <p>Specifies the sublevel of a MIP-map texture that is the source of the blt. </p>
 </dd>
 
-### -field <b>dwDest</b>
+### -field dwDest
 
 <dd>
 <p>Specifies the handle to the destination surface.</p>
 </dd>
 
-### -field <b>rDest</b>
+### -field rDest
 
 <dd>
 <p>Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the destination surface. These points define the area in which the blit should occur and its position on the destination surface.</p>
 </dd>
 
-### -field <b>dwDestMipLevel</b>
+### -field dwDestMipLevel
 
 <dd>
 <p>Specifies the sublevel of a MIP-map texture that is the destination for the blt.</p>
 </dd>
 
-### -field <b>Flags</b>
+### -field Flags
 
 <dd>
 <p>Specifies a flag that indicates the type of filtering that the driver must perform. This member is set to zero to indicate that the driver can use its own filtering technique or is set to one of the following flags.</p>

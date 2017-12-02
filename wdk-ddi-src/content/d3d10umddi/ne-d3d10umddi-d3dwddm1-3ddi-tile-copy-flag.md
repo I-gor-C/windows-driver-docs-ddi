@@ -57,19 +57,19 @@ enum D3DWDDM1_3DDI_TILE_COPY_FLAG {
 ## -enum-fields
 <dl>
 
-### -field <a id="D3DWDDM1_3DDI_TILE_COPY_NO_OVERWRITE"></a><a id="d3dwddm1_3ddi_tile_copy_no_overwrite"></a><b>D3DWDDM1_3DDI_TILE_COPY_NO_OVERWRITE</b>
+### -field D3DWDDM1_3DDI_TILE_COPY_NO_OVERWRITE
 
 <dd>
 <p>The GPU isn't currently referencing any of the portions of destination memory being written.</p>
 </dd>
 
-### -field <a id="D3DWDDM1_3DDI_TILE_COPY_LINEAR_BUFFER_TO_SWIZZLED_TILED_RESOURCE"></a><a id="d3dwddm1_3ddi_tile_copy_linear_buffer_to_swizzled_tiled_resource"></a><b>D3DWDDM1_3DDI_TILE_COPY_LINEAR_BUFFER_TO_SWIZZLED_TILED_RESOURCE</b>
+### -field D3DWDDM1_3DDI_TILE_COPY_LINEAR_BUFFER_TO_SWIZZLED_TILED_RESOURCE
 
 <dd>
 <p>The <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1-3ddi-copytiles.md">CopyTiles</a> operation involves copying a linear buffer to a swizzled tiled resource. This means to copy tile data from the specified buffer location, reading tiles sequentially, to the specified tile region (in <i>x</i>, <i>y</i>, <i>z</i> order if the region is a box), swizzling to optimal hardware memory layout as needed. In this <i>CopyTiles</i> call, you specify the source data with the <i>hBuffer</i> parameter and the destination with the <i>hTiledResource</i> parameter.</p>
 </dd>
 
-### -field <a id="D3DWDDM1_3DDI_TILE_COPY_SWIZZLED_TILED_RESOURCE_TO_LINEAR_BUFFER"></a><a id="d3dwddm1_3ddi_tile_copy_swizzled_tiled_resource_to_linear_buffer"></a><b>D3DWDDM1_3DDI_TILE_COPY_SWIZZLED_TILED_RESOURCE_TO_LINEAR_BUFFER</b>
+### -field D3DWDDM1_3DDI_TILE_COPY_SWIZZLED_TILED_RESOURCE_TO_LINEAR_BUFFER
 
 <dd>
 <p>The <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1-3ddi-copytiles.md">CopyTiles</a> operation involves copying a swizzled tiled resource to a linear buffer. This means to copy tile data from the tile region, reading tiles sequentially (in <i>x</i>, <i>y</i>, <i>z</i> order if the region is a box), to the specified buffer location, deswizzling to linear memory layout as needed. In this <i>CopyTiles</i> call, you specify the source data with the <i>hTiledResource</i> parameter and the destination with the <i>hBuffer</i> parameter.</p>

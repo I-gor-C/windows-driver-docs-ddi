@@ -60,39 +60,39 @@ typedef struct _FEATURE_DATA_DVD_PLUS_RW {
 ## -struct-fields
 <dl>
 
-### -field <b>Header</b>
+### -field Header
 
 <dd>
 <p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
-### -field <b>Write</b>
+### -field Write
 
 <dd>
 <p>Indicates, when set to 1, that the device can do background formatting of DVD+RW discs according to <i>DVD+RW 4.7 Gbytes Basic Format Specifications</i>, and can write to discs that have been formatted in this manner. </p>
 </dd>
 
-### -field <b>Reserved1</b>
+### -field Reserved1
 
 <dd>
 <p>Reserved. </p>
 </dd>
 
-### -field <b>CloseOnly</b>
+### -field CloseOnly
 
 <dd>
 <p>Indicates, when set to 1, then the device supports only read compatibility stops. When set to 0, the device supports both forms of background format stop. For more information about background format stops, see the <i>SCSI Multimedia Commands - 4 (MMC-4)</i> specification published by the American National Standards Institute (ANSI).</p>
 </dd>
 
-### -field <b>QuickStart</b>
+### -field QuickStart
 
 <dd></dd>
 
-### -field <b>Reserved02</b>
+### -field Reserved02
 
 <dd></dd>
 
-### -field <b>Reserved03</b>
+### -field Reserved03
 
 <dd></dd>
 </dl>

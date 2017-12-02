@@ -58,13 +58,13 @@ __checkReturn HRESULT APIENTRY VideoProcessBeginFrame(
 ## -parameters
 <dl>
 
-### -param <i>hDevice</i> [in]
+### -param hDevice [in]
 
 <dd>
 <p> A handle to the display device (graphics context).</p>
 </dd>
 
-### -param <i>hVideoProcessor</i> [in]
+### -param hVideoProcessor [in]
 
 <dd>
 <p> The handle to the DirectX VA video processing device that should start processing the video frame. The <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createvideoprocessdevice.md">CreateVideoProcessDevice</a> function created this handle.</p>

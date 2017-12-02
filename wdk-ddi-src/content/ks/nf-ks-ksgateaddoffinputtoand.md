@@ -54,7 +54,7 @@ void __inline KsGateAddOffInputToAnd(
 ## -parameters
 <dl>
 
-### -param <i>AndGate</i> [in]
+### -param AndGate [in]
 
 <dd>
 <p>A pointer to a <a href="..\ks\ns-ks--ksgate.md">KSGATE</a> structure representing the AND gate to which to add a new OFF input.</p>

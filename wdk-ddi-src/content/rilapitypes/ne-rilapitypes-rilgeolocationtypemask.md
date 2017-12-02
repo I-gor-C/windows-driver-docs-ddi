@@ -7,7 +7,7 @@ old-location: netvista\rilgeolocationtypemask_2.htm
 old-project: netvista
 ms.assetid: ffbd2c6d-537a-44f7-a071-21c073d96264
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,15 +57,15 @@ typedef enum _RILGEOLOCATIONTYPEMASK {
 ## -enum-fields
 <dl>
 
-### -field <a id="RIL_GEOLOCATION_CIVIC"></a><a id="ril_geolocation_civic"></a><b>RIL_GEOLOCATION_CIVIC</b>
+### -field RIL_GEOLOCATION_CIVIC
 
 <dd></dd>
 
-### -field <a id="RIL_GEOLOCATION_LATLONG"></a><a id="ril_geolocation_latlong"></a><b>RIL_GEOLOCATION_LATLONG</b>
+### -field RIL_GEOLOCATION_LATLONG
 
 <dd></dd>
 
-### -field <a id="RIL_GEOLOCATION_ALL"></a><a id="ril_geolocation_all"></a><b>RIL_GEOLOCATION_ALL</b>
+### -field RIL_GEOLOCATION_ALL
 
 <dd></dd>
 </dl>

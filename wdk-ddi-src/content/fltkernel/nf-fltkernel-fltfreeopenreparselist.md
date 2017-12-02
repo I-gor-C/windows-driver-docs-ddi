@@ -7,7 +7,7 @@ old-location: ifsk\fltfreeopenreparselist.htm
 old-project: ifsk
 ms.assetid: 78FA1585-F834-48E4-BB15-78BA5563F9D0
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 11/30/2017
 ms.keywords: FltFreeOpenReparseList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,13 +56,13 @@ void FltAddOpenReparseEntry(
 ## -parameters
 <dl>
 
-### -param <i>Filter</i> [in]
+### -param Filter [in]
 
 <dd>
 <p>The filter to dereference.</p>
 </dd>
 
-### -param <i>EcpList</i> [in]
+### -param EcpList [in]
 
 <dd>
 <p>The ECP list whose open reparse information should

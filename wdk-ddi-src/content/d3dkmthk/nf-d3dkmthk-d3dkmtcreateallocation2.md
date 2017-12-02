@@ -54,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTCreateAllocation2(
 ## -parameters
 <dl>
 
-### -param <i>pData</i> [in, out]
+### -param pData [in, out]
 
 <dd></dd>
 </dl>
